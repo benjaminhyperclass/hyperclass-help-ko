@@ -1,0 +1,107 @@
+---
+
+번역일: 2026-04-06
+카테고리: 06-사이트
+---
+
+# 일괄 작업으로 커스텀 객체 레코드 대량 가져오기(CSV)
+
+커스텀 객체 레코드를 대량으로 가져오면 깔끔하고 충돌 없는 레코드를 유지하면서 대용량 데이터셋을 빠르게 온보딩할 수 있습니다. 생성/업데이트 옵션, 고유 필드 중복 제거 제어, 상세한 가져오기 보고서를 통해 팀은 정확성을 잃지 않고도 커스텀 객체 설정을 확장할 수 있습니다. 전용 일괄 작업 페이지는 일시정지, 재개, 취소 등의 운영 제어 기능을 제공하여 가져오기를 안심하고 관리할 수 있습니다.
+
+**목차**
+
+- [커스텀 객체 대량 가져오기란?](#커스텀-객체-대량-가져오기란)
+- [커스텀 객체 대량 가져오기의 주요 장점](#커스텀-객체-대량-가져오기의-주요-장점)
+- [가져오기 모드(생성, 업데이트, 생성 + 업데이트)](#Import-Modes-(Create,-Update,-Create-+-Update))
+- [중복 제거 및 고유 필드 충돌 처리](#Dedupe-and-Unique-Field-Conflict-Handling)
+- [기본 필드, 필수 필드, 커스텀 필드 가져오기](#Importing-Primary-Fields,-Required-Fields,-and-Custom-Fields)
+- [빈 값 업데이트](#Update-Empty-Values)
+- [일괄 작업 – 커스텀 객체(추적, 일시정지, 재개, 취소)](#Bulk-Actions-%E2%80%93-Custom-Objects-(Track,-Pause,-Resume,-Cancel))
+- [커스텀 객체 대량 가져오기 설정 방법](#커스텀-객체-대량-가져오기-설정-방법)
+- [자주 묻는 질문](#자주-묻는-질문)
+
+## 커스텀 객체 대량 가져오기란?
+
+커스텀 객체 대량 가져오기를 사용하면 CSV 파일을 업로드하여 새 커스텀 객체 레코드를 생성하거나, 기존 레코드를 업데이트하거나, 한 번의 가져오기로 두 작업을 모두 수행할 수 있습니다. 또한 고유 필드를 기반으로 한 중복 제거 제어 기능과 진행 상황을 추적하고 문제를 해결할 수 있는 중앙 집중식 일괄 작업 페이지도 포함되어 있습니다. 이를 통해 커스텀 객체 온보딩이 빨라지고 중복과 가져오기 충돌을 방지할 수 있습니다.
+
+## 커스텀 객체 대량 가져오기의 주요 장점
+
+안정적인 대량 가져오기는 수동 작업을 줄이고 커스텀 객체 데이터가 증가해도 일관성을 유지하는 데 도움이 됩니다.
+
+- **빠른 온보딩**: 레코드를 하나씩 생성하는 대신 CSV에서 대량의 커스텀 객체 레코드를 가져올 수 있습니다.
+- **유연한 가져오기 모드**: 사용 사례에 따라 레코드를 생성, 업데이트 또는 생성 + 업데이트할 수 있습니다.
+- **중복 제거로 더 깔끔한 데이터**: 고유 필드를 사용하여 중복을 방지하고 레코드 충돌을 줄입니다.
+- **운영 제어**: 일괄 작업 페이지에서 가져오기를 일시정지, 재개 또는 취소할 수 있습니다.
+- **더 나은 가시성**: 가져오기 통계, 행별 오류, 경고 및 해결 가이드를 볼 수 있습니다.
+
+## 커스텀 객체 대량 가져오기 설정 방법
+
+깔끔한 CSV와 올바른 매핑이 원활한 가져오기와 긴 문제 해결 과정의 차이를 만듭니다. 일관된 설정 프로세스를 따르면 중복을 피하고, 행별 오류를 줄이며, 레코드가 정확하게 생성 또는 업데이트되도록 할 수 있습니다.
+
+- 하위 계정에서 커스텀 객체를 열고 레코드를 가져올 커스텀 객체를 선택합니다.
+
+![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066065774/original/rURyE1iwWflD_PUpiaQse66Y64S2cOB6Pg.png?1772528385)
+
+- 가져오기(Import) 버튼을 클릭합니다(우상단).
+
+![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066065600/original/UIMsXatm_JyFA7sfVL9VwolmksI0EKlQgQ.png?1772528322)
+
+- 가져올 객체를 선택합니다.
+
+![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066065232/original/zaZPN74OlyQ5g-HV8ifGUAEBsN0PLYQ4Gw.png?1772528144)
+
+- 가져오기 모드를 선택합니다: 생성 & 업데이트(Create & Update).
+
+![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066065429/original/5fGsoLWs8irXuFFaDil3tdUvPgkeKfSHww.png?1772528241)
+
+- 메시지가 표시되면 중복 제거 고유 필드를 선택합니다(여러 고유 필드가 매핑된 경우에만 나타남).
+
+![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066065098/original/T8NBcPtgyGTdyLgLJrTj_5Tu5A2vD4Yw8w.png?1772528085)
+
+- 필드를 매핑합니다:
+  - 기본/필수 필드를 먼저 매핑합니다
+  - 그다음 추가 필드를 매핑합니다(필요한 경우 소유자 및 팔로워 포함)
+
+![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066064856/original/KKUgprH5g-oxMfptQen1ATJ6REsMcsS47w.jpeg?1772527939)
+
+- 업데이트 가져오기 시 빈 값을 적용해야 하는 사용 사례라면 빈 값 업데이트를 활성화합니다(기본/필수 예외는 여전히 적용됨).
+
+![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066066159/original/ehIpY0AMaOwb4bcZe_gW6Ydf9-QeB7ohbg.png?1772528616)
+
+- 가져오기 시작(Start Import)을 클릭합니다.
+
+- 일괄 작업(Bulk Actions) → 커스텀 객체에서 가져오기를 추적하고 제어합니다:
+  - 필요에 따라 일시정지, 재개 또는 취소
+  - 가져오기를 열어 통계와 행별 결과를 확인
+
+![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066066236/original/iF_oGNeWvqVEfLd26KRKyQVtGVghZSVXsg.png?1772528670)
+
+## 자주 묻는 질문
+
+**Q: 생성, 업데이트, 생성 + 업데이트를 언제 사용해야 하나요?**
+A: 완전히 새로운 데이터셋에는 생성을, 기존 레코드만 수정할 때는 업데이트를, CSV에 신규 및 기존 레코드가 섞여 있을 때는 생성 + 업데이트를 사용하세요.
+
+**Q: 중복 제거 필드를 선택하라고 하는 이유가 뭔가요?**
+A: 여러 고유 필드가 매핑되면, Hyperclass가 가져오기 시 중복 제거 매칭에 사용할 고유 필드를 선택하도록 안내합니다.
+
+**Q: "고유 필드 전반의 엄격한 충돌 처리"는 무슨 의미인가요?**
+A: 행이 고유 필드 규칙을 위반하는 경우(예: 다른 레코드에 이미 존재하는 고유 값을 할당하려는 경우), 가져오기가 해당 행을 오류나 경고로 표시하여 수정할 수 있도록 합니다.
+
+**Q: "빈 값 업데이트"는 무엇을 하나요?**
+A: 업데이트 중에 빈 CSV 값을 적용할 수 있게 하지만, 기본/필수 필드는 빈 값 업데이트에서 제외됩니다.
+
+**Q: 가져오기를 일시정지했다가 나중에 재개할 수 있나요?**
+A: 네. 일괄 작업 → 커스텀 객체에서 가져오기를 일시정지하고 재개할 수 있습니다.
+
+**Q: 가져오기를 취소하면 어떻게 되나요?**
+A: 취소하면 가져오기가 계속 진행되지 않습니다. 이미 처리된 행은 취소 전에 완료된 내용에 따라 적용된 상태로 남을 수 있습니다.
+
+**Q: 실패한 행과 수정 방법은 어디서 볼 수 있나요?**
+A: 가져오기 상세 정보를 열고 통계 모달 탭을 사용하여 오류와 경고를 확인하세요. 행별 메시지에는 해결 방법 가이드가 포함되어 있습니다.
+
+**Q: 하나의 CSV로 여러 커스텀 객체를 가져올 수 있나요?**
+A: 아직 불가능합니다. 다중 객체 가져오기는 현재 비활성화되어 있으며 "곧 출시 예정"으로 표시됩니다.
+
+---
+*원문 최종 수정: Tue, 3 Mar, 2026 at 4:03 AM*
+*Hyperclass 사용 가이드 — hyperclass.ai*

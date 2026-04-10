@@ -1,0 +1,121 @@
+---
+
+번역일: 2026-04-06
+카테고리: 13-AI-Employee
+---
+
+# AI 빌더 및 어시스턴트의 음성 입력 기능
+
+아이디어를 말하면 Hyperclass가 대신 타이핑해드립니다. AI 빌더(AI Builder)와 AI 어시스턴트(AI Assistant)의 음성 입력 기능을 사용하면 수동으로 텍스트를 입력하는 대신 자연스러운 말로 워크플로우를 만들고 수정할 수 있습니다. 이 기능을 통해 자동화를 더 빠르게 구축하고, 접근성을 개선하며, 다양한 언어로 워크플로우 생성을 간소화할 수 있습니다.
+
+**목차**
+
+- [AI 빌더 및 어시스턴트의 음성 입력 기능이란?](#what-is-voice-dictation)
+- [음성 입력의 주요 장점](#key-benefits)
+- [음성으로 워크플로우 생성하기 (AI 빌더)](#voice-to-workflow)
+- [AI 어시스턴트에서 음성 사용하기](#voice-with-assistant)
+- [다국어 지원](#multi-language)
+- [음성 입력 사용 방법](#how-to-use)
+- [자주 묻는 질문](#faq)
+
+---
+
+## AI 빌더 및 어시스턴트의 음성 입력 기능이란? {#what-is-voice-dictation}
+
+음성 입력은 워크플로우 AI 빌더(Workflow AI Builder)와 빌더 내 AI 어시스턴트(AI Assistant) 모두에 음성을 텍스트로 변환하는 기능을 추가합니다. 프롬프트를 타이핑하는 대신 마이크 아이콘을 클릭하고 만들거나 수정하고 싶은 내용을 말하면 됩니다. Hyperclass가 음성을 텍스트로 변환하고 입력된 AI 프롬프트와 동일하게 처리하여 워크플로우를 생성하거나 편집을 적용합니다.
+
+## 음성 입력의 주요 장점 {#key-benefits}
+
+음성 입력은 워크플로우 생성 과정의 번거로움을 없애서 모든 규모의 팀이 더 빠르고 포용적으로 자동화를 구축할 수 있게 해줍니다.
+
+- **핸즈프리 아이디어 구상**: 타이핑 없이도 멀티태스킹 중에 자동화 아이디어를 포착할 수 있습니다.
+- **빠른 워크플로우 생성**: 개념에서 구조화된 워크플로우까지 몇 초 만에 완성됩니다.
+- **접근성 개선**: 움직임이 제한되거나 타이핑에 어려움이 있는 사용자도 더 쉽게 워크플로우를 구축할 수 있습니다.
+- **다국어 지원**: Hyperclass AI 도구가 지원하는 모든 언어로 음성 입력이 가능합니다.
+- **원활한 편집**: 생성된 워크플로우는 표준 빌더에 나타나 검토하고 수정할 수 있습니다.
+
+## 음성으로 워크플로우 생성하기 (AI 빌더) {#voice-to-workflow}
+
+AI 빌더를 사용하면 자연어로 완전한 워크플로우를 생성할 수 있습니다. 음성 입력이 활성화되면 트리거, 조건, 액션을 음성으로 설명할 수 있으며, Hyperclass가 이를 워크플로우 캔버스 내에서 자동화 초안으로 구조화합니다.
+
+이 기능은 새로운 워크플로우를 처음부터 만들거나 자동화 로직의 프로토타입을 빠르게 제작할 때 이상적입니다.
+
+(스크린샷: "트리거 추가(Add Trigger)" 버튼 위쪽의 AI 빌더 프롬프트 박스에서 마이크 아이콘이 강조 표시됨)
+
+음성 변환 후:
+
+- 워크플로우가 빌더에 나타납니다.
+- 필요에 따라 트리거, 액션, 지연 시간, 조건을 편집할 수 있습니다.
+- 음성이나 텍스트 프롬프트를 사용해 계속 수정할 수 있습니다.
+
+![음성으로 워크플로우 생성하는 과정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155065980623/original/T_w9Dk1EFvQ6WJBJFey7JNkvXWaJDYbW3A.gif?1772445217)
+
+AI 워크플로우 생성에 대해 더 알아보기: [워크플로우 AI 빌더: AI로 워크플로우 생성 및 편집하기](workflow-ai-builder.md)
+
+## AI 어시스턴트에서 음성 사용하기 {#voice-with-assistant}
+
+워크플로우 캔버스 내의 AI 어시스턴트는 대화형 편집과 안내를 지원합니다. 음성 입력을 통해 타이핑 대신 어시스턴트 채팅에 직접 음성으로 요청할 수 있습니다.
+
+다음과 같은 경우에 최적입니다:
+
+- 기존 워크플로우 수정
+- 설정 질문하기
+- 단계를 점진적으로 추가하거나 조정하기
+
+![AI 어시스턴트에서 음성 사용하는 모습](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155065988647/original/hs4424Mk3odAYxbvNL-IEKqdUzBcRxNGaQ.gif?1772449079)
+
+예시:
+
+- "폼 제출 트리거 후에 2시간 대기를 추가해줘"
+- "예약 전에 SMS 알림을 넣어줘"
+- "연락처가 답장할 때 태그를 적용하려면 어떻게 해야 해?"
+
+## 다국어 지원 {#multi-language}
+
+음성 입력은 Hyperclass AI 프롬프트가 지원하는 모든 언어로 작동합니다. 이를 통해 전 세계 팀이 지침을 수동으로 번역할 필요 없이 원하는 언어로 워크플로우를 생성할 수 있습니다.
+
+AI는 다음과 같이 작동합니다:
+
+- 말한 언어를 텍스트로 변환
+- 의도를 해석
+- 빌더 인터페이스에서 워크플로우 생성
+
+## 음성 입력 사용 방법 {#how-to-use}
+
+브라우저가 오디오를 캡처할 수 있고 AI 빌더가 음성 지침을 올바르게 처리할 수 있도록 적절히 설정해야 합니다.
+
+- **자동화(Automation) → 워크플로우(Workflows)**로 이동하여 새 워크플로우를 만들거나 기존 워크플로우를 엽니다.
+
+![워크플로우 메뉴 접근](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155065985657/original/Kh9XNuH8mLXpRIKOC0XecGkMaFqXXTmD3A.png?1772447500)
+
+- "트리거 추가(Add Trigger)" 버튼 위에 있는 AI 빌더 프롬프트 박스를 찾습니다.
+
+![AI 빌더 프롬프트 박스 위치](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155065985744/original/9dyIYvaLvdP_SZHlAV_Pten4AevXY3IgcA.gif?1772447542)
+
+- 마이크 아이콘을 클릭합니다. (브라우저에서 마이크 권한을 요청하면 허용해주세요) 트리거와 액션을 포함해 워크플로우 아이디어를 자연스럽게 말합니다. 정지(Stop)를 클릭하거나 자동 정지를 기다립니다.
+
+![음성 입력 과정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155065987110/original/A5KmVwSOEy1qC-L4wCUlf6ZBX4MdnQbkzg.gif?1772448201)
+
+- 생성된 워크플로우를 검토하고 필요에 따라 편집합니다. 음성 입력을 사용해 워크플로우를 추가로 편집할 수도 있습니다.
+
+![워크플로우 검토 및 편집](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155065987429/original/zuOHZfQ51TrZ5B6Bf8TlSK6fmoRLwJDe2w.gif?1772448460)
+
+- **저장 및 발행(Save and Publish)**을 클릭합니다.
+
+## 자주 묻는 질문 {#faq}
+
+**Q: 음성 입력 기능은 별도 구독이 필요한가요?**
+음성 입력은 플랜 내에서 워크플로우 AI 빌더(Workflow AI Builder)나 AI 어시스턴트(AI Assistant)가 활성화된 곳에서 사용할 수 있습니다.
+
+**Q: 어떤 언어를 지원하나요?**
+Hyperclass AI 프롬프트가 지원하는 모든 언어를 음성 입력에서도 사용할 수 있습니다.
+
+**Q: 기존 워크플로우에서도 음성 입력을 사용할 수 있나요?**
+네. AI 어시스턴트를 통해 기존 워크플로우를 수정하거나 AI 빌더 내에서 새로운 로직을 생성할 때 음성 입력을 사용할 수 있습니다.
+
+**Q: 마이크가 작동하지 않습니다. 무엇을 확인해야 하나요?**
+브라우저와 운영 체제 설정에서 마이크 권한이 활성화되어 있는지 확인하세요. 액세스 권한을 허용한 후 페이지를 새로고침하세요.
+
+---
+*원문 최종 수정: 2026-03-02*
+*Hyperclass 사용 가이드 — hyperclass.ai*

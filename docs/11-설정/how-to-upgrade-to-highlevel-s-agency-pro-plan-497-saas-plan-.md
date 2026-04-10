@@ -1,0 +1,120 @@
+---
+
+번역일: 2026-04-06
+카테고리: 11-설정
+---
+
+# Hyperclass Agency Pro 플랜($497 SaaS 플랜)으로 업그레이드하는 방법
+
+이 가이드는 Hyperclass 구독을 Pro 플랜으로 업그레이드하는 단계별 방법을 제공합니다. 결제 대시보드 탐색부터 이용 가능한 플랜 검토, 업그레이드 과정 완료까지 자세히 알아보세요.
+
+**팁**: SaaS 모드와 설정에 대한 자세한 내용은 [SaaS Mode - Full Setup Guide + FAQ]([saas-mode-full-setup-guide-faq](saas-mode-full-setup-guide-faq.md))를 참고하세요.
+
+## 목차
+
+- [Hyperclass Pro 플랜이란?](#hyperclass-pro-플랜이란)
+- [Pro 플랜 업그레이드의 주요 혜택](#pro-플랜-업그레이드의-주요-혜택)
+- [플랜 비교: 올바른 업그레이드 선택하기](#플랜-비교-올바른-업그레이드-선택하기)
+- [Hyperclass Pro 플랜으로 업그레이드하는 방법](#hyperclass-pro-플랜으로-업그레이드하는-방법)
+- [2단계: 업그레이드 옵션 선택](#Step-2%3A%C2%A0Select-the-Upgrade-Option)
+- [3단계: 원하는 플랜 선택](#Step-3%3A%C2%A0Choose-Your-Preferred-Plan)
+- [4단계: 결제 확인 및 업그레이드](#4단계-결제-확인-및-업그레이드)
+- [자주 묻는 질문](#자주-묻는-질문)
+
+## Hyperclass Pro 플랜이란?
+
+Hyperclass Pro 플랜은 고급 자동화, SaaS 모드, 향상된 분석 기능이 필요한 비즈니스를 위해 설계되었습니다. 이 플랜으로 업그레이드하면 워크플로우를 간소화하고 고객 관리를 개선하는 추가 기능을 제공받을 수 있습니다.
+
+### Pro 플랜의 주요 기능:
+
+- 서비스 재판매를 위한 SaaS 모드
+- 향상된 이메일, 전화, SMS 리빌링
+- AI 기반 대화형 봇
+- 무제한 계정 및 사용자
+
+## Pro 플랜 업그레이드의 주요 혜택
+
+Pro 플랜으로 업그레이드하면 비즈니스의 자동화, 분석, 확장성을 향상시키는 기능들을 활용할 수 있습니다.
+
+### 주요 혜택:
+
+- **SaaS 모드 활성화**: Hyperclass 플랫폼을 고객에게 재판매할 수 있는 기능
+- **고급 보고서 및 분석**: 비즈니스 성과에 대한 깊이 있는 인사이트 제공
+- **무제한 하위 계정**: 여러 고객을 원활하게 관리
+- **커스텀 API 액세스**: 고급 연동을 통한 워크플로우 커스터마이징
+- **우선 지원**: 빠른 응답 시간과 전담 지원
+- **화이트 라벨 옵션**: 고객 포털을 자사 브랜딩으로 커스터마이징
+
+## 플랜 비교: 올바른 업그레이드 선택하기
+
+업그레이드 전에 플랜 간 주요 차이점을 검토해보세요. Freelancer 플랜에는 Starter 플랜의 모든 기능이 포함되어 있으며, Agency Pro 플랜에는 Freelancer 플랜의 모든 기능과 추가 고급 기능이 포함되어 있습니다. 아래는 올바른 업그레이드를 선택하는 데 도움이 되는 주요 기능 비교표입니다. 자세한 내용은 [가격 페이지](https://www.gohighlevel.com/gohighlevel-pricing?fp_ref=gohighlevel-pricing-price-reviews-affiliate&fp_sid=saas&gad_source=1&gclid=CjwKCAjwvr--BhB5EiwAd5YbXu03Ef-lC5Z1QCzlgq8Tvp1jzbsbUcO_j8HccQlBZmL5aLxWNgIKPBoCuE0QAvD_BwE)도 참고하세요.
+
+| 기능 | Starter | Freelancer | Agency Pro |
+|---|---|---|---|
+| 무제한 사용자 | ✅ | ✅ | ✅ |
+| 무제한 계정 | ❌ | ✅ | ✅ |
+| SaaS 모드 | ❌ | ❌ | ✅ |
+| 고급 API 액세스 | ❌ | ❌ | ✅ |
+| 화이트 라벨링 | ❌ | ✅ | ✅ |
+| 스플릿 테스팅 | ✅ | ✅ | ✅ |
+| 이메일/전화/SMS 리빌링 | ❌ | ✅ (마크업 없음) | ✅ (마크업 포함) |
+| 에이전트 보고서 | ❌ | ❌ | ✅ |
+| AI 직원 | ✅ | ✅ | ✅ |
+
+## Hyperclass Pro 플랜으로 업그레이드하는 방법
+
+Hyperclass 플랜 업그레이드는 고급 기능에 액세스하고 비즈니스 운영을 최적화할 수 있는 간단한 과정입니다. 아래 단계를 따라 Pro 플랜으로 원활하게 전환하고 강력한 기능들을 활용해보세요.
+
+### 1단계: 결제 대시보드에 접근하기
+
+- 에이전시 계정에서 Settings(설정)를 클릭하세요.
+
+![결제 설정 메뉴](https://jumpshare.com/v/bhxOGvBReyOlEkQKj3QD+/Screen+Shot+2025-05-26+at+7.59.55+PM.png)
+
+- Billing(결제)을 클릭하세요.
+
+- Subscriptions(구독) 아래의 "Want to Modify/Cancel Subscription?(구독 변경/취소를 원하시나요?)" 버튼을 클릭하세요.
+
+![구독 변경 버튼](https://jumpshare.com/v/4M1pClq7ZGDlkRgZohgh+/Screen+Shot+2025-05-26+at+8.01.28+PM.png)
+
+### 3단계: 원하는 플랜 선택하기
+
+- 사용 가능한 옵션에서 Upgrade Your Plan(플랜 업그레이드)를 선택하세요.
+
+![플랜 업그레이드 옵션](https://jumpshare.com/v/V7rR8rvwuvQ8Sadf44GI+/Screen+Shot+2025-05-26+at+8.05.36+PM.png)
+
+- Monthly(월간) 또는 Annual(연간) 결제를 선택하세요.
+
+- Agency Pro Plan을 선택하고 Upgrade Now(지금 업그레이드)를 클릭하세요.
+
+![Agency Pro 플랜 선택](https://jumpshare.com/v/copLoeXEHC4YHsz39vcH+/Screen+Shot+2025-05-26+at+8.16.43+PM.png)
+
+### 4단계: 결제 확인 및 업그레이드
+
+- 결제 세부 정보를 확인하세요.
+
+- 업그레이드를 확인하고 결제를 진행하세요.
+
+**참고**: 은행의 보안 조치를 준수하기 위해 결제 확인 이메일을 받을 수 있습니다.
+
+## 자주 묻는 질문
+
+**Q. 업그레이드가 결제 주기에 어떤 영향을 미치나요?**
+
+새 플랜과 가격이 즉시 적용되며, 이에 따라 결제됩니다.
+
+**Q. 업그레이드 후 다운그레이드할 수 있나요?**
+
+네, 언제든지 결제 섹션으로 이동하여 하위 플랜을 선택하면 다운그레이드할 수 있습니다.
+
+**Q. 업그레이드 후 기존 기능들은 어떻게 되나요?**
+
+모든 기존 기능은 그대로 유지되며, Pro 플랜의 추가 혜택이 계정에 추가됩니다.
+
+**Q. Pro 플랜 무료 체험이 있나요?**
+
+현재 Hyperclass는 Pro 플랜 무료 체험을 제공하지 않지만, 첫 결제 주기 내에서 기능을 테스트해볼 수 있습니다.
+
+---
+*원문 최종 수정: Wed, 15 Oct, 2025 at 1:38 AM*
+*Hyperclass 사용 가이드 — hyperclass.ai*

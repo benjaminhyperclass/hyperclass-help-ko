@@ -1,0 +1,261 @@
+---
+
+번역일: 2026-04-06
+카테고리: 08-결제
+---
+
+# 세금 추가 방법 개요
+
+### 커뮤니티 튜토리얼 영상
+
+[https://youtu.be/4G9_TDAjk7g](https://youtu.be/4G9_TDAjk7g)
+
+[https://youtu.be/C7lO45WLyxY](https://youtu.be/C7lO45WLyxY)
+
+[https://youtu.be/e0HXAef28Oc](https://youtu.be/e0HXAef28Oc)
+
+[https://youtu.be/xzsl2J7Mj5I](https://youtu.be/xzsl2J7Mj5I)
+
+비즈니스의 세금을 효율적으로 관리하는 것은 규정을 준수하고 체계적으로 운영하기 위해 매우 중요합니다. CRM의 세금 설정(Tax Settings) 기능은 이 과정을 간소화하여 세금을 쉽게 추가, 관리, 적용할 수 있도록 도와줍니다. 이 강력한 도구는 시간을 절약하고 오류를 줄이며 재무 운영을 향상시킵니다. Stripe 세금 관리를 활용한 SaaS 해결책은 간소화된 세금 처리를 위한 임시 솔루션을 제공하여 지역 세금 규정 준수를 보장하면서 거래 중 고객 경험을 개선합니다. 이 방법은 현재 SaaS 직접 결제 링크를 지원합니다.
+
+#### 이 글에서 다루는 내용
+
+#### [CRM이 세금을 어떻게 적용하나요?](#crm이-세금을-어떻게-적용하나요)
+
+#### [이 기능의 사용 사례와 장점은 무엇인가요?](#이-기능의-사용-사례와-장점은-무엇인가요)
+
+#### [결제에서 세금 설정 기능을 사용하는 방법](#결제에서-세금-설정-기능을-사용하는-방법)
+
+#### [1단계: 세금 생성 및 추가](#1단계-세금-생성-및-추가)
+
+#### [2단계: 세금 관리 및 사용](#2단계-세금-관리-및-사용)
+
+#### [SaaS 에이전시를 위한 Stripe 세금 관리 해결책 구현](#saas-에이전시를-위한-stripe-세금-관리-해결책-구현)
+
+#### [이 기능의 사용 사례와 장점은 무엇인가요?](#이-기능의-사용-사례와-장점은-무엇인가요)
+
+#### [SaaS 결제 링크에서 세금을 사용하는 방법](#saas-결제-링크에서-세금을-사용하는-방법)
+
+#### [Stripe에서 세율 설정:](#stripe에서-세율-설정)
+
+#### [기존 고객에게 세율 적용:](#기존-고객에게-세율-적용)
+
+#### [신규 고객에게 세율 적용:](#신규-고객에게-세율-적용)
+
+#### [자주 묻는 질문](#FAQs)
+
+#### [CRM 세금 설정 기능이나 SaaS 해결책을 사용하여 특정 고객의 세금 면제를 어떻게 처리하나요?](#How-do-I-handle-tax-exemptions-for-specific-customers-using-the-CRM-Tax-Settings-feature-or-the-SaaS-workaround?)
+
+#### [CRM 세금 설정 기능과 SaaS 해결책에서 여러 세율을 사용할 수 있나요?](#Can-I-use-multiple-tax-rates-with-the-CRM-Tax-Settings-feature-and-the-SaaS-workaround?)
+
+#### [고객이 위치나 청구 주소를 변경하면 어떻게 되나요?](#What-happens-if-a-customer-changes-their-location-or-billing-address?)
+
+#### [두 방법 모두 일회성 구매에 세금을 적용할 수 있나요?](#Can-I-apply-taxes-to-one-time-purchases-using-both-methods?)
+
+#### [두 방법은 환불을 어떻게 처리하나요?](#How-do-both-methods-handle-refunds?)
+
+#### [두 방법 모두 세금 보고서를 생성할 수 있나요?](#Can-I-generate-tax-reports-using-both-methods?)
+
+#### [두 방법으로 세금 변경이나 업데이트를 어떻게 처리하나요?](#How-do-I-handle-tax-changes-or-updates-using-both-methods?)
+
+## CRM이 세금을 어떻게 적용하나요?
+
+비즈니스의 세금을 효율적으로 관리하는 것은 규정 준수와 체계성을 유지하고, 원활한 재무 운영을 보장하며, 긍정적인 평판을 유지하는 데 매우 중요합니다. CRM 내의 세금 설정(Tax Settings) 기능은 세금 관리를 효과적으로 단순화하여 비즈니스가 필요에 따라 세금을 쉽게 추가, 관리, 적용할 수 있도록 도와줍니다. 이 강력한 도구는 비즈니스의 시간을 절약하고 오류를 줄이며 재무 운영을 향상시킵니다.
+
+세금 설정 기능을 통해 비즈니스는 여러 세율을 빠르게 설정하고 구성할 수 있어, 다양한 상품이나 서비스에 세금을 적용할 때 유연성을 제공합니다. 이는 인보이스 발행을 간소화하여 지역 세금 규정을 준수하면서 고객에게 정확한 청구서를 보낼 수 있도록 보장합니다. 또한 이 기능은 수동 세금 계산이나 세금 법규 해석 오류로 인한 비용이 많이 드는 실수의 위험을 최소화하는 데 도움이 됩니다.
+
+세금 관리 프로세스를 단순화함으로써 비즈니스는 핵심 업무에 집중할 수 있어 전반적인 효율성과 생산성을 향상시킬 수 있습니다. 또한 세금 설정 기능은 더 나은 재무 보고 및 분석을 가능하게 하여, 비즈니스가 정보에 기반한 의사결정을 내리고 재무 상태를 명확하게 파악할 수 있도록 도와줍니다.
+
+### 이 기능의 사용 사례와 장점은 무엇인가요?
+
+**사용 사례 1: 디지털 마케팅 에이전시**
+
+디지털 마케팅 에이전시가 SEO, 소셜 미디어 관리, 콘텐츠 마케팅 솔루션과 같은 서비스를 제공합니다. 각 서비스는 고객의 위치에 따라 고유한 가격과 세금 요구사항을 가질 수 있습니다.
+
+장점:
+
+- 간소화된 인보이스 발행: CRM의 세금 설정 기능을 통해 에이전시는 각 서비스에 정확한 세금을 적용하여 인보이스 발행을 더 정확하고 효율적으로 만들 수 있습니다.
+- 향상된 규정 준수: 적절한 세금 관리를 통해 에이전시는 고객 지역의 세법을 준수하여 잠재적인 법적 문제를 피할 수 있습니다.
+
+**사용 사례 2: 이커머스 쇼핑몰**
+
+이커머스 쇼핑몰이 상품과 배송 목적지에 따라 다양한 세율로 제품을 판매합니다. 다양한 제품에 서로 다른 세금을 적용하고 특정 고객에 대한 세금 면제를 관리해야 합니다.
+
+장점:
+
+- 정확한 세금 계산: 세금 설정 기능은 쇼핑몰이 각 제품에 정확한 세금을 적용하도록 도와 오류를 최소화하고 거래 전반에 걸쳐 일관성을 유지합니다.
+- 향상된 고객 만족: 정확한 세금 계산을 통해 쇼핑몰은 원활하고 투명한 결제 경험을 제공하여 고객 만족도를 높일 수 있습니다.
+
+**사용 사례 3: 이벤트 관리 회사**
+
+이벤트 관리 회사가 여러 국가에서 컨퍼런스, 워크숍, 웨비나를 조직하며, 각 국가마다 세금 규정이 다릅니다. 티켓, 스폰서십, 케이터링이나 장비 대여와 같은 추가 서비스에 대해 서로 다른 세금을 적용해야 합니다.
+
+장점:
+
+- 간소화된 세금 관리: 세금 설정 기능을 사용하여 회사는 다양한 이벤트 서비스에 대한 세금을 쉽게 관리하고 적용하여 운영을 더 효율적으로 만들 수 있습니다.
+- 수익성 증가: 정확한 세금 관리를 통해 회사는 고객에게 과다 청구하거나 저액 청구하는 것을 피하여 각 이벤트에서 정확한 수익을 받을 수 있습니다.
+
+**사용 사례 4: 컨설팅 회사**
+
+컨설팅 회사가 비즈니스 전략, 재무 계획, IT 컨설팅과 같은 서비스를 제공하며, 각각은 고객의 위치와 제공되는 서비스의 성격에 따라 다른 세율을 가집니다.
+
+장점:
+
+- 시간 절약: 세금 설정 기능은 수동 세금 계산을 없애 회사의 시간과 노력을 절약합니다.
+- 향상된 재무 보고: 간소화된 세금 계산을 통해 컨설팅 회사는 더 정확한 재무 보고서를 생성하여 비즈니스를 위한 더 나은 의사결정을 가능하게 합니다.
+
+## 결제에서 세금 설정 기능을 사용하는 방법
+
+### 1단계: 세금 생성 및 추가
+
+`Payments(결제) > Settings(설정) > Taxes(세금) > 'Add Tax(세금 추가)' 클릭` 또는 `'Create Tax(세금 생성)' 클릭`
+
+![세금 설정 페이지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047461985/original/5OVVh-h9-FfW8dhfWLUevR0cHHQ6v2J4Vg.png?1748581132)
+
+팝업에서 필요한 정보를 입력하세요: 세금 이름, 세율, 선택 사항인 설명, 세금 ID 번호 및 해당하는 경우 세무 기관.
+
+![세금 추가 팝업](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047461997/original/Gx1JtSLpbMgw3MCD4H1oQJ5hlnL_bLR6Gw.png?1748581180)
+
+'추가' 버튼을 클릭하면 세금이 세금 목록에 표시됩니다.
+
+### 2단계: 세금 관리 및 사용
+
+**상품에 세율 연결:**
+
+상품을 추가하거나 편집할 때 'Attach Tax Rates(세율 연결)' 옵션 옆의 체크박스를 클릭하면 수동으로 추가된 모든 세율이 드롭다운에 표시됩니다. 하나 또는 여러 세율을 상품에 연결할 수 있으며, '+' 아이콘을 클릭하여 이 시점에서 새로운 세율을 추가할 수도 있습니다.
+
+![상품에 세율 연결](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047462129/original/TYAolV-YAwkcAbiyAClhakWDJA24uzbRDQ.png?1748581445)
+
+![세율 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047462168/original/Jsg1jO5QlIKnpCtJzXDJHiP81tj3vaiVbA.png?1748581522)
+
+이러한 세율은 상품이 결제 페이지(인보이스 제외)에 추가될 때마다 자동으로 표시됩니다.
+
+**인보이스에 세율을 적용하는 과정:**
+
+`Payments(결제) > Invoices(인보이스)`로 이동
+
+인보이스를 생성하거나 초안 인보이스를 편집할 때, 상품 옆에 있는 "Add Tax(세금 추가)"를 클릭하세요.
+
+![인보이스 세금 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047462283/original/2eK0UpJ_J9hN1eGk_yHNuqUBGw2KhnlSUQ.png?1748581690)
+
+"Add Taxes(세금 추가)" 팝업에서 추가하고자 하는 세금에 체크하세요.
+
+![세금 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047462346/original/NttcdXi6VtarGriQ69XToFFQwfh8AlcWvQ.png?1748581739)
+
+'저장'을 클릭하여 변경 사항을 확인하면 인보이스에 세금이 계산됩니다.
+
+![인보이스 세금 계산](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047462355/original/ozeUcqMW7TtAc5yAE0hQKhbK7QCj-wZRaQ.png?1748581759)
+
+**세율 삭제:**
+
+세율을 삭제하려면 세율 옆의 삭제 아이콘을 클릭하세요.
+
+![세율 삭제](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047462040/original/XgDzC0JLL4qXcJMcXqlov1c91gNzXYgcrQ.png?1748581295)
+
+수동 세율(인보이스 제외)은 자동 세금이 활성화된 경우 대체 수단으로 작동합니다. 특정 관할 구역에서 수동 세율만 사용하려면 먼저 자동 세율을 비활성화하거나 자동 세금 대신 수동 세율을 사용하려는 넥서스 주소를 업데이트하세요. 아래 예시를 참조하세요.
+
+미국의 모든 주에는 자동 세금을 사용하되 텍사스는 제외하려면 자동 세금 설정의 넥서스 주소 목록에서 텍사스를 제거할 수 있습니다. 모든 고객에게 수동 세금만 사용하려면 자동 세금을 완전히 비활성화하세요.
+
+![자동 세금 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047462737/original/vQH5YzZIteaG-g9aaRVIq4NFRB6NALWWVA.png?1748582212)
+
+## SaaS 에이전시를 위한 Stripe 세금 관리 해결책 구현
+
+세금 설정 기능 외에도 EU, 영국, 북미 등의 지역에서 운영되는 SaaS 에이전시는 Stripe 세금 관리 해결책을 구현하는 것이 도움이 될 수 있습니다. 주요 세금 관리 솔루션이 개발되는 동안 Stripe Checkout과 세금 관리 서비스를 통합하면 일시적으로 세금 관리를 간소화하고 지역 세금 규정 준수를 보장할 수 있습니다. 이 해결책은 유연성, 정확성, 그리고 거래 중 개선된 고객 경험을 제공합니다.
+
+Stripe 세금 관리 해결책은 SaaS 상품에 대해 Stripe에서 VAT나 판매세 같은 세금 카테고리를 구성하여 세금을 포함하거나 제외하는 유연한 가격 옵션을 제공하는 것을 포함합니다. Stripe의 세금 관리 서비스를 사용하여 SaaS 에이전시는 원활한 결제 경험을 제공하고 거래 중에 잠재 고객에게 세금을 투명하게 표시할 수 있습니다. 또한 이 접근 방식은 대상 지역의 세법 준수를 보장하여 세금 준수를 간소화합니다.
+
+### 이 기능의 사용 사례와 장점은 무엇인가요?
+
+**사용 사례 1: 구독 기반 소프트웨어**
+
+SaaS 회사가 여러 요금제를 가진 구독 기반 소프트웨어를 제공합니다. 고객의 위치와 선택한 요금제 유형에 따라 다른 세율을 부과해야 합니다.
+
+장점:
+
+- 실시간 세금 계산: Stripe 세금 관리 해결책은 결제 중 동적 세금 계산을 가능하게 하여 고객의 위치에 기반한 정확한 세율을 보장합니다.
+- 간소화된 세금 준수: Stripe의 세금 관리 서비스를 사용하여 SaaS 회사는 지역 세금 규정 준수를 보장하고 법적 문제의 위험을 최소화할 수 있습니다.
+
+**사용 사례 2: 애드온이 있는 SaaS 플랫폼**
+
+SaaS 플랫폼이 핵심 서비스를 제공하고 사용자가 구매할 수 있는 다양한 애드온을 제공합니다. 핵심 서비스와 애드온의 세율은 지역에 따라 다를 수 있습니다.
+
+장점:
+
+- 유연한 세금 적용: Stripe 세금 관리 해결책을 통해 SaaS 회사는 핵심 서비스와 애드온에 다른 세율을 적용하여 정확한 청구를 보장할 수 있습니다.
+- 향상된 고객 경험: 결제 중 투명한 세금 계산은 고객 경험을 개선하고 신뢰와 만족을 높입니다.
+
+**사용 사례 3: 국제적으로 확장하는 SaaS 회사**
+
+SaaS 회사가 고유한 세금 규정과 요구사항을 가진 새로운 국제 시장으로 서비스를 확장하고 있습니다.
+
+장점:
+
+- 확장 가능한 세금 관리: Stripe 세금 관리 해결책은 여러 시장에서 세금 관리를 간소화하여 SaaS 회사의 성장을 지원하고 지역 세법 준수를 보장합니다.
+- 관리 부담 감소: Stripe의 세금 관리 서비스를 활용하면 세금 관리에 필요한 시간과 노력을 줄여 회사가 국제적 확장의 다른 측면에 집중할 수 있습니다.
+
+**사용 사례 4: 맞춤 요금제를 제공하는 SaaS 회사**
+
+SaaS 회사가 고객의 고유한 요구사항에 맞춘 맞춤 요금제를 제공합니다. 이러한 맞춤 요금제는 포함된 서비스와 고객의 위치에 따라 다양한 세율을 가질 수 있습니다.
+
+장점:
+
+- 정확한 세금 계산: Stripe 세금 관리 해결책을 통해 SaaS 회사는 맞춤 요금제에 대해 정확하게 세금을 계산하고 적용하여 고객이 올바르게 청구받을 수 있도록 보장합니다.
+- 개선된 재무 보고: 간소화된 세금 계산을 통해 SaaS 회사는 정확한 재무 보고서를 생성하여 비즈니스를 위한 더 나은 의사결정을 가능하게 합니다.
+
+**주의사항:**
+
+해당 지역의 세법에 대해 세무 변호사나 공인회계사에게 확인하세요. 이 글은 데모 목적의 가정일 뿐입니다.
+
+## SaaS 결제 링크에서 세금을 사용하는 방법
+
+구독 기반 소프트웨어나 서비스에 Stripe 세금 관리와 SaaS 해결책을 사용하려면 다음 단계를 따르세요:
+
+### Stripe에서 세율 설정:
+
+a. Stripe 계정에 로그인하세요.
+
+b. `Products(상품) > Tax Rates(세율) > New(새로 만들기)` 메뉴로 이동하세요.
+
+![Stripe 세율 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48295260712/original/vkJxe2YXDKQjiFvDyrKg2_8kh4yJhrSUaQ.png?1682960072)
+
+c. 세금 이름, 백분율 세율, 포함(inclusive) 또는 배타(exclusive) 여부 등 필수 정보를 입력하세요. (포함은 에이전시가 세금을 부담하고, 배타는 고객이 요금제 가격에 추가로 세금을 지불한다는 의미입니다)
+
+![세율 정보 입력](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48295260839/original/e1zZ04XcPHwnNO7DZbWKQvs3DDZjiUGM9A.png?1682960153)
+
+d. "Add Tax Rate(세율 추가)"를 클릭하여 세율을 생성하세요.
+
+**주의사항:**
+
+Stripe의 세금 행동에 대해 자세히 알아보려면 [여기를 클릭하세요.](https://stripe.com/docs/tax/products-prices-tax-categories-tax-behavior) 계속 진행하기 전에 계정에서 [Stripe 세금 관리를 활성화](https://stripe.com/docs/tax/set-up)했는지 확인하세요.
+
+### 기존 고객에게 세율 적용:
+
+a. Stripe에서 "Customers(고객)"로 이동하세요.
+
+b. 구독을 편집하려는 고객을 선택하세요.
+
+c. "Edit subscription(구독 편집)"을 클릭하세요.
+
+d. "Add Tax(세금 추가)" 아래에서 1단계에서 생성한 세율을 선택하세요.
+
+e. 변경 사항을 저장하여 고객의 구독에 세율을 적용하세요.
+
+### 신규 고객에게 세율 적용:
+
+계정에서 Stripe의 세금 관리 서비스를 활성화하고 등록 과정을 거친 후에는 다음과 같이 SaaS 상품에서 세금 카테고리를 선택할 수 있습니다:
+
+![SaaS 상품 세금 카테고리](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48295262267/original/ioW19pXjcSthKQ_Mvf9c-C_zdKHM1PMxvA.png?1682960892)
+
+a. [이 안내](https://stripe.com/docs/payment-links/api#stripe-tax)에 따라 생성한 세율을 SaaS 상품 결제 링크에 추가하세요.
+
+개별 가격에서 세금 행동을 정의하여 포함(고객에게 추가 요금 없음) 또는 배타(고객에게 세금이 별도로 부과됨) 여부를 결정해야 할 수도 있습니다.
+
+![세금 행동 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48295262549/original/WRoKhpiVpkDnJPWtFb0ACVCrgy_lSLkeEg.png?1682961035)
+
+b. 이제 SaaS 직접 판매 링크를 복사하여 잠재 고객과 공유할 수 있습니다.
+
+![SaaS 직접 판매 링크](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48295262834/original/nHG2rYkwMVI70lMqUOMZKq06nYtiMRDnhQ.png?1682961191)
+
+그러면 고객의 경험은 다음과 같습니다.
+
+![고객 결제 경험](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/
