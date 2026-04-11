@@ -17,7 +17,7 @@
 - [1.1 Google Local Services 광고 설정](#11-google-local-services-광고-설정)
 - [1.2 높은 구매 의도의 Google PPC 광고 운영](#12-높은-구매-의도의-google-ppc-광고-운영)
 - [1.3 통화 추적 및 즉시 후속 조치 활용](#13-통화-추적-및-즉시-후속-조치-활용)
-- [2단계: Facebook & Instagram 광고 운영](#2단계-facebook--instagram-광고-운영)
+- [2단계: Facebook & Instagram 광고 운영](#2단계-facebook-instagram-광고-운영)
 - [2.1 Facebook 지역 리드 광고 런칭](#21-facebook-지역-리드-광고-런칭)
 - [2.2 예약하지 않은 방문자 리타겟팅](#22-예약하지-않은-방문자-리타겟팅)
 - [2.3 후속 조치 자동화](#23-후속-조치-자동화)

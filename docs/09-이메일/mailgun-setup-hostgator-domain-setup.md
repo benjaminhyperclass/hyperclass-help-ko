@@ -8,7 +8,7 @@
 
 **목차**
 
-- [단계별 Mailgun 설정 - HostGator 도메인 설정](#단계별-mailgun-설정---hostgator-도메인-설정)
+- [단계별 Mailgun 설정 - HostGator 도메인 설정](#단계별-mailgun-설정-hostgator-도메인-설정)
 - [첫 번째 TXT 레코드 추가하기](#첫-번째-txt-레코드-추가하기)
 - [두 번째 TXT 레코드 추가하기](#두-번째-txt-레코드-추가하기)
 - [첫 번째 MX 레코드 추가하기](#첫-번째-mx-레코드-추가하기)

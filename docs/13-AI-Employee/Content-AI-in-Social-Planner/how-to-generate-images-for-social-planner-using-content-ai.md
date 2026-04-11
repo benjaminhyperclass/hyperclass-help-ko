@@ -20,7 +20,7 @@
 
 #### [주의사항:](#주의사항)
 
-#### [1단계: Marketing(마케팅) > Social Planner(소셜 플래너) > New Post(새 게시물)로 이동](#1단계-marketing마케팅--social-planner소셜-플래너--new-post새-게시물로-이동)-→-Social-Planner(소셜-플래너)-→-New-Post(새-게시물)로-이동)
+#### [1단계: Marketing(마케팅) > Social Planner(소셜 플래너) > New Post(새 게시물)로 이동](#1단계-marketing마케팅-social-planner소셜-플래너-new-post새-게시물로-이동)
 
 #### [2단계: 새 게시물을 만든 후 게시할 소셜 채널을 선택](#2단계-새-게시물을-만든-후-게시할-소셜-채널을-선택)
 

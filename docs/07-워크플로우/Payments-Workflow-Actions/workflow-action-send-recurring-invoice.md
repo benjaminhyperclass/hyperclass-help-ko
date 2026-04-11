@@ -10,11 +10,11 @@
 
 **목차**
 
-- [워크플로우의 정기 인보이스란?](#What-is-Recurring-Invoices-in-Workflows?)
-- [워크플로우 정기 인보이스의 주요 장점](#Key-Benefits-of-Recurring-Invoices-in-Workflows)
+- [워크플로우의 정기 인보이스란?](#워크플로우의-정기-인보이스란)
+- [워크플로우 정기 인보이스의 주요 장점](#워크플로우-정기-인보이스의-주요-장점)
 - [사전 요구사항](#사전-요구사항)
-- [정기 인보이스 설정 옵션](#Recurring-Invoice-Configuration-Settings)
-- [워크플로우에서 정기 인보이스 설정하는 방법](#How-to-Set-Up-Recurring-Invoices-in-Workflows)
+- [정기 인보이스 설정 옵션](#정기-인보이스-설정-옵션)
+- [워크플로우에서 정기 인보이스 설정하는 방법](#워크플로우에서-정기-인보이스-설정하는-방법)
 - [자주 묻는 질문](#자주-묻는-질문)
 
 # 워크플로우의 정기 인보이스 발송 액션이란?

@@ -28,16 +28,16 @@ Zoom은 비디오, 오디오, 전화, 채팅을 동시에 지원하는 커뮤니
 
 #### [2단계: Zoom 위치로 예약 알림 워크플로우 설정](#2단계-zoom-위치로-예약-알림-워크플로우-설정)
 
-#### [**자주 묻는 질문**](#FAQs)
+#### [**자주 묻는 질문**](#자주-묻는-질문)
 
-- [사이드바에 Profile 탭이 없어요.](#I-don't-have-a-Profile-tab-on-my-sidebar.)
-- [미팅 수정 시 미팅 링크 처리](#Handling-Meeting-Links-when-Meetings-are-Edited)
-- [미팅 삭제 시 미팅 링크 처리](#Handling-Meeting-Links-when-Meetings-are-Deleted)
-- [다른 시간으로 미팅 일정 변경 시 미팅 링크 처리](#Handling-Meeting-Links-when-Meetings-are-Rescheduled-to-a-different-time)
-- [같은 시간대에 여러 Zoom 미팅 처리](#Handling-Multiple-Zoom-Meetings-at-the-Same-Time-Slot)
-- [기존 Zoom 이벤트가 캘린더에 반영되지 않는 경우](#Existing-Zoom-Events-Not-Reflecting-in-the-Calendar)
-- [캘린더 버전 지원](#Calendar-Version-Support)
-- [미배정 캘린더에 Zoom 계정을 연동하는 방법](#How-do-I-integrate-my-Zoom-account-with-an-unassigned-calendar)
+- [사이드바에 Profile 탭이 없어요.](#사이드바에-profile-탭이-없어요)
+- [미팅 수정 시 미팅 링크 처리](#미팅-수정-시-미팅-링크-처리)
+- [미팅 삭제 시 미팅 링크 처리](#미팅-삭제-시-미팅-링크-처리)
+- [다른 시간으로 미팅 일정 변경 시 미팅 링크 처리](#다른-시간으로-미팅-일정-변경-시-미팅-링크-처리)
+- [같은 시간대에 여러 Zoom 미팅 처리](#같은-시간대에-여러-zoom-미팅-처리)
+- [기존 Zoom 이벤트가 캘린더에 반영되지 않는 경우](#기존-zoom-이벤트가-캘린더에-반영되지-않는-경우)
+- [캘린더 버전 지원](#캘린더-버전-지원)
+- [미배정 캘린더에 Zoom 계정을 연동하는 방법](#미배정-캘린더에-zoom-계정을-연동하는-방법)
 
 ## Zoom 연동이란?
 

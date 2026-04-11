@@ -18,8 +18,8 @@
 - [오류: 이 에이전시에 사용자가 존재하지 않습니다](#오류-이-에이전시에-사용자가-존재하지-않습니다)
 - [오류는 없지만 페이지가 리디렉션되지 않고 멈춤](#오류는-없지만-페이지가-리디렉션되지-않고-멈춤)
 - [오류: 웹 서버에서 알 수 없는 오류 반환](#오류-웹-서버에서-알-수-없는-오류-반환)
-- [Chrome에서 사이트 데이터 제거 방법](#How-to-remove-Site-Data-on-Chrome:1.-For-chrome,-Right-Click-on-the-browser-and-inspect-the-page's-elements.%C2%A0)
-- [Safari에서 사이트 데이터 제거 방법](#How-to-remove-Site-Data-on-Safari%3A)
+- [Chrome에서 사이트 데이터 제거 방법](#chrome에서-사이트-데이터-제거-방법)
+- [Safari에서 사이트 데이터 제거 방법](#safari에서-사이트-데이터-제거-방법)
 
 ## 오류: 현재 로그인할 수 없습니다
 

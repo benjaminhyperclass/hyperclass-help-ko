@@ -24,7 +24,7 @@
 - [액션 구성](#액션-구성)
   - [필드 관리](#필드-관리)
   - [새 필드 생성](#새-필드-생성)
-    - [유형: Select / Multi Select / Radio](#유형-select--multi-select--radio)
+    - [유형: Select / Multi Select / Radio](#유형-select-multi-select-radio)
       - [상수](#상수)
       - [내부 참조](#내부-참조)
       - [외부 API](#외부-api)
@@ -112,15 +112,15 @@ API로 전송하는 데 필요한 데이터를 수집하기 위한 폼을 구성
 - String
 - Numerical
 - Textarea
-- [Select](#유형-Select--Multi-Select--Radio)
-- [Multiple Select](#유형-Select--Multi-Select--Radio)
-- [Radio](#유형-Select--Multi-Select--Radio)
+- [Select](#유형-select-multi-select-radio)
+- [Multiple Select](#유형-select-multi-select-radio)
+- [Radio](#유형-select-multi-select-radio)
 - Toggle
 - Checkbox
 - Attachment
 - Rich Text Editor
-- [Hidden](#유형-Hidden)
-- [Dynamic](#유형-Dynamic)
+- [Hidden](#유형-hidden)
+- [Dynamic](#유형-dynamic)
 
 **필수**
 

@@ -12,7 +12,7 @@
 
 **목차**
 
-- [Facebook & Instagram 연동](#facebook--instagram-연동)
+- [Facebook & Instagram 연동](#facebook-instagram-연동)
 - [Instagram을 Facebook에 연결하기](#instagram을-facebook에-연결하기)
 ---
 

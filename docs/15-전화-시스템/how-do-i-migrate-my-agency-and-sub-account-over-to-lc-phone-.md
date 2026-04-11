@@ -17,14 +17,14 @@ LC-Phone으로 CRM에서 SMS/전화 송수신 기능을 바로 사용할 수 있
 이 문서에서 다루는 내용:
 
 - [LC-Phone을 선택해야 하는 이유?](#lc-phone을-선택해야-하는-이유)
-- [이 기능을 사용하는 방법](#How-to-use-this-feature?)
-- [1단계 - LC-Phone 시스템 접근 권한 확인](#1단계---lc-phone-시스템-접근-권한-확인)
-- [2단계 - 에이전시를 ISV로 전환](#2단계---에이전시를-isv로-전환)
-- [3단계 - 기존 하위 계정을 LC Phone으로 이전](#3단계---기존-하위-계정을-lc-phone으로-이전)
-- [하위 계정 마이그레이션 전 중요 확인 사항](#Some-important-points-to-look-at-before-migrating-the-sub-account%3A)
-- [A. 모든 하위 계정을 LeadConnector Phone으로 일괄 마이그레이션 - 미국/캐나다 계정](#A.-Bulk-Migrate-all-sub-accounts-to-LeadConnector-Phone---US/Canada-sub-account)
-- [B. 단일 계정을 LeadConnector Phone으로 마이그레이션 - 미국/캐나다 계정](#B.-Migrate-a-single-account-to-LeadConnector-Phone---US/Canada-sub-account)
-- [C. 단일 계정을 LeadConnector Phone으로 마이그레이션 - 미국/캐나다 이외 계정](#C.-Migrate-a-single-account-to-LeadConnector-Phone---Non-US/Canada-sub-account)
+- [이 기능을 사용하는 방법](#이-기능을-사용하는-방법)
+- [1단계 - LC-Phone 시스템 접근 권한 확인](#1단계-lc-phone-시스템-접근-권한-확인)
+- [2단계 - 에이전시를 ISV로 전환](#2단계-에이전시를-isv로-전환)
+- [3단계 - 기존 하위 계정을 LC Phone으로 이전](#3단계-기존-하위-계정을-lc-phone으로-이전)
+- [하위 계정 마이그레이션 전 중요 확인 사항](#하위-계정-마이그레이션-전-중요-확인-사항)
+- [A. 모든 하위 계정을 LeadConnector Phone으로 일괄 마이그레이션 - 미국/캐나다 계정](#a-모든-하위-계정을-leadconnector-phone으로-일괄-마이그레이션-미국캐나다-계정)
+- [B. 단일 계정을 LeadConnector Phone으로 마이그레이션 - 미국/캐나다 계정](#b-단일-계정을-leadconnector-phone으로-마이그레이션-미국캐나다-계정)
+- [C. 단일 계정을 LeadConnector Phone으로 마이그레이션 - 미국/캐나다 이외 계정](#c-단일-계정을-leadconnector-phone으로-마이그레이션-미국캐나다-이외-계정)
 - [자주 묻는 질문](#자주-묻는-질문)
 
 # 이 기능을 사용하는 방법?

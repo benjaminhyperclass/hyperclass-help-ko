@@ -24,10 +24,10 @@
 
 #### [5단계: 웹 옵션을 선택하고 추적할 퍼널/웹사이트 URL 추가](#5단계-웹-옵션을-선택하고-추적할-퍼널웹사이트-url-추가)
 
-#### [6단계: Google에서 제공하는 스크립트(gtag.js)를 퍼널/웹사이트 추적 코드에 추가하거나 아래의 Google Tag Manager 지침 따르기](#6단계-google에서-제공하는-스크립트gtagjs를-퍼널웹사이트-추적-코드에-추가하거나-아래의-google-tag-manager-지침-따르기)-provided-inside-Google-to-the-Funnel/Website-%3Chead%3E-tracking-code-OR-follow-the-instructions-of-the-Google-Tag-manager-listed-below.)
+#### [6단계: Google에서 제공하는 스크립트(gtag.js)를 퍼널/웹사이트 추적 코드에 추가하거나 아래의 Google Tag Manager 지침 따르기](#6단계-google에서-제공하는-스크립트gtagjs를-퍼널웹사이트-추적-코드에-추가하거나-아래의-google-tag-manager-지침-따르기)
 
 - 
-#### [퍼널/웹사이트에 Google Site Tag(gtag.js) 추가하는 방법](#How-to-add-Google-Site-Tag-(gtag.js)-to-your-Funnel/Website-%3Chead%3E)
+#### [퍼널/웹사이트에 Google Site Tag(gtag.js) 추가하는 방법](#퍼널웹사이트에-google-site-taggtagjs-추가하는-방법)
 
 ## 1단계: Google Analytics에 로그인
 

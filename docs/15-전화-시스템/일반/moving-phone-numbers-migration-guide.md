@@ -19,10 +19,10 @@
 **목차**
 
 - [전화번호 이전](#전화번호-이전)
-- [케이스 1: LC → Twilio](#케이스-1-lc--twilio)
-- [케이스 2: Twilio → LC (LeadConnector)](#케이스-2-twilio--lc-leadconnector)
-- [케이스 3: LC → LC (다른 에이전시의 하위 계정)](#케이스-3-lc--lc-다른-에이전시의-하위-계정)
-- [케이스 4: LC → LC (같은 에이전시의 하위 계정)](#케이스-4-lc--lc-같은-에이전시의-하위-계정)
+- [케이스 1: LC → Twilio](#케이스-1-lc-→-twilio)
+- [케이스 2: Twilio → LC (LeadConnector)](#케이스-2-twilio-→-lc-leadconnector)
+- [케이스 3: LC → LC (다른 에이전시의 하위 계정)](#케이스-3-lc-→-lc-다른-에이전시의-하위-계정)
+- [케이스 4: LC → LC (같은 에이전시의 하위 계정)](#케이스-4-lc-→-lc-같은-에이전시의-하위-계정)
 - [케이스 5: Twilio가 아닌 전화번호를 Hyperclass(LC)로 포팅](#케이스-5-twilio가-아닌-전화번호를-hyperclasslc로-포팅)
 - [자주 묻는 질문](#자주-묻는-질문)
 

@@ -11,7 +11,7 @@
 **목차**
 
 - [1단계: 잠금 화면에서 'Reactivate Account(계정 재활성화)' 클릭](#1단계-잠금-화면에서-reactivate-account계정-재활성화-클릭)
-- [2단계: Agency Settings(에이전시 설정) > Billing(청구) > Payments(결제) 이동](#2단계-agency-settings에이전시-설정--billing청구--payments결제-이동)
+- [2단계: Agency Settings(에이전시 설정) > Billing(청구) > Payments(결제) 이동](#2단계-agency-settings에이전시-설정-billing청구-payments결제-이동)
 - [3단계: 'Payments History(결제 기록)' 섹션에서 최근 실패한 인보이스를 찾아 'Retry(재시도)' 클릭](#3단계-payments-history결제-기록-섹션에서-최근-실패한-인보이스를-찾아-retry재시도-클릭)
 - [4단계: 3DS 팝업에서 은행 웹사이트 지시에 따라 결제 승인](#4단계-3ds-팝업에서-은행-웹사이트-지시에-따라-결제-승인)
 

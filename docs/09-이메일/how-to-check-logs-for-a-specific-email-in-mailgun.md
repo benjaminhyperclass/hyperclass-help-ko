@@ -14,7 +14,7 @@
   - [이전 반송 주소로 배송되지 않음](#이전-반송-주소로-배송되지-않음)
   - [수신자가 실수로 구독 취소한 경우](#수신자가-실수로-구독-취소한-경우)
   - [xxxxxxxxxxxx.com에서 인증되지 않은 이메일](#xxxxxxxxxxxxcom에서-인증되지-않은-이메일)
-  - [yahoo.com / hotmail.com / aol.com / outlook.com에서 인증되지 않은 이메일](#yahoocom--hotmailcom--aolcom--outlookcom에서-인증되지-않은-이메일)
+  - [yahoo.com / hotmail.com / aol.com / outlook.com에서 인증되지 않은 이메일](#yahoocom-hotmailcom-aolcom-outlookcom에서-인증되지-않은-이메일)
 
 # Mailgun 발송 로그
 

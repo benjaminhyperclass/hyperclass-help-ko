@@ -10,7 +10,7 @@
 
 **목차**
 
-- [LC Migrator - 원클릭 이주](#lc-migrator---원클릭-이주)
+- [LC Migrator - 원클릭 이주](#lc-migrator-원클릭-이주)
 - [All-In-One Migration 플러그인](#all-in-one-migration-플러그인)
 
 ## **LC Migrator - 원클릭 이주**

@@ -13,9 +13,9 @@
 **목차**
 
 - [하위 계정에 Stripe 연결 단계](#하위-계정에-stripe-연결-단계)
-- [1단계: 하위 계정 Stripe 연동에 접근하는 3가지 방법](#Step-1%3A-There-are-three-(3)-ways-to-get-to-the-sub-account-Stripe-integration.)
-- [2단계: Stripe 인증 안내 따르기](#Step-2%3A-Follow-Stripe's-authorization-instructions.)
-- [3단계: Stripe 활성화 확인하기](#Step-3%3A-Verify-that-Stripe-is-enabled.)
+- [1단계: 하위 계정 Stripe 연동에 접근하는 3가지 방법](#1단계-하위-계정-stripe-연동에-접근하는-3가지-방법)
+- [2단계: Stripe 인증 안내 따르기](#2단계-stripe-인증-안내-따르기)
+- [3단계: Stripe 활성화 확인하기](#3단계-stripe-활성화-확인하기)
 
 # 하위 계정에 Stripe 연결 단계
 

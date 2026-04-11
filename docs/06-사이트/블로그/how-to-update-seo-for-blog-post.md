@@ -11,8 +11,8 @@
 # 블로그 포스트 SEO 수정 방법
 
 - [1: 새 블로그 포스트를 작성할 때](#1-새-블로그-포스트를-작성할-때)
-- [2: Blog Post > Editor > Publish 화면에서](#2-blog-post--editor--publish-화면에서)
-- [3: 블로그 목록 뷰에서 액션 드롭다운 > Update SEO Details 사용](#3-블로그-목록-뷰에서-액션-드롭다운--update-seo-details-사용)
+- [2: Blog Post > Editor > Publish 화면에서](#2-blog-post-editor-publish-화면에서)
+- [3: 블로그 목록 뷰에서 액션 드롭다운 > Update SEO Details 사용](#3-블로그-목록-뷰에서-액션-드롭다운-update-seo-details-사용)
 
 ### 1: 새 블로그 포스트를 작성할 때
 

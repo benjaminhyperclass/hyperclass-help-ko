@@ -8,12 +8,12 @@
 
 **목차**
 
-- [1단계: 우상단 메뉴에서 Account(계정) 드롭다운 클릭 후 Subaccounts(하위 계정) 선택](#Step-1)
-- [2단계: Twilio에 하위 계정이 너무 많은 경우, Hyperclass로 돌아가서 해당 로케이션의 Account SID 복사](#Step-2)
-- [3단계: Hyperclass 에이전시 설정 → Twilio에서 Twilio 하위 계정 SID로 검색](#Step-3)
-- [4단계: 하위 계정에 들어가면 좌측 상단에 주황색 텍스트가 보임](#Step-4)
-- [5단계: Monitor(모니터) → Logs(로그) → Calls(통화) 클릭](#Step-5)
-- [자주 묻는 질문](#FAQ)
+- [1단계: 우상단 메뉴에서 Account(계정) 드롭다운 클릭 후 Subaccounts(하위 계정) 선택](#1단계-우상단-메뉴에서-account계정-드롭다운-클릭-후-subaccounts하위-계정-선택)
+- [2단계: Twilio에 하위 계정이 너무 많은 경우, Hyperclass로 돌아가서 해당 로케이션의 Account SID 복사](#2단계-twilio에-하위-계정이-너무-많은-경우-hyperclass로-돌아가서-해당-로케이션의-account-sid-복사)
+- [3단계: Hyperclass 에이전시 설정 → Twilio에서 Twilio 하위 계정 SID로 검색](#3단계-hyperclass-에이전시-설정-→-twilio에서-twilio-하위-계정-sid로-검색)
+- [4단계: 하위 계정에 들어가면 좌측 상단에 주황색 텍스트가 보임](#4단계-하위-계정에-들어가면-좌측-상단에-주황색-텍스트가-보임)
+- [5단계: Monitor(모니터) → Logs(로그) → Calls(통화) 클릭](#5단계-monitor모니터-→-logs로그-→-calls통화-클릭)
+- [자주 묻는 질문](#자주-묻는-질문)
 
 통화 이벤트가 작동하지 않을 때 사용할 수 있는 문제 해결 방법입니다:
 

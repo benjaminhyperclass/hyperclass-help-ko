@@ -13,7 +13,7 @@
 **목차**
 
 - [Google Drive 연동이란?](#google-drive-연동이란)
-- [Google Drive 연동의 장점](#Google-Drive-연동의-장점)
+- [Google Drive 연동의 장점](#google-drive-연동의-장점)
 - [미디어 라이브러리에 Google Drive 연동하기](#미디어-라이브러리에-google-drive-연동하기)
 - [참고사항 및 제한사항](#참고사항-및-제한사항)
 - [자주 묻는 질문](#자주-묻는-질문)

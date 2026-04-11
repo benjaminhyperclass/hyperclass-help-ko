@@ -16,7 +16,7 @@
 
 - [초대 목표(Invite Goals):](#초대-목표invite-goals)
 - [받은 리뷰(Reviews Received):](#받은-리뷰reviews-received)
-- [온라인 리스팅(해당 시):](#온라인-리스팅해당-시)%3A)
+- [온라인 리스팅(해당 시):](#온라인-리스팅해당-시)
 - [평균 평점(Avg Rating):](#평균-평점avg-rating)
 - [감정 분석(Sentiment):](#감정-분석sentiment)
 - [초대 트렌드(Invite Trends):](#초대-트렌드invite-trends)

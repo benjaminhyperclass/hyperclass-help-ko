@@ -42,21 +42,21 @@
 
 #### [신규 고객에게 세율 적용:](#신규-고객에게-세율-적용)
 
-#### [자주 묻는 질문](#FAQs)
+#### [자주 묻는 질문](#자주-묻는-질문)
 
-#### [CRM 세금 설정 기능이나 SaaS 해결책을 사용하여 특정 고객의 세금 면제를 어떻게 처리하나요?](#How-do-I-handle-tax-exemptions-for-specific-customers-using-the-CRM-Tax-Settings-feature-or-the-SaaS-workaround?)
+#### [CRM 세금 설정 기능이나 SaaS 해결책을 사용하여 특정 고객의 세금 면제를 어떻게 처리하나요?](#crm-세금-설정-기능이나-saas-해결책을-사용하여-특정-고객의-세금-면제를-어떻게-처리하나요)
 
-#### [CRM 세금 설정 기능과 SaaS 해결책에서 여러 세율을 사용할 수 있나요?](#Can-I-use-multiple-tax-rates-with-the-CRM-Tax-Settings-feature-and-the-SaaS-workaround?)
+#### [CRM 세금 설정 기능과 SaaS 해결책에서 여러 세율을 사용할 수 있나요?](#crm-세금-설정-기능과-saas-해결책에서-여러-세율을-사용할-수-있나요)
 
-#### [고객이 위치나 청구 주소를 변경하면 어떻게 되나요?](#What-happens-if-a-customer-changes-their-location-or-billing-address?)
+#### [고객이 위치나 청구 주소를 변경하면 어떻게 되나요?](#고객이-위치나-청구-주소를-변경하면-어떻게-되나요)
 
-#### [두 방법 모두 일회성 구매에 세금을 적용할 수 있나요?](#Can-I-apply-taxes-to-one-time-purchases-using-both-methods?)
+#### [두 방법 모두 일회성 구매에 세금을 적용할 수 있나요?](#두-방법-모두-일회성-구매에-세금을-적용할-수-있나요)
 
-#### [두 방법은 환불을 어떻게 처리하나요?](#How-do-both-methods-handle-refunds?)
+#### [두 방법은 환불을 어떻게 처리하나요?](#두-방법은-환불을-어떻게-처리하나요)
 
-#### [두 방법 모두 세금 보고서를 생성할 수 있나요?](#Can-I-generate-tax-reports-using-both-methods?)
+#### [두 방법 모두 세금 보고서를 생성할 수 있나요?](#두-방법-모두-세금-보고서를-생성할-수-있나요)
 
-#### [두 방법으로 세금 변경이나 업데이트를 어떻게 처리하나요?](#How-do-I-handle-tax-changes-or-updates-using-both-methods?)
+#### [두 방법으로 세금 변경이나 업데이트를 어떻게 처리하나요?](#두-방법으로-세금-변경이나-업데이트를-어떻게-처리하나요)
 
 ## CRM이 세금을 어떻게 적용하나요?
 

@@ -8,7 +8,7 @@
 
 **목차**
 
-- [단계별 LC Email 전용 도메인 설정 - Siteground](#단계별-lc-email-전용-도메인-설정---siteground)
+- [단계별 LC Email 전용 도메인 설정 - Siteground](#단계별-lc-email-전용-도메인-설정-siteground)
 - [첫 번째 TXT 레코드 추가](#첫-번째-txt-레코드-추가)
 - [두 번째 TXT 레코드 추가](#두-번째-txt-레코드-추가)
 - [첫 번째 MX 레코드 추가](#첫-번째-mx-레코드-추가)

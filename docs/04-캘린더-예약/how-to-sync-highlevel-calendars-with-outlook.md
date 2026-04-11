@@ -32,7 +32,7 @@ CRM과 아웃룩 캘린더 연동 기능을 통해 사용자는 아웃룩 캘린
 
 - #### [하나의 로케이션에서 한 사용자가 두 개의 다른 아웃룩 계정을 연결할 수 있나요?](#하나의-로케이션에서-한-사용자가-두-개의-다른-아웃룩-계정을-연결할-수-있나요)
 
-- #### [다른 사용자가 이미 연결한 아웃룩 계정을 다른 사용자에게 연결하려고 하면 시스템이 허용하지 않습니다. 해결 방법이 있나요?](#The-system-is-not-allowing-me-to-connect-an-Outlook-account-to-a-user-already-connected-by-a-different-user-(Even-if-it-is-the-same-person-just-using-another-email-address-in-the-other-CRM-user-account).-If-that-is-functionality,-can-you-guys-give-me-a-workaround?)
+- #### [다른 사용자가 이미 연결한 아웃룩 계정을 다른 사용자에게 연결하려고 하면 시스템이 허용하지 않습니다. 해결 방법이 있나요?](#다른-사용자가-이미-연결한-아웃룩-계정을-다른-사용자에게-연결하려고-하면-시스템이-허용하지-않습니다-해결-방법이-있나요)
 
 - #### [관리자인데, 팀 관리에서 에이전트들의 아웃룩 연동을 설정할 수 있나요?](#관리자인데-팀-관리에서-에이전트들의-아웃룩-연동을-설정할-수-있나요)
 

@@ -10,10 +10,10 @@ SaaS 에이전시에서는 이제 새로 추가된 하위 계정 사용자에게
 
 ## 목차
 
-- [1단계: SaaS Configurator > Advanced Settings > Customize Welcome Email로 이동](#step-1)
-- [2단계: 하위 계정 선택](#step-2)  
-- [3단계: 템플릿 커스터마이징](#step-3)
-- [4단계: 저장](#step-4)
+- [1단계: SaaS Configurator > Advanced Settings > Customize Welcome Email로 이동](#1단계-saas-configurator-advanced-settings-customize-welcome-email로-이동)
+- [2단계: 하위 계정 선택](#2단계-하위-계정-선택)  
+- [3단계: 템플릿 커스터마이징](#3단계-템플릿-커스터마이징)
+- [4단계: 저장](#4단계-저장)
 
 ### 1단계: SaaS Configurator > Advanced Settings > Customize Welcome Email > Customize Now로 이동 {#step-1}
 

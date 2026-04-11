@@ -46,7 +46,7 @@ NMI(Network Merchants Inc.)는 비즈니스가 온라인 거래를 안전하고 
 
 - #### [NMI를 통해 생성된 구독은 어디서 찾을 수 있나요? 구독(Subscriptions) 페이지에 정의된 구독 상태를 이해할 수 없습니다.](#nmi를-통해-생성된-구독은-어디서-찾을-수-있나요-구독subscriptions-페이지에-정의된-구독-상태를-이해할-수-없습니다)
 
-- #### [NMI 연동이 캘린더 결제/멤버십 및 기타 영역에서 언제 사용 가능해지나요?](#When-will-the-NMI-integration-be-available-for-Calendar-payments/memberships-and-other-areas?)
+- #### [NMI 연동이 캘린더 결제/멤버십 및 기타 영역에서 언제 사용 가능해지나요?](#nmi-연동이-캘린더-결제멤버십-및-기타-영역에서-언제-사용-가능해지나요)
 
 #### [참고 추가 자료](#참고-추가-자료)
 

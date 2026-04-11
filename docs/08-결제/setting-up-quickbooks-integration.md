@@ -14,8 +14,8 @@ Hyperclass와 QuickBooks 간 양방향 연동 사용법을 알아보세요.
 
 - [커뮤니티 튜토리얼](#커뮤니티-튜토리얼)
 - [QuickBooks 연동의 기능](#quickbooks-연동의-기능)
-  - [Hyperclass → QuickBooks](#hyperclass--quickbooks)
-  - [QuickBooks → Hyperclass](#quickbooks--hyperclass)
+  - [Hyperclass → QuickBooks](#hyperclass-→-quickbooks)
+  - [QuickBooks → Hyperclass](#quickbooks-→-hyperclass)
 - [QuickBooks 연동하기](#quickbooks-연동하기)
 - [자주 묻는 질문](#자주-묻는-질문)
 

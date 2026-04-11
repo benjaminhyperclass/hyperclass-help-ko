@@ -32,19 +32,19 @@ Facebook 리드 광고 연동(Facebook Lead Ads integration)을 사용하면 Fac
 
 #### [자주 발생하는 오류](#자주-발생하는-오류)
 
-#### [페이지 품질 문제](#Page-Quality-Issue-%3A%C2%A0)
+#### [페이지 품질 문제](#페이지-품질-문제)
 
-#### [권한 문제](#Permission-Issue%3A%C2%A0)
+#### [권한 문제](#권한-문제)
 
-#### [인스타그램 연결/메시지 확인](#Instagram-Connection/messages-Check%3A)
+#### [인스타그램 연결/메시지 확인](#인스타그램-연결메시지-확인)
 
-#### [메신저/인스타그램이 모든 메시지를 동기화하지 않는 경우](#Messenger/-Instagram-not-syncing-all-messages%3A)
+#### [메신저/인스타그램이 모든 메시지를 동기화하지 않는 경우](#메신저인스타그램이-모든-메시지를-동기화하지-않는-경우)
 
-#### [리드 동기화 문제](#Leads,-not-syncing-Issue%3A)
+#### [리드 동기화 문제](#리드-동기화-문제)
 
-#### [인스타그램 계정을 Facebook 페이지에 연결하거나 연결 상태를 확인하는 방법](#How-to-connect-Instagram-Account-to-the-FB-page-or-verify-it-is-connected%3A)
+#### [인스타그램 계정을 Facebook 페이지에 연결하거나 연결 상태를 확인하는 방법](#인스타그램-계정을-facebook-페이지에-연결하거나-연결-상태를-확인하는-방법)
 
-#### [페이지가 없는 경우](#Pages-Missing)
+#### [페이지가 없는 경우](#페이지가-없는-경우)
 
 ## Facebook 리드 광고 연동이란?
 
