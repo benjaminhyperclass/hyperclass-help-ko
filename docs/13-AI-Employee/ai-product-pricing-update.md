@@ -167,7 +167,7 @@ Google의 Gemini, OpenAI의 ChatGPT, Anthropic의 Claude 같은 외부 AI 모델
 
 ## 워크플로우 AI 요금
 
-***프리미엄 액션을 더 저렴하게 대량 구매하려면 [워크플로우 Pro 플랜](workflows-pro-plan-new-pricing-tiers.md)을 참고하세요*
+***프리미엄 액션을 더 저렴하게 대량 구매하려면 [워크플로우 Pro 플랜](../07-워크플로우/workflows-pro-plan-new-pricing-tiers.md)을 참고하세요*
 
 | 워크플로우 AI | 도구/액션 | 요금 |
 |-------------|-----------|------|

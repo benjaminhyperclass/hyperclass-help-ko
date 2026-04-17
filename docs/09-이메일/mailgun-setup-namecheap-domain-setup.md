@@ -224,9 +224,9 @@ C. 녹색 체크 버튼을 클릭합니다.
 
 ![DNS 설정 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284382101/original/PQecmA9d0ihGiF3VchOhZL1VKMrOZmUvDQ.png?1677634628)
 
-모든 DNS 레코드를 추가하고 확인했으면, [Mailgun API Key - Mailgun에서 찾아서 하이퍼클래스에 넣는 방법](mailgun-private-api-key-setup.md)을 참조하여 API 키를 가져올 수 있습니다.
+모든 DNS 레코드를 추가하고 확인했으면, [Mailgun API Key - Mailgun에서 찾아서 하이퍼클래스에 넣는 방법](메일건/mailgun-private-api-key-setup.md)을 참조하여 API 키를 가져올 수 있습니다.
 
-그런 다음 테스트 이메일을 보내서 모든 것이 작동하는지 확인할 수 있습니다! [대화에서 테스트 이메일을 보내는 방법](how-to-send-a-test-email-in-the-conversation.md)을 참조하세요.
+그런 다음 테스트 이메일을 보내서 모든 것이 작동하는지 확인할 수 있습니다! [대화에서 테스트 이메일을 보내는 방법](트러블슈팅/how-to-send-a-test-email-in-the-conversation.md)을 참조하세요.
 
 ## 요약 영상:
 

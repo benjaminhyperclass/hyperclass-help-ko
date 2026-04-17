@@ -50,7 +50,7 @@
 
 ![예약 상세 모달](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064110375/original/IFQLoEQben5pNCYnCvT8-N2SUN45fg-0uQ.png?1770134353)
 
-더 자세한 정보는 [캘린더 뷰 – 서비스]([calendar-view-services](calendar-view-services.md))를 참고하세요.
+더 자세한 정보는 [캘린더 뷰 – 서비스](calendar-view-services.md)를 참고하세요.
 
 ---
 

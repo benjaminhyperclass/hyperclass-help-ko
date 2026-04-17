@@ -8,7 +8,7 @@
 
 Hyperclass의 업그레이드된 **연락처 추가(Add Contact)** 사이드바는 연락처 생성을 간소화하고 CRM의 일관성을 유지합니다. 관리자는 표시할 필드(커스텀 필드 포함)를 선택하고, 필수 필드를 설정하며, 팀 워크플로우에 맞게 폼 순서를 조정할 수 있습니다. 그 결과 더 빠른 데이터 입력, 더 나은 데이터 품질, 그리고 데스크톱과 모바일에서 일관된 경험을 제공합니다.
 
-**중요**: 연락처 추가 모달 — 업그레이드 및 커스터마이징 기능은 현재 **Labs**에서 제공됩니다. 보이지 않는다면 관리자에게 **Agency settings(에이전시 설정) > Labs** 에서 활성화를 요청하세요. 자세한 내용은 [Labs 기능 - 완전 개요]([labs-features-complete-overview](labs-features-complete-overview.md))를 참고하세요.
+**중요**: 연락처 추가 모달 — 업그레이드 및 커스터마이징 기능은 현재 **Labs**에서 제공됩니다. 보이지 않는다면 관리자에게 **Agency settings(에이전시 설정) > Labs** 에서 활성화를 요청하세요. 자세한 내용은 [Labs 기능 - 완전 개요](../19-에이전시-뷰/Agency-Settings/labs-features-complete-overview.md)를 참고하세요.
 
 ---
 

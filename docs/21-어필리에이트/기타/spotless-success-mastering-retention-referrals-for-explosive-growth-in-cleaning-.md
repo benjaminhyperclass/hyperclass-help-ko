@@ -56,7 +56,7 @@
 #### **메시지 예시:**
 *"안녕하세요 민수님, [회사명]을 선택해 주셔서 감사합니다! 청소 서비스에 만족하셨길 바랍니다. 다음 서비스 15% 할인받으세요. 30일 이내 예약하면 절약하실 수 있어요!"*
 
-#### [고객 후속 관리 자동화 방법](how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
+#### [고객 후속 관리 자동화 방법](../../24-대학/HighLevel-How-To&#39;s/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
 
 #### **1.2 자동 정기 알림**
 
@@ -66,7 +66,7 @@
 #### **메시지 예시:**
 *"민수님, 마지막 대청소 후 3개월이 지났네요! 새로 고침이 필요하신가요? YES라고 답장해 주시면 다음 예약을 잡아드릴게요."*
 
-#### [정기 관리 알림 설정 방법](how-to-send-users-appointment-reminders.md)
+#### [정기 관리 알림 설정 방법](../../23-레거시-자동화/Logic-&amp;-Fulfillment/how-to-send-users-appointment-reminders.md)
 
 ### **2단계: 5점 만점 리뷰 자동으로 더 받기**
 
@@ -130,7 +130,7 @@
 #### **메시지 예시:**
 *"VIP 청소 플랜에 가입하세요: 월간 홈 청소 + 우선 예약으로 월 99,000원. 돈도 절약하고 집도 깨끗하게 유지하세요!"*
 
-#### [구독 기반 서비스 설정 방법](pause-and-resume-subscriptions.md)
+#### [구독 기반 서비스 설정 방법](../../08-결제/pause-and-resume-subscriptions.md)
 
 #### **4.2 작업 중 예방적 정기 관리 업셀**
 
@@ -159,9 +159,9 @@
 
 - 고객 이탈을 방지하고 서비스를 개선하기 위해 **만족도 설문**을 보내세요.
 
-#### [정기 관리 플랜 판매 및 자동화 방법](recurring-appointments.md)
+#### [정기 관리 플랜 판매 및 자동화 방법](../../04-캘린더-예약/기타/recurring-appointments.md)
 
-#### [고객 유지를 위한 스마트 리스트 사용법](getting-started-with-smart-lists.md)
+#### [고객 유지를 위한 스마트 리스트 사용법](../../02-연락처/기타/getting-started-with-smart-lists.md)
 
 ### **마무리: 고객 유지 = 수익**
 

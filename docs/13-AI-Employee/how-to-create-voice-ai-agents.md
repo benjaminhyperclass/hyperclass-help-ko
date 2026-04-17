@@ -96,10 +96,10 @@
 
 프롬프팅에 대해 더 자세히 알아보려면 이 아티클들을 확인하세요:
 
-[AI 프롬프팅 101](ai-prompting-101.md)
+[AI 프롬프팅 101](Conversation-AI---Goals,-Prompts,-&-Actions/ai-prompting-101.md)
 음성 AI에서 프롬프트 평가기 사용법
 음성 AI - 에이전트용 노출된 시스템 프롬프트
-[음성 AI 커스텀 변수 프롬프트 지원](voice-ai-custom-variable-support-in-prompt.md)
+[음성 AI 커스텀 변수 프롬프트 지원](Voice-AI/voice-ai-custom-variable-support-in-prompt.md)
 
 - **고급 모드로 전환(Switch to Advanced Mode)** 버튼을 클릭하세요.
 

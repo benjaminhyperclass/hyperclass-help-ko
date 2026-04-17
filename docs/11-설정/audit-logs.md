@@ -147,13 +147,13 @@ Hyperclass의 새롭게 디자인된 **감사 로그(Audit Logs)**를 활용해 
 먼저 **날짜**, 그 다음 **액션/모듈**을 적용하여 목록을 좁힙니다. 첫 번째 행을 열고 **←/→** 키를 사용하여 드로어를 열어둔 채로 결과를 단계적으로 확인합니다.
 
 **Q: 삭제된 항목(예: 기회 관리)을 빠르게 찾아서 복원하는 방법은?**
-**액션 = 삭제됨**과 관련 **모듈**(예: 기회 관리)로 필터링합니다. 항목을 열어서 지원되는 경우 복원 옵션에 접근합니다. 참조: [기회 관리 및 파이프라인 삭제 & 복원]([deleting-and-restoring-opportunities-pipelines](deleting-and-restoring-opportunities-pipelines.md)).
+**액션 = 삭제됨**과 관련 **모듈**(예: 기회 관리)로 필터링합니다. 항목을 열어서 지원되는 경우 복원 옵션에 접근합니다. 참조: [기회 관리 및 파이프라인 삭제 & 복원](../05-기회-파이프라인/시작하기/deleting-and-restoring-opportunities-pipelines.md).
 
 **Q: 팀이나 기기마다 타임스탬프가 다르게 보이는 이유는?**
 A: 시간대 차이로 인해 불일치가 발생할 수 있습니다. 기기의 시간대와 하위 계정 로케일을 확인하세요.
 
 **Q: WordPress 접근/활동 로그는 감사 로그와 어떤 관련이 있나요?**
-A: WordPress 로그는 주요 이벤트(예: 사이트 생성/삭제)에 대한 플랫폼 감사 로그를 보완합니다. 두 가지 모두 사용하여 종단 간 감사 추적을 구성합니다. 참조: [WordPress 접근 및 활동 로그]([wordpress-access-activity-logs](wordpress-access-activity-logs.md)).
+A: WordPress 로그는 주요 이벤트(예: 사이트 생성/삭제)에 대한 플랫폼 감사 로그를 보완합니다. 두 가지 모두 사용하여 종단 간 감사 추적을 구성합니다. 참조: [WordPress 접근 및 활동 로그](../06-사이트/워드프레스/wordpress-access-activity-logs.md).
 
 ---
 *원문 최종 수정: Mon, 9 Mar, 2026 at 5:13 AM*

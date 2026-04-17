@@ -20,7 +20,7 @@
 - **주문 및 거래 세부사항**: 모든 주문 및 거래 세부사항은 신용카드 결제와 마찬가지로 결제(Payments) 메뉴에 기록됩니다. 기존의 "주문 제출됨" 및 "결제 수신됨" 트리거는 평소와 같이 작동합니다.
 - 이 변경사항은 Stripe에서 마이그레이션이 필요하며, 일부 계정에서는 이미 사용할 수 있고 다른 계정에서는 진행 중입니다.
 
-[Stripe 연동으로 표시되는 결제 방법 관리하기]([manage-payment-methods-displayed-with-stripe-integration](manage-payment-methods-displayed-with-stripe-integration.md))
+[Stripe 연동으로 표시되는 결제 방법 관리하기](manage-payment-methods-displayed-with-stripe-integration.md)
 
 ![BNPL 결제 옵션이 표시된 주문 폼 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155031777671/original/gJA5ULwoaucsfnusuNKS7Wu1eOCDuJ2RHA.jpeg?1724818467)
 

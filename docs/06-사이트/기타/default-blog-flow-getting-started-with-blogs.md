@@ -90,11 +90,11 @@ Hyperclass 블로그는 웹사이트나 퍼널에 글을 작성하고 정리할 
 
 
 - 
-+ 새 포스트(+ New Post)를 클릭해 처음부터 블로그 포스트 작성. [URL에서 블로그 포스트 가져오기](blogs-import-blog-posts-using-url.md)나 CSV에서 블로그 포스트 가져오기도 가능
++ 새 포스트(+ New Post)를 클릭해 처음부터 블로그 포스트 작성. [URL에서 블로그 포스트 가져오기](../블로그/blogs-import-blog-posts-using-url.md)나 CSV에서 블로그 포스트 가져오기도 가능
 
 
 - 
-처음부터 블로그 포스트를 만들거나 편집하려면 [**블로그 포스트 작성**](create-blog-posts.md) 문서를 확인하세요
+처음부터 블로그 포스트를 만들거나 편집하려면 [**블로그 포스트 작성**](../create-blog-posts.md) 문서를 확인하세요
 
 
 ![](https://jumpshare.com/share/lauN1KBkpiMjO4w8pQju+/Screen+Shot+2026-02-12+at+6.23.44+PM.png)
@@ -113,7 +113,7 @@ Hyperclass 블로그는 웹사이트나 퍼널에 글을 작성하고 정리할 
 
 ![](https://jumpshare.com/share/TRJGa96erSfwYce2526S+/GIF+Recording+2026-02-12+at+6.40.37+PM.gif)
 
-- [정규 링크](canonical-urls-explained-boost-your-highlevel-blog-seo.md) 편집하거나 그대로 유지
+- [정규 링크](../canonical-urls-explained-boost-your-highlevel-blog-seo.md) 편집하거나 그대로 유지
 
 - 키워드 추가
 
@@ -135,7 +135,7 @@ Hyperclass 블로그는 웹사이트나 퍼널에 글을 작성하고 정리할 
 
 - 포스트를 즉시 **발행**하거나 미래 시간으로 **예약**
 
-참고: **퍼널이나 웹사이트에 블로그를 추가**하려면 상세한 [**가이드**](add-blog-post-element-in-funnel-step-or-website-page.md)를 확인하세요.
+참고: **퍼널이나 웹사이트에 블로그를 추가**하려면 상세한 [**가이드**](../블로그/add-blog-post-element-in-funnel-step-or-website-page.md)를 확인하세요.
 
 ![](https://jumpshare.com/share/NUDN2nvuLcneDX3T7hnt+/GIF+Recording+2026-02-12+at+6.51.58+PM.gif)
 

@@ -8,7 +8,7 @@
 
 A2P 브랜드 등록을 위한 Hyperclass의 향상된 이메일 OTP 인증 보안을 알아보세요. 이 가이드는 일회용 비밀번호를 사용하여 이메일 소유권을 검증하는 간소화된 프로세스를 설명하며, 안전한 브랜드 등록 경험을 보장합니다.
 
-**중요**: 이 문서는 A2P 브랜드 등록 과정의 연속편으로, 특히 9단계인 이메일 OTP 인증 단계에만 집중합니다. 완전한 A2P 브랜드 등록 제출 방법을 자세히 알고 싶으시면 [10DLC용 A2P 표준 브랜드 등록]([a2p-standard-brand-registration-for-10dlc](a2p-standard-brand-registration-for-10dlc.md)) 문서를 참조하세요.
+**중요**: 이 문서는 A2P 브랜드 등록 과정의 연속편으로, 특히 9단계인 이메일 OTP 인증 단계에만 집중합니다. 완전한 A2P 브랜드 등록 제출 방법을 자세히 알고 싶으시면 [10DLC용 A2P 표준 브랜드 등록](a2p-standard-brand-registration-for-10dlc.md) 문서를 참조하세요.
 
 ---
 
@@ -63,7 +63,7 @@ OTP 모달은 다음과 같은 기능을 제공합니다:
 
 이메일 OTP 인증을 설정하고 테스트하려면 다음 단계를 따르세요:
 
-- A2P 브랜드 등록을 제출하는 동안 연락처 정보 섹션에 원하는 이메일 주소를 입력합니다. (브랜드 등록 과정에 대한 자세한 내용은 [10DLC용 A2P 표준 브랜드 등록]([a2p-standard-brand-registration-for-10dlc](a2p-standard-brand-registration-for-10dlc.md)) 문서를 참조하세요.)
+- A2P 브랜드 등록을 제출하는 동안 연락처 정보 섹션에 원하는 이메일 주소를 입력합니다. (브랜드 등록 과정에 대한 자세한 내용은 [10DLC용 A2P 표준 브랜드 등록](a2p-standard-brand-registration-for-10dlc.md) 문서를 참조하세요.)
 
 - 6자리 OTP 인증 프롬프트가 자동으로 나타납니다.
 

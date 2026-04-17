@@ -38,7 +38,7 @@
 
 ### 4단계: 새 위젯 추가
 
-"위젯 추가(Add Widgets)"를 클릭하여 대시보드에 새로운 커스텀 위젯을 추가하세요. 커스텀 위젯 추가에 대한 자세한 가이드는 [여기](how-to-create-add-dashboard-widgets.md)를 참고하세요.
+"위젯 추가(Add Widgets)"를 클릭하여 대시보드에 새로운 커스텀 위젯을 추가하세요. 커스텀 위젯 추가에 대한 자세한 가이드는 [여기](../how-to-create-add-dashboard-widgets.md)를 참고하세요.
 
 ![위젯 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155014394784/original/ZhoKJ6P6bREAc0e4j2FBI5pl8IBrNbkdVg.png?1701773273)
 
@@ -50,9 +50,9 @@
 
 ## 다음 단계
 
-- [대시보드 만들기](how-to-create-a-custom-dashboard.md)
-- [대시보드에 위젯 추가하기](how-to-create-add-dashboard-widgets.md)
-- [대시보드 권한 관리하기](how-to-manage-dashboard-permissions.md)
+- [대시보드 만들기](../how-to-create-a-custom-dashboard.md)
+- [대시보드에 위젯 추가하기](../how-to-create-add-dashboard-widgets.md)
+- [대시보드 권한 관리하기](../how-to-manage-dashboard-permissions.md)
 
 ---
 *원문 최종 수정: Tue, 22 Oct, 2024 at 4:55 AM*

@@ -63,13 +63,13 @@
 ✅ **서비스 지역 설정** – 서비스하는 모든 우편번호와 동네를 나열해서 구글이 지역 검색에서 당신을 순위에 올리도록 하세요.
 ✅ **통화 추적 번호 추가** – 구글 리스팅 번호를 **하이퍼클래스 추적 번호**로 교체해서 리드가 어디서 오는지 확인하세요.
 
-#### [통화 추적 번호 설정 방법]([call-tracking-and-missed-call-text-back-through-google-business-profile](call-tracking-and-missed-call-text-back-through-google-business-profile.md))
+#### [통화 추적 번호 설정 방법](../../41-평판-리뷰/Review-Requests/call-tracking-and-missed-call-text-back-through-google-business-profile.md)
 ✅ **구글 리뷰 자동화** – 더 많은 5성급 리뷰 = **더 높은 순위와 더 많은 전화**.
 
-#### [구글 리뷰 자동화 방법]([how-to-setup-workflow-triggers-for-google-and-facebook-reviews](how-to-setup-workflow-triggers-for-google-and-facebook-reviews.md))
+#### [구글 리뷰 자동화 방법](../../41-평판-리뷰/Review-Requests/how-to-setup-workflow-triggers-for-google-and-facebook-reviews.md)
 ✅ **매주 업데이트 게시** – 구글은 **활발한 사업체를 더 높게 순위**에 올립니다—하이퍼클래스를 사용해 **자동으로 게시물을 예약**하세요.
 
-#### [구글 비즈니스 프로필 최적화 방법](how-to-integrate-your-google-business-profile-formerly-gmb-into-the-crm.md)
+#### [구글 비즈니스 프로필 최적화 방법](../../11-설정/기타/how-to-integrate-your-google-business-profile-formerly-gmb-into-the-crm.md)
 
 #### **예시:** "이번 달에 250개 이상의 집을 깨끗하게 유지했습니다! 완벽하게 깨끗한 집이 필요하신가요? 오늘 청소를 예약하세요!" (구글 비즈니스 프로필에 매주 게시하세요.)
 
@@ -86,20 +86,20 @@
 
 #### ✅ **웹사이트에 채팅 위젯 설정** – 고객이 **전화하지 않고도 문자**를 보낼 수 있도록 하세요.
 
-#### [채팅 위젯 설정 방법]([getting-started-with-chat-widget](getting-started-with-chat-widget.md))
+#### [채팅 위젯 설정 방법](../../06-사이트/getting-started-with-chat-widget.md)
 ✅ **부재중 전화 자동 문자 활성화** – 전화를 놓치면, **하이퍼클래스가 자동으로 리드에게 문자를 보내서**, 일을 놓치지 않게 합니다.
 
-#### [부재중 전화 자동 문자 설정]([where-and-how-to-configure-the-missed-call-text-back-feature](where-and-how-to-configure-the-missed-call-text-back-feature.md))
+#### [부재중 전화 자동 문자 설정](../../11-설정/서브어카운트-설정/where-and-how-to-configure-the-missed-call-text-back-feature.md)
 ✅ **즉시 후속 조치 발송** – **SMS, 이메일, 왓츠앱 알림**을 자동화해서 예약을 받으세요.
 
-#### [반복 후속 조치 설정](recurring-appointments.md)
+#### [반복 후속 조치 설정](../../04-캘린더-예약/기타/recurring-appointments.md)
 ✅ **예약 링크 추가** – 고객이 **온라인으로 직접 청소 서비스를 예약**할 수 있게 해서 **답변을 기다릴 필요가 없게** 하세요.
 ✅ **AI를 사용해 문의 처리** – 대화 AI(Conversation AI)와 음성 AI(Voice AI)가 **일반적인 질문에 답하고 자동으로 일정을 잡습니다**.
 
-#### [AI 기반 청소 업무 후속 조치 설정 방법]([how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder](how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md))
-[음성 AI 에이전트 설정 방법](creating-voice-ai-agents.md)
+#### [AI 기반 청소 업무 후속 조치 설정 방법](../../24-대학/HighLevel-How-To&#39;s/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
+[음성 AI 에이전트 설정 방법](../../13-AI-Employee/기타/creating-voice-ai-agents.md)
 
-[대화 AI 에이전트 설정 방법]([how-to-use-conversation-ai-to-book-appointments](how-to-use-conversation-ai-to-book-appointments.md))
+[대화 AI 에이전트 설정 방법](../../13-AI-Employee/Conversation-AI---Goals,-Prompts,-&-Actions/how-to-use-conversation-ai-to-book-appointments.md)
 
 #### **예시:**
 *"안녕하세요 [이름]님, 저희 청소 서비스에 문의해 주셔서 감사합니다! 이번 주에 몇 개의 시간대가 가능합니다. 여기서 예약하세요: [예약 링크]"*
@@ -140,16 +140,16 @@
 #### ✅ **구글 로컬 서비스 광고(LSA) 설정** – 클릭이 아닌 **유효한 리드에만 비용을 지불**하세요.
 
 #### [구글 LSA 운영 방법](https://ads.google.com/intl/en_us/home/local-services-ads/)
-[LSA를 하이퍼클래스와 연동하는 방법]([reserve-with-google-integration-local-services-ads-lsa-](reserve-with-google-integration-local-services-ads-lsa-.md))
+[LSA를 하이퍼클래스와 연동하는 방법](../../04-캘린더-예약/캘린더-연동/reserve-with-google-integration-local-services-ads-lsa-.md)
 ✅ **페이스북 리드 광고 운영** – 전문 청소 서비스가 필요한 **지역 집주인과 사무실 관리자**를 타겟팅하세요.
 
-#### [하이퍼클래스에서 페이스북 광고 운영 방법](create-new-ad-campaign-in-ad-manager.md)
+#### [하이퍼클래스에서 페이스북 광고 운영 방법](../../10-마케팅/기타/create-new-ad-campaign-in-ad-manager.md)
 ✅ **리타겟팅 광고 활성화** – **웹사이트를 방문했지만 아직 예약하지 않은** 사람들에게 계속 광고를 보여주세요.
 
-#### [통화 추적 번호 풀 설정]([how-to-set-up-call-tracking-number-pool-](how-to-set-up-call-tracking-number-pool-.md))
+#### [통화 추적 번호 풀 설정](../../15-전화-시스템/통화/how-to-set-up-call-tracking-number-pool-.md)
 ✅ **광고에서 통화 추적 사용** – **어떤 광고가 가장 많은 일을 가져오는지** 정확히 알아보세요.
 
-[전환되는 청소 및 유지관리 광고 운영 방법]([overview-of-ad-manager](overview-of-ad-manager.md))
+[전환되는 청소 및 유지관리 광고 운영 방법](../../10-마케팅/Getting-Started-w/-Ad-Manager/overview-of-ad-manager.md)
 
 #### **예시:**
 *"이웃들이 저희 청소 서비스를 사랑합니다! 오늘 예약하고 첫 청소에서 20% 할인받으세요. 지금 전화하세요: [전화번호]"*
@@ -168,12 +168,12 @@
 #### ✅ **구글 비즈니스에 매주 게시** – 구글은 **활발한 사업체를 더 높게 순위**에 올립니다.
 ✅ **페이스북과 인스타그램을 사용해 전후 사진 공유** – 최고의 작업을 자랑하세요!
 
-#### [소셜미디어에서 리뷰를 게시물로 공유하는 방법](share-your-reviews-as-posts-on-social-media-using-social-planner.md)
+#### [소셜미디어에서 리뷰를 게시물로 공유하는 방법](../../10-마케팅/기타/share-your-reviews-as-posts-on-social-media-using-social-planner.md)
 ✅ **블로그와 이메일 뉴스레터 시작** – **청소 팁과 집 관리 노하우**를 공유하세요.
 
-#### [블로그 만드는 방법]([how-to-create-a-blog-](how-to-create-a-blog-.md))
-[블로그용 RSS 피드 설정 방법](how-to-set-up-an-rss-feed-for-blogs.md)
-[RSS 이메일 캠페인 설정 방법]([how-to-send-rss-email-campaign-s-](how-to-send-rss-email-campaign-s-.md))
+#### [블로그 만드는 방법](../../06-사이트/how-to-create-a-blog-.md)
+[블로그용 RSS 피드 설정 방법](../../06-사이트/기타/how-to-set-up-an-rss-feed-for-blogs.md)
+[RSS 이메일 캠페인 설정 방법](../../10-마케팅/RSS-Guide/how-to-send-rss-email-campaign-s-.md)
 ✅ **소셜미디어 예약 사용** – 하이퍼클래스가 **자동으로 게시**해주므로 수동으로 할 필요가 없습니다.
 
 효과적인 소셜미디어 및 콘텐츠 전략 분석 방법
@@ -201,9 +201,9 @@
 
 반짝이는 광고: 청소 및 유지관리 사업을 위한 더 많은 고객 확보 청사진
 
-[반짝임과 확장: 청소 및 유지관리 소셜미디어 장악 가이드]([sparkle-scale-the-cleaning-maintenance-social-media-domination-playbook](sparkle-scale-the-cleaning-maintenance-social-media-domination-playbook.md))
+[반짝임과 확장: 청소 및 유지관리 소셜미디어 장악 가이드](sparkle-scale-the-cleaning-maintenance-social-media-domination-playbook.md)
 
-[완벽한 콘텐츠 전략: 청소 및 유지관리 가이드]([spotless-content-strategy-the-cleaning-maintenance-playbook](spotless-content-strategy-the-cleaning-maintenance-playbook.md))
+[완벽한 콘텐츠 전략: 청소 및 유지관리 가이드](spotless-content-strategy-the-cleaning-maintenance-playbook.md)
 
 세련된 성과: 청소 및 유지관리를 위한 궁극적인 일일 운영 가이드
 

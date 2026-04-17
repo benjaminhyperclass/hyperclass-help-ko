@@ -60,7 +60,7 @@
 
 하위 계정 설정의 대화 AI 설정 페이지에 있는 "Bot Training(봇 트레이닝)" 섹션에서 봇을 훈련시키는 방법은 2가지입니다:
 
-- [웹 URL과 공개 링크를 통한 방법](web-urls-and-links.md)
+- [웹 URL과 공개 링크를 통한 방법](../../Conversation-AI---Training-Bots/web-urls-and-links.md)
 - 질문과 답변 쌍 추가
 
 참고: 봇 트레이닝은 무료입니다.

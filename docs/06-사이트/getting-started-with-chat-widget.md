@@ -57,7 +57,7 @@
 
 #### 2. 이메일 및 SMS 채팅
 
-이 채팅은 방문자의 정보를 수집하여 나중에 SMS나 이메일로 응답할 수 있게 해줍니다. 24시간 상주하지 않는 소규모 팀에 적합합니다. [LC 이메일이란?]([what-is-lc-email-](what-is-lc-email-.md))과 [LC 전화란?](what-is-lc-phone-system-.md)을 참고하세요.
+이 채팅은 방문자의 정보를 수집하여 나중에 SMS나 이메일로 응답할 수 있게 해줍니다. 24시간 상주하지 않는 소규모 팀에 적합합니다. [LC 이메일이란?](../09-이메일/what-is-lc-email-.md)과 [LC 전화란?](../15-전화-시스템/기타/what-is-lc-phone-system-.md)을 참고하세요.
 
 ![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035796726/original/5P6cb8PnO-C-EUC3XtR6WElGVBMWdy2hEg.png?1730384123)
 
@@ -87,7 +87,7 @@
 
 #### **7. 음성 AI 채팅**
 
-음성 AI 채팅은 방문자가 브라우저를 통해 AI 에이전트와 음성으로 대화할 수 있는 음성 우선 채팅 유형입니다. 24시간 인간과 같은 음성 대화를 제공하여 리드를 자동으로 수집, 검증, 전달할 수 있도록 설계되었습니다. 실제 접수원이나 콜센터 없이 "전화 통화" 스타일의 상호작용을 원하는 비즈니스에 적합합니다. [음성 AI 채팅 위젯에 대해 자세히 알아보기](voice-ai-chat-widget.md)
+음성 AI 채팅은 방문자가 브라우저를 통해 AI 에이전트와 음성으로 대화할 수 있는 음성 우선 채팅 유형입니다. 24시간 인간과 같은 음성 대화를 제공하여 리드를 자동으로 수집, 검증, 전달할 수 있도록 설계되었습니다. 실제 접수원이나 콜센터 없이 "전화 통화" 스타일의 상호작용을 원하는 비즈니스에 적합합니다. [음성 AI 채팅 위젯에 대해 자세히 알아보기](채팅-위젯/voice-ai-chat-widget.md)
 
 ![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155060345613/original/wOuJK1aGUKGaZHK2pZGkMNTpqp01w5oL1g.png?1765386014)
 
@@ -97,7 +97,7 @@
 
 채팅 위젯 내에서 대화 AI를 직접 사용하여 방문자를 맞이하고 24시간 즉각적인 답변을 제공할 수 있습니다. 팀이 자리를 비운 상황에서도 모든 문의가 응답을 받을 수 있습니다.
 
-설정 및 고급 옵션에 대해서는 [대화 AI 봇 설명](conversation-ai-bot-explained.md)을 참고하세요.
+설정 및 고급 옵션에 대해서는 [대화 AI 봇 설명](../13-AI-Employee/Getting-Started-w/-Conversation-AI/conversation-ai-bot-explained.md)을 참고하세요.
 
 ---
 
@@ -161,16 +161,16 @@
 
 **Q: 하위 계정에서 여러 개의 채팅 위젯을 만들 수 있나요?**
 
-네. 여러 채팅 위젯을 추가하는 방법에 대한 자세한 내용은 [동일한 웹사이트에 여러 채팅 위젯 추가 방법](how-to-create-multiple-chat-widgets-in-a-single-sub-account.md)을 참고하세요.
+네. 여러 채팅 위젯을 추가하는 방법에 대한 자세한 내용은 [동일한 웹사이트에 여러 채팅 위젯 추가 방법](채팅-위젯/how-to-create-multiple-chat-widgets-in-a-single-sub-account.md)을 참고하세요.
 
 ---
 
 **관련 문서:**
-- [올인원 채팅 위젯 사용 방법](how-to-use-the-all-in-one-chat-widget.md)
-- [대화 AI 봇 설명](conversation-ai-bot-explained.md)
-- [동일한 웹사이트에 여러 채팅 위젯 추가하는 방법](how-to-create-multiple-chat-widgets-in-a-single-sub-account.md)
+- [올인원 채팅 위젯 사용 방법](채팅-위젯/how-to-use-the-all-in-one-chat-widget.md)
+- [대화 AI 봇 설명](../13-AI-Employee/Getting-Started-w/-Conversation-AI/conversation-ai-bot-explained.md)
+- [동일한 웹사이트에 여러 채팅 위젯 추가하는 방법](채팅-위젯/how-to-create-multiple-chat-widgets-in-a-single-sub-account.md)
 - [하이퍼클래스 채팅 위젯 설치 방법](how-to-install-highlevel-s-chat-widget.md)
-- [음성 AI 채팅 위젯](voice-ai-chat-widget.md)
+- [음성 AI 채팅 위젯](채팅-위젯/voice-ai-chat-widget.md)
 - 페이스북 및 인스타그램 채팅 위젯
 
 ---

@@ -93,7 +93,7 @@
 네, 봇이 거의 즉시 응답하도록 대기 시간을 최소 1초까지 설정할 수 있습니다.
 
 대화 AI 사용에 대한 더 자세한 정보는 다음을 참조하세요:
-- [예약 예약에서 대화 AI 사용하는 방법](how-to-use-conversation-ai-in-your-appointment-bookings-.md)
+- [예약 예약에서 대화 AI 사용하는 방법](../../04-캘린더-예약/기타/how-to-use-conversation-ai-in-your-appointment-bookings-.md)
 - 대화 AI 봇 학습시키기
 
 ## 결론

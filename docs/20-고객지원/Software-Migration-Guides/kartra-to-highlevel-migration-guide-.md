@@ -76,7 +76,7 @@
 
 - 태그와 목록 할당: Hyperclass의 태그와 목록 기능을 사용하여 **Kartra Import** 태그와 같이 Kartra의 세분화 구조에 따라 연락처를 정리하세요.
 
-**[CSV를 통한 대량 가져오기 문제 해결에 대해 더 알아보기](troubleshooting-bulk-imports-via-csv.md)**
+**[CSV를 통한 대량 가져오기 문제 해결에 대해 더 알아보기](../../02-연락처/스마트-리스트/troubleshooting-bulk-imports-via-csv.md)**
 
 ![Hyperclass 연락처 가져오기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043767916/original/3zg8WCBwgnb3rNw05xJji6CoNLNURU4iMw.png?1742589305)
 

@@ -176,9 +176,9 @@ Hyperclass에서 이탈 의도 팝업 만드는 방법
 - ✅ 각 포스트를 Hyperclass 예약 폼이 있는 랜딩 페이지에 링크
 - ✅ Hyperclass의 소스 태그를 통해 게스트 블로그에서 오는 트래픽 추적
 
-[지역 SEO를 위한 고성능 키워드 찾는 방법](how-to-add-seo-descriptions-and-keywords-to-boost-your-ecommerce-ranking.md)
+[지역 SEO를 위한 고성능 키워드 찾는 방법](../../37-이커머스-스토어/E-Commerce-Store/how-to-add-seo-descriptions-and-keywords-to-boost-your-ecommerce-ranking.md)
 
-[전환율이 높은 리드 확보 폼 설정하는 방법](how-to-create-a-contact-form-in-highlevel-.md)
+[전환율이 높은 리드 확보 폼 설정하는 방법](../../02-연락처/기타/how-to-create-a-contact-form-in-highlevel-.md)
 
 ## 4단계: 효과적인 것 추적하고 확장하기
 
@@ -199,7 +199,7 @@ Hyperclass에서 이탈 의도 팝업 만드는 방법
 실제 컨설턴트 사례 연구:  
 Hyperclass를 사용하는 샌안토니오의 한 부동산 컨설턴트가 구글 통화와 소셜 트래픽을 추적했습니다. 구글이 페이스북보다 예약된 상담에서 3:1로 우수한 성과를 보였습니다. GBP 최적화와 리뷰에 집중함으로써 90일 만에 판매자 예약 상담을 180% 증가시켰습니다.
 
-[SEO 메타 데이터 추적 및 개선하는 방법](seo-meta-data.md)
+[SEO 메타 데이터 추적 및 개선하는 방법](../../06-사이트/퍼널-웹사이트/seo-meta-data.md)
 
 ## 마무리: 계약 성사로 이어지는 SEO
 

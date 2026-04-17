@@ -6,7 +6,7 @@
 
 # 하위 계정 간 전화번호 이동 (동일 에이전시)
 
-이 가이드는 단일 에이전시 내에서 하위 계정 간에 전화번호를 이동하는 방법을 설명합니다. Settings(설정) → Phone Integration(전화 연동)의 내장된 Move Numbers(번호 이동) 도구를 사용하며, LC Phone → LC Phone 및 Twilio → Twilio (동일 마스터 계정) 이동을 다룹니다. 일반적인 오류와 앱 내 이동이 불가능한 경우의 대처법도 포함되어 있습니다 ([전화번호 이동: 마이그레이션 가이드](moving-phone-numbers-migration-guide.md) 참조).
+이 가이드는 단일 에이전시 내에서 하위 계정 간에 전화번호를 이동하는 방법을 설명합니다. Settings(설정) → Phone Integration(전화 연동)의 내장된 Move Numbers(번호 이동) 도구를 사용하며, LC Phone → LC Phone 및 Twilio → Twilio (동일 마스터 계정) 이동을 다룹니다. 일반적인 오류와 앱 내 이동이 불가능한 경우의 대처법도 포함되어 있습니다 ([전화번호 이동: 마이그레이션 가이드](../일반/moving-phone-numbers-migration-guide.md) 참조).
 
 ---
 
@@ -70,7 +70,7 @@ Move Numbers는 Settings(설정) → Phone Integration(전화 연동)에 있는 
 
 - 다른 Twilio 마스터 계정: 다른 Twilio 마스터 하에 있는 번호는 앱 내에서 이동할 수 없습니다. 이 경우 Twilio 지원팀에 문의하세요
 - 규제 구성 누락(국제): 일부 국가(예: 호주 +61)는 **대상**에 승인된 **Regulatory Bundles**과 **Address SID**가 필요합니다. 먼저 이를 구성한 후 관련 마이그레이션 가이드를 따르세요
-- 제공업체 불일치: **Twilio ↔ LC Phone** 변환을 하는 경우, 앱 내 이동 대신 전용 [변환 아티클](moving-phone-numbers-migration-guide.md)을 따르세요
+- 제공업체 불일치: **Twilio ↔ LC Phone** 변환을 하는 경우, 앱 내 이동 대신 전용 [변환 아티클](../일반/moving-phone-numbers-migration-guide.md)을 따르세요
 - 국가 지원(미국 및 캐나다만 앱 내 지원): 앱 내 도구는 현재 **미국 및 캐나다** 번호를 이동합니다. 다른 국가는 **HighLevel 지원팀** 티켓을 생성해 주세요
 
 ---

@@ -119,7 +119,7 @@ Select Phone Number(전화번호 선택) 드롭다운을 클릭했을 때:
 
 사용자 A에게 배정되었다면 모든 수신 전화는 사용자 A로 갑니다.
 
-하지만 연락처가 전화한 전화번호가 이미 사용자 B에게 배정되었다면([확인 방법](inbound-call-routing-explained.md)) - 전화번호가 사용자에게 배정된 것이 1순위이므로, 연락처가 사용자 A에게 배정되었더라도 모든 수신 전화는 사용자 B로 갑니다.
+하지만 연락처가 전화한 전화번호가 이미 사용자 B에게 배정되었다면([확인 방법](inbound-call-routing-explained.md) - 전화번호가 사용자에게 배정된 것이 1순위이므로, 연락처가 사용자 A에게 배정되었더라도 모든 수신 전화는 사용자 B로 갑니다.
 
 ## 5. '비즈니스 전화번호로 통화 전달' 옵션이 활성화되었는지 확인하는 방법은?
 
@@ -141,7 +141,7 @@ Business Information(비즈니스 정보) > Company Phone(회사 전화번호)
 
 ## 8. 전화번호를 음성 메시지로 바로 연결할 수 있나요?
 
-[회사 및 사용자용 음성메일](voicemail-for-company-and-for-users.md)을 설정할 수 있습니다.
+[회사 및 사용자용 음성메일](../voicemail-for-company-and-for-users.md)을 설정할 수 있습니다.
 
 한 가지 방법은 음성메일이 설정된 Google Voice 번호를 구해서 전달 번호에 입력하는 것입니다.
 
@@ -159,7 +159,7 @@ Business Information(비즈니스 정보) > Company Phone(회사 전화번호)
 
 전화번호를 편집해서 위스퍼 메시지에 설정된 커스텀 값이 있는지 확인해보세요. 잘못된 커스텀 값은 수신 통화에 영향을 주어 통화가 끊어지게 할 수 있습니다.
 
-또 다른 가능한 원인은 전화번호가 음성 통화를 지원하지 않을 수 있다는 것입니다. [Twilio에서 특정 통화 로그를 확인하는 방법](how-to-check-logs-for-a-specific-call-in-twilio.md) 문서에서 전화번호의 기능도 확인할 수 있는 방법을 안내하고 있습니다.
+또 다른 가능한 원인은 전화번호가 음성 통화를 지원하지 않을 수 있다는 것입니다. [Twilio에서 특정 통화 로그를 확인하는 방법](../how-to-check-logs-for-a-specific-call-in-twilio.md) 문서에서 전화번호의 기능도 확인할 수 있는 방법을 안내하고 있습니다.
 
 ![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155029907101/original/ichGvGlWDIfV-T6iVpK_qhAYXlxvvv3trQ.jpg?1721934040)
 

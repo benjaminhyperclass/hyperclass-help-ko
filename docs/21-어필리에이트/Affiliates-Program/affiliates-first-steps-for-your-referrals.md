@@ -8,7 +8,7 @@
 
 어필리에이트로 시작하는 것은 부담스러울 수 있지만, Hyperclass에는 추천 고객들이 플랫폼에 적극적으로 참여하고, 가치를 이해하며, 기능을 활용해 성공할 수 있도록 도와주는 풍부한 리소스가 있습니다.
 
-*참고: 이 아티클은 어필리에이트 전략을 다룹니다. 어필리에이트 링크 찾기나 어필리에이트 포털 사용법이 궁금하시다면 [이 아티클]([how-to-use-affiliate-portal](how-to-use-affiliate-portal.md))을 참고하세요. 결제 설정에 도움이 필요하시다면 [이 아티클]([affiliate-payouts-where-how-when-can-i-get-paid-](affiliate-payouts-where-how-when-can-i-get-paid-.md))을 확인해 주세요.*
+*참고: 이 아티클은 어필리에이트 전략을 다룹니다. 어필리에이트 링크 찾기나 어필리에이트 포털 사용법이 궁금하시다면 [이 아티클](how-to-use-affiliate-portal.md)을 참고하세요. 결제 설정에 도움이 필요하시다면 [이 아티클](affiliate-payouts-where-how-when-can-i-get-paid-.md)을 확인해 주세요.*
 
 **추천 고객이 적합한 Hyperclass 요금제를 선택하도록 도와주세요.**
 

@@ -14,7 +14,7 @@ Hyperclass는 고객이 구매를 완료한 후 자동으로 확인 이메일을
 
 **자동 판매 영수증(Automated Sales Receipts)** 기능을 사용하면 모든 구매 후 고객에게 확인 이메일을 자동으로 발송할 수 있습니다. 이 영수증은 거래에 대한 포괄적인 개요를 제공합니다.
 
-• **판매 영수증 활성화 방법**: [주문 폼, 캘린더, 인보이스 결제용 판매 영수증 활성화 방법](how-to-enable-sales-receipts-for-order-form-calendar-and-invoice-payments.md)을 참고하여 이 기능을 활성화하는 방법을 알아보세요.
+• **판매 영수증 활성화 방법**: [주문 폼, 캘린더, 인보이스 결제용 판매 영수증 활성화 방법](../../04-캘린더-예약/기타/how-to-enable-sales-receipts-for-order-form-calendar-and-invoice-payments.md)을 참고하여 이 기능을 활성화하는 방법을 알아보세요.
 
 판매 영수증 기능에 대한 추가 동영상을 확인하세요 - [링크](https://www.loom.com/share/787359e357df47afa936d7ba5a788d8d)
 
@@ -24,7 +24,7 @@ Hyperclass는 고객이 구매를 완료한 후 자동으로 확인 이메일을
 
 • **커스텀 이메일 템플릿**: 이메일 빌더의 쇼핑 카트 요소를 사용하여 커스텀 이메일 템플릿을 만들 수 있습니다. 이를 통해 구매한 상품 목록이 이메일 내용에 포함된 개인화된 이메일을 발송할 수 있습니다.
 
-• **자세히 알아보기**: 상세한 안내는 [표준 트리거—주문 제출](standard-triggers-order-submitted.md)을 참고하세요.
+• **자세히 알아보기**: 상세한 안내는 [표준 트리거—주문 제출](../../07-워크플로우/기타/standard-triggers-order-submitted.md)을 참고하세요.
 
 ## **추가 자료**
 

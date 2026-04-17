@@ -47,13 +47,13 @@
 - 최소 2개의 샘플 메시지 템플릿
 - 수신자 동의를 수집하는 데 사용된 옵트인 방법 (예: 폼, 텍스트 키워드, 구두 등)
 
-준수하는 옵트인 언어 작성을 위해 [A2P 옵트인 가이드](a2p-opt-in-form-privacy-policy-and-terms-and-conditions-guidelines.md)를 참조하세요.
+준수하는 옵트인 언어 작성을 위해 [A2P 옵트인 가이드](../A2P-등록/a2p-opt-in-form-privacy-policy-and-terms-and-conditions-guidelines.md)를 참조하세요.
 
 ## 무료 통화 번호 인증 단계
 
 ### 1단계: 무료 통화 번호 구매
 
-아직 구매하지 않았다면 [이 가이드]([how-to-buy-a-toll-free-number-inside-ghl-](how-to-buy-a-toll-free-number-inside-ghl-.md))를 따라 LC Phone 내에서 무료 통화 번호를 구매하세요.
+아직 구매하지 않았다면 [이 가이드](how-to-buy-a-toll-free-number-inside-ghl-.md)를 따라 LC Phone 내에서 무료 통화 번호를 구매하세요.
 
 ### 2단계: 인증 양식 제출
 

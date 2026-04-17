@@ -20,7 +20,7 @@
 
 ![채팅 유형 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035806628/original/cmYN5LaUTB0JQy1iKHnrBVPlRy2DdnPfpg.png?1730391126)
 
-참고 - 왓츠앱 번호가 설정되지 않은 경우, 왓츠앱 번호 추가를 위한 설정 페이지로 이동됩니다. [왓츠앱 번호 추가 방법은?](whatsapp-overview-sub-account-set-up-and-best-practices.md)
+참고 - 왓츠앱 번호가 설정되지 않은 경우, 왓츠앱 번호 추가를 위한 설정 페이지로 이동됩니다. [왓츠앱 번호 추가 방법은?](../19-에이전시-뷰/기타/whatsapp-overview-sub-account-set-up-and-best-practices.md)
 
 3. 왓츠앱 채팅 옵션을 선택한 후, 위젯 창에서 텍스트, 색상, 브랜딩, 이메일/전화번호 폼을 커스터마이징할 수 있습니다. 왓츠앱 채팅 유형으로 설정하면 기본적으로 왓츠앱의 초록색 계열 색상이 사용되지만, 사용자가 원하는 색상으로 변경할 수 있습니다.
 

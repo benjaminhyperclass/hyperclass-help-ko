@@ -96,7 +96,7 @@
 
 ![에이전트 목록](https://jumpshare.com/share/7Yq8N30lXw3Ra3HgWwnA+/Screen+Shot+2025-10-03+at+5.57.01+PM.png)
 
-- 새 봇을 만들려면 + Create Bot(+ 봇 만들기)을 클릭합니다. ([대화 AI 설정 상세 가이드](setting-up-conversation-ai.md)를 확인하세요)
+- 새 봇을 만들려면 + Create Bot(+ 봇 만들기)을 클릭합니다. ([대화 AI 설정 상세 가이드](../Getting-Started-w/-Conversation-AI/setting-up-conversation-ai.md)를 확인하세요)
 
 ![봇 만들기](https://jumpshare.com/share/i4OFgz9pOUOj6QGDzF3C+/Screen+Shot+2025-10-03+at+6.00.36+PM.png)
 

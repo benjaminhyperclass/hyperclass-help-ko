@@ -27,7 +27,7 @@ A2P 브랜드는 다음을 정의합니다:
 
 ## 브랜드 승인 작동 방식
 
-승인 프로세스는 The Campaign Registry에서 완료하는 브랜드의 1차 심사부터 시작됩니다. 승인 프로세스의 일환으로, LC Phone은 자동으로 브랜드를 [2차 심사(Secondary Vetting)](a2p-10dlc-campaign-vetting-changes-january-2023.md)에 제출합니다. 이는 처리량 증가와 메시징 한도 증가로 이어질 수 있는 추가 검토 프로세스입니다. 
+승인 프로세스는 The Campaign Registry에서 완료하는 브랜드의 1차 심사부터 시작됩니다. 승인 프로세스의 일환으로, LC Phone은 자동으로 브랜드를 [2차 심사(Secondary Vetting)](../../10-마케팅/기타/a2p-10dlc-campaign-vetting-changes-january-2023.md)에 제출합니다. 이는 처리량 증가와 메시징 한도 증가로 이어질 수 있는 추가 검토 프로세스입니다. 
 
 심사가 완료되면 신뢰 점수(Trust Score)를 받게 되며, 이는 미국 네트워크로의 긴 코드 메시징 처리량과 T-Mobile에 대한 일일 메시지 한도를 결정합니다. 자세한 내용은 미국 A2P 10DLC의 메시지 처리량 MPS 및 신뢰 점수를 참조하세요. 브랜드 등록 프로세스의 전체 안내는 A2P 10DLC 온보딩 가이드를 확인하세요.
 

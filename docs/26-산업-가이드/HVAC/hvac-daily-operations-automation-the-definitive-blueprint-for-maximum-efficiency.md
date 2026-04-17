@@ -85,7 +85,7 @@
 - 서비스 콜 전에 **SMS, 이메일, WhatsApp 리마인더**를 발송합니다.
 - 자동 리마인더로 노쇼와 막판 취소를 줄입니다.
 
-- [예약 리마인더 자동화 방법]([how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder](how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md))
+- [예약 리마인더 자동화 방법](../../24-대학/HighLevel-How-To&#39;s/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
 
 ### **1.3 기술자에게 효율적으로 작업 배정**
 
@@ -110,21 +110,21 @@
 - 견적을 승인하지 않은 리드에게 **즉시 후속 연락**을 보냅니다.
 - 작업 리마인더와 서비스 후속 연락을 자동화하여 **재방문 사업을 증가**시킵니다.
 
-#### [HVAC 견적 후속 연락 자동화 방법]([how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder](how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md))
+#### [HVAC 견적 후속 연락 자동화 방법](../../24-대학/HighLevel-How-To&#39;s/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
 
 ### **2.2 AI 기반 고객 대화 활용**
 
 - **음성 AI(VoiceAI) 및 대화 AI(ConversationAI)**를 설정하여 일반적인 고객 문의를 처리합니다.
 - AI는 **예약, FAQ 응답, 리드 정보 수집**을 할 수 있습니다.
 
-#### [AI 기반 HVAC 고객 지원 설정 방법]([conversation-ai-bot-explained](conversation-ai-bot-explained.md))
+#### [AI 기반 HVAC 고객 지원 설정 방법](../../13-AI-Employee/Getting-Started-w/-Conversation-AI/conversation-ai-bot-explained.md)
 
 ### **2.3 타겟 메시징을 위한 스마트 리스트 활용**
 
 - 과거 서비스, HVAC 장비 유형, 작업 기록을 기반으로 **고객 목록**을 생성합니다.
 - **계절별 HVAC 점검 리마인더, 에너지 절약 팁, 추천 인센티브**를 발송합니다.
 
-#### [HVAC 스마트 리스트 설정 방법](getting-started-with-smart-lists.md)
+#### [HVAC 스마트 리스트 설정 방법](../../02-연락처/기타/getting-started-with-smart-lists.md)
 
 ---
 
@@ -140,21 +140,21 @@
 - 전문적인 청구서 발행을 위해 **미리 제작된 인보이스 템플릿**을 사용합니다.
 - 빠른 결제를 위해 **SMS, 이메일, 또는 고객 포털**을 통해 청구서를 발송합니다.
 
-#### [인보이스 발송 및 생성 방법]([how-to-create-invoices-in-highlevel](how-to-create-invoices-in-highlevel.md))
+#### [인보이스 발송 및 생성 방법](../../08-결제/인보이스-견적/how-to-create-invoices-in-highlevel.md)
 
 ### **3.2 다양한 결제 옵션 지원**
 
 - **신용카드, PayPal, Google Pay, Apple Pay**를 지원합니다.
 - 즉시 결제 수금을 위해 청구서에 **"지금 결제" 버튼**을 추가합니다.
 
-#### [결제 수신 설정 방법](trigger-payment-received.md)
+#### [결제 수신 설정 방법](../../07-워크플로우/기타/trigger-payment-received.md)
 
 ### **3.3 결제 리마인더 자동화**
 
 - 예정된 결제, 연체, 결제 실패에 대한 **자동 리마인더**를 설정합니다.
 - 유연한 결제 계획을 제공하여 **연체 결제를 줄입니다**.
 
-#### [반복 결제 자동화 방법](auto-payments-in-recurring-templates.md)
+#### [반복 결제 자동화 방법](../../08-결제/기타/auto-payments-in-recurring-templates.md)
 
 ---
 
@@ -170,7 +170,7 @@
 - **실시간 작업 상태**(예약됨, 진행 중, 완료됨, 후속 조치 필요)를 확인합니다.
 - 기술자가 **모바일 앱을 통해 작업 상태를 업데이트**할 수 있게 합니다.
 
-#### [기회 생성 설정 방법]([workflow-trigger-opportunity-created](workflow-trigger-opportunity-created.md))
+#### [기회 생성 설정 방법](../../07-워크플로우/Opportunity-Workflow-Triggers/workflow-trigger-opportunity-created.md)
 
 ### **4.2 작업 체크리스트 및 문서화 지원**
 
@@ -182,7 +182,7 @@
 - **연간 HVAC 점검, 필터 교체, 시스템 검사**를 자동화합니다.
 - **예측 가능한 수익을 보장하기** 위해 **구독 기반 유지보수 계획**을 설정합니다.
 
-#### [정기 예약 모니터링 방법]([configure-recurring-calendar-appointments](configure-recurring-calendar-appointments.md))
+#### [정기 예약 모니터링 방법](../../04-캘린더-예약/캘린더-설정/configure-recurring-calendar-appointments.md)
 
 ---
 
@@ -198,14 +198,14 @@
 - **광고, 웹사이트 페이지, 추천 소스** 중 어디서 가장 많은 리드를 가져오는지 모니터링합니다.
 - **리드-고객 전환율**을 계산합니다.
 
-#### [리드 추적 및 관리 방법]([step-by-step-guide-creating-pipelines](step-by-step-guide-creating-pipelines.md))
+#### [리드 추적 및 관리 방법](../../05-기회-파이프라인/step-by-step-guide-creating-pipelines.md)
 
 ### **5.2 수익 및 작업 수익성 분석**
 
 - **청구서, 결제, 연체 잔액에 대한 실시간 보고서**를 확인합니다.
 - **어떤 HVAC 서비스가 가장 높은 수익을 창출하는지** 추적합니다.
 
-#### [대시보드 생성 및 모니터링 방법]([how-to-create-add-dashboard-widgets](how-to-create-add-dashboard-widgets.md))
+#### [대시보드 생성 및 모니터링 방법](../../12-대시보드/how-to-create-add-dashboard-widgets.md)
 
 ---
 

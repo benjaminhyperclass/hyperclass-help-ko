@@ -18,7 +18,7 @@
 
 캠페인 생성 흐름의 두 번째 단계는 '예산 및 오디언스'이며, 2개 부분으로 구성됩니다:
 
-- 예산 - 예산 정의에 대한 자세한 내용은 이 [**아티클**]([ad-manager-campaign-budget-definition](ad-manager-campaign-budget-definition.md))을 참고하세요.
+- 예산 - 예산 정의에 대한 자세한 내용은 이 [**아티클**](ad-manager-campaign-budget-definition.md)을 참고하세요.
 
 - 오디언스 컨트롤 - '예산 및 오디언스' 단계의 두 번째 섹션으로 다음으로 구성됩니다:
 

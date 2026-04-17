@@ -96,10 +96,10 @@
 
 프롬프트 작성에 대해 더 자세히 알아보려면 다음 아티클을 확인하세요:
 
-[AI 프롬프트 작성 101](ai-prompting-101.md)
+[AI 프롬프트 작성 101](../Conversation-AI---Goals,-Prompts,-&-Actions/ai-prompting-101.md)
 음성 AI에서 프롬프트 평가기 사용하는 방법
 음성 AI - 에이전트를 위한 노출된 시스템 프롬프트
-[음성 AI 프롬프트의 커스텀 변수 지원](voice-ai-custom-variable-support-in-prompt.md)
+[음성 AI 프롬프트의 커스텀 변수 지원](../Voice-AI/voice-ai-custom-variable-support-in-prompt.md)
 
 - **고급 모드로 전환(Switch to Advanced Mode)** 버튼을 클릭하세요.
 
@@ -175,7 +175,7 @@
 
 또한 AI 에이전트가 통화를 처리해야 하는 특정 날짜와 시간 간격을 설정하는 운영시간을 구성할 수 있는 옵션도 있습니다.
 
-[음성 AI 에이전트의 운영시간 설정 및 구성에 대해 더 자세히 알아보려면 여기를 클릭하세요.](working-hours-for-ai-employee.md)
+[음성 AI 에이전트의 운영시간 설정 및 구성에 대해 더 자세히 알아보려면 여기를 클릭하세요.](../working-hours-for-ai-employee.md)
 
 #### 생성 중 음성 AI 에이전트 테스트하기:
 

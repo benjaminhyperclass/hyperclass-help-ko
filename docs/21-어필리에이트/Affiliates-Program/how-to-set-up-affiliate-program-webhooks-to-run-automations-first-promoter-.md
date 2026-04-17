@@ -22,7 +22,7 @@ HighLevel **Agency Pro**($497/월)의 추천을 웹훅으로 추적하려면 "**
 
 #### 관련 문서:
 
-[인바운드 웹훅 워크플로우 프리미엄 트리거 사용 방법](how-to-use-the-inbound-webhook-workflow-premium-trigger.md)
+[인바운드 웹훅 워크플로우 프리미엄 트리거 사용 방법](../../07-워크플로우/기타/how-to-use-the-inbound-webhook-workflow-premium-trigger-.md)
 
 워크플로우를 위한 LC 프리미엄 트리거 및 액션 활성화 및 재청구 방법
 

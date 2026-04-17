@@ -89,7 +89,7 @@ Password(비밀번호): **복사한 API 키를 여기에 붙여넣기**
 
 ![SendGrid SMTP 공급자 설정 완료 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155031846879/original/wL9FUvg9EHRVoljO3xNEpr5RS0vzxaYFdA.jpg?1724881532)
 
-[대화에서 테스트 이메일을 발송](how-to-send-a-test-email-in-the-conversation.md)할 때 오류가 발생한다면:
+[대화에서 테스트 이메일을 발송](트러블슈팅/how-to-send-a-test-email-in-the-conversation.md)할 때 오류가 발생한다면:
 
 **⚠️(빨간색 삼각형) 아이콘**을 클릭하여 대화에서 오류에 대한 자세한 내용을 확인하세요.
 

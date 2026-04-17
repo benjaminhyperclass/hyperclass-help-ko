@@ -98,7 +98,7 @@ Open(열림)이 기본 상태입니다.
 ## 1. 잠재고객 발굴 도구 접근하기
 
 - 에이전시 내에서: 왼쪽 메뉴에서 Prospecting(잠재고객 발굴) 탭을 클릭합니다
-- 하위 계정 내에서 잠재고객 발굴 활성화: Reselling(리셀링) 탭에서 Prospecting을 켜거나 에이전시의 특정 하위 계정에만 배포하는 방식이 있습니다. [자세히 보기](prospecting-at-sub-accounts-complete-guide-benefits-setup.md)
+- 하위 계정 내에서 잠재고객 발굴 활성화: Reselling(리셀링) 탭에서 Prospecting을 켜거나 에이전시의 특정 하위 계정에만 배포하는 방식이 있습니다. [자세히 보기](../Prospecting-Tool/prospecting-at-sub-accounts-complete-guide-benefits-setup.md)
 
 - 그런 다음, 왼쪽의 Marketing(마케팅) 탭을 클릭하고 상단 네비게이션 바에서 Prospecting(잠재고객 발굴) 탭을 클릭합니다
 
@@ -164,7 +164,7 @@ Open(열림)이 기본 상태입니다.
 
 마케팅 감사 보고서는 두 가지 주요 섹션으로 구성됩니다 - 리스팅과 리뷰입니다.
 
-마케팅 감사 보고서에 대한 자세한 내용은 [잠재고객 발굴 및 마케팅 감사 보고서의 향상된 리스팅 감사](enhanced-listings-audit-in-prospecting-marketing-audit-reports.md)를 참조하세요.
+마케팅 감사 보고서에 대한 자세한 내용은 [잠재고객 발굴 및 마케팅 감사 보고서의 향상된 리스팅 감사](../../10-마케팅/기타/enhanced-listings-audit-in-prospecting-marketing-audit-reports.md)를 참조하세요.
 
 **리스팅:**
 
@@ -194,7 +194,7 @@ Open(열림)이 기본 상태입니다.
 
 이 마케팅 감사 보고서는 잠재고객과 쉽게 공유할 수 있습니다. Share Report(보고서 공유)를 클릭하고 몇 초 안에 잠재고객과 링크를 공유하세요.
 
-**중요**: 마케팅 감사 보고서에 대한 자세한 내용은 [잠재고객 발굴 및 마케팅 감사 보고서의 향상된 리스팅 감사](enhanced-listings-audit-in-prospecting-marketing-audit-reports.md)를 참조하세요.
+**중요**: 마케팅 감사 보고서에 대한 자세한 내용은 [잠재고객 발굴 및 마케팅 감사 보고서의 향상된 리스팅 감사](../../10-마케팅/기타/enhanced-listings-audit-in-prospecting-marketing-audit-reports.md)를 참조하세요.
 
 Hyperclass의 잠재고객 발굴 도구는 에이전시에게 리드 생성 과정을 자동화하고 간소화할 수 있는 능력을 제공하여, 더 타겟팅되고 효율적인 접근 방식으로 더 많은 잠재 고객에게 도달할 수 있게 합니다. 에이전시는 이제 시간과 자원을 절약하는 동시에 잠재고객 발굴 노력의 효율성과 효과성을 개선할 수 있습니다.
 

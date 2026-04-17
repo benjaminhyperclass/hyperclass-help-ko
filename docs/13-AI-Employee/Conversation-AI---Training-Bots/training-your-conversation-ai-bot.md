@@ -154,9 +154,9 @@ URL 유형을 선택하고 URL을 입력한 후 "Get Data(데이터 가져오기
 
 봇 학습을 완료했다면 다음 문서들을 확인해서 대화 AI를 더욱 효과적으로 활용해보세요:
 
-- [대화 AI 봇 - 설명](conversation-ai-bot-explained.md)
-- [대화 AI V2 설정하기](setting-up-conversation-ai.md)
-- [고급 설정 개요 - 대화 AI](advanced-settings-overview-conversation-ai.md)
+- [대화 AI 봇 - 설명](../Getting-Started-w/-Conversation-AI/conversation-ai-bot-explained.md)
+- [대화 AI V2 설정하기](../Getting-Started-w/-Conversation-AI/setting-up-conversation-ai.md)
+- [고급 설정 개요 - 대화 AI](../Getting-Started-w/-Conversation-AI/advanced-settings-overview-conversation-ai.md)
 
 ---
 *원문 최종 수정: Tue, 3 Feb, 2026 at 1:19 PM*

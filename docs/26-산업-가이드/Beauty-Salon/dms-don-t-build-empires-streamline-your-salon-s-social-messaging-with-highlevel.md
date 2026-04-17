@@ -37,7 +37,7 @@
 - 데스크톱이나 휴대폰에서 댓글과 DM에 답장하기
 - 소셜에서 들어오는 리드를 바로 태그하고 추적하기
 
-**[페이스북과 인스타그램을 Hyperclass에 연결하는 방법]([connecting-facebook-business-account-to-ad-manager](connecting-facebook-business-account-to-ad-manager.md))**
+**[페이스북과 인스타그램을 Hyperclass에 연결하는 방법](../../10-마케팅/Ad-Manager-Setup-&-Configuration/connecting-facebook-business-account-to-ad-manager.md)**
 
 ## **2단계: 인박스 워크플로우 간소화하기**
 
@@ -61,7 +61,7 @@
 
 수동으로 답장할 때까지 고객의 관심을 따뜻하게 유지하고 참여도를 높여줍니다.
 
-**[Hyperclass에서 자동 응답 설정하는 방법]([workflow-action-instagram-interactive-messenger](workflow-action-instagram-interactive-messenger.md))**
+**[Hyperclass에서 자동 응답 설정하는 방법](../../07-워크플로우/Communication-Workflow-Actions/workflow-action-instagram-interactive-messenger.md)**
 
 ## **4단계: Hyperclass 모바일 앱으로 이동 중에도 빠른 응답하기**
 
@@ -71,7 +71,7 @@ Hyperclass 모바일 앱을 설치하면 본인이나 프론트 데스크 팀이
 - 채팅에서 바로 예약 잡기  
 - 소셜에서 새로운 리드를 CRM에 즉시 추가하기
 
-**[Hyperclass 모바일 앱 개요](mobile-apps-overview.md)**
+**[Hyperclass 모바일 앱 개요](../../30-모바일-데스크톱/기타/mobile-apps-overview.md)**
 
 ## **5단계: 소셜 리드 추적, 태그, 전환율 높이기**
 

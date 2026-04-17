@@ -85,11 +85,11 @@
 
 **지표:** 주 3-5회 소셜미디어에 게시하는 업체는 그보다 적게 게시하는 업체보다 2-3배 더 많은 리드를 전환시킵니다.
 
-[콘텐츠 AI로 이메일 만드는 방법]([how-to-create-emails-using-content-ai-](how-to-create-emails-using-content-ai-.md))
+[콘텐츠 AI로 이메일 만드는 방법](../../13-AI-Employee/Content-AI-in-the-Email-Builder/how-to-create-emails-using-content-ai-.md)
 
-[콘텐츠 AI로 블로그 게시물 개요 만들기](how-to-create-a-social-post-with-content-ai-.md)
+[콘텐츠 AI로 블로그 게시물 개요 만들기](../../13-AI-Employee/기타/how-to-create-a-social-post-with-content-ai-.md)
 
-[콘텐츠 AI로 소셜미디어 게시물 만들기](how-to-create-a-social-post-with-content-ai-.md)
+[콘텐츠 AI로 소셜미디어 게시물 만들기](../../13-AI-Employee/기타/how-to-create-a-social-post-with-content-ai-.md)
 
 ## 3단계: 높은 전환율의 콘텐츠 제작
 

@@ -183,7 +183,7 @@
 - [워크플로우 액션 및 트리거에서 커스텀 오브젝트 사용하기](using-custom-objects-in-workflow-actions-and-triggers.md)
 - 커스텀 오브젝트용 스마트 리스트
 - 커스텀 오브젝트용 목록 보기
-- [커스텀 오브젝트 시작하기](getting-started-with-custom-objects.md)
+- [커스텀 오브젝트 시작하기](../../11-설정/기타/getting-started-with-custom-objects.md)
 
 ---
 *원문 최종 수정: Wed, 4 Mar, 2026 at 4:39 AM*

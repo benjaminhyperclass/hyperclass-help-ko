@@ -44,13 +44,13 @@
 
 ![인바운드 웹훅 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48292559858/original/cYRkZ_IjqZd5rcJ7EdcH8swiLIrVl709ww.png?1681407524)
 
-자세한 내용은 [이 가이드](how-to-use-the-inbound-webhook-workflow-premium-trigger-.md)를 참조하세요.
+자세한 내용은 [이 가이드](../기타/how-to-use-the-inbound-webhook-workflow-premium-trigger-.md)를 참조하세요.
 
 ## 새로운 프리미엄 액션
 
 ### Google Sheets
 
-Google Sheets 프리미엄 워크플로우 액션은 Google Sheets 문서 내에서 다양한 데이터 관리 작업을 자동화할 수 있는 강력한 도구입니다. 이 기능을 사용하면 복잡한 서드파티 통합 없이도 스프레드시트에서 행을 생성, 업데이트, 삭제, 조회할 수 있습니다. 자세한 내용과 사용 사례는 [이 도움말](how-to-use-the-google-sheets-premium-workflow-action-.md)을 참조하세요.
+Google Sheets 프리미엄 워크플로우 액션은 Google Sheets 문서 내에서 다양한 데이터 관리 작업을 자동화할 수 있는 강력한 도구입니다. 이 기능을 사용하면 복잡한 서드파티 통합 없이도 스프레드시트에서 행을 생성, 업데이트, 삭제, 조회할 수 있습니다. 자세한 내용과 사용 사례는 [이 도움말](../기타/how-to-use-the-google-sheets-premium-workflow-action-.md)을 참조하세요.
 
 ![Google Sheets 액션 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284831431/original/Vj_bEdtOW00vB3IXlOjh1cGgQvEmxB5jdA.png?1677771535)
 
@@ -66,7 +66,7 @@ Google Sheets 프리미엄 워크플로우 액션은 Google Sheets 문서 내에
 - 비공개 채널에 메시지 보내기: 워크스페이스 내의 비공개 채널을 선택하여 메시지를 보낼 수 있으며, Slack 통합을 생성한 사용자가 수동으로 보낸 것처럼 표시됩니다.
 - 공개 채널에 메시지 보내기: 워크스페이스 내의 공개 채널을 선택하여 메시지를 브로드캐스트할 수 있어, 모든 워크스페이스 구성원이 정보에 접근할 수 있습니다.
 
-자세한 내용과 사용 사례는 [이 가이드](how-to-use-the-workflow-slack-premium-action-.md)를 참조하세요.
+자세한 내용과 사용 사례는 [이 가이드](../기타/how-to-use-the-workflow-slack-premium-action-.md)를 참조하세요.
 
 ![Slack 액션 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284832615/original/kk6QAPn7uQtGZqrVm7ii8IeuaSaTzK3oyQ.png?1677771709)
 
@@ -76,7 +76,7 @@ Google Sheets 프리미엄 워크플로우 액션은 Google Sheets 문서 내에
 
 커스텀 웹훅 프리미엄 액션은 CRM 시스템과 서드파티 서비스 간의 실시간 통신을 가능하게 하는 강력하고 유연한 기능입니다. 다양한 HTTP 및 인증 방법을 사용하여 지정된 URL에 커스텀 데이터 요청을 구성하고 전송할 수 있습니다. 이 기능은 헤더, 쿼리 매개변수 추가 및 커스텀 값 매핑을 지원하여 요구사항에 맞는 맞춤형 요청 구조를 생성할 수 있습니다.
 
-자세한 내용과 사용 사례는 [이 가이드](how-to-use-the-custom-webhook-lc-premium-workflow-action-.md)를 참조하세요.
+자세한 내용과 사용 사례는 [이 가이드](../기타/how-to-use-the-custom-webhook-lc-premium-workflow-action-.md)를 참조하세요.
 
 ![커스텀 웹훅 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284833052/original/Du3HM8O-Ni4054Et_SYkfi_VhJYAU36JbA.png?1677771800)
 
@@ -84,7 +84,7 @@ Google Sheets 프리미엄 워크플로우 액션은 Google Sheets 문서 내에
 
 ### 워크플로우 AI 액션
 
-인공지능을 활용하여 비즈니스 프로세스를 향상시키는 혁신적인 도구인 워크플로우 AI 프리미엄 액션을 소개합니다. 콘텐츠 생성, 이메일 작성, 의도 인식 등 다양한 작업에 AI의 힘을 활용하여 워크플로우에 AI를 원활하게 통합할 수 있습니다. 워크플로우에서 자동화와 개인화의 새로운 차원을 열어 비즈니스 운영 전반에서 응답성과 맥락성을 보장합니다. [이 가이드](how-to-configure-the-workflow-ai-action-.md)에서 자세한 내용을 확인하세요.
+인공지능을 활용하여 비즈니스 프로세스를 향상시키는 혁신적인 도구인 워크플로우 AI 프리미엄 액션을 소개합니다. 콘텐츠 생성, 이메일 작성, 의도 인식 등 다양한 작업에 AI의 힘을 활용하여 워크플로우에 AI를 원활하게 통합할 수 있습니다. 워크플로우에서 자동화와 개인화의 새로운 차원을 열어 비즈니스 운영 전반에서 응답성과 맥락성을 보장합니다. [이 가이드](../기타/how-to-configure-the-workflow-ai-action-.md)에서 자세한 내용을 확인하세요.
 
 ![워크플로우 AI 액션 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049490023/original/zFAi3ABFAsPjsNtVS7yeysXqhE5sxCCXCg.png?1751956064)
 
@@ -152,7 +152,7 @@ Google Sheets 프리미엄 워크플로우 액션은 Google Sheets 문서 내에
 
 관련 가이드:
 - [인바운드 웹훅 트리거](https://help.leadconnectorhq.com/support/solutions/articles/48001237402-how-to-use-the-inbound-webhook-workflow-premium-trigger-)
-- [Google Sheets 액션](how-to-use-the-google-sheets-premium-workflow-action-.md)
+- [Google Sheets 액션](../기타/how-to-use-the-google-sheets-premium-workflow-action-.md)
 - [커스텀 웹훅 액션](https://help.leadconnectorhq.com/support/solutions/articles/48001238168-how-to-use-the-custom-webhook-lc-premium-workflow-action-)
 - [Slack 액션](https://help.leadconnectorhq.com/support/solutions/articles/48001238248-how-to-use-the-workflow-slack-premium-action-)
 - [날짜/시간 포맷터 액션](https://help.leadconnectorhq.com/support/solutions/articles/48001238250-how-to-use-the-date-time-formatter-premium-workflow-action-)

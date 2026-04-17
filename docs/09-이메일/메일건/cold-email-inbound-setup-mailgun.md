@@ -95,7 +95,7 @@ Mailgun은 인박스를 제공하지 않으며, 이메일을 라우팅하거나 
 
 ### 1. Mailgun 설정
 
-[Mailgun 설정 방법](step-by-step-guide-to-set-up-mailgun.md)을 확인하세요.
+[Mailgun 설정 방법](../step-by-step-guide-to-set-up-mailgun.md)을 확인하세요.
 
 agency.com / mg.agency.com을 Mailgun으로 설정할 예정입니다.
 

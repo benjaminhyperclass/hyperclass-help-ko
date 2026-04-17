@@ -6,7 +6,7 @@
 
 # (게스트 튜토리얼) Pabbly Connect - 하위 계정에 페이스북 리드 광고를 연동하는 방법
 
-Hyperclass는 페이스북 리드 광고와 직접 연동이 가능합니다([가이드 보기](facebook-lead-ad-integration-troubleshooting-guide.md)). 만약 Pabbly Connect나 Zapier와 같은 서드파티 서비스를 통해 연동하고 싶으시다면 아래 튜토리얼을 확인해보세요.
+Hyperclass는 페이스북 리드 광고와 직접 연동이 가능합니다([가이드 보기](facebook-lead-ad-integration-troubleshooting-guide.md). 만약 Pabbly Connect나 Zapier와 같은 서드파티 서비스를 통해 연동하고 싶으시다면 아래 튜토리얼을 확인해보세요.
 
 ### 
 참고사항:

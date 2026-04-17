@@ -92,7 +92,7 @@ Affiliate Hangout에서는 다음과 같은 내용을 다룹니다:
 
 여기에는 성공적인 HighLevel 어필리에이트가 되는 방법을 안내하는 많은 유용한 문서들이 있습니다.
 
-가장 유용한 문서 중 하나는 [첫 5명의 어필리에이트를 얻는 5가지 방법](5-ways-to-get-your-first-5-affiliates.md)입니다. 모든 최고 어필리에이트들에게 효과가 있었던 최고의 팁과 노하우를 검토하여 성공의 발판을 마련하세요.
+가장 유용한 문서 중 하나는 [첫 5명의 어필리에이트를 얻는 5가지 방법](../기타/5-ways-to-get-your-first-5-affiliates.md)입니다. 모든 최고 어필리에이트들에게 효과가 있었던 최고의 팁과 노하우를 검토하여 성공의 발판을 마련하세요.
 
 ![지원 포털](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48101121992/original/SkovHahBJfGTP9Ey0wEiDDXWXpQ8oSvUSQ.png?1619723972)
 

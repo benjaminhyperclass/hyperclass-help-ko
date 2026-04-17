@@ -6,7 +6,7 @@
 
 # LC Phone 메시징 정책
 
-에이전시의 SMS 평판을 보호하고 위험을 제한하기 위해 [LC Phone 시스템](how-do-i-migrate-my-agency-and-sub-account-over-to-lc-phone-.md)에서만 사용 가능한 아래 기능들을 구현했습니다.
+에이전시의 SMS 평판을 보호하고 위험을 제한하기 위해 [LC Phone 시스템](../how-do-i-migrate-my-agency-and-sub-account-over-to-lc-phone-.md)에서만 사용 가능한 아래 기능들을 구현했습니다.
 
 이 메시징 정책은 CRM 내 커뮤니케이션에 LC Phone을 사용하는 모든 하위 계정에 적용됩니다.
 

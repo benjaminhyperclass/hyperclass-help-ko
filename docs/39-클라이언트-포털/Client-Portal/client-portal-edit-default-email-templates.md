@@ -64,7 +64,7 @@
 
 ![진행하기 전 주의사항 확인](https://jumpshare.com/share/IoMsgYXd0b1p9Ljitlve+/Screen+Shot+2025-12-05+at+7.51.18+PM.png)
 
-- **Email Builder(이메일 빌더)**를 사용하여 원하는 대로 이메일 템플릿을 편집하세요. (이메일 생성 및 편집 방법을 자세히 알아보려면 [이메일 빌더 가이드]([how-to-use-the-email-builder-and-its-in-line-editor](how-to-use-the-email-builder-and-its-in-line-editor.md))를 확인하세요)
+- **Email Builder(이메일 빌더)**를 사용하여 원하는 대로 이메일 템플릿을 편집하세요. (이메일 생성 및 편집 방법을 자세히 알아보려면 [이메일 빌더 가이드](../../10-마케팅/Email-Builder-Capabilities/how-to-use-the-email-builder-and-its-in-line-editor.md)를 확인하세요)
 
 ![이메일 빌더로 템플릿 편집](https://jumpshare.com/share/hqvnlGAChztL82T65RiE+/Screen+Shot+2025-12-05+at+7.53.12+PM.png)
 

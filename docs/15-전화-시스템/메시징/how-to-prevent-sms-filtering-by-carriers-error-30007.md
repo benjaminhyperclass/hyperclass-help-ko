@@ -59,7 +59,7 @@
 
 ### 2. 사용 목적 및 발신자 선택
 
-- 급여일 대출, 부채 탕감, 대마초 등 금지된 사용 사례를 피하세요. [미국 및 캐나다의 SMS 및 MMS 금지 메시지 카테고리](forbidden-message-categories-for-sms-and-mms-in-the-us-and-canada.md) 가이드를 참고하세요.
+- 급여일 대출, 부채 탕감, 대마초 등 금지된 사용 사례를 피하세요. [미국 및 캐나다의 SMS 및 MMS 금지 메시지 카테고리](../A2P-등록/forbidden-message-categories-for-sms-and-mms-in-the-us-and-canada.md) 가이드를 참고하세요.
 - 필터링을 회피하기 위해 여러 번호에 걸쳐 "스노우슈잉"하지 마세요. 지역이나 사업부를 기준으로만 번호를 사용하세요.
 - 필요한 경우, 특히 프랑스와 같은 국가에서는 사전 등록된 단축 코드나 영숫자 발신자 ID를 사용하세요.
 - 현지 규칙에 대해서는 국가별 SMS 가이드라인을 참고하세요.
@@ -86,7 +86,7 @@ SMS에는 다음이 포함되어야 합니다:
 - DND(방해 금지) 요청을 매일 처리하세요. 비활성화된 번호는 더 이상 유효한 수신자가 아닙니다.
 - 30007을 유발하는 메시지는 연락처를 자동으로 DND로 표시할 수 있습니다.
 
-자세히 알아보기: [DoNotDisturb (DND Split)](how-to-use-do-not-disturb-dnd-.md)
+자세히 알아보기: [DoNotDisturb (DND Split)](../../02-연락처/스마트-리스트/how-to-use-do-not-disturb-dnd-.md)
 
 ## 모범 사례
 

@@ -92,11 +92,11 @@
 | **웹사이트 블로그 & 뉴스레터** | 업계 뉴스, 사례 연구, 서비스 가이드 | 월 2회 |
 | **오프라인(팜플릿, 광고판)** | 프로모션, 신뢰도 향상, 서비스 하이라이트 | 계절별 캠페인 |
 
-[콘텐츠 AI로 이메일 만드는 방법]([how-to-create-emails-using-content-ai-](how-to-create-emails-using-content-ai-.md))
+[콘텐츠 AI로 이메일 만드는 방법](../../13-AI-Employee/Content-AI-in-the-Email-Builder/how-to-create-emails-using-content-ai-.md)
 
-[콘텐츠 AI로 블로그 게시물 개요 만들기](how-to-create-a-social-post-with-content-ai-.md)
+[콘텐츠 AI로 블로그 게시물 개요 만들기](../../13-AI-Employee/기타/how-to-create-a-social-post-with-content-ai-.md)
 
-[콘텐츠 AI로 소셜 미디어 게시물 만들기](how-to-create-a-social-post-with-content-ai-.md)
+[콘텐츠 AI로 소셜 미디어 게시물 만들기](../../13-AI-Employee/기타/how-to-create-a-social-post-with-content-ai-.md)
 
 #### **프로 팁:** **로컬 SEO & GBP**
 Google 비즈니스 프로필에 **매주 업데이트**를 게시하면 지역 순위가 **향상됩니다**.

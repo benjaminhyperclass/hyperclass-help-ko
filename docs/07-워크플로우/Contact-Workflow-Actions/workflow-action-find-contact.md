@@ -197,15 +197,15 @@ Q. 검색에 여러 필드를 사용할 수 있나요?
 
 ## 관련 아티클
 
-- [워크플로우 액션 — 연락처 생성]([workflow-action-create-contact](workflow-action-create-contact.md))
+- [워크플로우 액션 — 연락처 생성](workflow-action-create-contact.md)
 
-- [워크플로우 액션 - 연락처 필드 업데이트]([workflow-action-update-contact-field](workflow-action-update-contact-field.md))
+- [워크플로우 액션 - 연락처 필드 업데이트]([workflow-action-update-contact-field](workflow-action-update-contact-field.md)
 
-- [워크플로우 트리거 - 인바운드 웹훅]([workflow-trigger-inbound-webhook](workflow-trigger-inbound-webhook.md))
+- [워크플로우 트리거 - 인바운드 웹훅](../workflow-trigger-inbound-webhook.md)
 
-- [연락처 중복 제거 기본 설정(중복 연락처 허용)]([allow-duplicate-contacts-contact-deduplication-preferences-](allow-duplicate-contacts-contact-deduplication-preferences-.md))
+- [연락처 중복 제거 기본 설정(중복 연락처 허용)](../../11-설정/Business-Profile-Settings/allow-duplicate-contacts-contact-deduplication-preferences-.md)
 
-- [Hyperclass에서 중복 연락처를 합치는 방법]([how-to-merge-duplicate-contacts-in-highlevel](how-to-merge-duplicate-contacts-in-highlevel.md))
+- [Hyperclass에서 중복 연락처를 합치는 방법](../../02-연락처/스마트-리스트/how-to-merge-duplicate-contacts-in-highlevel.md)
 
 ---
 *원문 최종 수정: Wed, 11 Feb, 2026 at 2:29 AM*

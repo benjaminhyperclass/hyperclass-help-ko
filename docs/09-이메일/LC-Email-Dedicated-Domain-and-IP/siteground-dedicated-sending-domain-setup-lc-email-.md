@@ -19,13 +19,13 @@
 
 1. 하위 계정에 들어간 후 > Settings(설정) > Email Services(이메일 서비스) > Dedicated Domain(전용 도메인) > + Add Domain(도메인 추가)를 클릭하세요.
 
-[LC Email로 에이전시 이전하기](how-to-migrate-my-agency-over-to-lc-email.md) 가이드를 확인해보세요.
+[LC Email로 에이전시 이전하기](../how-to-migrate-my-agency-over-to-lc-email.md) 가이드를 확인해보세요.
 
 ![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48292765242/original/jQLugI8wtvQRfs38XJDujiQd2QnIgjQqSA.gif?1681496688)
 
 2. 도메인이 companyname.com이라면, 메인 도메인 또는 서브도메인으로 설정할 수 있습니다.
 
-[Mailgun에서 LeadConnector로 발송 도메인을 이전하는 방법](how-to-set-up-a-dedicated-sending-domain-lc-email-.md) 가이드를 확인해보세요.
+[Mailgun에서 LeadConnector로 발송 도메인을 이전하는 방법](../기타/how-to-set-up-a-dedicated-sending-domain-lc-email-.md) 가이드를 확인해보세요.
 
 메인 도메인:
 - 메인 도메인을 추가하는 경우, [Gsuite나 다른 이메일 제공업체와 함께 사용하면 안 됩니다](https://help.mailgun.com/hc/en-us/articles/203357040-Can-I-Use-the-Same-Domain-Name-for-Mailgun-and-for-Google-Apps-Or-Another-Email-Server-)
@@ -203,9 +203,9 @@ D. Create(생성) 버튼을 클릭하세요.
 
 일부 레코드에 녹색 체크마크가 나타나지 않으면 Verify Domain(도메인 확인) 버튼을 다시 클릭하세요.
 
-모든 DNS 레코드를 추가하고 확인한 후에는 [전용 발송 도메인의 SSL 인증서(LC Email)](ssl-certificates-for-dedicated-lc-email-domains.md)가 제대로 설정되었는지 확인하세요.
+모든 DNS 레코드를 추가하고 확인한 후에는 [전용 발송 도메인의 SSL 인증서(LC Email)](../LC-이메일/ssl-certificates-for-dedicated-lc-email-domains.md)가 제대로 설정되었는지 확인하세요.
 
-그 다음 모든 것이 정상 작동하는지 테스트 이메일을 보낼 수 있습니다! [대화에서 테스트 이메일 보내기](how-to-send-a-test-email-in-the-conversation.md) 방법을 확인해보세요.
+그 다음 모든 것이 정상 작동하는지 테스트 이메일을 보낼 수 있습니다! [대화에서 테스트 이메일 보내기](../트러블슈팅/how-to-send-a-test-email-in-the-conversation.md) 방법을 확인해보세요.
 
 ---
 

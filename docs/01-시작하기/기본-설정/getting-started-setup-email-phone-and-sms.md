@@ -259,8 +259,8 @@ Q: "발신" 전화번호를 선택하지 않으면 어떻게 되나요?
 ## 더 알아보기
 
 - 메시징 한도 증량 방법
-- [SMS 전달률 향상 모범 사례](best-practices-for-sms-deliverability-and-avoiding-sms-restrictions.md)
-- [이메일 발송 가이드: 모범 사례 및 워밍업](email-sending-guide-email-best-practices-email-warm-up.md)
+- [SMS 전달률 향상 모범 사례](../../15-전화-시스템/메시징/best-practices-for-sms-deliverability-and-avoiding-sms-restrictions.md)
+- [이메일 발송 가이드: 모범 사례 및 워밍업](../../09-이메일/LC-이메일/email-sending-guide-email-best-practices-email-warm-up.md)
 
 ---
 *원문 최종 수정: Mon, 23 Mar, 2026 at 5:12 AM*

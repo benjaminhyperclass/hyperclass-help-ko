@@ -39,9 +39,9 @@
 
 **다음 단계:** 강의를 더욱 향상시킬 수 있는 방법들을 살펴보세요:
 
-- [강의/멤버십 사이트 구축하는 방법]([how-to-build-courses-membership-sites](how-to-build-courses-membership-sites.md))
-- [커뮤니티 안의 유료 강의]([paid-courses-inside-communities](paid-courses-inside-communities.md))
-- [커뮤니티의 고급 강의 잠금해제 옵션](advanced-course-unlock-options-in-communities.md)
+- [강의/멤버십 사이트 구축하는 방법](../../17-멤버십-커뮤니티/멤버십-코스/how-to-build-courses-membership-sites.md)
+- [커뮤니티 안의 유료 강의](../../17-멤버십-커뮤니티/커뮤니티/paid-courses-inside-communities.md)
+- [커뮤니티의 고급 강의 잠금해제 옵션](../../17-멤버십-커뮤니티/기타/advanced-course-unlock-options-in-communities.md)
 
 ---
 

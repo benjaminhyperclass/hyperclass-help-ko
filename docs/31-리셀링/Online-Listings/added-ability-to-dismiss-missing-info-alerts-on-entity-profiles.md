@@ -46,7 +46,7 @@
 
 ![프로필 점수 계산 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155054438084/original/Cjeoq2fU1bKkTjtCjZXEBeB4aiHGguX06A.png?1758686332)
 
-온라인 리스팅과 고객에게 이를 재판매하는 방법에 대해 더 자세히 알아보려면 [여기를 클릭하세요](how-to-sell-yext-as-part-of-a-saas-offer.md).
+온라인 리스팅과 고객에게 이를 재판매하는 방법에 대해 더 자세히 알아보려면 [여기를 클릭하세요](../../16-SaaS-설정/기타/how-to-sell-yext-as-part-of-a-saas-offer.md).
 
 💡 리스팅 기능에 대한 제안사항이 있으신가요? [아이디어 게시판](https://ideas.gohighlevel.com/yext)에 의견을 남겨주시면 우선순위를 두고 검토하겠습니다!
 

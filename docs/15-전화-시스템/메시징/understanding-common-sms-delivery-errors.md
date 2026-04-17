@@ -134,7 +134,7 @@ Hyperclass에서 가장 자주 발생하는 SMS 오류는 다음과 같습니다
 - 개인화되고 규정을 준수하는 메시징을 사용하세요
 - A2P 10DLC 또는 Toll-Free 인증으로 번호를 등록하세요
 
-자세한 내용은 [통신사 SMS 필터링 방지 방법: Error 30007]([how-to-prevent-sms-filtering-by-carriers-error-30007](how-to-prevent-sms-filtering-by-carriers-error-30007.md))을 참조하세요.
+자세한 내용은 [통신사 SMS 필터링 방지 방법: Error 30007](how-to-prevent-sms-filtering-by-carriers-error-30007.md)을 참조하세요.
 
 ### 10. Error 30034 – US A2P 10DLC: 미등록 번호에서 메시지
 
@@ -167,7 +167,7 @@ Hyperclass에서 가장 자주 발생하는 SMS 오류는 다음과 같습니다
 
 brand.ludicrous.cloud
 
-이것이 누락되거나 잘못 구성되면 대화에서 이미지가 깨져 보입니다. [브랜딩 시스템 생성 링크 (API 도메인)](branding-system-generated-links-api-domain-.md)을 확인하세요.
+이것이 누락되거나 잘못 구성되면 대화에서 이미지가 깨져 보입니다. [브랜딩 시스템 생성 링크 (API 도메인)](../../11-설정/branding-system-generated-links-api-domain-.md)을 확인하세요.
 
 ### 13. Error 30024 - 통신사에서 숫자 발신자 ID가 프로비저닝되지 않음
 

@@ -34,7 +34,7 @@
 
 때로는 간단한 넛지만으로도 그들을 매트, 바벨, 또는 러닝머신으로 다시 돌아오게 할 수 있습니다.
 
-[**연락처 태그 추가하는 방법**]([workflow-action-add-contact-tag](workflow-action-add-contact-tag.md))
+[**연락처 태그 추가하는 방법**](../../07-워크플로우/Contact-Workflow-Actions/workflow-action-add-contact-tag.md)
 
 ---
 
@@ -55,7 +55,7 @@
 
 HighLevel을 통해 당신이 물리적으로 운동장에 있지 않을 때도 회원들을 챙길 수 있습니다. 유지는 리마인더가 아니라 관계에 관한 것이기 때문입니다.
 
-**[문자 메시지 워크플로우 설정하기]([workflow-action-send-sms](workflow-action-send-sms.md))**
+**[문자 메시지 워크플로우 설정하기](../../07-워크플로우/Communication-Workflow-Actions/workflow-action-send-sms.md)**
 
 ---
 
@@ -105,7 +105,7 @@ HighLevel을 통해 당신이 물리적으로 운동장에 있지 않을 때도 
 
 회원들이 들어주고 있다고 느끼면 머무릅니다. 머무르면 추천합니다. 추천하면 성장합니다.
 
-**[워크플로우 시작하기]([introduction-to-workflows-and-automations](introduction-to-workflows-and-automations.md))**
+**[워크플로우 시작하기](../../07-워크플로우/기타/getting-started-with-workflows.md)**
 
 ---
 

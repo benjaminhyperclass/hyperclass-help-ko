@@ -104,10 +104,10 @@
 
 ## 관련 가이드
 
-- [스타일화된 설문 만들기](how-to-create-a-stylized-survey.md)
-- [설문의 새로운 푸터](new-footer-in-surveys.md)
+- [스타일화된 설문 만들기](../how-to-create-a-stylized-survey.md)
+- [설문의 새로운 푸터](../new-footer-in-surveys.md)
 - 폼, 설문, 퀴즈용 모바일 편집기
-- [퀴즈 빌더 가이드](quiz-builder-guide.md)
+- [퀴즈 빌더 가이드](../quiz-builder-guide.md)
 - 폼과 설문 분석
 
 ---

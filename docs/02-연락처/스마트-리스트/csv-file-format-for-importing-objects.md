@@ -136,7 +136,7 @@ CSV에서 가져오기 오류를 방지하려면 각 데이터 유형에 대해 
 
 **팁**: CSV를 가져오기 전에 동일한 라벨과 데이터 유형을 사용하여 Hyperclass 계정에 커스텀 필드가 이미 생성되어 있는지 확인하세요.
 
-커스텀 필드 생성에 대한 도움말은 [Merge Fields & Custom Variables 개요]([overview-of-merge-fields-custom-variables](overview-of-merge-fields-custom-variables.md))를 참조하세요.
+커스텀 필드 생성에 대한 도움말은 [Merge Fields & Custom Variables 개요](../../40-병합필드-변수/Merge-Fields-&amp;-Custom-Variables/overview-of-merge-fields-custom-variables.md)를 참조하세요.
 
 ## CSV 가져오기에서 지원되는 국가 목록
 

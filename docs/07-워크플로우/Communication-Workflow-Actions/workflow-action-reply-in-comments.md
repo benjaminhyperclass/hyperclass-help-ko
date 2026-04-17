@@ -22,7 +22,7 @@
 
 페이스북이나 인스타그램 계정에 게시물에 댓글이 달리면, 해당 댓글로 인해 워크플로우가 트리거되었을 때 이 액션을 사용해 그 댓글 아래에 답글을 달 수 있어요. 댓글에 좋아요를 누르는 것도 가능합니다.
 
-댓글 답글 액션은 반드시 관련된 트리거와 함께 사용해야 해요: [Facebook Comment(s) On A Post](workflow-trigger-facebook-comment-s-on-a-post.md) 또는 [Instagram Comment(s) On A Post](workflow-trigger-instagram-comment-s-on-a-post.md)
+댓글 답글 액션은 반드시 관련된 트리거와 함께 사용해야 해요: [Facebook Comment(s) On A Post](../Facebook/Instagram-Events-Workflow-Triggers/workflow-trigger-facebook-comment-s-on-a-post.md) 또는 [Instagram Comment(s) On A Post](../Facebook/Instagram-Events-Workflow-Triggers/workflow-trigger-instagram-comment-s-on-a-post.md)
 
 ---
 

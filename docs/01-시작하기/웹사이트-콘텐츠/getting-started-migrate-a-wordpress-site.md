@@ -142,10 +142,10 @@ HighLevel WordPress 사이트 대시보드에서 Click to upload or drag and dro
 **더 자세히 알아보기**
 
 - WordPress Hosting: Step-by-Step Migration Guide
-- [WordPress: 도메인 연결 통합](wordpress-domain-connect-integration.md)
-- [HighLevel에서 WordPress 웹사이트 복제하기](cloning-wordpress-websites-in-highlevel.md)
+- [WordPress: 도메인 연결 통합](../../06-사이트/wordpress-domain-connect-integration.md)
+- [HighLevel에서 WordPress 웹사이트 복제하기](../../06-사이트/cloning-wordpress-websites-in-highlevel.md)
 - WordPress 세분화된 권한 관리
-- [템플릿으로 새 WordPress 사이트 만들기](new-wordpress-site-from-template.md)
+- [템플릿으로 새 WordPress 사이트 만들기](../../06-사이트/워드프레스/new-wordpress-site-from-template.md)
 
 ---
 *원문 최종 수정: Mon, 5 Jan, 2026 at 10:04 AM*

@@ -35,13 +35,13 @@ Hyperclass에서 **렌탈** 기능을 설정하는 완벽한 가이드입니다.
 #### 다일 예약 지원: 몇 시간, 며칠, 몇 주, 또는 몇 달에 걸쳐 자산을 예약할 수 있으며, 유연한 기간 및 예약 제어가 가능합니다.
 
 - 
-#### 리스팅과 카테고리: [(도움말 가이드)](understanding-listings-categories.md) 상세한 정보, 체계적인 카테고리, 상태 관리로 렌탈 리스팅을 생성하세요.
+#### 리스팅과 카테고리: [(도움말 가이드)](../understanding-listings-categories.md) 상세한 정보, 체계적인 카테고리, 상태 관리로 렌탈 리스팅을 생성하세요.
 
 - 
-#### 재고 및 변형: [(도움말 가이드)](create-edit-listings.md) 여러 개의 단위에 대한 수량 추적을 활성화하고 동일한 리스팅의 다양한 버전에 대한 변형을 정의하세요.
+#### 재고 및 변형: [(도움말 가이드)](../create-edit-listings.md) 여러 개의 단위에 대한 수량 추적을 활성화하고 동일한 리스팅의 다양한 버전에 대한 변형을 정의하세요.
 
 - 
-#### 고급 가격 및 할인: [(도움말 가이드)](configuring-pricing-discounts.md) 계절, 요일, 시간대, 기간 또는 수량에 대한 가격 규칙을 사용하세요. 장기 또는 대량 예약에 대한 할인을 자동으로 적용하세요.
+#### 고급 가격 및 할인: [(도움말 가이드)](../configuring-pricing-discounts.md) 계절, 요일, 시간대, 기간 또는 수량에 대한 가격 규칙을 사용하세요. 장기 또는 대량 예약에 대한 할인을 자동으로 적용하세요.
 
 - 
 #### 캘린더 보기: [(도움말 가이드)](calendar-view-for-rentals.md) 일, 주, 월 보기를 지원하는 현대적이고 필터링 가능한 캘린더를 사용하여 모든 예약을 시각적으로 확인하세요. 겹치는 일정, 차단된 시간대, 실시간 이용 가능성을 파악할 수 있습니다.
@@ -85,7 +85,7 @@ Hyperclass에서 **렌탈** 기능을 설정하는 완벽한 가이드입니다.
 - 
 **Advanced Settings(고급 설정)**을 사용하여 재고, 변형, 가격 및 예약 규칙을 정의하세요.
 
-리스팅 생성 방법에 대한 자세한 정보를 원하시나요? [리스팅 생성 및 편집에 대한 문서를 읽으려면 여기를 클릭하세요](create-edit-listings.md)
+리스팅 생성 방법에 대한 자세한 정보를 원하시나요? [리스팅 생성 및 편집에 대한 문서를 읽으려면 여기를 클릭하세요](../create-edit-listings.md)
 
 ![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056178583/original/InaMf8rORf-wMVdUVjY7_SF0KWTBMGfl8w.png?1760634290)
 
@@ -101,7 +101,7 @@ Hyperclass에서 **렌탈** 기능을 설정하는 완벽한 가이드입니다.
 
 캘린더 보기(Calendar View) 또는 예약(Appointments) 탭에서 테스트 예약을 생성하여 구성, 가격 및 알림을 확인하세요.
 
-예약 생성에 대한 자세한 정보를 원하시나요? [예약 생성에 대한 문서를 읽으려면 여기를 클릭하세요](creating-a-booking.md)
+예약 생성에 대한 자세한 정보를 원하시나요? [예약 생성에 대한 문서를 읽으려면 여기를 클릭하세요](../creating-a-booking.md)
 
 ![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056179216/original/SHZWfSEnvcYEuc71XnhUlj8xZJwDLq-nFg.png?1760634793)
 

@@ -50,9 +50,9 @@ $497+ 플랜의 커스텀 대시보드는 **에이전시 관리자**와 **에이
 
 ## 다음 단계:
 
-- [대시보드에 위젯 추가하기](how-to-create-add-dashboard-widgets.md)
-- [위젯 커스터마이징](customizing-dashboard-widgets.md)
-- [대시보드 위젯 편집하기](edit-widgets-on-the-dashboard.md)
+- [대시보드에 위젯 추가하기](../how-to-create-add-dashboard-widgets.md)
+- [위젯 커스터마이징](../customizing-dashboard-widgets.md)
+- [대시보드 위젯 편집하기](../edit-widgets-on-the-dashboard.md)
 
 ---
 *원문 최종 수정: Wed, 18 Oct, 2023 at 11:34 PM*

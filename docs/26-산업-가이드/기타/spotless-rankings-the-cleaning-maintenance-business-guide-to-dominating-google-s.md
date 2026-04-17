@@ -166,9 +166,9 @@ Hyperclass에서 이탈 의도 팝업 만드는 방법
 
 - 백링크를 획득하여 **SEO 및 구글 순위를 향상**시키세요.
 
-[로컬 SEO를 위한 고성능 키워드 찾는 방법](how-to-add-seo-descriptions-and-keywords-to-boost-your-ecommerce-ranking.md)
+[로컬 SEO를 위한 고성능 키워드 찾는 방법](../../37-이커머스-스토어/E-Commerce-Store/how-to-add-seo-descriptions-and-keywords-to-boost-your-ecommerce-ranking.md)
 
-[전환하는 리드 캡처 폼 설정 방법](how-to-create-a-contact-form-in-highlevel-.md)
+[전환하는 리드 캡처 폼 설정 방법](../../02-연락처/기타/how-to-create-a-contact-form-in-highlevel-.md)
 
 ### **4단계: 진행 상황 추적 및 개선**
 
@@ -186,7 +186,7 @@ Hyperclass에서 이탈 의도 팝업 만드는 방법
 
 - 어떤 페이지와 키워드가 **가장 많은 트래픽과 예약**을 가져오는지 확인하세요.
 
-[SEO 메타 데이터 추적 및 개선 방법](seo-meta-data.md)
+[SEO 메타 데이터 추적 및 개선 방법](../../06-사이트/퍼널-웹사이트/seo-meta-data.md)
 
 ### **최종 정리: 구글 높은 순위로 더 많은 일감 확보**
 

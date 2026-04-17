@@ -82,7 +82,7 @@
 ✅ **80%** 교육적, 공감대, 개인적 내용
 ✅ **20%** 홍보, 매물, 직접적 CTA
 
-[기존 템플릿으로 광고 캠페인 만들기]([ad-manager-create-ad-campaigns-using-templates](ad-manager-create-ad-campaigns-using-templates.md))
+[기존 템플릿으로 광고 캠페인 만들기](../../10-마케팅/Ad-Campaign-Creation-and-Management/ad-manager-create-ad-campaigns-using-templates.md)
 
 ### 2.2 전환이 잘 되는 부동산 콘텐츠
 
@@ -127,7 +127,7 @@
 | 소규모 팀/파트너 | 일 2.5만원 (월 75만원) | 다중 매물 + 리드 생성 + 리타겟팅 |
 | 기존 중개업소 | 일 5만원+ | 브랜드 + 리드 퍼널 확장 |
 
-[광고 예산 효과적으로 관리하기]([ad-manager-campaign-budget-definition](ad-manager-campaign-budget-definition.md))
+[광고 예산 효과적으로 관리하기](../../10-마케팅/Ad-Campaign-Creation-and-Management/ad-manager-campaign-budget-definition.md)
 
 ## 4단계: Hyperclass로 자동화 및 확장하기
 

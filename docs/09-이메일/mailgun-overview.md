@@ -69,7 +69,7 @@ Hyperclass에서 Mailgun을 설정하는 방법은 두 가지가 있습니다:
 
 **2. 여러 서브도메인**
 
-각 클라이언트의 도메인에 대해 Mailgun에서 서브도메인을 설정하고, 해당 서브도메인을 특정 Hyperclass 계정의 발송에 사용할 수 있습니다. 각 로케이션(Location)에 고유한 도메인/서브도메인을 설정하여 콜드 인바운드 이메일을 수집할 수 있습니다. [콜드 이메일 인바운드 설정에 대해 더 알아보기](cold-email-inbound-setup.md)
+각 클라이언트의 도메인에 대해 Mailgun에서 서브도메인을 설정하고, 해당 서브도메인을 특정 Hyperclass 계정의 발송에 사용할 수 있습니다. 각 로케이션(Location)에 고유한 도메인/서브도메인을 설정하여 콜드 인바운드 이메일을 수집할 수 있습니다. [콜드 이메일 인바운드 설정에 대해 더 알아보기](기타/cold-email-inbound-setup.md)
 
 장점:
 - 이메일이 클라이언트 도메인별로 화이트라벨됨
@@ -81,9 +81,9 @@ Hyperclass에서 Mailgun을 설정하는 방법은 두 가지가 있습니다:
 ## 관련 가이드
 
 - [Mailgun 설정 단계별 가이드](step-by-step-guide-to-set-up-mailgun.md)
-- [Mailgun 설정 체크리스트](mailgun-setup-checklist.md)
-- [MailGun에서 답장 설정하는 방법](how-to-setup-replies-in-mailgun.md)
-- [Mailgun: 비공개 API 키 설정](mailgun-private-api-key-setup.md)
+- [Mailgun 설정 체크리스트](메일건/mailgun-setup-checklist.md)
+- [MailGun에서 답장 설정하는 방법](메일건/how-to-setup-replies-in-mailgun.md)
+- [Mailgun: 비공개 API 키 설정](메일건/mailgun-private-api-key-setup.md)
 
 ---
 *원문 최종 수정: Wed, 3 Dec, 2025 at 7:46 AM*

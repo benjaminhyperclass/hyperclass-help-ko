@@ -29,7 +29,7 @@
 신규 제휴 마케터는 여러 방법으로 고유한 추천 링크에 접근할 수 있습니다:
 
 - **기본 이메일 템플릿:** 캠페인 설정 시 추천 링크와 기타 필수 정보가 포함된 기본 이메일 템플릿을 선택할 수 있습니다. 이 이메일은 신규 제휴 마케터가 캠페인에 참여할 때 자동으로 발송됩니다.
-- **자동화:** "제휴 마케터 캠페인 등록" 트리거를 사용하여 제휴 마케터에게 개인화된 이메일이나 SMS를 작성하고 발송할 수 있습니다. [자세히 알아보기](workflow-trigger-affiliate-enrolled-in-campaign.md)
+- **자동화:** "제휴 마케터 캠페인 등록" 트리거를 사용하여 제휴 마케터에게 개인화된 이메일이나 SMS를 작성하고 발송할 수 있습니다. [자세히 알아보기](../Affiliate-Manager-Automation/workflow-trigger-affiliate-enrolled-in-campaign.md)
 - **제휴 마케터 포털:** 제휴 마케터는 언제든지 제휴 마케터 포털에 로그인하여 추천 링크와 기타 중요한 정보를 확인할 수 있습니다. [자세히 알아보기](how-to-use-the-affiliate-portal-a-comprehensive-guide-for-affiliates.md)
 
 ---

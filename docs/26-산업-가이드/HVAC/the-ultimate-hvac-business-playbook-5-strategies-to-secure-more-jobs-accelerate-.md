@@ -61,13 +61,13 @@
 **[구글 마이 비즈니스 프로필 설정하는 방법](https://support.google.com/business/answer/3038177?hl=en)**
 
 #### ✅ **통화 추적 번호 추가** – 구글 등록 번호를 **Hyperclass 추적 번호**로 교체하여 어떤 광고와 등록이 가장 많은 리드를 가져오는지 확인하세요.
-**[통화 추적 번호 설정하는 방법]([call-tracking-and-missed-call-text-back-through-google-business-profile](call-tracking-and-missed-call-text-back-through-google-business-profile.md))**
+**[통화 추적 번호 설정하는 방법](../../41-평판-리뷰/Review-Requests/call-tracking-and-missed-call-text-back-through-google-business-profile.md)**
 
 #### ✅ **구글 리뷰 자동화** – **더 많은 5성 리뷰 = 더 높은 구글 순위 = 더 많은 HVAC 서비스 전화.**
-**[구글 리뷰 자동화하는 방법]([how-to-setup-workflow-triggers-for-google-and-facebook-reviews](how-to-setup-workflow-triggers-for-google-and-facebook-reviews.md))**
+**[구글 리뷰 자동화하는 방법](../../41-평판-리뷰/Review-Requests/how-to-setup-workflow-triggers-for-google-and-facebook-reviews.md)**
 
 #### ✅ **주간 업데이트 게시** – 구글은 **활발한 사업체를 더 높은 순위**에 놓습니다—**Hyperclass의 소셜 포스팅 도구**를 사용해서 자동으로 게시물을 예약하세요.
-**[구글 마이 비즈니스 프로필 최적화하는 방법](how-to-integrate-your-google-business-profile-formerly-gmb-into-the-crm.md)**
+**[구글 마이 비즈니스 프로필 최적화하는 방법](../../11-설정/기타/how-to-integrate-your-google-business-profile-formerly-gmb-into-the-crm.md)**
 
 ---
 
@@ -82,23 +82,23 @@ HVAC 일자리의 75%는 먼저 응답한 업체가 가져갑니다.
 ### **먼저 해야 할 일:**
 
 #### ✅ **웹사이트에 채팅 위젯(Chat Widget) 설정** – 고객이 콜백을 기다리는 대신 **직접 문자를 보낼** 수 있도록.
-[채팅 위젯 설정하는 방법]([getting-started-with-chat-widget](getting-started-with-chat-widget.md))
+[채팅 위젯 설정하는 방법](../../06-사이트/getting-started-with-chat-widget.md)
 
 #### ✅ **부재중 전화 문자 답변 활성화** – **전화를 놓치면**, Hyperclass가 **자동으로 문자를 답장**하므로 **일자리를 절대 놓치지 않습니다**.
-[부재중 전화 문자 답변 설정하기]([where-and-how-to-configure-the-missed-call-text-back-feature](where-and-how-to-configure-the-missed-call-text-back-feature.md))
+[부재중 전화 문자 답변 설정하기](../../11-설정/서브어카운트-설정/where-and-how-to-configure-the-missed-call-text-back-feature.md)
 
 #### ✅ **즉시 후속 관리 발송** – **SMS, 이메일, 왓츠앱 응답**을 자동화해서 HVAC 리드를 놓치지 않도록.
-[반복 후속 관리 설정하기](recurring-appointments.md)
+[반복 후속 관리 설정하기](../../04-캘린더-예약/기타/recurring-appointments.md)
 
 #### ✅ **예약 링크 추가** – 고객이 콜백을 기다리지 않고 **온라인으로 서비스 전화를 예약**할 수 있도록.
 
 #### ✅ **AI를 사용해서 문의 처리** – **대화 AI(Conversation AI) 및 음성 AI(Voice AI)**가 FAQ에 답변하고, 일자리를 예약하고, 고객과 소통을 유지할 수 있습니다.
 
-[AI 기반 HVAC 후속 관리 설정하는 방법]([how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder](how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md))
+[AI 기반 HVAC 후속 관리 설정하는 방법](../../24-대학/HighLevel-How-To&#39;s/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
 
-[음성 AI 에이전트 설정하는 방법](creating-voice-ai-agents.md)
+[음성 AI 에이전트 설정하는 방법](../../13-AI-Employee/기타/creating-voice-ai-agents.md)
 
-[대화 AI 에이전트 설정하는 방법]([how-to-use-conversation-ai-to-book-appointments](how-to-use-conversation-ai-to-book-appointments.md))
+[대화 AI 에이전트 설정하는 방법](../../13-AI-Employee/Conversation-AI---Goals,-Prompts,-&-Actions/how-to-use-conversation-ai-to-book-appointments.md)
 
 ---
 
@@ -137,17 +137,17 @@ HVAC 일자리의 75%는 먼저 응답한 업체가 가져갑니다.
 #### ✅ **구글 지역 서비스 광고(LSA) 설정** – **클릭이 아닌 유효한 리드에만 비용을 지불하세요.**
 [구글 LSA 운영하는 방법](https://ads.google.com/intl/en_us/home/local-services-ads/)
 
-[LSA를 Hyperclass와 연동하는 방법]([reserve-with-google-integration-local-services-ads-lsa-](reserve-with-google-integration-local-services-ads-lsa-.md))
+[LSA를 Hyperclass와 연동하는 방법](../../04-캘린더-예약/캘린더-연동/reserve-with-google-integration-local-services-ads-lsa-.md)
 
 #### ✅ **페이스북 리드 광고 운영** – **HVAC 수리나 계절별 유지보수가 필요한 지역 주택 소유자를 타겟팅하세요.**
-[Hyperclass에서 페이스북 광고 운영하는 방법](create-new-ad-campaign-in-ad-manager.md)
+[Hyperclass에서 페이스북 광고 운영하는 방법](../../10-마케팅/기타/create-new-ad-campaign-in-ad-manager.md)
 
 #### ✅ **리타겟팅 광고 활성화** – **웹사이트를 방문했지만 아직 예약하지 않은** 사람들에게 광고를 보여주세요.
 ✅ **광고에서 통화 추적 사용** – **어떤 광고가 가장 많은 일자리를 가져오는지** 정확히 알아보세요.
-[통화 추적 번호 풀 설정하기]([how-to-set-up-call-tracking-number-pool-](how-to-set-up-call-tracking-number-pool-.md))
+[통화 추적 번호 풀 설정하기](../../15-전화-시스템/통화/how-to-set-up-call-tracking-number-pool-.md)
 
 #### ✅ **작게 시작($10-$20/일)해서 확대하기** – 먼저 테스트하고, **결과를 바탕으로** 예산을 늘리세요.
-**[전환되는 HVAC 광고 운영하는 방법]([overview-of-ad-manager](overview-of-ad-manager.md))**
+**[전환되는 HVAC 광고 운영하는 방법](../../10-마케팅/Getting-Started-w/-Ad-Manager/overview-of-ad-manager.md)**
 
 ---
 
@@ -163,14 +163,14 @@ HVAC 일자리의 75%는 먼저 응답한 업체가 가져갑니다.
 
 #### ✅ **구글 마이 비즈니스에 주간 게시** – 구글은 **활발한 HVAC 사업체를 더 높은 순위**에 놓습니다.
 ✅ **페이스북 및 인스타그램을 사용해서 작업 사진 공유** – **시공 전후, 고객 추천사, HVAC 시스템 설치** 사진은 높은 참여도를 얻습니다.
-**[소셜 미디어에서 리뷰를 게시물로 공유하는 방법](share-your-reviews-as-posts-on-social-media-using-social-planner.md)**
+**[소셜 미디어에서 리뷰를 게시물로 공유하는 방법](../../10-마케팅/기타/share-your-reviews-as-posts-on-social-media-using-social-planner.md)**
 
 #### ✅ **블로그 및 뉴스레터 시작** – **HVAC 유지보수 팁, 에너지 효율성 해킹, 계절별 HVAC 체크리스트**를 공유하세요.
-**[HVAC용 블로그 만드는 방법]([how-to-create-a-blog-](how-to-create-a-blog-.md))**
+**[HVAC용 블로그 만드는 방법](../../06-사이트/how-to-create-a-blog-.md)**
 
-[블로그용 RSS 피드 설정하는 방법](how-to-set-up-an-rss-feed-for-blogs.md)
+[블로그용 RSS 피드 설정하는 방법](../../06-사이트/기타/how-to-set-up-an-rss-feed-for-blogs.md)
 
-[RSS 이메일 캠페인 설정하는 방법]([how-to-send-rss-email-campaign-s-](how-to-send-rss-email-campaign-s-.md))
+[RSS 이메일 캠페인 설정하는 방법](../../10-마케팅/RSS-Guide/how-to-send-rss-email-campaign-s-.md)
 
 #### ✅ **소셜 미디어 스케줄링 사용** – **Hyperclass가 자동으로 게시**하므로, **추가 작업 없이 온라인에서 활발하게** 유지할 수 있습니다.
 효과적인 소셜 미디어 및 콘텐츠 전략 분석하는 방법
@@ -193,15 +193,15 @@ HVAC 일자리의 75%는 먼저 응답한 업체가 가져갑니다.
 
 #### **[완전 공략: 구글 순위 높이고 더 많은 HVAC 일자리 예약하기](full-blast-how-to-rank-higher-on-google-book-more-hvac-jobs.md)**
 
-#### **[만족한 고객 = 더 많은 일자리: HVAC 고객 유지 및 추천 해킹]([happy-customers-more-jobs-hvac-retention-referral-hacks](happy-customers-more-jobs-hvac-retention-referral-hacks.md))**
+#### **[만족한 고객 = 더 많은 일자리: HVAC 고객 유지 및 추천 해킹](happy-customers-more-jobs-hvac-retention-referral-hacks.md)**
 
-#### **[광고로 뜨거워지기: 리드 생성 및 사업 성장을 위한 궁극적 청사진]([heat-up-your-ads-the-ultimate-blueprint-for-lead-generation-business-growth](heat-up-your-ads-the-ultimate-blueprint-for-lead-generation-business-growth.md))**
+#### **[광고로 뜨거워지기: 리드 생성 및 사업 성장을 위한 궁극적 청사진](heat-up-your-ads-the-ultimate-blueprint-for-lead-generation-business-growth.md)**
 
-#### **[HVAC 소셜 미디어 장악: 사업을 뜨겁게 하고 더 많은 리드 유도하기]([hvac-social-media-domination-heat-up-your-business-drive-more-leads](hvac-social-media-domination-heat-up-your-business-drive-more-leads.md))**
+#### **[HVAC 소셜 미디어 장악: 사업을 뜨겁게 하고 더 많은 리드 유도하기](hvac-social-media-domination-heat-up-your-business-drive-more-leads.md)**
 
-#### **[HVAC 콘텐츠 마스터리: 어디서, 언제, 어떻게!! 전환 및 성장 해킹!]([hvac-content-mastery-where-when-how-conversion-and-growth-hacks-](hvac-content-mastery-where-when-how-conversion-and-growth-hacks-.md))**
+#### **[HVAC 콘텐츠 마스터리: 어디서, 언제, 어떻게!! 전환 및 성장 해킹!](hvac-content-mastery-where-when-how-conversion-and-growth-hacks-.md)**
 
-#### [HVAC 일일 운영 자동화: 최대 효율성을 위한 확실한 청사진]([hvac-daily-operations-automation-the-definitive-blueprint-for-maximum-efficiency](hvac-daily-operations-automation-the-definitive-blueprint-for-maximum-efficiency.md))
+#### [HVAC 일일 운영 자동화: 최대 효율성을 위한 확실한 청사진](hvac-daily-operations-automation-the-definitive-blueprint-for-maximum-efficiency.md)
 
 ### 지금 시작하세요 – [Hyperclass에 가입하기](https://www.gohighlevel.com/freetrial16?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook)로 HVAC 사업을 더 빠르게 성장시키세요!
 

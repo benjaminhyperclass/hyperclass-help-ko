@@ -159,7 +159,7 @@ Q: 일시정지된 구독이 계산되나요?
 
 ### **관련 문서**
 
-- [Hyperclass Agency Pro 플랜으로 업그레이드하는 방법($497 SaaS 플랜)](how-to-upgrade-to-highlevel-s-agency-pro-plan-497-saas-plan-.md)
+- [Hyperclass Agency Pro 플랜으로 업그레이드하는 방법($497 SaaS 플랜)](../../11-설정/how-to-upgrade-to-highlevel-s-agency-pro-plan-497-saas-plan-.md)
 - [Hyperclass vs Profitwell vs Stripe MRR](highlevel-vs-profitwell-vs-stripe-mrr.md)
 - [리빌링을 위한 에이전시 대시보드](agency-dashboard-for-rebilling.md)
 - SaaS 플랜 생성, 판매 및 고객 온보딩 가이드

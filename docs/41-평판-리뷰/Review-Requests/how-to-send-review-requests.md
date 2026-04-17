@@ -34,10 +34,10 @@
 
 ## 리뷰 요청을 시작하기 전 필수 준비사항
 
-- Google 리뷰 링크를 보내려면 먼저 GMB를 연동해야 합니다 ([가이드 보기](how-to-integrate-google-business-profile-gbp-with-highlevel.md)). 또는 타사 리뷰 링크를 사용하고 싶다면 [여기를 클릭하세요](reputation-management-how-to-customize-the-review-request-messages-sms-email-.md)
+- Google 리뷰 링크를 보내려면 먼저 GMB를 연동해야 합니다 ([가이드 보기](../../42-통합/Google-Integrations/how-to-integrate-google-business-profile-gbp-with-highlevel.md). 또는 타사 리뷰 링크를 사용하고 싶다면 [여기를 클릭하세요](../../03-대화/기타/reputation-management-how-to-customize-the-review-request-messages-sms-email-.md)
 - [](https://help.gohighlevel.com/a/solutions/articles/48000980328?portalId=48000045315#:~:text=email%20example%20here-,How%20to%20enable%20(Toggle%20on)%20the%20review%20request%20feature%20throughout%20the%20system,-Please%20toggle%20the)[](https://help.gohighlevel.com/a/solutions/articles/48000980328?portalId=48000045315#:~:text=email%20example%20here-,How%20to%20enable%20(Toggle%20on)%20the%20review%20request%20feature%20throughout%20the%20system,-Please%20toggle%20the)하위 계정 설정에서 리뷰 요청 기능을 활성화(토글 켜기)해야 합니다 (가이드 보기%20the%20review%20request%20feature%20throughout%20the%20system,-Please%20toggle%20the))
-- (선택사항) 발신 리뷰 요청 메시지(SMS/이메일) 커스터마이징 ([**가이드 보기**](how-to-customize-the-review-request-messages-sms-email-.md))
-- Google 비즈니스 프로필이 완전히 연동되고 올바른 로케이션에 연결되었는지 확인하세요. ([가이드 보기](how-to-integrate-google-business-profile-gbp-with-highlevel.md))
+- (선택사항) 발신 리뷰 요청 메시지(SMS/이메일) 커스터마이징 ([**가이드 보기**](how-to-customize-the-review-request-messages-sms-email-.md)
+- Google 비즈니스 프로필이 완전히 연동되고 올바른 로케이션에 연결되었는지 확인하세요. ([가이드 보기](../../42-통합/Google-Integrations/how-to-integrate-google-business-profile-gbp-with-highlevel.md)
 
 
 ## 최대한 많은 리뷰를 받아야 하는 이유:
@@ -129,7 +129,7 @@ CRM 내에서 리뷰 요청을 보내는 방법은 세 가지가 있습니다:
 
 ### 구글 리뷰 이의제기 및 신고하는 방법
 
-잘못되었거나 스팸이라고 생각되는 Google 리뷰를 이의제기하거나 신고하려면 이 가이드의 지침을 따르세요:[]([report-a-google-review-and-check-on-report-status](report-a-google-review-and-check-on-report-status.md))[Google 리뷰 이의제기 및 이의제기 상태 확인 방법](how-to-dispute-a-google-review-and-check-on-the-dispute-status.md)
+잘못되었거나 스팸이라고 생각되는 Google 리뷰를 이의제기하거나 신고하려면 이 가이드의 지침을 따르세요:[]([report-a-google-review-and-check-on-report-status](../../07-워크플로우/기타/report-a-google-review-and-check-on-report-status.md)[Google 리뷰 이의제기 및 이의제기 상태 확인 방법](how-to-dispute-a-google-review-and-check-on-the-dispute-status.md)
 
 ---
 *원문 최종 수정: Tue, 29 Apr, 2025 at 2:45 PM*

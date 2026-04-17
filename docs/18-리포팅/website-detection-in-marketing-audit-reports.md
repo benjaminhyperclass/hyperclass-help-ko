@@ -76,10 +76,10 @@ URL은 찾았지만 탐지 시점에 사이트에 접근할 수 없었습니다(
 
 ## 관련 문서
 
-- [무료 및 프리미엄 마케팅 감사 보고서의 차이점 이해하기](understanding-the-differences-between-free-and-premium-marketing-audit-reports.md)
-- [워크플로우 액션: 마케팅 감사 보고서 생성](workflow-action-generate-marketing-audit-report.md)
-- [마케팅 감사 보고서에서 잠재 고객의 웹사이트 성과 분석](analysing-website-performance-of-a-prospect-in-the-marketing-audit-report.md)
-- [HighLevel 프로스펙팅 도구를 사용하여 리드 생성하는 방법](how-to-generate-leads-using-the-highlevel-prospecting-tool.md)
+- [무료 및 프리미엄 마케팅 감사 보고서의 차이점 이해하기](../19-에이전시-뷰/Marketing-Audit-Reports/understanding-the-differences-between-free-and-premium-marketing-audit-reports.md)
+- [워크플로우 액션: 마케팅 감사 보고서 생성](../19-에이전시-뷰/Marketing-Audit-Reports/workflow-action-generate-marketing-audit-report.md)
+- [마케팅 감사 보고서에서 잠재 고객의 웹사이트 성과 분석](../19-에이전시-뷰/Marketing-Audit-Reports/analysing-website-performance-of-a-prospect-in-the-marketing-audit-report.md)
+- [HighLevel 프로스펙팅 도구를 사용하여 리드 생성하는 방법](../19-에이전시-뷰/Core-Functionality/how-to-generate-leads-using-the-highlevel-prospecting-tool.md)
 
 ---
 *원문 최종 수정: Fri, 20 Mar, 2026 at 6:48 AM*

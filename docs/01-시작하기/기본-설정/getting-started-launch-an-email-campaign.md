@@ -46,8 +46,8 @@
 
 **더 알아보기**:
 
-- [이메일 템플릿 vs 이메일 캠페인](email-templates-vs-email-campaigns.md)
-- [템플릿 라이브러리에 이메일 템플릿 추가하는 방법](how-to-add-your-email-templates-in-template-library-.md)
+- [이메일 템플릿 vs 이메일 캠페인](../../10-마케팅/Templates/email-templates-vs-email-campaigns.md)
+- [템플릿 라이브러리에 이메일 템플릿 추가하는 방법](../../10-마케팅/템플릿-라이브러리/how-to-add-your-email-templates-in-template-library-.md)
 
 **다음으로**, 템플릿을 나만의 것으로 만들기 위해 커스터마이징을 시작할 수 있습니다!
 
@@ -131,10 +131,10 @@
 
 **더 알아보기**:
 
-- [일반 이메일 캠페인 발송하는 방법 (즉시 발송 또는 예약)](how-to-send-or-schedule-a-regular-email-campaign.md)
-- [다양한 이메일 발송/전달 방법 – 즉시 발송, 예약, 배치, RSS](different-email-sending-delivery-method-s-send-now-schedule-batch-rss-schedule.md)
-- [이메일 빌더와 인라인 에디터 사용법](how-to-use-the-email-builder-and-its-in-line-editor.md)
-- [이메일 캠페인/템플릿 미리보기 및 테스트](how-to-preview-test-your-email-campaigns-templates.md)
+- [일반 이메일 캠페인 발송하는 방법 (즉시 발송 또는 예약)](../../10-마케팅/Campaign-Settings/Functionalities/how-to-send-or-schedule-a-regular-email-campaign.md)
+- [다양한 이메일 발송/전달 방법 – 즉시 발송, 예약, 배치, RSS](../../10-마케팅/Campaign-Settings/Functionalities/different-email-sending-delivery-method-s-send-now-schedule-batch-rss-schedule.md)
+- [이메일 빌더와 인라인 에디터 사용법](../../10-마케팅/Email-Builder-Capabilities/how-to-use-the-email-builder-and-its-in-line-editor.md)
+- [이메일 캠페인/템플릿 미리보기 및 테스트](../../10-마케팅/Campaign-Settings/Functionalities/how-to-preview-test-your-email-campaigns-templates.md)
 
 뿌듯하신가요? 훌륭해요! **다음으로**, 고객들이 어떻게 반응했는지 캠페인 분석을 검토해보시는 것을 고려해보세요.
 

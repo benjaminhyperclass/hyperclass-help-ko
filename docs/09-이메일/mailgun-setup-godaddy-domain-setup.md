@@ -218,9 +218,9 @@ Mailgun으로 돌아가서 호스트 이름을 복사하세요. 조금 복잡하
 
 ![DNS 설정 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284382101/original/PQecmA9d0ihGiF3VchOhZL1VKMrOZmUvDQ.png?1677634628)
 
-모든 DNS 레코드를 추가하고 확인이 완료되면, [Mailgun API 키를 어디서 찾아서 Hyperclass에 입력하는지](mailgun-private-api-key-setup.md) 확인할 수 있습니다.
+모든 DNS 레코드를 추가하고 확인이 완료되면, [Mailgun API 키를 어디서 찾아서 Hyperclass에 입력하는지](메일건/mailgun-private-api-key-setup.md) 확인할 수 있습니다.
 
-그 다음, 모든 것이 작동하는지 테스트 이메일을 보내볼 수 있습니다! [대화에서 테스트 이메일을 보내는 방법](how-to-send-a-test-email-in-the-conversation.md)을 배우려면 여기를 클릭하세요.
+그 다음, 모든 것이 작동하는지 테스트 이메일을 보내볼 수 있습니다! [대화에서 테스트 이메일을 보내는 방법](트러블슈팅/how-to-send-a-test-email-in-the-conversation.md)을 배우려면 여기를 클릭하세요.
 
 ---
 *원문 최종 수정: 2023년 4월 14일*

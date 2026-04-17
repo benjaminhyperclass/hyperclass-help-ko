@@ -32,7 +32,7 @@
 
 워크플로우의 자동화는 항상 "특정 레코드를 기준으로" 실행됩니다. 신규 제휴 판매 트리거의 경우, 워크플로우는 일반적으로 고객/구매자 측에서 시작되므로, 이메일/SMS 발송 같은 표준 액션은 제휴 마케터가 아닌 구매자 연락처에게 메시지를 보냅니다.
 
-제휴 마케터와 소통하려면 (축하, 알림, 상태 업데이트) 제휴 전용 워크플로우 액션을 사용하세요 (예: 제휴 마케터에게 이메일 발송). [자세히 보기](automate-affiliate-sales-follow-ups-with-the-new-affiliate-sale-trigger.md).
+제휴 마케터와 소통하려면 (축하, 알림, 상태 업데이트) 제휴 전용 워크플로우 액션을 사용하세요 (예: 제휴 마케터에게 이메일 발송). [자세히 보기](../../10-마케팅/Affiliate-Manager-Automation/automate-affiliate-sales-follow-ups-with-the-new-affiliate-sale-trigger.md).
 
 ## 사용 가능한 필터
 

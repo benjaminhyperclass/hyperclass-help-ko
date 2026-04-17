@@ -82,7 +82,7 @@
 
 나중에 "위젯이 표시되지 않음" 상황을 피하기 위해 설정 전 다음 기본 사항을 확인하세요.
 
-- 하위 계정에 최소 하나의 채팅 위젯을 이미 생성해둬야 합니다([채팅 위젯 시작하기]([getting-started-with-chat-widget](getting-started-with-chat-widget.md)) 및 [올인원 채팅 위젯 사용법]([how-to-use-the-all-in-one-chat-widget](how-to-use-the-all-in-one-chat-widget.md)) 참고).
+- 하위 계정에 최소 하나의 채팅 위젯을 이미 생성해둬야 합니다([채팅 위젯 시작하기](../../06-사이트/getting-started-with-chat-widget.md) 및 [올인원 채팅 위젯 사용법](../../06-사이트/채팅-위젯/how-to-use-the-all-in-one-chat-widget.md) 참고).
 
 - 하위 계정의 클라이언트 포털 설정에 접근할 수 있어야 합니다.
 

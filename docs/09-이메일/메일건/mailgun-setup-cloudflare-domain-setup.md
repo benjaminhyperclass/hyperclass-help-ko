@@ -222,7 +222,7 @@ E. Save를 클릭합니다.
 
 모든 DNS 레코드를 추가하고 검증을 완료하면, [Mailgun API Key - Where to Find in Mailgun & Put in HighLevel](mailgun-private-api-key-setup.md)에서 Mailgun API 키를 가져올 수 있습니다.
 
-그런 다음 모든 것이 작동하는지 확인하기 위해 테스트 이메일을 보낼 수 있습니다! [대화에서 테스트 이메일을 보내는 방법](how-to-send-a-test-email-in-the-conversation.md)을 클릭하여 자세히 알아보세요.
+그런 다음 모든 것이 작동하는지 확인하기 위해 테스트 이메일을 보낼 수 있습니다! [대화에서 테스트 이메일을 보내는 방법](../트러블슈팅/how-to-send-a-test-email-in-the-conversation.md)을 클릭하여 자세히 알아보세요.
 
 ---
 *원문 최종 수정: Tue, 28 Feb, 2023 at 10:30 PM*

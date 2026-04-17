@@ -10,7 +10,7 @@ Hyperclass 내에 새로운 AI 기반 어시스턴트인 Ask AI를 출시하게 
 
 Ask AI는 Hyperclass 내장 어시스턴트 역할을 합니다. 몇 가지 핵심 기능부터 시작해서 시간이 지나면서 계속해서 더 많은 기능을 추가할 예정입니다.
 
-**중요**: 완전히 새로운 Ask AI 경험이 현재 Labs(연구실)에서 제공됩니다. 보이지 않는다면 관리자에게 Agency Settings(에이전시 설정) > Labs(연구실)에서 활성화를 요청하세요. 자세한 내용은 [Labs 기능 - 전체 개요]([labs-features-complete-overview](labs-features-complete-overview.md))를 참고하세요.
+**중요**: 완전히 새로운 Ask AI 경험이 현재 Labs(연구실)에서 제공됩니다. 보이지 않는다면 관리자에게 Agency Settings(에이전시 설정) > Labs(연구실)에서 활성화를 요청하세요. 자세한 내용은 [Labs 기능 - 전체 개요](../19-에이전시-뷰/Agency-Settings/labs-features-complete-overview.md)를 참고하세요.
 
 ---
 
@@ -38,7 +38,7 @@ Ask AI가 현재 지원하는 기능들을 자세히 살펴보겠습니다:
 
 - **질문 답변 또는 아이디어 제안**: 캠페인 영감이 필요하시나요? 블로그 CTA에 대한 아이디어를 원하시나요? Ask AI에게 직접 물어보세요.
 
-- **Hyperclass 내 액션 실행 (MCP 기반)**: Ask AI는 권한에 따라 채팅에서 레코드 생성 또는 업데이트, 예약 일정 변경, 데이터 가져오기, 기회 일괄 업데이트 등 앱 내 지원 액션을 실행할 수 있습니다. 예시와 가이드라인은 [Ask AI 내 MCP 서버 사용 방법]([how-to-use-the-mcp-server-within-ask-ai](how-to-use-the-mcp-server-within-ask-ai.md))을 참고하세요.
+- **Hyperclass 내 액션 실행 (MCP 기반)**: Ask AI는 권한에 따라 채팅에서 레코드 생성 또는 업데이트, 예약 일정 변경, 데이터 가져오기, 기회 일괄 업데이트 등 앱 내 지원 액션을 실행할 수 있습니다. 예시와 가이드라인은 [Ask AI 내 MCP 서버 사용 방법](Ask-AI/how-to-use-the-mcp-server-within-ask-ai.md)을 참고하세요.
 
 ---
 

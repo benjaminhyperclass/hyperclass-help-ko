@@ -139,7 +139,7 @@ Hyperclass 대시보드 내의 커뮤니티(Communities) 섹션에 접근하는 
 
 4. 미리보기하고 저장하세요.
 
-**중요**: 커뮤니티 알림이 어느 이메일 주소에서 발송되는지 궁금하시다면, 하위 계정 설정(Subaccount Settings) 아래 이메일 서비스(Email services) 탭에서 선택한 기본 이메일 주소가 됩니다. 더 자세한 내용은 [이메일 발송 가이드: 이메일 모범 사례 및 이메일 워밍업]([email-sending-guide-email-best-practices-email-warm-up](email-sending-guide-email-best-practices-email-warm-up.md))을 참고하세요.
+**중요**: 커뮤니티 알림이 어느 이메일 주소에서 발송되는지 궁금하시다면, 하위 계정 설정(Subaccount Settings) 아래 이메일 서비스(Email services) 탭에서 선택한 기본 이메일 주소가 됩니다. 더 자세한 내용은 [이메일 발송 가이드: 이메일 모범 사례 및 이메일 워밍업](../09-이메일/LC-이메일/email-sending-guide-email-best-practices-email-warm-up.md)을 참고하세요.
 
 **커뮤니티 설정 커스터마이징**
 

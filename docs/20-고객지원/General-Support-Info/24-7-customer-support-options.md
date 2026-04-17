@@ -20,7 +20,7 @@
 
 ⭐️ 프리미엄 지원으로 업그레이드하세요 ⭐️
 고객지원팀으로부터 더 빠른 서비스를 받으시려면, 계정을 업그레이드하여 프리미엄 고객 지원을 받으실 수 있습니다!
-[프리미엄 지원에 대해 자세히 알아보기](overview-of-premium-customer-support.md)
+[프리미엄 지원에 대해 자세히 알아보기](../Premium-Support-Upgrade/overview-of-premium-customer-support.md)
 
 # 24시간 지원 접근 방법
 
@@ -127,7 +127,7 @@
 
 에이전시 하이퍼클래스 이메일이 연락하기에 가장 좋은 이메일이 아니라면 지원팀에 알려주세요. 이메일이 여러 에이전시와 연결되어 있다면 올바른 에이전시 이름과 해당 계정의 관계 번호를 제공하세요.
 
-전화 지원팀을 위해 [에이전시 관계 번호](how-do-i-find-my-agency-s-relationship-number-.md)와 에이전시 로그인 이메일을 준비해 주세요.
+전화 지원팀을 위해 [에이전시 관계 번호](../../11-설정/에이전시-설정/how-do-i-find-my-agency-s-relationship-number-.md)와 에이전시 로그인 이메일을 준비해 주세요.
 
 # 문제해결 및 FAQ
 

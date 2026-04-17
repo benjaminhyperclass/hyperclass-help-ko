@@ -61,13 +61,13 @@
 **[Google Business Profile 설정 방법](https://support.google.com/business/answer/3038177?hl=en)**
 
 #### ✅ **통화 추적 번호 추가** – 구글 리스팅 번호를 **Hyperclass 추적 번호로 교체**하여 어떤 광고와 리스팅이 가장 많은 리드를 가져오는지 확인하세요.
-**[통화 추적 번호 설정 방법](call-tracking-and-missed-call-text-back-through-google-business-profile.md)**
+**[통화 추적 번호 설정 방법](../../41-평판-리뷰/Review-Requests/call-tracking-and-missed-call-text-back-through-google-business-profile.md)**
 
 #### ✅ **구글 리뷰 자동화** – **더 많은 5성 리뷰 = 더 높은 구글 순위 = 더 많은 냉난방 서비스 콜.**
-**[구글 리뷰 자동화 방법](how-to-setup-workflow-triggers-for-google-and-facebook-reviews.md)**
+**[구글 리뷰 자동화 방법](../../41-평판-리뷰/Review-Requests/how-to-setup-workflow-triggers-for-google-and-facebook-reviews.md)**
 
 #### ✅ **주간 업데이트 게시** – 구글은 **활동적인 사업을 더 높게 순위**를 매깁니다—**Hyperclass의 소셜 게시 도구**를 사용하여 게시물을 자동으로 예약하세요.
-**[Google Business Profile 최적화 방법](how-to-integrate-your-google-business-profile-formerly-gmb-into-the-crm.md)**
+**[Google Business Profile 최적화 방법](../../11-설정/기타/how-to-integrate-your-google-business-profile-formerly-gmb-into-the-crm.md)**
 
 ---
 
@@ -82,21 +82,21 @@
 ### **먼저 해야 할 일:**
 
 #### ✅ **웹사이트에 채팅 위젯 설정** – 고객들이 콜백을 기다리는 대신 **직접 문자를 보낼 수 있도록** 하세요.
-[채팅 위젯 설정 방법](getting-started-with-chat-widget.md)
+[채팅 위젯 설정 방법](../../06-사이트/getting-started-with-chat-widget.md)
 
 #### ✅ **놓친 통화 문자 답변 활성화** – **통화를 놓치면**, Hyperclass가 **자동으로 문자를 보내**어 **일자리를 놓치지 않게** 합니다.
-[놓친 통화 문자 답변 설정](where-and-how-to-configure-the-missed-call-text-back-feature.md)
+[놓친 통화 문자 답변 설정](../../11-설정/서브어카운트-설정/where-and-how-to-configure-the-missed-call-text-back-feature.md)
 
 #### ✅ **즉시 후속 조치 발송** – **SMS, 이메일, WhatsApp 응답을 자동화**하여 냉난방 리드가 손실되지 않도록 하세요.
-[반복 후속 조치 설정](recurring-appointments.md)
+[반복 후속 조치 설정](../../04-캘린더-예약/기타/recurring-appointments.md)
 
 #### ✅ **예약 링크 추가** – 고객들이 당신의 콜백을 기다리지 않고 **온라인으로 서비스 콜을 예약**할 수 있게 하세요.
 
 #### ✅ **AI를 사용하여 문의 처리** – **Conversation AI 및 Voice AI**가 FAQ에 답변하고, 일자리를 예약하고, 고객들과의 관계를 유지할 수 있습니다.
 
-[AI 기반 냉난방 후속 조치 설정 방법](how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
-[Voice AI 에이전트 설정 방법](creating-voice-ai-agents.md)
-[Conversation AI 에이전트 설정 방법](how-to-use-conversation-ai-to-book-appointments.md)
+[AI 기반 냉난방 후속 조치 설정 방법](../../24-대학/HighLevel-How-To&#39;s/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
+[Voice AI 에이전트 설정 방법](../../13-AI-Employee/기타/creating-voice-ai-agents.md)
+[Conversation AI 에이전트 설정 방법](../../13-AI-Employee/Conversation-AI---Goals,-Prompts,-&-Actions/how-to-use-conversation-ai-to-book-appointments.md)
 
 ---
 
@@ -134,17 +134,17 @@
 
 #### ✅ **Google Local Services Ads(LSA) 설정** – **클릭이 아닌 유효한 리드에 대해서만 결제.**
 [Google LSA 실행 방법](https://ads.google.com/intl/en_us/home/local-services-ads/)
-[Hyperclass와 LSA 연동 방법](reserve-with-google-integration-local-services-ads-lsa-.md)
+[Hyperclass와 LSA 연동 방법](../../04-캘린더-예약/캘린더-연동/reserve-with-google-integration-local-services-ads-lsa-.md)
 
 #### ✅ **페이스북 리드 광고 실행** – **냉난방 수리나 계절적 유지보수가 필요한 지역 집주인을 타겟팅.**
-[Hyperclass에서 페이스북 광고 실행 방법](create-new-ad-campaign-in-ad-manager.md)
+[Hyperclass에서 페이스북 광고 실행 방법](../../10-마케팅/기타/create-new-ad-campaign-in-ad-manager.md)
 
 #### ✅ **리타겟팅 광고 활성화** – **웹사이트를 방문했지만 아직 예약하지 않은 사람들**에게 광고를 보여주세요.
 ✅ **광고에서 통화 추적 사용** – **어떤 광고가 가장 많은 일자리를 가져오는지** 정확히 알 수 있습니다.
-[통화 추적 번호 풀 설정](how-to-set-up-call-tracking-number-pool-.md)
+[통화 추적 번호 풀 설정](../../15-전화-시스템/통화/how-to-set-up-call-tracking-number-pool-.md)
 
 #### ✅ **소규모로 시작($10-$20/일), 그 다음 확장** – 먼저 테스트하고, **결과에 따라** 예산을 증가시키세요.
-**[전환되는 냉난방 광고 실행 방법](overview-of-ad-manager.md)**
+**[전환되는 냉난방 광고 실행 방법](../../10-마케팅/Getting-Started-w/-Ad-Manager/overview-of-ad-manager.md)**
 
 ---
 
@@ -160,12 +160,12 @@
 
 #### ✅ **Google Business에 주간 게시** – 구글은 **활동적인 냉난방 사업체를 더 높게 순위**를 매깁니다.
 ✅ **페이스북 및 인스타그램을 사용하여 일자리 사진 공유** – **전후 사진, 고객 추천서, 냉난방 시스템 설치**는 높은 참여를 얻습니다.
-**[소셜 미디어에서 리뷰 공유 방법](share-your-reviews-as-posts-on-social-media-using-social-planner.md)**
+**[소셜 미디어에서 리뷰 공유 방법](../../10-마케팅/기타/share-your-reviews-as-posts-on-social-media-using-social-planner.md)**
 
 #### ✅ **블로그 및 뉴스레터 시작** – **냉난방 유지보수 팁, 에너지 효율 해킹, 계절별 냉난방 체크리스트**를 공유하세요.
-**[냉난방용 블로그 생성 방법](how-to-create-a-blog-.md)**
-[블로그용 RSS 피드 설정 방법](how-to-set-up-an-rss-feed-for-blogs.md)
-[RSS 이메일 캠페인 설정 방법](how-to-send-rss-email-campaign-s-.md)
+**[냉난방용 블로그 생성 방법](../../06-사이트/how-to-create-a-blog-.md)**
+[블로그용 RSS 피드 설정 방법](../../06-사이트/기타/how-to-set-up-an-rss-feed-for-blogs.md)
+[RSS 이메일 캠페인 설정 방법](../../10-마케팅/RSS-Guide/how-to-send-rss-email-campaign-s-.md)
 
 #### ✅ **소셜 미디어 스케줄링 사용** – **Hyperclass가 자동으로 게시**하므로, **추가 작업 없이 온라인에서 활성 상태를 유지**할 수 있습니다.
 효과적인 소셜 미디어 및 콘텐츠 전략 분석 방법
@@ -186,17 +186,17 @@
 
 세분화해서 설명드리면 - 
 
-#### **[풀 블라스트: 구글에서 더 높은 순위를 차지하고 더 많은 냉난방 일자리를 예약하는 방법](full-blast-how-to-rank-higher-on-google-book-more-hvac-jobs.md)**
+#### **[풀 블라스트: 구글에서 더 높은 순위를 차지하고 더 많은 냉난방 일자리를 예약하는 방법](../../26-산업-가이드/HVAC/full-blast-how-to-rank-higher-on-google-book-more-hvac-jobs.md)**
 
-#### **[만족한 고객 = 더 많은 일자리: 냉난방 고객 유지 및 추천 해킹](happy-customers-more-jobs-hvac-retention-referral-hacks.md)**
+#### **[만족한 고객 = 더 많은 일자리: 냉난방 고객 유지 및 추천 해킹](../../26-산업-가이드/HVAC/happy-customers-more-jobs-hvac-retention-referral-hacks.md)**
 
-#### **[광고 열기: 리드 생성 및 사업 성장을 위한 궁극의 청사진](heat-up-your-ads-the-ultimate-blueprint-for-lead-generation-business-growth.md)**
+#### **[광고 열기: 리드 생성 및 사업 성장을 위한 궁극의 청사진](../../26-산업-가이드/HVAC/heat-up-your-ads-the-ultimate-blueprint-for-lead-generation-business-growth.md)**
 
-#### **[냉난방 소셜 미디어 장악: 사업을 뜨겁게 하고 더 많은 리드 유도](hvac-social-media-domination-heat-up-your-business-drive-more-leads.md)**
+#### **[냉난방 소셜 미디어 장악: 사업을 뜨겁게 하고 더 많은 리드 유도](../../26-산업-가이드/HVAC/hvac-social-media-domination-heat-up-your-business-drive-more-leads.md)**
 
-#### **[냉난방 콘텐츠 마스터리: 어디서, 언제, 어떻게!! 전환 및 성장 해킹!](hvac-content-mastery-where-when-how-conversion-and-growth-hacks-.md)**
+#### **[냉난방 콘텐츠 마스터리: 어디서, 언제, 어떻게!! 전환 및 성장 해킹!](../../26-산업-가이드/HVAC/hvac-content-mastery-where-when-how-conversion-and-growth-hacks-.md)**
 
-#### [냉난방 일일 운영 자동화: 최대 효율성을 위한 확정적 청사진](hvac-daily-operations-automation-the-definitive-blueprint-for-maximum-efficiency.md)
+#### [냉난방 일일 운영 자동화: 최대 효율성을 위한 확정적 청사진](../../26-산업-가이드/HVAC/hvac-daily-operations-automation-the-definitive-blueprint-for-maximum-efficiency.md)
 
 ### 오늘 시작하세요 – [Hyperclass 가입하기](https://www.gohighlevel.com/freetrial16?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook)로 냉난방 사업을 더 빠르게 성장시키세요!
 

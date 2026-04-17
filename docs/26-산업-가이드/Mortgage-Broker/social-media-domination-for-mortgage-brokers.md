@@ -107,7 +107,7 @@
 ✅ **고객 추천**: 대출 완료일 성공 사례 동영상 클립
 ✅ **교육 콘텐츠**: "2-1 바이다운이 무엇이고 구매자 승리에 어떻게 도움이 되는가?"
 
-[기존 템플릿을 사용한 광고 캠페인 생성 방법]([ad-manager-create-ad-campaigns-using-templates](ad-manager-create-ad-campaigns-using-templates.md))
+[기존 템플릿을 사용한 광고 캠페인 생성 방법](../../10-마케팅/Ad-Campaign-Creation-and-Management/ad-manager-create-ad-campaigns-using-templates.md)
 
 ### 2.2 해시태그 및 태그 활용
 
@@ -145,7 +145,7 @@
 | 소규모 지점 | $25/일 (~$750/월) |
 | 다중 대출담당자 사무소 | $50+/일 (~$1500+/월) |
 
-[효과적인 광고 예산 관리 방법]([ad-manager-campaign-budget-definition](ad-manager-campaign-budget-definition.md))
+[효과적인 광고 예산 관리 방법](../../10-마케팅/Ad-Campaign-Creation-and-Management/ad-manager-campaign-budget-definition.md)
 
 ## 4단계: Hyperclass로 모든 과정 자동화
 

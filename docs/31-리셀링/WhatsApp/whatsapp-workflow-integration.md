@@ -122,7 +122,7 @@
 
 8단계: + 버튼 선택 > ACTION NAME: WhatsApp > SELECT WHATSAPP TEMPLATE : None - Manual Text(없음 - 수동 텍스트)
 
-참고: 고객이 답변하여 [무료 진입점 대화](whatsapp-pricing-and-billing-full-guide.md)가 시작되었으므로 **추가 비용 없이** 자유 텍스트 메시지를 보낼 수 있습니다.
+참고: 고객이 답변하여 [무료 진입점 대화](../../08-결제/기타/whatsapp-pricing-and-billing-full-guide.md)가 시작되었으므로 **추가 비용 없이** 자유 텍스트 메시지를 보낼 수 있습니다.
 
 ![수동 텍스트 메시지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155022252040/original/3Z38eC0Lhwi99VfQI-axw40FNEgjjjQPWQ.png?1709621441)
 

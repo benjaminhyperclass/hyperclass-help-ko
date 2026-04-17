@@ -55,7 +55,7 @@ Number Intelligence는 통화 기록과 전화 경험에 네트워크 레벨 신
 
 - **활성화 위치:** **Settings(설정) → Phone System(전화 시스템) → Additional Settings(추가 설정) → Number Intelligence** (하위 계정).
 
-- **범위 및 참고사항:** 스팸 탐지/발신자 이름 조회 가용성과 요금은 Number Intelligence 아티클에 문서화되어 있습니다. 요금은 조회/이벤트당 사용량 기반입니다. 국가별로 가용성이 다를 수 있으며, 스팸 탐지는 미국에서 가장 효과적입니다. (자세한 정보는 이 아티클을 참조하세요: [Number Intelligence - 스팸 탐지, 발신자 ID 및 SMS 검증](number-intelligence-spam-detection-caller-id-sms-validation.md))
+- **범위 및 참고사항:** 스팸 탐지/발신자 이름 조회 가용성과 요금은 Number Intelligence 아티클에 문서화되어 있습니다. 요금은 조회/이벤트당 사용량 기반입니다. 국가별로 가용성이 다를 수 있으며, 스팸 탐지는 미국에서 가장 효과적입니다. (자세한 정보는 이 아티클을 참조하세요: [Number Intelligence - 스팸 탐지, 발신자 ID 및 SMS 검증](../number-intelligence-spam-detection-caller-id-sms-validation.md)
 
 - **작동 확인:** 통화 기록과 지원되는 다이얼러 뷰에서 수신 통화에 **스팸 가능성** 표시를 찾아보세요.
 
@@ -184,8 +184,8 @@ Number Intelligence는 통화 기록과 전화 경험에 네트워크 레벨 신
 - 발행하세요.
 
 더 자세한 정보는 이 도움말 아티클들을 참조하세요:
-1. [Call Details 워크플로우 트리거]([workflow-trigger-call-details](workflow-trigger-call-details.md))
-2. [Enable/Disable DND 워크플로우 액션]([workflow-action-dnd-contact](workflow-action-dnd-contact.md))
+1. [Call Details 워크플로우 트리거](../통화/workflow-trigger-call-details.md)
+2. [Enable/Disable DND 워크플로우 액션](../../07-워크플로우/Contact-Workflow-Actions/workflow-action-dnd-contact.md)
 
 ![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064902942/original/fCYl4HaMFO821RnbJ6213bX2XwpJAN_54w.png?1771006428)
 
@@ -194,7 +194,7 @@ Number Intelligence는 통화 기록과 전화 경험에 네트워크 레벨 신
 ### **4단계 — IVR 워크플로우 사용**
 
 이 아티클에서는 중요한 단계만 일부 제공합니다. 더 자세한 내용은 아래 도움말 아티클을 참조하세요:
-[대화형 음성 응답 (IVR) 가이드 - 트리거 및 액션]([interactive-voice-response-ivr-guide-triggers-actions](interactive-voice-response-ivr-guide-triggers-actions.md))
+[대화형 음성 응답 (IVR) 가이드 - 트리거 및 액션](../../07-워크플로우/interactive-voice-response-ivr-guide-triggers-actions.md)
 
 - 새로운 **워크플로우**를 만들고 **Start IVR Trigger(IVR 시작 트리거)**를 선택하세요.
 

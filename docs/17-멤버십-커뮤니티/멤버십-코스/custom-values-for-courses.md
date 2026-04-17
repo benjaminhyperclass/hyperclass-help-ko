@@ -10,7 +10,7 @@
 
 이제 강의 콘텐츠를 그 어느 때보다 개인화할 수 있습니다! 커스텀 값(Custom Values)을 사용하면 각 수강생에게 맞춤형 경험을 제공할 수 있어요.
 
-커스텀 값: [커스텀 값 사용 방법]([how-to-use-custom-values](how-to-use-custom-values.md))
+커스텀 값: [커스텀 값 사용 방법](../../23-레거시-자동화/Logic-&amp;-Fulfillment/how-to-use-custom-values.md)
 
 ### **커스텀 값의 유형:**
 

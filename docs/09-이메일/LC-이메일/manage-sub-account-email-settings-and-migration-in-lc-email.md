@@ -133,7 +133,7 @@ Agency Settings(에이전시 설정) → Email Services(이메일 서비스) →
 
 ### **에이전시를 LC 이메일로 마이그레이션하기**
 
-관련 문서: [에이전시를 LC 이메일로 마이그레이션하는 방법](how-to-migrate-my-agency-over-to-lc-email.md)
+관련 문서: [에이전시를 LC 이메일로 마이그레이션하는 방법](../how-to-migrate-my-agency-over-to-lc-email.md)
 
 ---
 *원문 최종 수정: Tue, 21 Jan, 2025 at 7:18 PM*

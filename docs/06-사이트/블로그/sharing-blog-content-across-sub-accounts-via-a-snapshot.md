@@ -21,7 +21,7 @@
 
 - Agency view(에이전시 보기) > Snapshots(스냅샷)로 이동하세요
 
-- 'Refresh the snapshot(스냅샷 새로고침)' ([가이드 보기](refresh-or-update-snapshots.md)) 또는 'upload the snapshot(스냅샷 업로드)' ([가이드 보기](pushing-loading-snapshot-updates-to-client-accounts.md))
+- 'Refresh the snapshot(스냅샷 새로고침)' ([가이드 보기](../../19-에이전시-뷰/Snapshots/refresh-or-update-snapshots.md) 또는 'upload the snapshot(스냅샷 업로드)' ([가이드 보기](../../19-에이전시-뷰/Snapshots/pushing-loading-snapshot-updates-to-client-accounts.md)
 
 - 확장하면 모든 블로그 이름이 선택 가능한 옵션으로 표시됩니다.
 

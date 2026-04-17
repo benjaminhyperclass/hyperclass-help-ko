@@ -88,7 +88,7 @@
 
 높은 의도의 키워드에 초점을 맞춘 일일 $25–$50부터 시작하세요.
 
-#### [부동산 중개사를 위한 PPC 캠페인 설정 방법](how-to-set-up-google-ad-conversion-actions.md)
+#### [부동산 중개사를 위한 PPC 캠페인 설정 방법](../../07-워크플로우/기타/how-to-set-up-google-ad-conversion-actions.md)
 
 ### 1.3 통화 추적 및 즉시 후속 조치 사용
 
@@ -99,9 +99,9 @@
 통계: 부동산 리드의 78%가 5분 내에 후속 조치를 하지 않으면 차가워집니다
 ✅ 문자 자동 응답은 놓친 리드의 25–35%를 복구하는 데 도움이 됩니다
 
-[새 광고 캠페인 생성 방법](create-new-ad-campaign-in-ad-manager.md)
+[새 광고 캠페인 생성 방법](../../10-마케팅/기타/create-new-ad-campaign-in-ad-manager.md)
 
-[캐러셀 광고 생성 방법](carousel-ads-in-ad-manager.md)
+[캐러셀 광고 생성 방법](../../10-마케팅/Ad-Campaign-Creation-and-Management/carousel-ads-in-ad-manager.md)
 
 ## 2단계: Facebook 및 Instagram 광고 운영
 
@@ -109,9 +109,9 @@
 
 미래의 고객들은 검색보다 스크롤을 더 많이 합니다. 타겟팅된 로컬 광고로 기억에 남으세요.
 
-#### [광고 관리자 개요](overview-of-ad-manager.md)
+#### [광고 관리자 개요](../../10-마케팅/Getting-Started-w/-Ad-Manager/overview-of-ad-manager.md)
 
-#### [광고 관리자와 Facebook 연결](connect-facebook-with-ad-manager.md)
+#### [광고 관리자와 Facebook 연결](../../10-마케팅/Ad-Manager-Setup-&-Configuration/connect-facebook-with-ad-manager.md)
 
 ### 2.1 Facebook에서 로컬 리드 광고 런칭
 
@@ -132,7 +132,7 @@
 사용 사례:
 올랜도의 한 중개사가 판매자 광고에 $200를 지출해 10일 만에 7건의 매물 예약을 받았습니다.
 
-[부동산 중개사를 위한 Facebook 광고 생성 방법](how-to-create-a-facebook-form-in-ad-manager.md)
+[부동산 중개사를 위한 Facebook 광고 생성 방법](../../10-마케팅/Ad-Campaign-Creation-and-Management/how-to-create-a-facebook-form-in-ad-manager.md)
 
 ### 2.2 예약하지 않은 방문자 리타겟팅
 
@@ -143,7 +143,7 @@
 
 리타겟팅은 전환율을 2.3배 향상시킵니다.
 
-[커스텀 오디언스 세그먼트를 사용한 리타겟팅 광고 설정 방법](create-custom-audiences-in-ad-manager.md)
+[커스텀 오디언스 세그먼트를 사용한 리타겟팅 광고 설정 방법](../../10-마케팅/Ad-Campaign-Creation-and-Management/create-custom-audiences-in-ad-manager.md)
 
 ### 2.3 후속 조치 자동화
 
@@ -153,7 +153,7 @@
 
 통계: 5분 내에 후속 조치를 받는 리드는 전환될 가능성이 9배 높습니다
 
-[워크플로우의 도움으로 Facebook 리드 후속 조치 자동화](workflow-trigger-facebook-lead-form-submitted.md)
+[워크플로우의 도움으로 Facebook 리드 후속 조치 자동화](../../07-워크플로우/Facebook/Instagram-Events-Workflow-Triggers/workflow-trigger-facebook-lead-form-submitted.md)
 
 ## 3단계: 자동화를 통한 리드 확보 및 전환
 
@@ -166,7 +166,7 @@
 ✅ "즉시 투어 요청"
 ✅ "사전 승인 상담"
 
-[부동산 중개사를 위한 채팅 위젯 설정 방법](getting-started-with-chat-widget.md)
+[부동산 중개사를 위한 채팅 위젯 설정 방법](../../06-사이트/getting-started-with-chat-widget.md)
 
 ### 3.2 문자 리드 캠페인 운영
 
@@ -188,7 +188,7 @@
 - 최고 성과 광고에 예산을 재배정하세요
 - 성과가 낮은 광고를 자동으로 일시정지하세요
 
-#### [부동산 중개사 광고를 위한 통화 추적 설정 방법](how-to-set-up-call-tracking-number-pool-.md)
+#### [부동산 중개사 광고를 위한 통화 추적 설정 방법](../../15-전화-시스템/통화/how-to-set-up-call-tracking-number-pool-.md)
 
 ### 4.2 더 나은 결과를 위한 광고 A/B 테스트
 

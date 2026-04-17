@@ -90,7 +90,7 @@
 
 - **활성화됨:** Facebook과 Instagram 메신저 연락처는 이메일이나 전화번호가 기존 연락처와 일치해도 별도 기록을 생성할 수 있습니다. 이러한 대화의 자동 합치기가 실행되지 않으므로 수동으로 합칠 때까지 중복이 남아있을 수 있습니다.
 
-[CSV를 통한 연락처 및 기회 가져오기에 대해 자세히 알아보기]([importing-contacts-and-opportunities-via-csv](importing-contacts-and-opportunities-via-csv.md))
+[CSV를 통한 연락처 및 기회 가져오기에 대해 자세히 알아보기](../../02-연락처/importing-contacts-and-opportunities-via-csv.md)
 
 **Facebook과 Instagram 연락처**
 

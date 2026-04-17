@@ -107,7 +107,7 @@
 
 - 필요시 유효한 캘린더를 다시 연결하거나 재선택합니다.
 
-[**더 알아보기: Google 캘린더 연동 설정**](integrating-google-with-highlevel-calendars.md)
+[**더 알아보기: Google 캘린더 연동 설정**](../캘린더-연동/integrating-google-with-highlevel-calendars.md)
 
 ## **사용자 예약 가능 시간 설정 트러블슈팅**
 
@@ -120,7 +120,7 @@
 
 ![예약 가능 시간 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044573166/original/ribvANLujbwTUN1HVdKbI25UrcsxsLnGkA.png?1743802784)
 
-[**더 알아보기: 캘린더 사용자 예약 가능 시간 설정 방법**](adjusting-availability-settings-for-individual-calendars.md)
+[**더 알아보기: 캘린더 사용자 예약 가능 시간 설정 방법**](../Calendar-Availability-Settings/adjusting-availability-settings-for-individual-calendars.md)
 
 ## **일반적인 예약 문제와 의미**
 
@@ -163,7 +163,7 @@
 
 ![권한 범위 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044573243/original/lCnrMllEQ1B868LMYVi4VaZ5IvF6i8WhdQ.png?1743803063)
 
-[더 알아보기: 캘린더의 사용자 권한](user-permissions-in-calendars.md)
+[더 알아보기: 캘린더의 사용자 권한](../user-permissions-in-calendars.md)
 
 ## **자주 묻는 질문**
 
@@ -187,13 +187,13 @@
 
 ## 관련 문서
 
-- [HighLevel 캘린더와 Google 연동하는 방법](integrating-google-with-highlevel-calendars.md)
-- [HighLevel 캘린더와 Outlook 동기화하는 방법](how-to-sync-highlevel-calendars-with-outlook.md)
-- [개별 캘린더의 예약 가능 시간 설정 조정](adjusting-availability-settings-for-individual-calendars.md)
+- [HighLevel 캘린더와 Google 연동하는 방법](../캘린더-연동/integrating-google-with-highlevel-calendars.md)
+- [HighLevel 캘린더와 Outlook 동기화하는 방법](../how-to-sync-highlevel-calendars-with-outlook.md)
+- [개별 캘린더의 예약 가능 시간 설정 조정](../Calendar-Availability-Settings/adjusting-availability-settings-for-individual-calendars.md)
 - [중복 예약 문제 트러블슈팅](troubleshoot-and-fix-calendar-double-booking-in-highlevel.md)
-- [캘린더의 사용자 권한](user-permissions-in-calendars.md)
-- [라운드 로빈 캘린더: 설정 가이드](round-robin-calendars-setup-distribution-availability-explained.md)
-- [연결된 캘린더 및 충돌 캘린더 설정](setting-up-linked-calendars-conflict-calendars.md)
+- [캘린더의 사용자 권한](../user-permissions-in-calendars.md)
+- [라운드 로빈 캘린더: 설정 가이드](../Round-Robin-Calendars/round-robin-calendars-setup-distribution-availability-explained.md)
+- [연결된 캘린더 및 충돌 캘린더 설정](../setting-up-linked-calendars-conflict-calendars.md)
 
 ### **중요 참고사항**
 

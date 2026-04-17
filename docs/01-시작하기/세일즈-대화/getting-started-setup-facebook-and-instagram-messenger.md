@@ -45,9 +45,9 @@
 **더 알아보기**
 
 - Facebook 트러블슈팅 - 연동 문제
-- [Facebook 멀티 페이지 트러블슈팅](facebook-multi-page-troubleshoot.md)
+- [Facebook 멀티 페이지 트러블슈팅](../../42-통합/기타/facebook-multi-page-troubleshoot.md)
 - 연동 중 페이지 관리에서 Facebook 페이지가 누락되는 경우
-- [Instagram 비즈니스 또는 크리에이터를 Facebook에 연결하기 (IG 게시 허용)](connect-instagram-facebook-linked-vs-direct-instagram-integration.md)
+- [Instagram 비즈니스 또는 크리에이터를 Facebook에 연결하기 (IG 게시 허용)](../../10-마케팅/소셜-플래너/connect-instagram-facebook-linked-vs-direct-instagram-integration.md)
 - 중복 연락처 허용 (연락처 중복 제거 설정)
 ---
 

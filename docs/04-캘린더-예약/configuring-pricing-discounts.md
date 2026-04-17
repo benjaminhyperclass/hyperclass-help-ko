@@ -65,7 +65,7 @@
 
 #### **2. 보증금 (선택사항)**
 
-- 보증금 옵션은 **전역 설정에서 활성화된 경우**에만 사용할 수 있습니다. [전역 설정에 대한 자세한 내용은 여기를 클릭하세요.](global-settings-in-rentals.md)
+- 보증금 옵션은 **전역 설정에서 활성화된 경우**에만 사용할 수 있습니다. [전역 설정에 대한 자세한 내용은 여기를 클릭하세요.](렌탈/global-settings-in-rentals.md)
 
 전역 설정에서 보증금을 활성화하려면 **Calendar Settings(캘린더 설정) → Rentals(렌탈) → Global Settings(전역 설정) → Payment Settings(결제 설정)**으로 이동한 후 **Enable Security Deposits(보증금 활성화)**를 토글로 켜세요.
 

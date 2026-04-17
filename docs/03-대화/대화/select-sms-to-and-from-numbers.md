@@ -27,11 +27,11 @@
 
 ![전화번호 목록과 태그](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034521709/original/Yw3Hg5bEa3Emxk3ZIXRSyzt4zwfBuVs0Bw.png?1728636420)
 
-4. [연락처가 여러 번호를 가지고 있는 경우](adding-multiple-phone-numbers-for-a-contact.md), To 필드 옆의 드롭다운을 클릭하여 메시지를 받을 적절한 번호를 선택합니다. 이전 대화가 없는 경우 기본적으로 연락처의 기본 번호가 선택됩니다.
+4. [연락처가 여러 번호를 가지고 있는 경우](../../02-연락처/adding-multiple-phone-numbers-for-a-contact.md), To 필드 옆의 드롭다운을 클릭하여 메시지를 받을 적절한 번호를 선택합니다. 이전 대화가 없는 경우 기본적으로 연락처의 기본 번호가 선택됩니다.
 
 ![수신 번호 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035873298/original/Jpty7pFR8ho6SRn6eDth2c4m9HS49Ww5ZQ.png?1730508821)
 
-## [전화번호에 대한 역할별 접근 권한](user-roles-permissions-and-assigned-data-subaccount.md)
+## [전화번호에 대한 역할별 접근 권한](../../11-설정/사용자-설정/user-roles-permissions-and-assigned-data-subaccount.md)
 
 **관리자:** 관리자는 계정에 설정된 모든 번호에 접근할 수 있습니다.
 

@@ -199,7 +199,7 @@ D. Create를 클릭하세요
 
 모든 DNS 레코드를 추가하고 확인했다면, [메일건 API 키를 어디서 찾아서 하이퍼클래스에 입력하는지](mailgun-private-api-key-setup.md) 가이드를 참고하세요.
 
-그 다음 테스트 이메일을 보내서 모든 것이 제대로 작동하는지 확인해보세요! [대화(Conversations)에서 테스트 이메일을 보내는 방법](how-to-send-a-test-email-in-the-conversation.md)을 참고하세요.
+그 다음 테스트 이메일을 보내서 모든 것이 제대로 작동하는지 확인해보세요! [대화(Conversations)에서 테스트 이메일을 보내는 방법](../트러블슈팅/how-to-send-a-test-email-in-the-conversation.md)을 참고하세요.
 
 ---
 *원문 최종 수정: 2023년 2월 28일*  

@@ -64,7 +64,7 @@ SMS 예시:
 - 클릭하기 쉽게
 - 알아볼 수 있는 발신자 이름으로
 
-[SMS 설정 방법 자세히 알아보기](message-templates-snippets-.md)
+[SMS 설정 방법 자세히 알아보기](../../36-기타/리커버리/message-templates-snippets-.md)
 
 ---
 
@@ -78,7 +78,7 @@ SMS 예시:
 
 이렇게 하면 더욱 세심하고 고급스러운 개인화 경험을 제공할 수 있습니다.
 
-[워크플로우 설정 방법 자세히 알아보기]([workflow-trigger-note-added](workflow-trigger-note-added.md))
+[워크플로우 설정 방법 자세히 알아보기](../../07-워크플로우/Contact-Workflow-Triggers/workflow-trigger-note-added.md)
 
 ---
 
@@ -96,7 +96,7 @@ SMS 예시:
 
 "안녕하세요 [이름]님, 방문이 기대에 미치지 못해 정말 죄송합니다. 이 문제를 바로잡을 기회를 주시면 감사하겠습니다. [이메일]로 직접 연락 주시면 바로 연결해드리겠습니다. 고객님의 피드백은 저희에게 소중합니다."
 
-[부정적 리뷰 대응 및 평판 관리 자세한 방법]([how-to-address-negative-reviews-and-manage-reputation-with-highlevel](how-to-address-negative-reviews-and-manage-reputation-with-highlevel.md))
+[부정적 리뷰 대응 및 평판 관리 자세한 방법](../../41-평판-리뷰/Review-Requests/how-to-address-negative-reviews-and-manage-reputation-with-highlevel.md)
 
 ---
 

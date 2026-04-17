@@ -29,7 +29,7 @@
 
 ## 이메일 캠페인 미리보기 및 테스트 발송하는 방법
 
-**참고:** 이메일 템플릿과 캠페인을 생성, 편집, 발송하는 방법을 배우려면 [시작하기 - 이메일 캠페인 런치](getting-started-launch-an-email-campaign.md)와 [이메일 빌더 및 인라인 에디터 사용법](how-to-use-the-email-builder-and-its-in-line-editor.md) 상세 가이드를 확인해주세요.
+**참고:** 이메일 템플릿과 캠페인을 생성, 편집, 발송하는 방법을 배우려면 [시작하기 - 이메일 캠페인 런치](../../../01-시작하기/기본-설정/getting-started-launch-an-email-campaign.md)와 [이메일 빌더 및 인라인 에디터 사용법](../../Email-Builder-Capabilities/how-to-use-the-email-builder-and-its-in-line-editor.md) 상세 가이드를 확인해주세요.
 
 - `Marketing(마케팅) → Emails(이메일) → Campaigns(캠페인)`로 이동합니다.
 - 캠페인을 클릭해서 엽니다.

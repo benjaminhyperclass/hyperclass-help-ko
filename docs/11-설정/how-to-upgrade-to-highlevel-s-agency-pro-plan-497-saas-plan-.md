@@ -8,7 +8,7 @@
 
 이 가이드는 Hyperclass 구독을 Pro 플랜으로 업그레이드하는 단계별 방법을 제공합니다. 결제 대시보드 탐색부터 이용 가능한 플랜 검토, 업그레이드 과정 완료까지 자세히 알아보세요.
 
-**팁**: SaaS 모드와 설정에 대한 자세한 내용은 [SaaS Mode - Full Setup Guide + FAQ]([saas-mode-full-setup-guide-faq](saas-mode-full-setup-guide-faq.md))를 참고하세요.
+**팁**: SaaS 모드와 설정에 대한 자세한 내용은 [SaaS Mode - Full Setup Guide + FAQ](../16-SaaS-설정/Saas-Mode/saas-mode-full-setup-guide-faq.md)를 참고하세요.
 
 ## 목차
 

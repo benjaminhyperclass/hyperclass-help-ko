@@ -202,7 +202,7 @@ A: 네! 워크플로우 내에서 여러 텍스트 포맷터 액션을 추가하
 
 **Q: 텍스트 포맷터가 숫자에도 작동하나요?**
 
-A: 어느 정도는 그렇습니다. 숫자가 텍스트 형태라면 텍스트처럼 조작할 수 있습니다. 숫자가 숫자 형태라면 [Number Formatter 액션](workflow-action-number-formatter.md)을 사용하세요.
+A: 어느 정도는 그렇습니다. 숫자가 텍스트 형태라면 텍스트처럼 조작할 수 있습니다. 숫자가 숫자 형태라면 [Number Formatter 액션](../액션/workflow-action-number-formatter.md)을 사용하세요.
 
 **Q: 텍스트가 들어있는 필드를 찾을 수 없어요.**
 

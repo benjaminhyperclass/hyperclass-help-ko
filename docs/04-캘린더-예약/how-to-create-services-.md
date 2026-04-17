@@ -116,7 +116,7 @@
 - 여기서 선택한 서비스에 연결된 애드온 목록과 가격, 시간, 최대 수량을 확인할 수 있습니다
 - 이 탭에서 새 애드온을 만들거나 기존 애드온을 편집할 수 있습니다
 
-[애드온 생성 및 편집 방법을 포함한 자세한 정보는 여기를 클릭하세요](add-ons-in-services.md)
+[애드온 생성 및 편집 방법을 포함한 자세한 정보는 여기를 클릭하세요](서비스/add-ons-in-services.md)
 
 ![애드온 관리 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053196384/original/tVczpEVTqXC1V5I3_eqojPVhMuk3ZFEMpw.png?1757092752)
 
@@ -140,7 +140,7 @@
 - 여기서 리소스 목록과 총 용량, 연결된 서비스, 연결된 지점, 상태를 확인할 수 있습니다
 - 이 탭에서 새 리소스를 만들거나 기존 리소스를 편집할 수 있습니다
 
-[리소스 생성 및 편집 방법을 포함한 자세한 정보는 여기를 클릭하세요](resources-in-services.md)
+[리소스 생성 및 편집 방법을 포함한 자세한 정보는 여기를 클릭하세요](서비스/resources-in-services.md)
 
 ![리소스 관리 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053200308/original/F4xstc-mtexKkqen5QZmnVEQh6GnevLSxA.png?1757099398)
 

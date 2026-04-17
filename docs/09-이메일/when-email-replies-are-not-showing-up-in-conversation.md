@@ -30,7 +30,7 @@
 
 ### 1. Mailgun 수신 라우트가 설정되었는지 확인하기 (LC Email을 사용 중이라면 2단계로)
 
-[Mailgun에서 답장 설정하는 방법](how-to-setup-replies-in-mailgun.md)
+[Mailgun에서 답장 설정하는 방법](메일건/how-to-setup-replies-in-mailgun.md)
 
 ### 2. MX 레코드 확인 방법
 
@@ -90,7 +90,7 @@ Mxtoolbox를 사용하여 루트 도메인의 MX 레코드를 조회했을 때, 
 
 ### 6. 도메인 DNS 제공업체로 WIX를 사용하는 경우
 
-[도메인 제공업체로 WIX를 사용할 때 Mailgun 답장이 작동하지 않는 문제](mailgun-replies-not-working-when-using-wix-as-the-domain-provider.md)를 확인해보세요.
+[도메인 제공업체로 WIX를 사용할 때 Mailgun 답장이 작동하지 않는 문제](기타/mailgun-replies-not-working-when-using-wix-as-the-domain-provider.md)를 확인해보세요.
 
 ---
 

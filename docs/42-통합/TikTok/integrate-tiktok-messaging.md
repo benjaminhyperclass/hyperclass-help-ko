@@ -45,13 +45,13 @@
 
 트리거:
 
-- 틱톡 릴 댓글 - 틱톡 게시물에 새 댓글이 달렸을 때 워크플로우가 시작됩니다. [이 트리거에 대한 자세한 정보는 여기를 참조하세요](workflow-trigger-facebook-comment-s-on-a-post.md).
+- 틱톡 릴 댓글 - 틱톡 게시물에 새 댓글이 달렸을 때 워크플로우가 시작됩니다. [이 트리거에 대한 자세한 정보는 여기를 참조하세요](../../07-워크플로우/Facebook/Instagram-Events-Workflow-Triggers/workflow-trigger-facebook-comment-s-on-a-post.md).
 
-- 고객 응답 - 틱톡 메신저와 같은 응답 채널을 선택합니다. [이 트리거에 대한 자세한 정보는 여기를 참조하세요](workflow-trigger-customer-replied.md)
+- 고객 응답 - 틱톡 메신저와 같은 응답 채널을 선택합니다. [이 트리거에 대한 자세한 정보는 여기를 참조하세요](../../07-워크플로우/Events-Workflow-Triggers/workflow-trigger-customer-replied.md)
 
 액션:
 
-- [댓글로 답변](workflow-action-reply-in-comments.md): 댓글에 댓글로 답변합니다. [이 액션에 대한 자세한 정보는 여기를 참조하세요](workflow-action-reply-in-comments.md)
+- [댓글로 답변](../../07-워크플로우/Communication-Workflow-Actions/workflow-action-reply-in-comments.md): 댓글에 댓글로 답변합니다. [이 액션에 대한 자세한 정보는 여기를 참조하세요](../../07-워크플로우/Communication-Workflow-Actions/workflow-action-reply-in-comments.md)
 
 - 틱톡 인터랙티브 메신저
 

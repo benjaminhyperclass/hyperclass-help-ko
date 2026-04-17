@@ -119,11 +119,11 @@
 | 사회적 증명 | "XYZ 아파트 단지를 대규모 침수에서 구한 방법" | "사례 연구 보기 및 점검 예약!" |
 | 커뮤니티/참여 | "이상한 것 때문에 배수구가 막힌 적 있나요? 알려주세요!" | "댓글로 배관 점검 쿠폰 받기!" |
 
-[콘텐츠 AI(Content AI)를 사용하여 이메일 만들기]([how-to-create-emails-using-content-ai-](how-to-create-emails-using-content-ai-.md))
+[콘텐츠 AI(Content AI)를 사용하여 이메일 만들기](../../13-AI-Employee/Content-AI-in-the-Email-Builder/how-to-create-emails-using-content-ai-.md)
 
-[콘텐츠 AI로 블로그 게시물 개요 만들기](how-to-create-a-social-post-with-content-ai-.md)
+[콘텐츠 AI로 블로그 게시물 개요 만들기](../../13-AI-Employee/기타/how-to-create-a-social-post-with-content-ai-.md)
 
-[콘텐츠 AI를 사용하여 소셜 미디어 게시물 만들기](how-to-create-a-social-post-with-content-ai-.md)
+[콘텐츠 AI를 사용하여 소셜 미디어 게시물 만들기](../../13-AI-Employee/기타/how-to-create-a-social-post-with-content-ai-.md)
 
 ### 4단계: 배관업 지표 추적하기
 

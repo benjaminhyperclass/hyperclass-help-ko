@@ -62,7 +62,7 @@
 - "프론트 데스크 직원을 소개합니다 - 이곳의 진짜 보스"
 - "환자분과 나눈 대화인데, 여러분께도 도움이 될 것 같아요"
 
-**[콘텐츠 제작 & SEO 도움!](content-creation-seo-assistance-.md)**
+**[콘텐츠 제작 & SEO 도움!](../../06-사이트/SEO/content-creation-seo-assistance-.md)**
 
 ---
 
@@ -95,7 +95,7 @@ GHL의 **소셜 플래너** 안에서:
 
 다른 도구는 필요 없어요. 이미 여러분 시스템에 있거든요.
 
-**[콘텐츠 AI로 소셜 게시물을 만드는 방법은?](how-to-create-a-social-post-with-content-ai-.md)**
+**[콘텐츠 AI로 소셜 게시물을 만드는 방법은?](../../13-AI-Employee/기타/how-to-create-a-social-post-with-content-ai-.md)**
 
 ### **콘텐츠 제작자가 아니어도 효과적인 포맷들**
 

@@ -103,8 +103,8 @@
 ## 관련 문서
 
 - [배정되지 않은 캘린더를 그룹에 추가하기](adding-unassigned-calendars-to-groups.md)
-- [라운드 로빈 설정 가이드](round-robin-calendars-setup-distribution-availability-explained.md)
-- [캘린더 위젯 스타일](configuring-calendar-widget-style-classic-neo-.md)
+- [라운드 로빈 설정 가이드](Round-Robin-Calendars/round-robin-calendars-setup-distribution-availability-explained.md)
+- [캘린더 위젯 스타일](캘린더-설정/configuring-calendar-widget-style-classic-neo-.md)
 
 ---
 *원문 최종 수정: 2025년 5월 30일*

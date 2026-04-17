@@ -18,13 +18,13 @@
 
 1. 하위 계정에 로그인한 후 > Settings(설정) > Email Services(이메일 서비스) > Dedicated Domain(전용 도메인) > + Add Domain(도메인 추가)를 클릭하세요.
 
-[에이전시를 LC - 이메일로 마이그레이션하는 방법](how-to-migrate-my-agency-over-to-lc-email.md)을 확인해보세요.
+[에이전시를 LC - 이메일로 마이그레이션하는 방법](../how-to-migrate-my-agency-over-to-lc-email.md)을 확인해보세요.
 
 ![Google 도메인 설정 과정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48292765242/original/jQLugI8wtvQRfs38XJDujiQd2QnIgjQqSA.gif?1681496688)
 
 2. 도메인이 companyname.com이라면, LC-이메일에서 메인 도메인 또는 서브도메인을 설정할 수 있습니다.
 
-[Mailgun에서 LeadConnector로 발송 도메인을 이동하는 방법](how-to-set-up-a-dedicated-sending-domain-lc-email-.md)을 확인해보세요.
+[Mailgun에서 LeadConnector로 발송 도메인을 이동하는 방법](../기타/how-to-set-up-a-dedicated-sending-domain-lc-email-.md)을 확인해보세요.
 
 **메인 도메인:**
 - 메인 도메인을 추가하는 경우, [해당 도메인은 G Suite나 다른 이메일 제공업체와 함께 사용하면 안 됩니다](https://help.mailgun.com/hc/en-us/articles/203357040-Can-I-Use-the-Same-Domain-Name-for-Mailgun-and-for-Google-Apps-Or-Another-Email-Server-)
@@ -152,9 +152,9 @@ Create new record(새 레코드 만들기)를 클릭하세요.
 
 일부 레코드에 녹색 체크 표시가 아직 나타나지 않으면 "Verify Domain(도메인 확인)" 버튼을 다시 클릭하세요.
 
-모든 DNS 레코드를 추가하고 확인했다면, [전용 발송 도메인용 SSL 인증서(LC - 이메일)](ssl-certificates-for-dedicated-lc-email-domains.md)가 모두 설정되었는지 확인하세요.
+모든 DNS 레코드를 추가하고 확인했다면, [전용 발송 도메인용 SSL 인증서(LC - 이메일)](../LC-이메일/ssl-certificates-for-dedicated-lc-email-domains.md)가 모두 설정되었는지 확인하세요.
 
-마지막으로, 이메일이 제대로 발송되는지 확인하기 위해 테스트 이메일을 보내보세요. [대화에서 테스트 이메일을 보내는 방법](how-to-send-a-test-email-in-the-conversation.md)을 확인하세요.
+마지막으로, 이메일이 제대로 발송되는지 확인하기 위해 테스트 이메일을 보내보세요. [대화에서 테스트 이메일을 보내는 방법](../트러블슈팅/how-to-send-a-test-email-in-the-conversation.md)을 확인하세요.
 
 ---
 *원문 최종 수정: 2024년 9월 10일 오전 11:05*

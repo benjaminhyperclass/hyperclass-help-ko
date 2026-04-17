@@ -85,7 +85,7 @@
 
 ![GPT 모델 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051630743/original/Y2gNqJmyLdVsbkiusI1G3MlhrYXJ6lwIpg.png?1755178517)
 
-**참고사항:** 프롬프트를 작성하거나 입력 데이터 필드를 매핑하세요. (모범 사례는 [AI 프롬프트 작성 기초](ai-prompting-101.md)를 참고하세요.) 단계를 저장하고 워크플로우를 발행하세요. 이제 자동화가 GPT-5 인텔리전스와 함께 실행됩니다.
+**참고사항:** 프롬프트를 작성하거나 입력 데이터 필드를 매핑하세요. (모범 사례는 [AI 프롬프트 작성 기초](../../13-AI-Employee/Conversation-AI---Goals,-Prompts,-&-Actions/ai-prompting-101.md)를 참고하세요.) 단계를 저장하고 워크플로우를 발행하세요. 이제 자동화가 GPT-5 인텔리전스와 함께 실행됩니다.
 
 ---
 

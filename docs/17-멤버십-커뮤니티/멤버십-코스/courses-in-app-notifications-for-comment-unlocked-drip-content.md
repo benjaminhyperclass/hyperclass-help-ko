@@ -60,7 +60,7 @@
 
 - 원하는 알림 유형에 대해 Push(푸시) 알림을 켭니다(원할 경우 Email(이메일)도 함께).
 
-- 자세한 내용은 [클라이언트 포털 내 알림](notifications-inside-client-portal.md)을 참고하세요.
+- 자세한 내용은 [클라이언트 포털 내 알림](../../39-클라이언트-포털/Client-Portal/notifications-inside-client-portal.md)을 참고하세요.
 
 ---
 *원문 최종 수정: Thu, 5 Mar, 2026 at 7:18 AM*

@@ -71,8 +71,8 @@ The Campaign Registry (TCR)는 북미 이동통신사와 메시징 사업 회사
 
 새로운 A2P 10DLC 시스템 하에서는 두 가지 중요한 요구사항이 있습니다:
 
-- 사업체는 통신사 네트워크에 **자신이 누구인지** 신원을 밝혀야 합니다([브랜드 등록](a2p-standard-brand-registration-for-10dlc.md)).
-- 사업체는 **어떤 유형의 메시지**를 보내는지, 즉 알림을 등록해야 합니다([캠페인 등록](a2p-campaign-registration-step-by-step-guide-and-faqs.md)).
+- 사업체는 통신사 네트워크에 **자신이 누구인지** 신원을 밝혀야 합니다([브랜드 등록](a2p-standard-brand-registration-for-10dlc.md).
+- 사업체는 **어떤 유형의 메시지**를 보내는지, 즉 알림을 등록해야 합니다([캠페인 등록](a2p-campaign-registration-step-by-step-guide-and-faqs.md).
 
 등록은 전적으로 Phone System Trust Center를 통해 이루어집니다. 저희는 The Campaign Registry (TCR)와 통합하여 통신사의 요구사항을 충족하면서 사업체가 쉽게 온보딩할 수 있도록 했습니다.
 
@@ -112,26 +112,26 @@ SMS를 보내기 전에 번호를 검토하고 승인받는 3단계 프로세스
 | | 무료 번호 | 개인사업자 | 저용량 표준 | 표준 |
 |---|---------|------------|------------|------|
 | **적합한 대상** | 모든 사용자. 간편한 등록 과정, 등록 수수료 없음, 일일 발송 한도 없음을 선호하는 많은 사용자. 세금 ID 불필요. | 세금 ID가 없는 1인 사업체. 미국 또는 캐나다 사업체 주소 필요. 2명 이상의 직원이나 EIN이 있으면 부적격. | 세금 ID가 있고 하루 6000 세그먼트 미만을 보내는 사업체. | 세금 ID가 있고 하루 6,000 세그먼트 이상을 보내는 사업체. |
-| **잠재적 단점** | 무료 번호는 지역 번호에 비해 열람/수신률이 낮은 경향. | 3000 일일 발송 한도.** 번호 1개만 허용. [SHAKEN/STIR이나 CNAM](why-are-my-calls-marked-as-spam-and-how-can-i-avoid-it-lc-phone-.md) 사용 불가. | 6000 일일 발송 한도.** 세금 ID 필요. | 가장 비싼 등록 수수료.* 세금 ID 필요. |
+| **잠재적 단점** | 무료 번호는 지역 번호에 비해 열람/수신률이 낮은 경향. | 3000 일일 발송 한도.** 번호 1개만 허용. [SHAKEN/STIR이나 CNAM](../기타/why-are-my-calls-marked-as-spam-and-how-can-i-avoid-it-lc-phone-.md) 사용 불가. | 6000 일일 발송 한도.** 세금 ID 필요. | 가장 비싼 등록 수수료.* 세금 ID 필요. |
 | **1회 등록 수수료** | 없음* | $23.95* (브랜드 + 캠페인 + 패스트 트랙) | $23.95* (브랜드 + 캠페인 + 패스트 트랙) | $68.05* (브랜드 + 캠페인 + 패스트 트랙) |
 | **월간 캠페인 수수료** | 없음* | $2.00/월* | $1.50/월* | $10/월* |
 | **허용 전화번호 개수** | 등록당 1개. 복수 허용. | 1개만. | 1개 이상. | 1개 이상. |
-| **일일 발송 한도([세그먼트](highlevel-pricing-guide.md))** | 없음.** | 3,000 (T-Mobile은 1,000 한도).** | 6,000 (T-Mobile은 2,000 한도).** | 없음. (T-Mobile은 200,000 한도).** |
+| **일일 발송 한도([세그먼트](../../20-고객지원/Billing-Support/highlevel-pricing-guide.md)** | 없음.** | 3,000 (T-Mobile은 1,000 한도).** | 6,000 (T-Mobile은 2,000 한도).** | 없음. (T-Mobile은 200,000 한도).** |
 | **등록에 필요한 정보** | 사업체명, 사업체 주소, 사업체 연락처 정보. | 연락처 정보(미국 또는 캐나다 사업체 주소 포함). 2명 이상의 직원이나 EIN이 있으면 개인사업자 부적격. | 유효한 세금 ID 정보를 포함한 사업체 정보. | 유효한 세금 ID 정보를 포함한 사업체 정보. |
-| **도움말 문서** | [무료 번호 등록](toll-free-verification-guide-for-lc-phone-us-canada-.md) | (1) [브랜드 등록]([a2p-10dlc-brand-approval-best-practices](a2p-10dlc-brand-approval-best-practices.md))<br>(2) [개인사업자 캠페인 등록](a2p-sole-proprietor-brands-registration-is-now-live-.md) | (1) [브랜드 등록]([a2p-10dlc-brand-approval-best-practices](a2p-10dlc-brand-approval-best-practices.md))<br>(2) [표준 캠페인 등록]([a2p-10dlc-campaign-approval-best-practices](a2p-10dlc-campaign-approval-best-practices.md)) | 도움말 문서는 왼쪽 저용량과 동일. |
+| **도움말 문서** | [무료 번호 등록](../기타/toll-free-verification-guide-for-lc-phone-us-canada-.md) | (1) [브랜드 등록](a2p-10dlc-brand-approval-best-practices.md)<br>(2) [개인사업자 캠페인 등록](../../36-기타/리커버리/a2p-sole-proprietor-brands-registration-is-now-live-.md) | (1) [브랜드 등록](a2p-10dlc-brand-approval-best-practices.md)<br>(2) [표준 캠페인 등록](a2p-10dlc-campaign-approval-best-practices.md) | 도움말 문서는 왼쪽 저용량과 동일. |
 
 #### * 추가 가격 정보
 
 - 가격은 업계 및 공급업체 변경에 따라 수시로 변경될 수 있습니다.
 - 브랜드, 등록 및 캠페인 수수료는 제출 및 심사 시점에 적용됩니다.
 - 등록 가격 및 수수료에 대한 자세한 내용은 A2P 10DLC 서비스의 가격 및 수수료를 참조하세요.
-- 등록 수수료에는 전화번호, 음성, SMS, MMS 요금이 포함되지 않으며, 이는 별도로 청구됩니다. 요금은 [하이퍼클래스 가격 가이드: 전화 시스템 가격](highlevel-pricing-guide.md)에서 확인할 수 있습니다.
+- 등록 수수료에는 전화번호, 음성, SMS, MMS 요금이 포함되지 않으며, 이는 별도로 청구됩니다. 요금은 [하이퍼클래스 가격 가이드: 전화 시스템 가격](../../20-고객지원/Billing-Support/highlevel-pricing-guide.md)에서 확인할 수 있습니다.
 
 #### ** LC 메시징 정책, 세그먼트 및 발송 한도
 
-- 표시된 발송 한도는 여전히 [LC 메시징 및 램프업 정책](lc-phone-messaging-policy.md)%3A)의 적용을 받습니다.
+- 표시된 발송 한도는 여전히 [LC 메시징 및 램프업 정책](../메시징/lc-phone-messaging-policy.md)%3A)의 적용을 받습니다.
 - 발송 한도는 미국 번호로의 일일 발송을 기준으로 하며, T-Mobile 하드 한도 등 통신사가 부과하는 기타 발송 한도의 적용을 받습니다.
-- **정지 방지:** SMS를 보낼 때 옵트아웃 비율을 3% 미만으로 유지해야 합니다. 이를 초과하면 메시징이 24시간 임시 정지됩니다. 자세한 내용: [SMS 정지 방지]([best-practices-for-sms-deliverability-and-avoiding-sms-restrictions](best-practices-for-sms-deliverability-and-avoiding-sms-restrictions.md))
+- **정지 방지:** SMS를 보낼 때 옵트아웃 비율을 3% 미만으로 유지해야 합니다. 이를 초과하면 메시징이 24시간 임시 정지됩니다. 자세한 내용: [SMS 정지 방지](../메시징/best-practices-for-sms-deliverability-and-avoiding-sms-restrictions.md)
 - **세그먼트란?** 표시된 한도는 세그먼트를 기준으로 합니다. 세그먼트는 문자 메시지가 처리되고 전송되는 방식입니다. 하나의 문자 메시지가 2개 이상의 세그먼트를 가질 수 있습니다.
 
 SMS/MMS 비용 계산하는 방법 알아보기
@@ -144,7 +144,7 @@ SMS/MMS 비용 계산하는 방법 알아보기
 
 - 일부 사업 사용 사례와 메시징 콘텐츠는 금지되어 있습니다. [금지된 카테고리 목록은 여기를 클릭하세요](forbidden-message-categories-for-sms-and-mms-in-the-us-and-canada.md).
 - 금지된 카테고리로 등록을 제출하는 사업체는 승인받지 못합니다.
-- 승인된 캠페인에 관계없이 금지된 콘텐츠가 포함된 SMS/MMS 메시지를 보내는 사업체는 승인된 캠페인 취소, 통신사 벌금 등의 결과를 초래할 수 있습니다. 자세한 내용: [미국 및 캐나다 SMS와 MMS의 금지된 메시지 카테고리]([forbidden-message-categories-for-sms-and-mms-in-the-us-and-canada](forbidden-message-categories-for-sms-and-mms-in-the-us-and-canada.md))
+- 승인된 캠페인에 관계없이 금지된 콘텐츠가 포함된 SMS/MMS 메시지를 보내는 사업체는 승인된 캠페인 취소, 통신사 벌금 등의 결과를 초래할 수 있습니다. 자세한 내용: [미국 및 캐나다 SMS와 MMS의 금지된 메시지 카테고리](forbidden-message-categories-for-sms-and-mms-in-the-us-and-canada.md)
 
 ---
 
@@ -218,7 +218,7 @@ SMS/MMS 비용 계산하는 방법 알아보기
 
 **Q: 무차별 문자는 허용되나요?**
 
-무차별 문자는 옵트인하지 않았거나 메시지 수신에 동의하지 않은 수신자에게 SMS를 보내는 것입니다. 즉, 귀하로부터 메시지를 받고 싶어하지 않는 사람에게 SMS를 보내는 것입니다. 이는 TCR 가이드라인, 통신사 가이드라인, Phone System 메시징 정책을 위반합니다. SMS를 통해 메시지를 보낼 명시적인 동의를 받지 않았다면, 메시지를 보내지 마세요. 무차별 메시징을 하는 것으로 발견되면 발송 한도 증가 승인을 받지 못할 수 있으며 [SMS 정지]([best-practices-for-sms-deliverability-and-avoiding-sms-restrictions](best-practices-for-sms-deliverability-and-avoiding-sms-restrictions.md)) 위험이 높습니다.
+무차별 문자는 옵트인하지 않았거나 메시지 수신에 동의하지 않은 수신자에게 SMS를 보내는 것입니다. 즉, 귀하로부터 메시지를 받고 싶어하지 않는 사람에게 SMS를 보내는 것입니다. 이는 TCR 가이드라인, 통신사 가이드라인, Phone System 메시징 정책을 위반합니다. SMS를 통해 메시지를 보낼 명시적인 동의를 받지 않았다면, 메시지를 보내지 마세요. 무차별 메시징을 하는 것으로 발견되면 발송 한도 증가 승인을 받지 못할 수 있으며 [SMS 정지](../메시징/best-practices-for-sms-deliverability-and-avoiding-sms-restrictions.md) 위험이 높습니다.
 
 **Q: 등록에는 어떤 정보가 필요한가요?**
 

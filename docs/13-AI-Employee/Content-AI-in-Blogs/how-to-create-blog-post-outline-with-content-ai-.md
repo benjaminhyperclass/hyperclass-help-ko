@@ -96,7 +96,7 @@
 
 ### 이전에 생성한 콘텐츠를 확인하고 싶은데 어디서 볼 수 있나요?
 
-콘텐츠 AI로 생성한 콘텐츠를 확인하려면 **Automation(자동화) > Content AI(콘텐츠 AI)**로 이동하여 자세한 내용을 확인하고 이미 생성한 콘텐츠를 볼 수 있습니다. 자세한 정보는 [이 문서]([how-to-find-past-records-of-content-generated-by-content-ai](how-to-find-past-records-of-content-generated-by-content-ai.md))를 참조하세요.
+콘텐츠 AI로 생성한 콘텐츠를 확인하려면 **Automation(자동화) > Content AI(콘텐츠 AI)**로 이동하여 자세한 내용을 확인하고 이미 생성한 콘텐츠를 볼 수 있습니다. 자세한 정보는 [이 문서](../how-to-find-past-records-of-content-generated-by-content-ai.md)를 참조하세요.
 
 ### 콘텐츠 AI에서 언어 옵션이 제공되나요?
 

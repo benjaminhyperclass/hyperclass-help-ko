@@ -243,9 +243,9 @@ Hyperclass의 연락처 상세 페이지(Contact Detail Page) 커스터마이징
 ## 관련 자료
 
 - [새로워진 연락처 상세 페이지](the-all-new-contact-detail-page.md)
-- [연락처 – 개선된 목록 뷰 및 스마트리스트](contacts-revamped-list-view-smartlists.md)
+- [연락처 – 개선된 목록 뷰 및 스마트리스트](스마트-리스트/contacts-revamped-list-view-smartlists.md)
 - [스마트 리스트의 고급 필터](advanced-filters-in-smart-lists.md)
-- [연락처 - 중복 관리 및 병합](contacts-manage-and-merge-duplicates.md)
+- [연락처 - 중복 관리 및 병합](스마트-리스트/contacts-manage-and-merge-duplicates.md)
 
 ---
 *원문 최종 수정: 2026-03-30*

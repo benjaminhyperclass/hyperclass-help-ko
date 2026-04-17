@@ -78,7 +78,7 @@
 
 - Hyperclass의 도메인
 
-- [데스크톱 웹 앱용 화이트라벨 도메인 설정 방법]([how-to-set-up-a-whitelabel-domain-for-the-desktop-web-app](how-to-set-up-a-whitelabel-domain-for-the-desktop-web-app.md))
+- [데스크톱 웹 앱용 화이트라벨 도메인 설정 방법](../../25-애드온-세일즈/Whitelabel-Desktop-App/how-to-set-up-a-whitelabel-domain-for-the-desktop-web-app.md)
 
 #### 사업체 웹사이트
 

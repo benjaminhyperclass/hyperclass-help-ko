@@ -83,7 +83,7 @@
 
 **5단계: 미팅 시간 및 예약 가능 시간:** 하이퍼클래스는 비즈니스 요구에 따라 유연성을 보장하기 위해 **분과 시간 단위로 미팅 시간을 커스터마이징**할 수 있게 해줍니다. **팀원 선호도**나 **회사 전체 일정 정책**에 따라 캘린더를 설정할 수 있습니다. **특정 날짜와 예외사항**을 구성하여 예약 가능한 시간을 정확하게 제어할 수 있습니다.
 
-예약 가능 시간 커스터마이징에 대한 자세한 단계는 [캘린더 예약 가능 시간 - 주간 근무 시간 및 특정 날짜 시간](calendar-availability-weekly-working-hours-date-specific-hours.md)을 참조하세요.
+예약 가능 시간 커스터마이징에 대한 자세한 단계는 [캘린더 예약 가능 시간 - 주간 근무 시간 및 특정 날짜 시간](../캘린더-만들기/calendar-availability-weekly-working-hours-date-specific-hours.md)을 참조하세요.
 
 ![미팅 시간 및 예약 가능 시간 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041486443/original/cWQ8bXHu38oMrFFrVY0aHz5oip6ikzS7Iw.png?1739377639)
 
@@ -91,7 +91,7 @@
 
 하이퍼클래스는 **다중 통화 지원**으로 다양한 통화 옵션도 제공합니다. Payment Information(결제 정보) 섹션 아래에 **커스텀 설명**을 추가할 수 있습니다. 이는 고객이 예약을 완료하기 전에 결제 조건, 가격 세부사항 또는 특별 지침을 이해하는 데 도움이 됩니다.
 
-결제 수신 커스터마이징에 대한 자세한 단계는 [캘린더에서 결제 수집하기]([collecting-payments-in-calendars](collecting-payments-in-calendars.md))를 참조하세요.
+결제 수신 커스터마이징에 대한 자세한 단계는 [캘린더에서 결제 수집하기](../캘린더-설정/collecting-payments-in-calendars.md)를 참조하세요.
 
 ![결제 수신 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041487283/original/6Db1jW9CQ6yCg_YDAJm3RkjsLNdxB9ES1g.png?1739378259)
 
@@ -111,31 +111,31 @@
 
 ### 1. 캘린더 설정 및 커스터마이징
 
-- **[라운드 로빈 캘린더 예약 배분 로직](round-robin-calendars-appointment-distribution-logic.md)** – 라운드 로빈이 예약 가능 여부나 균등 배분에 따라 예약을 일정하는 방법을 알아보세요.
+- **[라운드 로빈 캘린더 예약 배분 로직](../기타/round-robin-calendars-appointment-distribution-logic.md)** – 라운드 로빈이 예약 가능 여부나 균등 배분에 따라 예약을 일정하는 방법을 알아보세요.
 
-- [라운드 로빈 캘린더에서 팀원 배정](team-member-assignment-round-robin-calendar-.md) – 팀원이 예약에 배정되는 방법과 일정 변경 선호도를 구성하세요.
+- [라운드 로빈 캘린더에서 팀원 배정](../기타/team-member-assignment-round-robin-calendar-.md) – 팀원이 예약에 배정되는 방법과 일정 변경 선호도를 구성하세요.
 
-- [라운드 로빈 캘린더에서 직원 선택 구성하는 방법](how-to-configure-staff-member-selection-in-round-robin-calendars-.md) – 예약 시 초대받는 사람이 선호하는 팀원을 선택할 수 있도록 설정하세요.
+- [라운드 로빈 캘린더에서 직원 선택 구성하는 방법](../기타/how-to-configure-staff-member-selection-in-round-robin-calendars-.md) – 예약 시 초대받는 사람이 선호하는 팀원을 선택할 수 있도록 설정하세요.
 
-- [연결된 캘린더 및 충돌 캘린더 설정]([setting-up-linked-calendars-conflict-calendars](setting-up-linked-calendars-conflict-calendars.md)) – 하이퍼클래스를 Google이나 Outlook 같은 외부 캘린더와 동기화하여 이중 예약을 방지하세요.
+- [연결된 캘린더 및 충돌 캘린더 설정](../setting-up-linked-calendars-conflict-calendars.md) – 하이퍼클래스를 Google이나 Outlook 같은 외부 캘린더와 동기화하여 이중 예약을 방지하세요.
 
 ### 2. 캘린더 예약 가능 시간 및 일정 관리
 
-- **[개별 캘린더의 예약 가능 시간 설정 조정]([adjusting-availability-settings-for-individual-calendars](adjusting-availability-settings-for-individual-calendars.md))** – 근무 시간, 버퍼 시간, 예약 슬롯 시간을 설정하세요.
+- **[개별 캘린더의 예약 가능 시간 설정 조정](../Calendar-Availability-Settings/adjusting-availability-settings-for-individual-calendars.md)** – 근무 시간, 버퍼 시간, 예약 슬롯 시간을 설정하세요.
 
-- [캘린더 예약 가능 시간 - 주간 근무 시간 및 특정 날짜 시간]([calendar-availability-weekly-working-hours-date-specific-hours](calendar-availability-weekly-working-hours-date-specific-hours.md)) – 특정 요일과 시간을 선택하여 팀 예약 가능 시간을 커스터마이징하세요.
+- [캘린더 예약 가능 시간 - 주간 근무 시간 및 특정 날짜 시간](../캘린더-만들기/calendar-availability-weekly-working-hours-date-specific-hours.md) – 특정 요일과 시간을 선택하여 팀 예약 가능 시간을 커스터마이징하세요.
 
 ### 3. 캘린더에서 결제 수집
 
-- **[캘린더에서 결제 수집하기]([collecting-payments-in-calendars](collecting-payments-in-calendars.md))** – 예약에 대한 결제를 활성화하고, 결제 게이트웨이를 선택하고, 가격 세부사항을 추가하세요.
+- **[캘린더에서 결제 수집하기](../캘린더-설정/collecting-payments-in-calendars.md)** – 예약에 대한 결제를 활성화하고, 결제 게이트웨이를 선택하고, 가격 세부사항을 추가하세요.
 
 ### 4. 캘린더 문제 해결 및 관리
 
-- **[캘린더 문제 해결 도구]([troubleshooting-tool-for-calendar](troubleshooting-tool-for-calendar.md))** – 예약을 방해하거나 일정 충돌을 일으키는 문제를 식별하고 해결하세요.
+- **[캘린더 문제 해결 도구](../트러블슈팅/troubleshooting-tool-for-calendar.md)** – 예약을 방해하거나 일정 충돌을 일으키는 문제를 식별하고 해결하세요.
 
-- [캘린더 그룹 비활성화]([deactivating-calendar-groups](deactivating-calendar-groups.md)) – 기록을 유지하면서 캘린더 그룹을 비활성화하거나 제거하세요.
+- [캘린더 그룹 비활성화](../deactivating-calendar-groups.md) – 기록을 유지하면서 캘린더 그룹을 비활성화하거나 제거하세요.
 
-- [HTML 코드를 사용하여 하이퍼클래스 캘린더 삽입하기]([embedding-highlevel-calendars-using-html-code](embedding-highlevel-calendars-using-html-code.md)) – 더 쉬운 예약 접근을 위해 웹사이트나 랜딩 페이지에 캘린더를 공유하고 삽입하세요.
+- [HTML 코드를 사용하여 하이퍼클래스 캘린더 삽입하기](../embedding-highlevel-calendars-using-html-code.md) – 더 쉬운 예약 접근을 위해 웹사이트나 랜딩 페이지에 캘린더를 공유하고 삽입하세요.
 
 ---
 

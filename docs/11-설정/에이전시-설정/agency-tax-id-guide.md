@@ -163,7 +163,7 @@ Hyperclass는 전 세계에서 사용되는 모든 세금 ID 유형을 지원합
 
 ## **관련 문서**
 
-- [자동 세금 카테고리 ID 및 이름](automatic-tax-category-ids-and-names.md)
+- [자동 세금 카테고리 ID 및 이름](../../08-결제/automatic-tax-category-ids-and-names.md)
 
 ---
 *원문 최종 수정: Fri, 20 Feb, 2026 at 1:51 PM*

@@ -6,7 +6,7 @@
 
 # SaaS 모드 플랜에 Stripe 체크아웃 페이지 사용하기
 
-이 방법은 [SaaS 모드 - 전체 설정 가이드 + FAQ]([saas-mode-full-setup-guide-faq](saas-mode-full-setup-guide-faq.md))에서 소개한 2단계 주문 폼 대신 SaaS 플랜을 판매하는 대안입니다.
+이 방법은 [SaaS 모드 - 전체 설정 가이드 + FAQ](saas-mode-full-setup-guide-faq.md)에서 소개한 2단계 주문 폼 대신 SaaS 플랜을 판매하는 대안입니다.
 
 ## 1단계: 커스텀 SaaS 플랜 설정하기
 

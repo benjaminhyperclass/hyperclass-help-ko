@@ -50,7 +50,7 @@
 
 **SMS 예시:** "안녕하세요 김소영님, 오늘 ACME 카이로프랙틱에서 저희를 믿고 치료받아 주셔서 감사합니다. 좋은 경험이셨다면 여기서 간단한 리뷰를 남겨주시면 정말 감사하겠습니다: [링크] — 더 많은 분들이 안전하고 양질의 치료를 받을 수 있도록 큰 도움이 됩니다."
 
-**[리뷰 요청 보내는 방법]([how-to-send-review-requests](how-to-send-review-requests.md))**
+**[리뷰 요청 보내는 방법](../../41-평판-리뷰/Review-Requests/how-to-send-review-requests.md)**
 
 ---
 
@@ -61,7 +61,7 @@
 - 프론트 데스크나 수납 카운터에 QR 코드 게시
 - 이메일 서명에 리뷰 버튼 삽입
 
-**[리뷰 위젯 표시하기]([reputation-management-customizing-displaying-the-review-widget](reputation-management-customizing-displaying-the-review-widget.md))**
+**[리뷰 위젯 표시하기](../../41-평판-리뷰/Review-Requests/reputation-management-customizing-displaying-the-review-widget.md)**
 
 ---
 
@@ -79,7 +79,7 @@
 
 **부정적 리뷰 응답 예시:** "안녕하세요 이준호님, 기대에 미치지 못한 경험을 하셨다니 죄송합니다. 문제를 바로잡을 기회를 주시면 감사하겠습니다. 클리닉으로 직접 연락주시면 후속 조치를 취하겠습니다."
 
-**[구글 리뷰 이의 제기]([how-to-dispute-a-google-review-and-check-on-the-dispute-status](how-to-dispute-a-google-review-and-check-on-the-dispute-status.md))**
+**[구글 리뷰 이의 제기](../../41-평판-리뷰/Review-Requests/how-to-dispute-a-google-review-and-check-on-the-dispute-status.md)**
 
 ### **재활성화: 기존 환자 리스트 깨우기**
 
@@ -118,7 +118,7 @@ GHL 내에서 다음이 가능합니다:
 
 리뷰 요청, 뉴스레터, 계절별 프로모션과도 연결할 수 있습니다.
 
-**[미리 구축된 연락처 세그먼트 가이드]([guide-to-pre-built-contact-segments](guide-to-pre-built-contact-segments.md))**
+**[미리 구축된 연락처 세그먼트 가이드](../../10-마케팅/Campaign-Settings/Functionalities/guide-to-pre-built-contact-segments.md)**
 
 ### **스마트 재활성화 캠페인 아이디어**
 

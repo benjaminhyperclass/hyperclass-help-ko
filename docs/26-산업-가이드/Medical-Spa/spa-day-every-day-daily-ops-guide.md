@@ -79,7 +79,7 @@ GHL로 다음을 수행하세요:
 - 자동 문자 발송: "전화를 놓쳐서 죄송합니다! 예약이나 문의 사항이 있으신가요?"
 - 예약 링크나 음성메시지 남기기 안내 포함
 
-[부재중 전화 문자 회신 설정하기](heat-up-your-ads-the-ultimate-blueprint-for-lead-generation-business-growth.md)
+[부재중 전화 문자 회신 설정하기](../HVAC/heat-up-your-ads-the-ultimate-blueprint-for-lead-generation-business-growth.md)
 
 ---
 

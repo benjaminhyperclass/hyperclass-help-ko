@@ -65,7 +65,7 @@
 
 - **Save(저장)**를 클릭하세요.
 
-**더 알아보기:** [템플릿 라이브러리 개요 및 설정](template-library-overview-setup.md)
+**더 알아보기:** [템플릿 라이브러리 개요 및 설정](../../10-마케팅/template-library-overview-setup.md)
 
 **다음 단계:** 퍼널을 한 단계 더 발전시켜 보세요. 커스텀 폼을 연동하여 소중한 방문자 정보를 수집하세요.
 
@@ -84,7 +84,7 @@
 - **Form Editor(폼 편집기)**를 사용하여 필드와 브랜딩을 커스터마이징하세요.
 - **Save(저장)**를 클릭하세요.
 
-**더 알아보기:** [Hyperclass에서 연락처 폼 만들기](how-to-create-a-contact-form-in-highlevel-.md)
+**더 알아보기:** [Hyperclass에서 연락처 폼 만들기](../../02-연락처/기타/how-to-create-a-contact-form-in-highlevel-.md)
 
 **다음 단계:** 자동화를 통해 즉시 후속 조치를 취하여 폼을 더욱 최적화해보세요!
 
@@ -137,7 +137,7 @@
 **더 알아보기:** 
 
 - [도메인 추가 및 DNS 레코드 확인 방법](https://help.gohlighlevel.com/en/support/solutions/articles/155000002220)
-- [퍼널/웹사이트용 루트 도메인/서브도메인 설정하는 방법](how-to-set-up-root-domain-subdomain-for-your-funnels-websites-.md)
+- [퍼널/웹사이트용 루트 도메인/서브도메인 설정하는 방법](../../06-사이트/how-to-set-up-root-domain-subdomain-for-your-funnels-websites-.md)
 
 **다음 단계:** 이제 런칭할 준비가 완료되었습니다! 퍼널을 공유하고 리드가 쏟아져 들어오는 것을 지켜보세요!
 

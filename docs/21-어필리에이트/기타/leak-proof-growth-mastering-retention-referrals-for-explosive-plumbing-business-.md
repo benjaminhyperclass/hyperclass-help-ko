@@ -57,7 +57,7 @@
 예시 메시지:
 "안녕하세요 김철수님, [회사명]의 배관 서비스를 믿고 맡겨주셔서 감사합니다! 모든 것이 잘 작동하고 있나요? 6개월 후 배관 점검을 예약하시면 5만원 할인해드립니다!"
 
-#### [고객 후속 연락을 자동화하는 방법](how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
+#### [고객 후속 연락을 자동화하는 방법](../../24-대학/HighLevel-How-To&#39;s/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
 
 ### 1.2 자동 점검 알림
 
@@ -67,7 +67,7 @@
 예시 메시지:
 "김철수님, 지난 온수기 점검 후 6개월이 지났습니다. 저희가 방문해서 점검해드릴까요? '네'라고 답하시면 바로 처리해드리겠습니다!"
 
-#### [유지보수 알림을 설정하는 방법](how-to-send-users-appointment-reminders.md)
+#### [유지보수 알림을 설정하는 방법](../../23-레거시-자동화/Logic-&amp;-Fulfillment/how-to-send-users-appointment-reminders.md)
 
 ## 2단계: 5성 리뷰를 자동으로 더 많이 받기
 
@@ -138,7 +138,7 @@
 예시 메시지:
 "VIP 배관 플랜에 가입하세요: 연간 가정 배관 점검 + 우선 서비스가 연 19만원! 비용을 절약하고 비싼 응급상황을 피하세요!"
 
-#### [구독(Subscription) 기반 서비스를 설정하는 방법](pause-and-resume-subscriptions.md)
+#### [구독(Subscription) 기반 서비스를 설정하는 방법](../../08-결제/pause-and-resume-subscriptions.md)
 
 ### 4.2 작업 중 예방적 유지보수 업셀하기
 
@@ -167,9 +167,9 @@
 예시 메시지:
 "안녕하세요 [이름]님, 지난 배관 점검 후 6개월이 지났네요. 검사가 필요하신가요? '네'라고 답하시면 예약해드리겠습니다!"
 
-#### [유지보수 플랜을 판매하고 자동화하는 방법](recurring-appointments.md)
+#### [유지보수 플랜을 판매하고 자동화하는 방법](../../04-캘린더-예약/기타/recurring-appointments.md)
 
-#### [고객 유지를 위해 스마트 리스트를 사용하는 방법](getting-started-with-smart-lists.md)
+#### [고객 유지를 위해 스마트 리스트를 사용하는 방법](../../02-연락처/기타/getting-started-with-smart-lists.md)
 
 # 마지막 정리: 고객 유지 = 장기 수익
 

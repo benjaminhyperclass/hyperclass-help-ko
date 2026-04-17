@@ -52,7 +52,7 @@ LeadConnector(LC)에서 귀하의 Twilio로 번호를 이전할 때 사용합니
 
 **국제 번호**의 경우, Account SID 대신 Regulatory Bundle SID와 Address SID, 그리고 전화번호를 제공하세요. 이러한 세부 정보와 선호하는 전환 시간대를 포함하여 Hyperclass 지원 티켓을 엽니다. 저희가 마이그레이션을 조율하고 Twilio에서 트래픽이 활성화되면 확인해드립니다.
 
-자세한 내용은 [전화번호 이전](moving-phone-numbers-from-lc-phone-to-twilio-us-international-.md)을 참조하세요.
+자세한 내용은 [전화번호 이전](../기타/moving-phone-numbers-from-lc-phone-to-twilio-us-international-.md)을 참조하세요.
 
 ---
 
@@ -62,7 +62,7 @@ Twilio에서 LeadConnector(LC)로 번호를 이전할 때 사용합니다. **미
 
 **국제 번호**의 경우, Account SID 대신 Regulatory Bundle SID와 Address SID, 그리고 전화번호를 포함하세요. 이러한 세부 정보와 선호하는 전환 시간대를 포함하여 Hyperclass 지원 티켓을 엽니다. 저희가 이전을 처리하고 테스트할 준비가 되면 알려드립니다.
 
-자세한 내용은 [전화번호 이전](moving-phone-numbers-from-lc-phone-to-twilio-us-international-.md)을 참조하세요.
+자세한 내용은 [전화번호 이전](../기타/moving-phone-numbers-from-lc-phone-to-twilio-us-international-.md)을 참조하세요.
 
 ---
 
@@ -70,7 +70,7 @@ Twilio에서 LeadConnector(LC)로 번호를 이전할 때 사용합니다. **미
 
 두 개의 서로 다른 Hyperclass 에이전시 간에 번호를 이전할 때 사용합니다. 미국 이전의 경우 관련 Twilio Account SID를(국제의 경우 Regulatory Bundle SID + Address SID), 목적지 에이전시 및 하위 계정 ID, 전화번호를 제공하세요. 이러한 세부 정보와 선호하는 전환 시간대를 포함하여 Hyperclass 지원 티켓을 엽니다. 저희가 에이전시 간 이전을 조율하고 목적지 계정에서 번호가 활성화되면 확인해드립니다.
 
-자세한 내용은 [전화번호 이전](moving-phone-numbers-from-lc-phone-to-twilio-us-international-.md)을 참조하세요.
+자세한 내용은 [전화번호 이전](../기타/moving-phone-numbers-from-lc-phone-to-twilio-us-international-.md)을 참조하세요.
 
 중요: 현재 케이스 1(LC→Twilio), 케이스 2(Twilio→LC), 케이스 3(LC→LC — 에이전시가 다른 경우)는 **같은 프로세스를 따릅니다.** 고객은 적절한 Twilio Account SID만 제공하면 됩니다—Twilio로 이전할 때는 수신 SID, Twilio에서 이전할 때는 송신 SID—플러스 목적지 하위 계정 ID와 전화번호. Hyperclass 지원팀이 마이그레이션을 처음부터 끝까지 조율합니다. 국제 번호의 경우, Account SID 대신 Regulatory Bundle SID와 Address SID를 제공하세요.
 
@@ -80,7 +80,7 @@ Twilio에서 LeadConnector(LC)로 번호를 이전할 때 사용합니다. **미
 
 하나의 Hyperclass 에이전시 내에서 두 LC 하위 계정 간에 번호를 전송할 때 사용합니다. Hyperclass 내에서 번호 이전 도구(Settings(설정) → Phone Integration(전화 연동))를 사용하면 원본 번호를 선택하고, 목적지 하위 계정을 선택하여 전송을 완료할 수 있습니다. LC Phone↔LC Phone 및 같은 Twilio 마스터 하에 있는 Twilio 연결 하위 계정과의 전송을 지원하며, Twilio 마스터 불일치나 규제 번들/주소 누락과 같은 일반적인 차단 요인에 대한 참고사항을 제공합니다. LC Phone→LC Phone의 경우 내장 도구가 실패하면 원본 및 목적지 로케이션 ID를 포함하여 Hyperclass 지원팀에 문의하시면 도움을 드립니다.
 
-자세한 내용은 [하위 계정 간 번호 이전](moving-numbers-across-sub-accounts.md)을 참조하세요.
+자세한 내용은 [하위 계정 간 번호 이전](../기타/moving-numbers-across-sub-accounts.md)을 참조하세요.
 
 ---
 
@@ -88,7 +88,7 @@ Twilio에서 LeadConnector(LC)로 번호를 이전할 때 사용합니다. **미
 
 번호가 Twilio가 아닌 통신사에 있고 LeadConnector(LC)에서 관리하고 싶을 때 사용합니다. 번호와 연결된 가이드에서 요청된 통신사 서류를 수집한 후, 원하는 전환 시간대와 함께 Hyperclass 지원 티켓을 엽니다. 저희가 포팅 프로세스를 관리하고 테스트할 준비가 되면 알려드립니다.
 
-자세한 내용은 [전화번호 포팅(Twilio가 아닌 번호)을 로케이션/서브어카운트로]([porting-your-phone-number-non-twilio-number-to-a-location-subaccount](porting-your-phone-number-non-twilio-number-to-a-location-subaccount.md))를 참조하세요.
+자세한 내용은 [전화번호 포팅(Twilio가 아닌 번호)을 로케이션/서브어카운트로](../전화번호/porting-your-phone-number-non-twilio-number-to-a-location-subaccount.md)를 참조하세요.
 
 ---
 

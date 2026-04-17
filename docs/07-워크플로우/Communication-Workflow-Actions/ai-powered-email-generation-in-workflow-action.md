@@ -50,7 +50,7 @@ Hyperclass의 새로운 AI 기반 이메일 액션을 사용하여 몇 초만에
 - 왼쪽 메뉴에서 **Automation(자동화)**를 클릭하세요.
 - **Workflows(워크플로우)**를 선택하세요.
 - 다음 중 하나를 선택하세요:
-  - **+ Create Workflow(워크플로우 만들기)** 버튼을 클릭하여 처음부터 시작하거나 ([워크플로우 빌더 둘러보기](workflow-builder-walkthrough.md) 참조)
+  - **+ Create Workflow(워크플로우 만들기)** 버튼을 클릭하여 처음부터 시작하거나 ([워크플로우 빌더 둘러보기](../기타/workflow-builder-walkthrough.md) 참조)
   - 기존 워크플로우 이름을 클릭하여 편집하세요.
 
 ![AI 기반 이메일 생성 워크플로우](https://jumpshare.com/v/BCG9CVTuRyMgPD8R74CA+/GIF+Recording+2025-06-12+at+8.20.54+PM.gif)

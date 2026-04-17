@@ -42,7 +42,7 @@
 
 노트에 추가는 노트에서 사용할 수 있는 것과 같은 리치 텍스트 편집기 경험을 사용합니다. 리치 텍스트는 굵게, 기울임, 밑줄, 취소선, 글머리 기호 및 번호 목록, 하이퍼링크 등의 일반적인 서식을 지원합니다.
 
-활성화, 지원되는 서식 및 제한 사항에 대해서는 다음을 참조하세요: [노트 및 태스크 설명용 리치 텍스트](rich-text-for-notes-and-task-descriptions.md)
+활성화, 지원되는 서식 및 제한 사항에 대해서는 다음을 참조하세요: [노트 및 태스크 설명용 리치 텍스트](../../36-기타/리커버리/rich-text-for-notes-and-task-descriptions.md)
 
 ![노트에 추가 액션 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155063159298/original/ACydKlXkajP5WS7sTSMAiaQ9vC9VcdO7ew.gif?1769001860)
 

@@ -101,11 +101,11 @@
 
 - #### 구글 비즈니스 프로필에 **주간 업데이트를 게시**하면 **지역 검색 순위**가 향상되고 더 많은 전화를 받을 수 있습니다.
 
-[콘텐츠 AI(Content AI)로 이메일 만드는 방법]([how-to-create-emails-using-content-ai-](how-to-create-emails-using-content-ai-.md))
+[콘텐츠 AI(Content AI)로 이메일 만드는 방법](../../13-AI-Employee/Content-AI-in-the-Email-Builder/how-to-create-emails-using-content-ai-.md)
 
-[콘텐츠 AI(Content AI)로 블로그 포스트 개요 만드는 방법](how-to-create-a-social-post-with-content-ai-.md)
+[콘텐츠 AI(Content AI)로 블로그 포스트 개요 만드는 방법](../../13-AI-Employee/기타/how-to-create-a-social-post-with-content-ai-.md)
 
-[콘텐츠 AI(Content AI)로 소셜 미디어 게시물 만드는 방법](how-to-create-a-social-post-with-content-ai-.md)
+[콘텐츠 AI(Content AI)로 소셜 미디어 게시물 만드는 방법](../../13-AI-Employee/기타/how-to-create-a-social-post-with-content-ai-.md)
 
 ---
 

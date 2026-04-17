@@ -85,7 +85,7 @@ A2P 10DLC 캠페인 재제출은 일반적으로 무료이지만, 원래 거부 
 
 #### 이 변경사항에 예외가 있나요?
 
-[Toll-Free 메시징](how-to-buy-a-toll-free-number-inside-ghl-.md)은 A2P 10DLC의 매력적인 대안으로 남아 있습니다. Toll-Free 메시징은 [검증 과정이 필요하지만](toll-free-number-verification-guide-for-lc-phone-us-canada-.md) 브랜드 및 캠페인 등록에 의존하지 않습니다.
+[Toll-Free 메시징](../전화번호/how-to-buy-a-toll-free-number-inside-ghl-.md)은 A2P 10DLC의 매력적인 대안으로 남아 있습니다. Toll-Free 메시징은 [검증 과정이 필요하지만](../전화번호/toll-free-number-verification-guide-for-lc-phone-us-canada-.md) 브랜드 및 캠페인 등록에 의존하지 않습니다.
 
 ---
 *원문 최종 수정: Mon, 2 Mar, 2026 at 12:05 PM*

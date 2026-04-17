@@ -58,9 +58,9 @@
 
 퍼널과 웹사이트의 주요 차이점:
 
-- [퍼널에서의 분할 테스트](split-testing-in-funnels.md) - 퍼널에서만 분할 테스트가 가능합니다. 퍼널의 분할 테스트는 페이지의 변형을 만들어 어느 것이 더 나은지 확인하는 기능입니다.
+- [퍼널에서의 분할 테스트](../../06-사이트/기타/split-testing-in-funnels.md) - 퍼널에서만 분할 테스트가 가능합니다. 퍼널의 분할 테스트는 페이지의 변형을 만들어 어느 것이 더 나은지 확인하는 기능입니다.
 
-- [이커머스 (온라인 스토어)](how-to-set-up-an-e-commerce-online-store-websites-.md) - 웹사이트에서만 이커머스(온라인 스토어) 기능을 생성하고 활용할 수 있습니다.
+- [이커머스 (온라인 스토어)](../../37-이커머스-스토어/E-Commerce-Store/how-to-set-up-an-e-commerce-online-store-websites-.md) - 웹사이트에서만 이커머스(온라인 스토어) 기능을 생성하고 활용할 수 있습니다.
 
 - 페이지 뷰 UI - 퍼널이나 웹사이트 뷰에 있는지에 따라 페이지 뷰 UI가 다릅니다.
 
@@ -217,7 +217,7 @@
 
 ![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037898231/original/Xy0T7GQvISncWbZ1NrHrYVWgZA02xeN4Lw.png?1733497032)
 
-섹션에 비디오 배경을 설정하고 싶으신가요? 여기서 방법을 알아보세요: [비디오 배경](video-background.md)
+섹션에 비디오 배경을 설정하고 싶으신가요? 여기서 방법을 알아보세요: [비디오 배경](../../36-기타/리커버리/video-background.md)
 
 ---
 

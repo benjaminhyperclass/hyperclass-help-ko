@@ -112,7 +112,7 @@ GHL 내에서 **소셜 플래너(Social Planner)**를 사용해서:
 
 - 주간 또는 월간으로 예약
 
-**[소셜 플래너 사용법]([getting-started-setup-social-planner](getting-started-setup-social-planner.md))**
+**[소셜 플래너 사용법](../../01-시작하기/마케팅-리드-생성/getting-started-setup-social-planner.md)**
 
 주 1회 또는 격주로 콘텐츠를 일괄 작업하세요. 설정하고, 잊어버리고, 브랜드가 계속 노출되는 것을 지켜보세요.
 
@@ -146,7 +146,7 @@ GHL 내에서 **소셜 플래너(Social Planner)**를 사용해서:
 
 **인스타그램 인사이트에 따르면 "지금 예약" 또는 "스와이프 업" CTA가 포함된 스토리는 3배 더 높은 클릭률을 보입니다.**
 
-**[소셜 플래너를 위한 인스타그램 릴스 게시 가이드](instagram-reels-publishing-guide-for-the-social-planner.md)**
+**[소셜 플래너를 위한 인스타그램 릴스 게시 가이드](../../10-마케팅/기타/instagram-reels-publishing-guide-for-the-social-planner.md)**
 
 ## **마무리: 압박 없이, 목적을 가지고 포스팅하기**
 

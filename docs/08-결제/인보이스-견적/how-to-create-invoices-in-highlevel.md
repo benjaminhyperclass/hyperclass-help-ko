@@ -30,7 +30,7 @@
 
 참고사항:
 
-Stripe Connect 없이 인보이싱을 사용하는 경우 이 가이드를 참조하세요 - [Stripe Connect 없이 수동 결제 기록용 인보이스 사용하기](common-uses-cases-for-payments-and-invoices.md)
+Stripe Connect 없이 인보이싱을 사용하는 경우 이 가이드를 참조하세요 - [Stripe Connect 없이 수동 결제 기록용 인보이스 사용하기](../기타/common-uses-cases-for-payments-and-invoices.md)
 
 Stripe Connect 없이 인보이싱을 사용할 때의 제한사항은 사용자가 결제를 수동으로 기록해야 한다는 점입니다.
 
@@ -133,7 +133,7 @@ Transactions(거래) 탭은 새로운 UI에서만 사용할 수 있습니다.
 
 [정기 인보이스 만드는 방법](how-to-create-and-manage-recurring-invoices-in-highlevel.md)
 
-[정기 템플릿에서 자동 결제](auto-payments-in-recurring-templates.md)
+[정기 템플릿에서 자동 결제](../기타/auto-payments-in-recurring-templates.md)
 
 ---
 *원문 최종 수정: Mon, 21 Jul, 2025 at 7:45 AM*

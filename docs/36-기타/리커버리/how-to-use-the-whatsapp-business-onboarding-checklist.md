@@ -44,7 +44,7 @@
 
 Hyperclass에서 왓츠앱 비즈니스와 함께 원활한 온보딩 프로세스를 진행하는 것은 이 가이드 체크리스트로 간단합니다. 다음 설정 단계를 따라하세요:
 
-- 이 [가이드](how-to-set-up-whatsapp-for-a-sub-account.md)를 따라 [왓츠앱 비즈니스 구성](how-to-set-up-whatsapp-for-a-sub-account.md)을 완료하세요.
+- 이 [가이드](../../31-리셀링/WhatsApp/how-to-set-up-whatsapp-for-a-sub-account.md)를 따라 [왓츠앱 비즈니스 구성](../../31-리셀링/WhatsApp/how-to-set-up-whatsapp-for-a-sub-account.md)을 완료하세요.
 
 - 구성이 완료되면 What's Next 버튼이 자동으로 나타납니다.
 ![왓츠앱 비즈니스 설정 후 나타나는 What's Next 버튼](https://jumpshare.com/share/MdXV5FFGqYeDbBFaoIxg+/image.png)

@@ -104,7 +104,7 @@ Voice Integrity를 활성화하기 전에 다음 요구사항을 충족하는지
 
 ## SHAKEN/STIR 인증 활성화(미국 전용)
 
-**참고 - SHAKEN/STIR 등록을 완료하려면 EIN(고용주 식별 번호)이 필요합니다. EIN이 없으면 대신 [Free Call Registry](remediate-spam-likely-on-your-caller-id-using-free-caller-registry.md)에 번호를 등록하는 것을 권장합니다.**
+**참고 - SHAKEN/STIR 등록을 완료하려면 EIN(고용주 식별 번호)이 필요합니다. EIN이 없으면 대신 [Free Call Registry](../통화/remediate-spam-likely-on-your-caller-id-using-free-caller-registry.md)에 번호를 등록하는 것을 권장합니다.**
 
 SHAKEN/STIR는 발신자 ID 정보를 인증하고 합법적인 출처에서 오는 것인지 확인하도록 설계된 프로토콜 세트입니다. 이 프로토콜은 디지털 인증서를 사용하여 발신자의 신원을 검증하는 방식으로 작동합니다. 전화를 걸면 발신자의 신원이 이러한 인증서를 통해 검증되고, 이후 온라인 데이터베이스에 저장됩니다. 이를 통해 누군가가 전화를 받을 때 생각하는 사람으로부터 오는 것이라고 신뢰할 수 있습니다.
 

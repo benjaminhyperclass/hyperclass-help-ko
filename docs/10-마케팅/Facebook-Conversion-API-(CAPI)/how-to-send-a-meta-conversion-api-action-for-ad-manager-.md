@@ -58,8 +58,8 @@
 ![연결 유형 옵션 - 광고 관리자](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051770608/original/MsYr_VqK6pzvkMnj27jUWl_oLbHT_0pitw.png?1755497312)
 
 **참고:** 연동 연결 유형과 관련된 모든 정보 및 각 필드의 세부사항은 다음 두 가이드를 참조하여 자세히 이해할 수 있습니다:
-[Meta conversion leads walkthrough]([facebook-conversion-leads-walkthrough](facebook-conversion-leads-walkthrough.md))
-[Setup a funnel event for Meta conversion API]([how-to-set-up-a-funnel-event-pixel-for-facebook-conversion-api-](how-to-set-up-a-funnel-event-pixel-for-facebook-conversion-api-.md))
+[Meta conversion leads walkthrough](../../42-통합/Facebook-Integration/facebook-conversion-leads-walkthrough.md)
+[Setup a funnel event for Meta conversion API](../../42-통합/Facebook-Integration/how-to-set-up-a-funnel-event-pixel-for-facebook-conversion-api-.md)
 
 연결 유형으로 광고 관리자 옵션을 추가한 주된 목적은 사용자 플로우를 간소화하고 Meta와 워크플로우 간의 지속적인 이동 번거로움을 줄이는 것입니다. 이 추가로 최소화되는 노력들은 다음과 같습니다:
 

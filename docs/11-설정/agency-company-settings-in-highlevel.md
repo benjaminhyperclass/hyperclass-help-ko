@@ -70,12 +70,12 @@
 
 에이전시 수준 도구와 자동화 도우미를 활성화하거나 비활성화합니다:
 
-- AI Employee(AI 직원) – 반복 작업을 처리하는 스마트 어시스턴트. 자세한 내용은 [AI Employee 개요](ai-employee.md) 참고
-- Workflow AI(워크플로우 AI) – 워크플로우에 AI 로직 주입. 자세한 내용은 [워크플로우 AI 활성화 및 재청구 방법](how-to-enable-and-rebill-workflow-ai-.md) 참고
-- Auto-complete Address(주소 자동완성) – 고객을 위한 폼 사용성 개선. 자세한 내용은 [주소 자동완성 사용 및 재청구 방법](how-to-rebill-autocompleted-address.md) 참고
+- AI Employee(AI 직원) – 반복 작업을 처리하는 스마트 어시스턴트. 자세한 내용은 [AI Employee 개요](../13-AI-Employee/기타/ai-employee.md) 참고
+- Workflow AI(워크플로우 AI) – 워크플로우에 AI 로직 주입. 자세한 내용은 [워크플로우 AI 활성화 및 재청구 방법](../07-워크플로우/기타/how-to-enable-and-rebill-workflow-ai-.md) 참고
+- Auto-complete Address(주소 자동완성) – 고객을 위한 폼 사용성 개선. 자세한 내용은 [주소 자동완성 사용 및 재청구 방법](../36-기타/리커버리/how-to-rebill-autocompleted-address.md) 참고
 - LC - Premium Triggers & Actions(LC 프리미엄 트리거 & 액션) – 워크플로우에서 프리미엄 트리거 및 액션 사용. 자세한 내용은 워크플로우용 LC 프리미엄 트리거 & 액션 활성화 및 재청구 방법 참고
-- Domain Purchase(도메인 구매) – 고객이 플랫폼 내에서 도메인을 구매할 수 있도록 허용. 자세한 내용은 [도메인 구매 활성화 및 재청구 방법]([how-to-enable-and-rebill-domain-purchase-](how-to-enable-and-rebill-domain-purchase-.md)) 참고
-- Template Library(템플릿 라이브러리) – 퍼널, 웹사이트, 템플릿 공유. 자세한 내용은 [템플릿 라이브러리 개요 & 설정](how-does-the-template-library-work.md) 참고
+- Domain Purchase(도메인 구매) – 고객이 플랫폼 내에서 도메인을 구매할 수 있도록 허용. 자세한 내용은 [도메인 구매 활성화 및 재청구 방법](Domain-Purchase-/-Transfer/how-to-enable-and-rebill-domain-purchase-.md) 참고
+- Template Library(템플릿 라이브러리) – 퍼널, 웹사이트, 템플릿 공유. 자세한 내용은 [템플릿 라이브러리 개요 & 설정](../36-기타/리커버리/how-does-the-template-library-work.md) 참고
 
 ![기능 토글 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044337953/original/xnOPK0YA9R1yLprHbL4NAXJ1vp4qG8uDDg.png?1743518036)
 
@@ -118,8 +118,8 @@
 
 자체 커스텀 도메인을 설정하여 로그인 경험과 링크 추적을 완전히 화이트라벨링합니다. 이러한 도메인은 고객과의 상호작용에서 HighLevel 브랜딩을 제거하고 신뢰와 전문성을 높입니다.
 
-- Whitelabel Domain(화이트라벨 도메인) – 데스크톱 로그인 포털을 위한 브랜딩 도메인. 자세한 내용은 [데스크톱 웹앱용 화이트라벨 도메인 설정 방법](white-label-the-desktop-app.md) 참고
-- API Domain(API 도메인) – 에이전시와 하위 계정 수준에서 브랜딩 도메인을 설정하여 HighLevel에서 시스템 생성 링크를 커스터마이즈합니다. 자세한 내용은 [시스템 생성 링크 브랜딩 (API 도메인)]([branding-system-generated-links-api-domain-](branding-system-generated-links-api-domain-.md)) 참고
+- Whitelabel Domain(화이트라벨 도메인) – 데스크톱 로그인 포털을 위한 브랜딩 도메인. 자세한 내용은 [데스크톱 웹앱용 화이트라벨 도메인 설정 방법](../16-SaaS-설정/기타/white-label-the-desktop-app.md) 참고
+- API Domain(API 도메인) – 에이전시와 하위 계정 수준에서 브랜딩 도메인을 설정하여 HighLevel에서 시스템 생성 링크를 커스터마이즈합니다. 자세한 내용은 [시스템 생성 링크 브랜딩 (API 도메인)](branding-system-generated-links-api-domain-.md) 참고
 
 ![커스텀 도메인 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044339622/original/jTYvfdGNgSGxMssSBWjrQSVZeYDPoXPd8g.png?1743519570)
 
@@ -130,7 +130,7 @@
 - Privacy Policy URL(개인정보처리방침 URL) – 대부분의 공개 위젯에서 규정 준수를 위해 필요
 - Terms & Conditions URL(이용약관 URL) – 고객이 사용 의무를 이해하는 데 도움
 
-자세한 내용은 [GDPR 규정 준수 및 데이터 개인정보보호]([gdpr-compliance-and-data-privacy](gdpr-compliance-and-data-privacy.md)) 참고
+자세한 내용은 [GDPR 규정 준수 및 데이터 개인정보보호](../25-애드온-세일즈/Compliance/gdpr-compliance-and-data-privacy.md) 참고
 
 ![정책 URL 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044341061/original/Z6eP9slBs3i0GYs9ALWwq15wkU8ewCFNUg.png?1743520947)
 
@@ -260,7 +260,7 @@
 - 민감한 API 엔드포인트에 대한 CRUD 액세스 제한
 - 오픈 액세스로 인한 우발적 데이터 유출 방지
 
-자세한 내용은 [강화된 계정 보안]([enhanced-account-security](enhanced-account-security.md)) 참고
+자세한 내용은 [강화된 계정 보안](../35-개발자/Developer-Resources/enhanced-account-security.md) 참고
 
 ![강화된 보안 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044341172/original/MpCl51t2fT5IplW1Hp6bAosQy4-8JtyWkg.png?1743521103)
 

@@ -8,7 +8,7 @@
 
 장바구니 이탈 고객을 복구하는 것은 전환율을 높이고 매출을 극대화하는 핵심 전략입니다. 워크플로우의 장바구니 이탈 트리거(Abandoned Checkout Trigger)를 사용하면 구매를 완료하지 않고 사이트를 떠난 잠재 고객에게 자동으로 후속 조치를 취할 수 있습니다. 이 가이드에서는 이 트리거의 기능, 장점, 설정 방법, 그리고 자주 묻는 질문을 설명합니다.
 
-이 트리거는 Shopify 연동을 위한 것입니다. HighLevel 이커머스 스토어의 장바구니 이탈 이메일 및 공유 가능한 링크에 대해서는 [자동 장바구니 이탈 이메일로 손실 매출 복구하기](recover-lost-sales-with-automatic-abandoned-checkout-emails.md)를 참조하세요.
+이 트리거는 Shopify 연동을 위한 것입니다. HighLevel 이커머스 스토어의 장바구니 이탈 이메일 및 공유 가능한 링크에 대해서는 [자동 장바구니 이탈 이메일로 손실 매출 복구하기](../../37-이커머스-스토어/E-Commerce-Store/recover-lost-sales-with-automatic-abandoned-checkout-emails.md)를 참조하세요.
 
 ---
 

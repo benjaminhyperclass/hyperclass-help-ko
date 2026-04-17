@@ -66,15 +66,15 @@
 
 ✅ Hyperclass의 전화 추적 번호를 사용하세요—배관 설비 리드가 어디서 오는지 정확히 추적할 수 있습니다.
 
-[전화 추적 번호 설정 방법]([call-tracking-and-missed-call-text-back-through-google-business-profile](call-tracking-and-missed-call-text-back-through-google-business-profile.md))
+[전화 추적 번호 설정 방법](../../41-평판-리뷰/Review-Requests/call-tracking-and-missed-call-text-back-through-google-business-profile.md)
 
 ✅ 구글 리뷰를 자동화하세요: 배관 작업 완료 후 자동으로 리뷰를 요청하여 랭킹을 빠르게 높이세요.
 
-[구글 리뷰 자동화 방법]([how-to-setup-workflow-triggers-for-google-and-facebook-reviews](how-to-setup-workflow-triggers-for-google-and-facebook-reviews.md))
+[구글 리뷰 자동화 방법](../../41-평판-리뷰/Review-Requests/how-to-setup-workflow-triggers-for-google-and-facebook-reviews.md)
 
 ✅ 매주 구글 게시물을 올리세요(Hyperclass가 자동화합니다!)—검색 결과 상위를 유지하세요.
 
-[구글 비즈니스 프로필 최적화 방법](how-to-integrate-your-google-business-profile-formerly-gmb-into-the-crm.md)
+[구글 비즈니스 프로필 최적화 방법](../../11-설정/기타/how-to-integrate-your-google-business-profile-formerly-gmb-into-the-crm.md)
 
 구글 게시물 예시: 
 "방금 [도시명]에서 또 다른 응급 파이프 파열을 해결했습니다! 즉시 도움이 필요하신가요? 저희 배관공이 30분 내에 도착합니다. 지금 전화하세요!"
@@ -95,23 +95,23 @@
 
 ✅ 배관 설비 웹사이트에 채팅 위젯(Chat Widget)을 설치하세요—고객이 즉시 메시지를 보낼 수 있게 됩니다.
 
-[채팅 위젯 설정 방법]([getting-started-with-chat-widget](getting-started-with-chat-widget.md))
+[채팅 위젯 설정 방법](../../06-사이트/getting-started-with-chat-widget.md)
 
 ✅ 부재중 전화 문자 응답을 활성화하세요—Hyperclass가 부재중 전화에 즉시 자동으로 문자를 보냅니다.
 
-[부재중 전화 문자 응답 설정하기]([where-and-how-to-configure-the-missed-call-text-back-feature](where-and-how-to-configure-the-missed-call-text-back-feature.md))
+[부재중 전화 문자 응답 설정하기](../../11-설정/서브어카운트-설정/where-and-how-to-configure-the-missed-call-text-back-feature.md)
 
 ✅ 예약 링크를 통한 즉시 예약 스케줄링을 활성화하세요—고객이 지연 없이 즉시 예약할 수 있게 하세요.
 
-[정기 후속 관리 설정하기](recurring-appointments.md)
+[정기 후속 관리 설정하기](../../04-캘린더-예약/기타/recurring-appointments.md)
 
 ✅ AI 기반 응답을 사용하여 일반적인 배관 질문에 즉시 답변하고 자동으로 일정을 예약하세요.
 
-[AI 기반 청소 업무 후속 관리 설정 방법]([how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder](how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md))
+[AI 기반 청소 업무 후속 관리 설정 방법](../../24-대학/HighLevel-How-To&#39;s/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
 
-[음성 AI 에이전트 설정 방법](creating-voice-ai-agents.md)
+[음성 AI 에이전트 설정 방법](../../13-AI-Employee/기타/creating-voice-ai-agents.md)
 
-[대화 AI 에이전트 설정 방법]([how-to-use-conversation-ai-to-book-appointments](how-to-use-conversation-ai-to-book-appointments.md))
+[대화 AI 에이전트 설정 방법](../../13-AI-Employee/Conversation-AI---Goals,-Prompts,-&-Actions/how-to-use-conversation-ai-to-book-appointments.md)
 
 후속 관리 SMS 예시:
 "안녕하세요 [고객명]님, [배관업체명]에 연락 주셔서 감사합니다! 응급 배관 서비스나 예약이 필요하시면 여기서 바로 예약하세요: [링크]"
@@ -161,19 +161,19 @@
 
 [구글 LSA 실행 방법](https://ads.google.com/intl/en_us/home/local-services-ads/)
 
-[LSA를 Hyperclass와 연동하는 방법]([reserve-with-google-integration-local-services-ads-lsa-](reserve-with-google-integration-local-services-ads-lsa-.md))
+[LSA를 Hyperclass와 연동하는 방법](../../04-캘린더-예약/캘린더-연동/reserve-with-google-integration-local-services-ads-lsa-.md)
 
 ✅ 타겟팅된 페이스북 리드 광고 사용하기—지역의 주택 및 상업용 배관 설비 리드를 확보하세요.
 
-[Hyperclass에서 페이스북 광고 운영 방법](create-new-ad-campaign-in-ad-manager.md)
+[Hyperclass에서 페이스북 광고 운영 방법](../../10-마케팅/기타/create-new-ad-campaign-in-ad-manager.md)
 
 ✅ 리타겟팅 광고 활성화—웹사이트를 방문했지만 아직 예약하지 않은 잠재고객에게 접근하세요.
 
-[전화 추적 번호 풀 설정하기]([how-to-set-up-call-tracking-number-pool-](how-to-set-up-call-tracking-number-pool-.md))
+[전화 추적 번호 풀 설정하기](../../15-전화-시스템/통화/how-to-set-up-call-tracking-number-pool-.md)
 
 ✅ 전화 추적 번호 활용—어떤 배관 설비 광고가 가장 수익성 높은 리드를 만들어내는지 정확히 추적하세요.
 
-[전환되는 청소 및 유지보수 광고 운영 방법]([overview-of-ad-manager](overview-of-ad-manager.md))
+[전환되는 청소 및 유지보수 광고 운영 방법](../../10-마케팅/Getting-Started-w/-Ad-Manager/overview-of-ad-manager.md)
 
 배관 설비 광고 예시:
 "응급 파이프 누수? 1시간 내에 도착합니다. 지금 [전화번호]로 전화하고 첫 배관 서비스 10% 할인받으세요!"
@@ -194,17 +194,17 @@
 
 ✅ 페이스북과 인스타그램에 매주 게시하세요—배관 수리 전후 사진, 현장 영상, 배관 팁을 올리세요.
 
-[소셜미디어에서 리뷰 공유하는 방법](share-your-reviews-as-posts-on-social-media-using-social-planner.md)
+[소셜미디어에서 리뷰 공유하는 방법](../../10-마케팅/기타/share-your-reviews-as-posts-on-social-media-using-social-planner.md)
 
 ✅ 구글 비즈니스 프로필에 매주 자동 업데이트—지역 배관 설비 검색 노출도를 높이세요.
 
 ✅ 이메일 뉴스레터를 통해 정기적인 배관 팁과 유지보수 가이드 발송—재방문 사업을 증가시키세요.
 
-[HVAC 블로그 만드는 방법]([how-to-create-a-blog-](how-to-create-a-blog-.md))
+[HVAC 블로그 만드는 방법](../../06-사이트/how-to-create-a-blog-.md)
 
-[블로그 RSS 피드 설정 방법](how-to-set-up-an-rss-feed-for-blogs.md)
+[블로그 RSS 피드 설정 방법](../../06-사이트/기타/how-to-set-up-an-rss-feed-for-blogs.md)
 
-[RSS 이메일 캠페인 설정 방법]([how-to-send-rss-email-campaign-s-](how-to-send-rss-email-campaign-s-.md))
+[RSS 이메일 캠페인 설정 방법](../../10-마케팅/RSS-Guide/how-to-send-rss-email-campaign-s-.md)
 
 ✅ Hyperclass의 소셜미디어 플래너를 사용하여 게시를 자동화하세요—추가 노력 없이 운영됩니다.
 
@@ -225,17 +225,17 @@
 
 ### 더 자세한 가이드:
 
-**[일감 쇄도: 구글 검색을 지배하는 배관공의 가이드](flooded-with-work-the-plumber.md)**
+**[일감 쇄도: 구글 검색을 지배하는 배관공의 가이드](../기타/flooded-with-work-the-plumber.md)**
 
 **누수 없는 성장: 배관 설비 사업 폭발적 성공을 위한 고객 유지 및 추천 마스터하기**
 
 **PipeLine 수익: 배관 설비 사업을 가득 차게 만드는 검증된 광고 전략**
 
-**[파이프, 게시물 & 수익: 배관업 소셜미디어 지배 가이드]([pipes-posts-profits-the-plumbing-social-media-domination-playbook](pipes-posts-profits-the-plumbing-social-media-domination-playbook.md))**
+**[파이프, 게시물 & 수익: 배관업 소셜미디어 지배 가이드](pipes-posts-profits-the-plumbing-social-media-domination-playbook.md)**
 
-**[파이프라인에서 수익까지: 배관 설비 사업 콘텐츠 가이드]([pipeline-to-profits-the-plumbing-business-content-playbook](pipeline-to-profits-the-plumbing-business-content-playbook.md))**
+**[파이프라인에서 수익까지: 배관 설비 사업 콘텐츠 가이드](pipeline-to-profits-the-plumbing-business-content-playbook.md)**
 
-**[PipeDream 운영: 배관 설비업을 위한 완벽 일일 운영 가이드]([pipedream-operations-the-ultimate-daily-ops-playbook-for-plumbing-businesses](pipedream-operations-the-ultimate-daily-ops-playbook-for-plumbing-businesses.md))**
+**[PipeDream 운영: 배관 설비업을 위한 완벽 일일 운영 가이드](pipedream-operations-the-ultimate-daily-ops-playbook-for-plumbing-businesses.md)**
 
 ## 배관 설비 사업을 더 빠르게 성장시킬 준비가 되셨나요?
 

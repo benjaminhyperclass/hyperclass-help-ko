@@ -68,7 +68,7 @@ PayPal 자동 지급을 설정하는 방법을 알아보려면 [여기를 클릭
 
 - [PayPal 자동 지급을 사용하여 제휴 마케터 설정 및 지급하기](how-to-set-up-and-pay-affiliates-using-paypal-auto-payouts.md)
 - [제휴 지급 FAQ](faqs-for-affiliate-payouts.md)
-- [지급을 위한 제휴 마케터의 PayPal 계정 추가/연결 방법](how-to-add-link-affiliate-s-paypal-account-for-payouts.md)
+- [지급을 위한 제휴 마케터의 PayPal 계정 추가/연결 방법](../../21-어필리에이트/기타/how-to-add-link-affiliate-s-paypal-account-for-payouts.md)
 
 ---
 *원문 최종 수정: 2025년 9월 30일*

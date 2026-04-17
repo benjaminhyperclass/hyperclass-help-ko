@@ -25,15 +25,15 @@
 #### [동영상 추적 워크플로우를 설정하는 방법](#동영상-추적-워크플로우를-설정하는-방법)
 
 관련 가이드:
-[퍼널용 호스팅 동영상 플레이어](hosted-video-player-for-funnels.md)
+[퍼널용 호스팅 동영상 플레이어](../../06-사이트/기타/hosted-video-player-for-funnels.md)
 
 ## 워크플로우를 통한 진행률 추적을 위해 동영상을 준비하는 방법
 
 1. 동영상은 인코딩이 완료되어야 [동영상 추적 워크플로우 트리거의 필터에 표시](https://www.loom.com/share/a8bf99ab64e64a7ca11814dd81e56e5f?t=58)됩니다.
 
-2. 정확한 진행률 추적을 위해 동영상 요소(Element) 설정에서 [진행률 표시줄 보기(Show Progress Bar)](hosted-video-player-for-funnels.md) 기능을 끄는 것을 권장합니다. 이렇게 하면 시청자가 동영상을 앞뒤로 이동할 수 없게 되어 정확한 진행률 추적이 가능합니다.
+2. 정확한 진행률 추적을 위해 동영상 요소(Element) 설정에서 [진행률 표시줄 보기(Show Progress Bar)](../../06-사이트/기타/hosted-video-player-for-funnels.md) 기능을 끄는 것을 권장합니다. 이렇게 하면 시청자가 동영상을 앞뒤로 이동할 수 없게 되어 정확한 진행률 추적이 가능합니다.
 
-3. 또한 [미등록 방문자 리다이렉트(Redirect for Unregistered Visitors)](hosted-video-player-for-funnels.md) 설정도 권장합니다.
+3. 또한 [미등록 방문자 리다이렉트(Redirect for Unregistered Visitors)](../../06-사이트/기타/hosted-video-player-for-funnels.md) 설정도 권장합니다.
 
 ![동영상 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48267965986/original/a7CWc559by_lfZpsC_oQlasIw2tEKr3M_A.png?1670417458)
 

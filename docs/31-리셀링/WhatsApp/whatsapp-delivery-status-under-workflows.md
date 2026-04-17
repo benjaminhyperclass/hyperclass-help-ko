@@ -18,7 +18,7 @@
 
 하위 계정에서 WhatsApp을 구독하고 활성화해야 합니다. 하위 계정에서 WhatsApp을 설정하는 방법은 다음 문서를 참고하세요: WhatsApp 하위계정 설정
 
-또한 비즈니스 주도 대화를 보내려면 승인된 템플릿이 필요합니다. [WhatsApp 템플릿 만드는 방법]([how-to-create-a-whatsapp-template-](how-to-create-a-whatsapp-template-.md))을 참고하세요.
+또한 비즈니스 주도 대화를 보내려면 승인된 템플릿이 필요합니다. [WhatsApp 템플릿 만드는 방법](how-to-create-a-whatsapp-template-.md)을 참고하세요.
 
 ## WhatsApp 전송 상태 레시피
 

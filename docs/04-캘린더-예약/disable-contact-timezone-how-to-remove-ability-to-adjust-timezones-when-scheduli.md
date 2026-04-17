@@ -35,7 +35,7 @@
 
 ![연락처 시간대 비활성화 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155030185542/original/DgO5KET5wV9we4ObDucJ6JN8nyQqbPLa_A.jpg?1722368528)
 
-[비즈니스 프로필 설정에 대해 더 자세히 알아보기](business-profile-settings.md)
+[비즈니스 프로필 설정에 대해 더 자세히 알아보기](../11-설정/Business-Profile-Settings/business-profile-settings.md)
 
 ## 비즈니스 시간대 설정하기(하위 계정)
 
@@ -45,7 +45,7 @@
 
 ![비즈니스 시간대 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155030185645/original/pNMEWsxjngCfxul2zRC9UXhcjrjGQJ9Fmw.jpg?1722368816)
 
-[비즈니스 프로필 설정에 대해 더 자세히 알아보기](business-profile-settings.md)
+[비즈니스 프로필 설정에 대해 더 자세히 알아보기](../11-설정/Business-Profile-Settings/business-profile-settings.md)
 
 ## 예약 시 연락처가 보게 되는 화면
 

@@ -67,7 +67,7 @@ PDF 커스터마이징을 사용하면 프로스펙팅 보고서 빌더(Prospect
 
 - 테두리 및 색상 - 브랜드에 맞게 테두리 색상을 커스터마이징합니다.
 - 제목 색상 - 섹션 제목(Local Rank Tracker, Tech Stack Analysis 등)을 브랜드 색상에 맞춥니다.
-- 보고서 커스터마이징에 대한 자세한 가이드는 [프로스펙팅 도구 - 완전히 커스터마이징 가능한 잠재 고객 보고서 빌더](prospecting-tool-fully-customizable-prospect-report-builder.md) 문서를 확인하세요.
+- 보고서 커스터마이징에 대한 자세한 가이드는 [프로스펙팅 도구 - 완전히 커스터마이징 가능한 잠재 고객 보고서 빌더](../Premium-Prospecting/prospecting-tool-fully-customizable-prospect-report-builder.md) 문서를 확인하세요.
 
 ![색상 및 테두리 설정](https://jumpshare.com/share/2WaHW6naTKrLmio6qq5k+/Screenshot+2025-10-02+at+6.04.06%E2%80%AFPM.png)
 

@@ -225,9 +225,9 @@ Hyperclass는 Google 캘린더, Outlook 등 주요 캘린더 플랫폼과의 연
 ## 관련 문서
 
 - [음성 AI 에이전트 대시보드](voice-ai-agents-dashboard.md)
-- [음성 AI 에이전트 생성하기](how-to-create-voice-ai-agents.md)
-- [AI 음성 에이전트 개요](ai-voice-agents-overview.md)
-- [음성 AI 에이전트 테스트하기](testing-voice-ai-agents.md)
+- [음성 AI 에이전트 생성하기](../how-to-create-voice-ai-agents.md)
+- [AI 음성 에이전트 개요](../ai-voice-agents-overview.md)
+- [음성 AI 에이전트 테스트하기](../testing-voice-ai-agents.md)
 
 ---
 *원문 최종 수정: Wed, 21 Jan, 2026 at 8:01 AM*

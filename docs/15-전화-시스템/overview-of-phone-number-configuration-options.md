@@ -77,7 +77,7 @@ Hyperclass의 전화번호 설정은 각 전화번호가 인바운드 및 아웃
 
 참고: 이 옵션은 인증된 전화번호에만 적용됩니다.
 
-가이드 확인하기: [인증된 발신자 ID 설정 방법(음성 통화에 번호 사용)](how-to-set-up-verified-caller-id-use-your-number-for-voice-calls-.md)
+가이드 확인하기: [인증된 발신자 ID 설정 방법(음성 통화에 번호 사용)](LC-Phone/how-to-set-up-verified-caller-id-use-your-number-for-voice-calls-.md)
 
 ![인증된 번호 발신자 ID](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155057718324/original/a9saTYiTOcds2qNCTlNd9E4ATgT73UTMeg.png?1762425889)
 
@@ -147,7 +147,7 @@ Hyperclass의 전화번호 설정은 각 전화번호가 인바운드 및 아웃
 - 통화가 들어오면 선택된 모든 사용자의 전화가 누군가 응답하거나 통화 시간이 초과될 때까지 동시에 울립니다.
 - 이러한 통화를 받을 수 있는 최대 7명의 사용자를 배정할 수 있으며, 일부 팀원을 사용할 수 없는 경우에도 중요한 통화가 신속하게 응답되도록 보장하는 데 도움이 됩니다.
 
-자세한 내용은 다음 문서를 확인하세요: [여러 사용자에게 수신 통화 연결하기](ring-incoming-call-to-multiple-users.md)
+자세한 내용은 다음 문서를 확인하세요: [여러 사용자에게 수신 통화 연결하기](통화/ring-incoming-call-to-multiple-users.md)
 
 ![여러 사용자에게 통화 연결](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155057719840/original/sv91gQ0StZbqRgm8wzk71HMR9I5PGkL7nA.png?1762426217)
 
@@ -161,7 +161,7 @@ A: 시스템은 인바운드와 아웃바운드 타임아웃 모두 기본값인
 **Q: 무료 전화번호를 인증할 때 어떤 URL을 제공해야 하나요?**  
 A: 고객이 찾아서 확인할 수 있는 공식 비즈니스 웹사이트 URL을 사용하세요.
 
-자세한 정보는 이 문서를 확인하세요 - [LC - Phone(미국/캐나다) 무료 전화번호 인증 가이드](toll-free-number-verification-guide-for-lc-phone-us-canada-.md)
+자세한 정보는 이 문서를 확인하세요 - [LC - Phone(미국/캐나다) 무료 전화번호 인증 가이드](전화번호/toll-free-number-verification-guide-for-lc-phone-us-canada-.md)
 
 **Q: 같은 번호를 여러 사용자에게 배정할 수 있나요?**  
 A: 네, "선택된 사용자에게 수신 통화 연결" 하에서 단일 번호에 최대 7명의 사용자를 배정할 수 있습니다.

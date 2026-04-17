@@ -8,7 +8,7 @@
 
 이 가이드는 Hyperclass 워크플로우에서 최신 GPT-4 Turbo를 포함한 GPT 기반 AI 모델을 사용하는 방법을 설명합니다. AI 단계 설정, 스마트 프롬프트 구성, 리드 후속 조치, 대화 요약, 개인화된 메시징 등 강력한 작업을 자동화하는 방법을 알아보세요.
 
-**참고:** 이 가이드는 ChatGPT와 GPT-4 버전에 대한 내용입니다. 워크플로우에서 AI를 사용하는 방법을 알고 싶으시면 [워크플로우 액션 - OpenAI 기반 GPT](workflow-action-gpt-powered-by-openai.md) 가이드를 참고하세요.
+**참고:** 이 가이드는 ChatGPT와 GPT-4 버전에 대한 내용입니다. 워크플로우에서 AI를 사용하는 방법을 알고 싶으시면 [워크플로우 액션 - OpenAI 기반 GPT](../Workflow-AI-Workflow-Actions/workflow-action-gpt-powered-by-openai.md) 가이드를 참고하세요.
 
 ---
 **목차**

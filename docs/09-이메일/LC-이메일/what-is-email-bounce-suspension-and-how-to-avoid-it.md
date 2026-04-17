@@ -104,7 +104,7 @@ GHL 지원팀이 다음 사항을 포함하여 하위 계정을 검토합니다:
 
 하위 계정/로케이션이 차단되면, 해당 하위 계정/로케이션 계정의 이메일 주소로 다음 단계를 안내하는 이메일을 받게 됩니다:
 
-- [이메일 검증 서비스](how-to-enable-and-rebill-lc-email-validation.md)로 연락처를 정리하여 검증할 수 없거나 존재하지 않아 궁극적으로 바운스되는 주소를 제거하세요.
+- [이메일 검증 서비스](../기타/how-to-enable-and-rebill-lc-email-validation.md)로 연락처를 정리하여 검증할 수 없거나 존재하지 않아 궁극적으로 바운스되는 주소를 제거하세요.
 - 하위 계정이 클라이언트인 경우, 이 문제에 대해 클라이언트와 논의하고 문제가 해결될 때까지 대량 커뮤니케이션이나 콜드 이메일 캠페인을 보내지 않도록 조언하세요.
 
 권장 개선 조치를 따르지 않으면 이 로케이션의 이메일 기능에 제한이 가해질 수 있어요. 신고율, 구독취소율, 하드 바운스율이 계속 악화되면 이 하위 계정이 차단될 수 있다는 점을 참고하세요.
@@ -117,7 +117,7 @@ GHL 지원팀이 다음 사항을 포함하여 하위 계정을 검토합니다:
 
 유일한 해결책은 이메일 통계를 내보낸 다음 다시 업로드하여 리드에 태그를 지정하고, 스마트 리스트를 사용해 해당 태그가 없는 리드를 필터링하여 다시 보내는 것입니다:
 
-[이메일 통계](email-statistics.md)에 대해 자세히 알아보세요.
+[이메일 통계](../../10-마케팅/Statistics/email-statistics.md)에 대해 자세히 알아보세요.
 
 이런 이메일을 받고 싶지 않다면 사용자 역할을 에이전시 관리자가 아닌 일반 사용자로 변경해주세요.
 
@@ -137,11 +137,11 @@ GHL 지원팀이 다음 사항을 포함하여 하위 계정을 검토합니다:
 
 ### 2. 전용 도메인 설정
 
-[전용 발송 도메인 설정 방법 (LC 이메일)](dedicated-email-sending-domains-overview-setup.md)
+[전용 발송 도메인 설정 방법 (LC 이메일)](../LC-Email-Dedicated-Domain-and-IP/dedicated-email-sending-domains-overview-setup.md)
 
 ### 3. 설정한 전용 도메인과 일치하는 발신자 이메일 구성
 
-[발신자 이메일 마스킹 - 발신자 이름 및 주소](sending-priority-from-name-address.md)
+[발신자 이메일 마스킹 - 발신자 이름 및 주소](../sending-priority-from-name-address.md)
 
 [이메일 인증 - DMARC](email-authentication-dmarc.md)
 
@@ -149,7 +149,7 @@ GHL 지원팀이 다음 사항을 포함하여 하위 계정을 검토합니다:
 
 ### 4. 이메일을 소량씩 분할하여 예약
 
-[연락처 및 스마트 리스트 일괄 작업](bulk-actions-for-contacts-smartlists.md)
+[연락처 및 스마트 리스트 일괄 작업](../../02-연락처/bulk-actions-for-contacts-smartlists.md)
 
 ### 5. 이중 옵트인 설정
 
@@ -161,7 +161,7 @@ GHL 지원팀이 다음 사항을 포함하여 하위 계정을 검토합니다:
 
 ### 6. 구독취소 링크 설정
 
-[LC 이메일용 구독취소 링크 설정 방법](managing-default-unsubscribe-links-in-lc-email.md)
+[LC 이메일용 구독취소 링크 설정 방법](../managing-default-unsubscribe-links-in-lc-email.md)
 
 ---
 *원문 최종 수정: Thu, 19 Feb, 2026 at 2:08 AM*

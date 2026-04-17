@@ -75,7 +75,7 @@ GoHighLevel을 사용해서 광고를 캘린더(Calendar)와 연결하는 리드
   - SMS 및 이메일 리마인더에 예약 링크 포함
   - 선택사항: FAQ 또는 "기대할 수 있는 것" 미니 가이드 포함
 
-[HighLevel에서 페이스북 광고 운영하는 방법]([fill-your-calendar-guide-to-running-ad-campaigns-that-actually-book](fill-your-calendar-guide-to-running-ad-campaigns-that-actually-book.md))
+[HighLevel에서 페이스북 광고 운영하는 방법]([fill-your-calendar-guide-to-running-ad-campaigns-that-actually-book](fill-your-calendar-guide-to-running-ad-campaigns-that-actually-book.md)
 
 ---
 
@@ -89,7 +89,7 @@ GoHighLevel을 사용해서 광고를 캘린더(Calendar)와 연결하는 리드
 
 이렇게 하면 리드를 따뜻하게 유지하고 예약으로 이어집니다.
 
-[후속 조치 워크플로우(Workflow) 구축하기]([fill-your-calendar-guide-to-running-ad-campaigns-that-actually-book](fill-your-calendar-guide-to-running-ad-campaigns-that-actually-book.md))
+[후속 조치 워크플로우(Workflow) 구축하기]([fill-your-calendar-guide-to-running-ad-campaigns-that-actually-book](fill-your-calendar-guide-to-running-ad-campaigns-that-actually-book.md)
 
 ---
 

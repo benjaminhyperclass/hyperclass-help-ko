@@ -80,7 +80,7 @@
 ## 관련 문서
 
 - [스냅샷 개요](snapshots-overview.md)
-- [대시보드와 함께 스냅샷 로드하는 방법](how-to-load-snapshots-with-dashboards.md)
+- [대시보드와 함께 스냅샷 로드하는 방법](../../12-대시보드/시작하기/how-to-load-snapshots-with-dashboards.md)
 - [클라이언트 계정에 스냅샷 업데이트 푸시 및 로딩](pushing-loading-snapshot-updates-to-client-accounts.md)
 - [스냅샷 가져오기](how-to-import-snapshots.md)
 - [새 스냅샷 만들기](creating-new-snapshots-in-highlevel.md)

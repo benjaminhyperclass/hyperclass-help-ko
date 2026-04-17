@@ -46,8 +46,8 @@
 SMS, 전화, 음성메일, 이메일, WhatsApp 메시지 등의 커뮤니케이션 기능을 사용하면, 해당 커뮤니케이션과 관련된 비용이 이 크레딧 잔액에서 차감됩니다. 이것을 지갑이라고도 부르기도 합니다.
 
 다음 문서도 참고하세요:
-- [LC Phone 요금 구조](lc-phone-pricing-structure.md)
-- [LC Email 요금 구조](what-is-lc-email-i-want-to-know-more.md)
+- [LC Phone 요금 구조](../15-전화-시스템/기타/lc-phone-pricing-structure.md)
+- [LC Email 요금 구조](기타/what-is-lc-email-i-want-to-know-more.md)
 - WhatsApp 요금 구조 (곧 제공 예정)
 
 참고: 2022년 11월 1일부터 미국 요금이 Twilio보다 10% 저렴하고, Mailgun보다 약 8% 저렴합니다. 에이전시들의 압도적인 응답에 감사드립니다.
@@ -119,8 +119,8 @@ Pro 플랜 이상에서는 SaaS 모드(전화 및 이메일 재청구)를 사용
 
 다음 문서를 참고하세요:
 - 재청구 결제 수집을 위한 에이전시 Stripe 계정 연결
-- [이메일 재청구 활성화 방법](email-re-billing.md)
-- [일반 SaaS 모드 설정 및 전화 재청구](activate-saas-mode-request-payment-and-configure-twilio-rebilling.md)
+- [이메일 재청구 활성화 방법](기타/email-re-billing.md)
+- [일반 SaaS 모드 설정 및 전화 재청구](../08-결제/기타/activate-saas-mode-request-payment-and-configure-twilio-rebilling.md)
 
 재청구는 Hyperclass가 사용료에 대해 인보이스를 발행하고, 그 다음 대신해서 클라이언트에게 인보이스를 발행하는 방식으로 설계되었습니다. 클라이언트로부터 수집한 자금은 연결된 Stripe 계정에 입금됩니다.
 

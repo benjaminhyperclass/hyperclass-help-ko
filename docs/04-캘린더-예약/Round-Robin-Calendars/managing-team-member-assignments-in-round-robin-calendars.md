@@ -57,7 +57,7 @@
 
 **예시:** 사용자 A가 기존 예약 담당자였다면, 연락처가 예약을 변경할 때 사용자 A의 예약 가능 시간만 일정 변경에 표시됩니다.
 
-참고: 'Allow Staff Selection(직원 선택 허용)'을 끄면 예약자가 예약 위젯에서 직원을 변경하는 것을 방지할 수 있습니다. 자세한 내용은 [라운드 로빈 캘린더에서 직원 선택을 구성하는 방법](how-to-configure-staff-member-selection-in-round-robin-calendars-.md)을 참조하세요.
+참고: 'Allow Staff Selection(직원 선택 허용)'을 끄면 예약자가 예약 위젯에서 직원을 변경하는 것을 방지할 수 있습니다. 자세한 내용은 [라운드 로빈 캘린더에서 직원 선택을 구성하는 방법](../기타/how-to-configure-staff-member-selection-in-round-robin-calendars-.md)을 참조하세요.
 
 ---
 

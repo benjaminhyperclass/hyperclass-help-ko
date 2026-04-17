@@ -32,7 +32,7 @@
 
 - **영수증 번호**: 저희는 기록을 체계적으로 관리하는 것의 중요성을 이해하므로, 영수증에 접두사와 시작 번호를 지정할 수 있는 기능을 제공합니다. 이를 통해 거래 추적 및 관리 작업이 간소화됩니다.
 
-- **이메일 템플릿**: 고객 영수증을 발송할 때 [이메일 템플릿을 커스터마이징](how-to-use-the-email-builder-and-its-in-line-editor.md)하는 것은 브랜드 아이덴티티를 반영하는 완벽한 방법입니다. 이 기능을 통해 선호도에 따라 이메일 내용을 디자인하고 조정할 수 있어, 고객이 만족할 전문적이고 일관된 경험을 만들 수 있습니다.
+- **이메일 템플릿**: 고객 영수증을 발송할 때 [이메일 템플릿을 커스터마이징](../10-마케팅/Email-Builder-Capabilities/how-to-use-the-email-builder-and-its-in-line-editor.md)하는 것은 브랜드 아이덴티티를 반영하는 완벽한 방법입니다. 이 기능을 통해 선호도에 따라 이메일 내용을 디자인하고 조정할 수 있어, 고객이 만족할 전문적이고 일관된 경험을 만들 수 있습니다.
 
 ## 영수증 전송
 
@@ -40,7 +40,7 @@
 
 ## 커스텀 템플릿 활용
 
-저희는 영수증 발송을 위해 커스텀 템플릿을 활용할 수 있는 유연성을 제공합니다. [이메일 빌더](how-to-use-the-email-builder-and-its-in-line-editor.md) 내에서 사용 가능한 [커스텀 값](how-to-use-custom-values.md)을 사용하여 영수증과 함께 개인화되고 브랜딩된 템플릿을 만들 수 있습니다. 비즈니스의 고유한 스타일에 맞는 시각적으로 매력적이고 전문적인 영수증을 제작하세요.
+저희는 영수증 발송을 위해 커스텀 템플릿을 활용할 수 있는 유연성을 제공합니다. [이메일 빌더](../10-마케팅/Email-Builder-Capabilities/how-to-use-the-email-builder-and-its-in-line-editor.md) 내에서 사용 가능한 [커스텀 값](../23-레거시-자동화/Logic-&amp;-Fulfillment/how-to-use-custom-values.md)을 사용하여 영수증과 함께 개인화되고 브랜딩된 템플릿을 만들 수 있습니다. 비즈니스의 고유한 스타일에 맞는 시각적으로 매력적이고 전문적인 영수증을 제작하세요.
 
 ![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155001991652/original/LG7ZoT6jsGbBQfD0pxUcfU_5IHLlq_uO0Q.png?1688055235)
 

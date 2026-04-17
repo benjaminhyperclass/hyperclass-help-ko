@@ -45,7 +45,7 @@ Google 광고 계정을 미리 준비하면 나중에 재작업을 방지할 수
 
 **Google 광고**에서 다음 단계를 따라 나중에 Hyperclass에서 데이터를 전송할 전환 액션을 만드세요. 올바른 설정은 깔끔한 어트리뷰션과 신뢰할 수 있는 입찰 신호를 보장합니다.
 
-참고: 이것은 Google 플랫폼 측 가이드만입니다. Hyperclass 광고 관리자에서 오프라인 전환을 설정하려면 [Hyperclass Ad Manager - Google 광고 오프라인 전환 생성 및 관리](ad-manager-create-manage-google-ads-offline-conversions.md) 문서를 확인하세요.
+참고: 이것은 Google 플랫폼 측 가이드만입니다. Hyperclass 광고 관리자에서 오프라인 전환을 설정하려면 [Hyperclass Ad Manager - Google 광고 오프라인 전환 생성 및 관리](../../10-마케팅/Google-Ads/ad-manager-create-manage-google-ads-offline-conversions.md) 문서를 확인하세요.
 
 Hyperclass 워크플로우에서 폼 제출, 번호 풀 통화, 채팅 위젯 응답 등의 Google 광고 전환 액션을 직접 설정하고 추적하려면 [워크플로우 액션 - Google 광고에 추가](https://help.gohilevel.com/en/support/solutions/articles/155000003368) 문서를 확인하세요.
 

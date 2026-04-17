@@ -92,7 +92,7 @@
 
 **콘텐츠 원칙:** 80%는 가치 제공 및 참여, 20%는 직접적 제안
 
-[기존 템플릿으로 광고 캠페인 만들기]([ad-manager-create-ad-campaigns-using-templates](ad-manager-create-ad-campaigns-using-templates.md))
+[기존 템플릿으로 광고 캠페인 만들기](../../10-마케팅/Ad-Campaign-Creation-and-Management/ad-manager-create-ad-campaigns-using-templates.md)
 
 ### 2.2 해시태그 및 키워드 전략
 
@@ -132,7 +132,7 @@
 | 소규모 팀 | 일 25달러 (월 750달러) |
 | 멀티 에이전트 사무소 | 일 50달러 이상 (월 1,500달러 이상) |
 
-[광고 예산 효과적으로 관리하기]([ad-manager-campaign-budget-definition](ad-manager-campaign-budget-definition.md))
+[광고 예산 효과적으로 관리하기](../../10-마케팅/Ad-Campaign-Creation-and-Management/ad-manager-campaign-budget-definition.md)
 
 ## 4단계: Hyperclass로 자동화하여 확장하기
 

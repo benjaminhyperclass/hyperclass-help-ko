@@ -110,11 +110,11 @@
 
 ## 관련 아티클
 
-- [세금 추가 방법 – 개요]([how-to-add-taxes-overview](how-to-add-taxes-overview.md))
-- [캘린더에서 결제 수집]([collecting-payments-in-calendars](collecting-payments-in-calendars.md))
-- [캘린더에서 PayPal 사용]([paypal-in-calendars](paypal-in-calendars.md))
-- [주문 폼, 캘린더, 인보이스 결제에 대한 판매 영수증 활성화 방법](how-to-enable-sales-receipts-for-order-form-calendar-and-invoice-payments.md)
-- [워크플로우 트리거 – 서비스 예약(Services v2)]([workflow-trigger-service-booking-services-v2-](workflow-trigger-service-booking-services-v2-.md))
+- [세금 추가 방법 – 개요](../../08-결제/how-to-add-taxes-overview.md)
+- [캘린더에서 결제 수집](../캘린더-설정/collecting-payments-in-calendars.md)
+- [캘린더에서 PayPal 사용](../캘린더-설정/paypal-in-calendars.md)
+- [주문 폼, 캘린더, 인보이스 결제에 대한 판매 영수증 활성화 방법](../기타/how-to-enable-sales-receipts-for-order-form-calendar-and-invoice-payments.md)
+- [워크플로우 트리거 – 서비스 예약(Services v2)](workflow-trigger-service-booking-services-v2-.md)
 
 ---
 *원문 최종 수정: Wed, 12 Nov, 2025 at 2:14 PM*

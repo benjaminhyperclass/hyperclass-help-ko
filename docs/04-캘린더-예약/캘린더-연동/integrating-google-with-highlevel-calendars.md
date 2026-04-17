@@ -79,7 +79,7 @@ Hyperclass와 구글 캘린더 연동을 통해 **실시간 예약 관리**, 간
 - 캘린더 삭제
 - 연결 후 권한 취소
 
-자세한 내용은 [구글 캘린더 연동이 중단되는 이유와 해결 방법](why-google-calendar-integration-breaks.md)을 참고하세요.
+자세한 내용은 [구글 캘린더 연동이 중단되는 이유와 해결 방법](../트러블슈팅/why-google-calendar-integration-breaks.md)을 참고하세요.
 
 **Q: 연결된 구글 캘린더가 삭제되어 오류 배너가 표시되면 어떻게 해야 하나요?**
 

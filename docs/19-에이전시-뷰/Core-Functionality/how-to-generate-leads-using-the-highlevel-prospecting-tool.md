@@ -98,7 +98,7 @@
 ## 1. 프로스펙팅 도구 접속하기
 
 - 에이전시 내부에서: 왼쪽 메뉴에서 프로스펙팅 탭을 클릭하세요
-- 하위 계정 내부에서 프로스펙팅 활성화: 리셀링 탭에서 프로스펙팅을 켜거나 에이전시의 특정 하위 계정에만 배포할 수 있습니다. [자세히 읽어보기]([prospecting-at-sub-accounts-complete-guide-benefits-setup](prospecting-at-sub-accounts-complete-guide-benefits-setup.md))
+- 하위 계정 내부에서 프로스펙팅 활성화: 리셀링 탭에서 프로스펙팅을 켜거나 에이전시의 특정 하위 계정에만 배포할 수 있습니다. [자세히 읽어보기](../Prospecting-Tool/prospecting-at-sub-accounts-complete-guide-benefits-setup.md)
 
 - 그 다음, 왼쪽의 마케팅 탭을 클릭하고 상단 네비게이션 바의 프로스펙팅 탭을 클릭하세요
 
@@ -164,7 +164,7 @@
 
 마케팅 감사 보고서는 리스팅과 리뷰의 두 주요 섹션으로 구성됩니다.
 
-마케팅 감사 보고서에 대한 자세한 내용은 [프로스펙팅 및 마케팅 감사 보고서의 향상된 리스팅 감사](enhanced-listings-audit-in-prospecting-marketing-audit-reports.md)를 참조하세요.
+마케팅 감사 보고서에 대한 자세한 내용은 [프로스펙팅 및 마케팅 감사 보고서의 향상된 리스팅 감사](../../10-마케팅/기타/enhanced-listings-audit-in-prospecting-marketing-audit-reports.md)를 참조하세요.
 
 **리스팅:**
 
@@ -194,7 +194,7 @@
 
 이 마케팅 감사 보고서는 잠재 고객과 공유하기 쉽습니다. 보고서 공유를 클릭하고 몇 초 만에 잠재 고객과 링크를 공유하세요.
 
-**중요:** 마케팅 감사 보고서에 대한 자세한 내용은 [프로스펙팅 및 마케팅 감사 보고서의 향상된 리스팅 감사](enhanced-listings-audit-in-prospecting-marketing-audit-reports.md)를 참조하세요.
+**중요:** 마케팅 감사 보고서에 대한 자세한 내용은 [프로스펙팅 및 마케팅 감사 보고서의 향상된 리스팅 감사](../../10-마케팅/기타/enhanced-listings-audit-in-prospecting-marketing-audit-reports.md)를 참조하세요.
 
 GHL의 프로스펙팅 도구는 에이전시가 리드 생성 프로세스를 자동화하고 간소화할 수 있는 능력을 제공하여, 더 타겟팅되고 효율적인 접근 방식으로 더 많은 잠재 고객에게 도달할 수 있게 합니다. 에이전시는 이제 시간과 리소스를 절약하면서 프로스펙팅 노력의 효율성과 효과성을 향상시킬 수 있습니다.
 

@@ -24,7 +24,7 @@
 
 고객님은 이미 하이퍼클래스의 강력함을 알고 계십니다. 이미 동료들에게 추천하고 계신데, 추천하면서 추가 수익까지 얻으실 수 있다면 어떨까요?
 
-이미 알고 있고 사랑하는 제품을 공유하여 에이전시에 새로운 수익원을 만드세요. 정말 쉽습니다! [새로운 어필리에이트 포털 가이드]([how-to-use-affiliate-portal](how-to-use-affiliate-portal.md))를 방문하여 시작해보세요!
+이미 알고 있고 사랑하는 제품을 공유하여 에이전시에 새로운 수익원을 만드세요. 정말 쉽습니다! [새로운 어필리에이트 포털 가이드](how-to-use-affiliate-portal.md)를 방문하여 시작해보세요!
 
 하이퍼클래스 고객/에이전시 소유자가 아니지만 어필리에이트가 되고 싶으시다면 여기서 등록할 수 있습니다 - [https://gohighlevel.firstpromoter.com/](https://gohighlevel.firstpromoter.com/)
 

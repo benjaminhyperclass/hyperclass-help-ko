@@ -29,10 +29,10 @@
 
 지원되는 게이트웨이 중에서 선택하세요:
 
-- **NMI**: [NMI 연동 방법 알아보기]([how-to-set-up-the-nmi-integration-](how-to-set-up-the-nmi-integration-.md))
-- **Authorize.net**: [Authorize.net 연동 방법 알아보기]([authorize-net-integration-for-processing-payments](authorize-net-integration-for-processing-payments.md))
-- **Stripe**: [Stripe 연동 설정 과정 따라하기](stripe-integration.md)
-- **PayPal**: [PayPal 연동 방법 알아보기]([how-to-set-up-a-paypal-integration](how-to-set-up-a-paypal-integration.md))
+- **NMI**: [NMI 연동 방법 알아보기](../../08-결제/how-to-set-up-the-nmi-integration-.md)
+- **Authorize.net**: [Authorize.net 연동 방법 알아보기](../../08-결제/authorize-net-integration-for-processing-payments.md)
+- **Stripe**: [Stripe 연동 설정 과정 따라하기](../../08-결제/기타/stripe-integration.md)
+- **PayPal**: [PayPal 연동 방법 알아보기](../../08-결제/how-to-set-up-a-paypal-integration.md)
 
 ### **3단계: 기본 게이트웨이 설정**
 
@@ -51,7 +51,7 @@
 - [제휴 파트너에게 수수료 지급하는 방법](how-to-pay-your-affiliates.md)
 - [PayPal 자동 지급을 사용하여 제휴 파트너 설정 및 수수료 지급하는 방법](how-to-set-up-and-pay-affiliates-using-paypal-auto-payouts.md)
 - [제휴 수수료 지급 FAQ](faqs-for-affiliate-payouts.md)
-- [제휴 파트너의 PayPal 계정을 수수료 지급용으로 추가/연결하는 방법](how-to-add-link-affiliate-s-paypal-account-for-payouts.md)
+- [제휴 파트너의 PayPal 계정을 수수료 지급용으로 추가/연결하는 방법](../../21-어필리에이트/기타/how-to-add-link-affiliate-s-paypal-account-for-payouts.md)
 
 ---
 *원문 최종 수정: Mon, 9 Jun, 2025 at 6:36 PM*

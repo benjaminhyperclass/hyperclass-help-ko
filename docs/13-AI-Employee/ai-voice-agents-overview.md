@@ -38,7 +38,7 @@ AI 직원(AI Employee)의 음성 기능 지원 가이드에 오신 것을 환영
 
 ![음성 AI 에이전트 개요](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035811469/original/yj9bOlifGzqX0cihx3L4fEKBjsXTcXlgHw.jpg?1730397198)
 
-**[음성 AI 에이전트를 생성하는 방법을 알고 싶다면 여기를 클릭하세요!](creating-voice-ai-agents.md)**
+**[음성 AI 에이전트를 생성하는 방법을 알고 싶다면 여기를 클릭하세요!](기타/creating-voice-ai-agents.md)**
 
 ---
 

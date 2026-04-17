@@ -68,7 +68,7 @@
 
 - [FirstPromoter에서 제휴 관리로 전환하는 방법](how-to-switch-from-firstpromoter-to-affiliate-manager-.md)
 
-- [제휴 포털 사용법](how-to-use-affiliate-portal.md)
+- [제휴 포털 사용법](../../../21-어필리에이트/Affiliates-Program/how-to-use-affiliate-portal.md)
 
 ---
 *원문 최종 수정: Mon, 15 Sep, 2025 at 8:03 AM*

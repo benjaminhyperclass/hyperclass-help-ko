@@ -139,13 +139,13 @@
 
 ### **관련 가이드**
 
-- [파이프라인 이해하기](understanding-pipelines.md)
+- [파이프라인 이해하기](../understanding-pipelines.md)
 
-- [단계별 가이드: 파이프라인 만들기](step-by-step-guide-creating-pipelines.md)
+- [단계별 가이드: 파이프라인 만들기](../step-by-step-guide-creating-pipelines.md)
 
 - [기회 파이프라인 색상 코딩하는 방법 (스마트 태그)](how-to-color-code-opportunity-pipelines-smart-tags-.md)
 
-- [기회 및 파이프라인 삭제 및 복원하기](deleting-and-restoring-opportunities-pipelines.md)
+- [기회 및 파이프라인 삭제 및 복원하기](../시작하기/deleting-and-restoring-opportunities-pipelines.md)
 
 ---
 *원문 최종 수정: Mon, 9 Feb, 2026 at 8:52 AM*

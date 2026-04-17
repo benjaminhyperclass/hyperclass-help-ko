@@ -10,7 +10,7 @@
 
 **참고:**
 
-이 가이드는 도메인을 수동으로 설정하는 방법을 다룹니다. 자동화된 Domain Connect(도메인 연결) 기능 사용법을 알아보려면 [여기를 클릭](how-to-use-the-domain-connect-feature-.md)하세요.
+이 가이드는 도메인을 수동으로 설정하는 방법을 다룹니다. 자동화된 Domain Connect(도메인 연결) 기능 사용법을 알아보려면 [여기를 클릭](../42-통합/기타/how-to-use-the-domain-connect-feature-.md)하세요.
 
 ## 퍼널과 웹사이트용 도메인 설정하기
 
@@ -89,7 +89,7 @@ Domain URL 필드에 도메인을 입력(서브도메인이 아닌 루트 도메
 
 ![루트 도메인 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053147097/original/bFAPLFMv-wHky3TCQPSV-MKqAWjagoeumA.png?1757043369)
 
-**참고:** Continue 버튼을 클릭하면 "Domain Connect" 기능이 시작되어 도메인이 어디에 등록되어 있는지 확인하고 필요한 DNS 레코드를 자동으로 추가하는 연결을 승인하려고 시도합니다. 등록업체가 아직 지원되지 않는 경우, 도메인 등록업체에서 수동으로 DNS 레코드를 추가하라는 메시지가 표시됩니다. 해당 과정에 대한 자세한 정보는 [여기](how-to-use-the-domain-connect-feature-.md)를 클릭하세요.
+**참고:** Continue 버튼을 클릭하면 "Domain Connect" 기능이 시작되어 도메인이 어디에 등록되어 있는지 확인하고 필요한 DNS 레코드를 자동으로 추가하는 연결을 승인하려고 시도합니다. 등록업체가 아직 지원되지 않는 경우, 도메인 등록업체에서 수동으로 DNS 레코드를 추가하라는 메시지가 표시됩니다. 해당 과정에 대한 자세한 정보는 [여기](../42-통합/기타/how-to-use-the-domain-connect-feature-.md)를 클릭하세요.
 
 ### 서브도메인의 경우 (예: sub.mydomain.com)
 

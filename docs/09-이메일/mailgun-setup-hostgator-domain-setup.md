@@ -222,9 +222,9 @@ C. Save Record를 클릭해 주세요
 
 ![DNS 설정 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284387965/original/I7T5QQCSjAnBvT1zqQlVgXSuNdgfuNiM3w.png?1677639928)
 
-모든 DNS 레코드를 추가하고 확인했다면, [Mailgun API 키 - Mailgun에서 찾는 방법 및 하이레벨에 입력하기](mailgun-private-api-key-setup.md)를 참고하여 API 키를 가져올 수 있습니다.
+모든 DNS 레코드를 추가하고 확인했다면, [Mailgun API 키 - Mailgun에서 찾는 방법 및 하이레벨에 입력하기](메일건/mailgun-private-api-key-setup.md)를 참고하여 API 키를 가져올 수 있습니다.
 
-그 다음 테스트 이메일을 보내서 모든 설정이 잘 작동하는지 확인해 보세요! [대화에서 테스트 이메일 보내는 방법](how-to-send-a-test-email-in-the-conversation.md)에서 자세한 내용을 확인하실 수 있습니다.
+그 다음 테스트 이메일을 보내서 모든 설정이 잘 작동하는지 확인해 보세요! [대화에서 테스트 이메일 보내는 방법](트러블슈팅/how-to-send-a-test-email-in-the-conversation.md)에서 자세한 내용을 확인하실 수 있습니다.
 
 ---
 *원문 최종 수정: 2023년 2월 28일*

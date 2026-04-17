@@ -47,7 +47,7 @@ Twilio 재청구가 작동하려면 HighLevel의 고객 하위 계정이 Twilio 
 
 # 관련 문서
 
-- [자체 Twilio 계정 사용을 원하는 고객을 위한 Twilio 재청구 활성화](enabling-twilio-rebilling-for-customers-who-want-use-their-own-twilio-account.md)
+- [자체 Twilio 계정 사용을 원하는 고객을 위한 Twilio 재청구 활성화](../../16-SaaS-설정/Saas-Mode/enabling-twilio-rebilling-for-customers-who-want-use-their-own-twilio-account.md)
 
 ---
 *원문 최종 수정: Mon, 16 Sep, 2024 at 12:21 PM*

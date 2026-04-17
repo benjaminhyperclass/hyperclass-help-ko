@@ -46,13 +46,13 @@
 - 최소 2개의 샘플 메시지 템플릿
 - 수신자 동의 수집 방법 (예: 양식, 문자 키워드, 구두 등)
 
-준수하는 동의 언어 작성을 위해 이 [A2P 동의 가이드](a2p-opt-in-form-privacy-policy-and-terms-and-conditions-guidelines.md)를 사용하세요.
+준수하는 동의 언어 작성을 위해 이 [A2P 동의 가이드](../A2P-등록/a2p-opt-in-form-privacy-policy-and-terms-and-conditions-guidelines.md)를 사용하세요.
 
 ## 무료 전화번호 인증 단계
 
 ### 1단계: 무료 전화번호 구매
 
-아직 구매하지 않았다면, [이 가이드](how-to-buy-a-toll-free-number-inside-ghl-.md)를 따라 LC Phone에서 무료 전화번호를 구매하세요.
+아직 구매하지 않았다면, [이 가이드](../전화번호/how-to-buy-a-toll-free-number-inside-ghl-.md)를 따라 LC Phone에서 무료 전화번호를 구매하세요.
 
 ### 2단계: 인증 양식 제출
 

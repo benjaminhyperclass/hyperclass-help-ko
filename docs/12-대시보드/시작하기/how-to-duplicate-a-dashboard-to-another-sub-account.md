@@ -12,7 +12,7 @@
 
 ## 대시보드 복제란 무엇인가요?
 
-대시보드는 하위 계정 내에서 생성되고 존재합니다. 같은 하위 계정 내에서 복사본을 만들기 위해 [대시보드를 복제](how-to-clone-a-subaccount-dashboard.md)할 수도 있고, **다른 하위 계정**에서 복사본을 만들기 위해 대시보드를 **복제**할 수도 있습니다.
+대시보드는 하위 계정 내에서 생성되고 존재합니다. 같은 하위 계정 내에서 복사본을 만들기 위해 [대시보드를 복제](../how-to-clone-a-subaccount-dashboard.md)할 수도 있고, **다른 하위 계정**에서 복사본을 만들기 위해 대시보드를 **복제**할 수도 있습니다.
 
 대시보드를 하위 계정 간에 복제하려면 두 하위 계정 모두에 접근 권한이 있어야 합니다.
 
@@ -45,8 +45,8 @@
 ## 관련 도움말
 
 - [대시보드 편집 방법](how-to-edit-a-dashboard.md)
-- [대시보드를 즐겨찾기로 고정하는 방법](how-to-pin-favorite-dashboards.md)
-- [대시보드 권한 관리 방법](how-to-manage-dashboard-permissions.md)
+- [대시보드를 즐겨찾기로 고정하는 방법](../how-to-pin-favorite-dashboards.md)
+- [대시보드 권한 관리 방법](../../11-설정/기타/how-to-manage-permissions-for-a-dashboard.md)
 
 ---
 *원문 최종 수정: Fri, 4 Apr, 2025 at 6:07 PM*

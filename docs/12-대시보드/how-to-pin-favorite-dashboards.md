@@ -47,7 +47,7 @@
 
 ## 관련 가이드
 
-- [대시보드 편집하는 방법](how-to-edit-a-dashboard.md)
+- [대시보드 편집하는 방법](시작하기/how-to-edit-a-dashboard.md)
 - [대시보드 권한 관리하는 방법](how-to-manage-dashboard-permissions.md)
 - [대시보드 만드는 방법](how-to-create-a-custom-dashboard.md)
 

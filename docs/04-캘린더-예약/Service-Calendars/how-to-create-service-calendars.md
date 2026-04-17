@@ -20,8 +20,8 @@
 - [6단계: 룸 및 장비](#6단계-룸-및-장비)
 
 **관련 문서**
-- [서비스 메뉴](how-to-create-service-menus-for-calendars.md)
-- [룸 및 장비](rooms-and-equipment.md)
+- [서비스 메뉴](../Calendar-Service-Menus/how-to-create-service-menus-for-calendars.md)
+- [룸 및 장비](../Calendar-Rooms-&-Equipment/rooms-and-equipment.md)
 
 ## 서비스 캘린더를 활성화하는 방법
 

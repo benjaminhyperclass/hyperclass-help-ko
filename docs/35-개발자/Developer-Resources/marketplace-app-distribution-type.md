@@ -59,7 +59,7 @@
 | | | | **[새롭고 권장되는 방식]**<br>Agency 사용자가 앱 설치 | "isBulkInstallation" : true,<br>"userType" : "Company" | 1. [앱이 설치된 하위 계정 가져오기](https://marketplace.gohighlevel.com/docs/ghl/oauth/get-installed-location)<br>2. 앱이 설치된 모든 로케이션에 대해 [에이전시 토큰을 사용하여 로케이션 토큰 가져오기](https://marketplace.gohighlevel.com/docs/ghl/oauth/get-location-access-token)<br>3. 향후 자동 설치나 SaaS 플랜의 일부로 수행되는 설치에 대해 [AppInstall 웹훅 이벤트](https://marketplace.gohighlevel.com/docs/webhook/AppInstall) 수신 및 새로 설치된 로케이션에 대해 [에이전시 토큰을 사용하여 로케이션 토큰 가져오기](https://marketplace.gohighlevel.com/docs/ghl/oauth/get-location-access-token) |
 | | Agency Only | Yes | Agency 사용자가 앱 설치 | "isBulkInstallation" : true,<br>"userType" : "Company" | 위와 동일 |
 
-## [각 배포 모델별 지원 가격 모델을 설명한 문서](set-up-your-app-pricing.md)
+## [각 배포 모델별 지원 가격 모델을 설명한 문서](../../36-기타/리커버리/set-up-your-app-pricing.md)
 
 ## 역호환성
 

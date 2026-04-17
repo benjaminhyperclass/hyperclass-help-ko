@@ -6,9 +6,9 @@
 
 # 사용자/에이전트 보고서
 
-에이전트 보고서 기능은 [Agency Pro 플랜](how-to-upgrade-to-highlevel-s-agency-pro-plan-497-saas-plan-.md)에서 이용할 수 있습니다.
+에이전트 보고서 기능은 [Agency Pro 플랜](../../11-설정/how-to-upgrade-to-highlevel-s-agency-pro-plan-497-saas-plan-.md)에서 이용할 수 있습니다.
 
-더 다양한 맞춤 보고서를 원한다면 커스텀 대시보드를 참고하세요. 여기서 커스텀 위젯을 추가하고 수정하여 Hyperclass의 주요 영역 지표를 표시할 수 있습니다. 이 기능에 대한 자세한 정보는 [커스텀 위젯 도움말 문서](feature-document-custom-widgets.md)에서 확인하실 수 있습니다.
+더 다양한 맞춤 보고서를 원한다면 커스텀 대시보드를 참고하세요. 여기서 커스텀 위젯을 추가하고 수정하여 Hyperclass의 주요 영역 지표를 표시할 수 있습니다. 이 기능에 대한 자세한 정보는 [커스텀 위젯 도움말 문서](../../12-대시보드/기타/feature-document-custom-widgets.md)에서 확인하실 수 있습니다.
 
 좌측 메뉴에서 `Reporting(리포팅) → Agent Reporting(에이전트 보고서)` (상단 메뉴)를 통해 이 보고서에 접근할 수 있습니다.
 

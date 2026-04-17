@@ -27,7 +27,7 @@ GoHighLevel의 프로스펙팅 도구는 리드 생성 작업을 자동화하고
 
 ## GoHighLevel에서 프로스펙팅 시작하기
 
-[자세한 가이드:](how-to-generate-leads-using-the-highlevel-prospecting-tool.md)
+[자세한 가이드:](../Core-Functionality/how-to-generate-leads-using-the-highlevel-prospecting-tool.md)
 
 기본 무료 프로스펙팅 – 업그레이드 전에 먼저 경험해보기
 
@@ -88,7 +88,7 @@ GoHighLevel의 프로스펙팅 도구는 리드 생성 작업을 자동화하고
 - 잠재 고객 키워드의 지리적 가시성을 확인합니다.
 - 각 핀 위치에서 최상위 랭킹 경쟁사를 지도에서 확인하세요.
 
-[SEO Heatmaps in the Prospecting Tool: A Support Guide](seo-heatmaps-in-the-prospecting-tool-a-support-guide.md)
+[SEO Heatmaps in the Prospecting Tool: A Support Guide](../기타/seo-heatmaps-in-the-prospecting-tool-a-support-guide.md)
 
 ![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047852540/original/MVlJxv5_UJK9SrAtTa0981hTkhlA9_2tTA.jpeg?1749196795)
 
@@ -111,7 +111,7 @@ GoHighLevel의 프로스펙팅 도구는 리드 생성 작업을 자동화하고
 - 잠재 고객 연락처 정보 저장
 - 육성 시퀀스에 등록
 
-[Workflow Trigger for New Prospects in the Prospecting Tool]([workflow-trigger-for-new-prospects-in-the-prospecting-tool](workflow-trigger-for-new-prospects-in-the-prospecting-tool.md))
+[Workflow Trigger for New Prospects in the Prospecting Tool](workflow-trigger-for-new-prospects-in-the-prospecting-tool.md)
 
 ## 프리미엄 프로스펙팅 활성화 방법
 
@@ -128,7 +128,7 @@ GoHighLevel의 프로스펙팅 도구는 리드 생성 작업을 자동화하고
 - 이 기능을 재판매하고 싶다면 가격을 설정
 - 하위 계정에서 이제 자체 대시보드에서 프리미엄을 활성화할 수 있습니다.
 
-[더 자세한 단계는 여기에서](how-to-link-a-sub-account-with-your-agency-prospecting-premium-subscription.md)
+[더 자세한 단계는 여기에서](../../08-결제/기타/how-to-link-a-sub-account-with-your-agency-prospecting-premium-subscription.md)
 
 ## 빠른 정리: 무료 vs 프리미엄
 
@@ -145,15 +145,15 @@ GoHighLevel의 프로스펙팅 도구는 리드 생성 작업을 자동화하고
 
 ### 관련 지원 문서
 
-[How to Generate Leads Using the HighLevel Prospecting Tool - The Ultimate Guide](how-to-generate-leads-using-the-highlevel-prospecting-tool-the-ultimate-guide.md)
+[How to Generate Leads Using the HighLevel Prospecting Tool - The Ultimate Guide](../기타/how-to-generate-leads-using-the-highlevel-prospecting-tool-the-ultimate-guide.md)
 
-[How to find Leads for your business using Prospecting Tool]([how-to-find-leads-for-your-business-using-prospecting-tool](how-to-find-leads-for-your-business-using-prospecting-tool.md))
+[How to find Leads for your business using Prospecting Tool](../Core-Functionality/how-to-find-leads-for-your-business-using-prospecting-tool.md)
 
-[Prospecting Tool: Create Prospecting Widgets For Your Websites]([prospecting-tool-create-prospecting-widgets-for-your-websites](prospecting-tool-create-prospecting-widgets-for-your-websites.md))
+[Prospecting Tool: Create Prospecting Widgets For Your Websites](../Core-Functionality/prospecting-tool-create-prospecting-widgets-for-your-websites.md)
 
-[How to Cancel Your Prospecting Tool Subscription in-app]([how-to-cancel-your-prospecting-tool-subscription-in-app](how-to-cancel-your-prospecting-tool-subscription-in-app.md))
+[How to Cancel Your Prospecting Tool Subscription in-app](../Prospecting-Subscription/how-to-cancel-your-prospecting-tool-subscription-in-app.md)
 
-[How to Link a Sub-Account with Your Agency Prospecting Premium Subscription](how-to-link-a-sub-account-with-your-agency-prospecting-premium-subscription.md)
+[How to Link a Sub-Account with Your Agency Prospecting Premium Subscription](../../08-결제/기타/how-to-link-a-sub-account-with-your-agency-prospecting-premium-subscription.md)
 
 ---
 *원문 최종 수정: Thu, 11 Dec, 2025 at  1:01 AM*

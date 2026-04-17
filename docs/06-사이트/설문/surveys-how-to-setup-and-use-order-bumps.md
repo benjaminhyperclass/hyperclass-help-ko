@@ -124,8 +124,8 @@
 
 ## 관련 가이드
 
-- [스타일이 적용된 설문 만들기](how-to-create-a-stylized-survey.md)
-- [설문 답변이 어디에 표시되는지 확인하기](where-do-survey-answers-show-up.md)
+- [스타일이 적용된 설문 만들기](../how-to-create-a-stylized-survey.md)
+- [설문 답변이 어디에 표시되는지 확인하기](../where-do-survey-answers-show-up.md)
 - [설문의 조건부 로직](conditional-logic-in-surveys-v2-.md)
 - [설문의 결제 연동 | 결제 수집 및 상품 판매](payments-integration-in-surveys-collect-payments-sell-products.md)
 

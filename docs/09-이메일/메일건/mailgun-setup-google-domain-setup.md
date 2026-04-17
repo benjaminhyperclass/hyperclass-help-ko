@@ -153,7 +153,7 @@ Data: mailgun.org를 복사하고 붙여넣으세요
 
 모든 DNS 레코드를 추가하고 확인했다면, [메일건 API 키 - 메일건에서 찾아서 하이레벨에 넣는 방법](mailgun-private-api-key-setup.md)에서 API 키를 가져올 수 있습니다.
 
-그러면 모든 것이 작동하는지 테스트 이메일을 보낼 수 있습니다! [대화(Conversations)에서 테스트 이메일을 보내는 방법](how-to-send-a-test-email-in-the-conversation.md)을 알아보세요.
+그러면 모든 것이 작동하는지 테스트 이메일을 보낼 수 있습니다! [대화(Conversations)에서 테스트 이메일을 보내는 방법](../트러블슈팅/how-to-send-a-test-email-in-the-conversation.md)을 알아보세요.
 
 ---
 *원문 최종 수정: Wed, 26 Jul, 2023 at 6:38 PM*

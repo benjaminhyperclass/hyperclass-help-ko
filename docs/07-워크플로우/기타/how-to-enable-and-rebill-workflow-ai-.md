@@ -32,7 +32,7 @@
 
 외부 AI 모델을 사용하면 사용량에 따라 비용이 발생합니다. 재청구를 통해 에이전시는 이러한 요금을 고객이나 하위 계정에게 전가할 수 있어, 비용을 회수하고 선택적으로 수익 마진을 추가할 수 있습니다.
 
-[워크플로우 AI 어시스턴트에 대해 더 자세히 알아보려면 여기를 클릭하세요.](workflow-ai-assistant.md)
+[워크플로우 AI 어시스턴트에 대해 더 자세히 알아보려면 여기를 클릭하세요.](../../13-AI-Employee/workflow-ai-assistant.md)
 
 ---
 
@@ -77,7 +77,7 @@
 
 - 먼저 에이전시에서 워크플로우 - 외부 AI 모델을 활성화했는지 확인하세요. (지침 참조)
 
-- 하위 계정이 아직 SaaS 모드가 아닌 경우, 에이전시 계정 > Accounts(계정) 탭 > 해당 하위 계정으로 스크롤 > 점 3개 아이콘 클릭 > "Switch to SaaS(SaaS로 전환)" 선택하여 하위 계정을 SaaS 모드로 전환하세요. [로케이션을 SaaS로 전환하는 방법](saas-mode-full-setup-guide-faq.md).
+- 하위 계정이 아직 SaaS 모드가 아닌 경우, 에이전시 계정 > Accounts(계정) 탭 > 해당 하위 계정으로 스크롤 > 점 3개 아이콘 클릭 > "Switch to SaaS(SaaS로 전환)" 선택하여 하위 계정을 SaaS 모드로 전환하세요. [로케이션을 SaaS로 전환하는 방법](../../16-SaaS-설정/Saas-Mode/saas-mode-full-setup-guide-faq.md).
 
 - 에이전시 계정 > Accounts(계정) 탭 > 해당 하위 계정으로 스크롤 > View Details(세부 정보 보기) 링크 클릭 > Workflow - External AI Models Re-Sell Settings(워크플로우 - 외부 AI 모델 재판매 설정) 섹션으로 스크롤하여 토글을 켜세요.
 

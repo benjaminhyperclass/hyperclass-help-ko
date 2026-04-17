@@ -31,8 +31,8 @@
 
 **더 자세히 알아보기**
 
-- [페이스북 리드 광고 연동 및 문제해결 가이드](facebook-lead-ad-integration-troubleshooting-guide.md)
-- [페이스북 멀티 페이지 리드 광고 연동](facebook-multi-page-lead-ads-integration.md)
+- [페이스북 리드 광고 연동 및 문제해결 가이드](../../42-통합/Facebook-Integration/facebook-lead-ad-integration-troubleshooting-guide.md)
+- [페이스북 멀티 페이지 리드 광고 연동](../../42-통합/Facebook-Integration/facebook-multi-page-lead-ads-integration.md)
 
 ---
 

@@ -49,7 +49,7 @@
 
 ### 2단계: 이메일 디자인
 
-**참고:** 이메일 빌더와 인라인 편집기 사용법에 대한 자세한 내용은 **[이 글](how-to-use-the-email-builder-and-its-in-line-editor.md)**을 참고하세요.
+**참고:** 이메일 빌더와 인라인 편집기 사용법에 대한 자세한 내용은 **[이 글](../../Email-Builder-Capabilities/how-to-use-the-email-builder-and-its-in-line-editor.md)**을 참고하세요.
 
 - 템플릿을 구축하거나 선택합니다.
 

@@ -168,8 +168,8 @@
 
 더 알아보기
 
-- [Facebook 페이지 연결하는 방법](how-to-connect-to-your-facebook-page-s-.md)
-- [Facebook 게시 문제 해결 가이드](facebook-publishing-troubleshooting-guide.md)
+- [Facebook 페이지 연결하는 방법](../../10-마케팅/소셜-플래너/how-to-connect-to-your-facebook-page-s-.md)
+- [Facebook 게시 문제 해결 가이드](../../10-마케팅/소셜-플래너/facebook-publishing-troubleshooting-guide.md)
 - 소셜 플래너에서 Facebook 스토리 예약하는 방법
 - 소셜 플래너에서 Facebook 릴 게시하기
 

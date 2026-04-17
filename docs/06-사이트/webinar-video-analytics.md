@@ -87,7 +87,7 @@
 
 ![웨비나 생성](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055524224/original/vEZ1WGMnNmzQLv7-w8y34e2W-c68TwvXAw.png?1759929193)
 
-도움이 필요하시면 - [웨비나 만들기 완전 가이드](complete-guide-to-creating-webinars-.md)를 참조하세요!
+도움이 필요하시면 - [웨비나 만들기 완전 가이드](../36-기타/리커버리/complete-guide-to-creating-webinars-.md)를 참조하세요!
 
 **중요**: 등록 페이지를 발행하고 폼이 Contacts(연락처)로 연결되는지 확인하세요. 이를 통해 시청자 활동을 CRM 레코드와 연결합니다. 세션을 실행하거나 공개하면 Hyperclass가 모든 재생, 일시정지, 종료 이벤트를 자동으로 기록합니다.
 

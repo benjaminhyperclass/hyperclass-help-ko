@@ -10,11 +10,11 @@
 
 이메일 마케팅 노력이 묻히지 않도록 하세요! 전용 발송 도메인으로 바로 시작해보세요.
 
-**중요**: 전용 발송 도메인은 [LC Email 시스템](how-to-migrate-my-agency-over-to-lc-email.md) 사용자에게만 적용됩니다.
+**중요**: 전용 발송 도메인은 [LC Email 시스템](../how-to-migrate-my-agency-over-to-lc-email.md) 사용자에게만 적용됩니다.
 
 이메일 발송에 사용한 적 없는 새 도메인을 사용하는 경우, 대량 리스트로 이메일을 보내기 전에 반드시 도메인 워밍업을 진행하세요. 이를 하지 않으면 전달률이 떨어집니다.
 
-**중요**: 다른 SMTP 제공업체를 설정하려면 [SMTP 제공업체 설정]([setting-up-smtp-providers](setting-up-smtp-providers.md))을 참조하세요.
+**중요**: 다른 SMTP 제공업체를 설정하려면 [SMTP 제공업체 설정](../setting-up-smtp-providers.md)을 참조하세요.
 
 목차
 

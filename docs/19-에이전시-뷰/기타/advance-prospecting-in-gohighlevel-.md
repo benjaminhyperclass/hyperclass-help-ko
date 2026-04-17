@@ -27,7 +27,7 @@
 
 ## 하이퍼클래스에서 프로스펙팅 시작하는 방법
 
-[자세한 가이드 보기](how-to-generate-leads-using-the-highlevel-prospecting-tool.md)
+[자세한 가이드 보기](../Core-Functionality/how-to-generate-leads-using-the-highlevel-prospecting-tool.md)
 
 ### 무료 프로스펙팅 – 업그레이드 전에 둘러보기
 
@@ -118,7 +118,7 @@
 - 잠재 고객 연락처 정보 저장
 - 육성 시퀀스에 등록
 
-[프로스펙팅 도구의 새로운 잠재 고객을 위한 워크플로우 트리거](workflow-trigger-for-new-prospects-in-the-prospecting-tool.md)
+[프로스펙팅 도구의 새로운 잠재 고객을 위한 워크플로우 트리거](../Premium-Prospecting/workflow-trigger-for-new-prospects-in-the-prospecting-tool.md)
 
 ## 프리미엄 프로스펙팅 활성화 방법
 
@@ -135,7 +135,7 @@
 - 기능을 재판매하려면 가격을 설정하세요
 - 이제 하위 계정에서 자체 대시보드에서 프리미엄을 활성화할 수 있습니다
 
-[자세한 단계별 안내](how-to-link-a-sub-account-with-your-agency-prospecting-premium-subscription.md)
+[자세한 단계별 안내](../../08-결제/기타/how-to-link-a-sub-account-with-your-agency-prospecting-premium-subscription.md)
 
 ## 빠른 요약: 무료 vs 프리미엄
 
@@ -154,13 +154,13 @@
 
 [하이퍼클래스 프로스펙팅 도구를 사용한 리드 생성 - 궁극의 가이드](how-to-generate-leads-using-the-highlevel-prospecting-tool-the-ultimate-guide.md)
 
-[프로스펙팅 도구를 사용하여 비즈니스를 위한 리드 찾는 방법](how-to-find-leads-for-your-business-using-prospecting-tool.md)
+[프로스펙팅 도구를 사용하여 비즈니스를 위한 리드 찾는 방법](../Core-Functionality/how-to-find-leads-for-your-business-using-prospecting-tool.md)
 
-[프로스펙팅 도구: 웹사이트용 프로스펙팅 위젯 만들기](prospecting-tool-create-prospecting-widgets-for-your-websites.md)
+[프로스펙팅 도구: 웹사이트용 프로스펙팅 위젯 만들기](../Core-Functionality/prospecting-tool-create-prospecting-widgets-for-your-websites.md)
 
-[앱 내에서 프로스펙팅 도구 구독 취소하는 방법](how-to-cancel-your-prospecting-tool-subscription-in-app.md)
+[앱 내에서 프로스펙팅 도구 구독 취소하는 방법](../Prospecting-Subscription/how-to-cancel-your-prospecting-tool-subscription-in-app.md)
 
-[에이전시 프로스펙팅 프리미엄 구독과 하위 계정 연결하는 방법](how-to-link-a-sub-account-with-your-agency-prospecting-premium-subscription.md)
+[에이전시 프로스펙팅 프리미엄 구독과 하위 계정 연결하는 방법](../../08-결제/기타/how-to-link-a-sub-account-with-your-agency-prospecting-premium-subscription.md)
 
 ---
 *원문 최종 수정: Thu, 11 Dec, 2025 at 1:01 AM*

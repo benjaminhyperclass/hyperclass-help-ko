@@ -86,11 +86,11 @@
 
 ✅ 전문가 팁: 구글 비즈니스 프로필을 주간 업데이트하는 부동산 중개인은 구글 맵과 로컬 검색에서 2배 더 많은 전화를 받습니다.
 
-[콘텐츠 AI(Content AI)로 이메일 만들기]([how-to-create-emails-using-content-ai-](how-to-create-emails-using-content-ai-.md))
+[콘텐츠 AI(Content AI)로 이메일 만들기](../../13-AI-Employee/Content-AI-in-the-Email-Builder/how-to-create-emails-using-content-ai-.md)
 
-[콘텐츠 AI로 블로그 포스트 개요 만들기](how-to-create-a-social-post-with-content-ai-.md)
+[콘텐츠 AI로 블로그 포스트 개요 만들기](../../13-AI-Employee/기타/how-to-create-a-social-post-with-content-ai-.md)
 
-[콘텐츠 AI로 소셜 미디어 게시물 만들기](how-to-create-a-social-post-with-content-ai-.md)
+[콘텐츠 AI로 소셜 미디어 게시물 만들기](../../13-AI-Employee/기타/how-to-create-a-social-post-with-content-ai-.md)
 
 ## 3단계: 전환되는 콘텐츠 만들기
 

@@ -84,7 +84,7 @@
 - SMS와 이메일로 자동 리마인더를 보내서 노쇼 줄이기
 - 접수 양식을 포함해서 모든 통화에 미리 준비하기
 
-[예약 리마인더 자동화 방법]([how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder](how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md))
+[예약 리마인더 자동화 방법](../../24-대학/HighLevel-How-To&#39;s/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
 
 ### 1.3 적절한 대출 담당자나 팀으로 예약 배정
 
@@ -105,14 +105,14 @@
 - SMS + 이메일로 3-5일 후속 관리 시퀀스 발송
 - FAQ, 고객 후기, 퍼널의 다음 단계 공유
 
-[견적 후속 관리 자동화 방법]([how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder](how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md))
+[견적 후속 관리 자동화 방법](../../24-대학/HighLevel-How-To&#39;s/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
 
 ### 2.2 기존 고객과 추천 파트너 참여 유도
 
 - 월간 시장 업데이트나 금리 알림 발송
 - "모기지 건강 체크"를 제공해서 재융자 관심 유발
 
-[AI 기반 고객 지원 설정 방법]([conversation-ai-bot-explained](conversation-ai-bot-explained.md))
+[AI 기반 고객 지원 설정 방법](../../13-AI-Employee/Getting-Started-w/-Conversation-AI/conversation-ai-bot-explained.md)
 
 ### 2.3 AI로 FAQ 답변 및 잠재 고객 사전 심사
 
@@ -121,7 +121,7 @@
   "어떤 서류가 필요한가요?"
   "10% 계약금으로도 자격이 될까요?"
 
-[스마트 리스트 설정 방법](getting-started-with-smart-lists.md)
+[스마트 리스트 설정 방법](../../02-연락처/기타/getting-started-with-smart-lists.md)
 
 # 3단계: 문서, 할 일, 거래 플로우 간소화
 
@@ -135,21 +135,21 @@
 - "신청 접수 → 서류 입수 → 사전 승인 → 거래 완료 준비 → 완료" 시각적 파이프라인
 - 마감일과 함께 팀원에게 할 일 배정
 
-[인보이스 발송 및 생성 방법]([how-to-create-invoices-in-highlevel](how-to-create-invoices-in-highlevel.md))
+[인보이스 발송 및 생성 방법](../../08-결제/인보이스-견적/how-to-create-invoices-in-highlevel.md)
 
 ### 3.2 문서 요청 자동화
 
 - W2, 급여 명세서, 신용 조회 업로드용 보안 링크 발송
 - 파이프라인 단계에 따라 요청 트리거
 
-[결제 수신 설정 방법](trigger-payment-received.md)
+[결제 수신 설정 방법](../../07-워크플로우/기타/trigger-payment-received.md)
 
 ### 3.3 진행 상황 업데이트 자동화
 
 - 대출자에게 지속적으로 소식 전달("감정 주문함", "거래 완료 준비" 등)
 - 템플릿 이메일/SMS로 절차 설명 시간 단축
 
-[정기 결제 자동화 방법](auto-payments-in-recurring-templates.md)
+[정기 결제 자동화 방법](../../08-결제/기타/auto-payments-in-recurring-templates.md)
 
 # 4단계: 결제 및 수수료 추적 자동화 (해당 시)
 
@@ -160,14 +160,14 @@
 - 이메일이나 문자로 고객에게 인보이스 발송
 - 신용카드, ACH, Apple Pay, Google Pay 결제 수락
 
-[기회 생성 설정 방법]([workflow-trigger-opportunity-created](workflow-trigger-opportunity-created.md))
+[기회 생성 설정 방법](../../07-워크플로우/Opportunity-Workflow-Triggers/workflow-trigger-opportunity-created.md)
 
 ### 4.2 결제완료/미결제 상태 추적
 
 - 수수료가 미결제면 리마인더 트리거
 - CRM 파이프라인에 추적 추가
 
-[정기 예약 모니터링 방법]([configure-recurring-calendar-appointments](configure-recurring-calendar-appointments.md))
+[정기 예약 모니터링 방법](../../04-캘린더-예약/캘린더-설정/configure-recurring-calendar-appointments.md)
 
 # 5단계: 리포팅과 비즈니스 인텔리전스 최적화
 
@@ -181,14 +181,14 @@
 - 광고, 에이전트, 이메일, 소셜, SEO의 ROI 추적
 - 추천 vs 인바운드 vs 기존 고객 소스 비교
 
-[리드 추적 및 관리 방법]([step-by-step-guide-creating-pipelines](step-by-step-guide-creating-pipelines.md))
+[리드 추적 및 관리 방법](../../05-기회-파이프라인/step-by-step-guide-creating-pipelines.md)
 
 ### 5.2 성사율과 대출 파이프라인 건강도 추적
 
 - 대출 유형별 목표 설정: 구매 vs 재융자 vs 주택담보대출
 - 제출한 신청 수, 발급한 사전 승인 수, 평균 거래 규모 추적
 
-[대시보드 생성 및 모니터링 방법]([how-to-create-add-dashboard-widgets](how-to-create-add-dashboard-widgets.md))
+[대시보드 생성 및 모니터링 방법](../../12-대시보드/how-to-create-add-dashboard-widgets.md)
 
 # 마무리: 브로커리지를 운영하는 시스템 구축하기
 

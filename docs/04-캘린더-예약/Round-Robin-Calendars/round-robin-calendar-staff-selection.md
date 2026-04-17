@@ -85,7 +85,7 @@
 
 ![근무 시간 편집](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042358548/original/_tcB-I6bONd-z185Oe8bbPs5bfB-a281Ww.png?1740661230)
 
-기존 예약의 취소 및 일정 변경에 대해서는 [취소 및 일정 변경 정책 (예약 위젯)]([cancellation-reschedule-policy-booking-widget-](cancellation-reschedule-policy-booking-widget-.md))을 참고하세요.
+기존 예약의 취소 및 일정 변경에 대해서는 [취소 및 일정 변경 정책 (예약 위젯)](../캘린더-만들기/cancellation-reschedule-policy-booking-widget-.md)을 참고하세요.
 
 ---
 

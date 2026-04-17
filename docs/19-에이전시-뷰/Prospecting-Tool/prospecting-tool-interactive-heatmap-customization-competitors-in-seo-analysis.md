@@ -171,7 +171,7 @@
 
 - 좌측 메뉴에서 **Marketing(마케팅)**을 클릭하세요.
 
-- 그 다음 상단 메뉴에서 **Prospecting(프로스펙팅)** 탭을 선택하세요. (프로스펙팅 탭이 보이지 않는다면, 하위 계정에서 활성화되어 있는지 확인하세요: 하위 계정에서 [활성화하는 방법에 대한 완전 가이드]([prospecting-at-sub-accounts-complete-guide-benefits-setup](prospecting-at-sub-accounts-complete-guide-benefits-setup.md)) 참조)
+- 그 다음 상단 메뉴에서 **Prospecting(프로스펙팅)** 탭을 선택하세요. (프로스펙팅 탭이 보이지 않는다면, 하위 계정에서 활성화되어 있는지 확인하세요: 하위 계정에서 [활성화하는 방법에 대한 완전 가이드](prospecting-at-sub-accounts-complete-guide-benefits-setup.md) 참조)
 
 ![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055207460/original/5MjxTD0CqYBKjcxrn76pE623jsMKcSqpzA.jpeg?1759504953)
 

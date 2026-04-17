@@ -30,7 +30,7 @@ HighLevel 에이전시 결제는 에이전시 계정 소유자가 구독 플랜,
 
 플랫폼 내에서 결제가 어떻게 작동하는지 이해하는 것은 서비스 중단을 방지하고, 구독 혜택을 최대한 활용하며, 클라이언트 하위 계정을 효율적으로 관리하는 데 필수적입니다.
 
-**참고**: HighLevel 가격에 대해서는 [HighLevel 가격 안내]([highlevel-pricing-guide](highlevel-pricing-guide.md))를 참고하세요.
+**참고**: HighLevel 가격에 대해서는 [HighLevel 가격 안내](../../20-고객지원/Billing-Support/highlevel-pricing-guide.md)를 참고하세요.
 
 ## HighLevel 에이전시 결제의 주요 장점
 

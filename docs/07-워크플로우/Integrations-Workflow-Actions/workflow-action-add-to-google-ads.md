@@ -26,8 +26,8 @@
 
 **Google 광고 전환 액션 설정** 관련 가이드를 확인해 보세요:
 
-1. [Google 광고 전환 액션 설정 방법 (Google 플랫폼 설정)](how-to-set-up-google-ads-conversion-actions-google-platform-side-setup-.md)
-2. [광고 관리자 - Google 광고 오프라인 전환 생성 및 관리](ad-manager-create-manage-google-ads-offline-conversions.md)
+1. [Google 광고 전환 액션 설정 방법 (Google 플랫폼 설정)](../../36-기타/리커버리/how-to-set-up-google-ads-conversion-actions-google-platform-side-setup-.md)
+2. [광고 관리자 - Google 광고 오프라인 전환 생성 및 관리](../../10-마케팅/Google-Ads/ad-manager-create-manage-google-ads-offline-conversions.md)
 
 ## 핵심 이점
 

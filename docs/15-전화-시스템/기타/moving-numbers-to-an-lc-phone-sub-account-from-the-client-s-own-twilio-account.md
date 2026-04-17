@@ -12,7 +12,7 @@
 
 **중요**: **Twilio에서 LC로** 전화번호를 이전하는 과정에서는 고객이 HighLevel 지원팀과 Twilio 지원팀 양쪽 모두에 연락해야 성공적으로 마이그레이션할 수 있습니다.
 
-**중요**: 이 가이드는 미국 지역번호나 무료 통화번호 이전에만 해당됩니다. 미국 이외 국가(기타 국제 번호)의 경우 [국제 전화번호 마이그레이션 (Twilio to LC Phone)](migrating-international-numbers-twilio-to-lc-phone-.md)을 참고하세요.
+**중요**: 이 가이드는 미국 지역번호나 무료 통화번호 이전에만 해당됩니다. 미국 이외 국가(기타 국제 번호)의 경우 [국제 전화번호 마이그레이션 (Twilio to LC Phone)](../전화번호/migrating-international-numbers-twilio-to-lc-phone-.md)을 참고하세요.
 
 ---
 
@@ -114,7 +114,7 @@ HighLevel 지원팀으로부터 수신할 하위 계정 SID를 받으면, **Twil
 전화번호는 클라이언트의 개인 Twilio 계정이 아닌 HighLevel(LC Phone)을 통해 청구됩니다.
 
 **Q: 이 가이드는 미국 지역번호나 무료 통화번호를 다루고 있는데, 국제 번호도 같은 과정을 따를 수 있나요?**
-아니요, 이 과정은 미국 지역번호와 무료 통화번호에만 적용됩니다. 국제 번호 마이그레이션은 다음 가이드를 참고하세요: [국제 전화번호 마이그레이션 (Twilio to LC Phone)](migrating-international-numbers-twilio-to-lc-phone-.md)
+아니요, 이 과정은 미국 지역번호와 무료 통화번호에만 적용됩니다. 국제 번호 마이그레이션은 다음 가이드를 참고하세요: [국제 전화번호 마이그레이션 (Twilio to LC Phone)](../전화번호/migrating-international-numbers-twilio-to-lc-phone-.md)
 
 ---
 *원문 최종 수정: Wed, 25 Mar, 2026 at 7:34 AM*

@@ -86,9 +86,9 @@
 - ✅ GBP 번호를 Hyperclass 추적 번호로 교체
 - ✅ 모든 리드를 CRM으로 라우팅하여 후속 작업
 
-[전화번호 구매 방법](how-to-purchase-a-phone-number.md)
+[전화번호 구매 방법](../../15-전화-시스템/전화번호/how-to-purchase-a-phone-number.md)
 
-[구글 비즈니스 프로필을 Hyperclass에 연결하기](how-to-integrate-google-business-profile-gbp-with-highlevel.md)
+[구글 비즈니스 프로필을 Hyperclass에 연결하기](../../42-통합/Google-Integrations/how-to-integrate-google-business-profile-gbp-with-highlevel.md)
 
 [비즈니스 프로필에서 고객과 채팅하는 방법](https://support.google.com/business/answer/15013580?utm_source=HighLevel+HelpDesk&utm_medium=organic)
 
@@ -98,13 +98,13 @@
 - ✅ 100개 이상의 리뷰를 보유한 컨설턴트는 상위 3개 결과에 300% 더 자주 나타남
 - ✅ 모든 리뷰(좋거나 나쁘거나)에 응답하여 적극성을 보여줌
 
-[리뷰 요청 보내기 방법](how-to-send-review-requests.md)
+[리뷰 요청 보내기 방법](../../41-평판-리뷰/Review-Requests/how-to-send-review-requests.md)
 
-[평판 관리 - 리뷰 요청 메시지(SMS/이메일) 사용자 지정 방법](how-to-customize-the-review-request-messages-sms-email-.md)
+[평판 관리 - 리뷰 요청 메시지(SMS/이메일) 사용자 지정 방법](../../41-평판-리뷰/Review-Requests/how-to-customize-the-review-request-messages-sms-email-.md)
 
-[구글 리뷰 이의 제기 및 이의 제기 상태 확인 방법](how-to-dispute-a-google-review-and-check-on-the-dispute-status.md)
+[구글 리뷰 이의 제기 및 이의 제기 상태 확인 방법](../../41-평판-리뷰/Review-Requests/how-to-dispute-a-google-review-and-check-on-the-dispute-status.md)
 
-[구글 비즈니스 페이지와 소셜 게시 사용 방법](how-to-connect-to-your-google-my-business-location-s-.md)
+[구글 비즈니스 페이지와 소셜 게시 사용 방법](../../10-마케팅/소셜-플래너/how-to-connect-to-your-google-my-business-location-s-.md)
 
 ## 2단계: 지역 SEO와 리드 수집을 위한 웹사이트 개선
 
@@ -125,7 +125,7 @@
   "[지역명]에서 매도하기 가장 좋은 시기는 언제인가요?"
   "[우편번호]에서 집값을 매기는 방법?"
 
-[SEO 메타 데이터 최적화 방법](seo-meta-data.md)
+[SEO 메타 데이터 최적화 방법](../../06-사이트/퍼널-웹사이트/seo-meta-data.md)
 
 ### 2.2 즉시 리드 수집
 
@@ -138,11 +138,11 @@
 - ✅ "지금 전화" 또는 "집값 확인" 버튼이 있는 고정 헤더 사용
 - ✅ 폼 제출 후 캘린더 예약 자동화
 
-[채팅 위젯 시작하기](getting-started-with-chat-widget.md)
+[채팅 위젯 시작하기](../../06-사이트/getting-started-with-chat-widget.md)
 
-[Hyperclass 채팅 위젯 설치 방법](how-to-install-highlevel-s-chat-widget.md)
+[Hyperclass 채팅 위젯 설치 방법](../../03-대화/기타/highlevel-chat-widget-how-to-add-it-to-your-pages-in-minutes.md)
 
-[Hyperclass에서 연락처 폼 만들기](how-to-create-a-contact-form-in-highlevel-.md)
+[Hyperclass에서 연락처 폼 만들기](../../02-연락처/기타/how-to-create-a-contact-form-in-highlevel-.md)
 
 퍼널/웹사이트 진입 시 팝업 표시
 
@@ -169,9 +169,9 @@ Hyperclass에서 이탈 의도 팝업 생성하기
 - ✅ 각 포스트를 Hyperclass 예약 폼이 있는 랜딩 페이지로 연결
 - ✅ Hyperclass의 소스 태그를 통해 게스트 블로그 트래픽 추적
 
-[지역 SEO를 위한 고성과 키워드 찾기]([how-to-add-seo-descriptions-and-keywords-to-boost-your-ecommerce-ranking](how-to-add-seo-descriptions-and-keywords-to-boost-your-ecommerce-ranking.md))
+[지역 SEO를 위한 고성과 키워드 찾기](../../37-이커머스-스토어/E-Commerce-Store/how-to-add-seo-descriptions-and-keywords-to-boost-your-ecommerce-ranking.md)
 
-[전환되는 리드 수집 폼 설정 방법](how-to-create-a-contact-form-in-highlevel-.md)
+[전환되는 리드 수집 폼 설정 방법](../../02-연락처/기타/how-to-create-a-contact-form-in-highlevel-.md)
 
 ## 4단계: 효과적인 방법 추적 (및 확장)
 
@@ -192,7 +192,7 @@ Hyperclass에서 이탈 의도 팝업 생성하기
 실제 컨설턴트 사례:
 Hyperclass를 사용하는 샌안토니오의 부동산 컨설턴트가 구글 통화와 소셜 트래픽을 추적했습니다. 구글이 예약된 상담에서 페이스북을 3대 1로 앞섰습니다. GBP 최적화와 리뷰에 집중함으로써 90일 만에 예약된 매도자 상담이 180% 증가했습니다.
 
-[SEO 메타 데이터 추적 및 개선 방법]([seo-meta-data](seo-meta-data.md))
+[SEO 메타 데이터 추적 및 개선 방법](../../06-사이트/퍼널-웹사이트/seo-meta-data.md)
 
 ## 마무리: 거래를 성사시키는 SEO
 

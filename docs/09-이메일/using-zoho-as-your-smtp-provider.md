@@ -27,7 +27,7 @@ Hyperclass에서 Zoho를 SMTP 제공업체로 구성하기
 포트: TLS와 함께 587
 인증 필요: 예
 
-[무료 이메일 주소를 SMTP로 사용할 수 없는 이유](why-can-t-i-use-my-free-email-address-as-the-smtp-.md)에 대해 자세히 알아보세요.
+[무료 이메일 주소를 SMTP로 사용할 수 없는 이유](SMTP/why-can-t-i-use-my-free-email-address-as-the-smtp-.md)에 대해 자세히 알아보세요.
 
 ## 도메인 기반 이메일을 사용하는 조직을 위한 발신 서버 설정: (you@yourdomain.com 형식의 도메인 기반 이메일 주소를 사용하는 조직 사용자)
 

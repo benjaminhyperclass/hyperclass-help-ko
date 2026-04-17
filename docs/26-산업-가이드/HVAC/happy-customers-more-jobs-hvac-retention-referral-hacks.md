@@ -74,7 +74,7 @@
 **메시지 예시:**  
 *"안녕하세요 김철수님, [회사명]에서 에어컨 설치를 맡겨주셔서 감사합니다! 모든 것이 잘 작동하고 있나요? 6개월 후 계절 점검 예약하시면 5만원 할인해드려요!"*
 
-[고객 후속 관리 자동화 방법]([how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder](how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md))
+[고객 후속 관리 자동화 방법](../../24-대학/HighLevel-How-To&#39;s/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
 
 ### **1.2 자동 점검 알림**
 
@@ -88,7 +88,7 @@
 **메시지 예시:**  
 *"김철수님, 마지막 에어컨 점검한 지 6개월이 지났네요. 점검이 필요하시면 YES로 답장해 주시면 처리해드리겠습니다!"*
 
-[정기 점검 알림 설정 방법]([how-to-send-users-appointment-reminders](how-to-send-users-appointment-reminders.md))
+[정기 점검 알림 설정 방법](../../23-레거시-자동화/Logic-&amp;-Fulfillment/how-to-send-users-appointment-reminders.md)
 
 ---
 
@@ -111,7 +111,7 @@
 **메시지 예시:**  
 *"김철수님, 저희 서비스를 이용해주셔서 감사합니다! 만족하셨다면 간단한 리뷰 하나만 남겨주실 수 있을까요? 저희에게 큰 도움이 됩니다! 여기를 클릭하세요: [구글 리뷰 링크]"*
 
-[자동 리뷰 요청 설정 방법]([how-to-setup-workflow-triggers-for-google-and-facebook-reviews](how-to-setup-workflow-triggers-for-google-and-facebook-reviews.md))
+[자동 리뷰 요청 설정 방법](../../41-평판-리뷰/Review-Requests/how-to-setup-workflow-triggers-for-google-and-facebook-reviews.md)
 
 ### **2.2 부정적 리뷰 사전 대응**
 
@@ -137,7 +137,7 @@
 **메시지 예시:**  
 *"저희 서비스가 마음에 드셨나요? 지인을 추천해주시면 둘 다 다음 HVAC 서비스에서 5만원 할인받으실 수 있어요! 이 링크를 보내주세요: [추천 링크]"*
 
-[자동 추천 프로그램 설정 방법](affiliate-refferal-page-leads-customers-cancelled-statuses.md)
+[자동 추천 프로그램 설정 방법](../../21-어필리에이트/기타/affiliate-refferal-page-leads-customers-cancelled-statuses.md)
 
 ### **3.2 추천 후속 관리 자동화**
 
@@ -164,7 +164,7 @@
 **메시지 예시:**  
 *"VIP HVAC 유지보수 플랜에 가입하세요: 연 2회 점검 + 우선 서비스 = 연 20만원. 비용 절약하고 시스템을 효율적으로 유지하세요!"*
 
-[구독 기반 서비스 설정 방법]([pause-and-resume-subscriptions](pause-and-resume-subscriptions.md))
+[구독 기반 서비스 설정 방법](../../08-결제/pause-and-resume-subscriptions.md)
 
 ---
 
@@ -191,9 +191,9 @@
 **메시지 예시:**  
 *"안녕하세요 김철수님, 마지막 보일러 점검한 지 1년이 지났네요. 검사가 필요하시면 YES로 답장해 주시면 예약해드리겠습니다!"*
 
-[정기 유지보수 플랜 판매 및 자동화 방법](recurring-appointments.md)
+[정기 유지보수 플랜 판매 및 자동화 방법](../../04-캘린더-예약/기타/recurring-appointments.md)
 
-[고객 유지를 위한 스마트 리스트 사용법](getting-started-with-smart-lists.md)
+[고객 유지를 위한 스마트 리스트 사용법](../../02-연락처/기타/getting-started-with-smart-lists.md)
 
 ---
 

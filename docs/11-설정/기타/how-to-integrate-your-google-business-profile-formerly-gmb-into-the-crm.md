@@ -32,7 +32,7 @@ GBP를 Hyperclass에 연동하는 것은 단순한 계정 연결을 넘어서, C
 
 - **중앙화된 리뷰 관리**: 새로운 Google 리뷰가 대화(Conversations)로 자동 동기화되어 Hyperclass를 떠나지 않고도 답변할 수 있습니다.
 
-- **메시징 연동**: 커뮤니케이션 채널이 추가되고 메시지 동기화를 위해 CRM과 연결됩니다 ([GBP와 커뮤니케이션 및 소셜 채널 연결](communication-and-social-channel-connection-with-gbp.md))
+- **메시징 연동**: 커뮤니케이션 채널이 추가되고 메시지 동기화를 위해 CRM과 연결됩니다 ([GBP와 커뮤니케이션 및 소셜 채널 연결](../../42-통합/Google-Integrations/communication-and-social-channel-connection-with-gbp.md)
 
 - **평판 추적**: 평판 관리(Reputation) 탭에서 리뷰를 모니터링하고 관리할 수 있습니다.
 

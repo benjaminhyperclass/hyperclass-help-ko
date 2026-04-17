@@ -39,8 +39,8 @@
 
 ## 사전 준비사항
 
-- 하위 계정(Sub-account)에서 전화번호를 구매해야 합니다([LC Phone 가이드](what-is-lc-phone-system-.md) 또는 Twilio 가이드 참조)
-- mp3/wav 파일(64kbps)로 미리 녹음된 오디오 파일이 있어야 합니다([자세한 내용은 여기](voicemail-drop-file-conversion.md))
+- 하위 계정(Sub-account)에서 전화번호를 구매해야 합니다([LC Phone 가이드](../../15-전화-시스템/기타/what-is-lc-phone-system-.md) 또는 Twilio 가이드 참조)
+- mp3/wav 파일(64kbps)로 미리 녹음된 오디오 파일이 있어야 합니다([자세한 내용은 여기](../../09-이메일/기타/voicemail-drop-file-conversion.md)
 - 음성메일을 남기기 위해 자동화된 통화에 대한 사용자 동의를 받아야 합니다.
 
 ## **워크플로우를 사용한 링리스 음성메일 설정**

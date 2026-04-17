@@ -72,7 +72,7 @@
 
 ## Q. WhatsApp 비즈니스 플랫폼과 WhatsApp 비즈니스 앱을 동시에 사용할 수 있나요?
 
-네, WhatsApp 공존 기능을 사용하여 가능합니다. WhatsApp 공존 기능을 통해 비즈니스는 기존 WhatsApp 비즈니스 앱 계정을 WhatsApp Cloud API로 구동되는 LeadConnector의 고급 CRM 도구와 함께 사용할 수 있습니다. [자세한 내용은 여기서 확인하세요](whatsapp-coexistence-feature.md)
+네, WhatsApp 공존 기능을 사용하여 가능합니다. WhatsApp 공존 기능을 통해 비즈니스는 기존 WhatsApp 비즈니스 앱 계정을 WhatsApp Cloud API로 구동되는 LeadConnector의 고급 CRM 도구와 함께 사용할 수 있습니다. [자세한 내용은 여기서 확인하세요](../../36-기타/리커버리/whatsapp-coexistence-feature.md)
 
 ## Q. WhatsApp 번호를 WhatsApp 비즈니스 플랫폼으로 이전한 후 데이터가 손실되나요?
 

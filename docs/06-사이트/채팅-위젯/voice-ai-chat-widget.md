@@ -8,7 +8,7 @@
 
 GoHighLevel 채팅 위젯에서 바로 사람 같은 음성 대화를 제공하세요. 전화번호나 앱 다운로드, 추가 설정 없이 더 많은 리드를 즉시 확보하고 검증할 수 있습니다.
 
-**중요**: 이 기능은 현재 Labs에서 제공되며, 에이전시가 하위 계정(Sub-account)에 대해 활성화해야 합니다. 자세한 내용은 [Labs 기능 - 전체 개요]([labs-features-complete-overview](labs-features-complete-overview.md))를 참조하세요.
+**중요**: 이 기능은 현재 Labs에서 제공되며, 에이전시가 하위 계정(Sub-account)에 대해 활성화해야 합니다. 자세한 내용은 [Labs 기능 - 전체 개요](../../19-에이전시-뷰/Agency-Settings/labs-features-complete-overview.md)를 참조하세요.
 
 ---
 

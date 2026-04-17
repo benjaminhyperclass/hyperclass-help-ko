@@ -58,11 +58,11 @@
 
 #### [구글 비즈니스 프로필 설정 방법](https://support.google.com/business/answer/3038177?hl=en)
 
-#### [통화 추적 번호 설정 방법]([call-tracking-and-missed-call-text-back-through-google-business-profile](call-tracking-and-missed-call-text-back-through-google-business-profile.md))
+#### [통화 추적 번호 설정 방법](../../41-평판-리뷰/Review-Requests/call-tracking-and-missed-call-text-back-through-google-business-profile.md)
 
-#### [구글 리뷰 자동화 방법]([how-to-setup-workflow-triggers-for-google-and-facebook-reviews](how-to-setup-workflow-triggers-for-google-and-facebook-reviews.md))
+#### [구글 리뷰 자동화 방법](../../41-평판-리뷰/Review-Requests/how-to-setup-workflow-triggers-for-google-and-facebook-reviews.md)
 
-#### [구글 비즈니스 프로필 최적화 방법](how-to-integrate-your-google-business-profile-formerly-gmb-into-the-crm.md)
+#### [구글 비즈니스 프로필 최적화 방법](../../11-설정/기타/how-to-integrate-your-google-business-profile-formerly-gmb-into-the-crm.md)
 
 ### 첫 번째 실행 단계:
 
@@ -94,23 +94,23 @@
 ✅ 웹사이트와 랜딩 페이지에 채팅 위젯을 추가하세요
 ✅ 부재중 전화 문자 회신을 활성화하여 즉시 리드를 회수하세요
 
-#### [부재중 전화 문자 회신 설정]([where-and-how-to-configure-the-missed-call-text-back-feature](where-and-how-to-configure-the-missed-call-text-back-feature.md))
+#### [부재중 전화 문자 회신 설정](../../11-설정/서브어카운트-설정/where-and-how-to-configure-the-missed-call-text-back-feature.md)
 
 ✅ 구매자/판매자 상담을 위해 Hyperclass 예약 링크를 사용하세요
 ✅ 폼 제출, 페이스북 광고, 질로 리드로 트리거되는 후속 조치 자동화를 구축하세요
 
-#### [반복 후속 조치 설정](recurring-appointments.md)
+#### [반복 후속 조치 설정](../../04-캘린더-예약/기타/recurring-appointments.md)
 
 ✅ AI를 사용하여 구매자/판매자 FAQ에 자동 응답하고 예약을 설정하세요
 
 후속 조치 SMS 예시:
 "안녕하세요 사라님, 집값 산정 요청해주셔서 감사합니다! 잠깐 통화로 수치를 검토하시겠어요? 여기서 예약하세요: [링크]"
 
-#### [AI 기반 HVAC 후속 조치 설정 방법]([how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder](how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md))
+#### [AI 기반 HVAC 후속 조치 설정 방법](../../24-대학/HighLevel-How-To&#39;s/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
 
-#### [음성 AI 에이전트 설정 방법](creating-voice-ai-agents.md)
+#### [음성 AI 에이전트 설정 방법](../../13-AI-Employee/기타/creating-voice-ai-agents.md)
 
-#### [대화 AI 에이전트 설정 방법]([how-to-use-conversation-ai-to-book-appointments](how-to-use-conversation-ai-to-book-appointments.md))
+#### [대화 AI 에이전트 설정 방법](../../13-AI-Employee/Conversation-AI---Goals,-Prompts,-&-Actions/how-to-use-conversation-ai-to-book-appointments.md)
 
 ## 3단계: 리뷰 자동화 & 추천 시스템 구축
 
@@ -145,7 +145,7 @@
 
 #### [구글 LSA 운영 방법](https://ads.google.com/intl/en_us/home/local-services-ads/)
 
-#### [LSA를 Hyperclass와 연동하는 방법]([reserve-with-google-integration-local-services-ads-lsa-](reserve-with-google-integration-local-services-ads-lsa-.md))
+#### [LSA를 Hyperclass와 연동하는 방법](../../04-캘린더-예약/캘린더-연동/reserve-with-google-integration-local-services-ads-lsa-.md)
 
 ### 부동산 활용 사례:
 
@@ -157,15 +157,15 @@
 ✅ "내 주변 부동산 중개업자" 키워드로 구글 로컬 서비스 광고(LSA)를 시작하세요
 ✅ 집값 산정 또는 구매자 목록을 제공하는 페이스북 리드 광고를 운영하세요
 
-#### [Hyperclass에서 페이스북 광고 운영 방법](create-new-ad-campaign-in-ad-manager.md)
+#### [Hyperclass에서 페이스북 광고 운영 방법](../../10-마케팅/기타/create-new-ad-campaign-in-ad-manager.md)
 
 ✅ Hyperclass를 사용하여 리드를 후속 조치 워크플로우와 즉시 동기화하세요
 
-#### [통화 추적 번호 풀 설정]([how-to-set-up-call-tracking-number-pool-](how-to-set-up-call-tracking-number-pool-.md))
+#### [통화 추적 번호 풀 설정](../../15-전화-시스템/통화/how-to-set-up-call-tracking-number-pool-.md)
 
 ✅ 사이트 방문자 또는 과거 참여자에게 도달하는 리타겟팅 광고를 활성화하세요
 
-#### [전환되는 광고 운영 방법]([overview-of-ad-manager](overview-of-ad-manager.md))
+#### [전환되는 광고 운영 방법](../../10-마케팅/Getting-Started-w/-Ad-Manager/overview-of-ad-manager.md)
 
 광고 카피 예시:
 "오늘 시장에서 당신의 집이 얼마나 될지 궁금하신가요? 24시간 내 무료 집값 보고서를 받으세요 — 의무 사항 없습니다. [지금 예약하기]"
@@ -177,7 +177,7 @@
 일관되게 게시하는 중개업자는 상위 노출을 유지하고 30% 더 많은 반복 비즈니스를 얻습니다.
 하지만 하루 종일 게시물을 작성하느라 시간을 보낸다면 성장할 수 없습니다.
 
-#### [소셜 미디어에서 리뷰 공유 방법](share-your-reviews-as-posts-on-social-media-using-social-planner.md)
+#### [소셜 미디어에서 리뷰 공유 방법](../../10-마케팅/기타/share-your-reviews-as-posts-on-social-media-using-social-planner.md)
 
 ### 부동산 활용 사례:
 
@@ -188,11 +188,11 @@
 
 ✅ Hyperclass의 소셜 플래너(Social Planner)로 주 3-5회 게시물을 예약하세요
 
-#### [부동산 중개업자를 위한 블로그 만들기]([how-to-create-a-blog-](how-to-create-a-blog-.md))
+#### [부동산 중개업자를 위한 블로그 만들기](../../06-사이트/how-to-create-a-blog-.md)
 
-#### [블로그 RSS 피드 설정 방법](how-to-set-up-an-rss-feed-for-blogs.md)
+#### [블로그 RSS 피드 설정 방법](../../06-사이트/기타/how-to-set-up-an-rss-feed-for-blogs.md)
 
-#### [RSS 이메일 캠페인 설정 방법]([how-to-send-rss-email-campaign-s-](how-to-send-rss-email-campaign-s-.md))
+#### [RSS 이메일 캠페인 설정 방법](../../10-마케팅/RSS-Guide/how-to-send-rss-email-campaign-s-.md)
 
 ✅ 다음 용도의 템플릿을 사용하세요:
 • 매물 등록/판매 완료 게시물

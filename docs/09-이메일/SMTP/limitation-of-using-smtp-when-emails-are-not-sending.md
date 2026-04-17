@@ -6,11 +6,11 @@
 
 # SMTP 사용 시 이메일이 발송되지 않는 경우의 제한사항
 
-SMTP 공급자를 사용해서 이메일을 발송하는데 대부분의 경우 전달이 되지 않는다면, 보통 [발신자 이메일](sending-priority-from-name-address.md)이 여기에서 설정한 SMTP 이메일과 일치하지 않기 때문입니다:
+SMTP 공급자를 사용해서 이메일을 발송하는데 대부분의 경우 전달이 되지 않는다면, 보통 [발신자 이메일](../sending-priority-from-name-address.md)이 여기에서 설정한 SMTP 이메일과 일치하지 않기 때문입니다:
 
 ![SMTP 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48280761517/original/7EeQW-iMOrII91u4q9JADK0pynS16WBRlg.png?1675971805)
 
-SMTP 공급자를 설정한 후, [대화(Conversation)에서 테스트 이메일을 발송](how-to-send-a-test-email-in-the-conversation.md)할 때 오류가 발생한다면:
+SMTP 공급자를 설정한 후, [대화(Conversation)에서 테스트 이메일을 발송](../트러블슈팅/how-to-send-a-test-email-in-the-conversation.md)할 때 오류가 발생한다면:
 
 대화에서 ⚠️(빨간 삼각형) 아이콘을 클릭하여 오류에 대한 자세한 내용을 확인할 수 있습니다.
 
@@ -22,7 +22,7 @@ SMTP 공급자를 설정한 후, [대화(Conversation)에서 테스트 이메일
 
 ## Google Gsuite SMTP 별칭 설정:
 
-[[setting-alias-for-google-smtp]([setting-alias-for-google-smtp.md)]([setting-alias-for-google-smtp](setting-alias-for-google-smtp.md))
+[[setting-alias-for-google-smtp](../setting-alias-for-google-smtp.md)]([setting-alias-for-google-smtp](../setting-alias-for-google-smtp.md)
 
 ## SendGrid의 경우:
 
@@ -30,7 +30,7 @@ SMTP 공급자를 설정한 후, [대화(Conversation)에서 테스트 이메일
 
 ## Zoho의 경우:
 
-[[using-zoho-as-your-smtp-provider]([using-zoho-as-your-smtp-provider.md)]([using-zoho-as-your-smtp-provider](using-zoho-as-your-smtp-provider.md))
+[[using-zoho-as-your-smtp-provider](../using-zoho-as-your-smtp-provider.md)]([using-zoho-as-your-smtp-provider](../using-zoho-as-your-smtp-provider.md)
 
 ---
 *원문 최종 수정: Thu, 9 Feb, 2023 at 2:13 PM*

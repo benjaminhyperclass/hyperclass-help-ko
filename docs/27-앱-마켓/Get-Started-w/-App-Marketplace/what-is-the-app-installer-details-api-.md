@@ -59,7 +59,7 @@
 구체적인 예제는 통합 시간을 단축시킵니다. 공식 API 참조에서 확인 후 실제 베이스 URL과 엔드포인트 경로로 아래 플레이스홀더를 교체하세요.
 
 - **HTTP 메서드**: GET
-- **엔드포인트 경로**: /marketplace/app-installer/details (플레이스홀더—정확한 경로는 [여기](highlevel-api.md)의 공식 API 문서에서 확인하세요)
+- **엔드포인트 경로**: /marketplace/app-installer/details (플레이스홀더—정확한 경로는 [여기](../../../42-통합/기타/highlevel-api.md)의 공식 API 문서에서 확인하세요)
 
 **cURL**
 ```

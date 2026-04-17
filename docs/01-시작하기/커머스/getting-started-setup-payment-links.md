@@ -42,19 +42,19 @@
 
 ![결제 링크 전송 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047624748/original/untNNkuIBOCpSBv68Ba4rryGPW6lb5VMJA.png?1748905069)
 
-이제 결제 링크가 준비되었으니, 고객 경험을 더욱 맞춤화해보는 건 어떨까요? [결제 링크를 브랜드 색상으로 커스터마이징하는 방법 자세히 보기](how-to-customize-payment-links-with-your-brand-colors.md)
+이제 결제 링크가 준비되었으니, 고객 경험을 더욱 맞춤화해보는 건 어떨까요? [결제 링크를 브랜드 색상으로 커스터마이징하는 방법 자세히 보기](../../08-결제/how-to-customize-payment-links-with-your-brand-colors.md)
 
 ---
 
 ## 관련 가이드
 
-- [브랜드 색상으로 결제 링크 커스터마이징하는 방법](how-to-customize-payment-links-with-your-brand-colors.md)
+- [브랜드 색상으로 결제 링크 커스터마이징하는 방법](../../08-결제/how-to-customize-payment-links-with-your-brand-colors.md)
 
-- [상품 결제 링크 만드는 방법](payment-links.md)
+- [상품 결제 링크 만드는 방법](../../08-결제/payment-links.md)
 
-- [여러 연락처에게 개인화된 결제 링크를 보내는 방법은?](how-to-send-personalized-payment-links-to-multiple-contacts-.md)
+- [여러 연락처에게 개인화된 결제 링크를 보내는 방법은?](../../08-결제/how-to-send-personalized-payment-links-to-multiple-contacts-.md)
 
-- [결제 링크에서 수량 편집 기능 활성화하는 방법](how-to-enable-editable-quantities-in-payment-links.md)
+- [결제 링크에서 수량 편집 기능 활성화하는 방법](../../08-결제/시작하기/how-to-enable-editable-quantities-in-payment-links.md)
 
 - 빠른 결제 링크의 자동 세금 설정하는 방법
 

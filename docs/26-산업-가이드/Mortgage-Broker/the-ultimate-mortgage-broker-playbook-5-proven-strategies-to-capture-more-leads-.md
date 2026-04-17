@@ -55,18 +55,18 @@ NMLS ID, 중개업 세부정보, 서비스 지역, 대출 유형(FHA, VA, Conven
 
 ✅ **Hyperclass 통화 추적 번호 추가**  
 전화번호를 Hyperclass 추적 라인으로 교체하여 Google, 광고, 또는 추천에서 오는 리드의 ROI를 측정하세요.  
-[통화 추적 번호 설정 방법]([call-tracking-and-missed-call-text-back-through-google-business-profile](call-tracking-and-missed-call-text-back-through-google-business-profile.md))
+[통화 추적 번호 설정 방법](../../41-평판-리뷰/Review-Requests/call-tracking-and-missed-call-text-back-through-google-business-profile.md)
 
 ✅ **Google 메시징 + AI 후속 조치 활성화**  
 잠재 차용인들이 Google에서 직접 문자를 보낼 수 있게 하고, Hyperclass로 자동 응답하세요.
 
 ✅ **Google 리뷰 수집 및 자동화**  
 50개 이상의 리뷰를 가진 브로커는 지역 트래픽이 3배 많고 전환율도 더 좋습니다.  
-[Google 리뷰 자동화 방법]([how-to-setup-workflow-triggers-for-google-and-facebook-reviews](how-to-setup-workflow-triggers-for-google-and-facebook-reviews.md))
+[Google 리뷰 자동화 방법](../../41-평판-리뷰/Review-Requests/how-to-setup-workflow-triggers-for-google-and-facebook-reviews.md)
 
 ✅ **주간 Google 업데이트 게시**  
 모기지 팁, 금리 업데이트, 또는 마일스톤 공지(예: "이번 달 5명의 첫 구매자 대출 성사")로 Google 리스팅을 신선하게 유지하세요.  
-[Google 비즈니스 프로필 최적화 방법](how-to-integrate-your-google-business-profile-formerly-gmb-into-the-crm.md)
+[Google 비즈니스 프로필 최적화 방법](../../11-설정/기타/how-to-integrate-your-google-business-profile-formerly-gmb-into-the-crm.md)
 
 ## 2단계: 거래를 놓치기 전에 리드 후속 조치 자동화
 
@@ -79,11 +79,11 @@ NMLS ID, 중개업 세부정보, 서비스 지역, 대출 유형(FHA, VA, Conven
 
 ✅ **웹사이트에 채팅 위젯 추가**  
 사이트를 리드 마그넷으로 전환하세요 — 방문자가 사라지지 않고 문자를 보낼 수 있게 하세요.  
-[채팅 위젯 설정 방법]([getting-started-with-chat-widget](getting-started-with-chat-widget.md))
+[채팅 위젯 설정 방법](../../06-사이트/getting-started-with-chat-widget.md)
 
 ✅ **부재 중 전화 문자 회신 활성화**  
 핫 리드의 전화를 놓쳤나요? Hyperclass가 즉시 문자를 보내서 놓치지 않게 합니다.  
-[부재 중 전화 문자 회신 설정]([where-and-how-to-configure-the-missed-call-text-back-feature](where-and-how-to-configure-the-missed-call-text-back-feature.md))
+[부재 중 전화 문자 회신 설정](../../11-설정/서브어카운트-설정/where-and-how-to-configure-the-missed-call-text-back-feature.md)
 
 ✅ **후속 조치 캠페인 자동화**  
 리드 육성 이메일과 SMS를 설정하세요:
@@ -92,13 +92,13 @@ NMLS ID, 중개업 세부정보, 서비스 지역, 대출 유형(FHA, VA, Conven
 
 ✅ **상담 예약 링크 추가**  
 고객이 왔다갔다 하지 않고 통화를 예약할 수 있게 하세요.  
-[정기 후속 조치 설정](recurring-appointments.md)
+[정기 후속 조치 설정](../../04-캘린더-예약/기타/recurring-appointments.md)
 
 ✅ **대화 AI 및 음성 AI 사용**  
 "현재 금리가 어떻게 되나요?" 또는 "620점으로 자격을 얻을 수 있나요?"와 같은 FAQ에 자동 응답하세요.  
-[AI 기반 후속 조치 설정 방법]([how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder](how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md))  
-[음성 AI 에이전트 설정 방법](creating-voice-ai-agents.md)  
-[대화 AI 에이전트 설정 방법]([how-to-use-conversation-ai-to-book-appointments](how-to-use-conversation-ai-to-book-appointments.md))
+[AI 기반 후속 조치 설정 방법](../../24-대학/HighLevel-How-To&#39;s/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)  
+[음성 AI 에이전트 설정 방법](../../13-AI-Employee/기타/creating-voice-ai-agents.md)  
+[대화 AI 에이전트 설정 방법](../../13-AI-Employee/Conversation-AI---Goals,-Prompts,-&-Actions/how-to-use-conversation-ai-to-book-appointments.md)
 
 ## 3단계: 만족한 고객을 5성 리뷰로 전환
 
@@ -137,7 +137,7 @@ Google 신뢰도를 높이고 전문성을 보여줍니다.
 현명한 브로커는 타겟 광고를 사용해서 적극적으로 대출을 리서치하는 차용인을 유치합니다.
 
 [Google LSA 실행 방법](https://ads.google.com/intl/en_us/home/local-services-ads/)  
-[Hyperclass와 LSA 연동 방법]([reserve-with-google-integration-local-services-ads-lsa-](reserve-with-google-integration-local-services-ads-lsa-.md))
+[Hyperclass와 LSA 연동 방법](../../04-캘린더-예약/캘린더-연동/reserve-with-google-integration-local-services-ads-lsa-.md)
 
 ### 먼저 해야 할 일:
 
@@ -148,15 +148,15 @@ Google 신뢰도를 높이고 전문성을 보여줍니다.
 
 ✅ **리파이낸싱 및 FHA용 Facebook 리드 광고 사용**  
 특정 대출 유형이나 리파이낸싱 기회에 대한 낮은 CPC 리드를 생성하세요.  
-[Hyperclass에서 Facebook 광고 실행 방법](create-new-ad-campaign-in-ad-manager.md)
+[Hyperclass에서 Facebook 광고 실행 방법](../../10-마케팅/기타/create-new-ad-campaign-in-ad-manager.md)
 
 ✅ **웹사이트 방문자 리타겟팅**  
 사이트를 클릭했지만 신청하지 않은 차용인에게 광고를 보여주세요.  
-[통화 추적 번호 풀 설정]([how-to-set-up-call-tracking-number-pool-](how-to-set-up-call-tracking-number-pool-.md))
+[통화 추적 번호 풀 설정](../../15-전화-시스템/통화/how-to-set-up-call-tracking-number-pool-.md)
 
 ✅ **통화, 폼, ROI 추적**  
 모든 캠페인에 고유한 추적 번호를 할당하고 성사율을 측정하세요.  
-[전환되는 광고 실행 방법]([overview-of-ad-manager](overview-of-ad-manager.md))
+[전환되는 광고 실행 방법](../../10-마케팅/Getting-Started-w/-Ad-Manager/overview-of-ad-manager.md)
 
 ✅ **작게 시작해서 확장**  
 특정 페르소나(예: 첫 구매자, VA 차용인)를 타겟팅하는 일일 $15-25로 시작한 후, 성과에 따라 확장하세요.
@@ -167,7 +167,7 @@ Google 신뢰도를 높이고 전문성을 보여줍니다.
 
 차용인은 침묵을 신뢰하지 않습니다. SNS에 지속적으로 나타나는 것은 브랜드 신뢰를 구축하고 추천을 가져옵니다.
 
-[SNS에서 리뷰를 게시물로 공유하는 방법](share-your-reviews-as-posts-on-social-media-using-social-planner.md)
+[SNS에서 리뷰를 게시물로 공유하는 방법](../../10-마케팅/기타/share-your-reviews-as-posts-on-social-media-using-social-planner.md)
 
 ### 먼저 해야 할 일:
 
@@ -176,9 +176,9 @@ Google 신뢰도를 높이고 전문성을 보여줍니다.
 - "피해야 할 모기지 실수 3가지"
 - "고객 스포트라이트: Sarah가 5% 계약금으로 대출받은 방법"
 
-[모기지 브로커를 위한 블로그 만들기]([how-to-create-a-blog-](how-to-create-a-blog-.md))  
-[블로그용 RSS 피드 설정 방법](how-to-set-up-an-rss-feed-for-blogs.md)  
-[RSS 이메일 캠페인 설정 방법]([how-to-send-rss-email-campaign-s-](how-to-send-rss-email-campaign-s-.md))
+[모기지 브로커를 위한 블로그 만들기](../../06-사이트/how-to-create-a-blog-.md)  
+[블로그용 RSS 피드 설정 방법](../../06-사이트/기타/how-to-set-up-an-rss-feed-for-blogs.md)  
+[RSS 이메일 캠페인 설정 방법](../../10-마케팅/RSS-Guide/how-to-send-rss-email-campaign-s-.md)
 
 ✅ **모기지 블로그 시작**  
 도움이 되는 콘텐츠로 SEO를 높이고 신뢰를 구축하세요.

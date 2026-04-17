@@ -150,7 +150,7 @@ Group By(그룹별) 또는 View By(보기별) 드롭다운에서 Session Source(
 
 - [위젯 맞춤 설정하기](customizing-dashboard-widgets.md)
 - [대시보드에서 위젯 편집하기](edit-widgets-on-the-dashboard.md)
-- [위젯 제거하기](removing-a-widget.md)
+- [위젯 제거하기](위젯/removing-a-widget.md)
 
 ---
 *원문 최종 수정: Thu, 5 Feb, 2026 at 1:31 AM*

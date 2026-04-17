@@ -70,7 +70,7 @@
 
 6개월 만에 예약이 45% 증가했고, 부동산 중개업체와 장기 계약을 체결했습니다.
 
-[청소 서비스를 위한 Google 비즈니스 프로필 설정법]([how-to-connect-to-your-google-my-business-location-s-](how-to-connect-to-your-google-my-business-location-s-.md))
+[청소 서비스를 위한 Google 비즈니스 프로필 설정법](../../10-마케팅/소셜-플래너/how-to-connect-to-your-google-my-business-location-s-.md)
 
 #### 1.2 소셜 미디어 프로필 최적화하기
 
@@ -101,7 +101,7 @@
 
 #### 실제 사례: 뉴욕의 한 청소 서비스가 Facebook에서 주간 "청소 오해 깨기" 영상 시리즈를 운영하여 참여도가 250% 증가했고, 4개의 장기 상업 고객을 확보했습니다.
 
-[기존 템플릿을 사용해 광고 캠페인 만들기]([ad-manager-create-ad-campaigns-using-templates](ad-manager-create-ad-campaigns-using-templates.md))
+[기존 템플릿을 사용해 광고 캠페인 만들기](../../10-마케팅/Ad-Campaign-Creation-and-Management/ad-manager-create-ad-campaigns-using-templates.md)
 
 #### 2.2 해시태그 & 지역 태그 활용하기
 
@@ -144,7 +144,7 @@
 | 소규모 팀 (2-5명) | 일일 $25 (~월 $750) 멀티 플랫폼 전략용 |
 | 대규모 업체 | 일일 $50 (~월 $1,500) 브랜드 인지도 + 리드 생성용 |
 
-[청소 서비스를 위한 효과적인 광고 예산 관리법]([ad-manager-campaign-budget-definition](ad-manager-campaign-budget-definition.md))
+[청소 서비스를 위한 효과적인 광고 예산 관리법](../../10-마케팅/Ad-Campaign-Creation-and-Management/ad-manager-campaign-budget-definition.md)
 
 ### 4단계: AI로 자동화하고 스케일업하기
 

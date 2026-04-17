@@ -98,7 +98,7 @@
 # 자주 묻는 질문
 
 ### Add Service(서비스 추가) 버튼이 없는 이유는?
-기능을 비활성화하면 SMTP 설정을 편집할 수 있습니다. [여기 단계에 따라 이메일 재청구를 비활성화하세요](troubleshooting-warning-please-contact-your-agency-to-change-email-settings.md).
+기능을 비활성화하면 SMTP 설정을 편집할 수 있습니다. [여기 단계에 따라 이메일 재청구를 비활성화하세요](../트러블슈팅/troubleshooting-warning-please-contact-your-agency-to-change-email-settings.md).
 
 이메일 재청구가 활성화된 경우 클라이언트가 자체 SMTP를 사용해서는 안 되며 Mailgun에서만 작동해야 하므로, 켜고 끄는 것이 설정된 내용을 자동으로 삭제하지는 않습니다. 하지만 여기서 SMTP 연동을 쉽게 업데이트하는 편집을 허용하지 않는 것이 목적입니다.
 
@@ -128,7 +128,7 @@ SMTP 제공업체에 로그인하여 요금제 또는 청구 섹션으로 이동
 
 # 관련 문서
 
-- [재청구, 재판매 및 지갑 설명](rebilling-reselling-and-wallets-explained.md)
+- [재청구, 재판매 및 지갑 설명](../../36-기타/Miscellaneous/rebilling-reselling-and-wallets-explained.md)
 
 ---
 *원문 최종 수정: 2026-02-04*

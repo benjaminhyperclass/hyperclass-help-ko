@@ -21,7 +21,7 @@
 
 이를 바탕으로 광고 문구, 타겟팅, 랜딩 페이지 디자인을 결정하세요.
 
-[Ad Manager 시작하기]([overview-of-ad-manager](overview-of-ad-manager.md))
+[Ad Manager 시작하기](../../10-마케팅/Getting-Started-w/-Ad-Manager/overview-of-ad-manager.md)
 
 ## 2단계: 적합한 광고 채널 선택
 
@@ -58,7 +58,7 @@
 
 ✅ **유사 고객**: 회원 명단을 업로드해서 Meta 플랫폼에서 비슷한 고객 생성
 
-[GHL Ad Manager에서 커스텀 오디언스 만들기]([create-custom-audiences-in-ad-manager](create-custom-audiences-in-ad-manager.md))
+[GHL Ad Manager에서 커스텀 오디언스 만들기](../../10-마케팅/Ad-Campaign-Creation-and-Management/create-custom-audiences-in-ad-manager.md)
 
 ## 5단계: 예산 & 일정 설정
 
@@ -86,7 +86,7 @@
 - 다양한 오디언스 시도: 관심사, 행동, 인구통계
 - 어떤 게재 위치(피드 vs. 스토리 vs. YouTube)가 최고 결과를 내는지 분석
 
-[광고 어트리뷰션에 대해 알아보기](understanding-attribution-source-ad-reporting-.md)
+[광고 어트리뷰션에 대해 알아보기](../../10-마케팅/기타/understanding-attribution-source-ad-reporting-.md)
 
 ## 결과 극대화를 위한 보너스 팁
 

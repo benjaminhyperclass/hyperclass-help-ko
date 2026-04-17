@@ -99,9 +99,9 @@
 - **GMB 메시징**을 **Hyperclass**에 연결하여 고객이 구글에서 직접 문자를 보낼 수 있게 하세요
 - **전문가 팁:** **통화 추적 번호**(Hyperclass 이용)를 사용하여 리드 품질을 측정하세요
 
-[전화번호 구매 방법](how-to-purchase-a-phone-number.md)
+[전화번호 구매 방법](../../15-전화-시스템/전화번호/how-to-purchase-a-phone-number.md)
 
-[구글 비즈니스 프로필을 Hyperclass에 연결](how-to-integrate-google-business-profile-gbp-with-highlevel.md)
+[구글 비즈니스 프로필을 Hyperclass에 연결](../../42-통합/Google-Integrations/how-to-integrate-google-business-profile-gbp-with-highlevel.md)
 
 [비즈니스 프로필에서 고객과 채팅하는 방법](https://support.google.com/business/answer/15013580?utm_source=HighLevel+HelpDesk&utm_medium=organic)
 
@@ -111,13 +111,13 @@
 - 모든 작업 후 **Hyperclass의 자동 SMS 및 이메일** 리뷰 요청 사용
 - **별점 5개 리뷰 = 더 높은 신뢰 및 더 많은 전화**
 
-[리뷰 요청 보내는 방법](how-to-send-review-requests.md)
+[리뷰 요청 보내는 방법](../../41-평판-리뷰/Review-Requests/how-to-send-review-requests.md)
 
-[평판 관리 - 리뷰 요청 메시지(SMS/이메일) 커스터마이징 방법](how-to-customize-the-review-request-messages-sms-email-.md)
+[평판 관리 - 리뷰 요청 메시지(SMS/이메일) 커스터마이징 방법](../../41-평판-리뷰/Review-Requests/how-to-customize-the-review-request-messages-sms-email-.md)
 
-[구글 리뷰 이의제기 및 이의제기 상태 확인 방법](how-to-dispute-a-google-review-and-check-on-the-dispute-status.md)
+[구글 리뷰 이의제기 및 이의제기 상태 확인 방법](../../41-평판-리뷰/Review-Requests/how-to-dispute-a-google-review-and-check-on-the-dispute-status.md)
 
-[구글 비즈니스 페이지와 소셜 포스팅 사용 방법](how-to-connect-to-your-google-my-business-location-s-.md)
+[구글 비즈니스 페이지와 소셜 포스팅 사용 방법](../../10-마케팅/소셜-플래너/how-to-connect-to-your-google-my-business-location-s-.md)
 
 ---
 
@@ -139,7 +139,7 @@
 - **푸터:** 모든 서비스 지역 나열
 - **블로그 포스트**에서 일반적인 HVAC 고객 질문에 답하기 (구글은 FAQ 콘텐츠를 선호함)
 
-[SEO 메타 데이터 최적화 방법](seo-meta-data.md)
+[SEO 메타 데이터 최적화 방법](../../06-사이트/퍼널-웹사이트/seo-meta-data.md)
 
 ### **2.2 웹사이트에서 더 많은 리드 확보**
 
@@ -147,11 +147,11 @@
 - **팝업 및 리드 폼** 사용하여 **무료 에어컨 점검 견적** 또는 **서비스 콜 할인** 제공
 - 모든 페이지에 **"지금 전화" 버튼** 추가
 
-[채팅 위젯 시작하기](getting-started-with-chat-widget.md)
+[채팅 위젯 시작하기](../../06-사이트/getting-started-with-chat-widget.md)
 
-[Hyperclass 채팅 위젯 설치 방법](how-to-install-highlevel-s-chat-widget.md)
+[Hyperclass 채팅 위젯 설치 방법](../../03-대화/기타/highlevel-chat-widget-how-to-add-it-to-your-pages-in-minutes.md)
 
-[Hyperclass에서 연락처 폼 만드는 방법](how-to-create-a-contact-form-in-highlevel-.md)
+[Hyperclass에서 연락처 폼 만드는 방법](../../02-연락처/기타/how-to-create-a-contact-form-in-highlevel-.md)
 
 퍼널/웹사이트 진입 시 팝업 표시
 
@@ -176,9 +176,9 @@ Hyperclass에서 이탈 의도 팝업 만드는 방법
 - 스키마 마크업은 구글이 서비스를 더 잘 **이해**하도록 도와줍니다
 - 예시: **에어컨 수리 스키마**를 사용하여 "내 주변 에어컨 수리" 랭킹 향상
 
-[로컬 SEO를 위한 고성능 키워드 찾는 방법]([how-to-add-seo-descriptions-and-keywords-to-boost-your-ecommerce-ranking](how-to-add-seo-descriptions-and-keywords-to-boost-your-ecommerce-ranking.md))
+[로컬 SEO를 위한 고성능 키워드 찾는 방법](../../37-이커머스-스토어/E-Commerce-Store/how-to-add-seo-descriptions-and-keywords-to-boost-your-ecommerce-ranking.md)
 
-[전환율 높은 리드 포착 폼 설정 방법](how-to-create-a-contact-form-in-highlevel-.md)
+[전환율 높은 리드 포착 폼 설정 방법](../../02-연락처/기타/how-to-create-a-contact-form-in-highlevel-.md)
 
 ---
 
@@ -213,7 +213,7 @@ Hyperclass에서 이탈 의도 팝업 만드는 방법
 - **구글 비즈니스 프로필의 리뷰 성장 및 참여도** 모니터링
 - **가장 많은 트래픽을 유도하는 페이지 및 키워드** 확인
 
-[SEO 메타 데이터 추적 및 개선 방법]([seo-meta-data](seo-meta-data.md))
+[SEO 메타 데이터 추적 및 개선 방법](../../06-사이트/퍼널-웹사이트/seo-meta-data.md)
 
 ---
 

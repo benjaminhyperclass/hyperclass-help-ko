@@ -79,7 +79,7 @@
 #### 고객이 내 스케줄에 따라 날짜와 시간을 선택할 수 있게 합니다.
 
 - 
-#### [예약 링크 설정 방법](workflow-action-book-appointment.md)
+#### [예약 링크 설정 방법](../../04-캘린더-예약/workflow-action-book-appointment.md)
 
 - 
 #### **1.2 예약 알림 자동화**
@@ -90,7 +90,7 @@
 #### 노쇼와 막판 취소를 줄입니다.
 
 - 
-#### [예약 알림 자동화 방법]([how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder](how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md))
+#### [예약 알림 자동화 방법](../../24-대학/HighLevel-How-To&#39;s/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
 
 - 
 #### **1.3 팀에게 효율적으로 작업 배정**
@@ -118,7 +118,7 @@
 #### 작업 알림 및 서비스 후속 조치를 자동화하여 고객 유지율을 향상시킵니다.
 
 - 
-#### [후속 조치 자동화 방법]([how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder](how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md))
+#### [후속 조치 자동화 방법](../../24-대학/HighLevel-How-To&#39;s/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
 
 - 
 #### **2.2 AI 기반 고객 대화 활성화**
@@ -129,7 +129,7 @@
 #### AI가 예약을 잡고, FAQ에 답하며, 리드 정보를 수집할 수 있습니다.
 
 - 
-#### [대화 AI 설정 방법]([conversation-ai-bot-explained](conversation-ai-bot-explained.md))
+#### [대화 AI 설정 방법](../../13-AI-Employee/Getting-Started-w/-Conversation-AI/conversation-ai-bot-explained.md)
 
 - 
 #### **2.3 타겟 메시징을 위한 스마트 리스트 사용**
@@ -140,7 +140,7 @@
 #### 시즌 오퍼, 유지보수 알림, 추천 요청을 보냅니다.
 
 - 
-#### [스마트 리스트 설정 방법](getting-started-with-smart-lists.md)
+#### [스마트 리스트 설정 방법](../../02-연락처/기타/getting-started-with-smart-lists.md)
 
 ## 3단계: 인보이스 및 결제 수금 간소화
 
@@ -157,7 +157,7 @@
 #### SMS, 이메일 또는 고객 포털을 통해 인보이스를 보냅니다.
 
 - 
-#### [인보이스 발송 및 생성 방법]([how-to-create-invoices-in-highlevel](how-to-create-invoices-in-highlevel.md))
+#### [인보이스 발송 및 생성 방법](../../08-결제/인보이스-견적/how-to-create-invoices-in-highlevel.md)
 
 - 
 #### **3.2 다양한 결제 옵션 활성화**
@@ -168,7 +168,7 @@
 #### 즉시 결제 수금을 위해 인보이스에 "지금 결제" 링크를 활성화합니다.
 
 - 
-#### [결제 수신 설정 방법](trigger-payment-received.md)
+#### [결제 수신 설정 방법](../../07-워크플로우/기타/trigger-payment-received.md)
 
 - 
 #### **3.3 결제 알림 자동화**
@@ -179,7 +179,7 @@
 #### 유연한 결제 계획을 제공하여 결제 지연을 줄입니다.
 
 - 
-#### [정기 결제 자동화 방법](auto-payments-in-recurring-templates.md)
+#### [정기 결제 자동화 방법](../../08-결제/기타/auto-payments-in-recurring-templates.md)
 
 ## 4단계: 현장 팀 및 워크플로우 관리
 
@@ -196,7 +196,7 @@
 #### 기술자들이 모바일 앱을 통해 작업 상태를 업데이트할 수 있게 합니다.
 
 - 
-#### [기회 생성 설정 방법]([workflow-trigger-opportunity-created](workflow-trigger-opportunity-created.md))
+#### [기회 생성 설정 방법](../../07-워크플로우/Opportunity-Workflow-Triggers/workflow-trigger-opportunity-created.md)
 
 - 
 #### **4.2 작업 체크리스트 및 문서화 활성화**
@@ -215,7 +215,7 @@
 #### 장기적인 수익을 보장하기 위해 구독 기반 유지보수 계획을 설정합니다.
 
 - 
-#### [정기 예약 모니터링 방법]([configure-recurring-calendar-appointments](configure-recurring-calendar-appointments.md))
+#### [정기 예약 모니터링 방법](../../04-캘린더-예약/캘린더-설정/configure-recurring-calendar-appointments.md)
 
 ## 5단계: 리포팅 및 분석 최적화
 
@@ -232,7 +232,7 @@
 #### 리드를 유료 고객으로 전환하는 비율을 계산합니다.
 
 - 
-#### [리드 추적 및 관리 방법]([step-by-step-guide-creating-pipelines](step-by-step-guide-creating-pipelines.md))
+#### [리드 추적 및 관리 방법](../../05-기회-파이프라인/step-by-step-guide-creating-pipelines.md)
 
 - 
 #### **5.2 수익 및 작업 수익성 분석**

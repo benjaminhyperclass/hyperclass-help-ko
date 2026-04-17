@@ -36,7 +36,7 @@
 
 ## 1단계: Ad Manager 접속
 
-- 온보딩이 완료되었다면 하위 계정 > Marketing(마케팅) > Ad Manager로 이동합니다. (Ad Manager 활성화 및 재판매 방법은 [이 링크]([how-to-enable-and-resell-ad-manager](how-to-enable-and-resell-ad-manager.md))를 참조하세요)
+- 온보딩이 완료되었다면 하위 계정 > Marketing(마케팅) > Ad Manager로 이동합니다. (Ad Manager 활성화 및 재판매 방법은 [이 링크](../Reselling-Ad-Manager/how-to-enable-and-resell-ad-manager.md)를 참조하세요)
 - + Create Campaign(캠페인 만들기)을 클릭해 새 캠페인을 시작합니다.
 
 ![새 캠페인 만들기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042575129/original/tr7HhwDkrf5-B-rVSW1A41FuZA9DTiz-fQ.png?1741042486)
@@ -46,7 +46,7 @@
 ## 2단계: Facebook 페이지와 Instagram 계정 선택
 
 - 광고에 연결하여 비즈니스를 대표할 Facebook 페이지를 선택합니다.
-- 선택한 Facebook 페이지에 연결된 Instagram 계정을 선택하거나, Facebook 페이지 자체를 사용하여 Instagram에 광고를 게재할 수 있습니다. Instagram 계정을 Facebook 페이지와 연결하는 방법과 기타 중요한 정보는 다음 [도움말 문서]([instagram-ads-overview](instagram-ads-overview.md))에서 확인하세요.
+- 선택한 Facebook 페이지에 연결된 Instagram 계정을 선택하거나, Facebook 페이지 자체를 사용하여 Instagram에 광고를 게재할 수 있습니다. Instagram 계정을 Facebook 페이지와 연결하는 방법과 기타 중요한 정보는 다음 [도움말 문서](instagram-ads-overview.md)에서 확인하세요.
 
 ![Facebook 페이지와 Instagram 계정 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042575823/original/JGYXvETaEhBJ8kg41MufLTSNLA8QR5mwqg.png?1741045322)
 
@@ -83,7 +83,7 @@
 
 ## 5단계: 대화 폼 생성 또는 기존 폼 사용
 
-대화 폼을 만들거나 이미 만든 대화 폼을 사용하는 방법에 대한 자세한 내용은 이 [도움말 문서]([how-to-create-a-conversation-form-in-ad-manager](how-to-create-a-conversation-form-in-ad-manager.md))에서 확인하세요.
+대화 폼을 만들거나 이미 만든 대화 폼을 사용하는 방법에 대한 자세한 내용은 이 [도움말 문서](how-to-create-a-conversation-form-in-ad-manager.md)에서 확인하세요.
 
 ## 6단계: 게재 위치 선택
 

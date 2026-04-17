@@ -56,7 +56,7 @@
 
 하지만 비밀은 이것입니다: 이러한 채널의 목표는 모든 것을 설명하는 것이 아닙니다. **클릭**하거나 **스캔**하게 하는 것입니다. 그게 전부입니다. 전환하도록 만들어진 곳으로 그들을 보내야 합니다.
 
-**[Facebook 및 Instagram 리드 광고 설정]([getting-started-setup-facebook-and-instagram-lead-ads](getting-started-setup-facebook-and-instagram-lead-ads.md))**
+**[Facebook 및 Instagram 리드 광고 설정](../../01-시작하기/마케팅-리드-생성/getting-started-setup-facebook-and-instagram-lead-ads.md)**
 
 ---
 
@@ -66,7 +66,7 @@
 
 GHL 내에서 1시간 이내에 카이로프랙틱 퍼널을 런칭할 수 있습니다. 하나의 명확한 결과를 가진 단일 페이지이며, 전환하도록 설계되었습니다.
 
-**[방법 확인하기]([getting-started-launch-a-funnel](getting-started-launch-a-funnel.md))**
+**[방법 확인하기](../../01-시작하기/기본-설정/getting-started-launch-a-funnel.md)**
 
 ---
 

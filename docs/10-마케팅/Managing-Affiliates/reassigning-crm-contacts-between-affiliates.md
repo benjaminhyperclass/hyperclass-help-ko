@@ -83,9 +83,9 @@
 
 **관련 링크:**
 
-- [HighLevel에서 중복 연락처 병합하기]([how-to-merge-duplicate-contacts-in-highlevel](how-to-merge-duplicate-contacts-in-highlevel.md))
-- [제휴 파트너 하에 고객 관리]([managing-customers-under-affiliates](managing-customers-under-affiliates.md))
-- [연락처 중복 제거 환경 설정]([allow-duplicate-contacts-contact-deduplication-preferences-](allow-duplicate-contacts-contact-deduplication-preferences-.md))
+- [HighLevel에서 중복 연락처 병합하기](../../02-연락처/스마트-리스트/how-to-merge-duplicate-contacts-in-highlevel.md)
+- [제휴 파트너 하에 고객 관리](managing-customers-under-affiliates.md)
+- [연락처 중복 제거 환경 설정](../../11-설정/Business-Profile-Settings/allow-duplicate-contacts-contact-deduplication-preferences-.md)
 
 ---
 
@@ -119,9 +119,9 @@
 
 **도움이 되는 링크:**
 
-- [제휴 자동화 시작하기]([getting-started-with-affiliate-automations](getting-started-with-affiliate-automations.md))
-- [워크플로우 액션 — 제휴 관리에 추가](workflow-action-add-to-affiliate-manager.md)
-- [FirstPromoter를 제휴 관리로 가져오기]([affiliate-manager-import-firstpromoter-campaigns-affiliates-commissions](affiliate-manager-import-firstpromoter-campaigns-affiliates-commissions.md))
+- [제휴 자동화 시작하기](../Affiliate-Manager-Automation/getting-started-with-affiliate-automations.md)
+- [워크플로우 액션 — 제휴 관리에 추가](../../07-워크플로우/Affiliate-Workflow-Actions/workflow-action-add-to-affiliate-manager.md)
+- [FirstPromoter를 제휴 관리로 가져오기](../Getting-Started-w/-Affiliate-Manager/affiliate-manager-import-firstpromoter-campaigns-affiliates-commissions.md)
 
 ---
 

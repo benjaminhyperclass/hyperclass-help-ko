@@ -106,7 +106,7 @@ A2P 10DLC 등록 시 브랜드와 캠페인 모두 Trust Center를 통해 제출
 | 음성 통화(아웃바운드) | 분당 $0.0180 |
 | 음성 통화(인바운드) | 분당 $0.0085 |
 
-[LC Phone 가격에 대한 자세한 내용은 여기를 클릭하세요](lc-phone-pricing-billing-guide.md)
+[LC Phone 가격에 대한 자세한 내용은 여기를 클릭하세요](../lc-phone-pricing-billing-guide.md)
 
 ## 자주 묻는 질문
 

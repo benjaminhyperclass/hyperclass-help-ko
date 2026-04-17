@@ -51,16 +51,16 @@
 
 **해야 할 일:**
 
-- **채팅 위젯(Chat Widget) 설치:** 사이트 방문자를 맞이하고 연락처 정보를 즉시 수집하세요. [채팅 위젯 설정 안내]([getting-started-with-chat-widget](getting-started-with-chat-widget.md))를 참고하세요.
-- **부재중 전화 문자 회신 활성화:** 누군가 전화했지만 받을 수 없을 때 후속 조치를 하세요. [부재중 전화 문자 회신 설정]([where-and-how-to-configure-the-missed-call-text-back-feature](where-and-how-to-configure-the-missed-call-text-back-feature.md))을 참고하세요.
-- **예약 캘린더 추가:** 리드가 왔다갔다하는 대화 없이 무료 체험, 상담 또는 수업을 예약할 수 있게 하세요. [온라인 예약 설정 방법](recurring-appointments.md)을 학습하세요.
+- **채팅 위젯(Chat Widget) 설치:** 사이트 방문자를 맞이하고 연락처 정보를 즉시 수집하세요. [채팅 위젯 설정 안내](../../06-사이트/getting-started-with-chat-widget.md)를 참고하세요.
+- **부재중 전화 문자 회신 활성화:** 누군가 전화했지만 받을 수 없을 때 후속 조치를 하세요. [부재중 전화 문자 회신 설정](../../11-설정/서브어카운트-설정/where-and-how-to-configure-the-missed-call-text-back-feature.md)을 참고하세요.
+- **예약 캘린더 추가:** 리드가 왔다갔다하는 대화 없이 무료 체험, 상담 또는 수업을 예약할 수 있게 하세요. [온라인 예약 설정 방법](../../04-캘린더-예약/기타/recurring-appointments.md)을 학습하세요.
 - **후속 조치 워크플로우(Workflow) 구축:** 시간이 지남에 따라 신뢰를 구축하는 자동 메시지를 보내세요.
 - **대화 AI(ConversationAI) 또는 음성 AI(VoiceAI) 사용:** AI가 24시간 내내 FAQ, 일정 예약, 리드 자격 검증을 처리하게 하세요.
 
-[자동화된 예약 후속 조치 설문 구축 방법](how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
+[자동화된 예약 후속 조치 설문 구축 방법](../../24-대학/HighLevel-How-To&#39;s/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
 
-- [음성 AI 에이전트 설정 방법](creating-voice-ai-agents.md)
-- [대화 AI 설정 방법](setting-up-conversation-ai.md)
+- [음성 AI 에이전트 설정 방법](../../13-AI-Employee/기타/creating-voice-ai-agents.md)
+- [대화 AI 설정 방법](../../13-AI-Employee/Getting-Started-w/-Conversation-AI/setting-up-conversation-ai.md)
 
 ## **3. 리뷰 자동화 및 5성급 평판 구축하기**
 
@@ -81,7 +81,7 @@
 
 **해야 할 일:**
 
-- **Hyperclass에서 Facebook 광고 만들기:** 내장 도구로 챌린지, 할인 또는 무료 체험을 홍보하세요. [Hyperclass를 통한 Facebook 광고 운영 방법](create-new-ad-campaign-in-ad-manager.md).
+- **Hyperclass에서 Facebook 광고 만들기:** 내장 도구로 챌린지, 할인 또는 무료 체험을 홍보하세요. [Hyperclass를 통한 Facebook 광고 운영 방법](../../10-마케팅/기타/create-new-ad-campaign-in-ad-manager.md).
 - **광고 소스별 리드 추적:** 무엇이 효과가 있는지 확인하고 집중할 수 있습니다.
 
 ## **5. 소셜 미디어로 지속적인 관심 유지하기**
@@ -90,13 +90,13 @@
 
 **해야 할 일:**
 
-- **리뷰를 게시물로 전환:** 실제 회원들의 실제 이야기를 보여주세요. [소셜 플래너를 사용하여 소셜 미디어에 리뷰를 게시물로 공유하기 가이드](share-your-reviews-as-posts-on-social-media-using-social-planner.md).
+- **리뷰를 게시물로 전환:** 실제 회원들의 실제 이야기를 보여주세요. [소셜 플래너를 사용하여 소셜 미디어에 리뷰를 게시물로 공유하기 가이드](../../10-마케팅/기타/share-your-reviews-as-posts-on-social-media-using-social-planner.md).
 - **헬스장 블로그(Blog) 작성:** 피트니스, 영양, 정신 건강에 대한 팁을 공유하세요.
 - **블로그 콘텐츠 자동 배포:** 추가 노력 없이 콘텐츠가 지속적으로 흘러가게 하세요.
 
-[블로그 만들기 방법]([how-to-create-a-blog-](how-to-create-a-blog-.md))
-- [블로그용 RSS 피드 설정 방법](how-to-set-up-an-rss-feed-for-blogs.md)
-- [RSS 이메일 캠페인 설정 방법]([how-to-send-rss-email-campaign-s-](how-to-send-rss-email-campaign-s-.md))
+[블로그 만들기 방법](../../06-사이트/how-to-create-a-blog-.md)
+- [블로그용 RSS 피드 설정 방법](../../06-사이트/기타/how-to-set-up-an-rss-feed-for-blogs.md)
+- [RSS 이메일 캠페인 설정 방법](../../10-마케팅/RSS-Guide/how-to-send-rss-email-campaign-s-.md)
 
 - **이메일 뉴스레터 발송:** 과거, 현재, 미래 회원들과 연결 상태를 유지하세요.
 - **소셜 플래너(Social Planner)로 콘텐츠 예약:** 콘텐츠 제작을 일괄 처리하여 일관성을 유지하세요.

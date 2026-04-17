@@ -22,13 +22,13 @@ GoHighLevel의 프로스펙팅 도구를 통해 리드를 생성했다면 — AI
 ### 하위 계정에서 프로스펙팅을 활성화하는 방법
 
 - **에이전시에서 이미 프로스펙팅 구독이 활성화되어 있는 경우**
-  - [하위 계정을 연결](how-to-link-a-sub-account-with-your-agency-prospecting-premium-subscription.md)하여 액세스 권한을 얻을 수 있어요
-  - 그런 다음 [잠재 고객을 해당 하위 계정으로 마이그레이션](how-to-migrate-prospects-from-agency-to-sub-account.md)하세요 (자동으로 연락처에 복사되고 워크플로우가 있으면 트리거됩니다)
+  - [하위 계정을 연결](../../08-결제/기타/how-to-link-a-sub-account-with-your-agency-prospecting-premium-subscription.md)하여 액세스 권한을 얻을 수 있어요
+  - 그런 다음 [잠재 고객을 해당 하위 계정으로 마이그레이션](../기타/how-to-migrate-prospects-from-agency-to-sub-account.md)하세요 (자동으로 연락처에 복사되고 워크플로우가 있으면 트리거됩니다)
   - 해당 하위 계정으로 이동하여 마케팅 탭에서 프로스펙팅을 찾으세요
-  - **여러 하위 계정에서 사용하려면** 에이전시 뷰의 [재판매 탭]([how-to-resell-and-use-prospecting-tool-for-sub-accounts](how-to-resell-and-use-prospecting-tool-for-sub-accounts.md))으로 이동
+  - **여러 하위 계정에서 사용하려면** 에이전시 뷰의 [재판매 탭](how-to-resell-and-use-prospecting-tool-for-sub-accounts.md)으로 이동
   - 프로스펙팅 탭을 ON으로 전환하세요
 - **이미 하위 계정이 있는 경우**
-  - 단순히 에이전시에서 하위 계정으로 [잠재 고객을 마이그레이션](how-to-migrate-prospects-from-agency-to-sub-account.md)할 수 있어요 (자동으로 연락처에 추가되고 워크플로우가 있으면 트리거됩니다)
+  - 단순히 에이전시에서 하위 계정으로 [잠재 고객을 마이그레이션](../기타/how-to-migrate-prospects-from-agency-to-sub-account.md)할 수 있어요 (자동으로 연락처에 추가되고 워크플로우가 있으면 트리거됩니다)
 
 ## 잠재 고객이 연락처 목록에 추가되는 방법
 
@@ -36,7 +36,7 @@ GoHighLevel의 프로스펙팅 도구를 통해 리드를 생성했다면 — AI
 
 수동 설정이 필요 없어요 — 다음을 통해 생성된 잠재 고객은 하위 계정의 연락처(Contacts)에 자동으로 추가됩니다:
 
-- [AI 생성 프로스펙팅]([step-by-step-how-to-generate-prospects-by-ai](step-by-step-how-to-generate-prospects-by-ai.md))
+- [AI 생성 프로스펙팅](../Core-Functionality/step-by-step-how-to-generate-prospects-by-ai.md)
 - 수동 Google 비즈니스 검색
 - 웹사이트에 삽입된 프로스펙팅 위젯
 
@@ -109,7 +109,7 @@ GoHighLevel의 프로스펙팅 도구를 통해 리드를 생성했다면 — AI
 - 리드를 파이프라인 또는 육성 시퀀스에 추가
 - 데이터 보강 또는 태그 자동 할당
 
-### [프로스펙팅 워크플로우 트리거 완전 가이드 보기 →]([workflow-trigger-for-new-prospects-in-the-prospecting-tool](workflow-trigger-for-new-prospects-in-the-prospecting-tool.md))
+### [프로스펙팅 워크플로우 트리거 완전 가이드 보기 →](../Premium-Prospecting/workflow-trigger-for-new-prospects-in-the-prospecting-tool.md)
 
 한 번 설정하면 — 모든 새 잠재 고객에 대해 시스템이 작업을 수행합니다.
 
@@ -133,9 +133,9 @@ GoHighLevel의 프로스펙팅 도구를 통해 리드를 생성했다면 — AI
 
 ## 관련 가이드
 
-- [하위 계정으로 잠재 고객 마이그레이션하는 방법 →](how-to-migrate-prospects-from-agency-to-sub-account.md)
-- [에이전시를 위한 고급 프로스펙팅 가이드 →](advance-prospecting-in-gohighlevel-.md)
-- [워크플로우를 사용한 잠재 고객 후속 조치 자동화 →]([workflow-trigger-for-new-prospects-in-the-prospecting-tool](workflow-trigger-for-new-prospects-in-the-prospecting-tool.md))
+- [하위 계정으로 잠재 고객 마이그레이션하는 방법 →](../기타/how-to-migrate-prospects-from-agency-to-sub-account.md)
+- [에이전시를 위한 고급 프로스펙팅 가이드 →](../기타/advance-prospecting-in-gohighlevel-.md)
+- [워크플로우를 사용한 잠재 고객 후속 조치 자동화 →](../Premium-Prospecting/workflow-trigger-for-new-prospects-in-the-prospecting-tool.md)
 
 ---
 *원문 최종 수정: 2026년 3월 6일*

@@ -56,7 +56,7 @@
 
 이메일 마케팅 영역에서는 고객 참여도와 캠페인 효과를 이해하는 데 정확한 측정 지표가 중요합니다. 봇은 오픈율과 클릭률을 인위적으로 부풀려서 오해를 불러일으키는 데이터로 이어질 수 있습니다. 이를 해결하기 위해 *봇 탐지로 통계 증가 및 자동화 실행 방지* 기능을 도입했습니다. 이 설정을 켜서 봇 활동이 데이터에 미치는 영향을 줄이세요.
 
-[봇 탐지로 통계 증가 및 자동화 실행 방지에 대해 자세히 알아보기](bot-detection-preventing-statistics-increment-and-automation-execution.md)
+[봇 탐지로 통계 증가 및 자동화 실행 방지에 대해 자세히 알아보기](../../09-이메일/일반/bot-detection-preventing-statistics-increment-and-automation-execution.md)
 
 ![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155052716932/original/SQR4wvKzScc5yptv7H-8fkEYLOKk-dR5Cg.png?1756490487)
 
@@ -66,7 +66,7 @@
 
 이제 이 설정은 *고급 설정(Advanced Settings)*의 *Number Intelligence*에서 찾을 수 있습니다. 이 설정으로 바로 이동하려면 *Go to Number Intelligence Settings* 버튼을 클릭하세요.
 
-[번호 인텔리전스에 대해 자세히 알아보기](number-intelligence-spam-detection-caller-id-sms-validation.md)
+[번호 인텔리전스에 대해 자세히 알아보기](../../15-전화-시스템/number-intelligence-spam-detection-caller-id-sms-validation.md)
 
 #### **새 연락처에게 첫 이메일 발송 시 이메일 주소 확인**
 
@@ -74,7 +74,7 @@
 
 전화번호 검증의 표준 가격은 검증 시도당 $0.005입니다. 이 금액은 전화번호 검증 시도가 발생할 때마다 에이전시 계정이나 하위 계정 크레딧 지갑에서 차감됩니다.
 
-Agency Pro Hyperclass 계정($497/월)의 경우: 하위 계정이 "SaaS 모드"로 설정되어 있으면, 검증 시도가 있을 때마다 수익을 낼 수 있도록 전화번호 검증 비용을 조정할 수 있습니다. [SaaS 모드 및 재청구에 대해 자세히 알아보기](rebilling-reselling-and-wallets-explained.md)
+Agency Pro Hyperclass 계정($497/월)의 경우: 하위 계정이 "SaaS 모드"로 설정되어 있으면, 검증 시도가 있을 때마다 수익을 낼 수 있도록 전화번호 검증 비용을 조정할 수 있습니다. [SaaS 모드 및 재청구에 대해 자세히 알아보기](../../36-기타/Miscellaneous/rebilling-reselling-and-wallets-explained.md)
 
 #### **SMS 컴플라이언스 설정**
 
@@ -82,13 +82,13 @@ SMS 컴플라이언스는 매우 중요하며 진지하게 다뤄야 합니다. 
 
 이제 이 설정은 *고급 설정(Advanced Settings)*의 *SMS Compliance*에서 찾을 수 있습니다. 이 설정으로 바로 이동하려면 *Go to SMS Compliance Settings* 버튼을 클릭하세요.
 
-[SMS 컴플라이언스에 대해 자세히 알아보기](best-practices-for-sms-deliverability-and-avoiding-sms-restrictions.md)
+[SMS 컴플라이언스에 대해 자세히 알아보기](../../15-전화-시스템/메시징/best-practices-for-sms-deliverability-and-avoiding-sms-restrictions.md)
 
 #### 이메일에 수신 거부 링크 추가로 이메일 컴플라이언스 준수
 
 소비자를 보호하고 정보를 안전하게 지키기 위해 이메일 발송과 관련된 새로운 법률이 계속해서 제정되고 있습니다. 그래서 Hyperclass는 기본적으로 모든 하위 계정에서 이메일 수신 거부 링크를 자동으로 설정합니다. 수신 거부 링크를 설정할 수 있고 끌 수도 있지만(권장하지 않음), 여러분과 고객이 시작할 수 있도록 기본적으로 모든 하위 계정에서 이 설정이 켜져 있고 설정되어 있습니다.
 
-[이메일 수신 거부 링크에 대해 자세히 알아보기](managing-default-unsubscribe-links-in-lc-email.md)
+[이메일 수신 거부 링크에 대해 자세히 알아보기](../../09-이메일/managing-default-unsubscribe-links-in-lc-email.md)
 
 ![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155052717115/original/1U-GY8_9HEK0r_3lVG0pvoO_sa8e2qgBzg.png?1756490825)
 

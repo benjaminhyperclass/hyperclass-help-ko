@@ -78,7 +78,7 @@
 네와 아니요. "모든 유효한 결제 방법(All Valid Payment Methods)"을 활성화해야 하는데, 이는 카드 결제와 계좌이체뿐만 아니라 더 많은 결제 방법을 포함합니다. 이 특정 기능은 인보이스에서 계좌이체를 독점적인 결제 옵션으로 만들기 위해 설계되었습니다.
 
 **Q: 이 기능을 사용하려면 Stripe 연동이 필요한가요?**
-네, 계좌이체를 활성화하려면 이러한 결제를 처리할 수 있도록 Stripe 계정을 구성해야 합니다. 계좌이체 기능 설정에 대한 자세한 정보는 이 도움말 문서를 확인하세요: [인보이스의 ACH 직불 결제 방법](ach-debit-payment-method-on-invoices.md)
+네, 계좌이체를 활성화하려면 이러한 결제를 처리할 수 있도록 Stripe 계정을 구성해야 합니다. 계좌이체 기능 설정에 대한 자세한 정보는 이 도움말 문서를 확인하세요: [인보이스의 ACH 직불 결제 방법](인보이스-견적/ach-debit-payment-method-on-invoices.md)
 
 **Q: 이 기능은 모든 Hyperclass 요금제에서 사용할 수 있나요?**
 네, 인보이스 기능이 포함된 요금제라면 사용 가능합니다.
@@ -88,9 +88,9 @@
 
 ## 관련 문서
 
-- [Hyperclass에서 인보이스 생성하는 방법](how-to-create-invoices-in-highlevel.md)
-- [Stripe 연동으로 표시되는 결제 방법 관리](manage-payment-methods-displayed-with-stripe-integration.md)
-- [인보이스의 ACH 직불 결제 방법](ach-debit-payment-method-on-invoices.md)
+- [Hyperclass에서 인보이스 생성하는 방법](인보이스-견적/how-to-create-invoices-in-highlevel.md)
+- [Stripe 연동으로 표시되는 결제 방법 관리](시작하기/manage-payment-methods-displayed-with-stripe-integration.md)
+- [인보이스의 ACH 직불 결제 방법](인보이스-견적/ach-debit-payment-method-on-invoices.md)
 
 ---
 *원문 최종 수정: 2025년 2월 8일*

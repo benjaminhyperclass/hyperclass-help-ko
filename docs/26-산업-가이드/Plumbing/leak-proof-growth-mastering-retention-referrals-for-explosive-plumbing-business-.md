@@ -57,7 +57,7 @@
 예시 메시지:  
 "안녕하세요 김철수님, [업체명]의 배관 서비스를 믿고 맡겨주셔서 감사합니다! 모든 것이 잘 작동하고 있나요? 6개월 후 배관 점검을 예약하시면 5만원 할인해드려요!"
 
-#### [고객 후속 관리 자동화 방법]([how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder](how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md))
+#### [고객 후속 관리 자동화 방법](../../24-대학/HighLevel-How-To&#39;s/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
 
 ### 1.2 자동 점검 알림
 
@@ -67,7 +67,7 @@
 예시 메시지:  
 "김철수님, 지난 온수기 점검 후 6개월이 지났습니다. 저희가 방문할까요? YES라고 답장해주시면 바로 처리해드리겠습니다!"
 
-#### [유지보수 알림 설정 방법]([how-to-send-users-appointment-reminders](how-to-send-users-appointment-reminders.md))
+#### [유지보수 알림 설정 방법](../../23-레거시-자동화/Logic-&amp;-Fulfillment/how-to-send-users-appointment-reminders.md)
 
 ## 2단계: 5성급 리뷰 자동 수집
 
@@ -112,7 +112,7 @@
 예시 메시지:  
 "저희 배관 서비스가 마음에 드시나요? 친구를 추천하시면 둘 다 다음 작업에서 5만원 할인받으세요! 이 링크를 보내주세요: [추천 링크]"
 
-#### [자동 추천 프로그램 설정 방법](affiliate-refferal-page-leads-customers-cancelled-statuses.md)
+#### [자동 추천 프로그램 설정 방법](../../21-어필리에이트/기타/affiliate-refferal-page-leads-customers-cancelled-statuses.md)
 
 ### 3.2 추천 후속 관리 자동화
 
@@ -136,7 +136,7 @@
 예시 메시지:  
 "VIP 배관 플랜에 가입하세요: 연간 가정 배관 점검 + 우선 서비스가 연 20만원입니다. 돈을 절약하고 비싼 응급 상황을 피하세요!"
 
-#### [구독 기반 서비스 설정 방법]([pause-and-resume-subscriptions](pause-and-resume-subscriptions.md))
+#### [구독 기반 서비스 설정 방법](../../08-결제/pause-and-resume-subscriptions.md)
 
 ### 4.2 작업 중 예방 유지보수 업셀
 
@@ -165,9 +165,9 @@
 예시 메시지:  
 "안녕하세요 [이름]님, 지난 배관 점검 후 6개월이 지났습니다. 점검이 필요하신가요? YES라고 답장하시면 예약해드리겠습니다!"
 
-#### [유지보수 플랜 판매 및 자동화 방법](recurring-appointments.md)
+#### [유지보수 플랜 판매 및 자동화 방법](../../04-캘린더-예약/기타/recurring-appointments.md)
 
-#### [고객 유지를 위한 스마트 리스트 사용법](getting-started-with-smart-lists.md)
+#### [고객 유지를 위한 스마트 리스트 사용법](../../02-연락처/기타/getting-started-with-smart-lists.md)
 
 ## 마무리: 고객 유지 = 장기 수익
 

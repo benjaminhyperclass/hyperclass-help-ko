@@ -45,7 +45,7 @@
 
 LC 전화 시스템은 Hyperclass의 내장 전화 서비스로, 플랫폼 내에서 직접 통화 및 메시징 기능을 제공합니다. 편리하긴 하지만, 일부 에이전시에서는 전화 서비스를 직접 제어하기 위해 자체 Twilio 계정으로 전환하는 것을 선호할 수 있습니다.
 
-LC 전화 시스템에 대한 자세한 개요는 [LC 전화 시스템이란?](what-is-lc-phone-system-.md)을 참고하세요.
+LC 전화 시스템에 대한 자세한 개요는 [LC 전화 시스템이란?](../기타/what-is-lc-phone-system-.md)을 참고하세요.
 
 ---
 
@@ -58,7 +58,7 @@ LC 전화 시스템에 대한 자세한 개요는 [LC 전화 시스템이란?](w
 LC 전화 시스템을 비활성화하기 전에, 유지하고 싶은 기존 전화번호가 LC 전화에서 해제되었는지 확인해야 합니다. 번호를 유지하고 싶다면 이는 **필수 단계**입니다. 그렇지 않으면 번호가 영구적으로 손실됩니다. 이 단계를 완료하려면:
 
 - **Twilio 지원팀에 연락**하여 LC 전화에서 전화번호 해제를 요청하세요.
-- [이 가이드](moving-numbers-to-an-lc-phone-sub-account-from-the-client-s-own-twilio-account.md)에 설명된 단계를 따라 번호 해제 과정을 완료하세요.
+- [이 가이드](../기타/moving-numbers-to-an-lc-phone-sub-account-from-the-client-s-own-twilio-account.md)에 설명된 단계를 따라 번호 해제 과정을 완료하세요.
 - 계속 진행하기 전에 번호가 성공적으로 해제되었는지 확인하세요.
 
 **중요**: 기존 번호를 유지할 필요가 없다면 이 단계를 건너뛰고 2단계로 바로 진행할 수 있습니다.
@@ -93,7 +93,7 @@ LC 전화 시스템 비활성화 폼을 제출하면, 저희 하이레벨 지원
 
 **Q: LC 전화 시스템을 비활성화하기 전에 전화번호를 해제하지 않으면 어떻게 되나요?**
 
-번호가 영구적으로 손실됩니다. 진행하기 전에 [고객의 자체 Twilio 계정에서 LC 전화 하위 계정으로 번호 이동하기](moving-numbers-to-an-lc-phone-sub-account-from-the-client-s-own-twilio-account.md)를 따라 Twilio 지원팀에 연락하는 것이 중요합니다.
+번호가 영구적으로 손실됩니다. 진행하기 전에 [고객의 자체 Twilio 계정에서 LC 전화 하위 계정으로 번호 이동하기](../기타/moving-numbers-to-an-lc-phone-sub-account-from-the-client-s-own-twilio-account.md)를 따라 Twilio 지원팀에 연락하는 것이 중요합니다.
 
 **Q: 여러 하위 계정에서 LC 전화 시스템을 한 번에 비활성화할 수 있나요?**
 

@@ -42,9 +42,9 @@
 
 더 알아보기
 
-- [Hyperclass에서 인보이스 만드는 방법](how-to-create-invoices-in-highlevel.md)
+- [Hyperclass에서 인보이스 만드는 방법](../../08-결제/인보이스-견적/how-to-create-invoices-in-highlevel.md)
 - 인보이스에 결제 플랜을 추가하는 방법
-- [정기 인보이스 생성 방법](how-to-create-and-manage-recurring-invoices-in-highlevel.md)
+- [정기 인보이스 생성 방법](../../08-결제/인보이스-견적/how-to-create-and-manage-recurring-invoices-in-highlevel.md)
 - Hyperclass에서 인보이스 만드는 방법 (모바일 앱)
 ---
 
@@ -71,9 +71,9 @@
 
 더 알아보기
 
-- [정기 인보이스 편집 방법](how-to-edit-recurring-invoices.md)
-- [결제 일정 및 부분 결제 인보이스 편집](editing-of-payment-schedules-and-partially-paid-invoices.md)
-- [모바일 앱에서 인보이스 사용하는 방법](how-to-use-invoices-in-the-mobile-app.md)
+- [정기 인보이스 편집 방법](../../08-결제/how-to-edit-recurring-invoices.md)
+- [결제 일정 및 부분 결제 인보이스 편집](../../08-결제/인보이스-견적/editing-of-payment-schedules-and-partially-paid-invoices.md)
+- [모바일 앱에서 인보이스 사용하는 방법](../../30-모바일-데스크톱/Mobile-App/how-to-use-invoices-in-the-mobile-app.md)
 ---
 
 ## 인보이스 관리
@@ -111,7 +111,7 @@
 
 - 결제 완료 인보이스의 경우: 결제 완료된 기록은 편집할 수 없으므로 로고를 수정할 수 없습니다. 영수증을 다시 보내야 한다면 PDF에 수동으로 로고를 추가해야 합니다.
 
-참조: [비즈니스 프로필 설정 - 일반 정보](business-profile-settings-general-information.md)
+참조: [비즈니스 프로필 설정 - 일반 정보](../../11-설정/Business-Profile-Settings/business-profile-settings-general-information.md)
 
 **Q: 인보이스 편집기에서 약관이나 메모 텍스트를 입력할 수 없고, 서식 도구모음(굵게, 기울임꼴 등)만 표시돼요. 어떻게 해결하나요?**
 

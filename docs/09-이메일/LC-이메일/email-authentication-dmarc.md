@@ -176,7 +176,7 @@ LC 이메일 시스템으로 전환했거나 자체 Mailgun/SMTP를 설정하지
 **추가 리소스:**
 
 - 규정 준수 달성: 2024년 Google과 Yahoo의 이메일 발신자 요구사항 충족
-- [이메일 발송 가이드: 이메일 모범 사례 및 이메일 워밍업]([email-sending-guide-email-best-practices-email-warm-up](email-sending-guide-email-best-practices-email-warm-up.md))
+- [이메일 발송 가이드: 이메일 모범 사례 및 이메일 워밍업](email-sending-guide-email-best-practices-email-warm-up.md)
 
 ---
 *원문 최종 수정: Thu, 25 Jul, 2024 at 8:44 AM*

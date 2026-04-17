@@ -43,11 +43,11 @@
 
 **더 자세히 알아보기**
 
-- [올인원 채팅 위젯 사용 방법](how-to-use-the-all-in-one-chat-widget.md)
-- [동일한 웹사이트에 여러 채팅 위젯 추가하는 방법](how-to-create-multiple-chat-widgets-in-a-single-sub-account.md)
-- [실시간 채팅 기능](live-chat.md)
-- [채팅 위젯 시작 가이드](getting-started-with-chat-widget.md)
-- [채팅 위젯 커스터마이징 개요](overview-of-chat-widget-customizations.md)
+- [올인원 채팅 위젯 사용 방법](../../06-사이트/채팅-위젯/how-to-use-the-all-in-one-chat-widget.md)
+- [동일한 웹사이트에 여러 채팅 위젯 추가하는 방법](../../06-사이트/채팅-위젯/how-to-create-multiple-chat-widgets-in-a-single-sub-account.md)
+- [실시간 채팅 기능](../../03-대화/대화/live-chat.md)
+- [채팅 위젯 시작 가이드](../../06-사이트/getting-started-with-chat-widget.md)
+- [채팅 위젯 커스터마이징 개요](../../06-사이트/overview-of-chat-widget-customizations.md)
 
 **다음으로**, 새 위젯을 어떻게 배포할지 결정할 수 있습니다! 옵션들을 살펴보세요.
 
@@ -73,7 +73,7 @@
 
 **더 자세히 알아보기**
 
-- [하이레벨 채팅 위젯 설치 방법](how-to-install-highlevel-s-chat-widget.md)
+- [하이레벨 채팅 위젯 설치 방법](../../06-사이트/how-to-install-highlevel-s-chat-widget.md)
 
 잘하셨습니다! **다음으로**, 위젯이 원활하게 작동하는지 테스트해보는 것을 고려해보세요.
 

@@ -9,7 +9,7 @@
 # Zapier 설정 가이드 - 개발자 연동
 
 
-### Public API를 통해 새 하위 계정을 생성하려면 현재 [ProPlan](billing-related-questions-for-agencies.md)-How-Do-I-Upgrade-my-HighLevel-Account?)에 가입되어 있는지 확인해주세요.
+### Public API를 통해 새 하위 계정을 생성하려면 현재 [ProPlan](../../11-설정/에이전시-설정/billing-related-questions-for-agencies.md)-How-Do-I-Upgrade-my-HighLevel-Account?)에 가입되어 있는지 확인해주세요.
 
 
 API 문서 및 관련 정보는 개발자 웹사이트를 참조하세요: [https://developers.gohighlevel.com/](https://developers.gohighlevel.com/) 
@@ -17,7 +17,7 @@ API 문서 및 관련 정보는 개발자 웹사이트를 참조하세요: [http
 
 **진행하기 전 중요 사항:**
 
-Zapier 없이 HighLevel 내에서 계정 생성을 자동화하고 싶다면 GHL [SaaS 가이드](saas-mode-full-setup-guide-faq.md)를 확인해주세요 (Pro 플랜 필요).
+Zapier 없이 HighLevel 내에서 계정 생성을 자동화하고 싶다면 GHL [SaaS 가이드](../../16-SaaS-설정/Saas-Mode/saas-mode-full-setup-guide-faq.md)를 확인해주세요 (Pro 플랜 필요).
 
 [Zapier LeadConnector 연동](https://zapier.com/apps/leadconnector/integrations)의 "add Account" 액션은 2022년 2월 21일에 중단되었습니다.
 
@@ -206,7 +206,7 @@ Zapier 웹훅(프리미엄)을 사용하려면 유료 플랜에 가입하세요.
 
 다양한 스냅샷 "Type"의 의미:
 
-- Own: [직접 생성한 스냅샷](snapshots-overview.md)
+- Own: [직접 생성한 스냅샷](../../19-에이전시-뷰/Snapshots/snapshots-overview.md)
 
 - Imported: 다른 에이전시의 스냅샷
 
@@ -384,7 +384,7 @@ Zapier 웹훅(프리미엄)을 사용하려면 유료 플랜에 가입하세요.
 HighLevel과 연동을 생성할 때 인터페이스에 관계없이 API를 사용하고 있다는 점을 이해하는 것이 중요합니다. Zapier, Pabbly Connect, API Nation, Make(이전 Integromat) 또는 다른 플러그 앤 플레이 연동 도구를 사용하든, 이러한 플랫폼은 단순히 우리 API를 활용하여 여러 플랫폼을 연결하는 더 쉬운 방법일 뿐이며, 경우에 따라서는 코딩 경험이 전혀 없어도 사용할 수 있습니다.
 
 
-뭔가 작동하지 않나요? 다른 조치를 취하기 전에 잠깐 멈추고 다음 문서를 검토하세요: [Webhook.site를 사용하여 API 관련 요청 문제 해결하는 방법]([how-to-use-webhook-site-to-troubleshoot-your-api-requests](how-to-use-webhook-site-to-troubleshoot-your-api-requests.md)).
+뭔가 작동하지 않나요? 다른 조치를 취하기 전에 잠깐 멈추고 다음 문서를 검토하세요: [Webhook.site를 사용하여 API 관련 요청 문제 해결하는 방법](../Developer-Resources/how-to-use-webhook-site-to-troubleshoot-your-api-requests.md).
 
     - 개발자와 함께 payload 데이터를 검토하면 문제가 해결될 가능성이 높습니다.
 

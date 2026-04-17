@@ -39,8 +39,8 @@
 
 ## 사전 준비사항
 
-- 하위 계정에서 전화번호 구매 ([LC Phone 가이드](what-is-lc-phone-system-.md) 또는 Twilio 가이드)
-- mp3/wav 파일(64kbps)로 미리 녹음된 오디오 파일 준비 ([자세한 내용 보기](voicemail-drop-file-conversion.md))
+- 하위 계정에서 전화번호 구매 ([LC Phone 가이드](../기타/what-is-lc-phone-system-.md) 또는 Twilio 가이드)
+- mp3/wav 파일(64kbps)로 미리 녹음된 오디오 파일 준비 ([자세한 내용 보기](../../09-이메일/기타/voicemail-drop-file-conversion.md)
 - 음성메시지 드롭을 위한 자동 통화에 대한 사용자 동의 확보
 
 ## 워크플로우를 사용한 무음 음성메시지(음성메시지 드롭) 설정

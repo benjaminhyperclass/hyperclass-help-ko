@@ -51,7 +51,7 @@
 
 ![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155025237581/original/viICB0j-AIQVIaVcuZCaqp3xS6lvkTFTKw.png?1714395178)
 
-[왓츠앱 템플릿 상태와 모범 사례]([whatsapp-template-statuses-and-best-practice](whatsapp-template-statuses-and-best-practice.md)) 가이드를 확인하세요.
+[왓츠앱 템플릿 상태와 모범 사례](whatsapp-template-statuses-and-best-practice.md) 가이드를 확인하세요.
 
 # 위치 왓츠앱 템플릿 만들기
 

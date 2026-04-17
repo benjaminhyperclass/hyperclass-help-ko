@@ -88,7 +88,7 @@
 ✅ **80% 가치 중심 콘텐츠** (교육, 참여, 팁)
 ✅ **20% 홍보 콘텐츠** (할인, 리드 생성 게시물)
 
-[기존 템플릿을 사용해서 광고 캠페인 만드는 방법]([ad-manager-create-ad-campaigns-using-templates](ad-manager-create-ad-campaigns-using-templates.md))
+[기존 템플릿을 사용해서 광고 캠페인 만드는 방법](../../10-마케팅/Ad-Campaign-Creation-and-Management/ad-manager-create-ad-campaigns-using-templates.md)
 
 ### **2.1 참여도와 예약을 이끄는 콘텐츠 아이디어**
 
@@ -132,7 +132,7 @@
 | **소규모 HVAC 팀 (2-5명)** | **일 25달러 (~월 750달러)** 멀티플랫폼 전략 |
 | **대규모 HVAC 회사** | **일 50달러 (~월 1500달러)** 브랜드 인지도 + 리드 생성 |
 
-[HVAC을 위한 효과적인 광고 예산 관리법]([ad-manager-campaign-budget-definition](ad-manager-campaign-budget-definition.md))
+[HVAC을 위한 효과적인 광고 예산 관리법](../../10-마케팅/Ad-Campaign-Creation-and-Management/ad-manager-campaign-budget-definition.md)
 
 ## **4단계: AI로 자동화하고 확장하기**
 

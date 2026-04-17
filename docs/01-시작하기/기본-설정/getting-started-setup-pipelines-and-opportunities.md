@@ -46,9 +46,9 @@
 
 더 자세히 알고 싶으시다면:
 
-- [단계별 가이드: 파이프라인 생성하기]([step-by-step-guide-creating-pipelines](step-by-step-guide-creating-pipelines.md))
+- [단계별 가이드: 파이프라인 생성하기](../../05-기회-파이프라인/step-by-step-guide-creating-pipelines.md)
 
-- [파이프라인 이해하기]([understanding-pipelines](understanding-pipelines.md))
+- [파이프라인 이해하기](../../05-기회-파이프라인/understanding-pipelines.md)
 
 **다음으로**, 기존 연락처를 가져와서 파이프라인을 채울 수 있습니다.
 
@@ -86,7 +86,7 @@
 
 ![가져오기 시작](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046582368/original/c6Ym2ups1E_UPGWwvQ54c8q_cCgepErDug.png?1747186449)
 
-더 자세한 내용을 원하시면 [CSV를 통한 연락처 및 기회 가져오기 가이드]([importing-contacts-and-opportunities-via-csv](importing-contacts-and-opportunities-via-csv.md))를 확인해보세요.
+더 자세한 내용을 원하시면 [CSV를 통한 연락처 및 기회 가져오기 가이드](../../02-연락처/importing-contacts-and-opportunities-via-csv.md)를 확인해보세요.
 
 **다음으로**, 파이프라인을 세밀하게 조정하기 위해 수동으로 기회를 추가하고 싶을 수 있습니다.
 
@@ -108,7 +108,7 @@
 
 ![기회 수동 생성](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046582407/original/RcxPH_183Eo8JrU6o629m-oZD1Ug71KD8A.png?1747186618)
 
-자세한 단계별 안내를 원하시면 [기회 생성 단계별 가이드]([step-by-step-guide-to-creating-opportunities](step-by-step-guide-to-creating-opportunities.md))를 참조하세요.
+자세한 단계별 안내를 원하시면 [기회 생성 단계별 가이드](../../05-기회-파이프라인/step-by-step-guide-to-creating-opportunities.md)를 참조하세요.
 
 ---
 

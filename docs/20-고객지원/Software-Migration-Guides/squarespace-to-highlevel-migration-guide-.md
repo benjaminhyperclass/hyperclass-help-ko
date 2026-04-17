@@ -58,14 +58,14 @@
 
 - **템플릿:** Squarespace 디자인과 유사한 템플릿을 선택하거나 커스터마이징하세요.
 
-- **콘텐츠 블록:** Hyperclass의 콘텐츠 블록을 사용하여 텍스트, 이미지, 임베드 동영상을 포함한 페이지와 블로그 포스트를 재생성하세요. [퍼널과 웹사이트에서 사전 제작된 요소 사용 방법 보기](how-to-use-prebuilt-elements-in-your-funnels-and-websites.md)
+- **콘텐츠 블록:** Hyperclass의 콘텐츠 블록을 사용하여 텍스트, 이미지, 임베드 동영상을 포함한 페이지와 블로그 포스트를 재생성하세요. [퍼널과 웹사이트에서 사전 제작된 요소 사용 방법 보기](../../06-사이트/기타/how-to-use-prebuilt-elements-in-your-funnels-and-websites.md)
 
 ### **2단계:** 이커머스 설정 재구축
 
 - **Squarespace에서 상품 및 주문 데이터 내보내기:** 내보내기 기능을 사용하여 상품 카탈로그와 주문 내역을 CSV 형식으로 다운로드하세요.
 
 - **Hyperclass에서 이커머스 설정:** Hyperclass의 이커머스 섹션으로 이동하여 이미지, 설명, 가격을 포함한 상품 데이터를 수동으로 입력하거나 가져오기하세요.
-[Hyperclass에서 이커머스 온라인 스토어 설정 방법 자세히 보기]([how-to-set-up-an-e-commerce-online-store-websites-](how-to-set-up-an-e-commerce-online-store-websites-.md))
+[Hyperclass에서 이커머스 온라인 스토어 설정 방법 자세히 보기](../../37-이커머스-스토어/E-Commerce-Store/how-to-set-up-an-e-commerce-online-store-websites-.md)
 
 - **결제 연동:** Squarespace에서 사용했던 것과 유사하게 Stripe 또는 PayPal 같은 결제 게이트웨이를 연결하세요.
 
@@ -76,7 +76,7 @@
 - **Squarespace에서 연락처 내보내기:** Squarespace의 연락처 패널을 사용하여 모든 연락처와 구독자를 CSV 파일로 내보내세요.
 
 - **Hyperclass로 연락처 가져오기:** Hyperclass에서 연락처(Contacts) > 연락처 가져오기(Import Contacts)로 이동하여 CSV 파일을 업로드하세요. 가져오기 과정에서 이름, 이메일, 태그 등의 필드가 올바르게 매핑되도록 확인하세요.
-[CSV 파일을 사용한 연락처 대량 가져오기 자세히 보기](bulk-importing-contacts-via-csv-walkthrough.md)
+[CSV 파일을 사용한 연락처 대량 가져오기 자세히 보기](../../02-연락처/기타/bulk-importing-contacts-via-csv-walkthrough.md)
 
 ![연락처 가져오기 과정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032543495/original/Vethu9ko8a4ys4PRCiYTSQc8dvnvGOenNA.png?1725904437)
 

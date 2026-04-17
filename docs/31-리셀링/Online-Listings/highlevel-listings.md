@@ -51,7 +51,7 @@ Hyperclass 리스팅은 다양한 비즈니스 요구와 현금 흐름 선호도
 - 스마트 세이버 플랜 (6개월)
 - 연간 어드밴티지 플랜 (연간)
 
-[각 플랜의 가격 세부 정보는 여기를 클릭하세요.](highlevel-pricing-guide.md)
+[각 플랜의 가격 세부 정보는 여기를 클릭하세요.](../../20-고객지원/Billing-Support/highlevel-pricing-guide.md)
 
 이러한 옵션을 통해 에이전시와 고객은 가장 편리한 청구 주기를 선택할 수 있습니다. Stripe를 사용하여 SaaS 설정(Configurator)을 통해 자체 가격대를 설정하여 리스팅을 재판매할 수 있습니다.
 

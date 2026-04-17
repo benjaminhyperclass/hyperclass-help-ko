@@ -38,7 +38,7 @@ WhatsApp Customer Service Window Check (왓츠앱 고객 서비스 창 확인)
 **단계별 가이드**
 
 **사전 요구사항:**
-하이퍼클래스 하위 계정에서 왓츠앱이 활성화되어 있어야 합니다. 비즈니스가 시작하는 메시지를 보내려면 승인된 왓츠앱 템플릿이 있어야 합니다. 왓츠앱 하위 계정 설정 및 [왓츠앱 템플릿 만들기](how-to-create-a-whatsapp-template.md) 가이드를 참조하세요.
+하이퍼클래스 하위 계정에서 왓츠앱이 활성화되어 있어야 합니다. 비즈니스가 시작하는 메시지를 보내려면 승인된 왓츠앱 템플릿이 있어야 합니다. 왓츠앱 하위 계정 설정 및 [왓츠앱 템플릿 만들기](../../31-리셀링/WhatsApp/how-to-create-a-whatsapp-template-.md) 가이드를 참조하세요.
 
 **왓츠앱 고객 서비스 창 확인 추가:**
 **자동화(Automations) > 워크플로우(Workflows) > 워크플로우 만들기(Create Workflow) > 처음부터 시작(Start from Scratch)**로 이동합니다.

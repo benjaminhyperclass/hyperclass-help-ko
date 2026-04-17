@@ -59,7 +59,7 @@ Hyperclass의 대화 AI(Conversation AI)에 있는 자동 후속(Auto Follow-Up)
 
 - 다음 중 하나를 선택합니다:
 
-새 봇 생성 (새 봇 설정을 위해서는 이 가이드를 따라주세요: [대화 AI 설정하기]([setting-up-conversation-ai](setting-up-conversation-ai.md)))
+새 봇 생성 (새 봇 설정을 위해서는 이 가이드를 따라주세요: [대화 AI 설정하기](../Getting-Started-w/-Conversation-AI/setting-up-conversation-ai.md))
 ![새 봇 생성](https://jumpshare.com/share/nHxJSbwRaGe5bLwFDIqU+/Screen+Shot+2026-01-19+at+6.52.22+PM.png)
 
 - **Agent List(에이전트 목록)**에서 기존 봇 이름 옆의 점 세 개를 클릭한 후 Edit(편집)을 클릭합니다.

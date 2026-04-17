@@ -59,7 +59,7 @@
 
 각 캠페인은 다른 목적을 가집니다 — 한 번에 모두 운영하지 마세요. 하나부터 시작해서 결과를 검증한 후 추가하세요.
 
-**[TikTok 리드 광고 연동 방법]([how-to-integrate-tiktok-lead-ads](how-to-integrate-tiktok-lead-ads.md))**
+**[TikTok 리드 광고 연동 방법](../../42-통합/TikTok/how-to-integrate-tiktok-lead-ads.md)**
 
 ### **전환율 높은 광고 오퍼(템플릿 포함)**
 
@@ -90,7 +90,7 @@
 
 이런 오퍼들은 긴급함과 적시성을 만듭니다.
 
-**[페이스북과 인스타그램 리드 광고 설정]([getting-started-setup-facebook-and-instagram-lead-ads](getting-started-setup-facebook-and-instagram-lead-ads.md))**
+**[페이스북과 인스타그램 리드 광고 설정](../../01-시작하기/마케팅-리드-생성/getting-started-setup-facebook-and-instagram-lead-ads.md)**
 
 ### **클릭을 유도하는 시각적 요소**
 
@@ -125,7 +125,7 @@
 - 기존 환자 목록을 페이스북이나 구글에 업로드
 - 유사 오디언스를 만들어 비슷한 사람들을 더 찾기
 
-**[광고 관리자의 광고 캠페인 통계](statistics-of-ad-campaigns-in-ad-manager.md)**
+**[광고 관리자의 광고 캠페인 통계](../../10-마케팅/기타/statistics-of-ad-campaigns-in-ad-manager.md)**
 
 ### **광고 트래픽을 보낼 곳**
 
@@ -152,7 +152,7 @@
 - 3일 후 한정 시간 긴급성으로 에스컬레이션
 - 무응답 리드에 태그를 달아 나중에 재활성화
 
-**[워크플로우 빌더 확인하기](a-list-of-workflow-actions.md)**
+**[워크플로우 빌더 확인하기](../../07-워크플로우/기타/a-list-of-workflow-actions.md)**
 
 ### **중요한 지표들(그리고 그 의미)**
 
@@ -165,9 +165,9 @@
 
 GHL의 어트리뷰션과 리포팅 도구를 통해 소스, 캠페인, 퍼널, 심지어 후속 조치를 담당하는 직원별로도 추적할 수 있습니다.
 
-**[어트리뷰션 소스 이해하기(광고 리포팅)](understanding-attribution-source-ad-reporting-.md)**
+**[어트리뷰션 소스 이해하기(광고 리포팅)](../../10-마케팅/기타/understanding-attribution-source-ad-reporting-.md)**
 
-**[페이스북 광고 리포팅 설정 방법]([how-to-set-up-facebook-ad-reporting](how-to-set-up-facebook-ad-reporting.md))**
+**[페이스북 광고 리포팅 설정 방법](../../18-리포팅/추적-어트리뷰션/how-to-set-up-facebook-ad-reporting.md)**
 
 ### **시간에 따른 광고 전략 확장**
 

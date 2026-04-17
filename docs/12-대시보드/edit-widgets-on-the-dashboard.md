@@ -52,9 +52,9 @@ $497+ 요금제의 커스텀 대시보드는 **에이전시 관리자**와 **에
 
 ## 다음 단계:
 
-- [위젯 제거하기](removing-a-widget.md)
-- [위젯 크기 조정하기](resize-widgets.md)
-- [위젯 재배열하기](rearrange-widgets.md)
+- [위젯 제거하기](위젯/removing-a-widget.md)
+- [위젯 크기 조정하기](위젯/resize-widgets.md)
+- [위젯 재배열하기](위젯/rearrange-widgets.md)
 
 ---
 *원문 최종 수정: Wed, 18 Oct, 2023 at 11:33 PM*

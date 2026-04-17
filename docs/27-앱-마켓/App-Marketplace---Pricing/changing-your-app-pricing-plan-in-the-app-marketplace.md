@@ -23,7 +23,7 @@
 
 ## 앱 배포 타입: 에이전시 전용
 
-[배포 타입이 'Agency Only(에이전시 전용)'](marketplace-app-distribution-type.md)인 앱의 경우 2단계 과정을 거쳐요.
+[배포 타입이 'Agency Only(에이전시 전용)'](../../35-개발자/Developer-Resources/marketplace-app-distribution-type.md)인 앱의 경우 2단계 과정을 거쳐요.
 
 **1단계**: 새로운 요금제를 선택하세요.
 
@@ -35,7 +35,7 @@
 
 ## 앱 배포 타입: 에이전시 & 하위 계정
 
-[배포 타입이 'Agency & Sub-account(에이전시 & 하위 계정)'](marketplace-app-distribution-type.md)인 앱의 경우 3단계 과정을 거쳐요.
+[배포 타입이 'Agency & Sub-account(에이전시 & 하위 계정)'](../../35-개발자/Developer-Resources/marketplace-app-distribution-type.md)인 앱의 경우 3단계 과정을 거쳐요.
 
 **1단계**: 새로운 요금제를 선택하세요.
 

@@ -33,7 +33,7 @@
 
 ## 위젯 만들기 및 커스터마이징
 
-"에이전시 뷰(Agency View)"의 "프로스펙팅(Prospecting)" 섹션으로 이동하거나 하위 계정의 마케팅(Marketing) 탭 아래에서 새 위젯을 만들 수 있습니다. ([하위 계정에서 프로스펙팅 활성화에 대해 자세히 알아보기]([prospecting-at-sub-accounts-complete-guide-benefits-setup](prospecting-at-sub-accounts-complete-guide-benefits-setup.md)))
+"에이전시 뷰(Agency View)"의 "프로스펙팅(Prospecting)" 섹션으로 이동하거나 하위 계정의 마케팅(Marketing) 탭 아래에서 새 위젯을 만들 수 있습니다. ([하위 계정에서 프로스펙팅 활성화에 대해 자세히 알아보기](../Prospecting-Tool/prospecting-at-sub-accounts-complete-guide-benefits-setup.md))
 
 ![프로스펙팅 위젯 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155028609777/original/8OILtGEjc4OgizJPcfAXp0Tn8Vs_lkfA1Q.png?1719987785)
 
@@ -83,7 +83,7 @@
 
 ![리드 자동화 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050440887/original/cCEBqiD9S_Y8_-bE7N6LU-Bftk6LWQDr2w.png?1753447770)
 
-[워크플로우를 사용하여 프로스펙트 후속 작업을 자동화하는 방법 알아보기 →]([workflow-trigger-for-new-prospects-in-the-prospecting-tool](workflow-trigger-for-new-prospects-in-the-prospecting-tool.md))
+[워크플로우를 사용하여 프로스펙트 후속 작업을 자동화하는 방법 알아보기 →](../Premium-Prospecting/workflow-trigger-for-new-prospects-in-the-prospecting-tool.md)
 
 ---
 

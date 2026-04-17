@@ -20,7 +20,7 @@
 
 버전 1 페이지는 기존 시스템 빌더를 기반으로 구축되었습니다. 주요 차이점은 V2에 몇 가지 추가 기능이 포함되어 있다는 것입니다:
 
-- ## **[PayPal 결제 처리](how-to-set-up-a-paypal-integration.md)**
+- ## **[PayPal 결제 처리](../../08-결제/how-to-set-up-a-paypal-integration.md)**
 
 - ## **원스텝 주문 양식**
 
@@ -32,7 +32,7 @@
 
 - ## **디지털 상품은 이제 결제 섹션에서 생성되어 웹사이트/퍼널 단계의 주문 양식에 적용됩니다**
 
-**1.** [Stripe에서 상품을 가져올](import-products-price-from-stripe.md) 수 있습니다
+**1.** [Stripe에서 상품을 가져올](../../08-결제/import-products-price-from-stripe.md) 수 있습니다
 
 **2.** 웹사이트/퍼널 단계의 주문 양식에 적용할 수 있는 새 상품을 생성할 수 있습니다.
 

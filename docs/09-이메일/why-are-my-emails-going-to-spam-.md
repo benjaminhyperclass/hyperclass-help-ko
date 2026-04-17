@@ -24,7 +24,7 @@
 
 gmail.com, yahoo.com 등 무료 도메인에서 메시지를 보내면 스팸함으로 갈 가능성이 높습니다. 본인이 소유한 도메인을 사용하고, 브랜딩과 일치하는 도메인에서 메일을 발송해야 합니다.
 
-자세한 설정 방법은 [전용 이메일 발송 도메인 개요 및 설정](dedicated-email-sending-domains-overview-setup.md) 가이드를 참고하세요.
+자세한 설정 방법은 [전용 이메일 발송 도메인 개요 및 설정](LC-Email-Dedicated-Domain-and-IP/dedicated-email-sending-domains-overview-setup.md) 가이드를 참고하세요.
 
 ## DMARC 설정
 

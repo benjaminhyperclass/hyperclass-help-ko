@@ -52,7 +52,7 @@ Twilio를 클릭하세요.
 
 전화번호 이동 도구에서 오류가 표시되면 Twilio 지원팀에 문의하여 전화번호 이동을 도와달라고 요청하세요:
 
-[전화번호 이동이 작동하지 않고 오류가 표시되는 경우](move-number-not-working-showing-error-request-failed-with-status-code.md)
+[전화번호 이동이 작동하지 않고 오류가 표시되는 경우](../기타/move-number-not-working-showing-error-request-failed-with-status-code.md)
 
 ## 클라이언트 자체 Twilio 계정을 사용할 로케이션의 경우
 
@@ -103,7 +103,7 @@ Twilio를 클릭하세요.
 
 전화번호 이동 도구에서 오류가 표시되면 Twilio 지원팀에 문의하여 전화번호 이동을 도와달라고 요청하세요:
 
-[전화번호 이동이 작동하지 않고 오류가 표시되는 경우](move-number-not-working-showing-error-request-failed-with-status-code.md)
+[전화번호 이동이 작동하지 않고 오류가 표시되는 경우](../기타/move-number-not-working-showing-error-request-failed-with-status-code.md)
 
 해당 전화번호들이 로케이션에 표시되면, 여기서 다시 마스터 Account SID와 auth token으로 전환할 수 있습니다.
 

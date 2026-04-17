@@ -75,7 +75,7 @@ Meta는 공식 템플릿 카테고리 가이드라인에 따라 선택한 카테
 ![왓츠앱 템플릿 생성 페이지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155017326688/original/3H_BBOwlmRL_OdL4I2_Dtv_UYRiV6czLkA.png?1704897872)
 
 
-왓츠앱의 최신 업데이트는 미디어 템플릿 지원을 도입하여 사용자가 이미지, 동영상, 문서, 위치를 포함한 다양한 유형의 미디어 콘텐츠를 보낼 수 있게 합니다. 자세히 알아보기: [왓츠앱 미디어 템플릿](whatsapp-media-templates.md)
+왓츠앱의 최신 업데이트는 미디어 템플릿 지원을 도입하여 사용자가 이미지, 동영상, 문서, 위치를 포함한 다양한 유형의 미디어 콘텐츠를 보낼 수 있게 합니다. 자세히 알아보기: [왓츠앱 미디어 템플릿](../../31-리셀링/WhatsApp/whatsapp-media-templates.md)
 
 
 #### 2단계: 템플릿 세부 정보 입력

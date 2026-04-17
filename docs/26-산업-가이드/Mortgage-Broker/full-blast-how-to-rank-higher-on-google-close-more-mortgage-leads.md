@@ -89,9 +89,9 @@
 
 **예시**: "지난주 '24시간 사전 승인' GMB 게시물을 통해 5명의 구매자가 통화를 예약했습니다."
 
-[전화번호 구매하는 방법](how-to-purchase-a-phone-number.md)
+[전화번호 구매하는 방법](../../15-전화-시스템/전화번호/how-to-purchase-a-phone-number.md)
 
-[구글 비즈니스 프로필을 Hyperclass에 연결하기](how-to-integrate-google-business-profile-gbp-with-highlevel.md)
+[구글 비즈니스 프로필을 Hyperclass에 연결하기](../../42-통합/Google-Integrations/how-to-integrate-google-business-profile-gbp-with-highlevel.md)
 
 [비즈니스 프로필에서 고객과 채팅하는 방법](https://support.google.com/business/answer/15013580?utm_source=HighLevel+HelpDesk&utm_medium=organic)
 
@@ -101,13 +101,13 @@
 - Hyperclass의 리뷰 요청 자동화(SMS 및 이메일) 활용
 - 대출이 성사되면 자동으로 리뷰 링크 발송
 
-[리뷰 요청 발송 방법](how-to-send-review-requests.md)
+[리뷰 요청 발송 방법](../../41-평판-리뷰/Review-Requests/how-to-send-review-requests.md)
 
-[평판 관리 - 리뷰 요청 메시지 커스터마이징하는 방법(SMS/이메일)](how-to-customize-the-review-request-messages-sms-email-.md)
+[평판 관리 - 리뷰 요청 메시지 커스터마이징하는 방법(SMS/이메일)](../../41-평판-리뷰/Review-Requests/how-to-customize-the-review-request-messages-sms-email-.md)
 
-[구글 리뷰 이의 제기 및 이의 제기 상태 확인 방법](how-to-dispute-a-google-review-and-check-on-the-dispute-status.md)
+[구글 리뷰 이의 제기 및 이의 제기 상태 확인 방법](../../41-평판-리뷰/Review-Requests/how-to-dispute-a-google-review-and-check-on-the-dispute-status.md)
 
-[구글 비즈니스 페이지에서 소셜 포스팅 사용하는 방법](how-to-connect-to-your-google-my-business-location-s-.md)
+[구글 비즈니스 페이지에서 소셜 포스팅 사용하는 방법](../../10-마케팅/소셜-플래너/how-to-connect-to-your-google-my-business-location-s-.md)
 
 ## 2단계: 더 많은 웹사이트 방문자를 리드로 전환
 
@@ -127,7 +127,7 @@
 
 **예시**: "지금이 재융자 좋은 시기인가요?" 같은 일반적인 질문에 답하는 블로그 게시물로 순위를 올리세요.
 
-[SEO 메타 데이터 최적화하는 방법](seo-meta-data.md)
+[SEO 메타 데이터 최적화하는 방법](../../06-사이트/퍼널-웹사이트/seo-meta-data.md)
 
 ### 2.2 전환 중심 CTA로 대출 고객 확보
 
@@ -143,11 +143,11 @@ Hyperclass의 퍼널 빌더를 사용하거나 다음과 같은 양식을 웹사
 - 채팅 위젯(Hyperclass의 AI 봇이 즉시 응답)
 - 이탈 의도 양식: "떠나시나요? 가기 전에 주택 대출 체크리스트를 받아가세요!"
 
-[채팅 위젯 시작하기](getting-started-with-chat-widget.md)
+[채팅 위젯 시작하기](../../06-사이트/getting-started-with-chat-widget.md)
 
-[Hyperclass 채팅 위젯 설치하는 방법](how-to-install-highlevel-s-chat-widget.md)
+[Hyperclass 채팅 위젯 설치하는 방법](../../06-사이트/how-to-install-highlevel-s-chat-widget.md)
 
-[Hyperclass에서 연락처 양식 만드는 방법](how-to-create-a-contact-form-in-highlevel-.md)
+[Hyperclass에서 연락처 양식 만드는 방법](../../02-연락처/기타/how-to-create-a-contact-form-in-highlevel-.md)
 
 퍼널/웹사이트 진입 시 팝업 표시하기
 
@@ -167,9 +167,9 @@ Hyperclass에서 이탈 의도 팝업 만드는 방법
 
 **예시**: 검색 결과 스니펫에 리뷰 별점과 영업시간과 함께 "[지역명] 최고의 모기지 전문가"로 나타나세요.
 
-[지역 SEO를 위한 고성과 키워드 찾는 방법]([how-to-add-seo-descriptions-and-keywords-to-boost-your-ecommerce-ranking](how-to-add-seo-descriptions-and-keywords-to-boost-your-ecommerce-ranking.md))
+[지역 SEO를 위한 고성과 키워드 찾는 방법](../../37-이커머스-스토어/E-Commerce-Store/how-to-add-seo-descriptions-and-keywords-to-boost-your-ecommerce-ranking.md)
 
-[전환되는 리드 확보 양식 설정하는 방법](how-to-create-a-contact-form-in-highlevel-.md)
+[전환되는 리드 확보 양식 설정하는 방법](../../02-연락처/기타/how-to-create-a-contact-form-in-highlevel-.md)
 
 ## 4단계: 고품질 백링크로 지역 신뢰도 구축
 
@@ -213,7 +213,7 @@ Hyperclass에서 이탈 의도 팝업 만드는 방법
   → 대출 체크리스트 알림
   → 서류 수집 워크플로우
 
-[SEO 메타 데이터 추적 및 개선 방법]([seo-meta-data](seo-meta-data.md))
+[SEO 메타 데이터 추적 및 개선 방법](../../06-사이트/퍼널-웹사이트/seo-meta-data.md)
 
 ## 마무리: 구글 상위 노출로 더 많은 대출 성사하기
 

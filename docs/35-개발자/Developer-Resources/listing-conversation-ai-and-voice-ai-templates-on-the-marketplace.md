@@ -30,7 +30,7 @@ Hyperclass의 대화 AI(Conversation AI) 또는 음성 AI(Voice AI) 페이지에
 
 3. **완료 및 제출**
 
-앱의 기본 정보(Basic Info), 앱 프로필(App Profile), [가격 설정(Pricing)](set-up-your-app-pricing.md), **지원(Support)** 섹션을 모두 작성하세요.
+앱의 기본 정보(Basic Info), 앱 프로필(App Profile), [가격 설정(Pricing)](../../36-기타/리커버리/set-up-your-app-pricing.md), **지원(Support)** 섹션을 모두 작성하세요.
 
 - 검토를 위해 등록을 제출하세요. 승인되면 모든 에이전시 사용자와 하위 계정이 마켓플레이스에서 이용할 수 있게 됩니다.
 

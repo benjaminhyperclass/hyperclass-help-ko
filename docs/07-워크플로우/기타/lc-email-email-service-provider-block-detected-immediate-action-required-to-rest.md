@@ -23,10 +23,10 @@
 
 ESP 차단은 주요 이메일 제공업체(Gmail, Yahoo, Outlook 등)가 다음과 같은 이유로 이메일을 거부하는 것입니다:
 
-- [인증 실패(DMARC, SPF, DKIM 문제)](email-authentication-errors-fix-spf-dkim-and-dmarc-issues.md)
-- [발신자 평판 불량](low-domain-reputation-rebuild-trust-and-improve-deliverability.md)
-- [스팸성 콘텐츠](spam-filter-blocks-improve-content-and-sender-reputation.md)
-- [정책 위반](recipient-policy-block-bypass-server-restrictions.md)
+- [인증 실패(DMARC, SPF, DKIM 문제)](../../09-이메일/Authentication-&-Security/email-authentication-errors-fix-spf-dkim-and-dmarc-issues.md)
+- [발신자 평판 불량](../../09-이메일/Reputation-&-Throttling/low-domain-reputation-rebuild-trust-and-improve-deliverability.md)
+- [스팸성 콘텐츠](../../09-이메일/Authentication-&-Security/spam-filter-blocks-improve-content-and-sender-reputation.md)
+- [정책 위반](../../09-이메일/Recipient-&-Server-Issues/recipient-policy-block-bypass-server-restrictions.md)
 - 기술적 구성 문제
 
 **일반 바운스와 달리 ESP 차단은 별도로 계산되며, 장기적인 이메일 전송률을 보호하기 위해 즉시 제한을 발동시킵니다.**

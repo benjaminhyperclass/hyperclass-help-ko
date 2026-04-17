@@ -29,8 +29,8 @@
 
 ## 추가 팁이 필요하시나요? 도움이 되는 가이드들:
 
-- [Gmail 양방향 이메일 동기화 설정 방법](how-to-set-up-two-way-email-sync-for-gmail.md)
-- [Outlook 양방향 이메일 동기화](two-way-email-sync-for-outlook.md)
+- [Gmail 양방향 이메일 동기화 설정 방법](../../42-통합/Other-Integrations/how-to-set-up-two-way-email-sync-for-gmail.md)
+- [Outlook 양방향 이메일 동기화](../../42-통합/Other-Integrations/two-way-email-sync-for-outlook.md)
 
 이제 Hyperclass 내에서 직접 메시지를 보내기 시작하여 워크플로우를 더욱 원활하게 만들 수 있습니다.
 

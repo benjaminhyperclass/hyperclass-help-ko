@@ -54,7 +54,7 @@
 - **Google 로컬 서비스 광고(LSA)**는 클릭이 아닌 **리드를 제공**하여 **가장 비용 효과적인** 광고 방법입니다.
 - 전기공사업체의 Google 광고 평균 리드당 비용(CPL)은 **$25 - $75**이지만, **적절한 타겟팅**으로 더 낮출 수 있습니다.
 
-[하이퍼클래스의 Ad Manager(광고 관리자)에 대해 자세히 알아보기]([overview-of-ad-manager](overview-of-ad-manager.md))
+[하이퍼클래스의 Ad Manager(광고 관리자)에 대해 자세히 알아보기](../../10-마케팅/Getting-Started-w/-Ad-Manager/overview-of-ad-manager.md)
 
 ### 1.1 Google 로컬 서비스 광고(LSA) 설정
 
@@ -81,7 +81,7 @@
 예산 팁:
 **하루 $50**로 시작하여 **가장 높은 ROI**를 위해 **브랜드 및 응급 관련 검색**에 집중하세요.
 
-[새로운 광고 캠페인 생성 방법 알아보기](create-new-ad-campaign-in-ad-manager.md)
+[새로운 광고 캠페인 생성 방법 알아보기](../../10-마케팅/기타/create-new-ad-campaign-in-ad-manager.md)
 
 ### 1.3 통화 추적 활성화
 
@@ -104,7 +104,7 @@ Google 비즈니스 프로필에서 통화 추적 번호를 사용하여 어떤 
 - Facebook의 클릭당 비용(CPC)은 **Google 광고보다 낮아** 리드를 유치하는 **훌륭한 저비용 전략**입니다.
 - **잘 타겟팅된 Facebook 광고**는 **리드당 $5 - $15**의 낮은 비용으로 리드를 생성할 수 있습니다.
 
-[하이퍼클래스의 Ad Manager(광고 관리자)와 Facebook 연결 방법 알아보기]([connect-facebook-with-ad-manager](connect-facebook-with-ad-manager.md))
+[하이퍼클래스의 Ad Manager(광고 관리자)와 Facebook 연결 방법 알아보기](../../10-마케팅/Ad-Manager-Setup-&-Configuration/connect-facebook-with-ad-manager.md)
 
 ### 2.1 높은 전환율의 광고 제작
 

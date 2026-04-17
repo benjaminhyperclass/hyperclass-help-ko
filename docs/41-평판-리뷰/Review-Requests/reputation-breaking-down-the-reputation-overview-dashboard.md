@@ -53,8 +53,8 @@ Yext가 활성화되고 해당 로케이션이 구독 중인 경우, '온라인 
 ![리스팅 관리 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48253248037/original/MLwLJ3LakKaR8dCMPUgB75FFB0_LOLtJ0g.png?1664223208)
 
 관련 가이드:
-- [온라인 리스팅 개요 및 설정 가이드](online-listing-overview-setup-doc.md)
-- [고객에게 과금하지 않고 Yext를 직접 배포하는 방법](deploy-listings-without-directly-charging-the-client.md)
+- [온라인 리스팅 개요 및 설정 가이드](../../31-리셀링/Online-Listings/online-listing-overview-setup-doc.md)
+- [고객에게 과금하지 않고 Yext를 직접 배포하는 방법](../../31-리셀링/Online-Listings/deploy-listings-without-directly-charging-the-client.md)
 
 ## 평균 평점(Avg Rating):
 

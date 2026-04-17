@@ -29,7 +29,7 @@
 
 [워크플로우 빌더 둘러보기](workflow-builder-walkthrough.md)
 
-[워크플로우 설정](workflow-settings-overview.md)
+[워크플로우 설정](../빌더/workflow-settings-overview.md)
 
 [워크플로우 트리거 목록](a-list-of-workflow-triggers.md)
 
@@ -153,7 +153,7 @@
 
 ## 연락처를 다른 경로로 분할
 
-워크플로우 내에서 [if/else 조건](workflow-builder-if-else-conditional-event.md)을 추가하여 다양한 **필터 기준**에 따라 연락처 플로우를 특정 경로로 리디렉션할 수 있습니다. [분할(Split)](workflow-action-split.md)을 추가하여 연락처를 다른 경로로 **무작위로** 분할할 수도 있습니다.
+워크플로우 내에서 [if/else 조건](workflow-builder-if-else-conditional-event.md)을 추가하여 다양한 **필터 기준**에 따라 연락처 플로우를 특정 경로로 리디렉션할 수 있습니다. [분할(Split)](../Internal-Tools-Workflow-Actions/workflow-action-split.md)을 추가하여 연락처를 다른 경로로 **무작위로** 분할할 수도 있습니다.
 
 [IF/Else](workflow-builder-if-else-conditional-event.md)를 추가한 후 조건에 따라 분기를 만들 수 있으므로, 새 연락처는 고유한 액션 세트로 이어지는 분기와 일치해야 합니다. 이를 통해 워크플로우 내에서 연락처에 따른 분할과 고유한 경험이 가능합니다. 연락처나 플로우에 대한 메시지와 경험을 맞춤화할 때 강력합니다.
 

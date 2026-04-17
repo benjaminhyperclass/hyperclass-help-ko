@@ -120,7 +120,7 @@ Hyperclass 음성 AI 에이전트를 **두 가지 테스트 방법**—**전화 
 
 음성 AI 에이전트를 생성하는 동안에도 테스트할 수 있어요. 에이전트 생성 플로우에서 전화 및 예약 가능 시간 단계의 에이전트 테스트 패널을 사용해서 위에서 설명한 것과 동일한 웹 통화 및 전화 통화 테스트를 실행하세요. 이러한 테스트 통화는 통화 기록, 전사, 녹음, 요약을 포함해서 다른 테스트와 동일하게 동작해요.
 
-에이전트 생성 중 설정에 대한 자세한 내용은 [음성 AI 에이전트 만들기](creating-voice-ai-agents.md)를 참조하세요.
+에이전트 생성 중 설정에 대한 자세한 내용은 [음성 AI 에이전트 만들기](기타/creating-voice-ai-agents.md)를 참조하세요.
 
 ![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155061017236/original/6Zl-8DNyjoU0y3UJXfEmkchbxjjHkaOzzg.png?1766153920)
 

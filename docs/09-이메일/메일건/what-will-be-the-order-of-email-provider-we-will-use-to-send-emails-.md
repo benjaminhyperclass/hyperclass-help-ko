@@ -24,17 +24,17 @@
 - 여러 로케이션에 동일한 Mailgun API와 동일한 도메인/서브도메인을 사용할 수 있습니다
 - 여러 로케이션에 동일한 Mailgun API와 다른 도메인/서브도메인을 사용할 수 있습니다
 - 여러 로케이션에 각각 다른 Mailgun API와 도메인/서브도메인을 사용할 수 있습니다
-- 각 로케이션마다 고유한 도메인/서브도메인을 설정하여 콜드 이메일 수신을 처리할 수도 있습니다. [콜드 이메일 수신 설정에 대한 자세한 내용](cold-email-inbound-setup.md)
+- 각 로케이션마다 고유한 도메인/서브도메인을 설정하여 콜드 이메일 수신을 처리할 수도 있습니다. [콜드 이메일 수신 설정에 대한 자세한 내용](../기타/cold-email-inbound-setup.md)
 
 **로케이션별 LC 이메일 설정:**
 
 - 에이전시 레벨에서 커스텀 도메인을 추가하면, 하위 계정 레벨에서 커스텀 도메인을 설정하기 전까지는 모든 하위 계정에 적용됩니다. 하위 계정에서 커스텀 도메인을 설정하면 해당 하위 계정의 도메인이 우선 적용됩니다.
 
 관련 가이드:
-- [LC - Email이란? 더 자세히 알아보기](what-is-lc-email-.md)
-- [내 에이전시를 LC - Email로 마이그레이션하는 방법](how-to-migrate-my-agency-over-to-lc-email.md)
-- [전용 발송 도메인 설정 방법 (LC Email)](dedicated-email-sending-domains-overview-setup.md)
-- [GoDaddy를 사용한 전용 발송 도메인 설정 방법 (LC Email)](godaddy-dedicated-sending-domain-setu-lc-email-.md)
+- [LC - Email이란? 더 자세히 알아보기](../what-is-lc-email-.md)
+- [내 에이전시를 LC - Email로 마이그레이션하는 방법](../how-to-migrate-my-agency-over-to-lc-email.md)
+- [전용 발송 도메인 설정 방법 (LC Email)](../LC-Email-Dedicated-Domain-and-IP/dedicated-email-sending-domains-overview-setup.md)
+- [GoDaddy를 사용한 전용 발송 도메인 설정 방법 (LC Email)](../LC-Email-Dedicated-Domain-and-IP/godaddy-dedicated-sending-domain-setu-lc-email-.md)
 
 ![로케이션별 이메일 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48279982772/original/VaHl4lAMpUxjgcZsYcWwp920XsXHSheaUA.png?1675707822)
 

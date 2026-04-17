@@ -77,13 +77,13 @@
 
 ## 관련 가이드
 
-- [온라인 리스팅 개요 및 설정 문서]([online-listing-overview-setup-doc](online-listing-overview-setup-doc.md))
+- [온라인 리스팅 개요 및 설정 문서](online-listing-overview-setup-doc.md)
 
 - [Hyperclass 리스팅](highlevel-listings.md)
 
-- [고객에게 리스팅을 리셀하는 방법]([how-to-resell-listings-to-your-clients](how-to-resell-listings-to-your-clients.md))
+- [고객에게 리스팅을 리셀하는 방법](how-to-resell-listings-to-your-clients.md)
 
-- [리빌링, 리셀링, 지갑 기능 설명](rebilling-reselling-and-wallets-explained.md)
+- [리빌링, 리셀링, 지갑 기능 설명](../../36-기타/Miscellaneous/rebilling-reselling-and-wallets-explained.md)
 
 ---
 *원문 최종 수정: 2025-07-01*

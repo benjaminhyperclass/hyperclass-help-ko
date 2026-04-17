@@ -20,7 +20,7 @@
 
 이 액션은 모든 워크플로우 유형에서 사용할 수 있습니다 — 연락처(Contact) 기반, 회사(Company) 기반, 커스텀 객체(Custom Object) 기반 워크플로우 모두에서 말이죠. 트리거 레코드와 연관된 레코드들을 다른 워크플로우에 자동으로 추가할 수 있습니다.
 
-이 액션은 기존의 [워크플로우에 추가(Add to Workflow) 액션](action-add-to-workflow-workflow-action-add-to-workflow.md) 기능을 확장한 것입니다. 워크플로우에 추가 액션은 현재 레코드(예: 연락처)만을 다른 워크플로우에 추가하는 반면, 연관 레코드를 워크플로우에 추가 액션은 연관 라벨을 기준으로 연관된 레코드들(연락처, 회사, 커스텀 객체)을 등록할 수 있습니다.
+이 액션은 기존의 [워크플로우에 추가(Add to Workflow) 액션](../Internal-Tools-Workflow-Actions/action-add-to-workflow-workflow-action-add-to-workflow.md) 기능을 확장한 것입니다. 워크플로우에 추가 액션은 현재 레코드(예: 연락처)만을 다른 워크플로우에 추가하는 반면, 연관 레코드를 워크플로우에 추가 액션은 연관 라벨을 기준으로 연관된 레코드들(연락처, 회사, 커스텀 객체)을 등록할 수 있습니다.
 
 ## 액션 이름
 

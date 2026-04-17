@@ -39,7 +39,7 @@
 최신 연결(Connections) 플로우를 사용하여 줌을 연결하려면:
 캘린더(Calendars) → 설정(Settings) → 연결(Connections) → 화상 회의(Video Conferencing) → 새로 추가(Add New) → 줌(Zoom)
 
-단계별 설정 및 관리자 시나리오는 "[사용자 캘린더 예약을 위한 줌 연동](zoom-integration-for-users-calendar-bookings.md)"을 참조하세요.
+단계별 설정 및 관리자 시나리오는 "[사용자 캘린더 예약을 위한 줌 연동](../../42-통합/Other-Integrations/zoom-integration-for-users-calendar-bookings.md)"을 참조하세요.
 
 ## 하이퍼클래스 캘린더와 줌 연동 설정 방법
 

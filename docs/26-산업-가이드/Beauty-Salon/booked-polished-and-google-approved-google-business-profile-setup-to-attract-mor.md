@@ -142,7 +142,7 @@ Google에서 지역 순위 향상하기
 
 **팁:** 빠른 응답 – Google은 응답성이 좋은 업체에 더 좋은 순위를 부여합니다.
 
-[GMB 프로필을 GHL CRM과 연동하는 방법 알아보기](how-to-integrate-your-google-business-profile-formerly-gmb-into-the-crm.md)
+[GMB 프로필을 GHL CRM과 연동하는 방법 알아보기](../../11-설정/기타/how-to-integrate-your-google-business-profile-formerly-gmb-into-the-crm.md)
 
 ### 8. 좋은 리뷰 수집하고 지속적으로 응답하기
 

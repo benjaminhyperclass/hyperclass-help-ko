@@ -46,11 +46,11 @@
 
 더 알아보기
 
-- [워크플로우 액션 - 이메일 보내기](workflow-action-send-email.md)
+- [워크플로우 액션 - 이메일 보내기](../../07-워크플로우/Communication-Workflow-Actions/workflow-action-send-email.md)
 
-- [워크플로우 트리거 - 폼 제출](workflow-trigger-form-submitted.md)
+- [워크플로우 트리거 - 폼 제출](../../07-워크플로우/Events-Workflow-Triggers/workflow-trigger-form-submitted.md)
 
-- [워크플로우 시작하기](getting-started-with-workflows.md)
+- [워크플로우 시작하기](../../07-워크플로우/기타/getting-started-with-workflows.md)
 
 이제 이메일 후속 연락을 자동화했으니, SMS가 개인화된 참여의 추가 레이어를 어떻게 더할 수 있는지 살펴보세요!
 
@@ -94,7 +94,7 @@
 
 더 알아보기
 
-- [워크플로우 액션 - SMS 보내기](workflow-action-send-sms.md)
+- [워크플로우 액션 - SMS 보내기](../../07-워크플로우/Communication-Workflow-Actions/workflow-action-send-sms.md)
 
 - 워크플로우 액션 목록
 

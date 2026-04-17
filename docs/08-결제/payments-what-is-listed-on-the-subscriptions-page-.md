@@ -31,7 +31,7 @@ Payments(결제) → Subscriptions(구독)으로 이동하세요.
 
 선택한 결제 제공업체에서 지원하는 경우, 수동으로 생성된 구독(예: 연락처의 Payments(결제) 탭에서 생성)이 표시됩니다.
 
-[**퍼널 버전 2**](how-to-upgrade-a-version-1-funnel-to-version-2-.md)의 1단계 또는 2단계 주문 폼을 통해 생성된 모든 구독이 포함되며, 다음 정보가 표시됩니다:
+[**퍼널 버전 2**](../06-사이트/기타/how-to-upgrade-a-version-1-funnel-to-version-2-.md)의 1단계 또는 2단계 주문 폼을 통해 생성된 모든 구독이 포함되며, 다음 정보가 표시됩니다:
 
 - 결제 제공업체 및 구독 ID
 - 고객 정보

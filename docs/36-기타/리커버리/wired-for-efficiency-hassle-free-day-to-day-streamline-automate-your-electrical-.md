@@ -69,7 +69,7 @@
 
 - #### 노쇼와 막판 취소를 줄이세요.
 
-- #### [예약 알림 자동화 방법](how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
+- #### [예약 알림 자동화 방법](../../24-대학/HighLevel-How-To&#39;s/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
 
 - #### **1.3 팀에 작업을 효율적으로 배정**
 
@@ -91,7 +91,7 @@
 
 - #### 작업 알림과 서비스 추적을 자동화하여 고객 유지율을 향상시키세요.
 
-- #### [추적 자동화 방법](how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
+- #### [추적 자동화 방법](../../24-대학/HighLevel-How-To&#39;s/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
 
 - #### **2.2 AI 기반 고객 대화 활성화**
 
@@ -99,7 +99,7 @@
 
 - #### AI가 예약을 잡고, FAQ에 답변하며, 리드 세부 정보를 수집할 수 있습니다.
 
-- #### [대화 AI 설정 방법](conversation-ai-bot-explained.md)
+- #### [대화 AI 설정 방법](../../13-AI-Employee/Getting-Started-w/-Conversation-AI/conversation-ai-bot-explained.md)
 
 - #### **2.3 타겟 메시지를 위한 스마트 리스트 사용**
 
@@ -107,7 +107,7 @@
 
 - #### 계절별 제안, 유지보수 알림, 추천 요청을 보내세요.
 
-- #### [스마트 리스트 설정 방법](getting-started-with-smart-lists.md)
+- #### [스마트 리스트 설정 방법](../../02-연락처/기타/getting-started-with-smart-lists.md)
 
 ## 3단계: 인보이스 발송 및 결제 수금 간소화
 
@@ -121,7 +121,7 @@
 
 - #### SMS, 이메일 또는 고객 포털을 통해 인보이스를 보내세요.
 
-- #### [인보이스 발송 및 생성 방법](how-to-create-invoices-in-highlevel.md)
+- #### [인보이스 발송 및 생성 방법](../../08-결제/인보이스-견적/how-to-create-invoices-in-highlevel.md)
 
 - #### **3.2 다양한 결제 옵션 활성화**
 
@@ -129,7 +129,7 @@
 
 - #### 즉시 결제 수금을 위해 인보이스에 "지금 결제" 링크를 활성화하세요.
 
-- #### [결제 수신 설정 방법](trigger-payment-received.md)
+- #### [결제 수신 설정 방법](../../07-워크플로우/기타/trigger-payment-received.md)
 
 - #### **3.3 결제 알림 자동화**
 
@@ -137,7 +137,7 @@
 
 - #### 유연한 결제 계획을 제공하여 연체 결제를 줄이세요.
 
-- #### [정기 결제 자동화 방법](auto-payments-in-recurring-templates.md)
+- #### [정기 결제 자동화 방법](../../08-결제/기타/auto-payments-in-recurring-templates.md)
 
 ## 4단계: 현장 팀 및 워크플로우 관리
 
@@ -151,7 +151,7 @@
 
 - #### 기사들이 모바일 앱을 통해 작업 상태를 업데이트할 수 있게 하세요.
 
-- #### [기회 생성 설정 방법](workflow-trigger-opportunity-created.md)
+- #### [기회 생성 설정 방법](../../07-워크플로우/Opportunity-Workflow-Triggers/workflow-trigger-opportunity-created.md)
 
 - #### **4.2 작업 체크리스트 및 문서화 활성화**
 
@@ -165,7 +165,7 @@
 
 - #### 장기 수익을 보장하기 위해 구독 기반 유지보수 플랜을 설정하세요.
 
-- #### [정기 예약 모니터링 방법](configure-recurring-calendar-appointments.md)
+- #### [정기 예약 모니터링 방법](../../04-캘린더-예약/캘린더-설정/configure-recurring-calendar-appointments.md)
 
 ## 5단계: 보고서 및 분석 최적화
 
@@ -179,7 +179,7 @@
 
 - #### 리드에서 유료 고객으로의 전환율을 계산하세요.
 
-- #### [리드 추적 및 관리 방법](step-by-step-guide-creating-pipelines.md)
+- #### [리드 추적 및 관리 방법](../../05-기회-파이프라인/step-by-step-guide-creating-pipelines.md)
 
 - #### **5.2 수익 및 작업 수익성 분석**
 

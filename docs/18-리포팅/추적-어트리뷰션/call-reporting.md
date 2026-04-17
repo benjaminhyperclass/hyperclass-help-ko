@@ -8,9 +8,9 @@
 
 ---
 
-통화 보고서 기능은 [Agency Pro 플랜](how-to-upgrade-to-highlevel-s-agency-pro-plan-497-saas-plan-.md)에서 이용할 수 있습니다.
+통화 보고서 기능은 [Agency Pro 플랜](../../11-설정/how-to-upgrade-to-highlevel-s-agency-pro-plan-497-saas-plan-.md)에서 이용할 수 있습니다.
 
-대부분의 맞춤형 보고서는 커스텀 대시보드를 참조해 주세요. 커스텀 대시보드에서는 Hyperclass의 핵심 영역에서 지표를 표시하는 커스텀 위젯을 추가하고 수정할 수 있습니다. 이 기능에 대한 자세한 정보는 [커스텀 위젯 도움말 문서](feature-document-custom-widgets.md)에서 확인할 수 있습니다.
+대부분의 맞춤형 보고서는 커스텀 대시보드를 참조해 주세요. 커스텀 대시보드에서는 Hyperclass의 핵심 영역에서 지표를 표시하는 커스텀 위젯을 추가하고 수정할 수 있습니다. 이 기능에 대한 자세한 정보는 [커스텀 위젯 도움말 문서](../../12-대시보드/기타/feature-document-custom-widgets.md)에서 확인할 수 있습니다.
 
 이 보고서는 왼쪽 메뉴에서 "Reporting(리포팅)" > "Call Reporting(통화 보고서)" (상단 메뉴)를 통해 접근할 수 있습니다.
 

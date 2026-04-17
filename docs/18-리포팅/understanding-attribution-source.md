@@ -96,7 +96,7 @@ UTM 파라미터가 일치해야 합니다 (대소문자 구분):
 | 광고 그룹 ID | ad_group_id | {adgroupid} | - | - |
 | 광고 ID | ad_id | {creative} | - | - |
 
-자세한 정보는 [구글 광고 보고서 설정 방법]([how-to-set-up-google-ad-reporting](how-to-set-up-google-ad-reporting.md))을 참조하세요.
+자세한 정보는 [구글 광고 보고서 설정 방법](how-to-set-up-google-ad-reporting.md)을 참조하세요.
 
 ## 유료 소셜
 
@@ -116,7 +116,7 @@ UTM 파라미터가 일치해야 합니다 (대소문자 구분):
 | UTM 콘텐츠 | utm_content | {{ad.name}} | - | - |
 | 캠페인 ID | campaign_id | {{campaign.id}} | 페이스북 광고가 설정, 고정 | 123456789 |
 
-자세한 정보는 [페이스북 광고 보고서 설정 방법]([how-to-set-up-facebook-ad-reporting](how-to-set-up-facebook-ad-reporting.md))을 참조하세요.
+자세한 정보는 [페이스북 광고 보고서 설정 방법](추적-어트리뷰션/how-to-set-up-facebook-ad-reporting.md)을 참조하세요.
 
 ## 직접 트래픽
 
@@ -197,29 +197,29 @@ Zap과 같은 써드파티 도구로 리드가 생성된 경우 소스가 이것
 
 ## 페이스북 및 인스타그램 광고 보고서 설정
 
-페이스북 및 인스타그램 광고 어트리뷰션을 설정하려면 [페이스북 광고 보고서 설정]([how-to-set-up-facebook-ad-reporting](how-to-set-up-facebook-ad-reporting.md))을 참조하세요.
+페이스북 및 인스타그램 광고 어트리뷰션을 설정하려면 [페이스북 광고 보고서 설정](추적-어트리뷰션/how-to-set-up-facebook-ad-reporting.md)을 참조하세요.
 
 **추가 페이스북 광고 리소스**
 
-[페이스북 전환 API용 퍼널 이벤트 픽셀 설정 방법]([how-to-set-up-a-funnel-event-pixel-for-facebook-conversion-api-](how-to-set-up-a-funnel-event-pixel-for-facebook-conversion-api-.md))
+[페이스북 전환 API용 퍼널 이벤트 픽셀 설정 방법](../42-통합/Facebook-Integration/how-to-set-up-a-funnel-event-pixel-for-facebook-conversion-api-.md)
 
 [메타 픽셀 설정 및 설치 방법](https://www.facebook.com/business/help/952192354843755?id=1205376682832142)
 
-[페이스북 전환 리드 안내]([facebook-conversion-leads-walkthrough](facebook-conversion-leads-walkthrough.md))
+[페이스북 전환 리드 안내](../42-통합/Facebook-Integration/facebook-conversion-leads-walkthrough.md)
 
-[워크플로우의 페이스북 전환 API 트리거]([facebook-conversions-api-trigger-in-workflows](facebook-conversions-api-trigger-in-workflows.md))
+[워크플로우의 페이스북 전환 API 트리거](../42-통합/Facebook-Integration/facebook-conversions-api-trigger-in-workflows.md)
 
 ## 구글 광고 보고서 설정
 
-구글 광고 어트리뷰션을 설정하려면 [구글 광고 보고서 설정]([how-to-set-up-google-ad-reporting](how-to-set-up-google-ad-reporting.md))을 참조하세요.
+구글 광고 어트리뷰션을 설정하려면 [구글 광고 보고서 설정](how-to-set-up-google-ad-reporting.md)을 참조하세요.
 
 **추가 구글 광고 리소스**
 
-[구글 애널리틱스 4 추적]([google-analytics-4-tracking](google-analytics-4-tracking.md))
+[구글 애널리틱스 4 추적](추적-어트리뷰션/google-analytics-4-tracking.md)
 
-[구글 광고 보고서 용어 이해]([understanding-google-ad-reporting-terminology](understanding-google-ad-reporting-terminology.md))
+[구글 광고 보고서 용어 이해](understanding-google-ad-reporting-terminology.md)
 
-[구글 광고 보고서 문제 해결 가이드]([troubleshoot-guide-for-google-ad-reporting](troubleshoot-guide-for-google-ad-reporting.md))
+[구글 광고 보고서 문제 해결 가이드](troubleshoot-guide-for-google-ad-reporting.md)
 
 추가 지원이 필요하시면 24시간 연중무휴로 문의하실 수 있습니다. 또한 보다 고급 보고서 및 어트리뷰션 설정과 외부 보고서 및 어트리뷰션 추적을 위해서는 광고 전문가와 상담이 필요할 수 있습니다.
 
@@ -227,7 +227,7 @@ Zap과 같은 써드파티 도구로 리드가 생성된 경우 소스가 이것
 
 # **광고 보고서 문제 해결**
 
-[페이스북 또는 인스타그램 광고 보고서]([how-to-set-up-facebook-ad-reporting](how-to-set-up-facebook-ad-reporting.md))나 [구글 광고 보고서]([how-to-set-up-google-ad-reporting](how-to-set-up-google-ad-reporting.md))를 설정한 후 Hyperclass에서 어트리뷰션 데이터가 기록되지 않는다면, 다음 문제 해결 단계를 시도해볼 수 있습니다...
+[페이스북 또는 인스타그램 광고 보고서](추적-어트리뷰션/how-to-set-up-facebook-ad-reporting.md)나 [구글 광고 보고서](how-to-set-up-google-ad-reporting.md)를 설정한 후 Hyperclass에서 어트리뷰션 데이터가 기록되지 않는다면, 다음 문제 해결 단계를 시도해볼 수 있습니다...
 
 - **최종 URL의 공백이나 오타 확인**
 UTM 파라미터를 생성할 때 오타, 복사 시 추가 공백, 대소문자 구분을 확인하세요. 제공된 예시를 사용하고, 복사해서 붙여넣기를 권장합니다. 올바르게 작성되었는지 잠시 시간을 내어 확인해보세요. 또한 예시는 대소문자를 구분하므로, 있어야 할 곳에 대문자나 소문자가 없으면 어트리뷰션 오류가 발생합니다.

@@ -35,7 +35,7 @@
 
 ## 전달 주소
 
-리드가 이메일에 답장하면 그 답장은 항상 Conversations(대화) 탭에 표시되지만, 리드의 이메일 답장 사본을 누군가의 이메일로도 받고 싶다면 여기에 해당 이메일 주소를 입력하면 됩니다. [모든 수신 및 발신 이메일(받는 사람, 참조, 숨은 참조)에 대해 요금이 부과됩니다.](what-is-lc-email-i-want-to-know-more.md)
+리드가 이메일에 답장하면 그 답장은 항상 Conversations(대화) 탭에 표시되지만, 리드의 이메일 답장 사본을 누군가의 이메일로도 받고 싶다면 여기에 해당 이메일 주소를 입력하면 됩니다. [모든 수신 및 발신 이메일(받는 사람, 참조, 숨은 참조)에 대해 요금이 부과됩니다.](기타/what-is-lc-email-i-want-to-know-more.md)
 
 쉼표로 구분해서 여러 전달 이메일 주소를 입력할 수 있습니다. 예: email1@test.com, email2@test.com, email3@test.com
 
@@ -107,7 +107,7 @@ Mailgun(로케이션 소유): 하위 계정만
 
 ## 답장 추적 활성화 - 다른 SMTP 제공업체
 
-Mailgun의 경우 Mailgun에 설정된 수신 경로와 직접 통합되어 있어서 답장 추적을 활성화하는 별도 옵션이 없습니다. [MailGun에서 답장을 설정하는 방법에 대해 자세히 알아보세요.](how-to-setup-replies-in-mailgun.md)
+Mailgun의 경우 Mailgun에 설정된 수신 경로와 직접 통합되어 있어서 답장 추적을 활성화하는 별도 옵션이 없습니다. [MailGun에서 답장을 설정하는 방법에 대해 자세히 알아보세요.](메일건/how-to-setup-replies-in-mailgun.md)
 
 발신자 이메일을 testing@gmail.com과 같이 마스킹하면, 답장 주소가 **testing@replies.subdomain.com**으로 표시됩니다. 이는 **Agency Settings(에이전시 설정) → Mailgun**에서 로케이션에 대해 설정한 Mailgun 서브도메인입니다.
 

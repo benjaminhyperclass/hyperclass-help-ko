@@ -97,7 +97,7 @@
 ✅ **80%는 교육적, 매력적, 또는 재미있는 콘텐츠**
 ✅ **20%는 프로모션 콘텐츠**
 
-[기존 템플릿을 사용한 광고 캠페인 만드는 방법]([ad-manager-create-ad-campaigns-using-templates](ad-manager-create-ad-campaigns-using-templates.md))
+[기존 템플릿을 사용한 광고 캠페인 만드는 방법](../../10-마케팅/Ad-Campaign-Creation-and-Management/ad-manager-create-ad-campaigns-using-templates.md)
 
 ### 2.1 관심을 끌고 고객을 만드는 콘텐츠 아이디어
 
@@ -143,7 +143,7 @@
 | 소규모 팀 (2-5명) | 하루 $25 (~월 $750) 멀티플랫폼 전략용 |
 | 대규모 사업 | 하루 $50 (~월 $1500) 브랜드 인지도 + 리드 생성용 |
 
-[광고 예산 관리 방법]([ad-manager-campaign-budget-definition](ad-manager-campaign-budget-definition.md))
+[광고 예산 관리 방법](../../10-마케팅/Ad-Campaign-Creation-and-Management/ad-manager-campaign-budget-definition.md)
 
 ---
 

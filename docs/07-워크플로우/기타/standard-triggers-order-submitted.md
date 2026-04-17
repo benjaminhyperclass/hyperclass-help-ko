@@ -38,7 +38,7 @@
 
 참고: 
 
-이는 **버전 2** 퍼널에서만 작동합니다. (V2 퍼널에 대한 자세한 내용은 [이 글](how-to-upgrade-a-version-1-funnel-to-version-2-.md)을 참조하세요) 버전 1 퍼널을 사용 중이라면, 아래 버튼을 사용해 버전 2로 업그레이드하세요:
+이는 **버전 2** 퍼널에서만 작동합니다. (V2 퍼널에 대한 자세한 내용은 [이 글](../../06-사이트/기타/how-to-upgrade-a-version-1-funnel-to-version-2-.md)을 참조하세요) 버전 1 퍼널을 사용 중이라면, 아래 버튼을 사용해 버전 2로 업그레이드하세요:
 
 ![업그레이드 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48271898507/original/Jt_bZs48_YpDTe855zfIKEv09u7ptooXnA.png?1672223754)
 

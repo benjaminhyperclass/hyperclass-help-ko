@@ -120,7 +120,7 @@ GHL을 사용하여 서비스 설명에 직접 퍼널이나 캘린더 링크를 
 - GHL의 통합 인박스를 사용하여 실시간으로 응답
 - "안녕하세요 [클리닉명]입니다! 곧 답변드리겠습니다. 또는 여기서 바로 예약하세요: [링크]"와 같은 자동 답장 설정
 
-[**GMB 프로필을 GHL CRM과 연동하는 방법 알아보기**](how-to-integrate-your-google-business-profile-formerly-gmb-into-the-crm.md)
+[**GMB 프로필을 GHL CRM과 연동하는 방법 알아보기**](../../11-설정/기타/how-to-integrate-your-google-business-profile-formerly-gmb-into-the-crm.md)
 
 ### **8단계: GHL로 리뷰 자동 수집하기**
 

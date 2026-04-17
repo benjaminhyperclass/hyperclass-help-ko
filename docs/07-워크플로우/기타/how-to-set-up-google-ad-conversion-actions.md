@@ -45,9 +45,9 @@
 
 다음 단계를 **구글 광고**에서 따라하여 나중에 Hyperclass에서 데이터를 전송할 컨버전 액션을 생성하세요. 적절한 설정은 깨끗한 어트리뷰션과 신뢰할 수 있는 입찰 신호를 보장합니다.
 
-참고: 이는 구글 플랫폼 측 가이드입니다. Hyperclass 광고 관리자에서 오프라인 컨버전을 설정하려면 [Hyperclass 광고 관리자 - 구글 광고 오프라인 컨버전 생성 및 관리](ad-manager-create-manage-google-ads-offline-conversions.md) 아티클을 확인하세요.
+참고: 이는 구글 플랫폼 측 가이드입니다. Hyperclass 광고 관리자에서 오프라인 컨버전을 설정하려면 [Hyperclass 광고 관리자 - 구글 광고 오프라인 컨버전 생성 및 관리](../../10-마케팅/Google-Ads/ad-manager-create-manage-google-ads-offline-conversions.md) 아티클을 확인하세요.
 
-폼 제출, 번호 풀 통화, 채팅 위젯 응답 등과 같은 구글 광고 컨버전 액션을 Hyperclass 워크플로우 내에서 직접 설정하고 추적하려면 [워크플로우 액션 - 구글 광고에 추가](workflow-action-add-to-google-ads.md) 아티클을 확인하세요.
+폼 제출, 번호 풀 통화, 채팅 위젯 응답 등과 같은 구글 광고 컨버전 액션을 Hyperclass 워크플로우 내에서 직접 설정하고 추적하려면 [워크플로우 액션 - 구글 광고에 추가](../Integrations-Workflow-Actions/workflow-action-add-to-google-ads.md) 아티클을 확인하세요.
 
 - 구글 애드워즈 계정으로 이동하거나 [ads.google.com](https://ads.google.com/intl/en_in/start/lc/?subid=in-en-ha-awa-bk-c-c00!o3~CjwKCAjwyYPOBhBxEiwAgpT8PxzugBXx8nv7PGe8R-bVM6pT1TSQUkUBsSH7fq-9uWlPPKDs9bWKqxoCiVUQAvD_BwE~140706620052~kwd-94527731~16862088904~592470418766&gclsrc=aw.ds&gad_source=1&gad_campaignid=16862088904&gclid=CjwKCAjwyYPOBhBxEiwAgpT8PxzugBXx8nv7PGe8R-bVM6pT1TSQUkUBsSH7fq-9uWlPPKDs9bWKqxoCiVUQAvD_BwE)을 열어주세요.
 
@@ -151,12 +151,12 @@
 
 ## 관련 아티클
 
-- [광고 관리자 - 구글 광고 오프라인 컨버전 생성 및 관리](ad-manager-create-manage-google-ads-offline-conversions.md)
-- [워크플로우 액션 – 구글 애드워즈에 추가](workflow-action-add-to-google-ads.md)
+- [광고 관리자 - 구글 광고 오프라인 컨버전 생성 및 관리](../../10-마케팅/Google-Ads/ad-manager-create-manage-google-ads-offline-conversions.md)
+- [워크플로우 액션 – 구글 애드워즈에 추가](../Integrations-Workflow-Actions/workflow-action-add-to-google-ads.md)
 - 광고 관리자 설정 개요
-- [광고 관리자 개요](overview-of-ad-manager.md)
-- [구글 광고 리포팅 설정 방법](how-to-set-up-google-ad-reporting.md)
-- [어트리뷰션 소스 이해하기](understanding-attribution-source.md)
+- [광고 관리자 개요](../../10-마케팅/Getting-Started-w/-Ad-Manager/overview-of-ad-manager.md)
+- [구글 광고 리포팅 설정 방법](../../18-리포팅/how-to-set-up-google-ad-reporting.md)
+- [어트리뷰션 소스 이해하기](../../18-리포팅/understanding-attribution-source.md)
 
 ---
 *원문 최종 수정: Tue, 24 Mar, 2026 at 5:12 AM*

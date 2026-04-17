@@ -76,7 +76,7 @@
 
 #### [예약 링크 설정 방법](http://how%20to%20set%20up%20booking%20link/)
 
-[약속 알림 자동화 방법](how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
+[약속 알림 자동화 방법](../../24-대학/HighLevel-How-To&#39;s/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
 
 #### **약속 알림 자동화**
 
@@ -103,11 +103,11 @@
 #### **메시지 예시:**
 *"안녕하세요 [고객명]님, [회사명]에 예약해주셔서 감사합니다! [날짜 및 시간]에 청소 약속이 확정되었습니다. 일정 변경이 필요하시면 여기를 클릭하세요: [예약 링크]"*
 
-#### [청소 견적 후속 조치 자동화 방법](how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
+#### [청소 견적 후속 조치 자동화 방법](../../24-대학/HighLevel-How-To&#39;s/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
 
-#### [AI 기반 청소 및 유지보수 고객 지원 설정 방법](conversation-ai-bot-explained.md)
+#### [AI 기반 청소 및 유지보수 고객 지원 설정 방법](../../13-AI-Employee/Getting-Started-w/-Conversation-AI/conversation-ai-bot-explained.md)
 
-[세분화된 스마트 리스트 설정 방법](getting-started-with-smart-lists.md)
+[세분화된 스마트 리스트 설정 방법](../../02-연락처/기타/getting-started-with-smart-lists.md)
 
 ### **3단계: 인보이스 발행 및 결제 수집 간소화**
 
@@ -125,11 +125,11 @@
 #### **메시지 예시:**
 *"안녕하세요 [고객명]님, 청소 서비스 인보이스가 준비되었습니다. 온라인 결제는 여기를 클릭하세요: [인보이스 링크]. 유연한 결제 계획이 필요하시면 알려주세요!"*
 
-#### [인보이스 발송 및 생성 방법](how-to-create-invoices-in-highlevel.md)
+#### [인보이스 발송 및 생성 방법](../../08-결제/인보이스-견적/how-to-create-invoices-in-highlevel.md)
 
-#### [결제 수신 설정 방법](trigger-payment-received.md)
+#### [결제 수신 설정 방법](../../07-워크플로우/기타/trigger-payment-received.md)
 
-#### [반복 결제 자동화 방법](auto-payments-in-recurring-templates.md)
+#### [반복 결제 자동화 방법](../../08-결제/기타/auto-payments-in-recurring-templates.md)
 
 ### **4단계: 청소팀 관리 및 업무 워크플로우 관리**
 
@@ -147,9 +147,9 @@
 #### **팀에게 보내는 메시지 예시:**
 *"다음 작업: [고객명] | [주소] | [작업 유형] | 일정: [시간] | 참고사항: [특별 지시사항]"*
 
-#### [기회 생성 설정 방법](workflow-trigger-opportunity-created.md)
+#### [기회 생성 설정 방법](../../07-워크플로우/Opportunity-Workflow-Triggers/workflow-trigger-opportunity-created.md)
 
-#### [반복 약속 모니터링 방법](configure-recurring-calendar-appointments.md)
+#### [반복 약속 모니터링 방법](../../04-캘린더-예약/캘린더-설정/configure-recurring-calendar-appointments.md)
 
 ### **5단계: 성장을 위한 보고서 및 분석 최적화**
 
@@ -164,9 +164,9 @@
 ✅ 서비스 유형별로 **수익과 수익성을 분석**하세요.
 ✅ 광고 성과에 따라 **마케팅 지출을 최적화**하세요.
 
-#### [리드 추적 및 관리 방법](step-by-step-guide-creating-pipelines.md)
+#### [리드 추적 및 관리 방법](../../05-기회-파이프라인/step-by-step-guide-creating-pipelines.md)
 
-#### [대시보드 생성 및 모니터링 방법](how-to-create-add-dashboard-widgets.md)
+#### [대시보드 생성 및 모니터링 방법](../../12-대시보드/how-to-create-add-dashboard-widgets.md)
 
 ### **마무리: 청소 사업을 쉽게 통제하고 확장하세요**
 

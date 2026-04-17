@@ -65,7 +65,7 @@
 
 **사용 사례**: 텍사스의 한 배관업체가 Instagram에 "10분 만에 배수구 뚫는 법"이라는 짧은 영상을 올렸더니 2주 만에 21건의 새 작업을 받았습니다.
 
-#### [청소업체를 위한 구글 비즈니스 프로필 설정 방법]([how-to-connect-to-your-google-my-business-location-s-](how-to-connect-to-your-google-my-business-location-s-.md))
+#### [청소업체를 위한 구글 비즈니스 프로필 설정 방법](../../10-마케팅/소셜-플래너/how-to-connect-to-your-google-my-business-location-s-.md)
 
 ### 2단계: 매력적인 배관업 콘텐츠 제작
 
@@ -86,7 +86,7 @@
 
 **콘텐츠 규칙**: 80% 도움이 되는/매력적인 콘텐츠 + 20% 직접적인 홍보
 
-#### [기존 템플릿을 사용한 광고 캠페인 생성 방법]([ad-manager-create-ad-campaigns-using-templates](ad-manager-create-ad-campaigns-using-templates.md))
+#### [기존 템플릿을 사용한 광고 캠페인 생성 방법](../../10-마케팅/Ad-Campaign-Creation-and-Management/ad-manager-create-ad-campaigns-using-templates.md)
 
 #### 2.2 적절한 해시태그와 태그 사용
 
@@ -125,7 +125,7 @@
 | 소규모 팀 | 하루 25달러 (월 750달러) 다중 플랫폼 전략 |
 | 프랜차이즈 | 하루 50달러+ (월 1,500달러+) 브랜드 인지도 + 리드 생성 |
 
-[청소업체를 위한 효과적인 광고 예산 관리법]([ad-manager-campaign-budget-definition](ad-manager-campaign-budget-definition.md))
+[청소업체를 위한 효과적인 광고 예산 관리법](../../10-마케팅/Ad-Campaign-Creation-and-Management/ad-manager-campaign-budget-definition.md)
 
 ### 4단계: Hyperclass로 자동화하고 확장하기
 

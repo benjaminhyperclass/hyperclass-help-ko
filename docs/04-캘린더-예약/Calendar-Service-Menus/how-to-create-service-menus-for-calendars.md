@@ -45,11 +45,11 @@
 
 **서비스 캘린더 생성**: 제공하는 각 서비스에 대한 전용 캘린더를 설계하고 캘린더를 해당 그룹에 할당하세요.
 
-[서비스 캘린더 생성에 대한 자세한 내용은 여기를 클릭하세요](how-to-create-service-calendars.md)
+[서비스 캘린더 생성에 대한 자세한 내용은 여기를 클릭하세요](../Service-Calendars/how-to-create-service-calendars.md)
 
 **캘린더 그룹 생성**: 관련 서비스 캘린더를 공유 카테고리 하에 구성하려면 캘린더 그룹이 필요합니다. 그룹에 할당된 캘린더만 서비스 메뉴에 포함될 수 있습니다.
 
-[캘린더 그룹 생성에 대한 자세한 내용은 여기를 클릭하세요](highlevel-group-calendar-overview-and-setup-guide.md)
+[캘린더 그룹 생성에 대한 자세한 내용은 여기를 클릭하세요](../highlevel-group-calendar-overview-and-setup-guide.md)
 
 ## 서비스 메뉴 설정 방법
 

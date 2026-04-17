@@ -106,7 +106,7 @@
 
 - 모든 등록 정보에서 이름, 주소, 전화번호를 일관되게 유지하세요
 
-[등록 관리 연동 가이드]([online-listing-overview-setup-doc](online-listing-overview-setup-doc.md))
+[등록 관리 연동 가이드](../../31-리셀링/Online-Listings/online-listing-overview-setup-doc.md)
 
 ---
 **이 모든 것을 완벽하게 설정하는 데 도움이 필요하신가요? [무료 체험을 시작하세요](https://www.gohighlevel.com/?utm_source=seo&utm_medium=organic&utm_campaign=medspa&utm_term=medspa&utm_content=playbook). 메디컬 스파를 도시 최고 평점의 브랜드로 만들어 드리겠습니다.**

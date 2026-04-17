@@ -65,9 +65,9 @@
 - 구글 전화번호를 **Hyperclass 추적 번호**로 교체하여 **모든 리드를 추적**할 수 있게 하세요.
 - **AI 챗봇**을 사용하여 문의에 **즉시 자동 응답**하세요.
 
-[전화번호 구매 방법](how-to-purchase-a-phone-number.md)
+[전화번호 구매 방법](../../15-전화-시스템/전화번호/how-to-purchase-a-phone-number.md)
 
-[구글 비즈니스 프로필을 Hyperclass에 연결하기](how-to-integrate-google-business-profile-gbp-with-highlevel.md)
+[구글 비즈니스 프로필을 Hyperclass에 연결하기](../../42-통합/Google-Integrations/how-to-integrate-google-business-profile-gbp-with-highlevel.md)
 
 [비즈니스 프로필에서 고객과 채팅하는 방법](https://support.google.com/business/answer/15013580?utm_source=HighLevel+HelpDesk&utm_medium=organic)
 
@@ -77,13 +77,13 @@
 - **50개 이상의 구글 리뷰**를 가진 업체는 적은 리뷰를 가진 업체보다 **270% 더 많은 전화**를 받습니다.
 - **Hyperclass의 리뷰 자동화**를 사용하여 모든 작업 후 **SMS와 이메일 리뷰 요청**을 보내세요.
 
-[리뷰 요청 보내는 방법](how-to-send-review-requests.md)
+[리뷰 요청 보내는 방법](../../41-평판-리뷰/Review-Requests/how-to-send-review-requests.md)
 
-[평판 관리 - 리뷰 요청 메시지 커스터마이징 방법 (SMS/이메일)](how-to-customize-the-review-request-messages-sms-email-.md)
+[평판 관리 - 리뷰 요청 메시지 커스터마이징 방법 (SMS/이메일)](../../41-평판-리뷰/Review-Requests/how-to-customize-the-review-request-messages-sms-email-.md)
 
-[구글 리뷰 이의제기 및 이의제기 상태 확인하는 방법](how-to-dispute-a-google-review-and-check-on-the-dispute-status.md)
+[구글 리뷰 이의제기 및 이의제기 상태 확인하는 방법](../../41-평판-리뷰/Review-Requests/how-to-dispute-a-google-review-and-check-on-the-dispute-status.md)
 
-[구글 비즈니스 페이지와 소셜 포스팅 사용 방법](how-to-connect-to-your-google-my-business-location-s-.md)
+[구글 비즈니스 페이지와 소셜 포스팅 사용 방법](../../10-마케팅/소셜-플래너/how-to-connect-to-your-google-my-business-location-s-.md)
 
 #### **1.4 구글 비즈니스 프로필에 정기적으로 게시**
 
@@ -106,7 +106,7 @@
 - **빠른 로딩 속도** 확보 (구글은 느린 웹사이트 순위를 낮게 매깁니다).
 - **명확한 연락처 폼**과 "**지금 예약**" 버튼을 추가하세요.
 
-[SEO 메타 데이터 최적화 방법](seo-meta-data.md)
+[SEO 메타 데이터 최적화 방법](../../06-사이트/퍼널-웹사이트/seo-meta-data.md)
 
 #### **2.2 "내 근처 청소 서비스" 검색 최적화**
 
@@ -116,9 +116,9 @@
 - 푸터: **서비스 제공 지역을 모두 나열**
 - 구글의 **"사용자가 묻는 질문"**을 활용하여 **실제 고객 질문**을 찾고 블로그에서 답하세요.
 
-[채팅 위젯 시작하기](getting-started-with-chat-widget.md)
+[채팅 위젯 시작하기](../../06-사이트/getting-started-with-chat-widget.md)
 
-[Hyperclass 채팅 위젯 설치하는 방법](how-to-install-highlevel-s-chat-widget.md)
+[Hyperclass 채팅 위젯 설치하는 방법](../../06-사이트/how-to-install-highlevel-s-chat-widget.md)
 
 #### **2.3 고전환 CTA로 더 많은 리드 확보**
 
@@ -126,7 +126,7 @@
 - 모바일 방문자를 위한 **고정 예약 폼** 사용하세요.
 - 폼 제출을 늘리기 위해 **첫 방문 할인**을 제공하세요.
 
-[Hyperclass에서 연락처 폼 만드는 방법](how-to-create-a-contact-form-in-highlevel-.md)
+[Hyperclass에서 연락처 폼 만드는 방법](../../02-연락처/기타/how-to-create-a-contact-form-in-highlevel-.md)
 
 퍼널/웹사이트 진입 시 팝업 표시하기
 
@@ -148,9 +148,9 @@ Hyperclass에서 종료 의도 팝업 만드는 방법
 - 홈 인테리어 블로그에 **"청소 꿀팁 5가지"** 글을 쓰세요.
 - **SEO와 구글 순위 상승**을 위한 백링크를 확보하세요.
 
-[로컬 SEO를 위한 고성과 키워드 찾는 방법]([how-to-add-seo-descriptions-and-keywords-to-boost-your-ecommerce-ranking](how-to-add-seo-descriptions-and-keywords-to-boost-your-ecommerce-ranking.md))
+[로컬 SEO를 위한 고성과 키워드 찾는 방법](../../37-이커머스-스토어/E-Commerce-Store/how-to-add-seo-descriptions-and-keywords-to-boost-your-ecommerce-ranking.md)
 
-[전환되는 리드 캡처 폼 설정하는 방법](how-to-create-a-contact-form-in-highlevel-.md)
+[전환되는 리드 캡처 폼 설정하는 방법](../../02-연락처/기타/how-to-create-a-contact-form-in-highlevel-.md)
 
 ### **4단계: 진행 상황 추적 및 개선**
 
@@ -166,7 +166,7 @@ Hyperclass에서 종료 의도 팝업 만드는 방법
 - 구글 비즈니스 프로필의 **리뷰 증가와 참여도** 추적하세요.
 - **가장 많은 트래픽과 예약**을 가져오는 페이지와 키워드를 확인하세요.
 
-[SEO 메타 데이터 추적 및 개선 방법]([seo-meta-data](seo-meta-data.md))
+[SEO 메타 데이터 추적 및 개선 방법](../../06-사이트/퍼널-웹사이트/seo-meta-data.md)
 
 ### **결론: 구글 상위 노출로 더 많은 일거리 얻기**
 

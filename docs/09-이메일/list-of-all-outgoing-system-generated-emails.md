@@ -192,9 +192,9 @@ A2P 및 무료전화 등록 상태 업데이트를 "noreply@donotreply.leadconne
 
 ## **추가 자료:**
 
-- [신규 하위 계정 사용자에게 발송되는 온보딩 이메일 커스터마이징 방법](how-to-customize-the-onboarding-email-that-is-sent-to-new-sub-account-users-.md)
-- [새 멤버십 사용자에게 로그인 정보가 포함된 커스텀 이메일 발송 방법]([how-to-send-new-membership-users-custom-emails-with-their-login-information](how-to-send-new-membership-users-custom-emails-with-their-login-information.md))
-- [이메일 빌더 및 인라인 에디터 사용 방법]([how-to-use-the-email-builder-and-its-in-line-editor](how-to-use-the-email-builder-and-its-in-line-editor.md))
+- [신규 하위 계정 사용자에게 발송되는 온보딩 이메일 커스터마이징 방법](기타/how-to-customize-the-onboarding-email-that-is-sent-to-new-sub-account-users-.md)
+- [새 멤버십 사용자에게 로그인 정보가 포함된 커스텀 이메일 발송 방법](../07-워크플로우/트리거/how-to-send-new-membership-users-custom-emails-with-their-login-information.md)
+- [이메일 빌더 및 인라인 에디터 사용 방법](../10-마케팅/Email-Builder-Capabilities/how-to-use-the-email-builder-and-its-in-line-editor.md)
 
 ---
 *원문 최종 수정: Tue, 6 Aug, 2024 at 12:10 PM*

@@ -32,7 +32,7 @@
 
 이 과정을 시작하기 전에 알아두어야 할 사항들입니다.
 
-- 이메일을 발송하려면 [캠페인 발송용 이메일 템플릿을 생성](getting-started-launch-an-email-campaign.md)했는지 확인하세요
+- 이메일을 발송하려면 [캠페인 발송용 이메일 템플릿을 생성](../../../01-시작하기/기본-설정/getting-started-launch-an-email-campaign.md)했는지 확인하세요
 
 - 이메일을 발송하려면 이메일 발송용 도메인이 인증되었는지 확인하세요.
 
@@ -51,7 +51,7 @@ Email Builder에서 다음 단계를 따라 캠페인을 생성하고 배치 전
 
 ### 2단계: 이메일 디자인
 
-참고: Email Builder와 인라인 에디터 사용 방법에 대한 자세한 내용은 이 [가이드](how-to-use-the-email-builder-and-its-in-line-editor.md)를 참고하세요.
+참고: Email Builder와 인라인 에디터 사용 방법에 대한 자세한 내용은 이 [가이드](../../Email-Builder-Capabilities/how-to-use-the-email-builder-and-its-in-line-editor.md)를 참고하세요.
 
 - 템플릿을 구축하거나 선택하세요.
 

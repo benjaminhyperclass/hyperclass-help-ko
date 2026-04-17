@@ -12,7 +12,7 @@
 <a href="sms:2155555555&body=Yes, I want Promo Alpha (Claim Code 55)">Link</a>
 ```
 
-특정 메시지 내용을 감지하는 트리거를 만드는 방법을 알아보려면 [정확히 일치 & 문구 포함 트리거](exact-match-contains-phrase-triggers.md)를 참조하세요.
+특정 메시지 내용을 감지하는 트리거를 만드는 방법을 알아보려면 [정확히 일치 & 문구 포함 트리거](../../07-워크플로우/기타/exact-match-contains-phrase-triggers.md)를 참조하세요.
 
 ---
 *원문 최종 수정: 2021년 1월 26일*

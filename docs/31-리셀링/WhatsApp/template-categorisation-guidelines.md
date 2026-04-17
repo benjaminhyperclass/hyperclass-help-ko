@@ -10,7 +10,7 @@
 
 각 카테고리별로 메시지 목적, 비즈니스 목표, 템플릿 예시를 제공합니다.
 
-[WhatsApp 템플릿을 만드는 방법은?]([how-to-create-a-whatsapp-template-](how-to-create-a-whatsapp-template-.md))
+[WhatsApp 템플릿을 만드는 방법은?](how-to-create-a-whatsapp-template-.md)
 
 ---
 **목차**
@@ -94,7 +94,7 @@
 
 템플릿 만들기에 대해서는 아래 문서를 참조하세요:
 
-[WhatsApp 템플릿을 만드는 방법은?]([how-to-create-a-whatsapp-template-](how-to-create-a-whatsapp-template-.md))
+[WhatsApp 템플릿을 만드는 방법은?](how-to-create-a-whatsapp-template-.md)
 
 ## WhatsApp 메시지 템플릿이 무엇인가요?
 

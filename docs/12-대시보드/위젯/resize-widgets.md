@@ -50,7 +50,7 @@ $497+ 플랜의 커스텀 대시보드는 **에이전시 관리자**와 **에이
 
 - [위젯 제거하기](removing-a-widget.md)
 - [위젯 재배치하기](rearrange-widgets.md)
-- [위젯 커스터마이징하기](customizing-dashboard-widgets.md)
+- [위젯 커스터마이징하기](../customizing-dashboard-widgets.md)
 
 ---
 *원문 최종 수정: Thu, 1 May, 2025 at 2:02 PM*

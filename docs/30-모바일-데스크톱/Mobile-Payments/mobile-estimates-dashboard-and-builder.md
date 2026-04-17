@@ -91,8 +91,8 @@
 ## 관련 문서
 
 - HighLevel에서 견적서 작성 및 발송하는 방법
-- [클라이언트 포털에서 견적서 보기 및 관리](view-and-manage-estimates-in-the-client-portal.md)
-- [워크플로우 액션 - 견적서 발송](workflow-action-send-estimate.md)
+- [클라이언트 포털에서 견적서 보기 및 관리](../../39-클라이언트-포털/Client-Portal/view-and-manage-estimates-in-the-client-portal.md)
+- [워크플로우 액션 - 견적서 발송](../../07-워크플로우/Payments-Workflow-Actions/workflow-action-send-estimate.md)
 
 ---
 *원문 최종 수정: Fri, 16 May, 2025 at 4:29 PM*

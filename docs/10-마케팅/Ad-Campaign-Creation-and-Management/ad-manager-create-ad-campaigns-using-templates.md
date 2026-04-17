@@ -85,7 +85,7 @@
 
 ![초안 템플릿 편집 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033404765/original/eqMR3T2bKpP8_bCEdaapLKQxJVWPDNnjng.png?1727122770)
 
-**참고**: 에이전시 관리자 화면에서 템플릿을 관리하고 생성하는 방법을 알아보려면 [관리자 화면에서 템플릿 관리 및 생성하기]([how-to-manage-and-create-templates-from-the-admin-screen](how-to-manage-and-create-templates-from-the-admin-screen.md)) 도움말 문서를 참조하세요.
+**참고**: 에이전시 관리자 화면에서 템플릿을 관리하고 생성하는 방법을 알아보려면 [관리자 화면에서 템플릿 관리 및 생성하기](../템플릿-라이브러리/how-to-manage-and-create-templates-from-the-admin-screen.md) 도움말 문서를 참조하세요.
 
 ---
 *원문 최종 수정: Tue, 26 Nov, 2024 at 4:31 PM*

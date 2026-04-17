@@ -55,7 +55,7 @@
 
 "안녕하세요 김민수님, [회사명]의 전기공사를 믿어주셔서 감사합니다! 모든 것이 잘 작동하고 있나요? 6개월 후 배전반 점검을 예약하시면 5만원 할인해드립니다!"
 
-[고객 후속 관리 자동화 방법 알아보기]([how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder](how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md))
+[고객 후속 관리 자동화 방법 알아보기](../../24-대학/HighLevel-How-To&#39;s/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
 
 ### 1.2 자동 체크인 알림
 
@@ -68,7 +68,7 @@
 
 "김민수님, 지난 배선 검사 후 6개월이 지났습니다. 저희가 방문해야 할까요? YES라고 답장 주시면 처리해드리겠습니다!"
 
-[유지보수 알림 설정 방법 알아보기]([how-to-send-users-appointment-reminders](how-to-send-users-appointment-reminders.md))
+[유지보수 알림 설정 방법 알아보기](../../23-레거시-자동화/Logic-&amp;-Fulfillment/how-to-send-users-appointment-reminders.md)
 
 ## 2단계: 5성급 리뷰 자동 획득
 
@@ -86,7 +86,7 @@
 
 "김민수님, 저희를 믿어주셔서 감사합니다! 저희가 좋은 작업을 했다면 간단한 리뷰를 남겨주시겠어요? 저희에게 큰 도움이 됩니다! 여기를 클릭하세요: [구글 리뷰 링크]"
 
-[자동 리뷰 요청 발송 방법 알아보기]([how-to-setup-workflow-triggers-for-google-and-facebook-reviews](how-to-setup-workflow-triggers-for-google-and-facebook-reviews.md))
+[자동 리뷰 요청 발송 방법 알아보기](../../41-평판-리뷰/Review-Requests/how-to-setup-workflow-triggers-for-google-and-facebook-reviews.md)
 
 ### 2.2 부정적 리뷰 사전 대응
 
@@ -113,7 +113,7 @@
 
 "저희와 함께 일하는 것이 좋으셨나요? 친구를 추천하시면 두 분 모두 다음 작업에서 5만원 할인받으세요! 이 링크를 보내주세요: [추천 링크]"
 
-[자동 추천 프로그램 설정 방법 알아보기](affiliate-refferal-page-leads-customers-cancelled-statuses.md)
+[자동 추천 프로그램 설정 방법 알아보기](../../21-어필리에이트/기타/affiliate-refferal-page-leads-customers-cancelled-statuses.md)
 
 ### 3.2 추천 후속 관리 자동화
 
@@ -140,7 +140,7 @@
 
 "VIP 유지보수 플랜에 가입하세요: 연간 점검 1회 + 우선 서비스 = 연간 15만원. 비용 절약하고 집을 안전하게 유지하세요!"
 
-[구독 기반 서비스 설정 방법 알아보기]([pause-and-resume-subscriptions](pause-and-resume-subscriptions.md))
+[구독 기반 서비스 설정 방법 알아보기](../../08-결제/pause-and-resume-subscriptions.md)
 
 ### 4.2 작업 중 예방 유지보수 업셀
 
@@ -153,7 +153,7 @@
 
 "김민수님, 배선 수리를 방금 완료했습니다. 연간 점검을 확정하시겠어요? 오늘 가입하시면 3만원 할인해드립니다!"
 
-[유지보수 플랜 판매 및 자동화 방법 알아보기](recurring-appointments.md)
+[유지보수 플랜 판매 및 자동화 방법 알아보기](../../04-캘린더-예약/기타/recurring-appointments.md)
 
 ---
 
@@ -168,7 +168,7 @@
 - 작업 유형, 위치, 소비별로 과거 고객 목록 생성
 - 계절 프로모션, 업그레이드 혜택, 재예약 알림 발송
 
-[고객 유지를 위한 스마트 리스트 사용 방법 알아보기](getting-started-with-smart-lists.md)
+[고객 유지를 위한 스마트 리스트 사용 방법 알아보기](../../02-연락처/기타/getting-started-with-smart-lists.md)
 
 ### 5.2 AI 기반 후속 관리 및 설문
 

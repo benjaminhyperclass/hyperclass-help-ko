@@ -123,12 +123,12 @@
 
 ## 관련 가이드
 
-- [Free Caller Registry로 '스팸 의심' 발신번호 표시 해결하기]([remediate-spam-likely-on-your-caller-id-using-free-caller-registry](remediate-spam-likely-on-your-caller-id-using-free-caller-registry.md))
-- [내 통화가 스팸으로 표시되는 이유와 예방 방법]([why-are-my-calls-marked-as-spam-and-how-can-i-avoid-it-](why-are-my-calls-marked-as-spam-and-how-can-i-avoid-it-.md))
-- [전화번호 설정 옵션 개요]([overview-of-phone-number-configuration-options](overview-of-phone-number-configuration-options.md))
-- [긍정적인 발신자 평판 유지를 위한 권장사항과 모범 사례]([recommendations-and-best-practices-for-maintaining-a-positive-caller-reputation](recommendations-and-best-practices-for-maintaining-a-positive-caller-reputation.md))
-- [인증된 발신번호 설정 방법 (음성 통화용 번호 사용)]([how-to-set-up-verified-caller-id-use-your-number-for-voice-calls-](how-to-set-up-verified-caller-id-use-your-number-for-voice-calls-.md))
-- [Voice Integrity로 전화번호 평판 개선하기]([improve-your-phone-number-s-reputation-with-voice-integrity](improve-your-phone-number-s-reputation-with-voice-integrity.md))
+- [Free Caller Registry로 '스팸 의심' 발신번호 표시 해결하기](remediate-spam-likely-on-your-caller-id-using-free-caller-registry.md)
+- [내 통화가 스팸으로 표시되는 이유와 예방 방법](why-are-my-calls-marked-as-spam-and-how-can-i-avoid-it-.md)
+- [전화번호 설정 옵션 개요](../overview-of-phone-number-configuration-options.md)
+- [긍정적인 발신자 평판 유지를 위한 권장사항과 모범 사례](recommendations-and-best-practices-for-maintaining-a-positive-caller-reputation.md)
+- [인증된 발신번호 설정 방법 (음성 통화용 번호 사용)](../LC-Phone/how-to-set-up-verified-caller-id-use-your-number-for-voice-calls-.md)
+- [Voice Integrity로 전화번호 평판 개선하기](../전화번호/improve-your-phone-number-s-reputation-with-voice-integrity.md)
 
 ---
 *원문 최종 수정: Thu, 16 Oct, 2025 at 1:02 PM*

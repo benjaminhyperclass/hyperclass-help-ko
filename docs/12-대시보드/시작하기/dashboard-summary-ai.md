@@ -72,7 +72,7 @@
 
 - 위젯 인사이트를 사용하여 여러 보고서를 열지 않고도 이상치를 정확히 찾아냅니다.
 
-- 아직 위젯을 설정 중이라면 **[대시보드 위젯 생성 및 추가 방법]([how-to-create-add-dashboard-widgets](how-to-create-add-dashboard-widgets.md))** 을 참조하세요.
+- 아직 위젯을 설정 중이라면 **[대시보드 위젯 생성 및 추가 방법](../how-to-create-add-dashboard-widgets.md)** 을 참조하세요.
 
 ---
 
@@ -82,7 +82,7 @@
 
 - **AI 직원(AI Employee) 활성화** (에이전시 뷰)
 
-**에이전시(Agency) → 설정(Settings) → 회사(Company)** 로 이동하여 하위 계정에 대해 **AI 직원(AI Employee)** 을 ON으로 토글합니다. [AI 직원 개요]([ai-employee-overview](ai-employee-overview.md)) 를 참조하세요.
+**에이전시(Agency) → 설정(Settings) → 회사(Company)** 로 이동하여 하위 계정에 대해 **AI 직원(AI Employee)** 을 ON으로 토글합니다. [AI 직원 개요](../../13-AI-Employee/ai-employee-overview.md) 를 참조하세요.
 
 ![AI 직원 활성화 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155062323861/original/7ycJ6gsPANTaU9u4u2C1-VDYswE6Lx-zrg.png?1767964739)
 
@@ -110,7 +110,7 @@
 
 ![위젯별 AI 인사이트](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155062323664/original/gkd7d4pEL2xr-Tcfo_R3CY6syT7-2HcGrg.png?1767964542)
 
-위젯을 만들거나 조정하려면 **[대시보드 위젯 생성 및 추가 방법]([how-to-create-add-dashboard-widgets](how-to-create-add-dashboard-widgets.md))** 을 참조하세요.
+위젯을 만들거나 조정하려면 **[대시보드 위젯 생성 및 추가 방법](../how-to-create-add-dashboard-widgets.md)** 을 참조하세요.
 
 ---
 
@@ -126,7 +126,7 @@
 후속 질문은 **커스텀 위젯** 설정에서 맥락을 가져옵니다. 필요한 커스텀 위젯을 만들거나 편집한 다음 다시 질문해보세요.
 
 **Q. AI 사용량은 어떻게 청구되나요?**
-AI 기능은 현재 AI 직원 가격과 리셀러 설정에 따라 청구됩니다. 최신 세부 정보는 **[AI 직원 개요]([ai-employee-overview](ai-employee-overview.md))** (가격 링크 포함)를 참조하세요.
+AI 기능은 현재 AI 직원 가격과 리셀러 설정에 따라 청구됩니다. 최신 세부 정보는 **[AI 직원 개요](../../13-AI-Employee/ai-employee-overview.md)** (가격 링크 포함)를 참조하세요.
 
 ---
 *원문 최종 수정: 2026-01-09*

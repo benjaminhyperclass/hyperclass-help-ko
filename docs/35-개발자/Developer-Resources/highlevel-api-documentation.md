@@ -13,7 +13,7 @@ HighLevel은 개발자가 HighLevel CRM 및 마켓플레이스와 통합, 자동
 기존 연결/통합은 계속 작동하지만, V1 API에 대한 지원은 더 이상 제공되지 않습니다.
 
 V1에서 V2로 마이그레이션하고 싶으신가요? (수많은 새 기능과 보안 기능 포함)
-[Private Integrations(프라이빗 통합)]([private-integrations-everything-you-need-to-know](private-integrations-everything-you-need-to-know.md))을 확인해 보세요.
+[Private Integrations(프라이빗 통합)](../../42-통합/Private-Integrations/private-integrations-everything-you-need-to-know.md)을 확인해 보세요.
 
 참고사항: 앞으로 에이전시와 하위 계정 설정에서 새 API 키를 생성하는 기능이 제거될 예정입니다. 이 변경사항은 아직 API 키를 생성하지 않았거나 현재 사용하지 않는 계정에 적용됩니다.
 

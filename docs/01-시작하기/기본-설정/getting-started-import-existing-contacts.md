@@ -56,11 +56,11 @@
 
 다음 단계를 준비하셨나요? 더 자세히 알아보기:
 
-- [CSV 파일을 사용한 연락처 가져오기]([importing-contacts-using-a-csv-file](importing-contacts-using-a-csv-file.md))
+- [CSV 파일을 사용한 연락처 가져오기](../../02-연락처/importing-contacts-using-a-csv-file.md)
 
-- [CSV를 통한 연락처 및 기회 가져오기]([importing-contacts-and-opportunities-via-csv](importing-contacts-and-opportunities-via-csv.md))
+- [CSV를 통한 연락처 및 기회 가져오기](../../02-연락처/importing-contacts-and-opportunities-via-csv.md)
 
-- [중복 연락처 허용 (연락처 중복 제거 설정)]([allow-duplicate-contacts-contact-deduplication-preferences-](allow-duplicate-contacts-contact-deduplication-preferences-.md))
+- [중복 연락처 허용 (연락처 중복 제거 설정)](../../02-연락처/기타/allow-duplicate-contact-explained.md)
 
 이제 타겟팅된 참여를 위해 고객을 세분화하기 시작할 수 있습니다!
 
@@ -90,7 +90,7 @@
 
 더 자세히 알아보기:
 
-- [커스텀 필드 사용 방법]([how-to-use-custom-fields](how-to-use-custom-fields.md))
+- [커스텀 필드 사용 방법](../../23-레거시-자동화/Logic-&amp;-Fulfillment/how-to-use-custom-fields.md)
 
 이제 커스텀 필드를 활용해서 캠페인과 메시징을 향상시켜보세요!
 
@@ -120,7 +120,7 @@
 
 더 자세히 알아보기:
 
-- [일괄 작업: 여러 연락처에 연락처 태그 추가하기]([adding-contact-tags-to-multiple-contacts](adding-contact-tags-to-multiple-contacts.md))
+- [일괄 작업: 여러 연락처에 연락처 태그 추가하기](../../02-연락처/adding-contact-tags-to-multiple-contacts.md)
 ---
 
 ## 가져오기 시 표준 연락처 필드

@@ -91,7 +91,7 @@
 
 ![채널별 콘텐츠 편집 화면2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155005176960/original/5IbS881B_zhWOcA6jL9yt2K-K-aHE71Sxw.png?1692035717)
 
-미디어 추가(이미지/동영상): [파일 크기 가이드라인 참조](posting-content-image-video-and-text-guidelines.md)
+미디어 추가(이미지/동영상): [파일 크기 가이드라인 참조](../../26-산업-가이드/기타/posting-content-image-video-and-text-guidelines.md)
 
 각 소셜 미디어에 적용 가능한 경우 이미지, 동영상 또는 기타 멀티미디어 요소를 추가하여 게시물을 향상시킬 수 있습니다.
 

@@ -47,7 +47,7 @@
 
 재연동 과정을 완료한 후, 구글 캘린더를 테스트하여 동기화 과정이 제대로 작동하는지 확인하세요. 테스트 후에도 여전히 문제가 발생한다면, 추가 지원을 위해 고객 지원팀에 문의해 주세요.
 
-이 재연동 과정에 대한 스크린샷과 더 자세한 내용이 포함된 시각적 가이드를 원하신다면, [이 단계별 가이드 문서](how-to-re-integrate-google-calendar-with-highlevel-for-a-user.md)를 참조하세요.
+이 재연동 과정에 대한 스크린샷과 더 자세한 내용이 포함된 시각적 가이드를 원하신다면, [이 단계별 가이드 문서](../기타/how-to-re-integrate-google-calendar-with-highlevel-for-a-user.md)를 참조하세요.
 
 ---
 

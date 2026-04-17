@@ -60,7 +60,7 @@
 
 이 시스템이 호기심을 실제 예약으로 전환시킵니다.
 
-**[GHL에서 퍼널 만들기]([getting-started-launch-a-funnel](getting-started-launch-a-funnel.md))**
+**[GHL에서 퍼널 만들기](../../01-시작하기/기본-설정/getting-started-launch-a-funnel.md)**
 
 ## **3단계: 로컬 도달을 위한 페이스북 & 인스타그램 광고 설정**
 
@@ -83,7 +83,7 @@ Meta 광고 관리자 내에서(또는 GHL이 연동된 경우 직접) 시작하
 - 일일 10,000-20,000원으로 시작
 - 결과에 따라 조정하기 전에 3-5일간 실행
 
-**[GHL과 페이스북 광고 연동하기]([connect-facebook-with-ad-manager](connect-facebook-with-ad-manager.md))**
+**[GHL과 페이스북 광고 연동하기](../../10-마케팅/Ad-Manager-Setup-&-Configuration/connect-facebook-with-ad-manager.md)**
 
 ## **4단계: 스크롤을 멈추게 하는 광고 크리에이티브 제작**
 
@@ -117,7 +117,7 @@ GHL 워크플로우(Workflows) 내에서:
 
 이것이 여러분의 광고 비용을 수익으로 바꾸는 부분입니다.
 
-**[워크플로우 개요](workflow-builder-walkthrough.md)**
+**[워크플로우 개요](../../07-워크플로우/기타/workflow-builder-walkthrough.md)**
 
 ## **6단계: 효과적인 것과 그렇지 않은 것 추적**
 

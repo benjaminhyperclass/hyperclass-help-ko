@@ -84,7 +84,7 @@ Twilio에서 지원하는 전체 국가 목록은 [여기를 클릭](https://hel
 
 미국과 캐나다를 제외한 대부분의 국가에서 전화번호를 구매할 때는 **규제 번들 또는 주소가 필요**합니다.
 
-필요한 규제 번들을 추가해야 합니다. 자세한 안내는 다음 가이드를 참조하세요: [하위 계정용 규제 번들 및 주소 생성](regulatory-bundle-and-address-creation-for-sub-accounts.md)
+필요한 규제 번들을 추가해야 합니다. 자세한 안내는 다음 가이드를 참조하세요: [하위 계정용 규제 번들 및 주소 생성](../regulatory-bundle-and-address-creation-for-sub-accounts.md)
 
 ![규제 요구사항](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048693867/original/rn19mTlSEO8mI_pUucG1UddbWQIB-QMSqQ.png?1750668168)
 

@@ -31,7 +31,7 @@
 
 워크플로우의 자동화는 항상 주요 레코드를 "대상"으로 실행됩니다. 신규 제휴 판매 트리거의 경우, 워크플로우는 일반적으로 거래의 고객/구매자 측에서 시작되므로, 이메일/SMS 발송 같은 표준 액션은 제휴 파트너 전용 액션을 의도적으로 선택하지 않는 한 구매자 연락처에게 메시지를 보냅니다.
 
-제휴 파트너와 소통하려면 (축하, 안내, 상태 업데이트), 제휴 파트너용으로 설계된 워크플로우 액션(예: 제휴 파트너에게 이메일 보내기)을 사용하세요. 자세한 내용은 [여기]([automate-affiliate-sales-follow-ups-with-the-new-affiliate-sale-trigger](automate-affiliate-sales-follow-ups-with-the-new-affiliate-sale-trigger.md))를 참조하세요.
+제휴 파트너와 소통하려면 (축하, 안내, 상태 업데이트), 제휴 파트너용으로 설계된 워크플로우 액션(예: 제휴 파트너에게 이메일 보내기)을 사용하세요. 자세한 내용은 [여기]([automate-affiliate-sales-follow-ups-with-the-new-affiliate-sale-trigger](automate-affiliate-sales-follow-ups-with-the-new-affiliate-sale-trigger.md)를 참조하세요.
 
 ## 사용 가능한 필터
 

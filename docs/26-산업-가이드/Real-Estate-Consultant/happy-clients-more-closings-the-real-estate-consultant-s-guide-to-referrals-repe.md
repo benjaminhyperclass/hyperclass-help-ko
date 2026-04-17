@@ -76,7 +76,7 @@ Hyperclass 자동화 덕분에 손가락 하나 까딱하지 않고도 가능합
 예시 메시지:
 "새 집 축하드려요, 사라님! 귀하와 가족에게 도움을 드릴 수 있어서 영광이었습니다. 시공업체나 수리 기사가 필요하시거나, 더 좋은 집으로 이사할 계획이 있으시면 언제든 문자 주세요!"
 
-#### [고객 후속 관리 자동화 방법]([how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder](how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md))
+#### [고객 후속 관리 자동화 방법](../../24-대학/HighLevel-How-To&#39;s/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
 
 ### 1.2 기념일 안부 인사 트리거
 
@@ -86,7 +86,7 @@ Hyperclass 자동화 덕분에 손가락 하나 까딱하지 않고도 가능합
 예시 메시지:
 "안녕하세요 사라님, [주소]로 이사 오신 지 벌써 1년이 됐다는 게 믿어지시나요? 현재 집값이 얼마나 올랐는지 궁금하시면 간단한 분석을 해드릴 수 있어요!"
 
-#### [정기 리마인더 설정 방법]([how-to-send-users-appointment-reminders](how-to-send-users-appointment-reminders.md))
+#### [정기 리마인더 설정 방법](../../23-레거시-자동화/Logic-&amp;-Fulfillment/how-to-send-users-appointment-reminders.md)
 
 ## 2단계: 5성 리뷰 자동 생성
 
@@ -104,7 +104,7 @@ Hyperclass 자동화 덕분에 손가락 하나 까딱하지 않고도 가능합
 예시 메시지:
 "사라님, 함께 일하는 것이 정말 즐거웠습니다! 좋은 경험이셨다면 간단한 리뷰를 남겨주시겠어요? 다른 주택 구매자들이 저를 찾는 데 도움이 됩니다. 링크는 여기입니다: [Google 리뷰 링크]"
 
-#### [자동 리뷰 요청 발송 방법]([how-to-setup-workflow-triggers-for-google-and-facebook-reviews](how-to-setup-workflow-triggers-for-google-and-facebook-reviews.md))
+#### [자동 리뷰 요청 발송 방법](../../41-평판-리뷰/Review-Requests/how-to-setup-workflow-triggers-for-google-and-facebook-reviews.md)
 
 ### 2.2 부정적 피드백 선제적 처리
 
@@ -131,7 +131,7 @@ Hyperclass 자동화 덕분에 손가락 하나 까딱하지 않고도 가능합
 예시 메시지:
 "주변에 집을 사거나 팔 생각이 있는 분이 계시나요? 저에게 소개해주시면 250달러 계약 크레딧이나 원하시는 상품권으로 감사 인사드리겠습니다!"
 
-#### [자동 추천 프로그램 설정 방법](affiliate-refferal-page-leads-customers-cancelled-statuses.md)
+#### [자동 추천 프로그램 설정 방법](../../21-어필리에이트/기타/affiliate-refferal-page-leads-customers-cancelled-statuses.md)
 
 ### 3.2 추천 고객 후속 관리 자동화
 
@@ -154,7 +154,7 @@ Hyperclass 자동화 덕분에 손가락 하나 까딱하지 않고도 가능합
 예시 메시지:
 "옆집이 방금 91만 2천 달러에 팔렸어요 — 작년보다 8% 상승했습니다. 귀하 집이 현재 얼마인지 알고 싶으시나요?"
 
-#### [구독 기반 서비스 설정 방법]([pause-and-resume-subscriptions](pause-and-resume-subscriptions.md))
+#### [구독 기반 서비스 설정 방법](../../08-결제/pause-and-resume-subscriptions.md)
 
 ## 5단계: AI & 스마트 리스트로 데이터베이스 활용
 
@@ -181,9 +181,9 @@ Hyperclass 자동화 덕분에 손가락 하나 까딱하지 않고도 가능합
 예시 메시지:
 "안녕하세요 사라님! 아직도 집이 마음에 드시나요? 안부 인사를 드리고 싶었고, 더 좋은 집으로 업그레이드할 준비가 되시면 비공개 매물들을 기꺼이 보여드리겠습니다."
 
-#### [정기 관리 플랜 판매 & 자동화 방법](recurring-appointments.md)
+#### [정기 관리 플랜 판매 & 자동화 방법](../../04-캘린더-예약/기타/recurring-appointments.md)
 
-#### [고객 유지를 위한 스마트 리스트 사용법](getting-started-with-smart-lists.md)
+#### [고객 유지를 위한 스마트 리스트 사용법](../../02-연락처/기타/getting-started-with-smart-lists.md)
 
 ## 마무리: 장기 고객 = 장기 수익
 

@@ -72,11 +72,11 @@ Hyperclass를 올바르게 설정하고 더 많은 매물, 구매자, 추천을 
 
 #### [구글 비즈니스 프로필 설정 방법](https://support.google.com/business/answer/3038177?hl=en)
 
-#### [통화 추적 번호 설정 방법](call-tracking-and-missed-call-text-back-through-google-business-profile.md)
+#### [통화 추적 번호 설정 방법](../../41-평판-리뷰/Review-Requests/call-tracking-and-missed-call-text-back-through-google-business-profile.md)
 
-#### [구글 리뷰 자동화 방법](how-to-setup-workflow-triggers-for-google-and-facebook-reviews.md)
+#### [구글 리뷰 자동화 방법](../../41-평판-리뷰/Review-Requests/how-to-setup-workflow-triggers-for-google-and-facebook-reviews.md)
 
-#### [구글 비즈니스 프로필 최적화 방법](how-to-integrate-your-google-business-profile-formerly-gmb-into-the-crm.md)
+#### [구글 비즈니스 프로필 최적화 방법](../../11-설정/기타/how-to-integrate-your-google-business-profile-formerly-gmb-into-the-crm.md)
 
 ## 2단계: 후속 관리 자동화로 리드 손실 방지
 
@@ -96,14 +96,14 @@ Hyperclass를 올바르게 설정하고 더 많은 매물, 구매자, 추천을 
 ✅ **웹사이트에 스마트 채팅 위젯 추가**
 구매자와 판매자가 질문을 하거나 상담을 직접 예약할 수 있게 하세요.
 
-#### [채팅 위젯 설정 방법](getting-started-with-chat-widget.md)
+#### [채팅 위젯 설정 방법](../../06-사이트/getting-started-with-chat-widget.md)
 
-#### [부재중 전화 문자 자동 응답 설정](where-and-how-to-configure-the-missed-call-text-back-feature.md)
+#### [부재중 전화 문자 자동 응답 설정](../../11-설정/서브어카운트-설정/where-and-how-to-configure-the-missed-call-text-back-feature.md)
 
 ✅ **구매자와 판매자용 후속 관리 시퀀스 생성**
 그들의 여정에 맞춘 이메일, 문자, 알림을 보내세요—검색 중인지 적극적으로 구매 중인지에 따라.
 
-#### [반복 후속 관리 설정](recurring-appointments.md)
+#### [반복 후속 관리 설정](../../04-캘린더-예약/기타/recurring-appointments.md)
 
 ✅ **주택 상담이나 시장 분석을 위한 예약 링크 사용**
 자동 업데이트 캘린더로 번거로운 일정 조율을 없애세요.
@@ -111,11 +111,11 @@ Hyperclass를 올바르게 설정하고 더 많은 매물, 구매자, 추천을 
 ✅ **AI를 사용해 24/7 응답**
 대화 AI(Conversation AI)가 "이 집 아직 있나요?", "평방피트당 가격이 얼마인가요?", "사전 승인을 받을 수 있나요?" 같은 FAQ를 처리할 수 있습니다.
 
-#### [AI 기반 자동화 후속 관리 설정 방법](how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
+#### [AI 기반 자동화 후속 관리 설정 방법](../../24-대학/HighLevel-How-To&#39;s/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
 
-#### [음성 AI 에이전트 설정 방법](creating-voice-ai-agents.md)
+#### [음성 AI 에이전트 설정 방법](../../13-AI-Employee/기타/creating-voice-ai-agents.md)
 
-#### [대화 AI 에이전트 설정 방법](how-to-use-conversation-ai-to-book-appointments.md)
+#### [대화 AI 에이전트 설정 방법](../../13-AI-Employee/Conversation-AI---Goals,-Prompts,-&-Actions/how-to-use-conversation-ai-to-book-appointments.md)
 
 ## 3단계: 새로운 고객을 끌어들이는 리뷰 수집
 
@@ -165,11 +165,11 @@ Hyperclass를 올바르게 설정하고 더 많은 매물, 구매자, 추천을 
 
 #### [구글 LSA 실행 방법](https://ads.google.com/intl/en_us/home/local-services-ads/)
 
-#### [LSA를 Hyperclass와 연동하는 방법](reserve-with-google-integration-local-services-ads-lsa-.md)
+#### [LSA를 Hyperclass와 연동하는 방법](../../04-캘린더-예약/캘린더-연동/reserve-with-google-integration-local-services-ads-lsa-.md)
 
-#### [통화 추적 번호 풀 설정](how-to-set-up-call-tracking-number-pool-.md)
+#### [통화 추적 번호 풀 설정](../../15-전화-시스템/통화/how-to-set-up-call-tracking-number-pool-.md)
 
-#### [전환하는 광고 실행 방법](overview-of-ad-manager.md)
+#### [전환하는 광고 실행 방법](../../10-마케팅/Getting-Started-w/-Ad-Manager/overview-of-ad-manager.md)
 
 ## 5단계: 소셜 콘텐츠로 지속적인 인지도 유지
 
@@ -183,7 +183,7 @@ Hyperclass를 올바르게 설정하고 더 많은 매물, 구매자, 추천을 
 ✅ **소셜 미디어 플래너를 사용해 매주 게시물 예약**
 매물 투어, 시장 업데이트, "방금 판매" 매물, 비하인드 스토리를 공유하세요.
 
-#### [소셜 미디어에서 리뷰 공유 방법](share-your-reviews-as-posts-on-social-media-using-social-planner.md)
+#### [소셜 미디어에서 리뷰 공유 방법](../../10-마케팅/기타/share-your-reviews-as-posts-on-social-media-using-social-planner.md)
 
 ✅ **매주 구글 비즈니스 프로필 게시**
 지역 검색에서 활성화 상태를 유지하세요.
@@ -194,11 +194,11 @@ Hyperclass를 올바르게 설정하고 더 많은 매물, 구매자, 추천을 
 ✅ **블로그와 이메일 캠페인을 게시물로 재활용**
 Hyperclass 내의 AI 도구를 사용해 이런 콘텐츠를 생성하도록 도움받으세요.
 
-#### [부동산 컨설턴트를 위한 블로그 만들기](how-to-create-a-blog-.md)
+#### [부동산 컨설턴트를 위한 블로그 만들기](../../06-사이트/how-to-create-a-blog-.md)
 
-#### [블로그용 RSS 피드 설정 방법](how-to-set-up-an-rss-feed-for-blogs.md)
+#### [블로그용 RSS 피드 설정 방법](../../06-사이트/기타/how-to-set-up-an-rss-feed-for-blogs.md)
 
-#### [RSS 이메일 캠페인 설정 방법](how-to-send-rss-email-campaign-s-.md)
+#### [RSS 이메일 캠페인 설정 방법](../../10-마케팅/RSS-Guide/how-to-send-rss-email-campaign-s-.md)
 
 #### 효과적인 소셜 미디어 및 콘텐츠 전략 분석 방법
 

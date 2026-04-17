@@ -154,25 +154,25 @@
 
 - 하이퍼클래스의 WordPress 호스팅을 사용하는 경우, 제공된 DNS 레코드를 사용하여 도메인을 WordPress 사이트로 연결합니다.
 - DNS 설정 완료 후 시스템이 자동으로 감지하고 유효성을 검사합니다.
-- 자세한 내용: [WordPress: Domain Connect Integration]([wordpress-domain-connect-integration](wordpress-domain-connect-integration.md))
+- 자세한 내용: [WordPress: Domain Connect Integration](../../06-사이트/wordpress-domain-connect-integration.md)
 
 #### 이메일
 
 - 이메일 발송 인증(SPF, DKIM, DMARC 등)에 도메인이 필요합니다.
 - 연결하면 이메일 전달율이 향상되고 메시지가 스팸으로 분류되는 것을 방지할 수 있습니다.
-- 자세한 내용: [전용 이메일 발송 도메인 개요 및 설정]([dedicated-email-sending-domains-overview-setup](dedicated-email-sending-domains-overview-setup.md))
+- 자세한 내용: [전용 이메일 발송 도메인 개요 및 설정](../../09-이메일/LC-Email-Dedicated-Domain-and-IP/dedicated-email-sending-domains-overview-setup.md)
 
 **브랜드 도메인 (화이트라벨링용)**
 
 - 하위 계정이나 SaaS 기능을 화이트라벨링하기 위해 도메인을 연결합니다.
 - 기본 .hlpages.co URL을 자체 브랜딩으로 대체합니다.
-- 자세한 내용: [브랜드 시스템 생성 링크 (API 도메인)](how-to-configure-brand-system-generated-links-api-domain-.md) 및 [브랜드 도메인 설정 이유 및 방법](https://www.youtube.com/watch?v=y8-_fWUqiG8)
+- 자세한 내용: [브랜드 시스템 생성 링크 (API 도메인)](../../19-에이전시-뷰/기타/how-to-configure-brand-system-generated-links-api-domain-.md) 및 [브랜드 도메인 설정 이유 및 방법](https://www.youtube.com/watch?v=y8-_fWUqiG8)
 
 **클라이언트 포털**
 
 - 클라이언트 대면 대시보드를 호스팅하기 위해 커스텀 도메인을 사용합니다.
 - 고객이 자산, 캠페인, 보고서에 접근할 때 브랜드 경험을 제공합니다.
-- 자세한 내용: [클라이언트 포털 설정 방법]([how-to-set-up-the-client-portal-](how-to-set-up-the-client-portal-.md))
+- 자세한 내용: [클라이언트 포털 설정 방법](../../39-클라이언트-포털/Client-Portal/how-to-set-up-the-client-portal-.md)
 
 ## 전문가 팁
 

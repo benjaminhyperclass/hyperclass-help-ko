@@ -110,7 +110,7 @@
 
 - **트리거된 워크플로우(Workflows Triggered):** 대화 중 봇이 시작한 워크플로우 실행 횟수.
 
-- **업데이트된 연락처 정보(Contact Info Updated):** 봇이 연락처 세부정보를 수집하거나 업데이트하여 연락처 레코드에 저장한 횟수. 자세한 내용은 [봇 액션 - 연락처 정보 추가](bot-actions-add-contact-info.md)를 참조하세요.
+- **업데이트된 연락처 정보(Contact Info Updated):** 봇이 연락처 세부정보를 수집하거나 업데이트하여 연락처 레코드에 저장한 횟수. 자세한 내용은 [봇 액션 - 연락처 정보 추가](../Conversation-AI---Goals,-Prompts,-&-Actions/bot-actions-add-contact-info.md)를 참조하세요.
 
 - **봇 정지 트리거(Stop Bot Triggered):** 규칙이나 키워드에 따라 대화가 봇 정지 액션을 트리거하여 추가 봇 단계를 중단한 경우.
 
@@ -118,9 +118,9 @@
 
 - **예약 일정 변경(Reschedule Appointment):** 대화 중 봇이 시작하여 완료한 예약 일정 변경 수. 자세한 내용은 [폼 기반 봇에서의 예약 취소 및 일정 변경](cancellation-and-rescheduling-of-appointments-in-form-based-bots.md)을 참조하세요.
 
-- **봇 전환(Transfer Bot):** 봇이 다른 봇으로 대화를 넘기기 위해 봇 전환 액션을 트리거한 횟수. 자세한 내용은 [대화 AI - 봇 전환 액션](conversation-ai-transfer-bot-action.md)을 참조하세요.
+- **봇 전환(Transfer Bot):** 봇이 다른 봇으로 대화를 넘기기 위해 봇 전환 액션을 트리거한 횟수. 자세한 내용은 [대화 AI - 봇 전환 액션](../Conversation-AI---Goals,-Prompts,-&-Actions/conversation-ai-transfer-bot-action.md)을 참조하세요.
 
-- **사람에게 인계(Human Handover):** 봇이 사람 인계 액션을 통해 사람에게 인계를 시작한 횟수. 자세한 내용은 [대화 AI - 사람 인계 액션](conversation-ai-human-handover-action.md)을 참조하세요.
+- **사람에게 인계(Human Handover):** 봇이 사람 인계 액션을 통해 사람에게 인계를 시작한 횟수. 자세한 내용은 [대화 AI - 사람 인계 액션](../Conversation-AI---Goals,-Prompts,-&-Actions/conversation-ai-human-handover-action.md)을 참조하세요.
 
 - **총 예약 건수(Total Appointments Booked):** 대화 AI를 통해 생성된 예약 수. 특정 예약을 확인하려면 캘린더와 함께 사용하세요.
 

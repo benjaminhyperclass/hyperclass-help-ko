@@ -67,9 +67,9 @@
 - **HighLevel의 자동 문자 응답**으로 리드에게 즉시 응답하세요.
 - 문의를 파이프라인으로 직접 라우팅하세요.
 
-#### [전화번호 구매 방법](how-to-purchase-a-phone-number.md)
+#### [전화번호 구매 방법](../../15-전화-시스템/전화번호/how-to-purchase-a-phone-number.md)
 
-#### [구글 비즈니스 프로필을 HighLevel에 연결하기](how-to-integrate-google-business-profile-gbp-with-highlevel.md)
+#### [구글 비즈니스 프로필을 HighLevel에 연결하기](../../42-통합/Google-Integrations/how-to-integrate-google-business-profile-gbp-with-highlevel.md)
 
 #### [비즈니스 프로필에서 고객과 채팅하는 방법](https://support.google.com/business/answer/15013580?utm_source=HighLevel+HelpDesk&utm_medium=organic)
 
@@ -80,18 +80,18 @@
   - SMS/이메일을 통해 리뷰 요청 자동 발송
   - 거래 완료 후 만족한 고객에게 5성 리뷰 작성 알림
 
-#### [리뷰 요청 보내는 방법](how-to-send-review-requests.md)
+#### [리뷰 요청 보내는 방법](../../41-평판-리뷰/Review-Requests/how-to-send-review-requests.md)
 
-#### [평판 관리 - 리뷰 요청 메시지(SMS/이메일) 맞춤 설정 방법](how-to-customize-the-review-request-messages-sms-email-.md)
+#### [평판 관리 - 리뷰 요청 메시지(SMS/이메일) 맞춤 설정 방법](../../41-평판-리뷰/Review-Requests/how-to-customize-the-review-request-messages-sms-email-.md)
 
-#### [구글 리뷰 이의 제기 및 이의 제기 상태 확인 방법](how-to-dispute-a-google-review-and-check-on-the-dispute-status.md)
+#### [구글 리뷰 이의 제기 및 이의 제기 상태 확인 방법](../../41-평판-리뷰/Review-Requests/how-to-dispute-a-google-review-and-check-on-the-dispute-status.md)
 
 #### **1.4 구글 비즈니스 프로필에 주간 게시**
 
 - 신규 리스팅, 가격 인하, 오픈 하우스 일정을 공유하세요.
 - HighLevel의 **소셜 플래너**를 사용하여 GBP 게시물을 자동화하세요.
 
-#### [구글 비즈니스 페이지와 함께 소셜 게시 사용하는 방법](how-to-connect-to-your-google-my-business-location-s-.md)
+#### [구글 비즈니스 페이지와 함께 소셜 게시 사용하는 방법](../../10-마케팅/소셜-플래너/how-to-connect-to-your-google-my-business-location-s-.md)
 
 ---
 
@@ -112,7 +112,7 @@
   - 예약 캘린더
   - 클릭 통화 버튼
 
-#### [SEO 메타 데이터 최적화 방법](seo-meta-data.md)
+#### [SEO 메타 데이터 최적화 방법](../../06-사이트/퍼널-웹사이트/seo-meta-data.md)
 
 #### **2.2 지역 키워드 최적화 사용**
 
@@ -121,9 +121,9 @@
   - 서비스 페이지: "플라노 주택 리스팅", "업타운 달라스 콘도 구매"
 - 서비스 지역 푸터 포함: 동네, 우편번호, 도시
 
-#### [채팅 위젯 시작하기](getting-started-with-chat-widget.md)
+#### [채팅 위젯 시작하기](../../06-사이트/getting-started-with-chat-widget.md)
 
-#### [HighLevel 채팅 위젯 설치 방법](how-to-install-highlevel-s-chat-widget.md)
+#### [HighLevel 채팅 위젯 설치 방법](../../06-사이트/how-to-install-highlevel-s-chat-widget.md)
 
 #### **2.3 모든 리드 캡처**
 
@@ -133,7 +133,7 @@
 - 팝업, 이탈 의도 폼, 스크롤 트리거 CTA 사용
 - 모든 폼 제출이나 채팅을 HighLevel 워크플로우를 통해 전송
 
-#### [HighLevel에서 연락처 폼 만드는 방법](how-to-create-a-contact-form-in-highlevel-.md)
+#### [HighLevel에서 연락처 폼 만드는 방법](../../02-연락처/기타/how-to-create-a-contact-form-in-highlevel-.md)
 
 #### 퍼널/웹사이트 입장 시 팝업 표시
 
@@ -159,9 +159,9 @@
   - "[당신의 동네]에서 지금이 판매 적기인가?"
 - 웹사이트로 다시 링크하여 SEO 효과 구축
 
-#### [지역 SEO를 위한 고성능 키워드 찾는 방법]([how-to-add-seo-descriptions-and-keywords-to-boost-your-ecommerce-ranking](how-to-add-seo-descriptions-and-keywords-to-boost-your-ecommerce-ranking.md))
+#### [지역 SEO를 위한 고성능 키워드 찾는 방법](../../37-이커머스-스토어/E-Commerce-Store/how-to-add-seo-descriptions-and-keywords-to-boost-your-ecommerce-ranking.md)
 
-#### [전환하는 리드 캡처 폼 설정 방법](how-to-create-a-contact-form-in-highlevel-.md)
+#### [전환하는 리드 캡처 폼 설정 방법](../../02-연락처/기타/how-to-create-a-contact-form-in-highlevel-.md)
 
 ---
 
@@ -184,7 +184,7 @@
 - 어떤 리스팅, 페이지, 캠페인이 계약 체결로 이어지는지 추적
 - 리드 행동에 기반한 후속 조치 자동화(예: "판매자 페이지 방문 > 폼 제출 없음 = 이메일/SMS 너처링 시퀀스 발송")
 
-#### [SEO 메타 데이터 추적 및 개선 방법]([seo-meta-data](seo-meta-data.md))
+#### [SEO 메타 데이터 추적 및 개선 방법](../../06-사이트/퍼널-웹사이트/seo-meta-data.md)
 
 ---
 

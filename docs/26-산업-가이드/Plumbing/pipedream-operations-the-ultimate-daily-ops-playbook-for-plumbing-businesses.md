@@ -77,7 +77,7 @@ Hyperclass 리소스:
 
 #### [예약 링크 설정 방법](http://how%20to%20set%20up%20booking%20link/)
 
-[예약 리마인더 자동화 방법]([how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder](how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md))
+[예약 리마인더 자동화 방법](../../24-대학/HighLevel-How-To&#39;s/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
 
 #### 배정을 위한 권한 설정 방법
 
@@ -103,11 +103,11 @@ Hyperclass 리소스:
 
 Hyperclass 리소스:
 
-#### [청소 견적 후속 조치 자동화 방법]([how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder](how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md))
+#### [청소 견적 후속 조치 자동화 방법](../../24-대학/HighLevel-How-To&#39;s/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
 
-#### [AI 기반 청소 및 유지보수 고객 지원 설정 방법]([conversation-ai-bot-explained](conversation-ai-bot-explained.md))
+#### [AI 기반 청소 및 유지보수 고객 지원 설정 방법](../../13-AI-Employee/Getting-Started-w/-Conversation-AI/conversation-ai-bot-explained.md)
 
-[세그먼트 스마트 리스트 설정 방법](getting-started-with-smart-lists.md)
+[세그먼트 스마트 리스트 설정 방법](../../02-연락처/기타/getting-started-with-smart-lists.md)
 
 ### 3단계: 배관 인보이스 및 결제 간소화
 
@@ -132,11 +132,11 @@ Hyperclass 리소스:
 
 Hyperclass 리소스:
 
-#### [인보이스 발송 및 생성 방법]([how-to-create-invoices-in-highlevel](how-to-create-invoices-in-highlevel.md))
+#### [인보이스 발송 및 생성 방법](../../08-결제/인보이스-견적/how-to-create-invoices-in-highlevel.md)
 
-#### [결제 수신 설정 방법](trigger-payment-received.md)
+#### [결제 수신 설정 방법](../../07-워크플로우/기타/trigger-payment-received.md)
 
-#### [반복 결제 자동화 방법](auto-payments-in-recurring-templates.md)
+#### [반복 결제 자동화 방법](../../08-결제/기타/auto-payments-in-recurring-templates.md)
 
 ### 4단계: 배관공 및 작업 관리를 손쉽게
 

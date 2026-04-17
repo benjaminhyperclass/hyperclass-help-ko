@@ -36,7 +36,7 @@
 
 # 2. 신규 프로스펙트 생성 시 워크플로우 설정
 
-- **프로스펙팅 도구를 통해 하위 계정에서 생성되는 모든 프로스펙트에 대해 여러 [워크플로우]([workflow-trigger-for-new-prospects-in-the-prospecting-tool](workflow-trigger-for-new-prospects-in-the-prospecting-tool.md))를 트리거할 수 있습니다 (환영 이메일, 프로스펙트를 영업 기회 및 파이프라인에 자동 추가 등)**
+- **프로스펙팅 도구를 통해 하위 계정에서 생성되는 모든 프로스펙트에 대해 여러 [워크플로우](../Premium-Prospecting/workflow-trigger-for-new-prospects-in-the-prospecting-tool.md)를 트리거할 수 있습니다 (환영 이메일, 프로스펙트를 영업 기회 및 파이프라인에 자동 추가 등)**
 - **AI, 인앱, 프로스펙팅 위젯 등 다양한 프로스펙트 생성 소스에 대해 워크플로우를 트리거할 수 있습니다**
 
 ![워크플로우 트리거](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050437465/original/t3kTex3CJbbsK74nmXfylJkernmeuCBGjg.png?1753445112)
@@ -81,8 +81,8 @@ Agency View > Reselling 탭으로 이동
 ![하위 계정 연결](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053444254/original/A2rG8Qp6ptXDkaXFwztGTTJQ3kk4QXXLfA.png?1757492540)
 
 ### **에이전시에서 활성 프로스펙팅 구독이 이미 있는 경우**
-- [하위 계정을 연결](how-to-link-a-sub-account-with-your-agency-prospecting-premium-subscription.md)하여 하위 계정에서 접근할 수 있습니다.
-- 그 다음 [프로스펙트를 이전](how-to-migrate-prospects-from-agency-to-sub-account.md)시켜 해당 하위 계정으로 보냅니다 (연락처에 자동으로 복사되고 워크플로우가 있다면 트리거됩니다)
+- [하위 계정을 연결](../../08-결제/기타/how-to-link-a-sub-account-with-your-agency-prospecting-premium-subscription.md)하여 하위 계정에서 접근할 수 있습니다.
+- 그 다음 [프로스펙트를 이전](../기타/how-to-migrate-prospects-from-agency-to-sub-account.md)시켜 해당 하위 계정으로 보냅니다 (연락처에 자동으로 복사되고 워크플로우가 있다면 트리거됩니다)
 - 그 후 해당 하위 계정으로 가서 Marketing 탭을 클릭하고 Prospecting 탭을 선택합니다
 
 ---
@@ -95,7 +95,7 @@ Agency View > Reselling 탭으로 이동
 
 ### **두 개 이상의 하위 계정에서 프로스펙팅을 원하는 경우**
 
-- Agency View 내의 [재판매 탭]([how-to-resell-and-use-prospecting-tool-for-sub-accounts](how-to-resell-and-use-prospecting-tool-for-sub-accounts.md))으로 이동
+- Agency View 내의 [재판매 탭](how-to-resell-and-use-prospecting-tool-for-sub-accounts.md)으로 이동
 - Prospecting 탭을 ON으로 토글
 - 해당 하위 계정으로 이동: Marketing 탭에서 Prospecting 탭 선택
 
@@ -117,8 +117,8 @@ Agency View > Reselling 탭으로 이동
 ## **관련 아티클**
 
 - [프로스펙팅 도구로 생성된 프로스펙트 리드에게 연락하는 방법](how-to-reach-out-to-prospect-leads-generated-via-the-prospecting-tool.md)
-- [에이전시 프로스펙팅 프리미엄 구독을 하위 계정과 공유하는 방법](free-vs-premium-prospecting-in-gohighlevel-complete-guide-for-agencies.md)
-- [GoHighLevel의 무료 vs 프리미엄 프로스펙팅 – 에이전시 완벽 가이드](free-vs-premium-prospecting-in-gohighlevel-complete-guide-for-agencies.md)
+- [에이전시 프로스펙팅 프리미엄 구독을 하위 계정과 공유하는 방법](../../08-결제/기타/how-to-link-a-sub-account-with-your-agency-prospecting-premium-subscription.md)
+- [GoHighLevel의 무료 vs 프리미엄 프로스펙팅 – 에이전시 완벽 가이드](../Premium-Prospecting/free-vs-premium-prospecting-in-gohighlevel-complete-guide-for-agencies.md)
 - [두 개 이상의 하위 계정에 프로스펙팅 도구를 재판매하고 사용하는 방법](how-to-resell-and-use-prospecting-tool-for-sub-accounts.md)
 
 ---

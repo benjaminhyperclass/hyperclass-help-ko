@@ -56,7 +56,7 @@
 
 **프로 팁:** "리드 소스" 규칙을 설정해서 광고, 구글, 추천으로 온 예약이 자동으로 다른 파이프라인으로 들어가도록 하세요.
 
-**[서비스 캘린더 만드는 방법]([how-to-create-service-calendars](how-to-create-service-calendars.md))**
+**[서비스 캘린더 만드는 방법](../../04-캘린더-예약/Service-Calendars/how-to-create-service-calendars.md)**
 
 #### **2. 온라인 예약 & 임베디드 캘린더**
 
@@ -68,7 +68,7 @@
 
 **GHL 워크플로우:** 예약 → 확인 → 내원 전 알림 → 내원 후 리뷰 요청
 
-**[HTML 코드를 사용하여 HighLevel 캘린더 임베딩하기]([embedding-highlevel-calendars-using-html-code](embedding-highlevel-calendars-using-html-code.md))**
+**[HTML 코드를 사용하여 HighLevel 캘린더 임베딩하기](../../04-캘린더-예약/embedding-highlevel-calendars-using-html-code.md)**
 
 #### **3. 환자를 사전 분류하는 접수 폼**
 
@@ -80,7 +80,7 @@
 
 **워크플로우 아이디어:** 신환 폼 작성 → 태그: "초기 마취 필요" → 접수 직원 알림 → 환자가 내원 전 케어 시퀀스에 등록
 
-**[캘린더에 커스텀 폼 추가하기]([adding-custom-forms-to-calendars](adding-custom-forms-to-calendars.md))**
+**[캘린더에 커스텀 폼 추가하기](../../04-캘린더-예약/Customizing-Calendars/adding-custom-forms-to-calendars.md)**
 
 #### **4. 자동 확인 & 알림**
 
@@ -93,7 +93,7 @@
 
 **GHL 팁:** 예약 유형에 따라 메시지를 커스터마이징하세요(예: 첫 방문 vs 스케일링 vs 크라운 장착).
 
-**[워크플로우 트리거 - 고객 예약 완료]([workflow-trigger-customer-booked-appointment](workflow-trigger-customer-booked-appointment.md))**
+**[워크플로우 트리거 - 고객 예약 완료](../../07-워크플로우/Appointments-Workflow-Triggers/workflow-trigger-customer-booked-appointment.md)**
 
 #### **5. 부재중 전화 문자 답변**
 
@@ -101,7 +101,7 @@
 
 **메시지 예시:** "안녕하세요! [클리닉명]입니다. 전화를 못 받아서 죄송해요. 예약을 도와드리거나 빠른 질문에 답변해드릴까요?"
 
-**[부재중 전화 문자 답변 기능 설정 위치와 방법]([where-and-how-to-configure-the-missed-call-text-back-feature](where-and-how-to-configure-the-missed-call-text-back-feature.md))**
+**[부재중 전화 문자 답변 기능 설정 위치와 방법](../../11-설정/서브어카운트-설정/where-and-how-to-configure-the-missed-call-text-back-feature.md)**
 
 #### **6. 내부 알림 & 업무 배정**
 
@@ -135,9 +135,9 @@ GHL 할 일(Task) 시스템을 사용하여:
 - 인비절라인, 임플란트, 화이트닝 캠페인 리드를 장기 드립 시퀀스로 육성
 - 일반적인 질문을 위치, 시간, 치료 정보, 예약 링크로 응답하는 AI 어시스턴트로 라우팅
 
-**[대화 AI(Conversation AI) 설정하기]([setting-up-conversation-ai](setting-up-conversation-ai.md))**
+**[대화 AI(Conversation AI) 설정하기](../../13-AI-Employee/Getting-Started-w/-Conversation-AI/setting-up-conversation-ai.md)**
 
-**[음성 AI(Voice AI) 에이전트 만들기](creating-voice-ai-agents.md)**
+**[음성 AI(Voice AI) 에이전트 만들기](../../13-AI-Employee/기타/creating-voice-ai-agents.md)**
 
 ### **보고서와 관리자 제어**
 

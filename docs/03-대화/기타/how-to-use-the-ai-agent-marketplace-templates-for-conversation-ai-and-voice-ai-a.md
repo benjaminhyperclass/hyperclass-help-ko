@@ -64,7 +64,7 @@
 
 - 일반적인 작업에는 **다른 하위 계정에 배포**, **복제**, **업데이트** 또는 **제거**가 있습니다.
 
-- 음성 AI의 경우, 할당된 전화번호를 제거하여 에이전트를 **비활성화**할 수 있습니다(구성은 유지되지만 휴면 상태). **[음성 AI 에이전트 만들기](creating-voice-ai-agents.md)** 참조.
+- 음성 AI의 경우, 할당된 전화번호를 제거하여 에이전트를 **비활성화**할 수 있습니다(구성은 유지되지만 휴면 상태). **[음성 AI 에이전트 만들기](../../13-AI-Employee/기타/creating-voice-ai-agents.md)** 참조.
 
 ## **게시(Publish)** 화면에서 지식 베이스를 에이전트와 함께 번들로 제공하려면 **지식 베이스(Knowledge Base)**를 **포함(Include)**으로 설정하세요. 지식 베이스 없이 게시하려면 **제외(Exclude)**를 선택하세요.
 
@@ -88,9 +88,9 @@
 
 **유용한 링크:**
 
-- **[마켓플레이스에 대화 AI와 음성 AI 템플릿 등록하기](listing-conversation-ai-and-voice-ai-templates-on-the-marketplace.md)**
+- **[마켓플레이스에 대화 AI와 음성 AI 템플릿 등록하기](../../35-개발자/Developer-Resources/listing-conversation-ai-and-voice-ai-templates-on-the-marketplace.md)**
 
-- **[개발자 마켓플레이스 — 시작하기](how-to-get-started-with-the-developer-s-marketplace.md)**
+- **[개발자 마켓플레이스 — 시작하기](../../35-개발자/Developer-Resources/how-to-get-started-with-the-developer-s-marketplace.md)**
 
 ### **B) 템플릿 검색 및 설치하기(구매자)**
 

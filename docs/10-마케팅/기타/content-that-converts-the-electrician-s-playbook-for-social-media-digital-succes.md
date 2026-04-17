@@ -94,11 +94,11 @@
 | **웹사이트 블로그 및 뉴스레터** | 업계 뉴스, 사례 연구, 서비스 가이드 | 월 2회 |
 | **오프라인 (팜플렛, 게시판)** | 프로모션, 신용도 부스터, 서비스 하이라이트 | 계절별 캠페인 |
 
-[콘텐츠 AI를 사용하여 이메일 생성하는 방법](how-to-create-emails-using-content-ai-.md)
+[콘텐츠 AI를 사용하여 이메일 생성하는 방법](../../13-AI-Employee/Content-AI-in-the-Email-Builder/how-to-create-emails-using-content-ai-.md)
 
-[콘텐츠 AI로 블로그 게시물 개요 만들기](how-to-create-a-social-post-with-content-ai-.md)
+[콘텐츠 AI로 블로그 게시물 개요 만들기](../../13-AI-Employee/기타/how-to-create-a-social-post-with-content-ai-.md)
 
-[콘텐츠 AI를 사용하여 소셜 미디어 게시물 만들기](how-to-create-a-social-post-with-content-ai-.md)
+[콘텐츠 AI를 사용하여 소셜 미디어 게시물 만들기](../../13-AI-Employee/기타/how-to-create-a-social-post-with-content-ai-.md)
 
 #### **전문가 팁:** **로컬 SEO 및 GBP**
 Google Business Profile에서 **주간 업데이트** 게시는 지역 순위를 **향상**시킵니다.

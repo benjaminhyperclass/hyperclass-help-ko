@@ -101,8 +101,8 @@
 ---
 
 **관련 도움말:**
-- [위젯 사용자 정의하기](customizing-dashboard-widgets.md)
-- [대시보드에서 위젯 편집하기](edit-widgets-on-the-dashboard.md)
+- [위젯 사용자 정의하기](../customizing-dashboard-widgets.md)
+- [대시보드에서 위젯 편집하기](../edit-widgets-on-the-dashboard.md)
 - [위젯 제거하기](removing-a-widget.md)
 
 ---

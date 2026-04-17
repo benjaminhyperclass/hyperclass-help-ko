@@ -59,7 +59,7 @@
 - **제휴 캠페인에 추가(Add to Affiliate Campaign)**: 캠페인 탭의 특정 캠페인에 어필리에이트를 추가합니다.
 - **제휴 캠페인에서 제거(Remove from Affiliate Campaign)**: 기존 캠페인에서 어필리에이트를 제거합니다.
 
-[자세한 내용은 여기에서 확인하세요.]([getting-started-with-affiliate-automations](getting-started-with-affiliate-automations.md))
+[자세한 내용은 여기에서 확인하세요.](../Affiliate-Manager-Automation/getting-started-with-affiliate-automations.md)
 
 ---
 

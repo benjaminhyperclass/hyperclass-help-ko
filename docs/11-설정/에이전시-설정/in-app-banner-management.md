@@ -50,7 +50,7 @@ Hyperclass의 에이전시 설정(Agency Settings)에서 배너 관리 기능을
 - 배너 관리는 **Agency Settings(에이전시 설정) → Banner(배너)**에서 이용할 수 있습니다.
 - 일반적으로 **Agency Admins(에이전시 관리자)**에게만 제한됩니다. 계정이 커스텀 역할을 사용하는 경우, 사용자가 에이전시 수준 설정을 관리할 권한(또는 계정에서 이용 가능한 경우 특정 **Banner Management(배너 관리)** 권한)을 가지고 있는지 확인하세요.
 - 배너 변경사항은 에이전시에 영향을 주며 배너의 범위에 따라 연결된 하위 계정으로 전파될 수 있습니다.
-- 역할/권한 설정에 대해서는 **[에이전시 | 사용자 역할 및 권한 관리]([agency-managing-user-roles-permissions](agency-managing-user-roles-permissions.md))**를 참조하세요.
+- 역할/권한 설정에 대해서는 **[에이전시 | 사용자 역할 및 권한 관리](../사용자-설정/agency-managing-user-roles-permissions.md)**를 참조하세요.
 
 ---
 

@@ -21,7 +21,7 @@
 이 기능을 활성화하고 사용하려면 두 가지 필수 요건이 있습니다:
 
 - PayPal 비즈니스 계정 연동 (가이드)
-- 지급 방식(Payout Methods)에 제휴사의 PayPal 추가 ([가이드](how-to-add-link-a-new-payout-method-for-affiliates.md))
+- 지급 방식(Payout Methods)에 제휴사의 PayPal 추가 ([가이드](how-to-add-link-a-new-payout-method-for-affiliates.md)
 
 ## 제휴 수수료 지급을 위해 PayPal을 연동한 후 퍼널/웹사이트 주문 양식에서 PayPal 버튼을 숨기려면 어떻게 하나요?
 

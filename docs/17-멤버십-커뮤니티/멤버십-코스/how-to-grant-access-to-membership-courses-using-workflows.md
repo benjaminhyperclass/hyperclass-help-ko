@@ -116,10 +116,10 @@ Hyperclass는 사용자 액션과 워크플로우 성능을 모니터링할 수 
 
 ## **관련 가이드**
 
-- [시작하기 - 강의 런칭](getting-started-launch-a-course.md)
+- [시작하기 - 강의 런칭](../../01-시작하기/커머스/getting-started-launch-a-course.md)
 - 강의 대시보드 이해하기
-- [커뮤니티 내 유료 강의](paid-courses-inside-communities.md)
-- [커뮤니티의 고급 강의 잠금 해제 옵션](advanced-course-unlock-options-in-communities.md)
+- [커뮤니티 내 유료 강의](../커뮤니티/paid-courses-inside-communities.md)
+- [커뮤니티의 고급 강의 잠금 해제 옵션](../기타/advanced-course-unlock-options-in-communities.md)
 
 ---
 *원문 최종 수정: Mon, 24 Nov, 2025 at 6:56 AM*

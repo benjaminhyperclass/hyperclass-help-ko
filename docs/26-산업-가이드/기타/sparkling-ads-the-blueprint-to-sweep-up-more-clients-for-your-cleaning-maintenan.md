@@ -76,7 +76,7 @@
 #### **예산 팁:**
 **하루 $30**으로 시작하여 최상의 ROI를 위해 **높은 구매 의도 검색**에 집중하세요.
 
-[HVAC PPC 캠페인 설정 방법](how-to-set-up-google-ad-conversion-actions.md)
+[HVAC PPC 캠페인 설정 방법](../../07-워크플로우/기타/how-to-set-up-google-ad-conversion-actions.md)
 
 #### **1.3 Google 비즈니스 프로필에서 통화 추적 활성화**
 
@@ -87,7 +87,7 @@
 #### **예시:**
 **전화의 50%가 응답되지 않는다면**, **부재중 전화 문자 자동화**로 **손실된 일거리의 15-20%를 회복**할 수 있습니다.
 
-[새 광고 캠페인 만들기](create-new-ad-campaign-in-ad-manager.md)
+[새 광고 캠페인 만들기](../../10-마케팅/기타/create-new-ad-campaign-in-ad-manager.md)
 
 [캐러셀 광고 만들기](https://help.gohlighlevel.com/support/solutions/articles/155000003660-carousel-ads-in-ad-manager)
 
@@ -100,9 +100,9 @@
 ✅ Facebook의 클릭당 비용(CPC)은 **Google 광고보다 낮아서** **훌륭한 저비용 전략**입니다.
 ✅ **잘 타겟팅된 Facebook 광고**는 **리드당 $5 - $15로 리드를 생성**할 수 있습니다.
 
-[광고 관리자 개요](overview-of-ad-manager.md)
+[광고 관리자 개요](../../10-마케팅/Getting-Started-w/-Ad-Manager/overview-of-ad-manager.md)
 
-[광고 관리자와 Facebook 연결하기](connect-facebook-with-ad-manager.md)
+[광고 관리자와 Facebook 연결하기](../../10-마케팅/Ad-Manager-Setup-&-Configuration/connect-facebook-with-ad-manager.md)
 
 #### **2.1 높은 전환율의 Facebook 광고 만들기**
 
@@ -117,7 +117,7 @@
 ✅ **제안:** **"이번 달 딥클리닝 $50 할인!"**
 ✅ **광고 문구:** "새로운 시작이 필요하신가요? 저희 전문 청소업체가 당신의 집을 반짝반짝하게 만들어드립니다. 첫 청소를 예약하고 $50를 절약하세요!"
 
-[청소업을 위한 Facebook 광고 만들기](how-to-create-a-facebook-form-in-ad-manager.md)
+[청소업을 위한 Facebook 광고 만들기](../../10-마케팅/Ad-Campaign-Creation-and-Management/how-to-create-a-facebook-form-in-ad-manager.md)
 
 #### **2.2 리타겟팅 광고로 관심 있는 리드 되돌리기**
 
@@ -128,7 +128,7 @@
 #### **예시:**
 *"저희 청소 서비스를 확인하셨지만 아직 예약하지 않으셨네요—오늘 예약하시면 10% 할인!"*
 
-[커스텀 오디언스 세그먼트를 사용한 리타겟팅 광고 설정](create-custom-audiences-in-ad-manager.md)
+[커스텀 오디언스 세그먼트를 사용한 리타겟팅 광고 설정](../../10-마케팅/Ad-Campaign-Creation-and-Management/create-custom-audiences-in-ad-manager.md)
 
 #### **2.3 Facebook 광고로부터의 리드 후속 조치 자동화**
 
@@ -136,7 +136,7 @@
 - **SMS, 이메일, AI 챗봇 응답**을 자동화합니다.
 - 경쟁업체가 일거리를 가져가기 전에 **즉시 후속 조치**합니다.
 
-[워크플로우로 Facebook 리드 후속 조치 자동화하기](workflow-trigger-facebook-lead-form-submitted.md)
+[워크플로우로 Facebook 리드 후속 조치 자동화하기](../../07-워크플로우/Facebook/Instagram-Events-Workflow-Triggers/workflow-trigger-facebook-lead-form-submitted.md)
 
 ### 3단계: AI & 자동화로 모든 리드 포착 및 전환하기
 
@@ -145,7 +145,7 @@
 #### ✅ **5분 내에 응답을 받지 못한 리드의 75%**가 경쟁업체로 갑니다.
 ✅ **리드 응답 자동화는 전환율을 40% 증가**시킵니다.
 
-[AI 채팅 위젯 설정 방법](getting-started-with-chat-widget.md)
+[AI 채팅 위젯 설정 방법](../../06-사이트/getting-started-with-chat-widget.md)
 
 #### **3.1 채팅 위젯으로 웹사이트 방문자 포착하기**
 
@@ -174,7 +174,7 @@
 - **리드당 비용(CPL)** 및 **예약된 일거리당 비용**을 추적합니다.
 - **최고 성과 캠페인에 예산을 할당**합니다.
 
-[청소 및 관리 광고용 통화 추적 설정하기](how-to-set-up-call-tracking-number-pool-.md)
+[청소 및 관리 광고용 통화 추적 설정하기](../../15-전화-시스템/통화/how-to-set-up-call-tracking-number-pool-.md)
 
 #### **4.2 더 나은 결과를 위한 광고 A/B 테스트**
 

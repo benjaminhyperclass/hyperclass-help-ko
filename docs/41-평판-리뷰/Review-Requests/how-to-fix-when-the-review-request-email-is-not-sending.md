@@ -20,7 +20,7 @@
 [https://gohighlevelassist.freshdesk.com/support/solutions/articles/48001203144-limitation-of-using-smtp-when-emails-are-not-sending](https://gohighlevelassist.freshdesk.com/support/solutions/articles/48001203144-limitation-of-using-smtp-when-emails-are-not-sending)
 
 리뷰, 리뷰 요청, HighLevel 리뷰 위젯 가이드:
-[[[reviews-review-requests-and-the-highlevel-review-widget](reviews-review-requests-and-the-highlevel-review-widget.md)]]
+[[[reviews-review-requests-and-the-highlevel-review-widget](../기타/reviews-review-requests-and-the-highlevel-review-widget.md)]]
 
 ---
 *원문 최종 수정: 2021년 12월 9일 오후 4:16*

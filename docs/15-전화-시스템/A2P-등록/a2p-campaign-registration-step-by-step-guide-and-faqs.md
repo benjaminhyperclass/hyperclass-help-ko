@@ -144,7 +144,7 @@ SMS 캠페인의 목적을 명확하게 설명하세요. 누가 메시지를 받
 - SMS 알림을 폼에서 강제할 수 없습니다. 즉, 진행하기 위해 동의와 전화번호를 모두 필수로 요구할 수 없습니다.
 - 하단에 개인정보처리방침 및 약관 포함
 
-웹 폼 옵트인 요구사항에 대한 모범 사례와 예시는 [2026년 전화번호 A2P 승인 받는 방법](how-to-get-your-phone-number-a2p-approved-in-2026.md)을 참조하세요.
+웹 폼 옵트인 요구사항에 대한 모범 사례와 예시는 [2026년 전화번호 A2P 승인 받는 방법](../how-to-get-your-phone-number-a2p-approved-in-2026.md)을 참조하세요.
 
 ![웹 폼 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155065627886/original/XBwuoN2CqnohL2H9NkY29_pJUQtuXfHl1w.png?1771965899)
 
@@ -194,7 +194,7 @@ SMS 캠페인의 목적을 명확하게 설명하세요. 누가 메시지를 받
 
 - "I consent to receive non-marketing text messages from [사업체명] about [캠페인_설명의_사용사례] Message frequency may vary, message & data rates may apply. Text HELP for assistance, reply STOP to opt out."
 
-동의 체크박스 요구사항과 예시에 대한 자세한 정보는 [여기를 클릭](how-to-get-your-phone-number-a2p-approved-in-2026.md)하세요.
+동의 체크박스 요구사항과 예시에 대한 자세한 정보는 [여기를 클릭](../how-to-get-your-phone-number-a2p-approved-in-2026.md)하세요.
 
 ### 개인정보처리방침
 
@@ -208,7 +208,7 @@ SMS 캠페인의 목적을 명확하게 설명하세요. 누가 메시지를 받
 
 "모바일 정보는 마케팅/프로모션 목적으로 제3자/제휴사와 공유되지 않습니다. 고객 서비스 등 지원 서비스의 하청업체와의 정보 공유는 허용됩니다. 다른 모든 사용 사례 카테고리는 문자 메시지 발신자 옵트인 데이터와 동의를 제외하며, 이 정보는 제3자와 공유되지 않습니다."
 
-개인정보처리방침 요구사항과 예시에 대한 자세한 정보는 [여기를 클릭](how-to-get-your-phone-number-a2p-approved-in-2026.md)하세요.
+개인정보처리방침 요구사항과 예시에 대한 자세한 정보는 [여기를 클릭](../how-to-get-your-phone-number-a2p-approved-in-2026.md)하세요.
 
 ### 서비스 약관
 
@@ -226,7 +226,7 @@ SMS 캠페인의 목적을 명확하게 설명하세요. 누가 메시지를 받
 - 언제나 저희로부터 보내는 메시지와 저희에게 보내는 메시지에 대해 메시지 및 데이터 요금이 부과될 수 있습니다. 메시지 빈도는 다양합니다. 문자 요금제나 데이터 요금제에 대한 질문은 무선 통신사에 문의하세요.
 - 개인정보 관련 문의는 개인정보처리방침을 참조하세요: {개인정보처리방침 링크}
 
-개인정보처리방침 요구사항과 예시에 대한 자세한 정보는 [여기를 클릭](how-to-get-your-phone-number-a2p-approved-in-2026.md)하세요.
+개인정보처리방침 요구사항과 예시에 대한 자세한 정보는 [여기를 클릭](../how-to-get-your-phone-number-a2p-approved-in-2026.md)하세요.
 
 ## 자주 묻는 질문
 

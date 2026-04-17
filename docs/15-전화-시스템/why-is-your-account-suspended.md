@@ -18,7 +18,7 @@ Lead Connector가 인증되지 않음을 반환했습니다.
 
 ![전화번호 가져오기 실패 메시지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155011558335/original/t6kNEWFG_8NCxLNFiy8kNq-nYrZrXKROCg.png?1698791291)
 
-다음 템플릿을 복사하여 답변을 작성하고, 스크린샷을 첨부한 후 [저희 지원팀에 티켓을 생성](support-chat-widget-upgrade-live-24-7-highlevel-chat-support-just-got-better-.md)해주세요. 계정 정지 해제를 위해 Twilio 지원팀에 티켓을 생성해드리겠습니다.
+다음 템플릿을 복사하여 답변을 작성하고, 스크린샷을 첨부한 후 [저희 지원팀에 티켓을 생성](../03-대화/기타/support-chat-widget-upgrade-live-24-7-highlevel-chat-support-just-got-better-.md)해주세요. 계정 정지 해제를 위해 Twilio 지원팀에 티켓을 생성해드리겠습니다.
 
 [1. 리드가 수신 동의 후 워크플로우의 첫 번째 문자 메시지 공유:](#1-리드가-수신-동의-후-워크플로우의-첫-번째-문자-메시지-공유)
 

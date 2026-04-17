@@ -8,7 +8,7 @@
 
 지역 고객에게 의존하는 비즈니스 - 오프라인 매장이나 특정 도시의 서비스 제공업체를 생각해보세요 - 에게는 구글의 지역 검색 결과에서 상위 랭킹하는 것이 매우 중요합니다. GoHighLevel의 로컬 SEO 기능은 로컬 SEO 히트맵을 사용하여 비즈니스가 다양한 지역에서 어떤 성과를 보이는지 시각화하고 추적할 수 있도록 도와줍니다. 이 글에서는 로컬 SEO 프로젝트를 설정하고, 히트맵 도구를 사용해 지역 순위를 확인하며, 평균 순위(Average Rank) 같은 지표를 해석하고, 지역 추적을 위한 크레딧(포인트)을 관리하는 방법을 설명드리겠습니다. 로컬 SEO 모범 사례와 문제 해결 팁도 함께 다루겠습니다.
 
-**중요:** 이는 Search Atlas SEO를 통한 유료 업그레이드입니다. [Search Atlas SEO에 대한 자세한 정보는 여기를 클릭하세요](seo-a-guide-to-boosting-your-search-rankings.md).
+**중요:** 이는 Search Atlas SEO를 통한 유료 업그레이드입니다. [Search Atlas SEO에 대한 자세한 정보는 여기를 클릭하세요](SEO/seo-a-guide-to-boosting-your-search-rankings.md).
 
 ## 로컬 SEO 히트맵이란?
 

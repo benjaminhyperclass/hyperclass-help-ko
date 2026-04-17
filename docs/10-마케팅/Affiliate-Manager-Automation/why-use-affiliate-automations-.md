@@ -46,26 +46,26 @@
 
 제휴사가 생성한 리드가 올바르게 귀속되고 수동 또는 오프라인 판매가 올바른 제휴사에게 배정되도록 합니다.
 
-- [워크플로우를 통한 제휴사 하위 리드 추가](how-to-automate-lead-assignment-to-affiliates.md)
+- [워크플로우를 통한 제휴사 하위 리드 추가](../../05-기회-파이프라인/기타/how-to-automate-lead-assignment-to-affiliates.md)
 - 제휴사 수동 판매 추가
 
 ### 3. **수수료 관리 및 추적**
 
 캠페인 설정에 따라 수수료를 자동으로 계산하고 제휴사 지급 상태를 추적하여 적시 보상을 보장합니다.
 
-- [워크플로우의 제휴사 판매 트리거](how-to-automate-affiliate-sales-with-the-new-affiliate-sales-trigger.md)
+- [워크플로우의 제휴사 판매 트리거](../../07-워크플로우/기타/how-to-automate-affiliate-sales-with-the-new-affiliate-sales-trigger.md)
 
 ### 4. **캠페인 등록 및 타겟 커뮤니케이션**
 
 제휴사의 특정 캠페인 등록을 자동화하고 성과와 참여도에 따른 개인화된 커뮤니케이션을 발송합니다.
 
-- [제휴사 캠페인 등록 트리거](all-about-affiliate-enrolled-in-campaign-trigger.md)
+- [제휴사 캠페인 등록 트리거](../../07-워크플로우/기타/all-about-affiliate-enrolled-in-campaign-trigger.md)
 
 ### 5. **제휴사 보상 및 참여 유도**
 
 판매 달성이나 특정 마일스톤 달성과 같은 특정 행동이 완료되었을 때 제휴사에게 자동 알림을 발송합니다.
 
-- [제휴사 참여를 위한 축하 이메일 또는 SMS](all-about-affiliate-enrolled-in-campaign-trigger.md)
+- [제휴사 참여를 위한 축하 이메일 또는 SMS](../../07-워크플로우/기타/all-about-affiliate-enrolled-in-campaign-trigger.md)
 
 ---
 
@@ -74,10 +74,10 @@
 이러한 워크플로우 구현에 도움이 되도록 각 자동화 문서의 빠른 개요를 제공하여 자세한 단계별 가이드에 쉽게 액세스할 수 있습니다:
 
 - **[제휴사 생성 워크플로우 트리거](getting-started-with-affiliate-automations.md)**: 제휴사를 캠페인에 자동으로 추가하고 상태를 업데이트하는 방법을 배우세요.
-- **[워크플로우의 제휴사 판매 트리거](how-to-automate-affiliate-sales-with-the-new-affiliate-sales-trigger.md)**: 제휴사가 생성한 판매를 추적하고 자동화하며, 더 나은 추적을 위한 알림이나 세분화를 설정합니다.
-- **[워크플로우를 통한 제휴사 하위 리드 추가](how-to-automate-lead-assignment-to-affiliates.md)**: 리드를 제휴사에게 원활하게 배정하고 리드 육성 프로세스를 자동화합니다.
+- **[워크플로우의 제휴사 판매 트리거](../../07-워크플로우/기타/how-to-automate-affiliate-sales-with-the-new-affiliate-sales-trigger.md)**: 제휴사가 생성한 판매를 추적하고 자동화하며, 더 나은 추적을 위한 알림이나 세분화를 설정합니다.
+- **[워크플로우를 통한 제휴사 하위 리드 추가](../../05-기회-파이프라인/기타/how-to-automate-lead-assignment-to-affiliates.md)**: 리드를 제휴사에게 원활하게 배정하고 리드 육성 프로세스를 자동화합니다.
 - **제휴사 수동 판매 추가**: 오프라인 판매를 포함하여 수동 판매를 배정하고 수수료를 쉽게 계산합니다.
-- **[제휴사 캠페인 등록 트리거](all-about-affiliate-enrolled-in-campaign-trigger.md)**: 제휴사가 캠페인에 추가될 때를 자동으로 추적하고 필요한 모든 데이터를 수집합니다.
+- **[제휴사 캠페인 등록 트리거](../../07-워크플로우/기타/all-about-affiliate-enrolled-in-campaign-trigger.md)**: 제휴사가 캠페인에 추가될 때를 자동으로 추적하고 필요한 모든 데이터를 수집합니다.
 
 ---
 

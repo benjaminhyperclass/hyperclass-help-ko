@@ -44,7 +44,7 @@
 
 # 문제 해결
 
-#### [구글 마이 비즈니스 게시 문제 해결 문서 보기](google-my-business-publishing-troubleshooting.md)
+#### [구글 마이 비즈니스 게시 문제 해결 문서 보기](../../36-기타/리커버리/google-my-business-publishing-troubleshooting.md)
 
 소셜 플래너는 새로운 UI에서 이용 가능합니다.
 

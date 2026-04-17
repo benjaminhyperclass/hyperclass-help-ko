@@ -208,11 +208,11 @@
 
 ### **관련 가이드**
 
-- [워크플로우 액션 - 문서 및 계약서 발송](workflow-action-send-documents-contracts.md)
+- [워크플로우 액션 - 문서 및 계약서 발송](../07-워크플로우/Documents-&-Contracts/workflow-action-send-documents-contracts.md)
 - [워크플로우 내 문서 및 계약서 트리거](workflow-trigger-documents-contracts.md)
 - [문서 및 계약서 사용 방법](how-to-use-documents-contracts-.md)
 - [문서 알림 커스터마이징](documents-contracts-email-templates-and-team-notifications-setup.md)
-- [서명 시 결제 자동화](documents-contracts-how-to-automate-sending-invoices-when-documents-are-signed.md)
+- [서명 시 결제 자동화](문서-계약/documents-contracts-how-to-automate-sending-invoices-when-documents-are-signed.md)
 - [다중 수신자 지원](multiple-recipient-support-on-documents-contracts.md)
 
 ---

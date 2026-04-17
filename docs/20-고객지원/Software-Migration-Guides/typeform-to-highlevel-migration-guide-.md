@@ -172,7 +172,7 @@ Typeform의 자동화는 앱 내에서 구축하거나 Slack, Zapier, 웹훅을 
 
 ### 3단계: 폼 제출 및 대시보드 위젯 보고서
 
-- [폼 응답이 어디에 표시되나요?]([where-do-form-responses-show-up-](where-do-form-responses-show-up-.md))
+- [폼 응답이 어디에 표시되나요?](../../06-사이트/where-do-form-responses-show-up-.md)
 
 - 커스텀 위젯(Pro 플랜 사용자만)
 

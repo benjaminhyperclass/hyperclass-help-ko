@@ -144,7 +144,7 @@
 
 ![저장된 잠재고객이 가는 곳](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055132230/original/VTeYdnp2LN-Ej0ZGO43TCiOvM-FY0RaqnQ.png?1759437819)
 
-**팁**: 연락처가 생성되면 하위 계정에서 육성 캠페인을 시작하세요. **[프로스펙팅 도구를 통해 생성된 잠재고객에게 연락하는 방법](프로스펙팅 도구를 통해 생성된 잠재고객에게 연락하는 방법.md)([how-to-reach-out-to-prospect-leads-generated-via-the-prospecting-tool](how-to-reach-out-to-prospect-leads-generated-via-the-prospecting-tool.md))** 참조
+**팁**: 연락처가 생성되면 하위 계정에서 육성 캠페인을 시작하세요. **[프로스펙팅 도구를 통해 생성된 잠재고객에게 연락하는 방법](프로스펙팅 도구를 통해 생성된 잠재고객에게 연락하는 방법.md)([how-to-reach-out-to-prospect-leads-generated-via-the-prospecting-tool](how-to-reach-out-to-prospect-leads-generated-via-the-prospecting-tool.md)** 참조
 
 ---
 

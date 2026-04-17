@@ -80,7 +80,7 @@
 메시지 예시:
 "새 집 축하해요, 사라씨! 당신과 가족을 도울 수 있어서 즐거웠습니다. 계약업체나 수리공이 필요하거나 — 업그레이드를 결정하시면 언제든 문자 주세요!"
 
-#### [고객 후속 조치 자동화하는 방법](how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
+#### [고객 후속 조치 자동화하는 방법](../../24-대학/HighLevel-How-To&#39;s/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
 
 ### 1.2 기념일 체크인 트리거 설정
 
@@ -90,7 +90,7 @@
 메시지 예시:
 "안녕하세요 사라씨, [주소]로 이사온 지 벌써 1년이 된 걸 믿을 수 있나요? 지금 집값이 얼마나 올랐는지 궁금하시면, 간단한 분석을 해드릴 수 있어요!"
 
-#### [유지보수 알림 설정하는 방법](how-to-send-users-appointment-reminders.md)
+#### [유지보수 알림 설정하는 방법](../../23-레거시-자동화/Logic-&amp;-Fulfillment/how-to-send-users-appointment-reminders.md)
 
 ## 2단계: 5성 리뷰 자동 생성
 
@@ -108,7 +108,7 @@
 메시지 예시:
 "사라씨, 당신과 일하는 것은 꿈만 같았어요! 좋은 경험이었다면, 간단한 리뷰를 남겨주실 수 있나요? 다른 주택 소유자들이 저를 찾는 데 도움이 됩니다. 링크는 여기예요: [구글 리뷰 링크]"
 
-#### [자동 리뷰 요청 보내는 방법](how-to-setup-workflow-triggers-for-google-and-facebook-reviews.md)
+#### [자동 리뷰 요청 보내는 방법](../../41-평판-리뷰/Review-Requests/how-to-setup-workflow-triggers-for-google-and-facebook-reviews.md)
 
 ### 2.2 부정적 피드백 사전 대응
 
@@ -158,7 +158,7 @@
 메시지 예시:
 "이웃집이 방금 91만 2천 달러에 팔렸어요 — 작년보다 8% 상승했습니다. 당신 집은 지금 얼마나 될지 알고 싶으신가요?"
 
-#### [구독 기반 서비스 설정하는 방법](pause-and-resume-subscriptions.md)
+#### [구독 기반 서비스 설정하는 방법](../../08-결제/pause-and-resume-subscriptions.md)
 
 ## 5단계: AI와 스마트 리스트로 데이터베이스 활용
 
@@ -185,9 +185,9 @@
 메시지 예시:
 "안녕하세요 사라씨! 아직도 집이 마음에 드시나요? 안부를 묻고 싶었는데, 업그레이드할 준비가 되시면 보여드릴 수 있는 비공개 매물들이 있어요."
 
-#### [유지보수 플랜 판매 및 자동화하는 방법](recurring-appointments.md)
+#### [유지보수 플랜 판매 및 자동화하는 방법](../../04-캘린더-예약/기타/recurring-appointments.md)
 
-#### [고객 유지를 위한 스마트 리스트 사용법](getting-started-with-smart-lists.md)
+#### [고객 유지를 위한 스마트 리스트 사용법](../../02-연락처/기타/getting-started-with-smart-lists.md)
 
 ## 마무리: 장기 고객 = 장기 수익
 

@@ -125,11 +125,11 @@
 | **홍보** | "이번 달 이사 청소 30% 할인!" | "예약하려면 DM 주세요!" |
 | **사회적 증명 및 신뢰성** | "이 사무실 딥클리닝 전후를 확인해보세요!" | "웹사이트에서 더 많은 사례를 보세요!" |
 
-[Content AI로 이메일 작성하는 방법]([how-to-create-emails-using-content-ai-](how-to-create-emails-using-content-ai-.md))
+[Content AI로 이메일 작성하는 방법](../../13-AI-Employee/Content-AI-in-the-Email-Builder/how-to-create-emails-using-content-ai-.md)
 
-[Content AI로 블로그 게시물 개요 작성하는 방법](how-to-create-a-social-post-with-content-ai-.md)
+[Content AI로 블로그 게시물 개요 작성하는 방법](../../13-AI-Employee/기타/how-to-create-a-social-post-with-content-ai-.md)
 
-[Content AI로 소셜 미디어 게시물 작성하는 방법](how-to-create-a-social-post-with-content-ai-.md)
+[Content AI로 소셜 미디어 게시물 작성하는 방법](../../13-AI-Employee/기타/how-to-create-a-social-post-with-content-ai-.md)
 
 ### 4단계: 성공 측정 및 성능 개선
 

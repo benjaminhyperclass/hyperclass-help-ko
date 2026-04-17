@@ -174,11 +174,11 @@
 
 ### **관련 문서**
 
-- [음성 AI 에이전트의 세분화된 권한 관리]([managing-granular-permissions-for-voice-ai-agents](managing-granular-permissions-for-voice-ai-agents.md))
-- [대화 AI 설정하기]([setting-up-conversation-ai](setting-up-conversation-ai.md))
-- [에이전시 – 사용자 역할 및 권한 관리]([agency-managing-user-roles-permissions](agency-managing-user-roles-permissions.md))
-- [고급 설정 개요 - 대화 AI]([advanced-settings-overview-conversation-ai](advanced-settings-overview-conversation-ai.md))
-- [대화에서 AI 응답 정보 보기 및 편집]([view-edit-ai-response-info-in-conversations](view-edit-ai-response-info-in-conversations.md))
+- [음성 AI 에이전트의 세분화된 권한 관리](../Voice-AI/managing-granular-permissions-for-voice-ai-agents.md)
+- [대화 AI 설정하기](../Getting-Started-w/-Conversation-AI/setting-up-conversation-ai.md)
+- [에이전시 – 사용자 역할 및 권한 관리](../../11-설정/사용자-설정/agency-managing-user-roles-permissions.md)
+- [고급 설정 개요 - 대화 AI](../Getting-Started-w/-Conversation-AI/advanced-settings-overview-conversation-ai.md)
+- [대화에서 AI 응답 정보 보기 및 편집](../../03-대화/view-edit-ai-response-info-in-conversations.md)
 
 ---
 *원문 최종 수정: Fri, 22 Aug, 2025 at 6:51 AM*

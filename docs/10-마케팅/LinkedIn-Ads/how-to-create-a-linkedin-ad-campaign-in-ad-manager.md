@@ -70,7 +70,7 @@
 
 ![LinkedIn 캠페인 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155054813264/original/NTT-StjHux21FptKzUJLqkBC1Yub-zZ1ew.png?1759145841)
 
-### 오디언스 타겟팅 ([자세한 내용 보기]([audience-targeting-for-linkedin-campaigns-in-ad-manager](audience-targeting-for-linkedin-campaigns-in-ad-manager.md)))
+### 오디언스 타겟팅 ([자세한 내용 보기](audience-targeting-for-linkedin-campaigns-in-ad-manager.md))
 
 - **필수**: 위치 (포함/제외)
 - **선택 필터**: 직책, 업종, 회사 규모, 직급, 스킬, 교육, 관심사 및 특성
@@ -131,7 +131,7 @@
 - **개인정보 섹션**: 필수 개인정보 URL + 선택적 공개 텍스트
 - **동의 체크박스**: 최대 5개
 - **확인 페이지**: 감사 메시지 + 선택적 CTA (웹사이트 방문, 다운로드, 전화)
-- **LinkedIn 리드 폼 및 생성 방법** 자세히 알아보기: [링크]([how-to-create-a-linkedin-lead-form-in-ad-manager](how-to-create-a-linkedin-lead-form-in-ad-manager.md))
+- **LinkedIn 리드 폼 및 생성 방법** 자세히 알아보기: [링크](how-to-create-a-linkedin-lead-form-in-ad-manager.md)
 
 ![LinkedIn 리드 폼 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155054813821/original/sKpAqAyVXAxfQn76GFg9WVJCC3XwD_XCQA.png?1759146093)
 
@@ -147,7 +147,7 @@
 
 ## 5단계: 캠페인 그룹 성과 확인
 
-발행 후 성과는 Statistics(통계) → LinkedIn에서 추적할 수 있습니다. LinkedIn 통계에 대한 자세한 내용은 이 도움말 문서를 참조하세요: [LinkedIn 광고 통계]([understanding-linkedin-statistics-in-ad-manager](understanding-linkedin-statistics-in-ad-manager.md))
+발행 후 성과는 Statistics(통계) → LinkedIn에서 추적할 수 있습니다. LinkedIn 통계에 대한 자세한 내용은 이 도움말 문서를 참조하세요: [LinkedIn 광고 통계](understanding-linkedin-statistics-in-ad-manager.md)
 
 - **캠페인 그룹 레벨**: 지출, 노출수, 클릭수, 클릭률(CTR)
 - **캠페인 레벨**: 전환수, 오디언스 효과, 리드당 비용(CPL)

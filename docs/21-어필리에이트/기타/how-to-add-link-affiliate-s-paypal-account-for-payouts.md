@@ -110,8 +110,8 @@
 
 ## 다음 단계
 
-- [PayPal 자동 지급을 사용하여 제휴사 설정 및 지급하는 방법](how-to-set-up-and-pay-affiliates-using-paypal-auto-payouts.md)
-- [제휴사 지급 FAQ](faqs-for-affiliate-payouts.md)
+- [PayPal 자동 지급을 사용하여 제휴사 설정 및 지급하는 방법](../../10-마케팅/Affiliate-Payouts/how-to-set-up-and-pay-affiliates-using-paypal-auto-payouts.md)
+- [제휴사 지급 FAQ](../../10-마케팅/Affiliate-Payouts/faqs-for-affiliate-payouts.md)
 
 ---
 *원문 최종 수정: 2025-09-30*

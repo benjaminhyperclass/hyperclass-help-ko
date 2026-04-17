@@ -59,7 +59,7 @@
 
 GHL 팁: 이를 이메일 육성 캠페인, SMS 후속 조치, 블로그 콘텐츠로 재활용하세요.
 
-**[블로그 시작하기](default-blog-flow-getting-started-with-blogs.md)**
+**[블로그 시작하기](../../06-사이트/기타/default-blog-flow-getting-started-with-blogs.md)**
 
 #### **2. 비하인드 스토리 + 팀 문화**
 
@@ -138,7 +138,7 @@ GHL 팁: 게시물에서 GHL 퍼널이나 캘린더로 직접 링크하세요.
 
 보너스: Google Business 연동(Integration)을 사용하여 다른 도구 없이도 프로필을 활성 상태로 유지하세요.
 
-**[소셜 플래너 설정 시작하기](getting-started-setup-social-planner.md)**
+**[소셜 플래너 설정 시작하기](../../01-시작하기/마케팅-리드-생성/getting-started-setup-social-planner.md)**
 
 ### **교육하고 전환시키는 캡션**
 
@@ -153,7 +153,7 @@ GHL 팁: 게시물에서 GHL 퍼널이나 캘린더로 직접 링크하세요.
 - "잇몸 관리를 너무 오래 미루는 환자들을 많이 봅니다. 정기 스케일링이 왜 뼈 손실을 예방할 수 있는지 알아보세요. 다음 방문을 여기서 예약하세요 ➝ [링크]"
 - "생일까지 더 밝은 미소를 원하세요? 미백 패키지에 대해 문의하세요 — 'WHITE'라고 답장하시면 세부 사항을 보내드립니다."
 
-**[콘텐츠 AI로 소셜 게시물을 만드는 방법](how-to-create-a-social-post-with-content-ai-.md)**
+**[콘텐츠 AI로 소셜 게시물을 만드는 방법](../../13-AI-Employee/기타/how-to-create-a-social-post-with-content-ai-.md)**
 
 ### **해시태그 똑똑하게 사용하기**
 
@@ -167,7 +167,7 @@ GHL 팁: 게시물에서 GHL 퍼널이나 캘린더로 직접 링크하세요.
 
 GHL 팁: 소셜 플래너에서 자주 사용하는 해시태그를 저장하여 원클릭으로 사용하세요.
 
-**[소셜 플래너에서 그룹 해시태그를 만드는 방법](how-to-create-group-hashtags-within-the-social-planner.md)**
+**[소셜 플래너에서 그룹 해시태그를 만드는 방법](../소셜-플래너/how-to-create-group-hashtags-within-the-social-planner.md)**
 
 ### **소셜 게시물을 전환 자산으로 활용하기**
 

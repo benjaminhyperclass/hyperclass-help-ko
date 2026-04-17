@@ -57,7 +57,7 @@ Hyperclass와 QuickBooks 간 양방향 연동 사용법을 알아보세요.
 
 - QuickBooks의 기존 연락처를 Hyperclass로 가져오고, 새 연락처도 계속 동기화합니다(최대 5분 소요).
 
-- QuickBooks에서 연락처의 첫 번째 인보이스가 완전히 결제되면(잔액 = $0), Hyperclass에서 리뷰 요청을 자동 발송합니다([연동 카드에서 켜기/끄기 가능](automatic-review-request-when-invoice-paid-in-quickbooks.md)).
+- QuickBooks에서 연락처의 첫 번째 인보이스가 완전히 결제되면(잔액 = $0), Hyperclass에서 리뷰 요청을 자동 발송합니다([연동 카드에서 켜기/끄기 가능](../42-통합/QuickBooks/automatic-review-request-when-invoice-paid-in-quickbooks.md).
 
 - 초기 연결 시 활성화하면 QuickBooks의 기존 인보이스를 Hyperclass로 가져옵니다. 단, Hyperclass에서 이 인보이스들을 수정해도 QuickBooks로 다시 동기화되지 않으며, 무한 루프가 생기지도 않으니 걱정하지 마세요!
 

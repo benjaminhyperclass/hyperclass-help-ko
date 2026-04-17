@@ -38,7 +38,7 @@
 
 지갑 크레딧이 무료인지 유료인지는 하위 계정 설정 > Company Billing(회사 청구) > See Details(세부 정보 보기) (Transaction History(거래 내역))에서 확인할 수 있습니다.
 
-자세한 내용은 이 아티클을 참고하세요: [SaaS 지갑 크레딧 관리](saas-wallet-credit-management.md)
+자세한 내용은 이 아티클을 참고하세요: [SaaS 지갑 크레딧 관리](../../15-전화-시스템/기타/saas-wallet-credit-management.md)
 
 ![SaaS 지갑 잔액 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048933937/original/xzJs8bQuXFcLRrINWXwPf49y7UohpaAqyg.png?1750947254)
 

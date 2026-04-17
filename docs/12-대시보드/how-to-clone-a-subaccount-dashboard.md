@@ -43,7 +43,7 @@
 ## 관련 문서
 
 - [하위 계정 대시보드 페이지 - 보기 또는 편집](subaccount-dashboard-page-view-or-edit.md)
-- [대시보드 편집하는 방법](how-to-edit-a-dashboard.md)
+- [대시보드 편집하는 방법](시작하기/how-to-edit-a-dashboard.md)
 - [대시보드를 즐겨찾기로 고정하는 방법](how-to-pin-favorite-dashboards.md)
 - [대시보드 권한 관리하는 방법](how-to-manage-dashboard-permissions.md)
 

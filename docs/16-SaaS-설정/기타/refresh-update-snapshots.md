@@ -70,7 +70,7 @@
 
 - **전체 스냅샷을 다시 로드하지 않고** 해당 하위 계정들에 **수동으로 업데이트 동기화**
 
-[자세한 비디오 가이드는 여기서 확인하세요](pushing-loading-snapshot-updates-to-client-accounts.md)
+[자세한 비디오 가이드는 여기서 확인하세요](../../19-에이전시-뷰/Snapshots/pushing-loading-snapshot-updates-to-client-accounts.md)
 
 **참고:** 업데이트는 자신의 에이전시 내 하위 계정에만 푸시됩니다. 외부 에이전시는 새 링크를 사용해서 다시 가져와야 합니다.
 

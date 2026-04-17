@@ -8,7 +8,7 @@
 
 완전히 새로워진 Hyperclass 연락처 상세 페이지는 모든 고객 상호작용을 한 곳에서 더 빠르고, 더 깔끔하고, 더 스마트하게 확인할 수 있는 방법을 제공합니다. 이 가이드에서는 무엇이 바뀌었는지, 왜 중요한지, 그리고 자동 저장, 접을 수 있는 패널, 즉석 키보드 탐색 등 생산성을 높여주는 업그레이드를 어떻게 사용하는지 설명합니다.
 
-**중요**: 이 기능은 현재 Labs에서 제공됩니다. 보이지 않으면 관리자에게 Agency Settings(에이전시 설정) > Labs에서 활성화해 달라고 요청하세요. 자세한 내용은 [Labs 기능 - 완전 개요]([labs-features-complete-overview](labs-features-complete-overview.md))를 참조하세요.
+**중요**: 이 기능은 현재 Labs에서 제공됩니다. 보이지 않으면 관리자에게 Agency Settings(에이전시 설정) > Labs에서 활성화해 달라고 요청하세요. 자세한 내용은 [Labs 기능 - 완전 개요](../19-에이전시-뷰/Agency-Settings/labs-features-complete-overview.md)를 참조하세요.
 
 ---
 

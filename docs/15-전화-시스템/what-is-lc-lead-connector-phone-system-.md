@@ -81,50 +81,50 @@ LC 전화 시스템을 위한 전체 학습 경로, 문서, 전문가 자료 라
 
 LC Phone을 활성화하고 설정해서 팀이 바로 커뮤니케이션을 시작할 수 있도록 하는 방법을 배워보세요.
 
-- [에이전시와 하위 계정을 LC Phone으로 마이그레이션하는 방법]([how-do-i-migrate-my-agency-and-sub-account-over-to-lc-phone-](how-do-i-migrate-my-agency-and-sub-account-over-to-lc-phone-.md))
-- [하위 계정을 위한 규제 번들 및 주소 생성]([regulatory-bundle-and-address-creation-for-sub-accounts](regulatory-bundle-and-address-creation-for-sub-accounts.md))
-- [영국의 고객 확인(KYC)]([know-your-customer-kyc-in-the-united-kingdom](know-your-customer-kyc-in-the-united-kingdom.md))
+- [에이전시와 하위 계정을 LC Phone으로 마이그레이션하는 방법](how-do-i-migrate-my-agency-and-sub-account-over-to-lc-phone-.md)
+- [하위 계정을 위한 규제 번들 및 주소 생성](regulatory-bundle-and-address-creation-for-sub-accounts.md)
+- [영국의 고객 확인(KYC)](LC-Phone/know-your-customer-kyc-in-the-united-kingdom.md)
 - 수신 전화, 메시지 및 통화 상태 업데이트를 받기 위한 웹훅 설정(Twilio 사용자용)
-- [전화 다이얼러 개요]([the-phone-dialer-overview](the-phone-dialer-overview.md))
-- [자동 통화 및 음성메일 드롭 설정 방법](how-to-setup-automatic-calls-and-voicemail-drops.md)
+- [전화 다이얼러 개요](일반/the-phone-dialer-overview.md)
+- [자동 통화 및 음성메일 드롭 설정 방법](../02-연락처/기타/how-to-setup-automatic-calls-and-voicemail-drops.md)
 
 ### 마이그레이션 및 호환성
 
 Twilio와 같은 타사 제공업체에서 원활하게 전환하고 번호 설정, 메시지 기록, 설정을 유지하는 방법을 이해해 보세요.
 
-- [LC Phone에서 Twilio로 전화번호 이동하기(미국 및 국제)](moving-phone-numbers-from-lc-phone-to-twilio-us-international-.md)
-- [Twilio에서 LeadConnector(LC)로 미국 번호 이동하기]([moving-us-numbers-from-twilio-to-leadconnector-lc-](moving-us-numbers-from-twilio-to-leadconnector-lc-.md))
-- [하위 계정 간 번호 이동하기](moving-numbers-across-sub-accounts.md)
+- [LC Phone에서 Twilio로 전화번호 이동하기(미국 및 국제)](기타/moving-phone-numbers-from-lc-phone-to-twilio-us-international-.md)
+- [Twilio에서 LeadConnector(LC)로 미국 번호 이동하기](moving-us-numbers-from-twilio-to-leadconnector-lc-.md)
+- [하위 계정 간 번호 이동하기](기타/moving-numbers-across-sub-accounts.md)
 - 한 Twilio 계정에서 다른 계정으로 번호 이동하기
-- [전화번호 포팅하기(Twilio가 아닌 번호를 로케이션으로)](porting-your-telephone-number-non-twilio-number-to-a-location.md)
+- [전화번호 포팅하기(Twilio가 아닌 번호를 로케이션으로)](기타/porting-your-telephone-number-non-twilio-number-to-a-location.md)
 
 ### 전달률 및 컴플라이언스
 
 전달 성공률을 높이고 SMS 및 통화 규정을 준수하기 위해 LC Phone이 제공하는 도구를 살펴보세요.
 
-- [통화 추적(번호 풀) 설정 방법]([how-to-set-up-call-tracking-number-pool-](how-to-set-up-call-tracking-number-pool-.md))
-- [Voice Integrity로 전화번호 평판 개선하기](improve-your-phone-number.md)
-- [전화 시스템 메시징 분석 개요]([phone-system-messaging-analytics-overview](phone-system-messaging-analytics-overview.md))
-- [SMS 전달률 향상 및 SMS 제한 회피를 위한 모범 사례]([best-practices-for-sms-deliverability-and-avoiding-sms-restrictions](best-practices-for-sms-deliverability-and-avoiding-sms-restrictions.md))
+- [통화 추적(번호 풀) 설정 방법](통화/how-to-set-up-call-tracking-number-pool-.md)
+- [Voice Integrity로 전화번호 평판 개선하기](전화번호/improve-your-phone-number-s-reputation-with-voice-integrity.md)
+- [전화 시스템 메시징 분석 개요](LC-Phone/phone-system-messaging-analytics-overview.md)
+- [SMS 전달률 향상 및 SMS 제한 회피를 위한 모범 사례](메시징/best-practices-for-sms-deliverability-and-avoiding-sms-restrictions.md)
 
 ### 청구 및 사용량 관리
 
 내장 청구 대시보드와 알림을 사용해서 사용량을 실시간으로 추적하고 전화 시스템 비용을 파악하세요.
 
-- [SMS 및 MMS 비용 계산 방법]([how-to-calculate-sms-and-mms-costs](how-to-calculate-sms-and-mms-costs.md))
+- [SMS 및 MMS 비용 계산 방법](메시징/how-to-calculate-sms-and-mms-costs.md)
 - SMS 및 MMS 비용 계산: 단계별 가이드
 
 ### 문제 해결 및 모니터링
 
 SMS 전달, 통화 품질, 컴플라이언스 문제를 식별하고 해결하는 데 도움이 되는 빠른 링크들입니다.
 
-- [SMS 전달 문제 해결]([troubleshooting-sms-delivery](troubleshooting-sms-delivery.md))
+- [SMS 전달 문제 해결](troubleshooting-sms-delivery.md)
 - 새 번호를 받았는데도 SMS가 여전히 이전 Twilio 번호에서 오나요?
-- [오류: 발신 전화번호가 유효한 SMS 가능 전화번호가 아닙니다](error-the-from-phone-number-is-not-a-valid-sms-capable-phone-number-.md)
+- [오류: 발신 전화번호가 유효한 SMS 가능 전화번호가 아닙니다](../03-대화/기타/error-the-from-phone-number-is-not-a-valid-sms-capable-phone-number-.md)
 - SMS 전송 시 Twilio 오류 21610 "메시지 발신/수신 쌍이 블랙리스트 규칙을 위반합니다"
-- [일반적인 SMS 전달 오류 이해하기]([understanding-common-sms-delivery-errors](understanding-common-sms-delivery-errors.md))
-- [통신사의 SMS 필터링 방지 방법: 오류 30007]([how-to-prevent-sms-filtering-by-carriers-error-30007](how-to-prevent-sms-filtering-by-carriers-error-30007.md))
-- [SMS 제한 기록](sms-restriction-history.md)
+- [일반적인 SMS 전달 오류 이해하기](메시징/understanding-common-sms-delivery-errors.md)
+- [통신사의 SMS 필터링 방지 방법: 오류 30007](메시징/how-to-prevent-sms-filtering-by-carriers-error-30007.md)
+- [SMS 제한 기록](../03-대화/기타/sms-restriction-history.md)
 
 ## 자주 묻는 질문
 

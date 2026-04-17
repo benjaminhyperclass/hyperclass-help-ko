@@ -75,9 +75,9 @@
 
 ## 다음 단계
 
-- [대시보드의 위젯 편집하기](edit-widgets-on-the-dashboard.md)
-- [대시보드에 위젯 추가하기](how-to-create-add-dashboard-widgets.md)
-- [대시보드 권한 관리하는 방법](how-to-manage-dashboard-permissions.md)
+- [대시보드의 위젯 편집하기](../edit-widgets-on-the-dashboard.md)
+- [대시보드에 위젯 추가하기](../how-to-create-add-dashboard-widgets.md)
+- [대시보드 권한 관리하는 방법](../how-to-manage-dashboard-permissions.md)
 
 ---
 *원문 최종 수정: Wed, 30 Apr, 2025 at  2:53 PM*

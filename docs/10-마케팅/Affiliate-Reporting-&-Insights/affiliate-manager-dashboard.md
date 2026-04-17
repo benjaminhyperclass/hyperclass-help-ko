@@ -66,10 +66,10 @@
 
 ## 다음 단계:
 
-- [제휴 캠페인 만들기](how-to-create-an-affiliate-campaign.md)
-- [제휴 관리에서 제휴사 추가하기](how-to-add-affiliates-in-the-affiliate-manager.md)
-- [제휴 관리에서 하위 제휴사 추가하기](how-to-add-sub-affiliates-in-the-affiliate-manager.md)
-- [PayPal 자동 지급을 사용해서 제휴사 설정 및 지급하기](how-to-set-up-and-pay-affiliates-using-paypal-auto-payouts.md)
+- [제휴 캠페인 만들기](../Affiliate-Campaigns/how-to-create-an-affiliate-campaign.md)
+- [제휴 관리에서 제휴사 추가하기](../Managing-Affiliates/how-to-add-affiliates-in-the-affiliate-manager.md)
+- [제휴 관리에서 하위 제휴사 추가하기](../Managing-Affiliates/how-to-add-sub-affiliates-in-the-affiliate-manager.md)
+- [PayPal 자동 지급을 사용해서 제휴사 설정 및 지급하기](../Affiliate-Payouts/how-to-set-up-and-pay-affiliates-using-paypal-auto-payouts.md)
 
 ---
 *원문 최종 수정: Wed, 21 May, 2025 at 6:53 AM*

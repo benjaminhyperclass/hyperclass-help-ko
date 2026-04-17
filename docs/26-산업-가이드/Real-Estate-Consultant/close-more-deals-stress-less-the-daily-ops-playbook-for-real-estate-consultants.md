@@ -100,7 +100,7 @@ Hyperclass를 통해 다음을 할 수 있습니다:
 ✅ 잠적이나 늦은 일정 변경 감소
 ✅ 캘린더 링크 및 미팅/매물 보기 장소 안내 포함
 
-[예약 알림 자동화 방법]([how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder](how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md))
+[예약 알림 자동화 방법](../../24-대학/HighLevel-How-To&#39;s/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
 
 ### 1.3 스마트 예약 배정
 
@@ -130,14 +130,14 @@ Hyperclass를 통해 다음을 할 수 있습니다:
 예시 문자:
 "안녕하세요 Julie님, 주택 매도 문의해 주셔서 감사합니다. 이번 주에 간단히 현장 답사 해보실까요? 제 캘린더입니다: [링크]"
 
-#### [견적 후속 조치 자동화 방법]([how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder](how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md))
+#### [견적 후속 조치 자동화 방법](../../24-대학/HighLevel-How-To&#39;s/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
 
 ### 2.2 즉각적인 리드 참여를 위한 AI 활용
 
 ✅ 대화 AI(Conversation AI)로 FAQ에 답변하고 잠재 고객 자격을 검증 (예: 가격대, 위치, 급박성)
 ✅ 업무 시간 외 문의를 자동 응답으로 처리
 
-#### [AI 기반 고객 지원 설정 방법]([conversation-ai-bot-explained](conversation-ai-bot-explained.md))
+#### [AI 기반 고객 지원 설정 방법](../../13-AI-Employee/Getting-Started-w/-Conversation-AI/conversation-ai-bot-explained.md)
 
 ### 2.3 후속 조치를 위한 스마트 리스트 구축
 
@@ -150,7 +150,7 @@ Hyperclass를 통해 다음을 할 수 있습니다:
 
 ✅ 각 리스트별로 타겟팅된 드립 캠페인 실행
 
-#### [스마트 리스트 설정 방법](getting-started-with-smart-lists.md)
+#### [스마트 리스트 설정 방법](../../02-연락처/기타/getting-started-with-smart-lists.md)
 
 # 3단계: 파이프라인, 매물 및 거래 간소화
 
@@ -171,7 +171,7 @@ Hyperclass를 통해 다음을 할 수 있습니다:
 
 ✅ 한눈에 거래 및 고객 상태 추적
 
-#### [인보이스 전송 및 생성 방법]([how-to-create-invoices-in-highlevel](how-to-create-invoices-in-highlevel.md))
+#### [인보이스 전송 및 생성 방법](../../08-결제/인보이스-견적/how-to-create-invoices-in-highlevel.md)
 
 ### 3.2 문서 워크플로우 자동화
 
@@ -179,14 +179,14 @@ Hyperclass를 통해 다음을 할 수 있습니다:
 ✅ 고객이 문서를 제출하지 않으면 알림 트리거
 ✅ DocuSign 같은 도구와 연동하여 전자 서명 활용
 
-#### [결제 수신 설정 방법](trigger-payment-received.md)
+#### [결제 수신 설정 방법](../../07-워크플로우/기타/trigger-payment-received.md)
 
 ### 3.3 피드백 수집 자동화
 
 ✅ 매물 보기 후, 매수자 피드백을 묻는 자동 SMS(문자)/이메일 전송
 ✅ 매물 매력도 개선을 위해 매도자와 인사이트 공유
 
-#### [정기 결제 자동화 방법](auto-payments-in-recurring-templates.md)
+#### [정기 결제 자동화 방법](../../08-결제/기타/auto-payments-in-recurring-templates.md)
 
 # 4단계: 인보이스 및 보증금 수금 자동화 (선택사항)
 
@@ -204,7 +204,7 @@ Hyperclass를 통해 다음을 할 수 있습니다:
 
 ✅ Stripe, PayPal, Apple Pay, Google Pay를 통한 결제 수금
 
-#### [기회 관리 생성 설정 방법]([workflow-trigger-opportunity-created](workflow-trigger-opportunity-created.md))
+#### [기회 관리 생성 설정 방법](../../07-워크플로우/Opportunity-Workflow-Triggers/workflow-trigger-opportunity-created.md)
 
 ### 4.2 구독 서비스 제공 (선택사항)
 
@@ -218,7 +218,7 @@ Hyperclass를 통해 다음을 할 수 있습니다:
 - 어떤 고객이 반복 매수자/매도자인지
 - 완료된 거래의 총 가치
 
-#### [정기 예약 모니터링 방법]([configure-recurring-calendar-appointments](configure-recurring-calendar-appointments.md))
+#### [정기 예약 모니터링 방법](../../04-캘린더-예약/캘린더-설정/configure-recurring-calendar-appointments.md)
 
 # 5단계: 성과 추적 및 최적화
 
@@ -232,14 +232,14 @@ Hyperclass를 통해 다음을 할 수 있습니다:
 ✅ 퍼널 각 단계의 전환율 측정
 ✅ 주간/월간 매물 보기, 제안, 완료된 거래 추적
 
-#### [리드 추적 및 관리 방법]([step-by-step-guide-creating-pipelines](step-by-step-guide-creating-pipelines.md))
+#### [리드 추적 및 관리 방법](../../05-기회-파이프라인/step-by-step-guide-creating-pipelines.md)
 
 ### 5.2 캠페인마다 더 똑똑해지기
 
 ✅ 어떤 리드 마그넷 페이지나 후속 조치 시퀀스가 가장 잘 전환되는지 테스트
 ✅ 자격을 갖춘 고객을 끌어오는 광고나 퍼널에 더 집중
 
-#### [대시보드 생성 및 모니터링 방법]([how-to-create-add-dashboard-widgets](how-to-create-add-dashboard-widgets.md))
+#### [대시보드 생성 및 모니터링 방법](../../12-대시보드/how-to-create-add-dashboard-widgets.md)
 
 # 마무리: 운영이 계약 성사를 이끕니다
 

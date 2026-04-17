@@ -83,7 +83,7 @@ Remove(제거) 버튼을 사용해서 기본 썸네일을 제거하세요.
 - [이메일 빌더와 인라인 에디터 사용 방법](how-to-use-the-email-builder-and-its-in-line-editor.md)
 - 이메일 빌더의 스페이서 요소
 - 테두리 커스터마이징: 색상, 모서리, 두께
-- [일반 이메일 캠페인을 보내는 방법 (바로 보내기 또는 예약)](how-to-send-or-schedule-a-regular-email-campaign.md)
+- [일반 이메일 캠페인을 보내는 방법 (바로 보내기 또는 예약)](../Campaign-Settings/Functionalities/how-to-send-or-schedule-a-regular-email-campaign.md)
 
 ---
 *원문 최종 수정: 2025년 10월 31일*

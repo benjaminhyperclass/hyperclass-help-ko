@@ -93,11 +93,11 @@
 
 ## 관련 가이드
 
-- [기존 구독 수정하는 방법](how-to-modify-existing-subscriptions.md)
-- [구독 결제 실패 시 어떻게 되나요?](what-happens-in-case-of-a-payment-failure-for-a-subscription-.md)
-- [시작하기 - 인보이스 생성 및 발송](getting-started-create-and-send-invoices.md)
-- [Hyperclass에서 반복 인보이스 생성 및 관리하는 방법](how-to-create-and-manage-recurring-invoices-in-highlevel.md)
-- [고객의 등록된 카드 추가 및 관리하는 방법](how-to-add-and-manage-your-customer-s-cards-on-file.md)
+- [기존 구독 수정하는 방법](../08-결제/주문-구독/how-to-modify-existing-subscriptions.md)
+- [구독 결제 실패 시 어떻게 되나요?](../08-결제/시작하기/what-happens-in-case-of-a-payment-failure-for-a-subscription-.md)
+- [시작하기 - 인보이스 생성 및 발송](../01-시작하기/커머스/getting-started-create-and-send-invoices.md)
+- [Hyperclass에서 반복 인보이스 생성 및 관리하는 방법](../08-결제/인보이스-견적/how-to-create-and-manage-recurring-invoices-in-highlevel.md)
+- [고객의 등록된 카드 추가 및 관리하는 방법](../08-결제/시작하기/how-to-add-and-manage-your-customer-s-cards-on-file.md)
 
 ---
 *원문 최종 수정: Wed, 4 Feb, 2026 at 6:52 AM*

@@ -88,11 +88,11 @@
 
 ## 관련 문서
 
-- [스냅샷 새로고침/업데이트](refresh-update-snapshots.md)
+- [스냅샷 새로고침/업데이트](../../16-SaaS-설정/기타/refresh-update-snapshots.md)
 
-- [기존 계정에 스냅샷 로딩]([load-snapshots-into-existing-sub-account](load-snapshots-into-existing-sub-account.md))
+- [기존 계정에 스냅샷 로딩](load-snapshots-into-existing-sub-account.md)
 
-- [다른 에이전시와 스냅샷 공유하기]([how-to-share-snapshots](how-to-share-snapshots.md))
+- [다른 에이전시와 스냅샷 공유하기](how-to-share-snapshots.md)
 
 ---
 *원문 최종 수정: 2025년 11월 25일*

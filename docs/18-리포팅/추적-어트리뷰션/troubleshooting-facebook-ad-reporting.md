@@ -28,7 +28,7 @@
 
 참고사항:
 
-CRM의 연동 섹션에서 페이지가 보이지 않는다면 [CRM 액세스 할당 방법](https://web.facebook.com/business/help/1588743581429919?id=735435806665862&_rdc=1&_rdr#:~:text=Note%20that%20you%20must%20be%20an%20admin%20of%20the%20Facebook%20Page%20and%20have%20leads%20access%20permissions%20in%20order%20to%20connect%20a%20CRM%20system.)을 확인하세요. [페이스북 관리자인데도 문제가 있다면, Lead Connector가 접근 가능하고 페이지 액세스를 허용할 수 있는지 확인해보세요.](facebook-lead-ad-integration.md)
+CRM의 연동 섹션에서 페이지가 보이지 않는다면 [CRM 액세스 할당 방법](https://web.facebook.com/business/help/1588743581429919?id=735435806665862&_rdc=1&_rdr#:~:text=Note%20that%20you%20must%20be%20an%20admin%20of%20the%20Facebook%20Page%20and%20have%20leads%20access%20permissions%20in%20order%20to%20connect%20a%20CRM%20system.)을 확인하세요. [페이스북 관리자인데도 문제가 있다면, Lead Connector가 접근 가능하고 페이지 액세스를 허용할 수 있는지 확인해보세요.](../../05-기회-파이프라인/기타/facebook-lead-ad-integration.md)
 
 Meta 광고 관리자에서 페이스북 페이지와 인스타그램 계정에 광고하려면 다음이 필요합니다:
 

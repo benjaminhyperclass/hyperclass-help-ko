@@ -68,9 +68,9 @@ Mailgun/LC 이메일을 사용하는 경우, 리드가 배정되지 않았다면
 
 하지만 양방향 이메일 동기화를 설정했다면, 연동된 이메일이 표시됩니다:
 
-[Gmail용 양방향 이메일 동기화 설정 방법](how-to-set-up-two-way-email-sync-for-gmail.md)
+[Gmail용 양방향 이메일 동기화 설정 방법](../42-통합/Other-Integrations/how-to-set-up-two-way-email-sync-for-gmail.md)
 
-[Outlook용 양방향 이메일 동기화](two-way-email-sync-for-outlook.md)
+[Outlook용 양방향 이메일 동기화](../42-통합/Other-Integrations/two-way-email-sync-for-outlook.md)
 
 ## 발신자 이메일을 설정할 수 있는 곳 - 자동 이메일
 
@@ -132,11 +132,11 @@ Mailgun/LC 이메일을 사용하는 경우, 리드가 배정되지 않았다면
 ## 관련 아티클
 
 - [SMTP 제공업체 설정](setting-up-smtp-providers.md)
-- [이메일 발송 가이드: 이메일 모범 사례 및 이메일 워밍업](email-sending-guide-email-best-practices-email-warm-up.md)
-- [Gmail용 양방향 이메일 동기화 설정 방법](how-to-set-up-two-way-email-sync-for-gmail.md)
-- [Outlook용 양방향 이메일 동기화 설정 방법](two-way-email-sync-for-outlook.md)
+- [이메일 발송 가이드: 이메일 모범 사례 및 이메일 워밍업](LC-이메일/email-sending-guide-email-best-practices-email-warm-up.md)
+- [Gmail용 양방향 이메일 동기화 설정 방법](../42-통합/Other-Integrations/how-to-set-up-two-way-email-sync-for-gmail.md)
+- [Outlook용 양방향 이메일 동기화 설정 방법](../42-통합/Other-Integrations/two-way-email-sync-for-outlook.md)
 - Mailgun으로 커스텀 이메일 도메인 사용하기
-- [이메일이 전송되지 않을 때 SMTP 사용의 제한사항](limitation-of-using-smtp-when-emails-are-not-sending.md)
+- [이메일이 전송되지 않을 때 SMTP 사용의 제한사항](SMTP/limitation-of-using-smtp-when-emails-are-not-sending.md)
 
 ---
 *원문 최종 수정: Sun, 21 Sep, 2025 at 10:48 AM*

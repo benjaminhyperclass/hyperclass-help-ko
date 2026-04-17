@@ -89,11 +89,11 @@
 
 ✅ 프로 팁: GBP에 꾸준히 게시하면 지도 순위가 향상되고 지역 프로필 방문이 30-40% 증가합니다.
 
-[콘텐츠 AI(Content AI)로 이메일 만드는 방법]([how-to-create-emails-using-content-ai-](how-to-create-emails-using-content-ai-.md))
+[콘텐츠 AI(Content AI)로 이메일 만드는 방법](../../13-AI-Employee/Content-AI-in-the-Email-Builder/how-to-create-emails-using-content-ai-.md)
 
-[콘텐츠 AI(Content AI)로 블로그 포스트 개요 만들기](how-to-create-a-social-post-with-content-ai-.md)
+[콘텐츠 AI(Content AI)로 블로그 포스트 개요 만들기](../../13-AI-Employee/기타/how-to-create-a-social-post-with-content-ai-.md)
 
-[콘텐츠 AI(Content AI)로 소셜 미디어 게시물 만들기](how-to-create-a-social-post-with-content-ai-.md)
+[콘텐츠 AI(Content AI)로 소셜 미디어 게시물 만들기](../../13-AI-Employee/기타/how-to-create-a-social-post-with-content-ai-.md)
 
 ## 3단계: 리드를 성사로 전환하는 콘텐츠
 

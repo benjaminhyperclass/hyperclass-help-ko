@@ -54,7 +54,7 @@
 
 이메일 추적 설정은 몇 번의 클릭만으로 완료할 수 있습니다! 아래에서 Hyperclass 내에서 LC Email의 열림 및 클릭 추적을 활성화하거나 비활성화하는 단계별 방법을 확인해보세요. 이 가이드를 통해 이메일 캠페인이 적절히 추적되도록 하여 마케팅 노력을 최적화하는 데 필요한 핵심 데이터를 제공받을 수 있습니다.
 
-**참고**: 이메일 추적을 설정하려면 전용 LC Email 발송 도메인이 이미 구성되어 있어야 합니다. [전용 LC Email 발송 도메인 설정 방법은 여기를 클릭하세요.](dedicated-email-sending-domains-overview-setup.md)
+**참고**: 이메일 추적을 설정하려면 전용 LC Email 발송 도메인이 이미 구성되어 있어야 합니다. [전용 LC Email 발송 도메인 설정 방법은 여기를 클릭하세요.](../LC-Email-Dedicated-Domain-and-IP/dedicated-email-sending-domains-overview-setup.md)
 
 ### 1단계: 이메일 설정으로 이동
 

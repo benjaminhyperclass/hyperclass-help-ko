@@ -6,7 +6,7 @@
 
 # 워크플로우 폴더 권한
 
-워크플로우 폴더 권한은 [에이전시 프로 플랜(Agency Pro Plan)](how-to-upgrade-to-highlevel-s-agency-pro-plan-497-saas-plan-.md) 이상에서만 사용할 수 있습니다.
+워크플로우 폴더 권한은 [에이전시 프로 플랜(Agency Pro Plan)](../../11-설정/how-to-upgrade-to-highlevel-s-agency-pro-plan-497-saas-plan-.md) 이상에서만 사용할 수 있습니다.
 
 ## 폴더 권한으로 워크플로우가 포함된 폴더의 접근을 제한하세요
 

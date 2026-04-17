@@ -93,7 +93,7 @@
 **예산 팁:**
 최고 ROI를 위해 **계절적 응급 서비스**에 집중하여 **하루 $50**로 시작하세요.
 
-[HVAC용 PPC 캠페인 설정 방법](how-to-set-up-google-ad-conversion-actions.md)
+[HVAC용 PPC 캠페인 설정 방법](../../07-워크플로우/기타/how-to-set-up-google-ad-conversion-actions.md)
 
 ### 1.3 Google 비즈니스 프로필에서 통화 추적 활성화하기
 
@@ -104,9 +104,9 @@
 **예시:**
 **통화의 50%가 응답되지 않는다면**, **부재중 통화 문자 자동화** 설정으로 **잃어버린 일감의 20% 이상을 회복**할 수 있습니다.
 
-[신규 광고 캠페인 생성 방법](create-new-ad-campaign-in-ad-manager.md)
+[신규 광고 캠페인 생성 방법](../../10-마케팅/기타/create-new-ad-campaign-in-ad-manager.md)
 
-[캐러셀 광고 생성 방법]([carousel-ads-in-ad-manager](carousel-ads-in-ad-manager.md))
+[캐러셀 광고 생성 방법](../../10-마케팅/Ad-Campaign-Creation-and-Management/carousel-ads-in-ad-manager.md)
 
 ---
 
@@ -120,9 +120,9 @@
 - **페이스북의 HVAC 광고는 리드당 $5-$15**의 저렴한 비용으로 리드를 생성할 수 있습니다.
 - **페이스북의 클릭당 비용(CPC)은 Google 광고보다 낮아서** 주택 소유자를 유치하는 훌륭한 저비용 전략입니다.
 
-[광고 관리자 개요]([overview-of-ad-manager](overview-of-ad-manager.md))
+[광고 관리자 개요](../../10-마케팅/Getting-Started-w/-Ad-Manager/overview-of-ad-manager.md)
 
-[광고 관리자와 페이스북 연결하기]([connect-facebook-with-ad-manager](connect-facebook-with-ad-manager.md))
+[광고 관리자와 페이스북 연결하기](../../10-마케팅/Ad-Manager-Setup-&-Configuration/connect-facebook-with-ad-manager.md)
 
 ### 2.1 고전환 페이스북 광고 만들기
 
@@ -139,7 +139,7 @@
 - **오퍼:** "다음 HVAC 설치 시 $100 할인!"
 - **광고 카피:** "HVAC 시스템 교체를 생각 중이신가요? 에너지 효율적인 솔루션을 제공합니다—오늘 무료 견적을 예약하세요!"
 
-[HVAC용 페이스북 광고 생성 방법]([how-to-create-a-facebook-form-in-ad-manager](how-to-create-a-facebook-form-in-ad-manager.md))
+[HVAC용 페이스북 광고 생성 방법](../../10-마케팅/Ad-Campaign-Creation-and-Management/how-to-create-a-facebook-form-in-ad-manager.md)
 
 ### 2.2 리타겟팅 광고로 관심 있는 리드 다시 유치하기
 
@@ -150,7 +150,7 @@
 **광고 예시:**
 *"저희 서비스를 확인하셨지만 아직 예약하지 않으셨네요—오늘 예약하면 10% 할인을 받으세요!"*
 
-[커스텀 오디언스 세그먼트를 사용한 리타겟팅 광고 설정 방법]([create-custom-audiences-in-ad-manager](create-custom-audiences-in-ad-manager.md))
+[커스텀 오디언스 세그먼트를 사용한 리타겟팅 광고 설정 방법](../../10-마케팅/Ad-Campaign-Creation-and-Management/create-custom-audiences-in-ad-manager.md)
 
 ### 2.3 페이스북 광고 리드 후속 조치 자동화하기
 
@@ -158,7 +158,7 @@
 ✅ **SMS, 이메일, AI 챗봇 응답을 자동화**합니다.
 ✅ **경쟁업체가 일감을 가져가기 전에** 즉시 후속 조치합니다.
 
-[워크플로우를 통한 페이스북 리드 후속 조치 자동화]([workflow-trigger-facebook-lead-form-submitted](workflow-trigger-facebook-lead-form-submitted.md))
+[워크플로우를 통한 페이스북 리드 후속 조치 자동화](../../07-워크플로우/Facebook/Instagram-Events-Workflow-Triggers/workflow-trigger-facebook-lead-form-submitted.md)
 
 ---
 
@@ -175,7 +175,7 @@
 ✅ AI 챗봇이 **일반적인 질문에 답하고 리드를 포착**합니다.
 ✅ 문자나 이메일로 **즉시 후속 조치**를 보냅니다.
 
-[HVAC용 채팅 위젯 설정 방법]([getting-started-with-chat-widget](getting-started-with-chat-widget.md))
+[HVAC용 채팅 위젯 설정 방법](../../06-사이트/getting-started-with-chat-widget.md)
 
 ### 3.2 문자-리드 캠페인 설정하기
 
@@ -202,7 +202,7 @@
 ✅ 어떤 캠페인이 **최고의 HVAC 리드를 가져오는지** 식별합니다.
 ✅ 성과가 낮은 광고를 일시정지하여 **광고비를 최적화**합니다.
 
-[HVAC 광고용 통화 추적 설정 방법]([how-to-set-up-call-tracking-number-pool-](how-to-set-up-call-tracking-number-pool-.md))
+[HVAC 광고용 통화 추적 설정 방법](../../15-전화-시스템/통화/how-to-set-up-call-tracking-number-pool-.md)
 
 ### 4.2 리드 비용 및 전환율 모니터링하기
 

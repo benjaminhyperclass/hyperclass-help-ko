@@ -8,7 +8,7 @@
 
 이 가이드에서는 LC Email(이메일)의 기본 수신거부 링크를 관리하여 이메일 규정을 준수하고 연락처에게 더 나은 경험을 제공하는 방법을 알아보겠습니다. **하이퍼클래스의 기본 수신거부 링크** 설정 사용법과 태그를 이용해 수동으로 링크를 배치하는 방법을 배워보세요.
 
-**중요**: 이 가이드는 LC Email의 기본 수신거부 링크에 대해서만 다룹니다. 커스텀 수신거부 경험이나 링크를 만들고 싶다면 다음 문서를 참고하세요: [커스텀 수신거부 링크 생성 및 관리하기]([creating-and-managing-custom-unsubscribe-links](creating-and-managing-custom-unsubscribe-links.md))
+**중요**: 이 가이드는 LC Email의 기본 수신거부 링크에 대해서만 다룹니다. 커스텀 수신거부 경험이나 링크를 만들고 싶다면 다음 문서를 참고하세요: [커스텀 수신거부 링크 생성 및 관리하기](전달성/creating-and-managing-custom-unsubscribe-links.md)
 
 ---
 **목차**

@@ -194,7 +194,7 @@ Stripe와 관련된 정기 구독/대기 중인 거래가 있는 경우, Stripe 
 
 **참고사항**:
 
-이 기능을 사용하려면 [퍼널을 버전 2로 업그레이드](how-to-upgrade-a-version-1-funnel-to-version-2-.md)해야 합니다.
+이 기능을 사용하려면 [퍼널을 버전 2로 업그레이드](../06-사이트/기타/how-to-upgrade-a-version-1-funnel-to-version-2-.md)해야 합니다.
 
 Authorize.Net의 FAQ 섹션은 [여기를 클릭](https://account.authorize.net/help/Miscellaneous/FAQ/Frequently_Asked_Questions.htm)하세요.
 

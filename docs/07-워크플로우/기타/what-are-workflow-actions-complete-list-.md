@@ -33,7 +33,7 @@ Hyperclass의 워크플로우 액션(Workflow Actions)은 워크플로우 빌더
 
 [워크플로우 빌더 연습하기](workflow-builder-walkthrough.md)
 
-[워크플로우 설정](workflow-settings-overview.md)
+[워크플로우 설정](../빌더/workflow-settings-overview.md)
 
 [워크플로우 트리거 목록](a-list-of-workflow-triggers.md)
 

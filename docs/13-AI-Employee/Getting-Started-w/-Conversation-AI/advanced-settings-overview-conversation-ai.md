@@ -37,7 +37,7 @@
 
 ![비즈니스 이름 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155039258257/original/KaIdFUege9XK24ms9qMgt8PCHnKtp5u3CA.jpeg?1735937765)
 
-**Hyperclass 팁:** 봇 응답을 개인화하는 더 많은 방법은 [프롬프트를 사용한 AI 응답 커스터마이징](customize-your-ai-responses-using-prompts.md)을 확인해보세요.
+**Hyperclass 팁:** 봇 응답을 개인화하는 더 많은 방법은 [프롬프트를 사용한 AI 응답 커스터마이징](../../Conversation-AI---Goals,-Prompts,-&-Actions/customize-your-ai-responses-using-prompts.md)을 확인해보세요.
 
 ## 응답 전 대기 시간
 
@@ -75,7 +75,7 @@
 
 ![봇 휴면 모드 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155039258251/original/257rcroIoe3dyLJYGrjdUhK8goD6LhiJsw.jpeg?1735937743)
 
-**Hyperclass 팁:** 자동화 가능성을 알아보려면 [대화 AI 내에서 워크플로우 트리거하기](trigger-a-workflow-within-conversation-ai.md)를 확인해보세요.
+**Hyperclass 팁:** 자동화 가능성을 알아보려면 [대화 AI 내에서 워크플로우 트리거하기](../../Conversation-AI-+-Workflows/trigger-a-workflow-within-conversation-ai.md)를 확인해보세요.
 
 ## 자주 묻는 질문
 
@@ -89,7 +89,7 @@
 
 **Q: 특정 시나리오에 맞게 봇 응답을 커스터마이징할 수 있나요?**
 
-네, 프롬프트를 사용해서 봇의 응답을 맞춤화할 수 있어요. [프롬프트를 사용한 AI 응답 커스터마이징](customize-your-ai-responses-using-prompts.md)을 참고하세요.
+네, 프롬프트를 사용해서 봇의 응답을 맞춤화할 수 있어요. [프롬프트를 사용한 AI 응답 커스터마이징](../../Conversation-AI---Goals,-Prompts,-&-Actions/customize-your-ai-responses-using-prompts.md)을 참고하세요.
 
 **Q: 워크플로우가 봇 설정에 어떤 영향을 주나요?**
 

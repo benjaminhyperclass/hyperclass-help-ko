@@ -12,7 +12,7 @@
 
 **중요**: **Twilio에서 LC로** 전화번호를 이전하려면 고객이 Hyperclass 지원팀과 Twilio 지원팀 양쪽에 연락하여 성공적인 마이그레이션을 진행해야 합니다.
 
-**중요**: 이 글은 미국 지역번호나 무료전화번호 이전에만 해당합니다. 미국 외 국가의 국제 전화번호는 [국제 전화번호 이전 (Twilio에서 LC Phone으로)]([migrating-international-numbers-twilio-to-lc-phone-](migrating-international-numbers-twilio-to-lc-phone-.md))를 참고하세요.
+**중요**: 이 글은 미국 지역번호나 무료전화번호 이전에만 해당합니다. 미국 외 국가의 국제 전화번호는 [국제 전화번호 이전 (Twilio에서 LC Phone으로)](전화번호/migrating-international-numbers-twilio-to-lc-phone-.md)를 참고하세요.
 
 ---
 
@@ -45,7 +45,7 @@ Twilio 전화번호를 LC Phone 하위 계정으로 원활하고 성공적으로
 
 ## LC Phone 시스템이란?
 
-LC Phone은 Twilio ISV(Independent Software Vendor) 연결을 통해 작동하는 Hyperclass의 내장 전화 시스템입니다. 클라이언트의 Twilio 전화번호를 LC Phone 하위 계정으로 이전하면 별도의 Twilio 통합 없이도 Hyperclass 내에서 전화번호가 완전히 관리됩니다. 이를 통해 사용자에게 더 안정적이고 기능이 풍부한 경험을 제공합니다. 자세한 내용은 [LC Phone 시스템이란?](what-is-lc-phone-system-.md)을 참고하세요.
+LC Phone은 Twilio ISV(Independent Software Vendor) 연결을 통해 작동하는 Hyperclass의 내장 전화 시스템입니다. 클라이언트의 Twilio 전화번호를 LC Phone 하위 계정으로 이전하면 별도의 Twilio 통합 없이도 Hyperclass 내에서 전화번호가 완전히 관리됩니다. 이를 통해 사용자에게 더 안정적이고 기능이 풍부한 경험을 제공합니다. 자세한 내용은 [LC Phone 시스템이란?](기타/what-is-lc-phone-system-.md)을 참고하세요.
 
 ## 클라이언트의 Twilio에서 LC Phone으로 전화번호 이전하기
 
@@ -114,7 +114,7 @@ Hyperclass 지원팀으로부터 수신 하위 계정 SID를 받으면 **Twilio 
 전화번호는 클라이언트의 개인 Twilio 계정이 아닌 Hyperclass(LC Phone)를 통해 청구됩니다.
 
 **Q: 이 글은 미국 지역번호나 무료전화번호를 언급합니다. 국제 전화번호도 같은 프로세스를 따를 수 있나요?**
-아니요, 이 프로세스는 미국 지역번호 및 무료전화번호에만 적용됩니다. 국제 전화번호 마이그레이션은 이 글을 참고하세요: [국제 전화번호 이전 (Twilio에서 LC Phone으로)]([migrating-international-numbers-twilio-to-lc-phone-](migrating-international-numbers-twilio-to-lc-phone-.md))
+아니요, 이 프로세스는 미국 지역번호 및 무료전화번호에만 적용됩니다. 국제 전화번호 마이그레이션은 이 글을 참고하세요: [국제 전화번호 이전 (Twilio에서 LC Phone으로)](전화번호/migrating-international-numbers-twilio-to-lc-phone-.md)
 
 ---
 *원문 최종 수정: 2026년 3월 25일 오전 7:34*

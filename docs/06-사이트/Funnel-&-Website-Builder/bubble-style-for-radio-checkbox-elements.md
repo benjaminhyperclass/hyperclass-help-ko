@@ -98,10 +98,10 @@
 
 ## 관련 아티클
 
-- [폼 & 설문의 컬럼 펼치기 옵션](how-to-use-the-spread-to-column-option-in-forms-and-surveys.md)
+- [폼 & 설문의 컬럼 펼치기 옵션](../폼/how-to-use-the-spread-to-column-option-in-forms-and-surveys.md)
 - 폼 및 설문 빌더의 우측 사이드바 개선
 - 폼 & 설문에서 "기타" 옵션 사용 가능
-- [하이퍼클래스에서 연락처 폼 만드는 방법](how-to-create-a-contact-form-in-highlevel-.md)
+- [하이퍼클래스에서 연락처 폼 만드는 방법](../../02-연락처/기타/how-to-create-a-contact-form-in-highlevel-.md)
 - 폼 빌더를 사용하여 퍼널 내 폼 커스터마이징
 
 ---

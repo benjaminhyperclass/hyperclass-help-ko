@@ -33,7 +33,7 @@ Ad Manager 설정에는 'Integrations(연동)', 'Pages(페이지)', 'Conversions
 
 새 오디언스(유사 오디언스와 커스텀 오디언스 모두)를 생성하는 방법은 두 가지가 있습니다:
 
-- 캠페인 생성 과정에서 커스텀 및 유사 오디언스를 모두 생성할 수 있으며, 자세한 단계는 각각의 관련 글에서 확인할 수 있습니다: [Ad Manager에서 유사 오디언스 생성하기]([create-lookalike-audiences-in-ad-manager](create-lookalike-audiences-in-ad-manager.md))와 [Ad Manager에서 커스텀 오디언스 생성하기]([create-custom-audiences-in-ad-manager](create-custom-audiences-in-ad-manager.md)). 해당 오디언스 생성에 대한 자세한 단계는 위 글들을 참조하시기 바랍니다.
+- 캠페인 생성 과정에서 커스텀 및 유사 오디언스를 모두 생성할 수 있으며, 자세한 단계는 각각의 관련 글에서 확인할 수 있습니다: [Ad Manager에서 유사 오디언스 생성하기](../Ad-Campaign-Creation-and-Management/create-lookalike-audiences-in-ad-manager.md)와 [Ad Manager에서 커스텀 오디언스 생성하기](../Ad-Campaign-Creation-and-Management/create-custom-audiences-in-ad-manager.md). 해당 오디언스 생성에 대한 자세한 단계는 위 글들을 참조하시기 바랍니다.
 - Ad Manager 설정(Settings) > 오디언스(Audiences) 탭에서 '새 오디언스 생성(Create new audience)' 버튼을 클릭하여 새 오디언스를 생성할 수 있습니다. 이 버튼을 누르면 유사 오디언스(Lookalike)와 커스텀 오디언스(Custom Audience)라는 두 가지 옵션이 나타납니다. 둘 중 하나를 클릭하면 해당 오디언스를 생성하는 절차가 시작되고, 성공적으로 오디언스를 생성하면 아래 오디언스 목록에 표시됩니다. 자세한 오디언스 생성 단계는 1번에서 언급한 도움말 글들을 참조하세요.
 
 ![새 오디언스 생성 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032740430/original/wyrtDpcE8JWcQZx8QvkpsHBdf01ZMtVdJA.png?1726135595)

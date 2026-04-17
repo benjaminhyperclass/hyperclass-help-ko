@@ -56,7 +56,7 @@
 #### **메시지 예시:**
 *"안녕하세요 김사라님, [업체명]을 선택해 주셔서 감사합니다! 청소 서비스가 만족스러우셨기를 바랍니다. 다음 서비스에서 15% 할인을 받고 싶으시나요? 30일 이내 예약하시면 할인됩니다!"*
 
-#### [고객 후속 관리 자동화 방법]([how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder](how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md))
+#### [고객 후속 관리 자동화 방법](../../24-대학/HighLevel-How-To&#39;s/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
 
 #### **1.2 자동 점검 알림**
 
@@ -66,7 +66,7 @@
 #### **메시지 예시:**
 *"김사라님, 마지막 대청소 후 3개월이 지났네요! 새 청소가 필요하신가요? 네라고 답장하시면 다음 예약을 잡아드릴게요."*
 
-#### [유지보수 알림 설정 방법]([how-to-send-users-appointment-reminders](how-to-send-users-appointment-reminders.md))
+#### [유지보수 알림 설정 방법](../../23-레거시-자동화/Logic-&amp;-Fulfillment/how-to-send-users-appointment-reminders.md)
 
 ### **2단계: 5성급 리뷰 자동 수집하기**
 
@@ -107,7 +107,7 @@
 #### **메시지 예시:**
 *"저희 청소 서비스가 마음에 드시나요? 친구를 추천하시면 둘 다 다음 예약에서 25,000원 할인받으세요! 이 링크를 보내주세요: [추천 링크]"*
 
-#### [자동 추천 프로그램 설정 방법](affiliate-refferal-page-leads-customers-cancelled-statuses.md)
+#### [자동 추천 프로그램 설정 방법](../../21-어필리에이트/기타/affiliate-refferal-page-leads-customers-cancelled-statuses.md)
 
 #### **3.2 추천 후속 관리 자동화**
 
@@ -130,7 +130,7 @@
 #### **메시지 예시:**
 *"VIP 청소 플랜에 가입하세요: 월간 홈 청소 + 우선 예약으로 월 99,000원. 비용을 절약하고 집을 항상 깨끗하게 유지하세요!"*
 
-#### [구독 기반 서비스 설정 방법]([pause-and-resume-subscriptions](pause-and-resume-subscriptions.md))
+#### [구독 기반 서비스 설정 방법](../../08-결제/pause-and-resume-subscriptions.md)
 
 #### **4.2 작업 중 예방적 유지보수 상향 판매**
 
@@ -159,9 +159,9 @@
 
 - 이탈을 방지하고 서비스를 개선하기 위해 **만족도 설문**을 보내세요.
 
-#### [유지보수 플랜 판매 및 자동화 방법](recurring-appointments.md)
+#### [유지보수 플랜 판매 및 자동화 방법](../../04-캘린더-예약/기타/recurring-appointments.md)
 
-#### [고객 유지를 위한 스마트 리스트 사용 방법](getting-started-with-smart-lists.md)
+#### [고객 유지를 위한 스마트 리스트 사용 방법](../../02-연락처/기타/getting-started-with-smart-lists.md)
 
 ### **마무리: 고객 유지 = 수익**
 

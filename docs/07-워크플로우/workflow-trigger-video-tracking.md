@@ -25,7 +25,7 @@ Video Tracking(비디오 트래킹)
 
 ## 설정 방법
 
-트리거 설정에 앞서 이 문서를 읽어보시기 바랍니다: [퍼널 호스팅 비디오의 시청자 진행률 추적](tracking-viewer-progress-on-a-funnel-hosted-video.md)
+트리거 설정에 앞서 이 문서를 읽어보시기 바랍니다: [퍼널 호스팅 비디오의 시청자 진행률 추적](기타/tracking-viewer-progress-on-a-funnel-hosted-video.md)
 
 - **비디오 준비:** 비디오가 트래킹을 위해 올바르게 인코딩되었는지 확인하세요.
 - **진행률 표시줄 비활성화:** 정확한 추적을 위해 비디오 설정에서 진행률 표시줄을 비활성화하세요.

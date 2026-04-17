@@ -59,7 +59,7 @@ Hyperclass는 첫 클릭부터 거래 성사까지 모든 운영을 지원하므
 
 #### [예약 링크 설정 방법](http://how%20to%20set%20up%20booking%20link/)
 
-#### [약속 알림 자동화 방법]([how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder](how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md))
+#### [약속 알림 자동화 방법](../../24-대학/HighLevel-How-To&#39;s/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
 
 #### 할당을 위한 권한 설정 방법
 
@@ -101,9 +101,9 @@ Hyperclass는 첫 클릭부터 거래 성사까지 모든 운영을 지원하므
 
 #### [견적 후속 조치 자동화 방법](https://help.gohijlevel.com/support/solutions/articles/48001165881-how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder)
 
-#### [AI 기반 고객 지원 설정 방법]([conversation-ai-bot-explained](conversation-ai-bot-explained.md))
+#### [AI 기반 고객 지원 설정 방법](../../13-AI-Employee/Getting-Started-w/-Conversation-AI/conversation-ai-bot-explained.md)
 
-#### [스마트 리스트 설정 방법](getting-started-with-smart-lists.md)
+#### [스마트 리스트 설정 방법](../../02-연락처/기타/getting-started-with-smart-lists.md)
 
 ## 3단계: 계약, 제안, 업무 관리 간소화
 
@@ -124,11 +124,11 @@ Hyperclass는 첫 클릭부터 거래 성사까지 모든 운영을 지원하므
 예시 업무 알림:  
 "알림: 오늘 오후 4시까지 구매자에게 주택 점검 요약서 발송 (메이플 애비뉴 2412번지)."
 
-#### [인보이스 발송 및 생성 방법]([how-to-create-invoices-in-highlevel](how-to-create-invoices-in-highlevel.md))
+#### [인보이스 발송 및 생성 방법](../../08-결제/인보이스-견적/how-to-create-invoices-in-highlevel.md)
 
-#### [결제 수신 설정 방법](trigger-payment-received.md)
+#### [결제 수신 설정 방법](../../07-워크플로우/기타/trigger-payment-received.md)
 
-#### [정기 결제 자동화 방법](auto-payments-in-recurring-templates.md)
+#### [정기 결제 자동화 방법](../../08-결제/기타/auto-payments-in-recurring-templates.md)
 
 ## 4단계: 리뷰 요청 및 추천 후속 조치 자동화
 
@@ -149,9 +149,9 @@ Hyperclass는 첫 클릭부터 거래 성사까지 모든 운영을 지원하므
 예시 메시지:  
 "안녕하세요 김사라님, 새 집 축하드려요! 함께 일하게 되어 정말 기뻤어요. 다른 분들과 경험을 공유해주실 수 있을까요? [리뷰 링크]"
 
-#### [기회 생성 설정 방법]([workflow-trigger-opportunity-created](workflow-trigger-opportunity-created.md))
+#### [기회 생성 설정 방법](../../07-워크플로우/Opportunity-Workflow-Triggers/workflow-trigger-opportunity-created.md)
 
-#### [정기 예약 모니터링 방법]([configure-recurring-calendar-appointments](configure-recurring-calendar-appointments.md))
+#### [정기 예약 모니터링 방법](../../04-캘린더-예약/캘린더-설정/configure-recurring-calendar-appointments.md)
 
 ## 5단계: 실제 성장을 이끄는 KPI 추적
 
@@ -178,9 +178,9 @@ Hyperclass는 첫 클릭부터 거래 성사까지 모든 운영을 지원하므
 | 약속당 비용 (CPA) | 광고 지출 및 채널 최적화 |
 | 고객 생애 가치 (CLTV) | 추천, 재구매 고객 추적 |
 
-#### [리드 추적 및 관리 방법]([step-by-step-guide-creating-pipelines](step-by-step-guide-creating-pipelines.md))
+#### [리드 추적 및 관리 방법](../../05-기회-파이프라인/step-by-step-guide-creating-pipelines.md)
 
-#### [대시보드 생성 및 모니터링 방법]([how-to-create-add-dashboard-widgets](how-to-create-add-dashboard-widgets.md))
+#### [대시보드 생성 및 모니터링 방법](../../12-대시보드/how-to-create-add-dashboard-widgets.md)
 
 ## 최종 생각: 어렵게가 아닌 스마트하게 확장하세요
 

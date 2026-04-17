@@ -28,7 +28,7 @@
 
 ---
 
-**중요**: 이제 만료 며칠 전에 알림 이메일을 보낼지 직접 설정할 수 있습니다. 기본 2일, 7일 간격 대신 더 세밀한 제어가 가능합니다. [자세히 보기 →]([set-frequency-for-certificate-expiry-reminders-emails-](set-frequency-for-certificate-expiry-reminders-emails-.md))
+**중요**: 이제 만료 며칠 전에 알림 이메일을 보낼지 직접 설정할 수 있습니다. 기본 2일, 7일 간격 대신 더 세밀한 제어가 가능합니다. [자세히 보기 →](set-frequency-for-certificate-expiry-reminders-emails-.md)
 
 **참고**: 수료증이 만료되면 해당 사용자는 수료증 미리보기를 볼 수 없습니다. 발급된 수료증의 만료 설정이 템플릿 레벨 만료 설정보다 우선 적용됩니다.
 
