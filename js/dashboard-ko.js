@@ -553,23 +553,20 @@ var t={
 };
 
 function r(){
-  document.querySelectorAll('.nav-title').forEach(function(el){
-    var k=el.textContent.trim();
-    if(k.endsWith("New")){k=k.replace(/New$/,"").trim()}
-    if(t[k])el.innerHTML=t[k]
+  // TreeWalker로 모든 텍스트 노드를 직접 순회 — 태그 타입 무관
+  var nodes=[];
+  var walker=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT,null,false);
+  while(walker.nextNode())nodes.push(walker.currentNode);
+  nodes.forEach(function(n){
+    var txt=n.textContent.trim();
+    if(!txt||txt.length<2||txt.length>120)return;
+    var key=txt.endsWith(' New')?txt.replace(/ New$/,'').trim():txt;
+    if(t[key])n.textContent=n.textContent.replace(txt,t[key]);
   });
-  // GHL 탭(el-tabs__item, hl-tab 등 div 계열) 포함
-  document.querySelectorAll('[class*="el-tabs__item"],[class*="hl-tab"],[role="tab"],[class*="tab-item"]').forEach(function(el){
-    var k=el.textContent.trim();
-    if(t[k]){el.childNodes.forEach(function(n){if(n.nodeType===3)n.textContent=n.textContent.replace(k,t[k])});return}
-  });
-  document.querySelectorAll('span,button,a,th,label,h1,h2,h3,h4,p').forEach(function(el){
-    var k=el.textContent.trim();
-    if(k.endsWith("New"))k=k.replace(/New$/,"").trim();
-    if(el.childElementCount===0&&t[k]){el.innerHTML=t[k];return}
-    if(t[k]){el.childNodes.forEach(function(n){
-      if(n.nodeType===3){var nt=n.textContent.trim();if(t[nt])n.textContent=n.textContent.replace(nt,t[nt])}
-    })}
+  // placeholder 번역
+  document.querySelectorAll('input[placeholder],textarea[placeholder]').forEach(function(el){
+    var ph=el.placeholder.trim();
+    if(t[ph])el.placeholder=t[ph];
   });
 }
 
