@@ -558,7 +558,12 @@ function r(){
     if(k.endsWith("New")){k=k.replace(/New$/,"").trim()}
     if(t[k])el.innerHTML=t[k]
   });
-  document.querySelectorAll('span,button,a,th,label,h1,h2,h3,h4').forEach(function(el){
+  // GHL 탭(el-tabs__item, hl-tab 등 div 계열) 포함
+  document.querySelectorAll('[class*="el-tabs__item"],[class*="hl-tab"],[role="tab"],[class*="tab-item"]').forEach(function(el){
+    var k=el.textContent.trim();
+    if(t[k]){el.childNodes.forEach(function(n){if(n.nodeType===3)n.textContent=n.textContent.replace(k,t[k])});return}
+  });
+  document.querySelectorAll('span,button,a,th,label,h1,h2,h3,h4,p').forEach(function(el){
     var k=el.textContent.trim();
     if(k.endsWith("New"))k=k.replace(/New$/,"").trim();
     if(el.childElementCount===0&&t[k]){el.innerHTML=t[k];return}
