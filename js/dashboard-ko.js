@@ -1,6 +1,6 @@
 // Hyperclass — GHL 대시보드 한글화
 // Version: 3.2.0
-// Translations: 530
+// Translations: 544
 // Auto-updated by ghl-ui-updater.py
 // 적용 위치: Agency Settings > Company > Whitelabel > Custom JS
 
@@ -25,6 +25,7 @@ var t={
   "Add Field":"필드 추가",
   "Add Folder":"폴더 추가",
   "Add New":"새로 추가",
+  "Add Service":"서비스 추가",
   "Add opportunity":"기회 추가",
   "Add smart list":"스마트 리스트 추가",
   "Add to Automation":"자동화 추가",
@@ -81,6 +82,7 @@ var t={
   "Blog Post AI":"블로그 포스트 AI",
   "Blogs":"블로그",
   "Body":"본문",
+  "Bounce Classification":"반송 분류",
   "Bounced":"반송됨",
   "Brand Boards":"브랜드 보드",
   "Brand New Funnel AI & Website AI":"완전히 새로운 퍼널 AI 및 웹사이트 AI",
@@ -179,6 +181,7 @@ var t={
   "Date":"날짜",
   "Date Updated":"수정일",
   "Day View":"일간 보기",
+  "Dedicated Domain And IP":"전용 도메인 및 IP",
   "Delete":"삭제",
   "Deleted":"삭제됨",
   "Deleted Fields":"삭제된 필드",
@@ -201,6 +204,7 @@ var t={
   "Edit searchable fields":"검색 가능 필드 편집",
   "Email":"이메일",
   "Email AI":"이메일 AI",
+  "Email Analytics":"이메일 분석",
   "Email Marketing":"이메일 마케팅",
   "Email Services":"이메일 서비스",
   "Email notifications":"이메일 알림",
@@ -247,6 +251,7 @@ var t={
   "Home":"홈",
   "How Preference Management Works":"환경설정 관리 작동 방식",
   "Image":"이미지",
+  "Implement DMARC":"DMARC 구현",
   "Implemented":"구현됨",
   "Import":"가져오기",
   "Import as CSV":"CSV로 가져오기",
@@ -277,6 +282,7 @@ var t={
   "Last":"마지막",
   "Last Updated":"최근 수정",
   "Launchpad":"런치패드",
+  "LeadConnector Email System":"LeadConnector 이메일 시스템",
   "Learn More":"자세히 보기",
   "Learn more":"더 알아보기",
   "LinkedIn Form Fields Mapping":"링크드인 양식 필드 매핑",
@@ -376,6 +382,7 @@ var t={
   "Planner":"플래너",
   "Post Composer":"게시물 작성기",
   "Postal Code":"우편번호",
+  "Postmaster Tools":"포스트마스터 도구",
   "Preference Management (Email Unsubscription Management)":"환경설정 관리 (이메일 구독 해지 관리)",
   "Preference Management Hub":"환경설정 관리 허브",
   "Preferences":"환경설정",
@@ -404,16 +411,19 @@ var t={
   "Remove":"제거",
   "Rename":"이름 변경",
   "Replied":"답장됨",
+  "Reply & Forward Settings":"답장 및 전달 설정",
   "Reporting":"리포팅",
   "Reports Overview":"보고서 개요",
   "Reputation":"평판 관리",
   "Requests":"요청",
   "Results":"결과",
   "Reviews":"리뷰",
+  "Risk Assessment":"위험도 평가",
   "Rows per page":"페이지당 행 수",
   "SAAS V1 PLAN":"SAAS V1 플랜",
   "SAAS V2 PLAN":"SAAS V2 플랜",
   "SELECTED":"선택됨",
+  "SMTP Service":"SMTP 서비스",
   "Sales Pipeline":"영업 파이프라인",
   "Save":"저장",
   "Schedule Now":"지금 예약",
@@ -430,6 +440,7 @@ var t={
   "Sections":"섹션",
   "Select":"선택",
   "Select All":"전체 선택",
+  "Select Default Provider":"기본 공급업체 선택",
   "Send Message":"메시지 발송",
   "Send Review Request":"리뷰 요청 보내기",
   "Sent":"발송됨",
@@ -437,7 +448,7 @@ var t={
   "Service Calendar Support in Conversation AI Prompt Based Bots":"대화 AI 프롬프트 기반 봇에서 서비스 캘린더 지원",
   "Settings":"설정",
   "Share":"공유",
-  "Show More":"더보기",
+  "Show More":"더 보기",
   "Showing":"표시 중",
   "Signout":"로그아웃",
   "Sites":"사이트",
@@ -505,11 +516,13 @@ var t={
   "Use your existing phone number to make outbound calls":"기존 전화번호로 아웃바운드 전화를 걸어보세요",
   "User not assigned":"담당자 없음",
   "Users":"사용자",
+  "Using a dedicated sending domain for email communications can help improve deliverability and maintain your sender reputation.":"이메일 커뮤니케이션을 위해 전용 발송 도메인을 사용하면 전달률을 향상시키고 발송자 평판을 유지하는 데 도움이 돼요.",
   "Value":"값",
   "Video Testimonials":"비디오 추천사",
   "Video Testimonials in Reputation Management":"평판 관리에서 비디오 추천사",
   "View By Type":"유형별 보기",
   "View Changelog":"변경 이력",
+  "View Configuration":"구성 보기",
   "View Documentation":"문서 보기",
   "Voice AI":"음성 AI",
   "Voice AI - Flexible Outbound Calling Framework":"음성 AI - 유연한 아웃바운드 통화 프레임워크",
@@ -535,7 +548,8 @@ var t={
   "Workflow":"워크플로우",
   "Workflow List":"워크플로우 목록",
   "Workflows":"워크플로우",
-  "Yes":"예"
+  "Yes":"예",
+  "You can use your own SMTP services or use the default service":"자체 SMTP 서비스를 사용하거나 기본 서비스를 이용할 수 있어요"
 };
 
 function r(){
