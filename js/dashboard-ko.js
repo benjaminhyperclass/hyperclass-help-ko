@@ -1,5 +1,5 @@
 // Hyperclass — GHL 대시보드 한글화
-// Version: 3.2.0
+// Version: 3.3.0
 // Translations: 544
 // Auto-updated by ghl-ui-updater.py
 // 적용 위치: Agency Settings > Company > Whitelabel > Custom JS
@@ -570,24 +570,60 @@ function r(){
   });
 }
 
-// 초기 실행
-setTimeout(r,500);
+// iframe 내부도 번역 (GHL이 설정 페이지를 iframe으로 분리하는 경우 대응)
+function rIframe(){
+  document.querySelectorAll('iframe').forEach(function(f){
+    try{
+      var d=f.contentDocument||f.contentWindow.document;
+      if(!d||!d.body)return;
+      var nodes=[];
+      var walker=d.createTreeWalker(d.body,NodeFilter.SHOW_TEXT,null,false);
+      while(walker.nextNode())nodes.push(walker.currentNode);
+      nodes.forEach(function(n){
+        var txt=n.textContent.trim();
+        if(!txt||txt.length<2||txt.length>120)return;
+        var key=txt.endsWith(' New')?txt.replace(/ New$/,'').trim():txt;
+        if(t[key])n.textContent=n.textContent.replace(txt,t[key]);
+      });
+      d.querySelectorAll('input[placeholder],textarea[placeholder]').forEach(function(el){
+        var ph=el.placeholder.trim();
+        if(t[ph])el.placeholder=t[ph];
+      });
+      if(!f._hcObs){
+        f._hcObs=new MutationObserver(function(){
+          clearTimeout(window._hcT2);
+          window._hcT2=setTimeout(function(){r();rIframe();},300);
+        });
+        f._hcObs.observe(d.body,{childList:true,subtree:true});
+      }
+    }catch(e){}
+  });
+}
+
+// Vue API 응답 후 재렌더링 대응: DOM 변경 감지 후 짧게 반복 실행
+function rBurst(){
+  var delays=[100,300,600,1000,1800];
+  delays.forEach(function(d){setTimeout(function(){r();rIframe();},d);});
+}
+
+// 초기 실행 (burst로 lazy-loaded 컴포넌트 커버)
+rBurst();
 
 // MutationObserver: Vue DOM 변경 감지
 new MutationObserver(function(){
   clearTimeout(window._hcT);
-  window._hcT=setTimeout(r,300);
+  window._hcT=setTimeout(rBurst,200);
 }).observe(document.body,{childList:true,subtree:true});
 
 // GHL Vue Router 네비게이션 이벤트
 window.addEventListener('routeChangeEvent',function(){
   clearTimeout(window._hcT);
-  window._hcT=setTimeout(r,600);
+  window._hcT=setTimeout(rBurst,400);
 });
 
-// 탭 클릭 시 재번역 (Element Plus el-tabs 지연 렌더링 대응)
+// 탭 클릭 시 재번역
 document.addEventListener('click',function(e){
-  var tab=e.target.closest('.el-tabs__nav,.el-tabs__header,[class*="hl-tab"],[role="tablist"]');
-  if(tab){clearTimeout(window._hcT);window._hcT=setTimeout(r,500);}
+  var tab=e.target.closest('.el-tabs__nav,.el-tabs__header,[class*="hl-tab"],[role="tablist"],[role="tab"]');
+  if(tab){clearTimeout(window._hcT);window._hcT=setTimeout(rBurst,200);}
 });
 })();
