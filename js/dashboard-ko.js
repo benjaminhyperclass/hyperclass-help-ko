@@ -570,9 +570,24 @@ function r(){
   });
 }
 
+// 초기 실행
 setTimeout(r,500);
+
+// MutationObserver: Vue DOM 변경 감지
 new MutationObserver(function(){
   clearTimeout(window._hcT);
   window._hcT=setTimeout(r,300);
 }).observe(document.body,{childList:true,subtree:true});
+
+// GHL Vue Router 네비게이션 이벤트
+window.addEventListener('routeChangeEvent',function(){
+  clearTimeout(window._hcT);
+  window._hcT=setTimeout(r,600);
+});
+
+// 탭 클릭 시 재번역 (Element Plus el-tabs 지연 렌더링 대응)
+document.addEventListener('click',function(e){
+  var tab=e.target.closest('.el-tabs__nav,.el-tabs__header,[class*="hl-tab"],[role="tablist"]');
+  if(tab){clearTimeout(window._hcT);window._hcT=setTimeout(r,500);}
+});
 })();
