@@ -1,5 +1,28 @@
 # Hyperclass 도움말
 
+## 🔥 자주 묻는 질문(FAQ)
+
+* [자주 묻는 질문 모아보기](docs/00-자주묻는질문/README.md)
+* [하이퍼클래스는 어떤 서비스인가요?](docs/00-자주묻는질문/what-is-hyperclass.md)
+* [어떤 분에게 적합한가요?](docs/00-자주묻는질문/who-is-it-for.md)
+* [무료 체험과 신용카드](docs/00-자주묻는질문/free-trial.md)
+* [처음 세팅 순서](docs/00-자주묻는질문/first-setup.md)
+* [기존 고객 데이터 옮겨오기](docs/00-자주묻는질문/migrate-data.md)
+* [요금제 구성](docs/00-자주묻는질문/pricing-plans.md)
+* [사용량(재청구) 비용](docs/00-자주묻는질문/usage-costs.md)
+* [결제 수단](docs/00-자주묻는질문/payment-methods.md)
+* [요금제 변경·환불](docs/00-자주묻는질문/plan-change-refund.md)
+* [해지 시 데이터 처리](docs/00-자주묻는질문/data-on-cancel.md)
+* [AI 챗봇 자동 응답](docs/00-자주묻는질문/ai-chatbot.md)
+* [상담·미팅 예약](docs/00-자주묻는질문/booking.md)
+* [예약 확정·리마인드 알림](docs/00-자주묻는질문/reminders.md)
+* [웨비나·전략세션 퍼널](docs/00-자주묻는질문/funnels.md)
+* [자동화(워크플로우)](docs/00-자주묻는질문/automation.md)
+* [카카오톡 채널 연동](docs/00-자주묻는질문/kakao-channel.md)
+* [알림톡 템플릿 등록](docs/00-자주묻는질문/alimtalk.md)
+* [구글·아웃룩 캘린더 연동](docs/00-자주묻는질문/calendar-sync.md)
+* [챗봇이 답을 못 할 때](docs/00-자주묻는질문/chatbot-handover.md)
+* [문의 방법](docs/00-자주묻는질문/contact.md)
 
 ## 시작하기(Getting Started)
 
