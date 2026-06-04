@@ -24,6 +24,11 @@
 * [챗봇이 답을 못 할 때](docs/00-자주묻는질문/chatbot-handover.md)
 * [문의 방법](docs/00-자주묻는질문/contact.md)
 
+## 🇰🇷 한국 전용 앱
+
+* [한국 전용 앱](docs/43-한국-앱/README.md)
+* [토스페이먼츠 앱 설치하기](docs/43-한국-앱/tosspayments-installation.md)
+
 ## 시작하기(Getting Started)
 
   * [시작하기 - 자동 이메일 및 SMS 후속 연락](docs/01-시작하기/기본-설정/getting-started-automatic-email-and-sms-followup.md)
