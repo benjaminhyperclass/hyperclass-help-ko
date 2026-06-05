@@ -27,6 +27,7 @@
 ## 🇰🇷 한국 전용 앱
 
 * [한국 전용 앱](docs/43-한국-앱/README.md)
+* [토스페이먼츠 시작 가이드 (전체 신청~연동)](docs/43-한국-앱/tosspayments-getting-started.md)
 * [토스페이먼츠 앱 설치하기](docs/43-한국-앱/tosspayments-installation.md)
 
 ## 시작하기(Getting Started)
