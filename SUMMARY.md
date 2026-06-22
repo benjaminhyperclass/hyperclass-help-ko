@@ -25,10 +25,11 @@
 * [구글·아웃룩 캘린더 연동](docs/00-자주묻는질문/calendar-sync.md)
 * [챗봇이 답을 못 할 때](docs/00-자주묻는질문/chatbot-handover.md)
 * [문의 방법](docs/00-자주묻는질문/contact.md)
-* [영어도 지원돼요? (언어 설정)](language-support.md)
-* [벤자민이 누구예요? (창업자 소개)](who-is-benjamin.md)
-* [도입하면 뭐가 좋아져요? (도입 효과·ROI)](benefits-roi.md)
-* [모바일 앱 있어요?](mobile-app.md)
+* [인스타그램 댓글 자동화·자동 DM, 여러 계정도 되나요?](docs/00-자주묻는질문/instagram-comment-automation.md)
+* [영어도 지원돼요? (언어 설정)](docs/00-자주묻는질문/language-support.md)
+* [벤자민이 누구예요? (창업자 소개)](docs/00-자주묻는질문/who-is-benjamin.md)
+* [도입하면 뭐가 좋아져요? (도입 효과·ROI)](docs/00-자주묻는질문/benefits-roi.md)
+* [모바일 앱 있어요?](docs/00-자주묻는질문/mobile-app.md)
 
 ## 🇰🇷 한국 전용 앱
 
