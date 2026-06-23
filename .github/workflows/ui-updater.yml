@@ -1,25 +1,31 @@
 name: GHL UI 한글화 자동 업데이트
 
+# EN 추출은 로컬 북마클릿으로 수동 (2FA 제약, 섹션 2.3 참고)
+# 이 워크플로우는 push된 EN 파일 기준으로 diff → 번역 → 빌드 → CDN만 담당
+
 on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/ghl-i18n-en.json'   # Benjamin이 북마클릿 추출 후 push 시 자동 실행
   schedule:
-    - cron: '0 21 15 * *'    # 매월 15일 UTC 21:00 = KST 16일 06:00
+    - cron: '0 21 15 * *'          # 매월 15일 UTC 21:00 = KST 16일 06:00
   workflow_dispatch:
     inputs:
       mode:
         description: '실행 모드'
         required: true
-        default: 'full'
+        default: 'translate'
         type: choice
         options:
-          - dry-run       # EN 추출 + diff만, 번역/빌드/배포 없음
-          - extract-only  # EN 추출 + diff + 저장, 번역 없음
-          - translate     # 미번역 키 번역 + 빌드 (추출 스킵)
-          - full          # EN 추출 → 번역 → 빌드 → CDN 배포
+          - dry-run     # diff만 확인, 번역/빌드 없음
+          - translate   # 미번역 키 번역 + 빌드 + 배포
+          - full        # 전체 파이프라인 (translate와 동일)
 
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 90
+    timeout-minutes: 60
     steps:
       # ── 체크아웃 ────────────────────────────────────────────────
       - uses: actions/checkout@v4
@@ -40,33 +46,9 @@ jobs:
       - name: 의존성 설치
         run: |
           pip install -r scripts/requirements.txt
-          pip install playwright
-          playwright install chromium --with-deps
           npm install -g terser
 
-      # ── [Step 1] GHL EN i18n 추출 (Playwright) ──────────────────
-      - name: GHL EN i18n 추출
-        if: >
-          github.event_name == 'schedule' ||
-          inputs.mode == 'full' ||
-          inputs.mode == 'dry-run' ||
-          inputs.mode == 'extract-only'
-        run: |
-          if [[ "${{ inputs.mode }}" == "dry-run" ]]; then
-            python scripts/extract-ghl-i18n.py --dry-run
-          else
-            python scripts/extract-ghl-i18n.py
-          fi
-        env:
-          GHL_EMAIL:        ${{ secrets.GHL_EMAIL }}
-          GHL_PASSWORD:     ${{ secrets.GHL_PASSWORD }}
-          GHL_LOC_ID:       ${{ secrets.GHL_LOC_ID }}
-          GHL_SESSION_JSON: ${{ secrets.GHL_SESSION_JSON }}
-          GHL_URL:          ${{ vars.GHL_DASHBOARD_URL || 'https://app.gohighlevel.com' }}
-          REPO_PATH:        ${{ github.workspace }}
-          VAULT_PATH:       ${{ github.workspace }}
-
-      # ── [Step 2] diff 분석 ──────────────────────────────────────
+      # ── [Step 1] diff 분석 ──────────────────────────────────────
       - name: i18n diff 분석
         run: |
           python scripts/diff-i18n.py \
@@ -78,24 +60,26 @@ jobs:
           REPO_PATH:  ${{ github.workspace }}
           VAULT_PATH: ${{ github.workspace }}
 
-      # ── [Step 3] 신규 키 번역 ────────────────────────────────────
+      # ── [Step 2] 신규 키 번역 (dry-run 제외) ─────────────────────
       - name: 신규 키 번역 (Anthropic API)
         if: >
+          github.event_name == 'push' ||
           github.event_name == 'schedule' ||
-          inputs.mode == 'full' ||
-          inputs.mode == 'translate'
+          inputs.mode == 'translate' ||
+          inputs.mode == 'full'
         run: bash scripts/update-translations.sh --yes --no-build
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           REPO_PATH:         ${{ github.workspace }}
           VAULT_PATH:        ${{ github.workspace }}
 
-      # ── [Step 4] 빌드 (dry-run / extract-only 제외) ─────────────
+      # ── [Step 3] 빌드 ────────────────────────────────────────────
       - name: dashboard-ko.js 빌드
         if: >
+          github.event_name == 'push' ||
           github.event_name == 'schedule' ||
-          inputs.mode == 'full' ||
-          inputs.mode == 'translate'
+          inputs.mode == 'translate' ||
+          inputs.mode == 'full'
         run: |
           python scripts/build-dashboard-ko.py
           terser js/dashboard-ko.js -o js/dashboard-ko.min.js --compress --mangle
@@ -103,14 +87,14 @@ jobs:
         env:
           REPO_PATH:  ${{ github.workspace }}
           VAULT_PATH: ${{ github.workspace }}
-          TERSER_PATH: terser
 
-      # ── [Step 5] 화이트라벨 검증 ────────────────────────────────
+      # ── [Step 4] 화이트라벨 검증 ────────────────────────────────
       - name: JS 화이트라벨 검증
         if: >
+          github.event_name == 'push' ||
           github.event_name == 'schedule' ||
-          inputs.mode == 'full' ||
-          inputs.mode == 'translate'
+          inputs.mode == 'translate' ||
+          inputs.mode == 'full'
         run: |
           python3 - << 'PYEOF'
           import sys, os
@@ -135,13 +119,13 @@ jobs:
               f.write(summary + '\n')
           PYEOF
 
-      # ── [Step 6] 커밋 & 푸시 ─────────────────────────────────────
+      # ── [Step 5] 커밋 & 푸시 ─────────────────────────────────────
       - name: 커밋 & 푸시
         if: >
+          github.event_name == 'push' ||
           github.event_name == 'schedule' ||
-          inputs.mode == 'full' ||
           inputs.mode == 'translate' ||
-          inputs.mode == 'extract-only'
+          inputs.mode == 'full'
         run: |
           git config user.name "Hyperclass Bot"
           git config user.email "bot@hyperclass.ai"
@@ -154,12 +138,13 @@ jobs:
             echo "변경 없음 — 커밋 스킵"
           fi
 
-      # ── [Step 7] CDN 퍼지 ────────────────────────────────────────
+      # ── [Step 6] CDN 퍼지 ────────────────────────────────────────
       - name: jsDelivr CDN 퍼지
         if: >
-          (github.event_name == 'schedule' ||
-           inputs.mode == 'full' ||
-           inputs.mode == 'translate') &&
+          (github.event_name == 'push' ||
+           github.event_name == 'schedule' ||
+           inputs.mode == 'translate' ||
+           inputs.mode == 'full') &&
           success()
         run: |
           curl -sf "https://purge.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@main/js/dashboard-ko.min.js" || true
@@ -173,6 +158,7 @@ jobs:
         run: |
           {
             echo "## UI 업데이터 완료 — $(date -u '+%Y-%m-%d %H:%M UTC')"
-            echo "- 모드: ${{ github.event_name == 'schedule' && 'schedule(full)' || inputs.mode }}"
+            echo "- 트리거: ${{ github.event_name }}"
+            echo "- 모드: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || github.event_name }}"
             echo "- 빌드: $(head -4 js/dashboard-ko.js 2>/dev/null | grep 'DOM translations' || echo 'N/A')"
           } >> $GITHUB_STEP_SUMMARY
