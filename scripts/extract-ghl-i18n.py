@@ -86,6 +86,22 @@ def extract_with_playwright(dry_run: bool):
 
     check_credentials()
 
+    # i18n이 실제로 로드됐는지 확인하는 JS (키가 1개라도 있어야 함)
+    WAIT_FOR_I18N_JS = """
+    (function() {
+      try {
+        var app = document.querySelector('#app').__vue_app__;
+        if (!app) return false;
+        var i18n = app.config.globalProperties.$i18n;
+        if (!i18n) return false;
+        var msgs = i18n.getLocaleMessage
+          ? i18n.getLocaleMessage('en')
+          : (i18n.messages && i18n.messages.value && i18n.messages.value['en']) || {};
+        return Object.keys(msgs).length > 100;
+      } catch(e) { return false; }
+    })()
+    """
+
     print(f"🔐 GHL 로그인 중... ({GHL_URL})")
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
@@ -105,6 +121,8 @@ def extract_with_playwright(dry_run: bool):
         except PWTimeout:
             print("⚠️  페이지 로드 타임아웃 — 계속 진행합니다.")
 
+        print(f"  현재 URL: {page.url}")
+
         # 로그인 폼 감지
         email_sel  = 'input[type="email"], input[name="email"], #email'
         pass_sel   = 'input[type="password"], input[name="password"], #password'
@@ -116,39 +134,46 @@ def extract_with_playwright(dry_run: bool):
             page.fill(pass_sel, GHL_PASS)
             page.click(submit_sel)
             print("  로그인 버튼 클릭...")
+            # 로그인 후 리다이렉트 완료 대기
+            page.wait_for_load_state("networkidle", timeout=30000)
+            print(f"  로그인 후 URL: {page.url}")
         except PWTimeout:
-            # 이미 로그인된 상태일 수 있음
             print("  로그인 폼 없음 — 이미 로그인된 상태일 수 있어요.")
 
-        # 대시보드 로드 대기 (Vue 앱 마운트 필요)
-        print("  대시보드 로드 대기 중...")
-        try:
-            page.wait_for_selector("#app", timeout=30000)
-            page.wait_for_function(
-                "document.querySelector('#app') && document.querySelector('#app').__vue_app__",
-                timeout=30000
-            )
-        except PWTimeout:
-            print("❌ Vue 앱 초기화 타임아웃. 로그인 실패 또는 2FA 필요.")
-            print(f"   현재 URL: {page.url}")
-            print(f"   페이지 제목: {page.title()}")
-            browser.close()
-            sys.exit(1)
-
-        # ── Location으로 이동 (GHL_LOC_ID 있을 경우) ────────────────
+        # ── Location으로 이동 (i18n 풀 로딩을 위해 Location 대시보드로 이동) ──
+        target_url = GHL_URL
         if GHL_LOC_ID:
-            loc_url = f"https://app.gohighlevel.com/location/{GHL_LOC_ID}/dashboard"
-            print(f"  Location으로 이동 중... ({GHL_LOC_ID})")
-            try:
-                page.goto(loc_url, timeout=30000)
-                page.wait_for_load_state("networkidle", timeout=30000)
-                page.wait_for_function(
-                    "document.querySelector('#app') && document.querySelector('#app').__vue_app__",
-                    timeout=30000
-                )
-                print("  Location 로드 완료")
-            except PWTimeout:
-                print("⚠️  Location 이동 타임아웃 — 현재 페이지에서 추출 진행")
+            target_url = f"https://app.gohighlevel.com/location/{GHL_LOC_ID}/dashboard"
+
+        print(f"  대시보드로 이동 중... ({target_url})")
+        try:
+            page.goto(target_url, timeout=45000)
+            page.wait_for_load_state("networkidle", timeout=45000)
+            print(f"  이동 후 URL: {page.url}")
+        except PWTimeout:
+            print(f"⚠️  이동 타임아웃 — 현재 URL: {page.url}")
+
+        # ── Vue i18n 로드 대기 (키가 100개 이상 로드될 때까지) ──────
+        print("  Vue i18n 로드 대기 중...")
+        try:
+            page.wait_for_function(WAIT_FOR_I18N_JS, timeout=60000, polling=2000)
+            print("  ✅ i18n 로드 확인됨")
+        except PWTimeout:
+            print(f"⚠️  i18n 로드 타임아웃 — 현재 URL: {page.url}, 제목: {page.title()}")
+            # 디버그: Vue 앱 상태 확인
+            debug = page.evaluate("""
+            (function() {
+              var app = document.querySelector('#app');
+              if (!app) return {app: false};
+              var vue = app.__vue_app__;
+              if (!vue) return {app: true, vue: false};
+              var i18n = vue.config.globalProperties.$i18n;
+              if (!i18n) return {app: true, vue: true, i18n: false};
+              var msgs = i18n.getLocaleMessage ? i18n.getLocaleMessage('en') : {};
+              return {app: true, vue: true, i18n: true, keys: Object.keys(msgs).length};
+            })()
+            """)
+            print(f"  디버그: {debug}")
 
         # ── i18n 추출 ────────────────────────────────────────────────
         print("📦 i18n 키 추출 중...")
