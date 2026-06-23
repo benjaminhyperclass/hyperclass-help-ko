@@ -1,0 +1,15 @@
+name: CDN 캐시 퍼지
+
+on:
+  workflow_dispatch:
+
+jobs:
+  purge:
+    runs-on: ubuntu-latest
+    steps:
+      - name: jsDelivr 퍼지
+        run: |
+          curl -sf "https://purge.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@main/js/dashboard-ko.min.js"
+          curl -sf "https://purge.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@main/js/community-ko.min.js" || true
+          curl -sf "https://purge.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@main/js/version.json" || true
+          echo "## CDN 퍼지 완료 — $(date -u '+%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY

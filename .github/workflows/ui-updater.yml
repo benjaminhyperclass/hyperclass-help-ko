@@ -1,0 +1,93 @@
+name: GHL UI 한글화 자동 업데이트
+
+on:
+  schedule:
+    - cron: '0 21 15 * *'     # 매월 15일 UTC 21:00 = KST 16일 06:00
+  workflow_dispatch:
+    inputs:
+      mode:
+        description: '실행 모드'
+        required: true
+        default: 'build-only'
+        type: choice
+        options: [dry-run, build-only, full]
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 의존성 설치
+        run: |
+          pip install -r scripts/requirements.txt
+          npm install -g terser
+
+      - name: UI 빌드 (dashboard-ko.js)
+        run: |
+          python scripts/build-dashboard-ko.py
+        env:
+          REPO_PATH: ${{ github.workspace }}
+          VAULT_PATH: ${{ github.workspace }}
+          TERSER_PATH: terser
+
+      - name: Minify
+        run: |
+          terser js/dashboard-ko.js -o js/dashboard-ko.min.js --compress --mangle
+          [ -f js/community-ko.js ] && terser js/community-ko.js -o js/community-ko.min.js --compress --mangle || true
+
+      - name: JS 화이트라벨 검증
+        run: |
+          python3 - << 'PYEOF'
+          import sys, os
+          sys.path.insert(0, 'scripts')
+          from whitelabel import whitelabel_check
+
+          result = []
+          for js_file in ['js/dashboard-ko.js']:
+              if os.path.exists(js_file):
+                  with open(js_file, encoding='utf-8') as f:
+                      v = whitelabel_check(f.read())
+                  if v:
+                      result.append(f'⚠️  {js_file}: {len(v)}건')
+                      for x in v[:3]:
+                          result.append(f'   [{x["type"]}] {x["context"][:60]}')
+                  else:
+                      result.append(f'✅ {js_file}: 위반 없음')
+
+          summary = '## JS 화이트라벨 검증\n' + '\n'.join(result)
+          with open(os.environ.get('GITHUB_STEP_SUMMARY', '/dev/null'), 'a') as f:
+              f.write(summary + '\n')
+          print('\n'.join(result))
+          PYEOF
+
+      - name: 커밋 & 푸시
+        run: |
+          git config user.name "Hyperclass Bot"
+          git config user.email "bot@hyperclass.ai"
+          git add js/ data/
+          if ! git diff --cached --quiet; then
+            git commit -m "[Auto] UI 업데이트 ($(date +%Y-%m-%d))"
+            git push
+          else
+            echo "변경 없음 — 커밋 스킵"
+          fi
+
+      - name: CDN 퍼지
+        if: success()
+        run: |
+          curl -sf "https://purge.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@main/js/dashboard-ko.min.js" || true
+          curl -sf "https://purge.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@main/js/community-ko.min.js" || true
+          curl -sf "https://purge.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@main/js/version.json" || true
+          echo "## CDN 퍼지 완료" >> $GITHUB_STEP_SUMMARY
