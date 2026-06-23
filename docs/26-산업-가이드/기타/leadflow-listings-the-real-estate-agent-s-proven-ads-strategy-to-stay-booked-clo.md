@@ -178,7 +178,6 @@
 
 리드 마그넷이나 주택 가치 리포트를 전달하는 후속 조치 워크플로우를 트리거하세요.
 
-[부동산 중개사를 위한 문자 리드 캠페인 사용 방법](https://blog.hyperclass.ai/setting-up-high-performing-sms-campaigns-with-highlevel-your-ultimate-guide/)
 
 ## 4단계: 추적, 테스트 및 확장
 

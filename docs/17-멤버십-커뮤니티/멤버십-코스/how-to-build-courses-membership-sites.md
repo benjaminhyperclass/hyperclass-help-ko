@@ -12,7 +12,7 @@
 
 (위 이미지를 클릭하면 강의에 접근할 수 있습니다)
 
-Hyperclass 멤버십(Memberships)/강의(Courses) 웹사이트를 만드는 방법을 배우려면 [여기를 클릭하세요](https://hluniversity.hyperclass.ai/courses/products/19055657-bf66-49e0-add5-5416ef47aac3/categories/265afcf1-1685-422d-a6da-b2c7bcffdf86/posts/33fb9664-02c1-421e-a40a-f26d00371c6c?source=communities&group_slug=official-highlevel-community). 강의 페이지로 이동합니다 (이미 Hyperclass University에 로그인되어 있는 경우).
+Hyperclass 멤버십(Memberships)/강의(Courses) 웹사이트를 만드는 방법을 배우려면 [여기를 클릭하세요](https://hluniversity.hyperclass.ai/courses/products/19055657-bf66-49e0-add5-5416ef47aac3/categories/265afcf1-1685-422d-a6da-b2c7bcffdf86/posts/33fb9664-02c1-421e-a40a-f26d00371c6c?source=communities). 강의 페이지로 이동합니다 (이미 Hyperclass University에 로그인되어 있는 경우).
 
 ## Hyperclass University에서 접근하기
 

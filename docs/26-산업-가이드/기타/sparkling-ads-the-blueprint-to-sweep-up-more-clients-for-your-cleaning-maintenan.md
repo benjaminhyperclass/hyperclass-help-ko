@@ -160,7 +160,6 @@
 - **명함, 전단지, 트럭**에 **QR 코드를 배치**합니다.
 - **즉시 응답 및 리마인더를 자동화**합니다.
 
-[청소업을 위한 문자 리드 캠페인 사용법](https://blog.hyperclass.ai/setting-up-high-performing-sms-campaigns-with-highlevel-your-ultimate-guide/)
 
 ### **4단계: 최대 ROI를 위한 광고 추적 및 최적화**
 

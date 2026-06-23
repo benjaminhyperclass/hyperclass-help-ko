@@ -6,7 +6,6 @@
 
 # 반짝이는 광고: 청소 및 유지보수 업체를 위한 더 많은 고객 확보 플랜
 
-[ ](https://blog.hyperclass.ai/setting-up-high-performing-sms-campaigns-with-highlevel-your-ultimate-guide/)목차
 
 - [이 플레이북이 중요한 이유](#이-플레이북이-중요한-이유)
 - [무엇을 배울 수 있나요?](#무엇을-배울-수-있나요)
@@ -160,7 +159,6 @@
 - **명함, 전단지, 트럭**에 **QR 코드**를 배치합니다.
 - **즉시 응답 및 알림**을 자동화합니다.
 
-[청소용 Text-to-Lead 캠페인 사용 방법](https://blog.hyperclass.ai/setting-up-high-performing-sms-campaigns-with-highlevel-your-ultimate-guide/)
 
 ## 4단계: 최대 ROI를 위한 광고 추적 및 최적화
 

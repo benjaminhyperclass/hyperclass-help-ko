@@ -183,7 +183,6 @@ CTA: "2분만에 무료 맞춤 리포트 받기를 클릭하세요!"
 ✅ 야드 사인, 전단지, 우편물에 QR 코드 배치
 ✅ 확인 및 예약 일정 자동화
 
-[부동산 컨설턴트용 문자-리드 캠페인 사용 방법](https://blog.hyperclass.ai/setting-up-high-performing-sms-campaigns-with-highlevel-your-ultimate-guide/)
 
 ## 4단계: 광고 ROI 추적 및 최적화하기
 

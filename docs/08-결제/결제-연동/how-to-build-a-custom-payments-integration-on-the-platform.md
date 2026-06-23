@@ -397,10 +397,10 @@ curl --location '${queryUrl}' \
   --header 'Content-Type: application/json' \
   --data '{
     "type": "verify",
-    "transactionId": "ghl_transaction_id",
+    "transactionId": "platform_transaction_id",
     "apiKey": "YOUR_API_KEY",
     "chargeId": "gateway_charge_id",
-    "subscriptionId": "ghl_subscription_id"
+    "subscriptionId": "platform_subscription_id"
   }'
 ```
 

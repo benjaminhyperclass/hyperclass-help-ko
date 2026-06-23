@@ -172,7 +172,6 @@
 
 리드 마그넷이나 주택 가치 보고서를 전달하는 후속 워크플로우를 트리거하세요.
 
-[부동산 중개인을 위한 Text-to-Lead 캠페인 활용 방법](https://blog.hyperclass.ai/setting-up-high-performing-sms-campaigns-with-highlevel-your-ultimate-guide/)
 
 ## 4단계: 추적, 테스트 및 확장
 

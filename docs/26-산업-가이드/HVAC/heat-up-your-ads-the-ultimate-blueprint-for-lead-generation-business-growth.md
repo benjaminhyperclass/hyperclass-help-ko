@@ -185,7 +185,6 @@
 ✅ 트럭, 전단지, 명함에 **QR 코드**를 배치하여 **즉시 리드를 포착**합니다.
 ✅ 더 나은 전환을 위해 **즉시 응답 및 리마인더를 자동화**합니다.
 
-[HVAC용 문자-리드 캠페인 사용 방법](https://blog.hyperclass.ai/setting-up-high-performing-sms-campaigns-with-highlevel-your-ultimate-guide/)
 
 ---
 

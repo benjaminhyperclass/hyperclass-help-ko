@@ -160,7 +160,6 @@ Hyperclass 워크플로우를 사용하여 몇 초 내에 후속 조치하세요
 
 Hyperclass 캠페인을 사용하여 답변과 후속 조치를 자동화하세요.
 
-[배관용 문자-투-리드 캠페인 사용법](https://blog.hyperclass.ai/setting-up-high-performing-sms-campaigns-with-highlevel-your-ultimate-guide/)
 
 ### 4단계: 최대 ROI를 위한 모든 광고 추적 및 최적화
 
