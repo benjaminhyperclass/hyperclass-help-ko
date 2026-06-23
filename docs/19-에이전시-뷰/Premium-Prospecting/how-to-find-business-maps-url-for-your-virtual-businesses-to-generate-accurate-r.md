@@ -51,7 +51,7 @@ https://www.google.com/maps/place/Your+Business+Name/@XX.XXXXXX,-YY.YYYYYY,17z/d
 
 ## 5단계: 프로스펙팅 도구에서 URL 사용
 
-- GoHighLevel 계정에서 프로스펙팅 도구(Prospecting Tool)를 엽니다.
+- Hyperclass 계정에서 프로스펙팅 도구(Prospecting Tool)를 엽니다.
 - "Search for Virtual Businesses"로 이동합니다.
 - 폼에서 "Business Maps URL" 섹션을 찾습니다.
 - 3단계에서 얻은 가상 GBP 지도 URL을 이 섹션에 붙여넣습니다.

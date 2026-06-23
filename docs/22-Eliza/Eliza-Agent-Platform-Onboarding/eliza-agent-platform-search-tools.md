@@ -36,7 +36,7 @@
 
 ### 연락처 추가
 
-Eliza 사용자는 Search(검색) → Contacts(연락처)로 이동하여 Eliza를 통해 하위 계정에 연락처를 추가할 수 있습니다. 이러한 연락처는 연락처 소스 필드가 'Eliza_User'로 표시되어 해당 GHL 하위 계정에 동기화됩니다. Eliza를 통해 하위 계정에 연락처가 추가되면, Eliza 에이전트는 수동으로 자신이나 다른 에이전트에게 배정해야 합니다. 하위 계정의 감사 로그에는 추가된 연락처에 대한 항목이 표시됩니다.
+Eliza 사용자는 Search(검색) → Contacts(연락처)로 이동하여 Eliza를 통해 하위 계정에 연락처를 추가할 수 있습니다. 이러한 연락처는 연락처 소스 필드가 'Eliza_User'로 표시되어 해당 Hyperclass 하위 계정에 동기화됩니다. Eliza를 통해 하위 계정에 연락처가 추가되면, Eliza 에이전트는 수동으로 자신이나 다른 에이전트에게 배정해야 합니다. 하위 계정의 감사 로그에는 추가된 연락처에 대한 항목이 표시됩니다.
 
 ![연락처 추가 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48290416793/original/P2rrcFdQGt7Jh5TJgD0muXgADKd5kCQD4A.png?1680260325)
 

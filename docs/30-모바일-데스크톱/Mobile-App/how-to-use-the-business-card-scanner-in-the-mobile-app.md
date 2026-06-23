@@ -8,7 +8,7 @@
 
 ---
 
-HighLevel과 LeadConnector 모바일 앱의 최신 업데이트인 명함 스캐너를 출시하게 되어 매우 기쁩니다. 하위 계정 관리자와 사용자가 이제 명함을 스캔하여 새 연락처를 생성할 수 있습니다. 이 업데이트는 HighLevel, LeadConnector, 그리고 화이트라벨 모바일 앱(업데이트 요청 필요)에서 사용할 수 있습니다.
+Hyperclass과 LeadConnector 모바일 앱의 최신 업데이트인 명함 스캐너를 출시하게 되어 매우 기쁩니다. 하위 계정 관리자와 사용자가 이제 명함을 스캔하여 새 연락처를 생성할 수 있습니다. 이 업데이트는 Hyperclass, LeadConnector, 그리고 화이트라벨 모바일 앱(업데이트 요청 필요)에서 사용할 수 있습니다.
 
 ---
 
@@ -47,7 +47,7 @@ HighLevel과 LeadConnector 모바일 앱의 최신 업데이트인 명함 스캐
 
 ## 사용 가능 버전
 
-- HighLevel (iOS, Android) - v3.74 이상
+- Hyperclass (iOS, Android) - v3.74 이상
 - LeadConnector (iOS, Android) - v3.74 이상  
 - WhiteLabel (iOS, Android) - v3.74 이상
 

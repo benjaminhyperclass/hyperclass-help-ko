@@ -24,7 +24,7 @@ SaaS Configurator의 새로운 설정 기능으로 에이전시가 새로운 Saa
 
 # 새로운 SaaS 하위 계정의 기본 이름 규칙이란?
 
-이 설정은 체크아웃 과정에서 HighLevel이 새로운 SaaS 하위 계정을 생성할 때 사용되는 기본 이름 규칙을 정의합니다. 에이전시는 회사 이름(체크아웃 시 제공되는 비즈니스명) 또는 기존의 고객 이름 + '님의 계정' 형식 중 선택할 수 있습니다. 이 선택은 향후 신규 가입자에게 적용되며 기존 계정의 이름은 변경하지 않습니다.
+이 설정은 체크아웃 과정에서 Hyperclass이 새로운 SaaS 하위 계정을 생성할 때 사용되는 기본 이름 규칙을 정의합니다. 에이전시는 회사 이름(체크아웃 시 제공되는 비즈니스명) 또는 기존의 고객 이름 + '님의 계정' 형식 중 선택할 수 있습니다. 이 선택은 향후 신규 가입자에게 적용되며 기존 계정의 이름은 변경하지 않습니다.
 
 참고: 이 옵션은 에이전시 수준의 SaaS Configurator에 있으며, Agency Pro($497) 플랜에서 SaaS 모드를 사용하는 에이전시에서만 이용할 수 있습니다. Starter 또는 Freelancer 플랜을 사용 중이시라면 Agency Pro로 업그레이드하여 SaaS Configurator 기능에 접근하세요.
 
@@ -50,7 +50,7 @@ SaaS Configurator의 새로운 설정 기능으로 에이전시가 새로운 Saa
   - Company Name(회사 이름) (비즈니스 중심의 명확성을 위해 권장), 또는
   - Customer Name(고객 이름) + 's Account(님의 계정) (팀이 주로 소유자 기준으로 검색하는 경우 유용)
 
-- Save(저장)를 클릭합니다. HighLevel 퍼널(및 지원되는 외부 결제)을 통해 생성되는 새로운 SaaS 하위 계정은 이제 선택한 규칙을 따릅니다.
+- Save(저장)를 클릭합니다. Hyperclass 퍼널(및 지원되는 외부 결제)을 통해 생성되는 새로운 SaaS 하위 계정은 이제 선택한 규칙을 따릅니다.
 
 ![새로운 SaaS 계정의 기본 이름 규칙 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051929421/original/IckVOU9WIzvOEuBgM0y_AU0BE2MeqyIsxA.png?1755618360)
 
@@ -66,19 +66,19 @@ SaaS Configurator의 새로운 설정 기능으로 에이전시가 새로운 Saa
 - **Customer Name(고객 이름) + 's Account(님의 계정)** — 구매자의 개인 이름에 '님의 계정'을 추가합니다.
   예시: Jane Smith님의 계정
 
-참고: 체크아웃 과정에서 Company Name(회사 이름) 필드가 없거나 비어있는 경우, HighLevel은 Customer Name(고객 이름) + '님의 계정'으로 기본 설정됩니다.
+참고: 체크아웃 과정에서 Company Name(회사 이름) 필드가 없거나 비어있는 경우, Hyperclass은 Customer Name(고객 이름) + '님의 계정'으로 기본 설정됩니다.
 
 ---
 
 ## 외부 결제 연동
 
-클라이언트의 비즈니스 이름을 외부 결제에서 HighLevel로 메타데이터로 전달하여 HighLevel 퍼널 체크아웃 **외부에서도** 동일한 이름 규칙을 적용할 수 있습니다.
+클라이언트의 비즈니스 이름을 외부 결제에서 Hyperclass로 메타데이터로 전달하여 Hyperclass 퍼널 체크아웃 **외부에서도** 동일한 이름 규칙을 적용할 수 있습니다.
 
 - 외부 결제에서 비어있지 않은 companyName 구독 메타데이터 값을 전송하도록 확인합니다.
 
 - 메타데이터가 있을 때 비즈니스 이름을 적용하려면 SaaS Configurator를 Use Company Name(회사 이름 사용)으로 설정해 두세요.
 
-- companyName이 누락되거나 비어있는 경우, HighLevel은 Customer Name(고객 이름) + '님의 계정'으로 대체됩니다.
+- companyName이 누락되거나 비어있는 경우, Hyperclass은 Customer Name(고객 이름) + '님의 계정'으로 대체됩니다.
 
 예시 메타데이터 페이로드(참고용):
 
@@ -111,7 +111,7 @@ SaaS Configurator의 새로운 설정 기능으로 에이전시가 새로운 Saa
 
 ## **회사 이름 캡처**
 
-HighLevel은 고객이 체크아웃 시 입력한 회사 이름을 캡처하여 `companyName`으로 구독의 메타데이터에 포함합니다.
+Hyperclass은 고객이 체크아웃 시 입력한 회사 이름을 캡처하여 `companyName`으로 구독의 메타데이터에 포함합니다.
 
 다음에 적용됩니다:
 - Payments 생태계를 사용하는 V2 퍼널(API를 통해 메타데이터 전달)
@@ -125,7 +125,7 @@ HighLevel은 고객이 체크아웃 시 입력한 회사 이름을 캡처하여 
 아니요. 설정을 저장한 후 새로운 SaaS 가입자에게만 적용됩니다.
 
 **Q: 체크아웃 중에 회사 이름이 제공되지 않으면 어떻게 되나요?**
-HighLevel이 고객 이름 + '님의 계정'으로 기본 설정됩니다.
+Hyperclass이 고객 이름 + '님의 계정'으로 기본 설정됩니다.
 
 **Q: 나중에 기본값을 변경할 수 있나요?**
 네. 언제든지 SaaS Configurator에서 옵션을 업데이트할 수 있습니다. 향후 가입자에게 적용됩니다.

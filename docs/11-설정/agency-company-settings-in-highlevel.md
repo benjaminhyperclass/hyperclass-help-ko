@@ -4,9 +4,9 @@
 카테고리: 11-설정
 ---
 
-# HighLevel 에이전시 회사 설정
+# Hyperclass 에이전시 회사 설정
 
-이 가이드에서는 HighLevel에서 에이전시 회사 설정(Company Settings)을 업데이트하고 개인화하는 방법을 알려드립니다! 에이전시 이름, 이메일, 로고 업데이트부터 커스텀 코드 추가나 AI, 고급 트리거 같은 강력한 기능 활성화까지, 업데이트된 UI의 모든 탭과 옵션을 단계별로 안내합니다.
+이 가이드에서는 Hyperclass에서 에이전시 회사 설정(Company Settings)을 업데이트하고 개인화하는 방법을 알려드립니다! 에이전시 이름, 이메일, 로고 업데이트부터 커스텀 코드 추가나 AI, 고급 트리거 같은 강력한 기능 활성화까지, 업데이트된 UI의 모든 탭과 옵션을 단계별로 안내합니다.
 
 **목차**
 
@@ -46,7 +46,7 @@
 
 ## **1단계: 기본 정보 탭**
 
-기본 정보 탭(Basic Details Tab)은 HighLevel 내에서 에이전시 정체성의 기초를 설정하는 곳입니다. 비즈니스 이름과 틈새 시장부터 연락처 정보와 기능 토글까지, 이 영역이 플랫폼 전반에서 에이전시의 톤을 설정합니다.
+기본 정보 탭(Basic Details Tab)은 Hyperclass 내에서 에이전시 정체성의 기초를 설정하는 곳입니다. 비즈니스 이름과 틈새 시장부터 연락처 정보와 기능 토글까지, 이 영역이 플랫폼 전반에서 에이전시의 톤을 설정합니다.
 
 ### **1. 회사 정보 & 정체성**
 
@@ -54,8 +54,8 @@
 
 - Company Name, Email, Phone(회사 이름, 이메일, 전화번호) – 헤더, 이메일, 시스템 요소에 사용되는 주요 비즈니스 식별자
 - Website URL(웹사이트 URL) – 신뢰성을 높이며 화이트라벨 경험에서 참조됨
-- Business Category & Niche(비즈니스 카테고리 & 틈새) – 업종에 맞게 HighLevel 기능을 개인화하는 데 도움
-- Usage Type(사용 유형) – 에이전시인지 HighLevel을 직접 사용하는 비즈니스인지 정의
+- Business Category & Niche(비즈니스 카테고리 & 틈새) – 업종에 맞게 Hyperclass 기능을 개인화하는 데 도움
+- Usage Type(사용 유형) – 에이전시인지 Hyperclass을 직접 사용하는 비즈니스인지 정의
 
 ![회사 기본 정보](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044336977/original/kcnSKPrTmWR5gtCQVIk18ws0NzzZo8o0Ow.png?1743517306)
 
@@ -98,7 +98,7 @@
 
 ### **2. 파비콘 & 적용 범위**
 
-파비콘(Favicon)은 브라우저 탭과 링크 미리보기에 나타나는 작은 아이콘입니다. HighLevel은 특정 브랜딩 경험(사이트, 클라이언트 포털, 멤버십/강의 사이트)에서 파비콘을 지원합니다. 파비콘을 어디에 설정할 수 있고 브랜드 전반에 어떻게 표시되는지 이해하려면 이 가이드를 참고하세요.
+파비콘(Favicon)은 브라우저 탭과 링크 미리보기에 나타나는 작은 아이콘입니다. Hyperclass은 특정 브랜딩 경험(사이트, 클라이언트 포털, 멤버십/강의 사이트)에서 파비콘을 지원합니다. 파비콘을 어디에 설정할 수 있고 브랜드 전반에 어떻게 표시되는지 이해하려면 이 가이드를 참고하세요.
 
 - 에이전시 전체 파비콘 가용성: 현재 Company → Whitelabel에는 별도의 에이전시 전체 파비콘 업로드가 없습니다. 아래의 자산별 옵션을 사용하세요.
 
@@ -116,10 +116,10 @@
 
 ### **3. 커스텀 도메인**
 
-자체 커스텀 도메인을 설정하여 로그인 경험과 링크 추적을 완전히 화이트라벨링합니다. 이러한 도메인은 고객과의 상호작용에서 HighLevel 브랜딩을 제거하고 신뢰와 전문성을 높입니다.
+자체 커스텀 도메인을 설정하여 로그인 경험과 링크 추적을 완전히 화이트라벨링합니다. 이러한 도메인은 고객과의 상호작용에서 Hyperclass 브랜딩을 제거하고 신뢰와 전문성을 높입니다.
 
 - Whitelabel Domain(화이트라벨 도메인) – 데스크톱 로그인 포털을 위한 브랜딩 도메인. 자세한 내용은 [데스크톱 웹앱용 화이트라벨 도메인 설정 방법](../16-SaaS-설정/기타/white-label-the-desktop-app.md) 참고
-- API Domain(API 도메인) – 에이전시와 하위 계정 수준에서 브랜딩 도메인을 설정하여 HighLevel에서 시스템 생성 링크를 커스터마이즈합니다. 자세한 내용은 [시스템 생성 링크 브랜딩 (API 도메인)](branding-system-generated-links-api-domain-.md) 참고
+- API Domain(API 도메인) – 에이전시와 하위 계정 수준에서 브랜딩 도메인을 설정하여 Hyperclass에서 시스템 생성 링크를 커스터마이즈합니다. 자세한 내용은 [시스템 생성 링크 브랜딩 (API 도메인)](branding-system-generated-links-api-domain-.md) 참고
 
 ![커스텀 도메인 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044339622/original/jTYvfdGNgSGxMssSBWjrQSVZeYDPoXPd8g.png?1743519570)
 
@@ -143,11 +143,11 @@
 
 ![커스텀 코드 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044341106/original/o8YYWXWkJICkEPe8mR4tZWoibxolM50Gow.png?1743521010)
 
-**중요**: 커스텀 JS/CSS는 강력하지만 지원되지 않습니다. HighLevel의 핵심 UI 변경으로 인해 코드가 작동하지 않을 수 있습니다. 항상 철저히 테스트하세요.
+**중요**: 커스텀 JS/CSS는 강력하지만 지원되지 않습니다. Hyperclass의 핵심 UI 변경으로 인해 코드가 작동하지 않을 수 있습니다. 항상 철저히 테스트하세요.
 
 ### **커스텀 CSS: 커스터마이즈 가능한 것과 불가능한 것**
 
-커스텀 CSS를 통해 HighLevel 인터페이스의 모양과 느낌을 조정할 수 있지만, 지원되는 것과 그렇지 않은 것을 아는 것이 중요합니다. 아래는 안전한 커스터마이제이션 옵션, 실용적인 예시, 피해야 할 영역입니다.
+커스텀 CSS를 통해 Hyperclass 인터페이스의 모양과 느낌을 조정할 수 있지만, 지원되는 것과 그렇지 않은 것을 아는 것이 중요합니다. 아래는 안전한 커스터마이제이션 옵션, 실용적인 예시, 피해야 할 영역입니다.
 
 #### **커스터마이즈 가능한 것**
 
@@ -219,7 +219,7 @@
 
 **Custom CSS** 편집기에 붙여넣을 때는 항상 `<style>...</style>` 태그로 규칙을 감싸주세요.
 
-- HighLevel 대시보드에서 요소를 마우스 우클릭
+- Hyperclass 대시보드에서 요소를 마우스 우클릭
 - **검사(Inspect)**를 선택하여 Chrome DevTools 열기
 - 선택자 복사
 - **Company Settings(회사 설정) → Whitelabel(화이트라벨) → Custom CSS**에 붙여넣기
@@ -266,7 +266,7 @@
 
 ### **2. 세션 타임아웃**
 
-사용자가 활동 없이 HighLevel에 로그인 상태를 유지할 수 있는 시간을 제어합니다. 이 기능은 설정된 시간 후 비활성 사용자를 자동으로 로그아웃시켜 에이전시 플랫폼 액세스를 보안하는 데 도움이 됩니다.
+사용자가 활동 없이 Hyperclass에 로그인 상태를 유지할 수 있는 시간을 제어합니다. 이 기능은 설정된 시간 후 비활성 사용자를 자동으로 로그아웃시켜 에이전시 플랫폼 액세스를 보안하는 데 도움이 됩니다.
 
 사용 가능한 옵션:
 - 15분
@@ -279,7 +279,7 @@
 - 3일
 - 해제
 
-공유 사무실 환경이나 공용 또는 팀 기기에서 HighLevel에 접근할 때 특히 유용합니다.
+공유 사무실 환경이나 공용 또는 팀 기기에서 Hyperclass에 접근할 때 특히 유용합니다.
 
 ![세션 타임아웃 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044341213/original/D0slylH8_qbz_Dqyq6A7UJAQ6ICuj_WaeA.png?1743521145)
 

@@ -70,7 +70,7 @@ DOC, DOCX, PDF, JPG, PNG, PPT, GIF
 
 ## **모바일 앱 지원**
 
-HighLevel 또는 LeadConnector 모바일 앱을 사용하여 이동 중에도 문서에 접근하고 관리할 수 있습니다.
+Hyperclass 또는 LeadConnector 모바일 앱을 사용하여 이동 중에도 문서에 접근하고 관리할 수 있습니다.
 
 - **버전 3.97.3 이상**인지 확인하세요
 - 연락처를 탭하여 프로필 보기

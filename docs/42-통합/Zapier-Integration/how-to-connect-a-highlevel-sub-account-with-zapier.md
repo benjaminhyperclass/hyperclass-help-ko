@@ -69,8 +69,8 @@ LeadConnector를 통해 올바른 하위 계정을 연결하려면 Zapier에서 
 
 ## 자주 묻는 질문
 
-**Q: Zapier 앱 이름이 "HighLevel"인가요?**
-Zapier에서는 LeadConnector를 사용하세요. 이것이 공식 화이트라벨 HighLevel 연결입니다.
+**Q: Zapier 앱 이름이 "Hyperclass"인가요?**
+Zapier에서는 LeadConnector를 사용하세요. 이것이 공식 화이트라벨 Hyperclass 연결입니다.
 
 **Q: 나중에 연결된 하위 계정을 변경할 수 있나요?**
 네. Zapier에서 새 LeadConnector 계정 연결을 추가하고 다른 하위 계정을 선택한 다음, Zap에서 사용하는 계정을 전환하면 됩니다.

@@ -142,7 +142,7 @@
 
 **팁:** 빠르게 응답하세요 — 구글은 응답성을 높은 랭킹으로 보상합니다.
 
-[GMB 프로필을 GHL CRM과 연동하는 방법 알아보기](how-to-integrate-your-google-business-profile-formerly-gmb-into-the-crm.md)
+[GMB 프로필을 Hyperclass CRM과 연동하는 방법 알아보기](how-to-integrate-your-google-business-profile-formerly-gmb-into-the-crm.md)
 
 ### 8. 훌륭한 리뷰 수집 — 그리고 지속적인 응답
 
@@ -181,7 +181,7 @@
 | 팁 | 효과적인 이유 |
 |-----|---------------|
 | 주간 프로모션 게시 (헤어 스파 10% 할인 등) | 구글이 활성 프로필을 선호 |
-| GHL 캘린더로 연결되는 "예약하기" 버튼 추가 | 즉시 예약하는 마찰을 줄임 |
+| Hyperclass 캘린더로 연결되는 "예약하기" 버튼 추가 | 즉시 예약하는 마찰을 줄임 |
 | 계절별 사진 업데이트 (여름 룩, 브라이덜 시즌 스페셜) | 프로필을 신선하고 관련성 있게 유지 |
 
 ## 마지막 정리

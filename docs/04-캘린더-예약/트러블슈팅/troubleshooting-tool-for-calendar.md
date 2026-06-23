@@ -187,8 +187,8 @@
 
 ## 관련 문서
 
-- [HighLevel 캘린더와 Google 연동하는 방법](../캘린더-연동/integrating-google-with-highlevel-calendars.md)
-- [HighLevel 캘린더와 Outlook 동기화하는 방법](../how-to-sync-highlevel-calendars-with-outlook.md)
+- [Hyperclass 캘린더와 Google 연동하는 방법](../캘린더-연동/integrating-google-with-highlevel-calendars.md)
+- [Hyperclass 캘린더와 Outlook 동기화하는 방법](../how-to-sync-highlevel-calendars-with-outlook.md)
 - [개별 캘린더의 예약 가능 시간 설정 조정](../Calendar-Availability-Settings/adjusting-availability-settings-for-individual-calendars.md)
 - [중복 예약 문제 트러블슈팅](troubleshoot-and-fix-calendar-double-booking-in-highlevel.md)
 - [캘린더의 사용자 권한](../user-permissions-in-calendars.md)

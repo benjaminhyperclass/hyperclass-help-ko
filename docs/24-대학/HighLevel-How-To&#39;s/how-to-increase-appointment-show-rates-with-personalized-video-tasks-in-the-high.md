@@ -1,7 +1,7 @@
 ---
 
 번역일: 2026-04-08
-카테고리: 24-대학 > HighLevel How-To's
+카테고리: 24-대학 > Hyperclass How-To's
 ---
 
 # Hyperclass 앱에서 개인 맞춤 영상 할 일을 활용해 예약 참석률 높이는 방법

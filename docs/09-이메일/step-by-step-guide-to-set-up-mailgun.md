@@ -67,7 +67,7 @@ Mailgun 단계별 설정 가이드:
 
 [Mailgun 설정 - CloudFlare](메일건/mailgun-setup-cloudflare-domain-setup.md)
 
-모든 DNS 레코드를 추가하고 인증을 완료하면, [Mailgun API 키 - Mailgun에서 찾는 방법 & HighLevel에 설정하는 방법](메일건/mailgun-private-api-key-setup.md)을 참고하여 API 키를 가져올 수 있습니다.
+모든 DNS 레코드를 추가하고 인증을 완료하면, [Mailgun API 키 - Mailgun에서 찾는 방법 & Hyperclass에 설정하는 방법](메일건/mailgun-private-api-key-setup.md)을 참고하여 API 키를 가져올 수 있습니다.
 
 그런 다음 모든 것이 제대로 작동하는지 테스트 이메일을 보내볼 수 있습니다! [대화에서 테스트 이메일을 보내는 방법](트러블슈팅/how-to-send-a-test-email-in-the-conversation.md)을 참고하여 테스트해보세요.
 

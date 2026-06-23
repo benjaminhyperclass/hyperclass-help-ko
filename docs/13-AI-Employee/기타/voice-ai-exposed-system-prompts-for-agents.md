@@ -64,7 +64,7 @@
 
 ![변경사항 저장](https://jumpshare.com/share/m2UcvAH6Bf3pLPnNBd30+/Screen+Shot+2025-12-26+at+4.28.29+PM.png)
 
-- 대규모 편집을 되돌려야 하는 경우, **Reset to Default(기본값 재설정)**을 사용하여 HighLevel에서 유지 관리하는 원래의 실전 검증된 구성으로 복원합니다.
+- 대규모 편집을 되돌려야 하는 경우, **Reset to Default(기본값 재설정)**을 사용하여 Hyperclass에서 유지 관리하는 원래의 실전 검증된 구성으로 복원합니다.
 
 ![기본값 재설정](https://jumpshare.com/share/Ij781AXpiAbCaoTgeWd8+/Screen+Shot+2025-12-26+at+4.30.00+PM.png)
 
@@ -135,7 +135,7 @@
 
 **편집이 예상대로 작동하지 않으면 어떻게 되나요?**
 
-**기본값 재설정**을 사용하여 HighLevel에서 유지 관리하고 업데이트하는 원래 프롬프트 구성으로 복원할 수 있습니다.
+**기본값 재설정**을 사용하여 Hyperclass에서 유지 관리하고 업데이트하는 원래 프롬프트 구성으로 복원할 수 있습니다.
 
 **안전한 기본값으로 보호되는 부분은 무엇인가요?**
 

@@ -41,7 +41,7 @@
 
 ### **4단계: SaaS 플랜 선택**
 
-계속 진행하기 전에 플랜 세부 정보를 검토하세요. Select Subscription Plan(구독 플랜 선택) 모달에서 HighLevel은 이제 각 플랜에 대한 더 많은 정보를 표시하므로 활성화하려는 내용을 확인할 수 있습니다.
+계속 진행하기 전에 플랜 세부 정보를 검토하세요. Select Subscription Plan(구독 플랜 선택) 모달에서 Hyperclass은 이제 각 플랜에 대한 더 많은 정보를 표시하므로 활성화하려는 내용을 확인할 수 있습니다.
 
 - Select Plan 버튼 위의 **Show Full Details(전체 세부 정보 표시)** 옵션을 클릭하세요.
 

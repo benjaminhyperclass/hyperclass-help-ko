@@ -4,15 +4,15 @@
 카테고리: 19-에이전시-뷰 > Premium Prospecting
 ---
 
-# GoHighLevel 무료 vs 프리미엄 프로스펙팅 – 에이전시를 위한 완벽 가이드
+# Hyperclass 무료 vs 프리미엄 프로스펙팅 – 에이전시를 위한 완벽 가이드
 
 ## 프로스펙팅이란?
 
-프로스펙팅(Prospecting)은 당신의 서비스로부터 혜택을 받을 가능성이 높은 잠재 고객을 찾아내고 평가하는 과정입니다. GoHighLevel의 프로스펙팅은 고품질 리드를 발견하고, 마케팅 준비도를 분석하며, 서비스 제안 기회를 찾는 지능형 리드 생성 도구로, 모든 작업을 대시보드 내에서 할 수 있게 해줍니다.
+프로스펙팅(Prospecting)은 당신의 서비스로부터 혜택을 받을 가능성이 높은 잠재 고객을 찾아내고 평가하는 과정입니다. Hyperclass의 프로스펙팅은 고품질 리드를 발견하고, 마케팅 준비도를 분석하며, 서비스 제안 기회를 찾는 지능형 리드 생성 도구로, 모든 작업을 대시보드 내에서 할 수 있게 해줍니다.
 
-## GoHighLevel 프로스펙팅이란?
+## Hyperclass 프로스펙팅이란?
 
-GoHighLevel의 프로스펙팅 도구는 리드 생성 작업을 자동화하고 단순화하도록 설계되었습니다. 이제 비즈니스를 수동으로 검색하고 감사(audit)를 실행하는 대신 다음과 같은 작업이 가능합니다:
+Hyperclass의 프로스펙팅 도구는 리드 생성 작업을 자동화하고 단순화하도록 설계되었습니다. 이제 비즈니스를 수동으로 검색하고 감사(audit)를 실행하는 대신 다음과 같은 작업이 가능합니다:
 
 - 비즈니스 데이터와 AI를 사용하여 리드를 찾고 평가
 - 각 리드의 마케팅 현황 격차를 보여주는 감사 보고서 생성
@@ -25,7 +25,7 @@ GoHighLevel의 프로스펙팅 도구는 리드 생성 작업을 자동화하고
 
 ![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047851745/original/bVlHaxqcVCn4cxKXrmegIkcuXHe3XDL9_Q.jpeg?1749196005)
 
-## GoHighLevel에서 프로스펙팅 시작하기
+## Hyperclass에서 프로스펙팅 시작하기
 
 [자세한 가이드:](../Core-Functionality/how-to-generate-leads-using-the-highlevel-prospecting-tool.md)
 
@@ -99,7 +99,7 @@ GoHighLevel의 프로스펙팅 도구는 리드 생성 작업을 자동화하고
 
 ### CRM & 아웃리치 연동 (하위 계정에서만 이용 가능)
 
-- 잠재 고객을 GHL CRM, 기회 관리 파이프라인, 워크플로우로 전송합니다.
+- 잠재 고객을 Hyperclass CRM, 기회 관리 파이프라인, 워크플로우로 전송합니다.
 - CRM에서 직접 이메일과 SMS로 연락합니다.
 - 빠른 후속 조치를 위한 AI 추천 메시지 템플릿을 받습니다.
 
@@ -145,7 +145,7 @@ GoHighLevel의 프로스펙팅 도구는 리드 생성 작업을 자동화하고
 
 ### 관련 지원 문서
 
-[How to Generate Leads Using the HighLevel Prospecting Tool - The Ultimate Guide](../기타/how-to-generate-leads-using-the-highlevel-prospecting-tool-the-ultimate-guide.md)
+[How to Generate Leads Using the Hyperclass Prospecting Tool - The Ultimate Guide](../기타/how-to-generate-leads-using-the-highlevel-prospecting-tool-the-ultimate-guide.md)
 
 [How to find Leads for your business using Prospecting Tool](../Core-Functionality/how-to-find-leads-for-your-business-using-prospecting-tool.md)
 

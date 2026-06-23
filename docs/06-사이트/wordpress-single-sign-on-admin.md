@@ -25,7 +25,7 @@
 
 ## 사용 방법
 
-1. **대시보드로 이동**: HighLevel에 로그인하고 WordPress 대시보드를 엽니다.
+1. **대시보드로 이동**: Hyperclass에 로그인하고 WordPress 대시보드를 엽니다.
 ![대시보드 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155036344521/original/ElAzZg_lJq6zOxBf3_9nSBAlXhNcF2u3VA.png?1731329783)
 
 2. **버튼 찾기**: 각 사이트 옆에 "WP Admin" 버튼이 보입니다.

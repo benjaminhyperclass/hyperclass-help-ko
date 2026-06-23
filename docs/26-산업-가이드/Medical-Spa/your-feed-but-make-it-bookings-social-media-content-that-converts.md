@@ -16,7 +16,7 @@
 - 좋아요를 리드로 바꾸기
 - 콘텐츠 캘린더 자동화하기
 - 게시물을 실제 예약과 연결하기
-- GoHighLevel을 활용해 콘텐츠와 전환 사이의 연결고리 만들기
+- Hyperclass을 활용해 콘텐츠와 전환 사이의 연결고리 만들기
 
 ## 메디컬 스파에서 콘텐츠가 중요한 이유
 
@@ -45,16 +45,16 @@
 
 ---
 
-## GoHighLevel로 콘텐츠 캘린더 자동화하기
+## Hyperclass로 콘텐츠 캘린더 자동화하기
 
-GoHighLevel의 소셜 플래너(Social Planner)에서 할 수 있는 일:
+Hyperclass의 소셜 플래너(Social Planner)에서 할 수 있는 일:
 
 - 인스타그램, 페이스북, 구글 비즈니스 연결
 - 여러 플랫폼에 게시물 예약
 - 이미지, 캐러셀, 릴스 드래그 앤 드롭
 - 1-2시간에 한 달치 게시물 일괄 예약
 
-GHL 소셜 플래너 사용법을 확인하세요
+Hyperclass 소셜 플래너 사용법을 확인하세요
 
 내장된 템플릿과 시즌별 캘린더를 활용하면 더 쉬워집니다.
 
@@ -65,7 +65,7 @@ GHL 소셜 플래너 사용법을 확인하세요
 콘텐츠를 고객으로 전환하는 방법:
 
 - 캡션과 바이오에 예약 링크 추가
-- 오퍼용 링크트리(Linktree)나 GoHighLevel 랜딩 페이지 활용
+- 오퍼용 링크트리(Linktree)나 Hyperclass 랜딩 페이지 활용
 - 서비스 태그 달기 (예: "이번 주 마이크로니들링 가능!")
 - 게시물과 스토리 + 리마인더 연계
 - 키워드에 자동 응답하는 DM 자동화 (예: "글로우" 입력 시 하이드라페이셜 오퍼 발송)
@@ -74,7 +74,7 @@ GHL 소셜 플래너 사용법을 확인하세요
 
 ## 실제 스파, 실제 결과
 
-"진짜 CTA가 있는 게시물을 일괄 처리하고 GHL 자동화를 연결해서 콘텐츠 작업량은 60% 줄이고 예약은 두 배로 늘렸어요. 여전히 소셜에 꾸준히 나타나지만, 이제는 정말로 *효과*가 있어요."
+"진짜 CTA가 있는 게시물을 일괄 처리하고 Hyperclass 자동화를 연결해서 콘텐츠 작업량은 60% 줄이고 예약은 두 배로 늘렸어요. 여전히 소셜에 꾸준히 나타나지만, 이제는 정말로 *효과*가 있어요."
 
 — Justine, 소셜 미디어 리드 @ Everglow Aesthetics
 
@@ -83,14 +83,14 @@ GHL 소셜 플래너 사용법을 확인하세요
 ## 핵심 요약 체크리스트
 
 ✅ 브랜드에 맞는 5가지 콘텐츠 기둥 정의
-✅ GoHighLevel에서 4-6주치 게시물 일괄 처리 및 예약
+✅ Hyperclass에서 4-6주치 게시물 일괄 처리 및 예약
 ✅ 모든 콘텐츠에 명확한 CTA와 예약 링크 추가
 ✅ 프로모션 트리거용 답글과 DM 자동화 설정
 ✅ 이메일, 문자, 웹사이트에 콘텐츠 재활용
 
 ---
 
-**피드가 빛나면서 동시에 전환도 만들고 싶나요? [GoHighLevel 무료 체험하기](https://www.gohighlevel.com/?utm_source=seo&utm_medium=organic&utm_campaign=medspa&utm_term=medspa&utm_content=playbook).**
+**피드가 빛나면서 동시에 전환도 만들고 싶나요? [Hyperclass 무료 체험하기](https://www.gohighlevel.com/?utm_source=seo&utm_medium=organic&utm_campaign=medspa&utm_term=medspa&utm_content=playbook).**
 
 ---
 *원문 최종 수정: Fri, 25 Apr, 2025 at 3:12 AM*

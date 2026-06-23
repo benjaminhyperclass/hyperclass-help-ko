@@ -91,7 +91,7 @@ Settings(설정) → Email Services(이메일 서비스) → Dedicated Domain & 
 지원되는 DNS 제공업체인 경우 가장 간단한 방법입니다.
 
 - 도메인을 추가한 후 **Continue(계속)**을 클릭합니다.
-- HighLevel이 귀하의 DNS 제공업체를 감지합니다 (예: Cloudflare, GoDaddy, Namecheap).
+- Hyperclass이 귀하의 DNS 제공업체를 감지합니다 (예: Cloudflare, GoDaddy, Namecheap).
 - 로그인하고 (Lead Connector)가 DNS 레코드를 자동으로 구성하도록 승인합니다.
 - 완료되면 도메인이 **Verified(인증됨)**로 표시됩니다.
 
@@ -101,7 +101,7 @@ Settings(설정) → Email Services(이메일 서비스) → Dedicated Domain & 
 
 ### **옵션 2: 수동 DNS 설정**
 
-자동 구성을 사용할 수 없는 경우 DNS 레코드를 수동으로 추가해야 합니다. HighLevel이 필요한 정확한 레코드를 제공합니다.
+자동 구성을 사용할 수 없는 경우 DNS 레코드를 수동으로 추가해야 합니다. Hyperclass이 필요한 정확한 레코드를 제공합니다.
 
 #### **일반 설정 가이드라인**
 
@@ -109,7 +109,7 @@ Settings(설정) → Email Services(이메일 서비스) → Dedicated Domain & 
 
 - **Name/Host(이름/호스트):** 루트 도메인의 경우 "@"를 사용합니다. 서브도메인(예: mail.yourdomain.com)의 경우 서브도메인만 입력합니다(예: "mail").
 
-- **Value(값):** HighLevel에 표시된 대로 정확히 복사하여 붙여넣습니다.
+- **Value(값):** Hyperclass에 표시된 대로 정확히 복사하여 붙여넣습니다.
 
 - **TTL:** 가능한 경우 5분으로 설정합니다.
 
@@ -123,7 +123,7 @@ Settings(설정) → Email Services(이메일 서비스) → Dedicated Domain & 
 
 - Cloudflare에 로그인합니다.
 - 도메인의 **DNS** 설정으로 이동합니다.
-- HighLevel에서 제공한 레코드(TXT, CNAME, MX)를 추가합니다.
+- Hyperclass에서 제공한 레코드(TXT, CNAME, MX)를 추가합니다.
 
 **GoDaddy**
 
@@ -141,7 +141,7 @@ Settings(설정) → Email Services(이메일 서비스) → Dedicated Domain & 
 
 - Namecheap에 로그인합니다.
 - **Domain List(도메인 목록) → Manage(관리) → Advanced DNS**로 이동합니다.
-- HighLevel에서 제공한 DNS 레코드를 추가합니다.
+- Hyperclass에서 제공한 DNS 레코드를 추가합니다.
 
 **Google Domains**
 
@@ -155,7 +155,7 @@ Settings(설정) → Email Services(이메일 서비스) → Dedicated Domain & 
 
 - **SSL 인증서 발급:** 인증 후 1-10분이 소요될 수 있습니다.
 
-- **도메인 상태:** 도메인이 HighLevel에서 **Verified/Active(인증됨/활성)**로 표시됩니다.
+- **도메인 상태:** 도메인이 Hyperclass에서 **Verified/Active(인증됨/활성)**로 표시됩니다.
 
 - **테스트 발송:** 헤더에서 SPF와 DKIM이 통과하는지 확인하기 위해 테스트 이메일을 발송합니다.
 

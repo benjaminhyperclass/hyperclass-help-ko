@@ -75,9 +75,9 @@
 
 | 컬럼명 | 설명 | 예시 |
 |---------|------|------|
-| Internal transaction id | HighLevel 내부 고유 거래 식별자 | 69369a9968f735180bfeb6ed |
+| Internal transaction id | Hyperclass 내부 고유 거래 식별자 | 69369a9968f735180bfeb6ed |
 | Location id | 하위 계정 식별자 | NyGCsdhgRZ8Ffa8SsagfhGd |
-| Customer id | GHL 고객 식별자 | jbtyjkzMjvd8cLi9HUC |
+| Customer id | Hyperclass 고객 식별자 | jbtyjkzMjvd8cLi9HUC |
 | Customer name | 거래의 표시 이름 | Alex Ray |
 | Customer email | 영수증 전달에 사용된 이메일 | alex@example.com |
 | Customer phone | 결제 시 사용된 전화번호 | +1 555-012-2345 |
@@ -97,9 +97,9 @@
 | Source type | 구매가 발생한 결제 창 | Invoice, Funnel Page, Form |
 | Source id | 소스 엔티티(결제창)의 내부 ID | inv_8281 |
 | Source name | 비즈니스에서 정의한 소스의 표시 이름 | Q4 Billing Invoice |
-| Internal order id | GHL 내 주문 참조 (해당되는 경우) | jfnkwbgfwbegiu234 |
+| Internal order id | Hyperclass 내 주문 참조 (해당되는 경우) | jfnkwbgfwbegiu234 |
 | Payment provider | 거래 실행에 사용된 게이트웨이 | Stripe, NMI, Authorize.net |
-| Subscription id | 해당되는 경우 GHL 내 구독 참조 | sub_7A91FC |
+| Subscription id | 해당되는 경우 Hyperclass 내 구독 참조 | sub_7A91FC |
 | Charge id | 제공업체 결제 식별자 | ch_1NHXYZ |
 | Connected account | 연결된 결제 제공업체 판매자/클라이언트 계정 ID | acct_1sagewg732Hko |
 | Transaction date | 결제일 | Dec 8, 2025 |
@@ -113,7 +113,7 @@
 | Line item price | '상품명' 컬럼에 언급된 상품의 라인 항목당 가격 | 100.00 |
 | Line item coupon discount | '상품명' 컬럼에 언급된 상품의 쿠폰 부분 | 15.00 |
 | Line item subtotal | '상품명' 컬럼에 언급된 상품에 특정한 소계 | 85.00 |
-| Line item product id | '상품명' 컬럼의 GHL 상품 식별자 | prod_5449 |
+| Line item product id | '상품명' 컬럼의 Hyperclass 상품 식별자 | prod_5449 |
 | Tax name | 라인 항목 데이터와 관계없는 고유한 세금 라벨 즉, 여러 상품이나 라인 항목이 같은 세금 이름을 가질 수 있지만 거래당 한 번만 표시 | Sales Tax |
 | Tax amount | 라인 항목 데이터와 관계없는 이 세금 라인의 세금 값 즉, 이 세금 이름을 가진 모든 상품의 세금이 합산되어 여기에 표시 | 8.40 |
 | Processing charge name | 기타 수수료 이름 - 거래당 최대 1개 가능; 수수료가 없으면 빈 값 | Platform Fee |

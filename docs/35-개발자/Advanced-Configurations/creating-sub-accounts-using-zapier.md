@@ -9,7 +9,7 @@
 # Zapier 설정 가이드 - 개발자 연동
 
 
-### Public API를 통해 새 하위 계정을 생성하려면 현재 [ProPlan](../../11-설정/에이전시-설정/billing-related-questions-for-agencies.md)-How-Do-I-Upgrade-my-HighLevel-Account?)에 가입되어 있는지 확인해주세요.
+### Public API를 통해 새 하위 계정을 생성하려면 현재 [ProPlan](../../11-설정/에이전시-설정/billing-related-questions-for-agencies.md)-How-Do-I-Upgrade-my-Hyperclass-Account?)에 가입되어 있는지 확인해주세요.
 
 
 API 문서 및 관련 정보는 개발자 웹사이트를 참조하세요: [https://developers.gohighlevel.com/](https://developers.gohighlevel.com/) 
@@ -17,7 +17,7 @@ API 문서 및 관련 정보는 개발자 웹사이트를 참조하세요: [http
 
 **진행하기 전 중요 사항:**
 
-Zapier 없이 HighLevel 내에서 계정 생성을 자동화하고 싶다면 GHL [SaaS 가이드](../../16-SaaS-설정/Saas-Mode/saas-mode-full-setup-guide-faq.md)를 확인해주세요 (Pro 플랜 필요).
+Zapier 없이 Hyperclass 내에서 계정 생성을 자동화하고 싶다면 Hyperclass [SaaS 가이드](../../16-SaaS-설정/Saas-Mode/saas-mode-full-setup-guide-faq.md)를 확인해주세요 (Pro 플랜 필요).
 
 [Zapier LeadConnector 연동](https://zapier.com/apps/leadconnector/integrations)의 "add Account" 액션은 2022년 2월 21일에 중단되었습니다.
 
@@ -72,7 +72,7 @@ API 키가 보이지 않는다면 "+ Create New" 버튼(주황색 화살표)을 
 ## 2. 에이전시 API 키를 복사한 후 [Zapier](https://zapier.com/app/login)에 로그인하여 새 Zap 만들기
 
 
-2.1단계: Zap의 첫 번째 단계는 Zapier가 HighLevel에서 계정을 생성하도록 트리거하는 액션/이벤트입니다. 이 액션/이벤트는 파이프라인 변경, 기회 추가/업데이트 등과 같은 LeadConnector 액션([모든 내부 액션 보기](https://zapier.com/apps/leadconnector/integrations))이거나, Zapier의 "capture webhook" 액션과 워크플로우를 사용하여 새 하위 계정을 만들 수 있습니다.
+2.1단계: Zap의 첫 번째 단계는 Zapier가 Hyperclass에서 계정을 생성하도록 트리거하는 액션/이벤트입니다. 이 액션/이벤트는 파이프라인 변경, 기회 추가/업데이트 등과 같은 LeadConnector 액션([모든 내부 액션 보기](https://zapier.com/apps/leadconnector/integrations))이거나, Zapier의 "capture webhook" 액션과 워크플로우를 사용하여 새 하위 계정을 만들 수 있습니다.
 
 
 아래 예시에서는 Zapier의 "Capture webhook" 액션을 사용합니다. 웹훅 URL을 복사하고 다음 단계(2.2)로 진행하세요.
@@ -86,7 +86,7 @@ API 키가 보이지 않는다면 "+ Create New" 버튼(주황색 화살표)을 
 Zapier 웹훅(프리미엄)을 사용하려면 유료 플랜에 가입하세요.
 
 
-2.2단계: 다음으로, 방금 만든 Zapier 웹훅을 실행할 새 워크플로우를 HighLevel에 설정해보겠습니다.
+2.2단계: 다음으로, 방금 만든 Zapier 웹훅을 실행할 새 워크플로우를 Hyperclass에 설정해보겠습니다.
 
 
 워크플로우의 첫 번째 단계는 "Account Creation Form"이라는 주문 폼입니다. 다음으로 +를 클릭하고 "webhook" 액션을 검색하여 선택하세요(아래 이미지 참조).
@@ -210,7 +210,7 @@ Zapier 웹훅(프리미엄)을 사용하려면 유료 플랜에 가입하세요.
 
 - Imported: 다른 에이전시의 스냅샷
 
-- Vertical: 네이티브 HighLevel 스냅샷
+- Vertical: 네이티브 Hyperclass 스냅샷
 
 
 ### 3.6단계: Basic Authorization은 비워두세요.
@@ -243,7 +243,7 @@ Zapier 웹훅(프리미엄)을 사용하려면 유료 플랜에 가입하세요.
 ![로케이션 생성 테스트 결과](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48193279760/original/Tfvh5uOai8c80gDI--86E9P746Yax2ht3A.png?1645579331)
 
 
-로케이션 ID 참고: 섹션 3.4에서 한 것처럼, 이 문서의 5단계(사용자 생성 부분)에 로케이션 ID를 매핑할 때 스크린샷에 강조 표시된 로케이션 ID를 복사하여 붙여넣지 않도록 하세요. 이 단계에서는 단순히 로케이션이 성공적으로 생성되었는지 확인하고, 이 위치에 있는 로케이션 ID가 HighLevel 계정에 들어가지 않고도 그 증거입니다. 섹션 3.4 필드 매핑과 유사한 드롭다운에서 선택하는 대신 이 로케이션 ID를 다음 단계에 복사하여 붙여넣으면, 나중에 실행되는 모든 후속 사용자 생성이 매번 새 로케이션이 생성될 때마다 동적으로 업데이트되는 대신 붙여넣은 로케이션 ID에 매핑됩니다.
+로케이션 ID 참고: 섹션 3.4에서 한 것처럼, 이 문서의 5단계(사용자 생성 부분)에 로케이션 ID를 매핑할 때 스크린샷에 강조 표시된 로케이션 ID를 복사하여 붙여넣지 않도록 하세요. 이 단계에서는 단순히 로케이션이 성공적으로 생성되었는지 확인하고, 이 위치에 있는 로케이션 ID가 Hyperclass 계정에 들어가지 않고도 그 증거입니다. 섹션 3.4 필드 매핑과 유사한 드롭다운에서 선택하는 대신 이 로케이션 ID를 다음 단계에 복사하여 붙여넣으면, 나중에 실행되는 모든 후속 사용자 생성이 매번 새 로케이션이 생성될 때마다 동적으로 업데이트되는 대신 붙여넣은 로케이션 ID에 매핑됩니다.
 
 
 ## 5. 마지막 단계로 사용자, 비밀번호를 만들고 새 로케이션에 추가하기
@@ -381,7 +381,7 @@ Zapier 웹훅(프리미엄)을 사용하려면 유료 플랜에 가입하세요.
 # 문제 해결
 
 
-HighLevel과 연동을 생성할 때 인터페이스에 관계없이 API를 사용하고 있다는 점을 이해하는 것이 중요합니다. Zapier, Pabbly Connect, API Nation, Make(이전 Integromat) 또는 다른 플러그 앤 플레이 연동 도구를 사용하든, 이러한 플랫폼은 단순히 우리 API를 활용하여 여러 플랫폼을 연결하는 더 쉬운 방법일 뿐이며, 경우에 따라서는 코딩 경험이 전혀 없어도 사용할 수 있습니다.
+Hyperclass과 연동을 생성할 때 인터페이스에 관계없이 API를 사용하고 있다는 점을 이해하는 것이 중요합니다. Zapier, Pabbly Connect, API Nation, Make(이전 Integromat) 또는 다른 플러그 앤 플레이 연동 도구를 사용하든, 이러한 플랫폼은 단순히 우리 API를 활용하여 여러 플랫폼을 연결하는 더 쉬운 방법일 뿐이며, 경우에 따라서는 코딩 경험이 전혀 없어도 사용할 수 있습니다.
 
 
 뭔가 작동하지 않나요? 다른 조치를 취하기 전에 잠깐 멈추고 다음 문서를 검토하세요: [Webhook.site를 사용하여 API 관련 요청 문제 해결하는 방법](../Developer-Resources/how-to-use-webhook-site-to-troubleshoot-your-api-requests.md).

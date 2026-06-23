@@ -6,7 +6,7 @@
 
 # 하이퍼클래스 계정에서 Facebook 토큰이 만료되었습니다
 
-"A Facebook Token Has Expired In Your HighLevel Account"라는 제목의 이메일을 받으셨다면, 계정 중 하나의 Facebook 연동(Integration)이 끊어진 것을 의미합니다.
+"A Facebook Token Has Expired In Your Hyperclass Account"라는 제목의 이메일을 받으셨다면, 계정 중 하나의 Facebook 연동(Integration)이 끊어진 것을 의미합니다.
 
 ### 다시 연결하기:
 

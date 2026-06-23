@@ -142,7 +142,7 @@ Google에서 지역 순위 향상하기
 
 **팁:** 빠른 응답 – Google은 응답성이 좋은 업체에 더 좋은 순위를 부여합니다.
 
-[GMB 프로필을 GHL CRM과 연동하는 방법 알아보기](../../11-설정/기타/how-to-integrate-your-google-business-profile-formerly-gmb-into-the-crm.md)
+[GMB 프로필을 Hyperclass CRM과 연동하는 방법 알아보기](../../11-설정/기타/how-to-integrate-your-google-business-profile-formerly-gmb-into-the-crm.md)
 
 ### 8. 좋은 리뷰 수집하고 지속적으로 응답하기
 
@@ -174,7 +174,7 @@ Google에서 지역 순위 향상하기
 | 노하우 | 효과가 있는 이유 |
 |--------|------------------|
 | 주간 프로모션 게시 (헤어 스파 10% 할인 등) | Google은 활발한 프로필을 선호함 |
-| GHL 캘린더와 연결된 "예약하기" 버튼 추가 | 즉시 예약의 장벽을 제거함 |
+| Hyperclass 캘린더와 연결된 "예약하기" 버튼 추가 | 즉시 예약의 장벽을 제거함 |
 | 계절별 사진 업데이트 (여름 룩, 브라이덜 시즌 스페셜) | 프로필을 신선하고 관련성 있게 유지함 |
 
 ## **핵심 포인트**

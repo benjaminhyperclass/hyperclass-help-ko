@@ -6,7 +6,7 @@
 
 # Square 결제 프로세서 연결 및 사용 방법
 
-비즈니스 사용자는 이제 자신의 Square 계정을 연결하여 GHL 내에서 결제를 처리할 수 있습니다.
+비즈니스 사용자는 이제 자신의 Square 계정을 연결하여 Hyperclass 내에서 결제를 처리할 수 있습니다.
 
 이 기능은 하위 계정의 `Payments(결제) → Integrations(연동)`에서 이용할 수 있으며, 비즈니스는 API 키를 사용하여 연결할 수 있습니다.
 
@@ -15,13 +15,13 @@
 Square를 샌드박스/테스트 모드로 연결하려면 다음 단계를 따르세요:
 1. Square 계정에 로그인합니다 - [https://app.squareup.com/login](https://app.squareup.com/login)
 2. Square 대시보드에서 샌드박스 Square 계정을 열고 샌드박스 사용자로 로그인 상태를 유지합니다
-3. 그다음 GHL로 가서 Square Test Mode의 Connect 버튼을 클릭합니다. 로그인된 샌드박스 계정을 자동으로 선택하여 GHL에 연결합니다
+3. 그다음 Hyperclass로 가서 Square Test Mode의 Connect 버튼을 클릭합니다. 로그인된 샌드박스 계정을 자동으로 선택하여 Hyperclass에 연결합니다
 
 추가 사항:
 
-- 고객은 GHL 연동 페이지에서 Square 계정에 있는 모든 실제 위치를 볼 수 있으며, 어떤 Square 위치가 어떤 하위 계정과 연결될지 선택할 수 있습니다.
+- 고객은 Hyperclass 연동 페이지에서 Square 계정에 있는 모든 실제 위치를 볼 수 있으며, 어떤 Square 위치가 어떤 하위 계정과 연결될지 선택할 수 있습니다.
 
-- 기존 Square 고객은 'Reconnect'를 클릭하여 Square 계정을 다시 연결하고 Square 위치를 가져올 수 있는 액세스를 허용할 수 있습니다. 이렇게 하면 모든 위치가 가져와져서 GHL의 연동 페이지에 표시되며, 고객은 하위 계정과 연결된 올바른 위치를 선택할 수 있습니다.
+- 기존 Square 고객은 'Reconnect'를 클릭하여 Square 계정을 다시 연결하고 Square 위치를 가져올 수 있는 액세스를 허용할 수 있습니다. 이렇게 하면 모든 위치가 가져와져서 Hyperclass의 연동 페이지에 표시되며, 고객은 하위 계정과 연결된 올바른 위치를 선택할 수 있습니다.
 
 ![Square 연동 설정 페이지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040237961/original/4UI3nOFxugNQF6AQRg6gArPW4Z6aSGzw9w.png?1737531423)
 

@@ -10,9 +10,9 @@ Hyperclass는 고객의 개인정보 보호에 최선을 다하고 있습니다.
 
 아래 문서들은 데이터 처리업체로서의 저희 역할, 데이터 컨트롤러로서의 고객 역할, 그리고 데이터 보안을 위해 취하고 있는 조치에 대한 정보를 제공합니다. 이 문서들을 개인정보 처리방침과 함께 검토하시기 바라며, 조언이나 추가 정보가 필요한 경우 법률 전문가에게 문의하실 것을 권합니다.
 
-[HighLevel 고객용 개인정보 보호 가이드](https://storage.googleapis.com/msgsndr/knES3eSWYIsc5YSZ3YLl/media/64eccf11ee39070e6d0e5bd8.pdf)
+[Hyperclass 고객용 개인정보 보호 가이드](https://storage.googleapis.com/msgsndr/knES3eSWYIsc5YSZ3YLl/media/64eccf11ee39070e6d0e5bd8.pdf)
 
-[HighLevel 보안 및 컴플라이언스 개요](https://storage.googleapis.com/msgsndr/knES3eSWYIsc5YSZ3YLl/media/64eccf0195d08f2ed866b59f.pdf)
+[Hyperclass 보안 및 컴플라이언스 개요](https://storage.googleapis.com/msgsndr/knES3eSWYIsc5YSZ3YLl/media/64eccf0195d08f2ed866b59f.pdf)
 
 [LeadConnector 보안 및 컴플라이언스 개요](https://storage.googleapis.com/msgsndr/knES3eSWYIsc5YSZ3YLl/media/64eccf8295d08f2fc866b660.pdf)
 

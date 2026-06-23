@@ -6,7 +6,7 @@
 
 # Printify 연동으로 온디맨드 제품 판매하기
 
-재고 관리의 번거로움 없이 브랜딩 제품을 판매하세요. HighLevel 스토어를 Printify의 1,000개 이상의 상품과 85개 이상의 글로벌 인쇄 업체 카탈로그에 연결하면, 모든 주문이 주문 시 제작됩니다. 창고도, 대량 구매도 필요 없어요.
+재고 관리의 번거로움 없이 브랜딩 제품을 판매하세요. Hyperclass 스토어를 Printify의 1,000개 이상의 상품과 85개 이상의 글로벌 인쇄 업체 카탈로그에 연결하면, 모든 주문이 주문 시 제작됩니다. 창고도, 대량 구매도 필요 없어요.
 
 **목차**
 
@@ -14,12 +14,12 @@
 - [Printify 연동의 주요 장점](#printify-연동의-주요-장점)
 - [중요 참고사항 및 제한사항](#중요-참고사항-및-제한사항)
 - [Printify API 토큰 생성 방법](#printify-api-토큰-생성-방법)
-- [HighLevel과 Printify 연결 방법](#highlevel과-printify-연결-방법)
+- [Hyperclass과 Printify 연결 방법](#hyperclass과-printify-연결-방법)
 - [자주 묻는 질문](#자주-묻는-질문)
 
 ## Printify 연동이란?
 
-Printify 연동은 HighLevel 이커머스 스토어를 Printify의 프린트 온 디맨드(POD) 플랫폼에 연결합니다. 연결하면 Printify에서 디자인한 제품을 가져오고, 고객 주문을 자동으로 제작 업체에 전달하며, 실시간 주문처리 업데이트를 받을 수 있습니다. 선불 재고 위험 없이 맞춤 상품을 판매할 수 있어요. 프린트 온 디맨드는 판매가 이루어진 후에만 제품을 인쇄하므로, 재고 비용과 대량 주문 부담에서 자유로워집니다.
+Printify 연동은 Hyperclass 이커머스 스토어를 Printify의 프린트 온 디맨드(POD) 플랫폼에 연결합니다. 연결하면 Printify에서 디자인한 제품을 가져오고, 고객 주문을 자동으로 제작 업체에 전달하며, 실시간 주문처리 업데이트를 받을 수 있습니다. 선불 재고 위험 없이 맞춤 상품을 판매할 수 있어요. 프린트 온 디맨드는 판매가 이루어진 후에만 제품을 인쇄하므로, 재고 비용과 대량 주문 부담에서 자유로워집니다.
 
 ## Printify 연동의 주요 장점
 
@@ -35,7 +35,7 @@ Printify 연동은 HighLevel 이커머스 스토어를 Printify의 프린트 온
 - 가져온 제품은 **기본적으로 바로 공개됩니다** — 판매 시작 전에 꼭 확인하세요
 - 연동을 해제해도 **이전에 가져온 제품은 삭제되지 않습니다**
 - Printify는 선택한 인쇄 업체가 해당 배송 국가, 옵션, 배송 방법을 처리할 수 있는 경우에만 주문을 생성합니다
-- 모든 디자인 작업은 Printify에서 진행되며, HighLevel은 **이미 동기화된** 제품의 **재고**와 **주문**만 관리합니다
+- 모든 디자인 작업은 Printify에서 진행되며, Hyperclass은 **이미 동기화된** 제품의 **재고**와 **주문**만 관리합니다
 - 연결 인증을 위해 **Printify API 토큰**이 필요합니다
 
 ## Printify API 토큰 생성 방법
@@ -54,7 +54,7 @@ Printify 연동은 HighLevel 이커머스 스토어를 Printify의 프린트 온
 
 ![토큰 복사 화면](https://jumpshare.com/share/aDZSEWopXynzDjjzFkUQ+/Screen+Shot+2025-10-09+at+5.09.24+PM.png)
 
-## HighLevel과 Printify 연결 방법
+## Hyperclass과 Printify 연결 방법
 
 연결은 몇 분밖에 걸리지 않으며, 올바른 설정으로 주문이 원활하게 처리됩니다:
 
@@ -78,13 +78,13 @@ Printify 연동은 HighLevel 이커머스 스토어를 Printify의 프린트 온
 
 ## 자주 묻는 질문
 
-**Q: HighLevel에서 제품을 디자인할 수 있나요?**
+**Q: Hyperclass에서 제품을 디자인할 수 있나요?**
 
-아니요. 디자인과 목업은 Printify에서 만들어집니다. HighLevel은 가져온 내용을 미러링합니다.
+아니요. 디자인과 목업은 Printify에서 만들어집니다. Hyperclass은 가져온 내용을 미러링합니다.
 
 **Q: Printify에서 제품을 삭제하면 어떻게 되나요?**
 
-다음 동기화 시 HighLevel 카탈로그에서 비활성화됩니다.
+다음 동기화 시 Hyperclass 카탈로그에서 비활성화됩니다.
 
 **Q: Printify가 자동으로 가장 가까운 인쇄 업체를 선택하나요?**
 
@@ -92,27 +92,27 @@ Printify 연동은 HighLevel 이커머스 스토어를 Printify의 프린트 온
 
 **Q: Printify 대신 수동으로 주문을 처리할 수 있나요?**
 
-네. 자동 주문처리를 비활성화하고 Printify에서 처리하면, HighLevel에서 여전히 상태 업데이트를 받습니다.
+네. 자동 주문처리를 비활성화하고 Printify에서 처리하면, Hyperclass에서 여전히 상태 업데이트를 받습니다.
 
-**Q: Printify 연동 사용에 HighLevel에서 추가 요금이 있나요?**
+**Q: Printify 연동 사용에 Hyperclass에서 추가 요금이 있나요?**
 
 없습니다. 요금은 제작과 배송에 대해 Printify에서만 부과됩니다.
 
 **Q: 환불은 어떻게 처리하나요?**
 
-HighLevel에서 환불을 처리하면, 배송되지 않은 제품에 대해 Printify에 환불 요청이 전송됩니다.
+Hyperclass에서 환불을 처리하면, 배송되지 않은 제품에 대해 Printify에 환불 요청이 전송됩니다.
 
 **Q: 고객의 주소를 내 업체에서 처리할 수 없다면?**
 
-Printify가 주문을 거부합니다. HighLevel에 "미처리 — 이용 가능한 업체 없음"으로 표시됩니다. 주문을 편집하여 배송 가능한 옵션/업체를 선택하세요.
+Printify가 주문을 거부합니다. Hyperclass에 "미처리 — 이용 가능한 업체 없음"으로 표시됩니다. 주문을 편집하여 배송 가능한 옵션/업체를 선택하세요.
 
-**Q: Printify의 제품 변경사항이 HighLevel에 동기화되나요?**
+**Q: Printify의 제품 변경사항이 Hyperclass에 동기화되나요?**
 
 네, 설명, 목업, 옵션, 가격, 이미지가 자동으로 동기화됩니다.
 
 **Q: Printify에서 주문이 자동으로 생성되나요?**
 
-네, HighLevel의 각 결제 완료마다 해당하는 Printify 주문이 생성됩니다.
+네, Hyperclass의 각 결제 완료마다 해당하는 Printify 주문이 생성됩니다.
 
 **Q: 세금과 배송 설정이 전달되나요?**
 
@@ -132,7 +132,7 @@ Printify가 주문을 거부합니다. HighLevel에 "미처리 — 이용 가능
 
 **Q: 하나의 Printify 계정으로 여러 스토어에 연결할 수 있나요?**
 
-네, 하나의 Printify 계정을 여러 HighLevel 스토어 위치에 연결할 수 있습니다.
+네, 하나의 Printify 계정을 여러 Hyperclass 스토어 위치에 연결할 수 있습니다.
 
 **Q: 주문이 위치별로 분리되나요?**
 

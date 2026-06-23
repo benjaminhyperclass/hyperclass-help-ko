@@ -97,7 +97,7 @@ SMS 그룹 채팅 기능을 사용하려면 다음이 필요합니다:
 
 ## 그룹 채팅 만들기 (모바일)
 
-- iOS 또는 Android 기기에서 HighLevel 또는 LeadConnector 모바일 앱을 열고 화면 하단의 **대화(Conversations)** 탭을 누릅니다.
+- iOS 또는 Android 기기에서 Hyperclass 또는 LeadConnector 모바일 앱을 열고 화면 하단의 **대화(Conversations)** 탭을 누릅니다.
 
 - 대화 유형으로 **그룹 채팅(Group Chat)**을 선택합니다.
 
@@ -139,7 +139,7 @@ SMS 그룹 채팅 기능을 사용하려면 다음이 필요합니다:
 
 **Q: 모바일 앱에서 그룹 채팅을 관리할 수 있나요?**
 
-네. HighLevel과 LeadConnector 모바일 앱에서 그룹 채팅을 만들고, 보고, 답장할 수 있습니다.
+네. Hyperclass과 LeadConnector 모바일 앱에서 그룹 채팅을 만들고, 보고, 답장할 수 있습니다.
 
 **Q: 그룹 채팅에서 알림은 어떻게 작동하나요?**
 

@@ -1,10 +1,10 @@
 ---
 
 번역일: 2026-04-08
-카테고리: 24-대학 > HighLevel How-To's
+카테고리: 24-대학 > Hyperclass How-To's
 ---
 
-# HighLevel How-To's: 신규 고객 가입을 위한 결제 페이지 만들기
+# Hyperclass How-To's: 신규 고객 가입을 위한 결제 페이지 만들기
 
 ### 커뮤니티 추가 튜토리얼
 

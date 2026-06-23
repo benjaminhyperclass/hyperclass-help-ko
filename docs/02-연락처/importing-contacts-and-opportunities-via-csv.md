@@ -122,7 +122,7 @@ Hyperclass에서 연락처와 기회 가져오기 기능에 접근하는 두 가
 
 ![가져오기 상태 모니터링](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040675205/original/9137ojlvH-YH7-gdZ0MwQa2zapRtYwe4kg.gif?1738170977)
 
-Keap의 CSV 내보내기에서 나온 전화번호 필드는 GHL과 호환되지 않습니다. 괄호 '()'와 대시 '-'로 인해 호환되지 않습니다. CSV 파일에서 전체 열을 강조 표시하고 숫자 형식으로 되어 있는지 확인하며, 괄호와 대시를 모두 제거한 후에 CRM의 데이터를 손상시키지 않고 가져올 수 있습니다.
+Keap의 CSV 내보내기에서 나온 전화번호 필드는 Hyperclass과 호환되지 않습니다. 괄호 '()'와 대시 '-'로 인해 호환되지 않습니다. CSV 파일에서 전체 열을 강조 표시하고 숫자 형식으로 되어 있는지 확인하며, 괄호와 대시를 모두 제거한 후에 CRM의 데이터를 손상시키지 않고 가져올 수 있습니다.
 
 ---
 

@@ -24,7 +24,7 @@
 
 자동 생성된 응답에 대해 피드백을 제공하여 AI 봇을 훈련시킬 수 있습니다.
 
-💡 HighLevel, LeadConnector v3.71 이상에서 사용 가능합니다. 화이트라벨의 경우 업데이트를 요청하세요.
+💡 Hyperclass, LeadConnector v3.71 이상에서 사용 가능합니다. 화이트라벨의 경우 업데이트를 요청하세요.
 
 ![모바일 앱에서 대화 AI 사용 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155027830633/original/hZfbPyX9TOJAhw3fiOZbklyDfgWQ2pQ4oA.jpeg?1718741062)
 

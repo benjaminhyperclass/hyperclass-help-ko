@@ -54,7 +54,7 @@
 ✅ 사전승인부터 성사까지 모든 거래의 모든 단계 추적
 ✅ 성사율, 리드 소스, 수익을 실시간으로 분석
 
-올인원 솔루션으로 모기지 비즈니스를 손쉽게 관리하세요 - **[지금 HighLevel에 가입하기](https://www.gohighlevel.com/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Mortgage+Broker&utm_content=Playbook)**
+올인원 솔루션으로 모기지 비즈니스를 손쉽게 관리하세요 - **[지금 Hyperclass에 가입하기](https://www.gohighlevel.com/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Mortgage+Broker&utm_content=Playbook)**
 
 ### 이 플레이북에서 배울 내용
 
@@ -73,7 +73,7 @@
 
 ### 1.1 차용자가 직접 예약하도록 하기
 
-- HighLevel 예약 링크를 사용하여 구매자, 에이전트, 추천 파트너가 즉시 시간을 예약할 수 있게 하기
+- Hyperclass 예약 링크를 사용하여 구매자, 에이전트, 추천 파트너가 즉시 시간을 예약할 수 있게 하기
 - 이메일, 인스타그램 바이오, 웹사이트에 링크 삽입
 - "첫 주택 구매자 전략 상담" 또는 "재융자 검토 세션"과 같은 상담 유형 제공
 
@@ -198,11 +198,11 @@
 ✅ 더 이상 서류를 쫓아다니거나 에이전트를 수동으로 업데이트할 필요 없음
 ✅ 관계, 파트너, 수익에 집중할 더 많은 시간 확보
 
-HighLevel이 번거로운 업무를 자동화하도록 하여 당신은 확장하고, 판매하고, 정신 건강을 유지할 수 있습니다.
+Hyperclass이 번거로운 업무를 자동화하도록 하여 당신은 확장하고, 판매하고, 정신 건강을 유지할 수 있습니다.
 
 ### 모기지 비즈니스를 자동화할 준비가 되셨나요?
 
-[지금 HighLevel에 가입](https://www.gohighlevel.com/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Mortgage+Broker&utm_content=Playbook)하여 일상 업무를 자동 조종 모드로 전환하세요.
+[지금 Hyperclass에 가입](https://www.gohighlevel.com/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Mortgage+Broker&utm_content=Playbook)하여 일상 업무를 자동 조종 모드로 전환하세요.
 
 ---
 *원문 최종 수정: Tue, 27 May, 2025 at 9:33 AM*

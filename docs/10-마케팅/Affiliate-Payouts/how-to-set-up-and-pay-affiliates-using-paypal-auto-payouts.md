@@ -8,7 +8,7 @@
 
 ## **PayPal 자동 지급을 이용한 제휴 파트너 설정 및 지급 방법**
 
-이 가이드는 PayPal Payouts API를 GHL과 연동하여 플랫폼에서 직접 제휴 파트너에게 수수료를 지급하는 방법을 설명합니다. 현재 자동 지급에서는 PayPal만 지원되며, 이 문서에서는 설정 과정과 제휴 파트너 지급 방법을 단계별로 안내합니다.
+이 가이드는 PayPal Payouts API를 Hyperclass과 연동하여 플랫폼에서 직접 제휴 파트너에게 수수료를 지급하는 방법을 설명합니다. 현재 자동 지급에서는 PayPal만 지원되며, 이 문서에서는 설정 과정과 제휴 파트너 지급 방법을 단계별로 안내합니다.
 
 ---
 
@@ -19,7 +19,7 @@
 ---
 
 ## **1. 자동 지급을 위한 PayPal 설정**
-제휴 파트너에게 지급을 시작하기 전에, GHL과 원활하게 연동할 수 있도록 PayPal Payouts을 설정해야 합니다.
+제휴 파트너에게 지급을 시작하기 전에, Hyperclass과 원활하게 연동할 수 있도록 PayPal Payouts을 설정해야 합니다.
 
 
 ### **1단계: PayPal 개발자 페이지 접속**
@@ -43,7 +43,7 @@
 ![PayPal 앱 생성](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033810841/original/NSoegoc40tjXesKnIpetO1w650hVCA4n0A.jpeg?1727706478)
 
 
-- 앱 이름으로 "GHL Payouts"을 입력하고 **Create App**을 클릭하세요.
+- 앱 이름으로 "Hyperclass Payouts"을 입력하고 **Create App**을 클릭하세요.
 - 이미 앱이 생성되어 있다면 이 단계를 건너뛰셔도 됩니다.
 참고: 앱 생성 후 우측 상단에 "Live/Sandbox"가 표시되면 "Live"가 선택되어 있는지 확인하세요.
 ### **4단계: 앱 정보 획득**
@@ -51,12 +51,12 @@
 - 앱 생성 후 **Client ID**와 **Secret Key**가 제공됩니다.
 ![PayPal 클라이언트 ID와 시크릿 키](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033810831/original/iyCmqdpvQr0Po9cIE2PEy3XnYzAdeNfX7A.jpeg?1727706478)
 
-- GHL과 PayPal 연동에 필요하므로 이 정보를 보관해두세요.
+- Hyperclass과 PayPal 연동에 필요하므로 이 정보를 보관해두세요.
 
 
-### **5단계: GHL과 PayPal 연결**
+### **5단계: Hyperclass과 PayPal 연결**
 
-- GHL의 **Payment Integration(결제 연동)** 페이지로 이동하세요.
+- Hyperclass의 **Payment Integration(결제 연동)** 페이지로 이동하세요.
 ![결제 연동 페이지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033810837/original/1cRVuJLXOqaIcSDV-kHzH4jJ16Jv90C-xA.jpeg?1727706478)
 
 
@@ -68,12 +68,12 @@
 - 샌드박스에서 테스트하는 경우, PayPal의 Apps and Credentials 페이지에서 "Sandbox"가 선택되었는지 확인하고 샌드박스 크리덴셜로 동일한 과정을 반복하세요.
 ## **2. 제휴 파트너 지급에 PayPal 사용하기**
 
-PayPal 설정이 완료되면 이제 GHL의 자동 지급 기능을 사용하여 제휴 파트너에게 수수료를 지급할 수 있습니다.
+PayPal 설정이 완료되면 이제 Hyperclass의 자동 지급 기능을 사용하여 제휴 파트너에게 수수료를 지급할 수 있습니다.
 
 
 ### **1단계: 지급 페이지로 이동**
 
-- GHL 제휴 관리(Affiliate Manager)에서 **Payouts(지급)** 페이지로 이동하세요.
+- Hyperclass 제휴 관리(Affiliate Manager)에서 **Payouts(지급)** 페이지로 이동하세요.
 ### **2단계: 승인된 지급 확인**
 
 - **Approved for Payouts(지급 승인됨)** 탭으로 전환하여 지급 대기 중인 승인된 결제 목록을 확인하세요.

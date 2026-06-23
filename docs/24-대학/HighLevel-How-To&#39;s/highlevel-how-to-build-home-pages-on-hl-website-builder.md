@@ -1,7 +1,7 @@
 ---
 
 번역일: 2026-04-08
-카테고리: 24-대학 > HighLevel How-To's
+카테고리: 24-대학 > Hyperclass How-To's
 ---
 
 # Hyperclass 웹사이트 빌더로 홈페이지 만들기

@@ -6,7 +6,7 @@
 
 # 모바일 POS에서 NMI 및 Authorize.net으로 현장 결제 받기
 
-이제 HighLevel 모바일 앱에서 NMI와 Authorize.net을 사용하여 현장 결제를 받을 수 있습니다. 저장된 카드를 사용하든 새 카드를 입력하든, 이번 업데이트로 모바일 POS가 그 어느 때보다 유연해졌습니다. HighLevel과 LeadConnector에서 퍼블릭 베타로 제공됩니다.
+이제 Hyperclass 모바일 앱에서 NMI와 Authorize.net을 사용하여 현장 결제를 받을 수 있습니다. 저장된 카드를 사용하든 새 카드를 입력하든, 이번 업데이트로 모바일 POS가 그 어느 때보다 유연해졌습니다. Hyperclass과 LeadConnector에서 퍼블릭 베타로 제공됩니다.
 
 **목차**
 
@@ -20,7 +20,7 @@
 
 # 모바일 POS의 NMI 및 Authorize.net 지원이란?
 
-HighLevel이 NMI와 Authorize.net 결제 게이트웨이 지원을 추가하여 모바일 POS 기능을 확장했습니다. 이번 업데이트로 사용자는 저장된 카드나 결제 시 새로 입력하는 카드를 사용해서 모바일 기기에서 바로 안전하게 거래를 처리할 수 있습니다.
+Hyperclass이 NMI와 Authorize.net 결제 게이트웨이 지원을 추가하여 모바일 POS 기능을 확장했습니다. 이번 업데이트로 사용자는 저장된 카드나 결제 시 새로 입력하는 카드를 사용해서 모바일 기기에서 바로 안전하게 거래를 처리할 수 있습니다.
 
 ## 모바일 POS에서 NMI 및 Authorize.net의 주요 장점
 
@@ -36,7 +36,7 @@ HighLevel이 NMI와 Authorize.net 결제 게이트웨이 지원을 추가하여 
 
 모바일 앱에서 결제를 받기 시작하기 전에 다음 단계를 완료했는지 확인하세요:
 
-- HighLevel 웹 플랫폼에 로그인
+- Hyperclass 웹 플랫폼에 로그인
 - `Payments(결제) → Integrations(연동)` 메뉴로 이동
 - NMI 또는 Authorize.net을 연결하고 기본 결제 제공업체로 설정
 
@@ -44,7 +44,7 @@ HighLevel이 NMI와 Authorize.net 결제 게이트웨이 지원을 추가하여 
 
 모바일 POS 기능을 사용해서 결제를 받으려면 다음 간단한 단계를 따라하세요:
 
-- HighLevel 또는 LeadConnector 모바일 앱을 엽니다
+- Hyperclass 또는 LeadConnector 모바일 앱을 엽니다
 - NMI 또는 Authorize.net이 연결된 하위 계정을 선택합니다
 - POS 탭을 눌러서 POS 인터페이스를 실행합니다
 - 다음 중 하나의 방법으로 새 거래를 시작합니다:
@@ -63,7 +63,7 @@ HighLevel이 NMI와 Authorize.net 결제 게이트웨이 지원을 추가하여 
 ## 자주 묻는 질문
 
 Q: 이 기능이 정식으로 출시됐나요?
-현재 HighLevel과 LeadConnector 모바일 앱의 퍼블릭 베타를 통해 이용할 수 있습니다.
+현재 Hyperclass과 LeadConnector 모바일 앱의 퍼블릭 베타를 통해 이용할 수 있습니다.
 
 Q: NMI와 Authorize.net 사이를 전환할 수 있나요?
 네, 하지만 웹 기반 `Payments(결제) → Integrations(연동)` 설정을 통해 한 번에 하나만 기본 제공업체로 설정할 수 있습니다.
@@ -72,7 +72,7 @@ Q: 결제 시 새 카드를 저장할 수 있나요?
 네! POS 거래 중에 연락처를 위해 새 카드를 수동으로 입력하고 저장할 수 있습니다.
 
 Q: 어떤 앱 버전이 필요한가요?
-HighLevel 또는 LeadConnector 모바일 앱의 v3.96.5 이상 버전을 사용해야 합니다.
+Hyperclass 또는 LeadConnector 모바일 앱의 v3.96.5 이상 버전을 사용해야 합니다.
 
 ### 다음 단계
 

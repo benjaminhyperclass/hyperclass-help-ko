@@ -48,7 +48,7 @@
 
 발신자 이메일을 testing@gmail.com 같이 마스킹하면, 답장 주소(reply-to address)는 testing@replies.subdomain.com으로 표시됩니다. 이는 에이전시 Settings(설정) → Email Services(이메일 서비스) → Location Settings(로케이션 설정)에서 하위 계정에 설정한 Mailgun 서브도메인입니다. 답장은 여전히 하이퍼클래스 하위 계정의 대화(Conversation) 탭에 정상적으로 나타납니다.
 
-예를 들어, Mailgun 서브도메인이 [subdomain.gohighlevel.com](//subdomain.gohighlevel.com)이라면 답장 이메일 주소는 kate@subdomain.gohighlevel.com으로 표시됩니다
+예를 들어, Mailgun 서브도메인이 [subdomain.Hyperclass.com](//subdomain.gohighlevel.com)이라면 답장 이메일 주소는 kate@subdomain.Hyperclass.com으로 표시됩니다
 
 ![Mailgun 서브도메인 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155029822829/original/sIHHts5GEbn1g0b-ruhREN619Is0x-QMkA.jpg?1721835508)
 

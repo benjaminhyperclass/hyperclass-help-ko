@@ -90,7 +90,7 @@
 
 - **경로가 포함된 모든 URL(All URLs with the Path):** 특정 경로 내의 모든 페이지를 크롤링합니다. 예를 들어, https://www.gohighlevel.com/marketing을 입력하면 /marketing/offers나 /marketing/promotions와 같은 해당 URL 경로를 사용하는 모든 페이지를 포함합니다.
 
-- **이 도메인의 모든 URL(All URLs in this Domain):** 도메인 내의 모든 페이지를 크롤링합니다. 예를 들어, https://www.gohighlevel.com/promo를 입력하면 루트 도메인 www.gohighlevel.com의 모든 페이지를 포함합니다.
+- **이 도메인의 모든 URL(All URLs in this Domain):** 도메인 내의 모든 페이지를 크롤링합니다. 예를 들어, https://www.gohighlevel.com/promo를 입력하면 루트 도메인 www.Hyperclass.com의 모든 페이지를 포함합니다.
 
 - **URL**을 추가하세요.
 

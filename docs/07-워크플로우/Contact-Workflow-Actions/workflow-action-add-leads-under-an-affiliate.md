@@ -121,7 +121,7 @@
 
 - 설정을 저장합니다.
 
-제휴사 URL(예: https://yourdomain.com/?am_id=1234)을 통해 리드가 유입되면, HighLevel이 해당 ID를 캡처하여 자동으로 올바른 제휴사에게 크레딧을 부여합니다.
+제휴사 URL(예: https://yourdomain.com/?am_id=1234)을 통해 리드가 유입되면, Hyperclass이 해당 ID를 캡처하여 자동으로 올바른 제휴사에게 크레딧을 부여합니다.
 
 ![어트리뷰션을 통한 자동 추적](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155057426453/original/zpQh8LCaLbSn9UNAqQZFcTUhODFd671Dlw.jpeg?1762167017)
 

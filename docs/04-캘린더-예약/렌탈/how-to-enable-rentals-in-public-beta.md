@@ -137,8 +137,8 @@
 - **피드백 양식 작성**: 빠른 [피드백 양식](https://link.gohighlevel.com/widget/form/3nHVVEoVFBC0AZm3Fm7n)을 통해 생각을 공유하세요.
 
 - **이메일 문의** — 다음 주소로 직접 연락하세요:
-[mayank.jain@gohighlevel.com](mailto:mayank.jain@gohighlevel.com)
-[swadha.bhoj@gohighlevel.com](mailto:swadha.bhoj@gohighlevel.com)
+[mayank.jain@Hyperclass.com](mailto:mayank.jain@gohighlevel.com)
+[swadha.bhoj@Hyperclass.com](mailto:swadha.bhoj@gohighlevel.com)
 
 - **페이스북으로 연결**: 소셜 미디어에서 대화하는 것을 선호하시나요? 페이스북 프로필을 통해 연락하세요:
 [Mayank Jain](https://www.facebook.com/mayank2511) – PM, 캘린더

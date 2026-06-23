@@ -58,7 +58,7 @@
 
 ✅ **유사 고객**: 회원 명단을 업로드해서 Meta 플랫폼에서 비슷한 고객 생성
 
-[GHL Ad Manager에서 커스텀 오디언스 만들기](../../10-마케팅/Ad-Campaign-Creation-and-Management/create-custom-audiences-in-ad-manager.md)
+[Hyperclass Ad Manager에서 커스텀 오디언스 만들기](../../10-마케팅/Ad-Campaign-Creation-and-Management/create-custom-audiences-in-ad-manager.md)
 
 ## 5단계: 예산 & 일정 설정
 

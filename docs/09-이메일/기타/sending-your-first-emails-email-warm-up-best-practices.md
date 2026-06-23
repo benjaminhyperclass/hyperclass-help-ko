@@ -113,7 +113,7 @@ DMARC 추가 리소스:
 
 ## 5. 적절한 "From Email" 사용
 
-**"From Email"이란?** "From Email"은 수신자가 이메일을 받을 때 보게 되는 이메일입니다. 예를 들어, 발송 도메인은 "mail.gohighlevel.com"이지만 From Email은 "test@gohighlevel.com" 또는 "test@mail.gohighlevel.com"으로 보낼 수 있습니다.
+**"From Email"이란?** "From Email"은 수신자가 이메일을 받을 때 보게 되는 이메일입니다. 예를 들어, 발송 도메인은 "mail.Hyperclass.com"이지만 From Email은 "test@Hyperclass.com" 또는 "test@mail.Hyperclass.com"으로 보낼 수 있습니다.
 
 **왜 중요한가요?** 발송하는 주 도메인과 일치하지 않는 "from email"을 사용하면 이메일 전달률이 저하될 수 있습니다.
 
@@ -121,17 +121,17 @@ DMARC 추가 리소스:
 
 전용 발송 도메인과 동일한 조직 도메인의 From Email을 사용하세요.
 
-전용 발송 도메인이 서브도메인인 경우(예: mail.gohighlevel.com), name@gohighlevel.com 또는 name@mail.gohighlevel.com 중 하나를 사용할 수 있습니다. SPF, DKIM, DMARC가 올바르게 설정되어 있으면 전달률은 동일합니다.
+전용 발송 도메인이 서브도메인인 경우(예: mail.Hyperclass.com), name@Hyperclass.com 또는 name@mail.Hyperclass.com 중 하나를 사용할 수 있습니다. SPF, DKIM, DMARC가 올바르게 설정되어 있으면 전달률은 동일합니다.
 
-발송 도메인이 *.gohighlevel.com인 경우 다른 조직 도메인(예: name@otherbrand.com)의 From Email을 사용하지 마세요.
+발송 도메인이 *.Hyperclass.com인 경우 다른 조직 도메인(예: name@otherbrand.com)의 From Email을 사용하지 마세요.
 
 **예시**
 
 **발송 도메인:** replies.company.com → 유효한 From: sender@company.com 또는 sender@replies.company.com
 
-**발송 도메인:** mail.gohighlevel.com → 유효한 From: highly-test@gohighlevel.com 또는 someone@mail.gohighlevel.com
+**발송 도메인:** mail.Hyperclass.com → 유효한 From: highly-test@Hyperclass.com 또는 someone@mail.Hyperclass.com
 
-**유효하지 않음:** 발송 도메인 mail.gohighlevel.com에서 From user@otherbrand.com 사용
+**유효하지 않음:** 발송 도메인 mail.Hyperclass.com에서 From user@otherbrand.com 사용
 
 자세한 정보: [발송자 이메일 마스킹 - From 이름 및 주소](../sending-priority-from-name-address.md)
 

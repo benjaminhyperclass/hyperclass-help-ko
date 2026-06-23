@@ -6,7 +6,7 @@
 
 # 기회 상태 편집하기
 
-다양한 기회 상태를 이해하고 업데이트하는 방법을 익히면 영업 워크플로우를 효율적으로 관리하고 전환율을 극대화할 수 있습니다. 이 종합 가이드에서는 GoHighLevel에서 기회 상태를 업데이트하는 과정을 안내하며, 다양한 상태의 차이점과 효과적으로 활용하는 방법도 다룹니다.
+다양한 기회 상태를 이해하고 업데이트하는 방법을 익히면 영업 워크플로우를 효율적으로 관리하고 전환율을 극대화할 수 있습니다. 이 종합 가이드에서는 Hyperclass에서 기회 상태를 업데이트하는 과정을 안내하며, 다양한 상태의 차이점과 효과적으로 활용하는 방법도 다룹니다.
 
 **목차**
 
@@ -64,7 +64,7 @@
 
 #### 1. 기회 관리 섹션으로 이동
 
-GoHighLevel 계정에 로그인한 후 사이드바 메뉴에서 "Automation(자동화)" 섹션으로 이동합니다.
+Hyperclass 계정에 로그인한 후 사이드바 메뉴에서 "Automation(자동화)" 섹션으로 이동합니다.
 
 ![기회 관리 섹션 이동](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155028659483/original/LkxOBL-tOpBAeTZx1X3D-uI76n7LsMxjMA.jpg?1720021611)
 
@@ -88,7 +88,7 @@ GoHighLevel 계정에 로그인한 후 사이드바 메뉴에서 "Automation(자
 
 #### 1. 기회 관리 섹션으로 이동
 
-GoHighLevel 계정에 로그인한 후 사이드바 메뉴에서 "Automation(자동화)" 섹션으로 이동합니다.
+Hyperclass 계정에 로그인한 후 사이드바 메뉴에서 "Automation(자동화)" 섹션으로 이동합니다.
 
 ![기회 관리 섹션 이동](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155028659447/original/orKV6KAQJH00F_V8aVVJZVEQkTXVJbQdbw.jpg?1720021580)
 
@@ -110,7 +110,7 @@ GoHighLevel 계정에 로그인한 후 사이드바 메뉴에서 "Automation(자
 
 #### 1. 자동화 섹션으로 이동
 
-GoHighLevel 계정에 로그인한 후 사이드바 메뉴에서 "Automation(자동화)" 섹션으로 이동합니다.
+Hyperclass 계정에 로그인한 후 사이드바 메뉴에서 "Automation(자동화)" 섹션으로 이동합니다.
 
 ![자동화 섹션 이동](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155028655629/original/clZajakW_OG_L5XE4LC6Qhz9XF9AC9KIag.jpg?1720018920)
 

@@ -154,11 +154,11 @@ DNS 레코드를 수동으로 추가하는 방법에 대한 자세한 내용은 
 
 Hyperclass는 설정한 From 주소를 유지하지만 "플러스" 형식을 사용하여 내부적으로 발송 주소를 다시 작성합니다:
 
-**From 주소 (설정): `test@gohighlevel.com`**
+**From 주소 (설정): `test@Hyperclass.com`**
 
 **공유 도메인 (계정 레벨): `mg.msgsndr.com`**
 
-**실제 발송 주소: `test+gohighlevel.com@mg.msgsndr.com`**
+**실제 발송 주소: `test+Hyperclass.com@mg.msgsndr.com`**
 
 ### 기존 에이전시는 **아직 영향을 받지 않습니다**. 기존 에이전시의 테스트와 점진적 출시를 위해 **Labs**에서 동일한 기능을 제공할 예정입니다.
 

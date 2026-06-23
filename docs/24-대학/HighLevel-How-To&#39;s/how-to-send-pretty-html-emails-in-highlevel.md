@@ -1,7 +1,7 @@
 ---
 
 번역일: 2026-04-08
-카테고리: 24-대학 > HighLevel How-To's
+카테고리: 24-대학 > Hyperclass How-To's
 ---
 
 # Hyperclass에서 예쁜 HTML 이메일 보내는 방법

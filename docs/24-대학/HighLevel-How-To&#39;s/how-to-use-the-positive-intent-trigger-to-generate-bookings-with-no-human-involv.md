@@ -1,7 +1,7 @@
 ---
 
 번역일: 2026-04-08
-카테고리: 24-대학 > HighLevel How-To's
+카테고리: 24-대학 > Hyperclass How-To's
 ---
 
 # 포지티브 인텐트(Positive Intent) 트리거를 사용해 완전 자동으로 예약을 생성하는 방법

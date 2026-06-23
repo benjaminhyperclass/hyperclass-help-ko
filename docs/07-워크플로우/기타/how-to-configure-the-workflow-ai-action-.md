@@ -8,7 +8,7 @@
 
 OpenAI GPT 액션에 오신 것을 환영합니다. 이는 비즈니스 운영을 단순화하는 도구입니다. 고급 AI를 기반으로 구축되어 복잡한 작업을 신속하고 효율적으로 처리합니다. 지루한 수동 프로세스는 안녕히 보내고, GPT 액션으로 완전히 새로운 효율적인 워크플로우 시대를 맞이하세요. [고객을 위해 이 기능을 활성화하는 방법은 여기를 클릭하세요](how-to-enable-and-rebill-workflow-ai-.md).
 
-**중요**: GPT-4 가격은 HighLevel의 GPT-4를 참조하세요. GPT-5 가격은 HighLevel의 GPT-5를 참조하세요.
+**중요**: GPT-4 가격은 Hyperclass의 GPT-4를 참조하세요. GPT-5 가격은 Hyperclass의 GPT-5를 참조하세요.
 
 ---
 

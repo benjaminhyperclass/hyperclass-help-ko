@@ -59,7 +59,7 @@
 - Enable Forward: Forward 섹션에 "[https://services.l*e*a*d*connectorhq.com/conversations/providers/mailgun/webhook/inbound](https://services.l*e*a*d*connectorhq.com/conversations/providers/mailgun/webhook/inbound)"를 붙여넣고 URL에서 **** 부분을 제거하세요
 - Priority = 99
 - 
-Description: HighLevel Route
+Description: Hyperclass Route
 
 - Save를 클릭하세요
 
@@ -76,7 +76,7 @@ Description: HighLevel Route
 Agency view(에이전시 뷰) > Settings(설정) > Email Services(이메일 서비스) > Location Settings(로케이션 설정) > 하위 계정의 Mailgun API integration(메일건 API 연동)을 편집 > Delete 입력
 
 
-그 다음 다시 연동하세요: [Mailgun API Key - Where to Find in Mailgun & Put in HighLevel](mailgun-private-api-key-setup.md)
+그 다음 다시 연동하세요: [Mailgun API Key - Where to Find in Mailgun & Put in Hyperclass](mailgun-private-api-key-setup.md)
 
 완료되면 메일건의 Receiving 페이지를 새로고침하여 웹훅이 생성되었는지 확인하세요
 

@@ -82,7 +82,7 @@ Eliza로 전송된 메시지는 별도 섹션에서 자세히 설명하겠습니
 
 ### 일반 정보
 
-GHL의 일반 정보 탭에 있는 모든 정보가 포함됩니다.
+Hyperclass의 일반 정보 탭에 있는 모든 정보가 포함됩니다.
 
 ![일반 정보](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48290394564/original/AGE3pH_KdFhdcoC7ZN-KU-KxJTy-c9yaNA.png?1680254751)
 
@@ -112,7 +112,7 @@ GHL의 일반 정보 탭에 있는 모든 정보가 포함됩니다.
 
 ### 할 일
 
-이 탭은 해당 연락처에 생성된 할 일을 나열합니다. Eliza 에이전트는 HighLevel 계정의 사용자를 위해 할 일을 생성할 수도 있습니다.
+이 탭은 해당 연락처에 생성된 할 일을 나열합니다. Eliza 에이전트는 Hyperclass 계정의 사용자를 위해 할 일을 생성할 수도 있습니다.
 
 ![할 일 목록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48290400295/original/s2R1TLVEtiKwrjlq8j8n6VFq-iOHsMFsug.png?1680256271)
 
@@ -182,7 +182,7 @@ Eliza 에이전트 플랫폼은 7개 채널을 지원합니다: 이메일 / SMS 
 
 Send to Eliza 워크플로우 액션과 Send to Eliza 태그의 차이점은, 워크플로우 액션은 연락처를 즉시 Eliza 에이전트 플랫폼으로 푸시한다는 것입니다. Send to Eliza 태그는 인바운드 메시지가 있을 때만 연락처를 푸시합니다.
 
-GHL 로케이션의 워크플로우 섹션에 로그인하세요.
+Hyperclass 로케이션의 워크플로우 섹션에 로그인하세요.
 
 트리거를 설정하고(예: 통화 상태 또는 CRM-연락처 업데이트 등) 액션으로 "Send to Eliza Agent Platform 추가"를 선택하세요.
 

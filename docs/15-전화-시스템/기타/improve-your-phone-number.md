@@ -6,7 +6,7 @@
 
 # 지원 포털에 로그인
 
-HighLevel Support Portal에 로그인하세요.
+Hyperclass Support Portal에 로그인하세요.
 
 ## 로그인
 

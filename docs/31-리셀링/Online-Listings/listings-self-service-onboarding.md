@@ -49,7 +49,7 @@
 
 온보딩 위젯 찾기:
 
-- HighLevel **하위 계정**에 로그인합니다.
+- Hyperclass **하위 계정**에 로그인합니다.
 
 - Reputation(평판 관리) → Listings(리스팅)으로 이동합니다.
 

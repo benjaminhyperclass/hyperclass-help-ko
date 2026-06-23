@@ -1,7 +1,7 @@
 ---
 
 번역일: 2026-04-08
-카테고리: 24-대학 > HighLevel How-To's
+카테고리: 24-대학 > Hyperclass How-To's
 ---
 
 # Hyperclass에서 긍정적 의도와 챗봇을 활용한 데이터베이스 재활성화 캠페인 구축하기

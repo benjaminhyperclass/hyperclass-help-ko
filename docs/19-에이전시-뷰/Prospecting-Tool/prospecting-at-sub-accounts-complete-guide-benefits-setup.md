@@ -118,7 +118,7 @@ Agency View > Reselling 탭으로 이동
 
 - [프로스펙팅 도구로 생성된 프로스펙트 리드에게 연락하는 방법](how-to-reach-out-to-prospect-leads-generated-via-the-prospecting-tool.md)
 - [에이전시 프로스펙팅 프리미엄 구독을 하위 계정과 공유하는 방법](../../08-결제/기타/how-to-link-a-sub-account-with-your-agency-prospecting-premium-subscription.md)
-- [GoHighLevel의 무료 vs 프리미엄 프로스펙팅 – 에이전시 완벽 가이드](../Premium-Prospecting/free-vs-premium-prospecting-in-gohighlevel-complete-guide-for-agencies.md)
+- [Hyperclass의 무료 vs 프리미엄 프로스펙팅 – 에이전시 완벽 가이드](../Premium-Prospecting/free-vs-premium-prospecting-in-gohighlevel-complete-guide-for-agencies.md)
 - [두 개 이상의 하위 계정에 프로스펙팅 도구를 재판매하고 사용하는 방법](how-to-resell-and-use-prospecting-tool-for-sub-accounts.md)
 
 ---

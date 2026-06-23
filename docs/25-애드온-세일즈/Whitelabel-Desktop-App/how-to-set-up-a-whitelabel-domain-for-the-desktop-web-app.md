@@ -23,11 +23,11 @@
 
 ## 데스크톱 웹 앱용 화이트라벨 도메인이란?
 
-화이트라벨 도메인은 여러분이 소유한 서브도메인(예: app.yourdomain.com)으로, 표준 Hyperclass 링크(예: app.gohighlevel.com)와 함께 사용되는 브랜딩된 데스크톱 로그인 및 앱 URL을 제공합니다. 설정 완료 후, 사용자들은 여러분의 브랜딩된 주소로 로그인할 수 있으며, Hyperclass가 애플리케이션을 호스팅하고 보안을 관리합니다.
+화이트라벨 도메인은 여러분이 소유한 서브도메인(예: app.yourdomain.com)으로, 표준 Hyperclass 링크(예: app.Hyperclass.com)와 함께 사용되는 브랜딩된 데스크톱 로그인 및 앱 URL을 제공합니다. 설정 완료 후, 사용자들은 여러분의 브랜딩된 주소로 로그인할 수 있으며, Hyperclass가 애플리케이션을 호스팅하고 보안을 관리합니다.
 
-데스크톱 웹 앱을 화이트라벨로 설정하면, 고객들이 로그인하고 앱을 사용할 때 여러분의 도메인을 사용하게 됩니다. 예를 들어 "app.gohighlevel.com" 대신 "app.myawesomedomain.com"을 사용하게 됩니다.
+데스크톱 웹 앱을 화이트라벨로 설정하면, 고객들이 로그인하고 앱을 사용할 때 여러분의 도메인을 사용하게 됩니다. 예를 들어 "app.Hyperclass.com" 대신 "app.myawesomedomain.com"을 사용하게 됩니다.
 
-**참고**: 커스텀/화이트라벨 도메인은 여러분이 소유한 도메인으로 고객이 데스크톱 앱에 로그인할 때 사용합니다(예: app.yourdomain.com). Hyperclass 기본 도메인은 GoHighLevel에서 제공하는 임시 주소입니다(예: yourcompany.gohighlevel.com).
+**참고**: 커스텀/화이트라벨 도메인은 여러분이 소유한 도메인으로 고객이 데스크톱 앱에 로그인할 때 사용합니다(예: app.yourdomain.com). Hyperclass 기본 도메인은 Hyperclass에서 제공하는 임시 주소입니다(예: yourcompany.Hyperclass.com).
 
 ---
 

@@ -29,7 +29,7 @@
 
 ## **새 기능 사용법**
 
-- **반복 인보이스 접근:** GoHighLevel 대시보드에서 인보이스 섹션으로 이동하여 반복 인보이스를 선택하세요.
+- **반복 인보이스 접근:** Hyperclass 대시보드에서 인보이스 섹션으로 이동하여 반복 인보이스를 선택하세요.
 
 ![반복 인보이스 접근](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038430829/original/kWgmDF9xxIivX_DxGicJXyqwYygMkiusoQ.jpeg?1734374449)
 

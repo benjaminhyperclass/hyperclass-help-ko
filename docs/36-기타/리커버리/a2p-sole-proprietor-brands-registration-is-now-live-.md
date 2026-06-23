@@ -277,7 +277,7 @@ Sample Message #1 필드에 다음을 포함하는 메시지를 제공하세요:
 
 Submit(제출)을 클릭한 후, 사용자는 성공적인 개인사업자 등록을 위해 제3자 인증 단계를 완료해야 합니다.
 
-**참고:** HighLevel의 Persona 신원 인증은 하위 계정당 일회성 과정입니다.
+**참고:** Hyperclass의 Persona 신원 인증은 하위 계정당 일회성 과정입니다.
 
 - 팝업에서 Start Verification(인증 시작)을 클릭하세요.
 

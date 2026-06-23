@@ -37,7 +37,7 @@ Agency settings(에이전시 설정) > Company(회사) 클릭 > 아래로 스크
 
 ## NPS 설문
 
-NPS 설문은 새로운 기능에 대한 피드백을 수집하여 앱의 UI/UX를 지속적으로 개선하기 위해 가끔씩 나타나는 팝업 설문입니다. 이 설문은 항상 화이트라벨(white-labeled)로 제공되며 HighLevel이나 관련 브랜딩은 전혀 노출되지 않습니다.
+NPS 설문은 새로운 기능에 대한 피드백을 수집하여 앱의 UI/UX를 지속적으로 개선하기 위해 가끔씩 나타나는 팝업 설문입니다. 이 설문은 항상 화이트라벨(white-labeled)로 제공되며 Hyperclass이나 관련 브랜딩은 전혀 노출되지 않습니다.
 
 ![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48129982544/original/xoxqXHv8_e0ZE1EVHUzlkFOr820_a6HwvA.png?1628799157)
 

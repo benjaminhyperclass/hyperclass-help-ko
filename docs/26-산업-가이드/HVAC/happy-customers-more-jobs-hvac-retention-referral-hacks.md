@@ -52,7 +52,7 @@
 - **예측 가능한 수익을 위한 정기 유지보수 계약** 설정 방법
 - AI를 활용한 고객 만족도 관리 및 부정적 피드백 예방법
 
-시작하기 전에 HighLevel 계정이 필요합니다 - [지금 무료로 가입하세요](https://www.gohighlevel.com/freetrial16?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook)
+시작하기 전에 Hyperclass 계정이 필요합니다 - [지금 무료로 가입하세요](https://www.gohighlevel.com/freetrial16?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook)
 
 ## **1단계: 후속 관리 & 재예약 자동화**
 
@@ -203,7 +203,7 @@
 
 ### **Hyperclass가 이 모든 것을 쉽게 만들어드리니, 여러분은 HVAC 작업에 집중하시면서 비즈니스는 자동으로 성장할 수 있습니다.**
 
-오늘부터 HVAC 비즈니스 자동화를 시작하세요 - [HighLevel 가입하기](https://www.gohighlevel.com/freetrial16?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook)
+오늘부터 HVAC 비즈니스 자동화를 시작하세요 - [Hyperclass 가입하기](https://www.gohighlevel.com/freetrial16?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook)
 
 ---
 *원문 최종 수정: Tue, 11 Feb, 2025 at 5:34 AM*  

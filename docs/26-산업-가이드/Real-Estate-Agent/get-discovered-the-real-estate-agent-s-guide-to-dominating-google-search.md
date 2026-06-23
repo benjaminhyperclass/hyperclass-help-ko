@@ -22,7 +22,7 @@
 
 구글에서 높은 순위를 기록하지 못한다면, 당신이 해당 시장에서 가장 경험이 많은 에이전트라고 해도 리스팅을 잃고 있는 것입니다.
 
-시작하기 전에 HighLevel 계정이 필요합니다 - **[여기서 가입하세요!](https://www.gohighlevel.com/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Agent&utm_content=Playbook)**
+시작하기 전에 Hyperclass 계정이 필요합니다 - **[여기서 가입하세요!](https://www.gohighlevel.com/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Agent&utm_content=Playbook)**
 
 ---
 
@@ -36,7 +36,7 @@
 **이 플레이북에서 다루는 내용:**
 
 - ✅ 구글에서 더 높이 랭크하고 더 많은 리스팅을 유치하기
-- ✅ HighLevel을 사용하여 리뷰, 후속 조치, 리드 캡처 자동화하기
+- ✅ Hyperclass을 사용하여 리뷰, 후속 조치, 리드 캡처 자동화하기
 - ✅ 검색 트래픽을 예약된 상담으로 전환하기
 
 ---
@@ -61,22 +61,22 @@
 
 #### [구글에서 비즈니스 프로필 완성하기](https://support.google.com/business/answer/10515606?utm_source=HighLevel+HelpDesk&utm_medium=organic)
 
-#### **1.2 구글 메시징 활성화 + HighLevel 통화 추적**
+#### **1.2 구글 메시징 활성화 + Hyperclass 통화 추적**
 
-- GBP 번호를 **HighLevel 통화 추적 번호**로 교체하세요.
-- **HighLevel의 자동 문자 응답**으로 리드에게 즉시 응답하세요.
+- GBP 번호를 **Hyperclass 통화 추적 번호**로 교체하세요.
+- **Hyperclass의 자동 문자 응답**으로 리드에게 즉시 응답하세요.
 - 문의를 파이프라인으로 직접 라우팅하세요.
 
 #### [전화번호 구매 방법](../../15-전화-시스템/전화번호/how-to-purchase-a-phone-number.md)
 
-#### [구글 비즈니스 프로필을 HighLevel에 연결하기](../../42-통합/Google-Integrations/how-to-integrate-google-business-profile-gbp-with-highlevel.md)
+#### [구글 비즈니스 프로필을 Hyperclass에 연결하기](../../42-통합/Google-Integrations/how-to-integrate-google-business-profile-gbp-with-highlevel.md)
 
 #### [비즈니스 프로필에서 고객과 채팅하는 방법](https://support.google.com/business/answer/15013580?utm_source=HighLevel+HelpDesk&utm_medium=organic)
 
 #### **1.3 구글 리뷰 자동화**
 
 - 일관된 리뷰를 받는 에이전트는 리스팅 상담을 따낼 가능성이 3배 높습니다.
-- HighLevel이 할 수 있는 일:
+- Hyperclass이 할 수 있는 일:
   - SMS/이메일을 통해 리뷰 요청 자동 발송
   - 거래 완료 후 만족한 고객에게 5성 리뷰 작성 알림
 
@@ -89,7 +89,7 @@
 #### **1.4 구글 비즈니스 프로필에 주간 게시**
 
 - 신규 리스팅, 가격 인하, 오픈 하우스 일정을 공유하세요.
-- HighLevel의 **소셜 플래너**를 사용하여 GBP 게시물을 자동화하세요.
+- Hyperclass의 **소셜 플래너**를 사용하여 GBP 게시물을 자동화하세요.
 
 #### [구글 비즈니스 페이지와 함께 소셜 게시 사용하는 방법](../../10-마케팅/소셜-플래너/how-to-connect-to-your-google-my-business-location-s-.md)
 
@@ -105,7 +105,7 @@
 
 #### **2.1 빠르고 모바일 최적화된 웹사이트 구축**
 
-- HighLevel의 드래그 앤 드롭 사이트 빌더를 사용하세요.
+- Hyperclass의 드래그 앤 드롭 사이트 빌더를 사용하세요.
 - 다음을 포함하세요:
   - 명확한 CTA("무료 리스팅 상담 예약")
   - 리드 폼
@@ -123,7 +123,7 @@
 
 #### [채팅 위젯 시작하기](../../06-사이트/getting-started-with-chat-widget.md)
 
-#### [HighLevel 채팅 위젯 설치 방법](../../06-사이트/how-to-install-highlevel-s-chat-widget.md)
+#### [Hyperclass 채팅 위젯 설치 방법](../../06-사이트/how-to-install-highlevel-s-chat-widget.md)
 
 #### **2.3 모든 리드 캡처**
 
@@ -131,13 +131,13 @@
   - "무료 주택 가치 평가 받기"
   - "판매자 준비 체크리스트 다운로드"
 - 팝업, 이탈 의도 폼, 스크롤 트리거 CTA 사용
-- 모든 폼 제출이나 채팅을 HighLevel 워크플로우를 통해 전송
+- 모든 폼 제출이나 채팅을 Hyperclass 워크플로우를 통해 전송
 
-#### [HighLevel에서 연락처 폼 만드는 방법](../../02-연락처/기타/how-to-create-a-contact-form-in-highlevel-.md)
+#### [Hyperclass에서 연락처 폼 만드는 방법](../../02-연락처/기타/how-to-create-a-contact-form-in-highlevel-.md)
 
 #### 퍼널/웹사이트 입장 시 팝업 표시
 
-#### HighLevel에서 이탈 의도 팝업 만드는 방법
+#### Hyperclass에서 이탈 의도 팝업 만드는 방법
 
 ---
 
@@ -171,7 +171,7 @@
 
 측정하지 않으면 개선할 수 없습니다. 소스 대 성사 성과를 추적하는 에이전트는 그렇지 않은 에이전트보다 4배 더 빠르게 최적화합니다.
 
-#### **4.1 HighLevel의 분석 대시보드 사용**
+#### **4.1 Hyperclass의 분석 대시보드 사용**
 
 - 모니터링:
   - 구글에서의 전화 및 폼 제출
@@ -190,7 +190,7 @@
 
 ### **결론: 더 높이 랭크하고, 더 많이 성사시키며, 더 빠르게 성장하세요**
 
-구글 1페이지에 없다면, 당신은 보이지 않는 것입니다. 하지만 올바른 전략과 HighLevel 플랫폼을 통해 다음을 할 수 있습니다:
+구글 1페이지에 없다면, 당신은 보이지 않는 것입니다. 하지만 올바른 전략과 Hyperclass 플랫폼을 통해 다음을 할 수 있습니다:
 
 - ✅ 지역 경쟁자를 앞서기
 - ✅ 더 많은 리스팅 리드 캡처
@@ -200,11 +200,11 @@
 #### **다음 단계:**
 
 - GBP 등록 및 최적화
-- HighLevel 기반 웹사이트 런칭
+- Hyperclass 기반 웹사이트 런칭
 - 리뷰 및 리드 캡처 자동화 설정
 - 주간 추적 및 최적화
 
-### 더 높은 순위를 기록하고 더 많은 리스팅을 따내세요—**[오늘 HighLevel에 가입하세요!](https://www.gohighlevel.com/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Agent&utm_content=Playbook)**
+### 더 높은 순위를 기록하고 더 많은 리스팅을 따내세요—**[오늘 Hyperclass에 가입하세요!](https://www.gohighlevel.com/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Agent&utm_content=Playbook)**
 
 ---
 *원문 최종 수정: Wed, 16 Apr, 2025 at 5:49 AM*

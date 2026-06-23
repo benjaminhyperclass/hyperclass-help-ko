@@ -4,7 +4,7 @@
 카테고리: 13-AI-Employee > Conversation-AI
 ---
 
-# 모바일에서 대화 AI 사용하기 (HighLevel & LeadConnector)
+# 모바일에서 대화 AI 사용하기 (Hyperclass & LeadConnector)
 
 이 가이드는 모바일 앱에서 직접 대화 AI(Conversation AI)를 사용하는 방법을 안내합니다. 왓츠앱, 페이스북, 인스타그램에서 답변할 때도 이제 이동 중에 AI 기반의 스마트 답변과 자동 응답을 활용할 수 있어요.
 
@@ -42,7 +42,7 @@
 
 ### 1단계: 데스크톱에서 설정 (1회만)
 
-- HighLevel 데스크톱 대시보드에 로그인
+- Hyperclass 데스크톱 대시보드에 로그인
 - Settings(설정) → Conversation AI로 이동
 - 원하는 모드 선택: 자동 파일럿 또는 제안 모드
 - 자동 파일럿 사용 시 지연 시간 설정
@@ -51,7 +51,7 @@
 
 ### 2단계: 모바일 대화에서 AI 사용
 
-- HighLevel 또는 LeadConnector 모바일 앱 열기
+- Hyperclass 또는 LeadConnector 모바일 앱 열기
 - 왓츠앱, 페이스북 메신저, 인스타그램 대화로 이동
 - 상호작용을 시작하여 AI 지원 확인
 
@@ -116,8 +116,8 @@ A: 아니요. 모드 전환은 데스크톱 설정 페이지에서 해야 합니
 **Q: 모바일에서의 AI 사용이 요금에 영향을 주나요?**
 A: 네. 데스크톱이든 모바일이든 모든 AI 상호작용이 사용량 기반 요금에 포함됩니다.
 
-**Q: 이 기능을 모든 HighLevel 사용자가 사용할 수 있나요?**
-A: 이 기능은 현재 공개 베타 단계이며 HighLevel 및 LeadConnector 모바일 앱의 모든 사용자가 이용할 수 있습니다.
+**Q: 이 기능을 모든 Hyperclass 사용자가 사용할 수 있나요?**
+A: 이 기능은 현재 공개 베타 단계이며 Hyperclass 및 LeadConnector 모바일 앱의 모든 사용자가 이용할 수 있습니다.
 
 ---
 *원문 최종 수정: Fri, 2 May, 2025 at 2:13 PM*

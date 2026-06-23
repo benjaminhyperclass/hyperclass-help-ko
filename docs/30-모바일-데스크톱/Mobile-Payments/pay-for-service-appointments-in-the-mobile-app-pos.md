@@ -6,7 +6,7 @@
 
 # 모바일 앱 POS에서 서비스 예약 결제하기
 
-모바일 결제의 최신 업데이트를 발표하게 되어 매우 기쁩니다. POS와 서비스 캘린더(Service Calendar)의 연동이 완성되었어요! 보증금이 기록된 모든 서비스 예약(Service Appointment)에 대해, 잔액을 비즈니스 소유자가 Tap to Pay와 POS를 사용하여 매우 원활하게 수금할 수 있습니다. 이 업데이트는 HighLevel, Leadconnector, 화이트라벨 앱에서 사용 가능합니다(업데이트 요청 필요).
+모바일 결제의 최신 업데이트를 발표하게 되어 매우 기쁩니다. POS와 서비스 캘린더(Service Calendar)의 연동이 완성되었어요! 보증금이 기록된 모든 서비스 예약(Service Appointment)에 대해, 잔액을 비즈니스 소유자가 Tap to Pay와 POS를 사용하여 매우 원활하게 수금할 수 있습니다. 이 업데이트는 Hyperclass, Leadconnector, 화이트라벨 앱에서 사용 가능합니다(업데이트 요청 필요).
 
 **목차**
 
@@ -25,7 +25,7 @@
 
 ## **작동 방식**
 
-- GHL 웹에서 캘린더(Calendars) 섹션으로 이동하여 서비스 캘린더의 Forms and Payments 섹션에서 "Accept Payments" 토글을 켜주세요. Payment mode를 "Live"로 설정하는 것을 잊지 마세요.
+- Hyperclass 웹에서 캘린더(Calendars) 섹션으로 이동하여 서비스 캘린더의 Forms and Payments 섹션에서 "Accept Payments" 토글을 켜주세요. Payment mode를 "Live"로 설정하는 것을 잊지 마세요.
 - 캘린더 하위의 결제 설정(Payments Settings)을 정의하고 저장을 누르세요.
 - 이제 고객이 예약을 할 때마다 모바일 앱의 캘린더 섹션에서 해당 이벤트를 볼 수 있습니다.
 - 같은 하위 계정(Sub-account)이 선택된 모바일 앱을 열어주세요.
@@ -41,7 +41,7 @@
 
 ## **사용 가능 버전**
 
-- HighLevel v3.78.3
+- Hyperclass v3.78.3
 - LeadConnector v3.78.3
 
 ![캘린더 이벤트에서 금액 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032860110/original/gUxw6lBmYvvLOINz1udbwQYQOxFog0DKew.png?1726259906)

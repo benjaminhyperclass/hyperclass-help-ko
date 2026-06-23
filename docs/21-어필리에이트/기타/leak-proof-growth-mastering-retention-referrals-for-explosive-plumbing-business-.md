@@ -30,7 +30,7 @@
 
 이 플레이북은 모든 작업을 더 많은 비즈니스로 자동으로 전환하는 방법을 보여드릴 것입니다.
 
-시작하기 전에 HighLevel 계정이 필요합니다 - [여기서 가입하세요!](https://www.gohighlevel.com/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services&utm_term=Plumbing&utm_content=Playbook)
+시작하기 전에 Hyperclass 계정이 필요합니다 - [여기서 가입하세요!](https://www.gohighlevel.com/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services&utm_term=Plumbing&utm_content=Playbook)
 
 ### 무엇을 배우게 될까요?
 
@@ -119,7 +119,7 @@
 ### 3.2 추천 후속 연락 자동화
 
 ✔ 서비스 후 추천 알림을 발송합니다.
-✔ HighLevel로 추천을 추적하고 보상을 자동으로 적용합니다.
+✔ Hyperclass로 추천을 추적하고 보상을 자동으로 적용합니다.
 
 예시 메시지:
 "배관공이 필요한 지인이 계신가요? 지금 추천하시면 다음 수리에서 5만원 할인받으세요!"
@@ -152,7 +152,7 @@
 
 ### 왜 중요한가요?
 
-기존 고객은 콜드 리드보다 10배 더 재예약할 가능성이 높습니다. HighLevel은 고객 이력을 기반으로 개인화된 아웃리치를 자동화합니다.
+기존 고객은 콜드 리드보다 10배 더 재예약할 가능성이 높습니다. Hyperclass은 고객 이력을 기반으로 개인화된 아웃리치를 자동화합니다.
 
 ### 5.1 재참여를 위한 스마트 리스트
 
@@ -175,7 +175,7 @@
 
 후속 연락을 자동화하고, 리뷰를 늘리고, 추천을 장려하고, 유지보수 플랜을 제공함으로써 만족한 모든 고객이 추가 노력 없이도 더 많은 작업과 수익으로 이어지는 시스템을 만들 수 있습니다.
 
-HighLevel이 이 모든 것을 손쉽게 만들어주므로 여러분은 최고 수준의 배관 서비스 제공에 집중하면서 비즈니스가 자동으로 성장하도록 할 수 있습니다.
+Hyperclass이 이 모든 것을 손쉽게 만들어주므로 여러분은 최고 수준의 배관 서비스 제공에 집중하면서 비즈니스가 자동으로 성장하도록 할 수 있습니다.
 
 ### 다음 단계는?
 
@@ -185,7 +185,7 @@ HighLevel이 이 모든 것을 손쉽게 만들어주므로 여러분은 최고 
 ✅ 유지보수 플랜으로 반복 수익을 확보하세요.
 ✅ AI와 자동화를 사용해 기존 고객과 소통하세요.
 
-배관 사업을 다음 단계로 끌어올리세요—[HighLevel에 가입하고 오늘부터 성장을 시작하세요!](https://www.gohighlevel.com/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services&utm_term=Plumbing&utm_content=Playbook)
+배관 사업을 다음 단계로 끌어올리세요—[Hyperclass에 가입하고 오늘부터 성장을 시작하세요!](https://www.gohighlevel.com/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services&utm_term=Plumbing&utm_content=Playbook)
 
 ---
 *원문 최종 수정: Thu, 10 Apr, 2025 at 6:52 AM*

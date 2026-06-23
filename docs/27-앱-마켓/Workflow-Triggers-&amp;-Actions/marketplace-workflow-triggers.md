@@ -119,11 +119,11 @@
 ![Constants 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155005617938/original/xkySDB0XDrua62JzPisbo1TNQH59sEZSaw.png?1692595922)
 
 #### Internal Reference
-HighLevel 내부 모듈에서 옵션을 로드합니다. 옵션 목록을 로드할 HighLevel 모듈 중 하나를 선택하세요.
+Hyperclass 내부 모듈에서 옵션을 로드합니다. 옵션 목록을 로드할 Hyperclass 모듈 중 하나를 선택하세요.
 
 ![Internal Reference 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155005617998/original/du8lZRMai5wENrSducJPjhqgFASlOZ_P6Q.png?1692596002)
 
-지원되는 HighLevel 모듈
+지원되는 Hyperclass 모듈
 
 ![지원 모듈 목록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155005670538/original/8uQtBkMLWLhm6jcDxdX-gzjR07BQ_GPtXw.png?1692623479)
 

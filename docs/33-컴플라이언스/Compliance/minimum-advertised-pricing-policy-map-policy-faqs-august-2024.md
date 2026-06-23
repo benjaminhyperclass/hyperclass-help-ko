@@ -87,7 +87,7 @@ MAP 정책은 표시된 가격이 매장의 물리적 위치 외부에서 광고
 
 ### 다른 하이레벨 고객이 MAP 정책을 위반하는 광고를 발견했습니다. 어디에 신고하면 되나요?
 
-MAP 정책 위반 혐의를 익명으로 신고할 수 있습니다: [http://gohighlevel.com/MAPpolicyviolations](http://gohighlevel.com/MAPpolicyviolations). 또는 콘텐츠 링크를 [legalcompliance@gohighlevel.com](mailto:legalcompliance@gohighlevel.com)으로 보내주시면 저희가 처리해드립니다!
+MAP 정책 위반 혐의를 익명으로 신고할 수 있습니다: [http://gohighlevel.com/MAPpolicyviolations](http://gohighlevel.com/MAPpolicyviolations). 또는 콘텐츠 링크를 [legalcompliance@Hyperclass.com](mailto:legalcompliance@gohighlevel.com)으로 보내주시면 저희가 처리해드립니다!
 
 ---
 *원문 최종 수정: 2024년 8월 15일 오후 6시 41분*

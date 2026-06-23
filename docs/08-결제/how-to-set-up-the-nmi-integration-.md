@@ -114,7 +114,7 @@ NMI 연동을 사용하면 신용카드/직불카드 결제만 받을 수 있습
 
 - NMI 계정에서 Payer Authentication 2.0을 등록하세요
 - 서비스 상태가 활성(Active)인지 확인하세요
-- NMI 판매자 포털에서 3DS용 결제 공개 키를 생성하고, HighLevel 연동에 추가하세요 (스크린샷 참조)
+- NMI 판매자 포털에서 3DS용 결제 공개 키를 생성하고, Hyperclass 연동에 추가하세요 (스크린샷 참조)
 
 ![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055146064/original/lnR5pkHGs_XvDknDgiOtDSo0tDxYIsMACA.png?1759474978)
 

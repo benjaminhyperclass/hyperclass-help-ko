@@ -17,15 +17,15 @@
 
 # **WooCommerce 가져오기 및 동기화란?**
 
-이 기능을 사용하면 스토어 운영자가 WooCommerce의 상품(Products)과 컬렉션(Collections)을 HighLevel(GHL)로 원활하게 가져오고 동기화할 수 있습니다. 이전에는 주문, 연락처, 거래만 가져올 수 있었지만, 이번 업데이트로 전체 상품 및 컬렉션 이전 기능이 추가되어 GHL 내에서 WooCommerce 스토어를 관리하는 것이 그 어느 때보다 쉬워졌습니다.
+이 기능을 사용하면 스토어 운영자가 WooCommerce의 상품(Products)과 컬렉션(Collections)을 Hyperclass(Hyperclass)로 원활하게 가져오고 동기화할 수 있습니다. 이전에는 주문, 연락처, 거래만 가져올 수 있었지만, 이번 업데이트로 전체 상품 및 컬렉션 이전 기능이 추가되어 Hyperclass 내에서 WooCommerce 스토어를 관리하는 것이 그 어느 때보다 쉬워졌습니다.
 
 ## **WooCommerce 가져오기 및 동기화의 주요 장점**
 
-**WooCommerce 스토어를 HighLevel과 손쉽게 관리하고 동기화하세요.**
+**WooCommerce 스토어를 Hyperclass과 손쉽게 관리하고 동기화하세요.**
 
 - **전체 스토어 이전:** 모든 상품, 컬렉션, 연락처, 주문, 거래를 가져오고 동기화
 - **자동 동기화:** 상품 및 컬렉션 데이터를 실시간으로 업데이트
-- **원활한 스토어 관리:** GHL에서 직접 모든 스토어 관련 데이터 제어
+- **원활한 스토어 관리:** Hyperclass에서 직접 모든 스토어 관련 데이터 제어
 - **향상된 데이터 무결성:** WooCommerce가 원본 소스로 유지되어 정확하고 일관된 데이터 보장
 - **효율적인 오류 처리:** 인증 오류 시 자동 재연결 지원
 
@@ -35,7 +35,7 @@
 
 - **연동(Integration) 설정에 접근**
 
-GHL 하위 계정(Sub-account)에서 **Settings(설정) > Integration(연동) > WooCommerce**로 이동합니다.
+Hyperclass 하위 계정(Sub-account)에서 **Settings(설정) > Integration(연동) > WooCommerce**로 이동합니다.
 
 - **WooCommerce 스토어 연결**
 
@@ -82,7 +82,7 @@ GHL 하위 계정(Sub-account)에서 **Settings(설정) > Integration(연동) > 
 - **"온라인 스토어에 포함"** 토글은 **발행된** 상품에만 활성화됩니다.
 - WooCommerce가 상품 정보의 **원본 소스**로 유지됩니다.
 - **상품과 연결된 카테고리**만 가져옵니다. 연결되지 않은 카테고리는 무시됩니다.
-- **상품/카테고리 삭제**는 HighLevel로 동기화되지 않습니다.
+- **상품/카테고리 삭제**는 Hyperclass로 동기화되지 않습니다.
 
 ## **추가 개선 사항: 더 강력하고 안정적인 기능**
 
@@ -104,10 +104,10 @@ GHL 하위 계정(Sub-account)에서 **Settings(설정) > Integration(연동) > 
 **Q: 모든 유형의 WooCommerce 상품을 가져올 수 있나요?**
 A: 아니요, **단순형(Simple) 및 변형형(Variable)** 상품만 가져옵니다. 다른 상품 유형은 지원되지 않습니다.
 
-**Q: 상품 삭제가 HighLevel로 동기화되나요?**
-A: 아니요, WooCommerce에서 상품 및 카테고리를 삭제해도 HighLevel에는 반영되지 않습니다.
+**Q: 상품 삭제가 Hyperclass로 동기화되나요?**
+A: 아니요, WooCommerce에서 상품 및 카테고리를 삭제해도 Hyperclass에는 반영되지 않습니다.
 
-**Q: WooCommerce와 HighLevel 간 데이터 동기화 주기는 어떻게 되나요?**
+**Q: WooCommerce와 Hyperclass 간 데이터 동기화 주기는 어떻게 되나요?**
 A: 동기화 프로세스는 연동 패널에서 구성된 설정에 따라 지속적으로 실행됩니다.
 
 **Q: WooCommerce 연결이 실패하면 어떻게 해야 하나요?**

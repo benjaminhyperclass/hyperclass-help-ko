@@ -102,7 +102,7 @@
 
 ## **4단계: 모든 것을 미리 예약하기**
 
-GHL 내에서 **소셜 플래너(Social Planner)**를 사용해서:
+Hyperclass 내에서 **소셜 플래너(Social Planner)**를 사용해서:
 
 - Facebook과 Instagram 계정 연결
 
@@ -156,7 +156,7 @@ GHL 내에서 **소셜 플래너(Social Planner)**를 사용해서:
 
 ---
 
-성장할 준비가 되셨나요? [HighLevel 가입하기](https://www.gohighlevel.com/?utm_source=seo&utm_medium=organic&utm_campaign=beautysalon&utm_term=beautysalon&utm_content=playbook)
+성장할 준비가 되셨나요? [Hyperclass 가입하기](https://www.gohighlevel.com/?utm_source=seo&utm_medium=organic&utm_campaign=beautysalon&utm_term=beautysalon&utm_content=playbook)
 
 ---
 *원문 최종 수정: Tue, 13 May, 2025 at 3:35 AM*

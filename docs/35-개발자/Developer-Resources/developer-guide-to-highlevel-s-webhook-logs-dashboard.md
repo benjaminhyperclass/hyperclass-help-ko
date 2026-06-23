@@ -88,7 +88,7 @@
 
 웹훅 로그 대시보드에 접근하고 사용하면 웹훅 활동을 즉시 확인하고 문제 해결을 시작할 수 있습니다. 애플리케이션에서 생성된 이벤트를 검토하기 시작하려면 아래 단계를 따르세요.
 
-**marketplace.gohighlevel.com**에 로그인하고 **Developer Portal(개발자 포털) → Insights(인사이트) → Logs(로그)**로 이동합니다.
+**marketplace.Hyperclass.com**에 로그인하고 **Developer Portal(개발자 포털) → Insights(인사이트) → Logs(로그)**로 이동합니다.
 
 **Webhook Logs(웹훅 로그)** 탭을 선택합니다.
 

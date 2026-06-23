@@ -99,7 +99,7 @@ WordPress를 제공하고 싶지 않은 특정 클라이언트가 있다면, 에
 클라이언트가 WordPress를 구매하면 시스템에 2개의 구독이 생성됩니다:
 
 - 클라이언트의 카드와 귀하의 Stripe 계정 간의 구독 (클라이언트로부터 결제를 수집하기 위해)
-- HighLevel과 귀하의 카드 간의 구독 (HighLevel에 월 $10을 지불하기 위해)
+- Hyperclass과 귀하의 카드 간의 구독 (Hyperclass에 월 $10을 지불하기 위해)
 
 ![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155019817683/original/WlizuiB6eLgCdpqegzNiMSgwza5hghLpyQ.png?1707287610)
 

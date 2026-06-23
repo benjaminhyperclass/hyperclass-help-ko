@@ -16,7 +16,7 @@
 - 빠르고 매끄러운 리드 생성 퍼널 구축하기
 - 예약하지 않은 방문자 리타겟팅하기 (아직은!)
 - 성과를 추적해서 효과적인 것을 확대하기
-- GoHighLevel로 전체 시스템을 손쉽게 운영하기
+- Hyperclass로 전체 시스템을 손쉽게 운영하기
 
 단계별로 분석해서 다음 캠페인을 올바른 방식으로 구축해보겠습니다. 노출부터 시술까지 말이에요.
 
@@ -58,7 +58,7 @@
 
 ### **2단계: 리드 퍼널 구축하기 (광고 → 폼 → 예약)**
 
-GoHighLevel을 사용해서 광고를 캘린더(Calendar)와 연결하는 리드 캡처 퍼널을 만드세요:
+Hyperclass을 사용해서 광고를 캘린더(Calendar)와 연결하는 리드 캡처 퍼널을 만드세요:
 
 - **랜딩 페이지(Landing Page)**
   - 오퍼를 강조
@@ -68,14 +68,14 @@ GoHighLevel을 사용해서 광고를 캘린더(Calendar)와 연결하는 리드
 
 - **감사 페이지(Thank You Page)**
   - 오퍼를 반복하고 긴급성 추가
-  - GoHighLevel 예약 캘린더 삽입
+  - Hyperclass 예약 캘린더 삽입
   - 즉시 예약하거나 "대기줄 건너뛰기" 유도
 
 - **후속 조치 시퀀스**
   - SMS 및 이메일 리마인더에 예약 링크 포함
   - 선택사항: FAQ 또는 "기대할 수 있는 것" 미니 가이드 포함
 
-[HighLevel에서 페이스북 광고 운영하는 방법]([fill-your-calendar-guide-to-running-ad-campaigns-that-actually-book](fill-your-calendar-guide-to-running-ad-campaigns-that-actually-book.md)
+[Hyperclass에서 페이스북 광고 운영하는 방법]([fill-your-calendar-guide-to-running-ad-campaigns-that-actually-book](fill-your-calendar-guide-to-running-ad-campaigns-that-actually-book.md)
 
 ---
 
@@ -103,13 +103,13 @@ GoHighLevel을 사용해서 광고를 캘린더(Calendar)와 연결하는 리드
 - 고객 비디오 추천사: "왜 [당신의 스파]를 선택했는지"
 - "아직 관심 있으신가요?" 메시지와 함께 원래 오퍼 제시
 
-보너스: GoHighLevel에서 예약하지 않은 리드를 페이스북 커스텀 오디언스에 업로드해서 자동으로 리타겟팅할 수 있어요.
+보너스: Hyperclass에서 예약하지 않은 리드를 페이스북 커스텀 오디언스에 업로드해서 자동으로 리타겟팅할 수 있어요.
 
 ---
 
 ### **5단계: 결과 추적 및 최적화**
 
-GoHighLevel 안에서 주요 광고 퍼널 지표를 모니터링하세요:
+Hyperclass 안에서 주요 광고 퍼널 지표를 모니터링하세요:
 
 - **리드당 비용 (CPL)**
 - **리드에서 예약으로의 전환율**
@@ -122,7 +122,7 @@ GoHighLevel 안에서 주요 광고 퍼널 지표를 모니터링하세요:
 
 ## 실제 스파, 실제 결과
 
-"우리의 '글로우 스타터 페이셜' 광고가 3주 동안 리드당 14,000원으로 114개의 리드를 가져왔어요. HighLevel의 후속 조치 자동화로 37건의 새로운 상담을 예약했고, 그 중 22건이 지속적인 패키지로 전환됐습니다. 분기 최고의 캠페인이었어요."
+"우리의 '글로우 스타터 페이셜' 광고가 3주 동안 리드당 14,000원으로 114개의 리드를 가져왔어요. Hyperclass의 후속 조치 자동화로 37건의 새로운 상담을 예약했고, 그 중 22건이 지속적인 패키지로 전환됐습니다. 분기 최고의 캠페인이었어요."
 
 — 라일라
 
@@ -138,7 +138,7 @@ GoHighLevel 안에서 주요 광고 퍼널 지표를 모니터링하세요:
 
 ---
 
-**예쁜 광고 운영은 그만하고 수익성 있는 광고를 운영해보세요. [무료 체험을 시작](https://www.gohighlevel.com/?utm_source=seo&utm_medium=organic&utm_campaign=medspa&utm_term=medspa&utm_content=playbook)하고 GoHighLevel이 예약을 처리하는 동안 당신은 결과에만 집중하세요.**
+**예쁜 광고 운영은 그만하고 수익성 있는 광고를 운영해보세요. [무료 체험을 시작](https://www.gohighlevel.com/?utm_source=seo&utm_medium=organic&utm_campaign=medspa&utm_term=medspa&utm_content=playbook)하고 Hyperclass이 예약을 처리하는 동안 당신은 결과에만 집중하세요.**
 
 ---
 *원문 최종 수정: 2025년 4월 25일*

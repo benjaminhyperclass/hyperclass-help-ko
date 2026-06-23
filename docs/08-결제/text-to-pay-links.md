@@ -41,7 +41,7 @@
 
 사전 준비사항을 확인하면 일반적인 설정 문제를 예방하고 링크가 올바르게 전송되고 처리되는 것을 보장할 수 있어요.
 
-- 하위 계정(Sub-account)에 활성화된 **HighLevel Payments (Stripe)** 연동이 있어야 해요.
+- 하위 계정(Sub-account)에 활성화된 **Hyperclass Payments (Stripe)** 연동이 있어야 해요.
 
 - 하위 계정에 활성화된 전화번호(Phone Number)가 있어야 해요.
 

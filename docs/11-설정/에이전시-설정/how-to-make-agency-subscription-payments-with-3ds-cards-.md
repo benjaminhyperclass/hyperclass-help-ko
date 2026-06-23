@@ -37,7 +37,7 @@
 
 ![3DS 인증 팝업](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155017539874/original/OtuQGgK4nsEW7_S44BYlvhNszQw_iekE5g.png?1705062098)
 
-# 축하합니다! 결제가 성공적으로 처리되면 HighLevel 계정이 재활성화됩니다.
+# 축하합니다! 결제가 성공적으로 처리되면 Hyperclass 계정이 재활성화됩니다.
 
 ---
 *원문 최종 수정: Fri, 12 Jan, 2024 at 6:24 AM*

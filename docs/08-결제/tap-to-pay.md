@@ -109,11 +109,11 @@ Payments(결제) > Integrations(연동) > Connect with Stripe로 이동하여 St
 사용 중인 앱에 따라 아래 링크를 클릭하세요:
 
 1. Android:
-   - [GHL App](https://play.google.com/apps/testing/com.LeadConnector)
+   - [Hyperclass App](https://play.google.com/apps/testing/com.LeadConnector)
    - [LeadConnector App](https://play.google.com/apps/testing/com.LeadConnector)
 
 2. iPhone 사용자:
-   - [GHL App](https://testflight.apple.com/join/bHNZSiYj)
+   - [Hyperclass App](https://testflight.apple.com/join/bHNZSiYj)
    - [LeadConnector App](https://testflight.apple.com/join/u00jRPj2)
 
 ---

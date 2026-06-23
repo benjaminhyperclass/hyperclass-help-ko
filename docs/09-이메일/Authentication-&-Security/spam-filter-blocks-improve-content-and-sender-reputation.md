@@ -113,7 +113,7 @@
 - Talos Intelligence(talosintelligence.com)에서 평판 상태 모니터링
 - **지속적인 모니터링 설정:** 평판 서비스의 주간 점검 생성
 - Gmail 전용 인사이트를 위한 Google Postmaster Tools 모니터링
-- GoHighLevel 캠페인 보고서에서 전달률 추적
+- Hyperclass 캠페인 보고서에서 전달률 추적
 
 ---
 

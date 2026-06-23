@@ -40,7 +40,7 @@
 |------|------|------|
 | Action Name | 액션의 이름으로, 수행할 작업을 식별합니다. 이 액션의 경우 "Create Spreadsheet Row"로 설정됩니다. | 예 |
 | Action | Google Sheets에서 수행할 특정 작업을 정의합니다. 행 생성, 셀 업데이트 등의 옵션이 있습니다. 이 액션의 경우 "Create Spreadsheet Row"입니다. | 예 |
-| Choose an Account | 원하는 Google Sheet에 액세스할 수 있는 HighLevel 플랫폼에 연결된 Google 계정입니다. | 예 |
+| Choose an Account | 원하는 Google Sheet에 액세스할 수 있는 Hyperclass 플랫폼에 연결된 Google 계정입니다. | 예 |
 | Drive | 스프레드시트가 위치한 Google Drive를 지정합니다. 개인 문서의 경우 일반적으로 "My Drive"로 설정됩니다. | 예 |
 | Spreadsheet | 데이터를 보낼 특정 Google Sheets 문서를 선택합니다. 이 필드는 선택한 계정에서 액세스 가능한 모든 스프레드시트를 나열합니다. | 예 |
 | Worksheet | 새 행이 추가될 선택한 스프레드시트 내의 특정 워크시트입니다. 워크시트는 Google Sheets 문서 내의 개별 탭입니다. | 예 |

@@ -50,7 +50,7 @@
 
 ### 1단계: 프로스펙팅 대시보드 접근
 
-- HighLevel 에이전시 계정에 로그인합니다.
+- Hyperclass 에이전시 계정에 로그인합니다.
 - 왼쪽 네비게이션에서 Prospecting 옵션을 클릭합니다.
 
 ![프로스펙팅 메뉴 접근](https://jumpshare.com/v/aLIT8F4APsdh1jBLczxc+/Screen+Shot+2025-06-23+at+8.18.34+PM.png)

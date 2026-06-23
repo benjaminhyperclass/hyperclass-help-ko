@@ -91,7 +91,7 @@ Agency Prospecting에서 잠재고객을 Closed Won으로 표시하면 Create Su
 
 ## 관련 아티클
 
-- [HighLevel 프로스펙팅 도구를 사용한 리드 생성 방법](../Core-Functionality/how-to-generate-leads-using-the-highlevel-prospecting-tool.md)
+- [Hyperclass 프로스펙팅 도구를 사용한 리드 생성 방법](../Core-Functionality/how-to-generate-leads-using-the-highlevel-prospecting-tool.md)
 - [하위 계정에서 프로스펙팅: 완전 가이드 및 장점](prospecting-at-sub-accounts-complete-guide-benefits-setup.md)
 - [프로스펙팅 도구: 잠재고객 카테고리화](prospecting-tool-categorization-for-prospects.md)
 - [프로스펙팅 도구로 생성된 잠재고객 리드에게 연락하는 방법](how-to-reach-out-to-prospect-leads-generated-via-the-prospecting-tool.md)

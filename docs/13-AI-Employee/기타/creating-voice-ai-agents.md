@@ -209,7 +209,7 @@
 
 ![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064889358/original/Qrx4asnzq9gD_mskkd1PdM43_RnU7kB_cA.png?1770997372)
 
-- 전화번호 및 운영시간을 열고 HighLevel (LC 전화 또는 Twilio) 번호를 이 에이전트에 할당하세요. 저장하세요.
+- 전화번호 및 운영시간을 열고 Hyperclass (LC 전화 또는 Twilio) 번호를 이 에이전트에 할당하세요. 저장하세요.
 
 ![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064889450/original/b0jOgOreEhegRahv2qhijy29Fk73CA_w0g.png?1770997432)
 

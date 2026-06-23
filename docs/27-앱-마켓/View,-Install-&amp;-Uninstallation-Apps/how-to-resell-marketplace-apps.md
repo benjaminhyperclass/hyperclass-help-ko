@@ -36,7 +36,7 @@
 참고: 다음 기준을 충족하는 앱만 재판매 가능합니다;
 
 - 유료 모델의 앱이어야 함
-- 앱이 Highlevel 플랫폼 내에서 결제를 수집하도록 결제 기본 설정을 지정했어야 함
+- 앱이 Hyperclass 플랫폼 내에서 결제를 수집하도록 결제 기본 설정을 지정했어야 함
 - 배포 유형이 하위 계정(Subaccount) 또는 에이전시 & 하위 계정(Agency & Subaccount)이어야 함
 
 ## 특정 고객에게 개인화된 제안
@@ -66,7 +66,7 @@
 고객이 유료 앱을 설치하면 시스템에 2개의 구독이 생성됩니다:
 
 - 고객의 카드와 당신의 Stripe 계정 사이의 구독: 고객으로부터 결제를 수집하기 위함
-- HighLevel과 당신의 Stripe 계정 사이의 구독
+- Hyperclass과 당신의 Stripe 계정 사이의 구독
 
 ![청구 구조 다이어그램](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010515411/original/R7QYH1YpXLv1hZ54M8EsvL2tZX0PGxefIQ.png?1697702985)
 

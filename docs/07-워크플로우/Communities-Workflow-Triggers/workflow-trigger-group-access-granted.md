@@ -20,7 +20,7 @@ Group Access Granted (그룹 액세스 승인)
 
 ## 설정 방법
 
-- **워크플로우 빌더로 이동**: GoHighLevel 계정에서 Workflow Builder(워크플로우 빌더)에 접속하세요.
+- **워크플로우 빌더로 이동**: Hyperclass 계정에서 Workflow Builder(워크플로우 빌더)에 접속하세요.
 - **새 워크플로우 생성**: "Create a Workflow(워크플로우 생성)"을 클릭하세요.
 - 관련 트리거 유형을 선택: "Group Access Granted(그룹 액세스 승인)"
 - **트리거 세부사항 설정**: 어떤 그룹 접근 권한이 승인되는지 지정하세요.

@@ -83,7 +83,7 @@
 
 **관련 링크:**
 
-- [HighLevel에서 중복 연락처 병합하기](../../02-연락처/스마트-리스트/how-to-merge-duplicate-contacts-in-highlevel.md)
+- [Hyperclass에서 중복 연락처 병합하기](../../02-연락처/스마트-리스트/how-to-merge-duplicate-contacts-in-highlevel.md)
 - [제휴 파트너 하에 고객 관리](managing-customers-under-affiliates.md)
 - [연락처 중복 제거 환경 설정](../../11-설정/Business-Profile-Settings/allow-duplicate-contacts-contact-deduplication-preferences-.md)
 

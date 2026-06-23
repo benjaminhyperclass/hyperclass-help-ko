@@ -58,7 +58,7 @@ https://marketplace.gohighlevel.com/oauth/chooselocation?…
 
 https://marketplace.leadconnectorhq.com/oauth/chooselocation
 
-사용자는 설치가 HighLevel의 메인 도메인에서 일어나든 화이트라벨 버전에서 일어나든 동일한 명확한 권한 분석과 보안 경고를 받게 됩니다.
+사용자는 설치가 Hyperclass의 메인 도메인에서 일어나든 화이트라벨 버전에서 일어나든 동일한 명확한 권한 분석과 보안 경고를 받게 됩니다.
 
 ---
 

@@ -6,7 +6,7 @@
 
 # Zapier를 통한 태그 및 할 일 생성
 
-Zapier 연동을 통해 태그(Tags)와 할 일(Tasks)을 자동으로 생성할 수 있습니다. 외부 앱에서 발생한 이벤트에 따라 GoHighLevel의 연락처에 자동으로 태그를 추가하거나 할 일을 생성하여 워크플로우를 효율화할 수 있습니다.
+Zapier 연동을 통해 태그(Tags)와 할 일(Tasks)을 자동으로 생성할 수 있습니다. 외부 앱에서 발생한 이벤트에 따라 Hyperclass의 연락처에 자동으로 태그를 추가하거나 할 일을 생성하여 워크플로우를 효율화할 수 있습니다.
 
 ## 태그 생성하기
 
@@ -14,7 +14,7 @@ Zapier를 통해 연락처에 태그를 자동으로 추가하려면:
 
 1. Zapier에서 새 Zap을 생성합니다
 2. 트리거 앱과 이벤트를 설정합니다
-3. GoHighLevel을 액션 앱으로 선택합니다
+3. Hyperclass을 액션 앱으로 선택합니다
 4. "Add Tag to Contact" 액션을 선택합니다
 5. 필요한 필드를 매핑합니다:
    - Contact ID 또는 Email
@@ -24,7 +24,7 @@ Zapier를 통해 연락처에 태그를 자동으로 추가하려면:
 
 Zapier를 통해 할 일을 자동으로 생성하려면:
 
-1. GoHighLevel 액션에서 "Create Task" 액션을 선택합니다
+1. Hyperclass 액션에서 "Create Task" 액션을 선택합니다
 2. 다음 필드들을 설정합니다:
    - Contact ID (필수)
    - Task Title

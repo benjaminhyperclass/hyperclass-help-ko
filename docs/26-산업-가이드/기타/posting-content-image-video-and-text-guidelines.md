@@ -41,7 +41,7 @@
 | TikTok 비즈니스 | 지원 안 함 | | | |
 | Google 비즈니스 프로필 | JPEG, PNG | 5 MB | 최소 250px X 250px<br/>최대 3000px X 3000px | 1 |
 | Pinterest | JPEG, PNG, BMP, TIFF, WEBP | 10 MB | - | 1 |
-| HighLevel 커뮤니티 | JPG, PNG, SVG, GIF | 10 MB | - | 10 (이미지 또는 동영상) |
+| Hyperclass 커뮤니티 | JPG, PNG, SVG, GIF | 10 MB | - | 10 (이미지 또는 동영상) |
 | Threads 게시물 | JPEG, PNG | 8 MB | 0.01:1부터 10:1까지 | 최대 20개 이미지 |
 | Threads 동영상 | MP4, MOV | 1 GB | 0.01:1부터 10:1까지 | 최대 5분 |
 | Bluesky 게시물 | JPEG, PNG | 1 MB | 표준 웹 해상도 | - |
@@ -67,7 +67,7 @@
 | TikTok 비즈니스 | MOV, MP4, WebM | • 최대 1 GB<br/>• 최소 3초, 최대 600초<br/>• 최소 가로x세로 360 px<br/>• FPS 23–60 | • 최소 3초<br/>• 최대 600초 | 1 | 아니요 | - | - |
 | Google 비즈니스 프로필 | 지원 안 함 | | | | | | |
 | Pinterest | MP4 또는 M4V | 동영상 크기: 최대 2 GB (라이브러리 제한 1 GB)<br/>H.264/H.265<br/>최소 4초, 최대 5분<br/>종횡비: 9:16, 1:2, 2:3, 3:4, 4:5, 1:1 | • 최소 4초<br/>• 최대 5분 | 1 | 예 | JPEG, PNG | 10 MB |
-| HighLevel 커뮤니티 | MP4 | 1 GB | 최소 4초 | 10 (이미지 포함) | 아니요 | - | - |
+| Hyperclass 커뮤니티 | MP4 | 1 GB | 최소 4초 | 10 (이미지 포함) | 아니요 | - | - |
 | Threads 동영상 | MP4, MOV | 1GB | 최대 5분 | 20개 동영상 (이미지와 혼합 가능) | 아니요 | - | - |
 | Bluesky 동영상 | MP4, MOV | 50MB | 최대 3분 | 1개 동영상 (이미지와 혼합 불가) | 아니요 | - | - |
 
@@ -92,7 +92,7 @@
 | Google 비즈니스 프로필 | 1,500자 |
 | Pinterest (제목) | 100자 |
 | Pinterest (게시물) | 500자 |
-| HighLevel 커뮤니티 | 100,000자 |
+| Hyperclass 커뮤니티 | 100,000자 |
 | Threads 게시물 | 500자 |
 | Bluesky 게시물 | 300자 |
 
@@ -132,7 +132,7 @@
 | TikTok 비즈니스 | 아니요 | 예 | 아니요 |
 | Google 비즈니스 프로필 | 예 | 아니요 | 아니요 |
 | Pinterest | 아니요 | 예 | 아니요 |
-| HighLevel 커뮤니티 | 아니요 | 예 | 예 |
+| Hyperclass 커뮤니티 | 아니요 | 예 | 예 |
 
 **OG 메타 태그는 Instagram, TikTok, YouTube를 제외한 모든 플랫폼에서 사용 가능합니다.**
 

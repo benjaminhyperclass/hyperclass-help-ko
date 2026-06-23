@@ -17,7 +17,7 @@
 
 # 하이퍼클래스에 로그인하여 어필리에이트 대시보드 보기
 
-참고: 활성 상태인 하이퍼클래스 에이전시 계정이 없다면, First Promoter 사이트에 직접 로그인하세요: [gohighlevel.firstpromoter.com/login](http://gohighlevel.firstpromoter.com/login)
+참고: 활성 상태인 하이퍼클래스 에이전시 계정이 없다면, First Promoter 사이트에 직접 로그인하세요: [Hyperclass.firstpromoter.com/login](http://gohighlevel.firstpromoter.com/login)
 
 ## 1. Affiliate Portal(어필리에이트 포털) 클릭
 

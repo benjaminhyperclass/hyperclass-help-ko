@@ -9,7 +9,7 @@
 목차
 
 - [일반 질문](#일반-질문)
-  - [Q: GoHighLevel에서 기회를 내보내려면 어떻게 하나요?](#q-gohighlevel에서-기회를-내보내려면-어떻게-하나요)
+  - [Q: Hyperclass에서 기회를 내보내려면 어떻게 하나요?](#q-hyperclass에서-기회를-내보내려면-어떻게-하나요)
   - [Q: 특정 기회를 팀과 공유하려면 어떻게 하나요?](#q-특정-기회를-팀과-공유하려면-어떻게-하나요)
   - [Q: 기회의 모든 활동을 추적하고 기회 ID를 찾으려면 어떻게 하나요?](#q-기회의-모든-활동을-추적하고-기회-id를-찾으려면-어떻게-하나요)
   - [Q: 한 기회에 여러 연락처 기능은 현재 어떻게 작동하나요?](#q-한-기회에-여러-연락처-기능은-현재-어떻게-작동하나요)
@@ -21,7 +21,7 @@
 
 # 일반 질문
 
-### Q: GoHighLevel에서 기회를 내보내려면 어떻게 하나요?
+### Q: Hyperclass에서 기회를 내보내려면 어떻게 하나요?
 
 ![기회 내보내기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049332407/original/F-Gf__4alVkhG-RNMAuJVbasTgnRiMqaOw.png?1751612397)
 

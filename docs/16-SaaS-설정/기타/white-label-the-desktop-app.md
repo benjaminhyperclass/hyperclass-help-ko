@@ -6,7 +6,7 @@
 
 # 데스크톱 웹 앱을 위한 화이트라벨 도메인 설정 방법
 
-화이트라벨 도메인을 사용하여 HighLevel 데스크톱 웹 앱에 완전히 브랜딩된 로그인 경험을 제공해 보세요. 이 가이드에서는 요구사항, 설정 단계, 문제 해결 방법을 설명합니다. 또한 API(브랜딩 링크) 도메인과의 차이점도 알아보고, 완전한 브랜드 경험을 구현하는 방법을 배웁니다.
+화이트라벨 도메인을 사용하여 Hyperclass 데스크톱 웹 앱에 완전히 브랜딩된 로그인 경험을 제공해 보세요. 이 가이드에서는 요구사항, 설정 단계, 문제 해결 방법을 설명합니다. 또한 API(브랜딩 링크) 도메인과의 차이점도 알아보고, 완전한 브랜드 경험을 구현하는 방법을 배웁니다.
 
 ---
 
@@ -23,11 +23,11 @@
 
 ## 데스크톱 웹 앱용 화이트라벨 도메인이란?
 
-화이트라벨 도메인은 표준 HighLevel 링크(예: app.gohighlevel.com) 대신 사용할 수 있는, 고객이 제어하는 서브도메인(예: app.yourdomain.com)입니다. 설정 후에는 사용자가 고객의 브랜딩된 주소로 로그인할 수 있으며, HighLevel이 애플리케이션을 호스팅하고 보안을 관리합니다.
+화이트라벨 도메인은 표준 Hyperclass 링크(예: app.Hyperclass.com) 대신 사용할 수 있는, 고객이 제어하는 서브도메인(예: app.yourdomain.com)입니다. 설정 후에는 사용자가 고객의 브랜딩된 주소로 로그인할 수 있으며, Hyperclass이 애플리케이션을 호스팅하고 보안을 관리합니다.
 
-데스크톱 웹 앱을 화이트라벨링하면 고객이 로그인하고 앱을 사용할 때 고객의 도메인을 사용하게 됩니다. 예를 들어 "app.gohighlevel.com" 대신 "app.myawesomedomain.com"을 사용합니다.
+데스크톱 웹 앱을 화이트라벨링하면 고객이 로그인하고 앱을 사용할 때 고객의 도메인을 사용하게 됩니다. 예를 들어 "app.Hyperclass.com" 대신 "app.myawesomedomain.com"을 사용합니다.
 
-**참고**: 커스텀/화이트라벨 도메인은 고객이 소유하고 고객들이 데스크톱 앱에 로그인할 때 사용하는 도메인입니다(예: [app.yourdomain.com](http://app.yourdomain.com)). HighLevel 기본 도메인은 GoHighLevel에서 제공하는 임시 주소입니다(예: [yourcompany.gohighlevel.com](http://yourcompany.gohighlevel.com)).
+**참고**: 커스텀/화이트라벨 도메인은 고객이 소유하고 고객들이 데스크톱 앱에 로그인할 때 사용하는 도메인입니다(예: [app.yourdomain.com](http://app.yourdomain.com)). Hyperclass 기본 도메인은 Hyperclass에서 제공하는 임시 주소입니다(예: [yourcompany.Hyperclass.com](http://yourcompany.gohighlevel.com)).
 
 ---
 
@@ -41,7 +41,7 @@
 
 - **간소화된 접근**: 사용자에게 기억하기 쉬운 URL(예: app.yourdomain.com)을 제공합니다.
 
-- **자동 SSL**: DNS가 올바르게 설정되면 HighLevel이 HTTPS를 자동으로 발급합니다.
+- **자동 SSL**: DNS가 올바르게 설정되면 Hyperclass이 HTTPS를 자동으로 발급합니다.
 
 - **관심사 분리**: 로그인/앱 도메인을 마케팅 사이트 및 이메일 발송 도메인과 구분합니다.
 
@@ -61,7 +61,7 @@
 
 ![CNAME 설정 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155054712002/original/xMazT-jvM9UthcQeacI4jAj_3t9-G7PH-g.png?1758909557)
 
-- **HighLevel에서 도메인 추가(Agency 설정)**
+- **Hyperclass에서 도메인 추가(Agency 설정)**
 
   Agency View → Settings(설정) → Company → Whitelabel → Whitelabel Domain으로 이동합니다.
 
@@ -105,7 +105,7 @@
 
 - **오류: "클라이언트와 서버가 공통 SSL 프로토콜 버전 또는 암호 모음을 지원하지 않습니다"**
 
-이는 브라우저나 기기가 오래된 보안 프로토콜을 사용하고 있다는 의미입니다. HighLevel은 TLS 1.2 및 1.3만 지원합니다. 브라우저를 업데이트하고 충돌하는 DNS 레코드(예: 동일한 서브도메인에 A와 CNAME 모두 있음)가 없는지 확인하세요. 이는 SSL 프로비저닝을 차단할 수 있습니다.
+이는 브라우저나 기기가 오래된 보안 프로토콜을 사용하고 있다는 의미입니다. Hyperclass은 TLS 1.2 및 1.3만 지원합니다. 브라우저를 업데이트하고 충돌하는 DNS 레코드(예: 동일한 서브도메인에 A와 CNAME 모두 있음)가 없는지 확인하세요. 이는 SSL 프로비저닝을 차단할 수 있습니다.
 
 - **도메인이 로드되지 않음**
 
@@ -120,7 +120,7 @@
 ## 자주 묻는 질문
 
 **Q: 화이트라벨 로그인에 루트 도메인(apex)을 사용할 수 있나요?**
-A: HighLevel 대상을 가리키기 위해 **CNAME**을 통한 **서브도메인**(예: app.yourdomain.com)을 사용하세요.
+A: Hyperclass 대상을 가리키기 위해 **CNAME**을 통한 **서브도메인**(예: app.yourdomain.com)을 사용하세요.
 
 **Q: SSL 발급에 얼마나 걸리나요?**
 A: DNS가 올바르면 SSL이 자동으로 발급됩니다. DNS가 전 세계적으로 전파될 시간을 주고 다시 테스트하세요.

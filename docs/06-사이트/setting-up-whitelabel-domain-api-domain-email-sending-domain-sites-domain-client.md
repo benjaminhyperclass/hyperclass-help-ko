@@ -189,10 +189,10 @@ WordPress 도메인 설정에 대한 자세한 정보는 [WordPress 클라이언
 
 | 예시 | 설명 |
 |------|------|
-| **도메인** | www.gohighlevel.com | 웹사이트, 이메일 호스팅 등 온라인 서비스의 디지털 주소 |
-| **루트 도메인** | gohighlevel.com | URL에서 "www." 뒤에 나타나는 웹사이트의 주요 주소 (예: "www.gohighlevel.com"에서 루트 도메인은 "gohighlevel.com"). 웹사이트의 주요 진입점 역할 |
-| **서브 도메인** | help.gohighlevel.com | 루트 도메인의 확장으로, 사용자를 온라인 인프라 내의 특정 섹션이나 영역으로 안내 (예: 지원을 위한 "help.domain.com") |
-| **Hostname** | ![호스트명 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155027095813/original/_yK4XozIWht9RuVCgkZPZLj2RS-PgXlVxA.png?1717515282) | 레코드에서 사용되는 이름/값으로, 일반적으로 사용되는 서브 도메인. "help.gohighlevel.com"과 같은 서브 도메인이 "www.highlevel.com"과 독립적으로 작동할 수 있게 함 |
+| **도메인** | www.Hyperclass.com | 웹사이트, 이메일 호스팅 등 온라인 서비스의 디지털 주소 |
+| **루트 도메인** | Hyperclass.com | URL에서 "www." 뒤에 나타나는 웹사이트의 주요 주소 (예: "www.Hyperclass.com"에서 루트 도메인은 "Hyperclass.com"). 웹사이트의 주요 진입점 역할 |
+| **서브 도메인** | help.Hyperclass.com | 루트 도메인의 확장으로, 사용자를 온라인 인프라 내의 특정 섹션이나 영역으로 안내 (예: 지원을 위한 "help.domain.com") |
+| **Hostname** | ![호스트명 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155027095813/original/_yK4XozIWht9RuVCgkZPZLj2RS-PgXlVxA.png?1717515282) | 레코드에서 사용되는 이름/값으로, 일반적으로 사용되는 서브 도메인. "help.Hyperclass.com"과 같은 서브 도메인이 "www.Hyperclass.com"과 독립적으로 작동할 수 있게 함 |
 | **Data/Target/Value** | ![데이터 값 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155027095812/original/vLgs8iDxu5UEvVPjhHmwDc0COPb0G20twQ.png?1717515282) | URL이 의도된 웹사이트 데이터를 표시하도록 하는 값 |
 | **Nameservers** | GoDaddy, Cloudflare, Google 등 | DNS 레코드를 구성하고 제어하는 디렉토리. 인터넷에 어떤 도메인 제공업체(예: Godaddy, Cloudflare 등)가 도메인을 제어하고 있는지 알려줌 |
 | **DNS (Dedicated Name Servers)** | ![DNS 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155027095815/original/OK0coxwyfKCwvT4GTuhBhFWJm35KSh-OuA.png?1717515282) | 특정 URL을 방문할 때 웹사이트를 표시하도록 인터넷에 알려주고, 이메일 제공업체가 도메인 이름에서 이메일을 보낼 수 있게 하는 레코드 |

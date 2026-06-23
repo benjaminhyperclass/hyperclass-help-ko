@@ -17,7 +17,7 @@
 
 ## **Hyperclass 어필리에이트 프로그램이란?**
 
-Hyperclass 어필리에이트 프로그램(HighLevel Affiliate Program)은 여러분의 오디언스에게 Hyperclass를 소개하고, 추천받은 분이 유료 고객이 되면 수수료를 받을 수 있는 제도입니다. Hyperclass를 처음 접하는 분이든 열정적인 베테랑 사용자든, Hyperclass 어필리에이트 프로그램은 Hyperclass에 소개하는 모든 분으로부터 40%의 월 정기 수수료를 받을 수 있는 훌륭한 방법입니다!
+Hyperclass 어필리에이트 프로그램(Hyperclass Affiliate Program)은 여러분의 오디언스에게 Hyperclass를 소개하고, 추천받은 분이 유료 고객이 되면 수수료를 받을 수 있는 제도입니다. Hyperclass를 처음 접하는 분이든 열정적인 베테랑 사용자든, Hyperclass 어필리에이트 프로그램은 Hyperclass에 소개하는 모든 분으로부터 40%의 월 정기 수수료를 받을 수 있는 훌륭한 방법입니다!
 
 아직 어필리에이트에 가입하지 않으셨다면, [여기 링크](https://www.gohighlevel.com/joinaffiliate)를 클릭하세요.
 

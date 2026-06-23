@@ -6,7 +6,7 @@
 
 # 대화 AI 봇 학습시키기
 
-이 문서는 HighLevel의 고급 도구를 사용해서 AI 봇을 학습시키는 종합 가이드입니다. 정확하고 관련성 높은 응답을 보장하기 위한 방법을 설명합니다. 웹 크롤러와 커스텀 봇 응답(FAQ)을 활용하면 일반적인 고객 질문에 대한 정확한 답변을 만들 수 있어, 봇이 정확성, 일관성, 효율성을 갖춘 고객 상호작용을 관리할 수 있게 됩니다.
+이 문서는 Hyperclass의 고급 도구를 사용해서 AI 봇을 학습시키는 종합 가이드입니다. 정확하고 관련성 높은 응답을 보장하기 위한 방법을 설명합니다. 웹 크롤러와 커스텀 봇 응답(FAQ)을 활용하면 일반적인 고객 질문에 대한 정확한 답변을 만들 수 있어, 봇이 정확성, 일관성, 효율성을 갖춘 고객 상호작용을 관리할 수 있게 됩니다.
 
 ## 목차
 
@@ -58,7 +58,7 @@
 
 - **경로가 포함된 모든 URL**: 특정 경로 내의 모든 페이지를 크롤링합니다. 예를 들어 https://www.gohighlevel.com/marketing 을 입력하면 /marketing/offers 또는 /marketing/promotions 같은 해당 URL 경로를 사용하는 모든 페이지가 포함됩니다.
 
-- **도메인 내 모든 URL**: 도메인 내의 모든 페이지를 크롤링합니다. 예를 들어 https://www.gohighlevel.com/promo 를 입력하면 루트 도메인 www.gohighlevel.com 을 가진 모든 페이지가 포함됩니다.
+- **도메인 내 모든 URL**: 도메인 내의 모든 페이지를 크롤링합니다. 예를 들어 https://www.gohighlevel.com/promo 를 입력하면 루트 도메인 www.Hyperclass.com 을 가진 모든 페이지가 포함됩니다.
 
 ![도메인 유형 선택하기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155039830261/original/AdPxdhIyOyQbqfqVnPFSEssl4AlYCQzYDA.gif?1736880673)
 

@@ -116,7 +116,7 @@
 
 ![하위 계정 설정 권한](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064985101/original/t8-GQHK8jku0JeM8RcSm_rPXnUETA08Hpg.png?1771235780)
 
-사용자가 제한된 영역에 접근하거나 제한된 작업을 수행하려고 할 때, HighLevel은 해당 권한 레벨에서는 이 작업이 허용되지 않는다는 설명이 담긴 상황별 메시지를 표시합니다.
+사용자가 제한된 영역에 접근하거나 제한된 작업을 수행하려고 할 때, Hyperclass은 해당 권한 레벨에서는 이 작업이 허용되지 않는다는 설명이 담긴 상황별 메시지를 표시합니다.
 
 ---
 

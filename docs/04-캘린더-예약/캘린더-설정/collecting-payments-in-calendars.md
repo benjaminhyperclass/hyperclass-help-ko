@@ -56,7 +56,7 @@
 Square 연결은 다음 단계를 따라 하세요:
 
 - Square 계정에 로그인하세요 - [https://app.squareup.com/login](https://app.squareup.com/login) 그리고 Square 사용자로 로그인 상태를 유지하세요.
-- 그다음 GHL의 결제(Payments) 모듈 > 연동(Integrations)으로 이동하여 Square 라이브 모드(Square Live Mode)의 연결(Connect) 버튼을 클릭하세요. 자동으로 로그인된 계정을 선택하여 GHL에 연결됩니다!
+- 그다음 Hyperclass의 결제(Payments) 모듈 > 연동(Integrations)으로 이동하여 Square 라이브 모드(Square Live Mode)의 연결(Connect) 버튼을 클릭하세요. 자동으로 로그인된 계정을 선택하여 Hyperclass에 연결됩니다!
 
 **Razorpay** - [도움말 문서](../../08-결제/결제-연동/how-to-integrate-razorpay-within-the-crm.md)
 
