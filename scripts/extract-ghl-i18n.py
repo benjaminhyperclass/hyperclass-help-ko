@@ -30,9 +30,10 @@ _repo_data = REPO / "data"
 if _repo_data.exists():
     DATA = _repo_data
 
-GHL_URL   = os.environ.get("GHL_URL", "https://app.gohighlevel.com")
-GHL_EMAIL = os.environ.get("GHL_EMAIL", "")
-GHL_PASS  = os.environ.get("GHL_PASSWORD", "")
+GHL_URL    = os.environ.get("GHL_URL", "https://app.gohighlevel.com")
+GHL_EMAIL  = os.environ.get("GHL_EMAIL", "")
+GHL_PASS   = os.environ.get("GHL_PASSWORD", "")
+GHL_LOC_ID = os.environ.get("GHL_LOC_ID", "")  # 로그인 후 특정 서브계정으로 이동
 
 OUTPUT    = DATA / "ghl-i18n-en.json"
 BACKUP    = DATA / "ghl-i18n-en.bak.json"
@@ -123,18 +124,31 @@ def extract_with_playwright(dry_run: bool):
         print("  대시보드 로드 대기 중...")
         try:
             page.wait_for_selector("#app", timeout=30000)
-            # Vue 앱이 완전히 초기화될 때까지 추가 대기
             page.wait_for_function(
                 "document.querySelector('#app') && document.querySelector('#app').__vue_app__",
                 timeout=30000
             )
         except PWTimeout:
             print("❌ Vue 앱 초기화 타임아웃. 로그인 실패 또는 2FA 필요.")
-            # 현재 URL 및 페이지 제목 출력 (디버그)
             print(f"   현재 URL: {page.url}")
             print(f"   페이지 제목: {page.title()}")
             browser.close()
             sys.exit(1)
+
+        # ── Location으로 이동 (GHL_LOC_ID 있을 경우) ────────────────
+        if GHL_LOC_ID:
+            loc_url = f"https://app.gohighlevel.com/location/{GHL_LOC_ID}/dashboard"
+            print(f"  Location으로 이동 중... ({GHL_LOC_ID})")
+            try:
+                page.goto(loc_url, timeout=30000)
+                page.wait_for_load_state("networkidle", timeout=30000)
+                page.wait_for_function(
+                    "document.querySelector('#app') && document.querySelector('#app').__vue_app__",
+                    timeout=30000
+                )
+                print("  Location 로드 완료")
+            except PWTimeout:
+                print("⚠️  Location 이동 타임아웃 — 현재 페이지에서 추출 진행")
 
         # ── i18n 추출 ────────────────────────────────────────────────
         print("📦 i18n 키 추출 중...")

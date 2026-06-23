@@ -60,6 +60,7 @@ jobs:
         env:
           GHL_EMAIL:    ${{ secrets.GHL_EMAIL }}
           GHL_PASSWORD: ${{ secrets.GHL_PASSWORD }}
+          GHL_LOC_ID:   ${{ secrets.GHL_LOC_ID }}
           GHL_URL:      ${{ vars.GHL_DASHBOARD_URL || 'https://app.gohighlevel.com' }}
           REPO_PATH:    ${{ github.workspace }}
           VAULT_PATH:   ${{ github.workspace }}
