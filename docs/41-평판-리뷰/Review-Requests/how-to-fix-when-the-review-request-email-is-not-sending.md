@@ -17,7 +17,7 @@
 # 관련 아티클
 
 이메일이 발송되지 않을 때 SMTP 사용의 제한 사항:
-[https://gohighlevelassist.freshdesk.com/support/solutions/articles/48001203144-limitation-of-using-smtp-when-emails-are-not-sending](https://gohighlevelassist.freshdesk.com/support/solutions/articles/48001203144-limitation-of-using-smtp-when-emails-are-not-sending)
+[https://hyperclass.gitbook.io/hyperclass-docs](https://hyperclass.gitbook.io/hyperclass-docs)
 
 리뷰, 리뷰 요청, Hyperclass 리뷰 위젯 가이드:
 [[[reviews-review-requests-and-the-Hyperclass-review-widget](../기타/reviews-review-requests-and-the-highlevel-review-widget.md)]]

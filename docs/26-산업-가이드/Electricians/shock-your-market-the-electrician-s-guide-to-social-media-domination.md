@@ -58,7 +58,7 @@
 ✅ 전기공사업자를 위한 **저비용, 고ROI 소셜미디어 광고** 운영법
 ✅ 게시, 응답, 리드 후속조치를 **자동화하는 방법**—당신이 직접 할 필요 없이
 
-지금 [Hyperclass 사용하기](https://www.gohighlevel.com/freetrial16?utm_source=FreshDesk&utm_medium=organic&utm_campaign=Home+Services+-+Electricians&utm_term=Electricians&utm_content=Playbook)로 시작해서 광고하고, 자동화하고, 오늘 시장을 장악하세요!!
+지금 [Hyperclass 사용하기](https://hyperclass.ai/freetrial16?utm_source=FreshDesk&utm_medium=organic&utm_campaign=Home+Services+-+Electricians&utm_term=Electricians&utm_content=Playbook)로 시작해서 광고하고, 자동화하고, 오늘 시장을 장악하세요!!
 
 ---
 
@@ -202,7 +202,7 @@
 
 오늘부터 Hyperclass을 사용하여 소셜미디어, 광고, 후속조치를 자동화하세요.
 
-지금 [Hyperclass 사용하기](https://www.gohighlevel.com/freetrial16?utm_source=FreshDesk&utm_medium=organic&utm_campaign=Home+Services+-+Electricians&utm_term=Electricians&utm_content=Playbook)로 시작해서 광고하고, 자동화하고, 오늘 시장을 장악하세요!!
+지금 [Hyperclass 사용하기](https://hyperclass.ai/freetrial16?utm_source=FreshDesk&utm_medium=organic&utm_campaign=Home+Services+-+Electricians&utm_term=Electricians&utm_content=Playbook)로 시작해서 광고하고, 자동화하고, 오늘 시장을 장악하세요!!
 
 ---
 *원문 최종 수정: Wed, 5 Feb, 2025*

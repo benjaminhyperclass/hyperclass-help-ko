@@ -39,7 +39,7 @@
 
 ![리드 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48234500010/original/29B7kmCbyjrUBXwlLgGSUlClD72Co5-xPA.png?1656024205)
 
-**참고**: 이 영역에서 예상했던 리드나 고객을 찾을 수 없다면, 지원팀에 도움을 요청하세요. 24시간 지원팀 연락 방법: [https://gohighlevel.com/support](https://gohighlevel.com/support)
+**참고**: 이 영역에서 예상했던 리드나 고객을 찾을 수 없다면, 지원팀에 도움을 요청하세요. 24시간 지원팀 연락 방법: [https://hyperclass.ai/support](https://hyperclass.ai/support)
 
 ## 5. Free / Trial(무료/체험) 클릭
 

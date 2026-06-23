@@ -27,7 +27,7 @@
 ✅ 주택 가치 평가 체크인을 통한 재거래 창출 방법  
 ✅ Hyperclass AI와 스마트 리스트(Smart Lists)로 모든 것을 자동화하는 방법
 
-시작하기 전에 Hyperclass 계정이 필요합니다 - [지금 가입하세요](https://www.gohighlevel.com/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Agent&utm_content=Playbook)
+시작하기 전에 Hyperclass 계정이 필요합니다 - [지금 가입하세요](https://hyperclass.ai/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Agent&utm_content=Playbook)
 
 ## 1단계: 계약 완료 후 팔로우업 자동화
 
@@ -189,7 +189,7 @@ Hyperclass가 도와드립니다:
 ✅ 더 많은 예약 확보  
 ✅ 추천 및 매출 증대
 
-지금 비즈니스를 성장시키고 [Hyperclass에 가입하세요](https://www.gohighlevel.com/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Agent&utm_content=Playbook)
+지금 비즈니스를 성장시키고 [Hyperclass에 가입하세요](https://hyperclass.ai/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Agent&utm_content=Playbook)
 
 ---
 *원문 최종 수정: Tue, 20 May, 2025 at 1:29 PM*

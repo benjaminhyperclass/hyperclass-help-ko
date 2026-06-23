@@ -10,11 +10,11 @@
 
 이 영상에서 언급된 다른 영상들:
 
-[2단계 주문 폼 (1단계)](https://gohighlevelassist.freshdesk.com/support/solutions/articles/48000980307-two-step-order-form-step-1-)
+[2단계 주문 폼 (1단계)](https://hyperclass.gitbook.io/hyperclass-docs)
 
-[2단계 주문 폼 (2단계: 업셀 추가하기)](https://gohighlevelassist.freshdesk.com/support/solutions/articles/48000980306-two-step-order-form-step-2-adding-an-up-sell-product-)
+[2단계 주문 폼 (2단계: 업셀 추가하기)](https://hyperclass.gitbook.io/hyperclass-docs)
 
-[2단계 주문 폼 (3단계: 팝업 및 스케줄링 설정)](https://gohighlevelassist.freshdesk.com/support/solutions/articles/48000985178-two-step-order-form-step-3-the-pop-up-scheduling-)
+[2단계 주문 폼 (3단계: 팝업 및 스케줄링 설정)](https://hyperclass.gitbook.io/hyperclass-docs)
 
 ---
 *원문 최종 수정: Mon, 27 Jan, 2020 at 10:14 AM*

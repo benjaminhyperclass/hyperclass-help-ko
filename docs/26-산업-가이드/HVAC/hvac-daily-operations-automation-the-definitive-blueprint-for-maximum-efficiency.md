@@ -33,7 +33,7 @@
 
 #### 이런 문제들로 고생하고 있다면 **혼자가 아닙니다.** 대부분의 HVAC 사업체가 **모든 것을 수동으로 관리하느라 시간과 돈을 낭비**하고 있지만, 더 나은 방법이 있습니다.
 
-**올인원 솔루션으로 HVAC 사업을 손쉽게 관리하세요** - **[지금 Hyperclass 무료 체험하기](https://www.gohighlevel.com/freetrial16?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook)**
+**올인원 솔루션으로 HVAC 사업을 손쉽게 관리하세요** - **[지금 Hyperclass 무료 체험하기](https://hyperclass.ai/freetrial16?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook)**
 
 ---
 
@@ -221,7 +221,7 @@
 ✅ **더 나은 데이터 인사이트 = 더 스마트한 비즈니스 결정**
 
 ### **당신의 시간은 소중합니다—나머지는 Hyperclass이 처리하게 하세요.**
-지금 HVAC 사업 자동화를 시작하세요! - [지금 가입하기](https://www.gohighlevel.com/freetrial16?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook)
+지금 HVAC 사업 자동화를 시작하세요! - [지금 가입하기](https://hyperclass.ai/freetrial16?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook)
 
 ---
 *원문 최종 수정: Tue, 11 Feb, 2025 at 5:41 AM*

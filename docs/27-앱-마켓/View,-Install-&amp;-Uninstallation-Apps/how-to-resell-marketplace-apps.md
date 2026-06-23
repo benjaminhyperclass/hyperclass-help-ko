@@ -21,7 +21,7 @@
 
 ### 에이전시 Stripe 계정 연결
 
-에이전시 Stripe 계정은 고객으로부터 마켓플레이스 앱에 대한 구독 결제를 수집하는 데 사용됩니다. 다음 도움말을 참고하여 에이전시 Stripe 계정을 연결하세요 - https://help.gohighlevel.com/support/solutions/articles/48001171910-how-to-connect-stripe-to-your-agency-dashboard
+에이전시 Stripe 계정은 고객으로부터 마켓플레이스 앱에 대한 구독 결제를 수집하는 데 사용됩니다. 다음 도움말을 참고하여 에이전시 Stripe 계정을 연결하세요 - https://hyperclass.gitbook.io/hyperclass-docs
 
 ## 앱 가격 설정
 

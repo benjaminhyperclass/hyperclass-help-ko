@@ -132,7 +132,7 @@ SNS에서 리뷰 공유하기 가이드
 
 ---
 
-**이 모든 걸 완벽하게 설정하는 데 도움이 필요하신가요? [무료 체험 시작하기](https://www.gohighlevel.com/?utm_source=seo&utm_medium=organic&utm_campaign=medspa&utm_term=medspa&utm_content=playbook). 여러분의 메디컬 스파를 지역 최고 평점 업체로 만들어보세요.**
+**이 모든 걸 완벽하게 설정하는 데 도움이 필요하신가요? [무료 체험 시작하기](https://hyperclass.ai/?utm_source=seo&utm_medium=organic&utm_campaign=medspa&utm_term=medspa&utm_content=playbook). 여러분의 메디컬 스파를 지역 최고 평점 업체로 만들어보세요.**
 
 ---
 *원문 최종 수정: Fri, 25 Apr, 2025 at 3:12 AM*

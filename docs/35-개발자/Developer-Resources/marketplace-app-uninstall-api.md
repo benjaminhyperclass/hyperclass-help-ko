@@ -59,7 +59,7 @@
 
 2. **휴면 계정 식별**: 앱의 분석 도구나 데이터베이스를 활용하여 제거가 필요한 비활성 사용자 계정을 찾아내세요.
 
-3. **API 엔드포인트 호출**: [Public API 문서](https://marketplace.gohighlevel.com/docs/ghl/marketplace/uninstall-application)에 설명된 전용 앱 제거 API 엔드포인트를 사용하여 제거 프로세스를 시작하세요.
+3. **API 엔드포인트 호출**: [Public API 문서](https://marketplace.hyperclass.ai/docs/ghl/marketplace/uninstall-application)에 설명된 전용 앱 제거 API 엔드포인트를 사용하여 제거 프로세스를 시작하세요.
 
 ![앱 제거 API 문서 스크린샷](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055533358/original/YHVXP1etZ8BJdZMFB_6OxgDQR1xSstvPMg.png?1759933243)
 
@@ -83,7 +83,7 @@
 
 **Q: 앱 제거 API에 대한 문서는 어디서 찾을 수 있나요?**
 
-상세한 지침과 엔드포인트 정보는 [애플리케이션 제거](https://marketplace.gohighlevel.com/docs/ghl/marketplace/uninstall-application/index.html)의 Public API 문서에서 확인할 수 있습니다.
+상세한 지침과 엔드포인트 정보는 [애플리케이션 제거](https://marketplace.hyperclass.ai/docs/ghl/marketplace/uninstall-application/index.html)의 Public API 문서에서 확인할 수 있습니다.
 
 **Q: API를 자동화된 워크플로우에 통합할 수 있나요?**
 

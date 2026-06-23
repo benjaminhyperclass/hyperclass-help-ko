@@ -13,7 +13,7 @@ Post를 선택하세요
 ![Zapier에서 웹훅 커스텀 요청 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48069683091/original/JTw7jqk3Y9e2Ngofa-JyVSXXNJ47SgEbKg.png?1605054675)
 
 API 엔드포인트:
-[https://api.gohighlevel.com/zapier/contact/add_update](https://api.gohighlevel.com/zapier/contact/add_update)
+[https://api.hyperclass.ai/zapier/contact/add_update](https://api.hyperclass.ai/zapier/contact/add_update)
 
 ![API 엔드포인트 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48069683093/original/1p6htLF_7L_Oc1qLo16DVu18cnZcDGVChA.png?1605054675)
 

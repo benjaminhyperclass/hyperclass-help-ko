@@ -54,11 +54,11 @@
 
 봇을 학습시킬 때 크롤링할 수 있는 여러 도메인 유형이 있습니다. 선택하는 도메인 유형에 따라 봇 학습을 위해 크롤링될 URL 수가 결정됩니다.
 
-- **정확한 URL**: 특정 웹페이지를 크롤링해서 해당 데이터를 학습에 사용합니다. 예를 들어 https://www.gohighlevel.com/ 를 입력하면 해당 정확한 웹페이지로만 크롤링이 제한됩니다.
+- **정확한 URL**: 특정 웹페이지를 크롤링해서 해당 데이터를 학습에 사용합니다. 예를 들어 https://hyperclass.ai/ 를 입력하면 해당 정확한 웹페이지로만 크롤링이 제한됩니다.
 
-- **경로가 포함된 모든 URL**: 특정 경로 내의 모든 페이지를 크롤링합니다. 예를 들어 https://www.gohighlevel.com/marketing 을 입력하면 /marketing/offers 또는 /marketing/promotions 같은 해당 URL 경로를 사용하는 모든 페이지가 포함됩니다.
+- **경로가 포함된 모든 URL**: 특정 경로 내의 모든 페이지를 크롤링합니다. 예를 들어 https://hyperclass.ai/marketing 을 입력하면 /marketing/offers 또는 /marketing/promotions 같은 해당 URL 경로를 사용하는 모든 페이지가 포함됩니다.
 
-- **도메인 내 모든 URL**: 도메인 내의 모든 페이지를 크롤링합니다. 예를 들어 https://www.gohighlevel.com/promo 를 입력하면 루트 도메인 www.Hyperclass.com 을 가진 모든 페이지가 포함됩니다.
+- **도메인 내 모든 URL**: 도메인 내의 모든 페이지를 크롤링합니다. 예를 들어 https://hyperclass.ai/promo 를 입력하면 루트 도메인 www.Hyperclass.com 을 가진 모든 페이지가 포함됩니다.
 
 ![도메인 유형 선택하기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155039830261/original/AdPxdhIyOyQbqfqVnPFSEssl4AlYCQzYDA.gif?1736880673)
 

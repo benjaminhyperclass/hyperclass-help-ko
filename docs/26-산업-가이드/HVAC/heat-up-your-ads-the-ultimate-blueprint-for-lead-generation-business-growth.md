@@ -51,7 +51,7 @@
 
 **효과적인 HVAC 광고 전략을 확보하세요.**
 
-지금 마케팅을 강화하세요—[Hyperclass로 시작하기!](https://www.gohighlevel.com/freetrial16?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook)
+지금 마케팅을 강화하세요—[Hyperclass로 시작하기!](https://hyperclass.ai/freetrial16?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook)
 
 ---
 
@@ -185,7 +185,7 @@
 ✅ 트럭, 전단지, 명함에 **QR 코드**를 배치하여 **즉시 리드를 포착**합니다.
 ✅ 더 나은 전환을 위해 **즉시 응답 및 리마인더를 자동화**합니다.
 
-[HVAC용 문자-리드 캠페인 사용 방법](https://blog.gohighlevel.com/setting-up-high-performing-sms-campaigns-with-highlevel-your-ultimate-guide/)
+[HVAC용 문자-리드 캠페인 사용 방법](https://blog.hyperclass.ai/setting-up-high-performing-sms-campaigns-with-highlevel-your-ultimate-guide/)
 
 ---
 
@@ -222,7 +222,7 @@
 
 **Hyperclass로는 단순히 광고만 운영하는 것이 아니라 자동으로 작동하는 리드 생성 머신을 구축합니다.**
 
-## HVAC 광고를 24/7 리드 엔진으로 전환하세요—[오늘 Hyperclass에 가입하기!](https://www.gohighlevel.com/freetrial16?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook)
+## HVAC 광고를 24/7 리드 엔진으로 전환하세요—[오늘 Hyperclass에 가입하기!](https://hyperclass.ai/freetrial16?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook)
 
 ---
 *원문 최종 수정: Tue, 11 Feb, 2025 at 5:35 AM*

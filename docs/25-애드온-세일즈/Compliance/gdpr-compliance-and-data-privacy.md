@@ -16,11 +16,11 @@ Hyperclass는 고객의 개인정보 보호에 최선을 다하고 있습니다.
 
 [LeadConnector 보안 및 컴플라이언스 개요](https://storage.googleapis.com/msgsndr/knES3eSWYIsc5YSZ3YLl/media/64eccf8295d08f2fc866b660.pdf)
 
-[개인정보 처리방침](https://www.gohighlevel.com/privacy-policy)
+[개인정보 처리방침](https://hyperclass.ai/privacy-policy)
 
-[데이터 처리 계약](https://www.gohighlevel.com/data-processing-agreement)
+[데이터 처리 계약](https://hyperclass.ai/data-processing-agreement)
 
-[하위 처리업체](https://www.gohighlevel.com/sub-processors)
+[하위 처리업체](https://hyperclass.ai/sub-processors)
 
 [데이터 삭제 요청](https://docs.google.com/forms/d/e/1FAIpQLSflnljg5ChrbZ6JZrTMWf3llfoLCiaIQj-jYQ1_5aaqb5skdw/viewform?usp=sf_link)
 

@@ -46,7 +46,7 @@
 
 부동산 브랜드를 성장시키고 더 많은 거래를 성사시키고 싶으신가요?
 
-**[Hyperclass 시작하기](https://www.gohighlevel.com/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Agent&utm_content=Playbook)**로 자동화, 전환, 성장을 실현하세요.
+**[Hyperclass 시작하기](https://hyperclass.ai/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Agent&utm_content=Playbook)**로 자동화, 전환, 성장을 실현하세요.
 
 ### **배울 내용**
 ✅ Facebook, Instagram, YouTube를 리드 생성 머신으로 바꾸는 방법
@@ -175,7 +175,7 @@
 ✅ 자동화를 사용하여 응답, 후속 조치, 예약 진행
 
 콘텐츠를 커미션으로 바꿀 준비가 되셨나요?
-[Hyperclass에 가입](https://www.gohighlevel.com/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Agent&utm_content=Playbook)하고 온라인에서 부동산 시장을 장악하세요.
+[Hyperclass에 가입](https://hyperclass.ai/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Agent&utm_content=Playbook)하고 온라인에서 부동산 시장을 장악하세요.
 
 ---
 *원문 최종 수정: Tue, 27 May, 2025 at 8:31 AM*

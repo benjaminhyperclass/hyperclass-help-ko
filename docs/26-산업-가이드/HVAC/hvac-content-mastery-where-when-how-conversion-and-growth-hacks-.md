@@ -52,7 +52,7 @@
 - #### 하이퍼클래스가 **콘텐츠 생성, 예약 및 참여를 자동화**하여 결과를 극대화하는 방법.
 - #### **오프라인 콘텐츠(팜플릿, 간판, 뉴스레터)**가 브랜드 가시성과 지역 마케팅 효과를 향상시키는 방법.
 
-#### **[하이퍼클래스 무료 체험 시작하기](https://www.gohighlevel.com/freetrial16?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook)**하고 콘텐츠를 현금 흐름으로 바꾸세요
+#### **[하이퍼클래스 무료 체험 시작하기](https://hyperclass.ai/freetrial16?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook)**하고 콘텐츠를 현금 흐름으로 바꾸세요
 
 ---
 
@@ -186,7 +186,7 @@ HVAC 비즈니스 성장을 위한 전략적 콘텐츠 계획은:
 **올바른 자동화 = 더 많은 전환.**
 
 ### **추측을 멈추고 성장을 시작하세요.**
-[오늘 하이퍼클래스에 가입](https://www.gohighlevel.com/freetrial16?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook)하여 콘텐츠를 현금 흐름으로 바꾸세요!
+[오늘 하이퍼클래스에 가입](https://hyperclass.ai/freetrial16?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook)하여 콘텐츠를 현금 흐름으로 바꾸세요!
 
 ---
 *원문 최종 수정: Tue, 11 Feb, 2025 at 5:40 AM*

@@ -10,8 +10,8 @@
 
 목차
 
-- [기능 1 - 연결 관계 만들기](https://help.gohighlevel.com/a/solutions/articles/155000003918?portalId=48000045315#Feature-1---Creating-Associations)
-- [기능 2 - 연락처 연결 및 연결된 연락처 보기](https://help.gohighlevel.com/a/solutions/articles/155000003918?portalId=48000045315#Feature-2---Linking-and-Viewing-Linked-Contacts)
+- [기능 1 - 연결 관계 만들기](https://hyperclass.gitbook.io/hyperclass-docs)
+- [기능 2 - 연락처 연결 및 연결된 연락처 보기](https://hyperclass.gitbook.io/hyperclass-docs)
 
 ## 기능 1 - 연결 관계 만들기
 

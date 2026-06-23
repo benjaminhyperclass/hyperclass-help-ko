@@ -90,7 +90,7 @@ Hyperclass 소셜 플래너 사용법을 확인하세요
 
 ---
 
-**피드가 빛나면서 동시에 전환도 만들고 싶나요? [Hyperclass 무료 체험하기](https://www.gohighlevel.com/?utm_source=seo&utm_medium=organic&utm_campaign=medspa&utm_term=medspa&utm_content=playbook).**
+**피드가 빛나면서 동시에 전환도 만들고 싶나요? [Hyperclass 무료 체험하기](https://hyperclass.ai/?utm_source=seo&utm_medium=organic&utm_campaign=medspa&utm_term=medspa&utm_content=playbook).**
 
 ---
 *원문 최종 수정: Fri, 25 Apr, 2025 at 3:12 AM*

@@ -36,7 +36,7 @@
 
 #### 이런 문제들을 겪고 계신다면, 혼자가 아닙니다. 대부분의 전기 기술자들이 모든 것을 수동으로 관리하느라 운영에 어려움을 겪고 있습니다.
 
-올인원 솔루션으로 사업을 손쉽게 관리하세요 - [Hyperclass 지금 가입하기](https://www.gohighlevel.com/freetrial16?utm_source=FreshDesk&utm_medium=organic&utm_campaign=Home+Services+-+Electricians&utm_term=Electricians&utm_content=Playbook)
+올인원 솔루션으로 사업을 손쉽게 관리하세요 - [Hyperclass 지금 가입하기](https://hyperclass.ai/freetrial16?utm_source=FreshDesk&utm_medium=organic&utm_campaign=Home+Services+-+Electricians&utm_term=Electricians&utm_content=Playbook)
 
 ## **사업이 저절로 운영된다면 어떨까요?**
 

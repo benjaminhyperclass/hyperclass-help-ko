@@ -57,7 +57,7 @@ AI 에이전트 컨테스트는 개발자와 혁신가들이 최첨단 AI 에이
 
 구조화된 단계를 따르면 컨테스트 규정을 준수하고 성공 가능성을 높일 수 있습니다.
 
-- 컨테스트 페이지 방문: [AI 에이전트 컨테스트 페이지](https://www.gohighlevel.com/ai-agent-contest#section-vgh4-VyStt). Agency View(에이전시 뷰) → AI Agents Contest(AI 에이전트 컨테스트)를 통해서도 이동할 수 있습니다.
+- 컨테스트 페이지 방문: [AI 에이전트 컨테스트 페이지](https://hyperclass.ai/ai-agent-contest#section-vgh4-VyStt). Agency View(에이전시 뷰) → AI Agents Contest(AI 에이전트 컨테스트)를 통해서도 이동할 수 있습니다.
 - 컨테스트 가이드라인, 약관, 평가 기준을 검토하세요.
 - 카테고리를 선택하세요: 음성 AI 또는 대화 AI.
 - AI 에이전트를 등록하세요 (마켓플레이스 에이전트는 자동으로 등록됩니다).

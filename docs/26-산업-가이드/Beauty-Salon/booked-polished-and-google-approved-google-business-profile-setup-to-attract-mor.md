@@ -185,7 +185,7 @@ Google에서 지역 순위 향상하기
 
 설정하고, 매월 관리하고, 매주 의자가 예약으로 채워지는 것을 지켜보세요.
 
-[무료 체험 가입하기!](https://www.gohighlevel.com/?utm_source=seo&utm_medium=organic&utm_campaign=beautysalon&utm_term=beautysalon&utm_content=playbook)
+[무료 체험 가입하기!](https://hyperclass.ai/?utm_source=seo&utm_medium=organic&utm_campaign=beautysalon&utm_term=beautysalon&utm_content=playbook)
 
 ---
 *원문 최종 수정: Mon, 5 May, 2025 at 5:47 AM*

@@ -34,7 +34,7 @@
 
 이 Hyperclass 가이드는 전체 팀을 고용하지 않고도 더 많은 리드를 유치하고, 더 빠르게 응답하고, 체계적으로 관리하고, 일관되게 거래를 성사시킬 수 있는 5가지 기본 단계를 제공합니다.
 
-부동산 브랜드를 성장시키세요 — [지금 Hyperclass에 가입하세요](https://www.gohighlevel.com/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Agent&utm_content=Playbook)
+부동산 브랜드를 성장시키세요 — [지금 Hyperclass에 가입하세요](https://hyperclass.ai/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Agent&utm_content=Playbook)
 
 ## 배우게 될 내용:
 
@@ -226,7 +226,7 @@
 ✅ 콘텐츠 게시를 자동화하고 일관되게 노출을 유지하세요
 
 부동산의 혼란을 반복 가능한 고객 확보 시스템으로 바꾸고 싶으신가요?
-[지금 Hyperclass를 시작하여](https://www.gohighlevel.com/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Agent&utm_content=Playbook) 더 많이, 더 빠르게 계약을 성사시키세요.
+[지금 Hyperclass를 시작하여](https://hyperclass.ai/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Agent&utm_content=Playbook) 더 많이, 더 빠르게 계약을 성사시키세요.
 
 ---
 *원문 최종 수정: Wed, 28 May, 2025 at 11:18 AM*

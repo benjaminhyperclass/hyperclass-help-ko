@@ -16,7 +16,7 @@
 
 이 정책을 위반하는 모든 사용 사례는 번호/발신자 유형이나 목적지 국가에 관계없이 LeadConnector ISV 플랫폼에서 허용되지 않습니다.
 
-**[금지된 A2P 트래픽에 대한 새로운 Sev-0 벌금, 2024년 2월 15일부터 시행](https://ideas.gohighlevel.com/changelog/new-sev-0-fines-on-prohibited-a2p-traffic-effective-february-15-2024)**
+**[금지된 A2P 트래픽에 대한 새로운 Sev-0 벌금, 2024년 2월 15일부터 시행](https://ideas.hyperclass.ai/changelog/new-sev-0-fines-on-prohibited-a2p-traffic-effective-february-15-2024)**
 
 T-Mobile은 금지된 콘텐츠가 포함된 메시지에 대해 A2P 10DLC 비준수 벌금을 도입했습니다. T-Mobile이 아래 나열된 티어를 위반하는 메시지를 감지하면, Sev-0 위반(가장 심각한 소비자 위반), 비준수 벌금을 발행하고, 통신사는 즉시 해당 메시지를 차단합니다.
 

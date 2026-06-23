@@ -40,7 +40,7 @@
 
 마케팅 퍼널의 누수를 막고 빠르게 성장할 준비가 되셨나요?
 
-**[하이퍼클래스에 가입](https://www.gohighlevel.com/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services&utm_term=Plumbing&utm_content=Playbook)하여 배관 리드가 흘러들어오는 것을 확인하세요**
+**[하이퍼클래스에 가입](https://hyperclass.ai/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services&utm_term=Plumbing&utm_content=Playbook)하여 배관 리드가 흘러들어오는 것을 확인하세요**
 
 ### 무엇을 배우게 될까요?
 
@@ -163,7 +163,7 @@
 
 배관 리드를 잃는 것을 멈추세요. 성장 자동화를 시작하세요.
 
-[하이퍼클래스에 가입](https://www.gohighlevel.com/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services&utm_term=Plumbing&utm_content=Playbook)하여 배관 콘텐츠를 지속적인 현금 흐름으로 전환하세요!
+[하이퍼클래스에 가입](https://hyperclass.ai/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services&utm_term=Plumbing&utm_content=Playbook)하여 배관 콘텐츠를 지속적인 현금 흐름으로 전환하세요!
 
 ---
 *원문 최종 수정: Thu, 10 Apr, 2025 at 6:55 AM*

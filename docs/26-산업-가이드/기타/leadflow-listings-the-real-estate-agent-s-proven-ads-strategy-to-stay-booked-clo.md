@@ -44,7 +44,7 @@
 
 이 플레이북은 Facebook, Instagram, Google, 그리고 리타겟팅 광고를 사용해 리드 생성 시스템을 구축하는 방법을 정확히 보여줍니다 — 기술적 스트레스 없이 말이죠.
 
-오늘 마케팅을 강화하세요— [Hyperclass로 시작하세요!](https://www.gohighlevel.com/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Agent&utm_content=Playbook)
+오늘 마케팅을 강화하세요— [Hyperclass로 시작하세요!](https://hyperclass.ai/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Agent&utm_content=Playbook)
 
 ### 배울 내용:
 ✅ 독점적인 구매자 및 판매자 리드 생성
@@ -178,7 +178,7 @@
 
 리드 마그넷이나 주택 가치 리포트를 전달하는 후속 조치 워크플로우를 트리거하세요.
 
-[부동산 중개사를 위한 문자 리드 캠페인 사용 방법](https://blog.gohighlevel.com/setting-up-high-performing-sms-campaigns-with-highlevel-your-ultimate-guide/)
+[부동산 중개사를 위한 문자 리드 캠페인 사용 방법](https://blog.hyperclass.ai/setting-up-high-performing-sms-campaigns-with-highlevel-your-ultimate-guide/)
 
 ## 4단계: 추적, 테스트 및 확장
 
@@ -215,7 +215,7 @@
 ✅ 효과적인 것을 추적, 최적화, 확장
 
 **실제로 전환되는 광고로 지역 시장을 정복하고 싶으세요?
-[오늘 Hyperclass로 시작하세요.](https://www.gohighlevel.com/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Agent&utm_content=Playbook)**
+[오늘 Hyperclass로 시작하세요.](https://hyperclass.ai/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Agent&utm_content=Playbook)**
 
 ---
 *원문 최종 수정: Tue, 27 May, 2025 at 6:27 AM*

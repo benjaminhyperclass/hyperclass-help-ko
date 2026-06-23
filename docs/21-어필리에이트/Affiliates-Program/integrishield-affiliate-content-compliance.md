@@ -19,7 +19,7 @@ Hyperclass@integrishield.com 또는 legalcompliance@gohgihelvel.com으로부터 
 - 승인되지 않은 상표 사용
 - 소프트웨어 성능에 대한 승인되지 않은 주장
 
-이러한 경고를 무시하시면 [Hyperclass 제휴 정책](https://www.gohighlevel.com/affiliate-policy)에 따라 수수료를 계속 받을 자격을 잃을 수 있음을 유의해 주세요. 이런 일이 발생하지 않도록 하고 싶으니, 질문이 있으시면 즉시 [제휴 매니저](https://speakwith.us/affiliate)에게 연락해 주세요! 저희는 언제나 도움을 드릴 준비가 되어 있습니다. 또한 Hyperclass 프로모션 시 해야 할 것과 하지 말아야 할 것에 대한 자세한 정보는 [제휴 마케팅 툴킷](https://drive.google.com/drive/folders/1-_MRqE4w8SYsf_ItaWvqP2gOUbn05YL7)을 확인해 보세요.
+이러한 경고를 무시하시면 [Hyperclass 제휴 정책](https://hyperclass.ai/affiliate-policy)에 따라 수수료를 계속 받을 자격을 잃을 수 있음을 유의해 주세요. 이런 일이 발생하지 않도록 하고 싶으니, 질문이 있으시면 즉시 [제휴 매니저](https://speakwith.us/affiliate)에게 연락해 주세요! 저희는 언제나 도움을 드릴 준비가 되어 있습니다. 또한 Hyperclass 프로모션 시 해야 할 것과 하지 말아야 할 것에 대한 자세한 정보는 [제휴 마케팅 툴킷](https://drive.google.com/drive/folders/1-_MRqE4w8SYsf_ItaWvqP2gOUbn05YL7)을 확인해 보세요.
 
 Hyperclass의 최고 제휴사 중 한 곳이 어떻게 컴플라이언스를 우선시하면서도 여전히 전환을 달성하는지 궁금하신가요? Anik Singal과 함께하는 이 [Hyperclass 제휴 인사이더](https://www.youtube.com/watch?v=7BdyvJABhYI) 에피소드를 시청해 보세요!
 

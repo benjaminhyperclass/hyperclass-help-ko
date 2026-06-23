@@ -114,7 +114,7 @@
 
 - Subscribe Now(지금 구독) 버튼을 클릭하세요.
 
-- 또는 [프리미엄 지원 페이지](https://app.gohighlevel.com/offers/premium-support)를 방문하세요
+- 또는 [프리미엄 지원 페이지](https://app.hyperclass.ai/offers/premium-support)를 방문하세요
 
 ![프리미엄 지원 구독 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066871332/original/hATzHuYb6vcgctqH8YRAu7qr7JwV0Kd75A.png?1773398878)
 

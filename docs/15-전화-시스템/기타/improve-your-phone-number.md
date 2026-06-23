@@ -31,7 +31,7 @@ Hyperclass Support Portal에 로그인하세요.
 
 [비밀번호를 잊으셨나요?](#)
 
-에이전트이신가요? [여기에서 로그인](https://gohighlevelassist.freshworks.com/login?client_id=451979510707337272&redirect_uri=https%3A%2F%2Fgohighlevelassist.freshdesk.com%2Ffreshid%2Fauthorize_callback%3Fhd%3Dhttps%3A%2F%2Fhelp.gohighlevel.com)
+에이전트이신가요? [여기에서 로그인](https://hyperclass.gitbook.io/hyperclass-docs)
 
 ---
 

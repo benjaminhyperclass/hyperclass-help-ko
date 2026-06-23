@@ -81,7 +81,7 @@
 A. 특정 로케이션(하위 계정)에서 Gmail SMTP를 연동하려면 해당 하위 계정 검색
 B. 에이전시의 모든 로케이션에서 Gmail SMTP를 연동하려면 Agency View로 전환
 
-https://app.gohighlevel.com/settings/email_services
+https://app.hyperclass.ai/settings/email_services
 
 ![계정 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155029833401/original/uxI0YbgNvy7V9Qn91j4PZUXMw7S87ObXTg.jpg?1721852474)
 

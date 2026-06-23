@@ -46,7 +46,7 @@ API 응답:
 }
 ```
 
-**중요**: Hyperclass API 관련 이슈나 마켓플레이스 앱 연결 오류에 대한 공식 지원을 받는 방법이 궁금하시다면, API 문서와 지원을 위해 [https://developers.gohighlevel.com/](https://developers.gohighlevel.com/)을 방문하세요.
+**중요**: Hyperclass API 관련 이슈나 마켓플레이스 앱 연결 오류에 대한 공식 지원을 받는 방법이 궁금하시다면, API 문서와 지원을 위해 [https://developers.hyperclass.ai/](https://developers.hyperclass.ai/)을 방문하세요.
 
 ---
 *원문 최종 수정: Sat, 17 May, 2025 at 6:35 AM*

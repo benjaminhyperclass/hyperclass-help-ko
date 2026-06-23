@@ -37,7 +37,7 @@ A: vat-tax@Hyperclass.com으로 이메일을 보내주세요.
 
 **Q: "세금 ID 번호가 없습니다"에 체크했더니 VAT/GST/HST가 청구되고 있습니다. 하지만 최근에 세금 ID 번호를 받았습니다. 프로필에 세금 ID 번호를 어떻게 업데이트하나요?**
 
-A: 하이레벨 플랫폼의 프로필 내 결제 세부사항으로 이동해 주세요: https://app.gohighlevel.com/settings/billing?tab=payments
+A: 하이레벨 플랫폼의 프로필 내 결제 세부사항으로 이동해 주세요: https://app.hyperclass.ai/settings/billing?tab=payments
 
 **Q: "세금 ID 번호가 없습니다"에 체크했더니 VAT/GST/HST가 청구되고 있습니다. 하지만 최근에 세금 ID 번호를 찾았습니다. 이미 납부한 세금을 환불받을 수 있나요?**
 

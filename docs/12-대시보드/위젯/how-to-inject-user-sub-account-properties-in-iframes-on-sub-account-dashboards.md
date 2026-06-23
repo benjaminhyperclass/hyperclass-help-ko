@@ -43,7 +43,7 @@
 
 - 아이프레임 소스에 하위 계정이나 사용자 식별자를 동적으로 삽입할 수 있습니다. URL에서 {{location.id}}나 {{location.name}}과 같은 플레이스홀더를 사용하여 더욱 다양하게 활용할 수 있습니다.
 
-- 예를 들어, {{location.id}}를 사용하여 다음과 같은 동적 URL을 만들 수 있습니다: [https://app.gohighlevel.com/v2/location/{{location.id}}/conversations](https://app.gohighlevel.com/v2/location/{{location.id}}/conversations)
+- 예를 들어, {{location.id}}를 사용하여 다음과 같은 동적 URL을 만들 수 있습니다: [https://app.hyperclass.ai/v2/location/{{location.id}}/conversations](https://app.hyperclass.ai/v2/location/{{location.id}}/conversations)
 
 - 위의 링크를 대시보드의 아이프레임 URL로 임베드할 수 있습니다.
 

@@ -24,7 +24,7 @@
 
 A2P 10DLC 등록 이해하기:
 
-A2P 10DLC는 기업이 표준 10자리 장거리 코드 전화번호를 통해 Application-to-Person 유형 메시징을 발송할 수 있게 하는 시스템입니다. 이 프레임워크 하에 번호를 등록하면 통신사 규정 준수를 보장하고 메시지 전달성을 향상시킬 수 있습니다. A2P 10DLC에 대한 종합적인 개요와 자주 묻는 질문은 [지원 문서](https://help.gohighlevel.com/support/solutions/articles/155000002380-what-is-a2p-10-dlc-brand-and-campaign-registration-summary-and-faqs)를 참고하세요.
+A2P 10DLC는 기업이 표준 10자리 장거리 코드 전화번호를 통해 Application-to-Person 유형 메시징을 발송할 수 있게 하는 시스템입니다. 이 프레임워크 하에 번호를 등록하면 통신사 규정 준수를 보장하고 메시지 전달성을 향상시킬 수 있습니다. A2P 10DLC에 대한 종합적인 개요와 자주 묻는 질문은 [지원 문서](https://hyperclass.gitbook.io/hyperclass-docs)를 참고하세요.
 
 조치 단계:
 
@@ -36,7 +36,7 @@ A2P 10DLC는 기업이 표준 10자리 장거리 코드 전화번호를 통해 A
 
 등록 방법:
 
-캐나다 10DLC 번호를 A2P 메시징에 등록하려면, [캠페인 등록 가이드](https://help.gohighlevel.com/support/solutions/articles/155000004539-campaign-registration-step-by-step-guide-and-faqs)에서 제공하는 단계별 지침을 따라하세요. 이 가이드는 승인을 보장하는 모범 사례를 포함하여 등록 프로세스에 대한 자세한 정보를 제공합니다.
+캐나다 10DLC 번호를 A2P 메시징에 등록하려면, [캠페인 등록 가이드](https://hyperclass.gitbook.io/hyperclass-docs)에서 제공하는 단계별 지침을 따라하세요. 이 가이드는 승인을 보장하는 모범 사례를 포함하여 등록 프로세스에 대한 자세한 정보를 제공합니다.
 
 지원:
 

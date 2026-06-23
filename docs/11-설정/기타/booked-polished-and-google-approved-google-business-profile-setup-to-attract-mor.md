@@ -192,7 +192,7 @@
 
 설정하고, 매월 다듬고, 주차마다 의자가 채워지는 것을 지켜보세요.
 
-[무료 체험 신청하기!](https://www.gohighlevel.com/?utm_source=seo&utm_medium=organic&utm_campaign=beautysalon&utm_term=beautysalon&utm_content=playbook)
+[무료 체험 신청하기!](https://hyperclass.ai/?utm_source=seo&utm_medium=organic&utm_campaign=beautysalon&utm_term=beautysalon&utm_content=playbook)
 
 ---
 *원문 최종 수정: Mon, 5 May, 2025 at 5:47 AM*

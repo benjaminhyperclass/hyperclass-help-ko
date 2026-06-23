@@ -121,7 +121,7 @@ Hyperclass로 다음을 수행하세요:
 
 ---
 
-프런트 데스크가 꿈처럼 작동하길 원하시나요? [Hyperclass을 체험해보세요](https://www.gohighlevel.com/?utm_source=seo&utm_medium=organic&utm_campaign=medspa&utm_term=medspa&utm_content=playbook).
+프런트 데스크가 꿈처럼 작동하길 원하시나요? [Hyperclass을 체험해보세요](https://hyperclass.ai/?utm_source=seo&utm_medium=organic&utm_campaign=medspa&utm_term=medspa&utm_content=playbook).
 
 ---
 *원문 최종 수정: 2025년 4월 25일*

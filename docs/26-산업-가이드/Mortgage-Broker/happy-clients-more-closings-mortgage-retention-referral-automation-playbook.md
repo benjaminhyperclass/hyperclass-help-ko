@@ -221,7 +221,7 @@ Hyperclass의 AI가:
 - 스마트 리스트로 데이터베이스 분류
 - 대화 AI가 재참여를 처리하도록 설정
 
-#### 모기지 비즈니스를 자동화할 준비가 되셨나요? [오늘 Hyperclass에 가입하여 높은 신뢰도와 높은 성사율의 파이프라인을 구축하세요.](https://www.gohighlevel.com/?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Mortgage+Broker&utm_content=Playbook)
+#### 모기지 비즈니스를 자동화할 준비가 되셨나요? [오늘 Hyperclass에 가입하여 높은 신뢰도와 높은 성사율의 파이프라인을 구축하세요.](https://hyperclass.ai/?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Mortgage+Broker&utm_content=Playbook)
 
 ---
 *원문 최종 수정: Tue, 20 May, 2025 at 1:29 PM*

@@ -137,7 +137,7 @@ Facebook 폼 매핑은 로케이션 설정(location settings) > 연동(integrati
 6. 위 비디오의 단계를 완료한 후, [Facebook 리드 광고 테스트 도구](https://developers.facebook.com/tools/lead-ads-testing)를 사용하여 리드가 이제 하위 계정에 추가되고 있는지 확인하세요.
 
 리드 광고 테스트 도구: [https://developers.facebook.com/tools/lead-ads-testing](https://developers.facebook.com/tools/lead-ads-testing)
-Facebook 페이지 선택: [https://app.gohighlevel.com/location/YOUR_LOCATION_ID/facebook_page_select](https://app.gohighlevel.com/location/YOUR_LOCATION_ID/facebook_page_select)
+Facebook 페이지 선택: [https://app.hyperclass.ai/location/YOUR_LOCATION_ID/facebook_page_select](https://app.hyperclass.ai/location/YOUR_LOCATION_ID/facebook_page_select)
 
 **참고사항:**
 

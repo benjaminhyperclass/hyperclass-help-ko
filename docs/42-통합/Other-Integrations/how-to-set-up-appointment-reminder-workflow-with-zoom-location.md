@@ -66,7 +66,7 @@
 
 ![이메일/SMS 발송](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48181754477/original/XGO_8Lln7RmrzgPI6H38-z2KYttEO0i1zw.png?1642794235)
 
-예약 워크플로우에서 사용할 수 있는 커스텀 필드 목록을 확인하려면 [여기](https://gohighlevelassist.freshdesk.com/support/solutions/articles/48001078171-custom-values-merge-fields)를 클릭하세요.
+예약 워크플로우에서 사용할 수 있는 커스텀 필드 목록을 확인하려면 [여기](https://hyperclass.gitbook.io/hyperclass-docs)를 클릭하세요.
 
 액션 저장(Save action) 클릭:
 

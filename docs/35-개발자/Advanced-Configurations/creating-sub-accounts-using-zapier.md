@@ -12,7 +12,7 @@
 ### Public API를 통해 새 하위 계정을 생성하려면 현재 [ProPlan](../../11-설정/에이전시-설정/billing-related-questions-for-agencies.md)-How-Do-I-Upgrade-my-Hyperclass-Account?)에 가입되어 있는지 확인해주세요.
 
 
-API 문서 및 관련 정보는 개발자 웹사이트를 참조하세요: [https://developers.gohighlevel.com/](https://developers.gohighlevel.com/) 
+API 문서 및 관련 정보는 개발자 웹사이트를 참조하세요: [https://developers.hyperclass.ai/](https://developers.hyperclass.ai/) 
 
 
 **진행하기 전 중요 사항:**
@@ -21,11 +21,11 @@ Zapier 없이 Hyperclass 내에서 계정 생성을 자동화하고 싶다면 Hy
 
 [Zapier LeadConnector 연동](https://zapier.com/apps/leadconnector/integrations)의 "add Account" 액션은 2022년 2월 21일에 중단되었습니다.
 
-이 문서의 단계는 고급 연동을 위한 것이며 정보 제공 목적입니다. 지원팀에서는 API나 커스텀 Zapier 연동의 복잡성으로 인해 현재 해당 서비스를 지원하지 않지만, 시작과 연결에 도움이 되는 많은 도구와 그룹을 제공합니다! API 관련 지원은 개발자 협의회 슬랙 커뮤니티에 참여하세요: [https://www.gohighlevel.com/dev-slack](https://www.gohighlevel.com/dev-slack)
+이 문서의 단계는 고급 연동을 위한 것이며 정보 제공 목적입니다. 지원팀에서는 API나 커스텀 Zapier 연동의 복잡성으로 인해 현재 해당 서비스를 지원하지 않지만, 시작과 연결에 도움이 되는 많은 도구와 그룹을 제공합니다! API 관련 지원은 개발자 협의회 슬랙 커뮤니티에 참여하세요: [https://hyperclass.ai/dev-slack](https://hyperclass.ai/dev-slack)
 
-또한 매월 개발자 협의회 줌 콜(마지막에서 두 번째 금요일)을 진행하며, 이벤트 캘린더에서 확인할 수 있습니다: [https://www.gohighlevel.com/events](https://www.gohighlevel.com/events)
+또한 매월 개발자 협의회 줌 콜(마지막에서 두 번째 금요일)을 진행하며, 이벤트 캘린더에서 확인할 수 있습니다: [https://hyperclass.ai/events](https://hyperclass.ai/events)
 
-API 문서 및 관련 정보는 개발자 웹사이트를 참조하세요: [https://developers.gohighlevel.com/](https://developers.gohighlevel.com/)
+API 문서 및 관련 정보는 개발자 웹사이트를 참조하세요: [https://developers.hyperclass.ai/](https://developers.hyperclass.ai/)
 
 
 이 문서를 사용하려면 Zapier 웹훅이 필요하며, 이는 무료 플랜에 포함되지 않습니다. 진행하기 전에 유료 플랜에 가입해주세요.
@@ -111,7 +111,7 @@ Zapier 웹훅(프리미엄)을 사용하려면 유료 플랜에 가입하세요.
 
 ### 3.2단계: 로케이션 생성 엔드포인트 URL 추가:
 
-[https://rest.gohighlevel.com/v1/locations](https://rest.gohighlevel.com/v1/locations)
+[https://rest.hyperclass.ai/v1/locations](https://rest.hyperclass.ai/v1/locations)
 
 ### 3.3단계: Data Pass-Through는 비워두세요.
 
@@ -257,7 +257,7 @@ Zapier 웹훅(프리미엄)을 사용하려면 유료 플랜에 가입하세요.
 
 ### 5.2단계: 사용자 생성 엔드포인트 URL 추가:
 
-[https://rest.gohighlevel.com/v1/users/](https://rest.gohighlevel.com/v1/users/)
+[https://rest.hyperclass.ai/v1/users/](https://rest.hyperclass.ai/v1/users/)
 
 ### 5.3단계: Data Pass-Through는 비워두세요.
 
@@ -276,7 +276,7 @@ Zapier 웹훅(프리미엄)을 사용하려면 유료 플랜에 가입하세요.
 
 로케이션 ID: 이 스크린샷에서 로케이션 ID가 어떻게 보이는지 확인하세요. 이 줄에 복사하여 붙여넣는 대신 이전 단계의 사용 가능한 변수 목록에서 적절히 매핑되었습니다. 'ID'라는 제목의 필드를 찾으시면 됩니다.
 
-### 사용자 데이터 필드: ([개발자 문서 보기](https://developers.gohighlevel.com/))
+### 사용자 데이터 필드: ([개발자 문서 보기](https://developers.hyperclass.ai/))
 
 {
 
@@ -406,11 +406,11 @@ Hyperclass과 연동을 생성할 때 인터페이스에 관계없이 API를 사
 
 참고:
 
-이 문서의 단계는 고급 연동을 위한 것이며 정보 제공 목적입니다. 지원팀에서는 API나 커스텀 Zapier 연동의 복잡성으로 인해 현재 해당 서비스를 지원하지 않지만, 시작과 연결에 도움이 되는 많은 도구와 그룹을 제공합니다! API 관련 지원은 개발자 협의회 슬랙 커뮤니티에 참여하세요: [https://www.gohighlevel.com/dev-slack](https://www.gohighlevel.com/dev-slack)
+이 문서의 단계는 고급 연동을 위한 것이며 정보 제공 목적입니다. 지원팀에서는 API나 커스텀 Zapier 연동의 복잡성으로 인해 현재 해당 서비스를 지원하지 않지만, 시작과 연결에 도움이 되는 많은 도구와 그룹을 제공합니다! API 관련 지원은 개발자 협의회 슬랙 커뮤니티에 참여하세요: [https://hyperclass.ai/dev-slack](https://hyperclass.ai/dev-slack)
 
-또한 매월 개발자 협의회 줌 콜(마지막에서 두 번째 금요일)을 진행하며, 이벤트 캘린더에서 확인할 수 있습니다: [https://www.gohighlevel.com/events](https://www.gohighlevel.com/events)
+또한 매월 개발자 협의회 줌 콜(마지막에서 두 번째 금요일)을 진행하며, 이벤트 캘린더에서 확인할 수 있습니다: [https://hyperclass.ai/events](https://hyperclass.ai/events)
 
-API 문서 및 관련 정보는 개발자 웹사이트를 참조하세요: [https://developers.gohighlevel.com/](https://developers.gohighlevel.com/)
+API 문서 및 관련 정보는 개발자 웹사이트를 참조하세요: [https://developers.hyperclass.ai/](https://developers.hyperclass.ai/)
 
 ---
 *원문 최종 수정: Sun, 29 Dec, 2024 at 1:27 PM*

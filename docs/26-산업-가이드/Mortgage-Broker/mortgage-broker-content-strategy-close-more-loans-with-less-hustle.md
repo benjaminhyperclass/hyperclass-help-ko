@@ -39,7 +39,7 @@
 ✅ 반복/추천 비즈니스를 위한 장기 관계 구축
 ✅ 콘텐츠, 후속 관리, 가시성 자동화 — 적은 일로 더 많은 성사
 
-[하이퍼클래스에 가입](https://www.gohighlevel.com/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Mortgage+Broker&utm_content=Playbook)하여 콘텐츠를 현금 흐름으로 전환하세요
+[하이퍼클래스에 가입](https://hyperclass.ai/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Mortgage+Broker&utm_content=Playbook)하여 콘텐츠를 현금 흐름으로 전환하세요
 
 ## 배우게 될 내용
 
@@ -160,7 +160,7 @@
 
 ### 모기지 비즈니스를 자동으로 성장시키고 싶으신가요?
 
-[**하이퍼클래스에 가입**](https://www.gohighlevel.com/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Mortgage+Broker&utm_content=Playbook)하여 콘텐츠를 24시간 전환으로 바꾸세요.
+[**하이퍼클래스에 가입**](https://hyperclass.ai/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Mortgage+Broker&utm_content=Playbook)하여 콘텐츠를 24시간 전환으로 바꾸세요.
 
 ---
 *원문 최종 수정: 2025년 5월 27일 화요일 오전 8:45*

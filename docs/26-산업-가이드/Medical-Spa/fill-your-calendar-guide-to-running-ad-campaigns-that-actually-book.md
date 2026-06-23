@@ -138,7 +138,7 @@ Hyperclass 안에서 주요 광고 퍼널 지표를 모니터링하세요:
 
 ---
 
-**예쁜 광고 운영은 그만하고 수익성 있는 광고를 운영해보세요. [무료 체험을 시작](https://www.gohighlevel.com/?utm_source=seo&utm_medium=organic&utm_campaign=medspa&utm_term=medspa&utm_content=playbook)하고 Hyperclass이 예약을 처리하는 동안 당신은 결과에만 집중하세요.**
+**예쁜 광고 운영은 그만하고 수익성 있는 광고를 운영해보세요. [무료 체험을 시작](https://hyperclass.ai/?utm_source=seo&utm_medium=organic&utm_campaign=medspa&utm_term=medspa&utm_content=playbook)하고 Hyperclass이 예약을 처리하는 동안 당신은 결과에만 집중하세요.**
 
 ---
 *원문 최종 수정: 2025년 4월 25일*

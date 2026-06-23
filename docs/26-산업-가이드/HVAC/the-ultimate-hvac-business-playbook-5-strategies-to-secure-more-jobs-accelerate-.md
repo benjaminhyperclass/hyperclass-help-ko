@@ -42,7 +42,7 @@
 ✅ **후속 관리, 예약 스케줄링, 결제를 자동화**해서 놓친 전화와 연체된 청구서로 인한 손실을 중단하는 방법.
 ✅ 현장에서 서비스를 제공하는 동안 **Hyperclass로 모든 것을 한 곳에서** 처리하는 방법.
 
-**[Hyperclass 시작하기](https://www.gohighlevel.com/freetrial16?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook)**로 지금 바로 HVAC 사업을 성장시키세요!
+**[Hyperclass 시작하기](https://hyperclass.ai/freetrial16?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook)**로 지금 바로 HVAC 사업을 성장시키세요!
 
 ---
 
@@ -203,7 +203,7 @@ HVAC 일자리의 75%는 먼저 응답한 업체가 가져갑니다.
 
 #### [HVAC 일일 운영 자동화: 최대 효율성을 위한 확실한 청사진](hvac-daily-operations-automation-the-definitive-blueprint-for-maximum-efficiency.md)
 
-### 지금 시작하세요 – [Hyperclass에 가입하기](https://www.gohighlevel.com/freetrial16?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook)로 HVAC 사업을 더 빠르게 성장시키세요!
+### 지금 시작하세요 – [Hyperclass에 가입하기](https://hyperclass.ai/freetrial16?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook)로 HVAC 사업을 더 빠르게 성장시키세요!
 
 ---
 *원문 최종 수정: Thu, 13 Feb, 2025 at 5:34 AM*

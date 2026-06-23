@@ -133,7 +133,7 @@ Hyperclass에서 사이트 발행하기
 
 단순히 "예쁘기만" 한 것을 목표로 하지 마세요. 성과를 내고, 순위를 올리고, 전환하는 사이트를 만드세요.
 
-성장할 준비가 되셨나요? [Hyperclass 가입하기](https://www.gohighlevel.com/?utm_source=seo&utm_medium=organic&utm_campaign=beautysalon&utm_term=beautysalon&utm_content=playbook)
+성장할 준비가 되셨나요? [Hyperclass 가입하기](https://hyperclass.ai/?utm_source=seo&utm_medium=organic&utm_campaign=beautysalon&utm_term=beautysalon&utm_content=playbook)
 
 ---
 *원문 최종 수정: Mon, 5 May, 2025 at 6:30 AM*

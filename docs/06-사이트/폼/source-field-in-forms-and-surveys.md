@@ -38,7 +38,7 @@ Quick Add(빠른 추가) 아래에서 소스 요소를 찾을 수 있습니다. 
 
 예를 들어:
 
-[https://link.gohighlevel.com/widget/form/WKEnUOXEz9J3cpcQyc1M?source=alternative_source](https://link.gohighlevel.com/widget/form/WKEnUOXEz9J3cpcQyc1M?source=alternative_source)
+[https://link.hyperclass.ai/widget/form/WKEnUOXEz9J3cpcQyc1M?source=alternative_source](https://link.hyperclass.ai/widget/form/WKEnUOXEz9J3cpcQyc1M?source=alternative_source)
 
 폼/설문 링크에 `?source=alternative_source`를 추가하여 어떤 소스든지 전달할 수 있습니다.
 

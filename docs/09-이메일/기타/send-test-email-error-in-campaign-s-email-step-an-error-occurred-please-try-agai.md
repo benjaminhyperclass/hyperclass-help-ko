@@ -16,7 +16,7 @@
 
 2. **커스텀 값(Custom Values)이 유효한지** 확인하세요:
    
-   특히 링크 부분: [유효한 커스텀 값 목록](https://gohighlevelassist.freshdesk.com/support/solutions/articles/48001078171-custom-values-merge-fields)
+   특히 링크 부분: [유효한 커스텀 값 목록](https://hyperclass.gitbook.io/hyperclass-docs)
 
 ![커스텀 값 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48054130934/original/du8IHP5qTYEaAkFDIyC-2fTUe9xhjhdOTg.png?1597456147)
 

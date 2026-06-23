@@ -33,7 +33,7 @@
 
 #### 이 **시작하기 플레이북**은 **Hyperclass**을 올바른 방식으로 설정하는 **5가지 가장 중요한 단계**를 보여줍니다. 이를 통해 **더 많은 고객을 확보하고, 반복 비즈니스를 보장하며, 브랜드를 수월하게 성장시킬** 수 있습니다.
 
-지금 비즈니스를 성장시키세요 - **[Hyperclass에 가입하기](https://www.gohighlevel.com/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook)**
+지금 비즈니스를 성장시키세요 - **[Hyperclass에 가입하기](https://hyperclass.ai/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook)**
 
 ---
 
@@ -207,7 +207,7 @@
 세련된 성과: 청소 및 유지관리를 위한 궁극의 일일 운영 플레이북
 
 ### **더 빠르게 성장하고 싶으신가요?**
-[오늘 Hyperclass에 가입](https://www.gohighlevel.com/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook)하고 즉시 더 많은 청소 일자리를 예약하세요!
+[오늘 Hyperclass에 가입](https://hyperclass.ai/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook)하고 즉시 더 많은 청소 일자리를 예약하세요!
 
 ---
 *원문 최종 수정: Fri, 14 Feb, 2025 at 6:03 AM*

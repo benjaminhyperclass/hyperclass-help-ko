@@ -37,7 +37,7 @@
 ✅ 고객을 영업 사이클을 통해 이동시키는 콘텐츠 만들기
 ✅ Hyperclass를 사용하여 지역 시장을 자동화하고 확장하며 지배하기
 
-[Hyperclass에 가입](https://www.gohighlevel.com/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Consultant&utm_content=Playbook)하여 콘텐츠를 현금 흐름으로 전환하세요
+[Hyperclass에 가입](https://hyperclass.ai/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Consultant&utm_content=Playbook)하여 콘텐츠를 현금 흐름으로 전환하세요
 
 ## 배울 내용
 
@@ -164,7 +164,7 @@
 ✅ 최고 성과에 집중하기
 
 콘텐츠를 1순위 리드 소스로 만들 준비되셨나요?
-[Hyperclass에 가입](https://www.gohighlevel.com/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Consultant&utm_content=Playbook)하여 오늘부터 부동산 마케팅을 자동화하세요
+[Hyperclass에 가입](https://hyperclass.ai/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Consultant&utm_content=Playbook)하여 오늘부터 부동산 마케팅을 자동화하세요
 
 ---
 *원문 최종 수정: 2025년 5월 27일 화요일 오전 8시 45분*

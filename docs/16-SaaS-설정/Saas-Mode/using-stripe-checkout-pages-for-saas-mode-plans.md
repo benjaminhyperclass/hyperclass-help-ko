@@ -20,7 +20,7 @@
 
 - 커스텀 SaaS 플랜을 소개하는 퍼널을 디자인하세요.
 
-퍼널이 처음이시라면 퍼널 빌더 동영상을 확인해보세요: https://help.gohighlevel.com/support/solutions/articles/48000980305-funnel-builder-overview-full-funnel
+퍼널이 처음이시라면 퍼널 빌더 동영상을 확인해보세요: https://hyperclass.gitbook.io/hyperclass-docs
 
 - 오른쪽 상단의 요소(Elements)를 클릭하고, 버튼 요소(Element)를 선택해서 퍼널 안에 배치하세요.
 

@@ -12,7 +12,7 @@
 
 ## **3DS 지원 가입 링크 사용하기**
 
-1. 다음 링크를 여세요: [https://affiliates.gohighlevel.com](https://affiliates.gohighlevel.com)
+1. 다음 링크를 여세요: [https://affiliates.hyperclass.ai](https://affiliates.hyperclass.ai)
 
 2. 체험판 가입을 시작하고 카드 정보를 입력하세요.
 

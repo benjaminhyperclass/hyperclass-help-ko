@@ -46,7 +46,7 @@
 ✅ HVAC 업체에 특화된 **저비용, 고수익 광고 운영법**
 ✅ **게시, 응답, 리드 후속조치를 자동화**해서 HVAC 작업에 집중하되 소셜미디어는 놓치지 않는 방법
 
-[**하이퍼클래스로 시작하여**](https://www.gohighlevel.com/freetrial16?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook) 오늘부터 광고하고, 자동화하고, 시장을 장악하세요.
+[**하이퍼클래스로 시작하여**](https://hyperclass.ai/freetrial16?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook) 오늘부터 광고하고, 자동화하고, 시장을 장악하세요.
 
 ---
 
@@ -181,7 +181,7 @@
 #### 소셜미디어는 단순한 **좋아요**가 아닙니다. **예약된 작업과 연중 수익**에 관한 것입니다.
 
 ### **지역 HVAC 시장을 장악하고 싶으신가요?**
-[하이퍼클래스를 시작해서](https://www.gohighlevel.com/freetrial16?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook) 오늘부터 소셜미디어, 광고, 후속조치를 자동화하세요.
+[하이퍼클래스를 시작해서](https://hyperclass.ai/freetrial16?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook) 오늘부터 소셜미디어, 광고, 후속조치를 자동화하세요.
 
 ---
 *원문 최종 수정: Tue, 11 Feb, 2025 at 5:38 AM*  

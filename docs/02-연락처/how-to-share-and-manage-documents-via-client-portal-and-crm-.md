@@ -113,8 +113,8 @@ CRM에서 미리보기 및 다운로드
 
 ## 관련 자료
 
-- [고객이 클라이언트 포털을 사용하는 방법](https://gohighlevelassist.freshdesk.com/a/solutions/articles/155000000197?portalId=48000045315)
-- [CRM의 문서 개요](https://gohighlevelassist.freshdesk.com/a/solutions/articles/155000001245?portalId=48000045315)
+- [고객이 클라이언트 포털을 사용하는 방법](https://hyperclass.gitbook.io/hyperclass-docs)
+- [CRM의 문서 개요](https://hyperclass.gitbook.io/hyperclass-docs)
 
 ---
 *원문 최종 수정: Mon, 5 May, 2025 at 9:49 AM*

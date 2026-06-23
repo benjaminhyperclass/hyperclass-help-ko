@@ -113,7 +113,7 @@ Hyperclass을 통해 당신이 물리적으로 운동장에 있지 않을 때도
 
 Hyperclass은 충성도를 구축하고, 평생 가치를 증가시키며, 가족처럼 느껴지는 단골들로 체육관을 활기차게 유지하는 것을 쉽게 만들어줍니다.
 
-[오늘 Hyperclass에 가입하세요](https://www.gohighlevel.com/?utm_source=seo&utm_medium=organic&utm_campaign=gym&utm_term=gym&utm_content=playbook)
+[오늘 Hyperclass에 가입하세요](https://hyperclass.ai/?utm_source=seo&utm_medium=organic&utm_campaign=gym&utm_term=gym&utm_content=playbook)
 
 ---
 *원문 최종 수정: Tue, 15 Apr, 2025 at 2:35 AM*

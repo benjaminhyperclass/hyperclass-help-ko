@@ -52,11 +52,11 @@
 | 개발자의 배포 설정 시나리오 | 사용자 설치 시나리오 | 올바른 액세스 토큰 얻기 |
 |---|---|---|
 | **대상 사용자는 누구인가요?** | **누가 앱을 설치할 수 있나요?** | **에이전시에서 앱을 일괄 설치할 수 있나요?** |
-| Agency | NA | NA | Agency 사용자가 앱 설치 | **1단계:** [Get Access Token API](https://marketplace.gohighlevel.com/docs/ghl/oauth/get-access-token)에서 설치 유형 확인<br>"isBulkInstallation" : false,<br>"userType" : "Company" | **2단계:** NA |
+| Agency | NA | NA | Agency 사용자가 앱 설치 | **1단계:** [Get Access Token API](https://marketplace.hyperclass.ai/docs/ghl/oauth/get-access-token)에서 설치 유형 확인<br>"isBulkInstallation" : false,<br>"userType" : "Company" | **2단계:** NA |
 | Sub-account | Agency & sub-account | No | Sub-account 사용자가 앱 설치 | "isBulkInstallation" : false,<br>"userType" : "Location" | NA |
 | | | | Agency 사용자가 앱 설치 | "isBulkInstallation" : false,<br>"userType" : "Location" | NA |
 | | | Yes | Sub-account 사용자가 앱 설치 | "isBulkInstallation" : false,<br>"userType" : "Location" | NA |
-| | | | **[새롭고 권장되는 방식]**<br>Agency 사용자가 앱 설치 | "isBulkInstallation" : true,<br>"userType" : "Company" | 1. [앱이 설치된 하위 계정 가져오기](https://marketplace.gohighlevel.com/docs/ghl/oauth/get-installed-location)<br>2. 앱이 설치된 모든 로케이션에 대해 [에이전시 토큰을 사용하여 로케이션 토큰 가져오기](https://marketplace.gohighlevel.com/docs/ghl/oauth/get-location-access-token)<br>3. 향후 자동 설치나 SaaS 플랜의 일부로 수행되는 설치에 대해 [AppInstall 웹훅 이벤트](https://marketplace.gohighlevel.com/docs/webhook/AppInstall) 수신 및 새로 설치된 로케이션에 대해 [에이전시 토큰을 사용하여 로케이션 토큰 가져오기](https://marketplace.gohighlevel.com/docs/ghl/oauth/get-location-access-token) |
+| | | | **[새롭고 권장되는 방식]**<br>Agency 사용자가 앱 설치 | "isBulkInstallation" : true,<br>"userType" : "Company" | 1. [앱이 설치된 하위 계정 가져오기](https://marketplace.hyperclass.ai/docs/ghl/oauth/get-installed-location)<br>2. 앱이 설치된 모든 로케이션에 대해 [에이전시 토큰을 사용하여 로케이션 토큰 가져오기](https://marketplace.hyperclass.ai/docs/ghl/oauth/get-location-access-token)<br>3. 향후 자동 설치나 SaaS 플랜의 일부로 수행되는 설치에 대해 [AppInstall 웹훅 이벤트](https://marketplace.hyperclass.ai/docs/webhook/AppInstall) 수신 및 새로 설치된 로케이션에 대해 [에이전시 토큰을 사용하여 로케이션 토큰 가져오기](https://marketplace.hyperclass.ai/docs/ghl/oauth/get-location-access-token) |
 | | Agency Only | Yes | Agency 사용자가 앱 설치 | "isBulkInstallation" : true,<br>"userType" : "Company" | 위와 동일 |
 
 ## [각 배포 모델별 지원 가격 모델을 설명한 문서](../../36-기타/리커버리/set-up-your-app-pricing.md)

@@ -28,7 +28,7 @@
 
 ### 에이전시 Stripe 계정 연결
 
-에이전시 Stripe 계정은 고객으로부터 브랜드 클라이언트포털 앱 구독 결제를 수집하는 데 사용됩니다. 다음 가이드를 따라 에이전시 Stripe 계정을 연결할 수 있습니다 - https://help.gohighlevel.com/support/solutions/articles/48001171910-how-to-connect-stripe-to-your-agency-dashboard
+에이전시 Stripe 계정은 고객으로부터 브랜드 클라이언트포털 앱 구독 결제를 수집하는 데 사용됩니다. 다음 가이드를 따라 에이전시 Stripe 계정을 연결할 수 있습니다 - https://hyperclass.gitbook.io/hyperclass-docs
 
 **참고:** Stripe가 없어도 자동 재판매 기능 없이 하위 계정에 브랜드 클라이언트 포털 앱을 배포할 수 있습니다.
 

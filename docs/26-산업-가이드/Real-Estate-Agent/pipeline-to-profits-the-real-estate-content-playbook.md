@@ -42,7 +42,7 @@
 ✅ DM, 전화, 예약 유도하기
 ✅ Hyperclass 자동화로 콘텐츠 + 너처링 확장하기
 
-## [오늘 Hyperclass에 가입하고](https://www.gohighlevel.com/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Agent&utm_content=Playbook) 콘텐츠를 현금 흐름으로 전환하세요
+## [오늘 Hyperclass에 가입하고](https://hyperclass.ai/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Agent&utm_content=Playbook) 콘텐츠를 현금 흐름으로 전환하세요
 
 ## 배울 내용
 
@@ -164,7 +164,7 @@
 ✅ 게시물을 매물로, DM을 거래로, 가시성을 수익으로 전환하기
 
 콘텐츠를 간소화하고 파이프라인을 자동 운전으로 성장시키고 싶으신가요?
-[**오늘 Hyperclass를 시작하고**](https://www.gohighlevel.com/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Agent&utm_content=Playbook) 부동산 브랜드를 쉽게 확장하세요.
+[**오늘 Hyperclass를 시작하고**](https://hyperclass.ai/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Agent&utm_content=Playbook) 부동산 브랜드를 쉽게 확장하세요.
 
 ---
 *원문 최종 수정: Tue, 27 May, 2025 at 8:45 AM*

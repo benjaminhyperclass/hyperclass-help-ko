@@ -54,7 +54,7 @@
 ✅ 사전 승인부터 거래 완료까지 모든 단계를 추적
 ✅ 성사율, 리드 소스, 수익을 실시간으로 분석
 
-올인원 솔루션으로 모기지 비즈니스를 손쉽게 관리하세요 - **[지금 하이레벨에 가입하기](https://www.gohighlevel.com/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Mortgage+Broker&utm_content=Playbook)**
+올인원 솔루션으로 모기지 비즈니스를 손쉽게 관리하세요 - **[지금 하이레벨에 가입하기](https://hyperclass.ai/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Mortgage+Broker&utm_content=Playbook)**
 
 ### 이 가이드에서 배우게 될 내용
 
@@ -202,7 +202,7 @@
 
 ### 모기지 비즈니스를 자동화할 준비가 되셨나요?
 
-[하이레벨에 가입](https://www.gohighlevel.com/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Mortgage+Broker&utm_content=Playbook)해서 일상 업무를 자동 운항으로 바꿔보세요.
+[하이레벨에 가입](https://hyperclass.ai/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Mortgage+Broker&utm_content=Playbook)해서 일상 업무를 자동 운항으로 바꿔보세요.
 
 ---
 *원문 최종 수정: Tue, 27 May, 2025 at 9:33 AM*

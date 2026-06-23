@@ -132,7 +132,7 @@
 6. 위 동영상의 단계를 완료한 후, [페이스북 리드 광고 테스팅 도구](https://developers.facebook.com/tools/lead-ads-testing)를 사용하여 리드가 하위 계정에 추가되고 있는지 확인하세요.
 
 리드 광고 테스팅 도구: https://developers.facebook.com/tools/lead-ads-testing
-페이스북 페이지 선택: https://app.gohighlevel.com/location/YOUR_LOCATION_ID/facebook_page_select
+페이스북 페이지 선택: https://app.hyperclass.ai/location/YOUR_LOCATION_ID/facebook_page_select
 
 **참고**: 테스트할 때 앱 ID 39018126477806를 찾을 수 있나요? (위 동영상에서 2분 49초에 언급) 앱 ID가 표시되지 않으면 LeadConnector에 접근 권한이 없습니다. 그런 경우 아래 7단계를 계속 진행하세요.
 

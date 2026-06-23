@@ -16,7 +16,7 @@
 
 아래 동영상과 같이 "**Hyperclass General Affiliate Campaign**" 웹훅 설정을 요청하세요.
 
-Hyperclass **Agency Pro**($497/월)의 추천을 웹훅으로 추적하려면 "**Supercharged [SaaS Program](https://www.gohighlevel.com/ssp)**" 웹훅 설정을 요청하세요. 이는 아래 동영상에 표시된 것과 동일합니다.
+Hyperclass **Agency Pro**($497/월)의 추천을 웹훅으로 추적하려면 "**Supercharged [SaaS Program](https://hyperclass.ai/ssp)**" 웹훅 설정을 요청하세요. 이는 아래 동영상에 표시된 것과 동일합니다.
 
 아래 설명된 일반적인 과정을 따르세요. 또한 제출한 웹훅이 Supercharged SaaS Program($497/월) 추천에 적용되기를 원한다면 지원팀에 알려주세요.
 

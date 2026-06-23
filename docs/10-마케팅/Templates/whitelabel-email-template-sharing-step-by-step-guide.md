@@ -26,7 +26,7 @@
 - 생성된 공유 링크를 복사하세요. 다음과 같이 표시됩니다:
 
 ```
-https://affiliates.gohighlevel.com/?fp_ref=xxxx&email_template_share=6438b5b145411d0ce4332f1b
+https://affiliates.hyperclass.ai/?fp_ref=xxxx&email_template_share=6438b5b145411d0ce4332f1b
 ```
 
 ### **2. 공유 ID 복사하기**

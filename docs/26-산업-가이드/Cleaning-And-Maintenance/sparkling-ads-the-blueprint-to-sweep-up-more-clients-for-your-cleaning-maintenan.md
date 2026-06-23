@@ -6,7 +6,7 @@
 
 # 반짝이는 광고: 청소 및 유지보수 업체를 위한 더 많은 고객 확보 플랜
 
-[ ](https://blog.gohighlevel.com/setting-up-high-performing-sms-campaigns-with-highlevel-your-ultimate-guide/)목차
+[ ](https://blog.hyperclass.ai/setting-up-high-performing-sms-campaigns-with-highlevel-your-ultimate-guide/)목차
 
 - [이 플레이북이 중요한 이유](#이-플레이북이-중요한-이유)
 - [무엇을 배울 수 있나요?](#무엇을-배울-수-있나요)
@@ -41,7 +41,7 @@
 
 ### **결과를 가져오는 광고 전략을 만들어보겠습니다.**
 
-오늘 마케팅을 강화하세요 - **[하이퍼클래스와 함께 시작하세요](https://www.gohighlevel.com/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook)**
+오늘 마케팅을 강화하세요 - **[하이퍼클래스와 함께 시작하세요](https://hyperclass.ai/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook)**
 
 ## 1단계: Google 광고 및 로컬 서비스 광고로 고객에게 노출하기
 
@@ -160,7 +160,7 @@
 - **명함, 전단지, 트럭**에 **QR 코드**를 배치합니다.
 - **즉시 응답 및 알림**을 자동화합니다.
 
-[청소용 Text-to-Lead 캠페인 사용 방법](https://blog.gohighlevel.com/setting-up-high-performing-sms-campaigns-with-highlevel-your-ultimate-guide/)
+[청소용 Text-to-Lead 캠페인 사용 방법](https://blog.hyperclass.ai/setting-up-high-performing-sms-campaigns-with-highlevel-your-ultimate-guide/)
 
 ## 4단계: 최대 ROI를 위한 광고 추적 및 최적화
 
@@ -189,7 +189,7 @@
 ✅ 청소 서비스가 필요하기 전에 **기업 및 집주인을 타겟팅**합니다.
 ✅ **자동화 및 AI 기반 후속 조치**로 **더 많은 리드를 전환**합니다.
 
-### 광고를 24시간 리드 엔진으로 만들어보세요—[하이퍼클래스와 함께 시작하세요!](https://www.gohighlevel.com/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook)
+### 광고를 24시간 리드 엔진으로 만들어보세요—[하이퍼클래스와 함께 시작하세요!](https://hyperclass.ai/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook)
 
 ---
 *원문 최종 수정: 2025년 4월 10일*

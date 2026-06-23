@@ -41,7 +41,7 @@
 
 구글에서 높은 순위에 노출되지 않고 후속 조치를 자동화하지 않으면, 거래를 놓치고 있는 것입니다.
 
-[**Hyperclass 가입하기**](https://www.gohighlevel.com/?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Mortgage+Broker&utm_content=Playbook) — 모기지 브로커 사업을 다음 단계로 끌어올리세요.
+[**Hyperclass 가입하기**](https://hyperclass.ai/?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Mortgage+Broker&utm_content=Playbook) — 모기지 브로커 사업을 다음 단계로 끌어올리세요.
 
 ## 잠들어 있는 동안에도 작동하는 시스템이 있다면?
 
@@ -235,7 +235,7 @@ Hyperclass에서 이탈 의도 팝업 만드는 방법
 
 ### 성장할 준비가 되셨나요?
 
-**[Hyperclass 가입하기](https://www.gohighlevel.com/?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Mortgage+Broker&utm_content=Playbook)** — 모기지 사업을 손쉽게 확장하는 것을 지켜보세요.
+**[Hyperclass 가입하기](https://hyperclass.ai/?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Mortgage+Broker&utm_content=Playbook)** — 모기지 사업을 손쉽게 확장하는 것을 지켜보세요.
 
 ---
 *원문 최종 수정: 2025년 5월 20일*

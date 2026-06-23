@@ -169,7 +169,7 @@ Hyperclass은 모든 것을 통합합니다: 예약, 커뮤니케이션, 알림,
 
 ---
 
-성장할 준비가 되셨나요? [Hyperclass 가입하기](https://www.gohighlevel.com/?utm_source=seo&utm_medium=organic&utm_campaign=dentalclinic&utm_term=dentalclinic&utm_content=playbook)
+성장할 준비가 되셨나요? [Hyperclass 가입하기](https://hyperclass.ai/?utm_source=seo&utm_medium=organic&utm_campaign=dentalclinic&utm_term=dentalclinic&utm_content=playbook)
 
 ---
 *원문 최종 수정: Sun, 18 May, 2025 at 1:17 PM*

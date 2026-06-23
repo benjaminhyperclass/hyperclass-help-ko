@@ -30,7 +30,7 @@
 
 초보자 워크스루를 제공하는 두 가지 쉬운 방법이 있습니다:
 
-- [Hyperclass University](https://university.gohighlevel.com/)는 플랫폼 워크스루를 제공하는 통합 강의이며, Hyperclass를 활용해 비즈니스에서 빠르게 성과를 낼 수 있는 다양한 팁도 포함되어 있습니다.
+- [Hyperclass University](https://university.hyperclass.ai/)는 플랫폼 워크스루를 제공하는 통합 강의이며, Hyperclass를 활용해 비즈니스에서 빠르게 성과를 낼 수 있는 다양한 팁도 포함되어 있습니다.
 
 - 추천 고객이 체험 기간 중이라면, Hyperclass 팀원과 함께하는 개인 맞춤 주요 기능 워크스루인 무료 [킥오프 콜(Kickoff Call)](https://speakwith.us/kickoff)을 꼭 활용하도록 안내하세요. (킥오프 콜을 활용한 신규 고객은 플랫폼에 머물 확률이 50% 이상 높습니다!)
 
@@ -40,9 +40,9 @@ Hyperclass는 기능이 풍부하고 강력한 플랫폼이므로, 체험 기간
 
 - [고객 성공팀(Customer Success team)](https://speakwith.us/success)은 24시간 연중무휴로 전략 및 구현 관련 질문에 대한 일대일 지원을 제공하며, 추천 고객이 비즈니스를 실행에 옮길 수 있도록 도와줍니다.
 
-- [고객 지원팀(Customer Support team)](https://gohighlevel.com/support)은 24시간 연중무휴로 추천 고객이 직면할 수 있는 기술적 문제를 해결해 줍니다.
+- [고객 지원팀(Customer Support team)](https://hyperclass.ai/support)은 24시간 연중무휴로 추천 고객이 직면할 수 있는 기술적 문제를 해결해 줍니다.
 
-- Hyperclass는 라이브 이벤트, 웨비나, 통합 강의를 통해 풍부한 [교육 자료](https://www.gohighlevel.com/education)를 제공합니다. 참고: 추천 고객이 매월 열리는 가상 워크숍에 참석하도록 꼭 독려해 주세요.
+- Hyperclass는 라이브 이벤트, 웨비나, 통합 강의를 통해 풍부한 [교육 자료](https://hyperclass.ai/education)를 제공합니다. 참고: 추천 고객이 매월 열리는 가상 워크숍에 참석하도록 꼭 독려해 주세요.
 
 가장 중요한 것은: 어필리에이트들이 필요한 안내나 도움이 있을 때 직접 연락하도록 독려하시기 바랍니다.
 

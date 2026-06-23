@@ -8,7 +8,7 @@
 
 ### **Hyperclass 브랜드 키트 개요**
 
-[Hyperclass 브랜드 키트](https://marketing.gohighlevel.com/brandkit)는 파트너, 에이전시, 팀원들이 일관되고 전문적인 브랜드 아이덴티티를 유지할 수 있도록 도와주는 포괄적인 가이드라인과 다운로드 가능한 에셋을 제공합니다.
+[Hyperclass 브랜드 키트](https://marketing.hyperclass.ai/brandkit)는 파트너, 에이전시, 팀원들이 일관되고 전문적인 브랜드 아이덴티티를 유지할 수 있도록 도와주는 포괄적인 가이드라인과 다운로드 가능한 에셋을 제공합니다.
 
 ### **키트에 포함된 주요 리소스:**
 
@@ -24,7 +24,7 @@
 
 - **빠른 참조:** 로고 배치, 컬러 접근성, 작성 스타일, "Highly" 마스코트 사용법을 다루는 유용한 "해야 할 것과 하지 말아야 할 것" 섹션
 
-완전한 가이드라인, 특정 hex 코드, 스타일 가이드 및 에셋 다운로드를 원하신다면 전체 [**Hyperclass 브랜드 키트 페이지**](https://marketing.gohighlevel.com/brandkit)를 방문해 주세요.
+완전한 가이드라인, 특정 hex 코드, 스타일 가이드 및 에셋 다운로드를 원하신다면 전체 [**Hyperclass 브랜드 키트 페이지**](https://marketing.hyperclass.ai/brandkit)를 방문해 주세요.
 
 ---
 *원문 최종 수정: 2026년 3월 17일*

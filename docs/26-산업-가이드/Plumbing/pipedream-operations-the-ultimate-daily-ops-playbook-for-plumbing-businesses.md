@@ -40,7 +40,7 @@
 
 하지만 배관 사업이 스스로 거의 돌아간다면 어떨까요? Hyperclass(하이퍼클래스)를 통해서는 가능합니다.
 
-[Hyperclass에 가입하기](https://www.gohighlevel.com/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services&utm_term=Plumbing&utm_content=Playbook)하여 오늘부터 사업의 주도권을 되찾으세요!
+[Hyperclass에 가입하기](https://hyperclass.ai/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services&utm_term=Plumbing&utm_content=Playbook)하여 오늘부터 사업의 주도권을 되찾으세요!
 
 ### 손쉽게 운영되는 배관 사업을 상상해보세요:
 
@@ -205,7 +205,7 @@ Hyperclass와 함께하면 배관 사업 운영이 간소화되고 확장 가능
 
 수동 운영에 시간을 낭비하지 말고 오늘부터 배관 사업을 성장시키세요!
 
-[**Hyperclass에 가입하기**](https://www.gohighlevel.com/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services&utm_term=Plumbing&utm_content=Playbook)** & 지금 배관 사업을 자동화하세요!**
+[**Hyperclass에 가입하기**](https://hyperclass.ai/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services&utm_term=Plumbing&utm_content=Playbook)** & 지금 배관 사업을 자동화하세요!**
 
 ---
 *원문 최종 수정: Thu, 10 Apr, 2025 at 6:26 AM*

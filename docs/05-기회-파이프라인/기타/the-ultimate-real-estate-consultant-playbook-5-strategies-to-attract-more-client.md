@@ -33,7 +33,7 @@ Hyperclass를 올바르게 설정하고 더 많은 매물, 구매자, 추천을 
 
 이 플레이북은 Hyperclass를 단계별로 설정하여 리드 생성, 후속 관리, 소셜 미디어, 리뷰를 자동화하는 방법을 보여줍니다. 당신이 매물을 보러 나가 있는 동안에도 브랜드가 계속 일할 수 있도록 말이죠.
 
-부동산 컨설턴트 비즈니스를 성장시키세요 - [**오늘 Hyperclass에 가입하기**](https://www.gohighlevel.com/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Consultant&utm_content=Playbook)
+부동산 컨설턴트 비즈니스를 성장시키세요 - [**오늘 Hyperclass에 가입하기**](https://hyperclass.ai/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Consultant&utm_content=Playbook)
 
 ## 이 가이드에서 배울 내용
 
@@ -216,7 +216,7 @@ Hyperclass 내의 AI 도구를 사용해 이런 콘텐츠를 생성하도록 도
 
 또 다른 고객이 빠져나가게 두지 마세요.
 
-**[지금 Hyperclass](https://www.gohighlevel.com/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Consultant&utm_content=Playbook)** 계정을 설정하고 쉽게 더 많은 거래를 성사시키기 시작하세요.
+**[지금 Hyperclass](https://hyperclass.ai/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Consultant&utm_content=Playbook)** 계정을 설정하고 쉽게 더 많은 거래를 성사시키기 시작하세요.
 
 ---
 *원문 최종 수정: Wed, 28 May, 2025 at 11:23 AM*

@@ -30,7 +30,7 @@
 
 ### 어필리에이트 정책
 
-하이퍼클래스 어필리에이트 정책을 반드시 검토하고 이해하시기 바랍니다. 정책은 다음 링크에서 확인하실 수 있습니다: [https://www.gohighlevel.com/affiliate-policy](https://www.gohighlevel.com/affiliate-policy)
+하이퍼클래스 어필리에이트 정책을 반드시 검토하고 이해하시기 바랍니다. 정책은 다음 링크에서 확인하실 수 있습니다: [https://hyperclass.ai/affiliate-policy](https://hyperclass.ai/affiliate-policy)
 
 ---
 *원문 최종 수정: 2022년 3월 17일 목요일 오후 12:32*

@@ -86,11 +86,11 @@
 
 - 봇을 훈련할 때 크롤링할 수 있는 여러 도메인 유형이 있습니다. 선택하는 도메인 유형에 따라 봇을 훈련하기 위해 크롤링할 URL의 수가 결정됩니다.
 
-**정확한 URL(Exact URL):** 특정 웹페이지를 크롤링하여 해당 데이터를 훈련에 사용합니다. 예를 들어, https://www.gohighlevel.com/을 입력하면 해당 정확한 웹페이지로만 크롤링을 제한합니다.
+**정확한 URL(Exact URL):** 특정 웹페이지를 크롤링하여 해당 데이터를 훈련에 사용합니다. 예를 들어, https://hyperclass.ai/을 입력하면 해당 정확한 웹페이지로만 크롤링을 제한합니다.
 
-- **경로가 포함된 모든 URL(All URLs with the Path):** 특정 경로 내의 모든 페이지를 크롤링합니다. 예를 들어, https://www.gohighlevel.com/marketing을 입력하면 /marketing/offers나 /marketing/promotions와 같은 해당 URL 경로를 사용하는 모든 페이지를 포함합니다.
+- **경로가 포함된 모든 URL(All URLs with the Path):** 특정 경로 내의 모든 페이지를 크롤링합니다. 예를 들어, https://hyperclass.ai/marketing을 입력하면 /marketing/offers나 /marketing/promotions와 같은 해당 URL 경로를 사용하는 모든 페이지를 포함합니다.
 
-- **이 도메인의 모든 URL(All URLs in this Domain):** 도메인 내의 모든 페이지를 크롤링합니다. 예를 들어, https://www.gohighlevel.com/promo를 입력하면 루트 도메인 www.Hyperclass.com의 모든 페이지를 포함합니다.
+- **이 도메인의 모든 URL(All URLs in this Domain):** 도메인 내의 모든 페이지를 크롤링합니다. 예를 들어, https://hyperclass.ai/promo를 입력하면 루트 도메인 www.Hyperclass.com의 모든 페이지를 포함합니다.
 
 - **URL**을 추가하세요.
 

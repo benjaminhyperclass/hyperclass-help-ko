@@ -12,7 +12,7 @@
 
 "커스텀 대화 제공업체"는 에이전시 계정의 앱 마켓플레이스에서 접근할 수 있는 추가 SMS 및 이메일 제공업체를 의미합니다. 이는 Hyperclass에서 기본 지원되는 "네이티브 대화 제공업체"와는 다릅니다(예: 왓츠앱은 기본 지원되므로 마켓플레이스를 통할 필요가 없습니다).
 
-Hyperclass 앱 마켓플레이스용 앱을 개발하고 싶다면 여기에서 시작하세요: [https://marketplace.gohighlevel.com/](https://marketplace.gohighlevel.com/)
+Hyperclass 앱 마켓플레이스용 앱을 개발하고 싶다면 여기에서 시작하세요: [https://marketplace.hyperclass.ai/](https://marketplace.hyperclass.ai/)
 
 ---
 

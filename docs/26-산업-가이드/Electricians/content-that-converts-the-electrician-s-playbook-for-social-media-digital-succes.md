@@ -52,7 +52,7 @@
 - #### **Hyperclass가 어떻게** 콘텐츠 생성, 스케줄링, 참여를 자동화해 **원활한 실행**을 제공하는지
 - #### **오프라인 콘텐츠(팜플릿, 광고판, 뉴스레터)**를 포함해 **도달 범위를 확장**하는 방법
 
-#### [지금 Hyperclass에 가입하고](https://www.gohighlevel.com/freetrial16?utm_source=FreshDesk&utm_medium=organic&utm_campaign=Home+Services+-+Electricians&utm_term=Electricians&utm_content=Playbook) 콘텐츠를 현금 흐름으로 바꿔보세요
+#### [지금 Hyperclass에 가입하고](https://hyperclass.ai/freetrial16?utm_source=FreshDesk&utm_medium=organic&utm_campaign=Home+Services+-+Electricians&utm_term=Electricians&utm_content=Playbook) 콘텐츠를 현금 흐름으로 바꿔보세요
 
 ## **1단계: 효과적인 콘텐츠 유형 이해하기**
 
@@ -171,7 +171,7 @@ Google 비즈니스 프로필에 **매주 업데이트**를 게시하면 지역 
 올바른 자동화 = **더 많은 전환.**
 
 ### **추측을 멈추고 성장을 시작하세요.**
-[지금 Hyperclass에 가입하고](https://www.gohighlevel.com/freetrial16?utm_source=FreshDesk&utm_medium=organic&utm_campaign=Home+Services+-+Electricians&utm_term=Electricians&utm_content=Playbook) 콘텐츠를 현금 흐름으로 바꿔보세요.
+[지금 Hyperclass에 가입하고](https://hyperclass.ai/freetrial16?utm_source=FreshDesk&utm_medium=organic&utm_campaign=Home+Services+-+Electricians&utm_term=Electricians&utm_content=Playbook) 콘텐츠를 현금 흐름으로 바꿔보세요.
 
 ---
 *원문 최종 수정: Wed, 5 Feb, 2025 at 6:44 AM*

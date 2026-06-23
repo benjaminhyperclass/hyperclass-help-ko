@@ -8,7 +8,7 @@
 
 프라이빗 통합(Private Integrations)을 사용하면 Hyperclass 계정과 모든 외부 애플리케이션 간에 안전하고 맞춤형 연결을 구축할 수 있습니다. 이 기능은 내부 도구, 자동화 워크플로우, 그리고 완전한 공개 앱을 개발하지 않고도 API 액세스가 필요한 맞춤형 시스템에 이상적입니다.
 
-**중요**: 사용 가능한 모든 엔드포인트와 요청/응답 세부사항의 전체 목록은 공식 API 문서를 참조하세요: [https://marketplace.gohighlevel.com/docs/](https://marketplace.gohighlevel.com/docs/)
+**중요**: 사용 가능한 모든 엔드포인트와 요청/응답 세부사항의 전체 목록은 공식 API 문서를 참조하세요: [https://marketplace.hyperclass.ai/docs/](https://marketplace.hyperclass.ai/docs/)
 
 ---
 
@@ -114,7 +114,7 @@ curl --request POST \
 - LOCATION_ID를 실제 하위 계정 ID로 바꾸세요.
 - Authorization 값을 생성된 프라이빗 통합 토큰으로 바꾸세요.
 
-사용 가능한 모든 엔드포인트 및 테스트 기능의 전체 목록은 공식 개발자 문서를 참조하세요: [https://developers.gohighlevel.com](https://developers.gohighlevel.com)
+사용 가능한 모든 엔드포인트 및 테스트 기능의 전체 목록은 공식 개발자 문서를 참조하세요: [https://developers.hyperclass.ai](https://developers.hyperclass.ai)
 
 ---
 

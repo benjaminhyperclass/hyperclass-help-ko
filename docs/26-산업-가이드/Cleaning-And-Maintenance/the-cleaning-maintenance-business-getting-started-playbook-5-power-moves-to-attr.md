@@ -33,7 +33,7 @@
 
 #### 이 **시작 가이드**는 **하이퍼클래스**를 올바른 방법으로 설정하는 **5가지 가장 중요한 단계**를 보여드려서, **더 많은 고객을 확보하고, 반복 사업을 보장하며, 브랜드를 손쉽게 성장**시킬 수 있도록 합니다.
 
-지금 사업을 성장시키세요 - **[하이퍼클래스에 가입하기](https://www.gohighlevel.com/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook)**
+지금 사업을 성장시키세요 - **[하이퍼클래스에 가입하기](https://hyperclass.ai/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook)**
 
 ---
 
@@ -208,7 +208,7 @@
 세련된 성과: 청소 및 유지관리를 위한 궁극적인 일일 운영 가이드
 
 ### **더 빠르게 성장하고 싶으신가요?**
-[하이퍼클래스에 가입](https://www.gohighlevel.com/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook)하고 즉시 더 많은 청소 업무를 예약받으세요!
+[하이퍼클래스에 가입](https://hyperclass.ai/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook)하고 즉시 더 많은 청소 업무를 예약받으세요!
 
 ---
 *원문 최종 수정: Fri, 14 Feb, 2025 at 6:03 AM*

@@ -10,13 +10,13 @@
 
 이 영상에서 언급된 다른 영상들:
 
-[2단계 주문 폼 (1단계)](https://gohighlevelassist.freshdesk.com/support/solutions/articles/48000980307-two-step-order-form-step-1-)
+[2단계 주문 폼 (1단계)](https://hyperclass.gitbook.io/hyperclass-docs)
 
-[2단계 주문 폼 (2단계: 업셀 추가)](https://gohighlevelassist.freshdesk.com/support/solutions/articles/48000980306-two-step-order-form-step-2-adding-an-up-sell-product-)
+[2단계 주문 폼 (2단계: 업셀 추가)](https://hyperclass.gitbook.io/hyperclass-docs)
 
-[2단계 주문 폼 (4단계: 감사 페이지와 리다이렉트)](https://gohighlevelassist.freshdesk.com/support/solutions/articles/48000985183-two-step-order-form-step-4-thank-you-page-redirects-)
+[2단계 주문 폼 (4단계: 감사 페이지와 리다이렉트)](https://hyperclass.gitbook.io/hyperclass-docs)
 
-[퍼널 스타일링](https://gohighlevelassist.freshdesk.com/support/solutions/articles/48000980309-style-the-funnel)
+[퍼널 스타일링](https://hyperclass.gitbook.io/hyperclass-docs)
 
 ---
 *원문 최종 수정: Mon, 27 Jan, 2020 at 10:13 AM*

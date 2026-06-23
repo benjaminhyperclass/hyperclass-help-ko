@@ -179,7 +179,7 @@ FAQ를 생성하면 시스템에서 사용할 수 있는 기본 질문 세트를
 
 ![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48290290123/original/vVpURDuGd6rEqSzcBOg9dDFpjlnBr3saDw.png?1680202190)
 
-질문을 정의하고 고객이 답변을 입력하게 하려면, 로케이션에 질문을 입력하고 고객이 [https://app.gohighlevel.com/v2/location/<<locationid>>/settings/eliza_faq](https://app.gohighlevel.com/v2/location/X5392tCsXVshYg8R5fll/settings/eliza_faq)에 로그인하여 답변을 입력하도록 요청할 수 있습니다. 이 답변들은 Eliza 에이전트 플랫폼에서 사용할 수 있습니다. 하위 계정은 하위 계정 설정(Sub-Account settings) > Eliza 서비스 탭에 액세스할 수 있어야 합니다. 해당 사용자의 사용자 권한을 통해 이 탭을 활성화하세요.
+질문을 정의하고 고객이 답변을 입력하게 하려면, 로케이션에 질문을 입력하고 고객이 [https://app.hyperclass.ai/v2/location/<<locationid>>/settings/eliza_faq](https://app.hyperclass.ai/v2/location/X5392tCsXVshYg8R5fll/settings/eliza_faq)에 로그인하여 답변을 입력하도록 요청할 수 있습니다. 이 답변들은 Eliza 에이전트 플랫폼에서 사용할 수 있습니다. 하위 계정은 하위 계정 설정(Sub-Account settings) > Eliza 서비스 탭에 액세스할 수 있어야 합니다. 해당 사용자의 사용자 권한을 통해 이 탭을 활성화하세요.
 
 답변 상자 근처의 아이콘을 클릭하여 답변에 커스텀 값을 사용할 수도 있습니다.
 

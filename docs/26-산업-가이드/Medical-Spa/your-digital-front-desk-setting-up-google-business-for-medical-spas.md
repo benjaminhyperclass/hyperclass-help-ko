@@ -109,7 +109,7 @@
 [등록 관리 연동 가이드](../../31-리셀링/Online-Listings/online-listing-overview-setup-doc.md)
 
 ---
-**이 모든 것을 완벽하게 설정하는 데 도움이 필요하신가요? [무료 체험을 시작하세요](https://www.gohighlevel.com/?utm_source=seo&utm_medium=organic&utm_campaign=medspa&utm_term=medspa&utm_content=playbook). 메디컬 스파를 도시 최고 평점의 브랜드로 만들어 드리겠습니다.**
+**이 모든 것을 완벽하게 설정하는 데 도움이 필요하신가요? [무료 체험을 시작하세요](https://hyperclass.ai/?utm_source=seo&utm_medium=organic&utm_campaign=medspa&utm_term=medspa&utm_content=playbook). 메디컬 스파를 도시 최고 평점의 브랜드로 만들어 드리겠습니다.**
 
 ---
 *원문 최종 수정: Mon, 19 May, 2025 at 5:22 AM*

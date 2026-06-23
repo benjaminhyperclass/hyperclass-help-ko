@@ -186,7 +186,7 @@ Hyperclass을 사용하면 팀이 인력 부족 상황에서도 원활하게 운
 
 ---
 
-성장할 준비가 되셨나요? [Hyperclass 가입하기](https://www.gohighlevel.com/?utm_source=seo&utm_medium=organic&utm_campaign=chiropractor&utm_term=chiropractor&utm_content=playbook)
+성장할 준비가 되셨나요? [Hyperclass 가입하기](https://hyperclass.ai/?utm_source=seo&utm_medium=organic&utm_campaign=chiropractor&utm_term=chiropractor&utm_content=playbook)
 
 ---
 *원문 최종 수정: 2025년 5월 13일*

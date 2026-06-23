@@ -8,7 +8,7 @@
 
 이 가이드는 **외부 통신사**(Twilio가 아닌)에서 **Hyperclass 하위 계정**(로케이션)으로 번호를 이동하는 방법을 설명합니다. 필요한 서류 준비부터 포팅 신청, 이전 완료일 대응까지 전체 과정을 다룹니다.
 
-아래 안내사항에 따라 정보를 준비하고 [포팅 신청 폼](https://link.gohighlevel.com/widget/form/qX47XEC8HsDtrGkmbjFQ)을 작성해 주세요.
+아래 안내사항에 따라 정보를 준비하고 [포팅 신청 폼](https://link.hyperclass.ai/widget/form/qX47XEC8HsDtrGkmbjFQ)을 작성해 주세요.
 
 **중요**: 현재 **미국 번호**만 포팅이 가능합니다. 다른 국가의 번호 포팅은 [국제 번호 포팅 페이지](https://twlo.my.salesforce-sites.com/InternationalPorting)를 참조하세요. 승인서(LOA)가 필요한 경우 이 [템플릿](https://docs.google.com/document/d/1RITNwdQukTgXIp9KOUbFexLr8GdlW3yy2g-nLvI_Aps/edit?tab=t.0)을 사용하세요.
 
@@ -41,7 +41,7 @@
 
 포팅 과정은 50개 미만의 번호 요청 시 필요 서류 제출부터 2-4주, 더 크고 복잡한 포팅의 경우 6-8주가 소요됩니다. 이 과정에서 전화번호는 정상적으로 이용 가능하며, 포팅으로 인한 서비스 중단은 없습니다.
 
-[포팅 신청 폼은 여기서 확인하세요.](https://link.gohighlevel.com/widget/form/qX47XEC8HsDtrGkmbjFQ)
+[포팅 신청 폼은 여기서 확인하세요.](https://link.hyperclass.ai/widget/form/qX47XEC8HsDtrGkmbjFQ)
 
 ---
 
@@ -176,7 +176,7 @@ LC Phone 포팅 폼은 현재 미국 번호만 접수합니다. 국제 포팅의
 
 **Q. 포팅 폼은 어디서 찾을 수 있나요?**
 
-[포팅 신청 폼 링크](https://link.gohighlevel.com/widget/form/qX47XEC8HsDtrGkmbjFQ)입니다.
+[포팅 신청 폼 링크](https://link.hyperclass.ai/widget/form/qX47XEC8HsDtrGkmbjFQ)입니다.
 
 **Q. 특정 날짜/시간에 포팅할 수 있나요?**
 

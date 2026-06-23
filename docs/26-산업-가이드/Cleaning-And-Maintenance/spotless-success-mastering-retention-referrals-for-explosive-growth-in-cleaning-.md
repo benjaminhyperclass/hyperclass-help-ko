@@ -29,7 +29,7 @@
 
 #### 이 플레이북은 **행복한 고객을 재방문 비즈니스와 추천 머신으로 바꾸는 방법**을 별도의 노력 없이 보여드립니다.
 
-시작하기 전에 하이퍼클래스 계정이 필요합니다 - [**여기서 가입하세요!**](https://www.gohighlevel.com/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook)
+시작하기 전에 하이퍼클래스 계정이 필요합니다 - [**여기서 가입하세요!**](https://hyperclass.ai/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook)
 
 ### **무엇을 배우게 될까요?**
 
@@ -177,7 +177,7 @@
 ✅ **유지보수 플랜으로 정기 수익 확보**
 ✅ **AI와 자동화를 사용해 기존 고객과 소통**
 
-### 청소 사업을 다음 단계로—[하이퍼클래스와 함께 가입](https://www.gohighlevel.com/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook)하고 오늘부터 성장을 시작하세요!
+### 청소 사업을 다음 단계로—[하이퍼클래스와 함께 가입](https://hyperclass.ai/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook)하고 오늘부터 성장을 시작하세요!
 
 ---
 *원문 최종 수정: Fri, 14 Feb, 2025 at 5:43 AM*

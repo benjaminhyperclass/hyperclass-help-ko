@@ -8,7 +8,7 @@
 
 CRM 마켓플레이스의 OAuth API는 개발자에게 두 가지 접근 방식을 제공합니다: 로케이션 레벨 액세스(Location Level Access, 하위 계정이라고도 함)와 에이전시 레벨 액세스(Agency Level Access, 회사라고도 함)입니다. 이러한 접근 레벨은 개별 로케이션이나 에이전시 전체 수준에서 로케이션 데이터를 포괄적으로 제어할 수 있게 해줍니다. 로케이션 레벨 액세스를 통해 개발자는 하위 계정에 특화된 작업을 수행할 수 있고, 에이전시 레벨 액세스는 전체 에이전시의 데이터를 관리할 수 있게 합니다. 이러한 구분을 통해 효율적인 데이터 처리와 향상된 CRM 마켓플레이스 API v2.0 상호 운용성을 보장합니다.
 
-개발자 지원 링크: [https://developers.gohighlevel.com/support](how-to-get-started-with-the-developer-s-marketplace.md)
+개발자 지원 링크: [https://developers.hyperclass.ai/support](how-to-get-started-with-the-developer-s-marketplace.md)
 
 개발자 지원 티켓을 생성할 때는 항상 모든 세부 정보와 가능한 경우 Loom 영상을 제공해주세요.
 
@@ -136,7 +136,7 @@ PKCE가 활성화되면 인증 요청에는 `code_challenge`와 `code_challenge_
 
 마켓플레이스의 구성 세부사항은 다음을 참조하세요:
 
-[https://marketplace.gohighlevel.com/docs/oauth/ExternalAuthentication/index.html](how-to-get-started-with-the-developer-s-marketplace.md)
+[https://marketplace.hyperclass.ai/docs/oauth/ExternalAuthentication/index.html](how-to-get-started-with-the-developer-s-marketplace.md)
 
 **사용 사례:**
 

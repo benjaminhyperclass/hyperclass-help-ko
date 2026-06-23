@@ -62,7 +62,7 @@
 ✅ 수년간 노력 없이 톱오브마인드 유지하는 방법
 ✅ 하이퍼클래스가 모든 것을 자동화하는 방법
 
-시작하기 전에 하이퍼클래스 계정이 필요합니다 - [지금 가입하기](https://www.gohighlevel.com/?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Consultant&utm_content=Playbook)
+시작하기 전에 하이퍼클래스 계정이 필요합니다 - [지금 가입하기](https://hyperclass.ai/?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Consultant&utm_content=Playbook)
 
 ## 1단계: 계약 완료 후 후속 조치 자동화
 
@@ -206,7 +206,7 @@
 ✅ 후속 조치 트리거
 ✅ 다시는 리드를 잃지 마세요
 
-지금 비즈니스를 성장시키세요 - [하이퍼클래스 가입하기](https://www.gohighlevel.com/?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Consultant&utm_content=Playbook)
+지금 비즈니스를 성장시키세요 - [하이퍼클래스 가입하기](https://hyperclass.ai/?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Consultant&utm_content=Playbook)
 
 ---
 *원문 최종 수정: Tue, 20 May, 2025 at 1:29 PM*

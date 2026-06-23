@@ -27,7 +27,7 @@
 
 #### 이런 문제를 겪고 계시다면, 혼자가 아닙니다. 대부분의 전기 기사들이 모든 것을 수동으로 관리하기 때문에 운영상 어려움을 겪고 있습니다.
 
-올인원 솔루션으로 비즈니스를 손쉽게 관리하세요 - [지금 Hyperclass에서 가입하기](https://www.gohighlevel.com/freetrial16?utm_source=FreshDesk&utm_medium=organic&utm_campaign=Home+Services+-+Electricians&utm_term=Electricians&utm_content=Playbook)
+올인원 솔루션으로 비즈니스를 손쉽게 관리하세요 - [지금 Hyperclass에서 가입하기](https://hyperclass.ai/freetrial16?utm_source=FreshDesk&utm_medium=organic&utm_campaign=Home+Services+-+Electricians&utm_term=Electricians&utm_content=Playbook)
 
 ## **비즈니스가 스스로 운영된다면 어떨까요?**
 

@@ -8,7 +8,7 @@
 
 하이퍼클래스 사용자로서, 여러분은 이미 마케팅 예산 하나하나가 소중하다는 것을 알고 계십니다. 이 가이드는 단순히 클릭만 유도하는 것이 아니라, 실제로 유료 고객으로 전환되는 양질의 리드를 생성하는 광고 캠페인을 만드는 방법을 보여드립니다. 더 고급 자동화나 추적 기능이 필요하다면, 계정 업그레이드를 고려해보세요.
 
-**시작하기 전에 하이퍼클래스를 구독해야 합니다.** [**14일 무료 체험을 시작하려면 여기를 클릭하세요!**](https://www.gohighlevel.com/?utm_source=FreshDesk&utm_medium=organic&utm_campaign=Home+Services+-+Electricians&utm_term=Electricians&utm_content=Playbook)
+**시작하기 전에 하이퍼클래스를 구독해야 합니다.** [**14일 무료 체험을 시작하려면 여기를 클릭하세요!**](https://hyperclass.ai/?utm_source=FreshDesk&utm_medium=organic&utm_campaign=Home+Services+-+Electricians&utm_term=Electricians&utm_content=Playbook)
 
 ---
 **목차**
@@ -211,7 +211,7 @@
 
 **하이퍼클래스**로는 단순히 광고를 실행하는 것이 아니라, **자동 조종으로 작동하는** **리드 생성 머신**을 운영하여, **비즈니스 성장에 집중**할 수 있습니다.
 
-광고를 24/7 리드 엔진으로 전환하세요— [오늘 하이퍼클래스로 시작하세요!](https://www.gohighlevel.com/freetrial16?utm_source=FreshDesk&utm_medium=organic&utm_campaign=Home+Services+-+Electricians&utm_term=Electricians&utm_content=Playbook)
+광고를 24/7 리드 엔진으로 전환하세요— [오늘 하이퍼클래스로 시작하세요!](https://hyperclass.ai/freetrial16?utm_source=FreshDesk&utm_medium=organic&utm_campaign=Home+Services+-+Electricians&utm_term=Electricians&utm_content=Playbook)
 
 **프로 팁:** 언급된 일부 고급 기능들은 하이퍼클래스 계정을 업그레이드해야 할 수 있습니다. 위에서 설명한 전략을 완전히 활용하기 위해 이러한 옵션을 탐색해보세요.
 

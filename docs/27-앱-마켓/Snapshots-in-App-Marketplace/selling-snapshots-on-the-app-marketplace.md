@@ -42,7 +42,7 @@ Agency View → Account Snapshots에서 "Sell on Marketplace"를 선택하면, H
 
 ### 1단계: 개발자 포털 가입
 
-- [https://marketplace.gohighlevel.com](https://marketplace.gohighlevel.com) 방문
+- [https://marketplace.hyperclass.ai](https://marketplace.hyperclass.ai) 방문
 - 가입하고 등록 양식 완성
 - 이메일 인증을 통해 개발자 포털 액세스 권한 획득
 

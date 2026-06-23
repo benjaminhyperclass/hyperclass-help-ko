@@ -46,7 +46,7 @@
 ✅ 청소 및 유지보수 업체를 위한 저비용, 고수익 소셜 미디어 광고 운영법
 ✅ 게시, 응답, 리드 후속 관리를 자동화하는 방법—직접 할 필요 없이
 
-[하이퍼클래스 시작하기](https://www.gohighlevel.com/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook)로 오늘부터 자동화, 광고, 시장 지배력 확보하기
+[하이퍼클래스 시작하기](https://hyperclass.ai/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook)로 오늘부터 자동화, 광고, 시장 지배력 확보하기
 
 ### 1단계: 강력한 소셜 미디어 프레즌스 구축하기
 
@@ -170,7 +170,7 @@
 
 ### 지역 시장을 지배하고 싶으신가요?
 
-### [하이퍼클래스 시작하기](https://www.gohighlevel.com/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook)로 오늘부터 소셜 미디어, 광고, 후속 관리를 자동화하세요!
+### [하이퍼클래스 시작하기](https://hyperclass.ai/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook)로 오늘부터 소셜 미디어, 광고, 후속 관리를 자동화하세요!
 
 ---
 *원문 최종 수정: Fri, 14 Feb, 2025 at 5:43 AM*

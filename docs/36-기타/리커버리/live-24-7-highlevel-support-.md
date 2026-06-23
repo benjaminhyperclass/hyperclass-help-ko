@@ -146,7 +146,7 @@
 
 - **전화 지원**: 로그인에 문제가 있다면 이 번호로 지원팀에 연락하세요 [(+1 (888) 732-4197)](tel:+18887324197)
 - **웹사이트 채팅 위젯**: 메인 웹사이트로 이동하여 웹사이트 채팅 위젯을 사용해 지원 직원에게 연락할 수도 있습니다. 로그인에 문제가 있고 지원이 필요하다고 팀에 알려주세요.
-- **이메일 지원**: [이 양식을 사용하여](https://link.gohighlevel.com/widget/form/aujwIzqADXoECxSATYeI) 티켓을 제출하면 저희 팀이 즉시 처리할 것입니다.
+- **이메일 지원**: [이 양식을 사용하여](https://link.hyperclass.ai/widget/form/aujwIzqADXoECxSATYeI) 티켓을 제출하면 저희 팀이 즉시 처리할 것입니다.
 
 **중요**: 저희 팀이 신원을 확인하고 에이전시 관리자 또는 계정 소유자인지 확인할 수 있도록 에이전시 정보를 준비해주세요.
 
@@ -182,9 +182,9 @@
    - [YouTube](https://www.youtube.com/@gohighlevel)
 
 2. **주간 및 월간 이벤트에 참여하세요:**
-   - [하이레벨 이벤트 페이지](https://www.gohighlevel.com/events)
-   - [HL 일일 데모](https://www.gohighlevel.com/demo)
-   - [일일 Q&A](https://www.gohighlevel.com/daily-qa)
+   - [하이레벨 이벤트 페이지](https://hyperclass.ai/events)
+   - [HL 일일 데모](https://hyperclass.ai/demo)
+   - [일일 Q&A](https://hyperclass.ai/daily-qa)
 
 3. **자주 묻는 질문에 대한 답변을 위해 페이스북 커뮤니티 그룹을 검색하세요:**
    - [페이스북 그룹](https://www.facebook.com/groups/gohighlevel)

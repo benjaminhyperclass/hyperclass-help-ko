@@ -57,7 +57,7 @@ Hyperclass 자동화 덕분에 손가락 하나 까딱하지 않고도 가능합
 ✅ 노력 제로로 몇 년간 기억에 남는 방법
 ✅ Hyperclass가 이 모든 것을 자동화하는 방법
 
-시작하기 전에 Hyperclass 계정이 필요합니다 - [지금 가입하기](https://www.gohighlevel.com/?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Consultant&utm_content=Playbook)
+시작하기 전에 Hyperclass 계정이 필요합니다 - [지금 가입하기](https://hyperclass.ai/?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Consultant&utm_content=Playbook)
 
 ## 1단계: 계약 체결 후 후속 관리 자동화
 
@@ -203,7 +203,7 @@ Hyperclass가 이 모든 것을 대신 해주므로, 중요한 일에 집중할 
 ✅ 후속 관리 트리거
 ✅ 더 이상 리드를 놓치지 마세요
 
-지금 비즈니스를 성장시키세요 - [Hyperclass로 지금 가입하기](https://www.gohighlevel.com/?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Consultant&utm_content=Playbook)
+지금 비즈니스를 성장시키세요 - [Hyperclass로 지금 가입하기](https://hyperclass.ai/?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Consultant&utm_content=Playbook)
 
 ---
 *원문 최종 수정: 2025년 5월 20일 화요일 오후 1:29*

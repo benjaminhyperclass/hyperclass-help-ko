@@ -8,7 +8,7 @@
 
 인바운드 메시지 추가 기능을 사용하면 대화 ID를 먼저 확인하지 않고도 연락처 ID만으로 대화(Conversations)에 인바운드 메시지를 게시할 수 있습니다. 이는 API 호출을 줄이고, 로직을 단순화하며, 최소한의 오버헤드로 메시지가 올바른 CRM 스레드에 표시되도록 보장합니다. 이 가이드를 통해 장점, 설정, 페이로드 구조, 스레딩 동작 및 모범 사례를 이해할 수 있습니다.
 
-**중요**: Hyperclass CRM 플랫폼의 완전한 REST API 문서는 여기서 찾을 수 있습니다. [Hyperclass API Documentation - Send a new message](https://marketplace.gohighlevel.com/docs/ghl/conversations/send-a-new-message/index.html).
+**중요**: Hyperclass CRM 플랫폼의 완전한 REST API 문서는 여기서 찾을 수 있습니다. [Hyperclass API Documentation - Send a new message](https://marketplace.hyperclass.ai/docs/ghl/conversations/send-a-new-message/index.html).
 
 ---
 

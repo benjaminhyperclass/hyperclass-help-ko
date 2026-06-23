@@ -178,7 +178,7 @@ Trust Center 접근 및 사용 방법은?
 
 "최대 3회 시도 소진" 오류가 발생하는 경우, CP 575 양식을 수집한 후 다음을 작성하세요.
 
-[여기에서 사업 등록 양식 업로드](https://link.gohighlevel.com/widget/form/mfl7sSEccNAaQZOCalsA)
+[여기에서 사업 등록 양식 업로드](https://link.hyperclass.ai/widget/form/mfl7sSEccNAaQZOCalsA)
 
 ![CP 575 양식 업로드](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045075230/original/dBPQTXtDGStBoDAyP8an1GrYW44pe6y4fA.png?1744652325)
 

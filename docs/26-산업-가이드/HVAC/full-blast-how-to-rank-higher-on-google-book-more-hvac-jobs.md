@@ -72,7 +72,7 @@
 
 ✅ 고전환 광고 실행 방법 (무료 인바운드 리드 최대화 후!)
 
-지금 시작하세요—[Hyperclass 가입](https://www.gohighlevel.com/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook)으로 HVAC 사업을 다음 단계로 끌어올리세요.
+지금 시작하세요—[Hyperclass 가입](https://hyperclass.ai/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook)으로 HVAC 사업을 다음 단계로 끌어올리세요.
 
 ---
 

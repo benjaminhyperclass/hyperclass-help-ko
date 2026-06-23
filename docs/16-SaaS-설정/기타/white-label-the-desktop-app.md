@@ -27,7 +27,7 @@
 
 데스크톱 웹 앱을 화이트라벨링하면 고객이 로그인하고 앱을 사용할 때 고객의 도메인을 사용하게 됩니다. 예를 들어 "app.Hyperclass.com" 대신 "app.myawesomedomain.com"을 사용합니다.
 
-**참고**: 커스텀/화이트라벨 도메인은 고객이 소유하고 고객들이 데스크톱 앱에 로그인할 때 사용하는 도메인입니다(예: [app.yourdomain.com](http://app.yourdomain.com)). Hyperclass 기본 도메인은 Hyperclass에서 제공하는 임시 주소입니다(예: [yourcompany.Hyperclass.com](http://yourcompany.gohighlevel.com)).
+**참고**: 커스텀/화이트라벨 도메인은 고객이 소유하고 고객들이 데스크톱 앱에 로그인할 때 사용하는 도메인입니다(예: [app.yourdomain.com](http://app.yourdomain.com)). Hyperclass 기본 도메인은 Hyperclass에서 제공하는 임시 주소입니다(예: [yourcompany.Hyperclass.com](http://yourcompany.hyperclass.ai)).
 
 ---
 

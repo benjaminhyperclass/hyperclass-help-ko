@@ -136,15 +136,15 @@
 
 ### **관련 가이드**
 
-- [배치 이메일 캠페인 예약하는 방법](https://gohighlevelassist.freshdesk.com/a/solutions/articles/48001215379?portalId=48000045315)
+- [배치 이메일 캠페인 예약하는 방법](https://hyperclass.gitbook.io/hyperclass-docs)
 
-- [다양한 이메일 발송 및 전달 방식](https://gohighlevelassist.freshdesk.com/a/solutions/articles/48001215384?portalId=48000045315)
+- [다양한 이메일 발송 및 전달 방식](https://hyperclass.gitbook.io/hyperclass-docs)
 
-- [이메일 캠페인 일정 변경하는 방법 (이메일 빌더)](https://gohighlevelassist.freshdesk.com/a/solutions/articles/48001215389?portalId=48000045315)
+- [이메일 캠페인 일정 변경하는 방법 (이메일 빌더)](https://hyperclass.gitbook.io/hyperclass-docs)
 
-- [개선된 이메일 캠페인 플로우와 캠페인 요약 페이지](https://gohighlevelassist.freshdesk.com/a/solutions/articles/155000004180?portalId=48000045315)
+- [개선된 이메일 캠페인 플로우와 캠페인 요약 페이지](https://hyperclass.gitbook.io/hyperclass-docs)
 
-- [발송 또는 예약 페이지에서 "태그 추가" 사용하기](https://gohighlevelassist.freshdesk.com/a/solutions/articles/155000004384?portalId=48000045315)
+- [발송 또는 예약 페이지에서 "태그 추가" 사용하기](https://hyperclass.gitbook.io/hyperclass-docs)
 
 ---
 *원문 최종 수정: Wed, 19 Nov, 2025 at 6:23 AM*

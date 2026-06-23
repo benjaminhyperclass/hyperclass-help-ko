@@ -78,7 +78,7 @@
 
 ![연락처 가져오기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155039405397/original/gPG305y4PVcT5_OYjZWxF1NxuNfFrxrwiA.png?1736256506)
 
-3. 연락처만 가져오거나 [연락처와 기회를 함께](https://help.gohighlevel.com/a/solutions/articles/155000003905?portalId=48000045315) 가져올지 선택
+3. 연락처만 가져오거나 [연락처와 기회를 함께](https://hyperclass.gitbook.io/hyperclass-docs) 가져올지 선택
 
 ![가져오기 옵션 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155039405400/original/LqzxyhY3a934Y7SAsD7QC6UgirHSuSiOVA.jpeg?1736256508)
 

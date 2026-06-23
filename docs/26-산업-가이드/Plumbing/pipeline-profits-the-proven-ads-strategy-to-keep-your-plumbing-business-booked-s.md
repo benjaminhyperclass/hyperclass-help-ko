@@ -29,7 +29,7 @@
 
 이 플레이북은 추측 없이 광고를 통해 리드 엔진을 구축하는 정확한 방법을 보여드려요.
 
-마케팅을 파워업하세요 - [Hyperclass로 시작하기](https://www.gohighlevel.com/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services&utm_term=Plumbing&utm_content=Playbook)
+마케팅을 파워업하세요 - [Hyperclass로 시작하기](https://hyperclass.ai/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services&utm_term=Plumbing&utm_content=Playbook)
 
 ### 무엇을 배우게 될까요?
 ✅ Google 로컬 서비스 광고(LSA)를 지배하고 먼저 예약받는 방법
@@ -158,7 +158,7 @@ Hyperclass 워크플로우로 몇 초 내에 후속 조치하세요.
 
 Hyperclass 캠페인으로 답변과 후속 조치를 자동화하세요.
 
-#### [배관업을 위한 텍스트-투-리드 캠페인 사용법](https://blog.gohighlevel.com/setting-up-high-performing-sms-campaigns-with-highlevel-your-ultimate-guide/)
+#### [배관업을 위한 텍스트-투-리드 캠페인 사용법](https://blog.hyperclass.ai/setting-up-high-performing-sms-campaigns-with-highlevel-your-ultimate-guide/)
 
 ### **4단계: 최대 ROI를 위한 모든 광고 추적 및 최적화**
 
@@ -187,7 +187,7 @@ Hyperclass 캠페인으로 답변과 후속 조치를 자동화하세요.
 ✅ 자동화로 모든 리드를 전환할 수 있어요
 ✅ 자동 운영으로 배관 사업을 성장시킬 수 있어요
 
-광고를 24시간 리드 엔진으로 만드세요—**[Hyperclass로 오늘 시작하세요!](https://www.gohighlevel.com/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services&utm_term=Plumbing&utm_content=Playbook)**
+광고를 24시간 리드 엔진으로 만드세요—**[Hyperclass로 오늘 시작하세요!](https://hyperclass.ai/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services&utm_term=Plumbing&utm_content=Playbook)**
 
 ---
 *원문 최종 수정: Thu, 10 Apr, 2025 at 5:39 AM*

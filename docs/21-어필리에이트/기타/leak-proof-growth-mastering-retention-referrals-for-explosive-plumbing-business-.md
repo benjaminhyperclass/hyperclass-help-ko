@@ -30,7 +30,7 @@
 
 이 플레이북은 모든 작업을 더 많은 비즈니스로 자동으로 전환하는 방법을 보여드릴 것입니다.
 
-시작하기 전에 Hyperclass 계정이 필요합니다 - [여기서 가입하세요!](https://www.gohighlevel.com/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services&utm_term=Plumbing&utm_content=Playbook)
+시작하기 전에 Hyperclass 계정이 필요합니다 - [여기서 가입하세요!](https://hyperclass.ai/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services&utm_term=Plumbing&utm_content=Playbook)
 
 ### 무엇을 배우게 될까요?
 
@@ -185,7 +185,7 @@ Hyperclass이 이 모든 것을 손쉽게 만들어주므로 여러분은 최고
 ✅ 유지보수 플랜으로 반복 수익을 확보하세요.
 ✅ AI와 자동화를 사용해 기존 고객과 소통하세요.
 
-배관 사업을 다음 단계로 끌어올리세요—[Hyperclass에 가입하고 오늘부터 성장을 시작하세요!](https://www.gohighlevel.com/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services&utm_term=Plumbing&utm_content=Playbook)
+배관 사업을 다음 단계로 끌어올리세요—[Hyperclass에 가입하고 오늘부터 성장을 시작하세요!](https://hyperclass.ai/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services&utm_term=Plumbing&utm_content=Playbook)
 
 ---
 *원문 최종 수정: Thu, 10 Apr, 2025 at 6:52 AM*

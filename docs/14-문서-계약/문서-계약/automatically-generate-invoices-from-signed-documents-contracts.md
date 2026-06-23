@@ -6,7 +6,7 @@
 
 # 서명된 문서 및 계약에서 자동으로 인보이스 생성하기
 
-[](https://ideas.gohighlevel.com/changelog/2-in-1-documents-direct-invoice-payments-after-signing)
+[](https://ideas.hyperclass.ai/changelog/2-in-1-documents-direct-invoice-payments-after-signing)
 
 # 문서 서명과 동시에 결제를 받는 방법
 

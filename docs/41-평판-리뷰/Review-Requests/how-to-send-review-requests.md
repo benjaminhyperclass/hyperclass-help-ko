@@ -35,7 +35,7 @@
 ## 리뷰 요청을 시작하기 전 필수 준비사항
 
 - Google 리뷰 링크를 보내려면 먼저 GMB를 연동해야 합니다 ([가이드 보기](../../42-통합/Google-Integrations/how-to-integrate-google-business-profile-gbp-with-highlevel.md). 또는 타사 리뷰 링크를 사용하고 싶다면 [여기를 클릭하세요](../../03-대화/기타/reputation-management-how-to-customize-the-review-request-messages-sms-email-.md)
-- [](https://help.gohighlevel.com/a/solutions/articles/48000980328?portalId=48000045315#:~:text=email%20example%20here-,How%20to%20enable%20(Toggle%20on)%20the%20review%20request%20feature%20throughout%20the%20system,-Please%20toggle%20the)[](https://help.gohighlevel.com/a/solutions/articles/48000980328?portalId=48000045315#:~:text=email%20example%20here-,How%20to%20enable%20(Toggle%20on)%20the%20review%20request%20feature%20throughout%20the%20system,-Please%20toggle%20the)하위 계정 설정에서 리뷰 요청 기능을 활성화(토글 켜기)해야 합니다 (가이드 보기%20the%20review%20request%20feature%20throughout%20the%20system,-Please%20toggle%20the))
+- [](https://hyperclass.gitbook.io/hyperclass-docs)%20the%20review%20request%20feature%20throughout%20the%20system,-Please%20toggle%20the)[](https://hyperclass.gitbook.io/hyperclass-docs)%20the%20review%20request%20feature%20throughout%20the%20system,-Please%20toggle%20the)하위 계정 설정에서 리뷰 요청 기능을 활성화(토글 켜기)해야 합니다 (가이드 보기%20the%20review%20request%20feature%20throughout%20the%20system,-Please%20toggle%20the))
 - (선택사항) 발신 리뷰 요청 메시지(SMS/이메일) 커스터마이징 ([**가이드 보기**](how-to-customize-the-review-request-messages-sms-email-.md)
 - Google 비즈니스 프로필이 완전히 연동되고 올바른 로케이션에 연결되었는지 확인하세요. ([가이드 보기](../../42-통합/Google-Integrations/how-to-integrate-google-business-profile-gbp-with-highlevel.md)
 

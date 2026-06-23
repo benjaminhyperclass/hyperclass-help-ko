@@ -6,7 +6,7 @@
 
 # 일회성 Stripe 결제 액션
 
-**중요 안내** -- Stripe 설정은 반드시 에이전시 레벨에서 설정하세요. 로케이션 레벨이 아닙니다: [https://app.gohighlevel.com/settings/stripe](https://app.gohighlevel.com/settings/stripe?fbclid=IwAR38bI5fZ3pmJF7TlSQLDnhgagQe_bSeZKNMe_kSywPpM8yfoMlEOUQdLMo)
+**중요 안내** -- Stripe 설정은 반드시 에이전시 레벨에서 설정하세요. 로케이션 레벨이 아닙니다: [https://app.hyperclass.ai/settings/stripe](https://app.hyperclass.ai/settings/stripe?fbclid=IwAR38bI5fZ3pmJF7TlSQLDnhgagQe_bSeZKNMe_kSywPpM8yfoMlEOUQdLMo)
 
 트리거를 기반으로 Stripe에서 일회성 결제를 실행하세요!
 

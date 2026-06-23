@@ -143,7 +143,7 @@ Hyperclass 내에서 다음이 가능합니다:
 
 ---
 
-성장할 준비가 되셨나요? [하이레벨로 시작하기](https://www.gohighlevel.com/?utm_source=seo&utm_medium=organic&utm_campaign=chiropractor&utm_term=chiropractor&utm_content=playbook)
+성장할 준비가 되셨나요? [하이레벨로 시작하기](https://hyperclass.ai/?utm_source=seo&utm_medium=organic&utm_campaign=chiropractor&utm_term=chiropractor&utm_content=playbook)
 
 ---
 *원문 최종 수정: Tue, 13 May, 2025 at 5:31 AM*

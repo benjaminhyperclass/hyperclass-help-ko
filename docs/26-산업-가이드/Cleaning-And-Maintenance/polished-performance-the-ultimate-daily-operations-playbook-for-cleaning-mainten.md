@@ -55,7 +55,7 @@
 
 #### **Hyperclass**을 사용하면 **운영을 자동화하고 워크플로우를 간소화하며 비효율성을 제거할 수 있습니다.**
 
-[**지금 Hyperclass에 가입하여**](https://www.gohighlevel.com/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook) 진정으로 쉽고 번거로움 없는 일상 운영을 경험하세요!
+[**지금 Hyperclass에 가입하여**](https://hyperclass.ai/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook) 진정으로 쉽고 번거로움 없는 일상 운영을 경험하세요!
 
 ---
 
@@ -182,7 +182,7 @@
 #### 당신의 시간은 소중합니다—나머지는 Hyperclass에 맡기세요!
 관리 업무에 쓰는 매분은 사업 성장에서 잃어버린 시간입니다.
 
-### [지금 Hyperclass에 가입하여](https://www.gohighlevel.com/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook) 청소 사업 전체를 자동화하세요!
+### [지금 Hyperclass에 가입하여](https://hyperclass.ai/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook) 청소 사업 전체를 자동화하세요!
 
 ---
 *원문 최종 수정: 2025년 2월 14일*

@@ -88,7 +88,7 @@ Google Workspace 이메일을 사용하고 있다면, [여기에서 DMARC를 non
 
 예: name@yahoo.com을 name@gmail.com 또는 name@your_domain.com으로 변경
 
-[발신자 이메일 주소 설정 방법은 여기에서 확인하세요](https://gohighlevelassist.freshdesk.com/support/solutions/articles/48000979925-masking-campaign-emails-from-name-address).
+[발신자 이메일 주소 설정 방법은 여기에서 확인하세요](https://hyperclass.gitbook.io/hyperclass-docs).
 
 ---
 *원문 최종 수정: Mon, 6 Mar, 2023 at 2:27 PM*

@@ -39,7 +39,7 @@
 ✅ 모든 전화와 예약을 추적하여 **무엇이 효과적인지 파악**
 ✅ **고전환율 광고** 실행 (유기적 리드를 최대화한 후!)
 
-시작하기 전에 Hyperclass 계정이 필요합니다 - **[여기서 가입하세요!](https://www.gohighlevel.com/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook)**
+시작하기 전에 Hyperclass 계정이 필요합니다 - **[여기서 가입하세요!](https://hyperclass.ai/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook)**
 
 ### **1단계: 로컬 검색을 위한 구글 비즈니스 프로필(GBP) 최적화**
 
@@ -182,7 +182,7 @@ Hyperclass에서 종료 의도 팝업 만드는 방법
 ✅ **순위 추적 및 웹사이트 속도 개선**
 ✅ **Hyperclass 대시보드에서 리드 및 예약 모니터링**
 
-### 지금 상위 순위를 시작하세요—[Hyperclass로 가입](https://www.gohighlevel.com/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook)하여 로컬 시장을 장악하세요!
+### 지금 상위 순위를 시작하세요—[Hyperclass로 가입](https://hyperclass.ai/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook)하여 로컬 시장을 장악하세요!
 
 ---
 *원문 최종 수정: 2025년 2월 14일*

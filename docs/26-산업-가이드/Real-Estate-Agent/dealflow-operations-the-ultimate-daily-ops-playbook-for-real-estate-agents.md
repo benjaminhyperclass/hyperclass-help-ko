@@ -36,7 +36,7 @@
 
 Hyperclass(하이퍼클래스)와 함께라면 가능합니다.
 
-모든 기능이 하나로 통합된 솔루션으로 비즈니스를 손쉽게 관리하세요 - [오늘 Hyperclass에 가입하기](https://www.gohighlevel.com/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Agent&utm_content=Playbook)
+모든 기능이 하나로 통합된 솔루션으로 비즈니스를 손쉽게 관리하세요 - [오늘 Hyperclass에 가입하기](https://hyperclass.ai/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Agent&utm_content=Playbook)
 
 ## 시계처럼 정확하게 운영되는 부동산 사업을 상상해보세요:
 
@@ -208,7 +208,7 @@ Hyperclass는 첫 클릭부터 거래 성사까지 모든 운영을 지원하므
 
 개인 중개인이어도 최고 성과 팀처럼 사업을 운영하고 싶으신가요?
 
-**[오늘 Hyperclass를 시작하여](https://www.gohighlevel.com/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Agent&utm_content=Playbook) 성공을 단순화하세요.**
+**[오늘 Hyperclass를 시작하여](https://hyperclass.ai/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Agent&utm_content=Playbook) 성공을 단순화하세요.**
 
 ---
 *원문 최종 수정: Tue, 27 May, 2025 at 9:33 AM*

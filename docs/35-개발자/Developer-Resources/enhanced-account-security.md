@@ -22,7 +22,7 @@
 
 2024년 6월 17일부터는 사전에 옵트아웃하지 않은 모든 계정에 대해 강화된 계정 보안 설정이 기본값으로 적용됩니다.
 
-[Settings(설정)](https://app.gohighlevel.com/settings/company)에서 옵트아웃할 수 있지만, 계정과 데이터가 위험에 노출될 수 있으므로 강력히 권장하지 않습니다.
+[Settings(설정)](https://app.hyperclass.ai/settings/company)에서 옵트아웃할 수 있지만, 계정과 데이터가 위험에 노출될 수 있으므로 강력히 권장하지 않습니다.
 
 ---
 *원문 최종 수정: Tue, 2 Dec, 2025 at 8:35 AM*

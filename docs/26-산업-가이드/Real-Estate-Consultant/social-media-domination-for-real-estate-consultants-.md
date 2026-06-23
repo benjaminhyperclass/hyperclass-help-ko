@@ -38,7 +38,7 @@
 
 이 플레이북은 Hyperclass를 활용해 강력한 브랜드를 구축하고, 고품질 리드를 유치하고, 팔로워를 고객으로 전환하는 방법을 보여드립니다.
 
-**[Hyperclass 시작하기](https://www.gohighlevel.com/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Consultant&utm_content=Playbook)**로 자동화하고, 전환하고, 성장하세요.
+**[Hyperclass 시작하기](https://hyperclass.ai/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Consultant&utm_content=Playbook)**로 자동화하고, 전환하고, 성장하세요.
 
 ## 배울 내용
 
@@ -187,7 +187,7 @@
 
 더 스마트한 마케팅으로 부동산 브랜드를 성장시킬 준비가 되셨나요?
 
-**[Hyperclass 가입하기](https://www.gohighlevel.com/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Consultant&utm_content=Playbook)**로 오늘부터 부동산 파이프라인을 자동화하세요.
+**[Hyperclass 가입하기](https://hyperclass.ai/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Consultant&utm_content=Playbook)**로 오늘부터 부동산 파이프라인을 자동화하세요.
 
 ---
 *원문 최종 수정: Tue, 27 May, 2025 at 8:32 AM*

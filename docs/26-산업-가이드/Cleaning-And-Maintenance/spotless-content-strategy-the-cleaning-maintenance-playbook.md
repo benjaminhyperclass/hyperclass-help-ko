@@ -42,7 +42,7 @@
 ✅ 온라인 참여를 **반복 예약**으로 전환합니다.
 ✅ 자동화를 사용해 **추가 노력 없이 확장**합니다.
 
-[지금 Hyperclass에 가입하고](https://www.gohighlevel.com/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook) 콘텐츠가 당신을 위해 일하게 하세요!
+[지금 Hyperclass에 가입하고](https://hyperclass.ai/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook) 콘텐츠가 당신을 위해 일하게 하세요!
 
 ### 무엇을 배우게 될까요?
 
@@ -169,7 +169,7 @@
 ✅ **올바른 자동화 = 더 많은 전환.**
 
 ### **추측을 멈추세요. 확장을 시작하세요.**
-[지금 Hyperclass에 가입하고](https://www.gohighlevel.com/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook) 콘텐츠를 현금 흐름으로 전환하세요!
+[지금 Hyperclass에 가입하고](https://hyperclass.ai/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook) 콘텐츠를 현금 흐름으로 전환하세요!
 
 ---
 *원문 최종 수정: 2025년 2월 14일*

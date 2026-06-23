@@ -43,7 +43,7 @@
 - 에이전시 대시보드에서 **애드온(Add-Ons)**을 클릭하세요
 - 애드온 하위에서 "프리미엄 지원(Premium Support)" 섹션을 찾으세요
 - **지금 구독(Subscribe Now)** 버튼을 클릭하세요
-- 또는 [프리미엄 지원 페이지](https://app.gohighlevel.com/offers/premium-support)를 직접 방문하세요
+- 또는 [프리미엄 지원 페이지](https://app.hyperclass.ai/offers/premium-support)를 직접 방문하세요
 
 ![프리미엄 지원 애드온](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066357129/original/yxkjfjTvIE-FiPW72KckmfOwgMCZEFtWVw.png?1772793405)
 

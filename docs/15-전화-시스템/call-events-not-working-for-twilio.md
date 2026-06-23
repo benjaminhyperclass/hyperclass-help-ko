@@ -27,7 +27,7 @@
 
 ## 2단계: Twilio에 하위 계정이 너무 많은 경우, Hyperclass로 돌아가서 해당 로케이션의 Account SID 복사 {#Step-2}
 
-[https://app.gohighlevel.com/settings/twilio](https://app.gohighlevel.com/settings/twilio)
+[https://app.hyperclass.ai/settings/twilio](https://app.hyperclass.ai/settings/twilio)
 
 ![Hyperclass Twilio 설정에서 Account SID 복사](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155030245849/original/SC-aR7lGucAV55uy7fzu7Jecf-_zGHXk_g.jpg?1722439895)
 

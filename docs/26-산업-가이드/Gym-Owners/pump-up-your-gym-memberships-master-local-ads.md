@@ -99,7 +99,7 @@
 
 **모바일 우선**: 대부분의 고객이 모바일로 접속해요 — 광고와 랜딩 페이지가 빠르게 로드되고 쉽게 탐색할 수 있는지 확인하세요.
 
-**[시작하는 데 도움이 필요하신가요? 저희가 제공하는 무료 체험으로 시도해보세요!](https://www.gohighlevel.com/?utm_source=seo&utm_medium=organic&utm_campaign=gym&utm_term=gym&utm_content=playbook)**
+**[시작하는 데 도움이 필요하신가요? 저희가 제공하는 무료 체험으로 시도해보세요!](https://hyperclass.ai/?utm_source=seo&utm_medium=organic&utm_campaign=gym&utm_term=gym&utm_content=playbook)**
 
 ---
 *원문 최종 수정: Mon, 14 Apr, 2025 at 6:15 AM*

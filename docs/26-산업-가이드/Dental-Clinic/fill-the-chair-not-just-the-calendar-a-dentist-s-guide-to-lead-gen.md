@@ -47,7 +47,7 @@ Hyperclass은 다음과 같은 간단하고 강력한 올인원 플랫폼을 제
 - 클릭부터 예약까지 모든 리드 추적
 - 자격을 갖춘 리드가 준비되었을 때만 프론트 데스크에 전달
 
-[Hyperclass로 시작하기](https://www.gohighlevel.com/?utm_source=seo&utm_medium=organic&utm_campaign=dentalclinic&utm_term=dentalclinic&utm_content=playbook)
+[Hyperclass로 시작하기](https://hyperclass.ai/?utm_source=seo&utm_medium=organic&utm_campaign=dentalclinic&utm_term=dentalclinic&utm_content=playbook)
 
 ### **1단계: 환자가 예스라고 말하는 첫 방문 오퍼 만들기**
 
@@ -149,7 +149,7 @@ Hyperclass 내에서 다음을 추적하는 명확한 대시보드(Dashboard)를
 
 ---
 
-성장할 준비가 되셨나요? [Hyperclass로 시작하기](https://www.gohighlevel.com/?utm_source=seo&utm_medium=organic&utm_campaign=dentalclinic&utm_term=dentalclinic&utm_content=playbook)
+성장할 준비가 되셨나요? [Hyperclass로 시작하기](https://hyperclass.ai/?utm_source=seo&utm_medium=organic&utm_campaign=dentalclinic&utm_term=dentalclinic&utm_content=playbook)
 
 ---
 *원문 최종 수정: Thu, 15 May, 2025 at 6:21 AM*

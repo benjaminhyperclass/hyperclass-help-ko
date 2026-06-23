@@ -8,7 +8,7 @@
 
 Hyperclass 마켓플레이스 앱용 자동 웹훅 재시도는 일시적인 속도 제한에 걸려도 중요한 이벤트가 확실히 서버에 도달하도록 보장합니다. HTTP 429 응답에만 재시도하고 랜덤 지연(jitter)을 추가하여 안정성을 높였습니다. 이 가이드는 마켓플레이스 개발자들이 새로운 시스템의 작동 방식을 이해하고 완벽한 전송을 위한 엔드포인트 준비 방법을 안내합니다.
 
-[웹훅 연동 가이드(Webhook Integration Guide)](https://marketplace.gohighlevel.com/docs/webhook/WebhookIntegrationGuide/index.html)도 함께 참고하세요.
+[웹훅 연동 가이드(Webhook Integration Guide)](https://marketplace.hyperclass.ai/docs/webhook/WebhookIntegrationGuide/index.html)도 함께 참고하세요.
 
 ---
 

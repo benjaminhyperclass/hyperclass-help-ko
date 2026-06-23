@@ -27,7 +27,7 @@
 
 ### 하이레벨의 MAP 정책은 무엇을 의미하나요?
 
-저희의 최소 광고 가격 정책은 고객님이 저희 플랫폼(또는 화이트라벨 버전)을 재판매할 때, 핵심 플랫폼에 대한 액세스를 $97 미만의 가격으로 광고할 수 없다는 의미입니다. 이 제한은 광고에만 적용됩니다. 핵심 플랫폼을 재판매하는 실제 가격은 $97 미만일 수 있지만, 그 실제 가격이 공개적으로 제공되지 않고 검색 엔진, 소셜 미디어 채널, 블로그, 웹사이트 또는 기타 온라인 포럼을 포함하되 이에 국한되지 않는 공개적으로 이용 가능하거나 검색 가능한 포럼을 통해 발견될 수 없어야 합니다. 전체 MAP 정책을 읽으려면 하이레벨의 [서비스 약관](https://www.gohighlevel.com/terms-of-service) 섹션 2를 확인하세요.
+저희의 최소 광고 가격 정책은 고객님이 저희 플랫폼(또는 화이트라벨 버전)을 재판매할 때, 핵심 플랫폼에 대한 액세스를 $97 미만의 가격으로 광고할 수 없다는 의미입니다. 이 제한은 광고에만 적용됩니다. 핵심 플랫폼을 재판매하는 실제 가격은 $97 미만일 수 있지만, 그 실제 가격이 공개적으로 제공되지 않고 검색 엔진, 소셜 미디어 채널, 블로그, 웹사이트 또는 기타 온라인 포럼을 포함하되 이에 국한되지 않는 공개적으로 이용 가능하거나 검색 가능한 포럼을 통해 발견될 수 없어야 합니다. 전체 MAP 정책을 읽으려면 하이레벨의 [서비스 약관](https://hyperclass.ai/terms-of-service) 섹션 2를 확인하세요.
 
 ### MAP 정책이 저에게 적용되나요?
 
@@ -87,7 +87,7 @@ MAP 정책은 표시된 가격이 매장의 물리적 위치 외부에서 광고
 
 ### 다른 하이레벨 고객이 MAP 정책을 위반하는 광고를 발견했습니다. 어디에 신고하면 되나요?
 
-MAP 정책 위반 혐의를 익명으로 신고할 수 있습니다: [http://gohighlevel.com/MAPpolicyviolations](http://gohighlevel.com/MAPpolicyviolations). 또는 콘텐츠 링크를 [legalcompliance@Hyperclass.com](mailto:legalcompliance@gohighlevel.com)으로 보내주시면 저희가 처리해드립니다!
+MAP 정책 위반 혐의를 익명으로 신고할 수 있습니다: [http://hyperclass.ai/MAPpolicyviolations](http://hyperclass.ai/MAPpolicyviolations). 또는 콘텐츠 링크를 [legalcompliance@Hyperclass.com](mailto:legalcompliance@gohighlevel.com)으로 보내주시면 저희가 처리해드립니다!
 
 ---
 *원문 최종 수정: 2024년 8월 15일 오후 6시 41분*

@@ -67,7 +67,7 @@ Stripe, PayPal 같은 자동화된 방법만 표시됩니다.
 
 수동 결제를 받으려면 직접 결제 링크 대신 기존의 인보이스(Invoice)나 주문 양식(Order Form)을 사용해야 합니다.
 
-참고: [제품 영역별 지원되는 결제 제공업체 및 방법 (어디서 무엇이 작동하는지)](https://gohighlevelassist.freshdesk.com/a/solutions/articles/155000006075?portalId=48000045315)
+참고: [제품 영역별 지원되는 결제 제공업체 및 방법 (어디서 무엇이 작동하는지)](https://hyperclass.gitbook.io/hyperclass-docs)
 
 ---
 *원문 최종 수정: Sun, 1 Feb, 2026 at 6:47 AM*

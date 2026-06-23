@@ -22,7 +22,7 @@
 
 구글에서 높은 순위를 기록하지 못한다면, 당신이 해당 시장에서 가장 경험이 많은 에이전트라고 해도 리스팅을 잃고 있는 것입니다.
 
-시작하기 전에 Hyperclass 계정이 필요합니다 - **[여기서 가입하세요!](https://www.gohighlevel.com/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Agent&utm_content=Playbook)**
+시작하기 전에 Hyperclass 계정이 필요합니다 - **[여기서 가입하세요!](https://hyperclass.ai/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Agent&utm_content=Playbook)**
 
 ---
 
@@ -204,7 +204,7 @@
 - 리뷰 및 리드 캡처 자동화 설정
 - 주간 추적 및 최적화
 
-### 더 높은 순위를 기록하고 더 많은 리스팅을 따내세요—**[오늘 Hyperclass에 가입하세요!](https://www.gohighlevel.com/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Agent&utm_content=Playbook)**
+### 더 높은 순위를 기록하고 더 많은 리스팅을 따내세요—**[오늘 Hyperclass에 가입하세요!](https://hyperclass.ai/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Agent&utm_content=Playbook)**
 
 ---
 *원문 최종 수정: Wed, 16 Apr, 2025 at 5:49 AM*

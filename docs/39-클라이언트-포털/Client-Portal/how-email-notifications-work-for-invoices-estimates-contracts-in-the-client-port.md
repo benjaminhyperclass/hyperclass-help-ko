@@ -54,7 +54,7 @@
 
 - Default Template(기본 템플릿) 버튼을 클릭하여 새 템플릿을 선택하거나 기본 템플릿을 편집합니다. [클라이언트 포털 - 기본 이메일 템플릿 편집](client-portal-edit-default-email-templates.md) 가이드를 확인하세요.
 
-[![클라이언트 포털 이메일 설정](https://jumpshare.com/share/80NM0FLzLcCLmc2RqZnA+/GIF+Recording+2025-12-08+at+7.31.52+PM.gif)](https://help.gohighlevel.com/en/support/solutions/articles/155000007151)
+[![클라이언트 포털 이메일 설정](https://jumpshare.com/share/80NM0FLzLcCLmc2RqZnA+/GIF+Recording+2025-12-08+at+7.31.52+PM.gif)](https://hyperclass.gitbook.io/hyperclass-docs)
 
 ## 알림 관리 방법 (사용자용)
 

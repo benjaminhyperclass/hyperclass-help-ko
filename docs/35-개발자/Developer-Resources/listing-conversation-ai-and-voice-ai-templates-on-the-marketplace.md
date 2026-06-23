@@ -18,11 +18,11 @@ Hyperclass의 대화 AI(Conversation AI) 또는 음성 AI(Voice AI) 페이지에
 패키징하려는 자산이 지적 재산권으로 보호되는 스냅샷의 일부로 가져온 것이 아닌지 확인해 주세요. 제한된/IP 보호 자산은 AI 직원에 포함할 수 없습니다.
 
 - 봇의 패키지를 담은 특별한 링크와 함께 개발자 포털로 리디렉션됩니다.
-- 마켓플레이스에 등록된 기존 템플릿을 업데이트하려면 대화 AI 또는 음성 AI 페이지에서 필요한 변경사항을 적용한 후 메뉴에서 "마켓플레이스용 링크 복사(Copy Link for Marketplace)"를 클릭하고 [개발자 포털](https://marketplace.gohighlevel.com/apps)에서 링크를 업데이트하세요(아래 2번 참조).
+- 마켓플레이스에 등록된 기존 템플릿을 업데이트하려면 대화 AI 또는 음성 AI 페이지에서 필요한 변경사항을 적용한 후 메뉴에서 "마켓플레이스용 링크 복사(Copy Link for Marketplace)"를 클릭하고 [개발자 포털](https://marketplace.hyperclass.ai/apps)에서 링크를 업데이트하세요(아래 2번 참조).
 
 2. **앱 세부 정보 완성**
 
-[개발자 포털](https://marketplace.gohighlevel.com/apps)의 모듈(Modules) → 대화 AI(ConversationAI) 또는 음성 AI(Voice AI)에서 링크를 붙여넣고 "제출(Submit to fetch)" 버튼을 클릭하세요.
+[개발자 포털](https://marketplace.hyperclass.ai/apps)의 모듈(Modules) → 대화 AI(ConversationAI) 또는 음성 AI(Voice AI)에서 링크를 붙여넣고 "제출(Submit to fetch)" 버튼을 클릭하세요.
 
 - **편집 가능한 필드**: 사용 사례(예: 리드 자격 심사, 예약 접수), AI 직원 설명 및 사용 가능한 액션(워크플로우, 예약, SMS 대량 발송, 전화 전환)
 - 구매자가 AI 직원을 구매하기 전에 마켓플레이스에서 테스트할 때 AI 직원에게 물어볼 수 있는 추천 질문 목록도 설정할 수 있습니다.

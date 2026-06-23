@@ -93,7 +93,7 @@ Hyperclass 모바일 앱을 설치하면 본인이나 프론트 데스크 팀이
 
 ---
 
-성장할 준비가 되셨나요? [Hyperclass로 시작하기](https://www.gohighlevel.com/?utm_source=seo&utm_medium=organic&utm_campaign=beautysalon&utm_term=beautysalon&utm_content=playbook)
+성장할 준비가 되셨나요? [Hyperclass로 시작하기](https://hyperclass.ai/?utm_source=seo&utm_medium=organic&utm_campaign=beautysalon&utm_term=beautysalon&utm_content=playbook)
 
 ---
 *원문 최종 수정: Tue, 13 May, 2025 at 3:46 AM*

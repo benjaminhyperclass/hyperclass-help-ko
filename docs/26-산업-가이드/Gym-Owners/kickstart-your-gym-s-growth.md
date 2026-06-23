@@ -102,7 +102,7 @@
 - **소셜 플래너(Social Planner)로 콘텐츠 예약:** 콘텐츠 제작을 일괄 처리하여 일관성을 유지하세요.
 - 소셜 미디어 전략 최적화 방법 학습.
 
-**이런 설정에 도움이 필요하신가요?** [무료 체험 가입](https://www.gohighlevel.com/?utm_source=seo&utm_medium=organic&utm_campaign=gym&utm_term=gym&utm_content=playbook)!
+**이런 설정에 도움이 필요하신가요?** [무료 체험 가입](https://hyperclass.ai/?utm_source=seo&utm_medium=organic&utm_campaign=gym&utm_term=gym&utm_content=playbook)!
 
 ## **6. Hyperclass 계정 업그레이드가 필요하신가요?**
 

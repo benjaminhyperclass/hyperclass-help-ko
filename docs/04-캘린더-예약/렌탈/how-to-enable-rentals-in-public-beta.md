@@ -134,7 +134,7 @@
 
 - **피드백 통화 예약**: [이 예약 링크](http://speakwith.us/mayankjain)를 사용하여 편리한 시간을 예약하세요.
 
-- **피드백 양식 작성**: 빠른 [피드백 양식](https://link.gohighlevel.com/widget/form/3nHVVEoVFBC0AZm3Fm7n)을 통해 생각을 공유하세요.
+- **피드백 양식 작성**: 빠른 [피드백 양식](https://link.hyperclass.ai/widget/form/3nHVVEoVFBC0AZm3Fm7n)을 통해 생각을 공유하세요.
 
 - **이메일 문의** — 다음 주소로 직접 연락하세요:
 [mayank.jain@Hyperclass.com](mailto:mayank.jain@gohighlevel.com)

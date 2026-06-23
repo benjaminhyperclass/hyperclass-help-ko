@@ -35,7 +35,7 @@
 
 이 시작 가이드에서는 Hyperclass를 활용하여 즉시 더 많은 배관 설비 고객을 유치하고, 재방문 고객을 확보하며, 전체 과정을 자동화하는 5가지 핵심 방법을 보여드립니다.
 
-**배관 설비 사업 성장하기 - [지금 Hyperclass에 가입하세요](https://www.gohighlevel.com/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services&utm_term=Plumbing&utm_content=Playbook)!**
+**배관 설비 사업 성장하기 - [지금 Hyperclass에 가입하세요](https://hyperclass.ai/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services&utm_term=Plumbing&utm_content=Playbook)!**
 
 ## 이 가이드에서 배울 내용
 
@@ -239,7 +239,7 @@
 
 ## 배관 설비 사업을 더 빠르게 성장시킬 준비가 되셨나요?
 
-[지금 Hyperclass에 가입하고](https://www.gohighlevel.com/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services&utm_term=Plumbing&utm_content=Playbook) 즉시 더 많은 배관 설비 수익을 만드세요!
+[지금 Hyperclass에 가입하고](https://hyperclass.ai/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services&utm_term=Plumbing&utm_content=Playbook) 즉시 더 많은 배관 설비 수익을 만드세요!
 
 ---
 *원문 최종 수정: Thu, 10 Apr, 2025 at 6:37 AM*  

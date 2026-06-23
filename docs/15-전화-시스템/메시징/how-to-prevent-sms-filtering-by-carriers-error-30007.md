@@ -114,7 +114,7 @@ SMS에는 다음이 포함되어야 합니다:
 
 ![연락처 상세 정보 열기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045942009/original/mex1pNsfS3FCDGDMTdbv4hZNsC2Osunobw.png?1746039797)
 
-- 브라우저 URL을 복사하세요. 다음과 같은 형태입니다: https://app.gohighlevel.com/location/<LOCATION_ID>/conversations/<CONTACT_ID>
+- 브라우저 URL을 복사하세요. 다음과 같은 형태입니다: https://app.hyperclass.ai/location/<LOCATION_ID>/conversations/<CONTACT_ID>
 
 ![URL 복사](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045942213/original/TZxTX1WA_0pUTXKvryXNhL7p5ye1XTiWmg.png?1746040216)
 

@@ -41,7 +41,7 @@
 
 #### **결과를 얻는 광고 전략을 구축해봅시다.**
 
-마케팅을 강화해보세요 - **[Hyperclass로 시작하기](https://www.gohighlevel.com/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook)**
+마케팅을 강화해보세요 - **[Hyperclass로 시작하기](https://hyperclass.ai/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook)**
 
 ### **1단계: Google 광고 & 지역 서비스 광고로 발견되기**
 
@@ -160,7 +160,7 @@
 - **명함, 전단지, 트럭**에 **QR 코드를 배치**합니다.
 - **즉시 응답 및 리마인더를 자동화**합니다.
 
-[청소업을 위한 문자 리드 캠페인 사용법](https://blog.gohighlevel.com/setting-up-high-performing-sms-campaigns-with-highlevel-your-ultimate-guide/)
+[청소업을 위한 문자 리드 캠페인 사용법](https://blog.hyperclass.ai/setting-up-high-performing-sms-campaigns-with-highlevel-your-ultimate-guide/)
 
 ### **4단계: 최대 ROI를 위한 광고 추적 및 최적화**
 
@@ -189,7 +189,7 @@
 ✅ 청소 서비스가 필요하기 전에 **기업 및 주택 소유자를 타겟팅**합니다.
 ✅ **자동화 & AI 기반 후속 조치**로 **더 많은 리드를 전환**합니다.
 
-### 광고를 24시간 리드 엔진으로 만들어보세요—[오늘 Hyperclass로 시작하세요!](https://www.gohighlevel.com/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook)
+### 광고를 24시간 리드 엔진으로 만들어보세요—[오늘 Hyperclass로 시작하세요!](https://hyperclass.ai/?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+Cleaning&utm_term=Cleaning&utm_content=Playbook)
 
 ---
 *원문 최종 수정: Thu, 10 Apr, 2025 at 5:39 AM*

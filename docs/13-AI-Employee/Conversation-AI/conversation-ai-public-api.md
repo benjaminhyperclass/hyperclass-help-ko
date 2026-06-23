@@ -71,7 +71,7 @@ Hyperclass 하위 계정(로케이션)에서 `Settings(설정) → Private Integ
 
 ## **API 문서**
 
-전체 API 문서는 여기에서 확인할 수 있습니다: [Marketplace API 2.0 대화 AI 액션](https://marketplace.gohighlevel.com/docs/ghl/conversation-ai/actions)
+전체 API 문서는 여기에서 확인할 수 있습니다: [Marketplace API 2.0 대화 AI 액션](https://marketplace.hyperclass.ai/docs/ghl/conversation-ai/actions)
 
 ### **액션**
 

@@ -8,7 +8,7 @@
 
 이 가이드에서는 CSV 파일을 사용해서 Hyperclass로 기회를 가져오는 방법을 안내합니다. 데이터 준비, 필드 매핑, 원활한 가져오기 과정을 통해 영업 파이프라인을 체계적으로 최신 상태로 유지하는 방법을 배워보세요.
 
-**중요**: Hyperclass에서는 CSV(.csv) 파일 형식만 지원합니다. Excel이나 Google Sheets 같은 다른 파일 형식은 사용할 수 없어요. 자세한 내용은 [연락처 및 기회 가져오기용 CSV 파일 형식](https://gohighlevelassist.freshdesk.com/support/solutions/articles/155000005143-csv-file-format-for-importing-contacts-and-opportunities) 가이드를 참고하세요.
+**중요**: Hyperclass에서는 CSV(.csv) 파일 형식만 지원합니다. Excel이나 Google Sheets 같은 다른 파일 형식은 사용할 수 없어요. 자세한 내용은 [연락처 및 기회 가져오기용 CSV 파일 형식](https://hyperclass.gitbook.io/hyperclass-docs) 가이드를 참고하세요.
 
 ---
 **목차**

@@ -14,7 +14,7 @@
 
 에이전시 보기에서 설정(Settings)을 클릭하세요.
 
-또는 직접 [https://app.gohighlevel.com/settings/twilio](https://app.gohighlevel.com/settings/twilio)로 이동하세요.
+또는 직접 [https://app.hyperclass.ai/settings/twilio](https://app.hyperclass.ai/settings/twilio)로 이동하세요.
 
 ![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48193766094/original/v8jRqFgJBH6dZndEelQjitEdOVZStDn0og.png?1645641856)
 
@@ -113,7 +113,7 @@ Twilio를 클릭하세요.
 
 접속할 링크:
 
-[https://api.gohighlevel.com/twilio/create_application/**<location_id>**](https://api.gohighlevel.com/twilio/create_application/%3Clocation_id%3E)
+[https://api.hyperclass.ai/twilio/create_application/**<location_id>**](https://api.hyperclass.ai/twilio/create_application/%3Clocation_id%3E)
 
 ---
 *원문 최종 수정: Wed, 23 Feb, 2022 at 12:56 PM*

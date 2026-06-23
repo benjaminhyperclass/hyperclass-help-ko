@@ -43,7 +43,7 @@
 ✅ 모든 전화 및 예약 추적으로 무엇이 효과적인지 정확히 파악
 ✅ 고전환 광고 운영 (유기적 리드를 최대화한 후!)
 
-시작하기 전에 Hyperclass 계정이 필요합니다 - [여기서 가입하세요!](https://www.gohighlevel.com/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services&utm_term=Plumbing&utm_content=Playbook)
+시작하기 전에 Hyperclass 계정이 필요합니다 - [여기서 가입하세요!](https://hyperclass.ai/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services&utm_term=Plumbing&utm_content=Playbook)
 
 
 ## 1단계: 구글 비즈니스 프로필(GBP) 로컬 검색 최적화
@@ -206,7 +206,7 @@ GBP의 리뷰 및 참여도를 추적하세요.
 ✅ 랭킹을 모니터링하고 웹사이트 속도를 개선하세요.
 ✅ Hyperclass 대시보드에서 리드 및 예약을 추적하세요.
 
-오늘부터 더 높은 순위를 달성하세요—[Hyperclass에 가입](https://www.gohighlevel.com/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services&utm_term=Plumbing&utm_content=Playbook)하여 지역 시장을 장악하세요!
+오늘부터 더 높은 순위를 달성하세요—[Hyperclass에 가입](https://hyperclass.ai/988775b9?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services&utm_term=Plumbing&utm_content=Playbook)하여 지역 시장을 장악하세요!
 
 ---
 *원문 최종 수정: Thu, 10 Apr, 2025 at  6:39 AM*

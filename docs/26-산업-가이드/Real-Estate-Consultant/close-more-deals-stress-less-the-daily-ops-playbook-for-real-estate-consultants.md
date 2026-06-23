@@ -57,7 +57,7 @@ Hyperclass를 통해 다음을 할 수 있습니다:
 ✅ 첫 접촉부터 계약 완료까지 모든 매수자, 매도자, 거래를 추적
 ✅ 무엇이 효과적인지, 무엇이 그렇지 않은지 실시간으로 파악
 
-올인원 솔루션으로 비즈니스를 손쉽게 관리하세요 - [지금 Hyperclass 시작하기](https://www.gohighlevel.com/freetrial16?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook)
+올인원 솔루션으로 비즈니스를 손쉽게 관리하세요 - [지금 Hyperclass 시작하기](https://hyperclass.ai/freetrial16?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook)
 
 ## 이 플레이북에서 배울 내용
 
@@ -262,7 +262,7 @@ Hyperclass를 통해 전체 부동산 컨설턴트 워크플로우가 다음과 
 
 컨설팅 업무를 간소화하고 더 많은 계약을 성사시킬 준비가 되셨나요?
 
-[지금 Hyperclass에 가입하세요.](https://www.gohighlevel.com/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Consultant&utm_content=Playbook)
+[지금 Hyperclass에 가입하세요.](https://hyperclass.ai/324876a3?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Real+Estate+Consultant&utm_content=Playbook)
 
 ---
 *원문 최종 수정: Tue, 27 May, 2025 at 9:33 AM*

@@ -47,7 +47,7 @@ Pro 플랜으로 업그레이드하면 비즈니스의 자동화, 분석, 확장
 
 ## 플랜 비교: 올바른 업그레이드 선택하기
 
-업그레이드 전에 플랜 간 주요 차이점을 검토해보세요. Freelancer 플랜에는 Starter 플랜의 모든 기능이 포함되어 있으며, Agency Pro 플랜에는 Freelancer 플랜의 모든 기능과 추가 고급 기능이 포함되어 있습니다. 아래는 올바른 업그레이드를 선택하는 데 도움이 되는 주요 기능 비교표입니다. 자세한 내용은 [가격 페이지](https://www.gohighlevel.com/gohighlevel-pricing?fp_ref=gohighlevel-pricing-price-reviews-affiliate&fp_sid=saas&gad_source=1&gclid=CjwKCAjwvr--BhB5EiwAd5YbXu03Ef-lC5Z1QCzlgq8Tvp1jzbsbUcO_j8HccQlBZmL5aLxWNgIKPBoCuE0QAvD_BwE)도 참고하세요.
+업그레이드 전에 플랜 간 주요 차이점을 검토해보세요. Freelancer 플랜에는 Starter 플랜의 모든 기능이 포함되어 있으며, Agency Pro 플랜에는 Freelancer 플랜의 모든 기능과 추가 고급 기능이 포함되어 있습니다. 아래는 올바른 업그레이드를 선택하는 데 도움이 되는 주요 기능 비교표입니다. 자세한 내용은 [가격 페이지](https://hyperclass.ai)도 참고하세요.
 
 | 기능 | Starter | Freelancer | Agency Pro |
 |---|---|---|---|

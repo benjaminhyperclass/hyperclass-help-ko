@@ -168,9 +168,9 @@ Hyperclass는 외부 개발자가 개발한 서드파티 도구와의 연동을 
 
 **서드파티 도구 더 알아보기**
 
-- 인앱 개발자 앱 마켓플레이스에서 서드파티 도구를 찾아보세요. [에이전시 뷰 > 앱 마켓플레이스](https://app.gohighlevel.com/integration)로 이동하세요.
+- 인앱 개발자 앱 마켓플레이스에서 서드파티 도구를 찾아보세요. [에이전시 뷰 > 앱 마켓플레이스](https://app.hyperclass.ai/integration)로 이동하세요.
 
-- 개발자가 Hyperclass와 앱 연동을 만들 수 있도록 개발자 리소스에 접근하려면 [https://developers.gohighlevel.com/](https://developers.gohighlevel.com/)을 방문하세요.
+- 개발자가 Hyperclass와 앱 연동을 만들 수 있도록 개발자 리소스에 접근하려면 [https://developers.hyperclass.ai/](https://developers.hyperclass.ai/)을 방문하세요.
 
 ---
 

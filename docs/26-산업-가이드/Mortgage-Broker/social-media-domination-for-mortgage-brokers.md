@@ -50,7 +50,7 @@
 
 자신감 있게 온라인에 나타나고, 콘텐츠를 통해 신뢰를 구축하며, 관심을 대출 성사로 전환하는 방법을 배우세요—번아웃 없이 말입니다.
 
-**[Hyperclass를 시작](https://www.gohighlevel.com/?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Mortgage+Broker&utm_content=Playbook)**하여 자동화하고, 전환하고, 성장시키세요.
+**[Hyperclass를 시작](https://hyperclass.ai/?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Mortgage+Broker&utm_content=Playbook)**하여 자동화하고, 전환하고, 성장시키세요.
 
 ## 배울 내용
 
@@ -204,7 +204,7 @@ Hyperclass는 손가락 하나 까딱하지 않고도 좋아요를 리드로 전
 
 주택담보대출 전문가로서 지역 시장을 장악할 준비가 되셨나요?
 
-[Hyperclass를 시작](https://www.gohighlevel.com/?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Mortgage+Broker&utm_content=Playbook)하여 오늘부터 마케팅, 광고, 파이프라인 후속 조치를 자동화하세요.
+[Hyperclass를 시작](https://hyperclass.ai/?utm_source=SEO&utm_medium=Organic&utm_campaign=Real+Estate&utm_term=Mortgage+Broker&utm_content=Playbook)하여 오늘부터 마케팅, 광고, 파이프라인 후속 조치를 자동화하세요.
 
 ---
 *원문 최종 수정: 2025년 5월 27일 화요일 오전 8:31*

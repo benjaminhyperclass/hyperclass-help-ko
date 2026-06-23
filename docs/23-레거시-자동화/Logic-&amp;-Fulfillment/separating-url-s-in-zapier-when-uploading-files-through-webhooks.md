@@ -8,7 +8,7 @@
 
 API GET 요청
 
-[https://rest.gohighlevel.com/v1/contacts/lookup?email=john@deo.com](https://rest.gohighlevel.com/v1/contacts/lookup?email=john@deo.com)
+[https://rest.hyperclass.ai/v1/contacts/lookup?email=john@deo.com](https://rest.hyperclass.ai/v1/contacts/lookup?email=john@deo.com)
 
 GET 요청을 위한 헤더
 

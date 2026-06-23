@@ -38,7 +38,7 @@ Facebook 리드 파이프라인에 유입된 리드의 60%가 예약 완료(Book
 
 퍼널 차트를 활용하려면, 각 파이프라인 단계가 영업에 한 단계씩 가까워지는 구조여야 합니다. 예: 잠재고객 → 설문 제출 → 상담 → 구매
 
-파이프라인 생성에 대한 자세한 정보: [https://gohighlevelassist.freshdesk.com/support/solutions/articles/48000982197-create-a-pipeline](https://gohighlevelassist.freshdesk.com/support/solutions/articles/48000982197-create-a-pipeline)
+파이프라인 생성에 대한 자세한 정보: [https://hyperclass.gitbook.io/hyperclass-docs](https://hyperclass.gitbook.io/hyperclass-docs)
 
 노쇼, 상담 받았지만 구매하지 않음 등의 단계를 추적하고 싶다면 **단계별 분포 차트**를 참고하세요.
 

@@ -162,7 +162,7 @@ Tipalti는 결제 관리를 도와주고, 추가 결제 방법을 제공하며, 
 
 참고: 활성 Hyperclass 제휴 마케터들은 모두 이미 하위 제휴로 계정에 추가되어 있습니다. Hyperclass 사용자가 아닌 분들을 Hyperclass 제휴 마케터로 모집할 때만 이 기능을 사용하세요.
 
-자세한 내용은 여기서 확인하실 수 있습니다 - [https://www.gohighlevel.com/affiliate-policy](https://www.gohighlevel.com/affiliate-policy)
+자세한 내용은 여기서 확인하실 수 있습니다 - [https://hyperclass.ai/affiliate-policy](https://hyperclass.ai/affiliate-policy)
 
 ### **하위 제휴 마케터는 어디서 볼 수 있나요?**
 

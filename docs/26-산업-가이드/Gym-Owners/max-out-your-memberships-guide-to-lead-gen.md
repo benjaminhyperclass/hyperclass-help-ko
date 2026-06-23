@@ -23,7 +23,7 @@
 
 ---
 
-**시작하기 전에 하이퍼클래스 계정이 필요합니다: [여기서 가입하기](https://www.gohighlevel.com/?utm_source=seo&utm_medium=organic&utm_campaign=gym&utm_term=gym&utm_content=playbook)**
+**시작하기 전에 하이퍼클래스 계정이 필요합니다: [여기서 가입하기](https://hyperclass.ai/?utm_source=seo&utm_medium=organic&utm_campaign=gym&utm_term=gym&utm_content=playbook)**
 
 ---
 
@@ -129,7 +129,7 @@ Google 비즈니스 프로필을 최적화하고, 로컬 검색을 위한 웹사
 ✅ 웹사이트 속도 및 리드 캡처 개선
 ✅ 순위 모니터링 및 필요에 따라 전략 조정
 
-오늘부터 더 높은 순위를 차지하세요—[하이퍼클래스로 가입하기](https://www.gohighlevel.com/?utm_source=seo&utm_medium=organic&utm_campaign=gym&utm_term=gym&utm_content=playbook)
+오늘부터 더 높은 순위를 차지하세요—[하이퍼클래스로 가입하기](https://hyperclass.ai/?utm_source=seo&utm_medium=organic&utm_campaign=gym&utm_term=gym&utm_content=playbook)
 
 ---
 *원문 최종 수정: 2025년 4월 15일*

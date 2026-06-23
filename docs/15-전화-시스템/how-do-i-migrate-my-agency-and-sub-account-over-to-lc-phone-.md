@@ -147,7 +147,7 @@ Agency Settings(에이전시 설정) → Billing(청구) → See Details(세부 
 
 #### 7. LC Phone으로 전환할 때 하나의 하위 계정만 전환할 수 있나요? 아니면 모든 하위 계정을 전환해야 하나요?
 
-모든 새로운 하위 계정은 자동으로 LC Phone을 사용합니다. 단, [LC Phone 비활성화 폼](https://link.gohighlevel.com/widget/form/ItLl5XOY2IQcSI8iDkiR)에서 자체 Twilio 계정 SID 및 인증 토큰을 제출하여 해당 하위 계정의 LC Phone을 비활성화할 수 있습니다. 기존 하위 계정의 경우, 모든 하위 계정을 LC Phone으로 전환하거나 원하는 하위 계정만 LC Phone으로 전환할 수 있습니다.
+모든 새로운 하위 계정은 자동으로 LC Phone을 사용합니다. 단, [LC Phone 비활성화 폼](https://link.hyperclass.ai/widget/form/ItLl5XOY2IQcSI8iDkiR)에서 자체 Twilio 계정 SID 및 인증 토큰을 제출하여 해당 하위 계정의 LC Phone을 비활성화할 수 있습니다. 기존 하위 계정의 경우, 모든 하위 계정을 LC Phone으로 전환하거나 원하는 하위 계정만 LC Phone으로 전환할 수 있습니다.
 
 #### 8. LeadConnector로 전환하고 국제 번호가 필요한 경우 어떻게 진행해야 하나요?
 
@@ -161,7 +161,7 @@ Agency Settings(에이전시 설정) → Billing(청구) → See Details(세부 
 
 물론입니다! 모든 새 계정은 기본적으로 LC-Phone을 사용하지만, 언제든지 서드파티 전화 서비스 제공업체를 연동할 수 있습니다.
 
-하지만 고객이 LC-Phone 시스템 대신 자체 Twilio SID 및 인증 토큰을 사용하려면, ISV를 비활성화하고 해당 로케이션을 자체 Twilio 계정 사용으로 되돌릴 수 있도록 [LC Phone 비활성화 폼](https://link.gohighlevel.com/widget/form/ItLl5XOY2IQcSI8iDkiR)을 제출해 주세요.
+하지만 고객이 LC-Phone 시스템 대신 자체 Twilio SID 및 인증 토큰을 사용하려면, ISV를 비활성화하고 해당 로케이션을 자체 Twilio 계정 사용으로 되돌릴 수 있도록 [LC Phone 비활성화 폼](https://link.hyperclass.ai/widget/form/ItLl5XOY2IQcSI8iDkiR)을 제출해 주세요.
 
 #### 10. 현재 Twilio에서 계정이 정지된 상태인데, LeadConnector로 계정을 이전할 수 있나요?
 

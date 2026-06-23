@@ -22,7 +22,7 @@ iOS 모바일 Safari는 고정 배경 이미지 렌더링에 문제가 있습니
 
 모바일용 별도 섹션 만드는 방법은 다음 가이드를 참고하세요:
 
-[https://help.gohighlevel.com/support/solutions/articles/48001161151](../기타/how-to-have-different-websites-for-desktop-and-phone.md)
+[https://hyperclass.gitbook.io/hyperclass-docs](../기타/how-to-have-different-websites-for-desktop-and-phone.md)
 
 이 문제를 다루는 여러 포럼 스레드들도 도움이 될 수 있습니다:
 [https://www.google.com/search?source=hp&ei=n6eWX_GlOMjMaIu9nagH&q=parallax+image+not+showing+on+iphone&oq=parallax+image+iphon&gs_lcp=CgZwc3ktYWIQAxgAMgYIABAWEB4yBggAEBYQHjoICAAQsQMQgwE6AggAOgUILhCxAzoFCAAQsQM6DgguELEDEIMBEMcBEK8BOggILhCxAxCDAToCCC46CAguELEDEJMCOgoILhCxAxAKEJMCOgQIABAKOgQILhAKOgcIABCxAxAKOgoIABCxAxCDARAKOgcILhCxAxAKUKMNWPF0YJ2BAWgAcAB4AIABgQWIAeo4kgEKMi0xOC43LjAuMZgBAKABAaoBB2d3cy13aXo&sclient=psy-ab](https://www.google.com/search?source=hp&ei=n6eWX_GlOMjMaIu9nagH&q=parallax+image+not+showing+on+iphone&oq=parallax+image+iphon&gs_lcp=CgZwc3ktYWIQAxgAMgYIABAWEB4yBggAEBYQHjoICAAQsQMQgwE6AggAOgUILhCxAzoFCAAQsQM6DgguELEDEIMBEMcBEK8BOggILhCxAxCDAToCCC46CAguELEDEJMCOgoILhCxAxAKEJMCOgQIABAKOgQILhAKOgcIABCxAxAKOgoIABCxAxCDARAKOgcILhCxAxAKUKMNWPF0YJ2BAWgAcAB4AIABgQWIAeo4kgEKMi0xOC43LjAuMZgBAKABAaoBB2d3cy13aXo&sclient=psy-ab)

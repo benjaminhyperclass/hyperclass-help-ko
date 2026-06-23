@@ -16,7 +16,7 @@
 
 로케이션 레벨에서 기본 제공업체가 선택되지 않은 경우, Agency 보기에서 설정된 제공업체를 사용합니다.
 
-[https://app.gohighlevel.com/settings/email_services](https://app.gohighlevel.com/settings/email_services)
+[https://app.hyperclass.ai/settings/email_services](https://app.hyperclass.ai/settings/email_services)
 
 **로케이션별 Mailgun 설정:**
 
@@ -44,7 +44,7 @@
 
 ## 3. Email Services 탭의 에이전시 기본 제공업체 (Agency 보기)
 
-[https://app.gohighlevel.com/settings/email_services](https://app.gohighlevel.com/settings/email_services)
+[https://app.hyperclass.ai/settings/email_services](https://app.hyperclass.ai/settings/email_services)
 
 ![에이전시 기본 제공업체 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48279983260/original/wnB4delmXyXEl7HCwnIUbAzHqc7AHcj6gg.png?1675708045)
 

@@ -32,7 +32,7 @@
 
 할 일 이벤트를 사용하여 내부 운영을 간소화하세요. 예를 들어 팀원에게 리드 후속 조치, 전화 통화, 계정 검토 등을 상기시킬 수 있습니다. 캠페인 단계 내에서 직접 할 일 이름, 마감일, 우선순위, 메모, 담당자를 사용자 정의할 수 있습니다.
 
-[](https://help.gohighlevel.com/support/solutions/articles/48001179678-workflow-builder-overview)
+[](https://hyperclass.gitbook.io/hyperclass-docs)
 
 
 ## **할 일 리마인더 트리거 설정하기**
@@ -41,7 +41,7 @@
 할 일 트리거를 사용하면 할 일에 대한 작업(완료, 배정, 상태 변경 등)을 기반으로 자동화를 시작할 수 있습니다. 팀이 할 일을 처리하는 방식에 따라 후속 작업이 자동으로 발생하도록 하고 싶을 때 유용합니다.
 
 
-# [](https://help.gohighlevel.com/a/solutions/articles/48001147413/edit?portalId=48000045315)
+# [](https://hyperclass.gitbook.io/hyperclass-docs)
 
 ---
 *원문 최종 수정: Tue, 6 May, 2025 at 11:23 AM*

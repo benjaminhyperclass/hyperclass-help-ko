@@ -111,7 +111,7 @@
 
 여러 결제 옵션, 저장된 카드, 앱 내 결제, 쿠폰 코드 지원을 포함한 모든 기능을 활용하려면 새로운 서비스(v2) 경험으로 이동할 수 있습니다.
 
-도움말 문서 - https://help.gohighlevel.com/support/solutions/folders/155000000828
+도움말 문서 - https://hyperclass.gitbook.io/hyperclass-docs
 
 ## 자주 묻는 질문
 

@@ -185,7 +185,7 @@ Tipalti를 설정하는 방법은 몇 가지가 있습니다.
 
 이것이 해당 사항이 아니라고 생각하시면 저희에게 지원 티켓을 열어주세요! 제휴 이메일과 추천 링크를 포함하고 이 제휴 포털 문제와 관련된 제목을 적어주시면 저희가 빠르게 확인하고 조사할 수 있습니다!
 
-제휴 지급 정책에 대한 더 많은 질문은 저희 제휴 정책을 확인해주세요! [Hyperclass.com/affiliate-policy](https://www.gohighlevel.com/affiliate-policy)
+제휴 지급 정책에 대한 더 많은 질문은 저희 제휴 정책을 확인해주세요! [Hyperclass.com/affiliate-policy](https://hyperclass.ai/affiliate-policy)
 
 ---
 

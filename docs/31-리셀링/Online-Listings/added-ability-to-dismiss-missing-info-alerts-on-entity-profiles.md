@@ -48,7 +48,7 @@
 
 온라인 리스팅과 고객에게 이를 재판매하는 방법에 대해 더 자세히 알아보려면 [여기를 클릭하세요](../../16-SaaS-설정/기타/how-to-sell-yext-as-part-of-a-saas-offer.md).
 
-💡 리스팅 기능에 대한 제안사항이 있으신가요? [아이디어 게시판](https://ideas.gohighlevel.com/yext)에 의견을 남겨주시면 우선순위를 두고 검토하겠습니다!
+💡 리스팅 기능에 대한 제안사항이 있으신가요? [아이디어 게시판](https://ideas.hyperclass.ai/yext)에 의견을 남겨주시면 우선순위를 두고 검토하겠습니다!
 
 ---
 *원문 최종 수정: Tue, 23 Sep, 2025 at 11:15 PM*

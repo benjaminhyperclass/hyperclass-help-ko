@@ -42,7 +42,7 @@
 ✅ **후속 조치, 예약 스케줄링, 결제를 자동화**하여 놓친 통화와 연체된 인보이스(청구서)로 인한 손실을 막는 방법.
 ✅ 당신이 현장에서 서비스를 제공하는 동안 **Hyperclass를 사용하여 모든 것을 한 곳에서 처리**하는 방법.
 
-**[Hyperclass 시작하기](https://www.gohighlevel.com/freetrial16?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook)**로 오늘부터 냉난방 사업을 성장시키세요!
+**[Hyperclass 시작하기](https://hyperclass.ai/freetrial16?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook)**로 오늘부터 냉난방 사업을 성장시키세요!
 
 ---
 
@@ -198,7 +198,7 @@
 
 #### [냉난방 일일 운영 자동화: 최대 효율성을 위한 확정적 청사진](../../26-산업-가이드/HVAC/hvac-daily-operations-automation-the-definitive-blueprint-for-maximum-efficiency.md)
 
-### 오늘 시작하세요 – [Hyperclass 가입하기](https://www.gohighlevel.com/freetrial16?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook)로 냉난방 사업을 더 빠르게 성장시키세요!
+### 오늘 시작하세요 – [Hyperclass 가입하기](https://hyperclass.ai/freetrial16?utm_source=SEO&utm_medium=Organic&utm_campaign=Home+Services+HVAC&utm_term=HVAC&utm_content=Playbook)로 냉난방 사업을 더 빠르게 성장시키세요!
 
 ---
 *원문 최종 수정: 2025년 2월 13일*

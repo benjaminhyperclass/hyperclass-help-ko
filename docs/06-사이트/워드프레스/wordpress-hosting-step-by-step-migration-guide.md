@@ -169,7 +169,7 @@ Import Your Existing Website(기존 웹사이트 가져오기) 섹션에서 Requ
 
 ## 추가 자료
 
-- [워드프레스 대시보드에서 도메인 추가하는 방법](https://gohighlevelassist.freshdesk.com/a/solutions/articles/155000002547?portalId=48000045315)
+- [워드프레스 대시보드에서 도메인 추가하는 방법](https://hyperclass.gitbook.io/hyperclass-docs)
 - [마이그레이션 뷰 이해하기: 관리자가 보는 것 vs 하위 계정이 보는 것](#)
 - 고객지원 문의
 

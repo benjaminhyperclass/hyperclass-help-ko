@@ -133,7 +133,7 @@ Hyperclass 대시보드 안의 **평판 관리(Reputation)** 탭으로 가세요
 
 ---
 
-성장할 준비가 되셨나요? [하이레벨에 가입하기](https://www.gohighlevel.com/?utm_source=seo&utm_medium=organic&utm_campaign=beautysalon&utm_term=beautysalon&utm_content=playbook)
+성장할 준비가 되셨나요? [하이레벨에 가입하기](https://hyperclass.ai/?utm_source=seo&utm_medium=organic&utm_campaign=beautysalon&utm_term=beautysalon&utm_content=playbook)
 
 ---
 *원문 최종 수정: Tue, 13 May, 2025 at 3:09 AM*
