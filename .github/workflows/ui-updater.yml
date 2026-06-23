@@ -2,92 +2,175 @@ name: GHL UI 한글화 자동 업데이트
 
 on:
   schedule:
-    - cron: '0 21 15 * *'     # 매월 15일 UTC 21:00 = KST 16일 06:00
+    - cron: '0 21 15 * *'    # 매월 15일 UTC 21:00 = KST 16일 06:00
   workflow_dispatch:
     inputs:
       mode:
         description: '실행 모드'
         required: true
-        default: 'build-only'
+        default: 'full'
         type: choice
-        options: [dry-run, build-only, full]
+        options:
+          - dry-run       # EN 추출 + diff만, 번역/빌드/배포 없음
+          - extract-only  # EN 추출 + diff + 저장, 번역 없음
+          - translate     # 미번역 키 번역 + 빌드 (추출 스킵)
+          - full          # EN 추출 → 번역 → 빌드 → CDN 배포
 
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 90
     steps:
+      # ── 체크아웃 ────────────────────────────────────────────────
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
+      # ── Python 3.11 ─────────────────────────────────────────────
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
 
+      # ── Node (terser) ───────────────────────────────────────────
       - uses: actions/setup-node@v4
         with:
           node-version: '20'
 
+      # ── 의존성 설치 ──────────────────────────────────────────────
       - name: 의존성 설치
         run: |
           pip install -r scripts/requirements.txt
+          pip install playwright
+          playwright install chromium --with-deps
           npm install -g terser
 
-      - name: UI 빌드 (dashboard-ko.js)
+      # ── [Step 1] GHL EN i18n 추출 (Playwright) ──────────────────
+      - name: GHL EN i18n 추출
+        if: >
+          github.event_name == 'schedule' ||
+          inputs.mode == 'full' ||
+          inputs.mode == 'dry-run' ||
+          inputs.mode == 'extract-only'
+        run: |
+          if [[ "${{ inputs.mode }}" == "dry-run" ]]; then
+            python scripts/extract-ghl-i18n.py --dry-run
+          else
+            python scripts/extract-ghl-i18n.py
+          fi
+        env:
+          GHL_EMAIL:    ${{ secrets.GHL_EMAIL }}
+          GHL_PASSWORD: ${{ secrets.GHL_PASSWORD }}
+          GHL_URL:      ${{ vars.GHL_DASHBOARD_URL || 'https://app.gohighlevel.com' }}
+          REPO_PATH:    ${{ github.workspace }}
+          VAULT_PATH:   ${{ github.workspace }}
+
+      # ── [Step 2] diff 분석 ──────────────────────────────────────
+      - name: i18n diff 분석
+        run: |
+          python scripts/diff-i18n.py \
+            --new data/ghl-i18n-en.json \
+            --old data/ghl-i18n-en.bak.json \
+            --ko  data/ghl-i18n-ko.json | tee /tmp/diff-result.txt
+          cat /tmp/diff-result.txt >> $GITHUB_STEP_SUMMARY
+        env:
+          REPO_PATH:  ${{ github.workspace }}
+          VAULT_PATH: ${{ github.workspace }}
+
+      # ── [Step 3] 신규 키 번역 ────────────────────────────────────
+      - name: 신규 키 번역 (Anthropic API)
+        if: >
+          github.event_name == 'schedule' ||
+          inputs.mode == 'full' ||
+          inputs.mode == 'translate'
+        run: bash scripts/update-translations.sh --yes --no-build
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          REPO_PATH:         ${{ github.workspace }}
+          VAULT_PATH:        ${{ github.workspace }}
+
+      # ── [Step 4] 빌드 (dry-run / extract-only 제외) ─────────────
+      - name: dashboard-ko.js 빌드
+        if: >
+          github.event_name == 'schedule' ||
+          inputs.mode == 'full' ||
+          inputs.mode == 'translate'
         run: |
           python scripts/build-dashboard-ko.py
+          terser js/dashboard-ko.js -o js/dashboard-ko.min.js --compress --mangle
+          echo "빌드 완료: $(wc -c < js/dashboard-ko.min.js | xargs) bytes"
         env:
-          REPO_PATH: ${{ github.workspace }}
+          REPO_PATH:  ${{ github.workspace }}
           VAULT_PATH: ${{ github.workspace }}
           TERSER_PATH: terser
 
-      - name: Minify
-        run: |
-          terser js/dashboard-ko.js -o js/dashboard-ko.min.js --compress --mangle
-          [ -f js/community-ko.js ] && terser js/community-ko.js -o js/community-ko.min.js --compress --mangle || true
-
+      # ── [Step 5] 화이트라벨 검증 ────────────────────────────────
       - name: JS 화이트라벨 검증
+        if: >
+          github.event_name == 'schedule' ||
+          inputs.mode == 'full' ||
+          inputs.mode == 'translate'
         run: |
           python3 - << 'PYEOF'
           import sys, os
           sys.path.insert(0, 'scripts')
           from whitelabel import whitelabel_check
 
-          result = []
-          for js_file in ['js/dashboard-ko.js']:
-              if os.path.exists(js_file):
-                  with open(js_file, encoding='utf-8') as f:
-                      v = whitelabel_check(f.read())
+          violations = []
+          for f in ['js/dashboard-ko.js']:
+              if os.path.exists(f):
+                  with open(f, encoding='utf-8') as fh:
+                      v = whitelabel_check(fh.read())
                   if v:
-                      result.append(f'⚠️  {js_file}: {len(v)}건')
+                      violations.extend(v)
                       for x in v[:3]:
-                          result.append(f'   [{x["type"]}] {x["context"][:60]}')
+                          print(f'⚠️  [{x["type"]}] {x["context"][:60]}')
                   else:
-                      result.append(f'✅ {js_file}: 위반 없음')
+                      print(f'✅ {f}: 위반 없음')
 
-          summary = '## JS 화이트라벨 검증\n' + '\n'.join(result)
+          summary = f'## JS 화이트라벨 검증\n위반: {len(violations)}건'
+          summary += '\n✅ 이상 없음' if not violations else f'\n⚠️  {len(violations)}건'
           with open(os.environ.get('GITHUB_STEP_SUMMARY', '/dev/null'), 'a') as f:
               f.write(summary + '\n')
-          print('\n'.join(result))
           PYEOF
 
+      # ── [Step 6] 커밋 & 푸시 ─────────────────────────────────────
       - name: 커밋 & 푸시
+        if: >
+          github.event_name == 'schedule' ||
+          inputs.mode == 'full' ||
+          inputs.mode == 'translate' ||
+          inputs.mode == 'extract-only'
         run: |
           git config user.name "Hyperclass Bot"
           git config user.email "bot@hyperclass.ai"
           git add js/ data/
           if ! git diff --cached --quiet; then
-            git commit -m "[Auto] UI 업데이트 ($(date +%Y-%m-%d))"
+            git commit -m "[Auto] UI 한글화 업데이트 ($(date +%Y-%m-%d))"
             git push
+            echo "커밋 완료"
           else
             echo "변경 없음 — 커밋 스킵"
           fi
 
-      - name: CDN 퍼지
-        if: success()
+      # ── [Step 7] CDN 퍼지 ────────────────────────────────────────
+      - name: jsDelivr CDN 퍼지
+        if: >
+          (github.event_name == 'schedule' ||
+           inputs.mode == 'full' ||
+           inputs.mode == 'translate') &&
+          success()
         run: |
           curl -sf "https://purge.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@main/js/dashboard-ko.min.js" || true
-          curl -sf "https://purge.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@main/js/community-ko.min.js" || true
+          curl -sf "https://purge.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@main/js/dashboard-ko.js" || true
           curl -sf "https://purge.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@main/js/version.json" || true
-          echo "## CDN 퍼지 완료" >> $GITHUB_STEP_SUMMARY
+          echo "✅ CDN 퍼지 완료"
+
+      # ── 요약 ────────────────────────────────────────────────────
+      - name: 요약
+        if: always()
+        run: |
+          {
+            echo "## UI 업데이터 완료 — $(date -u '+%Y-%m-%d %H:%M UTC')"
+            echo "- 모드: ${{ github.event_name == 'schedule' && 'schedule(full)' || inputs.mode }}"
+            echo "- 빌드: $(head -4 js/dashboard-ko.js 2>/dev/null | grep 'DOM translations' || echo 'N/A')"
+          } >> $GITHUB_STEP_SUMMARY
