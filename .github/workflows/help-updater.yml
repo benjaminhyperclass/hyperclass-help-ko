@@ -31,13 +31,6 @@ jobs:
       - name: 의존성 설치
         run: pip install -r scripts/requirements.txt
 
-      - name: state 파일 복원 (캐시)
-        uses: actions/cache@v4
-        with:
-          path: data/updater-state.json
-          key: updater-state-${{ github.run_id }}
-          restore-keys: updater-state-
-
       - name: 상태 확인
         run: python scripts/ghl-help-updater.py --status
         env:
