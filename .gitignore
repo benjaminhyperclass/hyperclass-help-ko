@@ -1,6 +1,8 @@
 .DS_Store
 *.bak
+!data/ghl-i18n-en.bak.json
 .obsidian/
 node_modules/
 package.json
 package-lock.json
+data/i18n-progress.json

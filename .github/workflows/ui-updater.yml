@@ -119,6 +119,15 @@ jobs:
               f.write(summary + '\n')
           PYEOF
 
+      # ── [Step 4.5] EN baseline 스냅샷 ────────────────────────────
+      - name: en.bak.json 갱신
+        if: >
+          github.event_name == 'push' ||
+          github.event_name == 'schedule' ||
+          inputs.mode == 'translate' ||
+          inputs.mode == 'full'
+        run: cp data/ghl-i18n-en.json data/ghl-i18n-en.bak.json
+
       # ── [Step 5] 커밋 & 푸시 ─────────────────────────────────────
       - name: 커밋 & 푸시
         if: >
