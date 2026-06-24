@@ -36,10 +36,10 @@
 * [한국 전용 앱](docs/43-한국-앱/README.md)
 * [🚀 토스페이먼츠 시작 가이드 (전체 신청\~연동)](docs/43-한국-앱/tosspayments-getting-started.md)
 * [토스페이먼츠 앱 설치하기](docs/43-한국-앱/tosspayments-installation.md)
-* [📊 Hyperaxis — 법적 고지](docs/43-한국-앱/hyperaxis/README.md)
-  * [개인정보처리방침](docs/43-한국-앱/hyperaxis/privacy-policy.md)
-  * [이용약관](docs/43-한국-앱/hyperaxis/terms-of-service.md)
-  * [개인정보(데이터) 삭제 요청](docs/43-한국-앱/hyperaxis/data-deletion.md)
+* [📊 Hyperaxis — 법적 고지](docs/hyperaxis/README.md)
+  * [개인정보처리방침](docs/hyperaxis/privacy-policy.md)
+  * [이용약관](docs/hyperaxis/terms-of-service.md)
+  * [개인정보(데이터) 삭제 요청](docs/hyperaxis/data-deletion.md)
 
 ## 시작하기(Getting Started)
 
