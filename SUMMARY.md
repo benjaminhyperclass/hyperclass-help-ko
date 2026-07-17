@@ -39,6 +39,7 @@
 * [📊 Hyperaxis — 법적 고지](docs/hyperaxis/README.md)
   * [개인정보처리방침](docs/hyperaxis/privacy-policy.md)
   * [이용약관](docs/hyperaxis/terms-of-service.md)
+  * [Hyperaxis 시작 가이드 — 연결 방법·작동 원리·사용법](undefined/hyperaxis/hyperaxis.md)
   * [개인정보(데이터) 삭제 요청](docs/hyperaxis/data-deletion.md)
 
 ## 시작하기(Getting Started)
@@ -1903,9 +1904,6 @@
 * [실시간 채팅 알림 활성화 및 커스터마이징 방법](docs/32-알림/Notifications/how-to-enable-and-customize-live-chat-notifications.md)
 * [하위 계정 사용자로서 커스텀 알림 설정하는 방법](docs/32-알림/Notifications/how-to-set-up-custom-notifications-as-a-user-in-a-sub-account.md)
 * [틱톡 소셜 게시물](docs/32-알림/기타/direct-posting-for-tiktok-forget-push-notifications.md)
-
-## 컴플라이언스(Compliance)
-
 
 ## 국제화(Internationalization)
 
