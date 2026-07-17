@@ -1,6 +1,5 @@
 ---
-
-번역일: 2026-04-09
+번역일: 2026-04-09T00:00:00.000Z
 카테고리: 결제 관리
 ---
 
@@ -10,13 +9,13 @@
 
 **목차**
 
-- [영수증 기능 활성화하기](#영수증-기능-활성화하기)
-- [영수증 맞춤 설정하기](#영수증-맞춤-설정하기)
-- [영수증 전송](#영수증-전송)
-- [커스텀 템플릿 활용하기](#커스텀-템플릿-활용하기)
-- [자주 묻는 질문](#자주-묻는-질문)
+* [영수증 기능 활성화하기](how-to-enable-sales-receipts-for-order-form-calendar-and-invoice-payments.md#영수증-기능-활성화하기)
+* [영수증 맞춤 설정하기](how-to-enable-sales-receipts-for-order-form-calendar-and-invoice-payments.md#영수증-맞춤-설정하기)
+* [영수증 전송](how-to-enable-sales-receipts-for-order-form-calendar-and-invoice-payments.md#영수증-전송)
+* [커스텀 템플릿 활용하기](how-to-enable-sales-receipts-for-order-form-calendar-and-invoice-payments.md#커스텀-템플릿-활용하기)
+* [자주 묻는 질문](how-to-enable-sales-receipts-for-order-form-calendar-and-invoice-payments.md#자주-묻는-질문)
 
----
+***
 
 ## 영수증 기능 활성화하기
 
@@ -28,11 +27,9 @@
 
 저희는 영수증에 대한 완전한 통제권을 제공한다고 믿습니다. Hyperclass는 영수증에 대한 완전한 제어를 제공하며 영수증을 개인화할 수 있는 여러 맞춤 설정 옵션을 제공합니다:
 
-- **커스텀 제목**: 영수증 제목을 맞춤 설정하여 브랜드에 맞는 개인적인 터치를 추가하세요.
-
-- **영수증 번호**: 기록을 체계적으로 관리하는 것의 중요성을 이해하고 있어, 영수증에 접두사와 시작 번호를 지정할 수 있는 기능을 제공합니다. 이를 통해 거래 추적 및 관리 작업이 간소화됩니다.
-
-- **이메일 템플릿**: 고객 영수증을 발송할 때 [이메일 템플릿을 맞춤 설정](../../10-마케팅/Email-Builder-Capabilities/how-to-use-the-email-builder-and-its-in-line-editor.md)하는 것은 브랜드 정체성을 반영하는 완벽한 방법입니다. 이 기능을 통해 선호도에 따라 이메일 내용을 디자인하고 조정할 수 있어, 고객이 만족할 전문적이고 일관된 경험을 만들 수 있습니다.
+* **커스텀 제목**: 영수증 제목을 맞춤 설정하여 브랜드에 맞는 개인적인 터치를 추가하세요.
+* **영수증 번호**: 기록을 체계적으로 관리하는 것의 중요성을 이해하고 있어, 영수증에 접두사와 시작 번호를 지정할 수 있는 기능을 제공합니다. 이를 통해 거래 추적 및 관리 작업이 간소화됩니다.
+* **이메일 템플릿**: 고객 영수증을 발송할 때 [이메일 템플릿을 맞춤 설정](../../10-마케팅/Email-Builder-Capabilities/how-to-use-the-email-builder-and-its-in-line-editor.md)하는 것은 브랜드 정체성을 반영하는 완벽한 방법입니다. 이 기능을 통해 선호도에 따라 이메일 내용을 디자인하고 조정할 수 있어, 고객이 만족할 전문적이고 일관된 경험을 만들 수 있습니다.
 
 ## 영수증 전송
 
@@ -40,11 +37,11 @@
 
 ## 커스텀 템플릿 활용하기
 
-영수증 발송을 위한 커스텀 템플릿을 활용할 수 있는 유연성을 제공합니다. [이메일 빌더](../../10-마케팅/Email-Builder-Capabilities/how-to-use-the-email-builder-and-its-in-line-editor.md) 내에서 사용 가능한 [커스텀 값](../../23-레거시-자동화/Logic-&amp;-Fulfillment/how-to-use-custom-values.md)을 사용하여 영수증과 함께 개인화되고 브랜드화된 템플릿을 만들 수 있습니다. 비즈니스의 고유한 스타일에 맞는 시각적으로 매력적이고 전문적인 영수증을 만들어 보세요.
+영수증 발송을 위한 커스텀 템플릿을 활용할 수 있는 유연성을 제공합니다. [이메일 빌더](../../10-마케팅/Email-Builder-Capabilities/how-to-use-the-email-builder-and-its-in-line-editor.md) 내에서 사용 가능한 [커스텀 값](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/23-%EB%A0%88%EA%B1%B0%EC%8B%9C-%EC%9E%90%EB%8F%99%ED%99%94/Logic-&-Fulfillment/how-to-use-custom-values.md)을 사용하여 영수증과 함께 개인화되고 브랜드화된 템플릿을 만들 수 있습니다. 비즈니스의 고유한 스타일에 맞는 시각적으로 매력적이고 전문적인 영수증을 만들어 보세요.
 
 ![커스텀 템플릿 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155001991652/original/LG7ZoT6jsGbBQfD0pxUcfU_5IHLlq_uO0Q.png?1688055235)
 
----
+***
 
 ## 자주 묻는 질문
 
@@ -68,11 +65,11 @@
 
 수동으로 영수증을 발송하거나 타사 플랫폼(Stripe 등)을 통해 발송하는 것을 선호한다면 다음 단계에 따라 자동 영수증 기능을 비활성화할 수 있습니다:
 
-- 좌측 사이드바에서 Payments(결제)로 이동합니다.
-- 페이지 상단의 Settings(설정)을 클릭합니다.
-- Receipts(영수증) 탭을 선택합니다.
-- "결제에 대한 자동 영수증 활성화" 토글을 찾습니다.
-- 토글을 끄기(OFF)로 전환하고 Save(저장)를 클릭합니다.
+* 좌측 사이드바에서 Payments(결제)로 이동합니다.
+* 페이지 상단의 Settings(설정)을 클릭합니다.
+* Receipts(영수증) 탭을 선택합니다.
+* "결제에 대한 자동 영수증 활성화" 토글을 찾습니다.
+* 토글을 끄기(OFF)로 전환하고 Save(저장)를 클릭합니다.
 
 **Q: 영수증 번호를 더 짧거나 낮은 번호로 변경할 수 있나요?**
 
@@ -86,6 +83,6 @@
 
 네. 이 토글을 끄면 연결된 결제 게이트웨이를 통해 수집된 모든 거래 유형에 대한 자동 영수증 이메일 발송이 중단됩니다.
 
----
-*원문 최종 수정: 2025년 12월 24일*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+***
+
+_원문 최종 수정: 2025년 12월 24일_ _Hyperclass 사용 가이드 — hyperclass.ai_

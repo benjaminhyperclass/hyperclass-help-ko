@@ -1,10 +1,11 @@
 ---
-
-번역일: 2026-04-08
+번역일: 2026-04-08T00:00:00.000Z
 카테고리: 전화 시스템 > 통화
 ---
 
 # 통화 추적(번호 풀) 설정 방법
+
+## 통화 추적(번호 풀) 설정 방법
 
 번호 풀은 유료 캠페인으로 발생한 통화를 추적하는 훌륭한 방법입니다. 번호 풀을 사용하면 지정된 랜딩 페이지와 웹사이트에 방문한 리드에게 특정 전화번호를 표시하여 통화 추적 대화를 어트리뷰션할 수 있습니다. 이 번호들은 특정 페이지에만 표시되며, 특정 행동을 취한 리드에게만 보여집니다. 이를 "통화 추적 코드"라고도 하지만, 저희는 "번호 풀"이라고 부릅니다.
 
@@ -12,21 +13,21 @@
 
 **이 가이드에서 다루는 내용:**
 
-#### [통화 추적을 위한 번호 풀 설정하기](#통화-추적을-위한-번호-풀-설정하기)
+[**통화 추적을 위한 번호 풀 설정하기**](how-to-set-up-call-tracking-number-pool-.md#통화-추적을-위한-번호-풀-설정하기)
 
-#### [번호 교체 테스트 방법](#번호-교체-테스트-방법)
+[**번호 교체 테스트 방법**](how-to-set-up-call-tracking-number-pool-.md#번호-교체-테스트-방법)
 
-#### [키워드 추적 설정 방법](#키워드-추적-설정-방법)
+[**키워드 추적 설정 방법**](how-to-set-up-call-tracking-number-pool-.md#키워드-추적-설정-방법)
 
-#### [버튼에서 번호 교체하기](#버튼에서-번호-교체하기)
+[**버튼에서 번호 교체하기**](how-to-set-up-call-tracking-number-pool-.md#버튼에서-번호-교체하기)
 
-#### [그룹 ID](#그룹-id)
+[**그룹 ID**](how-to-set-up-call-tracking-number-pool-.md#그룹-id)
 
-#### [FAQ](#faq)
+[**FAQ**](how-to-set-up-call-tracking-number-pool-.md#faq)
 
-- #### [1. 통화 추적을 위해 번호 풀을 설정해야 하는 이유는?](#1.-통화-추적을-위해-번호-풀을-설정해야-하는-이유는?)
+* [**1. 통화 추적을 위해 번호 풀을 설정해야 하는 이유는?**](how-to-set-up-call-tracking-number-pool-.md#1.-통화-추적을-위해-번호-풀을-설정해야-하는-이유는?)
 
-# 통화 추적을 위한 번호 풀 설정하기
+## 통화 추적을 위한 번호 풀 설정하기
 
 **업데이트:** 이제 Google 광고를 모방하기 위해 URL에 gclid를 입력할 수 없습니다. 실제 Google 광고에서만 가능합니다.
 
@@ -114,7 +115,7 @@ Phone Numbers(전화번호)를 클릭하세요.
 
 ![무료 번호 지역 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035730790/original/LBfHiQ9XAQzNLCWoMR1_cVPfAfzS4g3wmw.png?1730300503)
 
-#### 특정 지역 번호의 번호
+**특정 지역 번호의 번호**
 
 다른 지역의 전화번호를 선택하는 것이 괜찮다면, 지역 번호를 입력하고 "Check Availability"를 클릭하면 몇 초 내에 사용 가능한 전화번호가 표시됩니다.
 
@@ -188,7 +189,7 @@ Save(저장)를 클릭하세요. 이렇게 하면 전체 퍼널/웹사이트에�
 
 ![코드 편집기에 붙여넣기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035699692/original/6MrL7sfp50updOJ1Wcq__cYvGm_sZReN0Q.jpeg?1730282318)
 
-**"Save(저장)"**를 클릭하여 진행하세요.
+\*\*"Save(저장)"\*\*를 클릭하여 진행하세요.
 
 ![푸터 트래킹 저장](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035614730/original/GWkPyaAsIfa4Fcz-gkokJSLH5FgytILdXA.png?1730195504)
 
@@ -210,7 +211,7 @@ Save(저장)를 클릭하세요. 이렇게 하면 전체 퍼널/웹사이트에�
 
 ![메뉴 열기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035628979/original/AlUzjbIachBUwPI6kEVf24xg0UHhyAGo2w.png?1730203165)
 
-**"Edit Configuration"**을 클릭하세요.
+\*\*"Edit Configuration"\*\*을 클릭하세요.
 
 ![설정 편집](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035629044/original/iAayPphnG_T7S5HiWGKhwiKXRnG3NTPFwA.png?1730203190)
 
@@ -234,11 +235,11 @@ Save(저장)를 클릭하세요. 이렇게 하면 전체 퍼널/웹사이트에�
 
 ![연락처 활동 확인](https://i.ibb.co/bLgx9K5/chrome-capture-2023-1-22.gif)
 
-## 번호 교체 테스트 방법
+### 번호 교체 테스트 방법
 
 웹페이지의 Body에 추적 스크립트를 추가한 후, 시크릿 브라우저를 열어 번호 교체가 작동하는지 테스트할 수 있습니다.
 
-시크릿 브라우저에 다음을 입력합니다: [yourwebsite.com/landing-page](//yourwebsite.com/landing-page?gclid) 그런 다음 엔터를 누르세요.
+시크릿 브라우저에 다음을 입력합니다: [yourwebsite.com/landing-page](https://yourwebsite.com/landing-page?gclid) 그런 다음 엔터를 누르세요.
 
 ![시크릿 브라우저 테스트](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035690960/original/MDx6s5ci7aK5J-T1I30xsRbIi4L9fdNBQA.jpeg?1730277583)
 
@@ -248,7 +249,7 @@ Save(저장)를 클릭하세요. 이렇게 하면 전체 퍼널/웹사이트에�
 
 예: Apple Smiles를 [yourwebsite.com/landing-page](https://yourwebsite.com/landing-page,)로 링크
 
-## 키워드 추적 설정 방법
+### 키워드 추적 설정 방법
 
 Hyperclass가 통화가 시작되기 전에 검색된 키워드를 표시하려면 Google 광고의 광고 URL에 다음 매개변수를 추가해야 합니다: ?keyword={keyword}
 
@@ -256,13 +257,13 @@ Hyperclass가 통화가 시작되기 전에 검색된 키워드를 표시하려�
 
 관련: [신기능 출시 -- 통화 추적!!](https://www.loom.com/share/54dd0248ee4e46698330b6740721733a)
 
-## 버튼에서 번호 교체하기
+### 버튼에서 번호 교체하기
 
 앵커 태그를 사용하고 href를 전화번호로 설정하며 원하는 텍스트를 입력할 수 있습니다.
 
-예: <a href="tel:(972) 421-5139" class="btn btn-blue">Call Us</a>
+예: [Call Us](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/15-%EC%A0%84%ED%99%94-%EC%8B%9C%EC%8A%A4%ED%85%9C/%ED%86%B5%ED%99%94/tel:\(972\)%20421-5139/README.md)
 
-## 그룹 ID
+### 그룹 ID
 
 그룹 ID는 다른 번호 풀의 모든 번호가 아닌 하나의 번호만 교체하는 데 도움이 됩니다. 따라서 가장 적합한 번호 풀을 찾아 번호를 교체합니다.
 
@@ -272,4 +273,4 @@ Hyperclass가 통화가 시작되기 전에 검색된 키워드를 표시하려�
 
 번호 풀 편집 > Add/Edit Group Id 클릭 > 그룹 ID 이름 지정 > Update 클릭.
 
-![그룹 ID 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035693322/original/aJDR2Chhn6zQKhxedMCQb32foC
+!\[그룹 ID 설정]\(https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035693322/original/aJDR2Chhn6zQKhxedMCQb32foC

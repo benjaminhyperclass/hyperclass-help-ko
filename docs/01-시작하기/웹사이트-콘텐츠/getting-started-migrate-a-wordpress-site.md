@@ -1,6 +1,5 @@
 ---
-
-번역일: 2026-04-06
+번역일: 2026-04-06T00:00:00.000Z
 카테고리: 01-시작하기 > 웹사이트-콘텐츠
 ---
 
@@ -10,8 +9,8 @@
 
 **목차**
 
-- [LC Migrator - 원클릭 이주](#lc-migrator-원클릭-이주)
-- [All-In-One Migration 플러그인](#all-in-one-migration-플러그인)
+* [LC Migrator - 원클릭 이주](getting-started-migrate-a-wordpress-site.md#lc-migrator-원클릭-이주)
+* [All-In-One Migration 플러그인](getting-started-migrate-a-wordpress-site.md#all-in-one-migration-플러그인)
 
 ## **LC Migrator - 원클릭 이주**
 
@@ -21,11 +20,9 @@
 
 **주요 기능**
 
-- **원클릭 이주:** LeadConnector 플러그인에서 바로 이주를 시작할 수 있습니다.
-
-- **다운타임 없음:** 백그라운드에서 처리하는 동안 기존 사이트는 계속 운영됩니다.
-
-- **명확한 진행 상황 업데이트:** 백업부터 확인까지 모든 단계를 실시간으로 확인할 수 있습니다.
+* **원클릭 이주:** LeadConnector 플러그인에서 바로 이주를 시작할 수 있습니다.
+* **다운타임 없음:** 백그라운드에서 처리하는 동안 기존 사이트는 계속 운영됩니다.
+* **명확한 진행 상황 업데이트:** 백업부터 확인까지 모든 단계를 실시간으로 확인할 수 있습니다.
 
 ### **1단계: 사이트 설정으로 이동**
 
@@ -43,7 +40,7 @@ WordPress 사이트 카드를 클릭하고 From blank(빈 페이지부터)를 �
 
 ### 4단계: 기존 사이트 가져오기
 
-WordPress 사이트 > Info(정보) > **Import Your Existing Website(기존 웹사이트 가져오기)**에서 One-click migration using **LeadConnector Migrator Plugin**(LeadConnector Migrator 플러그인을 사용한 원클릭 이주)을 선택하세요. zip 파일이 다운로드되었는지 확인하고, 이제 마법이 시작됩니다!
+WordPress 사이트 > Info(정보) > \*\*Import Your Existing Website(기존 웹사이트 가져오기)\*\*에서 One-click migration using **LeadConnector Migrator Plugin**(LeadConnector Migrator 플러그인을 사용한 원클릭 이주)을 선택하세요. zip 파일이 다운로드되었는지 확인하고, 이제 마법이 시작됩니다!
 
 ![기존 웹사이트 가져오기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047323207/original/OAbjjgHV7WN2oHIP6U8kAshgda544LUGTg.png?1748391487)
 
@@ -73,7 +70,7 @@ WordPress 사이트 > Info(정보) > **Import Your Existing Website(기존 웹�
 
 ### 9단계: 이주 완료
 
-이주가 완료되면 **View Your New Website(새 웹사이트 보기)**를 클릭해서 새로 이주된 사이트를 확인하세요. 선택적으로 경험을 평가해 주시면 서비스 개선에 도움이 됩니다!
+이주가 완료되면 \*\*View Your New Website(새 웹사이트 보기)\*\*를 클릭해서 새로 이주된 사이트를 확인하세요. 선택적으로 경험을 평가해 주시면 서비스 개선에 도움이 됩니다!
 
 ![이주 완료](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047323567/original/E8m5b7MsJoo0zliTlTnkTvdzYxUVa1wCFg.png?1748393315)
 
@@ -115,7 +112,7 @@ Hyperclass WordPress 사이트 대시보드에서 Click to upload or drag and dr
 
 거의 다 끝났습니다! Request for Migration(이주 요청)을 클릭하세요. 이주 과정이 완료되는 동안 커피 한 잔 드시며 기다리세요. 무거운 작업은 저희가 대신 처리해드릴게요.
 
----
+***
 
 ## Hyperclass 하위 계정 간 WordPress 사이트 이동 (복제)
 
@@ -123,30 +120,27 @@ Hyperclass WordPress 사이트 대시보드에서 Click to upload or drag and dr
 
 단계:
 
-- 에이전시 뷰에서 Sites(사이트) → WordPress로 이동하세요.
-
-- Clone(복제)을 선택하세요(또는 원본 사이트를 열고 Clone을 선택하세요).
+* 에이전시 뷰에서 Sites(사이트) → WordPress로 이동하세요.
+* Clone(복제)을 선택하세요(또는 원본 사이트를 열고 Clone을 선택하세요).
 
 ![사이트 복제](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155061935643/original/kc2WPBJUR-soXxKZOmOl_U1lKGSRDu58Sw.png?1767628547)
 
-- Destination Sub-Account(대상 하위 계정)를 선택하세요.
-
-- Source Site(원본 사이트)를 선택하고(아직 선택되지 않은 경우) 복제본에 Name(이름)을 지정하세요.
+* Destination Sub-Account(대상 하위 계정)를 선택하세요.
+* Source Site(원본 사이트)를 선택하고(아직 선택되지 않은 경우) 복제본에 Name(이름)을 지정하세요.
 
 ![대상 하위 계정 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155061935751/original/-zqw5PCHVaZhJA9gFb3U7ZtCdX-XZURUyg.png?1767628615)
 
-- Clone(복제)을 클릭해서 복제를 시작하세요.
-
-- 상태가 Completed(완료)로 표시될 때까지 진행 상황을 모니터링하세요.
+* Clone(복제)을 클릭해서 복제를 시작하세요.
+* 상태가 Completed(완료)로 표시될 때까지 진행 상황을 모니터링하세요.
 
 **더 자세히 알아보기**
 
-- WordPress Hosting: Step-by-Step Migration Guide
-- [WordPress: 도메인 연결 통합](../../06-사이트/wordpress-domain-connect-integration.md)
-- [Hyperclass에서 WordPress 웹사이트 복제하기](../../06-사이트/cloning-wordpress-websites-in-highlevel.md)
-- WordPress 세분화된 권한 관리
-- [템플릿으로 새 WordPress 사이트 만들기](../../06-사이트/워드프레스/new-wordpress-site-from-template.md)
+* WordPress Hosting: Step-by-Step Migration Guide
+* [WordPress: 도메인 연결 통합](../../06-사이트/wordpress-domain-connect-integration.md)
+* [Hyperclass에서 WordPress 웹사이트 복제하기](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/06-%EC%82%AC%EC%9D%B4%ED%8A%B8/cloning-wordpress-websites-in-highlevel.md)
+* WordPress 세분화된 권한 관리
+* [템플릿으로 새 WordPress 사이트 만들기](../../06-사이트/워드프레스/new-wordpress-site-from-template.md)
 
----
-*원문 최종 수정: Mon, 5 Jan, 2026 at 10:04 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+***
+
+_원문 최종 수정: Mon, 5 Jan, 2026 at 10:04 AM_ _Hyperclass 사용 가이드 — hyperclass.ai_

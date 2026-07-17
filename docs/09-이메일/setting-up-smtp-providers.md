@@ -1,6 +1,5 @@
 ---
-
-번역일: 2026-04-06
+번역일: 2026-04-06T00:00:00.000Z
 카테고리: 09-이메일
 ---
 
@@ -8,17 +7,18 @@
 
 Google과 Outlook 모두 직접 연동을 지원합니다. 이 서비스들을 통해 이메일을 발송하신다면 SMTP가 아닌 직접 연동을 사용해 주세요.
 
-Gmail 동기화 가이드 -- [[how-to-set-up-two-way-email-sync-for-gmail](../42-통합/Other-Integrations/how-to-set-up-two-way-email-sync-for-gmail.md)]([how-to-set-up-two-way-email-sync-for-gmail](../42-통합/Other-Integrations/how-to-set-up-two-way-email-sync-for-gmail.md)
+Gmail 동기화 가이드 -- \[[how-to-set-up-two-way-email-sync-for-gmail](../42-통합/Other-Integrations/how-to-set-up-two-way-email-sync-for-gmail.md)]\([how-to-set-up-two-way-email-sync-for-gmail](../42-통합/Other-Integrations/how-to-set-up-two-way-email-sync-for-gmail.md)
 
-Outlook 가이드 -- [[two-way-email-sync-for-outlook](../42-통합/Other-Integrations/two-way-email-sync-for-outlook.md)]([two-way-email-sync-for-outlook](../42-통합/Other-Integrations/two-way-email-sync-for-outlook.md)
+Outlook 가이드 -- \[[two-way-email-sync-for-outlook](../42-통합/Other-Integrations/two-way-email-sync-for-outlook.md)]\([two-way-email-sync-for-outlook](../42-통합/Other-Integrations/two-way-email-sync-for-outlook.md)
 
 또한 LC Email을 사용한 대량 발송 기능도 내장되어 있습니다.
 
-LC Email 가이드 -- [[[what-is-lc-email-i-want-to-know-more](기타/what-is-lc-email-i-want-to-know-more.md)]]
+LC Email 가이드 -- \[\[[what-is-lc-email-i-want-to-know-more](기타/what-is-lc-email-i-want-to-know-more.md)]]
 
 SMTP를 사용하기로 선택하신다면 본인의 책임 하에 사용하시는 것입니다. 저희가 지원을 제공하지만 최선의 노력 기준으로 진행됩니다. SMTP는 전문가를 위한 고급 사용 사례로 간주되며, 대부분의 사용자가 Hyperclass를 통해 이메일을 발송하는 일반적인 방법이 아닙니다.
 
 ## SMTP 및 IMAP 서버 목록:
+
 [https://www.arclab.com/en/kb/email/list-of-smtp-and-imap-servers-mailserver-list.html](https://www.arclab.com/en/kb/email/list-of-smtp-and-imap-servers-mailserver-list.html)
 
 ## 자체 SMTP 프로바이더 사용 시 발신자 이메일 주소 설정 제한 사항:
@@ -45,8 +45,7 @@ SMTP 프로바이더에는 하루에 보낼 수 있는 이메일 수에 제한�
 
 ## SMTP 프로바이더 설정 시 일반적인 문제:
 
-1. 기본 프로바이더를 변경하는 동안 [이메일 재청구](../16-SaaS-설정/Saas-Mode/email-re-billing-on-the-unlimited-297-2970-and-pro-497-4970-plans.md)가 비활성화되어 있는지 확인하세요
-
+1. 기본 프로바이더를 변경하는 동안 [이메일 재청구](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/16-SaaS-%EC%84%A4%EC%A0%95/Saas-Mode/email-re-billing-on-the-unlimited-297-2970-and-pro-497-4970-plans.md)가 비활성화되어 있는지 확인하세요
 2. 동일한 입력으로 gmass 도구를 사용해보고 작동하는지 확인해 보세요: [https://www.gmass.co/smtp-test](https://www.gmass.co/smtp-test)
 
 ## SMTP 프로바이더 설정 도움말:
@@ -63,20 +62,18 @@ Zoho: [Zoho를 SMTP 프로바이더로 사용하기](using-zoho-as-your-smtp-pro
 
 ## Amazon SES 설정에 관하여:
 
-- SMTP 설정(Settings) 페이지에 나열된 올바른 서버 이름을 사용하세요
-- 포트 465를 사용하세요
-- 생성한 IAM 사용자명과 비밀번호를 사용하세요 (다시 볼 수 없으니 저장해 두셨기를 바랍니다)
-- Amazon AWS 루트 사용자 이메일 주소를 사용하세요
+* SMTP 설정(Settings) 페이지에 나열된 올바른 서버 이름을 사용하세요
+* 포트 465를 사용하세요
+* 생성한 IAM 사용자명과 비밀번호를 사용하세요 (다시 볼 수 없으니 저장해 두셨기를 바랍니다)
+* Amazon AWS 루트 사용자 이메일 주소를 사용하세요
 
 Amazon SES 빠른 시작
 
 [https://docs.aws.amazon.com/ses/latest/DeveloperGuide/quick-start.html](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/quick-start.html?fbclid=IwAR3h1k7nhVgILHICO0e2RRMZ5kqlh7WXXEtM1b-9InA_au2Is99hWQgUFCM)
 
-Amazon SES 발송 할당량 관리
-[https://docs.aws.amazon.com/ses/latest/DeveloperGuide/manage-sending-quotas.html](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/manage-sending-quotas.html?fbclid=IwAR1Dd2k5LUYrCYBdCkMbVWX5OCeRnwWNsfKDUwpKMOniKu5jmTg2uBShrck)
+Amazon SES 발송 할당량 관리 [https://docs.aws.amazon.com/ses/latest/DeveloperGuide/manage-sending-quotas.html](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/manage-sending-quotas.html?fbclid=IwAR1Dd2k5LUYrCYBdCkMbVWX5OCeRnwWNsfKDUwpKMOniKu5jmTg2uBShrck)
 
-Amazon SES 샌드박스에서 벗어나기
-[https://docs.aws.amazon.com/ses/latest/DeveloperGuide/request-production-access.html](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/request-production-access.html?fbclid=IwAR3aLfFnZ8BBIil1bN8yhPOzDI5MOAYIaaWS-EmcACvq6xXThRdGr8FoAP0)
+Amazon SES 샌드박스에서 벗어나기 [https://docs.aws.amazon.com/ses/latest/DeveloperGuide/request-production-access.html](https://docs.aws.amazon.com/ses/latest/DeveloperGuide/request-production-access.html?fbclid=IwAR3aLfFnZ8BBIil1bN8yhPOzDI5MOAYIaaWS-EmcACvq6xXThRdGr8FoAP0)
 
 ## Outlook / Microsoft Office 365 설정에 관하여:
 
@@ -114,6 +111,6 @@ A: 하위 계정은 여러 SMTP 서비스 프로바이더를 가질 수 있습�
 
 [Google SMTP 별칭 설정](setting-alias-for-google-smtp.md)
 
----
-*원문 최종 수정: Wed, 28 Jan, 2026 at 7:26 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+***
+
+_원문 최종 수정: Wed, 28 Jan, 2026 at 7:26 AM_ _Hyperclass 사용 가이드 — hyperclass.ai_

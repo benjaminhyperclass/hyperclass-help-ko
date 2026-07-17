@@ -1,6 +1,5 @@
 ---
-
-번역일: 2026-04-06
+번역일: 2026-04-06T00:00:00.000Z
 카테고리: 03-대화 > 대화
 ---
 
@@ -18,31 +17,29 @@ Hyperclass 대화(Conversations)에서 내부 댓글과 @멘션을 사용해 연
 
 이러한 장점들을 통해 메시지 전송이나 팀 채팅 전환 대신 언제 내부 댓글을 사용할지 결정할 수 있습니다.
 
-- **비공개 협업**: 민감한 메모와 결정 사항을 연락처가 보지 못하도록 보호합니다.
-- **타겟 알림**: 적절한 팀원을 @멘션하여 스레드를 적시에 확인하도록 합니다.
-- **빠른 인수인계**: 대화를 떠나지 않고 맥락과 다음 단계를 할당합니다.
-- **검색 가능한 맥락**: 필터를 사용해 내부 메모를 검색하여 QA와 감사를 빠르게 진행합니다.
+* **비공개 협업**: 민감한 메모와 결정 사항을 연락처가 보지 못하도록 보호합니다.
+* **타겟 알림**: 적절한 팀원을 @멘션하여 스레드를 적시에 확인하도록 합니다.
+* **빠른 인수인계**: 대화를 떠나지 않고 맥락과 다음 단계를 할당합니다.
+* **검색 가능한 맥락**: 필터를 사용해 내부 메모를 검색하여 QA와 감사를 빠르게 진행합니다.
 
 ## 대화에서 내부 댓글 추가하는 방법
 
-- 하위 계정에 로그인합니다.
-- 대화(Conversations) 탭을 클릭합니다.
+* 하위 계정에 로그인합니다.
+* 대화(Conversations) 탭을 클릭합니다.
 
 ![대화 탭](https://jumpshare.com/share/Oolsmxa8ThGG2ktK3Uwa+/Screen+Shot+2026-02-03+at+6.50.58+PM.png)
 
-- 내부 댓글을 추가하려는 대화를 클릭하여 엽니다.
+* 내부 댓글을 추가하려는 대화를 클릭하여 엽니다.
 
 ![대화 선택](https://jumpshare.com/share/dEXBarVKvpU3MWbS093g+/Screen+Shot+2026-02-03+at+6.52.29+PM.png)
 
-- 채널 전환(Channel Switcher) 버튼을 사용하여 **내부 댓글(Internal Comment)**로 전환합니다.
+* 채널 전환(Channel Switcher) 버튼을 사용하여 \*\*내부 댓글(Internal Comment)\*\*로 전환합니다.
 
 ![채널 전환](https://jumpshare.com/share/h6ilpcAieORSwP6UAVYt+/GIF+Recording+2026-02-03+at+6.55.00+PM.gif)
 
-- 댓글을 입력하고, 필요한 경우 **@**를 입력하여 사용자를 태그합니다.
-
-- 내부 댓글 **초안은 자동 저장되며 유지됩니다** - 채널을 전환하거나, 작성기를 접었다 펼치거나, 대화 간에 이동해도 보존됩니다.
-
-- 전송을 클릭하여 댓글을 게시합니다. 이 댓글은 내부 사용자에게만 표시됩니다.
+* 댓글을 입력하고, 필요한 경우 \*\*@\*\*를 입력하여 사용자를 태그합니다.
+* 내부 댓글 **초안은 자동 저장되며 유지됩니다** - 채널을 전환하거나, 작성기를 접었다 펼치거나, 대화 간에 이동해도 보존됩니다.
+* 전송을 클릭하여 댓글을 게시합니다. 이 댓글은 내부 사용자에게만 표시됩니다.
 
 ![댓글 전송](https://jumpshare.com/share/ot2gHS6naeN1IzR8vSbw+/Screen+Shot+2026-02-03+at+6.58.09+PM.png)
 
@@ -50,26 +47,26 @@ Hyperclass 대화(Conversations)에서 내부 댓글과 @멘션을 사용해 연
 
 나 또는 특정 사용자가 멘션된 대화를 보려면:
 
-- 빠른 필터(Quick Filters) 버튼을 클릭합니다.
+* 빠른 필터(Quick Filters) 버튼을 클릭합니다.
 
 ![빠른 필터](https://jumpshare.com/share/zzst31TVJX9ncRM5Fxtx+/Screen+Shot+2025-09-16+at+10.14.01+PM.png)
 
-- 멘션(Mentions) 필터에서 '내 멘션(Mentions of Me)'을 선택하고 적용을 클릭하여 내가 멘션된 대화를 확인합니다.
+* 멘션(Mentions) 필터에서 '내 멘션(Mentions of Me)'을 선택하고 적용을 클릭하여 내가 멘션된 대화를 확인합니다.
 
 ![내 멘션 필터](https://jumpshare.com/share/7ZEh5vvYaUHzhwVst6Oo+/Screen+Shot+2025-09-16+at+10.19.48+PM.png)
 
-- 또는 '특정 사용자 멘션(Mentions of a Specific User)' 옵션을 선택하고 목록에서 사용자를 선택한 후 적용을 클릭하여 특정 사용자가 멘션된 대화를 확인합니다.
+* 또는 '특정 사용자 멘션(Mentions of a Specific User)' 옵션을 선택하고 목록에서 사용자를 선택한 후 적용을 클릭하여 특정 사용자가 멘션된 대화를 확인합니다.
 
 ![특정 사용자 멘션 필터](https://jumpshare.com/share/N1uHrIXOo9LPA5XeF37u+/Screen+Shot+2025-09-16+at+10.23.39+PM.png)
 
-- 대화의 모든 내부 댓글을 보려면 필터(Filters) 버튼을 클릭하고 내부 댓글(Internal Comments) 필터를 적용합니다.
+* 대화의 모든 내부 댓글을 보려면 필터(Filters) 버튼을 클릭하고 내부 댓글(Internal Comments) 필터를 적용합니다.
 
 ![내부 댓글 필터](https://jumpshare.com/share/LJ1JdMcW2SVx5jzjvaUq+/Screen+Shot+2025-09-16+at+10.26.03+PM.png)
 
 ## 알림 관리
 
-- 멘션되거나 관련 대화에서 새 메시지가 있을 때 알림을 받으려면 알림 설정이 활성화되어 있는지 확인하세요.
-- 설정(Settings) → 내 프로필(My Profile) → 알림(Notifications)으로 이동하여 해당 알림을 활성화합니다.
+* 멘션되거나 관련 대화에서 새 메시지가 있을 때 알림을 받으려면 알림 설정이 활성화되어 있는지 확인하세요.
+* 설정(Settings) → 내 프로필(My Profile) → 알림(Notifications)으로 이동하여 해당 알림을 활성화합니다.
 
 ## 자주 묻는 질문
 
@@ -97,6 +94,7 @@ Hyperclass 대화(Conversations)에서 내부 댓글과 @멘션을 사용해 연
 
 아니요, 내부 댓글에서는 첨부파일을 지원하지 않습니다.
 
----
-*원문 최종 수정: Tue, 3 Feb, 2026 at  7:58 AM*  
-*Hyperclass 사용 가이드 — hyperclass.ai*
+***
+
+_원문 최종 수정: Tue, 3 Feb, 2026 at 7:58 AM_\
+&#xNAN;_&#x48;yperclass 사용 가이드 — hyperclass.ai_

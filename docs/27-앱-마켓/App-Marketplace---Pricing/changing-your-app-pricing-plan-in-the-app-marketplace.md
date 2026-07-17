@@ -1,6 +1,5 @@
 ---
-
-번역일: 2026-04-08
+번역일: 2026-04-08T00:00:00.000Z
 카테고리: 앱 마켓플레이스
 ---
 
@@ -10,10 +9,10 @@
 
 ## **목차**
 
-- [앱 요금제는 어떻게 업데이트하나요?](#앱-요금제는-어떻게-업데이트하나요)
-- [앱 배포 타입: 에이전시 전용](#앱-배포-타입-에이전시-전용)
-- [앱 배포 타입: 에이전시 & 하위 계정](#앱-배포-타입-에이전시-하위-계정)
-- [요금 조정](#요금-조정)
+* [앱 요금제는 어떻게 업데이트하나요?](changing-your-app-pricing-plan-in-the-app-marketplace.md#앱-요금제는-어떻게-업데이트하나요)
+* [앱 배포 타입: 에이전시 전용](changing-your-app-pricing-plan-in-the-app-marketplace.md#앱-배포-타입-에이전시-전용)
+* [앱 배포 타입: 에이전시 & 하위 계정](changing-your-app-pricing-plan-in-the-app-marketplace.md#앱-배포-타입-에이전시-하위-계정)
+* [요금 조정](changing-your-app-pricing-plan-in-the-app-marketplace.md#요금-조정)
 
 ## 앱 요금제는 어떻게 업데이트하나요?
 
@@ -23,7 +22,7 @@
 
 ## 앱 배포 타입: 에이전시 전용
 
-[배포 타입이 'Agency Only(에이전시 전용)'](../../35-개발자/Developer-Resources/marketplace-app-distribution-type.md)인 앱의 경우 2단계 과정을 거쳐요.
+[배포 타입이 'Agency Only(에이전시 전용)'](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/35-%EA%B0%9C%EB%B0%9C%EC%9E%90/Developer-Resources/marketplace-app-distribution-type.md)인 앱의 경우 2단계 과정을 거쳐요.
 
 **1단계**: 새로운 요금제를 선택하세요.
 
@@ -35,7 +34,7 @@
 
 ## 앱 배포 타입: 에이전시 & 하위 계정
 
-[배포 타입이 'Agency & Sub-account(에이전시 & 하위 계정)'](../../35-개발자/Developer-Resources/marketplace-app-distribution-type.md)인 앱의 경우 3단계 과정을 거쳐요.
+[배포 타입이 'Agency & Sub-account(에이전시 & 하위 계정)'](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/35-%EA%B0%9C%EB%B0%9C%EC%9E%90/Developer-Resources/marketplace-app-distribution-type.md)인 앱의 경우 3단계 과정을 거쳐요.
 
 **1단계**: 새로운 요금제를 선택하세요.
 
@@ -53,6 +52,6 @@
 
 청구 주기 중간에 요금제를 변경한 경우, 요금 조정은 일할 계산으로 처리돼요. 업그레이드나 다운그레이드 여부에 따라 추가 요금이나 환불이 발생할 수 있어요. 요금 조정은 다음 청구 주기에 반영됩니다.
 
----
-*원문 최종 수정: Wed, 27 Nov, 2024 at 10:18 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+***
+
+_원문 최종 수정: Wed, 27 Nov, 2024 at 10:18 AM_ _Hyperclass 사용 가이드 — hyperclass.ai_

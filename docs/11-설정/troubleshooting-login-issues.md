@@ -1,46 +1,41 @@
 ---
-
-번역일: 2026-04-06
+번역일: 2026-04-06T00:00:00.000Z
 카테고리: 11-설정
 ---
 
 # 로그인 문제 해결하기
 
-#### 
-2단계 인증(2FA) 코드를 받지 못하는 에이전시의 경우, [app.Hyperclass.com](//app.gohighlevel.com)에서 Google 계정으로 로그인을 시도해보세요.
-![Google 계정 로그인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48293030587/original/QzSePcEb_f0it3b2HgnTqQYoNk3wW5gh0Q.gif?1681742080)
+####
 
-#### 
+2단계 인증(2FA) 코드를 받지 못하는 에이전시의 경우, [app.Hyperclass.com](https://app.gohighlevel.com)에서 Google 계정으로 로그인을 시도해보세요. ![Google 계정 로그인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48293030587/original/QzSePcEb_f0it3b2HgnTqQYoNk3wW5gh0Q.gif?1681742080)
+
+####
+
 이 가이드에서 다루는 내용:
 
-- [오류: 현재 로그인할 수 없습니다](#오류-현재-로그인할-수-없습니다)
-- [오류: 현재 보안 코드를 보낼 수 없습니다](#오류-현재-보안-코드를-보낼-수-없습니다)
-- [오류: 이 에이전시에 사용자가 존재하지 않습니다](#오류-이-에이전시에-사용자가-존재하지-않습니다)
-- [오류는 없지만 페이지가 리디렉션되지 않고 멈춤](#오류는-없지만-페이지가-리디렉션되지-않고-멈춤)
-- [오류: 웹 서버에서 알 수 없는 오류 반환](#오류-웹-서버에서-알-수-없는-오류-반환)
-- [Chrome에서 사이트 데이터 제거 방법](#chrome에서-사이트-데이터-제거-방법)
-- [Safari에서 사이트 데이터 제거 방법](#safari에서-사이트-데이터-제거-방법)
+* [오류: 현재 로그인할 수 없습니다](troubleshooting-login-issues.md#오류-현재-로그인할-수-없습니다)
+* [오류: 현재 보안 코드를 보낼 수 없습니다](troubleshooting-login-issues.md#오류-현재-보안-코드를-보낼-수-없습니다)
+* [오류: 이 에이전시에 사용자가 존재하지 않습니다](troubleshooting-login-issues.md#오류-이-에이전시에-사용자가-존재하지-않습니다)
+* [오류는 없지만 페이지가 리디렉션되지 않고 멈춤](troubleshooting-login-issues.md#오류는-없지만-페이지가-리디렉션되지-않고-멈춤)
+* [오류: 웹 서버에서 알 수 없는 오류 반환](troubleshooting-login-issues.md#오류-웹-서버에서-알-수-없는-오류-반환)
+* [Chrome에서 사이트 데이터 제거 방법](troubleshooting-login-issues.md#chrome에서-사이트-데이터-제거-방법)
+* [Safari에서 사이트 데이터 제거 방법](troubleshooting-login-issues.md#safari에서-사이트-데이터-제거-방법)
 
 ## 오류: 현재 로그인할 수 없습니다
 
 1. 사용 중인 인터넷 서비스 제공업체(ISP)를 확인하세요
 
-Verizon Fios를 사용하는 경우, 다음에서 보안 기능을 비활성화할 수 있습니다:
-[https://www.verizon.com/support/residential/internet/essentials/home-network-protection](https://www.verizon.com/support/residential/internet/essentials/home-network-protection)
+Verizon Fios를 사용하는 경우, 다음에서 보안 기능을 비활성화할 수 있습니다: [https://www.verizon.com/support/residential/internet/essentials/home-network-protection](https://www.verizon.com/support/residential/internet/essentials/home-network-protection)
 
-CenturyLink를 사용하는 경우, 다음에서 보안 WiFi를 비활성화할 수 있습니다:
-[https://kb.plu.edu/page.php?id=109248](https://kb.plu.edu/page.php?id=109248)
+CenturyLink를 사용하는 경우, 다음에서 보안 WiFi를 비활성화할 수 있습니다: [https://kb.plu.edu/page.php?id=109248](https://kb.plu.edu/page.php?id=109248)
 
 Survey Junkie를 이전에 사용한 적이 있다면, 제거하여 문제가 해결되는지 확인해보세요. 이 프로그램은 웹사이트의 모든 SSL 인증서를 업데이트합니다.
 
-McAfee가 설치되어 있다면, 다음에서 웹 보안 기능을 끌 수 있습니다:
-[https://www.help.k12.com/s/article/McAfee-Web-Protection-Enable-Disable](https://www.help.k12.com/s/article/McAfee-Web-Protection-Enable-Disable)
+McAfee가 설치되어 있다면, 다음에서 웹 보안 기능을 끌 수 있습니다: [https://www.help.k12.com/s/article/McAfee-Web-Protection-Enable-Disable](https://www.help.k12.com/s/article/McAfee-Web-Protection-Enable-Disable)
 
-**Xfinity**를 사용하는 경우, 다음을 확인하세요:
-[https://www.xfinity.com/support/articles/online-security-with-xfi-faqs](https://www.xfinity.com/support/articles/online-security-with-xfi-faqs)
+**Xfinity**를 사용하는 경우, 다음을 확인하세요: [https://www.xfinity.com/support/articles/online-security-with-xfi-faqs](https://www.xfinity.com/support/articles/online-security-with-xfi-faqs)
 
-**Spectrum**을 사용하는 경우, 다음에서 Security Shield를 끌 수 있습니다:
-[https://www.spectrum.net/support/internet/security-shield](https://www.spectrum.net/support/internet/security-shield)
+**Spectrum**을 사용하는 경우, 다음에서 Security Shield를 끌 수 있습니다: [https://www.spectrum.net/support/internet/security-shield](https://www.spectrum.net/support/internet/security-shield)
 
 장기적인 해결책을 준비하고 있습니다. 사용자가 보안 웹사이트를 브라우징하는 한, 보안 기능을 끄는 것은 위험하지 않습니다.
 
@@ -58,15 +53,11 @@ McAfee가 설치되어 있다면, 다음에서 웹 보안 기능을 끌 수 있�
 
 이메일 인증이 작동하도록 하려면, 다음 영상을 보고 확인하세요:
 
-관련 가이드: [[how-to-check-logs-for-a-specific-email-in-mailgun](../09-이메일/how-to-check-logs-for-a-specific-email-in-mailgun.md)]([how-to-check-logs-for-a-specific-email-in-mailgun](../09-이메일/how-to-check-logs-for-a-specific-email-in-mailgun.md)
+관련 가이드: \[[how-to-check-logs-for-a-specific-email-in-mailgun](../09-이메일/how-to-check-logs-for-a-specific-email-in-mailgun.md)]\([how-to-check-logs-for-a-specific-email-in-mailgun](../09-이메일/how-to-check-logs-for-a-specific-email-in-mailgun.md)
 
 1. 사용자 로그인 이메일이 무엇인가요?
-
 2. 사용자가 스팸 폴더에서 "Login Security Code"라는 제목의 이메일을 확인했나요?
-
-3. 회사 관계 번호가 무엇인가요? (에이전시 설정→회사 탭에서 확인)
-[https://app.hyperclass.ai/settings/company](https://app.hyperclass.ai/settings/company)
-
+3. 회사 관계 번호가 무엇인가요? (에이전시 설정→회사 탭에서 확인) [https://app.hyperclass.ai/settings/company](https://app.hyperclass.ai/settings/company)
 4. 자체 SMTP를 사용하고 있나요, 아니면 Mailgun을 사용하고 있나요? (에이전시 설정에서 확인)
 
 ## 오류: 이 에이전시에 사용자가 존재하지 않습니다
@@ -75,8 +66,7 @@ McAfee가 설치되어 있다면, 다음에서 웹 보안 기능을 끌 수 있�
 
 ## 오류는 없지만 페이지가 리디렉션되지 않고 멈춤
 
-1. [app.Hyperclass.com](//app.gohighlevel.com)에서 쿠키가 허용되어 있는지 확인하세요
-
+1. [app.Hyperclass.com](https://app.gohighlevel.com)에서 쿠키가 허용되어 있는지 확인하세요
 2. 여전히 멈춰있다면,
 
 브라우징 활동/웹 보안을 제어하는 소프트웨어(예: NordVPN)가 있는지 확인하고, 있다면 끄거나 제거하여 작동하는지 확인해보세요. 이는 웹사이트의 모든 SSL 인증서를 업데이트합니다.
@@ -101,16 +91,13 @@ McAfee가 설치되어 있다면, 다음에서 웹 보안 기능을 끌 수 있�
 
 ### Chrome에서 사이트 데이터 제거 방법:
 
-1. Chrome에서 브라우저를 우클릭하고 페이지 요소를 검사하세요.
-![Chrome 요소 검사](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155022406701/original/AV0Fvm6rnoOYjuzJ5KTu0PmBf9A60QhTaA.png?1709769573)
-
+1. Chrome에서 브라우저를 우클릭하고 페이지 요소를 검사하세요. ![Chrome 요소 검사](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155022406701/original/AV0Fvm6rnoOYjuzJ5KTu0PmBf9A60QhTaA.png?1709769573)
 2. 상단 메뉴에서 Applications를 클릭하고 왼쪽 네비게이션 메뉴에서 Storage 옵션에 접근하세요
-
 3. 화면 중앙에서 "Clear Site Data" 옵션을 확인할 수 있습니다:
 
 ![사이트 데이터 삭제](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155022406765/original/dVbD6_BoWBFbPRBvNHEZb8UEqddug13kOA.png?1709769796)
 
-4. 브라우저를 새로고침하고 다시 시도하세요. 여전히 로그인할 수 없다면, 지원팀에 문의하세요: [[[live-24-7-Hyperclass-support-](../36-기타/리커버리/live-24-7-highlevel-support-.md)]]
+4. 브라우저를 새로고침하고 다시 시도하세요. 여전히 로그인할 수 없다면, 지원팀에 문의하세요: \[\[[live-24-7-Hyperclass-support-](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/36-%EA%B8%B0%ED%83%80/%EB%A6%AC%EC%BB%A4%EB%B2%84%EB%A6%AC/live-24-7-highlevel-support-.md)]]
 
 ### Safari에서 사이트 데이터 제거 방법:
 
@@ -130,8 +117,8 @@ McAfee가 설치되어 있다면, 다음에서 웹 보안 기능을 끌 수 있�
 
 ![로컬 스토리지 삭제](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155022407114/original/0vJPTlj6kLu2t92xPgEfgThlhYixP8FEqg.png?1709770754)
 
-5. 브라우저를 새로고침하고 다시 시도하세요. 여전히 로그인할 수 없다면, 지원팀에 문의하세요: [[[live-24-7-Hyperclass-support-](../36-기타/리커버리/live-24-7-highlevel-support-.md)]]
+5. 브라우저를 새로고침하고 다시 시도하세요. 여전히 로그인할 수 없다면, 지원팀에 문의하세요: \[\[[live-24-7-Hyperclass-support-](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/36-%EA%B8%B0%ED%83%80/%EB%A6%AC%EC%BB%A4%EB%B2%84%EB%A6%AC/live-24-7-highlevel-support-.md)]]
 
----
-*원문 최종 수정: Thu, 10 Jul, 2025 at 3:18 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+***
+
+_원문 최종 수정: Thu, 10 Jul, 2025 at 3:18 PM_ _Hyperclass 사용 가이드 — hyperclass.ai_

@@ -1,6 +1,5 @@
 ---
-
-번역일: 2026-04-06
+번역일: 2026-04-06T00:00:00.000Z
 카테고리: 02-연락처
 ---
 
@@ -12,28 +11,28 @@
 
 **목차**
 
-- [연락처 가져오기 사전 준비사항](#연락처-가져오기-사전-준비사항)
-- [흔한 실수 방지하기](#흔한-실수-방지하기)
-- [연락처 가져오기](#연락처-가져오기)
-  - [1단계: Contacts(연락처) 탭으로 이동](#1단계-contacts연락처-탭으로-이동)
-  - [2단계: 가져올 데이터 선택](#2단계-가져올-데이터-선택)
-  - [3단계: CSV 파일 업로드](#3단계-csv-파일-업로드)
-  - [4단계: 컬럼을 필드에 매핑](#4단계-컬럼을-필드에-매핑)
-  - [5단계: 검토, 확인 및 최종 설정](#5단계-검토-확인-및-최종-설정)
-- [선택사항: 연락처 및 기회 관리 동시 가져오기](#선택사항-연락처-및-기회-관리-동시-가져오기)
-- [가져오기 상태 모니터링](#가져오기-상태-모니터링)
-- [자주 묻는 질문](#자주-묻는-질문)
-- [관련 가이드](#관련-가이드)
+* [연락처 가져오기 사전 준비사항](importing-contacts-using-a-csv-file.md#연락처-가져오기-사전-준비사항)
+* [흔한 실수 방지하기](importing-contacts-using-a-csv-file.md#흔한-실수-방지하기)
+* [연락처 가져오기](importing-contacts-using-a-csv-file.md#연락처-가져오기)
+  * [1단계: Contacts(연락처) 탭으로 이동](importing-contacts-using-a-csv-file.md#1단계-contacts연락처-탭으로-이동)
+  * [2단계: 가져올 데이터 선택](importing-contacts-using-a-csv-file.md#2단계-가져올-데이터-선택)
+  * [3단계: CSV 파일 업로드](importing-contacts-using-a-csv-file.md#3단계-csv-파일-업로드)
+  * [4단계: 컬럼을 필드에 매핑](importing-contacts-using-a-csv-file.md#4단계-컬럼을-필드에-매핑)
+  * [5단계: 검토, 확인 및 최종 설정](importing-contacts-using-a-csv-file.md#5단계-검토-확인-및-최종-설정)
+* [선택사항: 연락처 및 기회 관리 동시 가져오기](importing-contacts-using-a-csv-file.md#선택사항-연락처-및-기회-관리-동시-가져오기)
+* [가져오기 상태 모니터링](importing-contacts-using-a-csv-file.md#가져오기-상태-모니터링)
+* [자주 묻는 질문](importing-contacts-using-a-csv-file.md#자주-묻는-질문)
+* [관련 가이드](importing-contacts-using-a-csv-file.md#관련-가이드)
 
 ## 연락처 가져오기 사전 준비사항
 
 가져오기 작업을 시작하기 전에 다음 요구사항을 충족하는지 확인하세요:
 
-- **사용자 권한**: Admin(관리자) 권한이 있는 사용자만 연락처를 가져올 수 있습니다.
-- **파일 형식**: CSV(.csv) 형식이어야 합니다.
-- **파일 크기 제한**: CSV 파일은 30MB 미만이어야 합니다. 더 클 경우 작은 파일로 나누세요.
-- **단일 시트 요구사항**: CSV 파일에는 하나의 시트/탭만 포함되어야 합니다.
-- **CSV 요구사항**: 첫 번째 행은 비어있으면 안 됩니다! 시스템 필드와 일치하는 컬럼 헤더가 최소 하나는 포함된 헤더 행이 있어야 합니다.
+* **사용자 권한**: Admin(관리자) 권한이 있는 사용자만 연락처를 가져올 수 있습니다.
+* **파일 형식**: CSV(.csv) 형식이어야 합니다.
+* **파일 크기 제한**: CSV 파일은 30MB 미만이어야 합니다. 더 클 경우 작은 파일로 나누세요.
+* **단일 시트 요구사항**: CSV 파일에는 하나의 시트/탭만 포함되어야 합니다.
+* **CSV 요구사항**: 첫 번째 행은 비어있으면 안 됩니다! 시스템 필드와 일치하는 컬럼 헤더가 최소 하나는 포함된 헤더 행이 있어야 합니다.
 
 ## 흔한 실수 방지하기
 
@@ -67,8 +66,7 @@ Contacts(연락처) 가져오기를 선택한 후 Next(다음)를 클릭하고, 
 
 ![CSV 파일 업로드](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045270049/original/vQyHg0jDGj9TG88kbdLBy_IItrA-4ZWVFQ.gif?1744891799)
 
-**참고**: 연락처를 업데이트할 때 Hyperclass는 다음 순서로 기존 레코드를 확인합니다:
-Contact ID → Email → Phone
+**참고**: 연락처를 업데이트할 때 Hyperclass는 다음 순서로 기존 레코드를 확인합니다: Contact ID → Email → Phone
 
 이 매칭 순서는 정확한 업데이트를 보장하고 중복을 방지합니다. 중복 제거 설정을 변경하거나 [Allow Duplicate Contacts (Contact Deduplication Preferences)](기타/allow-duplicate-contact-explained.md)에 대해 자세히 알아볼 수 있습니다.
 
@@ -76,11 +74,11 @@ Contact ID → Email → Phone
 
 파일의 각 컬럼이 시스템의 해당 필드에 올바르게 매핑되었는지 확인합니다. 몇 가지 주의사항:
 
-- "Don't update Empty Values(빈 값 업데이트 안 함)" 체크박스를 선택하면, 가져온 파일에 빈 값이 있고 해당 필드에 이미 값이 있을 경우 업데이트하지 않습니다.
-- 특정 필드를 가져오지 않기로 결정했다면, 매핑하지 않은 상태로 두고 하단의 체크박스를 선택하여 진행할 수 있습니다. - "모든 필수 필드가 매핑되었는지 확인하세요. 진행하려면 모든 필드를 매핑하거나 매핑되지 않은 컬럼에 대해 데이터 가져오지 않음을 선택하세요."
-- CSV에서 연락처와 기회 관리 데이터가 같은 행에 있으면 자동으로 서로 연결됩니다.
+* "Don't update Empty Values(빈 값 업데이트 안 함)" 체크박스를 선택하면, 가져온 파일에 빈 값이 있고 해당 필드에 이미 값이 있을 경우 업데이트하지 않습니다.
+* 특정 필드를 가져오지 않기로 결정했다면, 매핑하지 않은 상태로 두고 하단의 체크박스를 선택하여 진행할 수 있습니다. - "모든 필수 필드가 매핑되었는지 확인하세요. 진행하려면 모든 필드를 매핑하거나 매핑되지 않은 컬럼에 대해 데이터 가져오지 않음을 선택하세요."
+* CSV에서 연락처와 기회 관리 데이터가 같은 행에 있으면 자동으로 서로 연결됩니다.
 
-**참고**: CSV 파일에 Hyperclass에 아직 존재하지 않는 필드의 데이터가 포함된 경우, 가져오기를 완료하기 전에 해당 필드를 [Custom Fields(커스텀 필드)](../23-레거시-자동화/Logic-&amp;-Fulfillment/how-to-use-custom-fields.md)로 생성해야 합니다. Hyperclass에서는 CSV 컬럼을 표준 필드와 커스텀 필드 모두에 매핑할 수 있지만, 해당 필드가 계정에 이미 생성되어 있어야 합니다.
+**참고**: CSV 파일에 Hyperclass에 아직 존재하지 않는 필드의 데이터가 포함된 경우, 가져오기를 완료하기 전에 해당 필드를 [Custom Fields(커스텀 필드)](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/23-%EB%A0%88%EA%B1%B0%EC%8B%9C-%EC%9E%90%EB%8F%99%ED%99%94/Logic-&-Fulfillment/how-to-use-custom-fields.md)로 생성해야 합니다. Hyperclass에서는 CSV 컬럼을 표준 필드와 커스텀 필드 모두에 매핑할 수 있지만, 해당 필드가 계정에 이미 생성되어 있어야 합니다.
 
 ![컬럼 매핑](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045270487/original/0Kj5Ar-TSLDpndJhF8UKibEgkC1QbQZF8g.gif?1744892075)
 
@@ -90,9 +88,9 @@ Contact ID → Email → Phone
 
 **환경설정: 가져오기 전 선택사항**
 
-- 새 연락처에 대한 스마트 리스트 생성
-- 가져온 연락처를 워크플로우에 추가
-- 쉬운 세분화를 위해 가져온 연락처에 태그 추가
+* 새 연락처에 대한 스마트 리스트 생성
+* 가져온 연락처를 워크플로우에 추가
+* 쉬운 세분화를 위해 가져온 연락처에 태그 추가
 
 **필드 매핑 검토**: 모든 필수 필드가 올바르게 매핑되었는지 확인하세요. 커스텀 필드가 의도한 대로 할당되었는지 확인하세요. 선택사항: 매핑되지 않은 컬럼은 자동으로 무시됩니다.
 
@@ -110,32 +108,28 @@ Contacts(연락처) 페이지에서 Import(가져오기) 버튼을 클릭한 후
 
 ## 가져오기 상태 모니터링
 
-- Contacts(연락처) 및 Opportunities(기회 관리) Bulk Actions(일괄 작업) 페이지를 통해 가져오기 진행 상황과 상태를 모니터링할 수 있습니다.
-- 연락처와 기회 관리 가져오기 모두 Bulk Actions(일괄 작업) 하위의 같은 위치에 표시됩니다.
-- "Show Stats(통계 보기)" 버튼을 클릭하여 가져오기 통계를 확인하고, 오류 로그를 다운로드하여 "Error(오류)" 탭에서 오류에 대한 자세한 정보와 해결 방법을 볼 수 있습니다.
+* Contacts(연락처) 및 Opportunities(기회 관리) Bulk Actions(일괄 작업) 페이지를 통해 가져오기 진행 상황과 상태를 모니터링할 수 있습니다.
+* 연락처와 기회 관리 가져오기 모두 Bulk Actions(일괄 작업) 하위의 같은 위치에 표시됩니다.
+* "Show Stats(통계 보기)" 버튼을 클릭하여 가져오기 통계를 확인하고, 오류 로그를 다운로드하여 "Error(오류)" 탭에서 오류에 대한 자세한 정보와 해결 방법을 볼 수 있습니다.
 
 ![가져오기 상태 모니터링](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045272144/original/FDJfjgAB0C83p5q7Cc62HjX-HkxheDGMrg.png?1744893191)
 
 ## 자주 묻는 질문
 
-**Q: 이메일이나 전화번호 없이 가져올 수 있나요?**
-연락처를 생성하려면 이름, 이메일, 전화번호 중 최소 하나는 있어야 합니다.
+**Q: 이메일이나 전화번호 없이 가져올 수 있나요?** 연락처를 생성하려면 이름, 이메일, 전화번호 중 최소 하나는 있어야 합니다.
 
-**Q: CSV의 일부 컬럼을 건너뛸 수 있나요?**
-네, 필드 매칭 시 매핑하지 않은 상태로 두면 됩니다.
+**Q: CSV의 일부 컬럼을 건너뛸 수 있나요?** 네, 필드 매칭 시 매핑하지 않은 상태로 두면 됩니다.
 
-**Q: 연락처 레코드를 업데이트할 수 있나요?**
-네, "Update(업데이트)" 또는 "Create and Update(생성 및 업데이트)"를 선택하고 연락처 ID나 이메일을 기반으로 매칭합니다.
+**Q: 연락처 레코드를 업데이트할 수 있나요?** 네, "Update(업데이트)" 또는 "Create and Update(생성 및 업데이트)"를 선택하고 연락처 ID나 이메일을 기반으로 매칭합니다.
 
-**Q: 이전 가져오기는 어디서 확인할 수 있나요?**
-Bulk Actions(일괄 작업)으로 이동하여 가져오기 기록을 볼 수 있습니다.
+**Q: 이전 가져오기는 어디서 확인할 수 있나요?** Bulk Actions(일괄 작업)으로 이동하여 가져오기 기록을 볼 수 있습니다.
 
 ## 관련 가이드
 
-- [CSV 파일을 사용한 기회 관리 가져오기](https://hyperclass.gitbook.io/hyperclass-docs)
-- [중복 연락처 허용 (연락처 중복 제거 환경설정)](../11-설정/Business-Profile-Settings/allow-duplicate-contacts-contact-deduplication-preferences-.md)
-- [연락처 및 기회 관리 가져오기를 위한 CSV 파일 형식](https://hyperclass.gitbook.io/hyperclass-docs)
+* [CSV 파일을 사용한 기회 관리 가져오기](https://hyperclass.gitbook.io/hyperclass-docs)
+* [중복 연락처 허용 (연락처 중복 제거 환경설정)](../11-설정/Business-Profile-Settings/allow-duplicate-contacts-contact-deduplication-preferences-.md)
+* [연락처 및 기회 관리 가져오기를 위한 CSV 파일 형식](https://hyperclass.gitbook.io/hyperclass-docs)
 
----
-*원문 최종 수정: Wed, 18 Mar, 2026 at 1:37 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+***
+
+_원문 최종 수정: Wed, 18 Mar, 2026 at 1:37 PM_ _Hyperclass 사용 가이드 — hyperclass.ai_

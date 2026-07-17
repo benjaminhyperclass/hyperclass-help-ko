@@ -1,6 +1,5 @@
 ---
-
-번역일: 2026-04-09
+번역일: 2026-04-09T00:00:00.000Z
 카테고리: 99-리커버리
 ---
 
@@ -12,11 +11,11 @@ Hyperclass 지원 포털에 로그인하세요.
 
 ## 로그인
 
-처음 이용하시나요? **[회원가입하기](/support/signup)**
+처음 이용하시나요? [**회원가입하기**](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/support/signup/README.md)
 
-**이메일 주소** *
+**이메일 주소** \*
 
-**비밀번호** *
+**비밀번호** \*
 
 ☐ 이 컴퓨터에서 기억하기
 
@@ -28,13 +27,13 @@ Hyperclass 지원 포털에 로그인하세요.
 
 **Facebook으로 계속하기**
 
-[비밀번호를 잊으셨나요?](#)
+[비밀번호를 잊으셨나요?](how-to-add-your-own-template-to-the-template-library-in-the-97-297-and-497-plans.md)
 
 ## 비밀번호 재설정
 
 이메일 주소를 입력해주시면 비밀번호 재설정 안내를 보내드립니다.
 
-**이메일 주소** *
+**이메일 주소** \*
 
 **비밀번호 재설정**
 
@@ -46,6 +45,6 @@ Hyperclass 지원 포털에 로그인하세요.
 
 **Facebook으로 계속하기**
 
----
-*원문 최종 수정: 2026-04-09*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+***
+
+_원문 최종 수정: 2026-04-09_ _Hyperclass 사용 가이드 — hyperclass.ai_

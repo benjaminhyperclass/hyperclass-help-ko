@@ -1,6 +1,5 @@
 ---
-
-번역일: 2026-04-08
+번역일: 2026-04-08T00:00:00.000Z
 카테고리: 25-애드온-세일즈 > Sales Trainings and Case Studies
 ---
 
@@ -32,9 +31,9 @@
 
 ## 첨부파일
 
-**SaaS 감사로 신규 고객 발굴하기.pptx** (1.23 MB)  
-[다운로드](/helpdesk/attachments/48095065901)
+**SaaS 감사로 신규 고객 발굴하기.pptx** (1.23 MB)\
+[다운로드](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/helpdesk/attachments/48095065901/README.md)
 
----
-*원문 최종 수정: 2021년 3월 26일*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+***
+
+_원문 최종 수정: 2021년 3월 26일_ _Hyperclass 사용 가이드 — hyperclass.ai_

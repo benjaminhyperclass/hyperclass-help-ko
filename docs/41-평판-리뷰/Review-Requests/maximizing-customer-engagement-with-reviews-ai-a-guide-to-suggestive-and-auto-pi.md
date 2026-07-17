@@ -1,6 +1,5 @@
 ---
-
-번역일: 2026-04-08
+번역일: 2026-04-08T00:00:00.000Z
 카테고리: 평판 관리 > 리뷰 요청
 ---
 
@@ -16,14 +15,14 @@
 
 **목차**
 
-- [모든 하위 계정에서 리뷰 AI 활성화하기](#모든-하위-계정에서-리뷰-ai-활성화하기)
-- [선택적 하위 계정에서 리뷰 AI 활성화하기](#선택적-하위-계정에서-리뷰-ai-활성화하기)
-- [리뷰 AI 시작하기](#리뷰-ai-시작하기)
-- [제안 모드: 진정성 있는 응답 작성](#제안-모드-진정성-있는-응답-작성)
-- [자동 파일럿 모드: 리뷰 관리 간소화](#자동-파일럿-모드-리뷰-관리-간소화)
-- [가격 구조](#가격-구조)
-- [리뷰 AI 모범 사례](#리뷰-ai-모범-사례)
-- [고객에게 비용 재청구하여 수익 창출](#고객에게-비용-재청구하여-수익-창출)
+* [모든 하위 계정에서 리뷰 AI 활성화하기](maximizing-customer-engagement-with-reviews-ai-a-guide-to-suggestive-and-auto-pi.md#모든-하위-계정에서-리뷰-ai-활성화하기)
+* [선택적 하위 계정에서 리뷰 AI 활성화하기](maximizing-customer-engagement-with-reviews-ai-a-guide-to-suggestive-and-auto-pi.md#선택적-하위-계정에서-리뷰-ai-활성화하기)
+* [리뷰 AI 시작하기](maximizing-customer-engagement-with-reviews-ai-a-guide-to-suggestive-and-auto-pi.md#리뷰-ai-시작하기)
+* [제안 모드: 진정성 있는 응답 작성](maximizing-customer-engagement-with-reviews-ai-a-guide-to-suggestive-and-auto-pi.md#제안-모드-진정성-있는-응답-작성)
+* [자동 파일럿 모드: 리뷰 관리 간소화](maximizing-customer-engagement-with-reviews-ai-a-guide-to-suggestive-and-auto-pi.md#자동-파일럿-모드-리뷰-관리-간소화)
+* [가격 구조](maximizing-customer-engagement-with-reviews-ai-a-guide-to-suggestive-and-auto-pi.md#가격-구조)
+* [리뷰 AI 모범 사례](maximizing-customer-engagement-with-reviews-ai-a-guide-to-suggestive-and-auto-pi.md#리뷰-ai-모범-사례)
+* [고객에게 비용 재청구하여 수익 창출](maximizing-customer-engagement-with-reviews-ai-a-guide-to-suggestive-and-auto-pi.md#고객에게-비용-재청구하여-수익-창출)
 
 ## 모든 하위 계정에서 리뷰 AI 활성화하기
 
@@ -57,36 +56,34 @@
 
 자동 파일럿 모드를 사용하면 다음을 할 수 있습니다:
 
-- 별점 평가에 따라 자동 응답을 커스터마이징
-- 각 응답을 보내기 전 대기 시간 설정
-- 감사 인사나 비즈니스 이름을 포함한 리뷰 응답 푸터로 개인적 터치 추가
-- 페이스북과 구글 같은 특정 소스에 맞는 자동 응답 조정
+* 별점 평가에 따라 자동 응답을 커스터마이징
+* 각 응답을 보내기 전 대기 시간 설정
+* 감사 인사나 비즈니스 이름을 포함한 리뷰 응답 푸터로 개인적 터치 추가
+* 페이스북과 구글 같은 특정 소스에 맞는 자동 응답 조정
 
 ![자동 파일럿 모드](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010272635/original/tIb43pq7lLwWBd98PTlSIq67a146V1G2ig.png?1697529723)
 
----
+***
 
 ## 가격 구조
 
 AI 응답 가격은 다음과 같이 작동합니다:
 
-- 1번째 생성: $0.01 (청구 검증 및 기준 설정)
-- 2번째 생성: 무료
-- 3번째 생성: 무료
-- 4번째 생성: 무료
-- 5번째 이후 생성: $0.01
+* 1번째 생성: $0.01 (청구 검증 및 기준 설정)
+* 2번째 생성: 무료
+* 3번째 생성: 무료
+* 4번째 생성: 무료
+* 5번째 이후 생성: $0.01
 
----
+***
 
 ## 리뷰 AI 모범 사례
 
-- **브랜드에 맞는 응답 조정**: 제안된 응답을 브랜드의 톤과 개성에 맞게 커스터마이징하세요.
+* **브랜드에 맞는 응답 조정**: 제안된 응답을 브랜드의 톤과 개성에 맞게 커스터마이징하세요.
+* **자동 파일럿 응답 모니터링 및 커스터마이징**: 정기적으로 자동 파일럿 응답을 검토하고 조정하여 브랜드의 가치와 기준을 반영하도록 하세요.
+* **리뷰를 넘어선 고객 소통**: 리뷰 AI가 응답을 효율적으로 처리할 수 있지만, 리뷰 답변을 넘어선 더 깊은 고객 소통의 중요성을 잊지 마세요.
 
-- **자동 파일럿 응답 모니터링 및 커스터마이징**: 정기적으로 자동 파일럿 응답을 검토하고 조정하여 브랜드의 가치와 기준을 반영하도록 하세요.
-
-- **리뷰를 넘어선 고객 소통**: 리뷰 AI가 응답을 효율적으로 처리할 수 있지만, 리뷰 답변을 넘어선 더 깊은 고객 소통의 중요성을 잊지 마세요.
-
----
+***
 
 ## 고객에게 비용 재청구하여 수익 창출
 
@@ -94,21 +91,21 @@ AI 응답 가격은 다음과 같이 작동합니다:
 
 ### 고객에게 재청구를 어떻게 활성화하나요?
 
-- 먼저 에이전시에서 리뷰 AI를 활성화했는지 확인하세요.
-- 하위 계정이 아직 SaaS 모드가 아니라면, 에이전시 계정 > 계정(Accounts) 탭 > 하위 계정으로 스크롤 > 점 3개 아이콘 클릭 후 "SaaS로 전환" 선택하여 하위 계정을 SaaS 모드로 전환하세요. [로케이션을 SaaS로 변환하는 방법](../../16-SaaS-설정/Saas-Mode/saas-mode-full-setup-guide-faq.md) 문서를 참조하세요.
-- 에이전시 계정 > 계정(Accounts) 탭 > 하위 계정으로 스크롤 > 세부 정보 보기(View Details) 링크 클릭 > 리뷰 AI 재판매 설정(Reviews AI Re-Sell Settings) 섹션으로 스크롤하여 활성화하세요.
-- 슬라이더를 사용해 원하는 마크업 금액을 설정하고 저장을 누르세요.
-- 사용량을 재청구하고 싶은 모든 하위 계정에 대해 반복하세요.
+* 먼저 에이전시에서 리뷰 AI를 활성화했는지 확인하세요.
+* 하위 계정이 아직 SaaS 모드가 아니라면, 에이전시 계정 > 계정(Accounts) 탭 > 하위 계정으로 스크롤 > 점 3개 아이콘 클릭 후 "SaaS로 전환" 선택하여 하위 계정을 SaaS 모드로 전환하세요. [로케이션을 SaaS로 변환하는 방법](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/16-SaaS-%EC%84%A4%EC%A0%95/Saas-Mode/saas-mode-full-setup-guide-faq.md) 문서를 참조하세요.
+* 에이전시 계정 > 계정(Accounts) 탭 > 하위 계정으로 스크롤 > 세부 정보 보기(View Details) 링크 클릭 > 리뷰 AI 재판매 설정(Reviews AI Re-Sell Settings) 섹션으로 스크롤하여 활성화하세요.
+* 슬라이더를 사용해 원하는 마크업 금액을 설정하고 저장을 누르세요.
+* 사용량을 재청구하고 싶은 모든 하위 계정에 대해 반복하세요.
 
 ### 재청구는 어떻게 작동하나요?
 
-- 에이전시는 Hyperclass에 지불하고 Hyperclass 브랜딩이 있는 인보이스를 받습니다
-- 하위 계정(고객)은 에이전시에 지불하고 에이전시 브랜딩이 있는 인보이스를 받습니다. 돈은 에이전시 레벨에 연결된 Stripe 계정으로 입금됩니다. 에이전시 Stripe 계정을 연결하여 고객으로부터 결제를 수집하는 방법은?
+* 에이전시는 Hyperclass에 지불하고 Hyperclass 브랜딩이 있는 인보이스를 받습니다
+* 하위 계정(고객)은 에이전시에 지불하고 에이전시 브랜딩이 있는 인보이스를 받습니다. 돈은 에이전시 레벨에 연결된 Stripe 계정으로 입금됩니다. 에이전시 Stripe 계정을 연결하여 고객으로부터 결제를 수집하는 방법은?
 
 이는 플랫폼에서 재청구 또는 재판매 모델을 사용하는 다른 제품과 매우 유사합니다. LC 전화나 LC 이메일 재청구와 마찬가지로, 콘텐츠 AI의 재청구도 에이전시 지갑과 로케이션 지갑에서 각각 "크레딧"을 활용합니다.
 
 ![재청구 작동 방식](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010273887/original/pkXi3qLJhdDU2UOZ3ZsRVe5A31LZ6KzBwA.jpeg?1697530335)
 
----
-*원문 최종 수정: 2025년 12월 5일*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+***
+
+_원문 최종 수정: 2025년 12월 5일_ _Hyperclass 사용 가이드 — hyperclass.ai_

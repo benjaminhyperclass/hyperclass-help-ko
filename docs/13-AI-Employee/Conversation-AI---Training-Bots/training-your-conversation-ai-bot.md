@@ -1,6 +1,5 @@
 ---
-
-번역일: 2026-04-08
+번역일: 2026-04-08T00:00:00.000Z
 카테고리: 13-AI-Employee > Conversation AI - Training Bots
 ---
 
@@ -10,14 +9,14 @@
 
 ## 목차
 
-- [대화 AI 봇 학습이란?](#대화-ai-봇-학습이란)
-- [봇 학습의 주요 이점](#봇-학습의-주요-이점)
-- [웹 크롤러](#웹-크롤러)
-  - [웹 크롤러에 URL 추가하는 방법](#웹-크롤러에-url-추가하는-방법)
-  - [구글 문서로 봇 학습시키기](#구글-문서로-봇-학습시키기)
-- [커스텀 봇 응답(FAQ)](#커스텀-봇-응답faq)
-- [자주 묻는 질문](#자주-묻는-질문)
-- [다음 단계](#다음-단계)
+* [대화 AI 봇 학습이란?](training-your-conversation-ai-bot.md#대화-ai-봇-학습이란)
+* [봇 학습의 주요 이점](training-your-conversation-ai-bot.md#봇-학습의-주요-이점)
+* [웹 크롤러](training-your-conversation-ai-bot.md#웹-크롤러)
+  * [웹 크롤러에 URL 추가하는 방법](training-your-conversation-ai-bot.md#웹-크롤러에-url-추가하는-방법)
+  * [구글 문서로 봇 학습시키기](training-your-conversation-ai-bot.md#구글-문서로-봇-학습시키기)
+* [커스텀 봇 응답(FAQ)](training-your-conversation-ai-bot.md#커스텀-봇-응답faq)
+* [자주 묻는 질문](training-your-conversation-ai-bot.md#자주-묻는-질문)
+* [다음 단계](training-your-conversation-ai-bot.md#다음-단계)
 
 ## 대화 AI 봇 학습이란?
 
@@ -27,13 +26,10 @@
 
 ## 봇 학습의 주요 이점
 
-- **정확도 향상**: 관련 데이터 소스에 액세스함으로써 봇이 고객 질문에 맞춤화된 정확한 응답을 제공할 수 있습니다.
-
-- **효율성 증대**: 자동 응답으로 수동 개입이 줄어들어 팀과 고객 모두의 시간을 절약합니다.
-
-- **일관성**: 모든 상호작용에서 고객이 동일한 고품질 정보를 받을 수 있도록 보장합니다.
-
-- **확장성**: 리소스를 늘리지 않고도 증가하는 고객 기반을 지원할 수 있습니다.
+* **정확도 향상**: 관련 데이터 소스에 액세스함으로써 봇이 고객 질문에 맞춤화된 정확한 응답을 제공할 수 있습니다.
+* **효율성 증대**: 자동 응답으로 수동 개입이 줄어들어 팀과 고객 모두의 시간을 절약합니다.
+* **일관성**: 모든 상호작용에서 고객이 동일한 고품질 정보를 받을 수 있도록 보장합니다.
+* **확장성**: 리소스를 늘리지 않고도 증가하는 고객 기반을 지원할 수 있습니다.
 
 ## 웹 크롤러
 
@@ -46,19 +42,18 @@
 봇에 URL을 제공하는 것은 견고한 지식 베이스를 만드는 핵심 단계입니다. URL을 추가하면 웹 크롤러가 웹사이트에서 특정 정보를 추출하고 활용할 수 있어, 봇이 고객 상호작용을 위한 정확하고 맥락적으로 관련된 데이터에 액세스할 수 있게 됩니다.
 
 **Hyperclass 전문가 팁**: 웹 크롤러로 봇을 학습시킬 때 최대한 활용할 수 있는 전문가 팁과 모범 사례를 소개합니다!
-- URL과 문서가 최신이고 관련성 있는지 확인하세요.
-- 자주 묻는 질문과 우선순위가 높은 주제에 집중하세요.
-- 쉽게 파싱할 수 있도록 콘텐츠를 명확하게 구조화하세요.
+
+* URL과 문서가 최신이고 관련성 있는지 확인하세요.
+* 자주 묻는 질문과 우선순위가 높은 주제에 집중하세요.
+* 쉽게 파싱할 수 있도록 콘텐츠를 명확하게 구조화하세요.
 
 #### 1단계: 도메인 유형 선택 및 도메인 입력
 
 봇을 학습시킬 때 크롤링할 수 있는 여러 도메인 유형이 있습니다. 선택하는 도메인 유형에 따라 봇 학습을 위해 크롤링될 URL 수가 결정됩니다.
 
-- **정확한 URL**: 특정 웹페이지를 크롤링해서 해당 데이터를 학습에 사용합니다. 예를 들어 https://hyperclass.ai/ 를 입력하면 해당 정확한 웹페이지로만 크롤링이 제한됩니다.
-
-- **경로가 포함된 모든 URL**: 특정 경로 내의 모든 페이지를 크롤링합니다. 예를 들어 https://hyperclass.ai/marketing 을 입력하면 /marketing/offers 또는 /marketing/promotions 같은 해당 URL 경로를 사용하는 모든 페이지가 포함됩니다.
-
-- **도메인 내 모든 URL**: 도메인 내의 모든 페이지를 크롤링합니다. 예를 들어 https://hyperclass.ai/promo 를 입력하면 루트 도메인 www.Hyperclass.com 을 가진 모든 페이지가 포함됩니다.
+* **정확한 URL**: 특정 웹페이지를 크롤링해서 해당 데이터를 학습에 사용합니다. 예를 들어 https://hyperclass.ai/ 를 입력하면 해당 정확한 웹페이지로만 크롤링이 제한됩니다.
+* **경로가 포함된 모든 URL**: 특정 경로 내의 모든 페이지를 크롤링합니다. 예를 들어 https://hyperclass.ai/marketing 을 입력하면 /marketing/offers 또는 /marketing/promotions 같은 해당 URL 경로를 사용하는 모든 페이지가 포함됩니다.
+* **도메인 내 모든 URL**: 도메인 내의 모든 페이지를 크롤링합니다. 예를 들어 https://hyperclass.ai/promo 를 입력하면 루트 도메인 www.Hyperclass.com 을 가진 모든 페이지가 포함됩니다.
 
 ![도메인 유형 선택하기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155039830261/original/AdPxdhIyOyQbqfqVnPFSEssl4AlYCQzYDA.gif?1736880673)
 
@@ -84,9 +79,9 @@ URL 유형을 선택하고 URL을 입력한 후 "Get Data(데이터 가져오기
 
 대화 AI 봇을 학습시키기 위해 구글 문서를 사용하려면 구글 문서를 "공개"로 설정해야 합니다. 이를 위해서는 구글 문서 공유 설정을 "링크가 있는 모든 사용자"로 설정해야 합니다.
 
-- 구글 문서를 열어주세요
-- 화면 우상단의 "공유" 버튼을 클릭하세요
-- "일반 액세스"에서 "링크가 있는 모든 사용자" 옵션을 선택하세요
+* 구글 문서를 열어주세요
+* 화면 우상단의 "공유" 버튼을 클릭하세요
+* "일반 액세스"에서 "링크가 있는 모든 사용자" 옵션을 선택하세요
 
 ![구글 문서 공유 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155039829734/original/3VKjAUTThq0ur38LW5KrCBwmTKRW4cD1Sw.gif?1736879557)
 
@@ -101,9 +96,10 @@ URL 유형을 선택하고 URL을 입력한 후 "Get Data(데이터 가져오기
 ![커스텀 봇 응답 인터페이스](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155039825087/original/qUzTiAVc684gNegMV0Xa2FbhmjXC8HqZxw.jpeg?1736872947)
 
 **Hyperclass 전문가 팁**: 커스텀 봇 응답으로 봇을 학습시킬 때 최대한 활용할 수 있는 전문가 팁과 모범 사례를 소개합니다!
-- 답변을 간결하고 핵심적으로 유지하세요.
-- 자주 묻는 질문의 다양한 변형을 예상하세요.
-- 변화하는 고객 요구에 맞춰 응답을 정기적으로 업데이트하세요.
+
+* 답변을 간결하고 핵심적으로 유지하세요.
+* 자주 묻는 질문의 다양한 변형을 예상하세요.
+* 변화하는 고객 요구에 맞춰 응답을 정기적으로 업데이트하세요.
 
 ### 커스텀 봇 응답 추가하는 방법
 
@@ -113,20 +109,20 @@ URL 유형을 선택하고 URL을 입력한 후 "Get Data(데이터 가져오기
 
 **수동으로 FAQ 추가하기:**
 
-- "+ Add Q&A(Q&A 추가)" 버튼을 클릭하세요
-- 질문을 입력하고 정확한 응답을 정의하세요
-- 향후 사용을 위해 응답을 저장하세요
+* "+ Add Q\&A(Q\&A 추가)" 버튼을 클릭하세요
+* 질문을 입력하고 정확한 응답을 정의하세요
+* 향후 사용을 위해 응답을 저장하세요
 
 ![수동으로 FAQ 추가하기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155039825319/original/K4p1iXpTC3XsyyNy9KtH8K_oIdO187zgBQ.gif?1736873143)
 
 **AI 대화 피드백:**
 
-- 실시간 대화 중이나 AI 테스트 환경에서 봇이 생성한 응답 아래의 엄지척 또는 엄지아래 옵션을 사용해서 피드백을 제공하세요
-- 이 피드백은 봇의 향후 답변을 개선합니다
+* 실시간 대화 중이나 AI 테스트 환경에서 봇이 생성한 응답 아래의 엄지척 또는 엄지아래 옵션을 사용해서 피드백을 제공하세요
+* 이 피드백은 봇의 향후 답변을 개선합니다
 
 ![AI 대화 피드백 제공하기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155039825197/original/tGYCZueYj8SRwiF0TGF7AQAyY6F7HNGX4Q.gif?1736873045)
 
----
+***
 
 ## 자주 묻는 질문
 
@@ -154,10 +150,10 @@ URL 유형을 선택하고 URL을 입력한 후 "Get Data(데이터 가져오기
 
 봇 학습을 완료했다면 다음 문서들을 확인해서 대화 AI를 더욱 효과적으로 활용해보세요:
 
-- [대화 AI 봇 - 설명](../Getting-Started-w/-Conversation-AI/conversation-ai-bot-explained.md)
-- [대화 AI V2 설정하기](../Getting-Started-w/-Conversation-AI/setting-up-conversation-ai.md)
-- [고급 설정 개요 - 대화 AI](../Getting-Started-w/-Conversation-AI/advanced-settings-overview-conversation-ai.md)
+* [대화 AI 봇 - 설명](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/13-AI-Employee/Getting-Started-w/-Conversation-AI/conversation-ai-bot-explained.md)
+* [대화 AI V2 설정하기](../Getting-Started-w/-Conversation-AI/setting-up-conversation-ai.md)
+* [고급 설정 개요 - 대화 AI](../Getting-Started-w/-Conversation-AI/advanced-settings-overview-conversation-ai.md)
 
----
-*원문 최종 수정: Tue, 3 Feb, 2026 at 1:19 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+***
+
+_원문 최종 수정: Tue, 3 Feb, 2026 at 1:19 PM_ _Hyperclass 사용 가이드 — hyperclass.ai_

@@ -1,6 +1,5 @@
 ---
-
-번역일: 2026-04-09
+번역일: 2026-04-09T00:00:00.000Z
 카테고리: 42-통합 > Other Integrations
 ---
 
@@ -10,12 +9,8 @@
 
 첨부파일 (1개)
 
-[
-pdf
-Public Slides.pdf
-5.84 MB
-](/helpdesk/attachments/48228035527)
+[pdf Public Slides.pdf 5.84 MB](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/helpdesk/attachments/48228035527/README.md)
 
----
-*원문 최종 수정: 2022년 5월 24일 화요일 오전 10:26*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+***
+
+_원문 최종 수정: 2022년 5월 24일 화요일 오전 10:26_ _Hyperclass 사용 가이드 — hyperclass.ai_

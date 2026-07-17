@@ -1,6 +1,5 @@
 ---
-
-번역일: 2026-04-08
+번역일: 2026-04-08T00:00:00.000Z
 카테고리: 산업 가이드 > 치과 클리닉
 ---
 
@@ -10,35 +9,35 @@
 
 이 플레이북은 Hyperclass(Hyperclass)을 사용해 치과를 처음부터 체계화하는 방법을 보여드립니다. 접수 팀이 더 많은 일을 처리하고, 환자들이 정보를 잘 받고 시간을 지키며, 혼란 없이 예약이 가득 찬 상태를 유지할 수 있도록 말이에요.
 
----
+***
 
 **목차**
 
-- [치과에서 운영 효율성이 중요한 이유](#치과에서-운영-효율성이-중요한-이유)
-- [모든 클리닉에 필요한 핵심 운영 시스템 (모두 Hyperclass로 처리)](#모든-클리닉에-필요한-핵심-운영-시스템-모두-hyperclass로-처리)
-- [1. 스마트 캘린더 설정](#1-스마트-캘린더-설정)
-- [2. 온라인 예약 & 임베디드 캘린더](#2-온라인-예약-임베디드-캘린더)
-- [3. 환자를 사전 분류하는 접수 폼](#3-환자를-사전-분류하는-접수-폼)
-- [4. 자동 확인 & 알림](#4-자동-확인-알림)
-- [5. 부재중 전화 문자 답변](#5-부재중-전화-문자-답변)
-- [6. 내부 알림 & 업무 배정](#6-내부-알림-업무-배정)
-- [팀 소통과 책임감을 위한 최적화](#팀-소통과-책임감을-위한-최적화)
-- [확장 가능한 AI 어시스턴트와 워크플로우](#확장-가능한-ai-어시스턴트와-워크플로우)
-- [보고서와 관리자 제어](#보고서와-관리자-제어)
-- [월간 운영 체크리스트 (Hyperclass로 구축)](#월간-운영-체크리스트-hyperclass로-구축)
-- [마무리](#마무리)
+* [치과에서 운영 효율성이 중요한 이유](build-a-dental-practice-that-runs-smoothly-even-when-you-re-not-there-operations.md#치과에서-운영-효율성이-중요한-이유)
+* [모든 클리닉에 필요한 핵심 운영 시스템 (모두 Hyperclass로 처리)](build-a-dental-practice-that-runs-smoothly-even-when-you-re-not-there-operations.md#모든-클리닉에-필요한-핵심-운영-시스템-모두-hyperclass로-처리)
+* [1. 스마트 캘린더 설정](build-a-dental-practice-that-runs-smoothly-even-when-you-re-not-there-operations.md#1-스마트-캘린더-설정)
+* [2. 온라인 예약 & 임베디드 캘린더](build-a-dental-practice-that-runs-smoothly-even-when-you-re-not-there-operations.md#2-온라인-예약-임베디드-캘린더)
+* [3. 환자를 사전 분류하는 접수 폼](build-a-dental-practice-that-runs-smoothly-even-when-you-re-not-there-operations.md#3-환자를-사전-분류하는-접수-폼)
+* [4. 자동 확인 & 알림](build-a-dental-practice-that-runs-smoothly-even-when-you-re-not-there-operations.md#4-자동-확인-알림)
+* [5. 부재중 전화 문자 답변](build-a-dental-practice-that-runs-smoothly-even-when-you-re-not-there-operations.md#5-부재중-전화-문자-답변)
+* [6. 내부 알림 & 업무 배정](build-a-dental-practice-that-runs-smoothly-even-when-you-re-not-there-operations.md#6-내부-알림-업무-배정)
+* [팀 소통과 책임감을 위한 최적화](build-a-dental-practice-that-runs-smoothly-even-when-you-re-not-there-operations.md#팀-소통과-책임감을-위한-최적화)
+* [확장 가능한 AI 어시스턴트와 워크플로우](build-a-dental-practice-that-runs-smoothly-even-when-you-re-not-there-operations.md#확장-가능한-ai-어시스턴트와-워크플로우)
+* [보고서와 관리자 제어](build-a-dental-practice-that-runs-smoothly-even-when-you-re-not-there-operations.md#보고서와-관리자-제어)
+* [월간 운영 체크리스트 (Hyperclass로 구축)](build-a-dental-practice-that-runs-smoothly-even-when-you-re-not-there-operations.md#월간-운영-체크리스트-hyperclass로-구축)
+* [마무리](build-a-dental-practice-that-runs-smoothly-even-when-you-re-not-there-operations.md#마무리)
 
 ### **치과에서 운영 효율성이 중요한 이유**
 
 치과 클리닉은 매일 수십 가지 업무가 동시에 진행됩니다:
 
-- 신규 환자 문의
-- 보험 및 치료 계획 후속 조치
-- 정기 검진 및 스케일링 리콜
-- 의료진 일정 관리
-- 노쇼 관리
-- 리뷰 수집
-- 청구 및 재활성화
+* 신규 환자 문의
+* 보험 및 치료 계획 후속 조치
+* 정기 검진 및 스케일링 리콜
+* 의료진 일정 관리
+* 노쇼 관리
+* 리뷰 수집
+* 청구 및 재활성화
 
 이런 업무들을 4-5개의 다른 도구로 관리한다면, 직원들은 계속 탭을 바꿔가며 메시지를 놓치고 수동적으로 일하게 됩니다. Hyperclass은 모든 커뮤니케이션, 예약, 워크플로우, 내부 조정을 한 곳에서 중앙화하여 이 문제를 해결합니다.
 
@@ -50,114 +49,114 @@
 
 여러 캘린더를 번갈아가며 관리하는 것을 멈추세요. Hyperclass을 사용해 다음과 같이 설정하세요:
 
-- 진료 유형별 별도 캘린더(예: 스케일링, 신환 검진, 응급 진료)
-- 실시간 예약과 동기화된 의료진별 예약 가능 시간
-- 여유 시간, 당일 예약 마감, 자동 일정 변경 규칙
+* 진료 유형별 별도 캘린더(예: 스케일링, 신환 검진, 응급 진료)
+* 실시간 예약과 동기화된 의료진별 예약 가능 시간
+* 여유 시간, 당일 예약 마감, 자동 일정 변경 규칙
 
 **프로 팁:** "리드 소스" 규칙을 설정해서 광고, 구글, 추천으로 온 예약이 자동으로 다른 파이프라인으로 들어가도록 하세요.
 
-**[서비스 캘린더 만드는 방법](../../04-캘린더-예약/Service-Calendars/how-to-create-service-calendars.md)**
+[**서비스 캘린더 만드는 방법**](../../04-캘린더-예약/Service-Calendars/how-to-create-service-calendars.md)
 
 #### **2. 온라인 예약 & 임베디드 캘린더**
 
 환자가 접수에 전화하지 않고도 예약할 수 있게 하세요.
 
-- 웹사이트, 랜딩 페이지, 구글 비즈니스 프로필에 Hyperclass 캘린더 삽입
-- SMS, 이메일, 소셜 포스트에 캘린더 링크 포함
-- 의료진 우선순위 및 팀 로테이션 로직 설정
+* 웹사이트, 랜딩 페이지, 구글 비즈니스 프로필에 Hyperclass 캘린더 삽입
+* SMS, 이메일, 소셜 포스트에 캘린더 링크 포함
+* 의료진 우선순위 및 팀 로테이션 로직 설정
 
 **Hyperclass 워크플로우:** 예약 → 확인 → 내원 전 알림 → 내원 후 리뷰 요청
 
-**[HTML 코드를 사용하여 Hyperclass 캘린더 임베딩하기](../../04-캘린더-예약/embedding-highlevel-calendars-using-html-code.md)**
+[**HTML 코드를 사용하여 Hyperclass 캘린더 임베딩하기**](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/04-%EC%BA%98%EB%A6%B0%EB%8D%94-%EC%98%88%EC%95%BD/embedding-highlevel-calendars-using-html-code.md)
 
 #### **3. 환자를 사전 분류하는 접수 폼**
 
 종이 양식은 그만두세요. Hyperclass을 사용해 다음과 같은 커스텀 디지털 폼을 만드세요:
 
-- 보험 정보, 증상, 병력 수집
-- 답변에 따른 워크플로우 트리거(예: 공포증이나 외상 경험 표시)
-- 태그와 함께 환자 프로필에 자동 업로드
+* 보험 정보, 증상, 병력 수집
+* 답변에 따른 워크플로우 트리거(예: 공포증이나 외상 경험 표시)
+* 태그와 함께 환자 프로필에 자동 업로드
 
 **워크플로우 아이디어:** 신환 폼 작성 → 태그: "초기 마취 필요" → 접수 직원 알림 → 환자가 내원 전 케어 시퀀스에 등록
 
-**[캘린더에 커스텀 폼 추가하기](../../04-캘린더-예약/Customizing-Calendars/adding-custom-forms-to-calendars.md)**
+[**캘린더에 커스텀 폼 추가하기**](../../04-캘린더-예약/Customizing-Calendars/adding-custom-forms-to-calendars.md)
 
 #### **4. 자동 확인 & 알림**
 
 대부분의 노쇼는 소통 부족이나 깜빡함 때문에 발생합니다. 자동화하세요:
 
-- 예약 확인 (즉시)
-- 48시간 전 SMS 알림
-- 24시간 전 이메일 알림
-- 1시간 전 주차/위치 안내 문자
+* 예약 확인 (즉시)
+* 48시간 전 SMS 알림
+* 24시간 전 이메일 알림
+* 1시간 전 주차/위치 안내 문자
 
 **Hyperclass 팁:** 예약 유형에 따라 메시지를 커스터마이징하세요(예: 첫 방문 vs 스케일링 vs 크라운 장착).
 
-**[워크플로우 트리거 - 고객 예약 완료](../../07-워크플로우/Appointments-Workflow-Triggers/workflow-trigger-customer-booked-appointment.md)**
+[**워크플로우 트리거 - 고객 예약 완료**](../../07-워크플로우/Appointments-Workflow-Triggers/workflow-trigger-customer-booked-appointment.md)
 
 #### **5. 부재중 전화 문자 답변**
 
 놓친 전화는 모두 잃을 수 있는 환자입니다. Hyperclass의 부재중 전화 자동 문자 답변 기능이 모든 미응답 전화에 브랜드 메시지로 즉시 답변합니다.
 
-**메시지 예시:** "안녕하세요! [클리닉명]입니다. 전화를 못 받아서 죄송해요. 예약을 도와드리거나 빠른 질문에 답변해드릴까요?"
+**메시지 예시:** "안녕하세요! \[클리닉명]입니다. 전화를 못 받아서 죄송해요. 예약을 도와드리거나 빠른 질문에 답변해드릴까요?"
 
-**[부재중 전화 문자 답변 기능 설정 위치와 방법](../../11-설정/서브어카운트-설정/where-and-how-to-configure-the-missed-call-text-back-feature.md)**
+[**부재중 전화 문자 답변 기능 설정 위치와 방법**](../../11-설정/서브어카운트-설정/where-and-how-to-configure-the-missed-call-text-back-feature.md)
 
 #### **6. 내부 알림 & 업무 배정**
 
 자동 알림으로 팀을 일치시키세요:
 
-- 리드가 폼을 제출하거나 전화를 놓쳤을 때
-- VIP나 고우선순위 케이스가 연락했을 때
-- 치료 계획 후속 조치가 필요할 때
+* 리드가 폼을 제출하거나 전화를 놓쳤을 때
+* VIP나 고우선순위 케이스가 연락했을 때
+* 치료 계획 후속 조치가 필요할 때
 
 Hyperclass 할 일(Task) 시스템을 사용하여:
 
-- 특정 접수 직원이나 치료 코디네이터에게 콜백 배정
-- 미예약 시술에 대한 후속 조치
-- 보험 승인 대기 중인 환자 태깅 및 추적
+* 특정 접수 직원이나 치료 코디네이터에게 콜백 배정
+* 미예약 시술에 대한 후속 조치
+* 보험 승인 대기 중인 환자 태깅 및 추적
 
 ### **팀 소통과 책임감을 위한 최적화**
 
 직원이 후속 조치를 잊거나 누가 무엇을 하는지 잊는다면, Hyperclass이 명확성을 제공합니다:
 
-- **파이프라인**: 모든 환자 여정을 시각화(신규 리드 → 예약 → 노쇼 → 완료 → 재활성화)
-- **대화(Conversations) 탭**: 모든 환자 SMS, 이메일, 통화 기록을 하나의 스레드로 중앙화
-- **노트 & 태그**: 내부 팀만 볼 수 있는 임상 또는 운영 노트 추가
-- **커스텀 필드**: "배정된 치료 코디네이터"나 "보험 확인됨" 같은 내부 지표 추적
+* **파이프라인**: 모든 환자 여정을 시각화(신규 리드 → 예약 → 노쇼 → 완료 → 재활성화)
+* **대화(Conversations) 탭**: 모든 환자 SMS, 이메일, 통화 기록을 하나의 스레드로 중앙화
+* **노트 & 태그**: 내부 팀만 볼 수 있는 임상 또는 운영 노트 추가
+* **커스텀 필드**: "배정된 치료 코디네이터"나 "보험 확인됨" 같은 내부 지표 추적
 
 ### **확장 가능한 AI 어시스턴트와 워크플로우**
 
 더 많은 직원을 고용할 필요가 없습니다. 더 스마트한 시스템이 필요할 뿐이에요. Hyperclass의 자동화 엔진을 사용하여:
 
-- 치료 후 개인화된 확인 메시지 발송(예: "크라운 상태는 어떠세요?")
-- 클릭했지만 예약하지 않은 환자 후속 조치
-- 인비절라인, 임플란트, 화이트닝 캠페인 리드를 장기 드립 시퀀스로 육성
-- 일반적인 질문을 위치, 시간, 치료 정보, 예약 링크로 응답하는 AI 어시스턴트로 라우팅
+* 치료 후 개인화된 확인 메시지 발송(예: "크라운 상태는 어떠세요?")
+* 클릭했지만 예약하지 않은 환자 후속 조치
+* 인비절라인, 임플란트, 화이트닝 캠페인 리드를 장기 드립 시퀀스로 육성
+* 일반적인 질문을 위치, 시간, 치료 정보, 예약 링크로 응답하는 AI 어시스턴트로 라우팅
 
-**[대화 AI(Conversation AI) 설정하기](../../13-AI-Employee/Getting-Started-w/-Conversation-AI/setting-up-conversation-ai.md)**
+[**대화 AI(Conversation AI) 설정하기**](../../13-AI-Employee/Getting-Started-w/-Conversation-AI/setting-up-conversation-ai.md)
 
-**[음성 AI(Voice AI) 에이전트 만들기](../../13-AI-Employee/기타/creating-voice-ai-agents.md)**
+[**음성 AI(Voice AI) 에이전트 만들기**](../../13-AI-Employee/기타/creating-voice-ai-agents.md)
 
 ### **보고서와 관리자 제어**
 
 데이터 없는 운영은 그냥 추측입니다. Hyperclass의 내장 대시보드를 사용해서:
 
-- 놓친 전화, 후속 조치 속도, 응답 시간 추적
-- 파이프라인 볼륨 보기: 실시간 리드, 예약, 완료 건수
-- 어떤 자동화가 전환되고 어떤 것이 조정이 필요한지 모니터링
-- 팀 활동 검토: 누가 할 일을 완료하고, 메시지에 답하고, 태그를 업데이트하는지
+* 놓친 전화, 후속 조치 속도, 응답 시간 추적
+* 파이프라인 볼륨 보기: 실시간 리드, 예약, 완료 건수
+* 어떤 자동화가 전환되고 어떤 것이 조정이 필요한지 모니터링
+* 팀 활동 검토: 누가 할 일을 완료하고, 메시지에 답하고, 태그를 업데이트하는지
 
 ### **월간 운영 체크리스트 (Hyperclass로 구축)**
 
-| 업무 | 빈도 | 담당자 | Hyperclass 위치 |
-|------|------|--------|----------|
-| 파이프라인 단계 이탈률 검토 | 주간 | 원무과장 | 기회 관리(Opportunities) 대시보드 |
-| 노쇼 복구율 확인 | 주간 | 접수 + 리드 매니저 | 캘린더 + 워크플로우 |
-| 계절별 메시지 교체 | 월간 | 마케팅/콘텐츠 | 소셜 플래너(Social Planner) |
-| 예약 워크플로우 테스트 | 월간 | 관리자 | 워크플로우 |
-| 미완료 할 일 정리 | 격주 | 전체 직원 | 할 일(Tasks) 탭 |
-| AI 어시스턴트 로그 검토 | 주간 | 운영/마케팅 리더 | 대화(Conversations) 탭 |
+| 업무              | 빈도 | 담당자         | Hyperclass 위치             |
+| --------------- | -- | ----------- | ------------------------- |
+| 파이프라인 단계 이탈률 검토 | 주간 | 원무과장        | 기회 관리(Opportunities) 대시보드 |
+| 노쇼 복구율 확인       | 주간 | 접수 + 리드 매니저 | 캘린더 + 워크플로우               |
+| 계절별 메시지 교체      | 월간 | 마케팅/콘텐츠     | 소셜 플래너(Social Planner)    |
+| 예약 워크플로우 테스트    | 월간 | 관리자         | 워크플로우                     |
+| 미완료 할 일 정리      | 격주 | 전체 직원       | 할 일(Tasks) 탭              |
+| AI 어시스턴트 로그 검토  | 주간 | 운영/마케팅 리더   | 대화(Conversations) 탭       |
 
 ### **마무리**
 
@@ -167,10 +166,10 @@ Hyperclass은 모든 것을 하나로 모아줍니다: 예약, 커뮤니케이�
 
 한 번 구축하고, 월간 검토하고, 팀과 기술이 나머지를 처리하게 하세요.
 
----
+***
 
-성장할 준비가 되셨나요? [Hyperclass에 가입하기](https://hyperclass.ai/?utm_source=seo&utm_medium=organic&utm_campaign=dentalclinic&utm_term=dentalclinic&utm_content=playbook)
+성장할 준비가 되셨나요? [Hyperclass에 가입하기](https://hyperclass.ai/?utm_source=seo\&utm_medium=organic\&utm_campaign=dentalclinic\&utm_term=dentalclinic\&utm_content=playbook)
 
----
-*원문 최종 수정: Sun, 18 May, 2025 at 1:17 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+***
+
+_원문 최종 수정: Sun, 18 May, 2025 at 1:17 PM_ _Hyperclass 사용 가이드 — hyperclass.ai_

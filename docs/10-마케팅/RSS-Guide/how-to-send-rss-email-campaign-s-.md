@@ -1,6 +1,5 @@
 ---
-
-번역일: 2026-04-07
+번역일: 2026-04-07T00:00:00.000Z
 카테고리: 10-마케팅 > RSS Guide
 ---
 
@@ -12,17 +11,15 @@ RSS는 비즈니스 오너가 새로 발행된 블로그 콘텐츠와 업데이�
 
 #### **목차**
 
-[RSS란 무엇인가요?](#rss란-무엇인가요)
+[RSS란 무엇인가요?](how-to-send-rss-email-campaign-s-.md#rss란-무엇인가요)
 
-[RSS 이메일 만들기](#rss-이메일-만들기)
+[RSS 이메일 만들기](how-to-send-rss-email-campaign-s-.md#rss-이메일-만들기)
 
-[발송 전 체크리스트](#발송-전-체크리스트)
+[발송 전 체크리스트](how-to-send-rss-email-campaign-s-.md#발송-전-체크리스트)
 
-[자주 묻는 질문](#자주-묻는-질문)
+[자주 묻는 질문](how-to-send-rss-email-campaign-s-.md#자주-묻는-질문)
 
-[RSS 캠페인이 목록에 여러 번 나타나는 이유는 무엇인가요?](#rss-캠페인이-목록에-여러-번-나타나는-이유는-무엇인가요)
-[RSS 캠페인의 내용을 수정하고 싶은데, 통계에 영향을 주지 않을까요?](#rss-캠페인의-내용을-수정하고-싶은데-통계에-영향을-주지-않을까요)
-[RSS 이메일 캠페인 일정을 변경하려면 어떻게 하나요?](#rss-이메일-캠페인-일정을-변경하려면-어떻게-하나요)
+[RSS 캠페인이 목록에 여러 번 나타나는 이유는 무엇인가요?](how-to-send-rss-email-campaign-s-.md#rss-캠페인이-목록에-여러-번-나타나는-이유는-무엇인가요) [RSS 캠페인의 내용을 수정하고 싶은데, 통계에 영향을 주지 않을까요?](how-to-send-rss-email-campaign-s-.md#rss-캠페인의-내용을-수정하고-싶은데-통계에-영향을-주지-않을까요) [RSS 이메일 캠페인 일정을 변경하려면 어떻게 하나요?](how-to-send-rss-email-campaign-s-.md#rss-이메일-캠페인-일정을-변경하려면-어떻게-하나요)
 
 ## **RSS란 무엇인가요?**
 
@@ -30,14 +27,14 @@ RSS는 "Really Simply Syndication"의 약자입니다. RSS 피드를 통해 고�
 
 이메일 마케팅에서 RSS 이메일을 만들 때, 템플릿을 선택하고 콘텐츠를 디자인하며, 수신 및 전송 방법을 RSS 스케줄링(일간, 주간 등)으로 설정할 수 있는 옵션이 제공됩니다.
 
-**참고:** 
-- 이메일을 발송하려면 **이메일 템플릿을 생성**해야 합니다
-- 이메일을 발송하려면 **도메인을 인증**해야 합니다
+**참고:**
 
-RSS 설정 가이드 - 
-[[rss-blocks-in-email-builder](rss-blocks-in-email-builder.md)]([rss-blocks-in-email-builder](rss-blocks-in-email-builder.md)
+* 이메일을 발송하려면 **이메일 템플릿을 생성**해야 합니다
+* 이메일을 발송하려면 **도메인을 인증**해야 합니다
 
----
+RSS 설정 가이드 - \[[rss-blocks-in-email-builder](rss-blocks-in-email-builder.md)]\([rss-blocks-in-email-builder](rss-blocks-in-email-builder.md)
+
+***
 
 ## **RSS 이메일 만들기**
 
@@ -97,19 +94,17 @@ RSS 이메일 캠페인을 발송하기 전에 몇 가지 설정해야 할 것�
 
 **중요사항:**
 
-- **예약하기 전에 실행 날짜, 시간, 시간대를 확인하세요!**
-
-- 이메일 캠페인을 삭제하거나 [일정 변경](http://How%20to%20reschedule%20email%20campaign?) 할 수 있는 옵션이 있습니다. 캠페인 일정을 변경하려면 일정 변경을 클릭하고 캠페인의 날짜와 시간을 설정하면 됩니다.
-
-- 이메일 캠페인 발송 **1시간 전**까지만 일정 변경이 가능합니다. 예를 들어 예정된 발송 시간이 오전 11시(EST)라면, 오전 10시(EST)까지만 일정 변경이 가능합니다.
-
-- RSS 이메일 캠페인에는 일시정지 옵션도 제공됩니다.
+* **예약하기 전에 실행 날짜, 시간, 시간대를 확인하세요!**
+* 이메일 캠페인을 삭제하거나 [일정 변경](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/10-%EB%A7%88%EC%BC%80%ED%8C%85/RSS-Guide/http:/How%20to%20reschedule%20email%20campaign?/README.md) 할 수 있는 옵션이 있습니다. 캠페인 일정을 변경하려면 일정 변경을 클릭하고 캠페인의 날짜와 시간을 설정하면 됩니다.
+* 이메일 캠페인 발송 **1시간 전**까지만 일정 변경이 가능합니다. 예를 들어 예정된 발송 시간이 오전 11시(EST)라면, 오전 10시(EST)까지만 일정 변경이 가능합니다.
+* RSS 이메일 캠페인에는 일시정지 옵션도 제공됩니다.
 
 ![RSS 캠페인 일정 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48231694227/original/w27YrfG31bYD3n1ozF-qDXIYukhiAwFKIA.png?1654854624)
 
 ## **자주 묻는 질문**
 
 ### **RSS 캠페인이 목록에 여러 번 나타나는 이유는 무엇인가요?**
+
 네, RSS 캠페인 항목이 여러 개 표시되며, 각각은 통계 세부사항을 보여줍니다.
 
 ### RSS 캠페인의 내용을 수정하고 싶은데, 통계에 영향을 주지 않을까요?
@@ -126,6 +121,6 @@ RSS 이메일 캠페인을 발송하기 전에 몇 가지 설정해야 할 것�
 
 ![RSS 캠페인 일정 변경](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48227740061/original/ayvjW5yG6yxZ-F11lKOfip9pbKsZFgofMQ.png?1653322376)
 
----
-*원문 최종 수정: Fri, 16 Sep, 2022 at 7:04 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+***
+
+_원문 최종 수정: Fri, 16 Sep, 2022 at 7:04 AM_ _Hyperclass 사용 가이드 — hyperclass.ai_

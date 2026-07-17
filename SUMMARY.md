@@ -41,7 +41,6 @@
   * [이용약관](docs/hyperaxis/terms-of-service.md)
   * [Hyperaxis 시작 가이드 — 연결 방법·작동 원리·사용법](undefined/hyperaxis/hyperaxis.md)
   * [개인정보(데이터) 삭제 요청](docs/hyperaxis/data-deletion.md)
-  * [Hyperaxis 시작 가이드 — 연결 방법·작동 원리·사용법](undefined/hyperaxis/hyperaxis-1.md)
 
 ## 시작하기(Getting Started)
 

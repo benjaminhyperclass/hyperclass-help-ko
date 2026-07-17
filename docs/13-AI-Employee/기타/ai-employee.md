@@ -1,6 +1,5 @@
 ---
-
-번역일: 2026-04-09
+번역일: 2026-04-09T00:00:00.000Z
 카테고리: AI 직원
 ---
 
@@ -8,11 +7,12 @@
 
 **목차**
 
-- [AI 직원이란 무엇인가요?](#ai-직원이란-무엇인가요)
-- [에이전시와 하위 계정에서 AI 직원 활성화하기](#에이전시와-하위-계정에서-ai-직원-활성화하기)
-- [다른 하위 계정들의 'AI 직원' 기능 접근 권한 부여/제한하기](#다른-하위-계정들의-ai-직원-기능-접근-권한-부여제한하기)
-- [자주 묻는 질문](#자주-묻는-질문)
----
+* [AI 직원이란 무엇인가요?](ai-employee.md#ai-직원이란-무엇인가요)
+* [에이전시와 하위 계정에서 AI 직원 활성화하기](ai-employee.md#에이전시와-하위-계정에서-ai-직원-활성화하기)
+* [다른 하위 계정들의 'AI 직원' 기능 접근 권한 부여/제한하기](ai-employee.md#다른-하위-계정들의-ai-직원-기능-접근-권한-부여제한하기)
+* [자주 묻는 질문](ai-employee.md#자주-묻는-질문)
+
+***
 
 ![AI 직원 개요](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035867506/original/WGu3j_2GJyTajvVza1jlniNtfHyfTuWaJA.png?1730484060)
 
@@ -78,7 +78,7 @@ AI 직원(AI Employee)은 AI 직원 상품으로 관리되고 청구되는 Hyper
 
 다음 몇 단계에서 고객에게 무제한 월간 플랜을 제공하기 위한 가격 모델을 설정하는 방법을 알아보겠습니다.
 
-에이전시 뷰에 있다면 왼쪽 네비게이션 사이드바에 있는 **"Reselling(재판매)"** 탭을 찾으세요. 하위 계정 중 하나에 있다면 먼저 **"Switch to Agency View"**를 해야 "Reselling" 탭을 찾을 수 있습니다.
+에이전시 뷰에 있다면 왼쪽 네비게이션 사이드바에 있는 **"Reselling(재판매)"** 탭을 찾으세요. 하위 계정 중 하나에 있다면 먼저 \*\*"Switch to Agency View"\*\*를 해야 "Reselling" 탭을 찾을 수 있습니다.
 
 ![재판매 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035276050/original/06XKxUE4kLhUTE6GwzNvW7goRuC8j4JKGg.png?1729693831)
 
@@ -90,16 +90,16 @@ AI 직원(AI Employee)은 AI 직원 상품으로 관리되고 청구되는 Hyper
 
 ![가격 입력](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035277068/original/xq_WFLlO-oO-UhYnim6YRgPJYdYn45Si5A.png?1729694491)
 
-변경사항을 **"저장"**합니다.
+변경사항을 \*\*"저장"\*\*합니다.
 
 ![변경사항 저장](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035277481/original/LhcqB-9W4sJpsYrVN72SulDMaZNlqXY8cw.png?1729694709)
 
 ### 고객이 하위 계정 내에서 **무제한 월간 AI 직원 플랜**을 볼 수 있는 다양한 영역
 
-- 대화 AI(Conversation AI)
-- 음성 AI(Voice AI)
-- 콘텐츠 AI(Content AI)
-- 리뷰 AI(Reviews AI)
+* 대화 AI(Conversation AI)
+* 음성 AI(Voice AI)
+* 콘텐츠 AI(Content AI)
+* 리뷰 AI(Reviews AI)
 
 이 예시에서는 고객이 **"Reviews AI"** 섹션에 있을 때 무제한 월간 제안을 어떻게 볼 수 있는지 살펴보겠습니다. 다음 단계를 따라하세요.
 
@@ -123,7 +123,7 @@ AI 직원(AI Employee)은 AI 직원 상품으로 관리되고 청구되는 Hyper
 
 ![월간 가격 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035279224/original/Uhv565b6Iy_2UMkMDZGf85tvTF17HJegcA.png?1729695777)
 
----
+***
 
 ### 고객이 AI 직원 플랜 옵션을 볼 수 있는 곳
 
@@ -131,7 +131,7 @@ AI 직원(AI Employee)은 AI 직원 상품으로 관리되고 청구되는 Hyper
 
 고객에게 업그레이드를 안내하기 전에, 해당 제품이 여전히 AI 직원의 일부인지 그리고 무료 사용 모델에 포함되지 않는지 확인하세요.
 
----
+***
 
 ## 자주 묻는 질문
 
@@ -157,17 +157,17 @@ AI 직원은 비즈니스 운영을 자동화하고 간소화하도록 설계된
 
 **Q: AI 직원 비용은 얼마인가요?**
 
-AI 직원 가격은 AI 직원에 남아있는 특정 제품에 따라 달라집니다. 일부 AI 기능은 이제 무료로 사용할 수 있으며 더 이상 AI 크레딧을 사용하지 않습니다. 최신 가격 및 공정 사용 세부 정보는 [AI 제품 가격 업데이트]를 참조하세요.
+AI 직원 가격은 AI 직원에 남아있는 특정 제품에 따라 달라집니다. 일부 AI 기능은 이제 무료로 사용할 수 있으며 더 이상 AI 크레딧을 사용하지 않습니다. 최신 가격 및 공정 사용 세부 정보는 \[AI 제품 가격 업데이트]를 참조하세요.
 
----
+***
 
 ## 관련 아티클
 
-- [Hyperclass의 AI 도구](../ai-tools-in-highlevel.md)
-- [음성 AI 에이전트 생성하기](../how-to-create-voice-ai-agents.md)
-- [AI 프롬프팅 101](../Conversation-AI---Goals,-Prompts,-&-Actions/ai-prompting-101.md)
-- [콘텐츠 AI를 사용하여 이메일을 생성하는 방법](../Content-AI-in-the-Email-Builder/how-to-create-emails-using-content-ai-.md)
+* [Hyperclass의 AI 도구](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/13-AI-Employee/ai-tools-in-highlevel.md)
+* [음성 AI 에이전트 생성하기](../how-to-create-voice-ai-agents.md)
+* [AI 프롬프팅 101](../Conversation-AI---Goals,-Prompts,-&-Actions/ai-prompting-101.md)
+* [콘텐츠 AI를 사용하여 이메일을 생성하는 방법](../Content-AI-in-the-Email-Builder/how-to-create-emails-using-content-ai-.md)
 
----
-*원문 최종 수정: Mon, 30 Mar, 2026 at 6:43 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+***
+
+_원문 최종 수정: Mon, 30 Mar, 2026 at 6:43 AM_ _Hyperclass 사용 가이드 — hyperclass.ai_

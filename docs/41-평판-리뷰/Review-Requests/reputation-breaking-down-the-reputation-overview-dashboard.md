@@ -1,6 +1,5 @@
 ---
-
-번역일: 2026-04-08
+번역일: 2026-04-08T00:00:00.000Z
 카테고리: 평판 관리
 ---
 
@@ -12,17 +11,17 @@
 
 #### 이 글에서 다룰 내용:
 
-#### [시작하기 전 알아둘 점:](#시작하기-전-알아둘-점)
+#### [시작하기 전 알아둘 점:](reputation-breaking-down-the-reputation-overview-dashboard.md#시작하기-전-알아둘-점)
 
-- [초대 목표(Invite Goals):](#초대-목표invite-goals)
-- [받은 리뷰(Reviews Received):](#받은-리뷰reviews-received)
-- [온라인 리스팅(해당 시):](#온라인-리스팅해당-시)
-- [평균 평점(Avg Rating):](#평균-평점avg-rating)
-- [감정 분석(Sentiment):](#감정-분석sentiment)
-- [초대 트렌드(Invite Trends):](#초대-트렌드invite-trends)
-- [리뷰 트렌드(Review Trends):](#리뷰-트렌드review-trends)
-- [최근 리뷰 요청(Latest Review Requests):](#최근-리뷰-요청latest-review-requests)
-- [최신 리뷰(Latest Review):](#최신-리뷰latest-review)
+* [초대 목표(Invite Goals):](reputation-breaking-down-the-reputation-overview-dashboard.md#초대-목표invite-goals)
+* [받은 리뷰(Reviews Received):](reputation-breaking-down-the-reputation-overview-dashboard.md#받은-리뷰reviews-received)
+* [온라인 리스팅(해당 시):](reputation-breaking-down-the-reputation-overview-dashboard.md#온라인-리스팅해당-시)
+* [평균 평점(Avg Rating):](reputation-breaking-down-the-reputation-overview-dashboard.md#평균-평점avg-rating)
+* [감정 분석(Sentiment):](reputation-breaking-down-the-reputation-overview-dashboard.md#감정-분석sentiment)
+* [초대 트렌드(Invite Trends):](reputation-breaking-down-the-reputation-overview-dashboard.md#초대-트렌드invite-trends)
+* [리뷰 트렌드(Review Trends):](reputation-breaking-down-the-reputation-overview-dashboard.md#리뷰-트렌드review-trends)
+* [최근 리뷰 요청(Latest Review Requests):](reputation-breaking-down-the-reputation-overview-dashboard.md#최근-리뷰-요청latest-review-requests)
+* [최신 리뷰(Latest Review):](reputation-breaking-down-the-reputation-overview-dashboard.md#최신-리뷰latest-review)
 
 ## 시작하기 전 알아둘 점:
 
@@ -53,8 +52,9 @@ Yext가 활성화되고 해당 로케이션이 구독 중인 경우, '온라인 
 ![리스팅 관리 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48253248037/original/MLwLJ3LakKaR8dCMPUgB75FFB0_LOLtJ0g.png?1664223208)
 
 관련 가이드:
-- [온라인 리스팅 개요 및 설정 가이드](../../31-리셀링/Online-Listings/online-listing-overview-setup-doc.md)
-- [고객에게 과금하지 않고 Yext를 직접 배포하는 방법](../../31-리셀링/Online-Listings/deploy-listings-without-directly-charging-the-client.md)
+
+* [온라인 리스팅 개요 및 설정 가이드](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/31-%EB%A6%AC%EC%85%80%EB%A7%81/Online-Listings/online-listing-overview-setup-doc.md)
+* [고객에게 과금하지 않고 Yext를 직접 배포하는 방법](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/31-%EB%A6%AC%EC%85%80%EB%A7%81/Online-Listings/deploy-listings-without-directly-charging-the-client.md)
 
 ## 평균 평점(Avg Rating):
 
@@ -94,12 +94,12 @@ Yext가 활성화되고 해당 로케이션이 구독 중인 경우, '온라인 
 
 #### 관련 가이드:
 
-- [Google 리뷰 이의제기 및 진행 상황 확인하기](how-to-dispute-a-google-review-and-check-on-the-dispute-status.md)
-- [리뷰 요청 보내는 방법](how-to-send-review-requests.md)
-- [평판 관리 - 리뷰 탭 완전 분석](reputation-breaking-down-the-reviews-tab.md)
-- [평판 관리 - 리뷰 위젯 커스터마이징 및 표시하기](reputation-management-customizing-displaying-the-review-widget.md)
-- 리뷰 AI 에이전트 시작하기
+* [Google 리뷰 이의제기 및 진행 상황 확인하기](how-to-dispute-a-google-review-and-check-on-the-dispute-status.md)
+* [리뷰 요청 보내는 방법](how-to-send-review-requests.md)
+* [평판 관리 - 리뷰 탭 완전 분석](reputation-breaking-down-the-reviews-tab.md)
+* [평판 관리 - 리뷰 위젯 커스터마이징 및 표시하기](reputation-management-customizing-displaying-the-review-widget.md)
+* 리뷰 AI 에이전트 시작하기
 
----
-*원문 최종 수정: Wed, 30 Apr, 2025 at 4:02 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+***
+
+_원문 최종 수정: Wed, 30 Apr, 2025 at 4:02 PM_ _Hyperclass 사용 가이드 — hyperclass.ai_

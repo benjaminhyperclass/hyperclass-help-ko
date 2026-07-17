@@ -1,6 +1,5 @@
 ---
-
-번역일: 2026-04-08
+번역일: 2026-04-08T00:00:00.000Z
 카테고리: 25-애드온-세일즈 > Sales Trainings and Case Studies
 ---
 
@@ -32,8 +31,8 @@
 
 ## 첨부파일
 
-📄 [SaaS Adoption Strategies.pdf (1.7 MB)](/helpdesk/attachments/48098061856)
+📄 [SaaS Adoption Strategies.pdf (1.7 MB)](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/helpdesk/attachments/48098061856/README.md)
 
----
-*원문 최종 수정: Tue, 13 Apr, 2021 at 12:55 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+***
+
+_원문 최종 수정: Tue, 13 Apr, 2021 at 12:55 PM_ _Hyperclass 사용 가이드 — hyperclass.ai_

@@ -1,6 +1,5 @@
 ---
-
-번역일: 2026-04-06
+번역일: 2026-04-06T00:00:00.000Z
 카테고리: 01-시작하기 > 커머스
 ---
 
@@ -8,90 +7,86 @@
 
 영업과 청구 관리가 번거로울 필요는 없어요! 인보이스(Invoice)는 비즈니스의 명함과 같다고 생각해 보세요. 전문성을 보여주고 고객과의 명확한 약속을 설정하는 역할을 합니다. 대시보드에서 바로 인보이스를 맞춤 설정하고 발송하는 방법이 얼마나 쉬운지 알아보겠습니다.
 
----
+***
 
 **목차**
 
-- [인보이스 생성](#인보이스-생성)
-- [인보이스 일반 설정 편집](#인보이스-일반-설정-편집)
-- [인보이스 관리](#인보이스-관리)
----
+* [인보이스 생성](getting-started-create-and-send-invoices.md#인보이스-생성)
+* [인보이스 일반 설정 편집](getting-started-create-and-send-invoices.md#인보이스-일반-설정-편집)
+* [인보이스 관리](getting-started-create-and-send-invoices.md#인보이스-관리)
+
+***
 
 ## 인보이스 생성
 
 첫 인보이스를 발송할 준비가 되셨나요? 좋습니다! 가장 간단한 생성 방법을 알려드릴게요:
 
-- **Payments(결제) > Invoices & Estimates(인보이스 & 견적서)**로 이동하세요.
-
-- **New(새로 만들기) > New Invoice(새 인보이스)**를 클릭하세요.
+* \*\*Payments(결제) > Invoices & Estimates(인보이스 & 견적서)\*\*로 이동하세요.
+* \*\*New(새로 만들기) > New Invoice(새 인보이스)\*\*를 클릭하세요.
 
 ![인보이스 생성 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047624998/original/_zkzHc048LV97XyL0RqtOTvk6OBykXDLQQ.png?1748906272)
 
-- 인보이스에 세부 정보(항목, 가격, 고객 정보)를 설정하세요.
-
-- **Save(저장)**를 클릭하세요.
-
-- 마지막으로 **Send(발송)**를 클릭하세요.
+* 인보이스에 세부 정보(항목, 가격, 고객 정보)를 설정하세요.
+* \*\*Save(저장)\*\*를 클릭하세요.
+* 마지막으로 \*\*Send(발송)\*\*를 클릭하세요.
 
 ![인보이스 발송 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047625022/original/e9NAkrynY3J7S2AAhETOskf0KdxJ7oOTFg.png?1748906375)
 
 **다음 단계로는:**
 
-- 고객을 위한 결제 플랜 추가를 살펴보세요.
-- 지속적인 서비스를 위한 정기 인보이스를 설정해 보세요.
+* 고객을 위한 결제 플랜 추가를 살펴보세요.
+* 지속적인 서비스를 위한 정기 인보이스를 설정해 보세요.
 
 더 알아보기
 
-- [Hyperclass에서 인보이스 만드는 방법](../../08-결제/인보이스-견적/how-to-create-invoices-in-highlevel.md)
-- 인보이스에 결제 플랜을 추가하는 방법
-- [정기 인보이스 생성 방법](../../08-결제/인보이스-견적/how-to-create-and-manage-recurring-invoices-in-highlevel.md)
-- Hyperclass에서 인보이스 만드는 방법 (모바일 앱)
----
+* [Hyperclass에서 인보이스 만드는 방법](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/08-%EA%B2%B0%EC%A0%9C/%EC%9D%B8%EB%B3%B4%EC%9D%B4%EC%8A%A4-%EA%B2%AC%EC%A0%81/how-to-create-invoices-in-highlevel.md)
+* 인보이스에 결제 플랜을 추가하는 방법
+* [정기 인보이스 생성 방법](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/08-%EA%B2%B0%EC%A0%9C/%EC%9D%B8%EB%B3%B4%EC%9D%B4%EC%8A%A4-%EA%B2%AC%EC%A0%81/how-to-create-and-manage-recurring-invoices-in-highlevel.md)
+* Hyperclass에서 인보이스 만드는 방법 (모바일 앱)
+
+***
 
 ## 인보이스 일반 설정 편집
 
 인보이스를 맞춤 설정하면 브랜드가 돋보이고 명확성을 확보할 수 있어요. 인보이스를 나만의 것으로 만드는 방법을 알아보겠습니다:
 
-- **Payments(결제) > Invoices & Estimates(인보이스 & 견적서)**로 이동하세요.
-
-- **Settings(설정) (톱니바퀴 아이콘)**을 클릭하세요.
+* \*\*Payments(결제) > Invoices & Estimates(인보이스 & 견적서)\*\*로 이동하세요.
+* \*\*Settings(설정) (톱니바퀴 아이콘)\*\*을 클릭하세요.
 
 ![인보이스 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047625138/original/ehg1R_OWQ-RxDxn1pqEaPE4AXeqPSAL1cA.png?1748906823)
 
-- **일반** 설정을 조정하세요(로고 추가, 회사 정보, 기본 결제 조건).
-
-- 만족스러우면 **Save(저장)**를 클릭하세요.
+* **일반** 설정을 조정하세요(로고 추가, 회사 정보, 기본 결제 조건).
+* 만족스러우면 \*\*Save(저장)\*\*를 클릭하세요.
 
 ![인보이스 설정 저장 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047625154/original/L16KPIaVkq3XQVNBHMaguZDH3h1d0zOurg.png?1748906930)
 
 **다음 단계로는:**
 
-- 정기적인 청구를 간소화하기 위해 정기 인보이스를 설정해 보세요.
-- 부분 결제를 원활하게 관리하기 위해 결제 일정을 조정해 보세요.
+* 정기적인 청구를 간소화하기 위해 정기 인보이스를 설정해 보세요.
+* 부분 결제를 원활하게 관리하기 위해 결제 일정을 조정해 보세요.
 
 더 알아보기
 
-- [정기 인보이스 편집 방법](../../08-결제/how-to-edit-recurring-invoices.md)
-- [결제 일정 및 부분 결제 인보이스 편집](../../08-결제/인보이스-견적/editing-of-payment-schedules-and-partially-paid-invoices.md)
-- [모바일 앱에서 인보이스 사용하는 방법](../../30-모바일-데스크톱/Mobile-App/how-to-use-invoices-in-the-mobile-app.md)
----
+* [정기 인보이스 편집 방법](../../08-결제/how-to-edit-recurring-invoices.md)
+* [결제 일정 및 부분 결제 인보이스 편집](../../08-결제/인보이스-견적/editing-of-payment-schedules-and-partially-paid-invoices.md)
+* [모바일 앱에서 인보이스 사용하는 방법](../../30-모바일-데스크톱/Mobile-App/how-to-use-invoices-in-the-mobile-app.md)
+
+***
 
 ## 인보이스 관리
 
 인보이스를 체계적으로 관리하면 조직화된 상태를 유지하고 제때 결제를 받을 수 있어요. 기존 인보이스를 빠르게 관리하는 방법을 알아보겠습니다:
 
-- **Payments(결제) > Invoices & Estimates(인보이스 & 견적서)**로 이동하세요.
-
-- 인보이스 목록에서 찾고 있는 인보이스를 찾으세요.
-
-- 상태를 확인하세요(예: Draft(초안), Sent(발송됨), Paid(결제 완료)).
+* \*\*Payments(결제) > Invoices & Estimates(인보이스 & 견적서)\*\*로 이동하세요.
+* 인보이스 목록에서 찾고 있는 인보이스를 찾으세요.
+* 상태를 확인하세요(예: Draft(초안), Sent(발송됨), Paid(결제 완료)).
 
 ![인보이스 관리 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047625241/original/1BeH_RO_kC0WDABhjYNl3emUrV2xVlNcNg.png?1748907101)
 
 **다음 단계로는:**
 
-- 인보이스 보기에서 바로 고객에게 후속 연락을 취해보세요.
-- 이전 인보이스를 기반으로 새 견적서나 인보이스를 생성해 보세요.
+* 인보이스 보기에서 바로 고객에게 후속 연락을 취해보세요.
+* 이전 인보이스를 기반으로 새 견적서나 인보이스를 생성해 보세요.
 
 인보이스 관리를 즐겁게 하세요!
 
@@ -105,11 +100,9 @@
 
 해결 방법:
 
-- 새 인보이스의 경우: 시스템은 정상이며, 설정에서 현재 로고를 사용합니다.
-
-- 미결제 인보이스의 경우: 미디어 라이브러리에 새 로고를 업로드하고 비즈니스 상세정보가 이 새 이미지로 업데이트되었는지 확인하세요. 로고가 다시 나타납니다.
-
-- 결제 완료 인보이스의 경우: 결제 완료된 기록은 편집할 수 없으므로 로고를 수정할 수 없습니다. 영수증을 다시 보내야 한다면 PDF에 수동으로 로고를 추가해야 합니다.
+* 새 인보이스의 경우: 시스템은 정상이며, 설정에서 현재 로고를 사용합니다.
+* 미결제 인보이스의 경우: 미디어 라이브러리에 새 로고를 업로드하고 비즈니스 상세정보가 이 새 이미지로 업데이트되었는지 확인하세요. 로고가 다시 나타납니다.
+* 결제 완료 인보이스의 경우: 결제 완료된 기록은 편집할 수 없으므로 로고를 수정할 수 없습니다. 영수증을 다시 보내야 한다면 PDF에 수동으로 로고를 추가해야 합니다.
 
 참조: [비즈니스 프로필 설정 - 일반 정보](../../11-설정/Business-Profile-Settings/business-profile-settings-general-information.md)
 
@@ -119,11 +112,9 @@
 
 누락된 텍스트 상자를 수정하려면:
 
-- 웹 브라우저에서 캐시와 쿠키를 완전히 지우세요.
-
-- 모든 탭을 닫고 Hyperclass 계정에 다시 로그인하세요.
-
-- 이제 텍스트 편집기가 올바르게 로드되어 약관을 입력할 수 있습니다.
+* 웹 브라우저에서 캐시와 쿠키를 완전히 지우세요.
+* 모든 탭을 닫고 Hyperclass 계정에 다시 로그인하세요.
+* 이제 텍스트 편집기가 올바르게 로드되어 약관을 입력할 수 있습니다.
 
 **Q: 인보이스가 "발송됨"으로 표시되는데 고객이나 담당자가 받지 못했어요. 뭐가 잘못된 거고 어떻게 해결하나요?**
 
@@ -131,14 +122,12 @@
 
 해결 방법:
 
-- 팀원에게 브라우저의 캐시와 쿠키를 지우도록 안내하세요.
-
-- 로그아웃 후 계정에 다시 로그인하게 하세요.
-
-- 견적서를 다시 발송해 보세요.
+* 팀원에게 브라우저의 캐시와 쿠키를 지우도록 안내하세요.
+* 로그아웃 후 계정에 다시 로그인하게 하세요.
+* 견적서를 다시 발송해 보세요.
 
 문제가 지속되면 이메일 발송 도메인에 더 중요한 문제가 있을 수 있으므로 지원팀에 문의하세요.
 
----
-*원문 최종 수정: Wed, 26 Nov, 2025 at 12:08 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+***
+
+_원문 최종 수정: Wed, 26 Nov, 2025 at 12:08 AM_ _Hyperclass 사용 가이드 — hyperclass.ai_

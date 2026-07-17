@@ -1,24 +1,24 @@
 ---
-
-번역일: 2026-04-06
+번역일: 2026-04-06T00:00:00.000Z
 카테고리: 01-시작하기 > 커머스
 ---
 
 # 시작하기 - Stripe 연동
 
+## 시작하기 - Stripe 연동
+
 거래를 간편하게 만들 준비가 되셨나요? Stripe 연동을 통해 신용카드 결제, 구독 등을 더 간단하고 안전하게 처리할 수 있습니다. 함께 설정해보겠습니다!
 
-## **Stripe 연동하기**
+### **Stripe 연동하기**
 
 먼저 결제(Payments) 섹션으로 이동하세요. 고객 거래를 원활하게 처리하기 위한 결제 게이트웨이 연동이 이루어지는 곳입니다.
 
-- `Payments(결제) → Integrations(연동)`으로 이동하세요. 여기서 Stripe, PayPal, Authorize.net, NMI, Manual Payment Methods(수동 결제 방식, 예: 착불, COD), Square 등 인기 있는 옵션들을 찾을 수 있습니다.
+* `Payments(결제) → Integrations(연동)`으로 이동하세요. 여기서 Stripe, PayPal, Authorize.net, NMI, Manual Payment Methods(수동 결제 방식, 예: 착불, COD), Square 등 인기 있는 옵션들을 찾을 수 있습니다.
 
 ![Stripe 연동 인터페이스](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047521122/original/Pzm_agDxZiQDXGxZ40DuvBmhEBQEk5IbEw.png?1748649426)
 
-- **Connect with Stripe(Stripe 연결하기)** 버튼을 클릭하세요. 안전하게 로그인하거나, 아직 계정이 없다면 Stripe 계정을 생성할 수 있는 페이지로 이동합니다.
-
-- 마지막으로 **Stripe 계정을 승인**하세요. 이 과정을 통해 모든 것이 원활하고 안전하게 동기화됩니다. 연동이 완료되면 **Manage(관리)** 버튼을 클릭해서 연결을 편집할 수 있습니다.
+* **Connect with Stripe(Stripe 연결하기)** 버튼을 클릭하세요. 안전하게 로그인하거나, 아직 계정이 없다면 Stripe 계정을 생성할 수 있는 페이지로 이동합니다.
+* 마지막으로 **Stripe 계정을 승인**하세요. 이 과정을 통해 모든 것이 원활하고 안전하게 동기화됩니다. 연동이 완료되면 **Manage(관리)** 버튼을 클릭해서 연결을 편집할 수 있습니다.
 
 ![Stripe 연동 완료 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047521127/original/o7bIfWXE2UK74snQVqVpQO2k2PC5hsFd3A.png?1748649525)
 
@@ -28,19 +28,19 @@ Stripe를 사용하지 않으시나요? 제품 영역에 따라 다른 지원 �
 
 **다음으로** 할 수 있는 일들:
 
-- 더 세밀한 제어를 위해 하위 계정(Sub-account) 수준에서 Stripe를 연결하는 방법 살펴보기
-- 시간을 절약하기 위해 Stripe에서 상품과 가격을 직접 가져오는 방법 배우기
+* 더 세밀한 제어를 위해 하위 계정(Sub-account) 수준에서 Stripe를 연결하는 방법 살펴보기
+* 시간을 절약하기 위해 Stripe에서 상품과 가격을 직접 가져오는 방법 배우기
 
 더 자세히 알고 싶으시다면 이 문서들을 확인해보세요:
 
-- [제품 영역별 지원 결제 제공업체 및 방식 (어디서 무엇이 작동하는지)](../../08-결제/supported-payment-providers-methods-by-product-area-what-works-where-.md)
-- [Authorize.net 연동 (비-Stripe 게이트웨이 예시)](../../08-결제/authorize-net-integration-for-processing-payments.md)
-- [Stripe Connect 없이 인보이스 사용하기 (수동 결제) ("첫 번째 인보이스 보내는 방법…"에서)](../../08-결제/인보이스-견적/how-to-create-invoices-in-highlevel.md)
-- [Hyperclass API (문서 & 제한사항)](../../35-개발자/Developer-Resources/highlevel-api-documentation.md)
-- 웹훅 (Zapier) – Hyperclass로 구매 데이터 보내기
-- [커스텀 결제 연동 (개발자 경로)](../../08-결제/결제-연동/how-to-build-a-custom-payments-integration-on-the-platform.md)
+* [제품 영역별 지원 결제 제공업체 및 방식 (어디서 무엇이 작동하는지)](../../08-결제/supported-payment-providers-methods-by-product-area-what-works-where-.md)
+* [Authorize.net 연동 (비-Stripe 게이트웨이 예시)](../../08-결제/authorize-net-integration-for-processing-payments.md)
+* [Stripe Connect 없이 인보이스 사용하기 (수동 결제) ("첫 번째 인보이스 보내는 방법…"에서)](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/08-%EA%B2%B0%EC%A0%9C/%EC%9D%B8%EB%B3%B4%EC%9D%B4%EC%8A%A4-%EA%B2%AC%EC%A0%81/how-to-create-invoices-in-highlevel.md)
+* [Hyperclass API (문서 & 제한사항)](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/35-%EA%B0%9C%EB%B0%9C%EC%9E%90/Developer-Resources/highlevel-api-documentation.md)
+* 웹훅 (Zapier) – Hyperclass로 구매 데이터 보내기
+* [커스텀 결제 연동 (개발자 경로)](../../08-결제/결제-연동/how-to-build-a-custom-payments-integration-on-the-platform.md)
 
-# 자주 묻는 질문
+## 자주 묻는 질문
 
 **Q: Stripe 계정을 여러 개 연결할 수 있나요?**
 
@@ -82,6 +82,6 @@ Hyperclass은 제품 영역별로 여러 게이트웨이를 지원합니다(예:
 
 Hyperclass 내부에서 생성된 상품 세부정보는 고객이 구매를 완료할 때 자동으로 Stripe로 전송됩니다. Hyperclass은 체크아웃 중에 상품명, 가격, 거래 데이터를 전송합니다.
 
----
-*원문 최종 수정: Tue, 20 Jan, 2026 at 8:06 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+***
+
+_원문 최종 수정: Tue, 20 Jan, 2026 at 8:06 AM_ _Hyperclass 사용 가이드 — hyperclass.ai_
