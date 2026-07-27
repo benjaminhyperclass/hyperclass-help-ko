@@ -4,8 +4,8 @@
 
 > 📥 **템플릿 다운로드**
 > 아래 두 파일을 내려받아 캡처만 붙여넣으면 됩니다. 슬라이드마다 무엇을 캡처할지 안내가 적혀 있습니다.
-> - [결제경로_일반결제_템플릿.pptx](assets/toss-payment-path-general.pptx)
-> - [결제경로_빌링_템플릿.pptx](assets/toss-payment-path-billing.pptx)
+> - [결제경로_일반결제_템플릿.pptx](https://raw.githubusercontent.com/benjaminhyperclass/hyperclass-help-ko/main/docs/43-%ED%95%9C%EA%B5%AD-%EC%95%B1/assets/toss-payment-path-general.pptx)
+> - [결제경로_빌링_템플릿.pptx](https://raw.githubusercontent.com/benjaminhyperclass/hyperclass-help-ko/main/docs/43-%ED%95%9C%EA%B5%AD-%EC%95%B1/assets/toss-payment-path-billing.pptx)
 
 > ### 결제경로 문서는 결제방식별로 "따로 2벌" 만듭니다
 > - 📄 **파일 1: 일반결제(단건) 결제경로** — 일반결제 MID 심사용
