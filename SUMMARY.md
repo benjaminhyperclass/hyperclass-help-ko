@@ -34,7 +34,15 @@
 ## 🇰🇷 한국 전용 앱
 
 * [한국 전용 앱](docs/43-한국-앱/README.md)
-* [🚀 토스페이먼츠 시작 가이드 (전체 신청\~연동)](docs/43-한국-앱/tosspayments-getting-started.md)
+* [토스페이먼츠 셀프 신청 매뉴얼](docs/43-한국-앱/tosspayments-getting-started.md)
+  * [Part 0. 홈페이지 사전 점검](docs/43-한국-앱/part0-website-check.md)
+  * [Part 1. 정보·서류 준비](docs/43-한국-앱/part1-preparation.md)
+  * [Part 2. 토스페이먼츠 신청](docs/43-한국-앱/part2-application.md)
+  * [Part 3. 하이퍼클래스 앱 연동](docs/43-한국-앱/part3-app-connection.md)
+  * [Part 4. 상품 만들기 + 결제 테스트](docs/43-한국-앱/part4-products-test.md)
+  * [Part 5. 결제경로 문서 제작 ★](docs/43-한국-앱/part5-payment-path-docs.md)
+  * [Part 6. 심사 제출 + 보완 대응](docs/43-한국-앱/part6-review-response.md)
+  * [부록: 환불정책 · FAQ · 체크리스트](docs/43-한국-앱/appendix.md)
 * [토스페이먼츠 앱 설치하기](docs/43-한국-앱/tosspayments-installation.md)
 * [📊 Hyperaxis — 법적 고지](docs/hyperaxis/README.md)
   * [개인정보처리방침](docs/hyperaxis/privacy-policy.md)
