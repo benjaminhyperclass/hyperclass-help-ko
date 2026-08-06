@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="660" height="470" font-family="Apple SD Gothic Neo, AppleGothic, sans-serif">
+  <defs>
+    <marker id="arr" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#e53935"/>
+    </marker>
+    <filter id="sh" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="#000" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+  <rect width="660" height="470" fill="#ffffff"/>
+  <!-- browser toolbar -->
+  <rect x="0" y="0" width="660" height="70" fill="#f1f3f4"/>
+  <rect x="20" y="17" width="530" height="36" rx="18" fill="#ffffff" stroke="#dadce0"/>
+  <circle cx="42" cy="35" r="8" fill="none" stroke="#5f6368" stroke-width="1.6"/>
+  <line x1="48" y1="41" x2="53" y2="46" stroke="#5f6368" stroke-width="1.6"/>
+  <text x="66" y="40" font-size="14" fill="#202124">shop.example.com/checkout</text>
+  <!-- popup blocked icon -->
+  <g>
+    <rect x="566" y="24" width="24" height="19" rx="2" fill="#ffffff" stroke="#5f6368" stroke-width="1.6"/>
+    <line x1="566" y1="30" x2="590" y2="30" stroke="#5f6368" stroke-width="1.6"/>
+    <circle cx="588" cy="41" r="7" fill="#d93025"/>
+    <line x1="585" y1="38" x2="591" y2="44" stroke="#fff" stroke-width="1.8"/>
+    <line x1="591" y1="38" x2="585" y2="44" stroke="#fff" stroke-width="1.8"/>
+  </g>
+  <!-- star -->
+  <path d="M628 26 l4.2 8.5 9.4 1.4 -6.8 6.6 1.6 9.3 -8.4 -4.4 -8.4 4.4 1.6 -9.3 -6.8 -6.6 9.4 -1.4 z" fill="none" stroke="#5f6368" stroke-width="1.5"/>
+  <!-- dialog -->
+  <rect x="240" y="96" width="396" height="268" rx="10" fill="#ffffff" stroke="#dadce0" filter="url(#sh)"/>
+  <text x="264" y="134" font-size="16" font-weight="700" fill="#202124">팝업 차단됨</text>
+  <text x="612" y="134" font-size="16" fill="#5f6368" text-anchor="end">✕</text>
+  <text x="280" y="166" font-size="13" fill="#1a73e8">• https://pay.toss.im/…/payment.jsp</text>
+  <!-- radio allow -->
+  <circle cx="272" cy="200" r="8" fill="none" stroke="#1a73e8" stroke-width="2"/>
+  <circle cx="272" cy="200" r="4" fill="#1a73e8"/>
+  <text x="290" y="198" font-size="13.5" fill="#202124">shop.example.com에서 팝업 및 리디렉션</text>
+  <text x="290" y="216" font-size="13.5" fill="#202124">을 항상 허용</text>
+  <!-- radio block -->
+  <circle cx="272" cy="246" r="8" fill="none" stroke="#5f6368" stroke-width="2"/>
+  <text x="290" y="251" font-size="13.5" fill="#202124">차단 계속</text>
+  <!-- buttons -->
+  <rect x="264" y="292" width="72" height="38" rx="6" fill="#ffffff" stroke="#dadce0"/>
+  <text x="300" y="316" font-size="14" fill="#1a73e8" text-anchor="middle">관리</text>
+  <rect x="540" y="292" width="72" height="38" rx="6" fill="#1a73e8"/>
+  <text x="576" y="316" font-size="14" fill="#ffffff" text-anchor="middle">완료</text>
+  <!-- annotations -->
+  <g stroke="#e53935" stroke-width="3.5" fill="none">
+    <line x1="520" y1="12" x2="566" y2="26" marker-end="url(#arr)"/>
+    <line x1="200" y1="196" x2="256" y2="200" marker-end="url(#arr)"/>
+    <line x1="576" y1="400" x2="576" y2="340" marker-end="url(#arr)"/>
+  </g>
+  <g font-size="14" font-weight="700" fill="#ffffff" text-anchor="middle">
+    <circle cx="504" cy="12" r="12" fill="#e53935"/><text x="504" y="17">1</text>
+    <circle cx="185" cy="196" r="12" fill="#e53935"/><text x="185" y="201">2</text>
+    <circle cx="576" cy="414" r="12" fill="#e53935"/><text x="576" y="419">3</text>
+  </g>
+  <text x="24" y="420" font-size="13" fill="#5f6368">① 주소창 오른쪽 차단 아이콘 클릭 → ② "항상 허용" 선택 → ③ 완료</text>
+  <text x="24" y="442" font-size="13" fill="#5f6368">완료 후 결제 버튼을 다시 눌러주세요.</text>
+</svg>
