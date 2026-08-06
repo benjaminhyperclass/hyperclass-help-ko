@@ -44,6 +44,7 @@
   * [Part 6. 심사 제출 + 보완 대응](docs/43-한국-앱/part6-review-response.md)
   * [부록: 환불정책 · FAQ · 체크리스트](docs/43-한국-앱/appendix.md)
 * [토스페이먼츠 앱 설치하기](docs/43-한국-앱/tosspayments-installation.md)
+* [결제 팝업이 안 열릴 때 (팝업 차단 해제)](docs/43-한국-앱/faq-popup-blocker.md)
 * [📊 Hyperaxis — 법적 고지](docs/hyperaxis/README.md)
   * [개인정보처리방침](docs/hyperaxis/privacy-policy.md)
   * [이용약관](docs/hyperaxis/terms-of-service.md)
