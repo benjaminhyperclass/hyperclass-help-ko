@@ -57,10 +57,11 @@ jobs:
           npm install -g terser
 
       # ── [Step 0-a] Playwright 설치 ──────────────────────────────
-      # push 트리거는 이미 추출된 EN 파일이 올라온 상황이므로 스킵
-      # (북마클릿 수동 추출 방식과 하이브리드 병행 가능)
+      # 정상 운영 경로는 push 트리거(크롤 산출물 커밋) — Step 0은 수동 dispatch 전용.
+      # schedule에서 제외: GHL 전역 i18n 제거(2026-08)로 Playwright 추출이 불가해져
+      # 매달 실패 Issue가 노이즈가 되는 것을 방지 (신호와 알림 분리)
       - name: Playwright 설치
-        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        if: github.event_name == 'workflow_dispatch'
         run: |
           pip install playwright
           playwright install chromium --with-deps
@@ -68,7 +69,7 @@ jobs:
       # ── [Step 0-b] GHL EN i18n 자동 추출 ─────────────────────────
       - name: GHL EN i18n 추출
         id: extract
-        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        if: github.event_name == 'workflow_dispatch'
         timeout-minutes: 15
         run: |
           set -o pipefail
@@ -90,7 +91,7 @@ jobs:
       # en.bak.json으로 백업하므로 비교 기준점이 자연스럽게 확보됨.
       - name: 추출 결과 sanity check
         id: sanity
-        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        if: github.event_name == 'workflow_dispatch'
         run: |
           python3 - << 'PYEOF'
           import json, os, sys
@@ -131,7 +132,7 @@ jobs:
       - name: 실패 알림 Issue 생성
         if: >
           failure() &&
-          (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') &&
+          github.event_name == 'workflow_dispatch' &&
           (steps.extract.outcome == 'failure' || steps.sanity.outcome == 'failure')
         env:
           GH_TOKEN: ${{ github.token }}
