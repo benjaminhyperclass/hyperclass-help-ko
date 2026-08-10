@@ -1,15 +1,11 @@
 name: GHL UI 한글화 자동 업데이트
 
-# EN 추출은 로컬 북마클릿으로 수동 (2FA 제약, 섹션 2.3 참고)
-# 이 워크플로우는 push된 EN 파일 기준으로 diff → 번역 → 빌드 → CDN만 담당
-
 on:
-  push:
-    branches: [main]
-    paths:
-      - 'data/ghl-i18n-en.json'   # Benjamin이 북마클릿 추출 후 push 시 자동 실행
   schedule:
-    - cron: '0 21 15 * *'          # 매월 15일 UTC 21:00 = KST 16일 06:00
+    - cron: '0 21 15 * *'    # 매월 15일 UTC 21:00 = KST 16일 06:00
+  push:
+    paths:
+      - 'data/ghl-i18n-en.json'   # Benjamin이 EN 파일 push하면 자동 트리거 (북마클릿 수동 방식 병행)
   workflow_dispatch:
     inputs:
       mode:
@@ -18,14 +14,26 @@ on:
         default: 'translate'
         type: choice
         options:
-          - dry-run     # diff만 확인, 번역/빌드 없음
-          - translate   # 미번역 키 번역 + 빌드 + 배포
-          - full        # 전체 파이프라인 (translate와 동일)
+          - dry-run       # 추출 + diff만 확인, 번역/빌드/배포 없음
+          - translate     # 미번역 키 번역 + 빌드 + CDN 배포
+          - build-only    # 번역 없이 빌드만 (기존 KO 데이터로)
+
+# Issue 자동 생성엔 issues: write 필요.
+# permissions 블록을 선언하면 명시하지 않은 권한이 전부 제거되므로
+# 기존 커밋&푸시용 contents: write를 반드시 함께 선언해야 함.
+permissions:
+  contents: write
+  issues: write
+
+# 스케줄 실행과 수동 push 트리거가 동시에 돌 때 충돌 방지
+concurrency:
+  group: ui-updater
+  cancel-in-progress: false
 
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 60
+    timeout-minutes: 90
     steps:
       # ── 체크아웃 ────────────────────────────────────────────────
       - uses: actions/checkout@v4
@@ -48,42 +56,167 @@ jobs:
           pip install -r scripts/requirements.txt
           npm install -g terser
 
+      # ── [Step 0-a] Playwright 설치 ──────────────────────────────
+      # push 트리거는 이미 추출된 EN 파일이 올라온 상황이므로 스킵
+      # (북마클릿 수동 추출 방식과 하이브리드 병행 가능)
+      - name: Playwright 설치
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: |
+          pip install playwright
+          playwright install chromium --with-deps
+
+      # ── [Step 0-b] GHL EN i18n 자동 추출 ─────────────────────────
+      - name: GHL EN i18n 추출
+        id: extract
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        timeout-minutes: 15
+        run: |
+          echo "## GHL EN i18n 자동 추출" >> $GITHUB_STEP_SUMMARY
+          python scripts/extract-ghl-i18n.py 2>&1 | tee extract.log
+          grep -E '저장:|수집' extract.log | tail -3 >> $GITHUB_STEP_SUMMARY || true
+        env:
+          GHL_SESSION_JSON: ${{ secrets.GHL_SESSION_JSON }}
+          GHL_EMAIL:        ${{ secrets.GHL_EMAIL }}
+          GHL_PASSWORD:     ${{ secrets.GHL_PASSWORD }}
+          GHL_LOC_ID:       ${{ secrets.GHL_LOC_ID }}
+          REPO_PATH:        ${{ github.workspace }}
+          VAULT_PATH:       ${{ github.workspace }}
+
+      # ── [Step 0-c] 추출 결과 sanity check ────────────────────────
+      # 세션이 반쯤 살아있어 로그인 페이지 i18n만 긁히는 오염 시나리오 차단:
+      # 추출 키 수가 기존 baseline(bak) 대비 50% 미만이면 배포 전면 중단.
+      # extract-ghl-i18n.py가 새 파일을 쓰기 전에 기존 en.json을
+      # en.bak.json으로 백업하므로 비교 기준점이 자연스럽게 확보됨.
+      - name: 추출 결과 sanity check
+        id: sanity
+        if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+        run: |
+          python3 - << 'PYEOF'
+          import json, os, sys
+
+          new_path = 'data/ghl-i18n-en.json'
+          bak_path = 'data/ghl-i18n-en.bak.json'
+
+          with open(new_path, encoding='utf-8') as f:
+              new_count = len(json.load(f))
+
+          if not os.path.exists(bak_path):
+              msg = f'ℹ️  baseline 없음 — sanity check 스킵 (신규 {new_count:,}개)'
+              print(msg)
+              with open(os.environ.get('GITHUB_STEP_SUMMARY', '/dev/null'), 'a') as f:
+                  f.write(f'## Sanity check\n{msg}\n')
+              sys.exit(0)
+
+          with open(bak_path, encoding='utf-8') as f:
+              old_count = len(json.load(f))
+
+          ratio = (new_count / old_count * 100) if old_count else 100.0
+          line = f'추출 {new_count:,}개 / baseline {old_count:,}개 = {ratio:.1f}%'
+
+          with open(os.environ.get('GITHUB_STEP_SUMMARY', '/dev/null'), 'a') as f:
+              f.write(f'## Sanity check\n{line}\n')
+
+          if ratio < 50.0:
+              print(f'❌ SANITY FAIL: {line}')
+              print('   키 수 급감 — 부분 추출/세션 오염 의심. 배포를 중단합니다.')
+              sys.exit(1)
+
+          print(f'✅ Sanity OK: {line}')
+          PYEOF
+
+      # ── [Step 0-d] 실패 알림 Issue ───────────────────────────────
+      # 실패 유형을 구분: 추출 자체 실패 = 세션 만료 가능성,
+      # sanity 실패 = 부분 추출 이상 징후. 각각 다른 제목/본문으로 생성.
+      - name: 실패 알림 Issue 생성
+        if: >
+          failure() &&
+          (github.event_name == 'schedule' || github.event_name == 'workflow_dispatch') &&
+          (steps.extract.outcome == 'failure' || steps.sanity.outcome == 'failure')
+        env:
+          GH_TOKEN: ${{ github.token }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          if [ "${{ steps.extract.outcome }}" = "failure" ]; then
+            TITLE="🔒 [UI 업데이터] EN 추출 실패 — 세션 만료 가능성"
+            BODY=$(cat << 'EOF'
+          GitHub Actions의 무인 EN 추출이 실패했습니다. GHL 세션 쿠키가 만료됐을 가능성이 높습니다.
+
+          **조치 방법 (약 3분):**
+          1. 로컬 터미널에서 세션 재발급:
+             ```
+             cd ~/Documents/hyperclass-help-ko && python3 scripts/export-ghl-session.py
+             ```
+             (브라우저에서 GHL 로그인 + 2FA 완료 후 터미널에서 Enter)
+          2. 새 세션을 Secret에 갱신:
+             ```
+             gh secret set GHL_SESSION_JSON < ~/Downloads/ghl-session.json
+             ```
+          3. Actions 탭에서 이 워크플로우를 `dry-run`으로 재실행해 확인
+
+          세션 문제가 아니라면 실행 로그에서 오류 원문을 확인하세요.
+          EOF
+          )
+          else
+            TITLE="⚠️ [UI 업데이터] 추출 키 수 급감 — 배포 중단됨"
+            BODY=$(cat << 'EOF'
+          EN 추출은 성공했지만 키 수가 기존 baseline 대비 50% 미만으로 급감해 배포를 중단했습니다.
+
+          **가능한 원인:**
+          - 세션이 반쯤 살아있어 로그인 페이지 i18n만 수집됨
+          - `GHL_LOC_ID`가 잘못됐거나 Location 전환 실패
+          - GHL 측 페이지 구조 변경
+
+          **조치 방법:**
+          1. 실행 로그에서 추출 키 수와 방문 URL 히스토리 확인
+          2. 세션 의심 시 로컬에서 `export-ghl-session.py` 재실행 → `GHL_SESSION_JSON` 갱신
+          3. 정상 추출 확인 후 `translate` 모드로 재실행
+
+          ⚠️ `data/ghl-i18n-en.bak.json`은 절대 덮어쓰지 마세요 — 복구 기준점입니다.
+          EOF
+          )
+          fi
+          BODY="${BODY}
+
+          실행 로그: ${RUN_URL}"
+          gh issue create --title "$TITLE" --body "$BODY" --label "automation"
+
       # ── [Step 1] diff 분석 ──────────────────────────────────────
       - name: i18n diff 분석
         run: |
+          echo "## i18n diff 분석" >> $GITHUB_STEP_SUMMARY
           python scripts/diff-i18n.py \
             --new data/ghl-i18n-en.json \
             --old data/ghl-i18n-en.bak.json \
-            --ko  data/ghl-i18n-ko.json | tee /tmp/diff-result.txt
-          cat /tmp/diff-result.txt >> $GITHUB_STEP_SUMMARY
+            --ko  data/ghl-i18n-ko.json | tee -a $GITHUB_STEP_SUMMARY
         env:
           REPO_PATH:  ${{ github.workspace }}
           VAULT_PATH: ${{ github.workspace }}
 
-      # ── [Step 2] 신규 키 번역 (dry-run 제외) ─────────────────────
+      # ── [Step 2] 신규 키 번역 ────────────────────────────────────
       - name: 신규 키 번역 (Anthropic API)
         if: >
-          github.event_name == 'push' ||
-          github.event_name == 'schedule' ||
-          inputs.mode == 'translate' ||
-          inputs.mode == 'full'
+          (github.event_name == 'schedule' ||
+           github.event_name == 'push' ||
+           inputs.mode == 'translate')
         run: bash scripts/update-translations.sh --yes --no-build
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           REPO_PATH:         ${{ github.workspace }}
           VAULT_PATH:        ${{ github.workspace }}
 
-      # ── [Step 3] 빌드 ────────────────────────────────────────────
+      # ── [Step 3] dashboard-ko.js 빌드 ───────────────────────────
       - name: dashboard-ko.js 빌드
         if: >
-          github.event_name == 'push' ||
           github.event_name == 'schedule' ||
+          github.event_name == 'push' ||
           inputs.mode == 'translate' ||
-          inputs.mode == 'full'
+          inputs.mode == 'build-only'
         run: |
           python scripts/build-dashboard-ko.py
           terser js/dashboard-ko.js -o js/dashboard-ko.min.js --compress --mangle
-          echo "빌드 완료: $(wc -c < js/dashboard-ko.min.js | xargs) bytes"
+          echo "## 빌드 완료" >> $GITHUB_STEP_SUMMARY
+          echo "- 파일 크기: $(wc -c < js/dashboard-ko.min.js | xargs) bytes" >> $GITHUB_STEP_SUMMARY
+          head -4 js/dashboard-ko.js >> $GITHUB_STEP_SUMMARY
         env:
           REPO_PATH:  ${{ github.workspace }}
           VAULT_PATH: ${{ github.workspace }}
@@ -91,10 +224,10 @@ jobs:
       # ── [Step 4] 화이트라벨 검증 ────────────────────────────────
       - name: JS 화이트라벨 검증
         if: >
-          github.event_name == 'push' ||
           github.event_name == 'schedule' ||
+          github.event_name == 'push' ||
           inputs.mode == 'translate' ||
-          inputs.mode == 'full'
+          inputs.mode == 'build-only'
         run: |
           python3 - << 'PYEOF'
           import sys, os
@@ -108,7 +241,7 @@ jobs:
                       v = whitelabel_check(fh.read())
                   if v:
                       violations.extend(v)
-                      for x in v[:3]:
+                      for x in v[:5]:
                           print(f'⚠️  [{x["type"]}] {x["context"][:60]}')
                   else:
                       print(f'✅ {f}: 위반 없음')
@@ -119,22 +252,15 @@ jobs:
               f.write(summary + '\n')
           PYEOF
 
-      # ── [Step 4.5] EN baseline 스냅샷 ────────────────────────────
-      - name: en.bak.json 갱신
-        if: >
-          github.event_name == 'push' ||
-          github.event_name == 'schedule' ||
-          inputs.mode == 'translate' ||
-          inputs.mode == 'full'
-        run: cp data/ghl-i18n-en.json data/ghl-i18n-en.bak.json
-
       # ── [Step 5] 커밋 & 푸시 ─────────────────────────────────────
+      # schedule/dispatch 실행에서는 Step 0이 갱신한 data/ghl-i18n-en.json과
+      # bak.json도 함께 커밋됨 (git add js/ data/ 가 이미 커버)
       - name: 커밋 & 푸시
         if: >
-          github.event_name == 'push' ||
           github.event_name == 'schedule' ||
+          github.event_name == 'push' ||
           inputs.mode == 'translate' ||
-          inputs.mode == 'full'
+          inputs.mode == 'build-only'
         run: |
           git config user.name "Hyperclass Bot"
           git config user.email "bot@hyperclass.ai"
@@ -150,16 +276,16 @@ jobs:
       # ── [Step 6] CDN 퍼지 ────────────────────────────────────────
       - name: jsDelivr CDN 퍼지
         if: >
-          (github.event_name == 'push' ||
-           github.event_name == 'schedule' ||
+          (github.event_name == 'schedule' ||
+           github.event_name == 'push' ||
            inputs.mode == 'translate' ||
-           inputs.mode == 'full') &&
+           inputs.mode == 'build-only') &&
           success()
         run: |
           curl -sf "https://purge.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@main/js/dashboard-ko.min.js" || true
           curl -sf "https://purge.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@main/js/dashboard-ko.js" || true
           curl -sf "https://purge.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@main/js/version.json" || true
-          echo "✅ CDN 퍼지 완료"
+          echo "## CDN 퍼지 완료" >> $GITHUB_STEP_SUMMARY
 
       # ── 요약 ────────────────────────────────────────────────────
       - name: 요약
@@ -168,6 +294,7 @@ jobs:
           {
             echo "## UI 업데이터 완료 — $(date -u '+%Y-%m-%d %H:%M UTC')"
             echo "- 트리거: ${{ github.event_name }}"
-            echo "- 모드: ${{ github.event_name == 'workflow_dispatch' && inputs.mode || github.event_name }}"
+            echo "- 모드: ${{ github.event_name == 'schedule' && 'schedule(translate)' || github.event_name == 'push' && 'push(auto)' || inputs.mode }}"
+            echo "- EN 추출: ${{ steps.extract.outcome || 'skipped(push)' }}"
             echo "- 빌드: $(head -4 js/dashboard-ko.js 2>/dev/null | grep 'DOM translations' || echo 'N/A')"
           } >> $GITHUB_STEP_SUMMARY
