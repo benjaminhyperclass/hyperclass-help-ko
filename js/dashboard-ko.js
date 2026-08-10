@@ -1,7 +1,7 @@
 // Hyperclass — GHL 대시보드 한글화
 // Version: 5.0.0
 // DOM translations: 11818
-// i18n keys: 10524
+// i18n keys: 10525
 // Auto-built by build-dashboard-ko.py
 
 (function(){
