@@ -76,6 +76,10 @@ GLOSSARY = {
 }
 
 # 검증용 입력 토큰 - 사용자가 다이얼로그에 그대로 타이핑해야 하므로 절대 번역 금지
+class FatalTranslationError(RuntimeError):
+    """재시도가 의미 없는 설정 오류 — 배치 루프를 즉시 중단시킨다."""
+
+
 DNT_TOKENS = {"DELETE", "CONFIRM", "REMOVE", "CANCEL", "TRANSFER", "DISABLE", "RESET"}
 DNT_KEY_PAT = re.compile(r"(confirmword|typetoconfirm|type_to_confirm|confirmationword)", re.I)
 def is_dnt(key, val):
@@ -138,6 +142,11 @@ def translate_batch(client: anthropic.Anthropic, items: list[tuple[str, str]]) -
             wait = 30 * (attempt + 1)
             print(f"    RateLimit, {wait}초 대기...")
             time.sleep(wait)
+        except (anthropic.AuthenticationError, anthropic.PermissionDeniedError,
+                anthropic.NotFoundError) as e:
+            # 재시도해도 절대 복구되지 않는 설정 오류(키 무효·권한·모델 단종).
+            # 181배치 × 3회 재시도로 시간을 태우지 않도록 즉시 중단한다.
+            raise FatalTranslationError(f"복구 불가 오류 — {type(e).__name__}: {e}") from e
         except Exception as e:
             print(f"    오류: {e}, 재시도 {attempt+1}...")
             time.sleep(5)
@@ -228,7 +237,13 @@ def main():
         print(f"배치 {batch_num}/{total_batches} ({len(batch)}개)...", end=" ", flush=True)
         t0 = time.time()
 
-        translations = translate_batch(client, batch)
+        try:
+            translations = translate_batch(client, batch)
+        except FatalTranslationError as e:
+            print(f"\n\n❌ {e}")
+            print(f"   배치 {batch_num}/{total_batches}에서 중단 — 설정을 고친 뒤 재실행하세요.")
+            print(f"   (지금까지 번역 {done:,}개는 {OUTPUT_FILE}에 저장돼 있습니다)")
+            sys.exit(1)
         elapsed = time.time() - t0
 
         if translations:
@@ -255,6 +270,17 @@ def main():
 
     if progress["failed"]:
         print(f"\n  실패 배치 재시도: python3 i18n-batch-translator.py")
+
+    # ── 성공 판정 가드 ────────────────────────────────────────────
+    # 전 배치가 실패해도 exit 0으로 끝나면 워크플로우가 초록으로 표시돼
+    # "아무 일도 일어나지 않은 성공"이 배포까지 통과한다. 실제로 두 번 발생함.
+    fail_ratio = errors / total_batches if total_batches else 0
+    if done == 0:
+        print(f"\n❌ 번역된 키가 하나도 없습니다 ({errors}/{total_batches}배치 실패).")
+        sys.exit(1)
+    if fail_ratio > 0.10:
+        print(f"\n❌ 실패율 {fail_ratio:.0%} ({errors}/{total_batches}배치) — 임계 10% 초과.")
+        sys.exit(1)
 
 
 if __name__ == "__main__":
