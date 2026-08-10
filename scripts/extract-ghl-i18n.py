@@ -262,6 +262,17 @@ def extract_with_playwright(dry_run: bool):
                 except Exception as e:
                     print(f"  Router push 실패: {e}")
 
+            # 방법 C: /v2/location/ 직접 내비게이션 (에이전시 대시보드에 갇힌 경우 폴백)
+            if "/location/" not in page.url:
+                print("  직접 내비게이션 시도 (/v2/location/)...")
+                try:
+                    page.goto(f"{GHL_URL}/v2/location/{GHL_LOC_ID}/dashboard", timeout=30000)
+                    page.wait_for_load_state("networkidle", timeout=30000)
+                except PWTimeout:
+                    print("  직접 내비게이션 로드 타임아웃")
+                except Exception as e:
+                    print(f"  직접 내비게이션 실패: {e}")
+
             print(f"  최종 URL: {page.url}")
 
         # ── Step 3: i18n 로드 대기 ────────────────────────────────────

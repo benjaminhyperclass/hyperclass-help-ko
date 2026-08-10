@@ -71,6 +71,7 @@ jobs:
         if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
         timeout-minutes: 15
         run: |
+          set -o pipefail
           echo "## GHL EN i18n 자동 추출" >> $GITHUB_STEP_SUMMARY
           python scripts/extract-ghl-i18n.py 2>&1 | tee extract.log
           grep -E '저장:|수집' extract.log | tail -3 >> $GITHUB_STEP_SUMMARY || true
