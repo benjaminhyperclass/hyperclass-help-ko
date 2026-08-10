@@ -303,6 +303,30 @@ def extract_with_playwright(dry_run: bool):
 
             print(f"  최종 URL: {page.url}")
 
+            # 하드 리로드: router push는 URL만 바꿀 수 있어 location SPA를 실제 부팅
+            if "/location/" in page.url:
+                print("  하드 리로드로 location SPA 부팅...")
+                try:
+                    page.reload(timeout=30000)
+                    page.wait_for_load_state("networkidle", timeout=30000)
+                except PWTimeout:
+                    print("  리로드 로드 타임아웃 (계속 진행)")
+                except Exception as e:
+                    print(f"  리로드 실패: {e}")
+
+                # i18n 카탈로그는 lazy load — 고정 대기 대신 최대 30초 폴링
+                for tick in range(30):
+                    try:
+                        if page.evaluate(I18N_COUNT_JS) > 0:
+                            print(f"  리로드 후 i18n 로드 감지 ({tick+1}s)")
+                            break
+                    except Exception:
+                        pass
+                    page.wait_for_timeout(1000)
+
+                if GHL_LOC_ID not in page.url:
+                    print(f"  ⚠️  리로드 후 에이전시로 튕김: {page.url}")
+
         # ── Step 3: i18n 로드 대기 ────────────────────────────────────
         print("\n⏳ i18n 로드 대기 (최대 90초)...")
         best_count = 0
@@ -332,6 +356,15 @@ def extract_with_playwright(dry_run: bool):
                 print(f"  추출 결과: {res}")
         except Exception as e:
             print(f"  추출 실패: {e}")
+
+        # 0개 실패 시 진단: 프레임 구조(iframe 여부)와 화면 텍스트(로딩 멈춤 여부)
+        if not result:
+            try:
+                print("  [진단] frames:", [f.url for f in page.frames])
+                body = page.evaluate("document.body ? document.body.innerText.slice(0, 200) : ''")
+                print("  [진단] body[:200]:", repr(body))
+            except Exception as e:
+                print(f"  [진단] 수집 실패: {e}")
 
         browser.close()
 
