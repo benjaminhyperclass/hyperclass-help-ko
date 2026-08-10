@@ -48,14 +48,31 @@ EXTRACT_JS = """
     });
     return out;
   }
+  function pick(i18n, loc) {
+    try {
+      return (i18n.getLocaleMessage
+        ? i18n.getLocaleMessage(loc)
+        : (i18n.messages && i18n.messages.value && i18n.messages.value[loc])) || {};
+    } catch(e) { return {}; }
+  }
   try {
     var app = document.querySelector('#app').__vue_app__;
     var i18n = app.config.globalProperties.$i18n;
-    var msgs = i18n.getLocaleMessage
-      ? i18n.getLocaleMessage('en')
-      : (i18n.messages && i18n.messages.value && i18n.messages.value['en']) || {};
-    var result = flat(msgs, '');
-    return { ok: true, keys: Object.keys(result).length, data: result };
+    // composition 모드에서 locale은 ref(.value 필요), legacy 모드는 문자열
+    var cur = (i18n.locale && i18n.locale.value) || i18n.locale;
+    var avail = (i18n.availableLocales && i18n.availableLocales.value) || i18n.availableLocales || [];
+    var best = null, bestLoc = null;
+    var cands = ['en', 'en-US', cur];
+    for (var i = 0; i < cands.length; i++) {
+      var loc = cands[i];
+      if (!loc) continue;
+      var r = flat(pick(i18n, loc), '');
+      var n = Object.keys(r).length;
+      if (n > 0 && (best === null || n > Object.keys(best).length)) { best = r; bestLoc = loc; }
+    }
+    var result = best || {};
+    return { ok: true, keys: Object.keys(result).length, locale: bestLoc,
+             availableLocales: avail, data: result };
   } catch(e) {
     return { ok: false, error: e.message };
   }
@@ -72,15 +89,26 @@ I18N_COUNT_JS = """
     }
     return n;
   }
+  function pick(i18n, loc) {
+    try {
+      return (i18n.getLocaleMessage
+        ? i18n.getLocaleMessage(loc)
+        : (i18n.messages && i18n.messages.value && i18n.messages.value[loc])) || {};
+    } catch(e) { return {}; }
+  }
   try {
     var app = document.querySelector('#app').__vue_app__;
     if (!app) return 0;
     var i18n = app.config.globalProperties.$i18n;
     if (!i18n) return 0;
-    var msgs = i18n.getLocaleMessage
-      ? i18n.getLocaleMessage('en')
-      : (i18n.messages && i18n.messages.value && i18n.messages.value['en']) || {};
-    return count(msgs);
+    var cur = (i18n.locale && i18n.locale.value) || i18n.locale;
+    var cands = ['en', 'en-US', cur], best = 0;
+    for (var i = 0; i < cands.length; i++) {
+      if (!cands[i]) continue;
+      var n = count(pick(i18n, cands[i]));
+      if (n > best) best = n;
+    }
+    return best;
   } catch(e) { return 0; }
 })()
 """
@@ -299,7 +327,7 @@ def extract_with_playwright(dry_run: bool):
             res = page.evaluate(EXTRACT_JS)
             if res.get("ok") and res.get("keys", 0) > 0:
                 result = res["data"]
-                print(f"  추출: {len(result):,}개 키")
+                print(f"  추출: {len(result):,}개 키 (locale={res.get('locale')}, available={res.get('availableLocales')})")
             else:
                 print(f"  추출 결과: {res}")
         except Exception as e:
