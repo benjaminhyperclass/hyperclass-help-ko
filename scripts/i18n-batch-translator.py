@@ -75,6 +75,13 @@ GLOSSARY = {
     "Blog":           "블로그",
 }
 
+# 검증용 입력 토큰 - 사용자가 다이얼로그에 그대로 타이핑해야 하므로 절대 번역 금지
+DNT_TOKENS = {"DELETE", "CONFIRM", "REMOVE", "CANCEL", "TRANSFER", "DISABLE", "RESET"}
+DNT_KEY_PAT = re.compile(r"(confirmword|typetoconfirm|type_to_confirm|confirmationword)", re.I)
+def is_dnt(key, val):
+    v = str(val).strip().strip(chr(39)+chr(34))
+    return v in DNT_TOKENS or bool(DNT_KEY_PAT.search(key))
+
 GLOSSARY_PROMPT = "\n".join(f"  {en} → {ko}" for en, ko in GLOSSARY.items())
 
 
@@ -101,6 +108,7 @@ def translate_batch(client: anthropic.Anthropic, items: list[tuple[str, str]]) -
 - UI 버튼/메뉴/레이블에 적합한 자연스러운 한국어
 - 고유명사(API, SMTP, CRM, GoHighLevel 등)는 그대로 유지
 - {{name}}, {{count}} 같은 변수는 그대로 유지
+- 'Type X to confirm' 류 문장에서 따옴표 안 검증 토큰(DELETE, CONFIRM, REMOVE 등)은 영문 그대로 유지
 - 번호만 붙여서 번역 결과만 출력 (설명 없이)
 
 영문 ({len(items)}개):
@@ -181,6 +189,13 @@ def main():
 
     # 완료된 키 제외
     remaining = {k: v for k, v in en_data.items() if k not in ko_data}
+    # DNT: 검증 토큰은 번역하지 않고 원문 유지
+    _dnt = {k: v for k, v in remaining.items() if is_dnt(k, v)}
+    if _dnt:
+        ko_data.update(_dnt)
+        save_output(ko_data)
+        remaining = {k: v for k, v in remaining.items() if k not in _dnt}
+        print(f"DNT(검증 토큰) 원문 유지: {len(_dnt)}개")
     total_batches = (len(remaining) + BATCH_SIZE - 1) // BATCH_SIZE
 
     print(f"완료: {len(ko_data):,}개 / 남은 번역: {len(remaining):,}개 ({total_batches}배치)")

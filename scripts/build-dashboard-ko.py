@@ -171,6 +171,10 @@ def main():
     dom_dict.update(existing)
     dom_dict.update(manual)
 
+    # DNT 토큰: 검증용 타이핑 단어는 DOM 치환 금지 (한글 표시 시 입력 검증 실패)
+    for _tok in ("DELETE", "CONFIRM", "REMOVE", "CANCEL", "TRANSFER", "DISABLE", "RESET"):
+        dom_dict.pop(_tok, None)
+
     print(f"DOM 교체 사전: {len(dom_dict):,}개")
 
     if args.stats:

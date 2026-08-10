@@ -9134,7 +9134,7 @@
   "campaign.email.importTemplate.importing": "가져오는 중",
   "campaign.email.lcEmail.migrationModal.below": "아래",
   "campaign.email.lcEmail.migrationModal.confirmByTyping": "입력하여 확인해 주세요",
-  "campaign.email.lcEmail.migrationModal.confirmWord": "확인",
+  "campaign.email.lcEmail.migrationModal.confirmWord": "CONFIRM",
   "campaign.email.lcEmail.migrationModal.existingNotMoved": "클라이언트가 이미 Mailgun 또는 SMTP 설정을 가지고 있다면 이전되지 않습니다",
   "campaign.email.lcEmail.migrationModal.notNow": "나중에",
   "campaign.email.lcEmail.migrationModal.pricingInfo": "LC Email은 Mailgun보다 저렴하며 1000개 이메일당 약 $0.68입니다",
