@@ -130,7 +130,8 @@ def translate_batch(client: anthropic.Anthropic, items: list[tuple[str, str]]) -
                 thinking={"type": "disabled"},
                 messages=[{"role": "user", "content": prompt}]
             )
-            raw = resp.content[0].text.strip()
+            # content는 블록 리스트 — 사고 블록이 앞설 수 있으므로 타입으로 좁혀 꺼낸다
+            raw = next(b.text for b in resp.content if b.type == "text").strip()
             result = {}
             for i, (key, _) in enumerate(items):
                 m = re.search(rf'^{i+1}[.)]\s*(.+)$', raw, re.MULTILINE)

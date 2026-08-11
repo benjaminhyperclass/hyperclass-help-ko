@@ -1,3 +1,5 @@
-anthropic>=0.87.0
+# CI가 최신을 설치하면 로컬과 동작이 갈린다(0.87.0은 thinking:disabled 적용,
+# 0.121.0은 사고 블록 생성). 재현 가능한 빌드를 위해 고정.
+anthropic==0.121.0
 requests>=2.31.0
 beautifulsoup4>=4.12.0

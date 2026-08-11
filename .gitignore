@@ -7,3 +7,4 @@ package.json
 package-lock.json
 data/i18n-progress.json
 ghl-session*.json
+__pycache__/

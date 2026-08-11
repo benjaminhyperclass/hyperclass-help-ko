@@ -20,6 +20,11 @@ on:
         default: false
         type: boolean
 
+# 번역 결과 커밋&푸시에 필요. permissions를 선언하면 명시하지 않은 권한이 전부
+# 제거되므로, 이 워크플로우가 실제로 쓰는 것만 적는다 — gh issue/PR은 쓰지 않음.
+permissions:
+  contents: write
+
 jobs:
   update:
     runs-on: ubuntu-latest

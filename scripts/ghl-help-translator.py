@@ -1037,7 +1037,9 @@ def translate_article(client, article, system_prompt):
             system=system_prompt,
             messages=[{"role": "user", "content": user_prompt}]
         )
-        translated = response.content[0].text
+        # content는 블록 리스트 — 사고 블록이 앞설 수 있으므로 타입으로 좁혀 꺼낸다.
+        # (SDK/모델 조합에 따라 thinking:disabled가 무시되는 경우가 있음)
+        translated = next(b.text for b in response.content if b.type == "text")
         # 화이트라벨 후처리 (신규/수정 번역에만 적용)
         try:
             import sys as _sys, os as _os
