@@ -1,17 +1,13 @@
 # GHL Help 업데이트 리포트 — 2026-08-11
 
-신규: **58**개 | 수정: **0**개 | 삭제: **41**개
+신규: **25**개 | 수정: **0**개 | 삭제: **41**개
 
 ---
 
 
 ## Getting Started w/ HighLevel (`getting-started`)
 
-### 신규 (5개)
-- 
-- 
-- 
-- 
+### 신규 (1개)
 - 
 
 ### 삭제 (2개)
@@ -21,9 +17,7 @@
 
 ## Contacts (`contacts`)
 
-### 신규 (5개)
-- 
-- 
+### 신규 (3개)
 - 
 - 
 - 
@@ -39,24 +33,13 @@
 
 ## Conversations (`conversations`)
 
-### 신규 (1개)
-- 
-
 ### 삭제 (1개)
 - Unread VS Read - Must Manually Mark as Read
 
 
 ## Calendars & Appointments (`calendars`)
 
-### 신규 (19개)
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
+### 신규 (11개)
 - 
 - 
 - 
@@ -96,16 +79,7 @@
 
 ## Sites (`sites`)
 
-### 신규 (15개)
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
+### 신규 (6개)
 - 
 - 
 - 
@@ -128,16 +102,7 @@
 
 ## Workflows (`workflows`)
 
-### 신규 (12개)
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
-- 
+### 신규 (3개)
 - 
 - 
 - 
