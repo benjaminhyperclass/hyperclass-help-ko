@@ -14,6 +14,11 @@ on:
       tier:
         description: 'Tier (1-4, 비워두면 전체)'
         required: false
+      skip_delete:
+        description: 'GHL에서 사라진 아티클의 문서 삭제를 보류 (감지·보고만)'
+        required: false
+        default: false
+        type: boolean
 
 jobs:
   update:
@@ -55,10 +60,12 @@ jobs:
         run: |
           TIER_ARG=""
           [ -n "${{ inputs.tier }}" ] && TIER_ARG="--tier ${{ inputs.tier }}"
+          SKIP_DEL_ARG=""
+          [ "${{ inputs.skip_delete }}" = "true" ] && SKIP_DEL_ARG="--skip-delete"
           case "${{ inputs.mode }}" in
-            dry-run)  python scripts/ghl-help-updater.py --dry-run $TIER_ARG --no-push ;;
-            new-only) python scripts/ghl-help-updater.py --new-only $TIER_ARG --no-push ;;
-            full)     python scripts/ghl-help-updater.py $TIER_ARG --no-push ;;
+            dry-run)  python scripts/ghl-help-updater.py --dry-run $TIER_ARG $SKIP_DEL_ARG --no-push ;;
+            new-only) python scripts/ghl-help-updater.py --new-only $TIER_ARG $SKIP_DEL_ARG --no-push ;;
+            full)     python scripts/ghl-help-updater.py $TIER_ARG $SKIP_DEL_ARG --no-push ;;
           esac
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}

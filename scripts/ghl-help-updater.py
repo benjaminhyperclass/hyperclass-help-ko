@@ -571,17 +571,23 @@ def run_scan(args):
                 time.sleep(DELAY)
                 save_state(state)
 
-        # 삭제
-        for h in del_hashes:
-            fp = state["articles"].get(h, {}).get("file_path")
-            if fp and os.path.exists(fp):
-                os.remove(fp)
-                short = fp.replace(DOCS + "/", "")
-                print(f"  🗑️  삭제: {short}")
-            state["articles"].pop(h, None)
-        if del_hashes:
-            any_translated = True
-            save_state(state)
+        # 삭제 (--skip-delete면 보류하고 목록만 출력 — 상태도 건드리지 않는다)
+        if args.skip_delete:
+            for h in del_hashes:
+                fp = state["articles"].get(h, {}).get("file_path") or "(경로 없음)"
+                url = state["articles"].get(h, {}).get("url", "")
+                print(f"  ⏸️  삭제 보류: {fp.replace(DOCS + '/', '')}  ←  {url}")
+        else:
+            for h in del_hashes:
+                fp = state["articles"].get(h, {}).get("file_path")
+                if fp and os.path.exists(fp):
+                    os.remove(fp)
+                    short = fp.replace(DOCS + "/", "")
+                    print(f"  🗑️  삭제: {short}")
+                state["articles"].pop(h, None)
+            if del_hashes:
+                any_translated = True
+                save_state(state)
 
     # ── 결과 요약 ──
     print(f"\n{'='*60}")
@@ -645,6 +651,8 @@ def main():
     p.add_argument("--new-only",     action="store_true", help="신규 아티클만")
     p.add_argument("--updated-only", action="store_true", help="수정 아티클만")
     p.add_argument("--no-push",      action="store_true", help="git push 스킵")
+    p.add_argument("--skip-delete",  action="store_true",
+                   help="GHL에서 사라진 아티클의 문서 삭제를 보류 (감지·보고만)")
     p.add_argument("--status",       action="store_true", help="상태 통계")
     args = p.parse_args()
 
