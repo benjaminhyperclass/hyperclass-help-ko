@@ -49,6 +49,7 @@ load_glossary     = _tr.load_glossary
 url_to_filename   = _tr.url_to_filename
 url_hash          = _tr.url_hash
 MODEL             = _tr.MODEL
+MAX_TOKENS        = _tr.MAX_TOKENS   # 두 곳에 따로 적으면 반드시 갈린다 — 단일 출처
 DELAY             = _tr.DELAY
 FETCH_DELAY       = _tr.FETCH_DELAY
 
@@ -207,11 +208,13 @@ def translate_and_save(article: dict, category_key: str,
 
     try:
         response = client.messages.create(
-            model=MODEL, max_tokens=8000,
+            model=MODEL, max_tokens=MAX_TOKENS,
+            thinking={"type": "disabled"},
             system=system_prompt,
             messages=[{"role": "user", "content": user_prompt}]
         )
-        translated = response.content[0].text
+        # content는 블록 리스트 — 사고 블록이 앞설 수 있으므로 타입으로 좁혀 꺼낸다
+        translated = next(b.text for b in response.content if b.type == "text")
     except Exception as e:
         print(f"     ❌ Claude API 실패: {e}")
         return False
