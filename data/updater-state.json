@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-06-23 12:44",
+  "last_run": "2026-08-11 07:44",
   "articles": {
     "7b55b3db02fb": {
       "url": "https://help.gohighlevel.com/support/solutions/articles/155000005055-getting-started-create-new-contact",
@@ -7172,6 +7172,380 @@
       "checksum": "80482f1dffa134e1",
       "translated_at": null,
       "qa_passed": null
+    },
+    "7985d416ff7c": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000005055-getting-started-create-and-manage-contacts",
+      "title_en": "Getting Started - Create and Manage Contacts",
+      "category": "getting-started",
+      "folder": "기본-설정",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/01-시작하기/기본-설정/getting-started-create-and-manage-contacts.md",
+      "source_modified": "Thu, 2 Jul, 2026 at 10:20 AM",
+      "checksum": "5a50abe95174ed53",
+      "translated_at": "2026-08-11",
+      "qa_passed": false
+    },
+    "ea785f32f466": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000008265-file-share-notifications-for-contacts-in-the-client-portal",
+      "title_en": "File Share Notifications for Contacts in the Client Portal",
+      "category": "getting-started",
+      "folder": "기본-설정",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/01-시작하기/기본-설정/file-share-notifications-for-contacts-in-the-client-portal.md",
+      "source_modified": "Wed, 22 Jul, 2026 at  7:08 AM",
+      "checksum": "710dbbbeedb6dec5",
+      "translated_at": "2026-08-11",
+      "qa_passed": true
+    },
+    "78ea571421e9": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000008323-global-search-v2",
+      "title_en": "Global Search V2",
+      "category": "getting-started",
+      "folder": "기본-설정",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/01-시작하기/기본-설정/global-search-v2.md",
+      "source_modified": "Fri, 31 Jul, 2026 at  8:43 AM",
+      "checksum": "7e1e8ccdbdf4c792",
+      "translated_at": "2026-08-11",
+      "qa_passed": false
+    },
+    "05d543c4a05f": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000007832--disable-or-enable-the-mandatory-profile-modal-for-community-members",
+      "title_en": "​  Disable or Enable the Mandatory Profile Modal for Community Members",
+      "category": "getting-started",
+      "folder": "웹사이트-콘텐츠",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/01-시작하기/웹사이트-콘텐츠/-disable-or-enable-the-mandatory-profile-modal-for-community-members.md",
+      "source_modified": "Sat, 9 May, 2026 at  6:58 PM",
+      "checksum": "59356c3fdd3a397b",
+      "translated_at": "2026-08-11",
+      "qa_passed": true
+    },
+    "13317287d285": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/48001202210-how-to-manage-and-merge-duplicate-contacts",
+      "title_en": "How to Manage and Merge Duplicate Contacts",
+      "category": "contacts",
+      "folder": "스마트-리스트",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/02-연락처/스마트-리스트/how-to-manage-and-merge-duplicate-contacts.md",
+      "source_modified": "Thu, 4 Jun, 2026 at 10:19 AM",
+      "checksum": "6fdf4cf90c237bf7",
+      "translated_at": "2026-08-11",
+      "qa_passed": false
+    },
+    "4e7461ca7a1c": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000006651-contacts-all-new-contact-detail-page",
+      "title_en": "Contacts – All-New Contact Detail Page",
+      "category": "contacts",
+      "folder": "연락처-상세",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/02-연락처/연락처-상세/contacts-all-new-contact-detail-page.md",
+      "source_modified": "Tue, 9 Jun, 2026 at  5:29 AM",
+      "checksum": "fac869af97c9a56a",
+      "translated_at": "2026-08-11",
+      "qa_passed": false
+    },
+    "982b2faa5e45": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/48000980858-how-to-mark-a-conversation-as-read",
+      "title_en": "How to Mark a Conversation as Read",
+      "category": "conversations",
+      "folder": "대화",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/03-대화/대화/how-to-mark-a-conversation-as-read.md",
+      "source_modified": "Fri, 5 Jun, 2026 at  5:03 AM",
+      "checksum": "702adb87560ee8b2",
+      "translated_at": "2026-08-11",
+      "qa_passed": false
+    },
+    "c9e9c3bd279a": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000007704-services-v2-reporting-guide-migrate-from-old-widgets-",
+      "title_en": "Services (v2) – Reporting Guide (Migrate from old widgets)",
+      "category": "calendars",
+      "folder": "서비스",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/04-캘린더-예약/서비스/services-v2-reporting-guide-migrate-from-old-widgets-.md",
+      "source_modified": "Thu, 7 May, 2026 at 10:16 PM",
+      "checksum": "7ac971d8d721c323",
+      "translated_at": "2026-08-11",
+      "qa_passed": true
+    },
+    "b48ca51e16c9": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000006579-rentals-create-edit-listings",
+      "title_en": "Rentals Create & Edit Listings",
+      "category": "calendars",
+      "folder": "렌탈",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/04-캘린더-예약/렌탈/rentals-create-edit-listings.md",
+      "source_modified": "Wed, 5 Aug, 2026 at  9:20 AM",
+      "checksum": "6cbf2dedbf8c651c",
+      "translated_at": "2026-08-11",
+      "qa_passed": true
+    },
+    "13197719f75a": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000006622-rentals-overview-of-bookings",
+      "title_en": "Rentals - Overview of Bookings",
+      "category": "calendars",
+      "folder": "렌탈",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/04-캘린더-예약/렌탈/rentals-overview-of-bookings.md",
+      "source_modified": "Wed, 5 Aug, 2026 at  9:20 AM",
+      "checksum": "23faf8893edd575f",
+      "translated_at": "2026-08-11",
+      "qa_passed": false
+    },
+    "4c9fce466640": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000006640-rentals-global-settings",
+      "title_en": "Rentals - Global Settings",
+      "category": "calendars",
+      "folder": "렌탈",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/04-캘린더-예약/렌탈/rentals-global-settings.md",
+      "source_modified": "Wed, 5 Aug, 2026 at  9:21 AM",
+      "checksum": "6167836af60ab540",
+      "translated_at": "2026-08-11",
+      "qa_passed": true
+    },
+    "2819f1c60a2b": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000007423-rentals-taxes",
+      "title_en": "Rentals - Taxes",
+      "category": "calendars",
+      "folder": "렌탈",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/04-캘린더-예약/렌탈/rentals-taxes.md",
+      "source_modified": "Wed, 5 Aug, 2026 at  9:22 AM",
+      "checksum": "33a091804f9ff3de",
+      "translated_at": "2026-08-11",
+      "qa_passed": true
+    },
+    "352fad4ce8f9": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000007944-rentals-blocked-slots-for-listings",
+      "title_en": "Rentals - Blocked Slots for Listings",
+      "category": "calendars",
+      "folder": "렌탈",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/04-캘린더-예약/렌탈/rentals-blocked-slots-for-listings.md",
+      "source_modified": "Wed, 5 Aug, 2026 at  9:23 AM",
+      "checksum": "f046e757b882ae7f",
+      "translated_at": "2026-08-11",
+      "qa_passed": true
+    },
+    "b7df65fb57b5": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000008013-how-to-bulk-edit-calendar-availability-for-multiple-team-members",
+      "title_en": "How to Bulk Edit Calendar Availability for Multiple Team Members",
+      "category": "calendars",
+      "folder": "Calendar Availability Settings",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/04-캘린더-예약/Calendar Availability Settings/how-to-bulk-edit-calendar-availability-for-multiple-team-members.md",
+      "source_modified": "Tue, 26 May, 2026 at  5:03 AM",
+      "checksum": "4dac4e48a3e4bb8e",
+      "translated_at": "2026-08-11",
+      "qa_passed": true
+    },
+    "105336d5e041": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000008158-use-embedded-highlevel-calendar-booking-for-facebook-lead-ads",
+      "title_en": "Use Embedded HighLevel Calendar Booking for Facebook Lead Ads",
+      "category": "calendars",
+      "folder": "캘린더-연동",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/04-캘린더-예약/캘린더-연동/use-embedded-highlevel-calendar-booking-for-facebook-lead-ads.md",
+      "source_modified": "Wed, 24 Jun, 2026 at 11:27 AM",
+      "checksum": "02c05709286641e7",
+      "translated_at": "2026-08-11",
+      "qa_passed": false
+    },
+    "74c71a0d611e": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000008080-reordering-pipelines-in-opportunities",
+      "title_en": "Reordering Pipelines in Opportunities",
+      "category": "opportunities",
+      "folder": "기회-관리",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/05-기회-파이프라인/기회-관리/reordering-pipelines-in-opportunities.md",
+      "source_modified": "Thu, 11 Jun, 2026 at  8:38 AM",
+      "checksum": "3bb14ca89f996ec3",
+      "translated_at": "2026-08-11",
+      "qa_passed": true
+    },
+    "552f607835d1": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/48001150093-show-popup-on-entering-funnel-website",
+      "title_en": "Show Popup on Entering Funnel/Website",
+      "category": "sites",
+      "folder": "퍼널-웹사이트",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/06-사이트/퍼널-웹사이트/show-popup-on-entering-funnel-website.md",
+      "source_modified": "Wed, 30 Jul, 2025 at 12:21 PM",
+      "checksum": "913aab37ff9d2e9e",
+      "translated_at": "2026-08-11",
+      "qa_passed": true
+    },
+    "d860870f4d60": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/48001155961-funnels-websites-creating-categories-in-the-navigation-menu",
+      "title_en": "Funnels & Websites | Creating Categories in the Navigation Menu",
+      "category": "sites",
+      "folder": "퍼널-웹사이트",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/06-사이트/퍼널-웹사이트/funnels-websites-creating-categories-in-the-navigation-menu.md",
+      "source_modified": "Fri, 18 Jul, 2025 at 12:55 PM",
+      "checksum": "b51f8718dd588b2e",
+      "translated_at": "2026-08-11",
+      "qa_passed": true
+    },
+    "78ff20ad6ed4": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/48001156626-disabling-search-engines-from-indexing-your-website-funnel-page-using-custom-tag",
+      "title_en": "Disabling Search Engines from Indexing your Website/Funnel Page using Custom Tag",
+      "category": "sites",
+      "folder": "퍼널-웹사이트",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/06-사이트/퍼널-웹사이트/disabling-search-engines-from-indexing-your-website-funnel-page-using-custom-tag.md",
+      "source_modified": "Thu, 3 Sep, 2020 at  9:38 AM",
+      "checksum": "32a7024838257f59",
+      "translated_at": "2026-08-11",
+      "qa_passed": true
+    },
+    "ad42db75237f": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000007809-analytics-for-external-tracking",
+      "title_en": "Analytics for External Tracking",
+      "category": "sites",
+      "folder": "Analytics (Funnels, Websites, &amp; QR Codes)",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/06-사이트/Analytics (Funnels, Websites, &amp; QR Codes)/analytics-for-external-tracking.md",
+      "source_modified": "Mon, 4 May, 2026 at  8:31 AM",
+      "checksum": "e557836070faa750",
+      "translated_at": "2026-08-11",
+      "qa_passed": true
+    },
+    "1912aba245db": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000005560-the-complete-guide-to-the-leadconnector-lc-wordpress-plugin",
+      "title_en": "The Complete Guide to the LeadConnector (LC) WordPress Plugin",
+      "category": "sites",
+      "folder": "워드프레스",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/06-사이트/워드프레스/the-complete-guide-to-the-leadconnector-lc-wordpress-plugin.md",
+      "source_modified": "Thu, 9 Jul, 2026 at  5:49 AM",
+      "checksum": "35008035caaaf438",
+      "translated_at": "2026-08-11",
+      "qa_passed": false
+    },
+    "8cbe72a90eab": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000008402-unified-client-portal-experience",
+      "title_en": "Unified Client Portal Experience",
+      "category": "sites",
+      "folder": "클라이언트-포털",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/06-사이트/클라이언트-포털/unified-client-portal-experience.md",
+      "source_modified": "Sat, 8 Aug, 2026 at 11:23 PM",
+      "checksum": "775588b1f75e8eeb",
+      "translated_at": "2026-08-11",
+      "qa_passed": false
+    },
+    "c151ea58b256": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000003739-how-to-use-address-auto-complete-in-highlevel-forms-and-surveys",
+      "title_en": "How to Use Address Auto-Complete in HighLevel Forms and Surveys",
+      "category": "sites",
+      "folder": "폼",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/06-사이트/폼/how-to-use-address-auto-complete-in-highlevel-forms-and-surveys.md",
+      "source_modified": "Wed, 15 Oct, 2025 at  8:32 AM",
+      "checksum": "0244a82af5db8f2b",
+      "translated_at": "2026-08-11",
+      "qa_passed": false
+    },
+    "ca06b51f15f6": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000008305-save-progress-for-forms-surveys-quizzes",
+      "title_en": "Save Progress for Forms, Surveys & Quizzes",
+      "category": "sites",
+      "folder": "설문",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/06-사이트/설문/save-progress-for-forms-surveys-quizzes.md",
+      "source_modified": "Wed, 29 Jul, 2026 at 11:35 AM",
+      "checksum": "a5aa19ffb22d4022",
+      "translated_at": "2026-08-11",
+      "qa_passed": true
+    },
+    "1a96e1991284": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000008035-individual-category-result-personalization-for-personality-quizzes",
+      "title_en": "Individual Category Result Personalization for Personality Quizzes",
+      "category": "sites",
+      "folder": "퀴즈",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/06-사이트/퀴즈/individual-category-result-personalization-for-personality-quizzes.md",
+      "source_modified": "Mon, 1 Jun, 2026 at 10:33 AM",
+      "checksum": "f8eacaf02d58b94b",
+      "translated_at": "2026-08-11",
+      "qa_passed": true
+    },
+    "7bee7ab441cb": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000005812-notion-integration-with-highlevel",
+      "title_en": "Notion Integration with HighLevel",
+      "category": "workflows",
+      "folder": "시작하기",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/07-워크플로우/시작하기/notion-integration-with-highlevel.md",
+      "source_modified": "Tue, 21 Oct, 2025 at  7:42 AM",
+      "checksum": "054ed16c1c385c9b",
+      "translated_at": "2026-08-11",
+      "qa_passed": false
+    },
+    "a66450a2aacd": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000002046-how-to-use-live-chat-triggers-and-actions",
+      "title_en": "How to Use Live Chat Triggers and Actions",
+      "category": "workflows",
+      "folder": "트리거",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/07-워크플로우/트리거/how-to-use-live-chat-triggers-and-actions.md",
+      "source_modified": "Mon, 26 Feb, 2024 at  9:51 AM",
+      "checksum": "b772947faae8213d",
+      "translated_at": "2026-08-11",
+      "qa_passed": true
+    },
+    "53c0b582f1b1": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000003201-workflow-trigger-messaging-error-code-sms",
+      "title_en": "Workflow Trigger - Messaging Error Code - SMS",
+      "category": "workflows",
+      "folder": "트리거",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/07-워크플로우/트리거/workflow-trigger-messaging-error-code-sms.md",
+      "source_modified": "Tue, 27 May, 2025 at  6:29 AM",
+      "checksum": "1744ed44bc09fa7e",
+      "translated_at": "2026-08-11",
+      "qa_passed": false
+    },
+    "072e3656024a": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000003495-workflow-trigger-task-completed",
+      "title_en": "Workflow Trigger - Task Completed",
+      "category": "workflows",
+      "folder": "트리거",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/07-워크플로우/트리거/workflow-trigger-task-completed.md",
+      "source_modified": "Wed, 18 Sep, 2024 at  3:32 AM",
+      "checksum": "a9dda3ce0595ebae",
+      "translated_at": "2026-08-11",
+      "qa_passed": false
+    },
+    "f8908ac49303": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000008196-workflow-trigger-user-replied",
+      "title_en": "Workflow Trigger - User Replied",
+      "category": "workflows",
+      "folder": "Events Workflow Triggers",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/07-워크플로우/Events Workflow Triggers/workflow-trigger-user-replied.md",
+      "source_modified": "Fri, 10 Jul, 2026 at 11:19 AM",
+      "checksum": "bb92d27d61aba50e",
+      "translated_at": "2026-08-11",
+      "qa_passed": false
+    },
+    "4116cc023683": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000001466-workflow-action-array-formatter",
+      "title_en": "Workflow Action - Array Formatter",
+      "category": "workflows",
+      "folder": "Internal Tools Workflow Actions",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/07-워크플로우/Internal Tools Workflow Actions/workflow-action-array-formatter.md",
+      "source_modified": "Wed, 3 Jun, 2026 at  5:16 AM",
+      "checksum": "fc455f44e2297863",
+      "translated_at": "2026-08-11",
+      "qa_passed": false
+    },
+    "2d236d6fc69b": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000003821-workflow-action-update-conversation-ai-bot-and-status",
+      "title_en": "Workflow Action - Update Conversation AI Bot and Status",
+      "category": "workflows",
+      "folder": "Workflow AI Workflow Actions",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/07-워크플로우/Workflow AI Workflow Actions/workflow-action-update-conversation-ai-bot-and-status.md",
+      "source_modified": "Tue, 2 Jun, 2026 at  6:38 AM",
+      "checksum": "4ccc62c143730820",
+      "translated_at": "2026-08-11",
+      "qa_passed": false
+    },
+    "b3a1b25a7d86": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000008182-how-to-parse-emails-using-ai-extract-data-action",
+      "title_en": "How to Parse Emails Using AI Extract Data Action",
+      "category": "workflows",
+      "folder": "Workflow AI Workflow Actions",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/07-워크플로우/Workflow AI Workflow Actions/how-to-parse-emails-using-ai-extract-data-action.md",
+      "source_modified": "Fri, 3 Jul, 2026 at  9:49 AM",
+      "checksum": "d6124ce2c0bca3c7",
+      "translated_at": "2026-08-11",
+      "qa_passed": true
+    },
+    "513d5689a9fd": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000007884-user-lifecycle-events-via-webhooks",
+      "title_en": "User Lifecycle Events via Webhooks",
+      "category": "workflows",
+      "folder": "Webhooks Workflow Actions",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/07-워크플로우/Webhooks Workflow Actions/user-lifecycle-events-via-webhooks.md",
+      "source_modified": "Sat, 9 May, 2026 at 11:15 PM",
+      "checksum": "0e2ea292ad6e1fc5",
+      "translated_at": "2026-08-11",
+      "qa_passed": false
     }
   }
 }
