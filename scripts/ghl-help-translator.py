@@ -81,8 +81,10 @@ LC_TIER_MAP = {
     ],
 }
 
-MODEL = "claude-sonnet-4-20250514"
-MAX_TOKENS = 8000
+MODEL = "claude-sonnet-5"
+# 기존 번역본 2,658개 실측(sonnet-5 토크나이저): 중앙값 2.8k / p90 5.8k / p99 8.7k 토큰.
+# 종전 8000은 p99를 넘겨 긴 아티클이 잘렸다. 비스트리밍 HTTP 타임아웃 권장 상한이 ~16k.
+MAX_TOKENS = 16000
 DELAY = 2  # API rate limit (초)
 FETCH_DELAY = 1  # 웹 fetch rate limit (초)
 
@@ -1030,6 +1032,8 @@ def translate_article(client, article, system_prompt):
     try:
         response = client.messages.create(
             model=MODEL, max_tokens=MAX_TOKENS,
+            # sonnet-5는 thinking 생략 시 적응형 사고가 기본 활성 — 명시적으로 끈다
+            thinking={"type": "disabled"},
             system=system_prompt,
             messages=[{"role": "user", "content": user_prompt}]
         )
