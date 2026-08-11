@@ -14,7 +14,7 @@ DOM 교체 사전: TreeWalker로 텍스트 노드 직접 번역
   python3 build-dashboard-ko.py --stats   # 통계만
 """
 
-import json, os, re, subprocess, sys, argparse
+import json, os, subprocess, sys, argparse
 from pathlib import Path
 
 # ── 경로 ────────────────────────────────────────────────────────
@@ -35,48 +35,25 @@ KO_FILE    = _repo_ko if _repo_ko.exists() else DATA / "ghl-i18n-ko.json"
 VERSION    = "5.0.0"   # DOM-only 빌드 (locale 주입 제거)
 
 # ── 기존 dashboard-ko.js에서 딕셔너리 추출 ──────────────────────
-def _sanitize_json_strings(raw: str) -> str:
-    """Escape bare control characters inside JSON string values."""
-    result = []
-    in_string = False
-    escaped = False
-    for ch in raw:
-        if escaped:
-            result.append(ch)
-            escaped = False
-        elif ch == '\\':
-            result.append(ch)
-            escaped = True
-        elif ch == '"':
-            result.append(ch)
-            in_string = not in_string
-        elif in_string and ord(ch) < 0x20:
-            if ch == '\n':   result.append('\\n')
-            elif ch == '\r': result.append('\\r')
-            elif ch == '\t': result.append('\\t')
-            else:            result.append(f'\\u{ord(ch):04x}')
-        else:
-            result.append(ch)
-    return ''.join(result)
-
-
 def load_existing_dict() -> dict:
+    """dashboard-ko.js의 `var t={...}` 사전을 읽어들인다.
+
+    정규식으로 블록을 오려내면 안 된다: 번역문 안의 `};`(예: 특수문자 목록
+    "!@#$%^&*()_+-=[]{};':\"\\|,./?")가 비탐욕 매치를 조기 종료시켜 사전이
+    중간에서 잘리고, 문자열 속 `//`(http:// 등)는 주석 제거에 훼손된다.
+    JSON 디코더에 시작 위치만 주고 스스로 끝을 찾게 하면 두 문제가 모두 사라진다.
+    strict=False는 문자열 안의 raw 제어문자도 허용한다.
+    """
     if not JS_SRC.exists():
         return {}
     src = JS_SRC.read_text(encoding="utf-8")
-    m = re.search(r'var t=(\{.*?\});', src, re.DOTALL)
-    if not m:
+    marker = "var t="
+    i = src.find(marker)
+    if i < 0:
         return {}
-    raw = m.group(1)
-    raw = re.sub(r'//[^\n]*', '', raw)
-    raw = re.sub(r',\s*([}\]])', r'\1', raw)
     try:
-        return json.loads(raw)
-    except Exception:
-        pass
-    # fallback: sanitize bare control chars and retry
-    try:
-        return json.loads(_sanitize_json_strings(raw))
+        obj, _ = json.JSONDecoder(strict=False).raw_decode(src, i + len(marker))
+        return obj
     except Exception as e:
         print(f"⚠️  기존 딕셔너리 파싱 실패: {e}")
         return {}
