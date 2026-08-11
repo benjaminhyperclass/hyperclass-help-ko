@@ -29,7 +29,7 @@ INPUT_FILE  = DATA / "ghl-i18n-en.json"
 OUTPUT_FILE = DATA / "ghl-i18n-ko.json"
 PROGRESS    = DATA / "i18n-progress.json"
 
-MODEL       = "claude-sonnet-4-20250514"
+MODEL       = "claude-sonnet-5"
 BATCH_SIZE  = 100
 MAX_RETRIES = 3
 
@@ -124,7 +124,10 @@ def translate_batch(client: anthropic.Anthropic, items: list[tuple[str, str]]) -
         try:
             resp = client.messages.create(
                 model=MODEL,
-                max_tokens=4096,
+                max_tokens=16000,   # 새 토크나이저(+~30%) 대응 여유
+                # Sonnet 5는 thinking 생략 시 적응형 사고가 기본 활성 — 용어집 기반
+                # UI 단문 번역엔 불필요하므로 명시적으로 끈다 (2026-08-11 프로브로 수용 확인)
+                thinking={"type": "disabled"},
                 messages=[{"role": "user", "content": prompt}]
             )
             raw = resp.content[0].text.strip()
