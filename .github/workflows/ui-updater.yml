@@ -232,30 +232,39 @@ jobs:
           inputs.mode == 'build-only'
         run: |
           python3 - << 'PYEOF'
-          import sys, os
+          import sys, os, importlib.util
           sys.path.insert(0, 'scripts')
           from whitelabel import whitelabel_check
 
-          violations = []
-          for f in ['js/dashboard-ko.js']:
-              if os.path.exists(f):
-                  with open(f, encoding='utf-8') as fh:
-                      v = whitelabel_check(fh.read())
-                  if v:
-                      violations.extend(v)
-                      for x in v[:5]:
-                          print(f'⚠️  [{x["type"]}] {x["context"][:60]}')
-                  else:
-                      print(f'✅ {f}: 위반 없음')
+          # ⚠️ 파일 원문이 아니라 "한국어 값"만 검사한다.
+          # 영문 키는 GHL 렌더링 원문과의 매칭 앵커라 불가침이며, 그중 74건은
+          # 원래 GoHighLevel/HighLevel을 포함한다. 파일 전체를 검사하면 키가 걸려
+          # 고칠 수 없는 위반으로 모든 배포가 영구히 막힌다.
+          _s = importlib.util.spec_from_file_location('b', 'scripts/build-dashboard-ko.py')
+          _b = importlib.util.module_from_spec(_s); _s.loader.exec_module(_b)
+          dom = _b.load_existing_dict()
 
-          summary = f'## JS 화이트라벨 검증\n위반: {len(violations)}건'
+          # 예외 등재 값(data/whitelabel-exceptions.json)은 위반으로 세지 않는다
+          from whitelabel import is_exception
+          violations = []
+          for k, v in dom.items():
+              if is_exception(v):
+                  continue
+              for x in whitelabel_check(v):
+                  x['context'] = f'{k[:40]} → {v[:60]}'
+                  violations.append(x)
+
+          print(f'검사 값 {len(dom):,}개 / 위반 {len(violations)}건')
+          for x in violations[:5]:
+              print(f'⚠️  [{x["type"]}] {x["context"]}')
+
+          summary = f'## JS 화이트라벨 검증 (한국어 값 {len(dom):,}개)\n위반: {len(violations)}건'
           summary += '\n✅ 이상 없음' if not violations else f'\n❌ {len(violations)}건 — 배포 중단'
           with open(os.environ.get('GITHUB_STEP_SUMMARY', '/dev/null'), 'a') as f:
               f.write(summary + '\n')
 
-          # 하드 게이트 (2026-08-12 승격) — 종전엔 경고만 찍고 배포가 통과해
-          # 브랜드가 새어나간 한국어 값 41건이 라이브에 올라갔다.
-          # ⚠️ 승격 전제: 기존 위반을 먼저 0으로 만들 것. 아니면 모든 배포가 즉시 막힌다.
+          # 하드 게이트 (2026-08-12 승격) — 종전엔 경고만 찍어 브랜드가 새어나간
+          # 한국어 값 41건이 라이브에 올라갔다. 승격 전 값 교정을 먼저 끝냈다.
           if violations:
               print(f'❌ 화이트라벨 위반 {len(violations)}건 — 빌드를 중단합니다.')
               sys.exit(1)
@@ -294,6 +303,9 @@ jobs:
           curl -sf "https://purge.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@main/js/dashboard-ko.min.js" || true
           curl -sf "https://purge.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@main/js/dashboard-ko.js" || true
           curl -sf "https://purge.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@main/js/version.json" || true
+          # 크롬 확장이 data/*.json을 직접 fetch하므로 함께 퍼지해야 스테일을 막는다
+          curl -sf "https://purge.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@main/data/ghl-i18n-ko.json" || true
+          curl -sf "https://purge.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@main/data/manual-dict-v401.json" || true
           echo "## CDN 퍼지 완료" >> $GITHUB_STEP_SUMMARY
 
       # ── 요약 ────────────────────────────────────────────────────

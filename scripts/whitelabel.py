@@ -48,6 +48,35 @@ PROTECTED_URL_PATTERNS = [
 ]
 
 
+def load_exceptions() -> list:
+    """검사·치환에서 제외할 값 목록 (data/whitelabel-exceptions.json).
+
+    사용자 입력 예시 URL처럼 브랜드 도메인을 바꾸면 안내가 틀어지는 경우를 등재한다.
+    """
+    import json, os
+    p = os.path.join(os.path.dirname(os.path.abspath(__file__)),
+                     '..', 'data', 'whitelabel-exceptions.json')
+    try:
+        with open(os.path.normpath(p), encoding='utf-8') as f:
+            return [x['값'] for x in json.load(f).get('항목', [])]
+    except Exception:
+        return []
+
+
+_EXCEPTIONS = load_exceptions()
+
+
+def is_exception(text: str) -> bool:
+    return text.strip() in _EXCEPTIONS
+
+
+def _protect_exceptions(text: str, save) -> str:
+    for e in _EXCEPTIONS:
+        if e in text:
+            text = text.replace(e, save(type('M', (), {'group': lambda s, e=e: e})()))
+    return text
+
+
 def whitelabel_fix(text: str) -> str:
     """코드 블록과 API URL을 보호하면서 브랜딩 자동 교체"""
     protected = []
@@ -55,6 +84,9 @@ def whitelabel_fix(text: str) -> str:
     def save(match):
         protected.append(match.group())
         return f'__P{len(protected)-1}__'
+
+    # 예외 등재 문자열 보호 (data/whitelabel-exceptions.json)
+    text = _protect_exceptions(text, save)
 
     # 코드 블록 보호
     result = re.sub(r'```.*?```', save, text, flags=re.DOTALL)
@@ -74,7 +106,13 @@ def whitelabel_fix(text: str) -> str:
     # 브랜드명 교체
     result = result.replace('GoHighLevel', '하이퍼클래스')
     result = result.replace('HighLevel', '하이퍼클래스')
-    result = re.sub(r'\bGHL\b', '하이퍼클래스', result)
+    # 대소문자 변형 — GHL UI에 'Highlevel'(소문자 l) 표기가 섞여 있어
+    # 'HighLevel'만 치환하던 종전 규칙이 이를 놓쳤다 (2026-08-12).
+    # 경계는 \b가 아니라 ASCII 문자 전후로 판정한다 — 한글도 단어 문자라
+    # '\bHighlevel\b'는 'Highlevel의'처럼 한글이 붙으면 매칭에 실패한다.
+    result = re.sub(r'(?<![A-Za-z])Highlevel(?![A-Za-z])', '하이퍼클래스', result)
+    result = re.sub(r'(?<![A-Za-z])highlevel(?![A-Za-z])', '하이퍼클래스', result)
+    result = re.sub(r'(?<![A-Za-z])GHL(?![A-Za-z])', '하이퍼클래스', result)
     result = result.replace('LeadConnector', '하이퍼클래스')
 
     # URL 교체
@@ -82,6 +120,8 @@ def whitelabel_fix(text: str) -> str:
     result = result.replace('help.leadconnectorhq.com', 'hyperclass.gitbook.io/hyperclass-docs')
     result = result.replace('help.hyperclass.ai', 'hyperclass.gitbook.io/hyperclass-docs')
     result = result.replace('www.gohighlevel.com', 'hyperclass.ai')
+    # 보호 목록·예외에 없는 나머지 *.gohighlevel.com 서브도메인 (2026-08-12)
+    result = re.sub(r'\b[\w-]+\.gohighlevel\.com\b', 'hyperclass.ai', result)
 
     # 보호 블록 복원
     for i, block in enumerate(protected):
