@@ -28561,5 +28561,11 @@
   "💰 ${amount}": "💰 ${amount}",
   "🔒 Your data is secure. We only access ads data you explicitly authorize and never store your Google credentials.": "🔒 회원님의 데이터는 안전합니다. 명시적으로 승인한 광고 데이터에만 접근하며, Google 계정 정보는 절대 저장하지 않습니다.",
   "🔒 your data is secure. We only access analytics data you explicitly authorize and never store your Google credentials.": "🔒 회원님의 데이터는 안전합니다. 명시적으로 승인한 분석 데이터에만 접근하며, Google 계정 정보는 절대 저장하지 않습니다.",
-  "🤖 {agent}": "🤖 {agent}"
+  "🤖 {agent}": "🤖 {agent}",
+  "Activate AI for MORE Subaccounts": "더 많은 서브 계정에 AI 활성화",
+  "Alternative text for image not provided": "이미지에 대한 대체 텍스트가 제공되지 않았습니다",
+  "Collapse sidebar": "사이드바 접기",
+  "Contains list of all leads, their details, and specifications": "모든 잠재고객 목록과 상세 정보 및 세부 사항 포함",
+  "Number Pools": "번호 풀",
+  "You're competing for a piece of the $100K prize pool. Every sub-account you activate earns points.": "총 $100K 상금 풀을 두고 경쟁하고 있습니다. 서브 계정을 활성화할 때마다 포인트가 적립됩니다."
 }

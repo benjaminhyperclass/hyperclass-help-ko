@@ -1,7 +1,7 @@
 // Hyperclass — GHL 대시보드 한글화
 // Version: 5.0.0
-// DOM translations: 28796
-// i18n keys: 28563
+// DOM translations: 28801
+// i18n keys: 28569
 // Auto-built by build-dashboard-ko.py
 
 (function(){
@@ -742,6 +742,7 @@ var t={" (Primary)":"(기본)",
   "Actions Triggered":"트리거된 액션",
   "Activate":"활성화",
   "Activate Ads Manager":"광고 관리자 활성화",
+  "Activate AI for MORE Subaccounts":"더 많은 서브 계정에 AI 활성화",
   "Activate call recording and play a short message to the caller.":"통화 녹음을 활성화하고 발신자에게 짧은 메시지를 재생합니다.",
   "Activate conversation AI for your agency today!":"지금 에이전시를 위한 대화 AI를 활성화하세요!",
   "Activate Feature":"기능 활성화",
@@ -1940,6 +1941,7 @@ var t={" (Primary)":"(기본)",
   "Alteast 1 sub-account id is required.":"최소 1개의 서브 계정 ID가 필요합니다.",
   "Alternative Fuel Station":"대체연료 충전소",
   "Alternative Medicine Practitioner":"대체의학 전문가",
+  "Alternative text for image not provided":"이미지에 대한 대체 텍스트가 제공되지 않았습니다",
   "Alternator Supplier":"알터네이터 공급업체",
   "Aluminum Frames Supplier":"알루미늄 프레임 공급업체",
   "Aluminum Supplier":"알루미늄 공급업체",
@@ -5188,6 +5190,7 @@ var t={" (Primary)":"(기본)",
   "Collapse Inbox Panel":"받은 편지함 패널 접기",
   "Collapse JavaScript":"JavaScript 접기",
   "Collapse script view":"스크립트 보기 접기",
+  "Collapse sidebar":"사이드바 접기",
   "Collapse stage":"단계 접기",
   "Collect a Video Testimonial":"비디오 후기 수집하기",
   "Collect from customer":"고객으로부터 수집",
@@ -5913,6 +5916,7 @@ var t={" (Primary)":"(기본)",
   "Contains exactly":"정확히 포함",
   "Contains list of all businesses, their details, and contact information.":"모든 비즈니스와 상세 정보 및 연락처 정보의 목록을 포함해요.",
   "Contains list of all deals, their stages, statuses and pipeline progress.":"모든 딜과 스테이지, 상태 및 파이프라인 진행 상황의 목록을 포함해요.",
+  "Contains list of all leads, their details, and specifications":"모든 잠재고객 목록과 상세 정보 및 세부 사항 포함",
   "Contains list of all leads, their details, and specifications.":"모든 리드와 상세 정보 및 사양의 목록을 포함해요.",
   "Contains phrase":"문구 포함",
   "Contemporary Louisiana Restaurant":"컨템포러리 루이지애나 레스토랑",
@@ -28070,6 +28074,7 @@ var t={" (Primary)":"(기본)",
   "You're all set to publish. Schedule your first post to go live.":"게시할 준비가 완료되었습니다. 첫 게시물을 예약하여 발행하세요.",
   "You're all set!":"모든 준비가 완료되었습니다!",
   "You're all set! Pick your first task to begin - each has a short tutorial video to guide you through.":"모든 준비가 완료되었습니다! 첫 번째 작업을 선택하여 시작하세요 - 각 작업에는 안내를 위한 짧은 튜토리얼 영상이 있습니다.",
+  "You're competing for a piece of the $100K prize pool. Every sub-account you activate earns points.":"총 $100K 상금 풀을 두고 경쟁하고 있습니다. 서브 계정을 활성화할 때마다 포인트가 적립됩니다.",
   "You're Crushing It!":"대단해요!",
   "You're Doing Great!":"정말 잘하고 있어요!",
   "You're Making Progress!":"잘 진행되고 있어요!",
@@ -28816,6 +28821,17 @@ function rDoc(doc){
   doc.querySelectorAll('input[placeholder],textarea[placeholder]').forEach(function(el){
     var ph=el.placeholder.trim();
     if(t[ph])el.placeholder=t[ph];
+  });
+  // 속성 치환 — 사전 정확 일치일 때만 (title엔 사용자 데이터가 들어올 수 있음).
+  // rDoc 안에 두어 rBurst·MutationObserver 재실행 경로를 그대로 탄다.
+  // DNT 토큰은 빌드 단계에서 사전에서 제거되므로 여기서도 자동 보호된다.
+  ['aria-label','title','alt'].forEach(function(a){
+    doc.querySelectorAll('['+a+']').forEach(function(el){
+      var v=el.getAttribute(a);
+      if(!v)return;
+      var k=v.trim();
+      if(k&&t[k]&&t[k]!==k)el.setAttribute(a,t[k]);
+    });
   });
 }
 
