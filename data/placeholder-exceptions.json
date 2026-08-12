@@ -49,6 +49,7 @@
       "Automatically fill in {contactLabel} information for returning customers.\nNote: if a {contactLabel} uses the same browser for multiple bookings for different individuals, their information will be overwritten each time.",
       "The <b>Contact detail page customization</b> feature gives admins full control over how contact information is displayed to their teams. Tailor the layout to match your users' workflow — show only what matters and hide what doesn't.\n\nAdmins can <b>drag and drop modules</b> across panels, switch between <b>2-panel and 3-panel views</b>, <b>rename folders</b> for clarity, and <b>show or hide fields</b> for their users. Create up to 5 distinct views and assign specific users to each — ensuring every user sees the most relevant contact data.",
       "The “View form submissions” feature adds a <b>Forms</b> tab inside the appointment modal, allowing you to view responses from custom forms without switching modules. This makes it easier to access detailed booking information in one place.\n1. Only available for <b>appointments created on or after 04/09/2025</b>.\n2. Supports <b>custom forms only</b> (submissions from the default booking form are not shown yet)."
-    ]
+    ],
+    "_결과_2026-08-12": "재번역 결과: 6건 중 5건 identity 폴백, 1건은 배치 번호 충돌로 **다른 항목의 번역문이 오배정**되어 identity로 되돌림. 원인은 모델이 아니라 배치 형식 — 콘텐츠 자체가 '1. 2. 3.'로 시작해 배치 번호와 충돌하고, 파서가 한 줄만 잡는다. 여러 줄 콘텐츠는 현행 배치 형식에서 처리 불가."
   }
 }
