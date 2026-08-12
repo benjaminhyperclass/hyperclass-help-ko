@@ -152,6 +152,23 @@ def main():
     for _tok in ("DELETE", "CONFIRM", "REMOVE", "CANCEL", "TRANSFER", "DISABLE", "RESET"):
         dom_dict.pop(_tok, None)
 
+    # 화이트라벨 후처리 — Help 경로에만 있고 UI 경로엔 없어서 브랜드가 새어나갔다.
+    # ⚠️ 값(한국어)만 치환한다. 영문 키는 GHL 렌더링 원문과의 매칭 앵커라 불가침.
+    try:
+        import importlib.util as _ilu
+        _wl_path = Path(__file__).resolve().parent / "whitelabel.py"
+        if _wl_path.exists():
+            _spec = _ilu.spec_from_file_location("whitelabel", _wl_path)
+            _wl = _ilu.module_from_spec(_spec); _spec.loader.exec_module(_wl)
+            _n = 0
+            for _k, _v in list(dom_dict.items()):
+                _fixed = _wl.whitelabel_fix(_v)
+                if _fixed != _v:
+                    dom_dict[_k] = _fixed; _n += 1
+            print(f"화이트라벨 값 교정: {_n:,}건")
+    except Exception as _e:
+        print(f"⚠️  화이트라벨 후처리 실패: {_e}")
+
     print(f"DOM 교체 사전: {len(dom_dict):,}개")
 
     if args.stats:

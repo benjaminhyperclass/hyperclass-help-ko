@@ -249,9 +249,16 @@ jobs:
                       print(f'✅ {f}: 위반 없음')
 
           summary = f'## JS 화이트라벨 검증\n위반: {len(violations)}건'
-          summary += '\n✅ 이상 없음' if not violations else f'\n⚠️  {len(violations)}건'
+          summary += '\n✅ 이상 없음' if not violations else f'\n❌ {len(violations)}건 — 배포 중단'
           with open(os.environ.get('GITHUB_STEP_SUMMARY', '/dev/null'), 'a') as f:
               f.write(summary + '\n')
+
+          # 하드 게이트 (2026-08-12 승격) — 종전엔 경고만 찍고 배포가 통과해
+          # 브랜드가 새어나간 한국어 값 41건이 라이브에 올라갔다.
+          # ⚠️ 승격 전제: 기존 위반을 먼저 0으로 만들 것. 아니면 모든 배포가 즉시 막힌다.
+          if violations:
+              print(f'❌ 화이트라벨 위반 {len(violations)}건 — 빌드를 중단합니다.')
+              sys.exit(1)
           PYEOF
 
       # ── [Step 5] 커밋 & 푸시 ─────────────────────────────────────

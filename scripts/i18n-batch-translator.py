@@ -98,7 +98,71 @@ def apply_glossary(text: str) -> str:
     return text
 
 
+# ── 플레이스홀더 보존 검증 ───────────────────────────────────────
+# GHL이 런타임에 치환하는 변수/태그. 번역되면 치환이 실패해 화면에 깨져 보인다.
+PH_RE = re.compile(r"\{\{.*?\}\}|\{[^{}]*\}|</?[a-zA-Z][^>]*>")
+
+def placeholders(s: str) -> list:
+    return sorted(PH_RE.findall(s))
+
+def ph_ok(en: str, ko: str) -> bool:
+    """플레이스홀더 보존 검사.
+
+    기본은 다중집합 비교 — 개수가 줄어드는 변수 소실까지 잡는다.
+    단 `|`로 단/복수형을 나눈 원문("{count} Reply | {count} Replies")은
+    한국어에 복수형이 없어 하나로 합치는 것이 올바른 번역이므로,
+    그 경우에만 집합 비교로 완화한다. (전면 완화하면 변수 소실을 놓친다)
+    """
+    a, b = placeholders(en), placeholders(ko)
+    if "|" in en:
+        return set(a) == set(b)
+    return a == b
+
+
 # ── 번역 배치 ────────────────────────────────────────────────────
+def _enforce_placeholders(client, items, result: dict) -> dict:
+    """프롬프트만 믿지 않고 코드로 강제: 불일치 1회 재시도 → 그래도 불일치면 영문 원문 유지.
+
+    영어로 보이는 편이 {기회}처럼 깨진 변수가 노출되는 것보다 낫다.
+    """
+    en_of = dict(items)
+    bad = [k for k, ko in result.items() if not ph_ok(en_of[k], ko)]
+    if not bad:
+        return result
+
+    print(f"    ⚠️  플레이스홀더 불일치 {len(bad)}건 — 재시도")
+    retry_items = [(k, en_of[k]) for k in bad]
+    numbered = "\n".join(f"{i+1}. {v}" for i, (_, v) in enumerate(retry_items))
+    prompt = (f"""아래 UI 텍스트를 한국어로 번역하세요.
+
+절대 규칙: 중괄호 변수({{...}} / {{{{...}}}})와 HTML 태그는 문자 하나도 바꾸지 말 것.
+중괄호 안의 영어 단어는 변수명이므로 번역 금지. 예) "{{opportunity}}" → "{{opportunity}}" (O), "{{기회}}" (X)
+
+번호만 붙여서 번역 결과만 출력:
+
+{numbered}""")
+    try:
+        resp = client.messages.create(model=MODEL, max_tokens=16000,
+                                      thinking={"type": "disabled"},
+                                      messages=[{"role": "user", "content": prompt}])
+        raw = next(b.text for b in resp.content if b.type == "text").strip()
+        for i, (key, en) in enumerate(retry_items):
+            m = re.search(rf'^{i+1}[.)]\s*(.+)$', raw, re.MULTILINE)
+            if m:
+                ko = apply_glossary(m.group(1).strip())
+                if ph_ok(en, ko):
+                    result[key] = ko
+    except Exception as e:
+        print(f"    재시도 실패: {type(e).__name__}")
+
+    still = [k for k in bad if not ph_ok(en_of[k], result.get(k, ""))]
+    for k in still:
+        result[k] = en_of[k]          # identity — 번역 폐기, 영문 유지
+    if still:
+        print(f"    ⚠️  재시도 후에도 불일치 {len(still)}건 → 영문 원문 유지")
+    return result
+
+
 def translate_batch(client: anthropic.Anthropic, items: list[tuple[str, str]]) -> dict[str, str]:
     """items: [(i18n_key, english_value), ...] → {i18n_key: korean_value}"""
     numbered = "\n".join(f"{i+1}. {v}" for i, (_, v) in enumerate(items))
@@ -110,8 +174,16 @@ def translate_batch(client: anthropic.Anthropic, items: list[tuple[str, str]]) -
 
 규칙:
 - UI 버튼/메뉴/레이블에 적합한 자연스러운 한국어
-- 고유명사(API, SMTP, CRM, GoHighLevel 등)는 그대로 유지
-- {{name}}, {{count}} 같은 변수는 그대로 유지
+- 고유명사(API, SMTP, CRM 등)는 그대로 유지
+- 화이트라벨: 번역문에 GoHighLevel / HighLevel / LeadConnector 브랜드명을 쓰지 말고
+  '하이퍼클래스'로 옮길 것. 단 URL·API 엔드포인트·코드 안의 도메인은 그대로 둔다.
+- 플레이스홀더는 문자 하나도 바꾸지 말고 원형 그대로 유지할 것.
+  중괄호 안의 단어는 영어라도 절대 번역하지 않는다 — GHL이 런타임에 치환하는 변수명이라
+  번역하면 치환이 실패해 화면에 깨진 문자열이 노출된다.
+  대상: {{name}} {{count}} 같은 이중 중괄호, {opportunity} {contacts} 같은 단일 중괄호,
+  {{'@'}} 같은 리터럴, <strong> </a> 같은 HTML 태그.
+  예) "Add an {{opportunity}}" → "{{opportunity}} 추가"  (O)
+      "Add an {{opportunity}}" → "{{기회}} 추가"          (X — 변수명을 번역함)
 - 'Type X to confirm' 류 문장에서 따옴표 안 검증 토큰(DELETE, CONFIRM, REMOVE 등)은 영문 그대로 유지
 - 번호만 붙여서 번역 결과만 출력 (설명 없이)
 
@@ -139,7 +211,7 @@ def translate_batch(client: anthropic.Anthropic, items: list[tuple[str, str]]) -
                     ko = apply_glossary(m.group(1).strip())
                     result[key] = ko
             if len(result) >= len(items) * 0.85:
-                return result
+                return _enforce_placeholders(client, items, result)
             print(f"    파싱 {len(result)}/{len(items)}, 재시도 {attempt+1}...")
             time.sleep(2)
         except anthropic.RateLimitError:

@@ -1,0 +1,54 @@
+{
+  "_설명": "플레이스홀더 검증 판정 기록. 다음 검증에서 같은 분류 작업을 반복하지 않기 위한 것.",
+  "_생성": "2026-08-12 (1차 2,947건 배포 후 소급 교정 시점)",
+  "D_identity_되돌림": {
+    "_사유": "번역 중 변수가 사라지거나 개수가 어긋나 위치 매핑이 불가능한 건. 영문 원문으로 되돌렸다. **추후 재번역 후보** — 새 가드(ph_ok)가 붙었으므로 재번역 시 정상 처리될 가능성이 높다.",
+    "항목": [
+      " of {total} Submissions",
+      "<Deleted>",
+      "Hi {'{'}{'{'}contact.first_name{'}'}{'}'}",
+      "Successfully imported {count} color{plural}",
+      "Won {opportunities}",
+      "Won {opportunities} this month (for you)",
+      "Won {opportunities} value this month",
+      "Won {opportunities} value this month (for you)",
+      "Won {opportunity} value",
+      "You're unable to access {contactLabel} information at the moment. This might be because the {contactLabel} isn't assigned to you or {contactLabel} for this appointment is deleted. Please reach out to your admin for assistance.",
+      "{count, plural, one {# Day} other {# Days}}",
+      "{count} URL attachment{plural} failed to load. Do you want to continue?",
+      "{count} of the provided URL attachments {plural} not an image. This may cause errors within Twilio. Do you wish to save anyways?"
+    ]
+  },
+  "B_검사예외_정상": {
+    "_사유": "원문이 `|`로 단수/복수형을 나눈 형태. 한국어에는 복수형이 없어 하나로 합치는 것이 올바른 번역이다. 검사에서 불일치로 보여도 **정상이므로 교정 금지**. ph_ok가 `|` 포함 시 집합 비교로 완화해 통과시킨다.",
+    "항목": [
+      "At least 1 special character from: !@#$%^&*()_+-=[]{};':\"\\|,./?",
+      "Nothing in {module} | Found 1 match in {module} | Found {count} matches in {module}",
+      "Nothing in {module} | Found 1 match in {module} — {top} | Found {count} matches in {module} — {top}",
+      "Smart tag {name} created for {count} pipeline | Smart tag {name} created for {count} pipelines",
+      "This tip will only auto-appear {count} more time. Click the value to open moving forward. | This tip will only auto-appear {count} more times. Click the value to open moving forward.",
+      "{'|'}",
+      "{count} Reply | {count} Replies",
+      "{count} change made | {count} changes made",
+      "{count} error | {count} errors",
+      "{count} file | {count} files",
+      "{count} filter | {count} filters",
+      "{count} line · UTF-8 | {count} lines · UTF-8",
+      "{count} page | {count} pages",
+      "{count} sub-account selected | {count} sub-accounts selected",
+      "{count} vote | {count} votes",
+      "{rating}/5 | {date}"
+    ]
+  },
+  "E_재번역_대상": {
+    "_사유": "다단계 안내문인데 1단계만 번역되고 중단된 건(내용 누락). 문자열 치환으로 못 고쳐 ko.json에서 삭제 → 파이프라인이 재번역. 새 프롬프트·가드의 시험대.",
+    "항목": [
+      "1. Go to <b>Calendars > Open an appointment</b>.\n2. If a <b>custom form</b> was submitted, you’ll see a <b>Forms</b> tab.\n3. Click to view responses in a structured format.",
+      "1. Go to <b>Contacts > Settings</b>.\n2. Click on <b>Customize contact detail view</b>.\n3. Start customizing contact views and assign them to your users.",
+      "1. Go to <b>Subaccount settings > Calendars > Connections > Add new</b>.\n2. Select <b>Google calendar</b> and click <b>Connect</b>.\n3. Choose your Google account and grant access.\n4. Repeat to connect <b>multiple calendars</b>, if needed.",
+      "Automatically fill in {contactLabel} information for returning customers.\nNote: if a {contactLabel} uses the same browser for multiple bookings for different individuals, their information will be overwritten each time.",
+      "The <b>Contact detail page customization</b> feature gives admins full control over how contact information is displayed to their teams. Tailor the layout to match your users' workflow — show only what matters and hide what doesn't.\n\nAdmins can <b>drag and drop modules</b> across panels, switch between <b>2-panel and 3-panel views</b>, <b>rename folders</b> for clarity, and <b>show or hide fields</b> for their users. Create up to 5 distinct views and assign specific users to each — ensuring every user sees the most relevant contact data.",
+      "The “View form submissions” feature adds a <b>Forms</b> tab inside the appointment modal, allowing you to view responses from custom forms without switching modules. This makes it easier to access detailed booking information in one place.\n1. Only available for <b>appointments created on or after 04/09/2025</b>.\n2. Supports <b>custom forms only</b> (submissions from the default booking form are not shown yet)."
+    ]
+  }
+}
