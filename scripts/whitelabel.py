@@ -114,6 +114,8 @@ def whitelabel_fix(text: str) -> str:
     result = re.sub(r'(?<![A-Za-z])highlevel(?![A-Za-z])', '하이퍼클래스', result)
     result = re.sub(r'(?<![A-Za-z])GHL(?![A-Za-z])', '하이퍼클래스', result)
     result = result.replace('LeadConnector', '하이퍼클래스')
+    result = re.sub(r'(?<![A-Za-z])Leadconnector(?![A-Za-z])', '하이퍼클래스', result)
+    result = re.sub(r'(?<![A-Za-z])leadconnector(?![A-Za-z])', '하이퍼클래스', result)
 
     # URL 교체
     result = result.replace('help.gohighlevel.com', 'hyperclass.gitbook.io/hyperclass-docs')

@@ -244,6 +244,30 @@ def load_output() -> dict:
     return {}
 
 def save_output(data: dict):
+    """ko.json 저장 — 저장 직전에 화이트라벨을 적용해 **원천을 청정하게** 유지한다.
+
+    빌드 산출물(dashboard-ko.js)에만 후처리를 걸어두면, ko.json을 CDN에서
+    직접 fetch하는 크롬 확장이 처리층을 통째로 우회한다(2026-08-12 발견).
+    배달 경로가 늘어날 때마다 규칙을 복제하는 대신 원천에서 한 번 처리한다.
+    ⚠️ 값만 교정하고 영문 키는 건드리지 않는다. 예외 등재분도 제외.
+    """
+    try:
+        import importlib.util as _ilu
+        _p = Path(__file__).resolve().parent / "whitelabel.py"
+        if _p.exists():
+            _s = _ilu.spec_from_file_location("whitelabel", _p)
+            _wl = _ilu.module_from_spec(_s); _s.loader.exec_module(_wl)
+            _n = 0
+            for _k, _v in list(data.items()):
+                if _wl.is_exception(_v):
+                    continue
+                _f = _wl.whitelabel_fix(_v)
+                if _f != _v:
+                    data[_k] = _f; _n += 1
+            if _n:
+                print(f"    화이트라벨 원천 교정: {_n}건")
+    except Exception as _e:
+        print(f"    ⚠️  화이트라벨 원천 교정 실패: {_e}")
     OUTPUT_FILE.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding="utf-8")
 
 

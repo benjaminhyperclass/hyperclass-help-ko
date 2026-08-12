@@ -246,19 +246,37 @@ jobs:
 
           # 예외 등재 값(data/whitelabel-exceptions.json)은 위반으로 세지 않는다
           from whitelabel import is_exception
-          violations = []
-          for k, v in dom.items():
-              if is_exception(v):
-                  continue
-              for x in whitelabel_check(v):
-                  x['context'] = f'{k[:40]} → {v[:60]}'
-                  violations.append(x)
+          import json as _json
 
-          print(f'검사 값 {len(dom):,}개 / 위반 {len(violations)}건')
+          # 빌드 산출물 + 원천 사전을 모두 검사한다.
+          # 크롬 확장이 data/*.json을 CDN에서 직접 fetch하므로, 빌드만 검사하면
+          # 그 경로가 검사망 밖에 남는다 (2026-08-12).
+          targets = {'dashboard-ko.js(사전)': dom}
+          for _p, _n in [('data/ghl-i18n-ko.json', 'ko.json'),
+                         ('data/manual-dict-v401.json', 'manual-dict')]:
+              if os.path.exists(_p):
+                  with open(_p, encoding='utf-8') as _f:
+                      targets[_n] = _json.load(_f)
+
+          violations = []
+          total = 0
+          for name, d in targets.items():
+              hit = []
+              for k, v in d.items():
+                  total += 1
+                  if is_exception(v):
+                      continue
+                  for x in whitelabel_check(v):
+                      x['context'] = f'[{name}] {k[:36]} → {v[:56]}'
+                      hit.append(x)
+              print(f'  {name}: 값 {len(d):,}개 / 위반 {len(hit)}건')
+              violations.extend(hit)
+
+          print(f'검사 값 {total:,}개 / 위반 {len(violations)}건')
           for x in violations[:5]:
               print(f'⚠️  [{x["type"]}] {x["context"]}')
 
-          summary = f'## JS 화이트라벨 검증 (한국어 값 {len(dom):,}개)\n위반: {len(violations)}건'
+          summary = f'## 화이트라벨 검증 (빌드+원천, 값 {total:,}개)\n위반: {len(violations)}건'
           summary += '\n✅ 이상 없음' if not violations else f'\n❌ {len(violations)}건 — 배포 중단'
           with open(os.environ.get('GITHUB_STEP_SUMMARY', '/dev/null'), 'a') as f:
               f.write(summary + '\n')
