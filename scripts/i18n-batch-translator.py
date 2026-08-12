@@ -180,7 +180,7 @@ def translate_batch(client: anthropic.Anthropic, items: list[tuple[str, str]]) -
 - 플레이스홀더는 문자 하나도 바꾸지 말고 원형 그대로 유지할 것.
   중괄호 안의 단어는 영어라도 절대 번역하지 않는다 — GHL이 런타임에 치환하는 변수명이라
   번역하면 치환이 실패해 화면에 깨진 문자열이 노출된다.
-  대상: {{name}} {{count}} 같은 이중 중괄호, {opportunity} {contacts} 같은 단일 중괄호,
+  대상: {{{{name}}}} {{{{count}}}} 같은 이중 중괄호, {{opportunity}} {{contacts}} 같은 단일 중괄호,
   {{'@'}} 같은 리터럴, <strong> </a> 같은 HTML 태그.
   예) "Add an {{opportunity}}" → "{{opportunity}} 추가"  (O)
       "Add an {{opportunity}}" → "{{기회}} 추가"          (X — 변수명을 번역함)
