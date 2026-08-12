@@ -1,5 +1,5 @@
 ---
-원문: https://help.gohighlevel.com/support/solutions/articles/155000006924-how-to-create-an-embedded-voice-ai-chat-widget
+원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000006924-how-to-create-an-embedded-voice-ai-chat-widget
 번역일: 2026-08-11
 카테고리: 06-사이트 > 채팅-위젯
 ---
@@ -110,7 +110,7 @@ Voice AI chat(음성 AI 채팅) 옵션을 선택하세요.
 
 선택적으로 **Additional Options(추가 옵션)**을 열어서 비즈니스 이름이나 컴플라이언스 푸터 같은 브랜딩 요소를 조정할 수 있어요. 오른쪽 미리보기 화면이 실시간으로 업데이트되면서 임베드형 위젯 디자인을 보여줘요.
 
-[채팅 위젯 커스터마이징에 대한 자세한 내용은 여기를 클릭하세요.](https://help.gohighlevel.com/en/support/solutions/articles/155000002960)
+[채팅 위젯 커스터마이징에 대한 자세한 내용은 여기를 클릭하세요.](https://hyperclass.gitbook.io/hyperclass-docs)
 
 ![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155073729682/original/QiZHVS1JXICxmOh_YgywBlIgO1QqePWucg.png?1781585894)
 
@@ -187,7 +187,7 @@ Code(코드) 블록 요소(Element)를 사용하면 사이트나 퍼널의 원�
 일부 컨트롤은 떠 있는 형태의 위젯에만 적용되기 때문에 자동으로 숨겨져요. Embedded/Inline 모드에서는 하이퍼클래스가 인라인 배치와 관련된 설정만 표시해줘요.
 
 **Q: 라이브 채팅(Live Chat) 위젯에도 Embedded/Inline 배치를 사용할 수 있나요?**
-네, 라이브 채팅에서도 임베드/인라인이 지원돼요. 자세한 내용은 [여기를 클릭하세요.](https://help.gohighlevel.com/en/support/solutions/articles/155000007601)
+네, 라이브 채팅에서도 임베드/인라인이 지원돼요. 자세한 내용은 [여기를 클릭하세요.](https://hyperclass.gitbook.io/hyperclass-docs)
 
 **Q: 어떤 채팅 위젯 유형이 Embedded/Inline 배치를 지원하나요?**
 

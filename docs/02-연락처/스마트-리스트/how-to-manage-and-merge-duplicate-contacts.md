@@ -1,5 +1,5 @@
 ---
-원문: https://help.gohighlevel.com/support/solutions/articles/48001202210-how-to-manage-and-merge-duplicate-contacts
+원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/48001202210-how-to-manage-and-merge-duplicate-contacts
 번역일: 2026-08-11
 카테고리: 02-연락처 > 스마트-리스트
 ---

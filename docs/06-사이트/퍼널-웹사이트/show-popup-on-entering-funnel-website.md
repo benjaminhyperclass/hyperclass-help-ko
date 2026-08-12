@@ -1,5 +1,5 @@
 ---
-원문: https://help.gohighlevel.com/support/solutions/articles/48001150093-show-popup-on-entering-funnel-website
+원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/48001150093-show-popup-on-entering-funnel-website
 번역일: 2026-08-11
 카테고리: 06-사이트 > 퍼널-웹사이트
 ---

@@ -1,5 +1,5 @@
 ---
-원문: https://help.gohighlevel.com/support/solutions/articles/155000008196-workflow-trigger-user-replied
+원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000008196-workflow-trigger-user-replied
 번역일: 2026-08-11
 카테고리: 07-워크플로우 > Events Workflow Triggers
 ---
@@ -135,7 +135,7 @@ Replied By(답장한 사람) 필터는 검색 가능한 단일 다중 선택 드
 - 제한 시간 내에 아무도 답장하지 않은 타임아웃 분기에는, 담당자나 매니저에게 알림 보내기, 할 일(Task) 생성하기, 내부 경고 발송하기 같은 에스컬레이션 액션을 추가하세요.
 - 담당자가 답장하는 즉시 리마인더나 육성(Nurture) 시퀀스를 중단하려면, User Replied(사용자 답장) 목표(Goal)를 추가해서 연락처가 남은 단계를 건너뛰도록 하세요.
 
-**참고**: 대기(Wait) 조건과 목표(Goal)는 각각 별도의 단계로 설정돼요. 전체 설정 방법은 [워크플로우 액션 - 대기(Wait)](https://help.gohighlevel.com/support/solutions/articles/155000002470-workflow-action-wait) 및 [워크플로우 액션 - 목표 이벤트(Goal Event)](https://help.gohighlevel.com/support/solutions/articles/155000003328-workflow-action-goal-event) 문서를 참고하세요.
+**참고**: 대기(Wait) 조건과 목표(Goal)는 각각 별도의 단계로 설정돼요. 전체 설정 방법은 [워크플로우 액션 - 대기(Wait)](../Internal-Tools-Workflow-Actions/workflow-action-wait.md) 및 [워크플로우 액션 - 목표 이벤트(Goal Event)](../액션/workflow-action-goal-event.md) 문서를 참고하세요.
 
 ## 자주 묻는 질문
 

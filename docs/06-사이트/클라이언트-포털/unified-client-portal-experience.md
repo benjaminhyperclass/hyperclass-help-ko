@@ -1,5 +1,5 @@
 ---
-원문: https://help.gohighlevel.com/support/solutions/articles/155000008402-unified-client-portal-experience
+원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000008402-unified-client-portal-experience
 번역일: 2026-08-11
 카테고리: 06-사이트 > 클라이언트-포털
 ---

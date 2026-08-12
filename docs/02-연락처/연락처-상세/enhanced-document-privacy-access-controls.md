@@ -1,5 +1,5 @@
 ---
-원문: https://help.gohighlevel.com/support/solutions/articles/155000008388-enhanced-document-privacy-access-controls
+원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000008388-enhanced-document-privacy-access-controls
 번역일: 2026-08-11
 카테고리: 02-연락처 > 연락처-상세
 ---

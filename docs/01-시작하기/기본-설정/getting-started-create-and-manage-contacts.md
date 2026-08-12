@@ -1,5 +1,5 @@
 ---
-원문: https://help.gohighlevel.com/support/solutions/articles/155000005055-getting-started-create-and-manage-contacts
+원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000005055-getting-started-create-and-manage-contacts
 번역일: 2026-08-11
 카테고리: 01-시작하기 > 기본-설정
 ---
@@ -12,7 +12,7 @@
 
 연락처 생성 및 관리는 CRM을 깔끔하고 유용하게 유지하는 데 있어 가장 중요한 부분 중 하나예요. 정확한 연락처 정보를 추가하고, 정보가 변경될 때 레코드를 업데이트하고, 더 이상 필요하지 않은 연락처를 삭제하면 팀이 신뢰할 수 있는 데이터를 기반으로 업무를 진행할 수 있어요.
 
-참고: 연락처 상세 페이지를 원하는 방식으로 커스터마이징하는 방법은 [연락처 상세 페이지 커스터마이징 방법](https://help.gohighlevel.com/en/support/solutions/articles/155000007588) 문서를 참고하세요.
+참고: 연락처 상세 페이지를 원하는 방식으로 커스터마이징하는 방법은 [연락처 상세 페이지 커스터마이징 방법](https://hyperclass.gitbook.io/hyperclass-docs) 문서를 참고하세요.
 
 - **연락처 생성**: 새로운 사람이나 리드(Lead)를 CRM에 추가하여 한 곳에서 추적하고 관리할 수 있어요.
 - **연락처 상세 정보 편집**: 이름, 전화번호, 이메일 주소 등의 정보를 최신 상태로 유지해요.
@@ -94,7 +94,7 @@
 여러 연락처를 등록해야 한다면 하나씩 수동으로 생성하는 것보다 연락처 가져오기(Import) 기능을 사용하는 것이 더 좋은 방법이에요.
 
 **Q: 연락처를 생성할 때 왜 다른 필드가 보이나요?**
-연락처 추가(Add Contact) 폼에 표시되는 필드는 추가된 [커스텀 필드(Custom Field)](https://help.gohighlevel.com/en/support/solutions/articles/48001161579)를 포함하여 계정 설정 방식에 따라 달라질 수 있어요.
+연락처 추가(Add Contact) 폼에 표시되는 필드는 추가된 [커스텀 필드(Custom Field)](https://hyperclass.gitbook.io/hyperclass-docs)를 포함하여 계정 설정 방식에 따라 달라질 수 있어요.
 
 **Q: 연락처를 삭제하면 어떻게 되나요?**
 연락처를 삭제하면 CRM에서 해당 레코드가 제거되며, 그 연락처와 연결된 다른 레코드, 캠페인, 워크플로우에도 영향을 줄 수 있어요.

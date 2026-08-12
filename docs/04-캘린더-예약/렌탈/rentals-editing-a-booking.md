@@ -1,5 +1,5 @@
 ---
-원문: https://help.gohighlevel.com/support/solutions/articles/155000006626-rentals-editing-a-booking
+원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000006626-rentals-editing-a-booking
 번역일: 2026-08-11
 카테고리: 04-캘린더-예약 > 렌탈
 ---

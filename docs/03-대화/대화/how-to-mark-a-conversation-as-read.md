@@ -1,5 +1,5 @@
 ---
-원문: https://help.gohighlevel.com/support/solutions/articles/48000980858-how-to-mark-a-conversation-as-read
+원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/48000980858-how-to-mark-a-conversation-as-read
 번역일: 2026-08-11
 카테고리: 03-대화 > 대화
 ---
@@ -64,7 +64,7 @@
 
 특정 시나리오나 워크플로우 활동에 따라 대화를 읽음으로 표시해야 하는 경우 워크플로우 자동화가 유용해요. 대화를 하나하나 수동으로 업데이트하는 대신, 워크플로우 액션이나 워크플로우 설정을 사용해 인박스에 대화가 어떻게 표시될지 제어할 수 있습니다.
 
-이 동작을 자동화하려면 [**워크플로우 액션 - 대화 편집(Edit Conversation)**](https://help.gohighlevel.com/support/solutions/articles/48001214153-workflow-action-edit-conversation?utm_source=chatgpt.com) 문서를 참고하세요. 이 액션을 사용하면 대화를 읽음/읽지 않음으로 표시하거나, 보관/보관 해제할 수도 있습니다.
+이 동작을 자동화하려면 [**워크플로우 액션 - 대화 편집(Edit Conversation)**](https://hyperclass.gitbook.io/hyperclass-docs?utm_source=chatgpt.com) 문서를 참고하세요. 이 액션을 사용하면 대화를 읽음/읽지 않음으로 표시하거나, 보관/보관 해제할 수도 있습니다.
 
 ## 자주 묻는 질문
 

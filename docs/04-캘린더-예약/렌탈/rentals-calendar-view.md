@@ -1,5 +1,5 @@
 ---
-원문: https://help.gohighlevel.com/support/solutions/articles/155000006641-rentals-calendar-view
+원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000006641-rentals-calendar-view
 번역일: 2026-08-11
 카테고리: 04-캘린더-예약 > 렌탈
 ---
@@ -335,7 +335,7 @@
 
 차단된 시간대를 생성하려면, 예약을 만들 때 **Event Type(이벤트 유형)**을 **Blocked slot(차단된 시간대)**으로 설정하세요.
 
-자세한 내용은 [렌탈 리스팅의 차단된 시간대](https://help.gohighlevel.com/en/support/solutions/articles/155000007944) 문서를 참고하세요.
+자세한 내용은 [렌탈 리스팅의 차단된 시간대](rentals-blocked-slots-for-listings.md) 문서를 참고하세요.
 
 예시: 차량이 유지보수 중이라면, 차단된 시간대를 설정해 해당 기간에 예약이 겹치지 않도록 할 수 있습니다.
 

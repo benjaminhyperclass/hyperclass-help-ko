@@ -1,5 +1,5 @@
 ---
-원문: https://help.gohighlevel.com/support/solutions/articles/155000008182-how-to-parse-emails-using-ai-extract-data-action
+원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000008182-how-to-parse-emails-using-ai-extract-data-action
 번역일: 2026-08-11
 카테고리: 07-워크플로우 > Workflow AI Workflow Actions
 ---
@@ -40,7 +40,7 @@ AI 데이터 추출은 리드 소스, 마켓플레이스, 추천, 또는 깔끔�
 
 완전한 이메일 파싱 워크플로우는 단순히 이메일에서 값을 추출하는 것 이상의 작업을 해요. 추출된 데이터를 실제로 활용하려면, 워크플로우가 연락처 생성(Create Contact), 연락처 필드 업데이트(Update Contact Field), 기회 생성(Create Opportunity)과 같은 후속 액션에서 그 값을 저장하거나 사용해야 해요.
 
-**참고:** AI 데이터 추출 액션의 작동 방식을 더 자세히 알아보려면 [워크플로우 액션 - AI 데이터 추출](https://help.gohighlevel.com/support/solutions/articles/155000007992-workflow-action-ai-extract-data)을 참고하세요.
+**참고:** AI 데이터 추출 액션의 작동 방식을 더 자세히 알아보려면 [워크플로우 액션 - AI 데이터 추출](workflow-action-ai-extract-data.md)을 참고하세요.
 
 시작하기 전에:
 

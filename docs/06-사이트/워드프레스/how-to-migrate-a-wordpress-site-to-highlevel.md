@@ -1,5 +1,5 @@
 ---
-원문: https://help.gohighlevel.com/support/solutions/articles/155000005010-how-to-migrate-a-wordpress-site-to-highlevel
+원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000005010-how-to-migrate-a-wordpress-site-to-highlevel
 번역일: 2026-08-11
 카테고리: 06-사이트 > 워드프레스
 ---

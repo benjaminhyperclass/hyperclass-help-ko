@@ -1,5 +1,5 @@
 ---
-원문: https://help.gohighlevel.com/support/solutions/articles/48001217374-setting-up-reserve-with-google-for-local-services-ads
+원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/48001217374-setting-up-reserve-with-google-for-local-services-ads
 번역일: 2026-08-11
 카테고리: 04-캘린더-예약 > 캘린더-연동
 ---

@@ -1,5 +1,5 @@
 ---
-원문: https://help.gohighlevel.com/support/solutions/articles/48001223155-troubleshooting-bulk-imports-via-csv
+원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/48001223155-troubleshooting-bulk-imports-via-csv
 번역일: 2026-08-11
 카테고리: 02-연락처 > 스마트-리스트
 ---
@@ -153,7 +153,7 @@
 
 가져오기 파일의 값을 올바른 숫자 값으로 수정하고 다시 가져오거나, 해당 레코드의 속성 값을 직접 수정하세요.
 
-레코드가 숫자 필드와 일치해야 하는 경우, 여러 체크박스 속성에 데이터를 올바르게 가져오도록 파일을 형식화하는 방법을 확인해보세요 - [자세히 알아보기](https://help.gohighlevel.com/support/solutions/articles/48001223155-troubleshooting-contact-import-errors/preview#:~:text=yes%20or%20no%20)-,Phone%20Number,-For%20the%20vast)
+레코드가 숫자 필드와 일치해야 하는 경우, 여러 체크박스 속성에 데이터를 올바르게 가져오도록 파일을 형식화하는 방법을 확인해보세요 - [자세히 알아보기](troubleshooting-bulk-imports-via-csv.md/preview#:~:text=yes%20or%20no%20)-,Phone%20Number,-For%20the%20vast)
 
 **1014 - 날짜를 처리할 수 없음**
 
@@ -163,7 +163,7 @@
 
 가져오기 파일의 값을 올바르게 수정하고 다시 가져오거나, 해당 레코드의 속성 값을 직접 수정하세요.
 
-레코드가 날짜 필드와 일치해야 하는 경우, 여러 체크박스 속성에 데이터를 올바르게 가져오도록 파일을 형식화하는 방법을 확인해보세요 - [자세히 알아보기](https://help.gohighlevel.com/support/solutions/articles/48001223155-troubleshooting-contact-import-errors/preview#:~:text=the%20following%20columns%3A-,Date%20Picker,-Acceptable%20formats%2D)
+레코드가 날짜 필드와 일치해야 하는 경우, 여러 체크박스 속성에 데이터를 올바르게 가져오도록 파일을 형식화하는 방법을 확인해보세요 - [자세히 알아보기](troubleshooting-bulk-imports-via-csv.md/preview#:~:text=the%20following%20columns%3A-,Date%20Picker,-Acceptable%20formats%2D)
 
 **1015 - 담당자(Owner)를 찾을 수 없음**
 
@@ -173,7 +173,7 @@
 
 가져오기 파일의 Owner 열에 계정 내 사용자의 이름(First/Last name) 또는 이메일을 정확히 입력하세요. 배정하려는 사람이 아직 계정의 사용자가 아니라면, 먼저 사용자로 추가한 후 계정에 표시된 이름 또는 이메일로 다시 가져오세요.
 
-레코드가 연락처 담당자와 일치해야 하는 경우, 여러 체크박스 속성에 데이터를 올바르게 가져오도록 파일을 형식화하는 방법을 확인해보세요 - [자세히 알아보기](https://help.gohighlevel.com/support/solutions/articles/48001223155-troubleshooting-contact-import-errors/preview#:~:text=Not%20Supported-,Contact%20Owner,-To%20assign%20an)
+레코드가 연락처 담당자와 일치해야 하는 경우, 여러 체크박스 속성에 데이터를 올바르게 가져오도록 파일을 형식화하는 방법을 확인해보세요 - [자세히 알아보기](troubleshooting-bulk-imports-via-csv.md/preview#:~:text=Not%20Supported-,Contact%20Owner,-To%20assign%20an)
 
 **1016 - HL 내 모호한 열거형 옵션**
 
@@ -183,7 +183,7 @@
 
 가져오기 파일과 하이퍼클래스의 속성을 비교하여 잘못된 값을 확인하세요. 가져오기 파일의 값을 기존 옵션 중 하나에만 일치하도록 수정한 후 다시 가져오세요. 또는 해당 레코드의 속성 값을 직접 수정할 수도 있습니다.
 
-레코드가 여러 옵션과 일치해야 하는 경우, 여러 체크박스 속성에 데이터를 올바르게 가져오도록 파일을 형식화하는 방법을 확인해보세요 - [자세히 알아보기](https://help.gohighlevel.com/support/solutions/articles/48001223155-troubleshooting-contact-import-errors/preview#:~:text=Multiple%20Options%2C%20Checkbox%2C%20Textbox%20List)
+레코드가 여러 옵션과 일치해야 하는 경우, 여러 체크박스 속성에 데이터를 올바르게 가져오도록 파일을 형식화하는 방법을 확인해보세요 - [자세히 알아보기](troubleshooting-bulk-imports-via-csv.md/preview#:~:text=Multiple%20Options%2C%20Checkbox%2C%20Textbox%20List)
 
 **1017** - 로케이션(Location)이 중복 연락처를 허용하지 않음 - 1010 및 1011 참고
 
@@ -277,7 +277,7 @@ CSV 내에 DND 열이 있는 연락처를 가져올 경우, 해당 연락처는 
 
 **Q. 노트(Notes)가 포함된 CSV를 가져오려는데, 연락처 레코드당 노트를 하나 이상 생성할 수 없어요.**
 
-연락처 노트를 가져올 때는 연락처 레코드당 노트 하나만 가능하며, 최대 5,000자로 제한됩니다. 노트가 여러 개 필요하거나 허용된 글자 수보다 많은 경우 [대용량 텍스트 커스텀 필드(large text custom field)](https://help.gohighlevel.com/en/support/solutions/articles/48001161579)를 사용하세요.
+연락처 노트를 가져올 때는 연락처 레코드당 노트 하나만 가능하며, 최대 5,000자로 제한됩니다. 노트가 여러 개 필요하거나 허용된 글자 수보다 많은 경우 [대용량 텍스트 커스텀 필드(large text custom field)](https://hyperclass.gitbook.io/hyperclass-docs)를 사용하세요.
 
 **Q. 노트가 포함된 CSV를 내보내려고 해요.**
 

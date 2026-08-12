@@ -1,5 +1,5 @@
 ---
-원문: https://help.gohighlevel.com/support/solutions/articles/155000007830-ask-the-booker-location-for-services-v2-
+원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000007830-ask-the-booker-location-for-services-v2-
 번역일: 2026-08-11
 카테고리: 04-캘린더-예약 > 서비스
 ---
@@ -118,7 +118,7 @@ Ask the Booker 위치는 고객마다 서비스 주소가 달라지는 예약에
 
 
 - 
-+ New Location을 클릭하여 [새 위치를 추가](https://help.gohighlevel.com/en/support/solutions/articles/155000003530)하거나 **기존 위치**를 **편집**합니다.
++ New Location을 클릭하여 [새 위치를 추가](https://hyperclass.gitbook.io/hyperclass-docs)하거나 **기존 위치**를 **편집**합니다.
 
 
 ![](https://jumpshare.com/share/xP4Cn6BGjT4bVGZ8xKnh+/Screen+Shot+2026-05-06+at+20.19.15.png)
@@ -140,7 +140,7 @@ Ask the Booker 위치는 고객마다 서비스 주소가 달라지는 예약에
 
 
 - 
-필요에 따라 직원 예약 가능 시간(Staff Availability)에 해당 위치를 배정합니다. ([서비스에서 직원 설정하기](https://help.gohighlevel.com/support/solutions/articles/155000005331-configuring-staff-in-services) 문서를 참고하세요.)
+필요에 따라 직원 예약 가능 시간(Staff Availability)에 해당 위치를 배정합니다. ([서비스에서 직원 설정하기](../configuring-staff-in-services.md) 문서를 참고하세요.)
 
 ## **자주 묻는 질문**
 

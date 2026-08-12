@@ -1,5 +1,5 @@
 ---
-원문: https://help.gohighlevel.com/support/solutions/articles/155000008013-how-to-bulk-edit-calendar-availability-for-multiple-team-members
+원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000008013-how-to-bulk-edit-calendar-availability-for-multiple-team-members
 번역일: 2026-08-11
 카테고리: 04-캘린더-예약 > Calendar Availability Settings
 ---

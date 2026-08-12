@@ -1,5 +1,5 @@
 ---
-원문: https://help.gohighlevel.com/support/solutions/articles/155000006649-rentals-overview-how-to-get-started
+원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000006649-rentals-overview-how-to-get-started
 번역일: 2026-08-11
 카테고리: 04-캘린더-예약 > 렌탈
 ---
@@ -49,17 +49,17 @@
 
 **다일 예약(Multi-Day Booking) 지원** — 유연한 기간 설정과 예약 제어 기능을 통해 여러 시간, 일, 주, 월 단위로 자산을 예약할 수 있습니다.
 
-**리스팅 및 카테고리** — 상세 정보, 정리된 카테고리, 상태 관리 기능을 갖춘 렌탈 리스팅을 생성할 수 있습니다. [(도움말 가이드)](https://help.gohighlevel.com/en/support/solutions/articles/155000006573)
+**리스팅 및 카테고리** — 상세 정보, 정리된 카테고리, 상태 관리 기능을 갖춘 렌탈 리스팅을 생성할 수 있습니다. [(도움말 가이드)](rentals-listings-categories.md)
 
-**재고 및 옵션(Variants)** — 여러 개의 단위(수량)를 추적할 수 있도록 설정하고, 동일한 리스팅의 다른 버전을 옵션(Variants)으로 정의할 수 있습니다. **[(도움말 가이드)](https://help.gohighlevel.com/support/solutions/articles/155000006579-create-edit-listings#Inventory-&-Pricing)**
+**재고 및 옵션(Variants)** — 여러 개의 단위(수량)를 추적할 수 있도록 설정하고, 동일한 리스팅의 다른 버전을 옵션(Variants)으로 정의할 수 있습니다. **[(도움말 가이드)](rentals-create-edit-listings.md#Inventory-&-Pricing)**
 
-**고급 가격 및 할인** — 시즌, 요일, 시간대, 기간, 수량에 따른 가격 규칙을 사용할 수 있습니다. 장기 예약이나 대량 예약에 대해 할인을 자동으로 적용할 수 있습니다. **[(도움말 가이드)](https://help.gohighlevel.com/en/support/solutions/articles/155000006611)**
+**고급 가격 및 할인** — 시즌, 요일, 시간대, 기간, 수량에 따른 가격 규칙을 사용할 수 있습니다. 장기 예약이나 대량 예약에 대해 할인을 자동으로 적용할 수 있습니다. **[(도움말 가이드)](rentals-configuring-pricing-discounts.md)**
 
-**캘린더 보기(Calendar View)** — 일간, 주간, 월간 보기를 지원하는 필터링 가능한 최신 캘린더를 통해 모든 예약을 시각적으로 확인할 수 있습니다. 중복 예약, 차단된 시간대, 실시간 예약 가능 시간을 확인할 수 있습니다. **[(도움말 가이드)](https://help.gohighlevel.com/en/support/solutions/articles/155000006641)**
+**캘린더 보기(Calendar View)** — 일간, 주간, 월간 보기를 지원하는 필터링 가능한 최신 캘린더를 통해 모든 예약을 시각적으로 확인할 수 있습니다. 중복 예약, 차단된 시간대, 실시간 예약 가능 시간을 확인할 수 있습니다. **[(도움말 가이드)](rentals-calendar-view.md)**
 
 **외부 캘린더 동기화** — Calendar Sync 기능을 사용해 서드파티 플랫폼과 예약을 연동 및 동기화하여, 여러 플랫폼에서 예약 가능 시간을 일관되게 유지할 수 있습니다.
 
-**중앙 집중식 전역 설정(Global Settings)** — 영업 시간, 예약 기본값, 결제 방식, 커뮤니케이션 템플릿을 한 곳에서 관리할 수 있습니다. **([도움말 가이드](https://help.gohighlevel.com/en/support/solutions/articles/155000006640))**
+**중앙 집중식 전역 설정(Global Settings)** — 영업 시간, 예약 기본값, 결제 방식, 커뮤니케이션 템플릿을 한 곳에서 관리할 수 있습니다. **([도움말 가이드](rentals-global-settings.md))**
 
 **내장 결제 및 인보이스** — 예약 흐름 안에서 바로 결제를 받고, 확정된 예약마다 인보이스를 자동으로 생성할 수 있습니다. 비즈니스 필요에 맞게 보증금(Security Deposit)을 설정할 수 있습니다.
 
@@ -69,7 +69,7 @@
 
 ## 렌탈 설정하기
 
-캘린더 설정(Calendar Settings)에 렌탈(Rentals) 탭이 보이지 않는다면, [**로케이션에서 렌탈 활성화/비활성화하는 방법**](https://help.gohighlevel.com/en/support/solutions/articles/155000006740) 안내를 따라 활성화해주세요.
+캘린더 설정(Calendar Settings)에 렌탈(Rentals) 탭이 보이지 않는다면, [**로케이션에서 렌탈 활성화/비활성화하는 방법**](how-to-enable-disable-rentals-for-your-locations.md) 안내를 따라 활성화해주세요.
 
 **참고**
 
@@ -101,7 +101,7 @@
 
 ![](https://jumpshare.com/share/DnwjpvHZAvK08bOtk6rt+/Screen+Shot+2026-08-05+at+19.17.30.png)
 
-리스팅 생성 방법에 대한 자세한 정보는 [리스팅 생성 및 편집](https://help.gohighlevel.com/en/support/solutions/articles/155000006579) 아티클을 참고하세요.
+리스팅 생성 방법에 대한 자세한 정보는 [리스팅 생성 및 편집](rentals-create-edit-listings.md) 아티클을 참고하세요.
 
 단계 3
 
@@ -111,7 +111,7 @@
 
 ![](https://jumpshare.com/share/eiXb8LeYF1knNnwTNTtY+/GIF+Recording+2026-08-05+at+19.20.04.gif)
 
-전역 설정 커스터마이징 방법에 대한 자세한 정보는 [렌탈의 전역 설정](https://help.gohighlevel.com/en/support/solutions/articles/155000006640) 아티클을 참고하세요.
+전역 설정 커스터마이징 방법에 대한 자세한 정보는 [렌탈의 전역 설정](rentals-global-settings.md) 아티클을 참고하세요.
 
 단계 4
 
@@ -121,7 +121,7 @@
 
 ![](https://jumpshare.com/share/LEhBlbirXieZ5dudVG59+/GIF+Recording+2026-08-05+at+19.24.16.gif)
 
-예약을 생성하는 방법에 대해 더 알고 싶으신가요? [**렌탈에서 예약 생성하기**](https://help.gohighlevel.com/en/support/solutions/articles/155000006624) 아티클을 참고하세요.
+예약을 생성하는 방법에 대해 더 알고 싶으신가요? [**렌탈에서 예약 생성하기**](rentals-creating-a-booking.md) 아티클을 참고하세요.
 
 4
 

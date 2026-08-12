@@ -1,5 +1,5 @@
 ---
-원문: https://help.gohighlevel.com/support/solutions/articles/155000002046-how-to-use-live-chat-triggers-and-actions
+원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000002046-how-to-use-live-chat-triggers-and-actions
 번역일: 2026-08-11
 카테고리: 07-워크플로우 > 트리거
 ---

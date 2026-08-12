@@ -1,5 +1,5 @@
 ---
-원문: https://help.gohighlevel.com/support/solutions/articles/155000003739-how-to-use-address-auto-complete-in-highlevel-forms-and-surveys
+원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000003739-how-to-use-address-auto-complete-in-highlevel-forms-and-surveys
 번역일: 2026-08-11
 카테고리: 06-사이트 > 폼
 ---

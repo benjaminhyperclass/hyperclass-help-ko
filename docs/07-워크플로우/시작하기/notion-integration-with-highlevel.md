@@ -1,5 +1,5 @@
 ---
-원문: https://help.gohighlevel.com/support/solutions/articles/155000005812-notion-integration-with-highlevel
+원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000005812-notion-integration-with-highlevel
 번역일: 2026-08-11
 카테고리: 07-워크플로우 > 시작하기
 ---
@@ -12,10 +12,10 @@ Zapier나 웹훅(Webhook) 없이도 하이퍼클래스와 Notion 사이에서 �
 
 **목차**
 
-- [하이퍼클래스와 Notion 연동이란?](#What-is-Notion-Integration-with-HighLevel?)
+- [하이퍼클래스와 Notion 연동이란?](#What-is-Notion-Integration-with-하이퍼클래스?)
 - [Notion 연동의 주요 장점](#Key-Benefits-of-Notion-Integration)
-- [트리거: Notion → 하이퍼클래스](#Triggers%3A-Triggers-(Notion-%E2%86%92-HighLevel))
-- [액션: 하이퍼클래스 → Notion](#Actions-(HighLevel-%E2%86%92-Notion))
+- [트리거: Notion → 하이퍼클래스](#Triggers%3A-Triggers-(Notion-%E2%86%92-하이퍼클래스))
+- [액션: 하이퍼클래스 → Notion](#Actions-(하이퍼클래스-%E2%86%92-Notion))
 - [Notion 연동 시작하기](#Getting-Started-with-Notion)
 - [Notion 트리거 작동 방식](#How-Notion-Triggers-Work)
 - [활용 사례 1: 폼 제출로 Notion 문서 생성하기](#Use-Case-1%3A-Create-Notion-Docs-from-Form-Submissions)

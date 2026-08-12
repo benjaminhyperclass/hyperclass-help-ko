@@ -1,5 +1,5 @@
 ---
-원문: https://help.gohighlevel.com/support/solutions/articles/155000008158-use-embedded-highlevel-calendar-booking-for-facebook-lead-ads
+원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000008158-use-embedded-highlevel-calendar-booking-for-facebook-lead-ads
 번역일: 2026-08-11
 카테고리: 04-캘린더-예약 > 캘린더-연동
 ---
@@ -57,7 +57,7 @@
 왼쪽 네비게이션 메뉴에서 Calendars(캘린더) → Calendar Settings(캘린더 설정)로 이동
 왼쪽 네비게이션 메뉴에서 Settings(설정) → Calendars(캘린더)로 이동
 
-기존 예약 캘린더를 사용하거나 캠페인용 새 캘린더 예약을 만드세요. 캘린더를 먼저 만드는 방법이 필요하다면 [하이퍼클래스로 개인 예약 캘린더 설정하기](https://help.gohighlevel.com/support/solutions/articles/155000005061-getting-started-setup-a-booking-calendar) 문서를 참고하세요.
+기존 예약 캘린더를 사용하거나 캠페인용 새 캘린더 예약을 만드세요. 캘린더를 먼저 만드는 방법이 필요하다면 [하이퍼클래스로 개인 예약 캘린더 설정하기](../../01-시작하기/기본-설정/getting-started-setup-a-booking-calendar.md) 문서를 참고하세요.
 
 ![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155074422420/original/D790ErYr-dS5-HdMsBTzYJVfc36qYrhXGg.png?1782315153)
 
@@ -92,7 +92,7 @@ Scheduling link(예약 링크) 항목에 하이퍼클래스 캘린더 URL을 붙
 
 **중요**: 임베드 예약 기능은 현재 페이스북 모바일 앱에서 노출되는 광고에서만 사용할 수 있어요. 인스타그램 등 다른 노출 위치에서 표시되는 광고는 예약 시간 잡기 CTA가 표시되더라도, 캘린더가 감사 페이지에 임베드되는 대신 별도의 인앱 브라우저로 예약 페이지가 열릴 수 있어요.
 
-**참고**: 임베드 예약에는 LeadConnector 도메인의 하이퍼클래스 캘린더 링크를 사용하세요. 브랜드 도메인(커스텀 도메인) 캘린더 링크는 광고 관리자에서 임베드 미리보기가 나타나지 않을 수 있고, 실제 광고에서 임베드 화면 대신 브라우저로 예약 페이지가 열릴 수 있어요.
+**참고**: 임베드 예약에는 하이퍼클래스 도메인의 하이퍼클래스 캘린더 링크를 사용하세요. 브랜드 도메인(커스텀 도메인) 캘린더 링크는 광고 관리자에서 임베드 미리보기가 나타나지 않을 수 있고, 실제 광고에서 임베드 화면 대신 브라우저로 예약 페이지가 열릴 수 있어요.
 
 ## 자주 묻는 질문
 

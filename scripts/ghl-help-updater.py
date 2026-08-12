@@ -219,6 +219,21 @@ def translate_and_save(article: dict, category_key: str,
         print(f"     ❌ Claude API 실패: {e}")
         return False
 
+    # 화이트라벨 후처리 — translator 경로에만 있고 여기엔 없어서 2026-08-11에
+    # 신규 58건이 위반 207건을 안고 배포됐다. 같은 모듈을 그대로 재사용한다.
+    try:
+        import importlib.util as _ilu
+        _wl_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "whitelabel.py")
+        if os.path.exists(_wl_path):
+            _spec = _ilu.spec_from_file_location("whitelabel", _wl_path)
+            _wl = _ilu.module_from_spec(_spec); _spec.loader.exec_module(_wl)
+            translated = _wl.whitelabel_fix(translated)
+            _v = _wl.whitelabel_check(translated)
+            if _v:
+                print(f"     ⚠️  화이트라벨 후처리 후 위반 잔존 {len(_v)}건")
+    except Exception as e:
+        print(f"     ⚠️  화이트라벨 후처리 실패: {e}")
+
     qa = run_qa(original, translated)
     filepath = _resolve_output_path(article, category_key)
 

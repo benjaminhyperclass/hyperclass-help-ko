@@ -1,5 +1,5 @@
 ---
-원문: https://help.gohighlevel.com/support/solutions/articles/155000006579-rentals-create-edit-listings
+원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000006579-rentals-create-edit-listings
 번역일: 2026-08-11
 카테고리: 04-캘린더-예약 > 렌탈
 ---
@@ -247,7 +247,7 @@ Canon EOS R5 – 렌즈 포함 (일 90,000원, 수량: 2)
 - 
 **수량별 할인(Quantity Discounts)** — 대량 예약에 할인을 적용하세요(예: 5개 이상 15% 할인).
 
-가격 로직에 대한 자세한 내용은 다음 아티클을 참고하세요: *[가격 및 할인 설정](https://help.gohighlevel.com/en/support/solutions/articles/155000006611)*
+가격 로직에 대한 자세한 내용은 다음 아티클을 참고하세요: *[가격 및 할인 설정](rentals-configuring-pricing-discounts.md)*
 
 ![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056000704/original/fhop5fysLtLUOIN5d1Ncb7vo4POArJg-dQ.png?1760477678)
 

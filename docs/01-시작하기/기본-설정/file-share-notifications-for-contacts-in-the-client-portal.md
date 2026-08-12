@@ -1,5 +1,5 @@
 ---
-원문: https://help.gohighlevel.com/support/solutions/articles/155000008265-file-share-notifications-for-contacts-in-the-client-portal
+원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000008265-file-share-notifications-for-contacts-in-the-client-portal
 번역일: 2026-08-11
 카테고리: 01-시작하기 > 기본-설정
 ---

@@ -1,5 +1,5 @@
 ---
-원문: https://help.gohighlevel.com/support/solutions/articles/155000007992-workflow-action-ai-extract-data
+원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000007992-workflow-action-ai-extract-data
 번역일: 2026-08-11
 카테고리: 07-워크플로우 > Workflow AI Workflow Actions
 ---
@@ -30,7 +30,7 @@ AI 데이터 추출(AI Extract Data) 워크플로우 액션은 하이퍼클래�
 
 **예시:** 리드 소스로부터 이메일이 수신되면, 이 액션이 연락처 정보를 추출하고, 추출된 값을 사용해 새 연락처(Contacts)와 기회(Opportunity)를 생성할 수 있어요.
 
-**중요:** 이 액션은 프리미엄 액션이에요. 이 액션을 사용하면 실행 건당 추가 요금이 발생해요. 프리미엄 워크플로우 액션 사용 및 결제(Billing)에 대한 자세한 내용은 [AI 제품 가격 정책](https://help.gohighlevel.com/support/solutions/articles/155000006652-ai-product-pricing#Workflow-AI)을 참고해 주세요.
+**중요:** 이 액션은 프리미엄 액션이에요. 이 액션을 사용하면 실행 건당 추가 요금이 발생해요. 프리미엄 워크플로우 액션 사용 및 결제(Billing)에 대한 자세한 내용은 [AI 제품 가격 정책](https://hyperclass.gitbook.io/hyperclass-docs#Workflow-AI)을 참고해 주세요.
 
 ---
 

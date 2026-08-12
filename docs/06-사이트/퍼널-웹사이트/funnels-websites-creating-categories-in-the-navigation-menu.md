@@ -1,5 +1,5 @@
 ---
-원문: https://help.gohighlevel.com/support/solutions/articles/48001155961-funnels-websites-creating-categories-in-the-navigation-menu
+원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/48001155961-funnels-websites-creating-categories-in-the-navigation-menu
 번역일: 2026-08-11
 카테고리: 06-사이트 > 퍼널-웹사이트
 ---
@@ -63,7 +63,7 @@
 아니요. 특히 모바일에서 네비게이션이 사용하기 편하도록 유지하기 위해, 중첩 페이지는 한 단계로만 제한돼요.
 
 **Q: 메뉴 항목이 같은 페이지 내의 특정 섹션(Section)으로 연결되게 할 수 있나요?**
-네, 가능해요. 앵커 링크(Anchor Link)를 사용해서 특정 섹션으로 스크롤하도록 설정할 수 있어요. 자세한 내용은 [웹사이트나 퍼널에서 요소나 섹션으로 스크롤하기](https://help.gohighlevel.com/en/support/solutions/articles/48001158589) 문서를 참고하세요.
+네, 가능해요. 앵커 링크(Anchor Link)를 사용해서 특정 섹션으로 스크롤하도록 설정할 수 있어요. 자세한 내용은 [웹사이트나 퍼널에서 요소나 섹션으로 스크롤하기](https://hyperclass.gitbook.io/hyperclass-docs) 문서를 참고하세요.
 
 **Q: 항목을 삭제하거나 이름을 변경하려면 어떻게 하나요?**
 사이드바에서 해당 항목 옆의 점 3개 아이콘을 클릭하세요. 이름을 수정하거나 **Delete(삭제)** 버튼을 눌러 삭제할 수 있어요.

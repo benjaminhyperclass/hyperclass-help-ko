@@ -1,5 +1,5 @@
 ---
-원문: https://help.gohighlevel.com/support/solutions/articles/155000007832--disable-or-enable-the-mandatory-profile-modal-for-community-members
+원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000007832--disable-or-enable-the-mandatory-profile-modal-for-community-members
 번역일: 2026-08-11
 카테고리: 01-시작하기 > 웹사이트-콘텐츠
 ---

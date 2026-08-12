@@ -1,5 +1,5 @@
 ---
-원문: https://help.gohighlevel.com/support/solutions/articles/155000001466-workflow-action-array-formatter
+원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000001466-workflow-action-array-formatter
 번역일: 2026-08-11
 카테고리: 07-워크플로우 > Internal Tools Workflow Actions
 ---

@@ -1,12 +1,12 @@
 ---
-원문: https://help.gohighlevel.com/support/solutions/articles/155000005560-the-complete-guide-to-the-leadconnector-lc-wordpress-plugin
+원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000005560-the-complete-guide-to-the-leadconnector-lc-wordpress-plugin
 번역일: 2026-08-11
 카테고리: 06-사이트 > 워드프레스
 ---
 
-# LeadConnector(LC) 워드프레스 플러그인 완벽 가이드
+# 하이퍼클래스(LC) 워드프레스 플러그인 완벽 가이드
 
-CRM과 워드프레스 웹사이트 사이의 간극을 좁히는 일이 이보다 쉬울 수 없어요. LeadConnector(LC) 플러그인은 하이퍼클래스의 다양한 기능을 워드프레스 환경에 매끄럽게 통합해주는 강력한 도구예요.
+CRM과 워드프레스 웹사이트 사이의 간극을 좁히는 일이 이보다 쉬울 수 없어요. 하이퍼클래스(LC) 플러그인은 하이퍼클래스의 다양한 기능을 워드프레스 환경에 매끄럽게 통합해주는 강력한 도구예요.
 
 지저분한 임베드 코드나 번거로운 서드파티 커넥터는 이제 그만! LC 플러그인을 사용하면 워드프레스 대시보드 안에서 바로 채팅 위젯을 배포하고, 전환율 높은 퍼널을 삽입하고, 동적 커스텀 값(Custom Value)을 활용할 수 있어요.
 
@@ -32,7 +32,7 @@ LC 플러그인은 일반적인 워드프레스 사이트를 CRM 기반의 역�
 
 1. 워드프레스 대시보드에 로그인하세요.
 
-2. 왼쪽 메뉴에서 LeadConnector 탭을 찾으세요.
+2. 왼쪽 메뉴에서 하이퍼클래스 탭을 찾으세요.
 
 ![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155075608242/original/NAtwxrxbNx8cROb3Bk9GIsYc6W3nsa25SQ.png?1783594105)
 
@@ -46,7 +46,7 @@ LC 플러그인은 일반적인 워드프레스 사이트를 CRM 기반의 역�
 
 - 워드프레스 대시보드에서 Plugins(플러그인) > Add New(새로 추가)로 이동하세요.
 
-- 플러그인 저장소에서 "LeadConnector"를 검색하세요.
+- 플러그인 저장소에서 "하이퍼클래스"를 검색하세요.
 
 ![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155075608250/original/Wx1J9H7VBAvF0qYAtiNu621jJS0-8i2EDg.png?1783594106)
 
@@ -54,7 +54,7 @@ LC 플러그인은 일반적인 워드프레스 사이트를 CRM 기반의 역�
 
 ![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155075608248/original/9tQo--37uUoyOndgqY_j6j_djfmTmx7GtQ.png?1783594106)
 
-- 이제 LeadConnector 플러그인에서 로그인(sign in)을 클릭하고 CRM 계정으로 로그인하세요.
+- 이제 하이퍼클래스 플러그인에서 로그인(sign in)을 클릭하고 CRM 계정으로 로그인하세요.
 
 ## LC 플러그인 기능 사용법
 
@@ -64,7 +64,7 @@ LC 플러그인은 일반적인 워드프레스 사이트를 CRM 기반의 역�
 
 이제 채팅 위젯을 노출하기 위해 사이트 헤더에 HTML 스크립트를 복사해서 붙여넣을 필요가 없어요.
 
-- 워드프레스에서 LeadConnector 플러그인 설정으로 이동하세요.
+- 워드프레스에서 하이퍼클래스 플러그인 설정으로 이동하세요.
 
 - 채팅 위젯(Chat Widget) 설정을 찾으세요.
 
@@ -76,7 +76,7 @@ LC 플러그인은 일반적인 워드프레스 사이트를 CRM 기반의 역�
 
 CRM 퍼널을 워드프레스 도메인에서 바로 호스팅해서 URL 구조를 깔끔하고 전문적으로 유지하세요.
 
-- 워드프레스 메뉴에서 LeadConnector > Funnels(퍼널)로 이동하세요.
+- 워드프레스 메뉴에서 하이퍼클래스 > Funnels(퍼널)로 이동하세요.
 
 - Add New(새로 추가)를 클릭하세요.
 
@@ -110,7 +110,7 @@ A: 두 가지를 확인해보세요. 첫째, CRM 안에서 해당 커스텀 값�
 
 **Q: 플러그인이 "Disconnected(연결 끊김)"로 표시돼요. 어떻게 해결하나요?**
 
-A: 최근에 CRM 안에서 API 키(API Key)를 재발급했다면 플러그인 연결이 끊길 수 있어요. 워드프레스의 LeadConnector 탭으로 돌아가서 기존 키를 지우고, 새로 발급받은 API 키를 붙여넣은 다음 저장하세요.
+A: 최근에 CRM 안에서 API 키(API Key)를 재발급했다면 플러그인 연결이 끊길 수 있어요. 워드프레스의 하이퍼클래스 탭으로 돌아가서 기존 키를 지우고, 새로 발급받은 API 키를 붙여넣은 다음 저장하세요.
 
 여전히 문제가 해결되지 않나요? 위 방법을 모두 시도했는데도 플러그인이 제대로 동기화되지 않는다면, 하이퍼클래스 고객지원팀에 문의해서 바로 도움을 받아보세요!
 

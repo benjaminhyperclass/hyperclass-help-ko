@@ -1,5 +1,5 @@
 ---
-원문: https://help.gohighlevel.com/support/solutions/articles/155000006611-rentals-configuring-pricing-discounts
+원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000006611-rentals-configuring-pricing-discounts
 번역일: 2026-08-11
 카테고리: 04-캘린더-예약 > 렌탈
 ---
@@ -66,7 +66,7 @@
 
 #### **2. 보증금 (선택 사항)**
 
-- 보증금 옵션은 **Global Settings(전역 설정)**에서 활성화한 경우에만 사용할 수 있어요. [Global Settings에 대해 더 알아보려면 여기를 클릭하세요.](https://help.gohighlevel.com/en/support/solutions/articles/155000006640)
+- 보증금 옵션은 **Global Settings(전역 설정)**에서 활성화한 경우에만 사용할 수 있어요. [Global Settings에 대해 더 알아보려면 여기를 클릭하세요.](rentals-global-settings.md)
 
 전역 설정에서 보증금을 활성화하려면 **Calendar Settings(캘린더 설정) → Rentals(렌탈) → Global Settings(전역 설정) → Payment Settings(결제 설정)**로 이동한 후 **Enable Security Deposits(보증금 활성화)**를 토글해주세요.
 

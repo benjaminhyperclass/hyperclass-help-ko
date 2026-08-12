@@ -1,5 +1,5 @@
 ---
-원문: https://help.gohighlevel.com/support/solutions/articles/155000006740-how-to-enable-disable-rentals-for-your-locations
+원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000006740-how-to-enable-disable-rentals-for-your-locations
 번역일: 2026-08-11
 카테고리: 04-캘린더-예약 > 렌탈
 ---
@@ -18,22 +18,22 @@
 #### 다일(Multi-Day) 예약 지원: 여러 시간, 일, 주, 월 단위로 자산을 예약할 수 있으며, 유연한 기간 및 예약 제어가 가능합니다.
 
 - 
-#### 리스팅(Listings) 및 카테고리: [(도움말 가이드)](https://help.gohighlevel.com/en/support/solutions/articles/155000006573) 상세 정보, 정리된 카테고리, 상태 관리를 포함한 렌탈 리스팅을 생성합니다.
+#### 리스팅(Listings) 및 카테고리: [(도움말 가이드)](rentals-listings-categories.md) 상세 정보, 정리된 카테고리, 상태 관리를 포함한 렌탈 리스팅을 생성합니다.
 
 - 
-#### 재고 및 옵션(Variants): [(도움말 가이드)](https://help.gohighlevel.com/en/support/solutions/articles/155000006579) 여러 단위에 대한 수량 추적을 활성화하고, 동일 리스팅의 다양한 버전에 대한 옵션(Variant)을 정의합니다.
+#### 재고 및 옵션(Variants): [(도움말 가이드)](rentals-create-edit-listings.md) 여러 단위에 대한 수량 추적을 활성화하고, 동일 리스팅의 다양한 버전에 대한 옵션(Variant)을 정의합니다.
 
 - 
-#### 고급 가격 및 할인: [(도움말 가이드)](https://help.gohighlevel.com/en/support/solutions/articles/155000006611) 시즌, 요일, 시간대, 기간, 수량에 따른 가격 규칙을 사용하세요. 장기 예약이나 대량 예약에 자동으로 할인을 적용할 수 있습니다.
+#### 고급 가격 및 할인: [(도움말 가이드)](rentals-configuring-pricing-discounts.md) 시즌, 요일, 시간대, 기간, 수량에 따른 가격 규칙을 사용하세요. 장기 예약이나 대량 예약에 자동으로 할인을 적용할 수 있습니다.
 
 - 
-#### 캘린더 보기: [(도움말 가이드)](https://help.gohighlevel.com/en/support/solutions/articles/155000006641) 일간, 주간, 월간 보기를 지원하는 최신 필터형 캘린더로 모든 예약을 시각적으로 확인하세요. 중복, 차단된 시간대, 실시간 예약 가능 여부를 파악할 수 있습니다.
+#### 캘린더 보기: [(도움말 가이드)](rentals-calendar-view.md) 일간, 주간, 월간 보기를 지원하는 최신 필터형 캘린더로 모든 예약을 시각적으로 확인하세요. 중복, 차단된 시간대, 실시간 예약 가능 여부를 파악할 수 있습니다.
 
 - 
 #### 외부 캘린더 동기화: 캘린더 동기화(Calendar Sync)를 사용하여 서드파티 플랫폼과 예약 정보를 연결하고 동기화함으로써, 모든 플랫폼에서 예약 가능 여부를 일관되게 유지할 수 있습니다.
 
 - 
-#### 중앙 집중식 전역 설정: [(도움말 가이드)](https://help.gohighlevel.com/en/support/solutions/articles/155000006640) 영업 시간, 예약 기본값, 결제 환경설정, 커뮤니케이션 템플릿을 한 곳에서 관리하세요.
+#### 중앙 집중식 전역 설정: [(도움말 가이드)](rentals-global-settings.md) 영업 시간, 예약 기본값, 결제 환경설정, 커뮤니케이션 템플릿을 한 곳에서 관리하세요.
 
 - 
 #### 내장 결제 및 인보이스(청구서) 기능: 예약 과정에서 바로 결제를 수집하고, 확정된 예약마다 자동으로 인보이스(청구서)를 생성합니다. 비즈니스에 맞게 보증금도 설정할 수 있어요.
@@ -108,7 +108,7 @@
 
 ---
 
-## 다음 문서: [렌탈 캘린더 - 개요 및 시작 방법](https://help.gohighlevel.com/en/support/solutions/articles/155000006649)
+## 다음 문서: [렌탈 캘린더 - 개요 및 시작 방법](rentals-overview-how-to-get-started.md)
 
 ## **출시 예정 기능**
 

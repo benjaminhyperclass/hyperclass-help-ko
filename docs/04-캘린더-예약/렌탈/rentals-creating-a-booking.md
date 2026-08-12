@@ -1,5 +1,5 @@
 ---
-원문: https://help.gohighlevel.com/support/solutions/articles/155000006624-rentals-creating-a-booking
+원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000006624-rentals-creating-a-booking
 번역일: 2026-08-11
 카테고리: 04-캘린더-예약 > 렌탈
 ---
@@ -175,7 +175,7 @@
 
 **팁:** 리스팅을 캘린더에서 잠시 제외해야 한다면(예: 유지보수 또는 내부 사용), 차단 슬롯(Blocked slot) 이벤트를 생성하세요. 차단 슬롯은 예약처럼 예약 가능 시간을 줄이지만, 고객 예약이나 주문에 연결되지는 않아요.
 
-자세히 알아보기: [렌탈 리스팅의 차단 슬롯](https://help.gohighlevel.com/en/support/solutions/articles/155000007944)
+자세히 알아보기: [렌탈 리스팅의 차단 슬롯](rentals-blocked-slots-for-listings.md)
 ---
 
 ## 고객 정보
