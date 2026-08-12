@@ -186,6 +186,17 @@ function rDoc(doc){{
     var ph=el.placeholder.trim();
     if(t[ph])el.placeholder=t[ph];
   }});
+  // 속성 치환 — 사전 정확 일치일 때만 (title엔 사용자 데이터가 들어올 수 있음).
+  // rDoc 안에 두어 rBurst·MutationObserver 재실행 경로를 그대로 탄다.
+  // DNT 토큰은 빌드 단계에서 사전에서 제거되므로 여기서도 자동 보호된다.
+  ['aria-label','title','alt'].forEach(function(a){{
+    doc.querySelectorAll('['+a+']').forEach(function(el){{
+      var v=el.getAttribute(a);
+      if(!v)return;
+      var k=v.trim();
+      if(k&&t[k]&&t[k]!==k)el.setAttribute(a,t[k]);
+    }});
+  }});
 }}
 
 function r(){{ rDoc(document); }}

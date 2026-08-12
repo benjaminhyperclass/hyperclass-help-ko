@@ -1,0 +1,48 @@
+{
+  "_설명": "2026-08-12 미번역 잔존 크롤(157건) 중 사전 병합에서 제외한 22건. 판단이 틀렸을 때 되찾고, 다음 크롤에서 같은 판정을 재현하기 위한 근거.",
+  "_출처": "~/Downloads/ghl-untranslated-gap.json (157건) 중 en.json 신규 28건에서 6건만 채택",
+  "user_data": {
+    "_사유": "고객사 실데이터. 사전에 넣으면 화면의 실제 주소·계정명이 번역문으로 치환된다.",
+    "항목": [
+      "Incheon, Yeonsu-gu",
+      "benjamin_hyperclass",
+      "benjamin_hyperclass_english",
+      "benjamin_hyperclass_japan",
+      "benjaminhyperclass.bsky.social"
+    ]
+  },
+  "generic_short": {
+    "_사유": "범용 단문/원시 i18n 키. DOM 치환은 텍스트 노드 정확 일치라 고객이 입력한 콘텐츠의 동일 단어까지 바꾼다.",
+    "항목": [
+      "header",
+      "footer",
+      "media",
+      "platform",
+      "summary",
+      "loading",
+      "displayDate",
+      "socialPlannerApp.accessibility.postActionsMenu"
+    ]
+  },
+  "runtime": {
+    "_사유": "크롤 시점의 시각·날짜·페이지네이션. 값이 매번 달라 영구 미매칭이며 사전만 불린다.",
+    "항목": [
+      "06:03 PM",
+      "07:49 AM",
+      "07:50 AM",
+      "07:51 AM",
+      "11:03 PM",
+      "09 Aug 2026",
+      "11 Aug 2026",
+      "1 - 10 of 228",
+      "1 to 10 of 228 result(s)"
+    ]
+  },
+  "ghl_bug": {
+    "_사유": "GHL이 i18n 키를 해석하지 못해 화면에 원시 키가 그대로 노출된 사례. 번역 대상이 아니라 GHL 버그 리포트 대상 — 한국어 로케일 요청 시 근거 자료.",
+    "항목": [
+      "socialPlannerApp.accessibility.postActionsMenu",
+      "displayDate"
+    ]
+  }
+}
