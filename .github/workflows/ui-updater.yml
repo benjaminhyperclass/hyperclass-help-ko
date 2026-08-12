@@ -287,6 +287,11 @@ jobs:
               print(f'❌ 화이트라벨 위반 {len(violations)}건 — 빌드를 중단합니다.')
               sys.exit(1)
           PYEOF
+        env:
+          # 없으면 build-dashboard-ko.py가 로컬 홈 경로를 보고 빈 사전을 반환해
+          # 빌드 산출물 검사가 조용히 무력화된다 (2026-08-12 발견: '값 0개')
+          REPO_PATH:  ${{ github.workspace }}
+          VAULT_PATH: ${{ github.workspace }}
 
       # ── [Step 5] 커밋 & 푸시 ─────────────────────────────────────
       # schedule/dispatch 실행에서는 Step 0이 갱신한 data/ghl-i18n-en.json과
