@@ -105,6 +105,16 @@ PH_RE = re.compile(r"\{\{.*?\}\}|\{[^{}]*\}|</?[a-zA-Z][^>]*>")
 def placeholders(s: str) -> list:
     return sorted(PH_RE.findall(s))
 
+# 문장 안의 DNT 토큰 — 사용자가 영문 원문을 그대로 타이핑해야 통과하는 확인 절차라
+# 번역되면 안내대로 입력해도 시스템이 거부한다(조용한 기능 고장).
+# 경계는 ASCII 기준 — 한글도 단어 문자라 \b는 'DELETE를'에서 무력하다.
+DNT_RE = {t: re.compile(r'(?<![A-Za-z])' + t + r'(?![A-Za-z])') for t in DNT_TOKENS}
+
+def dnt_ok(en: str, ko: str) -> bool:
+    """원문에 있는 DNT 토큰이 번역문에도 원형 그대로 남아 있는가."""
+    return all(DNT_RE[t].search(ko) for t in DNT_TOKENS if DNT_RE[t].search(en))
+
+
 def ph_ok(en: str, ko: str) -> bool:
     """플레이스홀더 보존 검사.
 
@@ -126,17 +136,22 @@ def _enforce_placeholders(client, items, result: dict) -> dict:
     영어로 보이는 편이 {기회}처럼 깨진 변수가 노출되는 것보다 낫다.
     """
     en_of = dict(items)
-    bad = [k for k, ko in result.items() if not ph_ok(en_of[k], ko)]
+    def _bad(k, ko):
+        return (not ph_ok(en_of[k], ko)) or (not dnt_ok(en_of[k], ko))
+    bad = [k for k, ko in result.items() if _bad(k, ko)]
     if not bad:
         return result
 
-    print(f"    ⚠️  플레이스홀더 불일치 {len(bad)}건 — 재시도")
+    n_ph  = sum(1 for k in bad if not ph_ok(en_of[k], result[k]))
+    n_dnt = sum(1 for k in bad if not dnt_ok(en_of[k], result[k]))
+    print(f"    ⚠️  보존 검사 불일치 {len(bad)}건 (플레이스홀더 {n_ph} / DNT 토큰 {n_dnt}) — 재시도")
     retry_items = [(k, en_of[k]) for k in bad]
     numbered = "\n".join(f"{i+1}. {v}" for i, (_, v) in enumerate(retry_items))
     prompt = (f"""아래 UI 텍스트를 한국어로 번역하세요.
 
 절대 규칙: 중괄호 변수({{...}} / {{{{...}}}})와 HTML 태그는 문자 하나도 바꾸지 말 것.
 중괄호 안의 영어 단어는 변수명이므로 번역 금지. 예) "{{opportunity}}" → "{{opportunity}}" (O), "{{기회}}" (X)
+대문자 시스템 토큰(DELETE, CONFIRM, REMOVE, CANCEL, TRANSFER, DISABLE, RESET)도 원형 유지 — 사용자가 그대로 타이핑해야 하는 값이다.
 
 번호만 붙여서 번역 결과만 출력:
 
@@ -150,12 +165,12 @@ def _enforce_placeholders(client, items, result: dict) -> dict:
             m = re.search(rf'^{i+1}[.)]\s*(.+)$', raw, re.MULTILINE)
             if m:
                 ko = apply_glossary(m.group(1).strip())
-                if ph_ok(en, ko):
+                if ph_ok(en, ko) and dnt_ok(en, ko):
                     result[key] = ko
     except Exception as e:
         print(f"    재시도 실패: {type(e).__name__}")
 
-    still = [k for k in bad if not ph_ok(en_of[k], result.get(k, ""))]
+    still = [k for k in bad if _bad(k, result.get(k, ""))]
     for k in still:
         result[k] = en_of[k]          # identity — 번역 폐기, 영문 유지
     if still:
@@ -184,7 +199,8 @@ def translate_batch(client: anthropic.Anthropic, items: list[tuple[str, str]]) -
   {{'@'}} 같은 리터럴, <strong> </a> 같은 HTML 태그.
   예) "Add an {{opportunity}}" → "{{opportunity}} 추가"  (O)
       "Add an {{opportunity}}" → "{{기회}} 추가"          (X — 변수명을 번역함)
-- 'Type X to confirm' 류 문장에서 따옴표 안 검증 토큰(DELETE, CONFIRM, REMOVE 등)은 영문 그대로 유지
+- 대문자 시스템 토큰(DELETE, CONFIRM, REMOVE, CANCEL, TRANSFER, DISABLE, RESET)은 번역하지 말고 원형 유지
+  — 사용자가 확인 절차에서 영문 그대로 타이핑해야 통과하는 값이다
 - 번호만 붙여서 번역 결과만 출력 (설명 없이)
 
 영문 ({len(items)}개):

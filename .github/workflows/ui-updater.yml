@@ -273,18 +273,45 @@ jobs:
               violations.extend(hit)
 
           print(f'검사 값 {total:,}개 / 위반 {len(violations)}건')
+
+          # ── DNT 토큰 무결성 (하드, 예외 없음) ───────────────────────
+          # 'Type DELETE to confirm'류 확인 절차는 사용자가 영문을 그대로 타이핑해야
+          # 통과한다. 토큰이 번역되면 안내대로 입력해도 시스템이 거부 = 조용한 기능 고장.
+          # 경계는 ASCII 기준 — 한글도 단어 문자라 \b는 'DELETE를'에서 무력하다.
+          import re as _re
+          TOK = ['DELETE','CONFIRM','REMOVE','CANCEL','TRANSFER','DISABLE','RESET']
+          TRE = {x: _re.compile(r'(?<![A-Za-z])' + x + r'(?![A-Za-z])') for x in TOK}
+          dnt_lost, dnt_kept = [], 0
+          for name, d in targets.items():
+              for k, v in d.items():
+                  need = [x for x in TOK if TRE[x].search(k)]
+                  if not need:
+                      continue
+                  miss = [x for x in need if not TRE[x].search(v)]
+                  if miss:
+                      dnt_lost.append(f'[{name}] {miss} {k[:36]} → {v[:44]}')
+                  else:
+                      dnt_kept += 1
+          print(f'DNT 무결성: 보존 {dnt_kept}건 / 소실 {len(dnt_lost)}건')
+          for x in dnt_lost[:5]:
+              print(f'  ❌ {x}')
           for x in violations[:5]:
               print(f'⚠️  [{x["type"]}] {x["context"]}')
 
-          summary = f'## 화이트라벨 검증 (빌드+원천, 값 {total:,}개)\n위반: {len(violations)}건'
+          summary = (f'## 보존 검증 (빌드+원천, 값 {total:,}개)\n'
+                     f'화이트라벨 위반: {len(violations)}건 / DNT 소실: {len(dnt_lost)}건 (보존 {dnt_kept}건)')
           summary += '\n✅ 이상 없음' if not violations else f'\n❌ {len(violations)}건 — 배포 중단'
           with open(os.environ.get('GITHUB_STEP_SUMMARY', '/dev/null'), 'a') as f:
               f.write(summary + '\n')
 
           # 하드 게이트 (2026-08-12 승격) — 종전엔 경고만 찍어 브랜드가 새어나간
           # 한국어 값 41건이 라이브에 올라갔다. 승격 전 값 교정을 먼저 끝냈다.
-          if violations:
-              print(f'❌ 화이트라벨 위반 {len(violations)}건 — 빌드를 중단합니다.')
+          if violations or dnt_lost:
+              if violations:
+                  print(f'❌ 화이트라벨 위반 {len(violations)}건')
+              if dnt_lost:
+                  print(f'❌ DNT 토큰 소실 {len(dnt_lost)}건 — 사용자가 확인 절차를 통과할 수 없게 된다')
+              print('빌드를 중단합니다.')
               sys.exit(1)
           PYEOF
         env:
