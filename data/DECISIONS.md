@@ -41,13 +41,15 @@ DELETE·CONFIRM·REMOVE·CANCEL·TRANSFER·DISABLE·RESET 7종은 사용자가 �
 
 ---
 
-## [대기] 하이퍼클래스 지원 이메일 확정 — 벤자민
+## [확정] 지원 이메일 → benjamin@hyperclass.ai — 2026-08-13
 
-`support@gohighlevel.com` / `transfers@gohighlevel.com` 2건이 `whitelabel-exceptions.json`에 예외로 등재돼 있다. 치환하면 존재하지 않는 주소가 되기 때문이다.
+`support@gohighlevel.com` / `transfers@gohighlevel.com` 2건을 **`benjamin@hyperclass.ai`로 교체**한다. 예외 등재를 해제하고 `whitelabel.py`의 치환 규칙으로 옮겼다 — 일회 교정이 아니라 규칙이므로 앞으로 수집되는 같은 문자열도 자동 처리된다.
 
-하이퍼클래스 지원 이메일이 확정되면 **예외 해제 + 값 교체**한다. 그때까지는 한국 고객에게 GHL 주소가 노출된 상태.
+⚠️ Vue i18n 카탈로그는 `@`를 `{'@'}`로 이스케이프해 저장한다. 치환 규칙은 **두 형식을 모두 매칭하고 입력 형식을 그대로 따른다**(`{'@'}` 입력 → `{'@'}` 출력). 형식을 섞으면 카탈로그가 깨진다.
 
-같은 성격으로 GHL 개발자 협의회 이벤트 링크 1건도 예외 등재 중(링크 제거 또는 하이퍼클래스 채널 대체 판단 필요).
+**예외로 계속 남기는 것** — 실재 대상을 가리키는 안내라 바꾸면 거짓이 된다:
+- `https://staging.gohighlevel.com와 같은…` (사용자 입력 예시 URL)
+- GHL 개발자 협의회 이벤트 링크 (`gohighlevel.com/events`)
 
 ---
 

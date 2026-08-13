@@ -95,6 +95,13 @@ def whitelabel_fix(text: str) -> str:
     for p in PROTECTED_URL_PATTERNS:
         result = re.sub(p, save, result)
 
+    # 지원 이메일 → 하이퍼클래스 채널 (2026-08-13 확정)
+    # Vue i18n 카탈로그는 @를 {'@'}로 이스케이프해 저장한다. 두 형식 모두 매칭하되
+    # 교체값은 입력 형식을 그대로 따른다 — {'@'} 입력에 @ 출력을 내면 카탈로그가 깨진다.
+    for _local in ('support', 'transfers'):
+        result = result.replace(f"{_local}{{'@'}}gohighlevel.com", "benjamin{'@'}hyperclass.ai")
+        result = result.replace(f"{_local}@gohighlevel.com", "benjamin@hyperclass.ai")
+
     # 특수 문구 우선 교체
     result = result.replace('Powered by GoHighLevel', '')
     result = result.replace('Powered by HighLevel', '')
