@@ -102,8 +102,21 @@ def apply_glossary(text: str) -> str:
 # GHL이 런타임에 치환하는 변수/태그. 번역되면 치환이 실패해 화면에 깨져 보인다.
 PH_RE = re.compile(r"\{\{.*?\}\}|\{[^{}]*\}|</?[a-zA-Z][^>]*>")
 
+_TAG_NAME = re.compile(r'^(</?)([a-zA-Z][a-zA-Z0-9]*)')
+
+def _normalize(tok: str) -> str:
+    """HTML 태그는 이름만 남긴다: <a href='...' style='...'> → <a>
+
+    href는 화이트라벨이 의도적으로 바꾸므로(help.gohighlevel.com →
+    hyperclass.gitbook.io) 속성까지 비교하면 정상 치환이 훼손으로 잡힌다.
+    보존해야 할 것은 태그 구조지 속성값이 아니다.
+    """
+    m = _TAG_NAME.match(tok)
+    return f'{m.group(1)}{m.group(2).lower()}>' if m else tok
+
+
 def placeholders(s: str) -> list:
-    return sorted(PH_RE.findall(s))
+    return sorted(_normalize(t) for t in PH_RE.findall(s))
 
 # 문장 안의 DNT 토큰 — 사용자가 영문 원문을 그대로 타이핑해야 통과하는 확인 절차라
 # 번역되면 안내대로 입력해도 시스템이 거부한다(조용한 기능 고장).
