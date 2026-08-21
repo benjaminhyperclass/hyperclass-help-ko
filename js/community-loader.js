@@ -1,0 +1,109 @@
+/* Hyperclass 한글팩 — 커뮤니티 무설치 로더 v2.0.0
+   사전: raw.githubusercontent (5분 내 반영) · Cache API 재방문 즉시 로드
+   구 v1.0.0(50건 인라인)을 이 블록으로 완전 교체할 것 */
+(function () {
+  'use strict';
+  var DICT_URL = 'https://raw.githubusercontent.com/benjaminhyperclass/hyperclass-help-ko/main/data/hc-dict.min.json';
+  var CACHE = 'hc-ko-v2', TS_KEY = '/hc-ko-ts';
+  var TTL = 6 * 3600 * 1000;      // 캐시 신선도 6시간 (지나면 백그라운드 갱신)
+  var VEIL_MS = 1500;             // 첫 화면 가림막 최대 유지. 0 = 가림막 끄기
+  var DNT = ['DELETE','CONFIRM','REMOVE','CANCEL','TRANSFER','DISABLE','RESET'];
+  var ATTRS = ['placeholder','title','aria-label','alt'];
+  var M = null;
+
+  var veil = null;
+  if (VEIL_MS > 0) {
+    veil = document.createElement('style');
+    veil.textContent = 'html{visibility:hidden!important}';
+    (document.head || document.documentElement).appendChild(veil);
+    setTimeout(unveil, VEIL_MS);
+  }
+  function unveil() { if (veil && veil.parentNode) veil.parentNode.removeChild(veil); veil = null; }
+
+  function trText(node) {
+    var s = node.nodeValue; if (!s || !M) return;
+    var t = s.trim(); if (!t) return;
+    var v = M[t]; if (v === undefined) return;
+    node.nodeValue = s.replace(t, v);
+  }
+  function trAttrs(el) {
+    if (!M || !el.getAttribute) return;
+    for (var i = 0; i < ATTRS.length; i++) {
+      var a = ATTRS[i], s = el.getAttribute(a);
+      if (!s) continue;
+      var t = s.trim(), v = M[t];
+      if (v !== undefined) el.setAttribute(a, s.replace(t, v));
+    }
+  }
+  function pass(root) {
+    if (!M || !root) return;
+    var w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null), n;
+    while ((n = w.nextNode())) trText(n);
+    if (root.querySelectorAll) {
+      var els = root.querySelectorAll('[placeholder],[title],[aria-label],[alt]');
+      for (var i = 0; i < els.length; i++) trAttrs(els[i]);
+      if (root.nodeType === 1) trAttrs(root);
+    }
+  }
+
+  var mo = new MutationObserver(function (muts) {
+    if (!M) return;
+    for (var i = 0; i < muts.length; i++) {
+      var m = muts[i];
+      if (m.type === 'characterData') trText(m.target);
+      else if (m.type === 'attributes') trAttrs(m.target);
+      else if (m.addedNodes) for (var j = 0; j < m.addedNodes.length; j++) {
+        var nd = m.addedNodes[j];
+        if (nd.nodeType === 3) trText(nd);
+        else if (nd.nodeType === 1) pass(nd);
+      }
+    }
+  });
+
+  function start() {
+    pass(document.body || document.documentElement);
+    unveil();
+    mo.observe(document.documentElement, {
+      subtree: true, childList: true, characterData: true,
+      attributes: true, attributeFilter: ATTRS
+    });
+    setTimeout(function () { pass(document.body); }, 300);   // SPA 잔여 렌더 버스트
+    setTimeout(function () { pass(document.body); }, 1200);
+  }
+  function accept(dict) {
+    for (var i = 0; i < DNT.length; i++) delete dict[DNT[i]]; // 심층 방어
+    M = dict;
+    if (document.body) start();
+    else document.addEventListener('DOMContentLoaded', start, { once: true });
+  }
+
+  function refresh(cache) {
+    return fetch(DICT_URL, { mode: 'cors' }).then(function (res) {
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      return res.text();
+    }).then(function (txt) {
+      var d = JSON.parse(txt);
+      if (cache) {
+        cache.put(DICT_URL, new Response(txt, { headers: { 'Content-Type': 'application/json' } }));
+        cache.put(TS_KEY, new Response(String(Date.now())));
+      }
+      return d;
+    });
+  }
+
+  if (window.caches) {
+    caches.open(CACHE).then(function (cache) {
+      cache.match(DICT_URL).then(function (hit) {
+        if (hit) {
+          hit.json().then(accept);                            // 캐시 즉시 사용
+          cache.match(TS_KEY).then(function (ts) { return ts ? ts.text() : '0'; })
+            .then(function (t) { if (Date.now() - (+t || 0) > TTL) refresh(cache).catch(function(){}); });
+        } else {
+          refresh(cache).then(accept).catch(unveil);          // 실패 시 영어로 안전 폴백
+        }
+      });
+    });
+  } else {
+    refresh(null).then(accept).catch(unveil);
+  }
+})();

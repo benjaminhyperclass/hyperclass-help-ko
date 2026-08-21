@@ -57,6 +57,22 @@ DELETE·CONFIRM·REMOVE·CANCEL·TRANSFER·DISABLE·RESET 7종은 사용자가 �
 
 ---
 
+## [확정] 커뮤니티 무설치 경로 = 인라인 로더 + raw 데이터 고속선 — 2026-08-21
+
+커뮤니티(ClientClub) Custom Code 슬롯에 인라인 로더(v2.0.0)를 심고, 로더가
+`raw.githubusercontent.com/…/data/hc-dict.min.json`(통합 사전 = ko ∪ manual,
+manual 우선, DNT·identity 제거)을 fetch한다. **jsDelivr 미사용** — raw는
+`X-Content-Type-Options: nosniff`라 `<script src>`가 불가하고, 이를 우회하려던
+jsDelivr 경로는 @main 캐시 지연을 다시 데려온다. 데이터(fetch+JSON.parse)로
+받으면 nosniff와 무관하며 raw 직결의 즉시성을 유지한다.
+
+- 산출: `scripts/build-community-dict.py` (ui-updater Step 3에서 실행, 기존
+  빌드 우선순위 로직과 독립)
+- 로더 원문: `js/community-loader.js`(JS, node --check 대상) +
+  `js/community-loader.slot.html`(슬롯 붙여넣기용 전체 블록)
+- 구 `community-ko.js`(50건, 2026-05)는 **폐기 예정** — 슬롯 교체 확인 후
+  별도 승인으로 삭제한다 (아직 삭제 금지).
+
 ## 관련 파일
 
 - `data/whitelabel-exceptions.json` — 화이트라벨 검사·치환 제외 값 (사유 포함)

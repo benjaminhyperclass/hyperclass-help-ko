@@ -216,6 +216,8 @@ jobs:
         run: |
           python scripts/build-dashboard-ko.py
           terser js/dashboard-ko.js -o js/dashboard-ko.min.js --compress --mangle
+          # 커뮤니티 무설치 로더용 통합 사전 (기존 산출물과 독립 — 2026-08-21 승인)
+          python scripts/build-community-dict.py
           echo "## 빌드 완료" >> $GITHUB_STEP_SUMMARY
           echo "- 파일 크기: $(wc -c < js/dashboard-ko.min.js | xargs) bytes" >> $GITHUB_STEP_SUMMARY
           head -4 js/dashboard-ko.js >> $GITHUB_STEP_SUMMARY
