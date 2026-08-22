@@ -48,7 +48,7 @@
   /* ---------- P2. 사전 버전을 캐시 키에 반영 ---------- */
   // 커밋할 때마다 REV 가 바뀌면 CDN·Cache Storage 가 함께 무효화된다.
   // @main 고정이면 jsDelivr 24h + TTL 6h 가 직렬로 쌓여 최악 30시간 지연된다.
-  var REV = 'd1cac8a59c841b970a2eae1d1809847bfa5c17c2';
+  var REV = '805efe2341b282d74ab94addd3072dea5ca7d5a3';
   var BASE = 'https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@' + REV + '/data/';
   var URL_CORE = BASE + 'hc-ko-app-core.json';
   var URL_APPS = BASE + 'hc-ko-app-apps.json';
