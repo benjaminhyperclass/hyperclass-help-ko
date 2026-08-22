@@ -1,4 +1,4 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.2.0
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.3.0
  * Agency Settings → Company → Whitelabel → Custom Code → Custom JavaScript 칸 전용 (순수 JS, <script> 태그 없음)
  *
  * 2026-08-22 app.hyperclass.ai 실측 구조(310개 라우트 크롤) 기준.
@@ -11,6 +11,8 @@
  * 사전: core(호스트+flat+_text) 먼저, apps 는 백그라운드로 이어서.
  *       REV 가 커밋 SHA 로 고정돼 있으면 URL 이 불변이므로 Cache Storage 를 재검증 없이 쓴다.
  *       REV 를 바꾸면 옛 캐시 버킷은 부팅 때 자동 삭제된다.
+ * 서브계정 옵트아웃: window.HC_I18N_EXCLUDE = ['locationId', …]
+ *   레거시 dashboard-ko 의 hcEx() 와 판정이 같아야 한다 — 다르면 그 계정만 반쪽 한국어가 된다.
  * 긴급 중단: 주소에 ?hcko=off 또는 콘솔에서 localStorage.hcKoOff='1'
  * 디버그:   주소에 ?hcko=debug → 콘솔 로그, window.__hcKoApp.status()
  */
@@ -95,7 +97,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.2.0',
+    version: '4.3.0',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
