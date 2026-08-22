@@ -1,4 +1,4 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.5.0
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.6.0
  * Agency Settings → Company → Whitelabel → Custom Code → Custom JavaScript 칸.
  * ⚠️ 이 칸은 **HTML 주입 필드**다. script 태그로 감싸야 실행된다.
  *    (ClientClub customJs 는 반대로 태그를 거부한다 — 두 필드를 혼동하지 말 것)
@@ -78,7 +78,7 @@
   /* ---------- P2. 사전 버전을 캐시 키에 반영 ---------- */
   // 커밋할 때마다 REV 가 바뀌면 CDN·Cache Storage 가 함께 무효화된다.
   // @main 고정이면 jsDelivr 24h + TTL 6h 가 직렬로 쌓여 최악 30시간 지연된다.
-  var REV = '19a4345856542f7179c8e1c8ff3d1a04f0a67bd1';
+  var REV = '0154fe1dae976aff197f978910e8c4dacdb4f5d6';
   var BASE = 'https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@' + REV + '/data/';
   var URL_CORE = BASE + 'hc-ko-app-core.json';
   var URL_APPS = BASE + 'hc-ko-app-apps.json';
@@ -99,7 +99,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.5.0',
+    version: '4.6.0',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
