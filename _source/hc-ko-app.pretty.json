@@ -1,7 +1,7 @@
 {
  "_meta": {
-  "version": "4.2.0",
-  "built": "2026-08-22",
+  "version": "4.2.1",
+  "built": "2026-08-23",
   "source": "crawl 310 routes + dashboard-ko + community v3 + legacy recovery + live audit 33 routes",
   "strings": 102183
  },
@@ -115067,7 +115067,7 @@
   "Level Unlock": "레벨 잠금 해제",
   "Level {level}+": "레벨 {level}+",
   "Levels": "레벨",
-  "Life Insurance": "생명 보험",
+  "Life Insurance": "생명보험",
   "Like On Comment": "댓글에 좋아요",
   "Like On Post": "게시물에 좋아요",
   "Like/Dislike": "좋아요/싫어요",
