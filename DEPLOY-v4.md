@@ -3,7 +3,7 @@
 여기부터는 벤자민님이 직접 하셔야 합니다. Claude Code 가 할 수 있는 부분은 끝났습니다.
 
 준비된 것
-- 사전: jsDelivr 에 커밋 `3e900ad` 로 고정 배포됨 (200 / CORS `*` / immutable 확인)
+- 사전: jsDelivr 에 커밋 `d1cac8a` 로 고정 배포됨 (200 / CORS `*` / immutable 확인)
 - 로더: `js/hc-ko-app-loader.js` (v4.2.0) — `ALLOW = ['r6JD1nsqtk6Oln28fgrj']` 로 **한 곳에만** 적용되게 잠겨 있음
 
 ---
@@ -33,7 +33,7 @@ __hcKoApp.status()
 |---|---|---|
 | `host` | `1` | `0` 이면 호스트 카탈로그 미적용 — 콘솔에 `host composer not found` 가 찍혔는지 확인 |
 | `gate` | `true` | `false` 면 ALLOW 가 비어 전체 적용 상태 |
-| `rev` | `3e900adc1988923ac86128272aa2f071a247a293` | 다르면 예전 로더가 붙어 있음 |
+| `rev` | `d1cac8a59c841b970a2eae1d1809847bfa5c17c2` | 다르면 예전 로더가 붙어 있음 |
 | `apps` | 화면 이동할수록 증가 | 0 에서 안 늘면 앱 스캔 실패 |
 | `unmatched` | 되도록 `0` | 0 이 아니면 콘솔의 `no dict for app` 로그에서 어떤 앱인지 확인 |
 | `fuzzy` | 0 이어도 정상 | 값이 있으면 GHL 이 네임스페이스를 바꿨다는 신호 — 다음 크롤 때 반영 |
@@ -42,6 +42,22 @@ __hcKoApp.status()
 | `booted` | `true` | `false` 면 게이트에 막혀 아직 시작 안 함 |
 | `suspended` | `false` | `true` 면 비허용 로케이션으로 이동해 멈춘 상태 |
 | `coreLoaded` / `appsLoaded` | 둘 다 `true` | `false` 면 CDN 에서 사전을 못 받음 |
+
+## 3-2. 삭제 확인 모달 — **꼭 한 번 눌러 보세요**
+
+`product.deleteModal` 계열은 안내문이 `'DELETE'를 입력하여…` 인데 입력칸 토큰만
+`삭제` 로 번역돼 있어 안내대로 입력해도 통과하지 못하던 건이 있었습니다. 지금은
+입력칸도 `DELETE` 로 되돌려 두었습니다.
+
+다만 **앱이 입력값을 `t(key)` 와 비교하는지, 코드에 박힌 `'DELETE'` 와 비교하는지는
+번들 소스를 못 봐서 확인하지 못했습니다**(로그인 뒤에만 로드됨). 둘 중 어느 쪽이어도
+영문 토큰이면 통과하지만, 30초면 확실해집니다.
+
+1. 상품(Products) 하나를 삭제 시도
+2. 안내문대로 `DELETE` 를 입력
+3. 삭제 버튼이 활성화되면 정상. 안 되면 `삭제` 도 넣어 보고 결과를 알려 주세요.
+
+같은 확인이 필요한 곳: 커스텀 오브젝트 삭제(`schemaList`), 마켓플레이스 확인(`marketplace`).
 
 ## 4. 화면 이동하며 확인
 
@@ -97,7 +113,7 @@ var ALLOW = [];
 | 증상 | 확인 |
 |---|---|
 | 아무것도 한국어가 안 됨 | `__hcKoApp` 이 `undefined` → **로더가 안 붙은 것.** 게이트에 막힌 경우엔 `__hcKoApp` 이 있고 `status().allowedHere` 가 `false` 다 |
-| 사전을 못 받음 | 콘솔 네트워크 탭에서 `cdn.jsdelivr.net/...@3e900ad/data/` 404 여부 |
+| 사전을 못 받음 | 콘솔 네트워크 탭에서 `cdn.jsdelivr.net/...@d1cac8a/data/` 404 여부 |
 | 일부 화면만 영어 | `status().unmatched` 와 `no dict for app` 로그 |
 | 화면이 뒤집히듯 깜빡임 | 2중 구조 때문 — 기존 사전 축소가 필요 (별도 작업) |
 | 급하게 꺼야 함 | Custom JS 칸의 `ALLOW` 를 존재하지 않는 ID 로 바꾸거나 칸을 비움 |
