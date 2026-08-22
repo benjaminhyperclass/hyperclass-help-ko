@@ -131,6 +131,21 @@ def whitelabel_fix(text: str) -> str:
     result = result.replace('www.gohighlevel.com', 'hyperclass.ai')
     # 보호 목록·예외에 없는 나머지 *.gohighlevel.com 서브도메인 (2026-08-12)
     result = re.sub(r'\b[\w-]+\.gohighlevel\.com\b', 'hyperclass.ai', result)
+    # 서브도메인 없는 맨 도메인 (2026-08-22). 위 패턴은 앞에 라벨을 요구해
+    # 'gohighlevel.com/events' 같은 형태를 놓쳤다. whitelabel_check 는
+    # IGNORECASE 로 이걸 잡으므로, 치환이 못 따라가면 **고칠 수 없는 위반**이 되어
+    # 게이트가 영구히 막힌다. 검사와 치환의 사거리를 맞춘다.
+    # 보호 대상(api/app/marketplace 등)은 위에서 이미 __P__ 로 빠져 있다.
+    result = re.sub(r'(?<![\w.-])gohighlevel\.com', 'hyperclass.ai', result, flags=re.IGNORECASE)
+
+    # 번역기가 도메인 안의 브랜드까지 옮겨 놓는 사고 (2026-08-22 실측).
+    # i18n-batch-translator 프롬프트는 "URL·도메인은 그대로 둔다"고 지시하지만
+    # 모델이 이를 어겨 'gohighlevel.com/...' → '하이퍼클래스.com/...' 이 나왔다.
+    # 존재하지 않는 도메인이라 링크가 죽는데 브랜드 검사에는 걸리지 않는다
+    # (브랜드가 이미 지워졌으므로). 여기서 되돌린다. 잔존 탐지는 검사기 C8 이 맡는다.
+    # 긴 TLD 를 먼저 본다 — 'co' 를 먼저 잡으면 '하이퍼클래스.co.kr' 이 'hyperclass.ai.kr' 이 된다.
+    result = re.sub(r'하이퍼클래스\.(?:co\.kr|or\.kr|com|net|org|io|ai|co|kr)(?![\w가-힣.])',
+                    'hyperclass.ai', result)
 
     # 보호 블록 복원
     for i, block in enumerate(protected):
