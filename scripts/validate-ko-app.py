@@ -45,6 +45,15 @@ WHITELABEL_ALLOW_KEYS = {
     'integrationsApp.facebookDiagnostic.crm_integrations_submit_test_lead_fields_helper',
 }
 
+# ── C1 보강: whitelabel.py 가 놓치는 브랜드 표기 ────────────────
+# 'LeadConnector' 붙여쓰기만 검사하고 있어 공백형·약칭이 새어 나간다.
+# whitelabel.py 본체 수정은 승인 사항이라 여기서 검사만 보탠다.
+EXTRA_BRAND = [
+    (re.compile(r'(?<![A-Za-z])Lead\s+Connector(?![A-Za-z])', re.I), 'Lead Connector(공백형) 잔존'),
+    (re.compile(r'(?<![A-Za-z])LC\s*Phone(?![A-Za-z])'), 'LC Phone 잔존'),
+    (re.compile(r'(?<![A-Za-z])LC\s*Email(?![A-Za-z])'), 'LC Email 잔존'),
+]
+
 # ── C2 DNT 리터럴 ──────────────────────────────────────────────
 DNT_TOKENS = ['DELETE', 'CONFIRM', 'REMOVE', 'CANCEL', 'TRANSFER', 'DISABLE', 'RESET']
 DNT_RE = {t: re.compile(r'(?<![A-Za-z])' + t + r'(?![A-Za-z])') for t in DNT_TOKENS}
@@ -158,13 +167,21 @@ def main():
             continue
         for x in whitelabel_check(ko):
             v['C1'].append({'src': src, 'key': key, 'type': x['type'], 'ko': ko[:90]})
+        # whitelabel.py 의 checks 는 'LeadConnector'(붙여쓰기)만 본다.
+        # 화이트라벨 SaaS 에서 원 제품 브랜드의 공백형·약칭이 그대로 노출된다.
+        for pat, msg in EXTRA_BRAND:
+            if pat.search(ko):
+                v['C1'].append({'src': src, 'key': key, 'type': msg, 'ko': ko[:90]})
 
     # ── C2~C6 : en/ko 쌍이 있어야 검사 가능 ────────────────────
     # 영어 원문은 reference 에서, 한국어는 **배포본(core/apps)** 에서 가져온다.
     # reference 의 ko 를 쓰면 배포본을 고쳐도 검사 결과가 따라오지 않아 게이트가 무력해진다.
+    # `flat` 도 반드시 포함한다. 로더가 wrapTRef 에서 core.flat[key] 로 직접 쓰는
+    # 배포 사전이다. 종전에 host/app 만 넣어 flat 706건이 C2~C6 사각지대에 있었고,
+    # 거기에 실제 위반 3건(CONFIRM→확인 2, 없던 {n} 추가 1)이 살아 있었다.
     ko_by_key = {}
     for src, key, ko in rows:
-        if src in ('host',) or src.startswith('app:'):
+        if src == 'host' or src == 'flat' or src.startswith('app:'):
             ko_by_key.setdefault(key, set()).add(ko)
 
     pairs = []

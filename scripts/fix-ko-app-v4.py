@@ -111,14 +111,41 @@ PH_RESTORE = {
             '(<a href="https://hyperclass.ai/dev-slack">https://hyperclass.ai/dev-slack</a>)'},
 }
 
-# ── 2-K reference 전용 교정 ───────────────────────────────────
-# core/apps 에 없어 배포되지 않는 키. 런타임 영향은 없지만 대조표가 틀리면
-# 다음 갱신에서 그대로 편입된다.
-REF_ONLY = {
+# ── 2-K `flat` 교정 ───────────────────────────────────────────
+# 종전에 "core/apps 에 없으니 배포되지 않는다"고 보고 참조표만 고쳤는데 틀렸다.
+# 이 셋은 core.flat 에 실려 배포되고, 로더가 wrapTRef 에서 core.flat[key] 로 쓴다.
+#   confirmModal.* : 안내는 'CONFIRM' 입력인데 비교 대상이 '확인' 이면 확인이 안 눌린다
+#   hoursAgo       : 원문에 없는 {n} 이라 화면에 리터럴 '{n}' 이 그대로 노출된다
+FLAT_FIX = {
     'confirmModal.confirmPlaceholder': 'CONFIRM',
     'confirmModal.confirmText': 'CONFIRM',
     'dashboardStudio.cacheStatus.hoursAgo': '시간 전',
 }
+
+# ── 2-M 브랜드 공백형·약칭 ────────────────────────────────────
+# whitelabel.py 는 'LeadConnector' 붙여쓰기만 본다. 공백형과 LC 약칭이
+# 그대로 새어 나가 원 제품 브랜드가 한국 고객 화면에 노출된다.
+# 긴 것부터 치환해야 'Lead Connector Email' 이 '하이퍼클래스 Email' 로 잘리지 않는다.
+BRAND_SPACED = [
+    ('Lead Connector Phone System', '하이퍼클래스 전화 시스템'),
+    ('Lead connector Phone System', '하이퍼클래스 전화 시스템'),
+    ('Lead Connector Email', '하이퍼클래스 이메일'),
+    ('Lead connector Email', '하이퍼클래스 이메일'),
+    ('LC Phone System', '하이퍼클래스 전화 시스템'),
+    ('LC Phone 시스템', '하이퍼클래스 전화 시스템'),
+    ('LC Email', '하이퍼클래스 이메일'),
+    ('LC Phone', '하이퍼클래스 전화'),
+    ('Lead Connector', '하이퍼클래스'),
+    ('Lead connector', '하이퍼클래스'),
+    ('lead connector', '하이퍼클래스'),
+]
+
+
+def brand_spaced(s):
+    for a, b in BRAND_SPACED:
+        if a in s:
+            s = s.replace(a, b)
+    return s
 
 # ── 2-L 조사 ──────────────────────────────────────────────────
 # '하이퍼클래스' 는 받침이 없다(스). 받침 있는 말에 붙는 조사가 오면 바꾼다.
@@ -217,7 +244,54 @@ def main():
                         node[k] = fixed
                         log.append(('2-A 화이트라벨', label, dotted, v, fixed))
                         wl += 1
+    # flat 과 _text 도 배포된다. 종전에 빠져 있었다.
+    for store in ('flat', '_text'):
+        for k, v in list(o[store].items()):
+            if not isinstance(v, str) or k in PROTECT or is_exception(v):
+                continue
+            if not whitelabel_check(v):
+                continue
+            fixed = whitelabel_fix(v)
+            if fixed != v:
+                o[store][k] = fixed
+                log.append(('2-A 화이트라벨', store, k, v, fixed))
+                wl += 1
     counts['2-A 화이트라벨 교체'] = wl
+
+    # ── 2-M 브랜드 공백형·약칭 ─────────────────────────────────
+    n = 0
+    for label, cat in catalogs(o):
+        stack = [([], cat)]
+        while stack:
+            path, node = stack.pop()
+            for k, val in list(node.items()):
+                if isinstance(val, dict):
+                    stack.append((path + [k], val))
+                elif isinstance(val, str):
+                    new = brand_spaced(val)
+                    if new != val:
+                        node[k] = new
+                        log.append(('2-M 브랜드 공백형', label, '.'.join(path + [k]), val, new))
+                        n += 1
+    for store in ('flat', '_text'):
+        for k, val in list(o[store].items()):
+            if not isinstance(val, str):
+                continue
+            new = brand_spaced(val)
+            if new != val:
+                o[store][k] = new
+                log.append(('2-M 브랜드 공백형', store, k, val, new))
+                n += 1
+    counts['2-M 브랜드 공백형·약칭'] = n
+
+    # ── 2-K flat 교정 ──────────────────────────────────────────
+    n = 0
+    for k, val in FLAT_FIX.items():
+        if o['flat'].get(k) != val:
+            log.append(('2-K flat 교정', 'flat', k, o['flat'].get(k), val))
+            o['flat'][k] = val
+            n += 1
+    counts['2-K flat 교정'] = n
 
     # ── 2-B / 2-G / 2-C / 2-I : 경로 지정 교체 ─────────────────
     for tag, table in (('2-B 깨진 플레이스홀더', BROKEN_PH),
@@ -333,16 +407,16 @@ def main():
                     if isinstance(e, dict) and e.get('ko') != v:
                         e['ko'] = v
                         synced += 1
-    ref_only = 0
-    for k, val in REF_ONLY.items():
+    # flat 은 dotted key → ko 평면이라 위 순회에 안 잡힌다. 따로 맞춘다.
+    for k, val in o['flat'].items():
         e = ref.get(k)
-        if isinstance(e, dict) and e.get('ko') != val:
+        if isinstance(e, dict) and isinstance(val, str) and e.get('ko') != val:
             e['ko'] = val
-            ref_only += 1
+            synced += 1
 
     with open(REF, 'w', encoding='utf-8') as f:
         json.dump(ref, f, ensure_ascii=False, indent=1)
-    print(f'reference ko 동기화: {synced:,}건 / 미배포 키 직접 교정: {ref_only}건')
+    print(f'reference ko 동기화: {synced:,}건')
     return 0
 
 
