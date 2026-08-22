@@ -1,5 +1,7 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.3.0
- * Agency Settings → Company → Whitelabel → Custom Code → Custom JavaScript 칸 전용 (순수 JS, <script> 태그 없음)
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.4.0
+ * Agency Settings → Company → Whitelabel → Custom Code → Custom JavaScript 칸.
+ * ⚠️ 이 칸은 **HTML 주입 필드**다. script 태그로 감싸야 실행된다.
+ *    (ClientClub customJs 는 반대로 태그를 거부한다 — 두 필드를 혼동하지 말 것)
  *
  * 2026-08-22 app.hyperclass.ai 실측 구조(310개 라우트 크롤) 기준.
  * 처리 패턴
@@ -91,13 +93,13 @@
   // i18n 카탈로그에 한국어를 부어 넣거나 provides.t 를 래퍼로 바꾸면
   // 원복 수단이 없다 — 이 상태에서 제외 계정으로 넘어가면 새로고침이 유일한 답이다.
   var dirty = false;
-  var stats = { host: 0, apps: 0, tref: 0, remerge: 0, fuzzy: 0, unmatched: 0, textHits: 0 };
+  var stats = { host: 0, apps: 0, tref: 0, remerge: 0, fuzzy: 0, unmatched: 0, textHits: 0, fallback: 0 };
   function log() { if (DEBUG && window.console) console.log.apply(console, ['[hc-ko]'].concat([].slice.call(arguments))); }
 
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.3.0',
+    version: '4.4.0',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -427,9 +429,22 @@
   });
 
   /* ---------- 사전 로딩 ---------- */
-  function fetchFresh(url, cache) {
-    return fetch(url, { mode: 'cors', cache: 'no-cache' }).then(function (r) {
+  // 기존 레이어는 jsDelivr 를 <script src>(script-src)로 썼는데 v4 는 fetch(connect-src)다.
+  // CSP 가 다르게 걸려 있을 수 있고, 막히면 core 로드가 실패해 _text 치환까지 통째로
+  // 죽는다(전면 영어). 커뮤니티 트랙에서 이미 쓰는 raw 경로로 한 번 더 시도한다.
+  var RAW = 'https://raw.githubusercontent.com/benjaminhyperclass/hyperclass-help-ko/' + REV + '/data/';
+  function grab(u) {
+    return fetch(u, { mode: 'cors', cache: 'no-cache' }).then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status); return r.text();
+    });
+  }
+  function fetchFresh(url, cache) {
+    return grab(url).catch(function (e) {
+      var alt = url.indexOf(BASE) === 0 ? RAW + url.slice(BASE.length) : null;
+      if (!alt) throw e;
+      stats.fallback++;
+      log('CDN 실패 — raw 폴백', e && e.message);
+      return grab(alt);
     }).then(function (txt) {
       var d = JSON.parse(txt);
       if (cache) { try { cache.put(url, new Response(txt, { headers: { 'Content-Type': 'application/json', 'X-HC-TS': String(Date.now()) } })); } catch (e) {} }
@@ -530,9 +545,13 @@
     //
     // 루프는 나지 않는다: 새로고침 후 excluded() 가 true 라 allowed() 가 false 이고,
     // boot() 가 아예 실행되지 않아 dirty 가 다시 서지 않는다.
-    if (dirty) {
+    // 새로고침은 **옵트아웃 계정** 에만 건다.
+    // 단순히 ALLOW 밖인 곳(에이전시 뷰, 아직 확대 안 한 서브계정)은 우리 계정이라
+    // 카탈로그에 한국어가 남아도 해가 없다. 거기까지 새로고침하면 계정을 옮길 때마다
+    // 페이지가 통째로 다시 뜨는 셈이라 체감이 나쁘다.
+    if (dirty && excluded()) {
       dirty = false;
-      log('오염된 카탈로그 — 새로고침으로 영어 복귀');
+      log('옵트아웃 계정 — 새로고침으로 영어 복귀');
       try { location.reload(); } catch (e) {}
     }
   }

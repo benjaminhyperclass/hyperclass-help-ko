@@ -8,12 +8,31 @@
 
 ---
 
-## 1. 로더 붙여 넣기
+## 1. 로더 설치
 
 Agency Settings → Company → **Whitelabel → Custom Code → Custom JavaScript**
 
-- `js/hc-ko-app-loader.js` **전체 내용**을 기존 `dashboard-ko.min.js` 로드 줄 **앞**에 붙입니다.
-- `<script>` 태그를 붙이지 마세요. 순수 JS 입니다.
+⚠️ **정정 (2026-08-22).** 이전 판에서 "`<script>` 태그를 붙이지 마세요, 순수 JS 입니다"라고
+안내했는데 **틀렸습니다.** 그건 커뮤니티(ClientClub) `customJs` 필드 규칙입니다.
+에이전시 화이트라벨 칸은 **HTML 주입 필드**라 태그로 감싸지 않으면 그냥 텍스트로 흘러가
+아무 일도 일어나지 않습니다(에러도 안 납니다). 지금 동작 중인 4줄이 `<script src=…>`
+형태인 것이 반증입니다. v4 패키지 README 의 서술을 그대로 옮긴 제 실수입니다.
+
+**칸 전체를 아래로 교체합니다.** 로더 본문을 붙여 넣지 말고 CDN 에서 받게 합니다 —
+20KB 를 설정 textarea 에 두면 유지보수가 안 되고, `<script src>` 는 기존에 이미
+검증된 경로라 CSP 위험도 없습니다.
+
+```html
+<script>window.HC_I18N_EXCLUDE = ["1r0pJRd1cQQ5DZsjSbc9"];</script>
+<script src="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@LOADER_SHA/js/hc-ko-app-loader.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@8fabb6a/js/dashboard-ko.min.js"></script>
+```
+
+- **첫 줄의 `HC_I18N_EXCLUDE` 를 빠뜨리지 마세요.** 이게 없으면 두 레이어 모두
+  하드코딩 폴백으로만 동작합니다.
+- **세 번째 줄(기존 레이어)을 지우지 마세요.** v4 는 `ALLOW` 로 한 곳에만 걸려 있어,
+  지우면 나머지 계정이 전부 영어가 됩니다.
+- 순서가 중요합니다 — 로더가 기존 레이어보다 **앞**이어야 합니다.
 - 저장하면 전 서브계정에 즉시 반영되지만, `ALLOW` 때문에 실제로 동작하는 곳은
   `r6JD1nsqtk6Oln28fgrj` 하나뿐입니다. 나머지 계정은 지금까지와 똑같이 보입니다.
 
@@ -112,7 +131,9 @@ var ALLOW = [];
 
 | 증상 | 확인 |
 |---|---|
-| 아무것도 한국어가 안 됨 | `__hcKoApp` 이 `undefined` → **로더가 안 붙은 것.** 게이트에 막힌 경우엔 `__hcKoApp` 이 있고 `status().allowedHere` 가 `false` 다 |
+| 아무것도 한국어가 안 됨 | `__hcKoApp` 이 `undefined` → **로더가 실행 안 된 것.** ① `<script>` 로 감쌌는지 ② 저장 후 하드 리프레시했는지 ③ `localStorage.getItem('hcKoOff')` 가 `null` 인지. 게이트에 막힌 경우엔 `__hcKoApp` 이 있고 `status().allowedHere` 가 `false` 다 |
+| 에이전시 화면에서 영어 | **정상.** `ALLOW` 검사가 `/v2/location/` 경로만 본다. 반드시 로케이션 URL 로 들어가야 한다 |
+| `status().fallback` 이 0 이 아님 | jsDelivr fetch 가 막혀 raw 로 받았다는 뜻. 동작은 하지만 CSP(connect-src) 확인 필요 |
 | 사전을 못 받음 | 콘솔 네트워크 탭에서 `cdn.jsdelivr.net/...@805efe2/data/` 404 여부 |
 | 일부 화면만 영어 | `status().unmatched` 와 `no dict for app` 로그 |
 | 화면이 뒤집히듯 깜빡임 | 2중 구조 때문 — 기존 사전 축소가 필요 (별도 작업) |
