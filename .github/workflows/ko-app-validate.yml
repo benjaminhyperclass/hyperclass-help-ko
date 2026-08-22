@@ -102,6 +102,7 @@ jobs:
       # 영어 원문은 _source/hc-ko-app-reference.json 에서 유도한다
       # (6.8MB EN 카탈로그를 따로 커밋하지 않기 위해 — 결과 동등성 실증됨).
       - name: DNT·브랜드 전수 검사 (v4 배포본)
+        if: always()   # 앞 스텝이 실패해도 돌린다 — 실패를 한 번에 보기 위해
         run: |
           set -o pipefail
           python3 scripts/merge-ko-app.py /tmp/deployed.json
@@ -117,6 +118,7 @@ jobs:
       # ── 기존 파이프라인 사전도 같은 기준으로 ────────────────────
       # 같은 누락이 dashboard-ko 계열에도 있었다(브랜드 공백형·약칭 45건).
       - name: DNT·브랜드 전수 검사 (기존 사전)
+        if: always()   # 앞 스텝이 실패해도 돌린다 — 실패를 한 번에 보기 위해
         run: |
           set -e
           fail=0
@@ -135,6 +137,7 @@ jobs:
           node-version: '20'
 
       - name: 로더 문법 확인
+        if: always()   # 앞 스텝이 실패해도 돌린다 — 실패를 한 번에 보기 위해
         run: |
           node --check js/hc-ko-app-loader.js
           echo "✅ node --check 통과" >> $GITHUB_STEP_SUMMARY
@@ -145,6 +148,7 @@ jobs:
       # CI 는 초록불인데 로더는 영원히 옛 사전을 받는다. CDN 이 immutable 이라
       # 시간이 지나도 저절로 낫지 않는다. **blob 해시를 직접 비교한다.**
       - name: 로더 REV ↔ 사전 내용 일치
+        if: always()   # 앞 스텝이 실패해도 돌린다 — 실패를 한 번에 보기 위해
         run: |
           set -e
           REV=$(grep -oE "var REV = '[^']+'" js/hc-ko-app-loader.js | sed "s/.*'\(.*\)'/\1/")
