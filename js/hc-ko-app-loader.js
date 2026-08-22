@@ -1,4 +1,4 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.1.0
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.2.0
  * Agency Settings → Company → Whitelabel → Custom Code → Custom JavaScript 칸 전용 (순수 JS, <script> 태그 없음)
  *
  * 2026-08-22 app.hyperclass.ai 실측 구조(310개 라우트 크롤) 기준.
@@ -8,7 +8,9 @@
  *  C. provide('t') ref 방식 원격(클라이언트 포털·코스·브랜딩 등) → t ref 를 래퍼로 교체
  *  D. i18n 밖 하드코딩 문구 → 텍스트 치환 레이어(_text)
  *
- * 사전: core(호스트+flat+_text) 먼저, apps 는 백그라운드로 이어서. Cache Storage 6시간 stale-while-revalidate.
+ * 사전: core(호스트+flat+_text) 먼저, apps 는 백그라운드로 이어서.
+ *       REV 가 커밋 SHA 로 고정돼 있으면 URL 이 불변이므로 Cache Storage 를 재검증 없이 쓴다.
+ *       REV 를 바꾸면 옛 캐시 버킷은 부팅 때 자동 삭제된다.
  * 긴급 중단: 주소에 ?hcko=off 또는 콘솔에서 localStorage.hcKoOff='1'
  * 디버그:   주소에 ?hcko=debug → 콘솔 로그, window.__hcKoApp.status()
  */
@@ -28,19 +30,25 @@
   // 값이 있으면 그 로케이션 ID 에서만 동작하고 나머지는 영어 그대로입니다.
   var ALLOW = ['r6JD1nsqtk6Oln28fgrj'];
   // ▲▲▲ 단계적 배포 ▲▲▲
-  var gate = true;
-  if (ALLOW.length) {
-    var loc = (location.pathname.match(/\/v2\/location\/([^/]+)/) || [])[1];
-    if (!loc || ALLOW.indexOf(loc) < 0) return;
-    gate = true;
-  } else {
-    gate = false;   // 게이트 해제 = 전체 적용
+  var gate = ALLOW.length > 0;
+
+  function locOf() {
+    var m = location.pathname.match(/\/v2\/location\/([^/]+)/);
+    return m ? m[1] : null;
+  }
+  // 여기서 바로 return 하지 않는다. 이 앱은 새로고침 없이 라우트를 바꾸므로
+  // (로더 자신이 routeChangeEvent 를 듣는다) 로드 시점 한 번의 판정으로는
+  // 계정 전환을 놓친다. 부팅 직전과 라우트 변경 때마다 다시 본다.
+  function allowed() {
+    if (!ALLOW.length) return true;
+    var l = locOf();
+    return !!l && ALLOW.indexOf(l) >= 0;
   }
 
   /* ---------- P2. 사전 버전을 캐시 키에 반영 ---------- */
   // 커밋할 때마다 REV 가 바뀌면 CDN·Cache Storage 가 함께 무효화된다.
   // @main 고정이면 jsDelivr 24h + TTL 6h 가 직렬로 쌓여 최악 30시간 지연된다.
-  var REV = 'd6fcc4c28972d466746db748b57f0e836cae1324';
+  var REV = '3e900adc1988923ac86128272aa2f071a247a293';
   var BASE = 'https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@' + REV + '/data/';
   var URL_CORE = BASE + 'hc-ko-app-core.json';
   var URL_APPS = BASE + 'hc-ko-app-apps.json';
@@ -50,14 +58,26 @@
   var DEBUG = /[?&]hcko=debug/.test(location.search);
 
   var core = null, appsDict = null, appsKeys = null, T = null;
+  var booted = false, suspended = false;
   var stats = { host: 0, apps: 0, tref: 0, remerge: 0, fuzzy: 0, unmatched: 0, textHits: 0 };
   function log() { if (DEBUG && window.console) console.log.apply(console, ['[hc-ko]'].concat([].slice.call(arguments))); }
 
+  // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
+  // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.1.0',
+    version: '4.2.0',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
-      s.rev = REV; s.gate = gate; s.allow = ALLOW.slice();
+      s.rev = REV;
+      s.gate = gate;              // 화이트리스트가 걸려 있는가
+      s.allow = ALLOW.slice();
+      s.location = locOf();       // 지금 보고 있는 로케이션
+      s.allowedHere = allowed();  // 여기에 적용되는가
+      s.booted = booted;
+      s.suspended = suspended;    // 비허용 로케이션으로 이동해 멈춘 상태인가
+      s.coreLoaded = !!core;
+      s.appsLoaded = !!appsDict;
+      s.textEntries = T ? Object.keys(T).length : 0;
       return s;
     },
     rescan: function () { scanApps(); },
@@ -67,10 +87,13 @@
   };
 
   /* ---------- 한국어 조판 ---------- */
-  var css = document.createElement('style');
-  css.id = 'hc-ko-app-style';
-  css.textContent = 'html[lang="ko"] body{word-break:keep-all;overflow-wrap:anywhere}';
-  (document.head || document.documentElement).appendChild(css);
+  function injectCss() {
+    if (document.getElementById('hc-ko-app-style')) return;
+    var css = document.createElement('style');
+    css.id = 'hc-ko-app-style';
+    css.textContent = 'html[lang="ko"] body{word-break:keep-all;overflow-wrap:anywhere}';
+    (document.head || document.documentElement).appendChild(css);
+  }
 
   /* ---------- vue-i18n 유틸 ---------- */
   function composerOf(app) {
@@ -202,7 +225,12 @@
   }
 
   /* ---------- B/C. 별도 Vue 앱 ---------- */
-  var seen = (typeof WeakSet === 'function') ? new WeakSet() : { has: function () { return false; }, add: function () {} };
+  // 앱별 시도 횟수. 카탈로그가 아직 비어 있는 채로 마운트된 순간에 스캔이 걸리면
+  // 매칭이 실패하는데, 한 번 실패했다고 영구 제외하면 그 앱은 세션 내내 영어로 남는다.
+  // 성공 = -1(완료), 실패 = 시도 횟수. MAX_TRY 를 넘겨야 포기하고 unmatched 로 센다.
+  var MAX_TRY = 6;
+  var attempts = (typeof WeakMap === 'function') ? new WeakMap()
+    : { get: function () { return 0; }, set: function () {} };
   function wrapTRef(el) {
     try {
       var root = el._vnode && el._vnode.component, p = root && root.provides;
@@ -231,58 +259,78 @@
   var merged = (typeof WeakSet === 'function') ? new WeakSet() : { has: function () { return false; }, add: function () {} };
   function applyApp(el, g) {
     if (merged.has(g)) return true;
-    merged.add(g);
     var m = matchApp(g);
-    if (m) {
-      mergeInto(g, m.ko, 'app(' + m.how + ')');
-      stats.apps++;
-      if (m.how !== 'exact') {
-        stats.fuzzy++;
-        log(m.how + ' matched', (el.id || el.className || '').toString().slice(0, 30),
-            m.fp.slice(0, 40), m.sim ? 'sim=' + m.sim.toFixed(2) : '');
-      }
-      return true;
+    if (!m) return false;     // 실패해도 등록하지 않는다 — 재시도 여지를 남긴다
+    merged.add(g);
+    mergeInto(g, m.ko, 'app(' + m.how + ')');
+    stats.apps++;
+    if (m.how !== 'exact') {
+      stats.fuzzy++;
+      log(m.how + ' matched', (el.id || el.className || '').toString().slice(0, 30),
+          m.fp.slice(0, 40), m.sim ? 'sim=' + m.sim.toFixed(2) : '');
     }
-    stats.unmatched++;
-    log('no dict for app', (el.id || el.className || '').toString().slice(0, 30),
-        '| fp:', fingerprint(g).slice(0, 60),
-        '| top:', Object.keys(catalogOf(g)).slice(0, 8).join(','));
-    return false;
+    return true;
+  }
+  function handle(el, app) {
+    var n = attempts.get(app) || 0;
+    if (n === -1 || n >= MAX_TRY) return;          // 완료했거나 포기한 앱
+    // 호스트도 composer 를 못 찾는 순간이 있다. 한 번 실패로 영구 제외하면
+    // 메인 앱 전체(41,997키)가 세션 내내 영어로 남는다.
+    if (el.id === 'app') {
+      if (hostDone || setupHost()) { attempts.set(app, -1); return; }
+      attempts.set(app, n + 1);
+      return;
+    }
+    var g = composerOf(app);
+    if (!g) {
+      if (wrapTRef(el)) attempts.set(app, -1);
+      else attempts.set(app, n + 1);
+      return;
+    }
+    if (!appsDict) return;                          // apps 사전 도착 전 — 횟수도 세지 않는다
+    if (applyApp(el, g)) { attempts.set(app, -1); return; }
+    n += 1;
+    attempts.set(app, n);
+    if (n >= MAX_TRY) {
+      stats.unmatched++;
+      log('no dict for app (포기)', (el.id || el.className || '').toString().slice(0, 30),
+          '| fp:', fingerprint(g).slice(0, 60),
+          '| top:', Object.keys(catalogOf(g)).slice(0, 8).join(','));
+    }
   }
   function scanApps() {
-    if (!core) return;
+    if (!core || suspended) return;
     var els = document.querySelectorAll('*');
     for (var i = 0; i < els.length; i++) {
-      var el = els[i], app = el.__vue_app__;
-      if (!app || seen.has(app)) continue;
-      seen.add(app);
-      if (el.id === 'app') { if (!hostDone) setupHost(); continue; }
-      var g = composerOf(app);
-      if (g) {
-        if (!appsDict) { el.__hcPending = 1; continue; }          // apps 사전 도착 전이면 나중에
-        applyApp(el, g);
-      } else wrapTRef(el);
+      var app = els[i].__vue_app__;
+      if (app) handle(els[i], app);
     }
   }
-  function applyPendingApps() {   // apps 사전이 늦게 도착했을 때 이미 뜬 앱들에 적용
-    var els = document.querySelectorAll('*');
-    for (var i = 0; i < els.length; i++) {
-      var el = els[i], app = el.__vue_app__; if (!app || el.id === 'app') continue;
-      var g = composerOf(app); if (!g) continue;
-      applyApp(el, g);
-    }
-  }
+  function applyPendingApps() { scanApps(); }   // apps 사전이 늦게 도착했을 때
 
   /* ---------- D. 텍스트 치환 ---------- */
   var ATTRS = ['placeholder', 'title', 'aria-label', 'alt'];
   // P6. s.replace(t, v) 는 v 에 $& $' $` $$ 가 있으면 오작동한다.
   // 함수형 치환은 치환 문자열을 해석하지 않는다.
   function repl(s, t, v) { return s.replace(t, function () { return v; }); }
+
+  // 치환하면 안 되는 자리. 스니펫·커스텀 코드 편집기, 사용자가 입력 중인 본문 등.
+  // isContentEditable 은 상속을 반영하므로 부모 한 단계만 봐도 충분하다.
+  var SKIP_TAGS = { SCRIPT: 1, STYLE: 1, TEXTAREA: 1, NOSCRIPT: 1, TITLE: 1 };
+  function skipNode(n) {
+    var p = n.parentElement;
+    if (!p) return false;
+    if (SKIP_TAGS[p.tagName]) return true;
+    if (p.isContentEditable) return true;
+    return false;
+  }
   function trText(n) {
     var s = n.nodeValue; if (!s || !T) return;
     var t = s.trim(); if (!t) return;
     var v = T[t];
-    if (v !== undefined) { n.nodeValue = repl(s, t, v); stats.textHits++; }
+    if (v === undefined) return;
+    if (skipNode(n)) return;
+    n.nodeValue = repl(s, t, v); stats.textHits++;
   }
   function trAttrs(el) {
     if (!T || !el.getAttribute) return;
@@ -346,12 +394,33 @@
       return d;
     });
   }
+  // REV 를 커밋 SHA 로 고정하면 URL 이 불변이라 내용이 바뀔 수 없다.
+  // 그때 6시간마다 5.4MB 를 다시 받는 건 순수 낭비다.
+  var IMMUTABLE = /^[0-9a-f]{7,40}$/.test(REV);
+
+  // 캐시 이름에 REV 가 들어가므로 갱신할 때마다 새 버킷이 생긴다.
+  // 옛 버킷을 지우지 않으면 갱신 1회당 약 5.4MB 가 그대로 남는다.
+  // 쿼터가 차면 cache.put 이 조용히 실패하고 매 페이지 로드마다 재다운로드한다.
+  function purgeOldCaches() {
+    try {
+      if (!('caches' in window) || !caches.keys) return;
+      caches.keys().then(function (names) {
+        for (var i = 0; i < names.length; i++) {
+          var n = names[i];
+          if (n !== CACHE && n.indexOf('hc-ko-app-') === 0) {
+            caches.delete(n); log('옛 캐시 삭제', n);
+          }
+        }
+      }).catch(function () {});
+    } catch (e) {}
+  }
+
   function load(url, onStale) {
     if (!('caches' in window)) return fetchFresh(url, null);
     return caches.open(CACHE).then(function (cache) {
       return cache.match(url).then(function (hit) {
         if (!hit) return fetchFresh(url, cache);
-        var stale = Date.now() - Number(hit.headers.get('X-HC-TS') || 0) > TTL;
+        var stale = !IMMUTABLE && (Date.now() - Number(hit.headers.get('X-HC-TS') || 0) > TTL);
         return hit.text().then(function (txt) {
           var d = JSON.parse(txt);
           if (stale) fetchFresh(url, cache).then(function (nd) { if (onStale) onStale(nd); }).catch(function () {});
@@ -373,26 +442,66 @@
   }
 
   /* ---------- 부트스트랩 ---------- */
-  Promise.all([
-    load(URL_CORE, function (nd) { core = nd; T = nd._text || null; hostDone = false; setupHost(); }),
-    waitHost(20000)
-  ]).then(function (r) {
-    core = r[0] || {}; core.host = core.host || {}; core.flat = core.flat || {};
-    T = core._text || null;
-    if (r[1]) setupHost(); else log('host composer not found in 20s');
+  var scanIv = null;
+
+  function boot() {
+    if (booted || !allowed()) return;
+    booted = true;
+    injectCss();
+    purgeOldCaches();
+    Promise.all([
+      load(URL_CORE, function (nd) { core = nd; T = nd._text || null; hostDone = false; setupHost(); }),
+      waitHost(20000)
+    ]).then(function (r) {
+      core = r[0] || {}; core.host = core.host || {}; core.flat = core.flat || {};
+      T = core._text || null;
+      if (r[1]) setupHost(); else log('host composer not found in 20s');
+      if (T) pass(document.body);
+      mo.observe(document.documentElement, { subtree: true, childList: true, characterData: true, attributes: true, attributeFilter: ATTRS });
+      scanApps();
+      scanIv = setInterval(scanApps, 5000);
+      return load(URL_APPS, function (nd) { appsDict = nd.apps || {}; appsKeys = null; applyPendingApps(); });
+    }).then(function (a) {
+      if (a) {
+        appsDict = a.apps || {}; appsKeys = null;
+        scanNow();
+        log('apps dict loaded', Object.keys(appsDict).length);
+      }
+    }).catch(function (e) { log('boot failed', e); });
+  }
+
+  // 비허용 로케이션으로 넘어갔을 때. 이미 i18n 카탈로그에 병합된 한국어는
+  // 되돌릴 수 없지만, 텍스트 치환과 새 앱 적용은 여기서 멈춘다.
+  // 완전히 영어로 돌리려면 새로고침이 필요하다.
+  function suspend() {
+    if (suspended) return;
+    suspended = true;
+    try { mo.disconnect(); } catch (e) {}
+    if (scanIv) { clearInterval(scanIv); scanIv = null; }
+    if (scanTimer) { clearTimeout(scanTimer); scanTimer = null; }
+    log('비허용 로케이션 — 중단', locOf());
+  }
+
+  function resume() {
+    if (!suspended) return;
+    suspended = false;
+    try {
+      mo.observe(document.documentElement, { subtree: true, childList: true, characterData: true, attributes: true, attributeFilter: ATTRS });
+    } catch (e) {}
+    if (!scanIv) scanIv = setInterval(scanApps, 5000);
     if (T) pass(document.body);
-    mo.observe(document.documentElement, { subtree: true, childList: true, characterData: true, attributes: true, attributeFilter: ATTRS });
-    scanApps();
-    setInterval(scanApps, 5000);
+    log('허용 로케이션으로 복귀 — 재개', locOf());
+  }
+
+  function onRoute() {
+    if (!allowed()) { suspend(); return; }
+    if (!booted) { boot(); return; }
+    resume();
     // 라우트 이동은 앱이 통째로 갈리는 지점이라 디바운스를 기다리지 않는다.
-    window.addEventListener('routeChangeEvent', function () { scheduleScan(80); });
-    // apps 사전은 뒤이어
-    return load(URL_APPS, function (nd) { appsDict = nd.apps || {}; appsKeys = null; applyPendingApps(); });
-  }).then(function (a) {
-    if (a) {
-      appsDict = a.apps || {}; appsKeys = null;
-      applyPendingApps(); scanNow();
-      log('apps dict loaded', Object.keys(appsDict).length);
-    }
-  }).catch(function (e) { log('boot failed', e); });
+    scheduleScan(80);
+  }
+  window.addEventListener('routeChangeEvent', onRoute);
+
+  if (allowed()) boot();
+  else log('게이트에 막힘 — 현재 로케이션:', locOf(), '/ 허용:', ALLOW.join(','));
 })();

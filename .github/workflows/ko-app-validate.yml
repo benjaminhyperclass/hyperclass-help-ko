@@ -5,18 +5,24 @@ name: 메인 앱 한글팩 v4 검증
 # 이 워크플로가 그 구멍을 막는다. 별도 파일로 두는 이유는 두 파이프라인을
 # 분리해 두기 위해서다 — v4 사전 문제로 dashboard-ko 자동 배포가 멈추면 안 된다.
 
+# ⚠️ paths 에서 빠진 파일은 이 워크플로가 아예 돌지 않는다.
+#    실제 배포 산출물인 로더(js/hc-ko-app-loader.js)가 빠져 있으면
+#    ALLOW 변경·REV 교체·문법 오류가 전부 무검증으로 통과한다.
+#    push 와 pull_request 의 목록을 반드시 같이 유지할 것.
 on:
   push:
-    paths:
+    paths: &koapp_paths
       - 'data/hc-ko-app-core.json'
       - 'data/hc-ko-app-apps.json'
       - '_source/hc-ko-app.pretty.json'
+      - 'js/hc-ko-app-loader.js'
       - 'scripts/validate-ko-app.py'
+      - 'scripts/split-ko-app.py'
+      - 'scripts/fix-ko-app-v4.py'
       - 'scripts/whitelabel.py'
+      - '.github/workflows/ko-app-validate.yml'
   pull_request:
-    paths:
-      - 'data/hc-ko-app-*.json'
-      - '_source/hc-ko-app.pretty.json'
+    paths: *koapp_paths
   workflow_dispatch:
 
 permissions:
@@ -91,11 +97,14 @@ jobs:
           node --check js/hc-ko-app-loader.js
           echo "✅ node --check 통과" >> $GITHUB_STEP_SUMMARY
 
-      # ── 로더 REV 가 실제 커밋을 가리키는가 ──────────────────────
-      # REV 가 자리표시자로 남거나 존재하지 않는 커밋을 가리키면
-      # 로더는 사전을 영영 받지 못하고 화면은 조용히 영어로 남는다.
-      - name: 로더 REV 유효성
+      # ── 로더 REV 가 지금 커밋된 사전과 같은 내용을 가리키는가 ────
+      # "존재하는 커밋인가" 만 보면 두 번째 갱신부터 무력해진다.
+      # 사전을 고쳐 커밋해도 REV 가 옛 SHA 를 가리키면 그 커밋은 여전히 존재하므로
+      # CI 는 초록불인데 로더는 영원히 옛 사전을 받는다. CDN 이 immutable 이라
+      # 시간이 지나도 저절로 낫지 않는다. **blob 해시를 직접 비교한다.**
+      - name: 로더 REV ↔ 사전 내용 일치
         run: |
+          set -e
           REV=$(grep -oE "var REV = '[^']+'" js/hc-ko-app-loader.js | sed "s/.*'\(.*\)'/\1/")
           echo "REV=$REV"
           if [ "$REV" = "REPLACE_WITH_COMMIT_SHA" ]; then
@@ -104,7 +113,39 @@ jobs:
           if ! git cat-file -e "$REV^{commit}" 2>/dev/null; then
             echo "❌ REV 가 이 저장소에 없는 커밋입니다: $REV"; exit 1
           fi
-          if ! git cat-file -e "$REV:data/hc-ko-app-core.json" 2>/dev/null; then
-            echo "❌ REV 커밋에 data/hc-ko-app-core.json 이 없습니다"; exit 1
+          fail=0
+          for f in data/hc-ko-app-core.json data/hc-ko-app-apps.json; do
+            at_rev=$(git rev-parse "$REV:$f" 2>/dev/null || echo MISSING)
+            at_head=$(git rev-parse "HEAD:$f" 2>/dev/null || echo MISSING)
+            if [ "$at_rev" = "MISSING" ]; then
+              echo "  ❌ REV 커밋에 $f 이 없습니다"; fail=1
+            elif [ "$at_rev" != "$at_head" ]; then
+              echo "  ❌ $f 불일치"
+              echo "     REV($REV) : $at_rev"
+              echo "     HEAD       : $at_head"
+              echo "     → 사전을 바꿨으면 그 커밋 SHA 로 로더의 REV 를 갱신해야 합니다."
+              fail=1
+            else
+              echo "  ✅ $f 일치 ($at_head)"
+            fi
+          done
+          {
+            echo "## 로더 REV"
+            echo "\`$REV\`"
+            [ $fail -eq 0 ] && echo "✅ 배포될 사전과 일치" || echo "❌ 로더가 다른 사전을 가리킵니다"
+          } >> $GITHUB_STEP_SUMMARY
+          exit $fail
+
+      # ── 단계적 배포 상태를 요약에 남긴다 ────────────────────────
+      # ALLOW 는 확대하면서 [] 로 바뀌는 값이라 하드 게이트로 둘 수 없다.
+      # 대신 현재 값을 매 실행 요약에 찍어, 의도치 않은 전체 확대를 눈에 띄게 한다.
+      - name: 단계적 배포(ALLOW) 상태
+        if: always()
+        run: |
+          ALLOW=$(grep -oE "var ALLOW = \[[^]]*\]" js/hc-ko-app-loader.js | head -1)
+          echo "$ALLOW"
+          if echo "$ALLOW" | grep -qE "\[\s*\]"; then
+            echo "## 단계적 배포: ⚠️ **전체 적용** (ALLOW 비어 있음)" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "## 단계적 배포: 제한됨 — \`$ALLOW\`" >> $GITHUB_STEP_SUMMARY
           fi
-          echo "✅ REV 유효 — $REV" >> $GITHUB_STEP_SUMMARY
