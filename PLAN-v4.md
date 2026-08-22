@@ -125,6 +125,41 @@ CI 편입(지침 §3): `check_dnt_whitelabel.py` 를 C1~C7 과 **병행**으로 
 음성 테스트로 실제 차단을 실증 — `product.deleteModal.confirmationPlaceholder` 를
 일부러 `삭제` 로 되돌린 브랜치에서 C1~C7 과 새 검사기가 **각각 독립적으로** 실패했다.
 
+## 후속 라운드 2 — 네임스페이스 제외 (커밋 `ffe5ae1`~`4bd7ea6`, REV `805efe2`)
+
+`data/ko-app-exclusions.json` 도입. 등재하면 host/apps/flat/_text/레거시 네 곳에서 빠진다.
+**제외는 편집 정본이 아니라 배포본을 만들 때 적용한다** — pretty 에 원문이 남아 있어야
+결정이 뒤집혔을 때 등재만 지우고 재분할하면 돌아온다.
+
+| 사전 | 제외 전 | 제외 후 | 차이 |
+|---|---:|---:|---:|
+| host | 41,997 | 41,982 | −15 |
+| apps | 42,236 | 42,221 | −15 |
+| flat | 706 | 706 | 0 |
+| _text | 8,044 | 8,044 | 0 |
+| ghl-i18n-ko.json | 37,585 | 37,570 | −15 |
+| manual-dict-v401.json | 4,839 | 4,832 | −7 |
+| js/dashboard-ko.js | 37,593 | 37,582 | −11 |
+
+⚠️ **지침 §1-3(ko.json + manual-dict 만 제거)으로는 목적이 달성되지 않는다.**
+`build-dashboard-ko.py` 는 `dom_dict = i18n → update(existing) → update(manual)` 로 병합하는데
+`existing` 이 현재 `js/dashboard-ko.js` 다(`load_existing_dict()` 실측 37,593건).
+원천만 지우면 다음 빌드에서 existing 이 그대로 되살린다. **js/dashboard-ko.js 도 함께 지웠다.**
+
+검사기에 C8(도메인 한글 혼입)·C9(단독 DNT 토큰 회귀 고정 9키)·C10(제외 강제) 추가.
+세 검사 모두 음성 테스트로 발동 확인, 대조군 통과.
+
+⚠️ **지침 1-4 의 진단은 실측과 다르다.** `whitelabel_fix` 는 `하이퍼클래스.com` 을 만들지 않는다.
+손상은 번역기(`i18n-batch-translator.py:207` 프롬프트를 모델이 어김)가 냈다.
+`PROTECTED_URL_PATTERNS` 에 넣으면 브랜드 누출이 오히려 숨으므로, 대신 (1) 맨 도메인 치환으로
+검사-치환 사거리를 맞추고 (2) 한글 혼입 도메인 복구 규칙을 넣었다. 회귀 0건(135,355개 값 재적용).
+
+⚠️ **CI paths 는 `ui-updater.yml` 이 아니라 `ko-app-validate.yml` 에 넣었다.**
+전자의 push 트리거는 번역→빌드→커밋→CDN 퍼지 전체를 돌려, 레지스트리를 고칠 때마다
+재빌드·배포가 일어난다(규칙 6 위반).
+
+대기 2건은 `CHECKLIST-pending.md` 참조.
+
 ## 남은 것 (별도 작업)
 
 1. **기존 사전 축소** — Stage 5 수치를 보고 판단. 원천 레벨에서 해야 한다.
