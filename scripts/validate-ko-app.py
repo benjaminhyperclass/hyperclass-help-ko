@@ -34,6 +34,7 @@ ROOT = os.path.normpath(os.path.join(HERE, '..'))
 sys.path.insert(0, HERE)
 
 from whitelabel import whitelabel_check, is_exception  # noqa: E402
+from exclusions import load_prefixes, english_originals  # noqa: E402
 
 
 # ── C1 화이트리스트 ─────────────────────────────────────────────
@@ -118,6 +119,30 @@ def html_tags(s):
 
 UNSAFE_REPL = ["$&", "$'", '$`', '$$']
 
+# ── C8 도메인에 한글 혼입 ──────────────────────────────────────
+# 번역기가 'gohighlevel.com/x' 를 '하이퍼클래스.com/x' 로 옮겨 놓은 사고가 있었다.
+# 존재하지 않는 도메인이라 링크가 죽는데, 브랜드가 이미 지워져 화이트라벨 검사에는
+# 걸리지 않는다. 도메인 라벨에 한글이 있으면 무조건 위반이다.
+DOMAIN_RE = re.compile(r'[\w가-힣][\w가-힣.-]*\.(?:com|net|org|io|ai|co|kr)(?![\w가-힣])')
+HANGUL_RE = re.compile(r'[가-힣]')
+
+# ── C9 단독 DNT 토큰 회귀 고정 목록 ────────────────────────────
+# 앱이 사용자 입력과 **문자열 비교**에 쓰는 리터럴 그 자체다.
+# 키 이름이 용도를 말한다 — Keyword / Token / confirmWord / confirmationPlaceholder.
+# 번역되면 안내대로 입력해도 통과하지 못한다(= 조용한 기능 고장).
+# 이 목록은 하드코딩이다. 앞으로 이 키들이 영문 토큰이 아닌 값을 가지면 무조건 실패.
+DNT_LOCKED_KEYS = {
+    'product.deleteModal.confirmationPlaceholder': 'DELETE',
+    'crmObjectsSettingsApp.common.deleteConfirmKeyword': 'DELETE',
+    'funnelWebsiteApp.store.deleteConfirmationToken': 'DELETE',
+    'usersMicroApp.identityPlatform.deleteModal.keyword': 'DELETE',
+    'schemaList.deleteConfirmText': 'DELETE',
+    'confirmModal.confirmPlaceholder': 'CONFIRM',
+    'confirmModal.confirmText': 'CONFIRM',
+    'marketplace.confirmText': 'CONFIRM',
+    'campaign.email.lcEmail.migrationModal.confirmWord': 'CONFIRM',
+}
+
 
 def collect(core, apps):
     """(출처, dotted key, 한국어 값) 목록. 화이트라벨 검사 대상 전체."""
@@ -159,7 +184,7 @@ def main():
     rows = collect(core, apps)
     text = core.get('_text') or {}
 
-    v = {c: [] for c in ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7')}
+    v = {c: [] for c in ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10')}
 
     # ── C1 화이트라벨 ──────────────────────────────────────────
     for src, key, ko in rows:
@@ -245,6 +270,51 @@ def main():
         if why:
             v['C7'].append({'key': en[:60], 'ko': ko[:60], 'why': why})
 
+    # ── C8 도메인에 한글 혼입 ──────────────────────────────────
+    for src, key, ko in rows:
+        for m in DOMAIN_RE.finditer(ko):
+            dom = m.group(0)
+            if HANGUL_RE.search(dom):
+                v['C8'].append({'src': src, 'key': key, 'domain': dom, 'ko': ko[:90]})
+                break
+
+    # ── C9 단독 DNT 토큰 (회귀 고정) ───────────────────────────
+    # ko_by_key 는 host/flat/app 를 전부 담고 있다 — 어느 surface 에 있든 잡힌다.
+    for key, token in DNT_LOCKED_KEYS.items():
+        variants = ko_by_key.get(key)
+        if not variants:
+            continue                      # 배포본에 없으면 검사 대상 아님
+        for ko in sorted(variants):
+            if ko.strip() != token:
+                v['C9'].append({'key': key, 'expected': token, 'got': ko[:60],
+                                'why': '앱이 사용자 입력과 비교하는 리터럴 — 번역되면 확인 절차를 통과할 수 없다'})
+
+    # ── C10 제외 레지스트리 강제 ───────────────────────────────
+    ex_prefixes = load_prefixes()
+    if ex_prefixes:
+        ex_en = english_originals(ex_prefixes)
+        # 경로 기준 — core/apps 의 host·apps·flat
+        for src, key, ko in rows:
+            if src == '_text':
+                continue
+            if any(key.startswith(p) for p in ex_prefixes):
+                v['C10'].append({'src': src, 'key': key, 'ko': ko[:60], 'why': '제외 등재 네임스페이스'})
+        # 영어 원문 기준 — _text 와 레거시 사전
+        for en_key in text:
+            if en_key.strip() in ex_en:
+                v['C10'].append({'src': '_text', 'key': en_key[:70], 'ko': text[en_key][:60],
+                                 'why': '제외 등재 네임스페이스의 영어 원문'})
+        for path, name in ((os.path.join(ROOT, 'data/ghl-i18n-ko.json'), 'ghl-i18n-ko.json'),
+                           (os.path.join(ROOT, 'data/manual-dict-v401.json'), 'manual-dict-v401.json')):
+            if not os.path.exists(path):
+                continue
+            with open(path, encoding='utf-8') as f:
+                legacy = json.load(f)
+            for en_key, ko in legacy.items():
+                if isinstance(en_key, str) and en_key.strip() in ex_en:
+                    v['C10'].append({'src': name, 'key': en_key[:70], 'ko': str(ko)[:60],
+                                     'why': '제외 등재 네임스페이스의 영어 원문 (레거시 사전)'})
+
     # ── 리포트 ─────────────────────────────────────────────────
     LABEL = {
         'C1': '화이트라벨 브랜드 잔존',
@@ -254,19 +324,22 @@ def main():
         'C5': 'vue-i18n 이스케이프 소실',
         'C6': 'HTML 태그 불일치',
         'C7': '_text 안전성',
+        'C8': '도메인에 한글 혼입',
+        'C9': '단독 DNT 토큰 (회귀 고정)',
+        'C10': '제외 네임스페이스 잔존',
     }
     print(f'검사 대상 — 한국어 값 {len(rows):,}개 / en·ko 쌍 {len(pairs):,}개 / _text {len(text):,}개')
     print()
     print(f'{"검사":<6}{"항목":<26}{"위반":>8}')
     print('-' * 42)
-    for c in ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7'):
+    for c in ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10'):
         print(f'{c:<6}{LABEL[c]:<24}{len(v[c]):>8,}')
     print('-' * 42)
     total = sum(len(x) for x in v.values())
     print(f'{"합계":<30}{total:>8,}')
     print()
 
-    for c in ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7'):
+    for c in ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10'):
         if not v[c]:
             continue
         print(f'── {c} {LABEL[c]} ({len(v[c]):,}건) ' + '─' * 20)
@@ -289,8 +362,9 @@ def main():
     def blocking_rows(c):
         return [x for x in v[c] if x.get('src') != 'ref(미배포)']
 
-    blocking = sum(len(blocking_rows(c)) for c in ('C1', 'C2', 'C3', 'C4', 'C5', 'C6'))
-    shelved = sum(len(v[c]) for c in ('C1', 'C2', 'C3', 'C4', 'C5', 'C6')) - blocking
+    HARD = ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C8', 'C9', 'C10')
+    blocking = sum(len(blocking_rows(c)) for c in HARD)
+    shelved = sum(len(v[c]) for c in HARD) - blocking
     if blocking:
         print(f'❌ 차단 위반 {blocking:,}건 — 배포를 중단합니다. '
               f'(미배포 키 {shelved:,}건 / C7 {len(v["C7"])}건은 경고)')

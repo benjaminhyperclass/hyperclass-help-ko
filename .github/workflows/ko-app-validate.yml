@@ -17,6 +17,7 @@ on:
       - 'data/ghl-i18n-ko.json'
       - 'data/manual-dict-v401.json'
       - 'data/whitelabel-exceptions.json'
+      - 'data/ko-app-exclusions.json'
       - '_source/hc-ko-app.pretty.json'
       - '_source/hc-ko-app-reference.json'
       - 'js/hc-ko-app-loader.js'
@@ -24,6 +25,7 @@ on:
       - 'scripts/validate-ko-app.py'
       - 'scripts/split-ko-app.py'
       - 'scripts/merge-ko-app.py'
+      - 'scripts/exclusions.py'
       - 'scripts/fix-ko-app-v4.py'
       - 'scripts/fix-brand-legacy.py'
       - 'scripts/whitelabel.py'
@@ -79,10 +81,10 @@ jobs:
 
       # ── C1~C7 검증 ─────────────────────────────────────────────
       # validate-ko-app.py 는 위반이 있으면 exit(1) 한다. 경고만 하지 않는다.
-      - name: 사전 검증 (C1~C7)
+      - name: 사전 검증 (C1~C10)
         run: |
           set -o pipefail
-          echo "## 한글팩 v4 검증" >> $GITHUB_STEP_SUMMARY
+          echo "## 한글팩 v4 검증 (C1~C10)" >> $GITHUB_STEP_SUMMARY
           echo '```' >> $GITHUB_STEP_SUMMARY
           python3 scripts/validate-ko-app.py --max-show 20 2>&1 | tee /tmp/validate.log
           echo '```' >> $GITHUB_STEP_SUMMARY
