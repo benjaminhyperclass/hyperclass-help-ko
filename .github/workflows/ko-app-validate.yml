@@ -14,11 +14,18 @@ on:
     paths: &koapp_paths
       - 'data/hc-ko-app-core.json'
       - 'data/hc-ko-app-apps.json'
+      - 'data/ghl-i18n-ko.json'
+      - 'data/manual-dict-v401.json'
+      - 'data/whitelabel-exceptions.json'
       - '_source/hc-ko-app.pretty.json'
+      - '_source/hc-ko-app-reference.json'
       - 'js/hc-ko-app-loader.js'
+      - 'check_dnt_whitelabel.py'
       - 'scripts/validate-ko-app.py'
       - 'scripts/split-ko-app.py'
+      - 'scripts/merge-ko-app.py'
       - 'scripts/fix-ko-app-v4.py'
+      - 'scripts/fix-brand-legacy.py'
       - 'scripts/whitelabel.py'
       - '.github/workflows/ko-app-validate.yml'
   pull_request:
@@ -86,6 +93,41 @@ jobs:
         run: |
           sed -n '/검사 *항목/,/합계/p' /tmp/validate.log >> $GITHUB_STEP_SUMMARY || true
           tail -2 /tmp/validate.log >> $GITHUB_STEP_SUMMARY || true
+
+      # ── DNT + 브랜드 전수 검사 (C1~C7 과 병행) ──────────────────
+      # C1~C7 이 놓쳤던 두 축을 따로 본다.
+      #  · surface 전수 — host/apps/flat/_text 를 하드코딩 없이 모두 순회
+      #  · D3 모달 불일치 — 안내문은 'DELETE' 를 지켰는데 입력칸만 번역된 자기모순.
+      #    이 축이 실제 버그 3건을 찾아냈다. C1~C7 에는 없던 검사다.
+      # 영어 원문은 _source/hc-ko-app-reference.json 에서 유도한다
+      # (6.8MB EN 카탈로그를 따로 커밋하지 않기 위해 — 결과 동등성 실증됨).
+      - name: DNT·브랜드 전수 검사 (v4 배포본)
+        run: |
+          set -o pipefail
+          python3 scripts/merge-ko-app.py /tmp/deployed.json
+          echo "## DNT·브랜드 검사 — v4 배포본" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          python3 check_dnt_whitelabel.py _source/hc-ko-app-reference.json /tmp/deployed.json \
+            2>&1 | tee /tmp/dnt.log | grep -E '^(D1|D2|D3|W1|TOTAL)' >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          grep -E '^(D1|D2|D3|W1|TOTAL)' /tmp/dnt.log
+          grep -q '^TOTAL VIOLATIONS: 0$' /tmp/dnt.log || {
+            echo "❌ 위반 상세:"; head -60 /tmp/dnt.log; exit 1; }
+
+      # ── 기존 파이프라인 사전도 같은 기준으로 ────────────────────
+      # 같은 누락이 dashboard-ko 계열에도 있었다(브랜드 공백형·약칭 45건).
+      - name: DNT·브랜드 전수 검사 (기존 사전)
+        run: |
+          set -e
+          fail=0
+          for f in data/ghl-i18n-ko.json data/manual-dict-v401.json; do
+            out=$(python3 check_dnt_whitelabel.py _source/hc-ko-app-reference.json "$f" --flat-dict 2>&1)
+            line=$(echo "$out" | grep '^TOTAL')
+            echo "  $f — $line"
+            echo "- \`$f\` — $line" >> $GITHUB_STEP_SUMMARY
+            echo "$line" | grep -q 'TOTAL VIOLATIONS: 0' || { echo "$out" | head -40; fail=1; }
+          done
+          exit $fail
 
       # ── 로더 문법 ───────────────────────────────────────────────
       - uses: actions/setup-node@v4
