@@ -152,6 +152,19 @@ def brand_spaced(s):
 PARTICLE = {'은': '는', '이': '가', '을': '를', '과': '와', '으로': '로', '아': '야'}
 PARTICLE_RE = re.compile(r'하이퍼클래스(으로|은|이|을|과|아)(?![가-힣])')
 
+# 원문이 'HighLevel 을' 처럼 **공백을 두고** 조사를 붙여 놓은 경우가 있다.
+# 브랜드만 치환하면 '하이퍼클래스 을' 이 되어 공백과 조사가 둘 다 틀린다.
+# 한국어 조사는 앞말에 붙여 쓰므로 공백을 없애고 조사도 함께 바로잡는다.
+# 어절 경계가 모호한 조사(도/만/나/고/며 등)는 오탐 위험이 있어 제외한다.
+SPACED_JOSA = ['으로', '에서', '은', '는', '이', '가', '을', '를', '과', '와', '의', '에', '로']
+SPACED_RE = re.compile(r'하이퍼클래스\s+(' + '|'.join(SPACED_JOSA) + r')(?![가-힣])')
+
+
+def fix_particles(s):
+    """공백형을 먼저 붙인 뒤 붙임형 조사를 교정한다. 순서가 중요하다."""
+    s = SPACED_RE.sub(lambda m: '하이퍼클래스' + m.group(1), s)
+    return PARTICLE_RE.sub(lambda m: '하이퍼클래스' + PARTICLE[m.group(1)], s)
+
 # ── 2-D _text 무의미 항목 (키 == 값) ──────────────────────────
 TEXT_DROP = ['AI 요약', 'Facebook 광고 보고서', 'Google 광고', 'Google 광고 보고서', 'URL 리다이렉트']
 
@@ -329,7 +342,7 @@ def main():
                 if isinstance(val, dict):
                     stack.append((path + [k], val))
                 elif isinstance(val, str) and '하이퍼클래스' in val:
-                    new = PARTICLE_RE.sub(lambda m: '하이퍼클래스' + PARTICLE[m.group(1)], val)
+                    new = fix_particles(val)
                     if new != val:
                         node[k] = new
                         log.append(('2-L 조사 교정', label, '.'.join(path + [k]), val, new))
@@ -337,7 +350,7 @@ def main():
     for store in ('flat', '_text'):
         for k, val in list(o[store].items()):
             if isinstance(val, str) and '하이퍼클래스' in val:
-                new = PARTICLE_RE.sub(lambda m: '하이퍼클래스' + PARTICLE[m.group(1)], val)
+                new = fix_particles(val)
                 if new != val:
                     o[store][k] = new
                     log.append(('2-L 조사 교정', store, k, val, new))
