@@ -1,0 +1,22 @@
+{
+  "_comment": "사전에서 제외할 네임스페이스. 여기 등재되면 host/flat/_text/레거시 사전 네 곳 모두에서 빠진다.",
+  "_적용": "namespaces 만 적용된다. pending 은 기록용이며 결정이 나면 namespaces 로 옮기고 재분할하면 끝난다.",
+  "_주의": "제외는 배포본(data/)을 만들 때 적용한다. 편집 정본 _source/hc-ko-app.pretty.json 에는 원문이 그대로 남는다 — 되돌리려면 등재를 지우고 재분할하면 된다.",
+  "namespaces": [
+    {
+      "prefix": "campaign.regulatoryBundle.ejectModal.",
+      "reason": "GHL이 제3자 에이전시(Elite Marketing Authority) 퇴출 시 뿌린 일회성 공지. 하이퍼클래스 무관이며, 표시되면 '귀하의 계정이 취소됩니다'라고 말한다",
+      "decided": "2026-08-22"
+    }
+  ],
+  "pending": [
+    {
+      "prefix": "agency.gdpr.",
+      "reason": "법적 진술문 — 처리자 지위 및 DPA/SCC 주장. 화면 노출 범위 확인 후 결정"
+    },
+    {
+      "prefix": "communitiesApp.universityCommunity.",
+      "reason": "CTA 외부 링크 목적지 확인 후 결정"
+    }
+  ]
+}
