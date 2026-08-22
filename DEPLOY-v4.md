@@ -24,7 +24,7 @@ Agency Settings → Company → **Whitelabel → Custom Code → Custom JavaScri
 
 ```html
 <script>window.HC_I18N_EXCLUDE = ["1r0pJRd1cQQ5DZsjSbc9"];</script>
-<script src="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@LOADER_SHA/js/hc-ko-app-loader.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@954629cf85d414eb45b5fb2379b2eb7b3ba7d107/js/hc-ko-app-loader.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@8fabb6a/js/dashboard-ko.min.js"></script>
 ```
 
