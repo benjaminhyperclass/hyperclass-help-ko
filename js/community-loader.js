@@ -1,4 +1,4 @@
-/* Hyperclass 한글팩 — 커뮤니티 무설치 로더 v2.0.0
+/* Hyperclass 한글팩 — 커뮤니티 무설치 로더 v2.0.1 (customJs 새니타이저 호환: 꺾쇠 비교연산자 제거)
    사전: raw.githubusercontent (5분 내 반영) · Cache API 재방문 즉시 로드
    구 v1.0.0(50건 인라인)을 이 블록으로 완전 교체할 것 */
 (function () {
@@ -28,7 +28,7 @@
   }
   function trAttrs(el) {
     if (!M || !el.getAttribute) return;
-    for (var i = 0; i < ATTRS.length; i++) {
+    for (var i = 0; ATTRS.length > i; i++) {
       var a = ATTRS[i], s = el.getAttribute(a);
       if (!s) continue;
       var t = s.trim(), v = M[t];
@@ -41,18 +41,18 @@
     while ((n = w.nextNode())) trText(n);
     if (root.querySelectorAll) {
       var els = root.querySelectorAll('[placeholder],[title],[aria-label],[alt]');
-      for (var i = 0; i < els.length; i++) trAttrs(els[i]);
+      for (var i = 0; els.length > i; i++) trAttrs(els[i]);
       if (root.nodeType === 1) trAttrs(root);
     }
   }
 
   var mo = new MutationObserver(function (muts) {
     if (!M) return;
-    for (var i = 0; i < muts.length; i++) {
+    for (var i = 0; muts.length > i; i++) {
       var m = muts[i];
       if (m.type === 'characterData') trText(m.target);
       else if (m.type === 'attributes') trAttrs(m.target);
-      else if (m.addedNodes) for (var j = 0; j < m.addedNodes.length; j++) {
+      else if (m.addedNodes) for (var j = 0; m.addedNodes.length > j; j++) {
         var nd = m.addedNodes[j];
         if (nd.nodeType === 3) trText(nd);
         else if (nd.nodeType === 1) pass(nd);
@@ -71,7 +71,7 @@
     setTimeout(function () { pass(document.body); }, 1200);
   }
   function accept(dict) {
-    for (var i = 0; i < DNT.length; i++) delete dict[DNT[i]]; // 심층 방어
+    for (var i = 0; DNT.length > i; i++) delete dict[DNT[i]]; // 심층 방어
     M = dict;
     if (document.body) start();
     else document.addEventListener('DOMContentLoaded', start, { once: true });

@@ -73,6 +73,21 @@ jsDelivr 경로는 @main 캐시 지연을 다시 데려온다. 데이터(fetch+J
 - 구 `community-ko.js`(50건, 2026-05)는 **폐기 예정** — 슬롯 교체 확인 후
   별도 승인으로 삭제한다 (아직 삭제 금지).
 
+## [확정] ClientClub customJs에 '<' 문자 금지 — 2026-08-22
+
+ClientPortal은 그룹 customJs를 주입 전에 `e.replace(/<\/?[^>]+(>|$)/g,"")`로
+HTML 태그를 제거한다. **`i < n` 같은 비교 연산자도 태그로 오인**돼 다음 `>`까지
+통째로 삭제되고(실측: v3.0.0 로더에서 4,288자 소실), 그 결과가 `new Function`
+검증에 실패하면 **주입 전체가 스킵돼 전면 영어로 회귀**한다
+(콘솔: "Custom JS is invalid — skipping injection: Unexpected identifier 'TTL'").
+
+- 규칙: customJs 칸에 넣는 코드는 `<` 문자 자체를 쓰지 않는다. 비교는
+  역방향(`n > i`)으로 쓴다. 주석·문자열 포함 전체가 대상이다.
+- 검증식: `code.replace(/<\/?[^>]+(>|$)/g,"").trim() === code.trim()` 이
+  성립해야 한다(무손실). 배포 전 필수 체크.
+- 수정본: 로더 v3.0.1(`js/community-i18n-loader.js`) · v2.0.1
+  (`js/community-loader.js`). 라이브 페이지 주입 실증 완료(영→한 전환 확인).
+
 ## 관련 파일
 
 - `data/whitelabel-exceptions.json` — 화이트라벨 검사·치환 제외 값 (사유 포함)
