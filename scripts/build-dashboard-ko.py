@@ -186,10 +186,26 @@ def main():
 // Auto-built by build-dashboard-ko.py
 
 (function(){{
+// 서브계정 옵트아웃 게이트.
+// ⚠️ 이 블록을 지우지 마라. 2026-06-10(8fabb6a)에 min.js 만 손으로 고쳐 넣었다가
+//    템플릿에 없어서 2026-06-23 자동 빌드가 통째로 날려 버렸고, 그 뒤 두 달 반 동안
+//    Custom JS 핀을 @8fabb6a 에서 움직일 수 없었다(움직이면 그 고객의 옵트아웃이 깨진다).
+//    v4 로더(hc-ko-app-loader.js)의 excluded() 와 **글자 그대로 같은 판정**이어야 한다 —
+//    두 레이어가 제외 대상을 다르게 보면 그 계정만 반쪽 한국어가 된다.
+//    검사기 C11 이 이 블록의 존재와 세 진입점 가드를 강제한다.
+function hcEx(){{
+  try{{
+    var c=window.HC_I18N_EXCLUDE||["1r0pJRd1cQQ5DZsjSbc9"];
+    var m=window.location.pathname.match(/\\/location\\/([^\\/]+)/);
+    return !!(m&&c.indexOf(m[1])>-1);
+  }}catch(e){{return false;}}
+}}
+
 var t={dom_dict_js};
 
 // DOM 교체 (TreeWalker — 메인 + iframe 모두 커버)
 function rDoc(doc){{
+  if(hcEx())return;
   var nodes=[];
   var walker=doc.createTreeWalker(doc.body,NodeFilter.SHOW_TEXT,null,false);
   while(walker.nextNode())nodes.push(walker.currentNode);
@@ -216,9 +232,10 @@ function rDoc(doc){{
   }});
 }}
 
-function r(){{ rDoc(document); }}
+function r(){{ if(hcEx())return; rDoc(document); }}
 
 function rIframe(){{
+  if(hcEx())return;
   document.querySelectorAll('iframe').forEach(function(f){{
     try{{
       var d=f.contentDocument||f.contentWindow.document;
