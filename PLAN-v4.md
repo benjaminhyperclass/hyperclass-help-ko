@@ -128,8 +128,10 @@ CI 편입(지침 §3): `check_dnt_whitelabel.py` 를 C1~C7 과 **병행**으로 
 ## 남은 것 (별도 작업)
 
 1. **기존 사전 축소** — Stage 5 수치를 보고 판단. 원천 레벨에서 해야 한다.
-2. **조사 오류 29건** — `data/ghl-i18n-ko.json` 28건, `manual-dict-v401.json` 1건에
-   `하이퍼클래스은/을/이` 가 남아 있다. v4 와 같은 유형이며 이번 범위 밖이라 손대지 않았다.
+2. ~~조사 오류 29건~~ **해소됨** (`b5f8ce5`) — `scripts/fix-brand-legacy.py` 로
+   `ghl-i18n-ko.json`·`manual-dict-v401.json` 전부 교정. 단 **`js/dashboard-ko.js` 는
+   다음 빌드에서 반영**된다. 즉시 반영하려면 `data/ghl-i18n-en.json` 말미 개행 토글로
+   ui-updater 를 트리거해야 한다 — 배포 타이밍은 벤자민 판단이라 이번엔 트리거하지 않았다.
 3. **`HighLevel` 22개 키 치환 — 사후 승인 필요.** 지침 §2-1 은 일괄 치환 금지였으나
    **그 지침이 오기 전 라운드에서 이미 `하이퍼클래스` 로 치환됐다.** 특히 아래는 되돌릴지 판단이 필요하다.
    - `agency.gdpr.*` 4건 — GDPR 안내에서 처리자/컨트롤러를 지칭. 지금은
@@ -143,7 +145,8 @@ CI 편입(지침 §3): `check_dnt_whitelabel.py` 를 C1~C7 과 **병행**으로 
    v4 는 둘 다 자체 교정으로 처리했지만 `data/ghl-i18n-ko.json` 쪽은 그대로다.
    - 서브도메인 없는 `gohighlevel.com` — `[\w-]+\.gohighlevel\.com` 이 앞 라벨을 요구해 빠진다.
    - 브랜드 공백형·약칭 — `LeadConnector` 붙여쓰기만 검사한다. `Lead Connector` / `LC Phone` /
-     `LC Email` 이 통과한다. `data/ghl-i18n-ko.json` 에 **17건 잔존**.
+     `LC Email` 이 통과한다. **값 자체는 `b5f8ce5` 로 전부 교정했고 CI 가 재발을 막지만,
+     `whitelabel.py` 본체는 여전히 이 변형을 모른다** — 새 번역이 들어올 때마다 같은 누락이 난다.
 5. **`_text` ↔ 사용자 데이터 충돌** — 한 단어 항목 212건(`Grant→부여`, `Retirees→은퇴자`,
    `Blueberry→블루베리` 등)이 연락처명·태그·스마트리스트명과 겹칠 수 있다.
    **212건 전부 기존 `dashboard-ko` 사전에도 있어 이미 프로덕션 동작이다.** v4 회귀가 아니다.
