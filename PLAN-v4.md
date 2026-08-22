@@ -57,9 +57,33 @@
 
 - [x] Stage 0 — v4 파일 `~/Downloads/hyperclasskoappv4/` 에서 확인. 저장소 배치 완료.
       영향: 없음 (커밋 전)
-- [ ] Stage 1 — 검증 스크립트 작성·실행
-- [ ] Stage 2 — 사전 수정
-- [ ] Stage 3 — 로더 패치
-- [ ] Stage 4 — 커밋·해시 고정·CDN 확인
-- [ ] Stage 5 — 겹침 분석 (보고만)
-- [ ] Stage 6 — 체크리스트 출력
+- [x] Stage 1 — `scripts/validate-ko-app.py` 작성·실행. 베이스라인 C1 149 / C2 9 / C3 10 / C5 1 / C6 1 / C7 5.
+      영향: 지침의 예상치(C1 80, C2 0, C3 6)와 달랐다. C1 149 는 고유 키 79개에 대한 위반 건수라 실질 일치.
+      **C2 9건은 지침이 0건으로 본 것이 틀렸다** — 검사 대상을 키가 아니라 영어 원문으로 잡아야 드러난다.
+- [x] Stage 2 — `scripts/fix-ko-app-v4.py` 로 총 187건 교정. 재분할 후 C1~C7 전부 0.
+      영향: `_source/hc-ko-app-reference.json` 의 ko 도 함께 동기화(412건). pretty 가 정본이다.
+- [x] Stage 3 — 로더 v4.1.0 P1~P7 적용. `node --check` 통과.
+      영향: P4 를 3단(정확→유사도→포함)으로 만들면서 임계값을 `MIN_TOP 2 / MIN_SIM 0.6 / MIN_GAP 0.15 / CONTAIN_MAX 4` 로 확정.
+      실제 24개 앱에 ns 추가·삭제를 가한 46개 시뮬레이션 전부 통과(로더 소스에서 함수를 떼어 실행).
+- [x] Stage 4 — 커밋 A `d6fcc4c`(data) → REV 고정 → 커밋 B `958fb11`(loader) → push.
+      jsDelivr 200 / `access-control-allow-origin: *` / `immutable` 확인. CDN 실물에서 교정 내용까지 확인.
+      영향: REV 고정으로 CDN 캐시가 `immutable` 이 됐다. 사전을 바꾸면 **반드시 REV 를 새 SHA 로 갱신**해야 한다.
+- [x] Stage 5 — 겹침 분석만 수행, 제거는 하지 않음 (`scripts/analyze-dict-overlap.js`).
+      98.0%(36,851건) 겹침 / 742건만 고유 / 실제 표현 충돌 556건.
+      영향: **`js/dashboard-ko.js` 를 직접 줄이면 다음 자동 빌드에서 되돌아온다.**
+      `build-dashboard-ko.py` 가 `data/ghl-i18n-{en,ko}.json` + `manual-dict-v401.json` 에서 재생성하기 때문.
+      축소는 원천이나 빌드 제외 목록으로 해야 한다.
+- [x] Stage 6 — 브라우저 체크리스트 (아래 별도 섹션)
+- [x] 추가 — `ui-updater.yml` 판단: **`exit(1)` 은 이미 있다**(317행, 2026-08-12 승격 `4276d3d`).
+      지침의 전제가 낡았다. 실제 구멍은 그 게이트가 **평면 사전만** 검사해 v4 중첩 카탈로그를 그냥 통과한다는 것.
+      `ui-updater.yml` 을 고치는 대신 `.github/workflows/ko-app-validate.yml` 을 새로 두어 파이프라인을 분리했다.
+      영향: 기존 자동 배포 경로는 그대로다. v4 사전 문제로 dashboard-ko 배포가 멈추지 않는다.
+
+## 남은 것 (별도 작업)
+
+1. **기존 사전 축소** — Stage 5 수치를 보고 판단. 원천 레벨에서 해야 한다.
+2. **조사 오류 29건** — `data/ghl-i18n-ko.json` 28건, `manual-dict-v401.json` 1건에
+   `하이퍼클래스은/을/이` 가 남아 있다. v4 와 같은 유형이며 이번 범위 밖이라 손대지 않았다.
+3. **`whitelabel.py` 구멍** — 서브도메인 없는 `gohighlevel.com` 이 치환·검사 양쪽에서 빠진다.
+   `[\w-]+\.gohighlevel\.com` 패턴이 앞에 라벨을 요구하기 때문. v4 는 개별 교정으로 처리했다.
+   파이프라인 전체를 고치려면 `scripts/whitelabel.py` 수정 승인이 필요하다.

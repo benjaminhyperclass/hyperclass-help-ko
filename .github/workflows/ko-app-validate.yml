@@ -1,0 +1,110 @@
+name: 메인 앱 한글팩 v4 검증
+
+# ui-updater.yml 의 화이트라벨 게이트는 dashboard-ko 계열 **평면** 사전만 검사한다.
+# v4 사전(hc-ko-app-*)은 중첩 카탈로그라 그 게이트를 그냥 통과한다.
+# 이 워크플로가 그 구멍을 막는다. 별도 파일로 두는 이유는 두 파이프라인을
+# 분리해 두기 위해서다 — v4 사전 문제로 dashboard-ko 자동 배포가 멈추면 안 된다.
+
+on:
+  push:
+    paths:
+      - 'data/hc-ko-app-core.json'
+      - 'data/hc-ko-app-apps.json'
+      - '_source/hc-ko-app.pretty.json'
+      - 'scripts/validate-ko-app.py'
+      - 'scripts/whitelabel.py'
+  pull_request:
+    paths:
+      - 'data/hc-ko-app-*.json'
+      - '_source/hc-ko-app.pretty.json'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ko-app-validate-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # REV 유효성 확인에 과거 커밋이 필요하다
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      # ── 배포본이 편집 정본과 일치하는가 ────────────────────────
+      # core/apps 를 직접 고치면 pretty 와 어긋나 다음 갱신에서 조용히 되돌아간다.
+      # 재분할 결과와 커밋된 배포본이 바이트 단위로 같아야 한다.
+      - name: 배포본 ↔ 편집 정본 일치 확인
+        run: |
+          set -e
+          cp data/hc-ko-app-core.json /tmp/core.committed
+          cp data/hc-ko-app-apps.json /tmp/apps.committed
+          python3 scripts/split-ko-app.py
+          fail=0
+          for f in core apps; do
+            if cmp -s "data/hc-ko-app-$f.json" "/tmp/$f.committed"; then
+              echo "  ✅ $f 일치"
+            else
+              echo "  ❌ $f 불일치 — _source/hc-ko-app.pretty.json 에서 재분할되지 않았습니다"
+              echo "     로컬에서 'python3 scripts/split-ko-app.py' 후 다시 커밋하세요."
+              fail=1
+            fi
+          done
+          {
+            echo "## 배포본 ↔ 편집 정본"
+            [ $fail -eq 0 ] && echo "✅ 일치" || echo "❌ 불일치 — 재분할 누락"
+          } >> $GITHUB_STEP_SUMMARY
+          exit $fail
+
+      # ── C1~C7 검증 ─────────────────────────────────────────────
+      # validate-ko-app.py 는 위반이 있으면 exit(1) 한다. 경고만 하지 않는다.
+      - name: 사전 검증 (C1~C7)
+        run: |
+          set -o pipefail
+          echo "## 한글팩 v4 검증" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          python3 scripts/validate-ko-app.py --max-show 20 2>&1 | tee /tmp/validate.log
+          echo '```' >> $GITHUB_STEP_SUMMARY
+        continue-on-error: false
+
+      - name: 검증 결과 요약
+        if: always()
+        run: |
+          sed -n '/검사 *항목/,/합계/p' /tmp/validate.log >> $GITHUB_STEP_SUMMARY || true
+          tail -2 /tmp/validate.log >> $GITHUB_STEP_SUMMARY || true
+
+      # ── 로더 문법 ───────────────────────────────────────────────
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: 로더 문법 확인
+        run: |
+          node --check js/hc-ko-app-loader.js
+          echo "✅ node --check 통과" >> $GITHUB_STEP_SUMMARY
+
+      # ── 로더 REV 가 실제 커밋을 가리키는가 ──────────────────────
+      # REV 가 자리표시자로 남거나 존재하지 않는 커밋을 가리키면
+      # 로더는 사전을 영영 받지 못하고 화면은 조용히 영어로 남는다.
+      - name: 로더 REV 유효성
+        run: |
+          REV=$(grep -oE "var REV = '[^']+'" js/hc-ko-app-loader.js | sed "s/.*'\(.*\)'/\1/")
+          echo "REV=$REV"
+          if [ "$REV" = "REPLACE_WITH_COMMIT_SHA" ]; then
+            echo "❌ REV 가 자리표시자 그대로입니다"; exit 1
+          fi
+          if ! git cat-file -e "$REV^{commit}" 2>/dev/null; then
+            echo "❌ REV 가 이 저장소에 없는 커밋입니다: $REV"; exit 1
+          fi
+          if ! git cat-file -e "$REV:data/hc-ko-app-core.json" 2>/dev/null; then
+            echo "❌ REV 커밋에 data/hc-ko-app-core.json 이 없습니다"; exit 1
+          fi
+          echo "✅ REV 유효 — $REV" >> $GITHUB_STEP_SUMMARY
