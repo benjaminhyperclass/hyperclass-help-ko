@@ -144,6 +144,39 @@ DNT_LOCKED_KEYS = {
 }
 
 
+# ── C11 서브계정 옵트아웃 게이트 유실 감시 ─────────────────────
+# 2026-06-10(8fabb6a)에 min.js 만 손으로 고쳐 hcEx() 를 넣었는데 빌드 템플릿에는
+# 없어서 2026-06-23 자동 빌드가 통째로 날렸다. 그 뒤 두 달 반 동안 Custom JS 핀을
+# @8fabb6a 에서 움직일 수 없었다 — 움직이면 그 고객의 옵트아웃이 깨지기 때문이다.
+# 같은 유실이 다시 일어나지 않도록 템플릿과 산출물 양쪽을 강제한다.
+GATE_FILES = [
+    ('scripts/build-dashboard-ko.py', '빌드 템플릿', True),
+    ('js/dashboard-ko.js', '빌드 산출물(소스)', True),
+    ('js/dashboard-ko.min.js', '빌드 산출물(min)', False),   # 다음 빌드에서 생성됨
+]
+GATE_ENTRYPOINTS = ['rDoc', 'r', 'rIframe']
+
+
+def check_gate(root):
+    """hcEx() 정의와 세 진입점 가드가 살아 있는지."""
+    out = []
+    for rel, label, hard in GATE_FILES:
+        path = os.path.join(root, rel)
+        if not os.path.exists(path):
+            continue
+        with open(path, encoding='utf-8') as f:
+            src = f.read()
+        has_def = 'function hcEx(' in src
+        # min 은 함수명이 뭉개지므로 폴백 ID 존재로 판정한다
+        if not has_def and rel.endswith('.min.js'):
+            has_def = 'HC_I18N_EXCLUDE' in src
+        guards = src.count('hcEx()') - (1 if 'function hcEx(' in src else 0)
+        ok = has_def and guards >= len(GATE_ENTRYPOINTS)
+        out.append({'file': rel, 'label': label, 'hard': hard,
+                    'has_def': has_def, 'guards': guards, 'ok': ok})
+    return out
+
+
 def collect(core, apps):
     """(출처, dotted key, 한국어 값) 목록. 화이트라벨 검사 대상 전체."""
     rows = []
@@ -184,7 +217,7 @@ def main():
     rows = collect(core, apps)
     text = core.get('_text') or {}
 
-    v = {c: [] for c in ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10')}
+    v = {c: [] for c in ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11')}
 
     # ── C1 화이트라벨 ──────────────────────────────────────────
     for src, key, ko in rows:
@@ -315,6 +348,16 @@ def main():
                     v['C10'].append({'src': name, 'key': en_key[:70], 'ko': str(ko)[:60],
                                      'why': '제외 등재 네임스페이스의 영어 원문 (레거시 사전)'})
 
+    # ── C11 옵트아웃 게이트 유실 감시 ──────────────────────────
+    gate_rows = check_gate(ROOT)
+    for g in gate_rows:
+        if g['ok'] or not g['hard']:
+            continue
+        v['C11'].append({'file': g['file'], 'label': g['label'],
+                         'hcEx정의': g['has_def'], '가드': g['guards'],
+                         'why': 'hcEx() 정의 또는 rDoc/r/rIframe 가드가 없다 — '
+                                '제외 계정의 옵트아웃이 깨진다'})
+
     # ── 리포트 ─────────────────────────────────────────────────
     LABEL = {
         'C1': '화이트라벨 브랜드 잔존',
@@ -327,19 +370,24 @@ def main():
         'C8': '도메인에 한글 혼입',
         'C9': '단독 DNT 토큰 (회귀 고정)',
         'C10': '제외 네임스페이스 잔존',
+        'C11': '옵트아웃 게이트 유실',
     }
+    for g in gate_rows:
+        mark = '✅' if g['ok'] else ('❌' if g['hard'] else '⏳ 다음 빌드에서 반영')
+        print(f'  옵트아웃 게이트 {g["label"]:<18} {g["file"]:<34} 가드 {g["guards"]}  {mark}')
+    print()
     print(f'검사 대상 — 한국어 값 {len(rows):,}개 / en·ko 쌍 {len(pairs):,}개 / _text {len(text):,}개')
     print()
     print(f'{"검사":<6}{"항목":<26}{"위반":>8}')
     print('-' * 42)
-    for c in ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10'):
+    for c in ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11'):
         print(f'{c:<6}{LABEL[c]:<24}{len(v[c]):>8,}')
     print('-' * 42)
     total = sum(len(x) for x in v.values())
     print(f'{"합계":<30}{total:>8,}')
     print()
 
-    for c in ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10'):
+    for c in ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11'):
         if not v[c]:
             continue
         print(f'── {c} {LABEL[c]} ({len(v[c]):,}건) ' + '─' * 20)
@@ -362,7 +410,7 @@ def main():
     def blocking_rows(c):
         return [x for x in v[c] if x.get('src') != 'ref(미배포)']
 
-    HARD = ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C8', 'C9', 'C10')
+    HARD = ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C8', 'C9', 'C10', 'C11')
     blocking = sum(len(blocking_rows(c)) for c in HARD)
     shelved = sum(len(v[c]) for c in HARD) - blocking
     if blocking:

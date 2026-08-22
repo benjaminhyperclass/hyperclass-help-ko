@@ -21,6 +21,9 @@ on:
       - '_source/hc-ko-app.pretty.json'
       - '_source/hc-ko-app-reference.json'
       - 'js/hc-ko-app-loader.js'
+      # C11(옵트아웃 게이트 유실 감시) 대상 — 여기서 빠지면 게이트가 사라져도 CI 가 안 돈다
+      - 'js/dashboard-ko.js'
+      - 'scripts/build-dashboard-ko.py'
       - 'check_dnt_whitelabel.py'
       - 'scripts/validate-ko-app.py'
       - 'scripts/split-ko-app.py'
