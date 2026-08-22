@@ -25,6 +25,27 @@
     if (/[?&]hcko=off/.test(location.search) || localStorage.getItem('hcKoOff') === '1') return;
   } catch (e) {}
 
+  /* ---------- 서브계정 옵트아웃 (레거시 hcEx() 와 규칙 동일) ---------- */
+  // dashboard-ko 레이어의 hcEx() 와 **글자 그대로 같은 판정**이어야 한다.
+  // 두 레이어가 제외 대상을 다르게 보면 그 계정만 반쪽 한국어가 된다.
+  //
+  //   var c = window.HC_I18N_EXCLUDE || ["1r0pJRd1cQQ5DZsjSbc9"];
+  //   var m = window.location.pathname.match(/\/location\/([^\/]+)/);
+  //   return !!(m && c.indexOf(m[1]) > -1)
+  //
+  // 정규식은 레거시 그대로 `/location/` 이다 — `/v2` 를 요구하지 않는다.
+  // 아래 ALLOW 검사(locOf)는 `/v2/location/` 을 쓰는데, 그쪽이 더 좁다.
+  // 제외는 허용보다 넓어야 안전하므로(좁으면 새어 나간다) 이 차이는 의도적이다.
+  // `/location/x` 는 `/v2/location/x` 안에도 들어 있어 두 경로를 모두 잡는다.
+  var HC_EXCLUDE_FALLBACK = ['1r0pJRd1cQQ5DZsjSbc9'];
+  function excluded() {
+    try {
+      var c = window.HC_I18N_EXCLUDE || HC_EXCLUDE_FALLBACK;
+      var m = window.location.pathname.match(/\/location\/([^\/]+)/);
+      return !!(m && c.indexOf(m[1]) > -1);
+    } catch (e) { return false; }
+  }
+
   // ▼▼▼ 단계적 배포 ▼▼▼
   // 확대할 때 이 배열을 [] 로 비우세요. 비면 전 서브계정에 적용됩니다.
   // 값이 있으면 그 로케이션 ID 에서만 동작하고 나머지는 영어 그대로입니다.
@@ -40,6 +61,11 @@
   // (로더 자신이 routeChangeEvent 를 듣는다) 로드 시점 한 번의 판정으로는
   // 계정 전환을 놓친다. 부팅 직전과 라우트 변경 때마다 다시 본다.
   function allowed() {
+    // 옵트아웃이 화이트리스트보다 먼저다. 여기서 즉시 return 하지 않고
+    // allowed() 안에 둔 이유: ① 게이트에 막혔을 때도 __hcKoApp.status() 로
+    // 원인을 확인할 수 있어야 하고(안 그러면 excluded 값을 볼 방법이 없다),
+    // ② 이 앱은 새로고침 없이 계정을 바꾸므로 라우트 변경마다 다시 봐야 한다.
+    if (excluded()) return false;
     if (!ALLOW.length) return true;
     var l = locOf();
     return !!l && ALLOW.indexOf(l) >= 0;
@@ -59,6 +85,10 @@
 
   var core = null, appsDict = null, appsKeys = null, T = null;
   var booted = false, suspended = false;
+  // 되돌릴 수 없는 변경을 한 번이라도 했는가.
+  // i18n 카탈로그에 한국어를 부어 넣거나 provides.t 를 래퍼로 바꾸면
+  // 원복 수단이 없다 — 이 상태에서 제외 계정으로 넘어가면 새로고침이 유일한 답이다.
+  var dirty = false;
   var stats = { host: 0, apps: 0, tref: 0, remerge: 0, fuzzy: 0, unmatched: 0, textHits: 0 };
   function log() { if (DEBUG && window.console) console.log.apply(console, ['[hc-ko]'].concat([].slice.call(arguments))); }
 
@@ -71,10 +101,12 @@
       s.rev = REV;
       s.gate = gate;              // 화이트리스트가 걸려 있는가
       s.allow = ALLOW.slice();
-      s.location = locOf();       // 지금 보고 있는 로케이션
-      s.allowedHere = allowed();  // 여기에 적용되는가
+      s.location = locOf();       // 지금 보고 있는 로케이션 (/v2/location/ 기준)
+      s.excluded = excluded();    // 서브계정 옵트아웃 — 레거시 hcEx() 와 같은 판정
+      s.allowedHere = allowed();  // 여기에 적용되는가 (excluded 가 true 면 무조건 false)
       s.booted = booted;
       s.suspended = suspended;    // 비허용 로케이션으로 이동해 멈춘 상태인가
+      s.dirty = dirty;            // 되돌릴 수 없는 변경(카탈로그 병합·t-ref 래핑)을 했는가
       s.coreLoaded = !!core;
       s.appsLoaded = !!appsDict;
       s.textEntries = T ? Object.keys(T).length : 0;
@@ -129,7 +161,7 @@
     if (!messages) return 0;
     var keys = targetLocales(g), fn = rawMerge(g), n = 0;
     for (var i = 0; i < keys.length; i++) { try { fn.call(g, keys[i], messages); n++; } catch (e) {} }
-    if (n) log('merged', tag, '→', keys.join(','));
+    if (n) { dirty = true; log('merged', tag, '→', keys.join(',')); }
     return n;
   }
   function pickNs(dict, incoming) {   // 원격이 넣은 네임스페이스에 해당하는 한국어만 골라낸다
@@ -149,6 +181,10 @@
       g.__hcOrigMerge = g.mergeLocaleMessage;
       g.mergeLocaleMessage = function (loc, msgs) {
         var r = g.__hcOrigMerge.apply(this, arguments);
+        // 래퍼는 제거할 수 없다(원본 참조를 앱이 이미 들고 있을 수 있다).
+        // 대신 멈춤 상태면 아무것도 하지 않고 원본 결과를 그대로 돌려준다 —
+        // 이게 없으면 제외 계정에서 앱이 새로 로드한 영어를 계속 한국어로 되돌린다.
+        if (suspended) return r;
         try {
           var ko = pickNs(core && core.host, msgs);
           if (ko) { g.__hcOrigMerge.call(g, loc, ko); stats.remerge++; log('re-merge', Object.keys(ko).join(',')); }
@@ -240,10 +276,14 @@
       function install(orig) {
         if (typeof orig !== 'function' || orig.__hcWrap) return false;
         var w = function (key) {
-          if (arguments.length === 1 && core && core.flat) { var ko = core.flat[key]; if (ko !== undefined) return ko; }
+          // 멈춤 상태면 원본에 그대로 위임한다. ref.value 를 되돌리는 것보다
+          // 안전하다 — 컴포넌트가 이미 이 함수 참조를 캡처했을 수 있다.
+          if (!suspended && arguments.length === 1 && core && core.flat) {
+            var ko = core.flat[key]; if (ko !== undefined) return ko;
+          }
           return orig.apply(this, arguments);
         };
-        w.__hcWrap = true; ref.value = w; ref.__hcWrapped = true; stats.tref++;
+        w.__hcWrap = true; ref.value = w; ref.__hcWrapped = true; stats.tref++; dirty = true;
         log('t-ref wrapped', el.id || el.className); return true;
       }
       if (ref.value) return install(ref.value);
@@ -480,6 +520,19 @@
     if (scanIv) { clearInterval(scanIv); scanIv = null; }
     if (scanTimer) { clearTimeout(scanTimer); scanTimer = null; }
     log('비허용 로케이션 — 중단', locOf());
+
+    // 이미 i18n 카탈로그에 부어 넣은 한국어는 되돌릴 방법이 없다.
+    // 레거시 hcEx() 는 DOM 치환만 하므로 제외 계정에서 즉시 영어가 되는데,
+    // v4 는 그대로 두면 "이전에 로드된 화면은 한국어" 인 반쪽 상태가 된다.
+    // 두 레이어의 판정을 맞추려면 여기서 한 번 새로고침하는 수밖에 없다.
+    //
+    // 루프는 나지 않는다: 새로고침 후 excluded() 가 true 라 allowed() 가 false 이고,
+    // boot() 가 아예 실행되지 않아 dirty 가 다시 서지 않는다.
+    if (dirty) {
+      dirty = false;
+      log('오염된 카탈로그 — 새로고침으로 영어 복귀');
+      try { location.reload(); } catch (e) {}
+    }
   }
 
   function resume() {
