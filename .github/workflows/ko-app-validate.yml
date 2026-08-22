@@ -133,6 +133,7 @@ jobs:
 
       # ── 로더 문법 ───────────────────────────────────────────────
       - uses: actions/setup-node@v4
+        if: always()
         with:
           node-version: '20'
 
