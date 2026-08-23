@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "version": "4.2.1",
+  "version": "4.2.2",
   "built": "2026-08-23",
   "source": "crawl 310 routes + dashboard-ko + community v3 + legacy recovery + live audit 33 routes",
   "strings": 102183
@@ -120098,6 +120098,7 @@
   "Create Sub-Account": "서브 계정 생성",
   "Create a new calendar": "새 캘린더 만들기",
   "Create a new 연락처": "새 연락처 만들기",
+  "Import Existing 연락처": "기존 연락처 가져오기",
   "Create and manage your snapshots": "스냅샷을 만들고 관리하세요",
   "Create new snapshot": "새 스냅샷 만들기",
   "Create template": "템플릿 만들기",
