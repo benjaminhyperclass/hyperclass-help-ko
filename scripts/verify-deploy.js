@@ -58,6 +58,7 @@
     ['Create Sub-Account', '서브 계정 생성'],
     ['Open opportunities', '진행 중인 기회'],
     ['Life Insurance', '생명보험'],
+    ['Import Existing 연락처', '기존 연락처 가져오기'],   // v4.2.2 라운드
   ];
   samples.forEach(([en, want]) => {
     const got = T[en];
