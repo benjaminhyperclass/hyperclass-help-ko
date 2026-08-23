@@ -21,9 +21,9 @@
    ───────────────────────────────────────────────────────────────────── */
 (() => {
   const EXPECT = {
-    version: '4.8.0',
-    revPrefix: 'a60c7ad',
-    textEntries: 9078,
+    version: '4.9.0',
+    revPrefix: 'f188913',
+    textEntries: 9088,
   };
   const A = window.__hcKoApp;
   if (!A) {
@@ -59,6 +59,7 @@
     ['Open opportunities', '진행 중인 기회'],
     ['Life Insurance', '생명보험'],
     ['Import Existing 연락처', '기존 연락처 가져오기'],   // v4.2.2 라운드
+    ['Created on:', '생성일:'],                          // v4.2.3 레거시 회수
   ];
   samples.forEach(([en, want]) => {
     const got = T[en];
