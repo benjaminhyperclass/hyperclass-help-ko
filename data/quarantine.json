@@ -19597,5 +19597,27 @@
    "ko": "요가",
    "사유": "라이브 감사 수집분. 4자 이하 — DOM 전체일치 치환이라 사용자 데이터 오치환 위험. 벤자민 선별 필요"
   }
+ },
+ "legacy_recovery_hold": {
+  "Azure Dreams": {
+   "ko": "애저 드림스",
+   "reason": "proper_name_risk",
+   "source": "dashboard-ko.min.js@8fabb6a"
+  },
+  "Midnight Deep": {
+   "ko": "미드나이트 딥",
+   "reason": "proper_name_risk",
+   "source": "dashboard-ko.min.js@8fabb6a"
+  },
+  "Royal Velvet": {
+   "ko": "로열 벨벳",
+   "reason": "proper_name_risk",
+   "source": "dashboard-ko.min.js@8fabb6a"
+  },
+  "N/A": {
+   "ko": "해당 없음",
+   "reason": "short_key_pending_scan",
+   "source": "dashboard-ko.min.js@8fabb6a"
+  }
  }
 }

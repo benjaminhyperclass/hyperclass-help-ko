@@ -1,6 +1,6 @@
 {
  "_meta": {
-  "version": "4.2.2",
+  "version": "4.2.3",
   "built": "2026-08-23",
   "source": "crawl 310 routes + dashboard-ko + community v3 + legacy recovery + live audit 33 routes",
   "strings": 102183
@@ -120347,6 +120347,16 @@
   "totalValues": "총 금액",
   "website & vsl funnel": "웹사이트 & VSL 퍼널",
   "winPercentage": "성공률",
-  "클라이언트 포탈 URL": "클라이언트 포털 URL"
+  "클라이언트 포탈 URL": "클라이언트 포털 URL",
+  "(Primary)": "(기본)",
+  "An error occurred, please try again": "오류가 발생했습니다. 다시 시도해 주세요",
+  "contact support": "지원팀 문의",
+  "Created on:": "생성일:",
+  "Do you really want to leave? You have unsaved changes!": "정말로 나가시겠습니까? 저장되지 않은 변경사항이 있습니다!",
+  "Google Calendar": "Google 캘린더",
+  "In order to use the Facebook Ads Reporting, you need to disconnect and reconnect your Facebook account.": "Facebook 광고 리포팅을 사용하려면 Facebook 계정 연결을 해제하고 다시 연결해야 합니다.",
+  "not found": "찾을 수 없음",
+  "To integrate your Facebook account and select the Facebook Ad Account-ID for which you want to see the data.": "Facebook 계정을 연동하고 데이터를 보려는 Facebook 광고 계정 ID를 선택하세요.",
+  "Your changes will not be saved. Are you sure you want to leave?": "변경사항이 저장되지 않습니다. 정말 나가시겠습니까?"
  }
 }
