@@ -148,3 +148,86 @@ Addon  Close  Legal  Queue  Solar  Types
 T3_KEYLEAK 가설도 그때 확정됩니다 — 재머지 로그가 찍힌 앱(`contentAIApp` `launchpadApp` `copilotApp`)과
 키가 새는 앱(dashboard, snapshots, templateLibrary, socialPlanner)이 정확히 배타적이라는
 관찰이 맞다면, 지문 매칭 실패가 원인입니다.
+
+
+---
+
+# 라이브 실측 회신 반영 (2026-08-23, 벤자민 콘솔)
+
+허용 로케이션 `r6JD1nsq…` 실측으로 이월 항목 4개가 정리됐습니다.
+
+## §1 짧은 키 — **6건 유지 확정**, 임계값은 4자 유지
+
+파이프라인 단계명 전량이 `잠재고객 · SAAS_트라이얼 · SAAS_결제회원` 이고
+`Close` `Legal` `Solar` `Addon` `Types` `Lead` 는 **0건**. `Queue` 1건은 사이드바 UI 문자열(데이터 아님).
+
+제 위험 평가가 과대했습니다. `_text` 는 텍스트 노드 **완전일치**라 부분 매칭이 원리적으로 불가능합니다 —
+`New Lead` 는 `Lead` 엔트리에, `Closed Won` 은 `Close` 엔트리에 걸리지 않습니다.
+확인할 것은 "단계명·태그에 그 문자열이 **단독으로** 존재하는가" 하나뿐이었습니다.
+
+**단서:** 위 실측은 로케이션 1곳 기준이고 서브계정은 24개입니다.
+ALLOW 개방 시 벤자민님이 24개 전수 스캔을 돌립니다. 그때까지는 로케이션 레이어만 노출돼 위험이 실현되지 않습니다.
+격리 중인 단문 7건(`All Back Edit HVAC Hide Lead Yoga`)은 그 스캔 결과와 함께 재판정합니다.
+
+## §5 T3_KEYLEAK — **가설 기각.** 앱 사전 머지 실패가 아닙니다
+
+```
+<th title="won">                  보이는 텍스트: 승리
+<div title="titleConversionRate"> 보이는 텍스트: 전환율 …
+```
+
+**보이는 UI 는 전부 정상 한국어**이고 원시 키는 `title`/`aria-label` **속성에만** 남아 있습니다.
+같은 요소의 보이는 텍스트가 번역돼 있으므로 i18n 조회는 정상 동작합니다.
+컴포넌트가 속성에 `t(key)` 대신 `key` 를 바인딩한 **앱 측 코딩 버그**입니다.
+`status().unmatched` / 지문 매칭 확인은 불필요해졌습니다.
+
+`hc-i18n-audit.js` 가 속성값을 미번역 문자열로 수집한 것이 "화면에 키가 샌다"는 인상의 출처였습니다.
+
+### 다만 — 이번에 넣은 30건은 무동작이 아닙니다 (벤자민님 판단 일부 정정)
+
+로더는 속성도 번역합니다:
+
+```js
+var ATTRS = ['placeholder', 'title', 'aria-label', 'alt'];   // hc-ko-app-loader.js:356
+root.querySelectorAll('[placeholder],[title],[aria-label],[alt]')  // :392
+```
+
+즉 `_text` 에 넣은 30건은 v4.7.0 이 살아나면 **실제로 발동해 툴팁·스크린리더 레이블을 한국어로 바꿉니다.**
+실익이 "거의 없음"이 아니라 "작지만 실재"입니다. 유지합니다. 우선순위 하향에는 동의합니다.
+
+**그리고 이 사실이 §4 격리 판단을 더 강하게 만듭니다** — `won → 성공` 을 `_text` 에 전역 등록했다면
+텍스트 노드뿐 아니라 **모든 앱의 `title="won"` 속성까지** 한 값으로 뭉갰을 것입니다.
+
+## §4 일괄금지 20건 — **영구 보류 확정**
+
+같은 leaf 가 네임스페이스마다 다른 번역을 갖습니다:
+
+| leaf | 값 A | 값 B |
+|---|---|---|
+| `won` | 승리 (`canonical.opportunities`) | 성사 (`adReporting.smartList`) |
+| `lost` | 손실 (`statusOption`) | 패배 (`opportunities`) |
+| `totalLeads` | 총 리드 | 총 리드 수 |
+
+실익(안 보이는 속성) 대비 위험(문맥 값 뭉갬)이 맞지 않습니다. 손대지 않습니다.
+
+## §3 동적 15건 — 살아 있음
+
+보이는 문자열이므로 템플릿 키 확보에 의미가 있습니다. `recover-i18n-keys.js` 재수신 후 진행합니다.
+
+## 새 항목 — 원본 사전 공백 6건
+
+`__hcKoApp.apps` 평탄화 46,282건 **전수 탐색 0건**:
+
+```
+titleConversionRate · titleTasks · titleLeadSources · titleOpportunityValue
+winPercentage · totalValues
+```
+
+머지 실패가 아니라 원본 사전에 애초에 없습니다. 붙일 키 경로가 없어 `core.flat` 으로는 처리 불가입니다.
+어차피 §5 대로 속성 전용이라 우선순위는 낮습니다.
+
+## §6 ALLOW — 관찰 지표 추가
+
+레거시 제거 결정 → `/sub-accounts` 시범 개방 → 관찰. 관찰 대상에 **`fallback` 과 `fuzzy`** 를 추가합니다.
+현재 로케이션에서는 둘 다 0 입니다. 에이전시에서 0 이 아니면 완전일치 실패 후 우회 경로가 돈 것이고,
+그것이 레거시 레이어와의 충돌 신호입니다. (`textHits` / `remerge` 와 함께)

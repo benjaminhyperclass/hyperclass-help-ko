@@ -1,17 +1,29 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-hcKo — 신규 머지분을 저장소 전체 사전 관례와 대조
+hcKo — 신규 머지분을 저장소 전체 사전 관례와 대조 (v2)
 
-용도: 이번에 머지된 334건은 기존 키와 겹치지 않아 충돌 검사를 받지 못했습니다.
+용도: 신규 머지분은 기존 키와 겹치지 않아 충돌 검사를 받지 못합니다.
       이 스크립트는 "충돌"이 아니라 "표기 관례 이탈"을 찾습니다.
-      기존 9,077건이 어떤 표기를 쓰는지 코퍼스에서 다수결로 뽑아낸 뒤,
-      신규분이 소수파 표기를 쓰고 있으면 보고합니다.
+
+v1 → v2 변경 (2026-08-23, 벤자민 설계):
+  v1 은 형태소 단위 다수결만 썼습니다. 그 결과 '굳은 명사'(미리보기)와
+  '목적어+동사'(가격 보기)가 한 표로 섞여 오탐 4건을 냈습니다.
+  v1 은 이를 COMPOUND_EXCEPTIONS 손목록으로 막았는데, 새 굳은 말이 들어올 때마다 썩습니다.
+
+  v2 는 목록 없이 처리합니다.
+    ① stem 별 관례 우선  — '미리'+'보기' → 코퍼스 56:0 → 붙임 확정 → 통과
+                            '가격'+'보기' → 띄움 확정 → 통과
+    ② stem 이 코퍼스에 없을 때만 형태소 다수결로 내려가되,
+       유형 다양성(기본 8종)을 요구. 소수 유형에 집중된 표기는 굳은 말일
+       가능성이 높아 판정 근거로 쓰지 않습니다.
+       (실측: '보기' 띄움 173회는 109종으로 흩어짐 / 붙임 72회는 6종에 집중)
+    ③ ②로 판정한 건은 [추정] 으로 따로 표시 — 사람이 확인합니다.
 
 실행:
   python3 check-conventions.py <사전.json> <신규머지분.json> [--fix-out fixes.json]
 
-  <사전.json>       배포된 core 사전. _text 를 가진 JSON (9,077건)
+  <사전.json>       배포된 core 사전. _text 를 가진 JSON
   <신규머지분.json>  이번에 추가된 {"영문":"한국어"} 맵
 
 종료코드: 이탈이 있으면 1, 없으면 0 (CI 연결용)
@@ -27,39 +39,61 @@ MORPHEMES = [
 ]
 BRAND_RE = re.compile(r"HighLevel|Highlevel|GoHighLevel|GHL|LeadConnector")
 
-# ── 형태소 다수결에서 제외할 굳은 명사 ──────────────────────────────────
-# 형태소 단위 다수결은 '굳은 명사'와 '목적어+동사'를 구분하지 못한다.
-# 실측(2026-08-23): '보기' 는 띄움 173회지만 109종으로 흩어져 있고(정보 보기·설정 보기…),
-# 붙임 72회는 6종에 집중돼 있다(미리보기 56·둘러보기 7…). 서로 다른 부류가 한 표로 섞인다.
-# 이 목록의 단어는 한 단어로 굳었으므로 띄어쓰기 판정 대상에서 뺀다.
-COMPOUND_EXCEPTIONS = {
-    "미리보기", "다시보기", "둘러보기", "알아보기", "찾아보기", "살펴보기", "더보기",
-    "생명보험", "손해보험", "화재보험", "자동차보험",
-}
-
 
 def load_text_map(path):
     d = json.load(open(path, encoding="utf-8"))
     if isinstance(d, dict) and "_text" in d:
-        return d["_text"], d.get("_meta", {})
+        return d["_text"], d.get("_meta", {}), d
     if isinstance(d, dict) and all(isinstance(v, str) for v in d.values()):
-        return d, {}
+        return d, {}, {}
     raise SystemExit(f"{path}: _text 를 찾을 수 없습니다. 최상위 키: {list(d)[:8]}")
 
 
-def spacing_forms(corpus, morph):
-    """코퍼스에서 '<선행어절><공백?><형태소>' 형태를 모아 띄움/붙임 빈도를 센다"""
-    forms = collections.Counter()
-    samples = collections.defaultdict(set)
-    pat = re.compile(r"[가-힣]+\s?" + morph)
-    for ko in corpus:
+def leaf_strings(node, out):
+    if isinstance(node, dict):
+        for v in node.values():
+            leaf_strings(v, out)
+    elif isinstance(node, str):
+        out.append(node)
+    return out
+
+
+def other_layers(core):
+    """host(46,088) · flat(706) 도 같은 사람이 같은 관례로 쓴 한국어다.
+    _text 8,743 만으로는 stem 관측이 1회에 그쳐 판정이 대부분 보류된다.
+    실측(2026-08-23): '생명+보험' _text 1회 → 전 레이어 3회, '미리+보기' 57 → 256."""
+    out = []
+    leaf_strings(core.get("host", {}), out)
+    out.extend(v for v in core.get("flat", {}).values() if isinstance(v, str))
+    return out
+
+
+def seg_pattern(morph):
+    return re.compile(r"[가-힣]+\s?" + morph)
+
+
+def split_seg(seg, morph):
+    """'미리보기' → ('미리','붙임') / '가격 보기' → ('가격','띄움')"""
+    form = "띄움" if " " in seg else "붙임"
+    stem = seg[: -len(morph)].rstrip()
+    return stem, form
+
+
+def build_convention(baseline, morph):
+    """코퍼스에서 stem 별 표기와 형태소 전체 표기를 동시에 집계"""
+    by_stem = collections.defaultdict(collections.Counter)   # stem → {붙임:n, 띄움:n}
+    overall = collections.Counter()                          # 형태소 전체 빈도
+    types = collections.defaultdict(set)                     # 표기 → 서로 다른 어절 종류
+    pat = seg_pattern(morph)
+    for ko in baseline:
         for m in pat.finditer(ko):
-            seg = m.group(0)
-            form = "띄움" if " " in seg else "붙임"
-            forms[form] += 1
-            if len(samples[form]) < 6:
-                samples[form].add(seg)
-    return forms, {k: sorted(v) for k, v in samples.items()}
+            stem, form = split_seg(m.group(0), morph)
+            if not stem:
+                continue
+            by_stem[stem][form] += 1
+            overall[form] += 1
+            types[form].add(stem)
+    return by_stem, overall, types
 
 
 def corpus_tokens(corpus):
@@ -99,60 +133,109 @@ def josa_issues(ko, tokens):
     return out
 
 
+def respace(seg, stem, morph, target):
+    return stem + morph if target == "붙임" else stem + " " + morph
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("dict_path")
     ap.add_argument("new_path")
     ap.add_argument("--fix-out")
     ap.add_argument("--min-support", type=int, default=4,
-                    help="다수파로 인정할 최소 관측 수 (기본 4)")
+                    help="형태소 다수결을 인정할 최소 관측 수 (기본 4)")
+    ap.add_argument("--stem-threshold", type=float, default=0.95,
+                    help="stem 관례로 확정할 최소 우세 비율 (기본 0.95)")
+    ap.add_argument("--stem-min", type=int, default=2,
+                    help="stem 관례로 확정할 최소 관측 수 (기본 2)")
+    ap.add_argument("--min-types", type=int, default=8,
+                    help="형태소 다수결에 요구할 최소 어절 종류 수 (기본 8)")
+    ap.add_argument("--corpus", choices=("all", "text"), default="all",
+                    help="관례 코퍼스 범위. all=_text+host+flat (기본), text=_text 만")
+    ap.add_argument("--strict", action="store_true",
+                    help="[추정] 건도 실패로 계산 (기본은 보고만 하고 종료코드에 넣지 않음)")
     a = ap.parse_args()
 
-    text, meta = load_text_map(a.dict_path)
+    text, meta, core = load_text_map(a.dict_path)
     new = json.load(open(a.new_path, encoding="utf-8"))
     if isinstance(new, dict) and "_text" in new:
         new = new["_text"]
 
-    # 신규분을 제외한 '기존' 코퍼스가 관례의 기준
-    baseline = [v for k, v in text.items() if k not in new]
-    tokens = corpus_tokens(text.values())
+    # 신규분을 제외한 '기존' 문자열이 관례의 기준.
+    # _text 뿐 아니라 host·flat 도 넣는다 — 얇은 코퍼스는 판정을 보류시켜 검사를 무력화한다.
+    extra = [] if a.corpus == "text" else other_layers(core)
+    baseline = [v for k, v in text.items() if k not in new] + extra
+    tokens = corpus_tokens(list(text.values()) + extra)
 
     print(f"사전 _text: {len(text):,}건  (메타 {meta.get('version','?')} / {meta.get('built','?')})")
     print(f"신규 머지분: {len(new):,}건")
-    print(f"관례 기준 코퍼스: {len(baseline):,}건\n")
+    print(f"관례 기준 코퍼스: {len(baseline):,}건"
+          + (f"  (_text {len(baseline)-len(extra):,} + host·flat {len(extra):,})" if extra else ""))
+    print(f"판정 기준: stem {a.stem_threshold:.0%}/{a.stem_min}회 우선, "
+          f"미관측 시 형태소 다수결({a.min_support}회·{a.min_types}종 이상)\n")
 
-    deviations, fixes = [], {}
+    deviations, fixes, tier2 = [], {}, 0
 
     # ── 1. 표기(띄어쓰기) 관례 이탈 ──────────────────────────────────
     print("=" * 72)
     print("1. 표기 관례 이탈")
     print("=" * 72)
     for morph in MORPHEMES:
-        forms, samples = spacing_forms(baseline, morph)
-        if not forms:
+        by_stem, overall, types = build_convention(baseline, morph)
+        if not overall:
             continue
-        (major, mcount), = forms.most_common(1)
-        total = sum(forms.values())
-        if mcount < a.min_support or mcount / total < 0.7:
-            continue                      # 기존 코퍼스 자체가 갈리면 판정 보류
-        pat = re.compile(r"[가-힣]+\s?" + morph)
+
+        # 형태소 단위 다수파 — ② 로 내려갈 때만 쓴다
+        (major, mcount), = overall.most_common(1)
+        total = sum(overall.values())
+        fallback_ok = (
+            mcount >= a.min_support
+            and mcount / total >= 0.7
+            and len(types[major]) >= a.min_types      # 유형 다양성 요구
+        )
+
+        pat = seg_pattern(morph)
         for en, ko in new.items():
             for m in pat.finditer(ko):
                 seg = m.group(0)
-                if seg.replace(" ", "") in COMPOUND_EXCEPTIONS:
-                    continue                  # 굳은 명사 — 다수결 대상 아님
-                form = "띄움" if " " in seg else "붙임"
-                if form != major:
-                    fixed = (seg.replace(" ", "") if major == "붙임"
-                             else re.sub(r"([가-힣]+)(" + morph + ")", r"\1 \2", seg))
-                    deviations.append((morph, en, ko, seg, major, mcount, total, fixed))
+                stem, form = split_seg(seg, morph)
+                if not stem:
+                    continue
+
+                # ① stem 별 관례 우선
+                c = by_stem.get(stem)
+                if c:
+                    (smaj, sn), = c.most_common(1)
+                    st = sum(c.values())
+                    if sn >= a.stem_min and sn / st >= a.stem_threshold:
+                        if form != smaj:
+                            fixed = respace(seg, stem, morph, smaj)
+                            deviations.append((morph, en, ko, seg, fixed,
+                                               f'stem "{stem}" 관례 {smaj} ({sn}/{st})', False))
+                            fixes[en] = ko.replace(seg, fixed)
+                        continue          # stem 관례로 판정 완료 — 다수결로 내려가지 않는다
+                    continue              # stem 자체가 갈림 — 판정 보류
+
+                # ② stem 미관측 → 형태소 다수결 (유형 다양성 확보된 경우만)
+                if fallback_ok and form != major:
+                    fixed = respace(seg, stem, morph, major)
+                    deviations.append((morph, en, ko, seg, fixed,
+                                       f'stem 미관측 · 형태소 다수파 {major} '
+                                       f'({mcount}/{total}, {len(types[major])}종)', True))
                     fixes[en] = ko.replace(seg, fixed)
+                    tier2 += 1
+
     if deviations:
-        for morph, en, ko, seg, major, mc, tot, fixed in deviations:
-            print(f'  [{morph}] 기존 다수파 "{major}" ({mc}/{tot})')
+        for morph, en, ko, seg, fixed, why, guess in deviations:
+            tag = "[추정] " if guess else ""
+            print(f'  {tag}[{morph}] {why}')
             print(f'      {en[:56]}')
             print(f'      {ko}')
             print(f'      "{seg}" → "{fixed}"\n')
+        if tier2:
+            print(f"  ※ [추정] {tier2}건은 stem 관례가 없어 형태소 다수결로 판정했습니다. 사람이 확인하세요.")
+            print("     기본값에서는 종료코드에 넣지 않습니다 — 굳은 말일 수 있어 CI 를 막으면 안 됩니다."
+                  " (--strict 로 포함)\n")
     else:
         print("  이탈 없음\n")
 
@@ -213,20 +296,26 @@ def main():
     print()
 
     # ── 5. 사용자 데이터 충돌 위험 (짧은 키) ────────────────────────
+    # _text 는 텍스트 노드 '완전일치' 치환이므로 부분 일치는 원리적으로 불가능하다.
+    # ('New Lead' 단계명은 'Lead' 엔트리에 걸리지 않는다.)
+    # 따라서 확인할 것은 "단계명·태그에 이 문자열이 단독으로 존재하는가" 하나뿐이다.
+    # 주의: 아래는 로케이션 1곳 기준 판단이 아니라 목록 제시일 뿐이다.
+    #       ALLOW 개방 시 서브계정 전수 스캔이 필요하다. (2026-08-23 벤자민 실측 기준)
     print("=" * 72)
     print("5. 짧은 키 — 사용자 데이터 치환 위험")
     print("=" * 72)
     shorts = sorted(k for k in new if len(k) <= 5)
     if shorts:
         print(f"  5자 이하 {len(shorts)}건: {shorts}")
-        print("  → 파이프라인 단계명·태그·서브계정명과 겹칠 수 있습니다. 라이브 대조 권장.")
+        print("  → 완전일치라 부분 매칭 위험은 없습니다. 단계명·태그와 '정확히' 같은지만 확인하세요.")
     else:
         print("  없음")
     print()
 
-    total_issues = len(deviations) + hits + jc + bc
+    confirmed = len(deviations) - tier2
+    total_issues = (len(deviations) if a.strict else confirmed) + hits + jc + bc
     print("=" * 72)
-    print(f"합계: 표기이탈 {len(deviations)} · 용어불일치 {hits} · 조사 {jc} · 브랜드 {bc}")
+    print(f"합계: 표기이탈 {confirmed}(+추정 {tier2}) · 용어불일치 {hits} · 조사 {jc} · 브랜드 {bc}")
     print("=" * 72)
 
     if a.fix_out and fixes:
