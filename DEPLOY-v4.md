@@ -36,8 +36,8 @@
 여기부터는 벤자민님이 직접 하셔야 합니다. Claude Code 가 할 수 있는 부분은 끝났습니다.
 
 준비된 것
-- 사전: jsDelivr 에 커밋 `a60c7ad` (v4.2.2) 로 고정 배포됨 (200 / CORS `*` / immutable 확인)
-- 로더: `js/hc-ko-app-loader.js` (**v4.8.0** / `6f7ffd3…`) — `ALLOW = ['r6JD1nsqtk6Oln28fgrj']` 로 **한 곳에만** 적용되게 잠겨 있음
+- 사전: jsDelivr 에 커밋 `f188913` (v4.2.3) 로 고정 배포됨 (200 / CORS `*` / immutable 확인)
+- 로더: `js/hc-ko-app-loader.js` (**v4.9.0** / `866b616…`) — `ALLOW = ['r6JD1nsqtk6Oln28fgrj']` 로 **한 곳에만** 적용되게 잠겨 있음
 
 ---
 
@@ -57,7 +57,7 @@ Agency Settings → Company → **Whitelabel → Custom Code → Custom JavaScri
 
 ```html
 <script>window.HC_I18N_EXCLUDE = ["1r0pJRd1cQQ5DZsjSbc9"];</script>
-<script src="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@6f7ffd3ff37b1ca6e96657b6732bede3407a05bf/js/hc-ko-app-loader.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@866b616cb407eaef28d17a3d24e34291490a774e/js/hc-ko-app-loader.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@8fabb6a/js/dashboard-ko.min.js"></script>
 ```
 
