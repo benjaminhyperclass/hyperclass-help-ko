@@ -15,8 +15,12 @@
      ★ 문구를 추가·수정할 때도 '작다' 기호를 절대 넣지 마세요.
 
    진단: 콘솔에서  __hcChatKo.status()   치환 횟수·감시 중인 루트 수
+        __hcChatKo.probe()    화면의 실제 문자열·섀도루트·iframe 상태
         __hcChatKo.rescan()   즉시 다시 훑기
         __hcChatKo.stop()     중지
+
+   ⚠ MAP 은 '완전 일치'입니다. 화면 문구와 한 글자(공백·대소문자 포함)라도
+     다르면 안 걸립니다. probe().texts 로 실제 문자열을 확인해 그대로 옮기세요.
    ───────────────────────────────────────────────────────────────────────── */
 (function () {
   'use strict';
@@ -41,14 +45,14 @@
     '[id*="lc_chat"]', '[class*="lc_chat"]'
   ].join(',');
 
-  // 위젯을 아직 못 찾았을 때만 문서 전체를 훑습니다. 그 상태를 무한정 두면
-  // 페이지가 바뀔 때마다 전체 순회가 돌아 비쌉니다. 아래 시간까지만 허용합니다.
+  // 초반에는 위젯을 찾았든 못 찾았든 문서 전체를 함께 훑습니다.
+  // 그 상태를 무한정 두면 페이지가 바뀔 때마다 전체 순회가 돌아 비싸므로
+  // 아래 시간까지만 허용하고, 이후에는 위젯 안만 봅니다.
   var WARMUP_MS = 60000;
 
   if (window.__hcChatKo) { window.__hcChatKo.rescan(); return; }
 
   var t0 = Date.now();
-  var located = false;
   var stats = { hits: 0, scans: 0, roots: 0, found: false };
   var observed = (typeof WeakSet === 'function') ? new WeakSet() : null;
   var MO = window.MutationObserver || window.WebKitMutationObserver || null;
@@ -58,6 +62,12 @@
   function translate(root) {
     if (!root) return;
     try {
+      // 0) 이 요소 자신의 섀도루트.
+      //    LeadConnector 채팅 위젯은 chat-widget 커스텀 엘리먼트 하나뿐이고
+      //    내용이 전부 그 shadowRoot 안에 있습니다. 자식 순회만 하면
+      //    querySelectorAll('*') 가 빈 배열이라 아무것도 못 찾습니다.
+      if (root.shadowRoot) { watch(root.shadowRoot); translate(root.shadowRoot); }
+
       // 1) 텍스트 노드 — 완전 일치일 때만 바꿉니다.
       var w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null), n;
       while ((n = w.nextNode())) {
@@ -108,21 +118,60 @@
     stats.scans++;
     var hosts = document.querySelectorAll(SEL);
     if (hosts.length) {
-      located = true;
       stats.found = true;
       [].forEach.call(hosts, function (el) { watch(el); translate(el); });
-      return;
     }
-    // 위젯을 아직 못 찾음 — 워밍업 시간 동안만 문서 전체를 훑습니다.
+    // 워밍업 동안은 위젯을 찾았더라도 문서 전체를 함께 훑습니다.
+    // 선택자가 맞았는데도 문구가 다른 요소에 있는 경우를 놓치지 않기 위해서입니다.
     // (좌우를 뒤집어 '크다' 로 씁니다. '작다' 기호는 이 칸에서 잘립니다.)
-    if (!located && WARMUP_MS > Date.now() - t0) translate(document.body);
+    if (WARMUP_MS > Date.now() - t0) translate(document.body);
+  }
+
+  // ── 진단 — 화면에 실제로 어떤 문자열이 있는지 뽑아 봅니다 ──────────────
+  // MAP 에 적은 문구와 화면의 실제 문구가 한 글자라도 다르면 완전 일치라 안 걸립니다.
+  // 아래 결과의 texts 를 보고 MAP 을 그대로 맞추세요.
+  function probe() {
+    var out = { hosts: [], iframes: [], texts: [], closedShadowSuspect: false };
+    [].forEach.call(document.querySelectorAll(SEL), function (el) {
+      out.hosts.push({
+        tag: el.tagName.toLowerCase(),
+        id: el.id || null,
+        cls: (el.className && el.className.baseVal !== undefined ? el.className.baseVal : el.className) || null,
+        openShadow: !!el.shadowRoot,
+        children: el.children ? el.children.length : 0
+      });
+      // 자식도 없고 열린 섀도루트도 없으면 닫힌 섀도루트일 가능성이 큽니다.
+      if (!el.shadowRoot && el.children && el.children.length === 0) out.closedShadowSuspect = true;
+    });
+    [].forEach.call(document.querySelectorAll('iframe'), function (f) {
+      out.iframes.push(f.src || '(src 없음)');
+    });
+    var seen = {};
+    function collect(root, depth) {
+      if (!root || depth === 0) return;
+      try {
+        if (root.shadowRoot) collect(root.shadowRoot, depth);
+        var w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null), n;
+        while ((n = w.nextNode())) {
+          var t = n.textContent.trim();
+          if (t && !seen[t] && /[A-Za-z]/.test(t) && 80 > t.length) { seen[t] = 1; out.texts.push(t); }
+        }
+        var els = root.querySelectorAll ? root.querySelectorAll('*') : [];
+        [].forEach.call(els, function (el) { if (el.shadowRoot) collect(el.shadowRoot, depth - 1); });
+      } catch (e) {}
+    }
+    var hs = document.querySelectorAll(SEL);
+    if (hs.length) [].forEach.call(hs, function (el) { collect(el, 6); });
+    else collect(document.body, 6);
+    out.texts = out.texts.slice(0, 60);
+    return out;
   }
 
   // 위젯이 늦게 붙으므로 문서 전체의 구조 변경을 감시해 등장을 잡습니다.
   watch(document.documentElement);
 
   // 관찰자가 못 잡는 경우(섀도루트 내부 교체 등)를 위한 느린 예비 순회.
-  // 위젯을 찾은 뒤에는 위젯 안만 보므로 부담이 없습니다.
+  // 워밍업이 끝나면 위젯 안만 보므로 부담이 없습니다.
   var timer = setInterval(scan, 2000);
 
   if (document.readyState === 'loading') {
@@ -131,7 +180,7 @@
   scan();
 
   window.__hcChatKo = {
-    version: '1.0.0',
+    version: '1.1.0',
     status: function () {
       return {
         hits: stats.hits,          // 지금까지 치환한 횟수
@@ -143,6 +192,7 @@
       };
     },
     rescan: function () { scan(); return this.status(); },
+    probe: probe,   // 화면의 실제 문자열·섀도루트·iframe 진단
     stop: function () { stopped = true; clearInterval(timer); return '중지했습니다.'; }
   };
 })();
