@@ -97,4 +97,4 @@ Hyperclass 대화(Conversations)에서 내부 댓글과 @멘션을 사용해 연
 ***
 
 _원문 최종 수정: Tue, 3 Feb, 2026 at 7:58 AM_\
-&#xNAN;_&#x48;yperclass 사용 가이드 — hyperclass.ai_
+_&#x48;yperclass 사용 가이드 — hyperclass.ai_

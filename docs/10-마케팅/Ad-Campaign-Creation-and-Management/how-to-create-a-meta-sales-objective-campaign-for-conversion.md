@@ -184,4 +184,4 @@ Meta 광고에 새로 추가된 매출 목표를 통해 웹사이트와 메시�
 ***
 
 _원문 최종 수정: 2025년 3월 18일_\
-&#xNAN;_&#x48;yperclass 사용 가이드 — hyperclass.ai_
+_&#x48;yperclass 사용 가이드 — hyperclass.ai_

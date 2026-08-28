@@ -218,4 +218,4 @@ Google 신뢰도를 높이고 전문성을 보여줍니다.
 ***
 
 _원문 최종 수정: Wed, 28 May, 2025 at 11:24 AM_\
-&#xNAN;_&#x48;yperclass 사용 가이드 — hyperclass.ai_
+_&#x48;yperclass 사용 가이드 — hyperclass.ai_

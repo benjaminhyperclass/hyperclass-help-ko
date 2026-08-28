@@ -122,4 +122,4 @@ Hyperclass 워드프레스 스테이징을 사용하여 실제 사이트에 영�
 ***
 
 _원문 최종 수정: Wed, 11 Feb, 2026 at 6:49 AM_\
-&#xNAN;_&#x48;yperclass 사용 가이드 — hyperclass.ai_
+_&#x48;yperclass 사용 가이드 — hyperclass.ai_

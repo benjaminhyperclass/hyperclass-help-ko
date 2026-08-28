@@ -173,4 +173,4 @@ Hyperclass 광고 관리자에서는 Google Ads의 다음과 같은 캠페인 �
 ***
 
 _원문 최종 수정: 2026년 2월 5일_\
-&#xNAN;_&#x48;yperclass 사용 가이드 — hyperclass.ai_
+_&#x48;yperclass 사용 가이드 — hyperclass.ai_

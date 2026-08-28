@@ -157,4 +157,4 @@ Ask AI가 이제 전체 목록을 다시 작성하는 대신 항목 레벨에서
 ***
 
 _원문 최종 수정: Mon, 23 Mar, 2026 at 8:23 AM_\
-&#xNAN;_&#x48;yperclass 사용 가이드 — hyperclass.ai_
+_&#x48;yperclass 사용 가이드 — hyperclass.ai_

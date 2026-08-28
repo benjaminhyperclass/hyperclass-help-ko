@@ -164,4 +164,4 @@ Import Your Existing Website(기존 웹사이트 가져오기) 섹션에서 Requ
 ***
 
 _원문 최종 수정: 2025년 4월 28일 (월) 오후 2:15_\
-&#xNAN;_&#x48;yperclass 사용 가이드 — hyperclass.ai_
+_&#x48;yperclass 사용 가이드 — hyperclass.ai_

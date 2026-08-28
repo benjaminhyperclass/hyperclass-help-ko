@@ -142,4 +142,4 @@ A: 네, LC Phone은 메시지 실패, 컴플라이언스 문제, 시스템 오�
 ***
 
 _원문 최종 수정: Sun, 3 Aug, 2025 at 6:12 AM_\
-&#xNAN;_&#x48;yperclass 사용 가이드 — hyperclass.ai_
+_&#x48;yperclass 사용 가이드 — hyperclass.ai_

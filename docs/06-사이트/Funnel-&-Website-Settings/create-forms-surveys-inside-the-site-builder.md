@@ -123,4 +123,4 @@ Hyperclass의 폼 & 설문(Forms & Surveys) 기능은 퍼널이나 웹사이트 
 ***
 
 _원문 최종 수정: Thu, 16 Oct, 2025 at 8:06 AM_\
-&#xNAN;_&#x48;yperclass 사용 가이드 — hyperclass.ai_
+_&#x48;yperclass 사용 가이드 — hyperclass.ai_

@@ -130,4 +130,4 @@ Adyen 결제 연동을 사용하면 관리자가 Hyperclass에서 Adyen 인증 �
 ***
 
 _원문 최종 수정: 2025년 11월 28일_\
-&#xNAN;_&#x48;yperclass 사용 가이드 — hyperclass.ai_
+_&#x48;yperclass 사용 가이드 — hyperclass.ai_

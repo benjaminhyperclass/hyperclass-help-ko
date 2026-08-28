@@ -172,4 +172,4 @@ Hyperclass의 명함 QR 코드 빌더를 사용하면 연락처 정보를 즉시
 ***
 
 _원문 최종 수정: Mon, 21 Jul, 2025 at 12:36 PM_\
-&#xNAN;_&#x48;yperclass 사용 가이드 — hyperclass.ai_
+_&#x48;yperclass 사용 가이드 — hyperclass.ai_

@@ -165,4 +165,4 @@ PayPal은 정기결제 상품의 여러 수량을 지원하지 않습니다. Pay
 ***
 
 _원문 최종 수정: 2023년 11월 23일_\
-&#xNAN;_&#x48;yperclass 사용 가이드 — hyperclass.ai_
+_&#x48;yperclass 사용 가이드 — hyperclass.ai_

@@ -137,4 +137,4 @@ Hyperclass의 캘린더 연동을 통해 리드가 실시간 예약 가능 시�
 ***
 
 _원문 최종 수정: Fri, 25 Apr, 2025 at 3:11 AM_\
-&#xNAN;_&#x48;yperclass 사용 가이드 — hyperclass.ai_
+_&#x48;yperclass 사용 가이드 — hyperclass.ai_

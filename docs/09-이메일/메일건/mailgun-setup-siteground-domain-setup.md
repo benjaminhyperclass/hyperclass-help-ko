@@ -199,4 +199,4 @@ D. Create를 클릭하세요
 ***
 
 _원문 최종 수정: 2023년 2월 28일_\
-&#xNAN;_&#x48;yperclass 사용 가이드 — hyperclass.ai_
+_&#x48;yperclass 사용 가이드 — hyperclass.ai_

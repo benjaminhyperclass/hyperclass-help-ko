@@ -1,6 +1,7 @@
 ---
-원문: https://help.leadconnectorhq.com/support/solutions/articles/48001236474-how-to-set-up-a-calendar-for-classes-
-번역일: 2026-04-23
+원문: >-
+  https://help.leadconnectorhq.com/support/solutions/articles/48001236474-how-to-set-up-a-calendar-for-classes-
+번역일: 2026-04-23T00:00:00.000Z
 카테고리: scheduling-calendars-bookings
 ---
 
@@ -10,23 +11,20 @@
 
 #### 이 글에서 다루는 내용:
 
-#### [**수업 예약이란 무엇인가요?**](#What-is-a-Class-Booking?)
+#### [**수업 예약이란 무엇인가요?**](how-to-set-up-a-calendar-for-classes-.md#What-is-a-Class-Booking?)
 
-#### [수업 예약 캘린더를 사용하는 이유는?](#Why-use-Class-Booking-Calendars?)
+#### [수업 예약 캘린더를 사용하는 이유는?](how-to-set-up-a-calendar-for-classes-.md#Why-use-Class-Booking-Calendars?)
 
-#### [**수업 예약 캘린더 설정 방법**](#How-to-set-up-a-Calendar-for-Class-Bookings?)
+#### [**수업 예약 캘린더 설정 방법**](how-to-set-up-a-calendar-for-classes-.md#How-to-set-up-a-Calendar-for-Class-Bookings?)
 
-#### [**취소 및 일정 변경**](#Cancellation-and-Rescheduling)
+#### [**취소 및 일정 변경**](how-to-set-up-a-calendar-for-classes-.md#Cancellation-and-Rescheduling)
 
-#### [**자주 묻는 질문**](#FAQs)
+#### [**자주 묻는 질문**](how-to-set-up-a-calendar-for-classes-.md#FAQs)
 
-- #### [수업 예약을 취소하거나 일정을 변경하려면 어떻게 하나요?](#Question%3A-How-can-I-cancel-or-reschedule-a-class-appointment?)
-
-- #### [한 명의 참석자에 대해서만 수업 예약을 취소하거나 변경할 수 있나요?](#Question%3A-Can-I-cancel-or-reschedule-a-class-appointment-for-a-single-attendee?)
-
-- #### [연락처와 직접 수업 예약을 할 수 있나요?](#Question%3A-Can-I-book-a-class-appointment-with-contacts-directly?)
-
-- #### [참석자가 수업 예약을 취소하거나 변경할 수 있나요?](#Question%3A-Can-attendees-cancel/reschedule-a-Class-Booking-appointment?)
+* #### [수업 예약을 취소하거나 일정을 변경하려면 어떻게 하나요?](how-to-set-up-a-calendar-for-classes-.md#Question:-How-can-I-cancel-or-reschedule-a-class-appointment?)
+* #### [한 명의 참석자에 대해서만 수업 예약을 취소하거나 변경할 수 있나요?](how-to-set-up-a-calendar-for-classes-.md#Question:-Can-I-cancel-or-reschedule-a-class-appointment-for-a-single-attendee?)
+* #### [연락처와 직접 수업 예약을 할 수 있나요?](how-to-set-up-a-calendar-for-classes-.md#Question:-Can-I-book-a-class-appointment-with-contacts-directly?)
+* #### [참석자가 수업 예약을 취소하거나 변경할 수 있나요?](how-to-set-up-a-calendar-for-classes-.md#Question:-Can-attendees-cancel/reschedule-a-Class-Booking-appointment?)
 
 ## 수업 예약이란 무엇인가요?
 
@@ -42,11 +40,11 @@
 
 수업 캘린더 사용은 여러 참석자가 있는 이벤트 관리에 다음과 같은 이점을 제공합니다:
 
-- 효율적인 조직: 수업 캘린더는 여러 참석자를 수용하는 단일 예약을 생성할 수 있게 하여 일대다 이벤트의 조직과 관리를 간소화하고 일정 조율 프로세스를 효율화합니다.
-- 맞춤형 수용 인원: 슬롯당 참석자 수를 설정하여 수업 규모를 제어하고 최적의 학습 또는 참여 환경을 보장할 수 있습니다.
-- 중앙 집중식 관리: 수업 캘린더는 예약, 취소, 일정 변경을 관리할 수 있는 중앙 집중식 플랫폼을 제공하여 예약 담당자가 이벤트의 모든 측면을 감독하기 쉽게 만듭니다.
-- 향상된 커뮤니케이션: 수업 캘린더는 날짜, 시간, 장소와 같은 이벤트 세부 정보의 명확한 개요를 제공하여 참석자와의 더 나은 커뮤니케이션을 촉진합니다. 이는 혼란과 노쇼 가능성을 줄이는 데 도움이 됩니다.
-- 시간 절약: 예약 프로세스를 자동화하고 참석자가 예약을 취소하거나 일정을 변경할 수 있는 옵션을 제공함으로써 수업 캘린더는 주최자와 참석자 모두의 시간을 절약합니다.
+* 효율적인 조직: 수업 캘린더는 여러 참석자를 수용하는 단일 예약을 생성할 수 있게 하여 일대다 이벤트의 조직과 관리를 간소화하고 일정 조율 프로세스를 효율화합니다.
+* 맞춤형 수용 인원: 슬롯당 참석자 수를 설정하여 수업 규모를 제어하고 최적의 학습 또는 참여 환경을 보장할 수 있습니다.
+* 중앙 집중식 관리: 수업 캘린더는 예약, 취소, 일정 변경을 관리할 수 있는 중앙 집중식 플랫폼을 제공하여 예약 담당자가 이벤트의 모든 측면을 감독하기 쉽게 만듭니다.
+* 향상된 커뮤니케이션: 수업 캘린더는 날짜, 시간, 장소와 같은 이벤트 세부 정보의 명확한 개요를 제공하여 참석자와의 더 나은 커뮤니케이션을 촉진합니다. 이는 혼란과 노쇼 가능성을 줄이는 데 도움이 됩니다.
+* 시간 절약: 예약 프로세스를 자동화하고 참석자가 예약을 취소하거나 일정을 변경할 수 있는 옵션을 제공함으로써 수업 캘린더는 주최자와 참석자 모두의 시간을 절약합니다.
 
 ## 수업 예약 캘린더 설정 방법
 
@@ -116,6 +114,6 @@
 
 수업 예약을 취소하려면 예약을 열고 "Cancel All(모두 취소)"를 클릭하세요. 미팅 일정을 변경하려면 "Reschedule All(모두 일정 변경)"를 클릭하면 모든 참석자의 예약 일정이 변경됩니다.
 
----
-*원문 최종 수정: Wed, 29 Mar, 2023 at 12:21 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+***
+
+_원문 최종 수정: Wed, 29 Mar, 2023 at 12:21 PM_ _Hyperclass 사용 가이드 — hyperclass.ai_

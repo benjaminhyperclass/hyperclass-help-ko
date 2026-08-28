@@ -89,4 +89,4 @@ gmail.com, yahoo.com 등 무료 도메인에서 메시지를 보내면 스팸함
 ***
 
 _원문 최종 수정: Wed, 24 Sep, 2025 at 6:03 AM_\
-&#xNAN;_&#x48;yperclass 사용 가이드 — hyperclass.ai_
+_&#x48;yperclass 사용 가이드 — hyperclass.ai_

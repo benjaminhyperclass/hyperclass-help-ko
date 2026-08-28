@@ -112,4 +112,4 @@ Hyperclass 템플릿 라이브러리의 즐겨찾기(Favorites) 기능을 사용
 ***
 
 _원문 최종 수정: Wed, 28 May, 2025 at 9:00 AM_\
-&#xNAN;_&#x48;yperclass 사용 가이드 — hyperclass.ai_
+_&#x48;yperclass 사용 가이드 — hyperclass.ai_

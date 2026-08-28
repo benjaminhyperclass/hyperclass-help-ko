@@ -224,4 +224,4 @@ Hyperclass 수료증 빌더의 배지는 스킬 마일스톤, 강의 완료, 커
 ***
 
 _원문 최종 수정: Mon, 30 Mar, 2026 at 9:54 AM_\
-&#xNAN;_&#x48;yperclass 사용 가이드 — hyperclass.ai_
+_&#x48;yperclass 사용 가이드 — hyperclass.ai_

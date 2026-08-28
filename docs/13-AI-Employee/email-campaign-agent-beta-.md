@@ -171,4 +171,4 @@ A: 목표와 리스트 크기에 따라 **지금 발송**, **예약**, **일괄 
 ***
 
 _원문 최종 수정: 2025년 12월 13일_\
-&#xNAN;_&#x48;yperclass 사용 가이드 — hyperclass.ai_
+_&#x48;yperclass 사용 가이드 — hyperclass.ai_

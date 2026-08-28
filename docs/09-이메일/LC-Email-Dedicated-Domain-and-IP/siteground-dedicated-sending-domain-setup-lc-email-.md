@@ -214,4 +214,4 @@ D. Create(생성) 버튼을 클릭하세요.
 ***
 
 _원문 최종 수정: 2024년 9월 10일 오전 11시 13분_\
-&#xNAN;_&#x48;yperclass 사용 가이드 — hyperclass.ai_
+_&#x48;yperclass 사용 가이드 — hyperclass.ai_

@@ -109,4 +109,4 @@ Hyperclass는 연락처 기능을 지속적으로 향상시키고 있으며, 향
 ***
 
 _원문 최종 수정: Mon, 14 Apr, 2025 at 2:51 PM_\
-&#xNAN;_&#x48;yperclass 사용 가이드 — hyperclass.ai_
+_&#x48;yperclass 사용 가이드 — hyperclass.ai_

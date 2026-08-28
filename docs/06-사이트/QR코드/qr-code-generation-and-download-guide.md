@@ -137,4 +137,4 @@ QR코드 커스터마이징이 완전히 끝나면 여러 가지 방법으로 �
 ***
 
 _원문 최종 수정: Wed, 17 Dec, 2025 at 11:40 AM_\
-&#xNAN;_&#x48;yperclass 사용 가이드 — hyperclass.ai_
+_&#x48;yperclass 사용 가이드 — hyperclass.ai_

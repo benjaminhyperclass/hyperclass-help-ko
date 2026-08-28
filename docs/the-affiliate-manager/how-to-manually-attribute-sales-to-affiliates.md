@@ -1,7 +1,8 @@
 ---
-원문: https://help.leadconnectorhq.com/support/solutions/articles/155000000563-how-to-manually-attribute-sales-to-affiliates
-번역일: 2026-04-23
-카테고리: 제휴 관리 > 
+원문: >-
+  https://help.leadconnectorhq.com/support/solutions/articles/155000000563-how-to-manually-attribute-sales-to-affiliates
+번역일: 2026-04-23T00:00:00.000Z
+카테고리: 제휴 관리 >
 ---
 
 # 제휴 파트너에게 매출을 수동으로 귀속시키는 방법
@@ -10,31 +11,31 @@
 
 #### 이 아티클에서 다루는 내용:
 
-#### [**이 기능이 무엇인가요?**](#What-is-this-feature?)
+#### [**이 기능이 무엇인가요?**](how-to-manually-attribute-sales-to-affiliates.md#What-is-this-feature?)
 
-#### [사용 사례:](#Usage-Cases%3A)
+#### [사용 사례:](how-to-manually-attribute-sales-to-affiliates.md#Usage-Cases:)
 
-#### [이 기능을 어떻게 사용하나요?**](#How-to-use-this-feature?)
+#### [이 기능을 어떻게 사용하나요?\*\*](how-to-manually-attribute-sales-to-affiliates.md#How-to-use-this-feature?)
 
-#### [**자주 묻는 질문**](#FAQs)
+#### [**자주 묻는 질문**](how-to-manually-attribute-sales-to-affiliates.md#FAQs)
 
-#### [수동 귀속 기능을 사용할 때 단일 매출에 연결할 수 있는 제휴 파트너 수에 제한이 있나요?](#Is-there-a-limit-to-the-number-of-affiliates-I-can-associate-with-a-single-sale-when-using-the-manual-attribution-feature?)
+#### [수동 귀속 기능을 사용할 때 단일 매출에 연결할 수 있는 제휴 파트너 수에 제한이 있나요?](how-to-manually-attribute-sales-to-affiliates.md#Is-there-a-limit-to-the-number-of-affiliates-I-can-associate-with-a-single-sale-when-using-the-manual-attribution-feature?)
 
-#### [수동으로 귀속된 매출도 일반적인 제휴 링크 기반 매출과 동일한 검증 및 승인 과정을 거치나요?](#Are-manually-attributed-sales-subject-to-the-same-validation-and-approval-process-as-regular-affiliate-link-based-sales?)
+#### [수동으로 귀속된 매출도 일반적인 제휴 링크 기반 매출과 동일한 검증 및 승인 과정을 거치나요?](how-to-manually-attribute-sales-to-affiliates.md#Are-manually-attributed-sales-subject-to-the-same-validation-and-approval-process-as-regular-affiliate-link-based-sales?)
 
-#### [고객의 이메일 주소가 제휴 계정과 직접 연결되지 않아도 제휴 파트너에게 매출을 귀속시킬 수 있나요?](#Can-I-attribute-a-sale-to-an-affiliate-even-if-the-customer's-email-address-is-not-directly-associated-with-their-affiliate-account?)
+#### [고객의 이메일 주소가 제휴 계정과 직접 연결되지 않아도 제휴 파트너에게 매출을 귀속시킬 수 있나요?](how-to-manually-attribute-sales-to-affiliates.md#Can-I-attribute-a-sale-to-an-affiliate-even-if-the-customer's-email-address-is-not-directly-associated-with-their-affiliate-account?)
 
-#### [무단 사용자가 수동 매출 귀속 데이터를 조작하는 것을 방지하는 보안 조치가 있나요?](#Are-any-safeguards-in-place-to-prevent-unauthorized-users-from-manipulating-manual-sales-attribution-data?)
+#### [무단 사용자가 수동 매출 귀속 데이터를 조작하는 것을 방지하는 보안 조치가 있나요?](how-to-manually-attribute-sales-to-affiliates.md#Are-any-safeguards-in-place-to-prevent-unauthorized-users-from-manipulating-manual-sales-attribution-data?)
 
-#### [수동 귀속 기능을 사용하여 오프라인 이벤트나 대면 상호작용에서 발생한 매출을 제휴 파트너에게 귀속시킬 수 있나요?](#Can-I-attribute-sales-from-offline-events-or-in-person-interactions-to-affiliates-using-the-manual-attribution-feature?)
+#### [수동 귀속 기능을 사용하여 오프라인 이벤트나 대면 상호작용에서 발생한 매출을 제휴 파트너에게 귀속시킬 수 있나요?](how-to-manually-attribute-sales-to-affiliates.md#Can-I-attribute-sales-from-offline-events-or-in-person-interactions-to-affiliates-using-the-manual-attribution-feature?)
 
-#### [고객이 여러 번 구매하고 각 매출을 다른 제휴 파트너에게 귀속시키고 싶은 경우 어떻게 처리하나요?](#How-do-I-handle-cases-where-a-customer-makes-multiple-purchases,-and-I-want-to-attribute-each-sale-to-different-affiliates?)
+#### [고객이 여러 번 구매하고 각 매출을 다른 제휴 파트너에게 귀속시키고 싶은 경우 어떻게 처리하나요?](how-to-manually-attribute-sales-to-affiliates.md#How-do-I-handle-cases-where-a-customer-makes-multiple-purchases,-and-I-want-to-attribute-each-sale-to-different-affiliates?)
 
-#### [매출을 여러 제휴 파트너에게 귀속시키고 수수료를 나누는 것이 가능한가요?](#Is-it-possible-to-attribute-a-sale-to-multiple-affiliates-and-split-the-commission-between-them?)
+#### [매출을 여러 제휴 파트너에게 귀속시키고 수수료를 나누는 것이 가능한가요?](how-to-manually-attribute-sales-to-affiliates.md#Is-it-possible-to-attribute-a-sale-to-multiple-affiliates-and-split-the-commission-between-them?)
 
-#### [특정 사용자가 수동 귀속 기능을 사용하지 못하도록 제한하고 특정 관리자 역할에만 허용할 수 있나요?](#Can-I-restrict-certain-users-from-using-the-manual-attribution-feature-and-reserve-it-for-specific-admin-roles?)
+#### [특정 사용자가 수동 귀속 기능을 사용하지 못하도록 제한하고 특정 관리자 역할에만 허용할 수 있나요?](how-to-manually-attribute-sales-to-affiliates.md#Can-I-restrict-certain-users-from-using-the-manual-attribution-feature-and-reserve-it-for-specific-admin-roles?)
 
----
+***
 
 ## 이 기능이 무엇인가요?
 
@@ -180,6 +181,6 @@ CRM은 무단 접근과 수동 매출 귀속 데이터 조작을 방지하기 �
 
 관리자 역할과 권한에 따라 수동 매출 귀속 기능에 대한 접근을 제한할 수 있습니다. 이를 통해 누가 수동 귀속을 수행할 수 있는지 제어하여 과정의 정확성과 무결성을 보장할 수 있습니다.
 
----
-*원문 최종 수정: Fri, 4 Aug, 2023 at 8:13 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+***
+
+_원문 최종 수정: Fri, 4 Aug, 2023 at 8:13 AM_ _Hyperclass 사용 가이드 — hyperclass.ai_

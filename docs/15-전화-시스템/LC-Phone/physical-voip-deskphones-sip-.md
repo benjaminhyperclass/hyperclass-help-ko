@@ -219,4 +219,4 @@ Hyperclass로 라우팅되는 음성메일은 \*\*대화(Conversations)\*\*와 \
 ***
 
 _원문 최종 수정: Tue, 31 Mar, 2026 at 7:28 AM_\
-&#xNAN;_&#x48;yperclass 사용 가이드 — hyperclass.ai_
+_&#x48;yperclass 사용 가이드 — hyperclass.ai_

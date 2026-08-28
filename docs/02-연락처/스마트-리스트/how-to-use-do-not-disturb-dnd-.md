@@ -138,4 +138,4 @@ DND 설정 방법에 따라 다릅니다. 연락처는 특정 채널(예: SMS는
 ***
 
 _원문 최종 수정: Wed, 4 Feb, 2026 at 7:39 AM_\
-&#xNAN;_&#x48;yperclass 사용 가이드 — hyperclass.ai_
+_&#x48;yperclass 사용 가이드 — hyperclass.ai_

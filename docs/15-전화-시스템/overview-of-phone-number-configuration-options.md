@@ -179,4 +179,4 @@ A: 속삭임 메시지는 외부 전화번호로 전달되는 통화에만 재�
 ***
 
 _원문 최종 수정: Wed, 4 Feb, 2026 at 5:41 AM_\
-&#xNAN;_&#x48;yperclass 사용 가이드 — hyperclass.ai_
+_&#x48;yperclass 사용 가이드 — hyperclass.ai_

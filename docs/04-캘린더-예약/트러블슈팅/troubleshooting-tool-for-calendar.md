@@ -202,4 +202,4 @@
 ***
 
 _원문 최종 수정: Wed, 11 Feb, 2026 at 2:51 AM_\
-&#xNAN;_&#x48;yperclass 사용 가이드 — hyperclass.ai_
+_&#x48;yperclass 사용 가이드 — hyperclass.ai_
