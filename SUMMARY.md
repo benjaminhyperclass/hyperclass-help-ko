@@ -2565,6 +2565,7 @@
 * [한국 전용 앱](docs/43-한국-앱/README.md)
 * [부록](docs/43-한국-앱/appendix.md)
 * [결제 팝업이 안 열릴 때 (브라우저 팝업 차단 해제)](docs/43-한국-앱/faq-popup-blocker.md)
+* [취소·환불 처리 안내 (환불 소요기간)](docs/43-한국-앱/faq-cancel-refund.md)
 * [Part 0. 홈페이지 사전 점검 🟡](docs/43-한국-앱/part0-website-check.md)
 * [Part 1. 정보·서류 준비 🟡](docs/43-한국-앱/part1-preparation.md)
 * [Part 2. 토스페이먼츠 신청 🟡](docs/43-한국-앱/part2-application.md)
