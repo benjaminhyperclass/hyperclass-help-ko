@@ -9,6 +9,7 @@
 * [요금제 구성](pricing-plans.md)
 * [사용량(재청구) 비용](usage-costs.md)
 * [결제 수단](payment-methods.md)
+* [판매 수수료](sales-commission.md)
 * [요금제 변경·환불](plan-change-refund.md)
 * [해지 시 데이터 처리](data-on-cancel.md)
 * [AI 챗봇 자동 응답](ai-chatbot.md)

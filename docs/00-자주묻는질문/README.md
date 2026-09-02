@@ -27,6 +27,7 @@ description: 하이퍼클래스를 처음 시작하는 분들이 가장 많이 �
 * [요금제 구성](pricing-plans.md)
 * [사용량(재청구) 비용](usage-costs.md)
 * [결제 수단](payment-methods.md)
+* [판매 수수료 (매출에서 떼가나요?)](sales-commission.md)
 * [요금제 변경·환불](plan-change-refund.md)
 * [해지 시 데이터 처리](data-on-cancel.md)
 

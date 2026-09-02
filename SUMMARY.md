@@ -26,6 +26,7 @@
   * [요금제를 변경하면 언제 적용되고, 환불은 어떻게 되나요?](docs/00-자주묻는질문/plan-change-refund.md)
   * [요금제는 어떻게 구성되나요? (가격이 얼마예요?)](docs/00-자주묻는질문/pricing-plans.md)
   * [예약 확정·리마인드 알림이 자동으로 발송되나요?](docs/00-자주묻는질문/reminders.md)
+  * [하이퍼클래스가 매출에서 수수료를 가져가나요?](docs/00-자주묻는질문/sales-commission.md)
   * [AI·SMS·음성 부가 서비스 사용료는 얼마예요?](docs/00-자주묻는질문/usage-costs.md)
   * [하이퍼클래스는 어떤 서비스인가요?](docs/00-자주묻는질문/what-is-hyperclass.md)
   * [벤자민이 누구예요? (창업자 소개)](docs/00-자주묻는질문/who-is-benjamin.md)
