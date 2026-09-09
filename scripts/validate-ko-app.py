@@ -67,6 +67,7 @@ PH_PATTERNS = [
     re.compile(r'(?<!\{)\{\s*[\w.]+\s*\}(?!\})'),  # {name}
     re.compile(r'\$\{[^}]*\}'),            # ${x}
     re.compile(r'%[sd]'),                  # %s %d
+    re.compile(r'%[A-Za-z_]+%'),           # %n% %q% %cat% (superagentsApp triggers.picker, 2026-09-09)
 ]
 # 한국어에 복수형이 없으므로 제거하는 것이 정상 (지침 2-E)
 PH_IGNORE = {'{plural}'}
