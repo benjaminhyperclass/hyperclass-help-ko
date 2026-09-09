@@ -36,8 +36,8 @@
 여기부터는 벤자민님이 직접 하셔야 합니다. Claude Code 가 할 수 있는 부분은 끝났습니다.
 
 준비된 것
-- 사전: jsDelivr 에 커밋 `f188913` (v4.2.3) 로 고정 배포됨 (200 / CORS `*` / immutable 확인)
-- 로더: `js/hc-ko-app-loader.js` (**v4.9.0** / `866b616…`) — `ALLOW = ['r6JD1nsqtk6Oln28fgrj']` 로 **한 곳에만** 적용되게 잠겨 있음
+- 사전: jsDelivr 에 커밋 `60e7b0b` (v4.2.4) 로 고정 배포됨 (200 / CORS `*` / immutable 확인)
+- 로더: `js/hc-ko-app-loader.js` (**v4.9.1** / `dcee3b4…`) — `ALLOW = ['r6JD1nsqtk6Oln28fgrj']` 로 **한 곳에만** 적용되게 잠겨 있음
 
 ---
 
@@ -57,7 +57,7 @@ Agency Settings → Company → **Whitelabel → Custom Code → Custom JavaScri
 
 ```html
 <script>window.HC_I18N_EXCLUDE = ["1r0pJRd1cQQ5DZsjSbc9"];</script>
-<script src="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@866b616cb407eaef28d17a3d24e34291490a774e/js/hc-ko-app-loader.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@dcee3b49023d3c7567d8d1d843db20e832c8e04c/js/hc-ko-app-loader.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@8fabb6a/js/dashboard-ko.min.js"></script>
 ```
 
@@ -85,7 +85,7 @@ __hcKoApp.status()
 |---|---|---|
 | `host` | `1` | `0` 이면 호스트 카탈로그 미적용 — 콘솔에 `host composer not found` 가 찍혔는지 확인 |
 | `gate` | `true` | `false` 면 ALLOW 가 비어 전체 적용 상태 |
-| `rev` | `805efe2341b282d74ab94addd3072dea5ca7d5a3` | 다르면 예전 로더가 붙어 있음 |
+| `rev` | `60e7b0b4684a9f7214ebd257b7e0fa999dddbf9b` | 다르면 예전 로더가 붙어 있음 |
 | `apps` | 화면 이동할수록 증가 | 0 에서 안 늘면 앱 스캔 실패 |
 | `unmatched` | 되도록 `0` | 0 이 아니면 콘솔의 `no dict for app` 로그에서 어떤 앱인지 확인 |
 | `fuzzy` | 0 이어도 정상 | 값이 있으면 GHL 이 네임스페이스를 바꿨다는 신호 — 다음 크롤 때 반영 |
