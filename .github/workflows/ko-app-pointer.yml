@@ -1,0 +1,147 @@
+name: 메인 앱 한글팩 v4 — REV 포인터 전진
+
+# 사전(core/apps)이 바뀐 커밋이 **검증(ko-app-validate)을 통과한 뒤**, jsDelivr 가 그 커밋의 파일을
+# 실제로 서빙하는지 대조하고 data/hc-ko-app-rev.json 의 rev 를 그 커밋으로 전진시킨다(봇 커밋).
+# 로더(v4.10+)는 이 포인터를 raw@main 에서 읽으므로 Custom JS 슬롯 교체가 필요 없다.
+#
+# 트리거가 workflow_run 인 이유: push 로 직접 돌리면 validate 와 병렬이 되어 C1~C10·DNT 가
+# 빨간불이어도 그 사전이 프로덕션 포인터가 된다. 검증 성공 → 대조 → 커밋 순서를 강제한다.
+#
+# 순서가 핵심이다: 포인터가 새 SHA 를 가리키는 순간 jsDelivr 에 그 파일이 있어야 한다.
+# 그래서 "대조 통과 → 커밋" 이지 "커밋 → 대조" 가 아니다.
+#
+# 롤백: 사람이 rev 를 직전 SHA 로 되돌린 커밋을 올린다(by 가 봇이 아니게 된다). 이 워크플로는
+# "롤백 커밋보다 오래된 사전" 으로는 전진하지 않는다 — 롤백 이후 새 사전 커밋이 와야 다시 전진한다.
+# 수동 실행(workflow_dispatch)도 같은 규칙을 따르며, force=true 로만 넘어설 수 있다.
+#
+# 봇 push(GITHUB_TOKEN)는 다른 워크플로를 발화시키지 않는다 — 루프 없음. 대신 커밋 직후 자체 검사를 한다.
+# cancel-in-progress 를 쓰지 않는다: 대조 대기 중 다른 실행이 와도 이 실행은 끝까지 간다(직렬화).
+
+on:
+  workflow_run:
+    workflows: ["메인 앱 한글팩 v4 검증"]
+    types: [completed]
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      target:
+        description: '전진시킬 커밋 SHA (비우면 사전 파일을 마지막으로 바꾼 커밋)'
+        required: false
+        default: ''
+      force:
+        description: '롤백 상태여도 전진 (true/false)'
+        required: false
+        default: 'false'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ko-app-pointer
+  cancel-in-progress: false
+
+jobs:
+  advance:
+    # 검증이 성공으로 끝난 경우에만. 취소·실패면 아무것도 하지 않는다 (다음 성공 실행이 처리).
+    if: github.event_name == 'workflow_dispatch' || (github.event.workflow_run.conclusion == 'success' && github.event.workflow_run.head_branch == 'main')
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      VALIDATED_SHA: ${{ github.event.workflow_run.head_sha }}
+      INPUT_TARGET: ${{ github.event.inputs.target }}
+      INPUT_FORCE: ${{ github.event.inputs.force }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: 대상 SHA 결정 · 검증 통과 확인 · 롤백 보호
+        id: target
+        run: |
+          set -e
+          git fetch -q origin main && git checkout -q -B main origin/main
+          if [ -n "$INPUT_TARGET" ]; then TARGET="$INPUT_TARGET"; else
+            TARGET=$(git log -1 --format=%H -- data/hc-ko-app-core.json data/hc-ko-app-apps.json); fi
+          CUR=$(python3 -c "import json;print(json.load(open('data/hc-ko-app-rev.json'))['rev'])")
+          BY=$(python3 -c "import json;print(json.load(open('data/hc-ko-app-rev.json')).get('by',''))")
+          VER=$(git show "$TARGET:data/hc-ko-app-core.json" | python3 -c "import json,sys;print(json.load(sys.stdin)['_meta'].get('version','?'))")
+          echo "target=$TARGET" >> $GITHUB_OUTPUT; echo "version=$VER" >> $GITHUB_OUTPUT; echo "current=$CUR" >> $GITHUB_OUTPUT
+          skip() { echo "skip=true" >> $GITHUB_OUTPUT; echo "## REV 포인터: 건너뜀 — $1" | tee -a $GITHUB_STEP_SUMMARY; }
+          if ! git cat-file -e "$TARGET^{commit}" 2>/dev/null; then echo "❌ 대상 커밋 없음: $TARGET"; exit 1; fi
+          if [ "$TARGET" = "$CUR" ]; then skip "이미 최신 (\`${CUR:0:7}\`, 사전 v$VER)"; exit 0; fi
+          # 검증 통과 확인: workflow_run 이면 검증된 커밋의 사전 blob 과 대상의 blob 이 같아야 한다.
+          # (대상이 검증된 커밋의 조상이고 그 사이 사전이 안 바뀌었으면 같은 내용이 검증된 것)
+          if [ -n "$VALIDATED_SHA" ]; then
+            for f in data/hc-ko-app-core.json data/hc-ko-app-apps.json; do
+              [ "$(git rev-parse "$TARGET:$f")" = "$(git rev-parse "$VALIDATED_SHA:$f")" ] || { skip "대상(\`${TARGET:0:7}\`)의 $f 이 검증된 커밋(\`${VALIDATED_SHA:0:7}\`)과 다름 — 그 커밋의 검증 실행이 처리"; exit 0; }
+            done
+          fi
+          # 롤백 보호: 포인터가 사람 손으로 바뀐 뒤(by≠봇) 새 사전 커밋이 없으면 전진하지 않는다.
+          if [ "$BY" != "ko-app-pointer.yml" ] && [ "$INPUT_FORCE" != "true" ]; then
+            RB=$(git log -1 --format=%H -- data/hc-ko-app-rev.json)
+            if [ -n "$RB" ] && git merge-base --is-ancestor "$TARGET" "$RB"; then
+              skip "포인터가 수동 설정(by=$BY, 롤백?)이고 대상 사전(\`${TARGET:0:7}\`)이 그보다 오래됨. 되돌리려면 force=true"; exit 0; fi
+          fi
+          echo "skip=false" >> $GITHUB_OUTPUT
+          echo "전진 예정: ${CUR:0:7} → ${TARGET:0:7} (사전 v$VER, by=$BY)"
+
+      - name: jsDelivr @대상SHA 가 커밋 blob 과 같은 바이트를 서빙하는지 대조 (재시도)
+        if: steps.target.outputs.skip != 'true'
+        env:
+          T: ${{ steps.target.outputs.target }}
+        run: |
+          set -e
+          for f in data/hc-ko-app-core.json data/hc-ko-app-apps.json; do
+            want=$(git show "$T:$f" | sha256sum | cut -c1-64)
+            url="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@$T/$f"
+            ok=0
+            for i in $(seq 1 8); do
+              got=$(curl -fsSL --max-time 30 "$url" | sha256sum | cut -c1-64 || true)
+              if [ "$got" = "$want" ]; then ok=1; echo "  ✅ $f  $got"; break; fi
+              echo "  ⏳ $f 시도 $i/8 — cdn=${got:0:12} want=${want:0:12}"; sleep 15
+            done
+            [ $ok -eq 1 ] || { echo "❌ jsDelivr 가 $T 의 $f 을 서빙하지 않습니다 — 포인터를 전진시키지 않습니다"; exit 1; }
+          done
+
+      - name: 포인터 커밋 (봇, 경합 시 재시도) · 커밋 직후 자체 검사
+        if: steps.target.outputs.skip != 'true'
+        env:
+          T: ${{ steps.target.outputs.target }}
+          V: ${{ steps.target.outputs.version }}
+          CUR: ${{ steps.target.outputs.current }}
+        run: |
+          set -e
+          git config user.name "Hyperclass Bot"
+          git config user.email "bot@hyperclass.ai"
+          pushed=0
+          for i in 1 2 3; do
+            git fetch -q origin main && git checkout -q -B main origin/main
+            # 그 사이 더 새 사전 커밋이 왔으면 이 실행은 물러난다 (그 커밋의 검증 실행이 처리)
+            LATEST=$(git log -1 --format=%H -- data/hc-ko-app-core.json data/hc-ko-app-apps.json)
+            if [ -z "$INPUT_TARGET" ] && [ "$LATEST" != "$T" ]; then
+              echo "## REV 포인터: 건너뜀 — 더 새 사전 커밋(\`${LATEST:0:7}\`)이 있어 그쪽 실행에 맡김" | tee -a $GITHUB_STEP_SUMMARY; exit 0; fi
+            python3 - <<'PY'
+          import json, os, datetime
+          p='data/hc-ko-app-rev.json'
+          d=json.load(open(p, encoding='utf-8'))
+          d['rev']=os.environ['T']; d['version']=os.environ['V']; d['by']='ko-app-pointer.yml'
+          d['updated']=datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
+          json.dump(d, open(p,'w',encoding='utf-8'), ensure_ascii=False, indent=2)
+          PY
+            if git diff --quiet -- data/hc-ko-app-rev.json; then echo "이미 같은 값"; pushed=1; break; fi
+            git add data/hc-ko-app-rev.json
+            git commit -q -m "[Auto] REV 포인터 → ${T:0:7} (사전 v$V)"
+            if git push -q origin main; then pushed=1; break; fi
+            echo "push 거부 — 재시도 $i/3"; sleep 5
+          done
+          [ $pushed -eq 1 ] || { echo "❌ 포인터 push 실패"; exit 1; }
+          # 자체 검사 (봇 push 는 validate 를 발화시키지 않는다)
+          REV=$(python3 -c "import json;print(json.load(open('data/hc-ko-app-rev.json'))['rev'])")
+          for f in data/hc-ko-app-core.json data/hc-ko-app-apps.json; do
+            [ "$(git rev-parse "$REV:$f")" = "$(git rev-parse "HEAD:$f")" ] || { echo "❌ 커밋 뒤 검사 실패: $f"; exit 1; }
+          done
+          {
+            echo "## REV 포인터 전진: \`${CUR:0:7}\` → \`$T\` (사전 v$V)"
+            echo "검증 통과 + jsDelivr 대조 후 커밋. 로더는 다음 로드부터 새 REV 를 쓴다(stale-while-revalidate)."
+          } >> $GITHUB_STEP_SUMMARY

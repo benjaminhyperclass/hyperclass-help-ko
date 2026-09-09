@@ -14,14 +14,16 @@
      로더가 아직 사전을 받는 중이라 booted=false / textEntries=0 으로
      오탐 FAIL 이 납니다. 그 경우 몇 초 뒤 다시 실행하면 됩니다.
 
-   ※ EXPECT 는 배포할 때마다 갱신합니다. 갱신 대상 3개:
-       version     ← js/hc-ko-app-loader.js 의 version
-       revPrefix   ← 그 파일의 REV 앞 7자 (= 사전 커밋)
+   ※ EXPECT 는 사전을 갱신할 때마다 갱신합니다. 갱신 대상 3개:
+       version     ← js/hc-ko-app-loader.js 의 version (슬롯에 붙은 로더)
+       revPrefix   ← data/hc-ko-app-rev.json 의 rev 앞 7자 (v4.10 부터 포인터가 사전 REV 를 정한다)
        textEntries ← data/hc-ko-app-core.json 의 _text 건수
+   v4.10+ 는 stale-while-revalidate 라 갱신 직후 첫 로드는 옛 rev 일 수 있다 — revNext 에 새 SHA 가
+   보이면 새로고침 한 번 뒤 다시 돌리세요.
    ───────────────────────────────────────────────────────────────────── */
 (() => {
   const EXPECT = {
-    version: '4.9.2',
+    version: '4.10.0',
     revPrefix: '81a235c',
     textEntries: 9094,
   };
@@ -45,9 +47,9 @@
   let pass = true;
   pass &= chk('version', A.version, A.version === EXPECT.version,
               `기대 ${EXPECT.version} — 다르면 Custom JS 의 로더 SHA 가 옛것입니다`);
-  pass &= chk('rev', String(st.rev).slice(0, 10) + '…',
+  pass &= chk('rev', String(st.rev).slice(0, 10) + '… (' + (st.revSource || 'n/a') + (st.revNext ? ', next ' + String(st.revNext).slice(0, 7) : '') + ')',
               String(st.rev).startsWith(EXPECT.revPrefix),
-              `기대 ${EXPECT.revPrefix}… — 로더는 새것인데 REV 가 옛것이면 로더 내부 REV 미갱신`);
+              `기대 ${EXPECT.revPrefix}… — revNext 가 있으면 새로고침 후 재확인. builtin-fallback 이면 포인터 REV 로드 실패`);
   pass &= chk('textEntries', st.textEntries, st.textEntries === EXPECT.textEntries,
               `기대 ${EXPECT.textEntries} — 다르면 사전이 옛 커밋에서 옵니다`);
   pass &= chk('booted', st.booted, st.booted === true, '게이트 밖 화면이면 false 가 정상');

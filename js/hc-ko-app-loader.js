@@ -1,4 +1,4 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.9.2
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.10.0
  * Agency Settings → Company → Whitelabel → Custom Code → Custom JavaScript 칸.
  * ⚠️ 이 칸은 **HTML 주입 필드**다. script 태그로 감싸야 실행된다.
  *    (ClientClub customJs 는 반대로 태그를 거부한다 — 두 필드를 혼동하지 말 것)
@@ -13,6 +13,13 @@
  * 사전: core(호스트+flat+_text) 먼저, apps 는 백그라운드로 이어서.
  *       REV 가 커밋 SHA 로 고정돼 있으면 URL 이 불변이므로 Cache Storage 를 재검증 없이 쓴다.
  *       REV 를 바꾸면 옛 캐시 버킷은 부팅 때 자동 삭제된다.
+ * REV 결정 (v4.10, 2026-09-09): 슬롯의 로더는 한 번만 고정하고 사전 REV 는 포인터로 받는다.
+ *       부팅 = Cache Storage 에 저장된 포인터 → 없으면 내장 REV_BUILTIN (raw 왕복을 기다리지 않는다).
+ *       raw@main 의 data/hc-ko-app-rev.json 은 부팅 뒤 백그라운드로 받아 저장만 하고 **다음 로드**에 반영한다.
+ *       포인터 REV 의 사전 로드가 실패하면 내장 REV 로 한 번 더 시도한다(포인터 캐시는 버린다).
+ *       롤백 = 포인터 파일의 rev 를 직전 SHA 로 되돌린 커밋 (다음 로드부터 반영).
+ *       운영 규칙: REV_BUILTIN 은 충분히 검증된(소킹된) 사전만 넣는다 — 포인터를 아직 못 받은
+ *       첫 방문은 이 값으로 부팅하므로, 갓 올린 사전을 내장하면 롤백이 그 방문자에게 늦게 닿는다.
  * 서브계정 옵트아웃: window.HC_I18N_EXCLUDE = ['locationId', …]
  *   레거시 dashboard-ko 의 hcEx() 와 판정이 같아야 한다 — 다르면 그 계정만 반쪽 한국어가 된다.
  * 긴급 중단: 주소에 ?hcko=off 또는 콘솔에서 localStorage.hcKoOff='1'
@@ -75,14 +82,31 @@
     return !!l && ALLOW.indexOf(l) >= 0;
   }
 
-  /* ---------- P2. 사전 버전을 캐시 키에 반영 ---------- */
+  /* ---------- P2. 사전 REV — 포인터 캐시 → 내장 순 ---------- */
   // 커밋할 때마다 REV 가 바뀌면 CDN·Cache Storage 가 함께 무효화된다.
   // @main 고정이면 jsDelivr 24h + TTL 6h 가 직렬로 쌓여 최악 30시간 지연된다.
-  var REV = '81a235c06fd7a8c65ba720b3642fe72a5a4af817';
-  var BASE = 'https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@' + REV + '/data/';
-  var URL_CORE = BASE + 'hc-ko-app-core.json';
-  var URL_APPS = BASE + 'hc-ko-app-apps.json';
-  var CACHE = 'hc-ko-app-' + REV.slice(0, 7);
+  // 내장 REV 는 포인터를 한 번도 못 받은 첫 방문과, 포인터 REV 로드 실패 시의 안전망이다.
+  // 슬롯 교체 없이 사전을 갱신하려면 data/hc-ko-app-rev.json 의 rev 만 바꾸면 된다(CI 봇이 한다).
+  var REV_BUILTIN = '81a235c06fd7a8c65ba720b3642fe72a5a4af817';
+  var POINTER_URL = 'https://raw.githubusercontent.com/benjaminhyperclass/hyperclass-help-ko/main/data/hc-ko-app-rev.json';
+  // 'hc-ko-app-' 접두사를 쓰지 않는다 — purgeOldCaches() 가 그 접두사 버킷을 전부 지운다.
+  var POINTER_CACHE = 'hc-ko-pointer';
+  var SHA_RE = /^[0-9a-f]{40}$/;
+  var REV, revSource, revNext = null;
+  var BASE, URL_CORE, URL_APPS, CACHE, RAW, IMMUTABLE;
+  function applyRev(rev, src) {
+    REV = rev; revSource = src;
+    BASE = 'https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@' + REV + '/data/';
+    URL_CORE = BASE + 'hc-ko-app-core.json';
+    URL_APPS = BASE + 'hc-ko-app-apps.json';
+    CACHE = 'hc-ko-app-' + REV.slice(0, 7);
+    // CSP 가 connect-src 를 다르게 걸어 jsDelivr fetch 가 막힐 때의 폴백 (커뮤니티 트랙과 같은 raw 경로)
+    RAW = 'https://raw.githubusercontent.com/benjaminhyperclass/hyperclass-help-ko/' + REV + '/data/';
+    // REV 를 커밋 SHA 로 고정하면 URL 이 불변이라 내용이 바뀔 수 없다.
+    // 그때 6시간마다 5.4MB 를 다시 받는 건 순수 낭비다.
+    IMMUTABLE = /^[0-9a-f]{7,40}$/.test(REV);
+  }
+  applyRev(REV_BUILTIN, 'builtin');
   var TTL = 6 * 3600 * 1000;
   var LOCALE_KEYS = ['en', 'en-US', 'en_US'];
   var DEBUG = /[?&]hcko=debug/.test(location.search);
@@ -93,16 +117,19 @@
   // i18n 카탈로그에 한국어를 부어 넣거나 provides.t 를 래퍼로 바꾸면
   // 원복 수단이 없다 — 이 상태에서 제외 계정으로 넘어가면 새로고침이 유일한 답이다.
   var dirty = false;
-  var stats = { host: 0, apps: 0, tref: 0, remerge: 0, fuzzy: 0, unmatched: 0, textHits: 0, fallback: 0 };
+  var stats = { host: 0, apps: 0, tref: 0, remerge: 0, fuzzy: 0, unmatched: 0, textHits: 0, fallback: 0, pointerFail: 0, revFallback: 0 };
   function log() { if (DEBUG && window.console) console.log.apply(console, ['[hc-ko]'].concat([].slice.call(arguments))); }
 
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.9.2',
+    version: '4.10.0',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
+      s.revSource = revSource;    // builtin | pointer-cache | builtin-fallback(포인터 REV 로드 실패)
+      s.revBuiltin = REV_BUILTIN;
+      s.revNext = revNext;        // 백그라운드에서 받은 새 포인터 — 다음 로드에 반영
       s.gate = gate;              // 화이트리스트가 걸려 있는가
       s.allow = ALLOW.slice();
       s.location = locOf();       // 지금 보고 있는 로케이션 (/v2/location/ 기준)
@@ -368,13 +395,24 @@
     if (p.isContentEditable) return true;
     return false;
   }
+  // "<b>Managed Agents</b> are prompt-based …" 처럼 앞 노드(굵은 제품명)에 이어지는 조각은
+  // 원문이 소문자로 시작하고 앞에 공백이 있다. 한국어 값은 조사("는 …")로 시작하는데
+  // 선행 공백을 남기면 "관리형 에이전트 는" 이 된다(2026-09-09 실측). 이 경우에만 앞 공백을 버린다.
+  // 조건 셋을 모두 요구한다 — 노드 선행 공백 · 원문이 be/조동사/동사로 시작(주어가 앞 노드에 있다는
+  // 결정적 표지; "this contact" 같은 지시사 조각은 제외) · 값이 조사(+공백/문장부호)로 시작.
+  var JOIN_EN_RE = /^(?:is|are|was|were|has|have|had|can|could|will|would|should|may|might|must|does|do|did|lets|helps|allows|runs?)\b/;
+  var PARTICLE_RE = /^(?:은|는|이|가|을|를|의|에|와|과|도|로|으로|에서|에게|까지|부터)(?:\s|[,.]|$)/;
+  function joinsPrev(s, t, v) {
+    return /^\s/.test(s) && JOIN_EN_RE.test(t) && PARTICLE_RE.test(v);
+  }
   function trText(n) {
     var s = n.nodeValue; if (!s || !T) return;
     var t = s.trim(); if (!t) return;
     var v = T[t];
     if (v === undefined) return;
     if (skipNode(n)) return;
-    n.nodeValue = repl(s, t, v); stats.textHits++;
+    n.nodeValue = joinsPrev(s, t, v) ? v + (s.match(/\s*$/) || [''])[0] : repl(s, t, v);
+    stats.textHits++;
   }
   function trAttrs(el) {
     if (!T || !el.getAttribute) return;
@@ -431,8 +469,7 @@
   /* ---------- 사전 로딩 ---------- */
   // 기존 레이어는 jsDelivr 를 <script src>(script-src)로 썼는데 v4 는 fetch(connect-src)다.
   // CSP 가 다르게 걸려 있을 수 있고, 막히면 core 로드가 실패해 _text 치환까지 통째로
-  // 죽는다(전면 영어). 커뮤니티 트랙에서 이미 쓰는 raw 경로로 한 번 더 시도한다.
-  var RAW = 'https://raw.githubusercontent.com/benjaminhyperclass/hyperclass-help-ko/' + REV + '/data/';
+  // 죽는다(전면 영어). 커뮤니티 트랙에서 이미 쓰는 raw 경로(RAW, applyRev 에서 결정)로 한 번 더 시도한다.
   function grab(u) {
     return fetch(u, { mode: 'cors', cache: 'no-cache' }).then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status); return r.text();
@@ -451,10 +488,6 @@
       return d;
     });
   }
-  // REV 를 커밋 SHA 로 고정하면 URL 이 불변이라 내용이 바뀔 수 없다.
-  // 그때 6시간마다 5.4MB 를 다시 받는 건 순수 낭비다.
-  var IMMUTABLE = /^[0-9a-f]{7,40}$/.test(REV);
-
   // 캐시 이름에 REV 가 들어가므로 갱신할 때마다 새 버킷이 생긴다.
   // 옛 버킷을 지우지 않으면 갱신 1회당 약 5.4MB 가 그대로 남는다.
   // 쿼터가 차면 cache.put 이 조용히 실패하고 매 페이지 로드마다 재다운로드한다.
@@ -486,6 +519,74 @@
       });
     }).catch(function () { return fetchFresh(url, null); });
   }
+  /* ---------- P7. REV 포인터 (stale-while-revalidate) ---------- */
+  // 부팅은 raw 왕복을 기다리지 않는다. Cache Storage 의 포인터(지난 로드에서 저장) 또는
+  // 내장 REV 로 즉시 시작하고, 새 포인터는 저장만 해 두고 다음 로드에 쓴다.
+  // (community-loader v2.0.1 의 TTL 백그라운드 갱신과 같은 패턴)
+  // Cache Storage 가 없거나 거부하는 브라우저(사파리·파이어폭스 프라이빗)를 위해 rev 한 줄은
+  // localStorage 에도 둔다. 없으면 그 브라우저는 영원히 내장 REV 로만 부팅해 포인터·롤백이 안 닿는다.
+  var LS_REV = 'hcKoRev', LS_BAD = 'hcKoBadRev';
+  function lsGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
+  function lsSet(k, v) { try { if (v === null) localStorage.removeItem(k); else localStorage.setItem(k, v); } catch (e) {} }
+  // 사전 로드에 실패한 rev. 도달 불가 커밋(force push·gc)이면 포인터가 같은 값을 계속 주므로
+  // 기억해 두지 않으면 매 로드마다 "실패 → 폴백 → 전체 재다운로드" 가 반복된다.
+  function isBad(rev) { return !!rev && lsGet(LS_BAD) === rev; }
+  function usable(rev) { return !!rev && SHA_RE.test(String(rev)) && !isBad(rev) ? rev : null; }
+  function readCachedPointer() {
+    var ls = usable(lsGet(LS_REV));
+    if (!('caches' in window)) return Promise.resolve(ls);
+    return caches.open(POINTER_CACHE).then(function (c) { return c.match(POINTER_URL); })
+      .then(function (hit) { return hit ? hit.json() : null; })
+      .then(function (d) { return usable(d && d.rev) || ls; })
+      .catch(function () { return ls; });
+  }
+  function dropCachedPointer(rev) {
+    lsSet(LS_BAD, rev || null); lsSet(LS_REV, null);
+    try { if ('caches' in window) caches.open(POINTER_CACHE).then(function (c) { return c.delete(POINTER_URL); }).catch(function () {}); } catch (e) {}
+  }
+  var revReady = null;
+  function resolveRev() {
+    if (revReady) return revReady;
+    revReady = readCachedPointer().then(function (rev) {
+      if (rev && rev !== REV) applyRev(rev, 'pointer-cache');
+      else if (rev) revSource = 'pointer-cache';
+      log('REV', REV.slice(0, 7), '(' + revSource + ')');
+      return REV;
+    });
+    return revReady;
+  }
+  function refreshPointer() {
+    try {
+      fetch(POINTER_URL, { mode: 'cors', cache: 'no-cache' }).then(function (r) {
+        if (!r.ok) throw new Error('HTTP ' + r.status); return r.text();
+      }).then(function (txt) {
+        var d = JSON.parse(txt);
+        if (!d || !SHA_RE.test(String(d.rev))) throw new Error('bad pointer');
+        if (isBad(d.rev)) { log('포인터가 로드 실패했던 REV 를 가리킴 — 무시', d.rev.slice(0, 7)); return; }
+        if (d.rev !== REV) { revNext = d.rev; log('새 REV 감지 — 다음 로드에 반영', d.rev.slice(0, 7)); }
+        lsSet(LS_REV, d.rev);
+        if (lsGet(LS_BAD) && lsGet(LS_BAD) !== d.rev) lsSet(LS_BAD, null);   // 포인터가 옮겨 갔으면 불량 기록 해제
+        if ('caches' in window) {
+          caches.open(POINTER_CACHE).then(function (c) {
+            return c.put(POINTER_URL, new Response(txt, { headers: { 'Content-Type': 'application/json', 'X-HC-TS': String(Date.now()) } }));
+          }).catch(function () {});
+        }
+      }).catch(function (e) { stats.pointerFail++; log('포인터 갱신 실패 — 현재 REV 유지', e && e.message); });
+    } catch (e) {}
+  }
+  function onCoreStale(nd) { core = nd; T = nd._text || null; hostDone = false; setupHost(); }
+  // 포인터가 가리키는 REV 의 사전을 CDN·raw 양쪽에서 못 받으면(가리키는 커밋에 파일이 없거나
+  // 삭제된 경우) 포인터를 버리고 내장 REV 로 한 번 더 간다. 내장 REV 까지 실패하면 그대로 실패.
+  function loadCore() {
+    return load(URL_CORE, onCoreStale).catch(function (e) {
+      if (REV === REV_BUILTIN) throw e;     // 내장 REV 자체가 실패 — 같은 URL 을 다시 시도할 이유가 없다
+      stats.revFallback++;
+      log('포인터 REV 사전 로드 실패 — 내장 REV 로 재시도', e && e.message);
+      dropCachedPointer(REV);
+      applyRev(REV_BUILTIN, 'builtin-fallback');
+      return load(URL_CORE, onCoreStale);
+    });
+  }
   function waitHost(ms) {
     return new Promise(function (res) {
       var t0 = Date.now();
@@ -504,12 +605,14 @@
   function boot() {
     if (booted || !allowed()) return;
     booted = true;
-    injectCss();
-    purgeOldCaches();
-    Promise.all([
-      load(URL_CORE, function (nd) { core = nd; T = nd._text || null; hostDone = false; setupHost(); }),
-      waitHost(20000)
-    ]).then(function (r) {
+    resolveRev().then(function () {
+      refreshPointer();          // 부팅 경로 밖 — 결과는 다음 로드에
+      injectCss();
+      return Promise.all([loadCore(), waitHost(20000)]);
+    }).then(function (r) {
+      // 옛 버킷 정리는 core 를 **받은 뒤**에 한다. 먼저 지우면 포인터 REV 로드가 실패해
+      // 내장 REV 로 돌아갈 때 그 버킷이 이미 없어 5.4MB 를 처음부터 다시 받는다.
+      purgeOldCaches();
       core = r[0] || {}; core.host = core.host || {}; core.flat = core.flat || {};
       T = core._text || null;
       if (r[1]) setupHost(); else log('host composer not found in 20s');
