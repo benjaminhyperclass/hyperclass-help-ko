@@ -43,3 +43,7 @@
 - [ ] 7. 커밋·REV·로더 4.9.1·CDN 대조
 - [ ] 8. 보고서
 결정: "Managed Agents"(h1) 는 영문 유지라 _text 미등재(키==값 C7 위반) / "0 Managed Agents" 는 _text 가 정확 일치만 지원해 제외
+- [x] 6. 적대적 리뷰 — H1/M13/L31 → 반영 69건(Won/Lost/Abandoned 는 앱 전역 관례 승리/손실/중단됨 유지, Copilot 표기는 세트 내 일관 유지) — 영향: pretty/reference/core/apps 재생성
+- [x] 7. 사전 커밋 60e7b0b(v4.2.4) → 로더 dcee3b4(v4.9.1, REV=60e7b0b…) → DEPLOY-v4 0a2615f. CDN=raw=local=git 삼중 일치(core/apps/loader) — 영향: Custom JS 슬롯 교체는 벤자민 수동
+- [x] 8. 보고서 data/reports/2026-09-09-superagents-ko-report.md
+잔여(벤자민): Custom JS 로더 SHA 교체 → 라이브 확인(version 4.9.1 / rev 60e7b0b / textEntries 9093). 스크립트 변경 필요 항목은 보고서 §5.
