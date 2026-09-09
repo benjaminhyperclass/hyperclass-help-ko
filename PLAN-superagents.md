@@ -47,3 +47,9 @@
 - [x] 7. 사전 커밋 60e7b0b(v4.2.4) → 로더 dcee3b4(v4.9.1, REV=60e7b0b…) → DEPLOY-v4 0a2615f. CDN=raw=local=git 삼중 일치(core/apps/loader) — 영향: Custom JS 슬롯 교체는 벤자민 수동
 - [x] 8. 보고서 data/reports/2026-09-09-superagents-ko-report.md
 잔여(벤자민): Custom JS 로더 SHA 교체 → 라이브 확인(version 4.9.1 / rev 60e7b0b / textEntries 9093). 스크립트 변경 필요 항목은 보고서 §5.
+
+# 후속 v2 — Managed Agents→관리형 에이전트 통일 · 스크립트 보강 · STATE.md (2026-09-09)
+대상: pretty(host 7 + _text 3 교정 + 1 신규 + meta 4.2.5) · reference ko 7 · 용어집 · DECISIONS [확정] · split → core/apps · 로더 4.9.2 · scripts A/B(diff만, 승인 후 커밋) · BUILD-ORDER-PROPOSAL 절 · docs/STATE.md
+의존: pretty→split→사전 커밋 SHA→로더 REV→로더 SHA→(A) verify-deploy EXPECT / STATE.md / 보고 블록
+완료 기준: 검사 0(기존값 변경은 §1 목록과 일치) · CDN=raw=local · A/B diff 보고(미커밋) · STATE.md 신설
+- [ ] 1 통일 편집  - [ ] 2 재빌드·배포  - [ ] 3 스크립트 diff  - [ ] 4 STATE.md  - [ ] 5 보고

@@ -1,9 +1,9 @@
 {
  "_meta": {
-  "version": "4.2.4",
+  "version": "4.2.5",
   "built": "2026-09-09",
-  "source": "crawl 310 routes + dashboard-ko + community v3 + legacy recovery + live audit 33 routes + superagentsApp/copilotApp gap 855 (2026-09-09)",
-  "strings": 103041
+  "source": "crawl 310 routes + dashboard-ko + community v3 + legacy recovery + live audit 33 routes + superagentsApp/copilotApp gap 855 (2026-09-09) + Managed Agents→관리형 에이전트 통일",
+  "strings": 103042
  },
  "host": {
   "accessibility": {
@@ -23984,7 +23984,7 @@
     },
     "reshapeBanner": {
      "title": "Agent Studio가 진화하고 있습니다",
-     "message": "에이전트를 만드는 새로운 방식인 Managed Agents를 도입했습니다. 기존 에이전트는 계속 정상적으로 실행되며, 이 페이지에서 계속 관리할 수 있습니다. 새 에이전트를 만들 때는 Labs에서 활성화할 수 있는 Managed Agents 사용을 권장합니다.",
+     "message": "에이전트를 만드는 새로운 방식인 관리형 에이전트를 도입했습니다. 기존 에이전트는 계속 정상적으로 실행되며, 이 페이지에서 계속 관리할 수 있습니다. 새 에이전트를 만들 때는 Labs에서 활성화할 수 있는 관리형 에이전트 사용을 권장합니다.",
      "knowMore": "자세히 알아보기"
     },
     "table": {
@@ -54262,15 +54262,15 @@
     "loadingActivity": "활동을 불러오는 중…",
     "loadingConversation": "대화를 불러오는 중",
     "noActivityBody": "이 에이전트와의 대화 및 트리거 실행 내역이 여기에 표시됩니다.",
-    "usageLimitTitle": "Managed Agents 사용 한도에 도달했습니다.",
-    "usageLimitBody": "이 서브 계정이 Managed Agents 사용 허용량에 도달했습니다. 새로운 채팅 및 트리거 실행이 일시적으로 차단됩니다.",
+    "usageLimitTitle": "관리형 에이전트 사용 한도에 도달했습니다.",
+    "usageLimitBody": "이 서브 계정이 관리형 에이전트 사용 허용량에 도달했습니다. 새로운 채팅 및 트리거 실행이 일시적으로 차단됩니다.",
     "usageLimitResumeAt": "{time} 이후 실행이 재개됩니다.",
     "usageLimitResumeUnknown": "서브 계정의 사용 허용량이 다시 확보되면 실행이 재개됩니다.",
-    "productDisabledTitle": "이 서브 계정에서는 Managed Agents가 활성화되어 있지 않습니다.",
-    "productDisabledBody": "이 서브 계정에서 Managed Agents가 활성화되기 전까지 채팅 및 트리거 실행을 사용할 수 없습니다.",
+    "productDisabledTitle": "이 서브 계정에서는 관리형 에이전트가 활성화되어 있지 않습니다.",
+    "productDisabledBody": "이 서브 계정에서 관리형 에이전트가 활성화되기 전까지 채팅 및 트리거 실행을 사용할 수 없습니다.",
     "inactiveLocationTitle": "이 서브 계정은 비활성 상태입니다.",
     "inactiveAgencyTitle": "이 에이전시는 비활성 상태입니다.",
-    "inactiveBody": "비활성 상태에서는 Managed Agents 실행을 사용할 수 없습니다.",
+    "inactiveBody": "비활성 상태에서는 관리형 에이전트 실행을 사용할 수 없습니다.",
     "memoryTitle": "이 에이전트가 기억하는 내용",
     "memoryBody": "대화 전반에 걸쳐 에이전트가 유지하는 지속적인 정보 — 선호 사항, 주요 연락처, 반복되는 맥락입니다. {name}에 대해 아직 저장된 내용이 없습니다.",
     "running": "실행 중…",
@@ -54877,7 +54877,7 @@
     "triggerTypes": {
      "chat": {
       "name": "채팅 메시지",
-      "desc": "Managed Agents 채팅 인터페이스를 통해 호출됩니다."
+      "desc": "관리형 에이전트 채팅 인터페이스를 통해 호출됩니다."
      },
      "form": {
       "name": "양식 제출",
@@ -121426,9 +121426,10 @@
   "To integrate your Facebook account and select the Facebook Ad Account-ID for which you want to see the data.": "Facebook 계정을 연동하고 데이터를 보려는 Facebook 광고 계정 ID를 선택하세요.",
   "Your changes will not be saved. Are you sure you want to leave?": "변경사항이 저장되지 않습니다. 정말 나가시겠습니까?",
   "Build and manage AI agents for your business": "비즈니스를 위한 AI 에이전트를 만들고 관리하세요",
-  "Create Managed Agent": "Managed Agent 만들기",
-  "No Managed Agents yet": "아직 Managed Agent가 없습니다",
-  "Create your first Managed Agent to get started.": "첫 Managed Agent를 만들어 시작하세요.",
-  "are prompt-based agents — give them a prompt, knowledge, web search, and integrations. Run them in chat or on triggers.": "는 프롬프트 기반 에이전트입니다. 프롬프트·지식·웹 검색·연동을 지정하고 채팅이나 트리거로 실행하세요."
+  "Create Managed Agent": "관리형 에이전트 만들기",
+  "No Managed Agents yet": "아직 관리형 에이전트가 없습니다",
+  "Create your first Managed Agent to get started.": "첫 관리형 에이전트를 만들어 시작하세요.",
+  "are prompt-based agents — give them a prompt, knowledge, web search, and integrations. Run them in chat or on triggers.": "는 프롬프트 기반 에이전트입니다. 프롬프트·지식·웹 검색·연동을 지정하고 채팅이나 트리거로 실행하세요.",
+  "Managed Agents": "관리형 에이전트"
  }
 }

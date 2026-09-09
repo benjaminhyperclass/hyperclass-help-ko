@@ -93,3 +93,16 @@ HTML 태그를 제거한다. **`i < n` 같은 비교 연산자도 태그로 오�
 - `data/whitelabel-exceptions.json` — 화이트라벨 검사·치환 제외 값 (사유 포함)
 - `data/placeholder-exceptions.json` — 플레이스홀더 판정 기록 (D identity / B 정상 / E 재번역)
 - `data/excluded-strings.json` — 수집 제외 문자열 레지스트리 (사용자 데이터·런타임 값 등)
+
+---
+
+## [확정] Managed Agents → '관리형 에이전트' — 2026-09-09
+
+superagentsApp(Managed Agents 빌더·목록·채팅 레이어)의 제품명 표기는 **'관리형 에이전트'** 로 통일한다.
+영문 유지안(2026-09-09 v1 라운드, `reshapeBanner` 선례 근거)은 **기각** — 사이드바·`agentLogsApp`·기존 `_text` 3건이
+이미 '관리형 에이전트'라 한 화면에 두 표기가 공존했다.
+
+- 적용: `_source/hc-ko-app.pretty.json` host 7키(`superagentsApp.chatLayer.*` 5, `agentStudioPanel.triggerTypes.chat.desc`, `agentStudioApp.agentDirectory.reshapeBanner.message`) + `_text` 4건.
+- 같은 문장의 **Labs** 는 GHL 메뉴명이라 유지. **Agent Studio** 도 고유명 유지.
+- `0 Managed Agents`(가변 숫자)는 `_text` 정확 일치 한계로 영문 잔존 — 알려진 잔존.
+- 용어집 `data/glossary/ghl-glossary.json` 에 등재. 새 번역에서 다시 영문으로 내지 말 것.

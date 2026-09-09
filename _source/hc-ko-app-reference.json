@@ -65209,7 +65209,7 @@
  },
  "agentStudioApp.agentDirectory.reshapeBanner.message": {
   "en": "We've introduced Managed Agents as the new way to build agents. Your existing agents will continue to run normally, and you can still manage them from this page. For new agent creation, we recommend using Managed Agents, which can be enabled from Labs.",
-  "ko": "에이전트를 만드는 새로운 방식인 Managed Agents를 도입했습니다. 기존 에이전트는 계속 정상적으로 실행되며, 이 페이지에서 계속 관리할 수 있습니다. 새 에이전트를 만들 때는 Labs에서 활성화할 수 있는 Managed Agents 사용을 권장합니다."
+  "ko": "에이전트를 만드는 새로운 방식인 관리형 에이전트를 도입했습니다. 기존 에이전트는 계속 정상적으로 실행되며, 이 페이지에서 계속 관리할 수 있습니다. 새 에이전트를 만들 때는 Labs에서 활성화할 수 있는 관리형 에이전트 사용을 권장합니다."
  },
  "agentStudioApp.agentDirectory.reshapeBanner.knowMore": {
   "en": "Know more",
@@ -279565,11 +279565,11 @@
  },
  "superagentsApp.chatLayer.usageLimitTitle": {
   "en": "Managed Agents usage limit reached.",
-  "ko": "Managed Agents 사용 한도에 도달했습니다."
+  "ko": "관리형 에이전트 사용 한도에 도달했습니다."
  },
  "superagentsApp.chatLayer.usageLimitBody": {
   "en": "This location has reached its Managed Agents usage allowance. New chat and trigger runs are temporarily blocked.",
-  "ko": "이 서브 계정이 Managed Agents 사용 허용량에 도달했습니다. 새로운 채팅 및 트리거 실행이 일시적으로 차단됩니다."
+  "ko": "이 서브 계정이 관리형 에이전트 사용 허용량에 도달했습니다. 새로운 채팅 및 트리거 실행이 일시적으로 차단됩니다."
  },
  "superagentsApp.chatLayer.usageLimitResumeAt": {
   "en": "Runs resume after {time}.",
@@ -279581,11 +279581,11 @@
  },
  "superagentsApp.chatLayer.productDisabledTitle": {
   "en": "Managed Agents are not enabled for this location.",
-  "ko": "이 서브 계정에서는 Managed Agents가 활성화되어 있지 않습니다."
+  "ko": "이 서브 계정에서는 관리형 에이전트가 활성화되어 있지 않습니다."
  },
  "superagentsApp.chatLayer.productDisabledBody": {
   "en": "Chat and trigger runs are unavailable until Managed Agents is enabled for this location.",
-  "ko": "이 서브 계정에서 Managed Agents가 활성화되기 전까지 채팅 및 트리거 실행을 사용할 수 없습니다."
+  "ko": "이 서브 계정에서 관리형 에이전트가 활성화되기 전까지 채팅 및 트리거 실행을 사용할 수 없습니다."
  },
  "superagentsApp.chatLayer.inactiveLocationTitle": {
   "en": "This location is inactive.",
@@ -279597,7 +279597,7 @@
  },
  "superagentsApp.chatLayer.inactiveBody": {
   "en": "Managed Agents runs are unavailable while it is inactive.",
-  "ko": "비활성 상태에서는 Managed Agents 실행을 사용할 수 없습니다."
+  "ko": "비활성 상태에서는 관리형 에이전트 실행을 사용할 수 없습니다."
  },
  "superagentsApp.chatLayer.memoryTitle": {
   "en": "What this agent remembers",
@@ -280489,7 +280489,7 @@
  },
  "superagentsApp.agentStudioPanel.triggerTypes.chat.desc": {
   "en": "Invoked via the Managed Agents chat interface.",
-  "ko": "Managed Agents 채팅 인터페이스를 통해 호출됩니다."
+  "ko": "관리형 에이전트 채팅 인터페이스를 통해 호출됩니다."
  },
  "superagentsApp.agentStudioPanel.triggerTypes.schedule.desc": {
   "en": "Runs the agent on a one-time or recurring schedule.",
