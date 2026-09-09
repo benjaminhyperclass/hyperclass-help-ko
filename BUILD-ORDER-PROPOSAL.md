@@ -87,3 +87,27 @@ KO: 하이퍼클래스.com/getstartedtoday-em   ← 존재하지 않는 도메�
 
 **권장.** 단기는 **1** (경고 강등 + 요약에 "로더 갱신 대기" 문구), 장기는 **3** 을 별도 라운드로.
 어느 쪽이든 `scripts/`·워크플로 수정이라 승인 후 진행한다.
+
+## `_text` 만 바뀔 때 REV·슬롯 교체 없이 가는 방안 (2026-09-09 추가, 미실행)
+
+**문제.** 지금 구조는 `_text`(9,094건, 약 598KB)가 `data/hc-ko-app-core.json`(3.2MB) 안에 있고, 로더가
+`@REV/data/` 로 **커밋 SHA 고정** fetch 한다. 그래서 하드코딩 문구 11건을 더하는 소규모 변경도
+`사전 커밋 → 로더 REV 갱신 → 로더 커밋 → 벤자민 슬롯 교체` 네 단계를 그대로 밟는다. 슬롯 교체는 사람 손이라
+누락되면 "배포 잠김"(DEPLOY-v4 배너)이 된다.
+
+**왜 SHA 고정인가(유지해야 할 것).** jsDelivr `@SHA` 는 `immutable` 이라 로더가 Cache Storage 버킷을
+REV 별로 두고 재검증 없이 쓴다. `@main` 은 브랜치 해석이 최대 12h 캐시돼 퍼지가 안 먹는다(DECISIONS 확정).
+raw.githubusercontent 는 즉시 반영이지만 CDN 이 없어 3.2MB 를 매 브라우저가 원본에서 받는다.
+
+| # | 안 | 슬롯 교체 | 로더 변경 | 즉시성 | 비용·위험 |
+|---|---|---|---|---|---|
+| 1 | **`_text` 분리 + raw@main** — `split-ko-app.py` 가 `data/hc-ko-app-text.json` 을 따로 쓰고, 로더는 `raw…/main/data/hc-ko-app-text.json` 을 `cache:'no-cache'` 로 받는다. 실패 시 `@REV` core 의 `_text` 로 폴백 | `_text` 변경 시 **불필요** | 1회 (v4.10) | raw = 즉시 | 598KB 를 CDN 없이 매 세션 조건부 GET(ETag 304 면 헤더만). core/apps 는 종전대로 immutable. CI 'REV↔사전 일치' 는 text 파일 제외 필요 |
+| 2 | **REV 포인터 파일** — 로더는 `raw…/main/data/hc-ko-app-rev.json`(`{"rev":"<sha>"}`, 수십 바이트)을 먼저 받아 그 SHA 로 `@SHA/data/` 를 fetch. 실패 시 로더에 박힌 REV 사용 | **사전·_text·apps 어느 변경에도 불필요** | 1회 (v4.10) | 포인터 raw = 즉시, 본문은 jsDelivr immutable 그대로 | 포인터는 사전 커밋 **다음** 커밋에 넣어야 SHA 를 알 수 있다(자동화 가능, 사람 손 없음). CI 는 "포인터 SHA 의 blob == HEAD blob" 로 검사식 치환. Cache Storage 버킷 이름도 포인터 SHA 기준 |
+| 3 | 태그 REV(`@v4.2.6`) | 불필요 | 1회 | jsDelivr 태그 해석 캐시로 **즉시 아님**(@main 과 같은 부류) | immutable 이점 상실. 기각 사유가 @main 과 같음 |
+| 4 | 현행 유지 + 슬롯 교체 자동화(GHL API 로 Custom JS 필드 갱신) | 자동 | 없음 | 즉시 | 에이전시 화이트라벨 설정을 API 로 쓰는 경로가 확인되지 않음(공개 API 없음 추정). 실패 시 전면 영어 위험 |
+
+**권장.** **2번(포인터)** — 슬롯은 로더 1회만 고정하고 이후 모든 사전 갱신에서 사람 손이 사라진다.
+`_text` 만이 아니라 이번 라운드처럼 host 7키 교정에도 같은 효과다. 1번은 2번의 부분집합이라 굳이 나눌 이유가 없다.
+포인터 fetch 가 실패해도 로더 내장 REV 로 동작하므로 지금보다 나빠지는 경로는 없다.
+
+**변경 범위(승인 필요).** `js/hc-ko-app-loader.js`(포인터 fetch·CACHE 이름·RAW 폴백) · `scripts/split-ko-app.py`(포인터 파일은 쓰지 않음 — 커밋 SHA 는 push 후에 알 수 있으므로 별도 스텝) · `.github/workflows/ko-app-validate.yml`(REV 검사식을 포인터 기준으로) · `DEPLOY-v4.md`(배너 문구: "REV 갱신 + 슬롯 교체 한 세트" → "포인터 갱신 한 번"). 포인터 커밋은 `sha=$(git rev-parse HEAD)` 후 한 줄 커밋이라 `update-translations.sh` 류에 넣어 자동화 가능.
