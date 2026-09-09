@@ -1,43 +1,45 @@
 # 메인 앱 한글팩 v4 — 브라우저 확인 절차
 
-> ## 🔴 매 배포마다 — REV 갱신과 Custom JS 교체는 한 세트입니다
+> ## 🟢 v4.10 부터 — 슬롯은 로더 한 번만 고정, 사전은 포인터로 갱신됩니다
 >
-> **REV 만 올리고 Custom JS 를 미루면 배포가 조용히 잠깁니다.** 에러도 로그도 없습니다.
+> 로더(v4.10.0 이상)는 사전 REV 를 자기 안의 상수가 아니라 **`data/hc-ko-app-rev.json`(raw@main)** 에서
+> 읽습니다. 사전을 갱신하면 CI(`ko-app-pointer.yml`)가 jsDelivr 가 새 커밋 파일을 실제로 서빙하는지
+> 대조한 뒤 포인터를 그 SHA 로 전진시킵니다(봇 커밋). **Custom JS 칸을 다시 만질 일이 없습니다.**
 >
-> 앱 진입점은 Custom JS 칸의 **로더 SHA 로 고정**돼 있습니다. CDN 에 새 사전을 올리고
-> 로더의 `REV` 를 갱신해도, 칸의 SHA 가 그대로면 앱은 **옛 로더를 계속 물고 오고
-> 옛 로더는 옛 REV 를 봅니다.** CDN 대조(SHA 3자 일치)는 이때도 전부 통과합니다 —
-> 산출물은 정상이고 진입점만 안 바뀐 것이기 때문입니다.
+> 부팅은 지난 로드에서 저장한 포인터(Cache Storage) 또는 로더 내장 `REV_BUILTIN` 으로 즉시 시작하고,
+> 새 포인터는 백그라운드로 받아 **다음 로드**에 반영합니다(stale-while-revalidate). 그래서 갱신 직후
+> 첫 한 번은 옛 사전이 보일 수 있습니다 — 새로고침 한 번이면 됩니다.
 >
-> 실제로 2026-08-22~23 에 v4.6.0·v4.7.0 **두 라운드가 함께 잠들었습니다.**
-> 앱은 v4.5.0 / `19a4345…` / `_text` 8,743 을 쓰고 있었습니다.
->
-> **그래서 CDN 대조만으로 "배포 완료"라고 하지 마세요. 아래 라이브 확인까지가 배포입니다.**
+> 그래도 **라이브 확인은 배포의 일부**입니다. 허용 로케이션 콘솔에서:
 >
 > ```js
-> // 허용 로케이션 콘솔에서
-> __hcKoApp.version                       // 이번 배포의 로더 버전과 같아야 함
-> __hcKoApp.status().rev                  // 이번 배포의 사전 커밋과 같아야 함
-> __hcKoApp.status().textEntries          // 이번 배포의 _text 건수와 같아야 함
+> __hcKoApp.version                       // 슬롯의 로더 버전 (4.10.0 이상)
+> __hcKoApp.status().rev                  // data/hc-ko-app-rev.json 의 rev 와 같아야 함 (다음 로드부터)
+> __hcKoApp.status().revSource            // 'pointer-cache' 가 정상. 'builtin' 은 첫 방문, 'builtin-fallback' 은 포인터 REV 로드 실패
+> __hcKoApp.status().revNext              // null 이 정상. 값이 있으면 새 포인터를 받았고 다음 로드에 반영됨
+> __hcKoApp.status().textEntries          // 이번 사전의 _text 건수
 > ```
 >
-> 셋 중 하나라도 어긋나면 **Custom JS 칸의 로더 SHA 가 안 바뀐 것**입니다.
->
-> 위 3개 + 표본 엔트리까지 한 번에 판정하는 스크립트를 두었습니다 —
-> **`scripts/verify-deploy.js`** 를 콘솔에 붙여넣으면 `✓ PASS` / `✗ FAIL` 로 나옵니다.
-> 배포마다 그 파일 상단 `EXPECT` 3개(version · revPrefix · textEntries)를 갱신하세요.
+> `scripts/verify-deploy.js` 를 콘솔에 붙여넣으면 위 항목을 한 번에 판정합니다(`EXPECT` 3개는 사전 갱신마다 갱신).
 > 화면이 다 뜬 뒤에 돌리세요 — 로드 직후면 사전 수신 중이라 오탐 FAIL 이 납니다.
 >
-> SHA 는 **40자 전체**를 쓰세요. 짧은 SHA 도 jsDelivr 가 받지만 캐시 정책이 다릅니다 —
-> 40자는 `max-age=31536000, immutable`, 7자는 `max-age=604800`(엣지 12시간)이라
-> 짧은 쪽은 엣지가 재검증합니다. (2026-08-23 헤더 실측)
+> **로더 자체를 바꿀 때만**(v4.10 → v4.11 처럼) 슬롯의 SHA 를 교체합니다. 그때는 40자 SHA 전체를 쓰세요 —
+> 40자는 `immutable`, 7자는 엣지 12시간 재검증입니다(2026-08-23 헤더 실측).
+>
+> <details><summary>v4.9 까지의 "REV 갱신 + 슬롯 교체 한 세트" 규칙 (역사)</summary>
+>
+> 로더에 REV 가 박혀 있어 사전을 바꿀 때마다 로더 커밋 → 슬롯 SHA 교체가 필요했고, 2026-08-22~23 에
+> v4.6.0·v4.7.0 두 라운드가 슬롯 미교체로 조용히 잠긴 적이 있습니다(앱은 v4.5.0 사용 중이었음).
+> CDN 대조는 이때도 전부 통과했습니다 — 산출물은 정상이고 진입점만 안 바뀐 것이기 때문입니다.
+> 포인터 방식은 이 단계를 없애기 위해 도입됐습니다(2026-09-09, Benjamin 승인).
+> </details>
 
 
 여기부터는 벤자민님이 직접 하셔야 합니다. Claude Code 가 할 수 있는 부분은 끝났습니다.
 
 준비된 것
-- 사전: jsDelivr 에 커밋 `81a235c` (v4.2.5) 로 고정 배포됨 (200 / CORS `*` / immutable 확인)
-- 로더: `js/hc-ko-app-loader.js` (**v4.9.2** / `0fcf256…`) — `ALLOW = ['r6JD1nsqtk6Oln28fgrj']` 로 **한 곳에만** 적용되게 잠겨 있음
+- 사전: `data/hc-ko-app-rev.json` 이 가리키는 커밋 (현재 `81a235c` = v4.2.5). 이후 갱신은 CI 봇이 포인터를 전진시킴
+- 로더: `js/hc-ko-app-loader.js` (**v4.10.0** / `76c557f…`) — `ALLOW = ['r6JD1nsqtk6Oln28fgrj']` 로 **한 곳에만** 적용되게 잠겨 있음
 
 ---
 
@@ -57,7 +59,7 @@ Agency Settings → Company → **Whitelabel → Custom Code → Custom JavaScri
 
 ```html
 <script>window.HC_I18N_EXCLUDE = ["1r0pJRd1cQQ5DZsjSbc9"];</script>
-<script src="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@0fcf2569f1e0bc26b410f4c4ea8ca35fed6979cb/js/hc-ko-app-loader.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@76c557fda02cd49d27e35b1db48358c033e1f558/js/hc-ko-app-loader.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@8fabb6a/js/dashboard-ko.min.js"></script>
 ```
 
@@ -85,7 +87,9 @@ __hcKoApp.status()
 |---|---|---|
 | `host` | `1` | `0` 이면 호스트 카탈로그 미적용 — 콘솔에 `host composer not found` 가 찍혔는지 확인 |
 | `gate` | `true` | `false` 면 ALLOW 가 비어 전체 적용 상태 |
-| `rev` | `81a235c06fd7a8c65ba720b3642fe72a5a4af817` | 다르면 예전 로더가 붙어 있음 |
+| `rev` | `data/hc-ko-app-rev.json` 의 `rev` | 다르면 포인터를 아직 못 받은 것(첫 방문·`revNext` 확인) 또는 포인터 REV 로드 실패(`revSource`) |
+| `revSource` | `pointer-cache` | `builtin` 은 첫 방문(다음 로드에 해결). `builtin-fallback` 이면 포인터가 가리키는 커밋의 사전을 CDN·raw 모두 못 받은 것 — 포인터 파일과 ko-app-pointer 실행 기록 확인 |
+| `revNext` | `null` | 값이 있으면 새 포인터 수신됨 — 새로고침하면 반영 |
 | `apps` | 화면 이동할수록 증가 | 0 에서 안 늘면 앱 스캔 실패 |
 | `unmatched` | 되도록 `0` | 0 이 아니면 콘솔의 `no dict for app` 로그에서 어떤 앱인지 확인 |
 | `fuzzy` | 0 이어도 정상 | 값이 있으면 GHL 이 네임스페이스를 바꿨다는 신호 — 다음 크롤 때 반영 |
@@ -167,7 +171,8 @@ var ALLOW = [];
 | 아무것도 한국어가 안 됨 | `__hcKoApp` 이 `undefined` → **로더가 실행 안 된 것.** ① `<script>` 로 감쌌는지 ② 저장 후 하드 리프레시했는지 ③ `localStorage.getItem('hcKoOff')` 가 `null` 인지. 게이트에 막힌 경우엔 `__hcKoApp` 이 있고 `status().allowedHere` 가 `false` 다 |
 | 에이전시 화면에서 영어 | **정상.** `ALLOW` 검사가 `/v2/location/` 경로만 본다. 반드시 로케이션 URL 로 들어가야 한다 |
 | `status().fallback` 이 0 이 아님 | jsDelivr fetch 가 막혀 raw 로 받았다는 뜻. 동작은 하지만 CSP(connect-src) 확인 필요 |
-| 사전을 못 받음 | 콘솔 네트워크 탭에서 `cdn.jsdelivr.net/...@805efe2/data/` 404 여부 |
+| 사전을 못 받음 | 콘솔 네트워크 탭에서 `cdn.jsdelivr.net/...@<rev>/data/` 404 여부. `status().revFallback` 이 1 이면 포인터 REV 가 깨져 내장 REV 로 돌아간 것 |
+| 갱신했는데 옛 사전 | `status().revNext` 에 새 SHA 가 있으면 정상(다음 로드 반영). 없으면 `status().pointerFail` 확인 — raw 접근이 막힌 것. 포인터 파일 raw URL 을 직접 열어 200 인지 확인 |
 | 일부 화면만 영어 | `status().unmatched` 와 `no dict for app` 로그 |
 | 화면이 뒤집히듯 깜빡임 | 2중 구조 때문 — 기존 사전 축소가 필요 (별도 작업) |
 | 급하게 꺼야 함 | Custom JS 칸의 `ALLOW` 를 존재하지 않는 ID 로 바꾸거나 칸을 비움 |
@@ -177,11 +182,35 @@ var ALLOW = [];
 1. `_source/hc-ko-app.pretty.json` 만 고칩니다 (core/apps 직접 수정 금지)
 2. `python3 scripts/split-ko-app.py`
 3. `python3 scripts/validate-ko-app.py` → exit 0 확인
-4. 커밋 → **그 커밋 SHA 로 로더의 `REV` 를 갱신** → 로더 재커밋 → Custom JS 칸에 다시 붙여 넣기
+4. 커밋 → push. **끝입니다.** `ko-app-pointer.yml` 이 jsDelivr 가 그 커밋의 core/apps 를 실제로
+   서빙하는지(SHA-256 대조, 최대 10분 재시도) 확인한 뒤 `data/hc-ko-app-rev.json` 을 그 SHA 로
+   전진시키는 봇 커밋을 올립니다. 로더는 다음 로드부터 새 사전을 씁니다.
+5. `scripts/verify-deploy.js` 의 `EXPECT`(revPrefix·textEntries)를 갱신해 두면 라이브 판정이 맞습니다.
 
-REV 를 갱신하지 않으면 로더는 계속 옛 사전을 봅니다. CDN 이 `immutable` 이라 캐시가 안 풀립니다.
-`.github/workflows/ko-app-validate.yml` 이 1~3 과 **REV 가 가리키는 사전이 지금 커밋된 것과
-같은 내용인지**(blob 해시 비교)를 자동으로 막아 줍니다. 옛 SHA 를 남겨 두면 CI 가 빨간불입니다.
+로더의 `REV_BUILTIN` 은 안전망(첫 방문·포인터 실패)이라 사전마다 올릴 필요는 없습니다. 오래 방치하면
+첫 방문자가 옛 사전을 한 번 보고 시작하니, 큰 갱신 때 한 번씩 올리고 그때만 슬롯 SHA 를 교체합니다.
+`ko-app-validate.yml` 은 포인터·내장 REV 가 실존 커밋의 사전 파일을 가리키는지를 하드 게이트로 걸고,
+HEAD 와 다른지는 ⏳(전진 대기)/⚠️(롤백 또는 누락) 로 요약에만 남깁니다.
+
+## 롤백
+
+**사전 롤백(포인터):** `data/hc-ko-app-rev.json` 의 `rev` 를 직전 SHA 로 되돌린 커밋을 올립니다.
+
+```bash
+git log --oneline -5 -- data/hc-ko-app-rev.json     # 직전 rev 확인
+# rev 값만 바꿔 커밋 → push. core/apps 를 건드리지 않으므로 ko-app-pointer 는 돌지 않고,
+# 자동 전진으로 되돌려지지 않습니다.
+```
+
+- 반영은 **다음 로드**부터입니다(stale-while-revalidate). 급하면 사용자에게 새로고침 한 번을 안내합니다.
+- jsDelivr 는 `@SHA` 를 영구 보존(`immutable`)하므로 옛 사전은 언제든 다시 가리킬 수 있습니다.
+- ⚠️ 롤백 상태에서 `ko-app-pointer` 를 **workflow_dispatch 로 수동 실행하면 최신 사전으로 전진**합니다. 롤백 중엔 누르지 마세요.
+- 롤백을 끝내려면 사전을 고쳐 새 커밋을 올리면 됩니다 — 그러면 정상 경로로 다시 전진합니다.
+
+**로더 롤백:** 로더 자체 결함이면 Custom JS 칸의 로더 SHA 를 직전 로더 커밋으로 교체합니다(종전 방식).
+v4.9.2(`0fcf2569f1e0bc26b410f4c4ea8ca35fed6979cb`)는 REV 가 박혀 있어 포인터 없이 v4.2.5 를 씁니다.
+
+**전면 중단:** Custom JS 칸의 로더 줄을 지우거나 `?hcko=off` / `__hcKoApp.off()`(v4 만 꺼짐, 레거시 레이어는 계속).
 
 ---
 
