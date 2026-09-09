@@ -1,7 +1,7 @@
 {
-  "rev": "81a235c06fd7a8c65ba720b3642fe72a5a4af817",
-  "version": "4.2.5",
-  "updated": "2026-09-09T00:00:00Z",
-  "by": "manual-init",
+  "rev": "c9879e00e62fc35c7076d8360cfc2dbc11775806",
+  "version": "4.2.6",
+  "updated": "2026-09-09T08:07:49Z",
+  "by": "ko-app-pointer.yml",
   "_comment": "메인 앱 한글팩 v4 사전 REV 포인터. 로더(js/hc-ko-app-loader.js)가 raw@main 에서 읽어 @rev/data/ 를 fetch 한다. core/apps 가 바뀐 push 마다 .github/workflows/ko-app-pointer.yml 봇이 jsDelivr 대조 후 전진시킨다. 롤백 = rev 를 직전 SHA 로 되돌린 커밋."
 }
