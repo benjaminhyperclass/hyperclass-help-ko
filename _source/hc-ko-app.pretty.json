@@ -1,9 +1,9 @@
 {
  "_meta": {
-  "version": "4.2.5",
+  "version": "4.2.6",
   "built": "2026-09-09",
-  "source": "crawl 310 routes + dashboard-ko + community v3 + legacy recovery + live audit 33 routes + superagentsApp/copilotApp gap 855 (2026-09-09) + Managed Agents→관리형 에이전트 통일",
-  "strings": 103042
+  "source": "crawl 310 routes + dashboard-ko + community v3 + legacy recovery + live audit 33 routes + superagentsApp/copilotApp gap 855 (2026-09-09) + Managed Agents→관리형 에이전트 통일 + _text 11 (Claude Chat 라이브 감사, 에이전트 템플릿·빌더 프롬프트)",
+  "strings": 103053
  },
  "host": {
   "accessibility": {
@@ -121430,6 +121430,17 @@
   "No Managed Agents yet": "아직 관리형 에이전트가 없습니다",
   "Create your first Managed Agent to get started.": "첫 관리형 에이전트를 만들어 시작하세요.",
   "are prompt-based agents — give them a prompt, knowledge, web search, and integrations. Run them in chat or on triggers.": "는 프롬프트 기반 에이전트입니다. 프롬프트·지식·웹 검색·연동을 지정하고 채팅이나 트리거로 실행하세요.",
-  "Managed Agents": "관리형 에이전트"
+  "Managed Agents": "관리형 에이전트",
+  "Recent agents": "최근 에이전트",
+  "Build me an agent that follows up with leads who haven't replied in 3 days": "3일 동안 답장이 없는 리드에게 후속 연락하는 에이전트 만들어 줘",
+  "Create an agent that tags new contacts as VIP when their deal value is over $10k": "거래 금액이 $10k를 넘는 신규 연락처에 VIP 태그를 붙이는 에이전트 만들어 줘",
+  "Make an agent that handles inbound chat questions using my knowledge base and hands off complex ones to a human": "지식 베이스로 인바운드 채팅 문의에 답하고 복잡한 건 담당자에게 넘기는 에이전트 만들어 줘",
+  "Knowledge Base Assistant": "지식 베이스 어시스턴트",
+  "Community Moderator": "커뮤니티 모더레이터",
+  "Social Media Posting": "소셜 미디어 게시",
+  "Answers questions using your knowledge base. Ideal for support and FAQs.": "지식 베이스를 바탕으로 질문에 답합니다. 고객 지원과 FAQ에 적합합니다.",
+  "Welcomes new members, answers common questions, and flags content that breaks the guidelines.": "새 멤버를 환영하고, 자주 묻는 질문에 답하고, 가이드라인을 어기는 콘텐츠를 표시합니다.",
+  "Plans, drafts, and sends targeted email campaigns to a segment of your contacts.": "연락처 세그먼트를 대상으로 이메일 캠페인을 기획·작성·발송합니다.",
+  "Drafts and publishes on-brand social posts, adapting tone and format for each platform.": "플랫폼별 톤과 형식에 맞춰 브랜드에 맞는 소셜 게시물을 작성하고 게시합니다."
  }
 }
