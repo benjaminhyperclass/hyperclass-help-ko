@@ -53,3 +53,8 @@
 의존: pretty→split→사전 커밋 SHA→로더 REV→로더 SHA→(A) verify-deploy EXPECT / STATE.md / 보고 블록
 완료 기준: 검사 0(기존값 변경은 §1 목록과 일치) · CDN=raw=local · A/B diff 보고(미커밋) · STATE.md 신설
 - [ ] 1 통일 편집  - [ ] 2 재빌드·배포  - [ ] 3 스크립트 diff  - [ ] 4 STATE.md  - [ ] 5 보고
+- [x] 1 통일 편집: host 7 + _text 3 교정 + 1 신규, 용어집, DECISIONS [확정] — 영향: core/apps 재생성
+- [x] 2 재빌드·배포: 사전 81a235c(v4.2.5) → 로더 0fcf256(v4.9.2). 검사 0, 기존값 변경 7=§1. CDN=raw=local=git — 영향: 슬롯 교체(벤자민)
+- [x] 3 스크립트: A·B diff 준비(미커밋, 승인 대기) / C 설계안 BUILD-ORDER-PROPOSAL 절 커밋 — 영향: A/B 커밋 시 CI paths 발화
+- [x] 4 docs/STATE.md 신설 — 영향: 없음
+- [x] 5 보고서 data/reports/2026-09-09-superagents-ko-v2-report.md
