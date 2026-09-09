@@ -277746,5 +277746,3417 @@
  "products.manageComments.modals.restore.description": {
   "en": "Are you sure you want to restore this comment? It will be visible again.",
   "ko": "이 댓글을 복원하시겠습니까? 다시 표시됩니다."
+ },
+ "superagentsApp.skillPicker.title": {
+  "en": "Skills",
+  "ko": "스킬"
+ },
+ "superagentsApp.skillPicker.loading": {
+  "en": "Loading skills…",
+  "ko": "스킬 불러오는 중…"
+ },
+ "superagentsApp.builderWelcome.send": {
+  "en": "Send",
+  "ko": "보내기"
+ },
+ "superagentsApp.builderWelcome.useCaseTitle": {
+  "en": "Start from a use case",
+  "ko": "사용 사례에서 시작"
+ },
+ "superagentsApp.builderWelcome.unsavedChangesTitle": {
+  "en": "Unpublished changes",
+  "ko": "게시되지 않은 변경사항"
+ },
+ "superagentsApp.builderWelcome.stay": {
+  "en": "Stay",
+  "ko": "유지"
+ },
+ "superagentsApp.builderWelcome.publish": {
+  "en": "Publish",
+  "ko": "게시"
+ },
+ "superagentsApp.builderWelcome.back": {
+  "en": "Back",
+  "ko": "뒤로"
+ },
+ "superagentsApp.builderCursor.thinking": {
+  "en": "Thinking…",
+  "ko": "생각 중…"
+ },
+ "superagentsApp.chatNotice.connect": {
+  "en": "Connect",
+  "ko": "연결"
+ },
+ "superagentsApp.testPanel.title": {
+  "en": "Test your agent",
+  "ko": "에이전트 테스트하기"
+ },
+ "superagentsApp.testPanel.resetConversation": {
+  "en": "Reset conversation",
+  "ko": "대화 초기화"
+ },
+ "superagentsApp.testPanel.reset": {
+  "en": "Reset",
+  "ko": "초기화"
+ },
+ "superagentsApp.testPanel.closePanel": {
+  "en": "Close panel",
+  "ko": "패널 닫기"
+ },
+ "superagentsApp.testPanel.close": {
+  "en": "Close",
+  "ko": "닫기"
+ },
+ "superagentsApp.testPanel.thinking": {
+  "en": "Thinking",
+  "ko": "생각 중"
+ },
+ "superagentsApp.testPanel.running": {
+  "en": "Running",
+  "ko": "실행 중"
+ },
+ "superagentsApp.testPanel.selectContact": {
+  "en": "Select contact",
+  "ko": "연락처 선택"
+ },
+ "superagentsApp.chatLayer.agents": {
+  "en": "Agents",
+  "ko": "에이전트"
+ },
+ "superagentsApp.chatLayer.downloadMedia": {
+  "en": "Download",
+  "ko": "다운로드"
+ },
+ "superagentsApp.chatLayer.openMediaInNewTab": {
+  "en": "Open in new tab",
+  "ko": "새 탭에서 열기"
+ },
+ "superagentsApp.chatLayer.downloadFile": {
+  "en": "Download file",
+  "ko": "파일 다운로드"
+ },
+ "superagentsApp.chatLayer.closeLightbox": {
+  "en": "Close",
+  "ko": "닫기"
+ },
+ "superagentsApp.chatLayer.previousImage": {
+  "en": "Previous image",
+  "ko": "이전 이미지"
+ },
+ "superagentsApp.chatLayer.nextImage": {
+  "en": "Next image",
+  "ko": "다음 이미지"
+ },
+ "superagentsApp.chatLayer.dismiss": {
+  "en": "Dismiss",
+  "ko": "닫기"
+ },
+ "superagentsApp.chatLayer.activity": {
+  "en": "Activity",
+  "ko": "활동"
+ },
+ "superagentsApp.chatLayer.memory": {
+  "en": "Memory",
+  "ko": "메모리"
+ },
+ "superagentsApp.chatLayer.comingSoon": {
+  "en": "Coming soon",
+  "ko": "출시 예정"
+ },
+ "superagentsApp.chatLayer.noActivityTitle": {
+  "en": "No activity yet",
+  "ko": "아직 활동이 없습니다"
+ },
+ "superagentsApp.chatLayer.chat": {
+  "en": "Chat",
+  "ko": "채팅"
+ },
+ "superagentsApp.chatLayer.trigger": {
+  "en": "Trigger",
+  "ko": "트리거"
+ },
+ "superagentsApp.chatLayer.appointment": {
+  "en": "Appointment",
+  "ko": "예약"
+ },
+ "superagentsApp.chatLayer.mediaImage": {
+  "en": "Image",
+  "ko": "이미지"
+ },
+ "superagentsApp.chatLayer.mediaAudio": {
+  "en": "Audio",
+  "ko": "오디오"
+ },
+ "superagentsApp.chatLayer.mediaVideo": {
+  "en": "Video",
+  "ko": "동영상"
+ },
+ "superagentsApp.chatLayer.mediaFile": {
+  "en": "File",
+  "ko": "파일"
+ },
+ "superagentsApp.chatLayer.completed": {
+  "en": "Completed",
+  "ko": "완료"
+ },
+ "superagentsApp.chatLayer.failed": {
+  "en": "Failed",
+  "ko": "실패"
+ },
+ "superagentsApp.chatLayer.blocked": {
+  "en": "Limit reached",
+  "ko": "한도 도달"
+ },
+ "superagentsApp.chatLayer.skipped": {
+  "en": "Skipped",
+  "ko": "건너뜀"
+ },
+ "superagentsApp.chatLayer.back": {
+  "en": "Back",
+  "ko": "뒤로"
+ },
+ "superagentsApp.chatLayer.newConversation": {
+  "en": "New conversation",
+  "ko": "새 대화"
+ },
+ "superagentsApp.chatLayer.thinking": {
+  "en": "Thinking",
+  "ko": "생각 중"
+ },
+ "superagentsApp.chatLayer.done": {
+  "en": "Done",
+  "ko": "완료"
+ },
+ "superagentsApp.chatLayer.copy": {
+  "en": "Copy",
+  "ko": "복사"
+ },
+ "superagentsApp.chatLayer.copied": {
+  "en": "Copied",
+  "ko": "복사됨"
+ },
+ "superagentsApp.chatLayer.sources": {
+  "en": "Sources",
+  "ko": "출처"
+ },
+ "superagentsApp.chatLayer.queued": {
+  "en": "Queued",
+  "ko": "대기 중"
+ },
+ "superagentsApp.chatLayer.runStatus": {
+  "en": "Status",
+  "ko": "상태"
+ },
+ "superagentsApp.chatLayer.runType": {
+  "en": "Trigger",
+  "ko": "트리거"
+ },
+ "superagentsApp.chatLayer.runDuration": {
+  "en": "Duration",
+  "ko": "소요 시간"
+ },
+ "superagentsApp.chatLayer.runTimeline": {
+  "en": "Timeline",
+  "ko": "타임라인"
+ },
+ "superagentsApp.chatLayer.runError": {
+  "en": "Error",
+  "ko": "오류"
+ },
+ "superagentsApp.chatLayer.ctxContact": {
+  "en": "Contact",
+  "ko": "연락처"
+ },
+ "superagentsApp.chatLayer.ctxTagsAdded": {
+  "en": "Tags added",
+  "ko": "추가된 태그"
+ },
+ "superagentsApp.chatLayer.ctxTagsRemoved": {
+  "en": "Tags removed",
+  "ko": "제거된 태그"
+ },
+ "superagentsApp.chatLayer.ctxForm": {
+  "en": "Form",
+  "ko": "양식"
+ },
+ "superagentsApp.singleAgentBuilder.createOption.title": {
+  "en": "AI Agent",
+  "ko": "AI 에이전트"
+ },
+ "superagentsApp.singleAgentBuilder.header.namePlaceholder": {
+  "en": "Untitled Agent",
+  "ko": "제목 없는 에이전트"
+ },
+ "superagentsApp.singleAgentBuilder.header.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "superagentsApp.singleAgentBuilder.header.publish": {
+  "en": "Publish",
+  "ko": "게시"
+ },
+ "superagentsApp.singleAgentBuilder.header.allTemplates": {
+  "en": "All templates",
+  "ko": "모든 템플릿"
+ },
+ "superagentsApp.singleAgentBuilder.status.draft": {
+  "en": "Draft",
+  "ko": "임시 저장"
+ },
+ "superagentsApp.singleAgentBuilder.status.published": {
+  "en": "Published",
+  "ko": "게시됨"
+ },
+ "superagentsApp.singleAgentBuilder.status.staging": {
+  "en": "Staging",
+  "ko": "스테이징"
+ },
+ "superagentsApp.singleAgentBuilder.status.saving": {
+  "en": "Saving...",
+  "ko": "저장 중..."
+ },
+ "superagentsApp.singleAgentBuilder.status.saved": {
+  "en": "All changes saved",
+  "ko": "모든 변경사항이 저장되었습니다"
+ },
+ "superagentsApp.singleAgentBuilder.identity.untitled": {
+  "en": "Untitled Agent",
+  "ko": "제목 없는 에이전트"
+ },
+ "superagentsApp.singleAgentBuilder.chat.eyebrow": {
+  "en": "AI Builder",
+  "ko": "AI 빌더"
+ },
+ "superagentsApp.singleAgentBuilder.chat.newConversation": {
+  "en": "New conversation",
+  "ko": "새 대화"
+ },
+ "superagentsApp.singleAgentBuilder.chat.thinking": {
+  "en": "Thinking...",
+  "ko": "생각 중..."
+ },
+ "superagentsApp.singleAgentBuilder.sections.instructions": {
+  "en": "Instructions",
+  "ko": "지침"
+ },
+ "superagentsApp.singleAgentBuilder.sections.channels": {
+  "en": "Channels",
+  "ko": "채널"
+ },
+ "superagentsApp.singleAgentBuilder.sections.actions": {
+  "en": "Actions",
+  "ko": "액션"
+ },
+ "superagentsApp.singleAgentBuilder.sections.toolbox": {
+  "en": "Tools",
+  "ko": "도구"
+ },
+ "superagentsApp.singleAgentBuilder.sections.plugins": {
+  "en": "Plugins",
+  "ko": "플러그인"
+ },
+ "superagentsApp.singleAgentBuilder.sections.skills": {
+  "en": "Skills",
+  "ko": "스킬"
+ },
+ "superagentsApp.singleAgentBuilder.test.newConversation": {
+  "en": "New conversation",
+  "ko": "새 대화"
+ },
+ "superagentsApp.singleAgentBuilder.test.thinking": {
+  "en": "Thinking",
+  "ko": "생각 중"
+ },
+ "superagentsApp.singleAgentBuilder.test.thoughtProcess": {
+  "en": "Thought process",
+  "ko": "사고 과정"
+ },
+ "superagentsApp.singleAgentBuilder.test.thoughtFor": {
+  "en": "Thought for {seconds}s",
+  "ko": "{seconds}초 동안 생각함"
+ },
+ "superagentsApp.singleAgentBuilder.actions.add": {
+  "en": "Add",
+  "ko": "추가"
+ },
+ "superagentsApp.singleAgentBuilder.actionsConfig.addAction": {
+  "en": "Add action",
+  "ko": "액션 추가"
+ },
+ "superagentsApp.singleAgentBuilder.actionsConfig.editAction": {
+  "en": "Edit action",
+  "ko": "액션 편집"
+ },
+ "superagentsApp.singleAgentBuilder.triggersConfig.selectType": {
+  "en": "Select trigger",
+  "ko": "트리거 선택"
+ },
+ "superagentsApp.singleAgentBuilder.triggersConfig.addTrigger": {
+  "en": "Add trigger",
+  "ko": "트리거 추가"
+ },
+ "superagentsApp.singleAgentBuilder.toolboxConfig.allApps": {
+  "en": "All Apps",
+  "ko": "전체 앱"
+ },
+ "superagentsApp.singleAgentBuilder.toolboxConfig.actions": {
+  "en": "Actions",
+  "ko": "액션"
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.addSkill": {
+  "en": "Add skill",
+  "ko": "스킬 추가"
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.tools": {
+  "en": "tools",
+  "ko": "도구"
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.settings": {
+  "en": "Settings",
+  "ko": "설정"
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.searchPlaceholder": {
+  "en": "Search...",
+  "ko": "검색..."
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.filterAll": {
+  "en": "All",
+  "ko": "전체"
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.filterApps": {
+  "en": "Apps",
+  "ko": "앱"
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.allApps": {
+  "en": "All Apps",
+  "ko": "전체 앱"
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.added": {
+  "en": "Added",
+  "ko": "추가됨"
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.noAppsFound": {
+  "en": "No apps found",
+  "ko": "앱을 찾을 수 없습니다"
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.custom": {
+  "en": "Custom",
+  "ko": "커스텀"
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.importAction": {
+  "en": "Import",
+  "ko": "가져오기"
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.customDescription": {
+  "en": "Description",
+  "ko": "설명"
+ },
+ "superagentsApp.singleAgentBuilder.knowledgeConfig.webSearch": {
+  "en": "Web Search",
+  "ko": "웹 검색"
+ },
+ "superagentsApp.singleAgentBuilder.modelConfig.provider": {
+  "en": "Provider",
+  "ko": "제공업체"
+ },
+ "superagentsApp.singleAgentBuilder.modelConfig.model": {
+  "en": "Model",
+  "ko": "모델"
+ },
+ "superagentsApp.singleAgentBuilder.modelConfig.temperature": {
+  "en": "Temperature",
+  "ko": "온도"
+ },
+ "superagentsApp.singleAgentBuilder.subAgentsConfig.when": {
+  "en": "When",
+  "ko": "언제"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.picker.close": {
+  "en": "Close",
+  "ko": "닫기"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.picker.searchTriggers": {
+  "en": "Search triggers",
+  "ko": "트리거 검색"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.picker.triggers": {
+  "en": "Triggers",
+  "ko": "트리거"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.picker.added": {
+  "en": "Added",
+  "ko": "추가됨"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.picker.comingSoon": {
+  "en": "Coming soon",
+  "ko": "출시 예정"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.picker.select": {
+  "en": "select",
+  "ko": "선택"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.picker.recentlyUsed": {
+  "en": "Recently used",
+  "ko": "최근 사용"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.picker.cat_contacts": {
+  "en": "Contacts",
+  "ko": "연락처"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.picker.cat_tags": {
+  "en": "Tags",
+  "ko": "태그"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.picker.cat_opportunities": {
+  "en": "Opportunities",
+  "ko": "기회"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.picker.cat_appointments": {
+  "en": "Appointments",
+  "ko": "예약"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.picker.cat_payments": {
+  "en": "Payments",
+  "ko": "결제"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.picker.cat_forms": {
+  "en": "Forms & Surveys",
+  "ko": "양식 및 설문"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.picker.cat_communications": {
+  "en": "Communications",
+  "ko": "커뮤니케이션"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.picker.cat_membership": {
+  "en": "Membership",
+  "ko": "멤버십"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.picker.cat_scheduled": {
+  "en": "Scheduled",
+  "ko": "일정"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.picker.cat_custom": {
+  "en": "Custom",
+  "ko": "커스텀"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.form.title": {
+  "en": "Form submitted",
+  "ko": "양식 제출"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.form.enable": {
+  "en": "Enable",
+  "ko": "활성화"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.form.addNew": {
+  "en": "Add New",
+  "ko": "새로 추가"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.form.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.form.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.tag.title": {
+  "en": "Lead tag",
+  "ko": "리드 태그"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.tag.enable": {
+  "en": "Enable",
+  "ko": "활성화"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.tag.action": {
+  "en": "Action",
+  "ko": "액션"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.tag.selectTags": {
+  "en": "Select tags",
+  "ko": "태그 선택"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.tag.addNew": {
+  "en": "Add New",
+  "ko": "새로 추가"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.tag.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.tag.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.title": {
+  "en": "Schedule",
+  "ko": "일정"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.modeLabel": {
+  "en": "Schedule type",
+  "ko": "일정 유형"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.timezoneLabel": {
+  "en": "Timezone",
+  "ko": "시간대"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.cronGuide.fields.min": {
+  "en": "Min",
+  "ko": "분"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.cronGuide.fields.hour": {
+  "en": "Hour",
+  "ko": "시간"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.cronGuide.fields.day": {
+  "en": "Day",
+  "ko": "일"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.cronGuide.fields.month": {
+  "en": "Mon",
+  "ko": "월"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.cronGuide.presets.everyHour": {
+  "en": "Every hour",
+  "ko": "매시간"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.cronGuide.presets.everyFifteenMin": {
+  "en": "Every 15 minutes",
+  "ko": "15분마다"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.repeatEvery": {
+  "en": "Repeat every",
+  "ko": "반복 주기"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.units.minute": {
+  "en": "Minute(s)",
+  "ko": "분"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.units.hour": {
+  "en": "Hour(s)",
+  "ko": "시간"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.units.day": {
+  "en": "Day(s)",
+  "ko": "일"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.units.week": {
+  "en": "Week(s)",
+  "ko": "주"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.units.month": {
+  "en": "Month(s)",
+  "ko": "월"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.ends": {
+  "en": "Ends",
+  "ko": "종료"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.end.never": {
+  "en": "Never",
+  "ko": "없음"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.end.onDate": {
+  "en": "On date",
+  "ko": "지정 날짜에"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.endDate": {
+  "en": "End date",
+  "ko": "종료일"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.appointment.bookedTitle": {
+  "en": "Appointment booked",
+  "ko": "예약 완료"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.appointment.statusTitle": {
+  "en": "Appointment status",
+  "ko": "예약 상태"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.appointment.selectCalendars": {
+  "en": "Select calendars",
+  "ko": "캘린더 선택"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.appointment.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.appointment.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.appointment.close": {
+  "en": "Close",
+  "ko": "닫기"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.appointment.status.new": {
+  "en": "New",
+  "ko": "신규"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.appointment.status.confirmed": {
+  "en": "Confirmed",
+  "ko": "확인됨"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.appointment.status.cancelled": {
+  "en": "Cancelled",
+  "ko": "취소됨"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.appointment.status.showed": {
+  "en": "Showed",
+  "ko": "출석"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.appointment.status.noshow": {
+  "en": "No-show",
+  "ko": "노쇼"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.appointment.status.invalid": {
+  "en": "Invalid",
+  "ko": "유효하지 않음"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.opportunity.createdTitle": {
+  "en": "Opportunity created",
+  "ko": "기회 생성"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.opportunity.statusTitle": {
+  "en": "Opportunity status changed",
+  "ko": "기회 상태 변경"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.opportunity.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.opportunity.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.opportunity.close": {
+  "en": "Close",
+  "ko": "닫기"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.opportunity.status.open": {
+  "en": "Open",
+  "ko": "진행 중"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.opportunity.status.won": {
+  "en": "Won",
+  "ko": "승리"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.opportunity.status.lost": {
+  "en": "Lost",
+  "ko": "손실"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.opportunity.status.abandoned": {
+  "en": "Abandoned",
+  "ko": "중단됨"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.survey.title": {
+  "en": "Survey submitted",
+  "ko": "설문 제출"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.survey.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.survey.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.survey.close": {
+  "en": "Close",
+  "ko": "닫기"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.facebookLead.title": {
+  "en": "Facebook lead form",
+  "ko": "Facebook 리드 양식"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.facebookLead.selectPage": {
+  "en": "Select page",
+  "ko": "페이지 선택"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.facebookLead.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.facebookLead.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.facebookLead.close": {
+  "en": "Close",
+  "ko": "닫기"
+ },
+ "superagentsApp.singleAgentBuilder.composer.removeAttachment": {
+  "en": "Remove attachment",
+  "ko": "첨부 파일 제거"
+ },
+ "superagentsApp.graphBuilder.formFields.knowledgeBase.loading": {
+  "en": "Loading knowledge bases...",
+  "ko": "지식 베이스 불러오는 중..."
+ },
+ "superagentsApp.graphBuilder.addNewNodePanel.title": {
+  "en": "Add node",
+  "ko": "노드 추가"
+ },
+ "superagentsApp.graphBuilder.addNewNodePanel.buttons.closePanel": {
+  "en": "Close panel",
+  "ko": "패널 닫기"
+ },
+ "superagentsApp.graphBuilder.addNewNodePanel.ai.showButton": {
+  "en": "Build with AI",
+  "ko": "AI로 빌드하기"
+ },
+ "superagentsApp.graphBuilder.addNewNodePanel.ai.subtitle": {
+  "en": "Create agents in natural language",
+  "ko": "자연어로 에이전트 만들기"
+ },
+ "superagentsApp.graphBuilder.addNewNodePanel.ai.hideButton": {
+  "en": "Hide AI Generator",
+  "ko": "AI 생성기 숨기기"
+ },
+ "superagentsApp.graphBuilder.addNewNodePanel.ai.panelTitle": {
+  "en": "Build with AI",
+  "ko": "AI로 빌드하기"
+ },
+ "superagentsApp.graphBuilder.addNewNodePanel.ai.betaLabel": {
+  "en": "Beta",
+  "ko": "베타"
+ },
+ "superagentsApp.graphBuilder.addNewNodePanel.ai.title": {
+  "en": "AI Assistant",
+  "ko": "AI 어시스턴트"
+ },
+ "superagentsApp.graphBuilder.addNewNodePanel.ai.inputLabel": {
+  "en": "AI chat input",
+  "ko": "AI 채팅 입력"
+ },
+ "superagentsApp.graphBuilder.addNewNodePanel.ai.inputPlaceholder": {
+  "en": "Describe the flow you want to build...",
+  "ko": "만들고 싶은 플로우를 설명해 주세요..."
+ },
+ "superagentsApp.graphBuilder.addNewNodePanel.ai.sendButton": {
+  "en": "Send",
+  "ko": "보내기"
+ },
+ "superagentsApp.graphBuilder.addNewNodePanel.ai.emptyState": {
+  "en": "Describe the agent you want to build and I'll generate it for you.",
+  "ko": "만들고 싶은 에이전트를 설명하면 대신 생성해 드립니다."
+ },
+ "superagentsApp.graphBuilder.addNewNodePanel.ai.welcomeTitle": {
+  "en": "How can I help with you?",
+  "ko": "무엇을 도와드릴까요?"
+ },
+ "superagentsApp.graphBuilder.addNewNodePanel.ai.welcomeDescription": {
+  "en": "I can help you build a new agent from scratch, improve an existing one, or test your agent to make sure it works the way you want.",
+  "ko": "새 에이전트를 처음부터 만들거나, 기존 에이전트를 개선하거나, 에이전트가 원하는 대로 작동하는지 테스트하는 것을 도와드릴 수 있습니다."
+ },
+ "superagentsApp.graphBuilder.addNewNodePanel.ai.history.title": {
+  "en": "Recent Conversations",
+  "ko": "최근 대화"
+ },
+ "superagentsApp.graphBuilder.addNewNodePanel.ai.history.startNew": {
+  "en": "Start new conversation",
+  "ko": "새 대화 시작"
+ },
+ "superagentsApp.graphBuilder.addNewNodePanel.ai.history.loading": {
+  "en": "Loading recent conversations...",
+  "ko": "최근 대화 불러오는 중..."
+ },
+ "superagentsApp.graphBuilder.addNewNodePanel.ai.history.errorLoading": {
+  "en": "Could not load recent conversations.",
+  "ko": "최근 대화를 불러오지 못했습니다."
+ },
+ "superagentsApp.graphBuilder.addNewNodePanel.ai.history.sessionExpired": {
+  "en": "This conversation has expired and is no longer available.",
+  "ko": "이 대화는 만료되어 더 이상 사용할 수 없습니다."
+ },
+ "superagentsApp.graphBuilder.addNewNodePanel.ai.history.resuming": {
+  "en": "Resuming conversation...",
+  "ko": "대화를 재개하는 중..."
+ },
+ "superagentsApp.graphBuilder.addNewNodePanel.ai.history.messageCount": {
+  "en": "{count} messages",
+  "ko": "메시지 {count}개"
+ },
+ "superagentsApp.graphBuilder.addNewNodePanel.ai.history.hasPreview": {
+  "en": "Has preview",
+  "ko": "미리보기 있음"
+ },
+ "superagentsApp.graphBuilder.addNewNodePanel.ai.history.retry": {
+  "en": "Retry",
+  "ko": "재시도"
+ },
+ "superagentsApp.graphBuilder.addNewNodePanel.search.placeholder.general": {
+  "en": "Search...",
+  "ko": "검색..."
+ },
+ "superagentsApp.graphBuilder.addNewNodePanel.search.placeholder.tools": {
+  "en": "Search tools...",
+  "ko": "도구 검색..."
+ },
+ "superagentsApp.graphBuilder.addNewNodePanel.search.placeholder.toolsCompatible": {
+  "en": "Search tools compatible with AI Agent...",
+  "ko": "AI 에이전트와 호환되는 도구 검색..."
+ },
+ "superagentsApp.graphBuilder.addNewNodePanel.search.placeholder.compatible": {
+  "en": "Search compatible nodes for {nodeType}...",
+  "ko": "{nodeType} 호환 노드 검색..."
+ },
+ "superagentsApp.graphBuilder.addNewNodePanel.context.addingToolsToAI": {
+  "en": "Adding tools to AI Agent",
+  "ko": "AI 에이전트에 도구 추가 중"
+ },
+ "superagentsApp.graphBuilder.addNewNodePanel.context.addingToolsToNode": {
+  "en": "Adding tools to {nodeType}",
+  "ko": "{nodeType} 에 도구 추가 중"
+ },
+ "superagentsApp.graphBuilder.addNewNodePanel.context.addingCompatibleTools": {
+  "en": "Adding tools compatible with AI Agent",
+  "ko": "AI 에이전트와 호환되는 도구 추가"
+ },
+ "superagentsApp.graphBuilder.addNewNodePanel.context.addingCompatibleNodes": {
+  "en": "Adding nodes compatible with {nodeType}",
+  "ko": "{nodeType} 과(와) 호환되는 노드 추가 중"
+ },
+ "superagentsApp.graphBuilder.addNewNodePanel.emptyState.noNodesFound": {
+  "en": "No nodes found matching your search",
+  "ko": "검색과 일치하는 노드가 없습니다"
+ },
+ "superagentsApp.graphBuilder.antonChat.thinking": {
+  "en": "Thinking",
+  "ko": "생각 중"
+ },
+ "superagentsApp.graphBuilder.antonChat.promptFixesApplied": {
+  "en": "Prompt fixes applied",
+  "ko": "프롬프트 수정이 적용되었습니다"
+ },
+ "superagentsApp.graphBuilder.antonChat.sanityCheck": {
+  "en": "Sanity Check",
+  "ko": "기본 점검"
+ },
+ "superagentsApp.graphBuilder.antonChat.sanityCheckLabel": {
+  "en": "Sanity check",
+  "ko": "기본 점검"
+ },
+ "superagentsApp.graphBuilder.antonChat.sanityCheckPassed": {
+  "en": "passed",
+  "ko": "통과"
+ },
+ "superagentsApp.graphBuilder.antonChat.sanityCheckFailed": {
+  "en": "failed",
+  "ko": "실패"
+ },
+ "superagentsApp.graphBuilder.antonChat.testScenarios": {
+  "en": "Test Scenarios",
+  "ko": "테스트 시나리오"
+ },
+ "superagentsApp.graphBuilder.antonChat.testResults": {
+  "en": "Test Results",
+  "ko": "테스트 결과"
+ },
+ "superagentsApp.graphBuilder.antonChat.attempt": {
+  "en": "Attempt {n}",
+  "ko": "시도 {n}"
+ },
+ "superagentsApp.graphBuilder.antonChat.passed": {
+  "en": "{count} passed",
+  "ko": "{count}개 통과"
+ },
+ "superagentsApp.graphBuilder.antonChat.failed": {
+  "en": "{count} failed",
+  "ko": "{count}개 실패"
+ },
+ "superagentsApp.graphBuilder.antonChat.improved": {
+  "en": "↑ Improved",
+  "ko": "↑ 개선됨"
+ },
+ "superagentsApp.graphBuilder.antonChat.noChange": {
+  "en": "→ No change",
+  "ko": "→ 변경 없음"
+ },
+ "superagentsApp.graphBuilder.antonChat.expected": {
+  "en": "Expected:",
+  "ko": "예상:"
+ },
+ "superagentsApp.graphBuilder.antonChat.actual": {
+  "en": "Actual:",
+  "ko": "실제:"
+ },
+ "superagentsApp.graphBuilder.antonChat.notes": {
+  "en": "Notes:",
+  "ko": "메모:"
+ },
+ "superagentsApp.graphBuilder.antonChat.allTestsPassed": {
+  "en": "All tests passed",
+  "ko": "모든 테스트 통과"
+ },
+ "superagentsApp.graphBuilder.antonChat.testsFailedAfterFixImproved": {
+  "en": "Some tests still failing after fix, but results improved",
+  "ko": "수정 후에도 일부 테스트가 실패하지만 결과가 개선되었습니다"
+ },
+ "superagentsApp.graphBuilder.antonChat.testsFailedAfterFix": {
+  "en": "Some tests still failing after fix",
+  "ko": "수정 후에도 일부 테스트가 실패합니다"
+ },
+ "superagentsApp.graphBuilder.antonChat.testsFailedReview": {
+  "en": "Some tests failed — review results above",
+  "ko": "일부 테스트가 실패했습니다 — 위의 결과를 검토하세요"
+ },
+ "superagentsApp.graphBuilder.antonChat.testRunError": {
+  "en": "Test run encountered an error",
+  "ko": "테스트 실행 중 오류가 발생했습니다"
+ },
+ "superagentsApp.graphBuilder.antonChat.appliedToCanvas": {
+  "en": "Agent applied to canvas",
+  "ko": "에이전트가 캔버스에 적용되었습니다"
+ },
+ "superagentsApp.graphBuilder.antonChat.graphDiscarded": {
+  "en": "Graph discarded",
+  "ko": "그래프 폐기됨"
+ },
+ "superagentsApp.graphBuilder.antonChat.describeChanges": {
+  "en": "Describe your changes below",
+  "ko": "아래에 변경 내용을 설명해 주세요"
+ },
+ "superagentsApp.graphBuilder.antonChat.apply": {
+  "en": "Apply",
+  "ko": "적용"
+ },
+ "superagentsApp.graphBuilder.antonChat.requestChanges": {
+  "en": "Request Changes",
+  "ko": "변경 요청"
+ },
+ "superagentsApp.graphBuilder.antonChat.discard": {
+  "en": "Discard",
+  "ko": "폐기"
+ },
+ "superagentsApp.graphBuilder.antonChat.confirm": {
+  "en": "Confirm",
+  "ko": "확인"
+ },
+ "superagentsApp.graphBuilder.testBotPanel.title": {
+  "en": "Chat with Agent",
+  "ko": "에이전트와 채팅"
+ },
+ "superagentsApp.graphBuilder.testBotPanel.attachmentPreview": {
+  "en": "Attachment preview",
+  "ko": "첨부 파일 미리보기"
+ },
+ "superagentsApp.graphBuilder.testBotPanel.buttons.openLogs": {
+  "en": "Open logs",
+  "ko": "로그 열기"
+ },
+ "superagentsApp.graphBuilder.testBotPanel.buttons.resetConversation": {
+  "en": "Reset conversation",
+  "ko": "대화 초기화"
+ },
+ "superagentsApp.graphBuilder.testBotPanel.buttons.closePanel": {
+  "en": "Close panel",
+  "ko": "패널 닫기"
+ },
+ "superagentsApp.graphBuilder.testBotPanel.buttons.testAgent": {
+  "en": "Test your Agent",
+  "ko": "에이전트 테스트하기"
+ },
+ "superagentsApp.graphBuilder.testBotPanel.buttons.attachImage": {
+  "en": "Attach image",
+  "ko": "이미지 첨부"
+ },
+ "superagentsApp.graphBuilder.testBotPanel.buttons.retry": {
+  "en": "Retry",
+  "ko": "재시도"
+ },
+ "superagentsApp.graphBuilder.testBotPanel.buttons.executionTimeline": {
+  "en": "Execution Timeline",
+  "ko": "실행 타임라인"
+ },
+ "superagentsApp.graphBuilder.testBotPanel.buttons.minimize": {
+  "en": "Minimize",
+  "ko": "최소화"
+ },
+ "superagentsApp.graphBuilder.testBotPanel.labels.transition": {
+  "en": "Transition",
+  "ko": "전환"
+ },
+ "superagentsApp.graphBuilder.testBotPanel.labels.captions": {
+  "en": "Captions",
+  "ko": "캡션"
+ },
+ "superagentsApp.graphBuilder.testBotPanel.emptyState.message": {
+  "en": "You can test your agent by typing a message below",
+  "ko": "아래에 메시지를 입력하여 에이전트를 테스트할 수 있습니다"
+ },
+ "superagentsApp.graphBuilder.testBotPanel.input.placeholder": {
+  "en": "Type a message...",
+  "ko": "메시지를 입력하세요..."
+ },
+ "superagentsApp.graphBuilder.testBotPanel.messages.waitingForHumanInput": {
+  "en": "Waiting for human input...",
+  "ko": "사용자 입력 대기 중..."
+ },
+ "superagentsApp.graphBuilder.testBotPanel.messages.someFilesCouldntBeAttached": {
+  "en": "Some files couldn't be attached",
+  "ko": "일부 파일을 첨부하지 못했습니다"
+ },
+ "superagentsApp.graphBuilder.testBotPanel.messages.attachments.single": {
+  "en": "Here is the attachment",
+  "ko": "첨부 파일입니다"
+ },
+ "superagentsApp.graphBuilder.testBotPanel.messages.attachments.multiple": {
+  "en": "Here are the attachments",
+  "ko": "첨부 파일입니다"
+ },
+ "superagentsApp.graphBuilder.testBotPanel.messages.uploadedImage.user": {
+  "en": "User uploaded image",
+  "ko": "사용자 업로드 이미지"
+ },
+ "superagentsApp.graphBuilder.testBotPanel.messages.uploadedImage.agent": {
+  "en": "Agent uploaded image",
+  "ko": "에이전트가 업로드한 이미지"
+ },
+ "superagentsApp.graphBuilder.testBotPanel.prompts.provideInput": {
+  "en": "Please provide your input",
+  "ko": "입력해 주세요"
+ },
+ "superagentsApp.graphBuilder.testBotPanel.errors.processingRequest": {
+  "en": "Sorry, I encountered an error processing your request.",
+  "ko": "요청을 처리하는 중 오류가 발생했습니다."
+ },
+ "superagentsApp.graphBuilder.testBotPanel.uploadErrors.maxAttachments": {
+  "en": "Maximum {count} attachments allowed per message.",
+  "ko": "메시지당 최대 {count}개의 첨부 파일이 허용됩니다."
+ },
+ "superagentsApp.graphBuilder.testBotPanel.uploadErrors.unsupportedType": {
+  "en": "{name}: Unsupported file type ({type}). Allowed: PNG, JPEG, GIF, WebP.",
+  "ko": "{name}: 지원되지 않는 파일 형식({type})입니다. 허용 형식: PNG, JPEG, GIF, WebP."
+ },
+ "superagentsApp.graphBuilder.testBotPanel.uploadErrors.tooLarge": {
+  "en": "{name}: File is too large. Max size is 10 MB.",
+  "ko": "{name}: 파일이 너무 큽니다. 최대 크기는 10 MB입니다."
+ },
+ "superagentsApp.copilot.askAi.chat.transcribing": {
+  "en": "Transcribing...",
+  "ko": "텍스트 변환 중..."
+ },
+ "superagentsApp.copilot.askAi.chat.copyUserMessage": {
+  "en": "Copy user message",
+  "ko": "사용자 메시지 복사"
+ },
+ "superagentsApp.copilot.askAi.chat.copied": {
+  "en": "Copied!",
+  "ko": "복사됨"
+ },
+ "superagentsApp.copilot.askAi.chat.helpful": {
+  "en": "Helpful",
+  "ko": "도움이 됨"
+ },
+ "superagentsApp.copilot.askAi.chat.notHelpful": {
+  "en": "Not helpful",
+  "ko": "도움이 안 됨"
+ },
+ "superagentsApp.copilot.askAi.chat.copyAssistantMessage": {
+  "en": "Copy assistant message",
+  "ko": "어시스턴트 메시지 복사"
+ },
+ "superagentsApp.copilot.askAi.chat.sources": {
+  "en": "Sources",
+  "ko": "출처"
+ },
+ "superagentsApp.copilot.askAi.atoms.typingIndicator": {
+  "en": "Thinking…",
+  "ko": "생각 중…"
+ },
+ "superagentsApp.copilot.askAi.composer.send": {
+  "en": "Send",
+  "ko": "보내기"
+ },
+ "superagentsApp.copilot.askAi.composer.stopGenerating": {
+  "en": "Stop generating",
+  "ko": "생성 중지"
+ },
+ "superagentsApp.copilot.askAi.composer.dictationStart": {
+  "en": "Start dictation",
+  "ko": "받아쓰기 시작"
+ },
+ "superagentsApp.copilot.askAi.composer.dictationStop": {
+  "en": "Stop dictation",
+  "ko": "받아쓰기 중지"
+ },
+ "superagentsApp.copilot.askAi.composer.dictationCancel": {
+  "en": "Discard recording",
+  "ko": "녹음 취소"
+ },
+ "superagentsApp.copilot.askAi.composer.dictationSubmit": {
+  "en": "Submit recording",
+  "ko": "녹음 제출"
+ },
+ "superagentsApp.copilot.askAi.composer.dictationRecording": {
+  "en": "Recording",
+  "ko": "녹음 중"
+ },
+ "superagentsApp.copilot.askAi.composer.dictationUploading": {
+  "en": "Transcribing audio",
+  "ko": "오디오 텍스트 변환 중"
+ },
+ "superagentsApp.copilot.askAi.composer.dictationPermissionDenied": {
+  "en": "Microphone access is blocked. Enable mic permission in your browser to use dictation.",
+  "ko": "마이크 접근이 차단되었습니다. 받아쓰기를 사용하려면 브라우저에서 마이크 권한을 활성화해 주세요."
+ },
+ "superagentsApp.copilot.askAi.composer.dictationUnavailable": {
+  "en": "Dictation is not available for your account",
+  "ko": "계정에서 받아쓰기를 사용할 수 없습니다"
+ },
+ "superagentsApp.copilot.askAi.composer.dictationRateLimited": {
+  "en": "Too many requests, please wait a moment",
+  "ko": "요청이 너무 많습니다. 잠시 기다려 주세요"
+ },
+ "superagentsApp.copilot.askAi.composer.dictationTooLarge": {
+  "en": "Recording is too long",
+  "ko": "녹음이 너무 깁니다"
+ },
+ "superagentsApp.copilot.askAi.composer.dictationGenericError": {
+  "en": "Could not transcribe audio. Please try again.",
+  "ko": "오디오를 텍스트로 변환할 수 없습니다. 다시 시도해 주세요."
+ },
+ "superagentsApp.copilot.askAi.composer.dictationMicUnavailable": {
+  "en": "Microphone capture is unavailable in this browser",
+  "ko": "이 브라우저에서는 마이크 캡처를 사용할 수 없습니다"
+ },
+ "superagentsApp.copilot.askAi.composer.dictationNotReady": {
+  "en": "Dictation is not ready yet — try again in a moment.",
+  "ko": "받아쓰기가 아직 준비되지 않았습니다 — 잠시 후 다시 시도해 주세요."
+ },
+ "superagentsApp.copilot.askAi.composer.dictationMicAccessFailed": {
+  "en": "Could not access microphone",
+  "ko": "마이크에 접근할 수 없습니다"
+ },
+ "superagentsApp.copilot.askAi.composer.dictationRecorderError": {
+  "en": "Recorder error",
+  "ko": "녹음기 오류"
+ },
+ "superagentsApp.copilot.askAi.composer.dictationRecordingFailed": {
+  "en": "Recording failed",
+  "ko": "녹음에 실패했습니다"
+ },
+ "superagentsApp.copilot.askAi.composer.dictationNoAudioCaptured": {
+  "en": "No audio captured. Please try again.",
+  "ko": "캡처된 오디오가 없습니다. 다시 시도해 주세요."
+ },
+ "superagentsApp.copilot.askAi.composer.dictationRecordingTooLarge": {
+  "en": "Recording is too large (max {size} MB)",
+  "ko": "녹음 파일이 너무 큽니다 (최대 {size} MB)"
+ },
+ "superagentsApp.copilot.askAi.composer.dictationTranscriptionFailed": {
+  "en": "Transcription failed",
+  "ko": "텍스트 변환 실패"
+ },
+ "superagentsApp.agentStudioPanel.publish": {
+  "en": "Publish",
+  "ko": "게시"
+ },
+ "superagentsApp.agentStudioPanel.unpublish": {
+  "en": "Unpublish",
+  "ko": "게시 취소"
+ },
+ "superagentsApp.agentStudioPanel.moreActions": {
+  "en": "More actions",
+  "ko": "더 보기"
+ },
+ "superagentsApp.agentStudioPanel.unpublishConfirmCancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "superagentsApp.agentStudioPanel.agentName": {
+  "en": "Agent name",
+  "ko": "에이전트 이름"
+ },
+ "superagentsApp.agentStudioPanel.triggers": {
+  "en": "Triggers",
+  "ko": "트리거"
+ },
+ "superagentsApp.agentStudioPanel.addTrigger": {
+  "en": "Add trigger",
+  "ko": "트리거 추가"
+ },
+ "superagentsApp.agentStudioPanel.actions": {
+  "en": "Actions",
+  "ko": "액션"
+ },
+ "superagentsApp.agentStudioPanel.apps": {
+  "en": "Apps",
+  "ko": "앱"
+ },
+ "superagentsApp.agentStudioPanel.capabilities": {
+  "en": "Capabilities",
+  "ko": "기능"
+ },
+ "superagentsApp.agentStudioPanel.imageQuality.label": {
+  "en": "Quality",
+  "ko": "품질"
+ },
+ "superagentsApp.agentStudioPanel.imageQuality.low": {
+  "en": "Low",
+  "ko": "낮음"
+ },
+ "superagentsApp.agentStudioPanel.imageQuality.medium": {
+  "en": "Medium",
+  "ko": "보통"
+ },
+ "superagentsApp.agentStudioPanel.imageQuality.high": {
+  "en": "High",
+  "ko": "높음"
+ },
+ "superagentsApp.agentStudioPanel.audioVoiceLabel": {
+  "en": "Voice",
+  "ko": "음성"
+ },
+ "superagentsApp.agentStudioPanel.audioToneLabel": {
+  "en": "Tone",
+  "ko": "톤"
+ },
+ "superagentsApp.agentStudioPanel.knowledgeBase": {
+  "en": "Knowledge Base",
+  "ko": "지식 베이스"
+ },
+ "superagentsApp.agentStudioPanel.add": {
+  "en": "Add",
+  "ko": "추가"
+ },
+ "superagentsApp.agentStudioPanel.instructions": {
+  "en": "Instructions",
+  "ko": "지침"
+ },
+ "superagentsApp.agentStudioPanel.tool": {
+  "en": "tool",
+  "ko": "도구"
+ },
+ "superagentsApp.agentStudioPanel.tools": {
+  "en": "tools",
+  "ko": "도구"
+ },
+ "superagentsApp.agentStudioPanel.noKnowledgeBases": {
+  "en": "No knowledge bases available",
+  "ko": "사용 가능한 지식 베이스가 없습니다"
+ },
+ "superagentsApp.agentStudioPanel.triggerTypes.chat.name": {
+  "en": "Chat message",
+  "ko": "채팅 메시지"
+ },
+ "superagentsApp.agentStudioPanel.triggerTypes.form.name": {
+  "en": "Form submitted",
+  "ko": "양식 제출"
+ },
+ "superagentsApp.agentStudioPanel.triggerTypes.form.desc": {
+  "en": "Triggers when a form is submitted.",
+  "ko": "양식이 제출되면 트리거됩니다."
+ },
+ "superagentsApp.agentStudioPanel.triggerTypes.tag.name": {
+  "en": "Lead tag",
+  "ko": "리드 태그"
+ },
+ "superagentsApp.agentStudioPanel.triggerTypes.tag.desc": {
+  "en": "Triggers when a lead tag is added or removed.",
+  "ko": "리드 태그가 추가되거나 제거될 때 트리거됩니다."
+ },
+ "superagentsApp.agentStudioPanel.triggerTypes.schedule.name": {
+  "en": "Schedule",
+  "ko": "일정"
+ },
+ "superagentsApp.agentStudioPanel.triggerTypes.appointment_booked.name": {
+  "en": "Appointment booked",
+  "ko": "예약 완료"
+ },
+ "superagentsApp.agentStudioPanel.triggerTypes.appointment_status.name": {
+  "en": "Appointment status",
+  "ko": "예약 상태"
+ },
+ "superagentsApp.agentStudioPanel.triggerTypes.contact_created.name": {
+  "en": "Contact created",
+  "ko": "연락처 생성"
+ },
+ "superagentsApp.agentStudioPanel.triggerTypes.opportunity_created.name": {
+  "en": "Opportunity created",
+  "ko": "기회 생성"
+ },
+ "superagentsApp.agentStudioPanel.triggerTypes.opportunity_status_changed.name": {
+  "en": "Opportunity status changed",
+  "ko": "기회 상태 변경"
+ },
+ "superagentsApp.agentStudioPanel.triggerTypes.survey_submission.name": {
+  "en": "Survey submitted",
+  "ko": "설문 제출"
+ },
+ "superagentsApp.agentStudioPanel.triggerTypes.facebook_lead_gen.name": {
+  "en": "Facebook lead form",
+  "ko": "Facebook 리드 양식"
+ },
+ "copilotApp.copilot.common.notAvailable": {
+  "en": "N/A",
+  "ko": "해당 없음"
+ },
+ "copilotApp.copilot.askAi.preview.social.twitter.relativeTime": {
+  "en": "2h",
+  "ko": "2시간 전"
+ },
+ "copilotApp.copilot.askAi.schedule.noTriggerRuns": {
+  "en": "No runs yet",
+  "ko": "아직 실행 내역이 없습니다"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.add": {
+  "en": "Add trigger",
+  "ko": "트리거 추가"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.addForm": {
+  "en": "Add Form",
+  "ko": "양식 추가"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.addSurvey": {
+  "en": "Add Survey",
+  "ko": "설문 추가"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.search": {
+  "en": "Search triggers",
+  "ko": "트리거 검색"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.selectCalendars": {
+  "en": "Select calendars",
+  "ko": "캘린더 선택"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.calendarsSelected": {
+  "en": "{count} calendars selected",
+  "ko": "캘린더 {count}개 선택됨"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.appointmentStatus.new": {
+  "en": "New",
+  "ko": "신규"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.appointmentStatus.confirmed": {
+  "en": "Confirmed",
+  "ko": "확인됨"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.appointmentStatus.cancelled": {
+  "en": "Cancelled",
+  "ko": "취소됨"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.appointmentStatus.showed": {
+  "en": "Showed",
+  "ko": "출석"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.appointmentStatus.noshow": {
+  "en": "No-show",
+  "ko": "노쇼"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.appointmentStatus.invalid": {
+  "en": "Invalid",
+  "ko": "유효하지 않음"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.pageId": {
+  "en": "Facebook page",
+  "ko": "Facebook 페이지"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.scheduleMode": {
+  "en": "Schedule",
+  "ko": "일정"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.scheduleInterval": {
+  "en": "Interval",
+  "ko": "간격"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.startDate": {
+  "en": "Start date",
+  "ko": "시작일"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.startTime": {
+  "en": "Start time",
+  "ko": "시작 시간"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.intervalValue": {
+  "en": "Every",
+  "ko": "매"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.intervalUnit": {
+  "en": "Unit",
+  "ko": "단위"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.tagAdded": {
+  "en": "Added",
+  "ko": "추가됨"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.tagRemoved": {
+  "en": "Removed",
+  "ko": "제거됨"
+ },
+ "copilotApp.copilot.askAi.customize.triggersTab": {
+  "en": "Triggers",
+  "ko": "트리거"
+ },
+ "copilotApp.copilot.askAi.customize.scheduledTab": {
+  "en": "Scheduled",
+  "ko": "예약됨"
+ },
+ "copilotApp.copilot.askAi.triggers.manageTriggers": {
+  "en": "Triggers",
+  "ko": "트리거"
+ },
+ "copilotApp.copilot.askAi.triggers.managerTitle": {
+  "en": "Triggers",
+  "ko": "트리거"
+ },
+ "copilotApp.copilot.askAi.triggers.addTrigger": {
+  "en": "Add trigger",
+  "ko": "트리거 추가"
+ },
+ "copilotApp.copilot.askAi.triggers.moreTriggers": {
+  "en": "+{count} more",
+  "ko": "+{count}개 더 보기"
+ },
+ "copilotApp.copilot.askAi.triggers.detail.summary": {
+  "en": "Summary",
+  "ko": "요약"
+ },
+ "copilotApp.copilot.askAi.triggers.detail.enabled": {
+  "en": "Enabled",
+  "ko": "활성화됨"
+ },
+ "copilotApp.copilot.askAi.triggers.detail.triggerType": {
+  "en": "Triggers",
+  "ko": "트리거"
+ },
+ "copilotApp.copilot.askAi.triggers.detail.deleting": {
+  "en": "Deleting...",
+  "ko": "삭제 중..."
+ },
+ "copilotApp.copilot.askAi.triggers.detail.historyFilterAll": {
+  "en": "All",
+  "ko": "전체"
+ },
+ "copilotApp.copilot.askAi.triggers.detail.status.queued": {
+  "en": "Queued",
+  "ko": "대기 중"
+ },
+ "copilotApp.copilot.askAi.triggers.detail.status.running": {
+  "en": "Running",
+  "ko": "실행 중"
+ },
+ "copilotApp.copilot.askAi.triggers.detail.status.completed": {
+  "en": "Completed",
+  "ko": "완료"
+ },
+ "copilotApp.copilot.askAi.triggers.detail.status.failed": {
+  "en": "Failed",
+  "ko": "실패"
+ },
+ "copilotApp.copilot.askAi.triggers.detail.status.skipped": {
+  "en": "Skipped",
+  "ko": "건너뜀"
+ },
+ "copilotApp.copilot.askAi.dispatch.connected": {
+  "en": "Connected",
+  "ko": "연결됨"
+ },
+ "copilotApp.copilot.askAi.dispatch.connectWhatsApp": {
+  "en": "Connect WhatsApp",
+  "ko": "WhatsApp 연결"
+ },
+ "copilotApp.copilot.askAi.dispatch.continueButton": {
+  "en": "Continue",
+  "ko": "계속"
+ },
+ "copilotApp.copilot.askAi.dispatch.verify": {
+  "en": "Verify",
+  "ko": "인증"
+ },
+ "copilotApp.copilot.askAi.dispatch.resendCode": {
+  "en": "Resend code",
+  "ko": "코드 재전송"
+ },
+ "copilotApp.copilot.askAi.dispatch.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "copilotApp.copilot.askAi.dispatch.disconnect": {
+  "en": "Disconnect",
+  "ko": "연결 해제"
+ },
+ "copilotApp.copilot.askAi.dispatch.pendingContinue": {
+  "en": "Continue",
+  "ko": "계속"
+ },
+ "copilotApp.copilot.askAi.dispatch.reverifyExpiredStatus": {
+  "en": "Expired",
+  "ko": "만료됨"
+ },
+ "copilotApp.copilot.askAi.dispatch.ownedByAnotherUser.dismiss": {
+  "en": "Got it",
+  "ko": "확인"
+ },
+ "copilotApp.copilot.askAi.dispatch.whatsapp.name": {
+  "en": "WhatsApp",
+  "ko": "WhatsApp"
+ },
+ "copilotApp.copilot.askAi.dispatch.sidebar.loadMore": {
+  "en": "Load more",
+  "ko": "더 보기"
+ },
+ "copilotApp.copilot.askAi.dispatch.sidebar.loadingMore": {
+  "en": "Loading…",
+  "ko": "불러오는 중…"
+ },
+ "copilotApp.copilot.askAi.dispatch.sidebar.retry": {
+  "en": "Retry",
+  "ko": "재시도"
+ },
+ "copilotApp.copilot.askAi.dispatch.sidebar.conversationsHeading": {
+  "en": "Conversations",
+  "ko": "대화"
+ },
+ "copilotApp.copilot.askAi.dispatch.sidebar.sourceLabel": {
+  "en": "Source:",
+  "ko": "소스:"
+ },
+ "copilotApp.copilot.askAi.dispatch.sidebar.backToChat": {
+  "en": "Back",
+  "ko": "뒤로"
+ },
+ "copilotApp.copilot.askAi.dispatch.sidebar.todayAt": {
+  "en": "Today at {time}",
+  "ko": "오늘 {time}"
+ },
+ "copilotApp.copilot.askAi.dispatch.sidebar.sortByCreated": {
+  "en": "Sort",
+  "ko": "정렬"
+ },
+ "copilotApp.copilot.askAi.dispatch.sidebar.sortNewestFirst": {
+  "en": "Newest first",
+  "ko": "최신순"
+ },
+ "copilotApp.copilot.askAi.dispatch.sidebar.sortOldestFirst": {
+  "en": "Oldest first",
+  "ko": "오래된순"
+ },
+ "copilotApp.copilot.askAi.dispatch.errors.title": {
+  "en": "Something went wrong",
+  "ko": "문제가 발생했습니다"
+ },
+ "copilotApp.copilot.askAi.dispatch.errors.retry": {
+  "en": "Please try again.",
+  "ko": "다시 시도해 주세요."
+ },
+ "copilotApp.copilot.themePicker.community.royalVelvet": {
+  "en": "Royal Velvet",
+  "ko": "로열 벨벳"
+ },
+ "copilotApp.copilot.themePicker.community.azureDreams": {
+  "en": "Azure Dreams",
+  "ko": "애저 드림스"
+ },
+ "copilotApp.copilot.themePicker.community.midnightDeep": {
+  "en": "Midnight Deep",
+  "ko": "미드나이트 딥"
+ },
+ "superagentsApp.skillPicker.loadingMore": {
+  "en": "Loading more skills…",
+  "ko": "스킬을 더 불러오는 중…"
+ },
+ "superagentsApp.skillPicker.loadError": {
+  "en": "Couldn't load skills. Try again in a moment.",
+  "ko": "스킬을 불러올 수 없습니다. 잠시 후 다시 시도해 주세요."
+ },
+ "superagentsApp.skillPicker.noSkills": {
+  "en": "No skills available",
+  "ko": "사용 가능한 스킬이 없습니다"
+ },
+ "superagentsApp.skillPicker.noSearchMatch": {
+  "en": "No skills match \"{query}\"",
+  "ko": "\"{query}\"와(과) 일치하는 스킬이 없습니다"
+ },
+ "superagentsApp.builderWelcome.welcomeTitle": {
+  "en": "Build your own agent",
+  "ko": "나만의 에이전트 만들기"
+ },
+ "superagentsApp.builderWelcome.welcomeSubtitle": {
+  "en": "Describe what you want your agent to do, or pick a template on the right.",
+  "ko": "에이전트가 무엇을 하길 원하는지 설명하거나, 오른쪽에서 템플릿을 선택하세요."
+ },
+ "superagentsApp.builderWelcome.tryPromptsLabel": {
+  "en": "Try one of these",
+  "ko": "다음 중 하나를 시도해 보세요"
+ },
+ "superagentsApp.builderWelcome.composerPlaceholder": {
+  "en": "Describe what your agent should do...",
+  "ko": "에이전트가 해야 할 일을 설명하세요..."
+ },
+ "superagentsApp.builderWelcome.loadingAgent": {
+  "en": "Loading agent…",
+  "ko": "에이전트를 불러오는 중…"
+ },
+ "superagentsApp.builderWelcome.useCaseSubtitle": {
+  "en": "Pre-wired channels and tools. Edit anything after you pick.",
+  "ko": "미리 연결된 채널과 도구입니다. 선택 후 자유롭게 수정하세요."
+ },
+ "superagentsApp.builderWelcome.unsavedChangesBody": {
+  "en": "You have unpublished changes to this agent — your draft will be saved, but the live version won't reflect them until you publish.",
+  "ko": "이 에이전트에 게시되지 않은 변경 사항이 있습니다 — 임시 저장본은 보존되지만, 게시하기 전까지 실제 버전에는 반영되지 않습니다."
+ },
+ "superagentsApp.builderWelcome.leaveAnyway": {
+  "en": "Leave anyway",
+  "ko": "그래도 나가기"
+ },
+ "superagentsApp.builderWelcome.buildingAgent": {
+  "en": "Building your agent...",
+  "ko": "에이전트를 만드는 중..."
+ },
+ "superagentsApp.builderWelcome.answerToContinue": {
+  "en": "Answer the builder's questions to continue",
+  "ko": "계속하려면 빌더의 질문에 답하세요"
+ },
+ "superagentsApp.builderWelcome.chatEmptyTitle": {
+  "en": "Edit this agent with chat",
+  "ko": "채팅으로 이 에이전트 편집"
+ },
+ "superagentsApp.builderWelcome.chatEmptyBody": {
+  "en": "Describe what you'd like to change and the builder updates the agent.",
+  "ko": "변경하고 싶은 내용을 설명하면 빌더가 에이전트를 업데이트합니다."
+ },
+ "superagentsApp.builderWelcome.chatEmptyHint": {
+  "en": "Try “Add a trigger for new form submissions” or “Make the tone friendlier.”",
+  "ko": "“새 양식 제출에 대한 트리거 추가” 또는 “톤을 더 친근하게 바꿔줘”를 시도해 보세요."
+ },
+ "superagentsApp.builderCursor.identity": {
+  "en": "Updating profile",
+  "ko": "프로필 업데이트 중"
+ },
+ "superagentsApp.builderCursor.systemPrompt": {
+  "en": "Writing instructions",
+  "ko": "지침 작성 중"
+ },
+ "superagentsApp.builderCursor.tools": {
+  "en": "Enabling capabilities",
+  "ko": "기능 활성화 중"
+ },
+ "superagentsApp.builderCursor.knowledgeBases": {
+  "en": "Connecting knowledge",
+  "ko": "지식 연결 중"
+ },
+ "superagentsApp.builderCursor.triggers": {
+  "en": "Setting up triggers",
+  "ko": "트리거 설정 중"
+ },
+ "superagentsApp.builderCursor.plugins": {
+  "en": "Configuring apps",
+  "ko": "앱 구성 중"
+ },
+ "superagentsApp.builderCursor.customApi": {
+  "en": "Adding API calls",
+  "ko": "API 호출 추가 중"
+ },
+ "superagentsApp.builderCursor.saving": {
+  "en": "Saving your agent…",
+  "ko": "에이전트를 저장하는 중…"
+ },
+ "superagentsApp.builderCursorEdit.identity": {
+  "en": "Updating profile",
+  "ko": "프로필 업데이트 중"
+ },
+ "superagentsApp.builderCursorEdit.systemPrompt": {
+  "en": "Updating instructions",
+  "ko": "지침 업데이트 중"
+ },
+ "superagentsApp.builderCursorEdit.tools": {
+  "en": "Updating capabilities",
+  "ko": "기능 업데이트 중"
+ },
+ "superagentsApp.builderCursorEdit.knowledgeBases": {
+  "en": "Updating knowledge",
+  "ko": "지식 업데이트 중"
+ },
+ "superagentsApp.builderCursorEdit.triggers": {
+  "en": "Updating triggers",
+  "ko": "트리거 업데이트 중"
+ },
+ "superagentsApp.builderCursorEdit.plugins": {
+  "en": "Updating apps",
+  "ko": "앱 업데이트 중"
+ },
+ "superagentsApp.builderCursorEdit.customApi": {
+  "en": "Updating API calls",
+  "ko": "API 호출 업데이트 중"
+ },
+ "superagentsApp.chatNotice.notConnected": {
+  "en": "{app} isn't connected yet — connect it so this agent can use it.",
+  "ko": "{app}이(가) 아직 연결되지 않았습니다 — 이 에이전트가 사용할 수 있도록 연결하세요."
+ },
+ "superagentsApp.chatNotice.connected": {
+  "en": "{app} is connected.",
+  "ko": "{app}이(가) 연결되었습니다."
+ },
+ "superagentsApp.testPanel.subStatus": {
+  "en": "{name} · {status}",
+  "ko": "{name} · {status}"
+ },
+ "superagentsApp.testPanel.publishFirst": {
+  "en": "To test your agent, please publish it first.",
+  "ko": "에이전트를 테스트하려면 먼저 게시해 주세요."
+ },
+ "superagentsApp.testPanel.toolsUsed": {
+  "en": "Tools used · {count}",
+  "ko": "사용된 도구 · {count}"
+ },
+ "superagentsApp.testPanel.testWithContact": {
+  "en": "Test with a contact",
+  "ko": "연락처로 테스트"
+ },
+ "superagentsApp.testPanel.testWithChat": {
+  "en": "Test with chat message",
+  "ko": "채팅 메시지로 테스트"
+ },
+ "superagentsApp.testPanel.testWithSelectedContact": {
+  "en": "Test agent with selected contact",
+  "ko": "선택한 연락처로 에이전트 테스트"
+ },
+ "superagentsApp.chatLayer.generatedImageAlt": {
+  "en": "Generated image",
+  "ko": "생성된 이미지"
+ },
+ "superagentsApp.chatLayer.mediaUnavailable": {
+  "en": "Media unavailable",
+  "ko": "미디어를 사용할 수 없습니다"
+ },
+ "superagentsApp.chatLayer.bgRunDone": {
+  "en": "{name} responded",
+  "ko": "{name}이(가) 응답했습니다"
+ },
+ "superagentsApp.chatLayer.bgRunFailed": {
+  "en": "{name} couldn't finish",
+  "ko": "{name}이(가) 완료하지 못했습니다"
+ },
+ "superagentsApp.chatLayer.editAgent": {
+  "en": "Edit agent",
+  "ko": "에이전트 편집"
+ },
+ "superagentsApp.chatLayer.askPlaceholder": {
+  "en": "Message {name}…",
+  "ko": "{name}에게 메시지…"
+ },
+ "superagentsApp.chatLayer.soon": {
+  "en": "Soon",
+  "ko": "출시 예정"
+ },
+ "superagentsApp.chatLayer.activityPreviewNote": {
+  "en": "Preview — your conversations and trigger runs will appear here soon.",
+  "ko": "미리보기 — 대화와 트리거 실행 내역이 곧 여기에 표시됩니다."
+ },
+ "superagentsApp.chatLayer.loadingActivity": {
+  "en": "Loading activity…",
+  "ko": "활동을 불러오는 중…"
+ },
+ "superagentsApp.chatLayer.loadingConversation": {
+  "en": "Loading conversation",
+  "ko": "대화를 불러오는 중"
+ },
+ "superagentsApp.chatLayer.noActivityBody": {
+  "en": "Conversations and trigger runs with this agent will show up here.",
+  "ko": "이 에이전트와의 대화 및 트리거 실행 내역이 여기에 표시됩니다."
+ },
+ "superagentsApp.chatLayer.usageLimitTitle": {
+  "en": "Managed Agents usage limit reached.",
+  "ko": "Managed Agents 사용 한도에 도달했습니다."
+ },
+ "superagentsApp.chatLayer.usageLimitBody": {
+  "en": "This location has reached its Managed Agents usage allowance. New chat and trigger runs are temporarily blocked.",
+  "ko": "이 서브 계정이 Managed Agents 사용 허용량에 도달했습니다. 새로운 채팅 및 트리거 실행이 일시적으로 차단됩니다."
+ },
+ "superagentsApp.chatLayer.usageLimitResumeAt": {
+  "en": "Runs resume after {time}.",
+  "ko": "{time} 이후 실행이 재개됩니다."
+ },
+ "superagentsApp.chatLayer.usageLimitResumeUnknown": {
+  "en": "Runs resume when the location's usage allowance becomes available again.",
+  "ko": "서브 계정의 사용 허용량이 다시 확보되면 실행이 재개됩니다."
+ },
+ "superagentsApp.chatLayer.productDisabledTitle": {
+  "en": "Managed Agents are not enabled for this location.",
+  "ko": "이 서브 계정에서는 Managed Agents가 활성화되어 있지 않습니다."
+ },
+ "superagentsApp.chatLayer.productDisabledBody": {
+  "en": "Chat and trigger runs are unavailable until Managed Agents is enabled for this location.",
+  "ko": "이 서브 계정에서 Managed Agents가 활성화되기 전까지 채팅 및 트리거 실행을 사용할 수 없습니다."
+ },
+ "superagentsApp.chatLayer.inactiveLocationTitle": {
+  "en": "This location is inactive.",
+  "ko": "이 서브 계정은 비활성 상태입니다."
+ },
+ "superagentsApp.chatLayer.inactiveAgencyTitle": {
+  "en": "This agency is inactive.",
+  "ko": "이 에이전시는 비활성 상태입니다."
+ },
+ "superagentsApp.chatLayer.inactiveBody": {
+  "en": "Managed Agents runs are unavailable while it is inactive.",
+  "ko": "비활성 상태에서는 Managed Agents 실행을 사용할 수 없습니다."
+ },
+ "superagentsApp.chatLayer.memoryTitle": {
+  "en": "What this agent remembers",
+  "ko": "이 에이전트가 기억하는 내용"
+ },
+ "superagentsApp.chatLayer.memoryBody": {
+  "en": "Persistent facts the agent carries across conversations — preferences, key contacts, and recurring context. Nothing saved yet for {name}.",
+  "ko": "대화 전반에 걸쳐 에이전트가 유지하는 지속적인 정보 — 선호 사항, 주요 연락처, 반복되는 맥락입니다. {name}에 대해 아직 저장된 내용이 없습니다."
+ },
+ "superagentsApp.chatLayer.running": {
+  "en": "Running…",
+  "ko": "실행 중…"
+ },
+ "superagentsApp.chatLayer.closeSources": {
+  "en": "Close sources",
+  "ko": "출처 닫기"
+ },
+ "superagentsApp.chatLayer.runDetailTitle": {
+  "en": "Trigger run",
+  "ko": "트리거 실행"
+ },
+ "superagentsApp.chatLayer.loadingRun": {
+  "en": "Loading run…",
+  "ko": "실행 내역을 불러오는 중…"
+ },
+ "superagentsApp.chatLayer.runNotFound": {
+  "en": "This run could not be found.",
+  "ko": "이 실행 내역을 찾을 수 없습니다."
+ },
+ "superagentsApp.chatLayer.runTriggered": {
+  "en": "Triggered",
+  "ko": "트리거됨"
+ },
+ "superagentsApp.chatLayer.tlQueued": {
+  "en": "Task queued",
+  "ko": "작업 대기 중"
+ },
+ "superagentsApp.chatLayer.tlStarted": {
+  "en": "Agent started",
+  "ko": "에이전트 시작됨"
+ },
+ "superagentsApp.chatLayer.tlRunning": {
+  "en": "Agent running",
+  "ko": "에이전트 실행 중"
+ },
+ "superagentsApp.chatLayer.tlCompleted": {
+  "en": "Agent completed",
+  "ko": "에이전트 완료됨"
+ },
+ "superagentsApp.chatLayer.tlFailed": {
+  "en": "Agent failed",
+  "ko": "에이전트 실패함"
+ },
+ "superagentsApp.chatLayer.tlSubQueuedBy": {
+  "en": "Triggered by {who}",
+  "ko": "{who}이(가) 트리거함"
+ },
+ "superagentsApp.chatLayer.tlSubQueuedForm": {
+  "en": "Triggered by a form submission",
+  "ko": "양식 제출로 트리거됨"
+ },
+ "superagentsApp.chatLayer.tlSubQueuedTag": {
+  "en": "Triggered by a tag change",
+  "ko": "태그 변경으로 트리거됨"
+ },
+ "superagentsApp.chatLayer.tlSubQueuedSchedule": {
+  "en": "Triggered on schedule",
+  "ko": "예약된 일정으로 트리거됨"
+ },
+ "superagentsApp.chatLayer.tlSubQueuedGeneric": {
+  "en": "Trigger received",
+  "ko": "트리거 수신됨"
+ },
+ "superagentsApp.chatLayer.tlSubPicked": {
+  "en": "The run was picked up",
+  "ko": "실행이 시작되었습니다"
+ },
+ "superagentsApp.chatLayer.tlSubRunning": {
+  "en": "Working through the task",
+  "ko": "작업을 처리하는 중"
+ },
+ "superagentsApp.chatLayer.tlSubCompleted": {
+  "en": "Finished in {duration}",
+  "ko": "{duration} 만에 완료됨"
+ },
+ "superagentsApp.chatLayer.tlSubCompletedGeneric": {
+  "en": "Finished successfully",
+  "ko": "성공적으로 완료됨"
+ },
+ "superagentsApp.chatLayer.tlSubFailed": {
+  "en": "The run didn't finish",
+  "ko": "실행이 완료되지 않았습니다"
+ },
+ "superagentsApp.chatLayer.runContext": {
+  "en": "Trigger context",
+  "ko": "트리거 컨텍스트"
+ },
+ "superagentsApp.chatLayer.viewInLogs": {
+  "en": "View in Agent Logs",
+  "ko": "에이전트 로그에서 보기"
+ },
+ "superagentsApp.singleAgentBuilder.createOption.description": {
+  "en": "Build with natural language. Describe what you want and AI will configure your agent.",
+  "ko": "자연어로 만드세요. 원하는 내용을 설명하면 AI가 에이전트를 구성합니다."
+ },
+ "superagentsApp.singleAgentBuilder.createOption.defaultName": {
+  "en": "My AI Agent",
+  "ko": "내 AI 에이전트"
+ },
+ "superagentsApp.singleAgentBuilder.createOption.defaultDescription": {
+  "en": "An AI agent built with natural language",
+  "ko": "자연어로 만든 AI 에이전트"
+ },
+ "superagentsApp.singleAgentBuilder.identity.noDescription": {
+  "en": "No description yet. Chat with the AI builder to describe your agent.",
+  "ko": "아직 설명이 없습니다. AI 빌더와 채팅하여 에이전트를 설명해 보세요."
+ },
+ "superagentsApp.singleAgentBuilder.chat.hint": {
+  "en": "Start from a quick prompt or describe the job in your own words.",
+  "ko": "빠른 프롬프트로 시작하거나 직접 원하는 작업을 설명해 보세요."
+ },
+ "superagentsApp.singleAgentBuilder.chat.emptyTitle": {
+  "en": "Describe your agent",
+  "ko": "에이전트 설명하기"
+ },
+ "superagentsApp.singleAgentBuilder.chat.emptySubtitle": {
+  "en": "Tell me what you want your agent to do and I'll set it up for you.",
+  "ko": "에이전트가 무엇을 하길 원하는지 알려주시면 제가 설정해 드릴게요."
+ },
+ "superagentsApp.singleAgentBuilder.chat.quickStartsLabel": {
+  "en": "Quick starts:",
+  "ko": "빠른 시작:"
+ },
+ "superagentsApp.singleAgentBuilder.chat.placeholder": {
+  "en": "Ask about or edit your agent...",
+  "ko": "에이전트에 대해 질문하거나 편집하세요..."
+ },
+ "superagentsApp.singleAgentBuilder.chat.building": {
+  "en": "Building agent...",
+  "ko": "에이전트를 만드는 중..."
+ },
+ "superagentsApp.singleAgentBuilder.chat.buildComplete": {
+  "en": "Build complete",
+  "ko": "생성 완료"
+ },
+ "superagentsApp.singleAgentBuilder.quickStarts.socialMonitor": {
+  "en": "Social Media Monitor",
+  "ko": "소셜 미디어 모니터"
+ },
+ "superagentsApp.singleAgentBuilder.quickStarts.customerSupport": {
+  "en": "Customer Support Bot",
+  "ko": "고객 지원 봇"
+ },
+ "superagentsApp.singleAgentBuilder.quickStarts.emailDigest": {
+  "en": "Daily Email Digest",
+  "ko": "일일 이메일 다이제스트"
+ },
+ "superagentsApp.singleAgentBuilder.quickStarts.leadQualifier": {
+  "en": "Lead Qualifier",
+  "ko": "리드 선별"
+ },
+ "superagentsApp.singleAgentBuilder.sections.triggers": {
+  "en": "Schedule & Triggers",
+  "ko": "일정 및 트리거"
+ },
+ "superagentsApp.singleAgentBuilder.sections.subAgents": {
+  "en": "Sub-Agents",
+  "ko": "서브 에이전트"
+ },
+ "superagentsApp.singleAgentBuilder.sections.knowledge": {
+  "en": "Knowledge",
+  "ko": "지식"
+ },
+ "superagentsApp.singleAgentBuilder.sections.model": {
+  "en": "Model Configuration",
+  "ko": "모델 설정"
+ },
+ "superagentsApp.singleAgentBuilder.sections.test": {
+  "en": "Test Agent",
+  "ko": "에이전트 테스트"
+ },
+ "superagentsApp.singleAgentBuilder.empty.instructions": {
+  "en": "No instructions configured. Use the AI chat to describe what your agent should do.",
+  "ko": "설정된 지침이 없습니다. AI 채팅을 사용해 에이전트가 수행해야 할 작업을 설명하세요."
+ },
+ "superagentsApp.singleAgentBuilder.empty.channels": {
+  "en": "No channels connected. Add channels to let users interact with your agent.",
+  "ko": "연결된 채널이 없습니다. 채널을 추가하여 사용자가 에이전트와 상호작용할 수 있도록 하세요."
+ },
+ "superagentsApp.singleAgentBuilder.empty.triggers": {
+  "en": "No triggers configured. Add triggers to automate when your agent runs.",
+  "ko": "설정된 트리거가 없습니다. 트리거를 추가하여 에이전트 실행을 자동화하세요."
+ },
+ "superagentsApp.singleAgentBuilder.empty.actions": {
+  "en": "No actions configured. Add actions to let your agent run workflows and integrations from Actions Platform.",
+  "ko": "설정된 액션이 없습니다. 액션을 추가하여 에이전트가 Actions Platform의 워크플로우와 연동을 실행할 수 있도록 하세요."
+ },
+ "superagentsApp.singleAgentBuilder.empty.tools": {
+  "en": "No tools configured. Add tools to give your agent external capabilities like API calls or data lookups.",
+  "ko": "설정된 도구가 없습니다. 도구를 추가하여 에이전트에 API 호출이나 데이터 조회 같은 외부 기능을 부여하세요."
+ },
+ "superagentsApp.singleAgentBuilder.empty.plugins": {
+  "en": "No plugins configured. Add actions and skills to extend your agent's capabilities.",
+  "ko": "설정된 플러그인이 없습니다. 액션과 스킬을 추가하여 에이전트의 기능을 확장하세요."
+ },
+ "superagentsApp.singleAgentBuilder.empty.subAgents": {
+  "en": "No sub-agents configured. Add sub-agents to delegate specialized tasks.",
+  "ko": "설정된 서브 에이전트가 없습니다. 서브 에이전트를 추가하여 전문 작업을 위임하세요."
+ },
+ "superagentsApp.singleAgentBuilder.empty.skills": {
+  "en": "No skills imported. Add third-party or custom skills to extend this agent.",
+  "ko": "가져온 스킬이 없습니다. 타사 또는 커스텀 스킬을 추가하여 이 에이전트를 확장하세요."
+ },
+ "superagentsApp.singleAgentBuilder.empty.knowledge": {
+  "en": "No knowledge sources configured. Add knowledge to give your agent access to your data.",
+  "ko": "설정된 지식 소스가 없습니다. 지식을 추가하여 에이전트가 데이터에 접근할 수 있도록 하세요."
+ },
+ "superagentsApp.singleAgentBuilder.test.subtitle": {
+  "en": "Preview the current agent behavior without leaving the builder.",
+  "ko": "빌더를 벗어나지 않고 현재 에이전트 동작을 미리 볼 수 있습니다."
+ },
+ "superagentsApp.singleAgentBuilder.test.emptyMessage": {
+  "en": "Send a message to test your agent",
+  "ko": "에이전트를 테스트하려면 메시지를 보내세요"
+ },
+ "superagentsApp.singleAgentBuilder.test.placeholder": {
+  "en": "Type a test message...",
+  "ko": "테스트 메시지를 입력하세요..."
+ },
+ "superagentsApp.singleAgentBuilder.test.responding": {
+  "en": "Agent is responding...",
+  "ko": "에이전트가 응답 중입니다..."
+ },
+ "superagentsApp.singleAgentBuilder.test.collapsePanel": {
+  "en": "Collapse panel",
+  "ko": "패널 접기"
+ },
+ "superagentsApp.singleAgentBuilder.actionsConfig.modalTitle": {
+  "en": "Browse Actions",
+  "ko": "액션 찾아보기"
+ },
+ "superagentsApp.singleAgentBuilder.actionsConfig.modalDescription": {
+  "en": "Load the full Actions Platform modal from Agent Studio to add or edit actions.",
+  "ko": "Agent Studio에서 전체 Actions Platform 모달을 불러와 액션을 추가하거나 편집하세요."
+ },
+ "superagentsApp.singleAgentBuilder.actionsConfig.platformLabel": {
+  "en": "Actions Platform",
+  "ko": "Actions Platform"
+ },
+ "superagentsApp.singleAgentBuilder.instructions.placeholder": {
+  "en": "Enter agent instructions... Describe what the agent should do, how it should behave, and any constraints.",
+  "ko": "에이전트 지침을 입력하세요... 에이전트가 무엇을 해야 하는지, 어떻게 행동해야 하는지, 제약 사항은 무엇인지 설명하세요."
+ },
+ "superagentsApp.singleAgentBuilder.instructions.richPlaceholder": {
+  "en": "Write instructions here. Type / to specify tools or @ to mention items",
+  "ko": "여기에 지침을 작성하세요. /를 입력해 도구를 지정하거나 @를 입력해 항목을 언급하세요"
+ },
+ "superagentsApp.singleAgentBuilder.instructions.constraints": {
+  "en": "Constraints",
+  "ko": "제약 조건"
+ },
+ "superagentsApp.singleAgentBuilder.channelsConfig.title": {
+  "en": "Supported Communication Channels",
+  "ko": "지원되는 커뮤니케이션 채널"
+ },
+ "superagentsApp.singleAgentBuilder.channelsConfig.description": {
+  "en": "Select where this agent can receive messages and which surfaces it should be ready for.",
+  "ko": "이 에이전트가 메시지를 받을 수 있는 위치와 대응해야 할 화면을 선택하세요."
+ },
+ "superagentsApp.singleAgentBuilder.channelsConfig.placeholder": {
+  "en": "Select channels",
+  "ko": "채널 선택"
+ },
+ "superagentsApp.singleAgentBuilder.toolboxConfig.addTool": {
+  "en": "Add tool",
+  "ko": "도구 추가"
+ },
+ "superagentsApp.singleAgentBuilder.toolboxConfig.searchApps": {
+  "en": "Search apps...",
+  "ko": "앱 검색..."
+ },
+ "superagentsApp.singleAgentBuilder.toolboxConfig.searchIn": {
+  "en": "Search in {app}",
+  "ko": "{app}에서 검색"
+ },
+ "superagentsApp.singleAgentBuilder.toolboxConfig.noToolsFound": {
+  "en": "No tools found",
+  "ko": "도구를 찾을 수 없습니다"
+ },
+ "superagentsApp.singleAgentBuilder.toolboxConfig.hint": {
+  "en": "Ask the builder chat for a tool you don't see here and it will suggest the closest match.",
+  "ko": "여기에 없는 도구는 빌더 채팅에 요청하면 가장 가까운 항목을 제안해 드립니다."
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.removeApp": {
+  "en": "Remove all tools from this app",
+  "ko": "이 앱의 모든 도구 제거"
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.searchApps": {
+  "en": "Search apps...",
+  "ko": "앱 검색..."
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.searchInApp": {
+  "en": "Search in {app}",
+  "ko": "{app}에서 검색"
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.mostUsed": {
+  "en": "Most Used Apps",
+  "ko": "가장 많이 사용된 앱"
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.addAllTools": {
+  "en": "Add all {app} tools",
+  "ko": "{app}의 모든 도구 추가"
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.noToolsFound": {
+  "en": "No tools found",
+  "ko": "도구를 찾을 수 없습니다"
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.skillNotSupported": {
+  "en": "Skill not supported? Request it.",
+  "ko": "지원되지 않는 스킬인가요? 요청해 보세요."
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.requestNewTool": {
+  "en": "Request a new tool",
+  "ko": "새 도구 요청"
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.thirdParty": {
+  "en": "Third-Party",
+  "ko": "타사"
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.builtIn": {
+  "en": "Built-In",
+  "ko": "내장"
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.searchMarketplace": {
+  "en": "Search skills...",
+  "ko": "스킬 검색..."
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.marketplaceHint": {
+  "en": "Import reusable skills from third-party providers and external catalogs.",
+  "ko": "타사 제공업체 및 외부 카탈로그에서 재사용 가능한 스킬을 가져오세요."
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.customHint": {
+  "en": "Import a custom skill from a repo, package URL, or internal bundle reference.",
+  "ko": "저장소, 패키지 URL 또는 내부 번들 참조에서 커스텀 스킬을 가져오세요."
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.providedBy": {
+  "en": "by {vendor}",
+  "ko": "{vendor} 제공"
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.importedFrom": {
+  "en": "Imported from {source}",
+  "ko": "{source}에서 가져옴"
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.noSkillsFound": {
+  "en": "No skills found",
+  "ko": "스킬을 찾을 수 없습니다"
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.customName": {
+  "en": "Skill Name",
+  "ko": "스킬 이름"
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.customNamePlaceholder": {
+  "en": "Lead enrichment orchestrator",
+  "ko": "리드 보강 오케스트레이터"
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.customDescriptionPlaceholder": {
+  "en": "Summarize what this skill does and when the agent should use it.",
+  "ko": "이 스킬이 하는 일과 에이전트가 언제 사용해야 하는지 요약하세요."
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.customSource": {
+  "en": "Repository or Package URL",
+  "ko": "저장소 또는 패키지 URL"
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.customSourcePlaceholder": {
+  "en": "https://github.com/acme/agent-skill or npm:@acme/agent-skill",
+  "ko": "https://github.com/acme/agent-skill 또는 npm:@acme/agent-skill"
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.customEntrypoint": {
+  "en": "Entrypoint",
+  "ko": "진입점"
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.customEntrypointPlaceholder": {
+  "en": "skills/lead-enrichment.ts",
+  "ko": "skills/lead-enrichment.ts"
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.customFooterHint": {
+  "en": "Store the source so the builder can reference, reinstall, or audit this skill later.",
+  "ko": "빌더가 나중에 이 스킬을 참조, 재설치, 또는 감사할 수 있도록 소스를 저장하세요."
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.importCustomAction": {
+  "en": "Import Custom Skill",
+  "ko": "커스텀 스킬 가져오기"
+ },
+ "superagentsApp.singleAgentBuilder.skillsConfig.customFallbackDescription": {
+  "en": "Imported skill",
+  "ko": "가져온 스킬"
+ },
+ "superagentsApp.singleAgentBuilder.knowledgeConfig.workspaceAccess": {
+  "en": "Workspace Access",
+  "ko": "워크스페이스 접근"
+ },
+ "superagentsApp.singleAgentBuilder.knowledgeConfig.workspaceDescription": {
+  "en": "Select which knowledge bases this agent should use when answering questions.",
+  "ko": "이 에이전트가 질문에 답할 때 사용할 지식 베이스를 선택하세요."
+ },
+ "superagentsApp.singleAgentBuilder.knowledgeConfig.externalSearch": {
+  "en": "External Search",
+  "ko": "외부 검색"
+ },
+ "superagentsApp.singleAgentBuilder.knowledgeConfig.webSearchDescription": {
+  "en": "Allow this agent to use web results in responses.",
+  "ko": "이 에이전트가 응답에 웹 검색 결과를 사용하도록 허용합니다."
+ },
+ "superagentsApp.singleAgentBuilder.modelConfig.streaming": {
+  "en": "Streaming",
+  "ko": "스트리밍"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.picker.addTrigger": {
+  "en": "Add a trigger",
+  "ko": "트리거 추가"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.picker.closeShort": {
+  "en": "close",
+  "ko": "닫기"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.picker.searchPlaceholder": {
+  "en": "Search triggers…",
+  "ko": "트리거 검색…"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.picker.categories": {
+  "en": "Trigger categories",
+  "ko": "트리거 카테고리"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.picker.navigate": {
+  "en": "navigate",
+  "ko": "이동"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.picker.popular": {
+  "en": "Popular",
+  "ko": "인기"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.picker.backToList": {
+  "en": "Back to trigger list",
+  "ko": "트리거 목록으로 돌아가기"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.picker.removeTrigger": {
+  "en": "Remove this trigger",
+  "ko": "이 트리거 제거"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.picker.countShown": {
+  "en": "%n% triggers shown",
+  "ko": "트리거 %n%개 표시됨"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.picker.nTriggers": {
+  "en": "%n% triggers",
+  "ko": "트리거 %n%개"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.picker.noMatch": {
+  "en": "No triggers match “%q%”.",
+  "ko": "“%q%”와(과) 일치하는 트리거가 없습니다."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.picker.noMatchInCategory": {
+  "en": "No %cat% triggers match “%q%”.",
+  "ko": "“%q%”와(과) 일치하는 %cat% 트리거가 없습니다."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.picker.cat_all": {
+  "en": "All triggers",
+  "ko": "모든 트리거"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.form.selectForms": {
+  "en": "Select forms",
+  "ko": "양식 선택"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.form.searchForms": {
+  "en": "Search and select forms...",
+  "ko": "양식 검색 및 선택..."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.form.hint": {
+  "en": "Select one or more forms that will trigger this agent when submitted.",
+  "ko": "제출 시 이 에이전트를 트리거할 하나 이상의 양식을 선택하세요."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.tag.selectAction": {
+  "en": "Select action...",
+  "ko": "액션 선택..."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.tag.searchTags": {
+  "en": "Search and select tags...",
+  "ko": "태그 검색 및 선택..."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.tag.hintAdded": {
+  "en": "Select tags that will trigger this agent when added to a contact.",
+  "ko": "연락처에 추가될 때 이 에이전트를 트리거할 태그를 선택하세요."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.tag.hintRemoved": {
+  "en": "Select tags that will trigger this agent when removed from a contact.",
+  "ko": "연락처에서 제거될 때 이 에이전트를 트리거할 태그를 선택하세요."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.mode.once": {
+  "en": "Once",
+  "ko": "한 번"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.mode.interval": {
+  "en": "Set interval",
+  "ko": "반복 간격"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.mode.cron": {
+  "en": "Cron expression",
+  "ko": "Cron 표현식"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.timezoneHint": {
+  "en": "The agent runs at the selected time in this timezone.",
+  "ko": "에이전트는 이 시간대의 선택된 시간에 실행됩니다."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.cronExpressionLabel": {
+  "en": "Cron expression",
+  "ko": "Cron 표현식"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.cronPlaceholder": {
+  "en": "0 9 * * 1-5",
+  "ko": "0 9 * * 1-5"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.cronHint": {
+  "en": "Use cron syntax to define a custom schedule for this trigger.",
+  "ko": "Cron 구문을 사용해 이 트리거의 커스텀 일정을 정의하세요."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.cronGuide.runsLabel": {
+  "en": "Trigger will run:",
+  "ko": "트리거 실행 시점:"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.cronGuide.title": {
+  "en": "Cron expression guide",
+  "ko": "Cron 표현식 가이드"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.cronGuide.fields.dow": {
+  "en": "DOW",
+  "ko": "요일"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.cronGuide.quickReference": {
+  "en": "Quick reference",
+  "ko": "빠른 참조"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.cronGuide.reference.anyValue": {
+  "en": "any value",
+  "ko": "모든 값"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.cronGuide.reference.list": {
+  "en": "list (1,3,5)",
+  "ko": "목록 (1,3,5)"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.cronGuide.reference.range": {
+  "en": "range (1-5)",
+  "ko": "범위 (1-5)"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.cronGuide.reference.step": {
+  "en": "step (*/5)",
+  "ko": "스텝 (*/5)"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.cronGuide.commonPresets": {
+  "en": "Common presets",
+  "ko": "일반 프리셋"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.cronGuide.presets.everyMinute": {
+  "en": "Every minute",
+  "ko": "매분"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.cronGuide.presets.dailyNoon": {
+  "en": "Daily at noon",
+  "ko": "매일 정오"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.cronGuide.presets.dailyMidnight": {
+  "en": "Daily at midnight",
+  "ko": "매일 자정"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.cronGuide.presets.mondayNineAm": {
+  "en": "Every Monday at 9 AM",
+  "ko": "매주 월요일 오전 9시"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.cronGuide.presets.weekdaysEightAm": {
+  "en": "Weekdays at 8 AM",
+  "ko": "평일 오전 8시"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.cronGuide.presets.firstOfMonth": {
+  "en": "1st of month",
+  "ko": "매월 1일"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.executionDateTime": {
+  "en": "Run date & time",
+  "ko": "실행 날짜 및 시간"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.intervalStartDateTime": {
+  "en": "Starts on",
+  "ko": "시작일"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.at": {
+  "en": "at",
+  "ko": "시각"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.pickDate": {
+  "en": "Pick a date",
+  "ko": "날짜 선택"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.specifyDays": {
+  "en": "On specific days of the week",
+  "ko": "특정 요일에"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.end.afterOccurrences": {
+  "en": "After occurrences",
+  "ko": "지정 횟수 후"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.validation.endDateMustBeOnOrAfterStart": {
+  "en": "End date must be on or after the start date.",
+  "ko": "종료일은 시작일과 같거나 이후여야 합니다."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.validation.minimumSpacing": {
+  "en": "Scheduled runs must be at least 5 minutes apart.",
+  "ko": "예약된 실행은 최소 5분 간격이어야 합니다."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.schedule.validation.onceMustBeFuture": {
+  "en": "One-time schedules must be set for a future date and time.",
+  "ko": "일회성 일정은 미래의 날짜와 시간으로 설정해야 합니다."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.appointment.searchCalendars": {
+  "en": "Search and select calendars...",
+  "ko": "캘린더 검색 및 선택..."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.appointment.calendarsHint": {
+  "en": "Select at least one calendar. This trigger runs only for appointments on the calendars you choose.",
+  "ko": "캘린더를 하나 이상 선택하세요. 이 트리거는 선택한 캘린더의 예약 건에 대해서만 실행됩니다."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.appointment.selectStatuses": {
+  "en": "Select statuses",
+  "ko": "상태 선택"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.appointment.statusHint": {
+  "en": "Leave empty to trigger on any status, or select specific statuses to limit when this agent runs.",
+  "ko": "비워두면 모든 상태에서 트리거되며, 특정 상태를 선택하면 이 에이전트가 실행되는 시점을 제한할 수 있습니다."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.appointment.remove": {
+  "en": "Remove trigger",
+  "ko": "트리거 제거"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.opportunity.selectPipelines": {
+  "en": "Select pipelines",
+  "ko": "파이프라인 선택"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.opportunity.searchPipelines": {
+  "en": "Search and select pipelines...",
+  "ko": "파이프라인 검색 및 선택..."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.opportunity.pipelinesHint": {
+  "en": "Leave empty to trigger for any pipeline, or select specific pipelines.",
+  "ko": "비워두면 모든 파이프라인에서 트리거되며, 특정 파이프라인을 선택할 수도 있습니다."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.opportunity.selectStages": {
+  "en": "Select stages",
+  "ko": "단계 선택"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.opportunity.stagesHint": {
+  "en": "Leave empty to trigger for any stage, or select specific stages.",
+  "ko": "비워두면 모든 단계에서 트리거되며, 특정 단계를 선택할 수도 있습니다."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.opportunity.pipelinesLoading": {
+  "en": "Loading pipelines…",
+  "ko": "파이프라인 불러오는 중…"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.opportunity.pipelinesError": {
+  "en": "Couldn't load pipelines. Close and reopen this trigger to retry.",
+  "ko": "파이프라인을 불러올 수 없습니다. 이 트리거를 닫았다가 다시 열어 재시도하세요."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.opportunity.noPipelines": {
+  "en": "No pipelines exist in this location yet.",
+  "ko": "이 서브 계정에는 아직 파이프라인이 없습니다."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.opportunity.noPipelineMatches": {
+  "en": "No pipelines match this search.",
+  "ko": "검색 결과와 일치하는 파이프라인이 없습니다."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.opportunity.noStages": {
+  "en": "No stages available for the selected pipelines.",
+  "ko": "선택한 파이프라인에 사용 가능한 단계가 없습니다."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.opportunity.selectStatuses": {
+  "en": "Select statuses",
+  "ko": "상태 선택"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.opportunity.statusHint": {
+  "en": "Leave empty to trigger on any status, or select specific statuses.",
+  "ko": "비워두면 모든 상태에서 트리거되며, 특정 상태를 선택할 수도 있습니다."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.opportunity.remove": {
+  "en": "Remove trigger",
+  "ko": "트리거 제거"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.survey.selectSurveys": {
+  "en": "Select surveys",
+  "ko": "설문 선택"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.survey.searchSurveys": {
+  "en": "Search and select surveys...",
+  "ko": "설문 검색 및 선택..."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.survey.surveysHint": {
+  "en": "Select one or more surveys that will trigger this agent when submitted.",
+  "ko": "제출 시 이 에이전트를 트리거할 설문을 하나 이상 선택하세요."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.survey.surveysLoading": {
+  "en": "Loading surveys…",
+  "ko": "설문 불러오는 중…"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.survey.surveysError": {
+  "en": "Couldn't load surveys. Close and reopen this trigger to retry.",
+  "ko": "설문을 불러올 수 없습니다. 이 트리거를 닫았다가 다시 열어 재시도하세요."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.survey.noSurveys": {
+  "en": "No surveys exist in this location yet.",
+  "ko": "이 서브 계정에는 아직 설문이 없습니다."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.survey.noSurveyMatches": {
+  "en": "No surveys match this search.",
+  "ko": "검색 결과와 일치하는 설문이 없습니다."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.survey.remove": {
+  "en": "Remove trigger",
+  "ko": "트리거 제거"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.facebookLead.selectForms": {
+  "en": "Select lead forms",
+  "ko": "리드 양식 선택"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.facebookLead.searchForms": {
+  "en": "Search and select lead forms...",
+  "ko": "리드 양식 검색 및 선택..."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.facebookLead.formsHint": {
+  "en": "Pick a page and/or specific lead forms that will trigger this agent.",
+  "ko": "이 에이전트를 트리거할 페이지 및/또는 특정 리드 양식을 선택하세요."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.facebookLead.pagesLoading": {
+  "en": "Loading pages…",
+  "ko": "페이지 불러오는 중…"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.facebookLead.pagesError": {
+  "en": "Couldn't load Facebook pages. Close and reopen this trigger to retry.",
+  "ko": "Facebook 페이지를 불러올 수 없습니다. 이 트리거를 닫았다가 다시 열어 재시도하세요."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.facebookLead.noPages": {
+  "en": "No connected Facebook pages were found for this location.",
+  "ko": "이 서브 계정에 연결된 Facebook 페이지가 없습니다."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.facebookLead.noPageMatches": {
+  "en": "No pages match this search.",
+  "ko": "검색 결과와 일치하는 페이지가 없습니다."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.facebookLead.formsLoading": {
+  "en": "Loading lead forms…",
+  "ko": "리드 양식 불러오는 중…"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.facebookLead.formsError": {
+  "en": "Couldn't load lead forms. Close and reopen this trigger to retry.",
+  "ko": "리드 양식을 불러올 수 없습니다. 이 트리거를 닫았다가 다시 열어 재시도하세요."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.facebookLead.noForms": {
+  "en": "No lead forms were found for this page.",
+  "ko": "이 페이지에서 리드 양식을 찾을 수 없습니다."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.facebookLead.noFormMatches": {
+  "en": "No lead forms match this search.",
+  "ko": "검색 결과와 일치하는 리드 양식이 없습니다."
+ },
+ "superagentsApp.singleAgentBuilder.triggers.facebookLead.remove": {
+  "en": "Remove trigger",
+  "ko": "트리거 제거"
+ },
+ "superagentsApp.graphBuilder.formFields.knowledgeBase.placeholder": {
+  "en": "Select knowledge bases...",
+  "ko": "지식 베이스 선택..."
+ },
+ "superagentsApp.agentStudioPanel.testAgent": {
+  "en": "Test Agent",
+  "ko": "에이전트 테스트"
+ },
+ "superagentsApp.agentStudioPanel.unpublishConfirmTitle": {
+  "en": "Unpublish {name}?",
+  "ko": "{name} 게시를 취소하시겠습니까?"
+ },
+ "superagentsApp.agentStudioPanel.unpublishConfirmSubtitle": {
+  "en": "This takes the agent out of production.",
+  "ko": "이 작업은 에이전트를 운영 환경에서 제외합니다."
+ },
+ "superagentsApp.agentStudioPanel.unpublishConfirmBody": {
+  "en": "Automated trigger runs stop immediately; an execution already in progress runs to completion. Chat keeps working and runs the draft, and publishing again restores automated triggers as a new version.",
+  "ko": "자동화된 트리거 실행이 즉시 중단되며, 이미 진행 중인 실행은 완료까지 계속됩니다. 채팅은 계속 작동하며 임시 저장본을 실행하고, 다시 게시하면 자동화된 트리거가 새 버전으로 복원됩니다."
+ },
+ "superagentsApp.agentStudioPanel.unpublishFallbackName": {
+  "en": "this agent",
+  "ko": "이 에이전트"
+ },
+ "superagentsApp.agentStudioPanel.unpublishFailed": {
+  "en": "Failed to unpublish. Please try again.",
+  "ko": "게시 취소에 실패했습니다. 다시 시도해 주세요."
+ },
+ "superagentsApp.agentStudioPanel.addTool": {
+  "en": "Add tool",
+  "ko": "도구 추가"
+ },
+ "superagentsApp.agentStudioPanel.addApp": {
+  "en": "Add app",
+  "ko": "앱 추가"
+ },
+ "superagentsApp.agentStudioPanel.webSearch": {
+  "en": "Web search",
+  "ko": "웹 검색"
+ },
+ "superagentsApp.agentStudioPanel.imageGeneration": {
+  "en": "Image generation",
+  "ko": "이미지 생성"
+ },
+ "superagentsApp.agentStudioPanel.imageQuality.lowHint": {
+  "en": "Fastest and most affordable — up to 9x cheaper than Medium per image, depending on the aspect ratio. Best for drafts.",
+  "ko": "가장 빠르고 저렴함 — 화면 비율에 따라 이미지당 보통 품질보다 최대 9배 저렴합니다. 초안 작업에 적합합니다."
+ },
+ "superagentsApp.agentStudioPanel.imageQuality.mediumHint": {
+  "en": "Balanced quality and cost. The default for every agent.",
+  "ko": "품질과 비용의 균형. 모든 에이전트의 기본값입니다."
+ },
+ "superagentsApp.agentStudioPanel.imageQuality.highHint": {
+  "en": "Sharpest detail — 2x to 4x Medium's cost per image depending on the aspect ratio, and slower to render.",
+  "ko": "가장 선명한 디테일 — 화면 비율에 따라 이미지당 보통 품질 비용의 2배에서 4배이며, 렌더링 속도가 더 느립니다."
+ },
+ "superagentsApp.agentStudioPanel.audioGeneration": {
+  "en": "Audio generation",
+  "ko": "오디오 생성"
+ },
+ "superagentsApp.agentStudioPanel.audioTonePlaceholder": {
+  "en": "Tone, e.g. warm and unhurried",
+  "ko": "톤, 예: 따뜻하고 여유로운"
+ },
+ "superagentsApp.agentStudioPanel.audioFormatHint": {
+  "en": "MP3 · separate file",
+  "ko": "MP3 · 별도 파일"
+ },
+ "superagentsApp.agentStudioPanel.videoGeneration": {
+  "en": "Video generation",
+  "ko": "동영상 생성"
+ },
+ "superagentsApp.agentStudioPanel.videoLengthHint": {
+  "en": "8s · 16:9 or 9:16",
+  "ko": "8초 · 16:9 또는 9:16"
+ },
+ "superagentsApp.agentStudioPanel.mediaSeparateNote": {
+  "en": "Audio and video are generated separately — the voiceover isn't added to the video, which has its own sound.",
+  "ko": "오디오와 동영상은 별도로 생성됩니다 — 보이스오버가 동영상에 추가되지 않으며, 동영상은 자체 사운드를 가집니다."
+ },
+ "superagentsApp.agentStudioPanel.instructionsPlaceholder": {
+  "en": "Give your agent instructions on how to operate.",
+  "ko": "에이전트의 작동 방식에 대한 지침을 입력하세요."
+ },
+ "superagentsApp.agentStudioPanel.notConnectedTooltip": {
+  "en": "Not connected — click to connect this app before publishing.",
+  "ko": "연결되지 않음 — 게시하기 전에 클릭하여 이 앱을 연결하세요."
+ },
+ "superagentsApp.agentStudioPanel.updatedJustNow": {
+  "en": "Updated just now",
+  "ko": "방금 업데이트됨"
+ },
+ "superagentsApp.agentStudioPanel.updatedMinAgo": {
+  "en": "Updated {n} min ago",
+  "ko": "{n}분 전 업데이트됨"
+ },
+ "superagentsApp.agentStudioPanel.updatedHourAgo": {
+  "en": "Updated {n} hour ago",
+  "ko": "{n}시간 전 업데이트됨"
+ },
+ "superagentsApp.agentStudioPanel.updatedHoursAgo": {
+  "en": "Updated {n} hours ago",
+  "ko": "{n}시간 전 업데이트됨"
+ },
+ "superagentsApp.agentStudioPanel.updatedDayAgo": {
+  "en": "Updated {n} day ago",
+  "ko": "{n}일 전 업데이트됨"
+ },
+ "superagentsApp.agentStudioPanel.updatedDaysAgo": {
+  "en": "Updated {n} days ago",
+  "ko": "{n}일 전 업데이트됨"
+ },
+ "superagentsApp.agentStudioPanel.loadingKnowledgeBases": {
+  "en": "Loading knowledge bases…",
+  "ko": "지식 베이스 불러오는 중…"
+ },
+ "superagentsApp.agentStudioPanel.triggerTypes.chat.desc": {
+  "en": "Invoked via the Managed Agents chat interface.",
+  "ko": "Managed Agents 채팅 인터페이스를 통해 호출됩니다."
+ },
+ "superagentsApp.agentStudioPanel.triggerTypes.schedule.desc": {
+  "en": "Runs the agent on a one-time or recurring schedule.",
+  "ko": "일회성 또는 반복 일정으로 에이전트를 실행합니다."
+ },
+ "superagentsApp.agentStudioPanel.triggerTypes.appointment_booked.desc": {
+  "en": "Triggers when a customer books an appointment.",
+  "ko": "고객이 예약을 하면 트리거됩니다."
+ },
+ "superagentsApp.agentStudioPanel.triggerTypes.appointment_status.desc": {
+  "en": "Triggers when an appointment status changes (confirmed, cancelled, no-show, …).",
+  "ko": "예약 상태가 변경되면 트리거됩니다 (확인됨, 취소됨, 노쇼 등)."
+ },
+ "superagentsApp.agentStudioPanel.triggerTypes.contact_created.desc": {
+  "en": "Triggers when a new contact is created in the CRM.",
+  "ko": "CRM에 새 연락처가 생성되면 트리거됩니다."
+ },
+ "superagentsApp.agentStudioPanel.triggerTypes.opportunity_created.desc": {
+  "en": "Triggers when a new opportunity is created.",
+  "ko": "새 기회가 생성되면 트리거됩니다."
+ },
+ "superagentsApp.agentStudioPanel.triggerTypes.opportunity_status_changed.desc": {
+  "en": "Triggers when an opportunity changes status or pipeline stage.",
+  "ko": "기회의 상태 또는 파이프라인 단계가 변경되면 트리거됩니다."
+ },
+ "superagentsApp.agentStudioPanel.triggerTypes.survey_submission.desc": {
+  "en": "Triggers when a survey response is received.",
+  "ko": "설문 응답이 접수되면 트리거됩니다."
+ },
+ "superagentsApp.agentStudioPanel.triggerTypes.facebook_lead_gen.desc": {
+  "en": "Triggers when a contact submits a Facebook lead form.",
+  "ko": "연락처가 Facebook 리드 양식을 제출하면 트리거됩니다."
+ },
+ "copilotApp.copilot.alt.copilot": {
+  "en": "Copilot",
+  "ko": "Copilot"
+ },
+ "copilotApp.copilot.chat.intentAgent": {
+  "en": "🤖 {agent}",
+  "ko": "🤖 {agent}"
+ },
+ "copilotApp.copilot.askAi.welcome.brandVoices.honestTooth": {
+  "en": "Honest Tooth",
+  "ko": "Honest Tooth"
+ },
+ "copilotApp.copilot.askAi.chat.mermaid.label": {
+  "en": "Mermaid",
+  "ko": "Mermaid"
+ },
+ "copilotApp.copilot.askAi.chat.dispatchComposerLocked": {
+  "en": "Please continue the chat on the same dispatch channel ({channel})",
+  "ko": "동일한 디스패치 채널({channel})에서 채팅을 계속해 주세요"
+ },
+ "copilotApp.copilot.askAi.preview.common.html": {
+  "en": "HTML",
+  "ko": "HTML"
+ },
+ "copilotApp.copilot.askAi.preview.smsPlain.status": {
+  "en": "SMS",
+  "ko": "SMS"
+ },
+ "copilotApp.copilot.askAi.preview.smsPlain.inputPlaceholder": {
+  "en": "iMessage",
+  "ko": "iMessage"
+ },
+ "copilotApp.copilot.askAi.preview.social.instagram.accountName": {
+  "en": "your_account",
+  "ko": "your_account"
+ },
+ "copilotApp.copilot.askAi.preview.social.twitter.handle": {
+  "en": "@youraccount",
+  "ko": "@youraccount"
+ },
+ "copilotApp.copilot.askAi.preview.social.twitter.separator": {
+  "en": "·",
+  "ko": "·"
+ },
+ "copilotApp.copilot.askAi.footer.defaultVoiceName": {
+  "en": "Honest Tooth",
+  "ko": "Honest Tooth"
+ },
+ "copilotApp.copilot.askAi.artifacts.question.keyArrowUp": {
+  "en": "↑",
+  "ko": "↑"
+ },
+ "copilotApp.copilot.askAi.artifacts.question.keyArrowDown": {
+  "en": "↓",
+  "ko": "↓"
+ },
+ "copilotApp.copilot.askAi.artifacts.question.keyEsc": {
+  "en": "Esc",
+  "ko": "Esc"
+ },
+ "copilotApp.copilot.askAi.artifacts.question.hintSeparator": {
+  "en": "{'|'}",
+  "ko": "{'|'}"
+ },
+ "copilotApp.copilot.askAi.artifacts.question.hintPlus": {
+  "en": "+",
+  "ko": "+"
+ },
+ "copilotApp.copilot.askAi.schedule.detail.skillDisabledHint": {
+  "en": "This skill is disabled. Enable it to run or change the schedule.",
+  "ko": "이 스킬은 비활성화되어 있습니다. 실행하거나 일정을 변경하려면 활성화하세요."
+ },
+ "copilotApp.copilot.askAi.schedule.detail.loadingMore": {
+  "en": "...",
+  "ko": "..."
+ },
+ "copilotApp.copilot.askAi.schedule.crmTriggers": {
+  "en": "CRM triggers",
+  "ko": "CRM 트리거"
+ },
+ "copilotApp.copilot.askAi.schedule.loadFailed": {
+  "en": "Couldn't load scheduled tasks. Try again.",
+  "ko": "예약된 작업을 불러올 수 없습니다. 다시 시도해 주세요."
+ },
+ "copilotApp.copilot.askAi.customize.skills.skillFile": {
+  "en": "SKILL.md",
+  "ko": "SKILL.md"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.addLabel": {
+  "en": "Add CRM trigger",
+  "ko": "CRM 트리거 추가"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.addSchedule": {
+  "en": "Add schedule",
+  "ko": "일정 추가"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.askAiCommand": {
+  "en": "Ask AI slash command",
+  "ko": "Ask AI 슬래시 명령"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.askAiCommandDesc": {
+  "en": "Always on — run this skill from chat with a slash command.",
+  "ko": "항상 켜짐 — 채팅에서 슬래시 명령으로 이 스킬을 실행합니다."
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.hint": {
+  "en": "Also run this skill on CRM events (contact created, form submitted, …) or on a schedule.",
+  "ko": "CRM 이벤트(연락처 생성, 양식 제출 등) 또는 일정에 따라 이 스킬을 실행할 수도 있습니다."
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.agencyHint": {
+  "en": "At agency, only slash commands and schedule triggers are available. Open a sub-account for CRM event triggers.",
+  "ko": "에이전시에서는 슬래시 명령과 일정 트리거만 사용할 수 있습니다. CRM 이벤트 트리거를 사용하려면 서브 계정에서 열어 주세요."
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.openInScheduled": {
+  "en": "Open in Scheduled",
+  "ko": "예약됨 탭에서 열기"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.openInScheduledHint": {
+  "en": "View this schedule under Scheduled tasks (Run Now available).",
+  "ko": "예약된 작업에서 이 일정을 확인하세요(지금 실행 가능)."
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.createFailed": {
+  "en": "Couldn't add that trigger. Try again.",
+  "ko": "트리거를 추가할 수 없습니다. 다시 시도해 주세요."
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.loadFailed": {
+  "en": "Couldn't load triggers. Try again.",
+  "ko": "트리거를 불러올 수 없습니다. 다시 시도해 주세요."
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.scheduleExists": {
+  "en": "This skill already has a schedule.",
+  "ko": "이 스킬에는 이미 일정이 있습니다."
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.facebookRequiresIds": {
+  "en": "Select a Facebook page or at least one lead form.",
+  "ko": "Facebook 페이지 또는 리드 양식을 하나 이상 선택하세요."
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.noResults": {
+  "en": "No triggers match your search.",
+  "ko": "검색과 일치하는 트리거가 없습니다."
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.formIds": {
+  "en": "Form IDs",
+  "ko": "양식 ID"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.tagNames": {
+  "en": "Tag names",
+  "ko": "태그 이름"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.surveyIds": {
+  "en": "Survey IDs",
+  "ko": "설문 ID"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.calendarIds": {
+  "en": "Calendar IDs",
+  "ko": "캘린더 ID"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.searchCalendars": {
+  "en": "Search and select calendars...",
+  "ko": "캘린더 검색 및 선택..."
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.calendarsHint": {
+  "en": "Select at least one calendar. This skill runs only for appointments on the calendars you choose.",
+  "ko": "캘린더를 하나 이상 선택하세요. 이 스킬은 선택한 캘린더의 예약에 대해서만 실행됩니다."
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.statusesSelected": {
+  "en": "{count} statuses selected",
+  "ko": "{count}개 상태 선택됨"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.noCalendars": {
+  "en": "No calendars found for this location.",
+  "ko": "이 서브 계정에 캘린더가 없습니다."
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.noCalendarMatches": {
+  "en": "No calendars match your search.",
+  "ko": "검색과 일치하는 캘린더가 없습니다."
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.selectStatuses": {
+  "en": "Appointment statuses (optional)",
+  "ko": "예약 상태(선택 사항)"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.statusHint": {
+  "en": "Leave empty to run on any status change, or pick specific statuses to limit when this skill runs.",
+  "ko": "비워두면 모든 상태 변경 시 실행되며, 특정 상태를 선택하면 이 스킬이 실행되는 시점을 제한할 수 있습니다."
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.appointmentStatuses": {
+  "en": "Appointment statuses (optional)",
+  "ko": "예약 상태(선택 사항)"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.pageIdPaste": {
+  "en": "Or paste a page ID",
+  "ko": "또는 페이지 ID 붙여넣기"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.pageIdPlaceholder": {
+  "en": "Page ID — required if you do not pick lead forms",
+  "ko": "페이지 ID — 리드 양식을 선택하지 않는 경우 필수"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.facebookFormIds": {
+  "en": "Facebook lead forms",
+  "ko": "Facebook 리드 양식"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.cron": {
+  "en": "Cron expression",
+  "ko": "Cron 표현식"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.scheduleOnce": {
+  "en": "Once",
+  "ko": "한 번"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.idsPlaceholder": {
+  "en": "Comma-separated IDs",
+  "ko": "쉼표로 구분된 ID"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.formIdsPlaceholder": {
+  "en": "Comma-separated form IDs",
+  "ko": "쉼표로 구분된 양식 ID"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.surveyIdsPlaceholder": {
+  "en": "Comma-separated survey IDs",
+  "ko": "쉼표로 구분된 설문 ID"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.tagNamesPlaceholder": {
+  "en": "Comma-separated tag names",
+  "ko": "쉼표로 구분된 태그 이름"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.tagAction": {
+  "en": "When tag is",
+  "ko": "태그가 다음일 때"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.pipelines": {
+  "en": "Pipelines (optional)",
+  "ko": "파이프라인(선택 사항)"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.stages": {
+  "en": "Stages (optional)",
+  "ko": "단계(선택 사항)"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.opportunityStatuses": {
+  "en": "Opportunity statuses (optional)",
+  "ko": "기회 상태(선택 사항)"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.remove": {
+  "en": "Remove trigger",
+  "ko": "트리거 제거"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.loadingOptions": {
+  "en": "Loading options…",
+  "ko": "옵션 불러오는 중…"
+ },
+ "copilotApp.copilot.askAi.customize.skills.triggers.needsLocation": {
+  "en": "Open this skill in a sub-account to pick forms, tags, calendars, or surveys. You can still paste IDs below.",
+  "ko": "서브 계정에서 이 스킬을 열어 양식, 태그, 캘린더 또는 설문을 선택하세요. 아래에 ID를 붙여넣을 수도 있습니다."
+ },
+ "copilotApp.copilot.askAi.customize.skills.neverEdited": {
+  "en": "—",
+  "ko": "—"
+ },
+ "copilotApp.copilot.askAi.customize.dispatchTab": {
+  "en": "Dispatch",
+  "ko": "디스패치"
+ },
+ "copilotApp.copilot.askAi.models.groups.anthropic": {
+  "en": "Anthropic",
+  "ko": "Anthropic"
+ },
+ "copilotApp.copilot.askAi.models.groups.openai": {
+  "en": "OpenAI",
+  "ko": "OpenAI"
+ },
+ "copilotApp.copilot.askAi.models.groups.google": {
+  "en": "Google",
+  "ko": "Google"
+ },
+ "copilotApp.copilot.askAi.models.options.claudeSonnet46": {
+  "en": "Claude Sonnet 4.6",
+  "ko": "Claude Sonnet 4.6"
+ },
+ "copilotApp.copilot.askAi.models.options.sonnet46": {
+  "en": "Sonnet 4.6",
+  "ko": "Sonnet 4.6"
+ },
+ "copilotApp.copilot.askAi.models.options.gpt41": {
+  "en": "GPT 4.1",
+  "ko": "GPT 4.1"
+ },
+ "copilotApp.copilot.askAi.models.options.gemini25Flash": {
+  "en": "Gemini 2.5 Flash",
+  "ko": "Gemini 2.5 Flash"
+ },
+ "copilotApp.copilot.askAi.triggers.managerDesc": {
+  "en": "Skills with CRM event and schedule triggers — open a skill to see combined history and filter by trigger type.",
+  "ko": "CRM 이벤트 및 일정 트리거가 있는 스킬 — 스킬을 열어 통합 기록을 확인하고 트리거 유형별로 필터링하세요."
+ },
+ "copilotApp.copilot.askAi.triggers.noTriggers": {
+  "en": "No triggers yet",
+  "ko": "아직 트리거가 없습니다"
+ },
+ "copilotApp.copilot.askAi.triggers.noTriggersDesc": {
+  "en": "Add a CRM trigger on a skill in Customize to automate work when contacts, forms, or opportunities change.",
+  "ko": "커스터마이징에서 스킬에 CRM 트리거를 추가하여 연락처, 양식 또는 기회가 변경될 때 작업을 자동화하세요."
+ },
+ "copilotApp.copilot.askAi.triggers.loadFailed": {
+  "en": "Couldn't load triggers. Try again.",
+  "ko": "트리거를 불러올 수 없습니다. 다시 시도해 주세요."
+ },
+ "copilotApp.copilot.askAi.triggers.runCount": {
+  "en": "{count} runs",
+  "ko": "{count}회 실행"
+ },
+ "copilotApp.copilot.askAi.triggers.lastRun": {
+  "en": "Last run {time}",
+  "ko": "마지막 실행 {time}"
+ },
+ "copilotApp.copilot.askAi.triggers.triggerCount": {
+  "en": "{count} triggers",
+  "ko": "트리거 {count}개"
+ },
+ "copilotApp.copilot.askAi.triggers.triggerCountOne": {
+  "en": "1 trigger",
+  "ko": "트리거 1개"
+ },
+ "copilotApp.copilot.askAi.triggers.detail.allTriggers": {
+  "en": "All triggers",
+  "ko": "모든 트리거"
+ },
+ "copilotApp.copilot.askAi.triggers.detail.skillDetails": {
+  "en": "Skill details",
+  "ko": "스킬 상세정보"
+ },
+ "copilotApp.copilot.askAi.triggers.detail.viewSkill": {
+  "en": "View and edit skill",
+  "ko": "스킬 보기 및 편집"
+ },
+ "copilotApp.copilot.askAi.triggers.detail.scheduledTask": {
+  "en": "Scheduled task",
+  "ko": "예약된 작업"
+ },
+ "copilotApp.copilot.askAi.triggers.detail.viewScheduledTask": {
+  "en": "View schedule and Run now",
+  "ko": "일정 보기 및 지금 실행"
+ },
+ "copilotApp.copilot.askAi.triggers.detail.noSkillDescription": {
+  "en": "No skill content available yet.",
+  "ko": "아직 사용 가능한 스킬 콘텐츠가 없습니다."
+ },
+ "copilotApp.copilot.askAi.triggers.detail.lastStatus": {
+  "en": "Last status: {status}",
+  "ko": "마지막 상태: {status}"
+ },
+ "copilotApp.copilot.askAi.triggers.detail.deleteTrigger": {
+  "en": "Delete triggers",
+  "ko": "트리거 삭제"
+ },
+ "copilotApp.copilot.askAi.triggers.detail.deleteConfirmTitle": {
+  "en": "Delete triggers for this skill?",
+  "ko": "이 스킬의 트리거를 삭제하시겠습니까?"
+ },
+ "copilotApp.copilot.askAi.triggers.detail.deleteConfirmBody": {
+  "en": "This will remove {count} trigger(s) on \"{name}\" ({types}). Past run history stays available in sessions.",
+  "ko": "\"{name}\"({types})에 있는 {count}개의 트리거가 제거됩니다. 과거 실행 기록은 세션에서 계속 확인할 수 있습니다."
+ },
+ "copilotApp.copilot.askAi.triggers.detail.removeTrigger": {
+  "en": "Remove trigger",
+  "ko": "트리거 제거"
+ },
+ "copilotApp.copilot.askAi.triggers.detail.backToTrigger": {
+  "en": "Back to trigger",
+  "ko": "트리거로 돌아가기"
+ },
+ "copilotApp.copilot.askAi.triggers.detail.noHistoryForFilter": {
+  "en": "No runs for this trigger type.",
+  "ko": "이 트리거 유형에 대한 실행 기록이 없습니다."
+ },
+ "copilotApp.copilot.askAi.triggers.detail.noHistory": {
+  "en": "No CRM or schedule runs yet",
+  "ko": "아직 CRM 또는 일정 실행 기록이 없습니다"
+ },
+ "copilotApp.copilot.askAi.triggers.detail.slashDoesNotCount": {
+  "en": "Slash-command (/) runs from chat do not appear here — only CRM events and schedules do.",
+  "ko": "채팅에서 슬래시 명령(/)으로 실행한 내역은 여기에 표시되지 않습니다 — CRM 이벤트와 일정만 표시됩니다."
+ },
+ "copilotApp.copilot.askAi.dispatch.title": {
+  "en": "Dispatch",
+  "ko": "디스패치"
+ },
+ "copilotApp.copilot.askAi.dispatch.subtitle": {
+  "en": "Chat with your Ask AI copilot from your own messaging apps.",
+  "ko": "사용 중인 메시징 앱에서 Ask AI Copilot과 대화하세요."
+ },
+ "copilotApp.copilot.askAi.dispatch.pending": {
+  "en": "Pending verification",
+  "ko": "인증 대기 중"
+ },
+ "copilotApp.copilot.askAi.dispatch.appsHeading": {
+  "en": "Connected channels",
+  "ko": "연결된 채널"
+ },
+ "copilotApp.copilot.askAi.dispatch.selectChannel": {
+  "en": "Select a channel to view its connection details.",
+  "ko": "채널을 선택하여 연결 세부정보를 확인하세요."
+ },
+ "copilotApp.copilot.askAi.dispatch.viewSessions": {
+  "en": "View Dispatch Sessions",
+  "ko": "디스패치 세션 보기"
+ },
+ "copilotApp.copilot.askAi.dispatch.oneConnectionTitle": {
+  "en": "One number, one location",
+  "ko": "번호 하나, 서브 계정 하나"
+ },
+ "copilotApp.copilot.askAi.dispatch.oneConnectionNoteLocation": {
+  "en": "Only one WhatsApp number can be connected to this location at a time.",
+  "ko": "이 서브 계정에는 한 번에 하나의 WhatsApp 번호만 연결할 수 있습니다."
+ },
+ "copilotApp.copilot.askAi.dispatch.oneConnectionTitleAgency": {
+  "en": "One number, one agency",
+  "ko": "번호 하나, 에이전시 하나"
+ },
+ "copilotApp.copilot.askAi.dispatch.oneConnectionNoteAgency": {
+  "en": "Only one WhatsApp number can be connected to this agency at a time.",
+  "ko": "이 에이전시에는 한 번에 하나의 WhatsApp 번호만 연결할 수 있습니다."
+ },
+ "copilotApp.copilot.askAi.dispatch.connectedAs": {
+  "en": "Connected as {sender}",
+  "ko": "{sender}(으)로 연결됨"
+ },
+ "copilotApp.copilot.askAi.dispatch.pendingAs": {
+  "en": "Verifying {sender}",
+  "ko": "{sender} 인증 중"
+ },
+ "copilotApp.copilot.askAi.dispatch.pendingReasonWaitingMessage": {
+  "en": "Waiting for your first WhatsApp message",
+  "ko": "첫 WhatsApp 메시지를 기다리는 중"
+ },
+ "copilotApp.copilot.askAi.dispatch.pendingReasonCodeSent": {
+  "en": "Waiting for you to enter the verification code",
+  "ko": "인증 코드 입력을 기다리는 중"
+ },
+ "copilotApp.copilot.askAi.dispatch.pendingReasonExpired": {
+  "en": "Your verification code expired",
+  "ko": "인증 코드가 만료되었습니다"
+ },
+ "copilotApp.copilot.askAi.dispatch.phoneLabel": {
+  "en": "Your WhatsApp number",
+  "ko": "WhatsApp 번호"
+ },
+ "copilotApp.copilot.askAi.dispatch.phoneHint": {
+  "en": "Select your country, then enter your number without the country code.",
+  "ko": "국가를 선택한 후, 국가 코드 없이 번호를 입력하세요."
+ },
+ "copilotApp.copilot.askAi.dispatch.qrAlt": {
+  "en": "QR code to open a WhatsApp chat with the Ask AI bot",
+  "ko": "Ask AI 봇과의 WhatsApp 채팅을 여는 QR 코드"
+ },
+ "copilotApp.copilot.askAi.dispatch.hideQr": {
+  "en": "Hide QR code",
+  "ko": "QR 코드 숨기기"
+ },
+ "copilotApp.copilot.askAi.dispatch.showQrAgain": {
+  "en": "Show QR code again",
+  "ko": "QR 코드 다시 표시"
+ },
+ "copilotApp.copilot.askAi.dispatch.otpLabel": {
+  "en": "Verification code",
+  "ko": "인증 코드"
+ },
+ "copilotApp.copilot.askAi.dispatch.otpPlaceholder": {
+  "en": "123456",
+  "ko": "123456"
+ },
+ "copilotApp.copilot.askAi.dispatch.step1Title": {
+  "en": "Get your verification code on WhatsApp",
+  "ko": "WhatsApp으로 인증 코드 받기"
+ },
+ "copilotApp.copilot.askAi.dispatch.codeSentTitle": {
+  "en": "Verification code sent",
+  "ko": "인증 코드 전송됨"
+ },
+ "copilotApp.copilot.askAi.dispatch.qrStep1": {
+  "en": "Scan the QR code with your phone's camera",
+  "ko": "휴대폰 카메라로 QR 코드를 스캔하세요"
+ },
+ "copilotApp.copilot.askAi.dispatch.qrStep2": {
+  "en": "Tap to open a chat with our WhatsApp number",
+  "ko": "탭하여 WhatsApp 번호와 채팅을 시작하세요"
+ },
+ "copilotApp.copilot.askAi.dispatch.qrStep3": {
+  "en": "Send any message — we'll reply with your verification code",
+  "ko": "메시지를 보내주시면 인증 코드로 답장해 드립니다"
+ },
+ "copilotApp.copilot.askAi.dispatch.step1DoneHint": {
+  "en": "We sent a code to {sender} on WhatsApp.",
+  "ko": "WhatsApp으로 {sender}에 인증 코드를 보냈습니다."
+ },
+ "copilotApp.copilot.askAi.dispatch.step2Title": {
+  "en": "Enter your verification code",
+  "ko": "인증 코드를 입력하세요"
+ },
+ "copilotApp.copilot.askAi.dispatch.reverify": {
+  "en": "Re-verify",
+  "ko": "재인증"
+ },
+ "copilotApp.copilot.askAi.dispatch.reverifyBanner": {
+  "en": "This connection has expired and needs re-verification.",
+  "ko": "이 연결은 만료되어 재인증이 필요합니다."
+ },
+ "copilotApp.copilot.askAi.dispatch.reverifyFailed": {
+  "en": "Could not send a new code",
+  "ko": "새 코드를 보낼 수 없습니다"
+ },
+ "copilotApp.copilot.askAi.dispatch.disconnectFailed": {
+  "en": "Could not disconnect WhatsApp",
+  "ko": "WhatsApp 연결을 해제할 수 없습니다"
+ },
+ "copilotApp.copilot.askAi.dispatch.moveConfirm.title": {
+  "en": "Move WhatsApp number?",
+  "ko": "WhatsApp 번호를 이동하시겠습니까?"
+ },
+ "copilotApp.copilot.askAi.dispatch.moveConfirm.body": {
+  "en": "This WhatsApp number is currently connected to {location}. Do you want to disconnect it there and connect it here instead?",
+  "ko": "이 WhatsApp 번호는 현재 {location}에 연결되어 있습니다. 그곳에서 연결을 해제하고 여기에 대신 연결하시겠습니까?"
+ },
+ "copilotApp.copilot.askAi.dispatch.moveConfirm.anotherLocation": {
+  "en": "another location",
+  "ko": "다른 서브 계정"
+ },
+ "copilotApp.copilot.askAi.dispatch.moveConfirm.anotherAgency": {
+  "en": "another agency",
+  "ko": "다른 에이전시"
+ },
+ "copilotApp.copilot.askAi.dispatch.moveConfirm.confirm": {
+  "en": "Yes, move it here",
+  "ko": "예, 여기로 이동합니다"
+ },
+ "copilotApp.copilot.askAi.dispatch.ownedByAnotherUser.badge": {
+  "en": "Unauthorized",
+  "ko": "권한 없음"
+ },
+ "copilotApp.copilot.askAi.dispatch.ownedByAnotherUser.title": {
+  "en": "This number is already connected",
+  "ko": "이 번호는 이미 연결되어 있습니다"
+ },
+ "copilotApp.copilot.askAi.dispatch.ownedByAnotherUser.bodyLocation": {
+  "en": "This WhatsApp number is currently connected to another user in your location. Please ask that user to disconnect it, or connect a different number.",
+  "ko": "이 WhatsApp 번호는 현재 이 서브 계정의 다른 사용자에게 연결되어 있습니다. 해당 사용자에게 연결 해제를 요청하거나 다른 번호를 연결하세요."
+ },
+ "copilotApp.copilot.askAi.dispatch.ownedByAnotherUser.bodyAgency": {
+  "en": "This WhatsApp number is currently connected to another user in your agency. Please ask that user to disconnect it, or connect a different number.",
+  "ko": "이 WhatsApp 번호는 현재 에이전시의 다른 사용자에게 연결되어 있습니다. 해당 사용자에게 연결 해제를 요청하거나 다른 번호를 연결하세요."
+ },
+ "copilotApp.copilot.askAi.dispatch.ownedByAnotherUser.bodyUnspecified": {
+  "en": "This WhatsApp number is currently connected to another user. Please ask that user to disconnect it, or connect a different number.",
+  "ko": "이 WhatsApp 번호는 현재 다른 사용자에게 연결되어 있습니다. 해당 사용자에게 연결 해제를 요청하거나 다른 번호를 연결하세요."
+ },
+ "copilotApp.copilot.askAi.dispatch.whatsapp.description": {
+  "en": "Message your copilot from your personal WhatsApp number to ask questions, kick off tasks, and get replies right where you already chat.",
+  "ko": "개인 WhatsApp 번호로 Copilot에 메시지를 보내 질문하고, 작업을 시작하고, 이미 채팅하는 곳에서 바로 답변을 받아보세요."
+ },
+ "copilotApp.copilot.askAi.dispatch.sidebar.heading": {
+  "en": "Dispatch",
+  "ko": "디스패치"
+ },
+ "copilotApp.copilot.askAi.dispatch.sidebar.noConversations": {
+  "en": "No conversations yet",
+  "ko": "아직 대화가 없습니다"
+ },
+ "copilotApp.copilot.askAi.dispatch.sidebar.noConversationsMatch": {
+  "en": "No conversations match your filters.",
+  "ko": "필터와 일치하는 대화가 없습니다."
+ },
+ "copilotApp.copilot.askAi.dispatch.sidebar.loadError": {
+  "en": "Something went wrong loading conversations.",
+  "ko": "대화를 불러오는 중 문제가 발생했습니다."
+ },
+ "copilotApp.copilot.askAi.dispatch.sidebar.viewAllTitle": {
+  "en": "Dispatch conversations",
+  "ko": "디스패치 대화"
+ },
+ "copilotApp.copilot.askAi.dispatch.sidebar.senderLabel": {
+  "en": "Sender:",
+  "ko": "발신자:"
+ },
+ "copilotApp.copilot.askAi.dispatch.sidebar.searchPlaceholder": {
+  "en": "Search conversations",
+  "ko": "대화 검색"
+ },
+ "copilotApp.copilot.askAi.dispatch.sidebar.dispatchTypeLabel": {
+  "en": "Dispatch type",
+  "ko": "디스패치 유형"
+ },
+ "copilotApp.copilot.askAi.dispatch.toasts.connected": {
+  "en": "WhatsApp connected",
+  "ko": "WhatsApp 연결됨"
+ },
+ "copilotApp.copilot.askAi.dispatch.toasts.connectedBody": {
+  "en": "You can now chat with your Ask AI copilot right from WhatsApp.",
+  "ko": "이제 WhatsApp에서 바로 Ask AI Copilot과 채팅할 수 있습니다."
+ },
+ "copilotApp.copilot.askAi.dispatch.toasts.disconnected": {
+  "en": "WhatsApp disconnected",
+  "ko": "WhatsApp 연결 해제됨"
+ },
+ "copilotApp.copilot.askAi.dispatch.toasts.disconnectedBody": {
+  "en": "It will no longer respond to messages.",
+  "ko": "더 이상 메시지에 응답하지 않습니다."
+ },
+ "copilotApp.copilot.askAi.dispatch.toasts.toggleFailed": {
+  "en": "Could not update the channel",
+  "ko": "채널을 업데이트할 수 없습니다"
+ },
+ "copilotApp.copilot.welcome.copilotAlt": {
+  "en": "Copilot",
+  "ko": "Copilot"
+ },
+ "copilotApp.copilot.agentMapping.id": {
+  "en": "ID",
+  "ko": "ID"
+ },
+ "copilotApp.copilot.specialCharacters.1": {
+  "en": "1",
+  "ko": "1"
+ },
+ "copilotApp.copilot.specialCharacters.2": {
+  "en": "2",
+  "ko": "2"
+ },
+ "copilotApp.copilot.specialCharacters.3": {
+  "en": "3",
+  "ko": "3"
+ },
+ "copilotApp.copilot.specialCharacters.5": {
+  "en": "5",
+  "ko": "5"
+ },
+ "copilotApp.copilot.specialCharacters.500": {
+  "en": "500",
+  "ko": "500"
  }
 }

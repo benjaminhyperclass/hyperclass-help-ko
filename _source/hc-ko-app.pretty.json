@@ -1,9 +1,9 @@
 {
  "_meta": {
-  "version": "4.2.3",
-  "built": "2026-08-23",
-  "source": "crawl 310 routes + dashboard-ko + community v3 + legacy recovery + live audit 33 routes",
-  "strings": 102183
+  "version": "4.2.4",
+  "built": "2026-09-09",
+  "source": "crawl 310 routes + dashboard-ko + community v3 + legacy recovery + live audit 33 routes + superagentsApp/copilotApp gap 855 (2026-09-09)",
+  "strings": 103041
  },
  "host": {
   "accessibility": {
@@ -12096,7 +12096,8 @@
      "minimize": "최소화",
      "close": "닫기",
      "chevronDown": "펼치기",
-     "chevronUp": "접기"
+     "chevronUp": "접기",
+     "copilot": "Copilot"
     },
     "common": {
      "loadingAlt": "로딩 중",
@@ -12115,7 +12116,8 @@
       "october": "10월",
       "november": "11월",
       "december": "12월"
-     }
+     },
+     "notAvailable": "해당 없음"
     },
     "drawer": {
      "initializingConversation": "대화 초기화 중..."
@@ -12242,7 +12244,8 @@
      "selectDashboardTitle": "대시보드를 선택해 주세요",
      "dashboardSearchPlaceholder": "대시보드 검색 및 선택...",
      "selectDateRangeTitle": "날짜 범위를 선택해 주세요",
-     "noImageToUpload": "업로드할 이미지가 없습니다"
+     "noImageToUpload": "업로드할 이미지가 없습니다",
+     "intentAgent": "🤖 {agent}"
     },
     "askAi": {
      "title": "AI에게 문의",
@@ -12298,7 +12301,8 @@
       },
       "brandVoices": {
        "friendlyWarm": "친근하고 따뜻한",
-       "professional": "전문적인"
+       "professional": "전문적인",
+       "honestTooth": "Honest Tooth"
       },
       "brandVoiceLabel": "브랜드 보이스",
       "supportTitle": "안녕하세요 {userName}님, 무엇을 도와드릴까요?"
@@ -12460,19 +12464,22 @@
        "hintDragPan": "드래그하여 이동",
        "hintDoubleClickFit": "더블클릭하여 맞춤",
        "hintEscClose": "Esc 키로 닫기",
-       "fullscreenViewerAria": "Mermaid 다이어그램 전체 화면 뷰어"
+       "fullscreenViewerAria": "Mermaid 다이어그램 전체 화면 뷰어",
+       "label": "Mermaid"
       },
       "escalationLabel": "지원팀과 어떤 방식으로 연결하시겠습니까?",
       "escalationLabelHuman": "지원팀에 연락할 채널을 선택하세요.",
       "escalationLabelFrustration": "지원팀과 연결해 드릴 수 있습니다 — 원하시는 옵션을 선택하세요.",
       "startZoom": "Zoom 시작",
       "startChat": "채팅 시작",
-      "raiseTicket": "티켓 생성"
+      "raiseTicket": "티켓 생성",
+      "dispatchComposerLocked": "동일한 디스패치 채널({channel})에서 채팅을 계속해 주세요"
      },
      "preview": {
       "common": {
        "preview": "미리보기",
-       "copied": "복사되었습니다!"
+       "copied": "복사되었습니다!",
+       "html": "HTML"
       },
       "panel": {
        "backToChat": "채팅으로 돌아가기",
@@ -12519,7 +12526,9 @@
        }
       },
       "smsPlain": {
-       "recipient": "수신자"
+       "recipient": "수신자",
+       "status": "SMS",
+       "inputPlaceholder": "iMessage"
       },
       "smsWhatsapp": {
        "recipient": "수신자",
@@ -12536,7 +12545,8 @@
         "share": "공유"
        },
        "instagram": {
-        "likes": "좋아요 0개"
+        "likes": "좋아요 0개",
+        "accountName": "your_account"
        },
        "linkedin": {
         "profileName": "내 프로필",
@@ -12548,13 +12558,17 @@
         "send": "보내기"
        },
        "twitter": {
-        "accountName": "내 계정"
+        "accountName": "내 계정",
+        "relativeTime": "2시간 전",
+        "handle": "@youraccount",
+        "separator": "·"
        }
       }
      },
      "footer": {
       "placeholder": "무엇이든 계획하고, 구축하고, 수정하세요...",
-      "brandVoice": "브랜드 보이스"
+      "brandVoice": "브랜드 보이스",
+      "defaultVoiceName": "Honest Tooth"
      },
      "system": {
       "fallbackSessionTitle": "채팅 {id}",
@@ -12647,7 +12661,12 @@
        "rankMoveDown": "아래로 이동",
        "sendCustomAnswer": "사용자 지정 답변 보내기",
        "applyCustomColor": "색상 적용",
-       "keyEnter": "입력"
+       "keyEnter": "입력",
+       "keyArrowUp": "↑",
+       "keyArrowDown": "↓",
+       "keyEsc": "Esc",
+       "hintSeparator": "{'|'}",
+       "hintPlus": "+"
       },
       "card": {
        "untitled": "제목 없음",
@@ -12824,7 +12843,9 @@
        "pauseTask": "일시정지",
        "resumeTask": "다시 시작",
        "loadMore": "더 보기",
-       "unread": "읽지 않음"
+       "unread": "읽지 않음",
+       "skillDisabledHint": "이 스킬은 비활성화되어 있습니다. 실행하거나 일정을 변경하려면 활성화하세요.",
+       "loadingMore": "..."
       },
       "form": {
        "createTitle": "예약된 작업 만들기",
@@ -12848,7 +12869,10 @@
        "validationPromptRequired": "프롬프트는 필수입니다",
        "errorGeneric": "문제가 발생했습니다. 다시 시도해 주세요.",
        "errorTitle": "예약된 작업을 업데이트할 수 없습니다"
-      }
+      },
+      "noTriggerRuns": "아직 실행 내역이 없습니다",
+      "crmTriggers": "CRM 트리거",
+      "loadFailed": "예약된 작업을 불러올 수 없습니다. 다시 시도해 주세요."
      },
      "connectors": {
       "sidebarLabel": "커넥터",
@@ -12917,9 +12941,80 @@
        "unsavedTitle": "저장하지 않은 변경사항을 버리시겠습니까?",
        "unsavedMessage": "저장하지 않은 편집 내용이 있습니다. 지금 뒤로 가면 변경사항이 사라집니다.",
        "unsavedConfirm": "변경사항 취소",
-       "unsavedKeep": "계속 편집"
+       "unsavedKeep": "계속 편집",
+       "triggers": {
+        "add": "트리거 추가",
+        "addForm": "양식 추가",
+        "addSurvey": "설문 추가",
+        "search": "트리거 검색",
+        "selectCalendars": "캘린더 선택",
+        "calendarsSelected": "캘린더 {count}개 선택됨",
+        "appointmentStatus": {
+         "new": "신규",
+         "confirmed": "확인됨",
+         "cancelled": "취소됨",
+         "showed": "출석",
+         "noshow": "노쇼",
+         "invalid": "유효하지 않음"
+        },
+        "pageId": "Facebook 페이지",
+        "scheduleMode": "일정",
+        "scheduleInterval": "간격",
+        "startDate": "시작일",
+        "startTime": "시작 시간",
+        "intervalValue": "매",
+        "intervalUnit": "단위",
+        "tagAdded": "추가됨",
+        "tagRemoved": "제거됨",
+        "addLabel": "CRM 트리거 추가",
+        "addSchedule": "일정 추가",
+        "askAiCommand": "Ask AI 슬래시 명령",
+        "askAiCommandDesc": "항상 켜짐 — 채팅에서 슬래시 명령으로 이 스킬을 실행합니다.",
+        "hint": "CRM 이벤트(연락처 생성, 양식 제출 등) 또는 일정에 따라 이 스킬을 실행할 수도 있습니다.",
+        "agencyHint": "에이전시에서는 슬래시 명령과 일정 트리거만 사용할 수 있습니다. CRM 이벤트 트리거를 사용하려면 서브 계정에서 열어 주세요.",
+        "openInScheduled": "예약됨 탭에서 열기",
+        "openInScheduledHint": "예약된 작업에서 이 일정을 확인하세요(지금 실행 가능).",
+        "createFailed": "트리거를 추가할 수 없습니다. 다시 시도해 주세요.",
+        "loadFailed": "트리거를 불러올 수 없습니다. 다시 시도해 주세요.",
+        "scheduleExists": "이 스킬에는 이미 일정이 있습니다.",
+        "facebookRequiresIds": "Facebook 페이지 또는 리드 양식을 하나 이상 선택하세요.",
+        "noResults": "검색과 일치하는 트리거가 없습니다.",
+        "formIds": "양식 ID",
+        "tagNames": "태그 이름",
+        "surveyIds": "설문 ID",
+        "calendarIds": "캘린더 ID",
+        "searchCalendars": "캘린더 검색 및 선택...",
+        "calendarsHint": "캘린더를 하나 이상 선택하세요. 이 스킬은 선택한 캘린더의 예약에 대해서만 실행됩니다.",
+        "statusesSelected": "{count}개 상태 선택됨",
+        "noCalendars": "이 서브 계정에 캘린더가 없습니다.",
+        "noCalendarMatches": "검색과 일치하는 캘린더가 없습니다.",
+        "selectStatuses": "예약 상태(선택 사항)",
+        "statusHint": "비워두면 모든 상태 변경 시 실행되며, 특정 상태를 선택하면 이 스킬이 실행되는 시점을 제한할 수 있습니다.",
+        "appointmentStatuses": "예약 상태(선택 사항)",
+        "pageIdPaste": "또는 페이지 ID 붙여넣기",
+        "pageIdPlaceholder": "페이지 ID — 리드 양식을 선택하지 않는 경우 필수",
+        "facebookFormIds": "Facebook 리드 양식",
+        "cron": "Cron 표현식",
+        "scheduleOnce": "한 번",
+        "idsPlaceholder": "쉼표로 구분된 ID",
+        "formIdsPlaceholder": "쉼표로 구분된 양식 ID",
+        "surveyIdsPlaceholder": "쉼표로 구분된 설문 ID",
+        "tagNamesPlaceholder": "쉼표로 구분된 태그 이름",
+        "tagAction": "태그가 다음일 때",
+        "pipelines": "파이프라인(선택 사항)",
+        "stages": "단계(선택 사항)",
+        "opportunityStatuses": "기회 상태(선택 사항)",
+        "remove": "트리거 제거",
+        "loadingOptions": "옵션 불러오는 중…",
+        "needsLocation": "서브 계정에서 이 스킬을 열어 양식, 태그, 캘린더 또는 설문을 선택하세요. 아래에 ID를 붙여넣을 수도 있습니다."
+       },
+       "skillFile": "SKILL.md",
+       "neverEdited": "—"
       },
-      "sidebarLabel": "커스터마이징"
+      "sidebarLabel": "커스터마이징",
+      "triggersTab": "트리거",
+      "scheduledTab": "예약됨",
+      "dispatchTab": "디스패치"
      },
      "templates": {
       "sidebarLabel": "템플릿",
@@ -13085,6 +13180,156 @@
       },
       "menuGroup": "스킬",
       "manage": "스킬 관리"
+     },
+     "triggers": {
+      "manageTriggers": "트리거",
+      "managerTitle": "트리거",
+      "addTrigger": "트리거 추가",
+      "moreTriggers": "+{count}개 더 보기",
+      "detail": {
+       "summary": "요약",
+       "enabled": "활성화됨",
+       "triggerType": "트리거",
+       "deleting": "삭제 중...",
+       "historyFilterAll": "전체",
+       "status": {
+        "queued": "대기 중",
+        "running": "실행 중",
+        "completed": "완료",
+        "failed": "실패",
+        "skipped": "건너뜀"
+       },
+       "allTriggers": "모든 트리거",
+       "skillDetails": "스킬 상세정보",
+       "viewSkill": "스킬 보기 및 편집",
+       "scheduledTask": "예약된 작업",
+       "viewScheduledTask": "일정 보기 및 지금 실행",
+       "noSkillDescription": "아직 사용 가능한 스킬 콘텐츠가 없습니다.",
+       "lastStatus": "마지막 상태: {status}",
+       "deleteTrigger": "트리거 삭제",
+       "deleteConfirmTitle": "이 스킬의 트리거를 삭제하시겠습니까?",
+       "deleteConfirmBody": "\"{name}\"({types})에 있는 {count}개의 트리거가 제거됩니다. 과거 실행 기록은 세션에서 계속 확인할 수 있습니다.",
+       "removeTrigger": "트리거 제거",
+       "backToTrigger": "트리거로 돌아가기",
+       "noHistoryForFilter": "이 트리거 유형에 대한 실행 기록이 없습니다.",
+       "noHistory": "아직 CRM 또는 일정 실행 기록이 없습니다",
+       "slashDoesNotCount": "채팅에서 슬래시 명령(/)으로 실행한 내역은 여기에 표시되지 않습니다 — CRM 이벤트와 일정만 표시됩니다."
+      },
+      "managerDesc": "CRM 이벤트 및 일정 트리거가 있는 스킬 — 스킬을 열어 통합 기록을 확인하고 트리거 유형별로 필터링하세요.",
+      "noTriggers": "아직 트리거가 없습니다",
+      "noTriggersDesc": "커스터마이징에서 스킬에 CRM 트리거를 추가하여 연락처, 양식 또는 기회가 변경될 때 작업을 자동화하세요.",
+      "loadFailed": "트리거를 불러올 수 없습니다. 다시 시도해 주세요.",
+      "runCount": "{count}회 실행",
+      "lastRun": "마지막 실행 {time}",
+      "triggerCount": "트리거 {count}개",
+      "triggerCountOne": "트리거 1개"
+     },
+     "dispatch": {
+      "connected": "연결됨",
+      "connectWhatsApp": "WhatsApp 연결",
+      "continueButton": "계속",
+      "verify": "인증",
+      "resendCode": "코드 재전송",
+      "cancel": "취소",
+      "disconnect": "연결 해제",
+      "pendingContinue": "계속",
+      "reverifyExpiredStatus": "만료됨",
+      "ownedByAnotherUser": {
+       "dismiss": "확인",
+       "badge": "권한 없음",
+       "title": "이 번호는 이미 연결되어 있습니다",
+       "bodyLocation": "이 WhatsApp 번호는 현재 이 서브 계정의 다른 사용자에게 연결되어 있습니다. 해당 사용자에게 연결 해제를 요청하거나 다른 번호를 연결하세요.",
+       "bodyAgency": "이 WhatsApp 번호는 현재 에이전시의 다른 사용자에게 연결되어 있습니다. 해당 사용자에게 연결 해제를 요청하거나 다른 번호를 연결하세요.",
+       "bodyUnspecified": "이 WhatsApp 번호는 현재 다른 사용자에게 연결되어 있습니다. 해당 사용자에게 연결 해제를 요청하거나 다른 번호를 연결하세요."
+      },
+      "whatsapp": {
+       "name": "WhatsApp",
+       "description": "개인 WhatsApp 번호로 Copilot에 메시지를 보내 질문하고, 작업을 시작하고, 이미 채팅하는 곳에서 바로 답변을 받아보세요."
+      },
+      "sidebar": {
+       "loadMore": "더 보기",
+       "loadingMore": "불러오는 중…",
+       "retry": "재시도",
+       "conversationsHeading": "대화",
+       "sourceLabel": "소스:",
+       "backToChat": "뒤로",
+       "todayAt": "오늘 {time}",
+       "sortByCreated": "정렬",
+       "sortNewestFirst": "최신순",
+       "sortOldestFirst": "오래된순",
+       "heading": "디스패치",
+       "noConversations": "아직 대화가 없습니다",
+       "noConversationsMatch": "필터와 일치하는 대화가 없습니다.",
+       "loadError": "대화를 불러오는 중 문제가 발생했습니다.",
+       "viewAllTitle": "디스패치 대화",
+       "senderLabel": "발신자:",
+       "searchPlaceholder": "대화 검색",
+       "dispatchTypeLabel": "디스패치 유형"
+      },
+      "errors": {
+       "title": "문제가 발생했습니다",
+       "retry": "다시 시도해 주세요."
+      },
+      "title": "디스패치",
+      "subtitle": "사용 중인 메시징 앱에서 Ask AI Copilot과 대화하세요.",
+      "pending": "인증 대기 중",
+      "appsHeading": "연결된 채널",
+      "selectChannel": "채널을 선택하여 연결 세부정보를 확인하세요.",
+      "viewSessions": "디스패치 세션 보기",
+      "oneConnectionTitle": "번호 하나, 서브 계정 하나",
+      "oneConnectionNoteLocation": "이 서브 계정에는 한 번에 하나의 WhatsApp 번호만 연결할 수 있습니다.",
+      "oneConnectionTitleAgency": "번호 하나, 에이전시 하나",
+      "oneConnectionNoteAgency": "이 에이전시에는 한 번에 하나의 WhatsApp 번호만 연결할 수 있습니다.",
+      "connectedAs": "{sender}(으)로 연결됨",
+      "pendingAs": "{sender} 인증 중",
+      "pendingReasonWaitingMessage": "첫 WhatsApp 메시지를 기다리는 중",
+      "pendingReasonCodeSent": "인증 코드 입력을 기다리는 중",
+      "pendingReasonExpired": "인증 코드가 만료되었습니다",
+      "phoneLabel": "WhatsApp 번호",
+      "phoneHint": "국가를 선택한 후, 국가 코드 없이 번호를 입력하세요.",
+      "qrAlt": "Ask AI 봇과의 WhatsApp 채팅을 여는 QR 코드",
+      "hideQr": "QR 코드 숨기기",
+      "showQrAgain": "QR 코드 다시 표시",
+      "otpLabel": "인증 코드",
+      "otpPlaceholder": "123456",
+      "step1Title": "WhatsApp으로 인증 코드 받기",
+      "codeSentTitle": "인증 코드 전송됨",
+      "qrStep1": "휴대폰 카메라로 QR 코드를 스캔하세요",
+      "qrStep2": "탭하여 WhatsApp 번호와 채팅을 시작하세요",
+      "qrStep3": "메시지를 보내주시면 인증 코드로 답장해 드립니다",
+      "step1DoneHint": "WhatsApp으로 {sender}에 인증 코드를 보냈습니다.",
+      "step2Title": "인증 코드를 입력하세요",
+      "reverify": "재인증",
+      "reverifyBanner": "이 연결은 만료되어 재인증이 필요합니다.",
+      "reverifyFailed": "새 코드를 보낼 수 없습니다",
+      "disconnectFailed": "WhatsApp 연결을 해제할 수 없습니다",
+      "moveConfirm": {
+       "title": "WhatsApp 번호를 이동하시겠습니까?",
+       "body": "이 WhatsApp 번호는 현재 {location}에 연결되어 있습니다. 그곳에서 연결을 해제하고 여기에 대신 연결하시겠습니까?",
+       "anotherLocation": "다른 서브 계정",
+       "anotherAgency": "다른 에이전시",
+       "confirm": "예, 여기로 이동합니다"
+      },
+      "toasts": {
+       "connected": "WhatsApp 연결됨",
+       "connectedBody": "이제 WhatsApp에서 바로 Ask AI Copilot과 채팅할 수 있습니다.",
+       "disconnected": "WhatsApp 연결 해제됨",
+       "disconnectedBody": "더 이상 메시지에 응답하지 않습니다.",
+       "toggleFailed": "채널을 업데이트할 수 없습니다"
+      }
+     },
+     "models": {
+      "groups": {
+       "anthropic": "Anthropic",
+       "openai": "OpenAI",
+       "google": "Google"
+      },
+      "options": {
+       "claudeSonnet46": "Claude Sonnet 4.6",
+       "sonnet46": "Sonnet 4.6",
+       "gpt41": "GPT 4.1",
+       "gemini25Flash": "Gemini 2.5 Flash"
+      }
      }
     },
     "feedback": {
@@ -13128,7 +13373,8 @@
      }
     },
     "welcome": {
-     "infoAlt": "정보 아이콘"
+     "infoAlt": "정보 아이콘",
+     "copilotAlt": "Copilot"
     },
     "suggestions": {
      "usagePlan": {
@@ -13209,7 +13455,8 @@
      "selectedLocation": "선택된 위치",
      "selectedAgent": "선택된 에이전트",
      "active": "활성",
-     "inputVariable": "입력 변수"
+     "inputVariable": "입력 변수",
+     "id": "ID"
     },
     "configuration": {
      "productTitle": "AI 구성",
@@ -13310,6 +13557,11 @@
       "vibrantUnique": "바이브런트 & 유니크",
       "passionatePowerful": "패셔네이트 & 파워풀",
       "confidentClassic": "컨피던트 & 클래식"
+     },
+     "community": {
+      "royalVelvet": "로열 벨벳",
+      "azureDreams": "애저 드림스",
+      "midnightDeep": "미드나이트 딥"
      }
     },
     "evaluation": {
@@ -13365,6 +13617,13 @@
       "status": "상태",
       "timestamp": "타임스탬프"
      }
+    },
+    "specialCharacters": {
+     "1": "1",
+     "2": "2",
+     "3": "3",
+     "5": "5",
+     "500": "500"
     }
    }
   },
@@ -53887,6 +54146,814 @@
     "successTitle": "템플릿이 설치되었습니다",
     "successDescription": "템플릿을 사용할 준비가 되었습니다. 브랜드와 비즈니스 목표에 맞게 사용자 지정을 시작하세요.",
     "errorDescription": "템플릿 설치에 실패했습니다!"
+   }
+  },
+  "superagentsApp": {
+   "skillPicker": {
+    "title": "스킬",
+    "loading": "스킬 불러오는 중…",
+    "loadingMore": "스킬을 더 불러오는 중…",
+    "loadError": "스킬을 불러올 수 없습니다. 잠시 후 다시 시도해 주세요.",
+    "noSkills": "사용 가능한 스킬이 없습니다",
+    "noSearchMatch": "\"{query}\"와(과) 일치하는 스킬이 없습니다"
+   },
+   "builderWelcome": {
+    "send": "보내기",
+    "useCaseTitle": "사용 사례에서 시작",
+    "unsavedChangesTitle": "게시되지 않은 변경사항",
+    "stay": "유지",
+    "publish": "게시",
+    "back": "뒤로",
+    "welcomeTitle": "나만의 에이전트 만들기",
+    "welcomeSubtitle": "에이전트가 무엇을 하길 원하는지 설명하거나, 오른쪽에서 템플릿을 선택하세요.",
+    "tryPromptsLabel": "다음 중 하나를 시도해 보세요",
+    "composerPlaceholder": "에이전트가 해야 할 일을 설명하세요...",
+    "loadingAgent": "에이전트를 불러오는 중…",
+    "useCaseSubtitle": "미리 연결된 채널과 도구입니다. 선택 후 자유롭게 수정하세요.",
+    "unsavedChangesBody": "이 에이전트에 게시되지 않은 변경 사항이 있습니다 — 임시 저장본은 보존되지만, 게시하기 전까지 실제 버전에는 반영되지 않습니다.",
+    "leaveAnyway": "그래도 나가기",
+    "buildingAgent": "에이전트를 만드는 중...",
+    "answerToContinue": "계속하려면 빌더의 질문에 답하세요",
+    "chatEmptyTitle": "채팅으로 이 에이전트 편집",
+    "chatEmptyBody": "변경하고 싶은 내용을 설명하면 빌더가 에이전트를 업데이트합니다.",
+    "chatEmptyHint": "“새 양식 제출에 대한 트리거 추가” 또는 “톤을 더 친근하게 바꿔줘”를 시도해 보세요."
+   },
+   "builderCursor": {
+    "thinking": "생각 중…",
+    "identity": "프로필 업데이트 중",
+    "systemPrompt": "지침 작성 중",
+    "tools": "기능 활성화 중",
+    "knowledgeBases": "지식 연결 중",
+    "triggers": "트리거 설정 중",
+    "plugins": "앱 구성 중",
+    "customApi": "API 호출 추가 중",
+    "saving": "에이전트를 저장하는 중…"
+   },
+   "chatNotice": {
+    "connect": "연결",
+    "notConnected": "{app}이(가) 아직 연결되지 않았습니다 — 이 에이전트가 사용할 수 있도록 연결하세요.",
+    "connected": "{app}이(가) 연결되었습니다."
+   },
+   "testPanel": {
+    "title": "에이전트 테스트하기",
+    "resetConversation": "대화 초기화",
+    "reset": "초기화",
+    "closePanel": "패널 닫기",
+    "close": "닫기",
+    "thinking": "생각 중",
+    "running": "실행 중",
+    "selectContact": "연락처 선택",
+    "subStatus": "{name} · {status}",
+    "publishFirst": "에이전트를 테스트하려면 먼저 게시해 주세요.",
+    "toolsUsed": "사용된 도구 · {count}",
+    "testWithContact": "연락처로 테스트",
+    "testWithChat": "채팅 메시지로 테스트",
+    "testWithSelectedContact": "선택한 연락처로 에이전트 테스트"
+   },
+   "chatLayer": {
+    "agents": "에이전트",
+    "downloadMedia": "다운로드",
+    "openMediaInNewTab": "새 탭에서 열기",
+    "downloadFile": "파일 다운로드",
+    "closeLightbox": "닫기",
+    "previousImage": "이전 이미지",
+    "nextImage": "다음 이미지",
+    "dismiss": "닫기",
+    "activity": "활동",
+    "memory": "메모리",
+    "comingSoon": "출시 예정",
+    "noActivityTitle": "아직 활동이 없습니다",
+    "chat": "채팅",
+    "trigger": "트리거",
+    "appointment": "예약",
+    "mediaImage": "이미지",
+    "mediaAudio": "오디오",
+    "mediaVideo": "동영상",
+    "mediaFile": "파일",
+    "completed": "완료",
+    "failed": "실패",
+    "blocked": "한도 도달",
+    "skipped": "건너뜀",
+    "back": "뒤로",
+    "newConversation": "새 대화",
+    "thinking": "생각 중",
+    "done": "완료",
+    "copy": "복사",
+    "copied": "복사됨",
+    "sources": "출처",
+    "queued": "대기 중",
+    "runStatus": "상태",
+    "runType": "트리거",
+    "runDuration": "소요 시간",
+    "runTimeline": "타임라인",
+    "runError": "오류",
+    "ctxContact": "연락처",
+    "ctxTagsAdded": "추가된 태그",
+    "ctxTagsRemoved": "제거된 태그",
+    "ctxForm": "양식",
+    "generatedImageAlt": "생성된 이미지",
+    "mediaUnavailable": "미디어를 사용할 수 없습니다",
+    "bgRunDone": "{name}이(가) 응답했습니다",
+    "bgRunFailed": "{name}이(가) 완료하지 못했습니다",
+    "editAgent": "에이전트 편집",
+    "askPlaceholder": "{name}에게 메시지…",
+    "soon": "출시 예정",
+    "activityPreviewNote": "미리보기 — 대화와 트리거 실행 내역이 곧 여기에 표시됩니다.",
+    "loadingActivity": "활동을 불러오는 중…",
+    "loadingConversation": "대화를 불러오는 중",
+    "noActivityBody": "이 에이전트와의 대화 및 트리거 실행 내역이 여기에 표시됩니다.",
+    "usageLimitTitle": "Managed Agents 사용 한도에 도달했습니다.",
+    "usageLimitBody": "이 서브 계정이 Managed Agents 사용 허용량에 도달했습니다. 새로운 채팅 및 트리거 실행이 일시적으로 차단됩니다.",
+    "usageLimitResumeAt": "{time} 이후 실행이 재개됩니다.",
+    "usageLimitResumeUnknown": "서브 계정의 사용 허용량이 다시 확보되면 실행이 재개됩니다.",
+    "productDisabledTitle": "이 서브 계정에서는 Managed Agents가 활성화되어 있지 않습니다.",
+    "productDisabledBody": "이 서브 계정에서 Managed Agents가 활성화되기 전까지 채팅 및 트리거 실행을 사용할 수 없습니다.",
+    "inactiveLocationTitle": "이 서브 계정은 비활성 상태입니다.",
+    "inactiveAgencyTitle": "이 에이전시는 비활성 상태입니다.",
+    "inactiveBody": "비활성 상태에서는 Managed Agents 실행을 사용할 수 없습니다.",
+    "memoryTitle": "이 에이전트가 기억하는 내용",
+    "memoryBody": "대화 전반에 걸쳐 에이전트가 유지하는 지속적인 정보 — 선호 사항, 주요 연락처, 반복되는 맥락입니다. {name}에 대해 아직 저장된 내용이 없습니다.",
+    "running": "실행 중…",
+    "closeSources": "출처 닫기",
+    "runDetailTitle": "트리거 실행",
+    "loadingRun": "실행 내역을 불러오는 중…",
+    "runNotFound": "이 실행 내역을 찾을 수 없습니다.",
+    "runTriggered": "트리거됨",
+    "tlQueued": "작업 대기 중",
+    "tlStarted": "에이전트 시작됨",
+    "tlRunning": "에이전트 실행 중",
+    "tlCompleted": "에이전트 완료됨",
+    "tlFailed": "에이전트 실패함",
+    "tlSubQueuedBy": "{who}이(가) 트리거함",
+    "tlSubQueuedForm": "양식 제출로 트리거됨",
+    "tlSubQueuedTag": "태그 변경으로 트리거됨",
+    "tlSubQueuedSchedule": "예약된 일정으로 트리거됨",
+    "tlSubQueuedGeneric": "트리거 수신됨",
+    "tlSubPicked": "실행이 시작되었습니다",
+    "tlSubRunning": "작업을 처리하는 중",
+    "tlSubCompleted": "{duration} 만에 완료됨",
+    "tlSubCompletedGeneric": "성공적으로 완료됨",
+    "tlSubFailed": "실행이 완료되지 않았습니다",
+    "runContext": "트리거 컨텍스트",
+    "viewInLogs": "에이전트 로그에서 보기"
+   },
+   "singleAgentBuilder": {
+    "createOption": {
+     "title": "AI 에이전트",
+     "description": "자연어로 만드세요. 원하는 내용을 설명하면 AI가 에이전트를 구성합니다.",
+     "defaultName": "내 AI 에이전트",
+     "defaultDescription": "자연어로 만든 AI 에이전트"
+    },
+    "header": {
+     "namePlaceholder": "제목 없는 에이전트",
+     "save": "저장",
+     "publish": "게시",
+     "allTemplates": "모든 템플릿"
+    },
+    "status": {
+     "draft": "임시 저장",
+     "published": "게시됨",
+     "staging": "스테이징",
+     "saving": "저장 중...",
+     "saved": "모든 변경사항이 저장되었습니다"
+    },
+    "identity": {
+     "untitled": "제목 없는 에이전트",
+     "noDescription": "아직 설명이 없습니다. AI 빌더와 채팅하여 에이전트를 설명해 보세요."
+    },
+    "chat": {
+     "eyebrow": "AI 빌더",
+     "newConversation": "새 대화",
+     "thinking": "생각 중...",
+     "hint": "빠른 프롬프트로 시작하거나 직접 원하는 작업을 설명해 보세요.",
+     "emptyTitle": "에이전트 설명하기",
+     "emptySubtitle": "에이전트가 무엇을 하길 원하는지 알려주시면 제가 설정해 드릴게요.",
+     "quickStartsLabel": "빠른 시작:",
+     "placeholder": "에이전트에 대해 질문하거나 편집하세요...",
+     "building": "에이전트를 만드는 중...",
+     "buildComplete": "생성 완료"
+    },
+    "sections": {
+     "instructions": "지침",
+     "channels": "채널",
+     "actions": "액션",
+     "toolbox": "도구",
+     "plugins": "플러그인",
+     "skills": "스킬",
+     "triggers": "일정 및 트리거",
+     "subAgents": "서브 에이전트",
+     "knowledge": "지식",
+     "model": "모델 설정",
+     "test": "에이전트 테스트"
+    },
+    "test": {
+     "newConversation": "새 대화",
+     "thinking": "생각 중",
+     "thoughtProcess": "사고 과정",
+     "thoughtFor": "{seconds}초 동안 생각함",
+     "subtitle": "빌더를 벗어나지 않고 현재 에이전트 동작을 미리 볼 수 있습니다.",
+     "emptyMessage": "에이전트를 테스트하려면 메시지를 보내세요",
+     "placeholder": "테스트 메시지를 입력하세요...",
+     "responding": "에이전트가 응답 중입니다...",
+     "collapsePanel": "패널 접기"
+    },
+    "actions": {
+     "add": "추가"
+    },
+    "actionsConfig": {
+     "addAction": "액션 추가",
+     "editAction": "액션 편집",
+     "modalTitle": "액션 찾아보기",
+     "modalDescription": "Agent Studio에서 전체 Actions Platform 모달을 불러와 액션을 추가하거나 편집하세요.",
+     "platformLabel": "Actions Platform"
+    },
+    "triggersConfig": {
+     "selectType": "트리거 선택",
+     "addTrigger": "트리거 추가"
+    },
+    "toolboxConfig": {
+     "allApps": "전체 앱",
+     "actions": "액션",
+     "addTool": "도구 추가",
+     "searchApps": "앱 검색...",
+     "searchIn": "{app}에서 검색",
+     "noToolsFound": "도구를 찾을 수 없습니다",
+     "hint": "여기에 없는 도구는 빌더 채팅에 요청하면 가장 가까운 항목을 제안해 드립니다."
+    },
+    "skillsConfig": {
+     "addSkill": "스킬 추가",
+     "tools": "도구",
+     "settings": "설정",
+     "searchPlaceholder": "검색...",
+     "filterAll": "전체",
+     "filterApps": "앱",
+     "allApps": "전체 앱",
+     "added": "추가됨",
+     "noAppsFound": "앱을 찾을 수 없습니다",
+     "custom": "커스텀",
+     "importAction": "가져오기",
+     "customDescription": "설명",
+     "removeApp": "이 앱의 모든 도구 제거",
+     "searchApps": "앱 검색...",
+     "searchInApp": "{app}에서 검색",
+     "mostUsed": "가장 많이 사용된 앱",
+     "addAllTools": "{app}의 모든 도구 추가",
+     "noToolsFound": "도구를 찾을 수 없습니다",
+     "skillNotSupported": "지원되지 않는 스킬인가요? 요청해 보세요.",
+     "requestNewTool": "새 도구 요청",
+     "thirdParty": "타사",
+     "builtIn": "내장",
+     "searchMarketplace": "스킬 검색...",
+     "marketplaceHint": "타사 제공업체 및 외부 카탈로그에서 재사용 가능한 스킬을 가져오세요.",
+     "customHint": "저장소, 패키지 URL 또는 내부 번들 참조에서 커스텀 스킬을 가져오세요.",
+     "providedBy": "{vendor} 제공",
+     "importedFrom": "{source}에서 가져옴",
+     "noSkillsFound": "스킬을 찾을 수 없습니다",
+     "customName": "스킬 이름",
+     "customNamePlaceholder": "리드 보강 오케스트레이터",
+     "customDescriptionPlaceholder": "이 스킬이 하는 일과 에이전트가 언제 사용해야 하는지 요약하세요.",
+     "customSource": "저장소 또는 패키지 URL",
+     "customSourcePlaceholder": "https://github.com/acme/agent-skill 또는 npm:@acme/agent-skill",
+     "customEntrypoint": "진입점",
+     "customEntrypointPlaceholder": "skills/lead-enrichment.ts",
+     "customFooterHint": "빌더가 나중에 이 스킬을 참조, 재설치, 또는 감사할 수 있도록 소스를 저장하세요.",
+     "importCustomAction": "커스텀 스킬 가져오기",
+     "customFallbackDescription": "가져온 스킬"
+    },
+    "knowledgeConfig": {
+     "webSearch": "웹 검색",
+     "workspaceAccess": "워크스페이스 접근",
+     "workspaceDescription": "이 에이전트가 질문에 답할 때 사용할 지식 베이스를 선택하세요.",
+     "externalSearch": "외부 검색",
+     "webSearchDescription": "이 에이전트가 응답에 웹 검색 결과를 사용하도록 허용합니다."
+    },
+    "modelConfig": {
+     "provider": "제공업체",
+     "model": "모델",
+     "temperature": "온도",
+     "streaming": "스트리밍"
+    },
+    "subAgentsConfig": {
+     "when": "언제"
+    },
+    "triggers": {
+     "picker": {
+      "close": "닫기",
+      "searchTriggers": "트리거 검색",
+      "triggers": "트리거",
+      "added": "추가됨",
+      "comingSoon": "출시 예정",
+      "select": "선택",
+      "recentlyUsed": "최근 사용",
+      "cat_contacts": "연락처",
+      "cat_tags": "태그",
+      "cat_opportunities": "기회",
+      "cat_appointments": "예약",
+      "cat_payments": "결제",
+      "cat_forms": "양식 및 설문",
+      "cat_communications": "커뮤니케이션",
+      "cat_membership": "멤버십",
+      "cat_scheduled": "일정",
+      "cat_custom": "커스텀",
+      "addTrigger": "트리거 추가",
+      "closeShort": "닫기",
+      "searchPlaceholder": "트리거 검색…",
+      "categories": "트리거 카테고리",
+      "navigate": "이동",
+      "popular": "인기",
+      "backToList": "트리거 목록으로 돌아가기",
+      "removeTrigger": "이 트리거 제거",
+      "countShown": "트리거 %n%개 표시됨",
+      "nTriggers": "트리거 %n%개",
+      "noMatch": "“%q%”와(과) 일치하는 트리거가 없습니다.",
+      "noMatchInCategory": "“%q%”와(과) 일치하는 %cat% 트리거가 없습니다.",
+      "cat_all": "모든 트리거"
+     },
+     "form": {
+      "title": "양식 제출",
+      "enable": "활성화",
+      "addNew": "새로 추가",
+      "cancel": "취소",
+      "save": "저장",
+      "selectForms": "양식 선택",
+      "searchForms": "양식 검색 및 선택...",
+      "hint": "제출 시 이 에이전트를 트리거할 하나 이상의 양식을 선택하세요."
+     },
+     "tag": {
+      "title": "리드 태그",
+      "enable": "활성화",
+      "action": "액션",
+      "selectTags": "태그 선택",
+      "addNew": "새로 추가",
+      "cancel": "취소",
+      "save": "저장",
+      "selectAction": "액션 선택...",
+      "searchTags": "태그 검색 및 선택...",
+      "hintAdded": "연락처에 추가될 때 이 에이전트를 트리거할 태그를 선택하세요.",
+      "hintRemoved": "연락처에서 제거될 때 이 에이전트를 트리거할 태그를 선택하세요."
+     },
+     "schedule": {
+      "title": "일정",
+      "modeLabel": "일정 유형",
+      "timezoneLabel": "시간대",
+      "cronGuide": {
+       "fields": {
+        "min": "분",
+        "hour": "시간",
+        "day": "일",
+        "month": "월",
+        "dow": "요일"
+       },
+       "presets": {
+        "everyHour": "매시간",
+        "everyFifteenMin": "15분마다",
+        "everyMinute": "매분",
+        "dailyNoon": "매일 정오",
+        "dailyMidnight": "매일 자정",
+        "mondayNineAm": "매주 월요일 오전 9시",
+        "weekdaysEightAm": "평일 오전 8시",
+        "firstOfMonth": "매월 1일"
+       },
+       "runsLabel": "트리거 실행 시점:",
+       "title": "Cron 표현식 가이드",
+       "quickReference": "빠른 참조",
+       "reference": {
+        "anyValue": "모든 값",
+        "list": "목록 (1,3,5)",
+        "range": "범위 (1-5)",
+        "step": "스텝 (*/5)"
+       },
+       "commonPresets": "일반 프리셋"
+      },
+      "repeatEvery": "반복 주기",
+      "units": {
+       "minute": "분",
+       "hour": "시간",
+       "day": "일",
+       "week": "주",
+       "month": "월"
+      },
+      "ends": "종료",
+      "end": {
+       "never": "없음",
+       "onDate": "지정 날짜에",
+       "afterOccurrences": "지정 횟수 후"
+      },
+      "endDate": "종료일",
+      "cancel": "취소",
+      "save": "저장",
+      "mode": {
+       "once": "한 번",
+       "interval": "반복 간격",
+       "cron": "Cron 표현식"
+      },
+      "timezoneHint": "에이전트는 이 시간대의 선택된 시간에 실행됩니다.",
+      "cronExpressionLabel": "Cron 표현식",
+      "cronPlaceholder": "0 9 * * 1-5",
+      "cronHint": "Cron 구문을 사용해 이 트리거의 커스텀 일정을 정의하세요.",
+      "executionDateTime": "실행 날짜 및 시간",
+      "intervalStartDateTime": "시작일",
+      "at": "시각",
+      "pickDate": "날짜 선택",
+      "specifyDays": "특정 요일에",
+      "validation": {
+       "endDateMustBeOnOrAfterStart": "종료일은 시작일과 같거나 이후여야 합니다.",
+       "minimumSpacing": "예약된 실행은 최소 5분 간격이어야 합니다.",
+       "onceMustBeFuture": "일회성 일정은 미래의 날짜와 시간으로 설정해야 합니다."
+      }
+     },
+     "appointment": {
+      "bookedTitle": "예약 완료",
+      "statusTitle": "예약 상태",
+      "selectCalendars": "캘린더 선택",
+      "cancel": "취소",
+      "save": "저장",
+      "close": "닫기",
+      "status": {
+       "new": "신규",
+       "confirmed": "확인됨",
+       "cancelled": "취소됨",
+       "showed": "출석",
+       "noshow": "노쇼",
+       "invalid": "유효하지 않음"
+      },
+      "searchCalendars": "캘린더 검색 및 선택...",
+      "calendarsHint": "캘린더를 하나 이상 선택하세요. 이 트리거는 선택한 캘린더의 예약 건에 대해서만 실행됩니다.",
+      "selectStatuses": "상태 선택",
+      "statusHint": "비워두면 모든 상태에서 트리거되며, 특정 상태를 선택하면 이 에이전트가 실행되는 시점을 제한할 수 있습니다.",
+      "remove": "트리거 제거"
+     },
+     "opportunity": {
+      "createdTitle": "기회 생성",
+      "statusTitle": "기회 상태 변경",
+      "cancel": "취소",
+      "save": "저장",
+      "close": "닫기",
+      "status": {
+       "open": "진행 중",
+       "won": "승리",
+       "lost": "손실",
+       "abandoned": "중단됨"
+      },
+      "selectPipelines": "파이프라인 선택",
+      "searchPipelines": "파이프라인 검색 및 선택...",
+      "pipelinesHint": "비워두면 모든 파이프라인에서 트리거되며, 특정 파이프라인을 선택할 수도 있습니다.",
+      "selectStages": "단계 선택",
+      "stagesHint": "비워두면 모든 단계에서 트리거되며, 특정 단계를 선택할 수도 있습니다.",
+      "pipelinesLoading": "파이프라인 불러오는 중…",
+      "pipelinesError": "파이프라인을 불러올 수 없습니다. 이 트리거를 닫았다가 다시 열어 재시도하세요.",
+      "noPipelines": "이 서브 계정에는 아직 파이프라인이 없습니다.",
+      "noPipelineMatches": "검색 결과와 일치하는 파이프라인이 없습니다.",
+      "noStages": "선택한 파이프라인에 사용 가능한 단계가 없습니다.",
+      "selectStatuses": "상태 선택",
+      "statusHint": "비워두면 모든 상태에서 트리거되며, 특정 상태를 선택할 수도 있습니다.",
+      "remove": "트리거 제거"
+     },
+     "survey": {
+      "title": "설문 제출",
+      "cancel": "취소",
+      "save": "저장",
+      "close": "닫기",
+      "selectSurveys": "설문 선택",
+      "searchSurveys": "설문 검색 및 선택...",
+      "surveysHint": "제출 시 이 에이전트를 트리거할 설문을 하나 이상 선택하세요.",
+      "surveysLoading": "설문 불러오는 중…",
+      "surveysError": "설문을 불러올 수 없습니다. 이 트리거를 닫았다가 다시 열어 재시도하세요.",
+      "noSurveys": "이 서브 계정에는 아직 설문이 없습니다.",
+      "noSurveyMatches": "검색 결과와 일치하는 설문이 없습니다.",
+      "remove": "트리거 제거"
+     },
+     "facebookLead": {
+      "title": "Facebook 리드 양식",
+      "selectPage": "페이지 선택",
+      "cancel": "취소",
+      "save": "저장",
+      "close": "닫기",
+      "selectForms": "리드 양식 선택",
+      "searchForms": "리드 양식 검색 및 선택...",
+      "formsHint": "이 에이전트를 트리거할 페이지 및/또는 특정 리드 양식을 선택하세요.",
+      "pagesLoading": "페이지 불러오는 중…",
+      "pagesError": "Facebook 페이지를 불러올 수 없습니다. 이 트리거를 닫았다가 다시 열어 재시도하세요.",
+      "noPages": "이 서브 계정에 연결된 Facebook 페이지가 없습니다.",
+      "noPageMatches": "검색 결과와 일치하는 페이지가 없습니다.",
+      "formsLoading": "리드 양식 불러오는 중…",
+      "formsError": "리드 양식을 불러올 수 없습니다. 이 트리거를 닫았다가 다시 열어 재시도하세요.",
+      "noForms": "이 페이지에서 리드 양식을 찾을 수 없습니다.",
+      "noFormMatches": "검색 결과와 일치하는 리드 양식이 없습니다.",
+      "remove": "트리거 제거"
+     }
+    },
+    "composer": {
+     "removeAttachment": "첨부 파일 제거"
+    },
+    "quickStarts": {
+     "socialMonitor": "소셜 미디어 모니터",
+     "customerSupport": "고객 지원 봇",
+     "emailDigest": "일일 이메일 다이제스트",
+     "leadQualifier": "리드 선별"
+    },
+    "empty": {
+     "instructions": "설정된 지침이 없습니다. AI 채팅을 사용해 에이전트가 수행해야 할 작업을 설명하세요.",
+     "channels": "연결된 채널이 없습니다. 채널을 추가하여 사용자가 에이전트와 상호작용할 수 있도록 하세요.",
+     "triggers": "설정된 트리거가 없습니다. 트리거를 추가하여 에이전트 실행을 자동화하세요.",
+     "actions": "설정된 액션이 없습니다. 액션을 추가하여 에이전트가 Actions Platform의 워크플로우와 연동을 실행할 수 있도록 하세요.",
+     "tools": "설정된 도구가 없습니다. 도구를 추가하여 에이전트에 API 호출이나 데이터 조회 같은 외부 기능을 부여하세요.",
+     "plugins": "설정된 플러그인이 없습니다. 액션과 스킬을 추가하여 에이전트의 기능을 확장하세요.",
+     "subAgents": "설정된 서브 에이전트가 없습니다. 서브 에이전트를 추가하여 전문 작업을 위임하세요.",
+     "skills": "가져온 스킬이 없습니다. 타사 또는 커스텀 스킬을 추가하여 이 에이전트를 확장하세요.",
+     "knowledge": "설정된 지식 소스가 없습니다. 지식을 추가하여 에이전트가 데이터에 접근할 수 있도록 하세요."
+    },
+    "instructions": {
+     "placeholder": "에이전트 지침을 입력하세요... 에이전트가 무엇을 해야 하는지, 어떻게 행동해야 하는지, 제약 사항은 무엇인지 설명하세요.",
+     "richPlaceholder": "여기에 지침을 작성하세요. /를 입력해 도구를 지정하거나 @를 입력해 항목을 언급하세요",
+     "constraints": "제약 조건"
+    },
+    "channelsConfig": {
+     "title": "지원되는 커뮤니케이션 채널",
+     "description": "이 에이전트가 메시지를 받을 수 있는 위치와 대응해야 할 화면을 선택하세요.",
+     "placeholder": "채널 선택"
+    }
+   },
+   "graphBuilder": {
+    "formFields": {
+     "knowledgeBase": {
+      "loading": "지식 베이스 불러오는 중...",
+      "placeholder": "지식 베이스 선택..."
+     }
+    },
+    "addNewNodePanel": {
+     "title": "노드 추가",
+     "buttons": {
+      "closePanel": "패널 닫기"
+     },
+     "ai": {
+      "showButton": "AI로 빌드하기",
+      "subtitle": "자연어로 에이전트 만들기",
+      "hideButton": "AI 생성기 숨기기",
+      "panelTitle": "AI로 빌드하기",
+      "betaLabel": "베타",
+      "title": "AI 어시스턴트",
+      "inputLabel": "AI 채팅 입력",
+      "inputPlaceholder": "만들고 싶은 플로우를 설명해 주세요...",
+      "sendButton": "보내기",
+      "emptyState": "만들고 싶은 에이전트를 설명하면 대신 생성해 드립니다.",
+      "welcomeTitle": "무엇을 도와드릴까요?",
+      "welcomeDescription": "새 에이전트를 처음부터 만들거나, 기존 에이전트를 개선하거나, 에이전트가 원하는 대로 작동하는지 테스트하는 것을 도와드릴 수 있습니다.",
+      "history": {
+       "title": "최근 대화",
+       "startNew": "새 대화 시작",
+       "loading": "최근 대화 불러오는 중...",
+       "errorLoading": "최근 대화를 불러오지 못했습니다.",
+       "sessionExpired": "이 대화는 만료되어 더 이상 사용할 수 없습니다.",
+       "resuming": "대화를 재개하는 중...",
+       "messageCount": "메시지 {count}개",
+       "hasPreview": "미리보기 있음",
+       "retry": "재시도"
+      }
+     },
+     "search": {
+      "placeholder": {
+       "general": "검색...",
+       "tools": "도구 검색...",
+       "toolsCompatible": "AI 에이전트와 호환되는 도구 검색...",
+       "compatible": "{nodeType} 호환 노드 검색..."
+      }
+     },
+     "context": {
+      "addingToolsToAI": "AI 에이전트에 도구 추가 중",
+      "addingToolsToNode": "{nodeType} 에 도구 추가 중",
+      "addingCompatibleTools": "AI 에이전트와 호환되는 도구 추가",
+      "addingCompatibleNodes": "{nodeType} 과(와) 호환되는 노드 추가 중"
+     },
+     "emptyState": {
+      "noNodesFound": "검색과 일치하는 노드가 없습니다"
+     }
+    },
+    "antonChat": {
+     "thinking": "생각 중",
+     "promptFixesApplied": "프롬프트 수정이 적용되었습니다",
+     "sanityCheck": "기본 점검",
+     "sanityCheckLabel": "기본 점검",
+     "sanityCheckPassed": "통과",
+     "sanityCheckFailed": "실패",
+     "testScenarios": "테스트 시나리오",
+     "testResults": "테스트 결과",
+     "attempt": "시도 {n}",
+     "passed": "{count}개 통과",
+     "failed": "{count}개 실패",
+     "improved": "↑ 개선됨",
+     "noChange": "→ 변경 없음",
+     "expected": "예상:",
+     "actual": "실제:",
+     "notes": "메모:",
+     "allTestsPassed": "모든 테스트 통과",
+     "testsFailedAfterFixImproved": "수정 후에도 일부 테스트가 실패하지만 결과가 개선되었습니다",
+     "testsFailedAfterFix": "수정 후에도 일부 테스트가 실패합니다",
+     "testsFailedReview": "일부 테스트가 실패했습니다 — 위의 결과를 검토하세요",
+     "testRunError": "테스트 실행 중 오류가 발생했습니다",
+     "appliedToCanvas": "에이전트가 캔버스에 적용되었습니다",
+     "graphDiscarded": "그래프 폐기됨",
+     "describeChanges": "아래에 변경 내용을 설명해 주세요",
+     "apply": "적용",
+     "requestChanges": "변경 요청",
+     "discard": "폐기",
+     "confirm": "확인"
+    },
+    "testBotPanel": {
+     "title": "에이전트와 채팅",
+     "attachmentPreview": "첨부 파일 미리보기",
+     "buttons": {
+      "openLogs": "로그 열기",
+      "resetConversation": "대화 초기화",
+      "closePanel": "패널 닫기",
+      "testAgent": "에이전트 테스트하기",
+      "attachImage": "이미지 첨부",
+      "retry": "재시도",
+      "executionTimeline": "실행 타임라인",
+      "minimize": "최소화"
+     },
+     "labels": {
+      "transition": "전환",
+      "captions": "캡션"
+     },
+     "emptyState": {
+      "message": "아래에 메시지를 입력하여 에이전트를 테스트할 수 있습니다"
+     },
+     "input": {
+      "placeholder": "메시지를 입력하세요..."
+     },
+     "messages": {
+      "waitingForHumanInput": "사용자 입력 대기 중...",
+      "someFilesCouldntBeAttached": "일부 파일을 첨부하지 못했습니다",
+      "attachments": {
+       "single": "첨부 파일입니다",
+       "multiple": "첨부 파일입니다"
+      },
+      "uploadedImage": {
+       "user": "사용자 업로드 이미지",
+       "agent": "에이전트가 업로드한 이미지"
+      }
+     },
+     "prompts": {
+      "provideInput": "입력해 주세요"
+     },
+     "errors": {
+      "processingRequest": "요청을 처리하는 중 오류가 발생했습니다."
+     },
+     "uploadErrors": {
+      "maxAttachments": "메시지당 최대 {count}개의 첨부 파일이 허용됩니다.",
+      "unsupportedType": "{name}: 지원되지 않는 파일 형식({type})입니다. 허용 형식: PNG, JPEG, GIF, WebP.",
+      "tooLarge": "{name}: 파일이 너무 큽니다. 최대 크기는 10 MB입니다."
+     }
+    }
+   },
+   "copilot": {
+    "askAi": {
+     "chat": {
+      "transcribing": "텍스트 변환 중...",
+      "copyUserMessage": "사용자 메시지 복사",
+      "copied": "복사됨",
+      "helpful": "도움이 됨",
+      "notHelpful": "도움이 안 됨",
+      "copyAssistantMessage": "어시스턴트 메시지 복사",
+      "sources": "출처"
+     },
+     "atoms": {
+      "typingIndicator": "생각 중…"
+     },
+     "composer": {
+      "send": "보내기",
+      "stopGenerating": "생성 중지",
+      "dictationStart": "받아쓰기 시작",
+      "dictationStop": "받아쓰기 중지",
+      "dictationCancel": "녹음 취소",
+      "dictationSubmit": "녹음 제출",
+      "dictationRecording": "녹음 중",
+      "dictationUploading": "오디오 텍스트 변환 중",
+      "dictationPermissionDenied": "마이크 접근이 차단되었습니다. 받아쓰기를 사용하려면 브라우저에서 마이크 권한을 활성화해 주세요.",
+      "dictationUnavailable": "계정에서 받아쓰기를 사용할 수 없습니다",
+      "dictationRateLimited": "요청이 너무 많습니다. 잠시 기다려 주세요",
+      "dictationTooLarge": "녹음이 너무 깁니다",
+      "dictationGenericError": "오디오를 텍스트로 변환할 수 없습니다. 다시 시도해 주세요.",
+      "dictationMicUnavailable": "이 브라우저에서는 마이크 캡처를 사용할 수 없습니다",
+      "dictationNotReady": "받아쓰기가 아직 준비되지 않았습니다 — 잠시 후 다시 시도해 주세요.",
+      "dictationMicAccessFailed": "마이크에 접근할 수 없습니다",
+      "dictationRecorderError": "녹음기 오류",
+      "dictationRecordingFailed": "녹음에 실패했습니다",
+      "dictationNoAudioCaptured": "캡처된 오디오가 없습니다. 다시 시도해 주세요.",
+      "dictationRecordingTooLarge": "녹음 파일이 너무 큽니다 (최대 {size} MB)",
+      "dictationTranscriptionFailed": "텍스트 변환 실패"
+     }
+    }
+   },
+   "agentStudioPanel": {
+    "publish": "게시",
+    "unpublish": "게시 취소",
+    "moreActions": "더 보기",
+    "unpublishConfirmCancel": "취소",
+    "agentName": "에이전트 이름",
+    "triggers": "트리거",
+    "addTrigger": "트리거 추가",
+    "actions": "액션",
+    "apps": "앱",
+    "capabilities": "기능",
+    "imageQuality": {
+     "label": "품질",
+     "low": "낮음",
+     "medium": "보통",
+     "high": "높음",
+     "lowHint": "가장 빠르고 저렴함 — 화면 비율에 따라 이미지당 보통 품질보다 최대 9배 저렴합니다. 초안 작업에 적합합니다.",
+     "mediumHint": "품질과 비용의 균형. 모든 에이전트의 기본값입니다.",
+     "highHint": "가장 선명한 디테일 — 화면 비율에 따라 이미지당 보통 품질 비용의 2배에서 4배이며, 렌더링 속도가 더 느립니다."
+    },
+    "audioVoiceLabel": "음성",
+    "audioToneLabel": "톤",
+    "knowledgeBase": "지식 베이스",
+    "add": "추가",
+    "instructions": "지침",
+    "tool": "도구",
+    "tools": "도구",
+    "noKnowledgeBases": "사용 가능한 지식 베이스가 없습니다",
+    "triggerTypes": {
+     "chat": {
+      "name": "채팅 메시지",
+      "desc": "Managed Agents 채팅 인터페이스를 통해 호출됩니다."
+     },
+     "form": {
+      "name": "양식 제출",
+      "desc": "양식이 제출되면 트리거됩니다."
+     },
+     "tag": {
+      "name": "리드 태그",
+      "desc": "리드 태그가 추가되거나 제거될 때 트리거됩니다."
+     },
+     "schedule": {
+      "name": "일정",
+      "desc": "일회성 또는 반복 일정으로 에이전트를 실행합니다."
+     },
+     "appointment_booked": {
+      "name": "예약 완료",
+      "desc": "고객이 예약을 하면 트리거됩니다."
+     },
+     "appointment_status": {
+      "name": "예약 상태",
+      "desc": "예약 상태가 변경되면 트리거됩니다 (확인됨, 취소됨, 노쇼 등)."
+     },
+     "contact_created": {
+      "name": "연락처 생성",
+      "desc": "CRM에 새 연락처가 생성되면 트리거됩니다."
+     },
+     "opportunity_created": {
+      "name": "기회 생성",
+      "desc": "새 기회가 생성되면 트리거됩니다."
+     },
+     "opportunity_status_changed": {
+      "name": "기회 상태 변경",
+      "desc": "기회의 상태 또는 파이프라인 단계가 변경되면 트리거됩니다."
+     },
+     "survey_submission": {
+      "name": "설문 제출",
+      "desc": "설문 응답이 접수되면 트리거됩니다."
+     },
+     "facebook_lead_gen": {
+      "name": "Facebook 리드 양식",
+      "desc": "연락처가 Facebook 리드 양식을 제출하면 트리거됩니다."
+     }
+    },
+    "testAgent": "에이전트 테스트",
+    "unpublishConfirmTitle": "{name} 게시를 취소하시겠습니까?",
+    "unpublishConfirmSubtitle": "이 작업은 에이전트를 운영 환경에서 제외합니다.",
+    "unpublishConfirmBody": "자동화된 트리거 실행이 즉시 중단되며, 이미 진행 중인 실행은 완료까지 계속됩니다. 채팅은 계속 작동하며 임시 저장본을 실행하고, 다시 게시하면 자동화된 트리거가 새 버전으로 복원됩니다.",
+    "unpublishFallbackName": "이 에이전트",
+    "unpublishFailed": "게시 취소에 실패했습니다. 다시 시도해 주세요.",
+    "addTool": "도구 추가",
+    "addApp": "앱 추가",
+    "webSearch": "웹 검색",
+    "imageGeneration": "이미지 생성",
+    "audioGeneration": "오디오 생성",
+    "audioTonePlaceholder": "톤, 예: 따뜻하고 여유로운",
+    "audioFormatHint": "MP3 · 별도 파일",
+    "videoGeneration": "동영상 생성",
+    "videoLengthHint": "8초 · 16:9 또는 9:16",
+    "mediaSeparateNote": "오디오와 동영상은 별도로 생성됩니다 — 보이스오버가 동영상에 추가되지 않으며, 동영상은 자체 사운드를 가집니다.",
+    "instructionsPlaceholder": "에이전트의 작동 방식에 대한 지침을 입력하세요.",
+    "notConnectedTooltip": "연결되지 않음 — 게시하기 전에 클릭하여 이 앱을 연결하세요.",
+    "updatedJustNow": "방금 업데이트됨",
+    "updatedMinAgo": "{n}분 전 업데이트됨",
+    "updatedHourAgo": "{n}시간 전 업데이트됨",
+    "updatedHoursAgo": "{n}시간 전 업데이트됨",
+    "updatedDayAgo": "{n}일 전 업데이트됨",
+    "updatedDaysAgo": "{n}일 전 업데이트됨",
+    "loadingKnowledgeBases": "지식 베이스 불러오는 중…"
+   },
+   "builderCursorEdit": {
+    "identity": "프로필 업데이트 중",
+    "systemPrompt": "지침 업데이트 중",
+    "tools": "기능 업데이트 중",
+    "knowledgeBases": "지식 업데이트 중",
+    "triggers": "트리거 업데이트 중",
+    "plugins": "앱 업데이트 중",
+    "customApi": "API 호출 업데이트 중"
    }
   }
  },
@@ -120357,6 +121424,11 @@
   "In order to use the Facebook Ads Reporting, you need to disconnect and reconnect your Facebook account.": "Facebook 광고 리포팅을 사용하려면 Facebook 계정 연결을 해제하고 다시 연결해야 합니다.",
   "not found": "찾을 수 없음",
   "To integrate your Facebook account and select the Facebook Ad Account-ID for which you want to see the data.": "Facebook 계정을 연동하고 데이터를 보려는 Facebook 광고 계정 ID를 선택하세요.",
-  "Your changes will not be saved. Are you sure you want to leave?": "변경사항이 저장되지 않습니다. 정말 나가시겠습니까?"
+  "Your changes will not be saved. Are you sure you want to leave?": "변경사항이 저장되지 않습니다. 정말 나가시겠습니까?",
+  "Build and manage AI agents for your business": "비즈니스를 위한 AI 에이전트를 만들고 관리하세요",
+  "Create Managed Agent": "Managed Agent 만들기",
+  "No Managed Agents yet": "아직 Managed Agent가 없습니다",
+  "Create your first Managed Agent to get started.": "첫 Managed Agent를 만들어 시작하세요.",
+  "are prompt-based agents — give them a prompt, knowledge, web search, and integrations. Run them in chat or on triggers.": "는 프롬프트 기반 에이전트입니다. 프롬프트·지식·웹 검색·연동을 지정하고 채팅이나 트리거로 실행하세요."
  }
 }
