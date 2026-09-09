@@ -21,9 +21,9 @@
    ───────────────────────────────────────────────────────────────────── */
 (() => {
   const EXPECT = {
-    version: '4.9.0',
-    revPrefix: 'f188913',
-    textEntries: 9088,
+    version: '4.9.2',
+    revPrefix: '81a235c',
+    textEntries: 9094,
   };
   const A = window.__hcKoApp;
   if (!A) {
