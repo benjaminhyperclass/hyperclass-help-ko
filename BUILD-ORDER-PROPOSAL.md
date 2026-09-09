@@ -110,4 +110,12 @@ raw.githubusercontent 는 즉시 반영이지만 CDN 이 없어 3.2MB 를 매 �
 `_text` 만이 아니라 이번 라운드처럼 host 7키 교정에도 같은 효과다. 1번은 2번의 부분집합이라 굳이 나눌 이유가 없다.
 포인터 fetch 가 실패해도 로더 내장 REV 로 동작하므로 지금보다 나빠지는 경로는 없다.
 
+**승인 조건 3가지 (Claude Chat 의견 2026-09-09 · 벤자민 결정 대기).** 구현 시 아래를 설계에 고정한다.
+
+1. **포인터 fetch 를 부팅 경로에서 뺀다 (stale-while-revalidate).** 부팅은 캐시된 포인터(없으면 로더 내장 REV)로 즉시 시작하고, 새 포인터는 백그라운드에서 받아 **다음 로드**에 반영한다. `js/community-loader.js` v2.0.1 이 같은 패턴(`TTL` 6h 초과 시 백그라운드 `refresh`, 8·100행)이라 재사용한다. 페이지마다 raw 왕복을 기다리면 첫 화면 영어 깜빡임이 늘어난다. 포인터 저장소는 Cache Storage(로더가 이미 씀) — `localStorage` 는 킬스위치 키와 섞이므로 피한다.
+2. **포인터 갱신 순서를 CI 에 고정.** 포인터가 새 SHA 를 가리키는 순간 jsDelivr 에 `@SHA/data/hc-ko-app-{core,apps}.json` 이 이미 200 이어야 한다. 워크플로: `사전 커밋 push → jsDelivr @SHA 200 + 본문 SHA-256 = raw 확인(재시도 포함) → 포인터 커밋(봇)`. 이 순서면 현재 'REV↔사전 일치' 빨간불(위 절)도 사라진다 — 검사식은 "포인터 SHA 의 blob == HEAD blob" 하나로 치환.
+3. **포인터 = 롤백 수단으로 문서화.** 포인터 한 줄을 이전 SHA 로 되돌리면 다음 로드부터 즉시 롤백된다(jsDelivr immutable 이라 옛 SHA 파일은 영구 보존). `DEPLOY-v4.md` 에 "롤백: `data/hc-ko-app-rev.json` 의 rev 를 직전 SHA 로 커밋" 절을 추가하고, 조건 1 때문에 **반영은 다음 로드**임을 명시한다. 로더 자체 결함 롤백은 종전대로 슬롯 SHA 교체.
+
+A·B 스크립트 커밋과 이 설계는 함께 승인 대상이다. 승인 전에는 구현·커밋하지 않는다.
+
 **변경 범위(승인 필요).** `js/hc-ko-app-loader.js`(포인터 fetch·CACHE 이름·RAW 폴백) · `scripts/split-ko-app.py`(포인터 파일은 쓰지 않음 — 커밋 SHA 는 push 후에 알 수 있으므로 별도 스텝) · `.github/workflows/ko-app-validate.yml`(REV 검사식을 포인터 기준으로) · `DEPLOY-v4.md`(배너 문구: "REV 갱신 + 슬롯 교체 한 세트" → "포인터 갱신 한 번"). 포인터 커밋은 `sha=$(git rev-parse HEAD)` 후 한 줄 커밋이라 `update-translations.sh` 류에 넣어 자동화 가능.

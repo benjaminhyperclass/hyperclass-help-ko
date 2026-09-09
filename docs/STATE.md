@@ -50,7 +50,7 @@ Custom JS 칸 (Agency Whitelabel → Custom JavaScript) — **실제 슬롯은 �
 | 6 | 스테일 핀 `8fabb6a` 유지 | 운영 사전 11,810건, @main 은 37,395건이지만 미반영분 98% 를 v4 가 커버 → 핀 이동은 레거시 축소·재빌드와 한 번에 |
 | 7 | Managed Agents 표기 잔존 | `0 Managed Agents`(가변 숫자) — `_text` 정확 일치 한계 |
 | 8 | `HC_I18N_EXCLUDE` 는 로더 폴백에 의존 중 | 슬롯에 `<script>window.HC_I18N_EXCLUDE=[…]</script>` 를 명시할지 **벤자민 결정**. 명시하면 로더 재배포 없이 배열만 고쳐 제외 계정을 바꿀 수 있고, 안 하면 제외 변경 = 두 레이어 재배포 |
-| 9 | `_text` 11건 추가 (Claude Chat 라이브 감사분) → 사전 4.2.6 / 로더 4.9.3 / 슬롯 재교체 | **목록 미수신** — 11건 원문·번역이 전달되면 착수. 함께: `_text` 만 바뀔 때 REV·슬롯 교체 없이 가는 설계안 `BUILD-ORDER-PROPOSAL.md` 마지막 절 (권장: REV 포인터 파일) |
+| 9 | `_text` 11건 추가 (Claude Chat 라이브 감사분) → 사전 4.2.6 / 로더 4.9.3 / 슬롯 재교체 | **목록 미수신** — 11건 원문·번역이 전달되면 착수. 함께: `_text` 만 바뀔 때 REV·슬롯 교체 없이 가는 설계안 `BUILD-ORDER-PROPOSAL.md` 마지막 절 (권장: REV 포인터 파일 · Claude Chat 찬성, **조건 3가지 등재 · 벤자민 승인 대기**, A·B 커밋과 묶음) |
 
 ## 알려진 잔존 영문 (번역 대상 아님 또는 대응 불가)
 
