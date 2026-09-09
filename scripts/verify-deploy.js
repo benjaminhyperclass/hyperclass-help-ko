@@ -24,8 +24,8 @@
 (() => {
   const EXPECT = {
     version: '4.10.0',
-    revPrefix: '81a235c',
-    textEntries: 9094,
+    revPrefix: 'c9879e0',
+    textEntries: 9105,
   };
   const A = window.__hcKoApp;
   if (!A) {

@@ -39,3 +39,7 @@ Benjamin 결정(2026-09-09): A·B 단독 커밋 승인 / 포인터 설계(조건
 - [x] ko-app-pointer.yml: validate 성공 workflow_run 에서만 전진, 검증된 blob 과 대조, 롤백 보호(by≠봇 & 대상이 롤백 커밋보다 오래되면 skip, force 로만), 경합 재시도, 커밋 후 자체 검사 — 영향: 사전 push 뒤 validate 가 취소되면 전진 안 됨 → validate 를 dispatch 로 재실행
 - [x] ko-app-validate.yml: REV 스텝 → 포인터·내장 REV 실존 하드 게이트 + HEAD 불일치는 ✅/⚠️수동/⏳/⚠️ 요약
 - [x] verify-deploy.js: EXPECT 4.10.0 / 포인터 rev / revSource 표시 (A 승인 범위의 EXPECT 갱신 + 주석 정정)
+- [x] 로더 커밋 76c557f → CDN=raw=local=git 일치 · validate ✅ · pointer(workflow_run) ✅ "이미 최신" — 영향: DEPLOY-v4·STATE 갱신(a4473f3)
+- [x] 4.2.6 (c9879e0): _text +11 → validate ✅ → ko-app-pointer 전진 봇 커밋 4ed156d (81a235c → c9879e0, jsDelivr 대조 ✅). **첫 무슬롯 배포 성공** — 영향: verify-deploy EXPECT 갱신
+- [x] 보고서 data/reports/2026-09-09-pointer-report.md
+잔여(벤자민): 슬롯 0fcf256 → 76c557f 마지막 교체 → 라이브 2회 로드 확인(1차 내장 81a235c, 2차 포인터 c9879e0 / textEntries 9105 / "관리형 에이전트는")
