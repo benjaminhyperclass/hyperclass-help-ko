@@ -1,5 +1,5 @@
 {
-  "last_run": "2026-09-01 23:22",
+  "last_run": "2026-10-02 00:56",
   "articles": {
     "77100205124c": {
       "url": "https://help.gohighlevel.com/support/solutions/articles/155000005056-getting-started-import-existing-contacts",
@@ -669,17 +669,6 @@
       "file_path": null,
       "source_modified": "Tue, 23 Dec, 2025 at  3:04 PM",
       "checksum": "e528fe88f751612d",
-      "translated_at": null,
-      "qa_passed": null
-    },
-    "12462c7daa9f": {
-      "url": "https://help.gohighlevel.com/support/solutions/articles/155000002741-conversations-faqs",
-      "title_en": "Conversations FAQs",
-      "category": "conversations",
-      "folder": "대화",
-      "file_path": null,
-      "source_modified": "Sun, 1 Sep, 2024 at 12:15 AM",
-      "checksum": "fea9bad355a60d2f",
       "translated_at": null,
       "qa_passed": null
     },
@@ -1981,17 +1970,6 @@
       "translated_at": null,
       "qa_passed": null
     },
-    "ad2154813c41": {
-      "url": "https://help.gohighlevel.com/support/solutions/articles/48001184594-no-google-accounts-added-in-integrations-settings-yet-even-if-google-account-is-connected-as-the-user",
-      "title_en": "No google accounts added in integrations settings yet even if Google account is connected as the user",
-      "category": "calendars",
-      "folder": "트러블슈팅",
-      "file_path": null,
-      "source_modified": "Fri, 21 May, 2021 at  3:15 PM",
-      "checksum": "907e9d6f8cba86d3",
-      "translated_at": null,
-      "qa_passed": null
-    },
     "ff161b021a15": {
       "url": "https://help.gohighlevel.com/support/solutions/articles/48001204159-why-google-calendar-integration-breaks",
       "title_en": "Why Google Calendar Integration Breaks",
@@ -2000,17 +1978,6 @@
       "file_path": null,
       "source_modified": "Wed, 30 Apr, 2025 at  4:29 PM",
       "checksum": "6940c97a99f40b3a",
-      "translated_at": null,
-      "qa_passed": null
-    },
-    "e5bc999c6c0a": {
-      "url": "https://help.gohighlevel.com/support/solutions/articles/48001208024-when-rescheduling-link-is-blank-when-sending-email-sms-in-conversation",
-      "title_en": "When rescheduling link is blank when sending email/SMS in conversation",
-      "category": "calendars",
-      "folder": "트러블슈팅",
-      "file_path": null,
-      "source_modified": "Thu, 27 Jan, 2022 at  6:06 PM",
-      "checksum": "d41d8cd98f00b204",
       "translated_at": null,
       "qa_passed": null
     },
@@ -2399,17 +2366,6 @@
       "translated_at": null,
       "qa_passed": null
     },
-    "1423352ee644": {
-      "url": "https://help.gohighlevel.com/support/solutions/articles/48000980310-desktop-view-vs-mobile-view-funnels-",
-      "title_en": "Desktop View VS Mobile View (Funnels)",
-      "category": "sites",
-      "folder": "퍼널-웹사이트",
-      "file_path": null,
-      "source_modified": "Sun, 29 Dec, 2019 at 10:54 AM",
-      "checksum": "fc921f76e1b763fa",
-      "translated_at": null,
-      "qa_passed": null
-    },
     "1c3fdd18b485": {
       "url": "https://help.gohighlevel.com/support/solutions/articles/48000980311-tracking-scripts-pixel-code",
       "title_en": "Tracking Scripts/Pixel Code",
@@ -2429,17 +2385,6 @@
       "file_path": null,
       "source_modified": "Thu, 18 Apr, 2024 at  3:20 PM",
       "checksum": "212370e581d2b904",
-      "translated_at": null,
-      "qa_passed": null
-    },
-    "42e920aeb47a": {
-      "url": "https://help.gohighlevel.com/support/solutions/articles/48000980313-element-duplication-efficiency-global-templates-",
-      "title_en": "Element Duplication Efficiency (Global Templates)",
-      "category": "sites",
-      "folder": "퍼널-웹사이트",
-      "file_path": null,
-      "source_modified": "Tue, 7 Mar, 2023 at 11:14 AM",
-      "checksum": "498558c4141c0621",
       "translated_at": null,
       "qa_passed": null
     },
@@ -2465,17 +2410,6 @@
       "translated_at": null,
       "qa_passed": null
     },
-    "64e104c0bab2": {
-      "url": "https://help.gohighlevel.com/support/solutions/articles/48000980321-funnel-paths",
-      "title_en": "Funnel Paths",
-      "category": "sites",
-      "folder": "퍼널-웹사이트",
-      "file_path": null,
-      "source_modified": "Fri, 31 Jul, 2020 at  3:44 AM",
-      "checksum": "80eac0f2df9d31ef",
-      "translated_at": null,
-      "qa_passed": null
-    },
     "9a74d97f494a": {
       "url": "https://help.gohighlevel.com/support/solutions/articles/48000980322-how-to-import-a-funnel-from-clickfunnels-",
       "title_en": "How to import a Funnel From ClickFunnels?",
@@ -2498,17 +2432,6 @@
       "translated_at": null,
       "qa_passed": null
     },
-    "ad50cc24cdcf": {
-      "url": "https://help.gohighlevel.com/support/solutions/articles/48001059705-adding-dynamic-text-to-funnel-pages",
-      "title_en": "Adding Dynamic Text To Funnel Pages",
-      "category": "sites",
-      "folder": "퍼널-웹사이트",
-      "file_path": null,
-      "source_modified": "Tue, 16 Aug, 2022 at 11:06 AM",
-      "checksum": "00bab6b6d5ca6522",
-      "translated_at": null,
-      "qa_passed": null
-    },
     "cb3c0cfc92e2": {
       "url": "https://help.gohighlevel.com/support/solutions/articles/48001073924-custom-meta-tags",
       "title_en": "Custom Meta Tags",
@@ -2517,17 +2440,6 @@
       "file_path": null,
       "source_modified": "Fri, 25 Apr, 2025 at  6:12 PM",
       "checksum": "fae1827d5964667f",
-      "translated_at": null,
-      "qa_passed": null
-    },
-    "be28fc72b07a": {
-      "url": "https://help.gohighlevel.com/support/solutions/articles/48001076117-import-and-or-cloning-funnels-websites",
-      "title_en": "Import and or Cloning Funnels & Websites",
-      "category": "sites",
-      "folder": "퍼널-웹사이트",
-      "file_path": null,
-      "source_modified": "Tue, 16 Apr, 2024 at  6:28 AM",
-      "checksum": "fd2f67b9b7e2c63a",
       "translated_at": null,
       "qa_passed": null
     },
@@ -2872,17 +2784,6 @@
       "translated_at": null,
       "qa_passed": null
     },
-    "48624ea15537": {
-      "url": "https://help.gohighlevel.com/support/solutions/articles/48001220287-how-to-update-seo-for-blog-post",
-      "title_en": "How to Update SEO for Blog Post",
-      "category": "sites",
-      "folder": "블로그",
-      "file_path": null,
-      "source_modified": "Thu, 8 May, 2025 at 11:22 AM",
-      "checksum": "fcc1bb461eb46b7f",
-      "translated_at": null,
-      "qa_passed": null
-    },
     "46e28b330e71": {
       "url": "https://help.gohighlevel.com/support/solutions/articles/48001220290-how-to-add-author-s-to-the-blog-builder",
       "title_en": "How to Add Author(s) to The Blog Builder",
@@ -2902,17 +2803,6 @@
       "file_path": null,
       "source_modified": "Thu, 24 Nov, 2022 at  1:11 AM",
       "checksum": "5deac915ed9c4f90",
-      "translated_at": null,
-      "qa_passed": null
-    },
-    "e14e6046165e": {
-      "url": "https://help.gohighlevel.com/support/solutions/articles/48001227671-how-to-schedule-a-blog-post-",
-      "title_en": "How to schedule a blog post?",
-      "category": "sites",
-      "folder": "블로그",
-      "file_path": null,
-      "source_modified": "Mon, 12 Dec, 2022 at  6:37 AM",
-      "checksum": "e7d753a1fd7555ce",
       "translated_at": null,
       "qa_passed": null
     },
@@ -2990,17 +2880,6 @@
       "file_path": null,
       "source_modified": "Thu, 12 Dec, 2024 at  2:53 PM",
       "checksum": "e1d85428695206fa",
-      "translated_at": null,
-      "qa_passed": null
-    },
-    "30290eff1211": {
-      "url": "https://help.gohighlevel.com/support/solutions/articles/155000004155-wordpress-domain-connect-integration",
-      "title_en": "WordPress: Domain Connect Integration",
-      "category": "sites",
-      "folder": "워드프레스",
-      "file_path": null,
-      "source_modified": "Thu, 12 Dec, 2024 at  4:27 PM",
-      "checksum": "34da517deb83ad92",
       "translated_at": null,
       "qa_passed": null
     },
@@ -3188,17 +3067,6 @@
       "file_path": null,
       "source_modified": "Thu, 3 Jul, 2025 at  4:38 PM",
       "checksum": "98413eb7630bdb8b",
-      "translated_at": null,
-      "qa_passed": null
-    },
-    "e1796022a003": {
-      "url": "https://help.gohighlevel.com/support/solutions/articles/48000979916-where-do-form-responses-show-up-",
-      "title_en": "Where Do Form Responses Show Up?",
-      "category": "sites",
-      "folder": "폼",
-      "file_path": null,
-      "source_modified": "Fri, 5 Apr, 2024 at  6:17 PM",
-      "checksum": "4495982ad0391721",
       "translated_at": null,
       "qa_passed": null
     },
@@ -3411,28 +3279,6 @@
       "translated_at": null,
       "qa_passed": null
     },
-    "87317e38fa5f": {
-      "url": "https://help.gohighlevel.com/support/solutions/articles/48000979915-where-do-survey-answers-show-up",
-      "title_en": "Where Do Survey Answers Show Up",
-      "category": "sites",
-      "folder": "설문",
-      "file_path": null,
-      "source_modified": "Mon, 23 Jun, 2025 at  5:38 PM",
-      "checksum": "3bdb4557dee45d9a",
-      "translated_at": null,
-      "qa_passed": null
-    },
-    "a8a76a9e3685": {
-      "url": "https://help.gohighlevel.com/support/solutions/articles/48001165941-how-to-create-a-stylized-survey",
-      "title_en": "How to Create a Stylized Survey",
-      "category": "sites",
-      "folder": "설문",
-      "file_path": null,
-      "source_modified": "Mon, 4 Mar, 2024 at 12:25 AM",
-      "checksum": "6d9f921800483242",
-      "translated_at": null,
-      "qa_passed": null
-    },
     "81ed3ad5bec0": {
       "url": "https://help.gohighlevel.com/support/solutions/articles/155000001316-new-footer-in-surveys",
       "title_en": "New Footer in Surveys",
@@ -3573,17 +3419,6 @@
       "file_path": null,
       "source_modified": "Fri, 20 Jun, 2025 at  1:07 PM",
       "checksum": "6fb626ee37725514",
-      "translated_at": null,
-      "qa_passed": null
-    },
-    "c77fa51baf28": {
-      "url": "https://help.gohighlevel.com/support/solutions/articles/48001173609-how-to-automatically-add-email-addresses-phone-numbers-from-fb-chat-into-contact-record",
-      "title_en": "How To Automatically Add Email Addresses & Phone Numbers From FB Chat Into Contact Record",
-      "category": "sites",
-      "folder": "채팅-위젯",
-      "file_path": null,
-      "source_modified": "Tue, 26 Sep, 2023 at  9:58 AM",
-      "checksum": "e7cc95a70e94bb0f",
       "translated_at": null,
       "qa_passed": null
     },
@@ -3818,17 +3653,6 @@
       "translated_at": null,
       "qa_passed": null
     },
-    "75a57874e8fc": {
-      "url": "https://help.gohighlevel.com/support/solutions/articles/48000980323-instant-redirect-page-funnel-troubleshooting",
-      "title_en": "Instant Redirect Page - Funnel Troubleshooting",
-      "category": "sites",
-      "folder": "트러블슈팅",
-      "file_path": null,
-      "source_modified": "Sun, 29 Dec, 2019 at 11:29 AM",
-      "checksum": "d41d8cd98f00b204",
-      "translated_at": null,
-      "qa_passed": null
-    },
     "89c492846f29": {
       "url": "https://help.gohighlevel.com/support/solutions/articles/48001158591-stripe-troubleshooting-why-does-my-funnel-product-show-null-in-the-stripe-plan-dropdown-",
       "title_en": "Stripe Troubleshooting | Why does my funnel product show 'null' in the Stripe Plan dropdown?",
@@ -3837,17 +3661,6 @@
       "file_path": null,
       "source_modified": "Wed, 16 Sep, 2020 at  3:58 PM",
       "checksum": "9322209698791867",
-      "translated_at": null,
-      "qa_passed": null
-    },
-    "864be69a5135": {
-      "url": "https://help.gohighlevel.com/support/solutions/articles/48001159729-script-not-working-custom-javascript-html-code-validation-error-troubleshooting",
-      "title_en": "Script not working? - Custom Javascript / HTML Code Validation Error Troubleshooting",
-      "category": "sites",
-      "folder": "트러블슈팅",
-      "file_path": null,
-      "source_modified": "Tue, 8 Nov, 2022 at  6:19 AM",
-      "checksum": "9dc519a49534552f",
       "translated_at": null,
       "qa_passed": null
     },
@@ -3914,17 +3727,6 @@
       "file_path": null,
       "source_modified": "Wed, 9 Jul, 2025 at  4:56 PM",
       "checksum": "e0703b0d465e3081",
-      "translated_at": null,
-      "qa_passed": null
-    },
-    "8e1d03bc856b": {
-      "url": "https://help.gohighlevel.com/support/solutions/articles/155000002561-setting-up-whitelabel-domain-api-domain-email-sending-domain-sites-domain-client-portal-domain-",
-      "title_en": "Setting up Whitelabel Domain, API Domain, Email Sending Domain,  Sites Domain, Client Portal Domain & more",
-      "category": "sites",
-      "folder": "일반-설정",
-      "file_path": null,
-      "source_modified": "Tue, 13 Aug, 2024 at 11:19 AM",
-      "checksum": "bec1f41e33609e0f",
       "translated_at": null,
       "qa_passed": null
     },
@@ -4357,17 +4159,6 @@
       "translated_at": null,
       "qa_passed": null
     },
-    "ceb81f9c029c": {
-      "url": "https://help.gohighlevel.com/support/solutions/articles/155000005678-how-to-enable-and-rebill-premium-features-for-workflows",
-      "title_en": "How to enable and rebill Premium Features for Workflows",
-      "category": "workflows",
-      "folder": "시작하기",
-      "file_path": null,
-      "source_modified": "Thu, 7 Aug, 2025 at  8:11 AM",
-      "checksum": "7f85a5ee924fac4f",
-      "translated_at": null,
-      "qa_passed": null
-    },
     "224241ecba08": {
       "url": "https://help.gohighlevel.com/support/solutions/articles/48001147413-create-task-event-in-campaigns",
       "title_en": "Create Task Event In Campaigns",
@@ -4717,17 +4508,6 @@
       "file_path": null,
       "source_modified": "Mon, 16 Feb, 2026 at  3:33 AM",
       "checksum": "7036aa0d994d6638",
-      "translated_at": null,
-      "qa_passed": null
-    },
-    "ba63e411d785": {
-      "url": "https://help.gohighlevel.com/support/solutions/articles/155000002674-workflow-trigger-custom-date-remimder",
-      "title_en": "Workflow Trigger - Custom Date Remimder",
-      "category": "workflows",
-      "folder": "Contact Workflow Triggers",
-      "file_path": null,
-      "source_modified": "Tue, 21 Jan, 2025 at  6:54 AM",
-      "checksum": "ed360b46d1ddc655",
       "translated_at": null,
       "qa_passed": null
     },
@@ -6117,17 +5897,6 @@
       "translated_at": null,
       "qa_passed": null
     },
-    "29e718a036e8": {
-      "url": "https://help.gohighlevel.com/support/solutions/articles/155000003207-conversation-ai-multiple-messages-in-one-workflow-action",
-      "title_en": "Conversation AI: Multiple Messages in One Workflow Action",
-      "category": "workflows",
-      "folder": "Workflow AI Workflow Actions",
-      "file_path": null,
-      "source_modified": "Tue, 17 Sep, 2024 at  2:22 PM",
-      "checksum": "a050ce14b0290d6e",
-      "translated_at": null,
-      "qa_passed": null
-    },
     "046780edf164": {
       "url": "https://help.gohighlevel.com/support/solutions/articles/155000000209-workflow-action-gpt-powered-by-openai",
       "title_en": "Workflow Action - GPT Powered by OpenAI",
@@ -6191,17 +5960,6 @@
       "file_path": null,
       "source_modified": "Thu, 30 Apr, 2026 at  9:46 AM",
       "checksum": "3bb65a522678f9ee",
-      "translated_at": null,
-      "qa_passed": null
-    },
-    "d3e7325aff95": {
-      "url": "https://help.gohighlevel.com/support/solutions/articles/155000003363-workflow-action-appointment-booking-conversation-ai-booking-bot",
-      "title_en": "Workflow Action - Appointment Booking Conversation AI Booking Bot",
-      "category": "workflows",
-      "folder": "Appointments Workflow Actions",
-      "file_path": null,
-      "source_modified": "Sun, 8 Sep, 2024 at  1:35 PM",
-      "checksum": "04e17295ad805b98",
       "translated_at": null,
       "qa_passed": null
     },
@@ -6345,17 +6103,6 @@
       "file_path": null,
       "source_modified": "Sun, 8 Sep, 2024 at  2:12 PM",
       "checksum": "36300d7ab4cf3229",
-      "translated_at": null,
-      "qa_passed": null
-    },
-    "ae80b322eca9": {
-      "url": "https://help.gohighlevel.com/support/solutions/articles/155000003371-workflow-action-ivr-connect-call",
-      "title_en": "Workflow Action - IVR Connect Call",
-      "category": "workflows",
-      "folder": "IVR Workflow Actions",
-      "file_path": null,
-      "source_modified": "Sun, 8 Sep, 2024 at  2:17 PM",
-      "checksum": "05b5595084802702",
       "translated_at": null,
       "qa_passed": null
     },
@@ -6829,17 +6576,6 @@
       "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/06-사이트/퍼널-웹사이트/funnels-websites-creating-categories-in-the-navigation-menu.md",
       "source_modified": "Fri, 18 Jul, 2025 at 12:55 PM",
       "checksum": "b51f8718dd588b2e",
-      "translated_at": "2026-08-11",
-      "qa_passed": true
-    },
-    "78ff20ad6ed4": {
-      "url": "https://help.gohighlevel.com/support/solutions/articles/48001156626-disabling-search-engines-from-indexing-your-website-funnel-page-using-custom-tag",
-      "title_en": "Disabling Search Engines from Indexing your Website/Funnel Page using Custom Tag",
-      "category": "sites",
-      "folder": "퍼널-웹사이트",
-      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/06-사이트/퍼널-웹사이트/disabling-search-engines-from-indexing-your-website-funnel-page-using-custom-tag.md",
-      "source_modified": "Thu, 3 Sep, 2020 at  9:38 AM",
-      "checksum": "32a7024838257f59",
       "translated_at": "2026-08-11",
       "qa_passed": true
     },
@@ -7349,17 +7085,6 @@
       "translated_at": "2026-09-01",
       "qa_passed": true
     },
-    "a096c6aca352": {
-      "url": "https://help.gohighlevel.com/support/solutions/articles/48001153720-how-to-set-up-root-domain-subdomain-for-funnels-websites",
-      "title_en": "How to Set Up Root Domain/Subdomain for Funnels/Websites",
-      "category": "sites",
-      "folder": "트러블슈팅",
-      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/06-사이트/트러블슈팅/how-to-set-up-root-domain-subdomain-for-funnels-websites.md",
-      "source_modified": "Thu, 20 Aug, 2026 at  9:12 AM",
-      "checksum": "309fd6ea6ae64023",
-      "translated_at": "2026-09-01",
-      "qa_passed": true
-    },
     "45ff01a66cd6": {
       "url": "https://help.gohighlevel.com/support/solutions/articles/155000008497-workflow-action-ai-image-generation",
       "title_en": "Workflow Action – AI Image Generation",
@@ -7381,6 +7106,325 @@
       "checksum": "5e8c0fc91156aee9",
       "translated_at": "2026-09-01",
       "qa_passed": false
+    },
+    "60021ac7a7a1": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000008627-how-to-use-the-contact-overlay-in-highlevel",
+      "title_en": "How to Use the Contact Overlay in HighLevel",
+      "category": "contacts",
+      "folder": "연락처-상세",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/02-연락처/연락처-상세/how-to-use-the-contact-overlay-in-highlevel.md",
+      "source_modified": "Fri, 4 Sep, 2026 at  9:19 AM",
+      "checksum": "fe05fb9654b6f9db",
+      "translated_at": "2026-10-02",
+      "qa_passed": false
+    },
+    "120ba83b05bd": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000008705-organize-and-personalize-tags-with-categories-and-colors",
+      "title_en": "Organize and Personalize Tags with Categories and Colors",
+      "category": "contacts",
+      "folder": "연락처-기본",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/02-연락처/연락처-기본/organize-and-personalize-tags-with-categories-and-colors.md",
+      "source_modified": "Mon, 21 Sep, 2026 at  9:30 AM",
+      "checksum": "6334d8099ff7c9ad",
+      "translated_at": "2026-10-02",
+      "qa_passed": false
+    },
+    "eaee4a61e2ba": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000006708-understanding-trigger-links-in-hirise-design",
+      "title_en": "Understanding Trigger Links in HiRise Design",
+      "category": "conversations",
+      "folder": "대화",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/03-대화/대화/understanding-trigger-links-in-hirise-design.md",
+      "source_modified": "Wed, 15 Oct, 2025 at 10:46 PM",
+      "checksum": "b86286dd45ce28fd",
+      "translated_at": "2026-10-02",
+      "qa_passed": false
+    },
+    "ab4d860d40a6": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000008437-third-party-calendar-sync-with-services-v2-",
+      "title_en": "Third-Party Calendar Sync with Services (v2)",
+      "category": "calendars",
+      "folder": "서비스",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/04-캘린더-예약/서비스/third-party-calendar-sync-with-services-v2-.md",
+      "source_modified": "Thu, 17 Sep, 2026 at  1:34 PM",
+      "checksum": "04fbe6b78fca0951",
+      "translated_at": "2026-10-02",
+      "qa_passed": true
+    },
+    "41a7adc1c3ba": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000008827-edit-service-prices-for-individual-appointments",
+      "title_en": "Edit Service Prices for Individual Appointments",
+      "category": "calendars",
+      "folder": "서비스",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/04-캘린더-예약/서비스/edit-service-prices-for-individual-appointments.md",
+      "source_modified": "Wed, 23 Sep, 2026 at  7:23 AM",
+      "checksum": "1a3931f35c881316",
+      "translated_at": "2026-10-02",
+      "qa_passed": false
+    },
+    "50def8d4a748": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000008750-how-to-set-up-self-service-cancellations-for-rentals",
+      "title_en": "How to Set Up Self-Service Cancellations for Rentals",
+      "category": "calendars",
+      "folder": "렌탈",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/04-캘린더-예약/렌탈/how-to-set-up-self-service-cancellations-for-rentals.md",
+      "source_modified": "Tue, 15 Sep, 2026 at 10:27 AM",
+      "checksum": "6e54beb430e8c18a",
+      "translated_at": "2026-10-02",
+      "qa_passed": true
+    },
+    "a32965ed56c5": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/48001184594-troubleshoot-a-missing-google-calendar-account-in-highlevel",
+      "title_en": "Troubleshoot a Missing Google Calendar Account in HighLevel",
+      "category": "calendars",
+      "folder": "트러블슈팅",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/04-캘린더-예약/트러블슈팅/troubleshoot-a-missing-google-calendar-account-in-highlevel.md",
+      "source_modified": "Tue, 15 Sep, 2026 at 10:38 AM",
+      "checksum": "10313039afb8e43e",
+      "translated_at": "2026-10-02",
+      "qa_passed": true
+    },
+    "01e4353116d3": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000008806-expanded-custom-field-types-and-configuration-options-in-highlevel",
+      "title_en": "Expanded Custom Field Types and Configuration Options in HighLevel",
+      "category": "opportunities",
+      "folder": "시작하기",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/05-기회-파이프라인/시작하기/expanded-custom-field-types-and-configuration-options-in-highlevel.md",
+      "source_modified": "Mon, 21 Sep, 2026 at 11:39 AM",
+      "checksum": "8874a490be448952",
+      "translated_at": "2026-10-02",
+      "qa_passed": false
+    },
+    "e50ce0a3922f": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/48001158124-stripe-troubleshooting-why-is-my-stripe-plan-not-shown-in-the-funnel-products-",
+      "title_en": "Stripe Troubleshooting | Why is my Stripe Plan not shown in the Funnel Products?",
+      "category": "sites",
+      "folder": "퍼널-웹사이트",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/06-사이트/퍼널-웹사이트/stripe-troubleshooting-why-is-my-stripe-plan-not-shown-in-the-funnel-products-.md",
+      "source_modified": "Wed, 16 Sep, 2026 at  9:09 PM",
+      "checksum": "6aba90179d5a5d1c",
+      "translated_at": "2026-10-02",
+      "qa_passed": true
+    },
+    "779754f37f9e": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/48001158141-how-to-add-a-slider-carousel-to-your-funnels-websites",
+      "title_en": "How to Add a Slider / Carousel to your Funnels & Websites",
+      "category": "sites",
+      "folder": "퍼널-웹사이트",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/06-사이트/퍼널-웹사이트/how-to-add-a-slider-carousel-to-your-funnels-websites.md",
+      "source_modified": "Fri, 11 Sep, 2020 at  2:13 PM",
+      "checksum": "997afd4e385dc31d",
+      "translated_at": "2026-10-02",
+      "qa_passed": true
+    },
+    "4d794a45a91a": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/48001158314-delay-appearance-of-elements-on-funnels-or-websites-using-the-minute-timer",
+      "title_en": "Delay Appearance of Elements on Funnels or Websites using the Minute Timer",
+      "category": "sites",
+      "folder": "퍼널-웹사이트",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/06-사이트/퍼널-웹사이트/delay-appearance-of-elements-on-funnels-or-websites-using-the-minute-timer.md",
+      "source_modified": "Mon, 14 Sep, 2020 at 11:05 AM",
+      "checksum": "d41d8cd98f00b204",
+      "translated_at": "2026-10-02",
+      "qa_passed": true
+    },
+    "bbaf6fda2f3b": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/48001158589-scroll-to-elements-or-sections-in-websites-or-funnels",
+      "title_en": "Scroll to Elements or Sections in Websites or Funnels",
+      "category": "sites",
+      "folder": "퍼널-웹사이트",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/06-사이트/퍼널-웹사이트/scroll-to-elements-or-sections-in-websites-or-funnels.md",
+      "source_modified": "Thu, 12 Feb, 2026 at  4:58 PM",
+      "checksum": "0b28a7a81b2f2426",
+      "translated_at": "2026-10-02",
+      "qa_passed": true
+    },
+    "81cd8673d868": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/48001161151-how-to-have-different-websites-for-desktop-and-phone",
+      "title_en": "How to have different websites for desktop and phone",
+      "category": "sites",
+      "folder": "퍼널-웹사이트",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/06-사이트/퍼널-웹사이트/how-to-have-different-websites-for-desktop-and-phone.md",
+      "source_modified": "Wed, 1 Nov, 2023 at  1:37 AM",
+      "checksum": "d41d8cd98f00b204",
+      "translated_at": "2026-10-02",
+      "qa_passed": true
+    },
+    "e10aa2c42f96": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/48001164101-how-to-properly-add-a-hyperlink-to-funnels-websites",
+      "title_en": "How to properly add a Hyperlink to funnels/websites",
+      "category": "sites",
+      "folder": "퍼널-웹사이트",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/06-사이트/퍼널-웹사이트/how-to-properly-add-a-hyperlink-to-funnels-websites.md",
+      "source_modified": "Tue, 3 Nov, 2020 at 11:59 AM",
+      "checksum": "d41d8cd98f00b204",
+      "translated_at": "2026-10-02",
+      "qa_passed": true
+    },
+    "464000bcbf47": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/48001220287-how-to-add-and-edit-seo-information-for-blog-posts",
+      "title_en": "How to Add and Edit SEO Information for Blog Posts",
+      "category": "sites",
+      "folder": "블로그",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/06-사이트/블로그/how-to-add-and-edit-seo-information-for-blog-posts.md",
+      "source_modified": "Thu, 3 Sep, 2026 at  8:51 AM",
+      "checksum": "338c3811b1146130",
+      "translated_at": "2026-10-02",
+      "qa_passed": false
+    },
+    "df800da77cbc": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/48001227671-how-to-schedule-a-blog-post-in-highlevel",
+      "title_en": "How to Schedule a Blog Post in HighLevel",
+      "category": "sites",
+      "folder": "블로그",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/06-사이트/블로그/how-to-schedule-a-blog-post-in-highlevel.md",
+      "source_modified": "Thu, 3 Sep, 2026 at 10:02 AM",
+      "checksum": "38bb93c48764e6ad",
+      "translated_at": "2026-10-02",
+      "qa_passed": false
+    },
+    "f939a84f56ef": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/48001214712-list-of-blocked-wordpress-plugins",
+      "title_en": "List of blocked WordPress plugins",
+      "category": "sites",
+      "folder": "워드프레스",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/06-사이트/워드프레스/list-of-blocked-wordpress-plugins.md",
+      "source_modified": "Fri, 7 Feb, 2025 at  1:47 AM",
+      "checksum": "8080c7f35801cc46",
+      "translated_at": "2026-10-02",
+      "qa_passed": true
+    },
+    "da8dcaee41cb": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000004090-right-sidebar-in-form-and-survey-builder",
+      "title_en": "Right Sidebar in Form and Survey Builder",
+      "category": "sites",
+      "folder": "폼",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/06-사이트/폼/right-sidebar-in-form-and-survey-builder.md",
+      "source_modified": "Wed, 9 Sep, 2026 at 11:47 PM",
+      "checksum": "87445a6e23e530f4",
+      "translated_at": "2026-10-02",
+      "qa_passed": true
+    },
+    "b2afee7df522": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/48000979915-how-to-access-and-export-survey-submissions",
+      "title_en": "How to Access and Export Survey Submissions",
+      "category": "sites",
+      "folder": "설문",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/06-사이트/설문/how-to-access-and-export-survey-submissions.md",
+      "source_modified": "Tue, 8 Sep, 2026 at  2:45 AM",
+      "checksum": "e706ce2ef7317030",
+      "translated_at": "2026-10-02",
+      "qa_passed": false
+    },
+    "5c0f79d92687": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000008711-schedule-form-survey-quiz-availability-with-custom-open-expiry-experiences",
+      "title_en": "Schedule Form, Survey & Quiz Availability with Custom Open & Expiry Experiences",
+      "category": "sites",
+      "folder": "설문",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/06-사이트/설문/schedule-form-survey-quiz-availability-with-custom-open-expiry-experiences.md",
+      "source_modified": "Fri, 11 Sep, 2026 at  1:37 AM",
+      "checksum": "949a436c1d12b2a7",
+      "translated_at": "2026-10-02",
+      "qa_passed": true
+    },
+    "0132d29b6eba": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000006967-customizable-message-field-in-chat-widgets",
+      "title_en": "Customizable Message Field in Chat Widgets",
+      "category": "sites",
+      "folder": "채팅-위젯",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/06-사이트/채팅-위젯/customizable-message-field-in-chat-widgets.md",
+      "source_modified": "Tue, 18 Nov, 2025 at  9:28 AM",
+      "checksum": "2650fe0dc821b0b9",
+      "translated_at": "2026-10-02",
+      "qa_passed": false
+    },
+    "6f750c49dc97": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000008974-create-app-qr-codes-for-ios-and-android",
+      "title_en": "Create App QR Codes for iOS and Android",
+      "category": "sites",
+      "folder": "QR코드",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/06-사이트/QR코드/create-app-qr-codes-for-ios-and-android.md",
+      "source_modified": "Sat, 26 Sep, 2026 at  8:59 PM",
+      "checksum": "b1d5e0127e43da8b",
+      "translated_at": "2026-10-02",
+      "qa_passed": true
+    },
+    "3e8053a4f64c": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/48001153720-set-up-a-root-domain-or-subdomain-for-highlevel-sites",
+      "title_en": "Set Up a Root Domain or Subdomain for HighLevel Sites",
+      "category": "sites",
+      "folder": "트러블슈팅",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/06-사이트/트러블슈팅/set-up-a-root-domain-or-subdomain-for-highlevel-sites.md",
+      "source_modified": "Sun, 27 Sep, 2026 at  1:40 AM",
+      "checksum": "7f5a7db04d99dd9e",
+      "translated_at": "2026-10-02",
+      "qa_passed": true
+    },
+    "2ecf26615cdf": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000002561-how-to-set-up-different-domain-types-in-highlevel-websites-email-wordpress-more",
+      "title_en": "How to Set Up Different Domain Types in HighLevel: Websites, Email, WordPress & More",
+      "category": "sites",
+      "folder": "일반-설정",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/06-사이트/일반-설정/how-to-set-up-different-domain-types-in-highlevel-websites-email-wordpress-more.md",
+      "source_modified": "Thu, 10 Sep, 2026 at  5:09 AM",
+      "checksum": "ceaa4ba8e2e79124",
+      "translated_at": "2026-10-02",
+      "qa_passed": true
+    },
+    "39eec7a80436": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000005678-how-to-enable-and-rebill-workflow-premium-features",
+      "title_en": "How to Enable and Rebill Workflow Premium Features",
+      "category": "workflows",
+      "folder": "시작하기",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/07-워크플로우/시작하기/how-to-enable-and-rebill-workflow-premium-features.md",
+      "source_modified": "Mon, 28 Sep, 2026 at  7:20 AM",
+      "checksum": "2306fec7865d369e",
+      "translated_at": "2026-10-02",
+      "qa_passed": true
+    },
+    "beb47e5241e6": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000002674-workflow-trigger-custom-date-reminder",
+      "title_en": "Workflow Trigger - Custom Date Reminder",
+      "category": "workflows",
+      "folder": "Contact Workflow Triggers",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/07-워크플로우/Contact Workflow Triggers/workflow-trigger-custom-date-reminder.md",
+      "source_modified": "Tue, 29 Sep, 2026 at  3:40 AM",
+      "checksum": "285dc33aa41f7240",
+      "translated_at": "2026-10-02",
+      "qa_passed": false
+    },
+    "19e3ff494f39": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000003467-workflow-action-appointment-booking-conversation-ai-booking-bot",
+      "title_en": "Workflow Action - Appointment Booking Conversation AI Booking Bot",
+      "category": "workflows",
+      "folder": "Communication Workflow Actions",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/07-워크플로우/Communication Workflow Actions/workflow-action-appointment-booking-conversation-ai-booking-bot.md",
+      "source_modified": "Wed, 23 Sep, 2026 at  7:14 AM",
+      "checksum": "4496ec5efa70351f",
+      "translated_at": "2026-10-02",
+      "qa_passed": false
+    },
+    "ea6de0c58d97": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000008742-workflow-action-ai-email-parser",
+      "title_en": "Workflow Action - AI Email Parser",
+      "category": "workflows",
+      "folder": "Workflow AI Workflow Actions",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/07-워크플로우/Workflow AI Workflow Actions/workflow-action-ai-email-parser.md",
+      "source_modified": "Mon, 14 Sep, 2026 at  7:30 AM",
+      "checksum": "a47aaa9de7a40b48",
+      "translated_at": "2026-10-02",
+      "qa_passed": true
+    },
+    "620e5692c0b2": {
+      "url": "https://help.gohighlevel.com/support/solutions/articles/155000003371-local-presence-dialing-with-the-highlevel-phone-system",
+      "title_en": "Local Presence Dialing with the HighLevel Phone System",
+      "category": "workflows",
+      "folder": "IVR Workflow Actions",
+      "file_path": "/home/runner/work/hyperclass-help-ko/hyperclass-help-ko/docs/07-워크플로우/IVR Workflow Actions/local-presence-dialing-with-the-highlevel-phone-system.md",
+      "source_modified": "Mon, 28 Sep, 2026 at  8:59 AM",
+      "checksum": "2e088ab809a6f995",
+      "translated_at": "2026-10-02",
+      "qa_passed": true
     }
   }
 }
