@@ -1,4 +1,4 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.10.0
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.11.0
  * Agency Settings → Company → Whitelabel → Custom Code → Custom JavaScript 칸.
  * ⚠️ 이 칸은 **HTML 주입 필드**다. script 태그로 감싸야 실행된다.
  *    (ClientClub customJs 는 반대로 태그를 거부한다 — 두 필드를 혼동하지 말 것)
@@ -58,12 +58,16 @@
   }
 
   // ▼▼▼ 단계적 배포 ▼▼▼
-  // 확대할 때 이 배열을 [] 로 비우세요. 비면 전 서브계정에 적용됩니다.
-  // 값이 있으면 그 로케이션 ID 에서만 동작하고 나머지는 영어 그대로입니다.
-  var ALLOW = ['r6JD1nsqtk6Oln28fgrj'];
+  // 비어 있으면 전 서브계정(/v2/location/<id>/…)에 적용된다 — 2026-10-08 전체 개방(벤자민 지시).
+  // 값을 넣으면 그 로케이션 ID 에서만 동작한다(다시 좁혀야 할 때).
+  // 어느 쪽이든 에이전시 화면(/agency_dashboard 등)은 범위 밖 — 레거시 레이어가 맡는다.
+  var ALLOW = [];
   // ▲▲▲ 단계적 배포 ▲▲▲
   var gate = ALLOW.length > 0;
 
+  function remoteOff() {
+    try { return localStorage.getItem('hcKoRemoteOff') === '1'; } catch (e) { return false; }
+  }
   function locOf() {
     var m = location.pathname.match(/\/v2\/location\/([^/]+)/);
     return m ? m[1] : null;
@@ -77,9 +81,12 @@
     // 원인을 확인할 수 있어야 하고(안 그러면 excluded 값을 볼 방법이 없다),
     // ② 이 앱은 새로고침 없이 계정을 바꾸므로 라우트 변경마다 다시 봐야 한다.
     if (excluded()) return false;
-    if (!ALLOW.length) return true;
+    if (remoteOff()) return false;
     var l = locOf();
-    return !!l && ALLOW.indexOf(l) >= 0;
+    // 빈 ALLOW 도 서브계정 라우트로 한정한다. 종전 코드는 빈 배열이면 무조건 true 라
+    // 개방하는 순간 검증한 적 없는 에이전시 화면까지 v4 가 붙었다(DEPLOY-v4 표의 설명과 어긋남).
+    if (!l) return false;
+    return !ALLOW.length || ALLOW.indexOf(l) >= 0;
   }
 
   /* ---------- P2. 사전 REV — 포인터 캐시 → 내장 순 ---------- */
@@ -87,7 +94,7 @@
   // @main 고정이면 jsDelivr 24h + TTL 6h 가 직렬로 쌓여 최악 30시간 지연된다.
   // 내장 REV 는 포인터를 한 번도 못 받은 첫 방문과, 포인터 REV 로드 실패 시의 안전망이다.
   // 슬롯 교체 없이 사전을 갱신하려면 data/hc-ko-app-rev.json 의 rev 만 바꾸면 된다(CI 봇이 한다).
-  var REV_BUILTIN = '81a235c06fd7a8c65ba720b3642fe72a5a4af817';
+  var REV_BUILTIN = 'c9879e00e62fc35c7076d8360cfc2dbc11775806';
   var POINTER_URL = 'https://raw.githubusercontent.com/benjaminhyperclass/hyperclass-help-ko/main/data/hc-ko-app-rev.json';
   // 'hc-ko-app-' 접두사를 쓰지 않는다 — purgeOldCaches() 가 그 접두사 버킷을 전부 지운다.
   var POINTER_CACHE = 'hc-ko-pointer';
@@ -123,7 +130,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.10.0',
+    version: '4.11.0',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -134,6 +141,7 @@
       s.allow = ALLOW.slice();
       s.location = locOf();       // 지금 보고 있는 로케이션 (/v2/location/ 기준)
       s.excluded = excluded();    // 서브계정 옵트아웃 — 레거시 hcEx() 와 같은 판정
+      s.remoteOff = remoteOff();  // 포인터 파일의 "off": true (원격 킬스위치)
       s.allowedHere = allowed();  // 여기에 적용되는가 (excluded 가 true 면 무조건 false)
       s.booted = booted;
       s.suspended = suspended;    // 비허용 로케이션으로 이동해 멈춘 상태인가
@@ -370,7 +378,7 @@
     }
   }
   function scanApps() {
-    if (!core || suspended) return;
+    if (!core || suspended || deferred) return;
     var els = document.querySelectorAll('*');
     for (var i = 0; i < els.length; i++) {
       var app = els[i].__vue_app__;
@@ -526,6 +534,10 @@
   // Cache Storage 가 없거나 거부하는 브라우저(사파리·파이어폭스 프라이빗)를 위해 rev 한 줄은
   // localStorage 에도 둔다. 없으면 그 브라우저는 영원히 내장 REV 로만 부팅해 포인터·롤백이 안 닿는다.
   var LS_REV = 'hcKoRev', LS_BAD = 'hcKoBadRev';
+  // 원격 킬스위치 (v4.11) — 포인터 파일에 "off": true 를 커밋하면 다음 로드부터 전 고객에서 v4 가 서지 않는다.
+  // 전체 개방 후엔 슬롯 교체 없이 끌 수단이 이것뿐이다. 꺼져 있어도 포인터는 계속 읽어
+  // "off": false 로 되돌리면 그다음 로드부터 다시 켜진다. 레거시 레이어는 이것과 무관하다.
+  var LS_OFF = 'hcKoRemoteOff';
   function lsGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
   function lsSet(k, v) { try { if (v === null) localStorage.removeItem(k); else localStorage.setItem(k, v); } catch (e) {} }
   // 사전 로드에 실패한 rev. 도달 불가 커밋(force push·gc)이면 포인터가 같은 값을 계속 주므로
@@ -562,6 +574,8 @@
       }).then(function (txt) {
         var d = JSON.parse(txt);
         if (!d || !SHA_RE.test(String(d.rev))) throw new Error('bad pointer');
+        lsSet(LS_OFF, d.off === true ? '1' : null);
+        if (d.off === true) log('원격 킬스위치 켜짐 — 다음 로드부터 v4 중단');
         if (isBad(d.rev)) { log('포인터가 로드 실패했던 REV 를 가리킴 — 무시', d.rev.slice(0, 7)); return; }
         if (d.rev !== REV) { revNext = d.rev; log('새 REV 감지 — 다음 로드에 반영', d.rev.slice(0, 7)); }
         lsSet(LS_REV, d.rev);
@@ -615,26 +629,39 @@
       purgeOldCaches();
       core = r[0] || {}; core.host = core.host || {}; core.flat = core.flat || {};
       T = core._text || null;
-      if (r[1]) setupHost(); else log('host composer not found in 20s');
-      if (T) pass(document.body);
-      mo.observe(document.documentElement, { subtree: true, childList: true, characterData: true, attributes: true, attributeFilter: ATTRS });
-      scanApps();
-      scanIv = setInterval(scanApps, 5000);
+      hostFound = !!r[1];
+      // 첫 방문은 사전(수 MB)을 받는 동안 사용자가 제외 계정·에이전시 화면으로 옮겨 갈 수 있다.
+      // 그때 바로 적용하면 그 화면이 한국어가 되고 suspended 라 이후 새로고침도 걸리지 않는다.
+      // 적용은 허용 로케이션으로 돌아올 때(resume)까지 미룬다. 사전 다운로드는 그대로 둔다.
+      if (suspended || !allowed()) { deferred = true; log('부팅 중 비허용 화면으로 이동 — 적용 보류'); }
+      else start();
       return load(URL_APPS, function (nd) { appsDict = nd.apps || {}; appsKeys = null; applyPendingApps(); });
     }).then(function (a) {
       if (a) {
         appsDict = a.apps || {}; appsKeys = null;
-        scanNow();
+        if (!deferred) scanNow();
         log('apps dict loaded', Object.keys(appsDict).length);
       }
     }).catch(function (e) { log('boot failed', e); });
   }
+  var deferred = false, hostFound = false;
+  function start() {
+    if (hostFound) setupHost(); else if (!waitHostLate()) log('host composer not found in 20s');
+    if (T) pass(document.body);
+    mo.observe(document.documentElement, { subtree: true, childList: true, characterData: true, attributes: true, attributeFilter: ATTRS });
+    scanApps();
+    if (!scanIv) scanIv = setInterval(scanApps, 5000);
+  }
+  // 보류 뒤 재개 시점엔 호스트가 이미 떠 있을 수 있다 — 한 번 더 찾아본다.
+  function waitHostLate() { var el = document.getElementById('app'); return !!(el && el.__vue_app__ && composerOf(el.__vue_app__) && setupHost()); }
 
   // 비허용 로케이션으로 넘어갔을 때. 이미 i18n 카탈로그에 병합된 한국어는
   // 되돌릴 수 없지만, 텍스트 치환과 새 앱 적용은 여기서 멈춘다.
   // 완전히 영어로 돌리려면 새로고침이 필요하다.
   function suspend() {
-    if (suspended) return;
+    // 이미 멈춘 상태(에이전시 화면 등)에서 제외 계정으로 들어오는 경로도 새로고침이 필요하다.
+    // 종전엔 여기서 바로 return 해 A → 에이전시 → 제외 계정 순서면 한국어가 남았다.
+    if (suspended) { reloadIfExcluded(); return; }
     suspended = true;
     try { mo.disconnect(); } catch (e) {}
     if (scanIv) { clearInterval(scanIv); scanIv = null; }
@@ -649,9 +676,11 @@
     // 루프는 나지 않는다: 새로고침 후 excluded() 가 true 라 allowed() 가 false 이고,
     // boot() 가 아예 실행되지 않아 dirty 가 다시 서지 않는다.
     // 새로고침은 **옵트아웃 계정** 에만 건다.
-    // 단순히 ALLOW 밖인 곳(에이전시 뷰, 아직 확대 안 한 서브계정)은 우리 계정이라
-    // 카탈로그에 한국어가 남아도 해가 없다. 거기까지 새로고침하면 계정을 옮길 때마다
-    // 페이지가 통째로 다시 뜨는 셈이라 체감이 나쁘다.
+    // 단순히 범위 밖인 곳(에이전시 뷰)은 우리 화면이라 카탈로그에 한국어가 남아도 해가 없다.
+    // 거기까지 새로고침하면 계정을 옮길 때마다 페이지가 통째로 다시 뜨는 셈이라 체감이 나쁘다.
+    reloadIfExcluded();
+  }
+  function reloadIfExcluded() {
     if (dirty && excluded()) {
       dirty = false;
       log('옵트아웃 계정 — 새로고침으로 영어 복귀');
@@ -660,6 +689,7 @@
   }
 
   function resume() {
+    if (deferred) { deferred = false; suspended = false; log('보류했던 적용 시작', locOf()); start(); scanNow(); return; }
     if (!suspended) return;
     suspended = false;
     try {
@@ -680,5 +710,8 @@
   window.addEventListener('routeChangeEvent', onRoute);
 
   if (allowed()) boot();
-  else log('게이트에 막힘 — 현재 로케이션:', locOf(), '/ 허용:', ALLOW.join(','));
+  else {
+    log('게이트에 막힘 — 현재 로케이션:', locOf(), '/ 허용:', ALLOW.length ? ALLOW.join(',') : '전 서브계정', remoteOff() ? '(원격 킬스위치)' : '');
+    if (remoteOff()) refreshPointer();   // 꺼진 상태에서도 포인터를 읽어야 원격으로 다시 켤 수 있다
+  }
 })();

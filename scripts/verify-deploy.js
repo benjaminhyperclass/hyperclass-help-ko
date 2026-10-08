@@ -1,7 +1,7 @@
 /* ─────────────────────────────────────────────────────────────────────
    hcKo 배포 검증 — Custom JS 교체 직후 1회 실행
 
-   실행 위치: 허용 로케이션 아무 화면
+   실행 위치: 서브계정(로케이션) 아무 화면 — v4.11 부터 전 서브계정 (에이전시 화면 제외)
              https://app.hyperclass.ai/v2/location/r6JD1nsqtk6Oln28fgrj/dashboard
    실행 방법: F12 → Console → 아래 전체 붙여넣기 → Enter
              (Chrome 이 "allow pasting" 을 요구하면 그대로 타이핑 후 Enter)
@@ -23,7 +23,7 @@
    ───────────────────────────────────────────────────────────────────── */
 (() => {
   const EXPECT = {
-    version: '4.10.0',
+    version: '4.11.0',
     revPrefix: 'c9879e0',
     textEntries: 9105,
   };
