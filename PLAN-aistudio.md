@@ -41,4 +41,7 @@
 - [x] 1 수집기 `scripts/hc-aistudio-collect.js` (node --check 통과) — 영향: 없음(콘솔 전용, 리포 산출물 아님)
 - [x] 5(선행) 로더 게이트: ALLOW=[] + 빈 ALLOW 는 `/v2/location/` 한정 · REV_BUILTIN 81a235c→c9879e0(한 달 소킹) · 4.11.0. vm 스모크 6경로 기대대로(서브계정 true / 에이전시·제외·`/location/`단독 false) — 영향: 미커밋. 슬롯 교체 1회 필요, DEPLOY-v4·STATE 갱신 필요
 - [x] 2 수집분 분석 `_source/hc-aistudio-2026-10-08.json` — **AI Studio = `/vibe` 라우트, 본문은 교차 출처 iframe `leadgen-vibe-ai-builder.leadconnectorhq.com`** → Custom JS(v4·레거시) 접근 불가. 바깥 셸에서 잡힌 vibe 영문 25건뿐(대부분 계정 데이터·전화 위젯). 라이브 로더는 아직 4.9.2/81a235c(76c557f 슬롯 교체 미실시) — 영향: 번역 경로 결정 필요(확장 vs 셸만) → 벤자민 판단 대기
-- [ ] 6(선행) 로더 게이트 적대적 리뷰 — 서브에이전트 진행 중
+- [x] 6(선행) 로더 적대적 리뷰 → E1(에이전시 경유 제외계정 새로고침 누락)·E2(부팅 경쟁)·E5(원격 킬스위치) 반영, 하네스 8/8 PASS(구 코드는 4 FAIL) — E3(_text 짧은 업종 단어 44건 신규 노출)·E4(성능)·E6/E7 은 보고만
+- [x] 7(로더) 45e5a5e v4.11.0 push, CDN=raw=local=git 일치 · 12b0667 DEPLOY-v4/STATE — 영향: 슬롯 교체(벤자민) 대기
+- 발견: validate CI 가 C10 15건으로 실패 — 원인은 이번 변경 아님. 09-15 ui-updater 봇(757d86f)이 08-22 제거한 EMA ejectModal 15종을 ghl-i18n-ko.json 에 재추가(en.json 에 원문 잔존 + 업데이터가 제외 레지스트리 미준수). v4 사전 push 시 포인터 전진을 막으므로 AI Studio 사전 반영 전 처리 필요 — 벤자민 판단
+- [ ] 2b 확장 수집분(hc-gap-*.json) 대기 → en.json 병합 → ui-updater
