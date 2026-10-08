@@ -3,22 +3,22 @@
 > **규칙: 매 배포 라운드 종료 시 이 파일을 갱신한다.** `data/DECISIONS.md`(결정)와 짝이 되는 **현재 상태** 파일이다.
 > 새 세션은 이 파일 → `PLAN-*.md` 순으로 읽고 시작한다. 기억에 의존해 재개하지 않는다.
 
-**갱신** 2026-09-09 (포인터 라운드 완료 · 4.2.6 첫 무슬롯 배포 성공 · 슬롯 마지막 교체 대기)
+**갱신** 2026-10-08 (v4.11.0 전 서브계정 개방 로더 준비 · 슬롯 교체 대기 · AI Studio 는 교차 출처 iframe → 확장 트랙)
 
 ## 배포 좌표
 
 | 항목 | 값 |
 |---|---|
 | 사전 버전 / REV | **v4.2.6** / `c9879e00e62fc35c7076d8360cfc2dbc11775806` (strings 103,053 · _text 9,105) — **v4.10 부터 사전 REV 는 `data/hc-ko-app-rev.json`(포인터)이 정한다.** 포인터 rev = c9879e0 (by ko-app-pointer.yml, 봇 커밋 4ed156d — 첫 자동 전진) |
-| 로더 버전 / SHA | **v4.10.0** / `76c557fda02cd49d27e35b1db48358c033e1f558` (REV 포인터 SWR · 내장 REV_BUILTIN=81a235c · _text 조사 접합) |
-| Custom JS 슬롯에 실제 들어있는 로더 SHA | `0fcf2569f1e0bc26b410f4c4ea8ca35fed6979cb` (v4.9.2) → **교체 대기: 0fcf256 → 76c557f (v4.10.0). 이번이 마지막 슬롯 교체 — 이후 사전 갱신은 포인터로.** |
+| 로더 버전 / SHA | **v4.11.0** / `45e5a5e13757aecce678f63f7ec47bce9325d28e` (ALLOW=[] 전 서브계정 · 에이전시 화면 제외 · 원격 킬스위치 `off` · 내장 REV_BUILTIN=c9879e0) |
+| Custom JS 슬롯에 실제 들어있는 로더 SHA | `0fcf256` (v4.9.2, 2026-10-08 라이브 수집 `_meta.loader` 로 재확인 — 76c557f 교체는 실시되지 않음) → **교체 대기: → `45e5a5e` (v4.11.0).** 76c557f 는 건너뛴다 |
 | 레거시 DOM 레이어 핀 | `@8fabb6a/js/dashboard-ko.min.js` (스테일 핀 유지 결정 — 아래 미결) |
 | CDN 삼중 대조 | core / apps / loader 모두 CDN = raw = local = git (SHA-256), `immutable`, CORS `*` (2026-09-09) |
 
 Custom JS 칸 (Agency Whitelabel → Custom JavaScript) — **실제 슬롯은 아래 2줄뿐이다.** `HC_I18N_EXCLUDE` 선언 줄은 없고, 제외 로케이션은 두 레이어의 하드코딩 폴백(`HC_EXCLUDE_FALLBACK` / 레거시 `hcEx()`)에 의존한다(미결 #8).
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@76c557fda02cd49d27e35b1db48358c033e1f558/js/hc-ko-app-loader.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@45e5a5e13757aecce678f63f7ec47bce9325d28e/js/hc-ko-app-loader.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@8fabb6a/js/dashboard-ko.min.js"></script>
 ```
 
@@ -35,9 +35,11 @@ Custom JS 칸 (Agency Whitelabel → Custom JavaScript) — **실제 슬롯은 �
 
 ## 게이트
 
-- `ALLOW = ['r6JD1nsqtk6Oln28fgrj']` 단일 로케이션 (v4 는 여기서만 동작)
+- `ALLOW = []` — **전 서브계정**(`/v2/location/<id>/…`) (v4.11, 2026-10-08 벤자민 지시). 슬롯 교체 전까지 라이브는 여전히 r6JD 한 곳
+- 원격 킬스위치: `data/hc-ko-app-rev.json` 의 `"off": true` → 다음 로드부터 전 고객 v4 중단
 - 제외 `1r0pJRd1cQQ5DZsjSbc9` — 슬롯에 `HC_I18N_EXCLUDE` 선언이 **없어** 두 레이어의 하드코딩 폴백으로만 동작 중(미결 #8)
-- **에이전시 라우트(`/agency_dashboard` `/sub-accounts` `/snapshots` `/reselling`)는 v4 범위 밖** — `booted:false, suspended:true`. 그 화면 한국어는 레거시 레이어가 친 것.
+- **에이전시 라우트(`/agency_dashboard` `/sub-accounts` `/snapshots` `/reselling`)는 v4 범위 밖** — v4.11 부터 빈 ALLOW 도 `/v2/location/` 한정. 그 화면 한국어는 레거시 레이어가 친 것.
+- **교차 출처 iframe(워크플로우 `client-app-automation-workflows`, AI Studio `leadgen-vibe-ai-builder` 등)은 Custom JS 로 불가** — 크롬 확장(`~/Downloads/hyperclass-ko-ext`, `ghl-i18n-ko.json`+manual 사전) 트랙만 닿는다.
 
 ## 미결
 

@@ -38,8 +38,8 @@
 여기부터는 벤자민님이 직접 하셔야 합니다. Claude Code 가 할 수 있는 부분은 끝났습니다.
 
 준비된 것
-- 사전: `data/hc-ko-app-rev.json` 이 가리키는 커밋 (현재 `81a235c` = v4.2.5). 이후 갱신은 CI 봇이 포인터를 전진시킴
-- 로더: `js/hc-ko-app-loader.js` (**v4.10.0** / `76c557f…`) — `ALLOW = ['r6JD1nsqtk6Oln28fgrj']` 로 **한 곳에만** 적용되게 잠겨 있음
+- 사전: `data/hc-ko-app-rev.json` 이 가리키는 커밋 (현재 `c9879e0` = v4.2.6). 이후 갱신은 CI 봇이 포인터를 전진시킴
+- 로더: `js/hc-ko-app-loader.js` (**v4.11.0** / `45e5a5e…`) — `ALLOW = []` **전 서브계정 개방**(2026-10-08). 에이전시 화면은 범위 밖, 제외 계정은 `HC_I18N_EXCLUDE`
 
 ---
 
@@ -59,17 +59,17 @@ Agency Settings → Company → **Whitelabel → Custom Code → Custom JavaScri
 
 ```html
 <script>window.HC_I18N_EXCLUDE = ["1r0pJRd1cQQ5DZsjSbc9"];</script>
-<script src="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@76c557fda02cd49d27e35b1db48358c033e1f558/js/hc-ko-app-loader.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@45e5a5e13757aecce678f63f7ec47bce9325d28e/js/hc-ko-app-loader.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@8fabb6a/js/dashboard-ko.min.js"></script>
 ```
 
 - **첫 줄의 `HC_I18N_EXCLUDE` 를 빠뜨리지 마세요.** 이게 없으면 두 레이어 모두
   하드코딩 폴백으로만 동작합니다.
-- **세 번째 줄(기존 레이어)을 지우지 마세요.** v4 는 `ALLOW` 로 한 곳에만 걸려 있어,
-  지우면 나머지 계정이 전부 영어가 됩니다.
+- **세 번째 줄(기존 레이어)을 지우지 마세요.** 에이전시 화면 한국어는 기존 레이어 담당이고,
+  v4 가 못 덮는 잔여분도 아직 이 레이어가 받칩니다(LEGACY-REMOVAL-DECISION: 개방 → 관찰 → 제거).
 - 순서가 중요합니다 — 로더가 기존 레이어보다 **앞**이어야 합니다.
-- 저장하면 전 서브계정에 즉시 반영되지만, `ALLOW` 때문에 실제로 동작하는 곳은
-  `r6JD1nsqtk6Oln28fgrj` 하나뿐입니다. 나머지 계정은 지금까지와 똑같이 보입니다.
+- 저장하면 **전 서브계정에 즉시 반영됩니다**(v4.11). 제외 계정과 에이전시 화면만 v4 가 서지 않습니다.
+- 첫 방문 브라우저는 사전(약 5.8MB)을 한 번 받습니다. 이후엔 Cache Storage 에서 읽습니다.
 
 ## 2. 접속
 
@@ -86,7 +86,8 @@ __hcKoApp.status()
 | 항목 | 기대값 | 아니라면 |
 |---|---|---|
 | `host` | `1` | `0` 이면 호스트 카탈로그 미적용 — 콘솔에 `host composer not found` 가 찍혔는지 확인 |
-| `gate` | `true` | `false` 면 ALLOW 가 비어 전체 적용 상태 |
+| `gate` | `false` (v4.11 전체 개방) | `true` 면 ALLOW 로 좁혀진 로더 — 슬롯 SHA 확인 |
+| `remoteOff` | `false` | `true` 면 포인터 파일 `"off": true` (원격 킬스위치) |
 | `rev` | `data/hc-ko-app-rev.json` 의 `rev` | 다르면 포인터를 아직 못 받은 것(첫 방문·`revNext` 확인) 또는 포인터 REV 로드 실패(`revSource`) |
 | `revSource` | `pointer-cache` | `builtin` 은 첫 방문(다음 로드에 해결). `builtin-fallback` 이면 포인터가 가리키는 커밋의 사전을 CDN·raw 모두 못 받은 것 — 포인터 파일과 ko-app-pointer 실행 기록 확인 |
 | `revNext` | `null` | 값이 있으면 새 포인터 수신됨 — 새로고침하면 반영 |
@@ -94,7 +95,7 @@ __hcKoApp.status()
 | `unmatched` | 되도록 `0` | 0 이 아니면 콘솔의 `no dict for app` 로그에서 어떤 앱인지 확인 |
 | `fuzzy` | 0 이어도 정상 | 값이 있으면 GHL 이 네임스페이스를 바꿨다는 신호 — 다음 크롤 때 반영 |
 | `textHits` | 계속 증가 | 0 이면 `_text` 레이어가 안 도는 것 |
-| `allowedHere` | `true` | `false` 면 지금 화면이 허용 로케이션이 아님 |
+| `allowedHere` | `true` | `false` 면 에이전시 화면·제외 계정·원격 킬스위치 중 하나 |
 | `booted` | `true` | `false` 면 게이트에 막혀 아직 시작 안 함 |
 | `suspended` | `false` | `true` 면 비허용 로케이션으로 이동해 멈춘 상태 |
 | `coreLoaded` / `appsLoaded` | 둘 다 `true` | `false` 면 CDN 에서 사전을 못 받음 |
@@ -146,7 +147,7 @@ __hcKoApp.on()    // 되돌리기
 이게 동작하지 않으면 **전체 확대하지 마세요.** 문제가 생겼을 때 되돌릴 방법이
 Custom JS 칸을 비우는 것밖에 없어집니다.
 
-## 8. 전체 확대
+## 8. 전체 확대 — ✅ 2026-10-08 v4.11.0 로 완료 (아래는 기록)
 
 1~7 이 문제없으면 `js/hc-ko-app-loader.js` 의
 
@@ -160,7 +161,7 @@ var ALLOW = ['r6JD1nsqtk6Oln28fgrj'];
 var ALLOW = [];
 ```
 
-로 바꿔 커밋하고, 그 내용을 Custom JavaScript 칸에 다시 붙여 넣습니다.
+로 바꿔 커밋하고, Custom JavaScript 칸의 로더 `<script src>` SHA 를 그 커밋으로 교체합니다(§1). 본문을 붙여 넣지 않습니다.
 
 ---
 
@@ -175,7 +176,7 @@ var ALLOW = [];
 | 갱신했는데 옛 사전 | `status().revNext` 에 새 SHA 가 있으면 정상(다음 로드 반영). 없으면 `status().pointerFail` 확인 — raw 접근이 막힌 것. 포인터 파일 raw URL 을 직접 열어 200 인지 확인 |
 | 일부 화면만 영어 | `status().unmatched` 와 `no dict for app` 로그 |
 | 화면이 뒤집히듯 깜빡임 | 2중 구조 때문 — 기존 사전 축소가 필요 (별도 작업) |
-| 급하게 꺼야 함 | Custom JS 칸의 `ALLOW` 를 존재하지 않는 ID 로 바꾸거나 칸을 비움 |
+| 급하게 꺼야 함 | **전 고객:** `data/hc-ko-app-rev.json` 의 `"off"` 를 `true` 로 커밋·push → 다음 로드부터 v4 중단(raw 직결, 수 분 내). 되돌리기는 `false`. **즉시·완전:** Custom JS 칸에서 로더 줄 삭제. **한 브라우저:** `?hcko=off` |
 
 ## 사전을 고칠 때
 
