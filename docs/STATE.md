@@ -45,6 +45,13 @@ Custom JS 칸 (Agency Whitelabel → Custom JavaScript) — **실제 슬롯은 �
 - **에이전시 라우트(`/agency_dashboard` `/sub-accounts` `/snapshots` `/reselling`)는 v4 범위 밖** — v4.11 부터 빈 ALLOW 도 `/v2/location/` 한정. 그 화면 한국어는 레거시 레이어가 친 것.
 - **교차 출처 iframe(워크플로우 `client-app-automation-workflows`, AI Studio `leadgen-vibe-ai-builder` 등)은 Custom JS 로 불가** — 크롬 확장(`~/Downloads/hyperclass-ko-ext`, `ghl-i18n-ko.json`+manual 사전) 트랙만 닿는다.
 
+## AI 스튜디오 (/vibe) — 2026-10-08
+
+- 본문은 교차 출처 iframe `leadgen-vibe-ai-builder.leadconnectorhq.com` → **Custom JS(v4·레거시) 불가, 크롬 확장 전용.**
+- 확장 사전(raw `ghl-i18n-ko.json`)에 455건 추가(eab3dd3). 제외 123건은 excluded-strings 의 `AI 스튜디오(vibe iframe) 2026-10-08` 분류.
+- 한계: `{플레이스홀더}`·복수형 문구 40건은 확장이 화면 정확 일치라 번역 불가 (예: `Edited {time}`, `{count} files changed`).
+- 고객 적용은 확장 배포(웹스토어 비공개 등록)가 선행돼야 한다 — 미착수.
+
 ## 미결
 
 | # | 항목 | 상태 |
