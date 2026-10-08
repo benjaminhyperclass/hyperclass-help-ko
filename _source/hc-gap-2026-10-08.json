@@ -1,0 +1,3761 @@
+{
+  "exported_at": "2026-10-08T05:56:41.461Z",
+  "ok_count": 578,
+  "excluded_count": 47,
+  "ok_flat": {
+    ". Recent changes after this point stay in the chat and can be reapplied anytime.": ". Recent changes after this point stay in the chat and can be reapplied anytime.",
+    "2 of 2 users do not have access to AI Studio": "2 of 2 users do not have access to AI Studio",
+    "8 Oct at 14:55": "8 Oct at 14:55",
+    "AI Studio access unavailable": "AI Studio access unavailable",
+    "AI Studio enabled for selected users": "AI Studio enabled for selected users",
+    "AI Studio is disabled for your sub-account users by default. Select users who should have access.": "AI Studio is disabled for your sub-account users by default. Select users who should have access.",
+    "AI Studio is paused for now under the platform fair-use policy.": "AI Studio is paused for now under the platform fair-use policy.",
+    "AI Studio is unavailable until billing is active for the agency.": "AI Studio is unavailable until billing is active for the agency.",
+    "AI Studio is unavailable until billing is active for this account.": "AI Studio is unavailable until billing is active for this account.",
+    "AI Studio is unavailable while the agency account is inactive.": "AI Studio is unavailable while the agency account is inactive.",
+    "AI Studio is unavailable while this account is inactive.": "AI Studio is unavailable while this account is inactive.",
+    "AI Studio isn't enabled for this account.": "AI Studio isn't enabled for this account.",
+    "AI Studio usage reached {milestone} this month": "AI Studio usage reached {milestone} this month",
+    "AI usage can't be checked right now. Try again shortly.": "AI usage can't be checked right now. Try again shortly.",
+    "AI-Powered Builder": "AI-Powered Builder",
+    "Add a description to see it here": "Add a description to see it here",
+    "Add another": "Add another",
+    "Add custom domain": "Add custom domain",
+    "Add files": "Add files",
+    "Add new secret": "Add new secret",
+    "Add proper meta tags for better social sharing previews.": "Add proper meta tags for better social sharing previews.",
+    "Add reference image": "Add reference image",
+    "Add secret": "Add secret",
+    "Additional feedback (optional)": "Additional feedback (optional)",
+    "Adds selected media URLs to your prompt. You can insert up to 50 links.": "Adds selected media URLs to your prompt. You can insert up to 50 links.",
+    "Adjust limit": "Adjust limit",
+    "Adjust spending limit": "Adjust spending limit",
+    "Advanced SEO Support": "Advanced SEO Support",
+    "All projects": "All projects",
+    "All sub-account users already have access to AI Studio": "All sub-account users already have access to AI Studio",
+    "Allow search engines to index your site": "Allow search engines to index your site",
+    "Already authorized via LeadConnector": "Already authorized via LeadConnector",
+    "Also add {addDomain} and redirect traffic to {primaryDomain}": "Also add {addDomain} and redirect traffic to {primaryDomain}",
+    "Amounts between {min} and {max} are supported.": "Amounts between {min} and {max} are supported.",
+    "Apply changes": "Apply changes",
+    "Are you sure you want to delete \"{name}\"? This action cannot be undone.": "Are you sure you want to delete \"{name}\"? This action cannot be undone.",
+    "Are you sure you want to delete this folder? Projects inside will be moved out, not deleted.": "Are you sure you want to delete this folder? Projects inside will be moved out, not deleted.",
+    "Are you sure you want to exit the visual editor? You will lose your unsaved changes.": "Are you sure you want to exit the visual editor? You will lose your unsaved changes.",
+    "Ask AI to edit favicon": "Ask AI to edit favicon",
+    "Ask AI to edit meta details": "Ask AI to edit meta details",
+    "Ask AI to update your site details or icon.": "Ask AI to update your site details or icon.",
+    "Ask AI...": "Ask AI...",
+    "Ask in chat to modify the selected elements": "Ask in chat to modify the selected elements",
+    "Ask your agency to raise this sub-account's limit.": "Ask your agency to raise this sub-account's limit.",
+    "Ask your agency to raise your personal usage limit.": "Ask your agency to raise your personal usage limit.",
+    "Attaches selected images for visual context. You can add up to 5 reference images.": "Attaches selected images for visual context. You can add up to 5 reference images.",
+    "Auto-fixing build errors...": "Auto-fixing build errors...",
+    "Available once this project has its first version.": "Available once this project has its first version.",
+    "Back to Preview": "Back to Preview",
+    "Because this app uses TanStack Start (SSR), every page is already rendered on the server. That is the more reliable path for SEO crawlers.": "Because this app uses TanStack Start (SSR), every page is already rendered on the server. That is the more reliable path for SEO crawlers.",
+    "Blog / CMS": "Blog / CMS",
+    "Body - {font}": "Body - {font}",
+    "Bookmark": "Bookmark",
+    "Bookmarked": "Bookmarked",
+    "Broke existing functionality": "Broke existing functionality",
+    "Browse all": "Browse all",
+    "Build Error": "Build Error",
+    "Build a blog platform with article listing, individual post pages, and a markdown content editor.": "Build a blog platform with article listing, individual post pages, and a markdown content editor.",
+    "Build a calendar app with monthly/weekly views, event creation, and time slot scheduling.": "Build a calendar app with monthly/weekly views, event creation, and time slot scheduling.",
+    "Build a fitness tracker app with workout logging, exercise library, and progress charts.": "Build a fitness tracker app with workout logging, exercise library, and progress charts.",
+    "Build a minimal developer portfolio with project gallery and about section.": "Build a minimal developer portfolio with project gallery and about section.",
+    "Build a real-time chat interface with conversation list, message bubbles, and a message input area.": "Build a real-time chat interface with conversation list, message bubbles, and a message input area.",
+    "Build an admin dashboard with sidebar navigation, charts, and data tables.": "Build an admin dashboard with sidebar navigation, charts, and data tables.",
+    "Build error": "Build error",
+    "Build unsuccessful": "Build unsuccessful",
+    "Building project": "Building project",
+    "Built-in Integrations": "Built-in Integrations",
+    "By cloning a project, you will create a copy that you own.": "By cloning a project, you will create a copy that you own.",
+    "Calendar / Scheduling": "Calendar / Scheduling",
+    "Calendar connected": "Calendar connected",
+    "Calendar not connected": "Calendar not connected",
+    "Calendar settings opened in a new tab": "Calendar settings opened in a new tab",
+    "Certificate provisioning usually takes a few minutes after connecting.": "Certificate provisioning usually takes a few minutes after connecting.",
+    "Change primary": "Change primary",
+    "Change primary domain?": "Change primary domain?",
+    "Changing the primary domain will disable Advanced SEO Support. You'll need to re-enable it for the new primary domain.": "Changing the primary domain will disable Advanced SEO Support. You'll need to re-enable it for the new primary domain.",
+    "Chat Application": "Chat Application",
+    "Check again": "Check again",
+    "Choose a value": "Choose a value",
+    "Choose image": "Choose image",
+    "Choose your app's URL or use the generated one": "Choose your app's URL or use the generated one",
+    "Clear find": "Clear find",
+    "Clone project": "Clone project",
+    "Close tab": "Close tab",
+    "Cloud White": "Cloud White",
+    "Coach Ten": "Coach Ten",
+    "Code edited": "Code edited",
+    "Collapse all": "Collapse all",
+    "Complete previous steps first": "Complete previous steps first",
+    "Complete step 1 first": "Complete step 1 first",
+    "Complete these steps to enable": "Complete these steps to enable",
+    "Complete these steps to improve your search engine visibility.": "Complete these steps to improve your search engine visibility.",
+    "Configure secrets": "Configure secrets",
+    "Conflicting DNS records were found and will be replaced when you add records.": "Conflicting DNS records were found and will be replaced when you add records.",
+    "Conflicting records (will be replaced)": "Conflicting records (will be replaced)",
+    "Connect a custom domain and set it as primary": "Connect a custom domain and set it as primary",
+    "Connect a domain you own from any provider.": "Connect a domain you own from any provider.",
+    "Connect automatically with": "Connect automatically with",
+    "Connect domain": "Connect domain",
+    "Connect existing domain": "Connect existing domain",
+    "Connect your domain": "Connect your domain",
+    "Copies the most recent versions and chat messages. Older history isn't carried over.": "Copies the most recent versions and chat messages. Older history isn't carried over.",
+    "Copy host": "Copy host",
+    "Copy prompt": "Copy prompt",
+    "Copy value": "Copy value",
+    "Copy website link": "Copy website link",
+    "Copying files": "Copying files",
+    "Copying media": "Copying media",
+    "Copying version history": "Copying version history",
+    "Could not attach the selected media": "Could not attach the selected media",
+    "Could not save domain. Please try again.": "Could not save domain. Please try again.",
+    "Could not upload the image. Please try again.": "Could not upload the image. Please try again.",
+    "Could not use the selected media. Please try again.": "Could not use the selected media. Please try again.",
+    "Could not verify DNS records. Please check they were added correctly and try again.": "Could not verify DNS records. Please check they were added correctly and try again.",
+    "Couldn't save changes. Please try again.": "Couldn't save changes. Please try again.",
+    "Couldn't start the project upgrade": "Couldn't start the project upgrade",
+    "Crawlers see real content, not an empty JavaScript shell": "Crawlers see real content, not an empty JavaScript shell",
+    "Create Calendar": "Create Calendar",
+    "Create a calendar in your account first, then come back to connect it": "Create a calendar in your account first, then come back to connect it",
+    "Create a modern SaaS landing page with hero, features, and pricing sections.": "Create a modern SaaS landing page with hero, features, and pricing sections.",
+    "Create a project to get started.": "Create a project to get started.",
+    "Create a restaurant website with a menu, dish details, and an order cart with checkout.": "Create a restaurant website with a menu, dish details, and an order cart with checkout.",
+    "Create a sitemap.xml from your routes for search engines.": "Create a sitemap.xml from your routes for search engines.",
+    "Create a social media feed with posts, likes, comments, and a profile sidebar.": "Create a social media feed with posts, likes, comments, and a profile sidebar.",
+    "Create a task management app with drag-and-drop kanban board, task creation, and status tracking.": "Create a task management app with drag-and-drop kanban board, task creation, and status tracking.",
+    "Create a weather dashboard with current conditions, 7-day forecast, and location search.": "Create a weather dashboard with current conditions, 7-day forecast, and location search.",
+    "Create an e-commerce storefront with product grid, cart, and checkout flow.": "Create an e-commerce storefront with product grid, cart, and checkout flow.",
+    "Creating project": "Creating project",
+    "Custom domain connected": "Custom domain connected",
+    "Custom domain disconnected": "Custom domain disconnected",
+    "Custom domains": "Custom domains",
+    "DNS records could not be verified. Please check your domain settings and try again.": "DNS records could not be verified. Please check your domain settings and try again.",
+    "Danger zone": "Danger zone",
+    "Delete \"{name}\"? Code using it will stop working until you add it again.": "Delete \"{name}\"? Code using it will stop working until you add it again.",
+    "Delete project": "Delete project",
+    "Delete project?": "Delete project?",
+    "Delete secret?": "Delete secret?",
+    "Describe what you want in plain language. Get a full React + Tailwind app, ready to ship.": "Describe what you want in plain language. Get a full React + Tailwind app, ready to ship.",
+    "Describe what you want to build...": "Describe what you want to build...",
+    "Describe what your app does": "Describe what your app does",
+    "Dev mode": "Dev mode",
+    "Disable search engine visibility?": "Disable search engine visibility?",
+    "Discard unsaved changes in {count} file(s)?": "Discard unsaved changes in {count} file(s)?",
+    "Disconnect {domain}?": "Disconnect {domain}?",
+    "Dismiss banner": "Dismiss banner",
+    "Dismiss spend alert": "Dismiss spend alert",
+    "Dismiss usage notice": "Dismiss usage notice",
+    "Domain name": "Domain name",
+    "Domain options": "Domain options",
+    "Domain removed": "Domain removed",
+    "Download ZIP": "Download ZIP",
+    "Download codebase": "Download codebase",
+    "Download source code": "Download source code",
+    "Download this project's source as a ZIP archive.": "Download this project's source as a ZIP archive.",
+    "Drop any files here to add them to your message": "Drop any files here to add them to your message",
+    "Duplicate this app in a new project.": "Duplicate this app in a new project.",
+    "E-commerce": "E-commerce",
+    "Edit settings": "Edit settings",
+    "Edit slug": "Edit slug",
+    "Edited {time}": "Edited {time}",
+    "Enable AI Studio for sub-account users": "Enable AI Studio for sub-account users",
+    "Enable Advanced SEO Support": "Enable Advanced SEO Support",
+    "Enter a new name for your project.": "Enter a new name for your project.",
+    "Enter an amount between {min} and {max}.": "Enter an amount between {min} and {max}.",
+    "Expand all": "Expand all",
+    "Extra usage": "Extra usage",
+    "Extra usage is on.": "Extra usage is on.",
+    "Extra usage limit reached.": "Extra usage limit reached.",
+    "Failed to add DNS records. Please try again.": "Failed to add DNS records. Please try again.",
+    "Failed to clone project": "Failed to clone project",
+    "Failed to create project. Please try again.": "Failed to create project. Please try again.",
+    "Failed to delete project": "Failed to delete project",
+    "Failed to delete secret": "Failed to delete secret",
+    "Failed to load project settings": "Failed to load project settings",
+    "Failed to load secrets": "Failed to load secrets",
+    "Failed to load users. Please try again.": "Failed to load users. Please try again.",
+    "Failed to publish. Please try again.": "Failed to publish. Please try again.",
+    "Failed to retry this question.": "Failed to retry this question.",
+    "Failed to save secret": "Failed to save secret",
+    "Failed to save secrets": "Failed to save secrets",
+    "Failed to save setting": "Failed to save setting",
+    "Failed to send answer.": "Failed to send answer.",
+    "Failed to skip question.": "Failed to skip question.",
+    "Failed to unpublish project": "Failed to unpublish project",
+    "Failed to update slug": "Failed to update slug",
+    "Files to exclude": "Files to exclude",
+    "Files to include": "Files to include",
+    "Finalizing setup...": "Finalizing setup...",
+    "Finished thinking": "Finished thinking",
+    "Finishing up with some final touches...": "Finishing up with some final touches...",
+    "Fitness Tracker": "Fitness Tracker",
+    "Fix build errors": "Fix build errors",
+    "Form tracking connected": "Form tracking connected",
+    "Form tracking not connected": "Form tracking not connected",
+    "Form tracking unavailable": "Form tracking unavailable",
+    "Generate sitemap": "Generate sitemap",
+    "Get extra usage": "Get extra usage",
+    "Getting ready...": "Getting ready...",
+    "Go to Domains": "Go to Domains",
+    "Go to Home": "Go to Home",
+    "Go to Publish": "Go to Publish",
+    "Great, thanks": "Great, thanks",
+    "Hang on while we get everything set up": "Hang on while we get everything set up",
+    "Help AI crawlers see your content": "Help AI crawlers see your content",
+    "Help people discover your app": "Help people discover your app",
+    "Hide Details": "Hide Details",
+    "Hide value": "Hide value",
+    "Hold {key} to select multiple elements": "Hold {key} to select multiple elements",
+    "How your site appears": "How your site appears",
+    "I understand and accept the above points": "I understand and accept the above points",
+    "I'll build a calendar app with monthly/weekly views, event creation, and time slot scheduling. Let me first nail down the visual direction.": "I'll build a calendar app with monthly/weekly views, event creation, and time slot scheduling. Let me first nail down the visual direction.",
+    "I'll build the booking UI without calendar data. Ask me to connect one whenever you're ready.": "I'll build the booking UI without calendar data. Ask me to connect one whenever you're ready.",
+    "I'll build the form without CRM tracking. Ask me to connect it whenever you're ready.": "I'll build the form without CRM tracking. Ask me to connect it whenever you're ready.",
+    "Icon & title": "Icon & title",
+    "Icon type": "Icon type",
+    "If you use workflow triggers, update your workflows to point to the migrated project before publishing it.": "If you use workflow triggers, update your workflows to point to the migrated project before publishing it.",
+    "Image must be {size} MB or less": "Image must be {size} MB or less",
+    "Improve social media previews on Facebook, Twitter, and LinkedIn": "Improve social media previews on Facebook, Twitter, and LinkedIn",
+    "Improve social preview content": "Improve social preview content",
+    "Improve your SEO": "Improve your SEO",
+    "In files": "In files",
+    "Include project history": "Include project history",
+    "Incorrect code": "Incorrect code",
+    "Insert link": "Insert link",
+    "It is resetting now.": "It is resetting now.",
+    "It resets {hours} hours after your first message.": "It resets {hours} hours after your first message.",
+    "Keep building past your included allowance at provider cost, up to a monthly limit you set (max $1,000).": "Keep building past your included allowance at provider cost, up to a monthly limit you set (max $1,000).",
+    "Let's build": "Let's build",
+    "Let's build a": "Let's build a",
+    "Let's build a d": "Let's build a d",
+    "Let's build a da": "Let's build a da",
+    "Let's build a das": "Let's build a das",
+    "Let's build a dash": "Let's build a dash",
+    "Let's build a dashb": "Let's build a dashb",
+    "Let's build a dashbo": "Let's build a dashbo",
+    "Let's build a dashboa": "Let's build a dashboa",
+    "Let's build a dashboar": "Let's build a dashboar",
+    "Let's build a dashboard": "Let's build a dashboard",
+    "Let's build a l": "Let's build a l",
+    "Let's build a la": "Let's build a la",
+    "Let's build a lan": "Let's build a lan",
+    "Let's build a land": "Let's build a land",
+    "Let's build a landi": "Let's build a landi",
+    "Let's build a landin": "Let's build a landin",
+    "Let's build a landing": "Let's build a landing",
+    "Let's build a landing p": "Let's build a landing p",
+    "Let's build a landing pa": "Let's build a landing pa",
+    "Let's build a landing pag": "Let's build a landing pag",
+    "Let's build a landing page": "Let's build a landing page",
+    "Let's build an": "Let's build an",
+    "Let's build an e": "Let's build an e",
+    "Let's build an e-": "Let's build an e-",
+    "Let's build an e-c": "Let's build an e-c",
+    "Let's build an e-co": "Let's build an e-co",
+    "Let's build an e-com": "Let's build an e-com",
+    "Let's build an e-comm": "Let's build an e-comm",
+    "Let's build an e-comme": "Let's build an e-comme",
+    "Let's build an e-commer": "Let's build an e-commer",
+    "Let's build an e-commerc": "Let's build an e-commerc",
+    "Let's build an e-commerce": "Let's build an e-commerce",
+    "Let's build an e-commerce s": "Let's build an e-commerce s",
+    "Let's build an e-commerce st": "Let's build an e-commerce st",
+    "Let's build an e-commerce sto": "Let's build an e-commerce sto",
+    "Let's build an e-commerce stor": "Let's build an e-commerce stor",
+    "Let's build an e-commerce store": "Let's build an e-commerce store",
+    "Let's build s": "Let's build s",
+    "Let's build so": "Let's build so",
+    "Let's build som": "Let's build som",
+    "Let's build some": "Let's build some",
+    "Let's build somet": "Let's build somet",
+    "Let's build someth": "Let's build someth",
+    "Let's build somethi": "Let's build somethi",
+    "Let's build somethin": "Let's build somethin",
+    "Let's build something a": "Let's build something a",
+    "Let's build something am": "Let's build something am",
+    "Let's build something ama": "Let's build something ama",
+    "Let's build something amaz": "Let's build something amaz",
+    "Let's build something amazi": "Let's build something amazi",
+    "Let's build something amazin": "Let's build something amazin",
+    "Let's build something amazing": "Let's build something amazing",
+    "Loading files": "Loading files",
+    "Loading icons...": "Loading icons...",
+    "Loading messages": "Loading messages",
+    "Manage your project details and preferences.": "Manage your project details and preferences.",
+    "Match case": "Match case",
+    "Maximum file size is {size} MB": "Maximum file size is {size} MB",
+    "Maybe later": "Maybe later",
+    "Media library": "Media library",
+    "Media library is unavailable for this location.": "Media library is unavailable for this location.",
+    "Message composer": "Message composer",
+    "Message limit reached ({max} characters)": "Message limit reached ({max} characters)",
+    "Midnight Indigo": "Midnight Indigo",
+    "Migrate": "Migrate",
+    "Migrate existing projects to SSR": "Migrate existing projects to SSR",
+    "Migrate to SSR": "Migrate to SSR",
+    "Migrate to SSR?": "Migrate to SSR?",
+    "Migrate your domain": "Migrate your domain",
+    "Migrating to SSR": "Migrating to SSR",
+    "Monthly AI spending limit for this sub-account, in USD. 0 pauses AI usage.": "Monthly AI spending limit for this sub-account, in USD. 0 pauses AI usage.",
+    "Monthly limit (USD)": "Monthly limit (USD)",
+    "Mute completion sound": "Mute completion sound",
+    "My projects": "My projects",
+    "No activity recorded for this edit.": "No activity recorded for this edit.",
+    "No calendars found in your account": "No calendars found in your account",
+    "No colors found": "No colors found",
+    "No custom domains connected yet.": "No custom domains connected yet.",
+    "No extra toggle or publish-time pre-render job": "No extra toggle or publish-time pre-render job",
+    "No folder": "No folder",
+    "No folders in this location": "No folders in this location",
+    "No icons found": "No icons found",
+    "No matches in file contents": "No matches in file contents",
+    "No meta description found for this page.": "No meta description found for this page.",
+    "No projects found": "No projects found",
+    "No projects in this folder yet": "No projects in this folder yet",
+    "No recent projects": "No recent projects",
+    "No secrets yet.": "No secrets yet.",
+    "No site title found": "No site title found",
+    "No starred projects": "No starred projects",
+    "No users match \"{query}\"": "No users match \"{query}\"",
+    "Notifications alt+T": "Notifications alt+T",
+    "OG Image preview": "OG Image preview",
+    "Ocean Deep": "Ocean Deep",
+    "On paid extra usage.": "On paid extra usage.",
+    "One-Click Deploy": "One-Click Deploy",
+    "Only {max} images allowed per message": "Only {max} images allowed per message",
+    "Open preview in new tab": "Open preview in new tab",
+    "Open your site in a private (incognito) window to confirm it is live.": "Open your site in a private (incognito) window to confirm it is live.",
+    "Optimize your site for search engines and social media.": "Optimize your site for search engines and social media.",
+    "Or add the following DNS records manually at your domain provider:": "Or add the following DNS records manually at your domain provider:",
+    "Palette": "Palette",
+    "Pending changes": "Pending changes",
+    "Permanently delete this project.": "Permanently delete this project.",
+    "Pick color from screen": "Pick color from screen",
+    "Planning the layout for the monthly view.": "Planning the layout for the monthly view.",
+    "Please select a PNG, JPEG, or WebP image": "Please select a PNG, JPEG, or WebP image",
+    "Please select an image file (PNG, ICO, SVG, JPEG, WebP, or GIF)": "Please select an image file (PNG, ICO, SVG, JPEG, WebP, or GIF)",
+    "Poor explanation": "Poor explanation",
+    "Portfolio": "Portfolio",
+    "Pre-render page content to make it easier for search engines to crawl": "Pre-render page content to make it easier for search engines to crawl",
+    "Pre-rendering is not needed": "Pre-rendering is not needed",
+    "Preview in new tab": "Preview in new tab",
+    "Preview version": "Preview version",
+    "Processing with AI": "Processing with AI",
+    "Project": "Project",
+    "Project Settings": "Project Settings",
+    "Project actions": "Project actions",
+    "Project cloned successfully": "Project cloned successfully",
+    "Project deleted": "Project deleted",
+    "Project name": "Project name",
+    "Project unpublished": "Project unpublished",
+    "Projects": "Projects",
+    "Projects ({count})": "Projects ({count})",
+    "Projects you open will appear here.": "Projects you open will appear here.",
+    "Prompt copied!": "Prompt copied!",
+    "Publish now": "Publish now",
+    "Publish your project": "Publish your project",
+    "Publish your project first to connect a custom domain.": "Publish your project first to connect a custom domain.",
+    "Publish your project first to enable search engine visibility.": "Publish your project first to enable search engine visibility.",
+    "Publish your project to custom domains.": "Publish your project to custom domains.",
+    "Publishing:": "Publishing:",
+    "Raise extra usage limit": "Raise extra usage limit",
+    "Raise limit": "Raise limit",
+    "Recent projects": "Recent projects",
+    "Reconnect calendar": "Reconnect calendar",
+    "Reconnect forms to CRM": "Reconnect forms to CRM",
+    "Reconnect integrations": "Reconnect integrations",
+    "Refresh preview": "Refresh preview",
+    "Regexp": "Regexp",
+    "Remove bookmark": "Remove bookmark",
+    "Remove domain": "Remove domain",
+    "Removing...": "Removing...",
+    "Rename project": "Rename project",
+    "Request already sent. Your agency will review it.": "Request already sent. Your agency will review it.",
+    "Request declined. You can ask again later.": "Request declined. You can ask again later.",
+    "Request more": "Request more",
+    "Request more usage": "Request more usage",
+    "Request sent. Your agency will review it.": "Request sent. Your agency will review it.",
+    "Requested amount (USD)": "Requested amount (USD)",
+    "Resets in {duration}.": "Resets in {duration}.",
+    "Resets on {date}.": "Resets on {date}.",
+    "Restaurant / Food Ordering": "Restaurant / Food Ordering",
+    "Restored to an earlier version": "Restored to an earlier version",
+    "Revert to this version?": "Revert to this version?",
+    "Reverting...": "Reverting...",
+    "Review answers": "Review answers",
+    "Running checks and build...": "Running checks and build...",
+    "Runtime Warning": "Runtime Warning",
+    "SECRET_NAME": "SECRET_NAME",
+    "SEO & AI search": "SEO & AI search",
+    "Sage & Cream": "Sage & Cream",
+    "Sandbox Disconnected": "Sandbox Disconnected",
+    "Saved secrets": "Saved secrets",
+    "Search colors...": "Search colors...",
+    "Search files...": "Search files...",
+    "Search folders...": "Search folders...",
+    "Search icon...": "Search icon...",
+    "Search projects and folders": "Search projects and folders",
+    "Search projects...": "Search projects...",
+    "Secret deleted": "Secret deleted",
+    "Secret saved": "Secret saved",
+    "Secrets": "Secrets",
+    "Secrets aren't available in this environment.": "Secrets aren't available in this environment.",
+    "Secrets saved": "Secrets saved",
+    "Secrets saved. Continuing the agent...": "Secrets saved. Continuing the agent...",
+    "Secrets securely save sensitive information like API keys.": "Secrets securely save sensitive information like API keys.",
+    "Secrets were saved, but the agent could not continue.": "Secrets were saved, but the agent could not continue.",
+    "Secrets were saved. Retry continuing the agent.": "Secrets were saved. Retry continuing the agent.",
+    "Select a file to view its contents": "Select a file to view its contents",
+    "Select a folder to move \"{name}\" to.": "Select a folder to move \"{name}\" to.",
+    "Select all matches": "Select all matches",
+    "Select all that apply": "Select all that apply",
+    "Select all users": "Select all users",
+    "Select all visible users": "Select all visible users",
+    "Select border radius": "Select border radius",
+    "Select border style": "Select border style",
+    "Select elements to edit and style visually": "Select elements to edit and style visually",
+    "Select font family": "Select font family",
+    "Select font size": "Select font size",
+    "Select font style": "Select font style",
+    "Select one answer": "Select one answer",
+    "Select weight": "Select weight",
+    "Select width": "Select width",
+    "Send request": "Send request",
+    "Set a primary custom domain to enable search engine visibility.": "Set a primary custom domain to enable search engine visibility.",
+    "Setting up conversation": "Setting up conversation",
+    "Setup is in progress and may take a few minutes to complete.": "Setup is in progress and may take a few minutes to complete.",
+    "Ship your app to production instantly. Custom domains and hosting included.": "Ship your app to production instantly. Custom domains and hosting included.",
+    "Show all {count} folders": "Show all {count} folders",
+    "Show value": "Show value",
+    "Showing {shown} of {total} matches": "Showing {shown} of {total} matches",
+    "Site icon": "Site icon",
+    "Site needs to be published first": "Site needs to be published first",
+    "Site published": "Site published",
+    "Skip all": "Skip all",
+    "Slug must be 3-20 chars, lowercase letters, numbers, and hyphens only": "Slug must be 3-20 chars, lowercase letters, numbers, and hyphens only",
+    "Social Media Feed": "Social Media Feed",
+    "Social image": "Social image",
+    "Spending limit reached for this account.": "Spending limit reached for this account.",
+    "Spending limit reached for this user.": "Spending limit reached for this user.",
+    "Spending limit reached.": "Spending limit reached.",
+    "Star a project to quickly find it here.": "Star a project to quickly find it here.",
+    "Starting live preview": "Starting live preview",
+    "Starting live preview...": "Starting live preview...",
+    "Still nothing to connect. Create one in your sub-account, then check again.": "Still nothing to connect. Create one in your sub-account, then check again.",
+    "Stop generation?": "Stop generation?",
+    "Submissions from this site will create contacts in your sub-account.": "Submissions from this site will create contacts in your sub-account.",
+    "Submit sitemap to Search Console": "Submit sitemap to Search Console",
+    "Successfully published to the internet": "Successfully published to the internet",
+    "Tailwind": "Tailwind",
+    "Taking longer than expected. Please check back later.": "Taking longer than expected. Please check back later.",
+    "Target folder": "Target folder",
+    "Target sub-account": "Target sub-account",
+    "Tell Google about your sitemap to speed up indexing.": "Tell Google about your sitemap to speed up indexing.",
+    "Tempo Flow": "Tempo Flow",
+    "Testing:": "Testing:",
+    "The integration selection was saved, but the agent could not continue.": "The integration selection was saved, but the agent could not continue.",
+    "Things to note": "Things to note",
+    "This action cannot be undone. All project data, files, and conversation history will be permanently deleted.": "This action cannot be undone. All project data, files, and conversation history will be permanently deleted.",
+    "This automated migration may not be fully accurate. Review, test, and fix the new copy before publishing it.": "This automated migration may not be fully accurate. Review, test, and fix the new copy before publishing it.",
+    "This domain is already connected to another project.": "This domain is already connected to another project.",
+    "This domain is already connected to this project": "This domain is already connected to this project",
+    "This domain is already connected to this project.": "This domain is already connected to this project.",
+    "This domain is managed in your LeadConnector Domain Hub. Records will be added directly.": "This domain is managed in your LeadConnector Domain Hub. Records will be added directly.",
+    "This element is part of a shared component, style changes preview across all instances.": "This element is part of a shared component, style changes preview across all instances.",
+    "This file has unsaved changes. Discard them?": "This file has unsaved changes. Discard them?",
+    "This message was cancelled.": "This message was cancelled.",
+    "This migration is billed as a standard build because AI agents perform the migration.": "This migration is billed as a standard build because AI agents perform the migration.",
+    "This question expired. Send a new message to continue.": "This question expired. Send a new message to continue.",
+    "This question was already answered or can no longer be resumed.": "This question was already answered or can no longer be resumed.",
+    "This slug is already taken": "This slug is already taken",
+    "This version either failed to build due to an error, or it's still building.": "This version either failed to build due to an error, or it's still building.",
+    "This will revert your project to how it looked on": "This will revert your project to how it looked on",
+    "This will stop the AI from generating. Any progress so far will be kept.": "This will stop the AI from generating. Any progress so far will be kept.",
+    "This will take your site offline. The slug and custom domain will stop resolving.": "This will take your site offline. The slug and custom domain will stop resolving.",
+    "Thought for 14s": "Thought for 14s",
+    "Thought for {duration}s": "Thought for {duration}s",
+    "Title - {font}": "Title - {font}",
+    "Todo / Task Manager": "Todo / Task Manager",
+    "Too many files": "Too many files",
+    "Too slow": "Too slow",
+    "Try a different search term.": "Try a different search term.",
+    "Try to fix": "Try to fix",
+    "Turn on": "Turn on",
+    "Turn on extra usage": "Turn on extra usage",
+    "Type \"{keyword}\" to confirm:": "Type \"{keyword}\" to confirm:",
+    "URL subdomain": "URL subdomain",
+    "Unable to prepare the download. Please try again.": "Unable to prepare the download. Please try again.",
+    "Unmute completion sound": "Unmute completion sound",
+    "Unpublish and take site offline": "Unpublish and take site offline",
+    "Unpublish project": "Unpublish project",
+    "Unpublish project?": "Unpublish project?",
+    "Unpublishing...": "Unpublishing...",
+    "Unset as primary": "Unset as primary",
+    "Unset primary": "Unset primary",
+    "Unsetting the primary domain will automatically disable search engine visibility (prerendering). Search engines will no longer see optimized HTML for your site.": "Unsetting the primary domain will automatically disable search engine visibility (prerendering). Search engines will no longer see optimized HTML for your site.",
+    "Unstar": "Unstar",
+    "Untitled Project": "Untitled Project",
+    "Up to date": "Up to date",
+    "Update secret": "Update secret",
+    "Update settings anytime!": "Update settings anytime!",
+    "Update your project's title.": "Update your project's title.",
+    "Updating references": "Updating references",
+    "Upload an image from your device and attach it as AI context.": "Upload an image from your device and attach it as AI context.",
+    "Upload favicon": "Upload favicon",
+    "Upload social image": "Upload social image",
+    "Usage limit reached": "Usage limit reached",
+    "Usage limit reached.": "Usage limit reached.",
+    "Use the steps below to finish on-page SEO": "Use the steps below to finish on-page SEO",
+    "VIBE_ names are reserved for sandbox controls.": "VIBE_ names are reserved for sandbox controls.",
+    "VITE_ names are exposed to the browser and can't be secret.": "VITE_ names are exposed to the browser and can't be secret.",
+    "Validating build...": "Validating build...",
+    "Value is required": "Value is required",
+    "Value is too large (max 5,000 bytes).": "Value is too large (max 5,000 bytes).",
+    "Verify DNS": "Verify DNS",
+    "Verify your site is live": "Verify your site is live",
+    "View DNS records to be added": "View DNS records to be added",
+    "View app": "View app",
+    "View history": "View history",
+    "View message": "View message",
+    "View site": "View site",
+    "Viewing:": "Viewing:",
+    "Visual Edit": "Visual Edit",
+    "Watch your app come to life in real-time as AI writes your code. Instant visual feedback on every change.": "Watch your app come to life in real-time as AI writes your code. Instant visual feedback on every change.",
+    "We couldn't prepare CRM tracking for this sub-account. Try again shortly.": "We couldn't prepare CRM tracking for this sub-account. Try again shortly.",
+    "We couldn't reach your sub-account, so nothing was connected. Try again.": "We couldn't reach your sub-account, so nothing was connected. Try again.",
+    "We'll create a separate upgraded copy. Your original project stays unchanged. This usually takes a few minutes.": "We'll create a separate upgraded copy. Your original project stays unchanged. This usually takes a few minutes.",
+    "We'll create a separate version of your project with faster page loading and better link previews. Your original project stays unchanged.": "We'll create a separate version of your project with faster page loading and better link previews. Your original project stays unchanged.",
+    "Weather App": "Weather App",
+    "Website address": "Website address",
+    "Website info": "Website info",
+    "Website link copied!": "Website link copied!",
+    "What went wrong?": "What went wrong?",
+    "Which color palette fits the calendar app's mood?": "Which color palette fits the calendar app's mood?",
+    "Whole word": "Whole word",
+    "Worked for": "Worked for",
+    "Workflows:": "Workflows:",
+    "Working...": "Working...",
+    "Write an answer": "Write an answer",
+    "Write your own": "Write your own",
+    "Write your own...": "Write your own...",
+    "You don't have permission to make this change. Ask an account admin for access.": "You don't have permission to make this change. Ask an account admin for access.",
+    "You have unpublished website info changes. Do you want to discard them?": "You have unpublished website info changes. Do you want to discard them?",
+    "You have unsaved code changes. Leave the Code editor anyway?": "You have unsaved code changes. Leave the Code editor anyway?",
+    "You're on paid extra usage. Charges apply.": "You're on paid extra usage. Charges apply.",
+    "You've used {percent} of the spending limit.": "You've used {percent} of the spending limit.",
+    "You've used {percent} of your session limit.": "You've used {percent} of your session limit.",
+    "Your AI Starter allowance is used up. Upgrade to AI Bundle for unlimited building, or turn on extra usage to keep going at provider cost.": "Your AI Starter allowance is used up. Upgrade to AI Bundle for unlimited building, or turn on extra usage to keep going at provider cost.",
+    "Your agency manages billing for this account. Ask them to raise the limit.": "Your agency manages billing for this account. Ask them to raise the limit.",
+    "Your app is live!": "Your app is live!",
+    "Your app title": "Your app title",
+    "Your limit was raised. You can keep building.": "Your limit was raised. You can keep building.",
+    "Your original stays live. You choose if and when to publish the new copy or move a domain.": "Your original stays live. You choose if and when to publish the new copy or move a domain.",
+    "Your plan's included AI usage is used up.": "Your plan's included AI usage is used up.",
+    "Your project is not published yet. Your domains will not be live until you publish.": "Your project is not published yet. Your domains will not be live until you publish.",
+    "Your published URL will no longer be accessible to anyone.": "Your published URL will no longer be accessible to anyone.",
+    "Your role does not include permission to view AI Studio.": "Your role does not include permission to view AI Studio.",
+    "Your session limit is used up.": "Your session limit is used up.",
+    "Your site will be taken offline and the published URL will stop working. You can republish at any time.": "Your site will be taken offline and the published URL will stop working. You can republish at any time.",
+    "a dashboard": "a dashboard",
+    "a landing page": "a landing page",
+    "an e-commerce store": "an e-commerce store",
+    "e.g. **.tsx, src/**": "e.g. **.tsx, src/**",
+    "e.g. **/node_modules/**": "e.g. **/node_modules/**",
+    "less than 1%": "less than 1%",
+    "something amazing": "something amazing",
+    "to select multiple elements": "to select multiple elements",
+    "{count} element selected | {count} elements selected": "{count} element selected | {count} elements selected",
+    "{count} file changed | {count} files changed": "{count} file changed | {count} files changed",
+    "{count} tool used | {count} tools used": "{count} tool used | {count} tools used",
+    "{count} user will get access to AI Studio shortly. | {count} users will get access to AI Studio shortly.": "{count} user will get access to AI Studio shortly. | {count} users will get access to AI Studio shortly.",
+    "{current} billed so far. Next alert at {next}.": "{current} billed so far. Next alert at {next}.",
+    "{current} in agency usage so far. Next alert at {next}.": "{current} in agency usage so far. Next alert at {next}.",
+    "{hours}h {minutes}m": "{hours}h {minutes}m",
+    "{minutes}m": "{minutes}m",
+    "{name} is too large": "{name} is too large",
+    "{needing} of {total} users do not have access to AI Studio": "{needing} of {total} users do not have access to AI Studio",
+    "{start} - {end} of {total}": "{start} - {end} of {total}",
+    "{value}%": "{value}%"
+  },
+  "ok_detail": {
+    ". Recent changes after this point stay in the chat and can be reapplied anytime.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": ". Recent changes after this point stay in the chat and can be reapplied anytime."
+    },
+    "2 of 2 users do not have access to AI Studio": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "2 of 2 users do not have access to AI Studio"
+    },
+    "8 Oct at 14:55": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "8 Oct at 14:55"
+    },
+    "AI Studio access unavailable": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "AI Studio access unavailable"
+    },
+    "AI Studio enabled for selected users": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "AI Studio enabled for selected users"
+    },
+    "AI Studio is disabled for your sub-account users by default. Select users who should have access.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "AI Studio is disabled for your sub-account users by default. Select users who should have access."
+    },
+    "AI Studio is paused for now under the platform fair-use policy.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "AI Studio is paused for now under the platform fair-use policy."
+    },
+    "AI Studio is unavailable until billing is active for the agency.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "AI Studio is unavailable until billing is active for the agency."
+    },
+    "AI Studio is unavailable until billing is active for this account.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "AI Studio is unavailable until billing is active for this account."
+    },
+    "AI Studio is unavailable while the agency account is inactive.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "AI Studio is unavailable while the agency account is inactive."
+    },
+    "AI Studio is unavailable while this account is inactive.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "AI Studio is unavailable while this account is inactive."
+    },
+    "AI Studio isn't enabled for this account.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "AI Studio isn't enabled for this account."
+    },
+    "AI Studio usage reached {milestone} this month": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "AI Studio usage reached {milestone} this month"
+    },
+    "AI usage can't be checked right now. Try again shortly.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "AI usage can't be checked right now. Try again shortly."
+    },
+    "AI-Powered Builder": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "AI-Powered Builder"
+    },
+    "Add a description to see it here": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Add a description to see it here"
+    },
+    "Add another": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Add another"
+    },
+    "Add custom domain": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Add custom domain"
+    },
+    "Add files": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Add files"
+    },
+    "Add new secret": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Add new secret"
+    },
+    "Add proper meta tags for better social sharing previews.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Add proper meta tags for better social sharing previews."
+    },
+    "Add reference image": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Add reference image"
+    },
+    "Add secret": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Add secret"
+    },
+    "Additional feedback (optional)": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Additional feedback (optional)"
+    },
+    "Adds selected media URLs to your prompt. You can insert up to 50 links.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Adds selected media URLs to your prompt. You can insert up to 50 links."
+    },
+    "Adjust limit": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Adjust limit"
+    },
+    "Adjust spending limit": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Adjust spending limit"
+    },
+    "Advanced SEO Support": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Advanced SEO Support"
+    },
+    "All projects": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "All projects"
+    },
+    "All sub-account users already have access to AI Studio": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "All sub-account users already have access to AI Studio"
+    },
+    "Allow search engines to index your site": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Allow search engines to index your site"
+    },
+    "Already authorized via LeadConnector": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Already authorized via LeadConnector"
+    },
+    "Also add {addDomain} and redirect traffic to {primaryDomain}": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Also add {addDomain} and redirect traffic to {primaryDomain}"
+    },
+    "Amounts between {min} and {max} are supported.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Amounts between {min} and {max} are supported."
+    },
+    "Apply changes": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Apply changes"
+    },
+    "Are you sure you want to delete \"{name}\"? This action cannot be undone.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Are you sure you want to delete \"{name}\"? This action cannot be undone."
+    },
+    "Are you sure you want to delete this folder? Projects inside will be moved out, not deleted.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Are you sure you want to delete this folder? Projects inside will be moved out, not deleted."
+    },
+    "Are you sure you want to exit the visual editor? You will lose your unsaved changes.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Are you sure you want to exit the visual editor? You will lose your unsaved changes."
+    },
+    "Ask AI to edit favicon": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Ask AI to edit favicon"
+    },
+    "Ask AI to edit meta details": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Ask AI to edit meta details"
+    },
+    "Ask AI to update your site details or icon.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Ask AI to update your site details or icon."
+    },
+    "Ask AI...": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Ask AI..."
+    },
+    "Ask in chat to modify the selected elements": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Ask in chat to modify the selected elements"
+    },
+    "Ask your agency to raise this sub-account's limit.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Ask your agency to raise this sub-account's limit."
+    },
+    "Ask your agency to raise your personal usage limit.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Ask your agency to raise your personal usage limit."
+    },
+    "Attaches selected images for visual context. You can add up to 5 reference images.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Attaches selected images for visual context. You can add up to 5 reference images."
+    },
+    "Auto-fixing build errors...": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Auto-fixing build errors..."
+    },
+    "Available once this project has its first version.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Available once this project has its first version."
+    },
+    "Back to Preview": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Back to Preview"
+    },
+    "Because this app uses TanStack Start (SSR), every page is already rendered on the server. That is the more reliable path for SEO crawlers.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Because this app uses TanStack Start (SSR), every page is already rendered on the server. That is the more reliable path for SEO crawlers."
+    },
+    "Blog / CMS": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Blog / CMS"
+    },
+    "Body - {font}": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Body - {font}"
+    },
+    "Bookmark": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Bookmark"
+    },
+    "Bookmarked": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Bookmarked"
+    },
+    "Broke existing functionality": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Broke existing functionality"
+    },
+    "Browse all": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Browse all"
+    },
+    "Build Error": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Build Error"
+    },
+    "Build a blog platform with article listing, individual post pages, and a markdown content editor.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Build a blog platform with article listing, individual post pages, and a markdown content editor."
+    },
+    "Build a calendar app with monthly/weekly views, event creation, and time slot scheduling.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Build a calendar app with monthly/weekly views, event creation, and time slot scheduling."
+    },
+    "Build a fitness tracker app with workout logging, exercise library, and progress charts.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Build a fitness tracker app with workout logging, exercise library, and progress charts."
+    },
+    "Build a minimal developer portfolio with project gallery and about section.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Build a minimal developer portfolio with project gallery and about section."
+    },
+    "Build a real-time chat interface with conversation list, message bubbles, and a message input area.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Build a real-time chat interface with conversation list, message bubbles, and a message input area."
+    },
+    "Build an admin dashboard with sidebar navigation, charts, and data tables.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Build an admin dashboard with sidebar navigation, charts, and data tables."
+    },
+    "Build error": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Build error"
+    },
+    "Build unsuccessful": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Build unsuccessful"
+    },
+    "Building project": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Building project"
+    },
+    "Built-in Integrations": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Built-in Integrations"
+    },
+    "By cloning a project, you will create a copy that you own.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "By cloning a project, you will create a copy that you own."
+    },
+    "Calendar / Scheduling": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Calendar / Scheduling"
+    },
+    "Calendar connected": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Calendar connected"
+    },
+    "Calendar not connected": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Calendar not connected"
+    },
+    "Calendar settings opened in a new tab": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Calendar settings opened in a new tab"
+    },
+    "Certificate provisioning usually takes a few minutes after connecting.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Certificate provisioning usually takes a few minutes after connecting."
+    },
+    "Change primary": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Change primary"
+    },
+    "Change primary domain?": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Change primary domain?"
+    },
+    "Changing the primary domain will disable Advanced SEO Support. You'll need to re-enable it for the new primary domain.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Changing the primary domain will disable Advanced SEO Support. You'll need to re-enable it for the new primary domain."
+    },
+    "Chat Application": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Chat Application"
+    },
+    "Check again": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Check again"
+    },
+    "Choose a value": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Choose a value"
+    },
+    "Choose image": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Choose image"
+    },
+    "Choose your app's URL or use the generated one": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Choose your app's URL or use the generated one"
+    },
+    "Clear find": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Clear find"
+    },
+    "Clone project": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Clone project"
+    },
+    "Close tab": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Close tab"
+    },
+    "Cloud White": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "attr:aria-label",
+      "t": "Cloud White"
+    },
+    "Coach Ten": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "attr:aria-label",
+      "t": "Coach Ten"
+    },
+    "Code edited": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Code edited"
+    },
+    "Collapse all": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Collapse all"
+    },
+    "Complete previous steps first": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Complete previous steps first"
+    },
+    "Complete step 1 first": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Complete step 1 first"
+    },
+    "Complete these steps to enable": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Complete these steps to enable"
+    },
+    "Complete these steps to improve your search engine visibility.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Complete these steps to improve your search engine visibility."
+    },
+    "Configure secrets": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Configure secrets"
+    },
+    "Conflicting DNS records were found and will be replaced when you add records.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Conflicting DNS records were found and will be replaced when you add records."
+    },
+    "Conflicting records (will be replaced)": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Conflicting records (will be replaced)"
+    },
+    "Connect a custom domain and set it as primary": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Connect a custom domain and set it as primary"
+    },
+    "Connect a domain you own from any provider.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Connect a domain you own from any provider."
+    },
+    "Connect automatically with": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Connect automatically with"
+    },
+    "Connect domain": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Connect domain"
+    },
+    "Connect existing domain": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Connect existing domain"
+    },
+    "Connect your domain": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Connect your domain"
+    },
+    "Copies the most recent versions and chat messages. Older history isn't carried over.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Copies the most recent versions and chat messages. Older history isn't carried over."
+    },
+    "Copy host": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Copy host"
+    },
+    "Copy prompt": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Copy prompt"
+    },
+    "Copy value": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Copy value"
+    },
+    "Copy website link": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Copy website link"
+    },
+    "Copying files": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Copying files"
+    },
+    "Copying media": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Copying media"
+    },
+    "Copying version history": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Copying version history"
+    },
+    "Could not attach the selected media": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Could not attach the selected media"
+    },
+    "Could not save domain. Please try again.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Could not save domain. Please try again."
+    },
+    "Could not upload the image. Please try again.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Could not upload the image. Please try again."
+    },
+    "Could not use the selected media. Please try again.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Could not use the selected media. Please try again."
+    },
+    "Could not verify DNS records. Please check they were added correctly and try again.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Could not verify DNS records. Please check they were added correctly and try again."
+    },
+    "Couldn't save changes. Please try again.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Couldn't save changes. Please try again."
+    },
+    "Couldn't start the project upgrade": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Couldn't start the project upgrade"
+    },
+    "Crawlers see real content, not an empty JavaScript shell": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Crawlers see real content, not an empty JavaScript shell"
+    },
+    "Create Calendar": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Create Calendar"
+    },
+    "Create a calendar in your account first, then come back to connect it": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Create a calendar in your account first, then come back to connect it"
+    },
+    "Create a modern SaaS landing page with hero, features, and pricing sections.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Create a modern SaaS landing page with hero, features, and pricing sections."
+    },
+    "Create a project to get started.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Create a project to get started."
+    },
+    "Create a restaurant website with a menu, dish details, and an order cart with checkout.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Create a restaurant website with a menu, dish details, and an order cart with checkout."
+    },
+    "Create a sitemap.xml from your routes for search engines.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Create a sitemap.xml from your routes for search engines."
+    },
+    "Create a social media feed with posts, likes, comments, and a profile sidebar.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Create a social media feed with posts, likes, comments, and a profile sidebar."
+    },
+    "Create a task management app with drag-and-drop kanban board, task creation, and status tracking.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Create a task management app with drag-and-drop kanban board, task creation, and status tracking."
+    },
+    "Create a weather dashboard with current conditions, 7-day forecast, and location search.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Create a weather dashboard with current conditions, 7-day forecast, and location search."
+    },
+    "Create an e-commerce storefront with product grid, cart, and checkout flow.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Create an e-commerce storefront with product grid, cart, and checkout flow."
+    },
+    "Creating project": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Creating project"
+    },
+    "Custom domain connected": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Custom domain connected"
+    },
+    "Custom domain disconnected": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Custom domain disconnected"
+    },
+    "Custom domains": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Custom domains"
+    },
+    "DNS records could not be verified. Please check your domain settings and try again.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "DNS records could not be verified. Please check your domain settings and try again."
+    },
+    "Danger zone": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Danger zone"
+    },
+    "Delete \"{name}\"? Code using it will stop working until you add it again.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Delete \"{name}\"? Code using it will stop working until you add it again."
+    },
+    "Delete project": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Delete project"
+    },
+    "Delete project?": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Delete project?"
+    },
+    "Delete secret?": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Delete secret?"
+    },
+    "Describe what you want in plain language. Get a full React + Tailwind app, ready to ship.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Describe what you want in plain language. Get a full React + Tailwind app, ready to ship."
+    },
+    "Describe what you want to build...": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Describe what you want to build..."
+    },
+    "Describe what your app does": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Describe what your app does"
+    },
+    "Dev mode": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Dev mode"
+    },
+    "Disable search engine visibility?": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Disable search engine visibility?"
+    },
+    "Discard unsaved changes in {count} file(s)?": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Discard unsaved changes in {count} file(s)?"
+    },
+    "Disconnect {domain}?": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Disconnect {domain}?"
+    },
+    "Dismiss banner": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Dismiss banner"
+    },
+    "Dismiss spend alert": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Dismiss spend alert"
+    },
+    "Dismiss usage notice": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Dismiss usage notice"
+    },
+    "Domain name": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Domain name"
+    },
+    "Domain options": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Domain options"
+    },
+    "Domain removed": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Domain removed"
+    },
+    "Download ZIP": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Download ZIP"
+    },
+    "Download codebase": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Download codebase"
+    },
+    "Download source code": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Download source code"
+    },
+    "Download this project's source as a ZIP archive.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Download this project's source as a ZIP archive."
+    },
+    "Drop any files here to add them to your message": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Drop any files here to add them to your message"
+    },
+    "Duplicate this app in a new project.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Duplicate this app in a new project."
+    },
+    "E-commerce": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "E-commerce"
+    },
+    "Edit settings": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Edit settings"
+    },
+    "Edit slug": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Edit slug"
+    },
+    "Edited {time}": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Edited {time}"
+    },
+    "Enable AI Studio for sub-account users": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Enable AI Studio for sub-account users"
+    },
+    "Enable Advanced SEO Support": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Enable Advanced SEO Support"
+    },
+    "Enter a new name for your project.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Enter a new name for your project."
+    },
+    "Enter an amount between {min} and {max}.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Enter an amount between {min} and {max}."
+    },
+    "Expand all": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Expand all"
+    },
+    "Extra usage": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Extra usage"
+    },
+    "Extra usage is on.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Extra usage is on."
+    },
+    "Extra usage limit reached.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Extra usage limit reached."
+    },
+    "Failed to add DNS records. Please try again.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Failed to add DNS records. Please try again."
+    },
+    "Failed to clone project": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Failed to clone project"
+    },
+    "Failed to create project. Please try again.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Failed to create project. Please try again."
+    },
+    "Failed to delete project": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Failed to delete project"
+    },
+    "Failed to delete secret": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Failed to delete secret"
+    },
+    "Failed to load project settings": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Failed to load project settings"
+    },
+    "Failed to load secrets": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Failed to load secrets"
+    },
+    "Failed to load users. Please try again.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Failed to load users. Please try again."
+    },
+    "Failed to publish. Please try again.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Failed to publish. Please try again."
+    },
+    "Failed to retry this question.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Failed to retry this question."
+    },
+    "Failed to save secret": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Failed to save secret"
+    },
+    "Failed to save secrets": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Failed to save secrets"
+    },
+    "Failed to save setting": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Failed to save setting"
+    },
+    "Failed to send answer.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Failed to send answer."
+    },
+    "Failed to skip question.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Failed to skip question."
+    },
+    "Failed to unpublish project": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Failed to unpublish project"
+    },
+    "Failed to update slug": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Failed to update slug"
+    },
+    "Files to exclude": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Files to exclude"
+    },
+    "Files to include": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Files to include"
+    },
+    "Finalizing setup...": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Finalizing setup..."
+    },
+    "Finished thinking": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Finished thinking"
+    },
+    "Finishing up with some final touches...": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Finishing up with some final touches..."
+    },
+    "Fitness Tracker": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Fitness Tracker"
+    },
+    "Fix build errors": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Fix build errors"
+    },
+    "Form tracking connected": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Form tracking connected"
+    },
+    "Form tracking not connected": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Form tracking not connected"
+    },
+    "Form tracking unavailable": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Form tracking unavailable"
+    },
+    "Generate sitemap": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Generate sitemap"
+    },
+    "Get extra usage": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Get extra usage"
+    },
+    "Getting ready...": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Getting ready..."
+    },
+    "Go to Domains": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Go to Domains"
+    },
+    "Go to Home": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Go to Home"
+    },
+    "Go to Publish": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Go to Publish"
+    },
+    "Great, thanks": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Great, thanks"
+    },
+    "Hang on while we get everything set up": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Hang on while we get everything set up"
+    },
+    "Help AI crawlers see your content": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Help AI crawlers see your content"
+    },
+    "Help people discover your app": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Help people discover your app"
+    },
+    "Hide Details": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Hide Details"
+    },
+    "Hide value": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Hide value"
+    },
+    "Hold {key} to select multiple elements": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Hold {key} to select multiple elements"
+    },
+    "How your site appears": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "How your site appears"
+    },
+    "I understand and accept the above points": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "I understand and accept the above points"
+    },
+    "I'll build a calendar app with monthly/weekly views, event creation, and time slot scheduling. Let me first nail down the visual direction.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "I'll build a calendar app with monthly/weekly views, event creation, and time slot scheduling. Let me first nail down the visual direction."
+    },
+    "I'll build the booking UI without calendar data. Ask me to connect one whenever you're ready.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "I'll build the booking UI without calendar data. Ask me to connect one whenever you're ready."
+    },
+    "I'll build the form without CRM tracking. Ask me to connect it whenever you're ready.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "I'll build the form without CRM tracking. Ask me to connect it whenever you're ready."
+    },
+    "Icon & title": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Icon & title"
+    },
+    "Icon type": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Icon type"
+    },
+    "If you use workflow triggers, update your workflows to point to the migrated project before publishing it.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "If you use workflow triggers, update your workflows to point to the migrated project before publishing it."
+    },
+    "Image must be {size} MB or less": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Image must be {size} MB or less"
+    },
+    "Improve social media previews on Facebook, Twitter, and LinkedIn": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Improve social media previews on Facebook, Twitter, and LinkedIn"
+    },
+    "Improve social preview content": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Improve social preview content"
+    },
+    "Improve your SEO": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Improve your SEO"
+    },
+    "In files": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "In files"
+    },
+    "Include project history": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Include project history"
+    },
+    "Incorrect code": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Incorrect code"
+    },
+    "Insert link": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Insert link"
+    },
+    "It is resetting now.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "It is resetting now."
+    },
+    "It resets {hours} hours after your first message.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "It resets {hours} hours after your first message."
+    },
+    "Keep building past your included allowance at provider cost, up to a monthly limit you set (max $1,000).": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Keep building past your included allowance at provider cost, up to a monthly limit you set (max $1,000)."
+    },
+    "Let's build": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Let's build"
+    },
+    "Let's build a": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build a"
+    },
+    "Let's build a d": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build a d"
+    },
+    "Let's build a da": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build a da"
+    },
+    "Let's build a das": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build a das"
+    },
+    "Let's build a dash": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build a dash"
+    },
+    "Let's build a dashb": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build a dashb"
+    },
+    "Let's build a dashbo": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build a dashbo"
+    },
+    "Let's build a dashboa": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build a dashboa"
+    },
+    "Let's build a dashboar": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build a dashboar"
+    },
+    "Let's build a dashboard": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build a dashboard"
+    },
+    "Let's build a l": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build a l"
+    },
+    "Let's build a la": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build a la"
+    },
+    "Let's build a lan": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build a lan"
+    },
+    "Let's build a land": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build a land"
+    },
+    "Let's build a landi": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build a landi"
+    },
+    "Let's build a landin": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build a landin"
+    },
+    "Let's build a landing": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build a landing"
+    },
+    "Let's build a landing p": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build a landing p"
+    },
+    "Let's build a landing pa": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build a landing pa"
+    },
+    "Let's build a landing pag": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build a landing pag"
+    },
+    "Let's build a landing page": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build a landing page"
+    },
+    "Let's build an": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build an"
+    },
+    "Let's build an e": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build an e"
+    },
+    "Let's build an e-": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build an e-"
+    },
+    "Let's build an e-c": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build an e-c"
+    },
+    "Let's build an e-co": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build an e-co"
+    },
+    "Let's build an e-com": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build an e-com"
+    },
+    "Let's build an e-comm": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build an e-comm"
+    },
+    "Let's build an e-comme": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build an e-comme"
+    },
+    "Let's build an e-commer": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build an e-commer"
+    },
+    "Let's build an e-commerc": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build an e-commerc"
+    },
+    "Let's build an e-commerce": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build an e-commerce"
+    },
+    "Let's build an e-commerce s": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build an e-commerce s"
+    },
+    "Let's build an e-commerce st": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build an e-commerce st"
+    },
+    "Let's build an e-commerce sto": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build an e-commerce sto"
+    },
+    "Let's build an e-commerce stor": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build an e-commerce stor"
+    },
+    "Let's build an e-commerce store": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build an e-commerce store"
+    },
+    "Let's build s": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build s"
+    },
+    "Let's build so": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build so"
+    },
+    "Let's build som": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build som"
+    },
+    "Let's build some": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build some"
+    },
+    "Let's build somet": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build somet"
+    },
+    "Let's build someth": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build someth"
+    },
+    "Let's build somethi": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build somethi"
+    },
+    "Let's build somethin": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build somethin"
+    },
+    "Let's build something a": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build something a"
+    },
+    "Let's build something am": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build something am"
+    },
+    "Let's build something ama": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build something ama"
+    },
+    "Let's build something amaz": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build something amaz"
+    },
+    "Let's build something amazi": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build something amazi"
+    },
+    "Let's build something amazin": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build something amazin"
+    },
+    "Let's build something amazing": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Let's build something amazing"
+    },
+    "Loading files": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Loading files"
+    },
+    "Loading icons...": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Loading icons..."
+    },
+    "Loading messages": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Loading messages"
+    },
+    "Manage your project details and preferences.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Manage your project details and preferences."
+    },
+    "Match case": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Match case"
+    },
+    "Maximum file size is {size} MB": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Maximum file size is {size} MB"
+    },
+    "Maybe later": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Maybe later"
+    },
+    "Media library": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Media library"
+    },
+    "Media library is unavailable for this location.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Media library is unavailable for this location."
+    },
+    "Message composer": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Message composer"
+    },
+    "Message limit reached ({max} characters)": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Message limit reached ({max} characters)"
+    },
+    "Midnight Indigo": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "attr:aria-label",
+      "t": "Midnight Indigo"
+    },
+    "Migrate": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Migrate"
+    },
+    "Migrate existing projects to SSR": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Migrate existing projects to SSR"
+    },
+    "Migrate to SSR": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Migrate to SSR"
+    },
+    "Migrate to SSR?": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Migrate to SSR?"
+    },
+    "Migrate your domain": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Migrate your domain"
+    },
+    "Migrating to SSR": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Migrating to SSR"
+    },
+    "Monthly AI spending limit for this sub-account, in USD. 0 pauses AI usage.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Monthly AI spending limit for this sub-account, in USD. 0 pauses AI usage."
+    },
+    "Monthly limit (USD)": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Monthly limit (USD)"
+    },
+    "Mute completion sound": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Mute completion sound"
+    },
+    "My projects": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "My projects"
+    },
+    "No activity recorded for this edit.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "No activity recorded for this edit."
+    },
+    "No calendars found in your account": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "No calendars found in your account"
+    },
+    "No colors found": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "No colors found"
+    },
+    "No custom domains connected yet.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "No custom domains connected yet."
+    },
+    "No extra toggle or publish-time pre-render job": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "No extra toggle or publish-time pre-render job"
+    },
+    "No folder": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "No folder"
+    },
+    "No folders in this location": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "No folders in this location"
+    },
+    "No icons found": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "No icons found"
+    },
+    "No matches in file contents": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "No matches in file contents"
+    },
+    "No meta description found for this page.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "No meta description found for this page."
+    },
+    "No projects found": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "No projects found"
+    },
+    "No projects in this folder yet": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "No projects in this folder yet"
+    },
+    "No recent projects": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "No recent projects"
+    },
+    "No secrets yet.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "No secrets yet."
+    },
+    "No site title found": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "No site title found"
+    },
+    "No starred projects": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "No starred projects"
+    },
+    "No users match \"{query}\"": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "No users match \"{query}\""
+    },
+    "Notifications alt+T": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "attr:aria-label",
+      "t": "Notifications alt+T"
+    },
+    "OG Image preview": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "OG Image preview"
+    },
+    "Ocean Deep": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "attr:aria-label",
+      "t": "Ocean Deep"
+    },
+    "On paid extra usage.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "On paid extra usage."
+    },
+    "One-Click Deploy": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "One-Click Deploy"
+    },
+    "Only {max} images allowed per message": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Only {max} images allowed per message"
+    },
+    "Open preview in new tab": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Open preview in new tab"
+    },
+    "Open your site in a private (incognito) window to confirm it is live.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Open your site in a private (incognito) window to confirm it is live."
+    },
+    "Optimize your site for search engines and social media.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Optimize your site for search engines and social media."
+    },
+    "Or add the following DNS records manually at your domain provider:": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Or add the following DNS records manually at your domain provider:"
+    },
+    "Palette": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Palette"
+    },
+    "Pending changes": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Pending changes"
+    },
+    "Permanently delete this project.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Permanently delete this project."
+    },
+    "Pick color from screen": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Pick color from screen"
+    },
+    "Planning the layout for the monthly view.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Planning the layout for the monthly view."
+    },
+    "Please select a PNG, JPEG, or WebP image": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Please select a PNG, JPEG, or WebP image"
+    },
+    "Please select an image file (PNG, ICO, SVG, JPEG, WebP, or GIF)": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Please select an image file (PNG, ICO, SVG, JPEG, WebP, or GIF)"
+    },
+    "Poor explanation": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Poor explanation"
+    },
+    "Portfolio": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Portfolio"
+    },
+    "Pre-render page content to make it easier for search engines to crawl": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Pre-render page content to make it easier for search engines to crawl"
+    },
+    "Pre-rendering is not needed": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Pre-rendering is not needed"
+    },
+    "Preview in new tab": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Preview in new tab"
+    },
+    "Preview version": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Preview version"
+    },
+    "Processing with AI": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Processing with AI"
+    },
+    "Project": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Project"
+    },
+    "Project Settings": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Project Settings"
+    },
+    "Project actions": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Project actions"
+    },
+    "Project cloned successfully": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Project cloned successfully"
+    },
+    "Project deleted": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Project deleted"
+    },
+    "Project name": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Project name"
+    },
+    "Project unpublished": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Project unpublished"
+    },
+    "Projects": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Projects"
+    },
+    "Projects ({count})": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Projects ({count})"
+    },
+    "Projects you open will appear here.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Projects you open will appear here."
+    },
+    "Prompt copied!": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Prompt copied!"
+    },
+    "Publish now": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Publish now"
+    },
+    "Publish your project": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Publish your project"
+    },
+    "Publish your project first to connect a custom domain.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Publish your project first to connect a custom domain."
+    },
+    "Publish your project first to enable search engine visibility.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Publish your project first to enable search engine visibility."
+    },
+    "Publish your project to custom domains.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Publish your project to custom domains."
+    },
+    "Publishing:": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Publishing:"
+    },
+    "Raise extra usage limit": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Raise extra usage limit"
+    },
+    "Raise limit": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Raise limit"
+    },
+    "Recent projects": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Recent projects"
+    },
+    "Reconnect calendar": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Reconnect calendar"
+    },
+    "Reconnect forms to CRM": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Reconnect forms to CRM"
+    },
+    "Reconnect integrations": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Reconnect integrations"
+    },
+    "Refresh preview": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Refresh preview"
+    },
+    "Regexp": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Regexp"
+    },
+    "Remove bookmark": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Remove bookmark"
+    },
+    "Remove domain": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Remove domain"
+    },
+    "Removing...": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Removing..."
+    },
+    "Rename project": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Rename project"
+    },
+    "Request already sent. Your agency will review it.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Request already sent. Your agency will review it."
+    },
+    "Request declined. You can ask again later.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Request declined. You can ask again later."
+    },
+    "Request more": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Request more"
+    },
+    "Request more usage": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Request more usage"
+    },
+    "Request sent. Your agency will review it.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Request sent. Your agency will review it."
+    },
+    "Requested amount (USD)": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Requested amount (USD)"
+    },
+    "Resets in {duration}.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Resets in {duration}."
+    },
+    "Resets on {date}.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Resets on {date}."
+    },
+    "Restaurant / Food Ordering": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Restaurant / Food Ordering"
+    },
+    "Restored to an earlier version": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Restored to an earlier version"
+    },
+    "Revert to this version?": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Revert to this version?"
+    },
+    "Reverting...": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Reverting..."
+    },
+    "Review answers": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Review answers"
+    },
+    "Running checks and build...": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Running checks and build..."
+    },
+    "Runtime Warning": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Runtime Warning"
+    },
+    "SECRET_NAME": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "SECRET_NAME"
+    },
+    "SEO & AI search": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "SEO & AI search"
+    },
+    "Sage & Cream": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "attr:aria-label",
+      "t": "Sage & Cream"
+    },
+    "Sandbox Disconnected": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Sandbox Disconnected"
+    },
+    "Saved secrets": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Saved secrets"
+    },
+    "Search colors...": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Search colors..."
+    },
+    "Search files...": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Search files..."
+    },
+    "Search folders...": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Search folders..."
+    },
+    "Search icon...": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Search icon..."
+    },
+    "Search projects and folders": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Search projects and folders"
+    },
+    "Search projects...": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Search projects..."
+    },
+    "Secret deleted": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Secret deleted"
+    },
+    "Secret saved": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Secret saved"
+    },
+    "Secrets": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Secrets"
+    },
+    "Secrets aren't available in this environment.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Secrets aren't available in this environment."
+    },
+    "Secrets saved": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Secrets saved"
+    },
+    "Secrets saved. Continuing the agent...": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Secrets saved. Continuing the agent..."
+    },
+    "Secrets securely save sensitive information like API keys.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Secrets securely save sensitive information like API keys."
+    },
+    "Secrets were saved, but the agent could not continue.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Secrets were saved, but the agent could not continue."
+    },
+    "Secrets were saved. Retry continuing the agent.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Secrets were saved. Retry continuing the agent."
+    },
+    "Select a file to view its contents": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Select a file to view its contents"
+    },
+    "Select a folder to move \"{name}\" to.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Select a folder to move \"{name}\" to."
+    },
+    "Select all matches": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Select all matches"
+    },
+    "Select all that apply": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Select all that apply"
+    },
+    "Select all users": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Select all users"
+    },
+    "Select all visible users": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Select all visible users"
+    },
+    "Select border radius": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Select border radius"
+    },
+    "Select border style": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Select border style"
+    },
+    "Select elements to edit and style visually": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Select elements to edit and style visually"
+    },
+    "Select font family": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Select font family"
+    },
+    "Select font size": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Select font size"
+    },
+    "Select font style": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Select font style"
+    },
+    "Select one answer": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Select one answer"
+    },
+    "Select weight": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Select weight"
+    },
+    "Select width": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Select width"
+    },
+    "Send request": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Send request"
+    },
+    "Set a primary custom domain to enable search engine visibility.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Set a primary custom domain to enable search engine visibility."
+    },
+    "Setting up conversation": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Setting up conversation"
+    },
+    "Setup is in progress and may take a few minutes to complete.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Setup is in progress and may take a few minutes to complete."
+    },
+    "Ship your app to production instantly. Custom domains and hosting included.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Ship your app to production instantly. Custom domains and hosting included."
+    },
+    "Show all {count} folders": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Show all {count} folders"
+    },
+    "Show value": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Show value"
+    },
+    "Showing {shown} of {total} matches": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Showing {shown} of {total} matches"
+    },
+    "Site icon": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Site icon"
+    },
+    "Site needs to be published first": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Site needs to be published first"
+    },
+    "Site published": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Site published"
+    },
+    "Skip all": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Skip all"
+    },
+    "Slug must be 3-20 chars, lowercase letters, numbers, and hyphens only": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Slug must be 3-20 chars, lowercase letters, numbers, and hyphens only"
+    },
+    "Social Media Feed": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Social Media Feed"
+    },
+    "Social image": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Social image"
+    },
+    "Spending limit reached for this account.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Spending limit reached for this account."
+    },
+    "Spending limit reached for this user.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Spending limit reached for this user."
+    },
+    "Spending limit reached.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Spending limit reached."
+    },
+    "Star a project to quickly find it here.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Star a project to quickly find it here."
+    },
+    "Starting live preview": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Starting live preview"
+    },
+    "Starting live preview...": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Starting live preview..."
+    },
+    "Still nothing to connect. Create one in your sub-account, then check again.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Still nothing to connect. Create one in your sub-account, then check again."
+    },
+    "Stop generation?": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Stop generation?"
+    },
+    "Submissions from this site will create contacts in your sub-account.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Submissions from this site will create contacts in your sub-account."
+    },
+    "Submit sitemap to Search Console": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Submit sitemap to Search Console"
+    },
+    "Successfully published to the internet": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Successfully published to the internet"
+    },
+    "Tailwind": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Tailwind"
+    },
+    "Taking longer than expected. Please check back later.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Taking longer than expected. Please check back later."
+    },
+    "Target folder": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Target folder"
+    },
+    "Target sub-account": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Target sub-account"
+    },
+    "Tell Google about your sitemap to speed up indexing.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Tell Google about your sitemap to speed up indexing."
+    },
+    "Tempo Flow": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Tempo Flow"
+    },
+    "Testing:": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Testing:"
+    },
+    "The integration selection was saved, but the agent could not continue.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "The integration selection was saved, but the agent could not continue."
+    },
+    "Things to note": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Things to note"
+    },
+    "This action cannot be undone. All project data, files, and conversation history will be permanently deleted.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "This action cannot be undone. All project data, files, and conversation history will be permanently deleted."
+    },
+    "This automated migration may not be fully accurate. Review, test, and fix the new copy before publishing it.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "This automated migration may not be fully accurate. Review, test, and fix the new copy before publishing it."
+    },
+    "This domain is already connected to another project.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "This domain is already connected to another project."
+    },
+    "This domain is already connected to this project": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "This domain is already connected to this project"
+    },
+    "This domain is already connected to this project.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "This domain is already connected to this project."
+    },
+    "This domain is managed in your LeadConnector Domain Hub. Records will be added directly.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "This domain is managed in your LeadConnector Domain Hub. Records will be added directly."
+    },
+    "This element is part of a shared component, style changes preview across all instances.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "This element is part of a shared component, style changes preview across all instances."
+    },
+    "This file has unsaved changes. Discard them?": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "This file has unsaved changes. Discard them?"
+    },
+    "This message was cancelled.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "This message was cancelled."
+    },
+    "This migration is billed as a standard build because AI agents perform the migration.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "This migration is billed as a standard build because AI agents perform the migration."
+    },
+    "This question expired. Send a new message to continue.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "This question expired. Send a new message to continue."
+    },
+    "This question was already answered or can no longer be resumed.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "This question was already answered or can no longer be resumed."
+    },
+    "This slug is already taken": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "This slug is already taken"
+    },
+    "This version either failed to build due to an error, or it's still building.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "This version either failed to build due to an error, or it's still building."
+    },
+    "This will revert your project to how it looked on": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "This will revert your project to how it looked on"
+    },
+    "This will stop the AI from generating. Any progress so far will be kept.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "This will stop the AI from generating. Any progress so far will be kept."
+    },
+    "This will take your site offline. The slug and custom domain will stop resolving.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "This will take your site offline. The slug and custom domain will stop resolving."
+    },
+    "Thought for 14s": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Thought for 14s"
+    },
+    "Thought for {duration}s": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Thought for {duration}s"
+    },
+    "Title - {font}": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Title - {font}"
+    },
+    "Todo / Task Manager": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Todo / Task Manager"
+    },
+    "Too many files": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Too many files"
+    },
+    "Too slow": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Too slow"
+    },
+    "Try a different search term.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Try a different search term."
+    },
+    "Try to fix": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Try to fix"
+    },
+    "Turn on": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Turn on"
+    },
+    "Turn on extra usage": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Turn on extra usage"
+    },
+    "Type \"{keyword}\" to confirm:": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Type \"{keyword}\" to confirm:"
+    },
+    "URL subdomain": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "URL subdomain"
+    },
+    "Unable to prepare the download. Please try again.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Unable to prepare the download. Please try again."
+    },
+    "Unmute completion sound": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Unmute completion sound"
+    },
+    "Unpublish and take site offline": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Unpublish and take site offline"
+    },
+    "Unpublish project": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Unpublish project"
+    },
+    "Unpublish project?": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Unpublish project?"
+    },
+    "Unpublishing...": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Unpublishing..."
+    },
+    "Unset as primary": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Unset as primary"
+    },
+    "Unset primary": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Unset primary"
+    },
+    "Unsetting the primary domain will automatically disable search engine visibility (prerendering). Search engines will no longer see optimized HTML for your site.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Unsetting the primary domain will automatically disable search engine visibility (prerendering). Search engines will no longer see optimized HTML for your site."
+    },
+    "Unstar": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Unstar"
+    },
+    "Untitled Project": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Untitled Project"
+    },
+    "Up to date": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Up to date"
+    },
+    "Update secret": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Update secret"
+    },
+    "Update settings anytime!": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Update settings anytime!"
+    },
+    "Update your project's title.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Update your project's title."
+    },
+    "Updating references": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Updating references"
+    },
+    "Upload an image from your device and attach it as AI context.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Upload an image from your device and attach it as AI context."
+    },
+    "Upload favicon": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Upload favicon"
+    },
+    "Upload social image": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Upload social image"
+    },
+    "Usage limit reached": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Usage limit reached"
+    },
+    "Usage limit reached.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Usage limit reached."
+    },
+    "Use the steps below to finish on-page SEO": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Use the steps below to finish on-page SEO"
+    },
+    "VIBE_ names are reserved for sandbox controls.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "VIBE_ names are reserved for sandbox controls."
+    },
+    "VITE_ names are exposed to the browser and can't be secret.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "VITE_ names are exposed to the browser and can't be secret."
+    },
+    "Validating build...": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Validating build..."
+    },
+    "Value is required": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Value is required"
+    },
+    "Value is too large (max 5,000 bytes).": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Value is too large (max 5,000 bytes)."
+    },
+    "Verify DNS": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Verify DNS"
+    },
+    "Verify your site is live": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Verify your site is live"
+    },
+    "View DNS records to be added": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "View DNS records to be added"
+    },
+    "View app": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "View app"
+    },
+    "View history": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "View history"
+    },
+    "View message": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "View message"
+    },
+    "View site": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "View site"
+    },
+    "Viewing:": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Viewing:"
+    },
+    "Visual Edit": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Visual Edit"
+    },
+    "Watch your app come to life in real-time as AI writes your code. Instant visual feedback on every change.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Watch your app come to life in real-time as AI writes your code. Instant visual feedback on every change."
+    },
+    "We couldn't prepare CRM tracking for this sub-account. Try again shortly.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "We couldn't prepare CRM tracking for this sub-account. Try again shortly."
+    },
+    "We couldn't reach your sub-account, so nothing was connected. Try again.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "We couldn't reach your sub-account, so nothing was connected. Try again."
+    },
+    "We'll create a separate upgraded copy. Your original project stays unchanged. This usually takes a few minutes.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "We'll create a separate upgraded copy. Your original project stays unchanged. This usually takes a few minutes."
+    },
+    "We'll create a separate version of your project with faster page loading and better link previews. Your original project stays unchanged.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "We'll create a separate version of your project with faster page loading and better link previews. Your original project stays unchanged."
+    },
+    "Weather App": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Weather App"
+    },
+    "Website address": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Website address"
+    },
+    "Website info": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Website info"
+    },
+    "Website link copied!": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Website link copied!"
+    },
+    "What went wrong?": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "What went wrong?"
+    },
+    "Which color palette fits the calendar app's mood?": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "Which color palette fits the calendar app's mood?"
+    },
+    "Whole word": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Whole word"
+    },
+    "Worked for": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Worked for"
+    },
+    "Workflows:": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Workflows:"
+    },
+    "Working...": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Working..."
+    },
+    "Write an answer": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Write an answer"
+    },
+    "Write your own": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Write your own"
+    },
+    "Write your own...": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Write your own..."
+    },
+    "You don't have permission to make this change. Ask an account admin for access.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "You don't have permission to make this change. Ask an account admin for access."
+    },
+    "You have unpublished website info changes. Do you want to discard them?": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "You have unpublished website info changes. Do you want to discard them?"
+    },
+    "You have unsaved code changes. Leave the Code editor anyway?": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "You have unsaved code changes. Leave the Code editor anyway?"
+    },
+    "You're on paid extra usage. Charges apply.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "You're on paid extra usage. Charges apply."
+    },
+    "You've used {percent} of the spending limit.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "You've used {percent} of the spending limit."
+    },
+    "You've used {percent} of your session limit.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "You've used {percent} of your session limit."
+    },
+    "Your AI Starter allowance is used up. Upgrade to AI Bundle for unlimited building, or turn on extra usage to keep going at provider cost.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Your AI Starter allowance is used up. Upgrade to AI Bundle for unlimited building, or turn on extra usage to keep going at provider cost."
+    },
+    "Your agency manages billing for this account. Ask them to raise the limit.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Your agency manages billing for this account. Ask them to raise the limit."
+    },
+    "Your app is live!": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Your app is live!"
+    },
+    "Your app title": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Your app title"
+    },
+    "Your limit was raised. You can keep building.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Your limit was raised. You can keep building."
+    },
+    "Your original stays live. You choose if and when to publish the new copy or move a domain.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Your original stays live. You choose if and when to publish the new copy or move a domain."
+    },
+    "Your plan's included AI usage is used up.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Your plan's included AI usage is used up."
+    },
+    "Your project is not published yet. Your domains will not be live until you publish.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Your project is not published yet. Your domains will not be live until you publish."
+    },
+    "Your published URL will no longer be accessible to anyone.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Your published URL will no longer be accessible to anyone."
+    },
+    "Your role does not include permission to view AI Studio.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Your role does not include permission to view AI Studio."
+    },
+    "Your session limit is used up.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Your session limit is used up."
+    },
+    "Your site will be taken offline and the published URL will stop working. You can republish at any time.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Your site will be taken offline and the published URL will stop working. You can republish at any time."
+    },
+    "a dashboard": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "a dashboard"
+    },
+    "a landing page": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "a landing page"
+    },
+    "an e-commerce store": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "an e-commerce store"
+    },
+    "e.g. **.tsx, src/**": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "e.g. **.tsx, src/**"
+    },
+    "e.g. **/node_modules/**": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "e.g. **/node_modules/**"
+    },
+    "less than 1%": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "less than 1%"
+    },
+    "something amazing": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "something amazing"
+    },
+    "to select multiple elements": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "to select multiple elements"
+    },
+    "{count} element selected | {count} elements selected": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "{count} element selected | {count} elements selected"
+    },
+    "{count} file changed | {count} files changed": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "{count} file changed | {count} files changed"
+    },
+    "{count} tool used | {count} tools used": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "{count} tool used | {count} tools used"
+    },
+    "{count} user will get access to AI Studio shortly. | {count} users will get access to AI Studio shortly.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "{count} user will get access to AI Studio shortly. | {count} users will get access to AI Studio shortly."
+    },
+    "{current} billed so far. Next alert at {next}.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "{current} billed so far. Next alert at {next}."
+    },
+    "{current} in agency usage so far. Next alert at {next}.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "{current} in agency usage so far. Next alert at {next}."
+    },
+    "{hours}h {minutes}m": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "{hours}h {minutes}m"
+    },
+    "{minutes}m": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "{minutes}m"
+    },
+    "{name} is too large": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "{name} is too large"
+    },
+    "{needing} of {total} users do not have access to AI Studio": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "{needing} of {total} users do not have access to AI Studio"
+    },
+    "{start} - {end} of {total}": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "{start} - {end} of {total}"
+    },
+    "{value}%": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "{value}%"
+    }
+  },
+  "excluded": {
+    "10": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "10",
+      "why": "runtime"
+    },
+    "25": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "25",
+      "why": "runtime"
+    },
+    "50": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "50",
+      "why": "runtime"
+    },
+    ".gitignore": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": ".gitignore",
+      "why": "user_data"
+    },
+    ".prettierignore": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": ".prettierignore",
+      "why": "user_data"
+    },
+    ".prettierrc": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": ".prettierrc",
+      "why": "user_data"
+    },
+    ".vibe": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": ".vibe",
+      "why": "user_data"
+    },
+    "0 - 0 / 0": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "0 - 0 / 0",
+      "why": "runtime"
+    },
+    "1 - 2 of 2": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "1 - 2 of 2",
+      "why": "runtime"
+    },
+    "AGENTS.md": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "AGENTS.md",
+      "why": "dotkey"
+    },
+    "BS": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "BS",
+      "why": "generic"
+    },
+    "Cloud": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Cloud",
+      "why": "generic"
+    },
+    "Cmd": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Cmd",
+      "why": "generic"
+    },
+    "Cost:": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Cost:",
+      "why": "generic"
+    },
+    "Done!": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Done!",
+      "why": "generic"
+    },
+    "Find": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Find",
+      "why": "generic"
+    },
+    "HEX": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "HEX",
+      "why": "generic"
+    },
+    "HSL": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "HSL",
+      "why": "generic"
+    },
+    "Please enter a subdomain (e.g. app.mydomain.com)": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Please enter a subdomain (e.g. app.mydomain.com)",
+      "why": "user_data"
+    },
+    "README.md": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "README.md",
+      "why": "dotkey"
+    },
+    "RGB": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "RGB",
+      "why": "generic"
+    },
+    "Root domain (mydomain.com) uses an A record. Subdomain (app.mydomain.com) uses a CNAME record.": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "Root domain (mydomain.com) uses an A record. Subdomain (app.mydomain.com) uses a CNAME record.",
+      "why": "user_data"
+    },
+    "bun.lock": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "bun.lock",
+      "why": "dotkey"
+    },
+    "bunfig.toml": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "bunfig.toml",
+      "why": "dotkey"
+    },
+    "components": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "components",
+      "why": "user_data"
+    },
+    "components.json": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "components.json",
+      "why": "dotkey"
+    },
+    "e.g. mydomain.com or app.mydomain.com": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "e.g. mydomain.com or app.mydomain.com",
+      "why": "user_data"
+    },
+    "edits": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "catalog",
+      "t": "edits",
+      "why": "user_data"
+    },
+    "eslint.config.js": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "eslint.config.js",
+      "why": "dotkey"
+    },
+    "hooks": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "hooks",
+      "why": "user_data"
+    },
+    "https://tempo-flow-a8e5f016.vibepreview.app": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "https://tempo-flow-a8e5f016.vibepreview.app",
+      "why": "dotkey"
+    },
+    "lib": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "lib",
+      "why": "user_data"
+    },
+    "package.json": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "package.json",
+      "why": "dotkey"
+    },
+    "public": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "public",
+      "why": "user_data"
+    },
+    "routeTree.gen.ts": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "routeTree.gen.ts",
+      "why": "dotkey"
+    },
+    "router.tsx": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "router.tsx",
+      "why": "dotkey"
+    },
+    "routes": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "routes",
+      "why": "user_data"
+    },
+    "server.ts": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "server.ts",
+      "why": "dotkey"
+    },
+    "src": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "src",
+      "why": "user_data"
+    },
+    "start.ts": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "start.ts",
+      "why": "dotkey"
+    },
+    "styles.css": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "styles.css",
+      "why": "dotkey"
+    },
+    "tempo-flow-a8e5f016": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "tempo-flow-a8e5f016",
+      "why": "user_data"
+    },
+    "ten@tooofar.com": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "ten@tooofar.com",
+      "why": "dotkey"
+    },
+    "toss1111@gmail.com": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "toss1111@gmail.com",
+      "why": "dotkey"
+    },
+    "tsconfig.json": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "tsconfig.json",
+      "why": "dotkey"
+    },
+    "ui": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "ui",
+      "why": "user_data"
+    },
+    "vite.config.ts": {
+      "frame": "leadgen-vibe-ai-builder.leadconnectorhq.com [iframe]",
+      "src": "text",
+      "t": "vite.config.ts",
+      "why": "dotkey"
+    }
+  }
+}
