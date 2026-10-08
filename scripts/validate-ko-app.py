@@ -13,6 +13,7 @@ v4 사전은 중첩 카탈로그라 그 게이트에 걸리지 않으므로 이 
   C5 vue-i18n 이스케이프({'@'}, {'|'}) 소실
   C6 HTML 태그 개수 불일치
   C7 _text 안전성
+  C12 _text 단어 1개 키 금지 (2026-10-08 벤자민 결정 — 전 서브계정 개방 후 고객 태그·단계명 치환 방지)
 
 위반이 있으면 sys.exit(1). 경고만 하고 통과시키지 않는다.
 
@@ -218,7 +219,7 @@ def main():
     rows = collect(core, apps)
     text = core.get('_text') or {}
 
-    v = {c: [] for c in ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11')}
+    v = {c: [] for c in ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11', 'C12')}
 
     # ── C1 화이트라벨 ──────────────────────────────────────────
     for src, key, ko in rows:
@@ -304,6 +305,17 @@ def main():
         if why:
             v['C7'].append({'key': en[:60], 'ko': ko[:60], 'why': why})
 
+    # ── C12 _text 단어 1개 키 금지 ──────────────────────────────
+    # _text 는 화면의 텍스트 노드를 정확 일치로 바꾼다. 전 서브계정 개방(v4.11) 뒤에는
+    # 'Solar' 'Roofing' 'New' 같은 단어 하나짜리 키가 고객의 태그·파이프라인 단계·업체명과
+    # 정확히 같으면 그 데이터까지 한국어로 바뀐다. 단어 하나짜리 화면 문구는 i18n 카탈로그
+    # (host/apps/flat) 로만 다룬다. 내부 키 유출(camelCase·점 표기)과 기호가 붙은 문구는 대상 아님.
+    for en in text:
+        k = en.strip()
+        if re.fullmatch(r"[A-Za-z][A-Za-z'\-]*", k) and not re.match(r'[a-z]+[A-Z]', k):
+            v['C12'].append({'key': k, 'ko': text[en][:40],
+                             'why': '단어 하나짜리 _text — 고객 데이터(태그·단계명) 치환 위험'})
+
     # ── C8 도메인에 한글 혼입 ──────────────────────────────────
     for src, key, ko in rows:
         for m in DOMAIN_RE.finditer(ko):
@@ -372,6 +384,7 @@ def main():
         'C9': '단독 DNT 토큰 (회귀 고정)',
         'C10': '제외 네임스페이스 잔존',
         'C11': '옵트아웃 게이트 유실',
+        'C12': '_text 단어 1개 키',
     }
     for g in gate_rows:
         mark = '✅' if g['ok'] else ('❌' if g['hard'] else '⏳ 다음 빌드에서 반영')
@@ -381,14 +394,14 @@ def main():
     print()
     print(f'{"검사":<6}{"항목":<26}{"위반":>8}')
     print('-' * 42)
-    for c in ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11'):
+    for c in ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11', 'C12'):
         print(f'{c:<6}{LABEL[c]:<24}{len(v[c]):>8,}')
     print('-' * 42)
     total = sum(len(x) for x in v.values())
     print(f'{"합계":<30}{total:>8,}')
     print()
 
-    for c in ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11'):
+    for c in ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11', 'C12'):
         if not v[c]:
             continue
         print(f'── {c} {LABEL[c]} ({len(v[c]):,}건) ' + '─' * 20)
@@ -411,7 +424,7 @@ def main():
     def blocking_rows(c):
         return [x for x in v[c] if x.get('src') != 'ref(미배포)']
 
-    HARD = ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C8', 'C9', 'C10', 'C11')
+    HARD = ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C8', 'C9', 'C10', 'C11', 'C12')
     blocking = sum(len(blocking_rows(c)) for c in HARD)
     shelved = sum(len(v[c]) for c in HARD) - blocking
     if blocking:

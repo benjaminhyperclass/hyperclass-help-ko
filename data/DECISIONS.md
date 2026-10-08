@@ -106,3 +106,24 @@ superagentsApp(Managed Agents 빌더·목록·채팅 레이어)의 제품명 표
 - 같은 문장의 **Labs** 는 GHL 메뉴명이라 유지. **Agent Studio** 도 고유명 유지.
 - `0 Managed Agents`(가변 숫자)는 `_text` 정확 일치 한계로 영문 잔존 — 알려진 잔존.
 - 용어집 `data/glossary/ghl-glossary.json` 에 등재. 새 번역에서 다시 영문으로 내지 말 것.
+
+---
+
+## [확정] v4 전 서브계정 개방 · 에이전시 화면 제외 · 원격 킬스위치 — 2026-10-08
+
+- 로더 v4.11.0(`45e5a5e`) `ALLOW = []`. 빈 ALLOW 도 `/v2/location/<id>/` 라우트에서만 동작하고, 에이전시 화면은 레거시 레이어가 맡는다.
+- 전 고객 중단 수단은 `data/hc-ko-app-rev.json` 의 `"off": true` (원격 킬스위치)다. 슬롯 수정은 최후 수단이다.
+- 라이브 확인 완료: 서브계정 2곳, 에이전시 화면, 제외 계정(직접 진입·계정 전환 진입). 기록은 docs/STATE.md.
+
+## [확정] `_text` 에 단어 하나짜리 키 금지 — 2026-10-08 (벤자민)
+
+전 서브계정 개방 뒤에는 `_text`(정확 일치 텍스트 치환)가 모든 고객 화면에서 돈다. `Solar`·`Roofing`·`New` 같은 단어 하나짜리 키가 고객의 태그·파이프라인 단계·업체명과 정확히 같으면 그 데이터까지 한국어로 바뀐다.
+
+- 사전 v4.2.7 에서 해당 335건을 제거했다. 목록은 `data/reports/2026-10-08-removed-single-word-text.json`.
+- `validate-ko-app.py` **C12(하드 게이트)** 가 재유입을 막는다. 단어 하나짜리 화면 문구는 i18n 카탈로그(host/apps/flat)로만 다룬다.
+- 대상이 아닌 것: 내부 키 유출(`dateAdded` 같은 camelCase·점 표기), 기호가 붙은 문구(`Clicks:`, `Typing...`).
+- 남은 한계: 레거시 레이어(`dashboard-ko@8fabb6a`)의 단어 하나짜리 항목은 그대로다. 레거시 축소·제거 때 함께 정리한다(LEGACY-REMOVAL-DECISION).
+
+## [확정] 레거시 사전 제외 정리를 ui-updater 파이프라인에 편입 — 2026-10-08
+
+09-15 봇 커밋(`757d86f`)이 08-22 에 지운 EMA ejectModal 15건을 `ghl-i18n-ko.json` 에 되살려 ko-app-validate C10 이 실패했다. 원인은 en.json 에 원문이 남아 있어 번역 단계가 매번 다시 번역하는 것이다. ui-updater 에 빌드 전 `scripts/exclusions.py --legacy` 단계를 추가했다. 제외 등재 문구는 매 실행마다 걷어낸다.
