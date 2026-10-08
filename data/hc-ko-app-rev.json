@@ -1,8 +1,8 @@
 {
-  "rev": "c9879e00e62fc35c7076d8360cfc2dbc11775806",
+  "rev": "3b8272791e0280c079f663e722ad826343d8724a",
   "off": false,
-  "version": "4.2.6",
-  "updated": "2026-09-09T08:07:49Z",
+  "version": "4.2.7",
+  "updated": "2026-10-08T05:45:41Z",
   "by": "ko-app-pointer.yml",
   "_comment": "메인 앱 한글팩 v4 사전 REV 포인터. 로더(js/hc-ko-app-loader.js)가 raw@main 에서 읽어 @rev/data/ 를 fetch 한다. core/apps 가 바뀐 push 마다 .github/workflows/ko-app-pointer.yml 봇이 jsDelivr 대조 후 전진시킨다. 롤백 = rev 를 직전 SHA 로 되돌린 커밋. 원격 킬스위치(로더 v4.11+): \"off\": true 를 커밋하면 다음 로드부터 전 고객에서 v4 가 서지 않는다(레거시 레이어는 무관). false 로 되돌리면 재개."
 }
