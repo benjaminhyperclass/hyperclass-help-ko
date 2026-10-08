@@ -3,7 +3,7 @@
 > **규칙: 매 배포 라운드 종료 시 이 파일을 갱신한다.** `data/DECISIONS.md`(결정)와 짝이 되는 **현재 상태** 파일이다.
 > 새 세션은 이 파일 → `PLAN-*.md` 순으로 읽고 시작한다. 기억에 의존해 재개하지 않는다.
 
-**갱신** 2026-10-08 (v4.11.0 전 서브계정 개방 로더 준비 · 슬롯 교체 대기 · AI Studio 는 교차 출처 iframe → 확장 트랙)
+**갱신** 2026-10-08 (v4.11.0 전 서브계정 개방 **라이브 확인 완료** · AI Studio 는 교차 출처 iframe → 확장 트랙)
 
 ## 배포 좌표
 
@@ -11,7 +11,7 @@
 |---|---|
 | 사전 버전 / REV | **v4.2.6** / `c9879e00e62fc35c7076d8360cfc2dbc11775806` (strings 103,053 · _text 9,105) — **v4.10 부터 사전 REV 는 `data/hc-ko-app-rev.json`(포인터)이 정한다.** 포인터 rev = c9879e0 (by ko-app-pointer.yml, 봇 커밋 4ed156d — 첫 자동 전진) |
 | 로더 버전 / SHA | **v4.11.0** / `45e5a5e13757aecce678f63f7ec47bce9325d28e` (ALLOW=[] 전 서브계정 · 에이전시 화면 제외 · 원격 킬스위치 `off` · 내장 REV_BUILTIN=c9879e0) |
-| Custom JS 슬롯에 실제 들어있는 로더 SHA | `0fcf256` (v4.9.2, 2026-10-08 라이브 수집 `_meta.loader` 로 재확인 — 76c557f 교체는 실시되지 않음) → **교체 대기: → `45e5a5e` (v4.11.0).** 76c557f 는 건너뛴다 |
+| Custom JS 슬롯에 실제 들어있는 로더 SHA | `0fcf256` (v4.9.2, 2026-10-08 라이브 수집 `_meta.loader` 로 재확인 — 76c557f 교체는 실시되지 않음) → **`45e5a5e` (v4.11.0) 교체 완료 2026-10-08** (76c557f 는 건너뜀). 슬롯 1줄째 `HC_I18N_EXCLUDE` 명시 — 미결 #8 해소 |
 | 레거시 DOM 레이어 핀 | `@8fabb6a/js/dashboard-ko.min.js` (스테일 핀 유지 결정 — 아래 미결) |
 | CDN 삼중 대조 | core / apps / loader 모두 CDN = raw = local = git (SHA-256), `immutable`, CORS `*` (2026-09-09) |
 
@@ -28,6 +28,10 @@ Custom JS 칸 (Agency Whitelabel → Custom JavaScript) — **실제 슬롯은 �
 |---|---|---|---|---|---|---|
 | 2026-09-09 (v2 슬롯 교체 후) | 4.9.2 | `81a235c…` | 1 | 9,094 | `/v2/location/r6JD1nsqtk6Oln28fgrj/ai-agents/agent-studio` · `…/super-agents/agent/new` | Claude Chat (크롬) |
 | **대기** (v4.10 슬롯 교체 후) | 4.10.0 기대 | 1차 로드 `81a235c`(내장) → 2차 로드부터 `c9879e0`(포인터, `revSource` pointer-cache) | 1 | 9,094 → 9,105 (2차 로드) | 목록 배너 "관리형 에이전트는"(공백 없음) · Recent agents · 템플릿 카드 3종 | Claude Chat |
+
+| **2026-10-08 (v4.11 슬롯 교체 후)** | 4.11.0 | `c9879e0` (pointer-cache) | 1 | 9,105 | ① r6JD 대시보드 hits 42 ② 타 서브계정 `5nssTmO95kobrfWUYa1o` hits 43 (연락처·대화·캘린더 한국어) ③ `/agency_dashboard` allowed/booted false ④-a 제외 계정 직접 진입 excl true·영어 ④-b 서브계정→에이전시→제외 계정 전환 시 자동 새로고침·영어 | Claude in Chrome |
+
+※ 관찰(오류 아님): `re-merge onboardingApp` 이 같은 초에 ~30회 — 원격이 네임스페이스를 쪼개 병합할 때마다 래퍼가 재병합하는 설계 동작. 일반 이동(강력 새로고침 아님) 시 부팅까지 ~11초. 잔존 영문은 런타임 조합(`Search 연락처`, `7/75 columns`, `Page 1 of 2`)·날짜 표기 — `_text` 정확 일치 한계.
 
 ※ 종전에 적었던 "4.9.1 확인" 행은 실제 라이브 검증이 아니라 raw 재현값이었으므로 삭제했다.
 
