@@ -45,4 +45,5 @@
 - [x] 7(로더) 45e5a5e v4.11.0 push, CDN=raw=local=git 일치 · 12b0667 DEPLOY-v4/STATE — 영향: 슬롯 교체(벤자민) 대기
 - 발견: validate CI 가 C10 15건으로 실패 — 원인은 이번 변경 아님. 09-15 ui-updater 봇(757d86f)이 08-22 제거한 EMA ejectModal 15종을 ghl-i18n-ko.json 에 재추가(en.json 에 원문 잔존 + 업데이터가 제외 레지스트리 미준수). v4 사전 push 시 포인터 전진을 막으므로 AI Studio 사전 반영 전 처리 필요 — 벤자민 판단
 - [x] 8(로더) 슬롯 교체(벤자민) → Claude in Chrome 라이브 확인 ①②③④-a④-b 전부 기대 일치, [hc-ko] 오류 0 — 영향: STATE 라이브 표 갱신
+- [x] 벤자민 결정 반영: ① `_text` 단어 1개 키 335건 제거 + validate C12 하드 게이트 ② C10 재유입 원인 차단(ui-updater 에 exclusions --legacy 단계) → 사전 v4.2.7 `3b82727`, validate ✅, 포인터 봇 881d9a3 전진 — 영향: verify-deploy EXPECT 3b82727/8770, REV_BUILTIN 은 다음 로더 교체 때
 - [ ] 2b 확장 수집분(hc-gap-*.json) 대기 → en.json 병합 → ui-updater
