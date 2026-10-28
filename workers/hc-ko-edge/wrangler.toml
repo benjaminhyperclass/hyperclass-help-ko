@@ -12,7 +12,7 @@ routes = [
 
 [vars]
 # 부트스트랩 커밋 SHA (슬롯 1줄째와 같은 값). 바꾸면 wrangler deploy.
-BOOTSTRAP_SHA = "7cdfb795233050e8b95effee3237ce68715c2297"
+BOOTSTRAP_SHA = "047b5293f6a85d70d8140edf7108848b1558f7d7"
 # 포인터(raw) 엣지 캐시 초. 포인터 커밋 → 이 시간 안에 전 고객 반영.
 POINTER_TTL = "60"
 # 첫 페인트를 가리는 최대 시간(ms). 로더가 core 를 병합하면 그 전에 걷는다.
