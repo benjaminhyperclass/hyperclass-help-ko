@@ -19,5 +19,9 @@
   },
   "excludeLocations": [
     "1r0pJRd1cQQ5DZsjSbc9"
-  ]
+  ],
+  "telemetry": {
+    "url": "https://hc-ko-telemetry.red-boat-3cb2.workers.dev/r",
+    "_comment": "로더 v4.14+ 가 라우트별 미번역 집계를 sendBeacon 하는 곳. 이 키를 지우면 다음 로드부터 전송 중단."
+  }
 }

@@ -7,11 +7,10 @@ compatibility_date = "2026-10-01"
 
 [[kv_namespaces]]
 binding = "TEL"
-id = "REPLACE_WITH_KV_ID"
+id = "0836915dd4194358a3eb804425146fcf"
 
 [vars]
 # 집계(GET /digest) 조회용 토큰. 배포 후 `npx wrangler secret put DIGEST_TOKEN` 으로 시크릿에 넣고 이 줄은 지운다.
-DIGEST_TOKEN = "change-me"
 # 이벤트 보존 일수
 TTL_DAYS = "30"
 # 1분당 IP별 수신 상한(남용 방지). KV 쓰기 기준.
