@@ -24,7 +24,10 @@
 | 2단계 가동 (2026-10-28 21:30 KST) | ✅ 글로서리 v1.0.0 확정(9건 권장안) ✅ `hc-ko-telemetry` 배포(`hc-ko-telemetry.red-boat-3cb2.workers.dev`, KV `0836915d…`, 토큰은 `~/.hyperclass/hc-telemetry-token`) + 포인터 `telemetry.url` + GitHub 시크릿 → 첫 집계 `data/reports/telemetry/2026-10-28.md` 봇 커밋 ✅ `hc-ko-edge` 배포 + **DNS `app` Proxied 전환(벤자민)** |
 | 엣지 실측 (콜드, r6JD) | 부트스트랩 601ms(GHL app.js 627ms보다 먼저) → 한국어 병합·베일 해제 2,013ms → 첫 콘텐츠 페인트 2,040ms(한국어). **영문 노출 0ms** (종전 ≈3,000ms). 첫 페인트는 1.2s→2.0s 로 0.8s 늦어짐. 제외 계정 영어·베일 2.5s 타임아웃 해제, 타 서브계정 stable 정상, 콘솔 오류는 `?hcko=off` 와 동일(GHL 자체) |
 | 롤백 | DNS `app` → DNS only(회색) 즉시. Worker 변수 `ENABLED="0"`. 포인터 `telemetry` 키 삭제 |
-| 다음 손 | Claude: 캐너리 24h 뒤 `loader.stable` → v4.14 승격(제외 계정 베일도 즉시 해제) → 텔레메트리 상위 ns(powerDialerApp·reportingApp·superagentsApp·agentLogsApp) + 글로서리 잔존 1,102건 번역 라운드 1회차 |
+| 최적화 (2026-10-28 밤) | 엣지 Worker v0.3: 포인터 스냅샷 `window.__hcPtr`(60s 엣지 캐시) 주입 + 로더·어댑터·core preload + 브랜드 스플래시 베일 → 우리 자산 783ms 에 전부 도착(GHL app.js 이전), 첫 페인트 616ms(스플래시), 한국어 적용은 GHL 마운트 즉시(≈2.3s). 부트스트랩 v1.2(엣지 포인터·raw 폴백), 로더 v4.15(edge REV). `loader.stable` 승격 완료 |
+| 글로서리 통일 | `round-merge.py --unify` 로 1,076건 치환 → 사전 **v4.2.9** 라이브(잔존 25). 정규 표기가 이미 있는 문장·오치환 위험 변형은 제외 |
+| 자동 번역 루프 | 로더 **v4.16**(전 고객): 미번역 키 영어 원문을 ns 당 150쌍 동봉 → Worker v0.3 `en/<ns>/<key>` KV → digest 가 `data/telemetry/en-missing/<ns>.json` → `ko-translate-round.yml`(월·목 자동·수동)이 참조본 재사용→번역→글로서리·DNT→검증→**PR**. 머지 = 포인터 자동 전진. 브라우저 수동 추출 불필요 |
+| 다음 손 | EN 풀이 차면(며칠 내 자동) 첫 라운드 PR 이 열린다 → 벤자민은 PR 에서 용어만 훑고 머지. 즉시 돌리려면 운영 계정에서 대시보드·AI 스튜디오·통화·리포팅 화면을 새 탭으로 몇 번 열면 풀이 빨리 찬다 → Actions "번역 라운드" Run workflow |
 
 ## 배포 좌표
 
