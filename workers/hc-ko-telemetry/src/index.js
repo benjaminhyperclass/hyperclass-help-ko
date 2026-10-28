@@ -1,15 +1,19 @@
-/* Hyperclass 한글팩 — 텔레메트리 수신 Worker v0.1.0 (2026-10-28)
+/* Hyperclass 한글팩 — 텔레메트리 수신 Worker v0.2.0 (2026-10-28)
  *
  * POST /r        로더(v4.14+)가 sendBeacon 으로 보내는 라우트별 미번역 집계 1건. 본문은 JSON(text/plain).
  *                검증 후 KV 에 `ev/<YYYY-MM-DD>/<ts>-<rand>` 로 저장(TTL_DAYS). 응답 204.
  * GET  /digest?date=YYYY-MM-DD[&token=…]
  *                그날 이벤트를 모아 { routes, ns(미번역 많은 순), text(한글 비율), edge(플래시 ms 분포) } JSON.
  *                date 생략 = 오늘(UTC). Authorization: Bearer <DIGEST_TOKEN> 또는 ?token=.
+ * PUT  /blob/<name>  라이브 추출(브라우저)에서 올리는 JSON 덩어리(≤1MB, 7일). Origin 이 app.hyperclass.ai 일 때만. name = [A-Za-z0-9._-]{3,64}
+ *                   같은 이름이 이미 있으면 409. GET /blob/<name> 은 DIGEST_TOKEN 필요. (v0.2 — 번역 라운드 입력 전달 채널)
  * GET  /health   200 ok
  *
  * 개인정보: 본문에 식별자가 없다(로더가 :loc 치환). 저장 시 IP·UA 를 쓰지 않는다. 레이트리밋 카운터만 IP 해시를 1분 쓴다.
  */
-const CORS = { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'POST, GET, OPTIONS', 'Access-Control-Allow-Headers': 'Content-Type' };
+const CORS = { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'POST, GET, PUT, OPTIONS', 'Access-Control-Allow-Headers': 'Content-Type, Authorization' };
+const BLOB_RE = /^\/blob\/([A-Za-z0-9._-]{3,64})$/;
+const BLOB_ORIGINS = ['https://app.hyperclass.ai'];
 const MAX_BODY = 20000;
 
 function day(d) { return (d || new Date()).toISOString().slice(0, 10); }
@@ -89,6 +93,27 @@ export default {
       const slim = { v: 1, t: ev.t, route: ev.route, loader: ev.loader, rev: ev.rev, edge: ev.edge || null, text: ev.text || null, hits: ev.hits, unmatched: ev.unmatched, ns: ev.ns, reason: ev.reason };
       await env.TEL.put(key, JSON.stringify(slim), { expirationTtl: ttl });
       return new Response(null, { status: 204, headers: CORS });
+    }
+
+    const bm = url.pathname.match(BLOB_RE);
+    if (bm && request.method === 'PUT') {
+      const origin = request.headers.get('origin') || '';
+      if (!BLOB_ORIGINS.includes(origin)) return new Response('origin', { status: 403, headers: CORS });
+      if (await rateLimited(env, request)) return new Response('rate', { status: 429, headers: CORS });
+      const txt = await request.text();
+      if (txt.length > 1048576) return new Response('too large', { status: 413, headers: CORS });
+      try { JSON.parse(txt); } catch { return new Response('bad json', { status: 400, headers: CORS }); }
+      const key = 'blob/' + bm[1];
+      if (await env.TEL.get(key)) return new Response('exists', { status: 409, headers: CORS });
+      await env.TEL.put(key, txt, { expirationTtl: 7 * 86400 });
+      return new Response(JSON.stringify({ ok: true, name: bm[1], bytes: txt.length }), { status: 201, headers: { ...CORS, 'Content-Type': 'application/json' } });
+    }
+    if (bm && request.method === 'GET') {
+      const tok = (request.headers.get('authorization') || '').replace(/^Bearer\s+/i, '') || url.searchParams.get('token') || '';
+      if (!env.DIGEST_TOKEN || tok !== env.DIGEST_TOKEN) return new Response('unauthorized', { status: 401, headers: CORS });
+      const v = await env.TEL.get('blob/' + bm[1]);
+      if (!v) return new Response('not found', { status: 404, headers: CORS });
+      return new Response(v, { headers: { ...CORS, 'Content-Type': 'application/json; charset=utf-8' } });
     }
 
     if (url.pathname === '/digest' && request.method === 'GET') {
