@@ -8,3 +8,6 @@ package-lock.json
 data/i18n-progress.json
 ghl-session*.json
 __pycache__/
+
+# workers/ 는 각자 package.json 을 가진다 (루트 규칙 예외)
+!workers/**/package.json

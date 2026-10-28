@@ -1,0 +1,1 @@
+{ "name": "hc-ko-telemetry", "private": true, "scripts": { "deploy": "wrangler deploy", "test": "node test/worker.test.mjs" } }
