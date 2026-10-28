@@ -1,4 +1,6 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.11.0
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.12.0
+ * v4.12 부터 슬롯에는 js/hc-bootstrap.js 만 붙고, 이 파일은 부트스트랩이 포인터(data/hc-ko-app-rev.json 의
+ * loader.stable/next)에서 읽은 커밋 SHA 로 주입한다. 슬롯에 직접 붙이던 방식도 그대로 동작한다.
  * Agency Settings → Company → Whitelabel → Custom Code → Custom JavaScript 칸.
  * ⚠️ 이 칸은 **HTML 주입 필드**다. script 태그로 감싸야 실행된다.
  *    (ClientClub customJs 는 반대로 태그를 거부한다 — 두 필드를 혼동하지 말 것)
@@ -20,7 +22,8 @@
  *       롤백 = 포인터 파일의 rev 를 직전 SHA 로 되돌린 커밋 (다음 로드부터 반영).
  *       운영 규칙: REV_BUILTIN 은 충분히 검증된(소킹된) 사전만 넣는다 — 포인터를 아직 못 받은
  *       첫 방문은 이 값으로 부팅하므로, 갓 올린 사전을 내장하면 롤백이 그 방문자에게 늦게 닿는다.
- * 서브계정 옵트아웃: window.HC_I18N_EXCLUDE = ['locationId', …]
+ * 서브계정 옵트아웃: window.HC_I18N_EXCLUDE = ['locationId', …] — v4.12 부터 부트스트랩이 포인터의
+ *   excludeLocations 로 이 전역을 세운다(비어 있으면 아래 HC_EXCLUDE_FALLBACK).
  *   레거시 dashboard-ko 의 hcEx() 와 판정이 같아야 한다 — 다르면 그 계정만 반쪽 한국어가 된다.
  * 긴급 중단: 주소에 ?hcko=off 또는 콘솔에서 localStorage.hcKoOff='1'
  * 디버그:   주소에 ?hcko=debug → 콘솔 로그, window.__hcKoApp.status()
@@ -94,7 +97,7 @@
   // @main 고정이면 jsDelivr 24h + TTL 6h 가 직렬로 쌓여 최악 30시간 지연된다.
   // 내장 REV 는 포인터를 한 번도 못 받은 첫 방문과, 포인터 REV 로드 실패 시의 안전망이다.
   // 슬롯 교체 없이 사전을 갱신하려면 data/hc-ko-app-rev.json 의 rev 만 바꾸면 된다(CI 봇이 한다).
-  var REV_BUILTIN = 'c9879e00e62fc35c7076d8360cfc2dbc11775806';
+  var REV_BUILTIN = '3b8272791e0280c079f663e722ad826343d8724a';
   var POINTER_URL = 'https://raw.githubusercontent.com/benjaminhyperclass/hyperclass-help-ko/main/data/hc-ko-app-rev.json';
   // 'hc-ko-app-' 접두사를 쓰지 않는다 — purgeOldCaches() 가 그 접두사 버킷을 전부 지운다.
   var POINTER_CACHE = 'hc-ko-pointer';
@@ -130,7 +133,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.11.0',
+    version: '4.12.0',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
