@@ -108,6 +108,14 @@ jobs:
       #    이 축이 실제 버그 3건을 찾아냈다. C1~C7 에는 없던 검사다.
       # 영어 원문은 _source/hc-ko-app-reference.json 에서 유도한다
       # (6.8MB EN 카탈로그를 따로 커밋하지 않기 위해 — 결과 동등성 실증됨).
+      - name: 글로서리 감사 (경고)
+        if: always()
+        run: |
+          echo "## 글로서리 감사 (data/glossary.ko.json, 확정 항목 잔존 — 경고)" >> $GITHUB_STEP_SUMMARY
+          echo '```' >> $GITHUB_STEP_SUMMARY
+          python3 scripts/glossary-audit.py 2>&1 | tail -n 12 >> $GITHUB_STEP_SUMMARY || true
+          echo '```' >> $GITHUB_STEP_SUMMARY
+
       - name: DNT·브랜드 전수 검사 (v4 배포본)
         if: always()   # 앞 스텝이 실패해도 돌린다 — 실패를 한 번에 보기 위해
         run: |

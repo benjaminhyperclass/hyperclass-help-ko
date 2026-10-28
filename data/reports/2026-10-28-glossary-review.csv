@@ -1,0 +1,53 @@
+﻿영문,확정 한글,통일할 변형,결정 필요,메모
+Funnel,퍼널,펀널 / 깔때기,,업계 관행 음차. 100% 일관
+Website,웹사이트,홈페이지,,
+Pipeline,파이프라인,파이프 라인,,
+Opportunity,기회,오퍼튜니티 / 거래,★,현행 '기회' 80%(173건). 지식창업 맥락에선 '거래'가 직관적이나 사이드바·보고서 전반 변경 비용 큼 → 권장: 현행 유지
+Stage,단계,스테이지,,파이프라인 단계
+Workflow,워크플로우,워크플로 / 작업 흐름 / 워크 플로우,★,워크플로우 291 vs 워크플로 120. 권장: '워크플로우'(국내 SaaS 관행)
+Trigger,트리거,,,
+Automation,자동화,,,
+Contact,연락처,컨택 / 고객,★,연락처 967 vs 고객 15. '고객'은 customer 번역에 남기고 contact 는 '연락처'로 고정 권장
+Lead,리드,잠재 고객 / 잠재고객,,업계 관행
+Smart List,스마트 리스트,스마트리스트 / 스마트 목록,,
+Tag,태그,,,
+Custom Field,커스텀 필드,사용자 정의 필드 / 사용자 지정 필드 / 맞춤 필드,★,3종 혼재(70/21/20). 권장: '커스텀 필드'(메뉴 표기와 일치)
+Custom Value,커스텀 값,사용자 정의 값 / 사용자 지정 값,★,권장: '커스텀 값'
+Conversation,대화,컨버세이션,,
+Calendar,캘린더,달력,,
+Appointment,예약,약속 / 어포인트먼트,,'약속' 50건은 appointment 를 예약으로 통일
+Campaign,캠페인,,,
+Email Template,이메일 템플릿,,,
+Template,템플릿,,,
+Form,폼,양식 / 서식,★,폼 348 vs 양식 256. 지식창업 운영자 관행(신청폼·설문폼) → 권장: '폼'
+Survey,설문,서베이,,
+Product,상품,제품,★,제품 289 = 상품 289 동률. 코스·멤버십을 파는 맥락 → 권장: '상품'
+Store,스토어,매장 / 상점,★,매장 221 / 스토어 137 / 상점 16. 온라인 판매 맥락 → 권장: '스토어'
+Order,주문,오더,,
+Invoice,인보이스,청구서 / 송장,,
+Payment,결제,지불,,
+Subscription,구독,정기 결제,,
+Coupon,쿠폰,,,
+Membership,멤버십,멤버쉽,,
+Course,코스,강좌 / 과정,,'강의'는 lesson 에 남긴다
+Lesson,강의,,,
+Community,커뮤니티,,,
+Media,미디어,,,미디어 저장소
+Blog,블로그,,,
+Social Planner,소셜 플래너,소셜플래너,,
+Reputation,평판,,,평판 관리
+Review,리뷰,,,명사(고객 리뷰)만. 동사 review 는 '검토' 유지
+Dashboard,대시보드,대쉬보드,,
+Reporting,리포팅,보고서 / 리포트,,
+Launchpad,런치패드,론치패드,,
+Snapshot,스냅샷,스냅숏,,
+Sub-account,서브 계정,서브계정 / 하위 계정 / 하위계정,,현행 100%
+Agency,에이전시,대행사,,
+Integration,연동,통합 / 인테그레이션,,
+Webhook,웹훅,웹후크,,
+Widget,위젯,,,
+Domain,도메인,,,
+Managed Agent,관리형 에이전트,매니지드 에이전트,,2026-09-09 확정
+Voice AI,음성 AI,보이스 AI,★,30%만 일치. 권장: '음성 AI' 고정
+Conversation AI,대화 AI,대화형 AI,,
+Affiliate,제휴,어필리에이트,,제휴 관리자

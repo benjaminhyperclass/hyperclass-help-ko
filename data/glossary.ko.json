@@ -1,0 +1,610 @@
+{
+  "_meta": {
+    "version": "0.1.0",
+    "created": "2026-10-28",
+    "status": "draft — 벤자민 검토 대기",
+    "rules": [
+      "객체명은 명사 하나로 고정, 복수·파생도 같은 어간",
+      "업계 관행 외래어는 음차(퍼널·파이프라인·워크플로우·태그·트리거)",
+      "동작 버튼은 2~4음절 동사, '~하기' 접미 금지",
+      "합쇼체",
+      "DNT 7종(DELETE CONFIRM REMOVE CANCEL TRANSFER DISABLE RESET)은 번역 금지 — 어댑터가 입력만 변환",
+      "브랜드(HighLevel/LeadConnector 등)는 whitelabel.py 규칙 우선"
+    ],
+    "measured_on": "_source/hc-ko-app-reference.json 70,290쌍 (2026-10-28)",
+    "usage": "scripts/glossary-audit.py 가 variants 잔존을 보고한다. decided=false 항목은 벤자민 결정 후 true 로 바꾸고 재번역 라운드에 반영"
+  },
+  "objects": [
+    {
+      "en": "Funnel",
+      "ko": "퍼널",
+      "variants": [
+        "펀널",
+        "깔때기"
+      ],
+      "category": "object",
+      "decided": true,
+      "note": "업계 관행 음차. 100% 일관"
+    },
+    {
+      "en": "Website",
+      "ko": "웹사이트",
+      "variants": [
+        "홈페이지"
+      ],
+      "category": "object",
+      "decided": true,
+      "note": ""
+    },
+    {
+      "en": "Pipeline",
+      "ko": "파이프라인",
+      "variants": [
+        "파이프 라인"
+      ],
+      "category": "object",
+      "decided": true,
+      "note": ""
+    },
+    {
+      "en": "Opportunity",
+      "ko": "기회",
+      "variants": [
+        "오퍼튜니티",
+        "거래"
+      ],
+      "category": "object",
+      "decided": false,
+      "note": "현행 '기회' 80%(173건). 지식창업 맥락에선 '거래'가 직관적이나 사이드바·보고서 전반 변경 비용 큼 → 권장: 현행 유지"
+    },
+    {
+      "en": "Stage",
+      "ko": "단계",
+      "variants": [
+        "스테이지"
+      ],
+      "category": "object",
+      "decided": true,
+      "note": "파이프라인 단계"
+    },
+    {
+      "en": "Workflow",
+      "ko": "워크플로우",
+      "variants": [
+        "워크플로",
+        "작업 흐름",
+        "워크 플로우"
+      ],
+      "category": "object",
+      "decided": false,
+      "note": "워크플로우 291 vs 워크플로 120. 권장: '워크플로우'(국내 SaaS 관행)"
+    },
+    {
+      "en": "Trigger",
+      "ko": "트리거",
+      "variants": [],
+      "category": "object",
+      "decided": true,
+      "note": ""
+    },
+    {
+      "en": "Automation",
+      "ko": "자동화",
+      "variants": [],
+      "category": "object",
+      "decided": true,
+      "note": ""
+    },
+    {
+      "en": "Contact",
+      "ko": "연락처",
+      "variants": [
+        "컨택",
+        "고객"
+      ],
+      "category": "object",
+      "decided": false,
+      "note": "연락처 967 vs 고객 15. '고객'은 customer 번역에 남기고 contact 는 '연락처'로 고정 권장"
+    },
+    {
+      "en": "Lead",
+      "ko": "리드",
+      "variants": [
+        "잠재 고객",
+        "잠재고객"
+      ],
+      "category": "object",
+      "decided": true,
+      "note": "업계 관행"
+    },
+    {
+      "en": "Smart List",
+      "ko": "스마트 리스트",
+      "variants": [
+        "스마트리스트",
+        "스마트 목록"
+      ],
+      "category": "object",
+      "decided": true,
+      "note": ""
+    },
+    {
+      "en": "Tag",
+      "ko": "태그",
+      "variants": [],
+      "category": "object",
+      "decided": true,
+      "note": ""
+    },
+    {
+      "en": "Custom Field",
+      "ko": "커스텀 필드",
+      "variants": [
+        "사용자 정의 필드",
+        "사용자 지정 필드",
+        "맞춤 필드"
+      ],
+      "category": "object",
+      "decided": false,
+      "note": "3종 혼재(70/21/20). 권장: '커스텀 필드'(메뉴 표기와 일치)"
+    },
+    {
+      "en": "Custom Value",
+      "ko": "커스텀 값",
+      "variants": [
+        "사용자 정의 값",
+        "사용자 지정 값"
+      ],
+      "category": "object",
+      "decided": false,
+      "note": "권장: '커스텀 값'"
+    },
+    {
+      "en": "Conversation",
+      "ko": "대화",
+      "variants": [
+        "컨버세이션"
+      ],
+      "category": "object",
+      "decided": true,
+      "note": ""
+    },
+    {
+      "en": "Calendar",
+      "ko": "캘린더",
+      "variants": [
+        "달력"
+      ],
+      "category": "object",
+      "decided": true,
+      "note": ""
+    },
+    {
+      "en": "Appointment",
+      "ko": "예약",
+      "variants": [
+        "약속",
+        "어포인트먼트"
+      ],
+      "category": "object",
+      "decided": true,
+      "note": "'약속' 50건은 appointment 를 예약으로 통일"
+    },
+    {
+      "en": "Campaign",
+      "ko": "캠페인",
+      "variants": [],
+      "category": "object",
+      "decided": true,
+      "note": ""
+    },
+    {
+      "en": "Email Template",
+      "ko": "이메일 템플릿",
+      "variants": [],
+      "category": "object",
+      "decided": true,
+      "note": ""
+    },
+    {
+      "en": "Template",
+      "ko": "템플릿",
+      "variants": [],
+      "category": "object",
+      "decided": true,
+      "note": ""
+    },
+    {
+      "en": "Form",
+      "ko": "폼",
+      "variants": [
+        "양식",
+        "서식"
+      ],
+      "category": "object",
+      "decided": false,
+      "note": "폼 348 vs 양식 256. 지식창업 운영자 관행(신청폼·설문폼) → 권장: '폼'"
+    },
+    {
+      "en": "Survey",
+      "ko": "설문",
+      "variants": [
+        "서베이"
+      ],
+      "category": "object",
+      "decided": true,
+      "note": ""
+    },
+    {
+      "en": "Product",
+      "ko": "상품",
+      "variants": [
+        "제품"
+      ],
+      "category": "object",
+      "decided": false,
+      "note": "제품 289 = 상품 289 동률. 코스·멤버십을 파는 맥락 → 권장: '상품'"
+    },
+    {
+      "en": "Store",
+      "ko": "스토어",
+      "variants": [
+        "매장",
+        "상점"
+      ],
+      "category": "object",
+      "decided": false,
+      "note": "매장 221 / 스토어 137 / 상점 16. 온라인 판매 맥락 → 권장: '스토어'"
+    },
+    {
+      "en": "Order",
+      "ko": "주문",
+      "variants": [
+        "오더"
+      ],
+      "category": "object",
+      "decided": true,
+      "note": ""
+    },
+    {
+      "en": "Invoice",
+      "ko": "인보이스",
+      "variants": [
+        "청구서",
+        "송장"
+      ],
+      "category": "object",
+      "decided": true,
+      "note": ""
+    },
+    {
+      "en": "Payment",
+      "ko": "결제",
+      "variants": [
+        "지불"
+      ],
+      "category": "object",
+      "decided": true,
+      "note": ""
+    },
+    {
+      "en": "Subscription",
+      "ko": "구독",
+      "variants": [
+        "정기 결제"
+      ],
+      "category": "object",
+      "decided": true,
+      "note": ""
+    },
+    {
+      "en": "Coupon",
+      "ko": "쿠폰",
+      "variants": [],
+      "category": "object",
+      "decided": true,
+      "note": ""
+    },
+    {
+      "en": "Membership",
+      "ko": "멤버십",
+      "variants": [
+        "멤버쉽"
+      ],
+      "category": "object",
+      "decided": true,
+      "note": ""
+    },
+    {
+      "en": "Course",
+      "ko": "코스",
+      "variants": [
+        "강좌",
+        "과정"
+      ],
+      "category": "object",
+      "decided": true,
+      "note": "'강의'는 lesson 에 남긴다"
+    },
+    {
+      "en": "Lesson",
+      "ko": "강의",
+      "variants": [],
+      "category": "object",
+      "decided": true,
+      "note": ""
+    },
+    {
+      "en": "Community",
+      "ko": "커뮤니티",
+      "variants": [],
+      "category": "object",
+      "decided": true,
+      "note": ""
+    },
+    {
+      "en": "Media",
+      "ko": "미디어",
+      "variants": [],
+      "category": "object",
+      "decided": true,
+      "note": "미디어 저장소"
+    },
+    {
+      "en": "Blog",
+      "ko": "블로그",
+      "variants": [],
+      "category": "object",
+      "decided": true,
+      "note": ""
+    },
+    {
+      "en": "Social Planner",
+      "ko": "소셜 플래너",
+      "variants": [
+        "소셜플래너"
+      ],
+      "category": "object",
+      "decided": true,
+      "note": ""
+    },
+    {
+      "en": "Reputation",
+      "ko": "평판",
+      "variants": [],
+      "category": "object",
+      "decided": true,
+      "note": "평판 관리"
+    },
+    {
+      "en": "Review",
+      "ko": "리뷰",
+      "variants": [],
+      "category": "object",
+      "decided": true,
+      "note": "명사(고객 리뷰)만. 동사 review 는 '검토' 유지"
+    },
+    {
+      "en": "Dashboard",
+      "ko": "대시보드",
+      "variants": [
+        "대쉬보드"
+      ],
+      "category": "object",
+      "decided": true,
+      "note": ""
+    },
+    {
+      "en": "Reporting",
+      "ko": "리포팅",
+      "variants": [
+        "보고서",
+        "리포트"
+      ],
+      "category": "object",
+      "decided": true,
+      "note": ""
+    },
+    {
+      "en": "Launchpad",
+      "ko": "런치패드",
+      "variants": [
+        "론치패드"
+      ],
+      "category": "object",
+      "decided": true,
+      "note": ""
+    },
+    {
+      "en": "Snapshot",
+      "ko": "스냅샷",
+      "variants": [
+        "스냅숏"
+      ],
+      "category": "object",
+      "decided": true,
+      "note": ""
+    },
+    {
+      "en": "Sub-account",
+      "ko": "서브 계정",
+      "variants": [
+        "서브계정",
+        "하위 계정",
+        "하위계정"
+      ],
+      "category": "object",
+      "decided": true,
+      "note": "현행 100%"
+    },
+    {
+      "en": "Agency",
+      "ko": "에이전시",
+      "variants": [
+        "대행사"
+      ],
+      "category": "object",
+      "decided": true,
+      "note": ""
+    },
+    {
+      "en": "Integration",
+      "ko": "연동",
+      "variants": [
+        "통합",
+        "인테그레이션"
+      ],
+      "category": "object",
+      "decided": true,
+      "note": ""
+    },
+    {
+      "en": "Webhook",
+      "ko": "웹훅",
+      "variants": [
+        "웹후크"
+      ],
+      "category": "object",
+      "decided": true,
+      "note": ""
+    },
+    {
+      "en": "Widget",
+      "ko": "위젯",
+      "variants": [],
+      "category": "object",
+      "decided": true,
+      "note": ""
+    },
+    {
+      "en": "Domain",
+      "ko": "도메인",
+      "variants": [],
+      "category": "object",
+      "decided": true,
+      "note": ""
+    },
+    {
+      "en": "Managed Agent",
+      "ko": "관리형 에이전트",
+      "variants": [
+        "매니지드 에이전트"
+      ],
+      "category": "object",
+      "decided": true,
+      "note": "2026-09-09 확정"
+    },
+    {
+      "en": "Voice AI",
+      "ko": "음성 AI",
+      "variants": [
+        "보이스 AI"
+      ],
+      "category": "object",
+      "decided": false,
+      "note": "30%만 일치. 권장: '음성 AI' 고정"
+    },
+    {
+      "en": "Conversation AI",
+      "ko": "대화 AI",
+      "variants": [
+        "대화형 AI"
+      ],
+      "category": "object",
+      "decided": true,
+      "note": ""
+    },
+    {
+      "en": "Affiliate",
+      "ko": "제휴",
+      "variants": [
+        "어필리에이트"
+      ],
+      "category": "object",
+      "decided": true,
+      "note": "제휴 관리자"
+    }
+  ],
+  "buttons": [
+    {
+      "en": "Save",
+      "ko": "저장"
+    },
+    {
+      "en": "Delete",
+      "ko": "삭제"
+    },
+    {
+      "en": "Duplicate",
+      "ko": "복제"
+    },
+    {
+      "en": "Export",
+      "ko": "내보내기"
+    },
+    {
+      "en": "Import",
+      "ko": "가져오기"
+    },
+    {
+      "en": "Archive",
+      "ko": "보관"
+    },
+    {
+      "en": "Publish",
+      "ko": "게시"
+    },
+    {
+      "en": "Preview",
+      "ko": "미리보기"
+    },
+    {
+      "en": "Create",
+      "ko": "만들기"
+    },
+    {
+      "en": "Edit",
+      "ko": "편집"
+    },
+    {
+      "en": "Cancel",
+      "ko": "취소"
+    },
+    {
+      "en": "Apply",
+      "ko": "적용"
+    },
+    {
+      "en": "Filter",
+      "ko": "필터"
+    },
+    {
+      "en": "Search",
+      "ko": "검색"
+    },
+    {
+      "en": "Add",
+      "ko": "추가"
+    },
+    {
+      "en": "Remove",
+      "ko": "제거"
+    },
+    {
+      "en": "Send",
+      "ko": "보내기"
+    },
+    {
+      "en": "Schedule",
+      "ko": "예약"
+    },
+    {
+      "en": "Enable",
+      "ko": "활성화"
+    },
+    {
+      "en": "Disable",
+      "ko": "비활성화"
+    }
+  ]
+}
