@@ -1,0 +1,7 @@
+name = "hc-ko-edge-test"
+main = "src/test-entry.js"
+compatibility_date = "2026-10-01"
+[vars]
+BOOTSTRAP_SHA = "c25c941dfe4cee25495a225c8c577f534aec6946"
+VEIL_MS = "2500"
+ENABLED = "1"

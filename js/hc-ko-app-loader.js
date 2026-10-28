@@ -1,4 +1,6 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.12.0
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.13.0
+ * v4.13: 엣지 Worker(workers/hc-ko-edge)가 <head> 에 넣은 베일(#hc-ko-veil)을 한국어 적용 시점(start) 또는
+ *        게이트 판정(제외·비허용) 즉시 걷는다. 베일이 없으면 아무 일도 하지 않는다.
  * v4.12 부터 슬롯에는 js/hc-bootstrap.js 만 붙고, 이 파일은 부트스트랩이 포인터(data/hc-ko-app-rev.json 의
  * loader.stable/next)에서 읽은 커밋 SHA 로 주입한다. 슬롯에 직접 붙이던 방식도 그대로 동작한다.
  * Agency Settings → Company → Whitelabel → Custom Code → Custom JavaScript 칸.
@@ -36,7 +38,7 @@
 
   // 긴급 중단 — 이 줄이 먼저다. 사전을 받기 전에 빠져나간다.
   try {
-    if (/[?&]hcko=off/.test(location.search) || localStorage.getItem('hcKoOff') === '1') return;
+    if (/[?&]hcko=off/.test(location.search) || localStorage.getItem('hcKoOff') === '1') { liftVeil('off'); return; }
   } catch (e) {}
 
   /* ---------- 서브계정 옵트아웃 (레거시 hcEx() 와 규칙 동일) ---------- */
@@ -133,7 +135,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.12.0',
+    version: '4.13.0',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -648,8 +650,17 @@
     }).catch(function (e) { log('boot failed', e); });
   }
   var deferred = false, hostFound = false;
+  // 엣지 Worker 가 넣은 첫 페인트 베일. 한국어가 들어간 직후, 또는 이 화면엔 적용하지 않는다고
+  // 판정한 직후 걷는다. 걷힌 시각을 __hcEdge.lifted 에 남겨 텔레메트리·검증이 플래시 길이를 잰다.
+  function liftVeil(why) {
+    try {
+      var v = document.getElementById('hc-ko-veil');
+      if (v) { v.remove(); if (window.__hcEdge) { window.__hcEdge.lifted = Date.now() - window.__hcEdge.t0; window.__hcEdge.why = why; } log('베일 해제', why); }
+    } catch (e) {}
+  }
   function start() {
     if (hostFound) setupHost(); else if (!waitHostLate()) log('host composer not found in 20s');
+    liftVeil('start');
     if (T) pass(document.body);
     mo.observe(document.documentElement, { subtree: true, childList: true, characterData: true, attributes: true, attributeFilter: ATTRS });
     scanApps();
@@ -662,6 +673,7 @@
   // 되돌릴 수 없지만, 텍스트 치환과 새 앱 적용은 여기서 멈춘다.
   // 완전히 영어로 돌리려면 새로고침이 필요하다.
   function suspend() {
+    liftVeil('suspend');
     // 이미 멈춘 상태(에이전시 화면 등)에서 제외 계정으로 들어오는 경로도 새로고침이 필요하다.
     // 종전엔 여기서 바로 return 해 A → 에이전시 → 제외 계정 순서면 한국어가 남았다.
     if (suspended) { reloadIfExcluded(); return; }
@@ -714,6 +726,7 @@
 
   if (allowed()) boot();
   else {
+    liftVeil('gate');
     log('게이트에 막힘 — 현재 로케이션:', locOf(), '/ 허용:', ALLOW.length ? ALLOW.join(',') : '전 서브계정', remoteOff() ? '(원격 킬스위치)' : '');
     if (remoteOff()) refreshPointer();   // 꺼진 상태에서도 포인터를 읽어야 원격으로 다시 켤 수 있다
   }

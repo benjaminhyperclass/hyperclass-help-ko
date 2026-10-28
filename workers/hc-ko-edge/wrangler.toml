@@ -1,0 +1,19 @@
+# Hyperclass 한글팩 — 엣지 주입 Worker (2단계 스파이크, 2026-10-28)
+# 배포: cd workers/hc-ko-edge && npx wrangler deploy   (Cloudflare 계정 로그인 필요: npx wrangler login)
+# 전제: Cloudflare DNS 에서 app.hyperclass.ai 레코드를 Proxied(주황 구름)로. SSL/TLS = Full (strict).
+# 롤백: DNS 를 DNS only(회색)로 되돌리면 즉시 종전 경로. Worker 삭제 불필요.
+name = "hc-ko-edge"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+
+routes = [
+  { pattern = "app.hyperclass.ai/*", zone_name = "hyperclass.ai" }
+]
+
+[vars]
+# 부트스트랩 커밋 SHA (슬롯 1줄째와 같은 값). 바꾸면 wrangler deploy.
+BOOTSTRAP_SHA = "c25c941dfe4cee25495a225c8c577f534aec6946"
+# 첫 페인트를 가리는 최대 시간(ms). 로더가 core 를 병합하면 그 전에 걷는다.
+VEIL_MS = "2500"
+# "0" 이면 주입 안 함(킬스위치). wrangler deploy 없이 대시보드 변수 변경만으로도 됨.
+ENABLED = "1"
