@@ -1,4 +1,4 @@
-/* Hyperclass 한글팩 — 부트스트랩 v1.0.0 (2026-10-28)
+/* Hyperclass 한글팩 — 부트스트랩 v1.1.0 (2026-10-28)
  * Agency Settings → Company → Whitelabel → Custom Code → Custom JavaScript 칸에 **단 한 번** 붙인다.
  *
  *   script src = https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@[이 파일이 든 커밋 SHA]/js/hc-bootstrap.js
@@ -17,6 +17,7 @@
  * 포인터 `excludeLocations`: 한국어 UI 를 끄는 로케이션 목록 → window.HC_I18N_EXCLUDE 로 넘긴다
  *   (로더 excluded() 와 레거시 hcEx() 가 같은 전역을 읽는다). 비어 있으면 두 레이어의 내장 폴백.
  *
+ * v1.1: 엣지 Worker 가 넣어 준 window.__hcPtr 이 있으면 0) 그 값으로 즉시 주입(source 'edge') — 저장소·네트워크 대기 없음.
  * 부팅 순서 (로더의 stale-while-revalidate 와 같은 철학):
  *   1) localStorage 에 저장된 포인터가 있으면 **즉시** 그 SHA 로 주입 (왕복 0)
  *   2) 없으면 raw@main 포인터를 받아 주입 (첫 방문 1회, 100~300ms)
@@ -30,7 +31,7 @@
   'use strict';
   if (window.__hcBoot) return;
 
-  var VERSION = '1.0.0';
+  var VERSION = '1.1.0';
   var REPO = 'benjaminhyperclass/hyperclass-help-ko';
   var CDN = 'https://cdn.jsdelivr.net/gh/' + REPO + '@';
   var POINTER_URL = 'https://raw.githubusercontent.com/' + REPO + '/main/data/hc-ko-app-rev.json';
@@ -105,6 +106,16 @@
       if (sel.ref !== state.ref) log('새 로더 감지 — 다음 로드에 반영', sel.ref.slice(0, 7));
     }).catch(function (e) { state.error = 'pointer:' + (e && e.message); log('포인터 갱신 실패', e && e.message); });
   }
+
+  // 0) 엣지 포인터 — Worker 가 요청마다 60초 캐시로 읽어 head 에 넣어 준 스냅샷
+  try {
+    var ep = window.__hcPtr;
+    var es = pick(ep);
+    if (es) {
+      lsSet(LS_KEY, JSON.stringify({ loader: ep.loader, excludeLocations: ep.excludeLocations || [], ts: Date.now() }));
+      inject(es, 'edge'); refresh(); return;
+    }
+  } catch (e) {}
 
   // 1) 저장된 포인터
   var cached = null;

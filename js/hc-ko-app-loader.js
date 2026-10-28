@@ -1,4 +1,6 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.14.0
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.15.0
+ * v4.15: 엣지 Worker 가 <head> 에 넣어 준 window.__hcPtr(포인터 스냅샷)이 있으면 Cache Storage 포인터를 기다리지 않고
+ *        그 rev 로 즉시 부팅(revSource 'edge'). 불변 URL(SHA) 사전은 cache:'default' 로 받아 <link rel=preload> 와 합쳐진다.
  * v4.14: 텔레메트리 — 적용 후 ~8초, 라우트마다 세션당 1회, 카탈로그에서 한글이 없는 리프를 네임스페이스별로 세어
  *        포인터 `telemetry.url` 로 sendBeacon. 식별자 없음(로케이션 ID 는 :loc 으로 치환). url 이 없으면 아무것도 보내지 않는다.
  *        끄기: localStorage.hcKoTelemetryOff='1'. 상태: __hcKoApp.status().telemetry
@@ -138,7 +140,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.14.0',
+    version: '4.15.0',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -488,7 +490,8 @@
   // CSP 가 다르게 걸려 있을 수 있고, 막히면 core 로드가 실패해 _text 치환까지 통째로
   // 죽는다(전면 영어). 커뮤니티 트랙에서 이미 쓰는 raw 경로(RAW, applyRev 에서 결정)로 한 번 더 시도한다.
   function grab(u) {
-    return fetch(u, { mode: 'cors', cache: 'no-cache' }).then(function (r) {
+    // SHA 고정 URL 은 내용이 바뀔 수 없으므로 재검증(no-cache)이 낭비다 — 엣지 preload 와 같은 캐시 모드를 쓴다.
+    return fetch(u, { mode: 'cors', cache: IMMUTABLE ? 'default' : 'no-cache' }).then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status); return r.text();
     });
   }
@@ -567,8 +570,24 @@
     try { if ('caches' in window) caches.open(POINTER_CACHE).then(function (c) { return c.delete(POINTER_URL); }).catch(function () {}); } catch (e) {}
   }
   var revReady = null;
+  function edgePointer() {
+    try {
+      var p = window.__hcPtr;
+      if (p && SHA_RE.test(String(p.rev)) && !isBad(p.rev)) return p;
+    } catch (e) {}
+    return null;
+  }
   function resolveRev() {
     if (revReady) return revReady;
+    var ep = edgePointer();
+    if (ep) {
+      if (ep.rev !== REV) applyRev(ep.rev, 'edge'); else revSource = 'edge';
+      lsSet(LS_REV, ep.rev);
+      try { if (ep.telemetry && typeof ep.telemetry.url === 'string' && /^https:\/\//.test(ep.telemetry.url)) lsSet(LS_TEL, ep.telemetry.url); } catch (e) {}
+      log('REV', REV.slice(0, 7), '(edge)');
+      revReady = Promise.resolve(REV);
+      return revReady;
+    }
     revReady = readCachedPointer().then(function (rev) {
       if (rev && rev !== REV) applyRev(rev, 'pointer-cache');
       else if (rev) revSource = 'pointer-cache';

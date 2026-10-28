@@ -1,26 +1,65 @@
-/* Hyperclass 한글팩 — 엣지 주입 Worker v0.1.0 (2026-10-28, 2단계 스파이크)
+/* Hyperclass 한글팩 — 엣지 주입 Worker v0.2.0 (2026-10-28)
  *
  * 역할: app.hyperclass.ai 의 HTML 문서 응답에만 개입해 <head> 맨 앞에
  *   ① 베일 스타일 — 로더가 사전을 병합할 때까지 화면을 숨겨 영문 플래시를 없앤다 (최대 VEIL_MS)
- *   ② 부트스트랩 스크립트 — GHL 이 Custom JS 를 주입하는 시점(인증 후 XHR, ~4초)을 기다리지 않는다
- * 를 끼워 넣는다. HTML 이 아닌 응답(JS·API·웹소켓 업그레이드)은 그대로 통과시킨다.
+ *   ② 포인터 스냅샷 window.__hcPtr — data/hc-ko-app-rev.json 을 엣지에서 60초 캐시로 읽어 넣는다.
+ *      부트스트랩 v1.1·로더 v4.15 는 이 값으로 저장소·네트워크 대기 없이 즉시 부팅한다 (v0.2)
+ *   ③ preload 힌트 — 로더·어댑터·core 사전을 GHL 번들과 병렬로 미리 받는다 (v0.2)
+ *   ④ 부트스트랩 스크립트
+ * HTML 이 아닌 응답(JS·API·웹소켓 업그레이드)은 그대로 통과시킨다.
  *
  * 안전장치
- *   · ENABLED="0" 이면 완전 통과. ?hcko=off 쿼리도 통과(로더 킬스위치와 같은 키).
- *   · 부트스트랩·로더는 중복 실행 가드(__hcBoot/__hcKoApp)가 있어 슬롯 주입과 겹쳐도 한 번만 돈다.
- *   · 베일은 로더가 걷거나(start 시) VEIL_MS 뒤 스스로 걷힌다 — 로더가 아예 못 떠도 화면은 나온다.
- *   · 제외 로케이션은 로더가 부팅하지 않으므로 베일만 VEIL_MS 뒤 걷힌다 → 로더 v4.13 이 제외 판정 즉시 걷는다.
- *   · Content-Length 는 스트리밍 변환 시 Cloudflare 가 제거한다. 다른 헤더는 손대지 않는다.
+ *   · ENABLED="0" 이면 완전 통과. ?hcko=off 쿼리도 통과.
+ *   · 포인터를 못 읽으면 ②③ 없이 ①④ 만 넣는다 → 부트스트랩이 종전 경로(저장소→raw→@main)로 간다.
+ *   · 부트스트랩·로더는 중복 실행 가드가 있어 슬롯 주입과 겹쳐도 한 번만 돈다.
+ *   · 베일은 로더가 걷거나 VEIL_MS 뒤 스스로 걷힌다.
  */
-export function buildHead(env) {
+const REPO = 'benjaminhyperclass/hyperclass-help-ko';
+const CDN = `https://cdn.jsdelivr.net/gh/${REPO}@`;
+const POINTER_URL = `https://raw.githubusercontent.com/${REPO}/main/data/hc-ko-app-rev.json`;
+const SHA_RE = /^[0-9a-f]{7,40}$/;
+
+export async function readPointer(env) {
+  try {
+    const r = await fetch(POINTER_URL, { cf: { cacheTtl: parseInt(env.POINTER_TTL || '60', 10) || 60, cacheEverything: true } });
+    if (!r.ok) return null;
+    const d = await r.json();
+    if (!d || !SHA_RE.test(String(d.rev)) || !d.loader || !SHA_RE.test(String(d.loader.stable))) return null;
+    return d;
+  } catch { return null; }
+}
+
+function locOf(pathname) {
+  const m = pathname.match(/\/location\/([^/]+)/);
+  return m ? m[1] : null;
+}
+
+export function pickLoader(ptr, pathname) {
+  const L = ptr.loader, loc = locOf(pathname);
+  const useNext = !!(loc && SHA_RE.test(String(L.next || '')) && Array.isArray(L.canary) && L.canary.includes(loc));
+  const files = Array.isArray(L.files) && L.files.length ? L.files : ['js/hc-ko-app-loader.js', 'js/hc-confirm-adapter.js'];
+  return { ref: useNext ? L.next : L.stable, channel: useNext ? 'next' : 'stable', files };
+}
+
+export function buildHead(env, ptr, pathname) {
   const sha = env.BOOTSTRAP_SHA;
   const veilMs = parseInt(env.VEIL_MS || '2500', 10) || 2500;
-  return (
+  let out =
     `<style id="hc-ko-veil">html{visibility:hidden !important}</style>` +
-    `<script>window.__hcEdge={v:'0.1.0',veilMs:${veilMs},t0:Date.now()};` +
-    `setTimeout(function(){var v=document.getElementById('hc-ko-veil');if(v)v.remove();},${veilMs});</script>` +
-    `<script src="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@${sha}/js/hc-bootstrap.js"></script>`
-  );
+    `<script>window.__hcEdge={v:'0.2.0',veilMs:${veilMs},t0:Date.now()};` +
+    `setTimeout(function(){var v=document.getElementById('hc-ko-veil');if(v)v.remove();},${veilMs});</script>`;
+  if (ptr) {
+    const sel = pickLoader(ptr, pathname);
+    const snap = { rev: ptr.rev, off: ptr.off === true, loader: ptr.loader, excludeLocations: ptr.excludeLocations || [], telemetry: ptr.telemetry || null };
+    // </script> 가 JSON 안에 들어오는 일은 없지만 방어적으로 이스케이프
+    out += `<script>window.__hcPtr=${JSON.stringify(snap).replace(/</g, '\\u003c')};</script>`;
+    if (ptr.off !== true) {
+      for (const f of sel.files) out += `<link rel="preload" as="script" href="${CDN}${sel.ref}/${f}">`;
+      out += `<link rel="preload" as="fetch" crossorigin="anonymous" href="${CDN}${ptr.rev}/data/hc-ko-app-core.json">`;
+    }
+  }
+  out += `<script src="${CDN}${sha}/js/hc-bootstrap.js"></script>`;
+  return out;
 }
 
 export function shouldInject(request, res, env) {
@@ -35,9 +74,10 @@ export function shouldInject(request, res, env) {
 
 export default {
   async fetch(request, env) {
-    const res = await fetch(request);
+    // 포인터와 오리진을 동시에 — 포인터는 엣지 캐시(60초)라 보통 수 ms
+    const [res, ptr] = await Promise.all([fetch(request), env.ENABLED === '0' ? null : readPointer(env)]);
     if (!shouldInject(request, res, env)) return res;
-    const head = buildHead(env);
+    const head = buildHead(env, ptr, new URL(request.url).pathname);
     return new HTMLRewriter()
       .on('head', { element(el) { el.prepend(head, { html: true }); } })
       .transform(res);
