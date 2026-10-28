@@ -1,4 +1,4 @@
-/* Hyperclass 한글팩 — 확인입력 어댑터 v1.0.0 (2026-10-28)
+/* Hyperclass 한글팩 — 확인입력 어댑터 v1.0.1 (2026-10-28)
  * 부트스트랩(js/hc-bootstrap.js)이 로더 다음에 주입한다. 단독으로도 동작한다.
  *
  * 문제: GHL 은 파괴적 동작 전에 "Type DELETE to confirm" 식 입력란을 띄우고 **영문 토큰을 정확 비교**한다.
@@ -15,7 +15,7 @@
   'use strict';
   if (window.__hcConfirm) return;
 
-  var VERSION = '1.0.0';
+  var VERSION = '1.0.1';
   var TOKENS = {
     DELETE: ['삭제'],
     CONFIRM: ['확인'],
@@ -67,13 +67,33 @@
   }
   function koWords(token) { return TOKENS[token] || []; }
 
+  // 안내는 입력란 **바깥**에 둔다. 테두리·그림자가 있는 래퍼(.hr-input 등) 안이나 플렉스 행 안에
+  // 넣으면 테두리 안쪽에 겹치거나 입력란이 찌그러진다(2026-10-28 태그 일괄삭제 모달 실측:
+  // input → .hr-input__input → .hr-input-wrapper → .hr-input(테두리) → .hr-input-container(flex row)
+  // → .hr-form-item-blank → .hr-form-item(grid)). 테두리·플렉스행·입력 래퍼를 모두 벗어난 첫 조상 뒤에 놓는다.
+  function anchorOf(input) {
+    var el = input, up = 0;
+    while (el.parentElement && up !== 6) {
+      var p = el.parentElement, cs;
+      try { cs = getComputedStyle(p); } catch (e) { break; }
+      var bordered = parseFloat(cs.borderTopWidth) > 0 || cs.boxShadow !== 'none';
+      var flexRow = cs.display.indexOf('flex') >= 0 && cs.flexDirection.indexOf('row') === 0;
+      var isInput = /(^|\s)(hr-input|n-input|el-input|input-wrapper|input-group)/.test(String(p.className || ''));
+      if (bordered || flexRow || isInput) { el = p; up++; continue; }
+      break;
+    }
+    return el;
+  }
   function hintEl(input) {
-    var next = input.nextElementSibling;
-    if (next && next.classList && next.classList.contains(HINT_CLS)) return next;
+    if (input.__hcHint && input.__hcHint.isConnected) return input.__hcHint;
+    var a = anchorOf(input);
+    var next = a.nextElementSibling;
+    if (next && next.classList && next.classList.contains(HINT_CLS)) { input.__hcHint = next; return next; }
     var h = document.createElement('div');
     h.className = HINT_CLS;
-    h.setAttribute('style', 'font-size:11px;line-height:1.4;color:#6b7280;margin-top:4px;word-break:keep-all;');
-    if (input.parentNode) input.parentNode.insertBefore(h, input.nextSibling);
+    h.setAttribute('style', 'display:block;font-size:11px;line-height:1.4;color:#6b7280;margin-top:4px;word-break:keep-all;');
+    if (a.parentNode) a.parentNode.insertBefore(h, a.nextSibling);
+    input.__hcHint = h;
     return h;
   }
   function showHint(input, token, converted) {
