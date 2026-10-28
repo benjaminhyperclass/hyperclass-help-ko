@@ -1,0 +1,135 @@
+name: 메인 앱 한글팩 — 번역 라운드 (텔레메트리 입력 → PR)
+
+# 입력: data/telemetry/en-missing/<ns>.json (ko-telemetry-digest 가 매일 채움 — 로더 v4.16+ 가 보낸 미번역 키의 영어 원문)
+# 처리: 네임스페이스별로 (이미 한국어인 키 제외) → 참조본 재사용 → 잔여를 i18n-batch-translator 로 번역 →
+#       round-merge(글로서리 강제·DNT 보존) → split → validate → 브랜치 round/<date> 에 커밋 → PR.
+# 사람은 PR 에서 용어만 훑고 머지한다. 머지되면 ko-app-validate → ko-app-pointer 가 REV 를 전진시킨다(슬롯·로더 교체 없음).
+on:
+  workflow_dispatch:
+    inputs:
+      namespaces:
+        description: '쉼표 구분 네임스페이스. 비우면 en-missing 중 20키 이상인 것 전부'
+        required: false
+      min_keys:
+        description: '자동 선택 시 최소 키 수'
+        required: false
+        default: '20'
+  schedule:
+    - cron: '47 1 * * 1,4'   # 월·목 KST 10:47 — digest(00:17 UTC) 뒤
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: ko-translate-round
+  cancel-in-progress: false
+
+jobs:
+  round:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -q anthropic
+
+      - name: 라운드 입력 준비
+        id: prep
+        env:
+          NS_IN: ${{ github.event.inputs.namespaces }}
+          MIN: ${{ github.event.inputs.min_keys || '20' }}
+        run: |
+          python3 - <<'PY'
+          import json, os, glob, re
+          H = re.compile('[가-힣]')
+          pretty = json.load(open('_source/hc-ko-app.pretty.json', encoding='utf-8'))
+          ref = json.load(open('_source/hc-ko-app-reference.json', encoding='utf-8'))
+          by_en = {}
+          for k, v in ref.items():
+              if isinstance(v, dict) and isinstance(v.get('en'), str) and isinstance(v.get('ko'), str) and H.search(v['ko']):
+                  by_en.setdefault(v['en'], v['ko'])
+          def get(d, path):
+              for p in path:
+                  if not isinstance(d, dict) or p not in d: return None
+                  d = d[p]
+              return d
+          want = [x.strip() for x in (os.environ.get('NS_IN') or '').split(',') if x.strip()]
+          minimum = int(os.environ.get('MIN') or '20')
+          rounds = []
+          os.makedirs('/tmp/round', exist_ok=True)
+          for f in sorted(glob.glob('data/telemetry/en-missing/*.json')):
+              ns = os.path.basename(f)[:-5]
+              if want and ns not in want: continue
+              en = json.load(open(f, encoding='utf-8'))
+              part = 'apps' if ns in pretty.get('apps', {}) and ns not in pretty.get('host', {}) else 'host'
+              todo, seed = {}, {}
+              for k, e in en.items():
+                  cur = get(pretty.get(part, {}).get(ns, {}), k.split('.'))
+                  if isinstance(cur, str) and H.search(cur): continue
+                  if e in by_en: seed[k] = by_en[e]
+                  else: todo[k] = e
+              if not want and len(todo) + len(seed) < minimum: continue
+              d = f'/tmp/round/{ns}/data'; os.makedirs(d, exist_ok=True)
+              json.dump({**todo, **{k: en[k] for k in seed}}, open(f'{d}/ghl-i18n-en.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+              json.dump(seed, open(f'{d}/ghl-i18n-ko.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+              rounds.append({'ns': ns, 'part': part, 'todo': len(todo), 'seed': len(seed)})
+          json.dump(rounds, open('/tmp/round/plan.json', 'w'))
+          print(json.dumps(rounds, ensure_ascii=False, indent=1))
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as o: o.write('count=%d\n' % len(rounds))
+          PY
+
+      - name: 번역 (i18n-batch-translator, 네임스페이스별)
+        if: steps.prep.outputs.count != '0'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          set -e
+          for ns in $(python3 -c "import json;print(' '.join(r['ns'] for r in json.load(open('/tmp/round/plan.json'))))"); do
+            echo "== $ns"
+            REPO_PATH=/tmp/round/$ns VAULT_PATH=/tmp/round/$ns timeout 50m python3 scripts/i18n-batch-translator.py 2>&1 | tail -n 8
+          done
+
+      - name: 병합 · 빌드 · 검증
+        if: steps.prep.outputs.count != '0'
+        id: build
+        run: |
+          set -e
+          DATE=$(date -u +%F)
+          SUMMARY=""
+          for row in $(python3 -c "import json;print(' '.join(r['ns']+':'+r['part'] for r in json.load(open('/tmp/round/plan.json'))))"); do
+            ns=${row%%:*}; part=${row#*:}
+            out=$(python3 scripts/round-merge.py --en /tmp/round/$ns/data/ghl-i18n-en.json --ko /tmp/round/$ns/data/ghl-i18n-ko.json --ns "$ns" --part "$part" --note "round $DATE $ns (telemetry)")
+            echo "$out"; SUMMARY="$SUMMARY\n- \`$ns\` ($part): $(echo "$out" | head -1)"
+          done
+          python3 scripts/split-ko-app.py | tail -n 2
+          python3 scripts/validate-ko-app.py --max-show 10
+          python3 scripts/merge-ko-app.py /tmp/deployed.json >/dev/null
+          python3 check_dnt_whitelabel.py _source/hc-ko-app-reference.json /tmp/deployed.json | grep -E '^TOTAL' | grep -q 'VIOLATIONS: 0'
+          python3 scripts/glossary-audit.py | tail -n 1
+          echo "date=$DATE" >> $GITHUB_OUTPUT
+          printf "%b" "$SUMMARY" > /tmp/round/summary.md
+
+      - name: 브랜치 커밋 · PR
+        if: steps.prep.outputs.count != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          DATE: ${{ steps.build.outputs.date }}
+        run: |
+          set -e
+          git config user.name "Hyperclass Bot"
+          git config user.email "bot@hyperclass.ai"
+          BR="round/$DATE-$(date -u +%H%M)"
+          git checkout -q -b "$BR"
+          git add _source/hc-ko-app.pretty.json _source/hc-ko-app-reference.json data/hc-ko-app-core.json data/hc-ko-app-apps.json
+          git diff --cached --quiet && { echo "변경 없음"; exit 0; }
+          VER=$(python3 -c "import json;print(json.load(open('_source/hc-ko-app.pretty.json'))['_meta']['version'])")
+          git commit -q -m "[Round] 텔레메트리 번역 라운드 $DATE → 사전 v$VER"
+          git push -q origin "$BR"
+          BODY=$(printf "텔레메트리가 올린 미번역 네임스페이스를 번역해 사전 v%s 로 올립니다.\n\n%s\n\n검증: validate-ko-app 0 · DNT/브랜드 0 · 글로서리 강제 적용. 머지 시 ko-app-pointer 가 REV 를 자동 전진합니다(슬롯·로더 교체 없음).\n\n용어만 훑어 주세요. 수정은 _source/hc-ko-app.pretty.json 에서.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)" "$VER" "$(cat /tmp/round/summary.md)")
+          gh pr create --title "번역 라운드 $DATE — 사전 v$VER" --body "$BODY" --base main --head "$BR"
+          echo "## PR 생성: $BR (사전 v$VER)" >> $GITHUB_STEP_SUMMARY
+          cat /tmp/round/summary.md >> $GITHUB_STEP_SUMMARY

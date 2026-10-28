@@ -41,6 +41,19 @@ jobs:
           DATE=${IN_DATE:-$(date -u -d 'yesterday' +%F)}
           mkdir -p data/reports/telemetry data/telemetry
           curl -fsS -H "Authorization: Bearer $TOKEN" "$URL/digest?date=$DATE" -o /tmp/digest.json
+          # 로더 v4.16+ 가 모아 준 미번역 키의 영어 원문 → 번역 라운드 입력
+          mkdir -p data/telemetry/en-missing
+          curl -fsS -H "Authorization: Bearer $TOKEN" "$URL/en" -o /tmp/en-index.json
+          python3 - <<'PY2'
+          import json, subprocess, os
+          idx = json.load(open('/tmp/en-index.json'))
+          url, tok = os.environ['URL'], os.environ['TOKEN']
+          for ns, n in sorted(idx.items(), key=lambda x: -x[1]):
+              out = subprocess.run(['curl', '-fsS', '-H', f'Authorization: Bearer {tok}', f'{url}/en?ns={ns}'], capture_output=True, text=True).stdout
+              m = json.loads(out)
+              json.dump(dict(sorted(m.items())), open(f'data/telemetry/en-missing/{ns}.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+          print('en-missing:', {k: v for k, v in idx.items()})
+          PY2
           echo "date=$DATE" >> $GITHUB_OUTPUT
           echo "skip=false" >> $GITHUB_OUTPUT
 

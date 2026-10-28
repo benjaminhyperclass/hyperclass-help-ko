@@ -1,4 +1,4 @@
-/* Hyperclass 한글팩 — 텔레메트리 수신 Worker v0.2.0 (2026-10-28)
+/* Hyperclass 한글팩 — 텔레메트리 수신 Worker v0.3.0 (2026-10-28)
  *
  * POST /r        로더(v4.14+)가 sendBeacon 으로 보내는 라우트별 미번역 집계 1건. 본문은 JSON(text/plain).
  *                검증 후 KV 에 `ev/<YYYY-MM-DD>/<ts>-<rand>` 로 저장(TTL_DAYS). 응답 204.
@@ -7,6 +7,8 @@
  *                date 생략 = 오늘(UTC). Authorization: Bearer <DIGEST_TOKEN> 또는 ?token=.
  * PUT  /blob/<name>  라이브 추출(브라우저)에서 올리는 JSON 덩어리(≤1MB, 7일). Origin 이 app.hyperclass.ai 일 때만. name = [A-Za-z0-9._-]{3,64}
  *                   같은 이름이 이미 있으면 409. GET /blob/<name> 은 DIGEST_TOKEN 필요. (v0.2 — 번역 라운드 입력 전달 채널)
+ * GET  /en?ns=<ns>[&token=…]  로더 v4.16 이 동봉한 영어 원문(pairs)을 KV `en/<ns>/<key>` 에 모은 것 → {key: en}. ns 생략 = ns 목록과 건수.
+ *                   번역 라운드 입력. (v0.3)
  * GET  /health   200 ok
  *
  * 개인정보: 본문에 식별자가 없다(로더가 :loc 치환). 저장 시 IP·UA 를 쓰지 않는다. 레이트리밋 카운터만 IP 해시를 1분 쓴다.
@@ -28,6 +30,10 @@ export function validate(ev) {
     if (typeof r.ns !== 'string' || r.ns.length > 80) return 'bad-ns-name';
     if (!Number.isFinite(r.total) || !Number.isFinite(r.en)) return 'bad-ns-count';
     if (!Array.isArray(r.samples) || r.samples.length > 5 || r.samples.some(s => typeof s !== 'string' || s.length > 160)) return 'bad-samples';
+    if (r.pairs !== undefined) {
+      if (!Array.isArray(r.pairs) || r.pairs.length > 100) return 'bad-pairs';
+      for (const p of r.pairs) if (!Array.isArray(p) || p.length !== 2 || typeof p[0] !== 'string' || typeof p[1] !== 'string' || p[0].length > 160 || p[1].length > 300) return 'bad-pair';
+    }
   }
   if (ev.text && (!Number.isFinite(ev.text.ko) || !Number.isFinite(ev.text.en))) return 'bad-text';
   return null;
@@ -92,6 +98,17 @@ export default {
       const key = 'ev/' + day() + '/' + Date.now() + '-' + Math.random().toString(36).slice(2, 8);
       const slim = { v: 1, t: ev.t, route: ev.route, loader: ev.loader, rev: ev.rev, edge: ev.edge || null, text: ev.text || null, hits: ev.hits, unmatched: ev.unmatched, ns: ev.ns, reason: ev.reason };
       await env.TEL.put(key, JSON.stringify(slim), { expirationTtl: ttl });
+      // 영어 원문 수집 — 이미 있는 키는 건너뛴다(쓰기 절약). 90일 보존.
+      let puts = 0;
+      for (const row of ev.ns) {
+        if (!Array.isArray(row.pairs)) continue;
+        for (const [k, en] of row.pairs) {
+          if (puts >= 400) break;
+          const ek = 'en/' + row.ns + '/' + k;
+          if (await env.TEL.get(ek) !== null) continue;
+          await env.TEL.put(ek, en, { expirationTtl: 90 * 86400 }); puts++;
+        }
+      }
       return new Response(null, { status: 204, headers: CORS });
     }
 
@@ -114,6 +131,24 @@ export default {
       const v = await env.TEL.get('blob/' + bm[1]);
       if (!v) return new Response('not found', { status: 404, headers: CORS });
       return new Response(v, { headers: { ...CORS, 'Content-Type': 'application/json; charset=utf-8' } });
+    }
+
+    if (url.pathname === '/en' && request.method === 'GET') {
+      const tok = (request.headers.get('authorization') || '').replace(/^Bearer\s+/i, '') || url.searchParams.get('token') || '';
+      if (!env.DIGEST_TOKEN || tok !== env.DIGEST_TOKEN) return new Response('unauthorized', { status: 401, headers: CORS });
+      const ns = url.searchParams.get('ns');
+      const prefix = ns ? 'en/' + ns + '/' : 'en/';
+      const out = {}; let cursor;
+      do {
+        const page = await env.TEL.list({ prefix, cursor, limit: 1000 });
+        for (const k of page.keys) {
+          const rest = k.name.slice(3);
+          if (ns) out[rest.slice(ns.length + 1)] = await env.TEL.get(k.name);
+          else { const n = rest.split('/')[0]; out[n] = (out[n] || 0) + 1; }
+        }
+        cursor = page.list_complete ? null : page.cursor;
+      } while (cursor);
+      return new Response(JSON.stringify(out, null, 1), { headers: { ...CORS, 'Content-Type': 'application/json; charset=utf-8' } });
     }
 
     if (url.pathname === '/digest' && request.method === 'GET') {
