@@ -1,0 +1,288 @@
+{
+  "date": "2026-10-28",
+  "generated": "2026-10-28T12:15:06Z",
+  "koRatio": 0.866,
+  "edge": {
+    "n": 0,
+    "p50": null,
+    "p90": null,
+    "gate": 0
+  },
+  "top": [
+    {
+      "ns": "powerDialerApp",
+      "exposures": 8,
+      "en": 567,
+      "total": 574,
+      "samples": [
+        "audioSettings.title",
+        "audioSettings.menuItem",
+        "audioSettings.settingsAria"
+      ]
+    },
+    {
+      "ns": "reportingApp",
+      "exposures": 8,
+      "en": 412,
+      "total": 2840,
+      "samples": [
+        "attributionReporting.opportunities",
+        "attributionReporting.contact",
+        "attributionReporting.contactId"
+      ]
+    },
+    {
+      "ns": "common",
+      "exposures": 8,
+      "en": 102,
+      "total": 2442,
+      "samples": [
+        "quizBuilder",
+        "topBar.qrCode",
+        "editForm"
+      ]
+    },
+    {
+      "ns": "agency",
+      "exposures": 8,
+      "en": 59,
+      "total": 639,
+      "samples": [
+        "saas.stripe",
+        "advancedSettings.account.hipaa",
+        "advancedSettings.productRebilling.gpt4oMini"
+      ]
+    },
+    {
+      "ns": "switchyard",
+      "exposures": 8,
+      "en": 39,
+      "total": 39,
+      "samples": [
+        "loading.switchingTo",
+        "loading.switchingAccount",
+        "loading.openingPage"
+      ]
+    },
+    {
+      "ns": "onboardingApp",
+      "exposures": 8,
+      "en": 39,
+      "total": 4450,
+      "samples": [
+        "onboardingSteps.setWebsite.placeholderManual",
+        "onboardingSteps.setupKickoff.rewardsBanner.amount",
+        "onboardingSteps.setupSuccessCall.rewardsBanner.amount"
+      ]
+    },
+    {
+      "ns": "copilot",
+      "exposures": 8,
+      "en": 37,
+      "total": 807,
+      "samples": [
+        "alt.copilot",
+        "chat.intentAgent",
+        "welcome.copilotAlt"
+      ]
+    },
+    {
+      "ns": "workflowHotlinks",
+      "exposures": 8,
+      "en": 30,
+      "total": 65,
+      "samples": [
+        "errors.renameWorkflow.title",
+        "errors.renameWorkflow.description",
+        "errors.deleteWorkflow.title"
+      ]
+    },
+    {
+      "ns": "campaign",
+      "exposures": 8,
+      "en": 23,
+      "total": 803,
+      "samples": [
+        "affiliates.firstPromoterIframe",
+        "common.actions.googleDrive",
+        "email.lcEmail.migrationModal.confirmWord"
+      ]
+    },
+    {
+      "ns": "copilotApp",
+      "exposures": 8,
+      "en": 22,
+      "total": 1275,
+      "samples": [
+        "copilot.alt.copilot",
+        "copilot.chat.intentAgent",
+        "copilot.askAi.welcome.brandVoices.honestTooth"
+      ]
+    },
+    {
+      "ns": "conversations",
+      "exposures": 8,
+      "en": 10,
+      "total": 523,
+      "samples": [
+        "send.sms.errors.genericError",
+        "send.email.errors.genericError",
+        "email.facebook"
+      ]
+    },
+    {
+      "ns": "fpDebugger",
+      "exposures": 8,
+      "en": 10,
+      "total": 115,
+      "samples": [
+        "pass",
+        "journey.noPermission",
+        "checks.locationAll"
+      ]
+    },
+    {
+      "ns": "pmd",
+      "exposures": 8,
+      "en": 8,
+      "total": 251,
+      "samples": [
+        "helpDrawer.supportAccessTitle",
+        "helpDrawer.supportAccessEnabledUntil",
+        "helpDrawer.supportAccessDisabledDescription"
+      ]
+    },
+    {
+      "ns": "reselling",
+      "exposures": 8,
+      "en": 7,
+      "total": 613,
+      "samples": [
+        "agencyResellingPage.common.coreServicesIframeTitle",
+        "paymentPage.cvv",
+        "paymentPage.alt.visacard"
+      ]
+    },
+    {
+      "ns": "payments",
+      "exposures": 8,
+      "en": 7,
+      "total": 18,
+      "samples": [
+        "shippingDelivery",
+        "pickupInStore",
+        "taxDisplaySettings"
+      ]
+    },
+    {
+      "ns": "launchpad",
+      "exposures": 8,
+      "en": 5,
+      "total": 165,
+      "samples": [
+        "duda",
+        "joomla",
+        "shopify"
+      ]
+    },
+    {
+      "ns": "marketing",
+      "exposures": 8,
+      "en": 5,
+      "total": 123,
+      "samples": [
+        "campaign.automationsPlaceholder",
+        "campaign.exampleAddress",
+        "campaign.exampleCompanyName"
+      ]
+    },
+    {
+      "ns": "notifications",
+      "exposures": 8,
+      "en": 5,
+      "total": 127,
+      "samples": [
+        "psBubble.proveSource",
+        "psBubble.review.proofMessage",
+        "psBubble.review.reviewerName"
+      ]
+    },
+    {
+      "ns": "smartList",
+      "exposures": 8,
+      "en": 5,
+      "total": 668,
+      "samples": [
+        "col.googleData",
+        "FilterListSection.instagramId",
+        "FilterListSection.facebookId"
+      ]
+    },
+    {
+      "ns": "chatWidget",
+      "exposures": 8,
+      "en": 4,
+      "total": 4,
+      "samples": [
+        "builderLoadError.title",
+        "builderLoadError.text",
+        "createLoadError.title"
+      ]
+    },
+    {
+      "ns": "contactDetail",
+      "exposures": 8,
+      "en": 4,
+      "total": 249,
+      "samples": [
+        "leftPanel.extraDetails.DNDGMBChannel",
+        "rightPanel.activityTab.fbclId",
+        "rightPanel.activityTab.gclId"
+      ]
+    },
+    {
+      "ns": "blogsApp",
+      "exposures": 8,
+      "en": 3,
+      "total": 1082,
+      "samples": [
+        "common.youtube",
+        "socials.youTube",
+        "blogImport.hubspot"
+      ]
+    },
+    {
+      "ns": "socialPlannerApp",
+      "exposures": 8,
+      "en": 3,
+      "total": 2515,
+      "samples": [
+        "common.gmb",
+        "common.linkedin",
+        "common.youtube"
+      ]
+    },
+    {
+      "ns": "superagentsApp",
+      "exposures": 8,
+      "en": 3,
+      "total": 628,
+      "samples": [
+        "testPanel.subStatus",
+        "singleAgentBuilder.actionsConfig.platformLabel",
+        "singleAgentBuilder.skillsConfig.customEntrypointPlaceholder"
+      ]
+    },
+    {
+      "ns": "integrations",
+      "exposures": 8,
+      "en": 2,
+      "total": 20,
+      "samples": [
+        "printify.title",
+        "shipStation.title"
+      ]
+    }
+  ],
+  "_comment": "텔레메트리 기반 미번역 백로그. 다음 번역 라운드는 top 순서대로. 원본은 data/reports/telemetry/<date>.md"
+}
