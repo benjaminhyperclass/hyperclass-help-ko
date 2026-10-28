@@ -3,7 +3,7 @@
 > **규칙: 매 배포 라운드 종료 시 이 파일을 갱신한다.** `data/DECISIONS.md`(결정)와 짝이 되는 **현재 상태** 파일이다.
 > 새 세션은 이 파일 → `PLAN-*.md` 순으로 읽고 시작한다. 기억에 의존해 재개하지 않는다.
 
-**갱신** 2026-10-28 (한글화 2.0 1단계 · 부트스트랩 v1.0.0 — 로더 SHA 도 포인터로 · 확인입력 어댑터 v1.0.0 · 로더 v4.12.0(REV_BUILTIN 3b82727) · 사전 v4.2.8 보류 제외 2건 확정 · **슬롯 1줄째 `@c25c941…/js/hc-bootstrap.js` 교체 완료 · 라이브 검증 완료 · loader.stable=05f9cf7 승격**)
+**갱신** 2026-10-28 (한글화 2.0 1단계 완료·2단계 코드 완료(배포 대기) · 부트스트랩 v1.0.0 — 로더 SHA 도 포인터로 · 확인입력 어댑터 v1.0.0 · 로더 v4.12.0(REV_BUILTIN 3b82727) · 사전 v4.2.8 보류 제외 2건 확정 · **슬롯 1줄째 `@c25c941…/js/hc-bootstrap.js` 교체 완료 · 라이브 검증 완료 · loader.stable=05f9cf7 승격**)
 
 > 이전 갱신 2026-10-08 (v4.11.0 전 서브계정 개방 라이브 확인 완료 · 사전 v4.2.7 `_text` 단어 1개 키 335건 제거·C12 · CI C10 해소 · AI Studio 는 교차 출처 iframe → 확장 트랙)
 
@@ -19,7 +19,9 @@
 | 사전 | v4.2.8 — `agency.gdpr.`·`communitiesApp.universityCommunity.` 제외 확정(host 63 / apps 55 / _text 7 제거, _text 8,763). push 후 `ko-app-pointer.yml` 이 `rev` 전진 |
 | CI | `ko-app-validate.yml`: bootstrap·adapter `node --check` + 꺾쇠 0 검사 추가 |
 | 라이브 검증 (2026-10-28, Claude in Chrome) | ① 슬롯 `@c25c941/hc-bootstrap.js` + `@8fabb6a` 레거시 확인 ② 캐너리 `r6JD`: channel next → 로더 4.12.0·어댑터 1.0.1, rev `d32834c`(pointer-cache), textEntries 8,763, hits 83 ③ 타 서브계정 `5nssTmO95kobrfWUYa1o`: channel stable(c25c941), 로더 4.12.0·어댑터 1.0.0, 한국어 ④ 제외 `1r0p…`: 부트스트랩 excludeLocations 전달 → excluded true·영어 ⑤ 태그 일괄삭제 모달: '삭제'→DELETE 변환·버튼 활성(취소) → `loader.stable` 05f9cf7 승격 |
-| 다음 손 | 2단계: Cloudflare `HTMLRewriter` 1일 스파이크(플래시 0 가능성), 텔레메트리 수신처(Worker+KV), 글로서리 40개 초안 |
+| 2단계 (2026-10-28, 브랜치 main) | ① `workers/hc-ko-edge` 엣지 주입 Worker + 로더 v4.13 베일 해제 — 로컬 7건 통과, **배포·DNS Proxied 전환은 벤자민 승인 대기** ② `workers/hc-ko-telemetry` + 로더 v4.14 리포터 + `ko-telemetry-digest.yml` — 로컬 9건 통과, **wrangler 배포·KV·시크릿·포인터 `telemetry.url` 대기** ③ `data/glossary.ko.json` 객체 52(결정 대기 ★9) + `scripts/glossary-audit.py` |
+| 로더 채널 | `loader.stable` 05f9cf7(v4.12.0 · 어댑터 1.0.1) 전 고객 · `loader.next` = HEAD(v4.14.0, 텔레메트리는 포인터 url 없으면 무동작) 캐너리 r6JD |
+| 다음 손 | 벤자민: (a) 글로서리 ★9 결정 (b) `npx wrangler login` 후 두 Worker 배포 (c) DNS `app` Proxied 전환 → Claude: 라이브 플래시 측정·텔레메트리 첫 집계 확인 → `loader.stable` 승격 → 텔레메트리 상위 ns(superagentsApp·agentLogsApp·powerDialerApp) 번역 라운드 |
 
 ## 배포 좌표
 
