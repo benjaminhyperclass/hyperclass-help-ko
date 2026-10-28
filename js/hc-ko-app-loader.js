@@ -1,5 +1,5 @@
 /* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.16.0
- * v4.16: 텔레메트리에 미번역 키의 **영어 원문 샘플**(ns 당 최대 80쌍, 보고서 ≤48KB)을 동봉 — Worker 가 KV 에 모아
+ * v4.16: 텔레메트리에 미번역 키의 **영어 원문 샘플**(ns 당 최대 150쌍, 보고서 ≤60KB)을 동봉 — Worker 가 KV 에 모아
  *        번역 라운드 입력(data/telemetry/en-missing/)을 사람 손 없이 채운다. UI 문자열만, 사용자 데이터 없음.
  * v4.15: 엣지 Worker 가 <head> 에 넣어 준 window.__hcPtr(포인터 스냅샷)이 있으면 Cache Storage 포인터를 기다리지 않고
  *        그 rev 로 즉시 부팅(revSource 'edge'). 불변 URL(SHA) 사전은 cache:'default' 로 받아 <link rel=preload> 와 합쳐진다.
@@ -670,8 +670,8 @@
             if (c.samples.length < 3) c.samples.push(kp);
             // 영어 원문 샘플: 저수지 샘플링으로 ns 당 최대 80쌍 — 여러 세션이 모이면 Worker 가 전체를 갖게 된다
             c.pairs = c.pairs || [];
-            if (c.pairs.length < 80) c.pairs.push([kp, x.slice(0, 240)]);
-            else { var j = Math.floor(Math.random() * c.en); if (j < 80) c.pairs[j] = [kp, x.slice(0, 240)]; }
+            if (c.pairs.length < 150) c.pairs.push([kp, x.slice(0, 240)]);
+            else { var j = Math.floor(Math.random() * c.en); if (j < 150) c.pairs[j] = [kp, x.slice(0, 240)]; }
           }
         }
       })(v, '');
@@ -713,9 +713,9 @@
         text: visibleRatio(), hits: stats.textHits, unmatched: stats.unmatched, ns: rows.slice(0, 25), reason: reason
       };
       var payload = JSON.stringify(body);
-      // 48KB 상한: 넘치면 하위 ns 부터 pairs 를 비우고, 그래도 넘치면 ns 수를 줄인다
+      // 60KB 상한(sendBeacon 64KB): 넘치면 하위 ns 부터 pairs 를 비우고, 그래도 넘치면 ns 수를 줄인다
       for (var ci = body.ns.length - 1; ci >= 0 && payload.length > 48000; ci--) { body.ns[ci].pairs = []; payload = JSON.stringify(body); }
-      if (payload.length > 48000) { body.ns = body.ns.slice(0, 10); payload = JSON.stringify(body); }
+      if (payload.length > 60000) { body.ns = body.ns.slice(0, 10); payload = JSON.stringify(body); }
       var ok = false;
       try { ok = navigator.sendBeacon(url, new Blob([payload], { type: 'text/plain' })); } catch (e) {}
       if (!ok) { try { fetch(url, { method: 'POST', body: payload, mode: 'no-cors', keepalive: true, headers: { 'Content-Type': 'text/plain' } }); ok = true; } catch (e) {} }

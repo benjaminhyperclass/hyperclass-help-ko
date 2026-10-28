@@ -16,7 +16,7 @@
 const CORS = { 'Access-Control-Allow-Origin': '*', 'Access-Control-Allow-Methods': 'POST, GET, PUT, OPTIONS', 'Access-Control-Allow-Headers': 'Content-Type, Authorization' };
 const BLOB_RE = /^\/blob\/([A-Za-z0-9._-]{3,64})$/;
 const BLOB_ORIGINS = ['https://app.hyperclass.ai'];
-const MAX_BODY = 20000;
+const MAX_BODY = 65536;
 
 function day(d) { return (d || new Date()).toISOString().slice(0, 10); }
 
@@ -31,7 +31,7 @@ export function validate(ev) {
     if (!Number.isFinite(r.total) || !Number.isFinite(r.en)) return 'bad-ns-count';
     if (!Array.isArray(r.samples) || r.samples.length > 5 || r.samples.some(s => typeof s !== 'string' || s.length > 160)) return 'bad-samples';
     if (r.pairs !== undefined) {
-      if (!Array.isArray(r.pairs) || r.pairs.length > 100) return 'bad-pairs';
+      if (!Array.isArray(r.pairs) || r.pairs.length > 160) return 'bad-pairs';
       for (const p of r.pairs) if (!Array.isArray(p) || p.length !== 2 || typeof p[0] !== 'string' || typeof p[1] !== 'string' || p[0].length > 160 || p[1].length > 300) return 'bad-pair';
     }
   }
