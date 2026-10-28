@@ -1,0 +1,18 @@
+# Hyperclass 한글팩 — 텔레메트리 수신 Worker (2단계 ②, 2026-10-28)
+# 배포: cd workers/hc-ko-telemetry && npx wrangler kv namespace create TEL  → 아래 id 채움 → npx wrangler deploy
+# 로더가 보내는 곳: 포인터 data/hc-ko-app-rev.json 의 telemetry.url (= 이 Worker 의 URL + /r)
+name = "hc-ko-telemetry"
+main = "src/index.js"
+compatibility_date = "2026-10-01"
+
+[[kv_namespaces]]
+binding = "TEL"
+id = "REPLACE_WITH_KV_ID"
+
+[vars]
+# 집계(GET /digest) 조회용 토큰. 배포 후 `npx wrangler secret put DIGEST_TOKEN` 으로 시크릿에 넣고 이 줄은 지운다.
+DIGEST_TOKEN = "change-me"
+# 이벤트 보존 일수
+TTL_DAYS = "30"
+# 1분당 IP별 수신 상한(남용 방지). KV 쓰기 기준.
+RATE_PER_MIN = "30"

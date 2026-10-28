@@ -1,4 +1,7 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.13.0
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.14.0
+ * v4.14: 텔레메트리 — 적용 후 ~8초, 라우트마다 세션당 1회, 카탈로그에서 한글이 없는 리프를 네임스페이스별로 세어
+ *        포인터 `telemetry.url` 로 sendBeacon. 식별자 없음(로케이션 ID 는 :loc 으로 치환). url 이 없으면 아무것도 보내지 않는다.
+ *        끄기: localStorage.hcKoTelemetryOff='1'. 상태: __hcKoApp.status().telemetry
  * v4.13: 엣지 Worker(workers/hc-ko-edge)가 <head> 에 넣은 베일(#hc-ko-veil)을 한국어 적용 시점(start) 또는
  *        게이트 판정(제외·비허용) 즉시 걷는다. 베일이 없으면 아무 일도 하지 않는다.
  * v4.12 부터 슬롯에는 js/hc-bootstrap.js 만 붙고, 이 파일은 부트스트랩이 포인터(data/hc-ko-app-rev.json 의
@@ -135,11 +138,12 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.13.0',
+    version: '4.14.0',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
-      s.revSource = revSource;    // builtin | pointer-cache | builtin-fallback(포인터 REV 로드 실패)
+      s.revSource = revSource;
+      s.telemetry = JSON.parse(JSON.stringify(telemetry));    // builtin | pointer-cache | builtin-fallback(포인터 REV 로드 실패)
       s.revBuiltin = REV_BUILTIN;
       s.revNext = revNext;        // 백그라운드에서 받은 새 포인터 — 다음 로드에 반영
       s.gate = gate;              // 화이트리스트가 걸려 있는가
@@ -543,6 +547,7 @@
   // 전체 개방 후엔 슬롯 교체 없이 끌 수단이 이것뿐이다. 꺼져 있어도 포인터는 계속 읽어
   // "off": false 로 되돌리면 그다음 로드부터 다시 켜진다. 레거시 레이어는 이것과 무관하다.
   var LS_OFF = 'hcKoRemoteOff';
+  var LS_TEL = 'hcKoTelemetryUrl';
   function lsGet(k) { try { return localStorage.getItem(k); } catch (e) { return null; } }
   function lsSet(k, v) { try { if (v === null) localStorage.removeItem(k); else localStorage.setItem(k, v); } catch (e) {} }
   // 사전 로드에 실패한 rev. 도달 불가 커밋(force push·gc)이면 포인터가 같은 값을 계속 주므로
@@ -584,6 +589,7 @@
         if (isBad(d.rev)) { log('포인터가 로드 실패했던 REV 를 가리킴 — 무시', d.rev.slice(0, 7)); return; }
         if (d.rev !== REV) { revNext = d.rev; log('새 REV 감지 — 다음 로드에 반영', d.rev.slice(0, 7)); }
         lsSet(LS_REV, d.rev);
+        try { lsSet(LS_TEL, d.telemetry && typeof d.telemetry.url === 'string' && /^https:\/\//.test(d.telemetry.url) ? d.telemetry.url : null); } catch (e) {}
         if (lsGet(LS_BAD) && lsGet(LS_BAD) !== d.rev) lsSet(LS_BAD, null);   // 포인터가 옮겨 갔으면 불량 기록 해제
         if ('caches' in window) {
           caches.open(POINTER_CACHE).then(function (c) {
@@ -616,6 +622,79 @@
         setTimeout(tick, 60);
       })();
     });
+  }
+
+  /* ---------- T. 텔레메트리 (v4.14) ---------- */
+  // 무엇을: 라우트별 ① 카탈로그 네임스페이스마다 한글이 없는 리프 수(+샘플 키 3개) ② 보이는 텍스트의 한글/영문 비율
+  //         ③ 베일 해제까지 걸린 ms. 개인정보·로케이션 ID·본문 텍스트는 보내지 않는다(키 경로와 영어 원문 샘플뿐).
+  // 언제: start() 8초 뒤와 라우트 변경 8초 뒤. 같은 라우트 패턴은 세션당 1회.
+  var telemetry = { sent: 0, skipped: 0, last: null, url: null };
+  var HANGUL = /[가-힣]/, LATIN = /[A-Za-z]{3,}/;
+  function routePattern() {
+    return location.pathname.replace(/\/location\/[^/]+/, '/location/:loc').replace(/\/[0-9a-zA-Z]{20,}(?=\/|$)/g, '/:id').slice(0, 160);
+  }
+  function countNs(cat, out) {
+    for (var ns in cat) {
+      var v = cat[ns]; if (!v || typeof v !== 'object') continue;
+      var c = out[ns] || (out[ns] = { total: 0, en: 0, samples: [] });
+      (function walk(o, path) {
+        for (var k in o) {
+          var x = o[k];
+          if (x && typeof x === 'object') { walk(x, path + '.' + k); continue; }
+          if (typeof x !== 'string') continue;
+          c.total++;
+          if (!HANGUL.test(x) && LATIN.test(x)) { c.en++; if (c.samples.length < 3) c.samples.push((path + '.' + k).slice(1).slice(0, 120)); }
+        }
+      })(v, '');
+    }
+  }
+  function visibleRatio() {
+    var ko = 0, en = 0, n = 0;
+    try {
+      var w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+      var t;
+      while ((t = w.nextNode()) && n < 4000) {
+        var s = t.nodeValue; if (!s || !s.trim()) continue;
+        var pe = t.parentElement; if (!pe || /^(SCRIPT|STYLE|NOSCRIPT)$/.test(pe.tagName)) continue;
+        n++;
+        if (HANGUL.test(s)) ko++; else if (LATIN.test(s)) en++;
+      }
+    } catch (e) {}
+    return { ko: ko, en: en };
+  }
+  function telemetryUrl() { return lsGet(LS_TEL); }
+  function sendTelemetry(reason) {
+    try {
+      if (lsGet('hcKoTelemetryOff') === '1') { telemetry.skipped++; return; }
+      var url = telemetryUrl(); telemetry.url = url;
+      if (!url || !booted || suspended) { telemetry.skipped++; return; }
+      var rp = routePattern();
+      var key = 'hcKoTel:' + rp;
+      try { if (sessionStorage.getItem(key)) { telemetry.skipped++; return; } } catch (e) {}
+      var ns = {};
+      var el = document.getElementById('app'), g = el && el.__vue_app__ && composerOf(el.__vue_app__);
+      if (g) countNs(catalogOf(g), ns);
+      // 영문이 남은 네임스페이스만, 많은 순으로 상위 25개
+      var rows = [];
+      for (var k in ns) if (ns[k].en) rows.push({ ns: k, total: ns[k].total, en: ns[k].en, samples: ns[k].samples });
+      rows.sort(function (a, b) { return b.en - a.en; });
+      var body = {
+        v: 1, t: new Date().toISOString(), route: rp, loader: API.version, rev: String(REV).slice(0, 7),
+        edge: window.__hcEdge ? { lifted: window.__hcEdge.lifted || null, why: window.__hcEdge.why || null } : null,
+        text: visibleRatio(), hits: stats.textHits, unmatched: stats.unmatched, ns: rows.slice(0, 25), reason: reason
+      };
+      var payload = JSON.stringify(body);
+      if (payload.length > 16000) { body.ns = body.ns.slice(0, 10); payload = JSON.stringify(body); }
+      var ok = false;
+      try { ok = navigator.sendBeacon(url, new Blob([payload], { type: 'text/plain' })); } catch (e) {}
+      if (!ok) { try { fetch(url, { method: 'POST', body: payload, mode: 'no-cors', keepalive: true, headers: { 'Content-Type': 'text/plain' } }); ok = true; } catch (e) {} }
+      if (ok) { telemetry.sent++; telemetry.last = rp; try { sessionStorage.setItem(key, '1'); } catch (e) {} log('텔레메트리 전송', rp, rows.length + ' ns'); }
+    } catch (e) { log('텔레메트리 실패', e && e.message); }
+  }
+  var telTimer = null;
+  function scheduleTelemetry(reason) {
+    clearTimeout(telTimer);
+    telTimer = setTimeout(function () { sendTelemetry(reason); }, 8000);
   }
 
   /* ---------- 부트스트랩 ---------- */
@@ -661,6 +740,7 @@
   function start() {
     if (hostFound) setupHost(); else if (!waitHostLate()) log('host composer not found in 20s');
     liftVeil('start');
+    scheduleTelemetry('start');
     if (T) pass(document.body);
     mo.observe(document.documentElement, { subtree: true, childList: true, characterData: true, attributes: true, attributeFilter: ATTRS });
     scanApps();
@@ -719,6 +799,7 @@
     if (!allowed()) { suspend(); return; }
     if (!booted) { boot(); return; }
     resume();
+    scheduleTelemetry('route');
     // 라우트 이동은 앱이 통째로 갈리는 지점이라 디바운스를 기다리지 않는다.
     scheduleScan(80);
   }

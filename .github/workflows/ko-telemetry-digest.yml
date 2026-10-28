@@ -1,0 +1,88 @@
+name: 메인 앱 한글팩 — 텔레메트리 일일 집계
+
+# 매일 UTC 00:17(KST 09:17) 어제치 집계를 받아 data/reports/telemetry/ 에 남기고
+# data/telemetry/missing-top.json(미번역 상위 네임스페이스)을 갱신한다. 이 파일이 다음 번역 라운드의 작업 목록이다.
+# 시크릿: HC_TELEMETRY_URL (Worker 주소, 끝에 / 없이), HC_TELEMETRY_TOKEN (DIGEST_TOKEN). 없으면 조용히 건너뛴다.
+on:
+  schedule:
+    - cron: '17 0 * * *'
+  workflow_dispatch:
+    inputs:
+      date:
+        description: '집계 날짜 YYYY-MM-DD (비우면 어제, UTC)'
+        required: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: ko-telemetry-digest
+  cancel-in-progress: false
+
+jobs:
+  digest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+
+      - name: 집계 수신
+        id: fetch
+        env:
+          URL: ${{ secrets.HC_TELEMETRY_URL }}
+          TOKEN: ${{ secrets.HC_TELEMETRY_TOKEN }}
+          IN_DATE: ${{ github.event.inputs.date }}
+        run: |
+          set -e
+          if [ -z "$URL" ] || [ -z "$TOKEN" ]; then
+            echo "## 텔레메트리 집계: 건너뜀 — HC_TELEMETRY_URL / HC_TELEMETRY_TOKEN 시크릿 없음" >> $GITHUB_STEP_SUMMARY
+            echo "skip=true" >> $GITHUB_OUTPUT; exit 0; fi
+          DATE=${IN_DATE:-$(date -u -d 'yesterday' +%F)}
+          mkdir -p data/reports/telemetry data/telemetry
+          curl -fsS -H "Authorization: Bearer $TOKEN" "$URL/digest?date=$DATE" -o /tmp/digest.json
+          echo "date=$DATE" >> $GITHUB_OUTPUT
+          echo "skip=false" >> $GITHUB_OUTPUT
+
+      - name: 보고서·백로그 작성
+        if: steps.fetch.outputs.skip != 'true'
+        env:
+          DATE: ${{ steps.fetch.outputs.date }}
+        run: |
+          python3 - <<'PY'
+          import json, os, datetime
+          date = os.environ['DATE']
+          d = json.load(open('/tmp/digest.json', encoding='utf-8'))
+          md = [f"# 텔레메트리 일일 집계 — {date}", "",
+                f"이벤트 {d['events']}건 · 라우트 {len(d['routes'])}개 · 전체 한글 비율 {d['text']['koRatio']} · 베일 해제 p50 {d['edge']['p50']}ms / p90 {d['edge']['p90']}ms (n={d['edge']['n']})", "",
+                "## 미번역 네임스페이스 (노출×영문 리프 순)", "", "| ns | 노출 | 영문 리프 | 전체 리프 | 라우트 수 | 샘플 키 |", "|---|---:|---:|---:|---:|---|"]
+          for r in d['ns'][:40]:
+              md.append(f"| `{r['ns']}` | {r['exposures']} | {r['en']} | {r['total']} | {r['routes']} | " + ', '.join(f"`{s}`" for s in r['samples'][:3]) + " |")
+          md += ["", "## 라우트별 한글 비율 (낮은 순)", "", "| 라우트 | 조회 | 한글 비율 | 영문 리프 |", "|---|---:|---:|---:|"]
+          for r in d['routes'][:40]:
+              md.append(f"| `{r['route']}` | {r['views']} | {r['koRatio']} | {r['enNsLeaves']} |")
+          open(f'data/reports/telemetry/{date}.md', 'w', encoding='utf-8').write('\n'.join(md) + '\n')
+          # 백로그: 최근 7일 보고서의 ns 를 합쳐 상위 50
+          agg = {}
+          for f in sorted(os.listdir('data/reports/telemetry'))[-7:]:
+              pass
+          top = [{'ns': r['ns'], 'exposures': r['exposures'], 'en': r['en'], 'total': r['total'], 'samples': r['samples']} for r in d['ns'][:50]]
+          json.dump({'date': date, 'generated': datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
+                     'koRatio': d['text']['koRatio'], 'edge': d['edge'], 'top': top,
+                     '_comment': '텔레메트리 기반 미번역 백로그. 다음 번역 라운드는 top 순서대로. 원본은 data/reports/telemetry/<date>.md'},
+                    open('data/telemetry/missing-top.json', 'w', encoding='utf-8'), ensure_ascii=False, indent=2)
+          print('\n'.join(md[:12]))
+          PY
+          head -c 1500 "data/reports/telemetry/$DATE.md" >> $GITHUB_STEP_SUMMARY
+
+      - name: 커밋
+        if: steps.fetch.outputs.skip != 'true'
+        env:
+          DATE: ${{ steps.fetch.outputs.date }}
+        run: |
+          git config user.name "Hyperclass Bot"
+          git config user.email "bot@hyperclass.ai"
+          git add data/reports/telemetry data/telemetry
+          git diff --cached --quiet && { echo "변경 없음"; exit 0; }
+          git commit -q -m "[Auto] 텔레메트리 집계 $DATE"
+          git pull -q --rebase origin main && git push -q origin main
