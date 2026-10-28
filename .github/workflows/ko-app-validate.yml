@@ -148,7 +148,13 @@ jobs:
         if: always()   # 앞 스텝이 실패해도 돌린다 — 실패를 한 번에 보기 위해
         run: |
           node --check js/hc-ko-app-loader.js
-          echo "✅ node --check 통과" >> $GITHUB_STEP_SUMMARY
+          node --check js/hc-bootstrap.js
+          node --check js/hc-confirm-adapter.js
+          # 슬롯·부트스트랩 경유 파일은 꺾쇠 문자 금지 (GHL 새니타이저가 '<' 에서 자른다)
+          for f in js/hc-bootstrap.js js/hc-confirm-adapter.js; do
+            if grep -q '<' "$f"; then echo "❌ $f 에 '<' 문자가 있습니다"; exit 1; fi
+          done
+          echo "✅ node --check 통과 (loader·bootstrap·confirm-adapter) · 꺾쇠 0" >> $GITHUB_STEP_SUMMARY
 
       # ── REV 포인터 ↔ 사전 (v4.10 부터) ─────────────────────────
       # 로더는 data/hc-ko-app-rev.json 의 rev 로 사전을 받는다(슬롯 SHA 는 로더만 고정).

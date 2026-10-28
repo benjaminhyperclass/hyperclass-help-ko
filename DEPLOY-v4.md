@@ -1,5 +1,19 @@
 # 메인 앱 한글팩 v4 — 브라우저 확인 절차
 
+> ## 🟢 v4.12 (2026-10-28) 부터 — 슬롯에는 부트스트랩만, 로더도 포인터로 갱신됩니다
+>
+> Custom JavaScript 칸의 1줄째는 이제 `js/hc-bootstrap.js`(커밋 `c25c941` 고정)입니다. 부트스트랩은
+> `data/hc-ko-app-rev.json` 의 **`loader.stable` / `loader.next`** 커밋 SHA 로 로더(`js/hc-ko-app-loader.js`)와
+> 확인입력 어댑터(`js/hc-confirm-adapter.js`)를 주입합니다. `loader.canary` 에 든 로케이션(운영 `r6JD…`)은
+> `next`, 나머지 전 고객은 `stable` 을 받습니다. 사전 REV 는 종전대로 같은 파일의 `rev` 를 로더가 읽습니다.
+>
+> **로더·어댑터를 고친 뒤** = 커밋 → 포인터의 `loader.next` 를 그 SHA 로 커밋(캐너리 확인) → `loader.stable` 로
+> 승격 커밋. **슬롯을 다시 만지지 않습니다.** 제외 로케이션도 포인터의 `excludeLocations` 로 바꿉니다(미결 #8 해소).
+> 롤백 = `loader.stable` 을 직전 SHA 로 되돌린 커밋. 부트스트랩 자체 결함 시에만 슬롯 1줄째를 교체합니다.
+>
+> 콘솔: `__hcBoot.status()` → `{source: 'cache'|'pointer'|'fallback', channel: 'stable'|'next', ref, files, excluded}`,
+> `__hcConfirm.status()` → 확인 모달 변환 통계. 로더 판정은 종전대로 `__hcKoApp.status()` / `scripts/verify-deploy.js`.
+
 > ## 🟢 v4.10 부터 — 슬롯은 로더 한 번만 고정, 사전은 포인터로 갱신됩니다
 >
 > 로더(v4.10.0 이상)는 사전 REV 를 자기 안의 상수가 아니라 **`data/hc-ko-app-rev.json`(raw@main)** 에서
@@ -59,7 +73,7 @@ Agency Settings → Company → **Whitelabel → Custom Code → Custom JavaScri
 
 ```html
 <script>window.HC_I18N_EXCLUDE = ["1r0pJRd1cQQ5DZsjSbc9"];</script>
-<script src="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@45e5a5e13757aecce678f63f7ec47bce9325d28e/js/hc-ko-app-loader.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@c25c941dfe4cee25495a225c8c577f534aec6946/js/hc-bootstrap.js"></script>
 <script src="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@8fabb6a/js/dashboard-ko.min.js"></script>
 ```
 

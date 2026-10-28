@@ -3,7 +3,22 @@
 > **규칙: 매 배포 라운드 종료 시 이 파일을 갱신한다.** `data/DECISIONS.md`(결정)와 짝이 되는 **현재 상태** 파일이다.
 > 새 세션은 이 파일 → `PLAN-*.md` 순으로 읽고 시작한다. 기억에 의존해 재개하지 않는다.
 
-**갱신** 2026-10-08 (v4.11.0 전 서브계정 개방 라이브 확인 완료 · 사전 v4.2.7 `_text` 단어 1개 키 335건 제거·C12 · CI C10 해소 · AI Studio 는 교차 출처 iframe → 확장 트랙)
+**갱신** 2026-10-28 (한글화 2.0 1단계 · 부트스트랩 v1.0.0 — 로더 SHA 도 포인터로 · 확인입력 어댑터 v1.0.0 · 로더 v4.12.0(REV_BUILTIN 3b82727) · 사전 v4.2.8 보류 제외 2건 확정 · **슬롯 교체 대기: 1줄째를 `@c25c941…/js/hc-bootstrap.js` 로**)
+
+> 이전 갱신 2026-10-08 (v4.11.0 전 서브계정 개방 라이브 확인 완료 · 사전 v4.2.7 `_text` 단어 1개 키 335건 제거·C12 · CI C10 해소 · AI Studio 는 교차 출처 iframe → 확장 트랙)
+
+## 한글화 2.0 — 1단계 (2026-10-28, 브랜치 `phase1-foundation`)
+
+| 항목 | 값 |
+|---|---|
+| 실측(작업 0) | 콜드 캐시: 첫 페인트 1.2초 → GHL 이 `marketplace/custom-script` XHR 로 Custom JS 를 `#customJS` div 에 주입 → 로더 실행 4.0초 → core 병합 4.1초. **영문 플래시 ≈3초는 플랫폼 주입 시점**이 원인, 사전 수신은 0.1~0.3초. 재방문은 Cache Storage 로 네트워크 0 |
+| 부트스트랩 | `js/hc-bootstrap.js` v1.0.0 — 커밋 `c25c941` 에 고정(슬롯 1줄째). 포인터 `loader{stable,next,canary,files}` 로 로더·어댑터 주입. localStorage `hcKoLoaderPtr` 캐시 → raw 포인터 → `@main` 폴백 |
+| 로더 | v4.12.0 (REV_BUILTIN `3b82727` = 소킹된 v4.2.7). 게이트·병합 로직 불변 |
+| 어댑터 | `js/hc-confirm-adapter.js` v1.0.0 — DNT 7종 모달에서 한글 입력('삭제' 등) → 영문 토큰 자동 변환, 병기 안내 |
+| 포인터 | `loader.stable = loader.next = c25c941` · `canary = [r6JD1nsqtk6Oln28fgrj]` · `excludeLocations = [1r0pJRd1cQQ5DZsjSbc9]` (미결 #8 해소 — 제외 변경은 포인터 커밋) |
+| 사전 | v4.2.8 — `agency.gdpr.`·`communitiesApp.universityCommunity.` 제외 확정(host 63 / apps 55 / _text 7 제거, _text 8,763). push 후 `ko-app-pointer.yml` 이 `rev` 전진 |
+| CI | `ko-app-validate.yml`: bootstrap·adapter `node --check` + 꺾쇠 0 검사 추가 |
+| 다음 손 | ① 벤자민: 슬롯 1줄째 교체(DEPLOY-v4 §1, 2줄째 레거시 유지) ② Claude: `r6JD…` 에서 `__hcBoot.status()`·`verify-deploy.js`·삭제 모달 3곳 확인 ③ 2단계: Cloudflare `HTMLRewriter` 스파이크(플래시 0 가능성), 텔레메트리 |
 
 ## 배포 좌표
 
@@ -63,7 +78,7 @@ Custom JS 칸 (Agency Whitelabel → Custom JavaScript) — **실제 슬롯은 �
 | 5 | `hcEx()` 게이트를 `build-dashboard-ko.py` 템플릿에 반영 | C11 이 감시 중(템플릿·소스 ✅, min 은 다음 빌드) — 빌드 트리거(en.json 개행 토글) 전에 확인 |
 | 6 | 스테일 핀 `8fabb6a` 유지 | 운영 사전 11,810건, @main 은 37,395건이지만 미반영분 98% 를 v4 가 커버 → 핀 이동은 레거시 축소·재빌드와 한 번에 |
 | 7 | Managed Agents 표기 잔존 | `0 Managed Agents`(가변 숫자) — `_text` 정확 일치 한계 |
-| 8 | `HC_I18N_EXCLUDE` 는 로더 폴백에 의존 중 | 슬롯에 `<script>window.HC_I18N_EXCLUDE=[…]</script>` 를 명시할지 **벤자민 결정**. 명시하면 로더 재배포 없이 배열만 고쳐 제외 계정을 바꿀 수 있고, 안 하면 제외 변경 = 두 레이어 재배포 |
+| 8 | `HC_I18N_EXCLUDE` 는 로더 폴백에 의존 중 → ✅ 2026-10-28 포인터 `excludeLocations` 를 부트스트랩이 전역으로 세움 | 슬롯에 `<script>window.HC_I18N_EXCLUDE=[…]</script>` 를 명시할지 **벤자민 결정**. 명시하면 로더 재배포 없이 배열만 고쳐 제외 계정을 바꿀 수 있고, 안 하면 제외 변경 = 두 레이어 재배포 |
 | 9 | `_text` 11건 → 사전 4.2.6 | ✅ c9879e0 push → validate ✅ → ko-app-pointer 가 jsDelivr 대조 후 4ed156d 로 전진. **사람 손 0회** |
 | 10 | 운영 규칙: `REV_BUILTIN` 은 소킹된 사전만 | 첫 방문·Cache Storage 없는 브라우저는 내장 REV 로 부팅하므로 갓 올린 사전을 내장하면 롤백이 늦게 닿는다. 큰 갱신 때만 올리고 그때 슬롯 교체 |
 | 11 | 사전 push 직후 다른 push 금지(약 2분) | validate 가 cancel-in-progress 로 취소되면 포인터가 전진하지 않는다 → validate 를 workflow_dispatch 로 재실행하면 이어짐 |
