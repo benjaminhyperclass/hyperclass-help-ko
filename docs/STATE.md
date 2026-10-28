@@ -21,7 +21,10 @@
 | 라이브 검증 (2026-10-28, Claude in Chrome) | ① 슬롯 `@c25c941/hc-bootstrap.js` + `@8fabb6a` 레거시 확인 ② 캐너리 `r6JD`: channel next → 로더 4.12.0·어댑터 1.0.1, rev `d32834c`(pointer-cache), textEntries 8,763, hits 83 ③ 타 서브계정 `5nssTmO95kobrfWUYa1o`: channel stable(c25c941), 로더 4.12.0·어댑터 1.0.0, 한국어 ④ 제외 `1r0p…`: 부트스트랩 excludeLocations 전달 → excluded true·영어 ⑤ 태그 일괄삭제 모달: '삭제'→DELETE 변환·버튼 활성(취소) → `loader.stable` 05f9cf7 승격 |
 | 2단계 (2026-10-28, 브랜치 main) | ① `workers/hc-ko-edge` 엣지 주입 Worker + 로더 v4.13 베일 해제 — 로컬 7건 통과, **배포·DNS Proxied 전환은 벤자민 승인 대기** ② `workers/hc-ko-telemetry` + 로더 v4.14 리포터 + `ko-telemetry-digest.yml` — 로컬 9건 통과, **wrangler 배포·KV·시크릿·포인터 `telemetry.url` 대기** ③ `data/glossary.ko.json` 객체 52(결정 대기 ★9) + `scripts/glossary-audit.py` |
 | 로더 채널 | `loader.stable` 05f9cf7(v4.12.0 · 어댑터 1.0.1) 전 고객 · `loader.next` = HEAD(v4.14.0, 텔레메트리는 포인터 url 없으면 무동작) 캐너리 r6JD |
-| 다음 손 | 벤자민: (a) 글로서리 ★9 결정 (b) `npx wrangler login` 후 두 Worker 배포 (c) DNS `app` Proxied 전환 → Claude: 라이브 플래시 측정·텔레메트리 첫 집계 확인 → `loader.stable` 승격 → 텔레메트리 상위 ns(superagentsApp·agentLogsApp·powerDialerApp) 번역 라운드 |
+| 2단계 가동 (2026-10-28 21:30 KST) | ✅ 글로서리 v1.0.0 확정(9건 권장안) ✅ `hc-ko-telemetry` 배포(`hc-ko-telemetry.red-boat-3cb2.workers.dev`, KV `0836915d…`, 토큰은 `~/.hyperclass/hc-telemetry-token`) + 포인터 `telemetry.url` + GitHub 시크릿 → 첫 집계 `data/reports/telemetry/2026-10-28.md` 봇 커밋 ✅ `hc-ko-edge` 배포 + **DNS `app` Proxied 전환(벤자민)** |
+| 엣지 실측 (콜드, r6JD) | 부트스트랩 601ms(GHL app.js 627ms보다 먼저) → 한국어 병합·베일 해제 2,013ms → 첫 콘텐츠 페인트 2,040ms(한국어). **영문 노출 0ms** (종전 ≈3,000ms). 첫 페인트는 1.2s→2.0s 로 0.8s 늦어짐. 제외 계정 영어·베일 2.5s 타임아웃 해제, 타 서브계정 stable 정상, 콘솔 오류는 `?hcko=off` 와 동일(GHL 자체) |
+| 롤백 | DNS `app` → DNS only(회색) 즉시. Worker 변수 `ENABLED="0"`. 포인터 `telemetry` 키 삭제 |
+| 다음 손 | Claude: 캐너리 24h 뒤 `loader.stable` → v4.14 승격(제외 계정 베일도 즉시 해제) → 텔레메트리 상위 ns(powerDialerApp·reportingApp·superagentsApp·agentLogsApp) + 글로서리 잔존 1,102건 번역 라운드 1회차 |
 
 ## 배포 좌표
 
