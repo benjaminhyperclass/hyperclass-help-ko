@@ -1,4 +1,4 @@
-/* Hyperclass 한글팩 — 부트스트랩 v1.1.0 (2026-10-28)
+/* Hyperclass 한글팩 — 부트스트랩 v1.2.0 (2026-10-28)
  * Agency Settings → Company → Whitelabel → Custom Code → Custom JavaScript 칸에 **단 한 번** 붙인다.
  *
  *   script src = https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@[이 파일이 든 커밋 SHA]/js/hc-bootstrap.js
@@ -17,6 +17,7 @@
  * 포인터 `excludeLocations`: 한국어 UI 를 끄는 로케이션 목록 → window.HC_I18N_EXCLUDE 로 넘긴다
  *   (로더 excluded() 와 레거시 hcEx() 가 같은 전역을 읽는다). 비어 있으면 두 레이어의 내장 폴백.
  *
+ * v1.2: 파일 로드 실패(갓 올린 커밋의 jsDelivr 전파 지연 등) 시 raw.githubusercontent 로 1회 재시도.
  * v1.1: 엣지 Worker 가 넣어 준 window.__hcPtr 이 있으면 0) 그 값으로 즉시 주입(source 'edge') — 저장소·네트워크 대기 없음.
  * 부팅 순서 (로더의 stale-while-revalidate 와 같은 철학):
  *   1) localStorage 에 저장된 포인터가 있으면 **즉시** 그 SHA 로 주입 (왕복 0)
@@ -31,9 +32,10 @@
   'use strict';
   if (window.__hcBoot) return;
 
-  var VERSION = '1.1.0';
+  var VERSION = '1.2.0';
   var REPO = 'benjaminhyperclass/hyperclass-help-ko';
   var CDN = 'https://cdn.jsdelivr.net/gh/' + REPO + '@';
+  var RAW = 'https://raw.githubusercontent.com/' + REPO + '/';
   var POINTER_URL = 'https://raw.githubusercontent.com/' + REPO + '/main/data/hc-ko-app-rev.json';
   var FALLBACK_REF = 'main';
   var DEFAULT_FILES = ['js/hc-ko-app-loader.js', 'js/hc-confirm-adapter.js'];
@@ -77,16 +79,19 @@
     if (sel.excluded.length && !window.HC_I18N_EXCLUDE) window.HC_I18N_EXCLUDE = sel.excluded.slice();
     log('주입', sel.channel, sel.ref.slice(0, 7), sel.files.join(','), '(' + source + ')');
     // 순서 보장: 앞 파일이 로드된 뒤 다음 파일. (로더 → 어댑터)
-    (function chain(i) {
+    (function chain(i, viaRaw) {
       if (i >= sel.files.length) return;
       var s = document.createElement('script');
-      s.src = CDN + sel.ref + '/' + sel.files[i];
+      s.src = (viaRaw ? RAW + sel.ref + '/' : CDN + sel.ref + '/') + sel.files[i];
       s.async = false;
-      s.setAttribute('data-hc-boot', sel.channel);
-      s.onload = function () { chain(i + 1); };
-      s.onerror = function () { state.error = 'load-fail:' + sel.files[i]; log('로드 실패', s.src); chain(i + 1); };
+      s.setAttribute('data-hc-boot', sel.channel + (viaRaw ? '-raw' : ''));
+      s.onload = function () { chain(i + 1, false); };
+      s.onerror = function () {
+        if (!viaRaw) { state.error = 'cdn-fail:' + sel.files[i]; log('CDN 로드 실패 — raw 재시도', s.src); chain(i, true); return; }
+        state.error = 'load-fail:' + sel.files[i]; log('로드 실패', s.src); chain(i + 1, false);
+      };
       (document.head || document.documentElement).appendChild(s);
-    })(0);
+    })(0, false);
   }
 
   function fetchPointer() {

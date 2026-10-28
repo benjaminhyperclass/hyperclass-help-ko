@@ -19,7 +19,7 @@ if (!ok) { console.error('wrangler dev 기동 실패'); wr.kill(); origin.close(
 let fail = 0;
 const check = (name, cond) => { console.log((cond ? '✅ ' : '❌ ') + name); if (!cond) fail++; };
 const html = await (await fetch('http://127.0.0.1:18787/v2/location/abc/dashboard')).text();
-check('HTML: 베일 삽입', html.includes('id="hc-ko-veil"'));
+check('HTML: 베일 삽입', html.includes('id="hc-ko-veil"') && html.includes('id="hc-ko-veil-css"') && html.indexOf('<div id="hc-ko-veil"') > html.indexOf('<body'));
 check('HTML: 부트스트랩 삽입', /hc-bootstrap\.js/.test(html));
 check('HTML: head 맨 앞', html.indexOf('hc-ko-veil') < html.indexOf('<meta charset'));
 check('HTML: 원본 유지', html.includes('<div id="app">Dashboard</div>'));

@@ -753,6 +753,7 @@
   function liftVeil(why) {
     try {
       var v = document.getElementById('hc-ko-veil');
+      var vc = document.getElementById('hc-ko-veil-css'); if (vc) vc.remove();
       if (v) { v.remove(); if (window.__hcEdge) { window.__hcEdge.lifted = Date.now() - window.__hcEdge.t0; window.__hcEdge.why = why; } log('베일 해제', why); }
     } catch (e) {}
   }

@@ -1,5 +1,5 @@
 // 테스트 전용 엔트리: fetch(request) 를 가짜 오리진으로, 포인터는 ORIGIN_TEST/pointer.json 으로 돌린다.
-import { shouldInject, buildHead } from './index.js';
+import { shouldInject, buildHead, VEIL_HTML } from './index.js';
 export default {
   async fetch(request, env) {
     const u = new URL(request.url);
@@ -9,6 +9,6 @@ export default {
       u.searchParams.has('noptr') ? null : fetch(base + '/pointer.json').then(r => r.json()).catch(() => null),
     ]);
     if (!shouldInject(request, res, env)) return res;
-    return new HTMLRewriter().on('head', { element(el) { el.prepend(buildHead(env, ptr, u.pathname), { html: true }); } }).transform(res);
+    return new HTMLRewriter().on('head', { element(el) { el.prepend(buildHead(env, ptr, u.pathname), { html: true }); } }).on('body', { element(el) { el.prepend(VEIL_HTML, { html: true }); } }).transform(res);
   },
 };

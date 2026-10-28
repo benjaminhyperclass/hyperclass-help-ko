@@ -1,7 +1,8 @@
-/* Hyperclass 한글팩 — 엣지 주입 Worker v0.2.0 (2026-10-28)
+/* Hyperclass 한글팩 — 엣지 주입 Worker v0.3.0 (2026-10-28)
  *
  * 역할: app.hyperclass.ai 의 HTML 문서 응답에만 개입해 <head> 맨 앞에
- *   ① 베일 스타일 — 로더가 사전을 병합할 때까지 화면을 숨겨 영문 플래시를 없앤다 (최대 VEIL_MS)
+ *   ① 베일 — 로더가 사전을 병합할 때까지 흰 오버레이(브랜드 문구)로 덮어 영문 플래시를 없앤다 (최대 VEIL_MS).
+ *      v0.3: html visibility:hidden(빈 화면) 대신 body 첫 요소로 오버레이를 넣어 '불러오는 중' 이 보인다
  *   ② 포인터 스냅샷 window.__hcPtr — data/hc-ko-app-rev.json 을 엣지에서 60초 캐시로 읽어 넣는다.
  *      부트스트랩 v1.1·로더 v4.15 는 이 값으로 저장소·네트워크 대기 없이 즉시 부팅한다 (v0.2)
  *   ③ preload 힌트 — 로더·어댑터·core 사전을 GHL 번들과 병렬로 미리 받는다 (v0.2)
@@ -18,6 +19,7 @@ const REPO = 'benjaminhyperclass/hyperclass-help-ko';
 const CDN = `https://cdn.jsdelivr.net/gh/${REPO}@`;
 const POINTER_URL = `https://raw.githubusercontent.com/${REPO}/main/data/hc-ko-app-rev.json`;
 const SHA_RE = /^[0-9a-f]{7,40}$/;
+export const VEIL_HTML = `<div id="hc-ko-veil"><i></i>하이퍼클래스 불러오는 중…</div>`;
 
 export async function readPointer(env) {
   try {
@@ -45,8 +47,8 @@ export function buildHead(env, ptr, pathname) {
   const sha = env.BOOTSTRAP_SHA;
   const veilMs = parseInt(env.VEIL_MS || '2500', 10) || 2500;
   let out =
-    `<style id="hc-ko-veil">html{visibility:hidden !important}</style>` +
-    `<script>window.__hcEdge={v:'0.2.0',veilMs:${veilMs},t0:Date.now()};` +
+    `<style id="hc-ko-veil-css">#hc-ko-veil{position:fixed;inset:0;z-index:2147483647;background:#fff;display:flex;align-items:center;justify-content:center;font:500 14px/1.4 Pretendard,-apple-system,"Apple SD Gothic Neo","Noto Sans KR",sans-serif;color:#6b7280;letter-spacing:-.01em}#hc-ko-veil i{display:inline-block;width:14px;height:14px;margin-right:8px;border:2px solid #d1d5db;border-top-color:#2563eb;border-radius:50%;animation:hcspin .8s linear infinite;vertical-align:-2px}@keyframes hcspin{to{transform:rotate(360deg)}}</style>` +
+    `<script>window.__hcEdge={v:'0.3.0',veilMs:${veilMs},t0:Date.now()};` +
     `setTimeout(function(){var v=document.getElementById('hc-ko-veil');if(v)v.remove();},${veilMs});</script>`;
   if (ptr) {
     const sel = pickLoader(ptr, pathname);
@@ -80,6 +82,7 @@ export default {
     const head = buildHead(env, ptr, new URL(request.url).pathname);
     return new HTMLRewriter()
       .on('head', { element(el) { el.prepend(head, { html: true }); } })
+      .on('body', { element(el) { el.prepend(VEIL_HTML, { html: true }); } })
       .transform(res);
   },
 };
