@@ -281243,17 +281243,9 @@
   "en": "I couldn't find a single team member named \"{name}\". Pick who will handle these bookings:",
   "ko": "\"{name}\"이라는 이름의 팀원을 한 명으로 특정할 수 없습니다. 이 예약을 처리할 담당자를 선택하세요:"
  },
- "calendarComponentsApp.calendarAI.messages.workingHoursExplain": {
-  "en": "Working hours are managed through **Availability Schedules**.\n\n**What is a Schedule?**\nA schedule defines the days and time slots when you (or your team) are available for bookings. For example: mon–fri, 9:00 AM–5:00 PM.\n\n**Who can set avai",
-  "ko": "근무 시간은 **가용 일정(Availability Schedules)**을 통해 관리됩니다."
- },
  "calendarComponentsApp.calendarAI.quickReplies.troubleshootAvailability": {
   "en": "Troubleshoot availability",
   "ko": "예약 가능 시간 문제 해결"
- },
- "calendarComponentsApp.calendarSettings.servicesDesc": {
-  "en": "Turn on services to give sub accounts access to a complete booking solution for service-based businesses. This includes creating multiple services, managing resources, handling multiple locations, setting staff-specific pricing, adding serv",
-  "ko": "서비스를 활성화하면 서브 계정이 서비스 기반 비즈니스를 위한 완전한 예약 솔루션을 이용할 수 있습니다. 여러 서비스 생성, 리소스 관리, 다중 위치 처리, 직원별 가격 설정, 서비스 추"
  },
  "calendarComponentsApp.calendarAI.cards.meetings.collectiveTitle": {
   "en": "Panel / committee",
