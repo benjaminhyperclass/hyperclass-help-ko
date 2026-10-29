@@ -281641,7 +281641,7 @@
  },
  "calendarComponentsApp.calendarAI.quickReplies.embedOnWebsite": {
   "en": "Embed on website",
-  "ko": "웹사이트에 삽입"
+  "ko": "웹사이트에 임베드"
  },
  "calendarComponentsApp.calendarAI.quickReplies.goToCalendarSettings": {
   "en": "Go to calendar settings",
@@ -282905,7 +282905,7 @@
  },
  "powerDialerApp.calls.dial": {
   "en": "Dial",
-  "ko": "다이얼"
+  "ko": "전화 걸기"
  },
  "powerDialerApp.calls.dialing": {
   "en": "Dialing",
@@ -283305,7 +283305,7 @@
  },
  "powerDialerApp.phoneNumbers.numberUnavailableDescription": {
   "en": "The calling provider for this number is currently unavailable. Please try again shortly or pick another number.",
-  "ko": "이 번호의 통화 제공업체를 현재 사용할 수 없습니다"
+  "ko": "이 번호의 통화 제공업체를 현재 사용할 수 없습니다. 잠시 후 다시 시도하거나 다른 번호를 선택해 주세요."
  },
  "powerDialerApp.phoneNumbers.outboundAndInboundCalls": {
   "en": "Outbound and inbound calls",
@@ -283525,7 +283525,7 @@
  },
  "powerDialerApp.transfer.holdAndCall": {
   "en": "Hold & Call",
-  "ko": "대기 후 전화 연결"
+  "ko": "보류 후 전화 연결"
  },
  "powerDialerApp.transfer.transferAndEnd": {
   "en": "Transfer & End",
