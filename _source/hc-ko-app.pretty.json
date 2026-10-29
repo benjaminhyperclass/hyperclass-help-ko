@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "version": "4.2.9",
-  "built": "2026-10-28",
-  "source": "crawl 310 routes + dashboard-ko + community v3 + legacy recovery + live audit 33 routes + superagentsApp/copilotApp gap 855 (2026-09-09) + Managed Agents→관리형 에이전트 통일 + _text 11 (Claude Chat 라이브 감사, 에이전트 템플릿·빌더 프롬프트) + 전 서브계정 개방에 따른 _text 단어 1개 항목 335건 제거 (벤자민 결정: 짧은 단어 치환 금지) + 보류 제외 2건 확정(agency.gdpr·communitiesApp.universityCommunity, 2026-10-28) + 글로서리 v1.0.0 확정 용어 통일 1,076건 (2026-10-28)",
+  "version": "4.2.18",
+  "built": "2026-10-29",
+  "source": "crawl 310 routes + dashboard-ko + community v3 + legacy recovery + live audit 33 routes + superagentsApp/copilotApp gap 855 (2026-09-09) + Managed Agents→관리형 에이전트 통일 + _text 11 (Claude Chat 라이브 감사, 에이전트 템플릿·빌더 프롬프트) + 전 서브계정 개방에 따른 _text 단어 1개 항목 335건 제거 (벤자민 결정: 짧은 단어 치환 금지) + 보류 제외 2건 확정(agency.gdpr·communitiesApp.universityCommunity, 2026-10-28) + 글로서리 v1.0.0 확정 용어 통일 1,076건 (2026-10-28) + round 2026-10-29 agency (telemetry) + round 2026-10-29 calendarComponentsApp (telemetry) + round 2026-10-29 common (telemetry) + round 2026-10-29 copilot (telemetry) + round 2026-10-29 copilotApp (telemetry) + round 2026-10-29 mediaCenterApp (telemetry) + round 2026-10-29 powerDialerApp (telemetry) + round 2026-10-29 switchyard (telemetry) + round 2026-10-29 workflowHotlinks (telemetry)",
   "strings": 102718
  },
  "host": {
@@ -297,7 +297,8 @@
      "resultSelection": " 결과 선택",
      "supportDoc": "지원 문서를",
      "forMoreDetails": "확인해 주세요",
-     "words": " 단어"
+     "words": " 단어",
+     "gpt4oMini": "GPT-4o-mini"
     },
     "removePaymentMethod": {
      "endingIn": "*{cardNo}로 종료",
@@ -1186,7 +1187,8 @@
      "noPermissionToView": "이를 볼 권한이 없습니다. 여기를 클릭하여 리디렉션하세요",
      "errorSwitchingUser": "{firstName}으로 전환 중 오류가 발생했습니다. 로그인한 사용자로 다시 전환합니다. {errorMessage}"
     },
-    "hipaaCompliant": "HIPAA 준수"
+    "hipaaCompliant": "HIPAA 준수",
+    "qrCode": "QR 코드"
    },
    "screenRecorder": {
     "hipaaDisabled": "이 에이전시는 HIPAA가 활성화되어 있어 녹음할 수 없습니다",
@@ -3295,7 +3297,45 @@
     "mediaStorageUsage": "미디어 스토리지 사용량",
     "aiEvaluations": "AI 평가",
     "askAiEvaluations": "AI 평가 요청",
-    "askAiConfiguration": "AI 구성"
+    "askAiConfiguration": "AI 구성",
+    "aiAppBuilder": "AI 앱 스튜디오",
+    "creatorStudio": "크리에이터 스튜디오",
+    "fieldServices": "현장 서비스",
+    "fieldServicesJobs": "작업",
+    "fieldServicesJobsAndRequests": "작업 및 요청",
+    "fieldServicesServiceSetup": "서비스 설정",
+    "fieldServicesServicesAndTeam": "서비스 및 직원",
+    "fieldServicesTimesheets": "타임시트",
+    "layouts": "레이아웃",
+    "loyalty": "로열티",
+    "meetingRooms": "미팅룸",
+    "myRoom": "내 방",
+    "restaurantsFloor": "플로어 및 테이블",
+    "restaurantsOnlinePresence": "레스토랑 웹사이트",
+    "restaurantsReservations": "예약",
+    "restaurantsSettings": "레스토랑 설정",
+    "socialComments": "소셜 댓글",
+    "teamRooms": "팀 룸",
+    "tickets": "티켓",
+    "events": "이벤트",
+    "fieldServicesAdvancedSettings": "고급 설정",
+    "fieldServicesCalendar": "캘린더 보기",
+    "fieldServicesEstimates": "견적서",
+    "fieldServicesHome": "홈",
+    "fieldServicesInvoices": "인보이스",
+    "fieldServicesListView": "목록 보기",
+    "fieldServicesRequests": "요청",
+    "fieldServicesSchedule": "일정",
+    "fieldServicesSettings": "설정",
+    "fieldServicesSetup": "셋업",
+    "fieldServicesStaff": "직원",
+    "fieldServicesTeam": "직원",
+    "implementationExperts": "파트너",
+    "restaurant": "식당",
+    "restaurants": "레스토랑",
+    "restaurantsMenu": "메뉴",
+    "restaurantsOrders": "주문",
+    "restaurantsOverview": "개요"
    },
    "confirmDelete": "{name}을(를) 삭제하시겠습니까?",
    "clicked1": "클릭됨",
@@ -3522,7 +3562,15 @@
     "oct": "10월",
     "nov": "11월",
     "dec": "12월"
-   }
+   },
+   "Via": "을(를) 통해",
+   "editForm": "폼 편집",
+   "loyalty": {
+    "loadError": "로열티를 불러올 수 없습니다. 연결 상태를 확인한 후 다시 시도해 주세요."
+   },
+   "quizBuilder": "퀴즈 빌더",
+   "seo": "SEO",
+   "usd": "USD"
   },
   "contacts": {
    "bulkRequests": {
@@ -9323,6 +9371,14 @@
     "createWorkflow": {
      "title": "워크플로우를 생성하지 못했습니다",
      "description": "나중에 다시 시도해 주세요."
+    },
+    "deleteWorkflow": {
+     "title": "워크플로우 삭제에 실패했습니다",
+     "description": "나중에 다시 시도해 주세요."
+    },
+    "renameWorkflow": {
+     "title": "워크플로우 이름 변경에 실패했습니다",
+     "description": "나중에 다시 시도해 주세요."
     }
    },
    "quickWorkflows": {
@@ -9376,6 +9432,42 @@
      "formAutomation": "견적 요청 플로우",
      "emailCampaigns": "웨비나 등록"
     }
+   },
+   "linkedWorkflows": {
+    "deleteModal": {
+     "confirmPrompt": "확인하려면 \"{confirmType}\"을(를) 입력하세요",
+     "content": "삭제되면 \"Deleted\" 탭으로 이동하며 30일 후 영구적으로 삭제됩니다.",
+     "description": "\"{name}\"을(를) 삭제하시겠습니까?",
+     "title": "워크플로우 삭제"
+    },
+    "deleteSuccess": {
+     "description": "\"{name}\"이(가) 삭제되었습니다.",
+     "title": "워크플로우 삭제됨"
+    },
+    "noWorkflows": "연결된 워크플로우를 찾을 수 없습니다",
+    "renameModal": {
+     "description": "이 워크플로우가 무엇을 하는지 알 수 있는 이름을 지정하세요.",
+     "namePlaceholder": "워크플로우 이름 입력",
+     "nameRequired": "워크플로우 이름은 필수입니다",
+     "title": "워크플로우 이름 변경",
+     "nameLabel": "이름"
+    },
+    "renameSuccess": {
+     "description": "이 워크플로우의 이름이 \"{name}\"(으)로 변경되었습니다.",
+     "title": "워크플로우 이름 변경됨"
+    },
+    "title": "연결된 워크플로우",
+    "actions": "작업",
+    "cancel": "취소",
+    "delete": "삭제",
+    "lastUpdated": "최근 수정",
+    "moreActions": "더 많은 액션",
+    "name": "워크플로우 이름",
+    "openInNewTab": "새 탭에서 열기",
+    "preview": "미리보기",
+    "rename": "이름 변경",
+    "save": "저장",
+    "status": "상태"
    }
   },
   "agentReporting": {
@@ -10450,7 +10542,8 @@
      "searchAlt": "검색 아이콘",
      "emptyTitle": "첫 번째 AI 채팅 시작하기",
      "emptySubtitle": "AI로 인사이트를 얻고, 콘텐츠를 만들고, 문제를 더 빠르게 해결하세요.",
-     "emptyCta": "새 채팅 시작"
+     "emptyCta": "새 채팅 시작",
+     "launchpad": "런치패드"
     },
     "welcome": {
      "title": "{userName}님, 무슨 생각을 하고 계신가요?",
@@ -10761,7 +10854,18 @@
       "rankMoveDown": "아래로 이동",
       "sendCustomAnswer": "사용자 지정 답변 보내기",
       "applyCustomColor": "색상 적용",
-      "keyEnter": "입력"
+      "keyEnter": "입력",
+      "next": "다음"
+     },
+     "card": {
+      "error": "계정을 설정하는 중 문제가 발생했습니다",
+      "untitled": "제목 없음"
+     },
+     "snapshotAssets": {
+      "empty": "표시할 자산이 없습니다",
+      "statusReady": "준비됨",
+      "statusUnknown": "알 수 없음",
+      "totalLabel": "총"
      }
     },
     "errors": {
@@ -10914,6 +11018,25 @@
       "validationPromptRequired": "프롬프트는 필수입니다",
       "errorGeneric": "문제가 발생했습니다. 다시 시도해 주세요.",
       "errorTitle": "예약된 작업을 업데이트할 수 없습니다"
+     }
+    },
+    "launchpad": {
+     "lockedComposer": "먼저 간단한 설정 단계를 마친 후 무엇이든 물어보세요.",
+     "wallet": {
+      "title": "내 지갑",
+      "unavailableBody": "지금은 지갑을 불러올 수 없습니다. 잠시 후 다시 시도해 주세요.",
+      "unavailableTitle": "지갑을 사용할 수 없습니다"
+     }
+    },
+    "onboarding": {
+     "snapshotAssets": {
+      "title": "계정에 추가되었습니다",
+      "unavailableBody": "지금은 자산을 불러올 수 없습니다. 잠시 후 다시 시도해 주세요.",
+      "unavailableTitle": "자산을 사용할 수 없음"
+     },
+     "snapshotLoader": {
+      "title": "계정 설정 중",
+      "unavailable": "계정 설정 중…"
      }
     }
    }
@@ -13243,7 +13366,7 @@
        "bodyUnspecified": "이 WhatsApp 번호는 현재 다른 사용자에게 연결되어 있습니다. 해당 사용자에게 연결 해제를 요청하거나 다른 번호를 연결하세요."
       },
       "whatsapp": {
-       "name": "WhatsApp",
+       "name": "왓츠앱",
        "description": "개인 WhatsApp 번호로 Copilot에 메시지를 보내 질문하고, 작업을 시작하고, 이미 채팅하는 곳에서 바로 답변을 받아보세요."
       },
       "sidebar": {
@@ -22694,7 +22817,50 @@
     "depthLimitDescription": "폴더 업로드는 최대 3단계까지 지원됩니다. 더 깊은 폴더에 있는 {0}개의 파일은 업로드되지 않았습니다.",
     "uploadPartiallyCompleted": "업로드가 일부만 완료됨",
     "fileLimitDescription": "파일 {0}개가 성공적으로 업로드되었습니다. {1}개 파일은 업로드되지 않았습니다. 나머지 파일은 다른 배치로 업로드해 보세요.",
-    "cantMoveToSelf": "폴더를 자기 자신 안으로 이동할 수 없습니다"
+    "cantMoveToSelf": "폴더를 자기 자신 안으로 이동할 수 없습니다",
+    "addTagPressEnter": "태그를 추가하고 Enter를 누르세요",
+    "altTextHelper": "이 이미지의 용도를 설명하세요. 순수 장식용이면 비워두세요",
+    "audioPreview": "오디오 미리듣기",
+    "cancelAllUploadsConfirm": "업로드가 아직 진행 중입니다. 취소하시겠습니까?",
+    "cancelUploads": "업로드 취소",
+    "detailsSaved": "파일 세부 정보가 저장되었습니다",
+    "detailsUpdateFailed": "파일 세부 정보를 저장하지 못했습니다. 다시 시도해 주세요.",
+    "documentPreview": "문서 미리보기",
+    "fileId": "파일 ID",
+    "itemUploaded": "{0}개 항목 업로드됨",
+    "itemsUploaded": "{0}개 항목 업로드됨",
+    "keepUploading": "계속 업로드",
+    "maximise": "최대화",
+    "replaceBlockedWhileEditing": "이 파일을 교체하기 전에 편집을 완료하거나 취소하세요",
+    "tagsAdded": "{0}개 태그 추가됨",
+    "tagsDropped": "파일의 태그 한도에 도달하여 {0}개 태그가 추가되지 않았습니다",
+    "uploadComplete": "업로드 완료",
+    "uploadUrlFilesFound": "{count}개 파일 발견됨",
+    "uploadUrlFilesFoundOne": "1개 파일 발견됨",
+    "uploadUrlImportCount": "{count}개 파일 가져오기",
+    "uploadUrlImportCountOne": "1개 파일 가져오기",
+    "uploadUrlNoAssets": "이 페이지에서 가져올 수 있는 파일을 찾지 못했습니다.",
+    "uploadUrlNoVideoThumbnail": "이 동영상에 사용할 수 있는 썸네일이 없습니다",
+    "uploadUrlScanTruncated": "이 페이지에서 발견된 처음 {count}개 파일을 표시합니다.",
+    "uploadUrlUnsupportedHost": "YouTube, Vimeo, Loom 또는 Google Drive 페이지 링크는 지원되지 않습니다. 미디어 파일의 직접 링크를 붙여넣어 주세요.",
+    "uploadedBy": "업로드한 사람",
+    "uploadsCancelled": "({0}개 취소됨)",
+    "uploadsFailed": "({0}개 실패함)",
+    "uploadsInProgress": "업로드를 취소하시겠습니까?",
+    "altText": "대체 텍스트",
+    "cancelUpload": "업로드 취소",
+    "description": "설명",
+    "details": "상세 정보",
+    "enterDescription": "설명을 입력하세요",
+    "minimise": "최소화",
+    "retryUpload": "업로드 재시도",
+    "saveChanges": "변경사항 저장",
+    "tags": "태그",
+    "uploadCancelled": "취소됨",
+    "uploadUrlFileType": "파일 유형",
+    "uploadUrlSelectAll": "전체 선택",
+    "uploadUrlSelectedCount": "{count}개 선택됨",
+    "uploaded": "업로드 완료"
    },
    "app": {
     "testBuild": "테스트 빌드"
@@ -22901,7 +23067,16 @@
      "nextFile": "다음 파일",
      "replaceMedia": "미디어 교체",
      "downloadFile": "다운로드",
-     "playVideo": "동영상 재생"
+     "playVideo": "동영상 재생",
+     "browseHint": "← → 키로 탐색",
+     "fullscreenUnavailable": "이 이미지에는 전체 화면을 사용할 수 없습니다.",
+     "imageViewerControls": "이미지 뷰어 컨트롤",
+     "moveViewerControls": "컨트롤 이동",
+     "playPauseHint": "스페이스바를 눌러 재생 또는 일시정지",
+     "zoomLevel": "확대/축소 {percent}%",
+     "closeHint": "Esc 키로 닫기",
+     "enterFullscreen": "전체화면 진입",
+     "exitFullscreen": "전체화면 나가기"
     },
     "pdfPreview": {
      "openInNewTab": "새 탭에서 열기",
@@ -22922,7 +23097,18 @@
     "textPreview": {
      "badge": "텍스트",
      "copy": "복사",
-     "linesCount": "{count}줄 · UTF-8 | {count}줄 · UTF-8"
+     "linesCount": "{count}줄 · UTF-8 | {count}줄 · UTF-8",
+     "editorAriaLabel": "{0} 편집 중",
+     "oversizeWarning": "이 파일은 저장 후 약 {0}가 됩니다. {1}를 초과하는 파일은 저장은 되지만 더 이상 미리볼 수 없습니다.",
+     "saveFailed": "변경 사항을 저장하지 못했습니다. 다시 시도해 주세요.",
+     "savedNotification": "{0} 저장됨",
+     "unsavedDescription": "이 파일의 편집 내용이 아직 저장되지 않았습니다.",
+     "discard": "버리기",
+     "keepEditing": "계속 편집",
+     "save": "저장",
+     "saving": "저장 중...",
+     "unsavedChanges": "저장되지 않은 변경사항",
+     "unsavedTitle": "저장하지 않은 변경사항을 버리시겠습니까?"
     },
     "threeDPreview": {
      "unsupportedFormat": "지원되지 않는 3D 형식입니다. .obj, .stl, .glb 파일만 미리보기가 가능합니다.",
@@ -54954,6 +55140,775 @@
     "triggers": "트리거 업데이트 중",
     "plugins": "앱 업데이트 중",
     "customApi": "API 호출 업데이트 중"
+   }
+  },
+  "calendarComponentsApp": {
+   "calendarAI": {
+    "chat": {
+     "selectEntityMixed": "옵션을 검색하고 선택하세요",
+     "ariaSelectTeamMember": "팀원 선택",
+     "ariaSelectTeamMembers": "추가할 팀원 선택",
+     "doneAddingMembers": "팀원 추가 완료"
+    },
+    "fieldService": {
+     "edit": {
+      "pickService": "편집할 서비스를 선택하세요",
+      "tag": "현장 서비스 편집",
+      "fields": {
+       "description": "설명",
+       "durationMinutes": "소요 시간",
+       "name": "이름"
+      },
+      "updated": "업데이트됨"
+     },
+     "errors": {
+      "inProgress": "현장 서비스가 아직 생성되는 중입니다. 잠시 기다렸다가 다시 확인해 주세요.",
+      "notSetUp": "이 위치에는 아직 현장 서비스가 설정되지 않았습니다. 현장 서비스 설정에서 설정을 완료한 후 다시 돌아와 서비스를 생성해 주세요."
+     },
+     "openFieldServicesSettings": "현장 서비스 설정 열기",
+     "preview": {
+      "durationHours": "{hours}시간"
+     },
+     "progress": {
+      "title": "현장 서비스 설정"
+     },
+     "startChip": "현장 서비스 생성",
+     "startChipSubtitle": "고객이 온라인으로 예약할 수 있는 현장 서비스를 설정하세요",
+     "steps": {
+      "next-steps": "다음 단계",
+      "sample-booking": "예약 샘플"
+     },
+     "summary": {
+      "areasRadius": "{address}에서 {radius} {unit} 이내",
+      "areasZipMore": "우편번호: {codes} 외 {count}개"
+     },
+     "welcome": {
+      "editChip": "현장 서비스 편집",
+      "message": "{greeting} 저는 AI 어시스턴트입니다. 새 현장 서비스를 설정하거나 기존 서비스를 업데이트할 수 있습니다. 무엇을 도와드릴까요?",
+      "noCalendars": "{greeting} 저는 AI 어시스턴트입니다. 무엇을 도와드릴까요?"
+     },
+     "working": "처리 중입니다...",
+     "brand": {
+      "tabLabel": "AI 어시스턴트",
+      "title": "AI 어시스턴트"
+     },
+     "retry": "다시 시도"
+    },
+    "header": {
+     "tabLabel": "캘린더 AI",
+     "exitFullscreen": "전체화면 나가기"
+    },
+    "messages": {
+     "teamMemberNotFound": "\"{name}\"이라는 이름의 팀원을 한 명으로 특정할 수 없습니다. 이 예약을 처리할 담당자를 선택하세요:",
+     "autoAssign": "예약 가능한 팀원에게 자동 할당",
+     "bookingComplete": "완료되었습니다. 방금 본인 캘린더에 예약했습니다. 링크를 공유하고 예약을 받기 시작하세요.",
+     "bookingLinkReady": "\n\n예약 링크가 준비되었습니다: {url}",
+     "calendarDeleted": "캘린더가 삭제되었습니다.",
+     "calendarLive": "**{name}** 캘린더가 공개되었습니다",
+     "collectiveNeedMoreMembers": "공동 캘린더에는 팀원이 2명 이상 필요합니다. 최소 1명 이상 추가해 주세요.",
+     "editConfigPrompt": "네, 무엇을 변경하시겠습니까? 업데이트할 내용을 말씀해 주세요.\n\n예: \"45분으로 변경\", \"예약 가능 시간을 평일 오전 9:00–오후 6:00으로 변경\", \"$100 결제(보증금 50%) 추가\", \"팀원 업데이트\".",
+     "embedCodeCopied": "임베드 코드가 클립보드에 복사되었습니다",
+     "groupSizeConfirmClass": "알겠습니다 - 수업당 {size} 석입니다.",
+     "howManyTeamMembers": "이 예약을 처리할 팀원은 몇 명입니까?",
+     "noPermission": "캘린더를 만들 권한이 없습니다. 액세스를 요청하려면 관리자에게 문의해 주세요.",
+     "noUsersAskPlaceholder": "이 서브 계정에는 아직 팀원이 없습니다. 어떻게 계속하시겠습니까?",
+     "notPartOfLocation": "회원님은 이 서브 계정에 속해 있지 않습니다. 이 캘린더에 추가할 팀원을 선택해 주세요.",
+     "openingCalendarTypesPage": "캘린더 설정 페이지를 열어 드립니다 — 사용 가능한 모든 캘린더 유형과 활용 사례를 확인해 보세요.",
+     "openingConnectionsHelp": "연결 페이지를 여는 중입니다. 그곳에서 연동을 연결하거나 관리할 수 있습니다.",
+     "perfectAddYou": "좋습니다. 팀원으로 추가하겠습니다. 나중에 캘린더 설정에서 더 많은 사람을 추가할 수 있습니다.",
+     "postCreationOptions": "이제 모든 기능이 제대로 작동하는지 확인해 보세요. 직접 캘린더에서 예약을 잡아 보세요. 고객에게 보이는 화면과 동일합니다.",
+     "sizeAttendees": "참석자 {size}명",
+     "teamCountPeople": "{count}명",
+     "videoTeamNotConnected": "캘린더가 미팅에 **{provider}** 를 사용하지만 다음 팀원은 아직 연결하지 않았습니다: **{names}**. 예약 시 미팅 링크가 자동 생성되도록 {provider} 를 연결해야 합니다.",
+     "whereWillSessionTakePlace": "세션은 어디에서 진행되나요? 아래에 위치를 입력하세요."
+    },
+    "quickReplies": {
+     "troubleshootAvailability": "예약 가능 시간 문제 해결",
+     "addAvailableUsers": "사용 가능한 사용자 추가",
+     "adjustDuration": "기간 조정",
+     "bookTestAppointment": "테스트 예약하기",
+     "calendarTypesUseCases": "캘린더 유형 및 활용 사례 보기",
+     "configureAvailability": "가능 시간 설정",
+     "connectVideoConferencing": "Google/Outlook 및 화상 회의 앱 연결",
+     "copyLink": "링크 복사",
+     "createAnother": "하나 더 만들기",
+     "createNewCalendar": "새 캘린더 만들기",
+     "createPlaceholderUser": "임시 사용자 추가 (나중에 편집 가능)",
+     "doneAddingMembers": "멤버 추가 완료",
+     "editCalendar": "캘린더 편집",
+     "embedInFunnel": "퍼널 / 서드파티 웹사이트에 임베드",
+     "embedOnWebsite": "웹사이트에 임베드",
+     "goToCalendarSettings": "캘린더 설정으로 이동",
+     "justAddMeForNow": "지금은 나만 추가",
+     "multiplePeople": "우리 팀의 여러 명",
+     "needDifferentHours": "다른 시간이 필요합니다",
+     "openAvailability": "예약 가능 시간 열기",
+     "openCalendarSettings": "캘린더 설정 열기",
+     "setWorkingHours": "근무 시간 설정",
+     "startOver": "처음부터 다시",
+     "thatWorks": "좋습니다",
+     "topicBrandBookingPage": "예약 페이지 브랜딩",
+     "topicNotifications": "알림 및 리마인더",
+     "topicRecurringBookings": "반복 예약",
+     "twoPeople": "2명"
+    },
+    "cards": {
+     "meetings": {
+      "collectiveTitle": "패널 / 위원회",
+      "oneOnOneTitle": "1:1 미팅"
+     },
+     "rentals": {
+      "equipmentTitle": "장비",
+      "meetingRoomsDesc": "회의실, 사무실",
+      "otherDesc": "대여 가능한 모든 자산",
+      "otherTitle": "기타 렌탈",
+      "vehiclesDesc": "자동차, 오토바이, 밴"
+     },
+     "services": {
+      "fitnessDesc": "퍼스널 트레이닝, 요가, 필라테스",
+      "fitnessTitle": "피트니스 및 트레이닝",
+      "hairTitle": "헤어 & 뷰티",
+      "otherTitle": "기타 서비스"
+     }
+    },
+    "celebration": {
+     "copy": "복사",
+     "description": "이제 고객이 아래 링크로 {calendarName} 을(를) 예약할 수 있습니다.",
+     "shareTitle": "{calendarName} 예약",
+     "title": "캘린더가 라이브 상태입니다"
+    },
+    "feedback": {
+     "whatWentWell": "잘된 점은 무엇입니까?"
+    },
+    "locationPicker": {
+     "confirm": "확인",
+     "customPlaceholder": "예: 204호, 컨퍼런스 센터 B",
+     "inPerson": "대면",
+     "phone": "전화",
+     "setLater": "나중에 설정하겠습니다",
+     "videoConferencing": "화상 회의"
+    },
+    "models": {
+     "attendeeType": "1:1 세션입니까, 아니면 여러 참석자가 있는 그룹 세션입니까?",
+     "calendarTypeCardsMeetingsDesc": "영업 통화, 1:1, 라운드 로빈, 팀 미팅",
+     "calendarTypeCardsRentals": "대여",
+     "calendarTypeCardsServices": "서비스",
+     "calendarTypeCardsServicesDesc": "살롱, 스파, 클리닉, 피트니스 스튜디오",
+     "createNewCalendar": "새 캘린더 만들기",
+     "eventSeatsConfirm": "확인했습니다 - 이벤트당 {size} 석입니다.",
+     "welcomeHasCalendars": "{greeting} 저는 Calendar AI 입니다. 도움이 필요한 내용을 말씀하시거나 아래 옵션을 선택하세요.",
+     "whatCanIDo": "캘린더로 무엇을 할 수 있나요?"
+    },
+    "preview": {
+     "additionalInfo": "추가 정보",
+     "additionalInfoPlaceholder": "예약 전에 저희가 알아야 할 사항이 있나요?",
+     "calendarNamePlaceholder": "캘린더 이름",
+     "calendarReadyTryBooking": "캘린더가 준비되었습니다 — 예약을 해 보세요",
+     "customerPreview": "고객에게 표시되는 화면입니다.",
+     "days": {
+      "fri": "금",
+      "mon": "월",
+      "sat": "토",
+      "thu": "목",
+      "tue": "화"
+     },
+     "durationSuffix": "{duration}분",
+     "email": "이메일",
+     "emptyTitle": "예약 페이지가 여기에 표시됩니다",
+     "enterDetails": "세부사항 입력",
+     "firstName": "이름",
+     "formPreviewTitle": "예약 폼 미리보기",
+     "inPerson": "대면",
+     "lastName": "성",
+     "scheduleMeeting": "미팅 예약",
+     "spotsSuffix": "{count}자리",
+     "tryBookingHeading": "첫 예약을 해 보세요 — 아래에서 날짜와 시간을 선택하세요",
+     "yourAnswer": "답변..."
+    },
+    "serviceCreation": {
+     "pricePrompt": "이 서비스의 가격은 얼마입니까? 금액을 입력하거나 아래 옵션을 선택하세요.",
+     "teamPrompt": "이 서비스의 예약을 누가 처리합니까?",
+     "variationsSummary": "알겠습니다. 다음 변형을 만들겠습니다:"
+    },
+    "summary": {
+     "heading": "캘린더는 다음과 같습니다:"
+    },
+    "typing": {
+     "thinking": "생각 중"
+    },
+    "variantLabels": {
+     "collective": "패널 / 위원회",
+     "sales-demo": "영업 데모"
+    }
+   },
+   "calendarSettings": {
+    "alert": "캘린더 모듈을 완전히 숨기려면 서브 계정 설정 > 내 직원 > 역할 및 권한에서 설정할 수 있습니다.",
+    "description": "선택한 모든 서브 계정의 캘린더 모듈을 한 번에 켜거나 끕니다. 변경사항은 선택한 모든 서브 계정에 동일하게 적용됩니다.",
+    "meetings": "미팅",
+    "title": "캘린더 설정"
+   },
+   "common": {
+    "confirmMessage": "입력하여 확인",
+    "confirmationMessage": "선택한 모든 서브 계정에 이 변경사항을 적용하려면 아래 입력란에 <b>CONFIRM</b> 을 입력하고 <b>저장</b>을 클릭하세요.",
+    "save": "저장"
+   }
+  },
+  "powerDialerApp": {
+   "multiLine": {
+    "addResult": {
+     "skipReason": "{count}건 건너뜀 ({reason})",
+     "skipped": "{count}건 건너뜀"
+    },
+    "addSkip": {
+     "dnd": "방해 금지 중",
+     "listFull": "목록이 가득 참",
+     "noPhone": "전화번호 없음",
+     "notVisible": "회원님에게 표시되지 않음",
+     "opportunityNoPhone": "주 연락처에 전화번호가 없음",
+     "readFailed": "불러올 수 없음, 다시 추가하세요"
+    },
+    "build": {
+     "no_eligible": "지금 걸 수 있는 항목이 없습니다",
+     "no_outbound_number": "이 연락처들에게 전화를 걸 수 있는 발신 번호가 없습니다. 전화번호를 확인하세요."
+    },
+    "callback": {
+     "strip": {
+      "one": "{name} 님도 응답했습니다. 다음에 연결됩니다.",
+      "two": "{a} 님과 {b} 님도 응답했습니다. 다음에 연결됩니다."
+     }
+    },
+    "chip": {
+     "callbackNextTooltip": "다른 연락처와 연결 중일 때 {name} 님이 응답해 콜백 메시지를 들었습니다. 다음 차례에 단독으로 전화를 겁니다.",
+     "connectedDuration": "연결됨 · {duration}",
+     "notYetCalledAria": "아직 통화하지 않음",
+     "rangRecentlyTooltip": "연결 중에 벨이 울렸습니다. {time}에 다시 걸 수 있습니다.",
+     "dialing": "전화 연결 중",
+     "failed": "실패",
+     "next": "다음",
+     "noAnswer": "응답 없음",
+     "ringing": "벨 울림"
+    },
+    "clear": {
+     "modal": {
+      "body": "이렇게 하면 통화 목록에서 {count}명의 연락처가 모두 제거됩니다. 언제든지 다시 추가할 수 있습니다.",
+      "bodyAll": "이렇게 하면 통화 목록에서 모든 연락처가 제거됩니다. 언제든지 다시 추가할 수 있습니다."
+     }
+    },
+    "empty": {
+     "title": "통화 목록이 비어 있습니다"
+    },
+    "endSession": "세션 종료",
+    "errors": {
+     "clearNotAllowed": {
+      "advance_running": "목록을 지우려면 다이얼링을 일시 중지하세요.",
+      "round_closing": "마지막 라운드가 아직 끝나지 않았습니다."
+     },
+     "dispositionNotSaved": "처리 결과를 저장하지 못했습니다. 다시 시도하세요.",
+     "itemNotCallable": "이 연락처는 지금 목록에서 전화를 걸 수 없습니다.",
+     "itemNotRemovable": "이 연락처는 통화 중이라 지금 제거할 수 없습니다.",
+     "linesOutOfRange": "해당 회선 수는 허용되지 않습니다. 관리자가 설정에서 변경할 수 있습니다.",
+     "parkRefused": {
+      "account_mismatch": "이 라운드를 시작할 수 없습니다. 아무에게도 전화가 걸리지 않았습니다. 다시 시도하세요.",
+      "agency_no_funds": "에이전시의 잔액이 부족합니다",
+      "already_bound": "이 라운드를 시작할 수 없습니다. 아무에게도 전화가 걸리지 않았습니다. 다시 시도하세요.",
+      "inactive": "서브 계정 또는 에이전시가 비활성 상태입니다",
+      "round_not_parkable": "이 라운드를 시작할 수 없습니다. 아무에게도 전화가 걸리지 않았습니다. 다시 시도하세요."
+     },
+     "realtimeUnavailable": "지금은 실시간 통화 업데이트를 표시할 수 없습니다. 페이지를 새로고침하여 다시 시도하세요.",
+     "transferNoDevices": "이 사용자는 전환을 받을 수 있는 기기가 없습니다."
+    },
+    "failedReason": {
+     "blockedByProvider": "수신자의 서비스 제공업체에 의해 통화가 차단되었습니다",
+     "calleeDeclined": "상대방이 거절함",
+     "invalidDestination": "잘못된 대상 번호이거나 연결할 수 없습니다"
+    },
+    "header": {
+     "settingsTooltip": "멀티라인 설정"
+    },
+    "hint": {
+     "changeMessage": "메시지 변경",
+     "firstRun": "{n}명에게 동시에 전화를 걸고 먼저 응답하는 사람과 연결합니다. 나머지는 비즈니스의 짧은 메시지를 듣거나 벨소리가 멈춥니다."
+    },
+    "lastRound": {
+     "finishNotes": "메모 마무리 →",
+     "noAnswer": "마지막 라운드에 아무도 응답하지 않았습니다",
+     "seeRound": "라운드 보기"
+    },
+    "lines": {
+     "helper": "{n}명의 연락처에게 동시에 전화를 겁니다. 먼저 응답하는 사람과 통화하게 됩니다.",
+     "notAllowed": "한 번에 한 명씩 연락처에 전화를 겁니다. 관리자가 설정에서 여러 명에게 동시에 거는 것을 허용할 수 있습니다.",
+     "option": "연락처 {n}명 | 연락처 {n}명"
+    },
+    "minimised": {
+     "callbackAlone": "{name} 님, 단독 발신",
+     "endRound": "라운드 종료",
+     "nextAt": "다음은 {time}",
+     "trayLines": "회선 {n}개 | 회선 {n}개",
+     "trayNextRound": "다음 라운드",
+     "trayThisRound": "이번 라운드",
+     "waiting": "{n}명 대기 중"
+    },
+    "nextAt": "다음 연락처는 {time}에 전화할 수 있습니다",
+    "nextControl": {
+     "countdownAria": "{seconds}초 후 다음 라운드"
+    },
+    "pauseReason": {
+     "connection_lost": "일시 중지됨: 연결이 끊겼습니다.",
+     "dialer_closed": "다이얼러가 닫혀 있는 동안 일시 중지되었습니다.",
+     "inbound": "수신 전화 이후 일시 중지되었습니다.",
+     "other_call": "다른 통화가 시작되어 일시 중지되었습니다.",
+     "repeated_failures": "다이얼링이 일시 중지되었습니다. 연속 3라운드 연결에 실패했습니다. 전화번호나 통화 설정을 확인한 후 준비가 되면 다음을 누르세요.",
+     "rep": "일시 중지"
+    },
+    "reasons": {
+     "ALREADY_ON_A_CALL": {
+      "detail": "이 연락처는 이미 비즈니스와 통화 중이었습니다."
+     },
+     "BLOCKED_NUMBER": {
+      "chip": "차단된 번호"
+     },
+     "CALLER_ID_NOT_ALLOWED": {
+      "chip": "발신자 ID가 허용되지 않음",
+      "detail": "발신자 ID로는 이 번호에 전화를 걸 수 없습니다."
+     },
+     "COMPLIANCE_REQUIRED": {
+      "detail": "이 번호로 전화하려면 먼저 규정 준수 단계가 필요합니다."
+     },
+     "CONTACT_CHECK_FAILED": {
+      "chip": "확인되지 않음",
+      "detail": "전화를 걸기 전에 이 연락처를 확인할 수 없었습니다."
+     },
+     "CONTACT_NOT_FOUND": {
+      "chip": "연락처 삭제됨",
+      "detail": "이 연락처는 더 이상 존재하지 않습니다."
+     },
+     "DESTINATION_NOT_ALLOWED": {
+      "chip": "허용되지 않는 국가"
+     },
+     "DND": {
+      "chip": "방해 금지"
+     },
+     "INVALID_NUMBER": {
+      "chip": "유효하지 않은 번호",
+      "detail": "이 전화번호는 유효하지 않습니다."
+     },
+     "NO_OUTBOUND_NUMBER": {
+      "chip": "발신 가능한 번호 없음",
+      "detail": "전화번호 중 이 연락처에 전화할 수 있는 번호가 없습니다."
+     },
+     "PROVIDER_MISMATCH": {
+      "detail": "이 목록에서 이 연락처에 전화할 수 있는 번호가 없습니다."
+     },
+     "default": {
+      "detail": "이 연락처는 지금 목록에서 전화를 걸 수 없습니다.",
+      "chip": "건너뜀"
+     }
+    },
+    "round": {
+     "abandoned": {
+      "election_unavailable": "이 라운드를 연결하는 중 문제가 발생했습니다. 해당 연락처에게 다시 전화가 걸립니다.",
+      "placement_timeout": "제시간에 회선을 배정할 수 없었습니다. 전화가 걸리지 않았습니다."
+     },
+     "endCall": "통화 종료",
+     "nextPreview": "다음 {n}",
+     "soloNote": {
+      "callback": "{first} 님이 이전에 응답하여 콜백 메시지를 들었으므로, 이 통화는 해당 연락처와의 단독 통화입니다.",
+      "cancelCap": "{first} 님의 전화가 울렸다가 {n}번 취소되어, 이 통화는 해당 연락처와의 단독 통화입니다.",
+      "providerSingleLine": "{first} 님에게만 단독으로 전화 거는 중입니다."
+     },
+     "title": "회선 {n}개 다이얼링 중 | 회선 {n}개 다이얼링 중"
+    },
+    "row": {
+     "callNow": "지금 {name} 님에게 전화 걸기",
+     "remove": "통화 목록에서 제거",
+     "removeAria": "통화 목록에서 {name} 제거"
+    },
+    "tab": {
+     "badgeAria": "통화 목록에 {count}명의 연락처",
+     "title": "통화 목록"
+    },
+    "toast": {
+     "finishCurrentCall": "먼저 현재 통화를 종료하세요",
+     "movedToHistory": "{n}명의 연락처가 통화 기록으로 이동되었습니다",
+     "noPhone": "이 연락처에 전화번호가 없습니다",
+     "nothingToDial": "지금 걸 수 있는 항목이 없습니다",
+     "pausedInbound": "해당 통화를 받는 동안 다이얼링이 일시 중지되었습니다.",
+     "pausedOtherCall": "다른 통화가 시작되어 다이얼링이 일시 중지되었습니다."
+    },
+    "unreached": {
+     "allFailedNote": "이 라운드의 모든 통화가 실패했습니다. 번호를 확인하거나, 계속 반복되면 통화 설정을 확인한 후 준비가 되면 다음을 선택하세요.",
+     "couldNotReach": {
+      "subtitle": "상태에 마우스를 올리면 자세한 내용을 볼 수 있습니다"
+     }
+    },
+    "callEnded": {
+     "redial": "다시 걸기"
+    },
+    "groups": {
+     "next": "다음",
+     "skipped": "건너뜀",
+     "waiting": "대기 중"
+    },
+    "loadFailed": {
+     "retry": "다시 시도"
+    },
+    "pause": "일시 중지",
+    "resume": "재개",
+    "waiting": {
+     "learnMore": "자세히 보기"
+    }
+   },
+   "postCall": {
+    "emptyStates": {
+     "artifactEmpty": {
+      "qaScorecard": "이 통화를 평가하기에 대화 내용이 충분하지 않습니다.",
+      "summary": "통화 내용을 요약하기에 충분한 내용이 없습니다."
+     },
+     "skippedGeneric": "이 통화에 대한 AI 인사이트가 생성되지 않았습니다.",
+     "skippedTooShort": "이 통화를 분석하기에 대화 내용이 충분하지 않습니다."
+    },
+    "feedback": {
+     "commentPlaceholder": "개선할 점이 있다면 알려주세요 (선택사항)",
+     "prompt": {
+      "fieldSuggestion": "이 필드 제안이 정확한가요?",
+      "qaScore": "이 스코어카드가 정확합니까?",
+      "summary": "이 요약이 정확한가요?",
+      "transcript": "이 녹취록이 정확한가요?"
+     },
+     "rateDown": "부정적으로 평가",
+     "send": "보내기"
+    },
+    "footer": {
+     "saveFailed": "업데이트를 저장하지 못했습니다. 다시 시도해 주세요.",
+     "saveUpdates": "업데이트 저장 ({count})",
+     "cancel": "취소"
+    },
+    "headerSubtitle": "이전 통화에서 AI가 파악한 내용을 검토하세요.",
+    "qa": {
+     "overallScore": "종합 점수",
+     "title": "QA 스코어카드",
+     "toggleInsights": "코칭 인사이트 전환"
+    },
+    "recording": {
+     "loadingTranscript": "녹취록 불러오는 중…",
+     "recordingLabel": "녹음 {index}",
+     "searchPlaceholder": "녹취록 검색",
+     "pause": "일시 중지",
+     "seek": "탐색",
+     "unavailable": "녹음을 사용할 수 없음"
+    },
+    "reviewUpdate": {
+     "currentPrefix": "현재: {value}",
+     "dispositionAiSuggested": "AI가 통화 내용을 기반으로 처리 결과를 제안했습니다.",
+     "dispositionTitle": "통화 처리 결과 (AI 제안)",
+     "fieldsAllMatch": "제안된 모든 값이 이미 연락처와 일치합니다.",
+     "fieldsEmpty": "이 통화에 대한 AI 필드 제안이 없습니다.",
+     "fieldsSubtitle": "AI가 다음 필드에 대한 새 값을 제안했습니다",
+     "fieldsTitle": "AI 제안 필드",
+     "statusDismissed": "무시됨",
+     "suggestionColumn": "AI 제안 값"
+    },
+    "summary": {
+     "copied": "요약이 클립보드에 복사되었습니다",
+     "copy": "요약 복사",
+     "empty": "이 통화에 대한 요약이 없습니다."
+    },
+    "tabs": {
+     "qaScorecard": "QA 스코어카드",
+     "reviewUpdate": "검토 및 업데이트",
+     "summary": "요약"
+    },
+    "title": "통화 후",
+    "close": "닫기"
+   },
+   "addNote": "메모 추가",
+   "addScriptNow": "지금 스크립트 추가",
+   "allNotes": "모든 메모",
+   "app": {
+    "powerDialerMicroApp": "파워 다이얼러 마이크로 앱",
+    "works": "정상 작동"
+   },
+   "audioPlayer": {
+    "recordingUnavailable": "녹음을 사용할 수 없음"
+   },
+   "audioSettings": {
+    "additionalDeviceTooltip": "전화가 올 때 추가 기기(예: 헤드셋)도 울리게 합니다.",
+    "allowMicHint": "기기 이름을 보려면 마이크 접근을 허용하세요.",
+    "genericMicLabel": "마이크 {n}",
+    "limitedSupportBody": "Safari는 하나의 출력 장치만 지원합니다. 전체 제어를 위해 Chrome 또는 Edge를 사용하세요.",
+    "menuItem": "오디오 설정",
+    "settingsAria": "설정",
+    "speaker": "스피커",
+    "testError": "선택한 장치에서 테스트 음을 재생하지 못했습니다.",
+    "title": "오디오 설정"
+   },
+   "backToDialer": "다이얼러로 돌아가기",
+   "backendMessages": {
+    "VOICE_CALL_CALLEE_DECLINED": "상대방이 거부함",
+    "VOICE_CALL_INVALID_DESTINATION": "잘못된 대상 번호이거나 연결할 수 없습니다"
+   },
+   "call": "통화",
+   "callAnyway": "그래도 걸기",
+   "callControls": {
+    "backToCall": "통화로 돌아가기",
+    "hold": "보류",
+    "mute": "음소거"
+   },
+   "callEnded": "통화 종료됨",
+   "callTransferredSuccessfully": "통화가 성공적으로 전환되었습니다",
+   "callingScript": "통화 스크립트",
+   "callingScriptContent": "통화 스크립트 내용",
+   "calls": {
+    "callAnyway": "그래도 걸기",
+    "callEnded": "통화 종료됨",
+    "callMergedSuccessfully": "통화가 성공적으로 병합되었습니다",
+    "callTransferredSuccessfully": "통화가 성공적으로 전환되었습니다",
+    "callingFrom": "발신 번호",
+    "decline": "거부",
+    "dial": "전화 걸기",
+    "dialing": "전화 연결 중",
+    "incomingCall": "수신 전화",
+    "outbound": "발신",
+    "spamLikely": "스팸 가능성 있음",
+    "transferCall": "전환된 통화"
+   },
+   "change": "변경",
+   "characters": "문자",
+   "clickThePageInfoIconInYourBrowserAddressBar": "브라우저 주소창의 페이지 정보 아이콘을 클릭하세요",
+   "comingSoon": "출시 예정",
+   "common": {
+    "call": "통화",
+    "cancel": "취소",
+    "change": "변경",
+    "comingSoon": "출시 예정",
+    "ghostIllustration": "고스트 일러스트레이션",
+    "message": "메시지",
+    "save": "저장",
+    "unknown": "알 수 없음"
+   },
+   "conference": {
+    "youCanLeaveCallWithoutDisconnectingOthers": "다른 참가자의 연결을 끊지 않고 통화를 나갈 수 있습니다"
+   },
+   "conferenceCall": "컨퍼런스 콜",
+   "contacts": {
+    "contact": "연락처",
+    "contacts": "연락처",
+    "unknownContact": "알 수 없는 {contact}",
+    "youCanImportContactsOrAddNewOnesFromTheContactPage": "{contact} 페이지에서 {contact}를 가져오거나 새로 추가할 수 있습니다."
+   },
+   "createDisposition": "처리 상태 만들기",
+   "customizeIt": "통화의 결과를 선택하세요. 워크플로우를 트리거하거나 데이터 분석에 사용할 수 있습니다. 사용자 지정도 가능합니다",
+   "decline": "거부",
+   "description": "설명",
+   "dialer": {
+    "dragDialer": "이동",
+    "pinDialer": "최소화 방지",
+    "togglePowerDialerReset": "다이얼러 최소화",
+    "unpinDialer": "자동 최소화"
+   },
+   "dialerErrors": {
+    "defaultError": "새로고침 후 다시 시도해 주세요. 문제가 계속되면 지원팀에 문의해 주세요",
+    "errorWithCode": "새로고침 후 다시 시도해 주세요. 문제가 계속되면 지원팀에 문의해 주세요. 오류 {code}",
+    "sessionExpired": "다이얼러 세션이 만료되었습니다. 새로고침 후 다시 시도해 주세요. 문제가 계속되면 지원팀에 문의하세요."
+   },
+   "doYouWantTransferYourNumber": "번호를 이전하시겠습니까?",
+   "done": "완료",
+   "enable": "켜기",
+   "endCall": "통화 종료",
+   "enterDescription": "설명 입력...",
+   "forMe": "나만",
+   "here": "여기",
+   "hold": "보류",
+   "inbound": "수신",
+   "itsAround": "대략",
+   "keepTranckNotes": "이 {contact}에 대한 중요한 세부 정보를 기록하세요",
+   "learnMore": "자세히 보기",
+   "learnMoreLowerCase": "자세히 보기",
+   "leaveCall": "통화 종료",
+   "loadingNotes": "메모 불러오는 중",
+   "loadingRecentCalls": "최근 통화 불러오는 중",
+   "mergeNow": "지금 병합",
+   "message": "메시지",
+   "microphone": "마이크",
+   "moreContacts": "추가 {contact}",
+   "mute": "음소거",
+   "navigation": {
+    "backToDialer": "다이얼러로 돌아가기",
+    "keypad": "키패드",
+    "users": "사용자"
+   },
+   "noCallingScriptsFound": "발견된 콜링 스크립트가 없습니다",
+   "noContactsFound": "{contact}을(를) 찾을 수 없습니다",
+   "noRecentCalls": "최근 통화 내역이 없습니다",
+   "noResultFound": "검색 결과가 없습니다",
+   "noResultsFoundFor": "다음에 대한 결과를 찾을 수 없습니다",
+   "noUsersFound": "사용자를 찾을 수 없습니다",
+   "noVoicemail": "음성 메시지 없음",
+   "notes": {
+    "addNote": "메모 추가",
+    "addYourFirstNote": "첫 번째 메모를 추가하세요!",
+    "allNotes": "모든 메모",
+    "loadingNotes": "메모 불러오는 중",
+    "notes": "메모",
+    "showMore": "더 보기"
+   },
+   "outbound": "발신",
+   "outgoingCall": "발신 통화",
+   "phoneNumbers": {
+    "connectPhoneNumber": "전화번호 연결",
+    "contactAdmin": "음성 통화를 설정하려면 관리자에게 문의하세요.",
+    "copy": "복사",
+    "doYouWantTransferYourNumber": "번호를 이전하시겠습니까?",
+    "helpMeDecide": "결정에 도움 받기",
+    "learnAboutVoiceCalling": "음성 통화에 대해 알아보기",
+    "noAdminsDescription": "이 서브 계정에 아직 할당된 관리자가 없습니다. 통화 설정에 대한 도움을 받으려면 워크스페이스 소유자에게 문의하세요.",
+    "noAdminsTitle": "이 서브 계정에 관리자가 없습니다",
+    "numberClosestToTheContact": "{contact}와 가장 가까운 번호",
+    "numberUnavailable": "사용할 수 없는 번호입니다",
+    "numberUnavailableDescription": "이 번호의 통화 제공업체를 현재 사용할 수 없습니다. 잠시 후 다시 시도하거나 다른 번호를 선택해 주세요.",
+    "outboundAndInboundCalls": "발신 및 수신 통화",
+    "outboundCallsOnly": "발신 전용. 60초 안에 테스트 통화 가능",
+    "phoneHeroSubtitle": "시작하려면 전화번호가 필요합니다.",
+    "phoneHeroTitle": "통화, 녹음, 텍스트 변환, 후속 조치 자동화 등을 한 곳에서 처리하세요.",
+    "purchasePhoneNumberToSelect": "선택하려면 전화번호를 구매하세요",
+    "searchForPhoneNumber": "전화번호 검색",
+    "searchNumbers": "번호 검색",
+    "unknownNumber": "알 수 없는 번호"
+   },
+   "pleaseAllowPhoneSystemAccessToYourMicrophone": "전화 시스템이 마이크에 접근하도록 허용해주세요",
+   "pleaseContactAdminToAddCallingScript": "통화 스크립트를 추가하려면 관리자에게 문의하세요",
+   "purchaseNow": "지금 구매",
+   "quietHoursWarning": {
+    "forThemAreYouSureYouWantToCallThem": "기준입니다. 정말 통화하시겠습니까?",
+    "itsAround": "대략"
+   },
+   "recentCalls": {
+    "loadingRecentCalls": "최근 통화 불러오는 중",
+    "noRecentCalls": "최근 통화 내역이 없습니다",
+    "recent": "최근 통화",
+    "recentCalls": "최근 통화"
+   },
+   "recordCall": "통화 녹음",
+   "recording": "녹음 중",
+   "recordingUnavailable": "녹음을 사용할 수 없음",
+   "registerHere": "여기에서 등록하세요",
+   "scripts": {
+    "addScriptNow": "지금 스크립트 추가",
+    "callingScript": "통화 스크립트",
+    "callingScriptContent": "통화 스크립트 내용",
+    "noCallingScriptsFound": "통화 스크립트가 없습니다",
+    "pleaseContactAdminToAddCallingScript": "통화 스크립트를 추가하려면 관리자에게 문의하세요"
+   },
+   "search": {
+    "noResultFound": "검색 결과가 없습니다",
+    "noResultsFoundFor": "다음에 대한 결과를 찾을 수 없습니다",
+    "searchForUsers": "사용자 검색"
+   },
+   "searchForContact": "{contact} 검색",
+   "selectUsers": "사용자 선택",
+   "selected": "선택됨",
+   "settings": {
+    "microphone": "마이크",
+    "speaker": "스피커",
+    "updateBrowserPermissions": "브라우저 권한 업데이트"
+   },
+   "showLess": "접기",
+   "showMore": "더 보기",
+   "speaker": "스피커",
+   "tags": {
+    "loadingTags": "태그 불러오는 중",
+    "noTagsFound": "태그가 없습니다",
+    "searchAndAddTag": "태그 검색 및 추가"
+   },
+   "time": {
+    "itsAround": "대략",
+    "localTime": "현지 시간"
+   },
+   "togglePowerDialer": "파워 다이얼러 켜기/끄기",
+   "toggleVolume": "볼륨 켜기/끄기",
+   "transcript": "녹취록",
+   "transfer": {
+    "devicePhone": "전화",
+    "holdAndCall": "보류 후 전화 연결",
+    "transferAndEnd": "전환 후 종료",
+    "warmTransfer": "웜 트랜스퍼"
+   },
+   "twilioErrors": {
+    "31206": "수행된 요청이 승인된 한도를 초과했습니다. 다시 시도해 주세요.",
+    "31208": "브라우저에서 마이크 접근을 허용해주세요."
+   },
+   "unknownContact": "알 수 없는 {contact}",
+   "updateBrowserPermissions": "브라우저 권한 업데이트",
+   "verifyIdBanner": {
+    "button": "ID 인증",
+    "title": "연락처에 전화하려면 ID를 인증하세요"
+   },
+   "verifyIdBannerWarn": {
+    "description": "발신 통화를 시작하려면 신원을 인증하세요.",
+    "title": "아직 다른 사람에게 전화할 수 없습니다"
+   },
+   "viewProfile": "프로필 보기",
+   "voiceIntegrity": {
+    "voiceIntegrityTooltip": "Voice Integrity를 사용하여 더 많은 응답 전화를 받으세요."
+   },
+   "voiceIntegrityTooltip": "Voice Integrity를 사용하여 더 많은 응답 전화를 받으세요.",
+   "voiceMail": "음성 메일",
+   "voicemail": {
+    "noVoicemail": "음성 메시지 없음",
+    "recordingUnavailable": "녹음을 사용할 수 없음",
+    "transcriptUnavailable": "스크립트를 사용할 수 없습니다",
+    "underMaintenance": "점검 중",
+    "voicemailTooltip": "음성 메일 및 시간 초과 설정 변경 방법에 대해"
+   },
+   "voicemailTooltip": "음성 메일 및 시간 초과 설정 변경 방법에 대해",
+   "with2People": "2명과 함께",
+   "youCanImportContactsOrAddNewOnesFromTheContactPage": "{contact} 페이지에서 {contact}를 가져오거나 새로 추가할 수 있습니다."
+  },
+  "switchyard": {
+   "hostActions": {
+    "accountMenu": "계정 메뉴",
+    "closeAccountMenu": "계정 메뉴 닫기",
+    "closeAskAi": "Ask AI 닫기",
+    "downloadMobileApps": "모바일 앱 다운로드",
+    "logInAs": "다음으로 로그인",
+    "loggedInAs": "{name}(으)로 로그인됨",
+    "loggedInAsWithEmail": "{name}({email})(으)로 로그인됨",
+    "profileSettings": "프로필 설정",
+    "signOut": "로그아웃",
+    "switchToMyAccount": "내 계정으로 전환",
+    "accountUser": "계정 사용자"
+   },
+   "loading": {
+    "cachedChecking": "최근 {thing} 표시 중 · 새 항목 확인 중",
+    "cachedStill": "새 {thing}를 계속 확인하는 중 — 계속 진행하세요",
+    "couldNotLoad": "{page}을(를) 불러올 수 없습니다",
+    "couldNotLoadPage": "이 페이지를 불러올 수 없습니다",
+    "loadedCount": "{total} 중 {done} 로드됨",
+    "loadingAccount": "계정을 불러오는 중",
+    "loadingAgency": "에이전시를 불러오는 중",
+    "loadingPage": "{page} 불러오는 중…",
+    "loadingUnnamedPage": "페이지 불러오는 중…",
+    "loggingInAs": "{name}(으)로 로그인하는 중",
+    "loggingInAsAnotherUser": "다른 사용자로 로그인하는 중",
+    "offline": "오프라인 상태입니다. 다시 연결되면 재시도합니다",
+    "openingPage": "{name}에서 {page} 여는 중",
+    "slowSwitchNote": "{name} 여는 중 — 계정 규모가 클 경우 몇 초 더 걸립니다.",
+    "slowSwitchNoteGeneric": "계정 여는 중 — 계정 규모가 클 경우 몇 초 더 걸립니다.",
+    "stillLoadingPage": "{page} 불러오는 중…",
+    "stillLoadingPageFirstLoad": "{page} 불러오는 중 — 이 계정은 가져올 데이터가 많습니다",
+    "stillLoadingPageFirstLoadAgency": "{page} 불러오는 중 — 이 에이전시는 가져올 데이터가 많습니다",
+    "stillWorking": "계속 처리 중입니다",
+    "stillWorkingConnection": "계속 처리 중입니다 · 연결 속도가 느릴 수 있습니다",
+    "stillWorkingFirstLoad": "계속 처리 중입니다 — 이 계정은 가져올 데이터가 많습니다",
+    "stillWorkingFirstLoadAgency": "계속 처리 중입니다 — 이 에이전시는 가져올 데이터가 많습니다",
+    "switchedTo": "{name}(으)로 전환됨",
+    "switchingAccount": "계정 전환 중",
+    "switchingBackToOwnAccount": "내 계정으로 다시 전환하는 중",
+    "switchingTo": "{name}(으)로 전환하는 중",
+    "tryAgain": "다시 시도"
+   },
+   "askAi": {
+    "exitFullscreen": "전체화면 나가기"
    }
   }
  },
