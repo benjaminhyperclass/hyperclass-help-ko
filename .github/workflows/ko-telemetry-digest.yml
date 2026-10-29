@@ -14,6 +14,7 @@ on:
 
 permissions:
   contents: write
+  issues: write
 
 concurrency:
   group: ko-telemetry-digest
@@ -74,6 +75,21 @@ jobs:
           md += ["", "## 라우트별 한글 비율 (낮은 순)", "", "| 라우트 | 조회 | 한글 비율 | 영문 리프 |", "|---|---:|---:|---:|"]
           for r in d['routes'][:40]:
               md.append(f"| `{r['route']}` | {r['views']} | {r['koRatio']} | {r['enNsLeaves']} |")
+          # 문구 신고(로더 v4.18 Alt+Shift+클릭) — 누적 data/telemetry/reports.json (text 기준 합산, 처리 전까지 유지)
+          reps = d.get('reports') or []
+          rp = 'data/telemetry/reports.json'
+          acc = json.load(open(rp, encoding='utf-8')) if os.path.exists(rp) else {'_comment': '인앱 문구 신고 누적. 처리(사전 반영)했으면 항목을 지운다. 원본은 일일 보고서.', 'items': {}}
+          new_lines = []
+          for r in reps:
+              it = acc['items'].get(r['text']) or {'n': 0, 'first': date, 'routes': [], 'ctx': r.get('ctx', ''), 'lang': r.get('lang', '')}
+              it['n'] += r['n']; it['last'] = date
+              if r['route'] not in it['routes']: it['routes'] = (it['routes'] + [r['route']])[:5]
+              acc['items'][r['text']] = it
+              new_lines.append(f"- [{r.get('lang','')}] `{r['text'][:80]}` ×{r['n']} — `{r.get('ctx','')}` @ `{r['route']}`")
+          if reps:
+              md += ['', f'## 문구 신고 {len(reps)}건', ''] + new_lines
+              json.dump(acc, open(rp, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+              open('/tmp/reports.md', 'w', encoding='utf-8').write('\n'.join([f'### 문구 신고 ({date}) {len(reps)}건'] + new_lines) + '\n')
           open(f'data/reports/telemetry/{date}.md', 'w', encoding='utf-8').write('\n'.join(md) + '\n')
           # 백로그: 최근 7일 보고서의 ns 를 합쳐 상위 50
           agg = {}
@@ -87,6 +103,17 @@ jobs:
           print('\n'.join(md[:12]))
           PY
           head -c 1500 "data/reports/telemetry/$DATE.md" >> $GITHUB_STEP_SUMMARY
+
+      - name: 문구 신고 이슈 코멘트
+        if: steps.fetch.outputs.skip != 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          [ -f /tmp/reports.md ] || { echo "신고 없음"; exit 0; }
+          { echo "<!-- hc-report -->"; cat /tmp/reports.md; echo; echo "처리: _source/hc-ko-app.pretty.json 에 반영(단어 1개는 _textScoped, 그 외 _text/카탈로그) → split → 커밋. 반영한 항목은 data/telemetry/reports.json 에서 지운다."; } > /tmp/issue.md
+          NUM=$(gh issue list -R ${{ github.repository }} --state open --search "문구 신고 in:title" --json number --jq '.[0].number' 2>/dev/null || true)
+          if [ -n "$NUM" ] && [ "$NUM" != "null" ]; then gh issue comment "$NUM" -R ${{ github.repository }} --body-file /tmp/issue.md
+          else gh issue create -R ${{ github.repository }} --title "문구 신고 (인앱 Alt+Shift+클릭)" --body-file /tmp/issue.md; fi
 
       - name: 커밋
         if: steps.fetch.outputs.skip != 'true'

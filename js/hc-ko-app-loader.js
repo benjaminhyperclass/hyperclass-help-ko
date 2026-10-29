@@ -1,4 +1,7 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.17.0
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.18.0
+ * v4.18: 인앱 문구 신고 — 화면의 글자를 **Alt+Shift+클릭** 하면 그 텍스트 노드의 원문·부모 요소·라우트를 텔레메트리 Worker
+ *        /report 로 보낸다(세션당 20건, 식별자 없음). 일일 집계가 data/telemetry/reports.json 과 이슈 코멘트로 모은다.
+ *        (Alt+클릭만 쓰면 크롬이 링크를 다운로드하므로 Shift 를 함께 요구한다.) 상태: __hcKoApp.status().reports
  * v4.17: 단어 1개 치환 레이어(_textScoped) — 레거시 dashboard-ko 가 전역으로 치던 단어 1개 항목(Phone·Filters·Import·All…)을
  *        **UI 크롬 요소 안에서만**(표 머리글·버튼·탭·메뉴·label) 정확 일치로 바꾼다. 셀·옵션·칩·본문은 범위 밖이라
  *        고객 데이터(태그·단계명·업체명)는 건드리지 않는다(2026-10-08 결정의 좁은 완화). 레거시 슬롯 줄 은퇴의 전제.
@@ -146,7 +149,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.17.0',
+    version: '4.18.0',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -168,6 +171,7 @@
       s.textEntries = T ? Object.keys(T).length : 0;
       s.scopedEntries = TS ? Object.keys(TS).length : 0;
       s.scopedHits = stats.scopedHits;
+      s.reports = reported;
       return s;
     },
     rescan: function () { scanApps(); },
@@ -753,6 +757,58 @@
       if (ok) { telemetry.sent++; telemetry.last = rp; try { sessionStorage.setItem(key, '1'); } catch (e) {} log('텔레메트리 전송', rp, rows.length + ' ns'); }
     } catch (e) { log('텔레메트리 실패', e && e.message); }
   }
+  /* ---------- R. 문구 신고 (v4.18) ---------- */
+  var REPORT_MAX = 20, reported = 0;
+  function reportUrl() { var u = telemetryUrl(); return u ? String(u).replace(/\/r$/, '/report') : null; }
+  function textNodeAt(x, y) {
+    try {
+      var n = null;
+      if (document.caretPositionFromPoint) { var cp = document.caretPositionFromPoint(x, y); n = cp && cp.offsetNode; }
+      else if (document.caretRangeFromPoint) { var cr = document.caretRangeFromPoint(x, y); n = cr && cr.startContainer; }
+      if (n && n.nodeType === 3 && n.nodeValue.trim()) return n;
+      var el = document.elementFromPoint(x, y); if (!el) return null;
+      var w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT), t;
+      while ((t = w.nextNode())) if (t.nodeValue.trim()) return t;
+    } catch (e) {}
+    return null;
+  }
+  function toast(msg) {
+    try {
+      var el = document.getElementById('hc-ko-toast');
+      if (!el) {
+        el = document.createElement('div'); el.id = 'hc-ko-toast';
+        el.style.cssText = 'position:fixed;left:50%;bottom:28px;transform:translateX(-50%);z-index:2147483647;background:#111827;color:#fff;padding:10px 16px;border-radius:8px;font:13px/1.4 -apple-system,system-ui,sans-serif;box-shadow:0 6px 24px rgba(0,0,0,.25);max-width:70vw;pointer-events:none;transition:opacity .3s';
+        document.body.appendChild(el);
+      }
+      el.textContent = msg; el.style.opacity = '1';
+      clearTimeout(el._t); el._t = setTimeout(function () { el.style.opacity = '0'; }, 2200);
+    } catch (e) {}
+  }
+  function onReportClick(e) {
+    try {
+      if (!e.altKey || !e.shiftKey || e.button !== 0) return;
+      var url = reportUrl(); if (!url || !booted) return;
+      var n = textNodeAt(e.clientX, e.clientY); if (!n) return;
+      e.preventDefault(); e.stopPropagation();
+      if (reported >= REPORT_MAX) { toast('이 세션의 신고 한도(' + REPORT_MAX + '건)에 닿았습니다'); return; }
+      var text = n.nodeValue.trim().slice(0, 300);
+      var p = n.parentElement, ctx = '';
+      if (p) {
+        ctx = p.tagName.toLowerCase();
+        var cls = typeof p.className === 'string' ? p.className.trim().split(/\s+/).filter(function (c) { return c && c.length < 40; }).slice(0, 3) : [];
+        if (cls.length) ctx += '.' + cls.join('.');
+        var role = p.getAttribute && p.getAttribute('role'); if (role) ctx += '[' + role + ']';
+      }
+      var body = { v: 1, t: new Date().toISOString(), route: routePattern(), loader: API.version, rev: String(REV).slice(0, 7),
+                   text: text, ctx: ctx.slice(0, 120), lang: HANGUL.test(text) ? 'ko' : 'en' };
+      fetch(url, { method: 'POST', body: JSON.stringify(body), mode: 'no-cors', keepalive: true, headers: { 'Content-Type': 'text/plain' } }).catch(function () {});
+      reported++;
+      toast('문구 신고됨 (' + reported + '/' + REPORT_MAX + '): ' + (text.length > 48 ? text.slice(0, 48) + '…' : text));
+      log('문구 신고', body);
+    } catch (err) {}
+  }
+  try { document.addEventListener('click', onReportClick, true); } catch (e) {}
+
   var telTimer = null;
   function scheduleTelemetry(reason) {
     clearTimeout(telTimer);

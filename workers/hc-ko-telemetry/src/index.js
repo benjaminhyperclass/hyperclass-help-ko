@@ -1,4 +1,6 @@
-/* Hyperclass 한글팩 — 텔레메트리 수신 Worker v0.4.0 (2026-10-29)
+/* Hyperclass 한글팩 — 텔레메트리 수신 Worker v0.5.0 (2026-10-29)
+ * v0.5: POST /report — 로더 v4.18 의 인앱 문구 신고(Alt+Shift+클릭) 1건 {text, ctx, route, lang}. KV `rp/<day>/<ts>` 1 put.
+ *       GET /digest 에 reports: [{text, ctx, route, lang, n}] (같은 text 는 합산) 동봉.
  * v0.4: **KV 무료 한도(put 1,000/일) 안에서 돌게 재설계.** 10-28 에 한도를 넘겨 put 이 429 → 로더 보고가 하루 통째로 유실됐다.
  *       ① 영어 원문은 키 하나씩(en/<ns>/<key>, 이벤트당 최대 400 put) 대신 **ns 당 블롭 1개**(enb/<ns>) 에 합쳐 두고
  *          새 키가 생긴 ns 만 put (이벤트당 최대 EN_PUTS_PER_EVENT, 기본 6). 정상 상태에서는 거의 0.
@@ -26,6 +28,17 @@ const BLOB_ORIGINS = ['https://app.hyperclass.ai'];
 const MAX_BODY = 65536;
 
 function day(d) { return (d || new Date()).toISOString().slice(0, 10); }
+
+export function validateReport(ev) {
+  if (!ev || typeof ev !== 'object') return 'not-object';
+  if (ev.v !== 1) return 'bad-version';
+  if (typeof ev.route !== 'string' || ev.route.length > 200) return 'bad-route';
+  if (/\/location\/(?!:loc)/.test(ev.route)) return 'route-has-location-id';
+  if (typeof ev.text !== 'string' || !ev.text.trim() || ev.text.length > 300) return 'bad-text';
+  if (ev.ctx !== undefined && (typeof ev.ctx !== 'string' || ev.ctx.length > 120)) return 'bad-ctx';
+  if (ev.lang !== undefined && ev.lang !== 'ko' && ev.lang !== 'en') return 'bad-lang';
+  return null;
+}
 
 export function validate(ev) {
   if (!ev || typeof ev !== 'object') return 'not-object';
@@ -88,7 +101,7 @@ async function mergeEnPairs(env, rows, maxPuts) {
 
 export async function digest(env, date) {
   const prefix = 'ev/' + date + '/';
-  const routes = {}, ns = {}, text = { ko: 0, en: 0, n: 0 }, edge = { lifted: [], gate: 0 }, loaders = {}, revs = {};
+  const routes = {}, ns = {}, text = { ko: 0, en: 0, n: 0 }, edge = { lifted: [], gate: 0 }, loaders = {}, revs = {}, reports = {};
   let cursor, events = 0;
   do {
     const page = await env.TEL.list({ prefix, cursor, limit: 1000 });
@@ -112,13 +125,25 @@ export async function digest(env, date) {
     }
     cursor = page.list_complete ? null : page.cursor;
   } while (cursor);
+  // 문구 신고(rp/<date>/…) — 같은 text 는 합산
+  cursor = undefined;
+  do {
+    const page = await env.TEL.list({ prefix: 'rp/' + date + '/', cursor, limit: 1000 });
+    for (const k of page.keys) {
+      const r = await env.TEL.get(k.name, 'json'); if (!r) continue;
+      const a = reports[r.text] || (reports[r.text] = { text: r.text, ctx: r.ctx || '', route: r.route, lang: r.lang || '', n: 0 });
+      a.n++;
+    }
+    cursor = page.list_complete ? null : page.cursor;
+  } while (cursor);
+  const reportRows = Object.values(reports).sort((x, y) => y.n - x.n);
   const nsRows = Object.entries(ns).map(([name, a]) => ({ ns: name, exposures: a.seen, en: a.en, total: a.total, routes: Object.keys(a.routes).length, samples: [...a.samples] }))
     .sort((x, y) => y.exposures * y.en - x.exposures * x.en);
   const routeRows = Object.entries(routes).map(([route, r]) => ({ route, views: r.n, koRatio: r.ko + r.en ? +(r.ko / (r.ko + r.en)).toFixed(3) : null, enNsLeaves: r.enNs }))
     .sort((x, y) => (x.koRatio ?? 1) - (y.koRatio ?? 1));
   const lifted = edge.lifted.sort((a, b) => a - b);
   const pct = p => lifted.length ? lifted[Math.min(lifted.length - 1, Math.floor(lifted.length * p))] : null;
-  return { date, events, loaders, revs, routes: routeRows, ns: nsRows.slice(0, 100), text: { koRatio: text.ko + text.en ? +(text.ko / (text.ko + text.en)).toFixed(3) : null, samples: text.n }, edge: { n: lifted.length, p50: pct(0.5), p90: pct(0.9), gate: edge.gate } };
+  return { date, events, loaders, revs, reports: reportRows, routes: routeRows, ns: nsRows.slice(0, 100), text: { koRatio: text.ko + text.en ? +(text.ko / (text.ko + text.en)).toFixed(3) : null, samples: text.n }, edge: { n: lifted.length, p50: pct(0.5), p90: pct(0.9), gate: edge.gate } };
 }
 
 export default {
@@ -143,6 +168,19 @@ export default {
       const maxPuts = parseInt(env.EN_PUTS_PER_EVENT || '6', 10) || 6;
       const puts = await mergeEnPairs(env, ev.ns, maxPuts);
       for (let i = 0; i < puts; i++) await cacheCount('puts-' + day(), 86400);
+      return new Response(null, { status: 204, headers: CORS });
+    }
+
+    if (url.pathname === '/report' && request.method === 'POST') {
+      const txt = await request.text();
+      if (txt.length > 4096) return new Response('too large', { status: 413, headers: CORS });
+      let ev; try { ev = JSON.parse(txt); } catch { return new Response('bad json', { status: 400, headers: CORS }); }
+      const err = validateReport(ev);
+      if (err) { console.log('reject-report', err); return new Response(err, { status: 400, headers: CORS }); }
+      if (await rateLimited(env, request)) return new Response('rate', { status: 429, headers: CORS });
+      if (await overBudget(env, 1)) return new Response(null, { status: 204, headers: CORS });
+      const key = 'rp/' + day() + '/' + Date.now() + '-' + Math.random().toString(36).slice(2, 8);
+      await env.TEL.put(key, JSON.stringify({ v: 1, t: ev.t, route: ev.route, loader: ev.loader, rev: ev.rev, text: ev.text.trim(), ctx: ev.ctx || '', lang: ev.lang || '' }), { expirationTtl: 90 * 86400 });
       return new Response(null, { status: 204, headers: CORS });
     }
 

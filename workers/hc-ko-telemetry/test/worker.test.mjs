@@ -15,11 +15,17 @@ check('로케이션 ID 포함 거부 400', r.status === 400 && (await r.text()) 
 r = await fetch(B + '/r', { method: 'POST', body: 'nope' });
 check('비JSON 400', r.status === 400);
 await fetch(B + '/r', { method: 'POST', body: JSON.stringify({ ...ev, route: '/v2/location/:loc/dashboard', text: { ko: 50, en: 50 }, edge: { lifted: 1500, why: 'start' } }) });
+r = await fetch(B + '/report', { method: 'POST', body: JSON.stringify({ v: 1, t: new Date().toISOString(), route: '/v2/location/:loc/contacts', loader: '4.18.0', rev: 'abc1234', text: 'Phone', ctx: 'th.n-data-table-th', lang: 'en' }) });
+check('POST /report 204', r.status === 204);
+await fetch(B + '/report', { method: 'POST', body: JSON.stringify({ v: 1, t: new Date().toISOString(), route: '/v2/location/:loc/contacts', loader: '4.18.0', rev: 'abc1234', text: 'Phone', ctx: 'th', lang: 'en' }) });
+r = await fetch(B + '/report', { method: 'POST', body: JSON.stringify({ v: 1, route: '/x', text: '' }) });
+check('빈 신고 400', r.status === 400);
 r = await fetch(B + '/digest');
 check('digest 토큰 없이 401', r.status === 401);
 r = await fetch(B + '/digest', { headers: { authorization: 'Bearer t0k' } });
 const d = await r.json();
 check('digest 200 + events 2', r.status === 200 && d.events === 2);
+check('digest reports: Phone 2건', Array.isArray(d.reports) && d.reports[0] && d.reports[0].text === 'Phone' && d.reports[0].n === 2);
 check('ns 1위 newFeatureApp', d.ns[0] && d.ns[0].ns === 'newFeatureApp' && d.ns[0].en === 118);
 check('routes 낮은 한글비율 먼저', d.routes[0].route === '/v2/location/:loc/dashboard' && d.routes[0].koRatio === 0.5);
 check('edge p50/p90', d.edge.n === 2 && d.edge.p50 === 1500 && d.edge.p90 === 1500);
