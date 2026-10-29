@@ -281239,10 +281239,6 @@
   "en": "Calendar AI",
   "ko": "캘린더 AI"
  },
- "calendarComponentsApp.calendarAI.messages.calendarTypesOverview": {
-  "en": "The platform supports these calendar types:\n\n**1:1 Meeting** — Consults, coaching, discovery calls. 1 person per slot.\n\n**Group Session** — Classes, webinars, workshops. Set a seat limit per slot.\n\n**Team Rotation (Round Robin)** — Distribu",
-  "ko": "플랫폼은 다음과 같은 캘린더 유형을 지원합니다:"
- },
  "calendarComponentsApp.calendarAI.messages.teamMemberNotFound": {
   "en": "I couldn't find a single team member named \"{name}\". Pick who will handle these bookings:",
   "ko": "\"{name}\"이라는 이름의 팀원을 한 명으로 특정할 수 없습니다. 이 예약을 처리할 담당자를 선택하세요:"
@@ -281381,7 +281377,7 @@
  },
  "calendarComponentsApp.calendarAI.locationPicker.phone": {
   "en": "Phone",
-  "ko": "전화번호"
+  "ko": "전화"
  },
  "calendarComponentsApp.calendarAI.locationPicker.setLater": {
   "en": "I'll set this later",
@@ -281721,7 +281717,7 @@
  },
  "calendarComponentsApp.calendarAI.summary.heading": {
   "en": "Here's your calendar:",
-  "ko": "내 캘린더:"
+  "ko": "회원님의 캘린더는 다음과 같습니다:"
  },
  "calendarComponentsApp.calendarAI.typing.thinking": {
   "en": "Thinking",
@@ -281997,7 +281993,7 @@
  },
  "copilot.askAi.onboarding.snapshotAssets.unavailableTitle": {
   "en": "Assets unavailable",
-  "ko": "에셋을 사용할 수 없음"
+  "ko": "자산을 사용할 수 없음"
  },
  "copilot.askAi.onboarding.snapshotLoader.title": {
   "en": "Setting up your account",
@@ -282241,7 +282237,7 @@
  },
  "mediaCenterApp.components.textPreview.discard": {
   "en": "Discard",
-  "ko": "삭제"
+  "ko": "버리기"
  },
  "mediaCenterApp.components.textPreview.keepEditing": {
   "en": "Keep editing",
@@ -282353,7 +282349,7 @@
  },
  "powerDialerApp.multiLine.errors.dispositionNotSaved": {
   "en": "Couldn't save the disposition. Try again.",
-  "ko": "처리 결과를 저장할 수 없습니다. 다시 시도하세요."
+  "ko": "처리 결과를 저장하지 못했습니다. 다시 시도하세요."
  },
  "powerDialerApp.multiLine.errors.itemNotCallable": {
   "en": "This contact can’t be called from your list right now.",
@@ -282417,7 +282413,7 @@
  },
  "powerDialerApp.multiLine.lastRound.finishNotes": {
   "en": "Finish notes →",
-  "ko": "메모 완료 →"
+  "ko": "메모 마무리 →"
  },
  "powerDialerApp.multiLine.lastRound.noAnswer": {
   "en": "No one answered the last round",
@@ -282441,7 +282437,7 @@
  },
  "powerDialerApp.multiLine.minimised.callbackAlone": {
   "en": "{name}, dialed alone",
-  "ko": "{name} 님, 단독으로 다이얼링됨"
+  "ko": "{name} 님, 단독 발신"
  },
  "powerDialerApp.multiLine.minimised.endRound": {
   "en": "End round",
@@ -282697,7 +282693,7 @@
  },
  "powerDialerApp.postCall.headerSubtitle": {
   "en": "Review what AI captured from previous call.",
-  "ko": "이전 통화에서 AI가 캡처한 내용을 검토하세요."
+  "ko": "이전 통화에서 AI가 파악한 내용을 검토하세요."
  },
  "powerDialerApp.postCall.qa.overallScore": {
   "en": "Overall score",
@@ -282793,7 +282789,7 @@
  },
  "powerDialerApp.allNotes": {
   "en": "All Notes",
-  "ko": "모든 노트"
+  "ko": "모든 메모"
  },
  "powerDialerApp.app.powerDialerMicroApp": {
   "en": "Power Dialer Micro App",
@@ -282801,11 +282797,11 @@
  },
  "powerDialerApp.app.works": {
   "en": "Works",
-  "ko": "작동합니다"
+  "ko": "정상 작동"
  },
  "powerDialerApp.audioPlayer.recordingUnavailable": {
   "en": "Recording unavailable",
-  "ko": "녹화를 사용할 수 없음"
+  "ko": "녹음을 사용할 수 없음"
  },
  "powerDialerApp.audioSettings.additionalDeviceTooltip": {
   "en": "Ring an extra device (e.g. headset) when a call comes in.",
@@ -282869,7 +282865,7 @@
  },
  "powerDialerApp.callControls.hold": {
   "en": "Hold",
-  "ko": "대기"
+  "ko": "보류"
  },
  "powerDialerApp.callControls.mute": {
   "en": "Mute",
@@ -283005,7 +283001,7 @@
  },
  "powerDialerApp.contacts.unknownContact": {
   "en": "Unknown {contact}",
-  "ko": "알 수 없음 {contact}"
+  "ko": "알 수 없는 {contact}"
  },
  "powerDialerApp.contacts.youCanImportContactsOrAddNewOnesFromTheContactPage": {
   "en": "You can import {contact} or add new ones from the {contact} page.",
@@ -283105,15 +283101,15 @@
  },
  "powerDialerApp.learnMoreLowerCase": {
   "en": "learn more",
-  "ko": "더 알아보기"
+  "ko": "자세히 보기"
  },
  "powerDialerApp.leaveCall": {
   "en": "Leave Call",
-  "ko": "통화 나가기"
+  "ko": "통화 종료"
  },
  "powerDialerApp.loadingNotes": {
   "en": "Loading notes",
-  "ko": "노트 불러오는 중"
+  "ko": "메모 불러오는 중"
  },
  "powerDialerApp.loadingRecentCalls": {
   "en": "Loading recent calls",
@@ -283137,7 +283133,7 @@
  },
  "powerDialerApp.multiLine.callEnded.redial": {
   "en": "Redial",
-  "ko": "재통화"
+  "ko": "다시 걸기"
  },
  "powerDialerApp.multiLine.chip.dialing": {
   "en": "Dialing",
@@ -283237,7 +283233,7 @@
  },
  "powerDialerApp.noUsersFound": {
   "en": "No Users Found",
-  "ko": "사용자를 찾을 수 없음"
+  "ko": "사용자를 찾을 수 없습니다"
  },
  "powerDialerApp.noVoicemail": {
   "en": "No voicemail",
@@ -283253,11 +283249,11 @@
  },
  "powerDialerApp.notes.allNotes": {
   "en": "All Notes",
-  "ko": "모든 노트"
+  "ko": "모든 메모"
  },
  "powerDialerApp.notes.loadingNotes": {
   "en": "Loading notes",
-  "ko": "노트 불러오는 중"
+  "ko": "메모 불러오는 중"
  },
  "powerDialerApp.notes.notes": {
   "en": "Notes",
@@ -283305,7 +283301,7 @@
  },
  "powerDialerApp.phoneNumbers.noAdminsTitle": {
   "en": "No admins for this location",
-  "ko": "이 위치에 관리자가 없습니다"
+  "ko": "이 서브 계정에 관리자가 없습니다"
  },
  "powerDialerApp.phoneNumbers.numberClosestToTheContact": {
   "en": "Number closest to the {contact}",
@@ -283393,7 +283389,7 @@
  },
  "powerDialerApp.quietHoursWarning.forThemAreYouSureYouWantToCallThem": {
   "en": "for them. Are you sure you want to call them?",
-  "ko": "을(를) 위한 것입니다. 정말 통화하시겠습니까?"
+  "ko": "기준입니다. 정말 통화하시겠습니까?"
  },
  "powerDialerApp.quietHoursWarning.itsAround": {
   "en": "It's around",
@@ -283409,7 +283405,7 @@
  },
  "powerDialerApp.recentCalls.recent": {
   "en": "Recents",
-  "ko": "최근 대화"
+  "ko": "최근 통화"
  },
  "powerDialerApp.recentCalls.recentCalls": {
   "en": "Recent calls",
@@ -283445,7 +283441,7 @@
  },
  "powerDialerApp.scripts.noCallingScriptsFound": {
   "en": "No Calling Scripts Found",
-  "ko": "발견된 콜링 스크립트가 없습니다"
+  "ko": "통화 스크립트가 없습니다"
  },
  "powerDialerApp.scripts.pleaseContactAdminToAddCallingScript": {
   "en": "Please Contact Admin to Add a Calling Script",
@@ -283529,11 +283525,11 @@
  },
  "powerDialerApp.transcript": {
   "en": "Transcript",
-  "ko": "통화 기록"
+  "ko": "녹취록"
  },
  "powerDialerApp.transfer.devicePhone": {
   "en": "Phone",
-  "ko": "전화번호"
+  "ko": "전화"
  },
  "powerDialerApp.transfer.holdAndCall": {
   "en": "Hold & Call",
@@ -283541,7 +283537,7 @@
  },
  "powerDialerApp.transfer.transferAndEnd": {
   "en": "Transfer & End",
-  "ko": "전달 & 종료"
+  "ko": "전환 후 종료"
  },
  "powerDialerApp.transfer.warmTransfer": {
   "en": "Warm Transfer",
