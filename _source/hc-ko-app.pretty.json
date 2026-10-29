@@ -55597,7 +55597,7 @@
      "searchPlaceholder": "녹취록 검색",
      "pause": "일시정지",
      "seek": "탐색",
-     "unavailable": "녹화를 사용할 수 없음"
+     "unavailable": "녹음를 사용할 수 없음"
     },
     "reviewUpdate": {
      "currentPrefix": "현재: {value}",
@@ -55607,7 +55607,7 @@
      "fieldsEmpty": "이 통화에 대한 AI 필드 제안이 없습니다.",
      "fieldsSubtitle": "AI가 다음 필드에 대한 새 값을 제안했습니다",
      "fieldsTitle": "AI 제안 필드",
-     "statusDismissed": "해제됨",
+     "statusDismissed": "무시됨",
      "suggestionColumn": "AI 제안 값"
     },
     "summary": {
@@ -55672,7 +55672,7 @@
     "incomingCall": "수신 전화",
     "outbound": "발신",
     "spamLikely": "스팸 가능성 있음",
-    "transferCall": "전달된 통화"
+    "transferCall": "전환된 통화"
    },
    "change": "변경",
    "characters": "문자",
@@ -55721,7 +55721,7 @@
    "forMe": "나를 위해",
    "here": "여기",
    "hold": "대기",
-   "inbound": "인바운드",
+   "inbound": "수신",
    "itsAround": "대략",
    "keepTranckNotes": "이 {contact}에 대한 중요한 세부 정보를 기록하세요",
    "learnMore": "자세히 보기",
@@ -55792,7 +55792,7 @@
    },
    "recordCall": "통화 녹음",
    "recording": "녹음 중",
-   "recordingUnavailable": "녹화를 사용할 수 없음",
+   "recordingUnavailable": "녹음를 사용할 수 없음",
    "registerHere": "여기에서 등록하세요",
    "scripts": {
     "addScriptNow": "지금 스크립트 추가",
@@ -55819,7 +55819,7 @@
    "speaker": "스피커",
    "tags": {
     "loadingTags": "태그 불러오는 중",
-    "noTagsFound": "태그가 없어요",
+    "noTagsFound": "태그가 없습니다",
     "searchAndAddTag": "태그 검색 및 추가"
    },
    "time": {
@@ -55857,7 +55857,7 @@
    "voiceMail": "음성 메일",
    "voicemail": {
     "noVoicemail": "음성 메시지 없음",
-    "recordingUnavailable": "녹화를 사용할 수 없음",
+    "recordingUnavailable": "녹음를 사용할 수 없음",
     "transcriptUnavailable": "스크립트를 사용할 수 없습니다",
     "underMaintenance": "점검 중",
     "voicemailTooltip": "음성 메일 및 시간 초과 설정 변경 방법에 대해"

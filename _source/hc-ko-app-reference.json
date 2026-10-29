@@ -282749,7 +282749,7 @@
  },
  "powerDialerApp.postCall.reviewUpdate.statusDismissed": {
   "en": "Dismissed",
-  "ko": "해제됨"
+  "ko": "무시됨"
  },
  "powerDialerApp.postCall.reviewUpdate.suggestionColumn": {
   "en": "AI suggested value",
@@ -282933,7 +282933,7 @@
  },
  "powerDialerApp.calls.transferCall": {
   "en": "Transferred Call",
-  "ko": "전달된 통화"
+  "ko": "전환된 통화"
  },
  "powerDialerApp.change": {
   "en": "Change",
@@ -283085,7 +283085,7 @@
  },
  "powerDialerApp.inbound": {
   "en": "inbound",
-  "ko": "인바운드"
+  "ko": "수신"
  },
  "powerDialerApp.itsAround": {
   "en": "It's around",
@@ -283377,7 +283377,7 @@
  },
  "powerDialerApp.postCall.recording.unavailable": {
   "en": "Recording unavailable",
-  "ko": "녹화를 사용할 수 없음"
+  "ko": "녹음를 사용할 수 없음"
  },
  "powerDialerApp.postCall.tabs.summary": {
   "en": "Summary",
@@ -283421,7 +283421,7 @@
  },
  "powerDialerApp.recordingUnavailable": {
   "en": "Recording unavailable",
-  "ko": "녹화를 사용할 수 없음"
+  "ko": "녹음를 사용할 수 없음"
  },
  "powerDialerApp.registerHere": {
   "en": "Register here",
@@ -283501,7 +283501,7 @@
  },
  "powerDialerApp.tags.noTagsFound": {
   "en": "No tags found",
-  "ko": "태그가 없어요"
+  "ko": "태그가 없습니다"
  },
  "powerDialerApp.tags.searchAndAddTag": {
   "en": "Search and Add Tag",
@@ -283597,7 +283597,7 @@
  },
  "powerDialerApp.voicemail.recordingUnavailable": {
   "en": "Recording unavailable",
-  "ko": "녹화를 사용할 수 없음"
+  "ko": "녹음를 사용할 수 없음"
  },
  "powerDialerApp.voicemail.transcriptUnavailable": {
   "en": "Transcript unavailable",
