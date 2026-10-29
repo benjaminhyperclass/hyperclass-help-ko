@@ -9,19 +9,26 @@
   "Workflow Maps: Get started with guided onboarding and Resources": "2026-10-29",
   "💰 Rentals: Additional Fees — Mandatory Charges on Bookings": "2026-10-29",
   "🛍️ Sell Retail Products Right from Service Appointments": "2026-10-29",
-  "🎒 Rentals: Add-ons — Optional Extras on Bookings": "2026-10-29"
+  "🎒 Rentals: Add-ons — Optional Extras on Bookings": "2026-10-29",
+  "Web Search Now Available in the AI Agent Action": "2026-10-29",
+  "AI Video Generation: New Workflow Action": "2026-10-29",
+  "🎛️ Make the Calendar View Yours: More Settings, Export & Staff Colors": "2026-10-29",
+  "Skills Now Available in the AI Agent Action in Workflows": "2026-10-29",
+  "Router: New Workflow Action": "2026-10-29",
+  "Loop: New Workflow Action": "2026-10-29",
+  "Workflows Now in MCP – Ask Your AI Assistant to Build, Debug and Publish Workflows": "2026-10-29"
  },
  "updated": "2026-10-29",
  "slugs": [
-  "introducing-client-app-builder-build-branded-mobile-apps-with-ai",
+  "ai-video-generation-new-workflow-action",
   "introducing-custom-objects-in-client-app-builder-connect-your-portal-directly-to",
   "introducing-vibe-coding-build-your-own-client-portal-with-ai",
-  "rcs-messaging-is-now-in-labs-richer-conversations-simpler-onboarding",
-  "rentals-add-ons-optional-extras-on-bookings",
-  "rentals-additional-fees-mandatory-charges-on-bookings-1",
-  "sell-retail-products-right-from-service-appointments",
-  "workflow-maps-get-started-with-guided-onboarding-and-resources",
+  "loop-new-workflow-action",
+  "make-the-calendar-view-yours-more-settings-export-staff-colors",
+  "router-new-workflow-action",
+  "skills-now-available-in-the-ai-agent-action-in-workflows",
+  "web-search-now-available-in-the-ai-agent-action",
   "workflows-api-create-publish-and-monitor-workflows-by-api",
-  "workflows-in-the-leadconnector-mcp-server"
+  "workflows-now-in-mcp-ask-your-ai-assistant-to-build-debug-and-publish-workflows"
  ]
 }
