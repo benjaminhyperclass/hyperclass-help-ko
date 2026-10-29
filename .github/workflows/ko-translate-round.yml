@@ -1,6 +1,7 @@
 name: 메인 앱 한글팩 — 번역 라운드 (텔레메트리 입력 → PR)
 
 # 입력: data/telemetry/en-missing/<ns>.json (ko-telemetry-digest 가 매일 채움 — 로더 v4.16+ 가 보낸 미번역 키의 영어 원문)
+# 주기: 2주(짝수 ISO 주 월요일). 급하면 Actions → Run workflow (수동은 주기 무관).
 # 처리: 네임스페이스별로 (이미 한국어인 키 제외) → 참조본 재사용 → 잔여를 i18n-batch-translator 로 번역 →
 #       round-merge(글로서리 강제·DNT 보존) → split → validate → 브랜치 round/<date> 에 커밋 → PR.
 # 사람은 PR 에서 용어만 훑고 머지한다. 머지되면 ko-app-validate → ko-app-pointer 가 REV 를 전진시킨다(슬롯·로더 교체 없음).
@@ -15,7 +16,7 @@ on:
         required: false
         default: '20'
   schedule:
-    - cron: '47 1 * * 1,4'   # 월·목 KST 10:47 — digest(00:17 UTC) 뒤
+    - cron: '47 1 * * 1'   # 매주 월 KST 10:47 에 깨어나, 짝수 ISO 주에만 실행 → **2주 주기**(벤자민 결정 2026-10-29). digest(00:17 UTC) 뒤
 
 permissions:
   contents: write
@@ -29,16 +30,28 @@ jobs:
   round:
     runs-on: ubuntu-latest
     steps:
+      - name: 2주 주기 게이트 (스케줄 실행은 짝수 ISO 주만, 수동 실행은 항상)
+        id: gate
+        run: |
+          if [ "${{ github.event_name }}" = "schedule" ] && [ $(( $(date -u +%V) % 2 )) -ne 0 ]; then
+            echo "홀수 ISO 주 — 이번 주는 건너뜀 (2주 주기)"; echo "run=false" >> $GITHUB_OUTPUT
+          else
+            echo "run=true" >> $GITHUB_OUTPUT
+          fi
       - uses: actions/checkout@v4
+        if: steps.gate.outputs.run == 'true'
         with:
           fetch-depth: 1
       - uses: actions/setup-python@v5
+        if: steps.gate.outputs.run == 'true'
         with:
           python-version: '3.12'
       - run: pip install -q anthropic
+        if: steps.gate.outputs.run == 'true'
 
       - name: 라운드 입력 준비
         id: prep
+        if: steps.gate.outputs.run == 'true'
         env:
           NS_IN: ${{ github.event.inputs.namespaces }}
           MIN: ${{ github.event.inputs.min_keys || '20' }}
