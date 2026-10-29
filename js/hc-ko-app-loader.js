@@ -1,4 +1,4 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.16.0
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.16.1
  * v4.16: 텔레메트리에 미번역 키의 **영어 원문 샘플**(ns 당 최대 150쌍, 보고서 ≤60KB)을 동봉 — Worker 가 KV 에 모아
  *        번역 라운드 입력(data/telemetry/en-missing/)을 사람 손 없이 채운다. UI 문자열만, 사용자 데이터 없음.
  * v4.15: 엣지 Worker 가 <head> 에 넣어 준 window.__hcPtr(포인터 스냅샷)이 있으면 Cache Storage 포인터를 기다리지 않고
@@ -142,7 +142,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.16.0',
+    version: '4.16.1',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -670,8 +670,11 @@
             if (c.samples.length < 3) c.samples.push(kp);
             // 영어 원문 샘플: 저수지 샘플링으로 ns 당 최대 80쌍 — 여러 세션이 모이면 Worker 가 전체를 갖게 된다
             c.pairs = c.pairs || [];
-            if (c.pairs.length < 150) c.pairs.push([kp, x.slice(0, 240)]);
-            else { var j = Math.floor(Math.random() * c.en); if (j < 150) c.pairs[j] = [kp, x.slice(0, 240)]; }
+            // 잘린 원문을 번역하면 안 되므로 600자 초과는 샘플에 넣지 않는다(자르지 않는다)
+            if (x.length <= 600) {
+              if (c.pairs.length < 150) c.pairs.push([kp, x]);
+              else { var j = Math.floor(Math.random() * c.en); if (j < 150) c.pairs[j] = [kp, x]; }
+            }
           }
         }
       })(v, '');

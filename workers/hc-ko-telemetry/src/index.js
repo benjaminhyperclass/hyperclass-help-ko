@@ -32,7 +32,7 @@ export function validate(ev) {
     if (!Array.isArray(r.samples) || r.samples.length > 5 || r.samples.some(s => typeof s !== 'string' || s.length > 160)) return 'bad-samples';
     if (r.pairs !== undefined) {
       if (!Array.isArray(r.pairs) || r.pairs.length > 160) return 'bad-pairs';
-      for (const p of r.pairs) if (!Array.isArray(p) || p.length !== 2 || typeof p[0] !== 'string' || typeof p[1] !== 'string' || p[0].length > 160 || p[1].length > 300) return 'bad-pair';
+      for (const p of r.pairs) if (!Array.isArray(p) || p.length !== 2 || typeof p[0] !== 'string' || typeof p[1] !== 'string' || p[0].length > 160 || p[1].length > 600) return 'bad-pair';
     }
   }
   if (ev.text && (!Number.isFinite(ev.text.ko) || !Number.isFinite(ev.text.en))) return 'bad-text';
