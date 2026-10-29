@@ -16,19 +16,22 @@
   "Skills Now Available in the AI Agent Action in Workflows": "2026-10-29",
   "Router: New Workflow Action": "2026-10-29",
   "Loop: New Workflow Action": "2026-10-29",
-  "Workflows Now in MCP – Ask Your AI Assistant to Build, Debug and Publish Workflows": "2026-10-29"
+  "Workflows Now in MCP – Ask Your AI Assistant to Build, Debug and Publish Workflows": "2026-10-29",
+  "AI Analyze Video: New Workflow Action": "2026-10-29",
+  "📅 Service Booking is Now Available in the Client Portal!": "2026-10-29",
+  "Test Your Workflow Right Inside AI Builder": "2026-10-29"
  },
  "updated": "2026-10-29",
  "slugs": [
+  "ai-analyze-video-new-workflow-action",
   "ai-video-generation-new-workflow-action",
-  "introducing-custom-objects-in-client-app-builder-connect-your-portal-directly-to",
-  "introducing-vibe-coding-build-your-own-client-portal-with-ai",
   "loop-new-workflow-action",
   "make-the-calendar-view-yours-more-settings-export-staff-colors",
   "router-new-workflow-action",
+  "service-booking-is-now-available-in-the-client-portal",
   "skills-now-available-in-the-ai-agent-action-in-workflows",
+  "test-your-workflow-right-inside-ai-builder",
   "web-search-now-available-in-the-ai-agent-action",
-  "workflows-api-create-publish-and-monitor-workflows-by-api",
   "workflows-now-in-mcp-ask-your-ai-assistant-to-build-debug-and-publish-workflows"
  ]
 }

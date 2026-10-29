@@ -1,5 +1,5 @@
 {
- "manifestVersion": "2142.0",
+ "manifestVersion": "2142.7593",
  "mainAppVersion": "2142",
  "federatedApps": {
   "reputationApp": "https://appcdn.leadconnectorhq.com/revex/reputation/2221/remoteEntry.js?nocache=true",
@@ -110,7 +110,7 @@
   "actionsPlatformApp": "https://appcdn.leadconnectorhq.com/ai/actions-platform/868/remoteEntry.js?nocache=true",
   "desktopCustomizerApp": "https://appcdn.leadconnectorhq.com/revex/desktop-customizer/2208/remoteEntry.js?nocache=true",
   "blogsApp": "https://appcdn.leadconnectorhq.com/leadgen/blogs/104/remoteEntry.js?nocache=true",
-  "aiGrowthApp": "https://appcdn.leadconnectorhq.com/ai/ai-growth/880/remoteEntry.js?nocache=true",
+  "aiGrowthApp": "https://appcdn.leadconnectorhq.com/ai/ai-growth/883/remoteEntry.js?nocache=true",
   "visibilityAiApp": "https://appcdn.leadconnectorhq.com/revex/visibility-ai/2210/remoteEntry.js?nocache=true",
   "vibeEditorApp": "https://appcdn.leadconnectorhq.com/leadgen/vibe-editor/397/remoteEntry.js?nocache=true",
   "emailSequenceApp": "https://appcdn.leadconnectorhq.com/leadgen/email-sequence/397/remoteEntry.js?nocache=true",
