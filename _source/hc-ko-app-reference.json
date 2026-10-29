@@ -279297,7 +279297,7 @@
  },
  "copilotApp.copilot.askAi.dispatch.whatsapp.name": {
   "en": "WhatsApp",
-  "ko": "WhatsApp"
+  "ko": "왓츠앱"
  },
  "copilotApp.copilot.askAi.dispatch.sidebar.loadMore": {
   "en": "Load more",
@@ -281158,5 +281158,2749 @@
  "copilotApp.copilot.specialCharacters.500": {
   "en": "500",
   "ko": "500"
+ },
+ "agency.advancedSettings.productRebilling.gpt4oMini": {
+  "en": " GPT-4o-mini ",
+  "ko": "GPT-4o-mini"
+ },
+ "calendarComponentsApp.calendarAI.chat.selectEntityMixed": {
+  "en": "Search and select an option",
+  "ko": "옵션을 검색하고 선택하세요"
+ },
+ "calendarComponentsApp.calendarAI.fieldService.edit.pickService": {
+  "en": "Choose a service to edit",
+  "ko": "편집할 서비스를 선택하세요"
+ },
+ "calendarComponentsApp.calendarAI.fieldService.edit.tag": {
+  "en": "Edit field service",
+  "ko": "현장 서비스 편집"
+ },
+ "calendarComponentsApp.calendarAI.fieldService.errors.inProgress": {
+  "en": "Your field service is still being created. Give it a moment, then check again.",
+  "ko": "현장 서비스가 아직 생성되는 중입니다. 잠시 기다렸다가 다시 확인해 주세요."
+ },
+ "calendarComponentsApp.calendarAI.fieldService.errors.notSetUp": {
+  "en": "Field Services isn't set up for this location yet. Finish the setup in Field Services settings, then come back to create your service.",
+  "ko": "이 위치에는 아직 현장 서비스가 설정되지 않았습니다. 현장 서비스 설정에서 설정을 완료한 후 다시 돌아와 서비스를 생성해 주세요."
+ },
+ "calendarComponentsApp.calendarAI.fieldService.openFieldServicesSettings": {
+  "en": "Open Field Services settings",
+  "ko": "현장 서비스 설정 열기"
+ },
+ "calendarComponentsApp.calendarAI.fieldService.preview.durationHours": {
+  "en": "{hours} hr",
+  "ko": "{hours}시간"
+ },
+ "calendarComponentsApp.calendarAI.fieldService.progress.title": {
+  "en": "Field Services setup",
+  "ko": "현장 서비스 설정"
+ },
+ "calendarComponentsApp.calendarAI.fieldService.startChip": {
+  "en": "Create a field service",
+  "ko": "현장 서비스 생성"
+ },
+ "calendarComponentsApp.calendarAI.fieldService.startChipSubtitle": {
+  "en": "Set up an on-site service customers can book online",
+  "ko": "고객이 온라인으로 예약할 수 있는 현장 서비스를 설정하세요"
+ },
+ "calendarComponentsApp.calendarAI.fieldService.steps.next-steps": {
+  "en": "Next steps",
+  "ko": "다음 단계"
+ },
+ "calendarComponentsApp.calendarAI.fieldService.steps.sample-booking": {
+  "en": "Sample booking",
+  "ko": "예약 샘플"
+ },
+ "calendarComponentsApp.calendarAI.fieldService.summary.areasRadius": {
+  "en": "Within {radius} {unit} of {address}",
+  "ko": "{address}에서 {radius} {unit} 이내"
+ },
+ "calendarComponentsApp.calendarAI.fieldService.summary.areasZipMore": {
+  "en": "ZIP / postal codes: {codes} and {count} more",
+  "ko": "우편번호: {codes} 외 {count}개"
+ },
+ "calendarComponentsApp.calendarAI.fieldService.welcome.editChip": {
+  "en": "Edit a field service",
+  "ko": "현장 서비스 편집"
+ },
+ "calendarComponentsApp.calendarAI.fieldService.welcome.message": {
+  "en": "{greeting} I'm your AI Assistant. I can set up a new field service or update an existing service. What would you like to do?",
+  "ko": "{greeting} 저는 AI 어시스턴트입니다. 새 현장 서비스를 설정하거나 기존 서비스를 업데이트할 수 있어요. 무엇을 도와드릴까요?"
+ },
+ "calendarComponentsApp.calendarAI.fieldService.welcome.noCalendars": {
+  "en": "{greeting} I'm your AI Assistant. What would you like to do?",
+  "ko": "{greeting} 저는 AI 어시스턴트입니다. 무엇을 도와드릴까요?"
+ },
+ "calendarComponentsApp.calendarAI.fieldService.working": {
+  "en": "Working on it...",
+  "ko": "처리 중입니다..."
+ },
+ "calendarComponentsApp.calendarAI.header.tabLabel": {
+  "en": "Calendar AI",
+  "ko": "캘린더 AI"
+ },
+ "calendarComponentsApp.calendarAI.messages.calendarTypesOverview": {
+  "en": "The platform supports these calendar types:\n\n**1:1 Meeting** — Consults, coaching, discovery calls. 1 person per slot.\n\n**Group Session** — Classes, webinars, workshops. Set a seat limit per slot.\n\n**Team Rotation (Round Robin)** — Distribu",
+  "ko": "플랫폼은 다음과 같은 캘린더 유형을 지원합니다:"
+ },
+ "calendarComponentsApp.calendarAI.messages.teamMemberNotFound": {
+  "en": "I couldn't find a single team member named \"{name}\". Pick who will handle these bookings:",
+  "ko": "\"{name}\"이라는 이름의 팀원을 한 명으로 특정할 수 없습니다. 이 예약을 처리할 담당자를 선택하세요:"
+ },
+ "calendarComponentsApp.calendarAI.messages.workingHoursExplain": {
+  "en": "Working hours are managed through **Availability Schedules**.\n\n**What is a Schedule?**\nA schedule defines the days and time slots when you (or your team) are available for bookings. For example: mon–fri, 9:00 AM–5:00 PM.\n\n**Who can set avai",
+  "ko": "근무 시간은 **가용 일정(Availability Schedules)**을 통해 관리됩니다."
+ },
+ "calendarComponentsApp.calendarAI.quickReplies.troubleshootAvailability": {
+  "en": "Troubleshoot availability",
+  "ko": "가용성 문제 해결"
+ },
+ "calendarComponentsApp.calendarSettings.servicesDesc": {
+  "en": "Turn on services to give sub accounts access to a complete booking solution for service-based businesses. This includes creating multiple services, managing resources, handling multiple locations, setting staff-specific pricing, adding serv",
+  "ko": "서비스를 활성화하면 서브 계정이 서비스 기반 비즈니스를 위한 완전한 예약 솔루션을 이용할 수 있습니다. 여러 서비스 생성, 리소스 관리, 다중 위치 처리, 직원별 가격 설정, 서비스 추"
+ },
+ "calendarComponentsApp.calendarAI.cards.meetings.collectiveTitle": {
+  "en": "Panel / committee",
+  "ko": "패널 / 위원회"
+ },
+ "calendarComponentsApp.calendarAI.cards.meetings.oneOnOneTitle": {
+  "en": "1:1 meeting",
+  "ko": "1:1 미팅"
+ },
+ "calendarComponentsApp.calendarAI.cards.rentals.equipmentTitle": {
+  "en": "Equipment",
+  "ko": "장비"
+ },
+ "calendarComponentsApp.calendarAI.cards.rentals.meetingRoomsDesc": {
+  "en": "Conference rooms, offices",
+  "ko": "회의실, 사무실"
+ },
+ "calendarComponentsApp.calendarAI.cards.rentals.otherDesc": {
+  "en": "Any rentable asset",
+  "ko": "대여 가능한 모든 자산"
+ },
+ "calendarComponentsApp.calendarAI.cards.rentals.otherTitle": {
+  "en": "Other rentals",
+  "ko": "기타 렌탈"
+ },
+ "calendarComponentsApp.calendarAI.cards.rentals.vehiclesDesc": {
+  "en": "Cars, bikes, vans",
+  "ko": "자동차, 오토바이, 밴"
+ },
+ "calendarComponentsApp.calendarAI.cards.services.fitnessDesc": {
+  "en": "Personal training, yoga, pilates",
+  "ko": "퍼스널 트레이닝, 요가, 필라테스"
+ },
+ "calendarComponentsApp.calendarAI.cards.services.fitnessTitle": {
+  "en": "Fitness & training",
+  "ko": "피트니스 및 트레이닝"
+ },
+ "calendarComponentsApp.calendarAI.cards.services.hairTitle": {
+  "en": "Hair & beauty",
+  "ko": "헤어 & 뷰티"
+ },
+ "calendarComponentsApp.calendarAI.cards.services.otherTitle": {
+  "en": "Other services",
+  "ko": "기타 서비스"
+ },
+ "calendarComponentsApp.calendarAI.celebration.copy": {
+  "en": "Copy",
+  "ko": "복사"
+ },
+ "calendarComponentsApp.calendarAI.celebration.description": {
+  "en": "Customers can now book {calendarName} using the link below.",
+  "ko": "이제 고객이 아래 링크로 {calendarName} 을(를) 예약할 수 있습니다."
+ },
+ "calendarComponentsApp.calendarAI.celebration.shareTitle": {
+  "en": "Book {calendarName}",
+  "ko": "{calendarName} 예약"
+ },
+ "calendarComponentsApp.calendarAI.celebration.title": {
+  "en": "Your calendar is live!",
+  "ko": "캘린더가 라이브 상태입니다"
+ },
+ "calendarComponentsApp.calendarAI.chat.ariaSelectTeamMember": {
+  "en": "Select team member",
+  "ko": "팀원 선택"
+ },
+ "calendarComponentsApp.calendarAI.chat.ariaSelectTeamMembers": {
+  "en": "Select team members to add",
+  "ko": "추가할 팀 멤버 선택"
+ },
+ "calendarComponentsApp.calendarAI.chat.doneAddingMembers": {
+  "en": "Done adding members",
+  "ko": "멤버 추가 완료"
+ },
+ "calendarComponentsApp.calendarAI.feedback.whatWentWell": {
+  "en": "What went well?",
+  "ko": "잘된 점은 무엇인가요?"
+ },
+ "calendarComponentsApp.calendarAI.fieldService.brand.tabLabel": {
+  "en": "AI Assistant",
+  "ko": "AI 어시스턴트"
+ },
+ "calendarComponentsApp.calendarAI.fieldService.brand.title": {
+  "en": "AI Assistant",
+  "ko": "AI 어시스턴트"
+ },
+ "calendarComponentsApp.calendarAI.fieldService.edit.fields.description": {
+  "en": "Description",
+  "ko": "설명"
+ },
+ "calendarComponentsApp.calendarAI.fieldService.edit.fields.durationMinutes": {
+  "en": "Duration",
+  "ko": "소요 시간"
+ },
+ "calendarComponentsApp.calendarAI.fieldService.edit.fields.name": {
+  "en": "Name",
+  "ko": "이름"
+ },
+ "calendarComponentsApp.calendarAI.fieldService.edit.updated": {
+  "en": "Updated",
+  "ko": "수정일"
+ },
+ "calendarComponentsApp.calendarAI.fieldService.retry": {
+  "en": "Retry",
+  "ko": "다시 시도"
+ },
+ "calendarComponentsApp.calendarAI.header.exitFullscreen": {
+  "en": "Exit fullscreen",
+  "ko": "전체화면 나가기"
+ },
+ "calendarComponentsApp.calendarAI.locationPicker.confirm": {
+  "en": "Confirm",
+  "ko": "확인"
+ },
+ "calendarComponentsApp.calendarAI.locationPicker.customPlaceholder": {
+  "en": "e.g. Room 204, Conference Center B",
+  "ko": "예: 204호, 컨퍼런스 센터 B"
+ },
+ "calendarComponentsApp.calendarAI.locationPicker.inPerson": {
+  "en": "In-person",
+  "ko": "대면"
+ },
+ "calendarComponentsApp.calendarAI.locationPicker.phone": {
+  "en": "Phone",
+  "ko": "전화번호"
+ },
+ "calendarComponentsApp.calendarAI.locationPicker.setLater": {
+  "en": "I'll set this later",
+  "ko": "나중에 설정하겠습니다"
+ },
+ "calendarComponentsApp.calendarAI.locationPicker.videoConferencing": {
+  "en": "Video conferencing",
+  "ko": "화상 회의"
+ },
+ "calendarComponentsApp.calendarAI.messages.autoAssign": {
+  "en": "Auto-assign to available members",
+  "ko": "가능한 멤버에게 자동 할당"
+ },
+ "calendarComponentsApp.calendarAI.messages.bookingComplete": {
+  "en": "That's it! You just booked on your own calendar. Share the link and start getting bookings!",
+  "ko": "완료되었습니다. 방금 본인 캘린더에 예약했습니다. 링크를 공유하고 예약을 받기 시작하세요."
+ },
+ "calendarComponentsApp.calendarAI.messages.bookingLinkReady": {
+  "en": "\n\nYour booking link is ready: {url}",
+  "ko": "\n\n예약 링크가 준비되었습니다: {url}"
+ },
+ "calendarComponentsApp.calendarAI.messages.calendarDeleted": {
+  "en": "Calendar deleted.",
+  "ko": "캘린더가 삭제되었습니다."
+ },
+ "calendarComponentsApp.calendarAI.messages.calendarLive": {
+  "en": "Your **{name}** calendar is live!",
+  "ko": "**{name}** 캘린더가 공개되었습니다"
+ },
+ "calendarComponentsApp.calendarAI.messages.collectiveNeedMoreMembers": {
+  "en": "Collective calendars need at least 2 team members. Please add at least 1 more.",
+  "ko": "공동 캘린더에는 팀 멤버가 2명 이상 필요합니다. 최소 1명 이상 추가해 주세요."
+ },
+ "calendarComponentsApp.calendarAI.messages.editConfigPrompt": {
+  "en": "Sure, what would you like to change? Just tell me what to update.\n\nFor example: \"make it 45 min\", \"change availability to weekdays 9:00 AM–6:00 PM\", \"add $100 payment with 50% deposit\", or \"update team members\".",
+  "ko": "네, 무엇을 변경하시겠어요? 업데이트할 내용을 말씀해 주세요.\n\n예: \"45분으로 변경\", \"가능 시간을 평일 오전 9:00–오후 6:00 으로 변경\", \"보증금 50%로 $100 결제 추가\", 또는 \"팀원 업데이트\"."
+ },
+ "calendarComponentsApp.calendarAI.messages.embedCodeCopied": {
+  "en": "Embed code copied to clipboard!",
+  "ko": "임베드 코드가 클립보드에 복사되었습니다"
+ },
+ "calendarComponentsApp.calendarAI.messages.groupSizeConfirmClass": {
+  "en": "Got it - {size} seats per class.",
+  "ko": "알겠습니다 - 수업당 {size} 석입니다."
+ },
+ "calendarComponentsApp.calendarAI.messages.howManyTeamMembers": {
+  "en": "How many team members will handle these bookings?",
+  "ko": "이 예약을 처리할 팀 멤버는 몇 명인가요?"
+ },
+ "calendarComponentsApp.calendarAI.messages.noPermission": {
+  "en": "You don't have permission to create calendars. Please contact your admin to request access.",
+  "ko": "캘린더를 만들 권한이 없습니다. 액세스를 요청하려면 관리자에게 문의해 주세요."
+ },
+ "calendarComponentsApp.calendarAI.messages.noUsersAskPlaceholder": {
+  "en": "This location doesn't have any team members yet. How do you wish to continue?",
+  "ko": "이 서브 계정에는 아직 팀 멤버가 없습니다. 어떻게 계속하시겠습니까?"
+ },
+ "calendarComponentsApp.calendarAI.messages.notPartOfLocation": {
+  "en": "You're not part of this location. Please select the team member you want to add to this calendar.",
+  "ko": "회원님은 이 서브 계정에 속해 있지 않습니다. 이 캘린더에 추가할 팀 멤버를 선택해 주세요."
+ },
+ "calendarComponentsApp.calendarAI.messages.openingCalendarTypesPage": {
+  "en": "Opening the calendar settings page for you — explore all available calendar types and their use cases there.",
+  "ko": "캘린더 설정 페이지를 열어 드립니다 — 사용 가능한 모든 캘린더 유형과 활용 사례를 확인해 보세요."
+ },
+ "calendarComponentsApp.calendarAI.messages.openingConnectionsHelp": {
+  "en": "Opening the connections page for you. You can connect or manage your integrations there.",
+  "ko": "연결 페이지를 여는 중입니다. 그곳에서 연동을 연결하거나 관리할 수 있습니다."
+ },
+ "calendarComponentsApp.calendarAI.messages.perfectAddYou": {
+  "en": "Perfect! I'll add you as the team member. You can add more people later from calendar settings.",
+  "ko": "좋습니다. 팀 멤버로 추가하겠습니다. 나중에 캘린더 설정에서 더 많은 사람을 추가할 수 있습니다."
+ },
+ "calendarComponentsApp.calendarAI.messages.postCreationOptions": {
+  "en": "Now let's make sure everything works. Try booking an appointment on your own calendar - this is exactly what your customers will see!",
+  "ko": "이제 모든 기능이 제대로 작동하는지 확인해 보세요. 직접 캘린더에서 예약을 잡아 보세요. 고객에게 보이는 화면과 동일합니다."
+ },
+ "calendarComponentsApp.calendarAI.messages.sizeAttendees": {
+  "en": "{size} attendees",
+  "ko": "참석자 {size}명"
+ },
+ "calendarComponentsApp.calendarAI.messages.teamCountPeople": {
+  "en": "{count} people",
+  "ko": "{count}명"
+ },
+ "calendarComponentsApp.calendarAI.messages.videoTeamNotConnected": {
+  "en": "Your calendar uses **{provider}** for meetings, but the following team members haven't connected it yet: **{names}**. They should connect {provider} so meeting links are auto-generated for their bookings.",
+  "ko": "캘린더가 미팅에 **{provider}** 를 사용하지만 다음 팀원은 아직 연결하지 않았습니다: **{names}**. 예약 시 미팅 링크가 자동 생성되도록 {provider} 를 연결해야 합니다."
+ },
+ "calendarComponentsApp.calendarAI.messages.whereWillSessionTakePlace": {
+  "en": "Where will the session take place? Type the location below.",
+  "ko": "세션은 어디에서 진행되나요? 아래에 위치를 입력하세요."
+ },
+ "calendarComponentsApp.calendarAI.models.attendeeType": {
+  "en": "Will these be 1:1 sessions, or group sessions with multiple attendees?",
+  "ko": "1:1 세션입니까, 아니면 여러 참석자가 있는 그룹 세션입니까?"
+ },
+ "calendarComponentsApp.calendarAI.models.calendarTypeCardsMeetingsDesc": {
+  "en": "Sales calls, 1:1, round robin, team meetings",
+  "ko": "영업 통화, 1:1, 라운드 로빈, 팀 미팅"
+ },
+ "calendarComponentsApp.calendarAI.models.calendarTypeCardsRentals": {
+  "en": "Rentals",
+  "ko": "대여"
+ },
+ "calendarComponentsApp.calendarAI.models.calendarTypeCardsServices": {
+  "en": "Services",
+  "ko": "서비스"
+ },
+ "calendarComponentsApp.calendarAI.models.calendarTypeCardsServicesDesc": {
+  "en": "Salons, spas, clinics, fitness studios",
+  "ko": "살롱, 스파, 클리닉, 피트니스 스튜디오"
+ },
+ "calendarComponentsApp.calendarAI.models.createNewCalendar": {
+  "en": "Create a new calendar",
+  "ko": "새 캘린더 만들기"
+ },
+ "calendarComponentsApp.calendarAI.models.eventSeatsConfirm": {
+  "en": "Got it - {size} seats per event.",
+  "ko": "확인했습니다 - 이벤트당 {size} 석입니다."
+ },
+ "calendarComponentsApp.calendarAI.models.welcomeHasCalendars": {
+  "en": "{greeting} I'm Calendar AI. Tell me what you'd like help with, or choose an option below.",
+  "ko": "{greeting} 저는 Calendar AI 입니다. 도움이 필요한 내용을 말씀하시거나 아래 옵션을 선택하세요."
+ },
+ "calendarComponentsApp.calendarAI.models.whatCanIDo": {
+  "en": "What can I do with my calendar?",
+  "ko": "캘린더로 무엇을 할 수 있나요?"
+ },
+ "calendarComponentsApp.calendarAI.preview.additionalInfo": {
+  "en": "Additional information",
+  "ko": "추가 정보"
+ },
+ "calendarComponentsApp.calendarAI.preview.additionalInfoPlaceholder": {
+  "en": "Is there anything you would like us to know before your appointment?",
+  "ko": "예약 전에 저희가 알아야 할 사항이 있나요?"
+ },
+ "calendarComponentsApp.calendarAI.preview.calendarNamePlaceholder": {
+  "en": "Calendar name",
+  "ko": "캘린더 이름"
+ },
+ "calendarComponentsApp.calendarAI.preview.calendarReadyTryBooking": {
+  "en": "Your calendar is ready — try booking an appointment!",
+  "ko": "캘린더가 준비되었습니다 — 예약을 해 보세요"
+ },
+ "calendarComponentsApp.calendarAI.preview.customerPreview": {
+  "en": "This is what your customers will see.",
+  "ko": "고객에게 표시되는 화면입니다."
+ },
+ "calendarComponentsApp.calendarAI.preview.days.fri": {
+  "en": "Fri",
+  "ko": "금"
+ },
+ "calendarComponentsApp.calendarAI.preview.days.mon": {
+  "en": "Mon",
+  "ko": "월"
+ },
+ "calendarComponentsApp.calendarAI.preview.days.sat": {
+  "en": "Sat",
+  "ko": "토"
+ },
+ "calendarComponentsApp.calendarAI.preview.days.thu": {
+  "en": "Thu",
+  "ko": "목"
+ },
+ "calendarComponentsApp.calendarAI.preview.days.tue": {
+  "en": "Tue",
+  "ko": "화"
+ },
+ "calendarComponentsApp.calendarAI.preview.durationSuffix": {
+  "en": "{duration} min",
+  "ko": "{duration}분"
+ },
+ "calendarComponentsApp.calendarAI.preview.email": {
+  "en": "Email",
+  "ko": "이메일"
+ },
+ "calendarComponentsApp.calendarAI.preview.emptyTitle": {
+  "en": "Your booking page will appear here",
+  "ko": "예약 페이지가 여기에 표시됩니다"
+ },
+ "calendarComponentsApp.calendarAI.preview.enterDetails": {
+  "en": "Enter details",
+  "ko": "세부사항 입력"
+ },
+ "calendarComponentsApp.calendarAI.preview.firstName": {
+  "en": "First name",
+  "ko": "이름"
+ },
+ "calendarComponentsApp.calendarAI.preview.formPreviewTitle": {
+  "en": "Booking form preview",
+  "ko": "예약 폼 미리보기"
+ },
+ "calendarComponentsApp.calendarAI.preview.inPerson": {
+  "en": "In person",
+  "ko": "대면"
+ },
+ "calendarComponentsApp.calendarAI.preview.lastName": {
+  "en": "Last name",
+  "ko": "성"
+ },
+ "calendarComponentsApp.calendarAI.preview.scheduleMeeting": {
+  "en": "Schedule meeting",
+  "ko": "미팅 예약"
+ },
+ "calendarComponentsApp.calendarAI.preview.spotsSuffix": {
+  "en": "{count} spots",
+  "ko": "{count}자리"
+ },
+ "calendarComponentsApp.calendarAI.preview.tryBookingHeading": {
+  "en": "Try booking your first appointment — pick a date and time below!",
+  "ko": "첫 예약을 해 보세요 — 아래에서 날짜와 시간을 선택하세요"
+ },
+ "calendarComponentsApp.calendarAI.preview.yourAnswer": {
+  "en": "Your answer...",
+  "ko": "답변..."
+ },
+ "calendarComponentsApp.calendarAI.quickReplies.addAvailableUsers": {
+  "en": "Add available users",
+  "ko": "사용 가능한 사용자 추가"
+ },
+ "calendarComponentsApp.calendarAI.quickReplies.adjustDuration": {
+  "en": "Adjust duration",
+  "ko": "기간 조정"
+ },
+ "calendarComponentsApp.calendarAI.quickReplies.bookTestAppointment": {
+  "en": "Book a test appointment",
+  "ko": "테스트 예약하기"
+ },
+ "calendarComponentsApp.calendarAI.quickReplies.calendarTypesUseCases": {
+  "en": "See calendar types & use cases",
+  "ko": "캘린더 유형 및 활용 사례 보기"
+ },
+ "calendarComponentsApp.calendarAI.quickReplies.configureAvailability": {
+  "en": "Configure availability",
+  "ko": "가능 시간 설정"
+ },
+ "calendarComponentsApp.calendarAI.quickReplies.connectVideoConferencing": {
+  "en": "Connect Google/Outlook & video apps",
+  "ko": "Google/Outlook 및 화상 회의 앱 연결"
+ },
+ "calendarComponentsApp.calendarAI.quickReplies.copyLink": {
+  "en": "Copy link",
+  "ko": "링크 복사"
+ },
+ "calendarComponentsApp.calendarAI.quickReplies.createAnother": {
+  "en": "Create another",
+  "ko": "하나 더 만들기"
+ },
+ "calendarComponentsApp.calendarAI.quickReplies.createNewCalendar": {
+  "en": "Create new calendar",
+  "ko": "새 캘린더 만들기"
+ },
+ "calendarComponentsApp.calendarAI.quickReplies.createPlaceholderUser": {
+  "en": "Add a dummy user (you can edit later)",
+  "ko": "임시 사용자 추가 (나중에 편집 가능)"
+ },
+ "calendarComponentsApp.calendarAI.quickReplies.doneAddingMembers": {
+  "en": "Done adding members",
+  "ko": "멤버 추가 완료"
+ },
+ "calendarComponentsApp.calendarAI.quickReplies.editCalendar": {
+  "en": "Edit calendar",
+  "ko": "캘린더 편집"
+ },
+ "calendarComponentsApp.calendarAI.quickReplies.embedInFunnel": {
+  "en": "Embed in funnel / third party websites",
+  "ko": "퍼널 / 서드파티 웹사이트에 임베드"
+ },
+ "calendarComponentsApp.calendarAI.quickReplies.embedOnWebsite": {
+  "en": "Embed on website",
+  "ko": "웹사이트에 삽입"
+ },
+ "calendarComponentsApp.calendarAI.quickReplies.goToCalendarSettings": {
+  "en": "Go to calendar settings",
+  "ko": "캘린더 설정으로 이동"
+ },
+ "calendarComponentsApp.calendarAI.quickReplies.justAddMeForNow": {
+  "en": "Just add me for now",
+  "ko": "지금은 나만 추가"
+ },
+ "calendarComponentsApp.calendarAI.quickReplies.multiplePeople": {
+  "en": "Multiple people on my team",
+  "ko": "우리 팀의 여러 명"
+ },
+ "calendarComponentsApp.calendarAI.quickReplies.needDifferentHours": {
+  "en": "I need different hours",
+  "ko": "다른 시간이 필요합니다"
+ },
+ "calendarComponentsApp.calendarAI.quickReplies.openAvailability": {
+  "en": "Open availability",
+  "ko": "가능 시간 열기"
+ },
+ "calendarComponentsApp.calendarAI.quickReplies.openCalendarSettings": {
+  "en": "Open calendar settings",
+  "ko": "캘린더 설정 열기"
+ },
+ "calendarComponentsApp.calendarAI.quickReplies.setWorkingHours": {
+  "en": "Set my working hours",
+  "ko": "근무 시간 설정"
+ },
+ "calendarComponentsApp.calendarAI.quickReplies.startOver": {
+  "en": "Start over",
+  "ko": "처음부터 다시"
+ },
+ "calendarComponentsApp.calendarAI.quickReplies.thatWorks": {
+  "en": "That works",
+  "ko": "좋습니다"
+ },
+ "calendarComponentsApp.calendarAI.quickReplies.topicBrandBookingPage": {
+  "en": "Brand your booking page",
+  "ko": "예약 페이지 브랜딩"
+ },
+ "calendarComponentsApp.calendarAI.quickReplies.topicNotifications": {
+  "en": "Notifications & reminders",
+  "ko": "알림 및 리마인더"
+ },
+ "calendarComponentsApp.calendarAI.quickReplies.topicRecurringBookings": {
+  "en": "Recurring bookings",
+  "ko": "반복 예약"
+ },
+ "calendarComponentsApp.calendarAI.quickReplies.twoPeople": {
+  "en": "2 people",
+  "ko": "2명"
+ },
+ "calendarComponentsApp.calendarAI.serviceCreation.pricePrompt": {
+  "en": "What is the price for this service? Type an amount or choose an option below.",
+  "ko": "이 서비스의 가격은 얼마인가요? 금액을 입력하거나 아래 옵션을 선택하세요."
+ },
+ "calendarComponentsApp.calendarAI.serviceCreation.teamPrompt": {
+  "en": "Who will handle bookings for this service?",
+  "ko": "이 서비스의 예약을 누가 처리합니까?"
+ },
+ "calendarComponentsApp.calendarAI.serviceCreation.variationsSummary": {
+  "en": "Got it! Here are the variations I'll create:",
+  "ko": "알겠습니다. 다음 변형을 만들겠습니다:"
+ },
+ "calendarComponentsApp.calendarAI.summary.heading": {
+  "en": "Here's your calendar:",
+  "ko": "내 캘린더:"
+ },
+ "calendarComponentsApp.calendarAI.typing.thinking": {
+  "en": "Thinking",
+  "ko": "생각 중"
+ },
+ "calendarComponentsApp.calendarAI.variantLabels.collective": {
+  "en": "Panel / committee",
+  "ko": "패널 / 위원회"
+ },
+ "calendarComponentsApp.calendarAI.variantLabels.sales-demo": {
+  "en": "Sales demo",
+  "ko": "영업 데모"
+ },
+ "calendarComponentsApp.calendarSettings.alert": {
+  "en": "If you want to hide the calendar module altogether, you can do so from Sub account settings > My staff > Roles and permissions.",
+  "ko": "캘린더 모듈을 완전히 숨기려면 서브 계정 설정 > 내 직원 > 역할 및 권한에서 설정할 수 있습니다."
+ },
+ "calendarComponentsApp.calendarSettings.description": {
+  "en": "Enable or disable calendar modules for all selected sub accounts in one go. Changes will apply uniformly across all selected sub accounts.",
+  "ko": "선택한 모든 서브 계정의 캘린더 모듈을 한 번에 켜거나 끕니다. 변경사항은 선택한 모든 서브 계정에 동일하게 적용됩니다."
+ },
+ "calendarComponentsApp.calendarSettings.meetings": {
+  "en": "Meetings",
+  "ko": "미팅"
+ },
+ "calendarComponentsApp.calendarSettings.title": {
+  "en": "Calendar settings",
+  "ko": "캘린더 설정"
+ },
+ "calendarComponentsApp.common.confirmMessage": {
+  "en": "Confirm by typing",
+  "ko": "입력하여 확인"
+ },
+ "calendarComponentsApp.common.confirmationMessage": {
+  "en": "To apply these changes to all selected sub accounts, please type <b>CONFIRM</b> in the box below and click <b>Save</b>.",
+  "ko": "선택한 모든 서브 계정에 이 변경사항을 적용하려면 아래 입력란에 <b>CONFIRM</b> 을 입력하고 <b>저장</b>을 클릭하세요."
+ },
+ "calendarComponentsApp.common.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "common.Via": {
+  "en": " via ",
+  "ko": "을(를) 통해"
+ },
+ "common.editForm": {
+  "en": "Edit Form",
+  "ko": "폼 편집"
+ },
+ "common.loyalty.loadError": {
+  "en": "We couldn't load Loyalty. Check your connection and try again.",
+  "ko": "로열티를 불러올 수 없습니다. 연결 상태를 확인한 후 다시 시도해 주세요."
+ },
+ "common.quizBuilder": {
+  "en": "Quiz Builder",
+  "ko": "퀴즈 빌더"
+ },
+ "common.seo": {
+  "en": " SEO ",
+  "ko": "SEO"
+ },
+ "common.sidebar.aiAppBuilder": {
+  "en": "AI App Studio",
+  "ko": "AI 앱 스튜디오"
+ },
+ "common.sidebar.creatorStudio": {
+  "en": "Creator Studio",
+  "ko": "크리에이터 스튜디오"
+ },
+ "common.sidebar.fieldServices": {
+  "en": "Field Services",
+  "ko": "현장 서비스"
+ },
+ "common.sidebar.fieldServicesJobs": {
+  "en": "Jobs",
+  "ko": "작업"
+ },
+ "common.sidebar.fieldServicesJobsAndRequests": {
+  "en": "Jobs & Requests",
+  "ko": "작업 및 요청"
+ },
+ "common.sidebar.fieldServicesServiceSetup": {
+  "en": "Service setup",
+  "ko": "서비스 설정"
+ },
+ "common.sidebar.fieldServicesServicesAndTeam": {
+  "en": "Services & staff",
+  "ko": "서비스 및 직원"
+ },
+ "common.sidebar.fieldServicesTimesheets": {
+  "en": "Timesheets",
+  "ko": "타임시트"
+ },
+ "common.sidebar.layouts": {
+  "en": "Layouts",
+  "ko": "레이아웃"
+ },
+ "common.sidebar.loyalty": {
+  "en": "Loyalty",
+  "ko": "로열티"
+ },
+ "common.sidebar.meetingRooms": {
+  "en": "Meeting Room",
+  "ko": "미팅룸"
+ },
+ "common.sidebar.myRoom": {
+  "en": "My room",
+  "ko": "내 방"
+ },
+ "common.sidebar.restaurantsFloor": {
+  "en": "Floor & Tables",
+  "ko": "플로어 및 테이블"
+ },
+ "common.sidebar.restaurantsOnlinePresence": {
+  "en": "Restaurant Website",
+  "ko": "레스토랑 웹사이트"
+ },
+ "common.sidebar.restaurantsReservations": {
+  "en": "Reservations",
+  "ko": "예약"
+ },
+ "common.sidebar.restaurantsSettings": {
+  "en": "Restaurant Settings",
+  "ko": "레스토랑 설정"
+ },
+ "common.sidebar.socialComments": {
+  "en": "Social comments",
+  "ko": "소셜 댓글"
+ },
+ "common.sidebar.teamRooms": {
+  "en": "Team rooms",
+  "ko": "팀 룸"
+ },
+ "common.sidebar.tickets": {
+  "en": "Tickets",
+  "ko": "티켓"
+ },
+ "common.topBar.qrCode": {
+  "en": "QR code",
+  "ko": "QR 코드"
+ },
+ "common.usd": {
+  "en": " USD",
+  "ko": "USD"
+ },
+ "common.sidebar.events": {
+  "en": "Events",
+  "ko": "이벤트"
+ },
+ "common.sidebar.fieldServicesAdvancedSettings": {
+  "en": "Advanced settings",
+  "ko": "고급 설정"
+ },
+ "common.sidebar.fieldServicesCalendar": {
+  "en": "Calendar view",
+  "ko": "캘린더 보기"
+ },
+ "common.sidebar.fieldServicesEstimates": {
+  "en": "Estimates",
+  "ko": "견적서"
+ },
+ "common.sidebar.fieldServicesHome": {
+  "en": "Home",
+  "ko": "홈"
+ },
+ "common.sidebar.fieldServicesInvoices": {
+  "en": "Invoices",
+  "ko": "인보이스"
+ },
+ "common.sidebar.fieldServicesListView": {
+  "en": "List view",
+  "ko": "목록 보기"
+ },
+ "common.sidebar.fieldServicesRequests": {
+  "en": "Requests",
+  "ko": "요청"
+ },
+ "common.sidebar.fieldServicesSchedule": {
+  "en": "Schedule",
+  "ko": "일정"
+ },
+ "common.sidebar.fieldServicesSettings": {
+  "en": "Settings",
+  "ko": "설정"
+ },
+ "common.sidebar.fieldServicesSetup": {
+  "en": "Setup",
+  "ko": "설정"
+ },
+ "common.sidebar.fieldServicesStaff": {
+  "en": "Staff",
+  "ko": "직원"
+ },
+ "common.sidebar.fieldServicesTeam": {
+  "en": "Staff",
+  "ko": "직원"
+ },
+ "common.sidebar.implementationExperts": {
+  "en": "Partners",
+  "ko": "파트너"
+ },
+ "common.sidebar.restaurant": {
+  "en": "Restaurant",
+  "ko": "식당"
+ },
+ "common.sidebar.restaurants": {
+  "en": "Restaurants",
+  "ko": "레스토랑"
+ },
+ "common.sidebar.restaurantsMenu": {
+  "en": "Menu",
+  "ko": "메뉴"
+ },
+ "common.sidebar.restaurantsOrders": {
+  "en": "Orders",
+  "ko": "주문"
+ },
+ "common.sidebar.restaurantsOverview": {
+  "en": "Overview",
+  "ko": "개요"
+ },
+ "copilot.askAi.artifacts.card.error": {
+  "en": "Something went wrong setting up your account",
+  "ko": "계정을 설정하는 중 문제가 발생했습니다"
+ },
+ "copilot.askAi.artifacts.card.untitled": {
+  "en": "Untitled",
+  "ko": "제목 없음"
+ },
+ "copilot.askAi.artifacts.question.next": {
+  "en": "Next",
+  "ko": "다음"
+ },
+ "copilot.askAi.artifacts.snapshotAssets.empty": {
+  "en": "No assets to show",
+  "ko": "표시할 자산이 없습니다"
+ },
+ "copilot.askAi.artifacts.snapshotAssets.statusReady": {
+  "en": "Ready",
+  "ko": "준비됨"
+ },
+ "copilot.askAi.artifacts.snapshotAssets.statusUnknown": {
+  "en": "Unknown",
+  "ko": "알 수 없음"
+ },
+ "copilot.askAi.artifacts.snapshotAssets.totalLabel": {
+  "en": "total",
+  "ko": "총"
+ },
+ "copilot.askAi.launchpad.lockedComposer": {
+  "en": "A few quick setup steps first, then ask me anything.",
+  "ko": "먼저 간단한 설정 단계를 마친 후 무엇이든 물어보세요."
+ },
+ "copilot.askAi.launchpad.wallet.title": {
+  "en": "Your wallet",
+  "ko": "내 지갑"
+ },
+ "copilot.askAi.launchpad.wallet.unavailableBody": {
+  "en": "We couldn't load your wallet right now. Please try again in a moment.",
+  "ko": "지금은 지갑을 불러올 수 없습니다. 잠시 후 다시 시도해 주세요."
+ },
+ "copilot.askAi.launchpad.wallet.unavailableTitle": {
+  "en": "Wallet unavailable",
+  "ko": "지갑을 사용할 수 없습니다"
+ },
+ "copilot.askAi.onboarding.snapshotAssets.title": {
+  "en": "Added to your account",
+  "ko": "계정에 추가되었습니다"
+ },
+ "copilot.askAi.onboarding.snapshotAssets.unavailableBody": {
+  "en": "We couldn't load your assets right now. Please try again in a moment.",
+  "ko": "지금은 자산을 불러올 수 없습니다. 잠시 후 다시 시도해 주세요."
+ },
+ "copilot.askAi.onboarding.snapshotAssets.unavailableTitle": {
+  "en": "Assets unavailable",
+  "ko": "에셋을 사용할 수 없음"
+ },
+ "copilot.askAi.onboarding.snapshotLoader.title": {
+  "en": "Setting up your account",
+  "ko": "계정 설정 중"
+ },
+ "copilot.askAi.onboarding.snapshotLoader.unavailable": {
+  "en": "Setting up your account…",
+  "ko": "계정 설정 중…"
+ },
+ "copilot.askAi.sidebar.launchpad": {
+  "en": "Launchpad",
+  "ko": "런치패드"
+ },
+ "mediaCenterApp.common.addTagPressEnter": {
+  "en": "Add a tag, press Enter",
+  "ko": "태그를 추가하고 Enter를 누르세요"
+ },
+ "mediaCenterApp.common.altTextHelper": {
+  "en": "Describe the purpose of this image, leave empty if purely decorative",
+  "ko": "이 이미지의 용도를 설명하세요. 순수 장식용이면 비워두세요"
+ },
+ "mediaCenterApp.common.audioPreview": {
+  "en": "Audio preview",
+  "ko": "오디오 미리듣기"
+ },
+ "mediaCenterApp.common.cancelAllUploadsConfirm": {
+  "en": "Your uploads are still in progress. Are you sure you want to cancel them?",
+  "ko": "업로드가 아직 진행 중입니다. 취소하시겠습니까?"
+ },
+ "mediaCenterApp.common.cancelUploads": {
+  "en": "Cancel Uploads",
+  "ko": "업로드 취소"
+ },
+ "mediaCenterApp.common.detailsSaved": {
+  "en": "File details saved",
+  "ko": "파일 세부 정보가 저장되었습니다"
+ },
+ "mediaCenterApp.common.detailsUpdateFailed": {
+  "en": "Couldn't save the file details. Please try again.",
+  "ko": "파일 세부 정보를 저장하지 못했습니다. 다시 시도해 주세요."
+ },
+ "mediaCenterApp.common.documentPreview": {
+  "en": "Document preview",
+  "ko": "문서 미리보기"
+ },
+ "mediaCenterApp.common.fileId": {
+  "en": "File ID",
+  "ko": "파일 ID"
+ },
+ "mediaCenterApp.common.itemUploaded": {
+  "en": "{0} item uploaded",
+  "ko": "{0}개 항목 업로드됨"
+ },
+ "mediaCenterApp.common.itemsUploaded": {
+  "en": "{0} items uploaded",
+  "ko": "{0}개 항목 업로드됨"
+ },
+ "mediaCenterApp.common.keepUploading": {
+  "en": "Continue Uploading",
+  "ko": "계속 업로드"
+ },
+ "mediaCenterApp.common.maximise": {
+  "en": "Maximise",
+  "ko": "최대화"
+ },
+ "mediaCenterApp.common.replaceBlockedWhileEditing": {
+  "en": "Finish or cancel your edits before replacing this file",
+  "ko": "이 파일을 교체하기 전에 편집을 완료하거나 취소하세요"
+ },
+ "mediaCenterApp.common.tagsAdded": {
+  "en": "{0} tags added",
+  "ko": "{0}개 태그 추가됨"
+ },
+ "mediaCenterApp.common.tagsDropped": {
+  "en": "{0} tags were not added because the file is at its tag limit",
+  "ko": "파일의 태그 한도에 도달하여 {0}개 태그가 추가되지 않았습니다"
+ },
+ "mediaCenterApp.common.uploadComplete": {
+  "en": "Upload Complete",
+  "ko": "업로드 완료"
+ },
+ "mediaCenterApp.common.uploadUrlFilesFound": {
+  "en": "{count} files found",
+  "ko": "{count}개 파일 발견됨"
+ },
+ "mediaCenterApp.common.uploadUrlFilesFoundOne": {
+  "en": "1 file found",
+  "ko": "1개 파일 발견됨"
+ },
+ "mediaCenterApp.common.uploadUrlImportCount": {
+  "en": "Import {count} files",
+  "ko": "{count}개 파일 가져오기"
+ },
+ "mediaCenterApp.common.uploadUrlImportCountOne": {
+  "en": "Import 1 file",
+  "ko": "1개 파일 가져오기"
+ },
+ "mediaCenterApp.common.uploadUrlNoAssets": {
+  "en": "No importable files were found on this page.",
+  "ko": "이 페이지에서 가져올 수 있는 파일을 찾지 못했습니다."
+ },
+ "mediaCenterApp.common.uploadUrlNoVideoThumbnail": {
+  "en": "No thumbnail available for this video",
+  "ko": "이 동영상에 사용할 수 있는 썸네일이 없습니다"
+ },
+ "mediaCenterApp.common.uploadUrlScanTruncated": {
+  "en": "Showing the first {count} files found on this page.",
+  "ko": "이 페이지에서 발견된 처음 {count}개 파일을 표시합니다."
+ },
+ "mediaCenterApp.common.uploadUrlUnsupportedHost": {
+  "en": "Links to YouTube, Vimeo, Loom, or Google Drive pages aren't supported. Paste a direct link to a media file instead.",
+  "ko": "YouTube, Vimeo, Loom 또는 Google Drive 페이지 링크는 지원되지 않습니다. 미디어 파일의 직접 링크를 붙여넣어 주세요."
+ },
+ "mediaCenterApp.common.uploadedBy": {
+  "en": "Uploaded by",
+  "ko": "업로드한 사람"
+ },
+ "mediaCenterApp.common.uploadsCancelled": {
+  "en": "({0} cancelled)",
+  "ko": "({0}개 취소됨)"
+ },
+ "mediaCenterApp.common.uploadsFailed": {
+  "en": "({0} failed)",
+  "ko": "({0}개 실패함)"
+ },
+ "mediaCenterApp.common.uploadsInProgress": {
+  "en": "Cancel Upload?",
+  "ko": "업로드를 취소하시겠습니까?"
+ },
+ "mediaCenterApp.components.filePreviewModal.browseHint": {
+  "en": "← → to browse",
+  "ko": "← → 키로 탐색"
+ },
+ "mediaCenterApp.components.filePreviewModal.fullscreenUnavailable": {
+  "en": "Fullscreen is unavailable for this image.",
+  "ko": "이 이미지에는 전체 화면을 사용할 수 없습니다."
+ },
+ "mediaCenterApp.components.filePreviewModal.imageViewerControls": {
+  "en": "Image viewer controls",
+  "ko": "이미지 뷰어 컨트롤"
+ },
+ "mediaCenterApp.components.filePreviewModal.moveViewerControls": {
+  "en": "Move controls",
+  "ko": "컨트롤 이동"
+ },
+ "mediaCenterApp.components.filePreviewModal.playPauseHint": {
+  "en": "Space to play or pause",
+  "ko": "스페이스바를 눌러 재생 또는 일시정지"
+ },
+ "mediaCenterApp.components.filePreviewModal.zoomLevel": {
+  "en": "Zoom {percent}%",
+  "ko": "확대/축소 {percent}%"
+ },
+ "mediaCenterApp.components.textPreview.editorAriaLabel": {
+  "en": "Editing {0}",
+  "ko": "{0} 편집 중"
+ },
+ "mediaCenterApp.components.textPreview.oversizeWarning": {
+  "en": "This file will be about {0} after saving. Files over {1} save successfully but can no longer be previewed here.",
+  "ko": "이 파일은 저장 후 약 {0}가 됩니다. {1}를 초과하는 파일은 저장은 되지만 더 이상 미리볼 수 없습니다."
+ },
+ "mediaCenterApp.components.textPreview.saveFailed": {
+  "en": "Couldn't save your changes. Please try again.",
+  "ko": "변경 사항을 저장하지 못했습니다. 다시 시도해 주세요."
+ },
+ "mediaCenterApp.components.textPreview.savedNotification": {
+  "en": "{0} saved",
+  "ko": "{0} 저장됨"
+ },
+ "mediaCenterApp.components.textPreview.unsavedDescription": {
+  "en": "Your edits to this file haven't been saved yet.",
+  "ko": "이 파일의 편집 내용이 아직 저장되지 않았습니다."
+ },
+ "mediaCenterApp.common.altText": {
+  "en": "Alt text",
+  "ko": "대체 텍스트"
+ },
+ "mediaCenterApp.common.cancelUpload": {
+  "en": "Cancel upload",
+  "ko": "업로드 취소"
+ },
+ "mediaCenterApp.common.description": {
+  "en": "Description",
+  "ko": "설명"
+ },
+ "mediaCenterApp.common.details": {
+  "en": "Details",
+  "ko": "상세 정보"
+ },
+ "mediaCenterApp.common.enterDescription": {
+  "en": "Enter description",
+  "ko": "설명을 입력하세요"
+ },
+ "mediaCenterApp.common.minimise": {
+  "en": "Minimise",
+  "ko": "최소화"
+ },
+ "mediaCenterApp.common.retryUpload": {
+  "en": "Retry upload",
+  "ko": "업로드 재시도"
+ },
+ "mediaCenterApp.common.saveChanges": {
+  "en": "Save changes",
+  "ko": "변경사항 저장"
+ },
+ "mediaCenterApp.common.tags": {
+  "en": "Tags",
+  "ko": "태그"
+ },
+ "mediaCenterApp.common.uploadCancelled": {
+  "en": "Cancelled",
+  "ko": "취소됨"
+ },
+ "mediaCenterApp.common.uploadUrlFileType": {
+  "en": "File type",
+  "ko": "파일 유형"
+ },
+ "mediaCenterApp.common.uploadUrlSelectAll": {
+  "en": "Select all",
+  "ko": "전체 선택"
+ },
+ "mediaCenterApp.common.uploadUrlSelectedCount": {
+  "en": "{count} selected",
+  "ko": "{count}개 선택됨"
+ },
+ "mediaCenterApp.common.uploaded": {
+  "en": "Uploaded",
+  "ko": "업로드 완료"
+ },
+ "mediaCenterApp.components.filePreviewModal.closeHint": {
+  "en": "Esc to close",
+  "ko": "Esc 키로 닫기"
+ },
+ "mediaCenterApp.components.filePreviewModal.enterFullscreen": {
+  "en": "Enter fullscreen",
+  "ko": "전체화면 진입"
+ },
+ "mediaCenterApp.components.filePreviewModal.exitFullscreen": {
+  "en": "Exit fullscreen",
+  "ko": "전체화면 나가기"
+ },
+ "mediaCenterApp.components.textPreview.discard": {
+  "en": "Discard",
+  "ko": "삭제"
+ },
+ "mediaCenterApp.components.textPreview.keepEditing": {
+  "en": "Keep editing",
+  "ko": "계속 편집"
+ },
+ "mediaCenterApp.components.textPreview.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "mediaCenterApp.components.textPreview.saving": {
+  "en": "Saving...",
+  "ko": "저장 중..."
+ },
+ "mediaCenterApp.components.textPreview.unsavedChanges": {
+  "en": "Unsaved changes",
+  "ko": "저장되지 않은 변경사항"
+ },
+ "mediaCenterApp.components.textPreview.unsavedTitle": {
+  "en": "Discard unsaved changes?",
+  "ko": "저장하지 않은 변경사항을 버리시겠습니까?"
+ },
+ "powerDialerApp.multiLine.addResult.skipReason": {
+  "en": "{count} skipped ({reason})",
+  "ko": "{count}건 건너뜀 ({reason})"
+ },
+ "powerDialerApp.multiLine.addResult.skipped": {
+  "en": "{count} skipped",
+  "ko": "{count}건 건너뜀"
+ },
+ "powerDialerApp.multiLine.addSkip.dnd": {
+  "en": "on DND",
+  "ko": "방해 금지 중"
+ },
+ "powerDialerApp.multiLine.addSkip.listFull": {
+  "en": "list is full",
+  "ko": "목록이 가득 참"
+ },
+ "powerDialerApp.multiLine.addSkip.noPhone": {
+  "en": "no phone number",
+  "ko": "전화번호 없음"
+ },
+ "powerDialerApp.multiLine.addSkip.notVisible": {
+  "en": "not visible to you",
+  "ko": "회원님에게 표시되지 않음"
+ },
+ "powerDialerApp.multiLine.addSkip.opportunityNoPhone": {
+  "en": "primary contact has no phone number",
+  "ko": "주 연락처에 전화번호가 없음"
+ },
+ "powerDialerApp.multiLine.addSkip.readFailed": {
+  "en": "couldn’t load, add again",
+  "ko": "불러올 수 없음, 다시 추가하세요"
+ },
+ "powerDialerApp.multiLine.build.no_eligible": {
+  "en": "Nothing to dial right now",
+  "ko": "지금 걸 수 있는 항목이 없습니다"
+ },
+ "powerDialerApp.multiLine.build.no_outbound_number": {
+  "en": "None of these contacts has a number to call from. Check your phone numbers.",
+  "ko": "이 연락처들 중 발신 가능한 번호가 있는 연락처가 없습니다. 전화번호를 확인하세요."
+ },
+ "powerDialerApp.multiLine.callback.strip.one": {
+  "en": "{name} also answered. You’ll call them next.",
+  "ko": "{name} 님도 응답했습니다. 다음에 연결됩니다."
+ },
+ "powerDialerApp.multiLine.callback.strip.two": {
+  "en": "{a} and {b} also answered. You’ll call them next.",
+  "ko": "{a} 님과 {b} 님도 응답했습니다. 다음에 연결됩니다."
+ },
+ "powerDialerApp.multiLine.chip.callbackNextTooltip": {
+  "en": "{name} answered while you were connecting to someone else and heard your callback message. Dialed alone, next.",
+  "ko": "{name} 님이 다른 사람과 연결 중일 때 응답하여 콜백 메시지를 들었습니다. 단독으로 다이얼링되며, 다음 차례입니다."
+ },
+ "powerDialerApp.multiLine.chip.connectedDuration": {
+  "en": "Connected · {duration}",
+  "ko": "연결됨 · {duration}"
+ },
+ "powerDialerApp.multiLine.chip.notYetCalledAria": {
+  "en": "Not yet called",
+  "ko": "아직 통화하지 않음"
+ },
+ "powerDialerApp.multiLine.chip.rangRecentlyTooltip": {
+  "en": "Rang while you were connecting. Dialable again at {time}.",
+  "ko": "연결 중에 벨이 울렸습니다. {time}에 다시 다이얼 가능합니다."
+ },
+ "powerDialerApp.multiLine.clear.modal.body": {
+  "en": "This removes all {count} contacts from the call list. You can add them again anytime.",
+  "ko": "이렇게 하면 통화 목록에서 {count}명의 연락처가 모두 제거됩니다. 언제든지 다시 추가할 수 있습니다."
+ },
+ "powerDialerApp.multiLine.clear.modal.bodyAll": {
+  "en": "This removes all contacts from the call list. You can add them again anytime.",
+  "ko": "이렇게 하면 통화 목록에서 모든 연락처가 제거됩니다. 언제든지 다시 추가할 수 있습니다."
+ },
+ "powerDialerApp.multiLine.empty.title": {
+  "en": "Your call list is empty",
+  "ko": "통화 목록이 비어 있습니다"
+ },
+ "powerDialerApp.multiLine.endSession": {
+  "en": "End session",
+  "ko": "세션 종료"
+ },
+ "powerDialerApp.multiLine.errors.clearNotAllowed.advance_running": {
+  "en": "Pause dialing to clear the list.",
+  "ko": "목록을 지우려면 다이얼링을 일시 중지하세요."
+ },
+ "powerDialerApp.multiLine.errors.clearNotAllowed.round_closing": {
+  "en": "The last round is still finishing.",
+  "ko": "마지막 라운드가 아직 끝나지 않았습니다."
+ },
+ "powerDialerApp.multiLine.errors.dispositionNotSaved": {
+  "en": "Couldn't save the disposition. Try again.",
+  "ko": "처리 결과를 저장할 수 없습니다. 다시 시도하세요."
+ },
+ "powerDialerApp.multiLine.errors.itemNotCallable": {
+  "en": "This contact can’t be called from your list right now.",
+  "ko": "이 연락처는 지금 목록에서 전화를 걸 수 없습니다."
+ },
+ "powerDialerApp.multiLine.errors.itemNotRemovable": {
+  "en": "This contact is being called and can’t be removed right now.",
+  "ko": "이 연락처는 통화 중이라 지금 제거할 수 없습니다."
+ },
+ "powerDialerApp.multiLine.errors.linesOutOfRange": {
+  "en": "That many lines isn’t allowed. An admin can change this in settings.",
+  "ko": "그만큼 많은 회선은 허용되지 않습니다. 관리자가 설정에서 변경할 수 있습니다."
+ },
+ "powerDialerApp.multiLine.errors.parkRefused.account_mismatch": {
+  "en": "Couldn’t start this round. Nothing was called. Try again.",
+  "ko": "이 라운드를 시작할 수 없습니다. 아무에게도 전화가 걸리지 않았습니다. 다시 시도하세요."
+ },
+ "powerDialerApp.multiLine.errors.parkRefused.agency_no_funds": {
+  "en": "Agency has insufficient funds",
+  "ko": "에이전시의 잔액이 부족합니다"
+ },
+ "powerDialerApp.multiLine.errors.parkRefused.already_bound": {
+  "en": "Couldn’t start this round. Nothing was called. Try again.",
+  "ko": "이 라운드를 시작할 수 없습니다. 아무에게도 전화가 걸리지 않았습니다. 다시 시도하세요."
+ },
+ "powerDialerApp.multiLine.errors.parkRefused.inactive": {
+  "en": "Location or agency is inactive",
+  "ko": "로케이션 또는 에이전시가 비활성 상태입니다"
+ },
+ "powerDialerApp.multiLine.errors.parkRefused.round_not_parkable": {
+  "en": "Couldn’t start this round. Nothing was called. Try again.",
+  "ko": "이 라운드를 시작할 수 없습니다. 아무에게도 전화가 걸리지 않았습니다. 다시 시도하세요."
+ },
+ "powerDialerApp.multiLine.errors.realtimeUnavailable": {
+  "en": "We can’t show live call updates right now. Reload the page to try again.",
+  "ko": "지금은 실시간 통화 업데이트를 표시할 수 없습니다. 페이지를 새로고침하여 다시 시도하세요."
+ },
+ "powerDialerApp.multiLine.errors.transferNoDevices": {
+  "en": "This user has no device available to take the transfer.",
+  "ko": "이 사용자는 전환을 받을 수 있는 기기가 없습니다."
+ },
+ "powerDialerApp.multiLine.failedReason.blockedByProvider": {
+  "en": "The call has been blocked by the recipient’s service provider",
+  "ko": "수신자의 서비스 제공업체에 의해 통화가 차단되었습니다"
+ },
+ "powerDialerApp.multiLine.failedReason.calleeDeclined": {
+  "en": "Callee declined",
+  "ko": "상대방이 거절함"
+ },
+ "powerDialerApp.multiLine.header.settingsTooltip": {
+  "en": "Multi-line settings",
+  "ko": "멀티라인 설정"
+ },
+ "powerDialerApp.multiLine.hint.changeMessage": {
+  "en": "Change the message",
+  "ko": "메시지 변경"
+ },
+ "powerDialerApp.multiLine.hint.firstRun": {
+  "en": "We ring {n} people and connect you to the first who answers. The others hear a short message from your business or stop ringing.",
+  "ko": "{n}명에게 동시에 전화를 걸고 먼저 응답하는 사람과 연결합니다. 나머지는 비즈니스의 짧은 메시지를 듣거나 벨소리가 멈춥니다."
+ },
+ "powerDialerApp.multiLine.lastRound.finishNotes": {
+  "en": "Finish notes →",
+  "ko": "메모 완료 →"
+ },
+ "powerDialerApp.multiLine.lastRound.noAnswer": {
+  "en": "No one answered the last round",
+  "ko": "마지막 라운드에 아무도 응답하지 않았습니다"
+ },
+ "powerDialerApp.multiLine.lastRound.seeRound": {
+  "en": "See the round",
+  "ko": "라운드 보기"
+ },
+ "powerDialerApp.multiLine.lines.helper": {
+  "en": "Rings {n} contacts at the same time. You talk to the first one who answers.",
+  "ko": "{n}명의 연락처에게 동시에 전화를 겁니다. 먼저 응답하는 사람과 통화하게 됩니다."
+ },
+ "powerDialerApp.multiLine.lines.notAllowed": {
+  "en": "One contact at a time. An admin can allow ringing several at once in settings.",
+  "ko": "한 번에 한 명씩 연락처에 전화를 겁니다. 관리자가 설정에서 여러 명에게 동시에 거는 것을 허용할 수 있습니다."
+ },
+ "powerDialerApp.multiLine.lines.option": {
+  "en": "{n} contact | {n} contacts",
+  "ko": "연락처 {n}명 | 연락처 {n}명"
+ },
+ "powerDialerApp.multiLine.minimised.callbackAlone": {
+  "en": "{name}, dialed alone",
+  "ko": "{name} 님, 단독으로 다이얼링됨"
+ },
+ "powerDialerApp.multiLine.minimised.endRound": {
+  "en": "End round",
+  "ko": "라운드 종료"
+ },
+ "powerDialerApp.multiLine.minimised.nextAt": {
+  "en": "Next at {time}",
+  "ko": "다음은 {time}"
+ },
+ "powerDialerApp.multiLine.minimised.trayLines": {
+  "en": "{n} line | {n} lines",
+  "ko": "회선 {n}개 | 회선 {n}개"
+ },
+ "powerDialerApp.multiLine.minimised.trayNextRound": {
+  "en": "Next round",
+  "ko": "다음 라운드"
+ },
+ "powerDialerApp.multiLine.minimised.trayThisRound": {
+  "en": "This round",
+  "ko": "이번 라운드"
+ },
+ "powerDialerApp.multiLine.minimised.waiting": {
+  "en": "{n} waiting",
+  "ko": "{n}명 대기 중"
+ },
+ "powerDialerApp.multiLine.nextAt": {
+  "en": "Next contact can be called at {time}",
+  "ko": "다음 연락처는 {time}에 전화할 수 있습니다"
+ },
+ "powerDialerApp.multiLine.nextControl.countdownAria": {
+  "en": "Next round in {seconds} seconds",
+  "ko": "{seconds}초 후 다음 라운드"
+ },
+ "powerDialerApp.multiLine.pauseReason.connection_lost": {
+  "en": "Paused: your connection dropped.",
+  "ko": "일시 중지됨: 연결이 끊겼습니다."
+ },
+ "powerDialerApp.multiLine.pauseReason.dialer_closed": {
+  "en": "Paused while the dialer was closed.",
+  "ko": "다이얼러가 닫혀 있는 동안 일시 중지되었습니다."
+ },
+ "powerDialerApp.multiLine.pauseReason.inbound": {
+  "en": "Paused after your incoming call.",
+  "ko": "수신 전화 이후 일시 중지되었습니다."
+ },
+ "powerDialerApp.multiLine.pauseReason.other_call": {
+  "en": "Paused because another call started.",
+  "ko": "다른 통화가 시작되어 일시 중지되었습니다."
+ },
+ "powerDialerApp.multiLine.pauseReason.repeated_failures": {
+  "en": "Dialing paused. Three rounds in a row couldn’t connect. Check your numbers or calling setup, then press Next when you’re ready.",
+  "ko": "다이얼링이 일시 중지되었습니다. 연속 3라운드 연결에 실패했습니다. 전화번호나 통화 설정을 확인한 후 준비가 되면 다음을 누르세요."
+ },
+ "powerDialerApp.multiLine.reasons.ALREADY_ON_A_CALL.detail": {
+  "en": "This contact was already on a call with your business.",
+  "ko": "이 연락처는 이미 회원님의 비즈니스와 통화 중이었습니다."
+ },
+ "powerDialerApp.multiLine.reasons.BLOCKED_NUMBER.chip": {
+  "en": "Blocked number",
+  "ko": "차단된 번호"
+ },
+ "powerDialerApp.multiLine.reasons.CALLER_ID_NOT_ALLOWED.chip": {
+  "en": "Caller ID not allowed",
+  "ko": "발신자 ID가 허용되지 않음"
+ },
+ "powerDialerApp.multiLine.reasons.CALLER_ID_NOT_ALLOWED.detail": {
+  "en": "Your caller ID can’t be used to call this number.",
+  "ko": "회원님의 발신자 ID로는 이 번호에 전화를 걸 수 없습니다."
+ },
+ "powerDialerApp.multiLine.reasons.COMPLIANCE_REQUIRED.detail": {
+  "en": "Calling this number needs a compliance step first.",
+  "ko": "이 번호로 전화하려면 먼저 규정 준수 단계가 필요합니다."
+ },
+ "powerDialerApp.multiLine.reasons.CONTACT_CHECK_FAILED.chip": {
+  "en": "Not checked",
+  "ko": "확인되지 않음"
+ },
+ "powerDialerApp.multiLine.reasons.CONTACT_CHECK_FAILED.detail": {
+  "en": "We couldn’t check this contact before calling.",
+  "ko": "전화를 걸기 전에 이 연락처를 확인할 수 없었습니다."
+ },
+ "powerDialerApp.multiLine.reasons.CONTACT_NOT_FOUND.chip": {
+  "en": "Contact deleted",
+  "ko": "연락처 삭제됨"
+ },
+ "powerDialerApp.multiLine.reasons.CONTACT_NOT_FOUND.detail": {
+  "en": "This contact no longer exists.",
+  "ko": "이 연락처는 더 이상 존재하지 않습니다."
+ },
+ "powerDialerApp.multiLine.reasons.DESTINATION_NOT_ALLOWED.chip": {
+  "en": "Country not allowed",
+  "ko": "허용되지 않는 국가"
+ },
+ "powerDialerApp.multiLine.reasons.DND.chip": {
+  "en": "Do not disturb",
+  "ko": "방해 금지"
+ },
+ "powerDialerApp.multiLine.reasons.INVALID_NUMBER.chip": {
+  "en": "Invalid number",
+  "ko": "유효하지 않은 번호"
+ },
+ "powerDialerApp.multiLine.reasons.INVALID_NUMBER.detail": {
+  "en": "This phone number isn’t valid.",
+  "ko": "이 전화번호는 유효하지 않습니다."
+ },
+ "powerDialerApp.multiLine.reasons.NO_OUTBOUND_NUMBER.chip": {
+  "en": "No number to call from",
+  "ko": "발신 가능한 번호 없음"
+ },
+ "powerDialerApp.multiLine.reasons.NO_OUTBOUND_NUMBER.detail": {
+  "en": "None of your phone numbers can call this contact.",
+  "ko": "회원님의 전화번호 중 이 연락처에 전화할 수 있는 번호가 없습니다."
+ },
+ "powerDialerApp.multiLine.reasons.PROVIDER_MISMATCH.detail": {
+  "en": "None of your numbers can call this contact from this list.",
+  "ko": "이 목록에서 이 연락처에 전화할 수 있는 번호가 없습니다."
+ },
+ "powerDialerApp.multiLine.reasons.default.detail": {
+  "en": "This contact can’t be called from your list right now.",
+  "ko": "이 연락처는 지금 목록에서 전화를 걸 수 없습니다."
+ },
+ "powerDialerApp.multiLine.round.abandoned.election_unavailable": {
+  "en": "Something went wrong connecting this round. The contacts will be called again.",
+  "ko": "이 라운드를 연결하는 중 문제가 발생했습니다. 해당 연락처에게 다시 전화가 걸립니다."
+ },
+ "powerDialerApp.multiLine.round.abandoned.placement_timeout": {
+  "en": "No line could be placed in time. Nothing rang.",
+  "ko": "제시간에 회선을 배정할 수 없었습니다. 전화가 걸리지 않았습니다."
+ },
+ "powerDialerApp.multiLine.round.endCall": {
+  "en": "End call",
+  "ko": "통화 종료"
+ },
+ "powerDialerApp.multiLine.round.nextPreview": {
+  "en": "Next {n}",
+  "ko": "다음 {n}"
+ },
+ "powerDialerApp.multiLine.round.soloNote.callback": {
+  "en": "{first} answered earlier and heard your callback message, so this call is theirs alone.",
+  "ko": "{first} 님이 이전에 응답하여 콜백 메시지를 들었으므로, 이 통화는 해당 연락처와의 단독 통화입니다."
+ },
+ "powerDialerApp.multiLine.round.soloNote.cancelCap": {
+  "en": "{first}’s phone rang and was canceled {n} times, so this call is theirs alone.",
+  "ko": "{first} 님의 전화가 울렸다가 {n}번 취소되어, 이 통화는 해당 연락처와의 단독 통화입니다."
+ },
+ "powerDialerApp.multiLine.round.soloNote.providerSingleLine": {
+  "en": "Calling {first} on their own.",
+  "ko": "{first} 님에게만 단독으로 전화 거는 중입니다."
+ },
+ "powerDialerApp.multiLine.round.title": {
+  "en": "Dialing {n} line | Dialing {n} lines",
+  "ko": "회선 {n}개 다이얼링 중 | 회선 {n}개 다이얼링 중"
+ },
+ "powerDialerApp.multiLine.row.callNow": {
+  "en": "Call {name} now",
+  "ko": "지금 {name} 님에게 전화 걸기"
+ },
+ "powerDialerApp.multiLine.row.remove": {
+  "en": "Remove from call list",
+  "ko": "통화 목록에서 제거"
+ },
+ "powerDialerApp.multiLine.row.removeAria": {
+  "en": "Remove {name} from call list",
+  "ko": "통화 목록에서 {name} 제거"
+ },
+ "powerDialerApp.multiLine.tab.badgeAria": {
+  "en": "{count} contacts in your call list",
+  "ko": "통화 목록에 {count}명의 연락처"
+ },
+ "powerDialerApp.multiLine.tab.title": {
+  "en": "Call list",
+  "ko": "통화 목록"
+ },
+ "powerDialerApp.multiLine.toast.finishCurrentCall": {
+  "en": "Finish the current call first",
+  "ko": "먼저 현재 통화를 종료하세요"
+ },
+ "powerDialerApp.multiLine.toast.movedToHistory": {
+  "en": "{n} contacts moved to your call history",
+  "ko": "{n}명의 연락처가 통화 기록으로 이동되었습니다"
+ },
+ "powerDialerApp.multiLine.toast.noPhone": {
+  "en": "No phone number on this contact",
+  "ko": "이 연락처에 전화번호가 없습니다"
+ },
+ "powerDialerApp.multiLine.toast.nothingToDial": {
+  "en": "Nothing to dial right now",
+  "ko": "지금 걸 수 있는 항목이 없습니다"
+ },
+ "powerDialerApp.multiLine.toast.pausedInbound": {
+  "en": "Dialing paused while you took that call.",
+  "ko": "해당 통화를 받는 동안 다이얼링이 일시 중지되었습니다."
+ },
+ "powerDialerApp.multiLine.toast.pausedOtherCall": {
+  "en": "Dialing paused because another call started.",
+  "ko": "다른 통화가 시작되어 다이얼링이 일시 중지되었습니다."
+ },
+ "powerDialerApp.multiLine.unreached.allFailedNote": {
+  "en": "Every call in this round failed. Check the numbers, or your calling setup if this keeps happening, then choose Next when you’re ready.",
+  "ko": "이 라운드의 모든 통화가 실패했습니다. 번호를 확인하거나, 계속 반복되면 통화 설정을 확인한 후 준비가 되면 다음을 선택하세요."
+ },
+ "powerDialerApp.multiLine.unreached.couldNotReach.subtitle": {
+  "en": "Hover a status for details",
+  "ko": "상태에 마우스를 올리면 자세한 내용을 볼 수 있습니다"
+ },
+ "powerDialerApp.postCall.emptyStates.artifactEmpty.qaScorecard": {
+  "en": "Not enough conversation to score this call.",
+  "ko": "이 통화를 평가하기에 대화 내용이 충분하지 않습니다."
+ },
+ "powerDialerApp.postCall.emptyStates.artifactEmpty.summary": {
+  "en": "The call didn't have enough content to summarize.",
+  "ko": "통화 내용을 요약하기에 충분한 내용이 없습니다."
+ },
+ "powerDialerApp.postCall.emptyStates.skippedGeneric": {
+  "en": "AI insights were not generated for this call.",
+  "ko": "이 통화에 대한 AI 인사이트가 생성되지 않았습니다."
+ },
+ "powerDialerApp.postCall.emptyStates.skippedTooShort": {
+  "en": "Not enough conversation to analyze this call.",
+  "ko": "이 통화를 분석하기에 대화 내용이 충분하지 않습니다."
+ },
+ "powerDialerApp.postCall.feedback.commentPlaceholder": {
+  "en": "What could be improved? (optional)",
+  "ko": "개선할 점이 있다면 알려주세요 (선택사항)"
+ },
+ "powerDialerApp.postCall.feedback.prompt.fieldSuggestion": {
+  "en": "Are these field suggestions accurate?",
+  "ko": "이 필드 제안이 정확한가요?"
+ },
+ "powerDialerApp.postCall.feedback.prompt.qaScore": {
+  "en": "Is this scorecard accurate?",
+  "ko": "이 스코어카드가 정확한가요?"
+ },
+ "powerDialerApp.postCall.feedback.prompt.summary": {
+  "en": "Is this summary accurate?",
+  "ko": "이 요약이 정확한가요?"
+ },
+ "powerDialerApp.postCall.feedback.prompt.transcript": {
+  "en": "Is this transcript accurate?",
+  "ko": "이 녹취록이 정확한가요?"
+ },
+ "powerDialerApp.postCall.feedback.rateDown": {
+  "en": "Rate negatively",
+  "ko": "부정적으로 평가"
+ },
+ "powerDialerApp.postCall.footer.saveFailed": {
+  "en": "Couldn't save updates. Please try again.",
+  "ko": "업데이트를 저장하지 못했습니다. 다시 시도해 주세요."
+ },
+ "powerDialerApp.postCall.footer.saveUpdates": {
+  "en": "Save Updates ({count})",
+  "ko": "업데이트 저장 ({count})"
+ },
+ "powerDialerApp.postCall.headerSubtitle": {
+  "en": "Review what AI captured from previous call.",
+  "ko": "이전 통화에서 AI가 캡처한 내용을 검토하세요."
+ },
+ "powerDialerApp.postCall.qa.overallScore": {
+  "en": "Overall score",
+  "ko": "종합 점수"
+ },
+ "powerDialerApp.postCall.qa.title": {
+  "en": "QA Scorecard",
+  "ko": "QA 스코어카드"
+ },
+ "powerDialerApp.postCall.qa.toggleInsights": {
+  "en": "Toggle coaching insights",
+  "ko": "코칭 인사이트 전환"
+ },
+ "powerDialerApp.postCall.recording.loadingTranscript": {
+  "en": "Loading transcript…",
+  "ko": "녹취록 불러오는 중…"
+ },
+ "powerDialerApp.postCall.recording.recordingLabel": {
+  "en": "Recording {index}",
+  "ko": "녹음 {index}"
+ },
+ "powerDialerApp.postCall.recording.searchPlaceholder": {
+  "en": "Search transcript",
+  "ko": "녹취록 검색"
+ },
+ "powerDialerApp.postCall.reviewUpdate.currentPrefix": {
+  "en": "Current: {value}",
+  "ko": "현재: {value}"
+ },
+ "powerDialerApp.postCall.reviewUpdate.dispositionAiSuggested": {
+  "en": "AI has suggested a disposition based on the call.",
+  "ko": "AI가 통화 내용을 기반으로 처리 결과를 제안했습니다."
+ },
+ "powerDialerApp.postCall.reviewUpdate.dispositionTitle": {
+  "en": "Call Disposition (AI Suggested)",
+  "ko": "통화 처리 결과 (AI 제안)"
+ },
+ "powerDialerApp.postCall.reviewUpdate.fieldsAllMatch": {
+  "en": "All suggested values already match the contact.",
+  "ko": "제안된 모든 값이 이미 연락처와 일치합니다."
+ },
+ "powerDialerApp.postCall.reviewUpdate.fieldsEmpty": {
+  "en": "No AI field suggestions for this call.",
+  "ko": "이 통화에 대한 AI 필드 제안이 없습니다."
+ },
+ "powerDialerApp.postCall.reviewUpdate.fieldsSubtitle": {
+  "en": "AI has suggested new values for the following fields",
+  "ko": "AI가 다음 필드에 대한 새 값을 제안했습니다"
+ },
+ "powerDialerApp.postCall.reviewUpdate.fieldsTitle": {
+  "en": "AI Suggested Fields",
+  "ko": "AI 제안 필드"
+ },
+ "powerDialerApp.postCall.reviewUpdate.statusDismissed": {
+  "en": "Dismissed",
+  "ko": "해제됨"
+ },
+ "powerDialerApp.postCall.reviewUpdate.suggestionColumn": {
+  "en": "AI suggested value",
+  "ko": "AI 제안 값"
+ },
+ "powerDialerApp.postCall.summary.copied": {
+  "en": "Summary copied to clipboard",
+  "ko": "요약이 클립보드에 복사되었습니다"
+ },
+ "powerDialerApp.postCall.summary.copy": {
+  "en": "Copy summary",
+  "ko": "요약 복사"
+ },
+ "powerDialerApp.postCall.summary.empty": {
+  "en": "No summary available for this call.",
+  "ko": "이 통화에 대한 요약이 없습니다."
+ },
+ "powerDialerApp.postCall.tabs.qaScorecard": {
+  "en": "QA scorecard",
+  "ko": "QA 스코어카드"
+ },
+ "powerDialerApp.postCall.tabs.reviewUpdate": {
+  "en": "Review & update",
+  "ko": "검토 및 업데이트"
+ },
+ "powerDialerApp.postCall.title": {
+  "en": "Post Call",
+  "ko": "통화 후"
+ },
+ "powerDialerApp.addNote": {
+  "en": "Add Note",
+  "ko": "메모 추가"
+ },
+ "powerDialerApp.addScriptNow": {
+  "en": "Add Script Now",
+  "ko": "지금 스크립트 추가"
+ },
+ "powerDialerApp.allNotes": {
+  "en": "All Notes",
+  "ko": "모든 노트"
+ },
+ "powerDialerApp.app.powerDialerMicroApp": {
+  "en": "Power Dialer Micro App",
+  "ko": "파워 다이얼러 마이크로 앱"
+ },
+ "powerDialerApp.app.works": {
+  "en": "Works",
+  "ko": "작동합니다"
+ },
+ "powerDialerApp.audioPlayer.recordingUnavailable": {
+  "en": "Recording unavailable",
+  "ko": "녹화를 사용할 수 없음"
+ },
+ "powerDialerApp.audioSettings.additionalDeviceTooltip": {
+  "en": "Ring an extra device (e.g. headset) when a call comes in.",
+  "ko": "전화가 올 때 추가 기기(예: 헤드셋)도 울리게 합니다."
+ },
+ "powerDialerApp.audioSettings.allowMicHint": {
+  "en": "Allow microphone access to see device names.",
+  "ko": "기기 이름을 보려면 마이크 접근을 허용하세요."
+ },
+ "powerDialerApp.audioSettings.genericMicLabel": {
+  "en": "Microphone {n}",
+  "ko": "마이크 {n}"
+ },
+ "powerDialerApp.audioSettings.limitedSupportBody": {
+  "en": "Safari only supports one output device. Use Chrome or Edge for full control.",
+  "ko": "Safari는 하나의 출력 장치만 지원합니다. 전체 제어를 위해 Chrome 또는 Edge를 사용하세요."
+ },
+ "powerDialerApp.audioSettings.menuItem": {
+  "en": "Audio settings",
+  "ko": "오디오 설정"
+ },
+ "powerDialerApp.audioSettings.settingsAria": {
+  "en": "Settings",
+  "ko": "설정"
+ },
+ "powerDialerApp.audioSettings.speaker": {
+  "en": "Speaker",
+  "ko": "스피커"
+ },
+ "powerDialerApp.audioSettings.testError": {
+  "en": "Failed to play test tone on selected device.",
+  "ko": "선택한 장치에서 테스트 음을 재생하지 못했습니다."
+ },
+ "powerDialerApp.audioSettings.title": {
+  "en": "Audio Settings",
+  "ko": "오디오 설정"
+ },
+ "powerDialerApp.backToDialer": {
+  "en": "Back to Dialer",
+  "ko": "다이얼러로 돌아가기"
+ },
+ "powerDialerApp.backendMessages.VOICE_CALL_CALLEE_DECLINED": {
+  "en": "Callee Declined",
+  "ko": "상대방이 거부함"
+ },
+ "powerDialerApp.backendMessages.VOICE_CALL_INVALID_DESTINATION": {
+  "en": "Invalid destination number or unreachable",
+  "ko": "잘못된 대상 번호이거나 연결할 수 없습니다"
+ },
+ "powerDialerApp.call": {
+  "en": "Call",
+  "ko": "통화"
+ },
+ "powerDialerApp.callAnyway": {
+  "en": "Call Anyway",
+  "ko": "그래도 통화"
+ },
+ "powerDialerApp.callControls.backToCall": {
+  "en": "Back to Call",
+  "ko": "통화로 돌아가기"
+ },
+ "powerDialerApp.callControls.hold": {
+  "en": "Hold",
+  "ko": "대기"
+ },
+ "powerDialerApp.callControls.mute": {
+  "en": "Mute",
+  "ko": "음소거"
+ },
+ "powerDialerApp.callEnded": {
+  "en": "Call Ended",
+  "ko": "통화 종료됨"
+ },
+ "powerDialerApp.callTransferredSuccessfully": {
+  "en": "Call Transferred Successfully",
+  "ko": "통화가 성공적으로 전환되었습니다"
+ },
+ "powerDialerApp.callingScript": {
+  "en": "Calling Script",
+  "ko": "통화 스크립트"
+ },
+ "powerDialerApp.callingScriptContent": {
+  "en": "Calling Script Content",
+  "ko": "통화 스크립트 내용"
+ },
+ "powerDialerApp.calls.callAnyway": {
+  "en": "Call Anyway",
+  "ko": "그래도 통화"
+ },
+ "powerDialerApp.calls.callEnded": {
+  "en": "Call Ended",
+  "ko": "통화 종료됨"
+ },
+ "powerDialerApp.calls.callMergedSuccessfully": {
+  "en": "Call Merged Successfully",
+  "ko": "통화가 성공적으로 병합되었습니다"
+ },
+ "powerDialerApp.calls.callTransferredSuccessfully": {
+  "en": "Call Transferred Successfully",
+  "ko": "통화가 성공적으로 전환되었습니다"
+ },
+ "powerDialerApp.calls.callingFrom": {
+  "en": "Calling From",
+  "ko": "발신 번호"
+ },
+ "powerDialerApp.calls.decline": {
+  "en": "Decline",
+  "ko": "거부"
+ },
+ "powerDialerApp.calls.dial": {
+  "en": "Dial",
+  "ko": "다이얼"
+ },
+ "powerDialerApp.calls.dialing": {
+  "en": "Dialing",
+  "ko": "전화 연결 중"
+ },
+ "powerDialerApp.calls.incomingCall": {
+  "en": "Incoming Call",
+  "ko": "수신 전화"
+ },
+ "powerDialerApp.calls.outbound": {
+  "en": "outbound",
+  "ko": "발신"
+ },
+ "powerDialerApp.calls.spamLikely": {
+  "en": "Spam likely",
+  "ko": "스팸 가능성 있음"
+ },
+ "powerDialerApp.calls.transferCall": {
+  "en": "Transferred Call",
+  "ko": "전달된 통화"
+ },
+ "powerDialerApp.change": {
+  "en": "Change",
+  "ko": "변경"
+ },
+ "powerDialerApp.characters": {
+  "en": "Characters",
+  "ko": "문자"
+ },
+ "powerDialerApp.clickThePageInfoIconInYourBrowserAddressBar": {
+  "en": "Click the page info icon in your browser address bar",
+  "ko": "브라우저 주소창의 페이지 정보 아이콘을 클릭하세요"
+ },
+ "powerDialerApp.comingSoon": {
+  "en": "Coming soon",
+  "ko": "출시 예정"
+ },
+ "powerDialerApp.common.call": {
+  "en": "Call",
+  "ko": "통화"
+ },
+ "powerDialerApp.common.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "powerDialerApp.common.change": {
+  "en": "Change",
+  "ko": "변경"
+ },
+ "powerDialerApp.common.comingSoon": {
+  "en": "Coming soon",
+  "ko": "출시 예정"
+ },
+ "powerDialerApp.common.ghostIllustration": {
+  "en": "Ghost illustration",
+  "ko": "고스트 일러스트레이션"
+ },
+ "powerDialerApp.common.message": {
+  "en": "Message",
+  "ko": "메시지"
+ },
+ "powerDialerApp.common.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "powerDialerApp.common.unknown": {
+  "en": "Unknown",
+  "ko": "알 수 없음"
+ },
+ "powerDialerApp.conference.youCanLeaveCallWithoutDisconnectingOthers": {
+  "en": "You can leave the call without disconnecting others",
+  "ko": "다른 참가자의 연결을 끊지 않고 통화를 나갈 수 있습니다"
+ },
+ "powerDialerApp.conferenceCall": {
+  "en": "Conference Call",
+  "ko": "컨퍼런스 콜"
+ },
+ "powerDialerApp.contacts.contact": {
+  "en": "contact",
+  "ko": "연락처"
+ },
+ "powerDialerApp.contacts.contacts": {
+  "en": "contacts",
+  "ko": "연락처"
+ },
+ "powerDialerApp.contacts.unknownContact": {
+  "en": "Unknown {contact}",
+  "ko": "알 수 없음 {contact}"
+ },
+ "powerDialerApp.contacts.youCanImportContactsOrAddNewOnesFromTheContactPage": {
+  "en": "You can import {contact} or add new ones from the {contact} page.",
+  "ko": "{contact} 페이지에서 {contact}를 가져오거나 새로 추가할 수 있습니다."
+ },
+ "powerDialerApp.createDisposition": {
+  "en": "Create Disposition",
+  "ko": "처리 상태 만들기"
+ },
+ "powerDialerApp.customizeIt": {
+  "en": "Choose the outcome of the call. Use it to trigger workflows or for data analysis. Customize it",
+  "ko": "통화의 결과를 선택하세요. 워크플로우를 트리거하거나 데이터 분석에 사용할 수 있습니다. 사용자 지정도 가능합니다"
+ },
+ "powerDialerApp.decline": {
+  "en": "Decline",
+  "ko": "거부"
+ },
+ "powerDialerApp.description": {
+  "en": "Description",
+  "ko": "설명"
+ },
+ "powerDialerApp.dialer.dragDialer": {
+  "en": "Move",
+  "ko": "이동"
+ },
+ "powerDialerApp.dialer.pinDialer": {
+  "en": "Prevent minimize",
+  "ko": "최소화 방지"
+ },
+ "powerDialerApp.dialer.togglePowerDialerReset": {
+  "en": "Minimize dialer",
+  "ko": "다이얼러 최소화"
+ },
+ "powerDialerApp.dialer.unpinDialer": {
+  "en": "Auto minimize",
+  "ko": "자동 최소화"
+ },
+ "powerDialerApp.dialerErrors.defaultError": {
+  "en": "Please refresh and retry. Contact support if issue persists",
+  "ko": "새로고침 후 다시 시도해 주세요. 문제가 계속되면 지원팀에 문의해 주세요"
+ },
+ "powerDialerApp.dialerErrors.errorWithCode": {
+  "en": "Please refresh and retry. Contact support if issue persists. Error {code}",
+  "ko": "새로고침 후 다시 시도해 주세요. 문제가 계속되면 지원팀에 문의해 주세요. 오류 {code}"
+ },
+ "powerDialerApp.dialerErrors.sessionExpired": {
+  "en": "Dialer session has expired. Please refresh and retry. Contact support if issue persists.",
+  "ko": "다이얼러 세션이 만료되었습니다. 새로고침 후 다시 시도해 주세요. 문제가 계속되면 지원팀에 문의하세요."
+ },
+ "powerDialerApp.doYouWantTransferYourNumber": {
+  "en": "Do you want transfer your number ?",
+  "ko": "번호를 이전하시겠습니까?"
+ },
+ "powerDialerApp.done": {
+  "en": "Done",
+  "ko": "완료"
+ },
+ "powerDialerApp.enable": {
+  "en": "Enable",
+  "ko": "켜기"
+ },
+ "powerDialerApp.endCall": {
+  "en": "End Call",
+  "ko": "통화 종료"
+ },
+ "powerDialerApp.enterDescription": {
+  "en": "Enter a Description...",
+  "ko": "설명 입력..."
+ },
+ "powerDialerApp.forMe": {
+  "en": "For Me",
+  "ko": "나를 위해"
+ },
+ "powerDialerApp.here": {
+  "en": "here",
+  "ko": "여기"
+ },
+ "powerDialerApp.hold": {
+  "en": "Hold",
+  "ko": "대기"
+ },
+ "powerDialerApp.inbound": {
+  "en": "inbound",
+  "ko": "인바운드"
+ },
+ "powerDialerApp.itsAround": {
+  "en": "It's around",
+  "ko": "대략"
+ },
+ "powerDialerApp.keepTranckNotes": {
+  "en": "Keep track of important details about this {contact}",
+  "ko": "이 {contact}에 대한 중요한 세부 정보를 기록하세요"
+ },
+ "powerDialerApp.learnMore": {
+  "en": "Learn More",
+  "ko": "자세히 보기"
+ },
+ "powerDialerApp.learnMoreLowerCase": {
+  "en": "learn more",
+  "ko": "더 알아보기"
+ },
+ "powerDialerApp.leaveCall": {
+  "en": "Leave Call",
+  "ko": "통화 나가기"
+ },
+ "powerDialerApp.loadingNotes": {
+  "en": "Loading notes",
+  "ko": "노트 불러오는 중"
+ },
+ "powerDialerApp.loadingRecentCalls": {
+  "en": "Loading recent calls",
+  "ko": "최근 통화 불러오는 중"
+ },
+ "powerDialerApp.mergeNow": {
+  "en": "Merge Now",
+  "ko": "지금 병합"
+ },
+ "powerDialerApp.message": {
+  "en": "Message",
+  "ko": "메시지"
+ },
+ "powerDialerApp.microphone": {
+  "en": "Microphone",
+  "ko": "마이크"
+ },
+ "powerDialerApp.moreContacts": {
+  "en": "More {contact}",
+  "ko": "추가 {contact}"
+ },
+ "powerDialerApp.multiLine.callEnded.redial": {
+  "en": "Redial",
+  "ko": "재통화"
+ },
+ "powerDialerApp.multiLine.chip.dialing": {
+  "en": "Dialing",
+  "ko": "전화 연결 중"
+ },
+ "powerDialerApp.multiLine.chip.failed": {
+  "en": "Failed",
+  "ko": "실패"
+ },
+ "powerDialerApp.multiLine.chip.next": {
+  "en": "Next",
+  "ko": "다음"
+ },
+ "powerDialerApp.multiLine.chip.noAnswer": {
+  "en": "No answer",
+  "ko": "응답 없음"
+ },
+ "powerDialerApp.multiLine.chip.ringing": {
+  "en": "Ringing",
+  "ko": "벨 울림"
+ },
+ "powerDialerApp.multiLine.failedReason.invalidDestination": {
+  "en": "Invalid destination number or unreachable",
+  "ko": "잘못된 대상 번호이거나 연결할 수 없습니다"
+ },
+ "powerDialerApp.multiLine.groups.next": {
+  "en": "Next",
+  "ko": "다음"
+ },
+ "powerDialerApp.multiLine.groups.skipped": {
+  "en": "Skipped",
+  "ko": "건너뜀"
+ },
+ "powerDialerApp.multiLine.groups.waiting": {
+  "en": "Waiting",
+  "ko": "대기 중"
+ },
+ "powerDialerApp.multiLine.loadFailed.retry": {
+  "en": "Try again",
+  "ko": "다시 시도"
+ },
+ "powerDialerApp.multiLine.pause": {
+  "en": "Pause",
+  "ko": "일시정지"
+ },
+ "powerDialerApp.multiLine.pauseReason.rep": {
+  "en": "Paused",
+  "ko": "일시 중지"
+ },
+ "powerDialerApp.multiLine.reasons.default.chip": {
+  "en": "Skipped",
+  "ko": "건너뜀"
+ },
+ "powerDialerApp.multiLine.resume": {
+  "en": "Resume",
+  "ko": "다시 시작"
+ },
+ "powerDialerApp.multiLine.waiting.learnMore": {
+  "en": "Learn more",
+  "ko": "자세히 보기"
+ },
+ "powerDialerApp.mute": {
+  "en": "Mute",
+  "ko": "음소거"
+ },
+ "powerDialerApp.navigation.backToDialer": {
+  "en": "Back to Dialer",
+  "ko": "다이얼러로 돌아가기"
+ },
+ "powerDialerApp.navigation.keypad": {
+  "en": "Keypad",
+  "ko": "키패드"
+ },
+ "powerDialerApp.navigation.users": {
+  "en": "Users",
+  "ko": "사용자"
+ },
+ "powerDialerApp.noCallingScriptsFound": {
+  "en": "No Calling Scripts Found",
+  "ko": "발견된 콜링 스크립트가 없습니다"
+ },
+ "powerDialerApp.noContactsFound": {
+  "en": "No {contact} Found",
+  "ko": "{contact}을(를) 찾을 수 없습니다"
+ },
+ "powerDialerApp.noRecentCalls": {
+  "en": "No recent calls",
+  "ko": "최근 통화 내역이 없습니다"
+ },
+ "powerDialerApp.noResultFound": {
+  "en": "No results found",
+  "ko": "검색 결과가 없습니다"
+ },
+ "powerDialerApp.noResultsFoundFor": {
+  "en": "No results found for",
+  "ko": "다음에 대한 결과를 찾을 수 없습니다"
+ },
+ "powerDialerApp.noUsersFound": {
+  "en": "No Users Found",
+  "ko": "사용자를 찾을 수 없음"
+ },
+ "powerDialerApp.noVoicemail": {
+  "en": "No voicemail",
+  "ko": "음성 메시지 없음"
+ },
+ "powerDialerApp.notes.addNote": {
+  "en": "Add Note",
+  "ko": "메모 추가"
+ },
+ "powerDialerApp.notes.addYourFirstNote": {
+  "en": "Add your first note!",
+  "ko": "첫 번째 메모를 추가하세요!"
+ },
+ "powerDialerApp.notes.allNotes": {
+  "en": "All Notes",
+  "ko": "모든 노트"
+ },
+ "powerDialerApp.notes.loadingNotes": {
+  "en": "Loading notes",
+  "ko": "노트 불러오는 중"
+ },
+ "powerDialerApp.notes.notes": {
+  "en": "Notes",
+  "ko": "메모"
+ },
+ "powerDialerApp.notes.showMore": {
+  "en": "Show more",
+  "ko": "더 보기"
+ },
+ "powerDialerApp.outbound": {
+  "en": "outbound",
+  "ko": "발신"
+ },
+ "powerDialerApp.outgoingCall": {
+  "en": "Outgoing Call",
+  "ko": "발신 통화"
+ },
+ "powerDialerApp.phoneNumbers.connectPhoneNumber": {
+  "en": "Connect a phone number",
+  "ko": "전화번호 연결"
+ },
+ "powerDialerApp.phoneNumbers.contactAdmin": {
+  "en": "Contact your admin to set up voice calling.",
+  "ko": "음성 통화를 설정하려면 관리자에게 문의하세요."
+ },
+ "powerDialerApp.phoneNumbers.copy": {
+  "en": "Copy",
+  "ko": "복사"
+ },
+ "powerDialerApp.phoneNumbers.doYouWantTransferYourNumber": {
+  "en": "Do you want transfer your number ?",
+  "ko": "번호를 이전하시겠습니까?"
+ },
+ "powerDialerApp.phoneNumbers.helpMeDecide": {
+  "en": "Help me decide",
+  "ko": "결정에 도움 받기"
+ },
+ "powerDialerApp.phoneNumbers.learnAboutVoiceCalling": {
+  "en": "Learn about voice calling",
+  "ko": "음성 통화에 대해 알아보기"
+ },
+ "powerDialerApp.phoneNumbers.noAdminsDescription": {
+  "en": "There are no admins assigned to this location yet. Contact your workspace owner to get help setting up calling.",
+  "ko": "이 로케이션에 아직 할당된 관리자가 없습니다. 통화 설정에 대한 도움을 받으려면 워크스페이스 소유자에게 문의하세요."
+ },
+ "powerDialerApp.phoneNumbers.noAdminsTitle": {
+  "en": "No admins for this location",
+  "ko": "이 위치에 관리자가 없습니다"
+ },
+ "powerDialerApp.phoneNumbers.numberClosestToTheContact": {
+  "en": "Number closest to the {contact}",
+  "ko": "{contact}와 가장 가까운 번호"
+ },
+ "powerDialerApp.phoneNumbers.numberUnavailable": {
+  "en": "Number unavailable",
+  "ko": "사용할 수 없는 번호입니다"
+ },
+ "powerDialerApp.phoneNumbers.numberUnavailableDescription": {
+  "en": "The calling provider for this number is currently unavailable. Please try again shortly or pick another number.",
+  "ko": "이 번호의 통화 제공업체를 현재 사용할 수 없습니다. 잠시 후 다시 시도하거나 다른 번호를 선택해 주세요."
+ },
+ "powerDialerApp.phoneNumbers.outboundAndInboundCalls": {
+  "en": "Outbound and inbound calls",
+  "ko": "발신 및 수신 통화"
+ },
+ "powerDialerApp.phoneNumbers.outboundCallsOnly": {
+  "en": "Outbound calls only. Test call in 60 seconds",
+  "ko": "발신 전용 통화. 60초 후 테스트 통화"
+ },
+ "powerDialerApp.phoneNumbers.phoneHeroSubtitle": {
+  "en": "You'll need a phone number to get started.",
+  "ko": "시작하려면 전화번호가 필요합니다."
+ },
+ "powerDialerApp.phoneNumbers.phoneHeroTitle": {
+  "en": "Call, record, transcribe, automate follow-ups and more - all in one place.",
+  "ko": "통화, 녹음, 텍스트 변환, 후속 조치 자동화 등을 한 곳에서 처리하세요."
+ },
+ "powerDialerApp.phoneNumbers.purchasePhoneNumberToSelect": {
+  "en": "Purchase Phone number to select",
+  "ko": "선택할 전화번호 구매"
+ },
+ "powerDialerApp.phoneNumbers.searchForPhoneNumber": {
+  "en": "Search for a phone number",
+  "ko": "전화번호 검색"
+ },
+ "powerDialerApp.phoneNumbers.searchNumbers": {
+  "en": "Search Numbers",
+  "ko": "번호 검색"
+ },
+ "powerDialerApp.phoneNumbers.unknownNumber": {
+  "en": "Unknown Number",
+  "ko": "알 수 없는 번호"
+ },
+ "powerDialerApp.pleaseAllowPhoneSystemAccessToYourMicrophone": {
+  "en": "Please allow Phone system access to your microphone",
+  "ko": "전화 시스템이 마이크에 접근하도록 허용해주세요"
+ },
+ "powerDialerApp.pleaseContactAdminToAddCallingScript": {
+  "en": "Please Contact Admin to Add a Calling Script",
+  "ko": "통화 스크립트를 추가하려면 관리자에게 문의하세요"
+ },
+ "powerDialerApp.postCall.close": {
+  "en": "Close",
+  "ko": "닫기"
+ },
+ "powerDialerApp.postCall.feedback.send": {
+  "en": "Send",
+  "ko": "보내기"
+ },
+ "powerDialerApp.postCall.footer.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "powerDialerApp.postCall.recording.pause": {
+  "en": "Pause",
+  "ko": "일시정지"
+ },
+ "powerDialerApp.postCall.recording.seek": {
+  "en": "Seek",
+  "ko": "탐색"
+ },
+ "powerDialerApp.postCall.recording.unavailable": {
+  "en": "Recording unavailable",
+  "ko": "녹화를 사용할 수 없음"
+ },
+ "powerDialerApp.postCall.tabs.summary": {
+  "en": "Summary",
+  "ko": "요약"
+ },
+ "powerDialerApp.purchaseNow": {
+  "en": "Purchase Now",
+  "ko": "지금 구매"
+ },
+ "powerDialerApp.quietHoursWarning.forThemAreYouSureYouWantToCallThem": {
+  "en": "for them. Are you sure you want to call them?",
+  "ko": "을(를) 위한 것입니다. 정말 통화하시겠습니까?"
+ },
+ "powerDialerApp.quietHoursWarning.itsAround": {
+  "en": "It's around",
+  "ko": "대략"
+ },
+ "powerDialerApp.recentCalls.loadingRecentCalls": {
+  "en": "Loading recent calls",
+  "ko": "최근 통화 불러오는 중"
+ },
+ "powerDialerApp.recentCalls.noRecentCalls": {
+  "en": "No recent calls",
+  "ko": "최근 통화 내역이 없습니다"
+ },
+ "powerDialerApp.recentCalls.recent": {
+  "en": "Recents",
+  "ko": "최근 대화"
+ },
+ "powerDialerApp.recentCalls.recentCalls": {
+  "en": "Recent calls",
+  "ko": "최근 통화"
+ },
+ "powerDialerApp.recordCall": {
+  "en": "Record Call",
+  "ko": "통화 녹음"
+ },
+ "powerDialerApp.recording": {
+  "en": "Recording",
+  "ko": "녹음 중"
+ },
+ "powerDialerApp.recordingUnavailable": {
+  "en": "Recording unavailable",
+  "ko": "녹화를 사용할 수 없음"
+ },
+ "powerDialerApp.registerHere": {
+  "en": "Register here",
+  "ko": "여기에서 등록하세요"
+ },
+ "powerDialerApp.scripts.addScriptNow": {
+  "en": "Add Script Now",
+  "ko": "지금 스크립트 추가"
+ },
+ "powerDialerApp.scripts.callingScript": {
+  "en": "Calling Script",
+  "ko": "통화 스크립트"
+ },
+ "powerDialerApp.scripts.callingScriptContent": {
+  "en": "Calling Script Content",
+  "ko": "통화 스크립트 내용"
+ },
+ "powerDialerApp.scripts.noCallingScriptsFound": {
+  "en": "No Calling Scripts Found",
+  "ko": "발견된 콜링 스크립트가 없습니다"
+ },
+ "powerDialerApp.scripts.pleaseContactAdminToAddCallingScript": {
+  "en": "Please Contact Admin to Add a Calling Script",
+  "ko": "통화 스크립트를 추가하려면 관리자에게 문의하세요"
+ },
+ "powerDialerApp.search.noResultFound": {
+  "en": "No results found",
+  "ko": "검색 결과가 없습니다"
+ },
+ "powerDialerApp.search.noResultsFoundFor": {
+  "en": "No results found for",
+  "ko": "다음에 대한 결과를 찾을 수 없습니다"
+ },
+ "powerDialerApp.search.searchForUsers": {
+  "en": "Search for Users",
+  "ko": "사용자 검색"
+ },
+ "powerDialerApp.searchForContact": {
+  "en": "Search for {contact}",
+  "ko": "{contact} 검색"
+ },
+ "powerDialerApp.selectUsers": {
+  "en": "Select Users",
+  "ko": "사용자 선택"
+ },
+ "powerDialerApp.selected": {
+  "en": "SELECTED",
+  "ko": "선택됨"
+ },
+ "powerDialerApp.settings.microphone": {
+  "en": "Microphone",
+  "ko": "마이크"
+ },
+ "powerDialerApp.settings.speaker": {
+  "en": "Speaker",
+  "ko": "스피커"
+ },
+ "powerDialerApp.settings.updateBrowserPermissions": {
+  "en": "Update Browser Permissions",
+  "ko": "브라우저 권한 업데이트"
+ },
+ "powerDialerApp.showLess": {
+  "en": "Show less",
+  "ko": "접기"
+ },
+ "powerDialerApp.showMore": {
+  "en": "Show more",
+  "ko": "더 보기"
+ },
+ "powerDialerApp.speaker": {
+  "en": "Speaker",
+  "ko": "스피커"
+ },
+ "powerDialerApp.tags.loadingTags": {
+  "en": "Loading tags",
+  "ko": "태그 불러오는 중"
+ },
+ "powerDialerApp.tags.noTagsFound": {
+  "en": "No tags found",
+  "ko": "태그가 없어요"
+ },
+ "powerDialerApp.tags.searchAndAddTag": {
+  "en": "Search and Add Tag",
+  "ko": "태그 검색 및 추가"
+ },
+ "powerDialerApp.time.itsAround": {
+  "en": "It's around",
+  "ko": "대략"
+ },
+ "powerDialerApp.time.localTime": {
+  "en": "Local Time",
+  "ko": "현지 시간"
+ },
+ "powerDialerApp.togglePowerDialer": {
+  "en": "Toggle Power Dialer",
+  "ko": "파워 다이얼러 전환"
+ },
+ "powerDialerApp.toggleVolume": {
+  "en": "Toggle Volume",
+  "ko": "볼륨 전환"
+ },
+ "powerDialerApp.transcript": {
+  "en": "Transcript",
+  "ko": "통화 기록"
+ },
+ "powerDialerApp.transfer.devicePhone": {
+  "en": "Phone",
+  "ko": "전화번호"
+ },
+ "powerDialerApp.transfer.holdAndCall": {
+  "en": "Hold & Call",
+  "ko": "대기 후 전화 연결"
+ },
+ "powerDialerApp.transfer.transferAndEnd": {
+  "en": "Transfer & End",
+  "ko": "전달 & 종료"
+ },
+ "powerDialerApp.transfer.warmTransfer": {
+  "en": "Warm Transfer",
+  "ko": "웜 트랜스퍼"
+ },
+ "powerDialerApp.twilioErrors.31206": {
+  "en": "The request performed exceeds the authorized limit. Please try again.",
+  "ko": "수행된 요청이 승인된 한도를 초과했습니다. 다시 시도해 주세요."
+ },
+ "powerDialerApp.twilioErrors.31208": {
+  "en": "Please allow Microphone access on your browser.",
+  "ko": "브라우저에서 마이크 접근을 허용해주세요."
+ },
+ "powerDialerApp.unknownContact": {
+  "en": "Unknown {contact}",
+  "ko": "알 수 없음 {contact}"
+ },
+ "powerDialerApp.updateBrowserPermissions": {
+  "en": "Update Browser Permissions",
+  "ko": "브라우저 권한 업데이트"
+ },
+ "powerDialerApp.verifyIdBanner.button": {
+  "en": "Verify ID",
+  "ko": "ID 인증"
+ },
+ "powerDialerApp.verifyIdBanner.title": {
+  "en": "Verify ID to call contacts",
+  "ko": "연락처에 전화하려면 ID를 인증하세요"
+ },
+ "powerDialerApp.verifyIdBannerWarn.description": {
+  "en": "Verify your identity to start outbound calling.",
+  "ko": "발신 통화를 시작하려면 신원을 인증하세요."
+ },
+ "powerDialerApp.verifyIdBannerWarn.title": {
+  "en": "You can't call others yet",
+  "ko": "아직 다른 사람에게 전화할 수 없습니다"
+ },
+ "powerDialerApp.viewProfile": {
+  "en": "View Profile",
+  "ko": "프로필 보기"
+ },
+ "powerDialerApp.voiceIntegrity.voiceIntegrityTooltip": {
+  "en": "Get more answered calls using Voice Integrity.",
+  "ko": "Voice Integrity를 사용하여 더 많은 응답 전화를 받으세요."
+ },
+ "powerDialerApp.voiceIntegrityTooltip": {
+  "en": "Get more answered calls using Voice Integrity.",
+  "ko": "Voice Integrity를 사용하여 더 많은 응답 전화를 받으세요."
+ },
+ "powerDialerApp.voiceMail": {
+  "en": "Voice Mail",
+  "ko": "음성 메일"
+ },
+ "powerDialerApp.voicemail.noVoicemail": {
+  "en": "No voicemail",
+  "ko": "음성 메시지 없음"
+ },
+ "powerDialerApp.voicemail.recordingUnavailable": {
+  "en": "Recording unavailable",
+  "ko": "녹화를 사용할 수 없음"
+ },
+ "powerDialerApp.voicemail.transcriptUnavailable": {
+  "en": "Transcript unavailable",
+  "ko": "스크립트를 사용할 수 없습니다"
+ },
+ "powerDialerApp.voicemail.underMaintenance": {
+  "en": "Under maintenance",
+  "ko": "점검 중"
+ },
+ "powerDialerApp.voicemail.voicemailTooltip": {
+  "en": "about how to change Voicemail and Timeout settings",
+  "ko": "음성 메일 및 시간 초과 설정 변경 방법에 대해"
+ },
+ "powerDialerApp.voicemailTooltip": {
+  "en": "about how to change Voicemail and Timeout settings",
+  "ko": "음성 메일 및 시간 초과 설정 변경 방법에 대해"
+ },
+ "powerDialerApp.with2People": {
+  "en": "With 2 People",
+  "ko": "2명과 함께"
+ },
+ "powerDialerApp.youCanImportContactsOrAddNewOnesFromTheContactPage": {
+  "en": "You can import {contact} or add new ones from the {contact} page.",
+  "ko": "{contact} 페이지에서 {contact}를 가져오거나 새로 추가할 수 있습니다."
+ },
+ "switchyard.hostActions.accountMenu": {
+  "en": "Account menu",
+  "ko": "계정 메뉴"
+ },
+ "switchyard.hostActions.closeAccountMenu": {
+  "en": "Close account menu",
+  "ko": "계정 메뉴 닫기"
+ },
+ "switchyard.hostActions.closeAskAi": {
+  "en": "Close Ask AI",
+  "ko": "Ask AI 닫기"
+ },
+ "switchyard.hostActions.downloadMobileApps": {
+  "en": "Download mobile apps",
+  "ko": "모바일 앱 다운로드"
+ },
+ "switchyard.hostActions.logInAs": {
+  "en": "Log in as",
+  "ko": "다음으로 로그인"
+ },
+ "switchyard.hostActions.loggedInAs": {
+  "en": "Logged in as {name}",
+  "ko": "{name}(으)로 로그인됨"
+ },
+ "switchyard.hostActions.loggedInAsWithEmail": {
+  "en": "Logged in as {name} ({email})",
+  "ko": "{name}({email})(으)로 로그인됨"
+ },
+ "switchyard.hostActions.profileSettings": {
+  "en": "Profile settings",
+  "ko": "프로필 설정"
+ },
+ "switchyard.hostActions.signOut": {
+  "en": "Sign out",
+  "ko": "로그아웃"
+ },
+ "switchyard.hostActions.switchToMyAccount": {
+  "en": "Switch to my account",
+  "ko": "내 계정으로 전환"
+ },
+ "switchyard.loading.cachedChecking": {
+  "en": "Showing your last {thing} · checking for new ones",
+  "ko": "최근 {thing} 표시 중 · 새 항목 확인 중"
+ },
+ "switchyard.loading.cachedStill": {
+  "en": "Still checking for new {thing} — keep working",
+  "ko": "새 {thing}를 계속 확인하는 중 — 계속 진행하세요"
+ },
+ "switchyard.loading.couldNotLoad": {
+  "en": "Couldn't load {page}",
+  "ko": "{page}을(를) 불러올 수 없습니다"
+ },
+ "switchyard.loading.couldNotLoadPage": {
+  "en": "Couldn't load this page",
+  "ko": "이 페이지를 불러올 수 없습니다"
+ },
+ "switchyard.loading.loadedCount": {
+  "en": "Loaded {done} of {total}",
+  "ko": "{total} 중 {done} 로드됨"
+ },
+ "switchyard.loading.loadingAccount": {
+  "en": "Loading your account",
+  "ko": "계정을 불러오는 중"
+ },
+ "switchyard.loading.loadingAgency": {
+  "en": "Loading your agency",
+  "ko": "에이전시를 불러오는 중"
+ },
+ "switchyard.loading.loadingPage": {
+  "en": "Loading {page}…",
+  "ko": "{page} 불러오는 중…"
+ },
+ "switchyard.loading.loadingUnnamedPage": {
+  "en": "Loading page…",
+  "ko": "페이지 불러오는 중…"
+ },
+ "switchyard.loading.loggingInAs": {
+  "en": "Logging in as {name}",
+  "ko": "{name}(으)로 로그인하는 중"
+ },
+ "switchyard.loading.loggingInAsAnotherUser": {
+  "en": "Logging in as another user",
+  "ko": "다른 사용자로 로그인하는 중"
+ },
+ "switchyard.loading.offline": {
+  "en": "You're offline. We'll retry when you're back",
+  "ko": "오프라인 상태입니다. 다시 연결되면 재시도합니다"
+ },
+ "switchyard.loading.openingPage": {
+  "en": "Opening {page} in {name}",
+  "ko": "{name}에서 {page} 여는 중"
+ },
+ "switchyard.loading.slowSwitchNote": {
+  "en": "Still opening {name} — larger accounts take a few seconds.",
+  "ko": "{name} 여는 중 — 계정 규모가 클 경우 몇 초 더 걸립니다."
+ },
+ "switchyard.loading.slowSwitchNoteGeneric": {
+  "en": "Still opening the account — larger accounts take a few seconds.",
+  "ko": "계정 여는 중 — 계정 규모가 클 경우 몇 초 더 걸립니다."
+ },
+ "switchyard.loading.stillLoadingPage": {
+  "en": "Still loading {page}…",
+  "ko": "{page} 불러오는 중…"
+ },
+ "switchyard.loading.stillLoadingPageFirstLoad": {
+  "en": "Still loading {page} — this account has a lot to bring in",
+  "ko": "{page} 불러오는 중 — 이 계정은 가져올 데이터가 많습니다"
+ },
+ "switchyard.loading.stillLoadingPageFirstLoadAgency": {
+  "en": "Still loading {page} — this agency has a lot to bring in",
+  "ko": "{page} 불러오는 중 — 이 에이전시는 가져올 데이터가 많습니다"
+ },
+ "switchyard.loading.stillWorking": {
+  "en": "Still working on it",
+  "ko": "계속 처리 중입니다"
+ },
+ "switchyard.loading.stillWorkingConnection": {
+  "en": "Still working on it · Your connection may be slow",
+  "ko": "계속 처리 중입니다 · 연결 속도가 느릴 수 있습니다"
+ },
+ "switchyard.loading.stillWorkingFirstLoad": {
+  "en": "Still working on it — this account has a lot to bring in",
+  "ko": "계속 처리 중입니다 — 이 계정은 가져올 데이터가 많습니다"
+ },
+ "switchyard.loading.stillWorkingFirstLoadAgency": {
+  "en": "Still working on it — this agency has a lot to bring in",
+  "ko": "계속 처리 중입니다 — 이 에이전시는 가져올 데이터가 많습니다"
+ },
+ "switchyard.loading.switchedTo": {
+  "en": "Switched to {name}",
+  "ko": "{name}(으)로 전환됨"
+ },
+ "switchyard.loading.switchingAccount": {
+  "en": "Switching account",
+  "ko": "계정 전환 중"
+ },
+ "switchyard.loading.switchingBackToOwnAccount": {
+  "en": "Switching back to your account",
+  "ko": "내 계정으로 다시 전환하는 중"
+ },
+ "switchyard.loading.switchingTo": {
+  "en": "Switching to {name}",
+  "ko": "{name}(으)로 전환하는 중"
+ },
+ "switchyard.askAi.exitFullscreen": {
+  "en": "Exit fullscreen",
+  "ko": "전체화면 나가기"
+ },
+ "switchyard.hostActions.accountUser": {
+  "en": "Account user",
+  "ko": "계정 사용자"
+ },
+ "switchyard.loading.tryAgain": {
+  "en": "Try again",
+  "ko": "다시 시도"
+ },
+ "workflowHotlinks.errors.deleteWorkflow.title": {
+  "en": "Failed to delete workflow",
+  "ko": "워크플로우 삭제에 실패했습니다"
+ },
+ "workflowHotlinks.errors.renameWorkflow.title": {
+  "en": "Failed to rename workflow",
+  "ko": "워크플로우 이름 변경에 실패했습니다"
+ },
+ "workflowHotlinks.linkedWorkflows.deleteModal.confirmPrompt": {
+  "en": "Type \"{confirmType}\" to confirm",
+  "ko": "확인하려면 \"{confirmType}\"을(를) 입력하세요"
+ },
+ "workflowHotlinks.linkedWorkflows.deleteModal.content": {
+  "en": "Once deleted, it will move to the \"Deleted\" tab and will be permanently removed after 30 days.",
+  "ko": "삭제되면 \"Deleted\" 탭으로 이동하며 30일 후 영구적으로 삭제됩니다."
+ },
+ "workflowHotlinks.linkedWorkflows.deleteModal.description": {
+  "en": "Are you sure you want to delete \"{name}\"?",
+  "ko": "\"{name}\"을(를) 삭제하시겠습니까?"
+ },
+ "workflowHotlinks.linkedWorkflows.deleteModal.title": {
+  "en": "Delete workflow",
+  "ko": "워크플로우 삭제"
+ },
+ "workflowHotlinks.linkedWorkflows.deleteSuccess.description": {
+  "en": "\"{name}\" has been deleted.",
+  "ko": "\"{name}\"이(가) 삭제되었습니다."
+ },
+ "workflowHotlinks.linkedWorkflows.deleteSuccess.title": {
+  "en": "Workflow deleted",
+  "ko": "워크플로우 삭제됨"
+ },
+ "workflowHotlinks.linkedWorkflows.noWorkflows": {
+  "en": "No linked workflows found",
+  "ko": "연결된 워크플로우를 찾을 수 없습니다"
+ },
+ "workflowHotlinks.linkedWorkflows.renameModal.description": {
+  "en": "Give this workflow a name that tells you what it does.",
+  "ko": "이 워크플로우가 무엇을 하는지 알 수 있는 이름을 지정하세요."
+ },
+ "workflowHotlinks.linkedWorkflows.renameModal.namePlaceholder": {
+  "en": "Enter workflow name",
+  "ko": "워크플로우 이름 입력"
+ },
+ "workflowHotlinks.linkedWorkflows.renameModal.nameRequired": {
+  "en": "Workflow name is required",
+  "ko": "워크플로우 이름은 필수입니다"
+ },
+ "workflowHotlinks.linkedWorkflows.renameModal.title": {
+  "en": "Rename workflow",
+  "ko": "워크플로우 이름 변경"
+ },
+ "workflowHotlinks.linkedWorkflows.renameSuccess.description": {
+  "en": "This workflow is now called \"{name}\".",
+  "ko": "이 워크플로우의 이름이 \"{name}\"(으)로 변경되었습니다."
+ },
+ "workflowHotlinks.linkedWorkflows.renameSuccess.title": {
+  "en": "Workflow renamed",
+  "ko": "워크플로우 이름 변경됨"
+ },
+ "workflowHotlinks.linkedWorkflows.title": {
+  "en": "Linked Workflows",
+  "ko": "연결된 워크플로우"
+ },
+ "workflowHotlinks.errors.deleteWorkflow.description": {
+  "en": "Please try again later.",
+  "ko": "나중에 다시 시도해 주세요."
+ },
+ "workflowHotlinks.errors.renameWorkflow.description": {
+  "en": "Please try again later.",
+  "ko": "나중에 다시 시도해 주세요."
+ },
+ "workflowHotlinks.linkedWorkflows.actions": {
+  "en": "Actions",
+  "ko": "작업"
+ },
+ "workflowHotlinks.linkedWorkflows.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "workflowHotlinks.linkedWorkflows.delete": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "workflowHotlinks.linkedWorkflows.lastUpdated": {
+  "en": "Last Updated",
+  "ko": "최근 수정"
+ },
+ "workflowHotlinks.linkedWorkflows.moreActions": {
+  "en": "More actions",
+  "ko": "더 많은 액션"
+ },
+ "workflowHotlinks.linkedWorkflows.name": {
+  "en": "Workflow Name",
+  "ko": "워크플로우 이름"
+ },
+ "workflowHotlinks.linkedWorkflows.openInNewTab": {
+  "en": "Open in new tab",
+  "ko": "새 탭에서 열기"
+ },
+ "workflowHotlinks.linkedWorkflows.preview": {
+  "en": "Preview",
+  "ko": "미리보기"
+ },
+ "workflowHotlinks.linkedWorkflows.rename": {
+  "en": "Rename",
+  "ko": "이름 변경"
+ },
+ "workflowHotlinks.linkedWorkflows.renameModal.nameLabel": {
+  "en": "Name",
+  "ko": "이름"
+ },
+ "workflowHotlinks.linkedWorkflows.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "workflowHotlinks.linkedWorkflows.status": {
+  "en": "Status",
+  "ko": "상태"
  }
 }
