@@ -40,7 +40,8 @@ def main():
     # 결정이 바뀌면 data/ko-app-exclusions.json 에서 등재만 지우고 재분할하면 된다.
     prefixes = load_prefixes()
     core = {'_meta': dict(meta, part='core'),
-            'host': copy.deepcopy(o['host']), 'flat': dict(o['flat']), '_text': dict(o['_text'])}
+            'host': copy.deepcopy(o['host']), 'flat': dict(o['flat']), '_text': dict(o['_text']),
+            '_textScoped': dict(o.get('_textScoped') or {})}
     apps = {'_meta': dict(meta, part='apps'),
             'apps': copy.deepcopy(o['apps']), 'appsMeta': o['appsMeta']}
 
@@ -50,6 +51,7 @@ def main():
         n_flat = len(prune_flat_keys(core['flat'], prefixes))
         # _text 는 키가 영어 원문이다 — 경로가 아니라 원문으로 대조해야 한다.
         n_text = len(prune_by_english(core['_text'], en))
+        n_text += len(prune_by_english(core['_textScoped'], en))
         n_apps = sum(len(prune_nested(cat, prefixes)) for cat in apps['apps'].values())
         print(f'제외 적용 — 네임스페이스 {len(prefixes)}개 / 영어 원문 {len(en)}종')
         print(f'  host {n_host} / apps {n_apps} / flat {n_flat} / _text {n_text} 제거')
@@ -61,7 +63,7 @@ def main():
         print(f'  {os.path.relpath(path, ROOT):<32} {os.path.getsize(path):>10,} bytes')
 
     print(f'host {len(core["host"]):,} ns / apps {len(apps["apps"]):,} / '
-          f'flat {len(core["flat"]):,} / _text {len(core["_text"]):,}')
+          f'flat {len(core["flat"]):,} / _text {len(core["_text"]):,} / _textScoped {len(core["_textScoped"]):,}')
     return 0
 
 

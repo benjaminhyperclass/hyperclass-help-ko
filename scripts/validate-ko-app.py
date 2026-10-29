@@ -14,6 +14,7 @@ v4 사전은 중첩 카탈로그라 그 게이트에 걸리지 않으므로 이 
   C6 HTML 태그 개수 불일치
   C7 _text 안전성
   C12 _text 단어 1개 키 금지 (2026-10-08 벤자민 결정 — 전 서브계정 개방 후 고객 태그·단계명 치환 방지)
+  C13 _textScoped 형식 (v4.17 — UI 크롬 한정 단어 1개 레이어: 키는 단어 1개·DNT 아님·_text 와 중복 아님)
 
 위반이 있으면 sys.exit(1). 경고만 하고 통과시키지 않는다.
 
@@ -195,6 +196,9 @@ def collect(core, apps):
     for k, v in (core.get('_text') or {}).items():
         if isinstance(v, str):
             rows.append(('_text', k, v))
+    for k, v in (core.get('_textScoped') or {}).items():
+        if isinstance(v, str):
+            rows.append(('_textScoped', k, v))
     return rows
 
 
@@ -218,8 +222,9 @@ def main():
 
     rows = collect(core, apps)
     text = core.get('_text') or {}
+    scoped = core.get('_textScoped') or {}
 
-    v = {c: [] for c in ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11', 'C12')}
+    v = {c: [] for c in ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11', 'C12', 'C13')}
 
     # ── C1 화이트라벨 ──────────────────────────────────────────
     for src, key, ko in rows:
@@ -259,6 +264,9 @@ def main():
     for en, ko in text.items():
         if isinstance(en, str) and isinstance(ko, str):
             pairs.append(('_text', en, en, ko))
+    for en, ko in scoped.items():
+        if isinstance(en, str) and isinstance(ko, str):
+            pairs.append(('_textScoped', en, en, ko))
 
     for src, key, en, ko in pairs:
         # C2 DNT
@@ -291,8 +299,8 @@ def main():
             v['C6'].append({'src': src, 'key': key[:70], 'en_tags': te, 'ko_tags': tk,
                             'en': en[:60], 'ko': ko[:60]})
 
-    # ── C7 _text 안전성 ────────────────────────────────────────
-    for en, ko in text.items():
+    # ── C7 _text 안전성 (_textScoped 도 같은 규칙) ───────────────
+    for en, ko in list(text.items()) + list(scoped.items()):
         why = []
         if len(en.strip()) < 3:
             why.append('키 3자 미만')
@@ -320,6 +328,23 @@ def main():
             v['C12'].append({'key': k, 'ko': text[en][:40],
                              'why': '단어 하나짜리 _text — 고객 데이터(태그·단계명) 치환 위험'})
 
+    # ── C13 _textScoped 형식 ───────────────────────────────────
+    # 로더 v4.17 의 단어 1개 레이어. UI 크롬(th·button·tab·menuitem·label) 안에서만 적용되므로 C12 의 전면 금지를
+    # 좁게 완화한 것이다. 그 대신 ① 키는 단어 1개(공백·구두점 없음) ② DNT 토큰·그 소문자형 금지 ③ _text 와 중복 금지
+    # ④ 값에 한글 필수 — 이 넷을 어기면 레이어의 전제가 깨진다.
+    for en, ko in scoped.items():
+        k = en.strip(); why = []
+        if not re.fullmatch(r"[A-Za-z][A-Za-z'\-]*", k):
+            why.append('단어 1개가 아님')
+        if k.upper() in DNT_TOKENS:
+            why.append('DNT 토큰')
+        if en in text or k in text:
+            why.append('_text 와 중복')
+        if not HANGUL_RE.search(ko):
+            why.append('값에 한글 없음')
+        if why:
+            v['C13'].append({'key': k[:40], 'ko': ko[:40], 'why': why})
+
     # ── C8 도메인에 한글 혼입 ──────────────────────────────────
     for src, key, ko in rows:
         for m in DOMAIN_RE.finditer(ko):
@@ -345,14 +370,14 @@ def main():
         ex_en = english_originals(ex_prefixes)
         # 경로 기준 — core/apps 의 host·apps·flat
         for src, key, ko in rows:
-            if src == '_text':
+            if src in ('_text', '_textScoped'):
                 continue
             if any(key.startswith(p) for p in ex_prefixes):
                 v['C10'].append({'src': src, 'key': key, 'ko': ko[:60], 'why': '제외 등재 네임스페이스'})
         # 영어 원문 기준 — _text 와 레거시 사전
-        for en_key in text:
+        for en_key in list(text) + list(scoped):
             if en_key.strip() in ex_en:
-                v['C10'].append({'src': '_text', 'key': en_key[:70], 'ko': text[en_key][:60],
+                v['C10'].append({'src': '_text', 'key': en_key[:70], 'ko': (text.get(en_key) or scoped.get(en_key))[:60],
                                  'why': '제외 등재 네임스페이스의 영어 원문'})
         for path, name in ((os.path.join(ROOT, 'data/ghl-i18n-ko.json'), 'ghl-i18n-ko.json'),
                            (os.path.join(ROOT, 'data/manual-dict-v401.json'), 'manual-dict-v401.json')):
@@ -389,12 +414,13 @@ def main():
         'C10': '제외 네임스페이스 잔존',
         'C11': '옵트아웃 게이트 유실',
         'C12': '_text 단어 1개 키',
+        'C13': '_textScoped 형식',
     }
     for g in gate_rows:
         mark = '✅' if g['ok'] else ('❌' if g['hard'] else '⏳ 다음 빌드에서 반영')
         print(f'  옵트아웃 게이트 {g["label"]:<18} {g["file"]:<34} 가드 {g["guards"]}  {mark}')
     print()
-    print(f'검사 대상 — 한국어 값 {len(rows):,}개 / en·ko 쌍 {len(pairs):,}개 / _text {len(text):,}개')
+    print(f'검사 대상 — 한국어 값 {len(rows):,}개 / en·ko 쌍 {len(pairs):,}개 / _text {len(text):,}개 / _textScoped {len(scoped):,}개')
     print()
     print(f'{"검사":<6}{"항목":<26}{"위반":>8}')
     print('-' * 42)
@@ -428,7 +454,7 @@ def main():
     def blocking_rows(c):
         return [x for x in v[c] if x.get('src') != 'ref(미배포)']
 
-    HARD = ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C8', 'C9', 'C10', 'C11', 'C12')
+    HARD = ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C8', 'C9', 'C10', 'C11', 'C12', 'C13')
     blocking = sum(len(blocking_rows(c)) for c in HARD)
     shelved = sum(len(v[c]) for c in HARD) - blocking
     if blocking:

@@ -24,7 +24,7 @@ def main():
         '_meta': core.get('_meta'),
         'host': core['host'], 'apps': apps['apps'],
         'appsMeta': apps.get('appsMeta'),
-        'flat': core['flat'], '_text': core['_text'],
+        'flat': core['flat'], '_text': core['_text'], '_textScoped': core.get('_textScoped') or {},
     }
     with open(out_path, 'w', encoding='utf-8') as f:
         json.dump(merged, f, ensure_ascii=False, separators=(',', ':'))

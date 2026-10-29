@@ -1,4 +1,8 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.16.1
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.17.0
+ * v4.17: 단어 1개 치환 레이어(_textScoped) — 레거시 dashboard-ko 가 전역으로 치던 단어 1개 항목(Phone·Filters·Import·All…)을
+ *        **UI 크롬 요소 안에서만**(표 머리글·버튼·탭·메뉴·label) 정확 일치로 바꾼다. 셀·옵션·칩·본문은 범위 밖이라
+ *        고객 데이터(태그·단계명·업체명)는 건드리지 않는다(2026-10-08 결정의 좁은 완화). 레거시 슬롯 줄 은퇴의 전제.
+ *        상태: __hcKoApp.status().scopedEntries / scopedHits
  * v4.16: 텔레메트리에 미번역 키의 **영어 원문 샘플**(ns 당 최대 150쌍, 보고서 ≤60KB)을 동봉 — Worker 가 KV 에 모아
  *        번역 라운드 입력(data/telemetry/en-missing/)을 사람 손 없이 채운다. UI 문자열만, 사용자 데이터 없음.
  * v4.15: 엣지 Worker 가 <head> 에 넣어 준 window.__hcPtr(포인터 스냅샷)이 있으면 Cache Storage 포인터를 기다리지 않고
@@ -130,19 +134,19 @@
   var LOCALE_KEYS = ['en', 'en-US', 'en_US'];
   var DEBUG = /[?&]hcko=debug/.test(location.search);
 
-  var core = null, appsDict = null, appsKeys = null, T = null;
+  var core = null, appsDict = null, appsKeys = null, T = null, TS = null;
   var booted = false, suspended = false;
   // 되돌릴 수 없는 변경을 한 번이라도 했는가.
   // i18n 카탈로그에 한국어를 부어 넣거나 provides.t 를 래퍼로 바꾸면
   // 원복 수단이 없다 — 이 상태에서 제외 계정으로 넘어가면 새로고침이 유일한 답이다.
   var dirty = false;
-  var stats = { host: 0, apps: 0, tref: 0, remerge: 0, fuzzy: 0, unmatched: 0, textHits: 0, fallback: 0, pointerFail: 0, revFallback: 0 };
+  var stats = { host: 0, apps: 0, tref: 0, remerge: 0, fuzzy: 0, unmatched: 0, textHits: 0, scopedHits: 0, fallback: 0, pointerFail: 0, revFallback: 0 };
   function log() { if (DEBUG && window.console) console.log.apply(console, ['[hc-ko]'].concat([].slice.call(arguments))); }
 
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.16.1',
+    version: '4.17.0',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -162,6 +166,8 @@
       s.coreLoaded = !!core;
       s.appsLoaded = !!appsDict;
       s.textEntries = T ? Object.keys(T).length : 0;
+      s.scopedEntries = TS ? Object.keys(TS).length : 0;
+      s.scopedHits = stats.scopedHits;
       return s;
     },
     rescan: function () { scanApps(); },
@@ -426,25 +432,47 @@
   function joinsPrev(s, t, v) {
     return /^\s/.test(s) && JOIN_EN_RE.test(t) && PARTICLE_RE.test(v);
   }
+  // D2. 단어 1개 치환(_textScoped, v4.17) — 텍스트 노드의 부모가 UI 크롬(표 머리글·버튼·탭·메뉴·label·페이지네이션)
+  // 안에 있을 때만. 가까운 조상 3단계까지만 본다(버튼 안의 span 정도). 셀(td)·옵션·칩·본문은 범위 밖.
+  var SCOPED_SEL = 'th,[role="columnheader"],button,[role="button"],[role="tab"],[role="menuitem"],label,' +
+    '.n-button,.n-tabs-tab,.n-pagination-item,.hl-btn,.hl-text-btn,.topmenu-nav a,nav a,[role="navigation"] a,[role="menubar"] a';
+  var SCOPED_SKIP = 'td,[role="option"],[role="listbox"],[role="gridcell"],.n-tag,.tag,[contenteditable]';
+  function inScope(p) {
+    try {
+      var e = p, depth = 0;
+      while (e && e.nodeType === 1 && depth < 4) {
+        if (e.matches(SCOPED_SKIP)) return false;
+        if (e.matches(SCOPED_SEL)) return true;
+        e = e.parentElement; depth++;
+      }
+    } catch (err) {}
+    return false;
+  }
   function trText(n) {
-    var s = n.nodeValue; if (!s || !T) return;
+    var s = n.nodeValue; if (!s || (!T && !TS)) return;
     var t = s.trim(); if (!t) return;
-    var v = T[t];
-    if (v === undefined) return;
+    var v = T ? T[t] : undefined, scoped = false;
+    if (v === undefined) {
+      if (!TS) return;
+      v = TS[t]; if (v === undefined) return;
+      if (!inScope(n.parentElement)) return;
+      scoped = true;
+    }
     if (skipNode(n)) return;
     n.nodeValue = joinsPrev(s, t, v) ? v + (s.match(/\s*$/) || [''])[0] : repl(s, t, v);
-    stats.textHits++;
+    if (scoped) stats.scopedHits++; else stats.textHits++;
   }
   function trAttrs(el) {
-    if (!T || !el.getAttribute) return;
+    if ((!T && !TS) || !el.getAttribute) return;
     for (var i = 0; i < ATTRS.length; i++) {
       var a = ATTRS[i], s = el.getAttribute(a); if (!s) continue;
-      var v = T[s.trim()];
-      if (v !== undefined) { el.setAttribute(a, v); stats.textHits++; }
+      var v = T ? T[s.trim()] : undefined, sc = false;
+      if (v === undefined && TS && (a === 'placeholder' || a === 'aria-label')) { v = TS[s.trim()]; sc = true; }
+      if (v !== undefined) { el.setAttribute(a, v); if (sc) stats.scopedHits++; else stats.textHits++; }
     }
   }
   function pass(root) {
-    if (!T || !root) return;
+    if ((!T && !TS) || !root) return;
     try {
       var w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null), n;
       while ((n = w.nextNode())) trText(n);
@@ -620,7 +648,7 @@
       }).catch(function (e) { stats.pointerFail++; log('포인터 갱신 실패 — 현재 REV 유지', e && e.message); });
     } catch (e) {}
   }
-  function onCoreStale(nd) { core = nd; T = nd._text || null; hostDone = false; setupHost(); }
+  function onCoreStale(nd) { core = nd; T = nd._text || null; TS = nd._textScoped || null; hostDone = false; setupHost(); }
   // 포인터가 가리키는 REV 의 사전을 CDN·raw 양쪽에서 못 받으면(가리키는 커밋에 파일이 없거나
   // 삭제된 경우) 포인터를 버리고 내장 REV 로 한 번 더 간다. 내장 REV 까지 실패하면 그대로 실패.
   function loadCore() {
@@ -746,7 +774,7 @@
       // 내장 REV 로 돌아갈 때 그 버킷이 이미 없어 5.4MB 를 처음부터 다시 받는다.
       purgeOldCaches();
       core = r[0] || {}; core.host = core.host || {}; core.flat = core.flat || {};
-      T = core._text || null;
+      T = core._text || null; TS = core._textScoped || null;
       hostFound = !!r[1];
       // 첫 방문은 사전(수 MB)을 받는 동안 사용자가 제외 계정·에이전시 화면으로 옮겨 갈 수 있다.
       // 그때 바로 적용하면 그 화면이 한국어가 되고 suspended 라 이후 새로고침도 걸리지 않는다.

@@ -67,6 +67,7 @@ def load_surfaces(dic):
         s['apps:' + fp[:24]] = flatten(app, {})
     if 'flat' in dic:  s['flat'] = dict(dic['flat'])
     if '_text' in dic: s['_text'] = dict(dic['_text'])
+    if '_textScoped' in dic: s['_textScoped'] = dict(dic['_textScoped'])
     return s
 
 def load_english(cat):
@@ -104,7 +105,7 @@ def main():
 
     for sname, pairs in surfaces.items():
         for key, ko in pairs.items():
-            src = en.get(key, key if sname == '_text' else '')
+            src = en.get(key, key if sname in ('_text', '_textScoped') else '')
             if src:
                 if DNT_EXACT.match(src.strip()) and HANGUL.search(ko):
                     v['D1_literal_translated'].append(
