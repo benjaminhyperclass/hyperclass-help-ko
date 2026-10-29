@@ -1,4 +1,5 @@
 /* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.18.0
+ * v4.18.1: _textScoped 조상 탐색 깊이 3→8 (실측: 연락처 표 머리글이 th 아래 4단계 이상이라 v4.17 이 못 잡았다)
  * v4.18: 인앱 문구 신고 — 화면의 글자를 **Alt+Shift+클릭** 하면 그 텍스트 노드의 원문·부모 요소·라우트를 텔레메트리 Worker
  *        /report 로 보낸다(세션당 20건, 식별자 없음). 일일 집계가 data/telemetry/reports.json 과 이슈 코멘트로 모은다.
  *        (Alt+클릭만 쓰면 크롬이 링크를 다운로드하므로 Shift 를 함께 요구한다.) 상태: __hcKoApp.status().reports
@@ -149,7 +150,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.18.0',
+    version: '4.18.1',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -437,14 +438,15 @@
     return /^\s/.test(s) && JOIN_EN_RE.test(t) && PARTICLE_RE.test(v);
   }
   // D2. 단어 1개 치환(_textScoped, v4.17) — 텍스트 노드의 부모가 UI 크롬(표 머리글·버튼·탭·메뉴·label·페이지네이션)
-  // 안에 있을 때만. 가까운 조상 3단계까지만 본다(버튼 안의 span 정도). 셀(td)·옵션·칩·본문은 범위 밖.
+  // 안에 있을 때만. 조상 8단계까지 본다 — GHL 표 머리글은 th > wrapper > title > div > span > text 처럼 깊다(v4.18.1,
+  // 3단계로는 연락처 머리글을 못 잡았다). 셀(td)·옵션·칩·본문은 SCOPED_SKIP 이 먼저 걸러 범위 밖.
   var SCOPED_SEL = 'th,[role="columnheader"],button,[role="button"],[role="tab"],[role="menuitem"],label,' +
     '.n-button,.n-tabs-tab,.n-pagination-item,.hl-btn,.hl-text-btn,.topmenu-nav a,nav a,[role="navigation"] a,[role="menubar"] a';
   var SCOPED_SKIP = 'td,[role="option"],[role="listbox"],[role="gridcell"],.n-tag,.tag,[contenteditable]';
   function inScope(p) {
     try {
       var e = p, depth = 0;
-      while (e && e.nodeType === 1 && depth < 4) {
+      while (e && e.nodeType === 1 && depth < 8) {
         if (e.matches(SCOPED_SKIP)) return false;
         if (e.matches(SCOPED_SEL)) return true;
         e = e.parentElement; depth++;
