@@ -27,7 +27,10 @@
 | 최적화 (2026-10-28 밤) | 엣지 Worker v0.3: 포인터 스냅샷 `window.__hcPtr`(60s 엣지 캐시) 주입 + 로더·어댑터·core preload + 브랜드 스플래시 베일 → 우리 자산 783ms 에 전부 도착(GHL app.js 이전), 첫 페인트 616ms(스플래시), 한국어 적용은 GHL 마운트 즉시(≈2.3s). 부트스트랩 v1.2(엣지 포인터·raw 폴백), 로더 v4.15(edge REV). `loader.stable` 승격 완료 |
 | 글로서리 통일 | `round-merge.py --unify` 로 1,076건 치환 → 사전 **v4.2.9** 라이브(잔존 25). 정규 표기가 이미 있는 문장·오치환 위험 변형은 제외 |
 | 자동 번역 루프 | 로더 **v4.16**(전 고객): 미번역 키 영어 원문을 ns 당 150쌍 동봉 → Worker v0.3 `en/<ns>/<key>` KV → digest 가 `data/telemetry/en-missing/<ns>.json` → `ko-translate-round.yml`(월·목 자동·수동)이 참조본 재사용→번역→글로서리·DNT→검증→**PR**. 머지 = 포인터 자동 전진. 브라우저 수동 추출 불필요 |
-| 다음 손 | EN 풀이 차면(며칠 내 자동) 첫 라운드 PR 이 열린다 → 벤자민은 PR 에서 용어만 훑고 머지. 즉시 돌리려면 운영 계정에서 대시보드·AI 스튜디오·통화·리포팅 화면을 새 탭으로 몇 번 열면 풀이 빨리 찬다 → Actions "번역 라운드" Run workflow |
+| 2026-10-29 오전 | ① **1라운드 PR #7** (사전 v4.2.18 후보, 687건: powerDialerApp 342·calendarComponentsApp 150·common 102·mediaCenterApp 73…) — 자동 리뷰 high 5 → 반영 → high 0, 2차 반영(녹화→녹음·반말·용어). **벤자민 머지 대기** ② `ko-round-review.yml` + `scripts/round-review.py`: 규칙 R1~R7 + Claude 검수 → PR 코멘트 ③ `ko-sensors.yml`: S1 매니페스트(main 2136, federatedApps 버전) 6h · S4 릴리스 노트 → 이슈 #6 ④ 로더 v4.16.1: EN 샘플 600자 이하만(잘림 금지) · 라운드 600자 이상 제외 ⑤ CI: 로더 포인터 SHA 실존 하드 게이트 |
+| 사고 기록 | 10-29 01:3x UTC 포인터가 존재하지 않는 로더 SHA(79423a5)를 2분간 가리킴(번들 재사용 실수) → 긴급 수정 806749b. 영향: 그 사이 첫 로드한 세션은 1회 영어. 재발 방지: CI 게이트 + 번들 파일명 고유화 |
+| 미결 | 레포 설정 "Allow GitHub Actions to create and approve pull requests" OFF → 라운드 워크플로가 브랜치만 밀고 PR 은 수동(벤자민 결정) |
+| 다음 손 | **벤자민: PR #7 머지** → 포인터 자동 전진. EN 풀이 차면(며칠 내 자동) 다음 라운드 PR 이 열린다 → 벤자민은 PR 에서 용어만 훑고 머지. 즉시 돌리려면 운영 계정에서 대시보드·AI 스튜디오·통화·리포팅 화면을 새 탭으로 몇 번 열면 풀이 빨리 찬다 → Actions "번역 라운드" Run workflow |
 
 ## 배포 좌표
 
