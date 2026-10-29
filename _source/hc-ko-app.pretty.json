@@ -55147,7 +55147,7 @@
     "chat": {
      "selectEntityMixed": "옵션을 검색하고 선택하세요",
      "ariaSelectTeamMember": "팀원 선택",
-     "ariaSelectTeamMembers": "추가할 팀 멤버 선택",
+     "ariaSelectTeamMembers": "추가할 팀원 선택",
      "doneAddingMembers": "멤버 추가 완료"
     },
     "fieldService": {
@@ -55159,7 +55159,7 @@
        "durationMinutes": "소요 시간",
        "name": "이름"
       },
-      "updated": "수정일"
+      "updated": "업데이트됨"
      },
      "errors": {
       "inProgress": "현장 서비스가 아직 생성되는 중입니다. 잠시 기다렸다가 다시 확인해 주세요.",
@@ -55206,17 +55206,17 @@
      "bookingLinkReady": "\n\n예약 링크가 준비되었습니다: {url}",
      "calendarDeleted": "캘린더가 삭제되었습니다.",
      "calendarLive": "**{name}** 캘린더가 공개되었습니다",
-     "collectiveNeedMoreMembers": "공동 캘린더에는 팀 멤버가 2명 이상 필요합니다. 최소 1명 이상 추가해 주세요.",
-     "editConfigPrompt": "네, 무엇을 변경하시겠어요? 업데이트할 내용을 말씀해 주세요.\n\n예: \"45분으로 변경\", \"가능 시간을 평일 오전 9:00–오후 6:00 으로 변경\", \"보증금 50%로 $100 결제 추가\", 또는 \"팀원 업데이트\".",
+     "collectiveNeedMoreMembers": "공동 캘린더에는 팀원가 2명 이상 필요합니다. 최소 1명 이상 추가해 주세요.",
+     "editConfigPrompt": "네, 무엇을 변경하시겠습니까? 업데이트할 내용을 말씀해 주세요.\n\n예: \"45분으로 변경\", \"예약 가능 시간을 평일 오전 9:00–오후 6:00으로 변경\", \"$100 결제(보증금 50%) 추가\", \"팀원 업데이트\".",
      "embedCodeCopied": "임베드 코드가 클립보드에 복사되었습니다",
      "groupSizeConfirmClass": "알겠습니다 - 수업당 {size} 석입니다.",
-     "howManyTeamMembers": "이 예약을 처리할 팀 멤버는 몇 명인가요?",
+     "howManyTeamMembers": "이 예약을 처리할 팀원는 몇 명입니까?",
      "noPermission": "캘린더를 만들 권한이 없습니다. 액세스를 요청하려면 관리자에게 문의해 주세요.",
-     "noUsersAskPlaceholder": "이 서브 계정에는 아직 팀 멤버가 없습니다. 어떻게 계속하시겠습니까?",
-     "notPartOfLocation": "회원님은 이 서브 계정에 속해 있지 않습니다. 이 캘린더에 추가할 팀 멤버를 선택해 주세요.",
+     "noUsersAskPlaceholder": "이 서브 계정에는 아직 팀원가 없습니다. 어떻게 계속하시겠습니까?",
+     "notPartOfLocation": "회원님은 이 서브 계정에 속해 있지 않습니다. 이 캘린더에 추가할 팀원를 선택해 주세요.",
      "openingCalendarTypesPage": "캘린더 설정 페이지를 열어 드립니다 — 사용 가능한 모든 캘린더 유형과 활용 사례를 확인해 보세요.",
      "openingConnectionsHelp": "연결 페이지를 여는 중입니다. 그곳에서 연동을 연결하거나 관리할 수 있습니다.",
-     "perfectAddYou": "좋습니다. 팀 멤버로 추가하겠습니다. 나중에 캘린더 설정에서 더 많은 사람을 추가할 수 있습니다.",
+     "perfectAddYou": "좋습니다. 팀원로 추가하겠습니다. 나중에 캘린더 설정에서 더 많은 사람을 추가할 수 있습니다.",
      "postCreationOptions": "이제 모든 기능이 제대로 작동하는지 확인해 보세요. 직접 캘린더에서 예약을 잡아 보세요. 고객에게 보이는 화면과 동일합니다.",
      "sizeAttendees": "참석자 {size}명",
      "teamCountPeople": "{count}명",
@@ -55224,7 +55224,7 @@
      "whereWillSessionTakePlace": "세션은 어디에서 진행되나요? 아래에 위치를 입력하세요."
     },
     "quickReplies": {
-     "troubleshootAvailability": "가용성 문제 해결",
+     "troubleshootAvailability": "예약 가능 시간 문제 해결",
      "addAvailableUsers": "사용 가능한 사용자 추가",
      "adjustDuration": "기간 조정",
      "bookTestAppointment": "테스트 예약하기",
@@ -55243,7 +55243,7 @@
      "justAddMeForNow": "지금은 나만 추가",
      "multiplePeople": "우리 팀의 여러 명",
      "needDifferentHours": "다른 시간이 필요합니다",
-     "openAvailability": "가능 시간 열기",
+     "openAvailability": "예약 가능 시간 설정",
      "openCalendarSettings": "캘린더 설정 열기",
      "setWorkingHours": "근무 시간 설정",
      "startOver": "처음부터 다시",
@@ -55279,7 +55279,7 @@
      "title": "캘린더가 라이브 상태입니다"
     },
     "feedback": {
-     "whatWentWell": "잘된 점은 무엇인가요?"
+     "whatWentWell": "잘된 점은 무엇입니까?"
     },
     "locationPicker": {
      "confirm": "확인",
@@ -55327,12 +55327,12 @@
      "yourAnswer": "답변..."
     },
     "serviceCreation": {
-     "pricePrompt": "이 서비스의 가격은 얼마인가요? 금액을 입력하거나 아래 옵션을 선택하세요.",
+     "pricePrompt": "이 서비스의 가격은 얼마입니까? 금액을 입력하거나 아래 옵션을 선택하세요.",
      "teamPrompt": "이 서비스의 예약을 누가 처리합니까?",
      "variationsSummary": "알겠습니다. 다음 변형을 만들겠습니다:"
     },
     "summary": {
-     "heading": "회원님의 캘린더는 다음과 같습니다:"
+     "heading": "캘린더는 다음과 같습니다:"
     },
     "typing": {
      "thinking": "생각 중"
@@ -55371,7 +55371,7 @@
     },
     "build": {
      "no_eligible": "지금 걸 수 있는 항목이 없습니다",
-     "no_outbound_number": "이 연락처들 중 발신 가능한 번호가 있는 연락처가 없습니다. 전화번호를 확인하세요."
+     "no_outbound_number": "이 연락처들에게 전화를 걸 수 있는 발신 번호가 없습니다. 전화번호를 확인하세요."
     },
     "callback": {
      "strip": {
@@ -55380,7 +55380,7 @@
      }
     },
     "chip": {
-     "callbackNextTooltip": "{name} 님이 다른 사람과 연결 중일 때 응답하여 콜백 메시지를 들었습니다. 단독으로 다이얼링되며, 다음 차례입니다.",
+     "callbackNextTooltip": "다른 연락처와 연결 중일 때 {name} 님이 응답해 콜백 메시지를 들었습니다. 다음 차례에 단독으로 전화를 겁니다.",
      "connectedDuration": "연결됨 · {duration}",
      "notYetCalledAria": "아직 통화하지 않음",
      "rangRecentlyTooltip": "연결 중에 벨이 울렸습니다. {time}에 다시 다이얼 가능합니다.",
@@ -55464,14 +55464,14 @@
     },
     "reasons": {
      "ALREADY_ON_A_CALL": {
-      "detail": "이 연락처는 이미 회원님의 비즈니스와 통화 중이었습니다."
+      "detail": "이 연락처는 이미 비즈니스와 통화 중이었습니다."
      },
      "BLOCKED_NUMBER": {
       "chip": "차단된 번호"
      },
      "CALLER_ID_NOT_ALLOWED": {
       "chip": "발신자 ID가 허용되지 않음",
-      "detail": "회원님의 발신자 ID로는 이 번호에 전화를 걸 수 없습니다."
+      "detail": "발신자 ID로는 이 번호에 전화를 걸 수 없습니다."
      },
      "COMPLIANCE_REQUIRED": {
       "detail": "이 번호로 전화하려면 먼저 규정 준수 단계가 필요합니다."
@@ -55496,7 +55496,7 @@
      },
      "NO_OUTBOUND_NUMBER": {
       "chip": "발신 가능한 번호 없음",
-      "detail": "회원님의 전화번호 중 이 연락처에 전화할 수 있는 번호가 없습니다."
+      "detail": "전화번호 중 이 연락처에 전화할 수 있는 번호가 없습니다."
      },
      "PROVIDER_MISMATCH": {
       "detail": "이 목록에서 이 연락처에 전화할 수 있는 번호가 없습니다."
@@ -55554,7 +55554,7 @@
     "loadFailed": {
      "retry": "다시 시도"
     },
-    "pause": "일시정지",
+    "pause": "일시 중지",
     "resume": "다시 시작",
     "waiting": {
      "learnMore": "자세히 보기"
@@ -55573,7 +55573,7 @@
      "commentPlaceholder": "개선할 점이 있다면 알려주세요 (선택사항)",
      "prompt": {
       "fieldSuggestion": "이 필드 제안이 정확한가요?",
-      "qaScore": "이 스코어카드가 정확한가요?",
+      "qaScore": "이 스코어카드가 정확합니까?",
       "summary": "이 요약이 정확한가요?",
       "transcript": "이 녹취록이 정확한가요?"
      },
@@ -55595,7 +55595,7 @@
      "loadingTranscript": "녹취록 불러오는 중…",
      "recordingLabel": "녹음 {index}",
      "searchPlaceholder": "녹취록 검색",
-     "pause": "일시정지",
+     "pause": "일시 중지",
      "seek": "탐색",
      "unavailable": "녹음를 사용할 수 없음"
     },
@@ -55650,7 +55650,7 @@
     "VOICE_CALL_INVALID_DESTINATION": "잘못된 대상 번호이거나 연결할 수 없습니다"
    },
    "call": "통화",
-   "callAnyway": "그래도 통화",
+   "callAnyway": "그래도 걸기",
    "callControls": {
     "backToCall": "통화로 돌아가기",
     "hold": "보류",
@@ -55772,7 +55772,7 @@
     "outboundCallsOnly": "발신 전용 통화. 60초 후 테스트 통화",
     "phoneHeroSubtitle": "시작하려면 전화번호가 필요합니다.",
     "phoneHeroTitle": "통화, 녹음, 텍스트 변환, 후속 조치 자동화 등을 한 곳에서 처리하세요.",
-    "purchasePhoneNumberToSelect": "선택할 전화번호 구매",
+    "purchasePhoneNumberToSelect": "선택하려면 전화번호를 구매하세요",
     "searchForPhoneNumber": "전화번호 검색",
     "searchNumbers": "번호 검색",
     "unknownNumber": "알 수 없는 번호"
@@ -55826,8 +55826,8 @@
     "itsAround": "대략",
     "localTime": "현지 시간"
    },
-   "togglePowerDialer": "파워 다이얼러 전환",
-   "toggleVolume": "볼륨 전환",
+   "togglePowerDialer": "파워 다이얼러 켜기/끄기",
+   "toggleVolume": "볼륨 켜기/끄기",
    "transcript": "녹취록",
    "transfer": {
     "devicePhone": "전화",
@@ -55839,7 +55839,7 @@
     "31206": "수행된 요청이 승인된 한도를 초과했습니다. 다시 시도해 주세요.",
     "31208": "브라우저에서 마이크 접근을 허용해주세요."
    },
-   "unknownContact": "알 수 없음 {contact}",
+   "unknownContact": "알 수 없는 {contact}",
    "updateBrowserPermissions": "브라우저 권한 업데이트",
    "verifyIdBanner": {
     "button": "ID 인증",

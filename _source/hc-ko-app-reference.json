@@ -281249,7 +281249,7 @@
  },
  "calendarComponentsApp.calendarAI.quickReplies.troubleshootAvailability": {
   "en": "Troubleshoot availability",
-  "ko": "가용성 문제 해결"
+  "ko": "예약 가능 시간 문제 해결"
  },
  "calendarComponentsApp.calendarSettings.servicesDesc": {
   "en": "Turn on services to give sub accounts access to a complete booking solution for service-based businesses. This includes creating multiple services, managing resources, handling multiple locations, setting staff-specific pricing, adding serv",
@@ -281321,7 +281321,7 @@
  },
  "calendarComponentsApp.calendarAI.chat.ariaSelectTeamMembers": {
   "en": "Select team members to add",
-  "ko": "추가할 팀 멤버 선택"
+  "ko": "추가할 팀원 선택"
  },
  "calendarComponentsApp.calendarAI.chat.doneAddingMembers": {
   "en": "Done adding members",
@@ -281329,7 +281329,7 @@
  },
  "calendarComponentsApp.calendarAI.feedback.whatWentWell": {
   "en": "What went well?",
-  "ko": "잘된 점은 무엇인가요?"
+  "ko": "잘된 점은 무엇입니까?"
  },
  "calendarComponentsApp.calendarAI.fieldService.brand.tabLabel": {
   "en": "AI Assistant",
@@ -281353,7 +281353,7 @@
  },
  "calendarComponentsApp.calendarAI.fieldService.edit.updated": {
   "en": "Updated",
-  "ko": "수정일"
+  "ko": "업데이트됨"
  },
  "calendarComponentsApp.calendarAI.fieldService.retry": {
   "en": "Retry",
@@ -281409,11 +281409,11 @@
  },
  "calendarComponentsApp.calendarAI.messages.collectiveNeedMoreMembers": {
   "en": "Collective calendars need at least 2 team members. Please add at least 1 more.",
-  "ko": "공동 캘린더에는 팀 멤버가 2명 이상 필요합니다. 최소 1명 이상 추가해 주세요."
+  "ko": "공동 캘린더에는 팀원가 2명 이상 필요합니다. 최소 1명 이상 추가해 주세요."
  },
  "calendarComponentsApp.calendarAI.messages.editConfigPrompt": {
   "en": "Sure, what would you like to change? Just tell me what to update.\n\nFor example: \"make it 45 min\", \"change availability to weekdays 9:00 AM–6:00 PM\", \"add $100 payment with 50% deposit\", or \"update team members\".",
-  "ko": "네, 무엇을 변경하시겠어요? 업데이트할 내용을 말씀해 주세요.\n\n예: \"45분으로 변경\", \"가능 시간을 평일 오전 9:00–오후 6:00 으로 변경\", \"보증금 50%로 $100 결제 추가\", 또는 \"팀원 업데이트\"."
+  "ko": "네, 무엇을 변경하시겠습니까? 업데이트할 내용을 말씀해 주세요.\n\n예: \"45분으로 변경\", \"예약 가능 시간을 평일 오전 9:00–오후 6:00으로 변경\", \"$100 결제(보증금 50%) 추가\", \"팀원 업데이트\"."
  },
  "calendarComponentsApp.calendarAI.messages.embedCodeCopied": {
   "en": "Embed code copied to clipboard!",
@@ -281425,7 +281425,7 @@
  },
  "calendarComponentsApp.calendarAI.messages.howManyTeamMembers": {
   "en": "How many team members will handle these bookings?",
-  "ko": "이 예약을 처리할 팀 멤버는 몇 명인가요?"
+  "ko": "이 예약을 처리할 팀원는 몇 명입니까?"
  },
  "calendarComponentsApp.calendarAI.messages.noPermission": {
   "en": "You don't have permission to create calendars. Please contact your admin to request access.",
@@ -281433,11 +281433,11 @@
  },
  "calendarComponentsApp.calendarAI.messages.noUsersAskPlaceholder": {
   "en": "This location doesn't have any team members yet. How do you wish to continue?",
-  "ko": "이 서브 계정에는 아직 팀 멤버가 없습니다. 어떻게 계속하시겠습니까?"
+  "ko": "이 서브 계정에는 아직 팀원가 없습니다. 어떻게 계속하시겠습니까?"
  },
  "calendarComponentsApp.calendarAI.messages.notPartOfLocation": {
   "en": "You're not part of this location. Please select the team member you want to add to this calendar.",
-  "ko": "회원님은 이 서브 계정에 속해 있지 않습니다. 이 캘린더에 추가할 팀 멤버를 선택해 주세요."
+  "ko": "회원님은 이 서브 계정에 속해 있지 않습니다. 이 캘린더에 추가할 팀원를 선택해 주세요."
  },
  "calendarComponentsApp.calendarAI.messages.openingCalendarTypesPage": {
   "en": "Opening the calendar settings page for you — explore all available calendar types and their use cases there.",
@@ -281449,7 +281449,7 @@
  },
  "calendarComponentsApp.calendarAI.messages.perfectAddYou": {
   "en": "Perfect! I'll add you as the team member. You can add more people later from calendar settings.",
-  "ko": "좋습니다. 팀 멤버로 추가하겠습니다. 나중에 캘린더 설정에서 더 많은 사람을 추가할 수 있습니다."
+  "ko": "좋습니다. 팀원로 추가하겠습니다. 나중에 캘린더 설정에서 더 많은 사람을 추가할 수 있습니다."
  },
  "calendarComponentsApp.calendarAI.messages.postCreationOptions": {
   "en": "Now let's make sure everything works. Try booking an appointment on your own calendar - this is exactly what your customers will see!",
@@ -281669,7 +281669,7 @@
  },
  "calendarComponentsApp.calendarAI.quickReplies.openAvailability": {
   "en": "Open availability",
-  "ko": "가능 시간 열기"
+  "ko": "예약 가능 시간 설정"
  },
  "calendarComponentsApp.calendarAI.quickReplies.openCalendarSettings": {
   "en": "Open calendar settings",
@@ -281705,7 +281705,7 @@
  },
  "calendarComponentsApp.calendarAI.serviceCreation.pricePrompt": {
   "en": "What is the price for this service? Type an amount or choose an option below.",
-  "ko": "이 서비스의 가격은 얼마인가요? 금액을 입력하거나 아래 옵션을 선택하세요."
+  "ko": "이 서비스의 가격은 얼마입니까? 금액을 입력하거나 아래 옵션을 선택하세요."
  },
  "calendarComponentsApp.calendarAI.serviceCreation.teamPrompt": {
   "en": "Who will handle bookings for this service?",
@@ -281717,7 +281717,7 @@
  },
  "calendarComponentsApp.calendarAI.summary.heading": {
   "en": "Here's your calendar:",
-  "ko": "회원님의 캘린더는 다음과 같습니다:"
+  "ko": "캘린더는 다음과 같습니다:"
  },
  "calendarComponentsApp.calendarAI.typing.thinking": {
   "en": "Thinking",
@@ -282297,7 +282297,7 @@
  },
  "powerDialerApp.multiLine.build.no_outbound_number": {
   "en": "None of these contacts has a number to call from. Check your phone numbers.",
-  "ko": "이 연락처들 중 발신 가능한 번호가 있는 연락처가 없습니다. 전화번호를 확인하세요."
+  "ko": "이 연락처들에게 전화를 걸 수 있는 발신 번호가 없습니다. 전화번호를 확인하세요."
  },
  "powerDialerApp.multiLine.callback.strip.one": {
   "en": "{name} also answered. You’ll call them next.",
@@ -282309,7 +282309,7 @@
  },
  "powerDialerApp.multiLine.chip.callbackNextTooltip": {
   "en": "{name} answered while you were connecting to someone else and heard your callback message. Dialed alone, next.",
-  "ko": "{name} 님이 다른 사람과 연결 중일 때 응답하여 콜백 메시지를 들었습니다. 단독으로 다이얼링되며, 다음 차례입니다."
+  "ko": "다른 연락처와 연결 중일 때 {name} 님이 응답해 콜백 메시지를 들었습니다. 다음 차례에 단독으로 전화를 겁니다."
  },
  "powerDialerApp.multiLine.chip.connectedDuration": {
   "en": "Connected · {duration}",
@@ -282493,7 +282493,7 @@
  },
  "powerDialerApp.multiLine.reasons.ALREADY_ON_A_CALL.detail": {
   "en": "This contact was already on a call with your business.",
-  "ko": "이 연락처는 이미 회원님의 비즈니스와 통화 중이었습니다."
+  "ko": "이 연락처는 이미 비즈니스와 통화 중이었습니다."
  },
  "powerDialerApp.multiLine.reasons.BLOCKED_NUMBER.chip": {
   "en": "Blocked number",
@@ -282505,7 +282505,7 @@
  },
  "powerDialerApp.multiLine.reasons.CALLER_ID_NOT_ALLOWED.detail": {
   "en": "Your caller ID can’t be used to call this number.",
-  "ko": "회원님의 발신자 ID로는 이 번호에 전화를 걸 수 없습니다."
+  "ko": "발신자 ID로는 이 번호에 전화를 걸 수 없습니다."
  },
  "powerDialerApp.multiLine.reasons.COMPLIANCE_REQUIRED.detail": {
   "en": "Calling this number needs a compliance step first.",
@@ -282549,7 +282549,7 @@
  },
  "powerDialerApp.multiLine.reasons.NO_OUTBOUND_NUMBER.detail": {
   "en": "None of your phone numbers can call this contact.",
-  "ko": "회원님의 전화번호 중 이 연락처에 전화할 수 있는 번호가 없습니다."
+  "ko": "전화번호 중 이 연락처에 전화할 수 있는 번호가 없습니다."
  },
  "powerDialerApp.multiLine.reasons.PROVIDER_MISMATCH.detail": {
   "en": "None of your numbers can call this contact from this list.",
@@ -282669,7 +282669,7 @@
  },
  "powerDialerApp.postCall.feedback.prompt.qaScore": {
   "en": "Is this scorecard accurate?",
-  "ko": "이 스코어카드가 정확한가요?"
+  "ko": "이 스코어카드가 정확합니까?"
  },
  "powerDialerApp.postCall.feedback.prompt.summary": {
   "en": "Is this summary accurate?",
@@ -282857,7 +282857,7 @@
  },
  "powerDialerApp.callAnyway": {
   "en": "Call Anyway",
-  "ko": "그래도 통화"
+  "ko": "그래도 걸기"
  },
  "powerDialerApp.callControls.backToCall": {
   "en": "Back to Call",
@@ -283177,7 +283177,7 @@
  },
  "powerDialerApp.multiLine.pause": {
   "en": "Pause",
-  "ko": "일시정지"
+  "ko": "일시 중지"
  },
  "powerDialerApp.multiLine.pauseReason.rep": {
   "en": "Paused",
@@ -283333,7 +283333,7 @@
  },
  "powerDialerApp.phoneNumbers.purchasePhoneNumberToSelect": {
   "en": "Purchase Phone number to select",
-  "ko": "선택할 전화번호 구매"
+  "ko": "선택하려면 전화번호를 구매하세요"
  },
  "powerDialerApp.phoneNumbers.searchForPhoneNumber": {
   "en": "Search for a phone number",
@@ -283369,7 +283369,7 @@
  },
  "powerDialerApp.postCall.recording.pause": {
   "en": "Pause",
-  "ko": "일시정지"
+  "ko": "일시 중지"
  },
  "powerDialerApp.postCall.recording.seek": {
   "en": "Seek",
@@ -283517,11 +283517,11 @@
  },
  "powerDialerApp.togglePowerDialer": {
   "en": "Toggle Power Dialer",
-  "ko": "파워 다이얼러 전환"
+  "ko": "파워 다이얼러 켜기/끄기"
  },
  "powerDialerApp.toggleVolume": {
   "en": "Toggle Volume",
-  "ko": "볼륨 전환"
+  "ko": "볼륨 켜기/끄기"
  },
  "powerDialerApp.transcript": {
   "en": "Transcript",
@@ -283553,7 +283553,7 @@
  },
  "powerDialerApp.unknownContact": {
   "en": "Unknown {contact}",
-  "ko": "알 수 없음 {contact}"
+  "ko": "알 수 없는 {contact}"
  },
  "powerDialerApp.updateBrowserPermissions": {
   "en": "Update Browser Permissions",
