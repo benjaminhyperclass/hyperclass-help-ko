@@ -1,4 +1,4 @@
-/* Hyperclass 한글팩 — 텔레메트리 수신 Worker v0.3.0 (2026-10-28)
+/* Hyperclass 한글팩 — 텔레메트리 수신 Worker v0.3.1 (2026-10-29: digest 에 loaders/revs 집계, 검증 거부 사유 console.log)
  *
  * POST /r        로더(v4.14+)가 sendBeacon 으로 보내는 라우트별 미번역 집계 1건. 본문은 JSON(text/plain).
  *                검증 후 KV 에 `ev/<YYYY-MM-DD>/<ts>-<rand>` 로 저장(TTL_DAYS). 응답 204.
@@ -50,7 +50,7 @@ async function rateLimited(env, request) {
 
 export async function digest(env, date) {
   const prefix = 'ev/' + date + '/';
-  const routes = {}, ns = {}, text = { ko: 0, en: 0, n: 0 }, edge = { lifted: [], gate: 0 };
+  const routes = {}, ns = {}, text = { ko: 0, en: 0, n: 0 }, edge = { lifted: [], gate: 0 }, loaders = {}, revs = {};
   let cursor, events = 0;
   do {
     const page = await env.TEL.list({ prefix, cursor, limit: 1000 });
@@ -58,6 +58,8 @@ export async function digest(env, date) {
       const ev = await env.TEL.get(k.name, 'json');
       if (!ev) continue;
       events++;
+      if (ev.loader) loaders[ev.loader] = (loaders[ev.loader] || 0) + 1;
+      if (ev.rev) revs[ev.rev] = (revs[ev.rev] || 0) + 1;
       const r = routes[ev.route] || (routes[ev.route] = { n: 0, ko: 0, en: 0, enNs: 0 });
       r.n++;
       if (ev.text) { r.ko += ev.text.ko; r.en += ev.text.en; text.ko += ev.text.ko; text.en += ev.text.en; text.n++; }
@@ -78,7 +80,7 @@ export async function digest(env, date) {
     .sort((x, y) => (x.koRatio ?? 1) - (y.koRatio ?? 1));
   const lifted = edge.lifted.sort((a, b) => a - b);
   const pct = p => lifted.length ? lifted[Math.min(lifted.length - 1, Math.floor(lifted.length * p))] : null;
-  return { date, events, routes: routeRows, ns: nsRows.slice(0, 100), text: { koRatio: text.ko + text.en ? +(text.ko / (text.ko + text.en)).toFixed(3) : null, samples: text.n }, edge: { n: lifted.length, p50: pct(0.5), p90: pct(0.9), gate: edge.gate } };
+  return { date, events, loaders, revs, routes: routeRows, ns: nsRows.slice(0, 100), text: { koRatio: text.ko + text.en ? +(text.ko / (text.ko + text.en)).toFixed(3) : null, samples: text.n }, edge: { n: lifted.length, p50: pct(0.5), p90: pct(0.9), gate: edge.gate } };
 }
 
 export default {
@@ -92,7 +94,7 @@ export default {
       if (txt.length > MAX_BODY) return new Response('too large', { status: 413, headers: CORS });
       let ev; try { ev = JSON.parse(txt); } catch { return new Response('bad json', { status: 400, headers: CORS }); }
       const err = validate(ev);
-      if (err) return new Response(err, { status: 400, headers: CORS });
+      if (err) { console.log('reject', err, ev.loader, ev.route, txt.length); return new Response(err, { status: 400, headers: CORS }); }
       if (await rateLimited(env, request)) return new Response('rate', { status: 429, headers: CORS });
       const ttl = (parseInt(env.TTL_DAYS || '30', 10) || 30) * 86400;
       const key = 'ev/' + day() + '/' + Date.now() + '-' + Math.random().toString(36).slice(2, 8);
