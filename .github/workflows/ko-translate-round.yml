@@ -102,9 +102,15 @@ jobs:
           SUMMARY=""
           for row in $(python3 -c "import json;print(' '.join(r['ns']+':'+r['part'] for r in json.load(open('/tmp/round/plan.json'))))"); do
             ns=${row%%:*}; part=${row#*:}
-            out=$(python3 scripts/round-merge.py --en /tmp/round/$ns/data/ghl-i18n-en.json --ko /tmp/round/$ns/data/ghl-i18n-ko.json --ns "$ns" --part "$part" --note "round $DATE $ns (telemetry)")
+            out=$(python3 scripts/round-merge.py --en /tmp/round/$ns/data/ghl-i18n-en.json --ko /tmp/round/$ns/data/ghl-i18n-ko.json --ns "$ns" --part "$part" --no-bump --note "round $DATE $ns (telemetry)")
             echo "$out"; SUMMARY="$SUMMARY\n- \`$ns\` ($part): $(echo "$out" | head -1)"
           done
+          python3 - <<'PY'
+          import json
+          p='_source/hc-ko-app.pretty.json'; d=json.load(open(p,encoding='utf-8')); m=d['_meta']
+          a,b,c=(m['version'].split('.')+['0','0'])[:3]; m['version']=f'{a}.{b}.{int(c)+1}'
+          json.dump(d,open(p,'w',encoding='utf-8'),ensure_ascii=False,indent=1); open(p,'a').write('\n'); print('version', m['version'])
+          PY
           python3 scripts/split-ko-app.py | tail -n 2
           python3 scripts/validate-ko-app.py --max-show 10
           python3 scripts/merge-ko-app.py /tmp/deployed.json >/dev/null
@@ -130,6 +136,11 @@ jobs:
           git commit -q -m "[Round] 텔레메트리 번역 라운드 $DATE → 사전 v$VER"
           git push -q origin "$BR"
           BODY=$(printf "텔레메트리가 올린 미번역 네임스페이스를 번역해 사전 v%s 로 올립니다.\n\n%s\n\n검증: validate-ko-app 0 · DNT/브랜드 0 · 글로서리 강제 적용. 머지 시 ko-app-pointer 가 REV 를 자동 전진합니다(슬롯·로더 교체 없음).\n\n용어만 훑어 주세요. 수정은 _source/hc-ko-app.pretty.json 에서.\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)" "$VER" "$(cat /tmp/round/summary.md)")
-          gh pr create --title "번역 라운드 $DATE — 사전 v$VER" --body "$BODY" --base main --head "$BR"
+          if ! gh pr create --title "번역 라운드 $DATE — 사전 v$VER" --body "$BODY" --base main --head "$BR" 2>/tmp/pr.err; then
+            cat /tmp/pr.err
+            echo "## ⚠️ 브랜치 \`$BR\` 푸시됨 — PR 은 수동으로: https://github.com/${{ github.repository }}/pull/new/$BR" >> $GITHUB_STEP_SUMMARY
+            echo "   (Settings → Actions → General → 'Allow GitHub Actions to create and approve pull requests' 를 켜면 자동 생성)" >> $GITHUB_STEP_SUMMARY
+            exit 0
+          fi
           echo "## PR 생성: $BR (사전 v$VER)" >> $GITHUB_STEP_SUMMARY
           cat /tmp/round/summary.md >> $GITHUB_STEP_SUMMARY

@@ -121,6 +121,7 @@ def main():
     ap.add_argument('--force', action='store_true')
     ap.add_argument('--unify', action='store_true')
     ap.add_argument('--dry-run', action='store_true')
+    ap.add_argument('--no-bump', action='store_true', help='_meta.version 을 올리지 않는다 (라운드에서 ns 마다 호출할 때)')
     a = ap.parse_args()
 
     rules = load_glossary()
@@ -194,7 +195,7 @@ def main():
     if a.dry_run:
         return 0
     m = pretty.setdefault('_meta', {})
-    m['version'] = bump(m.get('version', '4.2.8'))
+    if not a.no_bump: m['version'] = bump(m.get('version', '4.2.8'))
     m['built'] = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d')
     m['source'] = (m.get('source', '') + ' + ' + (a.note or (f'round {a.ns} {stats["inserted"]}' if not a.unify else f'glossary unify {stats["unified"]}')))[-1500:]
     # strings 는 split 이 다시 센다 — 여기서는 건드리지 않는다

@@ -50,11 +50,11 @@ def rules(key, en, ko, gl):
             for v in r['variants']:
                 if v in ko:
                     out.append(('R4', f"글로서리 변형 '{v}' (정규 '{r['ko']}')")); break
-    if not HANGUL.search(ko) and HANGUL.search(ko) is None and re.search(r'[A-Za-z]{3,}', ko) and not re.match(r'^(https?://|[\d\s.,%$]+$)', ko.strip()):
+    if not HANGUL.search(ko) and re.search(r'[A-Za-z]{3,}', ko) and not re.match(r'^(https?://|[\d\s.,%$]+$)', ko.strip()) and not (en.strip() == ko.strip() and len(ko.strip()) <= 16):
         out.append(('R5', '영문 그대로'))
     if JOSA_RE.search(ko):
         out.append(('R6', '플레이스홀더 뒤 조사 직결'))
-    if len(en) > 8 and (len(ko) > 3 * len(en) or len(ko) < 0.2 * len(en)):
+    if len(en) > 24 and (len(ko) > 3 * len(en) or len(ko) < 0.15 * len(en)):
         out.append(('R7', f'길이 비율 {len(ko)}/{len(en)}'))
     return out
 
@@ -92,7 +92,7 @@ def claude_review(items, max_items):
 {lines}"""
         try:
             resp = client.messages.create(model=model, max_tokens=4000, messages=[{'role': 'user', 'content': prompt}])
-            txt = resp.content[0].text.strip()
+            txt = ''.join(getattr(b, 'text', '') for b in resp.content if getattr(b, 'type', '') == 'text').strip()
             m = re.search(r'\[.*\]', txt, re.S)
             arr = json.loads(m.group(0)) if m else []
             for it in arr:
