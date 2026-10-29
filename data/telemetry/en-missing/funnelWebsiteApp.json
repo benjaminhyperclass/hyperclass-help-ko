@@ -1,0 +1,17 @@
+{
+ "aiStudioEntry.banner.cta": "Start building",
+ "aiStudioEntry.banner.description": "Just describe your business, and AI Studio generates a custom funnel or website for you.",
+ "aiStudioEntry.banner.dismiss": "Dismiss",
+ "aiStudioEntry.banner.title": "Try AI Studio now!",
+ "common.clickFunnelsUrl": "ClickFunnels URL",
+ "common.deleteActionCannotBeUndone": "This action cannot be undone.",
+ "common.deleteModalFolderEntitiesWarning": "All items in this folder will also be deleted. This action cannot be undone.",
+ "common.seoAndAeo": "SEO & AEO",
+ "headers.headerPlaceholder": "Content-Security-Policy",
+ "headers.valuePlaceholder": "default-src https: data: 'unsafe-inline' 'unsafe-eval'",
+ "seoAiSearch.tabLabel": "SEO & AEO",
+ "store.askAiSearchQuery": "Show my Store setup progress and what to do next",
+ "store.deleteConfirmationToken": "DELETE",
+ "store.reorderNotAllowedDescription": "Store pages follow a fixed order, so they can't be dragged and dropped.",
+ "store.reorderNotAllowedTitle": "Store pages can't be reordered"
+}

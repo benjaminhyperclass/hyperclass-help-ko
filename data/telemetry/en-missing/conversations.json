@@ -1,0 +1,12 @@
+{
+ "email.facebook": "Facebook",
+ "email.twitter": "Twitter",
+ "googleMeet": "Google Meet",
+ "message.sms": "SMS",
+ "messageDetails.sms": "SMS",
+ "messageDetails.smtp": "SMTP",
+ "messageDetails.twilio": "Twilio",
+ "send.email.errors.genericError": "{message}",
+ "send.sms.errors.genericError": "{message}",
+ "sendEmail.recipientPlaceholder": "recipient{'@'}example.com"
+}

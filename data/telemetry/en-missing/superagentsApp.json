@@ -1,0 +1,5 @@
+{
+ "singleAgentBuilder.actionsConfig.platformLabel": "Actions Platform",
+ "singleAgentBuilder.skillsConfig.customEntrypointPlaceholder": "skills/lead-enrichment.ts",
+ "testPanel.subStatus": "{name} · {status}"
+}

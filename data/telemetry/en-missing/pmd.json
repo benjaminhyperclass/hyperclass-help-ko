@@ -1,0 +1,10 @@
+{
+ "helpDrawer.manageSupportAccess": "Manage support access →",
+ "helpDrawer.supportAccessDisabledDescription": "Allow authorized HighLevel support specialists to access your account for troubleshooting.",
+ "helpDrawer.supportAccessEnabledUntil": "Authorized HighLevel support specialists can access your account until {date}.",
+ "helpDrawer.supportAccessTitle": "Support Access",
+ "length_": ".length }}",
+ "productRebilling.gpt4oMini": "GPT-4o-mini",
+ "seo": "SEO",
+ "usd": "USD"
+}

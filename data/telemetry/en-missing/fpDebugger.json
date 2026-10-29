@@ -1,0 +1,12 @@
+{
+ "checks.locationAll": "location.all",
+ "checks.locationAllUpper": "LOCATION.ALL",
+ "checks.locationAny": "location.any",
+ "checks.locationAnyUpper": "LOCATION.ANY",
+ "checks.scopesAll": "scopes.all",
+ "checks.scopesAllUpper": "SCOPES.ALL",
+ "checks.scopesAny": "scopes.any",
+ "checks.scopesAnyUpper": "SCOPES.ANY",
+ "journey.noPermission": "NO_PERMISSION",
+ "pass": "PASS"
+}

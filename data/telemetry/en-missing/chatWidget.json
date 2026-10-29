@@ -1,0 +1,6 @@
+{
+ "builderLoadError.text": "Something went wrong while loading the builder. Please try again.",
+ "builderLoadError.title": "Could not open the chat widget builder",
+ "createLoadError.text": "Something went wrong while loading the create dialog. Please try again.",
+ "createLoadError.title": "Could not open the chat widget creator"
+}

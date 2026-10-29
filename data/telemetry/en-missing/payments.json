@@ -1,0 +1,9 @@
+{
+ "automaticTaxes": "Automatic taxes",
+ "manualTaxes": "Manual taxes",
+ "pickupInStore": "Pickup in store",
+ "shippingDelivery": "Shipping & delivery",
+ "taxDisplaySettings": "Tax display settings",
+ "taxRates": "Tax rates",
+ "taxZones": "Tax zones"
+}
