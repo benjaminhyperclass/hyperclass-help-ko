@@ -10,6 +10,7 @@
 처리:
   1) 글로서리(data/glossary.ko.json) 확정 용어의 변형 표기를 ko 에서 정규 표기로 치환 (영어 원문에 그 용어가 있을 때만)
   2) DNT 7종이 원문에 단독 토큰으로 있으면 ko 에서도 보존 (번역돼 있으면 원문 토큰으로 되돌림)
+  2b) vue-i18n 복수형('a | b')에서 구분자가 사라졌으면 같은 형을 복제해 구분자 수를 맞춤
   3) _source/hc-ko-app.pretty.json 의 <part>.<ns> 에 중첩 삽입(기존 값은 덮어쓰지 않음, --force 면 덮어씀)
   4) _source/hc-ko-app-reference.json 에 "<ns>.<key>": {en, ko} 등재
   5) _meta.version 패치 올림, built, source 기록
@@ -84,6 +85,15 @@ def keep_dnt(en, ko):
         if re.search(r'(^|[\s\'"“‘])' + t + r'($|[\s\'"”’.,!?])', en) and t not in ko:
             return en, t
     return ko, None
+
+
+def fix_plural(en, ko):
+    """vue-i18n 복수형 'a | b | c': 한국어는 수 구분이 없으므로 번역이 구분자를 잃었으면 같은 형을 구분자 수만큼 복제한다."""
+    n = en.count('|')
+    if n and ko.count('|') != n:
+        base = ko.split('|')[0].strip() if '|' in ko else ko.strip()
+        return ' | '.join([base] * (n + 1)), True
+    return ko, False
 
 
 def nested_set(d, path, value, force):
@@ -170,6 +180,8 @@ def main():
             if ch: stats['glossary_fixes'] += 1; kv = kv2
             kv3, t = keep_dnt(e, kv)
             if t: stats['dnt_kept'] += 1; kv = kv3
+            kv4, pl = fix_plural(e, kv)
+            if pl: stats['plural_fixed'] = stats.get('plural_fixed', 0) + 1; kv = kv4
             if kv == e:
                 continue   # 원문 그대로(identity)는 넣지 않는다 — C7
             if nested_set(target, k.split('.'), kv, a.force):
