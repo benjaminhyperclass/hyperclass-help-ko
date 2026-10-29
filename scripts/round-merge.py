@@ -75,8 +75,27 @@ def unify_one(en, ko, rules):
                 pat = re.escape(v) + (r'(?!우)' if r['ko'].startswith(v) and r['ko'] != v else '')
                 new = re.sub(pat, r['ko'], ko)
                 if new != ko:
-                    changes.append((v, r['ko'])); ko = new
+                    changes.append((v, r['ko'])); ko = fix_josa_after(new, [r['ko']])
     return ko, changes
+
+
+def _batchim(ch):
+    c = ord(ch); return 0xAC00 <= c <= 0xD7A3 and (c - 0xAC00) % 28 != 0
+
+
+def fix_josa_after(text, nouns):
+    """지정한 명사 바로 뒤의 조사(가/이·는/은·를/을·로/으로·와/과)만 받침에 맞게 보정.
+    동사 어미('있는'·'하는')를 건드리지 않도록 **명사 목록 범위에서만** 동작한다 — 전역 조사 교정은 금지(2026-10-29 '있은' 사고)."""
+    if not nouns: return text
+    alt = '|'.join(re.escape(n) for n in sorted(set(nouns), key=len, reverse=True))
+    rx = re.compile('(' + alt + ')(으로|가|이|는|은|를|을|로|와|과)(?=[\\s.,!?)\\]\'"”’]|$)')
+    def rep(m):
+        n, j = m.group(1), m.group(2); last = n[-1]; b = _batchim(last); rieul = b and (ord(last) - 0xAC00) % 28 == 8
+        t = {'가': '이' if b else '가', '이': '이' if b else '가', '는': '은' if b else '는', '은': '은' if b else '는',
+             '를': '을' if b else '를', '을': '을' if b else '를', '와': '과' if b else '와', '과': '과' if b else '와',
+             '로': '으로' if (b and not rieul) else '로', '으로': '으로' if (b and not rieul) else '로'}
+        return n + t[j]
+    return rx.sub(rep, text)
 
 
 def keep_dnt(en, ko):
