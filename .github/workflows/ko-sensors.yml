@@ -1,0 +1,121 @@
+name: 메인 앱 한글팩 — 센서 (S1 GHL 배포 감지 · S4 릴리스 노트)
+
+# S1: 6시간마다 production.app-manifest.leadconnectorhq.com/latest/manifest.json 을 읽어 mainAppVersion 과
+#     federatedApps 별 버전을 data/sensors/manifest.json 과 비교. 바뀐 앱을 data/sensors/changes.md 에 기록하고
+#     이슈 "GHL 배포 감지"(열려 있으면 코멘트)를 올린다. 바뀐 앱 이름은 텔레메트리 네임스페이스와 대개 같다.
+# S4: 하루 한 번 ideas.gohighlevel.com/changelog 제목을 모아 새 항목을 data/sensors/changelog.json 에 쌓고
+#     제목에서 기능명 후보(대문자 시작 명사구)를 뽑아 같은 이슈에 "글로서리 후보"로 적는다.
+on:
+  schedule:
+    - cron: '23 */6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: ko-sensors
+  cancel-in-progress: false
+
+jobs:
+  sense:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: S1 · 매니페스트 비교
+        id: s1
+        run: |
+          set -e
+          mkdir -p data/sensors
+          curl -fsS https://production.app-manifest.leadconnectorhq.com/latest/manifest.json -o /tmp/manifest.json
+          python3 - <<'PY'
+          import json, os, re, datetime
+          new = json.load(open('/tmp/manifest.json'))
+          p = 'data/sensors/manifest.json'
+          old = json.load(open(p)) if os.path.exists(p) else {}
+          def ver(u):
+              m = re.search(r'/(\d+)/remoteEntry', str(u)); return m.group(1) if m else str(u)[-40:]
+          oa = {k: ver(v) for k, v in (old.get('federatedApps') or {}).items()}
+          na = {k: ver(v) for k, v in (new.get('federatedApps') or {}).items()}
+          changed = sorted(k for k in na if oa.get(k) != na[k])
+          added = sorted(k for k in na if k not in oa)
+          removed = sorted(k for k in oa if k not in na)
+          main_changed = old.get('mainAppVersion') != new.get('mainAppVersion')
+          now = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
+          any_change = bool(old) and (main_changed or changed or removed)
+          lines = []
+          if any_change:
+              lines.append(f"## {now} — main {old.get('mainAppVersion')} → {new.get('mainAppVersion')} · manifest {old.get('manifestVersion')} → {new.get('manifestVersion')}")
+              for k in changed: lines.append(f"- {'🆕 ' if k in added else ''}`{k}` {oa.get(k, '-')} → {na[k]}")
+              for k in removed: lines.append(f"- ❌ `{k}` 제거")
+              lines.append('')
+              with open('data/sensors/changes.md', 'a', encoding='utf-8') as f: f.write('\n'.join(lines) + '\n')
+          json.dump(new, open(p, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as o:
+              o.write(f"changed={'true' if any_change else 'false'}\n")
+              o.write(f"first={'true' if not old else 'false'}\n")
+              o.write(f"main={new.get('mainAppVersion')}\n")
+          open('/tmp/s1.md', 'w', encoding='utf-8').write('\n'.join(lines))
+          print('\n'.join(lines) if lines else f"변화 없음 (main {new.get('mainAppVersion')}, apps {len(na)})")
+          PY
+
+      - name: S4 · 릴리스 노트
+        id: s4
+        run: |
+          set -e
+          curl -fsSL -A 'Mozilla/5.0' https://ideas.gohighlevel.com/changelog -o /tmp/cl.html || true
+          python3 - <<'PY'
+          import re, json, os, datetime
+          html = open('/tmp/cl.html', encoding='utf-8', errors='ignore').read() if os.path.exists('/tmp/cl.html') else ''
+          titles = []
+          for m in re.finditer(r'"title":"((?:[^"\\]|\\.)*)"', html):
+              t = json.loads('"' + m.group(1) + '"').strip()
+              if 5 <= len(t) <= 120 and t not in titles: titles.append(t)
+          slugs = sorted(set(re.findall(r'changelog/([a-z0-9-]{8,})', html)))
+          p = 'data/sensors/changelog.json'
+          old = json.load(open(p)) if os.path.exists(p) else {'seen': {}}
+          seen = old.get('seen', {})
+          today = datetime.date.today().isoformat()
+          new_titles = [t for t in titles if t not in seen]
+          for t in new_titles: seen[t] = today
+          json.dump({'seen': seen, 'updated': today, 'slugs': slugs[:200]}, open(p, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+          # 기능명 후보: 제목 속 대문자 시작 2~4단어 명사구
+          cands = set()
+          for t in new_titles:
+              for m in re.finditer(r'\b([A-Z][A-Za-z0-9+]+(?: [A-Z][A-Za-z0-9+]+){1,3})\b', t):
+                  c = m.group(1)
+                  if not re.search(r'\b(Now|New|Introducing|Build|Your|With|The|And|For|Is|Are|In|Labs)\b', c): cands.add(c)
+          out = []
+          if new_titles:
+              out.append(f'### 릴리스 노트 신규 {len(new_titles)}건 ({today})')
+              out += [f'- {t}' for t in new_titles[:30]]
+              if cands: out.append('\n글로서리 후보: ' + ', '.join(f'`{c}`' for c in sorted(cands)[:30]))
+          open('/tmp/s4.md', 'w', encoding='utf-8').write('\n'.join(out))
+          with open(os.environ['GITHUB_OUTPUT'], 'a') as o: o.write(f"new={len(new_titles)}\n")
+          print('\n'.join(out) if out else f'릴리스 노트 신규 없음 (누적 {len(seen)})')
+          PY
+
+      - name: 커밋
+        run: |
+          git config user.name "Hyperclass Bot"
+          git config user.email "bot@hyperclass.ai"
+          git add data/sensors
+          git diff --cached --quiet && { echo "변경 없음"; exit 0; }
+          git commit -q -m "[Sensor] S1 main ${{ steps.s1.outputs.main }} · S4 신규 ${{ steps.s4.outputs.new }}"
+          git pull -q --rebase origin main && git push -q origin main
+
+      - name: 이슈 알림
+        if: steps.s1.outputs.changed == 'true' || steps.s4.outputs.new != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          { echo "<!-- hc-sensor -->"; cat /tmp/s1.md; echo; cat /tmp/s4.md; echo; echo "텔레메트리가 새 영문 키를 모으면 \`ko-translate-round\` 가 월·목 PR 을 엽니다. 급하면 Actions → 번역 라운드 → Run workflow."; } > /tmp/issue.md
+          NUM=$(gh issue list -R ${{ github.repository }} --state open --search "GHL 배포 감지 in:title" --json number --jq '.[0].number' 2>/dev/null || true)
+          if [ -n "$NUM" ] && [ "$NUM" != "null" ]; then
+            gh issue comment "$NUM" -R ${{ github.repository }} --body-file /tmp/issue.md
+          else
+            gh issue create -R ${{ github.repository }} --title "GHL 배포 감지 — main ${{ steps.s1.outputs.main }}" --body-file /tmp/issue.md --label sensor || gh issue create -R ${{ github.repository }} --title "GHL 배포 감지 — main ${{ steps.s1.outputs.main }}" --body-file /tmp/issue.md
+          fi
+          cat /tmp/issue.md >> $GITHUB_STEP_SUMMARY
