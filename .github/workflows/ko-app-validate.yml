@@ -108,6 +108,23 @@ jobs:
       #    이 축이 실제 버그 3건을 찾아냈다. C1~C7 에는 없던 검사다.
       # 영어 원문은 _source/hc-ko-app-reference.json 에서 유도한다
       # (6.8MB EN 카탈로그를 따로 커밋하지 않기 위해 — 결과 동등성 실증됨).
+      - name: 로더 포인터 SHA 실존 검사 (하드 게이트)
+        if: always()
+        run: |
+          set -e
+          fail=0
+          for ch in stable next; do
+            sha=$(python3 -c "import json;print(json.load(open('data/hc-ko-app-rev.json'))['loader'].get('$ch',''))")
+            [ -z "$sha" ] && { echo "  (loader.$ch 없음)"; continue; }
+            if ! git cat-file -e "$sha^{commit}" 2>/dev/null; then echo "❌ loader.$ch=$sha 는 이 저장소에 없는 커밋"; fail=1; continue; fi
+            for f in js/hc-ko-app-loader.js js/hc-confirm-adapter.js; do
+              git cat-file -e "$sha:$f" 2>/dev/null || { echo "❌ loader.$ch 커밋에 $f 없음"; fail=1; }
+            done
+            echo "  ✅ loader.$ch ${sha:0:7}"
+          done
+          echo "## 로더 포인터: $([ $fail -eq 0 ] && echo '✅ stable/next 커밋·파일 실존' || echo '❌ 실존하지 않는 SHA — 부트스트랩이 404 를 맞는다')" >> $GITHUB_STEP_SUMMARY
+          exit $fail
+
       - name: 글로서리 감사 (경고)
         if: always()
         run: |

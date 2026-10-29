@@ -68,6 +68,7 @@ jobs:
               part = 'apps' if ns in pretty.get('apps', {}) and ns not in pretty.get('host', {}) else 'host'
               todo, seed = {}, {}
               for k, e in en.items():
+                  if len(e) >= 600: continue   # 수집 상한에 걸린(잘렸을 수 있는) 원문은 번역하지 않는다
                   cur = get(pretty.get(part, {}).get(ns, {}), k.split('.'))
                   if isinstance(cur, str) and H.search(cur): continue
                   if e in by_en: seed[k] = by_en[e]
