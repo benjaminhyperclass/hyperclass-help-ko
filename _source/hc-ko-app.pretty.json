@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "version": "4.2.18",
+  "version": "4.2.19",
   "built": "2026-10-29",
-  "source": "crawl 310 routes + dashboard-ko + community v3 + legacy recovery + live audit 33 routes + superagentsApp/copilotApp gap 855 (2026-09-09) + Managed Agents→관리형 에이전트 통일 + _text 11 (Claude Chat 라이브 감사, 에이전트 템플릿·빌더 프롬프트) + 전 서브계정 개방에 따른 _text 단어 1개 항목 335건 제거 (벤자민 결정: 짧은 단어 치환 금지) + 보류 제외 2건 확정(agency.gdpr·communitiesApp.universityCommunity, 2026-10-28) + 글로서리 v1.0.0 확정 용어 통일 1,076건 (2026-10-28) + round 2026-10-29 agency (telemetry) + round 2026-10-29 calendarComponentsApp (telemetry) + round 2026-10-29 common (telemetry) + round 2026-10-29 copilot (telemetry) + round 2026-10-29 copilotApp (telemetry) + round 2026-10-29 mediaCenterApp (telemetry) + round 2026-10-29 powerDialerApp (telemetry) + round 2026-10-29 switchyard (telemetry) + round 2026-10-29 workflowHotlinks (telemetry)",
+  "source": "crawl 310 routes + dashboard-ko + community v3 + legacy recovery + live audit 33 routes + superagentsApp/copilotApp gap 855 (2026-09-09) + Managed Agents→관리형 에이전트 통일 + _text 11 (Claude Chat 라이브 감사, 에이전트 템플릿·빌더 프롬프트) + 전 서브계정 개방에 따른 _text 단어 1개 항목 335건 제거 (벤자민 결정: 짧은 단어 치환 금지) + 보류 제외 2건 확정(agency.gdpr·communitiesApp.universityCommunity, 2026-10-28) + 글로서리 v1.0.0 확정 용어 통일 1,076건 (2026-10-28) + round 2026-10-29 agency (telemetry) + round 2026-10-29 calendarComponentsApp (telemetry) + round 2026-10-29 common (telemetry) + round 2026-10-29 copilot (telemetry) + round 2026-10-29 copilotApp (telemetry) + round 2026-10-29 mediaCenterApp (telemetry) + round 2026-10-29 powerDialerApp (telemetry) + round 2026-10-29 switchyard (telemetry) + round 2026-10-29 workflowHotlinks (telemetry) + 레거시 은퇴 보강: ALL-CAPS 표 제목 13건 _text (2026-10-29)",
   "strings": 102718
  },
  "host": {
@@ -122061,6 +122061,19 @@
   "Answers questions using your knowledge base. Ideal for support and FAQs.": "지식 베이스를 바탕으로 질문에 답합니다. 고객 지원과 FAQ에 적합합니다.",
   "Welcomes new members, answers common questions, and flags content that breaks the guidelines.": "새 멤버를 환영하고, 자주 묻는 질문에 답하고, 가이드라인을 어기는 콘텐츠를 표시합니다.",
   "Plans, drafts, and sends targeted email campaigns to a segment of your contacts.": "연락처 세그먼트를 대상으로 이메일 캠페인을 기획·작성·발송합니다.",
-  "Drafts and publishes on-brand social posts, adapting tone and format for each platform.": "플랫폼별 톤과 형식에 맞춰 브랜드에 맞는 소셜 게시물을 작성하고 게시합니다."
+  "Drafts and publishes on-brand social posts, adapting tone and format for each platform.": "플랫폼별 톤과 형식에 맞춰 브랜드에 맞는 소셜 게시물을 작성하고 게시합니다.",
+  "ABANDONED": "포기",
+  "AGENCY": "에이전시",
+  "CAMPAIGN": "캠페인",
+  "CLICKS": "클릭",
+  "COST": "비용",
+  "ERROR": "오류",
+  "LEADS": "리드",
+  "LOST": "실패",
+  "REVENUE": "수익",
+  "SALES": "판매",
+  "STATUS": "상태",
+  "MESSAGES": "메시지",
+  "USAGE": "사용량"
  }
 }

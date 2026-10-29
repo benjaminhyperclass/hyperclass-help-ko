@@ -310,8 +310,12 @@ def main():
     # 'Solar' 'Roofing' 'New' 같은 단어 하나짜리 키가 고객의 태그·파이프라인 단계·업체명과
     # 정확히 같으면 그 데이터까지 한국어로 바뀐다. 단어 하나짜리 화면 문구는 i18n 카탈로그
     # (host/apps/flat) 로만 다룬다. 내부 키 유출(camelCase·점 표기)과 기호가 붙은 문구는 대상 아님.
+    # 예외(2026-10-29 벤자민 승인): 전부 대문자·4글자 이상 토큰(LEADS·REVENUE·STATUS…)은 리포팅 위젯의
+    # 하드코딩 표 제목이며 고객 데이터와 정확히 겹칠 가능성이 낮다 — 레거시 DOM 트랙 은퇴를 위한 좁은 예외.
     for en in text:
         k = en.strip()
+        if re.fullmatch(r'[A-Z]{4,}', k):
+            continue
         if re.fullmatch(r"[A-Za-z][A-Za-z'\-]*", k) and not re.match(r'[a-z]+[A-Z]', k):
             v['C12'].append({'key': k, 'ko': text[en][:40],
                              'why': '단어 하나짜리 _text — 고객 데이터(태그·단계명) 치환 위험'})

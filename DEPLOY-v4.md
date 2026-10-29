@@ -74,7 +74,7 @@ Agency Settings → Company → **Whitelabel → Custom Code → Custom JavaScri
 ```html
 <script>window.HC_I18N_EXCLUDE = ["1r0pJRd1cQQ5DZsjSbc9"];</script>
 <script src="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@c25c941dfe4cee25495a225c8c577f534aec6946/js/hc-bootstrap.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@8fabb6a/js/dashboard-ko.min.js"></script>
+<!-- 2026-10-29: 레거시 dashboard-ko.min.js 줄은 은퇴. 슬롯은 위 1줄뿐 -->
 ```
 
 - **첫 줄의 `HC_I18N_EXCLUDE` 를 빠뜨리지 마세요.** 이게 없으면 두 레이어 모두

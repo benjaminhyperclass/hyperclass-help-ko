@@ -30,7 +30,9 @@
 | 2026-10-29 오전 | ① **1라운드 PR #7** (사전 v4.2.18 후보, 687건: powerDialerApp 342·calendarComponentsApp 150·common 102·mediaCenterApp 73…) — 자동 리뷰 high 5 → 반영 → high 0, 2차 반영(녹화→녹음·반말·용어). **벤자민 머지 대기** ② `ko-round-review.yml` + `scripts/round-review.py`: 규칙 R1~R7 + Claude 검수 → PR 코멘트 ③ `ko-sensors.yml`: S1 매니페스트(main 2136, federatedApps 버전) 6h · S4 릴리스 노트 → 이슈 #6 ④ 로더 v4.16.1: EN 샘플 600자 이하만(잘림 금지) · 라운드 600자 이상 제외 ⑤ CI: 로더 포인터 SHA 실존 하드 게이트 |
 | 사고 기록 | 10-29 01:3x UTC 포인터가 존재하지 않는 로더 SHA(79423a5)를 2분간 가리킴(번들 재사용 실수) → 긴급 수정 806749b. 영향: 그 사이 첫 로드한 세션은 1회 영어. 재발 방지: CI 게이트 + 번들 파일명 고유화 |
 | 미결 | 레포 설정 "Allow GitHub Actions to create and approve pull requests" OFF → 라운드 워크플로가 브랜치만 밀고 PR 은 수동(벤자민 결정) |
-| 다음 손 | **벤자민: PR #7 머지** → 포인터 자동 전진. EN 풀이 차면(며칠 내 자동) 다음 라운드 PR 이 열린다 → 벤자민은 PR 에서 용어만 훑고 머지. 즉시 돌리려면 운영 계정에서 대시보드·AI 스튜디오·통화·리포팅 화면을 새 탭으로 몇 번 열면 풀이 빨리 찬다 → Actions "번역 라운드" Run workflow |
+| 2026-10-29 오후 | ✅ PR #7 머지(사전 v4.2.18, QC 4회: 자동 리뷰 2회 + 독립 서브에이전트 1회 + 조사 보정) → 포인터 자동 전진 → 라이브 확인(`__hcPtr.rev` b02578f, 녹취록). ✅ 레포 설정 "Allow GitHub Actions to create PRs" ON → 라운드 PR 완전 자동. ✅ **레거시 DOM 트랙 은퇴**: 실측 11,817건 중 v4 미커버 40건(ALL-CAPS 표 제목 13 → `_text` 예외 등재, 잡단어·해요체 27 폐기) → Custom JS 슬롯 1줄(부트스트랩)만 남김(벤자민 승인 2026-10-29). validate C12 예외: `[A-Z]{4,}` 토큰 |
+| 사고 기록 2 | 10-28 글로서리 통일 치환이 받침 불일치 7건(스마트 리스트으로·스토어을) 남김 → 수정. 수정 중 전역 조사 교정기가 동사 어미('있는→있은')를 깨뜨리는 것을 diff 에서 발견·폐기 → **명사 범위 한정 `fix_josa_after`** 로 대체(round-merge 내장) |
+| 다음 손 | 없음(자동). EN 풀이 차면 월·목 라운드 PR → 자동 리뷰 → Claude 가 QC 후 머지 → 벤자민은 PR 에서 용어만 훑고 머지. 즉시 돌리려면 운영 계정에서 대시보드·AI 스튜디오·통화·리포팅 화면을 새 탭으로 몇 번 열면 풀이 빨리 찬다 → Actions "번역 라운드" Run workflow |
 
 ## 배포 좌표
 
@@ -39,7 +41,7 @@
 | 사전 버전 / REV | **v4.2.7** / `3b8272791e0280c079f663e722ad826343d8724a` (strings 102,718 · _text 8,770) — 포인터가 정한다. 봇 커밋 881d9a3 로 자동 전진(2026-10-08). ⚠️ 내장 REV_BUILTIN 은 c9879e0(단어 1개 키 포함)이라 **포인터를 아직 못 받은 첫 방문 1회**만 옛 사전으로 뜬다 — 다음 로더 교체 때 REV_BUILTIN 을 3b82727 로 올린다 |
 | 로더 버전 / SHA | **v4.11.0** / `45e5a5e13757aecce678f63f7ec47bce9325d28e` (ALLOW=[] 전 서브계정 · 에이전시 화면 제외 · 원격 킬스위치 `off` · 내장 REV_BUILTIN=c9879e0) |
 | Custom JS 슬롯에 실제 들어있는 로더 SHA | `0fcf256` (v4.9.2, 2026-10-08 라이브 수집 `_meta.loader` 로 재확인 — 76c557f 교체는 실시되지 않음) → **`45e5a5e` (v4.11.0) 교체 완료 2026-10-08** (76c557f 는 건너뜀). 슬롯 1줄째 `HC_I18N_EXCLUDE` 명시 — 미결 #8 해소 |
-| 레거시 DOM 레이어 핀 | `@8fabb6a/js/dashboard-ko.min.js` (스테일 핀 유지 결정 — 아래 미결) |
+| 레거시 DOM 레이어 핀 | ~~`@8fabb6a/js/dashboard-ko.min.js`~~ **은퇴 2026-10-29** — 슬롯에서 제거. 커버리지 차이 40건은 `_text` 예외로 흡수 |
 | CDN 삼중 대조 | core / apps / loader 모두 CDN = raw = local = git (SHA-256), `immutable`, CORS `*` (2026-09-09) |
 
 Custom JS 칸 (Agency Whitelabel → Custom JavaScript) — **실제 슬롯은 아래 2줄뿐이다.** `HC_I18N_EXCLUDE` 선언 줄은 없고, 제외 로케이션은 두 레이어의 하드코딩 폴백(`HC_EXCLUDE_FALLBACK` / 레거시 `hcEx()`)에 의존한다(미결 #8).
