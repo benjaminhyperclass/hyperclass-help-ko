@@ -1,0 +1,56 @@
+name: 메인 앱 한글팩 — 번역 라운드 PR 자동 리뷰
+
+# round/* 브랜치 PR(또는 참조본이 바뀐 PR)이 열리거나 갱신되면, base↔head 참조본 차이를 뽑아
+# 규칙 검사(플레이스홀더·DNT·브랜드·글로서리·조사·길이) + Claude 검수(오역·어색함)를 PR 코멘트로 단다.
+# 차단하지 않는다 — 사람은 코멘트의 high/medium 만 보고 머지한다.
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+    paths:
+      - '_source/hc-ko-app-reference.json'
+
+permissions:
+  contents: read
+  pull-requests: write
+
+concurrency:
+  group: ko-round-review-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -q anthropic
+
+      - name: base/head 참조본 추출
+        run: |
+          git show "origin/${{ github.base_ref }}:_source/hc-ko-app-reference.json" > /tmp/ref.base.json
+          cp _source/hc-ko-app-reference.json /tmp/ref.head.json
+
+      - name: 리뷰 실행
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          python3 scripts/round-review.py --base /tmp/ref.base.json --head /tmp/ref.head.json --out /tmp/review.md --max 600
+          cat /tmp/review.md >> $GITHUB_STEP_SUMMARY
+
+      - name: PR 코멘트 (이전 자동 리뷰는 갱신)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.number }}
+        run: |
+          MARK="<!-- hc-round-review -->"
+          { echo "$MARK"; cat /tmp/review.md; } > /tmp/body.md
+          CID=$(gh api "repos/${{ github.repository }}/issues/$PR/comments" --paginate --jq ".[] | select(.body | startswith(\"$MARK\")) | .id" | head -1)
+          if [ -n "$CID" ]; then
+            gh api -X PATCH "repos/${{ github.repository }}/issues/comments/$CID" -F body=@/tmp/body.md >/dev/null
+          else
+            gh pr comment "$PR" --body-file /tmp/body.md
+          fi
