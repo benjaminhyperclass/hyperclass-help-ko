@@ -1,4 +1,11 @@
-/* Hyperclass 한글팩 — 텔레메트리 수신 Worker v0.3.1 (2026-10-29: digest 에 loaders/revs 집계, 검증 거부 사유 console.log)
+/* Hyperclass 한글팩 — 텔레메트리 수신 Worker v0.4.0 (2026-10-29)
+ * v0.4: **KV 무료 한도(put 1,000/일) 안에서 돌게 재설계.** 10-28 에 한도를 넘겨 put 이 429 → 로더 보고가 하루 통째로 유실됐다.
+ *       ① 영어 원문은 키 하나씩(en/<ns>/<key>, 이벤트당 최대 400 put) 대신 **ns 당 블롭 1개**(enb/<ns>) 에 합쳐 두고
+ *          새 키가 생긴 ns 만 put (이벤트당 최대 EN_PUTS_PER_EVENT, 기본 6). 정상 상태에서는 거의 0.
+ *       ② 레이트리밋 카운터는 KV 대신 Cache API(caches.default) — KV 쓰기 0.
+ *       ③ 이벤트 put 은 종전대로 1회. 하루 put 상한(DAILY_PUT_BUDGET, 기본 800)을 Cache API 로 세어 넘으면 204 로 조용히 버린다.
+ *       옛 en/<ns>/<key> 키는 /en 이 블롭과 합쳐 읽는다(90일 TTL 로 자연 소멸).
+ * v0.3.1: digest 에 loaders/revs 집계, 검증 거부 사유 console.log
  *
  * POST /r        로더(v4.14+)가 sendBeacon 으로 보내는 라우트별 미번역 집계 1건. 본문은 JSON(text/plain).
  *                검증 후 KV 에 `ev/<YYYY-MM-DD>/<ts>-<rand>` 로 저장(TTL_DAYS). 응답 204.
@@ -7,7 +14,7 @@
  *                date 생략 = 오늘(UTC). Authorization: Bearer <DIGEST_TOKEN> 또는 ?token=.
  * PUT  /blob/<name>  라이브 추출(브라우저)에서 올리는 JSON 덩어리(≤1MB, 7일). Origin 이 app.hyperclass.ai 일 때만. name = [A-Za-z0-9._-]{3,64}
  *                   같은 이름이 이미 있으면 409. GET /blob/<name> 은 DIGEST_TOKEN 필요. (v0.2 — 번역 라운드 입력 전달 채널)
- * GET  /en?ns=<ns>[&token=…]  로더 v4.16 이 동봉한 영어 원문(pairs)을 KV `en/<ns>/<key>` 에 모은 것 → {key: en}. ns 생략 = ns 목록과 건수.
+ * GET  /en?ns=<ns>[&token=…]  로더 v4.16 이 동봉한 영어 원문(pairs)을 KV `enb/<ns>` 블롭(+옛 en/<ns>/<key>)에 모은 것 → {key: en}. ns 생략 = ns 목록과 건수.
  *                   번역 라운드 입력. (v0.3)
  * GET  /health   200 ok
  *
@@ -39,13 +46,44 @@ export function validate(ev) {
   return null;
 }
 
+// Cache API 카운터 — KV 쓰기를 쓰지 않는다. 엣지 PoP 별로 따로 세지만 남용 방지·예산 상한 용도로는 충분하다.
+async function cacheCount(name, ttl) {
+  try {
+    const c = caches.default;
+    const req = new Request('https://hc-ko-telemetry.invalid/counter/' + name);
+    const hit = await c.match(req);
+    const n = (hit ? parseInt(await hit.text(), 10) || 0 : 0) + 1;
+    await c.put(req, new Response(String(n), { headers: { 'Cache-Control': 'max-age=' + ttl } }));
+    return n;
+  } catch (e) { return 0; }   // Cache API 를 못 쓰는 환경(테스트 등) — 제한하지 않는다
+}
 async function rateLimited(env, request) {
   const ip = request.headers.get('cf-connecting-ip') || '0';
   const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(ip + '|' + Math.floor(Date.now() / 60000)));
-  const key = 'rl/' + Array.from(new Uint8Array(buf)).slice(0, 8).map(b => b.toString(16).padStart(2, '0')).join('');
-  const n = parseInt((await env.TEL.get(key)) || '0', 10) + 1;
-  await env.TEL.put(key, String(n), { expirationTtl: 120 });
+  const key = 'rl-' + Array.from(new Uint8Array(buf)).slice(0, 8).map(b => b.toString(16).padStart(2, '0')).join('');
+  const n = await cacheCount(key, 120);
   return n > (parseInt(env.RATE_PER_MIN || '30', 10) || 30);
+}
+// 하루 KV put 예산. 무료 한도 1,000 아래(기본 800)에서 멈춰 다른 호출(blob·digest 워크플로)이 남는 여유를 가진다.
+async function overBudget(env, puts) {
+  const budget = parseInt(env.DAILY_PUT_BUDGET || '800', 10) || 800;
+  const n = await cacheCount('puts-' + day(), 86400);
+  return n + puts - 1 > budget;
+}
+// 영어 원문 블롭: enb/<ns> = {key: en}. 새 키가 있는 ns 만 put (이벤트당 상한). 반환 = put 횟수.
+async function mergeEnPairs(env, rows, maxPuts) {
+  let puts = 0;
+  const cand = rows.filter(r => Array.isArray(r.pairs) && r.pairs.length).sort((a, b) => b.pairs.length - a.pairs.length);
+  for (const row of cand) {
+    if (puts >= maxPuts) break;
+    const bk = 'enb/' + row.ns;
+    const cur = (await env.TEL.get(bk, 'json')) || {};
+    let added = 0;
+    for (const [k, en] of row.pairs) if (!(k in cur)) { cur[k] = en; added++; }
+    if (!added) continue;
+    await env.TEL.put(bk, JSON.stringify(cur), { expirationTtl: 180 * 86400 }); puts++;
+  }
+  return puts;
 }
 
 export async function digest(env, date) {
@@ -96,21 +134,15 @@ export default {
       const err = validate(ev);
       if (err) { console.log('reject', err, ev.loader, ev.route, txt.length); return new Response(err, { status: 400, headers: CORS }); }
       if (await rateLimited(env, request)) return new Response('rate', { status: 429, headers: CORS });
+      if (await overBudget(env, 1)) { console.log('budget', ev.loader, ev.route); return new Response(null, { status: 204, headers: CORS }); }
       const ttl = (parseInt(env.TTL_DAYS || '30', 10) || 30) * 86400;
       const key = 'ev/' + day() + '/' + Date.now() + '-' + Math.random().toString(36).slice(2, 8);
-      const slim = { v: 1, t: ev.t, route: ev.route, loader: ev.loader, rev: ev.rev, edge: ev.edge || null, text: ev.text || null, hits: ev.hits, unmatched: ev.unmatched, ns: ev.ns, reason: ev.reason };
+      const ns = ev.ns.map(r => ({ ns: r.ns, total: r.total, en: r.en, samples: r.samples }));   // pairs 는 이벤트에 넣지 않는다(블롭으로)
+      const slim = { v: 1, t: ev.t, route: ev.route, loader: ev.loader, rev: ev.rev, edge: ev.edge || null, text: ev.text || null, hits: ev.hits, unmatched: ev.unmatched, ns, reason: ev.reason };
       await env.TEL.put(key, JSON.stringify(slim), { expirationTtl: ttl });
-      // 영어 원문 수집 — 이미 있는 키는 건너뛴다(쓰기 절약). 90일 보존.
-      let puts = 0;
-      for (const row of ev.ns) {
-        if (!Array.isArray(row.pairs)) continue;
-        for (const [k, en] of row.pairs) {
-          if (puts >= 400) break;
-          const ek = 'en/' + row.ns + '/' + k;
-          if (await env.TEL.get(ek) !== null) continue;
-          await env.TEL.put(ek, en, { expirationTtl: 90 * 86400 }); puts++;
-        }
-      }
+      const maxPuts = parseInt(env.EN_PUTS_PER_EVENT || '6', 10) || 6;
+      const puts = await mergeEnPairs(env, ev.ns, maxPuts);
+      for (let i = 0; i < puts; i++) await cacheCount('puts-' + day(), 86400);
       return new Response(null, { status: 204, headers: CORS });
     }
 
@@ -139,17 +171,30 @@ export default {
       const tok = (request.headers.get('authorization') || '').replace(/^Bearer\s+/i, '') || url.searchParams.get('token') || '';
       if (!env.DIGEST_TOKEN || tok !== env.DIGEST_TOKEN) return new Response('unauthorized', { status: 401, headers: CORS });
       const ns = url.searchParams.get('ns');
-      const prefix = ns ? 'en/' + ns + '/' : 'en/';
       const out = {}; let cursor;
-      do {
-        const page = await env.TEL.list({ prefix, cursor, limit: 1000 });
-        for (const k of page.keys) {
-          const rest = k.name.slice(3);
-          if (ns) out[rest.slice(ns.length + 1)] = await env.TEL.get(k.name);
-          else { const n = rest.split('/')[0]; out[n] = (out[n] || 0) + 1; }
-        }
-        cursor = page.list_complete ? null : page.cursor;
-      } while (cursor);
+      // v0.4 블롭(enb/<ns>) + 옛 키(en/<ns>/<key>, 90일 TTL 로 소멸 중)를 합친다
+      if (ns) {
+        Object.assign(out, (await env.TEL.get('enb/' + ns, 'json')) || {});
+        do {
+          const page = await env.TEL.list({ prefix: 'en/' + ns + '/', cursor, limit: 1000 });
+          for (const k of page.keys) { const kk = k.name.slice(4 + ns.length); if (!(kk in out)) out[kk] = await env.TEL.get(k.name); }
+          cursor = page.list_complete ? null : page.cursor;
+        } while (cursor);
+      } else {
+        const legacy = {};
+        do {
+          const page = await env.TEL.list({ prefix: 'en/', cursor, limit: 1000 });
+          for (const k of page.keys) { const n = k.name.slice(3).split('/')[0]; (legacy[n] = legacy[n] || new Set()).add(k.name.slice(4 + n.length)); }
+          cursor = page.list_complete ? null : page.cursor;
+        } while (cursor);
+        cursor = undefined;
+        do {
+          const page = await env.TEL.list({ prefix: 'enb/', cursor, limit: 1000 });
+          for (const k of page.keys) { const n = k.name.slice(4); const b = (await env.TEL.get(k.name, 'json')) || {}; for (const kk of Object.keys(b)) (legacy[n] = legacy[n] || new Set()).add(kk); }
+          cursor = page.list_complete ? null : page.cursor;
+        } while (cursor);
+        for (const [n, set] of Object.entries(legacy)) out[n] = set.size;
+      }
       return new Response(JSON.stringify(out, null, 1), { headers: { ...CORS, 'Content-Type': 'application/json; charset=utf-8' } });
     }
 

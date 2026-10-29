@@ -74,8 +74,7 @@ Agency Settings → Company → **Whitelabel → Custom Code → Custom JavaScri
 ```html
 <script>window.HC_I18N_EXCLUDE = ["1r0pJRd1cQQ5DZsjSbc9"];</script>
 <script src="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@c25c941dfe4cee25495a225c8c577f534aec6946/js/hc-bootstrap.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@8fabb6a/js/dashboard-ko.min.js"></script>
-<!-- 2026-10-29: 레거시 줄을 한 번 뺐다가 연락처 표 머리글·툴바(Phone·Filters·Import…)가 영어로 회귀해 복구. 로더 v4.17 _textScoped(UI 크롬 한정 단어 1개 레이어) 캐너리 검증 뒤 다시 뺀다 -->
+<!-- 2026-10-29 03:4x UTC: 레거시 dashboard-ko.min.js 줄 은퇴 완료. 슬롯은 위 1줄뿐. 단어 1개 항목은 로더 v4.17 _textScoped(UI 크롬 한정)가 맡는다 -->
 ```
 
 - **첫 줄의 `HC_I18N_EXCLUDE` 를 빠뜨리지 마세요.** 이게 없으면 두 레이어 모두

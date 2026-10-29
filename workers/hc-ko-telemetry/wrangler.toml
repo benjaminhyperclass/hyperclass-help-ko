@@ -15,3 +15,6 @@ id = "0836915dd4194358a3eb804425146fcf"
 TTL_DAYS = "30"
 # 1분당 IP별 수신 상한(남용 방지). KV 쓰기 기준.
 RATE_PER_MIN = "30"
+# v0.4 — 이벤트당 영어 원문 블롭 put 상한 / 하루 KV put 예산(무료 1,000 아래)
+EN_PUTS_PER_EVENT = "6"
+DAILY_PUT_BUDGET = "800"
