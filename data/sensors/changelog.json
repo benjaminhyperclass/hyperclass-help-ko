@@ -19,19 +19,23 @@
   "Workflows Now in MCP – Ask Your AI Assistant to Build, Debug and Publish Workflows": "2026-10-29",
   "AI Analyze Video: New Workflow Action": "2026-10-29",
   "📅 Service Booking is Now Available in the Client Portal!": "2026-10-29",
-  "Test Your Workflow Right Inside AI Builder": "2026-10-29"
+  "Test Your Workflow Right Inside AI Builder": "2026-10-29",
+  "SaaS Usage Limits: Keep Client Usage in Check, and Get Paid When They Need More": "2026-10-30",
+  "See call quality live, rate it when you’re done 📶": "2026-10-30",
+  "Every call recording, not just one - Mobile": "2026-10-30",
+  "Who Answered the Call - Now on Mobile": "2026-10-30"
  },
  "updated": "2026-10-30",
  "slugs": [
   "ai-analyze-video-new-workflow-action",
   "ai-video-generation-new-workflow-action",
-  "loop-new-workflow-action",
+  "every-call-recording-not-just-one-mobile",
   "make-the-calendar-view-yours-more-settings-export-staff-colors",
-  "router-new-workflow-action",
+  "saas-usage-limits-keep-client-usage-in-check-and-get-paid-when-they-need-more",
+  "see-call-quality-live-rate-it-when-youre-done",
   "service-booking-is-now-available-in-the-client-portal",
-  "skills-now-available-in-the-ai-agent-action-in-workflows",
   "test-your-workflow-right-inside-ai-builder",
   "web-search-now-available-in-the-ai-agent-action",
-  "workflows-now-in-mcp-ask-your-ai-assistant-to-build-debug-and-publish-workflows"
+  "who-answered-the-call-now-on-mobile"
  ]
 }
