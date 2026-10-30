@@ -1,0 +1,15 @@
+{
+ "_comment": "인앱 문구 신고 누적. 처리(사전 반영)했으면 항목을 지운다. 원본은 일일 보고서.",
+ "items": {
+  "Page 1 of 34": {
+   "n": 1,
+   "first": "2026-10-29",
+   "routes": [
+    "/v2/location/:loc/contacts/smart_list/all"
+   ],
+   "ctx": "span.tabulator-page-counter",
+   "lang": "en",
+   "last": "2026-10-29"
+  }
+ }
+}
