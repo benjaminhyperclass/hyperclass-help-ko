@@ -1,5 +1,5 @@
 {
- "manifestVersion": "2142.7609",
+ "manifestVersion": "2142.7611",
  "mainAppVersion": "2142",
  "federatedApps": {
   "reputationApp": "https://appcdn.leadconnectorhq.com/revex/reputation/2230/remoteEntry.js?nocache=true",
@@ -18,7 +18,7 @@
   "locationBillingApp": "https://appcdn.leadconnectorhq.com/revex/location-billing/2208/remoteEntry.js?nocache=true",
   "companyApp": "https://appcdn.leadconnectorhq.com/revex/company/2222/remoteEntry.js?nocache=true",
   "locationsApp": "https://appcdn.leadconnectorhq.com/revex/locations/2228/remoteEntry.js?nocache=true",
-  "contentAIApp": "https://appcdn.leadconnectorhq.com/crm/content-ai/35/remoteEntry.js?nocache=true",
+  "contentAIApp": "https://appcdn.leadconnectorhq.com/crm/content-ai/36/remoteEntry.js?nocache=true",
   "platformBillingApp": "https://appcdn.leadconnectorhq.com/revex/platform-billing/71/remoteEntry.js?nocache=true",
   "agencyInternalToolsApp": "https://appcdn.leadconnectorhq.com/revex/agency-internaltools/1000/remoteEntry.js?nocache=true",
   "membershipApp": "https://appcdn.leadconnectorhq.com/revex/memberships/2232/remoteEntry.js?nocache=true",
@@ -29,7 +29,7 @@
   "storeWidgetApp": "https://appcdn.leadconnectorhq.com/leadgen/store-widgets/44/remoteEntry.js?nocache=true",
   "ecommerceApp": "https://appcdn.leadconnectorhq.com/leadgen/ecommerce/65/remoteEntry.js?nocach",
   "aiEmployeesApp": "https://appcdn.leadconnectorhq.com/crm/ai-employees/2919/remoteEntry.js?nocache=true",
-  "marketplaceApp": "https://appcdn.leadconnectorhq.com/marketplace/marketplace/186/remoteEntry.js?nocache=true",
+  "marketplaceApp": "https://appcdn.leadconnectorhq.com/marketplace/marketplace/187/remoteEntry.js?nocache=true",
   "powerDialerApp": "https://appcdn.leadconnectorhq.com/revex/power-dialer/2209/remoteEntry.js?nocache=true",
   "appointmentModalApp": "https://appcdn.leadconnectorhq.com/automation/appointment-modal/620/remoteEntry.js?nocache=true",
   "mediaEditorApp": "https://appcdn.leadconnectorhq.com/leadgen/MediaEditor/187/remoteEntry.js?nocache=true",

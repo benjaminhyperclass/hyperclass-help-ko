@@ -37,3 +37,7 @@
 - `voiceAiApp` 867 → 886
 - `yextApp` 2210 → 2229
 
+## 2026-10-30 22:30 UTC — main 2142 → 2142 · manifest 2142.7609 → 2142.7611
+- `contentAIApp` 35 → 36
+- `marketplaceApp` 186 → 187
+
