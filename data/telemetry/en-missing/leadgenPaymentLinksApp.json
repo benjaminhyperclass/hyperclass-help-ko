@@ -1,0 +1,6 @@
+{
+ "editor.brandingDefault": "Powered by {location}",
+ "editor.emailPlaceholder": "abc{'@'}gmail.com",
+ "editor.redirectPlaceholder": "https://example.com",
+ "sendToContact.smsOnly": "SMS"
+}
