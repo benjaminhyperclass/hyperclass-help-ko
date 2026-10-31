@@ -23,9 +23,9 @@
    ───────────────────────────────────────────────────────────────────── */
 (() => {
   const EXPECT = {
-    version: '4.12.0',
-    revPrefix: 'd32834c',
-    textEntries: 8763,
+    version: '4.18.1',      // 포인터 loader.stable a2e7596 (2026-10-29)
+    revPrefix: '4069893',   // 사전 v4.2.20
+    textEntries: 8776,      // _text (별도로 _textScoped 1,362 — status().scopedEntries)
   };
   const A = window.__hcKoApp;
   if (!A) {
