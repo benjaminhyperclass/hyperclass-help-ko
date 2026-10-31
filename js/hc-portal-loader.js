@@ -1,4 +1,8 @@
-/* Hyperclass 한글팩 — 클라이언트 포털 로더 v4.1.0 (2026-10-31, 작업지시서 v1 B3·B4·B5)
+/* Hyperclass 한글팩 — 클라이언트 포털 로더 v4.1.1 (2026-10-31, 작업지시서 v1 B3·B4·B5)
+ * v4.1.1 (적대적 리뷰 반영): 규칙에 route(경로 정규식) 추가·범위는 사전에서 정확히(공개 페이지 실측) · 텍스트 일치를 먼저 보고
+ *        범위·편집기 검사는 맞을 때만(성능) · remote 병합 상태를 앱(composer)별로, 감시 키를 네임스페이스마다 · status() 를 꺼진
+ *        상태에서도 · v3 무력화를 i18n·킬 스위치와 무관하게 돌리고 v3 의 카탈로그 재병합(messages)도 비움 · '$' 치환 안전 ·
+ *        hasOwnProperty · 제목 정확 일치는 첫 구절만 · title 요소 교체 감지 · 형식기 ampm·metaDate 추가
  * v4.1.0: ① 같은 페이지의 **다른 Vue 앱**(예: 코스·강의 화면의 #remote-membership-preview-mount — 별도 i18n, 1,137키)도 찾아
  *        사전 `remotes.[이름]` 을 병합한다. [data-v-app] 전부를 스캔(나중에 마운트되는 앱 포함: DOM 추가 감지 + 2초 감시),
  *        마운트 id 로 고르고 없으면 네임스페이스 지문(겹침 60% 이상)으로 고른다. 앱이 카탈로그를 다시 세팅하면 다시 병합.
@@ -35,9 +39,9 @@
   'use strict';
   if (window.__hcPortal) return;
   // B5: 그룹 칸의 옛 v3.0.1 은 첫 줄에서 이 변수를 보고 멈춘다(그쪽이 나중에 실행될 때). 킬 스위치로 아래에서 빠져도 v3 는 막힌 채가 맞다.
-  if (!window.__hcKoLoader) window.__hcKoLoader = 'portal-4.1.0';
+  if (!window.__hcKoLoader) window.__hcKoLoader = 'portal-4.1.1';
 
-  var VERSION = '4.1.0';
+  var VERSION = '4.1.1';
   var REPO = 'benjaminhyperclass/hyperclass-help-ko';
   var CDN = 'https://cdn.jsdelivr.net/gh/' + REPO + '@';
   var RAW = 'https://raw.githubusercontent.com/' + REPO + '/';
@@ -59,6 +63,8 @@
   var revSource = P && REV === String(P.rev) ? 'pointer' : 'builtin';
   var stats = { merges: 0, remerge: 0, textHits: 0, ruleHits: 0, titleHits: 0, fallback: 0, v3Neutralized: false };
   var remoteStats = {};
+  var RULES = [], TT = null;   // 킬 스위치로 아래에서 빠져도 status() 가 읽을 수 있게 먼저 초기화
+  function hasOwn(o, k) { return !!o && Object.prototype.hasOwnProperty.call(o, k); }
   var telemetry = { url: null, sent: 0, skipped: 0, last: null };
   var dict = null, i18n = null, applied = false, probeExpect = null, T = null, booted = false, err = null;
 
@@ -81,6 +87,8 @@
     reapply: function () { return applyI18n(); }
   };
 
+  // B5: v3 무력화는 i18n·킬 스위치와 무관하게 — 처음 30초는 1초마다, 그 뒤 5초마다
+  (function () { var n = 0; var iv = setInterval(function () { neutralizeV3(); if (++n === 30) { clearInterval(iv); setInterval(neutralizeV3, 5000); } }, 1000); })();
   try {
     if (/[?&]hcko=off/.test(location.search) || lsGet('hcKoOff') === '1') { mark('off'); log('킬 스위치'); return; }
     if (P && P.off === true) { mark('off'); log('원격 킬스위치'); return; }
@@ -140,7 +148,6 @@
       var cur = findI18n();
       if (cur && (!i18n || cur.global !== i18n.global)) { i18n = cur; stats.remerge++; log('i18n 인스턴스 교체 → 병합'); applyI18n(); return; }
       if (!i18n) return;
-      scanRemotes(); neutralizeV3(); koTitle();
       // Nuxt head 관리가 html lang 을 'en' 으로 되돌린다(실측) — 적용 중이면 다시 세운다
       if (applied && document.documentElement.getAttribute('lang') !== 'ko') document.documentElement.setAttribute('lang', 'ko');
       try {
@@ -170,60 +177,72 @@
     return false;
   }
   /* ---------- 3-2) _rules — 범위 안에서만 도는 정확 일치·패턴·날짜 형식기·속성 ---------- */
-  // 규칙 { scope: 'CSS 선택자'|null, text: {EN: KO}, patterns: [['^…$', '치환']], formats: ['monthYear'|'dateString'|'weekday'], attrs: ['aria-label'] }
-  // 패턴은 '^' 로 시작하고 '$' 로 끝나는 것만 받는다(텍스트 노드 전체 일치) — 부분 치환으로 본문을 건드리지 않게.
-  var RULES = [];
+  // 규칙 { route: '경로 정규식'|null, scope: 'CSS 선택자'|null, text: {EN: KO}, patterns: [['^…$', '치환']], formats: [...], attrs: ['aria-label'|'title'] }
+  // 패턴은 '^' 로 시작하고 '$' 로 끝나는 것만 받는다(텍스트 노드 전체 일치). 일치를 먼저 보고 범위(closest)는 맞을 때만 본다.
   var WD = { Sun: '일', Mon: '월', Tue: '화', Wed: '수', Thu: '목', Fri: '금', Sat: '토' };
   var WDL = { Sunday: '일요일', Monday: '월요일', Tuesday: '화요일', Wednesday: '수요일', Thursday: '목요일', Friday: '금요일', Saturday: '토요일' };
+  var WDS = { Sunday: '일', Monday: '월', Tuesday: '화', Wednesday: '수', Thursday: '목', Friday: '금', Saturday: '토' };
   var MON = { Jan: 1, Feb: 2, Mar: 3, Apr: 4, May: 5, Jun: 6, Jul: 7, Aug: 8, Sep: 9, Oct: 10, Nov: 11, Dec: 12 };
   var MONL = { January: 1, February: 2, March: 3, April: 4, May: 5, June: 6, July: 7, August: 8, September: 9, October: 10, November: 11, December: 12 };
   var FORMATS = {
     // 'October 2026' → '2026년 10월'
-    monthYear: function (t) { var m = t.match(/^([A-Z][a-z]+) (\d{4})$/); return m && MONL[m[1]] ? m[2] + '년 ' + MONL[m[1]] + '월' : null; },
+    monthYear: function (t) { var m = t.match(/^([A-Z][a-z]+) (\d{4})$/); return m && hasOwn(MONL, m[1]) ? m[2] + '년 ' + MONL[m[1]] + '월' : null; },
     // Date.toDateString(): 'Tue Nov 03 2026' → '2026년 11월 3일 (화)'
-    dateString: function (t) { var m = t.match(/^(Sun|Mon|Tue|Wed|Thu|Fri|Sat) ([A-Z][a-z]{2}) (\d{2}) (\d{4})$/); return m && MON[m[2]] ? m[4] + '년 ' + MON[m[2]] + '월 ' + (+m[3]) + '일 (' + WD[m[1]] + ')' : null; },
+    dateString: function (t) { var m = t.match(/^(Sun|Mon|Tue|Wed|Thu|Fri|Sat) ([A-Z][a-z]{2}) (\d{2}) (\d{4})$/); return m && hasOwn(MON, m[2]) ? m[4] + '년 ' + MON[m[2]] + '월 ' + (+m[3]) + '일 (' + WD[m[1]] + ')' : null; },
     // 요일 머리글: 'Sun' → '일', 'Sunday' → '일요일', 'Sun 11/1' → '11/1 (일)'
-    weekday: function (t) { if (WD[t]) return WD[t]; if (WDL[t]) return WDL[t]; var m = t.match(/^(Sun|Mon|Tue|Wed|Thu|Fri|Sat) (\d{1,2}\/\d{1,2})$/); return m ? m[2] + ' (' + WD[m[1]] + ')' : null; }
+    weekday: function (t) { if (hasOwn(WD, t)) return WD[t]; if (hasOwn(WDL, t)) return WDL[t]; var m = t.match(/^(Sun|Mon|Tue|Wed|Thu|Fri|Sat) (\d{1,2}\/\d{1,2})$/); return m ? m[2] + ' (' + WD[m[1]] + ')' : null; },
+    // '8:00pm' · '8pm' · '10:30 AM' → '오후 8:00' · '오후 8시' · '오전 10:30'
+    ampm: function (t) { var m = t.match(/^(\d{1,2})(?::(\d{2}))? ?([AaPp])\.?[Mm]\.?$/); if (!m) return null; var ap = /[Pp]/.test(m[3]) ? '오후 ' : '오전 '; return m[2] ? ap + m[1] + ':' + m[2] : ap + m[1] + '시'; },
+    // 게시글 시각 툴팁: 'Saturday / 20 Sep 2025 / 03:32' (· ' PM') → '2025년 9월 20일 (토) 03:32'
+    metaDate: function (t) { var m = t.match(/^([A-Z][a-z]+day) \/ (\d{1,2}) ([A-Z][a-z]{2}) (\d{4}) \/ (\d{1,2}:\d{2})(?: ?([AP]M))?$/); if (!m || !hasOwn(MON, m[3]) || !hasOwn(WDS, m[1])) return null; return m[4] + '년 ' + MON[m[3]] + '월 ' + (+m[2]) + '일 (' + WDS[m[1]] + ') ' + (m[6] ? (m[6] === 'PM' ? '오후 ' : '오전 ') : '') + m[5]; }
   };
   function compileRules(src) {
     var out = [];
     (Array.isArray(src) ? src : []).forEach(function (r) {
       if (!r || typeof r !== 'object') return;
-      var pats = [];
+      var pats = [], route = null;
       (Array.isArray(r.patterns) ? r.patterns : []).forEach(function (p) {
         if (!Array.isArray(p) || typeof p[0] !== 'string' || typeof p[1] !== 'string') return;
         if (p[0].charAt(0) !== '^' || p[0].charAt(p[0].length - 1) !== '$') return;
         try { pats.push({ re: new RegExp(p[0]), ko: p[1] }); } catch (e) {}
       });
-      out.push({ scope: typeof r.scope === 'string' && r.scope ? r.scope : null, text: r.text && typeof r.text === 'object' ? r.text : null, pats: pats,
-        fmts: (Array.isArray(r.formats) ? r.formats : []).filter(function (f) { return FORMATS[f]; }), attrs: Array.isArray(r.attrs) ? r.attrs : [] });
+      if (typeof r.route === 'string' && r.route) { try { route = new RegExp(r.route); } catch (e) { return; } }
+      out.push({ route: route, scope: typeof r.scope === 'string' && r.scope ? r.scope : null, text: r.text && typeof r.text === 'object' ? r.text : null, pats: pats,
+        fmts: (Array.isArray(r.formats) ? r.formats : []).filter(function (f) { return hasOwn(FORMATS, f); }), attrs: Array.isArray(r.attrs) ? r.attrs : [] });
     });
     return out;
   }
   function inScope(el, scope) { try { return !scope || !!(el && el.closest && el.closest(scope)); } catch (e) { return false; } }
+  function candidate(r, t) {
+    if (r.text && hasOwn(r.text, t)) return r.text[t];
+    for (var j = 0; r.pats.length > j; j++) if (r.pats[j].re.test(t)) return t.replace(r.pats[j].re, r.pats[j].ko);
+    for (var f = 0; r.fmts.length > f; f++) { var v = FORMATS[r.fmts[f]](t); if (v) return v; }
+    return null;
+  }
   function ruleValue(t, el, attr) {
+    var path = location.pathname;
     for (var i = 0; RULES.length > i; i++) {
       var r = RULES[i];
-      if (attr && r.attrs.indexOf(attr) === -1) continue;
-      if (!inScope(el, r.scope)) continue;
-      if (r.text && r.text[t] !== undefined) return r.text[t];
-      for (var j = 0; r.pats.length > j; j++) if (r.pats[j].re.test(t)) return t.replace(r.pats[j].re, r.pats[j].ko);
-      for (var f = 0; r.fmts.length > f; f++) { var v = FORMATS[r.fmts[f]](t); if (v) return v; }
+      if (attr ? r.attrs.indexOf(attr) === -1 : false) continue;
+      if (r.route && !r.route.test(path)) continue;
+      var v = candidate(r, t);                       // 싼 검사 먼저
+      if (v !== null && inScope(el, r.scope)) return v;   // closest 는 맞을 때만
     }
     return null;
   }
+  function put(s, t, v) { return s.replace(t, function () { return v; }); }   // '$' 가 든 값도 그대로
 
   /* ---------- 3-3) _titles — 탭 제목 구절 ---------- */
-  var TT = null;
   function koTitle() {
     try {
       var t = document.title; if (!t || !TT) return;
       var parts = t.split(/(\s[|\-–·]\s)/), changed = false;
       for (var i = 0; parts.length > i; i += 2) {
-        var seg = parts[i].trim(); if (!seg || /[가-힣]/.test(seg) && !/[A-Za-z]/.test(seg)) continue;
-        var v = TT.exact && TT.exact[seg];
+        var seg = parts[i].trim(); if (!seg || !/[A-Za-z]/.test(seg)) continue;
+        // 정확 일치는 첫 구절(화면 이름)만 — 뒤 구절은 포털·커뮤니티 이름일 수 있다
+        var v = i === 0 && TT.exact && hasOwn(TT.exact, seg) ? TT.exact[seg] : undefined;
         if (v === undefined && TT.pats) for (var j = 0; TT.pats.length > j; j++) if (TT.pats[j].re.test(seg)) { v = seg.replace(TT.pats[j].re, TT.pats[j].ko); break; }
-        if (v !== undefined && v !== seg) { parts[i] = parts[i].replace(seg, v); changed = true; }
+        if (v !== undefined && v !== seg) { parts[i] = put(parts[i], seg, v); changed = true; }
       }
       if (changed) { document.title = parts.join(''); stats.titleHits++; }
     } catch (e) {}
@@ -231,21 +250,21 @@
 
   function trText(node) {
     var s = node.nodeValue; if (!s) return;
-    var t = s.trim(); if (!t || inEditor(node)) return;
-    var el = node.parentNode;
-    var v = T && T[t] !== undefined && inChrome(node) ? T[t] : null;
-    if (v === null && RULES.length) { v = ruleValue(t, el, null); if (v !== null) stats.ruleHits++; else return; }
-    else if (v === null) return;
-    else stats.textHits++;
-    node.nodeValue = s.replace(t, v);
+    var t = s.trim(); if (!t) return;
+    var v = null, rule = false;
+    if (T && hasOwn(T, t) && inChrome(node)) v = T[t];
+    if (v === null && RULES.length) { v = ruleValue(t, node.parentNode, null); rule = v !== null; }
+    if (v === null || inEditor(node)) return;          // 편집기 검사는 맞을 때만
+    if (rule) stats.ruleHits++; else stats.textHits++;
+    node.nodeValue = put(s, t, v);
   }
   function trAttrs(el) {
     if (!el.getAttribute) return;
     for (var i = 0; ATTRS.length > i; i++) {
       var a = ATTRS[i], s = el.getAttribute(a); if (!s) continue;
-      var t = s.trim(), v = T && T[t] !== undefined && inChrome(el) ? T[t] : null;
+      var t = s.trim(), v = T && hasOwn(T, t) && inChrome(el) ? T[t] : null;
       if (v === null && RULES.length) v = ruleValue(t, el, a);
-      if (v !== null && v !== t) { el.setAttribute(a, s.replace(t, v)); stats.textHits++; }
+      if (v !== null && v !== t) { el.setAttribute(a, put(s, t, v)); stats.textHits++; }
     }
   }
   function pass(root) {
@@ -271,6 +290,7 @@
         added = true;
         for (var j = 0; m.addedNodes.length > j; j++) {
           var nd = m.addedNodes[j];
+          if (nd.nodeType === 1 && nd.nodeName === 'TITLE') { title = true; continue; }
           if (nd.nodeType === 3) trText(nd); else if (nd.nodeType === 1) pass(nd);
         }
       }
@@ -304,20 +324,25 @@
     }
     return bestScore >= 0.6 ? best : null;
   }
+  // composer 별 상태 — 같은 사전을 쓰는 마운트가 여럿이어도 서로의 감시값을 덮지 않는다
+  var remoteState = typeof WeakMap !== 'undefined' ? new WeakMap() : null;
+  function nsProbes(messages) { var out = []; for (var ns in messages) { var leaf = firstLeaf(messages[ns], ns); if (leaf) out.push(leaf); } return out; }
   function scanRemotes() {
-    if (!dict || !dict.remotes) return;
+    if (!dict || !dict.remotes || !remoteState) return;
     var els = document.querySelectorAll('[data-v-app]');
     for (var i = 0; els.length > i; i++) {
       var el = els[i]; if (el.id === '__nuxt' || !el.__vue_app__) continue;
       var inst = composerOfApp(el.__vue_app__); if (!inst || (i18n && inst.global === i18n.global)) continue;
-      var g = inst.global, hit = remoteDictFor(el, g); if (!hit) continue;
-      var rs = remoteStats[hit.key] || (remoteStats[hit.key] = { merges: 0, g: null, probe: null, probeKey: firstLeaf(hit.r.messages), mountId: el.id || null });
-      var stale = rs.g === g && rs.probeKey && rs.probe !== null && safeT(g, rs.probeKey) !== rs.probe;
-      if (rs.g === g && !stale) continue;
+      var g = inst.global, st = remoteState.get(g), hit;
+      if (st) { hit = st.hit; } else { hit = remoteDictFor(el, g); if (!hit) continue; }
+      if (st && st.probes.every(function (pk, j) { return safeT(g, pk) === st.vals[j]; })) continue;   // 그대로면 건너뜀
       try {
         g.mergeLocaleMessage('en', hit.r.messages);
         var loc = currentLocale(g); if (loc && loc !== 'en') g.mergeLocaleMessage(loc, hit.r.messages);
-        rs.g = g; rs.merges++; rs.mountId = el.id || null; rs.probe = rs.probeKey ? safeT(g, rs.probeKey) : null;
+        var probes = st ? st.probes : nsProbes(hit.r.messages);
+        remoteState.set(g, { hit: hit, probes: probes, vals: probes.map(function (pk) { return safeT(g, pk); }) });
+        var rs = remoteStats[hit.key] || (remoteStats[hit.key] = { merges: 0, mountId: null });
+        rs.merges++; rs.mountId = el.id || null;
         log('remote 병합', hit.key, el.id, loc);
       } catch (e) { log('remote 병합 실패', hit.key, e); }
     }
@@ -327,11 +352,14 @@
   function neutralizeV3() {
     try {
       var h = window.__hcKo;
-      if (stats.v3Neutralized || !h || !h.dict || h.dict === dict || !h.dict._text) return;
-      var t3 = h.dict._text; for (var k in t3) delete t3[k];   // v3 의 텍스트 레이어가 읽는 바로 그 객체
-      stats.v3Neutralized = true; log('v3.0.1 _text 무력화');
+      if (stats.v3Neutralized || !h || !h.dict || (dict && h.dict === dict)) return;
+      var t3 = h.dict._text, m3 = h.dict.messages, k;
+      if (t3) for (k in t3) delete t3[k];      // v3 텍스트 레이어가 읽는 바로 그 객체(T = dict._text, 1회 캡처)
+      if (m3) for (k in m3) delete m3[k];      // v3 의 재병합(감시·재검증 전)이 raw@main 사전으로 우리 고정 rev 를 덮지 않게
+      stats.v3Neutralized = true; log('v3.0.1 무력화(_text·messages 비움)');
     } catch (e) {}
   }
+
 
   /* ---------- 4) 사전 — 커밋 고정 URL · 불변 캐시 ---------- */
   var DICT_PATH = 'data/hc-ko-i18n.json';
@@ -445,6 +473,7 @@
     else applyI18n();
     startTextLayer();
     scanRemotes(); neutralizeV3();
+    setInterval(function () { scanRemotes(); koTitle(); }, 2000);   // i18n 이 없어도 돈다
     watchReapply();
     scheduleTelemetry('start');
   }).catch(function (e) { err = 'boot:' + (e && e.message); log('boot failed', e); mark('fail'); });
