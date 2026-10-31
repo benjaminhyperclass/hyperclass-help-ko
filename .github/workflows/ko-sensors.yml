@@ -1,10 +1,13 @@
-name: 메인 앱 한글팩 — 센서 (S1 GHL 배포 감지 · S4 릴리스 노트)
+name: 메인 앱 한글팩 — 센서 (S1 GHL 배포 감지 · S4 릴리스 노트 · S5 로그인 화면)
 
 # S1: 6시간마다 production.app-manifest.leadconnectorhq.com/latest/manifest.json 을 읽어 mainAppVersion 과
 #     federatedApps 별 버전을 data/sensors/manifest.json 과 비교. 바뀐 앱을 data/sensors/changes.md 에 기록하고
 #     이슈 "GHL 배포 감지"(열려 있으면 코멘트)를 올린다. 바뀐 앱 이름은 텔레메트리 네임스페이스와 대개 같다.
 # S4: 하루 한 번 ideas.gohighlevel.com/changelog 제목을 모아 새 항목을 data/sensors/changelog.json 에 쌓고
 #     제목에서 기능명 후보(대문자 시작 명사구)를 뽑아 같은 이슈에 "글로서리 후보"로 적는다.
+# S5: 하루 한 번(00시 UTC 슬롯·수동 실행은 항상) 헤드리스 무쿠키로 app 로그인·재설정·SSO, 포털 로그인·재설정·가입 화면을 열어
+#     lang·로더 상태·남은 영문 UI 단어를 data/reports/login-check/latest.{md,json} 에 남긴다(scripts/login-check.py).
+#     영문 단어 수가 직전보다 늘면 이슈 "로그인 화면 영문 회귀" — GHL 로그인 UI 변경을 바로 잡기 위해(작업지시서 v1 A5).
 on:
   schedule:
     - cron: '23 */6 * * *'
@@ -119,3 +122,49 @@ jobs:
             gh issue create -R ${{ github.repository }} --title "GHL 배포 감지 — main ${{ steps.s1.outputs.main }}" --body-file /tmp/issue.md --label sensor || gh issue create -R ${{ github.repository }} --title "GHL 배포 감지 — main ${{ steps.s1.outputs.main }}" --body-file /tmp/issue.md
           fi
           cat /tmp/issue.md >> $GITHUB_STEP_SUMMARY
+
+  login:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: 하루 1회 (00시 UTC 슬롯 · 수동 실행은 항상)
+        id: gate
+        run: |
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$(date -u +%H)" = "00" ]; then echo "run=true" >> $GITHUB_OUTPUT; else echo "run=false" >> $GITHUB_OUTPUT; fi
+
+      - uses: actions/checkout@v4
+        if: steps.gate.outputs.run == 'true'
+
+      - uses: actions/setup-python@v5
+        if: steps.gate.outputs.run == 'true'
+        with:
+          python-version: '3.12'
+
+      - name: Playwright
+        if: steps.gate.outputs.run == 'true'
+        run: pip install -q playwright && python -m playwright install --with-deps chromium
+
+      - name: S5 · 로그인 화면 점검
+        if: steps.gate.outputs.run == 'true'
+        id: s5
+        run: python scripts/login-check.py | tee -a $GITHUB_STEP_SUMMARY
+
+      - name: 커밋
+        if: steps.gate.outputs.run == 'true'
+        run: |
+          git config user.name "Hyperclass Bot"
+          git config user.email "bot@hyperclass.ai"
+          git add data/reports/login-check/latest.md data/reports/login-check/latest.json
+          git diff --cached --quiet && { echo "변경 없음"; exit 0; }
+          git commit -q -m "[Sensor] S5 로그인 화면 english=${{ steps.s5.outputs.english }}"
+          git pull -q --rebase origin main && git push -q origin main
+
+      - name: 이슈 알림 (회귀)
+        if: steps.gate.outputs.run == 'true' && steps.s5.outputs.regress == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          { echo "<!-- hc-sensor-s5 -->"; echo "영문 단어 수가 늘었습니다(english=${{ steps.s5.outputs.english }}). GHL 로그인 UI 변경 또는 로더 회귀를 의심하세요."; echo; cat data/reports/login-check/latest.md; } > /tmp/s5.md
+          NUM=$(gh issue list -R ${{ github.repository }} --state open --search "로그인 화면 영문 회귀 in:title" --json number --jq '.[0].number' 2>/dev/null || true)
+          if [ -n "$NUM" ] && [ "$NUM" != "null" ]; then gh issue comment "$NUM" -R ${{ github.repository }} --body-file /tmp/s5.md
+          else gh issue create -R ${{ github.repository }} --title "로그인 화면 영문 회귀" --body-file /tmp/s5.md --label sensor || gh issue create -R ${{ github.repository }} --title "로그인 화면 영문 회귀" --body-file /tmp/s5.md; fi
