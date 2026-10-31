@@ -24,14 +24,15 @@
   "See call quality live, rate it when you’re done 📶": "2026-10-30",
   "Every call recording, not just one - Mobile": "2026-10-30",
   "Who Answered the Call - Now on Mobile": "2026-10-30",
-  "Host Your Existing Number for SMS with Hosted Numbers": "2026-10-30"
+  "Host Your Existing Number for SMS with Hosted Numbers": "2026-10-30",
+  "Introducing New Templates": "2026-10-31"
  },
- "updated": "2026-10-30",
+ "updated": "2026-10-31",
  "slugs": [
   "ai-analyze-video-new-workflow-action",
-  "ai-video-generation-new-workflow-action",
   "every-call-recording-not-just-one-mobile",
   "host-your-existing-number-for-sms-with-hosted-numbers",
+  "introducing-new-templates-115",
   "saas-usage-limits-keep-client-usage-in-check-and-get-paid-when-they-need-more",
   "see-call-quality-live-rate-it-when-youre-done",
   "service-booking-is-now-available-in-the-client-portal",
