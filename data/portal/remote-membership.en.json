@@ -1,0 +1,1827 @@
+{
+ "_meta": {
+  "app": "remote-membership-preview-mount",
+  "source": "community.hyperclass.ai lesson page (owner session, Claude Chat)",
+  "extracted": "2026-10-31T13:55:29.877Z",
+  "keys": 1137,
+  "koValues": 0,
+  "locale": "en"
+ },
+ "en": {
+  "announcements": {
+   "button": "Announcements",
+   "title": "Announcements",
+   "backToLibrary": "Back to library",
+   "unread": "Unread",
+   "loadMore": "Load more",
+   "filters": {
+    "all": "All",
+    "unread": "Unread",
+    "sentTo": "Sent to",
+    "courses": "Courses",
+    "clearCourseFilter": "Clear course filter",
+    "clearDateFilter": "Clear date filter",
+    "allCourses": "All courses",
+    "dateRange": "Date range",
+    "dateRangeAll": "All time",
+    "dateRangeLast30": "Last 30 days",
+    "dateRangeLast90": "Last 90 days",
+    "dateRangeLast6Months": "Last 6 months",
+    "dateRangeThisMonth": "This month",
+    "dateRangeCustom": "Custom",
+    "searchPlaceholder": "Search..."
+   },
+   "empty": {
+    "title": "No announcements",
+    "description": "You're all caught up."
+   },
+   "noResults": {
+    "title": "No matching announcements",
+    "description": "Try adjusting your filters or search."
+   },
+   "list": {
+    "errorTitle": "Could not load announcements",
+    "errorDescription": "Something went wrong while loading announcements. Please try again."
+   },
+   "detail": {
+    "back": "Back",
+    "postedOn": "Posted on",
+    "edited": "Edited",
+    "errorTitle": "Could not load announcement",
+    "errorDescription": "Something went wrong while loading this announcement. Please try again."
+   }
+  },
+  "Courses": "Courses",
+  "Syllabus": "Syllabus",
+  "liveSessions": {
+   "title": "Live Sessions",
+   "titleWithCount": "Live Sessions ({count})",
+   "viewAll": "View All",
+   "noDescription": "No description available",
+   "loadMore": "Load More",
+   "noSessionsFound": "No sessions found",
+   "noSessionsHint": "Try adjusting your search terms",
+   "liveNow": "Live Now",
+   "date": "Date",
+   "time": "Time",
+   "type": "Type",
+   "instructor": "Instructor",
+   "joinSession": "Join Session",
+   "sessionStartsSoon": "Session Starts Soon",
+   "startsSoon": "Starts Soon",
+   "join": "Join",
+   "liveSessionTab": "Live Sessions",
+   "expired": "Expired",
+   "cancelled": "Cancelled",
+   "completed": "Completed",
+   "adminModeMessage": "Cannot join session in admin mode",
+   "sessionExpired": "This session has expired",
+   "sessionEnded": "This session has ended",
+   "sessionLiveNow": "Session is live now!",
+   "joinAfterHostStarts": "You'll be able to join after the host starts the session",
+   "recurring": "Recurring",
+   "oneTime": "One Time",
+   "notAssigned": "Not assigned",
+   "defaultTitle": "Live Session",
+   "defaultDescription": "Join us for an interactive live session.",
+   "sessionHost": "Session Host",
+   "tbd": "TBD",
+   "fetchError": "Failed to fetch live sessions",
+   "loadMoreError": "Failed to load more sessions",
+   "joinError": "Unable to join session. Please try again.",
+   "openError": "Failed to open session. Please try again.",
+   "sessionsCount": "{current}/{total} Sessions",
+   "boundedSession": "{current}/{total} Sessions",
+   "ordinalSession": "{ordinal} Session",
+   "courseContent": "Course Content",
+   "liveSessions": "Live sessions",
+   "liveSessionDetails": "Live session details",
+   "descriptionLabel": "Description",
+   "utcSuffix": "(UTC)"
+  },
+  "common": {
+   "overview": "Overview",
+   "syllabus": "Syllabus",
+   "courses": "Courses",
+   "loading": "Loading...",
+   "error": "An error occurred",
+   "success": "Success",
+   "close": "Close",
+   "save": "Save",
+   "cancel": "Cancel",
+   "delete": "Delete",
+   "edit": "Edit",
+   "search": "Search",
+   "noResults": "No results found",
+   "back": "Back",
+   "next": "Next",
+   "submit": "Submit",
+   "continue": "Continue",
+   "finish": "Finish",
+   "retry": "Retry",
+   "upload": "Upload",
+   "download": "Download",
+   "copied": "Copied!",
+   "share": "Share",
+   "more": "More",
+   "yourLogo": "Your Logo",
+   "editProfile": "Edit Profile",
+   "password": "Password",
+   "purchaseHistory": "Purchase History",
+   "add": "Add",
+   "toHomeScreen": "to your home screen",
+   "logOut": "Log Out",
+   "button": {
+    "cancel": "Cancel",
+    "proceed": "Proceed to checkout"
+   },
+   "adminMode": "You are previewing in admin mode",
+   "adminModeViewContent": "View Content (Unlocked)",
+   "adminModeHideContent": "Hide Content",
+   "logo": {
+    "alt": "Logo"
+   },
+   "image": {
+    "defaultAlt": "image",
+    "closePreview": "Close image preview",
+    "userAvatar": "User avatar",
+    "brandLogo": "Brand logo",
+    "commentImage": "Comment image",
+    "welcomeHero": "Welcome hero image",
+    "productHero": "Product hero image",
+    "courseThumbnail": "Course thumbnail",
+    "offerPoster": "Offer poster"
+   },
+   "thankYou": "Thank You"
+  },
+  "payment": {
+   "failed": {
+    "title": "Payment Failed!",
+    "description": "Please try again."
+   },
+   "amount_to_be_paid": "Amount to be paid",
+   "enter_card_details": "Enter Card Details",
+   "no_payment_required": "No payment required. Click confirm to complete your enrollment.",
+   "saved_cards": "Saved cards",
+   "new_card": "New card",
+   "cardIcon": "Card icon",
+   "secure_payment_message": "*100% secure & safe payments*",
+   "confirm_payment": "Confirm Payment",
+   "dashboard_button": "View Dashboard",
+   "coupon": {
+    "have_coupon": "Have a coupon? Click here",
+    "remove_applied": "Remove applied coupon",
+    "discount_applied": "Discount applied (coupon)"
+   },
+   "thank_you": {
+    "signup": "Thank you for signing up!",
+    "signup_kollab": "Thank you for enrolling in the course",
+    "purchase": "Thank you for your purchase!",
+    "credentials_sent": "We have sent you an email with login credentials"
+   },
+   "v2": {
+    "recaptcha": {
+     "verification_failed": "Verification failed! Please try again"
+    },
+    "errors": {
+     "payment_element_not_ready": "Payment element is not ready",
+     "processing_payment": "Error processing payment"
+    },
+    "warning_icon_alt": "Warning",
+    "custom_provider": {
+     "pay_button": "Pay via payment gateway"
+    }
+   },
+   "stripe": {
+    "card_number": "Card Number",
+    "expiry_date": "Expiry Date",
+    "cvc": "CVC",
+    "errors": {
+     "load_failed": "Could not load stripe.js",
+     "incomplete_info": "Your card information is incomplete"
+    }
+   }
+  },
+  "comments": {
+   "title": "Comments",
+   "character_count": "{count} / {max}",
+   "privacy": {
+    "instructor_only": "Instructor only",
+    "public": "Public",
+    "instructor_badge": "Instructor"
+   },
+   "actions": {
+    "post": "Post",
+    "update": "Update",
+    "cancel": "Cancel",
+    "reply": "Reply",
+    "replies": "Replies",
+    "edit": "Edit",
+    "delete": "Delete",
+    "show_replies": "Show Replies",
+    "hide_replies": "Hide Replies",
+    "view_more": "View More",
+    "showReplies": "Show {count} Replies",
+    "showReply": "Show {count} Reply",
+    "hideReplies": "Hide Replies",
+    "loadMore": "Load More"
+   },
+   "status": {
+    "uploading": "Uploading..."
+   },
+   "users": {
+    "deleted": "Deleted User",
+    "instructor": "Instructor"
+   },
+   "errors": {
+    "max_length": "Comment cannot exceed {max} characters",
+    "empty": "Comment cannot be empty"
+   },
+   "placeholders": {
+    "write_comment": "Write a comment...",
+    "write_reply": "Write a reply..."
+   },
+   "repliedTo": "Replied to",
+   "instructor": "Instructor",
+   "mobile": {
+    "replies_to": "Replies to",
+    "comments_in": "Comments in the",
+    "view_all_replies": "View all {count} replies",
+    "load_more": "Load more comments",
+    "add_first": "Add first comment to this lesson!",
+    "replying_to": "Replying to: {name}",
+    "updating": "Updating: {name}",
+    "privacy_options": {
+     "public": "Public",
+     "instructor_only": "Instructor Only"
+    }
+   },
+   "editOptions": {
+    "edit": "Edit",
+    "delete": "Delete"
+   },
+   "privacyOptions": {
+    "public": "Public",
+    "private": "Instructor Only"
+   },
+   "userNames": {
+    "deletedUser": "Deleted User",
+    "instructor": "Instructor"
+   },
+   "deleteModal": {
+    "title": "Delete Comment",
+    "message": "Are you sure you want to delete this comment?",
+    "confirm": "Delete",
+    "cancel": "Cancel"
+   },
+   "input": {
+    "placeholder": "Type your comment here...",
+    "buttons": {
+     "cancel": "Cancel",
+     "comment": "Comment",
+     "update": "Update Comment"
+    },
+    "privacy": {
+     "instructorOnly": "Instructor only",
+     "public": "Public"
+    }
+   },
+   "list": {
+    "hideReplies": "Hide replies",
+    "viewReplies": "View {count} replies",
+    "loadMore": "Load more comments",
+    "loading": "Loading more..."
+   },
+   "comment": {
+    "deletedUser": "Deleted User",
+    "instructor": "Instructor",
+    "buttons": {
+     "reply": "Reply",
+     "edit": "Edit",
+     "delete": "Delete"
+    },
+    "timeAgo": {
+     "justNow": "just now",
+     "secondsAgo": "{count} seconds ago",
+     "secondAgo": "1 second ago",
+     "minutesAgo": "{count} minutes ago",
+     "minuteAgo": "1 minute ago",
+     "hoursAgo": "{count} hours ago",
+     "hourAgo": "1 hour ago",
+     "daysAgo": "{count} days ago",
+     "dayAgo": "1 day ago",
+     "weeksAgo": "{count} weeks ago",
+     "weekAgo": "1 week ago",
+     "monthsAgo": "{count} months ago",
+     "monthAgo": "1 month ago",
+     "yearsAgo": "{count} years ago",
+     "yearAgo": "1 year ago"
+    }
+   }
+  },
+  "navigation": {
+   "home": "Home",
+   "courses": "Courses",
+   "library": "Library",
+   "myCourses": "My Courses",
+   "settings": "Settings",
+   "help": "Help",
+   "installApp": "Install App",
+   "logout": "Logout",
+   "search": {
+    "label": "Search",
+    "ariaLabel": "Open search"
+   },
+   "lesson": "Lesson {current} of {total}",
+   "previous": "Prev",
+   "next": "Next",
+   "viewResult": "View Result",
+   "viewLastSubmission": "View last submission",
+   "retake": "Retake",
+   "profile": {
+    "settings": "Settings",
+    "menu": "Settings menu"
+   },
+   "adminMode": {
+    "title": "You are in admin mode",
+    "description": "Please login as user to access settings."
+   }
+  },
+  "ui": {
+   "select": {
+    "placeholder": "Select an option",
+    "noOptions": "No options available"
+   },
+   "sort": {
+    "placeholder": "Sort by",
+    "chipLabel": "Sort"
+   },
+   "filePicker": {
+    "maxFilesError": "You can only upload up to {max} files",
+    "maxSizeError": "File {fileName} exceeds the maximum size of {maxSize}MB",
+    "minSizeError": "File {fileName} is below the minimum size of {minSize}Kb",
+    "fileTypeError": "File {fileName} is not an accepted file type",
+    "ariaLabel": "File upload"
+   },
+   "emoji": {
+    "searchPlaceholder": "Search emoji"
+   }
+  },
+  "search": {
+   "placeholder": "Search courses, categories and lessons",
+   "charLimit": "More than one character required",
+   "noResultsFound": "No results found",
+   "emptyText": "Try searching for keywords in courses, categories and lessons",
+   "noResults": {
+    "text": "No results for",
+    "tryAgain": "Please try another search"
+   },
+   "recentSearches": "Recent Searches",
+   "noRecentSearches": "No Recent Searches",
+   "productIcon": {
+    "alt": "product icon"
+   },
+   "error": {
+    "unableToLoad": "Unable to load search results, Please try again"
+   },
+   "ariaLabel": "Search"
+  },
+  "courses": {
+   "bundle": "Bundle",
+   "featured": "Featured",
+   "empty": {
+    "title": "No courses found",
+    "description": "You have yet to enroll in any courses. Please reach out to your instructor to initiate your educational journey."
+   },
+   "enrolled": "Enrolled",
+   "inProgress": "In Progress",
+   "completed": "Completed",
+   "locked": "Locked",
+   "startCourse": "Start Course",
+   "continueCourse": "Continue Course",
+   "viewCourse": "View Course",
+   "price": {
+    "free": "free",
+    "from": "From"
+   },
+   "image": {
+    "bundleImage": "Bundle thumbnail",
+    "lockIcon": "Locked course",
+    "productPoster": "Product poster"
+   },
+   "inLibraryLabel": "in-library"
+  },
+  "assignment": {
+   "placeholder": "Type your answer",
+   "next": "Next",
+   "retake": "Retake Assignment",
+   "answer": {
+    "label": "Answer",
+    "maxLengthError": "Answer Exceeds Max Length"
+   },
+   "upload": {
+    "label": "Upload Assignment",
+    "instruction": "Please fill the worksheet(s) and upload your assignment",
+    "table": {
+     "fileName": "File Name",
+     "type": "Type",
+     "size": "Size"
+    }
+   },
+   "error": {
+    "responseRequired": "Respond to the assignment with either files or an answer"
+   },
+   "submit": "Submit",
+   "start": {
+    "quiz": "Start Quiz",
+    "assignment": "Start Assignment"
+   },
+   "progress": {
+    "saving": "Saving...",
+    "submitting": "Submitting...",
+    "markingIncomplete": "Marking as Incomplete...",
+    "completing": "Completing..."
+   },
+   "status": {
+    "passed": "Passed",
+    "failed": "You have failed the assignment!",
+    "message": "Assignment Status",
+    "pending": "Pending Review",
+    "underReview": "Assignment Under Review",
+    "congratulations": "Congratulations",
+    "completed": "Completed"
+   },
+   "message": {
+    "underReview": "Your assignment is currently under review by the instructor. We appreciate your patience during this process. You will receive feedback and your final grade once the review is complete.",
+    "passed": "We have evaluated your assignment, and you scored {score}%. You have successfully passed this assignment. Thank you!",
+    "failed": "We have evaluated your assignment, and you scored {score}%. Unfortunately, you did not pass this assignment. Thank you.",
+    "passedUngraded": "We have evaluated your assignment. You have successfully passed this assignment. Thank you!",
+    "failedUngraded": "We have evaluated your assignment. Unfortunately, you did not pass this assignment. Thank you."
+   },
+   "submissions": "Your submissions",
+   "submittedAnswer": "Submitted Answer",
+   "submittedFiles": "Submitted files",
+   "attachedFiles": "Attached files",
+   "instructions": "Instructions",
+   "feedback": "Feedback",
+   "nextSteps": "Next Steps",
+   "navigation": {
+    "backToLesson": "Back to lesson",
+    "nextLesson": "Next lesson",
+    "incompleteLesson": "Go to incomplete lesson"
+   },
+   "sections": {
+    "answer": "Answer",
+    "upload": {
+     "title": "Upload Assignment",
+     "instruction": "Please fill the worksheet(s) and upload the assignment",
+     "button": "Upload"
+    }
+   },
+   "table": {
+    "fileName": "File Name",
+    "fileSize": "File Size",
+    "fileType": "File Type",
+    "action": "Action"
+   },
+   "errors": {
+    "exceedsLength": "Answer exceeds max length",
+    "noSubmission": "Please upload or write the assignment"
+   },
+   "success": {
+    "submitted": "Assignment submitted"
+   },
+   "launch": {
+    "sections": {
+     "submittedAnswer": "Submitted Answer",
+     "feedback": "Feedback",
+     "submittedFiles": "Submitted Files"
+    },
+    "buttons": {
+     "start": "Start assignment",
+     "retake": "Retake Assignment"
+    },
+    "status": {
+     "processing": {
+      "title": "Your assignment is under review.",
+      "message": "Your assignment is currently under review by the instructor. We appreciate your patience during this process. You will receive feedback and your final grade once the review is complete."
+     },
+     "passed": "You have passed the assignment.",
+     "failed": "You failed the assignment."
+    }
+   },
+   "preview": {
+    "sections": {
+     "instructions": "Instructions",
+     "attachedFiles": "Attached Files"
+    }
+   },
+   "download": {
+    "started": "Download Started for {title}",
+    "success": {
+     "ios": "Saved in Files -> App name -> file",
+     "android": "{title} downloaded successfully!"
+    }
+   },
+   "button": {
+    "markComplete": "Mark As Complete"
+   }
+  },
+  "categoryList": {
+   "title": "Categories",
+   "resume": "Resume",
+   "start": "Start"
+  },
+  "lesson": {
+   "counter": "Lesson {current} of {total}",
+   "navigation": {
+    "previous": "Previous",
+    "next": "Next"
+   },
+   "status": {
+    "completed": "Completed",
+    "inProgress": "In Progress",
+    "notStarted": "Not Started"
+   }
+  },
+  "content": {
+   "viewMore": "View More",
+   "viewLess": "View Less",
+   "description": "Description",
+   "materials": "Materials",
+   "attachments": "Attachments",
+   "noDescription": "No description available"
+  },
+  "materials": {
+   "download": {
+    "progress": "Downloading...",
+    "success": "Download complete",
+    "error": "Download failed"
+   },
+   "types": {
+    "pdf": "PDF Document",
+    "doc": "Word Document",
+    "image": "Image",
+    "video": "Video",
+    "audio": "Audio"
+   }
+  },
+  "errors": {
+   "network": "Network error",
+   "unauthorized": "Unauthorized access",
+   "notFound": "Not found",
+   "serverError": "Server error",
+   "default": "Something went wrong",
+   "somethingWentWrong": "Something went wrong, please try again!",
+   "fileCheckFailed": "Not able to check if file exists or not, please check the error",
+   "genericError": "Something went wrong"
+  },
+  "media": {
+   "play": "Play",
+   "pause": "Pause",
+   "replay": "Replay",
+   "mute": "Mute",
+   "unmute": "Unmute",
+   "fullscreen": "Fullscreen",
+   "exitFullscreen": "Exit Fullscreen",
+   "embeddedPlayerTitle": "Embedded lesson media"
+  },
+  "quiz": {
+   "option": {
+    "singleChoice": "Single choice option {index}",
+    "multipleChoice": "Multiple choice option {index}",
+    "content": "Option {index} content",
+    "image": {
+     "alt": "Option image"
+    }
+   },
+   "question": {
+    "header": "Question {current} of {total}",
+    "questionOf": "Question {current} of {total}",
+    "multipleChoice": "Multiple Choice",
+    "singleChoice": "Single Choice",
+    "multipleChoiceLabel": "Multiple Choice",
+    "image": {
+     "alt": "Question image"
+    },
+    "correctAnswer": "Correct {type} {options}",
+    "correct": "Correct",
+    "option": "option",
+    "options": "options",
+    "optionIs": "option is",
+    "optionsAre": "options are",
+    "correctAnswerSuffix": ", {answer}",
+    "answerCorrect": "The answer is correct{suffix}",
+    "answerIncorrect": "The answer is incorrect{suffix}",
+    "notAttempted": "Not Attempted{suffix}",
+    "noCorrectAnswer": "Error: This question does not have a designated correct answer. Please reach out to course instructor."
+   },
+   "noQuestions": "No questions found!",
+   "selectAllApply": "Select all that apply",
+   "previous": "Previous",
+   "next": "Next",
+   "submit": "Submit",
+   "start": "Start Quiz",
+   "retake": "Retake Quiz",
+   "continue": "Continue Quiz",
+   "result": {
+    "passed": "Congratulations! You passed!",
+    "failed": "Sorry! Try again!",
+    "timeSpent": "Time spent: {time}",
+    "review": "Review your answers",
+    "toPass": "TO PASS",
+    "orHigher": "or higher",
+    "grade": "GRADE",
+    "fetchingStatus": "Fetching post status...",
+    "notAttempted": "Not Attempted",
+    "incorrect": "The answer is incorrect",
+    "error": "Error: This question does not have a designated correct answer",
+    "contactInstructor": "Please reach out to course instructor",
+    "questionsCorrect": "{correct} / {total} Questions answered correctly",
+    "passMessage": "You have successfully passed this quiz. Thank you.",
+    "failMessage": "You have failed to reach the minimum score of {minScore} for this quiz. Please try again.",
+    "score": {
+     "label": "Score",
+     "value": "Your score: {score}%"
+    },
+    "correct": {
+     "label": "Correct",
+     "value": "{correct}/{total}",
+     "answer": "The answer is correct"
+    },
+    "attempted": {
+     "label": "Attempted",
+     "value": "{attempted}/{total}"
+    },
+    "passIcon": "Quiz pass illustration",
+    "failIcon": "Quiz fail illustration",
+    "processingIcon": "Quiz processing illustration",
+    "header": {
+     "passed": "You have passed the assignment.",
+     "failed": "You failed the assignment.",
+     "processing": "Assessment under review"
+    },
+    "retake": "Retake"
+   },
+   "status": {
+    "inProgress": "In Progress",
+    "completed": "Completed",
+    "notStarted": "Not Started",
+    "passed": "Passed",
+    "failed": "Failed",
+    "passIcon": "Quiz pass illustration",
+    "startIcon": "Quiz start illustration",
+    "correctAnswers": "{correct} / {total} Questions answered correctly",
+    "viewResult": "View Result",
+    "successMessage": "You have successfully completed this quiz. Thank You!",
+    "failureMessage": "You have failed to reach the minimum score of this quiz.",
+    "retryWithGrade": "You need {grade}% {higher} to pass. Please try again.",
+    "retryMessage": "Please try again.",
+    "buttonLabel": "{action} {type}",
+    "retake": "Retake",
+    "start": "Start"
+   },
+   "carousel": {
+    "questionButton": "Go to question {number}"
+   },
+   "lesson": {
+    "counter": "Lesson {current} of {total}",
+    "noQuestions": "No questions found!"
+   },
+   "action": {
+    "submit": "Submit Quiz"
+   },
+   "navigation": {
+    "question": "Question {current} of {total}",
+    "next": "Next",
+    "retake": "Retake Quiz"
+   },
+   "button": {
+    "submit": "Submit",
+    "retake": "Retake Quiz",
+    "next": "Next",
+    "markComplete": "Mark As Complete",
+    "markInComplete": "Mark As Incomplete",
+    "completing": "Completing...",
+    "completed": "Completed",
+    "postCompletion": {
+     "markComplete": "Mark As Complete",
+     "completed": "Completed",
+     "markingIncomplete": "Marking as Incomplete",
+     "completing": "Completing..."
+    }
+   },
+   "message": {
+    "pageTop": {
+     "score": "{correct} / {total} Questions answered correctly and scored {score}%.",
+     "passMessage": "Congratulations! You've passed!",
+     "failMessage": "Please try again."
+    }
+   },
+   "error": {
+    "submission": "Error submitting quiz",
+    "fetchingQuestions": "Error fetching quiz questions",
+    "fetchingQuiz": "Error fetching quiz details",
+    "fetchingPost": "Error fetching post",
+    "fetchingCategory": "Error fetching category",
+    "fetchingProduct": "Error fetching product",
+    "newError": "New error message"
+   }
+  },
+  "assessment": {
+   "status": {
+    "underReview": "Under review",
+    "fetchingStatus": "Fetching post status.."
+   },
+   "result": {
+    "passMessage": "Congratulations, You passed!",
+    "failMessage": "Sorry, Try again!",
+    "toPass": "TO PASS",
+    "orHigher": "or higher",
+    "grade": "GRADE",
+    "ungraded": "Ungraded",
+    "feedback": "Feedback"
+   },
+   "navigation": {
+    "previous": "Previous",
+    "next": "Next"
+   },
+   "submit": {
+    "button": "Submit",
+    "submitting": "Submitting..."
+   },
+   "image": {
+    "quizStart": "Quiz start illustration",
+    "quizResult": "Quiz result illustration"
+   }
+  },
+  "checkout": {
+   "remote": {
+    "bootstrapError": "Failed to load checkout preview."
+   },
+   "form": {
+    "email": "Email",
+    "emailPlaceholder": "(eg) username{'@'}mail.com",
+    "fullName": "Full Name",
+    "fullNamePlaceholder": "(eg) Devon Lane",
+    "phoneNumber": "Phone Number",
+    "phonePlaceholder": "+919879879878",
+    "address": "Street, Apt, Suite, etc",
+    "addressPlaceholder": "107, building name",
+    "city": "City",
+    "cityPlaceholder": "Los Angeles",
+    "state": "State",
+    "statePlaceholder": "California",
+    "zipCode": "Zip Code",
+    "zipCodePlaceholder": "Zip/Postal code",
+    "country": "Country",
+    "countryPlaceholder": "United States",
+    "termsAgreementRequired": "I have read and agree to the terms and conditions of this page.",
+    "agreementRequired": "Please accept the agreement to proceed.",
+    "proceedToCheckout": "Proceed to checkout",
+    "saferPayment": "The safer, easier way to pay",
+    "billingAddress": "Billing Address"
+   },
+   "payment": {
+    "information": "Payment Information",
+    "checkoutButton": "Checkout",
+    "errors": {
+     "clientSecretMissing": "Client secret missing! Payment setup failed, try again!"
+    }
+   },
+   "button": {
+    "checkout": "Checkout",
+    "login": "Click here to login!",
+    "noThanks": "No thanks, take me to my purchase",
+    "enrollFor": "Enroll for"
+   },
+   "message": {
+    "alreadyPurchased": "You've already purchased this offer!!"
+   },
+   "title": {
+    "courseDescription": "Course Description",
+    "courseCurriculum": "Course Curriculum"
+   },
+   "label": {
+    "totalAmount": "Total Amount",
+    "dayTrial": "day trial",
+    "subtotal": "Subtotal",
+    "setupFee": "Setup Fee",
+    "trial": "Trial",
+    "dueNow": "Due Now",
+    "total": "Total Amount"
+   },
+   "tax": {
+    "addressRequired": "Address details are required because automatic tax is enabled for this business location.",
+    "label": "Tax",
+    "calculating": "Calculating...",
+    "stateDropdownPlaceholder": "Select state / province"
+   },
+   "tooltip": {
+    "subtotalDeduction": "This sub-total amount will be deducted after the trial period"
+   },
+   "coupon": {
+    "label": "Coupon code",
+    "placeholder": "Enter coupon code",
+    "apply": "Apply",
+    "discount": "Discount",
+    "modal": {
+     "title": "Apply Coupon",
+     "apply": "Apply Coupon"
+    }
+   },
+   "draftMode": {
+    "title": "This offer is currently in draft mode.",
+    "description": "Customers will not be able to view this page until you change its status to \"Published\"."
+   }
+  },
+  "login": {
+   "title": "Sign in to your account",
+   "email": {
+    "label": "Email address",
+    "placeholder": "Email address"
+   },
+   "password": {
+    "label": "Password",
+    "placeholder": "Password"
+   },
+   "rememberMe": "Remember me",
+   "forgotPassword": "Forgot your password?",
+   "signIn": "Sign in",
+   "yourLogo": "Your Logo",
+   "locationLoginCodeDisabledNotice": "This sign-in link has expired. Please sign in with your email and password."
+  },
+  "appSwitcher": {
+   "communities": "Communities",
+   "courses": "Courses",
+   "affiliates": "Affiliates"
+  },
+  "assignmentFilesUpload": {
+   "dragAndDrop": "Drag and drop your assignment template here",
+   "or": "OR",
+   "upload": "Upload",
+   "clickToUpload": "Click to upload",
+   "orDragAndDrop": "or drag and drop",
+   "uploadError": "Error while uploading file! Please try again",
+   "fileSizeExceedTitle": "File size exceeds limit!",
+   "fileSizeExceedDescription": "Please upload a file with size less than {size}."
+  },
+  "categoryPostBreadcrumbs": {
+   "categories": "Categories",
+   "loading": "..."
+  },
+  "categorySlider": {
+   "scrollLeft": "Scroll categories left",
+   "scrollRight": "Scroll categories right",
+   "categoryTitle": "Category title"
+  },
+  "clientPortalProfileCard": {
+   "viewEditProfile": "View or Edit Profile",
+   "purchaseHistory": "Purchase History",
+   "logout": "Logout",
+   "notAvailable": "Not available"
+  },
+  "footer": {
+   "termsAndPrivacy": "Terms {'|'} Privacy",
+   "copyright": " 2015 Photography Academy",
+   "poweredBy": "Powered by HighLevel",
+   "brandLogo": "Brand Logo"
+  },
+  "generalFileUpload": {
+   "modalTitle": "Upload file",
+   "dragAndDrop": "Click or drag a file to this area to upload",
+   "uploadError": "Error while uploading file! Please try again",
+   "warningDontClose": "Please do not close the modal while uploading",
+   "uploadButton": "Upload file",
+   "cancelButton": "Cancel",
+   "cancelUploadButton": "Cancel upload",
+   "fileTypeSupported": "{types} are supported.",
+   "recommendedAspectRatio": "(Recommended aspect ratio for media: {ratio})"
+  },
+  "lockedView": {
+   "lockImageAlt": "Lock Category",
+   "title": "This Lesson is Locked!",
+   "accessMessage": "To gain access to this {content} please complete.",
+   "accessMessageByKind": {
+    "lesson": "To gain access to this lesson please complete.",
+    "assessment": "To gain access to this assessment please complete.",
+    "category": "To gain access to this category please complete."
+   },
+   "postPrefix": "Post: {title}",
+   "categoryPrefix": "Category: {title}"
+  },
+  "mobileAlertModal": {
+   "installTitle": "Install {name}",
+   "openInSafari": "To add this app to your Home Screen, open this link in Safari",
+   "openInChrome": "To add this app to your Home Screen, open this link in Chrome",
+   "copyButton": "Copy link to app",
+   "copiedButton": "Copied",
+   "addToHomeScreen": {
+    "description": "Add this app to your home screen for easy access and a better experience.",
+    "instruction": "Tap {icon} then \"Add to Home Screen\""
+   },
+   "androidInstall": {
+    "description": "Start your course right from your phone's home screen, no download required",
+    "instruction": "Tap {icon} then \"Add to Home Screen\""
+   }
+  },
+  "mobileFloatingNavigation": {
+   "allCourses": "All Courses",
+   "myCourses": "My Courses",
+   "search": "Search"
+  },
+  "breadcrumbs": {
+   "products": "Products",
+   "loading": "..."
+  },
+  "categoryTree": {
+   "comingSoon": "(Coming Soon)",
+   "noContent": "No content available!",
+   "completed": "Completed",
+   "locked": "Content is locked"
+  },
+  "postMaterial": {
+   "title": "Files",
+   "close": "Close modal",
+   "download": "Download {filename}",
+   "materialIcon": "{type} file icon"
+  },
+  "pwaAlert": {
+   "defaultTitle": "PWA Alert",
+   "installTitle": "Install {appName}",
+   "chromeInstruction": "To install this app in your Desktop, open this link in Chrome",
+   "copyButton": {
+    "label": "Copy URL",
+    "copied": "Copied!",
+    "tooltip": "Copy link to clipboard"
+   },
+   "close": "Close modal"
+  },
+  "universalSearch": {
+   "searchInput": {
+    "label": "Search",
+    "placeholder": "Search products, categories and lessons"
+   },
+   "closeButton": "Close search modal",
+   "searchIcon": "Search icon",
+   "productIcon": "Product icon",
+   "noResults": {
+    "text": "No results for",
+    "suggestion": "Please try another search"
+   },
+   "recentSearches": {
+    "title": "Recent Searches",
+    "empty": "No Recent Searches"
+   },
+   "loading": "Loading search results"
+  },
+  "upsellModal": {
+   "bundleLabel": "Bundle",
+   "noDescription": "No Description Available",
+   "actions": {
+    "learnMore": "Learn More",
+    "close": "Close upsell modal",
+    "enroll": {
+     "text": "Enroll for",
+     "prefix": "Enroll for {currency}",
+     "loading": "Loading enrollment"
+    }
+   },
+   "cart": {
+    "icon": "Shopping cart icon"
+   },
+   "accessibility": {
+    "modalTitle": "Upsell offer details",
+    "offerImage": "Offer poster image",
+    "bundleProducts": "Bundle products list"
+   }
+  },
+  "upsellBundle": {
+   "bundle": "Bundle",
+   "defaultInstructor": "Instructor Name",
+   "multipleInstructors": "Multiple Instructors",
+   "products": "{count} Products",
+   "courseThumbnail": "course-thumbnail",
+   "lockIcon": "lock-icon"
+  },
+  "bundleOverview": {
+   "description": {
+    "title": "Bundle description",
+    "viewMore": "View More",
+    "viewLess": "View Less"
+   },
+   "courses": {
+    "title": "Courses in this bundle",
+    "defaultInstructor": "Instructor",
+    "viewCurriculum": "View curriculum",
+    "posterImage": "Course poster image"
+   },
+   "instructors": {
+    "title": "Instructors in this bundle"
+   }
+  },
+  "categoryOverview": {
+   "description": {
+    "title": "Course description",
+    "viewMore": "View More",
+    "viewLess": "View Less"
+   },
+   "instructor": {
+    "avatar": "Instructor avatar"
+   }
+  },
+  "lockedContent": {
+   "alt": "Locked",
+   "title": "This {contentType} is locked",
+   "lessonTitle": "lesson: {title}",
+   "and": "and",
+   "categoryTitle": "{merger} Category: {title}",
+   "isLocked": "This {contentType} Is Locked",
+   "gainAccess": "To gain access to this {contentType}, please complete",
+   "isLockedByKind": {
+    "lesson": "This lesson is locked",
+    "assessment": "This assessment is locked",
+    "category": "This category is locked"
+   },
+   "gainAccessByKind": {
+    "lesson": "To gain access to this lesson, please complete",
+    "assessment": "To gain access to this assessment, please complete",
+    "category": "To gain access to this category, please complete"
+   },
+   "titleByKind": {
+    "lesson": "This lesson is locked",
+    "assessment": "This assessment is locked",
+    "category": "This category is locked"
+   }
+  },
+  "syllabus": {
+   "curriculum": "Curriculum",
+   "expandAll": "Expand All Sections",
+   "collapseAll": "Collapse All Sections",
+   "totalLessons": "{count} Lessons",
+   "dripContent": {
+    "availableIn": "Available in {days} days",
+    "availableTomorrow": "Available tomorrow",
+    "availableToday": "Available today"
+   },
+   "post": {
+    "assignment": "Assignment",
+    "quiz": "Quiz",
+    "lesson": "Lesson"
+   },
+   "lessons": "Lessons",
+   "day": "day",
+   "days": "days",
+   "hour": "hour",
+   "hours": "hours",
+   "unlocksIn": "Unlocks in",
+   "dripCountdownMessage": "Available in {hours}hr {minutes}min",
+   "locked": "Locked"
+  },
+  "changePassword": {
+   "currentPassword": {
+    "label": "Current Password",
+    "placeholder": "Current Password"
+   },
+   "newPassword": {
+    "label": "New Password",
+    "placeholder": "New Password"
+   },
+   "verifyPassword": {
+    "label": "Verify Password",
+    "placeholder": "Verify Password"
+   }
+  },
+  "postComments": {
+   "loadMore": "Load more comments",
+   "firstComment": "Add first comment to this lesson!",
+   "privacy": {
+    "whoCanRead": "Who can read your comments?",
+    "public": "Public",
+    "instructorOnly": "Instructor Only"
+   },
+   "reply": {
+    "to": "Reply to {name}",
+    "placeholder": "Type your comment"
+   },
+   "actions": {
+    "save": "Save"
+   },
+   "counter": "{current} / {max}"
+  },
+  "quizResultBanner": {
+   "correct": "Correct",
+   "passingGrade": "Passing grade: {grade}% or higher"
+  },
+  "attachedFiles": {
+   "title": "Attached Files",
+   "status": {
+    "downloading": "Downloading...",
+    "downloadFile": "Download {title}",
+    "progress": "{progress}%"
+   }
+  },
+  "dripContent": {
+   "image": {
+    "alt": "Drip Content Image"
+   },
+   "message": "Exciting learning ahead—coming soon in {days} days!"
+  },
+  "instructor": {
+   "defaultHeading": "Instructor",
+   "image": {
+    "alt": "{name}'s profile picture"
+   }
+  },
+  "landingPage": {
+   "welcomeHeader": {
+    "loading": "Loading..."
+   },
+   "categoryListItem": {
+    "image": {
+     "alt": "Category item thumbnail"
+    },
+    "status": {
+     "locked": "Content is locked",
+     "completed": "Content completed",
+     "progress": "Progress: {progress}%"
+    }
+   },
+   "categoryListView": {
+    "dripComingSoon": "Drip (Coming soon)",
+    "dripDaysMessage": "Available after {days} day{plural}",
+    "dripHoursMessage": "Available after {hours} hour{plural}",
+    "dripCountdownMessage": "Available in {hours}hr {minutes}min",
+    "dripDateMessage": "Available on {date}",
+    "status": {
+     "locked": "Content is locked"
+    },
+    "toggleCategory": "Toggle category"
+   },
+   "lessonsStats": {
+    "image": {
+     "alt": "Product poster image"
+    },
+    "progress": {
+     "label": "Lesson progress: {progress}%"
+    },
+    "message": {
+     "allCompleted": "All {total} Lessons are completed",
+     "partialCompleted": "{completed} of {total}",
+     "noneCompleted": "No lessons are completed"
+    }
+   }
+  },
+  "lessonPage": {
+   "aboutLesson": {
+    "title": "About this Lesson"
+   },
+   "categoryPlaylist": {
+    "lessonCount": "{count} Lessons",
+    "dripDaysMessage": "Available after {days} day{plural}",
+    "dripHoursMessage": "Available after {hours} hour{plural}",
+    "dripCountdownMessage": "Available in {hours}hr {minutes}min",
+    "navigation": {
+     "previousCategory": "Previous Category",
+     "nextCategory": "Next Category"
+    }
+   },
+   "markPostComplete": {
+    "status": {
+     "completed": "Completed"
+    },
+    "adminMessage": "You are an admin, you can not mark this post as completed",
+    "nextPost": {
+     "congratulations": "Good job! Keep going!",
+     "buttonText": "Next Lesson",
+     "buttonLabel": "Go to next lesson"
+    }
+   },
+   "certificate": {
+    "download": "Download {type}"
+   }
+  },
+  "course": {
+   "button": {
+    "start": "Start Course",
+    "resume": "Resume Course",
+    "goTo": "Go to"
+   },
+   "stats": {
+    "completed": "Completed",
+    "total": "Total",
+    "progress": "Progress"
+   }
+  },
+  "posts": {
+   "templates": {
+    "lesson": {
+     "about": "ABOUT THIS LESSON",
+     "status": {
+      "fetching": "Fetching post status..",
+      "loading": "Loading...",
+      "error": "Error loading content"
+     },
+     "navigation": {
+      "previous": "Previous",
+      "next": "Next"
+     },
+     "completion": {
+      "mark": "Mark As Complete",
+      "marked": "Marked As Complete"
+     }
+    }
+   }
+  },
+  "lessonTheme": {
+   "navigation": {
+    "materials": "Materials",
+    "comments": "Comments",
+    "next": "Next Lesson",
+    "previous": "Previous",
+    "nextArrow": "Next",
+    "previousArrow": "Previous",
+    "category": "Category",
+    "comingSoon": "Coming Soon"
+   },
+   "completion": {
+    "markAsComplete": "Mark As Complete",
+    "markAsIncomplete": "Mark As Incomplete",
+    "fetchingStatus": "Fetching post status..",
+    "completed": "Completed"
+   },
+   "content": {
+    "readMore": "Read More",
+    "showLess": "Show Less",
+    "showMore": "Show More",
+    "attachedFiles": "Attached Files"
+   },
+   "access": {
+    "loginRequired": "Please login to access this content",
+    "subscriptionRequired": "Please subscribe to access this content"
+   }
+  },
+  "product": {
+   "loading": "Fetching Product..",
+   "logo": {
+    "alt": "Logo"
+   },
+   "completion": {
+    "congratulations": "Congrats!! You have completed this course!",
+    "allContentCompleted": "You seem to have completed all available contents!!"
+   },
+   "button": {
+    "goToCourse": "Go to Course",
+    "resumeCourse": "Resume Course",
+    "startCourse": "Start Course",
+    "goTo": "Go to",
+    "resume": "Resume",
+    "start": "Start",
+    "course": "Course"
+   },
+   "audio": {
+    "albumArt": "Album Art",
+    "label": "Audio",
+    "plyr": {
+     "restart": "Restart",
+     "rewind": "Rewind {seektime}s",
+     "play": "Play",
+     "pause": "Pause",
+     "fastForward": "Forward {seektime}s",
+     "seek": "Seek",
+     "seekLabel": "{currentTime} of {duration}",
+     "played": "Played",
+     "buffered": "Buffered",
+     "currentTime": "Current time",
+     "duration": "Duration",
+     "volume": "Volume",
+     "mute": "Mute",
+     "unmute": "Unmute",
+     "enableCaptions": "Enable captions",
+     "disableCaptions": "Disable captions",
+     "download": "Download",
+     "enterFullscreen": "Enter fullscreen",
+     "exitFullscreen": "Exit fullscreen",
+     "frameTitle": "Player for {title}",
+     "captions": "Captions",
+     "settings": "Settings",
+     "pip": "PIP",
+     "menuBack": "Go back to previous menu",
+     "speed": "Speed",
+     "normal": "Normal",
+     "quality": "Quality",
+     "loop": "Loop"
+    }
+   },
+   "category": {
+    "imageAlt": "Category",
+    "comingSoon": "Coming Soon",
+    "completed": "Completed",
+    "noContent": "No content available!",
+    "progress": {
+     "format": "{completed}/{total} Completed"
+    }
+   },
+   "nextPost": {
+    "imageAlt": "Post Image",
+    "nextLesson": "Next lesson >",
+    "defaultMessage": "Awesome! Continue Pushing!",
+    "completion": {
+     "title": "Congratulations!",
+     "message": "You have successfully completed the course.\nThank you for being a part of our learning community!"
+    }
+   },
+   "instructor": {
+    "heading": "Instructor",
+    "imageAlt": "Instructor",
+    "defaultName": "Instructor Name",
+    "defaultTitle": "Instructor",
+    "defaultBio": "Lorem ipsum"
+   },
+   "lessons": {
+    "stats": {
+     "allCompleted": "{total} Lessons are completed.",
+     "progress": "{completed} of {total} Lessons Completed",
+     "lockedTitle": "Course locked",
+     "progressPausedTitle": "Progress paused",
+     "progressPausedDescription": "Your progress is saved and will resume once access is renewed."
+    }
+   },
+   "neo": {
+    "card": {
+     "imageAlt": "Product Poster Image",
+     "instructorImageAlt": "Instructor Headshot",
+     "inLibrary": "In Library",
+     "locked": "Locked"
+    },
+    "upsell": {
+     "imageAlt": "Course Poster",
+     "bundle": "Bundle",
+     "instructor": {
+      "imageAlt": "Instructor",
+      "defaultName": "Instructor Name",
+      "multiple": "Multiple Instructors"
+     }
+    }
+   },
+   "new": {
+    "card": {
+     "posterImageAlt": "Product Poster Image",
+     "inLibrary": "In Library",
+     "instructor": {
+      "imageAlt": "Instructor",
+      "defaultName": "Instructor Name"
+     }
+    },
+    "categoryTree": {
+     "comingSoon": "(Coming Soon)"
+    },
+    "post": {
+     "posterImageAlt": "Product Poster Image",
+     "list": {
+      "posterImageAlt": "Poster Image",
+      "completedAlt": "Completed"
+     },
+     "materials": {
+      "title": "Files"
+     }
+    }
+   },
+   "queue": {
+    "lesson": {
+     "single": "Lesson",
+     "plural": "Lessons"
+    },
+    "posterImageAlt": "Post",
+    "completedAlt": "Completed",
+    "nextCategory": "Next Category"
+   },
+   "card": {
+    "posterImageAlt": "Product Poster Image",
+    "viewProduct": "View Product"
+   },
+   "upsell": {
+    "bundle": "Bundle",
+    "posterImageAlt": "Course Poster",
+    "instructor": {
+     "imageAlt": "Instructor",
+     "defaultName": "Instructor Name"
+    }
+   },
+   "video": {
+    "player": {
+     "error": {
+      "playback": "Error playing video",
+      "transcoding": "Video is being processed. Please try again later."
+     },
+     "nextVideo": {
+      "upNextIn": "Up next in {countdown}",
+      "cancel": "CANCEL",
+      "playNow": "PLAY NOW"
+     },
+     "autoGeneratedCaptions": "auto-generated"
+    }
+   }
+  },
+  "plyr": {
+   "restart": "Restart",
+   "rewind": "Rewind {seektime}s",
+   "play": "Play",
+   "pause": "Pause",
+   "fastForward": "Forward {seektime}s",
+   "seek": "Seek",
+   "seekLabel": "{currentTime} of {duration}",
+   "played": "Played",
+   "buffered": "Buffered",
+   "currentTime": "Current time",
+   "duration": "Duration",
+   "volume": "Volume",
+   "mute": "Mute",
+   "unmute": "Unmute",
+   "enableCaptions": "Enable captions",
+   "disableCaptions": "Disable captions",
+   "download": "Download",
+   "enterFullscreen": "Enter fullscreen",
+   "exitFullscreen": "Exit fullscreen",
+   "frameTitle": "Player for {title}",
+   "captions": "Captions",
+   "settings": "Settings",
+   "pip": "PIP",
+   "menuBack": "Go back to previous menu",
+   "speed": "Speed",
+   "normal": "Normal",
+   "quality": "Quality",
+   "loop": "Loop",
+   "start": "Start",
+   "end": "End",
+   "all": "All",
+   "reset": "Reset",
+   "disabled": "Disabled",
+   "enabled": "Enabled",
+   "advertisement": "Ad",
+   "qualityBadge": {
+    "480": "480p",
+    "576": "576p",
+    "720": "720p",
+    "1080": "1080p",
+    "1440": "1440p",
+    "2160": "4K",
+    "auto": "Auto"
+   }
+  },
+  "views": {
+   "mobile": {
+    "assignment": {
+     "title": "Your answers",
+     "upload": {
+      "title": "Upload Assignment",
+      "description": "Please fill the worksheet(s) and upload your assignment"
+     },
+     "error": {
+      "required": "Respond to the assignment with either files or an answer",
+      "maxLength": "Answer Exceeds Max Length"
+     },
+     "viewMore": "View More",
+     "viewLess": "View Less",
+     "table": {
+      "fileName": "File Name",
+      "type": "Type",
+      "size": "Size",
+      "sizeUnit": "KB"
+     },
+     "submit": "Submit Assignment"
+    },
+    "category": {
+     "overview": "Overview",
+     "syllabus": "Syllabus",
+     "nodeTypes": {
+      "category": "Category",
+      "post": "Post",
+      "quiz": "Quiz",
+      "lesson": "Lesson"
+     },
+     "lesson": "Lesson",
+     "lessons": "Lessons",
+     "module": "Module",
+     "modules": "Modules",
+     "resumeLearning": "Resume Learning",
+     "startLearning": "Start Learning",
+     "error": {
+      "title": "Something went wrong",
+      "description": "Please try again later."
+     }
+    },
+    "curriculumComments": {
+     "comments": "Comments",
+     "curriculum": "Curriculum",
+     "error": {
+      "title": "Something went wrong",
+      "description": "Please try again later."
+     }
+    },
+    "library": {
+     "allCourses": "All Courses",
+     "myCourses": "My Courses",
+     "error": {
+      "title": "No courses found",
+      "description": "You have yet to enroll in any courses. Please reach out to your instructor to initiate your educational journey."
+     },
+     "sort": {
+      "default": "Default",
+      "titleAZ": "Title A-Z",
+      "titleZA": "Title Z-A",
+      "oldest": "Oldest",
+      "newest": "Newest",
+      "libraryOrderLowToHigh": "Library Order (Low to High)",
+      "libraryOrderHighToLow": "Library Order (High to Low)",
+      "mostLessons": "Most Lessons",
+      "leastLessons": "Least Lessons",
+      "mostComplete": "Most Complete",
+      "leastComplete": "Least Complete",
+      "recentlyEnrolled": "Recently Enrolled",
+      "oldestEnrolled": "Oldest Enrolled",
+      "recentlyAccessed": "Recently Accessed",
+      "oldestAccessed": "Oldest Accessed"
+     }
+    }
+   }
+  },
+  "bundle": {
+   "enroll": {
+    "text": "Enroll for",
+    "price": "{symbol} {amount}"
+   }
+  },
+  "profile": {
+   "imageDimension": "Recommended dimension: 100x100 px",
+   "fullName": "Full Name",
+   "email": "Email",
+   "changePassword": "Change password"
+  },
+  "purchaseHistory": {
+   "offer": "Offer:",
+   "purchasedOn": "Purchased on:",
+   "imageAlt": "Course thumbnail"
+  },
+  "settings": {
+   "title": "Settings",
+   "navigation": {
+    "profile": "Profile",
+    "password": "Password",
+    "purchaseHistory": "Purchase History"
+   },
+   "profile": {
+    "title": "Your Profile",
+    "fullName": {
+     "label": "Full Name",
+     "placeholder": "Mr. Jones"
+    },
+    "email": {
+     "label": "Email",
+     "placeholder": "(eg) username{'@'}mail.com"
+    },
+    "avatar": {
+     "label": "Avatar",
+     "dimension": "Recommended Dimension of 100x100",
+     "change": "Change Avatar",
+     "uploading": "Uploading.."
+    },
+    "save": "Save",
+    "saving": "Saving...",
+    "saved": "Saved!",
+    "error": {
+     "fetch": "Error while fetching details! Click here to try again.",
+     "save": "Error while saving details! Please try again."
+    }
+   },
+   "password": {
+    "title": "Password Settings",
+    "current": {
+     "label": "Current Password",
+     "placeholder": "Current Password"
+    },
+    "new": {
+     "label": "New Password",
+     "placeholder": "New Password"
+    },
+    "verify": {
+     "label": "Verify Password",
+     "placeholder": "Verify Password",
+     "mismatch": "Passwords don't match"
+    },
+    "update": {
+     "button": "Update",
+     "updating": "Updating..",
+     "success": "Password Updated!",
+     "error": "Error while updating password"
+    },
+    "sessionCleanupText": "Log out from all devices."
+   },
+   "purchaseHistory": {
+    "title": "Purchase History",
+    "error": {
+     "fetch": "Error while fetching data..",
+     "retry": "Click here to retry"
+    },
+    "labels": {
+     "purchased": "Purchased",
+     "price": "Price",
+     "offer": "Offer",
+     "product": "Product"
+    }
+   }
+  },
+  "mobileLibrary": {
+   "featured": "Featured",
+   "allCourses": "All Courses",
+   "myCourses": "My Courses",
+   "noCourses": "No courses found!",
+   "noCoursesAndOffers": "No courses and offers are available!"
+  },
+  "mobilePostMaterials": {
+   "title": "Files",
+   "noFiles": "No files are available for download!"
+  },
+  "mobileUpsellBundle": {
+   "navigation": {
+    "back": "Back to Library"
+   },
+   "payment": {
+    "free": "Free",
+    "checkout": "Checkout",
+    "enrollFor": "Enroll for"
+   },
+   "bundle": {
+    "label": "Bundle"
+   },
+   "description": {
+    "empty": "No Description Available"
+   },
+   "actions": {
+    "learnMore": "Learn More"
+   },
+   "empty": {
+    "title": "No courses found",
+    "description": "You have yet to enroll in any courses. Please reach out to your instructor to initiate your educational journey."
+   }
+  },
+  "neoLibrary": {
+   "tabs": {
+    "allCourses": "All Courses",
+    "myCourses": "My Courses"
+   },
+   "empty": {
+    "title": "No courses found",
+    "description": "You have yet to enroll in any courses. Please reach out to your instructor to initiate your educational journey."
+   },
+   "filterEmpty": {
+    "title": "No results found",
+    "description": "Try changing or clearing the applied filters.",
+    "clearFilters": "Clear Filters"
+   },
+   "filters": {
+    "language": "Language",
+    "difficulty": "Difficulty",
+    "topic": "Topic",
+    "all": "All",
+    "clearAll": "Clear all filters"
+   }
+  },
+  "newLibrary": {
+   "tabs": {
+    "allCourses": "All Courses",
+    "myCourses": "My Courses"
+   },
+   "empty": {
+    "title": "No courses found",
+    "description": "You have yet to enroll in any courses. Please reach out to your instructor to initiate your educational journey."
+   }
+  },
+  "notFound": {
+   "title": "oh no...",
+   "subtitle": "We have had an error",
+   "errorCode": "Error 404",
+   "message": "Sorry...please check back (click refresh) in just a moment."
+  },
+  "passwordRecovery": {
+   "title": "Reset Password",
+   "emailLabel": "Email address",
+   "emailPlaceholder": "Email address",
+   "emailSentMessage": "An email has been sent. Please check your inbox.",
+   "sendLinkButton": "Send me new password link",
+   "signInLink": "Sign In"
+  },
+  "post": {
+   "button": {
+    "markAsComplete": "Mark As Complete",
+    "markIncomplete": "Mark As Incomplete",
+    "completing": "Completing...",
+    "completed": "Completed",
+    "markingAsIncomplete": "Marking as Incomplete",
+    "submitAssignment": "Submit Assignment",
+    "submitQuiz": "Submit Quiz",
+    "retakeAssessment": "Retake Assessment",
+    "processingAssessment": "Processing Assessment"
+   },
+   "error": {
+    "markingComplete": "Error marking lesson as complete",
+    "markingIncomplete": "Error marking lesson as incomplete"
+   },
+   "success": {
+    "markedComplete": "Lesson marked as complete",
+    "markedIncomplete": "Lesson marked as incomplete"
+   }
+  },
+  "productContainer": {
+   "instructor": {
+    "heading": "Instructor",
+    "name": "Instructor Name",
+    "title": "Instructor",
+    "bio": "Lorem ipsum"
+   }
+  },
+  "products": {
+   "loading": {
+    "title": "Loading...",
+    "fetchingProduct": "Fetching product details",
+    "fetchingCategories": "Fetching categories"
+   },
+   "tracking": {
+    "courseCompleted": "Course completed",
+    "courseStarted": "Course started",
+    "lessonCompleted": "Lesson completed"
+   }
+  },
+  "setPassword": {
+   "title": {
+    "set": "Set Password for your account",
+    "expired": "Session Expired",
+    "alreadySet": "Password has been set already"
+   },
+   "links": {
+    "regenerate": "Regenerate Link"
+   },
+   "input": {
+    "newPassword": "New Password",
+    "reenterPassword": "Re-enter New Password"
+   },
+   "button": {
+    "setPassword": "Set Password"
+   },
+   "error": {
+    "length": "Password must be at least 8 characters long.",
+    "mismatch": "Please verify both the passwords",
+    "generic": "Something went wrong,Please try again later or contact support.",
+    "expired": "Your password reset link has expired"
+   },
+   "success": {
+    "set": "Password Set Successfully,Logging in now..."
+   },
+   "placeholder": {
+    "logo": "Your Logo"
+   },
+   "sessionCleanupText": "Log out from all devices.",
+   "passwordPolicy": "Your password must be at least 8 characters and should include a combination of uppercase and lowercase letters, numbers and special characters (!$%)",
+   "passwordMinimumLength": "Password must be at least 8 characters",
+   "passwordSpacePolicy": "Password cannot contain leading or trailing spaces",
+   "passwordWeak": "Password is too weak"
+  },
+  "tokenExpired": {
+   "title": "Magic Link Expired",
+   "message": "This login link has expired. Request a new one and we'll send it to your email.",
+   "regenerateButton": "Send New Link",
+   "backToLogin": "Back to Login",
+   "successMessage": "A new magic link has been sent to your email.",
+   "errorMessage": "Unable to send a new link. Please try again or go back to login."
+  },
+  "upsellCheckout": {
+   "loading": {
+    "message": "Loading..."
+   },
+   "payment": {
+    "form": "Payment Form"
+   }
+  },
+  "certificates": {
+   "locked": {
+    "title": "Category Completion Credential Is Locked",
+    "description": "To gain access to this certificate, please complete the category."
+   }
+  },
+  "navbar": {
+   "hi": "Hi",
+   "manageYourAccount": "Manage Your Account",
+   "logOut": "Log Out",
+   "affiliates": "Affiliates",
+   "courses": "Courses",
+   "communities": "Communities"
+  },
+  "goKollabUpsellTheme": {
+   "unlockAccess": "Unlock access to endless learning possibilities. Purchase the Courses Bundle today and start your journey towards success!"
+  },
+  "funnelLessonViewer": {
+   "enterFullscreen": "Enter fullscreen",
+   "exitFullscreen": "Exit fullscreen"
+  }
+ }
+}
