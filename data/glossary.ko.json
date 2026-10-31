@@ -329,7 +329,9 @@
     {
       "en": "Lesson",
       "ko": "강의",
-      "variants": [],
+      "variants": [
+        "레슨"
+      ],
       "category": "object",
       "decided": true,
       "note": ""
