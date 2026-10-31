@@ -118,3 +118,17 @@
 - [x] E1 사전 v1.0.2(5533c0a, 337키, 승인안 고정, 리뷰 반영) · [x] E2 로더 v1.0.1(c3d2465, SRI) · [x] E3 Worker v0.4(레포, 테스트 39/39, 미배포) · [x] E4 `PAYMENTS-ROLLOUT.md`(실행 안 함) · [~] E5 S5 에 pay 화면(PR #11) + 주입 시뮬 49→5. 트리거 링크 확인은 DNS 전환 후(링크 URL 필요)
   영향: Worker 배포 시 app.hyperclass.ai 경로는 v0.3 과 같은 출력(테스트 12건), 결제 도메인은 DNS 회색 동안 무영향
 - 열린 질문: 고객 서브계정 결제 링크도 이 도메인 → 제외 계정(1r0p…)을 페이지 데이터로 가려낼 수 있는지
+
+## 8. B4 잔존 → 포털 로더 v4.1 (2026-10-31, Claude Chat 오너 세션 진단 기반)
+
+| 우선 | 잔존 | 원인(진단) | 처리 |
+|---|---|---|---|
+| ① | 코스 상세 Start Course · 강의 페이지 Products / · Instructor only · {n} Lessons · Instructor · Instructor Name | 같은 페이지 안 **별도 Vue 앱** `#remote-membership-preview-mount`(i18n 78 ns · 1,137키 · 한국어 0) | remote 카탈로그 추출(오너 세션 스니펫) → 번역 → 사전 `remotes.membership-preview` → 로더가 `[data-v-app]` 전부(나중 마운트 포함) 스캔·병합 |
+| ① | Instructor Title | 코스 데이터 기본값(카탈로그에 없음) | 벤자민이 코스 설정에서 강사 이름·직함 입력 |
+| ② | 상대 시각 5mo·1w · 탭 제목 Courses/Communities/About/Courses in … | 카탈로그 밖 | `_rules` 패턴(텍스트 노드 전체 일치, 편집기 제외) · `_titles`(구절 단위, 이름 보존) |
+| ③ | 이벤트 달력 FC 요일 머리글 · 월/연 제목 · `toDateString` 날짜 | FullCalendar 인스턴스 접근 불가(전역·컴포넌트 경로 없음) | `_rules` 범위 패턴(`.fc` 머리글, 월/연·toDateString 형식) |
+| ④ | 동영상 플레이어 툴팁·스크린리더 텍스트·aria-label | Plyr(섀도 DOM 아님) | `_rules` 범위(`.plyr`) 텍스트·aria-label 사전 |
+| — | 강의 동영상 Loom | 교차 출처 iframe | 범위 밖 |
+| B5 | 그룹 칸 v3.0.1 | 그룹 저장 버튼 불량으로 제거 불가 | v4.1 이 `window.__hcKoLoader` 를 먼저 세워 v3 실행 중단, 먼저 돈 v3 는 `_text` 목록을 비워 무력화. 새 규칙은 v3 가 읽지 않는 키(`remotes`·`_rules`·`_titles`)에 |
+
+진행: [ ] remote 카탈로그 수신 → [ ] 번역·리뷰 → [ ] 로더 v4.1 구현·로컬 시험(Vue 앱 2개 합성 페이지) → [ ] 적대적 리뷰 → [ ] 사전 v4.1 커밋 → [ ] 포털 포인터 next(캐너리 community) → 오너 확인 → stable

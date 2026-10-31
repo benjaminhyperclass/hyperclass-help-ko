@@ -1,4 +1,13 @@
-/* Hyperclass 한글팩 — 클라이언트 포털 로더 v4.0.1 (2026-10-31, 작업지시서 v1 B3 · v3.0.1 승계)
+/* Hyperclass 한글팩 — 클라이언트 포털 로더 v4.1.0 (2026-10-31, 작업지시서 v1 B3·B4·B5)
+ * v4.1.0: ① 같은 페이지의 **다른 Vue 앱**(예: 코스·강의 화면의 #remote-membership-preview-mount — 별도 i18n, 1,137키)도 찾아
+ *        사전 `remotes.[이름]` 을 병합한다. [data-v-app] 전부를 스캔(나중에 마운트되는 앱 포함: DOM 추가 감지 + 2초 감시),
+ *        마운트 id 로 고르고 없으면 네임스페이스 지문(겹침 60% 이상)으로 고른다. 앱이 카탈로그를 다시 세팅하면 다시 병합.
+ *        ② `_rules`: 범위(CSS 선택자) 안에서만 도는 정확 일치·전체 일치 패턴·날짜 형식기·속성 치환 — 상대 시각(5mo·1w),
+ *        이벤트 달력(FullCalendar 요일 머리글·월/연 제목·toDateString 날짜), Plyr 플레이어 툴팁·스크린리더 문구·aria-label.
+ *        텍스트 노드 **전체**가 맞을 때만, 편집기 안은 제외. ③ `_titles`: 탭 제목을 구분자(| - ·)로 나눠 아는 구절만 바꾼다.
+ *        ④ B5: 그룹 칸에 남은 v3.0.1 을 멈춘다 — v3 의 중복 실행 방지 변수(window.__hcKoLoader)를 먼저 세우고,
+ *        이미 돈 v3 는 범위 없는 _text 목록을 비워 무력화(카탈로그 병합은 같은 사전이라 무해).
+ *        새 키(remotes·_rules·_titles)는 v3 가 읽지 않는다.
  * v4.0.1 (적대적 리뷰 반영): REV_BUILTIN 을 main 에 있는 커밋으로(브랜치 전용 커밋은 GC 위험) · 포인터 rev 사전이 404 면
  *        REV_BUILTIN 으로 재시도 · 깨진 캐시 항목 삭제 · _text 를 UI 크롬(nav·aside·header·메뉴·탭·버튼·label·th) 안으로 한정
  *        (게시글·코스·멤버 이름이 'Home'·'New' 같은 문구와 같아도 안 바뀌게) · i18n 인스턴스가 다시 만들어지면 다시 찾아 병합
@@ -25,14 +34,16 @@
 (function () {
   'use strict';
   if (window.__hcPortal) return;
+  // B5: 그룹 칸의 옛 v3.0.1 은 첫 줄에서 이 변수를 보고 멈춘다(그쪽이 나중에 실행될 때). 킬 스위치로 아래에서 빠져도 v3 는 막힌 채가 맞다.
+  if (!window.__hcKoLoader) window.__hcKoLoader = 'portal-4.1.0';
 
-  var VERSION = '4.0.1';
+  var VERSION = '4.1.0';
   var REPO = 'benjaminhyperclass/hyperclass-help-ko';
   var CDN = 'https://cdn.jsdelivr.net/gh/' + REPO + '@';
   var RAW = 'https://raw.githubusercontent.com/' + REPO + '/';
   // 포인터를 못 받았거나 포인터 rev 의 사전을 못 받을 때의 안전망 — **main 에 있는** 검증된 사전 커밋만 넣는다(CI 가 조상 여부를 본다).
-  // 현재 0f4e2d5 = 사전 v3.0.0. 사전 v4.0 이 main 에 들어가면 다음 로더에서 올린다.
-  var REV_BUILTIN = '0f4e2d550c8451b932d23563d75d9d8664d8fc47';
+  // 현재 4e21458 = 사전 v4.0.1(PR #10 머지). remotes·_rules 가 든 사전이 main 에 들어가면 다음 로더에서 올린다.
+  var REV_BUILTIN = '4e2145881ae2bf1d1771ca22abf129179312622d';
   var SHA_RE = /^[0-9a-f]{7,40}$/;
   var WAIT_APP_MS = 15000;
   var PROBE = ['auth', 'email'];   // 재병합 감시 키 (en 'Email' → ko '이메일')
@@ -46,7 +57,8 @@
   var P = window.__hcPortalPtr || null;
   var REV = P && SHA_RE.test(String(P.rev || '')) ? String(P.rev) : REV_BUILTIN;
   var revSource = P && REV === String(P.rev) ? 'pointer' : 'builtin';
-  var stats = { merges: 0, remerge: 0, textHits: 0, fallback: 0 };
+  var stats = { merges: 0, remerge: 0, textHits: 0, ruleHits: 0, titleHits: 0, fallback: 0, v3Neutralized: false };
+  var remoteStats = {};
   var telemetry = { url: null, sent: 0, skipped: 0, last: null };
   var dict = null, i18n = null, applied = false, probeExpect = null, T = null, booted = false, err = null;
 
@@ -58,7 +70,9 @@
         version: VERSION, rev: REV, revSource: revSource, booted: booted, applied: applied, error: err,
         locale: g ? currentLocale(g) : null, dictVersion: dict && dict._meta ? dict._meta.version : null,
         dictStrings: dict && dict._meta ? dict._meta.strings : null, textEntries: T ? Object.keys(T).length : 0,
-        merges: stats.merges, remerge: stats.remerge, textHits: stats.textHits, fallback: stats.fallback,
+        merges: stats.merges, remerge: stats.remerge, textHits: stats.textHits, ruleHits: stats.ruleHits, titleHits: stats.titleHits, fallback: stats.fallback,
+        rules: RULES.length, v3Neutralized: stats.v3Neutralized, v3Present: !!window.__hcKo,
+        remotes: (function () { var o = {}; for (var k in remoteStats) o[k] = { merges: remoteStats[k].merges, mountId: remoteStats[k].mountId }; return o; })(),
         veil: document.documentElement.getAttribute('data-hc-ko'), telemetry: JSON.parse(JSON.stringify(telemetry))
       };
     },
@@ -81,7 +95,9 @@
   /* ---------- 1) i18n 인스턴스 ---------- */
   function findI18n() {
     var root = document.getElementById('__nuxt') || document.querySelector('[data-v-app]');
-    var app = root && root.__vue_app__;
+    return composerOfApp(root && root.__vue_app__);
+  }
+  function composerOfApp(app) {
     if (!app) return null;
     try {
       var prov = app._context && app._context.provides;
@@ -98,6 +114,8 @@
     return null;
   }
   function currentLocale(g) { var l = g.locale; return (l && typeof l === 'object' && 'value' in l) ? l.value : l; }
+  function safeT(g, k) { try { return g.t(k); } catch (e) { return null; } }
+  function firstLeaf(o, pre) { for (var k in o) { var v = o[k], p = pre ? pre + '.' + k : k; if (typeof v === 'string') return p; if (v && typeof v === 'object') { var r = firstLeaf(v, p); if (r) return r; } } return null; }
   function catalogOf(g) { try { var m = g.messages; m = (m && typeof m === 'object' && 'value' in m) ? m.value : m; return m || {}; } catch (e) { return {}; } }
 
   /* ---------- 2) 카탈로그 주입 ---------- */
@@ -122,6 +140,7 @@
       var cur = findI18n();
       if (cur && (!i18n || cur.global !== i18n.global)) { i18n = cur; stats.remerge++; log('i18n 인스턴스 교체 → 병합'); applyI18n(); return; }
       if (!i18n) return;
+      scanRemotes(); neutralizeV3(); koTitle();
       // Nuxt head 관리가 html lang 을 'en' 으로 되돌린다(실측) — 적용 중이면 다시 세운다
       if (applied && document.documentElement.getAttribute('lang') !== 'ko') document.documentElement.setAttribute('lang', 'ko');
       try {
@@ -150,21 +169,87 @@
     }
     return false;
   }
+  /* ---------- 3-2) _rules — 범위 안에서만 도는 정확 일치·패턴·날짜 형식기·속성 ---------- */
+  // 규칙 { scope: 'CSS 선택자'|null, text: {EN: KO}, patterns: [['^…$', '치환']], formats: ['monthYear'|'dateString'|'weekday'], attrs: ['aria-label'] }
+  // 패턴은 '^' 로 시작하고 '$' 로 끝나는 것만 받는다(텍스트 노드 전체 일치) — 부분 치환으로 본문을 건드리지 않게.
+  var RULES = [];
+  var WD = { Sun: '일', Mon: '월', Tue: '화', Wed: '수', Thu: '목', Fri: '금', Sat: '토' };
+  var WDL = { Sunday: '일요일', Monday: '월요일', Tuesday: '화요일', Wednesday: '수요일', Thursday: '목요일', Friday: '금요일', Saturday: '토요일' };
+  var MON = { Jan: 1, Feb: 2, Mar: 3, Apr: 4, May: 5, Jun: 6, Jul: 7, Aug: 8, Sep: 9, Oct: 10, Nov: 11, Dec: 12 };
+  var MONL = { January: 1, February: 2, March: 3, April: 4, May: 5, June: 6, July: 7, August: 8, September: 9, October: 10, November: 11, December: 12 };
+  var FORMATS = {
+    // 'October 2026' → '2026년 10월'
+    monthYear: function (t) { var m = t.match(/^([A-Z][a-z]+) (\d{4})$/); return m && MONL[m[1]] ? m[2] + '년 ' + MONL[m[1]] + '월' : null; },
+    // Date.toDateString(): 'Tue Nov 03 2026' → '2026년 11월 3일 (화)'
+    dateString: function (t) { var m = t.match(/^(Sun|Mon|Tue|Wed|Thu|Fri|Sat) ([A-Z][a-z]{2}) (\d{2}) (\d{4})$/); return m && MON[m[2]] ? m[4] + '년 ' + MON[m[2]] + '월 ' + (+m[3]) + '일 (' + WD[m[1]] + ')' : null; },
+    // 요일 머리글: 'Sun' → '일', 'Sunday' → '일요일', 'Sun 11/1' → '11/1 (일)'
+    weekday: function (t) { if (WD[t]) return WD[t]; if (WDL[t]) return WDL[t]; var m = t.match(/^(Sun|Mon|Tue|Wed|Thu|Fri|Sat) (\d{1,2}\/\d{1,2})$/); return m ? m[2] + ' (' + WD[m[1]] + ')' : null; }
+  };
+  function compileRules(src) {
+    var out = [];
+    (Array.isArray(src) ? src : []).forEach(function (r) {
+      if (!r || typeof r !== 'object') return;
+      var pats = [];
+      (Array.isArray(r.patterns) ? r.patterns : []).forEach(function (p) {
+        if (!Array.isArray(p) || typeof p[0] !== 'string' || typeof p[1] !== 'string') return;
+        if (p[0].charAt(0) !== '^' || p[0].charAt(p[0].length - 1) !== '$') return;
+        try { pats.push({ re: new RegExp(p[0]), ko: p[1] }); } catch (e) {}
+      });
+      out.push({ scope: typeof r.scope === 'string' && r.scope ? r.scope : null, text: r.text && typeof r.text === 'object' ? r.text : null, pats: pats,
+        fmts: (Array.isArray(r.formats) ? r.formats : []).filter(function (f) { return FORMATS[f]; }), attrs: Array.isArray(r.attrs) ? r.attrs : [] });
+    });
+    return out;
+  }
+  function inScope(el, scope) { try { return !scope || !!(el && el.closest && el.closest(scope)); } catch (e) { return false; } }
+  function ruleValue(t, el, attr) {
+    for (var i = 0; RULES.length > i; i++) {
+      var r = RULES[i];
+      if (attr && r.attrs.indexOf(attr) === -1) continue;
+      if (!inScope(el, r.scope)) continue;
+      if (r.text && r.text[t] !== undefined) return r.text[t];
+      for (var j = 0; r.pats.length > j; j++) if (r.pats[j].re.test(t)) return t.replace(r.pats[j].re, r.pats[j].ko);
+      for (var f = 0; r.fmts.length > f; f++) { var v = FORMATS[r.fmts[f]](t); if (v) return v; }
+    }
+    return null;
+  }
+
+  /* ---------- 3-3) _titles — 탭 제목 구절 ---------- */
+  var TT = null;
+  function koTitle() {
+    try {
+      var t = document.title; if (!t || !TT) return;
+      var parts = t.split(/(\s[|\-–·]\s)/), changed = false;
+      for (var i = 0; parts.length > i; i += 2) {
+        var seg = parts[i].trim(); if (!seg || /[가-힣]/.test(seg) && !/[A-Za-z]/.test(seg)) continue;
+        var v = TT.exact && TT.exact[seg];
+        if (v === undefined && TT.pats) for (var j = 0; TT.pats.length > j; j++) if (TT.pats[j].re.test(seg)) { v = seg.replace(TT.pats[j].re, TT.pats[j].ko); break; }
+        if (v !== undefined && v !== seg) { parts[i] = parts[i].replace(seg, v); changed = true; }
+      }
+      if (changed) { document.title = parts.join(''); stats.titleHits++; }
+    } catch (e) {}
+  }
+
   function trText(node) {
-    var s = node.nodeValue; if (!s || !T) return;
-    var t = s.trim(); if (!t) return;
-    var v = T[t]; if (v === undefined || inEditor(node) || !inChrome(node)) return;
-    node.nodeValue = s.replace(t, v); stats.textHits++;
+    var s = node.nodeValue; if (!s) return;
+    var t = s.trim(); if (!t || inEditor(node)) return;
+    var el = node.parentNode;
+    var v = T && T[t] !== undefined && inChrome(node) ? T[t] : null;
+    if (v === null && RULES.length) { v = ruleValue(t, el, null); if (v !== null) stats.ruleHits++; else return; }
+    else if (v === null) return;
+    else stats.textHits++;
+    node.nodeValue = s.replace(t, v);
   }
   function trAttrs(el) {
-    if (!T || !el.getAttribute) return;
+    if (!el.getAttribute) return;
     for (var i = 0; ATTRS.length > i; i++) {
       var a = ATTRS[i], s = el.getAttribute(a); if (!s) continue;
-      var t = s.trim(), v = T[t]; if (v !== undefined && inChrome(el)) { el.setAttribute(a, s.replace(t, v)); stats.textHits++; }
+      var t = s.trim(), v = T && T[t] !== undefined && inChrome(el) ? T[t] : null;
+      if (v === null && RULES.length) v = ruleValue(t, el, a);
+      if (v !== null && v !== t) { el.setAttribute(a, s.replace(t, v)); stats.textHits++; }
     }
   }
   function pass(root) {
-    if (!T || !root) return;
+    if (!(T || RULES.length) || !root) return;
     var w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null), n;
     while ((n = w.nextNode())) trText(n);
     if (root.querySelectorAll) {
@@ -173,23 +258,79 @@
       if (root.nodeType === 1) trAttrs(root);
     }
   }
+  var remoteTimer = null;
+  function scheduleRemoteScan() { if (remoteTimer) return; remoteTimer = setTimeout(function () { remoteTimer = null; scanRemotes(); }, 150); }
   var mo = new MutationObserver(function (muts) {
-    if (!T) return;
+    var added = false, title = false;
     for (var i = 0; muts.length > i; i++) {
-      var m = muts[i];
+      var m = muts[i], tg = m.target;
+      if (tg && (tg.nodeName === 'TITLE' || (tg.parentNode && tg.parentNode.nodeName === 'TITLE'))) { title = true; continue; }
       if (m.type === 'characterData') trText(m.target);
       else if (m.type === 'attributes') trAttrs(m.target);
-      else if (m.addedNodes) for (var j = 0; m.addedNodes.length > j; j++) {
-        var nd = m.addedNodes[j];
-        if (nd.nodeType === 3) trText(nd); else if (nd.nodeType === 1) pass(nd);
+      else if (m.addedNodes && m.addedNodes.length) {
+        added = true;
+        for (var j = 0; m.addedNodes.length > j; j++) {
+          var nd = m.addedNodes[j];
+          if (nd.nodeType === 3) trText(nd); else if (nd.nodeType === 1) pass(nd);
+        }
       }
     }
+    if (title) koTitle();
+    if (added && dict && dict.remotes) scheduleRemoteScan();
   });
   function startTextLayer() {
-    if (!dict || !dict._text) return;
-    T = dict._text;
+    if (!dict) return;
+    T = dict._text || null;
+    RULES = compileRules(dict._rules);
+    if (dict._titles && typeof dict._titles === 'object') {
+      TT = { exact: dict._titles.exact || null, pats: compileRules([{ patterns: dict._titles.patterns }])[0].pats };
+    }
     pass(document.body);
+    koTitle();
     mo.observe(document.documentElement, { subtree: true, childList: true, characterData: true, attributes: true, attributeFilter: ATTRS });
+  }
+
+  /* ---------- 3-4) 다른 Vue 앱 (remote) ---------- */
+  function remoteDictFor(el, g) {
+    var R = dict && dict.remotes; if (!R) return null;
+    for (var k in R) if (R[k] && R[k].mountId && el.id === R[k].mountId && R[k].messages) return { key: k, r: R[k] };
+    var cat = catalogOf(g), en = cat.en || cat[currentLocale(g)] || {}, names = Object.keys(en), best = null, bestScore = 0;
+    for (var k2 in R) {
+      var m = R[k2] && R[k2].messages; if (!m) continue;
+      var keys = Object.keys(m), hit = 0;
+      for (var i = 0; keys.length > i; i++) if (names.indexOf(keys[i]) >= 0) hit++;
+      var score = keys.length ? hit / keys.length : 0;
+      if (score > bestScore) { bestScore = score; best = { key: k2, r: R[k2] }; }
+    }
+    return bestScore >= 0.6 ? best : null;
+  }
+  function scanRemotes() {
+    if (!dict || !dict.remotes) return;
+    var els = document.querySelectorAll('[data-v-app]');
+    for (var i = 0; els.length > i; i++) {
+      var el = els[i]; if (el.id === '__nuxt' || !el.__vue_app__) continue;
+      var inst = composerOfApp(el.__vue_app__); if (!inst || (i18n && inst.global === i18n.global)) continue;
+      var g = inst.global, hit = remoteDictFor(el, g); if (!hit) continue;
+      var rs = remoteStats[hit.key] || (remoteStats[hit.key] = { merges: 0, g: null, probe: null, probeKey: firstLeaf(hit.r.messages), mountId: el.id || null });
+      var stale = rs.g === g && rs.probeKey && rs.probe !== null && safeT(g, rs.probeKey) !== rs.probe;
+      if (rs.g === g && !stale) continue;
+      try {
+        g.mergeLocaleMessage('en', hit.r.messages);
+        var loc = currentLocale(g); if (loc && loc !== 'en') g.mergeLocaleMessage(loc, hit.r.messages);
+        rs.g = g; rs.merges++; rs.mountId = el.id || null; rs.probe = rs.probeKey ? safeT(g, rs.probeKey) : null;
+        log('remote 병합', hit.key, el.id, loc);
+      } catch (e) { log('remote 병합 실패', hit.key, e); }
+    }
+  }
+
+  /* ---------- 3-5) B5 — 이미 돈 v3.0.1 무력화 ---------- */
+  function neutralizeV3() {
+    try {
+      var h = window.__hcKo;
+      if (stats.v3Neutralized || !h || !h.dict || h.dict === dict || !h.dict._text) return;
+      var t3 = h.dict._text; for (var k in t3) delete t3[k];   // v3 의 텍스트 레이어가 읽는 바로 그 객체
+      stats.v3Neutralized = true; log('v3.0.1 _text 무력화');
+    } catch (e) {}
   }
 
   /* ---------- 4) 사전 — 커밋 고정 URL · 불변 캐시 ---------- */
@@ -303,6 +444,7 @@
     if (!i18n) { err = 'no-i18n'; log('i18n 인스턴스 없음 → 텍스트 치환만'); mark('fail'); }
     else applyI18n();
     startTextLayer();
+    scanRemotes(); neutralizeV3();
     watchReapply();
     scheduleTelemetry('start');
   }).catch(function (e) { err = 'boot:' + (e && e.message); log('boot failed', e); mark('fail'); });
