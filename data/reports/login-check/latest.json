@@ -5,121 +5,73 @@
    "app": "app",
    "screen": "login",
    "url": "https://app.hyperclass.ai/",
-   "lang": "en",
+   "lang": "ko",
    "path": "/",
    "appLoader": {
-    "version": "4.18.1",
-    "preauth": null,
-    "allowedHere": false,
-    "booted": false,
-    "suspended": true,
-    "rev": "3b82727"
+    "version": "4.19.0",
+    "preauth": true,
+    "allowedHere": true,
+    "booted": true,
+    "suspended": false,
+    "rev": "e30d4d2"
    },
    "boot": {
-    "version": "1.2.0",
+    "version": "1.3.0",
     "source": "edge",
     "channel": "stable",
-    "ref": "a2e7596"
+    "ref": "3bc900d"
    },
-   "english": [
-    "By",
-    "Conditions",
-    "Continue",
-    "Email",
-    "Forgot",
-    "Or",
-    "Password",
-    "Sign",
-    "Terms",
-    "account",
-    "agree",
-    "and",
-    "in",
-    "into",
-    "our",
-    "password",
-    "signing",
-    "to",
-    "with",
-    "you",
-    "your"
-   ],
-   "englishCount": 26,
-   "hangul": false
+   "english": [],
+   "englishCount": 0,
+   "hangul": true
   },
   {
    "app": "app",
    "screen": "forgot",
    "url": "https://app.hyperclass.ai/forgot_password",
-   "lang": "en",
+   "lang": "ko",
    "path": "/forgot_password",
    "appLoader": {
-    "version": "4.18.1",
-    "preauth": null,
-    "allowedHere": false,
-    "booted": false,
-    "suspended": true,
-    "rev": "3b82727"
+    "version": "4.19.0",
+    "preauth": true,
+    "allowedHere": true,
+    "booted": true,
+    "suspended": false,
+    "rev": "e30d4d2"
    },
    "boot": {
-    "version": "1.2.0",
+    "version": "1.3.0",
     "source": "edge",
     "channel": "stable",
-    "ref": "a2e7596"
+    "ref": "3bc900d"
    },
-   "english": [
-    "Email",
-    "Password",
-    "Reset"
-   ],
-   "englishCount": 5,
-   "hangul": false
+   "english": [],
+   "englishCount": 0,
+   "hangul": true
   },
   {
    "app": "app",
    "screen": "sso",
    "url": "https://app.hyperclass.ai/login/sso",
-   "lang": "en",
+   "lang": "ko",
    "path": "/",
    "appLoader": {
-    "version": "4.18.1",
-    "preauth": null,
-    "allowedHere": false,
-    "booted": false,
-    "suspended": true,
-    "rev": "3b82727"
+    "version": "4.19.0",
+    "preauth": true,
+    "allowedHere": true,
+    "booted": true,
+    "suspended": false,
+    "rev": "e30d4d2"
    },
    "boot": {
-    "version": "1.2.0",
+    "version": "1.3.0",
     "source": "edge",
     "channel": "stable",
-    "ref": "a2e7596"
+    "ref": "3bc900d"
    },
-   "english": [
-    "By",
-    "Conditions",
-    "Continue",
-    "Email",
-    "Forgot",
-    "Or",
-    "Password",
-    "Sign",
-    "Terms",
-    "account",
-    "agree",
-    "and",
-    "in",
-    "into",
-    "our",
-    "password",
-    "signing",
-    "to",
-    "with",
-    "you",
-    "your"
-   ],
-   "englishCount": 26,
-   "hangul": false
+   "english": [],
+   "englishCount": 0,
+   "hangul": true
   },
   {
    "app": "portal",
@@ -228,5 +180,5 @@
    "hangul": true
   }
  ],
- "total": 154
+ "total": 97
 }
