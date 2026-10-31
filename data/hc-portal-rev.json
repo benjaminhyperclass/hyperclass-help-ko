@@ -1,13 +1,13 @@
 {
-  "rev": "8413843b48ede78ecd441b6d9178b979d44c34ed",
+  "rev": "0f4e2d550c8451b932d23563d75d9d8664d8fc47",
   "off": false,
-  "version": "4.0.0",
-  "updated": "2026-10-31T06:30:00Z",
+  "version": "3.0.0",
+  "updated": "2026-10-31T08:00:00Z",
   "by": "manual",
-  "_comment": "클라이언트 포털 한글팩 포인터(작업지시서 v1 B3). js/hc-portal-bootstrap.js 가 raw@main 에서 읽는다. rev = 포털 사전(data/hc-ko-i18n.json)이 든 커밋 — 로더가 jsDelivr @rev 로 고정해 받는다. 현재 rev 는 PR #10(사전 v4.0) 브랜치 커밋이며, 머지 후 그 머지 커밋으로 올린다. off:true = 다음 로드부터 포털 한글팩 중단(베일만 해제). excludeHosts = 한국어를 끄는 포털 호스트(고객 옵트아웃). 메인 앱 포인터(hc-ko-app-rev.json)와 분리한 이유: 두 봇이 한 파일을 동시에 쓰지 않게, 포털 문제로 메인 파이프라인이 멈추지 않게.",
+  "_comment": "클라이언트 포털 한글팩 포인터(작업지시서 v1 B3). js/hc-portal-bootstrap.js 가 raw@main 에서 읽는다. rev = 포털 사전(data/hc-ko-i18n.json)이 든 커밋 — 로더가 jsDelivr @rev 로 고정해 받는다. 현재 rev 는 main 의 사전 v3.0.0(0f4e2d5). PR #10(사전 v4.0)이 머지되면 그 머지 커밋으로 올린다 — 브랜치 전용 커밋은 CI 가 막는다(GC 위험). off:true = 다음 로드부터 포털 한글팩 중단(베일만 해제). excludeHosts = 한국어를 끄는 포털 호스트(고객 옵트아웃). 메인 앱 포인터(hc-ko-app-rev.json)와 분리한 이유: 두 봇이 한 파일을 동시에 쓰지 않게, 포털 문제로 메인 파이프라인이 멈추지 않게.",
   "loader": {
-    "stable": "0a062f8b43de22ff4b3596398e3cf3aa30bf6991",
-    "next": "0a062f8b43de22ff4b3596398e3cf3aa30bf6991",
+    "stable": "3c71af8bb18c5d5b7f225445e8c1105d0a36ae7b",
+    "next": "3c71af8bb18c5d5b7f225445e8c1105d0a36ae7b",
     "canaryHosts": [
       "community.hyperclass.ai"
     ],
