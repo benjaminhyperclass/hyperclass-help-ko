@@ -70,7 +70,7 @@
 - [ ] A4 에이전시 Custom CSS v2 붙여넣기 — 로더 v4.19 stable 승격·검증 **뒤**
 - [ ] B3 포털 Custom JS(부트스트랩 + 채팅 위젯 KO) · 포털 Custom CSS(베일)
 - [ ] B5 그룹 슬롯 v2.0.1 제거
-- [ ] C1 스냅샷 복제 여부 확인
+- [x] C1 스냅샷 복제 여부 확인 — 복제 안 됨 → C3 확정
 - [ ] 결정 ② 하이퍼클래스 연락처(카카오 채널/이메일) — 정해지기 전엔 전화 안내 삭제로 진행
 
 ## 6. 진행
@@ -86,8 +86,8 @@
   영향: 슬롯 정렬은 벤자민 선택(A2 부트스트랩 v1.3 SHA 로 한 번에)
 - [x] A1 CSS 원본 — 82a8246, 비로그인 HTML 의 style 추출(15,460자, SHA-256 9a502c4…). ⚠️ v1.3.0 자체 버그 발견: `.foot-note::전`·`.h6::후`(의사 요소명 번역 오염)로 ::before/::after 가 무효인데 짝 `font-size:0` 은 살아 있어 **약관 안내문·재설정 완료 메시지가 투명** — v2 에서 해소
   영향: A4 v2 의 diff 기준
-- [~] A2 로더 v4.19.0 · 부트스트랩 v1.3.0 = `3bc900d`(CDN=raw=local) → 포인터 `loader.next` 76bc410. 적대적 리뷰 H1·M4(M3 문서화)·L2 반영, 헤드리스 시나리오 10종 통과
-  ⏳ 엣지 `wrangler deploy`(BOOTSTRAP_SHA 3bc900d, 49df23c 커밋) — 자동 모드 분류기가 운영 배포로 거부 → **벤자민 실행 대기**. 그 뒤: 비로그인 새 탭 `?hcch=next` 검증 → `loader.stable` 승격
+- [x] A2 로더 v4.19.0 · 부트스트랩 v1.3.0 = `3bc900d`(CDN=raw=local) → 포인터 `loader.next` 76bc410. 적대적 리뷰 H1·M4(M3 문서화)·L2 반영, 헤드리스 시나리오 10종 통과
+  ✅ 엣지 배포(Claude Chat, Worker b60d5e58) → ?hcch=next 검증(벤자민·Claude Code) → **stable 승격 d719342** → 무쿠키 stable 확인 → S5 154→97(app 0)
   영향: stable 승격 전까지 고객 로그인 화면은 종전(영어 + CSS v1 오버레이). 승격 후에만 A4 CSS 교체
 - [x] A3 사전 v4.2.21 — e30d4d2 → 포인터 27010b3, CDN=raw=local. login 11건(호스트+onboardingApp 지문 앱 사본), 앱 내 GHL 번호 4건, `_text` 5건. 해요체: login 은 `~세요` 명령형만(관례 유지)
   영향: 결정 ② 연락처 확정 시 troubleToLogin 의 a 태그에 href 만 추가. whitelabel '타사 전화번호' 규칙은 scripts PR 로(검토)

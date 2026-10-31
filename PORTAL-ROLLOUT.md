@@ -44,15 +44,17 @@
 
 ## 4. 고객 서브계정 포털로 확산 (트랙 C)
 
-### C1. 스냅샷 복제 여부 — **벤자민 확인 필요**
-- 공개 문서(서드파티 가이드 포함)는 스냅샷 구성요소로 워크플로·퍼널·템플릿·파이프라인·커스텀 필드·대시보드를 들지만 **포털 Branding → Advanced 코드가 넘어가는지는 언급이 없다**(2026-10-31 조사).
-- 확인 방법(크롤용 새 서브계정은 만들지 않는 원칙): 다음 **실제 신규 가입 계정**에서 Client Portal → Settings → Branding → Advanced 를 열어 하이퍼클래스 기본 스냅샷의 코드가 들어와 있는지 본다. 또는 GHL 지원에 문의.
+### C1. 스냅샷 복제 여부 — ✅ 확인 완료 (2026-10-31, 벤자민): **복제되지 않는다**
+- 스냅샷 Linked assets 목록에 **Client Portal·Communities 항목이 없다** — 포털 Branding → Advanced 의 Custom JS/CSS 는 스냅샷으로 넘어가지 않는다.
+- GHL ideas 보드 "Client Portal and Groups in Snapshot" 상태 = **Planned**(미구현).
+- → **C3 로 확정.** (공개 API 에도 포털 레벨 코드 필드가 없다 — 아래 C3)
 
-### C2. 복제되는 경우
-- 하이퍼클래스 기본 스냅샷의 포털 Custom JS/CSS 칸에 2절 두 파일을 넣는다. 이후 로더·사전 갱신은 포털 포인터로 전 고객 포털에 동시에 닿는다.
+### C2. (해당 없음) 복제되는 경우
+- GHL 이 위 아이디어를 구현하면 그때 하이퍼클래스 기본 스냅샷의 포털 칸에 2절 두 파일을 넣고 이 절을 되살린다.
 
-### C3. 복제되지 않는 경우
-- 신규 계정 온보딩 체크리스트에 1단계 추가: "Client Portal → Branding → Advanced → Custom JS·CSS 에 한글팩 붙여넣기(2절)".
+### C3. 확정 경로 — 계정마다 붙여넣기
+- **신규 계정 온보딩 체크리스트에 1단계 추가**: "Client Portal → Settings → Branding → Advanced → Custom JS·CSS 에 한글팩 붙여넣기(2절, 기존 코드가 있으면 맨 위에)". 붙인 뒤 새 탭 + 5분, 포털 `/login` 이 한국어인지 확인.
+- 기존 고객 서브계정: 같은 절차를 계정별로(수동). 고객 계정 쓰기는 고객 동의·요청이 있을 때만.
 - 기존 고객 일괄 적용: **GHL 공개 API 에 포털 레벨 Custom JS/CSS 필드는 없다**(2026-10-31, LeadConnector API 작업 검색 — client portal branding custom code 관련 작업 0건). 참고로 **코스 상품**에는 `customJs`·`customCss`·`customHeader`·`customFooter` 필드가 있다(`PUT /courses/products/{productId}`, 로케이션 토큰 + `courses.write`). 코스 페이지 한정 대안 경로지만 고객 계정 쓰기라 **이번 범위에서 하지 않는다**(보고만).
 
 ### C4. 고객이 이미 넣은 코드 보호

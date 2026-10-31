@@ -11,13 +11,14 @@
 | 항목 | 상태 |
 |---|---|
 | 사전 (메인) | **v4.2.21** `e30d4d2` 라이브(포인터 봇 27010b3, CDN=raw=local). 로그인 화면 교정 11 + 앱 내 GHL 미국 번호 4건 삭제 + 비로그인 오류 화면 `_text` 5 |
-| 로더 (메인) | **v4.19.0** `3bc900d` = 포인터 `loader.next`(캐너리 r6JD) · `stable` 은 v4.18.1 `a2e7596` 유지. PREAUTH(`/`·`/forgot_password`·`/change_password`·`/set_password`·`/login/sso`) + 적대적 리뷰 반영(제외 계정 새로고침 루프 차단기 30초·로그인 화면 0.8초 안정 대기·PREAUTH 텔레메트리 생략·호스트 composer 재병합) |
-| 부트스트랩 v1.3.0 | `3bc900d` (`?hcch=next|stable` 7일 고정) — 레포 `wrangler.toml` BOOTSTRAP_SHA 는 3bc900d, **엣지 실배포는 아직 047b529(v1.2.0)**: `wrangler deploy` 가 자동 모드 분류기에 막힘(운영 배포) → 벤자민 실행 대기 |
-| 에이전시 CSS | 레포 `css/agency-custom.css` **v2.0.0**(텍스트 오버레이 삭제, 환영 문구 합쇼체·로그인 폼 한정). 칸은 아직 v1.3.0 — 로더 v4.19 stable 승격 **뒤** 벤자민이 교체 |
+| 로더 (메인) | **v4.19.0** `3bc900d` = 포인터 `loader.stable` = `next` — **2026-10-31 전 고객 승격**(d719342, CI 성공). 무쿠키 새 컨텍스트 stable 채널에서 `/`·`/forgot_password` 로더 4.19.0 booted·preauth·lang ko 확인. 롤백 = stable 을 `a2e7596`(v4.18.1)로. PREAUTH(`/`·`/forgot_password`·`/change_password`·`/set_password`·`/login/sso`) + 적대적 리뷰 반영(제외 계정 새로고침 루프 차단기 30초·로그인 화면 0.8초 안정 대기·PREAUTH 텔레메트리 생략·호스트 composer 재병합) |
+| 부트스트랩 v1.3.0 | `3bc900d` (`?hcch=next|stable` 7일 고정) — **엣지 배포 완료**(Claude Chat, Cloudflare 대시보드, Worker 버전 b60d5e58 100%). 무쿠키로 엣지 HTML 부트스트랩 src @3bc900d · `__hcBoot` 1.3.0 확인 |
+| 에이전시 CSS | 레포 `css/agency-custom.css` **v2.0.0**(SHA-256 eea14b2…). stable 승격 완료 → **벤자민 칸 교체 차례**(교체 후 새 탭 + 5분, S5 재측정) |
 | 포털 | 패키지 완료: 포인터 `data/hc-portal-rev.json`(rev = main 사전 v3 `0f4e2d5`, loader `028b315`) · 슬롯 `js/portal-slot.js` v1.1 · 베일 `css/portal-custom.css` v1.0.1 · 부트스트랩 v1.0.1 · 로더 v4.0.1. 실배포 산출물 헤드리스 E2E 통과(/login·/forgot-password 한국어, 베일 1~2.3초). **슬롯 미설치(벤자민)** |
-| 포털 사전 v4.0 | PR #10 (커버리지 5,393/5,393, 리뷰 반영) — 머지 후 포털 포인터 `rev` 를 머지 커밋으로 |
+| 포털 사전 v4.0.1 | PR #10 (커버리지 5,393/5,393) — 벤자민 검수 반영(Lesson→강의 23·이벤트 Up next→다음 세션, 게시물→게시글 53, 수료증 2, 글로서리 Lesson 변형 '레슨'). 머지 후 포털 포인터 `rev` 를 머지 커밋으로 |
 | 승인 대기 PR | #9 verify-deploy EXPECT · #10 포털 사전 v4.0 · #11 login-check + S5 + validate C14(GHL 번호) |
-| 기준선 | `scripts/login-check.py`(PR #11) 무쿠키 6화면: 전부 영어, 영문 단어 154 — 승격·슬롯 설치 뒤 재측정 |
+| S5 점검 | `scripts/login-check.py`(PR #11) 무쿠키 6화면 — 승격 전 154 → **승격 후 97**: app 로그인·재설정·SSO **영문 0**(lang ko), 포털 3화면 97(슬롯 미설치). 포털 슬롯 설치 뒤 재측정 |
+| C1 스냅샷 | **포털 설정은 스냅샷으로 복제되지 않음**(벤자민: Linked assets 에 Client Portal·Communities 없음, GHL ideas "Client Portal and Groups in Snapshot" = Planned) → C3 확정: 온보딩 체크리스트 1단계 + 계정별 수동(PORTAL-ROLLOUT 4절) |
 | 발견한 번역 오염 2건 | ① 에이전시 CSS v1.3.0 의 `.foot-note::전`·`.h6::후`(약관 안내·재설정 완료 메시지가 투명) ② 포털 슬롯 위젯 코드의 `참/거짓`(실행 시 ReferenceError, 위젯 치환 미동작). **교훈: 코드 칸에 번역기·번역 확장을 거친 텍스트가 들어가면 키워드가 한글로 바뀐다 — 칸 정본은 레포, 붙여넣기 전 SHA-256 대조** |
 | 사고 기록 5 | push 직전 `pull --rebase` 로 커밋 SHA 가 바뀌어 슬롯·포인터가 미푸시 SHA(3c71af8)를 가리킨 채 한 번 푸시됨 → 1aab419 로 정정(내용 diff 0, 미설치 상태라 영향 없음). **교훈: 다른 커밋의 SHA 를 박는 커밋은 그 SHA 를 먼저 push 해 확정한 뒤 만든다.** CI 조상 게이트가 이후 재발을 막는다 |
 
@@ -66,9 +67,9 @@
 | 항목 | 값 |
 |---|---|
 | 사전 버전 / REV | **v4.2.21** / `e30d4d2` (2026-10-31, `_text` 8,781 · `_textScoped` 1,362) — 이전 v4.2.20 `4069893` — 포인터 `data/hc-ko-app-rev.json` 의 `rev` 가 정한다(봇 `ko-app-pointer.yml` 전진) |
-| 로더 | stable **v4.18.1** / `a2e759686d74626c9d08c7785c16f1fceb337f32` · next **v4.19.0** / `3bc900d` (캐너리 `r6JD…`, 2026-10-31). 내장 `REV_BUILTIN` = `3b82727`(v4.2.7, 소킹분) |
+| 로더 | **v4.19.0** / `3bc900d0da3c010a442d336f26f150b9084a7d4d` — stable = next (2026-10-31 승격). 이전 stable v4.18.1 `a2e7596`. 내장 `REV_BUILTIN` = `3b82727`(v4.2.7, 소킹분) |
 | 어댑터 | `js/hc-confirm-adapter.js` — 로더와 같은 커밋에서 부트스트랩이 주입 |
-| 부트스트랩 (엣지) | **v1.2.0** / `047b5293f6a85d70d8140edf7108848b1558f7d7` — `workers/hc-ko-edge/wrangler.toml` `BOOTSTRAP_SHA`. app.hyperclass.ai 모든 HTML(비로그인 포함) `<head>` 맨 앞 |
+| 부트스트랩 (엣지) | **v1.3.0** / `3bc900d0da3c010a442d336f26f150b9084a7d4d` (2026-10-31 배포, Worker 버전 b60d5e58) — 이전 v1.2.0 `047b529` — `workers/hc-ko-edge/wrangler.toml` `BOOTSTRAP_SHA`. app.hyperclass.ai 모든 HTML(비로그인 포함) `<head>` 맨 앞 |
 | 부트스트랩 (에이전시 슬롯) | **v1.0.0** / `c25c941dfe4cee25495a225c8c577f534aec6946` — Custom JS 칸 1줄. 엣지가 있으면 `if (window.__hcBoot) return` 가드로 **무동작**(파일만 받음). 엣지 OFF(DNS 회색) 시의 폴백 경로 |
 | 엣지 Worker | `hc-ko-edge` v0.3.0 (베일·`__hcPtr` 스냅샷·preload·부트스트랩) · `hc-ko-telemetry` v0.5 (`/r`·`/report`) |
 | 레거시 DOM 레이어 | **은퇴 2026-10-29 03:4x UTC** — 슬롯에서 제거. 단어 1개 항목은 로더 v4.17+ `_textScoped`(UI 크롬 한정). 롤백 = 슬롯에 `@8fabb6a/js/dashboard-ko.min.js` 줄 복구 |
