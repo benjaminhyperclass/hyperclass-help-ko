@@ -4,7 +4,7 @@
    순수 JS 칸: script 태그·꺾쇠 금지. 부트스트랩(고정 SHA)이 포털 포인터를 읽어 로더·채팅 위젯 KO 를 주입한다. CDN 이 막히면 베일만 걷는다. */
 (function () {
   var s = document.createElement('script');
-  s.src = 'https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@3c71af8bb18c5d5b7f225445e8c1105d0a36ae7b/js/hc-portal-bootstrap.js';
+  s.src = 'https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@028b3156bd591ae56d9d1fe099cacda1841b3c8d/js/hc-portal-bootstrap.js';
   s.async = false;
   s.onerror = function () { try { document.documentElement.setAttribute('data-hc-ko', 'fail'); } catch (e) {} };
   (document.head || document.documentElement).appendChild(s);

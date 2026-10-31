@@ -21,7 +21,7 @@
 
 | 칸 | 파일 | SHA-256 (2026-10-31) |
 |---|---|---|
-| Client Portal → Settings → Branding → Advanced → **Custom JS** | `js/portal-slot.js` | `f7cef085e0c2c05dce6db26792092ce2bc27cac00d124b3010c6bd885d313187` |
+| Client Portal → Settings → Branding → Advanced → **Custom JS** | `js/portal-slot.js` | `11c946065a347360232f86c9391fdbb7c0f3f774757f80f886cee9ce38bf3b45` |
 | 같은 화면 → **Custom CSS** | `css/portal-custom.css` | `b01556235c26deb90beab6a4dcdb18eb2dae390d977d0294663afee3153971ac` |
 
 - Custom JS 칸은 **순수 JS** 다. script 태그를 넣지 않는다. 꺾쇠(`<`) 문자가 하나라도 있으면 새니타이저가 잘라 내고 `new Function` 검증 실패로 **주입 전체가 빠진다**(DECISIONS 2026-08-22). 레포 파일은 CI 가 무손실 검사로 막는다.
@@ -35,7 +35,7 @@
 3. 저장 → **새 탭 + 5분 뒤** `community.hyperclass.ai/login` (번역 확장 끈 브라우저 또는 시크릿 창).
 4. 콘솔 확인:
    ```js
-   __hcPortalBoot.status()   // version '1.0.1', channel 'next'(canaryHosts), ref 3c71af8…, gave null, error null
+   __hcPortalBoot.status()   // version '1.0.1', channel 'next'(canaryHosts), ref 028b315…, gave null, error null
    __hcPortal.status()       // version '4.0.1', applied true, dictVersion '4.0.0'(PR #10 머지·포인터 rev 갱신 후 — 그 전엔 '3.0.0'), veil '1', error null
    ```
 5. 오너 화면 확인: `/dashboard` · `/courses` · 코스 상세 · 레슨 · 커뮤니티 피드 · 채널 · 멤버 · 이벤트 · 리더보드 · 계정 설정 — 남은 영문을 목록으로.
