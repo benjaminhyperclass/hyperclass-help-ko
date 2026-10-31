@@ -4,7 +4,7 @@
 
     python3 scripts/login-check.py                       # data/reports/login-check/latest.{md,json} 갱신
     python3 scripts/login-check.py --screens             # 같은 폴더에 YYYY-MM-DD-<화면>.png 도 저장
-    python3 scripts/login-check.py --only app            # app.hyperclass.ai 만 (portal 만: --only portal)
+    python3 scripts/login-check.py --only app            # app.hyperclass.ai 만 (--only portal / --only pay)
 
 화면별로 html lang, 로더 상태(__hcKoApp / __hcPortal), 화면 텍스트(innerText)에 남은 영문 UI 단어를 모은다.
 innerText 는 DOM 글자라 CSS ::after 덧씌우기는 보이지 않는다 — 카탈로그(로더)가 실제로 바꿨는지를 본다.
@@ -31,6 +31,8 @@ TARGETS = [
     ('portal', 'login', 'https://community.hyperclass.ai/login'),
     ('portal', 'forgot', 'https://community.hyperclass.ai/forgot-password'),
     ('portal', 'signup', 'https://community.hyperclass.ai/signup'),
+    # 결제 페이지(작업지시서 v1 8절 E5) — hyperclass.ai 공개 결제 링크. 열기만 한다: 폼 입력·클릭·제출·결제 절대 금지
+    ('pay', 'payment-link', 'https://links.hyperclass.ai/payment-link/6ae596a700921ddbe8ee08a6'),
 ]
 # 영문으로 세지 않는 토큰 — 브랜드·고유명·약어·이메일 예시 조각
 ALLOW = {'hyperclass', 'google', 'sso', 'otp', 'crm', 'ai', 'pdf', 'url', 'id', 'rsvp', 'gif', 'kollab', 'gokollab'}
@@ -40,6 +42,8 @@ STATUS_JS = """() => {
   try { const b = window.__hcBoot && window.__hcBoot.status(); if (b) r.boot = { version: b.version, source: b.source, channel: b.channel, ref: String(b.ref || '').slice(0, 7) }; } catch (e) {}
   try { const p = window.__hcPortal && window.__hcPortal.status(); if (p) r.portal = { version: p.version, applied: p.applied, rev: String(p.rev || '').slice(0, 7), dict: p.dictVersion }; } catch (e) {}
   try { const pb = window.__hcPortalBoot && window.__hcPortalBoot.status(); if (pb) r.portalBoot = { version: pb.version, channel: pb.channel, gave: pb.gave }; } catch (e) {}
+  try { const y = window.__hcPay && window.__hcPay.status(); if (y) r.pay = { version: y.version, applied: y.applied, rev: String(y.rev || '').slice(0, 7), termsFixed: y.termsFixed, gave: y.gave }; } catch (e) {}
+  r.title = document.title;
   r.text = document.body ? document.body.innerText : '';
   return r;
 }"""
@@ -90,7 +94,10 @@ def render(rows, day):
         if 'error' in r:
             L.append(f"| {r['app']} | {r['screen']} | — | — | ❌ {r['error']} | — | — |")
             continue
-        if r['app'] == 'portal':
+        if r['app'] == 'pay':
+            y = r.get('pay')
+            loader = f"pay {y.get('version')} applied={y.get('applied')} terms={y.get('termsFixed')} · 탭 '{r.get('title')}'" if y else f"결제 로더 없음(엣지 미주입) · 탭 '{r.get('title')}'"
+        elif r['app'] == 'portal':
             p = r.get('portal')
             loader = f"portal {p.get('version')} applied={p.get('applied')} rev {p.get('rev')}" if p else '포털 로더 없음(슬롯 미설치)'
         else:
@@ -103,7 +110,7 @@ def render(rows, day):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument('--only', choices=['app', 'portal'])
+    ap.add_argument('--only', choices=['app', 'portal', 'pay'])
     ap.add_argument('--screens', action='store_true')
     a = ap.parse_args()
     day = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%d')
@@ -112,7 +119,9 @@ def main():
     prev_p = os.path.join(OUT, 'latest.json')
     prev = json.load(open(prev_p, encoding='utf-8')) if os.path.exists(prev_p) else {}
     cur = {'date': day, 'rows': rows, 'total': sum(r.get('englishCount', 0) for r in rows)}
-    regress = bool(prev) and cur['total'] > prev.get('total', 0)
+    # 회귀 = 직전에도 있던 화면의 영문 수가 늘었을 때(화면을 새로 추가해 합계가 느는 것은 회귀가 아니다)
+    pmap = {(x.get('app'), x.get('screen')): x.get('englishCount', 0) for x in prev.get('rows', [])}
+    regress = any((r.get('app'), r.get('screen')) in pmap and r.get('englishCount', 0) > pmap[(r.get('app'), r.get('screen'))] for r in rows)
     json.dump(cur, open(prev_p, 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     md = render(rows, day)
     open(os.path.join(OUT, 'latest.md'), 'w', encoding='utf-8').write(md)

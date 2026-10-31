@@ -21,6 +21,7 @@
     "channel": "stable",
     "ref": "3bc900d"
    },
+   "title": "",
    "english": [],
    "englishCount": 0,
    "hangul": true
@@ -45,6 +46,7 @@
     "channel": "stable",
     "ref": "3bc900d"
    },
+   "title": "",
    "english": [],
    "englishCount": 0,
    "hangul": true
@@ -69,6 +71,7 @@
     "channel": "stable",
     "ref": "3bc900d"
    },
+   "title": "",
    "english": [],
    "englishCount": 0,
    "hangul": true
@@ -79,6 +82,7 @@
    "url": "https://community.hyperclass.ai/login",
    "lang": "en",
    "path": "/login",
+   "title": "Sign in | 하이퍼클래스",
    "english": [
     "Email",
     "Enter",
@@ -107,6 +111,7 @@
    "url": "https://community.hyperclass.ai/forgot-password",
    "lang": "en",
    "path": "/forgot-password",
+   "title": "Forgot password | 하이퍼클래스",
    "english": [
     "Email",
     "Forgot",
@@ -137,6 +142,7 @@
    "url": "https://community.hyperclass.ai/signup",
    "lang": "en",
    "path": "/signup",
+   "title": "Sign up | 하이퍼클래스",
    "english": [
     "Already",
     "Email",
@@ -178,7 +184,59 @@
    ],
    "englishCount": 48,
    "hangul": true
+  },
+  {
+   "app": "pay",
+   "screen": "payment-link",
+   "url": "https://links.hyperclass.ai/payment-link/6ae596a700921ddbe8ee08a6",
+   "lang": "",
+   "path": "/payment-link/6ae596a700921ddbe8ee08a6",
+   "title": "FastPayDirect Payment Link",
+   "english": [
+    "By",
+    "Email",
+    "First",
+    "Last",
+    "Monthly",
+    "Name",
+    "PG",
+    "Pay",
+    "Powered",
+    "Products",
+    "Recurring",
+    "Starter",
+    "Subtotal",
+    "Taxes",
+    "Total",
+    "You",
+    "accordance",
+    "after",
+    "allow",
+    "always",
+    "by",
+    "can",
+    "cancel",
+    "charge",
+    "confirming",
+    "due",
+    "for",
+    "future",
+    "in",
+    "month",
+    "payments",
+    "subscription",
+    "terms",
+    "their",
+    "to",
+    "today",
+    "trial",
+    "with",
+    "you",
+    "your"
+   ],
+   "englishCount": 49,
+   "hangul": true
   }
  ],
- "total": 97
+ "total": 146
 }

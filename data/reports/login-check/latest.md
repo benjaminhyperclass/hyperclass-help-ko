@@ -10,3 +10,4 @@
 | portal | login | `/login` | en | 포털 로더 없음(슬롯 미설치) | 26 | Email, Enter, New, Password, Reset, Sign, access, account, code, here, in, password, secure, to, up, with, your |
 | portal | forgot | `/forgot-password` | en | 포털 로더 없음(슬롯 미설치) | 23 | Email, Forgot, Recover, Reset, Sign, We'll, access, account, email, in, link, now, password, reset, send, this, to, with, your |
 | portal | signup | `/signup` | en | 포털 로더 없음(슬롯 미설치) | 48 | Already, Email, Enter, Full, Password, Set, Sign, Use, We'll, Your, access, account, an, and, at, characters, code, confirmation, email, few |
+| pay | payment-link | `/payment-link/6ae596a700921ddbe8ee08a6` |  | 결제 로더 없음(엣지 미주입) · 탭 'FastPayDirect Payment Link' | 49 | By, Email, First, Last, Monthly, Name, PG, Pay, Powered, Products, Recurring, Starter, Subtotal, Taxes, Total, You, accordance, after, allow, always |
