@@ -15,6 +15,7 @@ v4 사전은 중첩 카탈로그라 그 게이트에 걸리지 않으므로 이 
   C7 _text 안전성
   C12 _text 단어 1개 키 금지 (2026-10-08 벤자민 결정 — 전 서브계정 개방 후 고객 태그·단계명 치환 방지)
   C13 _textScoped 형식 (v4.17 — UI 크롬 한정 단어 1개 레이어: 키는 단어 1개·DNT 아님·_text 와 중복 아님)
+  C14 GHL 지원 전화번호 잔존 (2026-10-31 작업지시서 v1 A3 — +1 888-732-4197 이 '하이퍼클래스' 연락처로 노출되던 6건 재발 방지)
 
 위반이 있으면 sys.exit(1). 경고만 하고 통과시키지 않는다.
 
@@ -224,7 +225,7 @@ def main():
     text = core.get('_text') or {}
     scoped = core.get('_textScoped') or {}
 
-    v = {c: [] for c in ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11', 'C12', 'C13')}
+    v = {c: [] for c in ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11', 'C12', 'C13', 'C14')}
 
     # ── C1 화이트라벨 ──────────────────────────────────────────
     for src, key, ko in rows:
@@ -345,6 +346,14 @@ def main():
         if why:
             v['C13'].append({'key': k[:40], 'ko': ko[:40], 'why': why})
 
+    # ── C14 GHL 지원 전화번호 ─────────────────────────────────
+    # whitelabel 은 브랜드명만 바꾼다. 원 제품의 미국 지원번호(tel: 링크 포함)가 '하이퍼클래스 지원팀' 문구 옆에 남으면
+    # 고객이 GHL 로 전화하게 된다. 연락처는 하이퍼클래스 것으로만(결정 ②).
+    GHL_PHONE = re.compile(r'888[\s.)-]*732[\s.-]*4197|tel:\+?1?\s*\(?888')
+    for src, key, ko in list(rows) + [('_text', k, t) for k, t in text.items()]:
+        if isinstance(ko, str) and GHL_PHONE.search(ko):
+            v['C14'].append({'src': src, 'key': key[:70], 'ko': ko[:90]})
+
     # ── C8 도메인에 한글 혼입 ──────────────────────────────────
     for src, key, ko in rows:
         for m in DOMAIN_RE.finditer(ko):
@@ -415,6 +424,7 @@ def main():
         'C11': '옵트아웃 게이트 유실',
         'C12': '_text 단어 1개 키',
         'C13': '_textScoped 형식',
+        'C14': 'GHL 지원 전화번호 잔존',
     }
     for g in gate_rows:
         mark = '✅' if g['ok'] else ('❌' if g['hard'] else '⏳ 다음 빌드에서 반영')
@@ -424,14 +434,14 @@ def main():
     print()
     print(f'{"검사":<6}{"항목":<26}{"위반":>8}')
     print('-' * 42)
-    for c in ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11', 'C12'):
+    for c in ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11', 'C12', 'C13', 'C14'):
         print(f'{c:<6}{LABEL[c]:<24}{len(v[c]):>8,}')
     print('-' * 42)
     total = sum(len(x) for x in v.values())
     print(f'{"합계":<30}{total:>8,}')
     print()
 
-    for c in ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11', 'C12'):
+    for c in ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C7', 'C8', 'C9', 'C10', 'C11', 'C12', 'C13', 'C14'):
         if not v[c]:
             continue
         print(f'── {c} {LABEL[c]} ({len(v[c]):,}건) ' + '─' * 20)
@@ -454,7 +464,7 @@ def main():
     def blocking_rows(c):
         return [x for x in v[c] if x.get('src') != 'ref(미배포)']
 
-    HARD = ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C8', 'C9', 'C10', 'C11', 'C12', 'C13')
+    HARD = ('C1', 'C2', 'C3', 'C4', 'C5', 'C6', 'C8', 'C9', 'C10', 'C11', 'C12', 'C13', 'C14')
     blocking = sum(len(blocking_rows(c)) for c in HARD)
     shelved = sum(len(v[c]) for c in HARD) - blocking
     if blocking:
