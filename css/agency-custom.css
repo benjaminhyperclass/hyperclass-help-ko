@@ -1,10 +1,23 @@
 /* ==============================================================
    Hyperclass — GHL 로그인/가입 페이지 한글화 Custom CSS
    적용 위치: Agency Settings > Company > Whitelabel > Custom CSS
-   버전: 1.3.0 (2026-08-22)
+   버전: 2.0.0 (2026-10-31)
+   정본: 레포 css/agency-custom.css — 칸을 바꾸기 전 이 파일과 SHA-256 대조
 
-   ⚠️ 이 칸은 "순수 CSS" 입니다. <style> 태그를 넣지 마세요.
-      (Custom JS 칸은 정반대로 <script> 태그가 필요합니다 — 헷갈리기 쉬움)
+   ── v1.3.0 → v2.0.0 변경점 (작업지시서 v1 A4) ─────────────────
+   [변경] "CSS-ONLY 한국어 텍스트 교체" 절(#1~#10, font-size:0 + ::after) 전체 삭제.
+          로그인 화면 문구는 이제 로더 v4.19 가 vue-i18n 카탈로그로 한국어를 넣는다
+          (비로그인 PREAUTH 라우트). OTP·SSO·계정 선택·오류 등 모든 상태가 함께 한국어가 된다.
+   [BUG]  비밀번호 재설정 화면에 "계정에 로그인하세요"·"로그인" 이 뜨던 문제 — 화면 구분 없는
+          고정 문구 덮어쓰기가 원인. 절 삭제로 해소.
+   [BUG]  약관 안내문·재설정 완료 메시지가 보이지 않던 문제 — v1.3.0 의 .foot-note::전 /
+          .h6::후 (의사 요소명이 한글로 번역돼 무효)가 ::after 를 못 만들고, 짝인 font-size:0 만
+          살아 원문까지 투명했다. 절 삭제로 디자인 절의 0.75rem / 0.875rem 이 다시 적용된다.
+   [유지] 환영 문구 1개 — 카탈로그에 없는 하이퍼클래스 고유 문구라 CSS 에 남긴다(결정 ③).
+          합쇼체 "하이퍼클래스에 오신 것을 환영합니다", 이메일+비밀번호 입력이 함께 있는 로그인 폼에만.
+   [이동] 제목 모양(22px·700·--hc-dark)을 .heading2::after 에서 .heading2 로. 반응형의 ::after 규칙 삭제.
+   ⚠️ 교체 순서: 로더 v4.19 가 stable 로 승격되고 비로그인 새 탭에서 한국어가 확인된 **뒤에만**
+      이 판으로 바꾼다. 먼저 바꾸면 로그인 화면이 영어가 된다.
 
    ── v1.2.0 → v1.3.0 변경점 ──────────────────────────────────
    [BUG] @import 가 :root 뒤에 있어 브라우저가 무시 → Pretendard 가
@@ -27,12 +40,9 @@
    [FIX] 폰트 스택을 --hc-font 변수로 통합 (기존 40여 회 중복).
 
    ── 알려진 제약 ─────────────────────────────────────────────
-   · 접근성: font-size:0 + ::after 방식은 스크린리더가 원문(영문)과
-     대체문(한글)을 모두 읽습니다. 근본 해결은 JS 경로뿐입니다.
-   · 로그인 화면에서 Custom JS 가 실행되는지 재확인 권장.
-     콘솔에서 typeof window.__hcKoApp 이 "object" 로 나오면
-     이 파일의 텍스트 치환 블록 전체를 걷어내고 _text 사전으로
-     옮기는 편이 훨씬 견고합니다.
+   · 문구는 로더(JS)가 넣는다. 로더가 꺼지면(?hcko=off, 포인터 off) 로그인 화면은 영어로
+     보인다 — 의도된 동작(킬스위치가 곧 전면 영어).
+   · 환영 문구는 ::before 라 스크린리더가 읽을 수 있다(장식이 아니라 인사말).
    · :has() 사용 — Chrome 105+ / Safari 15.4+ / Firefox 121+ 필요.
    · 한글이 깨져 보이면 GHL 이 CSS 를 UTF-8 로 서빙하지 않는 것이므로
      content 값을 유니코드 이스케이프(\D55C \AE00 …)로 바꾸세요.
@@ -173,6 +183,11 @@ div.hl_login--body {
 .hl_login--body .heading2 {
   font-family: var(--hc-font) !important;
   letter-spacing: -0.02em;
+  /* v2.0.0: v1 의 .heading2::after 가 맡던 제목 모양을 원문(카탈로그 한국어)에 직접 건다 */
+  font-size: 22px !important;
+  font-weight: 700 !important;
+  line-height: 1.3 !important;
+  color: var(--hc-dark) !important;
 }
 
 .hl_login--body .h6 {
@@ -320,7 +335,7 @@ div.hl_login--body {
    (사용자는 로그인 버튼이 먹통인 것처럼 느낌) 이메일 칸 에러는
    내용과 무관하게 항상 "이메일을 입력해주세요." 로 표시됐습니다.
    에러는 종류가 유한하지 않으므로 CSS 치환에 부적합합니다.
-   한글화가 필요하면 JS 의 _text 사전에서 처리하세요.
+   v2.0.0 부터 에러 문구도 로더 v4.19 의 카탈로그(login.emailRequired 등)가 한국어로 넣습니다.
    ============================================================ */
 .hl_login .text-red-600,
 .hl_login .text-danger {
@@ -345,189 +360,20 @@ div.hl_login--body {
   .hl_login--body .heading2 {
     font-size: 20px !important;
   }
-  .hl_login--body .heading2::after {
-    font-size: 20px !important;
-  }
 }
 
 /* ==============================================================
-   ★★★ CSS-ONLY 한국어 텍스트 교체 ★★★
-
-   원리: font-size:0 으로 원문을 접고 ::after content 로 한국어 표시.
-   레이아웃은 ::after 가 만들어내므로 한글 길이에 맞게 잡힙니다.
-
-   ⚠️ 여기 있는 문구는 "고정 문자열" 입니다. 해당 위치에 다른 상태의
-      메시지가 재사용되면 엉뚱한 문구가 나옵니다. GHL 업데이트 후에는
-      로그인 / 비밀번호 재설정 / 가입 세 화면을 모두 눈으로 확인하세요.
+   환영 문구 (결정 ③ — 카탈로그에 없는 하이퍼클래스 고유 문구)
+   이메일 입력과 비밀번호 입력이 **둘 다** 있는 로그인 폼에만 보인다.
+   비밀번호 재설정(이메일만)·설정/변경(비밀번호만)·OTP·계정 선택 화면에는 뜨지 않는다.
    ============================================================== */
-
-/* ---- 1. 환영 메시지 (카드 상단) ---- */
-.hl_login--body .login-card-heading::before {
-  content: "하이퍼클래스에 오신 걸 환영해요";
+.hl_login--body:has(input[name="email"], input[type="email"]):has(input[name="password"], input[type="password"]) .login-card-heading::before {
+  content: "하이퍼클래스에 오신 것을 환영합니다";
   display: block;
   font-size: 0.8125rem;
   color: var(--hc-primary);
   font-weight: 500;
   margin-bottom: 6px;
   letter-spacing: -0.01em;
-  font-family: var(--hc-font);
-}
-
-/* ---- 2. "Sign into your account" → "계정에 로그인하세요" ---- */
-.hl_login--body .heading2 {
-  font-size: 0 !important;
-  line-height: 0 !important;
-  color: transparent !important;
-}
-
-.hl_login--body .heading2::after {
-  content: "계정에 로그인하세요";
-  font-size: 22px;
-  font-weight: 700;
-  color: var(--hc-dark);
-  letter-spacing: -0.02em;
-  font-family: var(--hc-font);
-  display: block;
-  line-height: 1.3;
-}
-
-/* ---- 3. "Email" 라벨 → "이메일" ----
-   v1.2.0 의 :first-child 위치 의존을 :has() 로 교체.
-   DOM 순서가 바뀌어도 이메일 칸의 라벨만 정확히 잡습니다. */
-.hl_login .hl-text-input-container:has(input[name="email"], input[type="email"]) .hl-text-input-label,
-.hl_login .form-group:has(input[name="email"], input[type="email"]) .hl-text-input-label {
-  font-size: 0 !important;
-}
-
-.hl_login .hl-text-input-container:has(input[name="email"], input[type="email"]) .hl-text-input-label::after,
-.hl_login .form-group:has(input[name="email"], input[type="email"]) .hl-text-input-label::after {
-  content: "이메일";
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: var(--hc-text);
-  font-family: var(--hc-font);
-}
-
-/* ---- 4. "Password" 라벨 → "비밀번호" ----
-   name 과 type 을 모두 봅니다. 눈 아이콘으로 표시/숨김을 토글하면
-   type 이 text 로 바뀌므로 type 만 보면 라벨이 영문으로 되돌아갑니다. */
-.hl_login .hl-text-input-container:has(input[name="password"], input[type="password"]) .hl-text-input-label,
-.hl_login .form-group:has(input[name="password"], input[type="password"]) .hl-text-input-label {
-  font-size: 0 !important;
-}
-
-.hl_login .hl-text-input-container:has(input[name="password"], input[type="password"]) .hl-text-input-label::after,
-.hl_login .form-group:has(input[name="password"], input[type="password"]) .hl-text-input-label::after {
-  content: "비밀번호";
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: var(--hc-text);
-  font-family: var(--hc-font);
-}
-
-/* ---- 5. "Forgot password?" → "비밀번호를 잊으셨나요?" ---- */
-.hl_login a.forgot-password {
-  font-size: 0 !important;
-}
-
-.hl_login a.forgot-password::after {
-  content: "비밀번호를 잊으셨나요?";
-  font-size: 0.8125rem;
-  font-weight: 600;
-  color: var(--hc-primary);
-  font-family: var(--hc-font);
-}
-
-/* ---- 6. "Sign in" 버튼 → "로그인" ---- */
-.hl_login .button-holder button[type="submit"] {
-  font-size: 0 !important;
-}
-
-.hl_login .button-holder button[type="submit"]::after {
-  content: "로그인";
-  font-size: 0.9375rem;
-  font-weight: 600;
-  color: var(--hc-white);
-  font-family: var(--hc-font);
-  letter-spacing: -0.01em;
-}
-
-/* 로딩 스피너 등 아이콘 폰트가 font-size:0 에 같이 접히지 않게 복구 */
-.hl_login .button-holder button[type="submit"] i,
-.hl_login .button-holder button[type="submit"] svg,
-.hl_login .button-holder button[type="submit"] [class*="icon"] {
-  font-size: 1rem !important;
-}
-
-/* ---- 7. "Or Continue with" → "또는 다른 방법으로 로그인" ---- */
-.hl_login .mt-6 .text-gray-500 {
-  font-size: 0 !important;
-}
-
-.hl_login .mt-6 .text-gray-500::after {
-  content: "또는 다른 방법으로 로그인";
-  font-size: 0.8125rem;
-  color: var(--hc-text-muted);
-  font-family: var(--hc-font);
-}
-
-/* ---- 8. "Sign in with Google" → "Google 계정으로 로그인" ---- */
-.hl_login #wl_google_login_button {
-  font-size: 0 !important;
-}
-
-.hl_login #wl_google_login_button .icon-google3,
-.hl_login #wl_google_login_button svg,
-.hl_login #wl_google_login_button img {
-  font-size: 1rem !important;
-}
-
-.hl_login #wl_google_login_button::after {
-  content: "Google 계정으로 로그인";
-  font-size: 0.875rem;
-  font-weight: 500;
-  color: #374151;
-  font-family: var(--hc-font);
-}
-
-/* ---- 9. 약관 안내 → 한국어 (링크는 클릭 가능하게 유지) ----
-   v1.2.0 은 .foot-note a 까지 font-size:0 으로 접어서
-   이용약관 / 개인정보처리방침 링크가 보이지도, 눌리지도 않았습니다.
-   링크 라벨 자체는 GHL 이 렌더링하므로 영문으로 남습니다. */
-.hl_login .foot-note {
-  font-size: 0 !important;
-}
-
-.hl_login .foot-note::전 {
-  content: "로그인하시면 다음 약관에 동의하는 것으로 간주해요";
-  display: block;
-  font-size: 0.75rem;
-  color: var(--hc-text-muted);
-  font-family: var(--hc-font);
-  margin-bottom: 4px;
-}
-
-.hl_login .foot-note a {
-  font-size: 0.75rem !important;
-}
-
-.hl_login .foot-note a + a::전 {
-  content: " · ";
-  color: var(--hc-text-muted);
-  font-weight: 400;
-}
-
-/* ---- 10. 비밀번호 재설정 안내 메시지 ----
-   ⚠️ .h6 가 다른 상태(2FA 안내 등)에도 쓰이면 이 문구가 잘못 뜹니다.
-      재설정 화면 외에 .h6 가 나타나는 곳이 있는지 확인하세요. */
-.hl_login--body .h6 {
-  font-size: 0 !important;
-}
-
-.hl_login--body .h6::후 {
-  content: "비밀번호 재설정 링크를 이메일로 보냈어요.";
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: #000;
   font-family: var(--hc-font);
 }
