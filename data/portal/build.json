@@ -1,0 +1,33 @@
+{
+ "extracted": "2026-10-31T05:30:12Z",
+ "source": "https://community.hyperclass.ai/login (비로그인, 헤드리스 Playwright, 무쿠키)",
+ "namespaces": 63,
+ "keys": 5393,
+ "locales": [
+  "en",
+  "da",
+  "de",
+  "es",
+  "fi",
+  "fr-CA",
+  "fr-FR",
+  "it",
+  "nl",
+  "no",
+  "pt-BR",
+  "pt-PT",
+  "sv"
+ ],
+ "locale": "en",
+ "en_sha256": "c0e554c2c43c32f26da6a364ba5181500c48ca0a4bec8329dcc1fb1470c4a4b5",
+ "cpContainers": [
+  "cp-siteCustomHeader",
+  "cp-root-container",
+  "cp-auth-footer",
+  "cp-siteCustomFooter"
+ ],
+ "note": "오너 세션 10-30 실측은 5,357키(작업지시서). 차이는 GHL 카탈로그 갱신 또는 집계 기준 차이 — 텔레메트리로 추적",
+ "entryModule": "https://preview-internal.clientclub.net/_nuxt-clientportal/DDSGwuF2.js",
+ "changeSignal": "entryModule 파일명(해시)이 바뀌면 포털 빌드가 바뀐 것 — 이때 en.json 재추출(S1 과 같은 방식)",
+ "ssr": "비로그인 HTML 에 #cp-siteCustomFooter 컨테이너 포함(SSR). data-cp-custom-code 스크립트는 하이드레이션 뒤 DOM 에 있음(1,382자)"
+}
