@@ -2,6 +2,9 @@
 
 > **규칙: 매 배포 라운드 종료 시 이 파일을 갱신한다.** `data/DECISIONS.md`(결정)와 짝이 되는 **현재 상태** 파일이다.
 > 새 세션은 이 파일 → `PLAN-*.md` 순으로 읽고 시작한다. 기억에 의존해 재개하지 않는다.
+> **규칙: 라이브 검증 전 크롬 번역 확장(`hyperclass-ko-ext` 등)이 꺼져 있는지 먼저 확인한다.** 확장이 켜진 화면은 고객 화면이 아니다(10-29 ⑥ 오판의 원인). 가능하면 **헤드리스 Playwright(무쿠키·확장 없음) 결과를 기준**으로 삼고, 사람 브라우저 확인은 보조로 둔다. 슬롯 변경 검증은 새 탭 + 5분 뒤(사고 기록 4).
+
+**진행 중 라운드** 2026-10-31~ 커뮤니티·코스·로그인 한글화 — 계획·진행은 `PLAN-portal-login.md`, 원 지시서 `WORKORDER-portal-login-v1.md`
 
 **갱신** 2026-10-28 (한글화 2.0 1단계 완료·2단계 코드 완료(배포 대기) · 부트스트랩 v1.0.0 — 로더 SHA 도 포인터로 · 확인입력 어댑터 v1.0.0 · 로더 v4.12.0(REV_BUILTIN 3b82727) · 사전 v4.2.8 보류 제외 2건 확정 · **슬롯 1줄째 `@c25c941…/js/hc-bootstrap.js` 교체 완료 · 라이브 검증 완료 · loader.stable=05f9cf7 승격**)
 
@@ -36,26 +39,40 @@
 | 2026-10-29 ⑤ | **인앱 문구 신고**: 로더 v4.18 — 화면 글자를 Alt+Shift+클릭 → 원문·부모 요소·라우트를 Worker `/report` 로(세션당 20건, 토스트 확인). Worker v0.5 `/report` + digest `reports`. 일일 집계가 `data/telemetry/reports.json` 누적 + 이슈 "문구 신고" 코멘트. 처리 규칙: 단어 1개 → `_textScoped`, 그 외 → `_text`/카탈로그, 반영 후 reports.json 에서 삭제 |
 | 사고 기록 4 | 레거시 은퇴 직후의 "연락처 한국어 확인"은 **GHL 이 캐시한 옛 Custom JS(레거시 포함)** 를 보고 한 오판. 새 탭(13:14 KST)에서 머리글 영어 확인 → 원인: `_textScoped` 조상 탐색 3단계인데 GHL 표 머리글 텍스트는 th 아래 4단계+ → **v4.18.1(깊이 8)** 을 stable 로 바로 올려 수정(13:3x KST, 새 탭 한국어 확인). 노출: 약 40분간 표 머리글·툴바 단어 영어. 교훈: 슬롯 변경 검증은 **반드시 새 탭 + 5분 뒤** |
 | 2026-10-29 ⑥ | **커뮤니티 트랙(community.hyperclass.ai) 범위 조정**: 오너 계정 실측 — 클라이언트 포털·커뮤니티가 GHL 네이티브 ko 로케일로 거의 전부 한국어. 잔존은 배지 안내·코스 필터·Loyalty 등 12건(manual-dict 등재, hc-dict 재빌드)과 상대 시각("2 days ago"·"1/10 lessons", 패턴형 — 정확 일치 사전으로 불가). 부트스트랩·포인터·텔레메트리 이식은 **보류**: 플랫폼이 오너/관리자에겐 Custom Code 를 주입하지 않아 라이브 검증 불가 + 잔존이 적어 투자 대비 효과 낮음. 사전은 이미 raw@main 으로 슬롯 교체 없이 갱신됨 |
+| 2026-10-30 ⑥ 정정 | **⑥ 의 판단은 틀렸다 — 커뮤니티 트랙 보류를 뒤집는다**(작업지시서 v1). ① "GHL 네이티브 ko 로케일로 거의 전부 한국어"는 **벤자민 크롬의 번역 확장이 DOM 을 바꾼 화면**이었다. 확장 제거 후 포털은 사이드바·제목·버튼 전부 영어. 2026-10-31 헤드리스 무쿠키 실측: `community.hyperclass.ai/login` 의 i18n 로케일 13개(da·de·en·es·fi·fr-CA·fr-FR·it·nl·no·pt-BR·pt-PT·sv)에 **ko 없음**, en 외 12개는 0키, en 63 ns · 5,393키. ② "오너·관리자에겐 Custom Code 미주입"은 **그룹 슬롯에만** 해당한다. **포털 레벨 슬롯**(Client Portal → Settings → Branding → Advanced → Custom JS, `#cp-siteCustomFooter > script[data-cp-custom-code=footer]`)은 오너 세션과 비로그인 `/login` 양쪽에 들어간다(10-31 비로그인 DOM 에서 1,382자 확인) → 오너가 직접 검증 가능, 포털 로그인 화면까지 한 슬롯으로 덮는다. 후속: `PLAN-portal-login.md` 트랙 B |
 | 2026-10-29 ⑦ | **교차 출처 iframe(AI Studio vibe 빌더) 결정 대기**: Custom JS 로는 원리상 불가. 선택지 ⓐ 영어 수용(권장 — 확장은 고객에게 안 닿음) ⓑ 벤자민 본인용 크롬 확장 유지 ⓒ GHL 에 로케일 요청. 벤자민 결정 필요 |
 | 2026-10-29 주기 | **번역 라운드 주기 2주로 조정**(벤자민): `ko-translate-round.yml` 매주 월 10:47 KST 기동, 짝수 ISO 주만 실행(수동 Run workflow 는 항상). 다음 자동 라운드 = 다음 짝수 주 월요일 |
 | 다음 손 | 없음(자동). EN 풀이 차면 2주마다(짝수 주 월) 라운드 PR → 자동 리뷰 → Claude 가 QC 후 머지 → 벤자민은 PR 에서 용어만 훑고 머지. 즉시 돌리려면 운영 계정에서 대시보드·AI 스튜디오·통화·리포팅 화면을 새 탭으로 몇 번 열면 풀이 빨리 찬다 → Actions "번역 라운드" Run workflow |
 
 ## 배포 좌표
 
+> 2026-10-31 현행화(트랙 D). 이전 표(로더 v4.11.0 · 2줄 슬롯 · 레거시 핀)는 git 이력(`git show bf833aa:docs/STATE.md`)에 있다.
+
 | 항목 | 값 |
 |---|---|
-| 사전 버전 / REV | **v4.2.7** / `3b8272791e0280c079f663e722ad826343d8724a` (strings 102,718 · _text 8,770) — 포인터가 정한다. 봇 커밋 881d9a3 로 자동 전진(2026-10-08). ⚠️ 내장 REV_BUILTIN 은 c9879e0(단어 1개 키 포함)이라 **포인터를 아직 못 받은 첫 방문 1회**만 옛 사전으로 뜬다 — 다음 로더 교체 때 REV_BUILTIN 을 3b82727 로 올린다 |
-| 로더 버전 / SHA | **v4.11.0** / `45e5a5e13757aecce678f63f7ec47bce9325d28e` (ALLOW=[] 전 서브계정 · 에이전시 화면 제외 · 원격 킬스위치 `off` · 내장 REV_BUILTIN=c9879e0) |
-| Custom JS 슬롯에 실제 들어있는 로더 SHA | `0fcf256` (v4.9.2, 2026-10-08 라이브 수집 `_meta.loader` 로 재확인 — 76c557f 교체는 실시되지 않음) → **`45e5a5e` (v4.11.0) 교체 완료 2026-10-08** (76c557f 는 건너뜀). 슬롯 1줄째 `HC_I18N_EXCLUDE` 명시 — 미결 #8 해소 |
-| 레거시 DOM 레이어 핀 | ~~`@8fabb6a/js/dashboard-ko.min.js`~~ **은퇴 2026-10-29 03:4x UTC** — 슬롯은 부트스트랩 1줄. 단어 1개 항목 1,362건은 로더 v4.17 `_textScoped`(UI 크롬 한정) 가 담당. 롤백 = 슬롯 2줄째 복구(`@8fabb6a/js/dashboard-ko.min.js`) |
-| CDN 삼중 대조 | core / apps / loader 모두 CDN = raw = local = git (SHA-256), `immutable`, CORS `*` (2026-09-09) |
+| 사전 버전 / REV | **v4.2.20** / `40698931f9c68b0657af778a91290a6382962103` (strings 102,718 · `_text` 8,776 · `_textScoped` 1,362) — 포인터 `data/hc-ko-app-rev.json` 의 `rev` 가 정한다(봇 `ko-app-pointer.yml` 전진) |
+| 로더 | **v4.18.1** / `a2e759686d74626c9d08c7785c16f1fceb337f32` — 포인터 `loader.stable` = `loader.next` (캐너리 `r6JD…`). 내장 `REV_BUILTIN` = `3b82727`(v4.2.7, 소킹분) |
+| 어댑터 | `js/hc-confirm-adapter.js` — 로더와 같은 커밋에서 부트스트랩이 주입 |
+| 부트스트랩 (엣지) | **v1.2.0** / `047b5293f6a85d70d8140edf7108848b1558f7d7` — `workers/hc-ko-edge/wrangler.toml` `BOOTSTRAP_SHA`. app.hyperclass.ai 모든 HTML(비로그인 포함) `<head>` 맨 앞 |
+| 부트스트랩 (에이전시 슬롯) | **v1.0.0** / `c25c941dfe4cee25495a225c8c577f534aec6946` — Custom JS 칸 1줄. 엣지가 있으면 `if (window.__hcBoot) return` 가드로 **무동작**(파일만 받음). 엣지 OFF(DNS 회색) 시의 폴백 경로 |
+| 엣지 Worker | `hc-ko-edge` v0.3.0 (베일·`__hcPtr` 스냅샷·preload·부트스트랩) · `hc-ko-telemetry` v0.5 (`/r`·`/report`) |
+| 레거시 DOM 레이어 | **은퇴 2026-10-29 03:4x UTC** — 슬롯에서 제거. 단어 1개 항목은 로더 v4.17+ `_textScoped`(UI 크롬 한정). 롤백 = 슬롯에 `@8fabb6a/js/dashboard-ko.min.js` 줄 복구 |
+| 제외 로케이션 | 포인터 `excludeLocations` = `[1r0pJRd1cQQ5DZsjSbc9]` → 부트스트랩이 `window.HC_I18N_EXCLUDE` 로 세움(미결 #8 해소). 로더 내장 폴백도 같은 값 |
+| CDN 삼중 대조 | 부트스트랩·로더·사전 모두 jsDelivr `@40자 SHA` = raw = local (SHA-256), `immutable`, CORS `*` |
 
-Custom JS 칸 (Agency Whitelabel → Custom JavaScript) — **실제 슬롯은 아래 2줄뿐이다.** `HC_I18N_EXCLUDE` 선언 줄은 없고, 제외 로케이션은 두 레이어의 하드코딩 폴백(`HC_EXCLUDE_FALLBACK` / 레거시 `hcEx()`)에 의존한다(미결 #8).
+Custom JS 칸 (Agency Whitelabel → Custom JavaScript) — 2026-10-29 레거시 줄 제거 후 (벤자민 확인 기준):
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@45e5a5e13757aecce678f63f7ec47bce9325d28e/js/hc-ko-app-loader.js"></script>
-<script src="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@8fabb6a/js/dashboard-ko.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@c25c941dfe4cee25495a225c8c577f534aec6946/js/hc-bootstrap.js"></script>
 ```
+
+(`<script>window.HC_I18N_EXCLUDE=[…]</script>` 줄이 남아 있어도 무해 — 포인터와 같은 값이면 결과가 같다.)
+
+**부트스트랩 이중 로드 판정 (2026-10-31, 트랙 D)** — 엣지 `047b529`(v1.2.0) ↔ 슬롯 `c25c941`(v1.0.0) 차이는 **의도된 것은 아니었지만 무해**하다.
+근거: ① 엣지 스크립트는 `<head>` 맨 앞의 동기 `<script src>` 라 GHL 이 Custom JS 를 XHR 로 주입하는 시점(콜드 ≈4초)보다 항상 먼저 실행된다.
+② 부트스트랩 첫 줄 `if (window.__hcBoot) return;` 가 두 번째 실행을 막아 로더·어댑터는 1회만 주입된다(10-31 무쿠키 실측: `__hcBoot.status()` source `edge`, version 1.2.0).
+③ 엣지가 꺼지면 슬롯 v1.0.0 이 단독으로 돌며, v1.1·v1.2 에서 더해진 것(엣지 포인터·raw 재시도)만 빠진다 — 기능 저하일 뿐 장애는 아니다.
+→ `wrangler.toml` 주석의 "슬롯 1줄째와 같은 값"을 정정한다. 폴백 기능까지 같게 하려면 **벤자민이 슬롯 SHA 를 엣지와 같은 값으로 교체**(선택, A2 의 부트스트랩 v1.3 이후 그 SHA 로 한 번에).
 
 ## 라이브 확인값 (`__hcKoApp.status()`)
 
@@ -70,14 +87,17 @@ Custom JS 칸 (Agency Whitelabel → Custom JavaScript) — **실제 슬롯은 �
 
 ※ 종전에 적었던 "4.9.1 확인" 행은 실제 라이브 검증이 아니라 raw 재현값이었으므로 삭제했다.
 
-콘솔 판정 스크립트: `scripts/verify-deploy.js` (EXPECT 4.10.0 / c9879e0 / 9105 · revSource 표시). 슬롯 교체 직후 첫 로드는 내장 81a235c 라 rev FAIL 이 정상 — 새로고침 후 재실행.
+| **2026-10-29 (레거시 은퇴 · v4.18.1)** | 4.18.1 | `4069893` (edge) | 1 | 8,776 (+scoped 1,362) | 연락처·대화·기회·캘린더 새 탭 육안 한국어(사고 기록 4 이후 재확인) · 텔레메트리 부팅 4.18.1/a2e7596 | Claude in Chrome · 텔레메트리 |
+
+콘솔 판정 스크립트: `scripts/verify-deploy.js` (EXPECT 4.18.1 / 4069893 / 8776 — 2026-10-31 갱신, PR 승인 대기). 갱신 직후 첫 로드는 옛 rev 일 수 있다(`revNext`) — 새로고침 후 재실행.
 
 ## 게이트
 
-- `ALLOW = []` — **전 서브계정**(`/v2/location/<id>/…`) (v4.11, 2026-10-08 벤자민 지시). 슬롯 교체 전까지 라이브는 여전히 r6JD 한 곳
+- `ALLOW = []` — **전 서브계정**(`/v2/location/<id>/…`) (v4.11, 2026-10-08 벤자민 지시). 라이브 전 고객 적용 중
+- 비로그인 라우트(`/` 로그인·`/forgot_password` 등)는 **v4.18.1 까지 범위 밖**(`location:null` → `suspended:true`, 10-31 무쿠키 실측). v4.19 에서 PREAUTH 목록으로 연다(`PLAN-portal-login.md` A2)
 - 원격 킬스위치: `data/hc-ko-app-rev.json` 의 `"off": true` → 다음 로드부터 전 고객 v4 중단
-- 제외 `1r0pJRd1cQQ5DZsjSbc9` — 슬롯에 `HC_I18N_EXCLUDE` 선언이 **없어** 두 레이어의 하드코딩 폴백으로만 동작 중(미결 #8)
-- **에이전시 라우트(`/agency_dashboard` `/sub-accounts` `/snapshots` `/reselling`)는 v4 범위 밖** — v4.11 부터 빈 ALLOW 도 `/v2/location/` 한정. 그 화면 한국어는 레거시 레이어가 친 것.
+- 제외 `1r0pJRd1cQQ5DZsjSbc9` — 포인터 `excludeLocations` → 부트스트랩이 `window.HC_I18N_EXCLUDE` 로 세움(미결 #8 해소, 10-28). 로더 내장 폴백도 같은 값
+- **에이전시 라우트(`/agency_dashboard` `/sub-accounts` `/snapshots` `/reselling`)는 v4 범위 밖** — v4.11 부터 빈 ALLOW 도 `/v2/location/` 한정. 레거시 은퇴(10-29) 뒤로 에이전시 화면은 **영어**다 — 고객 비노출이라 범위 밖(작업지시서 v1 결정 ⑤, 기록만).
 - **교차 출처 iframe(워크플로우 `client-app-automation-workflows`, AI Studio `leadgen-vibe-ai-builder` 등)은 Custom JS 로 불가** — 크롬 확장(`~/Downloads/hyperclass-ko-ext`, `ghl-i18n-ko.json`+manual 사전) 트랙만 닿는다.
 
 ## AI 스튜디오 (/vibe) — 2026-10-08
@@ -94,14 +114,15 @@ Custom JS 칸 (Agency Whitelabel → Custom JavaScript) — **실제 슬롯은 �
 | 1 | `scripts/verify-deploy.js` EXPECT 갱신 (A) | ✅ 451b683 커밋 · v4.10 의미로 재갱신 76c557f |
 | 2 | `%[A-Za-z_]+%` 플레이스홀더 검사 (B) | ✅ 1ec2e19 커밋, CI 초록 |
 | 3 | CI 'REV↔사전 일치' 구조적 빨간불 (C) | ✅ 해소 — REV 포인터 방식(76c557f). validate 는 포인터·내장 REV 실존만 하드 게이트, 전진은 `ko-app-pointer.yml`(validate 성공 workflow_run) |
-| 4 | 킬스위치 범위 | `?hcko=off` / `__hcKoApp.off()` 는 v4 만 끈다. 레거시 `dashboard-ko@8fabb6a` 는 계속 동작 → 전면 영어 복귀는 Custom JS 3줄째 제거로만 가능 |
+| 4 | 킬스위치 범위 | ✅ 레거시 은퇴(10-29)로 해소 — `?hcko=off` / `__hcKoApp.off()` / 포인터 `"off": true` 가 곧 전면 영어 |
 | 5 | `hcEx()` 게이트를 `build-dashboard-ko.py` 템플릿에 반영 | C11 이 감시 중(템플릿·소스 ✅, min 은 다음 빌드) — 빌드 트리거(en.json 개행 토글) 전에 확인 |
-| 6 | 스테일 핀 `8fabb6a` 유지 | 운영 사전 11,810건, @main 은 37,395건이지만 미반영분 98% 를 v4 가 커버 → 핀 이동은 레거시 축소·재빌드와 한 번에 |
+| 6 | 스테일 핀 `8fabb6a` | ✅ 레거시 은퇴(10-29)로 소멸 — 롤백 경로로만 남음 |
 | 7 | Managed Agents 표기 잔존 | `0 Managed Agents`(가변 숫자) — `_text` 정확 일치 한계 |
-| 8 | `HC_I18N_EXCLUDE` 는 로더 폴백에 의존 중 → ✅ 2026-10-28 포인터 `excludeLocations` 를 부트스트랩이 전역으로 세움 | 슬롯에 `<script>window.HC_I18N_EXCLUDE=[…]</script>` 를 명시할지 **벤자민 결정**. 명시하면 로더 재배포 없이 배열만 고쳐 제외 계정을 바꿀 수 있고, 안 하면 제외 변경 = 두 레이어 재배포 |
+| 8 | `HC_I18N_EXCLUDE` | ✅ 2026-10-28 포인터 `excludeLocations` 를 부트스트랩이 전역으로 세움 — 제외 변경 = 포인터 커밋 1개. 슬롯 선언 줄은 불필요 |
 | 9 | `_text` 11건 → 사전 4.2.6 | ✅ c9879e0 push → validate ✅ → ko-app-pointer 가 jsDelivr 대조 후 4ed156d 로 전진. **사람 손 0회** |
 | 10 | 운영 규칙: `REV_BUILTIN` 은 소킹된 사전만 | 첫 방문·Cache Storage 없는 브라우저는 내장 REV 로 부팅하므로 갓 올린 사전을 내장하면 롤백이 늦게 닿는다. 큰 갱신 때만 올리고 그때 슬롯 교체 |
 | 11 | 사전 push 직후 다른 push 금지(약 2분) | validate 가 cancel-in-progress 로 취소되면 포인터가 전진하지 않는다 → validate 를 workflow_dispatch 로 재실행하면 이어짐 |
+| 12 | 에이전시 부트스트랩 슬롯 `c25c941`(v1.0.0) ↔ 엣지 `047b529`(v1.2.0) | 무해 판정(배포 좌표 절). 폴백 정렬은 벤자민 선택 — A2 부트스트랩 v1.3 SHA 로 한 번에 |
 
 ## 알려진 잔존 영문 (번역 대상 아님 또는 대응 불가)
 
@@ -113,6 +134,7 @@ Custom JS 칸 (Agency Whitelabel → Custom JavaScript) — **실제 슬롯은 �
 ## 관련 파일
 
 - `data/DECISIONS.md` — 확정/기각 결정 (2026-09-09 Managed Agents→관리형 에이전트 [확정])
-- `DEPLOY-v4.md` — 설치·라이브 확인 절차 (상단 배너: REV 갱신과 슬롯 교체는 한 세트)
-- `PLAN-superagents.md` — 이번 두 라운드의 계획·진행 기록
+- `DEPLOY-v4.md` — 설치·라이브 확인 절차 (v4.12+ 부트스트랩 1줄 · 로더도 포인터)
+- `PLAN-portal-login.md` — **진행 중** 커뮤니티·코스·로그인 라운드(작업지시서 v1)
+- `PLAN-superagents.md` — 2026-09-09 두 라운드의 계획·진행 기록
 - `data/reports/2026-09-09-superagents-ko-report.md`, `…-v2-report.md` — 라운드 보고서

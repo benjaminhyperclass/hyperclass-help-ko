@@ -11,7 +11,8 @@ routes = [
 ]
 
 [vars]
-# 부트스트랩 커밋 SHA (슬롯 1줄째와 같은 값). 바꾸면 wrangler deploy.
+# 부트스트랩 커밋 SHA. 엣지가 먼저 실행되므로 이 값이 실제로 도는 부트스트랩이다(슬롯 1줄째는 가드로 무동작 — 엣지 OFF 시 폴백).
+# 슬롯과 같을 필요는 없다(2026-10-31 판정, docs/STATE.md 배포 좌표). 바꾸면 wrangler deploy.
 BOOTSTRAP_SHA = "047b5293f6a85d70d8140edf7108848b1558f7d7"
 # 포인터(raw) 엣지 캐시 초. 포인터 커밋 → 이 시간 안에 전 고객 반영.
 POINTER_TTL = "60"

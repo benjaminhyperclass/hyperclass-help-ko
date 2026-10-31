@@ -21,6 +21,14 @@ on:
       - '_source/hc-ko-app.pretty.json'
       - '_source/hc-ko-app-reference.json'
       - 'js/hc-ko-app-loader.js'
+      # 부트스트랩·어댑터도 배포 산출물이다(포인터 loader.files) — 빠지면 꺾쇠·문법 게이트가 안 돈다
+      - 'js/hc-bootstrap.js'
+      - 'js/hc-confirm-adapter.js'
+      # 포털(ClientClub) 트랙 — 로더·부트스트랩·슬롯 원문 (2026-10-31 작업지시서 v1)
+      - 'js/hc-portal-*.js'
+      - 'js/portal-slot.js'
+      # 에이전시·포털 Custom CSS 정본 (슬롯 교체 전 레포 파일과 칸 내용 SHA-256 대조)
+      - 'css/*.css'
       - 'data/hc-ko-app-rev.json'
       - '.github/workflows/ko-app-pointer.yml'
       # C11(옵트아웃 게이트 유실 감시) 대상 — 여기서 빠지면 게이트가 사라져도 CI 가 안 돈다
@@ -175,11 +183,18 @@ jobs:
           node --check js/hc-ko-app-loader.js
           node --check js/hc-bootstrap.js
           node --check js/hc-confirm-adapter.js
+          # 포털 트랙 파일(있을 때만) — 포털 슬롯은 ClientClub customJs 라 꺾쇠 금지가 더 엄격하다(DECISIONS 2026-08-22)
+          portal=$(ls js/hc-portal-*.js js/portal-slot.js 2>/dev/null || true)
+          for f in $portal; do node --check "$f"; done
           # 슬롯·부트스트랩 경유 파일은 꺾쇠 문자 금지 (GHL 새니타이저가 '<' 에서 자른다)
-          for f in js/hc-bootstrap.js js/hc-confirm-adapter.js; do
+          for f in js/hc-bootstrap.js js/hc-confirm-adapter.js $portal; do
             if grep -q '<' "$f"; then echo "❌ $f 에 '<' 문자가 있습니다"; exit 1; fi
           done
-          echo "✅ node --check 통과 (loader·bootstrap·confirm-adapter) · 꺾쇠 0" >> $GITHUB_STEP_SUMMARY
+          # 포털 customJs 무손실 검사식(DECISIONS 2026-08-22): 태그 제거 정규식을 통과해도 내용이 같아야 한다
+          for f in $portal; do
+            node -e 'const c=require("fs").readFileSync(process.argv[1],"utf8");if(c.replace(/<\/?[^>]+(>|$)/g,"").trim()!==c.trim()){console.error("❌ 무손실 검사 실패: "+process.argv[1]);process.exit(1)}' "$f"
+          done
+          echo "✅ node --check 통과 (loader·bootstrap·confirm-adapter${portal:+ · portal}) · 꺾쇠 0" >> $GITHUB_STEP_SUMMARY
 
       # ── REV 포인터 ↔ 사전 (v4.10 부터) ─────────────────────────
       # 로더는 data/hc-ko-app-rev.json 의 rev 로 사전을 받는다(슬롯 SHA 는 로더만 고정).
