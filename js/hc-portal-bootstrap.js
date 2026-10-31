@@ -1,4 +1,7 @@
-/* Hyperclass 한글팩 — 포털 부트스트랩 v1.0.0 (2026-10-31, 작업지시서 v1 B3)
+/* Hyperclass 한글팩 — 포털 부트스트랩 v1.0.1 (2026-10-31, 작업지시서 v1 B3)
+ * v1.0.1 (적대적 리뷰 반영): 저장된 포인터가 6시간보다 오래되면 새 포인터를 최대 2초 기다린다(원격 off·롤백이
+ *        한 번 늦게 닿는 것을 6시간 안으로 묶는다. 실패·시간 초과면 저장본으로 진행). raw 재시도는 raw 가 text/plain·nosniff 라
+ *        브라우저가 실행을 거부할 수 있다 — 실패가 빨라 베일은 걷히므로 남겨 둔다.
  * 클라이언트 포털(ClientClub · Nuxt 3) 전용. 포털 레벨 Custom JS 칸(Client Portal → Settings → Branding → Advanced)에는
  * 이 파일을 jsDelivr 고정 SHA 로 붙이는 몇 줄(js/portal-slot.js)만 넣는다. 이 파일은 그 뒤로 슬롯을 다시 만지지 않게 한다.
  *
@@ -21,13 +24,14 @@
   'use strict';
   if (window.__hcPortalBoot) return;
 
-  var VERSION = '1.0.0';
+  var VERSION = '1.0.1';
   var REPO = 'benjaminhyperclass/hyperclass-help-ko';
   var CDN = 'https://cdn.jsdelivr.net/gh/' + REPO + '@';
   var RAW = 'https://raw.githubusercontent.com/' + REPO + '/';
   var POINTER_URL = RAW + 'main/data/hc-portal-rev.json';
   var DEFAULT_FILES = ['js/hc-portal-loader.js', 'js/community-chat-widget-ko.js'];
   var LS_KEY = 'hcPortalPtr', CH_KEY = 'hcKoCh', CH_TTL = 7 * 86400000;
+  var PTR_MAX_AGE = 6 * 3600000, PTR_WAIT_MS = 2000;
   var SHA_RE = /^[0-9a-f]{7,40}$/;
   var DEBUG = /[?&]hcko=debug/.test(location.search);
 
@@ -119,11 +123,23 @@
     }).catch(function (e) { state.error = 'pointer:' + (e && e.message); log('포인터 갱신 실패', e && e.message); });
   }
 
-  // 1) 저장된 포인터 — 왕복 0
+  // 1) 저장된 포인터 — 신선하면 왕복 0, 오래됐으면 새 포인터를 잠깐 기다린다
   var cached = null;
   try { cached = JSON.parse(lsGet(LS_KEY) || 'null'); } catch (e) { cached = null; }
   var sel = cached && pick(cached.d);
-  if (sel) { inject(sel, 'cache'); refresh(); return; }
+  if (sel && PTR_MAX_AGE > Date.now() - (+cached.ts || 0)) { inject(sel, 'cache'); refresh(); return; }
+  if (sel) {
+    var done = false;
+    var timer = setTimeout(function () { if (done) return; done = true; log('포인터 대기 초과 — 저장본으로'); inject(sel, 'cache-stale'); refresh(); }, PTR_WAIT_MS);
+    fetchPointer().then(function (d) {
+      var s3 = pick(d); if (!s3) throw new Error('bad pointer');
+      save(d); if (done) return; done = true; clearTimeout(timer); inject(s3, 'pointer');
+    }).catch(function (e) {
+      state.error = 'pointer:' + (e && e.message);
+      if (done) return; done = true; clearTimeout(timer); inject(sel, 'cache-stale');
+    });
+    return;
+  }
 
   // 2) 첫 방문 — 포인터를 기다린다. 실패하면 베일만 걷는다(영어로 정상 동작).
   fetchPointer().then(function (d) {

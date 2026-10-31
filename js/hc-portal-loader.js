@@ -1,4 +1,8 @@
-/* Hyperclass 한글팩 — 클라이언트 포털 로더 v4.0.0 (2026-10-31, 작업지시서 v1 B3 · v3.0.1 승계)
+/* Hyperclass 한글팩 — 클라이언트 포털 로더 v4.0.1 (2026-10-31, 작업지시서 v1 B3 · v3.0.1 승계)
+ * v4.0.1 (적대적 리뷰 반영): REV_BUILTIN 을 main 에 있는 커밋으로(브랜치 전용 커밋은 GC 위험) · 포인터 rev 사전이 404 면
+ *        REV_BUILTIN 으로 재시도 · 깨진 캐시 항목 삭제 · _text 를 UI 크롬(nav·aside·header·메뉴·탭·버튼·label·th) 안으로 한정
+ *        (게시글·코스·멤버 이름이 'Home'·'New' 같은 문구와 같아도 안 바뀌게) · i18n 인스턴스가 다시 만들어지면 다시 찾아 병합
+ *        회원의 언어 선택은 v3 와 같이 덮어쓴다(포털 en 외 로케이션은 비어 있고 목적이 한국어 — 2026-10-31 수용 결정)
  * 포털 부트스트랩(js/hc-portal-bootstrap.js)이 포털 포인터(data/hc-portal-rev.json)의 loader 커밋으로 이 파일을 주입한다.
  *
  * 동작
@@ -22,12 +26,13 @@
   'use strict';
   if (window.__hcPortal) return;
 
-  var VERSION = '4.0.0';
+  var VERSION = '4.0.1';
   var REPO = 'benjaminhyperclass/hyperclass-help-ko';
   var CDN = 'https://cdn.jsdelivr.net/gh/' + REPO + '@';
   var RAW = 'https://raw.githubusercontent.com/' + REPO + '/';
-  // 포인터를 못 받은 경우(부트스트랩 없이 직접 붙인 경우 등)의 안전망 — 검증된 사전 커밋만 넣는다
-  var REV_BUILTIN = '8413843b48ede78ecd441b6d9178b979d44c34ed';
+  // 포인터를 못 받았거나 포인터 rev 의 사전을 못 받을 때의 안전망 — **main 에 있는** 검증된 사전 커밋만 넣는다(CI 가 조상 여부를 본다).
+  // 현재 0f4e2d5 = 사전 v3.0.0. 사전 v4.0 이 main 에 들어가면 다음 로더에서 올린다.
+  var REV_BUILTIN = '0f4e2d550c8451b932d23563d75d9d8664d8fc47';
   var SHA_RE = /^[0-9a-f]{7,40}$/;
   var WAIT_APP_MS = 15000;
   var PROBE = ['auth', 'email'];   // 재병합 감시 키 (en 'Email' → ko '이메일')
@@ -112,7 +117,11 @@
   }
   function watchReapply() {
     setInterval(function () {
-      if (!i18n || !dict) return;
+      if (!dict) return;
+      // 앱이 i18n 인스턴스를 다시 만들면(재마운트) 새 인스턴스를 찾아 병합한다
+      var cur = findI18n();
+      if (cur && (!i18n || cur.global !== i18n.global)) { i18n = cur; stats.remerge++; log('i18n 인스턴스 교체 → 병합'); applyI18n(); return; }
+      if (!i18n) return;
       // Nuxt head 관리가 html lang 을 'en' 으로 되돌린다(실측) — 적용 중이면 다시 세운다
       if (applied && document.documentElement.getAttribute('lang') !== 'ko') document.documentElement.setAttribute('lang', 'ko');
       try {
@@ -130,17 +139,28 @@
     }
     return false;
   }
+  // _text 는 카탈로그 밖 하드코딩 UI 문구(사이드바·메뉴 등)용이다. 본문(게시글·댓글·코스·멤버 이름)이 같은 글자여도
+  // 바뀌지 않도록 UI 크롬 요소 안에서만 적용한다.
+  var CHROME = { NAV: 1, ASIDE: 1, HEADER: 1, BUTTON: 1, LABEL: 1, TH: 1 };
+  var CHROME_ROLES = { navigation: 1, menu: 1, menuitem: 1, menubar: 1, tab: 1, tablist: 1, button: 1, banner: 1 };
+  function inChrome(node) {
+    for (var el = node.nodeType === 1 ? node : node.parentNode, d = 0; el && 10 > d; el = el.parentNode, d++) {
+      if (el.nodeType !== 1) continue;
+      if (CHROME[el.tagName] || CHROME_ROLES[el.getAttribute && el.getAttribute('role')]) return true;
+    }
+    return false;
+  }
   function trText(node) {
     var s = node.nodeValue; if (!s || !T) return;
     var t = s.trim(); if (!t) return;
-    var v = T[t]; if (v === undefined || inEditor(node)) return;
+    var v = T[t]; if (v === undefined || inEditor(node) || !inChrome(node)) return;
     node.nodeValue = s.replace(t, v); stats.textHits++;
   }
   function trAttrs(el) {
     if (!T || !el.getAttribute) return;
     for (var i = 0; ATTRS.length > i; i++) {
       var a = ATTRS[i], s = el.getAttribute(a); if (!s) continue;
-      var t = s.trim(), v = T[t]; if (v !== undefined) { el.setAttribute(a, s.replace(t, v)); stats.textHits++; }
+      var t = s.trim(), v = T[t]; if (v !== undefined && inChrome(el)) { el.setAttribute(a, s.replace(t, v)); stats.textHits++; }
     }
   }
   function pass(root) {
@@ -181,9 +201,17 @@
       return r.text();
     }).then(function (txt) { return { txt: txt, d: JSON.parse(txt) }; });
   }
-  function fetchDict() {
-    var cdn = CDN + REV + '/' + DICT_PATH, raw = RAW + REV + '/' + DICT_PATH;
+  function fetchAt(rev) {
+    var cdn = CDN + rev + '/' + DICT_PATH, raw = RAW + rev + '/' + DICT_PATH;
     return fetchJson(cdn).catch(function (e) { stats.fallback++; log('CDN 실패 — raw', e && e.message); return fetchJson(raw); });
+  }
+  function fetchDict() {
+    return fetchAt(REV).catch(function (e) {
+      if (REV === REV_BUILTIN) throw e;
+      log('포인터 rev 사전 실패 — 내장 REV 로', e && e.message);
+      REV = REV_BUILTIN; revSource = 'builtin-fallback'; BUCKET = 'hc-portal-' + REV.slice(0, 7);
+      return fetchAt(REV);
+    });
   }
   function purgeOld() {
     if (!('caches' in window)) return;
@@ -197,9 +225,13 @@
     if (!('caches' in window)) return fetchDict().then(function (r) { return r.d; });
     return caches.open(BUCKET).then(function (cache) {
       return cache.match(KEY).then(function (hit) {
-        if (hit) return hit.text().then(function (t) { return JSON.parse(t); });
+        if (hit) return hit.text().then(function (t) { return JSON.parse(t); }).catch(function () {
+          cache.delete(KEY);   // 깨진 항목은 지우고 새로 받는다
+          return fetchDict().then(function (r) { return r.d; });
+        });
         return fetchDict().then(function (r) {
-          cache.put(KEY, new Response(r.txt, { headers: { 'Content-Type': 'application/json' } })).then(purgeOld).catch(function () {});
+          // 내장 REV 로 폴백한 사전은 포인터 rev 키로 저장하지 않는다(다음 방문에 옛 사전을 새 rev 로 오인)
+          if (revSource !== 'builtin-fallback') cache.put(KEY, new Response(r.txt, { headers: { 'Content-Type': 'application/json' } })).then(purgeOld).catch(function () {});
           return r.d;
         });
       });
