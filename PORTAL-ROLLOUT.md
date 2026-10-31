@@ -25,12 +25,12 @@
 | 같은 화면 → **Custom CSS** | `css/portal-custom.css` (1,066자) | `d04e3cb972130d72bb749775e919032e3828585331e1694e2cdbeeeebd57bf43` |
 
 - Custom JS 칸은 **순수 JS** 다. script 태그를 넣지 않는다. 꺾쇠(`<`) 문자가 하나라도 있으면 새니타이저가 잘라 내고 `new Function` 검증 실패로 **주입 전체가 빠진다**(DECISIONS 2026-08-22). 레포 파일은 CI 가 무손실 검사로 막는다.
-- 대조 방법: 칸 저장값과 레포 파일을 **둘 다 끝 줄바꿈을 뺀 뒤** SHA-256 비교. 예) `python3 -c "import hashlib,sys;print(hashlib.sha256(open(sys.argv[1],encoding='utf-8',newline='').read().rstrip('\\n').encode()).hexdigest())" js/portal-slot.js`
+- 대조 방법: **포털 칸 편집기는 저장 시 코드를 자동 정렬한다** → 해시가 아니라 정규화 내용(공백 전부 제거, 따옴표 통일)으로 비교한다. 에이전시 CSS 칸처럼 끝 줄바꿈만 버리는 칸은 끝 줄바꿈을 뺀 SHA-256 으로도 된다. 예) `python3 -c "import hashlib,sys;print(hashlib.sha256(open(sys.argv[1],encoding='utf-8',newline='').read().rstrip('\\n').encode()).hexdigest())" js/portal-slot.js`
 
 ## 3. community.hyperclass.ai (r6JD) — 첫 설치 순서
 
 0. ✅ PR #10 머지(4e21458) → 포털 포인터 `rev` = 4e21458(사전 v4.0.1, 커버리지 100%) — 2026-10-31 완료(2e40929, CI 통과).
-1. **Custom JS 칸** 기존 내용(채팅 위젯 4문구 — `true/false` 가 `참/거짓`으로 번역돼 실제로는 동작하지 않던 코드, 원본은 git `42ce67c` 의 `js/portal-slot.js`)을 **전부 지우고** `js/portal-slot.js` 내용으로 교체. 위젯 KO 는 이제 부트스트랩이 레포 정상본을 붙인다.
+1. ✅ 2026-10-31 설치(Claude Chat). 옛 위젯 코드는 Custom JS 가 아니라 **Footer Code 칸**에 있었다(삭제함). **Custom JS 칸** 기존 내용(채팅 위젯 4문구 — `true/false` 가 `참/거짓`으로 번역돼 실제로는 동작하지 않던 코드, 원본은 git `42ce67c` 의 `js/portal-slot.js`)을 **전부 지우고** `js/portal-slot.js` 내용으로 교체. 위젯 KO 는 이제 부트스트랩이 레포 정상본을 붙인다.
 2. **Custom CSS 칸**에 `css/portal-custom.css` 내용을 넣는다(기존 CSS 가 있으면 그 **위에** 덧붙인다).
 3. 저장 → **새 탭 + 5분 뒤** `community.hyperclass.ai/login` (번역 확장 끈 브라우저 또는 시크릿 창).
 4. 콘솔 확인:
