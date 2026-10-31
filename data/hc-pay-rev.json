@@ -1,0 +1,15 @@
+{
+  "rev": "5533c0a7aa8c1d2b6b3239a1d463ce1987d7a414",
+  "off": false,
+  "version": "1.0.2",
+  "updated": "2026-10-31T10:30:00Z",
+  "by": "manual",
+  "_comment": "결제 페이지(links.hyperclass.ai) 한글팩 포인터(작업지시서 v1 8절). 엣지 Worker hc-ko-edge v0.4 가 raw@main 을 60초 캐시로 읽어 window.__hcPayPtr 로 넣고 loader 커밋의 js/hc-pay-loader.js 를 SRI 와 함께 붙인다. rev = 결제 사전(data/hc-ko-payments.json) 커밋. off:true = 60초 안에 주입 중단(통과). excludePaths = 한국어를 끄는 결제 링크·인보이스 ID(6자 이상, 경로 포함 판정 — Worker·로더 양쪽). SHA 는 40자, main 의 조상만(CI). 로더를 바꾸면 integrity 도 함께 바꾼다(CI 가 대조).",
+  "loader": {
+    "stable": "c3d2465977f65cf68497f365c3485974120abfc0",
+    "next": "c3d2465977f65cf68497f365c3485974120abfc0",
+    "integrity": "sha384-ajCbWDHQNxJtC68K5wixDLr68A5mMM0WKZjTaxtWESW9byyQXd18HA/pDiRzPamr",
+    "integrityNext": "sha384-ajCbWDHQNxJtC68K5wixDLr68A5mMM0WKZjTaxtWESW9byyQXd18HA/pDiRzPamr"
+  },
+  "excludePaths": []
+}

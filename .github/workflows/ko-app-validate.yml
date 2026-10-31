@@ -29,6 +29,10 @@ on:
       - 'js/portal-slot.js'
       - 'js/community-chat-widget-ko.js'
       - 'data/hc-portal-rev.json'
+      # 결제 페이지 트랙(작업지시서 v1 8절)
+      - 'data/hc-pay-rev.json'
+      - 'data/hc-ko-payments.json'
+      - 'js/hc-pay-loader.js'
       # 에이전시·포털 Custom CSS 정본 (슬롯 교체 전 레포 파일과 칸 내용 SHA-256 대조)
       - 'css/*.css'
       - 'data/hc-ko-app-rev.json'
@@ -164,6 +168,33 @@ jobs:
           echo "## 포털 포인터: $([ $fail -eq 0 ] && echo '✅ rev·loader·슬롯 SHA 실존' || echo '❌ 실존하지 않는 SHA')" >> $GITHUB_STEP_SUMMARY
           exit $fail
 
+      - name: 결제 포인터 SHA·SRI 검사 (하드 게이트)
+        if: always()
+        run: |
+          set -e
+          [ -f data/hc-pay-rev.json ] || { echo "(결제 포인터 없음)"; exit 0; }
+          fail=0
+          anc() { git merge-base --is-ancestor "$1" HEAD 2>/dev/null || { echo "❌ $2=$1 은 HEAD(main) 의 조상이 아님"; fail=1; }; }
+          rev=$(python3 -c "import json;print(json.load(open('data/hc-pay-rev.json'))['rev'])")
+          echo "$rev" | grep -qE '^[0-9a-f]{40}$' || { echo "❌ rev 형식(40자)"; fail=1; }
+          git cat-file -e "$rev:data/hc-ko-payments.json" 2>/dev/null && echo "  ✅ rev ${rev:0:7} 에 결제 사전" || { echo "❌ rev 커밋에 결제 사전 없음"; fail=1; }
+          anc "$rev" rev
+          for ch in stable next; do
+            sha=$(python3 -c "import json;print(json.load(open('data/hc-pay-rev.json'))['loader'].get('$ch',''))")
+            [ -z "$sha" ] && continue
+            echo "$sha" | grep -qE '^[0-9a-f]{40}$' || { echo "❌ loader.$ch 형식(40자)"; fail=1; continue; }
+            git cat-file -e "$sha:js/hc-pay-loader.js" 2>/dev/null || { echo "❌ loader.$ch 커밋에 js/hc-pay-loader.js 없음"; fail=1; continue; }
+            anc "$sha" "loader.$ch"
+            key=$([ "$ch" = stable ] && echo integrity || echo integrityNext)
+            want=$(python3 -c "import json;print(json.load(open('data/hc-pay-rev.json'))['loader'].get('$key',''))")
+            got="sha384-$(git show "$sha:js/hc-pay-loader.js" | openssl dgst -sha384 -binary | openssl base64 -A)"
+            if [ -n "$want" ] && [ "$want" != "$got" ]; then echo "❌ loader.$key 가 파일 해시와 다름 — 브라우저가 로더를 거부한다"; fail=1; else echo "  ✅ loader.$ch ${sha:0:7} · SRI ${want:+일치}"; fi
+          done
+          rb=$(grep -oE "var REV_BUILTIN = '[0-9a-f]{40}'" js/hc-pay-loader.js | grep -oE '[0-9a-f]{40}' || true)
+          if [ -n "$rb" ]; then git cat-file -e "$rb:data/hc-ko-payments.json" 2>/dev/null || { echo "❌ 결제 REV_BUILTIN 에 사전 없음"; fail=1; }; anc "$rb" REV_BUILTIN; fi
+          echo "## 결제 포인터: $([ $fail -eq 0 ] && echo '✅ rev·loader·SRI·REV_BUILTIN' || echo '❌ 실패')" >> $GITHUB_STEP_SUMMARY
+          exit $fail
+
       - name: 글로서리 감사 (경고)
         if: always()
         run: |
@@ -214,6 +245,7 @@ jobs:
           node --check js/hc-ko-app-loader.js
           node --check js/hc-bootstrap.js
           node --check js/hc-confirm-adapter.js
+          [ -f js/hc-pay-loader.js ] && node --check js/hc-pay-loader.js
           # 포털 트랙 파일(있을 때만) — 포털 슬롯은 ClientClub customJs 라 꺾쇠 금지가 더 엄격하다(DECISIONS 2026-08-22)
           portal=$(ls js/hc-portal-*.js js/portal-slot.js js/community-chat-widget-ko.js 2>/dev/null || true)
           for f in $portal; do node --check "$f"; done

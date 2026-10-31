@@ -7,7 +7,9 @@ main = "src/index.js"
 compatibility_date = "2026-10-01"
 
 routes = [
-  { pattern = "app.hyperclass.ai/*", zone_name = "hyperclass.ai" }
+  { pattern = "app.hyperclass.ai/*", zone_name = "hyperclass.ai" },
+  # v0.4 결제 앱(작업지시서 v1 8절). links 레코드가 DNS only(회색)인 동안은 트래픽을 받지 않는다 — Proxied 전환은 벤자민 승인 후
+  { pattern = "links.hyperclass.ai/*", zone_name = "hyperclass.ai" }
 ]
 
 [vars]
@@ -20,3 +22,6 @@ POINTER_TTL = "60"
 VEIL_MS = "2500"
 # "0" 이면 주입 안 함(킬스위치). wrangler deploy 없이 대시보드 변수 변경만으로도 됨.
 ENABLED = "1"
+# 결제 페이지 주입(v0.4): "0" 이면 결제만 끈다. 베일 최대 ms(코드 상한 1500)
+PAY_ENABLED = "1"
+PAY_VEIL_MS = "1200"
