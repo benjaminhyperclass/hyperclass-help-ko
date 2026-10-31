@@ -1,0 +1,421 @@
+{
+ "common": {
+  "subtotal": "Subtotal",
+  "cancel": "Cancel",
+  "processing": "Processing",
+  "pay": "Pay",
+  "donate": "Donate",
+  "book": "Book",
+  "submit": "Submit",
+  "error": "Something went wrong, Please try again later!",
+  "code": "Code",
+  "status": "Status",
+  "day": "day | days",
+  "week": "week | weeks",
+  "month": "month | months",
+  "year": "year | years",
+  "minute": "minute",
+  "createdAt": "Created At",
+  "apply": "Apply",
+  "remove": "Remove",
+  "free": "free",
+  "noPaymentMethod": "No valid payment method found",
+  "completedOn": "Completed on",
+  "errors": {
+   "somethingWentWrong": "Something went wrong",
+   "errorOccurred": "An error occurred"
+  },
+  "addTo": "Add to",
+  "appleWallet": "Apple Wallet",
+  "googleWallet": "Google Wallet",
+  "chars": "Chars"
+ },
+ "invoice": {
+  "INVOICE": "INVOICE",
+  "contactDetailsSection": {
+   "billedTo": "Billed to"
+  },
+  "invoiceDetailsSection": {
+   "invoiceNo": "Invoice No",
+   "issueDate": "Issue Date",
+   "dueDate": "Due Date"
+  },
+  "invoicePayButton": {
+   "paid": "Paid",
+   "pay": "Pay",
+   "processing": "Payment processing"
+  },
+  "invoiceItemsList": {
+   "itemName": "Item name",
+   "price": "Price",
+   "qty": "Qty"
+  },
+  "orderSummary": {
+   "paymentSummaryLabel": "Payment summary",
+   "amountDue": "Amount Due",
+   "taxes": "Taxes",
+   "discount": "Discount",
+   "shipping": "Shipping",
+   "tax": "Tax",
+   "includedInPrices": "included in prices",
+   "taxSummary": "{taxName} ({taxRate}% on {taxableAmount})",
+   "taxSummaryInclusive": "{taxName} ({taxRate}% - included in prices)"
+  },
+  "amountPaid": "Amount Paid",
+  "generatedOn": "Generated on",
+  "generatingInvoicePDF": "Generating invoice pdf",
+  "generatingReceiptPDF": "Generating receipt pdf",
+  "error": "OOPS, The invoice you are looking for cannot be found!",
+  "errorDraftInvoice": "Draft invoice cannot be paid",
+  "receipt": {
+   "RECEIPT": "RECEIPT",
+   "receiptNo": "Receipt No",
+   "datePaid": "Date Paid",
+   "error": "OOPS, The receipt you are looking for cannot be found!"
+  },
+  "download": {
+   "clickHere": "Click here",
+   "toDownloadPDF": "to download pdf"
+  },
+  "clickHereToMakePaymentNow": "Click here to make the payment now!",
+  "paymentProcessing": "Payment Processing",
+  "initiatedOn": "ACH payment was initiated on",
+  "paymentInProgress": "Payment in progress",
+  "PAID": "PAID",
+  "termsAndNotes": "Terms & Notes",
+  "total": "Total",
+  "partialPayment": {
+   "minAmountValidation": "Minimum amount to pay is ",
+   "amountValidation": "Amount to pay cannot be greater than pending invoice amount",
+   "amountToBePaid": "Amount to be paid",
+   "editPartiallyTooltip": "Edit to pay invoice partially",
+   "editPartiallyPlaceholder": "Enter Amount"
+  },
+  "paymentSchedule": {
+   "choosePayments": "Choose Payments",
+   "scheduleLabelWithAmount": "Schedule {number} of {total} - {suffix}",
+   "scheduleLabel": "Payment {number} of {total}",
+   "scheduleDue": "Due {dueDate}",
+   "validation": {
+    "required": "Please select atleast one payment schedule",
+    "ordered": "Please select payment schedules in order"
+   }
+  },
+  "tips": {
+   "tipLabel": "Add Tips",
+   "tipDescription": "Show this business your appreciation with an optional tip",
+   "tipCollected": "Tip Collected",
+   "inputTooltip": "Enter tip amount",
+   "tippingVaueLabel": "Tipping Value",
+   "none": "None",
+   "other": "Other"
+  },
+  "lateFees": {
+   "applicable": "Late Fees Applicable",
+   "charge": "Late Fees"
+  },
+  "miscellaneousCharges": "Miscellaneous Charges",
+  "additionalChargesApplicable": "Additional Charges Applicable",
+  "status": {
+   "draft": "Draft",
+   "sent": "Sent",
+   "paymentProcessing": "Payment processing",
+   "paid": "Paid",
+   "partiallyPaid": "Partially paid"
+  }
+ },
+ "estimates": {
+  "estimateTitle": "Estimate",
+  "estimateNo": "Estimate No",
+  "reason": "Add reason for declining",
+  "reasonLabel": "Specify Reason",
+  "acceptLabel": "Accept Estimate",
+  "rejectEstimate": "Reject Estimate",
+  "acceptDescription": "Are you sure you want to accept estimate? This action cannot be undone.",
+  "acceptedSucessfully": "You have successfully accepted the estimate",
+  "declinedEstimate": "You have successfully declined the estimate",
+  "estimateOptionLabel": "Please review the estimate to accept or reject",
+  "estimateDraftDescription": "Estimate in draft mode ! Please visit later",
+  "downloadEstimate": "Download Estimate",
+  "accepted": "Accepted",
+  "declined": "Declined",
+  "sent": "Sent",
+  "draft": "Draft",
+  "expiryDate": "Expiry Date",
+  "expiryText": "Your estimate expired {days} days ago",
+  "expired": "Expired",
+  "invoiced": "Invoiced",
+  "errorDownloadingEstimate": "Error downloading estimate",
+  "estimateIntermediaryTitle": "Estimate Accepted, generating Invoice",
+  "estimateIntermediaryDescription": "You will be redirected to the invoice for payment",
+  "invoiceRedirectTitle": "Redirecting you to Invoice",
+  "invoiceRedirectDescription": "This may take a while. Please wait",
+  "redirectModal": {
+   "redirectInvoice": "Redirecting you to Invoice",
+   "waitText": "This may take a while, please wait..."
+  },
+  "error": "OOPS, The estimate you are looking for cannot be found!"
+ },
+ "paymentLink": {
+  "error": "OOPS, The payment link you are looking for cannot be found!",
+  "productDetails": "Product Details",
+  "validation": {
+   "firstName": "First Name Required",
+   "lastName": "Last Name Required",
+   "address": "Address Required",
+   "city": "City Required",
+   "state": "State Required",
+   "countryCode": "Country Required",
+   "postalCode": "Postal code Required",
+   "phoneRequried": "Phone Number Required",
+   "phoneChars": "Phone number can only contain numbers",
+   "phoneCountryCode": "Please ensure that your phone number contains characters as per country code before proceeding",
+   "email": "Email Required",
+   "validEmail": "Please enter a valid email address",
+   "qtyRange": "Quantity should be between {minQty} and {maxQty}",
+   "selectAtLeastOneProduct": "Please select at least one product"
+  },
+  "qty": "Quantity",
+  "additionalSetupFee": "One time setup fee",
+  "afterTrialText": "After your trial ends, you will be charged",
+  "afterTrialCancellationText": "You can always cancel before then.",
+  "subscriptionTextPrefix": "By confirming your subscription, you allow",
+  "subscriptionTextSuffix": "to charge you for future payments in accordance with their terms. You can always cancel your subscription.",
+  "firstName": "First Name",
+  "lastName": "Last Name",
+  "email": "Email",
+  "phone": "Phone",
+  "address": "Address",
+  "addressLine1": "Address Line 1",
+  "addressLine2": "Address Line 2",
+  "city": "City",
+  "state": "State",
+  "country": "Country",
+  "postalCode": "Postal Code",
+  "paymentSuccessful": "Payment received successfully! Thank you for choosing our services. Your transaction is confirmed",
+  "paymentProcessing": "Payment processing! Thank you for choosing our services. Your transaction is in process with the bank for confirmation",
+  "thanksText": "Thanks for your payment",
+  "redirected": "You are being redirected...",
+  "redirectionText": "You will be redirected shortly to",
+  "redirectionText2": "If you are not redirected automatically within {seconds} seconds,",
+  "clickHere": "click here",
+  "notification": {
+   "errorPayment": "Error in making payment",
+   "orderSuccessful": "Order placed successfully",
+   "orderInProcess": "Order is in process with the bank for confirmation",
+   "invalidCoupon": "Invalid coupon code",
+   "invalidProductsTitle": "Some products are unavailable",
+   "invalidProductsMessage": "This link has invalid products. Please contact the merchant."
+  },
+  "per": "per",
+  "then": "Then",
+  "free": "free",
+  "day": "day",
+  "days": "days",
+  "discount": "Discount (coupon)",
+  "subtotal": "Subtotal",
+  "subtotalAfterDiscount": "Subtotal after discount",
+  "taxes": "Taxes",
+  "priceAfterTrial": "{currency}{price} / {interval} after trial | {currency}{price} / {intervalCount} {interval} after trial",
+  "paypal": {
+   "multiRecurringError": "PayPal does not support multiple quantities of subscription products",
+   "zeroCheckoutError": "0 checkout is not supported using PayPal"
+  },
+  "selectProduct": "Select Product",
+  "recurringProducts": "Recurring Products",
+  "oneTimeProducts": "One Time Products",
+  "selectedProducts": "Selected Products",
+  "setupFee": "Setup Fee",
+  "total": "Total",
+  "totalAfterTrial": "Total after trial",
+  "totalDueToday": "Total due today",
+  "placeholders": {
+   "enterCouponCode": "Enter coupon code"
+  },
+  "errors": {
+   "paymentProcessError": "Error in making payment process",
+   "invalidPaymentLink": "Invalid payment link",
+   "somethingWentWrong": "Something went wrong"
+  }
+ },
+ "paymentMethod": {
+  "update": "Update",
+  "upcomingInvoicePayment": "Upcoming invoice payment",
+  "updatePaymentMethod": "Update payment method",
+  "successTitle": "Payment method was successfully updated",
+  "successMessage": "The Payment method was added to the subscription"
+ },
+ "shipstation": {
+  "apiKey": "API key",
+  "apiSecret": "API secret",
+  "shipstationLiveToken": "ShipStation Live Token",
+  "shipstationLiveTokenDescription": "Connect your ShipStation account to automatically sync orders and enable live shipping rates at checkout.",
+  "shipstationLiveTokenDescriptionNote": "Note: Customer address information at checkout is required for this feature to work properly.",
+  "apiKeyPlaceholder": "Enter your ShipStation API key",
+  "apiSecretPlaceholder": "Enter your ShipStation API secret",
+  "apiKeyRequired": "Please enter your ShipStation API key",
+  "apiSecretRequired": "Please enter your ShipStation API secret",
+  "connect": "Connect",
+  "disconnect": "Disconnect",
+  "invalidCredentials": "Invalid credentials",
+  "setupChecklist": "Setup Checklist",
+  "setupRequirementsDescription": "Before connecting, please ensure the following requirements are met in your ShipStation account",
+  "helperGuide": "Helper Guide",
+  "see": "See",
+  "shipFromLocationVerification": "I’ve added at least one 'Ship From' location in ShipStation Settings",
+  "shipFromLocationHelp": "Go to ShipStation Settings > Shipping > Ship From Locations and add at least one location",
+  "currencyMatchVerification": "I have ensured that the Platform and ShipStation account currencies match",
+  "currencyMatchHelp": "Your ShipStation account currency must match your Platform currency",
+  "packageSettingsVerification": "I have enabled the 'Package' option in Package Settings for all active carriers",
+  "packageSettingsHelp": "Go to ShipStation Settings > Shipping > Packages and ensure 'Package' is enabled for all active carriers",
+  "learnMore": "Learn more",
+  "shippingOptions": "Shipping Options",
+  "addShippingOption": "Add Shipping Option",
+  "noShippingOptionsFound": "No shipping options found",
+  "noShippingOptionsDescription": "Add Shipping Options to enable live shipping rates",
+  "edit": "Edit",
+  "delete": "Delete",
+  "errors": {
+   "fetchingData": "Error fetching data",
+   "fetchingDataGeneric": "An error occurred while fetching data",
+   "fetchingServiceCarriers": "Error fetching service carriers",
+   "fetchingServiceCarriersGeneric": "An error occurred while fetching service carriers",
+   "updatingShippingOptions": "Error updating shipping options",
+   "updatingShippingOptionsGeneric": "An error occurred while updating shipping options",
+   "savingCredentials": "Error saving credentials",
+   "savingCredentialsGeneric": "An error occurred while saving credentials",
+   "disconnectingShipStation": "Error disconnecting ShipStation",
+   "disconnectingGeneric": "An error occurred while disconnecting",
+   "deletingShippingOption": "Error deleting shipping option",
+   "deletingShippingOptionGeneric": "An error occurred while deleting shipping option",
+   "servicesNotCompatible": "Some services are not compatible with the current API key",
+   "updateCompatibleServices": "Please update the shipping options to use the compatible services",
+   "noActiveLocation": "No active location found"
+  },
+  "createEditShippingOptions": {
+   "nameRequired": "Name is required",
+   "servicesRequired": "Services is required",
+   "editShippingOption": "Edit Shipping Option",
+   "addShippingOption": "Add Shipping Option",
+   "addShippingOptionDescription": "Create a custom shipping option by selecting carrier services and setting a fallback rate. The shipping name will appear at checkout.",
+   "editShippingOptionDescription": "Edit the shipping option by selecting carrier services and setting a fallback rate. The shipping name will appear at checkout.",
+   "name": "Shipping Option Name",
+   "namePlaceholder": "Enter a name for this shipping option",
+   "services": "Search to select services",
+   "selectServices": "Select Services",
+   "noServicesFound": "No services found",
+   "fallbackValue": "Fallback Value",
+   "fallbackValueTooltip": "Used when live shipping rates can't be retrieved from the selected services.",
+   "fallbackValueInvalid": "Please enter a value greater than 0",
+   "update": "Update",
+   "create": "Create",
+   "cancel": "Cancel",
+   "errorAddingTitle": "Error while adding shipping option",
+   "errorEditingTitle": "Error while editing shipping option"
+  },
+  "createEditShippingOptionModal": {
+   "noServicesFound": "No services found"
+  },
+  "tableTitles": {
+   "shippingOption": "Shipping Option",
+   "services": "Services",
+   "fallbackValue": "Fallback Value",
+   "actions": "Actions"
+  }
+ },
+ "giftCard": {
+  "termsAndConditions": "Terms and Conditions",
+  "poweredBy": "Powered by",
+  "initials": "GC",
+  "storeName": "Gift Card Store",
+  "contact": "Contact",
+  "testDriveNotice": "Test Drive Time — Your Customers won't see this message!",
+  "pleaseSelectCard": "Please Select a Card Value",
+  "steps": {
+   "chooseCard": {
+    "title": "Choose Gift Card",
+    "description": "Choose the value for your gift card"
+   },
+   "makePayment": {
+    "title": "Make Payment",
+    "description": "Choose payment mode and pay"
+   },
+   "confirmation": {
+    "title": "Confirmation",
+    "description": "Review your gift card details after purchase"
+   },
+   "prev": "Previous"
+  },
+  "thankYou": "Thank You, {name}",
+  "paymentSuccess": "Payment of {amount} was successful! Your Order No. is {orderNumber}",
+  "downloadGiftCard": "Download Gift Card",
+  "orderNumber": "Order No.",
+  "giftCardReceiptEmailText": "A receipt and confirmation has been sent to your registered email.",
+  "giftJoyTitle": "Gift a Little Joy!",
+  "expiresOn": "Expires On",
+  "giftCardCode": "GIFT CARD CODE",
+  "placeholderCode": "XXXX-XXXX-XXXX-XXXX",
+  "selectAmount": "Select Amount",
+  "processing": "Processing...",
+  "buy": "Buy",
+  "noExpiry": "Never",
+  "footerText": "© Powered by GiftCard Store 2025",
+  "loading": "Loading gift card details...",
+  "invalidGiftCard": "The gift card you are looking for is not available",
+  "purchaseForm": {
+   "whoIsThisGiftFor": "Who is this Gift for?",
+   "yourName": "Your Name",
+   "yourEmail": "Your Email",
+   "recipientName": "Recipient Name",
+   "recipientEmail": "Recipient Email",
+   "deliveryDate": "Delivery Date",
+   "message": "Message",
+   "validation": {
+    "yourNameRequired": "Your Name Required",
+    "yourEmailRequired": "Your Email Required",
+    "recipientNameRequired": "Recipient Name Required",
+    "recipientEmailRequired": "Recipient Email Required",
+    "deliveryDateRequired": "Delivery Date Required"
+   },
+   "placeholders": {
+    "immediate": "Immediate",
+    "messageExample": "E.g This one's on me, hope you have a blast!"
+   }
+  },
+  "altText": {
+   "storeLogo": "Store Logo",
+   "locationLogo": "Location Logo",
+   "sampleQR": "Sample QR",
+   "copy": "Copy"
+  },
+  "someoneElse": "Someone Else",
+  "myself": "Myself",
+  "giftReceivingRecipient": "The Recipient who will receive the Gift.",
+  "giftWillBeSentToThisEmail": "The Gift will be sent to this Email.",
+  "sampleQrCode": "This is a sample QR code",
+  "preview": {
+   "title": "You've Got a Gift,",
+   "sampleTitle": "You've Got a Gift, {recipient_name}!",
+   "justSentYou": "just sent you a",
+   "giftCard": "gift card.",
+   "expiresOn": "Expires On",
+   "giftCardCode": "GIFT CARD CODE",
+   "code": "Code",
+   "giftCardValue": "Gift Card Value",
+   "message": "Message",
+   "sampleMessage": "{message}",
+   "redeem": "Redeem",
+   "validTill": "Gift card is valid till",
+   "havingTrouble": "Having trouble with the button?",
+   "copyAndPaste": "Just copy and paste the below URL into your browser:",
+   "view": "View",
+   "termsAndConditions": "Terms & Conditions",
+   "altText": {
+    "locationLogo": "Location logo",
+    "storeLogo": "Store logo",
+    "redeemQR": "Redeem QR",
+    "copy": "Copy"
+   }
+  }
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "extracted": "2026-10-31T09:29:15Z",
+ "source": "https://links.hyperclass.ai/payment-link/6ae596a700921ddbe8ee08a6 (hyperclass.ai 공개 링크, 비로그인 헤드리스, 폼 조작 없음)",
+ "locale": "en_US",
+ "namespaces": {
+  "common": 27,
+  "invoice": 66,
+  "estimates": 28,
+  "paymentLink": 70,
+  "paymentMethod": 5,
+  "shipstation": 68,
+  "giftCard": 73
+ },
+ "keys": 337,
+ "format": "vue-i18n 사전 컴파일 AST(minified: t0 리소스 · t1 복수형 · t2 메시지 s 정적문자열) → 평문으로 역변환해 저장. 앱은 평문 mergeLocaleMessage 를 받는다(작업지시서 실측)",
+ "entryModule": "https://storage.googleapis.com/leadgen-payment-products-preview-nuxt-assets/payments-preview/BTvgCDMm.js",
+ "title": "FastPayDirect Payment Link (document.title — 카탈로그 밖, 로더가 바꾼다)",
+ "note": "작업지시서 10-31 크롬 실측 380키 — 이번 추출 337. GHL 갱신 또는 집계 기준 차이",
+ "en_sha256": "8c60ba52c2d56a161e7bdeb087c581db969b52e365c046604443f0235c663152"
+}

@@ -102,3 +102,18 @@
   영향: 슬롯 설치(벤자민) 전엔 라이브 영향 없음
 - [~] B4 비로그인 헤드리스 E2E(실배포 산출물, 슬롯 원문 실행): /login·/forgot-password·/signup 한국어, lang=ko, 베일 1.0~2.3초. 오너 화면(대시보드·코스·피드 등)은 슬롯 설치 후 벤자민/크롬
 - [x] C `PORTAL-ROLLOUT.md` — 설치·SHA-256·고객 코드 보호(맨 위 덧붙이기)·옵트아웃(excludeHosts). 조사: GHL 공개 API 에 포털 레벨 코드 필드 없음(코스 상품 customJs 는 있음 — 보고만), 스냅샷 복제 여부 문서 미기재 → C1 벤자민 확인
+
+## 7. 트랙 E — 결제 페이지 (links.hyperclass.ai) · 작업지시서 8절 (10-31 추가)
+
+원문은 Claude Docs 작업지시서 8절(https://claude.ai/artifact/3PL8esL619o6LUdRtaee7n). **배포·DNS 전환은 하지 않고 준비되면 보고만**(벤자민 10-31).
+
+| 단계 | 산출물 | 의존 |
+|---|---|---|
+| E1 | `data/payments/en.json`(헤드리스 추출, 약 380키) → `data/hc-ko-payments.json` (기존 번역기·리뷰 도구 무수정). 합쇼체, Taxes=부가세, `paymentLink.subscriptionTextPrefix/Suffix` 는 승인안 수동 고정(자동 번역·글로서리 제외), `common.month` 쓰임새 확인 | 결제 링크 URL 1개(실측용) |
+| E2 | `js/hc-pay-loader.js`(포털 로더 v4.0.1 승계: Nuxt i18n · `en_US`+현재 로케일 · lang=ko · 재병합 · `document.title`), 포인터 `data/hc-pay-rev.json` | E1 사전 커밋(main) |
+| E3 | `hc-ko-edge` 에 `links.hyperclass.ai/*` 라우트 + 결제 앱 경로·text/html 만 주입, 3xx·비HTML·POST 통과(로컬 테스트), 베일 ≤1.5초, 고정 SHA | E2 로더 커밋 |
+| E4 | 배포 순서 문서만(Worker 배포 → 벤자민 승인 후 DNS Proxied → 새 탭) — **실행 안 함** | E3 |
+| E5 | 헤드리스로 결제 링크 영문 UI 단어 집계·S5 포함(폼 입력·제출·결제 금지), 트리거 링크 리다이렉트 유지 확인 | E2 (Worker 전엔 라우팅 주입으로) |
+
+- [ ] E1 · [ ] E2 · [ ] E3 · [ ] E4(문서) · [ ] E5
+- 열린 질문: 고객 서브계정 결제 링크도 이 도메인 → 제외 계정(1r0p…)을 페이지 데이터로 가려낼 수 있는지
