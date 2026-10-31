@@ -1,4 +1,6 @@
-/* Hyperclass 한글팩 — 클라이언트 포털 로더 v4.1.2 (2026-10-31, 작업지시서 v1 B3·B4·B5)
+/* Hyperclass 한글팩 — 클라이언트 포털 로더 v4.1.3 (2026-10-31, 작업지시서 v1 B3·B4·B5)
+ * v4.1.3: remote 병합 경로·시각 기록 — status().remotes.[이름].first = { path: 'mo'|'boot'|'poll', ms }(페이지 시작 기준), last 도.
+ *        mo = DOM 추가 감지 150ms 뒤, boot = 사전 도착 직후(마운트가 사전보다 빨랐던 경우), poll = 2초 주기(예비 경로). 병합 로직 불변.
  * v4.1.2: 사전 `_css`(문자열, 최대 8KB)를 페이지 스타일로 넣는다 — TipTap 편집기 자리표시자처럼 DOM 이 아니라 CSS(::before attr)로
  *        그려지고 편집기가 속성을 계속 다시 쓰는 문구용. 포털 CSS 칸을 다시 붙여넣지 않고 포인터로 갱신된다.
  * v4.1.1 (적대적 리뷰 반영): 규칙에 route(경로 정규식) 추가·범위는 사전에서 정확히(공개 페이지 실측) · 텍스트 일치를 먼저 보고
@@ -41,9 +43,9 @@
   'use strict';
   if (window.__hcPortal) return;
   // B5: 그룹 칸의 옛 v3.0.1 은 첫 줄에서 이 변수를 보고 멈춘다(그쪽이 나중에 실행될 때). 킬 스위치로 아래에서 빠져도 v3 는 막힌 채가 맞다.
-  if (!window.__hcKoLoader) window.__hcKoLoader = 'portal-4.1.2';
+  if (!window.__hcKoLoader) window.__hcKoLoader = 'portal-4.1.3';
 
-  var VERSION = '4.1.2';
+  var VERSION = '4.1.3';
   var REPO = 'benjaminhyperclass/hyperclass-help-ko';
   var CDN = 'https://cdn.jsdelivr.net/gh/' + REPO + '@';
   var RAW = 'https://raw.githubusercontent.com/' + REPO + '/';
@@ -80,7 +82,7 @@
         dictStrings: dict && dict._meta ? dict._meta.strings : null, textEntries: T ? Object.keys(T).length : 0,
         merges: stats.merges, remerge: stats.remerge, textHits: stats.textHits, ruleHits: stats.ruleHits, titleHits: stats.titleHits, fallback: stats.fallback,
         rules: RULES.length, v3Neutralized: stats.v3Neutralized, v3Present: !!window.__hcKo,
-        remotes: (function () { var o = {}; for (var k in remoteStats) o[k] = { merges: remoteStats[k].merges, mountId: remoteStats[k].mountId }; return o; })(),
+        remotes: (function () { var o = {}; for (var k in remoteStats) o[k] = { merges: remoteStats[k].merges, mountId: remoteStats[k].mountId, first: remoteStats[k].first || null, last: remoteStats[k].last || null }; return o; })(),
         veil: document.documentElement.getAttribute('data-hc-ko'), telemetry: JSON.parse(JSON.stringify(telemetry))
       };
     },
@@ -280,7 +282,7 @@
     }
   }
   var remoteTimer = null;
-  function scheduleRemoteScan() { if (remoteTimer) return; remoteTimer = setTimeout(function () { remoteTimer = null; scanRemotes(); }, 150); }
+  function scheduleRemoteScan() { if (remoteTimer) return; remoteTimer = setTimeout(function () { remoteTimer = null; scanRemotes('mo'); }, 150); }
   var mo = new MutationObserver(function (muts) {
     var added = false, title = false;
     for (var i = 0; muts.length > i; i++) {
@@ -334,7 +336,7 @@
   // composer 별 상태 — 같은 사전을 쓰는 마운트가 여럿이어도 서로의 감시값을 덮지 않는다
   var remoteState = typeof WeakMap !== 'undefined' ? new WeakMap() : null;
   function nsProbes(messages) { var out = []; for (var ns in messages) { var leaf = firstLeaf(messages[ns], ns); if (leaf) out.push(leaf); } return out; }
-  function scanRemotes() {
+  function scanRemotes(why) {
     if (!dict || !dict.remotes || !remoteState) return;
     var els = document.querySelectorAll('[data-v-app]');
     for (var i = 0; els.length > i; i++) {
@@ -350,6 +352,8 @@
         remoteState.set(g, { hit: hit, probes: probes, vals: probes.map(function (pk) { return safeT(g, pk); }) });
         var rs = remoteStats[hit.key] || (remoteStats[hit.key] = { merges: 0, mountId: null });
         rs.merges++; rs.mountId = el.id || null;
+        var at = { path: why || 'poll', ms: Math.round((window.performance && performance.now) ? performance.now() : 0) };
+        if (!rs.first) rs.first = at; rs.last = at;
         log('remote 병합', hit.key, el.id, loc);
       } catch (e) { log('remote 병합 실패', hit.key, e); }
     }
@@ -479,8 +483,8 @@
     if (!i18n) { err = 'no-i18n'; log('i18n 인스턴스 없음 → 텍스트 치환만'); mark('fail'); }
     else applyI18n();
     startTextLayer();
-    scanRemotes(); neutralizeV3();
-    setInterval(function () { scanRemotes(); koTitle(); }, 2000);   // i18n 이 없어도 돈다
+    scanRemotes('boot'); neutralizeV3();
+    setInterval(function () { scanRemotes('poll'); koTitle(); }, 2000);   // i18n 이 없어도 돈다
     watchReapply();
     scheduleTelemetry('start');
   }).catch(function (e) { err = 'boot:' + (e && e.message); log('boot failed', e); mark('fail'); });
