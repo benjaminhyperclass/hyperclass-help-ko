@@ -1,4 +1,15 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.18.0
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.19.0
+ * v4.19: 비로그인 화면(PREAUTH) 허용 — 로그인 `/`·비밀번호 재설정·설정·변경·SSO·토큰·데스크톱·지원·eject 로그인만 명시 목록으로 연다.
+ *        로케이션이 없으므로 제외 판정은 false(로그인 전엔 사용자를 모른다 — 작업지시서 v1 결정 ①). 외부 연동 로그인
+ *        (`/login/canny`·`/login/ideas-board`·`/login/shopify`)과 에이전시 화면은 계속 범위 밖. 로그인 직후 이동이
+ *        routeChangeEvent 를 내지 않아도 놓치지 않도록 경로 감시(0.5초)를 더했다 — 제외 계정이면 기존대로 새로고침→영어.
+ *        상태: __hcKoApp.status().preauth
+ *        안전장치(적대적 리뷰 반영): ① 로그인 화면에서는 경로가 0.8초 안정된 뒤에만 병합(로그인된 사용자의 `/` 경유 리다이렉트에서
+ *        병합하지 않도록) ② 제외 계정 새로고침 차단기 — 같은 탭에서 30초 안에 다시 새로고침하지 않고, 새로고침 직후 로드는
+ *        PREAUTH 에서 부팅하지 않는다(GHL 이 `/` 를 거쳐 가도 루프 없음) ③ PREAUTH 에서는 텔레메트리를 보내지 않는다(KV 예산)
+ *        ④ 리다이렉트 전용 경로(/login/token·/login/support·/login/desktop·/eject/login)는 목록에서 뺐다
+ *        ⑤ #app 에 새 Vue 앱이 붙으면(composer 가 바뀌면) 호스트를 다시 병합한다(종전 hostDone 은 첫 composer 만 처리)
+ *        버그 수정: 범위 밖 경로를 지나 허용 경로로 처음 들어올 때 부팅이 '적용 보류'에 빠지던 문제(onRoute 에서 suspended 해제).
  * v4.18.1: _textScoped 조상 탐색 깊이 3→8 (실측: 연락처 표 머리글이 th 아래 4단계 이상이라 v4.17 이 못 잡았다)
  * v4.18: 인앱 문구 신고 — 화면의 글자를 **Alt+Shift+클릭** 하면 그 텍스트 노드의 원문·부모 요소·라우트를 텔레메트리 Worker
  *        /report 로 보낸다(세션당 20건, 식별자 없음). 일일 집계가 data/telemetry/reports.json 과 이슈 코멘트로 모은다.
@@ -85,6 +96,24 @@
   // ▲▲▲ 단계적 배포 ▲▲▲
   var gate = ALLOW.length > 0;
 
+  // 비로그인 화면 (v4.19) — 라우터 getRoutes() 로 실재 확인한 경로 중 **화면이 있는 것만**(2026-10-31). 정확 일치,
+  // 끝 슬래시·대소문자 무시(Vue Router 와 같게). 토큰·지원·데스크톱·eject 로그인은 곧바로 리다이렉트하는 통과 경로라 뺐다 —
+  // 거기서 병합하면 도착지가 제외 계정일 때 새로고침이 하나 더 생긴다(토큰 소비 뒤 새로고침은 검증한 적 없음).
+  // ALLOW 로 좁혀 둔 상태(gate)에서는 열지 않는다 — 단계적 배포 중엔 검증한 로케이션만.
+  var PREAUTH = ['/', '/forgot_password', '/change_password', '/set_password', '/login/sso'];
+  var PREAUTH_SETTLE_MS = 800;
+  function preauth() {
+    var p = location.pathname.replace(/\/+$/, '').toLowerCase() || '/';
+    return PREAUTH.indexOf(p) >= 0;
+  }
+  // 제외 계정 새로고침 차단기 — reloadIfExcluded() 가 sessionStorage 에 시각을 남긴다.
+  // 30초 안에 남긴 기록이 있으면 ① 이 로드는 PREAUTH 에서 부팅하지 않고 ② 다시 새로고침하지 않는다(루프 주기는 수 초).
+  var RELOAD_KEY = 'hcKoExclReload', RELOAD_GUARD_MS = 30000;
+  function recentlyReloaded() {
+    try { var t = +sessionStorage.getItem(RELOAD_KEY) || 0; return t > 0 && Date.now() - t < RELOAD_GUARD_MS; } catch (e) { return false; }
+  }
+  var afterExclReload = recentlyReloaded();
+
   function remoteOff() {
     try { return localStorage.getItem('hcKoRemoteOff') === '1'; } catch (e) { return false; }
   }
@@ -105,7 +134,8 @@
     var l = locOf();
     // 빈 ALLOW 도 서브계정 라우트로 한정한다. 종전 코드는 빈 배열이면 무조건 true 라
     // 개방하는 순간 검증한 적 없는 에이전시 화면까지 v4 가 붙었다(DEPLOY-v4 표의 설명과 어긋남).
-    if (!l) return false;
+    // 로케이션 없는 화면은 PREAUTH 목록만(v4.19). 에이전시 화면은 여기서 false.
+    if (!l) return !gate && !afterExclReload && preauth();
     return !ALLOW.length || ALLOW.indexOf(l) >= 0;
   }
 
@@ -150,7 +180,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.18.1',
+    version: '4.19.0',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -161,6 +191,8 @@
       s.gate = gate;              // 화이트리스트가 걸려 있는가
       s.allow = ALLOW.slice();
       s.location = locOf();       // 지금 보고 있는 로케이션 (/v2/location/ 기준)
+      s.preauth = preauth();      // 비로그인 화면(PREAUTH 목록)인가 — v4.19
+      s.afterExclReload = afterExclReload; // 제외 계정 새로고침 직후 로드(PREAUTH 부팅 안 함)
       s.excluded = excluded();    // 서브계정 옵트아웃 — 레거시 hcEx() 와 같은 판정
       s.remoteOff = remoteOff();  // 포인터 파일의 "off": true (원격 킬스위치)
       s.allowedHere = allowed();  // 여기에 적용되는가 (excluded 가 true 면 무조건 false)
@@ -234,11 +266,12 @@
   }
 
   /* ---------- A. 호스트 ---------- */
-  var hostDone = false;
+  var hostDone = false, hostG = null;
   function setupHost() {
     if (!core) return false;
     var el = document.getElementById('app'), app = el && el.__vue_app__;
     var g = app && composerOf(app); if (!g) return false;
+    hostG = g;
     mergeInto(g, core.host, 'host');
     if (!g.__hcOrigMerge) {
       g.__hcOrigMerge = g.mergeLocaleMessage;
@@ -380,7 +413,8 @@
     // 호스트도 composer 를 못 찾는 순간이 있다. 한 번 실패로 영구 제외하면
     // 메인 앱 전체(41,997키)가 세션 내내 영어로 남는다.
     if (el.id === 'app') {
-      if (hostDone || setupHost()) { attempts.set(app, -1); return; }
+      // 같은 composer 면 이미 병합·래핑했다. 로그인 뒤 등 #app 에 새 앱이 붙으면 composer 가 달라 다시 병합한다.
+      if ((hostDone && composerOf(app) === hostG) || setupHost()) { attempts.set(app, -1); return; }
       attempts.set(app, n + 1);
       return;
     }
@@ -814,7 +848,9 @@
   var telTimer = null;
   function scheduleTelemetry(reason) {
     clearTimeout(telTimer);
-    telTimer = setTimeout(function () { sendTelemetry(reason); }, 8000);
+    // 로그인 화면은 모든 세션이 거치는 곳이라 이벤트 수만 늘고 KV 예산(DAILY_PUT_BUDGET)을 앱 화면에서 빼앗는다 (v4.19)
+    if (preauth()) return;
+    telTimer = setTimeout(function () { if (!preauth()) sendTelemetry(reason); }, 8000);
   }
 
   /* ---------- 부트스트랩 ---------- */
@@ -838,6 +874,7 @@
       // 그때 바로 적용하면 그 화면이 한국어가 되고 suspended 라 이후 새로고침도 걸리지 않는다.
       // 적용은 허용 로케이션으로 돌아올 때(resume)까지 미룬다. 사전 다운로드는 그대로 둔다.
       if (suspended || !allowed()) { deferred = true; log('부팅 중 비허용 화면으로 이동 — 적용 보류'); }
+      else if (preauth()) { deferred = true; settlePreauth(location.pathname); }
       else start();
       return load(URL_APPS, function (nd) { appsDict = nd.apps || {}; appsKeys = null; applyPendingApps(); });
     }).then(function (a) {
@@ -849,6 +886,17 @@
     }).catch(function (e) { log('boot failed', e); });
   }
   var deferred = false, hostFound = false;
+  // 로그인 화면: 경로가 PREAUTH_SETTLE_MS 동안 그대로일 때만 적용한다. 로그인된 사용자가 `/` 로 들어오면 GHL 이 곧바로
+  // 대시보드로 보내는데, 그 사이에 병합하면(되돌릴 수 없음) 도착지가 제외 계정일 때 새로고침이 하나 더 생긴다.
+  // 그 사이 경로가 바뀌면 onRoute(이벤트·감시)가 resume()/suspend() 로 이어받는다.
+  function settlePreauth(path) {
+    setTimeout(function () {
+      if (!deferred || suspended) return;
+      if (location.pathname !== path) { if (allowed() && preauth()) settlePreauth(location.pathname); return; }
+      if (!allowed()) return;
+      deferred = false; log('PREAUTH 안정 — 적용', path); start(); scanNow();
+    }, PREAUTH_SETTLE_MS);
+  }
   // 엣지 Worker 가 넣은 첫 페인트 베일. 한국어가 들어간 직후, 또는 이 화면엔 적용하지 않는다고
   // 판정한 직후 걷는다. 걷힌 시각을 __hcEdge.lifted 에 남겨 텔레메트리·검증이 플래시 길이를 잰다.
   function liftVeil(why) {
@@ -899,13 +947,19 @@
   function reloadIfExcluded() {
     if (dirty && excluded()) {
       dirty = false;
+      if (recentlyReloaded()) { log('옵트아웃 계정 — 30초 안에 이미 새로고침함, 루프 방지로 생략'); return; }
+      try { sessionStorage.setItem(RELOAD_KEY, String(Date.now())); } catch (e) {}
       log('옵트아웃 계정 — 새로고침으로 영어 복귀');
       try { location.reload(); } catch (e) {}
     }
   }
 
   function resume() {
-    if (deferred) { deferred = false; suspended = false; log('보류했던 적용 시작', locOf()); start(); scanNow(); return; }
+    if (deferred) {
+      suspended = false;
+      if (preauth()) { settlePreauth(location.pathname); return; }   // 로그인 화면끼리 이동 — 다시 안정 대기
+      deferred = false; log('보류했던 적용 시작', locOf()); start(); scanNow(); return;
+    }
     if (!suspended) return;
     suspended = false;
     try {
@@ -918,13 +972,28 @@
 
   function onRoute() {
     if (!allowed()) { suspend(); return; }
-    if (!booted) { boot(); return; }
+    // 첫 부팅 전의 suspended 는 '범위 밖을 지나왔다'는 표시일 뿐이다(mo·인터벌은 아직 없다).
+    // 그대로 boot() 하면 부팅 콜백이 suspended 를 보고 적용을 보류해, 다음 라우트 변경까지 영어로 남는다
+    // (v4.19 실측: /login/canny → / , 종전에도 에이전시 → 서브계정 첫 진입에 같은 경로). 여기서 푼다.
+    if (!booted) { suspended = false; boot(); return; }
     resume();
     scheduleTelemetry('route');
     // 라우트 이동은 앱이 통째로 갈리는 지점이라 디바운스를 기다리지 않는다.
     scheduleScan(80);
   }
   window.addEventListener('routeChangeEvent', onRoute);
+
+  // v4.19: 로그인 화면 → 로그인 직후 이동이 routeChangeEvent 를 내는지는 로그인 세션 없이 확인할 수 없다.
+  // 경로가 바뀌었는데 이벤트가 없었으면 직접 onRoute 를 부른다(제외 계정 새로고침·에이전시 중단이 걸리도록).
+  // 이벤트가 먼저 와서 lastPath 가 이미 같으면 아무것도 하지 않는다.
+  var lastPath = location.pathname;
+  window.addEventListener('routeChangeEvent', function () { lastPath = location.pathname; });
+  setInterval(function () {
+    if (location.pathname === lastPath) return;
+    lastPath = location.pathname;
+    log('경로 변경 감지(이벤트 없음)', lastPath);
+    onRoute();
+  }, 500);
 
   if (allowed()) boot();
   else {

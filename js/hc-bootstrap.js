@@ -1,4 +1,4 @@
-/* Hyperclass 한글팩 — 부트스트랩 v1.2.0 (2026-10-28)
+/* Hyperclass 한글팩 — 부트스트랩 v1.3.0 (2026-10-31)
  * Agency Settings → Company → Whitelabel → Custom Code → Custom JavaScript 칸에 **단 한 번** 붙인다.
  *
  *   script src = https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@[이 파일이 든 커밋 SHA]/js/hc-bootstrap.js
@@ -17,6 +17,10 @@
  * 포인터 `excludeLocations`: 한국어 UI 를 끄는 로케이션 목록 → window.HC_I18N_EXCLUDE 로 넘긴다
  *   (로더 excluded() 와 레거시 hcEx() 가 같은 전역을 읽는다). 비어 있으면 두 레이어의 내장 폴백.
  *
+ * v1.3: 채널 강제 — 주소에 ?hcch=next (또는 stable) 를 붙이면 이 브라우저를 그 채널로 고정(localStorage.hcKoCh, 7일 만료),
+ *       ?hcch= (빈 값) 으로 해제. 로케이션이 없는 비로그인 화면은 canary 가 걸리지 않으므로 next 검증용.
+ *       주소의 값은 저장 실패(사파리 사생활 보호 등)와 무관하게 이번 로드에 바로 쓴다. 강제 중이면 콘솔 경고.
+ *       상태: __hcBoot.status().forced (next 가 비었거나 형식이 틀리면 forced 'next' 여도 channel 은 'stable')
  * v1.2: 파일 로드 실패(갓 올린 커밋의 jsDelivr 전파 지연 등) 시 raw.githubusercontent 로 1회 재시도.
  * v1.1: 엣지 Worker 가 넣어 준 window.__hcPtr 이 있으면 0) 그 값으로 즉시 주입(source 'edge') — 저장소·네트워크 대기 없음.
  * 부팅 순서 (로더의 stale-while-revalidate 와 같은 철학):
@@ -32,7 +36,7 @@
   'use strict';
   if (window.__hcBoot) return;
 
-  var VERSION = '1.2.0';
+  var VERSION = '1.3.0';
   var REPO = 'benjaminhyperclass/hyperclass-help-ko';
   var CDN = 'https://cdn.jsdelivr.net/gh/' + REPO + '@';
   var RAW = 'https://raw.githubusercontent.com/' + REPO + '/';
@@ -40,10 +44,11 @@
   var FALLBACK_REF = 'main';
   var DEFAULT_FILES = ['js/hc-ko-app-loader.js', 'js/hc-confirm-adapter.js'];
   var LS_KEY = 'hcKoLoaderPtr';
+  var CH_KEY = 'hcKoCh';
   var SHA_RE = /^[0-9a-f]{7,40}$/;
   var DEBUG = /[?&]hcko=debug/.test(location.search);
 
-  var state = { version: VERSION, source: null, ref: null, channel: null, files: [], excluded: [], refreshed: false, error: null };
+  var state = { version: VERSION, source: null, ref: null, channel: null, forced: null, files: [], excluded: [], refreshed: false, error: null };
   window.__hcBoot = { version: VERSION, status: function () { return JSON.parse(JSON.stringify(state)); } };
 
   function log() { if (DEBUG && window.console) console.log.apply(console, ['[hc-boot]'].concat([].slice.call(arguments))); }
@@ -51,6 +56,26 @@
   function lsSet(k, v) { try { if (v == null) localStorage.removeItem(k); else localStorage.setItem(k, v); } catch (e) {} }
 
   try { if (lsGet('hcBootOff') === '1') { log('hcBootOff — 중단'); return; } } catch (e) {}
+
+  // 채널 강제 (v1.3) — ?hcch=next|stable 고정(7일), ?hcch= 해제. 다른 값은 해제로 본다.
+  var CH_TTL = 7 * 86400000;
+  var forcedNow = null;   // 이번 주소에 hcch 가 있으면 그 값('' = 해제)
+  try {
+    var chm = location.search.match(/[?&]hcch=([a-z]*)(?=&|#|$)/);
+    if (chm) {
+      forcedNow = chm[1] === 'next' || chm[1] === 'stable' ? chm[1] : '';
+      lsSet(CH_KEY, forcedNow ? JSON.stringify({ ch: forcedNow, ts: Date.now() }) : null);
+    }
+  } catch (e) {}
+  function forcedCh() {
+    if (forcedNow !== null) return forcedNow || null;
+    try {
+      var o = JSON.parse(lsGet(CH_KEY) || 'null');
+      if (o && (o.ch === 'next' || o.ch === 'stable') && CH_TTL > Date.now() - (+o.ts || 0)) return o.ch;
+      if (o) lsSet(CH_KEY, null);   // 만료·형식 오류는 지운다
+    } catch (e) { lsSet(CH_KEY, null); }
+    return null;
+  }
 
   function locOf() {
     var m = location.pathname.match(/\/location\/([^/]+)/);
@@ -67,17 +92,21 @@
     if (!SHA_RE.test(stable)) return null;
     var canary = Array.isArray(L.canary) ? L.canary : [];
     var loc = locOf();
-    var useNext = !!(loc && SHA_RE.test(next) && canary.indexOf(loc) >= 0);
+    var forced = forcedCh();
+    var useNext = forced === 'next' ? SHA_RE.test(next)
+      : forced === 'stable' ? false
+      : !!(loc && SHA_RE.test(next) && canary.indexOf(loc) >= 0);
     var files = Array.isArray(L.files) && L.files.length ? L.files.filter(function (f) { return typeof f === 'string' && /^js\/[A-Za-z0-9._-]+\.js$/.test(f); }) : DEFAULT_FILES;
     var excl = Array.isArray(ptr.excludeLocations) ? ptr.excludeLocations.filter(function (x) { return typeof x === 'string' && x; }) : [];
-    return { ref: useNext ? next : stable, channel: useNext ? 'next' : 'stable', files: files, excluded: excl };
+    return { ref: useNext ? next : stable, channel: useNext ? 'next' : 'stable', forced: forced, files: files, excluded: excl };
   }
 
   function inject(sel, source) {
-    state.source = source; state.ref = sel.ref; state.channel = sel.channel; state.files = sel.files.slice(); state.excluded = sel.excluded.slice();
+    state.source = source; state.ref = sel.ref; state.channel = sel.channel; state.forced = sel.forced || null; state.files = sel.files.slice(); state.excluded = sel.excluded.slice();
     // 로더·레거시보다 먼저 전역을 세운다. 포인터에 비어 있으면 전역을 만들지 않아 각 레이어의 내장 폴백이 산다.
     if (sel.excluded.length && !window.HC_I18N_EXCLUDE) window.HC_I18N_EXCLUDE = sel.excluded.slice();
     log('주입', sel.channel, sel.ref.slice(0, 7), sel.files.join(','), '(' + source + ')');
+    if (sel.forced && window.console) console.warn('[hc-boot] 채널 강제 ' + sel.forced + ' → ' + sel.channel + ' ' + sel.ref.slice(0, 7) + ' (해제: 주소에 ?hcch= )');
     // 순서 보장: 앞 파일이 로드된 뒤 다음 파일. (로더 → 어댑터)
     (function chain(i, viaRaw) {
       if (i >= sel.files.length) return;
