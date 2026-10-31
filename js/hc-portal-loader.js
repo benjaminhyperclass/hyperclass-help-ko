@@ -1,4 +1,6 @@
-/* Hyperclass 한글팩 — 클라이언트 포털 로더 v4.1.1 (2026-10-31, 작업지시서 v1 B3·B4·B5)
+/* Hyperclass 한글팩 — 클라이언트 포털 로더 v4.1.2 (2026-10-31, 작업지시서 v1 B3·B4·B5)
+ * v4.1.2: 사전 `_css`(문자열, 최대 8KB)를 페이지 스타일로 넣는다 — TipTap 편집기 자리표시자처럼 DOM 이 아니라 CSS(::before attr)로
+ *        그려지고 편집기가 속성을 계속 다시 쓰는 문구용. 포털 CSS 칸을 다시 붙여넣지 않고 포인터로 갱신된다.
  * v4.1.1 (적대적 리뷰 반영): 규칙에 route(경로 정규식) 추가·범위는 사전에서 정확히(공개 페이지 실측) · 텍스트 일치를 먼저 보고
  *        범위·편집기 검사는 맞을 때만(성능) · remote 병합 상태를 앱(composer)별로, 감시 키를 네임스페이스마다 · status() 를 꺼진
  *        상태에서도 · v3 무력화를 i18n·킬 스위치와 무관하게 돌리고 v3 의 카탈로그 재병합(messages)도 비움 · '$' 치환 안전 ·
@@ -39,9 +41,9 @@
   'use strict';
   if (window.__hcPortal) return;
   // B5: 그룹 칸의 옛 v3.0.1 은 첫 줄에서 이 변수를 보고 멈춘다(그쪽이 나중에 실행될 때). 킬 스위치로 아래에서 빠져도 v3 는 막힌 채가 맞다.
-  if (!window.__hcKoLoader) window.__hcKoLoader = 'portal-4.1.1';
+  if (!window.__hcKoLoader) window.__hcKoLoader = 'portal-4.1.2';
 
-  var VERSION = '4.1.1';
+  var VERSION = '4.1.2';
   var REPO = 'benjaminhyperclass/hyperclass-help-ko';
   var CDN = 'https://cdn.jsdelivr.net/gh/' + REPO + '@';
   var RAW = 'https://raw.githubusercontent.com/' + REPO + '/';
@@ -304,6 +306,11 @@
     RULES = compileRules(dict._rules);
     if (dict._titles && typeof dict._titles === 'object') {
       TT = { exact: dict._titles.exact || null, pats: compileRules([{ patterns: dict._titles.patterns }])[0].pats };
+    }
+    if (typeof dict._css === 'string' && dict._css && 8192 >= dict._css.length) {
+      var rc = document.getElementById('hc-portal-css-rules') || document.createElement('style');
+      rc.id = 'hc-portal-css-rules'; rc.textContent = dict._css;
+      if (!rc.parentNode) (document.head || document.documentElement).appendChild(rc);
     }
     pass(document.body);
     koTitle();
