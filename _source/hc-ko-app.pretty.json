@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "version": "4.2.20",
-  "built": "2026-10-29",
-  "source": "crawl 310 routes + dashboard-ko + community v3 + legacy recovery + live audit 33 routes + superagentsApp/copilotApp gap 855 (2026-09-09) + Managed Agents→관리형 에이전트 통일 + _text 11 (Claude Chat 라이브 감사, 에이전트 템플릿·빌더 프롬프트) + 전 서브계정 개방에 따른 _text 단어 1개 항목 335건 제거 (벤자민 결정: 짧은 단어 치환 금지) + 보류 제외 2건 확정(agency.gdpr·communitiesApp.universityCommunity, 2026-10-28) + 글로서리 v1.0.0 확정 용어 통일 1,076건 (2026-10-28) + round 2026-10-29 agency (telemetry) + round 2026-10-29 calendarComponentsApp (telemetry) + round 2026-10-29 common (telemetry) + round 2026-10-29 copilot (telemetry) + round 2026-10-29 copilotApp (telemetry) + round 2026-10-29 mediaCenterApp (telemetry) + round 2026-10-29 powerDialerApp (telemetry) + round 2026-10-29 switchyard (telemetry) + round 2026-10-29 workflowHotlinks (telemetry) + 레거시 은퇴 보강: ALL-CAPS 표 제목 13건 _text (2026-10-29) + _textScoped 단어 1개 UI 크롬 한정 레이어 1,378건 (레거시 dashboard-ko 단어 항목 이관, 글로서리 적용, 2026-10-29)",
+  "version": "4.2.21",
+  "built": "2026-10-31",
+  "source": "crawl 310 routes + dashboard-ko + community v3 + legacy recovery + live audit 33 routes + superagentsApp/copilotApp gap 855 (2026-09-09) + Managed Agents→관리형 에이전트 통일 + _text 11 (Claude Chat 라이브 감사, 에이전트 템플릿·빌더 프롬프트) + 전 서브계정 개방에 따른 _text 단어 1개 항목 335건 제거 (벤자민 결정: 짧은 단어 치환 금지) + 보류 제외 2건 확정(agency.gdpr·communitiesApp.universityCommunity, 2026-10-28) + 글로서리 v1.0.0 확정 용어 통일 1,076건 (2026-10-28) + round 2026-10-29 agency (telemetry) + round 2026-10-29 calendarComponentsApp (telemetry) + round 2026-10-29 common (telemetry) + round 2026-10-29 copilot (telemetry) + round 2026-10-29 copilotApp (telemetry) + round 2026-10-29 mediaCenterApp (telemetry) + round 2026-10-29 powerDialerApp (telemetry) + round 2026-10-29 switchyard (telemetry) + round 2026-10-29 workflowHotlinks (telemetry) + 레거시 은퇴 보강: ALL-CAPS 표 제목 13건 _text (2026-10-29) + _textScoped 단어 1개 UI 크롬 한정 레이어 1,378건 (레거시 dashboard-ko 단어 항목 이관, 글로서리 적용, 2026-10-29) + 로그인 화면 교정 11건(지원 전화 안내 삭제·약관 접속사·OTP 채널 등) + 앱 내 GHL 미국 지원번호 안내 4건 삭제(결정 ② 원칙) + 비로그인 오류 화면 _text 5건 (작업지시서 v1 A3, 2026-10-31)",
   "strings": 102718
  },
  "host": {
@@ -1547,7 +1547,7 @@
    "consider_leaving_it_blank_should_you_choose_to_use": "사전 구성된 미팅 장소를 사용하려면 공란으로 두는 것을 고려하세요",
    "contact": "연락처",
    "contact_support": "지원팀 문의",
-   "contact_us_call_highlevel_at_18887324197": "문의하기 - 하이퍼클래스 +1(888)732-4197로 전화",
+   "contact_us_call_highlevel_at_18887324197": "문의하기 - 하이퍼클래스 고객지원팀",
    "contacts": "연락처",
    "content_ai": "콘텐츠 AI",
    "controls": "컨트롤",
@@ -3777,7 +3777,7 @@
     "messageByWorkflow": "이 메시지는 대화 AI 워크플로우 액션에 의해 생성되었습니다"
    },
    "bePartOfFastestGrowingCommunity": "가장 빠르게 성장하는 커뮤니티의 일원이 되세요.",
-   "callHighlevelAt": "고객지원팀에 전화하세요: +1(888)732-4197",
+   "callHighlevelAt": "하이퍼클래스 고객지원팀에 문의해 주세요",
    "callQueueTooltip": "이 통화는 사용자의 통화 대기열에서 실행 대기 중입니다.",
    "callTranscript": "통화 녹취록",
    "clearFilters": "필터 초기화",
@@ -4992,7 +4992,7 @@
     "clickToUpgrade": "업그레이드하려면 클릭",
     "connectCertifiedAdminAria": "인증된 관리자와 연결 - 새 탭에서 열려면 클릭",
     "connectWithUsAria": "저희와 연결 - 실시간 채팅 시작",
-    "contactUsAria": "문의하기 - 하이퍼클래스 +1(888)732-4197로 전화",
+    "contactUsAria": "문의하기 - 하이퍼클래스 고객지원팀",
     "copied": "복사됨",
     "highlevelEventsAria": "하이퍼클래스 이벤트 - 클릭하여 새 탭에서 열기",
     "joinFacebookGroupAria": "Facebook 그룹 참여 - 새 탭에서 열려면 클릭",
@@ -5005,7 +5005,7 @@
     "startChat": "채팅 시작",
     "announcements": "공지",
     "fastestGrowingCommunity": "가장 빠르게 성장하는 커뮤니티의 일원이 되세요.",
-    "callHighlevelPhone": "고객지원팀에 전화하세요: +1(888)732-4197",
+    "callHighlevelPhone": "하이퍼클래스 고객지원팀에 문의해 주세요",
     "connectCertifiedAdmin": "인증 관리자와 연결",
     "connectTeamVideoCall": "라이브 비디오 통화로 도움을 받으려면 저희 팀과 연결하세요!",
     "connectWithUs": "문의하기",
@@ -9290,8 +9290,8 @@
    "accept": "수락",
    "termsLink": "서비스 이용약관",
    "updateMessage": "서비스 이용약관과 개인정보처리방침이 업데이트되었습니다. 계속하려면 검토 후 동의해 주세요.",
-   "agreementPrefix": "계속 진행하면 당사의 ",
-   "agreementConjunction": " 그리고 "
+   "agreementPrefix": "계속 진행하면 다음에 동의하는 것으로 간주됩니다: ",
+   "agreementConjunction": " 및 "
   },
   "callerIdVerificationModal": {
    "answerCall": "전화를 받고 이 인증 코드를 입력하세요:",
@@ -9301,7 +9301,7 @@
   },
   "emailOTPModal": {
    "confirmCode": "코드 확인",
-   "resendCode": "코드를 받지 못한 경우 여기를 클릭하여 재전송"
+   "resendCode": "코드를 받지 못했다면 여기를 클릭해 다시 보내세요"
   },
   "survey": {
    "copy": {
@@ -9671,35 +9671,35 @@
    "email": "이메일",
    "emailPlaceholder": "이메일 주소",
    "password": "비밀번호",
-   "passwordPlaceholder": "선택한 비밀번호",
+   "passwordPlaceholder": "설정한 비밀번호",
    "forgetPassword": "비밀번호를 잊으셨나요?",
    "signIn": "로그인",
    "verifying": "확인 중...",
    "or": "또는",
-   "continueWith": "계속하기",
+   "continueWith": "다른 방법으로 로그인",
    "signInWithSSO": "SSO로 로그인",
    "agreementStatement": "로그인하면 <a class=\"font-semibold text-curious-blue-500 hover:text-curious-blue-800\" href={termsConditionsURL} target=\"_blank\">이용 약관</a>에 동의하는 것으로 간주됩니다",
    "privacyPolicy": "개인정보처리방침",
    "chooseAccount": "계속하려면 계정을 선택하세요",
    "resetPassword": "비밀번호 재설정",
    "resetPasswordStatement": "해당 이메일함에 액세스할 수 없는 경우",
-   "highLevelSupport": "하이퍼클래스 고객지원에 24/7 전화 문의",
+   "highLevelSupport": "하이퍼클래스 고객지원팀에 문의할 수 있습니다",
    "proceedToLogin": "로그인으로 이동",
-   "troubleToLogin": "로그인에 문제가 있으신가요? <br /> 언제든지 하이퍼클래스 지원팀 <a href=\"tel:+18887324197\" target=\"_blank\" class=\"cursor-pointer text-primary\" style=\"font-weight: 500;\">+1(888)732-4197</a> 로 전화해 주세요.",
+   "troubleToLogin": "로그인에 문제가 있으신가요? <br /> <a class=\"text-primary\" style=\"font-weight: 500;\">하이퍼클래스 고객지원팀</a>에 문의해 주세요.",
    "verifySecurityCode": "보안 코드 확인",
    "sendCodeToEmail": "이메일로 코드 전송",
    "sendCodeToPhone": "휴대폰으로 코드 전송",
    "securityCode": "보안 코드",
    "send": "보내기",
    "sending": "전송 중",
-   "resendCode": "코드를 받지 못한 경우 여기를 클릭하여 재전송",
+   "resendCode": "코드를 받지 못했다면 여기를 클릭해 다시 보내세요",
    "sendingOTP": "OTP 전송 중...",
    "verifyingOTP": "OTP 확인 중...",
    "OTPResponse": "{otpChannel}(으)로 보안 코드(OTP)를 보냈습니다. {receivedType}에서 코드를 확인해 주세요.",
    "emailAddress": "이메일 주소",
    "phoneNumber": "전화번호",
-   "phone": "전화번호",
-   "inbox": "받은함",
+   "phone": "휴대폰",
+   "inbox": "받은편지함",
    "accountReady": "계정을 준비하고 있습니다...",
    "redirectingAccount": "계정으로 이동 중...",
    "emailRequired": "이메일이 필요합니다.",
@@ -9719,7 +9719,7 @@
     "reasonFirewallTitle": "방화벽 또는 VPN이 접근을 차단하고 있을 수 있습니다.",
     "reasonFirewallDescription": "모바일 데이터와 같은 다른 네트워크를 시도해 보세요.",
     "tryAgain": "다시 시도",
-    "contactAgency": "여전히 문제가 있나요? 에이전시에 문의하세요"
+    "contactAgency": "여전히 문제가 있으신가요? 하이퍼클래스에 문의해 주세요"
    }
   },
   "payments": {
@@ -68887,7 +68887,7 @@
     "consider_leaving_it_blank_should_you_choose_to_use": "사전 구성된 미팅 장소를 사용하려면 공란으로 두는 것을 고려하세요",
     "contact": "연락처",
     "contact_support": "지원팀 문의",
-    "contact_us_call_highlevel_at_18887324197": "문의하기 - 하이퍼클래스 +1(888)732-4197로 전화",
+    "contact_us_call_highlevel_at_18887324197": "문의하기 - 하이퍼클래스 고객지원팀",
     "contacts": "연락처",
     "content_ai": "콘텐츠 AI",
     "controls": "컨트롤",
@@ -71071,7 +71071,7 @@
      "messageByWorkflow": "이 메시지는 대화형 AI 워크플로우 액션에 의해 생성되었습니다"
     },
     "bePartOfFastestGrowingCommunity": "가장 빠르게 성장하는 커뮤니티의 일원이 되세요.",
-    "callHighlevelAt": "고객지원팀에 전화하세요: +1(888)732-4197",
+    "callHighlevelAt": "하이퍼클래스 고객지원팀에 문의해 주세요",
     "callQueueTooltip": "이 통화는 사용자의 통화 대기열에서 실행 대기 중입니다.",
     "callTranscript": "통화 녹취록",
     "clearFilters": "필터 초기화",
@@ -72285,7 +72285,7 @@
      "clickToUpgrade": "업그레이드하려면 클릭",
      "connectCertifiedAdminAria": "인증된 관리자와 연결 - 새 탭에서 열려면 클릭",
      "connectWithUsAria": "저희와 연결 - 실시간 채팅 시작",
-     "contactUsAria": "문의하기 - 하이퍼클래스 +1(888)732-4197로 전화",
+     "contactUsAria": "문의하기 - 하이퍼클래스 고객지원팀",
      "copied": "복사됨",
      "highlevelEventsAria": "하이퍼클래스 이벤트 - 클릭하여 새 탭에서 열기",
      "joinFacebookGroupAria": "Facebook 그룹 참여 - 새 탭에서 열려면 클릭",
@@ -72298,7 +72298,7 @@
      "startChat": "채팅 시작",
      "announcements": "공지",
      "fastestGrowingCommunity": "가장 빠르게 성장하는 커뮤니티의 일원이 되세요.",
-     "callHighlevelPhone": "고객지원팀에 전화하세요: +1(888)732-4197",
+     "callHighlevelPhone": "하이퍼클래스 고객지원팀에 문의해 주세요",
      "connectCertifiedAdmin": "인증 관리자와 연결",
      "connectTeamVideoCall": "라이브 비디오 통화로 도움을 받으려면 저희 팀과 연결하세요!",
      "connectWithUs": "문의하기",
@@ -76536,8 +76536,8 @@
     "accept": "수락",
     "termsLink": "서비스 이용약관",
     "updateMessage": "서비스 이용약관과 개인정보처리방침이 업데이트되었습니다. 계속하려면 검토 후 동의해 주세요.",
-    "agreementPrefix": "계속 진행하면 당사의 ",
-    "agreementConjunction": " 그리고 "
+    "agreementPrefix": "계속 진행하면 다음에 동의하는 것으로 간주됩니다: ",
+    "agreementConjunction": " 및 "
    },
    "callerIdVerificationModal": {
     "answerCall": "전화를 받고 이 인증 코드를 입력하세요:",
@@ -76547,7 +76547,7 @@
    },
    "emailOTPModal": {
     "confirmCode": "코드 확인",
-    "resendCode": "코드를 받지 못한 경우 여기를 클릭하여 재전송"
+    "resendCode": "코드를 받지 못했다면 여기를 클릭해 다시 보내세요"
    },
    "survey": {
     "copy": {
@@ -76873,35 +76873,35 @@
     "email": "이메일",
     "emailPlaceholder": "이메일 주소",
     "password": "비밀번호",
-    "passwordPlaceholder": "선택한 비밀번호",
+    "passwordPlaceholder": "설정한 비밀번호",
     "forgetPassword": "비밀번호를 잊으셨나요?",
     "signIn": "로그인",
     "verifying": "확인 중...",
     "or": "또는",
-    "continueWith": "계속하기",
+    "continueWith": "다른 방법으로 로그인",
     "signInWithSSO": "SSO로 로그인",
     "agreementStatement": "로그인하면 <a class=\"font-semibold text-curious-blue-500 hover:text-curious-blue-800\" href={termsConditionsURL} target=\"_blank\">이용 약관</a>에 동의하는 것으로 간주됩니다",
     "privacyPolicy": "개인정보처리방침",
     "chooseAccount": "계속하려면 계정을 선택하세요",
     "resetPassword": "비밀번호 재설정",
     "resetPasswordStatement": "해당 이메일함에 액세스할 수 없는 경우",
-    "highLevelSupport": "하이퍼클래스 고객지원에 24/7 전화 문의",
+    "highLevelSupport": "하이퍼클래스 고객지원팀에 문의할 수 있습니다",
     "proceedToLogin": "로그인으로 이동",
-    "troubleToLogin": "로그인에 문제가 있으신가요? <br /> 언제든지 하이퍼클래스 지원팀 <a href=\"tel:+18887324197\" target=\"_blank\" class=\"cursor-pointer text-primary\" style=\"font-weight: 500;\">+1(888)732-4197</a> 로 전화해 주세요.",
+    "troubleToLogin": "로그인에 문제가 있으신가요? <br /> <a class=\"text-primary\" style=\"font-weight: 500;\">하이퍼클래스 고객지원팀</a>에 문의해 주세요.",
     "verifySecurityCode": "보안 코드 확인",
     "sendCodeToEmail": "이메일로 코드 전송",
     "sendCodeToPhone": "휴대폰으로 코드 전송",
     "securityCode": "보안 코드",
     "send": "보내기",
     "sending": "전송 중",
-    "resendCode": "코드를 받지 못한 경우 여기를 클릭하여 재전송",
+    "resendCode": "코드를 받지 못했다면 여기를 클릭해 다시 보내세요",
     "sendingOTP": "OTP 전송 중...",
     "verifyingOTP": "OTP 확인 중...",
     "OTPResponse": "{otpChannel}(으)로 보안 코드(OTP)를 보냈습니다. {receivedType}에서 코드를 확인해 주세요.",
     "emailAddress": "이메일 주소",
     "phoneNumber": "전화번호",
-    "phone": "전화번호",
-    "inbox": "받은함",
+    "phone": "휴대폰",
+    "inbox": "받은편지함",
     "accountReady": "계정을 준비하고 있습니다...",
     "redirectingAccount": "계정으로 이동 중...",
     "emailRequired": "이메일이 필요합니다.",
@@ -76921,7 +76921,7 @@
      "reasonFirewallTitle": "방화벽 또는 VPN이 접근을 차단하고 있을 수 있습니다.",
      "reasonFirewallDescription": "모바일 데이터와 같은 다른 네트워크를 시도해 보세요.",
      "tryAgain": "다시 시도",
-     "contactAgency": "여전히 문제가 있나요? 에이전시에 문의하세요"
+     "contactAgency": "여전히 문제가 있으신가요? 하이퍼클래스에 문의해 주세요"
     }
    },
    "payments": {
@@ -122074,7 +122074,12 @@
   "SALES": "판매",
   "STATUS": "상태",
   "MESSAGES": "메시지",
-  "USAGE": "사용량"
+  "USAGE": "사용량",
+  "Something went wrong, please contact your admin": "문제가 발생했습니다. 관리자에게 문의해 주세요",
+  "Continue to Login": "로그인으로 이동",
+  "Page Not Found": "페이지를 찾을 수 없습니다",
+  "The link you are trying to access is not available. Please try again.": "접근하려는 링크를 사용할 수 없습니다. 다시 시도해 주세요.",
+  "Platform Language:": "플랫폼 언어:"
  },
  "_textScoped": {
   "AM": "오전",

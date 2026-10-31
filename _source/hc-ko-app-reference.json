@@ -5405,7 +5405,7 @@
  },
  "common.contact_us_call_highlevel_at_18887324197": {
   "en": "Contact Us - call HighLevel at +1(888)732-4197",
-  "ko": "문의하기 - 하이퍼클래스 +1(888)732-4197로 전화"
+  "ko": "문의하기 - 하이퍼클래스 고객지원팀"
  },
  "common.contacts": {
   "en": "Contacts",
@@ -13797,7 +13797,7 @@
  },
  "conversations.callHighlevelAt": {
   "en": "Call HighLevel at +1(888)732-4197",
-  "ko": "고객지원팀에 전화하세요: +1(888)732-4197"
+  "ko": "하이퍼클래스 고객지원팀에 문의해 주세요"
  },
  "conversations.callQueueTooltip": {
   "en": "This call is on the User's call queue waiting to be fired.",
@@ -17809,7 +17809,7 @@
  },
  "pmd.helpDrawer.contactUsAria": {
   "en": "Contact Us - call HighLevel at +1(888)732-4197",
-  "ko": "문의하기 - 하이퍼클래스 +1(888)732-4197로 전화"
+  "ko": "문의하기 - 하이퍼클래스 고객지원팀"
  },
  "pmd.helpDrawer.copied": {
   "en": "Copied",
@@ -17861,7 +17861,7 @@
  },
  "pmd.helpDrawer.callHighlevelPhone": {
   "en": "Call HighLevel at +1(888)732-4197",
-  "ko": "고객지원팀에 전화하세요: +1(888)732-4197"
+  "ko": "하이퍼클래스 고객지원팀에 문의해 주세요"
  },
  "pmd.helpDrawer.connectCertifiedAdmin": {
   "en": "Connect with a Certified Admin",
@@ -30481,11 +30481,11 @@
  },
  "termsOfService.agreementPrefix": {
   "en": "By continuing, you agree to our ",
-  "ko": "계속 진행하면 당사의 "
+  "ko": "계속 진행하면 다음에 동의하는 것으로 간주됩니다: "
  },
  "termsOfService.agreementConjunction": {
   "en": " and ",
-  "ko": " 그리고 "
+  "ko": " 및 "
  },
  "callerIdVerificationModal.answerCall": {
   "en": "Answer the call and enter this verification code:",
@@ -30509,7 +30509,7 @@
  },
  "emailOTPModal.resendCode": {
   "en": "If you did not receive the code click here to resend",
-  "ko": "코드를 받지 못한 경우 여기를 클릭하여 재전송"
+  "ko": "코드를 받지 못했다면 여기를 클릭해 다시 보내세요"
  },
  "survey.copy.cancel": {
   "en": "Cancel",
@@ -31525,7 +31525,7 @@
  },
  "login.passwordPlaceholder": {
   "en": "The password you picked",
-  "ko": "선택한 비밀번호"
+  "ko": "설정한 비밀번호"
  },
  "login.forgetPassword": {
   "en": "Forgot password?",
@@ -31545,7 +31545,7 @@
  },
  "login.continueWith": {
   "en": "Continue with",
-  "ko": "계속하기"
+  "ko": "다른 방법으로 로그인"
  },
  "login.signInWithSSO": {
   "en": "Sign in with SSO",
@@ -31573,7 +31573,7 @@
  },
  "login.highLevelSupport": {
   "en": "HighLevel Support 24/7 by calling",
-  "ko": "하이퍼클래스 고객지원에 24/7 전화 문의"
+  "ko": "하이퍼클래스 고객지원팀에 문의할 수 있습니다"
  },
  "login.proceedToLogin": {
   "en": "Proceed to Login",
@@ -31581,7 +31581,7 @@
  },
  "login.troubleToLogin": {
   "en": "Trouble Logging In? <br /> Call us HighLevel Support at <a href=\"tel:+18887324197\" target=\"_blank\" class=\"cursor-pointer text-primary\" style=\"font-weight: 500;\">+1(888)732-4197</a> any time.",
-  "ko": "로그인에 문제가 있으신가요? <br /> 언제든지 하이퍼클래스 지원팀 <a href=\"tel:+18887324197\" target=\"_blank\" class=\"cursor-pointer text-primary\" style=\"font-weight: 500;\">+1(888)732-4197</a> 로 전화해 주세요."
+  "ko": "로그인에 문제가 있으신가요? <br /> <a class=\"text-primary\" style=\"font-weight: 500;\">하이퍼클래스 고객지원팀</a>에 문의해 주세요."
  },
  "login.verifySecurityCode": {
   "en": "Verify Security Code",
@@ -31609,7 +31609,7 @@
  },
  "login.resendCode": {
   "en": "If you did not receive the code click here to resend",
-  "ko": "코드를 받지 못한 경우 여기를 클릭하여 재전송"
+  "ko": "코드를 받지 못했다면 여기를 클릭해 다시 보내세요"
  },
  "login.sendingOTP": {
   "en": "Sending OTP...",
@@ -31633,11 +31633,11 @@
  },
  "login.phone": {
   "en": "phone",
-  "ko": "전화번호"
+  "ko": "휴대폰"
  },
  "login.inbox": {
   "en": "inbox",
-  "ko": "받은함"
+  "ko": "받은편지함"
  },
  "login.accountReady": {
   "en": "Getting your account ready...",
@@ -31713,7 +31713,7 @@
  },
  "login.brandError.contactAgency": {
   "en": "Still having trouble? Contact your agency",
-  "ko": "여전히 문제가 있나요? 에이전시에 문의하세요"
+  "ko": "여전히 문제가 있으신가요? 하이퍼클래스에 문의해 주세요"
  },
  "payments.settings": {
   "en": "Settings",
