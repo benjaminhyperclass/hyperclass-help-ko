@@ -4,7 +4,22 @@
 > 새 세션은 이 파일 → `PLAN-*.md` 순으로 읽고 시작한다. 기억에 의존해 재개하지 않는다.
 > **규칙: 라이브 검증 전 크롬 번역 확장(`hyperclass-ko-ext` 등)이 꺼져 있는지 먼저 확인한다.** 확장이 켜진 화면은 고객 화면이 아니다(10-29 ⑥ 오판의 원인). 가능하면 **헤드리스 Playwright(무쿠키·확장 없음) 결과를 기준**으로 삼고, 사람 브라우저 확인은 보조로 둔다. 슬롯 변경 검증은 새 탭 + 5분 뒤(사고 기록 4).
 
-**진행 중 라운드** 2026-10-31~ 커뮤니티·코스·로그인 한글화 — 계획·진행은 `PLAN-portal-login.md`, 원 지시서 `WORKORDER-portal-login-v1.md`
+**진행 중 라운드** 2026-10-31~ 커뮤니티·코스·로그인 한글화 — 계획·진행은 `PLAN-portal-login.md`, 원 지시서 `WORKORDER-portal-login-v1.md`, 포털 설치·확산 `PORTAL-ROLLOUT.md`
+
+## 2026-10-31 커뮤니티·코스·로그인 라운드 (작업지시서 v1) — 현재 상태
+
+| 항목 | 상태 |
+|---|---|
+| 사전 (메인) | **v4.2.21** `e30d4d2` 라이브(포인터 봇 27010b3, CDN=raw=local). 로그인 화면 교정 11 + 앱 내 GHL 미국 번호 4건 삭제 + 비로그인 오류 화면 `_text` 5 |
+| 로더 (메인) | **v4.19.0** `3bc900d` = 포인터 `loader.next`(캐너리 r6JD) · `stable` 은 v4.18.1 `a2e7596` 유지. PREAUTH(`/`·`/forgot_password`·`/change_password`·`/set_password`·`/login/sso`) + 적대적 리뷰 반영(제외 계정 새로고침 루프 차단기 30초·로그인 화면 0.8초 안정 대기·PREAUTH 텔레메트리 생략·호스트 composer 재병합) |
+| 부트스트랩 v1.3.0 | `3bc900d` (`?hcch=next|stable` 7일 고정) — 레포 `wrangler.toml` BOOTSTRAP_SHA 는 3bc900d, **엣지 실배포는 아직 047b529(v1.2.0)**: `wrangler deploy` 가 자동 모드 분류기에 막힘(운영 배포) → 벤자민 실행 대기 |
+| 에이전시 CSS | 레포 `css/agency-custom.css` **v2.0.0**(텍스트 오버레이 삭제, 환영 문구 합쇼체·로그인 폼 한정). 칸은 아직 v1.3.0 — 로더 v4.19 stable 승격 **뒤** 벤자민이 교체 |
+| 포털 | 패키지 완료: 포인터 `data/hc-portal-rev.json`(rev = main 사전 v3 `0f4e2d5`, loader `028b315`) · 슬롯 `js/portal-slot.js` v1.1 · 베일 `css/portal-custom.css` v1.0.1 · 부트스트랩 v1.0.1 · 로더 v4.0.1. 실배포 산출물 헤드리스 E2E 통과(/login·/forgot-password 한국어, 베일 1~2.3초). **슬롯 미설치(벤자민)** |
+| 포털 사전 v4.0 | PR #10 (커버리지 5,393/5,393, 리뷰 반영) — 머지 후 포털 포인터 `rev` 를 머지 커밋으로 |
+| 승인 대기 PR | #9 verify-deploy EXPECT · #10 포털 사전 v4.0 · #11 login-check + S5 + validate C14(GHL 번호) |
+| 기준선 | `scripts/login-check.py`(PR #11) 무쿠키 6화면: 전부 영어, 영문 단어 154 — 승격·슬롯 설치 뒤 재측정 |
+| 발견한 번역 오염 2건 | ① 에이전시 CSS v1.3.0 의 `.foot-note::전`·`.h6::후`(약관 안내·재설정 완료 메시지가 투명) ② 포털 슬롯 위젯 코드의 `참/거짓`(실행 시 ReferenceError, 위젯 치환 미동작). **교훈: 코드 칸에 번역기·번역 확장을 거친 텍스트가 들어가면 키워드가 한글로 바뀐다 — 칸 정본은 레포, 붙여넣기 전 SHA-256 대조** |
+| 사고 기록 5 | push 직전 `pull --rebase` 로 커밋 SHA 가 바뀌어 슬롯·포인터가 미푸시 SHA(3c71af8)를 가리킨 채 한 번 푸시됨 → 1aab419 로 정정(내용 diff 0, 미설치 상태라 영향 없음). **교훈: 다른 커밋의 SHA 를 박는 커밋은 그 SHA 를 먼저 push 해 확정한 뒤 만든다.** CI 조상 게이트가 이후 재발을 막는다 |
 
 **갱신** 2026-10-28 (한글화 2.0 1단계 완료·2단계 코드 완료(배포 대기) · 부트스트랩 v1.0.0 — 로더 SHA 도 포인터로 · 확인입력 어댑터 v1.0.0 · 로더 v4.12.0(REV_BUILTIN 3b82727) · 사전 v4.2.8 보류 제외 2건 확정 · **슬롯 1줄째 `@c25c941…/js/hc-bootstrap.js` 교체 완료 · 라이브 검증 완료 · loader.stable=05f9cf7 승격**)
 
@@ -50,8 +65,8 @@
 
 | 항목 | 값 |
 |---|---|
-| 사전 버전 / REV | **v4.2.20** / `40698931f9c68b0657af778a91290a6382962103` (strings 102,718 · `_text` 8,776 · `_textScoped` 1,362) — 포인터 `data/hc-ko-app-rev.json` 의 `rev` 가 정한다(봇 `ko-app-pointer.yml` 전진) |
-| 로더 | **v4.18.1** / `a2e759686d74626c9d08c7785c16f1fceb337f32` — 포인터 `loader.stable` = `loader.next` (캐너리 `r6JD…`). 내장 `REV_BUILTIN` = `3b82727`(v4.2.7, 소킹분) |
+| 사전 버전 / REV | **v4.2.21** / `e30d4d2` (2026-10-31, `_text` 8,781 · `_textScoped` 1,362) — 이전 v4.2.20 `4069893` — 포인터 `data/hc-ko-app-rev.json` 의 `rev` 가 정한다(봇 `ko-app-pointer.yml` 전진) |
+| 로더 | stable **v4.18.1** / `a2e759686d74626c9d08c7785c16f1fceb337f32` · next **v4.19.0** / `3bc900d` (캐너리 `r6JD…`, 2026-10-31). 내장 `REV_BUILTIN` = `3b82727`(v4.2.7, 소킹분) |
 | 어댑터 | `js/hc-confirm-adapter.js` — 로더와 같은 커밋에서 부트스트랩이 주입 |
 | 부트스트랩 (엣지) | **v1.2.0** / `047b5293f6a85d70d8140edf7108848b1558f7d7` — `workers/hc-ko-edge/wrangler.toml` `BOOTSTRAP_SHA`. app.hyperclass.ai 모든 HTML(비로그인 포함) `<head>` 맨 앞 |
 | 부트스트랩 (에이전시 슬롯) | **v1.0.0** / `c25c941dfe4cee25495a225c8c577f534aec6946` — Custom JS 칸 1줄. 엣지가 있으면 `if (window.__hcBoot) return` 가드로 **무동작**(파일만 받음). 엣지 OFF(DNS 회색) 시의 폴백 경로 |

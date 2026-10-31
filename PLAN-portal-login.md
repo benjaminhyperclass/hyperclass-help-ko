@@ -79,18 +79,26 @@
   영향: 없음(문서). 새 세션은 STATE 상단 '진행 중 라운드' 줄로 이 PLAN 에 온다
 - [x] D2 DEPLOY-v4 정리 — 준비된 것·§1 불릿·§6·문제표·로더 롤백(포인터)·전면 중단·한계 2 주석
   영향: 없음(문서)
-- [ ] D3 verify-deploy EXPECT (PR)
+- [~] D3 verify-deploy EXPECT — PR #9 승인 대기(4.18.1/4069893/8776). v4.19 승격 뒤 한 번 더
 - [x] D4 validate paths — bootstrap·adapter·`js/hc-portal-*.js`·`js/portal-slot.js`·`css/*.css` + 포털 파일 node --check·꺾쇠·무손실 검사(있을 때만). 로컬: 무손실식이 위젯 통과·`i<n` 샘플 exit 1
   영향: 이후 부트스트랩·포털·CSS 커밋이 validate 를 탄다(→ 성공 시 ko-app-pointer workflow_run, core/apps 불변이면 무동작)
 - [x] D5 BOOTSTRAP_SHA 판정 — 무해(엣지가 먼저·`__hcBoot` 가드·슬롯은 폴백). wrangler.toml 주석 정정, STATE 배포 좌표에 근거 3개
   영향: 슬롯 정렬은 벤자민 선택(A2 부트스트랩 v1.3 SHA 로 한 번에)
-- [ ] A1 CSS 원본
-- [ ] A2 부트스트랩 v1.3 · 로더 v4.19 · Worker 재배포 · next 검증 · stable
-- [ ] A3 사전 교정
-- [ ] A4 CSS v2 (파일) / 교체(벤자민)
-- [ ] A5 login-check · S5
-- [ ] B1 en.json · build.json
-- [ ] B2 사전 v4.0
-- [ ] B3 포털 로더 v4.0 · 슬롯 · 베일
-- [ ] B4 검증
-- [ ] C 확산 문서
+- [x] A1 CSS 원본 — 82a8246, 비로그인 HTML 의 style 추출(15,460자, SHA-256 9a502c4…). ⚠️ v1.3.0 자체 버그 발견: `.foot-note::전`·`.h6::후`(의사 요소명 번역 오염)로 ::before/::after 가 무효인데 짝 `font-size:0` 은 살아 있어 **약관 안내문·재설정 완료 메시지가 투명** — v2 에서 해소
+  영향: A4 v2 의 diff 기준
+- [~] A2 로더 v4.19.0 · 부트스트랩 v1.3.0 = `3bc900d`(CDN=raw=local) → 포인터 `loader.next` 76bc410. 적대적 리뷰 H1·M4(M3 문서화)·L2 반영, 헤드리스 시나리오 10종 통과
+  ⏳ 엣지 `wrangler deploy`(BOOTSTRAP_SHA 3bc900d, 49df23c 커밋) — 자동 모드 분류기가 운영 배포로 거부 → **벤자민 실행 대기**. 그 뒤: 비로그인 새 탭 `?hcch=next` 검증 → `loader.stable` 승격
+  영향: stable 승격 전까지 고객 로그인 화면은 종전(영어 + CSS v1 오버레이). 승격 후에만 A4 CSS 교체
+- [x] A3 사전 v4.2.21 — e30d4d2 → 포인터 27010b3, CDN=raw=local. login 11건(호스트+onboardingApp 지문 앱 사본), 앱 내 GHL 번호 4건, `_text` 5건. 해요체: login 은 `~세요` 명령형만(관례 유지)
+  영향: 결정 ② 연락처 확정 시 troubleToLogin 의 a 태그에 href 만 추가. whitelabel '타사 전화번호' 규칙은 scripts PR 로(검토)
+- [x] A4 CSS v2.0.0 파일 — 25401d2(한글 content 1·font-size:0 0·제목 스타일 이동), 헤드리스 미리보기 data/reports/login-check/2026-10-31-preview-v2-*.png. [ ] 칸 교체(벤자민, stable 승격 뒤)
+  영향: 칸 교체 전 SHA-256 eea14b2… 대조
+- [~] A5 `scripts/login-check.py` + S5(ko-sensors 00시 UTC) + validate C14(GHL 번호) — PR #11 승인 대기. 기준선 154(6화면 전부 영어)
+- [x] B1 en.json · build.json — 42ce67c, 63 ns · 5,393키, 엔트리 DDSGwuF2.js. B0 원본 `js/portal-slot.js`(⚠️ 참/거짓 번역 오염 → 런타임 ReferenceError, 위젯 치환 미동작)
+  영향: B2 결손 1,758키 산정 기준, B3 슬롯 교체 시 위젯은 레포 정상본 사용
+- [~] B2 포털 사전 v4.0.0 — PR #10(8413843): 커버리지 5,393/5,393, 신규 번역 1,437(번역기 무수정)·재사용 321·수동 13, 글로서리 30, round-review(무수정, py3.12) Claude 17·R6 2 반영. 문체: 명령형 ~세요 유지(사유 보고서). 머지 대기
+  영향: 머지 후 포털 포인터 rev → 머지 커밋, 포털 로더 REV_BUILTIN 은 다음 로더 때
+- [x] B3 포털 부트스트랩 v1.0.1 · 로더 v4.0.1 · 베일 v1.0.1 = `028b315`, 슬롯 v1.1(1aab419), 포인터(rev main v3 0f4e2d5). 적대적 리뷰 H2·M3(M5·M6 문서화)·L5 반영. CI: 포털 포인터·슬롯·REV_BUILTIN 실존+main 조상 하드 게이트, 위젯 검사 편입
+  영향: 슬롯 설치(벤자민) 전엔 라이브 영향 없음
+- [~] B4 비로그인 헤드리스 E2E(실배포 산출물, 슬롯 원문 실행): /login·/forgot-password·/signup 한국어, lang=ko, 베일 1.0~2.3초. 오너 화면(대시보드·코스·피드 등)은 슬롯 설치 후 벤자민/크롬
+- [x] C `PORTAL-ROLLOUT.md` — 설치·SHA-256·고객 코드 보호(맨 위 덧붙이기)·옵트아웃(excludeHosts). 조사: GHL 공개 API 에 포털 레벨 코드 필드 없음(코스 상품 customJs 는 있음 — 보고만), 스냅샷 복제 여부 문서 미기재 → C1 벤자민 확인
