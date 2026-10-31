@@ -13,10 +13,10 @@
 | 사전 (메인) | **v4.2.21** `e30d4d2` 라이브(포인터 봇 27010b3, CDN=raw=local). 로그인 화면 교정 11 + 앱 내 GHL 미국 번호 4건 삭제 + 비로그인 오류 화면 `_text` 5 |
 | 로더 (메인) | **v4.19.0** `3bc900d` = 포인터 `loader.stable` = `next` — **2026-10-31 전 고객 승격**(d719342, CI 성공). 무쿠키 새 컨텍스트 stable 채널에서 `/`·`/forgot_password` 로더 4.19.0 booted·preauth·lang ko 확인. 롤백 = stable 을 `a2e7596`(v4.18.1)로. PREAUTH(`/`·`/forgot_password`·`/change_password`·`/set_password`·`/login/sso`) + 적대적 리뷰 반영(제외 계정 새로고침 루프 차단기 30초·로그인 화면 0.8초 안정 대기·PREAUTH 텔레메트리 생략·호스트 composer 재병합) |
 | 부트스트랩 v1.3.0 | `3bc900d` (`?hcch=next|stable` 7일 고정) — **엣지 배포 완료**(Claude Chat, Cloudflare 대시보드, Worker 버전 b60d5e58 100%). 무쿠키로 엣지 HTML 부트스트랩 src @3bc900d · `__hcBoot` 1.3.0 확인 |
-| 에이전시 CSS | 레포 `css/agency-custom.css` **v2.0.0**(SHA-256 eea14b2…). stable 승격 완료 → **벤자민 칸 교체 차례**(교체 후 새 탭 + 5분, S5 재측정) |
+| 에이전시 CSS | **v2.0.0 칸 교체 완료**(2026-10-31, Claude Chat) — 운영 `<style>` = 레포 25401d2 파일에서 끝 줄바꿈만 뺀 것(SHA-256 `13048563…` 일치, 한글 content 1·font-size:0 0). S5 10:58Z·11:03Z(5분 뒤) app 3화면 영문 0, 캡처 정상(재설정 화면 환영 문구 없음). ⚠️ GHL 칸은 저장 시 끝 줄바꿈을 버린다 — 해시 대조는 끝 줄바꿈 제외 |
 | 포털 | 패키지 완료: 포인터 `data/hc-portal-rev.json`(rev = main 사전 v3 `0f4e2d5`, loader `028b315`) · 슬롯 `js/portal-slot.js` v1.1 · 베일 `css/portal-custom.css` v1.0.1 · 부트스트랩 v1.0.1 · 로더 v4.0.1. 실배포 산출물 헤드리스 E2E 통과(/login·/forgot-password 한국어, 베일 1~2.3초). **슬롯 미설치(벤자민)** |
-| 포털 사전 v4.0.1 | PR #10 (커버리지 5,393/5,393) — 벤자민 검수 반영(Lesson→강의 23·이벤트 Up next→다음 세션, 게시물→게시글 53, 수료증 2, 글로서리 Lesson 변형 '레슨'). 머지 후 포털 포인터 `rev` 를 머지 커밋으로 |
-| 승인 대기 PR | #9 verify-deploy EXPECT(→ 4.19.0/e30d4d2/8781) · #10 포털 사전 v4.0.1(벤자민 검수 반영) · #11 login-check + S5(app·portal·pay 7화면, 화면별 회귀) + validate C14(GHL 번호) — 세 PR 모두 머지 가능 |
+| 포털 사전 v4.0.1 | **머지 완료** 4e21458(PR #10) → 포털 포인터 `rev` = 4e21458(2e40929, CI 통과, CDN=raw=local). 슬롯 설치(벤자민) 뒤 라이브 |
+| PR | **#9 → #10 → #11 머지 완료**(2026-10-31, 머지 커밋 2f62775 · 4e21458 · f47db07, 각 사이 워크플로 완료 확인). S5 센서 Actions 수동 실행 성공(login·sense) — 매일 00시 UTC. validate C14 가동 |
 | 트랙 E 결제 페이지 | **준비 완료·미배포**(벤자민 지시). 사전 `data/hc-ko-payments.json` v1.0.2 `5533c0a`(337키, 구독 동의 승인안 고정) · 로더 `js/hc-pay-loader.js` v1.0.1 `c3d2465`(SRI) · 포인터 `data/hc-pay-rev.json` · Worker v0.4.0(레포만, 테스트 39/39, CI 결제 게이트) · `PAYMENTS-ROLLOUT.md`(배포 순서·롤백). 실 Worker 주입 HTML + jsDelivr 로더 시뮬: 영문 49→5. 대기: Worker 배포 → DNS `links` Proxied(벤자민 승인) · 트리거 링크 URL · 제외 계정 결정(ⓐ 수용 / ⓑ excludePaths) |
 | S5 점검 | `scripts/login-check.py`(PR #11) 무쿠키 6화면 — 승격 전 154 → **승격 후 97**: app 로그인·재설정·SSO **영문 0**(lang ko), 포털 3화면 97(슬롯 미설치). 포털 슬롯 설치 뒤 재측정 |
 | C1 스냅샷 | **포털 설정은 스냅샷으로 복제되지 않음**(벤자민: Linked assets 에 Client Portal·Communities 없음, GHL ideas "Client Portal and Groups in Snapshot" = Planned) → C3 확정: 온보딩 체크리스트 1단계 + 계정별 수동(PORTAL-ROLLOUT 4절) |

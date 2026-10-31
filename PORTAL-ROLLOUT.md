@@ -19,17 +19,17 @@
 
 ## 2. 붙여넣을 것 (붙이기 전에 SHA-256 대조)
 
-| 칸 | 파일 | SHA-256 (2026-10-31) |
+| 칸 | 파일 | SHA-256 — **끝 줄바꿈 제외**(GHL 칸은 저장 시 끝 줄바꿈을 버린다, 2026-10-31 에이전시 CSS 로 확인) |
 |---|---|---|
-| Client Portal → Settings → Branding → Advanced → **Custom JS** | `js/portal-slot.js` | `11c946065a347360232f86c9391fdbb7c0f3f774757f80f886cee9ce38bf3b45` |
-| 같은 화면 → **Custom CSS** | `css/portal-custom.css` | `b01556235c26deb90beab6a4dcdb18eb2dae390d977d0294663afee3153971ac` |
+| Client Portal → Settings → Branding → Advanced → **Custom JS** | `js/portal-slot.js` (778자) | `679d7dec66801ff558b186a30212e407de9f998d9e03ceda23c507ce33022f8d` |
+| 같은 화면 → **Custom CSS** | `css/portal-custom.css` (1,066자) | `d04e3cb972130d72bb749775e919032e3828585331e1694e2cdbeeeebd57bf43` |
 
 - Custom JS 칸은 **순수 JS** 다. script 태그를 넣지 않는다. 꺾쇠(`<`) 문자가 하나라도 있으면 새니타이저가 잘라 내고 `new Function` 검증 실패로 **주입 전체가 빠진다**(DECISIONS 2026-08-22). 레포 파일은 CI 가 무손실 검사로 막는다.
-- 대조 방법: 레포에서 `shasum -a 256 js/portal-slot.js`, 붙여넣을 내용을 파일로 저장해 같은 명령. 둘이 같아야 한다.
+- 대조 방법: 칸 저장값과 레포 파일을 **둘 다 끝 줄바꿈을 뺀 뒤** SHA-256 비교. 예) `python3 -c "import hashlib,sys;print(hashlib.sha256(open(sys.argv[1],encoding='utf-8',newline='').read().rstrip('\\n').encode()).hexdigest())" js/portal-slot.js`
 
 ## 3. community.hyperclass.ai (r6JD) — 첫 설치 순서
 
-0. **먼저 PR #10(사전 v4.0)을 머지**하고 포털 포인터 `rev` 가 그 머지 커밋을 가리키게 한다(Claude Code). 머지 전에 붙이면 사전 v3.0.0(커버리지 약 67%)으로 뜬다.
+0. ✅ PR #10 머지(4e21458) → 포털 포인터 `rev` = 4e21458(사전 v4.0.1, 커버리지 100%) — 2026-10-31 완료(2e40929, CI 통과).
 1. **Custom JS 칸** 기존 내용(채팅 위젯 4문구 — `true/false` 가 `참/거짓`으로 번역돼 실제로는 동작하지 않던 코드, 원본은 git `42ce67c` 의 `js/portal-slot.js`)을 **전부 지우고** `js/portal-slot.js` 내용으로 교체. 위젯 KO 는 이제 부트스트랩이 레포 정상본을 붙인다.
 2. **Custom CSS 칸**에 `css/portal-custom.css` 내용을 넣는다(기존 CSS 가 있으면 그 **위에** 덧붙인다).
 3. 저장 → **새 탭 + 5분 뒤** `community.hyperclass.ai/login` (번역 확장 끈 브라우저 또는 시크릿 창).
