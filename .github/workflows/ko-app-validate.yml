@@ -27,6 +27,7 @@ on:
       # 포털(ClientClub) 트랙 — 로더·부트스트랩·슬롯 원문 (2026-10-31 작업지시서 v1)
       - 'js/hc-portal-*.js'
       - 'js/portal-slot.js'
+      - 'data/hc-portal-rev.json'
       # 에이전시·포털 Custom CSS 정본 (슬롯 교체 전 레포 파일과 칸 내용 SHA-256 대조)
       - 'css/*.css'
       - 'data/hc-ko-app-rev.json'
@@ -131,6 +132,28 @@ jobs:
             echo "  ✅ loader.$ch ${sha:0:7}"
           done
           echo "## 로더 포인터: $([ $fail -eq 0 ] && echo '✅ stable/next 커밋·파일 실존' || echo '❌ 실존하지 않는 SHA — 부트스트랩이 404 를 맞는다')" >> $GITHUB_STEP_SUMMARY
+          exit $fail
+
+      - name: 포털 포인터 SHA 실존 검사 (하드 게이트)
+        if: always()
+        run: |
+          set -e
+          [ -f data/hc-portal-rev.json ] || { echo "(포털 포인터 없음)"; exit 0; }
+          fail=0
+          rev=$(python3 -c "import json;print(json.load(open('data/hc-portal-rev.json'))['rev'])")
+          if git cat-file -e "$rev:data/hc-ko-i18n.json" 2>/dev/null; then echo "  ✅ rev ${rev:0:7} 에 포털 사전 있음"; else echo "❌ rev=$rev 커밋에 data/hc-ko-i18n.json 없음"; fail=1; fi
+          for ch in stable next; do
+            sha=$(python3 -c "import json;print(json.load(open('data/hc-portal-rev.json'))['loader'].get('$ch',''))")
+            [ -z "$sha" ] && continue
+            for f in $(python3 -c "import json;print(' '.join(json.load(open('data/hc-portal-rev.json'))['loader'].get('files',[])))"); do
+              git cat-file -e "$sha:$f" 2>/dev/null || { echo "❌ loader.$ch=$sha 커밋에 $f 없음"; fail=1; }
+            done
+            echo "  ✅ loader.$ch ${sha:0:7}"
+          done
+          # 슬롯 원문이 가리키는 부트스트랩 SHA 도 실존해야 한다
+          bs=$(grep -oE 'hyperclass-help-ko@[0-9a-f]{40}/js/hc-portal-bootstrap.js' js/portal-slot.js | sed -E 's/.*@([0-9a-f]{40}).*/\1/' || true)
+          if [ -n "$bs" ]; then git cat-file -e "$bs:js/hc-portal-bootstrap.js" 2>/dev/null && echo "  ✅ 슬롯 부트스트랩 ${bs:0:7}" || { echo "❌ 슬롯 부트스트랩 $bs 없음"; fail=1; }; fi
+          echo "## 포털 포인터: $([ $fail -eq 0 ] && echo '✅ rev·loader·슬롯 SHA 실존' || echo '❌ 실존하지 않는 SHA')" >> $GITHUB_STEP_SUMMARY
           exit $fail
 
       - name: 글로서리 감사 (경고)

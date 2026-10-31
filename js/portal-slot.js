@@ -1,45 +1,9 @@
-
-  (function () {
-    const KO = {
-      'Chat with an Agent': '채팅으로 문의하기',
-      'Chat via SMS/Email': '문자·이메일로 문의하기',
-      'Chat via Live Chat': '실시간 채팅으로 문의하기',
-      'Chat with Instagram': '인스타그램으로 문의하기'
-    };
-
-    function replaceDeep(root) {
-      // 이 층의 텍스트 노드 치환
-      const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
-      let node;
-      while ((node = walker.nextNode())) {
-        const t = node.textContent.trim();
-        if (KO[t]) node.textContent = node.textContent.replace(t, KO[t]);
-      }
-      // 중첩 shadowRoot로 재귀 진입
-      root.querySelectorAll('*').forEach(el => {
-        if (el.shadowRoot) {
-          replaceDeep(el.shadowRoot);
-          observeRoot(el.shadowRoot);
-        }
-      });
-    }
-
-    const observed = new WeakSet();
-    function observeRoot(root) {
-      if (observed.has(root)) return;
-      observed.add(root);
-      new MutationObserver(() => replaceDeep(root))
-        .observe(root, { childList: 참, subtree: 참, characterData: 참 });
-    }
-
-    function init() {
-      const widget = document.querySelector('chat-widget');
-      if (!widget || !widget.shadowRoot) return 거짓;
-      replaceDeep(widget.shadowRoot);
-      observeRoot(widget.shadowRoot);
-      return 참;
-    }
-
-    const timer = setInterval(() => { if (init()) clearInterval(timer); }, 500);
-    setTimeout(() => clearInterval(timer), 20000);
-  })();
+/* Hyperclass 한글팩 — 포털 슬롯 v1 (2026-10-31). Client Portal → Settings → Branding → Advanced → Custom JS 칸 전체를 이 내용으로.
+   순수 JS 칸이다: script 태그·꺾쇠 금지. 부트스트랩(고정 SHA)이 포털 포인터를 읽어 로더·채팅 위젯 KO 를 주입한다 — 이후 이 칸은 다시 만지지 않는다.
+   이전 내용(채팅 위젯 4문구, true/false 가 참/거짓으로 번역돼 동작하지 않던 코드)은 git 이력 42ce67c 의 이 파일. */
+(function () {
+  var s = document.createElement('script');
+  s.src = 'https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@0a062f8b43de22ff4b3596398e3cf3aa30bf6991/js/hc-portal-bootstrap.js';
+  s.async = false;
+  (document.head || document.documentElement).appendChild(s);
+})();
