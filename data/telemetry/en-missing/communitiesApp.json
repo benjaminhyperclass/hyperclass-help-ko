@@ -1,0 +1,14 @@
+{
+ "common.communitiesDomain": "communities.io",
+ "common.httpsPrefix": "https://",
+ "domainSetup.customDomainDescription": "Lorem ipsum",
+ "domainSetup.customDomainPlaceholder": "example.com",
+ "universityCommunity.cardHeader": "Welcome to HighLevel University",
+ "universityCommunity.ctaButton": "Go to HighLevel University",
+ "universityCommunity.description1": "Join the official HighLevel University (HLU), the ultimate connection + learning center for all things HighLevel.",
+ "universityCommunity.description2": "Check out our implementational playbooks & courses, event replays, town halls, and all the rest of our exclusive educational resources you need for success.",
+ "universityCommunity.description3": "Whether you're a brand new user learning the ropes, or a seasoned veteran keeping up with the latest feature drops, HLU is the place to be!",
+ "universityCommunity.legacyUniversityLink": "Access here >>",
+ "universityCommunity.legacyUniversityText": "Looking for the legacy Highlevel University?",
+ "universityCommunity.pageHeader": "HighLevel University"
+}

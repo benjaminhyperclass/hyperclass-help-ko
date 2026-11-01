@@ -1,0 +1,8 @@
+{
+ "customVariables.otp": "OTP",
+ "customVariables.pdfLink": "PDF URL",
+ "customVariables.pdfUrl": "PDF URL",
+ "customVariables.shopify": "Shopify",
+ "customVariables.url": "URL",
+ "timezones.label": "GMT{offset} {zone} ({abbr})"
+}
