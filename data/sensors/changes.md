@@ -46,3 +46,27 @@
 
 ## 2026-11-02 06:29 UTC — main 2142 → 2144 · manifest 2142.7612 → 2144.0
 
+## 2026-11-02 21:49 UTC — main 2144 → 2155 · manifest 2144.0 → 2155.0
+- `actionsPlatformApp` 868 → 896
+- `adPublishingApp` 126 → 127
+- `agentLogsApp` 888 → 897
+- `agentStudioApp` 887 → 894
+- `calendarServicesApp` 616 → 622
+- `conversationsUtilitiesApp` 2939 → 2950
+- `conversationsV2App` 2944 → 2956
+- `copilotApp` 881 → 890
+- `domainResellingApp` 236 → 249
+- `emailBuilderMfaApp` 399 → 402
+- `emailHomeV2App` 401 → 404
+- `emailSequenceApp` 401 → 405
+- `eventsManagementApp` 2935 → 2953
+- `integrationsApp` 185 → 188
+- `marketplaceApp` 187 → 189
+- `opportunitiesApp` 2944 → 2951
+- `phoneIntegrationApp` 2225 → 2237
+- `powerDialerApp` 2209 → 2236
+- `socialPlannerApp` 363 → 369
+- `superagentsApp` 868 → 899
+- `usersApp` 2920 → 2955
+- `voiceAiApp` 886 → 895
+
