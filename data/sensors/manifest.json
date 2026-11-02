@@ -1,6 +1,6 @@
 {
- "manifestVersion": "2142.7612",
- "mainAppVersion": "2142",
+ "manifestVersion": "2144.0",
+ "mainAppVersion": "2144",
  "federatedApps": {
   "reputationApp": "https://appcdn.leadconnectorhq.com/revex/reputation/2230/remoteEntry.js?nocache=true",
   "yextApp": "https://appcdn.leadconnectorhq.com/revex/yext/2229/remoteEntry.js?nocache=true",

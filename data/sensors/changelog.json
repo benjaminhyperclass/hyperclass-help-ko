@@ -25,19 +25,22 @@
   "Every call recording, not just one - Mobile": "2026-10-30",
   "Who Answered the Call - Now on Mobile": "2026-10-30",
   "Host Your Existing Number for SMS with Hosted Numbers": "2026-10-30",
-  "Introducing New Templates": "2026-10-31"
+  "Introducing New Templates": "2026-10-31",
+  "🚀 Ask AI Mobile - iOS Action button": "2026-11-02",
+  "🚀 Ask AI Mobile - Home Screen Widget": "2026-11-02",
+  "Ask AI Mobile: New Chat Shortcut": "2026-11-02"
  },
- "updated": "2026-11-01",
+ "updated": "2026-11-02",
  "slugs": [
   "ai-analyze-video-new-workflow-action",
+  "ask-ai-mobile-home-screen-widget",
+  "ask-ai-mobile-ios-action-button",
+  "ask-ai-mobile-new-chat-shortcut",
   "every-call-recording-not-just-one-mobile",
   "host-your-existing-number-for-sms-with-hosted-numbers",
   "introducing-new-templates-115",
   "saas-usage-limits-keep-client-usage-in-check-and-get-paid-when-they-need-more",
   "see-call-quality-live-rate-it-when-youre-done",
-  "service-booking-is-now-available-in-the-client-portal",
-  "test-your-workflow-right-inside-ai-builder",
-  "web-search-now-available-in-the-ai-agent-action",
   "who-answered-the-call-now-on-mobile"
  ]
 }
