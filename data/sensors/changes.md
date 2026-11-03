@@ -79,3 +79,32 @@
 - `socialPlannerApp` 369 → 370
 - `storeCatalogApp` 49 → 50
 
+## 2026-11-03 19:39 UTC — main 2155 → 2168 · manifest 2155.7656 → 2168.7691
+- `agencyDashboardApp` 2208 → 2246
+- `agentHealthApp` 889 → 906
+- `agentLogsApp` 897 → 905
+- `aiGrowthApp` 883 → 904
+- `appointmentModalApp` 620 → 625
+- `certificatesApp` 2209 → 2241
+- `contactsApp` 2944 → 2957
+- `contactsHighriseApp` 2944 → 2963
+- `conversationsV2App` 2956 → 2962
+- `emailHomeV2App` 404 → 408
+- `emailSequenceApp` 405 → 409
+- `fieldServicesApp` 621 → 626
+- `internalToolsApp` 2208 → 2243
+- `launchpadApp` 239 → 240
+- `locationsApp` 2228 → 2238
+- `loyaltyApp` 19 → 21
+- `mediaCenterApp` 187 → 190
+- `onboardingApp` 239 → 240
+- `opportunitiesApp` 2951 → 2958
+- `performanceAiApp` 889 → 906
+- `phoneIntegrationApp` 2237 → 2240
+- `platformBillingApp` 71 → 72
+- `restaurantsApp` 2937 → 2971
+- `snapshotsApp` 2231 → 2244
+- `socialPlannerApp` 370 → 373
+- `switchyardApp` 13 → 15
+- `voiceAiApp` 895 → 902
+
