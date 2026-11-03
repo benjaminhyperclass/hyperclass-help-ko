@@ -70,3 +70,12 @@
 - `usersApp` 2920 → 2955
 - `voiceAiApp` 886 → 895
 
+## 2026-11-03 07:00 UTC — main 2155 → 2155 · manifest 2155.0 → 2155.7656
+- `chatWidgetApp` 128 → 129
+- `integrationsApp` 188 → 190
+- `leadconnectorIntegrationsApp` 2945 → 2960
+- `loyaltyApp` 18 → 19
+- `marketplaceApp` 189 → 190
+- `socialPlannerApp` 369 → 370
+- `storeCatalogApp` 49 → 50
+
