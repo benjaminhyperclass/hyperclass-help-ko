@@ -525,6 +525,22 @@
       "category": "object",
       "decided": true,
       "note": "제휴 관리자"
+    },
+    {
+      "en": "Won",
+      "ko": "고객전환성공",
+      "variants": [],
+      "category": "status",
+      "decided": true,
+      "note": "기회 상태 Won. 2026-11-04 벤자민 결정(이전 승리·성사·성공 혼용). 성공·실패는 일반어와 겹쳐 변형 자동 치환 없음"
+    },
+    {
+      "en": "Lost",
+      "ko": "고객전환실패",
+      "variants": [],
+      "category": "status",
+      "decided": true,
+      "note": "기회 상태 Lost. 2026-11-04 벤자민 결정(이전 손실·실패·패배 혼용). Lost reason = 고객전환실패 사유. \"will be lost\"(사라짐)는 해당 없음"
     }
   ],
   "buttons": [
