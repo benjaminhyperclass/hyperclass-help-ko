@@ -213,6 +213,10 @@ def translate_batch(client: anthropic.Anthropic, items: list[tuple[str, str]]) -
   예) "Add an {{opportunity}}" → "{{opportunity}} 추가"  (O)
       "Add an {{opportunity}}" → "{{기회}} 추가"          (X — 변수명을 번역함)
 - 대문자 시스템 토큰(DELETE, CONFIRM, REMOVE, CANCEL, TRANSFER, DISABLE, RESET)은 번역하지 말고 원형 유지
+- 확정 용어(벤자민 2026-11-04): 기회 상태 Won / Lost → '고객전환성공' / '고객전환실패' (Lost reason → '고객전환실패 사유').
+  'changes will be lost'처럼 '사라짐' 뜻의 lost 는 해당 없음.
+- DND / Do Not Disturb(연락처 채널 차단) → '수신거부'. 드래그 앤 드롭(DnD)은 해당 없음.
+- Notes / Note(메모 기능) → '메모'. Release notes(릴리스 노트)·Credit note(크레딧 노트)는 예외.
   — 사용자가 확인 절차에서 영문 그대로 타이핑해야 통과하는 값이다
 - 번호만 붙여서 번역 결과만 출력 (설명 없이)
 

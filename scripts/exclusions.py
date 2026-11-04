@@ -48,6 +48,59 @@ def load_pending(path=REGISTRY):
         return []
 
 
+def load_english(path=REGISTRY):
+    """영어 원문 단위 제외 — 소문자·strip 집합. 예: 단독 'Delete' (2026-11-04).
+
+    namespaces 와 달리 레거시 사전(은퇴)에는 적용하지 않는다 — v4 배포본(host·apps·flat·_text·_textScoped)만.
+    """
+    try:
+        with open(path, encoding='utf-8') as f:
+            reg = json.load(f)
+    except FileNotFoundError:
+        return set()
+    return {x['en'].strip().lower() for x in reg.get('english', []) if isinstance(x.get('en'), str) and x['en'].strip()}
+
+
+def reference_en(reference_path=REFERENCE):
+    """dotted key → 영어 원문. host 는 'ns.path', apps 카탈로그는 카탈로그 안 경로가 그대로 참조본 키다."""
+    with open(reference_path, encoding='utf-8') as f:
+        ref = json.load(f)
+    return {k: o['en'] for k, o in ref.items() if isinstance(o, dict) and isinstance(o.get('en'), str)}
+
+
+def prune_nested_by_english(tree, en_of, en_ci, base=''):
+    """중첩 카탈로그에서 참조본 영어 원문이 en_ci(소문자) 에 드는 리프를 제거한다. 빈 객체는 정리."""
+    removed = []
+
+    def walk(node, path):
+        for k in list(node.keys()):
+            v = node[k]
+            dotted = f'{path}.{k}' if path else k
+            if isinstance(v, dict):
+                walk(v, dotted)
+                if not v:
+                    del node[k]
+            elif isinstance(v, str):
+                en = en_of.get(dotted)
+                if isinstance(en, str) and en.strip().lower() in en_ci:
+                    removed.append(dotted)
+                    del node[k]
+
+    if en_ci and isinstance(tree, dict):
+        walk(tree, base)
+    return removed
+
+
+def prune_by_english_ci(d, en_ci):
+    """영어 원문이 키인 사전(_text·_textScoped)에서 소문자 대조로 제거."""
+    if not en_ci:
+        return []
+    hit = [k for k in d if isinstance(k, str) and k.strip().lower() in en_ci]
+    for k in hit:
+        del d[k]
+    return hit
+
+
 def english_originals(prefixes, reference_path=REFERENCE):
     """제외 네임스페이스의 영어 원문 집합(.strip() 기준).
 

@@ -135,3 +135,11 @@ superagentsApp(Managed Agents 빌더·목록·채팅 레이어)의 제품명 표
 - "changes will be lost"·"connection lost"·"revenue lost" 처럼 '사라짐' 뜻의 lost 는 제외.
 - 글로서리에 Won/Lost 등재(variants 없음 — '성공'·'실패'는 일반어라 자동 치환 금지).
 - 화면 칩·칸반 열 머리에서 6자라 말줄임될 수 있다 — 라이브에서 확인.
+
+## [확정] DND = 수신거부 · Notes = 메모 · 단독 'Delete' 는 원문 유지 — 2026-11-04
+
+벤자민 결정.
+- **DND → 수신거부**: 이전 DND(49)·방해 금지(15)·수신 거부(3) 혼용. 'Do not disturb' 포함. '수신 DND'(Inbound) → '인바운드 수신거부'. 드래그 앤 드롭 뜻의 DnD('Fetch Element DND Failed')는 제외. 글로서리 DND 등재(variants: 방해 금지 모드·방해 금지·방해금지·수신 거부).
+- **Notes → 메모**: 이전 메모 126 : 노트 90 혼용. 릴리스 노트·크레딧 노트·노트북은 예외, Sticky notes 는 윈도우 표기 '스티커 메모'. 글로서리 Note 등재(variants 없음 — 예외 단어 보호).
+- **단독 'Delete'(대소문자 무관) 는 번역하지 않는다**: 버튼·메뉴 '삭제' 198곳을 배포본에서 뺀다 → 화면에 'Delete' 원문. 문장 속 delete 는 번역 유지. `data/ko-app-exclusions.json` 에 영어 원문 단위 제외(`english`) 신설 — split 이 참조본 영어로 경로를 대조해 host·apps·flat·_text·_textScoped 에서 제거, validate C10 이 잔존을 막는다. 편집 정본·참조본에는 '삭제'가 남아 번역 라운드가 다시 채우지 않는다. 되돌리려면 등재를 지우고 재분할. DELETE 확인 입력(DNT)·한글 '삭제' 입력 보조 어댑터는 그대로.
+- 번역기 프롬프트(`i18n-batch-translator.py`)에 Won/Lost·DND·Notes 확정 용어 규칙 추가.

@@ -20,6 +20,7 @@ sys.path.insert(0, HERE)
 
 from exclusions import (  # noqa: E402
     load_prefixes, english_originals, prune_nested, prune_flat_keys, prune_by_english,
+    load_english, reference_en, prune_nested_by_english, prune_by_english_ci,
 )
 
 SRC = os.path.join(ROOT, '_source/hc-ko-app.pretty.json')
@@ -55,6 +56,19 @@ def main():
         n_apps = sum(len(prune_nested(cat, prefixes)) for cat in apps['apps'].values())
         print(f'제외 적용 — 네임스페이스 {len(prefixes)}개 / 영어 원문 {len(en)}종')
         print(f'  host {n_host} / apps {n_apps} / flat {n_flat} / _text {n_text} 제거')
+
+    # 영어 원문 단위 제외(예: 단독 'Delete') — 참조본 영어로 경로를 대조한다.
+    en_ci = load_english()
+    if en_ci:
+        en_of = reference_en()
+        e_host = sum(len(prune_nested_by_english(sub, en_of, en_ci, base=ns))
+                     for ns, sub in core['host'].items() if isinstance(sub, dict))
+        e_apps = sum(len(prune_nested_by_english(cat, en_of, en_ci)) for cat in apps['apps'].values())
+        e_flat = [k for k in list(core['flat']) if isinstance(en_of.get(k), str) and en_of[k].strip().lower() in en_ci]
+        for k in e_flat:
+            del core['flat'][k]
+        e_text = len(prune_by_english_ci(core['_text'], en_ci)) + len(prune_by_english_ci(core['_textScoped'], en_ci))
+        print(f'영어 원문 제외 {sorted(en_ci)} — host {e_host} / apps {e_apps} / flat {len(e_flat)} / _text {e_text} 제거')
 
     os.makedirs(os.path.dirname(CORE), exist_ok=True)
     for path, obj in ((CORE, core), (APPS, apps)):

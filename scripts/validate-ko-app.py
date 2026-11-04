@@ -37,7 +37,7 @@ ROOT = os.path.normpath(os.path.join(HERE, '..'))
 sys.path.insert(0, HERE)
 
 from whitelabel import whitelabel_check, is_exception  # noqa: E402
-from exclusions import load_prefixes, english_originals  # noqa: E402
+from exclusions import load_prefixes, english_originals, load_english, reference_en  # noqa: E402
 
 
 # ── C1 화이트리스트 ─────────────────────────────────────────────
@@ -398,6 +398,20 @@ def main():
                 if isinstance(en_key, str) and en_key.strip() in ex_en:
                     v['C10'].append({'src': name, 'key': en_key[:70], 'ko': str(ko)[:60],
                                      'why': '제외 등재 네임스페이스의 영어 원문 (레거시 사전)'})
+
+    # 영어 원문 단위 제외(english) — v4 배포본에 남아 있으면 위반
+    ex_en_ci = load_english()
+    if ex_en_ci:
+        en_of = reference_en()
+        for src, key, ko in rows:
+            if src in ('_text', '_textScoped'):
+                hit = key.strip().lower() in ex_en_ci
+            else:
+                en = en_of.get(key)
+                hit = isinstance(en, str) and en.strip().lower() in ex_en_ci
+            if hit:
+                v['C10'].append({'src': src, 'key': key[:70], 'ko': ko[:60],
+                                 'why': '제외 등재 영어 원문(english) — 원문 그대로 둬야 한다'})
 
     # ── C11 옵트아웃 게이트 유실 감시 ──────────────────────────
     gate_rows = check_gate(ROOT)
