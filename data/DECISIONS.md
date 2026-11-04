@@ -152,3 +152,9 @@ superagentsApp(Managed Agents 빌더·목록·채팅 레이어)의 제품명 표
 - 기존 33키 수정: Title '직함' → '제목'(3), 자리표시자가 빠진 채 들어 있던 27키 복원(예: `"" 복제` → `"{title}" 복제`), common.post(s) 게시글 → 강의, common.product 제품 → 상품.
 - 이 앱 용어: Post/Lesson → 강의 · Product → 상품 · Offer → 오퍼 · Category → 카테고리 · Credential → 자격 증명 · Certificate → 수료증 · Setup fee → 설정 비용 · Discard → 변경 취소 · Visibility → 공개 범위 · Announcement → 공지 · Location → 서브 계정. 강사 정보의 Title(직업 표기)만 '직책'.
 - 한계: 로더 v4.19.1 의 t 래퍼는 인자 1개 호출만 flat 으로 바꾼다 → `{count}` 같은 값이 들어가는 198키는 여전히 영어. 로더에 이름 자리표시자 치환을 더하면 해결(별도 브랜치, 캐너리 절차).
+
+## [확정] 연락처 상세 새 UI 앱 2개 apps 그룹 신설 — 2026-11-04
+- 대상: `record-details-new-ui`(왼쪽 패널, 549문구, 지문 `DnDChannels|addAssociations|archiveUnarchiveConversation|callContactPhone|changeAlert`) · `contact-conversation-panel`(대화 패널, 2,824문구, 지문 `24h|24hDescription|48h|48hDescription|72h`). 둘 다 로케일 `en_US`. 원문 스냅샷 `data/contact/contact-apps-en.json`.
+- 1,178문구는 참조본 동일 영어 재사용, 2,195문구 신규 번역 → 독립 검수 2회(35건 교정) → 사전 v4.2.28.
+- 용어: CC/BCC = **참조/숨은 참조** · Voice note = **음성 녹음**(Voicemail = 음성 메시지와 구분) · 연락처 상세의 Actions 탭 = **작업 탭**(라이브 탭 표기와 일치), 그 밖의 action = 액션 · All fields 탭 = **전체 필드** · Owner = 소유자 · Reply = 답글 · Inbox = 인박스 · 수동 Outbound/Inbound call = 발신/수신 통화.
+- 경로 충돌 2건(참조본의 같은 경로가 다른 영어): `common.description`, `commonComponents.addRecordAssociationDisabledTooltip` — 검증기(C3)가 경로로 영어를 대조하므로 한국어에서 `{object}`·`{record}` 를 쓰지 않는 문장으로 우회(뜻은 유지). 참조본은 경로가 없을 때만 추가(3,251), 다른 영어가 있는 경로 122개는 건드리지 않음.
