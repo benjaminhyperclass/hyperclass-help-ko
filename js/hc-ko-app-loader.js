@@ -1,4 +1,6 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.19.0
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.19.1
+ * v4.19.1: _textScoped 범위에 새 디자인 시스템 탭(.hr-tabs-tab) 추가 — 연락처 상세 탭 'DND'·'Actions' 가 role 없는
+ *          div 탭이라 영어로 남았다(2026-11-04 유포리아 실측). 셀·옵션·칩은 종전대로 SCOPED_SKIP 이 먼저 거른다.
  * v4.19: 비로그인 화면(PREAUTH) 허용 — 로그인 `/`·비밀번호 재설정·설정·변경·SSO·토큰·데스크톱·지원·eject 로그인만 명시 목록으로 연다.
  *        로케이션이 없으므로 제외 판정은 false(로그인 전엔 사용자를 모른다 — 작업지시서 v1 결정 ①). 외부 연동 로그인
  *        (`/login/canny`·`/login/ideas-board`·`/login/shopify`)과 에이전시 화면은 계속 범위 밖. 로그인 직후 이동이
@@ -180,7 +182,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.19.0',
+    version: '4.19.1',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -475,7 +477,7 @@
   // 안에 있을 때만. 조상 8단계까지 본다 — GHL 표 머리글은 th > wrapper > title > div > span > text 처럼 깊다(v4.18.1,
   // 3단계로는 연락처 머리글을 못 잡았다). 셀(td)·옵션·칩·본문은 SCOPED_SKIP 이 먼저 걸러 범위 밖.
   var SCOPED_SEL = 'th,[role="columnheader"],button,[role="button"],[role="tab"],[role="menuitem"],label,' +
-    '.n-button,.n-tabs-tab,.n-pagination-item,.hl-btn,.hl-text-btn,.topmenu-nav a,nav a,[role="navigation"] a,[role="menubar"] a';
+    '.n-button,.n-tabs-tab,.hr-tabs-tab,.n-pagination-item,.hl-btn,.hl-text-btn,.topmenu-nav a,nav a,[role="navigation"] a,[role="menubar"] a';
   var SCOPED_SKIP = 'td,[role="option"],[role="listbox"],[role="gridcell"],.n-tag,.tag,[contenteditable]';
   function inScope(p) {
     try {
