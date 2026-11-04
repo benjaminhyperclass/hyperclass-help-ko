@@ -284097,7 +284097,7 @@
  },
  "adPublishingApp.campaignCreation.tiktok.mediaGuidelines.duration": {
   "en": "Duration",
-  "ko": "소요 시간"
+  "ko": "길이"
  },
  "adPublishingApp.campaignCreation.tiktok.mediaGuidelines.formats": {
   "en": "Formats",
@@ -285797,7 +285797,7 @@
  },
  "aiEmployeesApp.conversationAI.actions.humanHandover.scenarios.failedToResolveIssue.name": {
   "en": "Failed to resolve issue",
-  "ko": "문제를 해결하지 못했습니다"
+  "ko": "문제 해결 실패"
  },
  "aiEmployeesApp.conversationAI.actions.humanHandover.scenarios.failedToResolveIssue.triggerCondition": {
   "en": "Multiple attempts to resolve the issue has failed",
@@ -285957,7 +285957,7 @@
  },
  "aiEmployeesApp.conversationAI.createEmployee.botSettings.form.maxMessages.placeholder": {
   "en": "Enter Number",
-  "ko": "번호 입력"
+  "ko": "숫자 입력"
  },
  "aiEmployeesApp.conversationAI.createEmployee.botSettings.form.mode.options.off.description": {
   "en": "Turn off Conversations AI",
@@ -286181,7 +286181,7 @@
  },
  "aiEmployeesApp.conversationAI.employees.summarySettings.errors.customEmailRequired": {
   "en": "Custom email is required",
-  "ko": "사용자 지정 이메일은 필수입니다"
+  "ko": "커스텀 이메일은 필수입니다"
  },
  "aiEmployeesApp.conversationAI.employees.summarySettings.errors.inactivityMin": {
   "en": "Minimum is {min} {label}",

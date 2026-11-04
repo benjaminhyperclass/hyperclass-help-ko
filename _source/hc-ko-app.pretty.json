@@ -46043,7 +46043,7 @@
       "video": "동영상"
      },
      "mediaGuidelines": {
-      "duration": "소요 시간",
+      "duration": "길이",
       "formats": "형식",
       "generalGuidelines": "일반 지침",
       "horizontal": "가로 ({ratio1}:{ratio2})",
@@ -57975,7 +57975,7 @@
       },
       "scenarios": {
        "failedToResolveIssue": {
-        "name": "문제를 해결하지 못했습니다",
+        "name": "문제 해결 실패",
         "triggerCondition": "문제 해결을 위한 여러 번의 시도가 실패했습니다"
        }
       },
@@ -58075,7 +58075,7 @@
         "deselectAll": "전체 선택 해제"
        },
        "maxMessages": {
-        "placeholder": "번호 입력"
+        "placeholder": "숫자 입력"
        },
        "mode": {
         "options": {
@@ -58262,7 +58262,7 @@
        }
       },
       "errors": {
-       "customEmailRequired": "사용자 지정 이메일은 필수입니다",
+       "customEmailRequired": "커스텀 이메일은 필수입니다",
        "inactivityMin": "최소 {min} {label}입니다",
        "minimumMessagesRequired": "최소 메시지 수가 필요합니다"
       }
