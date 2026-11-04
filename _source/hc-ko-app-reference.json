@@ -13909,7 +13909,7 @@
  },
  "conversations.dailyBrainstormingSessions": {
   "en": "Daily Brainstorming sessions with Highlevel",
-  "ko": "하이퍼클래스과의 일일 브레인스토밍 세션"
+  "ko": "하이퍼클래스와의 일일 브레인스토밍 세션"
  },
  "conversations.deleteAccount": {
   "en": "Delete Account",
@@ -17877,7 +17877,7 @@
  },
  "pmd.helpDrawer.dailyBrainstormingSessions": {
   "en": "Daily Brainstorming sessions with Highlevel",
-  "ko": "하이퍼클래스과의 일일 브레인스토밍 세션"
+  "ko": "하이퍼클래스와의 일일 브레인스토밍 세션"
  },
  "pmd.helpDrawer.certifiedAdminDescription": {
   "en": "Explore HighLevel experts who can help set up your system, automate workflows, or customize your project.",
@@ -364913,7 +364913,7 @@
  },
  "reportingApp.locationDashboard.stickyNotes.errorPermission": {
   "en": "You don't have permission to edit this note. Contact your administrator.",
-  "ko": "이 노트를 편집할 권한이 없습니다. 관리자에게 문의하세요."
+  "ko": "이 메모를 편집할 권한이 없습니다. 관리자에게 문의하세요."
  },
  "reportingApp.locationDashboard.stickyNotes.errorUpdating": {
   "en": "Couldn't save note. Try again.",
