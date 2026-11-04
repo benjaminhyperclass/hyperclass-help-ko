@@ -317685,7 +317685,7 @@
  },
  "analytics.memberAnalytics.memberProgress.updateOffers.modal.assignmentEditor": {
   "en": "assignment editor",
-  "ko": "오퍼 할당 편집기"
+  "ko": "할당 편집기"
  },
  "analytics.memberAnalytics.memberProgress.updateOffers.modal.canNotGrantAccess": {
   "en": "Can not grant access to this offer.",
@@ -318141,7 +318141,7 @@
  },
  "assessment.ungradedAssignment": {
   "en": "Ungraded Assignment",
-  "ko": "채점하지 않는 과제"
+  "ko": "미채점 과제"
  },
  "assessment.uploadTemplate.description": {
   "en": "Drag and drop your assignment template here",
@@ -318277,11 +318277,11 @@
  },
  "category.deleteDisabledDesc.first": {
   "en": "Categories with subcategories",
-  "ko": "하위 카테고리"
+  "ko": "하위 카테고리가 있거나"
  },
  "category.deleteDisabledDesc.second": {
   "en": "or posts cannot be deleted.",
-  "ko": "또는 강의가 포함된 카테고리는 삭제할 수 없습니다."
+  "ko": "강의가 포함된 카테고리는 삭제할 수 없습니다."
  },
  "category.deletingProgress": {
   "en": "Deleting..",
@@ -318501,7 +318501,7 @@
  },
  "certificates.notifications.status.successTitle": {
   "en": "Status Updated",
-  "ko": "상태가 업데이트되었습니다"
+  "ko": "상태 업데이트됨"
  },
  "certificates.notifications.update.failedMessage": {
   "en": "There was an error updating the credential. Please try again.",
