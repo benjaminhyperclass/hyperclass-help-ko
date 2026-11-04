@@ -3,5 +3,6 @@
  "FilterListSection.googleId": "Google ID",
  "FilterListSection.instagramId": "Instagram ID",
  "col.googleData": "GMB",
- "extraDetails.DNDGMBChannel": "GMB"
+ "extraDetails.DNDGMBChannel": "GMB",
+ "list.delete": "Delete"
 }

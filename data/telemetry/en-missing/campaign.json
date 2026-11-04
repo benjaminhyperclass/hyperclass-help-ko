@@ -5,6 +5,7 @@
  "email.newPostModal.imagePlaceholder": "img(02).png",
  "email.newPostModal.textExample": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
  "email.newPostModal.urlExample": "https://searchengineland.com/google-announces-new-features-for-retail-advertisers-at-smx-advanced-300001",
+ "list.delete": "Delete",
  "regulatoryBundle.cnam.registration.characterLimit": "{count}/15",
  "regulatoryBundle.ejectModal.agencyClosing": "The Elite Marketing agency account with Highlevel is closing. To keep your account, Please reach out to {userName} for migrating your account directly to Highlevel.",
  "regulatoryBundle.ejectModal.cancelWarning": "Please be aware that your account will be officially cancelled on 30th June 2025, and we won't be able to retrieve your data after this date if the transfer is not completed.",

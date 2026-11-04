@@ -1,4 +1,5 @@
 {
+ "deleteLocation.delete": "Delete",
  "helpDrawer.manageSupportAccess": "Manage support access →",
  "helpDrawer.supportAccessDisabledDescription": "Allow authorized HighLevel support specialists to access your account for troubleshooting.",
  "helpDrawer.supportAccessEnabledUntil": "Authorized HighLevel support specialists can access your account until {date}.",

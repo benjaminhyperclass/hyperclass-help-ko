@@ -25,6 +25,7 @@
  "common.replaceBlockedWhileEditing": "Finish or cancel your edits before replacing this file",
  "common.retryUpload": "Retry upload",
  "common.saveChanges": "Save changes",
+ "common.searchInFolder": "Search in {0}",
  "common.tags": "Tags",
  "common.tagsAdded": "{0} tags added",
  "common.tagsDropped": "{0} tags were not added because the file is at its tag limit",

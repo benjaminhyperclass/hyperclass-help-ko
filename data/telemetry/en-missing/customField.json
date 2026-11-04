@@ -1,10 +1,13 @@
 {
+ "allFieldsTab.bulkAction.delete": "Delete",
  "createFieldModal.fileTypes.csv": "XLS/CSV",
  "createFieldModal.fileTypes.doc": "DOCX/DOC",
  "createFieldModal.fileTypes.gif": "GIF",
  "createFieldModal.fileTypes.jpg": "JPG/JPEG",
  "createFieldModal.fileTypes.pdf": "PDF",
  "createFieldModal.fileTypes.png": "PNG",
+ "customFieldFolder.actions.delete": "Delete",
+ "customFieldInsideFolder.actions.delete": "Delete",
  "previews.box1": "Box1",
  "previews.box2": "Box2"
 }
