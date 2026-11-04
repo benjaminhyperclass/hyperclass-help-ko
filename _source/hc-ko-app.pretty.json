@@ -123492,7 +123492,7 @@
     "savePartialFailure": "레코드는 생성되었지만 연결 {count}개를 추가하지 못했습니다",
     "selectContactAssociation": "연락처 연결을 하나 이상 선택하세요",
     "associatedObjectTooltip": "연결된 오브젝트: {object}",
-    "pairedWith": "{first}(짝: {second})",
+    "pairedWith": "{first}(연결: {second})",
     "systemLabels": {
      "OPPORTUNITY_TO_CONTACT": "연결된 연락처",
      "CONTACT_TO_OPPORTUNITY": "연결된 기회"
@@ -123523,7 +123523,7 @@
     "fieldsHeading": "필드({count})",
     "lockedField": "잠긴 필드",
     "fillRequiredFields": "저장하기 전에 모든 필수 필드를 입력하고 유효성 검사 오류를 수정하세요.",
-    "saveAndAddAnother": "저장 후 추가",
+    "saveAndAddAnother": "저장 후 새로 추가",
     "saveNotAllowed": "저장 중",
     "manageFields": "필드 관리",
     "saveSuccess": "{Object}이(가) 생성되었습니다",
@@ -123583,8 +123583,8 @@
    },
    "unsavedModal": {
     "title": "저장되지 않은 변경사항",
-    "description": "저장되지 않은 변경사항이 있습니다. 저장하시겠습니까, 아니면 삭제하시겠습니까?",
-    "discard": "삭제",
+    "description": "저장되지 않은 변경사항이 있습니다. 저장하시겠습니까, 아니면 변경사항을 취소하시겠습니까?",
+    "discard": "변경 취소",
     "save": "변경사항 저장",
     "cancel": "취소"
    },
@@ -123645,7 +123645,7 @@
       "Mobile": "모바일",
       "Work": "직장",
       "Landline": "유선 전화",
-      "Home": "홈"
+      "Home": "자택"
      }
     }
    },
@@ -123661,7 +123661,7 @@
     "inbound": "수신 통화 및 SMS",
     "all": "모든 채널 수신거부",
     "inboundTooltip": "이 번호에서 오는 수신 통화는 바로 차단되지만, 수신 SMS는 시스템 단계에서 차단되므로 요금이 부과됩니다",
-    "updatedMessage": "'{userName}'님이 {timestamp}에 업데이트함"
+    "updatedMessage": "'{userName}'님이 {timestamp}에 업데이트했습니다"
    },
    "conversationPanel": {
     "errorTitle": "앗! 문제가 발생했습니다",
@@ -123678,7 +123678,7 @@
     "first_name": "이름",
     "last_name": "성",
     "company_name": "사업자명",
-    "address1": "상세 주소",
+    "address1": "도로명 주소",
     "city": "도시",
     "state": "주/도",
     "postal_code": "우편번호",
@@ -123690,7 +123690,7 @@
     "pipeline": "파이프라인",
     "pipeline_stage": "단계",
     "status": "상태",
-    "monetary_value": "값",
+    "monetary_value": "금액",
     "assigned_to": "소유자",
     "lost_reason": "고객전환실패 사유",
     "contact": "연락처",
@@ -123853,8 +123853,8 @@
     "undo": "실행 취소",
     "redo": "다시 실행",
     "unsavedChangesTitle": "저장되지 않은 변경사항",
-    "unsavedChangesDescription": "저장되지 않은 변경사항이 있습니다. 변경사항을 삭제하시겠습니까?",
-    "discardConfirm": "삭제",
+    "unsavedChangesDescription": "저장되지 않은 변경사항이 있습니다. 변경사항을 취소하시겠습니까?",
+    "discardConfirm": "변경 취소",
     "discardCancel": "취소",
     "twoColumnLayout": "2단 레이아웃",
     "oneColumnLayout": "1단 레이아웃",
@@ -123912,7 +123912,7 @@
     "last": "마지막",
     "dynamicTabTitle": "동적 탭",
     "addDynamicTab": "동적 탭 추가",
-    "dynamicTabHint": "모듈을 별도 탭으로 표시합니다. 이 탭은 전체 필드 탭과 작업 탭 사이에 배치됩니다.",
+    "dynamicTabHint": "모듈을 추가하면 별도 탭으로 표시됩니다. 이 탭은 전체 필드 탭과 작업 탭 사이에 배치됩니다.",
     "editActions": "액션 편집",
     "actionsHint": "필요에 따라 사용자에게 모듈을 표시하거나 숨기거나 순서를 바꾸세요.",
     "actionCardsCount": "액션 카드({count})",
@@ -123937,7 +123937,7 @@
     "visibleFields": "필드 관리",
     "hiddenFieldsList": "숨겨진 필드",
     "searchFields": "필드 검색...",
-    "moreFields": "+{count}개 더 보기",
+    "moreFields": "+{count}개 더",
     "noFieldsAvailable": "사용 가능한 필드가 없습니다",
     "noFieldsTitle": "표시되는 필드 없음",
     "noFieldsDescription": "위 드롭다운에서 필드를 추가하세요",
@@ -123962,7 +123962,7 @@
     "sampleTag3": "워크플로우 최적 기회",
     "sampleTag4": "공유 리드",
     "sampleTag5": "핫 리드",
-    "moreTags": "{count}개 더...",
+    "moreTags": "{count}개 더",
     "displayModeLabel": "표시 모드",
     "displayModeDropdown": "드롭다운",
     "displayModeTabs": "탭",
@@ -123985,7 +123985,7 @@
      "delete": "삭제"
     },
     "actionTypes": {
-     "opportunity": "기회 관리",
+     "opportunity": "기회",
      "workflows": "워크플로우",
      "clientPortal": "클라이언트 포탈",
      "dnd": "수신거부",
@@ -123999,7 +123999,7 @@
      "conversations": "대화",
      "activity": "활동",
      "associations": "연관",
-     "opportunities": "기회 관리",
+     "opportunities": "기회",
      "tasks": "작업",
      "notes": "메모",
      "appointments": "예약",
@@ -124093,8 +124093,8 @@
     "editAssignedUsersTitle": "'{viewName}' 사용자 편집",
     "copySuffix": "사본",
     "unsavedChangesTitle": "저장되지 않은 변경사항",
-    "unsavedChangesDescription": "저장되지 않은 배정 변경사항이 있습니다. 삭제하시겠습니까?",
-    "discardConfirm": "삭제",
+    "unsavedChangesDescription": "저장되지 않은 배정 변경사항이 있습니다. 변경사항을 취소하시겠습니까?",
+    "discardConfirm": "변경 취소",
     "discardCancel": "취소"
    },
    "opportunities": {
@@ -124188,7 +124188,7 @@
     "received": "수신됨",
     "sentBy": "보낸 사람",
     "answeredBy": "응답자",
-    "provider": "결제 제공자",
+    "provider": "제공업체",
     "segments": "세그먼트",
     "segmentsEstimate": "약 {count}",
     "account": "계정",
@@ -124213,7 +124213,7 @@
     "nextSlaTarget": "SLA 목표 시간 임박 순",
     "slaOverdue": "{time} 초과",
     "slaOverdueTooltip": "SLA {time} 초과",
-    "star": "별표",
+    "star": "즐겨찾기 추가",
     "unstar": "즐겨찾기 해제",
     "photo": "사진",
     "photos": "사진 {count}장",
@@ -126591,7 +126591,7 @@
      "conversations": "대화",
      "activity": "활동",
      "associations": "연관",
-     "opportunities": "기회 관리",
+     "opportunities": "기회",
      "tasks": "작업",
      "notes": "메모",
      "appointments": "예약",
@@ -126601,7 +126601,7 @@
      "agentLogs": "에이전트 로그"
     },
     "actionTypes": {
-     "opportunity": "기회 추가",
+     "opportunity": "기회",
      "workflows": "워크플로우에 추가",
      "clientPortal": "클라이언트 포탈",
      "dnd": "수신거부 설정",

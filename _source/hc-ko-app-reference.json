@@ -332009,7 +332009,7 @@
  },
  "addAssociations.pairedWith": {
   "en": "{first} (paired with {second})",
-  "ko": "{first}(짝: {second})"
+  "ko": "{first}(연결: {second})"
  },
  "addAssociations.systemLabels.OPPORTUNITY_TO_CONTACT": {
   "en": "Linked contact",
@@ -332065,7 +332065,7 @@
  },
  "common.saveAndAddAnother": {
   "en": "Save and add another",
-  "ko": "저장 후 추가"
+  "ko": "저장 후 새로 추가"
  },
  "common.saveNotAllowed": {
   "en": "Save in progress",
@@ -332221,11 +332221,11 @@
  },
  "unsavedModal.description": {
   "en": "You have unsaved changes. Would you like to save them or discard?",
-  "ko": "저장되지 않은 변경사항이 있습니다. 저장하시겠습니까, 아니면 삭제하시겠습니까?"
+  "ko": "저장되지 않은 변경사항이 있습니다. 저장하시겠습니까, 아니면 변경사항을 취소하시겠습니까?"
  },
  "unsavedModal.discard": {
   "en": "Discard",
-  "ko": "삭제"
+  "ko": "변경 취소"
  },
  "unsavedModal.save": {
   "en": "Save changes",
@@ -332409,7 +332409,7 @@
  },
  "input.Phone.label.Home": {
   "en": "Home",
-  "ko": "홈"
+  "ko": "자택"
  },
  "DnDChannels.or": {
   "en": "OR",
@@ -332457,7 +332457,7 @@
  },
  "DnDChannels.updatedMessage": {
   "en": "Updated by '{userName}' at {timestamp}",
-  "ko": "'{userName}'님이 {timestamp}에 업데이트함"
+  "ko": "'{userName}'님이 {timestamp}에 업데이트했습니다"
  },
  "conversationPanel.errorTitle": {
   "en": "Oops! Something went wrong",
@@ -332509,7 +332509,7 @@
  },
  "standardFields.address1": {
   "en": "Street address",
-  "ko": "상세 주소"
+  "ko": "도로명 주소"
  },
  "standardFields.city": {
   "en": "City",
@@ -332557,7 +332557,7 @@
  },
  "standardFields.monetary_value": {
   "en": "Value",
-  "ko": "값"
+  "ko": "금액"
  },
  "standardFields.assigned_to": {
   "en": "Owner",
@@ -333013,11 +333013,11 @@
  },
  "viewBuilder.unsavedChangesDescription": {
   "en": "You have unsaved changes. Would you like to discard them?",
-  "ko": "저장되지 않은 변경사항이 있습니다. 변경사항을 삭제하시겠습니까?"
+  "ko": "저장되지 않은 변경사항이 있습니다. 변경사항을 취소하시겠습니까?"
  },
  "viewBuilder.discardConfirm": {
   "en": "Discard",
-  "ko": "삭제"
+  "ko": "변경 취소"
  },
  "viewBuilder.discardCancel": {
   "en": "Cancel",
@@ -333249,7 +333249,7 @@
  },
  "viewBuilder.dynamicTabHint": {
   "en": "Add a module to appear as a separate tab. This will be placed between all fields and actions tab.",
-  "ko": "모듈을 별도 탭으로 표시합니다. 이 탭은 전체 필드 탭과 작업 탭 사이에 배치됩니다."
+  "ko": "모듈을 추가하면 별도 탭으로 표시됩니다. 이 탭은 전체 필드 탭과 작업 탭 사이에 배치됩니다."
  },
  "viewBuilder.editActions": {
   "en": "Edit actions",
@@ -333349,7 +333349,7 @@
  },
  "viewBuilder.moreFields": {
   "en": "+{count} more",
-  "ko": "+{count}개 더 보기"
+  "ko": "+{count}개 더"
  },
  "viewBuilder.noFieldsAvailable": {
   "en": "No fields available",
@@ -333449,7 +333449,7 @@
  },
  "viewBuilder.moreTags": {
   "en": "{count} more",
-  "ko": "{count}개 더..."
+  "ko": "{count}개 더"
  },
  "viewBuilder.displayModeLabel": {
   "en": "Display mode",
@@ -333521,7 +333521,7 @@
  },
  "viewBuilder.actionTypes.opportunity": {
   "en": "Opportunities",
-  "ko": "기회 관리"
+  "ko": "기회"
  },
  "viewBuilder.actionTypes.workflows": {
   "en": "Workflows",
@@ -333569,7 +333569,7 @@
  },
  "viewBuilder.moduleLabels.opportunities": {
   "en": "Opportunities",
-  "ko": "기회 관리"
+  "ko": "기회"
  },
  "viewBuilder.moduleLabels.tasks": {
   "en": "Tasks",
@@ -333933,11 +333933,11 @@
  },
  "contactViews.unsavedChangesDescription": {
   "en": "You have unsaved assignment changes. Discard them?",
-  "ko": "저장되지 않은 배정 변경사항이 있습니다. 삭제하시겠습니까?"
+  "ko": "저장되지 않은 배정 변경사항이 있습니다. 변경사항을 취소하시겠습니까?"
  },
  "contactViews.discardConfirm": {
   "en": "Discard",
-  "ko": "삭제"
+  "ko": "변경 취소"
  },
  "contactViews.discardCancel": {
   "en": "Cancel",
@@ -334185,7 +334185,7 @@
  },
  "compactMessageDetails.provider": {
   "en": "Provider",
-  "ko": "결제 제공자"
+  "ko": "제공업체"
  },
  "compactMessageDetails.segments": {
   "en": "Segments",
@@ -334277,7 +334277,7 @@
  },
  "compactList.star": {
   "en": "Star",
-  "ko": "별표"
+  "ko": "즐겨찾기 추가"
  },
  "compactList.unstar": {
   "en": "Unstar",
