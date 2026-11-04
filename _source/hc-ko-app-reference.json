@@ -132769,7 +132769,7 @@
  },
  "adPublishingApp.campaignCreation.lifetimeBudget": {
   "en": "Lifetime",
-  "ko": "평생"
+  "ko": "총 예산"
  },
  "adPublishingApp.campaignCreation.estimatedReach": {
   "en": "Estimated reach",
@@ -133093,7 +133093,7 @@
  },
  "adPublishingApp.campaignCreation.reviewNote": {
   "en": "After publishing campaign, create conversion API workflow to send the leads to ad pixel. Create new pixel from Ad Manager > Settings",
-  "ko": "캠페인을 게시한 후 리드를 광고 픽셀로 보내는 전환 API 워크플로우를 만드세요. Ad Manager > 설정에서 새 픽셀을 만들 수 있습니다"
+  "ko": "캠페인을 게시한 후 리드를 광고 픽셀로 보내는 전환 API 워크플로우를 만드세요. 광고 관리자 > 설정에서 새 픽셀을 만들 수 있습니다"
  },
  "adPublishingApp.campaignCreation.noDataFound": {
   "en": "No {data} found.",
@@ -136905,7 +136905,7 @@
  },
  "adPublishingApp.oAuthFunnel.facebookPermissionsSubHeader": {
   "en": "Permissions needed to connect Facebook pages with Ad Manager",
-  "ko": "Facebook 페이지를 Ad Manager 에 연결하는 데 필요한 권한"
+  "ko": "Facebook 페이지를 광고 관리자에 연결하는 데 필요한 권한"
  },
  "adPublishingApp.oAuthFunnel.adminPermissions.header": {
   "en": "Admin permissions",
@@ -137493,7 +137493,7 @@
  },
  "adPublishingApp.settings.subscription.cancellationFailedDesc": {
   "en": "It seems like there is an error with your cancelation request. Please raise a ticket directly with the support team to cancel Ad Manager for {location}.",
-  "ko": "취소 요청에 오류가 있는 것 같습니다. {location} 의 Ad Manager 를 취소하려면 지원팀에 직접 티켓을 제출해 주세요."
+  "ko": "취소 요청에 오류가 있는 것 같습니다. {location} 의 광고 관리자를 취소하려면 지원팀에 직접 티켓을 제출해 주세요."
  },
  "adPublishingApp.settings.subscription.okay": {
   "en": "Okay",
@@ -138785,7 +138785,7 @@
  },
  "adPublishingApp.notifications.missingAdminPermissionsDesc": {
   "en": "Admin permissions are needed to successfully connect Facebook pages with Ad Manager, click on the bulb icon to gain insights and get the required admin privileges.",
-  "ko": "Facebook 페이지를 Ad Manager와 연결하려면 관리자 권한이 필요합니다. 전구 아이콘을 클릭하면 자세한 안내를 확인하고 필요한 관리자 권한을 얻을 수 있습니다."
+  "ko": "Facebook 페이지를 광고 관리자와 연결하려면 관리자 권한이 필요합니다. 전구 아이콘을 클릭하면 자세한 안내를 확인하고 필요한 관리자 권한을 얻을 수 있습니다."
  },
  "adPublishingApp.notifications.pleaseSelectScheduleDates": {
   "en": "Please add the scheduled dates for the campaign",
@@ -139393,7 +139393,7 @@
  },
  "adPublishingApp.payment.subHeading": {
   "en": "Initiate your monthly subscription to make the most of Ad Manager",
-  "ko": "월간 구독을 시작하여 Ad Manager 를 최대한 활용하세요"
+  "ko": "월간 구독을 시작하여 광고 관리자를 최대한 활용하세요"
  },
  "adPublishingApp.payment.planSubHeading": {
   "en": "The monthly budget includes {markup}% subscription fees",
@@ -139405,7 +139405,7 @@
  },
  "adPublishingApp.payment.featuresSubHeading": {
   "en": "As an Ad Manager subscriber you will enjoy",
-  "ko": "Ad Manager 구독자로서 다음 혜택을 누릴 수 있습니다"
+  "ko": "광고 관리자 구독자로서 다음 혜택을 누릴 수 있습니다"
  },
  "adPublishingApp.payment.featureList.list1": {
   "en": "Connect an ad account and run ads based on your objectives",
@@ -139945,7 +139945,7 @@
  },
  "adPublishingApp.reselling.utilityTooltip": {
   "en": "Resell Ad Manager to unlimited locations at no additional payment to HL.",
-  "ko": "HL에 추가 비용 없이 무제한 서브 계정에 Ad Manager를 리셀할 수 있습니다."
+  "ko": "추가 비용 없이 무제한 서브 계정에 광고 관리자를 재판매할 수 있습니다."
  },
  "adPublishingApp.reselling.foundersTooltip": {
   "en": "Resell to unlimited locations at $970 instead of $1164 yearly.",
@@ -139985,7 +139985,7 @@
  },
  "adPublishingApp.reselling.connectStripeContent": {
   "en": "To proceed with your Ad Manager purchase, please connect your Stripe account or contact {email}",
-  "ko": "Ad Manager 구매를 진행하려면 Stripe 계정을 연결하거나 {email} 로 문의해 주세요"
+  "ko": "광고 관리자 구매를 진행하려면 Stripe 계정을 연결하거나 {email} 로 문의해 주세요"
  },
  "adPublishingApp.reselling.connectStripeContentUser": {
   "en": "To proceed with your Ad Manager purchase, please reach out to {email}",
@@ -140013,7 +140013,7 @@
  },
  "adPublishingApp.reselling.promoModalTitle": {
   "en": "Try Ad Manager free for 14 days!",
-  "ko": "Ad Manager를 14일간 무료로 사용해 보세요"
+  "ko": "광고 관리자를 14일간 무료로 사용해 보세요"
  },
  "adPublishingApp.reselling.promoModalSubTitle": {
   "en": "Unlock the Utility Plan: $97/month for unlimited locations",
@@ -140021,7 +140021,7 @@
  },
  "adPublishingApp.reselling.existingUserFreeTrial": {
   "en": "Try Ad Manager free for 14 days with the Utility Plan!",
-  "ko": "유틸리티 플랜으로 Ad Manager 를 14일간 무료로 사용해 보세요"
+  "ko": "유틸리티 플랜으로 광고 관리자를 14일간 무료로 사용해 보세요"
  },
  "adPublishingApp.reselling.freeTrialActive": {
   "en": "Your 14 days trial period is active till {date}",
@@ -140041,7 +140041,7 @@
  },
  "adPublishingApp.reselling.cancelModalHeader": {
   "en": "Cancel free trial of Ad Manager",
-  "ko": "Ad Manager 무료 체험 취소"
+  "ko": "광고 관리자 무료 체험 취소"
  },
  "adPublishingApp.assetBuilder.phoneNumber": {
   "en": "Phone number",
@@ -345053,11 +345053,11 @@
  },
  "adPublishingApp.campaignCreation.mirroredDestination.adBannerAfter": {
   "en": "conversion location. No changes can be made here.",
-  "ko": "전환 위치입니다. 여기서는 변경할 수 없습니다."
+  "ko": "전환 위치를 제한적으로만 지원합니다. 여기서는 변경할 수 없습니다."
  },
  "adPublishingApp.campaignCreation.mirroredDestination.adsetBannerAfter": {
   "en": "conversion location. Only select fields can be edited here.",
-  "ko": "전환 위치입니다. 여기서는 선택된 필드만 편집할 수 있습니다."
+  "ko": "전환 위치를 제한적으로만 지원합니다. 여기서는 일부 필드만 편집할 수 있습니다."
  },
  "adPublishingApp.campaignCreation.mirroredDestination.bannerBefore": {
   "en": "Ad Manager has limited support for the",
@@ -345137,7 +345137,7 @@
  },
  "adPublishingApp.campaignCreation.shareBudgetMixedScheduleTooltip": {
   "en": "Ad set budget sharing is unavailable because ad sets with a lifetime budget must share the same start and end date in the ad account's timezone.",
-  "ko": "라이프타임 예산을 사용하는 광고 세트는 광고 계정 시간대에서 동일한 시작일 및 종료일을 공유해야 하므로 광고 세트 예산 공유를 사용할 수 없습니다."
+  "ko": "총 예산을 사용하는 광고 세트는 광고 계정 시간대에서 동일한 시작일 및 종료일을 공유해야 하므로 광고 세트 예산 공유를 사용할 수 없습니다."
  },
  "adPublishingApp.campaignCreation.shareBudgetMixedTooltip": {
   "en": "Ad set budget sharing is unavailable because it only supports ad sets using the same budget type.",
@@ -345565,7 +345565,7 @@
  },
  "adPublishingApp.campaignCreation.tiktok.previewIdentity": {
   "en": "Your identity",
-  "ko": "내 정체성"
+  "ko": "내 게시 계정"
  },
  "adPublishingApp.campaignCreation.tiktok.previewNoMedia": {
   "en": "No media added yet",
@@ -345673,15 +345673,15 @@
  },
  "adPublishingApp.campaignDashboard.listing.createdInAdManager": {
   "en": "Created in Ad Manager.",
-  "ko": "Ad Manager에서 생성됨."
+  "ko": "광고 관리자에서 생성되었습니다."
  },
  "adPublishingApp.campaignDashboard.listing.createdInGoogle": {
   "en": "Created in Google Ads, synced to Ad Manager.",
-  "ko": "Google Ads에서 생성되어 Ad Manager에 동기화됨."
+  "ko": "Google Ads에서 생성되어 광고 관리자에 동기화되었습니다."
  },
  "adPublishingApp.campaignDashboard.listing.createdInMeta": {
   "en": "Created in Meta, synced to Ad Manager.",
-  "ko": "Meta에서 생성됨, Ad Manager에 동기화됨."
+  "ko": "Meta에서 생성되어 광고 관리자에 동기화되었습니다."
  },
  "adPublishingApp.campaignDashboard.listing.createdInTooltip": {
   "en": "Where this campaign was first created.",
@@ -345689,7 +345689,7 @@
  },
  "adPublishingApp.campaignDashboard.sourceFilter.adManager": {
   "en": "Created in Ad Manager",
-  "ko": "Ad Manager에서 생성됨"
+  "ko": "광고 관리자에서 생성됨"
  },
  "adPublishingApp.campaignDashboard.sourceFilter.native": {
   "en": "Created in native platform",
@@ -345697,7 +345697,7 @@
  },
  "adPublishingApp.campaignDashboard.useTemplatesComingSoon": {
   "en": "Ad Manager templates (Coming soon)",
-  "ko": "Ad Manager 템플릿 (출시 예정)"
+  "ko": "광고 관리자 템플릿 (출시 예정)"
  },
  "adPublishingApp.notifications.costPerResultOutOfRange": {
   "en": "Cost per result goal in ad set - {adsetName} must be between {min} and {max}",
@@ -345713,7 +345713,7 @@
  },
  "adPublishingApp.notifications.duplicateSkippedAdsetsDesc": {
   "en": "{names}: Ad Manager can't create their conversion location.",
-  "ko": "{names}: Ad Manager가 전환 위치를 생성할 수 없습니다."
+  "ko": "{names}: 광고 관리자가 전환 위치를 생성할 수 없습니다."
  },
  "adPublishingApp.notifications.duplicateSkippedAdsetsTitle": {
   "en": "Some ad sets were not copied",
@@ -345773,7 +345773,7 @@
  },
  "adPublishingApp.notifications.errorTitles.tiktok.identity": {
   "en": "Identity missing",
-  "ko": "신원(identity) 없음"
+  "ko": "게시 계정 없음"
  },
  "adPublishingApp.notifications.errorTitles.tiktok.music": {
   "en": "Music missing",
@@ -345797,7 +345797,7 @@
  },
  "adPublishingApp.notifications.pleaseSelectCampaignScheduleDates": {
   "en": "Select start and end dates for the lifetime campaign budget",
-  "ko": "평생 캠페인 예산의 시작일과 종료일을 선택하세요"
+  "ko": "캠페인 총 예산의 시작일과 종료일을 선택하세요"
  },
  "adPublishingApp.notifications.pleaseSelectValidCta": {
   "en": "The call to action of ad {adName} in ad set {adsetName} is not available for its conversion location. Pick another one.",
@@ -345885,7 +345885,7 @@
  },
  "adPublishingApp.notifications.tiktok.leadAdsTermsNotAcceptedTitle": {
   "en": "Agreement not accepted",
-  "ko": "동의서가 승인되지 않음"
+  "ko": "약관에 동의하지 않음"
  },
  "adPublishingApp.notifications.tiktok.locationRequired": {
   "en": "Add at least one location in ad group - {group}",
@@ -346705,7 +346705,7 @@
  },
  "agencyDashboardApp.agencyDashboard.reselling.costVsRevenueTT": {
   "en": "Cost excludes direct-deployed instances of all products.",
-  "ko": "비용에는 모든 상품의 다이렉트 배포 인스턴스가 제외됩니다."
+  "ko": "비용에서 모든 상품의 다이렉트 배포 인스턴스는 제외됩니다."
  },
  "agencyDashboardApp.agencyDashboard.reselling.grossProfitByProduct": {
   "en": "Gross profit by product",
@@ -346713,11 +346713,11 @@
  },
  "agencyDashboardApp.agencyDashboard.reselling.grossProfitByProductTT": {
   "en": "Cost excludes direct-deployed instances of all products.",
-  "ko": "비용에는 모든 상품의 다이렉트 배포 인스턴스가 제외됩니다."
+  "ko": "비용에서 모든 상품의 다이렉트 배포 인스턴스는 제외됩니다."
  },
  "agencyDashboardApp.agencyDashboard.reselling.grossProfitTT": {
   "en": "Cost excludes direct-deployed instances of all products.",
-  "ko": "비용에는 모든 상품의 다이렉트 배포 인스턴스가 제외됩니다."
+  "ko": "비용에서 모든 상품의 다이렉트 배포 인스턴스는 제외됩니다."
  },
  "agencyDashboardApp.agencyDashboard.reselling.includeOnlyRebilled": {
   "en": "Include only rebilled transactions",
