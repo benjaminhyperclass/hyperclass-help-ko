@@ -30909,7 +30909,7 @@
  },
  "agentReporting.mostWonOpportunities": {
   "en": "Most won opportunities",
-  "ko": "고객전환성공 최다 기회"
+  "ko": "최다 고객전환성공 기회"
  },
  "agentReporting.mostOpportunities": {
   "en": "Most opportunities",
@@ -48189,7 +48189,7 @@
  },
  "reportingApp.locationDashboard.widgetDefinitions.titleOpportunityLostValue": {
   "en": "Lost {opportunity} value",
-  "ko": "고객전환실패 {opportunity} 가치"
+  "ko": "고객전환실패 {opportunity} 금액"
  },
  "reportingApp.locationDashboard.widgetDefinitions.descriptionOpportunityLostValue": {
   "en": "The value(monetary) of lost {opportunities}",
@@ -187953,7 +187953,7 @@
  },
  "opportunities.enterValidLostReason": {
   "en": "Please enter a valid lost reason",
-  "ko": "올바른 고객전환실패 사유를 입력해주세요"
+  "ko": "올바른 고객전환실패 사유를 입력해 주세요"
  },
  "opportunities.lostReasonCreated": {
   "en": "Lost reason created successfully",
@@ -301309,7 +301309,7 @@
  },
  "opportunitiesApp.opportunities.enterValidLostReason": {
   "en": "Please enter a valid lost reason",
-  "ko": "올바른 고객전환실패 사유를 입력해주세요"
+  "ko": "올바른 고객전환실패 사유를 입력해 주세요"
  },
  "opportunitiesApp.opportunities.expandStage": {
   "en": "Expand stage",
