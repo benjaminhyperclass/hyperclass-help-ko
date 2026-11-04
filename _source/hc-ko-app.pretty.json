@@ -61661,7 +61661,8 @@
      "todaysUsage": "오늘 사용량",
      "wallet_summary": {
       "balance_lower": "잔액이 다음보다 낮을 때"
-     }
+     },
+     "emailSendingLimitsDescription": "에이전시 수준의 한도 업데이트가 제거되었습니다. 공유 도메인의 일일 최대 발송량은 하이퍼클래스 이메일의 단계별 기준을 따릅니다. 현재 한도와 사용량은 이메일 서비스에서 확인하세요."
     },
     "agencySubAccountModals": {
      "removal": {
@@ -61729,7 +61730,8 @@
      "settings": {
       "revokeDedication": "전용 해제",
       "switchToMarkup": "마크업으로 전환",
-      "useSameTwilio": "내 Twilio 계정입니다. 같은 계정 사용"
+      "useSameTwilio": "내 Twilio 계정입니다. 같은 계정 사용",
+      "limitToLCEmailOnly": "하이퍼클래스 이메일로만 제한"
      }
     },
     "saas": {
@@ -61804,7 +61806,9 @@
    "submissions": "제출",
    "waitlist": {
     "phone": "전화번호"
-   }
+   },
+   "managedByLCPhone": "하이퍼클래스 전화에서 관리",
+   "migrationToLCPhone": "하이퍼클래스 전화로 마이그레이션 중"
   },
   "opportunitiesApp": {
    "appointments": {

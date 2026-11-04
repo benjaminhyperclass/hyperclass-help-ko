@@ -344918,5 +344918,21 @@
  "resize": {
   "en": "Resize",
   "ko": "크기 조정"
+ },
+ "locationsApp.managedByLCPhone": {
+  "en": "Managed by LC Phone",
+  "ko": "하이퍼클래스 전화에서 관리"
+ },
+ "locationsApp.migrationToLCPhone": {
+  "en": "Under migration to LC Phone",
+  "ko": "하이퍼클래스 전화로 마이그레이션 중"
+ },
+ "locationsApp.manageSubAccount.rebilling.settings.limitToLCEmailOnly": {
+  "en": "Limited to LC Email only",
+  "ko": "하이퍼클래스 이메일로만 제한"
+ },
+ "locationsApp.manageSubAccount.advancedSettings.emailSendingLimitsDescription": {
+  "en": "Agency-level Update Limit has been removed. Daily maximums follow stage-based LC Email logic for shared domains. Open Email Service to see the current cap and usage.",
+  "ko": "에이전시 수준의 한도 업데이트가 제거되었습니다. 공유 도메인의 일일 최대 발송량은 하이퍼클래스 이메일의 단계별 기준을 따릅니다. 현재 한도와 사용량은 이메일 서비스에서 확인하세요."
  }
 }
