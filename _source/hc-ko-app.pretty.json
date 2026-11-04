@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "version": "4.2.25",
+  "version": "4.2.26",
   "built": "2026-11-04",
-  "source": "talBuilder (reference seed) + round 2026-11-03 contactsApp (reference seed) + round 2026-11-03 conversations (reference seed) + round 2026-11-03 crmCommon (reference seed) + round 2026-11-03 crmObjectsSettingsApp (reference seed) + round 2026-11-03 domainResellingApp (reference seed) + round 2026-11-03 formSurveyApp (reference seed) + round 2026-11-03 funnelWebsiteApp (reference seed) + round 2026-11-03 ghlEmailBuilderCommon (reference seed) + round 2026-11-03 integrationsApp (reference seed) + round 2026-11-03 launchpadApp (reference seed) + round 2026-11-03 locationsApp (reference seed) + round 2026-11-03 onboardingApp (reference seed) + round 2026-11-03 opportunitiesApp (reference seed) + round 2026-11-03 payments (reference seed) + round 2026-11-03 powerDialerApp (reference seed) + round 2026-11-03 productsApp (reference seed) + round 2026-11-03 proposalCommon (reference seed) + round 2026-11-03 reportingApp (reference seed) + round 2026-11-03 reputationApp (reference seed) + round 2026-11-03 restaurants (reference seed) + round 2026-11-03 schemaMarkupApp (reference seed) + round 2026-11-03 socialPlannerApp (reference seed) + round 2026-11-03 storeWidgetApp (reference seed) + round 2026-11-03 usersMicroApp (reference seed) + round 2026-11-03 wordpressApp (reference seed) + 신규 계정 빈 화면·첫 설정 화면 _text 219건·_textScoped 7건 (유포리아 hc-gap 2026-11-03, 참조본·레거시 번역 재사용 + 신규 번역, 글로서리 적용) + Won/Lost → 고객전환성공/고객전환실패 (벤자민 2026-11-04) + DND→수신거부 · Notes→메모 · 단독 Delete 원문 유지(벤자민 2026-11-04)",
+  "source": "talBuilder (reference seed) + round 2026-11-03 contactsApp (reference seed) + round 2026-11-03 conversations (reference seed) + round 2026-11-03 crmCommon (reference seed) + round 2026-11-03 crmObjectsSettingsApp (reference seed) + round 2026-11-03 domainResellingApp (reference seed) + round 2026-11-03 formSurveyApp (reference seed) + round 2026-11-03 funnelWebsiteApp (reference seed) + round 2026-11-03 ghlEmailBuilderCommon (reference seed) + round 2026-11-03 integrationsApp (reference seed) + round 2026-11-03 launchpadApp (reference seed) + round 2026-11-03 locationsApp (reference seed) + round 2026-11-03 onboardingApp (reference seed) + round 2026-11-03 opportunitiesApp (reference seed) + round 2026-11-03 payments (reference seed) + round 2026-11-03 powerDialerApp (reference seed) + round 2026-11-03 productsApp (reference seed) + round 2026-11-03 proposalCommon (reference seed) + round 2026-11-03 reportingApp (reference seed) + round 2026-11-03 reputationApp (reference seed) + round 2026-11-03 restaurants (reference seed) + round 2026-11-03 schemaMarkupApp (reference seed) + round 2026-11-03 socialPlannerApp (reference seed) + round 2026-11-03 storeWidgetApp (reference seed) + round 2026-11-03 usersMicroApp (reference seed) + round 2026-11-03 wordpressApp (reference seed) + 신규 계정 빈 화면·첫 설정 화면 _text 219건·_textScoped 7건 (유포리아 hc-gap 2026-11-03, 참조본·레거시 번역 재사용 + 신규 번역, 글로서리 적용) + Won/Lost → 고객전환성공/고객전환실패 (벤자민 2026-11-04) + DND→수신거부 · Notes→메모 · 단독 Delete 원문 유지(벤자민 2026-11-04) + 포털 이메일 설정·구독 설정 _text 7 (2026-11-04)",
   "strings": 102718
  },
  "host": {
@@ -133277,7 +133277,14 @@
   "Exclude domains from automatic association": "자동 연결에서 도메인 제외",
   "Add custom fields": "커스텀 필드 추가",
   "Save changes": "변경사항 저장",
-  "Enter name": "이름을 입력하세요"
+  "Enter name": "이름을 입력하세요",
+  "Enable or disable email notifications for your group members and customize the emails they receive.": "그룹 멤버를 위한 이메일 알림을 활성화 또는 비활성화하고 수신하는 이메일을 맞춤 설정하세요.",
+  "Client Portal": "클라이언트 포탈",
+  "Retry 1 day after the previous attempt": "이전 시도 1일 후 재시도",
+  "Retry 3 day after the previous attempt": "이전 시도 3일 후 재시도",
+  "Retry 5 day after the previous attempt": "이전 시도 5일 후 재시도",
+  "Retry 7 day after the previous attempt": "이전 시도 7일 후 재시도",
+  "subscription.settings.paymentFailure.communicationChannels[1]": "SMS"
  },
  "_textScoped": {
   "AM": "오전",
