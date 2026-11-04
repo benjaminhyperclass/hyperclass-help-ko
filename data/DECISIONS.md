@@ -143,3 +143,12 @@ superagentsApp(Managed Agents 빌더·목록·채팅 레이어)의 제품명 표
 - **Notes → 메모**: 이전 메모 126 : 노트 90 혼용. 릴리스 노트·크레딧 노트·노트북은 예외, Sticky notes 는 윈도우 표기 '스티커 메모'. 글로서리 Note 등재(variants 없음 — 예외 단어 보호).
 - **단독 'Delete'(대소문자 무관) 는 번역하지 않는다**: 버튼·메뉴 '삭제' 198곳을 배포본에서 뺀다 → 화면에 'Delete' 원문. 문장 속 delete 는 번역 유지. `data/ko-app-exclusions.json` 에 영어 원문 단위 제외(`english`) 신설 — split 이 참조본 영어로 경로를 대조해 host·apps·flat·_text·_textScoped 에서 제거, validate C10 이 잔존을 막는다. 편집 정본·참조본에는 '삭제'가 남아 번역 라운드가 다시 채우지 않는다. 되돌리려면 등재를 지우고 재분할. DELETE 확인 입력(DNT)·한글 '삭제' 입력 보조 어댑터는 그대로.
 - 번역기 프롬프트(`i18n-batch-translator.py`)에 Won/Lost·DND·Notes 확정 용어 규칙 추가.
+
+## [확정] 멤버십 앱(memberships remote) flat 카탈로그 전체 번역 · Title = 제목 — 2026-11-04
+
+벤자민 지시("멤버십 → 오퍼 화면에 영어가 많고 '직함'은 오역"). 멤버십 관리 화면(코스·오퍼·상품·강의·퀴즈·분석·공지·자격 증명·테마·결제 페이지 설정)은 `#membership` Vue 앱이 자체 `t(key)` 를 provide 하고, 로더가 그 t 를 감싸 `flat` 에서 한국어를 돌려준다. 그런데 flat 에는 카탈로그 4,186키 중 706키만 있었다(나머지는 영어).
+- 카탈로그 원본: 화면에 로드된 webpack 모듈(remote 2232)의 `JSON.parse` 리터럴에서 추출 → `data/membership/catalog-en-2232.json` 보관(다음 GHL 업데이트 때 diff 기준).
+- 신규 3,744키: 참조본 같은 영어 번역을 '제안'으로 붙여 10갈래 번역 → 4갈래 독립 검수(75건 수정) → 같은 영어 표기 통일 22건.
+- 기존 33키 수정: Title '직함' → '제목'(3), 자리표시자가 빠진 채 들어 있던 27키 복원(예: `"" 복제` → `"{title}" 복제`), common.post(s) 게시글 → 강의, common.product 제품 → 상품.
+- 이 앱 용어: Post/Lesson → 강의 · Product → 상품 · Offer → 오퍼 · Category → 카테고리 · Credential → 자격 증명 · Certificate → 수료증 · Setup fee → 설정 비용 · Discard → 변경 취소 · Visibility → 공개 범위 · Announcement → 공지 · Location → 서브 계정. 강사 정보의 Title(직업 표기)만 '직책'.
+- 한계: 로더 v4.19.1 의 t 래퍼는 인자 1개 호출만 flat 으로 바꾼다 → `{count}` 같은 값이 들어가는 198키는 여전히 영어. 로더에 이름 자리표시자 치환을 더하면 해결(별도 브랜치, 캐너리 절차).
