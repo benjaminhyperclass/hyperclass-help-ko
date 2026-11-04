@@ -127,3 +127,11 @@ superagentsApp(Managed Agents 빌더·목록·채팅 레이어)의 제품명 표
 ## [확정] 레거시 사전 제외 정리를 ui-updater 파이프라인에 편입 — 2026-10-08
 
 09-15 봇 커밋(`757d86f`)이 08-22 에 지운 EMA ejectModal 15건을 `ghl-i18n-ko.json` 에 되살려 ko-app-validate C10 이 실패했다. 원인은 en.json 에 원문이 남아 있어 번역 단계가 매번 다시 번역하는 것이다. ui-updater 에 빌드 전 `scripts/exclusions.py --legacy` 단계를 추가했다. 제외 등재 문구는 매 실행마다 걷어낸다.
+
+## [확정] 기회 상태 Won/Lost = 고객전환성공 / 고객전환실패 — 2026-11-04
+
+벤자민 결정. 이전 표기는 승리·성사·성공 / 손실·실패·패배가 화면마다 섞여 있었다(단독 라벨 51건 중 승리 23·손실 22·성사 3·실패 3).
+- 단독 상태값(Won/Lost/won/lost/LOST), Lost reason(→ 고객전환실패 사유), Won on/Lost on(→ 고객전환성공일·고객전환실패일), Won revenue(→ 고객전환성공 매출), won/lost opportunities(→ 고객전환성공·고객전환실패 기회), Mark as lost, 리포팅 위젯 제목·설명, `_text`·`_textScoped` 까지 일괄.
+- "changes will be lost"·"connection lost"·"revenue lost" 처럼 '사라짐' 뜻의 lost 는 제외.
+- 글로서리에 Won/Lost 등재(variants 없음 — '성공'·'실패'는 일반어라 자동 치환 금지).
+- 화면 칩·칸반 열 머리에서 6자라 말줄임될 수 있다 — 라이브에서 확인.

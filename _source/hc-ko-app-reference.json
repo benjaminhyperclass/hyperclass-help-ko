@@ -9689,7 +9689,7 @@
  },
  "common.lost": {
   "en": "Lost",
-  "ko": "손실"
+  "ko": "고객전환실패"
  },
  "common.nameIsRequired": {
   "en": "Name is required.",
@@ -9753,7 +9753,7 @@
  },
  "common.won": {
   "en": "Won",
-  "ko": "승리"
+  "ko": "고객전환성공"
  },
  "common.and": {
   "en": "AND",
@@ -21001,11 +21001,11 @@
  },
  "settings.customFields.idWillBeAdded": {
   "en": "ID will be added after lost reason is created",
-  "ko": "ID는 손실 사유 생성 후 추가됩니다"
+  "ko": "ID는 고객전환실패 사유 생성 후 추가됩니다"
  },
  "settings.customFields.lostReasonID": {
   "en": "Lost Reason ID",
-  "ko": "손실 사유 ID"
+  "ko": "고객전환실패 사유 ID"
  },
  "settings.customFields.placeholder": {
   "en": "Placeholder",
@@ -21917,11 +21917,11 @@
  },
  "smartList.won": {
   "en": "won",
-  "ko": "성사"
+  "ko": "고객전환성공"
  },
  "smartList.lost": {
   "en": "lost",
-  "ko": "실패"
+  "ko": "고객전환실패"
  },
  "smartList.abandoned": {
   "en": "abandoned",
@@ -29077,7 +29077,7 @@
  },
  "opportunities.lost": {
   "en": "Lost",
-  "ko": "손실"
+  "ko": "고객전환실패"
  },
  "opportunities.open": {
   "en": "Open",
@@ -29117,7 +29117,7 @@
  },
  "opportunities.won": {
   "en": "Won",
-  "ko": "승리"
+  "ko": "고객전환성공"
  },
  "opportunities.createdOn": {
   "en": "Created On",
@@ -29161,11 +29161,11 @@
  },
  "opportunities.filters.statuses.won": {
   "en": "Won",
-  "ko": "승리"
+  "ko": "고객전환성공"
  },
  "opportunities.filters.statuses.lost": {
   "en": "Lost",
-  "ko": "손실"
+  "ko": "고객전환실패"
  },
  "opportunities.filters.statuses.abandoned": {
   "en": "Abandoned",
@@ -29241,11 +29241,11 @@
  },
  "opportunities.dragActions.lost": {
   "en": "Lost",
-  "ko": "손실"
+  "ko": "고객전환실패"
  },
  "opportunities.dragActions.won": {
   "en": "Won",
-  "ko": "승리"
+  "ko": "고객전환성공"
  },
  "opportunities.getStarted": {
   "en": "get started!",
@@ -30841,7 +30841,7 @@
  },
  "agentReporting.won": {
   "en": "Won",
-  "ko": "승리"
+  "ko": "고객전환성공"
  },
  "agentReporting.abandoned": {
   "en": "Abandoned",
@@ -30849,7 +30849,7 @@
  },
  "agentReporting.lost": {
   "en": "Lost",
-  "ko": "손실"
+  "ko": "고객전환실패"
  },
  "agentReporting.conversions": {
   "en": "Conversions",
@@ -30909,7 +30909,7 @@
  },
  "agentReporting.mostWonOpportunities": {
   "en": "Most won opportunities",
-  "ko": "최다 성공 기회"
+  "ko": "최다 고객전환성공 기회"
  },
  "agentReporting.mostOpportunities": {
   "en": "Most opportunities",
@@ -31333,7 +31333,7 @@
  },
  "adReporting.wonDate": {
   "en": "Won date",
-  "ko": "성공 일자"
+  "ko": "고객전환성공일"
  },
  "adReporting.fullName": {
   "en": "Full name",
@@ -44865,7 +44865,7 @@
  },
  "reportingApp.callReporting.wonDeals": {
   "en": "Won deals",
-  "ko": "성사된 딜"
+  "ko": "고객전환성공 딜"
  },
  "reportingApp.callReporting.callReporting": {
   "en": "Call report",
@@ -45209,7 +45209,7 @@
  },
  "reportingApp.attributionReporting.opportunitiesClosed": {
   "en": "{Opportunities} won",
-  "ko": "성사된 {Opportunities}"
+  "ko": "고객전환성공 {Opportunities}"
  },
  "reportingApp.attributionReporting.totalLeads": {
   "en": "Total leads",
@@ -45361,11 +45361,11 @@
  },
  "reportingApp.common.won": {
   "en": "Won",
-  "ko": "승리"
+  "ko": "고객전환성공"
  },
  "reportingApp.common.lost": {
   "en": "Lost",
-  "ko": "손실"
+  "ko": "고객전환실패"
  },
  "reportingApp.common.abandoned": {
   "en": "Abandoned",
@@ -46685,7 +46685,7 @@
  },
  "reportingApp.locationDashboard.wonRevenue": {
   "en": "Won revenue",
-  "ko": "승리 수익"
+  "ko": "고객전환성공 매출"
  },
  "reportingApp.locationDashboard.tasks": {
   "en": "Tasks",
@@ -48117,35 +48117,35 @@
  },
  "reportingApp.locationDashboard.widgetDefinitions.titleOpportunityLostCount": {
   "en": "Lost {opportunities}",
-  "ko": "실패한 {opportunities}"
+  "ko": "고객전환실패 {opportunities}"
  },
  "reportingApp.locationDashboard.widgetDefinitions.descriptionOpportunityLostCount": {
   "en": "The number of lost {opportunities}",
-  "ko": "실패한 {opportunities}의 수"
+  "ko": "고객전환실패 {opportunities}의 수"
  },
  "reportingApp.locationDashboard.widgetDefinitions.titleOpportunityLostByReason": {
   "en": "Lost {opportunities} by reason",
-  "ko": "사유별 실패한 {opportunities}"
+  "ko": "사유별 고객전환실패 {opportunities}"
  },
  "reportingApp.locationDashboard.widgetDefinitions.descriptionOpportunityLostByReason": {
   "en": "Split of all lost {opportunities} by the reason",
-  "ko": "사유별 손실 {opportunities} 비율"
+  "ko": "사유별 고객전환실패 {opportunities} 비율"
  },
  "reportingApp.locationDashboard.widgetDefinitions.titleOpportunityWonCount": {
   "en": "Won {opportunities}",
-  "ko": "성사된 {opportunities}"
+  "ko": "고객전환성공 {opportunities}"
  },
  "reportingApp.locationDashboard.widgetDefinitions.descriptionOpportunityWonCount": {
   "en": "The number of won {opportunities}",
-  "ko": "성사된 {opportunities}의 수"
+  "ko": "고객전환성공 {opportunities}의 수"
  },
  "reportingApp.locationDashboard.widgetDefinitions.titleOpportunityWonCountThisMonthForMe": {
   "en": "Won {opportunities} this month (for you)",
-  "ko": "이번 달 성사된 {opportunities} (본인 기준)"
+  "ko": "이번 달 고객전환성공 {opportunities} (본인 기준)"
  },
  "reportingApp.locationDashboard.widgetDefinitions.descriptionOpportunityWonCountThisMonthForMe": {
   "en": "The number of won {opportunities} in current month for the logged in user",
-  "ko": "로그인한 사용자의 이번 달 성사된 {opportunities} 수"
+  "ko": "로그인한 사용자의 이번 달 고객전환성공 {opportunities} 수"
  },
  "reportingApp.locationDashboard.widgetDefinitions.titleOpportunityOpenCount": {
   "en": "Opened {opportunities}",
@@ -48165,35 +48165,35 @@
  },
  "reportingApp.locationDashboard.widgetDefinitions.titleOpportunityWonValue": {
   "en": "Won {opportunity} value",
-  "ko": "성사된 {opportunity} 금액"
+  "ko": "고객전환성공 {opportunity} 금액"
  },
  "reportingApp.locationDashboard.widgetDefinitions.descriptionOpportunityWonValue": {
   "en": "The value(monetary) of won {opportunities}",
-  "ko": "성사된 {opportunities}의 가치(금액)"
+  "ko": "고객전환성공 {opportunities}의 가치(금액)"
  },
  "reportingApp.locationDashboard.widgetDefinitions.titleOpportunityWonValueThisMonthForMe": {
   "en": "Won {opportunities} value this month (for you)",
-  "ko": "이번 달 성사된 {opportunities} 금액 (본인 기준)"
+  "ko": "이번 달 고객전환성공 {opportunities} 금액 (본인 기준)"
  },
  "reportingApp.locationDashboard.widgetDefinitions.descriptionOpportunityWonValueThisMonthForMe": {
   "en": "The total value(monetary) of won {opportunities} this month for logged in user",
-  "ko": "이번 달 로그인한 사용자의 성사된 {opportunities} 총 가치(금액)"
+  "ko": "이번 달 로그인한 사용자의 고객전환성공 {opportunities} 총 가치(금액)"
  },
  "reportingApp.locationDashboard.widgetDefinitions.titleOpportunityWonValueThisMonth": {
   "en": "Won {opportunities} value this month",
-  "ko": "이번 달 성사된 {opportunities} 금액"
+  "ko": "이번 달 고객전환성공 {opportunities} 금액"
  },
  "reportingApp.locationDashboard.widgetDefinitions.descriptionOpportunityWonValueThisMonth": {
   "en": "The total value(monetary) of won {opportunities} this month for all team members",
-  "ko": "이번 달 전체 팀원의 성사된 {opportunities} 총 가치(금액)"
+  "ko": "이번 달 전체 팀원의 고객전환성공 {opportunities} 총 가치(금액)"
  },
  "reportingApp.locationDashboard.widgetDefinitions.titleOpportunityLostValue": {
   "en": "Lost {opportunity} value",
-  "ko": "실패한 {opportunity} 가치"
+  "ko": "고객전환실패 {opportunity} 금액"
  },
  "reportingApp.locationDashboard.widgetDefinitions.descriptionOpportunityLostValue": {
   "en": "The value(monetary) of lost {opportunities}",
-  "ko": "실패한 {opportunities}의 가치(금액)"
+  "ko": "고객전환실패 {opportunities}의 가치(금액)"
  },
  "reportingApp.locationDashboard.widgetDefinitions.titleOpportunityAbandonedValue": {
   "en": "Abandoned {opportunity} value",
@@ -48513,7 +48513,7 @@
  },
  "reportingApp.locationDashboard.widgetDefinitions.descriptionConversionRate": {
   "en": "The conversion rate (%) and revenue generated by won {opportunities}",
-  "ko": "성사된 {opportunities}에 의한 전환율(%) 및 발생 수익"
+  "ko": "고객전환성공 {opportunities}에 의한 전환율(%) 및 발생 수익"
  },
  "reportingApp.locationDashboard.widgetDefinitions.titleOpportunityFunnel": {
   "en": "Funnel",
@@ -49293,7 +49293,7 @@
  },
  "reportingApp.locationDashboard.widgetDefinitions.lostReason": {
   "en": "Lost reason",
-  "ko": "실패 사유"
+  "ko": "고객전환실패 사유"
  },
  "reportingApp.locationDashboard.widgetDefinitions.sessionSourceFirst": {
   "en": "Session source (first)",
@@ -49597,11 +49597,11 @@
  },
  "reportingApp.locationDashboard.widgetDefinitions.won": {
   "en": "Won",
-  "ko": "승리"
+  "ko": "고객전환성공"
  },
  "reportingApp.locationDashboard.widgetDefinitions.lost": {
   "en": "Lost",
-  "ko": "손실"
+  "ko": "고객전환실패"
  },
  "reportingApp.locationDashboard.widgetDefinitions.abandoned": {
   "en": "Abandoned",
@@ -51713,7 +51713,7 @@
  },
  "reportingApp.locationDashboard.fieldLabels.lostReason": {
   "en": "Lost reason",
-  "ko": "실패 사유"
+  "ko": "고객전환실패 사유"
  },
  "reportingApp.locationDashboard.fieldLabels.pages": {
   "en": "Pages",
@@ -85761,15 +85761,15 @@
  },
  "crmObjectsSettingsApp.standardFields.opportunity.wonOn": {
   "en": "Opportunity won on",
-  "ko": "기회 성사일"
+  "ko": "기회 고객전환성공일"
  },
  "crmObjectsSettingsApp.standardFields.opportunity.lostOn": {
   "en": "Opportunity lost on",
-  "ko": "기회 실패일"
+  "ko": "기회 고객전환실패일"
  },
  "crmObjectsSettingsApp.standardFields.opportunity.lostReason": {
   "en": "Lost reason",
-  "ko": "실패 사유"
+  "ko": "고객전환실패 사유"
  },
  "crmObjectsSettingsApp.standardFields.business.createdAt": {
   "en": "Created at",
@@ -87053,19 +87053,19 @@
  },
  "crmObjectsSettingsApp.customFields.lostReasonTitle": {
   "en": "Define lost reason options",
-  "ko": "실패 이유 옵션 정의"
+  "ko": "고객전환실패 사유 옵션 정의"
  },
  "crmObjectsSettingsApp.customFields.lostReasonDescription": {
   "en": "Let users create lost reasons",
-  "ko": "사용자가 실패 이유를 만들 수 있도록 허용"
+  "ko": "사용자가 고객전환실패 사유를 만들 수 있도록 허용"
  },
  "crmObjectsSettingsApp.customFields.lostReasonIdColumn": {
   "en": "Lost Reason ID",
-  "ko": "손실 사유 ID"
+  "ko": "고객전환실패 사유 ID"
  },
  "crmObjectsSettingsApp.customFields.enterLostReasonPlaceholder": {
   "en": "ID will be added after lost reason is created",
-  "ko": "ID는 손실 사유 생성 후 추가됩니다"
+  "ko": "ID는 고객전환실패 사유 생성 후 추가됩니다"
  },
  "crmObjectsSettingsApp.customFields.editUniqueFieldsDescription": {
   "en": "Choose a custom object to manage its unique fields. Changes will apply to all records",
@@ -87113,7 +87113,7 @@
  },
  "crmObjectsSettingsApp.customFields.lostReasonCreatedSuccessfullyTitle": {
   "en": "Lost reasons updated",
-  "ko": "실패 사유가 업데이트되었습니다"
+  "ko": "고객전환실패 사유가 업데이트되었습니다"
  },
  "crmObjectsSettingsApp.customFields.folderUpdatedSuccessfullyTitle": {
   "en": "Folder '{name}' updated",
@@ -88033,7 +88033,7 @@
  },
  "crmObjectsSettingsApp.customFields.standardFields.opportunity.lostReason": {
   "en": "Lost reason",
-  "ko": "실패 사유"
+  "ko": "고객전환실패 사유"
  },
  "crmObjectsSettingsApp.customFields.standardFields.opportunity.forecastExpectedCloseDate": {
   "en": "Forecast expected close date",
@@ -88509,11 +88509,11 @@
  },
  "crmObjectsSettingsApp.customFields.conditionalRules.opportunityStatus.won": {
   "en": "Won",
-  "ko": "승리"
+  "ko": "고객전환성공"
  },
  "crmObjectsSettingsApp.customFields.conditionalRules.opportunityStatus.lost": {
   "en": "Lost",
-  "ko": "손실"
+  "ko": "고객전환실패"
  },
  "crmObjectsSettingsApp.customFields.conditionalRules.opportunityStatus.abandoned": {
   "en": "Abandoned",
@@ -124981,7 +124981,7 @@
  },
  "integrationsApp.common.lostReason": {
   "en": "Lost Reason | Reasons",
-  "ko": "실패 사유 | 사유"
+  "ko": "고객전환실패 사유 | 고객전환실패 사유"
  },
  "integrationsApp.common.onlyAssignedData": {
   "en": "Only Assigned Data",
@@ -139837,7 +139837,7 @@
  },
  "adPublishingApp.statistics.wonDate": {
   "en": "Won date",
-  "ko": "성공 일자"
+  "ko": "고객전환성공일"
  },
  "adPublishingApp.statistics.title": {
   "en": "Title",
@@ -154881,7 +154881,7 @@
  },
  "usersMicroApp.auditLogs.lostReason": {
   "en": "Lost Reason",
-  "ko": "실패 사유"
+  "ko": "고객전환실패 사유"
  },
  "usersMicroApp.auditLogs.paymentLink": {
   "en": "Payment Link",
@@ -186053,35 +186053,35 @@
  },
  "canonical.lost_reason.create_duplicate": {
   "en": "Could not create new lost reason: duplicate lost Reason",
-  "ko": "새 실패 이유를 생성할 수 없습니다: 중복된 실패 이유"
+  "ko": "새 고객전환실패 사유를 생성할 수 없습니다: 중복된 고객전환실패 사유"
  },
  "canonical.lost_reason.create_failed": {
   "en": "Could not create new lost reason",
-  "ko": "새 실패 이유를 생성할 수 없습니다"
+  "ko": "새 고객전환실패 사유를 생성할 수 없습니다"
  },
  "canonical.lost_reason.deleted_or_duplicate": {
   "en": "Lost reason ID already deleted or duplicate entry exists",
-  "ko": "실패 사유 ID가 이미 삭제되었거나 중복 항목이 존재합니다"
+  "ko": "고객전환실패 사유 ID가 이미 삭제되었거나 중복 항목이 존재합니다"
  },
  "canonical.lost_reason.deleted_or_not_found": {
   "en": "Lost reason ID already deleted or not found",
-  "ko": "실패 사유 ID가 이미 삭제되었거나 찾을 수 없습니다"
+  "ko": "고객전환실패 사유 ID가 이미 삭제되었거나 찾을 수 없습니다"
  },
  "canonical.lost_reason.update_duplicate": {
   "en": "Could not update lost reason: duplicate lost Reason",
-  "ko": "실패 사유를 업데이트할 수 없습니다: 중복된 실패 사유"
+  "ko": "고객전환실패 사유를 업데이트할 수 없습니다: 중복된 고객전환실패 사유"
  },
  "canonical.lost_reason.update_failed": {
   "en": "Could not update lost reason",
-  "ko": "실패 사유를 업데이트할 수 없습니다"
+  "ko": "고객전환실패 사유를 업데이트할 수 없습니다"
  },
  "canonical.lost_reason.delete_failed": {
   "en": "Could not delete lost reason",
-  "ko": "실패 이유를 삭제할 수 없습니다"
+  "ko": "고객전환실패 사유를 삭제할 수 없습니다"
  },
  "canonical.lost_reason.not_found": {
   "en": "Lost reason not found",
-  "ko": "실패 사유를 찾을 수 없습니다"
+  "ko": "고객전환실패 사유를 찾을 수 없습니다"
  },
  "canonical.lost_reason.id_undefined": {
   "en": "lostReasonId can't be undefined",
@@ -186089,7 +186089,7 @@
  },
  "canonical.lost_reason.invalid_id": {
   "en": "Invalid lost reason ID",
-  "ko": "잘못된 실패 이유 ID입니다"
+  "ko": "잘못된 고객전환실패 사유 ID입니다"
  },
  "canonical.smart_filter.not_exist_or_deleted": {
   "en": "Smart filter doesn't exist or is deleted.",
@@ -187893,11 +187893,11 @@
  },
  "opportunities.createNewLostReason": {
   "en": "Create new lost reason",
-  "ko": "새 실패 사유 만들기"
+  "ko": "새 고객전환실패 사유 만들기"
  },
  "opportunities.createNewLostReasonPlaceholder": {
   "en": "Type in to create new lost reason",
-  "ko": "입력해서 새 실패 사유 만들기"
+  "ko": "입력해서 새 고객전환실패 사유 만들기"
  },
  "opportunities.enterEmail": {
   "en": "Enter email",
@@ -187929,7 +187929,7 @@
  },
  "opportunities.lostReason": {
   "en": "Lost reason",
-  "ko": "실패 사유"
+  "ko": "고객전환실패 사유"
  },
  "opportunities.businessName": {
   "en": "Business name",
@@ -187953,11 +187953,11 @@
  },
  "opportunities.enterValidLostReason": {
   "en": "Please enter a valid lost reason",
-  "ko": "올바른 실패 이유를 입력해주세요"
+  "ko": "올바른 고객전환실패 사유를 입력해 주세요"
  },
  "opportunities.lostReasonCreated": {
   "en": "Lost reason created successfully",
-  "ko": "실패 사유가 성공적으로 생성되었습니다"
+  "ko": "고객전환실패 사유가 성공적으로 생성되었습니다"
  },
  "opportunities.contactDetails": {
   "en": "{contact} details",
@@ -188017,15 +188017,15 @@
  },
  "opportunities.provideReason": {
   "en": "Please provide a reason for this lost opportunity",
-  "ko": "이 기회를 잃은 이유를 입력해 주세요"
+  "ko": "고객전환실패 사유를 입력해 주세요"
  },
  "opportunities.markAsLost": {
   "en": "Mark as lost",
-  "ko": "실패로 표시"
+  "ko": "고객전환실패로 표시"
  },
  "opportunities.lostReasonRequired": {
   "en": "Lost reason is required",
-  "ko": "실패 사유는 필수입니다"
+  "ko": "고객전환실패 사유는 필수입니다"
  },
  "opportunities.conditionalRules.stageTitle": {
   "en": "Additional fields for {stage} stage",
@@ -188049,11 +188049,11 @@
  },
  "opportunities.conditionalRules.statusOption.won": {
   "en": "Won",
-  "ko": "승리"
+  "ko": "고객전환성공"
  },
  "opportunities.conditionalRules.statusOption.lost": {
   "en": "Lost",
-  "ko": "손실"
+  "ko": "고객전환실패"
  },
  "opportunities.conditionalRules.statusOption.abandoned": {
   "en": "Abandoned",
@@ -188245,7 +188245,7 @@
  },
  "opportunities.opportunityWonOn": {
   "en": "{opportunity} won on",
-  "ko": "{opportunity} 성사일"
+  "ko": "{opportunity} 고객전환성공일"
  },
  "opportunities.lastStageChangeDate": {
   "en": "Last stage change date",
@@ -188253,7 +188253,7 @@
  },
  "opportunities.opportunityLostOn": {
   "en": "{opportunity} lost on",
-  "ko": "{opportunity} 실패 처리일"
+  "ko": "{opportunity} 고객전환실패일"
  },
  "opportunities.updatedOn": {
   "en": "Updated on",
@@ -188269,7 +188269,7 @@
  },
  "opportunities.lostLabel": {
   "en": "lost",
-  "ko": "실패"
+  "ko": "고객전환실패"
  },
  "opportunities.openLabel": {
   "en": "open",
@@ -188281,7 +188281,7 @@
  },
  "opportunities.wonLabel": {
   "en": "won",
-  "ko": "성사"
+  "ko": "고객전환성공"
  },
  "opportunities.noMatchingOpportunitiesFiltered": {
   "en": "No opportunities match the current filters",
@@ -188349,7 +188349,7 @@
  },
  "opportunities.hideLostReason": {
   "en": "Hide lost reason",
-  "ko": "실패 이유 숨기기"
+  "ko": "고객전환실패 사유 숨기기"
  },
  "opportunities.hideAssignedTo": {
   "en": "Hide assigned to",
@@ -188433,7 +188433,7 @@
  },
  "opportunities.totalPotentialValue": {
   "en": "Total potential value of open and won opportunities:",
-  "ko": "진행 중 및 성사된 기회의 총 잠재 가치:"
+  "ko": "진행 중 및 고객전환성공 기회의 총 잠재 가치:"
  },
  "opportunities.collapseStage": {
   "en": "Collapse stage",
@@ -188469,11 +188469,11 @@
  },
  "opportunities.filterWon": {
   "en": "Won",
-  "ko": "승리"
+  "ko": "고객전환성공"
  },
  "opportunities.filterLost": {
   "en": "Lost",
-  "ko": "손실"
+  "ko": "고객전환실패"
  },
  "opportunities.filterAbandon": {
   "en": "Abandon",
@@ -188601,11 +188601,11 @@
  },
  "opportunities.forecastDashboard.totalPotentialSubtext": {
   "en": "Expected revenue + won revenue",
-  "ko": "예상 매출 + 성사된 매출"
+  "ko": "예상 매출 + 고객전환성공 매출"
  },
  "opportunities.forecastDashboard.closedWon": {
   "en": "Won revenue",
-  "ko": "승리 수익"
+  "ko": "고객전환성공 매출"
  },
  "opportunities.forecastDashboard.closedWonSubtext": {
   "en": "Total value of won opportunities",
@@ -189369,7 +189369,7 @@
  },
  "opportunities.lostStatus": {
   "en": "Lost",
-  "ko": "손실"
+  "ko": "고객전환실패"
  },
  "opportunities.openStatus": {
   "en": "Open",
@@ -189381,7 +189381,7 @@
  },
  "opportunities.wonStatus": {
   "en": "Won",
-  "ko": "승리"
+  "ko": "고객전환성공"
  },
  "opportunities.abandonedStatus": {
   "en": "Abandoned",
@@ -189445,7 +189445,7 @@
  },
  "opportunities.lost_reason": {
   "en": "Lost Reason",
-  "ko": "실패 사유"
+  "ko": "고객전환실패 사유"
  },
  "opportunities.followers": {
   "en": "Followers",
@@ -190329,11 +190329,11 @@
  },
  "csv.lostReasonId": {
   "en": "lost reason ID",
-  "ko": "실패 이유 ID"
+  "ko": "고객전환실패 사유 ID"
  },
  "csv.lostReasonName": {
   "en": "lost reason name",
-  "ko": "실패 이유 이름"
+  "ko": "고객전환실패 사유 이름"
  },
  "csv.followers": {
   "en": "Followers",
@@ -190513,11 +190513,11 @@
  },
  "editOpportunity.opportunityFields.lost": {
   "en": "Lost",
-  "ko": "손실"
+  "ko": "고객전환실패"
  },
  "editOpportunity.opportunityFields.won": {
   "en": "Won",
-  "ko": "승리"
+  "ko": "고객전환성공"
  },
  "editOpportunity.opportunityFields.abandoned": {
   "en": "Abandon",
@@ -190541,7 +190541,7 @@
  },
  "editOpportunity.opportunityFields.lostReason": {
   "en": "Lost reason",
-  "ko": "실패 사유"
+  "ko": "고객전환실패 사유"
  },
  "editOpportunity.opportunityFields.helperText": {
   "en": "This will replace the existing followers of the opportunity",
@@ -191137,7 +191137,7 @@
  },
  "pipelinePage.probabilityTooltip": {
   "en": "Probability is the likelihood that a opportunity will be marked as won.",
-  "ko": "확률은 기회가 성사로 표시될 가능성입니다."
+  "ko": "확률은 기회가 고객전환성공으로 표시될 가능성입니다."
  },
  "pipelinePage.yesDelete": {
   "en": "Delete pipeline",
@@ -191721,11 +191721,11 @@
  },
  "pipelinePage.smartTags.filters.fields.wonOn": {
   "en": "Won on",
-  "ko": "성사일"
+  "ko": "고객전환성공일"
  },
  "pipelinePage.smartTags.filters.fields.lostOn": {
   "en": "Lost on",
-  "ko": "실패 시점"
+  "ko": "고객전환실패일"
  },
  "pipelinePage.smartTags.filters.fields.opportunityValue": {
   "en": "Value",
@@ -191817,11 +191817,11 @@
  },
  "pipelinePage.smartTags.filters.values.won": {
   "en": "Won",
-  "ko": "승리"
+  "ko": "고객전환성공"
  },
  "pipelinePage.smartTags.filters.values.lost": {
   "en": "Lost",
-  "ko": "손실"
+  "ko": "고객전환실패"
  },
  "pipelinePage.smartTags.filters.values.abandoned": {
   "en": "Abandoned",
@@ -273833,11 +273833,11 @@
  },
  "filters.won": {
   "en": "Won",
-  "ko": "승리"
+  "ko": "고객전환성공"
  },
  "filters.lost": {
   "en": "Lost",
-  "ko": "손실"
+  "ko": "고객전환실패"
  },
  "filters.abandoned": {
   "en": "Abandoned",
@@ -278445,11 +278445,11 @@
  },
  "superagentsApp.singleAgentBuilder.triggers.opportunity.status.won": {
   "en": "Won",
-  "ko": "승리"
+  "ko": "고객전환성공"
  },
  "superagentsApp.singleAgentBuilder.triggers.opportunity.status.lost": {
   "en": "Lost",
-  "ko": "손실"
+  "ko": "고객전환실패"
  },
  "superagentsApp.singleAgentBuilder.triggers.opportunity.status.abandoned": {
   "en": "Abandoned",
@@ -290921,7 +290921,7 @@
  },
  "contactsApp.filters.lost": {
   "en": "Lost",
-  "ko": "손실"
+  "ko": "고객전환실패"
  },
  "contactsApp.filters.max": {
   "en": "Max",
@@ -291537,7 +291537,7 @@
  },
  "contactsApp.filters.won": {
   "en": "Won",
-  "ko": "승리"
+  "ko": "고객전환성공"
  },
  "contactsApp.filters.workflowActive": {
   "en": "Workflow (active)",
@@ -294269,11 +294269,11 @@
  },
  "crmCommon.opportunities.lostReason": {
   "en": "Lost reason",
-  "ko": "실패 사유"
+  "ko": "고객전환실패 사유"
  },
  "crmCommon.opportunities.lostStatus": {
   "en": "Lost",
-  "ko": "손실"
+  "ko": "고객전환실패"
  },
  "crmCommon.opportunities.new": {
   "en": "New",
@@ -294325,7 +294325,7 @@
  },
  "crmCommon.opportunities.wonStatus": {
   "en": "Won",
-  "ko": "승리"
+  "ko": "고객전환성공"
  },
  "crmCommon.pipelinePage.newPipeline": {
   "en": "New pipeline",
@@ -298597,23 +298597,23 @@
  },
  "opportunitiesApp.canonical.lost_reason.create_duplicate": {
   "en": "Could not create new lost reason: duplicate lost Reason",
-  "ko": "새 실패 사유를 생성할 수 없습니다: 중복된 실패 사유"
+  "ko": "새 고객전환실패 사유를 생성할 수 없습니다: 중복된 고객전환실패 사유"
  },
  "opportunitiesApp.canonical.lost_reason.create_failed": {
   "en": "Could not create new lost reason",
-  "ko": "새 실패 사유를 생성할 수 없습니다"
+  "ko": "새 고객전환실패 사유를 생성할 수 없습니다"
  },
  "opportunitiesApp.canonical.lost_reason.delete_failed": {
   "en": "Could not delete lost reason",
-  "ko": "실패 사유를 삭제할 수 없습니다"
+  "ko": "고객전환실패 사유를 삭제할 수 없습니다"
  },
  "opportunitiesApp.canonical.lost_reason.deleted_or_duplicate": {
   "en": "Lost reason ID already deleted or duplicate entry exists",
-  "ko": "실패 사유 ID가 이미 삭제되었거나 중복 항목이 존재합니다"
+  "ko": "고객전환실패 사유 ID가 이미 삭제되었거나 중복 항목이 존재합니다"
  },
  "opportunitiesApp.canonical.lost_reason.deleted_or_not_found": {
   "en": "Lost reason ID already deleted or not found",
-  "ko": "실패 사유 ID가 이미 삭제되었거나 찾을 수 없습니다"
+  "ko": "고객전환실패 사유 ID가 이미 삭제되었거나 찾을 수 없습니다"
  },
  "opportunitiesApp.canonical.lost_reason.id_undefined": {
   "en": "lostReasonId can't be undefined",
@@ -298621,19 +298621,19 @@
  },
  "opportunitiesApp.canonical.lost_reason.invalid_id": {
   "en": "Invalid lost reason ID",
-  "ko": "잘못된 실패 사유 ID입니다"
+  "ko": "잘못된 고객전환실패 사유 ID입니다"
  },
  "opportunitiesApp.canonical.lost_reason.not_found": {
   "en": "Lost reason not found",
-  "ko": "실패 사유를 찾을 수 없습니다"
+  "ko": "고객전환실패 사유를 찾을 수 없습니다"
  },
  "opportunitiesApp.canonical.lost_reason.update_duplicate": {
   "en": "Could not update lost reason: duplicate lost Reason",
-  "ko": "실패 사유를 업데이트할 수 없습니다: 중복된 실패 사유"
+  "ko": "고객전환실패 사유를 업데이트할 수 없습니다: 중복된 고객전환실패 사유"
  },
  "opportunitiesApp.canonical.lost_reason.update_failed": {
   "en": "Could not update lost reason",
-  "ko": "실패 사유를 업데이트할 수 없습니다"
+  "ko": "고객전환실패 사유를 업데이트할 수 없습니다"
  },
  "opportunitiesApp.canonical.opportunity.bulk_delete_error": {
   "en": "Error occurred while bulk deleting opportunities",
@@ -300065,11 +300065,11 @@
  },
  "opportunitiesApp.csv.lostReasonId": {
   "en": "lost reason ID",
-  "ko": "실패 이유 ID"
+  "ko": "고객전환실패 사유 ID"
  },
  "opportunitiesApp.csv.lostReasonName": {
   "en": "lost reason name",
-  "ko": "실패 이유 이름"
+  "ko": "고객전환실패 사유 이름"
  },
  "opportunitiesApp.csv.opportunityId": {
   "en": "Opportunity ID",
@@ -300321,11 +300321,11 @@
  },
  "opportunitiesApp.editOpportunity.opportunityFields.lost": {
   "en": "Lost",
-  "ko": "손실"
+  "ko": "고객전환실패"
  },
  "opportunitiesApp.editOpportunity.opportunityFields.lostReason": {
   "en": "Lost reason",
-  "ko": "실패 사유"
+  "ko": "고객전환실패 사유"
  },
  "opportunitiesApp.editOpportunity.opportunityFields.open": {
   "en": "Open",
@@ -300353,7 +300353,7 @@
  },
  "opportunitiesApp.editOpportunity.opportunityFields.won": {
   "en": "Won",
-  "ko": "승리"
+  "ko": "고객전환성공"
  },
  "opportunitiesApp.editOpportunity.pipeline": {
   "en": "Pipeline",
@@ -301005,7 +301005,7 @@
  },
  "opportunitiesApp.opportunities.conditionalRules.statusOption.lost": {
   "en": "Lost",
-  "ko": "손실"
+  "ko": "고객전환실패"
  },
  "opportunitiesApp.opportunities.conditionalRules.statusOption.open": {
   "en": "Open",
@@ -301013,7 +301013,7 @@
  },
  "opportunitiesApp.opportunities.conditionalRules.statusOption.won": {
   "en": "Won",
-  "ko": "승리"
+  "ko": "고객전환성공"
  },
  "opportunitiesApp.opportunities.conditionalRules.statusSubtitle": {
   "en": "Please enter these details to mark this opportunity as {status}.",
@@ -301157,11 +301157,11 @@
  },
  "opportunitiesApp.opportunities.createNewLostReason": {
   "en": "Create new lost reason",
-  "ko": "새 실패 사유 만들기"
+  "ko": "새 고객전환실패 사유 만들기"
  },
  "opportunitiesApp.opportunities.createNewLostReasonPlaceholder": {
   "en": "Type in to create new lost reason",
-  "ko": "입력해서 새 실패 사유 만들기"
+  "ko": "입력해서 새 고객전환실패 사유 만들기"
  },
  "opportunitiesApp.opportunities.createNewOpp": {
   "en": "Create new {opportunity} by filling in details and selecting a {contact}",
@@ -301309,7 +301309,7 @@
  },
  "opportunitiesApp.opportunities.enterValidLostReason": {
   "en": "Please enter a valid lost reason",
-  "ko": "올바른 실패 이유를 입력해주세요"
+  "ko": "올바른 고객전환실패 사유를 입력해 주세요"
  },
  "opportunitiesApp.opportunities.expandStage": {
   "en": "Expand stage",
@@ -301409,7 +301409,7 @@
  },
  "opportunitiesApp.opportunities.filterLost": {
   "en": "Lost",
-  "ko": "손실"
+  "ko": "고객전환실패"
  },
  "opportunitiesApp.opportunities.filterMeOptionDescription": {
   "en": "Shows records of the current viewer.",
@@ -301441,7 +301441,7 @@
  },
  "opportunitiesApp.opportunities.filterWon": {
   "en": "Won",
-  "ko": "승리"
+  "ko": "고객전환성공"
  },
  "opportunitiesApp.opportunities.filterYesterday": {
   "en": "Yesterday",
@@ -301509,7 +301509,7 @@
  },
  "opportunitiesApp.opportunities.forecastDashboard.closedWon": {
   "en": "Won revenue",
-  "ko": "성사된 매출"
+  "ko": "고객전환성공 매출"
  },
  "opportunitiesApp.opportunities.forecastDashboard.closedWonSubtext": {
   "en": "Total value of won opportunities",
@@ -301809,7 +301809,7 @@
  },
  "opportunitiesApp.opportunities.forecastDashboard.totalPotentialSubtext": {
   "en": "Expected revenue + won revenue",
-  "ko": "예상 매출 + 성사된 매출"
+  "ko": "예상 매출 + 고객전환성공 매출"
  },
  "opportunitiesApp.opportunities.forecastDashboard.weighted": {
   "en": "Expected revenue",
@@ -301917,7 +301917,7 @@
  },
  "opportunitiesApp.opportunities.hideLostReason": {
   "en": "Hide lost reason",
-  "ko": "실패 이유 숨기기"
+  "ko": "고객전환실패 사유 숨기기"
  },
  "opportunitiesApp.opportunities.hideTags": {
   "en": "Hide tags",
@@ -302037,27 +302037,27 @@
  },
  "opportunitiesApp.opportunities.lostLabel": {
   "en": "lost",
-  "ko": "실패"
+  "ko": "고객전환실패"
  },
  "opportunitiesApp.opportunities.lostReason": {
   "en": "Lost reason",
-  "ko": "실패 사유"
+  "ko": "고객전환실패 사유"
  },
  "opportunitiesApp.opportunities.lostReasonCreated": {
   "en": "Lost reason created successfully",
-  "ko": "실패 사유가 성공적으로 생성되었습니다"
+  "ko": "고객전환실패 사유가 성공적으로 생성되었습니다"
  },
  "opportunitiesApp.opportunities.lostReasonRequired": {
   "en": "Lost reason is required",
-  "ko": "실패 사유는 필수입니다"
+  "ko": "고객전환실패 사유는 필수입니다"
  },
  "opportunitiesApp.opportunities.lostStatus": {
   "en": "Lost",
-  "ko": "손실"
+  "ko": "고객전환실패"
  },
  "opportunitiesApp.opportunities.lost_reason": {
   "en": "Lost Reason",
-  "ko": "실패 사유"
+  "ko": "고객전환실패 사유"
  },
  "opportunitiesApp.opportunities.manageBoardComingSoon": {
   "en": "Manage fields for board view is coming soon.",
@@ -302081,7 +302081,7 @@
  },
  "opportunitiesApp.opportunities.markAsLost": {
   "en": "Mark as lost",
-  "ko": "실패로 표시"
+  "ko": "고객전환실패로 표시"
  },
  "opportunitiesApp.opportunities.maxLimitForAdditionalContactsReached": {
   "en": "Could not add contact '{contactName}'. Max limit of additional contacts allowed for this opportunity is reached",
@@ -302241,7 +302241,7 @@
  },
  "opportunitiesApp.opportunities.opportunityLostOn": {
   "en": "{opportunity} lost on",
-  "ko": "{opportunity} 실패 처리일"
+  "ko": "{opportunity} 고객전환실패일"
  },
  "opportunitiesApp.opportunities.opportunityName": {
   "en": "Opportunity name",
@@ -302261,7 +302261,7 @@
  },
  "opportunitiesApp.opportunities.opportunityWonOn": {
   "en": "{opportunity} won on",
-  "ko": "{opportunity} 성사일"
+  "ko": "{opportunity} 고객전환성공일"
  },
  "opportunitiesApp.opportunities.opportunity_details": {
   "en": "{opportunity} details",
@@ -302333,7 +302333,7 @@
  },
  "opportunitiesApp.opportunities.provideReason": {
   "en": "Please provide a reason for this lost opportunity",
-  "ko": "이 기회를 잃은 이유를 입력해 주세요"
+  "ko": "고객전환실패 사유를 입력해 주세요"
  },
  "opportunitiesApp.opportunities.publicAppointmentAPI": {
   "en": "Public API (Appointment)",
@@ -302485,7 +302485,7 @@
  },
  "opportunitiesApp.opportunities.totalPotentialValue": {
   "en": "Total potential value of open and won opportunities:",
-  "ko": "진행 중 및 성사된 기회의 총 잠재 가치:"
+  "ko": "진행 중 및 고객전환성공 기회의 총 잠재 가치:"
  },
  "opportunitiesApp.opportunities.totalValue": {
   "en": "Total value",
@@ -302589,15 +302589,15 @@
  },
  "opportunitiesApp.opportunities.won": {
   "en": "Won",
-  "ko": "승리"
+  "ko": "고객전환성공"
  },
  "opportunitiesApp.opportunities.wonLabel": {
   "en": "won",
-  "ko": "성사"
+  "ko": "고객전환성공"
  },
  "opportunitiesApp.opportunities.wonStatus": {
   "en": "Won",
-  "ko": "승리"
+  "ko": "고객전환성공"
  },
  "opportunitiesApp.opportunities.workflow": {
   "en": "Workflow",
@@ -303401,7 +303401,7 @@
  },
  "opportunitiesApp.pipelinePage.probabilityTooltip": {
   "en": "Probability is the likelihood that a opportunity will be marked as won.",
-  "ko": "확률은 기회가 성사로 표시될 가능성입니다."
+  "ko": "확률은 기회가 고객전환성공으로 표시될 가능성입니다."
  },
  "opportunitiesApp.pipelinePage.proposalStageName": {
   "en": "Proposal sent",
@@ -303625,7 +303625,7 @@
  },
  "opportunitiesApp.pipelinePage.smartTags.filters.fields.lostOn": {
   "en": "Lost on",
-  "ko": "실패 시점"
+  "ko": "고객전환실패일"
  },
  "opportunitiesApp.pipelinePage.smartTags.filters.fields.opportunitySource": {
   "en": "Source",
@@ -303653,7 +303653,7 @@
  },
  "opportunitiesApp.pipelinePage.smartTags.filters.fields.wonOn": {
   "en": "Won on",
-  "ko": "성사일"
+  "ko": "고객전환성공일"
  },
  "opportunitiesApp.pipelinePage.smartTags.filters.operators.between": {
   "en": "Between",
@@ -303717,7 +303717,7 @@
  },
  "opportunitiesApp.pipelinePage.smartTags.filters.values.lost": {
   "en": "Lost",
-  "ko": "손실"
+  "ko": "고객전환실패"
  },
  "opportunitiesApp.pipelinePage.smartTags.filters.values.unassigned": {
   "en": "Unassigned",
@@ -303725,7 +303725,7 @@
  },
  "opportunitiesApp.pipelinePage.smartTags.filters.values.won": {
   "en": "Won",
-  "ko": "승리"
+  "ko": "고객전환성공"
  },
  "opportunitiesApp.pipelinePage.smartTags.hotDealDescription": {
   "en": "High-Value Deals added this week with value > {value}",
