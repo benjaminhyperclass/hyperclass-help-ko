@@ -1,4 +1,7 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.19.1
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.20.0
+ * v4.20.0: 멤버십 앱(#membership)이 provide 하는 t(key, params) 의 **인자 있는 호출**도 flat 으로 바꾼다.
+ *          종전엔 인자 1개 호출만 flat 을 봤다 → '{count} locations available' 같은 198키가 영어로 남았다.
+ *          이름 자리표시자 {name} 만 params 에서 채우고, 하나라도 못 채우거나 값에 '|'(복수형) 가 있으면 원본 t 에 맡긴다.
  * v4.19.1: _textScoped 범위에 새 디자인 시스템 탭(.hr-tabs-tab) 추가 — 연락처 상세 탭 'DND'·'Actions' 가 role 없는
  *          div 탭이라 영어로 남았다(2026-11-04 유포리아 실측). 셀·옵션·칩은 종전대로 SCOPED_SKIP 이 먼저 거른다.
  * v4.19: 비로그인 화면(PREAUTH) 허용 — 로그인 `/`·비밀번호 재설정·설정·변경·SSO·토큰·데스크톱·지원·eject 로그인만 명시 목록으로 연다.
@@ -182,7 +185,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.19.1',
+    version: '4.20.0',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -365,6 +368,19 @@
   var MAX_TRY = 6;
   var attempts = (typeof WeakMap === 'function') ? new WeakMap()
     : { get: function () { return 0; }, set: function () {} };
+  // v4.20: flat 값의 이름 자리표시자 {name} 을 params 로 채운다. 확실할 때만 — 못 채운 자리가 남거나
+  // 복수형('|')·위치 인자(배열)·params 가 객체가 아니면 null 을 돌려 원본 t 가 처리하게 한다(영어로 남는 쪽이 안전).
+  var PH_NAME = /\{\s*([A-Za-z_$][\w$]*)\s*\}/g;
+  function interpFlat(ko, params) {
+    if (!params || typeof params !== 'object' || Array.isArray(params)) return null;
+    if (ko.indexOf('|') !== -1) return null;
+    var missing = false;
+    var out = ko.replace(PH_NAME, function (m, name) {
+      if (Object.prototype.hasOwnProperty.call(params, name) && params[name] !== null && params[name] !== undefined) return String(params[name]);
+      missing = true; return m;
+    });
+    return missing ? null : out;
+  }
   function wrapTRef(el) {
     try {
       var root = el._vnode && el._vnode.component, p = root && root.provides;
@@ -376,8 +392,13 @@
         var w = function (key) {
           // 멈춤 상태면 원본에 그대로 위임한다. ref.value 를 되돌리는 것보다
           // 안전하다 — 컴포넌트가 이미 이 함수 참조를 캡처했을 수 있다.
-          if (!suspended && arguments.length === 1 && core && core.flat) {
-            var ko = core.flat[key]; if (ko !== undefined) return ko;
+          if (!suspended && core && core.flat && typeof key === 'string') {
+            var ko = core.flat[key];
+            if (typeof ko === 'string') {
+              if (arguments.length === 1) return ko;
+              var out = interpFlat(ko, arguments.length === 2 ? arguments[1] : null);
+              if (out !== null) return out;
+            }
           }
           return orig.apply(this, arguments);
         };
