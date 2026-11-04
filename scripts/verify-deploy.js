@@ -23,8 +23,8 @@
    ───────────────────────────────────────────────────────────────────── */
 (() => {
   const EXPECT = {
-    version: '4.19.0',      // 포인터 loader.stable 3bc900d (2026-10-31 승격)
-    revPrefix: '6812408',   // 사전 v4.2.24 (2026-11-04)
+    version: '4.19.1',      // 포인터 loader.stable 0ce3dd0 (2026-11-04 승격, .hr-tabs-tab)
+    revPrefix: 'a94c7e0',   // 사전 v4.2.25 (2026-11-04)
     textEntries: 9000,      // _text (별도로 _textScoped 1,369 — status().scopedEntries)
   };
   const A = window.__hcKoApp;

@@ -10,8 +10,8 @@
 
 | 항목 | 상태 |
 |---|---|
-| 사전 (메인) | **v4.2.24** `6812408` 라이브(2026-11-04, 포인터 봇 0fd790f, PR #13 머지 28a5ea6). 기회 상태 Won/Lost → 고객전환성공/고객전환실패(벤자민 결정). 이전 v4.2.23 `fbc036f`(PR #12 신규 계정 빈 화면 한글화) |
-| 로더 (메인) | **v4.19.0** `3bc900d` = 포인터 `loader.stable` = `next` — **2026-10-31 전 고객 승격**(d719342, CI 성공). 무쿠키 새 컨텍스트 stable 채널에서 `/`·`/forgot_password` 로더 4.19.0 booted·preauth·lang ko 확인. 롤백 = stable 을 `a2e7596`(v4.18.1)로. PREAUTH(`/`·`/forgot_password`·`/change_password`·`/set_password`·`/login/sso`) + 적대적 리뷰 반영(제외 계정 새로고침 루프 차단기 30초·로그인 화면 0.8초 안정 대기·PREAUTH 텔레메트리 생략·호스트 composer 재병합) |
+| 사전 (메인) | **v4.2.25** `a94c7e0` 라이브(2026-11-04, PR #14 머지 d739e3b). DND→수신거부 · Notes→메모 · 단독 'Delete' 원문 유지(영어 원문 단위 제외 `english` 신설). 이전 v4.2.24 `6812408`(Won/Lost→고객전환성공/고객전환실패) |
+| 로더 (메인) | **v4.19.1** `0ce3dd0` = 포인터 `loader.stable` = `next` — **2026-11-04 전 고객 승격**. v4.19.0 대비 `_textScoped` 범위에 `.hr-tabs-tab`(새 디자인 시스템 탭) 추가 — 연락처 상세 탭 DND·Actions 가 영어로 남던 문제. 캐너리 r6JD 연락처 상세 탭 '전체 필드·수신거부·작업'·기회 화면 부팅 확인 후 승격. 롤백 = stable 을 `3bc900d`(v4.19.0)로 |
 | 부트스트랩 v1.3.0 | `3bc900d` (`?hcch=next|stable` 7일 고정) — **엣지 배포 완료**(Claude Chat, Cloudflare 대시보드, Worker 버전 b60d5e58 100%). 무쿠키로 엣지 HTML 부트스트랩 src @3bc900d · `__hcBoot` 1.3.0 확인 |
 | 에이전시 CSS | **v2.0.0 칸 교체 완료**(2026-10-31, Claude Chat) — 운영 `<style>` = 레포 25401d2 파일에서 끝 줄바꿈만 뺀 것(SHA-256 `13048563…` 일치, 한글 content 1·font-size:0 0). S5 10:58Z·11:03Z(5분 뒤) app 3화면 영문 0, 캡처 정상(재설정 화면 환영 문구 없음). ⚠️ GHL 칸은 저장 시 끝 줄바꿈을 버린다 — 해시 대조는 끝 줄바꿈 제외 |
 | 포털 | 패키지 완료: 포인터 `data/hc-portal-rev.json`(rev = main 사전 v3 `0f4e2d5`, loader `028b315`) · 슬롯 `js/portal-slot.js` v1.1 · 베일 `css/portal-custom.css` v1.0.1 · 부트스트랩 v1.0.1 · 로더 v4.0.1. 실배포 산출물 헤드리스 E2E 통과(/login·/forgot-password 한국어, 베일 1~2.3초). **슬롯 미설치(벤자민)** |
@@ -65,7 +65,7 @@
 | 2026-10-30 ⑥ 정정 | **⑥ 의 판단은 틀렸다 — 커뮤니티 트랙 보류를 뒤집는다**(작업지시서 v1). ① "GHL 네이티브 ko 로케일로 거의 전부 한국어"는 **벤자민 크롬의 번역 확장이 DOM 을 바꾼 화면**이었다. 확장 제거 후 포털은 사이드바·제목·버튼 전부 영어. 2026-10-31 헤드리스 무쿠키 실측: `community.hyperclass.ai/login` 의 i18n 로케일 13개(da·de·en·es·fi·fr-CA·fr-FR·it·nl·no·pt-BR·pt-PT·sv)에 **ko 없음**, en 외 12개는 0키, en 63 ns · 5,393키. ② "오너·관리자에겐 Custom Code 미주입"은 **그룹 슬롯에만** 해당한다. **포털 레벨 슬롯**(Client Portal → Settings → Branding → Advanced → Custom JS, `#cp-siteCustomFooter > script[data-cp-custom-code=footer]`)은 오너 세션과 비로그인 `/login` 양쪽에 들어간다(10-31 비로그인 DOM 에서 1,382자 확인) → 오너가 직접 검증 가능, 포털 로그인 화면까지 한 슬롯으로 덮는다. 후속: `PLAN-portal-login.md` 트랙 B |
 | 2026-10-29 ⑦ | **교차 출처 iframe(AI Studio vibe 빌더) 결정 대기**: Custom JS 로는 원리상 불가. 선택지 ⓐ 영어 수용(권장 — 확장은 고객에게 안 닿음) ⓑ 벤자민 본인용 크롬 확장 유지 ⓒ GHL 에 로케일 요청. 벤자민 결정 필요 |
 | 2026-10-29 주기 | **번역 라운드 주기 2주로 조정**(벤자민): `ko-translate-round.yml` 매주 월 10:47 KST 기동, 짝수 ISO 주만 실행(수동 Run workflow 는 항상). 다음 자동 라운드 = 다음 짝수 주 월요일 |
-| 2026-11-03~04 신규 계정 | 유포리아(신규 서브계정) 메뉴가 운영 계정보다 영어 많음 제보 → 원인: 계정 설정 차이 아님(엣지·로더·사전 동일). 빈 화면·첫 설정 문구가 사전에 없었고 `en-missing` 15,679키 누적(그중 8,325키는 참조본에 같은 원문 번역 있음) → **PR #12**: v4.2.22 참조본 seed 8,325 + v4.2.23 `_text` 219·`_textScoped` 7(유포리아 hc-gap sweep) → **QC**: 자동 리뷰는 앞 600건 표본만 보므로 나머지 7,725건 독립 검수 5갈래(지적 585) + 자동 리뷰 31 + R6 26 → 533건, 2차 리뷰 medium 4건 → high 7→0 → 머지 91d4c5f → 포인터 fbc036f → 유포리아 기회·평판·상품·이메일 마케팅 라이브 확인. 잔존 5,675키(신규 번역 필요)는 다음 라운드. 교차 출처 iframe(자동화 빌더·비즈니스 프로필)은 범위 밖. **용어**: Won/Lost → **고객전환성공/고객전환실패 확정**(벤자민 11-04, PR #13 v4.2.24 — 참조본 150키·`_text` 33·`_textScoped` 4, DECISIONS.md) · 결정 대기: DND 현행 'DND' 혼용(수신거부/방해 금지) · Notes 메모 126 : 노트 90 혼용(이번 PR 은 메모로) |
+| 2026-11-03~04 신규 계정 | 유포리아(신규 서브계정) 메뉴가 운영 계정보다 영어 많음 제보 → 원인: 계정 설정 차이 아님(엣지·로더·사전 동일). 빈 화면·첫 설정 문구가 사전에 없었고 `en-missing` 15,679키 누적(그중 8,325키는 참조본에 같은 원문 번역 있음) → **PR #12**: v4.2.22 참조본 seed 8,325 + v4.2.23 `_text` 219·`_textScoped` 7(유포리아 hc-gap sweep) → **QC**: 자동 리뷰는 앞 600건 표본만 보므로 나머지 7,725건 독립 검수 5갈래(지적 585) + 자동 리뷰 31 + R6 26 → 533건, 2차 리뷰 medium 4건 → high 7→0 → 머지 91d4c5f → 포인터 fbc036f → 유포리아 기회·평판·상품·이메일 마케팅 라이브 확인. 잔존 5,675키(신규 번역 필요)는 다음 라운드. 교차 출처 iframe(자동화 빌더·비즈니스 프로필)은 범위 밖. **용어**: Won/Lost → **고객전환성공/고객전환실패 확정**(벤자민 11-04, PR #13 v4.2.24 — 참조본 150키·`_text` 33·`_textScoped` 4, DECISIONS.md) · DND→수신거부·Notes→메모·단독 Delete 원문 유지 확정(11-04, PR #14 v4.2.25) · (이전 결정 대기 항목: DND 현행 'DND' 혼용(수신거부/방해 금지) · Notes 메모 126 : 노트 90 혼용(이번 PR 은 메모로)) · **발견**: 새 연락처 상세 UI 앱 2개(`record-details-new-ui` fp `DnDChannels|addAssociations|archiveUnarchiveConversation|callContactPhone|changeAlert` 549문구, `contact-conversation-panel` fp `24h|24hDescription|48h|48hDescription|72h` 2,824문구)가 apps 사전에 없어 unmatched — Owner·Followers·Tags·General Info·메모 패널 제목 등 영어 잔존의 원인. 다음 라운드에서 apps 그룹 신설 필요 |
 | 다음 손 | 없음(자동). EN 풀이 차면 2주마다(짝수 주 월) 라운드 PR → 자동 리뷰 → Claude 가 QC 후 머지 → 벤자민은 PR 에서 용어만 훑고 머지. 즉시 돌리려면 운영 계정에서 대시보드·AI 스튜디오·통화·리포팅 화면을 새 탭으로 몇 번 열면 풀이 빨리 찬다 → Actions "번역 라운드" Run workflow |
 
 ## 배포 좌표
@@ -74,7 +74,7 @@
 
 | 항목 | 값 |
 |---|---|
-| 사전 버전 / REV | **v4.2.24** / `6812408` (2026-11-04, `_text` 9,000 · `_textScoped` 1,369) — 이전 v4.2.23 `fbc036f` — 포인터 `data/hc-ko-app-rev.json` 의 `rev` 가 정한다(봇 `ko-app-pointer.yml` 전진) |
+| 사전 버전 / REV | **v4.2.25** / `a94c7e0` (2026-11-04, `_text` 9,000 · `_textScoped` 1,369, Delete 198곳 제외) — 이전 v4.2.24 `6812408` — 포인터 `data/hc-ko-app-rev.json` 의 `rev` 가 정한다(봇 `ko-app-pointer.yml` 전진) |
 | 로더 | **v4.19.0** / `3bc900d0da3c010a442d336f26f150b9084a7d4d` — stable = next (2026-10-31 승격). 이전 stable v4.18.1 `a2e7596`. 내장 `REV_BUILTIN` = `3b82727`(v4.2.7, 소킹분) |
 | 어댑터 | `js/hc-confirm-adapter.js` — 로더와 같은 커밋에서 부트스트랩이 주입 |
 | 부트스트랩 (엣지) | **v1.3.0** / `3bc900d0da3c010a442d336f26f150b9084a7d4d` (2026-10-31 배포, Worker 버전 b60d5e58) — 이전 v1.2.0 `047b529` — `workers/hc-ko-edge/wrangler.toml` `BOOTSTRAP_SHA`. app.hyperclass.ai 모든 HTML(비로그인 포함) `<head>` 맨 앞 |
@@ -114,8 +114,9 @@ Custom JS 칸 (Agency Whitelabel → Custom JavaScript) — 2026-10-29 레거시
 | **2026-10-29 (레거시 은퇴 · v4.18.1)** | 4.18.1 | `4069893` (edge) | 1 | 8,776 (+scoped 1,362) | 연락처·대화·기회·캘린더 새 탭 육안 한국어(사고 기록 4 이후 재확인) · 텔레메트리 부팅 4.18.1/a2e7596 | Claude in Chrome · 텔레메트리 |
 | **2026-11-04 (사전 v4.2.23)** | 4.19.0 | `fbc036f` (edge) | 1 | 9,000 (+scoped 1,369) | 유포리아 `SwFo…` 기회·평판 개요·상품·이메일 마케팅 — 남은 영어는 날짜 형식·사용자 이름·건수(데이터) | Claude (크롬) |
 | **2026-11-04 (사전 v4.2.24)** | 4.19.0 | `6812408` (edge) | 1 | 9,000 (+scoped 1,369) | 유포리아 기회 상세 필터 상태값: 진행 중 · 고객전환성공 · 고객전환실패 · 중단 | Claude (크롬) |
+| **2026-11-04 (사전 v4.2.25 · 로더 v4.19.1)** | 4.19.1 | `a94c7e0` (edge) | 1 | 9,000 (+scoped 1,369) | 캐너리 r6JD 연락처 상세 탭 '전체 필드·수신거부·작업', 메모 추가 버튼 '메모 추가', 유포리아 연락처 DND 필터 '수신거부' | Claude (크롬) |
 
-콘솔 판정 스크립트: `scripts/verify-deploy.js` (EXPECT 4.19.0 / 6812408 / 9000 — 2026-11-04 갱신). 갱신 직후 첫 로드는 옛 rev 일 수 있다(`revNext`) — 새로고침 후 재실행.
+콘솔 판정 스크립트: `scripts/verify-deploy.js` (EXPECT 4.19.1 / a94c7e0 / 9000 — 2026-11-04 갱신). 갱신 직후 첫 로드는 옛 rev 일 수 있다(`revNext`) — 새로고침 후 재실행.
 
 ## 게이트
 
