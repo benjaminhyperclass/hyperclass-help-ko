@@ -10,8 +10,11 @@
 
 | 항목 | 상태 |
 |---|---|
-| 사전 (메인) | **v4.2.25** `a94c7e0` 라이브(2026-11-04, PR #14 머지 d739e3b). DND→수신거부 · Notes→메모 · 단독 'Delete' 원문 유지(영어 원문 단위 제외 `english` 신설). 이전 v4.2.24 `6812408`(Won/Lost→고객전환성공/고객전환실패) |
-| 로더 (메인) | **v4.19.1** `0ce3dd0` = 포인터 `loader.stable` = `next` — **2026-11-04 전 고객 승격**. v4.19.0 대비 `_textScoped` 범위에 `.hr-tabs-tab`(새 디자인 시스템 탭) 추가 — 연락처 상세 탭 DND·Actions 가 영어로 남던 문제. 캐너리 r6JD 연락처 상세 탭 '전체 필드·수신거부·작업'·기회 화면 부팅 확인 후 승격. 롤백 = stable 을 `3bc900d`(v4.19.0)로 |
+| 사전 (메인) | **v4.2.29** `24752b7` 라이브(2026-11-05, PR #20 머지 bbe361c) — 텔레메트리 번역 라운드 6,698건(ghlEmailBuilderCommon 1,172·agentLogsApp 561·socialPlannerApp 495·clientPortalBuilder 475·adPublishingApp 390 …) + 자동 리뷰 반영(광고 관리자 표기 통일·총 예산·화이트라벨 HL 2건). 이전: v4.2.28 `397d05a`(PR #18 — 연락처 상세 새 UI 앱 2개 apps 그룹 3,373문구 + LC Phone/Email 선번역) · v4.2.27 `9ccd090`(PR #16 — 멤버십 앱 flat 4,186키, Title=제목) · v4.2.25 `a94c7e0`(DND·Notes·Delete) |
+| 로더 (메인) | **v4.20.0** `f6aa062` = 포인터 `loader.stable` = `next` — **2026-11-05 전 고객 승격**(PR #17). flat 키 인자 호출 `t(key, {params})` 의 이름 자리표시자를 한국어로 보간(멤버십 앱 198키). 복수형 `|`·위치 인자·params 누락은 원본 위임(영어가 안전). 캐너리 r6JD 오퍼 화면에서 '답글 보기 (3)'·'"테스트" 항목을 삭제하시겠습니까?'·'1강: 50% (사용자 7명)' 확인 후 승격. 롤백 = stable 을 `0ce3dd0`(v4.19.1)로 |
+| 연락처 상세 새 UI | 2026-11-05 apps 그룹 신설: `record-details-new-ui`(549)·`contact-conversation-panel`(2,824) — 소유자·팔로워·태그·기본 정보·메모 패널·대화 작성기 등. 카탈로그는 화면 덤프(`data/contact/contact-apps-en.json`). 화면 확인은 다음 브라우저 연결 때 |
+| 포털 일괄 적용 | 러너 `tools/portal/hc-portal-ko-runner.js` + PORTAL-ROLLOUT C5(내부 API `PUT /clientclub/portal-settings/{id}`, 맨 위 덧붙임·전 필드 비교·자동 원복). 벤자민 승인 2026-11-05(꺾쇠 있는 1곳 제외). 포털 있는 17곳 중 설치 2곳, 적용 대상 14곳 — **브라우저(맥 크롬) 연결 대기** |
+| 마켓플레이스 앱 | 제출 패키지 `marketplace/`(PR #19): 자체 포함 Custom JS 번들(원격 스크립트·console·텔레메트리 없음, '하이퍼클래스'→'플랫폼'), 영/한 설명·심사 메모·로고. 마켓 Custom JS 는 앱 화면 전용 — **포털·커뮤니티에는 닿지 않음**. 목표 11-11 제출(심사 최대 영업일 10일). 개발자 계정·제출은 벤자민 |
 | 부트스트랩 v1.3.0 | `3bc900d` (`?hcch=next|stable` 7일 고정) — **엣지 배포 완료**(Claude Chat, Cloudflare 대시보드, Worker 버전 b60d5e58 100%). 무쿠키로 엣지 HTML 부트스트랩 src @3bc900d · `__hcBoot` 1.3.0 확인 |
 | 에이전시 CSS | **v2.0.0 칸 교체 완료**(2026-10-31, Claude Chat) — 운영 `<style>` = 레포 25401d2 파일에서 끝 줄바꿈만 뺀 것(SHA-256 `13048563…` 일치, 한글 content 1·font-size:0 0). S5 10:58Z·11:03Z(5분 뒤) app 3화면 영문 0, 캡처 정상(재설정 화면 환영 문구 없음). ⚠️ GHL 칸은 저장 시 끝 줄바꿈을 버린다 — 해시 대조는 끝 줄바꿈 제외 |
 | 포털 | 패키지 완료: 포인터 `data/hc-portal-rev.json`(rev = main 사전 v3 `0f4e2d5`, loader `028b315`) · 슬롯 `js/portal-slot.js` v1.1 · 베일 `css/portal-custom.css` v1.0.1 · 부트스트랩 v1.0.1 · 로더 v4.0.1. 실배포 산출물 헤드리스 E2E 통과(/login·/forgot-password 한국어, 베일 1~2.3초). **슬롯 미설치(벤자민)** |

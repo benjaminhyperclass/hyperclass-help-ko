@@ -23,9 +23,9 @@
    ───────────────────────────────────────────────────────────────────── */
 (() => {
   const EXPECT = {
-    version: '4.19.1',      // 포인터 loader.stable 0ce3dd0 (2026-11-04 승격, .hr-tabs-tab)
-    revPrefix: 'a94c7e0',   // 사전 v4.2.25 (2026-11-04)
-    textEntries: 9000,      // _text (별도로 _textScoped 1,369 — status().scopedEntries)
+    version: '4.20.0',      // 포인터 loader.stable f6aa062 (2026-11-05 승격, flat 인자 보간)
+    revPrefix: '24752b7',   // 사전 v4.2.29 (2026-11-05)
+    textEntries: 9007,      // _text (별도로 _textScoped 1,369 — status().scopedEntries)
   };
   const A = window.__hcKoApp;
   if (!A) {
