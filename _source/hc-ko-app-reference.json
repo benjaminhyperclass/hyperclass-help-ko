@@ -187189,7 +187189,7 @@
  },
  "common.dndEnabled": {
   "en": "DND is enabled for this contact. Please disable DND for this contact to make a call",
-  "ko": "이 연락처에 대해 수신거부가 활성화되어 있습니다. 전화를 걸려면 이 연락처의 수신거부를 비활성화하세요"
+  "ko": "이 연락처는 수신거부가 켜져 있습니다. 전화를 걸려면 이 연락처의 수신거부를 해제하세요"
  },
  "common.deleteWarningText": {
   "en": "This Action will delete this {opportunity} from the pipeline.",
@@ -189197,7 +189197,7 @@
  },
  "opportunities.dndEnabled": {
   "en": "DND is enabled for this contact, Please disable DND for this contact to make a call",
-  "ko": "이 연락처에 대해 수신거부가 활성화되어 있습니다. 전화를 걸려면 이 연락처의 수신거부를 비활성화하세요"
+  "ko": "이 연락처는 수신거부가 켜져 있습니다. 전화를 걸려면 이 연락처의 수신거부를 해제하세요"
  },
  "opportunities.opportunityFollowers": {
   "en": "Opportunity followers",
@@ -190629,7 +190629,7 @@
  },
  "notes.common.unsavedChangesAlertDesc": {
   "en": "Any unsaved progress will be lost. Are you sure you want to discard this note.",
-  "ko": "저장하지 않은 내용은 사라집니다. 이 메모를 삭제하시겠습니까?"
+  "ko": "저장하지 않은 내용은 사라집니다. 이 메모 작성을 취소하시겠습니까?"
  },
  "notes.common.createAndAddAnother": {
   "en": "Save and add another",
@@ -299425,7 +299425,7 @@
  },
  "opportunitiesApp.common.dndEnabled": {
   "en": "DND is enabled for this contact, Please disable DND for this contact to make a call",
-  "ko": "이 연락처에 대해 수신거부가 활성화되어 있습니다. 전화를 걸려면 이 연락처의 수신거부를 비활성화하세요"
+  "ko": "이 연락처는 수신거부가 켜져 있습니다. 전화를 걸려면 이 연락처의 수신거부를 해제하세요"
  },
  "opportunitiesApp.common.doNotReloadThisWindowWhileExportIsInProgress": {
   "en": "Do not reload this window or leave this page while export is in progress",
@@ -301241,7 +301241,7 @@
  },
  "opportunitiesApp.opportunities.dndEnabled": {
   "en": "DND is enabled for this contact, Please disable DND for this contact to make a call",
-  "ko": "이 연락처에 대해 수신거부가 활성화되어 있습니다. 전화를 걸려면 이 연락처의 수신거부를 비활성화하세요"
+  "ko": "이 연락처는 수신거부가 켜져 있습니다. 전화를 걸려면 이 연락처의 수신거부를 해제하세요"
  },
  "opportunitiesApp.opportunities.doNotReloadThisWindowWhileExportIsInProgress": {
   "en": "Do not reload this window or leave Opportunities while export is in progress",
