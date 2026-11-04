@@ -4199,7 +4199,7 @@
    "assignedTo": "담당자",
    "bookAppointment": "예약하기",
    "call": "통화",
-   "calls": "전화",
+   "calls": "통화",
    "cancel": "취소",
    "conversations": "대화",
    "createOpportunity": "{opportunity} 만들기",
@@ -9753,7 +9753,7 @@
    "miscellaneousCharges": "기타 요금",
    "teamNotifications": "팀 알림",
    "customerNotifications": "고객 알림",
-   "shippingDelivery": "배송 및 배달",
+   "shippingDelivery": "배송",
    "taxRates": "세율"
   },
   "contactDetail": {
@@ -18712,7 +18712,7 @@
      "customFields": "커스텀 필드",
      "metricTotalOfX": "총 {1}",
      "fieldRating": "평점",
-     "fieldReview": "다시 보기",
+     "fieldReview": "리뷰",
      "fieldReviewRequest": "리뷰 요청",
      "fieldVideoTestimonial": "비디오 후기",
      "metricAvgOfResponseTime": "평균 응답 시간"
@@ -20113,7 +20113,7 @@
      "reputationRequestDate": "요청 날짜",
      "reputationRequestStatusDelivered": "전달됨",
      "reputationRequestStatusFailed": "실패",
-     "reputationRequestStatusOpened": "열림",
+     "reputationRequestStatusOpened": "열람됨",
      "reputationRequestStatusQueued": "대기 중",
      "reputationRequestStatusSent": "발송됨",
      "reputationResponseBreakdown": "응답",
@@ -20125,7 +20125,7 @@
      "reputationSentimentNeutral": "중립",
      "reputationSentimentPositive": "긍정적",
      "responseStatus": "응답",
-     "reviewer": "검토자",
+     "reviewer": "리뷰 작성자",
      "sentiment": "감정",
      "titleReputationAvgResponseTime": "평균 응답 시간",
      "titleReputationAvgResponseTimeTrend": "평균 응답 시간 추세",
@@ -20674,7 +20674,7 @@
     "justNow": "방금 전",
     "liveVersion": "라이브",
     "loadMoreVersions": "더 보기",
-    "moreActions": "더 많은 액션",
+    "moreActions": "추가 작업",
     "refreshingDashboard": "새로고침 중",
     "stickyNotes": {
      "formatBold": "굵게",
@@ -20682,7 +20682,7 @@
      "formatStrike": "취소선",
      "formatUnderline": "밑줄",
      "justNow": "방금 전",
-     "moreActions": "더 많은 액션",
+     "moreActions": "추가 작업",
      "redo": "다시 실행",
      "undo": "실행 취소",
      "you": "나"
@@ -24026,9 +24026,9 @@
        "rejected": "거절됨",
        "spanCount": "개수",
        "toolName": "액션",
-       "totalCalls": "전화",
+       "totalCalls": "통화",
        "totalTokens": "총 토큰",
-       "transferred": "전환됨",
+       "transferred": "통화 전환",
        "voicemail": "음성 메시지",
        "weekStart": "주"
       },
@@ -24043,7 +24043,7 @@
        "value": "값",
        "yes": "예"
       },
-      "menu": "더 많은 액션"
+      "menu": "추가 작업"
      },
      "reports": {
       "addFilter": "필터 추가",
@@ -24052,7 +24052,7 @@
       "chartType": "차트 유형",
       "chartTypes": {
        "donut": "도넛형",
-       "line": "줄"
+       "line": "선형"
       },
       "dimensions": {
        "agent": "에이전트",
@@ -24071,7 +24071,7 @@
       "filters": "필터",
       "grains": {
        "hour": "시간",
-       "month": "개월",
+       "month": "월",
        "week": "주"
       },
       "metric": "지표",
@@ -24082,7 +24082,7 @@
        "failed": "실패",
        "no_answer": "응답 없음",
        "rejected": "거절됨",
-       "transfer": "전환됨",
+       "transfer": "통화 전환",
        "voicemail": "음성 메시지"
       },
       "preview": "미리보기",
@@ -24431,7 +24431,7 @@
       }
      },
      "filters": {
-      "opportunities": "기회 관리"
+      "opportunities": "기회"
      },
      "hide": "숨기기",
      "refresh": "새로고침",
@@ -24461,8 +24461,8 @@
       "pausedBadge": "일시 중지",
       "status": {
        "breachedRisesAbove": "트리거됨",
-       "ok": "보통",
-       "paused": "끔"
+       "ok": "정상",
+       "paused": "꺼짐"
       }
      },
      "history": {
@@ -24490,7 +24490,7 @@
       "durationCustom": "사용자 지정",
       "ends": "종료",
       "notificationsEnabled": "알림",
-      "notifyViaLabel": "보내기",
+      "notifyViaLabel": "받는 사람",
       "preview": "미리보기",
       "saveEdit": "변경사항 저장",
       "today": "오늘"
@@ -32980,7 +32980,7 @@
      "booleanFalse": "거짓",
      "booleanTrue": "참",
      "calculationTypePlaceholder": "선택",
-     "categoryConversion": "전환",
+     "categoryConversion": "변환",
      "categoryString": "문자열",
      "durationResultLabel": "소요 시간",
      "endFieldPlaceholder": "선택",
@@ -33277,13 +33277,13 @@
       "addon": "애드온",
       "category": "카테고리",
       "service": "서비스",
-      "variant": "배리언트"
+      "variant": "변형"
      },
      "result": "결과",
      "results": {
-      "created": "생성일",
+      "created": "생성됨",
       "error": "오류",
-      "updated": "수정일",
+      "updated": "업데이트됨",
       "warning": "경고"
      },
      "sources": {
@@ -35160,7 +35160,7 @@
     "rowsPerPage": "페이지당 행 수",
     "sectionEngagementTitle": "참여도",
     "tabAnalytics": "인사이트",
-    "tabWidgets": "도서관",
+    "tabWidgets": "라이브러리",
     "tblContact": "연락처",
     "tblConversationId": "대화 ID",
     "tblCreatedAt": "생성일",
@@ -35168,7 +35168,7 @@
     "tblFeedback": "피드백",
     "tblName": "이름",
     "tblRating": "평점",
-    "tblWhen": "언제",
+    "tblWhen": "일시",
     "viewConversation": "대화 열기",
     "widgetFilterApply": "적용",
     "widgetFilterPlaceholder": "모든 위젯",
@@ -35711,7 +35711,7 @@
     "funnelAiIllustrationAlt": "퍼널 AI 일러스트",
     "templatesIllustrationAlt": "템플릿 일러스트레이션",
     "imageAlt": "이미지",
-    "deleteActionCannotBeUndone": "이 작업은 취소할 수 없습니다."
+    "deleteActionCannotBeUndone": "이 작업은 되돌릴 수 없습니다."
    },
    "funnel": {
     "title": "퍼널",
@@ -36310,7 +36310,7 @@
     "fontWeights": {
      "bold": "굵게",
      "light": "라이트",
-     "medium": "보통",
+     "medium": "미디엄",
      "regular": "일반"
     },
     "styles": "스타일",
@@ -43550,8 +43550,8 @@
     "accountLabel": "계정 ID",
     "appLabel": "앱 ID",
     "contentTypeLabel": "콘텐츠 유형",
-    "locationLabel": "위치 ID",
-    "locationRequired": "사업장 ID가 필요합니다",
+    "locationLabel": "서브 계정 ID",
+    "locationRequired": "서브 계정 ID가 필요합니다",
     "metaLatency": "지연 시간",
     "metaSize": "크기",
     "noResponse": "응답이 없습니다",
@@ -44198,7 +44198,7 @@
     }
    },
    "pickupLocations": {
-    "disabled": "비활성화",
+    "disabled": "비활성화됨",
     "enabled": "활성화됨",
     "errors": {
      "updateLocation": "위치를 업데이트하지 못했습니다.",
@@ -44210,7 +44210,7 @@
      "address": "주소",
      "buttons": {
       "back": "뒤로",
-      "discard": "삭제",
+      "discard": "변경 취소",
       "save": "저장"
      },
      "city": "도시",
@@ -46002,7 +46002,7 @@
      "auditPass": "승인됨",
      "auditPending": "검토 중",
      "auditRejected": "거절됨",
-     "behaviours": "동작",
+     "behaviours": "행동",
      "bidStrategyTitle": "입찰 전략",
      "budget": {
       "amountPlaceholder": "금액을 입력하세요"
@@ -46035,7 +46035,7 @@
      "languages": "언어",
      "languagesAll": "전체",
      "locations": "위치",
-     "locationsPlaceholder": "서브 계정 검색",
+     "locationsPlaceholder": "위치 검색",
      "media": {
       "browse": "미디어 업로드",
       "carousel": "캐러셀",
@@ -46621,7 +46621,7 @@
        "label": "사용자 지정"
       },
       "recent": {
-       "prefix": "마지막"
+       "prefix": "최근"
       }
      },
      "progress": {
@@ -46729,9 +46729,9 @@
      "tiktok": {
       "adName": "광고 이름 누락",
       "budget": "예산 없음",
-      "campaignName": "캠페인 이름이 없습니다",
-      "invalidUrl": "잘못된 URL입니다",
-      "location": "서브 계정 누락",
+      "campaignName": "캠페인 이름 누락",
+      "invalidUrl": "잘못된 URL",
+      "location": "위치 누락",
       "media": "미디어 없음",
       "placement": "게재 위치 누락"
      }
@@ -47252,7 +47252,7 @@
     "fbPixelSearch": "검색",
     "fbPixelViewContent": "콘텐츠 조회",
     "conversations": "대화",
-    "views": "뷰"
+    "views": "조회수"
    },
    "reselling": {
     "resellingAlertContent": "광고 관리자 비용은 $0입니다. 서브 계정에 청구하는 금액의 100%가 수익입니다. 이 가격은 기본적으로 모든 서브 계정에 적용되지만 서브 계정별로 재정의할 수 있습니다.",
@@ -49306,7 +49306,7 @@
       "revoked": "취소됨"
      },
      "accountCount": "계정",
-     "assignedTo": "수신자들",
+     "assignedTo": "수신자",
      "linkLabel": "링크",
      "linkTypeApproval": "승인 링크"
     },
@@ -50154,7 +50154,7 @@
     },
     "alerts": {
      "cadenceDaily": "매일",
-     "cadenceLabel": "얼마나 자주?",
+     "cadenceLabel": "알림 주기",
      "cadenceWeekly": "매주",
      "clearAll": "전체 해제",
      "delete": "삭제",
@@ -50164,9 +50164,9 @@
       "impressions": "노출수"
      },
      "metricsHeader": "지표",
-     "paused": "일시 중지",
+     "paused": "일시 중지됨",
      "previewFooterUnsubscribe": "구독 취소",
-     "recipientsLabel": "보내기",
+     "recipientsLabel": "받는 사람",
      "recommended": "추천",
      "saveCta": "변경사항 저장",
      "selectAll": "전체 선택",
@@ -50201,17 +50201,17 @@
      "female": "여성",
      "filterAll": "전체",
      "freshness": {
-      "fresh": "라이브",
+      "fresh": "실시간",
       "refreshing": "새로고침 중",
       "stale": "업데이트 중"
      },
      "gender": "성별",
-     "groupAudience": "잠재고객 인사이트",
+     "groupAudience": "오디언스 인사이트",
      "groupEngagement": "참여도",
      "groupMentions": "멘션",
      "groupSentiment": "감정 분석",
-     "heatmapLess": "미만",
-     "heatmapMore": "더보기",
+     "heatmapLess": "적음",
+     "heatmapMore": "많음",
      "language": "언어",
      "likes": "좋아요",
      "male": "남성",
@@ -50225,12 +50225,12 @@
       "sentiment": "감정"
      },
      "other": "기타",
-     "reach": "뷰",
+     "reach": "조회수",
      "refresh": "새로고침",
      "saved": "저장됨",
      "selectAll": "전체 선택",
      "share": "공유",
-     "shares": "공유",
+     "shares": "공유 수",
      "showMore": "더 보기",
      "summaryCreated": "생성일",
      "summaryMatch": "일치",
@@ -50264,7 +50264,7 @@
     "search": {
      "action": {
       "delete": "삭제",
-      "open": "진행 중"
+      "open": "열기"
      },
      "cardSources": "출처",
      "col": {
@@ -50281,7 +50281,7 @@
       "positive": "긍정적"
      },
      "listView": "목록 보기",
-     "moreActions": "더 많은 액션",
+     "moreActions": "추가 작업",
      "recent": "최근 사용",
      "scrollLeft": "왼쪽으로 스크롤",
      "scrollRight": "오른쪽으로 스크롤",
@@ -52175,7 +52175,7 @@
      "deliveries": "전송",
      "failed": "실패",
      "loading": "타임라인 불러오는 중...",
-     "recipients": "수신자들",
+     "recipients": "수신자",
      "refresh": "새로고침",
      "source": "출처",
      "subject": "제목"
@@ -52197,7 +52197,7 @@
      },
      "filters": {
       "companyId": "회사 ID",
-      "locationId": "위치 ID",
+      "locationId": "서브 계정 ID",
       "locationIdPlaceholder": "선택사항",
       "notificationType": "알림 유형",
       "relationshipNumber": "관계 번호",
@@ -52300,7 +52300,7 @@
    },
    "users": {
     "availability": {
-     "title": "사용자 가용성"
+     "title": "사용자 예약 가능 시간"
     },
     "breadcrumb": {
      "home": "홈",
@@ -52315,7 +52315,7 @@
      "inboundPlaceholder": "전화번호 선택",
      "noTimeout": "시간 제한 없음",
      "tenSecs": "10초",
-     "timeout": "수신 통화 시간 초과",
+     "timeout": "수신 통화 대기 시간",
      "title": "통화 및 음성메일 설정",
      "twentySecs": "20초",
      "upload": "업로드",
@@ -52429,7 +52429,7 @@
     "title": "사용자",
     "titleSubAccount": "스태프 관리",
     "type": {
-     "account": "계정",
+     "account": "서브 계정",
      "agency": "에이전시"
     }
    }
@@ -56630,7 +56630,7 @@
      "availabilityCustomSingle": "어떤 요일과 시간이 괜찮으신가요? 예: \"월요일부터 목요일, 오전 10:00–오후 6:00\"",
      "bookingLinkCopied": "예약 링크가 클립보드에 복사되었습니다.\n\n{url}",
      "bookingSuccess": "완료되었습니다. 방금 본인 캘린더에 예약했습니다. 링크를 공유하고 예약을 받기 시작하세요.",
-     "calendarTypesOverview": "플랫폼은 다음 캘린더 유형을 지원합니다:\n\n**1:1 미팅** — 상담, 코칭, 디스커버리 콜. 시간대당 1명.\n\n**그룹 세션** — 수업, 웨비나, 워크숍. 시간대당 좌석 제한 설정.\n\n**팀 순환 (라운드 로빈)** — 팀 멤버에게 예약을 자동으로 분배합니다.\n\n**패널 / 위원회 (집단)** — 선택한 모든 팀 멤버가 함께 참석해야 합니다.\n\n**이벤트** — 컨퍼런스, 웨비나, RSVP를 위한 공개 등록. 지정된 호스트 없음.\n\n**서비스 예약** — 클라이언트가 서비스와 가능한 직원을 선택합니다.",
+     "calendarTypesOverview": "플랫폼은 다음 캘린더 유형을 지원합니다:\n\n**1:1 미팅** — 상담, 코칭, 디스커버리 콜. 시간대당 1명.\n\n**그룹 세션** — 수업, 웨비나, 워크숍. 시간대당 좌석 제한 설정.\n\n**팀 순환 (라운드 로빈)** — 팀 멤버에게 예약을 자동으로 분배합니다.\n\n**패널 / 위원회 (공동)** — 선택한 모든 팀 멤버가 함께 참석해야 합니다.\n\n**이벤트** — 컨퍼런스, 웨비나, RSVP를 위한 공개 등록. 지정된 호스트 없음.\n\n**서비스 예약** — 클라이언트가 서비스와 가능한 직원을 선택합니다.",
      "clientChooses": "고객이 호스트를 선택하도록 허용",
      "connectionVerifyFailed": "연결을 확인하지 못했습니다. 나중에 설정 > 연결에서 확인할 수 있습니다.",
      "creatingCalendar": "캘린더 생성 중...",
@@ -56654,7 +56654,7 @@
      "searchForTeamMembers": "이름을 입력하여 팀 멤버를 검색하세요.",
      "selectTeamMember": "이 예약을 담당할 팀 멤버를 선택하세요.",
      "selectTeamMembersCalendar": "캘린더에서 팀원을 선택해 주세요.",
-     "selectTeamMembersCollective": "공동 캘린더는 모든 팀 멤버가 가능해야 합니다. 멤버를 2명 이상 선택해 주세요.",
+     "selectTeamMembersCollective": "공동 캘린더는 모든 팀 멤버가 참석 가능해야 합니다. 멤버를 2명 이상 선택해 주세요.",
      "setAvailability": "가능한 요일과 시간을 설정하세요:",
      "skipIntegration": "괜찮습니다. 나중에 설정 > 연결에서 언제든지 연결할 수 있습니다.",
      "skipTestBooking": "알겠습니다. 캘린더를 사용할 준비가 되었습니다.\n\n예약 링크입니다:\n{url}\n\n나중에 언제든지 테스트하거나 첫 고객과 공유할 수 있습니다.",
@@ -56706,7 +56706,7 @@
      "createAnyway": "그래도 만들기",
      "createCalendarGetBookings": "첫 예약 캘린더 만들기",
      "createIt": "만들기",
-     "customNumber": "커스텀 번호",
+     "customNumber": "직접 입력",
      "customizeAvailability": "가능 시간 맞춤 설정",
      "discoverCalendars": "캘린더로 할 수 있는 일 알아보기",
      "discoverInputPlaceholder": "캘린더 설정에 대해 무엇이든 물어보세요...",
@@ -56731,7 +56731,7 @@
      "threeToFourPeople": "3-4명",
      "topicAutomateWorkflows": "워크플로우로 자동화",
      "topicBufferBreaks": "미팅 사이 버퍼 시간",
-     "topicCollectPayments": "결제 수금",
+     "topicCollectPayments": "결제 받기",
      "topicCustomizeForms": "예약 위젯 맞춤 설정",
      "topicEmbedInWebsite": "웹사이트 또는 퍼널에 삽입",
      "topicGroupEvents": "그룹 이벤트 및 클래스",
@@ -56801,7 +56801,7 @@
      "setLater": "나중에 설정하겠습니다",
      "videoConferencing": "화상 회의",
      "askBooker": "예약자가 선택하도록 허용",
-     "custom": "사용자 지정",
+     "custom": "커스텀",
      "inPersonPhone": "대면 / 전화 / 커스텀"
     },
     "models": {
@@ -56855,7 +56855,7 @@
      "tryBookingHeading": "첫 예약을 해 보세요 — 아래에서 날짜와 시간을 선택하세요",
      "yourAnswer": "답변...",
      "bookAppointment": "예약하기",
-     "bookingConfirmed": "예약 확인됨",
+     "bookingConfirmed": "예약 확정됨",
      "bufferSuffix": "{buffer}분 버퍼",
      "emailAddress": "이메일 주소",
      "emptyDescription": "채팅에서 어떤 일을 하시는지 알려 주세요 -- 캘린더 페이지를 실시간으로 만들어 드리겠습니다.",
@@ -56966,7 +56966,7 @@
      "next": "다음",
      "noAnswer": "응답 없음",
      "ringing": "벨 울림",
-     "busy": "사용 중",
+     "busy": "통화 중",
      "connected": "연결됨"
     },
     "clear": {
@@ -57238,7 +57238,7 @@
     "speaker": "스피커",
     "testError": "선택한 장치에서 테스트 음을 재생하지 못했습니다.",
     "title": "오디오 설정",
-    "additionalDevice": "추가 기기에서 수신 전화 받기",
+    "additionalDevice": "추가 기기에서도 수신 전화 벨소리 울리기",
     "applyError": "기기 설정을 적용하지 못했습니다.",
     "genericSpeakerLabel": "스피커 {n}",
     "limitedSupportTitle": "오디오 장치 선택에 대한 브라우저 지원이 제한적입니다",
@@ -57281,7 +57281,7 @@
     "outbound": "발신",
     "spamLikely": "스팸 가능성 있음",
     "transferCall": "전환된 통화",
-    "answer": "답변",
+    "answer": "받기",
     "callSummary": "통화 요약",
     "endCall": "통화 종료",
     "inbound": "인바운드",
@@ -57392,7 +57392,7 @@
     "notes": "메모",
     "showMore": "더 보기",
     "activeNotesPlaceholder": "여기에 설명을 추가하세요...",
-    "characters": "문자",
+    "characters": "글자 수",
     "description": "설명",
     "keepTranckNotes": "이 {contact}에 대한 중요한 세부 정보를 기록하세요",
     "showLess": "접기"
@@ -57483,7 +57483,7 @@
    "time": {
     "itsAround": "대략",
     "localTime": "현지 시간",
-    "forThemAreYouSureYouWantToCallThem": "을(를) 위한 것입니다. 정말 통화하시겠습니까?"
+    "forThemAreYouSureYouWantToCallThem": "기준입니다. 정말 통화하시겠습니까?"
    },
    "togglePowerDialer": "파워 다이얼러 켜기/끄기",
    "toggleVolume": "볼륨 켜기/끄기",
@@ -57532,9 +57532,9 @@
     "transcriptUnavailable": "스크립트를 사용할 수 없습니다",
     "underMaintenance": "점검 중",
     "voicemailTooltip": "음성 메일 및 시간 초과 설정 변경 방법에 대해",
-    "forMe": "나를 위해",
+    "forMe": "나에게 온 메시지",
     "loadingVoicemails": "음성메일 불러오는 중",
-    "transcript": "통화 기록",
+    "transcript": "녹취록",
     "voiceMail": "음성 메시지"
    },
    "voicemailTooltip": "음성 메일 및 시간 초과 설정 변경 방법에 대해",
@@ -57544,7 +57544,7 @@
    "addContact": "{contact} 추가",
    "addYourFirstNote": "첫 번째 메모를 추가하세요!",
    "all": "전체",
-   "answer": "답변",
+   "answer": "받기",
    "askYourAdminToRegister": "관리자에게 등록을 요청하거나",
    "backToCall": "통화로 돌아가기",
    "blindTransfer": "즉시 전환",
@@ -57552,23 +57552,23 @@
    "callSummary": "통화 요약",
    "callingFrom": "발신 번호",
    "cancel": "취소",
-   "customDisposition": "사용자 지정 처리 상태",
+   "customDisposition": "사용자 지정 처리 결과",
    "dial": "다이얼",
    "dialing": "전화 연결 중",
-   "forThemAreYouSureYouWantToCallThem": "을(를) 위한 것입니다. 정말 통화하시겠습니까?",
+   "forThemAreYouSureYouWantToCallThem": "기준입니다. 정말 통화하시겠습니까?",
    "incomingCall": "수신 전화",
    "loadingTags": "태그 불러오는 중",
    "loadingVoicemails": "음성메일 불러오는 중",
    "moreDispositions": "더 많은 처리 결과",
    "next": "다음",
    "noNumbersFound": "번호를 찾을 수 없습니다",
-   "noTagsFound": "태그가 없어요",
+   "noTagsFound": "태그를 찾을 수 없습니다",
    "numberClosestToTheContact": "{contact}와 가장 가까운 번호",
    "onHold": "보류 중",
    "purchasePhoneNumberToSelect": "선택할 전화번호 구매",
    "purchasePhoneNumbersToCall": "발신용 전화번호 구매",
-   "recent": "최근 사용",
-   "redial": "재통화",
+   "recent": "최근",
+   "redial": "다시 걸기",
    "save": "저장",
    "searchForPhoneNumber": "전화번호 검색",
    "searchForUsers": "사용자 검색",
@@ -57577,7 +57577,7 @@
    },
    "selectScript": "스크립트 선택",
    "spamLikely": "스팸 가능성 있음",
-   "transcriptUnavailable": "스크립트를 사용할 수 없습니다",
+   "transcriptUnavailable": "녹취록을 사용할 수 없습니다",
    "turnOnMicrophone": "마이크 켜기",
    "underMaintenance": "점검 중",
    "unknown": "알 수 없음",
@@ -57675,7 +57675,7 @@
      },
      "next": "다음",
      "noNameProvided": "이름이 제공되지 않음",
-     "noResultsFound": "검색 결과가 없습니다",
+     "noResultsFound": "결과가 없습니다",
      "previous": "이전",
      "product": "상품",
      "productName": "상품명",
@@ -57688,7 +57688,7 @@
       "emailIp": "이메일 IP",
       "listings": "리스팅",
       "other": "기타",
-      "phone": "전화번호",
+      "phone": "전화",
       "prospecting": "잠재고객 발굴",
       "whatsapp": "왓츠앱",
       "wordpress": "워드프레스",
@@ -57855,7 +57855,7 @@
      "deployAgent": "에이전트 배포 →",
      "reviews": {
       "features": {
-       "2": "직원에게 문제 해결 알림"
+       "2": "직원에게 문제 해결 요청 알림"
       }
      },
      "voice": {
@@ -57917,7 +57917,7 @@
      "models": {
       "gemini25FlashBeta": "Gemini 2.5 Flash (베타)",
       "retirementAlert": "{model} 은(는) {date} 에 지원이 종료됩니다. 종료 후에는 권장 모델로 자동 전환됩니다.",
-      "retiresOn": "{date} 에 만료"
+      "retiresOn": "{date}에 지원 종료"
      }
     },
     "useTransferBotForm": {
@@ -57994,11 +57994,11 @@
        }
       },
       "messages": {
-       "deleted": "봇 중지가 삭제되었습니다.",
+       "deleted": "봇 중지 액션이 삭제되었습니다.",
        "examples": {
         "thankYou": "감사합니다! 좋은 하루 되세요"
        },
-       "goodbyeTriggerCondition": "연락처가 인사말이나 비슷한 문구를 말할 때 ",
+       "goodbyeTriggerCondition": "연락처가 작별 인사나 비슷한 표현을 말할 때 ",
        "removed": "봇 중지 액션이 삭제되었습니다."
       }
      },
@@ -58011,7 +58011,7 @@
        "examplePhrasesDescription": "이 전환 액션을 트리거하는 예시 문구를 추가하세요."
       },
       "notifications": {
-       "deleteSuccess": "전달 봇이 성공적으로 삭제되었습니다."
+       "deleteSuccess": "전환 액션이 성공적으로 삭제되었습니다."
       }
      },
      "triggerWorkflow": {
@@ -58023,7 +58023,7 @@
     },
     "appointmentBookingModal": {
      "aiConfiguration": {
-      "aiBookingInstructionLabel": "AI 예약 안내",
+      "aiBookingInstructionLabel": "AI 예약 지침",
       "fallbackPlaceholder": "대체 캘린더 선택",
       "setupTipServiceNote": "AI 프롬프트에서 \"어떤 서비스를 예약하시겠습니까?\" 와 같은 간단한 질문을 하여 봇이 고객의 답변에 따라 알맞은 캘린더를 선택할 수 있게 하세요."
      },
@@ -58033,7 +58033,7 @@
       }
      },
      "multiCalendarMaxError": "최대 50개의 캘린더를 선택할 수 있습니다.",
-     "onlySendLink": "예약을 잡지 않기 (예약 링크만 전송)",
+     "onlySendLink": "예약하지 않음 (예약 링크만 전송)",
      "promptWarning1": "프롬프트에 다음과 같은 지시사항이 포함되지 않았는지 확인하세요",
      "serviceSetupOverview": {
       "comingSoon": "출시 예정",
@@ -58103,7 +58103,7 @@
       "triggers": {
        "emptyStateTitle": "사용 가능한 지식 베이스가 없습니다",
        "kbLimitHint": "최대 {count}개의 지식 베이스를 선택할 수 있습니다.",
-       "whenToTriggerPlaceholder": "예: \"가격 및 할인에 대해 사용자가 질문할 때 이 지식창고를 사용하세요\""
+       "whenToTriggerPlaceholder": "예: \"가격 및 할인에 대해 사용자가 질문할 때 이 지식 베이스를 사용하세요\""
       }
      },
      "botTrial": {
@@ -58151,7 +58151,7 @@
          "helperText": "고객이 다른 곳 대신 귀사를 선택해야 하는 이유는 무엇인가요?"
         },
         "customerPainPoints": {
-         "label": "고객 pain point"
+         "label": "고객 불편 사항"
         },
         "toneOfVoice": {
          "placeholder": "브랜드의 어조를 설명하세요"
@@ -58270,7 +58270,7 @@
     },
     "errors": {
      "botNotExists": "이 봇은 더 이상 존재하지 않습니다",
-     "updateFailed": "직원을 업데이트할 수 없습니다. 다시 시도하세요."
+     "updateFailed": "직원을 업데이트할 수 없습니다. 다시 시도해 주세요."
     },
     "ipProtectedAssetsModal": {
      "continue": "계속"
@@ -58350,7 +58350,7 @@
        "createdAt": "생성일"
       },
       "tooltip": {
-       "createdAt": "지식창고 생성 날짜 및 시간",
+       "createdAt": "지식 베이스 생성 날짜 및 시간",
        "defaultKnowledgeBase": "워크플로우 자동화 봇이 사용 중인 지식 베이스"
       }
      }
@@ -58361,7 +58361,7 @@
      },
      "faqAdditionModal": {
       "charCount": "자",
-      "questionError": "질문은 비어 있을 수 없습니다."
+      "questionError": "질문을 입력해 주세요."
      },
      "fileUploadModal": {
       "browse": "찾아보기",
@@ -58369,7 +58369,7 @@
       "title": "파일 업로드"
      },
      "modalTrainBot": {
-      "selectKnowledgeBasePlaceholder": "지식창고 선택"
+      "selectKnowledgeBasePlaceholder": "지식 베이스 선택"
      },
      "webCrawlingModal": {
       "enterURL": "URL 입력"
@@ -58391,13 +58391,13 @@
      "useBotTraining": {
       "failed": "실패",
       "pagesRemovedSuccessfully": "페이지가 성공적으로 삭제되었습니다",
-      "restricted": "언급된 페이지는 크롤링이 제한되어 있습니다"
+      "restricted": "해당 페이지는 크롤링이 제한되어 있습니다"
      }
     },
     "tabs": {
      "fileUpload": {
       "processingStates": {
-       "CHUNKING": "청킹",
+       "CHUNKING": "청크 분할 중",
        "EXTRACTING_CONTENT": "콘텐츠 추출 중"
       },
       "table": {
@@ -58446,18 +58446,18 @@
     }
    },
    "locationSettingTable": {
-    "productPriceText": "AI Employee는 Conversation AI, Review AI, Content AI, AI 에이전트와 같은 모든 AI 도구에 대한 액세스를 제공합니다. 이는 유료 서비스입니다"
+    "productPriceText": "AI 직원은 대화 AI, Review AI, Content AI, AI 에이전트 등 모든 AI 도구를 이용할 수 있게 해 줍니다. 유료 서비스입니다"
    },
    "manageSoaiModal": {
     "searchSubAccounts": "서브 계정 검색..."
    },
    "offerSettings": {
     "affiliate": {
-     "commission": "추천인은 $97 Unlimited AI Employee 구독을 활성화하는 모든 서브 계정으로부터 <b>40% 커미션</b>을 받게 됩니다.",
+     "commission": "추천인은 $97 무제한 AI 직원 구독을 활성화하는 모든 서브 계정으로부터 <b>40% 커미션</b>을 받게 됩니다.",
      "commissionStart": "AI 직원 커미션은 30일 무료 체험이 종료되고 첫 결제가 완료된 이후 생성되기 시작합니다."
     },
     "disable": {
-     "enableDescription": "이 기능을 켜면 모든 위치에서 AI 시즌 페이지가 활성화됩니다. AI 도구는 해당 위치에서 계속 사용할 수 있습니다.",
+     "enableDescription": "이 기능을 켜면 모든 서브 계정에서 AI 시즌 페이지가 활성화됩니다. AI 도구는 해당 서브 계정에서 계속 사용할 수 있습니다.",
      "seasonDisableDescription": "이 기능을 끄면 모든 서브 계정에서 \"Season Of AI\" 페이지가 숨겨집니다. 다만 AI 도구는 서브 계정에서 계속 사용할 수 있습니다."
     },
     "disableModal": {
@@ -58484,7 +58484,7 @@
     "planUpdatedForSubAccounts": "선택한 {count}개 서브 계정의 무제한 플랜이 업데이트되었습니다."
    },
    "rebillingSwitch": {
-    "activateSaasMode": "리빌링을 활성화하려면 이 서브 계정의 SaaS 모드를 활성화해주세요.",
+    "activateSaasMode": "재청구를 활성화하려면 이 서브 계정의 SaaS 모드를 활성화해 주세요.",
     "fixedMarkup": "5% 고정 마크업으로 재청구가 가능합니다."
    },
    "yearEndRecap": {
@@ -58521,7 +58521,7 @@
     "appPermissions": "애플리케이션 권한 설정",
     "backToSettings": "설정으로 돌아가기",
     "cancelAndCloseModal": "취소하고 모달 닫기",
-    "clientPortalUrl": "클라이언트 포탈 URL",
+    "clientPortalUrl": "클라이언트 포털 URL",
     "codeInjectionTabs": "코드 삽입 탭",
     "continueAndGoBack": "계속하고 돌아가기",
     "copyClientPortalUrl": "클라이언트 포털 URL 복사",
@@ -58574,7 +58574,7 @@
    },
    "backend": {
     "COMMON_GENERIC": "문제가 발생했습니다. 다시 시도해 주세요.",
-    "COMMON_LOCATION_NOT_FOUND": "위치를 찾을 수 없습니다."
+    "COMMON_LOCATION_NOT_FOUND": "서브 계정을 찾을 수 없습니다."
    },
    "brandedApp": {
     "appLive": {
@@ -58621,7 +58621,7 @@
      "title": "브랜드 앱을 출시하려면 다음 필수 항목을 준비하세요"
     },
     "reviewModal": {
-     "title": "리뷰 실패"
+     "title": "검토 실패"
     },
     "stepsComponent": {
      "steps": {
@@ -58727,9 +58727,9 @@
      "enterPortalName": "포털 이름을 입력해 주세요",
      "enterPortalNameShort": "포털 이름을 입력해 주세요",
      "enterSupportEmail": "지원 이메일 주소 입력",
-     "enterValidEmail": "유효한 이메일 ID 를 입력해 주세요",
+     "enterValidEmail": "유효한 이메일 주소를 입력해 주세요",
      "headerTitle": "브랜딩",
-     "pleaseEnterValidEmailId": "유효한 이메일 ID 를 입력해 주세요"
+     "pleaseEnterValidEmailId": "유효한 이메일 주소를 입력해 주세요"
     },
     "helperTexts": {
      "portalDescription": "포털의 가입/로그인 화면에 포털 설명으로 표시됩니다.",
@@ -58771,12 +58771,12 @@
      "description": "권장 가로세로 비율 16:9"
     },
     "favicon": {
-     "description": "권장 화면 비율 1:1",
+     "description": "권장 가로세로 비율 1:1",
      "title": "파비콘",
      "warning": "이미지 가로세로 비율은 1:1이어야 합니다"
     },
     "logo": {
-     "description": "권장 화면 비율 1:1",
+     "description": "권장 가로세로 비율 1:1",
      "extraHelperText": "SVG, PNG, JPG (최대 200x200 px)",
      "title": "로고",
      "warning": "이미지 가로세로 비율은 1:1이어야 합니다"
@@ -58830,7 +58830,7 @@
      "setupDomainButton": "도메인 설정"
     },
     "descriptions": {
-     "description": "클라이언트 포탈 활동을 관리하세요",
+     "description": "클라이언트 포털 활동을 관리하세요",
      "subDescription": "클라이언트 상호작용을 위한 보안 온라인 게이트웨이를 만드세요",
      "whatIsClientPortalDescription": "클라이언트는 언제든지 로그인하여 코스에 접근하고 제휴 지급을 관리할 수 있습니다."
     },
@@ -58858,7 +58858,7 @@
      "popoverTitle": "새 클라이언트 포털",
      "reasonConfusing": "고객에게 혼란을 줌",
      "reasonHitBug": "버그 발생",
-     "reasonMissingFeature": "원하는 기능이 없나요",
+     "reasonMissingFeature": "원하는 기능 없음",
      "reasonPreferOldDesign": "이전 디자인 선호",
      "reasonSomethingElse": "기타",
      "statusLabel": "새 클라이언트 포털",
@@ -58877,7 +58877,7 @@
      "copiedLink": "복사됨",
      "rolledOut": "활성화됨",
      "toastDesc": "변경사항이 모든 멤버에게 반영되기까지 몇 분이 걸릴 수 있습니다.",
-     "toastTitle": "새 고객 포털이 모든 사용자에게 제공됩니다"
+     "toastTitle": "새 클라이언트 포털이 모든 사용자에게 적용되었습니다"
     }
    },
    "dashboardModal": {
@@ -58900,7 +58900,7 @@
      "generateMagicLinksDescription": "매직 링크 유형 선택",
      "linksEmbeddedAs": "이 링크는 다음 형태로 삽입할 수 있습니다:",
      "magicLinkReady": "매직 링크를 사용할 준비가 되었습니다. 클릭하기만 하면 됩니다:",
-     "min": "최소",
+     "min": "분",
      "sec": "초",
      "sentInvitationEmail": "이메일로 초대 링크를 보냈습니다",
      "sentMagicLinkEmail": "이메일로 매직 링크를 보냈습니다",
@@ -58945,7 +58945,7 @@
     "customDomain": {
      "customDomainAlreadyExistsError": "이미 사용 중인 커스텀 도메인",
      "customDomainAlreadyExistsErrorMessage": "입력한 도메인은 이미 사용 중입니다. 다른 도메인 이름을 선택해 주세요",
-     "label": "사용자 지정 도메인"
+     "label": "커스텀 도메인"
     },
     "general": {
      "domainSetupTitle": "도메인 설정"
@@ -59020,8 +59020,8 @@
     "chatWidgetTitle": "채팅 위젯",
     "clientPortalSettingsTitle": "클라이언트 포털 설정",
     "contractsTitle": "계약서",
-    "disabledChatWidget": "이 앱은 고객 포털 앱 권한에서 활성화되어 있지 않습니다",
-    "discoverTitle": "발견",
+    "disabledChatWidget": "이 앱은 클라이언트 포털 앱 권한에서 활성화되어 있지 않습니다",
+    "discoverTitle": "둘러보기",
     "domain": {
      "customDomain": "사용자 지정 도메인"
     },
@@ -59077,11 +59077,11 @@
      "campaign": "캠페인",
      "campaignId": "캠페인 ID",
      "fbclId": "Facebook 클릭 ID",
-     "firstAttributionDetails": "첫 기여 세부 정보",
-     "firstAttributionSource": "첫 기여 소스",
+     "firstAttributionDetails": "첫 어트리뷰션 세부 정보",
+     "firstAttributionSource": "첫 어트리뷰션 소스",
      "gclId": "Google 클릭 ID",
-     "latestAttributionDetails": "최신 기여 세부정보",
-     "latestAttributionSource": "최신 기여 소스",
+     "latestAttributionDetails": "최신 어트리뷰션 세부 정보",
+     "latestAttributionSource": "최신 어트리뷰션 소스",
      "referrer": "리퍼러",
      "source": "출처",
      "tooltip": "어트리뷰션 상세 정보 보기",
@@ -59127,7 +59127,7 @@
      "view": "보기"
     },
     "timeline": {
-     "activitiesDescription": "페이지 방문, 폼 제출, 예약, 통화 등이 여기에 표시됩니다. 지금 참여를 시작하세요!",
+     "activitiesDescription": "페이지 방문, 폼 제출, 예약, 통화 등이 여기에 표시됩니다. 지금 소통을 시작해 활동을 추적해 보세요!",
      "groups": {
       "today": "오늘",
       "yesterday": "어제"
@@ -59139,18 +59139,18 @@
     }
    },
    "additionalEmail": {
-    "duplicateNotAllowed": "이 로케이션은 중복 연락처를 허용하지 않습니다.",
-    "duplicatedNotAllowed": "이 로케이션은 중복 연락처를 허용하지 않습니다."
+    "duplicateNotAllowed": "이 서브 계정은 중복 연락처를 허용하지 않습니다.",
+    "duplicatedNotAllowed": "이 서브 계정은 중복 연락처를 허용하지 않습니다."
    },
    "additionalEmailsError": "추가 전화번호는 10개를 초과하여 추가할 수 없습니다",
    "bulkActions": {
     "multiLineCall": {
-     "label": "통화"
+     "label": "전화 걸기"
     }
    },
    "clientPortalContacts": {
     "addCommunityGroups": "커뮤니티 그룹 추가",
-    "addOffers": "제안 추가",
+    "addOffers": "오퍼 추가",
     "changePassword": "비밀번호 변경",
     "changePasswordButton": "비밀번호 변경",
     "changesMade": "변경사항 {count}개 | 변경사항 {count}개",
@@ -59179,7 +59179,7 @@
     "offerAdded": "오퍼가 성공적으로 추가되었습니다",
     "offerRemoved": "오퍼가 성공적으로 삭제되었습니다",
     "offerTypeCourse": "코스",
-    "offerTypeOffer": "제안",
+    "offerTypeOffer": "오퍼",
     "passwordFieldRequired": "비밀번호 필드는 필수입니다",
     "passwordMinLength": "최소 12자 이상의 비밀번호를 입력해주세요",
     "passwordMinimumLength": "비밀번호는 최소 12자 이상이어야 합니다",
@@ -59212,7 +59212,7 @@
     "advancedFilter": "필터",
     "advancedFilters": "필터",
     "all": "전체",
-    "allUsersFutureAccessInfo": "이후 이 위치에 추가되는 모든 사용자는 자동으로 스마트 리스트에 접근할 수 있습니다",
+    "allUsersFutureAccessInfo": "이후 이 서브 계정에 추가되는 모든 사용자는 자동으로 스마트 리스트에 접근할 수 있습니다",
     "and": "그리고",
     "apply": "적용",
     "ascending": "오름차순",
@@ -59256,7 +59256,7 @@
     "discard": "변경사항 취소",
     "discardChanges": "변경사항 취소",
     "discardChangesConfirmation": "변경 사항을 취소하시겠습니까?",
-    "dndEnabled": "이 연락처에 대해 DND가 활성화되어 있습니다. 전화를 걸려면 이 연락처의 DND를 비활성화하세요",
+    "dndEnabled": "이 연락처는 방해 금지(DND)가 켜져 있습니다. 전화를 걸려면 이 연락처의 방해 금지를 해제하세요",
     "doNotReloadThisWindowWhileExportIsInProgress": "내보내기가 진행 중일 때는 이 창을 새로고침하거나 이 페이지를 벗어나지 마세요",
     "dragToReorder": "드래그하여 순서 변경",
     "duplicate": "복제",
@@ -59284,7 +59284,7 @@
     "list": "스마트 리스트 추가",
     "listName": "목록 이름",
     "lockedFieldMessage": "이 필드는 제거하거나 이동할 수 없습니다",
-    "lonelyMsg": "여기는 너무 외로워요!",
+    "lonelyMsg": "여기는 아직 텅 비어 있습니다!",
     "manageFields": "필드 관리",
     "manageSmartList": "스마트 리스트 관리",
     "manageSmartLists": "스마트 리스트 관리",
@@ -59295,7 +59295,7 @@
     "noCustomiseSmartListPermissionTooltip": "이 스마트 리스트를 커스터마이즈할 권한이 없습니다. 접근 권한이 필요하면 스마트 리스트 소유자에게 문의하세요.",
     "noDataMsg": "{name}이(가) 보이지 않네요! 새로 만들 준비가 되셨나요?",
     "noFilterFound": "필터를 찾을 수 없습니다",
-    "noResultFound": "검색 \"{search}\"와 일치하는 결과가 없습니다. 다시 시도해 주세요",
+    "noResultFound": "검색어 \"{search}\"와 일치하는 결과가 없습니다. 다시 시도해 주세요",
     "noResultsFound": "검색 결과가 없습니다",
     "note": "메모",
     "notes": "노트",
@@ -59430,7 +59430,7 @@
     "unSelectAll": "전체 선택 해제",
     "unassignOwner": "소유자 할당 해제",
     "unassigned": "미배정",
-    "undoUnSave": "저장되지 않은 항목 실행 취소",
+    "undoUnSave": "저장하지 않은 변경사항 되돌리기",
     "unsavedChanges": "저장되지 않은 변경사항",
     "unsavedChanges1": "저장되지 않은 변경사항",
     "unsavedChangesTitle": "스마트 리스트 '{name}'에 저장되지 않은 변경 사항이 있습니다!",
@@ -59461,7 +59461,7 @@
     "applyFiltersToObject": "{object}에 필터 적용",
     "assigned": "소유자",
     "associations": "연관",
-    "atLeastOneRequired": "* 최소 1개의 {filterName}가 필요합니다",
+    "atLeastOneRequired": "* 최소 1개의 {filterName}이(가) 필요합니다",
     "attribution": "어트리뷰션",
     "attributionAdGroupId": "어트리뷰션 UTM 광고 그룹 ID",
     "attributionAdId": "어트리뷰션 UTM 광고 ID",
@@ -59573,7 +59573,7 @@
     "fbMessenger": "FB 메신저 DND",
     "filters": "필터",
     "finishedCampaign": "완료된 캠페인",
-    "firstAttribution": "첫 기여",
+    "firstAttribution": "첫 어트리뷰션",
     "firstName": "이름",
     "followers": "팔로워",
     "fullName": "이름",
@@ -59610,8 +59610,8 @@
     "lastName": "성",
     "lastUpdatedBy": "최종 수정자",
     "lead": "리드",
-    "lessThan": "보다 작음",
-    "lesserThan": "보다 작음",
+    "lessThan": "미만",
+    "lesserThan": "미만",
     "lost": "손실",
     "max": "최대",
     "min": "최소",
@@ -59622,11 +59622,11 @@
     "notTo": "대상 아님",
     "objectActivity": "{object} 활동",
     "objectInformation": "{object} 정보",
-    "offer": "제안",
-    "onDate": "날짜에",
+    "offer": "오퍼",
+    "onDate": "해당 날짜",
     "open": "진행 중",
     "operators": {
-     "after": "횟수",
+     "after": "이후",
      "afterDate": "날짜 이후",
      "ageBetween": "사이",
      "ago": "전",
@@ -59634,7 +59634,7 @@
      "april": "4월",
      "august": "8월",
      "before": "이전",
-     "beforeDate": "이전 날짜",
+     "beforeDate": "날짜 이전",
      "between": "사이",
      "contains": "포함",
      "containsAny": "다음 중 하나 포함",
@@ -59643,17 +59643,17 @@
      "december": "12월",
      "disabled": "비활성화됨",
      "doesNotContain": "포함하지 않음",
-     "doesNotContainAny": "아무것도 포함하지 않음",
+     "doesNotContainAny": "다음 중 어느 것도 포함하지 않음",
      "enabled": "활성화됨",
      "equalsTo": "같음",
      "false": "거짓",
      "february": "2월",
-     "firstAttribution": "첫 기여",
+     "firstAttribution": "첫 어트리뷰션",
      "fromNow": "지금부터",
      "greaterThan": "초과",
      "greaterThanOrEqualTo": "이상",
      "hours": "시간",
-     "hoursAgo": "전",
+     "hoursAgo": "시간 전",
      "inAnyOf": "다음 중 하나",
      "inMonth": "월 내",
      "inNoneOf": "다음 중 아무것도 아님",
@@ -59671,14 +59671,14 @@
      "july": "7월",
      "june": "6월",
      "lastAttribution": "마지막 어트리뷰션",
-     "later": "나중에",
-     "lessThan": "보다 작음",
-     "lessThanOrEqualTo": "작거나 같음",
-     "lesserThan": "보다 작음",
+     "later": "후",
+     "lessThan": "미만",
+     "lessThanOrEqualTo": "이하",
+     "lesserThan": "미만",
      "march": "3월",
      "may": "5월",
      "minutes": "분",
-     "minutesAgo": "몇 분 전",
+     "minutesAgo": "분 전",
      "months": "개월",
      "monthsAgo": "개월 전",
      "moreThan": "초과",
@@ -59687,7 +59687,7 @@
      "notTo": "대상 아님",
      "november": "11월",
      "october": "10월",
-     "onDate": "날짜에",
+     "onDate": "해당 날짜",
      "range": "범위",
      "seconds": "초",
      "september": "9월",
@@ -59699,7 +59699,7 @@
      "tomorrow": "내일",
      "true": "참",
      "weeks": "주",
-     "weeksAgo": "전",
+     "weeksAgo": "주 전",
      "years": "년",
      "yearsAgo": "년 전",
      "yes": "예",
@@ -59750,7 +59750,7 @@
     "startDatePlaceholder": "시작일",
     "startsWith": "다음으로 시작",
     "state": "주/도",
-    "streetName": "상세 주소",
+    "streetName": "도로명 주소",
     "tag": "태그",
     "textPlaceholder": "입력하세요",
     "thisMonth": "이번 달",
@@ -59789,7 +59789,7 @@
      "next": "다음",
      "optionBuildWithAi": "AI로 빌드하기",
      "optionSmartList": "스마트 리스트",
-     "schedule": "일정",
+     "schedule": "예약 발송",
      "segment30": "최근 30일",
      "segment7": "최근 7일",
      "segmentCustom": "사용자 지정",
@@ -59821,7 +59821,7 @@
     "columns": {
      "additionalEmails": "추가 이메일",
      "additionalPhones": "추가 전화번호",
-     "address1": "상세 주소",
+     "address1": "도로명 주소",
      "assignedTo": "소유자",
      "businessName": "회사명",
      "city": "도시",
@@ -59830,7 +59830,7 @@
      "country": "국가",
      "dateAdded": "생성일 ({timezone})",
      "dateOfBirth": "생년월일",
-     "dateUpdated": "업데이트됨 ({timezone})",
+     "dateUpdated": "수정일 ({timezone})",
      "dnd": "수신거부",
      "email": "이메일",
      "firstName": "이름",
@@ -59843,7 +59843,7 @@
      "lastName": "성",
      "lastNote": "마지막 노트",
      "offers": "오퍼",
-     "opportunities": "기회 관리",
+     "opportunities": "기회",
      "phone": "전화번호",
      "postalCode": "우편번호",
      "products": "상품",
@@ -59866,9 +59866,9 @@
     },
     "dndChannels": {
      "all": "모든 채널",
-     "call": "전화번호",
+     "call": "전화",
      "email": "이메일",
-     "phone": "전화번호",
+     "phone": "전화",
      "whatsapp": "왓츠앱"
     },
     "folder": {
@@ -59899,7 +59899,7 @@
    "manageSmartLists": {
     "cannotDeleteNoUser": "목록을 삭제하려면 로그인해야 합니다",
     "cannotDeleteNotOwner": "본인이 생성한 목록만 삭제할 수 있습니다",
-    "cannotDeleteSharedList": "삭제하기 전에 모든 공유 제거",
+    "cannotDeleteSharedList": "삭제하려면 먼저 모든 공유를 해제하세요",
     "cannotEditGlobalList": "관리자만 전역 목록을 편집할 수 있습니다",
     "cannotEditNoUser": "목록을 편집하려면 로그인해야 합니다",
     "cannotEditNotOwner": "본인이 생성한 목록만 편집할 수 있습니다",
@@ -59909,7 +59909,7 @@
     "cannotShareNotOwner": "본인이 생성한 목록만 공유할 수 있습니다",
     "cannotShareSharedList": "나와 공유된 목록은 다시 공유할 수 없습니다",
     "clearFiltersToReorder": "순서를 변경하려면 필터를 지우세요",
-    "clearSortToReorder": "정렬 초기화하여 재정렬",
+    "clearSortToReorder": "순서를 변경하려면 정렬을 해제하세요",
     "copySmartListTitle": "스마트 리스트 \"{name}\" 복사",
     "defaultSmartList": "기본 스마트 리스트",
     "deleteConfirmation": "\"{listName}\"을(를) 삭제하시겠습니까? 이 작업은 취소할 수 없습니다.",
@@ -59924,7 +59924,7 @@
     "headerActionsTitle": "작업",
     "headerSmartListNameTitle": "스마트 리스트 이름",
     "headerTypeTitle": "유형",
-    "noResultFound": "검색 \"{search}\"와 일치하는 결과가 없습니다. 다시 시도해 주세요",
+    "noResultFound": "검색어 \"{search}\"와 일치하는 결과가 없습니다. 다시 시도해 주세요",
     "noSmartListsFound": "스마트 리스트를 찾을 수 없습니다",
     "noUsersAvailableToShareWith": "공유할 수 있는 사용자가 없습니다",
     "onlyAdminsCanChangeGlobalListSettings": "관리자만 전역 목록 설정을 변경할 수 있습니다",
@@ -59936,9 +59936,9 @@
     "smartListDeleted": "스마트 리스트가 성공적으로 삭제되었습니다",
     "smartListSaved": "스마트 리스트가 성공적으로 저장되었습니다",
     "smartListShared": "스마트 리스트가 성공적으로 공유되었습니다",
-    "tableAriaLabel": "스마트 리스트 테이블 관리",
+    "tableAriaLabel": "스마트 리스트 관리 테이블",
     "tabs": {
-     "yourSmartLists": "스마트 리스트"
+     "yourSmartLists": "내 스마트 리스트"
     },
     "useDifferentName": "다른 이름을 사용해주세요"
    },
@@ -59996,9 +59996,9 @@
     "lastOpened": "마지막으로 열어본 스마트 리스트",
     "resetToDefault": "기본값으로 초기화",
     "rowHeight": {
-     "comfortable": "넓게",
+     "comfortable": "보통",
      "compact": "좁게",
-     "spacious": "넓은"
+     "spacious": "넓게"
     },
     "rowHeightLabel": "행 높이",
     "rowStyle": {
@@ -60015,7 +60015,7 @@
   },
   "crmCommon": {
    "appointments": {
-    "bookUpdateAppointment": "약속 예약/수정",
+    "bookUpdateAppointment": "예약 생성/수정",
     "opportunityDetails": "기회 세부정보"
    },
    "association": {
@@ -60034,13 +60034,13 @@
     "addressSingular": "주소",
     "associateNew": "새로 연결",
     "associateTo": "연결 대상",
-    "associated": "연관됨",
+    "associated": "연결됨",
     "associatedObject": "연결된 객체",
-    "associatedObjectTooltip": "{object}를 {objects}에 연결",
+    "associatedObjectTooltip": "{object}을(를) {objects}에 연결",
     "associatedObjects": "연결된 객체",
     "associatedWith": "다음과 연결됨",
-    "associationLimitReached": "연결 제한에 도달했습니다. 이 개체에는 이미 최대 개수의 레코드가 연결되어 있습니다.",
-    "associations": "연관",
+    "associationLimitReached": "연결 제한에 도달했습니다. 이 객체에는 이미 최대 개수의 레코드가 연결되어 있습니다.",
+    "associations": "연결",
     "cannotDeselect": "레코드가 연결되어 있는 동안에는 이 옵션을 선택 해제할 수 없습니다. 먼저 레코드를 제거하세요.",
     "confirm": "확인",
     "createNewRecord": "새로 만들기",
@@ -60058,7 +60058,7 @@
     "loading": "로딩 중",
     "loadingErrorDesc": "관련 객체를 가져오는 중 오류가 발생했습니다. 새로고침하거나 잠시 후 다시 시도해 주세요.",
     "loadingErrorTitle": "로딩 오류",
-    "maxAllowed": "한 번에 최대 {maxCount}개의 {objectLabel}이 허용됩니다. {objectLabelLowercased}를 더 추가하려면 이 작업을 완료한 후 다시 진행하세요.",
+    "maxAllowed": "한 번에 최대 {maxCount}개의 {objectLabel}이(가) 허용됩니다. {objectLabelLowercased}을(를) 더 추가하려면 이 작업을 완료한 후 다시 진행하세요.",
     "noAssociationFound": "연결 항목을 찾을 수 없습니다",
     "noAssociationsSelected": "최소 1개의 연결을 선택해 주세요",
     "noData": "데이터 없음",
@@ -60110,7 +60110,7 @@
     "addFields": "필드 추가",
     "addFilter": "필터 추가",
     "addNestedFilter": "중첩 필터 추가",
-    "addNotePlaceholder": "노트 추가",
+    "addNotePlaceholder": "메모 추가",
     "addSmartlist": "스마트 리스트 추가",
     "addSort": "정렬 추가",
     "addUser": "사용자 추가",
@@ -60118,14 +60118,14 @@
     "advancedFilter": "필터",
     "all": "전체",
     "allPipelines": "모든 파이프라인",
-    "allUsersFutureAccessInfo": "이후 이 위치에 추가되는 모든 사용자는 자동으로 스마트 리스트에 접근할 수 있습니다",
+    "allUsersFutureAccessInfo": "이후 이 서브 계정에 추가되는 모든 사용자는 자동으로 스마트 리스트에 접근할 수 있습니다",
     "apply": "적용",
     "ascending": "오름차순",
     "associateNew": "새로 연결",
-    "associated": "연관됨",
+    "associated": "연결됨",
     "associated2": "연결됨",
     "associatedObject": "연결된 {object}",
-    "associations": "연관",
+    "associations": "연결",
     "bulkActions": "대량 액션",
     "call": "통화",
     "canEdit": "편집 가능",
@@ -60154,7 +60154,7 @@
     "create": "만들기",
     "createdByLabel": "생성자",
     "createdOnLabel": "생성일",
-    "customObject2": "사용자 지정 개체",
+    "customObject2": "커스텀 오브젝트",
     "customiseList": "목록 사용자 지정",
     "customiseSmartList": "스마트 리스트 사용자 지정",
     "customizeHere": "여기서 사용자 지정",
@@ -60166,9 +60166,9 @@
     "deleteSmartlistTitle": "스마트 리스트 \"{name}\"을(를) 삭제하시겠습니까?",
     "deleted": "삭제됨",
     "descending": "내림차순",
-    "discard": "삭제",
+    "discard": "변경 취소",
     "discardChanges": "변경사항 취소",
-    "dndEnabled": "이 연락처에 대해 DND가 활성화되어 있습니다. 전화를 걸려면 이 연락처의 DND를 비활성화하세요",
+    "dndEnabled": "이 연락처는 방해 금지(DND)가 켜져 있습니다. 전화를 걸려면 이 연락처의 방해 금지를 해제하세요",
     "doNotReloadThisWindowWhileExportIsInProgress": "내보내기가 진행 중일 때는 이 창을 새로고침하거나 이 페이지를 벗어나지 마세요",
     "duplicate": "복제",
     "edit": "편집",
@@ -60194,7 +60194,7 @@
     "list": "목록",
     "listName": "목록 이름",
     "lockedFieldMessage": "이 필드는 제거하거나 이동할 수 없습니다",
-    "lonelyMsg": "여기는 너무 외로워요!",
+    "lonelyMsg": "아직 아무것도 없습니다!",
     "manageFields": "필드 관리",
     "manageSmartList": "스마트 리스트 관리",
     "manageSmartLists": "스마트 리스트 관리",
@@ -60203,13 +60203,13 @@
     "more": "더보기",
     "moreActions": "더 많은 액션",
     "next": "다음",
-    "noDataMsg": "{name}이(가) 보이지 않네요! 새로 만들 준비가 되셨나요?",
+    "noDataMsg": "{name}이(가) 없습니다. 새로 만드시겠습니까?",
     "noResultsFound": "검색 결과가 없습니다",
     "note": "메모",
     "outOf": "/ 중",
     "owner": "소유자",
     "page": "페이지",
-    "paginationPrefix": "총계는 {itemCount}건입니다.",
+    "paginationPrefix": "총 {itemCount}건",
     "permissionDenied": "권한 거부됨",
     "permissions": "권한",
     "pipeline": "파이프라인",
@@ -60325,14 +60325,14 @@
     "unreadConversations": "읽지 않은 대화",
     "unsavedChanges": "저장되지 않은 변경사항",
     "unsavedChanges1": "저장되지 않은 변경사항",
-    "updatedText": "이 위치의 모든 파이프라인에 커스텀 카드 업데이트",
+    "updatedText": "이 서브 계정의 모든 파이프라인에 커스텀 카드 업데이트",
     "view": "보기",
     "viewConversations": "대화 보기",
     "viewSmartList": "스마트 리스트 보기",
     "weArePreparingYouReport": "리포트를 준비하고 있습니다"
    },
    "commonComponents": {
-    "addRecordAssociationDisabledTooltip": "한도에 도달했습니다. 오브젝트당 최대 {limit}개의 레코드를 연결할 수 있습니다",
+    "addRecordAssociationDisabledTooltip": "한도에 도달했습니다. 객체당 최대 {limit}개의 레코드를 연결할 수 있습니다",
     "clickToViewDetail": "클릭하여 상세 보기",
     "records": "레코드",
     "updateRelationFailed": "관계 업데이트에 실패했습니다"
@@ -60341,7 +60341,7 @@
     "createdOn": "생성일"
    },
    "deleteContactOpportunities": {
-    "label": "기회 관리",
+    "label": "기회",
     "labelSingular": "기회"
    },
    "error": {
@@ -60365,7 +60365,7 @@
      "operatorMustBeSpecified": "연산자를 지정해야 합니다",
      "valueCannotBeEmpty": "값은 비워둘 수 없습니다"
     },
-    "invalid": "무효",
+    "invalid": "유효하지 않음",
     "max": "최대",
     "min": "최소",
     "needValidation": "검증 필요",
@@ -60374,7 +60374,7 @@
      "ago": "전",
      "april": "4월",
      "august": "8월",
-     "beforeDate": "이전 날짜",
+     "beforeDate": "날짜 이전",
      "between": "사이",
      "contains": "포함",
      "days": "일",
@@ -60384,7 +60384,7 @@
      "enabled": "활성화됨",
      "equalsTo": "같음",
      "february": "2월",
-     "fromNow": "지금부터",
+     "fromNow": "후",
      "greaterThan": "초과",
      "greaterThanOrEqualTo": "이상",
      "hours": "시간",
@@ -60392,7 +60392,7 @@
      "inMonth": "월 내",
      "inNoneOf": "다음 중 아무것도 아님",
      "inTheLast": "최근",
-     "inTheNext": "다음",
+     "inTheNext": "향후",
      "isAnyOf": "다음 중 하나라도 해당",
      "isEmpty": "비어 있음",
      "isNot": "다음이 아님",
@@ -60400,8 +60400,8 @@
      "january": "1월",
      "july": "7월",
      "june": "6월",
-     "lessThan": "보다 작음",
-     "lessThanOrEqualTo": "작거나 같음",
+     "lessThan": "미만",
+     "lessThanOrEqualTo": "이하",
      "march": "3월",
      "may": "5월",
      "minutes": "분",
@@ -60411,7 +60411,7 @@
      "nestedBetween": "사이",
      "november": "11월",
      "october": "10월",
-     "overdue": "연체",
+     "overdue": "기한 초과",
      "september": "9월",
      "thisMonth": "이번 달",
      "thisQuarter": "이번 분기",
@@ -60466,7 +60466,7 @@
     "colorLabel": "색상",
     "common": {
      "actions": "작업",
-     "addInternalNote": "내부 노트 추가",
+     "addInternalNote": "내부 메모 추가",
      "addNote": "노트 추가",
      "cancel": "취소",
      "close": "닫기",
@@ -60475,7 +60475,7 @@
      "created": "생성일",
      "createdBy": "생성자: {userName}",
      "delete": "삭제",
-     "discard": "삭제",
+     "discard": "변경 취소",
      "edit": "편집",
      "internalNotes": "내부 메모",
      "notes": "메모",
@@ -60496,38 +60496,38 @@
      "upload": "업로드"
     },
     "contact": "연락처",
-    "contactRequired": "{contact}를 선택해 주세요",
-    "couldNotFindNotes": "노트를 찾을 수 없습니다. 다시 시도해 주세요.",
-    "createError": "노트 \"{noteTitle}\"을 생성하지 못했습니다",
+    "contactRequired": "{contact}을(를) 선택해 주세요",
+    "couldNotFindNotes": "메모를 찾을 수 없습니다. 다시 시도해 주세요.",
+    "createError": "메모 \"{noteTitle}\"을 생성하지 못했습니다",
     "createSuccess": "\"{noteTitle}\" 메모가 성공적으로 생성되었습니다",
     "dateCreated": "생성일",
-    "deleteNoteConfirm": "노트 삭제",
-    "deleteNoteDesc": "이 노트를 삭제하시겠습니까?",
-    "deleteNoteFailed": "노트 \"{noteName}\"을 삭제하지 못했습니다",
-    "deleteNoteSuccess": "\"{noteName}\" 노트가 성공적으로 삭제되었습니다",
-    "deleteNoteTitle": "{noteName} 노트를 삭제하시겠습니까?",
-    "deletedNotesCanBeRestored": "삭제된 노트는 {months}개월 이내에 복원할 수 있습니다",
-    "descriptionRequired": "노트 설명을 입력하세요",
-    "failedToFetchNotes": "노트를 가져오지 못했습니다",
+    "deleteNoteConfirm": "메모 삭제",
+    "deleteNoteDesc": "이 메모를 삭제하시겠습니까?",
+    "deleteNoteFailed": "메모 \"{noteName}\"을 삭제하지 못했습니다",
+    "deleteNoteSuccess": "\"{noteName}\" 메모가 성공적으로 삭제되었습니다",
+    "deleteNoteTitle": "{noteName} 메모를 삭제하시겠습니까?",
+    "deletedNotesCanBeRestored": "삭제된 메모는 {months}개월 이내에 복원할 수 있습니다",
+    "descriptionRequired": "메모 설명을 입력하세요",
+    "failedToFetchNotes": "메모를 가져오지 못했습니다",
     "failedToFetchNotesDesc": "메모를 가져오는 중 오류가 발생했습니다. 새로고침하거나 잠시 후 다시 시도해 주세요.",
     "filterBy": "필터 기준",
-    "filterDoesNotMatch": "필터와 일치하는 노트가 없습니다. 필터를 지우거나 새 노트를 생성해 주세요",
+    "filterDoesNotMatch": "필터와 일치하는 메모가 없습니다. 필터를 지우거나 새 메모를 생성해 주세요",
     "filters": "필터",
     "matchAnyOfThese": "다음 중 하나라도 일치",
     "noNotesFound": "메모를 찾을 수 없습니다",
     "noteInpLabel": "설명",
     "noteInpPlaceholder": "설명 입력...",
-    "noteLengthExceeded": "노트 설명은 {length}자를 넘을 수 없습니다",
+    "noteLengthExceeded": "메모 설명은 {length}자를 넘을 수 없습니다",
     "noteTitleLabel": "제목",
     "noteTitlePlaceholder": "제목을 입력하세요",
     "notesHeader": "메모",
-    "searchDoesNotMatch": "검색 {message}와 일치하는 노트가 없습니다. 다른 검색어를 사용하거나 새 노트를 생성해 주세요",
+    "searchDoesNotMatch": "검색 {message}와 일치하는 메모가 없습니다. 다른 검색어를 사용하거나 새 메모를 생성해 주세요",
     "selectContact": "{contact} 선택",
     "selectObject": "{object} 선택",
     "sortBy": "정렬 기준",
-    "updateError": "\"{noteTitle}\" 노트 업데이트에 실패했습니다",
+    "updateError": "\"{noteTitle}\" 메모 업데이트에 실패했습니다",
     "updateNoteHeader": "메모 업데이트",
-    "updateSuccess": "\"{noteTitle}\" 노트가 성공적으로 업데이트되었습니다"
+    "updateSuccess": "\"{noteTitle}\" 메모가 성공적으로 업데이트되었습니다"
    },
    "opportunities": {
     "abandonedStatus": "중단됨",
@@ -60545,7 +60545,7 @@
     "lastStageChangeDate": "마지막 단계 변경 날짜",
     "lastStatusChangeDate": "마지막 상태 변경 날짜",
     "lastUpdated": "마지막 업데이트 후 경과일 ({timezone})",
-    "leads": "기회 관리",
+    "leads": "기회",
     "lostReason": "실패 사유",
     "lostStatus": "손실",
     "new": "신규",
@@ -60553,7 +60553,7 @@
     "openStatus": "진행 중",
     "opportunityDetails": "기회 세부정보",
     "opportunitySource": "출처",
-    "opportunityValue": "값",
+    "opportunityValue": "금액",
     "pipeline": "파이프라인",
     "quickActions": "빠른 작업",
     "stage": "단계",
@@ -60589,7 +60589,7 @@
     "limitReachedTooltip": "제한 도달: 이 라벨은 최대 {limit}개의 {objectLabel}에만 연결할 수 있습니다",
     "loadingErrorDesc": "관련 객체를 가져오는 중 오류가 발생했습니다. 새로고침하거나 잠시 후 다시 시도해 주세요.",
     "loadingErrorTitle": "로딩 오류",
-    "maxAllowed": "한 번에 최대 {maxCount}개의 {objectLabel}이 허용됩니다. {objectLabelLowercased}를 더 추가하려면 이 작업을 완료한 후 다시 진행하세요.",
+    "maxAllowed": "한 번에 최대 {maxCount}개의 {objectLabel}이(가) 허용됩니다. {objectLabelLowercased}을(를) 더 추가하려면 이 작업을 완료한 후 다시 진행하세요.",
     "noAssociationFound": "연결 항목을 찾을 수 없습니다",
     "noAssociationsSelected": "최소 1개의 연결을 선택해 주세요",
     "objectEmptyViewDesc": "아무것도 없습니다. 표시할 내용이 없습니다",
@@ -60605,7 +60605,7 @@
     "selectRecordDDTitle": "{objectLabel} 선택",
     "singleLabelsGroup": "단일 라벨",
     "successfullyAdded": "성공적으로 추가되었습니다",
-    "successfullyRemoved": "성공적으로 삭제되었습니다",
+    "successfullyRemoved": "성공적으로 제거되었습니다",
     "updateRelationFailed": "관계 업데이트에 실패했습니다",
     "updateRelationSuccess": "관계가 성공적으로 업데이트되었습니다",
     "viewDetails": "{objectLabel} 세부정보 보기"
@@ -60697,17 +60697,17 @@
      "update": "업데이트"
     },
     "contact": "연락처",
-    "contactRequired": "{contact}를 선택해 주세요",
+    "contactRequired": "{contact}을(를) 선택해 주세요",
     "copyStatusesFrom": "상태 복사 원본",
     "countGreaterThan": "{value}보다 큰 값을 입력하세요",
     "createFolder": "폴더 만들기",
     "createList": "목록 만들기",
     "createSpace": "스페이스 만들기",
-    "createTaskIfOverdue": "이전 작업이 연체되어도 새 작업 생성",
+    "createTaskIfOverdue": "이전 작업의 기한이 지나도 새 작업 생성",
     "customFields": "커스텀 필드",
     "dateCreated": "생성일",
     "dateFilter": {
-     "end": "통화 종료",
+     "end": "종료",
      "start": "시작"
     },
     "datePopover": {
@@ -60716,9 +60716,9 @@
     "deleteOnlyTask": "이 작업",
     "deleteRecurringTaskConfirm": "작업 삭제",
     "deleteRecurringTaskDesc": "이 작업은 향후 반복되도록 예약되어 있습니다. 삭제할 항목을 선택하세요.",
-    "deleteRecurringTaskFailed": "반복 작업 {taskName}을 삭제하지 못했습니다",
-    "deleteRecurringTaskSuccess": "반복 작업 {taskName}이 성공적으로 삭제되었습니다",
-    "deleteRecurringTaskTitle": "반복 작업 {taskName}을 삭제하시겠습니까?",
+    "deleteRecurringTaskFailed": "반복 작업 {taskName}을(를) 삭제하지 못했습니다",
+    "deleteRecurringTaskSuccess": "반복 작업 {taskName}이(가) 성공적으로 삭제되었습니다",
+    "deleteRecurringTaskTitle": "반복 작업 {taskName}을(를) 삭제하시겠습니까?",
     "deleteTaskAndAllRecurring": "이 작업 및 향후 모든 작업",
     "deleteTaskConfirm": "작업 삭제",
     "deleteTaskDesc": "이 작업을 삭제하시겠습니까?",
@@ -60766,13 +60766,13 @@
      "switchToDrawer": "사이드바로 열기",
      "switchToModal": "모달로 열기",
      "tags": "태그",
-     "title": "태스크 상세",
+     "title": "작업 상세",
      "titlePlaceholder": "작업 이름",
      "urlNotAllowedUseAllowedDomain": "허용되지 않은 URL입니다. 허용된 도메인을 사용하세요."
     },
     "dropFilesHere": "업로드할 파일을 여기에 드롭하세요",
     "dueAt": "마감: {date}",
-    "dueDate": "만료일",
+    "dueDate": "마감일",
     "dueDateTimeInFuture": "마감 날짜 및 시간은 미래 시점이어야 합니다",
     "dueDateTimeLabel": "마감 날짜 및 시간 {timeZone}",
     "dueDateTimeRequired": "마감 날짜와 시간을 선택해 주세요",
@@ -60813,12 +60813,12 @@
      "preparing": "새로운 환경에 맞게 작업을 준비하고 있습니다. 준비될 때까지 이 목록을 계속 사용할 수 있습니다.",
      "supportLink": "고객 지원 문의"
     },
-    "noSearchResult": "일치하는 태스크가 없습니다. 다시 시도해 주세요.",
+    "noSearchResult": "일치하는 작업이 없습니다. 다시 시도해 주세요.",
     "noTasksAvailable": "작업을 찾을 수 없습니다",
     "noTasksFound": "작업을 찾을 수 없습니다",
     "noTasksYet": "아직 작업이 없습니다",
     "noUsersFound": "사용자를 찾을 수 없습니다",
-    "privacy": "개인정보 보호",
+    "privacy": "공개 범위",
     "privatizeAccessLossWarning": "비공개로 설정하면 상속된 액세스 권한이 제거됩니다. 위에서 추가하지 않으면 다음 사용자의 액세스 권한이 사라집니다: {users}",
     "recurringTask": {
      "daily": "일",
@@ -60834,7 +60834,7 @@
     "recurringTaskRepeatsAfterTooltip": "{interval} {intervalType}마다 반복",
     "recurringTaskUpdatedFailed": "{recurring}작업 \"{taskTitle}\" 을(를) 업데이트하지 못했습니다",
     "recurringTaskUpdatedSuccess": "{recurring}작업 \"{taskTitle}\"이(가) 성공적으로 업데이트되었습니다",
-    "recurringTaskWithFailedRelations": "{relationErroredCount}개의 관계 실패와 함께 작업이 생성되었습니다",
+    "recurringTaskWithFailedRelations": "작업이 생성되었지만 {relationErroredCount}개의 관계를 연결하지 못했습니다",
     "removeDesc": "설명 제거",
     "repeatsEvery": "반복 주기",
     "searchPlaceholder": "제목으로 검색",
@@ -60862,7 +60862,7 @@
      "renameList": "이름 변경",
      "unpin": "고정 해제",
      "view": "보기",
-     "viewType": "유형 보기"
+     "viewType": "보기 유형"
     },
     "sortBy": "정렬 기준",
     "spaceName": "스페이스 이름",
@@ -60892,7 +60892,7 @@
      "filters": "필터",
      "listView": "목록 보기",
      "search": "검색",
-     "viewSettings": "설정 보기"
+     "viewSettings": "보기 설정"
     },
     "totalCountMany": "{count}개 작업",
     "totalCountOne": "작업 {count}개",
@@ -60907,7 +60907,7 @@
     },
     "wrapperTypeFolder": "폴더",
     "wrapperTypeList": "목록",
-    "yourSearch": "검색"
+    "yourSearch": "검색어와"
    }
   },
   "formSurveyApp": {
@@ -60965,7 +60965,7 @@
      },
      "formTable": {
       "edit": "편집",
-      "emptyStateTitleNoSearchList": "아직 항목이 없습니다",
+      "emptyStateTitleNoSearchList": "항목을 찾을 수 없습니다",
       "lastUpdated": "최근 수정",
       "moveToFolder": "폴더로 이동",
       "recent": "최근 사용",
@@ -60981,8 +60981,8 @@
       }
      },
      "shareFormModal": {
-      "locationLabel": "위치",
-      "message": "위치를 선택해 주세요"
+      "locationLabel": "서브 계정",
+      "message": "서브 계정을 선택해 주세요"
      }
     },
     "surveysList": {
@@ -60997,7 +60997,7 @@
       "title": "폴더로 이동"
      },
      "surveyTable": {
-      "emptyStateTitleNoSearchList": "아직 항목이 없습니다",
+      "emptyStateTitleNoSearchList": "항목을 찾을 수 없습니다",
       "rename": "이름 변경"
      }
     }
@@ -61008,7 +61008,7 @@
      "conversationOnSubmission": "대화"
     },
     "save": {
-     "discard": "삭제",
+     "discard": "변경 취소",
      "saveChanges": "변경사항 저장"
     },
     "state": {
@@ -61110,16 +61110,16 @@
     "clearAll": "전체 해제",
     "everyMonth": "매월",
     "firstExecutationDate": "첫 실행은 {date}에 진행됩니다",
-    "notAvailableInAllMonths": "모든 월에 사용할 수 없음",
+    "notAvailableInAllMonths": "일부 월에는 없는 날짜",
     "period": "기간",
-    "preferenceType": "환경설정 유형",
+    "preferenceType": "수신 설정 유형",
     "preferenceTypeHelperText": "구독자에게 더 많은 제어권을 주기 위해 이 캠페인을 분류하세요. 구독자는 전체 커뮤니케이션을 중단하지 않고 특정 카테고리만 구독 취소할 수 있습니다.",
     "reasonNoRecordsForBulkAction": "일괄 작업을 수행할 레코드를 찾을 수 없습니다. 입력 내용을 확인하고 다시 시도해 주세요.",
-    "repeatAfterSentenceCase": "다음 이후 반복",
+    "repeatAfterSentenceCase": "반복 간격",
     "resendDays": "일",
     "resendMinutes": "분",
     "schedule": "일정",
-    "scheduleAction": "일정",
+    "scheduleAction": "예약 발송",
     "searchTags": "태그 검색",
     "selectDomain": "도메인 선택",
     "send": "보내기",
@@ -61135,8 +61135,8 @@
     },
     "dictation": {
      "noAudioCaptured": "캡처된 오디오가 없습니다. 다시 시도해 주세요.",
-     "permissionDenied": "마이크 접근이 차단되었습니다. 딕테이션을 사용하려면 브라우저에서 마이크 권한을 활성화해 주세요.",
-     "tooLarge": "녹화가 너무 깁니다"
+     "permissionDenied": "마이크 접근이 차단되었습니다. 음성 입력을 사용하려면 브라우저에서 마이크 권한을 활성화해 주세요.",
+     "tooLarge": "녹음이 너무 깁니다"
     },
     "feedbackModal": {
      "didNotFollow": "지시사항을 완전히 따르지 않음",
@@ -61190,7 +61190,7 @@
     "saveChanges": "변경사항 저장",
     "saving": "저장 중...",
     "seeVersionHistory": "버전 기록 보기",
-    "selectLocation": "위치 선택",
+    "selectLocation": "서브 계정 선택",
     "sendTestEmailNormalCase": "테스트 이메일 보내기",
     "success": "성공",
     "successful": "성공",
@@ -61228,22 +61228,22 @@
     "eventTime": "이벤트 시간",
     "events": "이벤트",
     "expiryDate": "만료일",
-    "fullName": "이름",
+    "fullName": "전체 이름",
     "hasDiscount": "할인 있음",
     "invoiceName": "인보이스명",
     "invoices": "인보이스",
     "issueDate": "발급일",
     "listings": "리스팅",
-    "locationName": "위치 이름",
+    "locationName": "서브 계정 이름",
     "minute": "분",
-    "month": "개월",
+    "month": "월",
     "name": "이름",
     "passwordUrl": "비밀번호 URL",
     "paymentSchedule": "결제 일정",
     "post": "게시글",
     "postAuthorName": "게시글 작성자 이름",
     "postalCode": "우편번호",
-    "preferenceManagement": "환경설정 관리",
+    "preferenceManagement": "수신 설정 관리",
     "price": "가격",
     "proposals": "문서 & 계약",
     "requestor": "요청자",
@@ -61256,10 +61256,10 @@
     "services": "서비스",
     "shippingAddress": "배송 주소",
     "siteName": "사이트 이름",
-    "subscriptionId": "구독 Id",
+    "subscriptionId": "구독 ID",
     "subscriptionStatus": "구독 상태",
     "supportEmail": "지원 이메일",
-    "timeAccessDays": "시간 접근 일수",
+    "timeAccessDays": "접근 가능 일수",
     "timezone": "시간대",
     "totalAmount": "총 금액",
     "transactionId": "거래 ID",
@@ -61291,9 +61291,9 @@
       "members": "멤버"
      },
      "blankTemplateDesc": "처음부터 시작",
-     "brandKit": "디자인 킷",
+     "brandKit": "디자인 키트",
      "brandVoiceLabel": "브랜드 보이스",
-     "businessNiche": "비즈니스 니치",
+     "businessNiche": "업종",
      "createNewDesignKit": "새 디자인 키트 만들기",
      "custom": "사용자 지정",
      "default": "기본",
@@ -61321,7 +61321,7 @@
     },
     "borderColor": "테두리 색상",
     "borderRadiusDefault": "기본",
-    "borderRadiusMd": "보통",
+    "borderRadiusMd": "중간",
     "brandColors": "브랜드 색상",
     "buildWithAI": "AI로 빌드하기",
     "button": "버튼",
@@ -61331,13 +61331,13 @@
     "confirmation": {
      "customSubmit": "보내기"
     },
-    "contain": "포함",
+    "contain": "맞추기",
     "content": "콘텐츠",
     "contentAlignmentOptions": {
      "justify": "양쪽 맞춤"
     },
     "countdownTImerSettingsTab": "설정",
-    "cover": "커버",
+    "cover": "채우기",
     "customValues": "커스텀 값",
     "defaultValue": {
      "placeholders": {
@@ -61362,7 +61362,7 @@
     "list": "목록",
     "logo": "로고",
     "makeLonger": "더 길게 만들기",
-    "margin": "마진",
+    "margin": "바깥 여백",
     "moveDown": "아래로 이동",
     "paddingLeft": "왼쪽",
     "paddingRight": "오른쪽",
@@ -61375,7 +61375,7 @@
     "pleaseEnterValidAmount": "유효한 금액을 입력하세요.",
     "pleaseSelectProductType": "상품 유형을 선택하세요.",
     "previewInfo": {
-     "from": "변경 전:"
+     "from": "보낸 사람:"
     },
     "priceName": "가격 이름",
     "productType": "상품 유형",
@@ -61384,14 +61384,14 @@
     "row": "행",
     "search": "검색",
     "section": "섹션",
-    "shadowLg": "길게",
+    "shadowLg": "크게",
     "shadowSm": "작게",
     "simple": "심플",
     "size": "크기",
     "slide": "슬라이드",
     "social": "소셜",
     "tags": {
-     "offer": "제안",
+     "offer": "혜택",
      "tone": "어조"
     },
     "templateLibrary": "템플릿",
@@ -61417,7 +61417,7 @@
      "clicked": "클릭됨",
      "delivered": "전달됨",
      "opened": "열림",
-     "variation": "배리에이션"
+     "variation": "변형"
     },
     "action": "액션",
     "actionColumn": "액션",
@@ -61445,7 +61445,7 @@
     "last7days": "최근 7일",
     "lastUpdatedTime": "최근 수정",
     "nSelected": "{count}개 선택됨",
-    "noOfClicks": "클릭",
+    "noOfClicks": "클릭 수",
     "opened": "열림",
     "pleaseSelectTag": "태그를 선택하세요",
     "processed": "처리됨",
@@ -61453,7 +61453,7 @@
     "published": "게시됨",
     "recentExportsSourceAllCampaigns": "전체 캠페인",
     "recentExportsSourceBulkActionCampaigns": "대량 액션 캠페인",
-    "recipients": "수신자들",
+    "recipients": "수신자",
     "revenue": "매출",
     "score": "점수",
     "sendOrSchedule": "보내기 또는 예약",
@@ -61467,7 +61467,7 @@
     "updatedBy": "업데이트한 사람",
     "upload": "업로드",
     "uploadedFonts": "업로드된 폰트",
-    "variation": "배리에이션"
+    "variation": "변형"
    },
    "emailHome": {
     "categories": {
@@ -61477,13 +61477,13 @@
    "emailSequence": {
     "addTagLabel": "태그 추가",
     "addTagsLabelV2": "태그 추가",
-    "after": "횟수",
+    "after": "이후",
     "ai": {
      "composerPlaceholder": "무엇이든 계획하고, 구축하고, 수정하세요...",
      "consentYes": "예",
      "generateWithAi": "AI로 생성",
      "intakeCustomSubmit": "보내기",
-     "intakePrevious": "이전 문제"
+     "intakePrevious": "이전 질문"
     },
     "batchQuantityLabel": "배치 수량",
     "changeTemplate": "템플릿 변경",
@@ -61503,13 +61503,13 @@
     "moveToFolderLabel": "폴더로 이동",
     "removeSharingLabel": "공유 제거",
     "reviewConditionsLabel": "조건 검토",
-    "selectPreferenceTypeLabel": "환경설정 유형 선택(선택 사항)",
+    "selectPreferenceTypeLabel": "수신 설정 유형 선택(선택 사항)",
     "senderEmailLabel": "발신자 이메일",
     "shareLinkLabel": "링크 공유",
     "shareTemplateLabel": "템플릿 공유",
     "showStatisticsNumbersLabel": "통계를 숫자로 표시",
     "smartListRecipientLabel": "스마트 리스트",
-    "statusDraft": "임시 저장"
+    "statusDraft": "초안"
    },
    "emailTemplate": {
     "access": "액세스",
@@ -61543,7 +61543,7 @@
     "mobile": "모바일"
    },
    "snippetSelect": {
-    "noResultsFoundHeading": "발견된 결과가 없습니다"
+    "noResultsFoundHeading": "결과를 찾을 수 없습니다"
    },
    "tableCrud": {
     "selectAll": "전체 선택"
@@ -61555,7 +61555,7 @@
   },
   "locationsApp": {
    "addSubAccount": {
-    "businessNiche": "비즈니스 니치",
+    "businessNiche": "업종",
     "businessPhone": "비즈니스 전화번호",
     "website": "웹사이트",
     "zip": "우편번호"
@@ -61571,7 +61571,7 @@
    "bulkActions": {
     "enableAll": "모두 켜기"
    },
-   "calls": "전화",
+   "calls": "통화",
    "close": "닫기",
    "columns": "컬럼",
    "common": {
@@ -61673,12 +61673,12 @@
     },
     "createNote": "노트 만들기",
     "deleteSubAccount": {
-     "confirmationText": "확인하려면 {text}를 입력하세요",
+     "confirmationText": "확인하려면 {text}을(를) 입력하세요",
      "integrationConfirmation": {
       "2": "twilio, mailgun, gmb, 도메인, facebook, zoom 등의 모든 연동을 해제했음을 확인합니다"
      },
      "scheduleForDeletion": {
-      "changeMind": "이 시간 이전에 마음을 바꾸실 수 있습니다.",
+      "changeMind": "이 시간 전까지는 삭제를 취소할 수 있습니다.",
       "description": "이 서브 계정이 삭제 예약되었습니다. 삭제 예정일:"
      },
      "twilioWarning": {
@@ -61689,7 +61689,7 @@
      "confirmation": {
       "3": "이 작업은 되돌릴 수 없음을 이해합니다"
      },
-     "confirmationText": "아래에 {text}를 입력하여 확인하세요"
+     "confirmationText": "아래에 {text}을(를) 입력하여 확인하세요"
     },
     "loadSnapshot": {
      "back": "뒤로",
@@ -61729,7 +61729,7 @@
      "settings": {
       "revokeDedication": "전용 해제",
       "switchToMarkup": "마크업으로 전환",
-      "useSameTwilio": "이것은 나의 Twilio입니다, 동일하게 사용"
+      "useSameTwilio": "내 Twilio 계정입니다. 같은 계정 사용"
      }
     },
     "saas": {
@@ -61738,7 +61738,7 @@
      "rebillingEnabled": "이 계정은 이미 재청구 구성이 보류 상태입니다. SaaS 플랜은 클라이언트가 결제 방법을 추가한 후에만 연결할 수 있습니다.",
      "saasMode": "SaaS 모드"
     },
-    "streetAddress": "상세 주소",
+    "streetAddress": "도로명 주소",
     "tabs": {
      "advancedSettings": "고급 설정",
      "basicDetails": "기본 정보",
@@ -61749,15 +61749,15 @@
      "title": "제목"
     },
     "transferSubAccount": {
-     "confirmTransferDescription2": "전송하기 전에 세부사항을 확인하세요",
-     "transferExisting": "기존 계정으로 전송"
+     "confirmTransferDescription2": "이전하기 전에 세부사항을 확인하세요",
+     "transferExisting": "기존 계정으로 이전"
     },
     "wallet": {
      "calendarSettings": {
       "calendarSettings": "캘린더 설정",
       "services": "서비스"
      },
-     "credits_debited_description": "에이전시에서 크레딧 제거됨",
+     "credits_debited_description": "에이전시에서 크레딧 차감됨",
      "enterAmount": "금액 입력",
      "title": "지갑"
     }
@@ -61780,7 +61780,7 @@
    "saasProducts": {
     "certificates": "수료증",
     "gmb-messaging": "GMB 메시징",
-    "opportunities": "기회 관리",
+    "opportunities": "기회",
     "quizzes": "퀴즈",
     "sms-email-templates": "SMS 및 이메일 템플릿",
     "social-planner": "소셜 플래너",
@@ -61809,7 +61809,7 @@
   "opportunitiesApp": {
    "appointments": {
     "addNewAppointment": "예약 추가",
-    "associatedListings": "연결된 목록",
+    "associatedListings": "연결된 리스팅",
     "associatedServices": "연결된 서비스",
     "bookAppointment": "예약하기",
     "bookUpdateAppointment": "예약 등록 또는 수정",
@@ -61820,8 +61820,8 @@
     "confirmed": "확정",
     "delete": "삭제",
     "deleteAppointment": "예약을 삭제하시겠습니까?",
-    "deleteAppointmentMessage": "이 예약을 삭제하시겠습니까? 이 작업은 취소할 수 없습니다!",
-    "deleteRentalMessage": "이 예약은 아래 등록 정보로 예약되었습니다. 삭제하면 이 등록 정보에 연결된 모든 관련 예약이 삭제됩니다. 이 작업은 되돌릴 수 없습니다.",
+    "deleteAppointmentMessage": "이 예약을 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다!",
+    "deleteRentalMessage": "이 예약은 아래 리스팅으로 예약되었습니다. 삭제하면 이 리스팅에 연결된 모든 관련 예약이 삭제됩니다. 이 작업은 되돌릴 수 없습니다.",
     "deleteServiceMessage": "이 예약은 아래 나열된 서비스로 예약되었습니다. 삭제하면 이 서비스에 연결된 모든 관련 예약이 삭제됩니다. 이 작업은 되돌릴 수 없습니다.",
     "duration": {
      "hours": "{hours}시간",
@@ -61837,7 +61837,7 @@
     "new": "신규",
     "newAppointment": "새 예약",
     "noAppointments": "예약이 없습니다!",
-    "noAppointmentsDescription": "예약된 약속이 없는 것 같습니다. 지금 설정하시겠습니까?",
+    "noAppointmentsDescription": "예약된 일정이 없습니다. 지금 예약을 추가하시겠습니까?",
     "noUpcomingAppointments": "예정된 예약이 없습니다",
     "noshow": "노쇼",
     "outlook": "Outlook 회의",
@@ -61853,14 +61853,14 @@
    },
    "association": {
     "unassigned": "미배정",
-    "value": "값"
+    "value": "금액"
    },
    "associations": {
     "addTagTitle": "추가",
-    "associatedObjectTooltip": "{object}를 {objects}에 연결",
+    "associatedObjectTooltip": "{object}을(를) {objects}에 연결",
     "associatedObjects": "연결된 객체",
     "associatedWith": "다음과 연결됨",
-    "associationLimitReached": "연결 제한에 도달했습니다. 이 개체에는 이미 최대 개수의 레코드가 연결되어 있습니다.",
+    "associationLimitReached": "연결 제한에 도달했습니다. 이 객체에는 이미 최대 개수의 레코드가 연결되어 있습니다.",
     "cannotDeselect": "레코드가 연결되어 있는 동안에는 이 옵션을 선택 해제할 수 없습니다. 먼저 레코드를 제거하세요."
    },
    "bulkActions": {
@@ -61884,7 +61884,7 @@
     "selectSlot": "시간 선택",
     "selectTeamMember": "팀원 선택",
     "slot": "슬롯",
-    "thePreConfiguredMeetingLocation": "사전 구성된 미팅 장소를 사용하려면 공란으로 두는 것을 고려하세요"
+    "thePreConfiguredMeetingLocation": "사전 설정된 미팅 장소를 사용하려면 비워 두세요"
    },
    "canonical": {
     "attribution": {
@@ -61892,7 +61892,7 @@
     },
     "common": {
      "auth_channel_not_supported": "지원되지 않는 인증 채널입니다.",
-     "failed_find_location": "위치를 찾지 못했습니다",
+     "failed_find_location": "서브 계정을 찾지 못했습니다",
      "id_undefined": "id는 undefined일 수 없습니다",
      "location_id_missing_body": "본문에 LocationId가 없습니다",
      "location_id_missing_query": "쿼리에 LocationId가 없습니다",
@@ -61904,13 +61904,13 @@
      "pipeline_id_undefined": "pipelineId는 undefined일 수 없습니다"
     },
     "lost_reason": {
-     "create_duplicate": "새 실패 이유를 생성할 수 없습니다: 중복된 실패 이유",
-     "create_failed": "새 실패 이유를 생성할 수 없습니다",
-     "delete_failed": "실패 이유를 삭제할 수 없습니다",
+     "create_duplicate": "새 실패 사유를 생성할 수 없습니다: 중복된 실패 사유",
+     "create_failed": "새 실패 사유를 생성할 수 없습니다",
+     "delete_failed": "실패 사유를 삭제할 수 없습니다",
      "deleted_or_duplicate": "실패 사유 ID가 이미 삭제되었거나 중복 항목이 존재합니다",
      "deleted_or_not_found": "실패 사유 ID가 이미 삭제되었거나 찾을 수 없습니다",
      "id_undefined": "lostReasonId는 undefined일 수 없습니다",
-     "invalid_id": "잘못된 실패 이유 ID입니다",
+     "invalid_id": "잘못된 실패 사유 ID입니다",
      "not_found": "실패 사유를 찾을 수 없습니다",
      "update_duplicate": "실패 사유를 업데이트할 수 없습니다: 중복된 실패 사유",
      "update_failed": "실패 사유를 업데이트할 수 없습니다"
@@ -61937,15 +61937,15 @@
      "no_create_update_permission": "이 기회를 생성/수정할 권한이 없습니다",
      "no_duplicate": "해당 연락처에 대해 중복된 기회를 생성할 수 없습니다.",
      "no_move_permission": "이 기회를 {pipelineId} 파이프라인으로 이동할 권한이 없습니다",
-     "no_owner_permission": "사용자 {userId}는 파이프라인 {pipelineId}에 접근할 권한이 없으므로 소유자로 지정할 수 없습니다.",
+     "no_owner_permission": "사용자 {userId}은(는) 파이프라인 {pipelineId}에 접근할 권한이 없으므로 소유자로 지정할 수 없습니다.",
      "no_restore_permission": "이 기회를 복원할 권한이 없습니다",
-     "no_update_permission_pipeline": "{role} {users}가 파이프라인 {pipelineId}에 접근할 권한이 없으므로 기회를 업데이트할 수 없습니다.",
+     "no_update_permission_pipeline": "{role} {users}이(가) 파이프라인 {pipelineId}에 접근할 권한이 없으므로 기회를 업데이트할 수 없습니다.",
      "not_deleted": "이 기회는 삭제되지 않았습니다",
      "not_exist": "기회가 존재하지 않습니다.",
      "not_exist_or_deleted": "기회가 존재하지 않거나 삭제되었습니다.",
      "not_found": "기회를 찾을 수 없습니다",
      "pipeline_contact_location_required": "PipelineId, ContactId, LocationId는 필수입니다",
-     "pipeline_different_location": "파이프라인이 연락처와 다른 위치에 있습니다",
+     "pipeline_different_location": "파이프라인이 연락처와 다른 서브 계정에 속해 있습니다",
      "pipeline_invalid": "파이프라인 ID가 유효하지 않습니다.",
      "pipeline_invalid_no_dot": "파이프라인 ID가 유효하지 않습니다",
      "pipeline_not_found": "파이프라인을 찾을 수 없습니다",
@@ -61961,7 +61961,7 @@
      "revoke_owner_follower": "이미 하나 이상의 기회에 대한 소유자 또는 팔로워인 일부 사용자의 권한을 취소할 수 없습니다"
     },
     "pipeline": {
-     "anchor_not_found": "앵커 파이프라인을 찾을 수 없습니다",
+     "anchor_not_found": "기준 파이프라인을 찾을 수 없습니다",
      "cannot_delete_all_stages": "파이프라인의 모든 단계를 삭제할 수 없습니다.",
      "duplicate_external_object_id": "이 외부 객체 ID를 가진 파이프라인이 이미 존재합니다.",
      "duplicate_name": "동일한 이름의 파이프라인이 이미 존재합니다.",
@@ -61990,8 +61990,8 @@
      "create_failed": "스마트 필터를 생성하지 못했습니다",
      "delete_failed": "스마트 필터 삭제에 실패했습니다",
      "delete_success": "스마트 필터가 성공적으로 삭제되었습니다",
-     "duplicate_in_batch": "위치 {locationId}, 파이프라인 {pipelineId}, 필터 유형 {filterType}에 대한 배치에서 필터 이름 \"{name}\"이 중복되었습니다",
-     "duplicate_name_in_location": "\"{name}\"이라는 이름의 {filterTypeLabel}이 이미 존재합니다{pipelineInfo}.",
+     "duplicate_in_batch": "서브 계정 {locationId}, 파이프라인 {pipelineId}, 필터 유형 {filterType}에 대한 배치에서 필터 이름 \"{name}\"이 중복되었습니다",
+     "duplicate_name_in_location": "\"{name}\"이라는 이름의 {filterTypeLabel}이(가) 이미 존재합니다{pipelineInfo}.",
      "duplicate_tag_condition": "\"{pipelineName}\"에 이미 동일한 조건의 태그가 존재합니다. 색상을 변경하거나 다른 이름을 선택해보세요.",
      "fetch_all_failed": "스마트 필터를 가져오지 못했습니다",
      "fetch_failed": "스마트 필터를 가져오지 못했습니다",
@@ -62041,7 +62041,7 @@
     "add": "추가",
     "addFields": "필드 추가",
     "addFilter": "필터 추가",
-    "addNotePlaceholder": "노트 추가",
+    "addNotePlaceholder": "메모 추가",
     "addSmartlist": "스마트 리스트 추가",
     "addSort": "정렬 추가",
     "addToPipelines": "파이프라인에 추가",
@@ -62059,10 +62059,10 @@
     "archived": " 보관됨",
     "ascending": "오름차순",
     "associateNew": "새로 연결",
-    "associated": "연관됨",
+    "associated": "연결됨",
     "associated2": "연결됨",
     "associatedObject": "연결된 {object}",
-    "associations": "연관",
+    "associations": "연결",
     "author": "작성자",
     "back": "뒤로",
     "blogPost": "블로그 게시물",
@@ -62114,18 +62114,18 @@
     "default": "기본",
     "defaultView": "기본 보기",
     "defaultViewIn": "기본 보기",
-    "defaultViewInfoHint": "이는 뷰가 표시되는 위치만 제어합니다. 필터, 필드, 정렬은 그대로 유지됩니다.",
+    "defaultViewInfoHint": "이 설정은 보기가 표시되는 위치만 제어합니다. 필터, 필드, 정렬은 그대로 유지됩니다.",
     "defaultViewNotInShowIn": "이 보기는 선택한 파이프라인 {count}개에서 사용할 수 없습니다. 확인하면 추가됩니다.",
-    "defaultViewRemovedWarning": "확인하면 이 보기가 파이프라인 {count}개에서 기본값에서 해제됩니다.",
+    "defaultViewRemovedWarning": "확인하면 파이프라인 {count}개에서 이 보기의 기본 설정이 해제됩니다.",
     "defaultViewReplaceWarning": "확인하면 {count}개 파이프라인의 기존 기본 보기가 대체됩니다.",
-    "defaultViewStaticInfo": "사용자는 이 파이프라인에서 이 뷰를 먼저 보게 됩니다. 제거하면 파이프라인이 이전 기본 뷰로 다시 전환됩니다.",
+    "defaultViewStaticInfo": "사용자는 이 파이프라인에서 이 보기를 먼저 보게 됩니다. 제거하면 파이프라인이 이전 기본 보기로 다시 전환됩니다.",
     "delete": "삭제",
     "deleteDefaultInPipelines": "{count}개 파이프라인의 기본 보기",
     "deleteDefaultViewInfo": "기본 보기가 삭제되면 파이프라인은 이전 기본 보기로 다시 전환됩니다.",
     "deleteList": "목록 삭제",
     "deleteUsedInPipelines": "{count}개 파이프라인에서 사용됨",
     "deleteWarning": "이 {opportunity}을(를) 삭제하시겠습니까?",
-    "deleteWarningText": "이 액션은 파이프라인에서 이 {opportunity}를 삭제합니다.",
+    "deleteWarningText": "이 액션은 파이프라인에서 이 {opportunity}을(를) 삭제합니다.",
     "descending": "내림차순",
     "description": "설명",
     "discard": "변경사항 취소",
@@ -62134,7 +62134,7 @@
     "doNotReloadThisWindowWhileExportIsInProgress": "내보내기가 진행 중일 때는 이 창을 새로고침하거나 이 페이지를 벗어나지 마세요",
     "draft": "임시 저장",
     "due": "마감일:",
-    "dueDate": "만료일",
+    "dueDate": "마감일",
     "duplicate": "복제",
     "edit": "편집",
     "email": "이메일",
@@ -62162,7 +62162,7 @@
     "list": "목록",
     "listName": "목록 이름",
     "lockedFieldMessage": "이 필드는 제거하거나 이동할 수 없습니다",
-    "lonelyMsg": "여기는 너무 외로워요!",
+    "lonelyMsg": "여기가 텅 비어 있습니다!",
     "manageFields": "필드 관리",
     "manageSmartList": "스마트 리스트 관리",
     "manageSmartLists": "스마트 리스트 관리",
@@ -62176,13 +62176,13 @@
     "newPost": "새 게시물",
     "newSmartlistName": "새 스마트 리스트",
     "next": "다음",
-    "noCustomField": "이 폴더에는 존재하는 커스텀 필드가 없습니다.",
-    "noDataMsg": "{name}이(가) 보이지 않네요! 새로 만들 준비가 되셨나요?",
-    "noOpportunitiesFound": "검색 결과가 없습니다",
+    "noCustomField": "이 폴더에 커스텀 필드가 없습니다.",
+    "noDataMsg": "{name}이(가) 없습니다. 새로 만들어 보시겠습니까?",
+    "noOpportunitiesFound": "결과가 없습니다",
     "noSmartViewsCreated": "아직 생성된 스마트 뷰가 없습니다.",
     "noViewsMatchFilters": "필터와 일치하는 보기가 없습니다.",
     "opportunities": "기회",
-    "opportunitiesCapital": "기회 관리",
+    "opportunitiesCapital": "기회",
     "opportunityLabel": "기회",
     "other": "기타",
     "otherDetails": "기타 세부정보",
@@ -62219,22 +62219,22 @@
     "searchColumn": "열 검색",
     "searchMaxLengthError": "검색어는 75자를 초과할 수 없습니다",
     "searchToolTip": "기회 이름, 전화번호, 이메일, 회사, 태그 및 연락처 이름으로 검색",
-    "searchViews": "뷰 검색",
+    "searchViews": "보기 검색",
     "select": "선택",
     "selectAll": "전체 선택",
     "selectDate": "날짜 선택",
     "selectDateTime": "날짜 및 시간 선택",
     "selectField": "필드 선택",
-    "selectOne": "하나만 선택",
+    "selectOne": "선택하세요",
     "selectTime": "시간 선택",
     "selectWhoCanAccess": "이 목록에 접근할 수 있는 사람을 선택하세요",
     "selected": "선택됨",
     "selectedPipelines": "선택된 파이프라인",
-    "setAsDefaultIn": "기본값으로 설정 위치",
+    "setAsDefaultIn": "기본 보기로 설정할 파이프라인",
     "setAsDefaultInPipelines": "파이프라인에서 기본값으로 설정",
     "settings": "설정",
     "share": "공유",
-    "shareWith": "\"{ name }\"을(를) 공유",
+    "shareWith": "\"{ name }\" 공유 대상",
     "shareWithAllUsers": "모든 사용자와 공유",
     "shareWithSelectedUsers": "선택한 사용자와 공유",
     "sharedWithLabel": "공유 대상",
@@ -62244,7 +62244,7 @@
     "showIn": "표시 위치",
     "showInAddedInfo": "이 보기는 아직 선택한 파이프라인 {count}개에서 사용할 수 없습니다. 확인하면 추가됩니다.",
     "showInDefaultRemovedWarning": "이 보기는 파이프라인 {count}개에서 더 이상 사용할 수 없으며 기본 보기에서도 제거됩니다.",
-    "showInInfoText": "이는 뷰가 표시되는 위치만 제어합니다. 필터, 필드, 정렬은 그대로 유지됩니다.",
+    "showInInfoText": "이 설정은 보기가 표시되는 위치만 제어합니다. 필터, 필드, 정렬은 그대로 유지됩니다.",
     "showInRemovedWarning": "확인하면 이 보기가 파이프라인 {count}개에서 제거됩니다.",
     "showing": "표시 중",
     "shownInPipelines": "파이프라인에 표시됨",
@@ -62272,12 +62272,12 @@
     "upcomingConfirmedAppointment": "다음 확정된 예약",
     "update": "업데이트",
     "updatedOn": "수정일",
-    "updatedText": "이 위치의 모든 파이프라인에 커스텀 카드 업데이트",
+    "updatedText": "이 서브 계정의 모든 파이프라인에 커스텀 카드 업데이트",
     "value": "값",
     "view": "보기",
     "viewAll": "전체 보기",
     "viewConversations": "대화 보기",
-    "viewName": "뷰 이름",
+    "viewName": "보기 이름",
     "viewSmartList": "스마트 리스트 보기",
     "weArePreparingYouReport": "리포트를 준비하고 있습니다"
    },
@@ -62329,11 +62329,11 @@
     "monthsFromNow": "지금부터 개월 후",
     "week": "주",
     "weekAgo": "1주 전",
-    "weekAhead": "다가오는 주",
+    "weekAhead": "1주 후",
     "weekFromNow": "지금부터 1주 후",
     "weeks": "주",
-    "weeksAgo": "전",
-    "weeksAhead": "후",
+    "weeksAgo": "주 전",
+    "weeksAhead": "주 후",
     "weeksFromNow": "지금부터 주 후",
     "year": "년",
     "yearAgo": "년 전",
@@ -62373,7 +62373,7 @@
      "lostReason": "실패 사유",
      "open": "진행 중",
      "opportunitySource": "출처",
-     "opportunityValue": "값",
+     "opportunityValue": "금액",
      "pipeline": "파이프라인",
      "stage": "단계",
      "status": "상태",
@@ -62401,7 +62401,7 @@
      "containsAny": "다음 중 하나 포함",
      "days": "일",
      "doesNotContain": "포함하지 않음",
-     "doesNotContainAny": "아무것도 포함하지 않음",
+     "doesNotContainAny": "다음 중 어느 것도 포함하지 않음",
      "doesNotEqual": "같지 않음",
      "equals": "같음",
      "exists": "존재함",
@@ -62424,7 +62424,7 @@
     "value": "값",
     "values": {
      "afterDate": "날짜 이후",
-     "beforeDate": "이전 날짜",
+     "beforeDate": "날짜 이전",
      "between": "사이",
      "inTheLast": "최근",
      "inTheNext": "다음",
@@ -62459,7 +62459,7 @@
      "addNote": "노트 추가",
      "cancel": "취소",
      "create": "만들기",
-     "createAndAddAnother": "저장 후 추가",
+     "createAndAddAnother": "저장 후 하나 더 추가",
      "createdBy": "생성자: {userName}",
      "edit": "편집",
      "notes": "메모",
@@ -62508,7 +62508,7 @@
     "updateSuccess": "\"{noteTitle}\" 노트가 성공적으로 업데이트되었습니다"
    },
    "opportunities": {
-    "abandonedLabel": "포기",
+    "abandonedLabel": "중단됨",
     "abandonedStatus": "중단됨",
     "activityBackfill": {
      "banner": {
@@ -62577,7 +62577,7 @@
        "pipelineStage": "파이프라인 단계",
        "status": "상태"
       },
-      "moreSeparator": "+{count}개 더 보기",
+      "moreSeparator": "+{count}개 더",
       "noOutcomes": "결과 없음",
       "operators": {
        "allOf": "모두 해당",
@@ -62586,7 +62586,7 @@
        "exists": "비어있지 않음",
        "noneOf": "어느 것도 해당 없음",
        "notContains": "포함하지 않음",
-       "notEq": "~이 아니다",
+       "notEq": "다음이 아님",
        "notExists": "비어있음",
        "notRange": "범위 밖",
        "range": "범위 내"
@@ -62596,7 +62596,7 @@
        "showField": "표시",
        "showFolder": "폴더 표시"
       },
-      "tailMore": "+{count}개 더 보기",
+      "tailMore": "+{count}개 더",
       "untitledRule": "제목 없는 규칙"
      }
     },
@@ -62635,8 +62635,8 @@
     "duplicateContact": "연락처 '{contactName}'을(를) 추가할 수 없습니다. 이 연락처는 기존 기회에 연결되어 있습니다. 현재 레코드를 확인해 주세요.",
     "duplicateDetected": "중복된 기회가 감지되었습니다",
     "duplicateDisabled": "이 연락처에는 이미 기회가 있습니다. 계속하려면 연락처를 변경하거나 중복 기회를 활성화하세요.",
-    "duplicateToBoard": "보드 뷰로 복제",
-    "duplicateToList": "리스트 뷰로 복제",
+    "duplicateToBoard": "보드 보기로 복제",
+    "duplicateToList": "목록 보기로 복제",
     "editOpportunity": "기회 편집",
     "editSearchableFields": "검색 가능 필드 편집",
     "email": "이메일",
@@ -62648,10 +62648,10 @@
     "enterOpportunityName": "기회 이름을 입력하세요",
     "enterSource": "소스를 입력하세요",
     "enterValidLostReason": "올바른 실패 이유를 입력해주세요",
-    "expandStage": "단계 확장",
+    "expandStage": "단계 펼치기",
     "export": "내보내기",
     "facebookFormLead": "Facebook 폼 리드",
-    "failedToAddTag": "태그 {tag}를 추가하지 못했습니다",
+    "failedToAddTag": "태그 {tag}을(를) 추가하지 못했습니다",
     "failedToAddTags": "태그를 추가하지 못했습니다",
     "failedToRemoveTags": "태그를 제거하지 못했습니다",
     "fields": {
@@ -62689,18 +62689,18 @@
     "followersTh": "팔로워",
     "forecast": "예측",
     "forecastDashboard": {
-     "activeOpportunities": "열린 기회",
+     "activeOpportunities": "진행 중인 기회",
      "activeOpportunitiesSubtext": "현재 진행 중인 기회",
      "allCloseDates": "모든 마감일",
-     "amount": "값",
+     "amount": "금액",
      "and": "그리고",
      "apply": "적용",
      "avgProb": "유효 확률",
      "bestCase": "최대 예상 매출",
      "bestCaseSubtext": "모든 진행 중인 기회가 성사될 경우의 총 가치",
      "cancel": "취소",
-     "closeDate": "예상 종료일",
-     "closedWon": "승리 수익",
+     "closeDate": "예상 마감일",
+     "closedWon": "성사된 매출",
      "closedWonSubtext": "성사된 기회의 총 가치",
      "dateFieldCreated": "생성일",
      "dateFieldForecast": "예측",
@@ -62712,20 +62712,20 @@
      "groupBy": "그룹화 기준",
      "minDaysSlipped": "마감일 경과일",
      "minDaysSlippedPlaceholder": "예: 14일 이상",
-     "minSlippageCount": "푸시된 횟수",
+     "minSlippageCount": "연기된 횟수",
      "minSlippageCountPlaceholder": "예: 2회 이상",
-     "missingAmount": "기회 값이 누락되었습니다",
-     "missingAmountDesc": "이 기회들은 합계에 $0을 기여합니다.",
-     "missingCloseDate": "종료일이 없습니다",
+     "missingAmount": "기회 금액이 없습니다",
+     "missingAmountDesc": "이 기회들은 합계에 $0으로 반영됩니다.",
+     "missingCloseDate": "마감일이 없습니다",
      "missingCloseDateDesc": "예측 계산에 포함되지 않습니다.",
-     "newClose": "새 클로즈",
-     "newCloseDate": "새 클로즈 날짜",
+     "newClose": "새 마감일",
+     "newCloseDate": "새 마감일",
      "next": "다음",
      "noData": "데이터 없음",
      "noDrilldownResultsDescription": "필터를 조정하거나 기회가 이 보기로 이동한 후 다시 확인하세요.",
      "noDrilldownResultsTitle": "기회를 찾을 수 없습니다",
-     "noSlippageData": "이번 기간 동안 슬리피지가 없습니다",
-     "opportunities": "기회 관리",
+     "noSlippageData": "이번 기간에 지연된 기회가 없습니다",
+     "opportunities": "기회",
      "opportunitiesCount": "{count}개 기회",
      "opportunity": "기회",
      "opportunityCreatedDate": "기회 생성일",
@@ -62751,13 +62751,13 @@
      "selectionLimitReached": "한 번에 최대 {limit}개의 기회를 선택할 수 있습니다.",
      "slippage": "위험에 처한 기회",
      "slippageDrilldown": "지연 상세 분석",
-     "slippageHigh": "슬리피지 높음",
+     "slippageHigh": "지연 높음",
      "slippageHighLabel": "위험도 높음",
      "slippageHighRule": "10회 이상 지연 또는 14일 이상 지연.",
-     "slippageLow": "낮은 슬리피지",
+     "slippageLow": "지연 낮음",
      "slippageLowLabel": "낮은 위험",
      "slippageLowRule": "1회 이상 지연 또는 2일 이상 지연 (상/중 제외).",
-     "slippageMedium": "중간 슬리피지",
+     "slippageMedium": "지연 중간",
      "slippageMediumLabel": "중간 위험",
      "slippageMediumRule": "1회 이상 지연 또는 7일 이상 지연 (상 제외).",
      "slippageSettings": "위험 설정 조정",
@@ -62771,17 +62771,17 @@
      "statusDrilldownDescription": "상태가 {status}인 기회입니다.",
      "statusDrilldownTitle": "{status} 기회",
      "summary": "요약",
-     "timesSlipped": "슬립된 시간",
+     "timesSlipped": "지연 횟수",
      "total": "합계",
      "totalAmount": "총 가치",
-     "totalOpen": "총 미결제",
+     "totalOpen": "진행 중 합계",
      "totalPotentialSubtext": "예상 매출 + 성사된 매출",
      "weighted": "예상 매출",
      "weightedForecast": "예상 매출",
      "weightedForecastSubtext": "기회 또는 단계 확률 기준",
      "weightedLabel": "가중치 적용: {amount}"
     },
-    "forecastExpectedCloseDate": "예상 종료일",
+    "forecastExpectedCloseDate": "예상 마감일",
     "forecastPage": {
      "apply": "적용",
      "dataReadiness": "데이터 준비 상태",
@@ -62799,7 +62799,7 @@
      "totalOpportunities": "총 기회: {count}"
     },
     "forecastSlippageCount": "예측 지연 횟수",
-    "forecast_expected_close_date": "예상 종료일",
+    "forecast_expected_close_date": "예상 마감일",
     "forecast_probability": "예측 확률",
     "form": "폼",
     "funnel": "퍼널",
@@ -62843,8 +62843,8 @@
     "lost_reason": "실패 사유",
     "manageBoardComingSoon": "보드 보기의 필드 관리 기능은 곧 제공될 예정입니다.",
     "manageSmartLists": "스마트 리스트 관리",
-    "manageSmartViews": "스마트 보기 관리",
-    "manageSmartViewsDesc": "저장된 모든 기회 뷰를 보고, 커스터마이즈하고, 관리하세요.",
+    "manageSmartViews": "스마트 뷰 관리",
+    "manageSmartViewsDesc": "저장된 모든 기회 보기를 확인하고, 사용자 지정하고, 관리하세요.",
     "manualAddition": "수동 추가",
     "markAsLost": "실패로 표시",
     "maxLimitForAdditionalContactsReached": "연락처 '{contactName}'을(를) 추가할 수 없습니다. 이 기회에 허용된 추가 연락처의 최대 한도에 도달했습니다",
@@ -62861,14 +62861,14 @@
     "nextTaskDueDate": "다음 작업 마감일 ({timezone})",
     "noMatchingOpportunitiesFiltered": "현재 필터와 일치하는 기회가 없습니다",
     "noOpportunities": "아직 {opportunities}이(가) 없습니다",
-    "noOpportunitiesDescription": "이 파이프라인에서 기회 추적을 시작하려면 {opportunity}를 추가하거나 기존 데이터를 가져오세요.",
+    "noOpportunitiesDescription": "이 파이프라인에서 기회 추적을 시작하려면 {opportunity}을(를) 추가하거나 기존 데이터를 가져오세요.",
     "noPipelineMessageButton": "새 파이프라인 만들기",
     "noPipelineMessageDescription": "모든 단계를 한눈에 확인하며 딜을 정리하고, 진행 상황을 추적하고, 리드를 고객으로 전환하세요.",
     "noPipelineMessageV2": "새 파이프라인을 만들어 시작하세요!",
     "noResultFoundForFilters": "필터를 업데이트하거나 지워서 기회를 찾아보세요.",
     "noSearchResultsDescription": "검색 조건에 맞는 기회를 찾을 수 없습니다. 검색어나 필터를 조정해 보세요.",
     "noSmartViews": "아직 스마트 뷰가 없습니다",
-    "noSmartViewsDesc": "커스텀 필터, 열, 정렬을 빠르게 사용할 수 있도록 첫 스마트 보기를 만드세요.",
+    "noSmartViewsDesc": "커스텀 필터, 열, 정렬을 빠르게 사용할 수 있도록 첫 스마트 뷰를 만드세요.",
     "noStageMessage": "이런! 단계가 없는 것 같습니다. 새 단계를 만들어 시작해 보세요!",
     "none": "없음",
     "notesTh": "노트",
@@ -62890,7 +62890,7 @@
     "opportunityName": "기회 이름",
     "opportunitySource": "출처",
     "opportunitySourceLabel": "출처",
-    "opportunityValue": "값",
+    "opportunityValue": "금액",
     "opportunityWonOn": "{opportunity} 성사일",
     "opportunity_details": "{opportunity} 상세정보",
     "opportunity_name": "기회 이름",
@@ -62910,8 +62910,8 @@
     "primaryContactNotes": "기본 {contact}의 메모",
     "prospecting": "잠재고객 발굴 도구",
     "provideReason": "이 기회를 잃은 이유를 입력해 주세요",
-    "publicAppointmentAPI": "Public API (예약)",
-    "publicContactAPI": "Public API (연락처)",
+    "publicAppointmentAPI": "공개 API (예약)",
+    "publicContactAPI": "공개 API (연락처)",
     "quickActionSource": {
      "conversations": "대화",
      "opportunity": "기회",
@@ -62963,7 +62963,7 @@
      "next": "다음",
      "steps": {
       "associations": {
-       "title": "연관"
+       "title": "연결"
       },
       "conversations": {
        "title": "대화"
@@ -62978,14 +62978,14 @@
     "updateSuccess": "성공적으로 업데이트되었습니다",
     "updatedOn": "수정일",
     "updatedOnLabel": "수정일",
-    "updatedOnTimeZone": "업데이트됨 ({timezone})",
+    "updatedOnTimeZone": "수정일 ({timezone})",
     "valueOfWonOpportunities": "성사된 기회의 가치:",
     "viewDeleted": "이 보기는 삭제되었습니다.",
     "viewNotAccessible": "이 보기에 대한 접근 권한이 없습니다.",
-    "viewType": "유형 보기",
+    "viewType": "보기 유형",
     "warningMessage": "이 탭을 나가면 변경한 내용이 모두 취소됩니다. 계속하시겠습니까?",
     "weighted": "가중치 적용",
-    "weightedValue": "가중치 값",
+    "weightedValue": "가중 금액",
     "whiteSpaceIsNotAllowed": "공백은 허용되지 않습니다",
     "won": "승리",
     "wonLabel": "성사",
@@ -63018,7 +63018,7 @@
      "cancelled": "취소됨",
      "completed": "완료",
      "declined": "거절됨",
-     "draft": "임시 저장",
+     "draft": "초안",
      "dueIn": "마감까지",
      "expired": "만료됨",
      "failed": "실패",
@@ -63026,11 +63026,11 @@
      "incompleteExpired": "완료되지 않고 만료됨",
      "invoiced": "인보이스 발행됨",
      "overdue": "연체",
-     "paid": "유료",
+     "paid": "결제 완료",
      "partiallyPaid": "부분 결제됨",
      "partiallyRefunded": "부분 환불됨",
      "pastDue": "연체됨",
-     "paymentProcessing": "결제 처리",
+     "paymentProcessing": "결제 처리 중",
      "pending": "대기 중",
      "processing": "처리 중",
      "refunded": "환불됨",
@@ -63040,7 +63040,7 @@
      "succeeded": "성공",
      "suspended": "정지됨",
      "trial": "체험판",
-     "trialing": "트라이얼 진행 중",
+     "trialing": "체험 중",
      "unpaid": "미결제",
      "void": "무효화"
     },
@@ -63085,13 +63085,13 @@
     "contactedStageName": "연락됨",
     "contains": "포함",
     "create": "만들기",
-    "createAPipeline": "{objectLabelPlural}을 관리하고, 진행 상황을 측정하며, 더 효율적으로 거래를 마감할 수 있는 파이프라인을 만드세요.",
+    "createAPipeline": "{objectLabelPlural}을(를) 관리하고, 진행 상황을 측정하며, 더 많은 거래를 효율적으로 성사시킬 수 있는 파이프라인을 만드세요.",
     "createNewPipeline": "새 파이프라인 만들기",
     "createPipeline": "파이프라인 만들기",
-    "createPipelineDescription": "{objectLabelPlural}을 관리하고, 진행 상황을 측정하며, 더 효율적으로 거래를 마감할 수 있는 파이프라인을 만드세요.",
-    "deletePipelineCampaigns1": "활성화된 캠페인 및 워크플로우 중지",
+    "createPipelineDescription": "{objectLabelPlural}을(를) 관리하고, 진행 상황을 측정하며, 더 많은 거래를 효율적으로 성사시킬 수 있는 파이프라인을 만드세요.",
+    "deletePipelineCampaigns1": "활성 캠페인 및 워크플로우 중지",
     "deletePipelineCampaigns2": "연결되어 있습니다",
-    "deletePipelineOpportunities1": "모든 {objectLabelPlural} 및 데이터를 영구적으로 삭제 ",
+    "deletePipelineOpportunities1": "모든 {objectLabelPlural} 및 데이터 영구 삭제 ",
     "deletePipelineOpportunities2": "이 파이프라인 내부",
     "deletePipelineTitle": "\"{name}\" 파이프라인을 삭제하시겠습니까?",
     "deletePipelineWarning": "이 작업은 선택한 파이프라인을 제거하며 다음이 함께 처리됩니다:",
@@ -63133,14 +63133,14 @@
     "errorDuplicatingPipeline": "파이프라인 복제 오류",
     "errorSavingPipeline": "파이프라인 저장 오류",
     "errorUpdatingPipeline": "파이프라인 업데이트 오류",
-    "failedToDeletePipeline": "파이프라인 {name}을 삭제하지 못했습니다",
+    "failedToDeletePipeline": "파이프라인 {name}을(를) 삭제하지 못했습니다",
     "funnelChart": "퍼널 차트",
     "irreversibleAction": "이 작업은 취소할 수 없습니다.",
     "keepEditing": "계속 편집",
     "learnMore": "파이프라인에 대해 자세히 알아보기",
     "newLeadStageName": "새 리드",
     "newPipeline": "새 파이프라인",
-    "newPipelineDescription": "단계를 포함한 새 파이프라인을 만들어 {objectLabelPlural}을 추가하세요.",
+    "newPipelineDescription": "단계를 포함한 새 파이프라인을 만들어 {objectLabelPlural}을(를) 추가하세요.",
     "next": "다음",
     "noMatchingPipelines": "일치하는 파이프라인을 찾을 수 없습니다",
     "noMatchingPipelinesDescription": "흠… '{query}'와 일치하는 필드를 찾을 수 없습니다. 다른 검색어를 시도하거나 새로 만들어 보세요.",
@@ -63159,7 +63159,7 @@
      "canNotRevokeAccessForOwnerFollowers": "이 파이프라인을 소유하거나 팔로우하는 사용자가 있습니다. 해당 사용자의 액세스 권한은 취소할 수 없습니다.",
      "cancel": "취소",
      "copyLink": "링크 복사",
-     "followsOpportunity": "{count}개 따름",
+     "followsOpportunity": "{count}개 팔로우 중",
      "linkCopied": "링크가 복사되었습니다!",
      "manage": "권한 관리",
      "mixedPermissions": "혼합된 권한",
@@ -63176,7 +63176,7 @@
      "save": "저장",
      "selectUsers": "사용자 선택",
      "share": "공유",
-     "shareDesc1": "누가 보거나 편집할 수 있는지 설정하세요 ",
+     "shareDesc1": "다음 파이프라인을 보거나 편집할 수 있는 사용자를 설정하세요: ",
      "shareDesc2": " 파이프라인. 관리자는 항상 전체 액세스 권한을 가집니다.",
      "shareWithAllUsers": "모든 사용자와 공유",
      "shareWithAllUsersExceptSelected": "선택된 사용자 제외",
@@ -63186,8 +63186,8 @@
      "title": "파이프라인 권한",
      "unsavedChangesAlertDesc": "변경 사항을 취소하시겠습니까?",
      "unsavedChangesAlertTitle": "저장하지 않은 변경사항이 {count}개 있습니다",
-     "userOwnsOpportunity": "{name}이(가) 파이프라인에서 {objectLabel}을(를) 열린 상태로 {verb}. 이 사용자의 액세스 권한을 변경하기 전에 재배정해 주세요.",
-     "userOwnsOpportunity1": "{name}이(가) 파이프라인에서 {objectLabel}을(를) 열린 상태로 {verb}. 이 사용자의 액세스 권한을 취소하기 전에 재배정해 주세요.",
+     "userOwnsOpportunity": "{name}이(가) 파이프라인에서 진행 중인 {objectLabel}을(를) {verb}. 이 사용자의 액세스 권한을 변경하기 전에 재배정해 주세요.",
+     "userOwnsOpportunity1": "{name}이(가) 파이프라인에서 진행 중인 {objectLabel}을(를) {verb}. 이 사용자의 액세스 권한을 취소하기 전에 재배정해 주세요.",
      "whoCanAccess": "접근 설정"
     },
     "pieChart": "파이 차트",
@@ -63250,7 +63250,7 @@
      "filters": {
       "dateRanges": {
        "afterDate": "날짜 이후",
-       "beforeDate": "이전 날짜",
+       "beforeDate": "날짜 이전",
        "between": "사이",
        "inTheLast": "최근",
        "inTheNext": "다음",
@@ -63279,7 +63279,7 @@
        "lastStatusChangeDate": "마지막 상태 변경 날짜",
        "lostOn": "실패 시점",
        "opportunitySource": "출처",
-       "opportunityValue": "값",
+       "opportunityValue": "금액",
        "owner": "소유자",
        "pipelineStage": "파이프라인 단계",
        "status": "상태",
@@ -63320,7 +63320,7 @@
       },
       "hotDeal": {
        "description": "이번 주에 추가된 값 > {value}인 고가치 거래",
-       "name": "인기 거래"
+       "name": "유망 거래"
       },
       "newLead": {
        "description": "생성일 ≤ 3일 전",
@@ -63328,7 +63328,7 @@
       },
       "unassignedDeal": {
        "description": "소유자가 비어 있습니다",
-       "name": "할당되지 않은 딜"
+       "name": "미배정 거래"
       }
      },
      "save": "저장",
@@ -63350,7 +63350,7 @@
        "clearAll": "전체 해제",
        "clickDateBoxToModify": "날짜 상자를 클릭하여 수정",
        "close": "닫기",
-       "end": "통화 종료",
+       "end": "종료",
        "notSet": "설정되지 않음",
        "selectDatePlaceholder": "날짜 선택",
        "selectEndDate": "2. 종료일 선택",
@@ -63360,7 +63360,7 @@
        "start": "시작"
       },
       "details": "상세 정보",
-      "discard": "삭제",
+      "discard": "변경 취소",
       "editSmartTag": "스마트 태그 편집",
       "enterDescription": "최근 90일간 활동이 없습니다",
       "enterLabelName": "예: 오래됨, 비활성",
@@ -63421,7 +63421,7 @@
      "toggleAndTitle": "그리고",
      "unsavedChangesCancelText": "계속 편집",
      "unsavedChangesDescription": "저장되지 않은 변경 사항이 있을 수 있습니다. 취소하시겠습니까?",
-     "unsavedChangesDiscardText": "삭제",
+     "unsavedChangesDiscardText": "변경 취소",
      "unsavedChangesTitle": "저장되지 않은 변경사항",
      "update": "업데이트",
      "viewTag": "태그 보기",
@@ -63446,7 +63446,7 @@
     "unsavedChangesDescription": "저장되지 않은 변경 사항이 하나 이상 있을 수 있습니다. 저장하시겠습니까, 아니면 취소하시겠습니까?",
     "update": "업데이트",
     "updatedOn": "수정일",
-    "useOpportunityProbability": "기회 단계별 확률 사용",
+    "useOpportunityProbability": "기회별 확률 사용",
     "useOpportunityProbabilityHelper": "활성화하면 각 기회는 자체 확률을 사용합니다. 비활성화하면 확률은 단계 기준으로 결정됩니다.",
     "yesDelete": "파이프라인 삭제",
     "youHaveCreatedNewPipeline": "파이프라인 \"{pipelineName}\"이(가) 생성되었습니다"
@@ -63496,7 +63496,7 @@
     "limitReachedTooltip": "제한 도달: 이 라벨은 최대 {limit}개의 {objectLabel}에만 연결할 수 있습니다",
     "loadingErrorDesc": "관련 객체를 가져오는 중 오류가 발생했습니다. 새로고침하거나 잠시 후 다시 시도해 주세요.",
     "loadingErrorTitle": "로딩 오류",
-    "maxAllowed": "한 번에 최대 {maxCount}개의 {objectLabel}이 허용됩니다. {objectLabelLowercased}를 더 추가하려면 이 작업을 완료한 후 다시 진행하세요.",
+    "maxAllowed": "한 번에 최대 {maxCount}개의 {objectLabel}이(가) 허용됩니다. {objectLabelLowercased}을(를) 더 추가하려면 이 작업을 완료한 후 다시 진행하세요.",
     "noAssociationFound": "연결 항목을 찾을 수 없습니다",
     "noAssociationsSelected": "최소 1개의 연결을 선택해 주세요",
     "openObjectSettingsBtnTitle": "객체 설정으로 이동",
@@ -63549,7 +63549,7 @@
      "cancel": "취소",
      "confirm": "확인",
      "create": "만들기",
-     "createAndAddAnother": "저장 후 추가",
+     "createAndAddAnother": "저장 후 하나 더 추가",
      "delete": "삭제",
      "edit": "편집",
      "never": "없음",
@@ -63569,14 +63569,14 @@
     },
     "contact": "연락처",
     "countGreaterThan": "{value}보다 큰 값을 입력하세요",
-    "createTaskIfOverdue": "이전 작업이 연체되어도 새 작업 생성",
+    "createTaskIfOverdue": "이전 작업의 기한이 지나도 새 작업 생성",
     "dateCreated": "생성일",
     "deleteOnlyTask": "이 작업",
     "deleteRecurringTaskConfirm": "작업 삭제",
     "deleteRecurringTaskDesc": "이 작업은 향후 반복되도록 예약되어 있습니다. 삭제할 항목을 선택하세요.",
-    "deleteRecurringTaskFailed": "반복 작업 {taskName}을 삭제하지 못했습니다",
-    "deleteRecurringTaskSuccess": "반복 작업 {taskName}이 성공적으로 삭제되었습니다",
-    "deleteRecurringTaskTitle": "반복 작업 {taskName}을 삭제하시겠습니까?",
+    "deleteRecurringTaskFailed": "반복 작업 {taskName}을(를) 삭제하지 못했습니다",
+    "deleteRecurringTaskSuccess": "반복 작업 {taskName}이(가) 성공적으로 삭제되었습니다",
+    "deleteRecurringTaskTitle": "반복 작업 {taskName}을(를) 삭제하시겠습니까?",
     "deleteTaskAndAllRecurring": "이 작업 및 향후 모든 작업",
     "deleteTaskConfirm": "작업 삭제",
     "deleteTaskDesc": "이 작업을 삭제하시겠습니까?",
@@ -63588,7 +63588,7 @@
     "deletedTasksCanBeRestored": "삭제된 작업은 2개월 이내에 복원할 수 있습니다",
     "descriptionInpPlaceholder": "설명 입력...",
     "dueAt": "마감: {date}",
-    "dueDate": "만료일",
+    "dueDate": "마감일",
     "dueDateTimeInFuture": "마감 날짜 및 시간은 미래 시점이어야 합니다",
     "dueDateTimeLabel": "마감 날짜 및 시간 {timeZone}",
     "dueDateTimeRequired": "마감 날짜와 시간을 선택해 주세요",
@@ -63664,7 +63664,7 @@
       "inventory": "재고",
       "productInformation": "상품 정보",
       "shippingDelivery": "배송 및 배달",
-      "variantsPricing": "배리언트 및 가격"
+      "variantsPricing": "변형 및 가격"
      },
      "title": "필드 관리"
     },
@@ -63675,7 +63675,7 @@
      "cancel": "취소"
     },
     "titleColumn": {
-     "expand": "확장"
+     "expand": "펼치기"
     }
    },
    "collection": {
@@ -63686,12 +63686,12 @@
     "conditions": {
      "addCondition": "조건 추가",
      "allConditions": "모든 조건",
-     "anyCondition": "모든 조건",
-     "productsMustMatch": "다음 상품이 일치해야 합니다:",
+     "anyCondition": "하나 이상의 조건",
+     "productsMustMatch": "상품이 다음 조건과 일치해야 합니다:",
      "removeCondition": "조건 제거",
      "selectOperator": "연산자 선택",
      "title": "조건",
-     "watchPlaceholder": "시청"
+     "watchPlaceholder": "시계"
     },
     "createCollection": "컬렉션 만들기",
     "createEditCollectionModal": {
@@ -63710,7 +63710,7 @@
     },
     "description": "다양한 컬렉션으로 상품을 정리하세요",
     "errors": {
-     "cannotSave": "콜렉션을 저장할 수 없습니다",
+     "cannotSave": "컬렉션을 저장할 수 없습니다",
      "conflictingConditions": "충돌하는 조건이 발견되었습니다. 강조 표시된 행을 검토하세요.",
      "invalidConditions": "강조된 행은 비워둘 수 없습니다.",
      "noConditions": "저장하려면 최소 하나의 조건을 만드세요"
@@ -63749,7 +63749,7 @@
     },
     "seo": {
      "descriptionPlaceholder": "SEO 설명 입력...",
-     "title": "검색 엔진 리스팅",
+     "title": "검색 엔진 노출 정보",
      "titlePlaceholder": "SEO 제목 입력"
     },
     "success": "컬렉션이 성공적으로 생성되었습니다",
@@ -63770,13 +63770,13 @@
     "add": "추가",
     "addAClient": "클라이언트 추가",
     "addCustomField": "커스텀 필드 추가",
-    "addCustomValue": "+ 커스텀 값 추가",
+    "addCustomValue": "커스텀 값 추가",
     "addDiscount": "할인 추가",
     "addMoreCustomField": "커스텀 필드 더 추가",
     "addMoreCustomValue": "커스텀 값 더 추가",
     "addNewClient": "신규 클라이언트 추가",
     "addNewItem": "새 항목 추가",
-    "addToCollections": "콜렉션에 추가",
+    "addToCollections": "컬렉션에 추가",
     "address": "주소",
     "adjustmentHistory": "조정 내역",
     "after": "후",
@@ -63786,15 +63786,15 @@
     "amountPaid": "지불된 금액",
     "and": "그리고",
     "approve": "승인",
-    "asSetupFee": "설정 수수료로",
+    "asSetupFee": "초기 설정비로",
     "autoDebit": "자동 이체",
     "availableQuantity": "가용 수량",
-    "availableQuantityFrom": "시작 사용 가능 수량",
+    "availableQuantityFrom": "다음 위치의 사용 가능 수량",
     "back": "뒤로",
     "billingPeriod": "결제 주기",
-    "bulkAction": "일괄 액션",
+    "bulkAction": "일괄 작업",
     "bulkActions": "일괄 작업",
-    "bulkEditSuccess": "대량 편집 성공",
+    "bulkEditSuccess": "일괄 편집이 완료되었습니다",
     "bump": "범프",
     "businessLogo": "비즈니스 로고",
     "businessName": "사업자명",
@@ -63807,9 +63807,9 @@
     "changeDiscount": "할인 변경",
     "changePrice": "가격 변경",
     "changes": "변경사항",
-    "chargeOf": "담당",
+    "chargeOf": "청구 금액",
     "chargedBy": "청구자",
-    "chequeNo": "확인 안 함",
+    "chequeNo": "수표 번호",
     "chooseAnItem": "항목 선택",
     "city": "도시",
     "clear": "지우기",
@@ -63855,7 +63855,7 @@
     "duplicate": "복제",
     "email": "이메일",
     "enabled": "활성화됨",
-    "end": "통화 종료",
+    "end": "종료",
     "endDate": "종료일",
     "endTime": "종료 시간",
     "ending": "종료",
@@ -63920,7 +63920,7 @@
     "membership": "멤버십",
     "membershipOffer": "멤버십 오퍼",
     "membershipTypeCourse": "코스",
-    "membershipTypeOffer": "제안",
+    "membershipTypeOffer": "오퍼",
     "mode": "모드",
     "name": "이름",
     "new": "신규",
@@ -63993,7 +63993,7 @@
     "send": "보내기",
     "seoDescription": "SEO 설명",
     "seoTitle": "SEO 제목",
-    "setupFeeLower": "설정 비용",
+    "setupFeeLower": "초기 설정비",
     "shipmentNotifyCustomerDescription": "배송 세부 정보 전송 및 고객에게 배송 알림",
     "shippingCarrier": "배송업체",
     "somethingWentWrong": "문제가 발생했습니다",
@@ -64007,7 +64007,7 @@
     "store": "스토어",
     "storeUpsell": "스토어 업셀",
     "stripePrice": "Stripe 가격",
-    "subscriptionId": "구독 Id",
+    "subscriptionId": "구독 ID",
     "subtotal": "소계",
     "survey": "설문",
     "sync": "동기화",
@@ -64024,7 +64024,7 @@
     "trackingUrl": "추적 URL",
     "transactionDate": "거래일",
     "transactionId": "거래 ID",
-    "trialPeriod": "트라이얼 기간",
+    "trialPeriod": "체험 기간",
     "true": "참",
     "twoStepOrderForm": "2단계 주문 폼",
     "txnDate": "거래 날짜",
@@ -64036,10 +64036,10 @@
     "update": "업데이트",
     "updated": "수정일",
     "useAsSaasProduct": "SaaS 상품으로 사용",
-    "useRecurring": "반복 사용",
+    "useRecurring": "반복 결제 사용",
     "user": "사용자",
-    "variant": "배리언트",
-    "variantName": "배리언트 이름",
+    "variant": "변형",
+    "variantName": "변형 이름",
     "viewAdjustmentHistory": "조정 내역 보기",
     "viewCustomer": "고객 보기",
     "viewHistory": "히스토리 보기",
@@ -64104,7 +64104,7 @@
     "order": {
      "collectPaymentModal": {
       "last4": "마지막 4자리는 필수입니다",
-      "modeRequired": "유효한 결제 모드 선택",
+      "modeRequired": "유효한 결제 모드를 선택하세요",
       "update": "결제 기록 중 문제가 발생했습니다. 다시 시도해 주세요"
      },
      "printPackingSlip": "포장 명세서 생성 오류"
@@ -64199,7 +64199,7 @@
     "selectStripePrice": "Stripe 가격 선택",
     "setupFee": "청구할 일회성 설정 수수료 정의",
     "shippingCarrier": "배송업체를 입력하세요",
-    "statementDescriptor1": "기본 계정 설명자를 재정의합니다. 고객의 은행 명세서에 사용됩니다.",
+    "statementDescriptor1": "기본 계정 명세서 표시 문구를 대체합니다. 고객의 은행 명세서에 표시됩니다.",
     "taxName": "세금 이름",
     "trackingNumber": "운송장 번호를 입력하세요",
     "trialPeriod": "일수"
@@ -64260,7 +64260,7 @@
     "formSubMenu": {
      "pricing": "가격",
      "productInfo": "상품 정보",
-     "variants": "배리언트"
+     "variants": "변형"
     },
     "importProductsCsv": "CSV로 가져오기",
     "importProductsModal": {
@@ -64293,7 +64293,7 @@
     "noProductMatch": "현재 필터와 일치하는 상품이 없습니다",
     "priceDetailPage": {
      "configureDeliverySettings": "배송 설정 구성",
-     "digitalDelivery": "디지털 상품 배송",
+     "digitalDelivery": "디지털 상품 전달",
      "digitalDeliveryInfo": {
       "url": "체크아웃 후 사용자에게 접근 권한을 부여할 URL을 추가하세요. 체크아웃 후 또는 이메일을 통해 확인할 수 있습니다. 현재 스토어에서만 지원됩니다. "
      },
@@ -64346,7 +64346,7 @@
      "urlHandle": "핸들"
     },
     "showingPricesRange": "가격 {total}개 중 {start}-{end} 표시 중",
-    "showingVariantsRange": "옵션 {total}개 중 {start}-{end} 표시",
+    "showingVariantsRange": "변형 {total}개 중 {start}-{end} 표시",
     "tagline": "새로운 판매 방식을 시작합니다! 🎉",
     "title": "상품",
     "variantDescription": "사이즈, 색상과 같은 옵션 추가",
@@ -64357,17 +64357,17 @@
      "priceTitle": "가격 이미지 선택",
      "title": "변형 이미지 선택"
     },
-    "variantWillBeDeleted": "이 옵션은 삭제됩니다"
+    "variantWillBeDeleted": "이 변형은 삭제됩니다"
    },
    "receipt": {
     "settings": {
      "form": {
       "emailTemplate": {
        "label": "이메일 템플릿",
-       "placeholder": "하나만 선택"
+       "placeholder": "선택하세요"
       },
       "enableSalesReceipt": "결제 시 자동 영수증 발송 활성화",
-      "prefix": "영수증 접두어",
+      "prefix": "영수증 접두사",
       "prefixDescription": "모든 영수증 생성 시 사용할 접두사",
       "receiptStartNumber": "영수증 시작 번호"
      },
@@ -64375,22 +64375,22 @@
     }
    },
    "reviews": {
-    "approveReply": "승인 및 답장",
+    "approveReply": "승인 및 답글",
     "approveReview": "이 리뷰를 승인하시겠습니까?",
     "author": "작성자",
-    "bulkUpdate": "액션이 성공적으로 완료되었습니다",
+    "bulkUpdate": "작업이 완료되었습니다",
     "changeStatus": "이 리뷰의 상태를 변경하시겠습니까?",
     "datetime": "날짜 & 시간",
     "description": "리뷰와 평점을 한곳에서 관리 및 저장",
     "details": "리뷰 상세",
-    "emptyList": "리뷰가 없어요",
+    "emptyList": "표시할 리뷰가 없습니다",
     "productStore": "상품 및 스토어 이름",
     "rating": "평점",
     "ratingReceived": "받은 평점",
     "reply": "답글",
-    "review": "다시 보기",
-    "saveReply": "답장 저장",
-    "sendReply": "답장 보내기",
+    "review": "리뷰",
+    "saveReply": "답글 저장",
+    "sendReply": "답글 보내기",
     "status": {
      "approved": "승인됨",
      "pending": "대기 중",
@@ -64438,15 +64438,15 @@
     "saved": "성공적으로 저장되었습니다",
     "subscription": {
      "cancel": "성공적으로 취소되었습니다",
-     "updateTrial": "트라이얼 기간이 업데이트되었습니다!"
+     "updateTrial": "체험 기간이 업데이트되었습니다!"
     }
    },
    "tax": {
-    "chargeTaxOnThisProduct": "세율 첨부",
+    "chargeTaxOnThisProduct": "세율 적용",
     "createTax": "세금 만들기",
     "manualTaxDescription": "자동 세금을 사용하지 않는 경우 유용합니다",
     "name": "세금 이름",
-    "rate": "요금",
+    "rate": "세율",
     "selectTaxes": "세금 선택",
     "taxHeader": "세금",
     "taxInclusive": {
@@ -64461,7 +64461,7 @@
     "invalid": {
      "automaticTaxNoManualTax": "오류: 자동 세금은 수동 세금과 함께 사용할 수 없습니다",
      "couponCode": "쿠폰 코드는 영문자와 숫자만 포함할 수 있습니다",
-     "endTime": "종료 시간은 시작 시간보다 커야 합니다",
+     "endTime": "종료 시간은 시작 시간 이후여야 합니다",
      "intervalCount": "간격은 정수여야 합니다",
      "productAmount": "숫자 필드는 소수점 이하 2자리 이하여야 합니다",
      "quantityToMustBeGreaterThanFrom": "종료 수량은 시작 수량보다 커야 합니다",
@@ -64471,7 +64471,7 @@
     },
     "max": {
      "labelContent": "레이블 콘텐츠는 20자를 초과할 수 없습니다",
-     "notes": "노트의 최대 길이는 2000자입니다",
+     "notes": "메모는 최대 2000자까지 입력할 수 있습니다",
      "priceDescription": "가격 설명은 127자를 초과할 수 없습니다",
      "priceName": "가격 이름은 127자를 초과할 수 없습니다",
      "productDescription": "상품 설명은 256자를 초과할 수 없습니다",
@@ -64481,7 +64481,7 @@
     "min": {
      "statementDescriptor": "명세서 표시 문구는 최소 5자 이상의 문자를 포함해야 합니다",
      "totalCycles": "총 사이클 수는 0보다 커야 합니다",
-     "trialPeriod": "트라이얼 기간은 0 이상이어야 합니다"
+     "trialPeriod": "체험 기간은 0 이상이어야 합니다"
     },
     "required": {
      "addProduct": "먼저 상품을 선택해주세요",
@@ -64532,7 +64532,7 @@
    "colorPicker": {
     "tabs": {
      "advanced": "고급",
-     "simple": "심플"
+     "simple": "기본"
     }
    },
    "common": {
@@ -64651,7 +64651,7 @@
     "dragHandle": "드래그 핸들",
     "dragToChangeOrder": "드래그하여 순서 변경",
     "drawSignature": "서명 그리기",
-    "dueDate": "만료일",
+    "dueDate": "마감일",
     "dueOn": "마감일",
     "duplicatePage": "페이지 복제",
     "duplicateRoleEmail": "이 이메일은 이미 다른 역할에서 사용 중입니다",
@@ -64679,7 +64679,7 @@
     "enableRedirectionTitle": "커스텀 URL로 리디렉션 켜기",
     "enableSendInvoice": "인보이스 보내기 켜기",
     "enableSendInvoiceDescription": "인보이스는 서명 후 이메일로 발송되며, 그렇지 않으면 임시 저장 상태로 유지됩니다",
-    "end": "통화 종료",
+    "end": "종료",
     "endDate": "종료일",
     "endTime": "종료 시간",
     "enterCustomUrl": "커스텀 URL 입력",
@@ -64786,7 +64786,7 @@
       "40123": "콘텐츠 라이브러리를 업데이트할 수 없습니다",
       "40124": "{source} 을(를) 통해 제안서를 보내는 중 제안서를 가져올 수 없습니다",
       "40125": "{source} 을(를) 통해 제안서를 보내는 중 연락처를 찾을 수 없습니다",
-      "40126": "{source} 로 제안서를 보낼 준비를 하는 중에는 연락처 정보로 제안서를 업데이트할 수 없습니다",
+      "40126": "{source} 로 제안서를 보낼 준비를 하는 중 연락처 정보로 제안서를 업데이트하지 못했습니다",
       "40300": "접근이 금지된 리소스",
       "40400": "404 경로를 찾을 수 없음",
       "40401": "사용자를 찾을 수 없습니다",
@@ -64804,7 +64804,7 @@
       "40413": "PDF 파일을 가져오지 못했습니다",
       "40414": "수신자를 찾을 수 없습니다",
       "40415": "이메일 템플릿을 찾을 수 없습니다",
-      "40416": "수료증을 찾을 수 없습니다",
+      "40416": "인증서를 찾을 수 없습니다",
       "50000": "내부 서버 오류",
       "50001": "문서를 가져오는 중 문제가 발생했습니다.",
       "50002": "문서를 거절하는 중 문제가 발생했습니다",
@@ -64842,7 +64842,7 @@
     "fromEmail": "보내는 이메일",
     "fromName": "보내는 사람",
     "futureDate": "미래 날짜",
-    "generateInvoiceOnSigningDescription": "사용자는 가입 시 첫 인보이스를 받게 됩니다",
+    "generateInvoiceOnSigningDescription": "사용자는 서명 시 첫 인보이스를 받게 됩니다",
     "group": "그룹",
     "groupCheckbox": "그룹 체크박스",
     "heading": "제목",
@@ -64917,7 +64917,7 @@
     "pageBreak": "페이지 나누기",
     "pageProperties": "페이지 속성",
     "pages": "페이지",
-    "paid": "유료",
+    "paid": "결제 완료",
     "paidOn": "결제일",
     "pastDate": "지난 날짜",
     "pasteVideoUrl": "동영상 URL 붙여넣기",
@@ -64948,7 +64948,7 @@
     "properties": "속성",
     "publicDocumentPublished": "공개 문서가 게시되었습니다",
     "quantity": "수량",
-    "recipients": "수신자들",
+    "recipients": "수신자",
     "recurring": "반복",
     "recurringInvoiceChargeDescription": "정기 결제는 반복적으로 청구됩니다.",
     "redirectUrl": "리다이렉트 URL",
@@ -64983,8 +64983,8 @@
     "selectDate": "날짜 선택",
     "selectExactly": "정확히 선택",
     "selectFont": "폰트 선택",
-    "selectLocation": "위치 선택",
-    "selectOne": "하나만 선택",
+    "selectLocation": "서브 계정 선택",
+    "selectOne": "선택하세요",
     "selectPosition": "위치 선택",
     "selectPrice": "가격 선택",
     "selectProduct": "상품을 선택하세요",
@@ -65005,7 +65005,7 @@
     "setSigningOrderDescription": "이메일은 순차적으로 전송됩니다. 이전 수신자가 작업을 완료한 후에만 다음 수신자가 서명할 수 있습니다.",
     "settings": "설정",
     "settingsApplyToAllDocuments": "이 설정은 모든 새 문서와 템플릿에 적용됩니다",
-    "setupFee": "설치 비용",
+    "setupFee": "초기 설정비",
     "share": "공유",
     "shareTemplate": "템플릿 공유",
     "shareViaLink": "링크로 공유",
@@ -65044,9 +65044,9 @@
     "text": "텍스트",
     "textColor": "텍스트 색상",
     "textField": "텍스트 필드",
-    "timingNotSuitable": "시간이 적합하지 않음",
+    "timingNotSuitable": "시기가 적절하지 않음",
     "title": "제목",
-    "toBeFilledBy": "작성자",
+    "toBeFilledBy": "작성 담당자",
     "toBeSignedBy": "서명자",
     "toggleHeaderCell": "헤더 셀 전환",
     "toggleHeaderRow": "헤더 행 전환",
@@ -65080,8 +65080,8 @@
     "viewInvoice": "인보이스 보기",
     "viewResponses": "응답 보기",
     "viewScheduleInvoice": "인보이스 일정 보기",
-    "viewed": "조회함",
-    "waitingForOthers": "대기 중",
+    "viewed": "조회됨",
+    "waitingForOthers": "다른 사람 대기 중",
     "warning": "경고",
     "warningEmail": "경고 이메일",
     "warningEmailDescription": "만료 1일 전에 서명자에게 이메일로 알림",
@@ -65129,7 +65129,7 @@
     "cardSecurelySavedOnFile": "카드가 안전하게 저장되었습니다.",
     "cardSecurelySavedOnFileDescription": "이제 보내는 사람이 향후 인보이스, 주문, 구독에 사용할 수 있습니다.",
     "clear": "지우기",
-    "decline": "거부",
+    "decline": "거절",
     "declineDocument": "문서 거절",
     "declineSuccess": "계약을 거절했습니다.",
     "declineSuccessMessage": "문서 소유자에게 귀하의 결정이 통보되었습니다.",
@@ -65204,7 +65204,7 @@
     "toCompleteTheirActions": "이(가) 작업을 완료해야 계속할 수 있습니다.",
     "type": "유형",
     "verifying": "확인 중",
-    "viewed": "조회함",
+    "viewed": "조회됨",
     "waitingFor": "대기 중:"
    },
    "paymentSchedule": {
@@ -65235,24 +65235,24 @@
     "scheduleLabelWithAmount": "일정 {number} / {total} - {suffix}",
     "subsequentPayments": "후속 결제",
     "total": "합계",
-    "totalAmountDue": "총 미납 금액",
+    "totalAmountDue": "총 결제 금액",
     "uponCompletion": "완료 시",
-    "uponCompletionInfo": "이 문서 완료 시 보증금으로 사용됩니다.",
+    "uponCompletionInfo": "이 문서 완료 시 계약금으로 사용됩니다.",
     "uponDocumentCompletion": "문서 완료 시",
-    "uponPrimarySignature": "기본 서명 시"
+    "uponPrimarySignature": "기본 수신자 서명 시"
    },
    "productList": {
     "taxes": {
-     "configureAction": "여기",
-     "configurePrefix": "클릭",
-     "configureSuffix": "세금을 설정하려면",
+     "configureAction": "여기를",
+     "configurePrefix": "세금을 설정하려면",
+     "configureSuffix": "클릭하세요",
      "noTaxesConfigured": "설정된 세금이 없습니다",
      "requireValue": "세금을 적용하려면 상품 금액이 {amount} 를 초과해야 합니다"
     }
    },
    "proposalStatus": {
     "draft": "임시 저장",
-    "viewed": "조회함"
+    "viewed": "조회됨"
    },
    "proposals": {
     "addText": "문서에 텍스트를 추가하세요.",
@@ -65321,7 +65321,7 @@
      "sentViaSms": "SMS로",
      "signed": "서명됨",
      "signedTitle": "문서에 서명했습니다",
-     "viewed": "조회함",
+     "viewed": "조회됨",
      "viewedTitle": "문서를 조회했습니다"
     },
     "loading": {
@@ -65334,11 +65334,11 @@
     "manageAllDocAndContracts": "비즈니스의 모든 문서 & 계약을 관리하고 감독하세요.",
     "newDocument": "새 문서",
     "newDocumentDescription": "제안서, 견적서 또는 계약서를 처음부터 만들기",
-    "noDraftInSight": "초안이 없어요! 새 제안서를 만들어볼까요?",
+    "noDraftInSight": "초안이 없습니다. 새 제안서를 만들어 보시겠습니까?",
     "notificationSettings": {
      "allowAutoSendInvoice": "문서가 완료되면 문서에 연결된 상품을 사용하여 인보이스를 자동으로 보냅니다. 끄면 인보이스가 생성되지만 임시 저장 상태로 남습니다.",
      "configureCCRecipients": "참조 수신자 설정",
-     "configureCCRecipientsDescription": "모든 문서의 기본 CC 수신자를 지정하거나 전송 시 개별 문서에 CC 수신자를 추가하세요. CC 수신자는 기본 서명자와 동시에 문서를 받으며, 모든 서명자가 서명을 완료하면 서명된 사본을 받습니다.",
+     "configureCCRecipientsDescription": "모든 문서의 기본 참조 수신자를 지정하거나 전송 시 개별 문서에 참조 수신자를 추가하세요. 참조 수신자는 기본 서명자와 동시에 문서를 받으며, 모든 서명자가 서명을 완료하면 서명된 사본을 받습니다.",
      "customerNotification": "고객 알림",
      "deletedTemplateText": "현재 템플릿이 삭제된 것 같습니다. 다른 템플릿을 선택하세요",
      "directPayment": "직접 결제",
@@ -65359,12 +65359,12 @@
      "setNameAndEmailForTeam": "모든 팀 알림 발송에 사용할 이름과 이메일 설정",
      "smsMessageLabel": "SMS 템플릿",
      "smsNotification": "SMS 알림",
-     "smsTemplatePlaceholder": "하나만 선택",
+     "smsTemplatePlaceholder": "선택하세요",
      "teamNotification": "팀 알림",
      "workflowSettings": "워크플로우 설정",
      "workflowSettingsAllRecipients": "모든 수신자",
      "workflowSettingsDescription": "문서 및 계약서 유형의 트리거가 실행될 때마다 워크플로우는 다음 설정을 사용합니다.",
-     "workflowSettingsPrimaryOnly": "기본만",
+     "workflowSettingsPrimaryOnly": "기본 수신자만",
      "workflowSettingsRunWorkflowFor": "워크플로우 실행 대상",
      "workflowSettingsTitle": "트리거",
      "workflowSettingsTooltip": "모든 수신자: 문서의 서명자마다 워크플로우를 한 번씩 실행합니다. 기본 수신자만: 기본 수신자에 대해 한 번만 실행합니다.",
@@ -65372,10 +65372,10 @@
      "workflowSettingsTriggerCompleted": "완료",
      "workflowSettingsTriggerCompletedDescription": "문서가 완료 상태로 이동되면 트리거됩니다.",
      "workflowSettingsTriggerDeclined": "거절됨",
-     "workflowSettingsTriggerDeclinedDescription": "연락처가 문서를 거부할 때 트리거됩니다.",
+     "workflowSettingsTriggerDeclinedDescription": "연락처가 문서를 거절할 때 트리거됩니다.",
      "workflowSettingsTriggerSent": "발송됨",
      "workflowSettingsTriggerSentDescription": "문서가 연락처에 전송될 때 트리거됩니다.",
-     "workflowSettingsTriggerViewed": "조회함"
+     "workflowSettingsTriggerViewed": "조회됨"
     },
     "others": "기타",
     "proposalsEstimatesContracts": "(제안서, 견적서 & 계약서)",
@@ -65404,7 +65404,7 @@
      "dateCreated": "생성일",
      "status": "상태",
      "title": "제목",
-     "value": "값"
+     "value": "금액"
     }
    },
    "schedulingOptions": {
@@ -65414,7 +65414,7 @@
      "last": "마지막"
     },
     "daysInAdvance": "일 전",
-    "first": "처음",
+    "first": "첫 번째",
     "fourth": "네 번째",
     "intervalType": {
      "daily": "매일",
@@ -65449,24 +65449,24 @@
      "october": "10월",
      "september": "9월"
     },
-    "never": "없음",
+    "never": "종료 안 함",
     "occurrences": "발생 횟수",
     "onTimePropertyText": "한 번만 청구됩니다",
     "recurringSchedulePropertiesText": "아래에서 선택한 일정에 따라 정기적으로 청구됩니다",
-    "second": "초",
+    "second": "두 번째",
     "sendInvoice": "인보이스 보내기",
     "third": "세 번째",
     "timeAgo": {
      "day": "일 전",
      "days": "일 전",
      "hour": "시간 전",
-     "hours": "전",
+     "hours": "시간 전",
      "minute": "분 전",
-     "minutes": "몇 분 전",
-     "month": "1개월 전",
+     "minutes": "분 전",
+     "month": "개월 전",
      "months": "개월 전",
-     "week": "1주 전",
-     "weeks": "전",
+     "week": "주 전",
+     "weeks": "주 전",
      "year": "년 전",
      "years": "년 전"
     },
@@ -65483,9 +65483,9 @@
     }
    },
    "taxes": {
-    "clickInstruction": "클릭",
-    "configureTaxes": "하여 세금을 설정하세요.",
-    "here": "여기",
+    "clickInstruction": "세금을 설정하려면",
+    "configureTaxes": "클릭하세요.",
+    "here": "여기를",
     "noTaxesConfigured": "설정된 세금이 없습니다",
     "requireValueInfo": "세금을 적용하려면 상품 금액이 {amount} 를 초과해야 합니다"
    },
@@ -65535,12 +65535,12 @@
      "dayOfWeek": "요일은 다음 값 중 하나여야 합니다: monday, tuesday, wednesday, thursday, friday, saturday, sunday",
      "intervalType": "간격 유형은 다음 값 중 하나여야 합니다: yearly, monthly, weekly, daily, hourly, minutely",
      "monthOfYear": "월은 다음 값 중 하나여야 합니다: January, February, March, April, May, June, July, August, September, October, November, December",
-     "numOfWeek": "num of week 값은 다음 중 하나여야 합니다: Date, First, Second, Third, Fourth, Last"
+     "numOfWeek": "주차 값은 다음 중 하나여야 합니다: Date, First, Second, Third, Fourth, Last"
     },
     "invalid": {
      "amountLessThan": "금액은 다음보다 작을 수 없습니다",
      "amountMoreThan": "그리고 다음보다 많음",
-     "booleanUseStartAsPrimaryUserSigned": "Use start as primary user signed 값은 불리언이어야 합니다",
+     "booleanUseStartAsPrimaryUserSigned": "'시작일을 기본 사용자 서명일로 사용' 값은 불리언이어야 합니다",
      "contactDetails": "유효한 연락처 정보를 입력해 주세요: ",
      "count": "인보이스 일정의 횟수가 잘못되었습니다",
      "currencyMismatch": "모든 품목의 통화가 같아야 합니다",
@@ -65582,10 +65582,10 @@
      "numOfWeek": "인보이스 일정의 주 값이 유효하지 않습니다",
      "numberCount": "인보이스 일정의 횟수는 'number' 유형이어야 합니다",
      "numberDaysBefore": "인보이스 일정의 사전 일수는 '숫자' 유형이어야 합니다",
-     "numberInterval": "인보이스 일정에서 interval 은 'number' 타입이어야 합니다",
-     "paymentDepositScheduleTotalValue": "결제 예치금 일정 합계는 인보이스 총액과 같아야 합니다",
+     "numberInterval": "인보이스 일정의 간격은 'number' 유형이어야 합니다",
+     "paymentDepositScheduleTotalValue": "선금 결제 일정 합계는 인보이스 총액과 같아야 합니다",
      "paymentScheduleDueDateLtInvoiceDue": "마감일은 인보이스 마감일 이전이어야 합니다",
-     "paymentScheduleDueDatePast": "만기일은 과거일 수 없습니다",
+     "paymentScheduleDueDatePast": "마감일은 과거일 수 없습니다",
      "paymentScheduleTotalPercent": "일정 합계는 100%여야 합니다",
      "paymentScheduleTotalValue": "일정 합계는 인보이스 합계와 같아야 합니다",
      "phoneNumber": "유효한 전화번호를 입력해 주세요",
@@ -65669,7 +65669,7 @@
      "invalidFileType": "잘못된 파일 형식입니다. SVG, PNG, JPG, GIF 파일만 허용됩니다",
      "markAsCompleted": "완료로 표시하시겠습니까?",
      "maxFilesExceeded": "최대 파일 수(10개)를 초과했습니다",
-     "moveToDraft": "임시 저장으로 이동하시겠습니까?",
+     "moveToDraft": "초안으로 이동하시겠습니까?",
      "noIntegrationFound": "결제 연동을 찾을 수 없습니다",
      "pdfFileError": "문제가 발생했습니다. .pdf 파일을 다시 업로드해 주세요.",
      "selectPdf": ".pdf 파일을 선택해 주세요",
@@ -65706,7 +65706,7 @@
      "approvedCaps": "승인됨",
      "badges": "배지",
      "clearFilters": "필터 초기화",
-     "collectorLogo": "Collector 로고",
+     "collectorLogo": "수집기 로고",
      "color": "색상",
      "connect": "연결",
      "connected": "연결됨",
@@ -65733,7 +65733,7 @@
      "keyword": "키워드",
      "learnMore": "자세히 보기",
      "list": "목록",
-     "masonry": "매스너리",
+     "masonry": "메이슨리",
      "mins": "분",
      "minsShort": "분",
      "mobile": "모바일",
@@ -65743,9 +65743,9 @@
      "needsWork": "보완 필요",
      "neutral": "중립",
      "noPlatform": "플랫폼 없음",
-     "off": "끔",
+     "off": "꺼짐",
      "oops": "이런!",
-     "opened": "열림",
+     "opened": "열람됨",
      "others": "기타",
      "phone": "전화번호",
      "pleaseSelect": "선택해 주세요",
@@ -65758,7 +65758,7 @@
      "requests": "요청",
      "responses": "응답",
      "responsesShort": "응답",
-     "reviewRequests": "요청 검토",
+     "reviewRequests": "리뷰 요청",
      "save": "저장",
      "saving": "저장 중",
      "seeLess": "간략히 보기",
@@ -65767,9 +65767,9 @@
      "sent": "발송됨",
      "sources": "출처",
      "spam": "스팸",
-     "spokesperson": "대변인",
+     "spokesperson": "담당자",
      "star": "별점",
-     "stars": "별",
+     "stars": "별점",
      "static": "정적",
      "subject": "제목",
      "submissions": "제출",
@@ -65799,7 +65799,7 @@
     },
     "reputationOnboarding": {
      "description": "평판 대시보드를 설정하려면 이 단계를 모두 완료하세요",
-     "greeting": "안녕하세요 {name}",
+     "greeting": "안녕하세요, {name}님",
      "skipTutorial": "온보딩 건너뛰기",
      "steps": {
       "isFirstPartyConnected": "Google 비즈니스 프로필 연결",
@@ -65817,7 +65817,7 @@
       "addBusiness": "비즈니스 추가",
       "averageResponseTime": "평균 응답 시간",
       "businessFetchFail": "세부 정보를 가져올 수 없습니다. 지도에서 비즈니스를 선택해 주세요.",
-      "compareLimit": "최대 3명의 경쟁사를 비교할 수 있습니다.",
+      "compareLimit": "경쟁사는 최대 3곳까지 비교할 수 있습니다.",
       "countDescription": " 표시된 총 리뷰는 Google 및 기타 소스에서 가져온 것이지만, 경쟁 환경 및 감정 히트맵 인사이트를 위해 매월 최신 리뷰를 분석합니다. 이로 인해 리뷰 수에 차이가 있을 수 있습니다.",
       "deleteCompetitorHeader": "경쟁사 삭제",
       "deleteCompetitorMessage": "이 경쟁사를 삭제하시겠습니까?",
@@ -65829,7 +65829,7 @@
       },
       "noReviews": "리뷰를 찾을 수 없습니다",
       "pitchPage": {
-       "description1": "최대 3명의 경쟁사를 추가할 수 있습니다",
+       "description1": "경쟁사는 최대 3곳까지 추가할 수 있습니다",
        "gridDescription": "하나의 간편한 그리드에서 주요 평판 지표를 시각화하고 비교하세요. 무제한 리포트를 작성하여 모니터링하고 성과를 앞서가세요",
        "gridHeader": "경쟁 그리드",
        "sourceDescription": "플랫폼별 평점 차이를 확인하세요. 트렌드를 파악하고 평판 개선을 위해 주의가 필요한 채널을 알아보세요."
@@ -65850,7 +65850,7 @@
        "addressPlaceholder": "사업장 주소를 입력하세요",
        "businessNamePlaceholder": "사업체명을 입력하세요",
        "errors": {
-        "addressOrUrlRequired": "사업장 주소 또는 구글 지도 URL 중 하나를 입력해 주세요",
+        "addressOrUrlRequired": "사업장 주소 또는 Google 지도 URL 중 하나를 입력해 주세요",
         "businessNameRequired": "비즈니스 이름은 필수입니다"
        },
        "googleMapsUrlTooltip": "브라우저 주소 표시줄에서 Google 지도 URL을 직접 복사하세요"
@@ -65859,7 +65859,7 @@
      "connectProfiles": {
       "linkProfileDuplicateError": "이 요청은 이미 진행 중입니다. 잠시 기다려 주세요.",
       "matchLow": "낮은 일치도",
-      "matchMedium": "중간 일치",
+      "matchMedium": "중간 일치도",
       "matchesModalCancel": "취소",
       "matchesModalSubtitle": "귀하의 비즈니스에 가장 적합한 계정을 선택하세요.",
       "menuConnectDifferent": "다른 프로필 연동",
@@ -65876,7 +65876,7 @@
       "sortNameDesc": "이름 (내림차순, Z-A)",
       "sortPlatformAz": "플랫폼 (A–Z)",
       "tryAgain": "다시 시도",
-      "unknownPlatform": "사이트 검토"
+      "unknownPlatform": "리뷰 사이트"
      },
      "dashboardV2": {
       "aiRecap": {
@@ -65900,7 +65900,7 @@
       },
       "qrCode": {
        "emptyDescription": "오프라인 리뷰를 남기는 고객을 위해 QR 코드를 공유하여 프로세스를 간소화하세요.",
-       "emptyTitle": "아직 QR 스캔이 없어요.",
+       "emptyTitle": "아직 QR 스캔이 없습니다.",
        "scansTitle": "QR 스캔",
        "yAxisTotalScans": "총 스캔 수"
       },
@@ -65912,7 +65912,7 @@
       },
       "reviewRequest": {
        "dataLabels": {
-        "bulkAction": "대량 액션",
+        "bulkAction": "일괄 작업",
         "reviewReceived": "리뷰 수신됨"
        },
        "emptyTitle": "리뷰 요청 보내기를 시작하세요.",
@@ -65928,7 +65928,7 @@
         "unrespondedReviews": "응답하지 않은 리뷰"
        },
        "emptyDescription": "리뷰가 들어오기 시작하면 여기서 관리하고 응답하여 신뢰를 구축할 수 있습니다.",
-       "notEligibleReviews": "자격 없는 리뷰",
+       "notEligibleReviews": "응답 대상이 아닌 리뷰",
        "responseTimeMins": "응답 시간 (분)",
        "subtitle": "플랫폼 전반의 응답 커버리지, 응답 시간, 리뷰 처리 방식을 확인하세요.",
        "title": "리뷰 응답",
@@ -65937,7 +65937,7 @@
       "reviewWidget": {
        "emptyDescription": "사이트에 위젯을 삽입하여 진짜 고객 후기를 표시하세요.",
        "emptyPositiveText": "위젯 만들기",
-       "emptyTitle": "위젯 활동이 감지되지 않았어요.",
+       "emptyTitle": "위젯 활동이 감지되지 않았습니다.",
        "impressionsTitle": "리뷰 위젯 노출 수",
        "reviewLinkClicksTitle": "리뷰 링크 클릭 수",
        "title": "리뷰 위젯"
@@ -66003,15 +66003,15 @@
       "104": "이메일 제공업체 오류로 인해 이메일을 보내지 못했습니다.",
       "107": "WhatsApp 메시지 전송 중 문제가 발생했습니다.",
       "E-REVIEW-REQUEST-COMMON-001": "알 수 없는 오류가 발생했습니다",
-      "E-REVIEW-REQUEST-CONTACT-002": "이 연락처에 대해 DND가 활성화되어 있습니다",
+      "E-REVIEW-REQUEST-CONTACT-002": "이 연락처는 방해 금지(DND)가 켜져 있습니다",
       "E-REVIEW-REQUEST-CONTACT-004": "연락처에 전화번호가 없습니다",
       "E-REVIEW-REQUEST-CONTACT-005": "연락처에 이메일 주소가 없습니다",
       "E-REVIEW-REQUEST-EMAIL-002": "이메일 템플릿에 리뷰 링크가 없습니다",
       "E-REVIEW-REQUEST-EMAIL-005": "이메일 제공업체 오류로 인해 이메일을 보내지 못했습니다.",
       "E-REVIEW-REQUEST-SMS-001": "SMS 템플릿에 해결되지 않은 오류가 있습니다",
       "E-REVIEW-REQUEST-SMS-002": "SMS 제공업체 오류로 인해 SMS를 보내지 못했습니다.",
-      "E-REVIEW-REQUEST-SMS-003": "발견된 SMS 템플릿이 없습니다. 계속하려면 하나를 생성해 주세요",
-      "E-REVIEW-REQUEST-WHATSAPP-002": "리뷰 요청 WhatsApp용 승인되지 않은/미승인 템플릿"
+      "E-REVIEW-REQUEST-SMS-003": "SMS 템플릿이 없습니다. 계속하려면 템플릿을 만들어 주세요",
+      "E-REVIEW-REQUEST-WHATSAPP-002": "리뷰 요청용 WhatsApp 템플릿이 없거나 승인되지 않았습니다"
      },
      "errorMessages": {
       "retryLimit": "이 연락처에 대한 재시도 한도 도달"
@@ -66032,12 +66032,12 @@
       "bulkAction": "일괄 액션",
       "default": "알 수 없음",
       "queued": "대기 중",
-      "read": "읽기"
+      "read": "읽음"
      },
      "tableHeadings": {
       "action": "액션",
       "retries": "재시도",
-      "sentVia": "전송 경로",
+      "sentVia": "발송 수단",
       "status": "상태"
      },
      "title": "최신 리뷰 요청"
@@ -66045,10 +66045,10 @@
     "reputationReviews": {
      "aiDraft": {
       "doneEditing": "완료",
-      "post": "게시글"
+      "post": "게시"
      },
-     "aiReplyButton": "AI 답장",
-     "aiReplyButtonAria": "AI로 답장 생성",
+     "aiReplyButton": "AI 답글",
+     "aiReplyButtonAria": "AI로 답글 생성",
      "aiSummary": {
       "fetchFailure": "AI 요약을 가져오지 못했습니다",
       "generatingFilteredSummary": "적용된 필터로 AI 요약 생성 중",
@@ -66074,7 +66074,7 @@
         "weekly": "매주"
        },
        "monthlyFrequency": {
-        "first": "처음"
+        "first": "첫째"
        },
        "nextReplyText": {
         "today": "오늘"
@@ -66100,17 +66100,17 @@
        },
        "cancelCta": "취소",
        "fields": {
-        "chooseAgentLabel": "상담원 선택",
+        "chooseAgentLabel": "에이전트 선택",
         "dateShortcuts": {
          "last90Days": "최근 90일",
          "lastYear": "지난해"
         },
         "dayOfWeekLabel": "요일",
         "frequencyLabel": "발송 주기",
-        "occursOnLabel": "발생일",
+        "occursOnLabel": "실행일",
         "occursOnOfTheMonthSuffix": "일 (매월)",
-        "reviewDateRangeLabel": "검토 날짜 범위",
-        "timeWindowAnd": "그리고"
+        "reviewDateRangeLabel": "리뷰 날짜 범위",
+        "timeWindowAnd": "~"
        },
        "reviewFilter": {
         "allReviews": "전체 리뷰"
@@ -66131,11 +66131,11 @@
        "errors": {
         "genericSaveError": "캠페인 저장 중 문제가 발생했습니다."
        },
-       "title": "리뷰 응답 - 단계적 모드"
+       "title": "리뷰 응답 - 드립 모드"
       }
      },
      "emptyMessageCTA": "리뷰 수집 시작",
-     "gmbDisconnectedCTA": "GBP 연동하기",
+     "gmbDisconnectedCTA": "Google 비즈니스 프로필 연동하기",
      "manualReviews": {
       "addCustomPlatform": "사용자 지정 플랫폼 추가",
       "addManually": "수동으로 추가",
@@ -66178,14 +66178,14 @@
      "reviewDeleteWarning": "이는 CRM에서만 제거되며, 리뷰는 플랫폼에 계속 존재합니다. 계속하시겠습니까?",
      "reviewPostedMsg": "{network}에 리뷰가 게시됨",
      "reviewsAI": {
-      "automaticModeDescription": "리뷰 응답을 자동으로 발송해요",
+      "automaticModeDescription": "리뷰 응답을 자동으로 발송합니다",
       "exceededSuggestiveRepliesError": "이 리뷰에 대한 AI 답변 제안 4회를 모두 사용했습니다.",
       "filterOptionFiveStars": "5점",
       "footerTitle": "리뷰 응답 푸터",
       "noAgentMatchedCriteriaError": "적합한 AI 에이전트가 설정되어 있지 않습니다. 계속하려면 하나를 설정해 주세요: ",
-      "replyCountDownMessage": "AI 봇이 {time} 안에 리뷰에 응답합니다",
+      "replyCountDownMessage": "AI 봇이 {time} 후 리뷰에 응답합니다",
       "starRatingFilterPlaceholder": "답변을 생성할 별점을 선택하세요.",
-      "suggestiveModeDescription": "리뷰 응답 작성을 도와줘요"
+      "suggestiveModeDescription": "리뷰 응답 작성을 도와줍니다"
      },
      "shareReviewsHeader": "소셜 미디어에 리뷰 공유",
      "spamReviews": {
@@ -66232,7 +66232,7 @@
       "disconnectConfirmationForPlatform": "이 {platform} 계정의 연결을 해제하시겠습니까?",
       "fetchingReviewsToolTip": "리뷰를 가져오는 데 최대 72시간이 걸릴 수 있습니다.",
       "generalError": "연동에 실패했습니다. 다시 시도해 주세요.",
-      "invalidUrl": "URL이 올바른지 확인해주세요. 그리고 페이지가 공개적으로 접근 가능한지 확인해주세요.",
+      "invalidUrl": "URL이 올바른지, 페이지가 공개되어 있는지 확인해 주세요.",
       "manage": "관리",
       "manageConnectionsTitle": "연결",
       "manageHeaderPageLinks": "페이지 링크",
@@ -66244,7 +66244,7 @@
       },
       "nAccountsConnected": "{n}개 계정 연결됨",
       "nAccountsNeedAttention": "{n}개 계정에 주의가 필요합니다",
-      "nPagesShort": "{n}페이지",
+      "nPagesShort": "페이지 {n}개",
       "oneAccountConnected": "연결된 계정 1개",
       "rateLimitError": "이 페이지는 하루에 한 번만 연결할 수 있습니다. 24시간 후에 다시 시도하거나 다른 페이지를 연결해 주세요.",
       "resync": "다시 동기화",
@@ -66270,7 +66270,7 @@
       "switchModeTitle": "에디터 모드 전환 알림입니다.",
       "tableHeadings": {
        "qrName": "QR 이름",
-       "updatedOn": "업데이트됨"
+       "updatedOn": "업데이트일"
       },
       "title": "QR 코드"
      },
@@ -66316,7 +66316,7 @@
       "reviewTypes": {
        "all": "전체 리뷰",
        "fourStarsOrAbove": "별 4개 이상",
-       "oneStarOrAbove": "1점 이상",
+       "oneStarOrAbove": "별 1개 이상",
        "threeStarsOrAbove": "별 3개 이상",
        "twoStarsOrBelow": "별 2개 이하"
       },
@@ -66336,7 +66336,7 @@
       }
      },
      "senderComponent": {
-      "emailDefaultTooltip": "위치 이메일을 기본값으로 사용합니다. 사용할 수 없는 경우 로그인한 사용자의 이메일이 사용됩니다.",
+      "emailDefaultTooltip": "서브 계정 이메일을 기본값으로 사용합니다. 사용할 수 없는 경우 로그인한 사용자의 이메일이 사용됩니다.",
       "emailHint": "이 이메일 주소는 이메일 리뷰 요청의 기본 발신자로 사용됩니다.",
       "heading": "리뷰 요청을 위한 기본 발신자",
       "phoneHint": "이 번호는 SMS 리뷰 요청의 기본 발신자로 사용됩니다.",
@@ -66383,18 +66383,18 @@
      "deleteWidgetModalHeader": "위젯 삭제",
      "displayInitialsField": "리뷰어 이니셜 표시",
      "displayReviewIconField": "리뷰어 아이콘 표시",
-     "dropAVideoButtonColorField": "동영상 버튼 색상 추가",
-     "dropAVideoField": "동영상 버튼 추가",
+     "dropAVideoButtonColorField": "'동영상 남기기' 버튼 색상",
+     "dropAVideoField": "'동영상 남기기' 버튼",
      "embedCodeField": "웹사이트에 삽입 코드 넣기",
-     "excludeNoDescReviewField": "설명이 없는 리뷰 제외",
+     "excludeNoDescReviewField": "내용이 없는 리뷰 제외",
      "makeItDefaultMsg": "기본값으로 설정",
      "makeItLiveDescription": "이 위젯을 웹사이트에 게시하시겠습니까?",
      "makeItLiveDetail": "웹사이트에 이 템플릿을 사용하세요.",
-     "makeItLiveMsg": "LIVE로 전환",
+     "makeItLiveMsg": "게시하기",
      "minRatingField": "최소 평점",
      "mobileViewButton": "모바일 보기",
      "overrideReviewLinkLabel": "리뷰 작성 링크 대체",
-     "overrideVideoLinkLabel": "동영상 링크 대체",
+     "overrideVideoLinkLabel": "'동영상 남기기' 링크 대체",
      "paginationTypeOptions": {
       "numbers": "번호"
      },
@@ -66413,7 +66413,7 @@
       "top": "상단"
      },
      "totalVideoTestimonialsCountField": "총 동영상 후기 수",
-     "videoTestimonialsSourceField": "비디오 후기 소스",
+     "videoTestimonialsSourceField": "비디오 후기 출처",
      "widgetPositionOptions": {
       "bottom": "하단",
       "bottomLeft": "왼쪽 하단",
@@ -66442,14 +66442,14 @@
      "enableEmailButton": "이메일 요청 활성화",
      "enableSMSButton": "SMS 요청 활성화",
      "enableWhatsAppButton": "WhatsApp 요청 활성화",
-     "reviewRequestModeEmailEmptyEmailAddress": "이메일 리뷰 요청을 보낼 이메일 주소가 있는 연락처 선택",
-     "reviewRequestModeSMSContactDND": "연락처가 DND로 표시되어 SMS 리뷰 요청을 보낼 수 없습니다",
+     "reviewRequestModeEmailEmptyEmailAddress": "이메일 리뷰 요청을 보내려면 이메일 주소가 있는 연락처를 선택하세요",
+     "reviewRequestModeSMSContactDND": "연락처가 방해 금지(DND)로 설정되어 SMS 리뷰 요청을 보낼 수 없습니다",
      "reviewRequestModeSMSDisabled": "SMS 리뷰 요청이 비활성화되어 있습니다. 여기에서 활성화할 수 있습니다:",
-     "reviewRequestModeSMSEmptyPhoneNumber": "SMS 리뷰 요청을 보낼 전화번호가 있는 연락처 선택",
-     "reviewRequestModeWhatsApp": "리뷰 요청 WhatsApp",
-     "reviewRequestModeWhatsAppAndSmsDnd": "연락처가 DND로 표시되어 SMS 및 WhatsApp 리뷰 요청을 보낼 수 없습니다",
+     "reviewRequestModeSMSEmptyPhoneNumber": "SMS 리뷰 요청을 보내려면 전화번호가 있는 연락처를 선택하세요",
+     "reviewRequestModeWhatsApp": "WhatsApp 리뷰 요청",
+     "reviewRequestModeWhatsAppAndSmsDnd": "연락처가 방해 금지(DND)로 설정되어 SMS 및 WhatsApp 리뷰 요청을 보낼 수 없습니다",
      "reviewRequestModeWhatsAppDisabled": "WhatsApp 리뷰 요청이 비활성화되어 있습니다. 여기서 활성화할 수 있습니다:",
-     "reviewRequestModeWhatsAppTemplateError": "리뷰 요청 WhatsApp 템플릿이 설정되지 않음/승인되지 않음",
+     "reviewRequestModeWhatsAppTemplateError": "WhatsApp 리뷰 요청 템플릿이 없거나 승인되지 않았습니다",
      "templateNotAvailable": "사용 가능한 템플릿이 없습니다"
     },
     "videoTestimonials": {
@@ -66478,9 +66478,9 @@
        "collectorTitleLabel": "공개 수집기 제목",
        "collectorTitlePlaceholder": "경험 공유하기",
        "description": " 이 페이지는 응답자를 환영하고, 비디오 후기 프로세스를 간략히 설명하며, 사용자가 직접 커스텀 환영 메시지를 추가할 수 있게 합니다.",
-       "howItWorksTitleLabel": "작동 방식은?",
-       "spokespersonTitleLabel": "대변인",
-       "spokespersonTitlePlaceholder": "대변인 직책",
+       "howItWorksTitleLabel": "이용 방법",
+       "spokespersonTitleLabel": "담당자",
+       "spokespersonTitlePlaceholder": "담당자 직책",
        "title": "웰컴 페이지 설정",
        "welcomeMessageTitleLabel": "환영 메시지"
       }
@@ -66491,8 +66491,8 @@
      },
      "emptyMessages": {
       "emptyCollectorCTA": "수집기 만들기",
-      "emptyCollectorDescription": "지금 만들어보세요! 응답을 수집하고 리뷰 요청을 쉽게 보낼 수 있어요.",
-      "emptyCollectorTitle": "비디오 수집기가 없어요",
+      "emptyCollectorDescription": "지금 만들어 보세요! 응답을 수집하고 리뷰 요청을 쉽게 보낼 수 있습니다.",
+      "emptyCollectorTitle": "생성된 비디오 수집기가 없습니다",
       "noResponseRecorded": "세션에 기록된 응답이 없습니다"
      },
      "filters": {
@@ -66501,7 +66501,7 @@
      },
      "marketingConsentProvided": "마케팅 수신 동의 완료",
      "modals": {
-      "cloneCollectorTitle": "비디오 컬렉터 복제",
+      "cloneCollectorTitle": "비디오 수집기 복제",
       "deleteCollectorDescription": "이 수집기를 삭제하시겠습니까?",
       "deleteResponseTitle": "응답 삭제",
       "saveConfirmationTitle": "변경사항 저장"
@@ -66552,7 +66552,7 @@
      "common": {
       "AggregateOfferItemOffer": {
        "availability": {
-        "label": "가용성"
+        "label": "재고 상태"
        }
       },
       "ContactPoint": {
@@ -66661,7 +66661,7 @@
      "product": {
       "Offers": {
        "availability": {
-        "label": "가용성"
+        "label": "재고 상태"
        }
       }
      },
@@ -66685,7 +66685,7 @@
      },
      "event": {
       "director": {
-       "label": "이사"
+       "label": "감독"
       },
       "inLanguage": {
        "label": "언어"
@@ -66728,11 +66728,11 @@
     },
     "sidebar": {
      "duplicate": {
-      "badge": "복제"
+      "badge": "중복"
      }
     },
     "unsavedChanges": {
-     "discard": "삭제"
+     "discard": "변경 취소"
     }
    }
   },
@@ -66754,7 +66754,7 @@
      "unsubscribe": {
       "modal": {
        "general": {
-        "locationName": "위치 이름"
+        "locationName": "서브 계정 이름"
        }
       },
       "reasons": {
@@ -133145,8 +133145,8 @@
   "User Login": "사용자 로그인",
   "Product Completed": "상품 완료",
   "Membership New Signup": "멤버십 신규 가입",
-  "Offer Access Granted": "제안 접근 권한 부여됨",
-  "Offer Access Removed": "제안 접근 권한 제거됨",
+  "Offer Access Granted": "오퍼 접근 권한 부여됨",
+  "Offer Access Removed": "오퍼 접근 권한 제거됨",
   "Add to campaign": "캠페인에 추가",
   "Remove from campaign": "캠페인에서 제거",
   "Remove from all campaigns": "모든 캠페인에서 제거",
@@ -133159,8 +133159,8 @@
   "Stripe One Time Charge": "Stripe 일회성 결제",
   "Update Appointment Status": "예약 상태 업데이트",
   "Mark Conversation as Read": "대화를 읽음으로 표시",
-  "Membership Grant Offer": "멤버십 제안 부여",
-  "Membership Revoke Offer": "멤버십 제안 회수",
+  "Membership Grant Offer": "멤버십 오퍼 부여",
+  "Membership Revoke Offer": "멤버십 오퍼 회수",
   "Add contact to custom audience": "맞춤 오디언스에 연락처 추가",
   "Remove contact from custom audience": "맞춤 오디언스에서 연락처 제거",
   "Calendar setup assistant": "캘린더 설정 도우미",

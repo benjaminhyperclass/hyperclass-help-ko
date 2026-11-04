@@ -283969,7 +283969,7 @@
  },
  "adPublishingApp.campaignCreation.tiktok.behaviours": {
   "en": "Behaviours",
-  "ko": "동작"
+  "ko": "행동"
  },
  "adPublishingApp.campaignCreation.tiktok.bidStrategyTitle": {
   "en": "Bid strategy",
@@ -284077,7 +284077,7 @@
  },
  "adPublishingApp.campaignCreation.tiktok.locationsPlaceholder": {
   "en": "Search locations",
-  "ko": "서브 계정 검색"
+  "ko": "위치 검색"
  },
  "adPublishingApp.campaignCreation.tiktok.media.browse": {
   "en": "Upload media",
@@ -284301,15 +284301,15 @@
  },
  "adPublishingApp.notifications.errorTitles.tiktok.campaignName": {
   "en": "Campaign name missing",
-  "ko": "캠페인 이름이 없습니다"
+  "ko": "캠페인 이름 누락"
  },
  "adPublishingApp.notifications.errorTitles.tiktok.invalidUrl": {
   "en": "Invalid URL",
-  "ko": "잘못된 URL입니다"
+  "ko": "잘못된 URL"
  },
  "adPublishingApp.notifications.errorTitles.tiktok.location": {
   "en": "Location missing",
-  "ko": "서브 계정 누락"
+  "ko": "위치 누락"
  },
  "adPublishingApp.notifications.errorTitles.tiktok.media": {
   "en": "Media missing",
@@ -284349,7 +284349,7 @@
  },
  "adPublishingApp.settings.sync.preset.recent.prefix": {
   "en": "Last",
-  "ko": "마지막"
+  "ko": "최근"
  },
  "adPublishingApp.settings.sync.progress.failed": {
   "en": "Sync failed",
@@ -284449,7 +284449,7 @@
  },
  "adPublishingApp.statistics.views": {
   "en": "Views",
-  "ko": "뷰"
+  "ko": "조회수"
  },
  "agencyDashboardApp.agencyDashboard.common.agencyTitle": {
   "en": "Agency Dashboard",
@@ -284573,7 +284573,7 @@
  },
  "agencyDashboardApp.agencyDashboard.common.noResultsFound": {
   "en": "No results found",
-  "ko": "검색 결과가 없습니다"
+  "ko": "결과가 없습니다"
  },
  "agencyDashboardApp.agencyDashboard.common.previous": {
   "en": "Previous",
@@ -284621,7 +284621,7 @@
  },
  "agencyDashboardApp.agencyDashboard.common.products.phone": {
   "en": "Phone",
-  "ko": "전화번호"
+  "ko": "전화"
  },
  "agencyDashboardApp.agencyDashboard.common.products.prospecting": {
   "en": "Prospecting",
@@ -284749,7 +284749,7 @@
  },
  "agentLogsApp.agentLogs.analysisInsights.filters.opportunities": {
   "en": "Opportunities",
-  "ko": "기회 관리"
+  "ko": "기회"
  },
  "agentLogsApp.agentLogs.analysisInsights.hide": {
   "en": "Hide",
@@ -284969,7 +284969,7 @@
  },
  "agentLogsApp.agentLogs.metrics.export.columns.totalCalls": {
   "en": "Calls",
-  "ko": "전화"
+  "ko": "통화"
  },
  "agentLogsApp.agentLogs.metrics.export.columns.totalTokens": {
   "en": "Total tokens",
@@ -284977,7 +284977,7 @@
  },
  "agentLogsApp.agentLogs.metrics.export.columns.transferred": {
   "en": "Transferred",
-  "ko": "전환됨"
+  "ko": "통화 전환"
  },
  "agentLogsApp.agentLogs.metrics.export.columns.voicemail": {
   "en": "Voicemail",
@@ -285025,7 +285025,7 @@
  },
  "agentLogsApp.agentLogs.metrics.export.menu": {
   "en": "More actions",
-  "ko": "더 많은 액션"
+  "ko": "추가 작업"
  },
  "agentLogsApp.agentLogs.metrics.layout.defaultLayout": {
   "en": "Default",
@@ -285081,7 +285081,7 @@
  },
  "agentLogsApp.agentLogs.metrics.reports.chartTypes.line": {
   "en": "Line",
-  "ko": "줄"
+  "ko": "선형"
  },
  "agentLogsApp.agentLogs.metrics.reports.dimensions.agent": {
   "en": "Agent",
@@ -285133,7 +285133,7 @@
  },
  "agentLogsApp.agentLogs.metrics.reports.grains.month": {
   "en": "Month",
-  "ko": "개월"
+  "ko": "월"
  },
  "agentLogsApp.agentLogs.metrics.reports.grains.week": {
   "en": "Week",
@@ -285169,7 +285169,7 @@
  },
  "agentLogsApp.agentLogs.metrics.reports.outcomes.transfer": {
   "en": "Transferred",
-  "ko": "전환됨"
+  "ko": "통화 전환"
  },
  "agentLogsApp.agentLogs.metrics.reports.outcomes.voicemail": {
   "en": "Voicemail",
@@ -285245,11 +285245,11 @@
  },
  "agentLogsApp.agentLogs.monitor.alerts.status.ok": {
   "en": "Normal",
-  "ko": "보통"
+  "ko": "정상"
  },
  "agentLogsApp.agentLogs.monitor.alerts.status.paused": {
   "en": "Off",
-  "ko": "끔"
+  "ko": "꺼짐"
  },
  "agentLogsApp.agentLogs.monitor.history.active": {
   "en": "Active",
@@ -285325,7 +285325,7 @@
  },
  "agentLogsApp.agentLogs.monitor.newTarget.notifyViaLabel": {
   "en": "Send to",
-  "ko": "보내기"
+  "ko": "받는 사람"
  },
  "agentLogsApp.agentLogs.monitor.newTarget.preview": {
   "en": "Preview",
@@ -285609,7 +285609,7 @@
  },
  "aiEmployeesApp.aiValueLandingPage.products.reviews.features.2": {
   "en": "Notify staff to fix issues",
-  "ko": "직원에게 문제 해결 알림"
+  "ko": "직원에게 문제 해결 요청 알림"
  },
  "aiEmployeesApp.aiValueLandingPage.products.voice.features.1": {
   "en": "Books appointments instantly",
@@ -285701,7 +285701,7 @@
  },
  "aiEmployeesApp.composables.useProvider.models.retiresOn": {
   "en": "Retires {date}",
-  "ko": "{date} 에 만료"
+  "ko": "{date}에 지원 종료"
  },
  "aiEmployeesApp.composables.useTransferBotForm.duplicateExample": {
   "en": "Duplicate Example found.",
@@ -285829,7 +285829,7 @@
  },
  "aiEmployeesApp.conversationAI.actions.stopBot.messages.deleted": {
   "en": "Stop bot deleted successfully.",
-  "ko": "봇 중지가 삭제되었습니다."
+  "ko": "봇 중지 액션이 삭제되었습니다."
  },
  "aiEmployeesApp.conversationAI.actions.stopBot.messages.examples.thankYou": {
   "en": "Thank you! have a nice day",
@@ -285837,7 +285837,7 @@
  },
  "aiEmployeesApp.conversationAI.actions.stopBot.messages.goodbyeTriggerCondition": {
   "en": "When the contact says goodbye or similar phrases ",
-  "ko": "연락처가 인사말이나 비슷한 문구를 말할 때 "
+  "ko": "연락처가 작별 인사나 비슷한 표현을 말할 때 "
  },
  "aiEmployeesApp.conversationAI.actions.stopBot.messages.removed": {
   "en": "Stop bot action removed.",
@@ -285865,7 +285865,7 @@
  },
  "aiEmployeesApp.conversationAI.actions.transferBot.notifications.deleteSuccess": {
   "en": "Transfer bot deleted successfully.",
-  "ko": "전달 봇이 성공적으로 삭제되었습니다."
+  "ko": "전환 액션이 성공적으로 삭제되었습니다."
  },
  "aiEmployeesApp.conversationAI.actions.triggerWorkflow.deleteWorkflowAction": {
   "en": "Delete Workflow Action",
@@ -285877,7 +285877,7 @@
  },
  "aiEmployeesApp.conversationAI.appointmentBookingModal.aiConfiguration.aiBookingInstructionLabel": {
   "en": "AI Appointment booking instruction",
-  "ko": "AI 예약 안내"
+  "ko": "AI 예약 지침"
  },
  "aiEmployeesApp.conversationAI.appointmentBookingModal.aiConfiguration.fallbackPlaceholder": {
   "en": "Select fallback calendar",
@@ -285897,7 +285897,7 @@
  },
  "aiEmployeesApp.conversationAI.appointmentBookingModal.onlySendLink": {
   "en": "Don't book appointment (only send the booking link)",
-  "ko": "예약을 잡지 않기 (예약 링크만 전송)"
+  "ko": "예약하지 않음 (예약 링크만 전송)"
  },
  "aiEmployeesApp.conversationAI.appointmentBookingModal.promptWarning1": {
   "en": "Make sure your prompt doesn't include any instructions like",
@@ -285993,7 +285993,7 @@
  },
  "aiEmployeesApp.conversationAI.createEmployee.botTraining.triggers.whenToTriggerPlaceholder": {
   "en": "Example: \"Use this knowledge base when the user asks about pricing and discounts\"",
-  "ko": "예: \"가격 및 할인에 대해 사용자가 질문할 때 이 지식창고를 사용하세요\""
+  "ko": "예: \"가격 및 할인에 대해 사용자가 질문할 때 이 지식 베이스를 사용하세요\""
  },
  "aiEmployeesApp.conversationAI.createEmployee.botTrial.actionPerformed": {
   "en": "Action Performed",
@@ -286041,7 +286041,7 @@
  },
  "aiEmployeesApp.conversationAI.createEmployee.formBasedBot.brandVoice.edit.customerPainPoints.label": {
   "en": "Customer Pain Points",
-  "ko": "고객 pain point"
+  "ko": "고객 불편 사항"
  },
  "aiEmployeesApp.conversationAI.createEmployee.formBasedBot.brandVoice.edit.toneOfVoice.placeholder": {
   "en": "Describe Your Brand Tone of Voice",
@@ -286197,7 +286197,7 @@
  },
  "aiEmployeesApp.conversationAI.errors.updateFailed": {
   "en": "Unable to update Employee, Please try again.",
-  "ko": "직원을 업데이트할 수 없습니다. 다시 시도하세요."
+  "ko": "직원을 업데이트할 수 없습니다. 다시 시도해 주세요."
  },
  "aiEmployeesApp.conversationAI.ipProtectedAssetsModal.continue": {
   "en": "Continue",
@@ -286293,7 +286293,7 @@
  },
  "aiEmployeesApp.knowledgeBase.listing.table.tooltip.createdAt": {
   "en": "Created Date and Time of the Knowledge Base",
-  "ko": "지식창고 생성 날짜 및 시간"
+  "ko": "지식 베이스 생성 날짜 및 시간"
  },
  "aiEmployeesApp.knowledgeBase.listing.table.tooltip.defaultKnowledgeBase": {
   "en": "Knowledge base being used by the workflow automation bot",
@@ -286309,7 +286309,7 @@
  },
  "aiEmployeesApp.knowledgeBase.modals.faqAdditionModal.questionError": {
   "en": "Question cannot be empty.",
-  "ko": "질문은 비어 있을 수 없습니다."
+  "ko": "질문을 입력해 주세요."
  },
  "aiEmployeesApp.knowledgeBase.modals.fileUploadModal.browse": {
   "en": "browse",
@@ -286325,7 +286325,7 @@
  },
  "aiEmployeesApp.knowledgeBase.modals.modalTrainBot.selectKnowledgeBasePlaceholder": {
   "en": "Select Knowledge Base",
-  "ko": "지식창고 선택"
+  "ko": "지식 베이스 선택"
  },
  "aiEmployeesApp.knowledgeBase.modals.webCrawlingModal.enterURL": {
   "en": "Enter URL",
@@ -286365,11 +286365,11 @@
  },
  "aiEmployeesApp.knowledgeBase.services.useBotTraining.restricted": {
   "en": "The mentioned page is restricted from crawling",
-  "ko": "언급된 페이지는 크롤링이 제한되어 있습니다"
+  "ko": "해당 페이지는 크롤링이 제한되어 있습니다"
  },
  "aiEmployeesApp.knowledgeBase.tabs.fileUpload.processingStates.CHUNKING": {
   "en": "Chunking",
-  "ko": "청킹"
+  "ko": "청크 분할 중"
  },
  "aiEmployeesApp.knowledgeBase.tabs.fileUpload.processingStates.EXTRACTING_CONTENT": {
   "en": "Extracting Content",
@@ -286433,7 +286433,7 @@
  },
  "aiEmployeesApp.locationSettingTable.productPriceText": {
   "en": "AI Employee provides access to all the AI tools like Conversation AI, Review AI, Content AI and AI agent. This is a paid service",
-  "ko": "AI Employee는 Conversation AI, Review AI, Content AI, AI 에이전트와 같은 모든 AI 도구에 대한 액세스를 제공합니다. 이는 유료 서비스입니다"
+  "ko": "AI 직원은 대화 AI, Review AI, Content AI, AI 에이전트 등 모든 AI 도구를 이용할 수 있게 해 줍니다. 유료 서비스입니다"
  },
  "aiEmployeesApp.manageSoaiModal.searchSubAccounts": {
   "en": "Search sub-accounts...",
@@ -286441,7 +286441,7 @@
  },
  "aiEmployeesApp.offerSettings.affiliate.commission": {
   "en": "Your referrer will earn a <b>40% commission</b> from every sub-account that activates a $97 Unlimited AI Employee subscription.",
-  "ko": "추천인은 $97 Unlimited AI Employee 구독을 활성화하는 모든 서브 계정으로부터 <b>40% 커미션</b>을 받게 됩니다."
+  "ko": "추천인은 $97 무제한 AI 직원 구독을 활성화하는 모든 서브 계정으로부터 <b>40% 커미션</b>을 받게 됩니다."
  },
  "aiEmployeesApp.offerSettings.affiliate.commissionStart": {
   "en": "Commissions for AI Employee will start generating after the 30 days free trial end and the first payment is made.",
@@ -286449,7 +286449,7 @@
  },
  "aiEmployeesApp.offerSettings.disable.enableDescription": {
   "en": "Turning on this feature will enable the season of AI page in all locations. The AI tools will still be available for the locations.",
-  "ko": "이 기능을 켜면 모든 위치에서 AI 시즌 페이지가 활성화됩니다. AI 도구는 해당 위치에서 계속 사용할 수 있습니다."
+  "ko": "이 기능을 켜면 모든 서브 계정에서 AI 시즌 페이지가 활성화됩니다. AI 도구는 해당 서브 계정에서 계속 사용할 수 있습니다."
  },
  "aiEmployeesApp.offerSettings.disable.seasonDisableDescription": {
   "en": "Turning off this feature will hide the \"Season Of AI\" page from all Sub-Accounts. However, the AI tools will still be accessible for Sub-Accounts.",
@@ -286497,7 +286497,7 @@
  },
  "aiEmployeesApp.rebillingSwitch.activateSaasMode": {
   "en": "Please activate SaaS mode for this sub-account to enable rebilling.",
-  "ko": "리빌링을 활성화하려면 이 서브 계정의 SaaS 모드를 활성화해주세요."
+  "ko": "재청구를 활성화하려면 이 서브 계정의 SaaS 모드를 활성화해 주세요."
  },
  "aiEmployeesApp.rebillingSwitch.fixedMarkup": {
   "en": "Rebilling is possible with fixed markup of 5%.",
@@ -286609,7 +286609,7 @@
  },
  "brandBoardsApp.sidebar.fontWeights.medium": {
   "en": "Medium",
-  "ko": "보통"
+  "ko": "미디엄"
  },
  "brandBoardsApp.sidebar.fontWeights.regular": {
   "en": "Regular",
@@ -286845,7 +286845,7 @@
  },
  "calendarComponentsApp.calendarAI.locationPicker.custom": {
   "en": "Custom",
-  "ko": "사용자 지정"
+  "ko": "커스텀"
  },
  "calendarComponentsApp.calendarAI.locationPicker.inPersonPhone": {
   "en": "In-person / phone / custom",
@@ -286873,7 +286873,7 @@
  },
  "calendarComponentsApp.calendarAI.messages.calendarTypesOverview": {
   "en": "The platform supports these calendar types:\n\n**1:1 Meeting** — Consults, coaching, discovery calls. 1 person per slot.\n\n**Group Session** — Classes, webinars, workshops. Set a seat limit per slot.\n\n**Team Rotation (Round Robin)** — Distribute bookings across team members automatically.\n\n**Panel / Committee (Collective)** — All selected team members must attend together.\n\n**Event** — Open registration for conferences, webinars, or RSVPs. No assigned host.\n\n**Service Booking** — Clients pick a service and available staff member.",
-  "ko": "플랫폼은 다음 캘린더 유형을 지원합니다:\n\n**1:1 미팅** — 상담, 코칭, 디스커버리 콜. 시간대당 1명.\n\n**그룹 세션** — 수업, 웨비나, 워크숍. 시간대당 좌석 제한 설정.\n\n**팀 순환 (라운드 로빈)** — 팀 멤버에게 예약을 자동으로 분배합니다.\n\n**패널 / 위원회 (집단)** — 선택한 모든 팀 멤버가 함께 참석해야 합니다.\n\n**이벤트** — 컨퍼런스, 웨비나, RSVP를 위한 공개 등록. 지정된 호스트 없음.\n\n**서비스 예약** — 클라이언트가 서비스와 가능한 직원을 선택합니다."
+  "ko": "플랫폼은 다음 캘린더 유형을 지원합니다:\n\n**1:1 미팅** — 상담, 코칭, 디스커버리 콜. 시간대당 1명.\n\n**그룹 세션** — 수업, 웨비나, 워크숍. 시간대당 좌석 제한 설정.\n\n**팀 순환 (라운드 로빈)** — 팀 멤버에게 예약을 자동으로 분배합니다.\n\n**패널 / 위원회 (공동)** — 선택한 모든 팀 멤버가 함께 참석해야 합니다.\n\n**이벤트** — 컨퍼런스, 웨비나, RSVP를 위한 공개 등록. 지정된 호스트 없음.\n\n**서비스 예약** — 클라이언트가 서비스와 가능한 직원을 선택합니다."
  },
  "calendarComponentsApp.calendarAI.messages.clientChooses": {
   "en": "Let clients choose their host",
@@ -286969,7 +286969,7 @@
  },
  "calendarComponentsApp.calendarAI.messages.selectTeamMembersCollective": {
   "en": "Collective calendars require all team members to be available. Please select at least 2 members.",
-  "ko": "공동 캘린더는 모든 팀 멤버가 가능해야 합니다. 멤버를 2명 이상 선택해 주세요."
+  "ko": "공동 캘린더는 모든 팀 멤버가 참석 가능해야 합니다. 멤버를 2명 이상 선택해 주세요."
  },
  "calendarComponentsApp.calendarAI.messages.setAvailability": {
   "en": "Set your available days and hours:",
@@ -287077,7 +287077,7 @@
  },
  "calendarComponentsApp.calendarAI.preview.bookingConfirmed": {
   "en": "Booking confirmed",
-  "ko": "예약 확인됨"
+  "ko": "예약 확정됨"
  },
  "calendarComponentsApp.calendarAI.preview.bufferSuffix": {
   "en": "{buffer}m buffer",
@@ -287177,7 +287177,7 @@
  },
  "calendarComponentsApp.calendarAI.quickReplies.customNumber": {
   "en": "Custom number",
-  "ko": "커스텀 번호"
+  "ko": "직접 입력"
  },
  "calendarComponentsApp.calendarAI.quickReplies.customizeAvailability": {
   "en": "Customize availability",
@@ -287277,7 +287277,7 @@
  },
  "calendarComponentsApp.calendarAI.quickReplies.topicCollectPayments": {
   "en": "Collect payments",
-  "ko": "결제 수금"
+  "ko": "결제 받기"
  },
  "calendarComponentsApp.calendarAI.quickReplies.topicCustomizeForms": {
   "en": "Customize booking widget",
@@ -287497,7 +287497,7 @@
  },
  "chatWidgetApp.analytics.tabWidgets": {
   "en": "Library",
-  "ko": "도서관"
+  "ko": "라이브러리"
  },
  "chatWidgetApp.analytics.tblContact": {
   "en": "Contact",
@@ -287529,7 +287529,7 @@
  },
  "chatWidgetApp.analytics.tblWhen": {
   "en": "When",
-  "ko": "언제"
+  "ko": "일시"
  },
  "chatWidgetApp.analytics.viewConversation": {
   "en": "Open conversation",
@@ -287637,7 +287637,7 @@
  },
  "clientPortalBuilder.accessibility.clientPortalUrl": {
   "en": "Client Portal URL",
-  "ko": "클라이언트 포탈 URL"
+  "ko": "클라이언트 포털 URL"
  },
  "clientPortalBuilder.accessibility.codeInjectionTabs": {
   "en": "Code injection tabs",
@@ -287785,7 +287785,7 @@
  },
  "clientPortalBuilder.backend.COMMON_LOCATION_NOT_FOUND": {
   "en": "Location not found.",
-  "ko": "위치를 찾을 수 없습니다."
+  "ko": "서브 계정을 찾을 수 없습니다."
  },
  "clientPortalBuilder.brandedApp.appLive.appStore.copyTooltip": {
   "en": "Copied",
@@ -287881,7 +287881,7 @@
  },
  "clientPortalBuilder.brandedApp.reviewModal.title": {
   "en": "Review Failed",
-  "ko": "리뷰 실패"
+  "ko": "검토 실패"
  },
  "clientPortalBuilder.brandedApp.stepsComponent.steps.0.label": {
   "en": "Payment successful",
@@ -288105,7 +288105,7 @@
  },
  "clientPortalBuilder.branding.general.enterValidEmail": {
   "en": "Please enter a valid emailId",
-  "ko": "유효한 이메일 ID 를 입력해 주세요"
+  "ko": "유효한 이메일 주소를 입력해 주세요"
  },
  "clientPortalBuilder.branding.general.headerTitle": {
   "en": "Branding",
@@ -288113,7 +288113,7 @@
  },
  "clientPortalBuilder.branding.general.pleaseEnterValidEmailId": {
   "en": "Please enter a valid emailId",
-  "ko": "유효한 이메일 ID 를 입력해 주세요"
+  "ko": "유효한 이메일 주소를 입력해 주세요"
  },
  "clientPortalBuilder.branding.helperTexts.portalDescription": {
   "en": "This will be displayed as your portal description for the signup/login screen of your portal.",
@@ -288185,7 +288185,7 @@
  },
  "clientPortalBuilder.brandingImagesInput.favicon.description": {
   "en": "Recommended Aspect Ratio 1:1",
-  "ko": "권장 화면 비율 1:1"
+  "ko": "권장 가로세로 비율 1:1"
  },
  "clientPortalBuilder.brandingImagesInput.favicon.title": {
   "en": "Favicon",
@@ -288197,7 +288197,7 @@
  },
  "clientPortalBuilder.brandingImagesInput.logo.description": {
   "en": "Recommended Aspect Ratio 1:1",
-  "ko": "권장 화면 비율 1:1"
+  "ko": "권장 가로세로 비율 1:1"
  },
  "clientPortalBuilder.brandingImagesInput.logo.extraHelperText": {
   "en": "SVG, PNG, JPG (max 200x200 px)",
@@ -288373,7 +288373,7 @@
  },
  "clientPortalBuilder.dashboard.descriptions.description": {
   "en": "Manage your client portal activities",
-  "ko": "클라이언트 포탈 활동을 관리하세요"
+  "ko": "클라이언트 포털 활동을 관리하세요"
  },
  "clientPortalBuilder.dashboard.descriptions.subDescription": {
   "en": "Creating a protected online gateway for client interactions",
@@ -288453,7 +288453,7 @@
  },
  "clientPortalBuilder.dashboard.switchBack.reasonMissingFeature": {
   "en": "Missing a feature",
-  "ko": "원하는 기능이 없나요"
+  "ko": "원하는 기능 없음"
  },
  "clientPortalBuilder.dashboard.switchBack.reasonPreferOldDesign": {
   "en": "Prefer the old design",
@@ -288513,7 +288513,7 @@
  },
  "clientPortalBuilder.dashboard.whatsNew.toastTitle": {
   "en": "New client portal is live for everyone",
-  "ko": "새 고객 포털이 모든 사용자에게 제공됩니다"
+  "ko": "새 클라이언트 포털이 모든 사용자에게 적용되었습니다"
  },
  "clientPortalBuilder.dashboardModal.buttons.closeButton": {
   "en": "Close",
@@ -288573,7 +288573,7 @@
  },
  "clientPortalBuilder.dashboardModal.descriptions.min": {
   "en": "Min",
-  "ko": "최소"
+  "ko": "분"
  },
  "clientPortalBuilder.dashboardModal.descriptions.sec": {
   "en": "Sec",
@@ -288705,7 +288705,7 @@
  },
  "clientPortalBuilder.domainSetup.customDomain.label": {
   "en": "Custom Domain",
-  "ko": "사용자 지정 도메인"
+  "ko": "커스텀 도메인"
  },
  "clientPortalBuilder.domainSetup.general.domainSetupTitle": {
   "en": "Domain Setup",
@@ -288913,11 +288913,11 @@
  },
  "clientPortalBuilder.settings.disabledChatWidget": {
   "en": "This app is not enabled in your client portal app permissions",
-  "ko": "이 앱은 고객 포털 앱 권한에서 활성화되어 있지 않습니다"
+  "ko": "이 앱은 클라이언트 포털 앱 권한에서 활성화되어 있지 않습니다"
  },
  "clientPortalBuilder.settings.discoverTitle": {
   "en": "Discover",
-  "ko": "발견"
+  "ko": "둘러보기"
  },
  "clientPortalBuilder.settings.domain.customDomain": {
   "en": "Custom Domain",
@@ -289057,11 +289057,11 @@
  },
  "contactsApp.activity.attribution.firstAttributionDetails": {
   "en": "First attribution details",
-  "ko": "첫 기여 세부 정보"
+  "ko": "첫 어트리뷰션 세부 정보"
  },
  "contactsApp.activity.attribution.firstAttributionSource": {
   "en": "First attribution source",
-  "ko": "첫 기여 소스"
+  "ko": "첫 어트리뷰션 소스"
  },
  "contactsApp.activity.attribution.gclId": {
   "en": "Google click ID",
@@ -289069,11 +289069,11 @@
  },
  "contactsApp.activity.attribution.latestAttributionDetails": {
   "en": "Latest attribution details",
-  "ko": "최신 기여 세부정보"
+  "ko": "최신 어트리뷰션 세부 정보"
  },
  "contactsApp.activity.attribution.latestAttributionSource": {
   "en": "Latest attribution source",
-  "ko": "최신 기여 소스"
+  "ko": "최신 어트리뷰션 소스"
  },
  "contactsApp.activity.attribution.referrer": {
   "en": "Referrer",
@@ -289225,7 +289225,7 @@
  },
  "contactsApp.activity.timeline.activitiesDescription": {
   "en": "Page visits, form submissions, appointments, calls, and more will appear here. Engage now to start tracking!",
-  "ko": "페이지 방문, 폼 제출, 예약, 통화 등이 여기에 표시됩니다. 지금 참여를 시작하세요!"
+  "ko": "페이지 방문, 폼 제출, 예약, 통화 등이 여기에 표시됩니다. 지금 소통을 시작해 활동을 추적해 보세요!"
  },
  "contactsApp.activity.timeline.groups.today": {
   "en": "Today",
@@ -289253,11 +289253,11 @@
  },
  "contactsApp.additionalEmail.duplicateNotAllowed": {
   "en": "This location does not allow duplicate contacts.",
-  "ko": "이 로케이션은 중복 연락처를 허용하지 않습니다."
+  "ko": "이 서브 계정은 중복 연락처를 허용하지 않습니다."
  },
  "contactsApp.additionalEmail.duplicatedNotAllowed": {
   "en": "This location does not allow duplicated contacts.",
-  "ko": "이 로케이션은 중복 연락처를 허용하지 않습니다."
+  "ko": "이 서브 계정은 중복 연락처를 허용하지 않습니다."
  },
  "contactsApp.additionalEmailsError": {
   "en": "Can't add more than 10 Additional Phones",
@@ -289265,7 +289265,7 @@
  },
  "contactsApp.bulkActions.multiLineCall.label": {
   "en": "Call",
-  "ko": "통화"
+  "ko": "전화 걸기"
  },
  "contactsApp.clientPortalContacts.addCommunityGroups": {
   "en": "Add community groups",
@@ -289273,7 +289273,7 @@
  },
  "contactsApp.clientPortalContacts.addOffers": {
   "en": "Add offers",
-  "ko": "제안 추가"
+  "ko": "오퍼 추가"
  },
  "contactsApp.clientPortalContacts.changePassword": {
   "en": "Change password",
@@ -289389,7 +289389,7 @@
  },
  "contactsApp.clientPortalContacts.offerTypeOffer": {
   "en": "Offer",
-  "ko": "제안"
+  "ko": "오퍼"
  },
  "contactsApp.clientPortalContacts.passwordFieldRequired": {
   "en": "The password field is required",
@@ -289513,7 +289513,7 @@
  },
  "contactsApp.common.allUsersFutureAccessInfo": {
   "en": "Any future users added to this location will automatically have access to the smart list",
-  "ko": "이후 이 위치에 추가되는 모든 사용자는 자동으로 스마트 리스트에 접근할 수 있습니다"
+  "ko": "이후 이 서브 계정에 추가되는 모든 사용자는 자동으로 스마트 리스트에 접근할 수 있습니다"
  },
  "contactsApp.common.and": {
   "en": "AND",
@@ -289689,7 +289689,7 @@
  },
  "contactsApp.common.dndEnabled": {
   "en": "DND is enabled for this contact. Please disable DND for this contact to make a call",
-  "ko": "이 연락처에 대해 DND가 활성화되어 있습니다. 전화를 걸려면 이 연락처의 DND를 비활성화하세요"
+  "ko": "이 연락처는 방해 금지(DND)가 켜져 있습니다. 전화를 걸려면 이 연락처의 방해 금지를 해제하세요"
  },
  "contactsApp.common.doNotReloadThisWindowWhileExportIsInProgress": {
   "en": "Do not reload this window or leave this page while export is in progress",
@@ -289801,7 +289801,7 @@
  },
  "contactsApp.common.lonelyMsg": {
   "en": "It's so lonely in here!",
-  "ko": "여기는 너무 외로워요!"
+  "ko": "여기는 아직 텅 비어 있습니다!"
  },
  "contactsApp.common.manageFields": {
   "en": "Manage fields",
@@ -289845,7 +289845,7 @@
  },
  "contactsApp.common.noResultFound": {
   "en": "Your search “{search}” did not match any results. Please try again",
-  "ko": "검색 \"{search}\"와 일치하는 결과가 없습니다. 다시 시도해 주세요"
+  "ko": "검색어 \"{search}\"와 일치하는 결과가 없습니다. 다시 시도해 주세요"
  },
  "contactsApp.common.noResultsFound": {
   "en": "No results found",
@@ -290257,7 +290257,7 @@
  },
  "contactsApp.common.undoUnSave": {
   "en": "Undo unsaved",
-  "ko": "저장되지 않은 항목 실행 취소"
+  "ko": "저장하지 않은 변경사항 되돌리기"
  },
  "contactsApp.common.unsavedChanges": {
   "en": "Unsaved changes",
@@ -290357,7 +290357,7 @@
  },
  "contactsApp.filters.atLeastOneRequired": {
   "en": "* At least one {filterName} is required",
-  "ko": "* 최소 1개의 {filterName}가 필요합니다"
+  "ko": "* 최소 1개의 {filterName}이(가) 필요합니다"
  },
  "contactsApp.filters.attribution": {
   "en": "Attribution",
@@ -290765,7 +290765,7 @@
  },
  "contactsApp.filters.firstAttribution": {
   "en": "First attribution",
-  "ko": "첫 기여"
+  "ko": "첫 어트리뷰션"
  },
  "contactsApp.filters.firstName": {
   "en": "First name",
@@ -290913,11 +290913,11 @@
  },
  "contactsApp.filters.lessThan": {
   "en": "Less than",
-  "ko": "보다 작음"
+  "ko": "미만"
  },
  "contactsApp.filters.lesserThan": {
   "en": "Lesser than",
-  "ko": "보다 작음"
+  "ko": "미만"
  },
  "contactsApp.filters.lost": {
   "en": "Lost",
@@ -290961,11 +290961,11 @@
  },
  "contactsApp.filters.offer": {
   "en": "Offer",
-  "ko": "제안"
+  "ko": "오퍼"
  },
  "contactsApp.filters.onDate": {
   "en": "On date",
-  "ko": "날짜에"
+  "ko": "해당 날짜"
  },
  "contactsApp.filters.open": {
   "en": "Open",
@@ -290973,7 +290973,7 @@
  },
  "contactsApp.filters.operators.after": {
   "en": "After",
-  "ko": "횟수"
+  "ko": "이후"
  },
  "contactsApp.filters.operators.afterDate": {
   "en": "After date",
@@ -291005,7 +291005,7 @@
  },
  "contactsApp.filters.operators.beforeDate": {
   "en": "Before date",
-  "ko": "이전 날짜"
+  "ko": "날짜 이전"
  },
  "contactsApp.filters.operators.between": {
   "en": "Between",
@@ -291041,7 +291041,7 @@
  },
  "contactsApp.filters.operators.doesNotContainAny": {
   "en": "Does not contain any",
-  "ko": "아무것도 포함하지 않음"
+  "ko": "다음 중 어느 것도 포함하지 않음"
  },
  "contactsApp.filters.operators.enabled": {
   "en": "Enabled",
@@ -291061,7 +291061,7 @@
  },
  "contactsApp.filters.operators.firstAttribution": {
   "en": "First attribution",
-  "ko": "첫 기여"
+  "ko": "첫 어트리뷰션"
  },
  "contactsApp.filters.operators.fromNow": {
   "en": "From now",
@@ -291081,7 +291081,7 @@
  },
  "contactsApp.filters.operators.hoursAgo": {
   "en": "Hours ago",
-  "ko": "전"
+  "ko": "시간 전"
  },
  "contactsApp.filters.operators.inAnyOf": {
   "en": "In any of",
@@ -291153,19 +291153,19 @@
  },
  "contactsApp.filters.operators.later": {
   "en": "Later",
-  "ko": "나중에"
+  "ko": "후"
  },
  "contactsApp.filters.operators.lessThan": {
   "en": "Less than",
-  "ko": "보다 작음"
+  "ko": "미만"
  },
  "contactsApp.filters.operators.lessThanOrEqualTo": {
   "en": "Less than or equal to",
-  "ko": "작거나 같음"
+  "ko": "이하"
  },
  "contactsApp.filters.operators.lesserThan": {
   "en": "Lesser Than",
-  "ko": "보다 작음"
+  "ko": "미만"
  },
  "contactsApp.filters.operators.march": {
   "en": "March",
@@ -291181,7 +291181,7 @@
  },
  "contactsApp.filters.operators.minutesAgo": {
   "en": "Minutes ago",
-  "ko": "몇 분 전"
+  "ko": "분 전"
  },
  "contactsApp.filters.operators.months": {
   "en": "Months",
@@ -291217,7 +291217,7 @@
  },
  "contactsApp.filters.operators.onDate": {
   "en": "On Date",
-  "ko": "날짜에"
+  "ko": "해당 날짜"
  },
  "contactsApp.filters.operators.range": {
   "en": "Range",
@@ -291265,7 +291265,7 @@
  },
  "contactsApp.filters.operators.weeksAgo": {
   "en": "Weeks ago",
-  "ko": "전"
+  "ko": "주 전"
  },
  "contactsApp.filters.operators.years": {
   "en": "Years",
@@ -291449,7 +291449,7 @@
  },
  "contactsApp.filters.streetName": {
   "en": "Street address",
-  "ko": "상세 주소"
+  "ko": "도로명 주소"
  },
  "contactsApp.filters.tag": {
   "en": "Tag",
@@ -291593,7 +291593,7 @@
  },
  "contactsApp.listView.aiCampaign.schedule": {
   "en": "Schedule",
-  "ko": "일정"
+  "ko": "예약 발송"
  },
  "contactsApp.listView.aiCampaign.segment30": {
   "en": "Last 30 days",
@@ -291705,7 +291705,7 @@
  },
  "contactsApp.listView.columns.address1": {
   "en": "Street address",
-  "ko": "상세 주소"
+  "ko": "도로명 주소"
  },
  "contactsApp.listView.columns.assignedTo": {
   "en": "Owner",
@@ -291741,7 +291741,7 @@
  },
  "contactsApp.listView.columns.dateUpdated": {
   "en": "Updated ({timezone})",
-  "ko": "업데이트됨 ({timezone})"
+  "ko": "수정일 ({timezone})"
  },
  "contactsApp.listView.columns.dnd": {
   "en": "DND",
@@ -291793,7 +291793,7 @@
  },
  "contactsApp.listView.columns.opportunities": {
   "en": "Opportunities",
-  "ko": "기회 관리"
+  "ko": "기회"
  },
  "contactsApp.listView.columns.phone": {
   "en": "Phone",
@@ -291869,7 +291869,7 @@
  },
  "contactsApp.listView.dndChannels.call": {
   "en": "Phone",
-  "ko": "전화번호"
+  "ko": "전화"
  },
  "contactsApp.listView.dndChannels.email": {
   "en": "Email",
@@ -291877,7 +291877,7 @@
  },
  "contactsApp.listView.dndChannels.phone": {
   "en": "Phone",
-  "ko": "전화번호"
+  "ko": "전화"
  },
  "contactsApp.listView.dndChannels.whatsapp": {
   "en": "WhatsApp",
@@ -291965,7 +291965,7 @@
  },
  "contactsApp.manageSmartLists.cannotDeleteSharedList": {
   "en": "Remove all shares before deleting",
-  "ko": "삭제하기 전에 모든 공유 제거"
+  "ko": "삭제하려면 먼저 모든 공유를 해제하세요"
  },
  "contactsApp.manageSmartLists.cannotEditGlobalList": {
   "en": "Only admins can edit global lists",
@@ -292005,7 +292005,7 @@
  },
  "contactsApp.manageSmartLists.clearSortToReorder": {
   "en": "Clear sorting to reorder",
-  "ko": "정렬 초기화하여 재정렬"
+  "ko": "순서를 변경하려면 정렬을 해제하세요"
  },
  "contactsApp.manageSmartLists.copySmartListTitle": {
   "en": "Copy smart list \"{name}\"",
@@ -292065,7 +292065,7 @@
  },
  "contactsApp.manageSmartLists.noResultFound": {
   "en": "Your search \"{search}\" did not match any results. Please try again",
-  "ko": "검색 \"{search}\"와 일치하는 결과가 없습니다. 다시 시도해 주세요"
+  "ko": "검색어 \"{search}\"와 일치하는 결과가 없습니다. 다시 시도해 주세요"
  },
  "contactsApp.manageSmartLists.noSmartListsFound": {
   "en": "No smart lists found",
@@ -292113,11 +292113,11 @@
  },
  "contactsApp.manageSmartLists.tableAriaLabel": {
   "en": "Manage smart lists table",
-  "ko": "스마트 리스트 테이블 관리"
+  "ko": "스마트 리스트 관리 테이블"
  },
  "contactsApp.manageSmartLists.tabs.yourSmartLists": {
   "en": "Your smart lists",
-  "ko": "스마트 리스트"
+  "ko": "내 스마트 리스트"
  },
  "contactsApp.manageSmartLists.useDifferentName": {
   "en": "Please use a different name",
@@ -292309,7 +292309,7 @@
  },
  "contactsApp.smartListPreferences.rowHeight.comfortable": {
   "en": "Comfortable",
-  "ko": "넓게"
+  "ko": "보통"
  },
  "contactsApp.smartListPreferences.rowHeight.compact": {
   "en": "Compact",
@@ -292317,7 +292317,7 @@
  },
  "contactsApp.smartListPreferences.rowHeight.spacious": {
   "en": "Spacious",
-  "ko": "넓은"
+  "ko": "넓게"
  },
  "contactsApp.smartListPreferences.rowHeightLabel": {
   "en": "Row height",
@@ -292377,7 +292377,7 @@
  },
  "conversations.calls": {
   "en": "Calls",
-  "ko": "전화"
+  "ko": "통화"
  },
  "conversations.cancel": {
   "en": "Cancel",
@@ -292433,7 +292433,7 @@
  },
  "crmCommon.appointments.bookUpdateAppointment": {
   "en": "Book/Update Appointment",
-  "ko": "약속 예약/수정"
+  "ko": "예약 생성/수정"
  },
  "crmCommon.appointments.opportunityDetails": {
   "en": "Opportunity details",
@@ -292493,7 +292493,7 @@
  },
  "crmCommon.associations.associated": {
   "en": "associated",
-  "ko": "연관됨"
+  "ko": "연결됨"
  },
  "crmCommon.associations.associatedObject": {
   "en": "Associated object",
@@ -292501,7 +292501,7 @@
  },
  "crmCommon.associations.associatedObjectTooltip": {
   "en": "Associate {object} to {objects}",
-  "ko": "{object}를 {objects}에 연결"
+  "ko": "{object}을(를) {objects}에 연결"
  },
  "crmCommon.associations.associatedObjects": {
   "en": "Associated objects",
@@ -292513,11 +292513,11 @@
  },
  "crmCommon.associations.associationLimitReached": {
   "en": "Association limit reached. This object already has the maximum number of records associated.",
-  "ko": "연결 제한에 도달했습니다. 이 개체에는 이미 최대 개수의 레코드가 연결되어 있습니다."
+  "ko": "연결 제한에 도달했습니다. 이 객체에는 이미 최대 개수의 레코드가 연결되어 있습니다."
  },
  "crmCommon.associations.associations": {
   "en": "Associations",
-  "ko": "연관"
+  "ko": "연결"
  },
  "crmCommon.associations.cannotDeselect": {
   "en": "This option cannot be deselected while records are associated. Remove records first.",
@@ -292589,7 +292589,7 @@
  },
  "crmCommon.associations.maxAllowed": {
   "en": "Max {maxCount} {objectLabel} allowed in one go. To add more {objectLabelLowercased}, complete this action and repeat the process.",
-  "ko": "한 번에 최대 {maxCount}개의 {objectLabel}이 허용됩니다. {objectLabelLowercased}를 더 추가하려면 이 작업을 완료한 후 다시 진행하세요."
+  "ko": "한 번에 최대 {maxCount}개의 {objectLabel}이(가) 허용됩니다. {objectLabelLowercased}을(를) 더 추가하려면 이 작업을 완료한 후 다시 진행하세요."
  },
  "crmCommon.associations.noAssociationFound": {
   "en": "No association found",
@@ -292765,7 +292765,7 @@
  },
  "crmCommon.common.addNotePlaceholder": {
   "en": "Add a note",
-  "ko": "노트 추가"
+  "ko": "메모 추가"
  },
  "crmCommon.common.addSmartlist": {
   "en": "Add smart list",
@@ -292797,7 +292797,7 @@
  },
  "crmCommon.common.allUsersFutureAccessInfo": {
   "en": "Any future users added to this location will automatically have access to the smart list",
-  "ko": "이후 이 위치에 추가되는 모든 사용자는 자동으로 스마트 리스트에 접근할 수 있습니다"
+  "ko": "이후 이 서브 계정에 추가되는 모든 사용자는 자동으로 스마트 리스트에 접근할 수 있습니다"
  },
  "crmCommon.common.apply": {
   "en": "Apply",
@@ -292813,7 +292813,7 @@
  },
  "crmCommon.common.associated": {
   "en": "associated",
-  "ko": "연관됨"
+  "ko": "연결됨"
  },
  "crmCommon.common.associated2": {
   "en": "Associated",
@@ -292825,7 +292825,7 @@
  },
  "crmCommon.common.associations": {
   "en": "Associations",
-  "ko": "연관"
+  "ko": "연결"
  },
  "crmCommon.common.bulkActions": {
   "en": "Bulk actions",
@@ -292941,7 +292941,7 @@
  },
  "crmCommon.common.customObject2": {
   "en": "Custom objects",
-  "ko": "사용자 지정 개체"
+  "ko": "커스텀 오브젝트"
  },
  "crmCommon.common.customiseList": {
   "en": "Customize list",
@@ -292989,7 +292989,7 @@
  },
  "crmCommon.common.discard": {
   "en": "Discard",
-  "ko": "삭제"
+  "ko": "변경 취소"
  },
  "crmCommon.common.discardChanges": {
   "en": "Discard changes",
@@ -292997,7 +292997,7 @@
  },
  "crmCommon.common.dndEnabled": {
   "en": "DND is enabled for this contact. Please disable DND for this contact to make a call",
-  "ko": "이 연락처에 대해 DND가 활성화되어 있습니다. 전화를 걸려면 이 연락처의 DND를 비활성화하세요"
+  "ko": "이 연락처는 방해 금지(DND)가 켜져 있습니다. 전화를 걸려면 이 연락처의 방해 금지를 해제하세요"
  },
  "crmCommon.common.doNotReloadThisWindowWhileExportIsInProgress": {
   "en": "Do not reload this window or leave this page while export is in progress",
@@ -293101,7 +293101,7 @@
  },
  "crmCommon.common.lonelyMsg": {
   "en": "It's so lonely in here!",
-  "ko": "여기는 너무 외로워요!"
+  "ko": "아직 아무것도 없습니다!"
  },
  "crmCommon.common.manageFields": {
   "en": "Manage fields",
@@ -293137,7 +293137,7 @@
  },
  "crmCommon.common.noDataMsg": {
   "en": "No {name} in sight! Ready to create a fresh one?",
-  "ko": "{name}이(가) 보이지 않네요! 새로 만들 준비가 되셨나요?"
+  "ko": "{name}이(가) 없습니다. 새로 만드시겠습니까?"
  },
  "crmCommon.common.noResultsFound": {
   "en": "No results found",
@@ -293161,7 +293161,7 @@
  },
  "crmCommon.common.paginationPrefix": {
   "en": "Total is {itemCount}.",
-  "ko": "총계는 {itemCount}건입니다."
+  "ko": "총 {itemCount}건"
  },
  "crmCommon.common.permissionDenied": {
   "en": "Permission Denied",
@@ -293497,7 +293497,7 @@
  },
  "crmCommon.common.updatedText": {
   "en": "Update the customized cards for all the pipelines in this location",
-  "ko": "이 위치의 모든 파이프라인에 커스텀 카드 업데이트"
+  "ko": "이 서브 계정의 모든 파이프라인에 커스텀 카드 업데이트"
  },
  "crmCommon.common.view": {
   "en": "View",
@@ -293517,7 +293517,7 @@
  },
  "crmCommon.commonComponents.addRecordAssociationDisabledTooltip": {
   "en": "Limit reached. you can associate up to {limit} records per object",
-  "ko": "한도에 도달했습니다. 오브젝트당 최대 {limit}개의 레코드를 연결할 수 있습니다"
+  "ko": "한도에 도달했습니다. 객체당 최대 {limit}개의 레코드를 연결할 수 있습니다"
  },
  "crmCommon.commonComponents.clickToViewDetail": {
   "en": "Click to view detail",
@@ -293537,7 +293537,7 @@
  },
  "crmCommon.deleteContactOpportunities.label": {
   "en": "Opportunities",
-  "ko": "기회 관리"
+  "ko": "기회"
  },
  "crmCommon.deleteContactOpportunities.labelSingular": {
   "en": "Opportunity",
@@ -293609,7 +293609,7 @@
  },
  "crmCommon.filters.invalid": {
   "en": "Invalid",
-  "ko": "무효"
+  "ko": "유효하지 않음"
  },
  "crmCommon.filters.max": {
   "en": "Max",
@@ -293641,7 +293641,7 @@
  },
  "crmCommon.filters.operators.beforeDate": {
   "en": "Before date",
-  "ko": "이전 날짜"
+  "ko": "날짜 이전"
  },
  "crmCommon.filters.operators.between": {
   "en": "Between",
@@ -293681,7 +293681,7 @@
  },
  "crmCommon.filters.operators.fromNow": {
   "en": "From now",
-  "ko": "지금부터"
+  "ko": "후"
  },
  "crmCommon.filters.operators.greaterThan": {
   "en": "Greater than",
@@ -293713,7 +293713,7 @@
  },
  "crmCommon.filters.operators.inTheNext": {
   "en": "In the next",
-  "ko": "다음"
+  "ko": "향후"
  },
  "crmCommon.filters.operators.isAnyOf": {
   "en": "Is any of",
@@ -293745,11 +293745,11 @@
  },
  "crmCommon.filters.operators.lessThan": {
   "en": "Less than",
-  "ko": "보다 작음"
+  "ko": "미만"
  },
  "crmCommon.filters.operators.lessThanOrEqualTo": {
   "en": "Less than or equal to",
-  "ko": "작거나 같음"
+  "ko": "이하"
  },
  "crmCommon.filters.operators.march": {
   "en": "March",
@@ -293789,7 +293789,7 @@
  },
  "crmCommon.filters.operators.overdue": {
   "en": "Overdue",
-  "ko": "연체"
+  "ko": "기한 초과"
  },
  "crmCommon.filters.operators.september": {
   "en": "September",
@@ -293961,7 +293961,7 @@
  },
  "crmCommon.notes.common.addInternalNote": {
   "en": "Add internal note",
-  "ko": "내부 노트 추가"
+  "ko": "내부 메모 추가"
  },
  "crmCommon.notes.common.addNote": {
   "en": "Add note",
@@ -293997,7 +293997,7 @@
  },
  "crmCommon.notes.common.discard": {
   "en": "Discard",
-  "ko": "삭제"
+  "ko": "변경 취소"
  },
  "crmCommon.notes.common.edit": {
   "en": "Edit",
@@ -294077,15 +294077,15 @@
  },
  "crmCommon.notes.contactRequired": {
   "en": "Please select a {contact}",
-  "ko": "{contact}를 선택해 주세요"
+  "ko": "{contact}을(를) 선택해 주세요"
  },
  "crmCommon.notes.couldNotFindNotes": {
   "en": "Could not find any notes. Please try again.",
-  "ko": "노트를 찾을 수 없습니다. 다시 시도해 주세요."
+  "ko": "메모를 찾을 수 없습니다. 다시 시도해 주세요."
  },
  "crmCommon.notes.createError": {
   "en": "Failed to create the note \"{noteTitle}\"",
-  "ko": "노트 \"{noteTitle}\"을 생성하지 못했습니다"
+  "ko": "메모 \"{noteTitle}\"을 생성하지 못했습니다"
  },
  "crmCommon.notes.createSuccess": {
   "en": "Successfully created the note \"{noteTitle}\"",
@@ -294097,35 +294097,35 @@
  },
  "crmCommon.notes.deleteNoteConfirm": {
   "en": "Delete note",
-  "ko": "노트 삭제"
+  "ko": "메모 삭제"
  },
  "crmCommon.notes.deleteNoteDesc": {
   "en": "Are you sure you want to delete this note?",
-  "ko": "이 노트를 삭제하시겠습니까?"
+  "ko": "이 메모를 삭제하시겠습니까?"
  },
  "crmCommon.notes.deleteNoteFailed": {
   "en": "Failed to delete note \"{noteName}\"",
-  "ko": "노트 \"{noteName}\"을 삭제하지 못했습니다"
+  "ko": "메모 \"{noteName}\"을 삭제하지 못했습니다"
  },
  "crmCommon.notes.deleteNoteSuccess": {
   "en": "Note \"{noteName}\" deleted successfully",
-  "ko": "\"{noteName}\" 노트가 성공적으로 삭제되었습니다"
+  "ko": "\"{noteName}\" 메모가 성공적으로 삭제되었습니다"
  },
  "crmCommon.notes.deleteNoteTitle": {
   "en": "Delete note {noteName}?",
-  "ko": "{noteName} 노트를 삭제하시겠습니까?"
+  "ko": "{noteName} 메모를 삭제하시겠습니까?"
  },
  "crmCommon.notes.deletedNotesCanBeRestored": {
   "en": "Deleted notes can be restored within {months} months",
-  "ko": "삭제된 노트는 {months}개월 이내에 복원할 수 있습니다"
+  "ko": "삭제된 메모는 {months}개월 이내에 복원할 수 있습니다"
  },
  "crmCommon.notes.descriptionRequired": {
   "en": "Please input the note description",
-  "ko": "노트 설명을 입력하세요"
+  "ko": "메모 설명을 입력하세요"
  },
  "crmCommon.notes.failedToFetchNotes": {
   "en": "Failed to fetch notes",
-  "ko": "노트를 가져오지 못했습니다"
+  "ko": "메모를 가져오지 못했습니다"
  },
  "crmCommon.notes.failedToFetchNotesDesc": {
   "en": "There was an error while fetching notes. Please refresh or try again in some time.",
@@ -294137,7 +294137,7 @@
  },
  "crmCommon.notes.filterDoesNotMatch": {
   "en": "Your filter does not match any notes. Please clear the filters or create a new note",
-  "ko": "필터와 일치하는 노트가 없습니다. 필터를 지우거나 새 노트를 생성해 주세요"
+  "ko": "필터와 일치하는 메모가 없습니다. 필터를 지우거나 새 메모를 생성해 주세요"
  },
  "crmCommon.notes.filters": {
   "en": "filters",
@@ -294161,7 +294161,7 @@
  },
  "crmCommon.notes.noteLengthExceeded": {
   "en": "Note description should be less than {length} characters",
-  "ko": "노트 설명은 {length}자를 넘을 수 없습니다"
+  "ko": "메모 설명은 {length}자를 넘을 수 없습니다"
  },
  "crmCommon.notes.noteTitleLabel": {
   "en": "Title",
@@ -294177,7 +294177,7 @@
  },
  "crmCommon.notes.searchDoesNotMatch": {
   "en": "Your {message} does not match any notes. Please use a different search string or create a new note",
-  "ko": "검색 {message}와 일치하는 노트가 없습니다. 다른 검색어를 사용하거나 새 노트를 생성해 주세요"
+  "ko": "검색 {message}와 일치하는 메모가 없습니다. 다른 검색어를 사용하거나 새 메모를 생성해 주세요"
  },
  "crmCommon.notes.selectContact": {
   "en": "Select {contact}",
@@ -294193,7 +294193,7 @@
  },
  "crmCommon.notes.updateError": {
   "en": "Failed to update the note \"{noteTitle}\"",
-  "ko": "\"{noteTitle}\" 노트 업데이트에 실패했습니다"
+  "ko": "\"{noteTitle}\" 메모 업데이트에 실패했습니다"
  },
  "crmCommon.notes.updateNoteHeader": {
   "en": "Update note",
@@ -294201,7 +294201,7 @@
  },
  "crmCommon.notes.updateSuccess": {
   "en": "Successfully updated the note \"{noteTitle}\"",
-  "ko": "\"{noteTitle}\" 노트가 성공적으로 업데이트되었습니다"
+  "ko": "\"{noteTitle}\" 메모가 성공적으로 업데이트되었습니다"
  },
  "crmCommon.opportunities.abandonedStatus": {
   "en": "Abandoned",
@@ -294265,7 +294265,7 @@
  },
  "crmCommon.opportunities.leads": {
   "en": "Opportunities",
-  "ko": "기회 관리"
+  "ko": "기회"
  },
  "crmCommon.opportunities.lostReason": {
   "en": "Lost reason",
@@ -294297,7 +294297,7 @@
  },
  "crmCommon.opportunities.opportunityValue": {
   "en": "Value",
-  "ko": "값"
+  "ko": "금액"
  },
  "crmCommon.opportunities.pipeline": {
   "en": "Pipeline",
@@ -294409,7 +294409,7 @@
  },
  "crmCommon.relations.maxAllowed": {
   "en": "Max {maxCount} {objectLabel} allowed in one go. To add more {objectLabelLowercased}, complete this action and repeat the process.",
-  "ko": "한 번에 최대 {maxCount}개의 {objectLabel}이 허용됩니다. {objectLabelLowercased}를 더 추가하려면 이 작업을 완료한 후 다시 진행하세요."
+  "ko": "한 번에 최대 {maxCount}개의 {objectLabel}이(가) 허용됩니다. {objectLabelLowercased}을(를) 더 추가하려면 이 작업을 완료한 후 다시 진행하세요."
  },
  "crmCommon.relations.noAssociationFound": {
   "en": "No association found",
@@ -294473,7 +294473,7 @@
  },
  "crmCommon.relations.successfullyRemoved": {
   "en": "Successfully removed",
-  "ko": "성공적으로 삭제되었습니다"
+  "ko": "성공적으로 제거되었습니다"
  },
  "crmCommon.relations.updateRelationFailed": {
   "en": "Failed to update the relations",
@@ -294793,7 +294793,7 @@
  },
  "crmCommon.tasks.contactRequired": {
   "en": "Please select a {contact}",
-  "ko": "{contact}를 선택해 주세요"
+  "ko": "{contact}을(를) 선택해 주세요"
  },
  "crmCommon.tasks.copyStatusesFrom": {
   "en": "Copy statuses from",
@@ -294817,7 +294817,7 @@
  },
  "crmCommon.tasks.createTaskIfOverdue": {
   "en": "Create a new task even if previous task is overdue",
-  "ko": "이전 작업이 연체되어도 새 작업 생성"
+  "ko": "이전 작업의 기한이 지나도 새 작업 생성"
  },
  "crmCommon.tasks.customFields": {
   "en": "Custom Fields",
@@ -294829,7 +294829,7 @@
  },
  "crmCommon.tasks.dateFilter.end": {
   "en": "End",
-  "ko": "통화 종료"
+  "ko": "종료"
  },
  "crmCommon.tasks.dateFilter.start": {
   "en": "Start",
@@ -294853,15 +294853,15 @@
  },
  "crmCommon.tasks.deleteRecurringTaskFailed": {
   "en": "Failed to delete recurring task {taskName}",
-  "ko": "반복 작업 {taskName}을 삭제하지 못했습니다"
+  "ko": "반복 작업 {taskName}을(를) 삭제하지 못했습니다"
  },
  "crmCommon.tasks.deleteRecurringTaskSuccess": {
   "en": "Recurring task {taskName} deleted successfully",
-  "ko": "반복 작업 {taskName}이 성공적으로 삭제되었습니다"
+  "ko": "반복 작업 {taskName}이(가) 성공적으로 삭제되었습니다"
  },
  "crmCommon.tasks.deleteRecurringTaskTitle": {
   "en": "Delete recurring task {taskName}?",
-  "ko": "반복 작업 {taskName}을 삭제하시겠습니까?"
+  "ko": "반복 작업 {taskName}을(를) 삭제하시겠습니까?"
  },
  "crmCommon.tasks.deleteTaskAndAllRecurring": {
   "en": "This task and all future tasks",
@@ -295049,7 +295049,7 @@
  },
  "crmCommon.tasks.detail.title": {
   "en": "Task details",
-  "ko": "태스크 상세"
+  "ko": "작업 상세"
  },
  "crmCommon.tasks.detail.titlePlaceholder": {
   "en": "Task name",
@@ -295069,7 +295069,7 @@
  },
  "crmCommon.tasks.dueDate": {
   "en": "Due date",
-  "ko": "만료일"
+  "ko": "마감일"
  },
  "crmCommon.tasks.dueDateTimeInFuture": {
   "en": "Due date and time should be in the future",
@@ -295217,7 +295217,7 @@
  },
  "crmCommon.tasks.noSearchResult": {
   "en": "did not match any tasks. Please try again.",
-  "ko": "일치하는 태스크가 없습니다. 다시 시도해 주세요."
+  "ko": "일치하는 작업이 없습니다. 다시 시도해 주세요."
  },
  "crmCommon.tasks.noTasksAvailable": {
   "en": "No tasks found",
@@ -295237,7 +295237,7 @@
  },
  "crmCommon.tasks.privacy": {
   "en": "Privacy",
-  "ko": "개인정보 보호"
+  "ko": "공개 범위"
  },
  "crmCommon.tasks.privatizeAccessLossWarning": {
   "en": "Making this private removes inherited access. These users will lose access unless you add them above: {users}",
@@ -295293,7 +295293,7 @@
  },
  "crmCommon.tasks.recurringTaskWithFailedRelations": {
   "en": "Task created with {relationErroredCount} failed relations",
-  "ko": "{relationErroredCount}개의 관계 실패와 함께 작업이 생성되었습니다"
+  "ko": "작업이 생성되었지만 {relationErroredCount}개의 관계를 연결하지 못했습니다"
  },
  "crmCommon.tasks.removeDesc": {
   "en": "Remove description",
@@ -295401,7 +295401,7 @@
  },
  "crmCommon.tasks.smartlist.viewType": {
   "en": "View type",
-  "ko": "유형 보기"
+  "ko": "보기 유형"
  },
  "crmCommon.tasks.sortBy": {
   "en": "Sort by",
@@ -295489,7 +295489,7 @@
  },
  "crmCommon.tasks.topBar.viewSettings": {
   "en": "View settings",
-  "ko": "설정 보기"
+  "ko": "보기 설정"
  },
  "crmCommon.tasks.totalCountMany": {
   "en": "{count} Tasks",
@@ -295537,7 +295537,7 @@
  },
  "crmCommon.tasks.yourSearch": {
   "en": "Your search",
-  "ko": "검색"
+  "ko": "검색어와"
  },
  "crmObjectsSettingsApp.config.fieldServiceImport.category": {
   "en": "Category",
@@ -295557,7 +295557,7 @@
  },
  "crmObjectsSettingsApp.config.fieldServiceImport.recordTypes.variant": {
   "en": "Variant",
-  "ko": "배리언트"
+  "ko": "변형"
  },
  "crmObjectsSettingsApp.config.fieldServiceImport.result": {
   "en": "Result",
@@ -295565,7 +295565,7 @@
  },
  "crmObjectsSettingsApp.config.fieldServiceImport.results.created": {
   "en": "Created",
-  "ko": "생성일"
+  "ko": "생성됨"
  },
  "crmObjectsSettingsApp.config.fieldServiceImport.results.error": {
   "en": "Error",
@@ -295573,7 +295573,7 @@
  },
  "crmObjectsSettingsApp.config.fieldServiceImport.results.updated": {
   "en": "Updated",
-  "ko": "수정일"
+  "ko": "업데이트됨"
  },
  "crmObjectsSettingsApp.config.fieldServiceImport.results.warning": {
   "en": "Warning",
@@ -295633,7 +295633,7 @@
  },
  "crmObjectsSettingsApp.customFields.formula.categoryConversion": {
   "en": "Conversion",
-  "ko": "전환"
+  "ko": "변환"
  },
  "crmObjectsSettingsApp.customFields.formula.categoryString": {
   "en": "String",
@@ -295969,7 +295969,7 @@
  },
  "formSurveyApp.list.quizList.formTable.emptyStateTitleNoSearchList": {
   "en": "No items found",
-  "ko": "아직 항목이 없습니다"
+  "ko": "항목을 찾을 수 없습니다"
  },
  "formSurveyApp.list.quizList.formTable.lastUpdated": {
   "en": "Last updated",
@@ -296001,11 +296001,11 @@
  },
  "formSurveyApp.list.quizList.shareFormModal.locationLabel": {
   "en": "Location",
-  "ko": "위치"
+  "ko": "서브 계정"
  },
  "formSurveyApp.list.quizList.shareFormModal.message": {
   "en": "Please select a location",
-  "ko": "위치를 선택해 주세요"
+  "ko": "서브 계정을 선택해 주세요"
  },
  "formSurveyApp.list.surveysList.deleteModal.titleFolder": {
   "en": "Delete folder",
@@ -296025,7 +296025,7 @@
  },
  "formSurveyApp.list.surveysList.surveyTable.emptyStateTitleNoSearchList": {
   "en": "No items found",
-  "ko": "아직 항목이 없습니다"
+  "ko": "항목을 찾을 수 없습니다"
  },
  "formSurveyApp.list.surveysList.surveyTable.rename": {
   "en": "Rename",
@@ -296041,7 +296041,7 @@
  },
  "formSurveyApp.settings.save.discard": {
   "en": "Discard",
-  "ko": "삭제"
+  "ko": "변경 취소"
  },
  "formSurveyApp.settings.save.saveChanges": {
   "en": "Save changes",
@@ -296133,7 +296133,7 @@
  },
  "funnelWebsiteApp.common.deleteActionCannotBeUndone": {
   "en": "This action cannot be undone.",
-  "ko": "이 작업은 취소할 수 없습니다."
+  "ko": "이 작업은 되돌릴 수 없습니다."
  },
  "ghlEmailBuilderCommon.ABTesting.durations.twelveHours": {
   "en": "12 hours",
@@ -296261,7 +296261,7 @@
  },
  "ghlEmailBuilderCommon.campaignSchedule.notAvailableInAllMonths": {
   "en": "not available in all months",
-  "ko": "모든 월에 사용할 수 없음"
+  "ko": "일부 월에는 없는 날짜"
  },
  "ghlEmailBuilderCommon.campaignSchedule.period": {
   "en": "Period",
@@ -296269,7 +296269,7 @@
  },
  "ghlEmailBuilderCommon.campaignSchedule.preferenceType": {
   "en": "Preference type",
-  "ko": "환경설정 유형"
+  "ko": "수신 설정 유형"
  },
  "ghlEmailBuilderCommon.campaignSchedule.preferenceTypeHelperText": {
   "en": "Categorize this campaign to give subscribers more control. They can unsubscribe from specific categories without stopping all communication.",
@@ -296281,7 +296281,7 @@
  },
  "ghlEmailBuilderCommon.campaignSchedule.repeatAfterSentenceCase": {
   "en": "Repeat after",
-  "ko": "다음 이후 반복"
+  "ko": "반복 간격"
  },
  "ghlEmailBuilderCommon.campaignSchedule.resendDays": {
   "en": "Days",
@@ -296297,7 +296297,7 @@
  },
  "ghlEmailBuilderCommon.campaignSchedule.scheduleAction": {
   "en": "Schedule",
-  "ko": "일정"
+  "ko": "예약 발송"
  },
  "ghlEmailBuilderCommon.campaignSchedule.searchTags": {
   "en": "Search Tags",
@@ -296333,11 +296333,11 @@
  },
  "ghlEmailBuilderCommon.chatBot.dictation.permissionDenied": {
   "en": "Microphone access is blocked. Enable mic permission in your browser to use dictation.",
-  "ko": "마이크 접근이 차단되었습니다. 딕테이션을 사용하려면 브라우저에서 마이크 권한을 활성화해 주세요."
+  "ko": "마이크 접근이 차단되었습니다. 음성 입력을 사용하려면 브라우저에서 마이크 권한을 활성화해 주세요."
  },
  "ghlEmailBuilderCommon.chatBot.dictation.tooLarge": {
   "en": "Recording is too long",
-  "ko": "녹화가 너무 깁니다"
+  "ko": "녹음이 너무 깁니다"
  },
  "ghlEmailBuilderCommon.chatBot.feedbackModal.didNotFollow": {
   "en": "Did not fully follow instructions",
@@ -296517,7 +296517,7 @@
  },
  "ghlEmailBuilderCommon.common.selectLocation": {
   "en": "Select a location",
-  "ko": "위치 선택"
+  "ko": "서브 계정 선택"
  },
  "ghlEmailBuilderCommon.common.sendTestEmailNormalCase": {
   "en": "Send test email",
@@ -296645,7 +296645,7 @@
  },
  "ghlEmailBuilderCommon.customVariables.fullName": {
   "en": "Full Name",
-  "ko": "이름"
+  "ko": "전체 이름"
  },
  "ghlEmailBuilderCommon.customVariables.hasDiscount": {
   "en": "Has Discount",
@@ -296669,7 +296669,7 @@
  },
  "ghlEmailBuilderCommon.customVariables.locationName": {
   "en": "Location Name",
-  "ko": "위치 이름"
+  "ko": "서브 계정 이름"
  },
  "ghlEmailBuilderCommon.customVariables.minute": {
   "en": "Minute",
@@ -296677,7 +296677,7 @@
  },
  "ghlEmailBuilderCommon.customVariables.month": {
   "en": "Month",
-  "ko": "개월"
+  "ko": "월"
  },
  "ghlEmailBuilderCommon.customVariables.name": {
   "en": "Name",
@@ -296705,7 +296705,7 @@
  },
  "ghlEmailBuilderCommon.customVariables.preferenceManagement": {
   "en": "Preference Management",
-  "ko": "환경설정 관리"
+  "ko": "수신 설정 관리"
  },
  "ghlEmailBuilderCommon.customVariables.price": {
   "en": "Price",
@@ -296757,7 +296757,7 @@
  },
  "ghlEmailBuilderCommon.customVariables.subscriptionId": {
   "en": "Subscription Id",
-  "ko": "구독 Id"
+  "ko": "구독 ID"
  },
  "ghlEmailBuilderCommon.customVariables.subscriptionStatus": {
   "en": "Subscription Status",
@@ -296769,7 +296769,7 @@
  },
  "ghlEmailBuilderCommon.customVariables.timeAccessDays": {
   "en": "Time Access Days",
-  "ko": "시간 접근 일수"
+  "ko": "접근 가능 일수"
  },
  "ghlEmailBuilderCommon.customVariables.timezone": {
   "en": "Timezone",
@@ -296869,7 +296869,7 @@
  },
  "ghlEmailBuilderCommon.emailBuilder.assist.brandKit": {
   "en": "Design Kit",
-  "ko": "디자인 킷"
+  "ko": "디자인 키트"
  },
  "ghlEmailBuilderCommon.emailBuilder.assist.brandVoiceLabel": {
   "en": "Brand Voice",
@@ -296877,7 +296877,7 @@
  },
  "ghlEmailBuilderCommon.emailBuilder.assist.businessNiche": {
   "en": "Business Niche",
-  "ko": "비즈니스 니치"
+  "ko": "업종"
  },
  "ghlEmailBuilderCommon.emailBuilder.assist.createNewDesignKit": {
   "en": "Create new design kit",
@@ -296953,7 +296953,7 @@
  },
  "ghlEmailBuilderCommon.emailBuilder.borderRadiusMd": {
   "en": "Medium",
-  "ko": "보통"
+  "ko": "중간"
  },
  "ghlEmailBuilderCommon.emailBuilder.brandColors": {
   "en": "Brand Colors",
@@ -296985,7 +296985,7 @@
  },
  "ghlEmailBuilderCommon.emailBuilder.contain": {
   "en": "Contain",
-  "ko": "포함"
+  "ko": "맞추기"
  },
  "ghlEmailBuilderCommon.emailBuilder.content": {
   "en": "Content",
@@ -297001,7 +297001,7 @@
  },
  "ghlEmailBuilderCommon.emailBuilder.cover": {
   "en": "Cover",
-  "ko": "커버"
+  "ko": "채우기"
  },
  "ghlEmailBuilderCommon.emailBuilder.customValues": {
   "en": "Custom Values",
@@ -297085,7 +297085,7 @@
  },
  "ghlEmailBuilderCommon.emailBuilder.margin": {
   "en": "Margin",
-  "ko": "마진"
+  "ko": "바깥 여백"
  },
  "ghlEmailBuilderCommon.emailBuilder.moveDown": {
   "en": "Move down",
@@ -297117,7 +297117,7 @@
  },
  "ghlEmailBuilderCommon.emailBuilder.previewInfo.from": {
   "en": "From:",
-  "ko": "변경 전:"
+  "ko": "보낸 사람:"
  },
  "ghlEmailBuilderCommon.emailBuilder.priceName": {
   "en": "Price name",
@@ -297149,7 +297149,7 @@
  },
  "ghlEmailBuilderCommon.emailBuilder.shadowLg": {
   "en": "Large",
-  "ko": "길게"
+  "ko": "크게"
  },
  "ghlEmailBuilderCommon.emailBuilder.shadowSm": {
   "en": "Small",
@@ -297173,7 +297173,7 @@
  },
  "ghlEmailBuilderCommon.emailBuilder.tags.offer": {
   "en": "Offer",
-  "ko": "제안"
+  "ko": "혜택"
  },
  "ghlEmailBuilderCommon.emailBuilder.tags.tone": {
   "en": "Tone",
@@ -297245,7 +297245,7 @@
  },
  "ghlEmailBuilderCommon.emailCampaign.abTestTable.variation": {
   "en": "Variation",
-  "ko": "배리에이션"
+  "ko": "변형"
  },
  "ghlEmailBuilderCommon.emailCampaign.action": {
   "en": "Action",
@@ -297353,7 +297353,7 @@
  },
  "ghlEmailBuilderCommon.emailCampaign.noOfClicks": {
   "en": "Clicks",
-  "ko": "클릭"
+  "ko": "클릭 수"
  },
  "ghlEmailBuilderCommon.emailCampaign.opened": {
   "en": "Opened",
@@ -297385,7 +297385,7 @@
  },
  "ghlEmailBuilderCommon.emailCampaign.recipients": {
   "en": "Recipients",
-  "ko": "수신자들"
+  "ko": "수신자"
  },
  "ghlEmailBuilderCommon.emailCampaign.revenue": {
   "en": "Revenue",
@@ -297441,7 +297441,7 @@
  },
  "ghlEmailBuilderCommon.emailCampaign.variation": {
   "en": "Variation",
-  "ko": "배리에이션"
+  "ko": "변형"
  },
  "ghlEmailBuilderCommon.emailHome.categories.templates": {
   "en": "Templates",
@@ -297457,7 +297457,7 @@
  },
  "ghlEmailBuilderCommon.emailSequence.after": {
   "en": "After",
-  "ko": "횟수"
+  "ko": "이후"
  },
  "ghlEmailBuilderCommon.emailSequence.ai.composerPlaceholder": {
   "en": "Plan, build, modify anything...",
@@ -297477,7 +297477,7 @@
  },
  "ghlEmailBuilderCommon.emailSequence.ai.intakePrevious": {
   "en": "Previous question",
-  "ko": "이전 문제"
+  "ko": "이전 질문"
  },
  "ghlEmailBuilderCommon.emailSequence.batchQuantityLabel": {
   "en": "Batch quantity",
@@ -297553,7 +297553,7 @@
  },
  "ghlEmailBuilderCommon.emailSequence.selectPreferenceTypeLabel": {
   "en": "Select preference type (optional)",
-  "ko": "환경설정 유형 선택(선택 사항)"
+  "ko": "수신 설정 유형 선택(선택 사항)"
  },
  "ghlEmailBuilderCommon.emailSequence.senderEmailLabel": {
   "en": "Sender email",
@@ -297577,7 +297577,7 @@
  },
  "ghlEmailBuilderCommon.emailSequence.statusDraft": {
   "en": "Draft",
-  "ko": "임시 저장"
+  "ko": "초안"
  },
  "ghlEmailBuilderCommon.emailTemplate.access": {
   "en": "Access",
@@ -297649,7 +297649,7 @@
  },
  "ghlEmailBuilderCommon.snippetSelect.noResultsFoundHeading": {
   "en": "No Results Found",
-  "ko": "발견된 결과가 없습니다"
+  "ko": "결과를 찾을 수 없습니다"
  },
  "ghlEmailBuilderCommon.tableCrud.selectAll": {
   "en": "Select all",
@@ -297681,11 +297681,11 @@
  },
  "integrationsApp.platformDebug.locationLabel": {
   "en": "Location ID",
-  "ko": "위치 ID"
+  "ko": "서브 계정 ID"
  },
  "integrationsApp.platformDebug.locationRequired": {
   "en": "Location ID is required",
-  "ko": "사업장 ID가 필요합니다"
+  "ko": "서브 계정 ID가 필요합니다"
  },
  "integrationsApp.platformDebug.metaLatency": {
   "en": "Latency",
@@ -297761,7 +297761,7 @@
  },
  "locationsApp.addSubAccount.businessNiche": {
   "en": "Business Niche",
-  "ko": "비즈니스 니치"
+  "ko": "업종"
  },
  "locationsApp.addSubAccount.businessPhone": {
   "en": "Business Phone",
@@ -297797,7 +297797,7 @@
  },
  "locationsApp.calls": {
   "en": "Calls",
-  "ko": "전화"
+  "ko": "통화"
  },
  "locationsApp.close": {
   "en": "Close",
@@ -298013,7 +298013,7 @@
  },
  "locationsApp.manageSubAccount.deleteSubAccount.confirmationText": {
   "en": "Type {text} to confirm",
-  "ko": "확인하려면 {text}를 입력하세요"
+  "ko": "확인하려면 {text}을(를) 입력하세요"
  },
  "locationsApp.manageSubAccount.deleteSubAccount.integrationConfirmation.2": {
   "en": "I confirm that I have disconnected all the integrations like twilio, mailgun, gmb, domains, facebook, zoom etc.",
@@ -298021,7 +298021,7 @@
  },
  "locationsApp.manageSubAccount.deleteSubAccount.scheduleForDeletion.changeMind": {
   "en": "You can change your mind before this time.",
-  "ko": "이 시간 이전에 마음을 바꾸실 수 있습니다."
+  "ko": "이 시간 전까지는 삭제를 취소할 수 있습니다."
  },
  "locationsApp.manageSubAccount.deleteSubAccount.scheduleForDeletion.description": {
   "en": "This sub-account has been scheduled for deletion. It will be deleted by",
@@ -298037,7 +298037,7 @@
  },
  "locationsApp.manageSubAccount.disableSaaS.confirmationText": {
   "en": "Confirm by typing {text} below",
-  "ko": "아래에 {text}를 입력하여 확인하세요"
+  "ko": "아래에 {text}을(를) 입력하여 확인하세요"
  },
  "locationsApp.manageSubAccount.loadSnapshot.back": {
   "en": "Back",
@@ -298105,7 +298105,7 @@
  },
  "locationsApp.manageSubAccount.rebilling.settings.useSameTwilio": {
   "en": "This is my Twilio, use same",
-  "ko": "이것은 나의 Twilio입니다, 동일하게 사용"
+  "ko": "내 Twilio 계정입니다. 같은 계정 사용"
  },
  "locationsApp.manageSubAccount.saas.onHold": {
   "en": "On Hold",
@@ -298125,7 +298125,7 @@
  },
  "locationsApp.manageSubAccount.streetAddress": {
   "en": "Street Address",
-  "ko": "상세 주소"
+  "ko": "도로명 주소"
  },
  "locationsApp.manageSubAccount.tabs.advancedSettings": {
   "en": "Advanced Settings",
@@ -298149,11 +298149,11 @@
  },
  "locationsApp.manageSubAccount.transferSubAccount.confirmTransferDescription2": {
   "en": "Please confirm details before transferring",
-  "ko": "전송하기 전에 세부사항을 확인하세요"
+  "ko": "이전하기 전에 세부사항을 확인하세요"
  },
  "locationsApp.manageSubAccount.transferSubAccount.transferExisting": {
   "en": "Transfer to an Existing Account",
-  "ko": "기존 계정으로 전송"
+  "ko": "기존 계정으로 이전"
  },
  "locationsApp.manageSubAccount.wallet.calendarSettings.calendarSettings": {
   "en": "Calendar Settings",
@@ -298165,7 +298165,7 @@
  },
  "locationsApp.manageSubAccount.wallet.credits_debited_description": {
   "en": "Credits removed by agency",
-  "ko": "에이전시에서 크레딧 제거됨"
+  "ko": "에이전시에서 크레딧 차감됨"
  },
  "locationsApp.manageSubAccount.wallet.enterAmount": {
   "en": "Enter Amount",
@@ -298237,7 +298237,7 @@
  },
  "locationsApp.saasProducts.opportunities": {
   "en": "Opportunities",
-  "ko": "기회 관리"
+  "ko": "기회"
  },
  "locationsApp.saasProducts.quizzes": {
   "en": "Quizzes",
@@ -298301,7 +298301,7 @@
  },
  "opportunitiesApp.appointments.associatedListings": {
   "en": "Associated listings",
-  "ko": "연결된 목록"
+  "ko": "연결된 리스팅"
  },
  "opportunitiesApp.appointments.associatedServices": {
   "en": "Associated services",
@@ -298345,11 +298345,11 @@
  },
  "opportunitiesApp.appointments.deleteAppointmentMessage": {
   "en": "Are you sure you want to delete this appointment? This action cannot be undone!",
-  "ko": "이 예약을 삭제하시겠습니까? 이 작업은 취소할 수 없습니다!"
+  "ko": "이 예약을 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다!"
  },
  "opportunitiesApp.appointments.deleteRentalMessage": {
   "en": "This appointment was booked with the listing(s) listed below. Deleting it will delete all associated appointments linked to these listings. This action is irreversible.",
-  "ko": "이 예약은 아래 등록 정보로 예약되었습니다. 삭제하면 이 등록 정보에 연결된 모든 관련 예약이 삭제됩니다. 이 작업은 되돌릴 수 없습니다."
+  "ko": "이 예약은 아래 리스팅으로 예약되었습니다. 삭제하면 이 리스팅에 연결된 모든 관련 예약이 삭제됩니다. 이 작업은 되돌릴 수 없습니다."
  },
  "opportunitiesApp.appointments.deleteServiceMessage": {
   "en": "This appointment was booked with the service(s) listed below. Deleting it will delete all associated appointments linked to these services. This action is irreversible.",
@@ -298397,7 +298397,7 @@
  },
  "opportunitiesApp.appointments.noAppointmentsDescription": {
   "en": "It looks like you don't have any appointments scheduled. Would you like to set one up?",
-  "ko": "예약된 약속이 없는 것 같습니다. 지금 설정하시겠습니까?"
+  "ko": "예약된 일정이 없습니다. 지금 예약을 추가하시겠습니까?"
  },
  "opportunitiesApp.appointments.noUpcomingAppointments": {
   "en": "No upcoming appointments",
@@ -298453,7 +298453,7 @@
  },
  "opportunitiesApp.association.value": {
   "en": "Value",
-  "ko": "값"
+  "ko": "금액"
  },
  "opportunitiesApp.associations.addTagTitle": {
   "en": "Add",
@@ -298461,7 +298461,7 @@
  },
  "opportunitiesApp.associations.associatedObjectTooltip": {
   "en": "Associate {object} to {objects}",
-  "ko": "{object}를 {objects}에 연결"
+  "ko": "{object}을(를) {objects}에 연결"
  },
  "opportunitiesApp.associations.associatedObjects": {
   "en": "Associated objects",
@@ -298473,7 +298473,7 @@
  },
  "opportunitiesApp.associations.associationLimitReached": {
   "en": "Association limit reached. This object already has the maximum number of records associated.",
-  "ko": "연결 제한에 도달했습니다. 이 개체에는 이미 최대 개수의 레코드가 연결되어 있습니다."
+  "ko": "연결 제한에 도달했습니다. 이 객체에는 이미 최대 개수의 레코드가 연결되어 있습니다."
  },
  "opportunitiesApp.associations.cannotDeselect": {
   "en": "This option cannot be deselected while records are associated. Remove records first.",
@@ -298545,7 +298545,7 @@
  },
  "opportunitiesApp.calendar.thePreConfiguredMeetingLocation": {
   "en": "Consider leaving it blank, should you choose to use the pre-configured Meeting Location",
-  "ko": "사전 구성된 미팅 장소를 사용하려면 공란으로 두는 것을 고려하세요"
+  "ko": "사전 설정된 미팅 장소를 사용하려면 비워 두세요"
  },
  "opportunitiesApp.canonical.attribution.fetch_error": {
   "en": "Error occurred while fetching the data",
@@ -298557,7 +298557,7 @@
  },
  "opportunitiesApp.canonical.common.failed_find_location": {
   "en": "Failed to find the location",
-  "ko": "위치를 찾지 못했습니다"
+  "ko": "서브 계정을 찾지 못했습니다"
  },
  "opportunitiesApp.canonical.common.id_undefined": {
   "en": "id can't be undefined",
@@ -298597,15 +298597,15 @@
  },
  "opportunitiesApp.canonical.lost_reason.create_duplicate": {
   "en": "Could not create new lost reason: duplicate lost Reason",
-  "ko": "새 실패 이유를 생성할 수 없습니다: 중복된 실패 이유"
+  "ko": "새 실패 사유를 생성할 수 없습니다: 중복된 실패 사유"
  },
  "opportunitiesApp.canonical.lost_reason.create_failed": {
   "en": "Could not create new lost reason",
-  "ko": "새 실패 이유를 생성할 수 없습니다"
+  "ko": "새 실패 사유를 생성할 수 없습니다"
  },
  "opportunitiesApp.canonical.lost_reason.delete_failed": {
   "en": "Could not delete lost reason",
-  "ko": "실패 이유를 삭제할 수 없습니다"
+  "ko": "실패 사유를 삭제할 수 없습니다"
  },
  "opportunitiesApp.canonical.lost_reason.deleted_or_duplicate": {
   "en": "Lost reason ID already deleted or duplicate entry exists",
@@ -298621,7 +298621,7 @@
  },
  "opportunitiesApp.canonical.lost_reason.invalid_id": {
   "en": "Invalid lost reason ID",
-  "ko": "잘못된 실패 이유 ID입니다"
+  "ko": "잘못된 실패 사유 ID입니다"
  },
  "opportunitiesApp.canonical.lost_reason.not_found": {
   "en": "Lost reason not found",
@@ -298721,7 +298721,7 @@
  },
  "opportunitiesApp.canonical.opportunity.no_owner_permission": {
   "en": "Can not make this user {userId} owner as User does not have permission to access this pipeline {pipelineId}.",
-  "ko": "사용자 {userId}는 파이프라인 {pipelineId}에 접근할 권한이 없으므로 소유자로 지정할 수 없습니다."
+  "ko": "사용자 {userId}은(는) 파이프라인 {pipelineId}에 접근할 권한이 없으므로 소유자로 지정할 수 없습니다."
  },
  "opportunitiesApp.canonical.opportunity.no_restore_permission": {
   "en": "Do not have permission to restore this opportunity",
@@ -298729,7 +298729,7 @@
  },
  "opportunitiesApp.canonical.opportunity.no_update_permission_pipeline": {
   "en": "Can not update opportunity as {role} {users} do not have permission to access the pipeline {pipelineId}.",
-  "ko": "{role} {users}가 파이프라인 {pipelineId}에 접근할 권한이 없으므로 기회를 업데이트할 수 없습니다."
+  "ko": "{role} {users}이(가) 파이프라인 {pipelineId}에 접근할 권한이 없으므로 기회를 업데이트할 수 없습니다."
  },
  "opportunitiesApp.canonical.opportunity.not_deleted": {
   "en": "This opportunity is not deleted",
@@ -298753,7 +298753,7 @@
  },
  "opportunitiesApp.canonical.opportunity.pipeline_different_location": {
   "en": "pipeline is from different location than contact",
-  "ko": "파이프라인이 연락처와 다른 위치에 있습니다"
+  "ko": "파이프라인이 연락처와 다른 서브 계정에 속해 있습니다"
  },
  "opportunitiesApp.canonical.opportunity.pipeline_invalid": {
   "en": "The pipeline id is invalid.",
@@ -298801,7 +298801,7 @@
  },
  "opportunitiesApp.canonical.pipeline.anchor_not_found": {
   "en": "Anchor pipeline not found",
-  "ko": "앵커 파이프라인을 찾을 수 없습니다"
+  "ko": "기준 파이프라인을 찾을 수 없습니다"
  },
  "opportunitiesApp.canonical.pipeline.cannot_delete_all_stages": {
   "en": "You cannot delete all stages from a pipeline.",
@@ -298901,11 +298901,11 @@
  },
  "opportunitiesApp.canonical.smart_filter.duplicate_in_batch": {
   "en": "Duplicate filter name \"{name}\" in batch for location {locationId}, pipeline {pipelineId}, and filter type {filterType}",
-  "ko": "위치 {locationId}, 파이프라인 {pipelineId}, 필터 유형 {filterType}에 대한 배치에서 필터 이름 \"{name}\"이 중복되었습니다"
+  "ko": "서브 계정 {locationId}, 파이프라인 {pipelineId}, 필터 유형 {filterType}에 대한 배치에서 필터 이름 \"{name}\"이 중복되었습니다"
  },
  "opportunitiesApp.canonical.smart_filter.duplicate_name_in_location": {
   "en": "A {filterTypeLabel} named \"{name}\" already exists{pipelineInfo}.",
-  "ko": "\"{name}\"이라는 이름의 {filterTypeLabel}이 이미 존재합니다{pipelineInfo}."
+  "ko": "\"{name}\"이라는 이름의 {filterTypeLabel}이(가) 이미 존재합니다{pipelineInfo}."
  },
  "opportunitiesApp.canonical.smart_filter.duplicate_tag_condition": {
   "en": "A tag with the same condition already exists in \"{pipelineName}\". Try updating the color or choosing a different name.",
@@ -299069,7 +299069,7 @@
  },
  "opportunitiesApp.common.addNotePlaceholder": {
   "en": "Add a note",
-  "ko": "노트 추가"
+  "ko": "메모 추가"
  },
  "opportunitiesApp.common.addSmartlist": {
   "en": "Add smart list",
@@ -299141,7 +299141,7 @@
  },
  "opportunitiesApp.common.associated": {
   "en": "associated",
-  "ko": "연관됨"
+  "ko": "연결됨"
  },
  "opportunitiesApp.common.associated2": {
   "en": "Associated",
@@ -299153,7 +299153,7 @@
  },
  "opportunitiesApp.common.associations": {
   "en": "Associations",
-  "ko": "연관"
+  "ko": "연결"
  },
  "opportunitiesApp.common.author": {
   "en": "Author",
@@ -299361,7 +299361,7 @@
  },
  "opportunitiesApp.common.defaultViewInfoHint": {
   "en": "This only controls where the view appears. Filters, fields, and sorting stay the same.",
-  "ko": "이는 뷰가 표시되는 위치만 제어합니다. 필터, 필드, 정렬은 그대로 유지됩니다."
+  "ko": "이 설정은 보기가 표시되는 위치만 제어합니다. 필터, 필드, 정렬은 그대로 유지됩니다."
  },
  "opportunitiesApp.common.defaultViewNotInShowIn": {
   "en": "This view is not available in {count} selected pipeline(s). It will be added when you confirm.",
@@ -299369,7 +299369,7 @@
  },
  "opportunitiesApp.common.defaultViewRemovedWarning": {
   "en": "This view will be removed as default from {count} pipeline(s) when you confirm.",
-  "ko": "확인하면 이 보기가 파이프라인 {count}개에서 기본값에서 해제됩니다."
+  "ko": "확인하면 파이프라인 {count}개에서 이 보기의 기본 설정이 해제됩니다."
  },
  "opportunitiesApp.common.defaultViewReplaceWarning": {
   "en": "This will replace the existing default view in {count} pipeline(s) when you confirm.",
@@ -299377,7 +299377,7 @@
  },
  "opportunitiesApp.common.defaultViewStaticInfo": {
   "en": "Users will see this view first in these pipelines. Removing it switches the pipeline back to its previous default view.",
-  "ko": "사용자는 이 파이프라인에서 이 뷰를 먼저 보게 됩니다. 제거하면 파이프라인이 이전 기본 뷰로 다시 전환됩니다."
+  "ko": "사용자는 이 파이프라인에서 이 보기를 먼저 보게 됩니다. 제거하면 파이프라인이 이전 기본 보기로 다시 전환됩니다."
  },
  "opportunitiesApp.common.delete": {
   "en": "Delete",
@@ -299405,7 +299405,7 @@
  },
  "opportunitiesApp.common.deleteWarningText": {
   "en": "This Action will delete this {opportunity} from the pipeline.",
-  "ko": "이 액션은 파이프라인에서 이 {opportunity}를 삭제합니다."
+  "ko": "이 액션은 파이프라인에서 이 {opportunity}을(를) 삭제합니다."
  },
  "opportunitiesApp.common.descending": {
   "en": "Descending",
@@ -299441,7 +299441,7 @@
  },
  "opportunitiesApp.common.dueDate": {
   "en": "Due date",
-  "ko": "만료일"
+  "ko": "마감일"
  },
  "opportunitiesApp.common.duplicate": {
   "en": "Duplicate",
@@ -299553,7 +299553,7 @@
  },
  "opportunitiesApp.common.lonelyMsg": {
   "en": "It's so lonely in here!",
-  "ko": "여기는 너무 외로워요!"
+  "ko": "여기가 텅 비어 있습니다!"
  },
  "opportunitiesApp.common.manageFields": {
   "en": "Manage fields",
@@ -299609,15 +299609,15 @@
  },
  "opportunitiesApp.common.noCustomField": {
   "en": "No Custom Fields are present this this folder.",
-  "ko": "이 폴더에는 존재하는 커스텀 필드가 없습니다."
+  "ko": "이 폴더에 커스텀 필드가 없습니다."
  },
  "opportunitiesApp.common.noDataMsg": {
   "en": "No {name} in sight! Ready to create a fresh one?",
-  "ko": "{name}이(가) 보이지 않네요! 새로 만들 준비가 되셨나요?"
+  "ko": "{name}이(가) 없습니다. 새로 만들어 보시겠습니까?"
  },
  "opportunitiesApp.common.noOpportunitiesFound": {
   "en": "No results found",
-  "ko": "검색 결과가 없습니다"
+  "ko": "결과가 없습니다"
  },
  "opportunitiesApp.common.noSmartViewsCreated": {
   "en": "No smart views have been created yet.",
@@ -299633,7 +299633,7 @@
  },
  "opportunitiesApp.common.opportunitiesCapital": {
   "en": "Opportunities",
-  "ko": "기회 관리"
+  "ko": "기회"
  },
  "opportunitiesApp.common.opportunityLabel": {
   "en": "opportunity",
@@ -299781,7 +299781,7 @@
  },
  "opportunitiesApp.common.searchViews": {
   "en": "Search views",
-  "ko": "뷰 검색"
+  "ko": "보기 검색"
  },
  "opportunitiesApp.common.select": {
   "en": "Select",
@@ -299805,7 +299805,7 @@
  },
  "opportunitiesApp.common.selectOne": {
   "en": "Select one",
-  "ko": "하나만 선택"
+  "ko": "선택하세요"
  },
  "opportunitiesApp.common.selectTime": {
   "en": "Select time",
@@ -299825,7 +299825,7 @@
  },
  "opportunitiesApp.common.setAsDefaultIn": {
   "en": "Set as default in",
-  "ko": "기본값으로 설정 위치"
+  "ko": "기본 보기로 설정할 파이프라인"
  },
  "opportunitiesApp.common.setAsDefaultInPipelines": {
   "en": "Set as default in pipelines",
@@ -299841,7 +299841,7 @@
  },
  "opportunitiesApp.common.shareWith": {
   "en": "Share \"{ name }\" with",
-  "ko": "\"{ name }\"을(를) 공유"
+  "ko": "\"{ name }\" 공유 대상"
  },
  "opportunitiesApp.common.shareWithAllUsers": {
   "en": "Share with all users",
@@ -299881,7 +299881,7 @@
  },
  "opportunitiesApp.common.showInInfoText": {
   "en": "This only controls where the view appears. Filters, fields, and sorting stay the same.",
-  "ko": "이는 뷰가 표시되는 위치만 제어합니다. 필터, 필드, 정렬은 그대로 유지됩니다."
+  "ko": "이 설정은 보기가 표시되는 위치만 제어합니다. 필터, 필드, 정렬은 그대로 유지됩니다."
  },
  "opportunitiesApp.common.showInRemovedWarning": {
   "en": "This view will be removed from {count} pipeline(s) when you confirm.",
@@ -299993,7 +299993,7 @@
  },
  "opportunitiesApp.common.updatedText": {
   "en": "Update the customized cards for all the pipelines in this location",
-  "ko": "이 위치의 모든 파이프라인에 커스텀 카드 업데이트"
+  "ko": "이 서브 계정의 모든 파이프라인에 커스텀 카드 업데이트"
  },
  "opportunitiesApp.common.value": {
   "en": "Value",
@@ -300013,7 +300013,7 @@
  },
  "opportunitiesApp.common.viewName": {
   "en": "View name",
-  "ko": "뷰 이름"
+  "ko": "보기 이름"
  },
  "opportunitiesApp.common.viewSmartList": {
   "en": "View smart list",
@@ -300181,7 +300181,7 @@
  },
  "opportunitiesApp.datePickerByUnit.weekAhead": {
   "en": "Week ahead",
-  "ko": "다가오는 주"
+  "ko": "1주 후"
  },
  "opportunitiesApp.datePickerByUnit.weekFromNow": {
   "en": "Week from now",
@@ -300193,11 +300193,11 @@
  },
  "opportunitiesApp.datePickerByUnit.weeksAgo": {
   "en": "Weeks ago",
-  "ko": "전"
+  "ko": "주 전"
  },
  "opportunitiesApp.datePickerByUnit.weeksAhead": {
   "en": "Weeks ahead",
-  "ko": "후"
+  "ko": "주 후"
  },
  "opportunitiesApp.datePickerByUnit.weeksFromNow": {
   "en": "Weeks from now",
@@ -300337,7 +300337,7 @@
  },
  "opportunitiesApp.editOpportunity.opportunityFields.opportunityValue": {
   "en": "Value",
-  "ko": "값"
+  "ko": "금액"
  },
  "opportunitiesApp.editOpportunity.opportunityFields.pipeline": {
   "en": "Pipeline",
@@ -300425,7 +300425,7 @@
  },
  "opportunitiesApp.filters.operators.doesNotContainAny": {
   "en": "Does not contain any",
-  "ko": "아무것도 포함하지 않음"
+  "ko": "다음 중 어느 것도 포함하지 않음"
  },
  "opportunitiesApp.filters.operators.doesNotEqual": {
   "en": "Does not equal",
@@ -300509,7 +300509,7 @@
  },
  "opportunitiesApp.filters.values.beforeDate": {
   "en": "Before date",
-  "ko": "이전 날짜"
+  "ko": "날짜 이전"
  },
  "opportunitiesApp.filters.values.between": {
   "en": "Between",
@@ -300633,7 +300633,7 @@
  },
  "opportunitiesApp.notes.common.createAndAddAnother": {
   "en": "Save and add another",
-  "ko": "저장 후 추가"
+  "ko": "저장 후 하나 더 추가"
  },
  "opportunitiesApp.notes.common.createdBy": {
   "en": "Created by: {userName}",
@@ -300817,7 +300817,7 @@
  },
  "opportunitiesApp.opportunities.abandonedLabel": {
   "en": "abandoned",
-  "ko": "포기"
+  "ko": "중단됨"
  },
  "opportunitiesApp.opportunities.abandonedStatus": {
   "en": "Abandoned",
@@ -301053,7 +301053,7 @@
  },
  "opportunitiesApp.opportunities.conditionalRules.summary.moreSeparator": {
   "en": "+{count} more",
-  "ko": "+{count}개 더 보기"
+  "ko": "+{count}개 더"
  },
  "opportunitiesApp.opportunities.conditionalRules.summary.noOutcomes": {
   "en": "No outcomes",
@@ -301085,7 +301085,7 @@
  },
  "opportunitiesApp.opportunities.conditionalRules.summary.operators.notEq": {
   "en": "is not",
-  "ko": "~이 아니다"
+  "ko": "다음이 아님"
  },
  "opportunitiesApp.opportunities.conditionalRules.summary.operators.notExists": {
   "en": "is empty",
@@ -301113,7 +301113,7 @@
  },
  "opportunitiesApp.opportunities.conditionalRules.summary.tailMore": {
   "en": "+{count} more",
-  "ko": "+{count}개 더 보기"
+  "ko": "+{count}개 더"
  },
  "opportunitiesApp.opportunities.conditionalRules.summary.untitledRule": {
   "en": "Untitled rule",
@@ -301261,11 +301261,11 @@
  },
  "opportunitiesApp.opportunities.duplicateToBoard": {
   "en": "Duplicate as board view",
-  "ko": "보드 뷰로 복제"
+  "ko": "보드 보기로 복제"
  },
  "opportunitiesApp.opportunities.duplicateToList": {
   "en": "Duplicate as list view",
-  "ko": "리스트 뷰로 복제"
+  "ko": "목록 보기로 복제"
  },
  "opportunitiesApp.opportunities.editOpportunity": {
   "en": "Edit opportunity",
@@ -301313,7 +301313,7 @@
  },
  "opportunitiesApp.opportunities.expandStage": {
   "en": "Expand stage",
-  "ko": "단계 확장"
+  "ko": "단계 펼치기"
  },
  "opportunitiesApp.opportunities.export": {
   "en": "Export",
@@ -301325,7 +301325,7 @@
  },
  "opportunitiesApp.opportunities.failedToAddTag": {
   "en": "Failed to add tag {tag}",
-  "ko": "태그 {tag}를 추가하지 못했습니다"
+  "ko": "태그 {tag}을(를) 추가하지 못했습니다"
  },
  "opportunitiesApp.opportunities.failedToAddTags": {
   "en": "Failed to add tags",
@@ -301465,7 +301465,7 @@
  },
  "opportunitiesApp.opportunities.forecastDashboard.activeOpportunities": {
   "en": "Open opportunities",
-  "ko": "열린 기회"
+  "ko": "진행 중인 기회"
  },
  "opportunitiesApp.opportunities.forecastDashboard.activeOpportunitiesSubtext": {
   "en": "Opportunities currently in progress",
@@ -301477,7 +301477,7 @@
  },
  "opportunitiesApp.opportunities.forecastDashboard.amount": {
   "en": "Value",
-  "ko": "값"
+  "ko": "금액"
  },
  "opportunitiesApp.opportunities.forecastDashboard.and": {
   "en": "and",
@@ -301505,11 +301505,11 @@
  },
  "opportunitiesApp.opportunities.forecastDashboard.closeDate": {
   "en": "Expected close date",
-  "ko": "예상 종료일"
+  "ko": "예상 마감일"
  },
  "opportunitiesApp.opportunities.forecastDashboard.closedWon": {
   "en": "Won revenue",
-  "ko": "승리 수익"
+  "ko": "성사된 매출"
  },
  "opportunitiesApp.opportunities.forecastDashboard.closedWonSubtext": {
   "en": "Total value of won opportunities",
@@ -301557,7 +301557,7 @@
  },
  "opportunitiesApp.opportunities.forecastDashboard.minSlippageCount": {
   "en": "Times pushed",
-  "ko": "푸시된 횟수"
+  "ko": "연기된 횟수"
  },
  "opportunitiesApp.opportunities.forecastDashboard.minSlippageCountPlaceholder": {
   "en": "e.g., 2 or more times",
@@ -301565,15 +301565,15 @@
  },
  "opportunitiesApp.opportunities.forecastDashboard.missingAmount": {
   "en": "Missing opportunity value",
-  "ko": "기회 값이 누락되었습니다"
+  "ko": "기회 금액이 없습니다"
  },
  "opportunitiesApp.opportunities.forecastDashboard.missingAmountDesc": {
   "en": "These opportunities contribute $0 to totals.",
-  "ko": "이 기회들은 합계에 $0을 기여합니다."
+  "ko": "이 기회들은 합계에 $0으로 반영됩니다."
  },
  "opportunitiesApp.opportunities.forecastDashboard.missingCloseDate": {
   "en": "Missing close date",
-  "ko": "종료일이 없습니다"
+  "ko": "마감일이 없습니다"
  },
  "opportunitiesApp.opportunities.forecastDashboard.missingCloseDateDesc": {
   "en": "Not included in forecast calculations.",
@@ -301581,11 +301581,11 @@
  },
  "opportunitiesApp.opportunities.forecastDashboard.newClose": {
   "en": "New close",
-  "ko": "새 클로즈"
+  "ko": "새 마감일"
  },
  "opportunitiesApp.opportunities.forecastDashboard.newCloseDate": {
   "en": "New close date",
-  "ko": "새 클로즈 날짜"
+  "ko": "새 마감일"
  },
  "opportunitiesApp.opportunities.forecastDashboard.next": {
   "en": "Next",
@@ -301605,11 +301605,11 @@
  },
  "opportunitiesApp.opportunities.forecastDashboard.noSlippageData": {
   "en": "No slippage this period",
-  "ko": "이번 기간 동안 슬리피지가 없습니다"
+  "ko": "이번 기간에 지연된 기회가 없습니다"
  },
  "opportunitiesApp.opportunities.forecastDashboard.opportunities": {
   "en": "Opportunities",
-  "ko": "기회 관리"
+  "ko": "기회"
  },
  "opportunitiesApp.opportunities.forecastDashboard.opportunitiesCount": {
   "en": "{count} opportunities",
@@ -301713,7 +301713,7 @@
  },
  "opportunitiesApp.opportunities.forecastDashboard.slippageHigh": {
   "en": "High slippage",
-  "ko": "슬리피지 높음"
+  "ko": "지연 높음"
  },
  "opportunitiesApp.opportunities.forecastDashboard.slippageHighLabel": {
   "en": "High risk",
@@ -301725,7 +301725,7 @@
  },
  "opportunitiesApp.opportunities.forecastDashboard.slippageLow": {
   "en": "Low slippage",
-  "ko": "낮은 슬리피지"
+  "ko": "지연 낮음"
  },
  "opportunitiesApp.opportunities.forecastDashboard.slippageLowLabel": {
   "en": "Low risk",
@@ -301737,7 +301737,7 @@
  },
  "opportunitiesApp.opportunities.forecastDashboard.slippageMedium": {
   "en": "Medium slippage",
-  "ko": "중간 슬리피지"
+  "ko": "지연 중간"
  },
  "opportunitiesApp.opportunities.forecastDashboard.slippageMediumLabel": {
   "en": "Medium risk",
@@ -301793,7 +301793,7 @@
  },
  "opportunitiesApp.opportunities.forecastDashboard.timesSlipped": {
   "en": "Times slipped",
-  "ko": "슬립된 시간"
+  "ko": "지연 횟수"
  },
  "opportunitiesApp.opportunities.forecastDashboard.total": {
   "en": "Total",
@@ -301805,7 +301805,7 @@
  },
  "opportunitiesApp.opportunities.forecastDashboard.totalOpen": {
   "en": "Total open",
-  "ko": "총 미결제"
+  "ko": "진행 중 합계"
  },
  "opportunitiesApp.opportunities.forecastDashboard.totalPotentialSubtext": {
   "en": "Expected revenue + won revenue",
@@ -301829,7 +301829,7 @@
  },
  "opportunitiesApp.opportunities.forecastExpectedCloseDate": {
   "en": "Expected Close Date",
-  "ko": "예상 종료일"
+  "ko": "예상 마감일"
  },
  "opportunitiesApp.opportunities.forecastPage.apply": {
   "en": "Apply",
@@ -301893,7 +301893,7 @@
  },
  "opportunitiesApp.opportunities.forecast_expected_close_date": {
   "en": "Expected Close Date",
-  "ko": "예상 종료일"
+  "ko": "예상 마감일"
  },
  "opportunitiesApp.opportunities.forecast_probability": {
   "en": "Forecast Probability",
@@ -302069,11 +302069,11 @@
  },
  "opportunitiesApp.opportunities.manageSmartViews": {
   "en": "Manage smart views",
-  "ko": "스마트 보기 관리"
+  "ko": "스마트 뷰 관리"
  },
  "opportunitiesApp.opportunities.manageSmartViewsDesc": {
   "en": "View, customize, and manage all your saved opportunity views.",
-  "ko": "저장된 모든 기회 뷰를 보고, 커스터마이즈하고, 관리하세요."
+  "ko": "저장된 모든 기회 보기를 확인하고, 사용자 지정하고, 관리하세요."
  },
  "opportunitiesApp.opportunities.manualAddition": {
   "en": "Manual addition",
@@ -302141,7 +302141,7 @@
  },
  "opportunitiesApp.opportunities.noOpportunitiesDescription": {
   "en": "Add a {opportunity} to start tracking deals in this pipeline, or import existing data.",
-  "ko": "이 파이프라인에서 기회 추적을 시작하려면 {opportunity}를 추가하거나 기존 데이터를 가져오세요."
+  "ko": "이 파이프라인에서 기회 추적을 시작하려면 {opportunity}을(를) 추가하거나 기존 데이터를 가져오세요."
  },
  "opportunitiesApp.opportunities.noPipelineMessageButton": {
   "en": "Create New Pipeline",
@@ -302169,7 +302169,7 @@
  },
  "opportunitiesApp.opportunities.noSmartViewsDesc": {
   "en": "Create your first smart view to save custom filters, columns, and sorting for quick access.",
-  "ko": "커스텀 필터, 열, 정렬을 빠르게 사용할 수 있도록 첫 스마트 보기를 만드세요."
+  "ko": "커스텀 필터, 열, 정렬을 빠르게 사용할 수 있도록 첫 스마트 뷰를 만드세요."
  },
  "opportunitiesApp.opportunities.noStageMessage": {
   "en": "Oops! Looks like there are no stages. Create a new stage to get started!",
@@ -302257,7 +302257,7 @@
  },
  "opportunitiesApp.opportunities.opportunityValue": {
   "en": "Value",
-  "ko": "값"
+  "ko": "금액"
  },
  "opportunitiesApp.opportunities.opportunityWonOn": {
   "en": "{opportunity} won on",
@@ -302337,11 +302337,11 @@
  },
  "opportunitiesApp.opportunities.publicAppointmentAPI": {
   "en": "Public API (Appointment)",
-  "ko": "Public API (예약)"
+  "ko": "공개 API (예약)"
  },
  "opportunitiesApp.opportunities.publicContactAPI": {
   "en": "Public API (Contact)",
-  "ko": "Public API (연락처)"
+  "ko": "공개 API (연락처)"
  },
  "opportunitiesApp.opportunities.quickActionSource.conversations": {
   "en": "Conversations",
@@ -302513,7 +302513,7 @@
  },
  "opportunitiesApp.opportunities.tour.steps.associations.title": {
   "en": "Associations",
-  "ko": "연관"
+  "ko": "연결"
  },
  "opportunitiesApp.opportunities.tour.steps.conversations.title": {
   "en": "Conversations",
@@ -302553,7 +302553,7 @@
  },
  "opportunitiesApp.opportunities.updatedOnTimeZone": {
   "en": "Updated on ({timezone})",
-  "ko": "업데이트됨 ({timezone})"
+  "ko": "수정일 ({timezone})"
  },
  "opportunitiesApp.opportunities.valueOfWonOpportunities": {
   "en": "Value of won opportunities:",
@@ -302569,7 +302569,7 @@
  },
  "opportunitiesApp.opportunities.viewType": {
   "en": "View type",
-  "ko": "유형 보기"
+  "ko": "보기 유형"
  },
  "opportunitiesApp.opportunities.warningMessage": {
   "en": "Leaving this tab will discard any changes you've made. Do you want to continue?",
@@ -302581,7 +302581,7 @@
  },
  "opportunitiesApp.opportunities.weightedValue": {
   "en": "Weighted value",
-  "ko": "가중치 값"
+  "ko": "가중 금액"
  },
  "opportunitiesApp.opportunities.whiteSpaceIsNotAllowed": {
   "en": "White space is not allowed",
@@ -302685,7 +302685,7 @@
  },
  "opportunitiesApp.paymentsModal.status.draft": {
   "en": "Draft",
-  "ko": "임시 저장"
+  "ko": "초안"
  },
  "opportunitiesApp.paymentsModal.status.dueIn": {
   "en": "Due in",
@@ -302717,7 +302717,7 @@
  },
  "opportunitiesApp.paymentsModal.status.paid": {
   "en": "Paid",
-  "ko": "유료"
+  "ko": "결제 완료"
  },
  "opportunitiesApp.paymentsModal.status.partiallyPaid": {
   "en": "Partially Paid",
@@ -302733,7 +302733,7 @@
  },
  "opportunitiesApp.paymentsModal.status.paymentProcessing": {
   "en": "Payment Processing",
-  "ko": "결제 처리"
+  "ko": "결제 처리 중"
  },
  "opportunitiesApp.paymentsModal.status.pending": {
   "en": "Pending",
@@ -302773,7 +302773,7 @@
  },
  "opportunitiesApp.paymentsModal.status.trialing": {
   "en": "Trialing",
-  "ko": "트라이얼 진행 중"
+  "ko": "체험 중"
  },
  "opportunitiesApp.paymentsModal.status.unpaid": {
   "en": "Unpaid",
@@ -302909,7 +302909,7 @@
  },
  "opportunitiesApp.pipelinePage.createAPipeline": {
   "en": "Create a pipeline to manage your {objectLabelPlural}, measure progress, and close more deals efficiently.",
-  "ko": "{objectLabelPlural}을 관리하고, 진행 상황을 측정하며, 더 효율적으로 거래를 마감할 수 있는 파이프라인을 만드세요."
+  "ko": "{objectLabelPlural}을(를) 관리하고, 진행 상황을 측정하며, 더 많은 거래를 효율적으로 성사시킬 수 있는 파이프라인을 만드세요."
  },
  "opportunitiesApp.pipelinePage.createNewPipeline": {
   "en": "Create new pipeline",
@@ -302921,11 +302921,11 @@
  },
  "opportunitiesApp.pipelinePage.createPipelineDescription": {
   "en": "Create a pipeline to manage your {objectLabelPlural}, measure progress, and close more deals efficiently.",
-  "ko": "{objectLabelPlural}을 관리하고, 진행 상황을 측정하며, 더 효율적으로 거래를 마감할 수 있는 파이프라인을 만드세요."
+  "ko": "{objectLabelPlural}을(를) 관리하고, 진행 상황을 측정하며, 더 많은 거래를 효율적으로 성사시킬 수 있는 파이프라인을 만드세요."
  },
  "opportunitiesApp.pipelinePage.deletePipelineCampaigns1": {
   "en": "Stop any active campaigns and workflows",
-  "ko": "활성화된 캠페인 및 워크플로우 중지"
+  "ko": "활성 캠페인 및 워크플로우 중지"
  },
  "opportunitiesApp.pipelinePage.deletePipelineCampaigns2": {
   "en": "linked to it",
@@ -302933,7 +302933,7 @@
  },
  "opportunitiesApp.pipelinePage.deletePipelineOpportunities1": {
   "en": "Permanently remove all {objectLabelPlural} and data ",
-  "ko": "모든 {objectLabelPlural} 및 데이터를 영구적으로 삭제 "
+  "ko": "모든 {objectLabelPlural} 및 데이터 영구 삭제 "
  },
  "opportunitiesApp.pipelinePage.deletePipelineOpportunities2": {
   "en": "inside this pipeline",
@@ -303093,7 +303093,7 @@
  },
  "opportunitiesApp.pipelinePage.failedToDeletePipeline": {
   "en": "Failed to delete pipeline {name}",
-  "ko": "파이프라인 {name}을 삭제하지 못했습니다"
+  "ko": "파이프라인 {name}을(를) 삭제하지 못했습니다"
  },
  "opportunitiesApp.pipelinePage.funnelChart": {
   "en": "Funnel chart",
@@ -303121,7 +303121,7 @@
  },
  "opportunitiesApp.pipelinePage.newPipelineDescription": {
   "en": "Create a new Pipeline with stages to add {objectLabelPlural} to it.",
-  "ko": "단계를 포함한 새 파이프라인을 만들어 {objectLabelPlural}을 추가하세요."
+  "ko": "단계를 포함한 새 파이프라인을 만들어 {objectLabelPlural}을(를) 추가하세요."
  },
  "opportunitiesApp.pipelinePage.next": {
   "en": "Next",
@@ -303193,7 +303193,7 @@
  },
  "opportunitiesApp.pipelinePage.permissions.followsOpportunity": {
   "en": "follows {count}",
-  "ko": "{count}개 따름"
+  "ko": "{count}개 팔로우 중"
  },
  "opportunitiesApp.pipelinePage.permissions.linkCopied": {
   "en": "Link copied!",
@@ -303261,7 +303261,7 @@
  },
  "opportunitiesApp.pipelinePage.permissions.shareDesc1": {
   "en": "Set who can view or edit the ",
-  "ko": "누가 보거나 편집할 수 있는지 설정하세요 "
+  "ko": "다음 파이프라인을 보거나 편집할 수 있는 사용자를 설정하세요: "
  },
  "opportunitiesApp.pipelinePage.permissions.shareDesc2": {
   "en": " pipeline. Admins always have full access.",
@@ -303301,11 +303301,11 @@
  },
  "opportunitiesApp.pipelinePage.permissions.userOwnsOpportunity": {
   "en": "{name} {verb} open {objectLabel} in the pipeline. Please reassign before changing the access for this user.",
-  "ko": "{name}이(가) 파이프라인에서 {objectLabel}을(를) 열린 상태로 {verb}. 이 사용자의 액세스 권한을 변경하기 전에 재배정해 주세요."
+  "ko": "{name}이(가) 파이프라인에서 진행 중인 {objectLabel}을(를) {verb}. 이 사용자의 액세스 권한을 변경하기 전에 재배정해 주세요."
  },
  "opportunitiesApp.pipelinePage.permissions.userOwnsOpportunity1": {
   "en": "{name} {verb} open {objectLabel} in the pipeline. Please reassign before revoking the access for this user.",
-  "ko": "{name}이(가) 파이프라인에서 {objectLabel}을(를) 열린 상태로 {verb}. 이 사용자의 액세스 권한을 취소하기 전에 재배정해 주세요."
+  "ko": "{name}이(가) 파이프라인에서 진행 중인 {objectLabel}을(를) {verb}. 이 사용자의 액세스 권한을 취소하기 전에 재배정해 주세요."
  },
  "opportunitiesApp.pipelinePage.permissions.whoCanAccess": {
   "en": "Access settings",
@@ -303525,7 +303525,7 @@
  },
  "opportunitiesApp.pipelinePage.smartTags.filters.dateRanges.beforeDate": {
   "en": "Before date",
-  "ko": "이전 날짜"
+  "ko": "날짜 이전"
  },
  "opportunitiesApp.pipelinePage.smartTags.filters.dateRanges.between": {
   "en": "Between",
@@ -303633,7 +303633,7 @@
  },
  "opportunitiesApp.pipelinePage.smartTags.filters.fields.opportunityValue": {
   "en": "Value",
-  "ko": "값"
+  "ko": "금액"
  },
  "opportunitiesApp.pipelinePage.smartTags.filters.fields.owner": {
   "en": "Owner",
@@ -303757,7 +303757,7 @@
  },
  "opportunitiesApp.pipelinePage.smartTags.preBuiltTags.hotDeal.name": {
   "en": "Hot Deal",
-  "ko": "인기 거래"
+  "ko": "유망 거래"
  },
  "opportunitiesApp.pipelinePage.smartTags.preBuiltTags.newLead.description": {
   "en": "Created Date ≤ 3 days ago",
@@ -303773,7 +303773,7 @@
  },
  "opportunitiesApp.pipelinePage.smartTags.preBuiltTags.unassignedDeal.name": {
   "en": "Unassigned Deal",
-  "ko": "할당되지 않은 딜"
+  "ko": "미배정 거래"
  },
  "opportunitiesApp.pipelinePage.smartTags.save": {
   "en": "Save",
@@ -303845,7 +303845,7 @@
  },
  "opportunitiesApp.pipelinePage.smartTags.sidePanel.datePicker.end": {
   "en": "End",
-  "ko": "통화 종료"
+  "ko": "종료"
  },
  "opportunitiesApp.pipelinePage.smartTags.sidePanel.datePicker.notSet": {
   "en": "Not set",
@@ -303881,7 +303881,7 @@
  },
  "opportunitiesApp.pipelinePage.smartTags.sidePanel.discard": {
   "en": "Discard",
-  "ko": "삭제"
+  "ko": "변경 취소"
  },
  "opportunitiesApp.pipelinePage.smartTags.sidePanel.editSmartTag": {
   "en": "Edit smart tag",
@@ -304113,7 +304113,7 @@
  },
  "opportunitiesApp.pipelinePage.smartTags.unsavedChangesDiscardText": {
   "en": "Discard",
-  "ko": "삭제"
+  "ko": "변경 취소"
  },
  "opportunitiesApp.pipelinePage.smartTags.unsavedChangesTitle": {
   "en": "Unsaved changes",
@@ -304209,7 +304209,7 @@
  },
  "opportunitiesApp.pipelinePage.useOpportunityProbability": {
   "en": "Use opportunity-level probability",
-  "ko": "기회 단계별 확률 사용"
+  "ko": "기회별 확률 사용"
  },
  "opportunitiesApp.pipelinePage.useOpportunityProbabilityHelper": {
   "en": "When enabled, each opportunity uses its own probability. When disabled, probability is based on the stage.",
@@ -304361,7 +304361,7 @@
  },
  "opportunitiesApp.relations.maxAllowed": {
   "en": "Max {maxCount} {objectLabel} allowed in one go. To add more {objectLabelLowercased}, complete this action and repeat the process.",
-  "ko": "한 번에 최대 {maxCount}개의 {objectLabel}이 허용됩니다. {objectLabelLowercased}를 더 추가하려면 이 작업을 완료한 후 다시 진행하세요."
+  "ko": "한 번에 최대 {maxCount}개의 {objectLabel}이(가) 허용됩니다. {objectLabelLowercased}을(를) 더 추가하려면 이 작업을 완료한 후 다시 진행하세요."
  },
  "opportunitiesApp.relations.noAssociationFound": {
   "en": "No association found",
@@ -304545,7 +304545,7 @@
  },
  "opportunitiesApp.tasks.common.createAndAddAnother": {
   "en": "Save and add another",
-  "ko": "저장 후 추가"
+  "ko": "저장 후 하나 더 추가"
  },
  "opportunitiesApp.tasks.common.delete": {
   "en": "Delete",
@@ -304621,7 +304621,7 @@
  },
  "opportunitiesApp.tasks.createTaskIfOverdue": {
   "en": "Create a new task even if previous task is overdue",
-  "ko": "이전 작업이 연체되어도 새 작업 생성"
+  "ko": "이전 작업의 기한이 지나도 새 작업 생성"
  },
  "opportunitiesApp.tasks.dateCreated": {
   "en": "Date created",
@@ -304641,15 +304641,15 @@
  },
  "opportunitiesApp.tasks.deleteRecurringTaskFailed": {
   "en": "Failed to delete recurring task {taskName}",
-  "ko": "반복 작업 {taskName}을 삭제하지 못했습니다"
+  "ko": "반복 작업 {taskName}을(를) 삭제하지 못했습니다"
  },
  "opportunitiesApp.tasks.deleteRecurringTaskSuccess": {
   "en": "Recurring task {taskName} deleted successfully",
-  "ko": "반복 작업 {taskName}이 성공적으로 삭제되었습니다"
+  "ko": "반복 작업 {taskName}이(가) 성공적으로 삭제되었습니다"
  },
  "opportunitiesApp.tasks.deleteRecurringTaskTitle": {
   "en": "Delete recurring task {taskName}?",
-  "ko": "반복 작업 {taskName}을 삭제하시겠습니까?"
+  "ko": "반복 작업 {taskName}을(를) 삭제하시겠습니까?"
  },
  "opportunitiesApp.tasks.deleteTaskAndAllRecurring": {
   "en": "This task and all future tasks",
@@ -304697,7 +304697,7 @@
  },
  "opportunitiesApp.tasks.dueDate": {
   "en": "Due date",
-  "ko": "만료일"
+  "ko": "마감일"
  },
  "opportunitiesApp.tasks.dueDateTimeInFuture": {
   "en": "Due date and time should be in the future",
@@ -304929,7 +304929,7 @@
  },
  "payments.shippingDelivery": {
   "en": "Shipping & delivery",
-  "ko": "배송 및 배달"
+  "ko": "배송"
  },
  "payments.taxRates": {
   "en": "Tax rates",
@@ -304953,7 +304953,7 @@
  },
  "powerDialerApp.answer": {
   "en": "Answer",
-  "ko": "답변"
+  "ko": "받기"
  },
  "powerDialerApp.askYourAdminToRegister": {
   "en": "Ask your admin to register or",
@@ -304965,7 +304965,7 @@
  },
  "powerDialerApp.audioSettings.additionalDevice": {
   "en": "Hear incoming call on an additional device",
-  "ko": "추가 기기에서 수신 전화 받기"
+  "ko": "추가 기기에서도 수신 전화 벨소리 울리기"
  },
  "powerDialerApp.audioSettings.applyError": {
   "en": "Failed to apply device setting.",
@@ -305037,7 +305037,7 @@
  },
  "powerDialerApp.calls.answer": {
   "en": "Answer",
-  "ko": "답변"
+  "ko": "받기"
  },
  "powerDialerApp.calls.callSummary": {
   "en": "Call Summary",
@@ -305137,7 +305137,7 @@
  },
  "powerDialerApp.customDisposition": {
   "en": "Custom Disposition",
-  "ko": "사용자 지정 처리 상태"
+  "ko": "사용자 지정 처리 결과"
  },
  "powerDialerApp.dial": {
   "en": "Dial",
@@ -305165,7 +305165,7 @@
  },
  "powerDialerApp.forThemAreYouSureYouWantToCallThem": {
   "en": "for them. Are you sure you want to call them?",
-  "ko": "을(를) 위한 것입니다. 정말 통화하시겠습니까?"
+  "ko": "기준입니다. 정말 통화하시겠습니까?"
  },
  "powerDialerApp.incomingCall": {
   "en": "Incoming Call",
@@ -305193,7 +305193,7 @@
  },
  "powerDialerApp.multiLine.chip.busy": {
   "en": "Busy",
-  "ko": "사용 중"
+  "ko": "통화 중"
  },
  "powerDialerApp.multiLine.chip.connected": {
   "en": "Connected",
@@ -305265,7 +305265,7 @@
  },
  "powerDialerApp.noTagsFound": {
   "en": "No tags found",
-  "ko": "태그가 없어요"
+  "ko": "태그를 찾을 수 없습니다"
  },
  "powerDialerApp.notes.activeNotesPlaceholder": {
   "en": "Add your description here...",
@@ -305273,7 +305273,7 @@
  },
  "powerDialerApp.notes.characters": {
   "en": "Characters",
-  "ko": "문자"
+  "ko": "글자 수"
  },
  "powerDialerApp.notes.description": {
   "en": "Description",
@@ -305349,11 +305349,11 @@
  },
  "powerDialerApp.recent": {
   "en": "Recent",
-  "ko": "최근 사용"
+  "ko": "최근"
  },
  "powerDialerApp.redial": {
   "en": "Redial",
-  "ko": "재통화"
+  "ko": "다시 걸기"
  },
  "powerDialerApp.save": {
   "en": "Save",
@@ -305409,11 +305409,11 @@
  },
  "powerDialerApp.time.forThemAreYouSureYouWantToCallThem": {
   "en": "for them. Are you sure you want to call them?",
-  "ko": "을(를) 위한 것입니다. 정말 통화하시겠습니까?"
+  "ko": "기준입니다. 정말 통화하시겠습니까?"
  },
  "powerDialerApp.transcriptUnavailable": {
   "en": "Transcript unavailable",
-  "ko": "스크립트를 사용할 수 없습니다"
+  "ko": "녹취록을 사용할 수 없습니다"
  },
  "powerDialerApp.transfer.blindTransfer": {
   "en": "Blind Transfer",
@@ -305497,7 +305497,7 @@
  },
  "powerDialerApp.voicemail.forMe": {
   "en": "For Me",
-  "ko": "나를 위해"
+  "ko": "나에게 온 메시지"
  },
  "powerDialerApp.voicemail.loadingVoicemails": {
   "en": "Loading voicemails",
@@ -305505,7 +305505,7 @@
  },
  "powerDialerApp.voicemail.transcript": {
   "en": "Transcript",
-  "ko": "통화 기록"
+  "ko": "녹취록"
  },
  "powerDialerApp.voicemail.voiceMail": {
   "en": "Voicemail",
@@ -305537,7 +305537,7 @@
  },
  "productsApp.bulkEdit.fieldManagement.groups.variantsPricing": {
   "en": "Variants & pricing",
-  "ko": "배리언트 및 가격"
+  "ko": "변형 및 가격"
  },
  "productsApp.bulkEdit.fieldManagement.title": {
   "en": "Manage fields",
@@ -305553,7 +305553,7 @@
  },
  "productsApp.bulkEdit.titleColumn.expand": {
   "en": "Expand",
-  "ko": "확장"
+  "ko": "펼치기"
  },
  "productsApp.collection.columns.collectionName": {
   "en": "Collection Name",
@@ -305573,11 +305573,11 @@
  },
  "productsApp.collection.conditions.anyCondition": {
   "en": "Any condition",
-  "ko": "모든 조건"
+  "ko": "하나 이상의 조건"
  },
  "productsApp.collection.conditions.productsMustMatch": {
   "en": "Products must match:",
-  "ko": "다음 상품이 일치해야 합니다:"
+  "ko": "상품이 다음 조건과 일치해야 합니다:"
  },
  "productsApp.collection.conditions.removeCondition": {
   "en": "Remove condition",
@@ -305593,7 +305593,7 @@
  },
  "productsApp.collection.conditions.watchPlaceholder": {
   "en": "Watch",
-  "ko": "시청"
+  "ko": "시계"
  },
  "productsApp.collection.createCollection": {
   "en": "Create Collection",
@@ -305645,7 +305645,7 @@
  },
  "productsApp.collection.errors.cannotSave": {
   "en": "Cannot save collection",
-  "ko": "콜렉션을 저장할 수 없습니다"
+  "ko": "컬렉션을 저장할 수 없습니다"
  },
  "productsApp.collection.errors.conflictingConditions": {
   "en": "Conflicting conditions found. Please review highlighted rows.",
@@ -305745,7 +305745,7 @@
  },
  "productsApp.collection.seo.title": {
   "en": "Search Engine Listing",
-  "ko": "검색 엔진 리스팅"
+  "ko": "검색 엔진 노출 정보"
  },
  "productsApp.collection.seo.titlePlaceholder": {
   "en": "Enter SEO Title",
@@ -305809,7 +305809,7 @@
  },
  "productsApp.common.addCustomValue": {
   "en": "Add custom value",
-  "ko": "+ 커스텀 값 추가"
+  "ko": "커스텀 값 추가"
  },
  "productsApp.common.addDiscount": {
   "en": "Add discount",
@@ -305833,7 +305833,7 @@
  },
  "productsApp.common.addToCollections": {
   "en": "Add to Collections",
-  "ko": "콜렉션에 추가"
+  "ko": "컬렉션에 추가"
  },
  "productsApp.common.address": {
   "en": "Address",
@@ -305873,7 +305873,7 @@
  },
  "productsApp.common.asSetupFee": {
   "en": "as setup fee",
-  "ko": "설정 수수료로"
+  "ko": "초기 설정비로"
  },
  "productsApp.common.autoDebit": {
   "en": "Auto debit",
@@ -305885,7 +305885,7 @@
  },
  "productsApp.common.availableQuantityFrom": {
   "en": "Available quantity from",
-  "ko": "시작 사용 가능 수량"
+  "ko": "다음 위치의 사용 가능 수량"
  },
  "productsApp.common.back": {
   "en": "Back",
@@ -305897,7 +305897,7 @@
  },
  "productsApp.common.bulkAction": {
   "en": "Bulk Action",
-  "ko": "일괄 액션"
+  "ko": "일괄 작업"
  },
  "productsApp.common.bulkActions": {
   "en": "Bulk Actions",
@@ -305905,7 +305905,7 @@
  },
  "productsApp.common.bulkEditSuccess": {
   "en": "Bulk edit successful",
-  "ko": "대량 편집 성공"
+  "ko": "일괄 편집이 완료되었습니다"
  },
  "productsApp.common.bump": {
   "en": "Bump",
@@ -305957,7 +305957,7 @@
  },
  "productsApp.common.chargeOf": {
   "en": "charge of",
-  "ko": "담당"
+  "ko": "청구 금액"
  },
  "productsApp.common.chargedBy": {
   "en": "Charged by",
@@ -305965,7 +305965,7 @@
  },
  "productsApp.common.chequeNo": {
   "en": "Check no",
-  "ko": "확인 안 함"
+  "ko": "수표 번호"
  },
  "productsApp.common.chooseAnItem": {
   "en": "Choose an item",
@@ -306149,7 +306149,7 @@
  },
  "productsApp.common.end": {
   "en": "End",
-  "ko": "통화 종료"
+  "ko": "종료"
  },
  "productsApp.common.endDate": {
   "en": "End Date",
@@ -306409,7 +306409,7 @@
  },
  "productsApp.common.membershipTypeOffer": {
   "en": "Offer",
-  "ko": "제안"
+  "ko": "오퍼"
  },
  "productsApp.common.mode": {
   "en": "Mode",
@@ -306701,7 +306701,7 @@
  },
  "productsApp.common.setupFeeLower": {
   "en": "setup fee",
-  "ko": "설정 비용"
+  "ko": "초기 설정비"
  },
  "productsApp.common.shipmentNotifyCustomerDescription": {
   "en": "Send shipment details and notify customer of shipment",
@@ -306757,7 +306757,7 @@
  },
  "productsApp.common.subscriptionId": {
   "en": "Subscription Id",
-  "ko": "구독 Id"
+  "ko": "구독 ID"
  },
  "productsApp.common.subtotal": {
   "en": "Subtotal",
@@ -306825,7 +306825,7 @@
  },
  "productsApp.common.trialPeriod": {
   "en": "Trial period",
-  "ko": "트라이얼 기간"
+  "ko": "체험 기간"
  },
  "productsApp.common.true": {
   "en": "True",
@@ -306873,7 +306873,7 @@
  },
  "productsApp.common.useRecurring": {
   "en": "Use recurring",
-  "ko": "반복 사용"
+  "ko": "반복 결제 사용"
  },
  "productsApp.common.user": {
   "en": "User",
@@ -306881,11 +306881,11 @@
  },
  "productsApp.common.variant": {
   "en": "Variant",
-  "ko": "배리언트"
+  "ko": "변형"
  },
  "productsApp.common.variantName": {
   "en": "Variant name",
-  "ko": "배리언트 이름"
+  "ko": "변형 이름"
  },
  "productsApp.common.viewAdjustmentHistory": {
   "en": "View Adjustment History",
@@ -307073,7 +307073,7 @@
  },
  "productsApp.error.order.collectPaymentModal.modeRequired": {
   "en": "Choose a valid Payment Mode",
-  "ko": "유효한 결제 모드 선택"
+  "ko": "유효한 결제 모드를 선택하세요"
  },
  "productsApp.error.order.collectPaymentModal.update": {
   "en": "Something went wrong while recording payment. Try again",
@@ -307325,7 +307325,7 @@
  },
  "productsApp.placeholder.statementDescriptor1": {
   "en": "Overrides default account descriptors. Used for customers' bank statements.",
-  "ko": "기본 계정 설명자를 재정의합니다. 고객의 은행 명세서에 사용됩니다."
+  "ko": "기본 계정 명세서 표시 문구를 대체합니다. 고객의 은행 명세서에 표시됩니다."
  },
  "productsApp.placeholder.taxName": {
   "en": "Name of the tax",
@@ -307517,7 +307517,7 @@
  },
  "productsApp.product.formSubMenu.variants": {
   "en": "Variants",
-  "ko": "배리언트"
+  "ko": "변형"
  },
  "productsApp.product.importProductsCsv": {
   "en": "Import as CSV",
@@ -307625,7 +307625,7 @@
  },
  "productsApp.product.priceDetailPage.digitalDelivery": {
   "en": "Digital Product Delivery",
-  "ko": "디지털 상품 배송"
+  "ko": "디지털 상품 전달"
  },
  "productsApp.product.priceDetailPage.digitalDeliveryInfo.url": {
   "en": "Add URLs to give users access after checkout. They can view them post checkout or via email. Currently, supported for Stores only. ",
@@ -307793,7 +307793,7 @@
  },
  "productsApp.product.showingVariantsRange": {
   "en": "Showing {start}-{end} of {total} variants",
-  "ko": "옵션 {total}개 중 {start}-{end} 표시"
+  "ko": "변형 {total}개 중 {start}-{end} 표시"
  },
  "productsApp.product.tagline": {
   "en": "Welcome to the new way of selling things! 🎉",
@@ -307829,7 +307829,7 @@
  },
  "productsApp.product.variantWillBeDeleted": {
   "en": "This variant will be deleted",
-  "ko": "이 옵션은 삭제됩니다"
+  "ko": "이 변형은 삭제됩니다"
  },
  "productsApp.receipt.settings.form.emailTemplate.label": {
   "en": "Email Template",
@@ -307837,7 +307837,7 @@
  },
  "productsApp.receipt.settings.form.emailTemplate.placeholder": {
   "en": "Select one",
-  "ko": "하나만 선택"
+  "ko": "선택하세요"
  },
  "productsApp.receipt.settings.form.enableSalesReceipt": {
   "en": "Enable automatic sales receipts for payments",
@@ -307845,7 +307845,7 @@
  },
  "productsApp.receipt.settings.form.prefix": {
   "en": "Receipt prefix",
-  "ko": "영수증 접두어"
+  "ko": "영수증 접두사"
  },
  "productsApp.receipt.settings.form.prefixDescription": {
   "en": "Prefix to be used while generating all receipts",
@@ -307861,7 +307861,7 @@
  },
  "productsApp.reviews.approveReply": {
   "en": "Approve and reply",
-  "ko": "승인 및 답장"
+  "ko": "승인 및 답글"
  },
  "productsApp.reviews.approveReview": {
   "en": "Approve this review ?",
@@ -307873,7 +307873,7 @@
  },
  "productsApp.reviews.bulkUpdate": {
   "en": "Action done successfully",
-  "ko": "액션이 성공적으로 완료되었습니다"
+  "ko": "작업이 완료되었습니다"
  },
  "productsApp.reviews.changeStatus": {
   "en": "Change status of this review ?",
@@ -307893,7 +307893,7 @@
  },
  "productsApp.reviews.emptyList": {
   "en": "No Reviews to show",
-  "ko": "리뷰가 없어요"
+  "ko": "표시할 리뷰가 없습니다"
  },
  "productsApp.reviews.productStore": {
   "en": "Product & Store Name",
@@ -307913,15 +307913,15 @@
  },
  "productsApp.reviews.review": {
   "en": "Review",
-  "ko": "다시 보기"
+  "ko": "리뷰"
  },
  "productsApp.reviews.saveReply": {
   "en": "Save Reply",
-  "ko": "답장 저장"
+  "ko": "답글 저장"
  },
  "productsApp.reviews.sendReply": {
   "en": "Send Reply",
-  "ko": "답장 보내기"
+  "ko": "답글 보내기"
  },
  "productsApp.reviews.status.approved": {
   "en": "Approved",
@@ -308021,11 +308021,11 @@
  },
  "productsApp.success.subscription.updateTrial": {
   "en": "Trial period updated!",
-  "ko": "트라이얼 기간이 업데이트되었습니다!"
+  "ko": "체험 기간이 업데이트되었습니다!"
  },
  "productsApp.tax.chargeTaxOnThisProduct": {
   "en": "Attach Tax rates",
-  "ko": "세율 첨부"
+  "ko": "세율 적용"
  },
  "productsApp.tax.createTax": {
   "en": "Create Tax",
@@ -308041,7 +308041,7 @@
  },
  "productsApp.tax.rate": {
   "en": "Rate",
-  "ko": "요금"
+  "ko": "세율"
  },
  "productsApp.tax.selectTaxes": {
   "en": "Select taxes",
@@ -308081,7 +308081,7 @@
  },
  "productsApp.validation.invalid.endTime": {
   "en": "End time must be greater than start time",
-  "ko": "종료 시간은 시작 시간보다 커야 합니다"
+  "ko": "종료 시간은 시작 시간 이후여야 합니다"
  },
  "productsApp.validation.invalid.intervalCount": {
   "en": "Interval must be an integer",
@@ -308113,7 +308113,7 @@
  },
  "productsApp.validation.max.notes": {
   "en": "The maximum length for notes is 2000 characters",
-  "ko": "노트의 최대 길이는 2000자입니다"
+  "ko": "메모는 최대 2000자까지 입력할 수 있습니다"
  },
  "productsApp.validation.max.priceDescription": {
   "en": "Price description must not contain more than 127 characters",
@@ -308145,7 +308145,7 @@
  },
  "productsApp.validation.min.trialPeriod": {
   "en": "Trial period must be greater than or equal to 0",
-  "ko": "트라이얼 기간은 0 이상이어야 합니다"
+  "ko": "체험 기간은 0 이상이어야 합니다"
  },
  "productsApp.validation.required.addProduct": {
   "en": "Please select product first",
@@ -308301,7 +308301,7 @@
  },
  "proposalCommon.colorPicker.tabs.simple": {
   "en": "Simple",
-  "ko": "심플"
+  "ko": "기본"
  },
  "proposalCommon.common.accepted": {
   "en": "Accepted",
@@ -308765,7 +308765,7 @@
  },
  "proposalCommon.common.dueDate": {
   "en": "Due date",
-  "ko": "만료일"
+  "ko": "마감일"
  },
  "proposalCommon.common.dueOn": {
   "en": "due on",
@@ -308877,7 +308877,7 @@
  },
  "proposalCommon.common.end": {
   "en": "End",
-  "ko": "통화 종료"
+  "ko": "종료"
  },
  "proposalCommon.common.endDate": {
   "en": "End Date",
@@ -309297,7 +309297,7 @@
  },
  "proposalCommon.common.errors.code.40126": {
   "en": "Unable to update proposal with contact details while preparing to send proposal via {source}",
-  "ko": "{source} 로 제안서를 보낼 준비를 하는 중에는 연락처 정보로 제안서를 업데이트할 수 없습니다"
+  "ko": "{source} 로 제안서를 보낼 준비를 하는 중 연락처 정보로 제안서를 업데이트하지 못했습니다"
  },
  "proposalCommon.common.errors.code.40300": {
   "en": "Forbidden resource",
@@ -309369,7 +309369,7 @@
  },
  "proposalCommon.common.errors.code.40416": {
   "en": "Certificate not found",
-  "ko": "수료증을 찾을 수 없습니다"
+  "ko": "인증서를 찾을 수 없습니다"
  },
  "proposalCommon.common.errors.code.50000": {
   "en": "Internal Server Error",
@@ -309513,7 +309513,7 @@
  },
  "proposalCommon.common.generateInvoiceOnSigningDescription": {
   "en": "Users will get first invoice at the time of signing",
-  "ko": "사용자는 가입 시 첫 인보이스를 받게 됩니다"
+  "ko": "사용자는 서명 시 첫 인보이스를 받게 됩니다"
  },
  "proposalCommon.common.group": {
   "en": "Group",
@@ -309813,7 +309813,7 @@
  },
  "proposalCommon.common.paid": {
   "en": "Paid",
-  "ko": "유료"
+  "ko": "결제 완료"
  },
  "proposalCommon.common.paidOn": {
   "en": "Paid on",
@@ -309937,7 +309937,7 @@
  },
  "proposalCommon.common.recipients": {
   "en": "Recipients",
-  "ko": "수신자들"
+  "ko": "수신자"
  },
  "proposalCommon.common.recurring": {
   "en": "Recurring",
@@ -310077,11 +310077,11 @@
  },
  "proposalCommon.common.selectLocation": {
   "en": "Select a location",
-  "ko": "위치 선택"
+  "ko": "서브 계정 선택"
  },
  "proposalCommon.common.selectOne": {
   "en": "Select one",
-  "ko": "하나만 선택"
+  "ko": "선택하세요"
  },
  "proposalCommon.common.selectPosition": {
   "en": "Select Position",
@@ -310165,7 +310165,7 @@
  },
  "proposalCommon.common.setupFee": {
   "en": "Setup Fee",
-  "ko": "설치 비용"
+  "ko": "초기 설정비"
  },
  "proposalCommon.common.share": {
   "en": "Share",
@@ -310321,7 +310321,7 @@
  },
  "proposalCommon.common.timingNotSuitable": {
   "en": "Timing is not suitable",
-  "ko": "시간이 적합하지 않음"
+  "ko": "시기가 적절하지 않음"
  },
  "proposalCommon.common.title": {
   "en": "Title",
@@ -310329,7 +310329,7 @@
  },
  "proposalCommon.common.toBeFilledBy": {
   "en": "To be filled by",
-  "ko": "작성자"
+  "ko": "작성 담당자"
  },
  "proposalCommon.common.toBeSignedBy": {
   "en": "To be signed by",
@@ -310465,11 +310465,11 @@
  },
  "proposalCommon.common.viewed": {
   "en": "Viewed",
-  "ko": "조회함"
+  "ko": "조회됨"
  },
  "proposalCommon.common.waitingForOthers": {
   "en": "Waiting for others",
-  "ko": "대기 중"
+  "ko": "다른 사람 대기 중"
  },
  "proposalCommon.common.warning": {
   "en": "Warning",
@@ -310637,7 +310637,7 @@
  },
  "proposalCommon.documentViewer.decline": {
   "en": "Decline",
-  "ko": "거부"
+  "ko": "거절"
  },
  "proposalCommon.documentViewer.declineDocument": {
   "en": "Decline document",
@@ -310929,7 +310929,7 @@
  },
  "proposalCommon.documentViewer.viewed": {
   "en": "Viewed",
-  "ko": "조회함"
+  "ko": "조회됨"
  },
  "proposalCommon.documentViewer.waitingFor": {
   "en": "Waiting for",
@@ -311037,7 +311037,7 @@
  },
  "proposalCommon.paymentSchedule.totalAmountDue": {
   "en": "Total amount due",
-  "ko": "총 미납 금액"
+  "ko": "총 결제 금액"
  },
  "proposalCommon.paymentSchedule.uponCompletion": {
   "en": "Upon completion",
@@ -311045,7 +311045,7 @@
  },
  "proposalCommon.paymentSchedule.uponCompletionInfo": {
   "en": "This will be used as the deposit for this document completion.",
-  "ko": "이 문서 완료 시 보증금으로 사용됩니다."
+  "ko": "이 문서 완료 시 계약금으로 사용됩니다."
  },
  "proposalCommon.paymentSchedule.uponDocumentCompletion": {
   "en": "Upon document completion",
@@ -311053,19 +311053,19 @@
  },
  "proposalCommon.paymentSchedule.uponPrimarySignature": {
   "en": "Upon primary signature",
-  "ko": "기본 서명 시"
+  "ko": "기본 수신자 서명 시"
  },
  "proposalCommon.productList.taxes.configureAction": {
   "en": "here",
-  "ko": "여기"
+  "ko": "여기를"
  },
  "proposalCommon.productList.taxes.configurePrefix": {
   "en": "Click",
-  "ko": "클릭"
+  "ko": "세금을 설정하려면"
  },
  "proposalCommon.productList.taxes.configureSuffix": {
   "en": "to configure taxes",
-  "ko": "세금을 설정하려면"
+  "ko": "클릭하세요"
  },
  "proposalCommon.productList.taxes.noTaxesConfigured": {
   "en": "No taxes configured",
@@ -311081,7 +311081,7 @@
  },
  "proposalCommon.proposalStatus.viewed": {
   "en": "Viewed",
-  "ko": "조회함"
+  "ko": "조회됨"
  },
  "proposalCommon.proposals.addText": {
   "en": "Add text to your document.",
@@ -311329,7 +311329,7 @@
  },
  "proposalCommon.proposalsList.eventLogs.viewed": {
   "en": "Viewed",
-  "ko": "조회함"
+  "ko": "조회됨"
  },
  "proposalCommon.proposalsList.eventLogs.viewedTitle": {
   "en": "viewed the document",
@@ -311369,7 +311369,7 @@
  },
  "proposalCommon.proposalsList.noDraftInSight": {
   "en": "No drafts in sight! Ready to create a fresh proposal?",
-  "ko": "초안이 없어요! 새 제안서를 만들어볼까요?"
+  "ko": "초안이 없습니다. 새 제안서를 만들어 보시겠습니까?"
  },
  "proposalCommon.proposalsList.notificationSettings.allowAutoSendInvoice": {
   "en": "Automatically send an invoice using the Products associated with the document once the document has been completed. If this is toggled Off, an invoice will be created but left in Draft status.",
@@ -311381,7 +311381,7 @@
  },
  "proposalCommon.proposalsList.notificationSettings.configureCCRecipientsDescription": {
   "en": "Specify default CC recipients for all documents or add CC recipients for individual documents when sending. CC recipients will receive the document simultaneously with the primary signer and a signed copy once all signers have completed the signing process.",
-  "ko": "모든 문서의 기본 CC 수신자를 지정하거나 전송 시 개별 문서에 CC 수신자를 추가하세요. CC 수신자는 기본 서명자와 동시에 문서를 받으며, 모든 서명자가 서명을 완료하면 서명된 사본을 받습니다."
+  "ko": "모든 문서의 기본 참조 수신자를 지정하거나 전송 시 개별 문서에 참조 수신자를 추가하세요. 참조 수신자는 기본 서명자와 동시에 문서를 받으며, 모든 서명자가 서명을 완료하면 서명된 사본을 받습니다."
  },
  "proposalCommon.proposalsList.notificationSettings.customerNotification": {
   "en": "Customer Notifications",
@@ -311465,7 +311465,7 @@
  },
  "proposalCommon.proposalsList.notificationSettings.smsTemplatePlaceholder": {
   "en": "Select one",
-  "ko": "하나만 선택"
+  "ko": "선택하세요"
  },
  "proposalCommon.proposalsList.notificationSettings.teamNotification": {
   "en": "Team Notifications",
@@ -311485,7 +311485,7 @@
  },
  "proposalCommon.proposalsList.notificationSettings.workflowSettingsPrimaryOnly": {
   "en": "Primary only",
-  "ko": "기본만"
+  "ko": "기본 수신자만"
  },
  "proposalCommon.proposalsList.notificationSettings.workflowSettingsRunWorkflowFor": {
   "en": "Run workflow for",
@@ -311517,7 +311517,7 @@
  },
  "proposalCommon.proposalsList.notificationSettings.workflowSettingsTriggerDeclinedDescription": {
   "en": "Triggered when the contact declines the document.",
-  "ko": "연락처가 문서를 거부할 때 트리거됩니다."
+  "ko": "연락처가 문서를 거절할 때 트리거됩니다."
  },
  "proposalCommon.proposalsList.notificationSettings.workflowSettingsTriggerSent": {
   "en": "Sent",
@@ -311529,7 +311529,7 @@
  },
  "proposalCommon.proposalsList.notificationSettings.workflowSettingsTriggerViewed": {
   "en": "Viewed",
-  "ko": "조회함"
+  "ko": "조회됨"
  },
  "proposalCommon.proposalsList.others": {
   "en": "Others",
@@ -311621,7 +311621,7 @@
  },
  "proposalCommon.proposalsTable.columns.value": {
   "en": "Value",
-  "ko": "값"
+  "ko": "금액"
  },
  "proposalCommon.schedulingOptions.createDraftInvoiceOnPrimaryUserSignOff": {
   "en": "Select start date for the Invoice schedule",
@@ -311641,7 +311641,7 @@
  },
  "proposalCommon.schedulingOptions.first": {
   "en": "First",
-  "ko": "처음"
+  "ko": "첫 번째"
  },
  "proposalCommon.schedulingOptions.fourth": {
   "en": "Fourth",
@@ -311765,7 +311765,7 @@
  },
  "proposalCommon.schedulingOptions.never": {
   "en": "Never",
-  "ko": "없음"
+  "ko": "종료 안 함"
  },
  "proposalCommon.schedulingOptions.occurrences": {
   "en": "occurrences",
@@ -311781,7 +311781,7 @@
  },
  "proposalCommon.schedulingOptions.second": {
   "en": "Second",
-  "ko": "초"
+  "ko": "두 번째"
  },
  "proposalCommon.schedulingOptions.sendInvoice": {
   "en": "Send invoice",
@@ -311805,7 +311805,7 @@
  },
  "proposalCommon.schedulingOptions.timeAgo.hours": {
   "en": "hours ago",
-  "ko": "전"
+  "ko": "시간 전"
  },
  "proposalCommon.schedulingOptions.timeAgo.minute": {
   "en": "minute ago",
@@ -311813,11 +311813,11 @@
  },
  "proposalCommon.schedulingOptions.timeAgo.minutes": {
   "en": "minutes ago",
-  "ko": "몇 분 전"
+  "ko": "분 전"
  },
  "proposalCommon.schedulingOptions.timeAgo.month": {
   "en": "month ago",
-  "ko": "1개월 전"
+  "ko": "개월 전"
  },
  "proposalCommon.schedulingOptions.timeAgo.months": {
   "en": "months ago",
@@ -311825,11 +311825,11 @@
  },
  "proposalCommon.schedulingOptions.timeAgo.week": {
   "en": "week ago",
-  "ko": "1주 전"
+  "ko": "주 전"
  },
  "proposalCommon.schedulingOptions.timeAgo.weeks": {
   "en": "weeks ago",
-  "ko": "전"
+  "ko": "주 전"
  },
  "proposalCommon.schedulingOptions.timeAgo.year": {
   "en": "year ago",
@@ -311877,15 +311877,15 @@
  },
  "proposalCommon.taxes.clickInstruction": {
   "en": "Click",
-  "ko": "클릭"
+  "ko": "세금을 설정하려면"
  },
  "proposalCommon.taxes.configureTaxes": {
   "en": "to configure taxes.",
-  "ko": "하여 세금을 설정하세요."
+  "ko": "클릭하세요."
  },
  "proposalCommon.taxes.here": {
   "en": "here",
-  "ko": "여기"
+  "ko": "여기를"
  },
  "proposalCommon.taxes.noTaxesConfigured": {
   "en": "No taxes configured",
@@ -312033,7 +312033,7 @@
  },
  "proposalCommon.validations.enum.numOfWeek": {
   "en": "num of week must be one of the following values: Date, First, Second, Third, Fourth, Last",
-  "ko": "num of week 값은 다음 중 하나여야 합니다: Date, First, Second, Third, Fourth, Last"
+  "ko": "주차 값은 다음 중 하나여야 합니다: Date, First, Second, Third, Fourth, Last"
  },
  "proposalCommon.validations.invalid.amountLessThan": {
   "en": "The amount cannot be less than",
@@ -312045,7 +312045,7 @@
  },
  "proposalCommon.validations.invalid.booleanUseStartAsPrimaryUserSigned": {
   "en": "Use start as primary user signed must be boolean",
-  "ko": "Use start as primary user signed 값은 불리언이어야 합니다"
+  "ko": "'시작일을 기본 사용자 서명일로 사용' 값은 불리언이어야 합니다"
  },
  "proposalCommon.validations.invalid.contactDetails": {
   "en": "Please enter valid contact details: ",
@@ -312213,11 +312213,11 @@
  },
  "proposalCommon.validations.invalid.numberInterval": {
   "en": "interval must be a 'number' type in invoice schedule",
-  "ko": "인보이스 일정에서 interval 은 'number' 타입이어야 합니다"
+  "ko": "인보이스 일정의 간격은 'number' 유형이어야 합니다"
  },
  "proposalCommon.validations.invalid.paymentDepositScheduleTotalValue": {
   "en": "Payment deposit schedule total must be equal to the invoice total",
-  "ko": "결제 예치금 일정 합계는 인보이스 총액과 같아야 합니다"
+  "ko": "선금 결제 일정 합계는 인보이스 총액과 같아야 합니다"
  },
  "proposalCommon.validations.invalid.paymentScheduleDueDateLtInvoiceDue": {
   "en": "Due date must be before the invoice due date",
@@ -312225,7 +312225,7 @@
  },
  "proposalCommon.validations.invalid.paymentScheduleDueDatePast": {
   "en": "Due date cannot be in past",
-  "ko": "만기일은 과거일 수 없습니다"
+  "ko": "마감일은 과거일 수 없습니다"
  },
  "proposalCommon.validations.invalid.paymentScheduleTotalPercent": {
   "en": "Schedule total must be 100%",
@@ -312521,7 +312521,7 @@
  },
  "proposalCommon.validations.warnings.moveToDraft": {
   "en": "Are you sure you want to move it to draft ?",
-  "ko": "임시 저장으로 이동하시겠습니까?"
+  "ko": "초안으로 이동하시겠습니까?"
  },
  "proposalCommon.validations.warnings.noIntegrationFound": {
   "en": "No payment integrations found",
@@ -312613,7 +312613,7 @@
  },
  "reportingApp.common.widget.fieldReview": {
   "en": "Review",
-  "ko": "다시 보기"
+  "ko": "리뷰"
  },
  "reportingApp.common.widget.fieldReviewRequest": {
   "en": "Review request",
@@ -312773,7 +312773,7 @@
  },
  "reportingApp.locationDashboard.moreActions": {
   "en": "More actions",
-  "ko": "더 많은 액션"
+  "ko": "추가 작업"
  },
  "reportingApp.locationDashboard.refreshingDashboard": {
   "en": "Refreshing",
@@ -312801,7 +312801,7 @@
  },
  "reportingApp.locationDashboard.stickyNotes.moreActions": {
   "en": "More actions",
-  "ko": "더 많은 액션"
+  "ko": "추가 작업"
  },
  "reportingApp.locationDashboard.stickyNotes.redo": {
   "en": "Redo",
@@ -312869,7 +312869,7 @@
  },
  "reportingApp.locationDashboard.widgetDefinitions.reputationRequestStatusOpened": {
   "en": "Opened",
-  "ko": "열림"
+  "ko": "열람됨"
  },
  "reportingApp.locationDashboard.widgetDefinitions.reputationRequestStatusQueued": {
   "en": "Queued",
@@ -312917,7 +312917,7 @@
  },
  "reportingApp.locationDashboard.widgetDefinitions.reviewer": {
   "en": "Reviewer",
-  "ko": "검토자"
+  "ko": "리뷰 작성자"
  },
  "reportingApp.locationDashboard.widgetDefinitions.sentiment": {
   "en": "Sentiment",
@@ -313025,7 +313025,7 @@
  },
  "reputationApp.reputation.reputationCommon.collectorLogo": {
   "en": "Collector logo",
-  "ko": "Collector 로고"
+  "ko": "수집기 로고"
  },
  "reputationApp.reputation.reputationCommon.color": {
   "en": "Color",
@@ -313133,7 +313133,7 @@
  },
  "reputationApp.reputation.reputationCommon.masonry": {
   "en": "Masonry",
-  "ko": "매스너리"
+  "ko": "메이슨리"
  },
  "reputationApp.reputation.reputationCommon.mins": {
   "en": "Mins",
@@ -313173,7 +313173,7 @@
  },
  "reputationApp.reputation.reputationCommon.off": {
   "en": "Off",
-  "ko": "끔"
+  "ko": "꺼짐"
  },
  "reputationApp.reputation.reputationCommon.oops": {
   "en": "Oops!",
@@ -313181,7 +313181,7 @@
  },
  "reputationApp.reputation.reputationCommon.opened": {
   "en": "Opened",
-  "ko": "열림"
+  "ko": "열람됨"
  },
  "reputationApp.reputation.reputationCommon.others": {
   "en": "Others",
@@ -313233,7 +313233,7 @@
  },
  "reputationApp.reputation.reputationCommon.reviewRequests": {
   "en": "Review Requests",
-  "ko": "요청 검토"
+  "ko": "리뷰 요청"
  },
  "reputationApp.reputation.reputationCommon.save": {
   "en": "Save",
@@ -313269,7 +313269,7 @@
  },
  "reputationApp.reputation.reputationCommon.spokesperson": {
   "en": "Spokesperson",
-  "ko": "대변인"
+  "ko": "담당자"
  },
  "reputationApp.reputation.reputationCommon.star": {
   "en": "star",
@@ -313277,7 +313277,7 @@
  },
  "reputationApp.reputation.reputationCommon.stars": {
   "en": "Stars",
-  "ko": "별"
+  "ko": "별점"
  },
  "reputationApp.reputation.reputationCommon.static": {
   "en": "Static",
@@ -313365,7 +313365,7 @@
  },
  "reputationApp.reputation.reputationOnboarding.greeting": {
   "en": "Hi {name}",
-  "ko": "안녕하세요 {name}"
+  "ko": "안녕하세요, {name}님"
  },
  "reputationApp.reputation.reputationOnboarding.skipTutorial": {
   "en": "Skip Onboarding",
@@ -313409,7 +313409,7 @@
  },
  "reputationApp.reputation.reputationOverview.competitorAnalysis.compareLimit": {
   "en": "You can compare up to 3 competitors.",
-  "ko": "최대 3명의 경쟁사를 비교할 수 있습니다."
+  "ko": "경쟁사는 최대 3곳까지 비교할 수 있습니다."
  },
  "reputationApp.reputation.reputationOverview.competitorAnalysis.countDescription": {
   "en": " The total reviews shown are from Google, and other sources but we analyze latest reviews each month for insights in the Competitive Landscape and Sentiment Heatmap. This may cause differences in review counts.",
@@ -313445,7 +313445,7 @@
  },
  "reputationApp.reputation.reputationOverview.competitorAnalysis.pitchPage.description1": {
   "en": "You can add up to 3 Competitors",
-  "ko": "최대 3명의 경쟁사를 추가할 수 있습니다"
+  "ko": "경쟁사는 최대 3곳까지 추가할 수 있습니다"
  },
  "reputationApp.reputation.reputationOverview.competitorAnalysis.pitchPage.gridDescription": {
   "en": "Visualize and compare key reputation metrics in one easy grid. Build unlimited reports to monitor and outperform",
@@ -313501,7 +313501,7 @@
  },
  "reputationApp.reputation.reputationOverview.competitorAnalysis.virtualBusiness.errors.addressOrUrlRequired": {
   "en": "Please provide either a business address or a Google Maps URL",
-  "ko": "사업장 주소 또는 구글 지도 URL 중 하나를 입력해 주세요"
+  "ko": "사업장 주소 또는 Google 지도 URL 중 하나를 입력해 주세요"
  },
  "reputationApp.reputation.reputationOverview.competitorAnalysis.virtualBusiness.errors.businessNameRequired": {
   "en": "Business name is required",
@@ -313521,7 +313521,7 @@
  },
  "reputationApp.reputation.reputationOverview.connectProfiles.matchMedium": {
   "en": "Medium match",
-  "ko": "중간 일치"
+  "ko": "중간 일치도"
  },
  "reputationApp.reputation.reputationOverview.connectProfiles.matchesModalCancel": {
   "en": "Cancel",
@@ -313589,7 +313589,7 @@
  },
  "reputationApp.reputation.reputationOverview.connectProfiles.unknownPlatform": {
   "en": "Review site",
-  "ko": "사이트 검토"
+  "ko": "리뷰 사이트"
  },
  "reputationApp.reputation.reputationOverview.dashboardV2.aiRecap.title": {
   "en": "AI Recap 🤩",
@@ -313633,7 +313633,7 @@
  },
  "reputationApp.reputation.reputationOverview.dashboardV2.qrCode.emptyTitle": {
   "en": "No QR scans yet.",
-  "ko": "아직 QR 스캔이 없어요."
+  "ko": "아직 QR 스캔이 없습니다."
  },
  "reputationApp.reputation.reputationOverview.dashboardV2.qrCode.scansTitle": {
   "en": "QR scans",
@@ -313661,7 +313661,7 @@
  },
  "reputationApp.reputation.reputationOverview.dashboardV2.reviewRequest.dataLabels.bulkAction": {
   "en": "Bulk action",
-  "ko": "대량 액션"
+  "ko": "일괄 작업"
  },
  "reputationApp.reputation.reputationOverview.dashboardV2.reviewRequest.dataLabels.reviewReceived": {
   "en": "Review Received",
@@ -313705,7 +313705,7 @@
  },
  "reputationApp.reputation.reputationOverview.dashboardV2.reviewResponse.notEligibleReviews": {
   "en": "Not eligible reviews",
-  "ko": "자격 없는 리뷰"
+  "ko": "응답 대상이 아닌 리뷰"
  },
  "reputationApp.reputation.reputationOverview.dashboardV2.reviewResponse.responseTimeMins": {
   "en": "Response time (mins)",
@@ -313733,7 +313733,7 @@
  },
  "reputationApp.reputation.reputationOverview.dashboardV2.reviewWidget.emptyTitle": {
   "en": "No widget activity detected.",
-  "ko": "위젯 활동이 감지되지 않았어요."
+  "ko": "위젯 활동이 감지되지 않았습니다."
  },
  "reputationApp.reputation.reputationOverview.dashboardV2.reviewWidget.impressionsTitle": {
   "en": "Review widget impressions",
@@ -313873,7 +313873,7 @@
  },
  "reputationApp.reputation.reputationReviewRequests.errorCodes.E-REVIEW-REQUEST-CONTACT-002": {
   "en": "DND is enabled for the contact",
-  "ko": "이 연락처에 대해 DND가 활성화되어 있습니다"
+  "ko": "이 연락처는 방해 금지(DND)가 켜져 있습니다"
  },
  "reputationApp.reputation.reputationReviewRequests.errorCodes.E-REVIEW-REQUEST-CONTACT-004": {
   "en": "Contact does not have a Phone Number",
@@ -313901,11 +313901,11 @@
  },
  "reputationApp.reputation.reputationReviewRequests.errorCodes.E-REVIEW-REQUEST-SMS-003": {
   "en": "No SMS Template Found. Please create one to continue",
-  "ko": "발견된 SMS 템플릿이 없습니다. 계속하려면 하나를 생성해 주세요"
+  "ko": "SMS 템플릿이 없습니다. 계속하려면 템플릿을 만들어 주세요"
  },
  "reputationApp.reputation.reputationReviewRequests.errorCodes.E-REVIEW-REQUEST-WHATSAPP-002": {
   "en": "No/Unapproved Template Available for Review Request WhatsApp",
-  "ko": "리뷰 요청 WhatsApp용 승인되지 않은/미승인 템플릿"
+  "ko": "리뷰 요청용 WhatsApp 템플릿이 없거나 승인되지 않았습니다"
  },
  "reputationApp.reputation.reputationReviewRequests.errorMessages.retryLimit": {
   "en": "Retry limit reached for this contact",
@@ -313965,7 +313965,7 @@
  },
  "reputationApp.reputation.reputationReviewRequests.tableData.read": {
   "en": "Read",
-  "ko": "읽기"
+  "ko": "읽음"
  },
  "reputationApp.reputation.reputationReviewRequests.tableHeadings.action": {
   "en": "Action",
@@ -313977,7 +313977,7 @@
  },
  "reputationApp.reputation.reputationReviewRequests.tableHeadings.sentVia": {
   "en": "Sent Via",
-  "ko": "전송 경로"
+  "ko": "발송 수단"
  },
  "reputationApp.reputation.reputationReviewRequests.tableHeadings.status": {
   "en": "Status",
@@ -313993,15 +313993,15 @@
  },
  "reputationApp.reputation.reputationReviews.aiDraft.post": {
   "en": "Post",
-  "ko": "게시글"
+  "ko": "게시"
  },
  "reputationApp.reputation.reputationReviews.aiReplyButton": {
   "en": "AI Reply",
-  "ko": "AI 답장"
+  "ko": "AI 답글"
  },
  "reputationApp.reputation.reputationReviews.aiReplyButtonAria": {
   "en": "Generate Reply by AI",
-  "ko": "AI로 답장 생성"
+  "ko": "AI로 답글 생성"
  },
  "reputationApp.reputation.reputationReviews.aiSummary.fetchFailure": {
   "en": "Failed to fetch AI summary",
@@ -314069,7 +314069,7 @@
  },
  "reputationApp.reputation.reputationReviews.dripMode.campaignCard.monthlyFrequency.first": {
   "en": "First",
-  "ko": "처음"
+  "ko": "첫째"
  },
  "reputationApp.reputation.reputationReviews.dripMode.campaignCard.nextReplyText.today": {
   "en": "today",
@@ -314109,7 +314109,7 @@
  },
  "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.fields.chooseAgentLabel": {
   "en": "Choose Agent",
-  "ko": "상담원 선택"
+  "ko": "에이전트 선택"
  },
  "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.fields.dateShortcuts.last90Days": {
   "en": "Last 90 days",
@@ -314129,7 +314129,7 @@
  },
  "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.fields.occursOnLabel": {
   "en": "Occurs On",
-  "ko": "발생일"
+  "ko": "실행일"
  },
  "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.fields.occursOnOfTheMonthSuffix": {
   "en": "of the month",
@@ -314137,11 +314137,11 @@
  },
  "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.fields.reviewDateRangeLabel": {
   "en": "Review date range",
-  "ko": "검토 날짜 범위"
+  "ko": "리뷰 날짜 범위"
  },
  "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.fields.timeWindowAnd": {
   "en": "and",
-  "ko": "그리고"
+  "ko": "~"
  },
  "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.reviewFilter.allReviews": {
   "en": "All Reviews",
@@ -314173,7 +314173,7 @@
  },
  "reputationApp.reputation.reputationReviews.dripMode.section.title": {
   "en": "Respond to Reviews - Drip Mode",
-  "ko": "리뷰 응답 - 단계적 모드"
+  "ko": "리뷰 응답 - 드립 모드"
  },
  "reputationApp.reputation.reputationReviews.emptyMessageCTA": {
   "en": "Start Collecting Reviews",
@@ -314181,7 +314181,7 @@
  },
  "reputationApp.reputation.reputationReviews.gmbDisconnectedCTA": {
   "en": "Integrate GBP",
-  "ko": "GBP 연동하기"
+  "ko": "Google 비즈니스 프로필 연동하기"
  },
  "reputationApp.reputation.reputationReviews.manualReviews.addCustomPlatform": {
   "en": "Add custom platform",
@@ -314341,7 +314341,7 @@
  },
  "reputationApp.reputation.reputationReviews.reviewsAI.automaticModeDescription": {
   "en": "Automatically sends review responses",
-  "ko": "리뷰 응답을 자동으로 발송해요"
+  "ko": "리뷰 응답을 자동으로 발송합니다"
  },
  "reputationApp.reputation.reputationReviews.reviewsAI.exceededSuggestiveRepliesError": {
   "en": "You have used all 4 AI reply suggestions for this review.",
@@ -314361,7 +314361,7 @@
  },
  "reputationApp.reputation.reputationReviews.reviewsAI.replyCountDownMessage": {
   "en": "The AI Bot will respond to the review in {time}",
-  "ko": "AI 봇이 {time} 안에 리뷰에 응답합니다"
+  "ko": "AI 봇이 {time} 후 리뷰에 응답합니다"
  },
  "reputationApp.reputation.reputationReviews.reviewsAI.starRatingFilterPlaceholder": {
   "en": "Select the star ratings for generating replies.",
@@ -314369,7 +314369,7 @@
  },
  "reputationApp.reputation.reputationReviews.reviewsAI.suggestiveModeDescription": {
   "en": "Helps you articulate review responses",
-  "ko": "리뷰 응답 작성을 도와줘요"
+  "ko": "리뷰 응답 작성을 도와줍니다"
  },
  "reputationApp.reputation.reputationReviews.shareReviewsHeader": {
   "en": "Share reviews on Social Media",
@@ -314509,7 +314509,7 @@
  },
  "reputationApp.reputation.reputationSettings.integrations.invalidUrl": {
   "en": "Please make sure the URL is correct. And the page is publicly accessible.",
-  "ko": "URL이 올바른지 확인해주세요. 그리고 페이지가 공개적으로 접근 가능한지 확인해주세요."
+  "ko": "URL이 올바른지, 페이지가 공개되어 있는지 확인해 주세요."
  },
  "reputationApp.reputation.reputationSettings.integrations.manage": {
   "en": "Manage",
@@ -314549,7 +314549,7 @@
  },
  "reputationApp.reputation.reputationSettings.integrations.nPagesShort": {
   "en": "{n} Pages",
-  "ko": "{n}페이지"
+  "ko": "페이지 {n}개"
  },
  "reputationApp.reputation.reputationSettings.integrations.oneAccountConnected": {
   "en": "1 account connected",
@@ -314625,7 +314625,7 @@
  },
  "reputationApp.reputation.reputationSettings.qrCode.tableHeadings.updatedOn": {
   "en": "Updated On",
-  "ko": "업데이트됨"
+  "ko": "업데이트일"
  },
  "reputationApp.reputation.reputationSettings.qrCode.title": {
   "en": "QR Code",
@@ -314729,7 +314729,7 @@
  },
  "reputationApp.reputation.reputationSettings.reviewsAIAgents.reviewTypes.oneStarOrAbove": {
   "en": "1 star or above",
-  "ko": "1점 이상"
+  "ko": "별 1개 이상"
  },
  "reputationApp.reputation.reputationSettings.reviewsAIAgents.reviewTypes.threeStarsOrAbove": {
   "en": "3 stars or above",
@@ -314773,7 +314773,7 @@
  },
  "reputationApp.reputation.reputationSettings.senderComponent.emailDefaultTooltip": {
   "en": "Defaults to the location email. If unavailable, the logged-in user's email will be used.",
-  "ko": "위치 이메일을 기본값으로 사용합니다. 사용할 수 없는 경우 로그인한 사용자의 이메일이 사용됩니다."
+  "ko": "서브 계정 이메일을 기본값으로 사용합니다. 사용할 수 없는 경우 로그인한 사용자의 이메일이 사용됩니다."
  },
  "reputationApp.reputation.reputationSettings.senderComponent.emailHint": {
   "en": "This email address will be used as the default sender for email review requests.",
@@ -314925,11 +314925,11 @@
  },
  "reputationApp.reputation.reputationWidget.dropAVideoButtonColorField": {
   "en": "Drop a Video Button Color",
-  "ko": "동영상 버튼 색상 추가"
+  "ko": "'동영상 남기기' 버튼 색상"
  },
  "reputationApp.reputation.reputationWidget.dropAVideoField": {
   "en": "Drop a Video Button",
-  "ko": "동영상 버튼 추가"
+  "ko": "'동영상 남기기' 버튼"
  },
  "reputationApp.reputation.reputationWidget.embedCodeField": {
   "en": "Embed Code To Website",
@@ -314937,7 +314937,7 @@
  },
  "reputationApp.reputation.reputationWidget.excludeNoDescReviewField": {
   "en": "Exclude review containing no description",
-  "ko": "설명이 없는 리뷰 제외"
+  "ko": "내용이 없는 리뷰 제외"
  },
  "reputationApp.reputation.reputationWidget.makeItDefaultMsg": {
   "en": "Make it Default",
@@ -314953,7 +314953,7 @@
  },
  "reputationApp.reputation.reputationWidget.makeItLiveMsg": {
   "en": "Make it LIVE",
-  "ko": "LIVE로 전환"
+  "ko": "게시하기"
  },
  "reputationApp.reputation.reputationWidget.minRatingField": {
   "en": "Minimum Ratings",
@@ -314969,7 +314969,7 @@
  },
  "reputationApp.reputation.reputationWidget.overrideVideoLinkLabel": {
   "en": "Override Drop a Video Link",
-  "ko": "동영상 링크 대체"
+  "ko": "'동영상 남기기' 링크 대체"
  },
  "reputationApp.reputation.reputationWidget.paginationTypeOptions.numbers": {
   "en": "Numbers",
@@ -315021,7 +315021,7 @@
  },
  "reputationApp.reputation.reputationWidget.videoTestimonialsSourceField": {
   "en": "Video Testimonials Source",
-  "ko": "비디오 후기 소스"
+  "ko": "비디오 후기 출처"
  },
  "reputationApp.reputation.reputationWidget.widgetPositionOptions.bottom": {
   "en": "Bottom",
@@ -315105,11 +315105,11 @@
  },
  "reputationApp.reputation.sendReviewRequestModal.reviewRequestModeEmailEmptyEmailAddress": {
   "en": "Select a contact with Email Address to send Email Review Request",
-  "ko": "이메일 리뷰 요청을 보낼 이메일 주소가 있는 연락처 선택"
+  "ko": "이메일 리뷰 요청을 보내려면 이메일 주소가 있는 연락처를 선택하세요"
  },
  "reputationApp.reputation.sendReviewRequestModal.reviewRequestModeSMSContactDND": {
   "en": "Cannot send SMS review requests as Contact is marked as DND",
-  "ko": "연락처가 DND로 표시되어 SMS 리뷰 요청을 보낼 수 없습니다"
+  "ko": "연락처가 방해 금지(DND)로 설정되어 SMS 리뷰 요청을 보낼 수 없습니다"
  },
  "reputationApp.reputation.sendReviewRequestModal.reviewRequestModeSMSDisabled": {
   "en": "SMS Review Requests are disabled. You can enable them here:",
@@ -315117,15 +315117,15 @@
  },
  "reputationApp.reputation.sendReviewRequestModal.reviewRequestModeSMSEmptyPhoneNumber": {
   "en": "Select a contact with Phone Number to send SMS Review Request",
-  "ko": "SMS 리뷰 요청을 보낼 전화번호가 있는 연락처 선택"
+  "ko": "SMS 리뷰 요청을 보내려면 전화번호가 있는 연락처를 선택하세요"
  },
  "reputationApp.reputation.sendReviewRequestModal.reviewRequestModeWhatsApp": {
   "en": "Review Request WhatsApp",
-  "ko": "리뷰 요청 WhatsApp"
+  "ko": "WhatsApp 리뷰 요청"
  },
  "reputationApp.reputation.sendReviewRequestModal.reviewRequestModeWhatsAppAndSmsDnd": {
   "en": "Cannot send SMS and WhatsApp review requests as Contact is marked as DND",
-  "ko": "연락처가 DND로 표시되어 SMS 및 WhatsApp 리뷰 요청을 보낼 수 없습니다"
+  "ko": "연락처가 방해 금지(DND)로 설정되어 SMS 및 WhatsApp 리뷰 요청을 보낼 수 없습니다"
  },
  "reputationApp.reputation.sendReviewRequestModal.reviewRequestModeWhatsAppDisabled": {
   "en": "WhatsApp Review Requests are disabled. You can enable them here:",
@@ -315133,7 +315133,7 @@
  },
  "reputationApp.reputation.sendReviewRequestModal.reviewRequestModeWhatsAppTemplateError": {
   "en": "No/Unapproved WhatsApp Review Request Template Configured",
-  "ko": "리뷰 요청 WhatsApp 템플릿이 설정되지 않음/승인되지 않음"
+  "ko": "WhatsApp 리뷰 요청 템플릿이 없거나 승인되지 않았습니다"
  },
  "reputationApp.reputation.sendReviewRequestModal.templateNotAvailable": {
   "en": "No template available",
@@ -315201,15 +315201,15 @@
  },
  "reputationApp.reputation.videoTestimonials.collectorModal.welcomeForm.howItWorksTitleLabel": {
   "en": "How It Works?",
-  "ko": "작동 방식은?"
+  "ko": "이용 방법"
  },
  "reputationApp.reputation.videoTestimonials.collectorModal.welcomeForm.spokespersonTitleLabel": {
   "en": "Spokesperson",
-  "ko": "대변인"
+  "ko": "담당자"
  },
  "reputationApp.reputation.videoTestimonials.collectorModal.welcomeForm.spokespersonTitlePlaceholder": {
   "en": "Spokesperson Title",
-  "ko": "대변인 직책"
+  "ko": "담당자 직책"
  },
  "reputationApp.reputation.videoTestimonials.collectorModal.welcomeForm.title": {
   "en": "Welcome Page Settings",
@@ -315233,11 +315233,11 @@
  },
  "reputationApp.reputation.videoTestimonials.emptyMessages.emptyCollectorDescription": {
   "en": "Just create one now! You can gather responses and send out review requests easily.",
-  "ko": "지금 만들어보세요! 응답을 수집하고 리뷰 요청을 쉽게 보낼 수 있어요."
+  "ko": "지금 만들어 보세요! 응답을 수집하고 리뷰 요청을 쉽게 보낼 수 있습니다."
  },
  "reputationApp.reputation.videoTestimonials.emptyMessages.emptyCollectorTitle": {
   "en": "No Video Collectors Created",
-  "ko": "비디오 수집기가 없어요"
+  "ko": "생성된 비디오 수집기가 없습니다"
  },
  "reputationApp.reputation.videoTestimonials.emptyMessages.noResponseRecorded": {
   "en": "No Response was recorded for the session",
@@ -315257,7 +315257,7 @@
  },
  "reputationApp.reputation.videoTestimonials.modals.cloneCollectorTitle": {
   "en": "Clone Video Collector",
-  "ko": "비디오 컬렉터 복제"
+  "ko": "비디오 수집기 복제"
  },
  "reputationApp.reputation.videoTestimonials.modals.deleteCollectorDescription": {
   "en": "Are you sure you want to delete this collector?",
@@ -315317,7 +315317,7 @@
  },
  "schemaMarkupApp.schemaMarkup.nested.common.AggregateOfferItemOffer.availability.label": {
   "en": "Availability",
-  "ko": "가용성"
+  "ko": "재고 상태"
  },
  "schemaMarkupApp.schemaMarkup.nested.common.ContactPoint.telephone.label": {
   "en": "Phone",
@@ -315401,7 +315401,7 @@
  },
  "schemaMarkupApp.schemaMarkup.nested.product.Offers.availability.label": {
   "en": "Availability",
-  "ko": "가용성"
+  "ko": "재고 상태"
  },
  "schemaMarkupApp.schemaMarkup.nested.service.ProductWeight.unitCode.label": {
   "en": "Unit",
@@ -315421,7 +315421,7 @@
  },
  "schemaMarkupApp.schemaMarkup.properties.event.director.label": {
   "en": "Director",
-  "ko": "이사"
+  "ko": "감독"
  },
  "schemaMarkupApp.schemaMarkup.properties.event.inLanguage.label": {
   "en": "Language",
@@ -315461,11 +315461,11 @@
  },
  "schemaMarkupApp.schemaMarkup.sidebar.duplicate.badge": {
   "en": "Duplicate",
-  "ko": "복제"
+  "ko": "중복"
  },
  "schemaMarkupApp.schemaMarkup.unsavedChanges.discard": {
   "en": "Discard",
-  "ko": "삭제"
+  "ko": "변경 취소"
  },
  "socialPlannerApp.common.beta": {
   "en": "Beta",
@@ -315565,7 +315565,7 @@
  },
  "socialPlannerApp.settings.manageLinks.assignedTo": {
   "en": "Recipients",
-  "ko": "수신자들"
+  "ko": "수신자"
  },
  "socialPlannerApp.settings.manageLinks.linkLabel": {
   "en": "Link",
@@ -315661,7 +315661,7 @@
  },
  "socialPlannerApp.socialListening.alerts.cadenceLabel": {
   "en": "How often?",
-  "ko": "얼마나 자주?"
+  "ko": "알림 주기"
  },
  "socialPlannerApp.socialListening.alerts.cadenceWeekly": {
   "en": "Weekly",
@@ -315693,7 +315693,7 @@
  },
  "socialPlannerApp.socialListening.alerts.paused": {
   "en": "Paused",
-  "ko": "일시 중지"
+  "ko": "일시 중지됨"
  },
  "socialPlannerApp.socialListening.alerts.previewFooterUnsubscribe": {
   "en": "Unsubscribe",
@@ -315701,7 +315701,7 @@
  },
  "socialPlannerApp.socialListening.alerts.recipientsLabel": {
   "en": "Send to",
-  "ko": "보내기"
+  "ko": "받는 사람"
  },
  "socialPlannerApp.socialListening.alerts.recommended": {
   "en": "Recommended",
@@ -315789,7 +315789,7 @@
  },
  "socialPlannerApp.socialListening.detail.freshness.fresh": {
   "en": "Live",
-  "ko": "라이브"
+  "ko": "실시간"
  },
  "socialPlannerApp.socialListening.detail.freshness.refreshing": {
   "en": "Refreshing",
@@ -315805,7 +315805,7 @@
  },
  "socialPlannerApp.socialListening.detail.groupAudience": {
   "en": "Audience insights",
-  "ko": "잠재고객 인사이트"
+  "ko": "오디언스 인사이트"
  },
  "socialPlannerApp.socialListening.detail.groupEngagement": {
   "en": "Engagement",
@@ -315821,11 +315821,11 @@
  },
  "socialPlannerApp.socialListening.detail.heatmapLess": {
   "en": "Less",
-  "ko": "미만"
+  "ko": "적음"
  },
  "socialPlannerApp.socialListening.detail.heatmapMore": {
   "en": "More",
-  "ko": "더보기"
+  "ko": "많음"
  },
  "socialPlannerApp.socialListening.detail.language": {
   "en": "Language",
@@ -315873,7 +315873,7 @@
  },
  "socialPlannerApp.socialListening.detail.reach": {
   "en": "Views",
-  "ko": "뷰"
+  "ko": "조회수"
  },
  "socialPlannerApp.socialListening.detail.refresh": {
   "en": "Refresh",
@@ -315893,7 +315893,7 @@
  },
  "socialPlannerApp.socialListening.detail.shares": {
   "en": "Shares",
-  "ko": "공유"
+  "ko": "공유 수"
  },
  "socialPlannerApp.socialListening.detail.showMore": {
   "en": "Show more",
@@ -315977,7 +315977,7 @@
  },
  "socialPlannerApp.socialListening.search.action.open": {
   "en": "Open",
-  "ko": "진행 중"
+  "ko": "열기"
  },
  "socialPlannerApp.socialListening.search.cardSources": {
   "en": "Sources",
@@ -316025,7 +316025,7 @@
  },
  "socialPlannerApp.socialListening.search.moreActions": {
   "en": "More actions",
-  "ko": "더 많은 액션"
+  "ko": "추가 작업"
  },
  "socialPlannerApp.socialListening.search.recent": {
   "en": "Recent",
@@ -316101,7 +316101,7 @@
  },
  "storeWidgetApp.pickupLocations.disabled": {
   "en": "disabled",
-  "ko": "비활성화"
+  "ko": "비활성화됨"
  },
  "storeWidgetApp.pickupLocations.enabled": {
   "en": "enabled",
@@ -316125,7 +316125,7 @@
  },
  "storeWidgetApp.pickupLocations.form.buttons.discard": {
   "en": "Discard",
-  "ko": "삭제"
+  "ko": "변경 취소"
  },
  "storeWidgetApp.pickupLocations.form.buttons.save": {
   "en": "Save",
@@ -316289,7 +316289,7 @@
  },
  "usersMicroApp.notifications.details.recipients": {
   "en": "Recipients",
-  "ko": "수신자들"
+  "ko": "수신자"
  },
  "usersMicroApp.notifications.details.refresh": {
   "en": "Refresh",
@@ -316357,7 +316357,7 @@
  },
  "usersMicroApp.notifications.list.filters.locationId": {
   "en": "Location ID",
-  "ko": "위치 ID"
+  "ko": "서브 계정 ID"
  },
  "usersMicroApp.notifications.list.filters.locationIdPlaceholder": {
   "en": "Optional",
@@ -316637,7 +316637,7 @@
  },
  "usersMicroApp.users.availability.title": {
   "en": "User Availability",
-  "ko": "사용자 가용성"
+  "ko": "사용자 예약 가능 시간"
  },
  "usersMicroApp.users.breadcrumb.home": {
   "en": "Home",
@@ -316681,7 +316681,7 @@
  },
  "usersMicroApp.users.call.timeout": {
   "en": "Incoming Call Timeout",
-  "ko": "수신 통화 시간 초과"
+  "ko": "수신 통화 대기 시간"
  },
  "usersMicroApp.users.call.title": {
   "en": "Call & Voicemail Settings",
@@ -317041,7 +317041,7 @@
  },
  "usersMicroApp.users.type.account": {
   "en": "Account",
-  "ko": "계정"
+  "ko": "서브 계정"
  },
  "usersMicroApp.users.type.agency": {
   "en": "Agency",
@@ -317065,7 +317065,7 @@
  },
  "wordpressApp.wordpress.advanceSetting.unsubscribe.modal.general.locationName": {
   "en": "Location Name",
-  "ko": "위치 이름"
+  "ko": "서브 계정 이름"
  },
  "wordpressApp.wordpress.advanceSetting.unsubscribe.reasons.subReasons.other": {
   "en": "Other",
