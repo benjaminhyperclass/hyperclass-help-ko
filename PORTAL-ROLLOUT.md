@@ -57,6 +57,17 @@
 - 기존 고객 서브계정: 같은 절차를 계정별로(수동). 고객 계정 쓰기는 고객 동의·요청이 있을 때만.
 - 기존 고객 일괄 적용: **GHL 공개 API 에 포털 레벨 Custom JS/CSS 필드는 없다**(2026-10-31, LeadConnector API 작업 검색 — client portal branding custom code 관련 작업 0건). 참고로 **코스 상품**에는 `customJs`·`customCss`·`customHeader`·`customFooter` 필드가 있다(`PUT /courses/products/{productId}`, 로케이션 토큰 + `courses.write`). 코스 페이지 한정 대안 경로지만 고객 계정 쓰기라 **이번 범위에서 하지 않는다**(보고만).
 
+### C5. 일괄 적용 러너 — 앱 내부 API (2026-11-05)
+- 공개 API 에는 없지만 **앱 화면이 쓰는 내부 API** 로 포털 Custom JS/CSS 를 읽고 쓸 수 있다: `GET/PUT https://backend.leadconnectorhq.com/clientclub/portal-settings/{locationId}` (헤더 `channel: APP`·`source: WEB_USER`·`source-id: {locationId}`·`version: 2021-07-28`·`token-id: await window.getToken()`). PUT 본문은 화면(브랜딩 저장)과 같은 필드 묶음: `locationId, supportEmail, copyRight, portalBannerText, portalDescription, customCss, customJs, headerCode, footerCode, branding{brandColor1, brandColor2, logo, favicon, portalImage}`.
+- 러너 `tools/portal/hc-portal-ko-runner.js` (app.hyperclass.ai 로케이션 화면 콘솔·Claude in Chrome 에서 실행):
+  - `HCPK.inventory(ids)` — 포털 유무(404 = 포털 미생성)·호스트·기존 코드 길이·한글팩 설치 여부·꺾쇠(`<`) 여부
+  - `HCPK.run(id, {dry:true})` → `HCPK.run(id)` / `HCPK.runAll(ids)`
+  - 한글팩 블록을 기존 코드 **맨 위에 덧붙인다**(덮어쓰지 않음). 이미 있으면 건너뜀. 기존 JS 에 `<` 가 있으면 JS·CSS 모두 건너뛰고 보고(슬롯 없이 베일만 들어가면 매 화면 2.5초 가려지므로).
+  - 저장 뒤 다시 읽어 **customJs·customCss 외 전 필드 비교** — 달라진 필드가 있으면 즉시 원래 값으로 되돌리고 `other-fields-changed` 로 보고.
+  - 고객 칸에 들어가는 블록은 레포 `js/portal-slot.js`·`css/portal-custom.css` 의 코드 부분에 짧은 한국어 안내 주석만 붙인 것이다(내부 메모 주석 제외).
+- 포털이 아직 없는 계정(404)은 포털을 처음 연 뒤 다시 돌린다 — 신규 계정 온보딩에 포함.
+- 고객 포털 일괄 적용은 벤자민 승인(2026-11-05, 꺾쇠가 있는 1곳 제외).
+
 ### C4. 고객이 이미 넣은 코드 보호
 - **덮어쓰지 않는다. 기존 코드의 맨 위에 덧붙인다.** 한글팩 6줄은 독립 IIFE 라 앞뒤 코드와 섞이지 않는다.
 - 덧붙이기 전 고객의 기존 코드에 `<` 문자가 있는지 본다 — 있으면 이미 주입이 깨져 있는 상태이므로 고객에게 알리고, 한글팩 줄만이라도 동작하게 할지 고객과 정한다.
