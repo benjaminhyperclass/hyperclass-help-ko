@@ -158,3 +158,8 @@ superagentsApp(Managed Agents 빌더·목록·채팅 레이어)의 제품명 표
 - 1,178문구는 참조본 동일 영어 재사용, 2,195문구 신규 번역 → 독립 검수 2회(35건 교정) → 사전 v4.2.28.
 - 용어: CC/BCC = **참조/숨은 참조** · Voice note = **음성 녹음**(Voicemail = 음성 메시지와 구분) · 연락처 상세의 Actions 탭 = **작업 탭**(라이브 탭 표기와 일치), 그 밖의 action = 액션 · All fields 탭 = **전체 필드** · Owner = 소유자 · Reply = 답글 · Inbox = 인박스 · 수동 Outbound/Inbound call = 발신/수신 통화.
 - 경로 충돌 2건(참조본의 같은 경로가 다른 영어): `common.description`, `commonComponents.addRecordAssociationDisabledTooltip` — 검증기(C3)가 경로로 영어를 대조하므로 한국어에서 `{object}`·`{record}` 를 쓰지 않는 문장으로 우회(뜻은 유지). 참조본은 경로가 없을 때만 추가(3,251), 다른 영어가 있는 경로 122개는 건드리지 않음.
+
+## [확정] 번역 라운드 결과는 독립 검수 후 교정 — 2026-11-05
+- 텔레메트리 라운드(v4.2.29, 6,698건) 중 노출이 큰 11개 네임스페이스 3,909문구를 독립 검수 4명이 전수 검토 → 404건 교정(v4.2.30). 결함률 약 10%: Location→서브 계정 미준수, Offer=오퍼·Certificate=수료증 미준수, 이메일 빌더의 DND(드래그 앤 드롭)를 수신거부로 오역, 'markdown'(가격 인하)→마크다운, 'Second'(둘째 주)→초, 자리표시자 뒤 고정 조사, 'LC' 브랜드 잔존 등.
+- 용어 추가: Topic = 토픽, Sentiment = 감성, 하위 계정 이전 = 이전, Attribution = 어트리뷰션(기존 결정 유지), 이메일 Unsubscribed = 수신거부(이메일 빌더 안 통일).
+- 남은 라운드 문구(약 2,800, agentLogs·schemaMarkup·crmObjectsSettings·aiEmployees 등)는 같은 방식으로 이어서 검수한다.

@@ -314141,7 +314141,7 @@
  },
  "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.fields.timeWindowAnd": {
   "en": "and",
-  "ko": "그리고"
+  "ko": "~"
  },
  "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.reviewFilter.allReviews": {
   "en": "All Reviews",
@@ -351265,7 +351265,7 @@
  },
  "clientPortalBuilder.backend.COMMON_EMAIL_LOCATION_REQUIRED": {
   "en": "Email and location are required.",
-  "ko": "이메일과 위치는 필수입니다."
+  "ko": "이메일과 서브 계정 정보는 필수입니다."
  },
  "clientPortalBuilder.backend.COMMON_INVALID_REQUEST": {
   "en": "Invalid request.",
@@ -351289,11 +351289,11 @@
  },
  "clientPortalBuilder.backend.PORTAL_SETTINGS_DOMAIN_CONFLICT": {
   "en": "Domain is archived under a different location and not currently owned by this location.",
-  "ko": "이 도메인은 다른 위치에 보관되어 있으며 현재 이 위치가 소유하고 있지 않습니다."
+  "ko": "이 도메인은 다른 서브 계정에 보관되어 있으며 현재 이 서브 계정이 소유하고 있지 않습니다."
  },
  "clientPortalBuilder.backend.PORTAL_SETTINGS_LOCATION_EXISTS": {
   "en": "This location already exists.",
-  "ko": "이 위치는 이미 존재합니다."
+  "ko": "이 서브 계정은 이미 존재합니다."
  },
  "clientPortalBuilder.backend.PORTAL_SETTINGS_NOT_FOUND": {
   "en": "Portal settings not found.",
@@ -351389,15 +351389,15 @@
  },
  "clientPortalBuilder.brandedApp.liveCancelled.description": {
   "en": "Your branded app is your business in your customer's pocket—don't let it go dark!",
-  "ko": "브랜드 앱은 고객의 주머니 속 당신의 비즈니스입니다—꺼지게 두지 마세요!"
+  "ko": "브랜드 앱은 고객의 손안에 있는 회원님의 비즈니스입니다. 멈추게 두지 마세요!"
  },
  "clientPortalBuilder.brandedApp.liveCancelled.momentumPartOne": {
   "en": "Won't lose",
-  "ko": "잃지 않습니다"
+  "ko": "모멘텀과 신뢰를"
  },
  "clientPortalBuilder.brandedApp.liveCancelled.momentumPartTwo": {
   "en": "momentum or trust",
-  "ko": "모멘텀이나 신뢰를"
+  "ko": "잃지 않습니다"
  },
  "clientPortalBuilder.brandedApp.liveCancelled.positiveDescription": {
   "en": "Your content, your branding, your users — everything's safe and waiting.",
@@ -351405,7 +351405,7 @@
  },
  "clientPortalBuilder.brandedApp.liveCancelled.positiveTitle": {
   "en": "Your App is Locked for Users! But Good news: You can pick up right where you left off.",
-  "ko": "사용자를 위한 앱이 잠겼습니다! 하지만 좋은 소식이 있습니다: 중단한 지점부터 바로 다시 시작할 수 있습니다."
+  "ko": "사용자의 앱 이용이 잠겼습니다! 하지만 좋은 소식이 있습니다. 중단한 지점부터 바로 다시 시작할 수 있습니다."
  },
  "clientPortalBuilder.brandedApp.liveCancelled.restartTitle": {
   "en": "It takes less than 2 minutes to restart.",
@@ -351417,11 +351417,11 @@
  },
  "clientPortalBuilder.brandedApp.liveCancelled.retainYourPartOne": {
   "en": "Retain your",
-  "ko": "유지하세요"
+  "ko": "앱 스토어 입지를"
  },
  "clientPortalBuilder.brandedApp.liveCancelled.retainYourPartTwo": {
   "en": "app store presence",
-  "ko": "앱 스토어 입지를"
+  "ko": "유지하세요"
  },
  "clientPortalBuilder.brandedApp.liveCancelled.secureCheckout": {
   "en": "🔒 Secure checkout • 💳 All payment methods accepted • 📞 Customer support available",
@@ -351437,7 +351437,7 @@
  },
  "clientPortalBuilder.brandedApp.liveCancelled.supportTitle": {
   "en": "We're here to support your growth. Let's turn the lights back on.",
-  "ko": "저희는 여러분의 성장을 지원하기 위해 여기 있습니다. 다시 불을 켜볼까요."
+  "ko": "저희가 회원님의 성장을 함께 돕겠습니다. 앱을 다시 켜 볼까요?"
  },
  "clientPortalBuilder.brandedApp.liveCancelled.title": {
   "en": "🚫 Oops! Your App Subscription is Inactive",
@@ -351461,7 +351461,7 @@
  },
  "clientPortalBuilder.brandedApp.notification.incompleteForSubmit": {
   "en": "Please complete \"{field}\" before submitting for review.",
-  "ko": "검토 제출 전에 \"{field}\"를 완료해 주세요."
+  "ko": "검토 제출 전에 \"{field}\" 항목을 완료해 주세요."
  },
  "clientPortalBuilder.brandedApp.paymentSteps.header.description": {
   "en": "You have successfully made the purchase.",
@@ -351673,7 +351673,7 @@
  },
  "clientPortalBuilder.brandedAppBuilder.appDetailsForm.supportEmailTooltip": {
   "en": "This email will be used as the primary support email <br> and stores may use it to reach out to you ",
-  "ko": "이 이메일은 기본 지원 이메일로 사용되며 <br> 스토어에서 연락을 위해 사용할 수 있습니다"
+  "ko": "이 이메일은 기본 지원 이메일로 사용되며 <br> 스토어에서 연락을 위해 사용할 수 있습니다 "
  },
  "clientPortalBuilder.brandedAppBuilder.appDetailsForm.supportUrlFeedback": {
   "en": "Will be used for App Support in the App stores",
@@ -351749,7 +351749,7 @@
  },
  "clientPortalBuilder.brandedAppBuilder.clearAllFields": {
   "en": " Click to clear all fields and return to their default values",
-  "ko": "클릭하여 모든 필드를 지우고 기본값으로 되돌립니다"
+  "ko": " 클릭하여 모든 필드를 지우고 기본값으로 되돌립니다"
  },
  "clientPortalBuilder.brandedAppBuilder.developmentDetails": {
   "en": "Development Details",
@@ -351765,7 +351765,7 @@
  },
  "clientPortalBuilder.brandedAppBuilder.error.appStoreConnectKeyFile": {
   "en": "Please enter app store connect key file",
-  "ko": "App Store Connect 키 파일을 입력하세요"
+  "ko": "App Store Connect 키 파일을 업로드하세요"
  },
  "clientPortalBuilder.brandedAppBuilder.error.appStoreConnectKeyId": {
   "en": "Please enter app store connect key ID",
@@ -351937,7 +351937,7 @@
  },
  "clientPortalBuilder.brandedAppBuilder.pleaseAddTheRequiredFields": {
   "en": "Please add the required fields",
-  "ko": "필수 필드를 추가해 주세요"
+  "ko": "필수 항목을 입력해 주세요"
  },
  "clientPortalBuilder.brandedAppBuilder.profileTitle": {
   "en": "App setup",
@@ -351997,7 +351997,7 @@
  },
  "clientPortalBuilder.brandedAppBuilder.verification.continueToVerification": {
   "en": "Continue to verification",
-  "ko": "검증으로 계속"
+  "ko": "검증 단계로 이동"
  },
  "clientPortalBuilder.brandedAppBuilder.verification.credentialField.keyFile": {
   "en": "Key File",
@@ -352025,7 +352025,7 @@
  },
  "clientPortalBuilder.brandedAppBuilder.verification.longDescription": {
   "en": "long",
-  "ko": "길게"
+  "ko": "긴"
  },
  "clientPortalBuilder.brandedAppBuilder.verification.openAppleAgreements": {
   "en": "Open Apple agreements",
@@ -352049,7 +352049,7 @@
  },
  "clientPortalBuilder.brandedAppBuilder.verification.reason.APPLE_CREDENTIALS_INVALID": {
   "en": "Check the App Store Connect Issuer ID, Key ID, and Key File on Development details.",
-  "ko": "개발 세부 정보에서 App Store Connect Issuer ID, Key ID, 키 파일을 확인해 주세요."
+  "ko": "개발 세부 정보에서 App Store Connect 발급자 ID, 키 ID, 키 파일을 확인해 주세요."
  },
  "clientPortalBuilder.brandedAppBuilder.verification.reason.APPLE_CREDENTIALS_INVALID_FIELD": {
   "en": "{field} is not in the format Apple expects.",
@@ -352093,7 +352093,7 @@
  },
  "clientPortalBuilder.brandedAppBuilder.verification.reason.CAROUSEL_MISSING": {
   "en": "Add carousel image {position}.",
-  "ko": "캐러셀 이미지 {position} 추가"
+  "ko": "캐러셀 이미지 {position}을(를) 추가해 주세요."
  },
  "clientPortalBuilder.brandedAppBuilder.verification.reason.CAROUSEL_NOT_HTTPS": {
   "en": "Carousel image {position} must use https://.",
@@ -352169,7 +352169,7 @@
  },
  "clientPortalBuilder.brandedAppBuilder.verification.shortDescription": {
   "en": "short",
-  "ko": "짧게"
+  "ko": "짧은"
  },
  "clientPortalBuilder.brandedAppBuilder.verification.status.PENDING": {
   "en": "Not checked yet",
@@ -352333,15 +352333,15 @@
  },
  "clientPortalBuilder.dashboard.whatsNew.cssHint": {
   "en": "Using custom CSS or custom JS? Preview the new design first, then ",
-  "ko": "사용자 지정 CSS 또는 JS를 사용 중이신가요? 먼저 새 디자인을 미리 확인한 후"
+  "ko": "사용자 지정 CSS 또는 JS를 사용 중이신가요? 먼저 새 디자인을 미리 확인하고, 모두에게 활성화하기 전에 "
  },
  "clientPortalBuilder.dashboard.whatsNew.cssHintPath": {
   "en": "update your custom code",
-  "ko": "사용자 지정 코드를 업데이트해 주세요"
+  "ko": "사용자 지정 코드를 업데이트"
  },
  "clientPortalBuilder.dashboard.whatsNew.cssHintSuffix": {
   "en": "before enabling it for everyone.",
-  "ko": "모두에게 활성화하기 전에."
+  "ko": "하세요."
  },
  "clientPortalBuilder.dashboard.whatsNew.divider": {
   "en": "then",
@@ -352425,7 +352425,7 @@
  },
  "clientPortalBuilder.dashboardModal.descriptions.chooseContactSendMagicLinkDescription": {
   "en": "Choose a {contact} to send magic link via email",
-  "ko": "매직 링크를 이메일로 보낼 {contact}를 선택하세요"
+  "ko": "매직 링크를 이메일로 보낼 {contact}을(를) 선택하세요"
  },
  "clientPortalBuilder.dashboardModal.descriptions.magicLinkReadyDescription": {
   "en": "Your Magic Link is now ready for use. Simply click the <b>Copy Link</b> button below to start sharing.",
@@ -352441,11 +352441,11 @@
  },
  "clientPortalBuilder.dashboardModal.titles.chooseContactInviteTitle": {
   "en": "Select a {contact} or enter an email to invite to Client Portal",
-  "ko": "클라이언트 포털에 초대할 {contact}를 선택하거나 이메일을 입력하세요"
+  "ko": "클라이언트 포털에 초대할 {contact}을(를) 선택하거나 이메일을 입력하세요"
  },
  "clientPortalBuilder.dashboardModal.titles.selectContactLoginEmailTitle": {
   "en": "Select {contact} to send Login Email",
-  "ko": "로그인 이메일을 보낼 {contact}를 선택하세요"
+  "ko": "로그인 이메일을 보낼 {contact}을(를) 선택하세요"
  },
  "clientPortalBuilder.domainSetup.general.domainSetupDescription": {
   "en": "Set up the Sub-Domain for client portal or use a custom domain",
@@ -352493,19 +352493,19 @@
  },
  "clientPortalBuilder.emailSettings.preferenceTemplate.certificates.groups.expiringCertificates.certificateExpired": {
   "en": "Credential Expired",
-  "ko": "자격 증명 만료됨"
+  "ko": "수료증 만료됨"
  },
  "clientPortalBuilder.emailSettings.preferenceTemplate.certificates.groups.expiringCertificates.certificateExpiryReminder": {
   "en": "Credential Expiry Reminder",
-  "ko": "자격 증명 만료 알림"
+  "ko": "수료증 만료 알림"
  },
  "clientPortalBuilder.emailSettings.preferenceTemplate.certificates.groups.expiringCertificates.description": {
   "en": "Notify members about their expiring credentials",
-  "ko": "자격 증명 만료에 대해 멤버에게 알림"
+  "ko": "만료 예정인 수료증에 대해 멤버에게 알림"
  },
  "clientPortalBuilder.emailSettings.preferenceTemplate.certificates.groups.expiringCertificates.title": {
   "en": "Expiring Credentials",
-  "ko": "만료 예정 자격 증명"
+  "ko": "만료 예정 수료증"
  },
  "clientPortalBuilder.emailSettings.preferenceTemplate.certificates.groups.issueOrRenew.badgeIssued": {
   "en": "Badge Issued",
@@ -352513,11 +352513,11 @@
  },
  "clientPortalBuilder.emailSettings.preferenceTemplate.certificates.groups.issueOrRenew.certificateIssued": {
   "en": "Certificate Issued",
-  "ko": "인증서 발급됨"
+  "ko": "수료증 발급됨"
  },
  "clientPortalBuilder.emailSettings.preferenceTemplate.certificates.groups.issueOrRenew.certificateRenewal": {
   "en": "Credential Renewal",
-  "ko": "자격 증명 갱신"
+  "ko": "수료증 갱신"
  },
  "clientPortalBuilder.emailSettings.preferenceTemplate.certificates.groups.issueOrRenew.communityBadgeIssued": {
   "en": "Community Badge Issued",
@@ -352525,15 +352525,15 @@
  },
  "clientPortalBuilder.emailSettings.preferenceTemplate.certificates.groups.issueOrRenew.description": {
   "en": "Notify members about issued or renewed credentials",
-  "ko": "발급 또는 갱신된 자격 증명에 대해 멤버에게 알림"
+  "ko": "발급 또는 갱신된 수료증에 대해 멤버에게 알림"
  },
  "clientPortalBuilder.emailSettings.preferenceTemplate.certificates.groups.issueOrRenew.moduleCompleteCredentialIssued": {
   "en": "Module Completion Credential Issued",
-  "ko": "모듈 완료 자격 증명 발급됨"
+  "ko": "모듈 완료 수료증 발급됨"
  },
  "clientPortalBuilder.emailSettings.preferenceTemplate.certificates.groups.issueOrRenew.title": {
   "en": "Issue/Renew Credential",
-  "ko": "자격 증명 발급/갱신"
+  "ko": "수료증 발급/갱신"
  },
  "clientPortalBuilder.emailSettings.preferenceTemplate.certificates.groups.issueOrRenew.welcomeBadgeIssued": {
   "en": "Welcome Badge Issued",
@@ -352613,7 +352613,7 @@
  },
  "clientPortalBuilder.emailSettings.preferenceTemplate.communities.groups.learning.addedToGroup": {
   "en": "Join Group Learning Alert",
-  "ko": "그룹 학습 알림 참여"
+  "ko": "그룹 참여 학습 알림"
  },
  "clientPortalBuilder.emailSettings.preferenceTemplate.communities.groups.learning.description": {
   "en": "Notify members when a new course is added to the group",
@@ -352725,7 +352725,7 @@
  },
  "clientPortalBuilder.emailSettings.preferenceTemplate.contracts.groups.contract.contractCreated": {
   "en": "Contract Created",
-  "ko": "계약 생성됨"
+  "ko": "계약서 생성됨"
  },
  "clientPortalBuilder.emailSettings.preferenceTemplate.contracts.groups.contract.description": {
   "en": "Notify members about their contracts",
@@ -352737,11 +352737,11 @@
  },
  "clientPortalBuilder.emailSettings.preferenceTemplate.courses.groups.accessGroup.offerAccess": {
   "en": "Offer access",
-  "ko": "액세스 제공"
+  "ko": "오퍼 액세스"
  },
  "clientPortalBuilder.emailSettings.preferenceTemplate.courses.groups.accessGroup.title": {
   "en": "Access Emails",
-  "ko": "이메일 액세스"
+  "ko": "액세스 이메일"
  },
  "clientPortalBuilder.emailSettings.preferenceTemplate.courses.groups.courseAccessEmail.courseAccess": {
   "en": "Course Access",
@@ -352749,7 +352749,7 @@
  },
  "clientPortalBuilder.emailSettings.preferenceTemplate.courses.groups.courseAccessEmail.description": {
   "en": "Automatically send an email when course access is provided to a member through a default course offer.",
-  "ko": "기본 코스 제안을 통해 멤버에게 코스 액세스가 제공되면 자동으로 이메일을 발송합니다."
+  "ko": "기본 코스 오퍼를 통해 멤버에게 코스 액세스가 제공되면 자동으로 이메일을 발송합니다."
  },
  "clientPortalBuilder.emailSettings.preferenceTemplate.courses.groups.courseAccessEmail.title": {
   "en": "Course Access Email",
@@ -352801,7 +352801,7 @@
  },
  "clientPortalBuilder.emailSettings.preferenceTemplate.courses.groups.courseSignupEmail.description": {
   "en": "Automatically send a welcome email when someone gets access to a default course offer.",
-  "ko": "기본 코스 제안에 대한 액세스가 부여되면 자동으로 환영 이메일을 발송합니다."
+  "ko": "기본 코스 오퍼에 대한 액세스가 부여되면 자동으로 환영 이메일을 발송합니다."
  },
  "clientPortalBuilder.emailSettings.preferenceTemplate.courses.groups.coursesAssessmentEmail.assignmentCompletedAdmin": {
   "en": "Assignment Submitted (Admin)",
@@ -352841,11 +352841,11 @@
  },
  "clientPortalBuilder.emailSettings.preferenceTemplate.courses.groups.offerAccessEmail.description": {
   "en": "Automatically send an email when offer access is provided to a member.",
-  "ko": "멤버에게 제안 액세스가 제공되면 자동으로 이메일을 발송합니다."
+  "ko": "멤버에게 오퍼 액세스가 제공되면 자동으로 이메일을 발송합니다."
  },
  "clientPortalBuilder.emailSettings.preferenceTemplate.courses.groups.offerAccessEmail.title": {
   "en": "Offer Access Email",
-  "ko": "제안 액세스 이메일"
+  "ko": "오퍼 액세스 이메일"
  },
  "clientPortalBuilder.emailSettings.preferenceTemplate.courses.groups.signupGroup.courseSignup": {
   "en": "Course sign-up",
@@ -352853,11 +352853,11 @@
  },
  "clientPortalBuilder.emailSettings.preferenceTemplate.courses.groups.signupGroup.description": {
   "en": "Automatically send a welcome email when someone signs up for a course or offer.",
-  "ko": "누군가 코스나 제안에 가입하면 자동으로 환영 이메일을 발송합니다."
+  "ko": "누군가 코스나 오퍼에 가입하면 자동으로 환영 이메일을 발송합니다."
  },
  "clientPortalBuilder.emailSettings.preferenceTemplate.courses.groups.signupGroup.offerSignup": {
   "en": "Offer sign-up",
-  "ko": "제안 가입"
+  "ko": "오퍼 가입"
  },
  "clientPortalBuilder.emailSettings.preferenceTemplate.courses.groups.signupGroup.title": {
   "en": "Sign-up",
@@ -352893,15 +352893,15 @@
  },
  "clientPortalBuilder.emailSettings.tooltips.certificateExpiryReminder": {
   "en": "This notification is essential as it alerts the user when their certificate is about to expire and cannot be disabled.",
-  "ko": "이 알림은 사용자의 인증서가 곧 만료될 때 알려주는 필수 알림으로, 비활성화할 수 없습니다."
+  "ko": "이 알림은 사용자의 수료증이 곧 만료될 때 알려주는 필수 알림으로, 비활성화할 수 없습니다."
  },
  "clientPortalBuilder.emailSettings.tooltips.certificateIssued": {
   "en": "This notification is essential as it alerts the user when they receive a certificate and cannot be disabled.",
-  "ko": "이 알림은 사용자가 인증서를 받을 때 알려주는 필수 알림으로, 비활성화할 수 없습니다."
+  "ko": "이 알림은 사용자가 수료증을 받을 때 알려주는 필수 알림으로, 비활성화할 수 없습니다."
  },
  "clientPortalBuilder.emailSettings.tooltips.certificateRenewal": {
   "en": "This notification is essential as it alerts the user when they renew a certificate and cannot be disabled.",
-  "ko": "이 알림은 사용자가 인증서를 갱신할 때 알려주는 필수 알림으로, 비활성화할 수 없습니다."
+  "ko": "이 알림은 사용자가 수료증을 갱신할 때 알려주는 필수 알림으로, 비활성화할 수 없습니다."
  },
  "clientPortalBuilder.emailSettings.tooltips.chooseATemplateToPreview": {
   "en": "Choose an email template to preview",
@@ -352997,7 +352997,7 @@
  },
  "clientPortalBuilder.emailSettings.tooltips.moduleCompleteCredentialIssued": {
   "en": "This notification is sent to the user when they receive a credential for completing a category and cannot be disabled.",
-  "ko": "이 알림은 사용자가 카테고리를 완료하여 자격증을 받을 때 발송되는 필수 알림으로, 비활성화할 수 없습니다."
+  "ko": "이 알림은 사용자가 카테고리를 완료하여 수료증을 받을 때 발송되는 필수 알림으로, 비활성화할 수 없습니다."
  },
  "clientPortalBuilder.emailSettings.tooltips.roleUpdatedInPrivateChannel": {
   "en": "This Notification is sent to group member when their role is upgraded in a private channel.",
@@ -353005,7 +353005,7 @@
  },
  "clientPortalBuilder.emailSettings.tooltips.welcomeBadgeIssued": {
   "en": "This notification is sent to the user when they receive a welcome badge upon product enrollment and cannot be disabled.",
-  "ko": "이 알림은 사용자가 상품 등록 시 환영 배지를 받을 때 발송되는 필수 알림으로, 비활성화할 수 없습니다."
+  "ko": "이 알림은 사용자가 상품에 수강 등록하여 환영 배지를 받을 때 발송되는 필수 알림으로, 비활성화할 수 없습니다."
  },
  "clientPortalBuilder.needHelp.onlyVisibleToAgency": {
   "en": "This is only visible to agency",
@@ -353033,7 +353033,7 @@
  },
  "clientPortalBuilder.reSelling.featureList5": {
   "en": "Total control on all Client Portal child apps",
-  "ko": "모든 클라이언트 포털 자식 앱에 대한 완전한 제어"
+  "ko": "모든 클라이언트 포털 하위 앱에 대한 완전한 제어"
  },
  "clientPortalBuilder.settings.languageSettingsHelperText": {
   "en": "Your client-portal users will see all the content in your selected language",
@@ -353097,7 +353097,7 @@
  },
  "clientPortalBuilder.emailSettings.preferenceTemplate.courses.groups.offerAccessEmail.offerAccess": {
   "en": "Offer Access",
-  "ko": "오퍼 접근 권한"
+  "ko": "오퍼 액세스"
  },
  "clientPortalBuilder.settings.chatWidgetSavedDescription": {
   "en": "Chat widget settings have been successfully saved.",
@@ -353377,7 +353377,7 @@
  },
  "crmCommon.associations.associatedObjectTooltipFallback": {
   "en": "Associate {object} to contacts, opportunities, companies or custom objects",
-  "ko": "{object}을(를) 연락처, 기회, 회사 또는 커스텀 객체에 연결"
+  "ko": "{object}을(를) 연락처, 기회, 회사 또는 커스텀 오브젝트에 연결"
  },
  "crmCommon.associations.createNew": {
   "en": "Create new {recordLabel}",
@@ -353477,11 +353477,11 @@
  },
  "crmCommon.common.deleteSmartlistDescription": {
   "en": "This smartlist view and its configuration will be deleted for all users with access. This action is irreversible and cannot be undone.",
-  "ko": "이 스마트리스트 보기와 해당 구성은 접근 권한이 있는 모든 사용자에게서 삭제됩니다. 이 작업은 되돌릴 수 없습니다."
+  "ko": "이 스마트 리스트 보기와 해당 구성은 접근 권한이 있는 모든 사용자에게서 삭제됩니다. 이 작업은 되돌릴 수 없습니다."
  },
  "crmCommon.common.noCustomiseSmartListPermissionTooltip": {
   "en": "You do not have permission to customize this smartlist. Please contact the smartlist owner for access.",
-  "ko": "이 스마트리스트를 사용자 지정할 권한이 없습니다. 접근 권한을 받으려면 스마트리스트 소유자에게 문의하세요."
+  "ko": "이 스마트 리스트를 사용자 지정할 권한이 없습니다. 접근 권한을 받으려면 스마트 리스트 소유자에게 문의하세요."
  },
  "crmCommon.common.paginationInfo": {
   "en": "{pagination} rows per page",
@@ -353489,7 +353489,7 @@
  },
  "crmCommon.common.permissionDeniedDesc": {
   "en": "You currently have view-only access to this smartlist and cannot make any changes. If you need edit permissions, please contact the smartlist owner for access.",
-  "ko": "현재 이 스마트리스트에 대해 보기 전용 접근 권한만 있어 변경할 수 없습니다. 편집 권한이 필요하면 스마트리스트 소유자에게 문의하세요."
+  "ko": "현재 이 스마트 리스트에 대해 보기 전용 접근 권한만 있어 변경할 수 없습니다. 편집 권한이 필요하면 스마트 리스트 소유자에게 문의하세요."
  },
  "crmCommon.common.permissionDeniedDescNoAccess": {
   "en": "You currently don’t have access to this smart list. Please contact the smart list owner for access.",
@@ -353501,7 +353501,7 @@
  },
  "crmCommon.common.saveAsNewSmartlist": {
   "en": "Save as new smartlist",
-  "ko": "새 스마트리스트로 저장"
+  "ko": "새 스마트 리스트로 저장"
  },
  "crmCommon.common.smartListDeletedMessageTitle": {
   "en": "Smart List Deleted Successfully!",
@@ -353533,7 +353533,7 @@
  },
  "crmCommon.common.unsavedChangesTitle": {
   "en": "Unsaved changes in smartlist ‘{name}’!",
-  "ko": "'{name}' 스마트리스트에 저장되지 않은 변경 사항이 있습니다!"
+  "ko": "'{name}' 스마트 리스트에 저장되지 않은 변경 사항이 있습니다!"
  },
  "crmCommon.common.upcomingConfirmedAppointment": {
   "en": "Upcoming Confirmed Appointment",
@@ -353541,7 +353541,7 @@
  },
  "crmCommon.common.updatedTextTable": {
   "en": "Update this configuration to all the pipelines in this location",
-  "ko": "이 구성을 이 위치의 모든 파이프라인에 업데이트"
+  "ko": "이 구성을 이 서브 계정의 모든 파이프라인에 적용"
  },
  "crmCommon.common.viteLogo": {
   "en": "Vite logo",
@@ -353581,7 +353581,7 @@
  },
  "crmCommon.importFeedback.doneClean.title": {
   "en": "Thanks, that helps.",
-  "ko": "감사합니다, 도움이 되었어요."
+  "ko": "감사합니다. 큰 도움이 됩니다."
  },
  "crmCommon.importFeedback.doneProblem.body": {
   "en": "We'll look into it.",
@@ -353649,7 +353649,7 @@
  },
  "crmCommon.importFeedback.verification.question": {
   "en": "Did your HubSpot data come through as expected?",
-  "ko": "HubSpot 데이터가 예상대로 가져와졌나요?"
+  "ko": "HubSpot 데이터를 예상대로 가져왔나요?"
  },
  "crmCommon.notes.attachments.downloadFile": {
   "en": "Download file {name}",
@@ -353669,11 +353669,11 @@
  },
  "crmCommon.notes.attachments.labelWithCount": {
   "en": "Attachments ({count}/{max})",
-  "ko": "첨부 파일 ({count}/{max})"
+  "ko": "첨부파일 ({count}/{max})"
  },
  "crmCommon.notes.attachments.saveWithPartialUploadErrors": {
   "en": "Note saved. One or more attachments could not be uploaded.",
-  "ko": "메모가 저장되었습니다. 일부 첨부 파일을 업로드하지 못했습니다."
+  "ko": "메모가 저장되었습니다. 일부 첨부파일을 업로드하지 못했습니다."
  },
  "crmCommon.notes.attachments.uploadErrorMessage": {
   "en": "One or more files could not be uploaded.",
@@ -353697,7 +353697,7 @@
  },
  "crmCommon.notes.maxPinningLimitReached": {
   "en": "Pin limit reached ({maxNotes} notes). Unpin at least one existing note to pin a new one.",
-  "ko": "고정 가능 개수를 초과했습니다 ({maxNotes}개 메모). 새 메모를 고정하려면 기존 메모 중 하나 이상을 고정 해제하세요."
+  "ko": "고정 한도에 도달했습니다(메모 {maxNotes}개). 새 메모를 고정하려면 기존 메모를 하나 이상 고정 해제하세요."
  },
  "crmCommon.notes.noteAddLabel": {
   "en": "Add note description",
@@ -354061,7 +354061,7 @@
  },
  "crmCommon.tasks.imageUploadMissingLocation": {
   "en": "Location is required to upload image",
-  "ko": "이미지를 업로드하려면 위치가 필요합니다"
+  "ko": "이미지를 업로드하려면 서브 계정 정보가 필요합니다"
  },
  "crmCommon.tasks.imageUploadTooLarge": {
   "en": "Image must be 2MB or smaller",
@@ -354093,7 +354093,7 @@
  },
  "crmCommon.tasks.migration.etcSuffix": {
   "en": " Estimated: {etc}.",
-  "ko": "예상: {etc}."
+  "ko": " 예상: {etc}."
  },
  "crmCommon.tasks.noAttachments": {
   "en": "No attachments yet",
@@ -354121,11 +354121,11 @@
  },
  "crmCommon.tasks.noSearchTasksFound": {
   "en": "No tasks match the search '{searchString}'. Try different keywords.",
-  "ko": "검색어 '{searchString}'와 일치하는 작업이 없습니다. 다른 키워드를 시도해보세요."
+  "ko": "검색어 '{searchString}'와(과) 일치하는 작업이 없습니다. 다른 키워드를 시도해 보세요."
  },
  "crmCommon.tasks.privacyNoLocationUsers": {
   "en": "There are no users in this location to share this space with",
-  "ko": "이 스페이스를 공유할 수 있는 사용자가 이 위치에 없습니다"
+  "ko": "이 스페이스를 공유할 수 있는 사용자가 이 서브 계정에 없습니다"
  },
  "crmCommon.tasks.privateFolder": {
   "en": "Private folder",
@@ -354161,11 +354161,11 @@
  },
  "crmCommon.tasks.publicList": {
   "en": "Public list",
-  "ko": "공개 리스트"
+  "ko": "공개 목록"
  },
  "crmCommon.tasks.publicListDescription": {
   "en": "Everyone in the workspace can access this list.",
-  "ko": "워크스페이스의 모든 사용자가 이 리스트에 접근할 수 있습니다."
+  "ko": "워크스페이스의 모든 사용자가 이 목록에 접근할 수 있습니다."
  },
  "crmCommon.tasks.publicSpace": {
   "en": "Public space",
@@ -354277,7 +354277,7 @@
  },
  "crmCommon.tasks.wrapper.scopeGroupLists": {
   "en": "Lists",
-  "ko": "리스트"
+  "ko": "목록"
  },
  "crmCommon.tasks.wrapper.searchScopesPlaceholder": {
   "en": "Search scope",
@@ -355469,7 +355469,7 @@
  },
  "formSurveyApp.list.formsList.deleteModal.descriptionForm": {
   "en": "Are you sure you want to delete $ ?",
-  "ko": "$ 을(를) 삭제하시겠습니까?"
+  "ko": "$을(를) 삭제하시겠습니까?"
  },
  "formSurveyApp.list.formsList.formTable.addForm": {
   "en": "Add form",
@@ -355521,7 +355521,7 @@
  },
  "formSurveyApp.list.formsList.pageHeader.score": {
   "en": "Math & scoring",
-  "ko": "수학 및 점수"
+  "ko": "계산 및 점수"
  },
  "formSurveyApp.list.formsList.pageHeader.sellProducts": {
   "en": "Sell products",
@@ -355553,7 +355553,7 @@
  },
  "formSurveyApp.list.quizList.deleteModal.descriptionForm": {
   "en": "Are you sure you want to delete $ ?",
-  "ko": "$ 을(를) 삭제하시겠습니까?"
+  "ko": "$을(를) 삭제하시겠습니까?"
  },
  "formSurveyApp.list.quizList.deleteModal.titleForm": {
   "en": "Delete quiz",
@@ -355597,7 +355597,7 @@
  },
  "formSurveyApp.list.quizList.pageHeader.createQuizHeading": {
   "en": "Quizzes that do the thinking",
-  "ko": "생각하게 만드는 퀴즈"
+  "ko": "알아서 판단하는 똑똑한 퀴즈"
  },
  "formSurveyApp.list.quizList.pageHeader.description": {
   "en": "Create interactive quizzes to engage users, assess knowledge, and provide real-time results",
@@ -355665,7 +355665,7 @@
  },
  "formSurveyApp.list.quizList.shareFormModal.description": {
   "en": "Are you sure you want to share $ ?",
-  "ko": "$ 을(를) 공유하시겠습니까?"
+  "ko": "$을(를) 공유하시겠습니까?"
  },
  "formSurveyApp.list.quizList.shareFormModal.formSharedDescription": {
   "en": "has been shared",
@@ -355673,7 +355673,7 @@
  },
  "formSurveyApp.list.quizList.shareFormModal.searchLocationPlaceholder": {
   "en": "Search for location",
-  "ko": "위치 검색"
+  "ko": "서브 계정 검색"
  },
  "formSurveyApp.list.surveysList.createModalTitle": {
   "en": "Create new survey",
@@ -355689,7 +355689,7 @@
  },
  "formSurveyApp.list.surveysList.deleteModal.descriptionSurvey": {
   "en": "Are you sure you want to delete $ ?",
-  "ko": "$ 을(를) 삭제하시겠습니까?"
+  "ko": "$을(를) 삭제하시겠습니까?"
  },
  "formSurveyApp.list.surveysList.duplicateSurvey.message": {
   "en": "Please input your survey name",
@@ -355725,7 +355725,7 @@
  },
  "formSurveyApp.list.surveysList.pageHeader.sellProducts": {
   "en": "Multi & one-question-at-a-time surveys",
-  "ko": "다중 및 한 번에 하나씩 질문하는 설문"
+  "ko": "여러 문항 또는 한 문항씩 표시하는 설문"
  },
  "formSurveyApp.list.surveysList.pageHeader.sellProductsDescription": {
   "en": "Design surveys with flexibility: display several questions per slide or reveal one question at a time for a more engaging experience",
@@ -355741,7 +355741,7 @@
  },
  "formSurveyApp.list.surveysList.shareSurveyModal.description": {
   "en": "Are you sure you want to share $ ?",
-  "ko": "$ 을(를) 공유하시겠습니까?"
+  "ko": "$을(를) 공유하시겠습니까?"
  },
  "formSurveyApp.list.surveysList.surveyFoldersModal.searchForFolders": {
   "en": "Search for folders",
@@ -355793,7 +355793,7 @@
  },
  "formSurveyApp.settings.products.form.pageSubtitle": {
   "en": "Set defaults that apply to every form in this location. Override individual forms when you need an exception.",
-  "ko": "이 위치의 모든 폼에 적용되는 기본값을 설정하세요. 예외가 필요한 경우 개별 폼을 재정의할 수 있습니다."
+  "ko": "이 서브 계정의 모든 폼에 적용되는 기본값을 설정하세요. 예외가 필요한 경우 개별 폼을 재정의할 수 있습니다."
  },
  "formSurveyApp.settings.products.form.searchPlaceholder": {
   "en": "Search forms",
@@ -355821,11 +355821,11 @@
  },
  "formSurveyApp.settings.products.quiz.locationOff": {
   "en": "This is off for every quiz in this location.",
-  "ko": "이 위치의 모든 퀴즈에서 이 기능이 꺼져 있습니다."
+  "ko": "이 서브 계정의 모든 퀴즈에서 이 기능이 꺼져 있습니다."
  },
  "formSurveyApp.settings.products.quiz.locationOn": {
   "en": "This is on for every quiz in this location.",
-  "ko": "이 위치의 모든 퀴즈에서 이 기능이 켜져 있습니다."
+  "ko": "이 서브 계정의 모든 퀴즈에서 이 기능이 켜져 있습니다."
  },
  "formSurveyApp.settings.products.quiz.manageShow": {
   "en": "Manage individual quizzes",
@@ -355833,7 +355833,7 @@
  },
  "formSurveyApp.settings.products.quiz.pageSubtitle": {
   "en": "Set defaults that apply to every quiz in this location. Override individual quizzes when you need an exception.",
-  "ko": "이 위치의 모든 퀴즈에 적용되는 기본값을 설정합니다. 예외가 필요한 경우 개별 퀴즈를 재정의하세요."
+  "ko": "이 서브 계정의 모든 퀴즈에 적용되는 기본값을 설정합니다. 예외가 필요한 경우 개별 퀴즈를 재정의하세요."
  },
  "formSurveyApp.settings.products.quiz.searchPlaceholder": {
   "en": "Search quizzes",
@@ -355869,7 +355869,7 @@
  },
  "formSurveyApp.settings.products.survey.pageSubtitle": {
   "en": "Set defaults that apply to every survey in this location. Override individual surveys when you need an exception.",
-  "ko": "이 위치의 모든 설문에 적용되는 기본값을 설정합니다. 예외가 필요한 경우 개별 설문을 재정의하세요."
+  "ko": "이 서브 계정의 모든 설문에 적용되는 기본값을 설정합니다. 예외가 필요한 경우 개별 설문을 재정의하세요."
  },
  "formSurveyApp.settings.products.survey.searchPlaceholder": {
   "en": "Search surveys",
@@ -355897,7 +355897,7 @@
  },
  "formSurveyApp.settings.save.willDisableLocation": {
   "en": "will be disabled for this location",
-  "ko": "이 위치에서 비활성화됩니다"
+  "ko": "이 서브 계정에서 비활성화됩니다"
  },
  "formSurveyApp.submission.defaultOptions.widgetForm": {
   "en": "Widget form",
@@ -355929,7 +355929,7 @@
  },
  "formSurveyApp.submission.formSubmission.createFormText": {
   "en": "to create your first form.",
-  "ko": "을(를) 눌러 첫 번째 폼을 만드세요."
+  "ko": "하여 첫 번째 폼을 만드세요."
  },
  "formSurveyApp.submission.formSubmission.deleteFormSubmissionsConfirmModal.description": {
   "en": "Are you sure you want to delete this form submission?",
@@ -356281,7 +356281,7 @@
  },
  "ghlEmailBuilderCommon.ABTesting.draftOnlyTooltip": {
   "en": "A/B testing is available for draft campaigns only",
-  "ko": "A/B 테스트는 초안 캠페인에서만 사용할 수 있습니다"
+  "ko": "A/B 테스트는 임시 저장된 캠페인에서만 사용할 수 있습니다"
  },
  "ghlEmailBuilderCommon.ABTesting.durations.eightHours": {
   "en": "8 hours",
@@ -356401,7 +356401,7 @@
  },
  "ghlEmailBuilderCommon.assistModeOptions.layout.featureRich": {
   "en": "Feature Rich",
-  "ko": "기능이 풍부한"
+  "ko": "기능 풍부형"
  },
  "ghlEmailBuilderCommon.assistModeOptions.layout.twoColumn": {
   "en": "Two Column",
@@ -356473,7 +356473,7 @@
  },
  "ghlEmailBuilderCommon.campaignSchedule.abMinimumContactsWarn": {
   "en": "There must be at least {minimumContactsCount} {contacts} to send to under your current A/B test settings",
-  "ko": "현재 A/B 테스트 설정에 따라 발송하려면 최소 {minimumContactsCount}명의 {contacts}가 필요합니다"
+  "ko": "현재 A/B 테스트 설정에 따라 발송하려면 최소 {minimumContactsCount}명의 {contacts}이(가) 필요합니다"
  },
  "ghlEmailBuilderCommon.campaignSchedule.addTagsIfConditionsMet": {
   "en": "Add tags if conditions are met",
@@ -356493,7 +356493,7 @@
  },
  "ghlEmailBuilderCommon.campaignSchedule.batchQuantityExceedMessage": {
   "en": "Batch quantity cannot exceed {maxAllowed} for {repeatAfter} {unit}",
-  "ko": "배치 수량은 {repeatAfter} {unit}당 {maxAllowed}를 초과할 수 없습니다"
+  "ko": "배치 수량은 {repeatAfter} {unit}당 {maxAllowed}개를 초과할 수 없습니다"
  },
  "ghlEmailBuilderCommon.campaignSchedule.batchSchedule": {
   "en": "Batch schedule",
@@ -356525,7 +356525,7 @@
  },
  "ghlEmailBuilderCommon.campaignSchedule.couldntGenerateSuggestion": {
   "en": "We couldn't generate a suggestion. Please try again by clicking",
-  "ko": "제안을 생성할 수 없습니다. 클릭하여 다시 시도해 주세요"
+  "ko": "제안을 생성하지 못했습니다. 다시 시도하려면 다음을 클릭하세요:"
  },
  "ghlEmailBuilderCommon.campaignSchedule.customReplyPlaceholder": {
   "en": "e.g., support{'@'}example.com",
@@ -356533,7 +356533,7 @@
  },
  "ghlEmailBuilderCommon.campaignSchedule.customSmartlist": {
   "en": "Smartlist - {campaignName}",
-  "ko": "스마트리스트 - {campaignName}"
+  "ko": "스마트 리스트 - {campaignName}"
  },
  "ghlEmailBuilderCommon.campaignSchedule.dmarcIssuePossible": {
   "en": "Valid email, but likely a DMARC problem. Check domain settings or try another email.",
@@ -356601,11 +356601,11 @@
  },
  "ghlEmailBuilderCommon.campaignSchedule.maxDaysDelayWarn": {
   "en": " Maximum delay of 31 days between batch runs allowed",
-  "ko": "배치 실행 간 최대 31일의 지연이 허용됩니다"
+  "ko": " 배치 실행 간 최대 31일의 지연이 허용됩니다"
  },
  "ghlEmailBuilderCommon.campaignSchedule.maxFeedDescription": {
   "en": "Max. number of recent feeds recipients will see",
-  "ko": "최근 피드 수신자에게 표시되는 최대 수"
+  "ko": "수신자에게 표시되는 최근 피드의 최대 개수"
  },
  "ghlEmailBuilderCommon.campaignSchedule.maxFeedLabel": {
   "en": "Maximum number of feeds",
@@ -356625,7 +356625,7 @@
  },
  "ghlEmailBuilderCommon.campaignSchedule.newSubjectLine": {
   "en": "New subject line",
-  "ko": "새 제목 줄"
+  "ko": "새 제목"
  },
  "ghlEmailBuilderCommon.campaignSchedule.noNewPostFound": {
   "en": "In the RSS Email Campaign, no new post is found in the latest execution",
@@ -356637,7 +356637,7 @@
  },
  "ghlEmailBuilderCommon.campaignSchedule.noRecommendationsFound": {
   "en": "No recommendations found for your location.",
-  "ko": "해당 위치에 대한 추천을 찾을 수 없습니다."
+  "ko": "이 서브 계정에 대한 추천을 찾을 수 없습니다."
  },
  "ghlEmailBuilderCommon.campaignSchedule.operationNotScheduled": {
   "en": "Operation not scheduled. {message}",
@@ -356653,7 +356653,7 @@
  },
  "ghlEmailBuilderCommon.campaignSchedule.preBuiltSegmentsLabel": {
   "en": "Pre-built segments",
-  "ko": "사전 제작된 세그먼트"
+  "ko": "사전 구성된 세그먼트"
  },
  "ghlEmailBuilderCommon.campaignSchedule.previewText": {
   "en": "Preview text",
@@ -356665,7 +356665,7 @@
  },
  "ghlEmailBuilderCommon.campaignSchedule.provideSubjectLine": {
   "en": "Please provide a new subject line",
-  "ko": "새 제목 줄을 입력해 주세요"
+  "ko": "새 제목을 입력해 주세요"
  },
  "ghlEmailBuilderCommon.campaignSchedule.reasonConcurrentLimitExceeded": {
   "en": "You can't run more than {limit} concurrent {opType} tasks. Please wait for one to finish and try again.",
@@ -356729,11 +356729,11 @@
  },
  "ghlEmailBuilderCommon.campaignSchedule.scheduleDurationResendUnopenedTooltip": {
   "en": "Enter the duration for resending this email to {contacts} who haven't opened it yet.\nThe duration must be between 12 hours and 10 days after the original send date.",
-  "ko": "아직 열지 않은 {contacts}에게 이 이메일을 재발송할 기간을 입력하세요."
+  "ko": "아직 열지 않은 {contacts}에게 이 이메일을 재발송할 기간을 입력하세요.\n기간은 원래 발송일로부터 12시간에서 10일 사이여야 합니다."
  },
  "ghlEmailBuilderCommon.campaignSchedule.scheduledAfter": {
   "en": "Schedule after {date} as per the location timezone ({timezone})",
-  "ko": "위치 시간대({timezone}) 기준으로 {date} 이후 예약"
+  "ko": "서브 계정 시간대({timezone}) 기준으로 {date} 이후 예약"
  },
  "ghlEmailBuilderCommon.campaignSchedule.searchContactsPlaceholder": {
   "en": "Search {Contacts}",
@@ -356781,7 +356781,7 @@
  },
  "ghlEmailBuilderCommon.campaignSchedule.smartSendEligibilityDescription2": {
   "en": "Smart Send unlocks after at least 1,000 emails have been delivered from your location within the past 60 days. Once this condition is met, Smart Send will enable automatically.",
-  "ko": "스마트 발송은 해당 위치에서 지난 60일 동안 최소 1,000건의 이메일이 발송된 후 사용할 수 있습니다. 이 조건이 충족되면 스마트 발송이 자동으로 활성화됩니다."
+  "ko": "스마트 발송은 이 서브 계정에서 지난 60일 동안 최소 1,000건의 이메일이 전달된 후 사용할 수 있습니다. 이 조건이 충족되면 스마트 발송이 자동으로 활성화됩니다."
  },
  "ghlEmailBuilderCommon.campaignSchedule.smartSendEligibilityProgressText": {
   "en": "{contactsSent} of 1,000 contacts so far",
@@ -356797,11 +356797,11 @@
  },
  "ghlEmailBuilderCommon.campaignSchedule.smartSendHelper0": {
   "en": "Click get suggestion to see when your email is most likely to perform best.",
-  "ko": "제안받기를 클릭하여 이메일 성과가 가장 좋을 것으로 예상되는 시간을 확인하세요."
+  "ko": "'제안 받기'를 클릭하여 이메일 성과가 가장 좋을 것으로 예상되는 시간을 확인하세요."
  },
  "ghlEmailBuilderCommon.campaignSchedule.smartlistFreezeListDescription": {
   "en": "Should {contacts} added to this smart list between now and the send date/time be included in this campaign?",
-  "ko": "지금부터 발송 일시 사이에 이 스마트 리스트에 추가되는 {contacts}를 이 캠페인에 포함할까요?"
+  "ko": "지금부터 발송 일시 사이에 이 스마트 리스트에 추가되는 {contacts}도 이 캠페인에 포함하시겠습니까?"
  },
  "ghlEmailBuilderCommon.campaignSchedule.subjectLineExamplePlaceholder": {
   "en": "e.g., Don't miss our special offer",
@@ -356813,7 +356813,7 @@
  },
  "ghlEmailBuilderCommon.campaignSchedule.tagsFreezeListDescription": {
   "en": "Should {contacts} linked with this tag between now and the send date/time be included in this campaign?",
-  "ko": "지금부터 발송 일시 사이에 이 태그와 연결되는 {contacts}를 이 캠페인에 포함할까요?"
+  "ko": "지금부터 발송 일시 사이에 이 태그가 지정되는 {contacts}도 이 캠페인에 포함하시겠습니까?"
  },
  "ghlEmailBuilderCommon.campaignSchedule.testRecipientPlaceholder": {
   "en": "e.g., john{'@'}example.com, jane{'@'}example.com",
@@ -356897,7 +356897,7 @@
  },
  "ghlEmailBuilderCommon.chatBot.constants.fallbackMessage": {
   "en": "Sorry, I didn't get that. I'm still learning—this is just my beta version. Mind rephrasing or asking something else? I'm improving every day!",
-  "ko": "죄송합니다, 이해하지 못했어요. 아직 베타 버전이라 배우는 중이에요. 다른 방식으로 다시 물어봐 주시겠어요? 매일 발전하고 있습니다!"
+  "ko": "죄송합니다. 잘 이해하지 못했습니다. 아직 베타 버전이라 배우는 중입니다. 다른 표현으로 다시 질문하시거나 다른 내용을 물어봐 주시겠습니까? 매일 발전하고 있습니다!"
  },
  "ghlEmailBuilderCommon.chatBot.credits.exhausted": {
   "en": "No Credits Remaining",
@@ -356917,7 +356917,7 @@
  },
  "ghlEmailBuilderCommon.chatBot.dragDrop.dropImageHere": {
   "en": "Drop file to Email AI",
-  "ko": "파일을 Email AI에 드롭하세요"
+  "ko": "파일을 여기에 놓아 이메일 AI에 추가하세요"
  },
  "ghlEmailBuilderCommon.chatBot.error.abVariationFailed": {
   "en": "Some versions of your A/B test could not be created. Nothing has been saved — try again.",
@@ -357025,7 +357025,7 @@
  },
  "ghlEmailBuilderCommon.chatBot.heroDeviceGallery.donutHeroTitle": {
   "en": "Sweeten Your Day,\nwith Fresh Donuts.",
-  "ko": "신선한 도넛으로"
+  "ko": "신선한 도넛으로\n하루를 달콤하게."
  },
  "ghlEmailBuilderCommon.chatBot.heroDeviceGallery.hospitalityCta": {
   "en": "LET'S GO!",
@@ -357045,7 +357045,7 @@
  },
  "ghlEmailBuilderCommon.chatBot.messages.doesntMatchOptions": {
   "en": "\"{userMessage}\" doesn't match any of the available options. Please choose from: {options}.",
-  "ko": "\"{userMessage}\"는 사용 가능한 옵션과 일치하지 않습니다. 다음 중에서 선택해 주세요: {options}."
+  "ko": "\"{userMessage}\"은(는) 사용 가능한 옵션과 일치하지 않습니다. 다음 중에서 선택해 주세요: {options}."
  },
  "ghlEmailBuilderCommon.chatBot.messages.failedToSelectElement": {
   "en": "Failed to select element. Please try again.",
@@ -357053,7 +357053,7 @@
  },
  "ghlEmailBuilderCommon.chatBot.messages.howToEditText": {
   "en": "How do you wish to edit this text?",
-  "ko": "이 텍스트를 어떻게 편집하시겠어요?"
+  "ko": "이 텍스트를 어떻게 편집하시겠습니까?"
  },
  "ghlEmailBuilderCommon.chatBot.messages.invalidSelection": {
   "en": "Invalid selection. Please choose from the available options.",
@@ -357061,7 +357061,7 @@
  },
  "ghlEmailBuilderCommon.chatBot.messages.needMoreDetailsTemplate": {
   "en": "I need more details to create your template. What is the purpose of this email?",
-  "ko": "템플릿을 생성하려면 더 많은 정보가 필요합니다. 이 이메일의 목적은 무엇인가요?"
+  "ko": "템플릿을 생성하려면 더 많은 정보가 필요합니다. 이 이메일의 목적은 무엇입니까?"
  },
  "ghlEmailBuilderCommon.chatBot.messages.notTextElement": {
   "en": "The selected element is not a text element. Please select a text element first, then click Done.",
@@ -357089,7 +357089,7 @@
  },
  "ghlEmailBuilderCommon.chatBot.messages.sureUnderstandPurpose": {
   "en": "Sure! Can you help me understand what is the purpose of this email?",
-  "ko": "네! 이 이메일의 목적이 무엇인지 이해하도록 도와드릴까요?"
+  "ko": "네! 이 이메일의 목적이 무엇인지 알려 주시겠습니까?"
  },
  "ghlEmailBuilderCommon.chatBot.messages.translatingTo": {
   "en": "Translating to {targetLanguage}...",
@@ -357125,7 +357125,7 @@
  },
  "ghlEmailBuilderCommon.chatBot.responses.excellentWhichLanguage": {
   "en": "Excellent! Which language would you like?",
-  "ko": "좋습니다! 어떤 언어를 원하시나요?"
+  "ko": "좋습니다! 어떤 언어로 번역하시겠습니까?"
  },
  "ghlEmailBuilderCommon.chatBot.responses.fantasticWhatToTranslate": {
   "en": "Fantastic! What would you like to translate?",
@@ -357133,7 +357133,7 @@
  },
  "ghlEmailBuilderCommon.chatBot.responses.perfectWhichLanguage": {
   "en": "Perfect! Which language would you like?",
-  "ko": "좋습니다! 어떤 언어를 원하시나요?"
+  "ko": "좋습니다! 어떤 언어로 번역하시겠습니까?"
  },
  "ghlEmailBuilderCommon.chatBot.responses.perfectWhichTextToEdit": {
   "en": "Perfect! Which text would you like to edit?",
@@ -357209,7 +357209,7 @@
  },
  "ghlEmailBuilderCommon.common.invalidCustomVariable": {
   "en": "Invalid custom variables formatting",
-  "ko": "사용자 지정 변수 형식이 잘못되었습니다"
+  "ko": "커스텀 변수 형식이 잘못되었습니다"
  },
  "ghlEmailBuilderCommon.common.lastSave": {
   "en": "Last save {date}",
@@ -357245,7 +357245,7 @@
  },
  "ghlEmailBuilderCommon.common.reviewAnd": {
   "en": "Review and ",
-  "ko": "검토 및"
+  "ko": "검토 및 "
  },
  "ghlEmailBuilderCommon.common.saveEdit": {
   "en": "Save Edit",
@@ -357397,7 +357397,7 @@
  },
  "ghlEmailBuilderCommon.email-ai.askAiPreview.confirmationTitle": {
   "en": "Email AI has a question",
-  "ko": "이메일 AI에게 질문이 있습니다"
+  "ko": "이메일 AI의 질문"
  },
  "ghlEmailBuilderCommon.email-ai.askAiPreview.emptyHint": {
   "en": "Your email preview will appear here.",
@@ -357669,7 +357669,7 @@
  },
  "ghlEmailBuilderCommon.emailBuilder.assist.emptyCanvas.description": {
   "en": "Write or paste HTML in the code editor, or describe your email to Email AI.",
-  "ko": "코드 에디터에 HTML을 작성하거나 붙여넣거나, Email AI에 이메일을 설명해주세요."
+  "ko": "코드 편집기에 HTML을 작성하거나 붙여넣거나, 이메일 AI에게 원하는 이메일을 설명하세요."
  },
  "ghlEmailBuilderCommon.emailBuilder.assist.enterYourBrandVoice": {
   "en": "Enter your brand voice",
@@ -357717,7 +357717,7 @@
  },
  "ghlEmailBuilderCommon.emailBuilder.assist.heroGreeting.goodAfternoonName": {
   "en": "Good afternoon, {name}",
-  "ko": "좋은 오후입니다, {name}"
+  "ko": "{name}님, 좋은 오후입니다"
  },
  "ghlEmailBuilderCommon.emailBuilder.assist.heroGreeting.goodEvening": {
   "en": "Good evening",
@@ -357729,11 +357729,11 @@
  },
  "ghlEmailBuilderCommon.emailBuilder.assist.heroGreeting.greetingsName": {
   "en": "Greetings, {name}",
-  "ko": "안녕하세요, {name}"
+  "ko": "{name}님, 안녕하세요"
  },
  "ghlEmailBuilderCommon.emailBuilder.assist.heroGreeting.happyMondayName": {
   "en": "Happy Monday, {name}",
-  "ko": "행복한 월요일 되세요, {name}"
+  "ko": "{name}님, 행복한 월요일 되세요"
  },
  "ghlEmailBuilderCommon.emailBuilder.assist.heroGreeting.happySaturday": {
   "en": "Happy Saturday!",
@@ -357741,11 +357741,11 @@
  },
  "ghlEmailBuilderCommon.emailBuilder.assist.heroGreeting.happySaturdayName": {
   "en": "Happy Saturday, {name}",
-  "ko": "행복한 토요일 되세요, {name}"
+  "ko": "{name}님, 행복한 토요일 되세요"
  },
  "ghlEmailBuilderCommon.emailBuilder.assist.heroGreeting.happySundayName": {
   "en": "Happy Sunday, {name}",
-  "ko": "행복한 일요일 되세요, {name}"
+  "ko": "{name}님, 행복한 일요일 되세요"
  },
  "ghlEmailBuilderCommon.emailBuilder.assist.heroGreeting.happyThursday": {
   "en": "Happy Thursday",
@@ -357753,7 +357753,7 @@
  },
  "ghlEmailBuilderCommon.emailBuilder.assist.heroGreeting.happyThursdayName": {
   "en": "Happy Thursday, {name}",
-  "ko": "행복한 목요일 되세요, {name}"
+  "ko": "{name}님, 행복한 목요일 되세요"
  },
  "ghlEmailBuilderCommon.emailBuilder.assist.heroGreeting.helloNightOwl": {
   "en": "Hello, night owl",
@@ -357785,15 +357785,15 @@
  },
  "ghlEmailBuilderCommon.emailBuilder.assist.heroGreeting.welcomeToTheWeekend": {
   "en": "Welcome to the weekend",
-  "ko": "주말을 맞이하세요"
+  "ko": "즐거운 주말입니다"
  },
  "ghlEmailBuilderCommon.emailBuilder.assist.heroGreeting.whatsNewName": {
   "en": "What's new, {name}?",
-  "ko": "무슨 일 있으세요, {name}?"
+  "ko": "{name}님, 새로운 소식 있으신가요?"
  },
  "ghlEmailBuilderCommon.emailBuilder.assist.heroGreeting.whatsOnYourMindName": {
   "en": "What's on your mind, {name}?",
-  "ko": "무슨 생각을 하고 계신가요, {name}?"
+  "ko": "{name}님, 무슨 생각을 하고 계신가요?"
  },
  "ghlEmailBuilderCommon.emailBuilder.assist.heroLeadIn": {
   "en": "Let's build something",
@@ -357837,7 +357837,7 @@
  },
  "ghlEmailBuilderCommon.emailBuilder.assist.processingLoader.layout": {
   "en": "Designing the layout",
-  "ko": "레이아웃 디자인하기"
+  "ko": "레이아웃 디자인 중"
  },
  "ghlEmailBuilderCommon.emailBuilder.assist.productShowcaseTemplateDesc": {
   "en": "Feature your top products",
@@ -357993,7 +357993,7 @@
  },
  "ghlEmailBuilderCommon.emailBuilder.codeEditorTaskEditingDone": {
   "en": "Edits applied to your template",
-  "ko": "템플릿에 적용된 수정 사항"
+  "ko": "템플릿에 수정 사항이 적용되었습니다"
  },
  "ghlEmailBuilderCommon.emailBuilder.codeLockedByVersionHistory": {
   "en": "Code stays hidden while version history is open",
@@ -358077,7 +358077,7 @@
  },
  "ghlEmailBuilderCommon.emailBuilder.defaultValue.label": {
   "en": "Show this if {variable} is missing",
-  "ko": "{variable}이 없을 때 이것을 표시"
+  "ko": "{variable}이(가) 없을 때 이것을 표시"
  },
  "ghlEmailBuilderCommon.emailBuilder.defaultValue.toastSaved": {
   "en": "Default text saved.",
@@ -358137,7 +358137,7 @@
  },
  "ghlEmailBuilderCommon.emailBuilder.elementChangesQuestion": {
   "en": "What changes would you like to make to this element?",
-  "ko": "이 요소에서 어떤 변경을 원하시나요?"
+  "ko": "이 요소를 어떻게 변경하시겠습니까?"
  },
  "ghlEmailBuilderCommon.emailBuilder.elementEditNoMatch": {
   "en": "\"{userMessage}\" doesn't match any of the available options. Please choose from: {availableOptions}.",
@@ -358345,7 +358345,7 @@
  },
  "ghlEmailBuilderCommon.emailBuilder.mobileAlignNeedsDesktopAlign": {
   "en": "Full on desktop fills the column, so Left, Center and Right have no effect on mobile. Pick one of them on desktop first.",
-  "ko": "데스크톱에서는 전체 너비가 열을 채우므로 왼쪽, 가운데, 오른쪽 정렬이 모바일에 영향을 주지 않습니다. 먼저 데스크톱에서 하나를 선택하세요."
+  "ko": "데스크톱에서 '전체'로 설정하면 열을 가득 채우므로 모바일에서 왼쪽, 가운데, 오른쪽 정렬이 적용되지 않습니다. 먼저 데스크톱에서 이 중 하나를 선택하세요."
  },
  "ghlEmailBuilderCommon.emailBuilder.mobileFormatting": {
   "en": "Mobile Formatting",
@@ -358361,7 +358361,7 @@
  },
  "ghlEmailBuilderCommon.emailBuilder.noBrandColors": {
   "en": " You do not have any brand colors added yet.",
-  "ko": "추가된 브랜드 색상이 아직 없습니다."
+  "ko": " 추가된 브랜드 색상이 아직 없습니다."
  },
  "ghlEmailBuilderCommon.emailBuilder.noProductMatchesDescription": {
   "en": "No results found. Try a different keyword or revise your search term.",
@@ -358549,7 +358549,7 @@
  },
  "ghlEmailBuilderCommon.emailBuilder.solidPurple": {
   "en": "Solid Purple",
-  "ko": "솔리드 퍼플"
+  "ko": "솔리드 보라"
  },
  "ghlEmailBuilderCommon.emailBuilder.supportingText": {
   "en": "Supporting text",
@@ -358581,7 +358581,7 @@
  },
  "ghlEmailBuilderCommon.emailBuilder.templatePurposePrompt": {
   "en": "Sure! Can you help me understand what is the purpose of this email?",
-  "ko": "네! 이 이메일의 목적이 무엇인지 알려주시겠어요?"
+  "ko": "네! 이 이메일의 목적이 무엇인지 알려 주시겠습니까?"
  },
  "ghlEmailBuilderCommon.emailBuilder.testEmailInvalidMany": {
   "en": "{count} addresses look invalid. Fix or remove them.",
@@ -358593,7 +358593,7 @@
  },
  "ghlEmailBuilderCommon.emailBuilder.testEmailSuccessMessage": {
   "en": "A test email has been sent to {recipients}",
-  "ko": "{recipients}로 테스트 이메일이 발송되었습니다"
+  "ko": "{recipients}에게 테스트 이메일이 발송되었습니다"
  },
  "ghlEmailBuilderCommon.emailBuilder.testEmailSuccessTitle": {
   "en": "Email sent",
@@ -358609,7 +358609,7 @@
  },
  "ghlEmailBuilderCommon.emailBuilder.textDirectionDescription": {
   "en": "Specify the direction of the text in the layout",
-  "ko": "레이아웃에서 텍스트 방향 지정"
+  "ko": "레이아웃에서 텍스트 방향을 지정하세요"
  },
  "ghlEmailBuilderCommon.emailBuilder.textShouldNotBeEmpty": {
   "en": "Text should not be empty",
@@ -358621,11 +358621,11 @@
  },
  "ghlEmailBuilderCommon.emailBuilder.unavailableReviewLinks": {
   "en": "Review links are not available for this location. Add a custom link below.",
-  "ko": "이 위치에는 리뷰 링크를 사용할 수 없습니다. 아래에 맞춤 링크를 추가하세요."
+  "ko": "이 서브 계정에서는 리뷰 링크를 사용할 수 없습니다. 아래에 커스텀 링크를 추가하세요."
  },
  "ghlEmailBuilderCommon.emailBuilder.understandingGoalAndIntent": {
   "en": "Understanding your goal and intent",
-  "ko": "목표와 의도 파악하기"
+  "ko": "목표와 의도를 파악하는 중"
  },
  "ghlEmailBuilderCommon.emailBuilder.understandingIntent": {
   "en": "Understanding your intent...",
@@ -358633,7 +358633,7 @@
  },
  "ghlEmailBuilderCommon.emailBuilder.uploadFonts": {
   "en": "Upload Fonts",
-  "ko": "폰트 업로드"
+  "ko": "글꼴 업로드"
  },
  "ghlEmailBuilderCommon.emailBuilder.uploadYourThumbnail": {
   "en": "Upload your Thumbnail",
@@ -358653,7 +358653,7 @@
  },
  "ghlEmailBuilderCommon.emailCampaign.ABTest": {
   "en": " A/B test",
-  "ko": "A/B 테스트"
+  "ko": " A/B 테스트"
  },
  "ghlEmailBuilderCommon.emailCampaign.UtmTrackingDesc": {
   "en": "When enabled, this setting automatically adds UTM parameters to every link in a campaign.",
@@ -358677,7 +358677,7 @@
  },
  "ghlEmailBuilderCommon.emailCampaign.attributedTo": {
   "en": "Attributed to",
-  "ko": "귀속 대상"
+  "ko": "어트리뷰션 대상"
  },
  "ghlEmailBuilderCommon.emailCampaign.attributionWindow": {
   "en": "Attribution window",
@@ -358689,7 +358689,7 @@
  },
  "ghlEmailBuilderCommon.emailCampaign.batchEmail": {
   "en": "Batch email",
-  "ko": "일괄 이메일"
+  "ko": "배치 이메일"
  },
  "ghlEmailBuilderCommon.emailCampaign.blank": {
   "en": "Blank",
@@ -358709,7 +358709,7 @@
  },
  "ghlEmailBuilderCommon.emailCampaign.campaignValueLabel": {
   "en": "Campaign value",
-  "ko": "캠페인 가치"
+  "ko": "캠페인 값"
  },
  "ghlEmailBuilderCommon.emailCampaign.campaignWithProducts": {
   "en": "Campaigns with products",
@@ -358785,11 +358785,11 @@
  },
  "ghlEmailBuilderCommon.emailCampaign.configChangeWarn": {
   "en": "Updated \"attributed to\" config will be reflected in future attribution stats only.",
-  "ko": "업데이트된 \"귀속 대상\" 설정은 이후 귀속 통계에만 반영됩니다."
+  "ko": "업데이트된 \"어트리뷰션 대상\" 설정은 이후 어트리뷰션 통계에만 반영됩니다."
  },
  "ghlEmailBuilderCommon.emailCampaign.contactClickedOnLink": {
   "en": "{Contact} clicked on a link",
-  "ko": "{Contact}가 링크를 클릭함"
+  "ko": "{Contact}이(가) 링크를 클릭함"
  },
  "ghlEmailBuilderCommon.emailCampaign.contactsInSegment": {
   "en": "{Contacts} in segment",
@@ -358825,7 +358825,7 @@
  },
  "ghlEmailBuilderCommon.emailCampaign.dynamicDescription": {
   "en": "Dynamic unsubscribe merges \"Two step\" and \"One step\" processes. Unsubscribing is immediate (One step) unless the {contact} opts out within 5 minutes of email delivery or the email is less than 1 hour old, in which case confirmation is required (Two step).",
-  "ko": "동적 수신거부는 \"2단계\"와 \"1단계\" 프로세스를 통합합니다. {contact}가 이메일 전달 5분 이내에 수신 거부하거나 이메일이 생성된 지 1시간 미만인 경우를 제외하고는 수신거부가 즉시(1단계) 처리되며, 해당하는 경우에는 확인이 필요합니다(2단계)."
+  "ko": "동적 수신거부는 \"2단계\"와 \"1단계\" 프로세스를 통합합니다. {contact}이(가) 이메일 전달 후 5분 이내에 수신거부하거나 이메일이 생성된 지 1시간 미만인 경우를 제외하고는 수신거부가 즉시(1단계) 처리되며, 해당하는 경우에는 확인이 필요합니다(2단계)."
  },
  "ghlEmailBuilderCommon.emailCampaign.emailAlreadyAdded": {
   "en": "Email already added",
@@ -359009,11 +359009,11 @@
  },
  "ghlEmailBuilderCommon.emailCampaign.olderContactAfterMinute": {
   "en": "Older Contact/After 5 minutes",
-  "ko": "이전 연락처/5분 후"
+  "ko": "기존 연락처/5분 경과 후"
  },
  "ghlEmailBuilderCommon.emailCampaign.oneStepTitle": {
   "en": "One step",
-  "ko": "한 단계"
+  "ko": "1단계"
  },
  "ghlEmailBuilderCommon.emailCampaign.openRateHelper": {
   "en": "Opened emails divided by total emails sent.",
@@ -359057,7 +359057,7 @@
  },
  "ghlEmailBuilderCommon.emailCampaign.resendUnopenedEmailDescrption": {
   "en": "Re-engage non-openers by automatically resending emails with updated subject lines at your preferred time",
-  "ko": "선호하는 시간에 업데이트된 제목으로 이메일을 자동 재발송하여 미열람자를 재참여시키세요"
+  "ko": "이메일을 열지 않은 수신자에게 원하는 시간에 제목을 바꿔 자동 재발송하여 다시 참여를 유도하세요"
  },
  "ghlEmailBuilderCommon.emailCampaign.resumeHelper": {
   "en": "Resume the Campaign",
@@ -359125,11 +359125,11 @@
  },
  "ghlEmailBuilderCommon.emailCampaign.tagsContactClicked": {
   "en": "{Contact} clicked the campaign",
-  "ko": "{Contact}님이 캠페인을 클릭했습니다"
+  "ko": "{Contact}이(가) 캠페인을 클릭했습니다"
  },
  "ghlEmailBuilderCommon.emailCampaign.tagsContactOpened": {
   "en": "{Contact} opened the campaign",
-  "ko": "{Contact}님이 캠페인을 열었습니다"
+  "ko": "{Contact}이(가) 캠페인을 열었습니다"
  },
  "ghlEmailBuilderCommon.emailCampaign.testEmail": {
   "en": "Test Email",
@@ -359201,7 +359201,7 @@
  },
  "ghlEmailBuilderCommon.emailCampaign.verifyEmailDescription": {
   "en": "We've sent an email to {email}. You can click the verification link sent in the email or enter the code in the field below.",
-  "ko": "{email}로 이메일을 보냈습니다. 이메일에 포함된 인증 링크를 클릭하거나 아래 입력란에 코드를 입력하세요."
+  "ko": "{email}(으)로 이메일을 보냈습니다. 이메일에 포함된 인증 링크를 클릭하거나 아래 입력란에 코드를 입력하세요."
  },
  "ghlEmailBuilderCommon.emailCampaign.viewContacts": {
   "en": "View {Contacts}",
@@ -359257,7 +359257,7 @@
  },
  "ghlEmailBuilderCommon.emailSequence.afterLastEmailOpened": {
   "en": "last email is opened",
-  "ko": "마지막 이메일이 열렸습니다"
+  "ko": "마지막 이메일이 열린 후"
  },
  "ghlEmailBuilderCommon.emailSequence.ai.building.checking": {
   "en": "Checking the sequence",
@@ -359281,7 +359281,7 @@
  },
  "ghlEmailBuilderCommon.emailSequence.ai.generateStepPrompt": {
   "en": "Write the email for step {step} of this sequence, \"{name}\", to fit the rest of the sequence.",
-  "ko": "이 시퀀스 \"{name}\"의 {step}단계에 맞는 이메일을 작성하세요."
+  "ko": "이 시퀀스 \"{name}\"의 {step}단계 이메일을 나머지 시퀀스와 어울리도록 작성하세요."
  },
  "ghlEmailBuilderCommon.emailSequence.ai.ideaReengage": {
   "en": "Re-engage customers",
@@ -359305,7 +359305,7 @@
  },
  "ghlEmailBuilderCommon.emailSequence.ai.intakeLead": {
   "en": "I'll ask a few quick ones to get started. Just tap your answers.",
-  "ko": "시작을 위해 몇 가지 간단한 질문을 드릴게요. 답변만 탭해 주세요."
+  "ko": "시작을 위해 몇 가지 간단한 질문을 드리겠습니다. 답변을 탭하기만 하면 됩니다."
  },
  "ghlEmailBuilderCommon.emailSequence.ai.launchSend": {
   "en": "Yes, send it",
@@ -359317,15 +359317,15 @@
  },
  "ghlEmailBuilderCommon.emailSequence.ai.mistakeWarning": {
   "en": "Email AI can make mistakes. Double-check responses.",
-  "ko": "Email AI는 실수를 할 수 있습니다. 응답을 다시 확인하세요."
+  "ko": "이메일 AI는 실수를 할 수 있습니다. 응답을 다시 확인하세요."
  },
  "ghlEmailBuilderCommon.emailSequence.ai.planApprovalQuestion": {
   "en": "Ready to write the emails for these steps?",
-  "ko": "이 단계들에 대한 이메일을 작성할 준비가 되었나요?"
+  "ko": "이 단계들의 이메일 작성을 진행하시겠습니까?"
  },
  "ghlEmailBuilderCommon.emailSequence.ai.stepRewrittenOnApprove": {
   "en": "Email AI rewrites this email when you approve the plan.",
-  "ko": "계획을 승인하면 Email AI가 이 이메일을 다시 작성합니다."
+  "ko": "계획을 승인하면 이메일 AI가 이 이메일을 다시 작성합니다."
  },
  "ghlEmailBuilderCommon.emailSequence.ai.todos.sequences_create_plan.body": {
   "en": "Choosing how many emails to send and how far apart.",
@@ -359333,7 +359333,7 @@
  },
  "ghlEmailBuilderCommon.emailSequence.ai.todos.sequences_create_plan.label": {
   "en": "Plan the steps and their timing",
-  "ko": "단계와 타이밍 계획하기"
+  "ko": "단계와 타이밍 계획"
  },
  "ghlEmailBuilderCommon.emailSequence.ai.todos.sequences_create_review.active": {
   "en": "Finishing up",
@@ -359345,7 +359345,7 @@
  },
  "ghlEmailBuilderCommon.emailSequence.ai.todos.sequences_create_review.label": {
   "en": "Get the plan ready for your review",
-  "ko": "검토할 계획 준비하기"
+  "ko": "검토할 계획 준비"
  },
  "ghlEmailBuilderCommon.emailSequence.ai.todos.sequences_create_setup.active": {
   "en": "Setting things up",
@@ -359361,7 +359361,7 @@
  },
  "ghlEmailBuilderCommon.emailSequence.ai.todos.sequences_create_steps.label": {
   "en": "Add the email steps",
-  "ko": "이메일 단계 추가하기"
+  "ko": "이메일 단계 추가"
  },
  "ghlEmailBuilderCommon.emailSequence.ai.todos.sequences_create_understand.body": {
   "en": "Reading your brief and the audience you named.",
@@ -359369,15 +359369,15 @@
  },
  "ghlEmailBuilderCommon.emailSequence.ai.todos.sequences_update_copy.active": {
   "en": "Aligning the copy",
-  "ko": "카피 조정하기"
+  "ko": "카피를 맞추는 중"
  },
  "ghlEmailBuilderCommon.emailSequence.ai.todos.sequences_update_copy.label": {
   "en": "Align copy, subjects, and CTAs",
-  "ko": "카피, 제목, CTA 정렬하기"
+  "ko": "카피, 제목, CTA 통일"
  },
  "ghlEmailBuilderCommon.emailSequence.ai.todos.sequences_update_understand.label": {
   "en": "Understand the change you asked for",
-  "ko": "요청하신 변경 사항 이해하기"
+  "ko": "요청하신 변경 사항 파악"
  },
  "ghlEmailBuilderCommon.emailSequence.ai.todos.sequences_write_check.active": {
   "en": "Checking the sequence",
@@ -359485,7 +359485,7 @@
  },
  "ghlEmailBuilderCommon.emailSequence.createSequenceHelper": {
   "en": "Start a sequence of emails to be sent automatically over time.",
-  "ko": "시간에 걸쳐 자동으로 발송되는 이메일 시퀀스를 시작하세요."
+  "ko": "일정 간격으로 자동 발송되는 이메일 시퀀스를 시작하세요."
  },
  "ghlEmailBuilderCommon.emailSequence.creatingSequenceV2": {
   "en": "Creating sequence…",
@@ -359497,7 +359497,7 @@
  },
  "ghlEmailBuilderCommon.emailSequence.dateTaggedLabel": {
   "en": "Date tagged",
-  "ko": "태그 지정 날짜"
+  "ko": "태그 지정일"
  },
  "ghlEmailBuilderCommon.emailSequence.dayStatusInDays": {
   "en": "In {count} days",
@@ -359573,7 +359573,7 @@
  },
  "ghlEmailBuilderCommon.emailSequence.firstEmailGoOutOnPrefix": {
   "en": "Your first email will go out on ",
-  "ko": "첫 번째 이메일이 발송되는 시점:"
+  "ko": "첫 번째 이메일 발송 일시: "
  },
  "ghlEmailBuilderCommon.emailSequence.fixIssuesBeforeSending": {
   "en": "Please fix issues(s) before sending",
@@ -359597,7 +359597,7 @@
  },
  "ghlEmailBuilderCommon.emailSequence.invalidResendSubjectMessage": {
   "en": "Invalid resend to unopened subject.",
-  "ko": "열리지 않은 제목으로 재발송하는 것은 유효하지 않습니다."
+  "ko": "미열람자 재발송용 제목이 유효하지 않습니다."
  },
  "ghlEmailBuilderCommon.emailSequence.invalidSubjectMessage": {
   "en": "Invalid subject.",
@@ -359677,7 +359677,7 @@
  },
  "ghlEmailBuilderCommon.emailSequence.sequenceHelper": {
   "en": "Create a sequence of emails to be sent automatically over time.",
-  "ko": "시간에 걸쳐 자동으로 발송되는 이메일 시퀀스를 만드세요."
+  "ko": "일정 간격으로 자동 발송되는 이메일 시퀀스를 만드세요."
  },
  "ghlEmailBuilderCommon.emailSequence.sequenceName": {
   "en": "Sequence name",
@@ -359705,7 +359705,7 @@
  },
  "ghlEmailBuilderCommon.emailSequence.subsequentEmailSendAt": {
   "en": ", at {sendTime} ({timezone})",
-  "ko": ", {sendTime}({timezone})에"
+  "ko": ", {sendTime} ({timezone})"
  },
  "ghlEmailBuilderCommon.emailSequence.typeFolderNameLabel": {
   "en": "Type folder name",
@@ -359841,7 +359841,7 @@
  },
  "ghlEmailBuilderCommon.emailTemplate.sendEmailTo": {
   "en": "Send an email to",
-  "ko": "이메일 보내기"
+  "ko": "다음 주소로 이메일 보내기"
  },
  "ghlEmailBuilderCommon.emailTemplate.settingHeadingHelper": {
   "en": "Save Template Settings",
@@ -359885,7 +359885,7 @@
  },
  "ghlEmailBuilderCommon.emailTemplate.unarchiveTemplateNamed": {
   "en": "Unarchive ‘{name}’ template",
-  "ko": "'{name}' 템플릿 보관 취소"
+  "ko": "'{name}' 템플릿 보관 해제"
  },
  "ghlEmailBuilderCommon.emailTemplate.updatedPermission": {
   "en": "Updated permission",
@@ -359917,7 +359917,7 @@
  },
  "ghlEmailBuilderCommon.emails.builder.validation.apiFolderOnly": {
   "en": "Api supports only entities of type folder!",
-  "ko": "API는 folder 유형의 엔티티만 지원합니다!"
+  "ko": "API는 폴더 유형의 엔티티만 지원합니다!"
  },
  "ghlEmailBuilderCommon.emails.builder.validation.insufficientAiCredits": {
   "en": "Insufficient AI credits. Credits reset every 24 hours.",
@@ -359941,7 +359941,7 @@
  },
  "ghlEmailBuilderCommon.emails.builderElements.error.fetchDndFailed": {
   "en": "Fetch Element DND Failed",
-  "ko": "요소 수신거부 가져오기 실패"
+  "ko": "드래그 앤 드롭 요소 가져오기 실패"
  },
  "ghlEmailBuilderCommon.emails.builderElements.error.updateFailed": {
   "en": "Update Saved Element Failed",
@@ -359953,7 +359953,7 @@
  },
  "ghlEmailBuilderCommon.emails.campaigns.success.syncInitiated": {
   "en": "Sync changes initiated successfully",
-  "ko": "동기화 변경사항이 시작되었습니다"
+  "ko": "변경사항 동기화가 시작되었습니다"
  },
  "ghlEmailBuilderCommon.emails.imageGen.error.createJobFailed": {
   "en": "Failed to create job",
@@ -360177,7 +360177,7 @@
  },
  "ghlEmailBuilderCommon.importTemplates.imagesNotImported": {
   "en": "Images didn't import",
-  "ko": "이미지가 가져와지지 않았습니다"
+  "ko": "이미지를 가져오지 못했습니다"
  },
  "ghlEmailBuilderCommon.importTemplates.importFrom": {
   "en": "Import from",
@@ -360269,7 +360269,7 @@
  },
  "ghlEmailBuilderCommon.inboxPreview.notRenderedYet": {
   "en": "Select Preview email to see it here.",
-  "ko": "미리보기 이메일을 선택하면 여기에 표시됩니다."
+  "ko": "'이메일 미리보기'를 선택하면 여기에 표시됩니다."
  },
  "ghlEmailBuilderCommon.inboxPreview.otherSelected": {
   "en": "Other selected ({count})",
@@ -360293,11 +360293,11 @@
  },
  "ghlEmailBuilderCommon.inboxPreview.previewedIn": {
   "en": "Previewed in {count} client | Previewed in {count} clients",
-  "ko": "{count}개 클라이언트에서 미리보기함 | {count}개 클라이언트에서 미리보기함"
+  "ko": "{count}개 클라이언트에서 미리보기 완료 | {count}개 클라이언트에서 미리보기 완료"
  },
  "ghlEmailBuilderCommon.inboxPreview.previewedInPartial": {
   "en": "Previewed in {ready} of {count} client | Previewed in {ready} of {count} clients",
-  "ko": "{count}개 중 {ready}개 클라이언트에서 미리보기함 | {count}개 중 {ready}개 클라이언트에서 미리보기함"
+  "ko": "{count}개 중 {ready}개 클라이언트에서 미리보기 완료 | {count}개 중 {ready}개 클라이언트에서 미리보기 완료"
  },
  "ghlEmailBuilderCommon.inboxPreview.previewsLeft": {
   "en": "{remaining} preview left | {remaining} previews left",
@@ -360357,7 +360357,7 @@
  },
  "ghlEmailBuilderCommon.tableFilters.pastMonth": {
   "en": "Past month",
-  "ko": "지난달"
+  "ko": "지난 1개월"
  },
  "ghlEmailBuilderCommon.tableFilters.showHiddenFilters": {
   "en": "Show {count} hidden filters",
@@ -360365,7 +360365,7 @@
  },
  "ghlEmailBuilderCommon.tableFilters.sortDateNewestFirst": {
   "en": "Newest → Oldest",
-  "ko": "최신순 → 오래된순"
+  "ko": "최신 → 오래된 순"
  },
  "ghlEmailBuilderCommon.assistModeOptions.businessNiche.restaurants": {
   "en": "Restaurants",
@@ -360385,7 +360385,7 @@
  },
  "ghlEmailBuilderCommon.assistModeOptions.targetAudience.parents": {
   "en": "Parents",
-  "ko": "상위 항목"
+  "ko": "부모"
  },
  "ghlEmailBuilderCommon.campaignSchedule.addTags": {
   "en": "Add tags",
@@ -360529,7 +360529,7 @@
  },
  "ghlEmailBuilderCommon.common.variation": {
   "en": "Variation",
-  "ko": "배리에이션"
+  "ko": "변형"
  },
  "ghlEmailBuilderCommon.common.weekdays.full.sunday": {
   "en": "Sunday",
@@ -360557,7 +360557,7 @@
  },
  "ghlEmailBuilderCommon.customVariables.assignedUser": {
   "en": "Assigned User",
-  "ko": "할당된 사용자"
+  "ko": "배정된 사용자"
  },
  "ghlEmailBuilderCommon.customVariables.availableQuantity": {
   "en": "Available Quantity",
@@ -360605,7 +360605,7 @@
  },
  "ghlEmailBuilderCommon.customVariables.hourAMPMFormat": {
   "en": "Hour AM/PM format",
-  "ko": "AM/PM 형식"
+  "ko": "시간(AM/PM 형식)"
  },
  "ghlEmailBuilderCommon.customVariables.invoiceNumber": {
   "en": "Invoice Number",
@@ -360617,7 +360617,7 @@
  },
  "ghlEmailBuilderCommon.customVariables.locations": {
   "en": "Locations",
-  "ko": "위치"
+  "ko": "서브 계정"
  },
  "ghlEmailBuilderCommon.customVariables.number": {
   "en": "Number",
@@ -360669,7 +360669,7 @@
  },
  "ghlEmailBuilderCommon.emailBuilder.assist.brandVoice.formal": {
   "en": "Formal",
-  "ko": "격식적"
+  "ko": "격식 있는"
  },
  "ghlEmailBuilderCommon.emailBuilder.assist.brandVoice.friendly": {
   "en": "Friendly",
@@ -360685,7 +360685,7 @@
  },
  "ghlEmailBuilderCommon.emailBuilder.assist.name": {
   "en": "Assist",
-  "ko": "지원"
+  "ko": "어시스트"
  },
  "ghlEmailBuilderCommon.emailBuilder.assist.starter.previewTemplate": {
   "en": "Preview template",
@@ -360693,7 +360693,7 @@
  },
  "ghlEmailBuilderCommon.emailBuilder.assist.starter.previousTemplates": {
   "en": "Your templates",
-  "ko": "나의 템플릿"
+  "ko": "내 템플릿"
  },
  "ghlEmailBuilderCommon.emailBuilder.assist.starter.startFromScratch": {
   "en": "Start from scratch",
@@ -360725,11 +360725,11 @@
  },
  "ghlEmailBuilderCommon.emailBuilder.defaultValue.labelPrefix": {
   "en": "Insert if",
-  "ko": "조건 삽입"
+  "ko": "다음 경우 삽입"
  },
  "ghlEmailBuilderCommon.emailBuilder.globalCustomColors": {
   "en": "Global Custom Colors",
-  "ko": "전역 사용자 지정 색상"
+  "ko": "전역 커스텀 색상"
  },
  "ghlEmailBuilderCommon.emailBuilder.left": {
   "en": "Left",
@@ -360821,7 +360821,7 @@
  },
  "ghlEmailBuilderCommon.emailCampaign.abTestTable.unsubscribed": {
   "en": "Unsubscribed",
-  "ko": "구독취소"
+  "ko": "수신거부"
  },
  "ghlEmailBuilderCommon.emailCampaign.attribution": {
   "en": "Attribution",
@@ -360933,7 +360933,7 @@
  },
  "ghlEmailBuilderCommon.emailSequence.yourTemplatesLabel": {
   "en": "Your templates",
-  "ko": "나의 템플릿"
+  "ko": "내 템플릿"
  },
  "ghlEmailBuilderCommon.emailTemplate.copiedToClipboard": {
   "en": "Copied to clipboard",
@@ -361537,7 +361537,7 @@
  },
  "locationsApp.activeSubscriptionsAlert": {
   "en": "The location has active subscriptions. Please cancel all subscriptions before transferring the location. List of active subscriptions: {subscriptions}",
-  "ko": "해당 지점에 활성 구독이 있습니다. 지점을 이전하기 전에 모든 구독을 취소해 주세요. 활성 구독 목록: {subscriptions}"
+  "ko": "해당 서브 계정에 활성 구독이 있습니다. 서브 계정을 이전하기 전에 모든 구독을 취소해 주세요. 활성 구독 목록: {subscriptions}"
  },
  "locationsApp.addSubAccount.ownAccountDescription297": {
   "en": "Agency sub accounts can be used for rebilling via payment providers other than Stripe.",
@@ -361621,7 +361621,7 @@
  },
  "locationsApp.industrySubAccount.details.businessDescription": {
   "en": "Add the name, address, and how to reach this location.",
-  "ko": "이 지점의 이름, 주소, 연락 방법을 추가하세요."
+  "ko": "이 서브 계정의 비즈니스 이름, 주소, 연락 방법을 추가하세요."
  },
  "locationsApp.industrySubAccount.details.whatDoesClientNeed": {
   "en": "What does this client need?",
@@ -361645,7 +361645,7 @@
  },
  "locationsApp.industrySubAccount.needs.fieldServices.estimatesInvoices.description": {
   "en": "Create estimates, send invoices, collect payments, and track outstanding balances.",
-  "ko": "견적을 작성하고, 인보이스를 보내고, 결제를 수금하고, 미수 잔액을 추적하세요."
+  "ko": "견적을 작성하고, 인보이스를 보내고, 결제를 받고, 미수 잔액을 추적하세요."
  },
  "locationsApp.industrySubAccount.needs.fieldServices.estimatesInvoices.title": {
   "en": "Estimates & invoices",
@@ -361681,7 +361681,7 @@
  },
  "locationsApp.locations.deleteSmartlistDescription": {
   "en": "This smartlist view and its configuration will be deleted for all users with access. This action is irreversible and cannot be undone.",
-  "ko": "이 스마트리스트 보기와 해당 구성은 접근 권한이 있는 모든 사용자에게서 삭제됩니다. 이 작업은 되돌릴 수 없으며 취소할 수 없습니다."
+  "ko": "이 스마트 리스트 보기와 해당 구성은 접근 권한이 있는 모든 사용자에게서 삭제됩니다. 이 작업은 되돌릴 수 없습니다."
  },
  "locationsApp.locations.groupBy.noPlan": {
   "en": "No plan",
@@ -361701,7 +361701,7 @@
  },
  "locationsApp.locations.plan97FeaturesActive": {
   "en": "97 Plan Features Active",
-  "ko": "97개 플랜 기능 활성화됨"
+  "ko": "97 플랜 기능 활성화됨"
  },
  "locationsApp.locations.quickLastLogin.quiet60": {
   "en": "Over 60 days ago",
@@ -361745,7 +361745,7 @@
  },
  "locationsApp.locations.tags.appliedFilterAny": {
   "en": "Tag any of {names}",
-  "ko": "{names} 중 하나에 태그 지정"
+  "ko": "태그: {names} 중 하나"
  },
  "locationsApp.locations.tags.filterEmpty": {
   "en": "No tags yet. Add tags to accounts to filter by them.",
@@ -361789,7 +361789,7 @@
  },
  "locationsApp.locations.totalLocations": {
   "en": "Total Locations",
-  "ko": "전체 지점"
+  "ko": "전체 서브 계정"
  },
  "locationsApp.locations.viewPermission": {
   "en": "View Permission",
@@ -361797,7 +361797,7 @@
  },
  "locationsApp.locationsProcessed": {
   "en": "Locations Processed",
-  "ko": "처리된 지점"
+  "ko": "처리된 서브 계정"
  },
  "locationsApp.lowestFirst": {
   "en": "Lowest first",
@@ -361813,7 +361813,7 @@
  },
  "locationsApp.manageSubAccount.advancedSettings.controlLocation": {
   "en": "Control the Location Settings",
-  "ko": "지점 설정 제어"
+  "ko": "서브 계정 설정 제어"
  },
  "locationsApp.manageSubAccount.advancedSettings.disableAddEmail": {
   "en": "Disable the Add Email Service button in the sub-account Email Service Settings",
@@ -361825,7 +361825,7 @@
  },
  "locationsApp.manageSubAccount.advancedSettings.tooltip": {
   "en": "Email sent by location so far today",
-  "ko": "오늘 지점에서 지금까지 발송된 이메일"
+  "ko": "오늘 이 서브 계정에서 지금까지 발송된 이메일"
  },
  "locationsApp.manageSubAccount.agencySubAccountModals.confirmation.title": {
   "en": "Are you sure you want to add this as your agency sub-account?",
@@ -361833,11 +361833,11 @@
  },
  "locationsApp.manageSubAccount.agencySubAccountModals.removal.removeText97": {
   "en": "Remove as agency sub-account",
-  "ko": "에이전시 서브 계정에서 제거"
+  "ko": "에이전시 서브 계정 지정 해제"
  },
  "locationsApp.manageSubAccount.deleteSubAccount.lcPhoneWarning": {
   "en": "You are choosing not to delete and close the LC account, this means that you will still be charged for all the usage irrespective of subaccount being charged or not.",
-  "ko": "LC 계정을 삭제하고 해지하지 않기로 선택하셨습니다. 이는 서브 계정 청구 여부와 관계없이 모든 사용량에 대해 계속 요금이 청구됨을 의미합니다."
+  "ko": "전화 서비스 계정을 삭제·해지하지 않기로 선택하셨습니다. 이 경우 서브 계정 청구 여부와 관계없이 모든 사용량에 대해 계속 요금이 청구됩니다."
  },
  "locationsApp.manageSubAccount.header.switchToAccountAria": {
   "en": "Switch to account",
@@ -362117,7 +362117,7 @@
  },
  "locationsApp.totalLocations": {
   "en": "Total Locations",
-  "ko": "전체 로케이션"
+  "ko": "전체 서브 계정"
  },
  "locationsApp.totalSubAccounts": {
   "en": "Total Sub-Accounts",
@@ -362489,11 +362489,11 @@
  },
  "opportunitiesApp.associations.associatedObject": {
   "en": "Associated Object",
-  "ko": "연결된 객체"
+  "ko": "연결된 오브젝트"
  },
  "opportunitiesApp.associations.otherObjects": {
   "en": "Other Objects",
-  "ko": "다른 객체"
+  "ko": "다른 오브젝트"
  },
  "opportunitiesApp.bulkActions.multiLineCall.openFailed": {
   "en": "We couldn't open the call list. Try again.",
@@ -362537,7 +362537,7 @@
  },
  "opportunitiesApp.common.noResultFound": {
   "en": "No {objectNamePlural} found",
-  "ko": "{objectNamePlural}를 찾을 수 없습니다"
+  "ko": "{objectNamePlural}을(를) 찾을 수 없습니다"
  },
  "opportunitiesApp.common.permissionDeniedDesc": {
   "en": "You currently have view-only access to this smartlist and cannot make any changes. If you need edit permissions, please contact the smartlist owner for access.",
@@ -362577,7 +362577,7 @@
  },
  "opportunitiesApp.common.updatedTextTable": {
   "en": "Update this configuration to all the pipelines in this location",
-  "ko": "이 설정을 이 로케이션의 모든 파이프라인에 업데이트"
+  "ko": "이 서브 계정의 모든 파이프라인에 이 설정 적용"
  },
  "opportunitiesApp.common.warning": {
   "en": "Warning!",
@@ -362609,7 +362609,7 @@
  },
  "opportunitiesApp.notes.associatedObjectTooltip": {
   "en": "Associate note to Contacts, Opportunities, Companies or Custom Object",
-  "ko": "연락처, 기회, 업체 또는 커스텀 객체에 메모 연결"
+  "ko": "연락처, 기회, 회사 또는 커스텀 오브젝트에 메모 연결"
  },
  "opportunitiesApp.notes.common.unsavedChangesAlertDesc": {
   "en": "Any unsaved progress will be lost. Do you want to discard change(s)?",
@@ -362625,19 +362625,19 @@
  },
  "opportunitiesApp.opportunities.activityBackfill.banner.description": {
   "en": "Add older tasks, notes, appointments, and conversations from contacts to their opportunities across this location, or find this later from the ⋮ menu.",
-  "ko": "이 로케이션 전체에서 연락처의 이전 작업, 메모, 예약, 대화를 기회로 가져오거나, 나중에 ⋮ 메뉴에서 찾을 수 있습니다."
+  "ko": "이 서브 계정 전체에서 연락처의 이전 작업, 메모, 예약, 대화를 해당 기회로 가져오세요. 나중에 ⋮ 메뉴에서도 할 수 있습니다."
  },
  "opportunitiesApp.opportunities.activityBackfill.banner.progressDescription": {
   "en": "We're adding older tasks, notes, appointments, and conversations to opportunities across this location. This can take a while.",
-  "ko": "이 로케이션 전체의 기회에 이전 작업, 메모, 예약, 대화를 추가하는 중입니다. 시간이 걸릴 수 있습니다."
+  "ko": "이 서브 계정 전체의 기회에 이전 작업, 메모, 예약, 대화를 추가하는 중입니다. 시간이 걸릴 수 있습니다."
  },
  "opportunitiesApp.opportunities.activityBackfill.banner.progressTitle": {
   "en": "Bringing in past activity across this location",
-  "ko": "이 로케이션 전체의 과거 활동을 가져오는 중"
+  "ko": "이 서브 계정 전체의 과거 활동을 가져오는 중"
  },
  "opportunitiesApp.opportunities.activityBackfill.banner.title": {
   "en": "Bring in past activity across this location",
-  "ko": "이 로케이션 전체의 과거 활동 가져오기"
+  "ko": "이 서브 계정 전체의 과거 활동 가져오기"
  },
  "opportunitiesApp.opportunities.activityBackfill.completed.description": {
   "en": "{activities} past activities added to {count} opportunities",
@@ -362645,11 +362645,11 @@
  },
  "opportunitiesApp.opportunities.activityBackfill.completed.descriptionNoCount": {
   "en": "{activities} past activities added across this location",
-  "ko": "이 로케이션 전체에 {activities}개의 과거 활동이 추가되었습니다"
+  "ko": "이 서브 계정 전체에 {activities}개의 과거 활동이 추가되었습니다"
  },
  "opportunitiesApp.opportunities.activityBackfill.completed.descriptionPlain": {
   "en": "Past activities added across this location",
-  "ko": "이 로케이션 전체에 과거 활동이 추가되었습니다"
+  "ko": "이 서브 계정 전체에 과거 활동이 추가되었습니다"
  },
  "opportunitiesApp.opportunities.activityBackfill.emptyRange.description": {
   "en": "We couldn't find any past activity to bring into these opportunities.",
@@ -362665,7 +362665,7 @@
  },
  "opportunitiesApp.opportunities.activityBackfill.failed.description": {
   "en": "The run across this location did not finish. Please try again.",
-  "ko": "이 로케이션 전체의 실행이 완료되지 않았습니다. 다시 시도해 주세요."
+  "ko": "이 서브 계정 전체에 대한 실행이 완료되지 않았습니다. 다시 시도해 주세요."
  },
  "opportunitiesApp.opportunities.activityBackfill.failed.title": {
   "en": "Couldn't bring in past activity",
@@ -362677,11 +362677,11 @@
  },
  "opportunitiesApp.opportunities.activityBackfill.started.descriptionNoCount": {
   "en": "Adding past tasks, notes, appointments, and conversations to the opportunities in this location. We'll notify you when it's done.",
-  "ko": "이 로케이션의 기회에 과거 작업, 메모, 예약, 대화를 추가하는 중입니다. 완료되면 알려드리겠습니다."
+  "ko": "이 서브 계정의 기회에 과거 작업, 메모, 예약, 대화를 추가하는 중입니다. 완료되면 알려드리겠습니다."
  },
  "opportunitiesApp.opportunities.activityBackfill.started.title": {
   "en": "Bringing in past activity across this location",
-  "ko": "이 로케이션 전체의 과거 활동을 가져오는 중"
+  "ko": "이 서브 계정 전체의 과거 활동을 가져오는 중"
  },
  "opportunitiesApp.opportunities.bulkOperation": {
   "en": "Bulk operation",
@@ -362745,7 +362745,7 @@
  },
  "opportunitiesApp.opportunities.quickActionSource.conversationsLocked": {
   "en": "Conversations always come from the opportunity",
-  "ko": "대화는 항상 기회에서 시작됩니다"
+  "ko": "대화는 항상 기회에서 가져옵니다"
  },
  "opportunitiesApp.opportunities.quickActionSource.tagsLocked": {
   "en": "Tags always come from the primary contact",
@@ -362793,7 +362793,7 @@
  },
  "opportunitiesApp.opportunities.tour.steps.associations.description": {
   "en": "See what this opportunity is connected to — contacts, companies and properties. Add or remove links from here.",
-  "ko": "이 기회가 연결된 연락처, 업체, 속성을 확인하세요. 여기서 연결을 추가하거나 제거할 수 있습니다."
+  "ko": "연락처, 회사 등 이 기회에 연결된 레코드를 확인하세요. 여기서 연결을 추가하거나 제거할 수 있습니다."
  },
  "opportunitiesApp.opportunities.tour.steps.cardContact.description": {
   "en": "To get to the contact record, click the contact name on the card instead.",
@@ -362837,7 +362837,7 @@
  },
  "opportunitiesApp.preview.chaseTheSignedContract": {
   "en": "Chase the signed contract",
-  "ko": "서명된 계약서 확인하기"
+  "ko": "서명된 계약서 회수 요청"
  },
  "opportunitiesApp.preview.confirmBillingDetails": {
   "en": "Confirm billing details",
@@ -362873,7 +362873,7 @@
  },
  "opportunitiesApp.calendar.thePreConfiguredAppointmentTitle": {
   "en": "Consider leaving it blank, should you choose to use the pre-configured Appointment Title",
-  "ko": "미리 구성된 예약 제목을 사용하려면 비워두는 것을 고려하세요"
+  "ko": "미리 설정된 예약 제목을 사용하려면 비워 두세요"
  },
  "opportunitiesApp.canonical.common.something_went_wrong": {
   "en": "Something went wrong",
@@ -362881,7 +362881,7 @@
  },
  "opportunitiesApp.canonical.opportunity.bulk_deleted": {
   "en": "Bulk deleted {count} opportunities",
-  "ko": "{count}개의 기회를 대량 삭제했습니다"
+  "ko": "{count}개의 기회를 일괄 삭제했습니다"
  },
  "opportunitiesApp.canonical.opportunity.contact_invalid": {
   "en": "contactId is invalid.",
@@ -362897,11 +362897,11 @@
  },
  "opportunitiesApp.canonical.permissions.revoke_follower": {
   "en": "Can not revoke permissions for user - {userId} as they are already a follower of {count} opportunit(y/ies)",
-  "ko": "사용자 - {userId}는 이미 {count}개 기회의 팔로워이므로 권한을 취소할 수 없습니다"
+  "ko": "사용자 {userId}은(는) 이미 {count}개 기회의 팔로워이므로 권한을 취소할 수 없습니다"
  },
  "opportunitiesApp.canonical.permissions.revoke_owner": {
   "en": "Can not revoke permissions for user - {userId} as they are already an owner of {count} opportunit(y/ies)",
-  "ko": "사용자 - {userId}는 이미 {count}개 기회의 소유자이므로 권한을 취소할 수 없습니다"
+  "ko": "사용자 {userId}은(는) 이미 {count}개 기회의 소유자이므로 권한을 취소할 수 없습니다"
  },
  "opportunitiesApp.canonical.pipeline.not_deleted_with_id": {
   "en": "Pipeline with id {id} is not deleted",
@@ -362917,11 +362917,11 @@
  },
  "opportunitiesApp.canonical.smart_filter.bulk_delete_failed": {
   "en": "Failed to bulk delete smart filters",
-  "ko": "스마트 필터를 대량 삭제하지 못했습니다"
+  "ko": "스마트 필터를 일괄 삭제하지 못했습니다"
  },
  "opportunitiesApp.canonical.smart_filter.not_found_in_validation": {
   "en": "Smart filter with id: {id} not found",
-  "ko": "id: {id}인 스마트 필터를 찾을 수 없습니다"
+  "ko": "ID가 {id}인 스마트 필터를 찾을 수 없습니다"
  },
  "opportunitiesApp.common.addNestedFilter": {
   "en": "Add nested filter",
@@ -362961,11 +362961,11 @@
  },
  "opportunitiesApp.common.defaultIn": {
   "en": "Default in",
-  "ko": "기본값"
+  "ko": "기본 보기로 설정할 파이프라인"
  },
  "opportunitiesApp.common.defaultViewAddedInfo": {
   "en": "This view will be set as default in {count} new pipeline(s) when you confirm.",
-  "ko": "확인하면 이 보기가 새 파이프라인 {count}개에서 기본값으로 설정됩니다."
+  "ko": "확인하면 이 뷰가 새 파이프라인 {count}개에서 기본값으로 설정됩니다."
  },
  "opportunitiesApp.common.defaultViewInTooltip": {
   "en": "Users will see this view first when opening the selected pipelines.",
@@ -362985,7 +362985,7 @@
  },
  "opportunitiesApp.common.notAssigned": {
   "en": "Not assigned",
-  "ko": "미지정"
+  "ko": "미배정"
  },
  "opportunitiesApp.common.searchField": {
   "en": "Search fields",
@@ -363033,11 +363033,11 @@
  },
  "opportunitiesApp.filters.values.thisWeek": {
   "en": "This week",
-  "ko": "이번주"
+  "ko": "이번 주"
  },
  "opportunitiesApp.notes.associatedObject": {
   "en": "Associated object",
-  "ko": "연결된 객체"
+  "ko": "연결된 오브젝트"
  },
  "opportunitiesApp.notes.common.delete": {
   "en": "Delete",
@@ -363045,7 +363045,7 @@
  },
  "opportunitiesApp.notes.common.discard": {
   "en": "Discard",
-  "ko": "삭제"
+  "ko": "변경 취소"
  },
  "opportunitiesApp.notes.common.unsavedChangesAlertTitle": {
   "en": "You have {count} unsaved change(s)",
@@ -363057,11 +363057,11 @@
  },
  "opportunitiesApp.opportunities.activityBackfill.menuItem": {
   "en": "Bring in past activity",
-  "ko": "이전 활동 가져오기"
+  "ko": "과거 활동 가져오기"
  },
  "opportunitiesApp.opportunities.columns": {
   "en": "Columns",
-  "ko": "컬럼"
+  "ko": "열"
  },
  "opportunitiesApp.opportunities.conditionalRules.stageTitle": {
   "en": "Additional fields for {stage} stage",
@@ -363069,7 +363069,7 @@
  },
  "opportunitiesApp.opportunities.conditionalRules.statusTitle": {
   "en": "Additional fields to mark as {status}",
-  "ko": "{status} 로 표시할 추가 필드"
+  "ko": "{status}(으)로 표시하기 위한 추가 필드"
  },
  "opportunitiesApp.opportunities.contactEmail": {
   "en": "Primary email",
@@ -363109,7 +363109,7 @@
  },
  "opportunitiesApp.opportunities.forecastViews": {
   "en": "Forecast views",
-  "ko": "예측 조회수"
+  "ko": "예측 보기"
  },
  "opportunitiesApp.opportunities.lastStageChangeDateTimeZone": {
   "en": "Last stage change date ({timezone})",
@@ -363125,11 +363125,11 @@
  },
  "opportunitiesApp.opportunities.openOpportunities": {
   "en": "Open opportunities",
-  "ko": "열린 기회"
+  "ko": "진행 중인 기회"
  },
  "opportunitiesApp.opportunities.opportunity_owner": {
   "en": "Opportunity owner",
-  "ko": "기회 담당자"
+  "ko": "기회 소유자"
  },
  "opportunitiesApp.opportunities.phoneOfContact": {
   "en": "Contact's phone",
@@ -363177,7 +363177,7 @@
  },
  "opportunitiesApp.pipelinePage.duplicatePipeline.nOther": {
   "en": "{count} other",
-  "ko": "{count}개 기타"
+  "ko": "기타 {count}개"
  },
  "opportunitiesApp.pipelinePage.edit": {
   "en": "Edit",
@@ -363189,7 +363189,7 @@
  },
  "opportunitiesApp.pipelinePage.moveOpportunitiesToStage": {
   "en": "Move {objectLabelPlural} from stage “{fromStage}” to stage",
-  "ko": "{objectLabelPlural}을(를) \"{fromStage}\" 단계에서 다음 단계로 이동"
+  "ko": "{objectLabelPlural}을(를) \"{fromStage}\" 단계에서 옮길 대상 단계"
  },
  "opportunitiesApp.pipelinePage.permissions.canEdit": {
   "en": "Edit",
@@ -363297,7 +363297,7 @@
  },
  "opportunitiesApp.tasks.contactRequired": {
   "en": "Please select a {contact}",
-  "ko": "{contact}를 선택해 주세요"
+  "ko": "{contact}을(를) 선택해 주세요"
  },
  "opportunitiesApp.tasks.selectAssignee": {
   "en": "Select assignee",
@@ -363725,7 +363725,7 @@
  },
  "productsApp.collection.fields.variantTitle": {
   "en": "Variant Title",
-  "ko": "배리언트 제목"
+  "ko": "변형 제목"
  },
  "productsApp.collection.operators.contains": {
   "en": "Contains",
@@ -363745,7 +363745,7 @@
  },
  "productsApp.collection.type.manualDescription": {
   "en": "Add products to this collection one by one.",
-  "ko": "이 콜렉션에 상품을 하나씩 추가하세요."
+  "ko": "이 컬렉션에 상품을 하나씩 추가하세요."
  },
  "productsApp.common.additionalOptions": {
   "en": "Additional options",
@@ -363765,7 +363765,7 @@
  },
  "productsApp.common.availableQuantityTo": {
   "en": "Available quantity to",
-  "ko": "종료 사용 가능 수량"
+  "ko": "사용 가능 수량(최대)"
  },
  "productsApp.common.billedTo": {
   "en": "Billed to",
@@ -363773,11 +363773,11 @@
  },
  "productsApp.common.bulkEdit": {
   "en": "Bulk Edit",
-  "ko": "대량 편집"
+  "ko": "일괄 편집"
  },
  "productsApp.common.cancelWarning": {
   "en": "Are you sure you want to cancel and discard all changes?",
-  "ko": "취소하고 모든 변경 사항을 취소하시겠습니까?"
+  "ko": "취소하고 모든 변경 사항을 버리시겠습니까?"
  },
  "productsApp.common.card": {
   "en": "Card",
@@ -363825,7 +363825,7 @@
  },
  "productsApp.common.discard": {
   "en": "Discard",
-  "ko": "삭제"
+  "ko": "변경 취소"
  },
  "productsApp.common.discardChanges": {
   "en": "Discard Changes",
@@ -363865,7 +363865,7 @@
  },
  "productsApp.common.locationId": {
   "en": "Location Id",
-  "ko": "위치 ID"
+  "ko": "서브 계정 ID"
  },
  "productsApp.common.made": {
   "en": "made",
@@ -364073,7 +364073,7 @@
  },
  "productsApp.product.compareAtDescription1": {
   "en": "Enter a value higher than your price to display a markdown.",
-  "ko": "마크다운을 표시하려면 가격보다 높은 값을 입력하세요."
+  "ko": "할인 전 가격을 표시하려면 판매 가격보다 높은 값을 입력하세요."
  },
  "productsApp.product.create.description": {
   "en": "Create a new product to sell on funnels/websites and invoices",
@@ -364101,7 +364101,7 @@
  },
  "productsApp.product.label.endDate": {
   "en": "End",
-  "ko": "통화 종료"
+  "ko": "종료일"
  },
  "productsApp.product.priceDetailPage.successUrlPlaceholder": {
   "en": "Where should customers be taken once they've purchased",
@@ -364113,11 +364113,11 @@
  },
  "productsApp.product.priceDetailPage.urlExpiryOptions.never": {
   "en": "Never",
-  "ko": "없음"
+  "ko": "만료 안 함"
  },
  "productsApp.product.priceDetailPage.variantName": {
   "en": "Variant Name",
-  "ko": "배리언트 이름"
+  "ko": "변형 이름"
  },
  "productsApp.product.priceDetailPage.width": {
   "en": "Width",
@@ -364157,7 +364157,7 @@
  },
  "productsApp.schedulingOptions.intervalType.hourly": {
   "en": "Hourly",
-  "ko": "시간별"
+  "ko": "매시간"
  },
  "productsApp.schedulingOptions.intervalType.monthly": {
   "en": "Monthly",
@@ -364297,11 +364297,11 @@
  },
  "reportingApp.common.chartType.multiNumeric": {
   "en": "Multiple numbers",
-  "ko": "여러 개의 번호"
+  "ko": "여러 숫자"
  },
  "reportingApp.common.chartType.numericMonetory": {
   "en": "Numeric (currency)",
-  "ko": "숫자 (통화)"
+  "ko": "숫자 (금액)"
  },
  "reportingApp.common.chartType.numericPercentage": {
   "en": "Numeric (percentage)",
@@ -364541,7 +364541,7 @@
  },
  "reportingApp.locationDashboard.dashboardSummaryWidget.askAiPermissionDisabled": {
   "en": "Enable Ask AI to view summary",
-  "ko": "요약 보기를 위해 Ask AI 활성화"
+  "ko": "요약을 보려면 'AI에게 문의'를 활성화하세요"
  },
  "reportingApp.locationDashboard.dashboardSummaryWidget.autoRefresh": {
   "en": "Auto refresh",
@@ -364577,7 +364577,7 @@
  },
  "reportingApp.locationDashboard.dashboardSummaryWidget.emphasisLowlights": {
   "en": "Lowlights only",
-  "ko": "로우라이트만"
+  "ko": "개선 필요 항목만"
  },
  "reportingApp.locationDashboard.dashboardSummaryWidget.emptyWidgetModalBody": {
   "en": "You're about to add an empty widget. Once added, the dashboard will display an empty widget with a generate summary CTA.",
@@ -364617,7 +364617,7 @@
  },
  "reportingApp.locationDashboard.dashboardSummaryWidget.noHighlightsDesc": {
   "en": "None of this period's results were positive. Try Balanced or Lowlights to see the full picture.",
-  "ko": "이 기간의 결과 중 긍정적인 항목이 없습니다. 전체적인 모습을 보려면 균형 또는 로우라이트를 시도하세요."
+  "ko": "이 기간의 결과 중 긍정적인 항목이 없습니다. 전체적인 모습을 보려면 균형 또는 개선 필요 항목을 선택해 보세요."
  },
  "reportingApp.locationDashboard.dashboardSummaryWidget.noHighlightsTitle": {
   "en": "No highlights to show",
@@ -364685,7 +364685,7 @@
  },
  "reportingApp.locationDashboard.dashboardSummaryWidget.summaryModeVisual": {
   "en": "Visual",
-  "ko": "시각적"
+  "ko": "시각화"
  },
  "reportingApp.locationDashboard.dashboardSummaryWidget.summarySettings": {
   "en": "Summary settings",
@@ -364709,11 +364709,11 @@
  },
  "reportingApp.locationDashboard.dashboardSummaryWidget.widgetExcludedPlural": {
   "en": "widgets excluded due to missing data or configuration errors.",
-  "ko": "위젯이 데이터 누락 또는 구성 오류로 제외되었습니다."
+  "ko": "개 위젯이 데이터 누락 또는 구성 오류로 제외되었습니다."
  },
  "reportingApp.locationDashboard.dashboardSummaryWidget.widgetExcludedSingular": {
   "en": "widget excluded due to missing data or configuration errors.",
-  "ko": "위젯이 데이터 누락 또는 구성 오류로 제외되었습니다."
+  "ko": "개 위젯이 데이터 누락 또는 구성 오류로 제외되었습니다."
  },
  "reportingApp.locationDashboard.dashboardUpdatedAt": {
   "en": "Updated at {time}",
@@ -364725,7 +364725,7 @@
  },
  "reportingApp.locationDashboard.disableOnlyAssignedDataOrAdjustWidgetsFilterToViewSummary": {
   "en": "Disable only assigned data or adjust widgets filter to view summary.",
-  "ko": "요약을 보려면 할당된 데이터만 비활성화하거나 위젯 필터를 조정하세요."
+  "ko": "요약을 보려면 '배정된 데이터만' 옵션을 끄거나 위젯 필터를 조정하세요."
  },
  "reportingApp.locationDashboard.draftEditedBy": {
   "en": "Unsaved changes by {name}",
@@ -364841,11 +364841,11 @@
  },
  "reportingApp.locationDashboard.stickyNotes.actionsGroupLabel": {
   "en": "Sticky note actions",
-  "ko": "스티키 노트 액션"
+  "ko": "스티커 메모 액션"
  },
  "reportingApp.locationDashboard.stickyNotes.addNote": {
   "en": "Add sticky note",
-  "ko": "스티키 노트 추가"
+  "ko": "스티커 메모 추가"
  },
  "reportingApp.locationDashboard.stickyNotes.addedAt": {
   "en": "Added {time}",
@@ -364901,15 +364901,15 @@
  },
  "reportingApp.locationDashboard.stickyNotes.errorCreating": {
   "en": "Couldn't create note. Try again.",
-  "ko": "노트를 생성할 수 없습니다. 다시 시도하세요."
+  "ko": "메모를 만들지 못했습니다. 다시 시도하세요."
  },
  "reportingApp.locationDashboard.stickyNotes.errorDeleting": {
   "en": "Couldn't delete note. Try again.",
-  "ko": "노트를 삭제할 수 없습니다. 다시 시도하세요."
+  "ko": "메모를 삭제하지 못했습니다. 다시 시도하세요."
  },
  "reportingApp.locationDashboard.stickyNotes.errorLoading": {
   "en": "Couldn't load notes. Refresh the page.",
-  "ko": "노트를 불러올 수 없습니다. 페이지를 새로고침하세요."
+  "ko": "메모를 불러오지 못했습니다. 페이지를 새로고침하세요."
  },
  "reportingApp.locationDashboard.stickyNotes.errorPermission": {
   "en": "You don't have permission to edit this note. Contact your administrator.",
@@ -364917,11 +364917,11 @@
  },
  "reportingApp.locationDashboard.stickyNotes.errorUpdating": {
   "en": "Couldn't save note. Try again.",
-  "ko": "노트를 저장할 수 없습니다. 다시 시도하세요."
+  "ko": "메모를 저장하지 못했습니다. 다시 시도하세요."
  },
  "reportingApp.locationDashboard.stickyNotes.errorValidation": {
   "en": "Couldn't save note. Check your text and try again.",
-  "ko": "노트를 저장할 수 없습니다. 텍스트를 확인하고 다시 시도하세요."
+  "ko": "메모를 저장하지 못했습니다. 텍스트를 확인하고 다시 시도하세요."
  },
  "reportingApp.locationDashboard.stickyNotes.formatBoldTooltip": {
   "en": "Bold ({shortcut})",
@@ -364961,7 +364961,7 @@
  },
  "reportingApp.locationDashboard.stickyNotes.hideNotes": {
   "en": "Hide sticky notes",
-  "ko": "스티키 노트 숨기기"
+  "ko": "스티커 메모 숨기기"
  },
  "reportingApp.locationDashboard.stickyNotes.hoursAgo": {
   "en": "{count}h ago",
@@ -364977,27 +364977,27 @@
  },
  "reportingApp.locationDashboard.stickyNotes.noteLabel": {
   "en": "Sticky note",
-  "ko": "스티키 노트"
+  "ko": "스티커 메모"
  },
  "reportingApp.locationDashboard.stickyNotes.noteLimitReached": {
   "en": "You can add up to {count} sticky notes on a dashboard",
-  "ko": "대시보드에 스티키 노트를 최대 {count}개까지 추가할 수 있습니다"
+  "ko": "대시보드에 스티커 메모를 최대 {count}개까지 추가할 수 있습니다"
  },
  "reportingApp.locationDashboard.stickyNotes.pinned": {
   "en": "Pin note",
-  "ko": "노트 고정"
+  "ko": "메모 고정"
  },
  "reportingApp.locationDashboard.stickyNotes.placeholder": {
   "en": "Write a note",
-  "ko": "노트 작성"
+  "ko": "메모 작성"
  },
  "reportingApp.locationDashboard.stickyNotes.removeNote": {
   "en": "Remove note",
-  "ko": "노트 삭제"
+  "ko": "메모 삭제"
  },
  "reportingApp.locationDashboard.stickyNotes.resize": {
   "en": "Resize note",
-  "ko": "노트 크기 조절"
+  "ko": "메모 크기 조절"
  },
  "reportingApp.locationDashboard.stickyNotes.selectColor": {
   "en": "Select {color}",
@@ -365005,7 +365005,7 @@
  },
  "reportingApp.locationDashboard.stickyNotes.showNotes": {
   "en": "Show sticky notes",
-  "ko": "스티키 노트 표시"
+  "ko": "스티커 메모 표시"
  },
  "reportingApp.locationDashboard.stickyNotes.unknownAuthor": {
   "en": "Deleted user",
@@ -365313,7 +365313,7 @@
  },
  "reportingApp.locationDashboard.widgetLibrary.oneResultFound": {
   "en": "1 widget found",
-  "ko": "위젯 1개 찾음"
+  "ko": "위젯 1개 발견됨"
  },
  "reportingApp.locationDashboard.widgetLibrary.recommendedForYourBusiness": {
   "en": "Recommended for your business",
@@ -365373,11 +365373,11 @@
  },
  "reputationApp.reputation.reputationReviews.aiDraft.cancelScheduleFailed": {
   "en": "Could not stop the scheduled auto-post. Nothing was sent, try again.",
-  "ko": "예약된 자동 게시를 중지할 수 없습니다. 전송된 내용이 없으니 다시 시도하세요."
+  "ko": "예약된 자동 게시를 중지하지 못했습니다. 전송된 내용은 없으니 다시 시도하세요."
  },
  "reputationApp.reputation.reputationReviews.aiDraft.dismissFailed": {
   "en": "Could not dismiss this draft. Try again.",
-  "ko": "이 초안을 닫을 수 없습니다. 다시 시도하세요."
+  "ko": "이 초안을 닫지 못했습니다. 다시 시도하세요."
  },
  "reputationApp.reputation.reputationReviews.aiDraft.heldTitle": {
   "en": "Draft held for review",
@@ -365389,7 +365389,7 @@
  },
  "reputationApp.reputation.reputationReviews.aiDraft.holdReasonSensitive": {
   "en": "Sensitive, review first",
-  "ko": "민감함, 먼저 검토 필요"
+  "ko": "민감한 내용, 먼저 검토 필요"
  },
  "reputationApp.reputation.reputationReviews.aiDraft.holdReasonSuggestiveMode": {
   "en": "Suggestive mode",
@@ -365397,7 +365397,7 @@
  },
  "reputationApp.reputation.reputationReviews.aiDraft.postFailed": {
   "en": "Could not post this reply. Try again.",
-  "ko": "이 답글을 게시할 수 없습니다. 다시 시도하세요."
+  "ko": "이 답글을 게시하지 못했습니다. 다시 시도하세요."
  },
  "reputationApp.reputation.reputationReviews.aiDraft.readyTitle": {
   "en": "AI draft ready",
@@ -365405,7 +365405,7 @@
  },
  "reputationApp.reputation.reputationReviews.aiDraft.regenerateFailed": {
   "en": "Could not regenerate this draft. Try again.",
-  "ko": "이 초안을 재생성할 수 없습니다. 다시 시도하세요."
+  "ko": "이 초안을 재생성하지 못했습니다. 다시 시도하세요."
  },
  "reputationApp.reputation.reputationReviews.aiDraft.regenerateLimitReached": {
   "en": "No AI suggestions left for this review.",
@@ -365421,7 +365421,7 @@
  },
  "reputationApp.reputation.reputationSettings.reviewsAIAgents.aiAgentFormFields.toneWarning": {
   "en": "Pick up to {max}. Mix one trait + one delivery (e.g. Empathetic + Concise).",
-  "ko": "최대 {max}개까지 선택하세요. 성격 하나 + 전달 방식 하나를 조합하세요(예: 공감형 + 간결함)."
+  "ko": "최대 {max}개까지 선택하세요. 성격 하나 + 전달 방식 하나를 조합하세요(예: 공감형 + 간결형)."
  },
  "reputationApp.reputation.reputationSettings.reviewsAIAgents.automation.holdSensitive": {
   "en": "Hold sensitive reviews before posting",
@@ -365469,11 +365469,11 @@
  },
  "reputationApp.reputation.reputationSettings.reviewsAIAgents.general.promptInstructionsPlaceholder": {
   "en": "Example:\nThank customers by their first name.\nKeep responses under 80 words.\nMention our 30-day guarantee when relevant.\nAvoid emojis.",
-  "ko": "예시:"
+  "ko": "예시:\n고객의 이름을 불러 감사 인사를 전하세요.\n답변은 80단어 이내로 작성하세요.\n관련이 있을 때는 30일 보증 제도를 언급하세요.\n이모지는 사용하지 마세요."
  },
  "reputationApp.reputation.reputationSettings.reviewsAIAgents.general.reviewTypeWithComments": {
   "en": "Review with comments",
-  "ko": "댓글 포함 리뷰"
+  "ko": "텍스트 포함 리뷰"
  },
  "reputationApp.reputation.reputationSettings.reviewsAIAgents.guardrails.avoidRiskyLanguageHint": {
   "en": "AI avoids refund promises, guarantees, fault and liability admissions, and medical or financial advice.",
@@ -365493,7 +365493,7 @@
  },
  "reputationApp.reputation.reputationSettings.reviewsAIAgents.guardrails.rememberPreviousHint": {
   "en": "Avoid reusing phrases and openings.",
-  "ko": "문구와 시작 표현의 재사용을 피하세요."
+  "ko": "같은 문구나 시작 표현을 반복해서 사용하지 않습니다."
  },
  "reputationApp.reputation.reputationSettings.reviewsAIAgents.preview.chipLengthDetailed": {
   "en": "Detailed length",
@@ -365521,7 +365521,7 @@
  },
  "reputationApp.reputation.reputationSettings.reviewsAIAgents.preview.rateLimitedBody": {
   "en": "You have used all previews for this hour. Your configuration is still saved when you finish.",
-  "ko": "이번 시간의 모든 미리보기를 사용했습니다. 완료 시 설정은 그대로 저장됩니다."
+  "ko": "이번 1시간 동안 사용할 수 있는 미리보기를 모두 사용했습니다. 완료하면 설정은 그대로 저장됩니다."
  },
  "reputationApp.reputation.reputationSettings.reviewsAIAgents.preview.sampleReplyNeutral": {
   "en": "Thank you for the feedback. We are glad the result met your expectations, and we are looking at our scheduling so the timing is tighter next time.",
@@ -365529,7 +365529,7 @@
  },
  "reputationApp.reputation.reputationSettings.reviewsAIAgents.preview.sampleReplyPositive": {
   "en": "Thank you so much, this made our day! We are glad the team got everything wrapped up quickly for you.",
-  "ko": "정말 감사합니다, 덕분에 좋은 하루였어요! 팀이 신속하게 모든 것을 마무리해드려서 기쁩니다."
+  "ko": "진심으로 감사합니다. 덕분에 기분 좋은 하루가 되었습니다! 팀이 모든 작업을 신속하게 마무리해 드려 기쁩니다."
  },
  "reputationApp.reputation.reputationSettings.reviewsAIAgents.preview.sampleTextNegative": {
   "en": "Second visit and the same problem is back. I have wasted two days waiting in for this.",
@@ -365541,7 +365541,7 @@
  },
  "reputationApp.reputation.reputationSettings.reviewsAIAgents.preview.timedOutTitle": {
   "en": "Still generating",
-  "ko": "생성 중"
+  "ko": "아직 생성 중"
  },
  "reputationApp.reputation.reputationSettings.reviewsAIAgents.tabs.automationRules": {
   "en": "Automation rules",
@@ -365685,7 +365685,7 @@
  },
  "reputationApp.reputation.reputationOnboarding.steps.isVideoReviewCollected": {
   "en": "Collect a Video Testimonial",
-  "ko": "비디오 후기 수집하기"
+  "ko": "영상 후기 수집"
  },
  "reputationApp.reputation.reputationOverview.competitorAnalysis.addCompetitor": {
   "en": "Add Competitor",
@@ -365737,7 +365737,7 @@
  },
  "reputationApp.reputation.reputationOverview.competitorAnalysis.virtualBusiness.businessNameLabel": {
   "en": "Business Name",
-  "ko": "사업자명"
+  "ko": "비즈니스 이름"
  },
  "reputationApp.reputation.reputationOverview.connectProfiles.connectManually": {
   "en": "Connect manually",
@@ -365793,7 +365793,7 @@
  },
  "reputationApp.reputation.reputationOverview.dashboardV2.reviewRequest.requestConversion": {
   "en": "Request conversion",
-  "ko": "전환 요청"
+  "ko": "요청 전환율"
  },
  "reputationApp.reputation.reputationOverview.dashboardV2.reviewRequest.title": {
   "en": "Review request",
@@ -365805,7 +365805,7 @@
  },
  "reputationApp.reputation.reputationOverview.dashboardV2.videoTestimonials.emptyTitle": {
   "en": "No video reviews yet.",
-  "ko": "아직 비디오 리뷰가 없어요."
+  "ko": "아직 동영상 리뷰가 없습니다."
  },
  "reputationApp.reputation.reputationOverview.notifications.setUpCta": {
   "en": "Setup Review Link",
@@ -365853,7 +365853,7 @@
  },
  "reputationApp.reputation.reputationReviews.dripMode.campaignCard.monthlyFrequency.second": {
   "en": "Second",
-  "ko": "초"
+  "ko": "두 번째"
  },
  "reputationApp.reputation.reputationReviews.dripMode.campaignCard.nextReplyText.tomorrow": {
   "en": "tomorrow",
@@ -365937,7 +365937,7 @@
  },
  "reputationApp.reputation.reputationReviews.reviewsAI.offModeDescription": {
   "en": "Turn off Reviews AI to stop receiving suggestions.",
-  "ko": "리뷰 AI를 끄면 제안 받기를 중단해요."
+  "ko": "리뷰 AI를 끄면 더 이상 제안을 받지 않습니다."
  },
  "reputationApp.reputation.reputationReviews.reviewsAI.waitTimeTitle": {
   "en": "Wait time before responding",
@@ -366045,15 +366045,15 @@
  },
  "reputationApp.reputation.reputationSettings.reviewLinkBalancing.autoBalanceStatusTag": {
   "en": "Auto Balance Enabled",
-  "ko": "자동 잔액 조정 활성화됨"
+  "ko": "자동 분배 활성화됨"
  },
  "reputationApp.reputation.reputationSettings.reviewRequestBehaviorCard.optionCustom": {
   "en": "Follow a custom schedule for review requests",
-  "ko": "리뷰 요청에 대한 맞춤 일정을 따르세요"
+  "ko": "맞춤 일정에 따라 리뷰 요청 보내기"
  },
  "reputationApp.reputation.reputationSettings.reviewRequestBehaviorCard.optionImmediately": {
   "en": "Send review request immediately once",
-  "ko": "즉시 리뷰 요청 보내기"
+  "ko": "리뷰 요청을 즉시 1회 보내기"
  },
  "reputationApp.reputation.reputationSettings.reviewsAIAgents.agentTableColumnHeader.reviewFilter": {
   "en": "Review Type",
@@ -366089,11 +366089,11 @@
  },
  "reputationApp.reputation.reputationSettings.reviewsAIAgents.preview.characterCount": {
   "en": "Characters",
-  "ko": "문자"
+  "ko": "글자 수"
  },
  "reputationApp.reputation.reputationSettings.reviewsAIAgents.tones.concise": {
   "en": "Concise",
-  "ko": "간결하게"
+  "ko": "간결형"
  },
  "reputationApp.reputation.reputationSettings.reviewsAIAgents.tones.empathetic": {
   "en": "Empathetic",
@@ -366101,11 +366101,11 @@
  },
  "reputationApp.reputation.reputationSettings.reviewsAIAgents.tones.noTone": {
   "en": "No Tone",
-  "ko": "톤 없음"
+  "ko": "어조 없음"
  },
  "reputationApp.reputation.reputationSettings.reviewsAIAgents.tones.professional": {
   "en": "Professional",
-  "ko": "전문적인"
+  "ko": "전문형"
  },
  "reputationApp.reputation.reputationSettings.senderComponent.saveSuccess": {
   "en": "Sender defaults saved",
@@ -366117,7 +366117,7 @@
  },
  "reputationApp.reputation.reputationSettings.smsComponent.customSubmitSendDelayTitle": {
   "en": "When to send SMS after check-in?",
-  "ko": "체크인 후 언제 SMS를 보내야 할까요?"
+  "ko": "체크인 후 SMS 발송 시점"
  },
  "reputationApp.reputation.reputationSettings.smsComponent.description": {
   "en": "Customize the message sent automatically to request reviews from your customers on a recurring basis",
@@ -366153,7 +366153,7 @@
  },
  "reputationApp.reputation.reputationSettings.whatsAppComponent.tabTitle": {
   "en": "WhatsApp Requests",
-  "ko": "왓츠앱 요청"
+  "ko": "WhatsApp 요청"
  },
  "reputationApp.reputation.reputationTooltip": {
   "en": "This will change the Review Request behavior for all SMS requests",
@@ -366165,7 +366165,7 @@
  },
  "reputationApp.reputation.reputationWidget.dropAVideoButtonTextColorField": {
   "en": "Drop a Video Button Text Color",
-  "ko": "동영상 버튼 텍스트 색상 추가"
+  "ko": "동영상 남기기 버튼 텍스트 색상"
  },
  "reputationApp.reputation.reputationWidget.reviewTypeField": {
   "en": "Review Type",
@@ -366197,7 +366197,7 @@
  },
  "reputationApp.reputation.reputationWidget.summaryTypeOptions.short": {
   "en": "Short",
-  "ko": "짧게"
+  "ko": "간략"
  },
  "reputationApp.reputation.reputationWidget.templateImageAlt": {
   "en": "SMS Template Image",
@@ -366205,7 +366205,7 @@
  },
  "reputationApp.reputation.reputationWidget.themeChangeWarning": {
   "en": "Switching from Custom theme to Light/Dark theme will erase all the custom changes. Do you wish to continue?",
-  "ko": "Custom 테마에서 Light/Dark 테마로 전환하면 모든 사용자 지정 변경 사항이 삭제됩니다. 계속하시겠습니까?"
+  "ko": "사용자 지정 테마에서 라이트/다크 테마로 전환하면 모든 사용자 지정 변경 사항이 삭제됩니다. 계속하시겠습니까?"
  },
  "reputationApp.reputation.reputationWidget.totalReviewCountField": {
   "en": "Total Review Count",
@@ -366229,7 +366229,7 @@
  },
  "reputationApp.reputation.reputationYextCard.chartStatus.optedOut": {
   "en": "Opted Out",
-  "ko": "수신 거부됨"
+  "ko": "제외됨"
  },
  "reputationApp.reputation.reputationYextCard.title": {
   "en": "Online Listing",
@@ -366325,15 +366325,15 @@
  },
  "reputationApp.reputation.videoTestimonials.collectorModal.welcomeForm.spokespersonTitleDescription": {
   "en": "Make your collector personal with a friendly face from your company. This can be you or a colleague.",
-  "ko": "회사의 친근한 얼굴로 컬렉터를 개인화하세요. 본인이나 동료가 될 수 있습니다."
+  "ko": "회사의 친근한 얼굴로 수집기를 개인화하세요. 본인 또는 동료로 설정할 수 있습니다."
  },
  "reputationApp.reputation.videoTestimonials.createCollectorCTA": {
   "en": "Create Collector",
-  "ko": "+ 수집기 만들기"
+  "ko": "수집기 만들기"
  },
  "reputationApp.reputation.videoTestimonials.emptyMessages.emptyResponseDescription": {
   "en": "Create your Video Collector now to collect responses and send review requests effortlessly.",
-  "ko": "지금 비디오 콜렉터를 만들어 손쉽게 응답을 수집하고 리뷰 요청을 보내세요."
+  "ko": "지금 동영상 수집기를 만들어 손쉽게 응답을 수집하고 리뷰 요청을 보내세요."
  },
  "reputationApp.reputation.videoTestimonials.filters.filterByMarketingConsent": {
   "en": "Marketing consent",
@@ -366341,7 +366341,7 @@
  },
  "reputationApp.reputation.videoTestimonials.latestTabs.collectors": {
   "en": "Video Collectors",
-  "ko": "비디오 수집기"
+  "ko": "동영상 수집기"
  },
  "schemaMarkupApp.schemaMarkup.areaServed.labels.countryName": {
   "en": "Country name",
@@ -367345,7 +367345,7 @@
  },
  "socialPlannerApp.comments.syncBanner.description": {
   "en": "Comments from your connected social channels now appear in Conversations. Reply to comments, save commenters as contacts, trigger workflows, and nurture them from your inbox.",
-  "ko": "연동된 소셜 채널의 댓글이 이제 대화에 표시됩니다. 댓글에 답글을 달고, 댓글 작성자를 연락처로 저장하고, 워크플로우를 트리거하고, 받은함에서 관계를 이어가세요."
+  "ko": "연동된 소셜 채널의 댓글이 이제 대화에 표시됩니다. 댓글에 답글을 달고, 댓글 작성자를 연락처로 저장하고, 워크플로우를 트리거하고, 인박스에서 관계를 이어가세요."
  },
  "socialPlannerApp.comments.syncBanner.review": {
   "en": "Manage settings",
@@ -367445,7 +367445,7 @@
  },
  "socialPlannerApp.initialisedPlanner.needClientToConnect": {
   "en": "Need your client to connect accounts for you?",
-  "ko": "고객이 대신 계정을 연결하도록 요청해야 하나요?"
+  "ko": "고객에게 계정 연결을 맡기시겠습니까?"
  },
  "socialPlannerApp.initialisedPlanner.sendSocialConnectInvite": {
   "en": "Send social connect invite",
@@ -367497,7 +367497,7 @@
  },
  "socialPlannerApp.integrationPermissions.scopes.leads_retrieval": {
   "en": "Lead retrieval",
-  "ko": "리드 검색"
+  "ko": "리드 정보 가져오기"
  },
  "socialPlannerApp.integrationPermissions.scopes.pages_manage_ads": {
   "en": "Manage Page ads",
@@ -367521,7 +367521,7 @@
  },
  "socialPlannerApp.integrationPermissions.scopes.pages_read_engagement": {
   "en": "Read Page engagement",
-  "ko": "페이지 참여 읽기"
+  "ko": "페이지 참여 데이터 읽기"
  },
  "socialPlannerApp.integrationPermissions.scopes.pages_read_user_content": {
   "en": "Read Page content",
@@ -367553,11 +367553,11 @@
  },
  "socialPlannerApp.platformErrors.community.memberUnauthorizedUnverified": {
   "en": "We could not confirm the selected community member's access to this group. Verify the member still belongs to the group and try again.",
-  "ko": "선택한 커뮤니티 멤버의 그룹 액세스 권한을 확인할 수 없습니다. 멤버가 여전히 그룹에 속해 있는지 확인한 후 다시 시도하세요."
+  "ko": "선택한 커뮤니티 멤버의 그룹 액세스 권한을 확인하지 못했습니다. 멤버가 여전히 그룹에 속해 있는지 확인한 후 다시 시도하세요."
  },
  "socialPlannerApp.platformErrors.facebook.connectionUnreachable": {
   "en": "We couldn't reach your Facebook connection. Please try again in a few minutes or contact support for assistance.",
-  "ko": "Facebook 연결에 접속할 수 없습니다. 잠시 후 다시 시도하거나 지원팀에 문의해 주세요."
+  "ko": "Facebook 연결에 접속하지 못했습니다. 잠시 후 다시 시도하거나 지원팀에 문의해 주세요."
  },
  "socialPlannerApp.platformErrors.facebook.temporaryPublishIssue": {
   "en": "Facebook ran into a temporary issue while publishing your post. Try again in a few minutes. If it still doesn't work, reconnect your Facebook account and try again.",
@@ -367565,7 +367565,7 @@
  },
  "socialPlannerApp.platformErrors.instagram.connectionUnreachable": {
   "en": "We couldn't reach your Instagram connection. Please try again in a few minutes or contact support for assistance.",
-  "ko": "Instagram 연결에 접속할 수 없습니다. 잠시 후 다시 시도하거나 지원팀에 문의해 주세요."
+  "ko": "Instagram 연결에 접속하지 못했습니다. 잠시 후 다시 시도하거나 지원팀에 문의해 주세요."
  },
  "socialPlannerApp.platformErrors.tiktok.spamRisk": {
   "en": "TikTok flagged this post as potential spam. Make sure your content is original, avoid posting repetitive or duplicate content, and ensure it follows TikTok’s Community Guidelines before trying again.",
@@ -367605,7 +367605,7 @@
  },
  "socialPlannerApp.settings.agencySocialComments.disableModal.descriptionSelected": {
   "en": "New social comments will no longer appear in their conversations. Existing contacts and conversations won't be affected. You can re-enable access at any time.",
-  "ko": "해당 대화에 새로운 소셜 댓글이 더 이상 표시되지 않습니다. 기존 연락처와 대화는 영향을 받지 않습니다. 언제든지 액세스를 다시 활성화할 수 있습니다."
+  "ko": "선택한 서브 계정의 대화에 새로운 소셜 댓글이 더 이상 표시되지 않습니다. 기존 연락처와 대화는 영향을 받지 않습니다. 언제든지 액세스를 다시 활성화할 수 있습니다."
  },
  "socialPlannerApp.settings.agencySocialComments.disableModal.titleOne": {
   "en": "Disable comment sync access for {name}?",
@@ -367669,11 +367669,11 @@
  },
  "socialPlannerApp.settings.agencySocialComments.errors.fetch": {
   "en": "Couldn't load sub-accounts. Try again.",
-  "ko": "서브 계정을 불러올 수 없습니다. 다시 시도해 주세요."
+  "ko": "서브 계정을 불러오지 못했습니다. 다시 시도해 주세요."
  },
  "socialPlannerApp.settings.agencySocialComments.errors.update": {
   "en": "Couldn't update comment sync access. Try again.",
-  "ko": "댓글 동기화 액세스를 업데이트할 수 없습니다. 다시 시도해 주세요."
+  "ko": "댓글 동기화 액세스를 업데이트하지 못했습니다. 다시 시도해 주세요."
  },
  "socialPlannerApp.settings.agencySocialComments.filter.label": {
   "en": "Comment sync access",
@@ -367749,11 +367749,11 @@
  },
  "socialPlannerApp.settings.comments.errors.load": {
   "en": "Couldn't load comment settings. Try again.",
-  "ko": "댓글 설정을 불러올 수 없습니다. 다시 시도해 주세요."
+  "ko": "댓글 설정을 불러오지 못했습니다. 다시 시도해 주세요."
  },
  "socialPlannerApp.settings.comments.errors.save": {
   "en": "Couldn't save comment settings. Try again.",
-  "ko": "댓글 설정을 저장할 수 없습니다. 다시 시도해 주세요."
+  "ko": "댓글 설정을 저장하지 못했습니다. 다시 시도해 주세요."
  },
  "socialPlannerApp.settings.comments.keywords.clearAll": {
   "en": "Clear all keywords",
@@ -367877,7 +367877,7 @@
  },
  "socialPlannerApp.socialConnectInvite.emailSendError": {
   "en": "Couldn't send the invite email. Try again.",
-  "ko": "초대 이메일을 보낼 수 없습니다. 다시 시도해 주세요."
+  "ko": "초대 이메일을 보내지 못했습니다. 다시 시도해 주세요."
  },
  "socialPlannerApp.socialConnectInvite.emailSent": {
   "en": "Social connect invite sent.",
@@ -367893,7 +367893,7 @@
  },
  "socialPlannerApp.socialConnectInvite.generateError": {
   "en": "Couldn't generate the social connect invite. Try again.",
-  "ko": "소셜 연결 초대를 생성할 수 없습니다. 다시 시도해 주세요."
+  "ko": "소셜 연결 초대를 생성하지 못했습니다. 다시 시도해 주세요."
  },
  "socialPlannerApp.socialConnectInvite.generateModalDescription": {
   "en": "Generate a secure invite link for clients to connect their social media accounts to your platform.",
@@ -367969,7 +367969,7 @@
  },
  "socialPlannerApp.socialListening.alerts.deleteFailed": {
   "en": "Couldn't delete the alert",
-  "ko": "알림을 삭제할 수 없습니다"
+  "ko": "알림을 삭제하지 못했습니다"
  },
  "socialPlannerApp.socialListening.alerts.deleted": {
   "en": "Alert deleted",
@@ -367981,7 +367981,7 @@
  },
  "socialPlannerApp.socialListening.alerts.emptySubtitle": {
   "en": "Set up to {max} alerts for this topic.",
-  "ko": "이 주제에 대해 최대 {max}개의 알림을 설정하세요."
+  "ko": "이 토픽에 대해 최대 {max}개의 알림을 설정하세요."
  },
  "socialPlannerApp.socialListening.alerts.emptyTitle": {
   "en": "Get notified when things move",
@@ -367993,19 +367993,19 @@
  },
  "socialPlannerApp.socialListening.alerts.gateBody": {
   "en": "Alerts can only be created for saved topics. Want to save this search as a topic first?",
-  "ko": "알림은 저장된 주제에 대해서만 생성할 수 있습니다. 먼저 이 검색을 주제로 저장하시겠습니까?"
+  "ko": "알림은 저장된 토픽에 대해서만 생성할 수 있습니다. 먼저 이 검색을 토픽으로 저장하시겠습니까?"
  },
  "socialPlannerApp.socialListening.alerts.gateDuplicateName": {
   "en": "A topic with this name already exists. Try a different name.",
-  "ko": "이 이름의 주제가 이미 존재합니다. 다른 이름을 입력해 주세요."
+  "ko": "이 이름의 토픽이 이미 존재합니다. 다른 이름을 입력해 주세요."
  },
  "socialPlannerApp.socialListening.alerts.gateNameRequired": {
   "en": "Enter a topic name.",
-  "ko": "주제 이름을 입력하세요."
+  "ko": "토픽 이름을 입력하세요."
  },
  "socialPlannerApp.socialListening.alerts.gateSave": {
   "en": "Save topic",
-  "ko": "주제 저장"
+  "ko": "토픽 저장"
  },
  "socialPlannerApp.socialListening.alerts.gateTitle": {
   "en": "Save this search to set up an alert",
@@ -368025,15 +368025,15 @@
  },
  "socialPlannerApp.socialListening.alerts.metric.negativeSentiment": {
   "en": "Negative sentiment",
-  "ko": "부정적 감정"
+  "ko": "부정 감성"
  },
  "socialPlannerApp.socialListening.alerts.metric.positiveSentiment": {
   "en": "Positive sentiment",
-  "ko": "긍정적 감정"
+  "ko": "긍정 감성"
  },
  "socialPlannerApp.socialListening.alerts.metric.topicVolume": {
   "en": "Topic volume",
-  "ko": "주제 언급량"
+  "ko": "토픽 언급량"
  },
  "socialPlannerApp.socialListening.alerts.metricsSelected": {
   "en": "{count} metric selected | {count} metrics selected",
@@ -368085,7 +368085,7 @@
  },
  "socialPlannerApp.socialListening.alerts.previewDriverTitle": {
   "en": "What's driving it",
-  "ko": "무엇이 영향을 미쳤나요"
+  "ko": "주요 요인"
  },
  "socialPlannerApp.socialListening.alerts.previewEmpty": {
   "en": "Select a metric to preview the alert.",
@@ -368093,19 +368093,19 @@
  },
  "socialPlannerApp.socialListening.alerts.previewFooterDefault": {
   "en": "You're receiving this because you set up the alert \"{name}\" on this topic.",
-  "ko": "이 주제에 대해 \"{name}\" 알림을 설정하셨기 때문에 이 메일을 받고 계십니다."
+  "ko": "이 토픽에 대해 \"{name}\" 알림을 설정하셨기 때문에 이 메일을 받고 계십니다."
  },
  "socialPlannerApp.socialListening.alerts.previewFooterMinimal": {
   "en": "Alert by Social intelligence · Unsubscribe",
-  "ko": "Social intelligence 알림 · 구독 취소"
+  "ko": "소셜 인텔리전스 알림 · 구독 취소"
  },
  "socialPlannerApp.socialListening.alerts.previewFooterNewsletter": {
   "en": "You set up this alert in Social intelligence · Unsubscribe",
-  "ko": "Social intelligence에서 이 알림을 설정하셨습니다 · 구독 취소"
+  "ko": "소셜 인텔리전스에서 이 알림을 설정하셨습니다 · 구독 취소"
  },
  "socialPlannerApp.socialListening.alerts.previewFooterUnsubscribeTail": {
   "en": "from this alert.",
-  "ko": "이 알림으로부터"
+  "ko": "(이 알림만 해당)"
  },
  "socialPlannerApp.socialListening.alerts.previewFromPrev": {
   "en": "from {from} the previous 7 days",
@@ -368201,7 +368201,7 @@
  },
  "socialPlannerApp.socialListening.alerts.sensWordHigh": {
   "en": "broad",
-  "ko": "넓게"
+  "ko": "폭넓은"
  },
  "socialPlannerApp.socialListening.alerts.sensWordLow": {
   "en": "highest-signal",
@@ -368209,7 +368209,7 @@
  },
  "socialPlannerApp.socialListening.alerts.sensitivityLabel": {
   "en": "How sensitive?",
-  "ko": "민감도는 어느 정도로?"
+  "ko": "민감도 수준"
  },
  "socialPlannerApp.socialListening.alerts.summaryDaily": {
   "en": "daily digest at {time}",
@@ -368225,7 +368225,7 @@
  },
  "socialPlannerApp.socialListening.alerts.templateDefault": {
   "en": "Social intelligence default",
-  "ko": "Social intelligence 기본값"
+  "ko": "소셜 인텔리전스 기본값"
  },
  "socialPlannerApp.socialListening.alerts.templateLabel": {
   "en": "Notification email",
@@ -368237,7 +368237,7 @@
  },
  "socialPlannerApp.socialListening.alerts.templateNewsTagline": {
   "en": "Your weekly social intelligence",
-  "ko": "주간 Social intelligence"
+  "ko": "주간 소셜 인텔리전스"
  },
  "socialPlannerApp.socialListening.alerts.title": {
   "en": "Alerts",
@@ -368317,11 +368317,11 @@
  },
  "socialPlannerApp.socialListening.createTopic.create": {
   "en": "Create topic",
-  "ko": "주제 만들기"
+  "ko": "토픽 생성"
  },
  "socialPlannerApp.socialListening.createTopic.errors.abandoned": {
   "en": "This is taking longer than expected. The topic may still have been created, so check your topics list before trying again.",
-  "ko": "예상보다 시간이 오래 걸리고 있습니다. 주제가 이미 생성되었을 수 있으니, 다시 시도하기 전에 주제 목록을 확인하세요."
+  "ko": "예상보다 시간이 오래 걸리고 있습니다. 토픽이 이미 생성되었을 수 있으니, 다시 시도하기 전에 토픽 목록을 확인하세요."
  },
  "socialPlannerApp.socialListening.createTopic.errors.dismiss": {
   "en": "Dismiss this message",
@@ -368329,11 +368329,11 @@
  },
  "socialPlannerApp.socialListening.createTopic.errors.generic": {
   "en": "We couldn't create this topic. Everything you entered is still here, so try again.",
-  "ko": "이 주제를 생성하지 못했습니다. 입력하신 내용은 그대로 남아 있으니 다시 시도해 보세요."
+  "ko": "이 토픽을 생성하지 못했습니다. 입력하신 내용은 그대로 남아 있으니 다시 시도해 보세요."
  },
  "socialPlannerApp.socialListening.createTopic.facebook.collectsNothing": {
   "en": "Facebook won't collect anything for this topic. This location has no connected Pages, so add at least one public Page.",
-  "ko": "이 주제에 대해 Facebook은 아무것도 수집하지 않습니다. 이 위치에 연결된 페이지가 없으니 공개 페이지를 하나 이상 추가하세요."
+  "ko": "이 토픽에 대해 Facebook은 아무것도 수집하지 않습니다. 이 서브 계정에 연결된 페이지가 없으니 공개 페이지를 하나 이상 추가하세요."
  },
  "socialPlannerApp.socialListening.createTopic.facebook.duplicatePage": {
   "en": "That page is already in the list",
@@ -368345,7 +368345,7 @@
  },
  "socialPlannerApp.socialListening.createTopic.facebook.maxPages": {
   "en": "You can monitor up to {max} public pages per topic",
-  "ko": "주제당 공개 페이지는 최대 {max}개까지 모니터링할 수 있습니다"
+  "ko": "토픽당 공개 페이지는 최대 {max}개까지 모니터링할 수 있습니다"
  },
  "socialPlannerApp.socialListening.createTopic.facebook.noResults": {
   "en": "No matching Pages found. Search by name, or paste the page’s URL or ID",
@@ -368497,7 +368497,7 @@
  },
  "socialPlannerApp.socialListening.createTopic.setup.calibrating": {
   "en": "Calibrating sentiment engine…",
-  "ko": "감정 분석 엔진 보정 중…"
+  "ko": "감성 분석 엔진 보정 중…"
  },
  "socialPlannerApp.socialListening.createTopic.setup.connecting": {
   "en": "Connecting data sources…",
@@ -368505,7 +368505,7 @@
  },
  "socialPlannerApp.socialListening.createTopic.setup.finalizing": {
   "en": "Finalizing your topic…",
-  "ko": "주제 마무리 중…"
+  "ko": "토픽 마무리 중…"
  },
  "socialPlannerApp.socialListening.createTopic.setup.indexing": {
   "en": "Building your keyword index…",
@@ -368589,7 +368589,7 @@
  },
  "socialPlannerApp.socialListening.createTopic.stepSourcesSub": {
   "en": "Title and platforms to track",
-  "ko": "추적할 제목 및 플랫폼"
+  "ko": "제목 및 추적할 플랫폼"
  },
  "socialPlannerApp.socialListening.createTopic.subtitle": {
   "en": "Define what conversations you'd like to monitor across the web.",
@@ -368597,7 +368597,7 @@
  },
  "socialPlannerApp.socialListening.createTopic.title": {
   "en": "Create a listening topic",
-  "ko": "리스닝 주제 만들기"
+  "ko": "리스닝 토픽 만들기"
  },
  "socialPlannerApp.socialListening.createTopic.titlePlaceholder": {
   "en": "e.g. Brand Mentions - Acme",
@@ -368629,7 +368629,7 @@
  },
  "socialPlannerApp.socialListening.detail.conversationFeedInfo": {
   "en": "The posts behind these charts for the selected range and filters. Up to 50 new posts per topic each day.",
-  "ko": "선택한 기간 및 필터에 해당하는 차트 기반 게시물입니다. 주제당 하루 최대 50개의 새 게시물."
+  "ko": "선택한 기간과 필터에 해당하는, 이 차트의 바탕이 된 게시물입니다. 토픽당 하루 최대 50개의 새 게시물이 수집됩니다."
  },
  "socialPlannerApp.socialListening.detail.downloadReport": {
   "en": "Download report",
@@ -368657,11 +368657,11 @@
  },
  "socialPlannerApp.socialListening.detail.feedOnOpen": {
   "en": "No posts for this date range yet. The feed refreshes when you open the topic.",
-  "ko": "이 기간에 해당하는 게시물이 아직 없습니다. 주제를 열면 피드가 새로고침됩니다."
+  "ko": "이 기간에 해당하는 게시물이 아직 없습니다. 토픽을 열면 피드가 새로고침됩니다."
  },
  "socialPlannerApp.socialListening.detail.filterInfoHeatmap": {
   "en": "Reflects the whole topic. The platform filter doesn't change this.",
-  "ko": "전체 주제를 반영합니다. 플랫폼 필터는 이 값을 변경하지 않습니다."
+  "ko": "토픽 전체를 반영합니다. 플랫폼 필터는 이 값을 변경하지 않습니다."
  },
  "socialPlannerApp.socialListening.detail.filterInfoSnapshot": {
   "en": "Platform and date filters are not supported for this chart",
@@ -368669,7 +368669,7 @@
  },
  "socialPlannerApp.socialListening.detail.filterInfoWholeTopic": {
   "en": "Reflects the whole topic. The platform and sentiment filters don't change this.",
-  "ko": "전체 주제를 반영합니다. 플랫폼 및 감정 필터는 이 값을 변경하지 않습니다."
+  "ko": "토픽 전체를 반영합니다. 플랫폼 및 감성 필터는 이 값을 변경하지 않습니다."
  },
  "socialPlannerApp.socialListening.detail.freshness.error": {
   "en": "Collection failed",
@@ -368701,7 +368701,7 @@
  },
  "socialPlannerApp.socialListening.detail.loader.analyzing": {
   "en": "Reading sentiment…",
-  "ko": "감정 분석 중…"
+  "ko": "감성 분석 중…"
  },
  "socialPlannerApp.socialListening.detail.loader.compiling": {
   "en": "Building your charts…",
@@ -368717,7 +368717,7 @@
  },
  "socialPlannerApp.socialListening.detail.loader.queuedBehind": {
   "en": "Waiting to start, {count} other topic ahead of yours. | Waiting to start, {count} other topics ahead of yours.",
-  "ko": "시작 대기 중, {count}개의 다른 주제가 앞서 있습니다. | 시작 대기 중, {count}개의 다른 주제가 앞서 있습니다."
+  "ko": "시작 대기 중, {count}개의 다른 토픽이 앞서 있습니다. | 시작 대기 중, {count}개의 다른 토픽이 앞서 있습니다."
  },
  "socialPlannerApp.socialListening.detail.loader.scanning": {
   "en": "Scanning platforms…",
@@ -368729,11 +368729,11 @@
  },
  "socialPlannerApp.socialListening.detail.loader.slowBody": {
   "en": "Bigger topics take a few minutes. It keeps building if you leave.",
-  "ko": "큰 주제는 몇 분 정도 걸립니다. 페이지를 벗어나도 계속 진행됩니다."
+  "ko": "큰 토픽은 몇 분 정도 걸립니다. 페이지를 벗어나도 계속 진행됩니다."
  },
  "socialPlannerApp.socialListening.detail.loader.subtitle": {
   "en": "Pulling mentions, sentiment, and trends across every connected platform.",
-  "ko": "연결된 모든 플랫폼에서 언급, 감정, 트렌드를 수집합니다."
+  "ko": "연결된 모든 플랫폼에서 언급, 감성, 트렌드를 수집합니다."
  },
  "socialPlannerApp.socialListening.detail.loader.titleGeneric": {
   "en": "Setting up your dashboard…",
@@ -368761,7 +368761,7 @@
  },
  "socialPlannerApp.socialListening.detail.mentionsSentimentOverTime": {
   "en": "Mentions & sentiment over time",
-  "ko": "시간별 언급 및 감정"
+  "ko": "시간별 언급 및 감성"
  },
  "socialPlannerApp.socialListening.detail.mentionsSentimentOverTimeInfo": {
   "en": "Bars show mentions per day. The line shows the share of them that were positive.",
@@ -368845,7 +368845,7 @@
  },
  "socialPlannerApp.socialListening.detail.sentimentByPlatformInfo": {
   "en": "Bars show each platform's own share of mentions, not its share of the total.",
-  "ko": "막대는 각 플랫폼의 전체 언급 중 자체 비중을 나타내며, 전체 대비 비중이 아닙니다."
+  "ko": "막대는 각 플랫폼 자체 언급 내의 감성 비중을 나타내며, 전체 언급 대비 비중이 아닙니다."
  },
  "socialPlannerApp.socialListening.detail.sentimentDistribution": {
   "en": "Sentiment distribution",
@@ -368901,7 +368901,7 @@
  },
  "socialPlannerApp.socialListening.error.subtitle": {
   "en": "We couldn’t load this right now. Please try again.",
-  "ko": "지금은 불러올 수 없습니다. 다시 시도해 주세요."
+  "ko": "데이터를 불러오지 못했습니다. 다시 시도해 주세요."
  },
  "socialPlannerApp.socialListening.limit.searchesBody": {
   "en": "You've used all {max} searches on your current plan. Upgrade to run more, or reopen a saved topic.",
@@ -368941,11 +368941,11 @@
  },
  "socialPlannerApp.socialListening.notify.deleteFailed": {
   "en": "Couldn't delete the topic",
-  "ko": "토픽을 삭제할 수 없습니다"
+  "ko": "토픽을 삭제하지 못했습니다"
  },
  "socialPlannerApp.socialListening.notify.notEnabled": {
   "en": "Social intelligence isn't enabled for this location.",
-  "ko": "이 위치에서는 소셜 인텔리전스가 활성화되어 있지 않습니다."
+  "ko": "이 서브 계정에서는 소셜 인텔리전스가 활성화되어 있지 않습니다."
  },
  "socialPlannerApp.socialListening.notify.reportDownloaded": {
   "en": "Report downloaded",
@@ -368957,15 +368957,15 @@
  },
  "socialPlannerApp.socialListening.notify.reportFailed": {
   "en": "Couldn't generate the report",
-  "ko": "리포트를 생성할 수 없습니다"
+  "ko": "리포트를 생성하지 못했습니다"
  },
  "socialPlannerApp.socialListening.notify.saveFailed": {
   "en": "Couldn't save the topic",
-  "ko": "토픽을 저장할 수 없습니다"
+  "ko": "토픽을 저장하지 못했습니다"
  },
  "socialPlannerApp.socialListening.notify.searchFailed": {
   "en": "Couldn't start the search",
-  "ko": "검색을 시작할 수 없습니다"
+  "ko": "검색을 시작하지 못했습니다"
  },
  "socialPlannerApp.socialListening.notify.topicCreatedBody": {
   "en": "“{name}” is now being tracked",
@@ -369053,7 +369053,7 @@
  },
  "socialPlannerApp.socialListening.report.page": {
   "en": "Page {n} of {total}",
-  "ko": "{total} 중 {n} 페이지"
+  "ko": "{n} / {total} 페이지"
  },
  "socialPlannerApp.socialListening.report.sections.audience": {
   "en": "Audience and conversations",
@@ -369085,7 +369085,7 @@
  },
  "socialPlannerApp.socialListening.search.confirmSearchBody": {
   "en": "This starts a new listening search and may use one of your remaining searches.",
-  "ko": "새로운 리스닝 검색을 시작하며, 남은 검색 횟수 중 하나를 사용할 수 있습니다."
+  "ko": "새로운 리스닝 검색을 시작하며, 남은 검색 횟수가 1회 차감될 수 있습니다."
  },
  "socialPlannerApp.socialListening.search.confirmSearchKeywordPlaceholder": {
   "en": "Enter a keyword to search",
@@ -369233,7 +369233,7 @@
  },
  "socialPlannerApp.socialListening.status.progressCount": {
   "en": "{done} of {total}",
-  "ko": "{total} 중 {done}"
+  "ko": "{total}개 중 {done}개"
  },
  "socialPlannerApp.socialListening.status.queued": {
   "en": "Refresh queued. It starts in a moment.",
@@ -369309,11 +369309,11 @@
  },
  "socialPlannerApp.socialListening.notify.topicCreated": {
   "en": "Topic created",
-  "ko": "주제가 생성되었습니다"
+  "ko": "토픽이 생성되었습니다"
  },
  "socialPlannerApp.socialListening.notify.topicDeleted": {
   "en": "Topic deleted",
-  "ko": "주제가 삭제되었습니다"
+  "ko": "토픽이 삭제되었습니다"
  },
  "socialPlannerApp.socialListening.sourcePicker.searching": {
   "en": "Searching…",
@@ -370205,7 +370205,7 @@
  },
  "usersMicroApp.auditLogs.askAiAccess": {
   "en": "Ask AI access",
-  "ko": "Ask AI 액세스"
+  "ko": "AI에게 문의 액세스"
  },
  "usersMicroApp.auditLogs.conversationAiActivity": {
   "en": "Conversation AI Activity",
@@ -370213,7 +370213,7 @@
  },
  "usersMicroApp.auditLogs.lcCommunication": {
   "en": "LC Communication",
-  "ko": "LC 커뮤니케이션"
+  "ko": "플랫폼 커뮤니케이션"
  },
  "usersMicroApp.auditLogs.socialPlannerAccountConnectLink": {
   "en": "Social Planner Account Connect",
@@ -370301,7 +370301,7 @@
  },
  "usersMicroApp.notifications.list.filters.deliveryMethodPlaceholder": {
   "en": "Email or Push",
-  "ko": "이메일 또는 Push"
+  "ko": "이메일 또는 푸시"
  },
  "usersMicroApp.notifications.list.filters.email": {
   "en": "Recipient email",
@@ -370353,11 +370353,11 @@
  },
  "usersMicroApp.profile.calendar.legacyAvailabilityUnavailable": {
   "en": "Availability editing is not available for this location.",
-  "ko": "이 로케이션에서는 가용 시간 편집을 사용할 수 없습니다."
+  "ko": "이 서브 계정에서는 가용 시간 편집을 사용할 수 없습니다."
  },
  "usersMicroApp.profile.calendar.notReady": {
   "en": "Calendar availability is not available for this location yet.",
-  "ko": "이 로케이션에서는 아직 캘린더 가용 시간을 사용할 수 없습니다."
+  "ko": "이 서브 계정에서는 아직 캘린더 가용 시간을 사용할 수 없습니다."
  },
  "usersMicroApp.profile.callingSchedule.danglingRefWarning": {
   "en": "The bound schedule is no longer available — working-hours routing is inactive and this user will receive all inbound calls. Pick a different schedule or turn the toggle off.",
@@ -370369,7 +370369,7 @@
  },
  "usersMicroApp.profile.callingSchedule.loadErrorTitle": {
   "en": "Could not load inbound call routing",
-  "ko": "수신 전화 라우팅을 불러올 수 없습니다"
+  "ko": "수신 전화 라우팅을 불러오지 못했습니다"
  },
  "usersMicroApp.profile.callingSchedule.noSchedulesWarning": {
   "en": "No schedule available — working-hours routing is inactive and this user will receive all inbound calls. Create a schedule to enable it.",
@@ -370381,7 +370381,7 @@
  },
  "usersMicroApp.profile.callingSchedule.saveErrorTitle": {
   "en": "Could not save inbound call routing",
-  "ko": "수신 전화 라우팅을 저장할 수 없습니다"
+  "ko": "수신 전화 라우팅을 저장하지 못했습니다"
  },
  "usersMicroApp.profile.callingSchedule.saveErrorValidation": {
   "en": "Could not save the inbound-call setting. Please refresh and try again.",
@@ -370473,7 +370473,7 @@
  },
  "usersMicroApp.profile.emailSync.disconnectTitle": {
   "en": "Disconnect email?",
-  "ko": "이메일을 연결 해제할까요?"
+  "ko": "이메일 연결을 해제하시겠습니까?"
  },
  "usersMicroApp.profile.emailSync.selectProvider": {
   "en": "Select your email provider",
@@ -370545,7 +370545,7 @@
  },
  "usersMicroApp.profile.personalData.signatureImageFailed": {
   "en": "Could not upload the image",
-  "ko": "이미지를 업로드할 수 없습니다"
+  "ko": "이미지를 업로드하지 못했습니다"
  },
  "usersMicroApp.profile.personalData.signaturePlaceholder": {
   "en": "Create your email signature",
@@ -370685,15 +370685,15 @@
  },
  "usersMicroApp.profile.security.twoFactor.pdf.note1": {
   "en": "Please store these codes securely. ",
-  "ko": "이 코드를 안전하게 보관하세요."
+  "ko": "이 코드를 안전하게 보관하세요. "
  },
  "usersMicroApp.profile.security.twoFactor.pdf.note2": {
   "en": "Each code can be used once. ",
-  "ko": "각 코드는 한 번만 사용할 수 있습니다."
+  "ko": "각 코드는 한 번만 사용할 수 있습니다. "
  },
  "usersMicroApp.profile.security.twoFactor.pdf.note3": {
   "en": "If you lose both your device and these codes, you will need to ",
-  "ko": "기기와 이 코드를 모두 분실한 경우"
+  "ko": "기기와 이 코드를 모두 분실한 경우 "
  },
  "usersMicroApp.profile.security.twoFactor.pdf.note4": {
   "en": "contact support to recover your account.",
@@ -370769,7 +370769,7 @@
  },
  "usersMicroApp.users.availability.subAccountOnly": {
   "en": "User availability is available for sub-account users only.",
-  "ko": "사용자 가능 시간은 서브 계정 사용자에게만 제공됩니다."
+  "ko": "사용자 가용 시간은 서브 계정 사용자에게만 제공됩니다."
  },
  "usersMicroApp.users.breadcrumb.label": {
   "en": "Breadcrumb",
@@ -370801,7 +370801,7 @@
  },
  "usersMicroApp.users.call.info": {
   "en": "This is only required if the user needs a dedicated number. Not required for voicemail or for routing the call to the assigned user.",
-  "ko": "이는 사용자에게 전용 번호가 필요한 경우에만 필요합니다. 음성사서함이나 담당 사용자에게 전화를 연결하는 경우에는 필요하지 않습니다."
+  "ko": "사용자에게 전용 번호가 필요한 경우에만 필요합니다. 음성 메시지 또는 배정된 사용자에게 전화를 연결할 때는 필요하지 않습니다."
  },
  "usersMicroApp.users.call.invalidAudio": {
   "en": "Select a mp3 file, we do not support other formats.",
@@ -370841,7 +370841,7 @@
  },
  "usersMicroApp.users.call.voicemail": {
   "en": "Voicemail Messages",
-  "ko": "음성사서함 메시지"
+  "ko": "음성 메시지"
  },
  "usersMicroApp.users.call.whatsappSubtitle": {
   "en": "Default Channel for WhatsApp Call",
@@ -370857,7 +370857,7 @@
  },
  "usersMicroApp.users.delete.description": {
   "en": "{name} will be unassigned from Calendars, Campaigns, Conversations, Contacts, Smart Lists, Opportunities, Triggers and Twilio Numbers in ALL Locations that they currently belong to.",
-  "ko": "{name}은(는) 현재 소속된 모든 로케이션의 캘린더, 캠페인, 대화, 연락처, 스마트 리스트, 기회, 트리거 및 Twilio 번호에서 할당 해제됩니다."
+  "ko": "{name}은(는) 현재 소속된 모든 서브 계정의 캘린더, 캠페인, 대화, 연락처, 스마트 리스트, 기회, 트리거 및 Twilio 번호에서 배정 해제됩니다."
  },
  "usersMicroApp.users.delete.errorMessage": {
   "en": "Error while Deleting the user. Try again after sometime",
@@ -371025,7 +371025,7 @@
  },
  "usersMicroApp.users.form.signatureImageFailed": {
   "en": "Could not upload the image",
-  "ko": "이미지를 업로드할 수 없습니다"
+  "ko": "이미지를 업로드하지 못했습니다"
  },
  "usersMicroApp.users.form.signatureReply": {
   "en": "Add signature to reply and forward emails",
@@ -371097,7 +371097,7 @@
  },
  "usersMicroApp.users.permissions.assignedOnly": {
   "en": "Assigned Only",
-  "ko": "할당된 항목만"
+  "ko": "배정된 항목만"
  },
  "usersMicroApp.users.permissions.copyDescription": {
   "en": "Copy permission configuration from another user in your account",
@@ -371145,7 +371145,7 @@
  },
  "usersMicroApp.users.permissions.heading.copilot": {
   "en": "ASK AI",
-  "ko": "AI에게 질문"
+  "ko": "AI에게 문의"
  },
  "usersMicroApp.users.permissions.heading.medias": {
   "en": "Medias",
@@ -371157,7 +371157,7 @@
  },
  "usersMicroApp.users.permissions.heading.subAccountTransfers": {
   "en": "Sub-Account Transfers",
-  "ko": "서브 계정 전송"
+  "ko": "서브 계정 이전"
  },
  "usersMicroApp.users.permissions.heading.userManagement": {
   "en": "User Management",
@@ -371197,15 +371197,15 @@
  },
  "usersMicroApp.users.roles.assignedDataOnly": {
   "en": "Restrict data visibility to only assigned data",
-  "ko": "할당된 데이터로만 데이터 표시 제한"
+  "ko": "배정된 데이터만 보이도록 제한"
  },
  "usersMicroApp.users.roles.assignedDataOnlyTooltip": {
   "en": "Keep the checkbox disabled if you want the user to have access to all records in the account, or enable the check box to limit their visibility to only the records assigned to them, such as tasks, contacts, opportunities, calendar, etc.",
-  "ko": "사용자가 계정 내 모든 레코드에 접근할 수 있도록 하려면 체크박스를 비활성화 상태로 두고, 작업, 연락처, 기회, 캘린더 등 자신에게 할당된 레코드로만 표시 범위를 제한하려면 체크박스를 활성화하세요."
+  "ko": "사용자가 계정 내 모든 레코드에 접근하게 하려면 체크박스를 선택하지 않은 상태로 두고, 작업, 연락처, 기회, 캘린더 등 자신에게 배정된 레코드만 보이도록 제한하려면 체크박스를 선택하세요."
  },
  "usersMicroApp.users.roles.assignedDataOnlyTooltipNote": {
   "en": "Note: For admin users, 'Only Assigned Data' is not currently applicable to tasks, contacts, and opportunities—they will still have full visibility into these modules.",
-  "ko": "참고: 관리자 사용자의 경우 '할당된 항목만'은 현재 작업, 연락처, 기회에는 적용되지 않으며, 해당 모듈은 계속 전체 표시됩니다."
+  "ko": "참고: 관리자 사용자의 경우 '배정된 데이터만' 설정은 현재 작업, 연락처, 기회에는 적용되지 않으며, 해당 모듈은 계속 전체 표시됩니다."
  },
  "usersMicroApp.users.roles.limitWarningItem": {
   "en": "{name} — {limit}-user limit",
@@ -371265,7 +371265,7 @@
  },
  "usersMicroApp.users.transfer.error": {
   "en": "Could not transfer ownership. Try again.",
-  "ko": "소유권을 이전할 수 없습니다. 다시 시도해 주세요."
+  "ko": "소유권을 이전하지 못했습니다. 다시 시도해 주세요."
  },
  "usersMicroApp.users.transfer.label": {
   "en": "Transfer ownership",
