@@ -19,5 +19,14 @@
       "decided": "2026-10-28"
     }
   ],
-  "pending": []
+  "pending": [],
+  "_english": "english 는 영어 원문이 정확히 같은(앞뒤 공백 무시, 대소문자 무시) 항목을 host·apps·flat·_text·_textScoped 에서 뺀다 — 화면에 원문 그대로 둔다. 문장 속 단어는 해당 없음. 편집 정본·참조본에는 번역이 남아 번역 라운드가 다시 채우지 않는다. 레거시 사전(은퇴)에는 적용하지 않는다.",
+  "english": [
+    {
+      "en": "Delete",
+      "match": "exact-ci",
+      "reason": "단독 'Delete' 버튼·메뉴는 번역하지 않는다(DELETE 확인 입력과 같은 단어로 맞춤). 문장 속 delete 는 번역 유지",
+      "decided": "2026-11-04 벤자민"
+    }
+  ]
 }

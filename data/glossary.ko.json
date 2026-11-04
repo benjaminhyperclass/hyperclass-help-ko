@@ -541,6 +541,27 @@
       "category": "status",
       "decided": true,
       "note": "기회 상태 Lost. 2026-11-04 벤자민 결정(이전 손실·실패·패배 혼용). Lost reason = 고객전환실패 사유. \"will be lost\"(사라짐)는 해당 없음"
+    },
+    {
+      "en": "DND",
+      "ko": "수신거부",
+      "variants": [
+        "방해 금지 모드",
+        "방해 금지",
+        "방해금지",
+        "수신 거부"
+      ],
+      "category": "object",
+      "decided": true,
+      "note": "연락처 채널 수신거부(Do Not Disturb). 2026-11-04 벤자민 결정 — 이전 DND·방해 금지·수신 거부 혼용. 드래그 앤 드롭(DnD)은 해당 없음"
+    },
+    {
+      "en": "Note",
+      "ko": "메모",
+      "variants": [],
+      "category": "object",
+      "decided": true,
+      "note": "메모 기능(Notes). 2026-11-04 벤자민 결정 — 이전 메모·노트 혼용. 릴리스 노트·크레딧 노트·노트북은 예외라 변형 자동 치환 없음"
     }
   ],
   "buttons": [

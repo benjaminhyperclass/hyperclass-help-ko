@@ -6329,7 +6329,7 @@
  },
  "common.notes": {
   "en": "notes",
-  "ko": "노트"
+  "ko": "메모"
  },
  "common.notifications": {
   "en": "Notifications",
@@ -8097,7 +8097,7 @@
  },
  "common.inboundDndHasBeen": {
   "en": "Inbound DND has been activated for this contact",
-  "ko": "이 연락처에 대해 인바운드 DND가 활성화되었습니다"
+  "ko": "이 연락처에 대해 인바운드 수신거부가 활성화되었습니다"
  },
  "common.internalComment": {
   "en": "Internal Comment",
@@ -8125,7 +8125,7 @@
  },
  "common.dndIsActiveFor": {
   "en": "DND is active for Calls",
-  "ko": "통화에 대해 DND가 활성화됨"
+  "ko": "통화에 대해 수신거부가 활성화됨"
  },
  "common.off": {
   "en": "OFF",
@@ -10885,7 +10885,7 @@
  },
  "common.disableDndForSpecific": {
   "en": "Disable DND for specific channels",
-  "ko": "특정 채널에 대한 DND 비활성화"
+  "ko": "특정 채널에 대한 수신거부 비활성화"
  },
  "common.selectAdAccount": {
   "en": "Select Ad Account",
@@ -13833,7 +13833,7 @@
  },
  "conversations.component.inboundDndActive": {
   "en": "Inbound DND has been activated for this contact",
-  "ko": "이 연락처에 대해 인바운드 DND가 활성화되었습니다"
+  "ko": "이 연락처에 대해 인바운드 수신거부가 활성화되었습니다"
  },
  "conversations.component.fetchOlderMessages": {
   "en": "Fetch older messages",
@@ -14861,7 +14861,7 @@
  },
  "conversations.phone.dndActive": {
   "en": "DND is active for Calls",
-  "ko": "통화에 대해 DND가 활성화됨"
+  "ko": "통화에 대해 수신거부가 활성화됨"
  },
  "conversations.phone.primary": {
   "en": "Primary",
@@ -23517,7 +23517,7 @@
  },
  "smartList.FilterListSection.inboundDND": {
   "en": "Inbound DND",
-  "ko": "인바운드 DND"
+  "ko": "인바운드 수신거부"
  },
  "smartList.FilterListSection.campaign": {
   "en": "Campaign",
@@ -24201,7 +24201,7 @@
  },
  "smartList.extraDetails.DNDAllChannels": {
   "en": "DND all channels",
-  "ko": "모든 채널 DND"
+  "ko": "모든 채널 수신거부"
  },
  "smartList.extraDetails.DNDEmailChannel": {
   "en": "Emails",
@@ -24225,7 +24225,7 @@
  },
  "smartList.extraDetails.DNDInbound": {
   "en": "DND Inbound Calls and SMS",
-  "ko": "인바운드 통화 및 SMS DND"
+  "ko": "인바운드 통화 및 SMS 수신거부"
  },
  "smartList.extraDetails.DNDInboundTooltip": {
   "en": "Inbound Calls from this number will be directly blocked whereas Inbound SMS will be blocked at system level so charges will incur",
@@ -24253,15 +24253,15 @@
  },
  "smartList.notes.newNote.placeholder": {
   "en": "New note",
-  "ko": "새 노트"
+  "ko": "새 메모"
  },
  "smartList.notes.newNote.errMessage": {
   "en": "Note cannot be empty",
-  "ko": "노트는 비어있을 수 없습니다"
+  "ko": "메모는 비어있을 수 없습니다"
  },
  "smartList.notes.newNote.inputPlaceholder": {
   "en": "Enter Note",
-  "ko": "노트 입력"
+  "ko": "메모 입력"
  },
  "smartList.notes.noteBody.date": {
   "en": "Date",
@@ -24273,7 +24273,7 @@
  },
  "smartList.notes.deleteConfirmation": {
   "en": "Are you sure you want to delete this note?",
-  "ko": "이 노트를 삭제하시겠습니까?"
+  "ko": "이 메모를 삭제하시겠습니까?"
  },
  "smartList.tasks.title": {
   "en": "Title",
@@ -24769,7 +24769,7 @@
  },
  "triggers.dndContactRequiresState": {
   "en": "DND contact action requires DND state to set.",
-  "ko": "DND 연락처 액션에는 설정할 DND 상태가 필요합니다."
+  "ko": "수신거부 연락처 액션에는 설정할 수신거부 상태가 필요합니다."
  },
  "triggers.emptyConditionNotAllowed": {
   "en": "Empty condition is not allowed.",
@@ -27573,19 +27573,19 @@
  },
  "campaign.regulatoryBundle.triggers.dnd.disableAll": {
   "en": "Disable DND for all channels",
-  "ko": "모든 채널의 DND 비활성화"
+  "ko": "모든 채널의 수신거부 비활성화"
  },
  "campaign.regulatoryBundle.triggers.dnd.disableSpecific": {
   "en": "Disable DND for specific channels",
-  "ko": "특정 채널에 대한 DND 비활성화"
+  "ko": "특정 채널에 대한 수신거부 비활성화"
  },
  "campaign.regulatoryBundle.triggers.dnd.enableAll": {
   "en": "Enable DND for all channels",
-  "ko": "모든 채널의 DND 활성화"
+  "ko": "모든 채널의 수신거부 활성화"
  },
  "campaign.regulatoryBundle.triggers.dnd.enableSpecific": {
   "en": "Enable DND for specific channels",
-  "ko": "특정 채널의 DND 활성화"
+  "ko": "특정 채널의 수신거부 활성화"
  },
  "campaign.regulatoryBundle.triggers.dnd.selectAction": {
   "en": "Select Action",
@@ -31969,7 +31969,7 @@
  },
  "contactDetail.leftPanel.extraDetails.DNDAllChannels": {
   "en": "DND all channels",
-  "ko": "모든 채널 DND"
+  "ko": "모든 채널 수신거부"
  },
  "contactDetail.leftPanel.extraDetails.DNDEmailChannel": {
   "en": "Emails",
@@ -31993,7 +31993,7 @@
  },
  "contactDetail.leftPanel.extraDetails.DNDInbound": {
   "en": "DND Inbound Calls and SMS",
-  "ko": "인바운드 통화 및 SMS DND"
+  "ko": "인바운드 통화 및 SMS 수신거부"
  },
  "contactDetail.leftPanel.extraDetails.DNDInboundTooltip": {
   "en": "Inbound Calls from this number will be directly blocked whereas Inbound SMS will be blocked at system level so charges will incur",
@@ -32685,7 +32685,7 @@
  },
  "contactDetail.contactDndChannels.dndAllChannels": {
   "en": "DND all channels",
-  "ko": "모든 채널 DND"
+  "ko": "모든 채널 수신거부"
  },
  "contactDetail.contactDndChannels.or": {
   "en": "OR",
@@ -32713,7 +32713,7 @@
  },
  "contactDetail.contactDndChannels.dndInboundCallsSMS": {
   "en": "DND Inbound Calls and SMS",
-  "ko": "인바운드 통화 및 SMS DND"
+  "ko": "인바운드 통화 및 SMS 수신거부"
  },
  "contactDetail.contactDndChannels.blockWarn": {
   "en": "Inbound Calls from this number will be directly blocked whereas Inbound SMS will be blocked at system level so charges will incur",
@@ -34913,7 +34913,7 @@
  },
  "copilot.askAi.preview.invoice.notes": {
   "en": "Notes:",
-  "ko": "노트:"
+  "ko": "메모:"
  },
  "copilot.askAi.preview.invoice.table.description": {
   "en": "Description",
@@ -40529,7 +40529,7 @@
  },
  "copilotApp.copilot.askAi.preview.invoice.notes": {
   "en": "Notes:",
-  "ko": "노트:"
+  "ko": "메모:"
  },
  "copilotApp.copilot.askAi.preview.invoice.table.description": {
   "en": "Description",
@@ -66633,7 +66633,7 @@
  },
  "agentStudioApp.graphBuilder.antonChat.notes": {
   "en": "Notes:",
-  "ko": "노트:"
+  "ko": "메모:"
  },
  "agentStudioApp.graphBuilder.antonChat.allTestsPassed": {
   "en": "All tests passed",
@@ -81213,11 +81213,11 @@
  },
  "voiceAiApp.consentLanguageModal.terms.additionalGuidelines.globalReach1": {
   "en": "Calls go only to contacts who opted in to receive AI calls and have DND turned off — keeping you compliant by default",
-  "ko": "AI 통화 수신에 동의하고 DND가 꺼져 있는 연락처에만 전화가 걸립니다 — 기본적으로 규정을 준수할 수 있습니다"
+  "ko": "AI 통화 수신에 동의하고 수신거부가 꺼져 있는 연락처에만 전화가 걸립니다 — 기본적으로 규정을 준수할 수 있습니다"
  },
  "voiceAiApp.consentLanguageModal.terms.additionalGuidelines.globalReach1SelfCert": {
   "en": "Calls go to contacts who have not opted out of AI calls and have DND turned off — keeping you compliant by default",
-  "ko": "AI 통화를 거부하지 않았고 DND가 꺼져 있는 연락처에만 전화가 걸리므로 기본적으로 규정 준수가 유지됩니다"
+  "ko": "AI 통화를 거부하지 않았고 수신거부가 꺼져 있는 연락처에만 전화가 걸리므로 기본적으로 규정 준수가 유지됩니다"
  },
  "voiceAiApp.consentLanguageModal.terms.additionalGuidelines.globalReach2": {
   "en": "Launch campaigns globally — Each location places calls only to numbers within its country.",
@@ -82897,7 +82897,7 @@
  },
  "voiceAiApp.outboundStatus.reasonCodes.contactHasDNDSettings": {
   "en": "Contact has DND settings enabled",
-  "ko": "연락처에 DND 설정이 켜져 있습니다"
+  "ko": "연락처에 수신거부 설정이 켜져 있습니다"
  },
  "voiceAiApp.outboundStatus.reasonCodes.contactOptedOutVoiceAI": {
   "en": "Contact opted out of voice ai",
@@ -90813,7 +90813,7 @@
  },
  "crmObjectsSettingsApp.ops-delete.deletingOpportunitiesWarning": {
   "en": "Deleting any {object} will also remove the corresponding Tasks and Notes.",
-  "ko": "{object}을(를) 삭제하면 해당 작업과 노트도 함께 삭제됩니다."
+  "ko": "{object}을(를) 삭제하면 해당 작업과 메모도 함께 삭제됩니다."
  },
  "crmObjectsSettingsApp.ops-delete.regressionName": {
   "en": "Bulk delete opportunity (restore)",
@@ -91725,11 +91725,11 @@
  },
  "conversationsUtilitiesApp.manageScoring.value.enabledDndForAllChannels": {
   "en": "Enabled DND for all channels",
-  "ko": "모든 채널에 DND 가 켜졌습니다"
+  "ko": "모든 채널에 수신거부가 켜졌습니다"
  },
  "conversationsUtilitiesApp.manageScoring.value.disabledDndForAllChannels": {
   "en": "Disabled DND for all channels",
-  "ko": "모든 채널의 DND를 껐습니다"
+  "ko": "모든 채널의 수신거부를 껐습니다"
  },
  "conversationsUtilitiesApp.manageScoring.value.failed": {
   "en": "Failed",
@@ -142905,11 +142905,11 @@
  },
  "socialPlannerApp.createPost.approvalPost.addNoteLabel": {
   "en": "Add note",
-  "ko": "노트 추가"
+  "ko": "메모 추가"
  },
  "socialPlannerApp.createPost.approvalPost.addNote": {
   "en": "Add a note",
-  "ko": "노트 추가"
+  "ko": "메모 추가"
  },
  "socialPlannerApp.createPost.approvalPost.sendApproval": {
   "en": "Schedule & Send for Approval",
@@ -145025,11 +145025,11 @@
  },
  "socialPlannerApp.instagramOption.publisherNote": {
   "en": "Note to the Publisher",
-  "ko": "발행자에게 전달할 노트"
+  "ko": "발행자에게 전달할 메모"
  },
  "socialPlannerApp.instagramOption.publisherNotePlaceholder": {
   "en": "Add note for publisher...",
-  "ko": "게시자용 노트 추가..."
+  "ko": "게시자용 메모 추가..."
  },
  "socialPlannerApp.instagramOption.appDownloadInfo": {
   "en": "If you don’t already have the mobile app installed, you’ll first need to download the app in order to receive push notifications.",
@@ -158897,7 +158897,7 @@
  },
  "calendarRentalsApp.advancedSettings.default_form": {
   "en": "Default (First name, Last name, Email, Phone, Notes)",
-  "ko": "기본값 (이름, 성, 이메일, 전화번호, 노트)"
+  "ko": "기본값 (이름, 성, 이메일, 전화번호, 메모)"
  },
  "calendarRentalsApp.advancedSettings.sticky_contact": {
   "en": "Sticky contacts",
@@ -163089,7 +163089,7 @@
  },
  "calendarServicesApp.advancedSettings.default_form": {
   "en": "Default (First name, Last name, Email, Phone, Notes)",
-  "ko": "기본값 (이름, 성, 이메일, 전화번호, 노트)"
+  "ko": "기본값 (이름, 성, 이메일, 전화번호, 메모)"
  },
  "calendarServicesApp.advancedSettings.sticky_contact": {
   "en": "Sticky contacts",
@@ -168481,15 +168481,15 @@
  },
  "notes.loadingNotes": {
   "en": "Loading notes",
-  "ko": "노트 불러오는 중"
+  "ko": "메모 불러오는 중"
  },
  "notes.addNote": {
   "en": "New note",
-  "ko": "새 노트"
+  "ko": "새 메모"
  },
  "notes.allNotes": {
   "en": "All Notes",
-  "ko": "모든 노트"
+  "ko": "모든 메모"
  },
  "notes.showMore": {
   "en": "Show more",
@@ -169017,7 +169017,7 @@
  },
  "loadingNotes": {
   "en": "Loading notes",
-  "ko": "노트 불러오는 중"
+  "ko": "메모 불러오는 중"
  },
  "addNote": {
   "en": "Add Note",
@@ -169025,7 +169025,7 @@
  },
  "allNotes": {
   "en": "All Notes",
-  "ko": "모든 노트"
+  "ko": "모든 메모"
  },
  "showMore": {
   "en": "Show more",
@@ -172537,7 +172537,7 @@
  },
  "advancedSettings.default_form": {
   "en": "Default (First name, Last name, Email, Phone, Notes)",
-  "ko": "기본값 (이름, 성, 이메일, 전화번호, 노트)"
+  "ko": "기본값 (이름, 성, 이메일, 전화번호, 메모)"
  },
  "advancedSettings.sticky_contact": {
   "en": "Sticky {contactsLabel}",
@@ -187089,7 +187089,7 @@
  },
  "common.addNotePlaceholder": {
   "en": "Add a note",
-  "ko": "노트 추가"
+  "ko": "메모 추가"
  },
  "common.newPost": {
   "en": "New Post",
@@ -187189,7 +187189,7 @@
  },
  "common.dndEnabled": {
   "en": "DND is enabled for this contact. Please disable DND for this contact to make a call",
-  "ko": "이 연락처에 대해 DND가 활성화되어 있습니다. 전화를 걸려면 이 연락처의 DND를 비활성화하세요"
+  "ko": "이 연락처에 대해 수신거부가 활성화되어 있습니다. 전화를 걸려면 이 연락처의 수신거부를 비활성화하세요"
  },
  "common.deleteWarningText": {
   "en": "This Action will delete this {opportunity} from the pipeline.",
@@ -187881,7 +187881,7 @@
  },
  "opportunities.addEditOpp": {
   "en": "Add and edit {opportunity} details, tasks, notes and appointments.",
-  "ko": "{opportunity}의 세부 정보, 작업, 노트 및 예약을 추가하고 편집하세요."
+  "ko": "{opportunity}의 세부 정보, 작업, 메모 및 예약을 추가하고 편집하세요."
  },
  "opportunities.hideEmptyFields": {
   "en": "Hide empty fields",
@@ -189197,7 +189197,7 @@
  },
  "opportunities.dndEnabled": {
   "en": "DND is enabled for this contact, Please disable DND for this contact to make a call",
-  "ko": "이 연락처에 대해 DND가 활성화되어 있습니다. 전화를 걸려면 이 연락처의 DND를 비활성화하세요"
+  "ko": "이 연락처에 대해 수신거부가 활성화되어 있습니다. 전화를 걸려면 이 연락처의 수신거부를 비활성화하세요"
  },
  "opportunities.opportunityFollowers": {
   "en": "Opportunity followers",
@@ -189413,7 +189413,7 @@
  },
  "opportunities.notesTh": {
   "en": "notes",
-  "ko": "노트"
+  "ko": "메모"
  },
  "opportunities.followersTh": {
   "en": "followers",
@@ -190561,11 +190561,11 @@
  },
  "notes.addNotes": {
   "en": "Add notes",
-  "ko": "노트 추가"
+  "ko": "메모 추가"
  },
  "notes.enterNote": {
   "en": "Enter Note",
-  "ko": "노트 입력"
+  "ko": "메모 입력"
  },
  "notes.created": {
   "en": "Created:",
@@ -190577,15 +190577,15 @@
  },
  "notes.addNotesCaps": {
   "en": "Add notes",
-  "ko": "노트 추가"
+  "ko": "메모 추가"
  },
  "notes.newNote": {
   "en": "New note",
-  "ko": "새 노트"
+  "ko": "새 메모"
  },
  "notes.noteRequired": {
   "en": "Note is required",
-  "ko": "노트는 필수입니다"
+  "ko": "메모는 필수입니다"
  },
  "notes.descriptionRequiredOld": {
   "en": "Description is required",
@@ -190597,7 +190597,7 @@
  },
  "notes.common.addNote": {
   "en": "Add note",
-  "ko": "노트 추가"
+  "ko": "메모 추가"
  },
  "notes.common.updateNote": {
   "en": "Update note",
@@ -190629,7 +190629,7 @@
  },
  "notes.common.unsavedChangesAlertDesc": {
   "en": "Any unsaved progress will be lost. Are you sure you want to discard this note.",
-  "ko": "저장하지 않은 내용은 사라집니다. 이 노트를 삭제하시겠습니까?"
+  "ko": "저장하지 않은 내용은 사라집니다. 이 메모를 삭제하시겠습니까?"
  },
  "notes.common.createAndAddAnother": {
   "en": "Save and add another",
@@ -190665,7 +190665,7 @@
  },
  "notes.noteInpLabel": {
   "en": "Note description",
-  "ko": "노트 설명"
+  "ko": "메모 설명"
  },
  "notes.noteInpPlaceholder": {
   "en": "Enter a description...",
@@ -190681,11 +190681,11 @@
  },
  "notes.descriptionRequired": {
   "en": "Please input the note description",
-  "ko": "노트 설명을 입력하세요"
+  "ko": "메모 설명을 입력하세요"
  },
  "notes.noteLengthExceeded": {
   "en": "Note description should be less than {length} characters",
-  "ko": "노트 설명은 {length}자를 넘을 수 없습니다"
+  "ko": "메모 설명은 {length}자를 넘을 수 없습니다"
  },
  "notes.contactRequired": {
   "en": "Please select a {contact}",
@@ -190697,19 +190697,19 @@
  },
  "notes.createError": {
   "en": "Failed to create the note \"{noteTitle}\"",
-  "ko": "노트 \"{noteTitle}\"을 생성하지 못했습니다"
+  "ko": "메모 \"{noteTitle}\"을 생성하지 못했습니다"
  },
  "notes.updateSuccess": {
   "en": "Successfully updated the note \"{noteTitle}\"",
-  "ko": "\"{noteTitle}\" 노트가 성공적으로 업데이트되었습니다"
+  "ko": "\"{noteTitle}\" 메모가 성공적으로 업데이트되었습니다"
  },
  "notes.updateError": {
   "en": "Failed to update the note \"{noteTitle}\"",
-  "ko": "\"{noteTitle}\" 노트 업데이트에 실패했습니다"
+  "ko": "\"{noteTitle}\" 메모 업데이트에 실패했습니다"
  },
  "notes.failedToFetchNotes": {
   "en": "Failed to fetch notes",
-  "ko": "노트를 가져오지 못했습니다"
+  "ko": "메모를 가져오지 못했습니다"
  },
  "notes.failedToFetchNotesDesc": {
   "en": "There was an error while fetching notes. Please refresh or try again in some time.",
@@ -190745,15 +190745,15 @@
  },
  "notes.searchDoesNotMatch": {
   "en": "Your {message} does not match any notes. Please use a different search string or create a new note",
-  "ko": "검색 {message}와 일치하는 노트가 없습니다. 다른 검색어를 사용하거나 새 노트를 생성해 주세요"
+  "ko": "검색 {message}와 일치하는 메모가 없습니다. 다른 검색어를 사용하거나 새 메모를 생성해 주세요"
  },
  "notes.filterDoesNotMatch": {
   "en": "Your filter does not match any notes. Please clear the filters or create a new note",
-  "ko": "필터와 일치하는 노트가 없습니다. 필터를 지우거나 새 노트를 생성해 주세요"
+  "ko": "필터와 일치하는 메모가 없습니다. 필터를 지우거나 새 메모를 생성해 주세요"
  },
  "notes.couldNotFindNotes": {
   "en": "Could not find any notes. Please try again.",
-  "ko": "노트를 찾을 수 없습니다. 다시 시도해 주세요."
+  "ko": "메모를 찾을 수 없습니다. 다시 시도해 주세요."
  },
  "notes.addFirstNoteTitle": {
   "en": "No notes yet",
@@ -190765,27 +190765,27 @@
  },
  "notes.deleteNoteTitle": {
   "en": "Delete note {noteName}?",
-  "ko": "{noteName} 노트를 삭제하시겠습니까?"
+  "ko": "{noteName} 메모를 삭제하시겠습니까?"
  },
  "notes.deleteNoteDesc": {
   "en": "Are you sure you want to delete this note?",
-  "ko": "이 노트를 삭제하시겠습니까?"
+  "ko": "이 메모를 삭제하시겠습니까?"
  },
  "notes.deleteNoteConfirm": {
   "en": "Delete note",
-  "ko": "노트 삭제"
+  "ko": "메모 삭제"
  },
  "notes.deletedNotesCanBeRestored": {
   "en": "Deleted notes can be restored within {months} months",
-  "ko": "삭제된 노트는 {months}개월 이내에 복원할 수 있습니다"
+  "ko": "삭제된 메모는 {months}개월 이내에 복원할 수 있습니다"
  },
  "notes.deleteNoteSuccess": {
   "en": "Note \"{noteName}\" deleted successfully",
-  "ko": "\"{noteName}\" 노트가 성공적으로 삭제되었습니다"
+  "ko": "\"{noteName}\" 메모가 성공적으로 삭제되었습니다"
  },
  "notes.deleteNoteFailed": {
   "en": "Failed to delete note \"{noteName}\"",
-  "ko": "노트 \"{noteName}\"을 삭제하지 못했습니다"
+  "ko": "메모 \"{noteName}\"을 삭제하지 못했습니다"
  },
  "notes.associatedObject": {
   "en": "Associated object",
@@ -201657,11 +201657,11 @@
  },
  "marketplace.supportPortal.developers.deactivateModal.notesLabel": {
   "en": "Notes (optional)",
-  "ko": "노트 (선택 사항)"
+  "ko": "메모 (선택 사항)"
  },
  "marketplace.supportPortal.developers.deactivateModal.notesPlaceholder": {
   "en": "Add any additional notes...",
-  "ko": "추가 노트 입력..."
+  "ko": "추가 메모 입력..."
  },
  "marketplace.supportPortal.developers.deactivationReasons.abuse": {
   "en": "Abuse",
@@ -202109,7 +202109,7 @@
  },
  "marketplace.supportPortal.appDetails.releaseNotesMeta.agencyNotes": {
   "en": "Agency Notes",
-  "ko": "에이전시 노트"
+  "ko": "에이전시 메모"
  },
  "marketplace.supportPortal.appDetails.releaseNotesMeta.subAccountNotes": {
   "en": "Sub-Account Notes",
@@ -202369,7 +202369,7 @@
  },
  "marketplace.supportPortal.approvalModal.disapproveInfo": {
   "en": "On disapproving, one email is sent to the app developer with the comments below, including any custom script notes already in this field.",
-  "ko": "반려 시 아래 코멘트와 이 필드에 이미 작성된 커스텀 스크립트 노트를 포함한 이메일이 앱 개발자에게 발송됩니다."
+  "ko": "반려 시 아래 코멘트와 이 필드에 이미 작성된 커스텀 스크립트 메모를 포함한 이메일이 앱 개발자에게 발송됩니다."
  },
  "marketplace.supportPortal.approvalModal.processing": {
   "en": "Processing...",
@@ -205365,7 +205365,7 @@
  },
  "appointmentModal.add_note": {
   "en": "Add a note",
-  "ko": "노트 추가"
+  "ko": "메모 추가"
  },
  "appointmentModal.note": {
   "en": "Note",
@@ -205677,11 +205677,11 @@
  },
  "appointmentModal.internal_note": {
   "en": "Internal notes",
-  "ko": "내부 노트"
+  "ko": "내부 메모"
  },
  "appointmentModal.add_internal_note": {
   "en": "Add internal note",
-  "ko": "내부 노트 추가"
+  "ko": "내부 메모 추가"
  },
  "appointmentModal.cancellation_reason": {
   "en": "Cancellation reason:",
@@ -206313,7 +206313,7 @@
  },
  "appointmentModal.note_cannot_be_empty": {
   "en": "Note cannot be empty",
-  "ko": "노트는 비어있을 수 없습니다"
+  "ko": "메모는 비어있을 수 없습니다"
  },
  "appointmentModal.error_occurred_adding_note": {
   "en": "An error occurred while adding note",
@@ -206321,7 +206321,7 @@
  },
  "appointmentModal.note_added_successfully": {
   "en": "Note added successfully",
-  "ko": "노트가 성공적으로 추가되었습니다"
+  "ko": "메모가 성공적으로 추가되었습니다"
  },
  "appointmentModal.error_occurred_updating_note": {
   "en": "An error occurred while updating note",
@@ -206329,7 +206329,7 @@
  },
  "appointmentModal.note_updated_successfully": {
   "en": "Note updated successfully",
-  "ko": "노트가 성공적으로 업데이트되었습니다"
+  "ko": "메모가 성공적으로 업데이트되었습니다"
  },
  "appointmentModal.error_occurred_deleting_note": {
   "en": "An error occurred while deleting note",
@@ -206337,7 +206337,7 @@
  },
  "appointmentModal.note_deleted_successfully": {
   "en": "Note deleted successfully",
-  "ko": "노트가 성공적으로 삭제되었습니다"
+  "ko": "메모가 성공적으로 삭제되었습니다"
  },
  "appointmentModal.invalid_phone_number": {
   "en": "Invalid phone number",
@@ -206605,7 +206605,7 @@
  },
  "activity_log.notes_update": {
   "en": "Notes update",
-  "ko": "노트 업데이트"
+  "ko": "메모 업데이트"
  },
  "activity_log.appointment_status_update": {
   "en": "Appointment status update",
@@ -208377,11 +208377,11 @@
  },
  "notes_per_appointment.notes": {
   "en": "Internal notes",
-  "ko": "내부 노트"
+  "ko": "내부 메모"
  },
  "notes_per_appointment.add_notes": {
   "en": "Add internal notes",
-  "ko": "내부 노트 추가"
+  "ko": "내부 메모 추가"
  },
  "notes_per_appointment.delete": {
   "en": "Delete",
@@ -208405,7 +208405,7 @@
  },
  "notes_per_appointment.delete_note_title": {
   "en": "Delete this internal note?",
-  "ko": "이 내부 노트를 삭제하시겠습니까?"
+  "ko": "이 내부 메모를 삭제하시겠습니까?"
  },
  "notes_per_appointment.delete_note_message": {
   "en": "Are you sure you want to permanently delete this internal note? This action cannot be undone.",
@@ -208417,15 +208417,15 @@
  },
  "notes_per_appointment.add_note": {
   "en": "Add internal note",
-  "ko": "내부 노트 추가"
+  "ko": "내부 메모 추가"
  },
  "notes_per_appointment.note_description": {
   "en": "Internal note description",
-  "ko": "내부 노트 설명"
+  "ko": "내부 메모 설명"
  },
  "notes_per_appointment.note_placeholder": {
   "en": "Add an internal note",
-  "ko": "내부 노트 추가"
+  "ko": "내부 메모 추가"
  },
  "notes_per_appointment.save_note": {
   "en": "Save internal note",
@@ -214809,7 +214809,7 @@
  },
  "validation.max.notes": {
   "en": "The maximum length for notes is 2000 characters",
-  "ko": "노트의 최대 길이는 2000자입니다"
+  "ko": "메모의 최대 길이는 2000자입니다"
  },
  "validation.max.title": {
   "en": "Title name must not contain more than 40 characters",
@@ -214841,7 +214841,7 @@
  },
  "validation.max.refundNotes": {
   "en": "Notes must not contain more than 255 characters",
-  "ko": "노트는 255자를 초과할 수 없습니다"
+  "ko": "메모는 255자를 초과할 수 없습니다"
  },
  "validation.max.refundAmount": {
   "en": "Amount must be less than or equal to",
@@ -235265,7 +235265,7 @@
  },
  "reputation.reputationReviewRequests.errorCodes.101": {
   "en": "Invalid contact or DND enabled.",
-  "ko": "잘못된 연락처이거나 DND가 활성화되어 있습니다."
+  "ko": "잘못된 연락처이거나 수신거부가 활성화되어 있습니다."
  },
  "reputation.reputationReviewRequests.errorCodes.102": {
   "en": "Email template contains unresolved errors.",
@@ -235309,7 +235309,7 @@
  },
  "reputation.reputationReviewRequests.errorCodes.E-REVIEW-REQUEST-CONTACT-002": {
   "en": "DND is enabled for the contact",
-  "ko": "이 연락처에 대해 DND가 활성화되어 있습니다"
+  "ko": "이 연락처에 대해 수신거부가 활성화되어 있습니다"
  },
  "reputation.reputationReviewRequests.errorCodes.E-REVIEW-REQUEST-CONTACT-003": {
   "en": "Limit reached for sending Review Request to the Contact",
@@ -238725,7 +238725,7 @@
  },
  "reputation.sendReviewRequestModal.reviewRequestModeEmailContactDND": {
   "en": "Cannot send Email review requests as Contact is marked as DND",
-  "ko": "연락처가 DND로 표시되어 이메일 리뷰 요청을 보낼 수 없습니다"
+  "ko": "연락처가 수신거부로 표시되어 이메일 리뷰 요청을 보낼 수 없습니다"
  },
  "reputation.sendReviewRequestModal.reviewRequestModeEmailDisabled": {
   "en": "Email Review Requests are disabled. You can enable them here:",
@@ -238741,7 +238741,7 @@
  },
  "reputation.sendReviewRequestModal.reviewRequestModeSMSContactDND": {
   "en": "Cannot send SMS review requests as Contact is marked as DND",
-  "ko": "연락처가 DND로 표시되어 SMS 리뷰 요청을 보낼 수 없습니다"
+  "ko": "연락처가 수신거부로 표시되어 SMS 리뷰 요청을 보낼 수 없습니다"
  },
  "reputation.sendReviewRequestModal.reviewRequestModeSMSDisabled": {
   "en": "SMS Review Requests are disabled. You can enable them here:",
@@ -238757,7 +238757,7 @@
  },
  "reputation.sendReviewRequestModal.reviewRequestModeWhatsAppContactDND": {
   "en": "Cannot send WhatsApp review requests as Contact is marked as DND",
-  "ko": "연락처가 DND로 표시되어 WhatsApp 리뷰 요청을 보낼 수 없습니다"
+  "ko": "연락처가 수신거부로 표시되어 WhatsApp 리뷰 요청을 보낼 수 없습니다"
  },
  "reputation.sendReviewRequestModal.reviewRequestModeWhatsAppDisabled": {
   "en": "WhatsApp Review Requests are disabled. You can enable them here:",
@@ -238773,7 +238773,7 @@
  },
  "reputation.sendReviewRequestModal.reviewRequestModeWhatsAppAndSmsDnd": {
   "en": "Cannot send SMS and WhatsApp review requests as Contact is marked as DND",
-  "ko": "연락처가 DND로 표시되어 SMS 및 WhatsApp 리뷰 요청을 보낼 수 없습니다"
+  "ko": "연락처가 수신거부로 표시되어 SMS 및 WhatsApp 리뷰 요청을 보낼 수 없습니다"
  },
  "reputation.sendReviewRequestModal.searching": {
   "en": "Searching",
@@ -241457,7 +241457,7 @@
  },
  "notes.common.addInternalNote": {
   "en": "Add internal note",
-  "ko": "내부 노트 추가"
+  "ko": "내부 메모 추가"
  },
  "error.title": {
   "en": "Error",
@@ -245505,19 +245505,19 @@
  },
  "support.create_note": {
   "en": "Create Note",
-  "ko": "노트 만들기"
+  "ko": "메모 만들기"
  },
  "support.note_ph": {
   "en": "Add a note...",
-  "ko": "노트 추가..."
+  "ko": "메모 추가..."
  },
  "support.note_create_success": {
   "en": "Note created successfully",
-  "ko": "노트가 성공적으로 생성되었습니다"
+  "ko": "메모가 성공적으로 생성되었습니다"
  },
  "support.note_create_failed": {
   "en": "Failed to create note",
-  "ko": "노트를 생성하지 못했습니다"
+  "ko": "메모를 생성하지 못했습니다"
  },
  "support.no_notes": {
   "en": "No notes found",
@@ -259833,7 +259833,7 @@
  },
  "trustCenter.voiceIntegrityForm.notes": {
   "en": "Notes (Optional)",
-  "ko": "노트 (선택 사항)"
+  "ko": "메모 (선택 사항)"
  },
  "trustCenter.voiceIntegrityForm.enterHere": {
   "en": "Enter here",
@@ -267197,7 +267197,7 @@
  },
  "ops-delete.deletingOpportunitiesWarning": {
   "en": "Deleting any {object} will also remove the corresponding Tasks and Notes.",
-  "ko": "{object}을(를) 삭제하면 해당 작업과 노트도 함께 삭제됩니다."
+  "ko": "{object}을(를) 삭제하면 해당 작업과 메모도 함께 삭제됩니다."
  },
  "ops-delete.regressionName": {
   "en": "Bulk delete opportunity (restore)",
@@ -269753,7 +269753,7 @@
  },
  "mergeContacts.fieldLabels.dnd": {
   "en": "DND for all",
-  "ko": "전체 DND"
+  "ko": "전체 수신거부"
  },
  "mergeContacts.fieldLabels.additionalEmails": {
   "en": "Additional Email Address",
@@ -269765,31 +269765,31 @@
  },
  "mergeContacts.fieldLabels.dndSMS": {
   "en": "DND for SMS",
-  "ko": "SMS 수신 거부"
+  "ko": "SMS 수신거부"
  },
  "mergeContacts.fieldLabels.dndEmail": {
   "en": "DND for Email",
-  "ko": "이메일 DND"
+  "ko": "이메일 수신거부"
  },
  "mergeContacts.fieldLabels.dndCall": {
   "en": "DND for Call",
-  "ko": "통화 DND"
+  "ko": "통화 수신거부"
  },
  "mergeContacts.fieldLabels.dndFB": {
   "en": "DND for Facebook",
-  "ko": "Facebook 수신 거부"
+  "ko": "Facebook 수신거부"
  },
  "mergeContacts.fieldLabels.dndWhatsApp": {
   "en": "DND for WhatsApp",
-  "ko": "WhatsApp 수신 거부(DND)"
+  "ko": "WhatsApp 수신거부"
  },
  "mergeContacts.fieldLabels.dndGMB": {
   "en": "DND for GMB",
-  "ko": "GMB DND"
+  "ko": "GMB 수신거부"
  },
  "mergeContacts.fieldLabels.dndInbound": {
   "en": "DND for Inbound",
-  "ko": "수신 DND"
+  "ko": "인바운드 수신거부"
  },
  "mergeContacts.fieldLabels.dateOfBirth": {
   "en": "Date of Birth",
@@ -272693,35 +272693,35 @@
  },
  "notes.noSearchResult": {
   "en": "did not match any notes. Please try again.",
-  "ko": "일치하는 노트가 없습니다. 다시 시도해 주세요."
+  "ko": "일치하는 메모가 없습니다. 다시 시도해 주세요."
  },
  "notes.addNewNote": {
   "en": "Add new note",
-  "ko": "새 노트 추가"
+  "ko": "새 메모 추가"
  },
  "notes.deleteNote": {
   "en": "Delete note",
-  "ko": "노트 삭제"
+  "ko": "메모 삭제"
  },
  "notes.areYouSure": {
   "en": "Are you sure you want to delete this note?",
-  "ko": "이 노트를 삭제하시겠습니까?"
+  "ko": "이 메모를 삭제하시겠습니까?"
  },
  "notes.editNote": {
   "en": "Edit Note",
-  "ko": "노트 수정"
+  "ko": "메모 수정"
  },
  "notes.noteAdded": {
   "en": "Note successfully added",
-  "ko": "노트가 성공적으로 추가되었습니다"
+  "ko": "메모가 성공적으로 추가되었습니다"
  },
  "notes.noteUpdated": {
   "en": "Note successfully updated",
-  "ko": "노트가 성공적으로 업데이트되었습니다"
+  "ko": "메모가 성공적으로 업데이트되었습니다"
  },
  "notes.noteDeleted": {
   "en": "Note successfully deleted",
-  "ko": "노트가 성공적으로 삭제되었습니다"
+  "ko": "메모가 성공적으로 삭제되었습니다"
  },
  "notes.updateNote": {
   "en": "Update note",
@@ -273017,27 +273017,27 @@
  },
  "filters.dndAll": {
   "en": "DND all",
-  "ko": "전체 DND"
+  "ko": "전체 수신거부"
  },
  "filters.callsVoicemails": {
   "en": "Calls & Voicemails DND",
-  "ko": "통화 및 음성사서함 방해 금지"
+  "ko": "통화 및 음성사서함 수신거부"
  },
  "filters.sms": {
   "en": "SMS DND",
-  "ko": "SMS 방해 금지"
+  "ko": "SMS 수신거부"
  },
  "filters.whatsapp": {
   "en": "WhatsApp DND",
-  "ko": "WhatsApp 방해 금지"
+  "ko": "WhatsApp 수신거부"
  },
  "filters.fbMessenger": {
   "en": "FB messenger DND",
-  "ko": "FB 메신저 DND"
+  "ko": "FB 메신저 수신거부"
  },
  "filters.gmbMessenger": {
   "en": "GMB messenger DND",
-  "ko": "GMB 메신저 방해 금지"
+  "ko": "GMB 메신저 수신거부"
  },
  "filters.emailDND": {
   "en": "Email DND",
@@ -273637,7 +273637,7 @@
  },
  "filters.inboundDnd": {
   "en": "Inbound DND",
-  "ko": "인바운드 DND"
+  "ko": "인바운드 수신거부"
  },
  "filters.campaign": {
   "en": "Campaign",
@@ -274173,7 +274173,7 @@
  },
  "listView.columns.lastNote": {
   "en": "Last note",
-  "ko": "마지막 노트"
+  "ko": "마지막 메모"
  },
  "listView.columns.dateUpdated": {
   "en": "Updated ({timezone})",
@@ -282261,7 +282261,7 @@
  },
  "powerDialerApp.multiLine.addSkip.dnd": {
   "en": "on DND",
-  "ko": "방해 금지 중"
+  "ko": "수신거부 중"
  },
  "powerDialerApp.multiLine.addSkip.listFull": {
   "en": "list is full",
@@ -282525,7 +282525,7 @@
  },
  "powerDialerApp.multiLine.reasons.DND.chip": {
   "en": "Do not disturb",
-  "ko": "방해 금지"
+  "ko": "수신거부"
  },
  "powerDialerApp.multiLine.reasons.INVALID_NUMBER.chip": {
   "en": "Invalid number",
@@ -289481,7 +289481,7 @@
  },
  "contactsApp.common.addNotePlaceholder": {
   "en": "Add a note",
-  "ko": "노트 추가"
+  "ko": "메모 추가"
  },
  "contactsApp.common.addSmartlist": {
   "en": "Add Smart List",
@@ -289689,7 +289689,7 @@
  },
  "contactsApp.common.dndEnabled": {
   "en": "DND is enabled for this contact. Please disable DND for this contact to make a call",
-  "ko": "이 연락처는 방해 금지(DND)가 켜져 있습니다. 전화를 걸려면 이 연락처의 방해 금지를 해제하세요"
+  "ko": "이 연락처는 수신거부가 켜져 있습니다. 전화를 걸려면 이 연락처의 수신거부를 해제하세요"
  },
  "contactsApp.common.doNotReloadThisWindowWhileExportIsInProgress": {
   "en": "Do not reload this window or leave this page while export is in progress",
@@ -289857,7 +289857,7 @@
  },
  "contactsApp.common.notes": {
   "en": "notes",
-  "ko": "노트"
+  "ko": "메모"
  },
  "contactsApp.common.outOf": {
   "en": "out of",
@@ -290509,7 +290509,7 @@
  },
  "contactsApp.filters.callsVoicemails": {
   "en": "Calls & Voicemails DND",
-  "ko": "통화 및 음성사서함 방해 금지"
+  "ko": "통화 및 음성사서함 수신거부"
  },
  "contactsApp.filters.campaign": {
   "en": "Campaign",
@@ -290613,7 +290613,7 @@
  },
  "contactsApp.filters.dndAll": {
   "en": "DND all",
-  "ko": "전체 DND"
+  "ko": "전체 수신거부"
  },
  "contactsApp.filters.doesNotContain": {
   "en": "Does not contain",
@@ -290753,7 +290753,7 @@
  },
  "contactsApp.filters.fbMessenger": {
   "en": "FB messenger DND",
-  "ko": "FB 메신저 DND"
+  "ko": "FB 메신저 수신거부"
  },
  "contactsApp.filters.filters": {
   "en": "Filters",
@@ -290785,7 +290785,7 @@
  },
  "contactsApp.filters.gmbMessenger": {
   "en": "GMB messenger DND",
-  "ko": "GMB 메신저 방해 금지"
+  "ko": "GMB 메신저 수신거부"
  },
  "contactsApp.filters.greaterThan": {
   "en": "Greater than",
@@ -290833,7 +290833,7 @@
  },
  "contactsApp.filters.inboundDnd": {
   "en": "Inbound DND",
-  "ko": "인바운드 DND"
+  "ko": "인바운드 수신거부"
  },
  "contactsApp.filters.internationalNumberSearchExample": {
   "en": "To search contacts with international number, prefix your search with +zzz (where zzz means a country dial code).",
@@ -291385,7 +291385,7 @@
  },
  "contactsApp.filters.sms": {
   "en": "SMS DND",
-  "ko": "SMS 방해 금지"
+  "ko": "SMS 수신거부"
  },
  "contactsApp.filters.source": {
   "en": "Contact source",
@@ -291525,7 +291525,7 @@
  },
  "contactsApp.filters.whatsapp": {
   "en": "WhatsApp DND",
-  "ko": "WhatsApp 방해 금지"
+  "ko": "WhatsApp 수신거부"
  },
  "contactsApp.filters.wildCardSearchExample": {
   "en": "Example, builder: Type *linc* or ab*linc* to search for contact with name Abraham Lincoln",
@@ -291785,7 +291785,7 @@
  },
  "contactsApp.listView.columns.lastNote": {
   "en": "Last note",
-  "ko": "마지막 노트"
+  "ko": "마지막 메모"
  },
  "contactsApp.listView.columns.offers": {
   "en": "Offers",
@@ -292133,15 +292133,15 @@
  },
  "contactsApp.notes.addNewNote": {
   "en": "Add new note",
-  "ko": "새 노트 추가"
+  "ko": "새 메모 추가"
  },
  "contactsApp.notes.addNote": {
   "en": "New note",
-  "ko": "새 노트"
+  "ko": "새 메모"
  },
  "contactsApp.notes.areYouSure": {
   "en": "Are you sure you want to delete this note?",
-  "ko": "이 노트를 삭제하시겠습니까?"
+  "ko": "이 메모를 삭제하시겠습니까?"
  },
  "contactsApp.notes.createNote": {
   "en": "Create note",
@@ -292149,15 +292149,15 @@
  },
  "contactsApp.notes.deleteNote": {
   "en": "Delete note",
-  "ko": "노트 삭제"
+  "ko": "메모 삭제"
  },
  "contactsApp.notes.editNote": {
   "en": "Edit Note",
-  "ko": "노트 수정"
+  "ko": "메모 수정"
  },
  "contactsApp.notes.enterNote": {
   "en": "Enter Note",
-  "ko": "노트 입력"
+  "ko": "메모 입력"
  },
  "contactsApp.notes.filter": {
   "en": "Filter",
@@ -292189,19 +292189,19 @@
  },
  "contactsApp.notes.noSearchResult": {
   "en": "did not match any notes. Please try again.",
-  "ko": "일치하는 노트가 없습니다. 다시 시도해 주세요."
+  "ko": "일치하는 메모가 없습니다. 다시 시도해 주세요."
  },
  "contactsApp.notes.noteAdded": {
   "en": "Note successfully added",
-  "ko": "노트가 성공적으로 추가되었습니다"
+  "ko": "메모가 성공적으로 추가되었습니다"
  },
  "contactsApp.notes.noteDeleted": {
   "en": "Note successfully deleted",
-  "ko": "노트가 성공적으로 삭제되었습니다"
+  "ko": "메모가 성공적으로 삭제되었습니다"
  },
  "contactsApp.notes.noteUpdated": {
   "en": "Note successfully updated",
-  "ko": "노트가 성공적으로 업데이트되었습니다"
+  "ko": "메모가 성공적으로 업데이트되었습니다"
  },
  "contactsApp.notes.oldestFirst": {
   "en": "Oldest first",
@@ -292997,7 +292997,7 @@
  },
  "crmCommon.common.dndEnabled": {
   "en": "DND is enabled for this contact. Please disable DND for this contact to make a call",
-  "ko": "이 연락처는 방해 금지(DND)가 켜져 있습니다. 전화를 걸려면 이 연락처의 방해 금지를 해제하세요"
+  "ko": "이 연락처는 수신거부가 켜져 있습니다. 전화를 걸려면 이 연락처의 수신거부를 해제하세요"
  },
  "crmCommon.common.doNotReloadThisWindowWhileExportIsInProgress": {
   "en": "Do not reload this window or leave this page while export is in progress",
@@ -293913,7 +293913,7 @@
  },
  "crmCommon.notes.addNoteHeader": {
   "en": "Add note",
-  "ko": "노트 추가"
+  "ko": "메모 추가"
  },
  "crmCommon.notes.associateTo": {
   "en": "Associate to",
@@ -293965,7 +293965,7 @@
  },
  "crmCommon.notes.common.addNote": {
   "en": "Add note",
-  "ko": "노트 추가"
+  "ko": "메모 추가"
  },
  "crmCommon.notes.common.cancel": {
   "en": "Cancel",
@@ -298009,7 +298009,7 @@
  },
  "locationsApp.manageSubAccount.createNote": {
   "en": "Create Note",
-  "ko": "노트 만들기"
+  "ko": "메모 만들기"
  },
  "locationsApp.manageSubAccount.deleteSubAccount.confirmationText": {
   "en": "Type {text} to confirm",
@@ -299425,7 +299425,7 @@
  },
  "opportunitiesApp.common.dndEnabled": {
   "en": "DND is enabled for this contact, Please disable DND for this contact to make a call",
-  "ko": "이 연락처에 대해 DND가 활성화되어 있습니다. 전화를 걸려면 이 연락처의 DND를 비활성화하세요"
+  "ko": "이 연락처에 대해 수신거부가 활성화되어 있습니다. 전화를 걸려면 이 연락처의 수신거부를 비활성화하세요"
  },
  "opportunitiesApp.common.doNotReloadThisWindowWhileExportIsInProgress": {
   "en": "Do not reload this window or leave this page while export is in progress",
@@ -300597,15 +300597,15 @@
  },
  "opportunitiesApp.notes.addNote": {
   "en": "Add note",
-  "ko": "노트 추가"
+  "ko": "메모 추가"
  },
  "opportunitiesApp.notes.addNotes": {
   "en": "Add notes",
-  "ko": "노트 추가"
+  "ko": "메모 추가"
  },
  "opportunitiesApp.notes.addNotesCaps": {
   "en": "Add notes",
-  "ko": "노트 추가"
+  "ko": "메모 추가"
  },
  "opportunitiesApp.notes.associateTo": {
   "en": "Associate to",
@@ -300621,7 +300621,7 @@
  },
  "opportunitiesApp.notes.common.addNote": {
   "en": "Add note",
-  "ko": "노트 추가"
+  "ko": "메모 추가"
  },
  "opportunitiesApp.notes.common.cancel": {
   "en": "Cancel",
@@ -300685,11 +300685,11 @@
  },
  "opportunitiesApp.notes.couldNotFindNotes": {
   "en": "Could not find any notes. Please try again.",
-  "ko": "노트를 찾을 수 없습니다. 다시 시도해 주세요."
+  "ko": "메모를 찾을 수 없습니다. 다시 시도해 주세요."
  },
  "opportunitiesApp.notes.createError": {
   "en": "Failed to create the note \"{noteTitle}\"",
-  "ko": "노트 \"{noteTitle}\"을 생성하지 못했습니다"
+  "ko": "메모 \"{noteTitle}\"을 생성하지 못했습니다"
  },
  "opportunitiesApp.notes.createSuccess": {
   "en": "Successfully created the note \"{noteTitle}\"",
@@ -300705,31 +300705,31 @@
  },
  "opportunitiesApp.notes.deleteNoteConfirm": {
   "en": "Delete note",
-  "ko": "노트 삭제"
+  "ko": "메모 삭제"
  },
  "opportunitiesApp.notes.deleteNoteDesc": {
   "en": "Are you sure you want to delete this note?",
-  "ko": "이 노트를 삭제하시겠습니까?"
+  "ko": "이 메모를 삭제하시겠습니까?"
  },
  "opportunitiesApp.notes.deleteNoteFailed": {
   "en": "Failed to delete note \"{noteName}\"",
-  "ko": "노트 \"{noteName}\"을 삭제하지 못했습니다"
+  "ko": "메모 \"{noteName}\"을 삭제하지 못했습니다"
  },
  "opportunitiesApp.notes.deleteNoteSuccess": {
   "en": "Note \"{noteName}\" deleted successfully",
-  "ko": "\"{noteName}\" 노트가 성공적으로 삭제되었습니다"
+  "ko": "\"{noteName}\" 메모가 성공적으로 삭제되었습니다"
  },
  "opportunitiesApp.notes.deleteNoteTitle": {
   "en": "Delete note {noteName}?",
-  "ko": "{noteName} 노트를 삭제하시겠습니까?"
+  "ko": "{noteName} 메모를 삭제하시겠습니까?"
  },
  "opportunitiesApp.notes.deletedNotesCanBeRestored": {
   "en": "Deleted notes can be restored within {months} months",
-  "ko": "삭제된 노트는 {months}개월 이내에 복원할 수 있습니다"
+  "ko": "삭제된 메모는 {months}개월 이내에 복원할 수 있습니다"
  },
  "opportunitiesApp.notes.descriptionRequired": {
   "en": "Please input the note description",
-  "ko": "노트 설명을 입력하세요"
+  "ko": "메모 설명을 입력하세요"
  },
  "opportunitiesApp.notes.descriptionRequiredOld": {
   "en": "Description is required",
@@ -300737,7 +300737,7 @@
  },
  "opportunitiesApp.notes.failedToFetchNotes": {
   "en": "Failed to fetch notes",
-  "ko": "노트를 가져오지 못했습니다"
+  "ko": "메모를 가져오지 못했습니다"
  },
  "opportunitiesApp.notes.failedToFetchNotesDesc": {
   "en": "There was an error while fetching notes. Please refresh or try again in some time.",
@@ -300749,7 +300749,7 @@
  },
  "opportunitiesApp.notes.filterDoesNotMatch": {
   "en": "Your filter does not match any notes. Please clear the filters or create a new note",
-  "ko": "필터와 일치하는 노트가 없습니다. 필터를 지우거나 새 노트를 생성해 주세요"
+  "ko": "필터와 일치하는 메모가 없습니다. 필터를 지우거나 새 메모를 생성해 주세요"
  },
  "opportunitiesApp.notes.filters": {
   "en": "filters",
@@ -300761,7 +300761,7 @@
  },
  "opportunitiesApp.notes.newNote": {
   "en": "New note",
-  "ko": "새 노트"
+  "ko": "새 메모"
  },
  "opportunitiesApp.notes.noNotesFound": {
   "en": "No notes found",
@@ -300773,7 +300773,7 @@
  },
  "opportunitiesApp.notes.noteInpLabel": {
   "en": "Note description",
-  "ko": "노트 설명"
+  "ko": "메모 설명"
  },
  "opportunitiesApp.notes.noteInpPlaceholder": {
   "en": "Enter a description...",
@@ -300781,11 +300781,11 @@
  },
  "opportunitiesApp.notes.noteLengthExceeded": {
   "en": "Note description should be less than {length} characters",
-  "ko": "노트 설명은 {length}자를 넘을 수 없습니다"
+  "ko": "메모 설명은 {length}자를 넘을 수 없습니다"
  },
  "opportunitiesApp.notes.noteRequired": {
   "en": "Note is required",
-  "ko": "노트는 필수입니다"
+  "ko": "메모는 필수입니다"
  },
  "opportunitiesApp.notes.notes": {
   "en": "Notes",
@@ -300793,7 +300793,7 @@
  },
  "opportunitiesApp.notes.searchDoesNotMatch": {
   "en": "Your {message} does not match any notes. Please use a different search string or create a new note",
-  "ko": "검색 {message}와 일치하는 노트가 없습니다. 다른 검색어를 사용하거나 새 노트를 생성해 주세요"
+  "ko": "검색 {message}와 일치하는 메모가 없습니다. 다른 검색어를 사용하거나 새 메모를 생성해 주세요"
  },
  "opportunitiesApp.notes.selectContact": {
   "en": "Select contact",
@@ -300809,11 +300809,11 @@
  },
  "opportunitiesApp.notes.updateError": {
   "en": "Failed to update the note \"{noteTitle}\"",
-  "ko": "\"{noteTitle}\" 노트 업데이트에 실패했습니다"
+  "ko": "\"{noteTitle}\" 메모 업데이트에 실패했습니다"
  },
  "opportunitiesApp.notes.updateSuccess": {
   "en": "Successfully updated the note \"{noteTitle}\"",
-  "ko": "\"{noteTitle}\" 노트가 성공적으로 업데이트되었습니다"
+  "ko": "\"{noteTitle}\" 메모가 성공적으로 업데이트되었습니다"
  },
  "opportunitiesApp.opportunities.abandonedLabel": {
   "en": "abandoned",
@@ -300833,7 +300833,7 @@
  },
  "opportunitiesApp.opportunities.addEditOpp": {
   "en": "Add and edit {opportunity} details, tasks, notes and appointments.",
-  "ko": "{opportunity}의 세부 정보, 작업, 노트 및 예약을 추가하고 편집하세요."
+  "ko": "{opportunity}의 세부 정보, 작업, 메모 및 예약을 추가하고 편집하세요."
  },
  "opportunitiesApp.opportunities.addFollowers": {
   "en": "Add followers",
@@ -301241,7 +301241,7 @@
  },
  "opportunitiesApp.opportunities.dndEnabled": {
   "en": "DND is enabled for this contact, Please disable DND for this contact to make a call",
-  "ko": "이 연락처에 대해 DND가 활성화되어 있습니다. 전화를 걸려면 이 연락처의 DND를 비활성화하세요"
+  "ko": "이 연락처에 대해 수신거부가 활성화되어 있습니다. 전화를 걸려면 이 연락처의 수신거부를 비활성화하세요"
  },
  "opportunitiesApp.opportunities.doNotReloadThisWindowWhileExportIsInProgress": {
   "en": "Do not reload this window or leave Opportunities while export is in progress",
@@ -302181,7 +302181,7 @@
  },
  "opportunitiesApp.opportunities.notesTh": {
   "en": "notes",
-  "ko": "노트"
+  "ko": "메모"
  },
  "opportunitiesApp.opportunities.numberOfColumns": {
   "en": "NUMBER OF COLUMNS",
@@ -313873,7 +313873,7 @@
  },
  "reputationApp.reputation.reputationReviewRequests.errorCodes.E-REVIEW-REQUEST-CONTACT-002": {
   "en": "DND is enabled for the contact",
-  "ko": "이 연락처는 방해 금지(DND)가 켜져 있습니다"
+  "ko": "이 연락처는 수신거부가 켜져 있습니다"
  },
  "reputationApp.reputation.reputationReviewRequests.errorCodes.E-REVIEW-REQUEST-CONTACT-004": {
   "en": "Contact does not have a Phone Number",
@@ -315109,7 +315109,7 @@
  },
  "reputationApp.reputation.sendReviewRequestModal.reviewRequestModeSMSContactDND": {
   "en": "Cannot send SMS review requests as Contact is marked as DND",
-  "ko": "연락처가 방해 금지(DND)로 설정되어 SMS 리뷰 요청을 보낼 수 없습니다"
+  "ko": "연락처가 수신거부로 설정되어 SMS 리뷰 요청을 보낼 수 없습니다"
  },
  "reputationApp.reputation.sendReviewRequestModal.reviewRequestModeSMSDisabled": {
   "en": "SMS Review Requests are disabled. You can enable them here:",
@@ -315125,7 +315125,7 @@
  },
  "reputationApp.reputation.sendReviewRequestModal.reviewRequestModeWhatsAppAndSmsDnd": {
   "en": "Cannot send SMS and WhatsApp review requests as Contact is marked as DND",
-  "ko": "연락처가 방해 금지(DND)로 설정되어 SMS 및 WhatsApp 리뷰 요청을 보낼 수 없습니다"
+  "ko": "연락처가 수신거부로 설정되어 SMS 및 WhatsApp 리뷰 요청을 보낼 수 없습니다"
  },
  "reputationApp.reputation.sendReviewRequestModal.reviewRequestModeWhatsAppDisabled": {
   "en": "WhatsApp Review Requests are disabled. You can enable them here:",
