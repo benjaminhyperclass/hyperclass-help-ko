@@ -1,4 +1,5 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.10
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.11
+ * v4.21.11: '{{' 가 든 flat 값은 원본 t 대신 한국어를 보간 없이 그대로(원본 t 도 보간하지 않음 — 앱이 직접 치환).
  * v4.21.10: 멤버십 flat — vue-i18n 리터럴 {'x'} 를 글자로(화면에 "{'|'}" 가 그대로 보이던 문제), '{{' 가 든 값은 원본 t 에(안쪽만 채워지던 문제).
  * v4.21.9: 기간 선택기 월/연 보기(.hr-mm-yy-panel) — 머리 'Month'·'Year' → '월'·'연도', 월 목록 'Jan'… → '1월'….
  * v4.21.8: 새 디자인 시스템 날짜 선택 패널 — 머리 'Nov 2026'(노드 3개) → '2026년 11월', 요일 'Su'…→'일'…, 월 목록 'Jan'…→'1월'….
@@ -204,7 +205,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.21.10',
+    version: '4.21.11',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -417,8 +418,10 @@
           // 안전하다 — 컴포넌트가 이미 이 함수 참조를 캡처했을 수 있다.
           if (!suspended && core && core.flat && typeof key === 'string') {
             var ko = core.flat[key];
-            // v4.21.10: '{{mode}} 모드' 처럼 겹중괄호(앱이 직접 치환하는 자리)가 든 값은 원본 t 에 맡긴다 — 안쪽 {mode} 만 채워지는 것 방지
-            if (typeof ko === 'string' && ko.indexOf('{{') === -1) {
+            // v4.21.10~11: '{{mode}} 모드' 처럼 겹중괄호(앱이 t() 뒤에 직접 치환하는 자리)가 든 값은 보간하지 않고 그대로 돌려준다.
+            // 원본 t 도 인자와 상관없이 '{{mode}} Mode' 를 그대로 돌려준다(캐너리 실측) — 안쪽 {mode} 만 채워지던 v4.20 문제 방지.
+            if (typeof ko === 'string' && ko.indexOf('{{') !== -1) return unLit(ko);
+            if (typeof ko === 'string') {
               if (arguments.length === 1) return unLit(ko);
               var out = interpFlat(ko, arguments.length === 2 ? arguments[1] : null);
               if (out !== null) return out;
