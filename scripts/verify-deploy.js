@@ -24,8 +24,8 @@
 (() => {
   const EXPECT = {
     version: '4.21.6',      // 포인터 loader.stable 3eff1aa (2026-11-05 승격, 날짜·시각 레이어 D3)
-    revPrefix: 'e25aa74',   // 사전 v4.2.38 (2026-11-05)
-    textEntries: 9155,      // _text (별도로 _textScoped 1,375 — status().scopedEntries)
+    revPrefix: 'f3866b9',   // 사전 v4.2.40 (2026-11-05)
+    textEntries: 9183,      // _text (별도로 _textScoped 1,379 — status().scopedEntries)
   };
   const A = window.__hcKoApp;
   if (!A) {
