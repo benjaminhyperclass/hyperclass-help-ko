@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "version": "4.2.32",
+  "version": "4.2.33",
   "built": "2026-11-04",
-  "source": "1-04 agentStudioApp (telemetry) + round 2026-11-04 aiEmployeesApp (telemetry) + round 2026-11-04 authApp (telemetry) + round 2026-11-04 brandBoardsApp (telemetry) + round 2026-11-04 calendarComponentsApp (telemetry) + round 2026-11-04 chatWidgetApp (telemetry) + round 2026-11-04 clientPortalBuilder (telemetry) + round 2026-11-04 common (telemetry) + round 2026-11-04 contactsApp (telemetry) + round 2026-11-04 conversationsUtilitiesApp (telemetry) + round 2026-11-04 copilot (telemetry) + round 2026-11-04 copilotApp (telemetry) + round 2026-11-04 crmCommon (telemetry) + round 2026-11-04 crmObjectsSettingsApp (telemetry) + round 2026-11-04 domainResellingApp (telemetry) + round 2026-11-04 formSurveyApp (telemetry) + round 2026-11-04 ghlEmailBuilderCommon (telemetry) + round 2026-11-04 integrationsApp (telemetry) + round 2026-11-04 launchpadApp (telemetry) + round 2026-11-04 locationsApp (telemetry) + round 2026-11-04 onboardingApp (telemetry) + round 2026-11-04 opportunitiesApp (telemetry) + round 2026-11-04 powerDialerApp (telemetry) + round 2026-11-04 productsApp (telemetry) + round 2026-11-04 proposalCommon (telemetry) + round 2026-11-04 reportingApp (telemetry) + round 2026-11-04 reputationApp (telemetry) + round 2026-11-04 schemaMarkupApp (telemetry) + round 2026-11-04 socialPlannerApp (telemetry) + round 2026-11-04 storeWidgetApp (telemetry) + round 2026-11-04 superagentsApp (telemetry) + round 2026-11-04 usersMicroApp (telemetry) + round 2026-11-04 wordpressApp (telemetry) · 라운드 v4.2.29 독립 검수 4명(3,909문구) 교정 404건 · 라운드 나머지 2,801문구 독립 검수 교정 287건(crmObjectsSettingsApp 키 밀림 58 포함) · 연락처 상세 새 UI 데이터 라벨 _text 10(도로명 주소·우편번호·시간대·회사명·기본 정보·추가 정보 등)",
+  "source": "1-04 agentStudioApp (telemetry) + round 2026-11-04 aiEmployeesApp (telemetry) + round 2026-11-04 authApp (telemetry) + round 2026-11-04 brandBoardsApp (telemetry) + round 2026-11-04 calendarComponentsApp (telemetry) + round 2026-11-04 chatWidgetApp (telemetry) + round 2026-11-04 clientPortalBuilder (telemetry) + round 2026-11-04 common (telemetry) + round 2026-11-04 contactsApp (telemetry) + round 2026-11-04 conversationsUtilitiesApp (telemetry) + round 2026-11-04 copilot (telemetry) + round 2026-11-04 copilotApp (telemetry) + round 2026-11-04 crmCommon (telemetry) + round 2026-11-04 crmObjectsSettingsApp (telemetry) + round 2026-11-04 domainResellingApp (telemetry) + round 2026-11-04 formSurveyApp (telemetry) + round 2026-11-04 ghlEmailBuilderCommon (telemetry) + round 2026-11-04 integrationsApp (telemetry) + round 2026-11-04 launchpadApp (telemetry) + round 2026-11-04 locationsApp (telemetry) + round 2026-11-04 onboardingApp (telemetry) + round 2026-11-04 opportunitiesApp (telemetry) + round 2026-11-04 powerDialerApp (telemetry) + round 2026-11-04 productsApp (telemetry) + round 2026-11-04 proposalCommon (telemetry) + round 2026-11-04 reportingApp (telemetry) + round 2026-11-04 reputationApp (telemetry) + round 2026-11-04 schemaMarkupApp (telemetry) + round 2026-11-04 socialPlannerApp (telemetry) + round 2026-11-04 storeWidgetApp (telemetry) + round 2026-11-04 superagentsApp (telemetry) + round 2026-11-04 usersMicroApp (telemetry) + round 2026-11-04 wordpressApp (telemetry) · 라운드 v4.2.29 독립 검수 4명(3,909문구) 교정 404건 · 라운드 나머지 2,801문구 독립 검수 교정 287건(crmObjectsSettingsApp 키 밀림 58 포함) · 연락처 상세 새 UI 데이터 라벨 _text 10(도로명 주소·우편번호·시간대·회사명·기본 정보·추가 정보 등) · Objects 사물→오브젝트 9(이모지 분류 제외) · 설정 사이드바 Opportunities & Pipelines _text",
   "strings": 102718
  },
  "host": {
@@ -3075,7 +3075,7 @@
     "workflowSettings": "글로벌 워크플로우 설정",
     "contacts": "연락처",
     "contact": "연락처",
-    "customObjects": "사물",
+    "customObjects": "오브젝트",
     "restore": "복원",
     "tasks": "작업",
     "company": "회사",
@@ -85428,7 +85428,7 @@
       "socialMedia": "소셜 미디어",
       "workflows": "워크플로우",
       "wordpress": "워드프레스",
-      "objects": "사물",
+      "objects": "오브젝트",
       "associations": "연관",
       "courses": "코스",
       "lc-email": "LC 이메일",
@@ -89972,7 +89972,7 @@
      "workflowSettings": "글로벌 워크플로우 설정",
      "contacts": "연락처",
      "contact": "연락처",
-     "customObjects": "사물",
+     "customObjects": "오브젝트",
      "restore": "복원",
      "tasks": "작업",
      "company": "회사",
@@ -119118,7 +119118,7 @@
     "noRecordsYet": "아직 {name} 이(가) 없습니다",
     "noDataMsgImport": "새 {name} 을(를) 추가하거나 CSV 파일에서 기존 항목을 가져오세요.",
     "requirements": "요구 사항",
-    "customObjects": "사물",
+    "customObjects": "오브젝트",
     "clearSearch": "검색 지우기",
     "info": "정보",
     "editIcon": "아이콘 편집",
@@ -119617,7 +119617,7 @@
     "defaultLabels": {
      "object": "오브젝트",
      "label": "라벨",
-     "objects": "사물"
+     "objects": "오브젝트"
     },
     "loadingError": "오브젝트 옵션 불러오기 오류",
     "to": " 대상: ",
@@ -130514,7 +130514,7 @@
     "searchPlaceholder": "가져오기 검색",
     "filterSources": "출처",
     "filterStatuses": "상태",
-    "filterObjects": "사물",
+    "filterObjects": "오브젝트",
     "filterAll": "전체",
     "clearAllFilters": "필터 초기화",
     "sourceFile": "파일",
@@ -130530,7 +130530,7 @@
     "colFileName": "파일 이름",
     "colImportedBy": "가져온 사람",
     "colStatus": "상태",
-    "colObject": "사물",
+    "colObject": "오브젝트",
     "colProcessedCount": "처리된 수",
     "colProcessedCountTooltip": "처리된 총 레코드 수",
     "colTotalCount": "검색된 레코드",
@@ -130573,7 +130573,7 @@
     "skipped": "건너뜀",
     "errors": "오류",
     "importedWithWarnings": "경고와 함께 가져옴",
-    "columnObject": "사물",
+    "columnObject": "오브젝트",
     "columnRecordName": "레코드 이름",
     "columnMessage": "메시지",
     "noteAssociatedWith": "다음과 연결됨 ",
@@ -130592,7 +130592,7 @@
     "statusScheduled": "예약됨",
     "statusInProgress": "진행 중",
     "statusCancelled": "취소됨",
-    "chipObjectsLabel": "사물",
+    "chipObjectsLabel": "오브젝트",
     "chipStatusLabel": "상태",
     "chipObjectsAll": "전체",
     "chipStatusAll": "전체",
@@ -149277,7 +149277,8 @@
   "No fields in this folder": "이 폴더에 필드가 없습니다",
   "Created by:": "생성자:",
   "Add channels": "채널 추가",
-  "TikTok DM disabled": "TikTok DM 사용 안 함"
+  "TikTok DM disabled": "TikTok DM 사용 안 함",
+  "Opportunities & Pipelines": "기회 & 파이프라인"
  },
  "_textScoped": {
   "AM": "오전",

@@ -11425,7 +11425,7 @@
  },
  "common.sidebar.customObjects": {
   "en": "Objects",
-  "ko": "사물"
+  "ko": "오브젝트"
  },
  "common.sidebar.restore": {
   "en": "Restore",
@@ -199649,7 +199649,7 @@
  },
  "marketplace.appInfo.scopesCategory.objects": {
   "en": "Objects",
-  "ko": "사물"
+  "ko": "오브젝트"
  },
  "marketplace.appInfo.scopesCategory.associations": {
   "en": "Associations",
@@ -238937,7 +238937,7 @@
  },
  "common.customObjects": {
   "en": "Objects",
-  "ko": "사물"
+  "ko": "오브젝트"
  },
  "common.editIcon": {
   "en": "Edit icon",
@@ -240117,7 +240117,7 @@
  },
  "association.defaultLabels.objects": {
   "en": "Objects",
-  "ko": "사물"
+  "ko": "오브젝트"
  },
  "association.loadingError": {
   "en": "Error loading object options",
@@ -270733,7 +270733,7 @@
  },
  "importLanding.filterObjects": {
   "en": "Objects",
-  "ko": "사물"
+  "ko": "오브젝트"
  },
  "importLanding.filterAll": {
   "en": "All",
@@ -270797,7 +270797,7 @@
  },
  "importLanding.colObject": {
   "en": "Objects",
-  "ko": "사물"
+  "ko": "오브젝트"
  },
  "importLanding.colProcessedCount": {
   "en": "Processed count",
@@ -270945,7 +270945,7 @@
  },
  "importDetails.columnObject": {
   "en": "Objects",
-  "ko": "사물"
+  "ko": "오브젝트"
  },
  "importDetails.columnRecordName": {
   "en": "Record name",
@@ -271021,7 +271021,7 @@
  },
  "importDetails.chipObjectsLabel": {
   "en": "Objects",
-  "ko": "사물"
+  "ko": "오브젝트"
  },
  "importDetails.chipStatusLabel": {
   "en": "Status",
