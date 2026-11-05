@@ -143,3 +143,24 @@
 - `templateLibraryApp` 173 → 177
 - `voiceAiApp` 902 → 910
 
+## 2026-11-05 07:02 UTC — main 2170 → 2175 · manifest 2170.7730 → 2175.7748
+- `agentLogsApp` 905 → 922
+- `aiGrowthApp` 919 → 921
+- `appointmentModalApp` 625 → 627
+- `calendarSettingsApp` 616 → 629
+- `contactsHighriseApp` 2963 → 2975
+- `conversationsV2App` 2962 → 2975
+- `emailBuilderMfaApp` 402 → 413
+- `emailHomeV2App` 410 → 413
+- `emailPreviewApp` 397 → 413
+- `emailSequenceApp` 409 → 413
+- `eventsManagementApp` 2978 → 2989
+- `integrationsApp` 190 → 193
+- `marketplaceApp` 192 → 194
+- `membershipApp` 2232 → 2260
+- `opportunitiesApp` 2958 → 2977
+- `phoneIntegrationApp` 2240 → 2254
+- `socialPlannerApp` 377 → 380
+- `vibeEditorApp` 401 → 413
+- `voiceAiApp` 910 → 920
+
