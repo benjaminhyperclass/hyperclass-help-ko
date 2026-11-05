@@ -1,4 +1,5 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.7
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.8
+ * v4.21.8: 새 디자인 시스템 날짜 선택 패널 — 머리 'Nov 2026'(노드 3개) → '2026년 11월', 요일 'Su'…→'일'…, 월 목록 'Jan'…→'1월'….
  * v4.21.7: 기간 '0 minutes'·'56 seconds'·'3 days' → '0분'·'56초'·'3일'(노드 전체 일치) · _textScoped 범위에 hr 제목 글자(2xl·xl·lg).
  * v4.21.6: 상태 칩(n-tag) 안 시스템 열거값(Succeeded·Pending·Failed·Refunded·Paid·Draft·Active…) 허용 목록 — 사용자 태그는 그대로.
  * v4.21.5: _textScoped 범위에 새 디자인 시스템 체크박스·라디오 라벨(.hr-checkbox__label·.hr-radio__label) 추가.
@@ -201,7 +202,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.21.7',
+    version: '4.21.8',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -633,6 +634,35 @@
     var u = m[2].toLowerCase(), k = u.charAt(0) === 'm' ? (u.indexOf('mo') === 0 ? 'mo' : 'mi') : u.charAt(0);
     return KD_DUR_KO.hasOwnProperty(k) ? m[1] + KD_DUR_KO[k] : null;
   }
+  // v4.21.8: 새 디자인 시스템 날짜 선택 패널(hr-date-panel) — 머리 'Nov'·' '·'2026' 이 텍스트 노드 3개로 나뉘어 D3 가 못 잡는다.
+  // 노드 값만 바꾼다(노드를 갈아 끼우면 Vue 패치가 끊긴다): 월 노드 ← '2026년', 연 노드 ← '11월' → '2026년 11월'.
+  // 원래 값은 노드에 기억해 두고(Vue 는 값이 바뀔 때만 그 노드를 다시 쓴다) 바뀔 때마다 다시 맞춘다.
+  // 요일 머리 'Su'…'Sa' → '일'…'토', 월 목록 'Jan'… → '1월'…(월 단어는 패널 안에서만).
+  var KD_WD2 = { Su: '일', Mo: '월', Tu: '화', We: '수', Th: '목', Fr: '금', Sa: '토' };
+  var KD_PANEL_PRE = /^(?:[A-Za-z]{2,9}\.?|\d{4})$/;
+  function kdPanel(n, t) {
+    if (t.length > 10 || !KD_PANEL_PRE.test(t)) return false;              // 짧은 단어·연도만(비용)
+    var p = n.parentElement; if (!p || !p.matches) return false;
+    try {
+      if (p.matches('.hr-date-panel-month__text')) {
+        var tx = [], c = p.firstChild;
+        for (; c; c = c.nextSibling) if (c.nodeType === 3 && c.nodeValue.trim()) tx.push(c);
+        if (tx.length !== 2) return false;
+        var M = tx[0], Y = tx[1], mv = M.nodeValue.trim(), yv = Y.nodeValue.trim();
+        if (kdMon(mv)) M.__hcM = mv;
+        if (/^\d{4}$/.test(yv)) Y.__hcY = yv;
+        if (!M.__hcM || !Y.__hcY) return false;
+        var a = Y.__hcY + '년', b = kdMon(M.__hcM) + '월';
+        if (M.nodeValue !== a) M.nodeValue = a;
+        if (Y.nodeValue !== b) Y.nodeValue = b;
+        stats.dateHits++;
+        return true;
+      }
+      if (KD_WD2.hasOwnProperty(t) && p.matches('.hr-date-panel-weekdays__day')) { n.nodeValue = KD_WD2[t]; stats.dateHits++; return true; }
+      if (p.closest('.hr-date-panel,.hr-date-picker-panel') && kdMon(t) && /^[A-Za-z]{3,9}\.?$/.test(t)) { n.nodeValue = kdMon(t) + '월'; stats.dateHits++; return true; }
+    } catch (e) {}
+    return false;
+  }
   // 끄기: 사전 core._opts.dates === false(원격) 또는 localStorage.hcKoDates = '0'(브라우저별 진단)
   var kdFlag = null;   // core 가 바뀌면(onCoreStale) 다시 계산
   function kdOn() {
@@ -644,6 +674,7 @@
   function trText(n) {
     var s = n.nodeValue; if (!s || (!T && !TS)) return;
     var t = s.trim(); if (!t) return;
+    if (kdOn() && kdPanel(n, t)) return;                                    // v4.21.8 날짜 선택 패널(사전보다 먼저 — 'Nov' 는 _textScoped 에도 있다)
     var v = T ? T[t] : undefined, scoped = false, dated = false;
     if (v === undefined) {
       if (TS && (v = TS[t]) !== undefined) {
