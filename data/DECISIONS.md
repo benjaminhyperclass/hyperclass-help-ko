@@ -163,3 +163,18 @@ superagentsApp(Managed Agents 빌더·목록·채팅 레이어)의 제품명 표
 - 텔레메트리 라운드(v4.2.29, 6,698건) 중 노출이 큰 11개 네임스페이스 3,909문구를 독립 검수 4명이 전수 검토 → 404건 교정(v4.2.30). 결함률 약 10%: Location→서브 계정 미준수, Offer=오퍼·Certificate=수료증 미준수, 이메일 빌더의 DND(드래그 앤 드롭)를 수신거부로 오역, 'markdown'(가격 인하)→마크다운, 'Second'(둘째 주)→초, 자리표시자 뒤 고정 조사, 'LC' 브랜드 잔존 등.
 - 용어 추가: Topic = 토픽, Sentiment = 감성, 하위 계정 이전 = 이전, Attribution = 어트리뷰션(기존 결정 유지), 이메일 Unsubscribed = 수신거부(이메일 빌더 안 통일).
 - 남은 라운드 문구(약 2,800, agentLogs·schemaMarkup·crmObjectsSettings·aiEmployees 등)는 같은 방식으로 이어서 검수한다.
+
+## [확정] 날짜·시각 표기는 로더가 한국어 형식으로 바꾼다(D3) — 2026-11-05
+- 사용자 언어가 영어라 GHL 이 dayjs/moment 영어 형식으로 찍는다(연락처 표 'Sep 28, 2026'·'12:20 AM', 대화 'Sep 28', 캘린더 '08:00 PM – 10:00 PM'·'01 Sun', 소셜 플래너 '30 Oct 2026', 평판 'Today at 10:22 AM', 연락처 상세 'Created on: 5 Sep 2026, 6:17 PM (KST)' 등 전 화면 스윕 41형). 사전(_text)으로는 값마다 달라 못 잡는다.
+- 메인 로더 v4.21(D3): 텍스트 노드·title·aria-label **전체가** 날짜/시각(또는 범위)일 때만 바꾼다. 부분 일치 없음 — 문장 속 날짜·사용자 본문·입력 칸은 그대로.
+- 형식: `2026년 9월 28일 오후 2:07` · `오후 8:00 – 오후 10:00` · `2026년 11월 1일 – 7일` · `9월 28일 (월)` · 주간 머리글 `1일 (일)` · `오늘 오전 10:22` · 월/연 `2026년 11월`. 시(hour) 앞 0 은 뺀다(02:07 PM → 오후 2:07). 24시간제·숫자만 있는 값은 그대로. 시간대 약어 '(KST)' 는 유지.
+- 앞 라벨('Created on:')은 _text 에 있을 때만 함께 바꾼다(사전이 정한다).
+- 차트(ECharts 등) SVG 글자: _textScoped 범위에 포함(기회 상태 범례), 월·요일 약어 단독 → '12월'·'월', '범례 - 숫자'. 페이지 크기 '10 / page' → '10 / 페이지'.
+- 끄기: core `_opts.dates = false`(원격, 전 고객) · `localStorage.hcKoDates = '0'`(브라우저별 진단).
+- 포털은 별도(포털 로더 _rules formats: monthYear·dateString·metaDate·ampm). 포털 미니 달력 머리 'Nov 2026' 은 사전 v4.3.2 _rules + _css 순서 뒤집기로 '2026년 11월'.
+
+## [확정] 로더 포인터를 옮기기 전 jsDelivr 200 을 먼저 확인한다 — 2026-11-05
+- 사고: loader.next 를 새 머지 커밋 409990e 로 올렸더니 jsDelivr 가 `@409990e…/js/hc-ko-app-loader.js` 에 **403 "Package size exceeded the configured limit of 50 MB"** 를 돌려주고 그 응답이 캐시됐다 → 캐너리 r6JD 에서 로더가 안 떠 영어(부트스트랩 error `load-fail`). `purge.jsdelivr.net/gh/…@<sha>/<file>` 퍼지 후 200 → 복구(수 분).
+- 원인 추정: 레포 작업 트리 73MB(압축 18.8MB)로 jsDelivr 한도(50MB) 근처 — 새 커밋을 처음 가져올 때 간헐적으로 거절될 수 있다. 사전 포인터 봇은 이미 jsDelivr 대조 후 전진하지만, **로더 포인터(stable/next)는 사람이 옮기므로 이 확인이 없었다.**
+- 절차: 로더 커밋 머지 → 브라우저 콘솔에서 두 파일(`js/hc-ko-app-loader.js`·`js/hc-confirm-adapter.js`)을 `@<40자 SHA>` 로 fetch(`cache:'reload'`) → 200 이 아니면 `purge.jsdelivr.net` 같은 경로로 퍼지 후 재확인 → 그다음 포인터 커밋. 포털 포인터도 같다(`data/hc-ko-i18n.json`·포털 로더).
+- 후속(결정 필요): 레포 크기 줄이기 — `_source/hc-ko-app-reference.json`(13MB)·`js/dashboard-ko*.js`(레거시 5.5MB)·`data/ghl-i18n-*`(레거시 6MB) 를 별도 레포/브랜치로 옮기면 한도에서 멀어진다. 부트스트랩이 next 로드 실패 시 stable 로 떨어지게 하는 것도 후보(슬롯·엣지 변경이라 별도 절차).
