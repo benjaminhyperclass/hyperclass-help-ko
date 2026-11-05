@@ -185,3 +185,10 @@ superagentsApp(Managed Agents 빌더·목록·채팅 레이어)의 제품명 표
 - 번역 6갈래(배치 185, 자리표시자·'|'·브랜드·DNT 검사기) → 독립 검수 4갈래(결함만) → `scripts/round-merge.py --part host`(글로서리·DNT·복수형) → 자동 리뷰(ko-round-review) 지적 반영 → split·검증.
 - 이번 검수 결함률 약 0.5%(1,959 중 9) — 기존 화면 동일 원문 제안(suggest)을 주고, 맞지 않으면 문맥대로 바꾸게 한 것이 효과.
 - 용어: API 토큰 scopes = **범위**, Labs = **랩**, Voice AI = **음성 AI**(기존 화면 다수), Full name = 전체 이름(이름과 겹칠 때).
+
+## [확정] 앱 네임스페이스 전체를 런타임 카탈로그에서 뽑아 번역한다(텔레메트리 표본 대신) — 2026-11-05
+- 텔레메트리 en-missing 은 세션당 ns 마다 최대 150쌍 표본이라, 큰 앱(평판 관리 1,537키·이메일 빌더 4,155키)은 여러 날이 지나도 다 모이지 않는다. 그 화면을 r6JD 에서 열고 호스트 composer 의 `messages['en-US'][ns]` 에서 **아직 영어인 값만** 뽑는다(머지된 한국어는 자동 제외).
+- 원문 전달: 브라우저 → 텔레메트리 Worker `/r`(ns 한 행에 pairs ≤150, 이벤트 사이 2.5초, route 는 `:loc`) → `ko-telemetry-digest.yml` workflow_dispatch → `data/telemetry/en-missing/<ns>.json`. 손으로 옮겨 적지 않아 원문 오타가 없다. 작은 앱은 화면 출력 후 SHA-256(키·값 정렬)을 브라우저 원본과 대조해도 된다(certificatesApp 596키 일치).
+- 그다음은 종전대로: 사전에 없는 키만 → 직접 번역 → 독립 검수 → round-merge → 자동 리뷰 반영.
+- 2026-11-05: certificatesApp 588(v4.2.48) · reputationApp 662(v4.2.49). Worker 에 원문만 올려 둔 것(다음 라운드 입력, 11-06 09:17 집계에 포함): ghlEmailBuilderCommon 2,308 · agentStudioApp 269 · superagentsApp 128 · proposalCommon 101.
+
