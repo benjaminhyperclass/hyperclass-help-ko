@@ -1,4 +1,6 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.2
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.3
+ * v4.21.3: 차트(ECharts 등) SVG 글자 — _textScoped 범위에 포함(대시보드 기회 상태 'Open'·'Won'), 월·요일 약어 단독('Dec'→'12월'),
+ *          '범례 - 숫자'('Open - 123'), 페이지 크기 '10 / page' → '10 / 페이지'. 모두 D3 스위치(_opts.dates·hcKoDates)를 따른다.
  * v4.21.2: 날짜 앞 라벨·뒤 시간대 — 'Created on: 5 Sep 2026, 6:17 PM (KST)' → '생성일: 2026년 9월 5일 오후 6:17 (KST)'.
  *          라벨은 _text 에 있는 것만(사전이 정한다). 시간대 약어는 그대로 둔다.
  * v4.21.1: 캘린더 주간 머리글 '01 Sun' → '1일 (일)', 'Sun 01'·'Sun 11/1' 도 같은 레이어에서.
@@ -195,7 +197,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.21.2',
+    version: '4.21.3',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -513,7 +515,11 @@
     // v4.20.1: 새 디자인 시스템(hr-*)의 라벨류 — 연락처 상세 새 UI 의 섹션 머리글(Owner·Followers·Tags)·폼 라벨·드롭다운 트리거·선택값
     '.hr-text-medium,.hr-form-item-label__text,.hr-dropdown__trigger-wrapper,.hr-base-selection-label';
   var SCOPED_SKIP = 'td,[role="option"],[role="listbox"],[role="gridcell"],.n-tag,.tag,[contenteditable]';
+  // v4.21.3: 차트(ECharts·Highcharts·ApexCharts) SVG 글자도 단어 1개 범위 — 대시보드 기회 상태 'Open'·'Won' 범례 등
+  var SVG_NS = 'http://www.w3.org/2000/svg', CHART_SEL = '.vue-echarts-inner,.highcharts-container,.apexcharts-canvas,.echarts';
+  function inChart(p) { try { return !!p && p.namespaceURI === SVG_NS && !!p.closest && !!p.closest(CHART_SEL); } catch (e) { return false; } }
   function inScope(p) {
+    if (inChart(p)) return true;
     try {
       var e = p, depth = 0;
       while (e && e.nodeType === 1 && depth < 8) {
@@ -586,6 +592,20 @@
     if (a && (m = r[3].match(/^(\d{1,2})(?:,?\s+(\d{4}))?$/)) && /^\d+월 \d+일$/.test(a)) return (m[2] ? m[2] + '년 ' : '') + a + sep + (+m[1]) + '일';
     return null;
   }
+  // v4.21.3: 차트 SVG 글자 — 월·요일 약어 단독('Dec'→'12월', 'Mon'→'월'), '범례 - 숫자'('Open - 123'→'진행 중 - 123')
+  function kdChart(p, t) {
+    if (!inChart(p)) return null;
+    var k = t.toLowerCase().replace(/\.$/, ''), m;
+    if (KD_MON.hasOwnProperty(k)) return KD_MON[k] + '월';
+    if (KD_WD.hasOwnProperty(k)) return KD_WD[k];
+    if ((m = t.match(/^(.+?) - ([\d,.]+%?)$/))) {
+      var x = (T && typeof T[m[1]] === 'string') ? T[m[1]] : (TS && typeof TS[m[1]] === 'string') ? TS[m[1]] : null;
+      return x ? x + ' - ' + m[2] : null;
+    }
+    return null;
+  }
+  // v4.21.3: 페이지 크기 선택 '10 / page' → '10 / 페이지'
+  var KD_PAGE = /^(\d+) \/ page$/;
   // 끄기: 사전 core._opts.dates === false(원격) 또는 localStorage.hcKoDates = '0'(브라우저별 진단)
   var kdFlag = null;   // core 가 바뀌면(onCoreStale) 다시 계산
   function kdOn() {
@@ -603,8 +623,11 @@
         if (!inScope(n.parentElement)) return;
         scoped = true;
       } else {
-        if (!kdPre(t) || !kdOn() || (v = koDate(t)) === null) return;   // D3 날짜·시각(v4.21)
-        dated = true;
+        if (!kdOn()) return;                                                  // D3 날짜·시각(v4.21)·차트·페이지 크기
+        if (kdPre(t) && (v = koDate(t)) !== null) dated = true;
+        else if ((v = kdChart(n.parentElement, t)) !== null) dated = true;
+        else if (KD_PAGE.test(t)) { v = t.replace(KD_PAGE, '$1 / 페이지'); dated = true; }
+        else return;
       }
     }
     if (skipNode(n)) return;
