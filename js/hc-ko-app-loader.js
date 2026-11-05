@@ -1,4 +1,5 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.3
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.4
+ * v4.21.4: 날짜 앞 구분 기호·괄호 없는 시간대 — 감사 로그 '- 8:41 PM KST' → '- 오후 8:41 KST'.
  * v4.21.3: 차트(ECharts 등) SVG 글자 — _textScoped 범위에 포함(대시보드 기회 상태 'Open'·'Won'), 월·요일 약어 단독('Dec'→'12월'),
  *          '범례 - 숫자'('Open - 123'), 페이지 크기 '10 / page' → '10 / 페이지'. 모두 D3 스위치(_opts.dates·hcKoDates)를 따른다.
  * v4.21.2: 날짜 앞 라벨·뒤 시간대 — 'Created on: 5 Sep 2026, 6:17 PM (KST)' → '생성일: 2026년 9월 5일 오후 6:17 (KST)'.
@@ -197,7 +198,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.21.3',
+    version: '4.21.4',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -573,11 +574,15 @@
     return kdDate(s);
   }
   // v4.21.2: 앞 라벨('Created on: …' — 라벨은 _text 에 있어야 한다)·뒤 시간대('(KST)'·'(GMT+09:00)')를 떼고 본다
-  var KD_LABEL = /^([A-Z][A-Za-z ]{1,24}:)\s+(.+)$/, KD_TZ = /^(.+?)\s+(\((?:[A-Z]{2,5}|(?:GMT|UTC)[+-]\d{1,2}(?::\d{2})?)\))$/;
-  function kdPre(t) { return KD_PRE.test(t) || KD_LABEL.test(t); }
+  // v4.21.4: 앞 구분 기호('- 8:41 PM KST' — 감사 로그)·괄호 없는 시간대 약어(KST·PST·EDT·UTC·GMT+9)
+  var KD_LABEL = /^([A-Z][A-Za-z ]{1,24}:)\s+(.+)$/,
+    KD_TZ = /^(.+?)\s+(\((?:[A-Z]{2,5}|(?:GMT|UTC)[+-]\d{1,2}(?::\d{2})?)\)|[A-Z]{1,4}T|UTC|GMT(?:[+-]\d{1,2}(?::\d{2})?)?)$/,
+    KD_SEP = /^([-–·•|]\s+)(.+)$/;
+  function kdPre(t) { return KD_PRE.test(t) || KD_LABEL.test(t) || (KD_SEP.test(t) && KD_PRE.test(t.replace(KD_SEP, '$2'))); }
   function koDate(t) {
-    var lab = '', tz = '', m = t.match(KD_LABEL);
-    if (m) { if (!T || typeof T[m[1]] !== 'string') return null; lab = T[m[1]] + ' '; t = m[2]; }
+    var lab = '', tz = '', m = t.match(KD_SEP);
+    if (m) { lab = m[1]; t = m[2]; }
+    else if ((m = t.match(KD_LABEL))) { if (!T || typeof T[m[1]] !== 'string') return null; lab = T[m[1]] + ' '; t = m[2]; }
     if ((m = t.match(KD_TZ))) { t = m[1]; tz = ' ' + m[2]; }
     var v = kdCore(t);
     return v === null ? null : lab + v + tz;
