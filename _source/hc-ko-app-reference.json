@@ -387069,7 +387069,7 @@
  },
  "agentStudioApp.graphBuilder.globalConfigDrawer.autoPilot.reactivateLabel": {
   "en": "Reactivate bot after",
-  "ko": "다음 시간 후 봇 재활성화"
+  "ko": "지정한 시간 후 봇 재활성화"
  },
  "agentStudioApp.graphBuilder.globalConfigDrawer.autoPilot.sleepTriggerLabel": {
   "en": "Send bot to sleep when I send a:",
@@ -387517,7 +387517,7 @@
  },
  "agentStudioApp.graphBuilder.veraBuildSheet.eyebrow": {
   "en": "Build with AI",
-  "ko": "AI로 빌드"
+  "ko": "AI로 만들기"
  },
  "agentStudioApp.graphBuilder.veraBuildSheet.openManual": {
   "en": "Create by yourself",
@@ -387581,7 +387581,7 @@
  },
  "agentStudioApp.triggers.config.categories.opportunities": {
   "en": "Opportunities",
-  "ko": "기회 관리"
+  "ko": "기회"
  },
  "agentStudioApp.triggers.config.categories.scheduled": {
   "en": "Scheduled",
@@ -387861,7 +387861,7 @@
  },
  "superagentsApp.chatLayer.browserStatusOn": {
   "en": "On {host}",
-  "ko": "{host}에서"
+  "ko": "{host}에서 실행 중"
  },
  "superagentsApp.chatLayer.browserTabClosedTitle": {
   "en": "This chat's browser tab is closed",
@@ -387933,11 +387933,11 @@
  },
  "superagentsApp.chatLayer.pausedWaiting": {
   "en": "Paused · waiting on you",
-  "ko": "일시중지됨 · 확인 대기 중"
+  "ko": "일시중지됨 · 사용자 대기 중"
  },
  "superagentsApp.chatLayer.procDeleteBody": {
   "en": "The agent stops using it for everyone who uses this agent. This can't be undone.",
-  "ko": "이 에이전트를 사용하는 모든 사람에 대해 에이전트가 더 이상 이 절차를 사용하지 않습니다. 이 작업은 되돌릴 수 없습니다."
+  "ko": "이 에이전트를 사용하는 모든 사람에게서 이 절차가 더 이상 사용되지 않습니다. 이 작업은 되돌릴 수 없습니다."
  },
  "superagentsApp.chatLayer.procFromAutomation": {
   "en": "from an automation",
@@ -388269,7 +388269,7 @@
  },
  "proposalCommon.common.on": {
   "en": "On",
-  "ko": "날짜"
+  "ko": "지정일"
  },
  "proposalCommon.common.phoneNumber": {
   "en": "Phone Number",
@@ -392857,7 +392857,7 @@
  },
  "ghlEmailBuilderCommon.emailBuilder.defaultContent.footerUnsubscribeText": {
   "en": "You can {unsubscribeLink}.",
-  "ko": "{unsubscribeLink}를 할 수 있습니다."
+  "ko": "{unsubscribeLink}할 수 있습니다."
  },
  "ghlEmailBuilderCommon.emailBuilder.defaultContent.or": {
   "en": "or",
