@@ -25302,7 +25302,7 @@
       "transcriptLine": "{name} · 메시지 {number}",
       "retry": "다시 시도",
       "fieldLine": "{name} › {field}",
-      "noMatchesHint": "철자를 확인하거나 단어의 더 짧은 일부로 검색해 보세요."
+      "noMatchesHint": "철자를 확인하거나 검색어를 더 짧게 입력해 보세요."
      },
      "sentiment": {
       "negative": "부정적",
@@ -25950,7 +25950,7 @@
       "windowEnded": "기간 종료",
       "atRiskCount": "위험 {count}개",
       "dismissError": "모니터를 해제하지 못했습니다. 다시 시도해 주세요.",
-      "lastChecks": "최근 7회 일일 확인",
+      "lastChecks": "최근 7일간의 일일 확인",
       "ofGoal": "목표 수치의 {pct}%",
       "subtitle": "선택한 기간별로 모니터링 중인 수치",
       "trendValue": "값"
@@ -33942,7 +33942,7 @@
      },
      "saveAsDraft": "초안으로 저장",
      "testCall": {
-      "runsLive": "테스트 통화는 v{version}이 아닌 v{live}(라이브)로 실행됩니다. v{version}을(를) 테스트하려면 이 버전 기반 초안을 만드세요."
+      "runsLive": "테스트 통화는 v{version} 대신 라이브 버전(v{live})으로 실행됩니다. v{version}을(를) 테스트하려면 이 버전 기반 초안을 만드세요."
      },
      "toasts": {
       "draftPublished": "v{version}을(를) 게시했습니다. 이제 모든 통화에 이 버전이 사용됩니다.",
@@ -44946,7 +44946,7 @@
        "enabledSuccess": "{count}개 도메인에서 {setting}이(가) 활성화되었습니다.",
        "enabledSuccessOne": "{count}개 도메인에서 {setting}이(가) 활성화되었습니다."
       },
-      "bulkActions": "대량 액션",
+      "bulkActions": "일괄 작업",
       "clearSelection": "선택 해제",
       "columns": {
        "domain": "도메인",
@@ -63895,7 +63895,7 @@
         "description": "이 봇이 연락처에 배정되었을 때 응답을 허용할 채널을 선택하세요.",
         "selectAll": "전체 선택",
         "cancel": "취소",
-        "rowLabel": "워크플로우 및 봇 전환 채널"
+        "rowLabel": "워크플로우 및 전환 봇 채널"
        },
        "maxMessages": {
         "placeholder": "숫자 입력"
@@ -70720,7 +70720,7 @@
     "dark": "다크",
     "desktop": "데스크톱",
     "firstTimeHint": "인기 있는 클라이언트 {count}개를 골랐습니다. 자주 사용하는 클라이언트를 고정하세요. | 인기 있는 클라이언트 {count}개를 골랐습니다. 자주 사용하는 클라이언트를 고정하세요.",
-    "gmailClipHint": "Gmail은 {size}를 초과하는 이메일을 잘라서 표시합니다.",
+    "gmailClipHint": "Gmail은 {size} 초과 이메일을 잘라서 표시합니다.",
     "limitBodyNoUsage": "이 서브 계정은 받은편지함 미리보기를 모두 사용했습니다.",
     "tryAgainClient": "{client} 다시 시도",
     "updateClient": "{client} 업데이트"

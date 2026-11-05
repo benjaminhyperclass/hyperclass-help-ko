@@ -374317,7 +374317,7 @@
  },
  "agentLogsApp.agentLogs.logDetail.search.noMatchesHint": {
   "en": "Check the spelling, or search a shorter part of the word.",
-  "ko": "철자를 확인하거나 단어의 더 짧은 일부로 검색해 보세요."
+  "ko": "철자를 확인하거나 검색어를 더 짧게 입력해 보세요."
  },
  "agentLogsApp.agentLogs.metrics.export.columns.agentName": {
   "en": "Agent",
@@ -374549,7 +374549,7 @@
  },
  "agentLogsApp.agentLogs.monitor.targets.lastChecks": {
   "en": "Last 7 daily checks",
-  "ko": "최근 7회 일일 확인"
+  "ko": "최근 7일간의 일일 확인"
  },
  "agentLogsApp.agentLogs.monitor.targets.ofGoal": {
   "en": "{pct}% of the number",
@@ -374569,7 +374569,7 @@
  },
  "aiEmployeesApp.conversationAI.createEmployee.botSettings.form.contactAssignmentChannels.rowLabel": {
   "en": "Workflow & Transfer bot channels",
-  "ko": "워크플로우 및 봇 전환 채널"
+  "ko": "워크플로우 및 전환 봇 채널"
  },
  "aiEmployeesApp.conversationAI.dashboard.direction.inbound": {
   "en": "Inbound",
@@ -375281,7 +375281,7 @@
  },
  "externalTrackingApp.externalTracking.settings.domains.bulkActions": {
   "en": "Bulk actions",
-  "ko": "대량 액션"
+  "ko": "일괄 작업"
  },
  "externalTrackingApp.externalTracking.settings.domains.clearSelection": {
   "en": "Clear selection",
@@ -377681,7 +377681,7 @@
  },
  "ghlEmailBuilderCommon.inboxPreview.gmailClipHint": {
   "en": "Gmail clips emails over {size}.",
-  "ko": "Gmail은 {size}를 초과하는 이메일을 잘라서 표시합니다."
+  "ko": "Gmail은 {size} 초과 이메일을 잘라서 표시합니다."
  },
  "ghlEmailBuilderCommon.inboxPreview.limitBodyNoUsage": {
   "en": "This sub-account has used all of its inbox previews.",
@@ -381809,7 +381809,7 @@
  },
  "voiceAiApp.builder.versioning.testCall.runsLive": {
   "en": "Test calls run v{live} (live), not v{version}. Create a draft from v{version} to test it.",
-  "ko": "테스트 통화는 v{version}이 아닌 v{live}(라이브)로 실행됩니다. v{version}을(를) 테스트하려면 이 버전 기반 초안을 만드세요."
+  "ko": "테스트 통화는 v{version} 대신 라이브 버전(v{live})으로 실행됩니다. v{version}을(를) 테스트하려면 이 버전 기반 초안을 만드세요."
  },
  "voiceAiApp.builder.versioning.toasts.draftPublished": {
   "en": "Published v{version}. Every call now uses it.",
