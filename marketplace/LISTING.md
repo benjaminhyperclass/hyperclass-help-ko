@@ -15,6 +15,7 @@ Korean Language Pack translates the HighLevel sub-account interface into profess
 
 - Covers 100,000+ interface strings: dashboard, contacts and contact details, conversations, calendars, opportunities, payments and invoices, automation, sites, memberships admin, reporting, settings and more.
 - One consistent glossary across every screen (e.g., Contact = 연락처, Opportunity = 기회, Workflow = 워크플로우), checked automatically for placeholders and terminology on every update.
+- Korean date and time formats: 'Sep 28, 2026 02:07 PM' becomes '2026년 9월 28일 오후 2:07' in tables, calendars and timelines.
 - White-label friendly: no third-party brand names are shown; platform references are neutral.
 - Always current: the translation dictionary is updated continuously as new screens ship — no reinstall needed.
 - Safe by design: text-only localization. It does not change how anything works, never reads or sends contact or user data, and can be switched off per browser with `?hcko=off`.
@@ -26,6 +27,7 @@ Not included: client portal / communities member sites (separate domains outside
 
 - 10만 개가 넘는 화면 문구: 대시보드, 연락처·연락처 상세, 대화, 캘린더, 기회, 결제·인보이스, 자동화, 사이트, 멤버십 관리, 리포팅, 설정 등
 - 모든 화면에 같은 용어(연락처·기회·워크플로우 등)를 쓰고, 갱신할 때마다 자리표시자·용어를 자동 검사합니다.
+- 날짜·시각도 한국어 형식으로 보여 줍니다(예: 2026년 9월 28일 오후 2:07 — 표·캘린더·타임라인).
 - 화이트라벨에 맞게 외부 브랜드명을 노출하지 않습니다.
 - 새 화면이 나오면 사전이 계속 갱신됩니다. 다시 설치할 필요가 없습니다.
 - 문구만 바꿉니다. 기능은 그대로이고, 연락처·사용자 데이터를 읽거나 보내지 않습니다. 주소에 `?hcko=off` 를 붙이면 그 브라우저에서 꺼집니다.
@@ -41,7 +43,7 @@ Not included: client portal / communities member sites (separate domains outside
 This app ships one Custom JS script (agency distribution) that localizes the sub-account UI into Korean.
 
 How it works
-- It merges Korean messages into the app's existing vue-i18n instances (`mergeLocaleMessage`) and replaces a fixed list of exact-match UI labels. It does not change any behaviour, routes or API calls.
+- It merges Korean messages into the app's existing vue-i18n instances (`mergeLocaleMessage`) and replaces a fixed list of exact-match UI labels. Text nodes that consist entirely of an English date/time (e.g. 'Sep 28, 2026 02:07 PM') are re-formatted in Korean for display only. It does not change any behaviour, routes, input values or API calls.
 - All executable code is inside the reviewed script (no remote scripts, no dynamic imports, no eval/new Function, no console.log, not obfuscated).
 - It downloads only **static JSON translation data**, read-only, from a public GitHub repository pinned to an immutable commit:
   - `https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@<commit>/data/hc-ko-app-core.json` (and `hc-ko-app-apps.json`)
