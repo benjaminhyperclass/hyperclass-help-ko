@@ -873,6 +873,7 @@
  "waitSchedule.errNoTiming": "Step \"{label}\" needs a timing rule or a resume time.",
  "waitSchedule.eventFallback": "the event",
  "waitSchedule.eventName": "Event",
+ "waitSchedule.ifBadge": "IF",
  "waitSchedule.measuredFrom": "Measured from",
  "waitSchedule.moreActions": "+{count} more",
  "waitSchedule.noActionYet": "No action yet",
