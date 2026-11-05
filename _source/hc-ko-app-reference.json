@@ -384218,5 +384218,2653 @@
  "certificatesApp.layers.invalidHandlebarsTooltip": {
   "en": "Invalid custom fields.",
   "ko": "올바르지 않은 커스텀 필드입니다."
+ },
+ "reputationApp.reputation.commonErrorMessages.deleteErrorMsg": {
+  "en": "An error occurred while deleting. Please try again.",
+  "ko": "삭제하는 중 오류가 발생했습니다. 다시 시도해 주세요."
+ },
+ "reputationApp.reputation.commonErrorMessages.errorOccurredMsg": {
+  "en": "An Error Occurred",
+  "ko": "오류가 발생했습니다"
+ },
+ "reputationApp.reputation.commonErrorMessages.noLinkFound": {
+  "en": "No Link Found",
+  "ko": "링크를 찾을 수 없습니다"
+ },
+ "reputationApp.reputation.commonErrorMessages.shareErrorMsg": {
+  "en": "An error occurred while sharing. Please try again.",
+  "ko": "공유하는 중 오류가 발생했습니다. 다시 시도해 주세요."
+ },
+ "reputationApp.reputation.reputationCommon.analyzing": {
+  "en": "Analyzing",
+  "ko": "분석 중"
+ },
+ "reputationApp.reputation.reputationCommon.anonymous": {
+  "en": "Anonymous",
+  "ko": "익명"
+ },
+ "reputationApp.reputation.reputationCommon.autoResponses": {
+  "en": "Auto Responses",
+  "ko": "자동 응답"
+ },
+ "reputationApp.reputation.reputationCommon.back": {
+  "en": "Back",
+  "ko": "뒤로"
+ },
+ "reputationApp.reputation.reputationCommon.background": {
+  "en": "Background",
+  "ko": "배경"
+ },
+ "reputationApp.reputation.reputationCommon.bad": {
+  "en": "Bad",
+  "ko": "나쁨"
+ },
+ "reputationApp.reputation.reputationCommon.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "reputationApp.reputation.reputationCommon.carousel": {
+  "en": "Carousel",
+  "ko": "캐러셀"
+ },
+ "reputationApp.reputation.reputationCommon.charactersLower": {
+  "en": "characters",
+  "ko": "자"
+ },
+ "reputationApp.reputation.reputationCommon.clear": {
+  "en": "Clear",
+  "ko": "지우기"
+ },
+ "reputationApp.reputation.reputationCommon.clearing": {
+  "en": "Clearing",
+  "ko": "지우는 중"
+ },
+ "reputationApp.reputation.reputationCommon.clicked": {
+  "en": "Clicked",
+  "ko": "클릭됨"
+ },
+ "reputationApp.reputation.reputationCommon.clone": {
+  "en": "Clone",
+  "ko": "복제"
+ },
+ "reputationApp.reputation.reputationCommon.close": {
+  "en": "Close",
+  "ko": "닫기"
+ },
+ "reputationApp.reputation.reputationCommon.code": {
+  "en": "Code",
+  "ko": "코드"
+ },
+ "reputationApp.reputation.reputationCommon.colors": {
+  "en": "Colors",
+  "ko": "색상"
+ },
+ "reputationApp.reputation.reputationCommon.columns": {
+  "en": "Columns",
+  "ko": "열"
+ },
+ "reputationApp.reputation.reputationCommon.continue": {
+  "en": "Continue",
+  "ko": "계속"
+ },
+ "reputationApp.reputation.reputationCommon.custom": {
+  "en": "Custom",
+  "ko": "사용자 지정"
+ },
+ "reputationApp.reputation.reputationCommon.dark": {
+  "en": "Dark",
+  "ko": "다크"
+ },
+ "reputationApp.reputation.reputationCommon.date": {
+  "en": "Date",
+  "ko": "날짜"
+ },
+ "reputationApp.reputation.reputationCommon.dayPluralOption": {
+  "en": "Day(s)",
+  "ko": "일"
+ },
+ "reputationApp.reputation.reputationCommon.defaultCaps": {
+  "en": "DEFAULT",
+  "ko": "기본"
+ },
+ "reputationApp.reputation.reputationCommon.defaultSettings": {
+  "en": "Default Settings",
+  "ko": "기본 설정"
+ },
+ "reputationApp.reputation.reputationCommon.delivered": {
+  "en": "Delivered",
+  "ko": "전달됨"
+ },
+ "reputationApp.reputation.reputationCommon.description": {
+  "en": "Description",
+  "ko": "설명"
+ },
+ "reputationApp.reputation.reputationCommon.download": {
+  "en": "Download",
+  "ko": "다운로드"
+ },
+ "reputationApp.reputation.reputationCommon.dynamic": {
+  "en": "Dynamic",
+  "ko": "동적"
+ },
+ "reputationApp.reputation.reputationCommon.enterTextPlaceholder": {
+  "en": "Enter text",
+  "ko": "텍스트 입력"
+ },
+ "reputationApp.reputation.reputationCommon.examplePlaceholder": {
+  "en": "example:",
+  "ko": "예:"
+ },
+ "reputationApp.reputation.reputationCommon.failed": {
+  "en": "Failed",
+  "ko": "실패"
+ },
+ "reputationApp.reputation.reputationCommon.fixed": {
+  "en": "Fixed",
+  "ko": "고정"
+ },
+ "reputationApp.reputation.reputationCommon.font": {
+  "en": "Font",
+  "ko": "글꼴"
+ },
+ "reputationApp.reputation.reputationCommon.frame": {
+  "en": "Frame",
+  "ko": "프레임"
+ },
+ "reputationApp.reputation.reputationCommon.free": {
+  "en": "Free",
+  "ko": "무료"
+ },
+ "reputationApp.reputation.reputationCommon.fullStarAlt": {
+  "en": "full-star",
+  "ko": "꽉 찬 별"
+ },
+ "reputationApp.reputation.reputationCommon.go": {
+  "en": "Go",
+  "ko": "이동"
+ },
+ "reputationApp.reputation.reputationCommon.good": {
+  "en": "Good",
+  "ko": "좋음"
+ },
+ "reputationApp.reputation.reputationCommon.grid": {
+  "en": "Grid",
+  "ko": "그리드"
+ },
+ "reputationApp.reputation.reputationCommon.halfStarAlt": {
+  "en": "half-star",
+  "ko": "반 별"
+ },
+ "reputationApp.reputation.reputationCommon.heading": {
+  "en": "Heading",
+  "ko": "제목"
+ },
+ "reputationApp.reputation.reputationCommon.headline": {
+  "en": "Headline",
+  "ko": "헤드라인"
+ },
+ "reputationApp.reputation.reputationCommon.hourPluralOption": {
+  "en": "Hour(s)",
+  "ko": "시간"
+ },
+ "reputationApp.reputation.reputationCommon.hours": {
+  "en": "Hours",
+  "ko": "시간"
+ },
+ "reputationApp.reputation.reputationCommon.image": {
+  "en": "Image",
+  "ko": "이미지"
+ },
+ "reputationApp.reputation.reputationCommon.integrate": {
+  "en": "Integrate",
+  "ko": "연동"
+ },
+ "reputationApp.reputation.reputationCommon.landscape": {
+  "en": "Landscape",
+  "ko": "가로"
+ },
+ "reputationApp.reputation.reputationCommon.laptop": {
+  "en": "Laptop",
+  "ko": "노트북"
+ },
+ "reputationApp.reputation.reputationCommon.light": {
+  "en": "Light",
+  "ko": "라이트"
+ },
+ "reputationApp.reputation.reputationCommon.link": {
+  "en": "Link",
+  "ko": "링크"
+ },
+ "reputationApp.reputation.reputationCommon.listings": {
+  "en": "Listings",
+  "ko": "리스팅"
+ },
+ "reputationApp.reputation.reputationCommon.logo": {
+  "en": "Logo",
+  "ko": "로고"
+ },
+ "reputationApp.reputation.reputationCommon.me": {
+  "en": "Me",
+  "ko": "나"
+ },
+ "reputationApp.reputation.reputationCommon.message": {
+  "en": "Message",
+  "ko": "메시지"
+ },
+ "reputationApp.reputation.reputationCommon.negative": {
+  "en": "Negative",
+  "ko": "부정적"
+ },
+ "reputationApp.reputation.reputationCommon.new": {
+  "en": "new",
+  "ko": "신규"
+ },
+ "reputationApp.reputation.reputationCommon.newUpperCase": {
+  "en": "New",
+  "ko": "신규"
+ },
+ "reputationApp.reputation.reputationCommon.notConnected": {
+  "en": "Not connected",
+  "ko": "연결 안 됨"
+ },
+ "reputationApp.reputation.reputationCommon.notSpam": {
+  "en": "Not Spam",
+  "ko": "스팸 아님"
+ },
+ "reputationApp.reputation.reputationCommon.on": {
+  "en": "On",
+  "ko": "켜짐"
+ },
+ "reputationApp.reputation.reputationCommon.or": {
+  "en": "Or",
+  "ko": "또는"
+ },
+ "reputationApp.reputation.reputationCommon.overview": {
+  "en": "Overview",
+  "ko": "개요"
+ },
+ "reputationApp.reputation.reputationCommon.patterns": {
+  "en": "Patterns",
+  "ko": "패턴"
+ },
+ "reputationApp.reputation.reputationCommon.pausedCaps": {
+  "en": "PAUSED",
+  "ko": "일시 중지됨"
+ },
+ "reputationApp.reputation.reputationCommon.portrait": {
+  "en": "Portrait",
+  "ko": "세로"
+ },
+ "reputationApp.reputation.reputationCommon.proceed": {
+  "en": "Proceed",
+  "ko": "진행"
+ },
+ "reputationApp.reputation.reputationCommon.properties": {
+  "en": "Properties",
+  "ko": "속성"
+ },
+ "reputationApp.reputation.reputationCommon.question": {
+  "en": "Question",
+  "ko": "질문"
+ },
+ "reputationApp.reputation.reputationCommon.ratings": {
+  "en": "Ratings",
+  "ko": "평점"
+ },
+ "reputationApp.reputation.reputationCommon.recommendations": {
+  "en": "Recommendations",
+  "ko": "추천"
+ },
+ "reputationApp.reputation.reputationCommon.reconnect": {
+  "en": "Reconnect",
+  "ko": "다시 연결"
+ },
+ "reputationApp.reputation.reputationCommon.redo": {
+  "en": "Redo",
+  "ko": "다시 실행"
+ },
+ "reputationApp.reputation.reputationCommon.refresh": {
+  "en": "Refresh",
+  "ko": "새로고침"
+ },
+ "reputationApp.reputation.reputationCommon.reply": {
+  "en": "Reply",
+  "ko": "답글"
+ },
+ "reputationApp.reputation.reputationCommon.requirements": {
+  "en": "Requirements",
+  "ko": "요구 사항"
+ },
+ "reputationApp.reputation.reputationCommon.respondedOn": {
+  "en": "Responded On",
+  "ko": "응답일"
+ },
+ "reputationApp.reputation.reputationCommon.retry": {
+  "en": "Retry",
+  "ko": "다시 시도"
+ },
+ "reputationApp.reputation.reputationCommon.review": {
+  "en": "Review",
+  "ko": "리뷰"
+ },
+ "reputationApp.reputation.reputationCommon.reviews": {
+  "en": "Reviews",
+  "ko": "리뷰"
+ },
+ "reputationApp.reputation.reputationCommon.search": {
+  "en": "Search",
+  "ko": "검색"
+ },
+ "reputationApp.reputation.reputationCommon.secShort": {
+  "en": "sec",
+  "ko": "초"
+ },
+ "reputationApp.reputation.reputationCommon.share": {
+  "en": "Share",
+  "ko": "공유"
+ },
+ "reputationApp.reputation.reputationCommon.size": {
+  "en": "Size",
+  "ko": "크기"
+ },
+ "reputationApp.reputation.reputationCommon.source": {
+  "en": "Source",
+  "ko": "출처"
+ },
+ "reputationApp.reputation.reputationCommon.sourceLogo": {
+  "en": "Source logo",
+  "ko": "출처 로고"
+ },
+ "reputationApp.reputation.reputationCommon.summarize": {
+  "en": "Summarize",
+  "ko": "요약"
+ },
+ "reputationApp.reputation.reputationCommon.tryAgain": {
+  "en": "Try Again",
+  "ko": "다시 시도"
+ },
+ "reputationApp.reputation.reputationCommon.undo": {
+  "en": "Undo",
+  "ko": "실행 취소"
+ },
+ "reputationApp.reputation.reputationCommon.unknownCaps": {
+  "en": "UNKNOWN",
+  "ko": "알 수 없음"
+ },
+ "reputationApp.reputation.reputationCommon.unknownQuestion": {
+  "en": "Unknown Question",
+  "ko": "알 수 없는 질문"
+ },
+ "reputationApp.reputation.reputationCommon.warning": {
+  "en": "Warning",
+  "ko": "주의"
+ },
+ "reputationApp.reputation.reputationCommon.week": {
+  "en": "Week",
+  "ko": "주"
+ },
+ "reputationApp.reputation.reputationCommon.widgets": {
+  "en": "Widgets",
+  "ko": "위젯"
+ },
+ "reputationApp.reputation.reputationImageErrorMessages.maximumSize": {
+  "en": "Error: Maximum size allowed is 5MB",
+  "ko": "오류: 최대 5MB까지 허용됩니다"
+ },
+ "reputationApp.reputation.reputationImageUpload.imageFormat": {
+  "en": "SVG, PNG or JPG(max. 16x16px)",
+  "ko": "SVG, PNG 또는 JPG(최대 16x16px)"
+ },
+ "reputationApp.reputation.reputationOnboarding.getStarted": {
+  "en": "Get Started",
+  "ko": "시작하기"
+ },
+ "reputationApp.reputation.reputationOnboarding.steps.isReviewLinkSet": {
+  "en": "Setup Review Link",
+  "ko": "리뷰 링크 설정"
+ },
+ "reputationApp.reputation.reputationOnboarding.steps.isReviewRequestSent": {
+  "en": "Send your 1st Review Request",
+  "ko": "첫 리뷰 요청 보내기"
+ },
+ "reputationApp.reputation.reputationOnboarding.steps.isReviewWidgetCreated": {
+  "en": "Create a Review Widget",
+  "ko": "리뷰 위젯 만들기"
+ },
+ "reputationApp.reputation.reputationOnboarding.steps.isVideoReviewRequestSent": {
+  "en": "Send a Review Request",
+  "ko": "리뷰 요청 보내기"
+ },
+ "reputationApp.reputation.reputationOnboarding.steps.isVideoWidgetCreated": {
+  "en": "Create a Video Widget",
+  "ko": "비디오 위젯 만들기"
+ },
+ "reputationApp.reputation.reputationOverview.aggregateTimeFrames.lastNMonths": {
+  "en": "Last {period} Months",
+  "ko": "최근 {period}개월"
+ },
+ "reputationApp.reputation.reputationOverview.aggregateTimeFrames.lastWeek": {
+  "en": "Last Week",
+  "ko": "지난주"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.addBusinessHeader": {
+  "en": "Add Your Business to Compare",
+  "ko": "비교할 내 비즈니스 추가"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.aria.clearSelection": {
+  "en": "Clear selection",
+  "ko": "선택 지우기"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.average": {
+  "en": "Average",
+  "ko": "평균"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.averageRating": {
+  "en": "Average Rating",
+  "ko": "평균 평점"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.averageResponseTimeToolTip": {
+  "en": "Average response time to reviews (may be unavailable if no replies exist or due to limitations in review data fetching).",
+  "ko": "리뷰에 대한 평균 응답 시간입니다(답글이 없거나 리뷰 데이터 수집의 제한으로 표시되지 않을 수 있습니다)."
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.backCTA": {
+  "en": "Back to Competitor Analysis",
+  "ko": "경쟁사 분석으로 돌아가기"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.compareMessage": {
+  "en": "Compare with a Competitor",
+  "ko": "경쟁사와 비교"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.competitorAnalysisHeader": {
+  "en": "Competitor Analysis",
+  "ko": "경쟁사 분석"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.competitorLimitMessage": {
+  "en": "You Can Add Up to 3 Competitors",
+  "ko": "경쟁사는 최대 3곳까지 추가할 수 있습니다"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.countHeader": {
+  "en": "Why review counts may differ",
+  "ko": "리뷰 수가 다를 수 있는 이유"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.deleteBusinessHeader": {
+  "en": "Delete Your Business",
+  "ko": "내 비즈니스 삭제"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.deleteBusinessMessage": {
+  "en": "Are you sure you want to delete your business?",
+  "ko": "내 비즈니스를 삭제하시겠습니까?"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.editBusiness": {
+  "en": "Edit your Business",
+  "ko": "내 비즈니스 편집"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.errorDelete": {
+  "en": "Failed to Delete",
+  "ko": "삭제하지 못했습니다"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.errorLoad": {
+  "en": "Failed to load competitors",
+  "ko": "경쟁사를 불러오지 못했습니다"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.errorTrigger": {
+  "en": "Failed to trigger analysis",
+  "ko": "분석을 시작하지 못했습니다"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.landscapeGrid.analysisInProgress": {
+  "en": "Analysis in progress",
+  "ko": "분석 진행 중"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.landscapeGrid.analysisInProgressDescription": {
+  "en": "We'll populate insights once ready.",
+  "ko": "준비되면 인사이트를 채워 드립니다."
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.landscapeGrid.description": {
+  "en": "Discover what keywords reveal about you and your competitors.",
+  "ko": "키워드로 내 비즈니스와 경쟁사의 모습을 알아보세요."
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.landscapeGrid.errorDescription": {
+  "en": "Please try again.",
+  "ko": "다시 시도해 주세요."
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.landscapeGrid.noReviewsHeader": {
+  "en": "Reviews not retrieved",
+  "ko": "리뷰를 가져오지 못함"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.loadError": {
+  "en": "Failed to load reviews.",
+  "ko": "리뷰를 불러오지 못했습니다."
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.pitchPage.heatmapDescription": {
+  "en": "Quickly visualize customer sentiment by category. Use this to fine-tune your messaging and customer experience",
+  "ko": "카테고리별 고객 감성을 한눈에 보세요. 메시지와 고객 경험을 다듬는 데 활용하세요"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.pitchPage.heatmapHeader": {
+  "en": "Sentiment Heat-map",
+  "ko": "감성 히트맵"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.pitchPage.scoreDescription": {
+  "en": "Get a detailed breakdown of your website's performance load time, mobile optimisation, and web vitals",
+  "ko": "웹사이트의 로딩 시간, 모바일 최적화, 웹 바이탈 성능을 자세히 분석해 보세요"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.pitchPage.sourceHeader": {
+  "en": "Rating by Source",
+  "ko": "출처별 평점"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.pitchPage.subHeader": {
+  "en": "Insights You Can't Ignore",
+  "ko": "놓쳐서는 안 될 인사이트"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.reviewsCount": {
+  "en": "From {count} reviews",
+  "ko": "리뷰 {count}개 기준"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.search.noResultsFound": {
+  "en": "No results found",
+  "ko": "결과가 없습니다"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.searchBusiness": {
+  "en": "Search Business",
+  "ko": "비즈니스 검색"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.sentimentHeatmap.description": {
+  "en": "Visualize the emotional landscape with our sentiment heatmap, revealing the highs and lows of user feelings in real-time.",
+  "ko": "감성 히트맵으로 사용자 감정의 높고 낮음을 실시간으로 확인하세요."
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.sentimentHeatmap.errorMessage": {
+  "en": "Error occurred during sentiment analysis",
+  "ko": "감성 분석 중 오류가 발생했습니다"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.sentimentHeatmap.negative": {
+  "en": "Negative Reviews",
+  "ko": "부정적인 리뷰"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.sentimentHeatmap.neutral": {
+  "en": "Neutral Reviews",
+  "ko": "중립 리뷰"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.virtualBusiness.addressLabel": {
+  "en": "Address",
+  "ko": "주소"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.virtualBusiness.description": {
+  "en": "Add a virtual business to track competitors that don't have a Google Business Profile. Please provide as much information as possible.",
+  "ko": "Google 비즈니스 프로필이 없는 경쟁사를 추적하려면 가상 비즈니스를 추가하세요. 가능한 한 많은 정보를 입력해 주세요."
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.virtualBusiness.modalTitle": {
+  "en": "Add a Virtual Business Manually",
+  "ko": "가상 비즈니스 직접 추가"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.virtualBusiness.websiteLabel": {
+  "en": "Website",
+  "ko": "웹사이트"
+ },
+ "reputationApp.reputation.reputationOverview.connectProfiles.googleConnectPagesMatchError": {
+  "en": "We couldn't match every selected account to a Google Business Profile location. Refresh and try again.",
+  "ko": "선택한 계정 중 일부를 Google 비즈니스 프로필 위치와 연결하지 못했습니다. 새로고침한 뒤 다시 시도해 주세요."
+ },
+ "reputationApp.reputation.reputationOverview.connectProfiles.googleConnectPagesSubmitError": {
+  "en": "We couldn't finish linking your Google accounts. Try again in a moment.",
+  "ko": "Google 계정 연결을 마치지 못했습니다. 잠시 후 다시 시도해 주세요."
+ },
+ "reputationApp.reputation.reputationOverview.connectProfiles.hideForNow": {
+  "en": "Hide for now",
+  "ko": "지금은 숨기기"
+ },
+ "reputationApp.reputation.reputationOverview.connectProfiles.linkProfile": {
+  "en": "Link profile",
+  "ko": "프로필 연결"
+ },
+ "reputationApp.reputation.reputationOverview.connectProfiles.linkProfileError": {
+  "en": "We couldn't link this profile. Try again in a moment.",
+  "ko": "이 프로필을 연결하지 못했습니다. 잠시 후 다시 시도해 주세요."
+ },
+ "reputationApp.reputation.reputationOverview.connectProfiles.linkProfileRateLimitError": {
+  "en": "Too many requests. Please wait and try again.",
+  "ko": "요청이 너무 많습니다. 잠시 기다린 뒤 다시 시도해 주세요."
+ },
+ "reputationApp.reputation.reputationOverview.connectProfiles.linked": {
+  "en": "Linked",
+  "ko": "연결됨"
+ },
+ "reputationApp.reputation.reputationOverview.connectProfiles.matchMultiple": {
+  "en": "Multiple matches",
+  "ko": "일치 항목 여러 개"
+ },
+ "reputationApp.reputation.reputationOverview.connectProfiles.matchesModalConnectSelected": {
+  "en": "Connect selected account",
+  "ko": "선택한 계정 연결"
+ },
+ "reputationApp.reputation.reputationOverview.connectProfiles.matchesModalGoogleBusinessProfile": {
+  "en": "Google Business Profile",
+  "ko": "Google 비즈니스 프로필"
+ },
+ "reputationApp.reputation.reputationOverview.connectProfiles.matchesModalReviewsLabel": {
+  "en": "{count} reviews",
+  "ko": "리뷰 {count}개"
+ },
+ "reputationApp.reputation.reputationOverview.connectProfiles.matchesModalRowSelectAria": {
+  "en": "Select account {name}",
+  "ko": "계정 {name} 선택"
+ },
+ "reputationApp.reputation.reputationOverview.connectProfiles.matchesModalSubtitleMulti": {
+  "en": "Select accounts that belong to your business.",
+  "ko": "내 비즈니스에 속한 계정을 선택하세요."
+ },
+ "reputationApp.reputation.reputationOverview.connectProfiles.matchesModalTitle": {
+  "en": "Multiple accounts found on {platform}",
+  "ko": "{platform}에서 여러 계정을 찾았습니다"
+ },
+ "reputationApp.reputation.reputationOverview.connectProfiles.menuNotMyBusiness": {
+  "en": "Not my business",
+  "ko": "내 비즈니스 아님"
+ },
+ "reputationApp.reputation.reputationOverview.connectProfiles.openSidePanel": {
+  "en": "Connect profiles",
+  "ko": "프로필 연결"
+ },
+ "reputationApp.reputation.reputationOverview.connectProfiles.searchNoResults": {
+  "en": "No accounts match your search.",
+  "ko": "검색과 일치하는 계정이 없습니다."
+ },
+ "reputationApp.reputation.reputationOverview.connectProfiles.sectionAllListings": {
+  "en": "All accounts",
+  "ko": "모든 계정"
+ },
+ "reputationApp.reputation.reputationOverview.connectProfiles.sidePanelDescription": {
+  "en": "Link your accounts on review sites so you can gather feedback and respond in one place.",
+  "ko": "리뷰 사이트의 계정을 연결하면 한곳에서 피드백을 모으고 응답할 수 있습니다."
+ },
+ "reputationApp.reputation.reputationOverview.connectProfiles.sidePanelEmpty": {
+  "en": "No profile suggestions available yet.",
+  "ko": "아직 추천할 프로필이 없습니다."
+ },
+ "reputationApp.reputation.reputationOverview.connectProfiles.sidePanelFetchError": {
+  "en": "We couldn't load profile suggestions. Try again in a moment.",
+  "ko": "추천 프로필을 불러오지 못했습니다. 잠시 후 다시 시도해 주세요."
+ },
+ "reputationApp.reputation.reputationOverview.connectProfiles.sidePanelTitle": {
+  "en": "Connect your accounts for reviews",
+  "ko": "리뷰를 받을 계정 연결"
+ },
+ "reputationApp.reputation.reputationOverview.connectProfiles.sortMatchDesc": {
+  "en": "Match state (High to Low)",
+  "ko": "일치 상태(높은 순)"
+ },
+ "reputationApp.reputation.reputationOverview.connectProfiles.sortPlatformNameAsc": {
+  "en": "Platform-Name (A–Z)",
+  "ko": "플랫폼 이름(A–Z)"
+ },
+ "reputationApp.reputation.reputationOverview.connectProfiles.sortPlatformNameDesc": {
+  "en": "Platform-Name (Z–A)",
+  "ko": "플랫폼 이름(Z–A)"
+ },
+ "reputationApp.reputation.reputationOverview.connectProfiles.sortPlatformZa": {
+  "en": "Platform (Z–A)",
+  "ko": "플랫폼(Z–A)"
+ },
+ "reputationApp.reputation.reputationOverview.connectProfiles.viewMatches": {
+  "en": "View matches",
+  "ko": "일치 항목 보기"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.aiRecap.actionText": {
+  "en": "Check out AI Summary",
+  "ko": "AI 요약 보기"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.aiRecap.description": {
+  "en": "Get concise AI summaries of customer reviews from your selected pages and time frames!",
+  "ko": "선택한 페이지와 기간의 고객 리뷰를 AI가 간결하게 요약해 드립니다!"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.connectAccounts.cardStatus.connectPages": {
+  "en": "Connect pages",
+  "ko": "페이지 연결"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.connectAccounts.cardStatus.connected": {
+  "en": "Connected",
+  "ko": "연결됨"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.connectAccounts.cardStatus.login": {
+  "en": "Login",
+  "ko": "로그인"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.connectAccounts.carouselScrollPreviousAriaLabel": {
+  "en": "Show previous accounts",
+  "ko": "이전 계정 보기"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.connectAccounts.connectRecommended": {
+  "en": "Connect recommended",
+  "ko": "추천 계정 연결"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.connectAccounts.dismissAriaLabel": {
+  "en": "Collapse connect accounts banner",
+  "ko": "계정 연결 배너 접기"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.connectAccounts.googlePipelineLoadingAriaLabel": {
+  "en": "Updating Google Business Profile matches",
+  "ko": "Google 비즈니스 프로필 일치 항목 업데이트 중"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.dateRangeShortcuts.last6Months": {
+  "en": "Last 6 Months",
+  "ko": "최근 6개월"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.dateRangeShortcuts.thisMonth": {
+  "en": "This Month",
+  "ko": "이번 달"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.dateRangeShortcuts.thisWeek": {
+  "en": "This Week",
+  "ko": "이번 주"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.layoutSections.qrCodeCard": {
+  "en": "QR Code Scans",
+  "ko": "QR 코드 스캔"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.layoutSections.reviewCard": {
+  "en": "Reviews and Ratings Trend",
+  "ko": "리뷰 및 평점 추이"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.layoutSections.reviewRequestCard": {
+  "en": "Review Request",
+  "ko": "리뷰 요청"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.layoutSections.reviewResponseCard": {
+  "en": "Review Response",
+  "ko": "리뷰 응답"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.layoutSections.videoTestimonialsCard": {
+  "en": "Video Testimonials",
+  "ko": "비디오 후기"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.qrCode.emptyPositiveText": {
+  "en": "Generate QR Code",
+  "ko": "QR 코드 만들기"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.qrCode.subtitle": {
+  "en": "Track customer QR scans from physical touchpoints leading to reviews.",
+  "ko": "오프라인 접점에서 리뷰로 이어지는 고객의 QR 스캔을 추적하세요."
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.qrCode.title": {
+  "en": "QR code scans",
+  "ko": "QR 코드 스캔"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.reviewRatings.averageRatingsTitle": {
+  "en": "Average ratings",
+  "ko": "평균 평점"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.reviewRatings.sentimentAnalysisTitle": {
+  "en": "Sentiment analysis",
+  "ko": "감성 분석"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.reviewRatings.subtitle": {
+  "en": "Track how your ratings and review volume change over time.",
+  "ko": "평점과 리뷰 수가 시간에 따라 어떻게 바뀌는지 추적하세요."
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.reviewRequest.dataLabels.directRequest": {
+  "en": "Direct Request",
+  "ko": "직접 요청"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.reviewRequest.dataLabels.reviewClicks": {
+  "en": "Review Clicks",
+  "ko": "리뷰 클릭"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.reviewRequest.dataLabels.workflowAutomation": {
+  "en": "Workflow automation",
+  "ko": "워크플로우 자동화"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.reviewRequest.emptyDescription": {
+  "en": "Gather more customer feedback to enhance your online reputation.",
+  "ko": "고객 피드백을 더 모아 온라인 평판을 높이세요."
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.reviewRequest.emptyPositiveText": {
+  "en": "Send First Review Request",
+  "ko": "첫 리뷰 요청 보내기"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.reviewRequest.emptyReviewLinkClicksDescription": {
+  "en": "Begin collecting reviews by connecting your pages and sharing your review link",
+  "ko": "페이지를 연결하고 리뷰 링크를 공유해 리뷰를 모으기 시작하세요"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.reviewRequest.emptyReviewLinkClicksTitle": {
+  "en": "No review link clicks",
+  "ko": "리뷰 링크 클릭 없음"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.reviewResponse.alertDescription": {
+  "en": "Let AI take care of your reviews for you!",
+  "ko": "리뷰 관리는 AI에게 맡기세요!"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.reviewResponse.averageResponseTime": {
+  "en": "Average responses time",
+  "ko": "평균 응답 시간"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.reviewResponse.dataLabels.respondedManually": {
+  "en": "Responded manually",
+  "ko": "직접 응답함"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.reviewResponse.emptyPositiveText": {
+  "en": "Start Collecting Reviews",
+  "ko": "리뷰 수집 시작"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.reviewResponse.emptyTitle": {
+  "en": "No responses yet.",
+  "ko": "아직 응답이 없습니다."
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.reviewResponse.enableDripResponse": {
+  "en": "Enable Drip Response",
+  "ko": "순차 응답 활성화"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.reviewResponse.enableReviewsAI": {
+  "en": "Enable Reviews AI",
+  "ko": "리뷰 AI 활성화"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.reviewResponse.nonEligibleReviewsTooltipDescription": {
+  "en": "Reviews from sources other than GBP & FB cannot be responded from the platform",
+  "ko": "GBP와 FB 이외 출처의 리뷰에는 플랫폼에서 응답할 수 없습니다"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.reviewWidget.subtitle": {
+  "en": "Measure on-site review visibility, impressions, and submissions through widgets.",
+  "ko": "위젯을 통한 사이트 내 리뷰 노출, 조회, 제출을 측정하세요."
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.reviewWidget.viewsTitle": {
+  "en": "Views",
+  "ko": "조회"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.sectionConfig.dropdownOptionLabel": {
+  "en": "Section Config Dropdown Option",
+  "ko": "섹션 구성 드롭다운 옵션"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.sectionConfig.reorderSection": {
+  "en": "Reorder section",
+  "ko": "섹션 순서 변경"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.sectionConfig.showAndReorderSections": {
+  "en": "Show & Reorder Sections",
+  "ko": "섹션 표시 및 순서 변경"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.statisticCards.reviewRequests.whatsAppRequests": {
+  "en": "WhatsApp requests",
+  "ko": "WhatsApp 요청"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.statisticCards.reviewResponses.unrespondedReviews": {
+  "en": "Unresponded reviews",
+  "ko": "응답하지 않은 리뷰"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.statisticCards.reviewWidget.reviewLinkClicksViaWidget": {
+  "en": "Review link clicks via the widget",
+  "ko": "위젯을 통한 리뷰 링크 클릭"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.statisticCards.reviewWidget.totalWidgetLoads": {
+  "en": "Total loads of the review widget on the site",
+  "ko": "사이트에서 리뷰 위젯이 로드된 총 횟수"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.statisticCards.videoTestimonials.videoRequestSent": {
+  "en": "Video request sent",
+  "ko": "보낸 비디오 요청"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.videoTestimonials.requestSubmissionsTitle": {
+  "en": "Video request submissions",
+  "ko": "비디오 요청 제출"
+ },
+ "reputationApp.reputation.reputationOverview.dashboardV2.videoTestimonials.title": {
+  "en": "Video testimonials",
+  "ko": "비디오 후기"
+ },
+ "reputationApp.reputation.reputationOverview.invitesTrendCard.title": {
+  "en": "Invite Trends",
+  "ko": "초대 추이"
+ },
+ "reputationApp.reputation.reputationOverview.monthsShortForm.apr": {
+  "en": "Apr",
+  "ko": "4월"
+ },
+ "reputationApp.reputation.reputationOverview.monthsShortForm.feb": {
+  "en": "Feb",
+  "ko": "2월"
+ },
+ "reputationApp.reputation.reputationOverview.monthsShortForm.jan": {
+  "en": "Jan",
+  "ko": "1월"
+ },
+ "reputationApp.reputation.reputationOverview.monthsShortForm.jul": {
+  "en": "Jul",
+  "ko": "7월"
+ },
+ "reputationApp.reputation.reputationOverview.monthsShortForm.jun": {
+  "en": "Jun",
+  "ko": "6월"
+ },
+ "reputationApp.reputation.reputationOverview.monthsShortForm.nov": {
+  "en": "Nov",
+  "ko": "11월"
+ },
+ "reputationApp.reputation.reputationOverview.monthsShortForm.oct": {
+  "en": "Oct",
+  "ko": "10월"
+ },
+ "reputationApp.reputation.reputationOverview.notifications.reviewLinkCta": {
+  "en": "Review Links",
+  "ko": "리뷰 링크"
+ },
+ "reputationApp.reputation.reputationOverview.notifications.reviewLinkPresent": {
+  "en": "Your review link is set to {source}. You can view or change it anytime in Settings",
+  "ko": "리뷰 링크가 {source}(으)로 설정되어 있습니다. 설정에서 언제든 확인하거나 바꿀 수 있습니다"
+ },
+ "reputationApp.reputation.reputationOverview.penultimateTimeFrames.lastWeek": {
+  "en": "vs Previous Week",
+  "ko": "지지난주 대비"
+ },
+ "reputationApp.reputation.reputationOverview.penultimateTimeFrames.thisWeek": {
+  "en": "vs Last Week",
+  "ko": "지난주 대비"
+ },
+ "reputationApp.reputation.reputationOverview.reviewDetailsCard.title": {
+  "en": "Average Rating",
+  "ko": "평균 평점"
+ },
+ "reputationApp.reputation.reputationOverview.reviewSentimentCard.title": {
+  "en": "Sentiment",
+  "ko": "감성"
+ },
+ "reputationApp.reputation.reputationOverview.reviewsCountCard.title": {
+  "en": "Reviews Received",
+  "ko": "받은 리뷰"
+ },
+ "reputationApp.reputation.reputationOverview.reviewsTrendCards.title": {
+  "en": "Review Trends",
+  "ko": "리뷰 추이"
+ },
+ "reputationApp.reputation.reputationReviewRequests.actionButtons.stop": {
+  "en": "Stop",
+  "ko": "중지"
+ },
+ "reputationApp.reputation.reputationReviewRequests.configureReviewLinkCta": {
+  "en": "Configure Review Link",
+  "ko": "리뷰 링크 설정"
+ },
+ "reputationApp.reputation.reputationReviewRequests.emptyMessageTitle": {
+  "en": "Start Sending Review Requests",
+  "ko": "리뷰 요청 보내기 시작"
+ },
+ "reputationApp.reputation.reputationReviewRequests.emptyTablePrimaryMessage": {
+  "en": "You have not sent any review request yet",
+  "ko": "아직 보낸 리뷰 요청이 없습니다"
+ },
+ "reputationApp.reputation.reputationReviewRequests.errorCodes.101": {
+  "en": "Invalid contact or DND enabled.",
+  "ko": "연락처가 올바르지 않거나 수신거부가 켜져 있습니다."
+ },
+ "reputationApp.reputation.reputationReviewRequests.errorCodes.102": {
+  "en": "Email template contains unresolved errors.",
+  "ko": "이메일 템플릿에 해결되지 않은 오류가 있습니다."
+ },
+ "reputationApp.reputation.reputationReviewRequests.errorCodes.103": {
+  "en": "Failed to send SMS due to an error with the SMS provider.",
+  "ko": "SMS 제공업체 오류로 SMS를 보내지 못했습니다."
+ },
+ "reputationApp.reputation.reputationReviewRequests.errorCodes.105": {
+  "en": "SMS template contains unresolved errors.",
+  "ko": "SMS 템플릿에 해결되지 않은 오류가 있습니다."
+ },
+ "reputationApp.reputation.reputationReviewRequests.errorCodes.106": {
+  "en": "Review Request Stopped as Something is wrong with WhatsApp Template.",
+  "ko": "WhatsApp 템플릿에 문제가 있어 리뷰 요청이 중지되었습니다."
+ },
+ "reputationApp.reputation.reputationReviewRequests.errorCodes.110": {
+  "en": "An unknown error occurred.",
+  "ko": "알 수 없는 오류가 발생했습니다."
+ },
+ "reputationApp.reputation.reputationReviewRequests.errorCodes.E-REVIEW-REQUEST-COMMON-002": {
+  "en": "Review request has been disabled. Please check your settings",
+  "ko": "리뷰 요청이 비활성화되어 있습니다. 설정을 확인해 주세요"
+ },
+ "reputationApp.reputation.reputationReviewRequests.errorCodes.E-REVIEW-REQUEST-CONTACT-001": {
+  "en": "Something went wrong while interacting with the Contact",
+  "ko": "연락처를 처리하는 중 문제가 발생했습니다"
+ },
+ "reputationApp.reputation.reputationReviewRequests.errorCodes.E-REVIEW-REQUEST-CONTACT-003": {
+  "en": "Limit reached for sending Review Request to the Contact",
+  "ko": "이 연락처에 보낼 수 있는 리뷰 요청 한도에 도달했습니다"
+ },
+ "reputationApp.reputation.reputationReviewRequests.errorCodes.E-REVIEW-REQUEST-EMAIL-001": {
+  "en": "No Email Template Found. Please create one to continue",
+  "ko": "이메일 템플릿이 없습니다. 계속하려면 템플릿을 만들어 주세요"
+ },
+ "reputationApp.reputation.reputationReviewRequests.errorCodes.E-REVIEW-REQUEST-EMAIL-003": {
+  "en": "Email Template contains unresolved errors",
+  "ko": "이메일 템플릿에 해결되지 않은 오류가 있습니다"
+ },
+ "reputationApp.reputation.reputationReviewRequests.errorCodes.E-REVIEW-REQUEST-WHATSAPP-001": {
+  "en": "WhatsApp is not subscribed for the location",
+  "ko": "이 서브 계정은 WhatsApp을 구독하지 않았습니다"
+ },
+ "reputationApp.reputation.reputationReviewRequests.errorCodes.E-REVIEW-REQUEST-WHATSAPP-003": {
+  "en": "Failed to send WhatsApp Message due to an error with the WhatsApp provider",
+  "ko": "WhatsApp 제공업체 오류로 WhatsApp 메시지를 보내지 못했습니다"
+ },
+ "reputationApp.reputation.reputationReviewRequests.linkSettings.cardDescription": {
+  "en": "Configure your Review Link to collect feedback from customers",
+  "ko": "고객 피드백을 모을 리뷰 링크를 설정하세요"
+ },
+ "reputationApp.reputation.reputationReviewRequests.linkSettings.googleOptionHeading": {
+  "en": "Get Reviews on Google",
+  "ko": "Google에서 리뷰 받기"
+ },
+ "reputationApp.reputation.reputationReviewRequests.quickBooksIntegration": {
+  "en": "Send Review Requests for contacts",
+  "ko": "연락처에 리뷰 요청 보내기"
+ },
+ "reputationApp.reputation.reputationReviewRequests.tableData.delivered": {
+  "en": "Delivered",
+  "ko": "전달됨"
+ },
+ "reputationApp.reputation.reputationReviewRequests.tableData.failed": {
+  "en": "Failed",
+  "ko": "실패"
+ },
+ "reputationApp.reputation.reputationReviewRequests.tableData.opened": {
+  "en": "Opened",
+  "ko": "열람됨"
+ },
+ "reputationApp.reputation.reputationReviewRequests.tableData.sent": {
+  "en": "Sent",
+  "ko": "발송됨"
+ },
+ "reputationApp.reputation.reputationReviewRequests.tableData.undelivered": {
+  "en": "Undelivered",
+  "ko": "전달 안 됨"
+ },
+ "reputationApp.reputation.reputationReviewRequests.tableHeadings.contact": {
+  "en": "Invite Sent To",
+  "ko": "초대 받은 사람"
+ },
+ "reputationApp.reputation.reputationReviewRequests.tableHeadings.contactDetails": {
+  "en": "Email / Phone Number",
+  "ko": "이메일 / 전화번호"
+ },
+ "reputationApp.reputation.reputationReviewRequests.tableHeadings.dateSent": {
+  "en": "Date Sent",
+  "ko": "보낸 날짜"
+ },
+ "reputationApp.reputation.reputationReviewRequests.tableHeadings.source": {
+  "en": "Sent By",
+  "ko": "보낸 사람"
+ },
+ "reputationApp.reputation.reputationReviewRequests.uploadAttachments": {
+  "en": "Upload Attachments (Max: {count})",
+  "ko": "첨부 파일 업로드(최대 {count}개)"
+ },
+ "reputationApp.reputation.reputationReviewRequests.uploadDuplicateError": {
+  "en": "Duplicate files found",
+  "ko": "중복된 파일이 있습니다"
+ },
+ "reputationApp.reputation.reputationReviewRequests.uploadMessage": {
+  "en": "File Formats: JPG, PNG, JPEG. Max File Size: {size}",
+  "ko": "파일 형식: JPG, PNG, JPEG. 최대 파일 크기: {size}"
+ },
+ "reputationApp.reputation.reputationReviewRequests.uploadSizeError": {
+  "en": "File size is {size}. Maximum allowed is {allowedSize}.",
+  "ko": "파일 크기가 {size}입니다. 최대 {allowedSize}까지 허용됩니다."
+ },
+ "reputationApp.reputation.reputationReviews.addAccountMsg": {
+  "en": "Add Account",
+  "ko": "계정 추가"
+ },
+ "reputationApp.reputation.reputationReviews.aiDraft.autoPostInHoursMinutes": {
+  "en": "Auto-post in {hours}h {minutes}m",
+  "ko": "{hours}시간 {minutes}분 후 자동 게시"
+ },
+ "reputationApp.reputation.reputationReviews.aiDraft.holdReasonRiskyLanguage": {
+  "en": "Risky wording, review first",
+  "ko": "위험한 표현, 먼저 검토 필요"
+ },
+ "reputationApp.reputation.reputationReviews.aiDraft.regenerate": {
+  "en": "Regenerate",
+  "ko": "재생성"
+ },
+ "reputationApp.reputation.reputationReviews.aiSummary.dateRangeFilter": {
+  "en": "Date Range",
+  "ko": "기간"
+ },
+ "reputationApp.reputation.reputationReviews.aiSummary.description": {
+  "en": "AI-powered summaries of customer reviews, based on selected Review Pages and time ranges.",
+  "ko": "선택한 리뷰 페이지와 기간을 바탕으로 AI가 고객 리뷰를 요약합니다."
+ },
+ "reputationApp.reputation.reputationReviews.aiSummary.progressMessage": {
+  "en": "Summary generation in progress",
+  "ko": "요약 생성 중"
+ },
+ "reputationApp.reputation.reputationReviews.aiSummary.recapHeader": {
+  "en": "AI Recap",
+  "ko": "AI 요약"
+ },
+ "reputationApp.reputation.reputationReviews.aiSummary.refreshFailure": {
+  "en": "Failed to refresh AI summary",
+  "ko": "AI 요약을 새로고침하지 못했습니다"
+ },
+ "reputationApp.reputation.reputationReviews.aiSummary.reloadMessage": {
+  "en": "Reload / Refresh AI Review Summary",
+  "ko": "AI 리뷰 요약 다시 불러오기 / 새로고침"
+ },
+ "reputationApp.reputation.reputationReviews.aiSummary.summaryFailure": {
+  "en": "Summary generation failed",
+  "ko": "요약을 생성하지 못했습니다"
+ },
+ "reputationApp.reputation.reputationReviews.alreadySharedMsg": {
+  "en": "Already Shared",
+  "ko": "이미 공유됨"
+ },
+ "reputationApp.reputation.reputationReviews.averageReviews": {
+  "en": "Average Reviews",
+  "ko": "평균 평점"
+ },
+ "reputationApp.reputation.reputationReviews.currentFilterNoMatchReviewsMsg": {
+  "en": "Your current filter doesn't match any of the reviews",
+  "ko": "현재 필터와 일치하는 리뷰가 없습니다"
+ },
+ "reputationApp.reputation.reputationReviews.deletedReviewWarningDescription": {
+  "en": "This review no longer exists on Google and cannot be responded to. You can choose to remove it from your dashboard.",
+  "ko": "이 리뷰는 Google에서 더 이상 존재하지 않아 응답할 수 없습니다. 대시보드에서 제거할 수 있습니다."
+ },
+ "reputationApp.reputation.reputationReviews.deletedReviewWarningTitle": {
+  "en": "Review Not Found",
+  "ko": "리뷰를 찾을 수 없음"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.campaignCard.daysOfTheWeek.monday": {
+  "en": "Monday",
+  "ko": "월요일"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.campaignCard.daysOfTheWeek.saturday_short": {
+  "en": "Sat",
+  "ko": "토"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.campaignCard.daysOfTheWeek.sunday": {
+  "en": "Sunday",
+  "ko": "일요일"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.campaignCard.daysOfTheWeek.sunday_short": {
+  "en": "Sun",
+  "ko": "일"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.campaignCard.daysOfTheWeek.thursday_short": {
+  "en": "Thu",
+  "ko": "목"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.campaignCard.daysOfTheWeek.tuesday": {
+  "en": "Tuesday",
+  "ko": "화요일"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.campaignCard.daysOfTheWeek.tuesday_short": {
+  "en": "Tue",
+  "ko": "화"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.campaignCard.daysOfTheWeek.wednesday": {
+  "en": "Wednesday",
+  "ko": "수요일"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.campaignCard.monthlyFrequency.last": {
+  "en": "Last",
+  "ko": "마지막"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.campaignCard.monthlyFrequency.third": {
+  "en": "Third",
+  "ko": "셋째"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.campaignCard.nextReplyText.yesterday": {
+  "en": "yesterday",
+  "ko": "어제"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.campaignCard.progress.frequencyLabel": {
+  "en": "Frequency:",
+  "ko": "발송 주기:"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.campaignCard.progress.label": {
+  "en": "Progress",
+  "ko": "진행 상황"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.campaignCard.progress.nextReplyLabel": {
+  "en": "Next Reply:",
+  "ko": "다음 답글:"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.campaignCard.progress.targetLabel": {
+  "en": "Target:",
+  "ko": "대상:"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.campaignCard.progress.timeWindowLabel": {
+  "en": "Time Window:",
+  "ko": "시간대:"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.campaignCard.status.active": {
+  "en": "Active",
+  "ko": "활성"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.campaignCard.status.paused": {
+  "en": "Paused",
+  "ko": "일시 중지됨"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.campaignCard.tooltips.edit": {
+  "en": "Edit Campaign",
+  "ko": "캠페인 편집"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.campaignCard.tooltips.pause": {
+  "en": "Pause Campaign",
+  "ko": "캠페인 일시 중지"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.campaignCard.tooltips.resume": {
+  "en": "Resume Campaign",
+  "ko": "캠페인 재개"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.agentDropdown.error": {
+  "en": "Failed to load AI agents. Please try again.",
+  "ko": "AI 에이전트를 불러오지 못했습니다. 다시 시도해 주세요."
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.agentDropdown.triggerPlaceholder": {
+  "en": "Choose agent",
+  "ko": "에이전트 선택"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.agentPlatform.allSources": {
+  "en": "All Sources",
+  "ko": "모든 출처"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.agentRow.toneLabel": {
+  "en": "Tone:",
+  "ko": "어조:"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.agentRow.typeLabel": {
+  "en": "Type:",
+  "ko": "유형:"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.fields.dateShortcuts.last30Days": {
+  "en": "Last 30 days",
+  "ko": "최근 30일"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.fields.dateShortcuts.last7Days": {
+  "en": "Last 7 days",
+  "ko": "최근 7일"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.fields.nameLabel": {
+  "en": "Name",
+  "ko": "이름"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.fields.namePlaceholder": {
+  "en": "Ex: Holiday response campaign",
+  "ko": "예: 연휴 응답 캠페인"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.fields.occursOnDayOption": {
+  "en": "Day",
+  "ko": "일"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.fields.repliesPerDayLabel": {
+  "en": "Replies per day",
+  "ko": "하루 답글 수"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.fields.reviewDateRangeTooltip": {
+  "en": "Only reviews posted within this date range will be eligible for replies",
+  "ko": "이 기간 안에 게시된 리뷰에만 답글을 답니다"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.fields.startDateLabel": {
+  "en": "Start Date",
+  "ko": "시작일"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.fields.startOnOption": {
+  "en": "On",
+  "ko": "지정일"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.fields.timeWindowLabel": {
+  "en": "Time Window (Optional)",
+  "ko": "시간대(선택 사항)"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.fields.timeWindowLocalTimeSuffix": {
+  "en": "Local time",
+  "ko": "현지 시간"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.fields.timeWindowPrefix": {
+  "en": "Send replies between",
+  "ko": "답글 보내는 시간"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.reviewFilter.equal1": {
+  "en": "1 Star",
+  "ko": "별 1개"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.reviewFilter.equal5": {
+  "en": "5 Stars",
+  "ko": "별 5개"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.reviewFilter.greaterOrEqual2": {
+  "en": "2+ Stars",
+  "ko": "별 2개 이상"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.reviewFilter.greaterOrEqual3": {
+  "en": "3+ Stars",
+  "ko": "별 3개 이상"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.saveEditCta": {
+  "en": "Update Campaign",
+  "ko": "캠페인 업데이트"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.sections.campaignDetails": {
+  "en": "Campaign Details",
+  "ko": "캠페인 세부 정보"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.sections.frequencyTiming": {
+  "en": "Frequency & Timing",
+  "ko": "발송 주기 및 시간"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.sections.selectAgents": {
+  "en": "Select AI Agent(s)",
+  "ko": "AI 에이전트 선택"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.titleCreate": {
+  "en": "Create New Drip Campaign",
+  "ko": "새 순차 응답 캠페인 만들기"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.section.deleteModal.cancelCta": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.section.deleteModal.confirmCta": {
+  "en": "Delete Campaign",
+  "ko": "캠페인 삭제"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.section.deleteModal.title": {
+  "en": "Delete Campaign",
+  "ko": "캠페인 삭제"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.section.emptyStates.connectGoogleTitle": {
+  "en": "Connect Google business profile",
+  "ko": "Google 비즈니스 프로필 연결"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.section.emptyStates.createNewCampaignCta": {
+  "en": "Create a New Campaign",
+  "ko": "새 캠페인 만들기"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.section.emptyStates.genericDescription": {
+  "en": "Automate review replies with custom campaigns. Set goals, choose timing, and let Drip Mode do the rest.",
+  "ko": "맞춤 캠페인으로 리뷰 답글을 자동화하세요. 목표와 시간을 정하면 나머지는 순차 응답 모드가 처리합니다."
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.section.emptyStates.smartStartTitle": {
+  "en": "Let's start responding smarter 🚀",
+  "ko": "더 똑똑하게 응답해 볼까요 🚀"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.section.emptyStates.unrepliedReviewsDescription": {
+  "en": "Create a drip campaign to reply automatically and catch up at a steady pace.",
+  "ko": "순차 응답 캠페인을 만들면 자동으로 답글을 달아 밀린 리뷰를 꾸준히 따라잡을 수 있습니다."
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.section.errors.noEligibleReviews": {
+  "en": "No eligible reviews found for this date range. Adjust the dates to a period that contains unreplied reviews.",
+  "ko": "이 기간에는 답글을 달 수 있는 리뷰가 없습니다. 답글이 없는 리뷰가 포함된 기간으로 날짜를 조정하세요."
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.statsBar.pendingReviews": {
+  "en": "Pending reviews",
+  "ko": "대기 중인 리뷰"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.statsBar.repliedToday": {
+  "en": "Replied today",
+  "ko": "오늘 답글"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.statsBar.responsesSent": {
+  "en": "Responses sent",
+  "ko": "보낸 응답"
+ },
+ "reputationApp.reputation.reputationReviews.emptyMessageDescription": {
+  "en": "Once reviews start coming in, you can manage and respond here to build trust.",
+  "ko": "리뷰가 들어오기 시작하면 여기에서 관리하고 응답하며 신뢰를 쌓을 수 있습니다."
+ },
+ "reputationApp.reputation.reputationReviews.emptyMessageTitle": {
+  "en": "No Reviews Yet",
+  "ko": "아직 리뷰가 없습니다"
+ },
+ "reputationApp.reputation.reputationReviews.gmbDisconnectedAction": {
+  "en": "Please reconnect to sync new reviews.",
+  "ko": "새 리뷰를 동기화하려면 다시 연결하세요."
+ },
+ "reputationApp.reputation.reputationReviews.gmbDisconnectedMessage": {
+  "en": "Looks like your GBP account is Disconnected.",
+  "ko": "GBP 계정 연결이 끊어진 것 같습니다."
+ },
+ "reputationApp.reputation.reputationReviews.googleIntegrationReplyError": {
+  "en": "Unable to respond to that review. There seems to be an error with your Google Integration. Please reconnect it under Settings -> Integrations",
+  "ko": "이 리뷰에 응답할 수 없습니다. Google 연동에 오류가 있는 것 같습니다. 설정 -> 연동에서 다시 연결하세요"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.addPlatform": {
+  "en": "Add Platform",
+  "ko": "플랫폼 추가"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.addReviewsDescription": {
+  "en": "Submit customer reviews manually or via CSV to include them in your overall ratings.",
+  "ko": "고객 리뷰를 직접 입력하거나 CSV로 제출해 전체 평점에 포함하세요."
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.customerNameTooShort": {
+  "en": "Customer name must be at least 2 characters",
+  "ko": "고객 이름은 2자 이상이어야 합니다"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.dateDescription": {
+  "en": "Select Date of the Review",
+  "ko": "리뷰 날짜 선택"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.dateHeader": {
+  "en": "Date of the Review",
+  "ko": "리뷰 날짜"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.downloadFailed": {
+  "en": "Download Failed Records",
+  "ko": "실패한 레코드 다운로드"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.dragAndDrop": {
+  "en": "or drag and drop .csv max size {maxSize}MB",
+  "ko": "또는 .csv 파일을 끌어다 놓으세요(최대 {maxSize}MB)"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.emptyFile": {
+  "en": "CSV file is empty",
+  "ko": "CSV 파일이 비어 있습니다"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.enterCustomer": {
+  "en": "Enter Customer Name",
+  "ko": "고객 이름 입력"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.enterPageLink": {
+  "en": "Enter Page Link",
+  "ko": "페이지 링크 입력"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.enterPageName": {
+  "en": "Enter Page Name",
+  "ko": "페이지 이름 입력"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.enterPlatformName": {
+  "en": "Enter Platform Name",
+  "ko": "플랫폼 이름 입력"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.fileRequired": {
+  "en": "Please select a file to upload",
+  "ko": "업로드할 파일을 선택하세요"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.fileSize": {
+  "en": "File Size:",
+  "ko": "파일 크기:"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.fileSizeExceeded": {
+  "en": "File size ({size}MB) exceeds the {maxSize}MB limit",
+  "ko": "파일 크기({size}MB)가 한도 {maxSize}MB를 넘습니다"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.invalidCsv": {
+  "en": "Invalid CSV file",
+  "ko": "올바르지 않은 CSV 파일입니다"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.invalidFormat": {
+  "en": "Please upload a valid image file ({formats})",
+  "ko": "올바른 이미지 파일을 업로드하세요({formats})"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.invalidFormatSvg": {
+  "en": "Please upload a valid image file (PNG, JPG, SVG)",
+  "ko": "올바른 이미지 파일을 업로드하세요(PNG, JPG, SVG)"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.invalidProtocol": {
+  "en": "Page link must be a valid HTTP or HTTPS URL",
+  "ko": "페이지 링크는 올바른 HTTP 또는 HTTPS URL이어야 합니다"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.maxFileSize": {
+  "en": "Maximum file size: {maxSize}MB",
+  "ko": "최대 파일 크기: {maxSize}MB"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.maxPhotos": {
+  "en": "Maximum 5 photos",
+  "ko": "사진 최대 5장"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.pageLink": {
+  "en": "Page Link",
+  "ko": "페이지 링크"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.pageLinkRequired": {
+  "en": "Page link is required",
+  "ko": "페이지 링크는 필수입니다"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.pageName": {
+  "en": "Page Name",
+  "ko": "페이지 이름"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.pageNameRequired": {
+  "en": "Page name is required",
+  "ko": "페이지 이름은 필수입니다"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.platformIdRequired": {
+  "en": "Platform ID is required",
+  "ko": "플랫폼 ID는 필수입니다"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.platformLogo": {
+  "en": "Platform Logo",
+  "ko": "플랫폼 로고"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.platformName": {
+  "en": "Platform Name",
+  "ko": "플랫폼 이름"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.platformNameTooShort": {
+  "en": "Platform name must be at least 2 characters",
+  "ko": "플랫폼 이름은 2자 이상이어야 합니다"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.platformRequired": {
+  "en": "Please select a platform",
+  "ko": "플랫폼을 선택하세요"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.processing": {
+  "en": "Processing:",
+  "ko": "처리 중:"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.processingFailed": {
+  "en": "Processing failed. Please try again.",
+  "ko": "처리에 실패했습니다. 다시 시도해 주세요."
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.readError": {
+  "en": "Failed to read CSV file",
+  "ko": "CSV 파일을 읽지 못했습니다"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.removeProfilePicture": {
+  "en": "Remove profile picture",
+  "ko": "프로필 사진 제거"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.reviewImageCounter": {
+  "en": "{count}/5 • JPG, PNG (max {maxSize}MB each)",
+  "ko": "{count}/5 • JPG, PNG(각 최대 {maxSize}MB)"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.reviewerProfile": {
+  "en": "Reviewer profile",
+  "ko": "리뷰 작성자 프로필"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.startingProcessing": {
+  "en": "Starting processing...",
+  "ko": "처리를 시작하는 중..."
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.submitReview": {
+  "en": "Submit Review",
+  "ko": "리뷰 제출"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.success": {
+  "en": "Success:",
+  "ko": "성공:"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.totalRows": {
+  "en": "Total Rows:",
+  "ko": "전체 행:"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.uploadCsv": {
+  "en": "Upload CSV",
+  "ko": "CSV 업로드"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.uploadPhotos": {
+  "en": "Upload Photos",
+  "ko": "사진 업로드"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.uploadProfile": {
+  "en": "Upload Profile Picture",
+  "ko": "프로필 사진 업로드"
+ },
+ "reputationApp.reputation.reputationReviews.manualReviews.uploadReviews": {
+  "en": "Upload Reviews",
+  "ko": "리뷰 업로드"
+ },
+ "reputationApp.reputation.reputationReviews.noReviewsFoundMsg": {
+  "en": "No Reviews Found",
+  "ko": "리뷰가 없습니다"
+ },
+ "reputationApp.reputation.reputationReviews.noReviewsYetMsg": {
+  "en": "You have no reviews yet",
+  "ko": "아직 리뷰가 없습니다"
+ },
+ "reputationApp.reputation.reputationReviews.ratingFilterAllLabel": {
+  "en": "Any Rating",
+  "ko": "모든 평점"
+ },
+ "reputationApp.reputation.reputationReviews.ratingFilterEqualLabel": {
+  "en": "Only {rating} rated",
+  "ko": "{rating}점만"
+ },
+ "reputationApp.reputation.reputationReviews.reviewDeleteGeneric": {
+  "en": "Are you sure you want to delete this review?",
+  "ko": "이 리뷰를 삭제하시겠습니까?"
+ },
+ "reputationApp.reputation.reputationReviews.reviewIdLabel": {
+  "en": "Review Id",
+  "ko": "리뷰 ID"
+ },
+ "reputationApp.reputation.reputationReviews.reviewsAI.autoResponseDescription": {
+  "en": "Please configure the below settings for Automated responses",
+  "ko": "자동 응답을 위해 아래 설정을 구성하세요"
+ },
+ "reputationApp.reputation.reputationReviews.reviewsAI.filterOptionFourStars": {
+  "en": "4 stars or above",
+  "ko": "별 4개 이상"
+ },
+ "reputationApp.reputation.reputationReviews.reviewsAI.filterOptionOneStars": {
+  "en": "1 star or above",
+  "ko": "별 1개 이상"
+ },
+ "reputationApp.reputation.reputationReviews.reviewsAI.filterOptionThreeStars": {
+  "en": "3 stars or above",
+  "ko": "별 3개 이상"
+ },
+ "reputationApp.reputation.reputationReviews.reviewsAI.repliedBy": {
+  "en": "Replied By {entity}",
+  "ko": "답글 작성: {entity}"
+ },
+ "reputationApp.reputation.reputationReviews.reviewsAI.reviewAITitle": {
+  "en": "Reviews AI",
+  "ko": "리뷰 AI"
+ },
+ "reputationApp.reputation.reputationReviews.reviewsAI.reviewSourceFilterPlaceholder": {
+  "en": "Select your review platform for AI replies. Replies will be sent to all sources by default if nothing is selected",
+  "ko": "AI 답글을 보낼 리뷰 플랫폼을 선택하세요. 아무것도 선택하지 않으면 모든 출처에 답글을 보냅니다"
+ },
+ "reputationApp.reputation.reputationReviews.reviewsAI.starRatingFilterTitle": {
+  "en": "Auto Response Sent to",
+  "ko": "자동 응답 대상"
+ },
+ "reputationApp.reputation.reputationReviews.sendReplyPlaceholder": {
+  "en": "Send a reply",
+  "ko": "답글 보내기"
+ },
+ "reputationApp.reputation.reputationReviews.sourceFilterAllOptions": {
+  "en": "All {type} pages",
+  "ko": "모든 {type} 페이지"
+ },
+ "reputationApp.reputation.reputationReviews.spamReviews.featurePoints.point2": {
+  "en": "Users will have control to override the decision taken by the system.",
+  "ko": "시스템이 내린 판단은 사용자가 직접 바꿀 수 있습니다."
+ },
+ "reputationApp.reputation.reputationReviews.spamReviews.featurePoints.point3": {
+  "en": "Automatic Reviews Reply will not be sent for spam detected reviews.",
+  "ko": "스팸으로 감지된 리뷰에는 자동 리뷰 답글을 보내지 않습니다."
+ },
+ "reputationApp.reputation.reputationReviews.spamReviews.featurePoints.point4": {
+  "en": "Scheduled Review Replies can be stopped by manually marking reviews as spam.",
+  "ko": "리뷰를 직접 스팸으로 표시하면 예약된 리뷰 답글을 멈출 수 있습니다."
+ },
+ "reputationApp.reputation.reputationReviews.spamReviews.featurePoints.point6": {
+  "en": "Spam detected reviews will be not added in Overview Dashboard.",
+  "ko": "스팸으로 감지된 리뷰는 개요 대시보드에 포함되지 않습니다."
+ },
+ "reputationApp.reputation.reputationReviews.spamReviews.markAsSpamDescription": {
+  "en": "This review will no longer be included in your overall ratings. You can undo this action at any time.",
+  "ko": "이 리뷰는 더 이상 전체 평점에 포함되지 않습니다. 언제든 되돌릴 수 있습니다."
+ },
+ "reputationApp.reputation.reputationReviews.spamReviews.onDescription": {
+  "en": "Automatically Detects whether incoming review is spam or not",
+  "ko": "들어오는 리뷰가 스팸인지 자동으로 감지합니다"
+ },
+ "reputationApp.reputation.reputationReviews.spamReviews.subtitle": {
+  "en": "Spam Detection of Reviews",
+  "ko": "리뷰 스팸 감지"
+ },
+ "reputationApp.reputation.reputationReviews.spamReviews.title": {
+  "en": "Spam Reviews",
+  "ko": "스팸 리뷰"
+ },
+ "reputationApp.reputation.reputationReviews.title": {
+  "en": "Latest Reviews",
+  "ko": "최신 리뷰"
+ },
+ "reputationApp.reputation.reputationSettings.afterCheckInValidationDaysError": {
+  "en": "The maximum check in wait time is 30 days",
+  "ko": "최대 체크인 대기 시간은 30일입니다"
+ },
+ "reputationApp.reputation.reputationSettings.customSubmitCommon.maxRetries": {
+  "en": "Maximum retries",
+  "ko": "최대 재시도 횟수"
+ },
+ "reputationApp.reputation.reputationSettings.emailComponent.banner": {
+  "en": "You can now set a Unique Email Template for every retry attempt.",
+  "ko": "이제 재시도마다 다른 이메일 템플릿을 지정할 수 있습니다."
+ },
+ "reputationApp.reputation.reputationSettings.emailComponent.configuringTemplatesDescription": {
+  "en": "Please wait while your templates are getting ready.",
+  "ko": "템플릿을 준비하는 동안 잠시 기다려 주세요."
+ },
+ "reputationApp.reputation.reputationSettings.emailComponent.configuringTemplatesTitle": {
+  "en": "Configuring Templates",
+  "ko": "템플릿 구성 중"
+ },
+ "reputationApp.reputation.reputationSettings.emailComponent.createNewButton": {
+  "en": "Create New",
+  "ko": "새로 만들기"
+ },
+ "reputationApp.reputation.reputationSettings.emailComponent.customSubmitSendDelayTitle": {
+  "en": "When to send Email after check-in?",
+  "ko": "체크인 후 언제 이메일을 보낼까요?"
+ },
+ "reputationApp.reputation.reputationSettings.emailComponent.deleteTemplateConfirmation": {
+  "en": "This action is irreversible and the template will be permanently removed.",
+  "ko": "이 작업은 되돌릴 수 없으며 템플릿이 영구적으로 삭제됩니다."
+ },
+ "reputationApp.reputation.reputationSettings.emailComponent.deleteTemplateTitle": {
+  "en": "Delete Email Template",
+  "ko": "이메일 템플릿 삭제"
+ },
+ "reputationApp.reputation.reputationSettings.emailComponent.draftEmptyMessage": {
+  "en": "No email templates created for this Sub-Account. Create one to get started.",
+  "ko": "이 서브 계정에 만든 이메일 템플릿이 없습니다. 시작하려면 하나 만드세요."
+ },
+ "reputationApp.reputation.reputationSettings.emailComponent.noTemplatesSelectedMessage": {
+  "en": "No Templates Selected",
+  "ko": "선택한 템플릿이 없습니다"
+ },
+ "reputationApp.reputation.reputationSettings.emailComponent.selectTemplatesTitle": {
+  "en": "Select Templates",
+  "ko": "템플릿 선택"
+ },
+ "reputationApp.reputation.reputationSettings.emailComponent.setTemplatesButton": {
+  "en": "Set Email Templates",
+  "ko": "이메일 템플릿 설정"
+ },
+ "reputationApp.reputation.reputationSettings.emailComponent.tabTitle": {
+  "en": "Email Requests",
+  "ko": "이메일 요청"
+ },
+ "reputationApp.reputation.reputationSettings.emailComponent.templateOptions.delete": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "reputationApp.reputation.reputationSettings.emailComponent.templateStatus.live": {
+  "en": "Live",
+  "ko": "사용 중"
+ },
+ "reputationApp.reputation.reputationSettings.emailComponent.templateStatus.repeat-five": {
+  "en": "Retry 5",
+  "ko": "재시도 5"
+ },
+ "reputationApp.reputation.reputationSettings.emailComponent.templateStatus.repeat-four": {
+  "en": "Retry 4",
+  "ko": "재시도 4"
+ },
+ "reputationApp.reputation.reputationSettings.emailComponent.templateStatus.repeat-one": {
+  "en": "Retry 1",
+  "ko": "재시도 1"
+ },
+ "reputationApp.reputation.reputationSettings.emailComponent.templateStatus.repeat-three": {
+  "en": "Retry 3",
+  "ko": "재시도 3"
+ },
+ "reputationApp.reputation.reputationSettings.emailComponent.templateStatus.repeat-two": {
+  "en": "Retry 2",
+  "ko": "재시도 2"
+ },
+ "reputationApp.reputation.reputationSettings.emailComponent.title": {
+  "en": "Email Review Requests",
+  "ko": "이메일 리뷰 요청"
+ },
+ "reputationApp.reputation.reputationSettings.integrations.addIntegration": {
+  "en": "Add integration",
+  "ko": "연동 추가"
+ },
+ "reputationApp.reputation.reputationSettings.integrations.addPlatform": {
+  "en": "Add page",
+  "ko": "페이지 추가"
+ },
+ "reputationApp.reputation.reputationSettings.integrations.cardSubtitle": {
+  "en": "Add review platforms by entering the page link to import reviews.",
+  "ko": "페이지 링크를 입력해 리뷰 플랫폼을 추가하고 리뷰를 가져오세요."
+ },
+ "reputationApp.reputation.reputationSettings.integrations.disconnectAllAccountsButton": {
+  "en": "Disconnect Accounts",
+  "ko": "계정 연결 해제"
+ },
+ "reputationApp.reputation.reputationSettings.integrations.disconnectAllConfirmation": {
+  "en": "Are you sure you want to disconnect all accounts?",
+  "ko": "모든 계정의 연결을 해제하시겠습니까?"
+ },
+ "reputationApp.reputation.reputationSettings.integrations.disconnectAllForPlatform": {
+  "en": "Are you sure you want to disconnect all {platform} accounts?",
+  "ko": "모든 {platform} 계정의 연결을 해제하시겠습니까?"
+ },
+ "reputationApp.reputation.reputationSettings.integrations.disconnectSelectedConfirmation": {
+  "en": "Are you sure you want to disconnect selected accounts?",
+  "ko": "선택한 계정의 연결을 해제하시겠습니까?"
+ },
+ "reputationApp.reputation.reputationSettings.integrations.duplicateRequestError": {
+  "en": "You have already initiated an integration request. Please wait for the request to complete.",
+  "ko": "이미 연동 요청을 시작했습니다. 요청이 끝날 때까지 기다려 주세요."
+ },
+ "reputationApp.reputation.reputationSettings.integrations.editConnectionLink": {
+  "en": "Edit link",
+  "ko": "링크 편집"
+ },
+ "reputationApp.reputation.reputationSettings.integrations.enterLinkHeader": {
+  "en": "Please enter the link to your page.",
+  "ko": "페이지 링크를 입력해 주세요."
+ },
+ "reputationApp.reputation.reputationSettings.integrations.enterUrl": {
+  "en": "Enter URL",
+  "ko": "URL 입력"
+ },
+ "reputationApp.reputation.reputationSettings.integrations.fetchingReviews": {
+  "en": "Fetching Reviews",
+  "ko": "리뷰 가져오는 중"
+ },
+ "reputationApp.reputation.reputationSettings.integrations.integrationFailure": {
+  "en": "Failed to integrate. Please try again.",
+  "ko": "연동에 실패했습니다. 다시 시도해 주세요."
+ },
+ "reputationApp.reputation.reputationSettings.integrations.manageHeaderPages": {
+  "en": "Accounts",
+  "ko": "계정"
+ },
+ "reputationApp.reputation.reputationSettings.integrations.manageHeaderStatus": {
+  "en": "Status",
+  "ko": "상태"
+ },
+ "reputationApp.reputation.reputationSettings.integrations.manageSearchPages": {
+  "en": "Search pages",
+  "ko": "페이지 검색"
+ },
+ "reputationApp.reputation.reputationSettings.integrations.manageTabAll": {
+  "en": "All",
+  "ko": "전체"
+ },
+ "reputationApp.reputation.reputationSettings.integrations.modalText.description1": {
+  "en": "The page must be public (no login required).",
+  "ko": "페이지는 공개되어 있어야 합니다(로그인 불필요)."
+ },
+ "reputationApp.reputation.reputationSettings.integrations.modalText.description2": {
+  "en": "Cannot be a vendor profile.",
+  "ko": "판매자 프로필은 사용할 수 없습니다."
+ },
+ "reputationApp.reputation.reputationSettings.integrations.modalText.description3": {
+  "en": "Must be a business/product/listing review page",
+  "ko": "비즈니스·상품·리스팅 리뷰 페이지여야 합니다"
+ },
+ "reputationApp.reputation.reputationSettings.integrations.nAccountsShort": {
+  "en": "{n} Accounts",
+  "ko": "계정 {n}개"
+ },
+ "reputationApp.reputation.reputationSettings.integrations.oneAccountShort": {
+  "en": "1 Account",
+  "ko": "계정 1개"
+ },
+ "reputationApp.reputation.reputationSettings.integrations.onePageConnected": {
+  "en": "1 page connected",
+  "ko": "페이지 1개 연결됨"
+ },
+ "reputationApp.reputation.reputationSettings.integrations.onePageShort": {
+  "en": "1 Page",
+  "ko": "페이지 1개"
+ },
+ "reputationApp.reputation.reputationSettings.integrations.removeConnection": {
+  "en": "Remove Connection",
+  "ko": "연결 제거"
+ },
+ "reputationApp.reputation.reputationSettings.integrations.reviewFetchFailure": {
+  "en": "Something went wrong while fetching reviews. Please try again",
+  "ko": "리뷰를 가져오는 중 문제가 발생했습니다. 다시 시도해 주세요"
+ },
+ "reputationApp.reputation.reputationSettings.integrations.submissionReview": {
+  "en": "We'll review your submission soon!",
+  "ko": "제출하신 내용을 곧 검토하겠습니다!"
+ },
+ "reputationApp.reputation.reputationSettings.integrations.successfulIntegration": {
+  "en": "You have successfully connected",
+  "ko": "연결에 성공했습니다:"
+ },
+ "reputationApp.reputation.reputationSettings.integrations.thankYouTitle": {
+  "en": "Thank you for your suggestion!",
+  "ko": "제안해 주셔서 감사합니다!"
+ },
+ "reputationApp.reputation.reputationSettings.integrations.validUrl": {
+  "en": "Please enter a valid URL",
+  "ko": "올바른 URL을 입력하세요"
+ },
+ "reputationApp.reputation.reputationSettings.integrations.validationError": {
+  "en": "Please enter a valid URL for",
+  "ko": "올바른 URL을 입력하세요:"
+ },
+ "reputationApp.reputation.reputationSettings.integrations.viewConnection": {
+  "en": "View Connection",
+  "ko": "연결 보기"
+ },
+ "reputationApp.reputation.reputationSettings.qrCode.createButton": {
+  "en": "Create QR Code",
+  "ko": "QR 코드 만들기"
+ },
+ "reputationApp.reputation.reputationSettings.qrCode.createMessage": {
+  "en": "Create your QR Code now",
+  "ko": "지금 QR 코드를 만드세요"
+ },
+ "reputationApp.reputation.reputationSettings.qrCode.modalTitle": {
+  "en": "QR Code Editor",
+  "ko": "QR 코드 편집기"
+ },
+ "reputationApp.reputation.reputationSettings.qrCode.notifications.templateError": {
+  "en": "Error while saving the template",
+  "ko": "템플릿을 저장하는 중 오류가 발생했습니다"
+ },
+ "reputationApp.reputation.reputationSettings.qrCode.properties.aspectRatio": {
+  "en": "Recommended aspect ratio is",
+  "ko": "권장 가로세로 비율:"
+ },
+ "reputationApp.reputation.reputationSettings.qrCode.properties.imageUrl": {
+  "en": "Image URL",
+  "ko": "이미지 URL"
+ },
+ "reputationApp.reputation.reputationSettings.qrCode.properties.opacity": {
+  "en": "Opacity",
+  "ko": "불투명도"
+ },
+ "reputationApp.reputation.reputationSettings.qrCode.properties.textColor": {
+  "en": "Text Color",
+  "ko": "텍스트 색상"
+ },
+ "reputationApp.reputation.reputationSettings.qrCode.qrName": {
+  "en": "QR Name",
+  "ko": "QR 이름"
+ },
+ "reputationApp.reputation.reputationSettings.qrCode.switchModeDescription": {
+  "en": "Switching the editor mode will disrupt the layout, arrangement, and positioning of the added components. Would you like to proceed?",
+  "ko": "편집기 모드를 바꾸면 추가한 구성 요소의 레이아웃, 배치, 위치가 흐트러집니다. 계속하시겠습니까?"
+ },
+ "reputationApp.reputation.reputationSettings.qrCode.tableHeadings.actions": {
+  "en": "Actions",
+  "ko": "작업"
+ },
+ "reputationApp.reputation.reputationSettings.repeatRequestValidationDaysError": {
+  "en": "The maximum repeat request wait time is 90 days",
+  "ko": "최대 반복 요청 대기 시간은 90일입니다"
+ },
+ "reputationApp.reputation.reputationSettings.repeatRequestValidationHoursError": {
+  "en": "The maximum repeat request wait time is 2160 hours",
+  "ko": "최대 반복 요청 대기 시간은 2160시간입니다"
+ },
+ "reputationApp.reputation.reputationSettings.reviewLinkBalancing.autoBalanceButton": {
+  "en": "Auto Balance",
+  "ko": "자동 분배"
+ },
+ "reputationApp.reputation.reputationSettings.reviewLinkBalancing.configureBalanceButton": {
+  "en": "Configure Balance",
+  "ko": "분배 설정"
+ },
+ "reputationApp.reputation.reputationSettings.reviewLinkBalancing.note": {
+  "en": "Sets Percentage equally to all or you can update manually",
+  "ko": "모든 링크에 같은 비율을 지정하거나 직접 바꿀 수 있습니다"
+ },
+ "reputationApp.reputation.reputationSettings.reviewRequestBehaviorCard.bodyMsg": {
+  "en": "Decide what happens when you click the review request or check-in client button",
+  "ko": "리뷰 요청 또는 고객 체크인 버튼을 눌렀을 때의 동작을 정하세요"
+ },
+ "reputationApp.reputation.reputationSettings.reviewRequestBehaviorCard.headingMsg": {
+  "en": "When the review request button is clicked",
+  "ko": "리뷰 요청 버튼을 누르면"
+ },
+ "reputationApp.reputation.reputationSettings.reviewRequestBehaviorCard.title": {
+  "en": "Review Request Behavior",
+  "ko": "리뷰 요청 동작"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.agentTableColumnHeader.dateUpdated": {
+  "en": "Date Updated",
+  "ko": "업데이트 날짜"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.agentTableColumnHeader.name": {
+  "en": "Agent Name",
+  "ko": "에이전트 이름"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.agentTableColumnHeader.responses": {
+  "en": "Responses",
+  "ko": "응답"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.agentTableColumnHeader.tone": {
+  "en": "Tones",
+  "ko": "어조"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.aiAgentFormFields.footer": {
+  "en": "Footer",
+  "ko": "푸터"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.aiAgentFormFields.footerPlaceholder": {
+  "en": "Example: Thank you!",
+  "ko": "예: 감사합니다!"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.aiAgentFormFields.instructions": {
+  "en": "Agent Instructions",
+  "ko": "에이전트 지침"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.aiAgentFormFields.instructionsPlaceholder": {
+  "en": "Example: Generate an appropriate reply for a review. Follow this instructions while generating a reply: Keep the reply short and sweet!",
+  "ko": "예: 리뷰에 알맞은 답글을 작성하세요. 답글을 작성할 때 다음 지침을 따르세요: 짧고 친절하게!"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.aiAgentFormFields.languageTooltip": {
+  "en": "If set to 'Dynamic', the reply language will match the language of the review comment, with the selected language serving as a fallback. If set to 'Fixed', all replies will be in the selected language.",
+  "ko": "'동적'으로 설정하면 답글 언어가 리뷰 내용의 언어를 따르고, 선택한 언어는 대체 언어로 쓰입니다. '고정'으로 설정하면 모든 답글이 선택한 언어로 작성됩니다."
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.aiAgentFormFields.namePlaceholder": {
+  "en": "Give your Agent a Name",
+  "ko": "에이전트 이름을 정하세요"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.aiAgentFormFields.preview": {
+  "en": "AI Agent Response Preview",
+  "ko": "AI 에이전트 응답 미리보기"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.aiAgentFormFields.source": {
+  "en": "Review source",
+  "ko": "리뷰 출처"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.banner": {
+  "en": "You can now create AI-powered Review Agents to generate personalized reply suggestions!",
+  "ko": "이제 AI 리뷰 에이전트를 만들어 맞춤 답글 제안을 받을 수 있습니다!"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.brandVoice.footerSignOff": {
+  "en": "Footer / sign-off",
+  "ko": "푸터 / 서명"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.brandVoice.footerSignOffOptional": {
+  "en": "(Optional)",
+  "ko": "(선택 사항)"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.brandVoice.lengthMedium": {
+  "en": "Medium",
+  "ko": "보통"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.brandVoice.respondAsWe": {
+  "en": "“We”",
+  "ko": "“저희”"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.configureAgentModalHeader": {
+  "en": "Configure “{name}”",
+  "ko": "“{name}” 설정"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.createStarterModalContent": {
+  "en": "Using this option will create five new Reviews AI Agents, which will automatically generate responses for future reviews. By default, they will be set to respond to all reviews. If you prefer to limit their responses to specific review sources or types, you can update their settings anytime after creation. Would you like to proceed?",
+  "ko": "이 옵션을 사용하면 새 리뷰 AI 에이전트 5개가 만들어지고, 앞으로 들어오는 리뷰에 자동으로 응답을 생성합니다. 기본적으로 모든 리뷰에 응답하도록 설정됩니다. 특정 리뷰 출처나 유형에만 응답하게 하려면 만든 뒤 언제든 설정을 바꿀 수 있습니다. 계속하시겠습니까?"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.general.reviewTypeAll": {
+  "en": "All reviews",
+  "ko": "모든 리뷰"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.guardrails.avoidSameOpeningHint": {
+  "en": "No two replies start with the same sentence.",
+  "ko": "같은 문장으로 시작하는 답글이 없도록 합니다."
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.preview.chipAutoPost": {
+  "en": "Auto-post in {minutes}m",
+  "ko": "{minutes}분 후 자동 게시"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.preview.failedTitle": {
+  "en": "Preview unavailable",
+  "ko": "미리보기를 사용할 수 없음"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.preview.rateLimitedTitle": {
+  "en": "Preview limit reached",
+  "ko": "미리보기 한도 도달"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.preview.sampleReplyNegative": {
+  "en": "We are sorry this has come back a second time. That is not the experience we want for you. Please reach out to our team so we can get it sorted properly.",
+  "ko": "같은 문제가 다시 생겨 정말 죄송합니다. 저희가 바라는 경험이 아닙니다. 제대로 해결해 드릴 수 있도록 저희 팀에 연락해 주세요."
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.preview.wordCount": {
+  "en": "~{count} words",
+  "ko": "약 {count}단어"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.reviewTypes.fiveStars": {
+  "en": "5 stars",
+  "ko": "별 5개"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.reviewTypes.fourStarsOrBelow": {
+  "en": "4 stars or below",
+  "ko": "별 4개 이하"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.reviewTypes.oneStar": {
+  "en": "1 star",
+  "ko": "별 1개"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.reviewTypes.threeStarsOrBelow": {
+  "en": "3 stars or below",
+  "ko": "별 3개 이하"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.reviewTypes.twoStarsOrAbove": {
+  "en": "2 stars or above",
+  "ko": "별 2개 이상"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.selectTemplateBlankHeader": {
+  "en": "Start from scratch",
+  "ko": "처음부터 시작"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.selectTemplateModalHeader": {
+  "en": "Select Template",
+  "ko": "템플릿 선택"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.tones.optimistic": {
+  "en": "Optimistic",
+  "ko": "낙관적"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.tones.playful": {
+  "en": "Playful",
+  "ko": "유쾌함"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.tones.solutionOriented": {
+  "en": "Solution-Oriented",
+  "ko": "해결 중심"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.wizard.next": {
+  "en": "Next",
+  "ko": "다음"
+ },
+ "reputationApp.reputation.reputationSettings.senderComponent.description": {
+  "en": "Choose the phone number and email address review requests are sent from. Applies to manual sends, campaigns, and workflows.",
+  "ko": "리뷰 요청을 보낼 전화번호와 이메일 주소를 선택하세요. 직접 보내기, 캠페인, 워크플로우에 모두 적용됩니다."
+ },
+ "reputationApp.reputation.reputationSettings.senderComponent.emailInvalid": {
+  "en": "Enter a valid email address",
+  "ko": "올바른 이메일 주소를 입력하세요"
+ },
+ "reputationApp.reputation.reputationSettings.senderComponent.emailLabel": {
+  "en": "Default sender email",
+  "ko": "기본 발신 이메일"
+ },
+ "reputationApp.reputation.reputationSettings.senderComponent.fromEmailLabel": {
+  "en": "From Email",
+  "ko": "발신 이메일"
+ },
+ "reputationApp.reputation.reputationSettings.senderComponent.fromPhoneLabel": {
+  "en": "From Phone",
+  "ko": "발신 전화번호"
+ },
+ "reputationApp.reputation.reputationSettings.senderComponent.fromWhatsAppLabel": {
+  "en": "From WhatsApp Phone",
+  "ko": "발신 WhatsApp 번호"
+ },
+ "reputationApp.reputation.reputationSettings.senderComponent.loadError": {
+  "en": "Could not load sender settings. Please refresh.",
+  "ko": "발신자 설정을 불러오지 못했습니다. 새로고침해 주세요."
+ },
+ "reputationApp.reputation.reputationSettings.senderComponent.saveButton": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "reputationApp.reputation.reputationSettings.senderComponent.saveError": {
+  "en": "Could not save sender defaults. Please try again.",
+  "ko": "기본 발신자를 저장하지 못했습니다. 다시 시도해 주세요."
+ },
+ "reputationApp.reputation.reputationSettings.senderComponent.whatsAppLabel": {
+  "en": "Default WhatsApp sender number",
+  "ko": "기본 WhatsApp 발신 번호"
+ },
+ "reputationApp.reputation.reputationSettings.senderComponent.whatsAppPlaceholder": {
+  "en": "Select a WhatsApp number",
+  "ko": "WhatsApp 번호 선택"
+ },
+ "reputationApp.reputation.reputationSettings.smsComponent.contact": {
+  "en": "Contact",
+  "ko": "연락처"
+ },
+ "reputationApp.reputation.reputationSettings.smsComponent.createModeNewTitle": {
+  "en": "Create New from Scratch",
+  "ko": "처음부터 새로 만들기"
+ },
+ "reputationApp.reputation.reputationSettings.smsComponent.createModeTemplateTitle": {
+  "en": "Select from Pre-Built Templates",
+  "ko": "미리 만든 템플릿에서 선택"
+ },
+ "reputationApp.reputation.reputationSettings.smsComponent.createNewModeModalDescription": {
+  "en": "Create your own or get inspired with proven messages!",
+  "ko": "직접 만들거나 검증된 메시지에서 아이디어를 얻으세요!"
+ },
+ "reputationApp.reputation.reputationSettings.smsComponent.customFields": {
+  "en": "Custom Fields",
+  "ko": "커스텀 필드"
+ },
+ "reputationApp.reputation.reputationSettings.smsComponent.editTemplateCTA": {
+  "en": "Edit Template",
+  "ko": "템플릿 편집"
+ },
+ "reputationApp.reputation.reputationSettings.smsComponent.imageInputAdd": {
+  "en": "Add image",
+  "ko": "이미지 추가"
+ },
+ "reputationApp.reputation.reputationSettings.smsComponent.imageInputTitle": {
+  "en": "Request with Image",
+  "ko": "이미지와 함께 요청"
+ },
+ "reputationApp.reputation.reputationSettings.smsComponent.previewCTA": {
+  "en": "Send Message",
+  "ko": "메시지 보내기"
+ },
+ "reputationApp.reputation.reputationSettings.smsComponent.selectTemplateDefaultDescription": {
+  "en": "Applies your Default SMS Settings",
+  "ko": "기본 SMS 설정을 적용합니다"
+ },
+ "reputationApp.reputation.reputationSettings.smsComponent.selectTemplatesDropdown": {
+  "en": "Select SMS Template",
+  "ko": "SMS 템플릿 선택"
+ },
+ "reputationApp.reputation.reputationSettings.smsComponent.setTemplates": {
+  "en": "Set SMS Templates",
+  "ko": "SMS 템플릿 설정"
+ },
+ "reputationApp.reputation.reputationSettings.smsComponent.setTemplatesDescription": {
+  "en": "Select and Assign Templates for Every Recurring SMS",
+  "ko": "반복되는 모든 SMS에 사용할 템플릿을 선택하고 지정하세요"
+ },
+ "reputationApp.reputation.reputationSettings.smsComponent.smsTemplateLabel": {
+  "en": "SMS sent to the user",
+  "ko": "사용자에게 보내는 SMS"
+ },
+ "reputationApp.reputation.reputationSettings.smsComponent.smsTemplateTitle": {
+  "en": "Manage Your SMS Templates",
+  "ko": "SMS 템플릿 관리"
+ },
+ "reputationApp.reputation.reputationSettings.smsComponent.templateButtonNameLabel": {
+  "en": "Button Name",
+  "ko": "버튼 이름"
+ },
+ "reputationApp.reputation.reputationSettings.smsComponent.templateImageCustomUrlLabel": {
+  "en": "Add Custom Image Url",
+  "ko": "사용자 지정 이미지 URL 추가"
+ },
+ "reputationApp.reputation.reputationSettings.smsComponent.templateNamePlaceholder": {
+  "en": "New Template",
+  "ko": "새 템플릿"
+ },
+ "reputationApp.reputation.reputationSettings.smsComponent.templateTableColumns.actions": {
+  "en": "Actions",
+  "ko": "작업"
+ },
+ "reputationApp.reputation.reputationSettings.smsComponent.templateTableColumns.name": {
+  "en": "Name",
+  "ko": "이름"
+ },
+ "reputationApp.reputation.reputationSettings.smsComponent.templateTableColumns.type": {
+  "en": "Type",
+  "ko": "유형"
+ },
+ "reputationApp.reputation.reputationSettings.smsComponent.triggerLinks": {
+  "en": "Trigger Links",
+  "ko": "트리거 링크"
+ },
+ "reputationApp.reputation.reputationSettings.whatsAppComponent.openEmailBuilder": {
+  "en": "Open WhatsApp Template Builder",
+  "ko": "WhatsApp 템플릿 빌더 열기"
+ },
+ "reputationApp.reputation.reputationSettings.whatsAppComponent.title": {
+  "en": "WhatsApp Review Requests",
+  "ko": "WhatsApp 리뷰 요청"
+ },
+ "reputationApp.reputation.reputationWidget.borderColorField": {
+  "en": "Border Color",
+  "ko": "테두리 색상"
+ },
+ "reputationApp.reputation.reputationWidget.copyCodeModalDescription": {
+  "en": "Add the below code to your website. Learn how to use Review Widget on your website or funnel here: ",
+  "ko": "아래 코드를 웹사이트에 추가하세요. 웹사이트나 퍼널에서 리뷰 위젯을 쓰는 방법은 여기에서 알아보세요: "
+ },
+ "reputationApp.reputation.reputationWidget.createNewMsg": {
+  "en": "Create new",
+  "ko": "새로 만들기"
+ },
+ "reputationApp.reputation.reputationWidget.displayDateField": {
+  "en": "Display Date",
+  "ko": "날짜 표시"
+ },
+ "reputationApp.reputation.reputationWidget.editWidgetButton": {
+  "en": "Edit Widget",
+  "ko": "위젯 편집"
+ },
+ "reputationApp.reputation.reputationWidget.legacyLimitWarningDescription": {
+  "en": "Please choose another Widget Type to see all the customization options",
+  "ko": "모든 맞춤 설정 옵션을 보려면 다른 위젯 유형을 선택하세요"
+ },
+ "reputationApp.reputation.reputationWidget.legacyLimitWarningHeader": {
+  "en": "All customizations are not available",
+  "ko": "일부 맞춤 설정을 사용할 수 없습니다"
+ },
+ "reputationApp.reputation.reputationWidget.makeItDefaultDescription": {
+  "en": "This action will set this widget as the default. Confirm to proceed.",
+  "ko": "이 위젯을 기본값으로 설정합니다. 계속하려면 확인하세요."
+ },
+ "reputationApp.reputation.reputationWidget.maxReviewField": {
+  "en": "Max number of Reviews",
+  "ko": "최대 리뷰 수"
+ },
+ "reputationApp.reputation.reputationWidget.minRatingWarningMsg": {
+  "en": "Please check local laws and regulations. Do not use this feature if you reside in a jurisdiction where review filtering is prohibited (such as the United States)",
+  "ko": "현지 법률과 규정을 확인하세요. 리뷰 필터링이 금지된 지역(예: 미국)에 있다면 이 기능을 사용하지 마세요"
+ },
+ "reputationApp.reputation.reputationWidget.noTemplatesMsg": {
+  "en": "No Templates available currently",
+  "ko": "현재 사용할 수 있는 템플릿이 없습니다"
+ },
+ "reputationApp.reputation.reputationWidget.paginationTypeField": {
+  "en": "Pagination Style",
+  "ko": "페이지 표시 방식"
+ },
+ "reputationApp.reputation.reputationWidget.paginationTypeOptions.dots": {
+  "en": "Dots",
+  "ko": "점"
+ },
+ "reputationApp.reputation.reputationWidget.reviewAvatarBackgroundField": {
+  "en": "Review Avatar Background Color",
+  "ko": "리뷰 아바타 배경 색상"
+ },
+ "reputationApp.reputation.reputationWidget.reviewAvatarTextColorField": {
+  "en": "Review Avatar Text Color",
+  "ko": "리뷰 아바타 텍스트 색상"
+ },
+ "reputationApp.reputation.reputationWidget.reviewSecondaryColorField": {
+  "en": "Review Secondary Color",
+  "ko": "리뷰 보조 색상"
+ },
+ "reputationApp.reputation.reputationWidget.saveWidgetModalDescription": {
+  "en": "Please enter a name for this Widget.",
+  "ko": "이 위젯의 이름을 입력하세요."
+ },
+ "reputationApp.reputation.reputationWidget.saveWidgetModalHeader": {
+  "en": "Save Widget",
+  "ko": "위젯 저장"
+ },
+ "reputationApp.reputation.reputationWidget.slideIntervalField": {
+  "en": "Slider Interval",
+  "ko": "슬라이드 간격"
+ },
+ "reputationApp.reputation.reputationWidget.summaryTypeField": {
+  "en": "Summary Type",
+  "ko": "요약 유형"
+ },
+ "reputationApp.reputation.reputationWidget.videoApprovalOptions.autoPublish": {
+  "en": "Auto-publish new video testimonials",
+  "ko": "새 비디오 후기 자동 게시"
+ },
+ "reputationApp.reputation.reputationWidget.videoApprovalOptions.manualApproval": {
+  "en": "Require manual approval before publishing",
+  "ko": "게시 전 수동 승인 필요"
+ },
+ "reputationApp.reputation.reputationWidget.widgetBackgroundColorField": {
+  "en": "Widget Background Color",
+  "ko": "위젯 배경 색상"
+ },
+ "reputationApp.reputation.reputationWidget.widgetDefaultDescription": {
+  "en": "Here are some of our reviews",
+  "ko": "고객 리뷰 일부를 소개합니다"
+ },
+ "reputationApp.reputation.reputationWidget.widgetNamePlaceholder": {
+  "en": "My Widget",
+  "ko": "내 위젯"
+ },
+ "reputationApp.reputation.reputationWidget.widgetPositionField": {
+  "en": "Widget Position",
+  "ko": "위젯 위치"
+ },
+ "reputationApp.reputation.reputationWidget.widgetPositionOptions.bottomRight": {
+  "en": "Bottom Right",
+  "ko": "오른쪽 하단"
+ },
+ "reputationApp.reputation.reputationWidget.widgetPositionOptions.right": {
+  "en": "Right",
+  "ko": "오른쪽"
+ },
+ "reputationApp.reputation.reputationWidget.widgetPositionOptions.top": {
+  "en": "Top",
+  "ko": "상단"
+ },
+ "reputationApp.reputation.reputationWidget.widgetPositionOptions.topRight": {
+  "en": "Top Right",
+  "ko": "오른쪽 상단"
+ },
+ "reputationApp.reputation.reputationWidget.widgetTitleField": {
+  "en": "Widget Title",
+  "ko": "위젯 제목"
+ },
+ "reputationApp.reputation.reputationWidget.widgetTypeField": {
+  "en": "Widget Type",
+  "ko": "위젯 유형"
+ },
+ "reputationApp.reputation.reputationYextCard.activateListing": {
+  "en": "Activate Yext Listing",
+  "ko": "Yext 리스팅 활성화"
+ },
+ "reputationApp.reputation.reputationYextCard.chartStatus.unavailable": {
+  "en": "Unavailable",
+  "ko": "사용할 수 없음"
+ },
+ "reputationApp.reputation.reputationYextCard.seriesName": {
+  "en": "Listings",
+  "ko": "리스팅"
+ },
+ "reputationApp.reputation.reputationYextCard.viewStatus": {
+  "en": "View Status",
+  "ko": "상태 보기"
+ },
+ "reputationApp.reputation.reputationYextCard.yextPromoMsg": {
+  "en": "Start Growing your Online Visibility Today! Get listed across 70+ Digital services Globally",
+  "ko": "지금 온라인 노출을 늘려 보세요! 전 세계 70개 이상의 디지털 서비스에 등록됩니다"
+ },
+ "reputationApp.reputation.sendReviewRequestModal.buttonTitlePrimary": {
+  "en": "Send Review Request",
+  "ko": "리뷰 요청 보내기"
+ },
+ "reputationApp.reputation.sendReviewRequestModal.buttonTitleSecondary": {
+  "en": "Create Contact and Send Review Request",
+  "ko": "연락처 만들고 리뷰 요청 보내기"
+ },
+ "reputationApp.reputation.sendReviewRequestModal.contactEmailInputLabel": {
+  "en": "Contact Email",
+  "ko": "연락처 이메일"
+ },
+ "reputationApp.reputation.sendReviewRequestModal.contactInputDisabled": {
+  "en": "Disabled as a contact is selected",
+  "ko": "연락처가 선택되어 비활성화됨"
+ },
+ "reputationApp.reputation.sendReviewRequestModal.contactPhoneInputEmptyError": {
+  "en": "Enter a Phone Number to send SMS Review Request",
+  "ko": "SMS 리뷰 요청을 보내려면 전화번호를 입력하세요"
+ },
+ "reputationApp.reputation.sendReviewRequestModal.contactPhoneInputLabel": {
+  "en": "Contact Phone",
+  "ko": "연락처 전화번호"
+ },
+ "reputationApp.reputation.sendReviewRequestModal.contactPhoneInputPlaceholder": {
+  "en": "Enter phone number",
+  "ko": "전화번호 입력"
+ },
+ "reputationApp.reputation.sendReviewRequestModal.editEmailTemplateButton": {
+  "en": "Edit Email Template",
+  "ko": "이메일 템플릿 편집"
+ },
+ "reputationApp.reputation.sendReviewRequestModal.editSMSButton": {
+  "en": "Edit SMS Template",
+  "ko": "SMS 템플릿 편집"
+ },
+ "reputationApp.reputation.sendReviewRequestModal.enableSMSTitle": {
+  "en": "Reach out to your customers through SMS for instant reviews!",
+  "ko": "SMS로 고객에게 연락해 바로 리뷰를 받으세요!"
+ },
+ "reputationApp.reputation.sendReviewRequestModal.enableWhatsAppTitle": {
+  "en": "Reach out to your customer on their favorite messaging app",
+  "ko": "고객이 즐겨 쓰는 메신저로 연락하세요"
+ },
+ "reputationApp.reputation.sendReviewRequestModal.modalDescription": {
+  "en": "Invite Your Customers to Leave a Review",
+  "ko": "고객에게 리뷰를 남겨 달라고 요청하세요"
+ },
+ "reputationApp.reputation.sendReviewRequestModal.modalHeader": {
+  "en": "Client Check In",
+  "ko": "고객 체크인"
+ },
+ "reputationApp.reputation.sendReviewRequestModal.overrideReviewLinkLabel": {
+  "en": "Override Review Link (Optional)",
+  "ko": "리뷰 링크 재지정(선택 사항)"
+ },
+ "reputationApp.reputation.sendReviewRequestModal.overrideReviewLinkPlaceholder": {
+  "en": "Select a review link to override default value",
+  "ko": "기본값 대신 쓸 리뷰 링크 선택"
+ },
+ "reputationApp.reputation.sendReviewRequestModal.reviewRequestModeEmail": {
+  "en": "Review Request Email",
+  "ko": "리뷰 요청 이메일"
+ },
+ "reputationApp.reputation.sendReviewRequestModal.reviewRequestModeEmailContactDND": {
+  "en": "Cannot send Email review requests as Contact is marked as DND",
+  "ko": "연락처가 수신거부로 설정되어 이메일 리뷰 요청을 보낼 수 없습니다"
+ },
+ "reputationApp.reputation.sendReviewRequestModal.reviewRequestModeEmailDisabled": {
+  "en": "Email Review Requests are disabled. You can enable them here:",
+  "ko": "이메일 리뷰 요청이 꺼져 있습니다. 여기에서 켤 수 있습니다:"
+ },
+ "reputationApp.reputation.sendReviewRequestModal.reviewRequestModeSMS": {
+  "en": "Review Request SMS",
+  "ko": "리뷰 요청 SMS"
+ },
+ "reputationApp.reputation.sendReviewRequestModal.reviewRequestModeWhatsAppContactDND": {
+  "en": "Cannot send WhatsApp review requests as Contact is marked as DND",
+  "ko": "연락처가 수신거부로 설정되어 WhatsApp 리뷰 요청을 보낼 수 없습니다"
+ },
+ "reputationApp.reputation.sendReviewRequestModal.reviewRequestModeWhatsAppEmptyPhoneNumber": {
+  "en": "Select a contact with Phone Number to send WhatsApp Review Request",
+  "ko": "WhatsApp 리뷰 요청을 보내려면 전화번호가 있는 연락처를 선택하세요"
+ },
+ "reputationApp.reputation.sendReviewRequestModal.searching": {
+  "en": "Searching",
+  "ko": "검색 중"
+ },
+ "reputationApp.reputation.sendReviewRequestModal.templateName": {
+  "en": "Template Name",
+  "ko": "템플릿 이름"
+ },
+ "reputationApp.reputation.sendReviewRequestModal.viewEmailTemplateButton": {
+  "en": "View Email Template",
+  "ko": "이메일 템플릿 보기"
+ },
+ "reputationApp.reputation.sendReviewRequestModal.viewSMSTemplateButton": {
+  "en": "View SMS Template",
+  "ko": "SMS 템플릿 보기"
+ },
+ "reputationApp.reputation.sendReviewRequestModal.viewWhatsAppTemplateButton": {
+  "en": "View WhatsApp Template",
+  "ko": "WhatsApp 템플릿 보기"
+ },
+ "reputationApp.reputation.videoTestimonials.approvalTooltips.pending": {
+  "en": "This response hasn't been reviewed for the widget yet. Click to show or hide.",
+  "ko": "아직 위젯 노출 여부를 검토하지 않은 응답입니다. 클릭해 표시하거나 숨기세요."
+ },
+ "reputationApp.reputation.videoTestimonials.approvalTooltips.rejected": {
+  "en": "Hidden from the widget. Click to show.",
+  "ko": "위젯에서 숨겨져 있습니다. 클릭해 표시하세요."
+ },
+ "reputationApp.reputation.videoTestimonials.bulk.approvedBanner": {
+  "en": "{count} video responses approved for your widget",
+  "ko": "비디오 응답 {count}개가 위젯 노출로 승인되었습니다"
+ },
+ "reputationApp.reputation.videoTestimonials.bulk.selected": {
+  "en": "{count} selected",
+  "ko": "{count}개 선택됨"
+ },
+ "reputationApp.reputation.videoTestimonials.collectorModal.attributionForm.description": {
+  "en": "After your questions, we ask respondents to identify themselves – or to confirm their info when it's been preloaded with a personalised link.",
+  "ko": "질문이 끝나면 응답자에게 본인 정보를 입력하게 하거나, 맞춤 링크로 미리 채워진 정보를 확인하게 합니다."
+ },
+ "reputationApp.reputation.videoTestimonials.collectorModal.attributionForm.title": {
+  "en": "Attribution Page Settings",
+  "ko": "응답자 정보 페이지 설정"
+ },
+ "reputationApp.reputation.videoTestimonials.collectorModal.notificationsForm.title": {
+  "en": "Notifications Settings",
+  "ko": "알림 설정"
+ },
+ "reputationApp.reputation.videoTestimonials.collectorModal.questionsForm.description": {
+  "en": "Add Up To 3 Questions.",
+  "ko": "질문은 최대 3개까지 추가할 수 있습니다."
+ },
+ "reputationApp.reputation.videoTestimonials.collectorModal.questionsForm.hideUploadButton": {
+  "en": "Hide upload button",
+  "ko": "업로드 버튼 숨김"
+ },
+ "reputationApp.reputation.videoTestimonials.collectorModal.questionsForm.title": {
+  "en": "Questions Page Settings",
+  "ko": "질문 페이지 설정"
+ },
+ "reputationApp.reputation.videoTestimonials.collectorModal.tabs.attributionPage": {
+  "en": "Attribution Page",
+  "ko": "응답자 정보 페이지"
+ },
+ "reputationApp.reputation.videoTestimonials.collectorModal.tabs.logoAndColorsSettings": {
+  "en": "Logo and Colors",
+  "ko": "로고 및 색상"
+ },
+ "reputationApp.reputation.videoTestimonials.collectorModal.tabs.settingsGroup": {
+  "en": "Settings",
+  "ko": "설정"
+ },
+ "reputationApp.reputation.videoTestimonials.collectorModal.thankYouForm.salutationDescriptionPlaceholder": {
+  "en": "Thank you for taking the time to respond. We truly appreciate it.",
+  "ko": "시간 내어 응답해 주셔서 진심으로 감사드립니다."
+ },
+ "reputationApp.reputation.videoTestimonials.collectorModal.thankYouForm.spokespersonEmailLabel": {
+  "en": "Spokesperson Email",
+  "ko": "담당자 이메일"
+ },
+ "reputationApp.reputation.videoTestimonials.collectorModal.welcomeForm.typeHerePlaceholder": {
+  "en": "Type Here",
+  "ko": "여기에 입력"
+ },
+ "reputationApp.reputation.videoTestimonials.collectorModal.welcomeForm.welcomeMessageDescription": {
+  "en": "A short message from your collector's spokesperson.",
+  "ko": "수집기 담당자가 전하는 짧은 메시지입니다."
+ },
+ "reputationApp.reputation.videoTestimonials.dropdownOptions.consentGiven": {
+  "en": "Consent given",
+  "ko": "동의함"
+ },
+ "reputationApp.reputation.videoTestimonials.dropdownOptions.copyLink": {
+  "en": "Copy Link",
+  "ko": "링크 복사"
+ },
+ "reputationApp.reputation.videoTestimonials.dropdownOptions.openInNewTab": {
+  "en": "Open in New Tab",
+  "ko": "새 탭에서 열기"
+ },
+ "reputationApp.reputation.videoTestimonials.dropdownOptions.previewCollector": {
+  "en": "View & Edit Details",
+  "ko": "세부 정보 보기 및 편집"
+ },
+ "reputationApp.reputation.videoTestimonials.dropdownOptions.previewResponse": {
+  "en": "View Details",
+  "ko": "세부 정보 보기"
+ },
+ "reputationApp.reputation.videoTestimonials.emptyMessages.emptyResponseTitle": {
+  "en": "No Responses Found",
+  "ko": "응답을 찾을 수 없습니다"
+ },
+ "reputationApp.reputation.videoTestimonials.emptyMessages.noResponsesYet": {
+  "en": "No responses yet",
+  "ko": "아직 응답이 없습니다"
+ },
+ "reputationApp.reputation.videoTestimonials.filters.filterByCollector": {
+  "en": "Collector 'Name'",
+  "ko": "수집기 '이름'"
+ },
+ "reputationApp.reputation.videoTestimonials.filters.status": {
+  "en": "Status",
+  "ko": "상태"
+ },
+ "reputationApp.reputation.videoTestimonials.latestTabs.responses": {
+  "en": "Recent Responses",
+  "ko": "최근 응답"
+ },
+ "reputationApp.reputation.videoTestimonials.modals.cloneCollectorInputLabel": {
+  "en": "Enter new collector name",
+  "ko": "새 수집기 이름 입력"
+ },
+ "reputationApp.reputation.videoTestimonials.modals.deleteCollectorTitle": {
+  "en": "Delete Video Collector",
+  "ko": "비디오 수집기 삭제"
+ },
+ "reputationApp.reputation.videoTestimonials.modals.deleteResponseDescription": {
+  "en": "Are you sure you want to delete this response?",
+  "ko": "이 응답을 삭제하시겠습니까?"
+ },
+ "reputationApp.reputation.videoTestimonials.modals.saveConfirmationDescription": {
+  "en": "Unsaved changes will not be available in the preview. Would you like to save them?",
+  "ko": "저장하지 않은 변경 사항은 미리보기에 반영되지 않습니다. 저장하시겠습니까?"
+ },
+ "reputationApp.reputation.videoTestimonials.parentTabs.collectors": {
+  "en": "Video Collectors",
+  "ko": "비디오 수집기"
+ },
+ "reputationApp.reputation.videoTestimonials.parentTabs.responses": {
+  "en": "Responses",
+  "ko": "응답"
  }
 }
