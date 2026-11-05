@@ -37,7 +37,7 @@
     return out;
   }
   // 화면 저장(portalSettingsData.save())은 **설정 객체 전체**를 PUT 한다. 일부 필드만 보내면 빠진 필드가 지워진다
-  // (2026-11-05 사진치유연구소 포털에서 customDomain 이 지워졌다가 즉시 복구 — 그 뒤 전체 객체 PUT 으로 변경).
+  // (2026-11-05 고객 포털 1곳에서 customDomain 이 지워졌다가 즉시 복구 — 그 뒤 전체 객체 PUT 으로 변경).
   function body(s, js, css) {
     const o = JSON.parse(JSON.stringify(s));
     o.customJs = js; o.customCss = css;
