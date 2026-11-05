@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "version": "4.2.46",
+  "version": "4.2.47",
   "built": "2026-11-05",
-  "source": " 스윕(350라우트) 잔여 영어 _text 127 · 연락처 상세 AI 에이전트 채널 미연결 배너 _text 4 + 날짜 라벨(로더 v4.21.2 D3) 2 · 커스텀 오브젝트 템플릿 분류 _textScoped 3(Events·Insurance·Pets — 로더 v4.21.5 체크박스 라벨 범위) · 결제 상태 _text 4(부분 환불됨·수동 결제·부분 결제·연체) + _textScoped 3(무효·미결제·체험 중) — 로더 v4.21.6 상태 칩 · 연락처 상세 Ask AI 안내 배너 _text 3(메뉴 표기 'AI에게 문의') · 평판 개요 _text 21(평균 평점·감성 분석·리뷰 링크·응답 시간·N점 등) + 대화 결제 패널 빈 상태 4 + _textScoped 4(부정·긍정·중립·조회수) · 런치패드(설치 가이드) 카드 설명·진행 상황 _text 14(신규 계정 첫 화면 — 연락처 표기 변형 포함) + 비즈니스 목록 머리글 2 · 연락처 추가 패널 자리표시자(영문 필드명 + 입력/선택) 15 · 기회 추가 버튼 어순('추가 기회'→'기회 추가') · 예상 마감일·날짜 선택 · 예약 모달 연결된 오브젝트·캘린더 기본값 · 연락처 상세 머리 '{오브젝트} Details'(오브젝트 이름이 한국어로 들어간 조각) 5 · 연락처 상세 오른쪽 기회 패널 빈 상태('No {기회} Yet'·'Track your {기회} …' — 오브젝트 이름 자리 변형) · r6JD 미니 스윕 3차(40화면): 예약 목록 빈 상태·이메일 캠페인 지표·평판 요청 표 머리·WhatsApp 구독 안내·설정 사이드바 '{기회} & Pipelines' _text 17 · 텔레메트리 2026-11-04 잔여 1,959문구(18 네임스페이스: superagentsApp·ghlEmailBuilderCommon·formSurveyApp·externalTrackingApp·voiceAiApp·templateLibraryApp·agentLogsApp·clientPortalBuilder 등) 직접 번역(6갈래) + 독립 검수 4갈래(교정 9 + 스코프→범위 2)",
+  "source": " 스윕(350라우트) 잔여 영어 _text 127 · 연락처 상세 AI 에이전트 채널 미연결 배너 _text 4 + 날짜 라벨(로더 v4.21.2 D3) 2 · 커스텀 오브젝트 템플릿 분류 _textScoped 3(Events·Insurance·Pets — 로더 v4.21.5 체크박스 라벨 범위) · 결제 상태 _text 4(부분 환불됨·수동 결제·부분 결제·연체) + _textScoped 3(무효·미결제·체험 중) — 로더 v4.21.6 상태 칩 · 연락처 상세 Ask AI 안내 배너 _text 3(메뉴 표기 'AI에게 문의') · 평판 개요 _text 21(평균 평점·감성 분석·리뷰 링크·응답 시간·N점 등) + 대화 결제 패널 빈 상태 4 + _textScoped 4(부정·긍정·중립·조회수) · 런치패드(설치 가이드) 카드 설명·진행 상황 _text 14(신규 계정 첫 화면 — 연락처 표기 변형 포함) + 비즈니스 목록 머리글 2 · 연락처 추가 패널 자리표시자(영문 필드명 + 입력/선택) 15 · 기회 추가 버튼 어순('추가 기회'→'기회 추가') · 예상 마감일·날짜 선택 · 예약 모달 연결된 오브젝트·캘린더 기본값 · 연락처 상세 머리 '{오브젝트} Details'(오브젝트 이름이 한국어로 들어간 조각) 5 · 연락처 상세 오른쪽 기회 패널 빈 상태('No {기회} Yet'·'Track your {기회} …' — 오브젝트 이름 자리 변형) · r6JD 미니 스윕 3차(40화면): 예약 목록 빈 상태·이메일 캠페인 지표·평판 요청 표 머리·WhatsApp 구독 안내·설정 사이드바 '{기회} & Pipelines' _text 17 · 텔레메트리 2026-11-04 잔여 1,959문구(18 네임스페이스: superagentsApp·ghlEmailBuilderCommon·formSurveyApp·externalTrackingApp·voiceAiApp·templateLibraryApp·agentLogsApp·clientPortalBuilder 등) 직접 번역(6갈래) + 독립 검수 4갈래(교정 9 + 스코프→범위 2) · 벤자민컨설팅 40화면 스윕(v4.2.46 적용 후): 평판 개요 리뷰 링크 안내·빈 상태, 연동 목록 설명 2 _text 6",
   "strings": 102718
  },
  "host": {
@@ -152403,7 +152403,13 @@
   "Save time with automation - Use templates and automated replies to simplify interactions and reduce effort.": "자동화로 시간 절약 - 템플릿과 자동 답장으로 소통을 간소화하고 수고를 줄이세요.",
   "Secure and reliable - Backed by Meta's official APIs for unmatched delivery and data protection.": "안전하고 믿을 수 있음 - Meta 공식 API 기반으로 확실한 전달과 데이터 보호를 제공합니다.",
   "기회 관리 & Pipelines": "기회 관리 & 파이프라인",
-  "기회 & Pipelines": "기회 & 파이프라인"
+  "기회 & Pipelines": "기회 & 파이프라인",
+  "Your review link is set to Facebook. You can view or change it anytime in Settings": "리뷰 링크가 Facebook으로 설정되어 있습니다. 설정에서 언제든지 확인하거나 변경할 수 있습니다",
+  "Your review link is set to Google. You can view or change it anytime in Settings": "리뷰 링크가 Google로 설정되어 있습니다. 설정에서 언제든지 확인하거나 변경할 수 있습니다",
+  "No review link clicks": "리뷰 링크 클릭이 없습니다",
+  "Begin collecting reviews by connecting your pages and sharing your review link": "페이지를 연결하고 리뷰 링크를 공유해 리뷰 수집을 시작하세요",
+  "Sell across Facebook and Instagram by syncing your store products and inventory with Meta Shops.": "스토어 상품과 재고를 Meta Shops와 동기화해 Facebook과 Instagram에서 판매하세요.",
+  "Cal.com lets you automate scheduling — trigger workflows when bookings are created, canceled, or rescheduled.": "Cal.com으로 일정 예약을 자동화하세요 — 예약이 생성·취소·변경될 때 워크플로우를 실행합니다."
  },
  "_textScoped": {
   "AM": "오전",
