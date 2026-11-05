@@ -76075,7 +76075,7 @@
       "linkProfileError": "이 프로필을 연결하지 못했습니다. 잠시 후 다시 시도해 주세요.",
       "linkProfileRateLimitError": "요청이 너무 많습니다. 잠시 기다린 뒤 다시 시도해 주세요.",
       "linked": "연결됨",
-      "matchMultiple": "여러 개 일치",
+      "matchMultiple": "일치 항목 여러 개",
       "matchesModalConnectSelected": "선택한 계정 연결",
       "matchesModalGoogleBusinessProfile": "Google 비즈니스 프로필",
       "matchesModalReviewsLabel": "리뷰 {count}개",
@@ -76576,7 +76576,7 @@
        },
        "errors": {
         "genericSaveError": "캠페인 저장 중 문제가 발생했습니다.",
-        "noEligibleReviews": "이 기간에 답글을 달 수 있는 리뷰가 없습니다. 답글이 없는 리뷰가 있는 기간으로 날짜를 조정하세요."
+        "noEligibleReviews": "이 기간에는 답글을 달 수 있는 리뷰가 없습니다. 답글이 없는 리뷰가 포함된 기간으로 날짜를 조정하세요."
        },
        "title": "리뷰 응답 - 드립 모드"
       },
@@ -76731,7 +76731,7 @@
      "shareAgainMsg": "다시 공유",
      "addAccountMsg": "계정 추가",
      "alreadySharedMsg": "이미 공유됨",
-     "averageReviews": "평균 리뷰",
+     "averageReviews": "평균 평점",
      "currentFilterNoMatchReviewsMsg": "현재 필터와 일치하는 리뷰가 없습니다",
      "deletedReviewWarningDescription": "이 리뷰는 Google에서 더 이상 존재하지 않아 응답할 수 없습니다. 대시보드에서 제거할 수 있습니다.",
      "deletedReviewWarningTitle": "리뷰를 찾을 수 없음",
@@ -76740,7 +76740,7 @@
      "gmbDisconnectedAction": "새 리뷰를 동기화하려면 다시 연결하세요.",
      "gmbDisconnectedMessage": "GBP 계정 연결이 끊어진 것 같습니다.",
      "googleIntegrationReplyError": "이 리뷰에 응답할 수 없습니다. Google 연동에 오류가 있는 것 같습니다. 설정 -> 연동에서 다시 연결하세요",
-     "noReviewsFoundMsg": "리뷰를 찾을 수 없습니다",
+     "noReviewsFoundMsg": "리뷰가 없습니다",
      "noReviewsYetMsg": "아직 리뷰가 없습니다",
      "ratingFilterAllLabel": "모든 평점",
      "ratingFilterEqualLabel": "{rating}점만",
@@ -77285,10 +77285,10 @@
      "summaryTypeField": "요약 유형",
      "videoApprovalOptions": {
       "autoPublish": "새 비디오 후기 자동 게시",
-      "manualApproval": "게시 전에 직접 승인"
+      "manualApproval": "게시 전 수동 승인 필요"
      },
      "widgetBackgroundColorField": "위젯 배경 색상",
-     "widgetDefaultDescription": "고객님들이 남겨 주신 리뷰입니다",
+     "widgetDefaultDescription": "고객 리뷰 일부를 소개합니다",
      "widgetNamePlaceholder": "내 위젯",
      "widgetPositionField": "위젯 위치",
      "widgetTitleField": "위젯 제목",

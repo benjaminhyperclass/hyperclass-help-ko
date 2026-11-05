@@ -384829,7 +384829,7 @@
  },
  "reputationApp.reputation.reputationOverview.connectProfiles.matchMultiple": {
   "en": "Multiple matches",
-  "ko": "여러 개 일치"
+  "ko": "일치 항목 여러 개"
  },
  "reputationApp.reputation.reputationOverview.connectProfiles.matchesModalConnectSelected": {
   "en": "Connect selected account",
@@ -385353,7 +385353,7 @@
  },
  "reputationApp.reputation.reputationReviews.averageReviews": {
   "en": "Average Reviews",
-  "ko": "평균 리뷰"
+  "ko": "평균 평점"
  },
  "reputationApp.reputation.reputationReviews.currentFilterNoMatchReviewsMsg": {
   "en": "Your current filter doesn't match any of the reviews",
@@ -385589,7 +385589,7 @@
  },
  "reputationApp.reputation.reputationReviews.dripMode.section.errors.noEligibleReviews": {
   "en": "No eligible reviews found for this date range. Adjust the dates to a period that contains unreplied reviews.",
-  "ko": "이 기간에 답글을 달 수 있는 리뷰가 없습니다. 답글이 없는 리뷰가 있는 기간으로 날짜를 조정하세요."
+  "ko": "이 기간에는 답글을 달 수 있는 리뷰가 없습니다. 답글이 없는 리뷰가 포함된 기간으로 날짜를 조정하세요."
  },
  "reputationApp.reputation.reputationReviews.dripMode.statsBar.pendingReviews": {
   "en": "Pending reviews",
@@ -385805,7 +385805,7 @@
  },
  "reputationApp.reputation.reputationReviews.noReviewsFoundMsg": {
   "en": "No Reviews Found",
-  "ko": "리뷰를 찾을 수 없습니다"
+  "ko": "리뷰가 없습니다"
  },
  "reputationApp.reputation.reputationReviews.noReviewsYetMsg": {
   "en": "You have no reviews yet",
@@ -386569,7 +386569,7 @@
  },
  "reputationApp.reputation.reputationWidget.videoApprovalOptions.manualApproval": {
   "en": "Require manual approval before publishing",
-  "ko": "게시 전에 직접 승인"
+  "ko": "게시 전 수동 승인 필요"
  },
  "reputationApp.reputation.reputationWidget.widgetBackgroundColorField": {
   "en": "Widget Background Color",
@@ -386577,7 +386577,7 @@
  },
  "reputationApp.reputation.reputationWidget.widgetDefaultDescription": {
   "en": "Here are some of our reviews",
-  "ko": "고객님들이 남겨 주신 리뷰입니다"
+  "ko": "고객 리뷰 일부를 소개합니다"
  },
  "reputationApp.reputation.reputationWidget.widgetNamePlaceholder": {
   "en": "My Widget",
