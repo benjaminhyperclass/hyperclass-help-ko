@@ -1,4 +1,5 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.8
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.9
+ * v4.21.9: 기간 선택기 월/연 보기(.hr-mm-yy-panel) — 머리 'Month'·'Year' → '월'·'연도', 월 목록 'Jan'… → '1월'….
  * v4.21.8: 새 디자인 시스템 날짜 선택 패널 — 머리 'Nov 2026'(노드 3개) → '2026년 11월', 요일 'Su'…→'일'…, 월 목록 'Jan'…→'1월'….
  * v4.21.7: 기간 '0 minutes'·'56 seconds'·'3 days' → '0분'·'56초'·'3일'(노드 전체 일치) · _textScoped 범위에 hr 제목 글자(2xl·xl·lg).
  * v4.21.6: 상태 칩(n-tag) 안 시스템 열거값(Succeeded·Pending·Failed·Refunded·Paid·Draft·Active…) 허용 목록 — 사용자 태그는 그대로.
@@ -202,7 +203,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.21.8',
+    version: '4.21.9',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -659,7 +660,10 @@
         return true;
       }
       if (KD_WD2.hasOwnProperty(t) && p.matches('.hr-date-panel-weekdays__day')) { n.nodeValue = KD_WD2[t]; stats.dateHits++; return true; }
-      if (p.closest('.hr-date-panel,.hr-date-picker-panel') && kdMon(t) && /^[A-Za-z]{3,9}\.?$/.test(t)) { n.nodeValue = kdMon(t) + '월'; stats.dateHits++; return true; }
+      // v4.21.9: 기간 선택기의 월/연 보기(.hr-mm-yy-panel — 'Month'·'Year' 머리, 월 목록 .month-item)도 같은 처리
+      var PANEL = '.hr-date-panel,.hr-date-picker-panel,.hr-mm-yy-panel';
+      if (kdMon(t) && /^[A-Za-z]{3,9}\.?$/.test(t) && p.closest(PANEL)) { n.nodeValue = kdMon(t) + '월'; stats.dateHits++; return true; }
+      if ((t === 'Month' || t === 'Year') && p.closest(PANEL)) { n.nodeValue = t === 'Month' ? '월' : '연도'; stats.dateHits++; return true; }
     } catch (e) {}
     return false;
   }
