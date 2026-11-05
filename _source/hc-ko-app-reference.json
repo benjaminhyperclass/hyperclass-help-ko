@@ -279845,7 +279845,7 @@
  },
  "superagentsApp.singleAgentBuilder.actionsConfig.platformLabel": {
   "en": "Actions Platform",
-  "ko": "Actions Platform"
+  "ko": "액션 플랫폼"
  },
  "superagentsApp.singleAgentBuilder.instructions.placeholder": {
   "en": "Enter agent instructions... Describe what the agent should do, how it should behave, and any constraints.",
@@ -280525,7 +280525,7 @@
  },
  "copilotApp.copilot.alt.copilot": {
   "en": "Copilot",
-  "ko": "Copilot"
+  "ko": "코파일럿"
  },
  "copilotApp.copilot.chat.intentAgent": {
   "en": "🤖 {agent}",
@@ -281133,7 +281133,7 @@
  },
  "copilotApp.copilot.welcome.copilotAlt": {
   "en": "Copilot",
-  "ko": "Copilot"
+  "ko": "코파일럿"
  },
  "copilotApp.copilot.agentMapping.id": {
   "en": "ID",
@@ -345385,7 +345385,7 @@
  },
  "adPublishingApp.campaignCreation.tiktok.mediaGuidelines.videoBitrate": {
   "en": "516 kbps",
-  "ko": "516kbps"
+  "ko": "516 kbps"
  },
  "adPublishingApp.campaignCreation.tiktok.mediaGuidelines.videoDuration": {
   "en": "Up to 10 minutes",
@@ -346533,7 +346533,7 @@
  },
  "agencyDashboardApp.agencyDashboard.common.mrrInUSD": {
   "en": "MRR in USD",
-  "ko": "MRR(USD)"
+  "ko": "MRR(USD 기준)"
  },
  "agencyDashboardApp.agencyDashboard.common.noDataAvailableYet": {
   "en": "No data available yet",
@@ -349561,7 +349561,7 @@
  },
  "agentStudioApp.graphBuilder.nodes.wait.channels.options.whatsapp": {
   "en": "WhatsApp",
-  "ko": "WhatsApp"
+  "ko": "왓츠앱"
  },
  "agentStudioApp.graphBuilder.nodes.wait.durationUnit.options.seconds": {
   "en": "Seconds",
@@ -354357,11 +354357,11 @@
  },
  "crmObjectsSettingsApp.config.stats.contactId": {
   "en": "contactId",
-  "ko": "contactId"
+  "ko": "연락처 ID"
  },
  "crmObjectsSettingsApp.config.status.next-drip": {
   "en": "next-drip",
-  "ko": "next-drip"
+  "ko": "다음 드립"
  },
  "crmObjectsSettingsApp.customFields.commonLabels.ticket": {
   "en": "Ticket",
@@ -359705,7 +359705,7 @@
  },
  "ghlEmailBuilderCommon.emailSequence.subsequentEmailSendAt": {
   "en": ", at {sendTime} ({timezone})",
-  "ko": ", {sendTime} ({timezone})"
+  "ko": ", {sendTime} ({timezone})에"
  },
  "ghlEmailBuilderCommon.emailSequence.typeFolderNameLabel": {
   "en": "Type folder name",
@@ -371710,5 +371710,2549 @@
  "wordpressApp.wordpress.uptimeMonitor.timeSpans.30m": {
   "en": "30 minutes",
   "ko": "30분"
+ },
+ "adPublishingApp.assetBuilder.imageGuidelines.content.one.value": {
+  "en": "JPG, PNG",
+  "ko": "JPG, PNG"
+ },
+ "adPublishingApp.campaignCreation.finalUrlPlaceholder": {
+  "en": "example.com/landing",
+  "ko": "example.com/landing"
+ },
+ "adPublishingApp.campaignCreation.google.gmail": {
+  "en": "Gmail",
+  "ko": "Gmail"
+ },
+ "adPublishingApp.campaignCreation.google.mediaGuidelines.videoFormats": {
+  "en": "MP4, MPEG - 4, MPEG - 2",
+  "ko": "MP4, MPEG - 4, MPEG - 2"
+ },
+ "adPublishingApp.campaignCreation.google.youtube": {
+  "en": "YouTube",
+  "ko": "YouTube"
+ },
+ "adPublishingApp.campaignCreation.instagram": {
+  "en": "Instagram",
+  "ko": "Instagram"
+ },
+ "adPublishingApp.campaignCreation.privacyPlaceholder": {
+  "en": "www.example.com/privacy",
+  "ko": "www.example.com/privacy"
+ },
+ "adPublishingApp.campaignCreation.tiktok.platform.android": {
+  "en": "Android",
+  "ko": "Android"
+ },
+ "adPublishingApp.campaignCreation.tiktok.platform.ios": {
+  "en": "iOS",
+  "ko": "iOS"
+ },
+ "adPublishingApp.campaignDashboard.cpc": {
+  "en": "CPC",
+  "ko": "CPC"
+ },
+ "adPublishingApp.campaignDashboard.facebookCampaign": {
+  "en": "Meta",
+  "ko": "Meta"
+ },
+ "adPublishingApp.campaignDashboard.googleCampaign": {
+  "en": "Google",
+  "ko": "Google"
+ },
+ "adPublishingApp.campaignDashboard.linkedinCampaign": {
+  "en": "LinkedIn",
+  "ko": "LinkedIn"
+ },
+ "adPublishingApp.campaignDashboard.tiktokCampaign": {
+  "en": "TikTok",
+  "ko": "TikTok"
+ },
+ "adPublishingApp.common.by10": {
+  "en": "{count} / 10",
+  "ko": "{count} / 10"
+ },
+ "adPublishingApp.common.by4": {
+  "en": "{count} / 4",
+  "ko": "{count} / 4"
+ },
+ "adPublishingApp.common.exampleUrl": {
+  "en": "example.com/page",
+  "ko": "example.com/page"
+ },
+ "adPublishingApp.common.facebook": {
+  "en": "Facebook",
+  "ko": "Facebook"
+ },
+ "adPublishingApp.common.facebookUrlExample": {
+  "en": "www.facebook.com/post",
+  "ko": "www.facebook.com/post"
+ },
+ "adPublishingApp.common.google": {
+  "en": "Google",
+  "ko": "Google"
+ },
+ "adPublishingApp.common.httpsPrefix": {
+  "en": "https://",
+  "ko": "https://"
+ },
+ "adPublishingApp.common.instagram": {
+  "en": "Instagram",
+  "ko": "Instagram"
+ },
+ "adPublishingApp.common.linkedin": {
+  "en": "LinkedIn",
+  "ko": "LinkedIn"
+ },
+ "adPublishingApp.common.meta": {
+  "en": "Meta",
+  "ko": "Meta"
+ },
+ "adPublishingApp.common.playIcon": {
+  "en": "playIcon",
+  "ko": "playIcon"
+ },
+ "adPublishingApp.common.tiktok": {
+  "en": "TikTok",
+  "ko": "TikTok"
+ },
+ "adPublishingApp.formBuilder.calendlyUrl": {
+  "en": "Calendly URL",
+  "ko": "Calendly URL"
+ },
+ "adPublishingApp.settings.conversions.instagramDM": {
+  "en": "Instagram DM",
+  "ko": "Instagram DM"
+ },
+ "adPublishingApp.settings.sync.progress.campaignsOf": {
+  "en": "{done} / {total}",
+  "ko": "{done} / {total}"
+ },
+ "adPublishingApp.settings.sync.summary.custom": {
+  "en": "{statuses}, {window}",
+  "ko": "{statuses}, {window}"
+ },
+ "agency.accountDetails.saas": {
+  "en": "SaaS",
+  "ko": "SaaS"
+ },
+ "agency.advancedSettings.account.hipaa": {
+  "en": "HIPAA",
+  "ko": "HIPAA"
+ },
+ "agency.advancedSettings.walletTransactionModal.smsSid": {
+  "en": "SMS SID:",
+  "ko": "SMS SID:"
+ },
+ "agency.saas.stripe": {
+  "en": "Stripe",
+  "ko": "Stripe"
+ },
+ "agency.sendGridSettings.sendGrid": {
+  "en": "SendGrid",
+  "ko": "SendGrid"
+ },
+ "agency.socialDetails.foursquare": {
+  "en": "Foursquare",
+  "ko": "Foursquare"
+ },
+ "agency.socialDetails.foursquareUrl": {
+  "en": "Foursquare URL",
+  "ko": "Foursquare URL"
+ },
+ "agency.socialDetails.googlePlacesId": {
+  "en": "Google Places ID",
+  "ko": "Google Places ID"
+ },
+ "agency.socialDetails.googlePlus": {
+  "en": "Google+",
+  "ko": "Google+"
+ },
+ "agency.socialDetails.googlePlusUrl": {
+  "en": "Google+ URL",
+  "ko": "Google+ URL"
+ },
+ "agency.socialDetails.instagramUrl": {
+  "en": "Instagram URL",
+  "ko": "Instagram URL"
+ },
+ "agency.socialDetails.linkedInUrl": {
+  "en": "LinkedIn URL",
+  "ko": "LinkedIn URL"
+ },
+ "agency.socialDetails.pinterest": {
+  "en": "Pinterest",
+  "ko": "Pinterest"
+ },
+ "agency.socialDetails.yelp": {
+  "en": "Yelp",
+  "ko": "Yelp"
+ },
+ "agency.socialDetails.yelpUrl": {
+  "en": "Yelp URL",
+  "ko": "Yelp URL"
+ },
+ "agency.socialDetails.youTube": {
+  "en": "YouTube",
+  "ko": "YouTube"
+ },
+ "agencyDashboardApp.agencyDashboard.common.products.conversationsAi": {
+  "en": "Conversations AI",
+  "ko": "대화 AI"
+ },
+ "agencyDashboardApp.agencyDashboard.common.products.seo": {
+  "en": "SEO",
+  "ko": "SEO"
+ },
+ "agencyDashboardApp.agencyDashboard.common.saas": {
+  "en": "SaaS",
+  "ko": "SaaS"
+ },
+ "agencyDashboardApp.agencyDashboard.common.sidebar.stripe": {
+  "en": "Stripe",
+  "ko": "Stripe"
+ },
+ "agencyDashboardApp.agencyDashboard.saas.arpa": {
+  "en": "ARPA",
+  "ko": "ARPA"
+ },
+ "agencyDashboardApp.agencyDashboard.saas.title": {
+  "en": "SaaS",
+  "ko": "SaaS"
+ },
+ "agentLogsApp.agentLogs.analysisInsights.cards.intents.intentCount": {
+  "en": "{intent} ({count})",
+  "ko": "{intent} ({count})"
+ },
+ "agentLogsApp.agentLogs.analysisInsights.cards.whatsWorking.momentCount": {
+  "en": "{moment} ({count})",
+  "ko": "{moment} ({count})"
+ },
+ "agentLogsApp.agentLogs.logDetail.inspect.latencyValue": {
+  "en": "{value}ms",
+  "ko": "{value}ms"
+ },
+ "agentLogsApp.agentLogs.logDetail.search.fieldLine": {
+  "en": "{name} › {field}",
+  "ko": "{name} › {field}"
+ },
+ "agentLogsApp.agentLogs.logDetail.units.milliseconds": {
+  "en": "{value}ms",
+  "ko": "{value}ms"
+ },
+ "agentLogsApp.agentLogs.metrics.product.app_studio": {
+  "en": "App Studio",
+  "ko": "앱 스튜디오"
+ },
+ "agentLogsApp.agentLogs.monitor.notificationChannel.urlPlaceholder": {
+  "en": "https://example.com/webhooks/alerts",
+  "ko": "https://example.com/webhooks/alerts"
+ },
+ "agentLogsApp.agentLogs.monitor.targets.window": {
+  "en": "{start} – {end}",
+  "ko": "{start} – {end}"
+ },
+ "agentLogsApp.agentLogs.monitor.targets.windowEnded": {
+  "en": "Window ended",
+  "ko": "기간 종료"
+ },
+ "agentLogsApp.agentLogs.spanLabels.computerTools.sandbox_browser": {
+  "en": "Computer Browser",
+  "ko": "컴퓨터 브라우저"
+ },
+ "agentLogsApp.agentLogs.spanLabels.computerTools.sandbox_exec": {
+  "en": "Computer Exec",
+  "ko": "컴퓨터 명령 실행"
+ },
+ "agentLogsApp.agentLogs.spanLabels.computerTools.sandbox_file": {
+  "en": "Computer File",
+  "ko": "컴퓨터 파일"
+ },
+ "agentLogsApp.agentLogs.spanLabels.stepTypes.llm_node": {
+  "en": "LLM",
+  "ko": "LLM"
+ },
+ "agentStudioApp.agentManagement.deleteConfirmModal.versionName": {
+  "en": "\"{versionName}\"",
+  "ko": "\"{versionName}\""
+ },
+ "agentStudioApp.graphBuilder.apiIntegration.sections.attachments.imageUrl": {
+  "en": "imageUrl",
+  "ko": "imageUrl"
+ },
+ "agentStudioApp.graphBuilder.apiIntegration.sections.attachments.publicUrl": {
+  "en": "publicUrl",
+  "ko": "publicUrl"
+ },
+ "agentStudioApp.graphBuilder.apiIntegration.sections.attachments.urlLabel": {
+  "en": "url",
+  "ko": "url"
+ },
+ "agentStudioApp.graphBuilder.apiIntegration.sections.endpoint.path": {
+  "en": "/agents/{agentId}/versions/{versionId}/execute",
+  "ko": "/agents/{agentId}/versions/{versionId}/execute"
+ },
+ "agentStudioApp.graphBuilder.apiIntegration.sections.overview.info.contentType": {
+  "en": "Content-Type:",
+  "ko": "Content-Type:"
+ },
+ "agentStudioApp.graphBuilder.apiIntegration.sections.requestBody.extraVariablesObject": {
+  "en": "extraVariables",
+  "ko": "extraVariables"
+ },
+ "agentStudioApp.graphBuilder.apiIntegration.sections.requestBody.params.executionId": {
+  "en": "executionId",
+  "ko": "executionId"
+ },
+ "agentStudioApp.graphBuilder.apiIntegration.sections.requestBody.params.extraVariables": {
+  "en": "extraVariables",
+  "ko": "extraVariables"
+ },
+ "agentStudioApp.graphBuilder.apiIntegration.sections.requestBody.params.userId": {
+  "en": "userId",
+  "ko": "userId"
+ },
+ "agentStudioApp.graphBuilder.apiIntegration.sections.response.interactionIdLabel": {
+  "en": "interactionId:",
+  "ko": "interactionId:"
+ },
+ "agentStudioApp.graphBuilder.categories.crm": {
+  "en": "CRM",
+  "ko": "CRM"
+ },
+ "agentStudioApp.graphBuilder.categories.mcp": {
+  "en": "MCP",
+  "ko": "MCP"
+ },
+ "agentStudioApp.graphBuilder.edgeEditModal.valueTypes.json": {
+  "en": "JSON",
+  "ko": "JSON"
+ },
+ "agentStudioApp.graphBuilder.formFields.itemDefinition.typeOptions.json": {
+  "en": "JSON",
+  "ko": "JSON"
+ },
+ "agentStudioApp.graphBuilder.importCurl.card.iconLabel": {
+  "en": "cURL",
+  "ko": "cURL"
+ },
+ "agentStudioApp.graphBuilder.leftPanel.tabs.api": {
+  "en": "API",
+  "ko": "API"
+ },
+ "agentStudioApp.graphBuilder.messageInspect.timelineItem.humanHandoff": {
+  "en": "Human Handoff",
+  "ko": "상담원 연결"
+ },
+ "agentStudioApp.graphBuilder.nodes.end.sleepTimeUnit.options.days": {
+  "en": "DAYS",
+  "ko": "일"
+ },
+ "agentStudioApp.graphBuilder.nodes.end.sleepTimeUnit.options.hours": {
+  "en": "HOURS",
+  "ko": "시간"
+ },
+ "agentStudioApp.graphBuilder.nodes.wait.channels.options.facebook": {
+  "en": "Facebook",
+  "ko": "Facebook"
+ },
+ "agentStudioApp.graphBuilder.runtimeLogsPanel.logs.meta": {
+  "en": "Meta",
+  "ko": "Meta"
+ },
+ "agentStudioApp.triggers.config.triggers.schedule.filters.startDate.placeholder": {
+  "en": "YYYY-MM-DD",
+  "ko": "YYYY-MM-DD"
+ },
+ "aiEmployeesApp.aiValueLandingPage.call.contactName": {
+  "en": "Sweetgreens",
+  "ko": "Sweetgreens"
+ },
+ "aiEmployeesApp.composables.useProvider.models.openaiGpt41": {
+  "en": "OpenAI GPT 4.1",
+  "ko": "OpenAI GPT 4.1"
+ },
+ "aiEmployeesApp.conversationAI.dashboard.channel.facebook": {
+  "en": "Facebook",
+  "ko": "Facebook"
+ },
+ "aiEmployeesApp.conversationAI.emailSettings.senderDetails.ccRecipients.placeholder": {
+  "en": "email{'@'}company.com",
+  "ko": "email{'@'}company.com"
+ },
+ "aiEmployeesApp.yearEndRecap.facebook": {
+  "en": "Facebook",
+  "ko": "Facebook"
+ },
+ "brandBoardsApp.builder.businessTypes.atm": {
+  "en": "ATM",
+  "ko": "ATM"
+ },
+ "brandBoardsApp.builder.companyEmailPlaceholder": {
+  "en": "company{'@'}email.com",
+  "ko": "company{'@'}email.com"
+ },
+ "brandBoardsApp.builder.companyWebsitePlaceholder": {
+  "en": "www.yourwebsite.com",
+  "ko": "www.yourwebsite.com"
+ },
+ "brandBoardsApp.globalSettings.googleFonts": {
+  "en": "Google Fonts",
+  "ko": "Google 글꼴"
+ },
+ "brandBoardsApp.listPage.urlPlaceholder": {
+  "en": "https://example.com",
+  "ko": "https://example.com"
+ },
+ "brandBoardsApp.listPage.websiteUrlPlaceholder": {
+  "en": "https://www.branditx.co",
+  "ko": "https://www.branditx.co"
+ },
+ "brandBoardsApp.preview.fontSummary": {
+  "en": "{font} · {count} styles",
+  "ko": "{font} · 스타일 {count}개"
+ },
+ "brandBoardsApp.preview.fontUses": {
+  "en": "{count} styles",
+  "ko": "스타일 {count}개"
+ },
+ "brandBoardsApp.preview.fontsSummary": {
+  "en": "{count} fonts · {styles} styles",
+  "ko": "글꼴 {count}개 · 스타일 {styles}개"
+ },
+ "brandBoardsApp.preview.specimenAlphabet": {
+  "en": "ABCDEFGHIJKLM abcdefghijklm 0123456789 &${'@'}%",
+  "ko": "ABCDEFGHIJKLM abcdefghijklm 0123456789 &${'@'}%"
+ },
+ "brandBoardsApp.sidebar.fontWeights.black": {
+  "en": "Black",
+  "ko": "블랙"
+ },
+ "brandBoardsApp.sidebar.fontWeights.extraBold": {
+  "en": "Extra Bold",
+  "ko": "엑스트라 볼드"
+ },
+ "brandBoardsApp.sidebar.fontWeights.extraLight": {
+  "en": "Extra Light",
+  "ko": "엑스트라 라이트"
+ },
+ "brandBoardsApp.sidebar.fontWeights.semibold": {
+  "en": "Semibold",
+  "ko": "세미볼드"
+ },
+ "brandBoardsApp.sidebar.fontWeights.thin": {
+  "en": "Thin",
+  "ko": "씬"
+ },
+ "brandBoardsApp.typographyVariants.body1": {
+  "en": "Body 1",
+  "ko": "본문 1"
+ },
+ "brandBoardsApp.typographyVariants.body2": {
+  "en": "Body 2",
+  "ko": "본문 2"
+ },
+ "brandBoardsApp.typographyVariants.overline": {
+  "en": "Overline",
+  "ko": "오버라인"
+ },
+ "brandBoardsApp.typographyVariants.subtitle1": {
+  "en": "Subtitle 1",
+  "ko": "부제목 1"
+ },
+ "brandBoardsApp.typographyVariants.subtitle2": {
+  "en": "Subtitle 2",
+  "ko": "부제목 2"
+ },
+ "calendarComponentsApp.calendarAI.fieldService.summary.units.miles": {
+  "en": "miles",
+  "ko": "마일"
+ },
+ "campaign.affiliates.firstPromoterIframe": {
+  "en": "firstpromoter-iframe",
+  "ko": "firstpromoter-iframe"
+ },
+ "campaign.common.actions.googleDrive": {
+  "en": "Google Drive",
+  "ko": "Google Drive"
+ },
+ "campaign.email.newPostModal.imagePlaceholder": {
+  "en": "img(02).png",
+  "ko": "img(02).png"
+ },
+ "campaign.email.newPostModal.textExample": {
+  "en": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
+  "ko": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+ },
+ "campaign.email.newPostModal.urlExample": {
+  "en": "https://searchengineland.com/google-announces-new-features-for-retail-advertisers-at-smx-advanced-300001",
+  "ko": "https://searchengineland.com/google-announces-new-features-for-retail-advertisers-at-smx-advanced-300001"
+ },
+ "campaign.regulatoryBundle.cnam.registration.characterLimit": {
+  "en": "{count}/15",
+  "ko": "{count}/15"
+ },
+ "campaign.workflow.faq": {
+  "en": "FAQ",
+  "ko": "자주 묻는 질문"
+ },
+ "chatWidget.builderLoadError.text": {
+  "en": "Something went wrong while loading the builder. Please try again.",
+  "ko": "빌더를 불러오는 중 문제가 발생했습니다. 다시 시도하세요."
+ },
+ "chatWidget.builderLoadError.title": {
+  "en": "Could not open the chat widget builder",
+  "ko": "채팅 위젯 빌더를 열지 못했습니다"
+ },
+ "chatWidget.createLoadError.text": {
+  "en": "Something went wrong while loading the create dialog. Please try again.",
+  "ko": "생성 창을 불러오는 중 문제가 발생했습니다. 다시 시도하세요."
+ },
+ "chatWidget.createLoadError.title": {
+  "en": "Could not open the chat widget creator",
+  "ko": "채팅 위젯 생성 화면을 열지 못했습니다"
+ },
+ "chatWidgetApp.sidebar.facebook": {
+  "en": "Facebook",
+  "ko": "Facebook"
+ },
+ "chatWidgetApp.sidebar.instagram": {
+  "en": "Instagram",
+  "ko": "Instagram"
+ },
+ "chatWidgetApp.sidebar.url": {
+  "en": "URL",
+  "ko": "URL"
+ },
+ "chatWidgetApp.timezones.label": {
+  "en": "GMT{offset} {zone} ({abbreviation})",
+  "ko": "GMT{offset} {zone} ({abbreviation})"
+ },
+ "clientPortalBuilder.brandedApp.appLive.appStore.text": {
+  "en": "Apple App Store",
+  "ko": "Apple App Store"
+ },
+ "clientPortalBuilder.brandedApp.appLive.playStore.text": {
+  "en": "Google Play Store",
+  "ko": "Google Play Store"
+ },
+ "clientPortalBuilder.brandedApp.index.playStore": {
+  "en": "Play Store",
+  "ko": "Play Store"
+ },
+ "clientPortalBuilder.brandedApp.twoFaActions.platforms.apple.shortName": {
+  "en": "Apple",
+  "ko": "Apple"
+ },
+ "clientPortalBuilder.brandedApp.twoFaActions.platforms.google.shortName": {
+  "en": "Google",
+  "ko": "Google"
+ },
+ "clientPortalBuilder.brandedAppBuilder.verification.credentialField.issuer": {
+  "en": "Issuer ID",
+  "ko": "발급자 ID"
+ },
+ "clientPortalBuilder.brandedAppBuilder.verification.credentialField.keyId": {
+  "en": "Key ID",
+  "ko": "키 ID"
+ },
+ "clientPortalBuilder.brandingImagesInput.bannerImage.id": {
+  "en": "aspectErrorBannerImage",
+  "ko": "aspectErrorBannerImage"
+ },
+ "clientPortalBuilder.brandingImagesInput.favicon.id": {
+  "en": "aspectErrorFavicon",
+  "ko": "aspectErrorFavicon"
+ },
+ "clientPortalBuilder.brandingImagesInput.logo.id": {
+  "en": "aspectErrorLogo",
+  "ko": "aspectErrorLogo"
+ },
+ "clientPortalBuilder.brandingImagesInput.portalImage.id": {
+  "en": "aspectErrorPortalImage",
+  "ko": "aspectErrorPortalImage"
+ },
+ "clientPortalBuilder.common.contact": {
+  "en": "{contact}",
+  "ko": "{contact}"
+ },
+ "clientPortalBuilder.common.placeholders.domainExample": {
+  "en": "https://example.com",
+  "ko": "https://example.com"
+ },
+ "clientPortalBuilder.common.placeholders.emailSample": {
+  "en": "abc{'@'}example.com",
+  "ko": "abc{'@'}example.com"
+ },
+ "clientPortalBuilder.common.placeholders.emailSample2": {
+  "en": "john.doe{'@'}example.com",
+  "ko": "john.doe{'@'}example.com"
+ },
+ "clientPortalBuilder.common.placeholders.fullNameSample": {
+  "en": "John Doe",
+  "ko": "홍길동"
+ },
+ "clientPortalBuilder.dashboardModal.headers.contactHeader": {
+  "en": "{contact}",
+  "ko": "{contact}"
+ },
+ "clientPortalBuilder.dashboardModal.headers.modalPageNoCheckedGenerate": {
+  "en": "{{ modal.pageNo === 0 ? checked ? 'Generate",
+  "ko": "{{ modal.pageNo === 0 ? checked ? 'Generate"
+ },
+ "clientPortalBuilder.dashboardModal.headers.sendGenerateModalButton": {
+  "en": "& Send' : 'Generate' : modal.buttonAccept }}",
+  "ko": "& Send' : 'Generate' : modal.buttonAccept }}"
+ },
+ "common.bing": {
+  "en": "Bing",
+  "ko": "Bing"
+ },
+ "common.ceo": {
+  "en": "CEO",
+  "ko": "CEO"
+ },
+ "common.cfo": {
+  "en": "CFO",
+  "ko": "CFO"
+ },
+ "common.clio": {
+  "en": "Clio",
+  "ko": "Clio"
+ },
+ "common.eliza": {
+  "en": "Eliza",
+  "ko": "Eliza"
+ },
+ "common.facebook": {
+  "en": "Facebook",
+  "ko": "Facebook"
+ },
+ "common.facebook1": {
+  "en": "Facebook",
+  "ko": "Facebook"
+ },
+ "common.facebookUrl": {
+  "en": "Facebook URL",
+  "ko": "Facebook URL"
+ },
+ "common.google": {
+  "en": "Google",
+  "ko": "Google"
+ },
+ "common.instagram": {
+  "en": "Instagram",
+  "ko": "Instagram"
+ },
+ "common.instagramDm": {
+  "en": "Instagram DM",
+  "ko": "Instagram DM"
+ },
+ "common.linkedin": {
+  "en": "LinkedIn",
+  "ko": "LinkedIn"
+ },
+ "common.misc._frameborder0_scrollingauto_width100_height500ifra": {
+  "en": "\" frameborder=\"0\" scrolling=\"auto\" width=\"100%\" height=\"500\"></iframe>",
+  "ko": "\" frameborder=\"0\" scrolling=\"auto\" width=\"100%\" height=\"500\"></iframe>"
+ },
+ "common.misc.acn": {
+  "en": "ACN",
+  "ko": "ACN"
+ },
+ "common.misc.admanagerlogo": {
+  "en": "ad-manager-logo",
+  "ko": "ad-manager-logo"
+ },
+ "common.misc.amex": {
+  "en": "AMEX",
+  "ko": "AMEX"
+ },
+ "common.misc.api": {
+  "en": "API",
+  "ko": "API"
+ },
+ "common.misc.cbn": {
+  "en": "CBN",
+  "ko": "CBN"
+ },
+ "common.misc.cpaas": {
+  "en": "CPaaS",
+  "ko": "CPaaS"
+ },
+ "common.misc.cvv": {
+  "en": "CVV",
+  "ko": "CVV"
+ },
+ "common.misc.dinersClub": {
+  "en": "Diners Club",
+  "ko": "Diners Club"
+ },
+ "common.misc.displayphonenumber": {
+  "en": "displayPhoneNumber",
+  "ko": "displayPhoneNumber"
+ },
+ "common.misc.ein": {
+  "en": "EIN",
+  "ko": "EIN"
+ },
+ "common.misc.esc": {
+  "en": "ESC",
+  "ko": "ESC"
+ },
+ "common.misc.fileimage": {
+  "en": "file-image",
+  "ko": "file-image"
+ },
+ "common.misc.gbp": {
+  "en": "GBP",
+  "ko": "GBP"
+ },
+ "common.misc.httpexamplecom": {
+  "en": "http://example.com",
+  "ko": "http://example.com"
+ },
+ "common.misc.iframe_src": {
+  "en": "<iframe src=\"",
+  "ko": "<iframe src=\""
+ },
+ "common.misc.ivr": {
+  "en": "IVR",
+  "ko": "IVR"
+ },
+ "common.misc.mastercard": {
+  "en": "MasterCard",
+  "ko": "MasterCard"
+ },
+ "common.misc.modelimage": {
+  "en": "model-image",
+  "ko": "model-image"
+ },
+ "common.misc.msgsndr8": {
+  "en": "msgsndr8",
+  "ko": "msgsndr8"
+ },
+ "common.misc.otp": {
+  "en": "OTP",
+  "ko": "OTP"
+ },
+ "common.misc.ppc": {
+  "en": "PPC",
+  "ko": "PPC"
+ },
+ "common.misc.seosearchatlaslogo": {
+  "en": "seo-search-atlas-logo",
+  "ko": "seo-search-atlas-logo"
+ },
+ "common.misc.sha": {
+  "en": "SHA",
+  "ko": "SHA"
+ },
+ "common.misc.sms": {
+  "en": "SMS",
+  "ko": "SMS"
+ },
+ "common.misc.smtpgmailcom": {
+  "en": "smtp.gmail.com",
+  "ko": "smtp.gmail.com"
+ },
+ "common.misc.tcr": {
+  "en": "TCR",
+  "ko": "TCR"
+ },
+ "common.misc.testmaindomaincom": {
+  "en": "testmain{'@'}domain.com",
+  "ko": "testmain{'@'}domain.com"
+ },
+ "common.misc.tipaltiiframe": {
+  "en": "tipalti-iframe",
+  "ko": "tipalti-iframe"
+ },
+ "common.misc.urlimage": {
+  "en": "url-image",
+  "ko": "url-image"
+ },
+ "common.misc.vat": {
+  "en": "VAT",
+  "ko": "VAT"
+ },
+ "common.misc.visa": {
+  "en": "VISA",
+  "ko": "VISA"
+ },
+ "common.misc.webdevexamplecom": {
+  "en": "web-dev{'@'}example.com",
+  "ko": "web-dev{'@'}example.com"
+ },
+ "common.misc.websitecom": {
+  "en": "website.com",
+  "ko": "website.com"
+ },
+ "common.sidebar.seo": {
+  "en": "SEO",
+  "ko": "SEO"
+ },
+ "common.sidebar.stripe": {
+  "en": "Stripe",
+  "ko": "Stripe"
+ },
+ "common.slack": {
+  "en": "Slack",
+  "ko": "Slack"
+ },
+ "common.sms": {
+  "en": "SMS",
+  "ko": "SMS"
+ },
+ "common.twilio": {
+  "en": "Twilio",
+  "ko": "Twilio"
+ },
+ "common.twitter": {
+  "en": "Twitter",
+  "ko": "Twitter"
+ },
+ "common.twitterUrl": {
+  "en": "Twitter URL",
+  "ko": "Twitter URL"
+ },
+ "common.yahoo": {
+  "en": "Yahoo",
+  "ko": "Yahoo"
+ },
+ "common.youtubeUrl": {
+  "en": "YouTube URL",
+  "ko": "YouTube URL"
+ },
+ "communitiesApp.common.communitiesDomain": {
+  "en": "communities.io",
+  "ko": "communities.io"
+ },
+ "communitiesApp.common.httpsPrefix": {
+  "en": "https://",
+  "ko": "https://"
+ },
+ "communitiesApp.domainSetup.customDomainDescription": {
+  "en": "Lorem ipsum",
+  "ko": "Lorem ipsum"
+ },
+ "communitiesApp.domainSetup.customDomainPlaceholder": {
+  "en": "example.com",
+  "ko": "example.com"
+ },
+ "contactDetail.contactDndChannels.gbp": {
+  "en": "GBP",
+  "ko": "GBP"
+ },
+ "contactDetail.leftPanel.extraDetails.DNDGMBChannel": {
+  "en": "GMB",
+  "ko": "GMB"
+ },
+ "contactDetail.rightPanel.activityTab.fbclId": {
+  "en": "FB ClickId",
+  "ko": "FB 클릭 ID"
+ },
+ "contactDetail.rightPanel.activityTab.gclId": {
+  "en": "Google ClickId",
+  "ko": "Google 클릭 ID"
+ },
+ "contactsApp.filters.attributionMediumOptions.api": {
+  "en": "API",
+  "ko": "API"
+ },
+ "contactsApp.filters.attributionMediumOptions.facebook": {
+  "en": "Facebook",
+  "ko": "Facebook"
+ },
+ "contactsApp.filters.attributionMediumOptions.google": {
+  "en": "Google",
+  "ko": "Google"
+ },
+ "contactsApp.filters.attributionMediumOptions.linkedin": {
+  "en": "LinkedIn",
+  "ko": "LinkedIn"
+ },
+ "contactsApp.filters.attributionMediumOptions.twitter": {
+  "en": "Twitter",
+  "ko": "Twitter"
+ },
+ "contactsApp.filters.attributionMediumOptions.zapier": {
+  "en": "Zapier",
+  "ko": "Zapier"
+ },
+ "contactsApp.filters.facebookId": {
+  "en": "Facebook ID",
+  "ko": "Facebook ID"
+ },
+ "contactsApp.filters.googleId": {
+  "en": "Google ID",
+  "ko": "Google ID"
+ },
+ "contactsApp.filters.instagramId": {
+  "en": "Instagram ID",
+  "ko": "Instagram ID"
+ },
+ "contactsApp.filters.sourceTypeOptions.crmUi": {
+  "en": "CRM UI",
+  "ko": "CRM 화면"
+ },
+ "contactsApp.listView.dndChannels.fb": {
+  "en": "Facebook",
+  "ko": "Facebook"
+ },
+ "contactsApp.listView.dndChannels.gmb": {
+  "en": "GMB",
+  "ko": "GMB"
+ },
+ "contactsApp.listView.dndChannels.rcs": {
+  "en": "RCS",
+  "ko": "RCS"
+ },
+ "contactsApp.listView.dndChannels.sms": {
+  "en": "SMS",
+  "ko": "SMS"
+ },
+ "conversations.conversation": {
+  "en": "conversation",
+  "ko": "대화"
+ },
+ "conversations.conversationsFound": {
+  "en": "conversations found",
+  "ko": "개의 대화를 찾았습니다"
+ },
+ "conversations.email.facebook": {
+  "en": "Facebook",
+  "ko": "Facebook"
+ },
+ "conversations.email.twitter": {
+  "en": "Twitter",
+  "ko": "Twitter"
+ },
+ "conversations.googleMeet": {
+  "en": "Google Meet",
+  "ko": "Google Meet"
+ },
+ "conversations.markAsRead": {
+  "en": "Mark As Read",
+  "ko": "읽음으로 표시"
+ },
+ "conversations.markAsUnread": {
+  "en": "Mark As Unread",
+  "ko": "읽지 않음으로 표시"
+ },
+ "conversations.message.sms": {
+  "en": "SMS",
+  "ko": "SMS"
+ },
+ "conversations.messageDetails.sms": {
+  "en": "SMS",
+  "ko": "SMS"
+ },
+ "conversations.messageDetails.smtp": {
+  "en": "SMTP",
+  "ko": "SMTP"
+ },
+ "conversations.messageDetails.twilio": {
+  "en": "Twilio",
+  "ko": "Twilio"
+ },
+ "conversations.removeAssignedUser": {
+  "en": "Remove assigned user",
+  "ko": "배정된 사용자 제거"
+ },
+ "conversations.results": {
+  "en": "RESULTS",
+  "ko": "건"
+ },
+ "conversations.send.email.errors.genericError": {
+  "en": "{message}",
+  "ko": "{message}"
+ },
+ "conversations.send.sms.errors.genericError": {
+  "en": "{message}",
+  "ko": "{message}"
+ },
+ "conversations.sendEmail.recipientPlaceholder": {
+  "en": "recipient{'@'}example.com",
+  "ko": "recipient{'@'}example.com"
+ },
+ "conversationsUtilitiesApp.common.businessEmail": {
+  "en": "business{'@'}yourcompany.com",
+  "ko": "business{'@'}yourcompany.com"
+ },
+ "conversationsUtilitiesApp.common.customerEmail": {
+  "en": "customer{'@'}email.com",
+  "ko": "customer{'@'}email.com"
+ },
+ "conversationsUtilitiesApp.common.helloWorld": {
+  "en": "hello world!",
+  "ko": "안녕하세요!"
+ },
+ "conversationsUtilitiesApp.manualActions.sms": {
+  "en": "SMS",
+  "ko": "SMS"
+ },
+ "conversationsUtilitiesApp.metaMarketing.attachmentHint": {
+  "en": "JPG, PNG",
+  "ko": "JPG, PNG"
+ },
+ "conversationsUtilitiesApp.metaMarketing.cta": {
+  "en": "CTA",
+  "ko": "CTA"
+ },
+ "conversationsUtilitiesApp.metaMarketing.scheduleDatePlaceholder": {
+  "en": "DD / MM / YYYY",
+  "ko": "DD / MM / YYYY"
+ },
+ "conversationsUtilitiesApp.metaMarketing.scheduleTimezoneAbbrev": {
+  "en": "IST",
+  "ko": "IST"
+ },
+ "conversationsUtilitiesApp.rcsTemplateCreation.brandName": {
+  "en": "Accent Bazaar",
+  "ko": "Accent Bazaar"
+ },
+ "conversationsUtilitiesApp.settings.SLA": {
+  "en": "SLA",
+  "ko": "SLA"
+ },
+ "conversationsUtilitiesApp.settings.SMS": {
+  "en": "SMS",
+  "ko": "SMS"
+ },
+ "conversationsUtilitiesApp.settings.TIKTOK": {
+  "en": "TikTok",
+  "ko": "TikTok"
+ },
+ "conversationsUtilitiesApp.snippets.enterCtaUrl": {
+  "en": "https://example.com",
+  "ko": "https://example.com"
+ },
+ "conversationsUtilitiesApp.snippets.rcs": {
+  "en": "RCS",
+  "ko": "RCS"
+ },
+ "conversationsUtilitiesApp.snippets.rcsBusinessHandle": {
+  "en": "yourbusiness.rcs",
+  "ko": "yourbusiness.rcs"
+ },
+ "conversationsUtilitiesApp.snippets.suggestedActionUrlLabel": {
+  "en": "URL",
+  "ko": "URL"
+ },
+ "conversationsUtilitiesApp.snippets.suggestedActionUrlPlaceholder": {
+  "en": "https://www.example.com",
+  "ko": "https://www.example.com"
+ },
+ "copilot.alt.copilot": {
+  "en": "Copilot",
+  "ko": "코파일럿"
+ },
+ "copilot.askAi.artifacts.question.keyEsc": {
+  "en": "Esc",
+  "ko": "Esc"
+ },
+ "copilot.askAi.chat.mermaid.label": {
+  "en": "Mermaid",
+  "ko": "Mermaid"
+ },
+ "copilot.askAi.footer.defaultVoiceName": {
+  "en": "Honest Tooth",
+  "ko": "Honest Tooth"
+ },
+ "copilot.askAi.models.groups.anthropic": {
+  "en": "Anthropic",
+  "ko": "Anthropic"
+ },
+ "copilot.askAi.models.groups.google": {
+  "en": "Google",
+  "ko": "Google"
+ },
+ "copilot.askAi.models.groups.openai": {
+  "en": "OpenAI",
+  "ko": "OpenAI"
+ },
+ "copilot.askAi.models.options.claudeSonnet46": {
+  "en": "Claude Sonnet 4.6",
+  "ko": "Claude Sonnet 4.6"
+ },
+ "copilot.askAi.models.options.gemini25Flash": {
+  "en": "Gemini 2.5 Flash",
+  "ko": "Gemini 2.5 Flash"
+ },
+ "copilot.askAi.models.options.gpt41": {
+  "en": "GPT 4.1",
+  "ko": "GPT 4.1"
+ },
+ "copilot.askAi.models.options.sonnet46": {
+  "en": "Sonnet 4.6",
+  "ko": "Sonnet 4.6"
+ },
+ "copilot.askAi.preview.common.html": {
+  "en": "HTML",
+  "ko": "HTML"
+ },
+ "copilot.askAi.preview.smsPlain.inputPlaceholder": {
+  "en": "iMessage",
+  "ko": "iMessage"
+ },
+ "copilot.askAi.preview.smsPlain.status": {
+  "en": "SMS",
+  "ko": "SMS"
+ },
+ "copilot.askAi.preview.social.instagram.accountName": {
+  "en": "your_account",
+  "ko": "your_account"
+ },
+ "copilot.askAi.preview.social.twitter.handle": {
+  "en": "@youraccount",
+  "ko": "@youraccount"
+ },
+ "copilot.askAi.welcome.brandVoices.honestTooth": {
+  "en": "Honest Tooth",
+  "ko": "Honest Tooth"
+ },
+ "copilot.chat.intentAgent": {
+  "en": "🤖 {agent}",
+  "ko": "🤖 {agent}"
+ },
+ "copilot.welcome.copilotAlt": {
+  "en": "Copilot",
+  "ko": "코파일럿"
+ },
+ "countdownTimerApp.customVariables.otp": {
+  "en": "OTP",
+  "ko": "OTP"
+ },
+ "countdownTimerApp.customVariables.pdfUrl": {
+  "en": "PDF URL",
+  "ko": "PDF URL"
+ },
+ "countdownTimerApp.customVariables.shopify": {
+  "en": "Shopify",
+  "ko": "Shopify"
+ },
+ "countdownTimerApp.customVariables.url": {
+  "en": "URL",
+  "ko": "URL"
+ },
+ "countdownTimerApp.timezones.label": {
+  "en": "GMT{offset} {zone} ({abbr})",
+  "ko": "GMT{offset} {zone} ({abbr})"
+ },
+ "crmCommon.tasks.statusEditor.maxCharactersCount": {
+  "en": "{count}/{max}",
+  "ko": "{count}/{max}"
+ },
+ "crmObjectsSettingsApp.bulkActions.filters.actions.bulk-ops-v2": {
+  "en": "bulk-ops-v2",
+  "ko": "대량 작업"
+ },
+ "crmObjectsSettingsApp.bulkActions.filters.actions.bulk-review-request": {
+  "en": "bulk-review-request",
+  "ko": "대량 리뷰 요청"
+ },
+ "crmObjectsSettingsApp.bulkActions.filters.actions.bulk-sms-v2": {
+  "en": "bulk-sms-v2",
+  "ko": "대량 SMS"
+ },
+ "crmObjectsSettingsApp.bulkActions.filters.actions.bulk-whatsapp": {
+  "en": "bulk-whatsapp",
+  "ko": "대량 왓츠앱"
+ },
+ "crmObjectsSettingsApp.customFields.conditionalRules.conditionText.generic": {
+  "en": "{field} {op} {value}",
+  "ko": "{field} {op} {value}"
+ },
+ "crmObjectsSettingsApp.customFields.conditionalRules.inlineRenderDescription": {
+  "en": "Shown fields also render a second time directly beneath {trigger}, so the dependency is visible where the user is working. They keep their natural position in the form either way.",
+  "ko": "표시되는 필드는 {trigger} 바로 아래에도 한 번 더 표시되어, 사용자가 작업 중인 위치에서 종속 관계를 바로 확인할 수 있습니다. 어느 경우든 폼 안에서의 원래 위치는 그대로 유지됩니다."
+ },
+ "crmObjectsSettingsApp.customFields.dateRangePlaceholderStart": {
+  "en": "MM DD, YYYY",
+  "ko": "MM DD, YYYY"
+ },
+ "crmObjectsSettingsApp.customFields.formula.previewSampleDate": {
+  "en": "Jul 27, 2026",
+  "ko": "Jul 27, 2026"
+ },
+ "crmObjectsSettingsApp.customFields.formula.previewSampleDateTime": {
+  "en": "Jul 27, 2026 01:25 PM",
+  "ko": "Jul 27, 2026 01:25 PM"
+ },
+ "crmObjectsSettingsApp.customFields.formula.sampleTableDatePlaceholder": {
+  "en": "MMM D, YYYY",
+  "ko": "MMM D, YYYY"
+ },
+ "crmObjectsSettingsApp.customFields.formula.sampleTableOthersPlaceholders.CHECKBOX": {
+  "en": "option1, option2",
+  "ko": "옵션1, 옵션2"
+ },
+ "crmObjectsSettingsApp.customFields.formula.sampleTableOthersPlaceholders.MULTIPLE_OPTIONS": {
+  "en": "option1, option2",
+  "ko": "옵션1, 옵션2"
+ },
+ "crmObjectsSettingsApp.customFields.formula.sampleTableOthersPlaceholders.TEXTBOX_LIST": {
+  "en": "value1, value2",
+  "ko": "값1, 값2"
+ },
+ "crmObjectsSettingsApp.customFields.formula.sampleTableOthersPlaceholders.USER": {
+  "en": "alan, john doe",
+  "ko": "홍길동, 김철수"
+ },
+ "crmObjectsSettingsApp.customFields.usd": {
+  "en": "USD",
+  "ko": "USD"
+ },
+ "crmObjectsSettingsApp.customFields.userPreviewChip1": {
+  "en": "Alex Morgan",
+  "ko": "김민준"
+ },
+ "crmObjectsSettingsApp.customFields.userPreviewChip2": {
+  "en": "Sam Taylor",
+  "ko": "이서연"
+ },
+ "crmObjectsSettingsApp.manageTags.tagDescriptionCount": {
+  "en": "{current} / {max}",
+  "ko": "{current} / {max}"
+ },
+ "crmObjectsSettingsApp.restoreContacts.typeDeletePlaceholder": {
+  "en": "{keyword}",
+  "ko": "{keyword}"
+ },
+ "customField.createFieldModal.fileTypes.csv": {
+  "en": "XLS/CSV",
+  "ko": "XLS/CSV"
+ },
+ "customField.createFieldModal.fileTypes.doc": {
+  "en": "DOCX/DOC",
+  "ko": "DOCX/DOC"
+ },
+ "customField.createFieldModal.fileTypes.gif": {
+  "en": "GIF",
+  "ko": "GIF"
+ },
+ "customField.createFieldModal.fileTypes.jpg": {
+  "en": "JPG/JPEG",
+  "ko": "JPG/JPEG"
+ },
+ "customField.createFieldModal.fileTypes.pdf": {
+  "en": "PDF",
+  "ko": "PDF"
+ },
+ "customField.createFieldModal.fileTypes.png": {
+  "en": "PNG",
+  "ko": "PNG"
+ },
+ "customField.previews.box1": {
+  "en": "Box1",
+  "ko": "항목1"
+ },
+ "customField.previews.box2": {
+  "en": "Box2",
+  "ko": "항목2"
+ },
+ "domainConnectApp.entriInitialScreenTitle": {
+  "en": "Connect your domain to {company}",
+  "ko": "{company}에 도메인 연결"
+ },
+ "domainConnectApp.entriPreCheckUnavailable": {
+  "en": "We couldn't check this domain for conflicts just now. Please try again in a moment.",
+  "ko": "지금은 이 도메인의 충돌 여부를 확인하지 못했습니다. 잠시 후 다시 시도하세요."
+ },
+ "domainResellingApp.transferOut.cfTransfer.accountIdPlaceholder": {
+  "en": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
+  "ko": "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+ },
+ "domainResellingApp.ttl": {
+  "en": "TTL",
+  "ko": "TTL"
+ },
+ "eventModals.voicemail.faq": {
+  "en": "FAQ",
+  "ko": "자주 묻는 질문"
+ },
+ "fpDebugger.checks.locationAll": {
+  "en": "location.all",
+  "ko": "location.all"
+ },
+ "fpDebugger.checks.locationAllUpper": {
+  "en": "LOCATION.ALL",
+  "ko": "LOCATION.ALL"
+ },
+ "fpDebugger.checks.locationAny": {
+  "en": "location.any",
+  "ko": "location.any"
+ },
+ "fpDebugger.checks.locationAnyUpper": {
+  "en": "LOCATION.ANY",
+  "ko": "LOCATION.ANY"
+ },
+ "fpDebugger.checks.scopesAll": {
+  "en": "scopes.all",
+  "ko": "scopes.all"
+ },
+ "fpDebugger.checks.scopesAllUpper": {
+  "en": "SCOPES.ALL",
+  "ko": "SCOPES.ALL"
+ },
+ "fpDebugger.checks.scopesAny": {
+  "en": "scopes.any",
+  "ko": "scopes.any"
+ },
+ "fpDebugger.checks.scopesAnyUpper": {
+  "en": "SCOPES.ANY",
+  "ko": "SCOPES.ANY"
+ },
+ "fpDebugger.journey.noPermission": {
+  "en": "NO_PERMISSION",
+  "ko": "권한 없음"
+ },
+ "fpDebugger.pass": {
+  "en": "PASS",
+  "ko": "통과"
+ },
+ "funnelWebsiteApp.aiStudioEntry.banner.cta": {
+  "en": "Start building",
+  "ko": "만들기 시작"
+ },
+ "funnelWebsiteApp.aiStudioEntry.banner.description": {
+  "en": "Just describe your business, and AI Studio generates a custom funnel or website for you.",
+  "ko": "비즈니스를 설명하기만 하면 AI 스튜디오가 맞춤형 퍼널이나 웹사이트를 만들어 드립니다."
+ },
+ "funnelWebsiteApp.aiStudioEntry.banner.title": {
+  "en": "Try AI Studio now!",
+  "ko": "지금 AI 스튜디오를 사용해 보세요!"
+ },
+ "funnelWebsiteApp.common.clickFunnelsUrl": {
+  "en": "ClickFunnels URL",
+  "ko": "ClickFunnels URL"
+ },
+ "funnelWebsiteApp.common.deleteModalFolderEntitiesWarning": {
+  "en": "All items in this folder will also be deleted. This action cannot be undone.",
+  "ko": "이 폴더의 모든 항목도 함께 삭제됩니다. 이 작업은 되돌릴 수 없습니다."
+ },
+ "funnelWebsiteApp.common.seoAndAeo": {
+  "en": "SEO & AEO",
+  "ko": "SEO & AEO"
+ },
+ "funnelWebsiteApp.headers.headerPlaceholder": {
+  "en": "Content-Security-Policy",
+  "ko": "Content-Security-Policy"
+ },
+ "funnelWebsiteApp.headers.valuePlaceholder": {
+  "en": "default-src https: data: 'unsafe-inline' 'unsafe-eval'",
+  "ko": "default-src https: data: 'unsafe-inline' 'unsafe-eval'"
+ },
+ "funnelWebsiteApp.seoAiSearch.tabLabel": {
+  "en": "SEO & AEO",
+  "ko": "SEO & AEO"
+ },
+ "funnelWebsiteApp.store.askAiSearchQuery": {
+  "en": "Show my Store setup progress and what to do next",
+  "ko": "내 스토어 설정 진행 상황과 다음에 할 일을 알려 주세요"
+ },
+ "funnelWebsiteApp.store.reorderNotAllowedDescription": {
+  "en": "Store pages follow a fixed order, so they can't be dragged and dropped.",
+  "ko": "스토어 페이지는 순서가 고정되어 있어 드래그 앤 드롭으로 옮길 수 없습니다."
+ },
+ "funnelWebsiteApp.store.reorderNotAllowedTitle": {
+  "en": "Store pages can't be reordered",
+  "ko": "스토어 페이지는 순서를 변경할 수 없습니다"
+ },
+ "ghlEmailBuilderCommon.campaignSchedule.contactsRecipientLabel": {
+  "en": "{Contacts}",
+  "ko": "{Contacts}"
+ },
+ "ghlEmailBuilderCommon.campaignSchedule.datePlaceholder": {
+  "en": "MM / DD / YYYY",
+  "ko": "MM / DD / YYYY"
+ },
+ "ghlEmailBuilderCommon.chatBot.heroDeviceGallery.browserChromeUrl": {
+  "en": "mail.app",
+  "ko": "mail.app"
+ },
+ "ghlEmailBuilderCommon.chatBot.modelSelector.gpt61Sol": {
+  "en": "GPT-6.1 Sol",
+  "ko": "GPT-6.1 Sol"
+ },
+ "ghlEmailBuilderCommon.common.exampleEmailPlaceholder": {
+  "en": "example{'@'}mail.com",
+  "ko": "example{'@'}mail.com"
+ },
+ "ghlEmailBuilderCommon.common.icons.createdWithSketch": {
+  "en": "Created with Sketch.",
+  "ko": "Sketch로 제작되었습니다."
+ },
+ "ghlEmailBuilderCommon.customVariables.pdfLink": {
+  "en": "Pdf URL",
+  "ko": "PDF URL"
+ },
+ "ghlEmailBuilderCommon.customVariables.pdfUrl": {
+  "en": "PDF URL",
+  "ko": "PDF URL"
+ },
+ "ghlEmailBuilderCommon.customVariables.shopify": {
+  "en": "Shopify",
+  "ko": "Shopify"
+ },
+ "ghlEmailBuilderCommon.emailBuilder.appleMail": {
+  "en": "Apple Mail",
+  "ko": "Apple Mail"
+ },
+ "ghlEmailBuilderCommon.emailBuilder.assist.emailAiEyebrow": {
+  "en": "Email AI",
+  "ko": "이메일 AI"
+ },
+ "ghlEmailBuilderCommon.emailBuilder.defaultContent.footerCopyright": {
+  "en": "Copyright © {year} {locationName}, All rights reserved.",
+  "ko": "Copyright © {year} {locationName}. 모든 권리 보유."
+ },
+ "ghlEmailBuilderCommon.emailBuilder.devices.ipad": {
+  "en": "iPad",
+  "ko": "iPad"
+ },
+ "ghlEmailBuilderCommon.emailBuilder.devices.iphoneX": {
+  "en": "iPhone X",
+  "ko": "iPhone X"
+ },
+ "ghlEmailBuilderCommon.emailBuilder.fileUploadPrompt": {
+  "en": "{action} file for upload",
+  "ko": "업로드할 파일 {action}"
+ },
+ "ghlEmailBuilderCommon.emailBuilder.fontPreviewSampleHeading": {
+  "en": "A wizard's job is to vex chumps quickly in fog",
+  "ko": "다람쥐 헌 쳇바퀴에 타고파"
+ },
+ "ghlEmailBuilderCommon.emailBuilder.httpPrefix": {
+  "en": "http://",
+  "ko": "http://"
+ },
+ "ghlEmailBuilderCommon.emailBuilder.placeholders.toEmail": {
+  "en": "mail{'@'}example.com, johndoe{'@'}xyz.com",
+  "ko": "mail{'@'}example.com, johndoe{'@'}xyz.com"
+ },
+ "ghlEmailBuilderCommon.emailBuilder.urlPlaceholder": {
+  "en": "https://www.example.com",
+  "ko": "https://www.example.com"
+ },
+ "ghlEmailBuilderCommon.emailBuilder.yahoo": {
+  "en": "Yahoo",
+  "ko": "Yahoo"
+ },
+ "ghlEmailBuilderCommon.emailCampaign.contactsTaggedAs": {
+  "en": "{Contact} tagged as '{tag}'",
+  "ko": "'{tag}' 태그가 지정된 {Contact}"
+ },
+ "ghlEmailBuilderCommon.emailCampaign.emailPlaceholder": {
+  "en": "mail{'@'}example.com",
+  "ko": "mail{'@'}example.com"
+ },
+ "ghlEmailBuilderCommon.emailTemplate.providers.mailchimp": {
+  "en": "Mailchimp",
+  "ko": "Mailchimp"
+ },
+ "ghlEmailBuilderCommon.importTemplates.templateUrlPlaceholder": {
+  "en": "https://www.yourlink.com",
+  "ko": "https://www.yourlink.com"
+ },
+ "ghlEmailBuilderCommon.inboxPreview.clientLabel": {
+  "en": "{client} – {context}",
+  "ko": "{client} – {context}"
+ },
+ "integrations.printify.title": {
+  "en": "Printify: POD",
+  "ko": "Printify: 주문형 인쇄(POD)"
+ },
+ "integrations.shipStation.title": {
+  "en": "Shipstation",
+  "ko": "Shipstation"
+ },
+ "integrationsApp.common.eliza": {
+  "en": "Eliza",
+  "ko": "Eliza"
+ },
+ "integrationsApp.common.facebook": {
+  "en": "Facebook",
+  "ko": "Facebook"
+ },
+ "integrationsApp.common.sms": {
+  "en": "SMS",
+  "ko": "SMS"
+ },
+ "integrationsApp.common.stripe": {
+  "en": "Stripe",
+  "ko": "Stripe"
+ },
+ "integrationsApp.common.twilio": {
+  "en": "Twilio",
+  "ko": "Twilio"
+ },
+ "integrationsApp.gmb.communicationChannels.facebook": {
+  "en": "Facebook",
+  "ko": "Facebook"
+ },
+ "integrationsApp.gmb.communicationChannels.facebookPlaceholder": {
+  "en": "https://www.facebook.com/{username}",
+  "ko": "https://www.facebook.com/{username}"
+ },
+ "integrationsApp.gmb.communicationChannels.instagram": {
+  "en": "Instagram",
+  "ko": "Instagram"
+ },
+ "integrationsApp.gmb.communicationChannels.instagramPlaceholder": {
+  "en": "https://www.instagram.com/{username}",
+  "ko": "https://www.instagram.com/{username}"
+ },
+ "integrationsApp.gmb.communicationChannels.linkedin": {
+  "en": "LinkedIn",
+  "ko": "LinkedIn"
+ },
+ "integrationsApp.gmb.communicationChannels.linkedinPlaceholder": {
+  "en": "https://www.linkedin.com/in/{username}",
+  "ko": "https://www.linkedin.com/in/{username}"
+ },
+ "integrationsApp.gmb.communicationChannels.pinterest": {
+  "en": "Pinterest",
+  "ko": "Pinterest"
+ },
+ "integrationsApp.gmb.communicationChannels.pinterestPlaceholder": {
+  "en": "https://www.pinterest.com/{username}",
+  "ko": "https://www.pinterest.com/{username}"
+ },
+ "integrationsApp.gmb.communicationChannels.tiktok": {
+  "en": "TikTok",
+  "ko": "TikTok"
+ },
+ "integrationsApp.gmb.communicationChannels.tiktokPlaceholder": {
+  "en": "https://www.tiktok.com/{username}",
+  "ko": "https://www.tiktok.com/{username}"
+ },
+ "integrationsApp.gmb.communicationChannels.twitter": {
+  "en": "Twitter",
+  "ko": "Twitter"
+ },
+ "integrationsApp.gmb.communicationChannels.twitterPlaceholder": {
+  "en": "https://www.twitter.com/{username}",
+  "ko": "https://www.twitter.com/{username}"
+ },
+ "integrationsApp.gmb.communicationChannels.youtube": {
+  "en": "YouTube",
+  "ko": "YouTube"
+ },
+ "integrationsApp.gmb.communicationChannels.youtubePlaceholder": {
+  "en": "https://www.youtube.com/channel/{username}",
+  "ko": "https://www.youtube.com/channel/{username}"
+ },
+ "integrationsApp.integrations.apps.canva.name": {
+  "en": "Canva",
+  "ko": "Canva"
+ },
+ "integrationsApp.integrations.apps.clio.name": {
+  "en": "Clio",
+  "ko": "Clio"
+ },
+ "integrationsApp.integrations.apps.facebook.name": {
+  "en": "Facebook",
+  "ko": "Facebook"
+ },
+ "integrationsApp.integrations.apps.gmc.name": {
+  "en": "Google Merchant Center",
+  "ko": "Google Merchant Center"
+ },
+ "integrationsApp.integrations.apps.google.name": {
+  "en": "Google",
+  "ko": "Google"
+ },
+ "integrationsApp.integrations.apps.instagramDirect.name": {
+  "en": "Instagram",
+  "ko": "Instagram"
+ },
+ "integrationsApp.integrations.apps.linkedIn.name": {
+  "en": "LinkedIn",
+  "ko": "LinkedIn"
+ },
+ "integrationsApp.integrations.apps.printful.name": {
+  "en": "Printful",
+  "ko": "Printful"
+ },
+ "integrationsApp.integrations.apps.printify.name": {
+  "en": "Printify",
+  "ko": "Printify"
+ },
+ "integrationsApp.integrations.apps.quickbooks.name": {
+  "en": "QuickBooks",
+  "ko": "QuickBooks"
+ },
+ "integrationsApp.integrations.apps.shippo.name": {
+  "en": "Shippo",
+  "ko": "Shippo"
+ },
+ "integrationsApp.integrations.apps.shipstation.name": {
+  "en": "Shipstation",
+  "ko": "Shipstation"
+ },
+ "integrationsApp.integrations.apps.shopify.name": {
+  "en": "Shopify",
+  "ko": "Shopify"
+ },
+ "integrationsApp.integrations.apps.slack.name": {
+  "en": "Slack",
+  "ko": "Slack"
+ },
+ "integrationsApp.integrations.apps.wave.name": {
+  "en": "Wave",
+  "ko": "Wave"
+ },
+ "integrationsApp.integrations.apps.wooCommerce.name": {
+  "en": "WooCommerce",
+  "ko": "WooCommerce"
+ },
+ "integrationsApp.integrations.apps.xero.name": {
+  "en": "Xero",
+  "ko": "Xero"
+ },
+ "integrationsApp.integrations.clio.title": {
+  "en": "Clio",
+  "ko": "Clio"
+ },
+ "integrationsApp.integrations.facebook.Instagram": {
+  "en": "Instagram",
+  "ko": "Instagram"
+ },
+ "integrationsApp.integrations.facebook.facebook": {
+  "en": "Facebook",
+  "ko": "Facebook"
+ },
+ "integrationsApp.integrations.facebook.shops": {
+  "en": "Shops",
+  "ko": "샵"
+ },
+ "integrationsApp.integrations.tiktokBusiness.additionalAccounts": {
+  "en": "{names} +{count}",
+  "ko": "{names} +{count}"
+ },
+ "integrationsApp.platformDebug.accountPlaceholder": {
+  "en": "acct_18f2c9a77b",
+  "ko": "acct_18f2c9a77b"
+ },
+ "integrationsApp.platformDebug.bodyKeyPlaceholder": {
+  "en": "grant_type",
+  "ko": "grant_type"
+ },
+ "integrationsApp.platformDebug.bodyValuePlaceholder": {
+  "en": "refresh_token",
+  "ko": "refresh_token"
+ },
+ "integrationsApp.platformDebug.headerKeyPlaceholder": {
+  "en": "access_token",
+  "ko": "access_token"
+ },
+ "integrationsApp.platformDebug.headerValuePlaceholder": {
+  "en": "eyJhbGciOiJIUzI1NiIs…",
+  "ko": "eyJhbGciOiJIUzI1NiIs…"
+ },
+ "integrationsApp.platformDebug.headers": {
+  "en": "headers",
+  "ko": "헤더"
+ },
+ "integrationsApp.platformDebug.locationPlaceholder": {
+  "en": "ve9EPM428h8vShlRW1KT",
+  "ko": "ve9EPM428h8vShlRW1KT"
+ },
+ "integrationsApp.platformDebug.paramKeyPlaceholder": {
+  "en": "client_id",
+  "ko": "client_id"
+ },
+ "integrationsApp.platformDebug.params": {
+  "en": "params",
+  "ko": "파라미터"
+ },
+ "integrationsApp.platformDebug.urlPlaceholder": {
+  "en": "https://services.leadconnectorhq.com/oauth/token",
+  "ko": "https://services.example.com/oauth/token"
+ },
+ "launchpad.duda": {
+  "en": "Duda",
+  "ko": "Duda"
+ },
+ "launchpad.joomla": {
+  "en": "Joomla",
+  "ko": "Joomla"
+ },
+ "launchpad.shopify": {
+  "en": "Shopify",
+  "ko": "Shopify"
+ },
+ "launchpad.squarespace": {
+  "en": "SquareSpace",
+  "ko": "SquareSpace"
+ },
+ "launchpad.weebly": {
+  "en": "Weebly",
+  "ko": "Weebly"
+ },
+ "launchpadApp.launchpad.accessibility.vector1Alt": {
+  "en": "Vector 1",
+  "ko": "벡터 1"
+ },
+ "launchpadApp.launchpad.accessibility.vector2Alt": {
+  "en": "Vector 2",
+  "ko": "벡터 2"
+ },
+ "launchpadApp.launchpad.assetViewer.assetCount": {
+  "en": "{category} ({count})",
+  "ko": "{category} ({count})"
+ },
+ "launchpadApp.launchpad.bgimOffer.eyebrowName": {
+  "en": "Billy Gene",
+  "ko": "Billy Gene"
+ },
+ "launchpadApp.launchpad.bgimOffer.widget.partner": {
+  "en": "Billy Gene",
+  "ko": "Billy Gene"
+ },
+ "launchpadApp.launchpad.gamified.callCard.kickoff.rewardBadge": {
+  "en": "💰 ${amount}",
+  "ko": "💰 ${amount}"
+ },
+ "leadgenPaymentLinksApp.editor.brandingDefault": {
+  "en": "Powered by {location}",
+  "ko": "{location} 제공"
+ },
+ "leadgenPaymentLinksApp.editor.emailPlaceholder": {
+  "en": "abc{'@'}gmail.com",
+  "ko": "abc{'@'}gmail.com"
+ },
+ "leadgenPaymentLinksApp.editor.redirectPlaceholder": {
+  "en": "https://example.com",
+  "ko": "https://example.com"
+ },
+ "leadgenPaymentLinksApp.sendToContact.smsOnly": {
+  "en": "SMS",
+  "ko": "SMS"
+ },
+ "locationsApp.facebook": {
+  "en": "Facebook",
+  "ko": "Facebook"
+ },
+ "locationsApp.icons.twitterAlt": {
+  "en": "Twitter",
+  "ko": "Twitter"
+ },
+ "locationsApp.manageSubAccount.advancedSettings.sms": {
+  "en": "SMS",
+  "ko": "SMS"
+ },
+ "locationsApp.manageSubAccount.social.yelp_link": {
+  "en": "https://www.yelp.com",
+  "ko": "https://www.yelp.com"
+ },
+ "marketing.campaign.automationsPlaceholder": {
+  "en": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quaerat pariatur consequatur rerum neque a, id, nam nostrum iure accusantium magnam nemo perferendis eveniet quos perspiciatis molestiae explicabo reprehenderit nesciunt recusan",
+  "ko": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas quaerat pariatur consequatur rerum neque a, id, nam nostrum iure accusantium magnam nemo perferendis eveniet quos perspiciatis molestiae explicabo reprehenderit nesciunt recusan"
+ },
+ "marketing.campaign.exampleAddress": {
+  "en": "801 7th Avenue North, Saskatoon, SK",
+  "ko": "서울특별시 강남구 테헤란로 123"
+ },
+ "marketing.campaign.exampleCompanyName": {
+  "en": "City Perks Coffehouse",
+  "ko": "시티 퍼크스 커피하우스"
+ },
+ "marketing.campaign.exampleEmail": {
+  "en": "dstumph{'@'}vendasta.com",
+  "ko": "dstumph{'@'}vendasta.com"
+ },
+ "marketing.campaign.utc": {
+  "en": "UTC",
+  "ko": "UTC"
+ },
+ "mediaCenterApp.common.canva": {
+  "en": "Canva",
+  "ko": "Canva"
+ },
+ "mediaCenterApp.common.canvaConnected": {
+  "en": "Canva",
+  "ko": "Canva"
+ },
+ "mediaCenterApp.common.googleDrive": {
+  "en": "Google Drive",
+  "ko": "Google Drive"
+ },
+ "mediaCenterApp.common.pixabay": {
+  "en": "Pixabay",
+  "ko": "Pixabay"
+ },
+ "mediaCenterApp.common.searchInFolder": {
+  "en": "Search in {0}",
+  "ko": "{0}에서 검색"
+ },
+ "mediaCenterApp.common.unsplash": {
+  "en": "Unsplash",
+  "ko": "Unsplash"
+ },
+ "mediaCenterApp.common.url": {
+  "en": "URL",
+  "ko": "URL"
+ },
+ "mediaCenterApp.components.filePreviewModal.dimensions": {
+  "en": "{width} x {height} PX",
+  "ko": "{width} x {height} PX"
+ },
+ "mediaCenterApp.components.filePreviewModal.dimensionsValue": {
+  "en": "{width} × {height}",
+  "ko": "{width} × {height}"
+ },
+ "mediaCenterApp.components.filePreviewModal.sheetValue": {
+  "en": "{name} ({current}/{total})",
+  "ko": "{name} ({current}/{total})"
+ },
+ "mediaCenterApp.components.mediaUsage.sheetValue": {
+  "en": "{name} ({current}/{total})",
+  "ko": "{name} ({current}/{total})"
+ },
+ "notifications.psBubble.proveSource": {
+  "en": "ProveSource",
+  "ko": "ProveSource"
+ },
+ "notifications.psBubble.review.proofMessage": {
+  "en": " ProofMessge",
+  "ko": " 리뷰 메시지"
+ },
+ "notifications.psBubble.review.reviewerName": {
+  "en": "Varun Vairavan",
+  "ko": "김민준"
+ },
+ "notifications.psBubble.stream.name": {
+  "en": "Mike ",
+  "ko": "민수 "
+ },
+ "notifications.step4.icons8": {
+  "en": "Icons8.com",
+  "ko": "Icons8.com"
+ },
+ "onboardingApp.bgimOffer.name": {
+  "en": "Billy Gene",
+  "ko": "Billy Gene"
+ },
+ "onboardingApp.onboardingSteps.setWebsite.placeholderManual": {
+  "en": "www.mybusiness.com",
+  "ko": "www.mybusiness.com"
+ },
+ "onboardingApp.onboardingSteps.setupKickoff.rewardsBanner.amount": {
+  "en": "${kickoffRewardAmount}",
+  "ko": "${kickoffRewardAmount}"
+ },
+ "onboardingApp.onboardingSteps.setupSuccessCall.rewardsBanner.amount": {
+  "en": "${successRewardAmount}",
+  "ko": "${successRewardAmount}"
+ },
+ "opportunitiesApp.appointments.google": {
+  "en": "Google Meet",
+  "ko": "Google Meet"
+ },
+ "opportunitiesApp.appointments.teams": {
+  "en": "Microsoft Teams",
+  "ko": "Microsoft Teams"
+ },
+ "opportunitiesApp.csv.opportunityNotes": {
+  "en": "{opportunity}'s notes",
+  "ko": "{opportunity} 메모"
+ },
+ "opportunitiesApp.editOpportunity.opportunityDetails": {
+  "en": "{opportunity} Details",
+  "ko": "{opportunity} 상세정보"
+ },
+ "opportunitiesApp.opportunities.abandoned": {
+  "en": "ABANDONED",
+  "ko": "중단됨"
+ },
+ "opportunitiesApp.opportunities.allowDifferentOwners": {
+  "en": "Allow different owners for primary {contacts} and {opportunities}",
+  "ko": "기본 {contacts}와(과) {opportunities}에 서로 다른 소유자 허용"
+ },
+ "opportunitiesApp.opportunities.automaticallyMake": {
+  "en": "Automatically make {opportunity} owner a follower of the primary {contact}",
+  "ko": "{opportunity} 소유자를 기본 {contact}의 팔로워로 자동 지정"
+ },
+ "opportunitiesApp.opportunities.automaticallyMakeContact": {
+  "en": "Automatically make primary {contact} owner a follower of their {opportunities}",
+  "ko": "기본 {contact} 소유자를 해당 {opportunities}의 팔로워로 자동 지정"
+ },
+ "opportunitiesApp.opportunities.contactDes": {
+  "en": "This is done to give the primary {contact} owner access to the {opportunity} information",
+  "ko": "기본 {contact} 소유자에게 {opportunity} 정보에 대한 액세스 권한을 부여하기 위한 설정입니다"
+ },
+ "opportunitiesApp.opportunities.contactDesToolTip": {
+  "en": "When a primary {contact} owner changes, the new owner is added as a follower of all {opportunities} where that {contact} is the primary {contact}.",
+  "ko": "기본 {contact}의 소유자가 변경되면, 해당 {contact}이(가) 기본 {contact}(으)로 지정된 모든 {opportunities}에 새 소유자가 팔로워로 추가됩니다."
+ },
+ "opportunitiesApp.opportunities.location_team_management": {
+  "en": "location_team_management",
+  "ko": "location_team_management"
+ },
+ "opportunitiesApp.opportunities.open": {
+  "en": "OPEN",
+  "ko": "진행 중"
+ },
+ "opportunitiesApp.opportunities.opportunityOwnerAccess": {
+  "en": "This is done to give the {opportunity} owner access to the primary {contact} information.",
+  "ko": "{opportunity} 소유자에게 기본 {contact} 정보에 대한 액세스 권한을 부여하기 위한 설정입니다."
+ },
+ "opportunitiesApp.opportunities.quickActionSource.actionWithSource": {
+  "en": "{action} · {source}",
+  "ko": "{action} · {source}"
+ },
+ "opportunitiesApp.opportunities.tour.progress": {
+  "en": "{current}/{total}",
+  "ko": "{current}/{total}"
+ },
+ "opportunitiesApp.opportunities.whenANewOwner": {
+  "en": "When an {opportunity} owner changes, the new owner is added as a follower of the {opportunity}'s primary {contact}.",
+  "ko": "{opportunity} 소유자가 변경되면, 새 소유자가 해당 {opportunity}의 기본 {contact}에 팔로워로 추가됩니다."
+ },
+ "opportunitiesApp.pipelinePage.previewSampleContact": {
+  "en": "John Doe",
+  "ko": "홍길동"
+ },
+ "opportunitiesApp.pipelinePage.reorderModal.positionInputPlaceholder": {
+  "en": "1–{max}",
+  "ko": "1–{max}"
+ },
+ "opportunitiesApp.preview.companyName": {
+  "en": "Tech Innovators Inc.",
+  "ko": "테크 이노베이터스(주)"
+ },
+ "payments.automaticTaxes": {
+  "en": "Automatic taxes",
+  "ko": "자동 세금"
+ },
+ "payments.manualTaxes": {
+  "en": "Manual taxes",
+  "ko": "수동 세금"
+ },
+ "payments.pickupInStore": {
+  "en": "Pickup in store",
+  "ko": "스토어 내 픽업"
+ },
+ "payments.taxDisplaySettings": {
+  "en": "Tax display settings",
+  "ko": "세금 표시 설정"
+ },
+ "payments.taxZones": {
+  "en": "Tax zones",
+  "ko": "세금 지역"
+ },
+ "phoneSystem.rcsMessaging": {
+  "en": "RCS Messaging",
+  "ko": "RCS 메시징"
+ },
+ "pmd.helpDrawer.manageSupportAccess": {
+  "en": "Manage support access →",
+  "ko": "지원팀 액세스 관리 →"
+ },
+ "pmd.helpDrawer.supportAccessDisabledDescription": {
+  "en": "Allow authorized HighLevel support specialists to access your account for troubleshooting.",
+  "ko": "문제 해결을 위해 승인된 하이퍼클래스 지원팀 전문가가 계정에 액세스하도록 허용합니다."
+ },
+ "pmd.helpDrawer.supportAccessEnabledUntil": {
+  "en": "Authorized HighLevel support specialists can access your account until {date}.",
+  "ko": "승인된 하이퍼클래스 지원팀 전문가가 {date}까지 계정에 액세스할 수 있습니다."
+ },
+ "pmd.helpDrawer.supportAccessTitle": {
+  "en": "Support Access",
+  "ko": "지원팀 액세스"
+ },
+ "pmd.length_": {
+  "en": ".length }}",
+  "ko": ".length }}"
+ },
+ "pmd.productRebilling.gpt4oMini": {
+  "en": "GPT-4o-mini",
+  "ko": "GPT-4o-mini"
+ },
+ "pmd.seo": {
+  "en": "SEO",
+  "ko": "SEO"
+ },
+ "pmd.usd": {
+  "en": "USD",
+  "ko": "USD"
+ },
+ "powerDialerApp.transfer.deviceSip": {
+  "en": "SIP",
+  "ko": "SIP"
+ },
+ "productsApp.bulkEdit.fieldManagement.groups.seo": {
+  "en": "SEO",
+  "ko": "SEO"
+ },
+ "productsApp.common.americanExpress": {
+  "en": "American Express",
+  "ko": "American Express"
+ },
+ "productsApp.common.authorizeNet": {
+  "en": "Authorize.net",
+  "ko": "Authorize.net"
+ },
+ "productsApp.common.dinersClub": {
+  "en": "Diners Club",
+  "ko": "Diners Club"
+ },
+ "productsApp.common.jcb": {
+  "en": "JCB",
+  "ko": "JCB"
+ },
+ "productsApp.common.mastercard": {
+  "en": "Mastercard",
+  "ko": "Mastercard"
+ },
+ "productsApp.common.nmi": {
+  "en": "NMI",
+  "ko": "NMI"
+ },
+ "productsApp.common.sku": {
+  "en": "SKU",
+  "ko": "SKU"
+ },
+ "productsApp.common.stripe": {
+  "en": "Stripe",
+  "ko": "Stripe"
+ },
+ "productsApp.common.text2Pay": {
+  "en": "Text2Pay",
+  "ko": "문자 결제"
+ },
+ "productsApp.common.url": {
+  "en": "URL",
+  "ko": "URL"
+ },
+ "productsApp.common.visa": {
+  "en": "Visa",
+  "ko": "Visa"
+ },
+ "productsApp.common.woocommerce": {
+  "en": "WooCommerce",
+  "ko": "WooCommerce"
+ },
+ "productsApp.product.deleteModal.confirmationPlaceholder": {
+  "en": "DELETE",
+  "ko": "DELETE"
+ },
+ "productsApp.product.formSubMenu.saas": {
+  "en": "SaaS",
+  "ko": "SaaS"
+ },
+ "productsApp.product.seo.handlePrefix": {
+  "en": "/product/",
+  "ko": "/product/"
+ },
+ "proposalCommon.common.redirectUrlPlaceholder": {
+  "en": "https://example.com",
+  "ko": "https://example.com"
+ },
+ "proposalCommon.common.sms": {
+  "en": "SMS",
+  "ko": "SMS"
+ },
+ "proposalCommon.common.timezoneLabel": {
+  "en": "GMT{offset} {zone} ({abbreviation})",
+  "ko": "GMT{offset} {zone} ({abbreviation})"
+ },
+ "proposalCommon.common.url": {
+  "en": "URL",
+  "ko": "URL"
+ },
+ "proposalCommon.common.utc": {
+  "en": "UTC",
+  "ko": "UTC"
+ },
+ "proposalCommon.proposals.repeatY": {
+  "en": "Repeat-Y",
+  "ko": "세로 반복"
+ },
+ "proposalCommon.templates.shareLinkModal.linkPlaceholder": {
+  "en": "https://sendlink.co/document...",
+  "ko": "https://sendlink.co/document..."
+ },
+ "reportingApp.attributionReporting.contact": {
+  "en": "{Contact}",
+  "ko": "{Contact}"
+ },
+ "reportingApp.attributionReporting.contactId": {
+  "en": "{Contact} ID",
+  "ko": "{Contact} ID"
+ },
+ "reportingApp.attributionReporting.contacts": {
+  "en": "{Contacts}",
+  "ko": "{Contacts}"
+ },
+ "reportingApp.attributionReporting.googleUrl": {
+  "en": "https://google.com",
+  "ko": "https://google.com"
+ },
+ "reportingApp.common.contact": {
+  "en": "{Contact}",
+  "ko": "{Contact}"
+ },
+ "reportingApp.common.widget.fieldContact": {
+  "en": "{Contact}",
+  "ko": "{Contact}"
+ },
+ "reportingApp.common.widget.fieldOpportunity": {
+  "en": "{Opportunity}",
+  "ko": "{Opportunity}"
+ },
+ "reportingApp.common.widget.fieldSms": {
+  "en": "SMS",
+  "ko": "SMS"
+ },
+ "reportingApp.locationDashboard.cpc": {
+  "en": "CPC",
+  "ko": "CPC"
+ },
+ "reportingApp.locationDashboard.embedForm.iframe": {
+  "en": "IFrame",
+  "ko": "IFrame"
+ },
+ "reportingApp.locationDashboard.embedForm.iframePlaceholder": {
+  "en": "<iframe />",
+  "ko": "<iframe />"
+ },
+ "reportingApp.locationDashboard.embedForm.url": {
+  "en": "URL",
+  "ko": "URL"
+ },
+ "reportingApp.locationDashboard.sms": {
+  "en": "SMS",
+  "ko": "SMS"
+ },
+ "reportingApp.locationDashboard.versionEditedBy": {
+  "en": "{name}",
+  "ko": "{name}"
+ },
+ "reportingApp.locationDashboard.widgetDefinitions.GMAIL": {
+  "en": "Gmail",
+  "ko": "Gmail"
+ },
+ "reportingApp.locationDashboard.widgetDefinitions.GOOGLE_TV": {
+  "en": "Google TV",
+  "ko": "Google TV"
+ },
+ "reportingApp.locationDashboard.widgetDefinitions.YOUTUBE": {
+  "en": "YouTube",
+  "ko": "YouTube"
+ },
+ "reportingApp.locationDashboard.widgetDefinitions.api": {
+  "en": "API",
+  "ko": "API"
+ },
+ "reportingApp.locationDashboard.widgetDefinitions.authorizeNet": {
+  "en": "Authorize.Net",
+  "ko": "Authorize.Net"
+ },
+ "reportingApp.locationDashboard.widgetDefinitions.bluesky": {
+  "en": "Bluesky",
+  "ko": "Bluesky"
+ },
+ "reportingApp.locationDashboard.widgetDefinitions.company": {
+  "en": "{Company}",
+  "ko": "{Company}"
+ },
+ "reportingApp.locationDashboard.widgetDefinitions.crm-contacts": {
+  "en": "{Contacts}",
+  "ko": "{Contacts}"
+ },
+ "reportingApp.locationDashboard.widgetDefinitions.crm-sms": {
+  "en": "SMS",
+  "ko": "SMS"
+ },
+ "reportingApp.locationDashboard.widgetDefinitions.crm_ui": {
+  "en": "CRM UI",
+  "ko": "CRM UI"
+ },
+ "reportingApp.locationDashboard.widgetDefinitions.facebook": {
+  "en": "Facebook",
+  "ko": "Facebook"
+ },
+ "reportingApp.locationDashboard.widgetDefinitions.gbp": {
+  "en": "GBP",
+  "ko": "GBP"
+ },
+ "reportingApp.locationDashboard.widgetDefinitions.gmb": {
+  "en": "GMB",
+  "ko": "GMB"
+ },
+ "reportingApp.locationDashboard.widgetDefinitions.google": {
+  "en": "Google",
+  "ko": "Google"
+ },
+ "reportingApp.locationDashboard.widgetDefinitions.instagram": {
+  "en": "Instagram",
+  "ko": "Instagram"
+ },
+ "reportingApp.locationDashboard.widgetDefinitions.instagramLowerCase": {
+  "en": "Instagram",
+  "ko": "Instagram"
+ },
+ "reportingApp.locationDashboard.widgetDefinitions.linkedIn": {
+  "en": "LinkedIn",
+  "ko": "LinkedIn"
+ },
+ "reportingApp.locationDashboard.widgetDefinitions.nmi": {
+  "en": "NMI",
+  "ko": "NMI"
+ },
+ "reportingApp.locationDashboard.widgetDefinitions.paypal": {
+  "en": "PayPal",
+  "ko": "PayPal"
+ },
+ "reportingApp.locationDashboard.widgetDefinitions.pinterest": {
+  "en": "Pinterest",
+  "ko": "Pinterest"
+ },
+ "reportingApp.locationDashboard.widgetDefinitions.reputationChannelSms": {
+  "en": "SMS",
+  "ko": "SMS"
+ },
+ "reportingApp.locationDashboard.widgetDefinitions.sla": {
+  "en": "SLA",
+  "ko": "SLA"
+ },
+ "reportingApp.locationDashboard.widgetDefinitions.sms": {
+  "en": "SMS",
+  "ko": "SMS"
+ },
+ "reportingApp.locationDashboard.widgetDefinitions.stripe": {
+  "en": "Stripe",
+  "ko": "Stripe"
+ },
+ "reportingApp.locationDashboard.widgetDefinitions.text2Pay": {
+  "en": "Text2Pay",
+  "ko": "문자 결제"
+ },
+ "reportingApp.locationDashboard.widgetDefinitions.threads": {
+  "en": "Threads",
+  "ko": "Threads"
+ },
+ "reportingApp.locationDashboard.widgetDefinitions.tiktok": {
+  "en": "TikTok",
+  "ko": "TikTok"
+ },
+ "reportingApp.locationDashboard.widgetDefinitions.youtube": {
+  "en": "YouTube",
+  "ko": "YouTube"
+ },
+ "reportingApp.locationDashboard.widgetDefinitions.zapier": {
+  "en": "Zapier",
+  "ko": "Zapier"
+ },
+ "reputationApp.reputation.reputationCommon.liveCaps": {
+  "en": "LIVE",
+  "ko": "라이브"
+ },
+ "reputationApp.reputation.reputationCommon.sms": {
+  "en": "sms",
+  "ko": "SMS"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.virtualBusiness.googleMapsUrlLabel": {
+  "en": "Google Maps URL",
+  "ko": "Google 지도 URL"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.virtualBusiness.googleMapsUrlPlaceholder": {
+  "en": "https://www.google.com/maps/...",
+  "ko": "https://www.google.com/maps/..."
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.campaignCard.nextReplyText.atTimeOnDate": {
+  "en": "{time} {date}",
+  "ko": "{date} {time}"
+ },
+ "reputationApp.reputation.reputationReviews.dripMode.newCampaignModal.agentPlatform.facebook": {
+  "en": "Facebook",
+  "ko": "Facebook"
+ },
+ "reputationApp.reputation.reputationSettings.qrCode.properties.mediaLibraryImage": {
+  "en": "from_media_library",
+  "ko": "from_media_library"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.preview.sampleReviewerNegative": {
+  "en": "Sam",
+  "ko": "민수"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.preview.sampleReviewerNeutral": {
+  "en": "Daniel",
+  "ko": "지훈"
+ },
+ "reputationApp.reputation.reputationSettings.reviewsAIAgents.preview.sampleReviewerPositive": {
+  "en": "Sarah",
+  "ko": "서연"
+ },
+ "reputationApp.reputation.videoTestimonials.collectorModal.thankYouForm.spokespersonEmailPlaceholder": {
+  "en": "example{'@'}gmail.com",
+  "ko": "example{'@'}gmail.com"
+ },
+ "reselling.agencyBillingCard.seo.title": {
+  "en": "SEO",
+  "ko": "SEO"
+ },
+ "reselling.agencyResellingPage.common.coreServicesIframeTitle": {
+  "en": "preio",
+  "ko": "preio"
+ },
+ "reselling.paymentPage.alt.amexcard": {
+  "en": "AMEX",
+  "ko": "AMEX"
+ },
+ "reselling.paymentPage.alt.dinerscard": {
+  "en": "Diners Club",
+  "ko": "Diners Club"
+ },
+ "reselling.paymentPage.alt.mastercard": {
+  "en": "Mastercard",
+  "ko": "Mastercard"
+ },
+ "reselling.paymentPage.alt.visacard": {
+  "en": "VISA",
+  "ko": "VISA"
+ },
+ "reselling.paymentPage.cvv": {
+  "en": "CVV",
+  "ko": "CVV"
+ },
+ "restaurants.orderAlerts.off": {
+  "en": "Order alerts are off",
+  "ko": "주문 알림이 꺼져 있습니다"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.event.SportsOrganizer.url.label": {
+  "en": "URL",
+  "ko": "URL"
+ },
+ "schemaMarkupApp.schemaMarkup.placeholders.examples.stepImage": {
+  "en": "https://example.com/step-image.jpg",
+  "ko": "https://example.com/step-image.jpg"
+ },
+ "settings.socialComments.loadError": {
+  "en": "We could not load Social comments settings. Refresh the page to try again.",
+  "ko": "소셜 댓글 설정을 불러오지 못했습니다. 페이지를 새로고침한 후 다시 시도하세요."
+ },
+ "settings.socialPosting.googlePlus": {
+  "en": "Google +",
+  "ko": "Google +"
+ },
+ "smartList.col.googleData": {
+  "en": "GMB",
+  "ko": "GMB"
+ },
+ "smartList.extraDetails.DNDGMBChannel": {
+  "en": "GMB",
+  "ko": "GMB"
+ },
+ "socialPlannerApp.blueskyModal.appPasswordPlaceholder": {
+  "en": "XXXX-XXXX-XXXX-XXXX",
+  "ko": "XXXX-XXXX-XXXX-XXXX"
+ },
+ "socialPlannerApp.common.csv": {
+  "en": "CSV",
+  "ko": "CSV"
+ },
+ "socialPlannerApp.common.facebook": {
+  "en": "Facebook",
+  "ko": "Facebook"
+ },
+ "socialPlannerApp.common.instagram": {
+  "en": "Instagram",
+  "ko": "Instagram"
+ },
+ "socialPlannerApp.common.pinterest": {
+  "en": "Pinterest",
+  "ko": "Pinterest"
+ },
+ "socialPlannerApp.common.rss": {
+  "en": "RSS",
+  "ko": "RSS"
+ },
+ "socialPlannerApp.common.tikTok": {
+  "en": "TikTok",
+  "ko": "TikTok"
+ },
+ "socialPlannerApp.common.utc": {
+  "en": "UTC",
+  "ko": "UTC"
+ },
+ "socialPlannerApp.createReviewPost.sourceInputLabel.facebook": {
+  "en": "Facebook",
+  "ko": "Facebook"
+ },
+ "socialPlannerApp.createReviewPost.sourceInputLabel.google": {
+  "en": "Google",
+  "ko": "Google"
+ },
+ "socialPlannerApp.createRssPost.urlPlaceholder": {
+  "en": "RSS URL",
+  "ko": "RSS URL"
+ },
+ "socialPlannerApp.csvPost.csv": {
+  "en": "CSV",
+  "ko": "CSV"
+ },
+ "socialPlannerApp.csvPost.xlsx": {
+  "en": "XLSX",
+  "ko": "XLSX"
+ },
+ "socialPlannerApp.gmbOptions.redeemLinkPlaceholder": {
+  "en": "https://www...",
+  "ko": "https://www..."
+ },
+ "socialPlannerApp.gmbOptions.url": {
+  "en": "URL",
+  "ko": "URL"
+ },
+ "socialPlannerApp.instagramOption.googlePlay": {
+  "en": "Google Play",
+  "ko": "Google Play"
+ },
+ "socialPlannerApp.keepMedia.gifLabel": {
+  "en": "GIF",
+  "ko": "GIF"
+ },
+ "socialPlannerApp.linkShortener.targetUrlPlaceholder": {
+  "en": "mysite.com/summer_promo",
+  "ko": "mysite.com/summer_promo"
+ },
+ "socialPlannerApp.pinterest.options.linkPlaceholder": {
+  "en": "www.example.com",
+  "ko": "www.example.com"
+ },
+ "socialPlannerApp.pinterest.settings.pinterestSettingsTitle": {
+  "en": "Pinterest",
+  "ko": "Pinterest"
+ },
+ "socialPlannerApp.postTable.url": {
+  "en": "URL",
+  "ko": "URL"
+ },
+ "socialPlannerApp.socialListening.alerts.meter": {
+  "en": "{used} / {max}",
+  "ko": "{used} / {max}"
+ },
+ "socialPlannerApp.socialListening.alerts.previewFromEmail": {
+  "en": "<alerts{'@'}yourbrand.com>",
+  "ko": "<alerts{'@'}yourbrand.com>"
+ },
+ "socialPlannerApp.socialListening.alerts.summaryLine": {
+  "en": "{metrics} · {delivery}",
+  "ko": "{metrics} · {delivery}"
+ },
+ "socialPlannerApp.socialListening.alerts.templateDefaultBrand": {
+  "en": "Social intelligence",
+  "ko": "소셜 인텔리전스"
+ },
+ "socialPlannerApp.socialListening.delta.pts": {
+  "en": "pts",
+  "ko": "점"
+ },
+ "socialPlannerApp.socialListening.detail.openHashtagLink": {
+  "en": "View {tag}",
+  "ko": "{tag} 보기"
+ },
+ "socialPlannerApp.socialListening.search.kpi.netUnit": {
+  "en": "pts",
+  "ko": "점"
+ },
+ "socialPlannerApp.socialListening.sourcePicker.count": {
+  "en": "{count}/{max}",
+  "ko": "{count}/{max}"
+ },
+ "socialPlannerApp.tikTokModal.title": {
+  "en": "TikTok",
+  "ko": "TikTok"
+ },
+ "storeWidgetApp.woocommerce.cardTitle": {
+  "en": "WooCommerce",
+  "ko": "WooCommerce"
+ },
+ "superagentsApp.agentStudioPanel.apiDeploy.terminology.termSessionLabel": {
+  "en": "sessionId",
+  "ko": "sessionId"
+ },
+ "superagentsApp.chatLayer.browserKeyEscape": {
+  "en": "Escape",
+  "ko": "Escape"
+ },
+ "usersMicroApp.auditLogs.saas": {
+  "en": "SaaS",
+  "ko": "SaaS"
+ },
+ "usersMicroApp.auditLogs.stripe": {
+  "en": "Stripe",
+  "ko": "Stripe"
+ },
+ "usersMicroApp.notifications.details.messageId": {
+  "en": "messageId:",
+  "ko": "messageId:"
+ },
+ "usersMicroApp.notifications.details.requestId": {
+  "en": "Request ID:",
+  "ko": "요청 ID:"
+ },
+ "usersMicroApp.notifications.list.filters.emailPlaceholder": {
+  "en": "user@example.com",
+  "ko": "user@example.com"
+ },
+ "usersMicroApp.profile.emailSync.gmail": {
+  "en": "Gmail",
+  "ko": "Gmail"
+ },
+ "usersMicroApp.profile.emailSync.outlook": {
+  "en": "Outlook",
+  "ko": "Outlook"
+ },
+ "usersMicroApp.profile.notifications.channelSms": {
+  "en": "SMS",
+  "ko": "SMS"
+ },
+ "usersMicroApp.users.delete.confirmWord": {
+  "en": "DELETE",
+  "ko": "DELETE"
+ },
+ "usersMicroApp.users.delete.typeToConfirm": {
+  "en": "Confirm by typing {word} below.",
+  "ko": "확인하려면 아래에 {word}을(를) 입력하세요."
+ },
+ "usersMicroApp.users.permissions.heading.gokollab": {
+  "en": "Gokollab",
+  "ko": "Gokollab"
+ },
+ "usersMicroApp.users.remove.confirmWord": {
+  "en": "REMOVE",
+  "ko": "REMOVE"
+ },
+ "wordpressApp.fileManager.compress.archivePlaceholder": {
+  "en": "my-archive",
+  "ko": "my-archive"
+ },
+ "wordpressApp.fileManager.compress.formatTarBz2": {
+  "en": "TAR.BZ2 (.tar.bz2)",
+  "ko": "TAR.BZ2 (.tar.bz2)"
+ },
+ "wordpressApp.wordpress.advanceSetting.unsubscribe.reasons.subReasons.betterAlternatives.kinsta": {
+  "en": "Kinsta",
+  "ko": "Kinsta"
+ },
+ "wordpressApp.wordpress.antivirus.shield.tabName": {
+  "en": "Shield",
+  "ko": "보안 실드"
+ },
+ "wordpressApp.wordpress.createsite.modal.create.adminEmailPlaceholder": {
+  "en": "abc.admin{'@'}abc.com",
+  "ko": "abc.admin{'@'}abc.com"
+ },
+ "wordpressApp.wordpress.dashboard.production.wp_url": {
+  "en": "WordPress URL",
+  "ko": "WordPress URL"
+ },
+ "wordpressApp.wordpress.ia.rail.shield": {
+  "en": "Shield",
+  "ko": "보안 실드"
  }
 }
