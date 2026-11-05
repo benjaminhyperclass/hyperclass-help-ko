@@ -1,4 +1,5 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.6
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.7
+ * v4.21.7: 기간 '0 minutes'·'56 seconds'·'3 days' → '0분'·'56초'·'3일'(노드 전체 일치) · _textScoped 범위에 hr 제목 글자(2xl·xl·lg).
  * v4.21.6: 상태 칩(n-tag) 안 시스템 열거값(Succeeded·Pending·Failed·Refunded·Paid·Draft·Active…) 허용 목록 — 사용자 태그는 그대로.
  * v4.21.5: _textScoped 범위에 새 디자인 시스템 체크박스·라디오 라벨(.hr-checkbox__label·.hr-radio__label) 추가.
  * v4.21.4: 날짜 앞 구분 기호·괄호 없는 시간대 — 감사 로그 '- 8:41 PM KST' → '- 오후 8:41 KST'.
@@ -200,7 +201,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.21.6',
+    version: '4.21.7',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -518,7 +519,9 @@
     // v4.20.1: 새 디자인 시스템(hr-*)의 라벨류 — 연락처 상세 새 UI 의 섹션 머리글(Owner·Followers·Tags)·폼 라벨·드롭다운 트리거·선택값
     '.hr-text-medium,.hr-form-item-label__text,.hr-dropdown__trigger-wrapper,.hr-base-selection-label,' +
     // v4.21.5: 새 디자인 시스템 체크박스·라디오 라벨(필터 목록 — 커스텀 오브젝트 템플릿 분류 'Events'·'Insurance'·'Pets' 등)
-    '.hr-checkbox__label,.hr-radio__label';
+    '.hr-checkbox__label,.hr-radio__label,' +
+    // v4.21.7: 새 디자인 시스템 제목 글자(.hr-text-2xl·xl·lg) — 평판 개요 'Overview' 등 단어 1개 제목
+    '.hr-text-2xl,.hr-text-xl,.hr-text-lg';
   var SCOPED_SKIP = 'td,[role="option"],[role="listbox"],[role="gridcell"],.n-tag,.tag,[contenteditable]';
   // v4.21.3: 차트(ECharts·Highcharts·ApexCharts) SVG 글자도 단어 1개 범위 — 대시보드 기회 상태 'Open'·'Won' 범례 등
   var SVG_NS = 'http://www.w3.org/2000/svg', CHART_SEL = '.vue-echarts-inner,.highcharts-container,.apexcharts-canvas,.echarts';
@@ -622,6 +625,14 @@
   }
   // v4.21.3: 페이지 크기 선택 '10 / page' → '10 / 페이지'
   var KD_PAGE = /^(\d+) \/ page$/;
+  // v4.21.7: 기간 '0 minutes'·'56 seconds'·'0 min'·'3 days' → '0분'·'56초'·'0분'·'3일'(평판 응답 시간 등 — 노드 전체 일치만)
+  var KD_DUR = /^(\d+(?:\.\d+)?) ?(seconds?|secs?|minutes?|mins?|hours?|hrs?|days?|weeks?|months?|years?)$/i;
+  var KD_DUR_KO = { s: '초', mi: '분', h: '시간', d: '일', w: '주', mo: '개월', y: '년' };
+  function kdDur(t) {
+    var m = t.match(KD_DUR); if (!m) return null;
+    var u = m[2].toLowerCase(), k = u.charAt(0) === 'm' ? (u.indexOf('mo') === 0 ? 'mo' : 'mi') : u.charAt(0);
+    return KD_DUR_KO.hasOwnProperty(k) ? m[1] + KD_DUR_KO[k] : null;
+  }
   // 끄기: 사전 core._opts.dates === false(원격) 또는 localStorage.hcKoDates = '0'(브라우저별 진단)
   var kdFlag = null;   // core 가 바뀌면(onCoreStale) 다시 계산
   function kdOn() {
@@ -643,6 +654,7 @@
         if (kdPre(t) && (v = koDate(t)) !== null) dated = true;
         else if ((v = kdChart(n.parentElement, t)) !== null) dated = true;
         else if (KD_PAGE.test(t)) { v = t.replace(KD_PAGE, '$1 / 페이지'); dated = true; }
+        else if ((v = kdDur(t)) !== null) dated = true;
         else return;
       }
     }
