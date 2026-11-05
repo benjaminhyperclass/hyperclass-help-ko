@@ -1,4 +1,6 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.20.0
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.20.1
+ * v4.20.1: _textScoped 범위에 새 디자인 시스템 라벨류(.hr-text-medium·.hr-form-item-label__text·.hr-dropdown__trigger-wrapper·.hr-base-selection-label) 추가 —
+ *        연락처 상세 새 UI 의 'Owner·Followers·Tags'·'Unassigned'·'Lead' 가 앱 카탈로그가 아니라 데이터/설정 시점 문자열이라 영어로 남던 문제.
  * v4.20.0: 멤버십 앱(#membership)이 provide 하는 t(key, params) 의 **인자 있는 호출**도 flat 으로 바꾼다.
  *          종전엔 인자 1개 호출만 flat 을 봤다 → '{count} locations available' 같은 198키가 영어로 남았다.
  *          이름 자리표시자 {name} 만 params 에서 채우고, 하나라도 못 채우거나 값에 '|'(복수형) 가 있으면 원본 t 에 맡긴다.
@@ -185,7 +187,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.20.0',
+    version: '4.20.1',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -498,7 +500,9 @@
   // 안에 있을 때만. 조상 8단계까지 본다 — GHL 표 머리글은 th > wrapper > title > div > span > text 처럼 깊다(v4.18.1,
   // 3단계로는 연락처 머리글을 못 잡았다). 셀(td)·옵션·칩·본문은 SCOPED_SKIP 이 먼저 걸러 범위 밖.
   var SCOPED_SEL = 'th,[role="columnheader"],button,[role="button"],[role="tab"],[role="menuitem"],label,' +
-    '.n-button,.n-tabs-tab,.hr-tabs-tab,.n-pagination-item,.hl-btn,.hl-text-btn,.topmenu-nav a,nav a,[role="navigation"] a,[role="menubar"] a';
+    '.n-button,.n-tabs-tab,.hr-tabs-tab,.n-pagination-item,.hl-btn,.hl-text-btn,.topmenu-nav a,nav a,[role="navigation"] a,[role="menubar"] a,' +
+    // v4.20.1: 새 디자인 시스템(hr-*)의 라벨류 — 연락처 상세 새 UI 의 섹션 머리글(Owner·Followers·Tags)·폼 라벨·드롭다운 트리거·선택값
+    '.hr-text-medium,.hr-form-item-label__text,.hr-dropdown__trigger-wrapper,.hr-base-selection-label';
   var SCOPED_SKIP = 'td,[role="option"],[role="listbox"],[role="gridcell"],.n-tag,.tag,[contenteditable]';
   function inScope(p) {
     try {
