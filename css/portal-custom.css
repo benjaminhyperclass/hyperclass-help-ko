@@ -1,5 +1,5 @@
 /* ==============================================================
-   Hyperclass 한글팩 — 클라이언트 포털 Custom CSS (영문 플래시 베일) v1.0.1 (2026-10-31)
+   Hyperclass 한글팩 — 클라이언트 포털 Custom CSS (영문 플래시 베일) v1.1.0 (2026-11-05)
    적용 위치: Client Portal → Settings → Branding → Advanced → Custom CSS  (순수 CSS — style 태그 금지)
    정본: 레포 css/portal-custom.css — 칸을 바꾸기 전 이 파일과 SHA-256 대조
 
@@ -7,22 +7,23 @@
      · 포털 로더 v4.0 이 한국어를 병합하면 html[data-hc-ko="1"] → 즉시 보인다
      · 부트스트랩·로더가 포기하면(off·excluded·fail) 같은 속성이 서서 즉시 보인다
      · JS 가 아예 돌지 않아도 2.5초 뒤 애니메이션으로 스스로 보인다 (로더가 죽어도 화면은 남는다)
+     · v1.1.0: 포털이 Nuxt(#__nuxt)에서 Vite 앱(#app)으로 바뀌었다(2026-11-05 고객 포털 실측) — 두 루트를 함께 가린다.
      · v1.0.1: 동작 줄이기(prefers-reduced-motion) 환경은 animation:none!important 재정의가 흔해 베일이 영구히 남을 수 있으므로
        베일을 쓰지 않는다(그 사용자는 영문 플래시를 잠깐 볼 수 있다 — 화면이 안 보이는 것보다 낫다)
    ============================================================== */
-#__nuxt {
+#__nuxt, #app {
   visibility: hidden;
   animation: hc-unveil 0s 2.5s forwards;
 }
 @keyframes hc-unveil {
   to { visibility: visible; }
 }
-html[data-hc-ko] #__nuxt {
+html[data-hc-ko] #__nuxt, html[data-hc-ko] #app {
   visibility: visible;
   animation: none;
 }
 @media (prefers-reduced-motion: reduce) {
-  #__nuxt {
+  #__nuxt, #app {
     visibility: visible;
     animation: none;
   }
