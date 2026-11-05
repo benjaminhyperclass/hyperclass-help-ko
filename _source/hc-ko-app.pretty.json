@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "version": "4.2.35",
-  "built": "2026-11-04",
-  "source": "1-04 agentStudioApp (telemetry) + round 2026-11-04 aiEmployeesApp (telemetry) + round 2026-11-04 authApp (telemetry) + round 2026-11-04 brandBoardsApp (telemetry) + round 2026-11-04 calendarComponentsApp (telemetry) + round 2026-11-04 chatWidgetApp (telemetry) + round 2026-11-04 clientPortalBuilder (telemetry) + round 2026-11-04 common (telemetry) + round 2026-11-04 contactsApp (telemetry) + round 2026-11-04 conversationsUtilitiesApp (telemetry) + round 2026-11-04 copilot (telemetry) + round 2026-11-04 copilotApp (telemetry) + round 2026-11-04 crmCommon (telemetry) + round 2026-11-04 crmObjectsSettingsApp (telemetry) + round 2026-11-04 domainResellingApp (telemetry) + round 2026-11-04 formSurveyApp (telemetry) + round 2026-11-04 ghlEmailBuilderCommon (telemetry) + round 2026-11-04 integrationsApp (telemetry) + round 2026-11-04 launchpadApp (telemetry) + round 2026-11-04 locationsApp (telemetry) + round 2026-11-04 onboardingApp (telemetry) + round 2026-11-04 opportunitiesApp (telemetry) + round 2026-11-04 powerDialerApp (telemetry) + round 2026-11-04 productsApp (telemetry) + round 2026-11-04 proposalCommon (telemetry) + round 2026-11-04 reportingApp (telemetry) + round 2026-11-04 reputationApp (telemetry) + round 2026-11-04 schemaMarkupApp (telemetry) + round 2026-11-04 socialPlannerApp (telemetry) + round 2026-11-04 storeWidgetApp (telemetry) + round 2026-11-04 superagentsApp (telemetry) + round 2026-11-04 usersMicroApp (telemetry) + round 2026-11-04 wordpressApp (telemetry) · 라운드 v4.2.29 독립 검수 4명(3,909문구) 교정 404건 · 라운드 나머지 2,801문구 독립 검수 교정 287건(crmObjectsSettingsApp 키 밀림 58 포함) · 연락처 상세 새 UI 데이터 라벨 _text 10(도로명 주소·우편번호·시간대·회사명·기본 정보·추가 정보 등) · Objects 사물→오브젝트 9(이모지 분류 제외) · 설정 사이드바 Opportunities & Pipelines _text · 텔레메트리 잔여 706문구(20키 미만 네임스페이스·라운드 누락분) 직접 번역 · 전 화면 스윕(350라우트) 잔여 영어 _text 127",
+  "version": "4.2.36",
+  "built": "2026-11-05",
+  "source": "1-04 agentStudioApp (telemetry) + round 2026-11-04 aiEmployeesApp (telemetry) + round 2026-11-04 authApp (telemetry) + round 2026-11-04 brandBoardsApp (telemetry) + round 2026-11-04 calendarComponentsApp (telemetry) + round 2026-11-04 chatWidgetApp (telemetry) + round 2026-11-04 clientPortalBuilder (telemetry) + round 2026-11-04 common (telemetry) + round 2026-11-04 contactsApp (telemetry) + round 2026-11-04 conversationsUtilitiesApp (telemetry) + round 2026-11-04 copilot (telemetry) + round 2026-11-04 copilotApp (telemetry) + round 2026-11-04 crmCommon (telemetry) + round 2026-11-04 crmObjectsSettingsApp (telemetry) + round 2026-11-04 domainResellingApp (telemetry) + round 2026-11-04 formSurveyApp (telemetry) + round 2026-11-04 ghlEmailBuilderCommon (telemetry) + round 2026-11-04 integrationsApp (telemetry) + round 2026-11-04 launchpadApp (telemetry) + round 2026-11-04 locationsApp (telemetry) + round 2026-11-04 onboardingApp (telemetry) + round 2026-11-04 opportunitiesApp (telemetry) + round 2026-11-04 powerDialerApp (telemetry) + round 2026-11-04 productsApp (telemetry) + round 2026-11-04 proposalCommon (telemetry) + round 2026-11-04 reportingApp (telemetry) + round 2026-11-04 reputationApp (telemetry) + round 2026-11-04 schemaMarkupApp (telemetry) + round 2026-11-04 socialPlannerApp (telemetry) + round 2026-11-04 storeWidgetApp (telemetry) + round 2026-11-04 superagentsApp (telemetry) + round 2026-11-04 usersMicroApp (telemetry) + round 2026-11-04 wordpressApp (telemetry) · 라운드 v4.2.29 독립 검수 4명(3,909문구) 교정 404건 · 라운드 나머지 2,801문구 독립 검수 교정 287건(crmObjectsSettingsApp 키 밀림 58 포함) · 연락처 상세 새 UI 데이터 라벨 _text 10(도로명 주소·우편번호·시간대·회사명·기본 정보·추가 정보 등) · Objects 사물→오브젝트 9(이모지 분류 제외) · 설정 사이드바 Opportunities & Pipelines _text · 텔레메트리 잔여 706문구(20키 미만 네임스페이스·라운드 누락분) 직접 번역 · 전 화면 스윕(350라우트) 잔여 영어 _text 127 · 연락처 상세 AI 에이전트 채널 미연결 배너 _text 4 + 날짜 라벨(로더 v4.21.2 D3) 2",
   "strings": 102718
  },
  "host": {
@@ -150124,7 +150124,13 @@
   "Integration setup (Sync options)": "연동 설정 (동기화 옵션)",
   "Authorize access to start syncing your accounting data.": "회계 데이터 동기화를 시작하려면 액세스를 승인하세요.",
   "Map your tax agencies": "세무서 매핑",
-  "Select Quickbooks tax agencies for your taxes.": "각 세금에 맞는 QuickBooks 세무서를 선택하세요."
+  "Select Quickbooks tax agencies for your taxes.": "각 세금에 맞는 QuickBooks 세무서를 선택하세요.",
+  "Your AI Agents aren't connected to any channel": "AI 에이전트가 연결된 채널이 없습니다",
+  "Messages on": "다음 채널의 메시지:",
+  "are not getting AI replies. Connect an agent to these channels so it can draft replies.": "AI 답장을 받지 못하고 있습니다. 에이전트를 이 채널에 연결하면 답장 초안을 작성할 수 있습니다.",
+  "Connect channels": "채널 연결",
+  "Updated on:": "수정일:",
+  "Last updated:": "최종 수정:"
  },
  "_textScoped": {
   "AM": "오전",
