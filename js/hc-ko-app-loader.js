@@ -1,4 +1,5 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.5
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.6
+ * v4.21.6: 상태 칩(n-tag) 안 시스템 열거값(Succeeded·Pending·Failed·Refunded·Paid·Draft·Active…) 허용 목록 — 사용자 태그는 그대로.
  * v4.21.5: _textScoped 범위에 새 디자인 시스템 체크박스·라디오 라벨(.hr-checkbox__label·.hr-radio__label) 추가.
  * v4.21.4: 날짜 앞 구분 기호·괄호 없는 시간대 — 감사 로그 '- 8:41 PM KST' → '- 오후 8:41 KST'.
  * v4.21.3: 차트(ECharts 등) SVG 글자 — _textScoped 범위에 포함(대시보드 기회 상태 'Open'·'Won'), 월·요일 약어 단독('Dec'→'12월'),
@@ -199,7 +200,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.21.5',
+    version: '4.21.6',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -522,6 +523,13 @@
   // v4.21.3: 차트(ECharts·Highcharts·ApexCharts) SVG 글자도 단어 1개 범위 — 대시보드 기회 상태 'Open'·'Won' 범례 등
   var SVG_NS = 'http://www.w3.org/2000/svg', CHART_SEL = '.vue-echarts-inner,.highcharts-container,.apexcharts-canvas,.echarts';
   function inChart(p) { try { return !!p && p.namespaceURI === SVG_NS && !!p.closest && !!p.closest(CHART_SEL); } catch (e) { return false; } }
+  // v4.21.6: 상태 칩(n-tag) — 사용자 태그와 섞여 범위 밖(SCOPED_SKIP)이지만, 결제·구독·게시 상태 같은 시스템 열거값만
+  // 허용 목록으로 연다(거래 내역 'Succeeded'·'Pending' 실측). 번역은 _textScoped 의 같은 키를 쓴다.
+  var STATUS_WORDS = { Succeeded: 1, Pending: 1, Failed: 1, Refunded: 1, Paid: 1, Unpaid: 1, Overdue: 1, Draft: 1, Sent: 1, Void: 1,
+    Active: 1, Inactive: 1, Canceled: 1, Cancelled: 1, Expired: 1, Scheduled: 1, Completed: 1, Processing: 1, Published: 1,
+    Archived: 1, Incomplete: 1, Trialing: 1 };
+  var TAG_SEL = '.n-tag,.hr-tag';
+  function inStatusTag(p, t) { try { return STATUS_WORDS[t] === 1 && !!p && !!p.closest && !!p.closest(TAG_SEL); } catch (e) { return false; } }
   function inScope(p) {
     if (inChart(p)) return true;
     try {
@@ -628,7 +636,7 @@
     var v = T ? T[t] : undefined, scoped = false, dated = false;
     if (v === undefined) {
       if (TS && (v = TS[t]) !== undefined) {
-        if (!inScope(n.parentElement)) return;
+        if (!inScope(n.parentElement) && !inStatusTag(n.parentElement, t)) return;
         scoped = true;
       } else {
         if (!kdOn()) return;                                                  // D3 날짜·시각(v4.21)·차트·페이지 크기
