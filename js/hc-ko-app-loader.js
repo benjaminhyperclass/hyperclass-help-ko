@@ -1,4 +1,5 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.9
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.10
+ * v4.21.10: 멤버십 flat — vue-i18n 리터럴 {'x'} 를 글자로(화면에 "{'|'}" 가 그대로 보이던 문제), '{{' 가 든 값은 원본 t 에(안쪽만 채워지던 문제).
  * v4.21.9: 기간 선택기 월/연 보기(.hr-mm-yy-panel) — 머리 'Month'·'Year' → '월'·'연도', 월 목록 'Jan'… → '1월'….
  * v4.21.8: 새 디자인 시스템 날짜 선택 패널 — 머리 'Nov 2026'(노드 3개) → '2026년 11월', 요일 'Su'…→'일'…, 월 목록 'Jan'…→'1월'….
  * v4.21.7: 기간 '0 minutes'·'56 seconds'·'3 days' → '0분'·'56초'·'3일'(노드 전체 일치) · _textScoped 범위에 hr 제목 글자(2xl·xl·lg).
@@ -203,7 +204,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.21.9',
+    version: '4.21.10',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -390,15 +391,18 @@
   // v4.20: flat 값의 이름 자리표시자 {name} 을 params 로 채운다. 확실할 때만 — 못 채운 자리가 남거나
   // 복수형('|')·위치 인자(배열)·params 가 객체가 아니면 null 을 돌려 원본 t 가 처리하게 한다(영어로 남는 쪽이 안전).
   var PH_NAME = /\{\s*([A-Za-z_$][\w$]*)\s*\}/g;
+  // v4.21.10: vue-i18n 리터럴 이스케이프 {'x'} 를 글자로 푼다(원본 t 는 컴파일러가 푼다 — 'Recommended aspect ratio: 16:9 {'|'} …').
+  var LIT_RE = /\{\s*'((?:[^'\\]|\\.)*)'\s*\}/g;
+  function unLit(s) { return s.indexOf("{'") === -1 && s.indexOf("{ '") === -1 ? s : s.replace(LIT_RE, function (m, x) { return x.replace(/\\(.)/g, '$1'); }); }
   function interpFlat(ko, params) {
     if (!params || typeof params !== 'object' || Array.isArray(params)) return null;
-    if (ko.indexOf('|') !== -1) return null;
+    if (ko.replace(LIT_RE, '').indexOf('|') !== -1) return null;     // 복수형 '|' 은 원본 t 에(리터럴 {'|'} 은 제외하고 본다)
     var missing = false;
     var out = ko.replace(PH_NAME, function (m, name) {
       if (Object.prototype.hasOwnProperty.call(params, name) && params[name] !== null && params[name] !== undefined) return String(params[name]);
       missing = true; return m;
     });
-    return missing ? null : out;
+    return missing ? null : unLit(out);
   }
   function wrapTRef(el) {
     try {
@@ -413,8 +417,9 @@
           // 안전하다 — 컴포넌트가 이미 이 함수 참조를 캡처했을 수 있다.
           if (!suspended && core && core.flat && typeof key === 'string') {
             var ko = core.flat[key];
-            if (typeof ko === 'string') {
-              if (arguments.length === 1) return ko;
+            // v4.21.10: '{{mode}} 모드' 처럼 겹중괄호(앱이 직접 치환하는 자리)가 든 값은 원본 t 에 맡긴다 — 안쪽 {mode} 만 채워지는 것 방지
+            if (typeof ko === 'string' && ko.indexOf('{{') === -1) {
+              if (arguments.length === 1) return unLit(ko);
               var out = interpFlat(ko, arguments.length === 2 ? arguments[1] : null);
               if (out !== null) return out;
             }
