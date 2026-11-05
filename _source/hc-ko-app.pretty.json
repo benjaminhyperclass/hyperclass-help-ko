@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "version": "4.2.31",
+  "version": "4.2.32",
   "built": "2026-11-04",
-  "source": "1-04 agentStudioApp (telemetry) + round 2026-11-04 aiEmployeesApp (telemetry) + round 2026-11-04 authApp (telemetry) + round 2026-11-04 brandBoardsApp (telemetry) + round 2026-11-04 calendarComponentsApp (telemetry) + round 2026-11-04 chatWidgetApp (telemetry) + round 2026-11-04 clientPortalBuilder (telemetry) + round 2026-11-04 common (telemetry) + round 2026-11-04 contactsApp (telemetry) + round 2026-11-04 conversationsUtilitiesApp (telemetry) + round 2026-11-04 copilot (telemetry) + round 2026-11-04 copilotApp (telemetry) + round 2026-11-04 crmCommon (telemetry) + round 2026-11-04 crmObjectsSettingsApp (telemetry) + round 2026-11-04 domainResellingApp (telemetry) + round 2026-11-04 formSurveyApp (telemetry) + round 2026-11-04 ghlEmailBuilderCommon (telemetry) + round 2026-11-04 integrationsApp (telemetry) + round 2026-11-04 launchpadApp (telemetry) + round 2026-11-04 locationsApp (telemetry) + round 2026-11-04 onboardingApp (telemetry) + round 2026-11-04 opportunitiesApp (telemetry) + round 2026-11-04 powerDialerApp (telemetry) + round 2026-11-04 productsApp (telemetry) + round 2026-11-04 proposalCommon (telemetry) + round 2026-11-04 reportingApp (telemetry) + round 2026-11-04 reputationApp (telemetry) + round 2026-11-04 schemaMarkupApp (telemetry) + round 2026-11-04 socialPlannerApp (telemetry) + round 2026-11-04 storeWidgetApp (telemetry) + round 2026-11-04 superagentsApp (telemetry) + round 2026-11-04 usersMicroApp (telemetry) + round 2026-11-04 wordpressApp (telemetry) · 라운드 v4.2.29 독립 검수 4명(3,909문구) 교정 404건 · 라운드 나머지 2,801문구 독립 검수 교정 287건(crmObjectsSettingsApp 키 밀림 58 포함)",
+  "source": "1-04 agentStudioApp (telemetry) + round 2026-11-04 aiEmployeesApp (telemetry) + round 2026-11-04 authApp (telemetry) + round 2026-11-04 brandBoardsApp (telemetry) + round 2026-11-04 calendarComponentsApp (telemetry) + round 2026-11-04 chatWidgetApp (telemetry) + round 2026-11-04 clientPortalBuilder (telemetry) + round 2026-11-04 common (telemetry) + round 2026-11-04 contactsApp (telemetry) + round 2026-11-04 conversationsUtilitiesApp (telemetry) + round 2026-11-04 copilot (telemetry) + round 2026-11-04 copilotApp (telemetry) + round 2026-11-04 crmCommon (telemetry) + round 2026-11-04 crmObjectsSettingsApp (telemetry) + round 2026-11-04 domainResellingApp (telemetry) + round 2026-11-04 formSurveyApp (telemetry) + round 2026-11-04 ghlEmailBuilderCommon (telemetry) + round 2026-11-04 integrationsApp (telemetry) + round 2026-11-04 launchpadApp (telemetry) + round 2026-11-04 locationsApp (telemetry) + round 2026-11-04 onboardingApp (telemetry) + round 2026-11-04 opportunitiesApp (telemetry) + round 2026-11-04 powerDialerApp (telemetry) + round 2026-11-04 productsApp (telemetry) + round 2026-11-04 proposalCommon (telemetry) + round 2026-11-04 reportingApp (telemetry) + round 2026-11-04 reputationApp (telemetry) + round 2026-11-04 schemaMarkupApp (telemetry) + round 2026-11-04 socialPlannerApp (telemetry) + round 2026-11-04 storeWidgetApp (telemetry) + round 2026-11-04 superagentsApp (telemetry) + round 2026-11-04 usersMicroApp (telemetry) + round 2026-11-04 wordpressApp (telemetry) · 라운드 v4.2.29 독립 검수 4명(3,909문구) 교정 404건 · 라운드 나머지 2,801문구 독립 검수 교정 287건(crmObjectsSettingsApp 키 밀림 58 포함) · 연락처 상세 새 UI 데이터 라벨 _text 10(도로명 주소·우편번호·시간대·회사명·기본 정보·추가 정보 등)",
   "strings": 102718
  },
  "host": {
@@ -149267,7 +149267,17 @@
   "Retry 3 day after the previous attempt": "이전 시도 3일 후 재시도",
   "Retry 5 day after the previous attempt": "이전 시도 5일 후 재시도",
   "Retry 7 day after the previous attempt": "이전 시도 7일 후 재시도",
-  "subscription.settings.paymentFailure.communicationChannels[1]": "SMS"
+  "subscription.settings.paymentFailure.communicationChannels[1]": "SMS",
+  "Street address": "도로명 주소",
+  "Postal code": "우편번호",
+  "Time zone": "시간대",
+  "Business name": "회사명",
+  "General Info": "기본 정보",
+  "Additional Info": "추가 정보",
+  "No fields in this folder": "이 폴더에 필드가 없습니다",
+  "Created by:": "생성자:",
+  "Add channels": "채널 추가",
+  "TikTok DM disabled": "TikTok DM 사용 안 함"
  },
  "_textScoped": {
   "AM": "오전",
