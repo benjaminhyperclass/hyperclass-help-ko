@@ -382929,7 +382929,7 @@
  },
  "certificatesApp.createBadge.sidebarDrawer.showLess": {
   "en": "Show Less",
-  "ko": "간단히 보기"
+  "ko": "접기"
  },
  "certificatesApp.createBadge.sidebarDrawer.seeAll": {
   "en": "See All",
@@ -383233,7 +383233,7 @@
  },
  "certificatesApp.createBadge.sidebarDrawer.certificateAi.collapseActions": {
   "en": "Show less",
-  "ko": "간단히 보기"
+  "ko": "접기"
  },
  "certificatesApp.createBadge.sidebarDrawer.certificateAi.thumbsUp": {
   "en": "Good response",
@@ -383285,11 +383285,11 @@
  },
  "certificatesApp.createBadge.sidebarDrawer.certificateAi.taskPanelExpand": {
   "en": "Show all tasks",
-  "ko": "모든 작업 보기"
+  "ko": "모든 할 일 보기"
  },
  "certificatesApp.createBadge.sidebarDrawer.certificateAi.taskPanelCollapse": {
   "en": "Hide tasks",
-  "ko": "작업 숨기기"
+  "ko": "할 일 숨기기"
  },
  "certificatesApp.createBadge.sidebarDrawer.certificateAi.canvasBusyTitle": {
   "en": "Generating your certificate",
@@ -383605,7 +383605,7 @@
  },
  "certificatesApp.templateList.templateExpiry.modal.alert.customRelativeAutoExpire": {
   "en": "Custom relative: {relativeDays} days after issuance.",
-  "ko": "발급일 기준 사용자 지정: 발급 {relativeDays}일 후."
+  "ko": "사용자 지정: 발급 {relativeDays}일 후."
  },
  "certificatesApp.templateList.templateExpiry.modal.alert.reminderDaysAfterExpiry": {
   "en": "Enter {maxReminderDays} days or fewer. Credential expires in {expiryDays} days.",
@@ -383621,7 +383621,7 @@
  },
  "certificatesApp.templateList.templateExpiry.table.customRelativeFromIssuance": {
   "en": "Custom relative: {days} days after issuance",
-  "ko": "발급일 기준 사용자 지정: 발급 {days}일 후"
+  "ko": "사용자 지정: 발급 {days}일 후"
  },
  "certificatesApp.templateList.cloneTemplate.modal.title": {
   "en": "Clone credential template",
@@ -383805,7 +383805,7 @@
  },
  "certificatesApp.issuedCertificateList.certificateExpiry.modal.alert.customRelativeAutoExpire": {
   "en": "Custom relative: {relativeDays} days after issuance.",
-  "ko": "발급일 기준 사용자 지정: 발급 {relativeDays}일 후."
+  "ko": "사용자 지정: 발급 {relativeDays}일 후."
  },
  "certificatesApp.issuedCertificateList.certificateExpiry.modal.alert.expiredLock": {
   "en": "This credential is already expired. Use Renew to reactivate it.",

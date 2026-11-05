@@ -78686,7 +78686,7 @@
      "ribbons": "리본",
      "icons": "아이콘",
      "bases": "바탕 도형",
-     "showLess": "간단히 보기",
+     "showLess": "접기",
      "seeAll": "모두 보기",
      "images": "이미지",
      "addTextBox": "텍스트 상자 추가",
@@ -78773,7 +78773,7 @@
       "redoUnavailable": "다시 실행할 항목이 없습니다.",
       "actionsTitle": "빠른 프롬프트",
       "expandActions": "더 보기",
-      "collapseActions": "간단히 보기",
+      "collapseActions": "접기",
       "thumbsUp": "좋은 응답",
       "thumbsDown": "좋지 않은 응답",
       "readAloud": "소리 내어 읽기",
@@ -78786,8 +78786,8 @@
       "clarificationWizardSubmit": "제출",
       "clarificationWizardCancel": "취소",
       "taskPanelTitle": "할 일",
-      "taskPanelExpand": "모든 작업 보기",
-      "taskPanelCollapse": "작업 숨기기",
+      "taskPanelExpand": "모든 할 일 보기",
+      "taskPanelCollapse": "할 일 숨기기",
       "canvasBusyTitle": "수료증을 생성하는 중",
       "canvasBusySubtitle": "요청에 맞춰 AI가 수료증을 디자인하고 있습니다. 몇 분 정도 걸릴 수 있습니다...",
       "canvasBusyStop": "생성 중지",
@@ -78899,7 +78899,7 @@
        "noAutoExpire": "이 템플릿은 만료일 없이 계속 유효합니다.",
        "autoExpire": "이 템플릿은 {expirationDateForSelectedTimezone}에 만료됩니다.",
        "relativeAutoExpire": "이 템플릿으로 발급한 자격 증명은 발급 {relativeDays}일 후에 만료됩니다.",
-       "customRelativeAutoExpire": "발급일 기준 사용자 지정: 발급 {relativeDays}일 후.",
+       "customRelativeAutoExpire": "사용자 지정: 발급 {relativeDays}일 후.",
        "reminderDaysAfterExpiry": "{maxReminderDays}일 이하로 입력하세요. 자격 증명은 {expiryDays}일 후에 만료됩니다."
       },
       "reminderMails": {
@@ -78908,7 +78908,7 @@
      },
      "table": {
       "relativeFromIssuance": "발급 후 {period}",
-      "customRelativeFromIssuance": "발급일 기준 사용자 지정: 발급 {days}일 후"
+      "customRelativeFromIssuance": "사용자 지정: 발급 {days}일 후"
      }
     },
     "cloneTemplate": {
@@ -78977,7 +78977,7 @@
        "immediately": "이 자격 증명은 즉시 만료됩니다.",
        "autoExpire": "이 자격 증명은 {expirationDateForSelectedTimezone}에 만료됩니다.",
        "relativeAutoExpire": "이 자격 증명은 발급 {relativeDays}일 후에 만료됩니다.",
-       "customRelativeAutoExpire": "발급일 기준 사용자 지정: 발급 {relativeDays}일 후.",
+       "customRelativeAutoExpire": "사용자 지정: 발급 {relativeDays}일 후.",
        "expiredLock": "이 자격 증명은 이미 만료되었습니다. 다시 활성화하려면 갱신을 사용하세요.",
        "reminderDaysAfterExpiry": "{maxReminderDays}일 이하로 입력하세요. 자격 증명은 {expiryDays}일 후에 만료됩니다."
       },
