@@ -1,4 +1,4 @@
-/* 한국어 UI 팩 — 마켓플레이스 번들 v1.0.0 (로더 4.20.1 · 사전 REV 978ddb7)
+/* 한국어 UI 팩 — 마켓플레이스 번들 v1.0.0 (로더 4.21.6 · 사전 REV e25aa74)
  * 화면 문구를 한국어로 바꾼다. 코드는 이 번들 안에 모두 들어 있고, 번역 사전(JSON 데이터)만
  * cdn.jsdelivr.net 의 커밋 고정 URL 에서 받는다. 사용자·연락처 데이터를 읽거나 보내지 않는다.
  * 끄기: 주소에 ?hcko=off 또는 localStorage.hcKoOff = '1'. */
@@ -172,7 +172,20 @@
   if (document.body) scan(document.body);
 })();
 
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.20.1
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.6
+ * v4.21.6: 상태 칩(n-tag) 안 시스템 열거값(Succeeded·Pending·Failed·Refunded·Paid·Draft·Active…) 허용 목록 — 사용자 태그는 그대로.
+ * v4.21.5: _textScoped 범위에 새 디자인 시스템 체크박스·라디오 라벨(.hr-checkbox__label·.hr-radio__label) 추가.
+ * v4.21.4: 날짜 앞 구분 기호·괄호 없는 시간대 — 감사 로그 '- 8:41 PM KST' → '- 오후 8:41 KST'.
+ * v4.21.3: 차트(ECharts 등) SVG 글자 — _textScoped 범위에 포함(대시보드 기회 상태 'Open'·'Won'), 월·요일 약어 단독('Dec'→'12월'),
+ *          '범례 - 숫자'('Open - 123'), 페이지 크기 '10 / page' → '10 / 페이지'. 모두 D3 스위치(_opts.dates·hcKoDates)를 따른다.
+ * v4.21.2: 날짜 앞 라벨·뒤 시간대 — 'Created on: 5 Sep 2026, 6:17 PM (KST)' → '생성일: 2026년 9월 5일 오후 6:17 (KST)'.
+ *          라벨은 _text 에 있는 것만(사전이 정한다). 시간대 약어는 그대로 둔다.
+ * v4.21.1: 캘린더 주간 머리글 '01 Sun' → '1일 (일)', 'Sun 01'·'Sun 11/1' 도 같은 레이어에서.
+ * v4.21.0: 날짜·시각 표기 레이어(D3) — 텍스트 노드(·title·aria-label) **전체가** 영어 날짜/시각(또는 범위)일 때만
+ *          'Sep 28, 2026 02:07 PM' → '2026년 9월 28일 오후 2:07', '08:00 PM – 10:00 PM' → '오후 8:00 – 오후 10:00',
+ *          'Today at 10:22 AM' → '오늘 오전 10:22'. 사용자 언어가 영어라 GHL 이 dayjs/moment 영어 형식으로 찍던 것(연락처·대화·
+ *          소셜 플래너·캘린더·결제 표 등 전 화면 스윕 41형). 부분 일치는 하지 않는다(문장 속 날짜·사용자 본문 보존).
+ *          끄기: core._opts.dates=false(원격) · localStorage.hcKoDates='0'. 상태: status().dateHits
  * v4.20.1: _textScoped 범위에 새 디자인 시스템 라벨류(.hr-text-medium·.hr-form-item-label__text·.hr-dropdown__trigger-wrapper·.hr-base-selection-label) 추가 —
  *        연락처 상세 새 UI 의 'Owner·Followers·Tags'·'Unassigned'·'Lead' 가 앱 카탈로그가 아니라 데이터/설정 시점 문자열이라 영어로 남던 문제.
  * v4.20.0: 멤버십 앱(#membership)이 provide 하는 t(key, params) 의 **인자 있는 호출**도 flat 으로 바꾼다.
@@ -337,7 +350,7 @@
   // @main 고정이면 jsDelivr 24h + TTL 6h 가 직렬로 쌓여 최악 30시간 지연된다.
   // 내장 REV 는 포인터를 한 번도 못 받은 첫 방문과, 포인터 REV 로드 실패 시의 안전망이다.
   // 슬롯 교체 없이 사전을 갱신하려면 data/hc-ko-app-rev.json 의 rev 만 바꾸면 된다(CI 봇이 한다).
-  var REV_BUILTIN = '978ddb7094779e9ff417d05ae588f606aae0cbf7';
+  var REV_BUILTIN = 'e25aa749c50bef36bd28766acad65d75db35277d';
   var POINTER_URL = 'https://raw.githubusercontent.com/benjaminhyperclass/hyperclass-help-ko/main/data/hc-ko-app-rev.json';
   // 'hc-ko-app-' 접두사를 쓰지 않는다 — purgeOldCaches() 가 그 접두사 버킷을 전부 지운다.
   var POINTER_CACHE = 'hc-ko-pointer';
@@ -367,13 +380,13 @@
   // i18n 카탈로그에 한국어를 부어 넣거나 provides.t 를 래퍼로 바꾸면
   // 원복 수단이 없다 — 이 상태에서 제외 계정으로 넘어가면 새로고침이 유일한 답이다.
   var dirty = false;
-  var stats = { host: 0, apps: 0, tref: 0, remerge: 0, fuzzy: 0, unmatched: 0, textHits: 0, scopedHits: 0, fallback: 0, pointerFail: 0, revFallback: 0 };
+  var stats = { host: 0, apps: 0, tref: 0, remerge: 0, fuzzy: 0, unmatched: 0, textHits: 0, scopedHits: 0, dateHits: 0, fallback: 0, pointerFail: 0, revFallback: 0 };
   function log() {}
 
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.20.1',
+    version: '4.21.6',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -397,6 +410,7 @@
       s.textEntries = T ? Object.keys(T).length : 0;
       s.scopedEntries = TS ? Object.keys(TS).length : 0;
       s.scopedHits = stats.scopedHits;
+      s.datesOn = kdOn();
       s.reports = reported;
       return s;
     },
@@ -688,9 +702,22 @@
   var SCOPED_SEL = 'th,[role="columnheader"],button,[role="button"],[role="tab"],[role="menuitem"],label,' +
     '.n-button,.n-tabs-tab,.hr-tabs-tab,.n-pagination-item,.hl-btn,.hl-text-btn,.topmenu-nav a,nav a,[role="navigation"] a,[role="menubar"] a,' +
     // v4.20.1: 새 디자인 시스템(hr-*)의 라벨류 — 연락처 상세 새 UI 의 섹션 머리글(Owner·Followers·Tags)·폼 라벨·드롭다운 트리거·선택값
-    '.hr-text-medium,.hr-form-item-label__text,.hr-dropdown__trigger-wrapper,.hr-base-selection-label';
+    '.hr-text-medium,.hr-form-item-label__text,.hr-dropdown__trigger-wrapper,.hr-base-selection-label,' +
+    // v4.21.5: 새 디자인 시스템 체크박스·라디오 라벨(필터 목록 — 커스텀 오브젝트 템플릿 분류 'Events'·'Insurance'·'Pets' 등)
+    '.hr-checkbox__label,.hr-radio__label';
   var SCOPED_SKIP = 'td,[role="option"],[role="listbox"],[role="gridcell"],.n-tag,.tag,[contenteditable]';
+  // v4.21.3: 차트(ECharts·Highcharts·ApexCharts) SVG 글자도 단어 1개 범위 — 대시보드 기회 상태 'Open'·'Won' 범례 등
+  var SVG_NS = 'http://www.w3.org/2000/svg', CHART_SEL = '.vue-echarts-inner,.highcharts-container,.apexcharts-canvas,.echarts';
+  function inChart(p) { try { return !!p && p.namespaceURI === SVG_NS && !!p.closest && !!p.closest(CHART_SEL); } catch (e) { return false; } }
+  // v4.21.6: 상태 칩(n-tag) — 사용자 태그와 섞여 범위 밖(SCOPED_SKIP)이지만, 결제·구독·게시 상태 같은 시스템 열거값만
+  // 허용 목록으로 연다(거래 내역 'Succeeded'·'Pending' 실측). 번역은 _textScoped 의 같은 키를 쓴다.
+  var STATUS_WORDS = { Succeeded: 1, Pending: 1, Failed: 1, Refunded: 1, Paid: 1, Unpaid: 1, Overdue: 1, Draft: 1, Sent: 1, Void: 1,
+    Active: 1, Inactive: 1, Canceled: 1, Cancelled: 1, Expired: 1, Scheduled: 1, Completed: 1, Processing: 1, Published: 1,
+    Archived: 1, Incomplete: 1, Trialing: 1 };
+  var TAG_SEL = '.n-tag,.hr-tag';
+  function inStatusTag(p, t) { try { return STATUS_WORDS[t] === 1 && !!p && !!p.closest && !!p.closest(TAG_SEL); } catch (e) { return false; } }
   function inScope(p) {
+    if (inChart(p)) return true;
     try {
       var e = p, depth = 0;
       while (e && e.nodeType === 1 && depth < 8) {
@@ -701,19 +728,113 @@
     } catch (err) {}
     return false;
   }
+  // D3. 날짜·시각 표기(v4.21) — 'Sep 28, 2026 02:07 PM' → '2026년 9월 28일 오후 2:07'. 텍스트 노드(·title·aria-label) 전체가
+  // 날짜/시각 하나(또는 범위)일 때만 바꾼다(부분 일치 없음 — 문장 속 날짜·사용자 본문은 건드리지 않는다).
+  // GHL 은 사용자 언어 설정이 영어라 dayjs/moment 가 영어 월·AM/PM 으로 찍는다(연락처·대화·소셜·캘린더·결제 표 실측).
+  var KD_MON = { jan: 1, feb: 2, mar: 3, apr: 4, may: 5, jun: 6, jul: 7, aug: 8, sep: 9, sept: 9, oct: 10, nov: 11, dec: 12,
+    january: 1, february: 2, march: 3, april: 4, june: 6, july: 7, august: 8, september: 9, october: 10, november: 11, december: 12 };
+  var KD_WD = { sun: '일', mon: '월', tue: '화', tues: '화', wed: '수', thu: '목', thur: '목', thurs: '목', fri: '금', sat: '토',
+    sunday: '일', monday: '월', tuesday: '화', wednesday: '수', thursday: '목', friday: '금', saturday: '토' };
+  var KD_REL = { today: '오늘', yesterday: '어제', tomorrow: '내일' };
+  var KD_PRE = /^(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|Mon|Tue|Wed|Thu|Fri|Sat|Sun|Today|Yesterday|Tomorrow|\d{1,2}[ :])/;
+  var KD_TIME = /^(\d{1,2}):(\d{2})(?::(\d{2}))?(?:\s?([AaPp])\.?[Mm]\.?)?$/;
+  function kdMon(s) { var k = String(s).toLowerCase().replace(/\.$/, ''); return KD_MON.hasOwnProperty(k) ? KD_MON[k] : 0; }
+  function kdTime(s) {
+    var m = s.match(KD_TIME); if (!m) return null;
+    var h = +m[1], mi = m[2]; if (h > 23 || +mi > 59) return null;
+    if (!m[4]) return m[1] + ':' + mi + (m[3] ? ':' + m[3] : '');           // 24시간제는 그대로
+    if (h > 12 || h === 0) return null;
+    return (/[Pp]/.test(m[4]) ? '오후 ' : '오전 ') + h + ':' + mi;
+  }
+  // 날짜 한 덩어리: [요일,] (월 일 | 일 월)[,] [연도] | 월 연도 | 오늘/어제/내일
+  function kdDate(s) {
+    var wd = '', m, mo, d, y;
+    m = s.match(/^([A-Za-z]{3,9})\.?,?\s+(.+)$/);
+    if (m && KD_WD.hasOwnProperty(m[1].toLowerCase())) { wd = KD_WD[m[1].toLowerCase()]; s = m[2]; }
+    if (KD_REL.hasOwnProperty(s.toLowerCase())) return wd ? null : KD_REL[s.toLowerCase()];
+    if (wd && /^\d{1,2}$/.test(s) && +s >= 1 && +s <= 31) return (+s) + '일 (' + wd + ')';              // 'Sun 01'
+    if (wd && (m = s.match(/^(\d{1,2})\/(\d{1,2})$/))) return (+m[1]) + '/' + (+m[2]) + ' (' + wd + ')';  // 'Sun 11/1'
+    if (!wd && (m = s.match(/^(\d{1,2})\s+([A-Za-z]{3,9})$/)) && KD_WD.hasOwnProperty(m[2].toLowerCase()) && +m[1] >= 1 && +m[1] <= 31)
+      return (+m[1]) + '일 (' + KD_WD[m[2].toLowerCase()] + ')';                                            // 주간 머리글 '01 Sun'
+    if ((m = s.match(/^([A-Za-z]{3,9}\.?)\s+(\d{1,2})(?:st|nd|rd|th)?(?:,?\s+(\d{4}))?$/)) && (mo = kdMon(m[1]))) { d = +m[2]; y = m[3]; }
+    else if ((m = s.match(/^(\d{1,2})\s+([A-Za-z]{3,9}\.?),?(?:\s+(\d{4}))?$/)) && (mo = kdMon(m[2]))) { d = +m[1]; y = m[3]; }
+    else if ((m = s.match(/^([A-Za-z]{3,9}\.?),?\s+(\d{4})$/)) && (mo = kdMon(m[1]))) { return wd ? null : m[2] + '년 ' + mo + '월'; }
+    else return null;
+    if (d < 1 || d > 31) return null;
+    return (y ? y + '년 ' : '') + mo + '월 ' + d + '일' + (wd ? ' (' + wd + ')' : '');
+  }
+  // 날짜[,| at] 시각 | 시각 | 날짜
+  function kdOne(s) {
+    var v = kdTime(s); if (v) return v;
+    var m = s.match(/^(.+?),?\s+(?:at\s+)?(\d{1,2}:\d{2}(?::\d{2})?(?:\s?[AaPp]\.?[Mm]\.?)?)$/);
+    if (m) { var dd = kdDate(m[1]), tt = kdTime(m[2]); return dd && tt ? dd + ' ' + tt : null; }
+    return kdDate(s);
+  }
+  // v4.21.2: 앞 라벨('Created on: …' — 라벨은 _text 에 있어야 한다)·뒤 시간대('(KST)'·'(GMT+09:00)')를 떼고 본다
+  // v4.21.4: 앞 구분 기호('- 8:41 PM KST' — 감사 로그)·괄호 없는 시간대 약어(KST·PST·EDT·UTC·GMT+9)
+  var KD_LABEL = /^([A-Z][A-Za-z ]{1,24}:)\s+(.+)$/,
+    KD_TZ = /^(.+?)\s+(\((?:[A-Z]{2,5}|(?:GMT|UTC)[+-]\d{1,2}(?::\d{2})?)\)|[A-Z]{1,4}T|UTC|GMT(?:[+-]\d{1,2}(?::\d{2})?)?)$/,
+    KD_SEP = /^([-–·•|]\s+)(.+)$/;
+  function kdPre(t) { return KD_PRE.test(t) || KD_LABEL.test(t) || (KD_SEP.test(t) && KD_PRE.test(t.replace(KD_SEP, '$2'))); }
+  function koDate(t) {
+    var lab = '', tz = '', m = t.match(KD_SEP);
+    if (m) { lab = m[1]; t = m[2]; }
+    else if ((m = t.match(KD_LABEL))) { if (!T || typeof T[m[1]] !== 'string') return null; lab = T[m[1]] + ' '; t = m[2]; }
+    if ((m = t.match(KD_TZ))) { t = m[1]; tz = ' ' + m[2]; }
+    var v = kdCore(t);
+    return v === null ? null : lab + v + tz;
+  }
+  function kdCore(t) {
+    if (t.length > 48 || !KD_PRE.test(t)) return null;
+    var v = kdOne(t); if (v) return v === t ? null : v;
+    var r = t.match(/^(.+?)\s+([-–—~]|to)\s+(.+)$/); if (!r) return null;
+    var a = kdOne(r[1]), sep = ' ' + (r[2] === 'to' ? '–' : r[2]) + ' ', b = kdOne(r[3]), m;
+    if (a && b) return (a + sep + b) === t ? null : a + sep + b;
+    // 'Nov 1 – 7, 2026' · '21 Oct - 27' : 오른쪽이 일(·연도)만
+    if (a && (m = r[3].match(/^(\d{1,2})(?:,?\s+(\d{4}))?$/)) && /^\d+월 \d+일$/.test(a)) return (m[2] ? m[2] + '년 ' : '') + a + sep + (+m[1]) + '일';
+    return null;
+  }
+  // v4.21.3: 차트 SVG 글자 — 월·요일 약어 단독('Dec'→'12월', 'Mon'→'월'), '범례 - 숫자'('Open - 123'→'진행 중 - 123')
+  function kdChart(p, t) {
+    if (!inChart(p)) return null;
+    var k = t.toLowerCase().replace(/\.$/, ''), m;
+    if (KD_MON.hasOwnProperty(k)) return KD_MON[k] + '월';
+    if (KD_WD.hasOwnProperty(k)) return KD_WD[k];
+    if ((m = t.match(/^(.+?) - ([\d,.]+%?)$/))) {
+      var x = (T && typeof T[m[1]] === 'string') ? T[m[1]] : (TS && typeof TS[m[1]] === 'string') ? TS[m[1]] : null;
+      return x ? x + ' - ' + m[2] : null;
+    }
+    return null;
+  }
+  // v4.21.3: 페이지 크기 선택 '10 / page' → '10 / 페이지'
+  var KD_PAGE = /^(\d+) \/ page$/;
+  // 끄기: 사전 core._opts.dates === false(원격) 또는 localStorage.hcKoDates = '0'(브라우저별 진단)
+  var kdFlag = null;   // core 가 바뀌면(onCoreStale) 다시 계산
+  function kdOn() {
+    if (kdFlag !== null) return kdFlag;
+    var on = !(core && core._opts && core._opts.dates === false) && lsGet('hcKoDates') !== '0';
+    if (core) kdFlag = on;
+    return on;
+  }
   function trText(n) {
     var s = n.nodeValue; if (!s || (!T && !TS)) return;
     var t = s.trim(); if (!t) return;
-    var v = T ? T[t] : undefined, scoped = false;
+    var v = T ? T[t] : undefined, scoped = false, dated = false;
     if (v === undefined) {
-      if (!TS) return;
-      v = TS[t]; if (v === undefined) return;
-      if (!inScope(n.parentElement)) return;
-      scoped = true;
+      if (TS && (v = TS[t]) !== undefined) {
+        if (!inScope(n.parentElement) && !inStatusTag(n.parentElement, t)) return;
+        scoped = true;
+      } else {
+        if (!kdOn()) return;                                                  // D3 날짜·시각(v4.21)·차트·페이지 크기
+        if (kdPre(t) && (v = koDate(t)) !== null) dated = true;
+        else if ((v = kdChart(n.parentElement, t)) !== null) dated = true;
+        else if (KD_PAGE.test(t)) { v = t.replace(KD_PAGE, '$1 / 페이지'); dated = true; }
+        else return;
+      }
     }
     if (skipNode(n)) return;
     n.nodeValue = joinsPrev(s, t, v) ? v + (s.match(/\s*$/) || [''])[0] : repl(s, t, v);
-    if (scoped) stats.scopedHits++; else stats.textHits++;
+    if (dated) stats.dateHits++; else if (scoped) stats.scopedHits++; else stats.textHits++;
   }
   function trAttrs(el) {
     if ((!T && !TS) || !el.getAttribute) return;
@@ -721,6 +842,9 @@
       var a = ATTRS[i], s = el.getAttribute(a); if (!s) continue;
       var v = T ? T[s.trim()] : undefined, sc = false;
       if (v === undefined && TS && (a === 'placeholder' || a === 'aria-label')) { v = TS[s.trim()]; sc = true; }
+      if (v === undefined && (a === 'title' || a === 'aria-label') && kdPre(s.trim()) && kdOn()) {   // D3(v4.21)
+        var dv = koDate(s.trim()); if (dv !== null) { el.setAttribute(a, dv); stats.dateHits++; continue; }
+      }
       if (v !== undefined) { el.setAttribute(a, v); if (sc) stats.scopedHits++; else stats.textHits++; }
     }
   }
@@ -901,7 +1025,7 @@
       }).catch(function (e) { stats.pointerFail++; log('포인터 갱신 실패 — 현재 REV 유지', e && e.message); });
     } catch (e) {}
   }
-  function onCoreStale(nd) { core = nd; T = nd._text || null; TS = nd._textScoped || null; hostDone = false; setupHost(); }
+  function onCoreStale(nd) { core = nd; kdFlag = null; T = nd._text || null; TS = nd._textScoped || null; hostDone = false; setupHost(); }
   // 포인터가 가리키는 REV 의 사전을 CDN·raw 양쪽에서 못 받으면(가리키는 커밋에 파일이 없거나
   // 삭제된 경우) 포인터를 버리고 내장 REV 로 한 번 더 간다. 내장 REV 까지 실패하면 그대로 실패.
   function loadCore() {
