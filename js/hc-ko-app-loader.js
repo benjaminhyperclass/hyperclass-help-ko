@@ -1,4 +1,5 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.0
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.1
+ * v4.21.1: 캘린더 주간 머리글 '01 Sun' → '1일 (일)', 'Sun 01'·'Sun 11/1' 도 같은 레이어에서.
  * v4.21.0: 날짜·시각 표기 레이어(D3) — 텍스트 노드(·title·aria-label) **전체가** 영어 날짜/시각(또는 범위)일 때만
  *          'Sep 28, 2026 02:07 PM' → '2026년 9월 28일 오후 2:07', '08:00 PM – 10:00 PM' → '오후 8:00 – 오후 10:00',
  *          'Today at 10:22 AM' → '오늘 오전 10:22'. 사용자 언어가 영어라 GHL 이 dayjs/moment 영어 형식으로 찍던 것(연락처·대화·
@@ -192,7 +193,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.21.0',
+    version: '4.21.1',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -545,6 +546,10 @@
     m = s.match(/^([A-Za-z]{3,9})\.?,?\s+(.+)$/);
     if (m && KD_WD.hasOwnProperty(m[1].toLowerCase())) { wd = KD_WD[m[1].toLowerCase()]; s = m[2]; }
     if (KD_REL.hasOwnProperty(s.toLowerCase())) return wd ? null : KD_REL[s.toLowerCase()];
+    if (wd && /^\d{1,2}$/.test(s) && +s >= 1 && +s <= 31) return (+s) + '일 (' + wd + ')';              // 'Sun 01'
+    if (wd && (m = s.match(/^(\d{1,2})\/(\d{1,2})$/))) return (+m[1]) + '/' + (+m[2]) + ' (' + wd + ')';  // 'Sun 11/1'
+    if (!wd && (m = s.match(/^(\d{1,2})\s+([A-Za-z]{3,9})$/)) && KD_WD.hasOwnProperty(m[2].toLowerCase()) && +m[1] >= 1 && +m[1] <= 31)
+      return (+m[1]) + '일 (' + KD_WD[m[2].toLowerCase()] + ')';                                            // 주간 머리글 '01 Sun'
     if ((m = s.match(/^([A-Za-z]{3,9}\.?)\s+(\d{1,2})(?:st|nd|rd|th)?(?:,?\s+(\d{4}))?$/)) && (mo = kdMon(m[1]))) { d = +m[2]; y = m[3]; }
     else if ((m = s.match(/^(\d{1,2})\s+([A-Za-z]{3,9}\.?),?(?:\s+(\d{4}))?$/)) && (mo = kdMon(m[2]))) { d = +m[1]; y = m[3]; }
     else if ((m = s.match(/^([A-Za-z]{3,9}\.?),?\s+(\d{4})$/)) && (mo = kdMon(m[1]))) { return wd ? null : m[2] + '년 ' + mo + '월'; }
