@@ -1,4 +1,6 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.1
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.2
+ * v4.21.2: 날짜 앞 라벨·뒤 시간대 — 'Created on: 5 Sep 2026, 6:17 PM (KST)' → '생성일: 2026년 9월 5일 오후 6:17 (KST)'.
+ *          라벨은 _text 에 있는 것만(사전이 정한다). 시간대 약어는 그대로 둔다.
  * v4.21.1: 캘린더 주간 머리글 '01 Sun' → '1일 (일)', 'Sun 01'·'Sun 11/1' 도 같은 레이어에서.
  * v4.21.0: 날짜·시각 표기 레이어(D3) — 텍스트 노드(·title·aria-label) **전체가** 영어 날짜/시각(또는 범위)일 때만
  *          'Sep 28, 2026 02:07 PM' → '2026년 9월 28일 오후 2:07', '08:00 PM – 10:00 PM' → '오후 8:00 – 오후 10:00',
@@ -193,7 +195,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.21.1',
+    version: '4.21.2',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -564,7 +566,17 @@
     if (m) { var dd = kdDate(m[1]), tt = kdTime(m[2]); return dd && tt ? dd + ' ' + tt : null; }
     return kdDate(s);
   }
+  // v4.21.2: 앞 라벨('Created on: …' — 라벨은 _text 에 있어야 한다)·뒤 시간대('(KST)'·'(GMT+09:00)')를 떼고 본다
+  var KD_LABEL = /^([A-Z][A-Za-z ]{1,24}:)\s+(.+)$/, KD_TZ = /^(.+?)\s+(\((?:[A-Z]{2,5}|(?:GMT|UTC)[+-]\d{1,2}(?::\d{2})?)\))$/;
+  function kdPre(t) { return KD_PRE.test(t) || KD_LABEL.test(t); }
   function koDate(t) {
+    var lab = '', tz = '', m = t.match(KD_LABEL);
+    if (m) { if (!T || typeof T[m[1]] !== 'string') return null; lab = T[m[1]] + ' '; t = m[2]; }
+    if ((m = t.match(KD_TZ))) { t = m[1]; tz = ' ' + m[2]; }
+    var v = kdCore(t);
+    return v === null ? null : lab + v + tz;
+  }
+  function kdCore(t) {
     if (t.length > 48 || !KD_PRE.test(t)) return null;
     var v = kdOne(t); if (v) return v === t ? null : v;
     var r = t.match(/^(.+?)\s+([-–—~]|to)\s+(.+)$/); if (!r) return null;
@@ -591,7 +603,7 @@
         if (!inScope(n.parentElement)) return;
         scoped = true;
       } else {
-        if (!KD_PRE.test(t) || !kdOn() || (v = koDate(t)) === null) return;   // D3 날짜·시각(v4.21)
+        if (!kdPre(t) || !kdOn() || (v = koDate(t)) === null) return;   // D3 날짜·시각(v4.21)
         dated = true;
       }
     }
@@ -605,7 +617,7 @@
       var a = ATTRS[i], s = el.getAttribute(a); if (!s) continue;
       var v = T ? T[s.trim()] : undefined, sc = false;
       if (v === undefined && TS && (a === 'placeholder' || a === 'aria-label')) { v = TS[s.trim()]; sc = true; }
-      if (v === undefined && (a === 'title' || a === 'aria-label') && KD_PRE.test(s.trim()) && kdOn()) {   // D3(v4.21)
+      if (v === undefined && (a === 'title' || a === 'aria-label') && kdPre(s.trim()) && kdOn()) {   // D3(v4.21)
         var dv = koDate(s.trim()); if (dv !== null) { el.setAttribute(a, dv); stats.dateHits++; continue; }
       }
       if (v !== undefined) { el.setAttribute(a, v); if (sc) stats.scopedHits++; else stats.textHits++; }
