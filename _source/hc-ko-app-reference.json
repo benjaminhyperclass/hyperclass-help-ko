@@ -413697,7 +413697,7 @@
  },
  "copilotApp.copilot.askAi.access.bulkChanges.resetToRoleDefault": {
   "en": "Everyone reset to their role default",
-  "ko": "모든 사용자를 역할 기본값으로 재설정"
+  "ko": "모든 사용자가 역할 기본값으로 재설정됨"
  },
  "copilotApp.copilot.askAi.access.bulkChanges.resultCount": {
   "en": "Showing {shown} of {total} changes",
@@ -413725,7 +413725,7 @@
  },
  "copilotApp.copilot.askAi.access.bulkChanges.setToLevel": {
   "en": "Everyone set to {level}",
-  "ko": "모든 사용자를 {level}(으)로 설정"
+  "ko": "모든 사용자가 {level}(으)로 설정됨"
  },
  "copilotApp.copilot.askAi.access.bulkChanges.showFailures": {
   "en": "Show {count} failures",
@@ -413769,7 +413769,7 @@
  },
  "copilotApp.copilot.askAi.access.bulkChanges.unknownActor": {
   "en": "Someone",
-  "ko": "팀원"
+  "ko": "알 수 없는 사용자"
  },
  "copilotApp.copilot.askAi.access.bulkChanges.unknownTime": {
   "en": "Time not recorded",
@@ -413913,7 +413913,7 @@
  },
  "copilotApp.copilot.askAi.access.domain.crmCustomMenus": {
   "en": "Custom menus",
-  "ko": "사용자 정의 메뉴"
+  "ko": "커스텀 메뉴"
  },
  "copilotApp.copilot.askAi.access.domain.crmEmailDomain": {
   "en": "Email domains",
@@ -413981,7 +413981,7 @@
  },
  "copilotApp.copilot.askAi.access.domain.crmObjects": {
   "en": "Custom objects",
-  "ko": "사용자 지정 개체"
+  "ko": "커스텀 오브젝트"
  },
  "copilotApp.copilot.askAi.access.domain.crmOpportunities": {
   "en": "Opportunities",
@@ -414929,7 +414929,7 @@
  },
  "copilotApp.copilot.askAi.access.sensitive.lede": {
   "en": "{module} is sensitive. Every access level caps it at View on purpose.",
-  "ko": "{module}은(는) 민감한 스킬입니다. 모든 액세스 수준에서 의도적으로 '보기'까지만 허용합니다."
+  "ko": "{module}은(는) 민감합니다. 모든 액세스 수준에서 의도적으로 '보기'까지만 허용합니다."
  },
  "copilotApp.copilot.askAi.access.sensitive.serverEnforced": {
   "en": "This confirmation is required. Without it the change is refused.",
@@ -415049,7 +415049,7 @@
  },
  "copilotApp.copilot.askAi.access.subAccounts.bulkConfirmDowngradeWarning": {
   "en": "{count} of them move to a narrower level — Ask AI will be able to do less for their users than it can today.",
-  "ko": "그중 {count}개는 더 좁은 수준으로 바뀝니다. 해당 사용자에게 'AI에게 문의'가 할 수 있는 작업이 지금보다 줄어듭니다."
+  "ko": "그중 {count}개는 더 제한된 수준으로 바뀝니다. 해당 사용자에게 'AI에게 문의'가 할 수 있는 작업이 지금보다 줄어듭니다."
  },
  "copilotApp.copilot.askAi.access.subAccounts.bulkConfirmDowngradeWarningOne": {
   "en": "{count} of them moves to a narrower level — Ask AI will be able to do less for its users than it can today.",
