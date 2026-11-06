@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "version": "4.2.56",
+  "version": "4.2.57",
   "built": "2026-11-06",
-  "source": "agentsApp 108 + round proposalCommon 90 + 앱 전체 카탈로그 추출 라운드(11-05 오후): 이메일 빌더 ghlEmailBuilderCommon 2,257 · agentStudioApp 228 · superagentsApp 118 · proposalCommon 91 = 2,694문구 — 번역 6갈래 + 독립 검수 4갈래(교정 43) + round productsApp 116 + round opportunitiesApp 19 + round contactsApp 9 + round integrationsApp 2 + round socialPlannerApp 2 + AI 직원 앱 aiEmployeesApp 이전 앱 카탈로그 번역을 호스트 네임스페이스로 이관(2,060) + 신규 35 · 상품 productsApp 116 · 기회·연락처·연동·소셜 소량 — 독립 검수 3갈래 교정 146(원문 변경 Bot→Agent, On=켬, 확정 용어) + 기존 사전의 일괄 오역 정정 17: 범위·페이지 'to'(' 대상: ')→'~' 7, 토글 'On'(날짜)→켬·켜짐 5, 반복 종료 'On'(날짜)→지정일 5 + round blogsApp 130 + round formSurveyApp 143 + round qrCodeListApp 24 + round clientPortalBuilder 3 + round crmCommon 4 + round externalTrackingApp 4 + round launchpadApp 1 + round onboardingApp 1 + round usersMicroApp 3 + round voiceAiApp 2 + round reputationApp 1 + round ghlEmailBuilderCommon 1 + 'AI에게 문의' copilotApp 1,366 · 블로그 blogsApp 141 · 폼 formSurveyApp 143 · QR 코드 qrCodeListApp 24 · 소량 9개 앱 20 — 번역 6갈래 + 독립 검수 4갈래(교정 5 + 미디어 저장소 통일 9) + round blogsApp 102 + 'AI에게 문의' copilotApp 잔여 581 · 블로그 blogsApp 잔여 115 — 번역 3갈래 + 독립 검수 2갈래(교정 4) · 'AI에게 문의' 배너 _text 2 + _textScoped Configure + _textScoped certificate·badge(자격 증명 목록 유형 칩 — 로더 v4.21.12 STATUS_WORDS) + 설정 데이터 가져오기·일괄 작업 bulkActionsApp 1,717 · GoKollab goKollabApp 156 · 상품 컬렉션 storeCatalogApp 116 · 오브젝트 설정 crmObjectsSettingsApp 26 (이관 1,553 + 신규 462, 독립 검수 교정 78) + round goKollabApp 154 + round storeCatalogApp 115 + round crmObjectsSettingsApp 22",
+  "source": "agentsApp 108 + round proposalCommon 90 + 앱 전체 카탈로그 추출 라운드(11-05 오후): 이메일 빌더 ghlEmailBuilderCommon 2,257 · agentStudioApp 228 · superagentsApp 118 · proposalCommon 91 = 2,694문구 — 번역 6갈래 + 독립 검수 4갈래(교정 43) + round productsApp 116 + round opportunitiesApp 19 + round contactsApp 9 + round integrationsApp 2 + round socialPlannerApp 2 + AI 직원 앱 aiEmployeesApp 이전 앱 카탈로그 번역을 호스트 네임스페이스로 이관(2,060) + 신규 35 · 상품 productsApp 116 · 기회·연락처·연동·소셜 소량 — 독립 검수 3갈래 교정 146(원문 변경 Bot→Agent, On=켬, 확정 용어) + 기존 사전의 일괄 오역 정정 17: 범위·페이지 'to'(' 대상: ')→'~' 7, 토글 'On'(날짜)→켬·켜짐 5, 반복 종료 'On'(날짜)→지정일 5 + round blogsApp 130 + round formSurveyApp 143 + round qrCodeListApp 24 + round clientPortalBuilder 3 + round crmCommon 4 + round externalTrackingApp 4 + round launchpadApp 1 + round onboardingApp 1 + round usersMicroApp 3 + round voiceAiApp 2 + round reputationApp 1 + round ghlEmailBuilderCommon 1 + 'AI에게 문의' copilotApp 1,366 · 블로그 blogsApp 141 · 폼 formSurveyApp 143 · QR 코드 qrCodeListApp 24 · 소량 9개 앱 20 — 번역 6갈래 + 독립 검수 4갈래(교정 5 + 미디어 저장소 통일 9) + round blogsApp 102 + 'AI에게 문의' copilotApp 잔여 581 · 블로그 blogsApp 잔여 115 — 번역 3갈래 + 독립 검수 2갈래(교정 4) · 'AI에게 문의' 배너 _text 2 + _textScoped Configure + _textScoped certificate·badge(자격 증명 목록 유형 칩 — 로더 v4.21.12 STATUS_WORDS) + 설정 데이터 가져오기·일괄 작업 bulkActionsApp 1,717 · GoKollab goKollabApp 156 · 상품 컬렉션 storeCatalogApp 116 · 오브젝트 설정 crmObjectsSettingsApp 26 (이관 1,553 + 신규 462, 독립 검수 교정 78) + round goKollabApp 154 + round storeCatalogApp 115 + round crmObjectsSettingsApp 22 + GoKollab 이전 안내 배너 _text 3 · 동영상 플레이어(Plyr) 툴팁 _text 4·_textScoped 5",
   "strings": 102718
  },
  "host": {
@@ -164338,7 +164338,14 @@
   "Begin collecting reviews by connecting your pages and sharing your review link": "페이지를 연결하고 리뷰 링크를 공유해 리뷰 수집을 시작하세요",
   "Sell across Facebook and Instagram by syncing your store products and inventory with Meta Shops.": "스토어 상품과 재고를 Meta Shops와 동기화해 Facebook과 Instagram에서 판매하세요.",
   "Cal.com lets you automate scheduling — trigger workflows when bookings are created, canceled, or rescheduled.": "Cal.com으로 일정 예약을 자동화하세요 — 예약이 생성·취소·변경될 때 워크플로우를 실행합니다.",
-  "Ask AI is disabled for your sub-account users by default. Select users who should have access.": "서브 계정 사용자의 'AI에게 문의'는 기본적으로 꺼져 있습니다. 사용할 사용자를 선택하세요."
+  "Ask AI is disabled for your sub-account users by default. Select users who should have access.": "서브 계정 사용자의 'AI에게 문의'는 기본적으로 꺼져 있습니다. 사용할 사용자를 선택하세요.",
+  "New client portal is live for your members": "새 회원 포털이 회원에게 공개되었습니다",
+  "· You can switch back until Nov 30, 2026.": "· 2026년 11월 30일까지 이전 버전으로 되돌릴 수 있습니다.",
+  "Switch back": "이전 버전으로 전환",
+  "Enter fullscreen": "전체 화면",
+  "Exit fullscreen": "전체 화면 종료",
+  "Current time": "현재 시간",
+  "Go back to previous menu": "이전 메뉴로"
  },
  "_textScoped": {
   "AM": "오전",
@@ -165723,6 +165730,11 @@
   "Views": "조회수",
   "Configure": "설정",
   "certificate": "수료증",
-  "badge": "배지"
+  "badge": "배지",
+  "Play": "재생",
+  "Unmute": "음소거 해제",
+  "Captions": "자막",
+  "Quality": "화질",
+  "Speed": "속도"
  }
 }
