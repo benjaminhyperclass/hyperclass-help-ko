@@ -26,6 +26,7 @@ async function relay(req, key, rest, url) {
   const ct = res.headers.get('content-type') || '';
   const out = new Headers(res.headers);
   out.set('x-hc-ifr', key);
+  out.delete('set-cookie'); // 다른 출처의 쿠키를 app.hyperclass.ai 에 심지 않는다
   if (ct.includes('text/html')) {
     const prefix = '/__ifr/' + key;
     let html = await res.text();
@@ -36,6 +37,7 @@ async function relay(req, key, rest, url) {
     html = html.replace(/<head([^>]*)>/i, '<head$1>' + boot);
     out.delete('content-length');
     out.delete('content-security-policy');
+    out.delete('x-frame-options');
     out.set('cache-control', 'no-store');
     return new Response(html, { status: res.status, headers: out });
   }

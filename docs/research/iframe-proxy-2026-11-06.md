@@ -43,3 +43,37 @@ iframe을 `app.hyperclass.ai` 출처로 띄우면 한글팩이 iframe 문서 안
 2. 벤자민 브라우저 탭에서만 부모 훅을 수동 주입 → 워크플로우 목록·빌더 열기·저장·트리거 편집 통과 여부 표.
 3. 통과하면 iframe 안에 한글 레이어 시험 → 결과를 한글팩 세션에 넘겨 로더 캐너리(r6JD)로 편입. 실패 항목은 "범위 밖" 확정.
 4. 같은 방식으로 `client-app-crm-settings`(비즈니스 프로필) 반복.
+
+## 7. PoC 실측 결과 (2026-11-06 밤, 스냅샷 마스터 `buBPs5x9kdFpGMOagWa8`, 벤자민 맥 크롬 1개 탭)
+배포: Worker `hc-ifr-proxy` + 라우트 `app.hyperclass.ai/__ifr/*`·`/assets/*`(Fail open, workers.dev 끔). 부모 훅은 해당 탭에만 수동 주입.
+
+| 시험 | 결과 | 비고 |
+|---|---|---|
+| 메인 앱 영향 | ✅ 없음 | 훅 없는 탭·훅 있는 탭 모두 대시보드 정상. 메인 앱은 `/assets/`·`/__ifr/` 미사용 재확인 |
+| 워크플로우 목록 | ✅ | iframe src `app.hyperclass.ai/__ifr/wf/…`, `contentDocument` 직접 접근, 폴더·워크플로우 데이터 로드 |
+| Postmate 핸드셰이크·인증 | ✅ | 훅으로 iframe src + `<a href>` 출처 계산을 같이 바꾸면 그대로 맞음 |
+| 워크플로우 빌더 열기 | ✅ | 자동 저장 안내 모달 → "Continue with Manual Save" 선택 |
+| 트리거 편집 패널 | ✅ | 폼 필터 값 표시, 취소/저장 동작 |
+| 저장 | ✅ | 내용 변경 없이 트리거 저장→Save → "Saved", 목록 최근 수정 11-06 10:03 PM, Published 유지 |
+| API 호출 | ✅ | backend·services.leadconnectorhq.com 실패 0(워크플로우). 같은 출처 `app.hyperclass.ai` Origin 허용됨 |
+| 비즈니스 프로필(crm-settings) | ✅ 로드 | 데이터 표시. `check-whitelabel-domain` 400 1건 — 브랜드 도메인 비어 있어서로 추정(원 출처 비교 미실시). 저장은 미시험(워크플로우 저장과 같은 경로) |
+| 콘솔 오류 | ✅ 0 | Sentry·pendo 동작 |
+| iframe 안 한글(기존 사전 `core._text` 그대로) | ✅ 부분 | 워크플로우 28곳·비즈니스 프로필 27곳 즉시 한글화(워크플로우 목록·폴더 만들기·AI로 만들기·표준 빌더·등록 이력·실행 로그·새 트리거 추가·폼 제출·대기·비즈니스 프로필 설정 등) |
+
+### iframe 안 미번역 상위(사전 보강 대상)
+- 워크플로우: Builder · Settings · Draft · Publish · Saved · Save · Add · Stats · Explain this workflow · Explain · Export · Name · Status · Timestamp · Error · Previous · Next · Deleted · New smart list · Customize list · Search · Created on · Published · Email
+- 비즈니스 프로필: General Information · Location ID · Business Logo · Upload · Remove · Friendly Business Name · Legal Business Name · Business Email · Business Phone · Add Domain · Business Website · Business Niche · Choose one.. · Update Information · Business Information · Business Type · Pick Business Type · Business Industry · Pick Business Industry · Business Registration ID Type · Business Registration Number · Business Regions of Operations · Africa · Asia · Europe · Latin America · USA and Canada · Business Physical Address · Street Address · City · Postal/Zip Code · State / Prov / Region · Country · Time Zone · Platform Language · Outbound communication language for custom values · Update
+  (짧은 일반어 Builder·Settings·Save 등은 전역 `_text`에 없을 뿐 범위 사전에 있을 수 있음 — iframe 문서에도 범위 규칙을 적용하면 줄어듦)
+
+### 발견한 것 · 편입 전 고칠 것
+1. **`/assets/*` 라우트가 실제로 필요**: 번들의 `__vite__mapDeps`가 `"assets/X.js"`를 루트 기준(`/assets/…`)으로 미리 불러온다(워크플로우 화면 한 번에 140여 건). 지금은 Referer로 앱을 고르는데(`/settings/` → crm), CSS 안 `url()`처럼 Referer가 CSS 파일인 경우 오판 가능 → **Worker가 JS 본문의 `"assets/` 를 `"__ifr/{key}/assets/` 로 바꾸면 루트 `/assets/*` 라우트를 없앨 수 있다**(권장).
+2. **fail-open 함정**: Worker가 죽거나 한도 초과면 `/__ifr/…`가 메인 앱 원본으로 가서 iframe 안에 메인 앱이 뜬다 → 훅은 `HEAD /__ifr/wf/`의 `x-hc-ifr` 헤더 확인 뒤에만 켠다(`parent-hook.poc.js` 반영).
+3. **localStorage 공유**: iframe 앱이 이제 메인 앱과 같은 저장소를 쓴다(예: `workflow-sidebar-visible`). 지금까지 충돌 징후 없음 — 캐너리 기간 관찰.
+4. 훅은 `<a href>` 세터 전역 교체 — 대상 두 호스트만 바꾸므로 다른 링크 영향 없음.
+5. AI 스튜디오(`leadgen-vibe-ai-builder`)는 Worker `APPS`에 아직 없음 — 같은 방식으로 추가 가능, 미시험.
+
+### 다음 (한글팩 세션 판단)
+1. Worker: JS `"assets/` 치환 → `/assets/*` 라우트 제거(위 1).
+2. 로더 캐너리(r6JD) 편입: `parent-hook.poc.js` + iframe document에 기존 DOM 번역(범위 규칙 포함) 부착.
+3. 사전 보강: 위 미번역 목록.
+4. 캐너리 1~2일 관찰 후 전체.
