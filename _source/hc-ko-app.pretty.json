@@ -14371,7 +14371,7 @@
        "title": "{tier} 커스터마이징",
        "unassigned": "아직 어떤 서브 계정에도 할당되지 않았습니다.",
        "unnamedLevel": "이 수준",
-       "unsavedDiscard": "변경사항 취소",
+       "unsavedDiscard": "변경 사항 버리기",
        "unsavedKeep": "계속 편집",
        "unsavedMessage": "저장하지 않은 수준 변경사항이 있습니다. 지금 나가면 변경사항이 사라집니다.",
        "unsavedTitle": "저장하지 않은 변경사항을 버리시겠습니까?",
@@ -14449,7 +14449,7 @@
        "failedMessage": "이 서브 계정의 사용자를 불러오는 중 문제가 발생했습니다.",
        "filterByLevel": "액세스 수준별 필터",
        "filterByRole": "역할별 필터",
-       "tableLabel": "이 서브 계정의 사용자 및 AI에게 문의 액세스"
+       "tableLabel": "이 서브 계정의 사용자와 각 사용자의 'AI에게 문의' 액세스"
       },
       "railFooter": "'AI에게 문의'는 사용하는 사람이 할 수 있는 범위를 넘어설 수 없습니다. 모든 액세스 수준은 해당 사용자의 권한으로 제한됩니다.",
       "roles": {
@@ -14566,7 +14566,7 @@
         "bullet2": "활성화된 에이전트 및 워크플로우 스킬 사용",
         "bullet3": "에이전시 범위에서 에이전시 전용 스킬 사용 가능",
         "bullet4": "허용된 경우 삭제 가능, 민감한 레코드는 계속 보호됨",
-        "description": "활성화된 스킬을 읽기, 쓰기 및 지원되는 삭제 액세스로 실행합니다.",
+        "description": "읽기·쓰기 권한과 지원되는 삭제 권한으로 활성화된 스킬을 실행합니다.",
         "name": "빌더"
        },
        "changeCount": "변경 {count}건",
@@ -14590,7 +14590,7 @@
         "name": "사용자 지정"
        },
        "customDescription": "{base}에서 시작하며 변경한 부분만 달라집니다.",
-       "customise": "커스터마이징",
+       "customise": "사용자 지정",
        "limitReached": "사용자 지정 수준 {max}개를 모두 사용 중입니다. 자리를 만들려면 하나를 보관하세요.",
        "loadingChanges": "변경사항 불러오는 중…",
        "modified": "수정됨 · 스킬 {count}개",
@@ -14622,7 +14622,7 @@
       },
       "tiersFailedMessage": "에이전시의 액세스 수준을 불러오는 중 문제가 발생했습니다.",
       "tiersFailedTitle": "액세스 수준을 불러올 수 없습니다",
-      "title": "AI에게 문의 액세스",
+      "title": "'AI에게 문의' 액세스",
       "toasts": {
        "bulkNoChangeMessageOne": "{names}은(는) 이미 {tier}을(를) 사용 중이었습니다.",
        "bulkNotUpdatedNote": "이와 별도로 서브 계정 {notUpdated}개가 업데이트되지 않았습니다. 이 {notUpdated}개는 이전 수준을 그대로 유지하며 선택된 상태로 남아 있으므로 다시 시도할 수 있습니다: {names}.",
@@ -14644,7 +14644,7 @@
       }
      },
      "announcement": {
-      "badgeAlsoNew": "추가 신규",
+      "badgeAlsoNew": "이것도 신규",
       "badgeNew": "신규",
       "elementPicker": {
        "copy": "페이지의 카드, 행, 필드를 선택하면 'AI에게 문의'가 정확히 그 항목에 대해 답변합니다. 복사하거나 설명할 필요가 없습니다.",
@@ -25148,7 +25148,7 @@
      "emailNotificationsHint": "누군가 댓글을 달면 이메일을 받습니다.",
      "everyComment": "즉시",
      "frequency": "발송 주기",
-     "overriddenByLocation": "이 설정은 현재 이 서브 계정의 모든 블로그 사이트에 일괄 적용되어 관리되고 있습니다.",
+     "overriddenByLocation": "이 설정은 현재 이 서브 계정의 모든 블로그 사이트에 적용되어 관리되고 있습니다.",
      "recipientsHint": "이 블로그 사이트의 댓글 이메일을 받을 사람입니다.",
      "recipientsUnavailable": "팀원 목록을 불러오지 못했습니다 — 이메일 주소는 직접 입력할 수 있습니다.",
      "requireApprovalHint": "새 댓글이 게시되기 전에 검토합니다.",
@@ -25168,12 +25168,12 @@
      "closeImage": "이미지 닫기",
      "currentlyPublished": "현재 게시됨",
      "empty": "이 스레드에는 댓글이 없습니다.",
-     "next": "다음 대기 중 댓글",
+     "next": "다음 대기 중인 댓글",
      "noAuthors": "이 서브 계정에는 아직 블로그 작성자가 없습니다.",
-     "previous": "이전 대기 중 댓글",
+     "previous": "이전 대기 중인 댓글",
      "removeImage": "이미지 제거",
      "replyCountOther": "· 답글 {0}개",
-     "replyingAs": "답글 작성자",
+     "replyingAs": "다음 이름으로 답글 작성",
      "replyingTo": "{0}님에게 답글 작성 중",
      "viewImage": "첨부 이미지 보기"
     },
@@ -25223,7 +25223,7 @@
      "imported": "가져옴",
      "processing": "처리 중"
     },
-    "subtitle": "블로그 또는 팟캐스트 RSS 피드 URL을 붙여 넣으세요. 최근 게시물을 임시 저장으로 가져옵니다.",
+    "subtitle": "블로그 또는 팟캐스트 RSS 피드 URL을 붙여 넣으세요. 최근 게시물을 임시 저장 상태로 가져옵니다.",
     "summaryOnly": "요약만",
     "unreachableFeed": "지금은 해당 URL에 연결할 수 없습니다. 주소를 확인하고 다시 시도해 주세요.",
     "validate": "검증",
@@ -70270,7 +70270,7 @@
         "taggedInCommentEveryone": "댓글에서 태그됨 {'@'}Everyone",
         "taggedInPost": "게시물에서 태그됨",
         "title": "일반 그룹 이메일",
-        "taggedInPostEveryone": "게시물의 {'@'}Everyone 태그"
+        "taggedInPostEveryone": "게시물에서 {'@'}Everyone으로 태그됨"
        },
        "inviteEmail": {
         "description": "멤버가 그룹에 추가될 때 초대 이메일 전송",
@@ -73223,7 +73223,7 @@
       "willDisableMany": "{count}개 폼이 비활성화됩니다",
       "willEnableAll": "모든 폼이 활성화됩니다",
       "willEnableOne": "1개 폼이 활성화됩니다",
-      "captureTimezoneDesc": "이 옵션을 활성화하면 폼을 제출하는 개인의 시간대 정보를 수집합니다",
+      "captureTimezoneDesc": "이 옵션을 활성화하면 폼을 제출하는 응답자의 시간대 정보를 수집합니다",
       "locationOff": "이 서브 계정의 모든 폼에서 이 기능이 꺼져 있습니다.",
       "locationOn": "이 서브 계정의 모든 폼에서 이 기능이 켜져 있습니다.",
       "saveProgressName": "폼 진행 상황 저장"
