@@ -3,7 +3,7 @@ const { chromium } = require('playwright');
 const fs = require('fs'), path = require('path');
 const REPO = process.argv[2] || path.join(__dirname, '..');   // 실행: node scripts/test-loader-ifr.js  (playwright 필요, 외부 네트워크 0 — 전부 page.route)
 const LOADER = fs.readFileSync(path.join(REPO, 'js/hc-ko-app-loader.js'), 'utf8');
-const CANARY = 'r6JD1nsqtk6Oln28fgrj', OTHER = 'buBPs5x9kdFpGMOagWa8';
+const CANARY = 'r6JD1nsqtk6Oln28fgrj', OTHER = 'zzOtherLocation00000';
 const WF = 'https://client-app-automation-workflows.leadconnectorhq.com';
 
 function parentHtml(loc, delay) {
