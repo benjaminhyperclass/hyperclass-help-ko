@@ -63914,8 +63914,8 @@
       "paymentPlan": "결제 플랜",
       "agency": "에이전시",
       "aiEmployeeDisabledContent": "{name}의 AI 직원이 비활성화되었습니다. 언제든지 다시 활성화할 수 있습니다.",
-      "aiEmployeeDisabledTitle": "AI Employee가 비활성화되었습니다!",
-      "aiEmployeeEnabledSuccess": "{name}에 대한 AI Employee가 성공적으로 활성화되었습니다.",
+      "aiEmployeeDisabledTitle": "AI 직원이 비활성화되었습니다!",
+      "aiEmployeeEnabledSuccess": "{name}에 대한 AI 직원가 성공적으로 활성화되었습니다.",
       "chargedTo": "청구 대상",
       "errorDisabling": "Season Of AI 비활성화 오류!",
       "feature": "기능",
@@ -63924,7 +63924,7 @@
       "promoDisabledContent": "{name}의 {promoName}이(가) 비활성화되었습니다. 언제든지 다시 활성화할 수 있습니다.",
       "promoDisabledTitle": "{promoName}이(가) 비활성화되었습니다!",
       "promoEnabledSuccess": "{name}의 {promoName}이(가) 활성화되었습니다.",
-      "rebilling": "재청구",
+      "rebilling": "리빌링",
       "subAccount": "서브 계정",
       "subscription": "구독",
       "success": "성공",
@@ -63945,20 +63945,20 @@
      "enableDisableFeatureDesc": "이는 선택한 서브 계정에 대해 선택한 옵션에 따라 기능을 활성화/비활성화합니다",
      "enableFeature": "기능 활성화",
      "enableFeatureConfirmation": "기능 활성화 확인",
-     "enableRebillingConfirmation": "재청구 활성화 확인",
+     "enableRebillingConfirmation": "리빌링 활성화 확인",
      "failedToUpdateFeature": "기능을 업데이트하지 못했습니다.",
      "learnMore": "자세히 보기",
      "manageAIEmployeeSettings": "모든 서브 계정의 AI 직원 설정 관리",
      "manageYourOffer": "오퍼 관리",
      "newAffiliateCode": "새 제휴 코드",
      "previousAffiliateCode": "이전에 적용된 제휴 코드",
-     "rebillAmount": "재청구 금액",
-     "rebillingNote": "위의 모든 비용은 리빌링 섹션을 통해 고객에게 재청구할 수 있습니다.",
+     "rebillAmount": "리빌링 금액",
+     "rebillingNote": "위의 모든 비용은 리빌링 섹션을 통해 고객에게 다시 청구할 수 있습니다.",
      "referralCode": "추천 코드",
      "referralCodeAppliedRecently": "마지막 제휴 코드가 적용된 지 31일이 지나지 않았습니다. 현재는 제휴 코드를 변경할 수 없습니다.",
      "subAccounts": "서브 계정",
      "unknownError": "알 수 없는 오류가 발생했습니다. 관리자에게 문의하세요",
-     "unlimitedPlanNote": "AI Employee는 서브 계정당 월 $97의 무제한 월간 플랜도 제공하며, 6가지 AI 기능에 대한 무제한 액세스를 제공합니다."
+     "unlimitedPlanNote": "AI 직원은 서브 계정당 월 $97의 무제한 월간 플랜도 제공하며, 6가지 AI 기능에 대한 무제한 액세스를 제공합니다."
     },
     "modal": {
      "disableSeasonOfAI": {
@@ -64290,7 +64290,7 @@
      "mute": "음소거",
      "speaker": "스피커",
      "speakerAgent": "음성 에이전트",
-     "transfer": "전환",
+     "transfer": "통화 전환",
      "voiceAgentLabel": "음성 에이전트:"
     },
     "compare": {
@@ -64326,7 +64326,7 @@
      "highlevelAiAgent": "AI 에이전트",
      "humanAgent": "사람 에이전트",
      "revenueImpact": "수익 영향",
-     "sub": "리드의 80%는 첫 5분 안에 사라져요. 즉시 응대하고 경쟁에서 앞서세요.",
+     "sub": "리드의 80%는 첫 5분 안에 사라집니다. 즉시 응대하고 경쟁에서 앞서세요.",
      "title": "숫자는 거짓말하지 않습니다"
     },
     "cta": {
@@ -64359,7 +64359,7 @@
        "0": "연중무휴 24시간 수 초 내 전화 응답",
        "3": "리드를 놓치지 마세요"
       },
-      "desc": "모든 전화를 놓치지 않고, 예약을 잡고, 잠재 고객과 대화해보세요. 더 이상 대기음은 없어요.",
+      "desc": "모든 전화를 놓치지 않고, 예약을 잡고, 리드과 대화해보세요. 더 이상 대기음은 없어요.",
       "title": "음성 에이전트"
      },
      "workflow": {
@@ -64403,12 +64403,12 @@
      "salesAgent": {
       "chatUser": "안녕하세요, 리모컨 테일게이트가 있는 검정색 신형 Ford XLT를 찾고 있어요.",
       "chatAi": "안녕하세요, 좋은 소식이 있습니다. 매장에 해당 차량이 두 대 있습니다. 오늘 시승하러 방문하시겠어요?",
-      "desc": "모든 채널의 잠재 고객을 24시간 영업이나 예약으로 전환하세요. 비즈니스와 고객에 맞게 개인화된 목표 중심 AI 직원이 함께해요.",
+      "desc": "모든 채널의 리드를 24시간 내내 더 많은 매출이나 예약으로 전환하세요. 비즈니스와 고객에 맞게 개인화된 목표 중심 AI 직원이 함께해요.",
       "title": "영업 에이전트"
      },
      "voiceAgent": {
       "title": "음성 에이전트",
-      "desc": "다시는 예약을 놓치지 마세요. Voice Agent가 레스토랑으로 걸려오는 모든 전화를 24시간 연중무휴로 받아 예약 처리, 메뉴 문의 응대, 식단 요청 확인, 대기 명단 관리를 자연스러운 대화로 처리합니다. 직원들이 가장 바쁜 저녁 시간에도 문제없습니다."
+      "desc": "다시는 예약을 놓치지 마세요. 음성 에이전트가 레스토랑으로 걸려오는 모든 전화를 24시간 연중무휴로 받아 예약 처리, 메뉴 문의 응대, 식단 요청 확인, 대기 명단 관리를 자연스러운 대화로 처리합니다. 직원들이 가장 바쁜 저녁 시간에도 문제없습니다."
      },
      "getStartedArrow": "시작하기 →",
      "scheduler": {
@@ -64529,7 +64529,7 @@
     "optional": "선택사항",
     "permissions": "이 섹션을 편집할 권한이 없습니다",
     "previous": "이전",
-    "proceed": "계속하기",
+    "proceed": "계속",
     "remove": "제거",
     "required": "필수",
     "save": "저장",
@@ -79173,7 +79173,7 @@
     "invoiceName": "인보이스명",
     "isLabelEnabled": "상품 라벨 활성화",
     "leavePage": "페이지 나가기",
-    "mobile_pos": "판매 시점 관리(POS) - 모바일",
+    "mobile_pos": "모바일 POS",
     "noSavedCard": "저장된 카드를 찾을 수 없습니다",
     "notifyCustomer": "고객에게 알림",
     "numberOfPayments": "결제 횟수",
@@ -79185,7 +79185,7 @@
     "pricing": "가격",
     "productName": "상품명",
     "resend": "재전송",
-    "setupFee": "설치 비용",
+    "setupFee": "설정 비용",
     "sourceId": "소스 ID",
     "startDate": "시작일",
     "stay": "유지",
@@ -79530,7 +79530,7 @@
       "months": "개월",
       "weeks": "주",
       "days": "일",
-      "never": "없음"
+      "never": "만료 없음"
      },
      "value": "값",
      "weight": "무게",
@@ -79723,7 +79723,7 @@
      "productData": "유효한 상품 세부 정보를 입력하세요",
      "automaticTax": "오류: 이 인보이스의 자동 세금을 계산할 수 없습니다",
      "discount": "금액은 0보다 작거나 {max}보다 클 수 없습니다",
-     "trialPeriod": "트라이얼 기간은 정수여야 합니다"
+     "trialPeriod": "체험 기간은 정수여야 합니다"
     },
     "max": {
      "labelContent": "레이블 콘텐츠는 20자를 초과할 수 없습니다",
