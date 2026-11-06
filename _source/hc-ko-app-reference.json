@@ -415869,7 +415869,7 @@
  },
  "bulkActionsApp.actionOptions.resume": {
   "en": "Resume",
-  "ko": "다시 시작"
+  "ko": "재개"
  },
  "bulkActionsApp.actionOptions.revert": {
   "en": "Revert",
@@ -415981,7 +415981,7 @@
  },
  "bulkActionsApp.actionWarningModal.resume.positiveText": {
   "en": "Resume",
-  "ko": "다시 시작"
+  "ko": "재개"
  },
  "bulkActionsApp.actionWarningModal.resume.title": {
   "en": "Resume bulk action",
@@ -416149,7 +416149,7 @@
  },
  "bulkActionsApp.aiCampaign.channelHint": {
   "en": "Sent from {number}, the number on this agent's outbound deployment.",
-  "ko": "이 에이전트의 발신 배포 번호인 {number}에서 발송됨."
+  "ko": "이 에이전트의 발신 배포 번호인 {number}에서 발송됩니다."
  },
  "bulkActionsApp.aiCampaign.channelLabel": {
   "en": "Channel",
@@ -417009,7 +417009,7 @@
  },
  "bulkActionsApp.common.opportunities": {
   "en": "Opportunities",
-  "ko": "기회 관리"
+  "ko": "기회"
  },
  "bulkActionsApp.common.opportunityName": {
   "en": "{opportunity} name",
@@ -417201,7 +417201,7 @@
  },
  "bulkActionsApp.config.conversationAi.name": {
   "en": "Bulk Conversation AI",
-  "ko": "일괄 대화 AI"
+  "ko": "대량 대화 AI"
  },
  "bulkActionsApp.config.delete.name": {
   "en": "Bulk delete",
@@ -417621,7 +417621,7 @@
  },
  "bulkActionsApp.config.stats.unsubscribed": {
   "en": "Unsubscribed",
-  "ko": "구독취소"
+  "ko": "구독 취소"
  },
  "bulkActionsApp.config.stats.unsubscribedTrimmed": {
   "en": "Unsub.",
@@ -417777,7 +417777,7 @@
  },
  "bulkActionsApp.config.workflow.addRecordsToAutomation": {
   "en": "Add to automation for the following {objectName}",
-  "ko": "다음 {objectName} 에 대한 자동화에 추가"
+  "ko": "다음 {objectName}을(를) 자동화에 추가"
  },
  "bulkActionsApp.config.workflow.addRecordsToAutomationDescription": {
   "en": "Runs the selected workflow or campaign for all selected {objectName}",
@@ -418057,15 +418057,15 @@
  },
  "bulkActionsApp.descriptionModal.headers.tagsAdded": {
   "en": "Tags added",
-  "ko": "태그가 추가되었습니다"
+  "ko": "추가된 태그"
  },
  "bulkActionsApp.descriptionModal.headers.tagsRemoved": {
   "en": "Tags removed",
-  "ko": "태그가 제거되었습니다"
+  "ko": "제거된 태그"
  },
  "bulkActionsApp.descriptionModal.headers.tagsRestored": {
   "en": "Tags restored",
-  "ko": "태그가 복원되었습니다"
+  "ko": "복원된 태그"
  },
  "bulkActionsApp.descriptionModal.headers.templateName": {
   "en": "Template name",
