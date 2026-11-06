@@ -4,6 +4,9 @@ name: 메인 앱 한글팩 v4 — REV 포인터 전진
 # 실제로 서빙하는지 대조하고 data/hc-ko-app-rev.json 의 rev 를 그 커밋으로 전진시킨다(봇 커밋).
 # 로더(v4.10+)는 이 포인터를 raw@main 에서 읽으므로 Custom JS 슬롯 교체가 필요 없다.
 #
+# 2026-11-06: rev 에는 main 커밋이 아니라 **cdn 브랜치 커밋**(런타임 파일만, scripts/publish-cdn.sh)을 넣는다.
+# main 트리(75MB+)는 jsDelivr 패키지 한도 50MB 를 넘어 403 이 날 수 있다. 원본 main 커밋은 rev.json 의 src 에 남긴다.
+#
 # 트리거가 workflow_run 인 이유: push 로 직접 돌리면 validate 와 병렬이 되어 C1~C10·DNT 가
 # 빨간불이어도 그 사전이 프로덕션 포인터가 된다. 검증 성공 → 대조 → 커밋 순서를 강제한다.
 #
@@ -63,7 +66,7 @@ jobs:
           git fetch -q origin main && git checkout -q -B main origin/main
           if [ -n "$INPUT_TARGET" ]; then TARGET="$INPUT_TARGET"; else
             TARGET=$(git log -1 --format=%H -- data/hc-ko-app-core.json data/hc-ko-app-apps.json); fi
-          CUR=$(python3 -c "import json;print(json.load(open('data/hc-ko-app-rev.json'))['rev'])")
+          CUR=$(python3 -c "import json;d=json.load(open('data/hc-ko-app-rev.json'));print(d.get('src') or d['rev'])")
           BY=$(python3 -c "import json;print(json.load(open('data/hc-ko-app-rev.json')).get('by',''))")
           VER=$(git show "$TARGET:data/hc-ko-app-core.json" | python3 -c "import json,sys;print(json.load(sys.stdin)['_meta'].get('version','?'))")
           echo "target=$TARGET" >> $GITHUB_OUTPUT; echo "version=$VER" >> $GITHUB_OUTPUT; echo "current=$CUR" >> $GITHUB_OUTPUT
@@ -86,28 +89,41 @@ jobs:
           echo "skip=false" >> $GITHUB_OUTPUT
           echo "전진 예정: ${CUR:0:7} → ${TARGET:0:7} (사전 v$VER, by=$BY)"
 
-      - name: jsDelivr @대상SHA 가 커밋 blob 과 같은 바이트를 서빙하는지 대조 (재시도)
+      - name: cdn 브랜치 커밋 발행 (런타임 파일만 — jsDelivr 50MB 한도)
+        id: cdn
         if: steps.target.outputs.skip != 'true'
         env:
           T: ${{ steps.target.outputs.target }}
         run: |
           set -e
+          C=$(bash scripts/publish-cdn.sh "$T" --push | tail -1)
+          echo "sha=$C" >> $GITHUB_OUTPUT
+          echo "cdn 커밋: ${C:0:7} ← main ${T:0:7}" | tee -a $GITHUB_STEP_SUMMARY
+
+      - name: jsDelivr @cdnSHA 가 커밋 blob 과 같은 바이트를 서빙하는지 대조 (재시도)
+        if: steps.target.outputs.skip != 'true'
+        env:
+          T: ${{ steps.target.outputs.target }}
+          C: ${{ steps.cdn.outputs.sha }}
+        run: |
+          set -e
           for f in data/hc-ko-app-core.json data/hc-ko-app-apps.json; do
             want=$(git show "$T:$f" | sha256sum | cut -c1-64)
-            url="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@$T/$f"
+            url="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@$C/$f"
             ok=0
             for i in $(seq 1 8); do
               got=$(curl -fsSL --max-time 30 "$url" | sha256sum | cut -c1-64 || true)
               if [ "$got" = "$want" ]; then ok=1; echo "  ✅ $f  $got"; break; fi
               echo "  ⏳ $f 시도 $i/8 — cdn=${got:0:12} want=${want:0:12}"; sleep 15
             done
-            [ $ok -eq 1 ] || { echo "❌ jsDelivr 가 $T 의 $f 을 서빙하지 않습니다 — 포인터를 전진시키지 않습니다"; exit 1; }
+            [ $ok -eq 1 ] || { echo "❌ jsDelivr 가 cdn ${C:0:7}(main ${T:0:7}) 의 $f 을 서빙하지 않습니다 — 포인터를 전진시키지 않습니다"; exit 1; }
           done
 
       - name: 포인터 커밋 (봇, 경합 시 재시도) · 커밋 직후 자체 검사
         if: steps.target.outputs.skip != 'true'
         env:
           T: ${{ steps.target.outputs.target }}
+          C: ${{ steps.cdn.outputs.sha }}
           V: ${{ steps.target.outputs.version }}
           CUR: ${{ steps.target.outputs.current }}
         run: |
@@ -125,13 +141,13 @@ jobs:
           import json, os, datetime
           p='data/hc-ko-app-rev.json'
           d=json.load(open(p, encoding='utf-8'))
-          d['rev']=os.environ['T']; d['version']=os.environ['V']; d['by']='ko-app-pointer.yml'
+          d['rev']=os.environ['C']; d['src']=os.environ['T']; d['version']=os.environ['V']; d['by']='ko-app-pointer.yml'
           d['updated']=datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
           json.dump(d, open(p,'w',encoding='utf-8'), ensure_ascii=False, indent=2)
           PY
             if git diff --quiet -- data/hc-ko-app-rev.json; then echo "이미 같은 값"; pushed=1; break; fi
             git add data/hc-ko-app-rev.json
-            git commit -q -m "[Auto] REV 포인터 → ${T:0:7} (사전 v$V)"
+            git commit -q -m "[Auto] REV 포인터 → cdn ${C:0:7} ← main ${T:0:7} (사전 v$V)"
             if git push -q origin main; then pushed=1; break; fi
             echo "push 거부 — 재시도 $i/3"; sleep 5
           done
@@ -142,6 +158,6 @@ jobs:
             [ "$(git rev-parse "$REV:$f")" = "$(git rev-parse "HEAD:$f")" ] || { echo "❌ 커밋 뒤 검사 실패: $f"; exit 1; }
           done
           {
-            echo "## REV 포인터 전진: \`${CUR:0:7}\` → \`$T\` (사전 v$V)"
+            echo "## REV 포인터 전진: \`${CUR:0:7}\` → cdn \`$C\` ← main \`$T\` (사전 v$V)"
             echo "검증 통과 + jsDelivr 대조 후 커밋. 로더는 다음 로드부터 새 REV 를 쓴다(stale-while-revalidate)."
           } >> $GITHUB_STEP_SUMMARY

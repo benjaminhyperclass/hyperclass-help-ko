@@ -215,3 +215,13 @@ superagentsApp(Managed Agents 빌더·목록·채팅 레이어)의 제품명 표
 ## [확정] 스윕 잔여 선택 시 '영어 그대로'로 판정한 값은 다시 고르지 않는다 — 2026-11-06 저녁
 - round-merge 는 한국어가 원문과 같으면 넣지 않는다(제품명·형식 예시·키 이름). 그래서 select.py 가 그 키를 다음 라운드에 다시 고른다. 이전 라운드 출력(out·qc)에서 ko == en 이었던 id 는 빼고 고른다(tr1106f 에서 95건 제외).
 - 런타임 영어가 남은 ns 중 사전에 한국어가 이미 있는 것은 대개 ① 영어 그대로 값 ② ko-app-exclusions.json 의 의도적 제외(agency.gdpr 법적 문구 등)다. 숫자만 보고 번역 누락으로 판단하지 않는다.
+
+## [확정] 런타임은 cdn 브랜치 커밋으로 서빙한다 — jsDelivr 50MB 한도 — 2026-11-06 밤
+- 확인: `data.jsdelivr.com/v1/packages/gh/benjaminhyperclass/hyperclass-help-ko@main` → **403 "Package size exceeded the configured limit of 50 MB"**. main 트리는 75MB(도움말 문서 20MB · `_source` 편집 정본·참조본 24MB · 레거시 사전 등). 파일 단위 요청은 대개 통과했지만 새 커밋을 처음 가져올 때 403 이 나고 캐시된 적이 있다(2026-11-05 사고).
+- 결정(벤자민 승인 "레포 대용량 분리", 2026-11-06): main 을 쪼개지 않고, **런타임 파일만 담은 커밋을 `cdn` 브랜치에 발행**해 포인터가 그 SHA 를 가리키게 한다. 런타임 트리 약 11MB/25파일(js/ 중 레거시 dashboard-ko 제외 · 사전 core/apps · 포털 사전 · 결제 사전 · hc-dict · 마켓플레이스 번들 · 포털 러너). 포인터(*-rev.json)는 raw@main 에서만 읽으므로 넣지 않는다.
+- 왜 이 방식인가: 부트스트랩·로더·엣지는 `gh/<레포>@<SHA>/<경로>` 로만 요청하므로 SHA 가 cdn 커밋이어도 코드·슬롯 변경 없이 동작한다. blob 은 main 과 같은 객체라 레포 용량이 늘지 않는다. main 에서 큰 파일을 빼거나 참조본을 gzip 하는 안은 검증·라운드 파이프라인을 크게 고쳐야 하고(gzip 은 커밋마다 수 MB 씩 이력이 불어난다) 도움말 문서가 계속 늘어 한도 아래를 유지할 수 없다.
+- 도구: `scripts/publish-cdn.sh <main 커밋> [--push]` — 런타임 트리가 직전 cdn 커밋과 같으면 재사용, 다르면 새 커밋(메시지 `cdn ← main <SHA>`). 필수 파일(로더·어댑터·core·apps)이 없으면 발행하지 않는다.
+- 사전 포인터 봇(ko-app-pointer.yml): 대상 main 커밋으로 cdn 커밋 발행 → jsDelivr `@cdn` 바이트 대조 → `rev` = cdn SHA, `src` = 원본 main SHA. '이미 최신' 판정은 `src` 기준.
+- **로더 승격 절차(사람)**: 로더 PR 머지 → `C=$(scripts/publish-cdn.sh origin/main --push | tail -1)` → 브라우저에서 `@C` 의 로더·어댑터 200·바이트 확인 → `loader.next = C`(캐너리) → 실측 → `loader.stable = C`. `verify-deploy.js` 의 revPrefix 는 cdn SHA 앞 7자다.
+- 남은 위험: 슬롯에 고정된 진입 파일(에이전시 Custom JS 의 `@c25c941/js/hc-bootstrap.js`, 포털 슬롯의 `@028b315…/js/hc-portal-bootstrap.js`)은 아직 main 커밋 SHA 다. jsDelivr 가 영구 캐시해 지금은 서빙되지만, 같은 내용을 cdn 커밋 SHA 로 바꿔 두면 완전히 한도 안이 된다(에이전시 슬롯은 벤자민 수동 교체, 포털 슬롯은 러너로 교체 가능).
+- 함께 정리: 원시 캡처 `_source/hc-aistudio-2026-10-08.json`·`_source/hc-gap-2026-10-08.json`(고객 데이터 포함, 1MB)을 트리에서 뺐다. 필요하면 `git show d931f20:_source/hc-aistudio-2026-10-08.json` 으로 되살린다.
