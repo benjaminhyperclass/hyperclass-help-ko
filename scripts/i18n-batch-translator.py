@@ -143,6 +143,31 @@ def ph_ok(en: str, ko: str) -> bool:
 
 
 # ── 번역 배치 ────────────────────────────────────────────────────
+# ── 번호 매칭 안전화 (2026-11-05) ─────────────────────────────────────────
+# 종전엔 "1. 영문" 으로 번호를 매기고 응답에서 ^{n}. 줄을 정규식으로 찾았다. 원문에 줄바꿈이나
+# "1. …" 같은 번호 목록이 들어 있으면(수식 도움말 등) 응답의 다른 줄이 먼저 걸려 번역이 옆 키로
+# 밀렸다(라운드 v4.2.29 crmObjectsSettingsApp 58키). → 원문에 나올 수 없는 표지 ⟦n⟧ 를 쓰고,
+# 원문의 줄바꿈은 ⏎ 로 바꿔 한 줄로 보낸 뒤 되돌린다. 표지가 중복·누락되면 그 항목은 버린다(영문 유지).
+MARK_L, MARK_R, NL = "\u27e6", "\u27e7", "\u23ce"
+_MARK_RE = re.compile("^" + MARK_L + r"(\d+)" + MARK_R + r"\s?(.*)$", re.MULTILINE)
+
+
+def numbered_block(values: list[str]) -> str:
+    return "\n".join(f"{MARK_L}{i+1}{MARK_R} {v.replace(chr(10), NL)}" for i, v in enumerate(values))
+
+
+def parse_numbered(raw: str, n: int) -> dict[int, str]:
+    seen: dict[int, list[str]] = {}
+    for m in _MARK_RE.finditer(raw):
+        seen.setdefault(int(m.group(1)), []).append(m.group(2).strip())
+    out = {}
+    for i in range(1, n + 1):
+        vals = seen.get(i)
+        if vals and len(vals) == 1 and vals[0]:
+            out[i] = vals[0].replace(NL, "\n")
+    return out
+
+
 def _enforce_placeholders(client, items, result: dict) -> dict:
     """프롬프트만 믿지 않고 코드로 강제: 불일치 1회 재시도 → 그래도 불일치면 영문 원문 유지.
 
@@ -159,14 +184,14 @@ def _enforce_placeholders(client, items, result: dict) -> dict:
     n_dnt = sum(1 for k in bad if not dnt_ok(en_of[k], result[k]))
     print(f"    ⚠️  보존 검사 불일치 {len(bad)}건 (플레이스홀더 {n_ph} / DNT 토큰 {n_dnt}) — 재시도")
     retry_items = [(k, en_of[k]) for k in bad]
-    numbered = "\n".join(f"{i+1}. {v}" for i, (_, v) in enumerate(retry_items))
+    numbered = numbered_block([v for _, v in retry_items])
     prompt = (f"""아래 UI 텍스트를 한국어로 번역하세요.
 
 절대 규칙: 중괄호 변수({{...}} / {{{{...}}}})와 HTML 태그는 문자 하나도 바꾸지 말 것.
 중괄호 안의 영어 단어는 변수명이므로 번역 금지. 예) "{{opportunity}}" → "{{opportunity}}" (O), "{{기회}}" (X)
 대문자 시스템 토큰(DELETE, CONFIRM, REMOVE, CANCEL, TRANSFER, DISABLE, RESET)도 원형 유지 — 사용자가 그대로 타이핑해야 하는 값이다.
 
-번호만 붙여서 번역 결과만 출력:
+각 줄 맨 앞의 표지(⟦번호⟧)를 그대로 붙여 번역 결과만 한 줄씩 출력. 원문의 ⏎ 표시는 같은 자리에 그대로 둘 것:
 
 {numbered}""")
     try:
@@ -174,10 +199,10 @@ def _enforce_placeholders(client, items, result: dict) -> dict:
                                       thinking={"type": "disabled"},
                                       messages=[{"role": "user", "content": prompt}])
         raw = next(b.text for b in resp.content if b.type == "text").strip()
+        got = parse_numbered(raw, len(retry_items))
         for i, (key, en) in enumerate(retry_items):
-            m = re.search(rf'^{i+1}[.)]\s*(.+)$', raw, re.MULTILINE)
-            if m:
-                ko = apply_glossary(m.group(1).strip())
+            if (i + 1) in got:
+                ko = apply_glossary(got[i + 1])
                 if ph_ok(en, ko) and dnt_ok(en, ko):
                     result[key] = ko
     except Exception as e:
@@ -193,7 +218,7 @@ def _enforce_placeholders(client, items, result: dict) -> dict:
 
 def translate_batch(client: anthropic.Anthropic, items: list[tuple[str, str]]) -> dict[str, str]:
     """items: [(i18n_key, english_value), ...] → {i18n_key: korean_value}"""
-    numbered = "\n".join(f"{i+1}. {v}" for i, (_, v) in enumerate(items))
+    numbered = numbered_block([v for _, v in items])
 
     prompt = f"""GoHighLevel SaaS 플랫폼 UI 텍스트를 한국어로 번역하세요.
 
@@ -217,13 +242,22 @@ def translate_batch(client: anthropic.Anthropic, items: list[tuple[str, str]]) -
   'changes will be lost'처럼 '사라짐' 뜻의 lost 는 해당 없음.
 - DND / Do Not Disturb(연락처 채널 차단) → '수신거부'. 드래그 앤 드롭(DnD)은 해당 없음.
 - Notes / Note(메모 기능) → '메모'. Release notes(릴리스 노트)·Credit note(크레딧 노트)는 예외.
+- 2026-11-05 독립 검수에서 반복된 오류(라운드 결함률 약 10%) 예방 규칙:
+  · Location / Sub-account → '서브 계정'(지역·위치 뜻일 때만 '위치') · Offer → '오퍼' · Certificate / Credential(수료) → '수료증'
+  · Object / Custom object → '오브젝트' / '커스텀 오브젝트' · Sentiment → '감성' · Topic → '토픽' · Transcript → '녹취록'
+  · Outbound / Inbound → '발신' / '수신' · Voicemail → '음성 메시지' · Owner → '소유자' · Attribution → '어트리뷰션' · Lifetime budget → '총 예산'
+  · Ad Manager → '광고 관리자' · Managed Agents → '관리형 에이전트' · Title → '제목'(사람의 직책일 때만 '직책', '직함' 금지)
+  · 문장은 합쇼체(…합니다/…하세요/…하시겠습니까?). 해요체·반말 금지. 오류는 '…하지 못했습니다. 다시 시도하세요.'
+  · 변수 바로 뒤 조사는 받침을 알 수 없으므로 '을(를)'·'이(가)'·'은(는)'·'와(과)'·'(으)로' 형태로 쓴다. 예) "{name}을(를)"
+  · 'LC' 'HL' 같은 원 제품 약칭도 쓰지 않는다. HTTP 헤더·코드 값·URL 안의 영어는 번역하지 않는다.
+  · 문장이 여러 키로 쪼개진 조각(앞·뒤에 다른 문구가 붙는 짧은 조각)은 한국어 어순으로 이어질 때 자연스럽게.
   — 사용자가 확인 절차에서 영문 그대로 타이핑해야 통과하는 값이다
-- 번호만 붙여서 번역 결과만 출력 (설명 없이)
+- 각 줄 맨 앞의 표지(⟦번호⟧)를 그대로 붙여 번역 결과만 한 줄씩 출력 (설명 없이). 원문의 ⏎ 표시는 줄바꿈 자리이니 같은 자리에 그대로 둘 것
 
 영문 ({len(items)}개):
 {numbered}
 
-번역 ({len(items)}개, 번호 순서 동일):"""
+번역 ({len(items)}개, 표지 ⟦번호⟧ 동일):"""
 
     for attempt in range(MAX_RETRIES):
         try:
@@ -237,12 +271,11 @@ def translate_batch(client: anthropic.Anthropic, items: list[tuple[str, str]]) -
             )
             # content는 블록 리스트 — 사고 블록이 앞설 수 있으므로 타입으로 좁혀 꺼낸다
             raw = next(b.text for b in resp.content if b.type == "text").strip()
+            got = parse_numbered(raw, len(items))
             result = {}
             for i, (key, _) in enumerate(items):
-                m = re.search(rf'^{i+1}[.)]\s*(.+)$', raw, re.MULTILINE)
-                if m:
-                    ko = apply_glossary(m.group(1).strip())
-                    result[key] = ko
+                if (i + 1) in got:
+                    result[key] = apply_glossary(got[i + 1])
             if len(result) >= len(items) * 0.85:
                 return _enforce_placeholders(client, items, result)
             print(f"    파싱 {len(result)}/{len(items)}, 재시도 {attempt+1}...")
