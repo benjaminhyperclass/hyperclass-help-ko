@@ -190,3 +190,16 @@
 - `usersApp` 2955 → 2993
 - `voiceAiApp` 920 → 925
 
+## 2026-11-06 19:34 UTC — main 2190 → 2194 · manifest 2190.7779 → 2194.7791
+- `agentLogsApp` 922 → 935
+- `aiGrowthApp` 931 → 932
+- `clientPortalBuilder` 2257 → 2271
+- `contactsApp` 2992 → 3008
+- `contactsHighriseApp` 2992 → 3006
+- `countdownTimerApp` 9 → 31
+- `locationsApp` 2238 → 2269
+- `powerDialerApp` 2249 → 2270
+- `restaurantsApp` 2971 → 3004
+- `templateLibraryApp` 177 → 178
+- `visibilityAiApp` 2210 → 2266
+
