@@ -1,6 +1,9 @@
 name: 매뉴얼 리프레시 (원문 수집·재번역)
 
 # manual-refresh 브랜치의 manual-refresh/trigger.json 이 바뀌면 그 안의 command 를 실행한다.
+#   fetch       : GHL 도움말 전체 원문 수집 → manual-src 브랜치
+#   fetch-extra : manual-refresh/extra_ids.json 의 아티클만 보충 수집 → manual-src 브랜치에 추가
+#   translate   : manual-jobs 브랜치의 <run>/shard-*.jsonl 을 번역 → manual-out 브랜치 <run>/
 on:
   push:
     branches: [manual-refresh]
@@ -19,12 +22,14 @@ jobs:
     outputs:
       command: ${{ steps.p.outputs.command }}
       shards: ${{ steps.p.outputs.shards }}
+      run: ${{ steps.p.outputs.run }}
     steps:
       - uses: actions/checkout@v4
       - id: p
         run: |
           echo "command=$(jq -r .command manual-refresh/trigger.json)" >> $GITHUB_OUTPUT
           echo "shards=$(jq -c '.shards // [0]' manual-refresh/trigger.json)" >> $GITHUB_OUTPUT
+          echo "run=$(jq -r '.run // "run"' manual-refresh/trigger.json)" >> $GITHUB_OUTPUT
 
   fetch:
     needs: plan
@@ -49,22 +54,26 @@ jobs:
           git add -A && git commit -qm "GHL 도움말 원문 스냅샷 $(date -u +%F)"
           git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" manual-src
 
-  diag:
+  fetch-extra:
     needs: plan
-    if: needs.plan.outputs.command == 'diag'
+    if: needs.plan.outputs.command == 'fetch-extra'
     runs-on: ubuntu-latest
+    timeout-minutes: 120
     steps:
-      - name: 원문 HTML 표본
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install requests beautifulsoup4
+      - name: 보충 수집
         run: |
-          mkdir -p /tmp/d && cd /tmp/d
-          UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36"
-          curl -sL -A "$UA" https://help.gohighlevel.com/support/solutions/folders/155000001588 -o folder.html
-          curl -sL -A "$UA" "https://help.gohighlevel.com/support/solutions/folders/155000001588/page/2" -o folder-p2a.html
-          curl -sL -A "$UA" "https://help.gohighlevel.com/support/solutions/folders/155000001588?page=2" -o folder-p2b.html
-          curl -sL -A "$UA" https://help.gohighlevel.com/support/solutions/articles/155000000079-best-practices-for-sms-deliverability-and-avoiding-sms-restrictions -o article.html
-          ls -la
-          git init -q -b manual-diag && git config user.name bot && git config user.email bot@users.noreply.github.com
-          git add -A && git commit -qm diag && git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" manual-diag
+          R="https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
+          git clone -q --depth 1 -b manual-src "$R" /tmp/ghl-src
+          python scripts/manual/fetch_ghl_help.py /tmp/ghl-src --ids manual-refresh/extra_ids.json 2>&1 | tail -5
+          cd /tmp/ghl-src
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A && git commit -qm "보충 원문 $(date -u +%F)" && git push -q "$R" manual-src
+        env: { WORKERS: '6' }
 
   translate:
     needs: plan
@@ -81,10 +90,14 @@ jobs:
       - uses: actions/setup-python@v5
         with: { python-version: '3.11' }
       - run: pip install anthropic
+      - name: 작업 파일 가져오기
+        run: |
+          git clone -q --depth 1 -b manual-jobs "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" /tmp/jobs
       - name: 번역
-        run: python scripts/manual/translate_batch.py manual-refresh/jobs/shard-${{ matrix.shard }}.jsonl /tmp/out-${{ matrix.shard }}
+        run: python scripts/manual/translate_batch.py /tmp/jobs/${{ needs.plan.outputs.run }}/shard-${{ matrix.shard }}.jsonl /tmp/out-${{ matrix.shard }}
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          WORKERS: '5'
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -97,7 +110,6 @@ jobs:
     if: always() && needs.plan.outputs.command == 'translate'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
       - uses: actions/download-artifact@v4
         with: { path: /tmp/outs }
       - name: 결과를 manual-out 브랜치에 커밋
@@ -107,7 +119,7 @@ jobs:
           cd /tmp/res
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          RUN=$(jq -r '.run // "run"' $GITHUB_WORKSPACE/manual-refresh/trigger.json)
+          RUN="${{ needs.plan.outputs.run }}"
           mkdir -p "$RUN"
-          cp -r /tmp/outs/*/* "$RUN"/ 2>/dev/null || true
-          git add -A && git commit -qm "번역 결과 $RUN" && git push "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" HEAD:manual-out
+          for d in /tmp/outs/*/; do cp -r "$d". "$RUN"/; done
+          git add -A && git commit -qm "번역 결과 $RUN" && git push -q "$R" HEAD:manual-out

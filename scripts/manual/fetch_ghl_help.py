@@ -13,7 +13,7 @@ from bs4 import BeautifulSoup
 
 BASE = "https://help.gohighlevel.com"
 UA = {"User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36"}
-OUT = sys.argv[1] if len(sys.argv) > 1 else "out/ghl-src"
+OUT = sys.argv[1] if len(sys.argv) > 1 and not sys.argv[1].startswith("--") else "out/ghl-src"
 WORKERS = int(os.environ.get("WORKERS", "6"))
 os.makedirs(OUT, exist_ok=True)
 S = requests.Session(); S.headers.update(UA)
@@ -95,7 +95,36 @@ def parse_article(meta):
             "modified": m.group(1).strip() if m else "", "breadcrumbs": crumbs,
             "body_html": str(body) if body else ""}
 
+def fetch_ids(ids_file):
+    """id 목록만 개별로 가져온다(폴더 목록에 없는 아티클 보충). 두 도움말 도메인을 차례로 시도."""
+    ids = json.load(open(ids_file))
+    out = []
+    def one(i):
+        for host in (BASE, "https://help.leadconnectorhq.com"):
+            h = get(f"{host}/support/solutions/articles/{i}")
+            if h and "fw-content--single-article" in h:
+                s = BeautifulSoup(h, "html.parser")
+                link = s.find("link", rel="canonical")
+                url = link["href"] if link and link.get("href") else f"{host}/support/solutions/articles/{i}"
+                path = re.sub(r"^https?://[^/]+", "", url)
+                crumbs = [a.get_text(" ", strip=True) for a in s.select(".breadcrumb a, nav[aria-label*=readcrumb] a")]
+                cat = next((a.get("href") for a in s.select("a[href]") if re.match(r"^/support/solutions/\d+$", a.get("href", ""))), "")
+                fol = next((a.get("href") for a in s.select("a[href]") if re.match(r"^/support/solutions/folders/\d+$", a.get("href", ""))), "")
+                meta = {"path": path, "category": crumbs[2] if len(crumbs) > 2 else "", "category_path": cat,
+                        "folder": crumbs[3] if len(crumbs) > 3 else "", "folder_path": fol, "extra": True}
+                r = parse_article(meta)
+                r["url"] = BASE + path
+                return r
+        return {"path": f"/support/solutions/articles/{i}", "url": f"{BASE}/support/solutions/articles/{i}", "ok": False, "extra": True}
+    with ThreadPoolExecutor(WORKERS) as ex:
+        out = list(ex.map(one, ids))
+    with gzip.open(f"{OUT}/articles-extra.jsonl.gz", "wt", encoding="utf-8") as g:
+        for r in out: g.write(json.dumps(r, ensure_ascii=False) + "\n")
+    print("extra", len(out), "ok", sum(r["ok"] for r in out), "errors", len(errors))
+
 def main():
+    if "--ids" in sys.argv:
+        return fetch_ids(sys.argv[sys.argv.index("--ids") + 1])
     t0 = time.time()
     cats, folders, arts = crawl_index()
     json.dump({"categories": cats, "folders": folders, "articles": list(arts.values())},
