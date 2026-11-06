@@ -1,0 +1,8 @@
+{"id": "155000004977", "status": "ok", "model": "claude-sonnet-5-5", "in": 1871, "out": 2966, "cache_read": 4246, "sec": 19.0}
+{"id": "155000002184", "status": "ok", "model": "claude-sonnet-5-5", "in": 2578, "out": 3792, "cache_read": 4246, "sec": 25.2}
+{"id": "155000007355", "status": "ok", "model": "claude-sonnet-5-5", "in": 2264, "out": 4040, "cache_read": 4246, "sec": 26.2}
+{"id": "48001223777", "status": "ok", "model": "claude-sonnet-5-5", "in": 3626, "out": 4626, "cache_read": 4246, "sec": 29.3}
+{"id": "155000005072", "status": "ok", "model": "claude-sonnet-5-5", "in": 4266, "out": 6272, "cache_read": 4246, "sec": 36.7}
+{"id": "155000003496", "status": "ok", "model": "claude-sonnet-5-5", "in": 1449, "out": 3236, "cache_read": 4246, "sec": 21.6}
+{"id": "ko:docs/setup/how-to-troubleshoot-failed-to-send-otp-to-verify-whatsapp-number-on-the-sub-account.md", "status": "ok", "model": "claude-sonnet-5-5", "in": 2182, "out": 3359, "cache_read": 4246, "sec": 20.8}
+{"id": "155000003643", "status": "ok", "model": "claude-sonnet-5-5", "in": 3077, "out": 4062, "cache_read": 4246, "sec": 26.6}

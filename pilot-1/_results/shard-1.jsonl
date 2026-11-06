@@ -1,0 +1,8 @@
+{"id": "155000002468", "status": "ok", "model": "claude-sonnet-5-5", "in": 1367, "out": 1992, "cache_read": 0, "sec": 13.6}
+{"id": "155000004154", "status": "ok", "model": "claude-sonnet-5-5", "in": 1084, "out": 2160, "cache_read": 0, "sec": 15.2}
+{"id": "155000004183", "status": "ok", "model": "claude-sonnet-5-5", "in": 2054, "out": 2883, "cache_read": 0, "sec": 17.8}
+{"id": "155000005147", "status": "ok", "model": "claude-sonnet-5-5", "in": 2380, "out": 3801, "cache_read": 0, "sec": 23.3}
+{"id": "155000003224", "status": "ok", "model": "claude-sonnet-5-5", "in": 819, "out": 2017, "cache_read": 4246, "sec": 13.8}
+{"id": "155000005064", "status": "ok", "model": "claude-sonnet-5-5", "in": 4707, "out": 5740, "cache_read": 0, "sec": 34.1}
+{"id": "ko:docs/15-전화-시스템/메시징/understanding-the-potential-delivery-issues-of-text-messages-with-shortened-urls.md", "status": "ok", "model": "claude-sonnet-5-5", "in": 3343, "out": 3900, "cache_read": 4246, "sec": 23.6}
+{"id": "155000004871", "status": "ok", "model": "claude-sonnet-5-5", "in": 3384, "out": 6336, "cache_read": 4246, "sec": 40.8}

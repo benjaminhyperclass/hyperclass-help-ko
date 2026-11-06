@@ -1,0 +1,8 @@
+{"id": "155000005074", "status": "ok", "model": "claude-sonnet-5-5", "in": 1500, "out": 2017, "cache_read": 4246, "sec": 13.7}
+{"id": "155000004209", "status": "ok", "model": "claude-sonnet-5-5", "in": 2273, "out": 4834, "cache_read": 4246, "sec": 31.4}
+{"id": "155000009367", "status": "ok", "model": "claude-sonnet-5-5", "in": 3863, "out": 5822, "cache_read": 4246, "sec": 36.0}
+{"id": "155000003367", "status": "ok", "model": "claude-sonnet-5-5", "in": 1639, "out": 3688, "cache_read": 4246, "sec": 24.3}
+{"id": "155000005061", "status": "ok", "model": "claude-sonnet-5-5", "in": 4246, "out": 6708, "cache_read": 4246, "sec": 43.2}
+{"id": "155000000561", "status": "ok", "model": "claude-sonnet-5-5", "in": 3164, "out": 8314, "cache_read": 4246, "sec": 54.3}
+{"id": "155000005626", "status": "ok", "model": "claude-sonnet-5-5", "in": 3099, "out": 3793, "cache_read": 4246, "sec": 24.9}
+{"id": "155000006881", "status": "ok", "model": "claude-sonnet-5-5", "in": 3624, "out": 5355, "cache_read": 4246, "sec": 32.1}
