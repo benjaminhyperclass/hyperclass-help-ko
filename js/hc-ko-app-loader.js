@@ -1,4 +1,7 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.13
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.14
+ * v4.21.14: 교차 출처 iframe(자동화 워크플로우·비즈니스 프로필) 같은 출처 중계 — IFR_LOCS 로케이션에서 부팅했을 때만.
+ *          iframe 주소를 app.hyperclass.ai/__ifr/{wf|crm}/… (엣지 Worker hc-ifr-proxy)로 바꾸고, 같은 출처가 된 iframe 문서에
+ *          기존 DOM 번역(pass·mo)을 건다. Worker 헬스(x-hc-ifr) 확인 전·실패 시엔 원래 주소. 끄기: localStorage.hcKoIfr='0'.
  * v4.21.13: 새 디자인 시스템 입력칸 자리표시자(.hr-input__placeholder)의 단어 1개('Search' 등)도 _textScoped 범위.
  * v4.21.12: 배지·알약(pill) 안 'New' → '신규'(버튼용 '새로 만들기' 대신) · 자격 증명 목록 유형 칩 certificate·badge(상태 칩 허용 목록).
  * v4.21.11: '{{' 가 든 flat 값은 원본 t 대신 한국어를 보간 없이 그대로(원본 t 도 보간하지 않음 — 앱이 직접 치환).
@@ -207,7 +210,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.21.13',
+    version: '4.21.14',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -233,6 +236,7 @@
       s.scopedHits = stats.scopedHits;
       s.datesOn = kdOn();
       s.reports = reported;
+      s.ifr = JSON.parse(JSON.stringify(ifr));   // v4.21.14 iframe 같은 출처 중계 상태
       return s;
     },
     rescan: function () { scanApps(); },
@@ -771,6 +775,86 @@
     if (wantScan) scheduleScan(SCAN_DEBOUNCE);
   });
 
+  /* ---------- IFR. 교차 출처 iframe 같은 출처 중계 (v4.21.14, 캐너리) ---------- */
+  // 자동화(워크플로우)·비즈니스 프로필은 다른 출처 iframe 이라 한글팩이 닿지 않는다(조사: docs/research/iframe-proxy-2026-11-06.md).
+  // 엣지 Worker hc-ifr-proxy 가 app.hyperclass.ai/__ifr/{wf|crm}/… 로 그 앱을 중계한다. 여기서 iframe 주소와
+  // Postmate 가 iframe 출처를 계산하는 <a href> 를 그 경로로 바꾸면 핸드셰이크가 그대로 맞고(2026-11-06 실측),
+  // iframe 이 같은 출처가 되므로 기존 DOM 번역(pass·mo)을 iframe 문서에도 건다.
+  // 범위: IFR_LOCS 로케이션에서 부팅했을 때만 프로토타입을 건드린다 — 다른 고객은 이 로더가 stable 이 돼도 무변화.
+  // 안전: Worker 라우트는 fail-open 이라 Worker 가 없으면 /__ifr/… 가 메인 앱 원본으로 간다 → 헬스 헤더 확인 전·실패 시엔 원래 주소.
+  // 끄기: localStorage.hcKoIfr='0'(이 브라우저) · Worker 라우트 삭제(전체 — 헬스 실패로 원래 주소) · 포인터 loader.next 되돌리기.
+  var IFR_HOSTS = { 'client-app-automation-workflows.leadconnectorhq.com': 'wf', 'client-app-crm-settings.leadconnectorhq.com': 'crm' };
+  var IFR_LOCS = ['r6JD1nsqtk6Oln28fgrj'];
+  var ifr = { on: false, ok: null, rewrites: 0, frames: 0, fail: null };
+  function ifrWanted() { var l = locOf(); return !!l && IFR_LOCS.indexOf(l) >= 0 && allowed(); }
+  function ifrRw(u) {
+    if (ifr.ok !== true || !ifrWanted()) return u;
+    try {
+      var x = new URL(u, location.href), k = IFR_HOSTS[x.host];
+      if (!k) return u;
+      ifr.rewrites++;
+      return location.origin + '/__ifr/' + k + x.pathname + x.search + x.hash;
+    } catch (e) { return u; }
+  }
+  var IFR_MO = { subtree: true, childList: true, characterData: true, attributes: true, attributeFilter: ATTRS };
+  function ifrDoc(el) {        // 같은 출처로 중계된 iframe 문서만(Worker 가 심은 __hcIfr 표지)
+    try { var w = el.contentWindow, d = el.contentDocument; return (w && d && w.__hcIfr && d.documentElement) ? d : null; } catch (e) { return null; }
+  }
+  function ifrHook(d) {        // 번역 + 감시. 사전이 아직 없으면 감시만 — start() 가 ifrRefresh() 로 다시 부른다
+    if (T || TS) pass(d.body);
+    if (!suspended) mo.observe(d.documentElement, IFR_MO);
+  }
+  function ifrAttach(el) {     // iframe 문서가 (다시) 뜰 때마다
+    try {
+      var d = ifrDoc(el);
+      if (!d || d.__hcKoIfr) return;
+      d.__hcKoIfr = 1; ifr.frames++;
+      var css = d.createElement('style'); css.textContent = 'body{word-break:keep-all;overflow-wrap:anywhere}';
+      (d.head || d.documentElement).appendChild(css);
+      ifrHook(d);
+    } catch (e) { ifr.fail = 'attach: ' + (e && e.message || e); }
+  }
+  function ifrRefresh() {      // start()·resume() 뒤 — suspend() 의 mo.disconnect() 가 iframe 감시까지 끊으므로 다시 건다
+    if (!ifr.on) return;
+    try {
+      var fs = document.querySelectorAll('iframe');
+      for (var i = 0; i < fs.length; i++) { var d = ifrDoc(fs[i]); if (!d) continue; if (d.__hcKoIfr) ifrHook(d); else ifrAttach(fs[i]); }
+    } catch (e) {}
+  }
+  function ifrWatch(el) {
+    if (el.__hcKoIfrW) return; el.__hcKoIfrW = 1;
+    el.addEventListener('load', function () { ifrAttach(el); });
+  }
+  function ifrInstall() {
+    try {
+      if (lsGet('hcKoIfr') === '0' || !ifrWanted()) return;
+      var dI = Object.getOwnPropertyDescriptor(HTMLIFrameElement.prototype, 'src');
+      var dA = Object.getOwnPropertyDescriptor(HTMLAnchorElement.prototype, 'href');
+      if (!dI || !dI.get || !dI.set || !dA || !dA.get || !dA.set) return;
+      Object.defineProperty(HTMLIFrameElement.prototype, 'src', {
+        configurable: true, enumerable: dI.enumerable,
+        get: function () { return dI.get.call(this); },
+        set: function (v) { var n = ifrRw(String(v)); if (n !== String(v)) ifrWatch(this); return dI.set.call(this, n); }
+      });
+      Object.defineProperty(HTMLAnchorElement.prototype, 'href', {
+        configurable: true, enumerable: dA.enumerable,
+        get: function () { return dA.get.call(this); },
+        set: function (v) { return dA.set.call(this, ifrRw(String(v))); }
+      });
+      var sa = Element.prototype.setAttribute;
+      Element.prototype.setAttribute = function (n, v) {
+        if (this instanceof HTMLIFrameElement && String(n).toLowerCase() === 'src') {
+          var nv = ifrRw(String(v)); if (nv !== String(v)) { ifrWatch(this); v = nv; }
+        }
+        return sa.call(this, n, v);
+      };
+      ifr.on = true;
+      fetch('/__ifr/wf/', { method: 'HEAD', credentials: 'omit', cache: 'no-store' })
+        .then(function (r) { ifr.ok = r.headers.get('x-hc-ifr') === 'wf'; if (!ifr.ok) ifr.fail = 'health: no header'; })
+        .catch(function (e) { ifr.ok = false; ifr.fail = 'health: ' + (e && e.message || e); });
+    } catch (e) { ifr.fail = 'install: ' + (e && e.message || e); }
+  }
+
   /* ---------- 사전 로딩 ---------- */
   // 기존 레이어는 jsDelivr 를 <script src>(script-src)로 썼는데 v4 는 fetch(connect-src)다.
   // CSP 가 다르게 걸려 있을 수 있고, 막히면 core 로드가 실패해 _text 치환까지 통째로
@@ -1130,6 +1214,7 @@
     mo.observe(document.documentElement, { subtree: true, childList: true, characterData: true, attributes: true, attributeFilter: ATTRS });
     scanApps();
     if (!scanIv) scanIv = setInterval(scanApps, 5000);
+    ifrRefresh();   // v4.21.14
   }
   // 보류 뒤 재개 시점엔 호스트가 이미 떠 있을 수 있다 — 한 번 더 찾아본다.
   function waitHostLate() { var el = document.getElementById('app'); return !!(el && el.__vue_app__ && composerOf(el.__vue_app__) && setupHost()); }
@@ -1183,6 +1268,7 @@
     } catch (e) {}
     if (!scanIv) scanIv = setInterval(scanApps, 5000);
     if (T) pass(document.body);
+    ifrRefresh();   // v4.21.14
     log('허용 로케이션으로 복귀 — 재개', locOf());
   }
 
@@ -1210,6 +1296,8 @@
     log('경로 변경 감지(이벤트 없음)', lastPath);
     onRoute();
   }, 500);
+
+  ifrInstall();   // v4.21.14 — GHL 이 iframe 을 만들기 전에(로더는 GHL app.js 보다 먼저 뜬다)
 
   if (allowed()) boot();
   else {
