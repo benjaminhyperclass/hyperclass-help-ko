@@ -3,7 +3,7 @@
 교차 출처 iframe 앱(워크플로우·비즈니스 프로필)을 `app.hyperclass.ai` 출처로 중계한다. 설계·위험·실측 결과: `docs/research/iframe-proxy-2026-11-06.md`.
 
 ## 배포 상태 (2026-11-06, 벤자민 승인 "추천하는데로해보자")
-- Worker `hc-ifr-proxy` (계정 9c70…d909) — 버전 `84253c44`, 코드 = `src/index.js`.
+- Worker `hc-ifr-proxy` — 하이퍼클래스 Cloudflare 계정, 코드 = `src/index.js`.
 - 라우트(존 hyperclass.ai, 둘 다 **Fail open**): `app.hyperclass.ai/__ifr/*`, `app.hyperclass.ai/assets/*`.
   둘 다 메인 앱이 쓰지 않는 경로(실측: 메인 앱 같은 출처 요청은 `/favicon.ico`·`/_pm`뿐) → 훅 없이는 아무도 안 탄다.
 - workers.dev 공개 주소: **끔**(열린 중계 노출 방지).

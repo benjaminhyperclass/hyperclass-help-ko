@@ -44,7 +44,7 @@ iframe을 `app.hyperclass.ai` 출처로 띄우면 한글팩이 iframe 문서 안
 3. 통과하면 iframe 안에 한글 레이어 시험 → 결과를 한글팩 세션에 넘겨 로더 캐너리(r6JD)로 편입. 실패 항목은 "범위 밖" 확정.
 4. 같은 방식으로 `client-app-crm-settings`(비즈니스 프로필) 반복.
 
-## 7. PoC 실측 결과 (2026-11-06 밤, 스냅샷 마스터 `buBPs5x9kdFpGMOagWa8`, 벤자민 맥 크롬 1개 탭)
+## 7. PoC 실측 결과 (2026-11-06 밤, 스냅샷 마스터 계정, 벤자민 맥 크롬 1개 탭)
 배포: Worker `hc-ifr-proxy` + 라우트 `app.hyperclass.ai/__ifr/*`·`/assets/*`(Fail open, workers.dev 끔). 부모 훅은 해당 탭에만 수동 주입.
 
 | 시험 | 결과 | 비고 |
