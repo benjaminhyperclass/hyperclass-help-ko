@@ -1,4 +1,5 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.11
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.12
+ * v4.21.12: 배지·알약(pill) 안 'New' → '신규'(버튼용 '새로 만들기' 대신) · 자격 증명 목록 유형 칩 certificate·badge(상태 칩 허용 목록).
  * v4.21.11: '{{' 가 든 flat 값은 원본 t 대신 한국어를 보간 없이 그대로(원본 t 도 보간하지 않음 — 앱이 직접 치환).
  * v4.21.10: 멤버십 flat — vue-i18n 리터럴 {'x'} 를 글자로(화면에 "{'|'}" 가 그대로 보이던 문제), '{{' 가 든 값은 원본 t 에(안쪽만 채워지던 문제).
  * v4.21.9: 기간 선택기 월/연 보기(.hr-mm-yy-panel) — 머리 'Month'·'Year' → '월'·'연도', 월 목록 'Jan'… → '1월'….
@@ -205,7 +206,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.21.11',
+    version: '4.21.12',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -540,8 +541,13 @@
   // 허용 목록으로 연다(거래 내역 'Succeeded'·'Pending' 실측). 번역은 _textScoped 의 같은 키를 쓴다.
   var STATUS_WORDS = { Succeeded: 1, Pending: 1, Failed: 1, Refunded: 1, Paid: 1, Unpaid: 1, Overdue: 1, Draft: 1, Sent: 1, Void: 1,
     Active: 1, Inactive: 1, Canceled: 1, Cancelled: 1, Expired: 1, Scheduled: 1, Completed: 1, Processing: 1, Published: 1,
-    Archived: 1, Incomplete: 1, Trialing: 1 };
+    Archived: 1, Incomplete: 1, Trialing: 1,
+    certificate: 1, badge: 1 };   // v4.21.12: 자격 증명 목록 유형 칩(소문자 + CSS capitalize)
   var TAG_SEL = '.n-tag,.hr-tag';
+  // v4.21.12: 배지·알약(pill) 안의 'New' 는 버튼(_textScoped 'New'=새로 만들기)이 아니라 '신규'('AI에게 문의' 배너 .askai-banner__pill 실측)
+  var PILL_WORDS = { New: '신규', NEW: '신규' };
+  var PILL_SEL = '[class*="__pill"],[class*="-pill"],[class*="badge"]';
+  function inPill(p) { try { return !!p && !!p.closest && !!p.closest(PILL_SEL); } catch (e) { return false; } }
   function inStatusTag(p, t) { try { return STATUS_WORDS[t] === 1 && !!p && !!p.closest && !!p.closest(TAG_SEL); } catch (e) { return false; } }
   function inScope(p) {
     if (inChart(p)) return true;
@@ -688,6 +694,7 @@
     var t = s.trim(); if (!t) return;
     if (kdOn() && kdPanel(n, t)) return;                                    // v4.21.8 날짜 선택 패널(사전보다 먼저 — 'Nov' 는 _textScoped 에도 있다)
     var v = T ? T[t] : undefined, scoped = false, dated = false;
+    if (v === undefined && PILL_WORDS.hasOwnProperty(t) && inPill(n.parentElement)) { v = PILL_WORDS[t]; scoped = true; }   // v4.21.12
     if (v === undefined) {
       if (TS && (v = TS[t]) !== undefined) {
         if (!inScope(n.parentElement) && !inStatusTag(n.parentElement, t)) return;
