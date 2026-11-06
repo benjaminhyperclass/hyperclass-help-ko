@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "version": "4.2.57",
+  "version": "4.2.58",
   "built": "2026-11-06",
-  "source": "agentsApp 108 + round proposalCommon 90 + 앱 전체 카탈로그 추출 라운드(11-05 오후): 이메일 빌더 ghlEmailBuilderCommon 2,257 · agentStudioApp 228 · superagentsApp 118 · proposalCommon 91 = 2,694문구 — 번역 6갈래 + 독립 검수 4갈래(교정 43) + round productsApp 116 + round opportunitiesApp 19 + round contactsApp 9 + round integrationsApp 2 + round socialPlannerApp 2 + AI 직원 앱 aiEmployeesApp 이전 앱 카탈로그 번역을 호스트 네임스페이스로 이관(2,060) + 신규 35 · 상품 productsApp 116 · 기회·연락처·연동·소셜 소량 — 독립 검수 3갈래 교정 146(원문 변경 Bot→Agent, On=켬, 확정 용어) + 기존 사전의 일괄 오역 정정 17: 범위·페이지 'to'(' 대상: ')→'~' 7, 토글 'On'(날짜)→켬·켜짐 5, 반복 종료 'On'(날짜)→지정일 5 + round blogsApp 130 + round formSurveyApp 143 + round qrCodeListApp 24 + round clientPortalBuilder 3 + round crmCommon 4 + round externalTrackingApp 4 + round launchpadApp 1 + round onboardingApp 1 + round usersMicroApp 3 + round voiceAiApp 2 + round reputationApp 1 + round ghlEmailBuilderCommon 1 + 'AI에게 문의' copilotApp 1,366 · 블로그 blogsApp 141 · 폼 formSurveyApp 143 · QR 코드 qrCodeListApp 24 · 소량 9개 앱 20 — 번역 6갈래 + 독립 검수 4갈래(교정 5 + 미디어 저장소 통일 9) + round blogsApp 102 + 'AI에게 문의' copilotApp 잔여 581 · 블로그 blogsApp 잔여 115 — 번역 3갈래 + 독립 검수 2갈래(교정 4) · 'AI에게 문의' 배너 _text 2 + _textScoped Configure + _textScoped certificate·badge(자격 증명 목록 유형 칩 — 로더 v4.21.12 STATUS_WORDS) + 설정 데이터 가져오기·일괄 작업 bulkActionsApp 1,717 · GoKollab goKollabApp 156 · 상품 컬렉션 storeCatalogApp 116 · 오브젝트 설정 crmObjectsSettingsApp 26 (이관 1,553 + 신규 462, 독립 검수 교정 78) + round goKollabApp 154 + round storeCatalogApp 115 + round crmObjectsSettingsApp 22 + GoKollab 이전 안내 배너 _text 3 · 동영상 플레이어(Plyr) 툴팁 _text 4·_textScoped 5",
+  "source": "Bot→Agent, On=켬, 확정 용어) + 기존 사전의 일괄 오역 정정 17: 범위·페이지 'to'(' 대상: ')→'~' 7, 토글 'On'(날짜)→켬·켜짐 5, 반복 종료 'On'(날짜)→지정일 5 + round blogsApp 130 + round formSurveyApp 143 + round qrCodeListApp 24 + round clientPortalBuilder 3 + round crmCommon 4 + round externalTrackingApp 4 + round launchpadApp 1 + round onboardingApp 1 + round usersMicroApp 3 + round voiceAiApp 2 + round reputationApp 1 + round ghlEmailBuilderCommon 1 + 'AI에게 문의' copilotApp 1,366 · 블로그 blogsApp 141 · 폼 formSurveyApp 143 · QR 코드 qrCodeListApp 24 · 소량 9개 앱 20 — 번역 6갈래 + 독립 검수 4갈래(교정 5 + 미디어 저장소 통일 9) + round blogsApp 102 + 'AI에게 문의' copilotApp 잔여 581 · 블로그 blogsApp 잔여 115 — 번역 3갈래 + 독립 검수 2갈래(교정 4) · 'AI에게 문의' 배너 _text 2 + _textScoped Configure + _textScoped certificate·badge(자격 증명 목록 유형 칩 — 로더 v4.21.12 STATUS_WORDS) + 설정 데이터 가져오기·일괄 작업 bulkActionsApp 1,717 · GoKollab goKollabApp 156 · 상품 컬렉션 storeCatalogApp 116 · 오브젝트 설정 crmObjectsSettingsApp 26 (이관 1,553 + 신규 462, 독립 검수 교정 78) + round goKollabApp 154 + round storeCatalogApp 115 + round crmObjectsSettingsApp 22 + GoKollab 이전 안내 배너 _text 3 · 동영상 플레이어(Plyr) 툴팁 _text 4·_textScoped 5 + 멤버십 이전 안내 membershipMigration 43 · 랩스 labsApp 17 · 설정·결제·마케팅 스윕 잔여 80(11개 앱) — 번역 2갈래 + 독립 검수 교정 3 + round labsApp 17 + round integrationsApp 0 + round adPublishingApp 3 + round socialPlannerApp 2 + round campaign 0 + round productsApp 4 + round conversationsUtilitiesApp 0 + round copilotApp 1 + round agentStudioApp 0 + round usersMicroApp 1 + round common 0 + round ghlEmailBuilderCommon 6",
   "strings": 102718
  },
  "host": {
@@ -48407,7 +48407,24 @@
     "previousMedia": "이전 미디어",
     "nextMedia": "다음 미디어",
     "videoNotSupported": "브라우저가 비디오 태그를 지원하지 않습니다.",
-    "featureMediaPreview": "기능 미디어 미리보기"
+    "featureMediaPreview": "기능 미디어 미리보기",
+    "beforeCustomCode": "기존 사이드바용 커스텀 CSS와 JS는 새 디자인 경험에서 실행되지 않습니다. 다시 켜서 비교해 볼 수 있습니다.",
+    "beforePlan": "맞춤 설정 범위는 요금제에 따라 다릅니다.",
+    "beforeTitle": "활성화 전 확인 사항",
+    "beforeTurnOff": "새 디자인 경험을 끄면 기존 내비게이션으로 돌아가지만, 설정한 레이아웃은 유지되지 않습니다.",
+    "planRequired297": "$297 및 $497 요금제에서 이용 가능",
+    "planRequired497": "$497 요금제에서 이용 가능",
+    "previewCta": "미리보기",
+    "previewNote": "새 탭에서 열리며 본인에게만 표시됩니다. 아무것도 바뀌지 않으니 되돌릴 필요가 없습니다.",
+    "spotlightFindBody": "자주 쓰는 페이지를 고정하고, 최근 페이지로 바로 돌아가고, 모든 페이지·설정·레코드를 검색하세요.",
+    "spotlightFindTitle": "이제 찾아 헤매지 마세요",
+    "spotlightSameBody": "모든 기능은 지금과 똑같이 작동합니다. 새 디자인 경험은 할 수 있는 일이 아니라 이동하는 방식을 바꿉니다.",
+    "spotlightSameTitle": "나머지는 그대로입니다",
+    "spotlightTemplateBody": "레이아웃을 템플릿으로 저장해 모든 서브 계정에 배포하세요. 한 번 배포하면 모두 업데이트됩니다.",
+    "spotlightTemplateTitle": "한 번 만들어 모든 곳에 적용하세요",
+    "spotlightYoursBody": "그룹 이름을 바꾸고 순서를 조정하거나 숨겨서, 각 서브 계정이 해당 비즈니스에 꼭 맞게 보이도록 구성하세요.",
+    "spotlightYoursTitle": "원하는 대로 꾸미세요",
+    "upgrade": "업그레이드"
    },
    "advancedFeatureModal": {
     "description": "이 기능을 활성화 또는 비활성화하고 서브 계정에 대한 표시 여부를 제어하세요.",
@@ -52070,7 +52087,8 @@
        "3": "광고당 하나의 캡션, 콜투액션, 대상 URL",
        "4": "직접 선택하지 않으면 동영상에서 커버 이미지가 자동으로 선택됩니다"
       },
-      "videoSpecsAndGuidelines": "동영상 사양 및 가이드라인"
+      "videoSpecsAndGuidelines": "동영상 사양 및 가이드라인",
+      "imagesPerAdCount": "2~35개"
      },
      "messageTemplateAddQuestion": "질문 추가",
      "messageTemplateFieldRequired": "필수 입력 항목입니다",
@@ -52235,7 +52253,9 @@
      "targetingGuidanceNotice": "이 잠재고객으로의 광고 전달은 보장되지 않습니다. TikTok은 이를 제한이 아닌 가이드로 취급합니다.",
      "targetingGuidanceSubText": "자동 타겟팅을 안내하려면 추가 잠재고객 설정을 사용하세요.",
      "targetingSearchPlaceholder": "타겟팅 옵션 검색",
-     "viewMessageTemplate": "메시지 템플릿 보기"
+     "viewMessageTemplate": "메시지 템플릿 보기",
+     "adSection": "광고",
+     "previewAdBadge": "광고"
     },
     "addAdSetButton": "+ 광고 세트 추가",
     "adsetBudgetDesc": "각 광고 세트별로 예산을 설정하세요.",
@@ -56803,7 +56823,7 @@
      "resume": "알림 재개",
      "saveFailed": "알림을 저장하지 못했습니다",
      "selectMetrics": "지표 선택",
-     "sendsDaily": "매일 아침 {time}에 발송됩니다",
+     "sendsDaily": "매일 {time}에 발송됩니다",
      "sendsWeekly": "매주 월요일 {time}에 발송 · 다음 발송일 {date}",
      "sensAria": "알림 민감도",
      "sensHigh": "모두 포착",
@@ -56842,7 +56862,9 @@
      "recipeMom": "모멘텀 모니터링",
      "sensWordMedium": "균형",
      "templateNews": "브랜드 뉴스레터",
-     "previewToMe": "나에게"
+     "previewToMe": "나에게",
+     "previewTime": "오전 9:41",
+     "sendTime": "오전 9:00"
     },
     "createTopic": {
      "back": "뒤로",
@@ -59436,7 +59458,8 @@
      "requestIdPlaceholder": "UUID (예: 61d31ce9-1944-4743…)",
      "rows": "행",
      "title": "알림 전달 기록",
-     "viewTimeline": "타임라인 보기"
+     "viewTimeline": "타임라인 보기",
+     "of": "/"
     }
    },
    "profile": {
@@ -78169,7 +78192,8 @@
     "preview": "템플릿 미리보기",
     "textEditorSubText": "기본적이고 깔끔하며 꾸밈없는 텍스트 편집기입니다.",
     "providers": {
-     "mailchimp": "Mailchimp"
+     "mailchimp": "Mailchimp",
+     "activeCampaign": "ActiveCampaign"
     },
     "archiveFolderDescription": "이 폴더와 폴더 안의 모든 이메일 템플릿이 보관됩니다. 하위 폴더는 폴더 밖으로 이동됩니다. 필요하면 나중에 언제든지 다시 옮길 수 있습니다.",
     "archiveFolderIntro": "보관하려는 폴더:",
@@ -81924,7 +81948,7 @@
     "somethingWentWrong": "문제가 발생했습니다",
     "source": "출처",
     "sourceType": "출처 유형",
-    "square": "정사각형",
+    "square": "Square",
     "startTime": "시작 시간",
     "state": "주/도",
     "status": "상태",
@@ -82107,7 +82131,10 @@
     "viewTransaction": "트랜잭션 보기",
     "yesCancel": "예, 취소합니다",
     "membershipProduct": "멤버십 상품",
-    "of": "/"
+    "of": "/",
+    "id": "ID",
+    "in": "·",
+    "paypal": "PayPal"
    },
    "error": {
     "chargeCard": "카드 결제 중 오류가 발생했습니다",
@@ -90278,6 +90305,81 @@
     "uploadFaviconInstruction": "클릭하거나 파일을 이 영역으로 드래그하여 업로드",
     "uploadLogoFormats": "SVG, PNG, JPG (최대 200x200 px)",
     "uploadLogoInstruction": "클릭하거나 파일을 이 영역으로 드래그하여 업로드"
+   }
+  },
+  "membershipMigration": {
+   "benefits": {
+    "aiCustomize": {
+     "description": "커스텀 CSS나 JS 없이 원하는 변경 사항을 설명하면 됩니다",
+     "title": "AI로 맞춤 설정"
+    },
+    "badges": {
+     "description": "우수 기여자, 관리자 등",
+     "title": "배지"
+    },
+    "coursePortal": {
+     "description": "더 이상 앱을 오갈 필요가 없습니다",
+     "title": "회원 포털에 통합"
+    },
+    "courseShell": {
+     "description": "모든 수강생에게 더 안정적인 학습 경험을 제공합니다",
+     "title": "더 견고한 기반"
+    },
+    "coursesInCommunity": {
+     "description": "그룹에서 바로 학습을 시작할 수 있습니다",
+     "title": "커뮤니티 안의 코스"
+    },
+    "improvedCoursesPage": {
+     "description": "보유 코스와 수강 가능한 코스, 단일·번들 상품을 나눠 보여 줍니다",
+     "title": "개선된 코스 페이지"
+    },
+    "newDashboard": {
+     "description": "작업하던 곳에서 이어서 진행합니다",
+     "title": "새 대시보드"
+    },
+    "oneSidebar": {
+     "description": "앱 전환 없이 모든 모듈을 한곳에서 이용합니다",
+     "title": "통합 사이드바"
+    },
+    "paidChannels": {
+     "description": "채널 이용료를 받을 수 있습니다",
+     "title": "유료 채널"
+    },
+    "polls": {
+     "description": "게시물에서 회원에게 무엇이든 물어볼 수 있습니다",
+     "title": "투표"
+    },
+    "voiceNotes": {
+     "description": "게시물 댓글과 채팅에서 사용할 수 있습니다",
+     "title": "음성 메시지"
+    }
+   },
+   "feature": {
+    "clientPortal": "회원 포털",
+    "communities": "커뮤니티",
+    "courses": "코스"
+   },
+   "modal": {
+    "carryOver": "회원은 다시 로그인할 필요가 없습니다. 커스텀 CSS나 JS를 사용 중이라면 미리보기에서 확인하세요.",
+    "close": "닫기",
+    "cssNote": "커스텀 CSS나 JS를 사용 중이라면 미리보기에서 확인하세요.",
+    "error": "문제가 발생했습니다. 다시 시도해 주세요.",
+    "preview": "미리보기",
+    "slide": "{n}번 슬라이드 표시",
+    "subtitle": "더 빠르고 깔끔해졌으며 새 기능도 가득합니다. 2026년 12월 1일에 모두 전환되며, 전환 작업은 저희가 대신 처리해 드립니다.",
+    "tag": "{feature} 기존 버전 지원 종료",
+    "tagDate": "2026년 12월 1일",
+    "title": "새로운 {feature} 경험을 만나 보세요",
+    "turnOn": "모두에게 활성화"
+   },
+   "ribbon": {
+    "body": "회원은 모든 데이터가 그대로 유지된 채 새 버전으로 자동 전환됩니다.",
+    "doItLater": "나중에",
+    "live": "회원에게 새 {feature} 버전이 적용되었습니다",
+    "liveBody": "2026년 11월 30일까지 기존 버전으로 다시 전환할 수 있습니다.",
+    "retires": "{feature} 기존 버전 지원이 2026년 12월 1일에 종료됩니다",
+    "seeWhatsNew": "새 기능 확인",
+    "switchBack": "다시 전환"
    }
   }
  },
