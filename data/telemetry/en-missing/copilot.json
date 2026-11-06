@@ -1,5 +1,6 @@
 {
  "agentIntegrationsTable.delete": "Delete",
+ "agentMapping.id": "ID",
  "alt.copilot": "Copilot",
  "askAi.artifacts.card.error": "Something went wrong setting up your account",
  "askAi.artifacts.card.untitled": "Untitled",
