@@ -3,10 +3,14 @@
  "common.actions.googleDrive": "Google Drive",
  "email.lcEmail.migrationModal.confirmWord": "CONFIRM",
  "email.newPostModal.imagePlaceholder": "img(02).png",
+ "email.newPostModal.sizeExample": "245kb",
  "email.newPostModal.textExample": "Lorem ipsum dolor sit amet consectetur adipisicing elit.",
  "email.newPostModal.urlExample": "https://searchengineland.com/google-announces-new-features-for-retail-advertisers-at-smx-advanced-300001",
  "list.delete": "Delete",
+ "regulatoryBundle.a2p.checkout.intervalSuffix": "(s)",
+ "regulatoryBundle.a2p.options.jobPosition.gm": "GM",
  "regulatoryBundle.cnam.registration.characterLimit": "{count}/15",
+ "regulatoryBundle.details.id": "ID",
  "regulatoryBundle.ejectModal.agencyClosing": "The Elite Marketing agency account with Highlevel is closing. To keep your account, Please reach out to {userName} for migrating your account directly to Highlevel.",
  "regulatoryBundle.ejectModal.cancelWarning": "Please be aware that your account will be officially cancelled on 30th June 2025, and we won't be able to retrieve your data after this date if the transfer is not completed.",
  "regulatoryBundle.ejectModal.contactEmail": "transfers{'@'}gohighlevel.com",
@@ -22,5 +26,6 @@
  "regulatoryBundle.ejectModal.title": "Attention Elite Marketing Customers",
  "regulatoryBundle.ejectModal.viewFaqs": "View FAQs here:",
  "regulatoryBundle.ejectModal.whiteLabel": "If you'd prefer to access HighLevel through another white-label provider, we'll be happy to accommodate that change via our support ticketing system after you've transferred your account directly to HighLevel.",
+ "regulatoryBundle.twilioReselling.transactions.fields.id": "ID",
  "workflow.faq": "FAQ"
 }

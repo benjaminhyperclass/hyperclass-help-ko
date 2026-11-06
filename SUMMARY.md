@@ -2030,7 +2030,7 @@
 
 ## 고객지원(Customer Support)
 
-  * [Hyperclass 요금제 가이드](docs/20-고객지원/Billing-Support/highlevel-pricing-guide.md)
+  * [사용료·지갑·부가 서비스 참고 가이드](docs/20-고객지원/Billing-Support/highlevel-pricing-guide.md)
   * [월렛 - 자동 충전, 스마트 조정 및 취소](docs/20-고객지원/Billing-Support/wallet-auto-recharge-smart-adjustment-and-cancellation.md)
   * [24시간 고객 지원 옵션](docs/20-고객지원/General-Support-Info/24-7-customer-support-options.md)
   * [접근성 개선사항 - 상단바 및 도움말 서랍](docs/20-고객지원/General-Support-Info/accessibility-enhancements-topbar-help-drawer.md)

@@ -2,6 +2,7 @@
  "accountDetails.saas": "SaaS",
  "advancedSettings.account.hipaa": "HIPAA",
  "advancedSettings.productRebilling.gpt4oMini": "GPT-4o-mini",
+ "advancedSettings.saasSubscriptionPlan.multiplier": " X ",
  "advancedSettings.walletTransactionModal.smsSid": "SMS SID:",
  "gdpr.anyQuestions": "Any questions?",
  "gdpr.assessedDocumented": "We have assessed and documented the personal data processed by us on your behalf.",

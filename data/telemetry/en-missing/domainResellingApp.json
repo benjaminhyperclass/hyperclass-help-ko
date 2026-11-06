@@ -1,4 +1,5 @@
 {
+ "delete": "Delete",
  "domainTransfer.transferInTabs.faqs": "FAQ",
  "transferOut.cfTransfer.accountIdDescription": "Before initiating transfer, complete the following steps by logging into your Cloudflare account:",
  "transferOut.cfTransfer.accountIdLabel": "Enter Cloudflare Account ID:",

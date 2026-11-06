@@ -34,7 +34,7 @@ description: 요금제 변경 적용 시점과 환불 기준을 안내해 드려
 - **이미 사용한 사용량**(AI·메시지 발송 등): 이미 제공·소비된 부분이라 환불 대상이 아닙니다.
 - 적법한 환불 신청이 확인되면 **3영업일 이내**에 결제 수단으로 환급해 드립니다.
 
-자세한 기준은 **[환불정책](https://hyperclass.ai/refund)** 및 **[이용약관](https://hyperclass.ai/terms)**을 따릅니다.
+자세한 기준은 **[환불정책](https://hyperclass.ai/refundpolicy)** 및 **[이용약관](https://hyperclass.ai/terms)**을 따릅니다.
 
 <!--
 운영자 메모 (게시되어도 독자에겐 안 보임):

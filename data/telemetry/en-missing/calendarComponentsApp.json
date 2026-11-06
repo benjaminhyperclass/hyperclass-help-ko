@@ -1,5 +1,6 @@
 {
  "calendarAI.availabilityPicker.confirm": "Confirm",
+ "calendarAI.availabilityPicker.to": "to",
  "calendarAI.cards.meetings.classDesc": "Classes, webinars, workshops",
  "calendarAI.cards.meetings.classTitle": "Group session",
  "calendarAI.cards.meetings.collectiveDesc": "Everyone attends together",
@@ -100,6 +101,7 @@
  "calendarAI.fieldService.summary.sampleBooking": "Sample booking: {time}",
  "calendarAI.fieldService.summary.services": "Services ({count})",
  "calendarAI.fieldService.summary.staff": "Staff: {count}",
+ "calendarAI.fieldService.summary.units.km": "km",
  "calendarAI.fieldService.summary.units.miles": "miles",
  "calendarAI.fieldService.welcome.editChip": "Edit a field service",
  "calendarAI.fieldService.welcome.hasCalendars": "{greeting} I'm your AI Assistant. Tell me what you'd like help with, or choose an option below.",
@@ -207,6 +209,7 @@
  "calendarAI.models.salesDemo": "Sales demo",
  "calendarAI.models.teamStructure": "Who will be handling these bookings?",
  "calendarAI.models.welcomeGreeting": "Hi {userName}!",
+ "calendarAI.models.welcomeGreetingDefault": "Hi!",
  "calendarAI.models.welcomeHasCalendars": "{greeting} I'm Calendar AI. Tell me what you'd like help with, or choose an option below.",
  "calendarAI.models.welcomeNoCalendars": "{greeting} I'm your calendar setup assistant. What would you like to do?",
  "calendarAI.models.whatCanIDo": "What can I do with my calendar?",

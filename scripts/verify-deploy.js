@@ -23,9 +23,9 @@
    ───────────────────────────────────────────────────────────────────── */
 (() => {
   const EXPECT = {
-    version: '4.20.0',      // 포인터 loader.stable f6aa062 (2026-11-05 승격, flat 인자 보간)
-    revPrefix: '24752b7',   // 사전 v4.2.29 (2026-11-05)
-    textEntries: 9007,      // _text (별도로 _textScoped 1,369 — status().scopedEntries)
+    version: '4.21.13',     // 포인터 loader.stable 76f4013 (2026-11-06 승격 — 입력칸 자리표시자 단어 1개)
+    revPrefix: 'e28eaed',   // 사전 v4.2.59 (2026-11-06)
+    textEntries: 9279,      // _text (별도로 _textScoped 1,387 — status().scopedEntries)
   };
   const A = window.__hcKoApp;
   if (!A) {

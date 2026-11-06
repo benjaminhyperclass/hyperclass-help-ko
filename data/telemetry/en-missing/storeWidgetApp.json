@@ -1,4 +1,5 @@
 {
+ "common.id": "ID",
  "pickupLocations.addButton": "Add pickup location",
  "pickupLocations.addPickupLocation": "Add pickup location",
  "pickupLocations.deleteModal.description": "Are you sure you want to delete this location?",

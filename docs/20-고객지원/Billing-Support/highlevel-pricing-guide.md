@@ -4,7 +4,9 @@
 카테고리: 20-고객지원 > Billing Support
 ---
 
-# Hyperclass 요금제 가이드
+# 사용료·지갑·부가 서비스 참고 가이드
+
+> **하이퍼클래스 구독 요금은 Accelerator 플랜 하나(₩159,000/월, 부가세 별도)입니다.** 15일 무료 체험 뒤 자동 결제되며, 구독 요금은 [요금제 안내](../../00-자주묻는질문/pricing-plans.md)와 [무료 체험 안내](../../00-자주묻는질문/free-trial.md)를 기준으로 합니다. 이 문서는 플랫폼 공통의 사용료·지갑·부가 서비스 구조를 설명하는 참고 자료예요. 아래에 나오는 요금제 이름(Starter·Unlimited·Agency Pro)과 금액은 하이퍼클래스 구독 요금과 다릅니다.
 
 ![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038324946/original/HDSOX4n1X5I2aSAuYzCK-PpGIr3wGs8BzA.gif?1734134307)
 

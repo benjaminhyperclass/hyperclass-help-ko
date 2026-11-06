@@ -1,6 +1,7 @@
 {
  "agencyBillingCard.seo.title": "SEO",
  "agencyResellingPage.common.coreServicesIframeTitle": "preio",
+ "common.avatarFallback": "UA",
  "paymentPage.alt.amexcard": "AMEX",
  "paymentPage.alt.dinerscard": "Diners Club",
  "paymentPage.alt.mastercard": "Mastercard",

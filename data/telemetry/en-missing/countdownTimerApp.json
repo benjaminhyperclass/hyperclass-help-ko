@@ -1,8 +1,11 @@
 {
+ "common.confirmationModalDeleteOkButtonText": "Delete",
+ "customVariables.id": "ID",
  "customVariables.otp": "OTP",
  "customVariables.pdfLink": "PDF URL",
  "customVariables.pdfUrl": "PDF URL",
  "customVariables.shopify": "Shopify",
  "customVariables.url": "URL",
+ "list.delete": "Delete",
  "timezones.label": "GMT{offset} {zone} ({abbr})"
 }
