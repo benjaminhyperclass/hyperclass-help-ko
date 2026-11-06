@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "version": "4.2.54",
+  "version": "4.2.55",
   "built": "2026-11-06",
-  "source": "화면 스윕(v4.2.46 적용 후): 평판 개요 리뷰 링크 안내·빈 상태, 연동 목록 설명 2 _text 6 + 수료증·배지(자격 증명) 앱 certificatesApp 596문구 신규 — 런타임 카탈로그 추출(r6JD, 해시 대조) + 직접 번역 + 독립 검수 교정 4 + 평판 관리 앱 reputationApp 잔여 662문구(경쟁사 분석·프로필 연결·대시보드 v2·순차 응답·수동 리뷰·리뷰 AI 에이전트·위젯·비디오 후기) — 런타임 카탈로그에서 미번역분 추출 + 직접 번역 + 독립 검수 교정 22 + round agentStudioApp 215 + round superagentsApp 108 + round proposalCommon 90 + 앱 전체 카탈로그 추출 라운드(11-05 오후): 이메일 빌더 ghlEmailBuilderCommon 2,257 · agentStudioApp 228 · superagentsApp 118 · proposalCommon 91 = 2,694문구 — 번역 6갈래 + 독립 검수 4갈래(교정 43) + round productsApp 116 + round opportunitiesApp 19 + round contactsApp 9 + round integrationsApp 2 + round socialPlannerApp 2 + AI 직원 앱 aiEmployeesApp 이전 앱 카탈로그 번역을 호스트 네임스페이스로 이관(2,060) + 신규 35 · 상품 productsApp 116 · 기회·연락처·연동·소셜 소량 — 독립 검수 3갈래 교정 146(원문 변경 Bot→Agent, On=켬, 확정 용어) + 기존 사전의 일괄 오역 정정 17: 범위·페이지 'to'(' 대상: ')→'~' 7, 토글 'On'(날짜)→켬·켜짐 5, 반복 종료 'On'(날짜)→지정일 5 + round blogsApp 130 + round formSurveyApp 143 + round qrCodeListApp 24 + round clientPortalBuilder 3 + round crmCommon 4 + round externalTrackingApp 4 + round launchpadApp 1 + round onboardingApp 1 + round usersMicroApp 3 + round voiceAiApp 2 + round reputationApp 1 + round ghlEmailBuilderCommon 1 + 'AI에게 문의' copilotApp 1,366 · 블로그 blogsApp 141 · 폼 formSurveyApp 143 · QR 코드 qrCodeListApp 24 · 소량 9개 앱 20 — 번역 6갈래 + 독립 검수 4갈래(교정 5 + 미디어 저장소 통일 9) + round blogsApp 102 + 'AI에게 문의' copilotApp 잔여 581 · 블로그 blogsApp 잔여 115 — 번역 3갈래 + 독립 검수 2갈래(교정 4) · 'AI에게 문의' 배너 _text 2 + _textScoped Configure",
+  "source": "화면 스윕(v4.2.46 적용 후): 평판 개요 리뷰 링크 안내·빈 상태, 연동 목록 설명 2 _text 6 + 수료증·배지(자격 증명) 앱 certificatesApp 596문구 신규 — 런타임 카탈로그 추출(r6JD, 해시 대조) + 직접 번역 + 독립 검수 교정 4 + 평판 관리 앱 reputationApp 잔여 662문구(경쟁사 분석·프로필 연결·대시보드 v2·순차 응답·수동 리뷰·리뷰 AI 에이전트·위젯·비디오 후기) — 런타임 카탈로그에서 미번역분 추출 + 직접 번역 + 독립 검수 교정 22 + round agentStudioApp 215 + round superagentsApp 108 + round proposalCommon 90 + 앱 전체 카탈로그 추출 라운드(11-05 오후): 이메일 빌더 ghlEmailBuilderCommon 2,257 · agentStudioApp 228 · superagentsApp 118 · proposalCommon 91 = 2,694문구 — 번역 6갈래 + 독립 검수 4갈래(교정 43) + round productsApp 116 + round opportunitiesApp 19 + round contactsApp 9 + round integrationsApp 2 + round socialPlannerApp 2 + AI 직원 앱 aiEmployeesApp 이전 앱 카탈로그 번역을 호스트 네임스페이스로 이관(2,060) + 신규 35 · 상품 productsApp 116 · 기회·연락처·연동·소셜 소량 — 독립 검수 3갈래 교정 146(원문 변경 Bot→Agent, On=켬, 확정 용어) + 기존 사전의 일괄 오역 정정 17: 범위·페이지 'to'(' 대상: ')→'~' 7, 토글 'On'(날짜)→켬·켜짐 5, 반복 종료 'On'(날짜)→지정일 5 + round blogsApp 130 + round formSurveyApp 143 + round qrCodeListApp 24 + round clientPortalBuilder 3 + round crmCommon 4 + round externalTrackingApp 4 + round launchpadApp 1 + round onboardingApp 1 + round usersMicroApp 3 + round voiceAiApp 2 + round reputationApp 1 + round ghlEmailBuilderCommon 1 + 'AI에게 문의' copilotApp 1,366 · 블로그 blogsApp 141 · 폼 formSurveyApp 143 · QR 코드 qrCodeListApp 24 · 소량 9개 앱 20 — 번역 6갈래 + 독립 검수 4갈래(교정 5 + 미디어 저장소 통일 9) + round blogsApp 102 + 'AI에게 문의' copilotApp 잔여 581 · 블로그 blogsApp 잔여 115 — 번역 3갈래 + 독립 검수 2갈래(교정 4) · 'AI에게 문의' 배너 _text 2 + _textScoped Configure + _textScoped certificate·badge(자격 증명 목록 유형 칩 — 로더 v4.21.12 STATUS_WORDS)",
   "strings": 102718
  },
  "host": {
@@ -163404,6 +163404,8 @@
   "Positive": "긍정",
   "Neutral": "중립",
   "Views": "조회수",
-  "Configure": "설정"
+  "Configure": "설정",
+  "certificate": "수료증",
+  "badge": "배지"
  }
 }
