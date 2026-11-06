@@ -34,7 +34,8 @@ model_ok = {"name": None}
 def user_prompt(job):
     labels = "\n".join(f"- {en} → {ko}" for en, ko in job.get("labels", [])) or "(해당 없음)"
     links = "\n".join(f"- {u} → {p}" for u, p in job.get("links", [])) or "(해당 없음)"
-    head = (f"원문 URL: {job.get('url','')}\n오늘 날짜: {date.today().isoformat()}\n카테고리: {job.get('category','')}\n\n"
+    wf = ("※ 워크플로우 빌더 문서입니다(빌더 화면은 영어). 규칙 1-1을 따르세요.\n" if job.get("workflow_builder") else "")
+    head = wf + (f"원문 URL: {job.get('url','')}\n오늘 날짜: {date.today().isoformat()}\n카테고리: {job.get('category','')}\n\n"
             f"## 화면 이름표 (이 문서에 나오는 영어 화면 문구 → 실제 한국어 화면)\n{labels}\n\n"
             f"## 문서 링크표 (원문 링크 → 우리 매뉴얼 경로, 상대 경로로 쓰세요)\n{links}\n\n")
     if job["mode"] == "translate":

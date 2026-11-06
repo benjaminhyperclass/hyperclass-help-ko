@@ -260,6 +260,9 @@ def main():
         jobs.append({"id": "ko:" + d, "out_path": newpath(d), "mode": "polish", "url": "", "category": d.split("/")[1],
                      "existing_ko": t, "labels": pick_labels(t), "links": [],
                      "src_images": len(re.findall(r"!\[[^\]]*\]\(", t))})
+    WF = re.compile(r"workflow[- ](?:trigger|action)|/07-워크플로우/|workflow-builder|premium-(?:trigger|action)", re.I)
+    for j in jobs:
+        j["workflow_builder"] = bool(WF.search(j["out_path"]) or WF.search(j.get("title_en", "")))
     if a.only:
         jobs = [j for j in jobs if re.search(a.only, j["out_path"])]
     if a.pilot:

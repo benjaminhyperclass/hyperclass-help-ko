@@ -31,7 +31,10 @@ def check(path, src_images=None):
         p2 = prose.replace(ko, "")
         n = p2.count(v)
         if n: issues.append(("term", f"{v}→{ko} ×{n}"))
-    if "help.gohighlevel.com" in t: issues.append(("ghl-link", t.count("help.gohighlevel.com")))
+    for ko_b, en_b in (("왓츠앱", "WhatsApp"), ("페이스북", "Facebook"), ("스트라이프", "Stripe"), ("구글", "Google")):
+        if not own and ko_b in prose: issues.append(("term", f"{ko_b}→{en_b} ×{prose.count(ko_b)}"))
+    body = re.sub(r"^---.*?\n---", "", t, count=1, flags=re.S)
+    if "help.gohighlevel.com" in body: issues.append(("ghl-link", body.count("help.gohighlevel.com")))
     if not t.lstrip().startswith("---") and "/00-자주묻는질문/" not in path and "/43-한국-앱/" not in path:
         issues.append(("frontmatter", "없음"))
     if not re.search(r"^# \S", t, re.M): issues.append(("title", "없음"))
