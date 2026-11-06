@@ -60,13 +60,13 @@ def crawl_index():
         page, prev = 1, None
         fname = None
         while page < 60:
-            url = BASE + f + (f"?page={page}" if page > 1 else "")
+            url = BASE + f + (f"/page/{page}" if page > 1 else "")
             h = get(url)
             if not h: break
             if fname is None:
                 s = BeautifulSoup(h, "html.parser")
                 t = s.find("h1") or s.find("title")
-                fname = t.get_text(" ", strip=True) if t else f
+                fname = re.sub(r"\s*\(\d+\)\s*$", "", t.get_text(" ", strip=True)) if t else f
                 for sub in links(h, r'href="(/support/solutions/folders/\d+)(?:[-/?][^"]*)?"'):
                     if sub not in seen: queue.append((sub, cname, cpath))
             found = links(h, r'href="(/support/solutions/articles/\d+[^"#?]*)"')
@@ -88,7 +88,7 @@ def parse_article(meta):
     t = s.find("h1")
     title = t.get_text(" ", strip=True) if t else ""
     m = re.search(r'Modified on:\s*([^<]+)', h)
-    body = (s.find(id="article-body") or s.select_one("article.article-body") or s.select_one(".article-body")
+    body = (s.select_one(".fw-content--single-article") or s.find(id="article-body") or s.select_one("article.article-body") or s.select_one(".article-body")
             or s.select_one("[class*=article-body]") or s.select_one("article"))
     crumbs = [a.get_text(" ", strip=True) for a in s.select(".breadcrumb a, nav[aria-label*=readcrumb] a")]
     return {**meta, "url": url, "ok": body is not None, "title": title,
