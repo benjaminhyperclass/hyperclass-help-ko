@@ -1,0 +1,7 @@
+{"id": "155000004154", "out_path": "docs/06-사이트/wordpress-single-sign-on-admin.md", "status": "ok", "model": "claude-sonnet-5-5", "in": 1084, "out": 1958, "cache_read": 0, "sec": 14.3}
+{"id": "155000004183", "out_path": "docs/03-대화/view-edit-ai-response-info-in-conversations.md", "status": "ok", "model": "claude-sonnet-5-5", "in": 2054, "out": 3683, "cache_read": 0, "sec": 24.9}
+{"id": "155000007355", "out_path": "docs/03-대화/대화/web-chat-inside-conversations.md", "status": "ok", "model": "claude-sonnet-5-5", "in": 2256, "out": 4106, "cache_read": 0, "sec": 29.5}
+{"id": "155000001982", "out_path": "docs/05-기회-파이프라인/understanding-pipelines.md", "status": "ok", "model": "claude-sonnet-5-5", "in": 3129, "out": 5462, "cache_read": 0, "sec": 35.5}
+{"id": "155000004871", "out_path": "docs/07-워크플로우/시작하기/workflows-landing-page-new-onboarding-experience.md", "status": "ok", "model": "claude-sonnet-5-5", "in": 3430, "out": 7233, "cache_read": 0, "sec": 45.6}
+{"id": "155000002269", "out_path": "docs/06-사이트/chat-widget-send-your-leads-to-whatsapp-chat.md", "status": "ok", "model": "claude-sonnet-5-5", "in": 2789, "out": 5287, "cache_read": 14719, "sec": 32.2}
+{"id": "155000007164", "out_path": "docs/03-대화/기타/facebook-and-instagram-chat-widgets.md", "status": "ok", "model": "claude-sonnet-5-5", "in": 2982, "out": 4919, "cache_read": 14719, "sec": 31.4}

@@ -1,0 +1,7 @@
+{"id": "155000005074", "out_path": "docs/01-시작하기/커머스/getting-started-setup-payment-links.md", "status": "ok", "model": "claude-sonnet-5-5", "in": 1500, "out": 2383, "cache_read": 14719, "sec": 15.0}
+{"id": "155000002468", "out_path": "docs/04-캘린더-예약/캘린더-만들기/restore-deleted-calendars.md", "status": "ok", "model": "claude-sonnet-5-5", "in": 1367, "out": 2364, "cache_read": 14719, "sec": 15.4}
+{"id": "48001223777", "out_path": "docs/02-연락처/스마트-리스트/company-object-feature-a-manual-way-to-organize-contacts.md", "status": "ok", "model": "claude-sonnet-5-5", "in": 3626, "out": 5186, "cache_read": 14719, "sec": 32.2}
+{"id": "155000004209", "out_path": "docs/04-캘린더-예약/workflow-action-book-appointment.md", "status": "ok", "model": "claude-sonnet-5-5", "in": 2319, "out": 5932, "cache_read": 14719, "sec": 38.3}
+{"id": "155000005064", "out_path": "docs/01-시작하기/마케팅-리드-생성/getting-started-setup-facebook-and-instagram-lead-ads.md", "status": "ok", "model": "claude-sonnet-5-5", "in": 4617, "out": 7212, "cache_read": 14719, "sec": 42.2}
+{"id": "155000009367", "out_path": "docs/02-연락처/use-the-companies-side-panel.md", "status": "ok", "model": "claude-sonnet-5-5", "in": 3863, "out": 7449, "cache_read": 14719, "sec": 47.5}
+{"id": "155000003367", "out_path": "docs/07-워크플로우/Integrations-Workflow-Actions/workflow-action-add-to-google-analytics.md", "status": "ok", "model": "claude-sonnet-5-5", "in": 1667, "out": 3228, "cache_read": 14719, "sec": 21.8}

@@ -1,0 +1,7 @@
+{"id": "155000003224", "out_path": "docs/08-결제/시작하기/how-to-use-bnpl-in-order-forms-and-payment-links.md", "status": "ok", "model": "claude-sonnet-5-5", "in": 819, "out": 2081, "cache_read": 14719, "sec": 14.7}
+{"id": "155000004977", "out_path": "docs/06-사이트/퍼널-웹사이트/prebuilt-mega-menu-headers.md", "status": "ok", "model": "claude-sonnet-5-5", "in": 1871, "out": 3303, "cache_read": 14719, "sec": 21.4}
+{"id": "155000005626", "out_path": "docs/08-결제/인보이스-견적/create-estimates-using-templates-on-mobile-v3-98-1.md", "status": "ok", "model": "claude-sonnet-5-5", "in": 3099, "out": 4772, "cache_read": 14719, "sec": 30.1}
+{"id": "155000002184", "out_path": "docs/04-캘린더-예약/캘린더-만들기/partial-payment-collect-deposit-amount.md", "status": "ok", "model": "claude-sonnet-5-5", "in": 2578, "out": 4932, "cache_read": 14719, "sec": 31.3}
+{"id": "155000005072", "out_path": "docs/01-시작하기/커머스/getting-started-launch-a-course.md", "status": "ok", "model": "claude-sonnet-5-5", "in": 4249, "out": 6963, "cache_read": 14719, "sec": 41.3}
+{"id": "155000005067", "out_path": "docs/01-시작하기/세일즈-대화/getting-started-set-up-a-live-chat-widget.md", "status": "ok", "model": "claude-sonnet-5-5", "in": 3120, "out": 4420, "cache_read": 14719, "sec": 27.5}
+{"id": "48001215386", "out_path": "docs/10-마케팅/Statistics/email-statistics.md", "status": "ok", "model": "claude-sonnet-5-5", "in": 3022, "out": 6030, "cache_read": 14719, "sec": 38.2}

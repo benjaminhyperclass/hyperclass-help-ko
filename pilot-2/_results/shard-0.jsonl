@@ -1,0 +1,8 @@
+{"id": "155000003496", "out_path": "docs/07-워크플로우/Contact-Workflow-Triggers/workflow-trigger-contact-engagement-score.md", "status": "ok", "model": "claude-sonnet-5-5", "in": 1495, "out": 2932, "cache_read": 14719, "sec": 19.4}
+{"id": "155000003643", "out_path": "docs/10-마케팅/Affiliate-Campaigns/how-to-track-leads-from-an-affiliate-campaign.md", "status": "ok", "model": "claude-sonnet-5-5", "in": 3077, "out": 4457, "cache_read": 14719, "sec": 30.0}
+{"id": "155000004136", "out_path": "docs/08-결제/시작하기/tax-inclusive-or-exclusive-pricing.md", "status": "ok", "model": "claude-sonnet-5-5", "in": 2448, "out": 4775, "cache_read": 14719, "sec": 30.4}
+{"id": "155000003209", "out_path": "docs/02-연락처/연락처-기본/contacts-sync-attachments-to-document-management-tab.md", "status": "ok", "model": "claude-sonnet-5-5", "in": 1256, "out": 2461, "cache_read": 14719, "sec": 15.1}
+{"id": "155000005147", "out_path": "docs/02-연락처/smartlists-for-custom-objects.md", "status": "ok", "model": "claude-sonnet-5-5", "in": 2380, "out": 4852, "cache_read": 14719, "sec": 30.8}
+{"id": "155000000561", "out_path": "docs/05-기회-파이프라인/시작하기/how-to-use-custom-fields-for-opportunities.md", "status": "ok", "model": "claude-sonnet-5-5", "in": 3164, "out": 8518, "cache_read": 14719, "sec": 55.1}
+{"id": "155000005061", "out_path": "docs/01-시작하기/기본-설정/getting-started-setup-a-booking-calendar.md", "status": "ok", "model": "claude-sonnet-5-5", "in": 4230, "out": 10457, "cache_read": 14719, "sec": 65.7}
+{"id": "155000006881", "out_path": "docs/15-전화-시스템/전화번호/phone-number-edit-configuration-incoming-calls-settings.md", "status": "ok", "model": "claude-sonnet-5-5", "in": 3616, "out": 6964, "cache_read": 14719, "sec": 42.2}
