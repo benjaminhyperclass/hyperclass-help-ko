@@ -23,9 +23,9 @@
    ───────────────────────────────────────────────────────────────────── */
 (() => {
   const EXPECT = {
-    version: '4.21.12',     // 포인터 loader.stable 1bfd5f9 (2026-11-06 승격 — 배지 'New'=신규·자격 증명 유형 칩)
-    revPrefix: '3b1d83b',   // 사전 v4.2.56 (2026-11-06)
-    textEntries: 9272,      // _text (별도로 _textScoped 1,382 — status().scopedEntries)
+    version: '4.21.13',     // 포인터 loader.stable 76f4013 (2026-11-06 승격 — 입력칸 자리표시자 단어 1개)
+    revPrefix: 'e28eaed',   // 사전 v4.2.59 (2026-11-06)
+    textEntries: 9279,      // _text (별도로 _textScoped 1,387 — status().scopedEntries)
   };
   const A = window.__hcKoApp;
   if (!A) {
