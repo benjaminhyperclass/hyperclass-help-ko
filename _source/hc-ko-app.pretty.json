@@ -63915,7 +63915,7 @@
       "agency": "에이전시",
       "aiEmployeeDisabledContent": "{name}의 AI 직원이 비활성화되었습니다. 언제든지 다시 활성화할 수 있습니다.",
       "aiEmployeeDisabledTitle": "AI 직원이 비활성화되었습니다!",
-      "aiEmployeeEnabledSuccess": "{name}에 대한 AI 직원가 성공적으로 활성화되었습니다.",
+      "aiEmployeeEnabledSuccess": "{name}에 대한 AI 직원이 성공적으로 활성화되었습니다.",
       "chargedTo": "청구 대상",
       "errorDisabling": "Season Of AI 비활성화 오류!",
       "feature": "기능",
@@ -64359,7 +64359,7 @@
        "0": "연중무휴 24시간 수 초 내 전화 응답",
        "3": "리드를 놓치지 마세요"
       },
-      "desc": "모든 전화를 놓치지 않고, 예약을 잡고, 리드과 대화해보세요. 더 이상 대기음은 없어요.",
+      "desc": "모든 전화를 놓치지 않고, 예약을 잡고, 리드와 대화해보세요. 더 이상 대기음은 없어요.",
       "title": "음성 에이전트"
      },
      "workflow": {

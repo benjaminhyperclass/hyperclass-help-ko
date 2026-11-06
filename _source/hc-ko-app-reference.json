@@ -398293,7 +398293,7 @@
  },
  "aiEmployeesApp.aiEmployee.locationSettings.table.aiEmployeeEnabledSuccess": {
   "en": "AI Employee for {name} has been enabled successfully.",
-  "ko": "{name}에 대한 AI 직원가 성공적으로 활성화되었습니다."
+  "ko": "{name}에 대한 AI 직원이 성공적으로 활성화되었습니다."
  },
  "aiEmployeesApp.aiEmployee.locationSettings.table.chargedTo": {
   "en": "Charged to",
@@ -399397,7 +399397,7 @@
  },
  "aiEmployeesApp.aiValueLandingPage.products.voice.desc": {
   "en": "Never miss another call, book appointments, and have conversations with your leads. No more hold music.",
-  "ko": "모든 전화를 놓치지 않고, 예약을 잡고, 리드과 대화해보세요. 더 이상 대기음은 없어요."
+  "ko": "모든 전화를 놓치지 않고, 예약을 잡고, 리드와 대화해보세요. 더 이상 대기음은 없어요."
  },
  "aiEmployeesApp.aiValueLandingPage.products.voice.features.3": {
   "en": "Never miss a lead",
