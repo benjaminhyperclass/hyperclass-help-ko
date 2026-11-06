@@ -1,8 +1,7 @@
 name: GHL Help 문서 자동 업데이트
 
+# 2026-11 매뉴얼 개편 이후 정기 실행은 manual-monthly.yml(번역기 v2)이 맡는다. 이 워크플로우는 수동 실행만 남긴다.
 on:
-  schedule:
-    - cron: '0 21 1 * *'      # 매월 1일 UTC 21:00 = KST 2일 06:00
   workflow_dispatch:
     inputs:
       mode:

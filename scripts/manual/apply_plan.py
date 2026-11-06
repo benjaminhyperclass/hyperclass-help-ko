@@ -28,7 +28,13 @@ def structure():
             git("rm", "-q", old)  # 같은 이름이 이미 있으면 남아 있는 쪽을 쓴다
             continue
         git("mv", old, new)
+    for old, new in PLAN.get("retired", {}).items():
+        if not os.path.exists(f"{R}/{old}"): continue
+        os.makedirs(os.path.dirname(f"{R}/{new}"), exist_ok=True)
+        git("mv", old, new)
     redirects = {}
+    for old in PLAN.get("retired", {}):
+        redirects[page_url(old)] = "README.md"
     for d, canon in dups.items():
         redirects[page_url(d)] = ren.get(canon, canon)
     for old, new in ren.items():

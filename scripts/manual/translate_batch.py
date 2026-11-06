@@ -15,7 +15,7 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(os.path.dirname(HERE))
 MODELS = os.environ.get("MANUAL_MODELS", "claude-sonnet-5-5,claude-sonnet-5").split(",")
 WORKERS = int(os.environ.get("WORKERS", "5"))
-MAX_TOKENS = 16000
+MAX_TOKENS = 32000
 
 def glossary_text():
     g = json.load(open(os.path.join(REPO, "data/glossary.ko.json"), encoding="utf-8"))
@@ -23,10 +23,16 @@ def glossary_text():
     for it in g.get("objects", []) + g.get("buttons", []):
         if it.get("decided", True):
             v = ", ".join(it.get("variants", []))
-            rows.append(f"- {it['en']} → {it['ko']}" + (f" (쓰지 말 것: {v})" if v else ""))
+            extra = " — CRM 메모 기능을 말할 때만. 'Note:' 같은 안내 머리말은 힌트 블록(참고)" if it["en"] == "Note" else ""
+            rows.append(f"- {it['en']} → {it['ko']}" + (f" (쓰지 말 것: {v})" if v else "") + extra)
     return "\n".join(rows)
 
-SYSTEM = open(os.path.join(HERE, "prompt_manual_v2.md"), encoding="utf-8").read().replace("{GLOSSARY}", glossary_text())
+def core_text():
+    d = json.load(open(os.path.join(REPO, "data/manual/screen-labels.json"), encoding="utf-8")).get("core", {})
+    return "\n".join(f"- {en} → {ko}" for en, ko in sorted(d.items()))
+
+SYSTEM = (open(os.path.join(HERE, "prompt_manual_v2.md"), encoding="utf-8").read()
+          .replace("{GLOSSARY}", glossary_text()).replace("{CORE}", core_text()))
 client = Anthropic()
 lock = threading.Lock()
 model_ok = {"name": None}
@@ -57,10 +63,11 @@ def call(job):
     while attempt < 8 and models:
         m = model_ok["name"] or models[0]
         try:
-            r = client.messages.create(
-                model=m, max_tokens=MAX_TOKENS,
-                system=[{"type": "text", "text": SYSTEM, "cache_control": {"type": "ephemeral"}}],
-                messages=[{"role": "user", "content": user_prompt(job)}])
+            with client.messages.stream(
+                    model=m, max_tokens=MAX_TOKENS,
+                    system=[{"type": "text", "text": SYSTEM, "cache_control": {"type": "ephemeral"}}],
+                    messages=[{"role": "user", "content": user_prompt(job)}]) as st:
+                r = st.get_final_message()
             model_ok["name"] = m
             return r, m
         except Exception as e:
@@ -84,14 +91,14 @@ def run(job, out_dir, res_fh):
         r, m = call(job)
         text = clean("".join(b.text for b in r.content if getattr(b, "type", "") == "text"))
         status = "ok" if r.stop_reason == "end_turn" else f"stop:{r.stop_reason}"
-        p = os.path.join(out_dir, job["out_path"])
+        p = os.path.join(out_dir, job["out_path"] if status == "ok" else os.path.join("_failed", job["out_path"]))
         os.makedirs(os.path.dirname(p), exist_ok=True)
         open(p, "w", encoding="utf-8").write(text)
-        rec = {"id": job["id"], "status": status, "model": m, "in": r.usage.input_tokens,
+        rec = {"id": job["id"], "out_path": job["out_path"], "status": status, "model": m, "in": r.usage.input_tokens,
                "out": r.usage.output_tokens, "cache_read": getattr(r.usage, "cache_read_input_tokens", 0),
                "sec": round(time.time() - t0, 1)}
     except Exception as e:
-        rec = {"id": job["id"], "status": "error", "error": str(e)[:300]}
+        rec = {"id": job["id"], "out_path": job["out_path"], "status": "error", "error": str(e)[:300]}
     with lock:
         res_fh.write(json.dumps(rec, ensure_ascii=False) + "\n"); res_fh.flush()
     return rec

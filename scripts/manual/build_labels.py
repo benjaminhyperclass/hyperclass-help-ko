@@ -31,8 +31,12 @@ for k, v in ref.items():
     if not re.match(r"[A-Z0-9]", en) or not re.search(r"[가-힣]", ko) or BRAND.search(ko): continue
     cnt[en][ko] += 1
     if ".sidebar." in k or k.startswith("sidebar."): side[en] = ko
+BRANDS = re.compile(r"^(WhatsApp|WordPress|Facebook|Instagram|Google|Stripe|Zoom|Zapier|Shopify|PayPal|TikTok|LinkedIn|YouTube|Gmail|Outlook|Yelp|Twilio|Mailgun|QuickBooks|Slack|Canva|Calendly)\b")
+CALLOUT = {"Note", "Notes", "Tip", "Tips", "Important", "Warning", "Caution", "Pro Tip", "Please Note", "Example"}
 labels, amb = {}, {}
 for en, c in cnt.items():
+    if BRANDS.match(en) or en in CALLOUT: continue
+    if any(b in "".join(c) for b in ("왓츠앱", "페이스북", "인스타그램", "구글", "워드프레스", "스트라이프", "줌 ")): continue
     ko = side.get(en) or c.most_common(1)[0][0]
     labels[en] = ko
     if len(c) > 1 and c.most_common(1)[0][1] / sum(c.values()) < 0.6:
@@ -41,10 +45,13 @@ for en, c in cnt.items():
 for it in gl["objects"] + gl["buttons"]:
     if it.get("decided", True):
         for en in {it["en"], it["en"] + "s"}:
-            if en not in side: labels[en] = it["ko"]
+            if en not in side and en not in CALLOUT: labels[en] = it["ko"]
 os.makedirs(f"{R}/data/manual", exist_ok=True)
+core = {en: ko for en, ko in side.items() if not BRANDS.match(en) and en not in CALLOUT}
+for extra in ["Labs", "Get Code", "Save", "Cancel", "Delete", "Edit", "Publish", "Preview", "Settings", "Add", "Create", "Search", "Filter", "Import", "Export", "Duplicate", "Next", "Back", "Done", "Close", "Confirm", "Submit"]:
+    if extra in labels: core.setdefault(extra, labels[extra])
 json.dump({"_meta": {"source": "hc-ko-app-reference.json + hc-ko-app.pretty.json host", "count": len(labels),
                      "rule": "sidebar > glossary(decided) > 최빈값"},
-           "labels": dict(sorted(labels.items())), "ambiguous": dict(sorted(amb.items()))},
+           "labels": dict(sorted(labels.items())), "core": dict(sorted(core.items())), "ambiguous": dict(sorted(amb.items()))},
           open(f"{R}/data/manual/screen-labels.json", "w", encoding="utf-8"), ensure_ascii=False, indent=0)
 print("labels", len(labels), "ambiguous", len(amb), "sidebar", len(side))
