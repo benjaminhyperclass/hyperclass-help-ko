@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "version": "4.2.51",
+  "version": "4.2.52",
   "built": "2026-11-06",
-  "source": "빈 상태 4 + _textScoped 4(부정·긍정·중립·조회수) · 런치패드(설치 가이드) 카드 설명·진행 상황 _text 14(신규 계정 첫 화면 — 연락처 표기 변형 포함) + 비즈니스 목록 머리글 2 · 연락처 추가 패널 자리표시자(영문 필드명 + 입력/선택) 15 · 기회 추가 버튼 어순('추가 기회'→'기회 추가') · 예상 마감일·날짜 선택 · 예약 모달 연결된 오브젝트·캘린더 기본값 · 연락처 상세 머리 '{오브젝트} Details'(오브젝트 이름이 한국어로 들어간 조각) 5 · 연락처 상세 오른쪽 기회 패널 빈 상태('No {기회} Yet'·'Track your {기회} …' — 오브젝트 이름 자리 변형) · r6JD 미니 스윕 3차(40화면): 예약 목록 빈 상태·이메일 캠페인 지표·평판 요청 표 머리·WhatsApp 구독 안내·설정 사이드바 '{기회} & Pipelines' _text 17 · 텔레메트리 2026-11-04 잔여 1,959문구(18 네임스페이스: superagentsApp·ghlEmailBuilderCommon·formSurveyApp·externalTrackingApp·voiceAiApp·templateLibraryApp·agentLogsApp·clientPortalBuilder 등) 직접 번역(6갈래) + 독립 검수 4갈래(교정 9 + 스코프→범위 2) · 벤자민컨설팅 40화면 스윕(v4.2.46 적용 후): 평판 개요 리뷰 링크 안내·빈 상태, 연동 목록 설명 2 _text 6 + 수료증·배지(자격 증명) 앱 certificatesApp 596문구 신규 — 런타임 카탈로그 추출(r6JD, 해시 대조) + 직접 번역 + 독립 검수 교정 4 + 평판 관리 앱 reputationApp 잔여 662문구(경쟁사 분석·프로필 연결·대시보드 v2·순차 응답·수동 리뷰·리뷰 AI 에이전트·위젯·비디오 후기) — 런타임 카탈로그에서 미번역분 추출 + 직접 번역 + 독립 검수 교정 22 + round agentStudioApp 215 + round superagentsApp 108 + round proposalCommon 90 + 앱 전체 카탈로그 추출 라운드(11-05 오후): 이메일 빌더 ghlEmailBuilderCommon 2,257 · agentStudioApp 228 · superagentsApp 118 · proposalCommon 91 = 2,694문구 — 번역 6갈래 + 독립 검수 4갈래(교정 43) + round productsApp 116 + round opportunitiesApp 19 + round contactsApp 9 + round integrationsApp 2 + round socialPlannerApp 2 + AI 직원 앱 aiEmployeesApp 이전 앱 카탈로그 번역을 호스트 네임스페이스로 이관(2,060) + 신규 35 · 상품 productsApp 116 · 기회·연락처·연동·소셜 소량 — 독립 검수 3갈래 교정 146(원문 변경 Bot→Agent, On=켬, 확정 용어)",
+  "source": "빈 상태 4 + _textScoped 4(부정·긍정·중립·조회수) · 런치패드(설치 가이드) 카드 설명·진행 상황 _text 14(신규 계정 첫 화면 — 연락처 표기 변형 포함) + 비즈니스 목록 머리글 2 · 연락처 추가 패널 자리표시자(영문 필드명 + 입력/선택) 15 · 기회 추가 버튼 어순('추가 기회'→'기회 추가') · 예상 마감일·날짜 선택 · 예약 모달 연결된 오브젝트·캘린더 기본값 · 연락처 상세 머리 '{오브젝트} Details'(오브젝트 이름이 한국어로 들어간 조각) 5 · 연락처 상세 오른쪽 기회 패널 빈 상태('No {기회} Yet'·'Track your {기회} …' — 오브젝트 이름 자리 변형) · r6JD 미니 스윕 3차(40화면): 예약 목록 빈 상태·이메일 캠페인 지표·평판 요청 표 머리·WhatsApp 구독 안내·설정 사이드바 '{기회} & Pipelines' _text 17 · 텔레메트리 2026-11-04 잔여 1,959문구(18 네임스페이스: superagentsApp·ghlEmailBuilderCommon·formSurveyApp·externalTrackingApp·voiceAiApp·templateLibraryApp·agentLogsApp·clientPortalBuilder 등) 직접 번역(6갈래) + 독립 검수 4갈래(교정 9 + 스코프→범위 2) · 벤자민컨설팅 40화면 스윕(v4.2.46 적용 후): 평판 개요 리뷰 링크 안내·빈 상태, 연동 목록 설명 2 _text 6 + 수료증·배지(자격 증명) 앱 certificatesApp 596문구 신규 — 런타임 카탈로그 추출(r6JD, 해시 대조) + 직접 번역 + 독립 검수 교정 4 + 평판 관리 앱 reputationApp 잔여 662문구(경쟁사 분석·프로필 연결·대시보드 v2·순차 응답·수동 리뷰·리뷰 AI 에이전트·위젯·비디오 후기) — 런타임 카탈로그에서 미번역분 추출 + 직접 번역 + 독립 검수 교정 22 + round agentStudioApp 215 + round superagentsApp 108 + round proposalCommon 90 + 앱 전체 카탈로그 추출 라운드(11-05 오후): 이메일 빌더 ghlEmailBuilderCommon 2,257 · agentStudioApp 228 · superagentsApp 118 · proposalCommon 91 = 2,694문구 — 번역 6갈래 + 독립 검수 4갈래(교정 43) + round productsApp 116 + round opportunitiesApp 19 + round contactsApp 9 + round integrationsApp 2 + round socialPlannerApp 2 + AI 직원 앱 aiEmployeesApp 이전 앱 카탈로그 번역을 호스트 네임스페이스로 이관(2,060) + 신규 35 · 상품 productsApp 116 · 기회·연락처·연동·소셜 소량 — 독립 검수 3갈래 교정 146(원문 변경 Bot→Agent, On=켬, 확정 용어) + 기존 사전의 일괄 오역 정정 17: 범위·페이지 'to'(' 대상: ')→'~' 7, 토글 'On'(날짜)→켬·켜짐 5, 반복 종료 'On'(날짜)→지정일 5",
   "strings": 102718
  },
  "host": {
@@ -3417,7 +3417,7 @@
      "previous": "이전",
      "next": "다음",
      "showing": "표시 중",
-     "to": " 대상: ",
+     "to": "~",
      "of": "/",
      "results": "건"
     },
@@ -9408,7 +9408,7 @@
     "every": "매",
     "never": "없음",
     "custom": "사용자 지정",
-    "on": "날짜",
+    "on": "지정일",
     "selectDate": "날짜 선택",
     "after": "횟수",
     "createTaskIfOverDue": "이전 작업이 연체되어도 새 작업 생성",
@@ -31974,7 +31974,7 @@
      "6": "토요일",
      "7": "일요일"
     },
-    "to": " 대상: ",
+    "to": "~",
     "validation": {
      "closeTimeMustBeAfterOpenTime": "종료 시간은 시작 시간보다 이후여야 합니다",
      "timeSlotsCannotOverlap": "시간대는 겹칠 수 없습니다"
@@ -34985,7 +34985,7 @@
     "availableDaysLabel": "사용 가능한 요일",
     "availableDaysRequired": "하루 이상 선택하세요.",
     "availableDaysRequiredTitle": "사용 가능한 요일 필요",
-    "rangeTo": " 대상: ",
+    "rangeTo": "~",
     "dateRangeAny": "모든 날짜",
     "dateRangeFuture": "미래 날짜만 가능",
     "dateRangePast": "과거 날짜만",
@@ -58175,7 +58175,7 @@
     "date_specific_hours": "특정 날짜 시간",
     "date_specific_desc": "특정 날짜의 불가능 시간 추가",
     "unavailable": "불가",
-    "to": " 대상: ",
+    "to": "~",
     "copy_times_to": "다음으로 시간 복사...",
     "copy_to_all": "전체에 복사",
     "apply": "적용",
@@ -78548,7 +78548,7 @@
      "unsavedChangesAlertTitle": "저장하지 않은 변경사항이 {count}개 있습니다",
      "update": "업데이트",
      "updateTask": "작업 업데이트",
-     "on": "날짜"
+     "on": "지정일"
     },
     "contact": "연락처",
     "countGreaterThan": "{value}보다 큰 값을 입력하세요",
@@ -88562,7 +88562,7 @@
        "title": "봇 중지",
        "description": "시나리오가 발생하면 연락처에 대한 응답을 중지합니다.",
        "learnMore": "자세히 보기",
-       "on": "날짜",
+       "on": "켬",
        "off": "끔",
        "newScenario": "새 시나리오"
       },
@@ -88648,7 +88648,7 @@
        "title": "상담원 전환",
        "description": "활성화된 시나리오가 발생하면 대화를 담당자에게 배정합니다.",
        "learnMore": "(더 알아보기)",
-       "on": "날짜",
+       "on": "켬",
        "off": "끔",
        "newScenario": "새 시나리오"
       },
@@ -88743,7 +88743,7 @@
        "title": "봇 전환",
        "description": "대화를 다른 상담원에게 전달",
        "learnMore": "(더 알아보기)",
-       "on": "날짜",
+       "on": "켬",
        "newTransfer": "새 봇 전환"
       },
       "form": {
@@ -88799,7 +88799,7 @@
        "title": "자동 후속 조치",
        "description": "봇이 지정된 시간 순서에 따라 연락처를 후속 조치합니다",
        "learnMore": "(더 알아보기)",
-       "on": "날짜",
+       "on": "켬",
        "off": "끔",
        "addFollowup": "후속 조치 추가",
        "followupSettings": "후속 조치 설정"
@@ -88845,7 +88845,7 @@
        "contactTimezone": "연락처 시간대",
        "businessTimezone": "비즈니스 시간대",
        "unavailable": "불가",
-       "to": " 대상: ",
+       "to": "~",
        "copyTimesTo": "다음으로 시간 복사...",
        "copyToAllDays": "모든 날에 복사",
        "apply": "적용",
@@ -89041,7 +89041,7 @@
       "lastUpdatedTooltip": "AI 봇의 마지막 업데이트 날짜 및 시간",
       "deleteTooltip": "다른 봇을 기본 봇으로 설정하기 전까지는 이 봇을 삭제할 수 없습니다.",
       "showing": "표시 중",
-      "to": " 대상: ",
+      "to": "~",
       "of": "/",
       "results": "건",
       "searchAgent": "상담원 검색",
@@ -90833,7 +90833,7 @@
      "mins": "{mins}분"
     },
     "availabilityPicker": {
-     "to": " 대상: ",
+     "to": "~",
      "confirm": "확인"
     },
     "variantLabels": {
@@ -91107,7 +91107,7 @@
      "recurringTasks": "반복 작업",
      "never": "없음",
      "recurring": "반복",
-     "on": "날짜",
+     "on": "지정일",
      "after": "횟수",
      "occurrences": "발생 횟수",
      "occurrences1": "회",
@@ -99956,7 +99956,7 @@
       "previous": "이전",
       "next": "다음",
       "showing": "표시 중",
-      "to": " 대상: ",
+      "to": "~",
       "of": "/",
       "results": "건"
      },
@@ -105773,7 +105773,7 @@
      "every": "매",
      "never": "없음",
      "custom": "사용자 지정",
-     "on": "날짜",
+     "on": "지정일",
      "selectDate": "날짜 선택",
      "after": "횟수",
      "createTaskIfOverDue": "이전 작업이 연체되어도 새 작업 생성",
@@ -114509,7 +114509,7 @@
      "availableDaysLabel": "사용 가능한 요일",
      "availableDaysRequired": "하루 이상 선택하세요.",
      "availableDaysRequiredTitle": "사용 가능한 요일 필요",
-     "rangeTo": " 대상: ",
+     "rangeTo": "~",
      "dateRangeAny": "모든 날짜",
      "dateRangeFuture": "미래 날짜만 가능",
      "dateRangePast": "과거 날짜만",
@@ -117735,7 +117735,7 @@
     "weeks": "주",
     "months": "개월",
     "years": "년",
-    "on": "날짜",
+    "on": "지정일",
     "ends": "종료",
     "never": "없음",
     "after": "횟수",
@@ -129583,7 +129583,7 @@
      "recurringTaskLabel": "반복 작업",
      "never": "없음",
      "recurring": "반복",
-     "on": "날짜",
+     "on": "지정일",
      "after": "횟수",
      "occurrences": "발생 횟수",
      "occurrences1": "회",
@@ -145690,7 +145690,7 @@
   "dashboard.switchBack.liveTag": "라이브",
   "dashboard.switchBack.popoverTitle": "새 클라이언트 포털",
   "dashboard.switchBack.popoverSubtitle": "모든 멤버에게 활성화됨",
-  "dashboard.switchBack.popoverOnTag": "날짜",
+  "dashboard.switchBack.popoverOnTag": "켜짐",
   "dashboard.switchBack.switchBackAction": "클래식 포털로 다시 전환",
   "dashboard.switchBack.popoverHelper": "새 포털은 언제든지 다시 켤 수 있습니다. 활성 세션은 새로고침이 필요할 수 있습니다.",
   "dashboard.switchBack.reasonMissingFeature": "원하는 기능이 없나요",
@@ -148132,7 +148132,7 @@
   "liveSessions.recurrence.months": "개월",
   "liveSessions.recurrence.never": "없음",
   "liveSessions.recurrence.occurrences": "회",
-  "liveSessions.recurrence.on": "날짜",
+  "liveSessions.recurrence.on": "지정일",
   "liveSessions.recurrence.repeatsEveryLabel": "반복 주기",
   "liveSessions.recurrence.repeatsOnLabel": "반복 요일",
   "liveSessions.recurrence.sat": "토",
