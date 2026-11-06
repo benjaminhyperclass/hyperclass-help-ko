@@ -306725,7 +306725,7 @@
  },
  "productsApp.common.square": {
   "en": "Square",
-  "ko": "정사각형"
+  "ko": "Square"
  },
  "productsApp.common.startTime": {
   "en": "Start Time",
@@ -368181,7 +368181,7 @@
  },
  "socialPlannerApp.socialListening.alerts.sendsDaily": {
   "en": "Sends every morning at {time}",
-  "ko": "매일 아침 {time}에 발송됩니다"
+  "ko": "매일 {time}에 발송됩니다"
  },
  "socialPlannerApp.socialListening.alerts.sendsWeekly": {
   "en": "Sends Mondays at {time} · next on {date}",
@@ -423794,5 +423794,285 @@
  "crmObjectsSettingsApp.manageTags.tagsColorChangedSuccessfully": {
   "en": "Tag color updated successfully",
   "ko": "태그 색상이 업데이트되었습니다"
+ },
+ "membershipMigration.benefits.aiCustomize.description": {
+  "en": "Describe changes, no custom CSS or JS",
+  "ko": "커스텀 CSS나 JS 없이 원하는 변경 사항을 설명하면 됩니다"
+ },
+ "membershipMigration.benefits.aiCustomize.title": {
+  "en": "Customize with AI",
+  "ko": "AI로 맞춤 설정"
+ },
+ "membershipMigration.benefits.badges.description": {
+  "en": "Top contributor, admin and more",
+  "ko": "우수 기여자, 관리자 등"
+ },
+ "membershipMigration.benefits.badges.title": {
+  "en": "Badges",
+  "ko": "배지"
+ },
+ "membershipMigration.benefits.coursePortal.description": {
+  "en": "No more jumping between apps",
+  "ko": "더 이상 앱을 오갈 필요가 없습니다"
+ },
+ "membershipMigration.benefits.coursePortal.title": {
+  "en": "Part of your client portal",
+  "ko": "회원 포털에 통합"
+ },
+ "membershipMigration.benefits.courseShell.description": {
+  "en": "A steadier experience for every learner",
+  "ko": "모든 수강생에게 더 안정적인 학습 경험을 제공합니다"
+ },
+ "membershipMigration.benefits.courseShell.title": {
+  "en": "A more reliable foundation",
+  "ko": "더 견고한 기반"
+ },
+ "membershipMigration.benefits.coursesInCommunity.description": {
+  "en": "Start learning right from your group",
+  "ko": "그룹에서 바로 학습을 시작할 수 있습니다"
+ },
+ "membershipMigration.benefits.coursesInCommunity.title": {
+  "en": "Courses inside your community",
+  "ko": "커뮤니티 안의 코스"
+ },
+ "membershipMigration.benefits.improvedCoursesPage.description": {
+  "en": "Owned vs available, single or bundle",
+  "ko": "보유 코스와 수강 가능한 코스, 단일·번들 상품을 나눠 보여 줍니다"
+ },
+ "membershipMigration.benefits.improvedCoursesPage.title": {
+  "en": "Improved Courses Page",
+  "ko": "개선된 코스 페이지"
+ },
+ "membershipMigration.benefits.newDashboard.description": {
+  "en": "Continue where you left off",
+  "ko": "작업하던 곳에서 이어서 진행합니다"
+ },
+ "membershipMigration.benefits.newDashboard.title": {
+  "en": "New dashboard",
+  "ko": "새 대시보드"
+ },
+ "membershipMigration.benefits.oneSidebar.description": {
+  "en": "Every module, no app switcher",
+  "ko": "앱 전환 없이 모든 모듈을 한곳에서 이용합니다"
+ },
+ "membershipMigration.benefits.oneSidebar.title": {
+  "en": "Unified sidebar",
+  "ko": "통합 사이드바"
+ },
+ "membershipMigration.benefits.paidChannels.description": {
+  "en": "Charge for access to a channel",
+  "ko": "채널 이용료를 받을 수 있습니다"
+ },
+ "membershipMigration.benefits.paidChannels.title": {
+  "en": "Paid channels",
+  "ko": "유료 채널"
+ },
+ "membershipMigration.benefits.polls.description": {
+  "en": "Ask members anything in a post",
+  "ko": "게시물에서 회원에게 무엇이든 물어볼 수 있습니다"
+ },
+ "membershipMigration.benefits.polls.title": {
+  "en": "Polls",
+  "ko": "투표"
+ },
+ "membershipMigration.benefits.voiceNotes.description": {
+  "en": "In post comments and chats",
+  "ko": "게시물 댓글과 채팅에서 사용할 수 있습니다"
+ },
+ "membershipMigration.benefits.voiceNotes.title": {
+  "en": "Voice notes",
+  "ko": "음성 메시지"
+ },
+ "membershipMigration.feature.clientPortal": {
+  "en": "client portal",
+  "ko": "회원 포털"
+ },
+ "membershipMigration.feature.communities": {
+  "en": "community",
+  "ko": "커뮤니티"
+ },
+ "membershipMigration.feature.courses": {
+  "en": "courses",
+  "ko": "코스"
+ },
+ "membershipMigration.modal.carryOver": {
+  "en": "Members won't need to sign in again. Using custom CSS or JS? Check out preview.",
+  "ko": "회원은 다시 로그인할 필요가 없습니다. 커스텀 CSS나 JS를 사용 중이라면 미리보기에서 확인하세요."
+ },
+ "membershipMigration.modal.close": {
+  "en": "Close",
+  "ko": "닫기"
+ },
+ "membershipMigration.modal.cssNote": {
+  "en": "Custom CSS or JS? Check it in preview.",
+  "ko": "커스텀 CSS나 JS를 사용 중이라면 미리보기에서 확인하세요."
+ },
+ "membershipMigration.modal.error": {
+  "en": "Something went wrong. Try again.",
+  "ko": "문제가 발생했습니다. 다시 시도해 주세요."
+ },
+ "membershipMigration.modal.preview": {
+  "en": "Preview",
+  "ko": "미리보기"
+ },
+ "membershipMigration.modal.slide": {
+  "en": "Show slide {n}",
+  "ko": "{n}번 슬라이드 표시"
+ },
+ "membershipMigration.modal.subtitle": {
+  "en": "Faster, cleaner and full of new features. Everyone moves on Dec 1, 2026, and we'll handle it for you.",
+  "ko": "더 빠르고 깔끔해졌으며 새 기능도 가득합니다. 2026년 12월 1일에 모두 전환되며, 전환 작업은 저희가 대신 처리해 드립니다."
+ },
+ "membershipMigration.modal.tag": {
+  "en": "Classic {feature} retires",
+  "ko": "{feature} 기존 버전 지원 종료"
+ },
+ "membershipMigration.modal.tagDate": {
+  "en": "Dec 1, 2026",
+  "ko": "2026년 12월 1일"
+ },
+ "membershipMigration.modal.title": {
+  "en": "Meet your new {feature} experience",
+  "ko": "새로운 {feature} 경험을 만나 보세요"
+ },
+ "membershipMigration.modal.turnOn": {
+  "en": "Turn on for everyone",
+  "ko": "모두에게 활성화"
+ },
+ "membershipMigration.ribbon.body": {
+  "en": "Your members move to the new one automatically, with all data intact.",
+  "ko": "회원은 모든 데이터가 그대로 유지된 채 새 버전으로 자동 전환됩니다."
+ },
+ "membershipMigration.ribbon.doItLater": {
+  "en": "Do it later",
+  "ko": "나중에"
+ },
+ "membershipMigration.ribbon.live": {
+  "en": "New {feature} is live for your members",
+  "ko": "회원에게 새 {feature} 버전이 적용되었습니다"
+ },
+ "membershipMigration.ribbon.liveBody": {
+  "en": "You can switch back until Nov 30, 2026.",
+  "ko": "2026년 11월 30일까지 기존 버전으로 다시 전환할 수 있습니다."
+ },
+ "membershipMigration.ribbon.retires": {
+  "en": "Classic {feature} retires Dec 1, 2026",
+  "ko": "{feature} 기존 버전 지원이 2026년 12월 1일에 종료됩니다"
+ },
+ "membershipMigration.ribbon.seeWhatsNew": {
+  "en": "See what's new",
+  "ko": "새 기능 확인"
+ },
+ "membershipMigration.ribbon.switchBack": {
+  "en": "Switch back",
+  "ko": "다시 전환"
+ },
+ "labsApp.featureCard.beforeCustomCode": {
+  "en": "Custom CSS and JS for the old sidebar doesn't run on New Design Experience. You can switch it back on to compare.",
+  "ko": "기존 사이드바용 커스텀 CSS와 JS는 새 디자인 경험에서 실행되지 않습니다. 다시 켜서 비교해 볼 수 있습니다."
+ },
+ "labsApp.featureCard.beforePlan": {
+  "en": "How much you can customize depends on your plan.",
+  "ko": "맞춤 설정 범위는 요금제에 따라 다릅니다."
+ },
+ "labsApp.featureCard.beforeTitle": {
+  "en": "Before you turn it on",
+  "ko": "활성화 전 확인 사항"
+ },
+ "labsApp.featureCard.beforeTurnOff": {
+  "en": "Turning New Design Experience off brings back the old navigation but doesn't keep your layout.",
+  "ko": "새 디자인 경험을 끄면 기존 내비게이션으로 돌아가지만, 설정한 레이아웃은 유지되지 않습니다."
+ },
+ "labsApp.featureCard.planRequired297": {
+  "en": "Available on $297 and $497 plans",
+  "ko": "$297 및 $497 요금제에서 이용 가능"
+ },
+ "labsApp.featureCard.planRequired497": {
+  "en": "Available on the $497 plan",
+  "ko": "$497 요금제에서 이용 가능"
+ },
+ "labsApp.featureCard.previewCta": {
+  "en": "Preview",
+  "ko": "미리보기"
+ },
+ "labsApp.featureCard.previewNote": {
+  "en": "Opens in a new tab, only for you. Nothing to undo.",
+  "ko": "새 탭에서 열리며 본인에게만 표시됩니다. 아무것도 바뀌지 않으니 되돌릴 필요가 없습니다."
+ },
+ "labsApp.featureCard.spotlightFindBody": {
+  "en": "Pin the pages you live in, jump back to recent ones, and search any page, setting or record.",
+  "ko": "자주 쓰는 페이지를 고정하고, 최근 페이지로 바로 돌아가고, 모든 페이지·설정·레코드를 검색하세요."
+ },
+ "labsApp.featureCard.spotlightFindTitle": {
+  "en": "Stop hunting",
+  "ko": "이제 찾아 헤매지 마세요"
+ },
+ "labsApp.featureCard.spotlightSameBody": {
+  "en": "Every feature works as it does today. New Design Experience changes how you move, not what you can do.",
+  "ko": "모든 기능은 지금과 똑같이 작동합니다. 새 디자인 경험은 할 수 있는 일이 아니라 이동하는 방식을 바꿉니다."
+ },
+ "labsApp.featureCard.spotlightSameTitle": {
+  "en": "Nothing else changes",
+  "ko": "나머지는 그대로입니다"
+ },
+ "labsApp.featureCard.spotlightTemplateBody": {
+  "en": "Save a layout as a template and push it to every sub-account. One push updates them all.",
+  "ko": "레이아웃을 템플릿으로 저장해 모든 서브 계정에 배포하세요. 한 번 배포하면 모두 업데이트됩니다."
+ },
+ "labsApp.featureCard.spotlightTemplateTitle": {
+  "en": "Build once, apply everywhere",
+  "ko": "한 번 만들어 모든 곳에 적용하세요"
+ },
+ "labsApp.featureCard.spotlightYoursBody": {
+  "en": "Rename, reorder and hide groups so each sub-account looks built for its business.",
+  "ko": "그룹 이름을 바꾸고 순서를 조정하거나 숨겨서, 각 서브 계정이 해당 비즈니스에 꼭 맞게 보이도록 구성하세요."
+ },
+ "labsApp.featureCard.spotlightYoursTitle": {
+  "en": "Make it yours",
+  "ko": "원하는 대로 꾸미세요"
+ },
+ "labsApp.featureCard.upgrade": {
+  "en": "Upgrade",
+  "ko": "업그레이드"
+ },
+ "adPublishingApp.campaignCreation.tiktok.adSection": {
+  "en": "Ad",
+  "ko": "광고"
+ },
+ "adPublishingApp.campaignCreation.tiktok.mediaGuidelines.imagesPerAdCount": {
+  "en": "2 to 35",
+  "ko": "2~35개"
+ },
+ "adPublishingApp.campaignCreation.tiktok.previewAdBadge": {
+  "en": "Ad",
+  "ko": "광고"
+ },
+ "socialPlannerApp.socialListening.alerts.previewTime": {
+  "en": "9:41 AM",
+  "ko": "오전 9:41"
+ },
+ "socialPlannerApp.socialListening.alerts.sendTime": {
+  "en": "9:00 AM",
+  "ko": "오전 9:00"
+ },
+ "productsApp.common.id": {
+  "en": "Id",
+  "ko": "ID"
+ },
+ "productsApp.common.in": {
+  "en": "in",
+  "ko": "·"
+ },
+ "productsApp.common.paypal": {
+  "en": "Paypal",
+  "ko": "PayPal"
+ },
+ "usersMicroApp.notifications.list.of": {
+  "en": "of",
+  "ko": "/"
+ },
+ "ghlEmailBuilderCommon.emailTemplate.providers.activeCampaign": {
+  "en": "Active Campaign",
+  "ko": "ActiveCampaign"
  }
 }
