@@ -1,4 +1,5 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.12
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.13
+ * v4.21.13: 새 디자인 시스템 입력칸 자리표시자(.hr-input__placeholder)의 단어 1개('Search' 등)도 _textScoped 범위.
  * v4.21.12: 배지·알약(pill) 안 'New' → '신규'(버튼용 '새로 만들기' 대신) · 자격 증명 목록 유형 칩 certificate·badge(상태 칩 허용 목록).
  * v4.21.11: '{{' 가 든 flat 값은 원본 t 대신 한국어를 보간 없이 그대로(원본 t 도 보간하지 않음 — 앱이 직접 치환).
  * v4.21.10: 멤버십 flat — vue-i18n 리터럴 {'x'} 를 글자로(화면에 "{'|'}" 가 그대로 보이던 문제), '{{' 가 든 값은 원본 t 에(안쪽만 채워지던 문제).
@@ -206,7 +207,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.21.12',
+    version: '4.21.13',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -532,7 +533,9 @@
     // v4.21.5: 새 디자인 시스템 체크박스·라디오 라벨(필터 목록 — 커스텀 오브젝트 템플릿 분류 'Events'·'Insurance'·'Pets' 등)
     '.hr-checkbox__label,.hr-radio__label,' +
     // v4.21.7: 새 디자인 시스템 제목 글자(.hr-text-2xl·xl·lg) — 평판 개요 'Overview' 등 단어 1개 제목
-    '.hr-text-2xl,.hr-text-xl,.hr-text-lg';
+    '.hr-text-2xl,.hr-text-xl,.hr-text-lg,' +
+    // v4.21.13: 입력칸 자리표시자(span) — 상품 컬렉션 검색칸 'Search' 등. 입력값이 있으면 자리표시자가 사라지므로 사용자 데이터와 섞이지 않는다
+    '.hr-input__placeholder';
   var SCOPED_SKIP = 'td,[role="option"],[role="listbox"],[role="gridcell"],.n-tag,.tag,[contenteditable]';
   // v4.21.3: 차트(ECharts·Highcharts·ApexCharts) SVG 글자도 단어 1개 범위 — 대시보드 기회 상태 'Open'·'Won' 범례 등
   var SVG_NS = 'http://www.w3.org/2000/svg', CHART_SEL = '.vue-echarts-inner,.highcharts-container,.apexcharts-canvas,.echarts';
