@@ -40,7 +40,7 @@
 ## 4. 남은 결정·자료
 
 - [ ] 가격(무료·유료, 금액)
-- [ ] 개인정보처리방침 URL — 초안 `marketplace/PRIVACY.md`(영/한)를 웹페이지로 게시하고 URL 등록. **바로 쓸 수 있는 임시 URL**: `https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/marketplace/PRIVACY.md`(공개 레포라 지금 열린다 — 심사관이 내용을 읽을 수 있으면 충분). 하이퍼클래스 도메인 페이지가 생기면 바꾼다. 이용약관 URL 이 필수면 같은 방식으로
+- [x] 개인정보처리방침 URL — **벤자민 승인(2026-11-06): 레포 파일 주소를 그대로 쓴다.** 초안 `marketplace/PRIVACY.md`(영/한). URL: `https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/marketplace/PRIVACY.md`(공개 레포라 지금 열린다 — 심사관이 내용을 읽을 수 있으면 충분). 하이퍼클래스 도메인 페이지가 생기면 바꾼다. 이용약관 URL 이 필수면 같은 방식으로
 - [ ] 지원 이메일: benjamin@hyperclass.ai (DECISIONS 2026-08-13)
 - [ ] 스크린샷 3~5장(한국어 대시보드·연락처 상세·대화·캘린더·멤버십) — 브라우저 연결 시 캡처
 - [x] 출시 전 시험(2026-11-05): 슬롯을 끈 브라우저(`localStorage.hcBootOff='1'`)에 번들을 실행 → 로더·확인입력 어댑터 기동, 화면 한국어(textHits 35), 텔레메트리 전송 0, 포인터로 최신 사전 사용 확인

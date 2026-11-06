@@ -225,3 +225,11 @@ superagentsApp(Managed Agents 빌더·목록·채팅 레이어)의 제품명 표
 - **로더 승격 절차(사람)**: 로더 PR 머지 → `C=$(scripts/publish-cdn.sh origin/main --push | tail -1)` → 브라우저에서 `@C` 의 로더·어댑터 200·바이트 확인 → `loader.next = C`(캐너리) → 실측 → `loader.stable = C`. `verify-deploy.js` 의 revPrefix 는 cdn SHA 앞 7자다.
 - 남은 위험: 슬롯에 고정된 진입 파일(에이전시 Custom JS 의 `@c25c941/js/hc-bootstrap.js`, 포털 슬롯의 `@028b315…/js/hc-portal-bootstrap.js`)은 아직 main 커밋 SHA 다. jsDelivr 가 영구 캐시해 지금은 서빙되지만, 같은 내용을 cdn 커밋 SHA 로 바꿔 두면 완전히 한도 안이 된다(에이전시 슬롯은 벤자민 수동 교체, 포털 슬롯은 러너로 교체 가능).
 - 함께 정리: 원시 캡처 `_source/hc-aistudio-2026-10-08.json`·`_source/hc-gap-2026-10-08.json`(고객 데이터 포함, 1MB)을 트리에서 뺐다. 필요하면 `git show d931f20:_source/hc-aistudio-2026-10-08.json` 으로 되살린다.
+
+## [확정] 2026-11-06 밤 벤자민 승인 묶음 ("승인하니까 진행해줘")
+- **PR #25 머지**(번역기 ⟦n⟧ 표지·반복 오류 예방 규칙). 머지 직후 프롬프트 예시 `"{name}을(를)"` 이 f-string 변수로 해석돼 ui-updater 가 NameError → #91 로 `{{name}}` 이스케이프. 수동 재실행은 EN 무인 추출 단계에서 GHL 세션 만료로 실패(이슈 #92, 세션 재발급은 벤자민 로그인·2FA 필요). 메인 한글팩 경로와는 무관.
+- **자동화(워크플로우) 화면은 영어로 둔다.** GHL 이 다른 도메인 iframe 으로 띄워 한글팩이 닿지 않고, 우회하려면 GHL 코드를 패치해야 한다. GHL 에 한국어 지원을 요청하는 쪽으로 간다.
+- **레포 대용량 분리** → 런타임 cdn 브랜치(위 절).
+- **신규 포털 주간 점검 예약 작업** 생성: 매주 월요일 10:42 KST, 맥 데스크톱 앱에 묶임(크롬 사용), 승인 없이 실행(auto). 내용: 서브계정 전체 포털 인벤토리 → 한글팩 빠진 포털에 러너 v1.2 설치 → 옛 베일 갱신 → 로그인 화면 확인 → 한국어 보고. other-fields-changed·put-failed 면 즉시 멈추고 보고. 레포에는 쓰지 않는다.
+- **공개 레포의 광고 계정 이름·ID 5개 제거**(#90) — 같은 목록의 제3자 실명·인보이스 번호·레코드 ID·토큰·고객 도메인도 함께 뺐다(공개 레포 규칙). git 이력에는 남는다(이력 재작성은 하지 않는다).
+- **마켓플레이스 개인정보처리방침 URL = 레포 파일 주소** `https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/marketplace/PRIVACY.md`. 가격(무료/유료)은 아직 미정.
