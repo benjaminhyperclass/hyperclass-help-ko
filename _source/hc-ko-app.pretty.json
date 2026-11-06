@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "version": "4.2.53",
+  "version": "4.2.54",
   "built": "2026-11-06",
-  "source": "SurveyApp·externalTrackingApp·voiceAiApp·templateLibraryApp·agentLogsApp·clientPortalBuilder 등) 직접 번역(6갈래) + 독립 검수 4갈래(교정 9 + 스코프→범위 2) · 벤자민컨설팅 40화면 스윕(v4.2.46 적용 후): 평판 개요 리뷰 링크 안내·빈 상태, 연동 목록 설명 2 _text 6 + 수료증·배지(자격 증명) 앱 certificatesApp 596문구 신규 — 런타임 카탈로그 추출(r6JD, 해시 대조) + 직접 번역 + 독립 검수 교정 4 + 평판 관리 앱 reputationApp 잔여 662문구(경쟁사 분석·프로필 연결·대시보드 v2·순차 응답·수동 리뷰·리뷰 AI 에이전트·위젯·비디오 후기) — 런타임 카탈로그에서 미번역분 추출 + 직접 번역 + 독립 검수 교정 22 + round agentStudioApp 215 + round superagentsApp 108 + round proposalCommon 90 + 앱 전체 카탈로그 추출 라운드(11-05 오후): 이메일 빌더 ghlEmailBuilderCommon 2,257 · agentStudioApp 228 · superagentsApp 118 · proposalCommon 91 = 2,694문구 — 번역 6갈래 + 독립 검수 4갈래(교정 43) + round productsApp 116 + round opportunitiesApp 19 + round contactsApp 9 + round integrationsApp 2 + round socialPlannerApp 2 + AI 직원 앱 aiEmployeesApp 이전 앱 카탈로그 번역을 호스트 네임스페이스로 이관(2,060) + 신규 35 · 상품 productsApp 116 · 기회·연락처·연동·소셜 소량 — 독립 검수 3갈래 교정 146(원문 변경 Bot→Agent, On=켬, 확정 용어) + 기존 사전의 일괄 오역 정정 17: 범위·페이지 'to'(' 대상: ')→'~' 7, 토글 'On'(날짜)→켬·켜짐 5, 반복 종료 'On'(날짜)→지정일 5 + round blogsApp 130 + round formSurveyApp 143 + round qrCodeListApp 24 + round clientPortalBuilder 3 + round crmCommon 4 + round externalTrackingApp 4 + round launchpadApp 1 + round onboardingApp 1 + round usersMicroApp 3 + round voiceAiApp 2 + round reputationApp 1 + round ghlEmailBuilderCommon 1 + 'AI에게 문의' copilotApp 1,366 · 블로그 blogsApp 141 · 폼 formSurveyApp 143 · QR 코드 qrCodeListApp 24 · 소량 9개 앱 20 — 번역 6갈래 + 독립 검수 4갈래(교정 5 + 미디어 저장소 통일 9)",
+  "source": "화면 스윕(v4.2.46 적용 후): 평판 개요 리뷰 링크 안내·빈 상태, 연동 목록 설명 2 _text 6 + 수료증·배지(자격 증명) 앱 certificatesApp 596문구 신규 — 런타임 카탈로그 추출(r6JD, 해시 대조) + 직접 번역 + 독립 검수 교정 4 + 평판 관리 앱 reputationApp 잔여 662문구(경쟁사 분석·프로필 연결·대시보드 v2·순차 응답·수동 리뷰·리뷰 AI 에이전트·위젯·비디오 후기) — 런타임 카탈로그에서 미번역분 추출 + 직접 번역 + 독립 검수 교정 22 + round agentStudioApp 215 + round superagentsApp 108 + round proposalCommon 90 + 앱 전체 카탈로그 추출 라운드(11-05 오후): 이메일 빌더 ghlEmailBuilderCommon 2,257 · agentStudioApp 228 · superagentsApp 118 · proposalCommon 91 = 2,694문구 — 번역 6갈래 + 독립 검수 4갈래(교정 43) + round productsApp 116 + round opportunitiesApp 19 + round contactsApp 9 + round integrationsApp 2 + round socialPlannerApp 2 + AI 직원 앱 aiEmployeesApp 이전 앱 카탈로그 번역을 호스트 네임스페이스로 이관(2,060) + 신규 35 · 상품 productsApp 116 · 기회·연락처·연동·소셜 소량 — 독립 검수 3갈래 교정 146(원문 변경 Bot→Agent, On=켬, 확정 용어) + 기존 사전의 일괄 오역 정정 17: 범위·페이지 'to'(' 대상: ')→'~' 7, 토글 'On'(날짜)→켬·켜짐 5, 반복 종료 'On'(날짜)→지정일 5 + round blogsApp 130 + round formSurveyApp 143 + round qrCodeListApp 24 + round clientPortalBuilder 3 + round crmCommon 4 + round externalTrackingApp 4 + round launchpadApp 1 + round onboardingApp 1 + round usersMicroApp 3 + round voiceAiApp 2 + round reputationApp 1 + round ghlEmailBuilderCommon 1 + 'AI에게 문의' copilotApp 1,366 · 블로그 blogsApp 141 · 폼 formSurveyApp 143 · QR 코드 qrCodeListApp 24 · 소량 9개 앱 20 — 번역 6갈래 + 독립 검수 4갈래(교정 5 + 미디어 저장소 통일 9) + round blogsApp 102 + 'AI에게 문의' copilotApp 잔여 581 · 블로그 blogsApp 잔여 115 — 번역 3갈래 + 독립 검수 2갈래(교정 4) · 'AI에게 문의' 배너 _text 2 + _textScoped Configure",
   "strings": 102718
  },
  "host": {
@@ -14315,16 +14315,155 @@
       "bulkChanges": {
        "at": "{time}에",
        "failureDetails": {
-        "page": "{pages} 페이지 중 {page} 페이지"
+        "page": "{pages} 페이지 중 {page} 페이지",
+        "empty": "이 페이지에 표시할 실패 세부 정보가 없습니다.",
+        "incomplete": "이전에 실행된 작업이라 일부 세부 정보가 보존되지 않았습니다. 이 표에는 확인 가능한 모든 실패가 표시되며, 일괄 변경의 실제 실패 합계는 이보다 많을 수 있습니다.",
+        "lede": "기록된 실패는 {count}건입니다. 각 행에 변경하지 못한 대상과 그 이유가 표시됩니다.",
+        "location": "서브 계정",
+        "next": "다음",
+        "pagination": "실패 목록 페이지",
+        "previous": "이전",
+        "reason": "이유",
+        "title": "실패한 변경",
+        "unknownLocation": "정보 없음",
+        "unnamed": "식별되지 않은 사용자",
+        "user": "사용자"
        },
        "open": "일괄 변경",
-       "tableLabel": "최근 일괄 액세스 변경"
+       "tableLabel": "최근 일괄 액세스 변경",
+       "columns": {
+        "actions": "작업",
+        "actor": "변경한 사람 / 시작 시각",
+        "change": "변경",
+        "progress": "진행 상황 및 결과",
+        "status": "상태"
+       },
+       "emptyMessage": "누군가 서브 계정 전체에 액세스 수준을 설정하면, 실행한 사람과 처리 내용이 여기에 표시됩니다.",
+       "emptyTitle": "아직 일괄 변경이 없습니다",
+       "failedMessage": "최근 변경사항을 불러오는 중 문제가 발생했습니다. 이미 실행된 작업에는 영향이 없습니다.",
+       "failedTitle": "일괄 변경을 불러오지 못했습니다",
+       "failuresCapped": "{shown}건 표시 · 나머지 {count}건은 기록되지 않았습니다.",
+       "failuresCappedOne": "{shown}건 표시 · 나머지 {count}건은 기록되지 않았습니다.",
+       "filters": {
+        "accessLevel": "액세스 수준",
+        "allLevels": "모든 액세스 수준",
+        "allStatuses": "모든 상태",
+        "roleDefault": "역할 기본값",
+        "withFailures": "실패 있음"
+       },
+       "hideFailures": "실패 숨기기",
+       "lede": "서브 계정 전체에 하나의 액세스 수준을 설정한 최근 변경사항이 최신순으로 표시됩니다. 아직 실행 중인 변경은 여기에서 계속 업데이트됩니다.",
+       "loading": "일괄 변경을 불러오는 중…",
+       "moreFailed": "이전 변경사항을 불러오지 못했습니다. 이미 불러온 변경사항은 계속 확인할 수 있습니다. 다시 시도하세요.",
+       "noActions": "작업 없음",
+       "noMatchesMessage": "다른 상태나 액세스 수준을 선택하거나, 필터를 초기화하여 최근 변경사항을 모두 확인하세요.",
+       "noMatchesTitle": "일치하는 변경사항이 없습니다",
+       "page": "{page} 페이지",
+       "pagination": "일괄 변경 페이지",
+       "progress": "서브 계정 {total}개 중 {done}개",
+       "progressPeople": "{total}명 중 {done}명 확인됨",
+       "resetToRoleDefault": "모든 사용자가 역할 기본값으로 재설정됨",
+       "resultCount": "변경 {total}건 중 {shown}건 표시",
+       "retryFailed": "실패한 작업 다시 시도",
+       "retryLocations": "실패한 서브 계정 {count}개 다시 시도",
+       "retryLocationsOne": "실패한 서브 계정 {count}개 다시 시도",
+       "retryPeople": "실패한 사용자 {count}명 다시 시도",
+       "retryPeopleOne": "실패한 사용자 {count}명 다시 시도",
+       "setToLevel": "모든 사용자가 {level}(으)로 설정됨",
+       "showFailures": "실패 {count}건 보기",
+       "showFailuresOne": "실패 {count}건 보기",
+       "status": {
+        "cancelled": "중지됨",
+        "failed": "완료되지 않음",
+        "queued": "대기 중",
+        "running": "실행 중",
+        "stalled": "진행되지 않음",
+        "succeeded": "완료됨"
+       },
+       "tableLede": "변경사항은 최신순으로 페이지당 {limit}건씩 표시됩니다. 필터는 현재 페이지에만 적용됩니다. 실행 중인 변경은 자동으로 업데이트됩니다.",
+       "title": "일괄 변경",
+       "unknownActor": "알 수 없는 사용자",
+       "unknownTime": "시간 기록 없음",
+       "usersFailed": "사용자 {count}명 변경 실패",
+       "usersFailedOne": "사용자 {count}명 변경 실패",
+       "usersUnchanged": "{count}명은 이미 이 수준 사용 중",
+       "usersUnchangedOne": "{count}명은 이미 이 수준 사용 중",
+       "usersUpdated": "사용자 {count}명 업데이트됨",
+       "usersUpdatedOne": "사용자 {count}명 업데이트됨",
+       "viewFailures": "실패 보기"
       },
       "denial": {
-       "internal_route": "'AI에게 문의'에서 접근할 수 없는 항목입니다."
+       "internal_route": "'AI에게 문의'에서 접근할 수 없는 항목입니다.",
+       "agency_only": "에이전시 수준의 작업이므로 'AI에게 문의'는 서브 계정 안에서 실행할 수 없습니다.",
+       "blocked": "이 작업은 'AI에게 문의'로 실행할 수 없습니다. 앱에서 직접 진행하세요.",
+       "degraded": "'AI에게 문의'가 지금 허용된 작업 범위를 확인하지 못해, 추측하지 않고 중단했습니다. 잠시 후 다시 시도하세요.",
+       "generic": "'AI에게 문의'는 여기에서 이 작업을 할 수 없습니다.",
+       "missing_context": "'AI에게 문의'가 어느 서브 계정에서 실행할지 알 수 없었습니다. 원하는 서브 계정을 연 뒤 다시 요청하세요.",
+       "tier": "'AI에게 문의'는 이 작업을 할 수 없습니다.",
+       "user_level": "'AI에게 문의'는 이 작업을 할 수 없습니다.",
+       "user_permission": "본인에게 해당 액세스 권한이 없으므로 'AI에게 문의'도 대신 실행할 수 없습니다.",
+       "user_preference": "내 'AI에게 문의'에서 이 항목을 숨겼습니다. 다시 사용하려면 'AI에게 문의' 환경설정에서 다시 켜세요."
       },
       "domain": {
-       "crmEmails": "이메일"
+       "crmEmails": "이메일",
+       "browserAgent": "브라우저 에이전트",
+       "browserControl": "브라우저 제어",
+       "browserTasks": "브라우저 작업",
+       "crmAdManager": "광고 관리자",
+       "crmAgentStudio": "Agent Studio",
+       "crmAssociations": "연관",
+       "crmBlogs": "블로그",
+       "crmBrandBoards": "브랜드 보드",
+       "crmBulkActions": "일괄 작업",
+       "crmBusinesses": "비즈니스",
+       "crmCalendars": "캘린더",
+       "crmCampaigns": "캠페인",
+       "crmCompanies": "회사",
+       "crmContacts": "연락처",
+       "crmConversationAi": "대화 AI",
+       "crmConversations": "대화",
+       "crmCourses": "코스 및 멤버십",
+       "crmCustomFields": "커스텀 필드",
+       "crmCustomMenus": "커스텀 메뉴",
+       "crmEmailDomain": "이메일 도메인",
+       "crmEmailIsv": "이메일 전달성",
+       "crmExternalTracking": "외부 트래킹",
+       "crmFacebookLeads": "Facebook 리드 폼",
+       "crmFacebookMessenger": "Facebook 메신저",
+       "crmForms": "폼",
+       "crmFunnels": "퍼널",
+       "crmGoogleIntegration": "Google 연동",
+       "crmInvoices": "인보이스",
+       "crmKnowledgeBase": "지식 베이스",
+       "crmLinks": "트리거 링크",
+       "crmLocations": "서브 계정",
+       "crmMarketplace": "마켓플레이스",
+       "crmMedias": "미디어 저장소",
+       "crmMemory": "메모리",
+       "crmOauth": "OAuth 앱",
+       "crmObjects": "커스텀 오브젝트",
+       "crmOpportunities": "기회 관리",
+       "crmPayments": "결제",
+       "crmPhoneA2p": "A2P 등록",
+       "crmPhoneRegulatory": "전화 규정 준수",
+       "crmPhoneSystem": "전화 시스템",
+       "crmProducts": "상품",
+       "crmProjects": "프로젝트",
+       "crmProposals": "제안서 및 견적서",
+       "crmReporting": "대시보드",
+       "crmReputation": "평판 관리",
+       "crmSaas": "SaaS 구성기",
+       "crmSmsCampaignOnboarding": "SMS 캠페인 온보딩",
+       "crmSnapshots": "스냅샷",
+       "crmSocialPlanner": "소셜 플래너",
+       "crmStore": "온라인 스토어",
+       "crmSupportAgent": "지원 에이전트",
+       "crmSurveys": "설문",
+       "crmTemplateLibrary": "템플릿 라이브러리",
+       "crmUsers": "사용자",
+       "crmVoiceAi": "음성 AI",
+       "crmWorkflows": "워크플로우",
+       "webResearch": "웹 리서치"
       },
       "editor": {
        "agencyOnlyNote": "이 중 스킬 {count}개는 에이전시에서만 실행되므로 여기서 변경할 수 없습니다.",
@@ -14384,13 +14523,89 @@
       },
       "errors": {
        "offline": {
-        "message": "요청이 서버에 도달하지 않아 아무것도 변경되지 않았습니다. 다시 온라인 상태가 되면 다시 시도하세요."
+        "message": "요청이 서버에 도달하지 않아 아무것도 변경되지 않았습니다. 다시 온라인 상태가 되면 다시 시도하세요.",
+        "title": "연결 없음"
        },
        "tierArchived": {
-        "title": "보관된 수준입니다"
+        "title": "보관된 수준입니다",
+        "message": "이 화면을 불러온 뒤 다른 곳에서 이 수준이 보관되어 아무것도 변경되지 않았습니다. 목록을 새로고침한 후 다른 수준을 선택하세요."
        },
        "tierInUse": {
-        "message": "이 수준을 사용 중인 서브 계정이 있습니다. 서브 계정을 다른 수준으로 옮긴 후 보관하세요."
+        "message": "이 수준을 사용 중인 서브 계정이 있습니다. 서브 계정을 다른 수준으로 옮긴 후 보관하세요.",
+        "title": "아직 사용 중"
+       },
+       "bulkInProgress": {
+        "message": "완료될 때까지 기다린 후 액세스를 다시 변경하세요. 지금 다른 변경을 하면 진행 중인 변경을 덮어쓰게 됩니다.",
+        "title": "이미 일괄 변경이 실행 중입니다"
+       },
+       "busy": {
+        "message": "현재 'AI에게 문의' 액세스 요청이 몰려 있습니다. 아무것도 변경되지 않았으니 잠시 후 다시 시도하세요.",
+        "title": "요청이 너무 많습니다"
+       },
+       "contract": {
+        "message": "서버가 이 버전의 'AI에게 문의'에서 읽을 수 없는 형식으로 응답했습니다. 새로고침해도 해결되지 않으니 문제를 신고해 주세요.",
+        "title": "이 화면은 최신 버전이 아닙니다"
+       },
+       "forbidden": {
+        "message": "역할에서 허용되지 않거나, 이 서브 계정이 다른 에이전시에 속해 있습니다.",
+        "title": "이 변경을 할 수 없습니다"
+       },
+       "generic": {
+        "message": "아무것도 변경되지 않았습니다. 다시 시도하세요.",
+        "title": "문제가 발생했습니다"
+       },
+       "missing": {
+        "message": "이 화면을 불러온 뒤 삭제되었을 수 있습니다. 새로고침하여 현재 상태를 확인하세요.",
+        "title": "더 이상 존재하지 않는 항목입니다"
+       },
+       "rejected": {
+        "message": "서버가 요청을 거부하여 아무것도 변경되지 않았습니다. 변경한 내용을 확인하고 다시 시도하세요.",
+        "title": "변경이 수락되지 않았습니다"
+       },
+       "requestId": "참조 번호 {requestId}",
+       "sensitive": {
+        "message": "민감한 스킬의 수준을 높이는 중이므로, 서버가 저장 전에 수준을 확인하도록 요청합니다.",
+        "title": "확인이 필요합니다"
+       },
+       "serverError": {
+        "message": "아무것도 변경되지 않았습니다. 다시 시도하세요.",
+        "title": "서버에서 작업을 완료하지 못했습니다"
+       },
+       "tierIsAgencyDefault": {
+        "message": "개별 수준이 없는 모든 서브 계정이 이 수준을 상속합니다. 먼저 기본값을 변경하세요.",
+        "title": "기본 수준입니다"
+       },
+       "tierIsBuiltIn": {
+        "message": "어시스턴트, 오퍼레이터, 빌더는 편집할 수 있지만 이름 변경, 기준 수준 변경, 보관은 할 수 없습니다.",
+        "title": "내장 수준"
+       },
+       "tierLimitReached": {
+        "message": "에이전시당 사용자 지정 액세스 수준은 {max}개까지 만들 수 있습니다. 자리를 만들려면 하나를 보관하세요.",
+        "title": "수준을 더 추가할 수 없습니다"
+       },
+       "tierNameInvalid": {
+        "message": "줄바꿈 없이 1~40자로 수준 이름을 입력하세요.",
+        "title": "사용할 수 없는 이름입니다"
+       },
+       "tierNameTaken": {
+        "message": "다른 액세스 수준에서 이미 사용 중인 이름입니다. 다른 이름을 선택하세요.",
+        "title": "이미 사용 중인 이름입니다"
+       },
+       "tierUnknown": {
+        "message": "해당 액세스 수준이 더 이상 존재하지 않습니다. 새로고침한 후 다시 시도하세요.",
+        "title": "수준을 찾을 수 없습니다"
+       },
+       "unassignUnavailable": {
+        "message": "에이전시 기본값을 다시 따르도록 하는 기능이 아직 활성화되지 않아 어떤 역할로도 실행할 수 없으며, 아무것도 변경되지 않았습니다. 대신 액세스 수준을 직접 지정하세요.",
+        "title": "아직 사용할 수 없음"
+       },
+       "unavailable": {
+        "message": "아무것도 변경되지 않았습니다. 잠시 후 다시 시도하세요.",
+        "title": "'AI에게 문의' 액세스에 필요한 서비스가 중단되었습니다"
+       },
+       "uncertain": {
+        "message": "변경과 되돌리기가 모두 실패하여 현재 저장된 상태를 알 수 없습니다. 다시 시도하지 말고 새로고침하여 현재 상태를 확인한 뒤, 아래 참조 번호를 지원팀에 보내 주세요.",
+        "title": "권한 상태를 확인할 수 없습니다"
        }
       },
       "group": {
@@ -14399,7 +14614,22 @@
        "contactsCrm": "연락처 및 CRM",
        "conversationsMessaging": "대화 및 메시지",
        "projects": "프로젝트",
-       "salesPipeline": "영업 및 파이프라인"
+       "salesPipeline": "영업 및 파이프라인",
+       "admin": "관리 및 설정",
+       "automation": "자동화",
+       "knowledgeMemory": "지식 및 메모리",
+       "mixed": "혼합",
+       "ofOn": "/ {total} 켜짐",
+       "off": "끔",
+       "on": "켬",
+       "paymentsBilling": "결제 및 청구",
+       "phoneEmailCompliance": "전화, 이메일 및 규정 준수",
+       "reportingAds": "리포팅 및 광고",
+       "setWholeGroup": "그룹 전체 설정",
+       "setWholeGroupFor": "{group}의 모든 스킬 설정",
+       "sitesContent": "사이트 및 콘텐츠",
+       "studioSkills": "Skill Studio 스킬",
+       "toggleGroup": "{group} 켜기/끄기"
       },
       "level": {
        "edit": "편집",
@@ -14435,7 +14665,36 @@
       },
       "module": {
        "resetTo": "{base} 기본값으로 재설정",
-       "subSkillsOne": "하위 스킬 {count}개"
+       "subSkillsOne": "하위 스킬 {count}개",
+       "agencyOnly": "에이전시 전용",
+       "agencyUsersOnly": "에이전시 사용자 전용",
+       "agencyUsersOnlyReason": "최고 위험: 에이전시 사용자에게만 실행되므로 서브 계정 수준에서는 켤 수 없습니다.",
+       "blocked": "차단됨",
+       "blockedReason": "모든 액세스 수준에서 차단됩니다. 'AI에게 문의'는 이 항목을 호출하지 않으며, 어떤 수준에서도 허용할 수 없습니다.",
+       "cappedBySkill": "{module} 스킬의 수준으로 제한됩니다. 먼저 해당 수준을 높이세요.",
+       "changed": "사용자 지정됨",
+       "default": "상속됨",
+       "destructive": "· 데이터 삭제 작업 {count}개",
+       "destructiveSubSkills": "그중 {count}개는 데이터 삭제 작업",
+       "destructiveSubSkillsOne": "그중 {count}개는 데이터 삭제 작업",
+       "included": "포함됨",
+       "levelFor": "{module} 액세스 수준",
+       "levelForSubSkill": "{module} · {subSkill} 액세스 수준",
+       "levelNotApplicable": "이 하위 스킬은 {level} 수준으로만 실행됩니다. {level} 또는 끔을 선택하세요.",
+       "noSubSkills": "이 스킬에는 하위 스킬이 없습니다. 위의 스위치로 스킬 전체를 켜거나 끌 수 있습니다.",
+       "notIncluded": "{level} 수준에 포함되지 않음",
+       "operations": "작업 {count}개",
+       "operationsOne": "작업 {count}개",
+       "resetSubSkill": "스킬 수준으로 재설정",
+       "sensitive": "민감함",
+       "sensitiveCeiling": "이 수준에서는 최대 {level}(으)로 제한됨",
+       "subSkills": "하위 스킬 {count}개",
+       "subSkillsFor": "{module}의 하위 스킬",
+       "toggleNoApiOverview": "{module} 개요 포함",
+       "toggleNoApiSubSkill": "{module}에 {subSkill} 포함",
+       "toggleSkill": "{module} 켜기/끄기",
+       "toggleSubSkill": "{module} · {subSkill} 켜기/끄기",
+       "unavailable": "에이전시에서 고정됨"
       },
       "nav": {
        "accounts": "서브 계정",
@@ -14449,7 +14708,91 @@
        "failedMessage": "이 서브 계정의 사용자를 불러오는 중 문제가 발생했습니다.",
        "filterByLevel": "액세스 수준별 필터",
        "filterByRole": "역할별 필터",
-       "tableLabel": "이 서브 계정의 사용자와 각 사용자의 'AI에게 문의' 액세스"
+       "tableLabel": "이 서브 계정의 사용자와 각 사용자의 'AI에게 문의' 액세스",
+       "accessEditingUnavailable": "이 사용자의 신원이 확인될 때까지 액세스를 편집할 수 없습니다. 현재 액세스는 그대로 유지됩니다.",
+       "accountAdmin": "계정 관리자",
+       "accountUser": "계정 사용자",
+       "actsIn": "· 스킬 {count}개에서 작업 가능",
+       "agencyAdmin": "에이전시 관리자",
+       "agencyAdminAccessLocked": "에이전시 사용자와 관리자는 'AI에게 문의' 전체 액세스 권한을 가집니다. 이들의 액세스는 변경할 수 없습니다.",
+       "agencyAdminBulkExclusion": "에이전시 사용자와 관리자는 제외되며 전체 액세스를 유지합니다.",
+       "agencyUser": "에이전시 사용자",
+       "allRoles": "모든 역할",
+       "allUserTypes": "모든 사용자 유형",
+       "askAiAccess": "'AI에게 문의' 액세스",
+       "bulkConfirm": "적용",
+       "bulkConfirmClearMessage": "선택한 각 사용자가 서브 계정 기본값으로 돌아갑니다. 'AI에게 문의'에 즉시 반영됩니다.",
+       "bulkConfirmMessage": "선택한 모든 사용자의 새 액세스가 'AI에게 문의'에 즉시 적용됩니다.",
+       "bulkConfirmTitle": "사용자 {count}명을 {level}(으)로 설정하시겠습니까?",
+       "bulkConfirmTitleOne": "사용자 {count}명을 {level}(으)로 설정하시겠습니까?",
+       "bulkDefaultOption": "서브 계정 기본값 사용",
+       "bulkIncludesYou": "본인의 액세스도 포함됩니다.",
+       "bulkRoleDefaultHint": "각 사용자의 개별 수준을 제거하여 다시 역할에 따라 결정되도록 합니다.",
+       "bulkRoleDefaultOption": "역할 기본값으로 재설정",
+       "clearSelection": "선택 해제",
+       "columnAccess": "'AI에게 문의' 액세스",
+       "columnPerson": "사용자",
+       "columnRole": "역할",
+       "crmPermissionAssigned": "일부 작업은 할당된 레코드로 제한됩니다. 레코드 액세스는 작업 실행 시 확인됩니다.",
+       "crmPermissionNote": "집계에는 'AI에게 문의' 설정과 사용자의 CRM 모듈 권한에서 모두 허용된 작업만 포함됩니다. 레코드 액세스 및 기타 요청 요건은 작업 실행 시 확인됩니다.",
+       "crmPermissionPartial": "스킬 {count}개의 권한 확인이 완료되지 않았습니다. 확인되지 않은 작업은 이 집계에 포함되지 않습니다.",
+       "crmPermissionPartialOne": "스킬 {count}개의 권한 확인이 완료되지 않았습니다. 확인되지 않은 작업은 이 집계에 포함되지 않습니다.",
+       "crmPermissionSummary": "CRM 권한 확인",
+       "crmPermissionUnknown": "CRM 권한을 확인할 수 없습니다. 위에 설정된 'AI에게 문의' 액세스가 CRM 작업 허용을 보장하지는 않습니다.",
+       "default": "기본",
+       "defaultHint": "이 서브 계정의 기본 수준을 따르며, 기본값이 바뀌면 함께 바뀝니다. 이 사용자에게만 수준을 지정하려면 아래에서 수준을 선택하세요.",
+       "defaultOption": "기본 · {level}",
+       "defaultShort": "서브 계정 기본값",
+       "emptyTitle": "필터와 일치하는 사용자가 없습니다",
+       "explanationFailed": "{subAccount}에서 이 액세스 수준이 허용하는 범위를 파악하지 못해, 에이전시 전체 수치로 대신 표시하지 않고 아래 비교를 생략했습니다.",
+       "explanationLoading": "{subAccount}에서 이 액세스 수준이 허용하는 범위를 확인하는 중…",
+       "failedTitle": "사용자를 불러올 수 없습니다",
+       "filterByUserType": "사용자 유형별 필터",
+       "hasHiddenModules": "스킬을 직접 끈 사용자",
+       "hasHiddenModulesHint": "자신의 'AI에게 문의' 설정에서 스킬을 하나 이상 직접 끈 사용자입니다. 다시 켤 수 있으며, 이 설정은 숨기기만 할 뿐 권한을 부여하지는 않습니다.",
+       "hiddenModules": "{name}님이 자신의 'AI에게 문의'에서 스킬 {count}개를 숨겼습니다. 개인 설정이므로 범위를 좁힐 수만 있고 넓힐 수는 없습니다.",
+       "hiddenModulesOne": "{name}님이 자신의 'AI에게 문의'에서 스킬 {count}개를 숨겼습니다. 개인 설정이므로 범위를 좁힐 수만 있고 넓힐 수는 없습니다.",
+       "hidesCount": "· 스킬 {count}개 숨김",
+       "historyForPerson": "이 사용자의 변경 기록",
+       "levelFor": "{name}님의 'AI에게 문의' 액세스 수준",
+       "levelRetired": "보관된 수준입니다. 이 사용자는 계속 사용하지만 다른 사용자에게 새로 지정할 수는 없습니다.",
+       "loading": "사용자 불러오는 중…",
+       "manageAccess": "액세스 변경",
+       "minExplanation": "두 설정 중 낮은 쪽이 적용됩니다. {subAccount}은(는) {subAccountTier}을(를) 허용하고({subAccountEdit}에서 작업 가능), {name}님은 {personTier} 수준입니다({personEdit}에서 작업 가능). 'AI에게 문의'는 스킬별로 둘 중 더 좁은 쪽을 따릅니다.",
+       "noAccess": "작업 제한됨",
+       "noAccessHint": "'AI에게 문의'를 사용할 수 있습니다. 작업 권한을 변경하려면 수준을 선택하세요.",
+       "noneMessage": "이 서브 계정에 사용자가 추가되면 해당 사용자가 받는 'AI에게 문의' 액세스와 함께 여기에 표시됩니다.",
+       "noneTitle": "이 서브 계정에 아직 사용자가 없습니다",
+       "openPerson": "{name}님의 'AI에게 문의' 허용 범위",
+       "overrideNotice": "이 사용자에게 개별 설정되어 서브 계정 기본값인 {defaultLevel}을(를) 대신합니다.",
+       "role": "역할",
+       "roleAdmin": "관리자",
+       "roleDefault": "역할 기본값",
+       "roleDefaultHint": "개별 수준을 제거하여 다시 역할에 따라 결정되도록 합니다.",
+       "roleDefaultOption": "역할 기본값 · {level}",
+       "roleDefaultShort": "역할 기본값",
+       "roleUser": "사용자",
+       "scopeAll": "대상 사용자 변경…",
+       "searchPlaceholder": "사용자 검색",
+       "selectAllLoaded": "불러온 사용자 모두 선택",
+       "selectRow": "{name} 선택",
+       "selectedCount": "{count}명 선택됨",
+       "selectedCountOne": "{count}명 선택됨",
+       "selfChangeCancel": "내 액세스 유지",
+       "selfChangeConfirm": "내 액세스 변경",
+       "selfChangeCustom": "{subAccount}에서 내 'AI에게 문의' 허용 범위가 선택한 사용자 지정 수준으로 변경됩니다. 관리자 권한은 그대로 유지됩니다.",
+       "selfChangeLower": "{subAccount}에서 내 'AI에게 문의' 허용 범위가 좁아집니다. 관리자 권한은 그대로 유지되며, 언제든지 다시 되돌릴 수 있습니다.",
+       "selfChangeOff": "{subAccount}에서 내 'AI에게 문의'가 꺼집니다. 관리자 권한은 그대로이며, 여기에서 'AI에게 문의'가 대신 해 주는 작업만 바뀝니다.",
+       "selfChangeTitle": "내 'AI에게 문의' 액세스를 변경하시겠습니까?",
+       "setForThisPerson": "기본값에서 변경됨",
+       "setForThisPersonHint": "이 서브 계정의 기본값을 따르지 않고 개별 수준이 지정된 사용자입니다.",
+       "showingFiltered": "일치 항목 {shown}개 표시 중 · 전체 사용자 {total}명",
+       "showingFilteredOne": "일치 항목 {shown}개 표시 중 · 전체 사용자 {total}명",
+       "thisSubAccount": "이 서브 계정",
+       "turnedOff": "'AI에게 문의'를 사용할 수 있습니다. 작업 권한을 변경하려면 수준을 선택하세요.",
+       "unrestricted": "전체 액세스",
+       "whatAskAiCanDo": "{name}님에게 설정된 'AI에게 문의' 액세스",
+       "you": "나"
       },
       "railFooter": "'AI에게 문의'는 사용하는 사람이 할 수 있는 범위를 넘어설 수 없습니다. 모든 액세스 수준은 해당 사용자의 권한으로 제한됩니다.",
       "roles": {
@@ -14507,7 +14850,26 @@
        "held": "이 변경으로 다른 항목이 켜지지 않도록 하위 스킬 {count}개가 추가로 꺼진 상태로 유지됩니다: {subSkills}.",
        "heldOne": "이 변경으로 다른 항목이 켜지지 않도록 하위 스킬 {count}개가 추가로 꺼진 상태로 유지됩니다: {subSkills}.",
        "namesMore": "{names} 외 {count}개",
-       "stoppedOne": "상위 스킬이 필요한 수준보다 낮아져 하위 스킬 {count}개가 추가로 작동하지 않습니다: {subSkills}."
+       "stoppedOne": "상위 스킬이 필요한 수준보다 낮아져 하위 스킬 {count}개가 추가로 작동하지 않습니다: {subSkills}.",
+       "auditNote": "변경 기록에 내 이름, 시간, 변경 전후 내용이 담긴 항목이 하나 기록됩니다.",
+       "blastRadius": "서브 계정 {count}개가 {tier}을(를) 사용 중이며 즉시 변경됩니다. 누군가 다음 메시지를 보내는 시점부터 'AI에게 문의'에 이 기능이 추가되거나 빠집니다.",
+       "blastRadiusAtLeast": "최소 {count}개 서브 계정에서 {tier}을(를) 사용 중입니다. 서브 계정 목록을 읽을 수 없어 실제 수는 더 많을 수 있으며, 모두 즉시 변경됩니다.",
+       "blastRadiusAtLeastOne": "최소 {count}개 서브 계정에서 {tier}을(를) 사용 중입니다. 서브 계정 목록을 읽을 수 없어 실제 수는 더 많을 수 있으며, 즉시 변경됩니다.",
+       "blastRadiusOne": "서브 계정 {count}개가 {tier}을(를) 사용 중이며 즉시 변경됩니다. 누군가 다음 메시지를 보내는 시점부터 'AI에게 문의'에 이 기능이 추가되거나 빠집니다.",
+       "blastRadiusWho": "{tier} 사용 대상: {who}. 변경사항은 즉시 적용되며, 누군가 다음 메시지를 보내는 시점부터 'AI에게 문의'에 이 기능이 추가되거나 빠집니다.",
+       "blastRadiusZero": "아직 {tier}을(를) 사용하는 곳이 없어 지금은 영향받는 대상이 없습니다. 나중에 이 수준을 지정하는 대상부터 적용됩니다.",
+       "builtInNote": "{tier}은(는) 내장 수준입니다. 편집하면 카드의 설명을 포함해 에이전시 전체에서 이 이름이 의미하는 내용이 바뀝니다.",
+       "confirm": "서브 계정 {count}개에 저장",
+       "confirmOne": "서브 계정 {count}개에 저장",
+       "confirmZero": "변경사항 저장",
+       "heldNoGrant": "하위 스킬 {count}개는 개별적으로 꺼짐으로 고정되어 있어 상위 스킬의 수준과 관계없이 꺼진 상태로 유지됩니다: {subSkills}.",
+       "heldNoGrantOne": "하위 스킬 {count}개는 개별적으로 꺼짐으로 고정되어 있어 상위 스킬의 수준과 관계없이 꺼진 상태로 유지됩니다: {subSkills}.",
+       "released": "하위 스킬 {count}개의 개별 고정이 해제되어 다시 상위 스킬을 따릅니다. 상위 스킬의 새 수준에서는 꺼진 상태입니다: {subSkills}.",
+       "releasedOne": "하위 스킬 {count}개의 개별 고정이 해제되어 다시 상위 스킬을 따릅니다. 상위 스킬의 새 수준에서는 꺼진 상태입니다: {subSkills}.",
+       "started": "상위 스킬이 필요한 수준에 도달하여 하위 스킬 {count}개가 추가로 작동합니다: {subSkills}.",
+       "startedOne": "상위 스킬이 필요한 수준에 도달하여 하위 스킬 {count}개가 추가로 작동합니다: {subSkills}.",
+       "stopped": "상위 스킬이 필요한 수준보다 낮아져 하위 스킬 {count}개가 추가로 작동하지 않습니다: {subSkills}.",
+       "title": "{tier} 변경사항을 저장하시겠습니까?"
       },
       "stats": {
        "act": "스킬 {count}개 편집 가능",
@@ -14521,7 +14883,22 @@
        "viewOne": "스킬 {count}개 보기 가능"
       },
       "subAccountDetail": {
-       "tierGroup": "이 서브 계정의 액세스 수준"
+       "tierGroup": "이 서브 계정의 액세스 수준",
+       "customBasedOn": "{base} 기반 · 서브 계정 {count}개에서 공유",
+       "customBasedOnOne": "{base} 기반 · 서브 계정 {count}개에서 공유",
+       "definedElsewhere": "액세스 수준은 액세스 수준 화면에서 한 번만 정의합니다. 여기에서는 이 서브 계정에 적용할 수준만 선택합니다.",
+       "editCustom": "액세스 수준 화면에서 편집",
+       "lede": "이 서브 계정의 각 사용자에게 'AI에게 문의' 코파일럿이 할 수 있는 작업을 설정하세요.",
+       "selectedHiddenByFilter": "{tier}은(는) 선택되어 있지만 필터로 인해 숨겨져 있습니다. 선택 상태는 유지되며, 저장하면 그대로 적용됩니다.",
+       "tab": {
+        "access": "액세스 수준",
+        "history": "기록",
+        "users": "사용자"
+       },
+       "unsavedDiscard": "버리기",
+       "unsavedKeep": "계속 편집",
+       "unsavedMessage": "이 서브 계정은 아직 이전 액세스 수준을 사용하고 있습니다. 변경사항이 적용되지 않았습니다.",
+       "unsavedTitle": "저장하지 않고 나가시겠습니까?"
       },
       "subAccounts": {
        "bulkConfirmMessage": "선택한 서브 계정 {count}개가 {tier}(으)로 전환됩니다. 코파일럿에 새 액세스가 즉시 적용됩니다. 이 수준에서 허용되는 항목을 검토하세요:",
@@ -14535,7 +14912,103 @@
        "partialScanAction": "계속 검색",
        "scopeMenuFootnote": "저장되기 전에 변경사항을 검토하게 됩니다.",
        "selectedCountOfTotalOne": "서브 계정 {total}개 중 {count}개 선택됨",
-       "sourceInherited": "상속됨"
+       "sourceInherited": "상속됨",
+       "allLevels": "모든 액세스 수준",
+       "apply": "적용",
+       "assignToSelected": "선택한 {count}개에 지정",
+       "bulkConfirmAction": "서브 계정 {count}개에 지정",
+       "bulkConfirmActionOne": "서브 계정 {count}개에 지정",
+       "bulkConfirmAffects": "서브 계정 {count}개에 걸쳐 {users}의 'AI에게 문의'가 변경됩니다: {names}.",
+       "bulkConfirmAffectsOne": "{names}에서 {users}의 'AI에게 문의'가 변경됩니다.",
+       "bulkConfirmAffectsPartial": "서브 계정 {count}개에 걸쳐 최소 {users}의 'AI에게 문의'가 변경됩니다: {names}. 일부 서브 계정의 사용자 수를 읽을 수 없습니다.",
+       "bulkConfirmAffectsPartialOne": "{names}의 'AI에게 문의'가 변경됩니다. 이 서브 계정의 사용자 수를 읽을 수 없습니다.",
+       "bulkConfirmAndMore": "외 {count}개",
+       "bulkConfirmAndMoreOne": "외 {count}개",
+       "bulkConfirmDowngradeTitle": "서브 계정 {count}개를 {tier}(으)로 낮추시겠습니까?",
+       "bulkConfirmDowngradeTitleOne": "서브 계정 1개를 {tier}(으)로 낮추시겠습니까?",
+       "bulkConfirmDowngradeWarning": "그중 {count}개는 더 제한된 수준으로 바뀝니다. 해당 사용자에게 'AI에게 문의'가 할 수 있는 작업이 지금보다 줄어듭니다.",
+       "bulkConfirmDowngradeWarningOne": "그중 {count}개는 더 좁은 수준으로 바뀝니다. 해당 사용자에게 'AI에게 문의'가 할 수 있는 작업이 지금보다 줄어듭니다.",
+       "bulkConfirmFrom": "현재 수준: {levels}.",
+       "bulkConfirmHint": "코파일럿 액세스는 항상 각 사용자의 권한으로 제한됩니다.",
+       "bulkConfirmMessageOne": "선택한 서브 계정 {count}개가 {tier}(으)로 전환됩니다. 코파일럿에 새 액세스가 즉시 적용됩니다. 이 수준에서 허용되는 항목을 검토하세요:",
+       "bulkConfirmTitle": "서브 계정 {count}개에 {tier}을(를) 지정하시겠습니까?",
+       "bulkConfirmTitleOne": "서브 계정 {count}개에 {tier}을(를) 지정하시겠습니까?",
+       "bulkDefaultMessage": "선택한 서브 계정: {count}개. 개별 설정이 없는 사용자에게 적용되는 기본 액세스 수준을 저장합니다. 기존 개별 설정은 변경되지 않습니다.",
+       "bulkPick": "액세스 수준 설정…",
+       "changeSelectedDefaults": "기본 액세스 변경",
+       "clearSelection": "선택 해제",
+       "columnAccess": "액세스 수준",
+       "columnName": "서브 계정",
+       "columnSource": "설정 방식",
+       "columnUserAccessHint": "개별 수준이 없는 사용자는 이 설정을 따릅니다. 변경하면 해당 사용자의 액세스도 바뀝니다.",
+       "columnUsers": "사용자",
+       "defaultLevelRetired": "보관된 수준입니다. 이 서브 계정은 계속 사용하지만 다른 서브 계정에는 선택할 수 없습니다.",
+       "emptyTitle": "필터와 일치하는 서브 계정이 없습니다",
+       "failedMessage": "서브 계정을 불러오는 중 문제가 발생했습니다.",
+       "failedTitle": "서브 계정을 불러올 수 없습니다",
+       "filterByLevel": "액세스 수준별 필터",
+       "inheritConfirm": "기본값 적용",
+       "inheritMessage": "{name}의 개별 액세스 수준이 제거되고 이제부터 에이전시 기본값을 따릅니다. 기본값이 바뀌면 그 변경도 그대로 따릅니다.",
+       "inheritMessageNamed": "{name}의 개별 액세스 수준이 제거되고 이제부터 에이전시 기본값(현재 {tier})을 따릅니다. 기본값이 바뀌면 그 변경도 그대로 따릅니다.",
+       "inheritOption": "에이전시 기본값 사용",
+       "inheritOptionHint": "이 서브 계정의 개별 액세스 수준을 제거합니다",
+       "inheritTitle": "{name}에 에이전시 기본값을 적용하시겠습니까?",
+       "jobConfirm": "변경 시작",
+       "jobConfirmApprox": "작업이 실행될 때 서브 계정을 다시 조회하므로 최종 수는 표시된 수와 약간 다를 수 있습니다.",
+       "jobConfirmMessage": "이 작업은 백그라운드에서 실행되며 이 화면을 닫아도 계속 진행됩니다. 각 사용자의 액세스는 처리되는 순서대로 변경되며, 모든 변경사항이 기록됩니다.",
+       "jobConfirmTitle": "서브 계정 {count}개의 모든 사용자를 {level}(으)로 설정하시겠습니까?",
+       "jobConfirmTitleNamed": "{name}의 대상 사용자를 {level}(으)로 설정하시겠습니까?",
+       "jobConfirmTitleNamedCount": "{name}의 대상 사용자(전체 사용자 {count}명)를 {level}(으)로 설정하시겠습니까?",
+       "jobDismiss": "닫기",
+       "jobDoneTitle": "사용자 액세스 업데이트됨",
+       "jobFailedTitle": "사용자 액세스를 변경할 수 없습니다",
+       "jobLastProgressMinutes": "마지막 진행: {minutes}분 전",
+       "jobLastProgressNow": "마지막 진행: 방금 전",
+       "jobLocked": "이 작업이 끝날 때까지 다른 액세스 변경은 일시 중지됩니다.",
+       "jobProgress": "서브 계정 {total}개 중 {done}개 · 사용자 {users}명 업데이트됨 · {failed}개 실패",
+       "jobProgressPeople": "사용자 {total}명 중 {done}명 확인 · {users}명 업데이트됨 · {unchanged}명 이미 이 수준 · {failed}명 실패",
+       "jobProgressPeopleStopped": "사용자 {total}명 중 {done}명에서 중지됨 · 최소 {users}명 업데이트됨 · {failed}명 실패",
+       "jobProgressStopped": "서브 계정 {total}개 중 {done}개에서 중지됨 · 최소 사용자 {users}명 업데이트됨 · {failed}개 실패",
+       "jobProgressWithUnchanged": "서브 계정 {total}개 중 {done}개 · 사용자 {users}명 업데이트됨 · {unchanged}명 이미 이 수준 · {failed}개 실패",
+       "jobRunningTitle": "사용자 액세스 변경 중…",
+       "jobStalledDetail": "{time}부터 서브 계정 {total}개 중 {done}개에서 멈춰 있습니다. 서비스가 복구되면 여기서부터 이어서 진행되며, 직접 중지할 수도 있습니다.",
+       "jobStalledTitle": "일괄 변경이 진행되지 않고 있습니다",
+       "jobStop": "중지",
+       "jobStopConfirm": "변경 중지",
+       "jobStopConfirmMessage": "이미 업데이트된 사용자는 새 수준을 유지하며, 중지해도 되돌려지지 않습니다. 나머지 사용자는 현재 액세스를 그대로 유지합니다.",
+       "jobStopConfirmTitle": "이 일괄 변경을 중지하시겠습니까?",
+       "jobStopKeepRunning": "계속 실행",
+       "jobStoppedWatching": "아직 실행 중입니다. 이 화면에서 상태 확인을 멈췄으니 진행 상황을 보려면 화면을 다시 여세요.",
+       "jobUnreachable": "서버에 연결할 수 없어 이 변경의 상태를 확인할 수 없습니다. 아직 실행 중일 수 있으며, 연결이 복구되면 이 내용이 업데이트됩니다.",
+       "lede": "각 서브 계정에는 기본 액세스 수준이 있습니다. 개별 수준을 지정하지 않은 사용자는 이 기본값을 따릅니다. 액세스는 항상 각 사용자의 권한으로 제한됩니다.",
+       "levelFor": "{name}의 'AI에게 문의' 액세스 수준",
+       "loading": "서브 계정 불러오는 중…",
+       "manageAccess": "사용자 액세스 변경",
+       "noneMessage": "첫 서브 계정을 만든 뒤 여기로 돌아와 해당 서브 계정에서 'AI에게 문의'가 할 수 있는 작업을 설정하세요.",
+       "noneTitle": "아직 서브 계정이 없습니다",
+       "openDetail": "{name} 열기",
+       "partialScanMessage": "서버가 모든 서브 계정을 읽지 않고 여기서 멈췄으므로 아직 최종 결과가 아닙니다. 더 찾아보려면 계속 검색하세요.",
+       "partialScanTitle": "서브 계정 {total}개 중 처음 {scanned}개에서 일치 항목 없음",
+       "partialScanTitleOne": "서브 계정 {total}개 중 처음 {scanned}개에서 일치 항목 없음",
+       "rowLevelLabel": "{name}의 기본 'AI에게 문의' 액세스",
+       "rowLevelPlaceholder": "변경…",
+       "scopeAll": "전체 {total}개의 모든 사용자 변경…",
+       "scopeAllMatching": "일치하는 {total}개의 모든 사용자 변경…",
+       "scopeAllPending": "모든 사용자 변경…",
+       "scopeMenuTitle": "이 서브 계정들에 속한 모든 사용자의 액세스 수준 설정",
+       "searchPlaceholder": "서브 계정 검색",
+       "searchScopeNote": "주소를 포함한 서브 계정 정보와 각 서브 계정 사용자의 이름 또는 이메일 주소로 검색합니다. 에이전시 관리자는 'AI에게 문의' 액세스에 제한이 없으므로 검색 대상에서 제외됩니다.",
+       "selectAllLoaded": "불러온 서브 계정 모두 선택",
+       "selectRow": "{name} 선택",
+       "selectedCount": "{count}개 서브 계정 선택됨",
+       "selectedCountOfTotal": "서브 계정 {total}개 중 {count}개 선택됨",
+       "selectedCountOne": "{count}개 서브 계정 선택됨",
+       "slowNote": "서브 계정을 계속 읽는 중입니다. 규모가 큰 에이전시는 잠시 시간이 걸립니다…",
+       "sourceAssigned": "지정됨",
+       "tableLabel": "서브 계정 및 각 서브 계정의 'AI에게 문의' 액세스 수준",
+       "unknownName": "서브 계정",
+       "usersCount": "사용자 {count}명",
+       "usersCountOne": "사용자 {count}명"
       },
       "tier": {
        "archive": "보관",
@@ -14634,13 +15107,161 @@
        "personLevelCappedTitle": "{name} → {level}({requested} 아님)",
        "tierResetTitle": "{tier} 기본값으로 재설정됨",
        "tierSaveFailedTitle": "{tier}을(를) 저장할 수 없습니다",
-       "tierSavedMessageZero": "아직 이 수준을 사용하는 곳이 없어 액세스가 변경된 사용자가 없습니다."
+       "tierSavedMessageZero": "아직 이 수준을 사용하는 곳이 없어 액세스가 변경된 사용자가 없습니다.",
+       "assignFailedMessage": "액세스 수준이 이전 상태로 되돌려졌습니다.",
+       "assignFailedTitle": "{name}을(를) 변경할 수 없습니다",
+       "assignedMessage": "변경 기록에 기록되었습니다.",
+       "bulkAndNMore": "외 {count}개",
+       "bulkAndOneMore": "외 1개",
+       "bulkAppliedMessage": "서브 계정마다 변경 기록 항목이 하나씩 기록되었습니다.",
+       "bulkAppliedTitle": "서브 계정 {count}개가 {tier}(으)로 설정됨",
+       "bulkAppliedTitleOne": "서브 계정 1개가 {tier}(으)로 설정됨",
+       "bulkCancelledSentence": "서브 계정 {count}개가 응답하기 전에 업데이트가 중지되어 이 {count}개의 결과를 알 수 없습니다. 각 서브 계정이 현재 {tier}을(를) 사용 중일 수도, 아닐 수도 있습니다. {count}개 모두 선택된 상태로 유지되며, 다시 적용해도 안전합니다: {names}.",
+       "bulkCancelledSentenceOne": "{names}이(가) 응답하기 전에 업데이트가 중지되어 결과를 알 수 없습니다. {names}은(는) 현재 {tier}을(를) 사용 중일 수도, 아닐 수도 있으며 선택된 상태로 유지됩니다. 다시 적용해도 안전합니다.",
+       "bulkCancelledTitle": "서브 계정 {count}개가 응답하기 전에 중지됨",
+       "bulkCancelledTitleOne": "서브 계정 1개가 응답하기 전에 중지됨",
+       "bulkCongestedSentence": "서버가 너무 바빠 서브 계정 {congested}개가 업데이트되지 않았습니다. 이 {congested}개는 이전 수준을 그대로 유지하며 선택된 상태로 남아 있습니다. 잠시 후 다시 시도하세요: {names}.",
+       "bulkCongestedSentenceOne": "서버가 너무 바빠 {names}이(가) 업데이트되지 않았습니다. 이전 수준을 그대로 유지하며 선택된 상태로 남아 있습니다. 잠시 후 다시 시도하세요.",
+       "bulkCongestedTitle": "서버에서 요청 속도를 낮추도록 요청했습니다",
+       "bulkFailedMessage": "서브 계정 {count}개 중 업데이트된 곳이 없습니다. {count}개 모두 이전 수준을 그대로 유지하며 선택된 상태로 남아 있으므로 다시 시도할 수 있습니다: {names}.",
+       "bulkFailedMessageOne": "{names}이(가) 업데이트되지 않았습니다. 이전 수준을 그대로 유지하며 선택된 상태로 남아 있으므로 다시 시도할 수 있습니다.",
+       "bulkFailedTitle": "해당 액세스 수준을 저장할 수 없습니다",
+       "bulkMixedTitle": "서브 계정 {total}개 중 {onTier}개가 {tier} 사용 중",
+       "bulkMixedTitleOne": "서브 계정 {total}개 중 1개가 {tier} 사용 중",
+       "bulkNoChangeMessage": "선택한 서브 계정 {count}개 모두 이미 {tier}을(를) 사용 중이었습니다.",
+       "bulkNoChangeTitle": "변경할 필요 없음",
+       "bulkNoChangeTitleOne": "변경할 필요 없음",
+       "bulkNotSentNote": "또한 서브 계정 {notSent}개는 요청이 전송되지 않아 변경되지 않았으며, 이 {notSent}개는 선택된 상태로 남아 있습니다: {names}.",
+       "bulkNotSentNoteOne": "{names}에 대한 요청이 전송되지 않아 해당 서브 계정은 변경되지 않았으며 선택된 상태로 남아 있습니다.",
+       "bulkNotUpdatedNoteOne": "이와 별도로 {names}이(가) 업데이트되지 않았습니다. 이전 수준을 그대로 유지하며 선택된 상태로 남아 있으므로 다시 시도할 수 있습니다.",
+       "bulkPeopleDoneTitle": "사용자 {count}명이 {level}(으)로 설정됨",
+       "bulkPeopleDoneTitleOne": "사용자 {count}명이 {level}(으)로 설정됨",
+       "bulkPeopleFailedMessage": "아무것도 변경되지 않았습니다. 잠시 후 다시 시도하세요.",
+       "bulkPeopleFailedTitle": "액세스를 변경할 수 없습니다",
+       "bulkPeoplePartialMessage": "{count}명은 변경할 수 없어 선택된 상태로 남아 있으므로 다시 시도할 수 있습니다.",
+       "bulkPeoplePartialMessageOne": "{count}명은 변경할 수 없어 선택된 상태로 남아 있으므로 다시 시도할 수 있습니다.",
+       "bulkPeoplePartialTitle": "사용자 {count}명이 {level}(으)로 설정됨",
+       "bulkPeoplePartialTitleOne": "사용자 {count}명이 {level}(으)로 설정됨",
+       "bulkRefusedSentence": "요청이 거부되어 서브 계정 {refused}개가 업데이트되지 않았습니다. 이 {refused}개는 이전 수준을 그대로 유지하며 선택된 상태로 남아 있습니다: {names}.",
+       "bulkRefusedSentenceOne": "요청이 거부되어 {names}이(가) 업데이트되지 않았습니다. 이전 수준을 그대로 유지하며 선택된 상태로 남아 있습니다.",
+       "bulkRefusedTitle": "해당 액세스 수준이 거부되었습니다",
+       "bulkStaleNote": "목록을 다시 읽을 수 없어 아래에 표시된 수준이 최신이 아닐 수 있습니다. 페이지를 새로고침하세요.",
+       "bulkUncertainSentence": "서브 계정 {count}개가 응답하기 전에 연결이 끊겨 이 {count}개의 결과를 알 수 없습니다. 각 서브 계정이 현재 {tier}을(를) 사용 중일 수도, 아닐 수도 있습니다. {count}개 모두 선택된 상태로 유지되며, 다시 적용해도 안전합니다: {names}.",
+       "bulkUncertainSentenceOne": "{names}이(가) 응답하기 전에 연결이 끊겨 결과를 알 수 없습니다. {names}은(는) 현재 {tier}을(를) 사용 중일 수도, 아닐 수도 있으며 선택된 상태로 유지됩니다. 다시 적용해도 안전합니다.",
+       "bulkUncertainTitle": "서브 계정 {count}개를 확인할 수 없습니다",
+       "bulkUnchangedSentence": "서브 계정 {unchanged}개는 이미 {tier}을(를) 사용 중이었습니다.",
+       "bulkUnchangedSentenceOne": "{names}은(는) 이미 {tier}을(를) 사용 중이었습니다.",
+       "bulkUpdatedSentence": "서브 계정 {updated}개가 새로 {tier}을(를) 사용합니다.",
+       "bulkUpdatedSentenceOne": "{names}이(가) 새로 {tier}을(를) 사용합니다.",
+       "defaultAssignedTitle": "{name} 기본값 → {tier}",
+       "groupSetSensitiveKept": "민감한 스킬 {count}개는 상한 수준으로 유지되었습니다. 이 스킬은 하나씩 올리세요.",
+       "groupSetSensitiveKeptOne": "민감한 스킬 {count}개는 상한 수준으로 유지되었습니다. 이 스킬은 개별적으로 올리세요.",
+       "inheritFailedTitle": "{name}을(를) 되돌릴 수 없습니다",
+       "inheritedTitle": "{name}이(가) 에이전시 기본값을 따릅니다",
+       "jobCancelledMessage": "서브 계정 {subAccounts}개에서 최소 {users}명이 이미 업데이트되었으며, 해당 변경사항은 유지됩니다.",
+       "jobCancelledMessageNone": "업데이트가 기록되기 전에 중지되었습니다. 이미 진행 중이던 변경사항은 계속 적용될 수 있습니다.",
+       "jobCancelledMessageOne": "서브 계정 {subAccounts}개에서 최소 {users}명이 이미 업데이트되었으며, 해당 변경사항은 유지됩니다.",
+       "jobCancelledTitle": "일괄 변경 중지됨",
+       "jobDoneAlreadyMessage": "서브 계정 {subAccounts}개에서 사용자 {unchanged}명을 확인했습니다. 변경할 항목이 없었습니다.",
+       "jobDoneAlreadyMessageOne": "서브 계정 {subAccounts}개에서 사용자 {unchanged}명을 확인했습니다. 변경할 항목이 없었습니다.",
+       "jobDoneAlreadyTitle": "모든 사용자가 이미 이 수준을 사용 중입니다",
+       "jobDoneMessage": "서브 계정 {subAccounts}개 전체에서 변경이 완료되었습니다.",
+       "jobDoneMessageOne": "서브 계정 {subAccounts}개에서 변경이 완료되었습니다.",
+       "jobDoneMessageUnchanged": "서브 계정 {subAccounts}개에서 완료되었습니다. {unchanged}명은 이미 이 수준이었습니다.",
+       "jobDoneMessageUnchangedOne": "서브 계정 {subAccounts}개에서 완료되었습니다. {unchanged}명은 이미 이 수준이었습니다.",
+       "jobDoneTitleOne": "{users}명 업데이트됨",
+       "jobFailedMessage": "중단되기 전에 {users}명이 업데이트되었으며, 이 변경사항은 유지됩니다. 그 밖에는 아무것도 변경되지 않았습니다.",
+       "jobFailedTitle": "일괄 변경을 완료하지 못했습니다",
+       "jobPartialMessage": "변경이 완료되었지만 {failed}명은 기존 액세스가 그대로 유지되었습니다. 이유를 확인하려면 일괄 변경을 여세요.",
+       "jobPartialMessageOne": "변경이 완료되었지만 {failed}명은 기존 액세스가 그대로 유지되었습니다. 이유를 확인하려면 일괄 변경을 여세요.",
+       "jobPartialTitle": "{users}명 업데이트됨 · {failed}명 변경 안 됨",
+       "jobPartialTitleOne": "{users}명 업데이트됨 · {failed}명 변경 안 됨",
+       "personLevelCappedMessage": "{requested}은(는) 여기서 이 사용자에게 부여할 수 있는 범위를 넘으므로 대신 {level}(으)로 저장되었습니다. 이 사용자의 변경 기록에 남았습니다.",
+       "personLevelClearedMessage": "개별 지정 수준이 제거되어 이제 {level}이(가) 적용됩니다. 이 사용자의 변경 기록에 남았습니다.",
+       "personLevelClearedPlainMessage": "개별 지정 수준이 제거되었습니다. 이 사용자의 변경 기록에 남았습니다.",
+       "personLevelClearedTitle": "{name}: 역할 기본값 적용",
+       "personLevelDefaultMessage": "개별 지정 수준이 제거되어 이제 {level}이(가) 적용됩니다. 이 사용자의 변경 기록에 남았습니다.",
+       "personLevelDefaultPlainMessage": "개별 지정 수준이 제거되었습니다. 이 사용자의 변경 기록에 남았습니다.",
+       "personLevelDefaultTitle": "{name}: 서브 계정 기본값 적용",
+       "personLevelFailedMessage": "액세스 수준이 이전 상태로 되돌아갔습니다.",
+       "personLevelFailedTitle": "{name}을(를) 변경할 수 없습니다",
+       "personLevelMessage": "이 사용자의 변경 기록에 남았습니다.",
+       "reviewFailedMessage": "아무것도 변경되지 않았습니다. 새 스킬은 여전히 꺼진 상태로 보류되어 있습니다. 다시 시도하세요.",
+       "reviewFailedTitle": "{tier}을(를) 검토 완료로 표시하지 못했습니다",
+       "reviewedMessage": "이제 새 스킬은 꺼진 상태로 보류되지 않고 이 수준을 따릅니다.",
+       "reviewedTitle": "{tier} 검토 완료로 표시됨",
+       "sensitiveAllowedMessage": "민감한 변경으로 기록되었습니다.",
+       "sensitiveCeilingMessage": "{base}은(는) 민감한 스킬을 최대 {level}까지만 허용하므로 여기서 {requested}을(를) 부여할 수 없으며, 아무것도 변경되지 않았습니다. 더 높은 권한이 필요하면 더 높은 시작 수준을 기반으로 이 수준을 만드세요.",
+       "sensitiveCeilingTitle": "{module}은(는) {level}보다 높게 설정할 수 없습니다",
+       "staleAfterWriteMessage": "변경사항은 저장되었지만 목록을 다시 읽지 못했습니다. 현재 수준을 보려면 페이지를 새로고침하세요.",
+       "tierArchivedMessage": "목록과 선택 메뉴에서 제외되었습니다. 보관됨 필터에서 언제든지 복원할 수 있습니다.",
+       "tierArchivedTitle": "{tier} 보관됨",
+       "tierRebasedMessage": "이제 사용자 지정 수준은 {base}에서 시작합니다. 변경하지 않은 스킬은 이 시작 수준을 따릅니다.",
+       "tierRebasedTitle": "사용자 지정 수준의 시작 기준 변경됨",
+       "tierRenamedMessage": "이 수준을 사용하는 모든 대상의 권한은 그대로 유지됩니다.",
+       "tierRenamedTitle": "이름이 {tier}(으)로 변경됨",
+       "tierResetMessage": "모든 스킬이 다시 {base}을(를) 따릅니다.",
+       "tierRestoredMessage": "권한이 그대로 유지된 채 목록에 다시 표시되며, 다시 할당할 수 있습니다.",
+       "tierRestoredTitle": "{tier} 복원됨",
+       "tierSaveFailedMessage": "아무것도 변경되지 않았습니다. 편집한 내용은 그대로 남아 있으니 다시 시도하세요.",
+       "tierSavedMessage": "이제 서브 계정 {count}개가 새 설정을 사용합니다.",
+       "tierSavedMessageOne": "이제 서브 계정 {count}개가 새 설정을 사용합니다.",
+       "tierSavedMessageWho": "이제 {who}에 새 설정이 적용됩니다.",
+       "tierSavedTitle": "{tier} 업데이트됨"
+      },
+      "history": {
+       "unavailableForPerson": "{name}의 액세스 변경 내역은 감사 로그에 기록되지만, 'AI에게 문의'는 아직 브라우저에서 감사 로그를 읽을 수 없습니다.",
+       "unavailableForSubAccount": "{name}의 액세스 변경 내역은 감사 로그에 기록되지만, 'AI에게 문의'는 아직 브라우저에서 감사 로그를 읽을 수 없습니다.",
+       "unavailableMessage": "액세스 변경 내역은 감사 로그에 기록되지만, 'AI에게 문의'는 아직 브라우저에서 감사 로그를 읽을 수 없습니다.",
+       "unavailableNote": "여기에서 변경한 모든 내용은 여전히 이름과 시간과 함께 기록됩니다. 빠진 것은 기록이 아니라 이 보기 화면입니다.",
+       "unavailableTitle": "여기에서는 아직 변경 기록을 볼 수 없습니다"
+      },
+      "review": {
+       "canDo": "포함 항목: {list}.",
+       "canDoMore": "포함 항목: {list} 외 {count}개.",
+       "canDoMoreOne": "포함 항목: {list} 외 하위 스킬 {count}개.",
+       "closingKeeps": "닫아도 이 알림은 유지됩니다. '검토 완료'를 눌러야만 사라집니다.",
+       "destructive": "데이터를 삭제할 수 있는 작업 {count}개가 포함되어 있습니다.",
+       "destructiveOne": "데이터를 삭제할 수 있는 작업 {count}개가 포함되어 있습니다.",
+       "done": "검토 완료",
+       "heldOff": "보류됨",
+       "lede": "{tier}을(를) 마지막으로 검토한 이후 추가된 새 스킬입니다. 이 액세스 수준에 포함할 스킬을 정하세요.",
+       "noSubSkills": "아직 하위 스킬이 없습니다.",
+       "off": "끔",
+       "on": "켬",
+       "scopeNote": "여기에는 완전히 새로운 스킬만 표시됩니다. 설명이 수정되었거나 하위 스킬이 변경된 스킬은 표시되지 않습니다.",
+       "tally": "켬 {on} · 끔 {off}",
+       "title": "검토할 새 스킬 {count}개",
+       "titleOne": "검토할 새 스킬 {count}개"
+      },
+      "sensitive": {
+       "allow": "{level} 허용",
+       "destructiveSuffix": "(그중 {count}개는 데이터 삭제 작업)",
+       "impactDelete": "'AI에게 문의'가 작업 {operations}개{destructiveSuffix}에 걸쳐 생성, 변경, 삭제를 할 수 있게 됩니다. 데이터 삭제 작업은 어느 수준에서든 매번 확인을 요청합니다.",
+       "impactDeleteOne": "'AI에게 문의'가 작업 {operations}개{destructiveSuffix}에 걸쳐 생성, 변경, 삭제를 할 수 있게 됩니다. 데이터 삭제 작업은 어느 수준에서든 매번 확인을 요청합니다.",
+       "impactRaise": "'AI에게 문의'가 작업 {operations}개{destructiveSuffix}에 걸쳐 생성 및 변경을 할 수 있게 됩니다. 데이터 삭제 작업은 어느 수준에서든 매번 확인을 요청합니다.",
+       "impactRaiseOne": "'AI에게 문의'가 작업 {operations}개{destructiveSuffix}에 걸쳐 생성 및 변경을 할 수 있게 됩니다. 데이터 삭제 작업은 어느 수준에서든 매번 확인을 요청합니다.",
+       "lede": "{module}은(는) 민감합니다. 모든 액세스 수준에서 의도적으로 '보기'까지만 허용합니다.",
+       "serverEnforced": "이 확인은 필수입니다. 확인하지 않으면 변경이 거부됩니다.",
+       "titleDelete": "'AI에게 문의'가 {module}에서 삭제하도록 허용하시겠습니까?",
+       "titleRaise": "'AI에게 문의'가 {module}을(를) 변경하도록 허용하시겠습니까?"
       }
      },
      "announce": {
       "dismiss": "닫기",
       "skillAccess": {
-       "cta": "스킬 권한 열기"
+       "cta": "스킬 권한 열기",
+       "body": "스킬 권한을 사용하면 액세스 수준별로 서브 계정 사용자가 실행할 수 있는 스킬과 조회만 할 수 있는 스킬을 정할 수 있습니다.",
+       "title": "'AI에게 문의'가 할 수 있는 작업 선택"
+      },
+      "alsoNew": "이것도 신규",
+      "new": "신규",
+      "newSkills": {
+       "badge": "신규",
+       "body": "'AI에게 문의'에 스킬 {count}개가 추가되었습니다. 어떤 액세스 수준에 제공할지 검토하세요.",
+       "bodyOne": "'AI에게 문의'에 스킬 {count}개가 추가되었습니다. 어떤 액세스 수준에 제공할지 검토하세요.",
+       "cta": "새 스킬 검토",
+       "title": "새 스킬에 대한 결정이 필요합니다"
       }
      },
      "announcement": {
@@ -23938,7 +24559,11 @@
      "languages": {
       "englishUS": "영어 (미국)",
       "englishUK": "영어 (영국)",
-      "other": "기타"
+      "other": "기타",
+      "french": "프랑스어",
+      "german": "독일어",
+      "portuguese": "포르투갈어",
+      "spanish": "스페인어"
      },
      "tones": {
       "professional": "전문적인",
@@ -24191,7 +24816,9 @@
     "add": "추가",
     "linkCopied": "링크가 복사되었습니다",
     "pleaseInput": "입력하세요",
-    "new": "신규"
+    "new": "신규",
+    "blogSiteLists": "블로그 사이트 목록",
+    "rssImports": "RSS 가져오기"
    },
    "actionBar": {
     "lastSaved": "마지막 저장",
@@ -24489,7 +25116,8 @@
      "fromYoutube": "YouTube URL 추가",
      "validations": "지원되는 동영상 크기는 {size}MB 입니다",
      "videoValidationUrlError": "동영상을 선택해 주세요",
-     "videoValidationsSizeError": "지원되는 영상 크기는 {maxSize}MB입니다. 업로드한 영상은 {size}MB입니다"
+     "videoValidationsSizeError": "지원되는 영상 크기는 {maxSize}MB입니다. 업로드한 영상은 {size}MB입니다",
+     "embedTitle": "YouTube URL"
     },
     "linkModal": {
      "title": "링크 삽입",
@@ -24646,7 +25274,13 @@
      "rows": "행",
      "style": "스타일",
      "styleStriped": "줄무늬 행",
-     "useFirstRowHeader": "첫 행을 헤더로 사용"
+     "useFirstRowHeader": "첫 행을 헤더로 사용",
+     "alignCenter": "중앙",
+     "insertRowBelow": "아래에 행 삽입",
+     "insertTable": "표 삽입",
+     "styleCard": "카드",
+     "styleMinimal": "미니멀",
+     "stylePlain": "기본"
     }
    },
    "postSettings": {
@@ -25086,44 +25720,59 @@
      "editWithAi": "AI로 편집",
      "editPlaceholder": "AI 에게 이 이미지 편집 요청...",
      "editingImage": "이미지 편집 중"
-    }
+    },
+    "title": "블로그 AI"
    },
    "comments": {
     "actions": {
      "approve": "승인",
-     "approveEdit": "수정 내용 승인"
+     "approveEdit": "수정 내용 승인",
+     "approved": "승인됨",
+     "reply": "답글"
     },
     "bulk": {
      "approveSelected": "선택한 댓글 승인",
-     "deleteSelected": "선택한 댓글 삭제"
+     "deleteSelected": "선택한 댓글 삭제",
+     "actions": "작업"
     },
     "columns": {
      "actions": "작업",
      "commentedOn": "댓글 작성일",
      "commenter": "댓글 작성자",
      "post": "게시물",
-     "status": "상태"
+     "status": "상태",
+     "comment": "댓글"
     },
     "confirm": {
      "approve": "승인",
      "bulkDeleteBody": "댓글 {0}개를 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다.",
      "bulkDeleteTitle": "댓글 {0}개 삭제",
      "deleteAll": "전체 삭제",
-     "deleteBody": "이 댓글을 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다."
+     "deleteBody": "이 댓글을 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다.",
+     "approveBody": "이 댓글을 승인하시겠습니까?",
+     "approveTitle": "댓글 승인",
+     "bulkApproveBody": "댓글 {0}개를 모두 승인하시겠습니까?",
+     "bulkApproveTitle": "댓글 {0}개 승인",
+     "deleteTitle": "댓글 삭제"
     },
     "empty": {
      "description": "블로그 게시물 템플릿에 댓글 요소를 추가하세요. 독자가 댓글을 남기기 시작하면 여기에 표시됩니다.",
      "title": "아직 댓글이 없습니다"
     },
     "emptyFiltered": {
-     "title": "댓글을 찾을 수 없습니다"
+     "title": "댓글을 찾을 수 없습니다",
+     "description": "필터나 검색어를 변경해 보세요"
     },
     "filters": {
      "clear": "필터 초기화",
      "noPostsFound": "게시물이 없습니다",
      "searchPosts": "게시물 검색",
      "searchStatus": "상태 검색",
-     "searchingPosts": "검색 중…"
+     "searchingPosts": "검색 중…",
+     "all": "전체",
+     "posts": "게시물",
+     "status": "상태",
+     "typeToSearchPosts": "입력하여 게시물 검색"
     },
     "manageComments": "댓글 관리",
     "metrics": {
@@ -25131,7 +25780,10 @@
      "monthlyHint": "이번 달 1일부터 작성된 댓글입니다.",
      "pending": "대기 중인 댓글",
      "pendingHint": "독자에게 표시되기 전에 승인을 기다리는 댓글입니다.",
-     "totalHint": "승인 대기 중인 답글을 포함해 이 블로그 사이트의 모든 댓글입니다."
+     "totalHint": "승인 대기 중인 답글을 포함해 이 블로그 사이트의 모든 댓글입니다.",
+     "changeUp": "이전 기간 대비 {0}% 증가",
+     "monthly": "이번 달 댓글",
+     "total": "전체 블로그 댓글"
     },
     "notifications": {
      "actionFailed": "문제가 발생했습니다. 다시 시도해 주세요.",
@@ -25139,7 +25791,9 @@
      "bulkApproved": "댓글 {0}개가 승인되었습니다",
      "bulkPartial": "댓글 {1}개 중 {0}개를 업데이트하지 못했습니다",
      "deleted": "댓글이 삭제되었습니다",
-     "replied": "답글이 게시되었습니다"
+     "replied": "답글이 게시되었습니다",
+     "bulkDeleted": "댓글 {0}개가 삭제되었습니다",
+     "settingsSaved": "댓글 설정이 저장되었습니다"
     },
     "settings": {
      "applyToAllSitesHint": "수신자는 다른 블로그 사이트로 복사되지 않습니다.",
@@ -25153,12 +25807,20 @@
      "recipientsUnavailable": "팀원 목록을 불러오지 못했습니다 — 이메일 주소는 직접 입력할 수 있습니다.",
      "requireApprovalHint": "새 댓글이 게시되기 전에 검토합니다.",
      "save": "변경사항 저장",
-     "title": "댓글 설정"
+     "title": "댓글 설정",
+     "applyToAllSites": "모든 블로그 사이트에 적용",
+     "recipients": "알림 받을 사람",
+     "recipientsLimit": "수신자는 최대 {0}명까지 추가할 수 있습니다.",
+     "recipientsPlaceholder": "팀원을 검색하거나 이메일을 입력하세요",
+     "recipientsRequired": "수신자를 한 명 이상 추가하세요",
+     "requireApproval": "승인 필요"
     },
     "status": {
      "moderator": "운영자",
      "pending": "대기 중",
-     "published": "게시됨"
+     "published": "게시됨",
+     "editPending": "수정 승인 대기 중",
+     "moderatorHint": "{0} 팀의 답글"
     },
     "tab": "댓글",
     "thread": {
@@ -25175,9 +25837,32 @@
      "replyCountOther": "· 답글 {0}개",
      "replyingAs": "다음 이름으로 답글 작성",
      "replyingTo": "{0}님에게 답글 작성 중",
-     "viewImage": "첨부 이미지 보기"
+     "viewImage": "첨부 이미지 보기",
+     "addEmoji": "이모지 추가",
+     "addImage": "이미지 추가",
+     "attachmentFailed": "이미지를 업로드하지 못했습니다. 다시 시도해 주세요.",
+     "composerPlaceholder": "답글 작성...",
+     "imageAttached": "이미지 첨부됨",
+     "linkDestination": "{0}(으)로 이동",
+     "postsBy": "{0}님의 게시물",
+     "proposedEdit": "수정 제안",
+     "queueTitle": "대기 중인 댓글 ({0}/{1})",
+     "reply": "답글",
+     "replyCountOne": "· 답글 1개",
+     "searchAuthors": "작성자 검색",
+     "selectAuthor": "작성자 선택",
+     "selectAuthorHint": "답글에 표시할 작성자를 선택하세요.",
+     "title": "댓글 스레드",
+     "uploadingImage": "업로드 중… {0}%",
+     "viewLive": "게시된 페이지 보기"
     },
-    "unknownCommenter": "알 수 없음"
+    "unknownCommenter": "알 수 없음",
+    "deletedPost": "삭제된 게시물",
+    "search": "검색",
+    "selection": {
+     "clear": "선택 해제",
+     "selected": "{1}개 중 {0}개 선택됨"
+    }
    },
    "rssImport": {
     "addFeed": "피드 추가",
@@ -25210,7 +25895,8 @@
      "enterTitle": "제목을 입력하세요",
      "failedToSave": "게시물을 저장하지 못했습니다. 다시 시도해 주세요.",
      "noChangesToSave": "저장할 변경 사항이 없습니다",
-     "postSaved": "게시물이 저장되었습니다"
+     "postSaved": "게시물이 저장되었습니다",
+     "failedToLoad": "편집기를 불러오지 못했습니다. 다시 시도해 주세요."
     },
     "preferFeedValues": "피드 자체 값 우선 사용",
     "previewPlaceholder": "피드를 검증하면 최근 항목을 여기에서 미리 볼 수 있습니다.",
@@ -25221,13 +25907,52 @@
     "selectedCount": "{total}개 중 {selected}개 선택됨",
     "status": {
      "imported": "가져옴",
-     "processing": "처리 중"
+     "processing": "처리 중",
+     "failed": "실패",
+     "ready": "검토 준비됨"
     },
     "subtitle": "블로그 또는 팟캐스트 RSS 피드 URL을 붙여 넣으세요. 최근 게시물을 임시 저장 상태로 가져옵니다.",
     "summaryOnly": "요약만",
     "unreachableFeed": "지금은 해당 URL에 연결할 수 없습니다. 주소를 확인하고 다시 시도해 주세요.",
     "validate": "검증",
-    "viewPosts": "가져온 게시물 보기"
+    "viewPosts": "가져온 게시물 보기",
+    "audio": "오디오",
+    "backToImports": "RSS 가져오기로 돌아가기",
+    "countLabel": "가져올 게시물 수",
+    "createError": "가져오기를 시작하지 못했습니다. 다시 시도해 주세요.",
+    "creatingDrafts": "임시 저장 게시물을 만드는 중…",
+    "creatingDraftsImage": "임시 저장 게시물 생성 중 이미지",
+    "defaultAuthorPlaceholder": "작성자 선택",
+    "defaultCategories": "기본 카테고리",
+    "defaultTags": "기본 태그",
+    "defaultTagsPlaceholder": "태그를 입력하고 Enter 키를 누르세요",
+    "donePartialTitle": "{n}개 가져옴, {k}개 건너뜀",
+    "emptyFeed": "이 피드에는 가져올 항목이 없습니다.",
+    "feedPreview": "피드 미리보기",
+    "fetchingFullContent": "전체 콘텐츠를 가져오는 중 — {total}개 중 {finished}개",
+    "fullContentLabel": "요약만 있는 항목의 전체 콘텐츠 가져오기",
+    "historyEmptyTitle": "아직 RSS 가져오기 내역이 없습니다. 첫 피드를 가져오세요.",
+    "importAnother": "다른 피드 가져오기",
+    "importError": "선택한 게시물을 가져오지 못했습니다. 다시 시도해 주세요.",
+    "inProgressTitle": "피드를 가져오는 중",
+    "items": "항목",
+    "itemsFound": "항목 {found}개 찾음 · {selected}개 선택됨",
+    "loading": "불러오는 중…",
+    "noItems": "이 피드에서 항목을 찾지 못했습니다.",
+    "parseFailed": "피드를 읽을 수 없습니다. URL을 확인하고 다시 시도해 주세요.",
+    "parseTimeout": "예상보다 오래 걸리고 있습니다. 잠시 후 RSS 가져오기 탭에서 확인해 주세요.",
+    "postDefaults": "게시물 기본값(선택 사항)",
+    "postDefaultsHint": "가져온 모든 게시물에 적용됩니다. 피드 자체에 작성자와 카테고리가 있으면 그 값이 사용됩니다.",
+    "postsCreated": "게시물 {finished} / {total}개 생성됨",
+    "preferFeedValuesHint": "켜면 피드 항목에 작성자와 카테고리가 있을 때 그 값을 사용하고, 없으면 이 기본값을 사용합니다.",
+    "previewMore": "+ 항목 {count}개 더",
+    "previewReady": "가져올 수 있는 최근 항목 {count}개가 준비되었습니다.",
+    "remove": "제거",
+    "selectAll": "전체 선택",
+    "title": "RSS 피드에서 가져오기",
+    "untitled": "제목 없는 항목",
+    "validating": "검증 중",
+    "withWarnings": "경고 있음"
    }
   },
   "mediaCenterApp": {
@@ -154306,7 +155031,7 @@
   "Enable A/B Testing": "A/B 테스트 활성화",
   "Enable accessibility": "접근성 활성화",
   "Enable and manage payments, rules, and charge models.": "결제, 규칙 및 요금 모델을 활성화하고 관리하세요.",
-  "Enable Ask AI for sub-account users": "서브 계정 사용자를 위한 Ask AI 활성화",
+  "Enable Ask AI for sub-account users": "서브 계정 사용자에게 'AI에게 문의' 켜기",
   "Enable Associate Records - Workflow Action": "연결된 레코드 활성화 - 워크플로우 액션",
   "Enable auto save now": "지금 자동 저장 활성화",
   "Enable Call Recording": "통화 녹음 활성화",
@@ -161295,7 +162020,8 @@
   "No review link clicks": "리뷰 링크 클릭이 없습니다",
   "Begin collecting reviews by connecting your pages and sharing your review link": "페이지를 연결하고 리뷰 링크를 공유해 리뷰 수집을 시작하세요",
   "Sell across Facebook and Instagram by syncing your store products and inventory with Meta Shops.": "스토어 상품과 재고를 Meta Shops와 동기화해 Facebook과 Instagram에서 판매하세요.",
-  "Cal.com lets you automate scheduling — trigger workflows when bookings are created, canceled, or rescheduled.": "Cal.com으로 일정 예약을 자동화하세요 — 예약이 생성·취소·변경될 때 워크플로우를 실행합니다."
+  "Cal.com lets you automate scheduling — trigger workflows when bookings are created, canceled, or rescheduled.": "Cal.com으로 일정 예약을 자동화하세요 — 예약이 생성·취소·변경될 때 워크플로우를 실행합니다.",
+  "Ask AI is disabled for your sub-account users by default. Select users who should have access.": "서브 계정 사용자의 'AI에게 문의'는 기본적으로 꺼져 있습니다. 사용할 사용자를 선택하세요."
  },
  "_textScoped": {
   "AM": "오전",
@@ -162677,6 +163403,7 @@
   "Negative": "부정",
   "Positive": "긍정",
   "Neutral": "중립",
-  "Views": "조회수"
+  "Views": "조회수",
+  "Configure": "설정"
  }
 }

@@ -413130,5 +413130,2689 @@
  "copilotApp.copilot.askAi.voiceFlow.workflowNodes": {
   "en": "Workflow nodes",
   "ko": "워크플로우 노드"
+ },
+ "blogsApp.aiCopilot.assistMode.languages.french": {
+  "en": "Français",
+  "ko": "프랑스어"
+ },
+ "blogsApp.aiCopilot.assistMode.languages.german": {
+  "en": "Deutsch",
+  "ko": "독일어"
+ },
+ "blogsApp.aiCopilot.assistMode.languages.portuguese": {
+  "en": "Português",
+  "ko": "포르투갈어"
+ },
+ "blogsApp.aiCopilot.assistMode.languages.spanish": {
+  "en": "Español",
+  "ko": "스페인어"
+ },
+ "blogsApp.blogAiPreview.title": {
+  "en": "Blog AI",
+  "ko": "블로그 AI"
+ },
+ "blogsApp.comments.actions.approved": {
+  "en": "Approved",
+  "ko": "승인됨"
+ },
+ "blogsApp.comments.actions.reply": {
+  "en": "Reply",
+  "ko": "답글"
+ },
+ "blogsApp.comments.bulk.actions": {
+  "en": "Actions",
+  "ko": "작업"
+ },
+ "blogsApp.comments.columns.comment": {
+  "en": "Comment",
+  "ko": "댓글"
+ },
+ "blogsApp.comments.confirm.approveBody": {
+  "en": "Are you sure you want to approve this comment?",
+  "ko": "이 댓글을 승인하시겠습니까?"
+ },
+ "blogsApp.comments.confirm.approveTitle": {
+  "en": "Approve comment",
+  "ko": "댓글 승인"
+ },
+ "blogsApp.comments.confirm.bulkApproveBody": {
+  "en": "Are you sure you want to approve all the {0} comments?",
+  "ko": "댓글 {0}개를 모두 승인하시겠습니까?"
+ },
+ "blogsApp.comments.confirm.bulkApproveTitle": {
+  "en": "Approve {0} comments",
+  "ko": "댓글 {0}개 승인"
+ },
+ "blogsApp.comments.confirm.deleteTitle": {
+  "en": "Delete comment",
+  "ko": "댓글 삭제"
+ },
+ "blogsApp.comments.deletedPost": {
+  "en": "Deleted post",
+  "ko": "삭제된 게시물"
+ },
+ "blogsApp.comments.emptyFiltered.description": {
+  "en": "Try changing the filters or the search term",
+  "ko": "필터나 검색어를 변경해 보세요"
+ },
+ "blogsApp.comments.filters.all": {
+  "en": "All",
+  "ko": "전체"
+ },
+ "blogsApp.comments.filters.posts": {
+  "en": "Posts",
+  "ko": "게시물"
+ },
+ "blogsApp.comments.filters.status": {
+  "en": "Status",
+  "ko": "상태"
+ },
+ "blogsApp.comments.filters.typeToSearchPosts": {
+  "en": "Type to search posts",
+  "ko": "입력하여 게시물 검색"
+ },
+ "blogsApp.comments.metrics.changeUp": {
+  "en": "Up {0}% on the previous period",
+  "ko": "이전 기간 대비 {0}% 증가"
+ },
+ "blogsApp.comments.metrics.monthly": {
+  "en": "Monthly comments",
+  "ko": "이번 달 댓글"
+ },
+ "blogsApp.comments.metrics.total": {
+  "en": "Total blog comments",
+  "ko": "전체 블로그 댓글"
+ },
+ "blogsApp.comments.notifications.bulkDeleted": {
+  "en": "{0} comments deleted",
+  "ko": "댓글 {0}개가 삭제되었습니다"
+ },
+ "blogsApp.comments.notifications.settingsSaved": {
+  "en": "Comment settings saved",
+  "ko": "댓글 설정이 저장되었습니다"
+ },
+ "blogsApp.comments.search": {
+  "en": "Search",
+  "ko": "검색"
+ },
+ "blogsApp.comments.selection.clear": {
+  "en": "Clear selection",
+  "ko": "선택 해제"
+ },
+ "blogsApp.comments.selection.selected": {
+  "en": "{0} of {1} Selected",
+  "ko": "{1}개 중 {0}개 선택됨"
+ },
+ "blogsApp.comments.settings.applyToAllSites": {
+  "en": "Apply to all blog sites",
+  "ko": "모든 블로그 사이트에 적용"
+ },
+ "blogsApp.comments.settings.recipients": {
+  "en": "Send notifications to",
+  "ko": "알림 받을 사람"
+ },
+ "blogsApp.comments.settings.recipientsLimit": {
+  "en": "You can add up to {0} recipients.",
+  "ko": "수신자는 최대 {0}명까지 추가할 수 있습니다."
+ },
+ "blogsApp.comments.settings.recipientsPlaceholder": {
+  "en": "Search team members or type an email",
+  "ko": "팀원을 검색하거나 이메일을 입력하세요"
+ },
+ "blogsApp.comments.settings.recipientsRequired": {
+  "en": "Add at least one recipient",
+  "ko": "수신자를 한 명 이상 추가하세요"
+ },
+ "blogsApp.comments.settings.requireApproval": {
+  "en": "Require approval",
+  "ko": "승인 필요"
+ },
+ "blogsApp.comments.status.editPending": {
+  "en": "Edit pending",
+  "ko": "수정 승인 대기 중"
+ },
+ "blogsApp.comments.status.moderatorHint": {
+  "en": "Reply from the {0} team",
+  "ko": "{0} 팀의 답글"
+ },
+ "blogsApp.comments.thread.addEmoji": {
+  "en": "Add emoji",
+  "ko": "이모지 추가"
+ },
+ "blogsApp.comments.thread.addImage": {
+  "en": "Add image",
+  "ko": "이미지 추가"
+ },
+ "blogsApp.comments.thread.attachmentFailed": {
+  "en": "That image could not be uploaded. Please try again.",
+  "ko": "이미지를 업로드하지 못했습니다. 다시 시도해 주세요."
+ },
+ "blogsApp.comments.thread.composerPlaceholder": {
+  "en": "Write a reply...",
+  "ko": "답글 작성..."
+ },
+ "blogsApp.comments.thread.imageAttached": {
+  "en": "Image attached",
+  "ko": "이미지 첨부됨"
+ },
+ "blogsApp.comments.thread.linkDestination": {
+  "en": "Goes to {0}",
+  "ko": "{0}(으)로 이동"
+ },
+ "blogsApp.comments.thread.postsBy": {
+  "en": "Posts by {0}",
+  "ko": "{0}님의 게시물"
+ },
+ "blogsApp.comments.thread.proposedEdit": {
+  "en": "Proposed edit",
+  "ko": "수정 제안"
+ },
+ "blogsApp.comments.thread.queueTitle": {
+  "en": "Pending comments ({0} of {1})",
+  "ko": "대기 중인 댓글 ({0}/{1})"
+ },
+ "blogsApp.comments.thread.reply": {
+  "en": "Reply",
+  "ko": "답글"
+ },
+ "blogsApp.comments.thread.replyCountOne": {
+  "en": "· 1 reply",
+  "ko": "· 답글 1개"
+ },
+ "blogsApp.comments.thread.searchAuthors": {
+  "en": "Search authors",
+  "ko": "작성자 검색"
+ },
+ "blogsApp.comments.thread.selectAuthor": {
+  "en": "Select an author",
+  "ko": "작성자 선택"
+ },
+ "blogsApp.comments.thread.selectAuthorHint": {
+  "en": "Pick an author to reply as.",
+  "ko": "답글에 표시할 작성자를 선택하세요."
+ },
+ "blogsApp.comments.thread.title": {
+  "en": "Comment thread",
+  "ko": "댓글 스레드"
+ },
+ "blogsApp.comments.thread.uploadingImage": {
+  "en": "Uploading… {0}%",
+  "ko": "업로드 중… {0}%"
+ },
+ "blogsApp.comments.thread.viewLive": {
+  "en": "View live",
+  "ko": "게시된 페이지 보기"
+ },
+ "blogsApp.common.blogSiteLists": {
+  "en": "BlogSiteLists",
+  "ko": "블로그 사이트 목록"
+ },
+ "blogsApp.common.rssImports": {
+  "en": "RSS imports",
+  "ko": "RSS 가져오기"
+ },
+ "blogsApp.postEditor.table.alignCenter": {
+  "en": "Center",
+  "ko": "중앙"
+ },
+ "blogsApp.postEditor.table.insertRowBelow": {
+  "en": "Insert row below",
+  "ko": "아래에 행 삽입"
+ },
+ "blogsApp.postEditor.table.insertTable": {
+  "en": "Insert table",
+  "ko": "표 삽입"
+ },
+ "blogsApp.postEditor.table.styleCard": {
+  "en": "Card",
+  "ko": "카드"
+ },
+ "blogsApp.postEditor.table.styleMinimal": {
+  "en": "Minimal",
+  "ko": "미니멀"
+ },
+ "blogsApp.postEditor.table.stylePlain": {
+  "en": "Plain",
+  "ko": "기본"
+ },
+ "blogsApp.postEditor.videoModal.embedTitle": {
+  "en": "Youtube URL",
+  "ko": "YouTube URL"
+ },
+ "blogsApp.rssImport.audio": {
+  "en": "Audio",
+  "ko": "오디오"
+ },
+ "blogsApp.rssImport.backToImports": {
+  "en": "Back to RSS imports",
+  "ko": "RSS 가져오기로 돌아가기"
+ },
+ "blogsApp.rssImport.countLabel": {
+  "en": "Number of posts to import",
+  "ko": "가져올 게시물 수"
+ },
+ "blogsApp.rssImport.createError": {
+  "en": "Couldn't start the import. Please try again.",
+  "ko": "가져오기를 시작하지 못했습니다. 다시 시도해 주세요."
+ },
+ "blogsApp.rssImport.creatingDrafts": {
+  "en": "Creating your drafts…",
+  "ko": "임시 저장 게시물을 만드는 중…"
+ },
+ "blogsApp.rssImport.creatingDraftsImage": {
+  "en": "creating drafts image",
+  "ko": "임시 저장 게시물 생성 중 이미지"
+ },
+ "blogsApp.rssImport.defaultAuthorPlaceholder": {
+  "en": "Select an author",
+  "ko": "작성자 선택"
+ },
+ "blogsApp.rssImport.defaultCategories": {
+  "en": "Default categories",
+  "ko": "기본 카테고리"
+ },
+ "blogsApp.rssImport.defaultTags": {
+  "en": "Default tags",
+  "ko": "기본 태그"
+ },
+ "blogsApp.rssImport.defaultTagsPlaceholder": {
+  "en": "Type a tag and press Enter",
+  "ko": "태그를 입력하고 Enter 키를 누르세요"
+ },
+ "blogsApp.rssImport.donePartialTitle": {
+  "en": "{n} imported, {k} skipped",
+  "ko": "{n}개 가져옴, {k}개 건너뜀"
+ },
+ "blogsApp.rssImport.emptyFeed": {
+  "en": "This feed has no items to import.",
+  "ko": "이 피드에는 가져올 항목이 없습니다."
+ },
+ "blogsApp.rssImport.feedPreview": {
+  "en": "Feed preview",
+  "ko": "피드 미리보기"
+ },
+ "blogsApp.rssImport.fetchingFullContent": {
+  "en": "Fetching full content — {finished} of {total}",
+  "ko": "전체 콘텐츠를 가져오는 중 — {total}개 중 {finished}개"
+ },
+ "blogsApp.rssImport.fullContentLabel": {
+  "en": "Fetch full content for items that only have a summary",
+  "ko": "요약만 있는 항목의 전체 콘텐츠 가져오기"
+ },
+ "blogsApp.rssImport.historyEmptyTitle": {
+  "en": "No RSS imports yet. Import your first feed.",
+  "ko": "아직 RSS 가져오기 내역이 없습니다. 첫 피드를 가져오세요."
+ },
+ "blogsApp.rssImport.importAnother": {
+  "en": "Import another feed",
+  "ko": "다른 피드 가져오기"
+ },
+ "blogsApp.rssImport.importError": {
+  "en": "Couldn't import the selected posts. Please try again.",
+  "ko": "선택한 게시물을 가져오지 못했습니다. 다시 시도해 주세요."
+ },
+ "blogsApp.rssImport.inProgressTitle": {
+  "en": "Bringing in your feed",
+  "ko": "피드를 가져오는 중"
+ },
+ "blogsApp.rssImport.items": {
+  "en": "items",
+  "ko": "항목"
+ },
+ "blogsApp.rssImport.itemsFound": {
+  "en": "{found} items found · {selected} selected",
+  "ko": "항목 {found}개 찾음 · {selected}개 선택됨"
+ },
+ "blogsApp.rssImport.loading": {
+  "en": "Loading…",
+  "ko": "불러오는 중…"
+ },
+ "blogsApp.rssImport.noItems": {
+  "en": "No items found in this feed.",
+  "ko": "이 피드에서 항목을 찾지 못했습니다."
+ },
+ "blogsApp.rssImport.parseFailed": {
+  "en": "We couldn't read that feed. Check the URL and try again.",
+  "ko": "피드를 읽을 수 없습니다. URL을 확인하고 다시 시도해 주세요."
+ },
+ "blogsApp.rssImport.parseTimeout": {
+  "en": "This is taking longer than expected. Please check the RSS Imports tab shortly.",
+  "ko": "예상보다 오래 걸리고 있습니다. 잠시 후 RSS 가져오기 탭에서 확인해 주세요."
+ },
+ "blogsApp.rssImport.postDefaults": {
+  "en": "Post defaults (optional)",
+  "ko": "게시물 기본값(선택 사항)"
+ },
+ "blogsApp.rssImport.postDefaultsHint": {
+  "en": "Applied to every imported post. The feed's own author and categories are used when available.",
+  "ko": "가져온 모든 게시물에 적용됩니다. 피드 자체에 작성자와 카테고리가 있으면 그 값이 사용됩니다."
+ },
+ "blogsApp.rssImport.postEditor.failedToLoad": {
+  "en": "Failed to load the editor. Please try again.",
+  "ko": "편집기를 불러오지 못했습니다. 다시 시도해 주세요."
+ },
+ "blogsApp.rssImport.postsCreated": {
+  "en": "{finished} / {total} posts created",
+  "ko": "게시물 {finished} / {total}개 생성됨"
+ },
+ "blogsApp.rssImport.preferFeedValuesHint": {
+  "en": "When on, use the feed item's author and categories where present, and fall back to these defaults.",
+  "ko": "켜면 피드 항목에 작성자와 카테고리가 있을 때 그 값을 사용하고, 없으면 이 기본값을 사용합니다."
+ },
+ "blogsApp.rssImport.previewMore": {
+  "en": "+{count} more items",
+  "ko": "+ 항목 {count}개 더"
+ },
+ "blogsApp.rssImport.previewReady": {
+  "en": "{count} recent items ready to import.",
+  "ko": "가져올 수 있는 최근 항목 {count}개가 준비되었습니다."
+ },
+ "blogsApp.rssImport.remove": {
+  "en": "Remove",
+  "ko": "제거"
+ },
+ "blogsApp.rssImport.selectAll": {
+  "en": "Select all",
+  "ko": "전체 선택"
+ },
+ "blogsApp.rssImport.status.failed": {
+  "en": "Failed",
+  "ko": "실패"
+ },
+ "blogsApp.rssImport.status.ready": {
+  "en": "Ready to review",
+  "ko": "검토 준비됨"
+ },
+ "blogsApp.rssImport.title": {
+  "en": "Import from RSS feed",
+  "ko": "RSS 피드에서 가져오기"
+ },
+ "blogsApp.rssImport.untitled": {
+  "en": "Untitled item",
+  "ko": "제목 없는 항목"
+ },
+ "blogsApp.rssImport.validating": {
+  "en": "Validating",
+  "ko": "검증 중"
+ },
+ "blogsApp.rssImport.withWarnings": {
+  "en": "With warnings",
+  "ko": "경고 있음"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.columns.actions": {
+  "en": "Actions",
+  "ko": "작업"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.columns.actor": {
+  "en": "Changed by / started",
+  "ko": "변경한 사람 / 시작 시각"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.columns.change": {
+  "en": "Change",
+  "ko": "변경"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.columns.progress": {
+  "en": "Progress & results",
+  "ko": "진행 상황 및 결과"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.columns.status": {
+  "en": "Status",
+  "ko": "상태"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.emptyMessage": {
+  "en": "When someone sets an access level across a whole sub-account, it shows up here with who ran it and what it did.",
+  "ko": "누군가 서브 계정 전체에 액세스 수준을 설정하면, 실행한 사람과 처리 내용이 여기에 표시됩니다."
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.emptyTitle": {
+  "en": "No bulk changes yet",
+  "ko": "아직 일괄 변경이 없습니다"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.failedMessage": {
+  "en": "Something went wrong reading the recent changes. Nothing that has already run is affected.",
+  "ko": "최근 변경사항을 불러오는 중 문제가 발생했습니다. 이미 실행된 작업에는 영향이 없습니다."
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.failedTitle": {
+  "en": "Couldn't load bulk changes",
+  "ko": "일괄 변경을 불러오지 못했습니다"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.failureDetails.empty": {
+  "en": "No failure details are available on this page.",
+  "ko": "이 페이지에 표시할 실패 세부 정보가 없습니다."
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.failureDetails.incomplete": {
+  "en": "Some details were not retained for this older run. This table shows every available failure; the bulk change total may be higher.",
+  "ko": "이전에 실행된 작업이라 일부 세부 정보가 보존되지 않았습니다. 이 표에는 확인 가능한 모든 실패가 표시되며, 일괄 변경의 실제 실패 합계는 이보다 많을 수 있습니다."
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.failureDetails.lede": {
+  "en": "{count} recorded failures. Each row shows who could not be changed and why.",
+  "ko": "기록된 실패는 {count}건입니다. 각 행에 변경하지 못한 대상과 그 이유가 표시됩니다."
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.failureDetails.location": {
+  "en": "Sub-account",
+  "ko": "서브 계정"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.failureDetails.next": {
+  "en": "Next",
+  "ko": "다음"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.failureDetails.pagination": {
+  "en": "Failure pages",
+  "ko": "실패 목록 페이지"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.failureDetails.previous": {
+  "en": "Previous",
+  "ko": "이전"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.failureDetails.reason": {
+  "en": "Reason",
+  "ko": "이유"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.failureDetails.title": {
+  "en": "Failed changes",
+  "ko": "실패한 변경"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.failureDetails.unknownLocation": {
+  "en": "Not available",
+  "ko": "정보 없음"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.failureDetails.unnamed": {
+  "en": "User not identified",
+  "ko": "식별되지 않은 사용자"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.failureDetails.user": {
+  "en": "User",
+  "ko": "사용자"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.failuresCapped": {
+  "en": "{shown} shown · {count} more weren't recorded.",
+  "ko": "{shown}건 표시 · 나머지 {count}건은 기록되지 않았습니다."
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.failuresCappedOne": {
+  "en": "{shown} shown · {count} more wasn't recorded.",
+  "ko": "{shown}건 표시 · 나머지 {count}건은 기록되지 않았습니다."
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.filters.accessLevel": {
+  "en": "Access level",
+  "ko": "액세스 수준"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.filters.allLevels": {
+  "en": "All access levels",
+  "ko": "모든 액세스 수준"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.filters.allStatuses": {
+  "en": "All statuses",
+  "ko": "모든 상태"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.filters.roleDefault": {
+  "en": "Role default",
+  "ko": "역할 기본값"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.filters.withFailures": {
+  "en": "With failures",
+  "ko": "실패 있음"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.hideFailures": {
+  "en": "Hide failures",
+  "ko": "실패 숨기기"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.lede": {
+  "en": "Recent changes that set one access level across whole sub-accounts, newest first. A change that is still running keeps updating here.",
+  "ko": "서브 계정 전체에 하나의 액세스 수준을 설정한 최근 변경사항이 최신순으로 표시됩니다. 아직 실행 중인 변경은 여기에서 계속 업데이트됩니다."
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.loading": {
+  "en": "Loading bulk changes…",
+  "ko": "일괄 변경을 불러오는 중…"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.moreFailed": {
+  "en": "Couldn’t load older changes. Your loaded changes are still available. Try again.",
+  "ko": "이전 변경사항을 불러오지 못했습니다. 이미 불러온 변경사항은 계속 확인할 수 있습니다. 다시 시도하세요."
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.noActions": {
+  "en": "No actions",
+  "ko": "작업 없음"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.noMatchesMessage": {
+  "en": "Try another status or access level, or clear the filters to see all recent changes.",
+  "ko": "다른 상태나 액세스 수준을 선택하거나, 필터를 초기화하여 최근 변경사항을 모두 확인하세요."
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.noMatchesTitle": {
+  "en": "No matching changes",
+  "ko": "일치하는 변경사항이 없습니다"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.page": {
+  "en": "Page {page}",
+  "ko": "{page} 페이지"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.pagination": {
+  "en": "Bulk changes pages",
+  "ko": "일괄 변경 페이지"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.progress": {
+  "en": "{done} of {total} sub-accounts",
+  "ko": "서브 계정 {total}개 중 {done}개"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.progressPeople": {
+  "en": "{done} of {total} people checked",
+  "ko": "{total}명 중 {done}명 확인됨"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.resetToRoleDefault": {
+  "en": "Everyone reset to their role default",
+  "ko": "모든 사용자가 역할 기본값으로 재설정됨"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.resultCount": {
+  "en": "Showing {shown} of {total} changes",
+  "ko": "변경 {total}건 중 {shown}건 표시"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.retryFailed": {
+  "en": "Retry failed transactions",
+  "ko": "실패한 작업 다시 시도"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.retryLocations": {
+  "en": "Retry {count} failed sub-accounts",
+  "ko": "실패한 서브 계정 {count}개 다시 시도"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.retryLocationsOne": {
+  "en": "Retry {count} failed sub-account",
+  "ko": "실패한 서브 계정 {count}개 다시 시도"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.retryPeople": {
+  "en": "Retry {count} failed people",
+  "ko": "실패한 사용자 {count}명 다시 시도"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.retryPeopleOne": {
+  "en": "Retry {count} failed person",
+  "ko": "실패한 사용자 {count}명 다시 시도"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.setToLevel": {
+  "en": "Everyone set to {level}",
+  "ko": "모든 사용자가 {level}(으)로 설정됨"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.showFailures": {
+  "en": "Show {count} failures",
+  "ko": "실패 {count}건 보기"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.showFailuresOne": {
+  "en": "Show {count} failure",
+  "ko": "실패 {count}건 보기"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.status.cancelled": {
+  "en": "Stopped",
+  "ko": "중지됨"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.status.failed": {
+  "en": "Didn't finish",
+  "ko": "완료되지 않음"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.status.queued": {
+  "en": "Queued",
+  "ko": "대기 중"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.status.running": {
+  "en": "Running",
+  "ko": "실행 중"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.status.stalled": {
+  "en": "Not making progress",
+  "ko": "진행되지 않음"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.status.succeeded": {
+  "en": "Finished",
+  "ko": "완료됨"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.tableLede": {
+  "en": "Changes appear newest first, {limit} to a page. Filters apply to the page you are on. Running changes update automatically.",
+  "ko": "변경사항은 최신순으로 페이지당 {limit}건씩 표시됩니다. 필터는 현재 페이지에만 적용됩니다. 실행 중인 변경은 자동으로 업데이트됩니다."
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.title": {
+  "en": "Bulk changes",
+  "ko": "일괄 변경"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.unknownActor": {
+  "en": "Someone",
+  "ko": "알 수 없는 사용자"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.unknownTime": {
+  "en": "Time not recorded",
+  "ko": "시간 기록 없음"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.usersFailed": {
+  "en": "{count} people couldn't be changed",
+  "ko": "사용자 {count}명 변경 실패"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.usersFailedOne": {
+  "en": "{count} person couldn't be changed",
+  "ko": "사용자 {count}명 변경 실패"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.usersUnchanged": {
+  "en": "{count} already on this level",
+  "ko": "{count}명은 이미 이 수준 사용 중"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.usersUnchangedOne": {
+  "en": "{count} already on this level",
+  "ko": "{count}명은 이미 이 수준 사용 중"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.usersUpdated": {
+  "en": "{count} people updated",
+  "ko": "사용자 {count}명 업데이트됨"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.usersUpdatedOne": {
+  "en": "{count} person updated",
+  "ko": "사용자 {count}명 업데이트됨"
+ },
+ "copilotApp.copilot.askAi.access.bulkChanges.viewFailures": {
+  "en": "View failures",
+  "ko": "실패 보기"
+ },
+ "copilotApp.copilot.askAi.access.denial.agency_only": {
+  "en": "That's an agency-level action, so Ask AI can't do it inside a sub-account.",
+  "ko": "에이전시 수준의 작업이므로 'AI에게 문의'는 서브 계정 안에서 실행할 수 없습니다."
+ },
+ "copilotApp.copilot.askAi.access.denial.blocked": {
+  "en": "That action can't be done through Ask AI. Do it directly in the app instead.",
+  "ko": "이 작업은 'AI에게 문의'로 실행할 수 없습니다. 앱에서 직접 진행하세요."
+ },
+ "copilotApp.copilot.askAi.access.denial.degraded": {
+  "en": "Ask AI couldn’t check what it’s allowed to do just now, so it stopped rather than guess. Try again shortly.",
+  "ko": "'AI에게 문의'가 지금 허용된 작업 범위를 확인하지 못해, 추측하지 않고 중단했습니다. 잠시 후 다시 시도하세요."
+ },
+ "copilotApp.copilot.askAi.access.denial.generic": {
+  "en": "Ask AI can't do this here.",
+  "ko": "'AI에게 문의'는 여기에서 이 작업을 할 수 없습니다."
+ },
+ "copilotApp.copilot.askAi.access.denial.missing_context": {
+  "en": "Ask AI couldn’t tell which sub-account to do that in. Open the sub-account you meant and ask again.",
+  "ko": "'AI에게 문의'가 어느 서브 계정에서 실행할지 알 수 없었습니다. 원하는 서브 계정을 연 뒤 다시 요청하세요."
+ },
+ "copilotApp.copilot.askAi.access.denial.tier": {
+  "en": "Ask AI can't do this.",
+  "ko": "'AI에게 문의'는 이 작업을 할 수 없습니다."
+ },
+ "copilotApp.copilot.askAi.access.denial.user_level": {
+  "en": "Ask AI can't do this.",
+  "ko": "'AI에게 문의'는 이 작업을 할 수 없습니다."
+ },
+ "copilotApp.copilot.askAi.access.denial.user_permission": {
+  "en": "You don't have access to that yourself, so Ask AI can't do it for you.",
+  "ko": "본인에게 해당 액세스 권한이 없으므로 'AI에게 문의'도 대신 실행할 수 없습니다."
+ },
+ "copilotApp.copilot.askAi.access.denial.user_preference": {
+  "en": "You've hidden this from your own Ask AI. Turn it back on in your Ask AI preferences to use it again.",
+  "ko": "내 'AI에게 문의'에서 이 항목을 숨겼습니다. 다시 사용하려면 'AI에게 문의' 환경설정에서 다시 켜세요."
+ },
+ "copilotApp.copilot.askAi.access.domain.browserAgent": {
+  "en": "Browser agent",
+  "ko": "브라우저 에이전트"
+ },
+ "copilotApp.copilot.askAi.access.domain.browserControl": {
+  "en": "Browser control",
+  "ko": "브라우저 제어"
+ },
+ "copilotApp.copilot.askAi.access.domain.browserTasks": {
+  "en": "Browser tasks",
+  "ko": "브라우저 작업"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmAdManager": {
+  "en": "Ad manager",
+  "ko": "광고 관리자"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmAgentStudio": {
+  "en": "Agent studio",
+  "ko": "Agent Studio"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmAssociations": {
+  "en": "Associations",
+  "ko": "연관"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmBlogs": {
+  "en": "Blogs",
+  "ko": "블로그"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmBrandBoards": {
+  "en": "Brand boards",
+  "ko": "브랜드 보드"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmBulkActions": {
+  "en": "Bulk actions",
+  "ko": "일괄 작업"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmBusinesses": {
+  "en": "Businesses",
+  "ko": "비즈니스"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmCalendars": {
+  "en": "Calendars",
+  "ko": "캘린더"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmCampaigns": {
+  "en": "Campaigns",
+  "ko": "캠페인"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmCompanies": {
+  "en": "Companies",
+  "ko": "회사"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmContacts": {
+  "en": "Contacts",
+  "ko": "연락처"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmConversationAi": {
+  "en": "Conversation AI",
+  "ko": "대화 AI"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmConversations": {
+  "en": "Conversations",
+  "ko": "대화"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmCourses": {
+  "en": "Courses & memberships",
+  "ko": "코스 및 멤버십"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmCustomFields": {
+  "en": "Custom fields",
+  "ko": "커스텀 필드"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmCustomMenus": {
+  "en": "Custom menus",
+  "ko": "커스텀 메뉴"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmEmailDomain": {
+  "en": "Email domains",
+  "ko": "이메일 도메인"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmEmailIsv": {
+  "en": "Email deliverability",
+  "ko": "이메일 전달성"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmExternalTracking": {
+  "en": "External tracking",
+  "ko": "외부 트래킹"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmFacebookLeads": {
+  "en": "Facebook lead forms",
+  "ko": "Facebook 리드 폼"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmFacebookMessenger": {
+  "en": "Facebook Messenger",
+  "ko": "Facebook 메신저"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmForms": {
+  "en": "Forms",
+  "ko": "폼"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmFunnels": {
+  "en": "Funnels",
+  "ko": "퍼널"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmGoogleIntegration": {
+  "en": "Google integration",
+  "ko": "Google 연동"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmInvoices": {
+  "en": "Invoices",
+  "ko": "인보이스"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmKnowledgeBase": {
+  "en": "Knowledge base",
+  "ko": "지식 베이스"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmLinks": {
+  "en": "Trigger links",
+  "ko": "트리거 링크"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmLocations": {
+  "en": "Sub-accounts",
+  "ko": "서브 계정"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmMarketplace": {
+  "en": "Marketplace",
+  "ko": "마켓플레이스"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmMedias": {
+  "en": "Media library",
+  "ko": "미디어 저장소"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmMemory": {
+  "en": "Memory",
+  "ko": "메모리"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmOauth": {
+  "en": "OAuth apps",
+  "ko": "OAuth 앱"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmObjects": {
+  "en": "Custom objects",
+  "ko": "커스텀 오브젝트"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmOpportunities": {
+  "en": "Opportunities",
+  "ko": "기회 관리"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmPayments": {
+  "en": "Payments",
+  "ko": "결제"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmPhoneA2p": {
+  "en": "A2P registration",
+  "ko": "A2P 등록"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmPhoneRegulatory": {
+  "en": "Phone compliance",
+  "ko": "전화 규정 준수"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmPhoneSystem": {
+  "en": "Phone system",
+  "ko": "전화 시스템"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmProducts": {
+  "en": "Products",
+  "ko": "상품"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmProjects": {
+  "en": "Projects",
+  "ko": "프로젝트"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmProposals": {
+  "en": "Proposals & estimates",
+  "ko": "제안서 및 견적서"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmReporting": {
+  "en": "Dashboard",
+  "ko": "대시보드"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmReputation": {
+  "en": "Reputation",
+  "ko": "평판 관리"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmSaas": {
+  "en": "SaaS configurator",
+  "ko": "SaaS 구성기"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmSmsCampaignOnboarding": {
+  "en": "SMS campaign onboarding",
+  "ko": "SMS 캠페인 온보딩"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmSnapshots": {
+  "en": "Snapshots",
+  "ko": "스냅샷"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmSocialPlanner": {
+  "en": "Social planner",
+  "ko": "소셜 플래너"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmStore": {
+  "en": "Online store",
+  "ko": "온라인 스토어"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmSupportAgent": {
+  "en": "Support agent",
+  "ko": "지원 에이전트"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmSurveys": {
+  "en": "Surveys",
+  "ko": "설문"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmTemplateLibrary": {
+  "en": "Template library",
+  "ko": "템플릿 라이브러리"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmUsers": {
+  "en": "Users",
+  "ko": "사용자"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmVoiceAi": {
+  "en": "Voice AI",
+  "ko": "음성 AI"
+ },
+ "copilotApp.copilot.askAi.access.domain.crmWorkflows": {
+  "en": "Workflows",
+  "ko": "워크플로우"
+ },
+ "copilotApp.copilot.askAi.access.domain.webResearch": {
+  "en": "Web research",
+  "ko": "웹 리서치"
+ },
+ "copilotApp.copilot.askAi.access.errors.bulkInProgress.message": {
+  "en": "Wait until it finishes before changing access again. Another change now would overwrite this one.",
+  "ko": "완료될 때까지 기다린 후 액세스를 다시 변경하세요. 지금 다른 변경을 하면 진행 중인 변경을 덮어쓰게 됩니다."
+ },
+ "copilotApp.copilot.askAi.access.errors.bulkInProgress.title": {
+  "en": "A bulk change is already running",
+  "ko": "이미 일괄 변경이 실행 중입니다"
+ },
+ "copilotApp.copilot.askAi.access.errors.busy.message": {
+  "en": "Ask AI access is busy right now. Nothing was changed — try again in a moment.",
+  "ko": "현재 'AI에게 문의' 액세스 요청이 몰려 있습니다. 아무것도 변경되지 않았으니 잠시 후 다시 시도하세요."
+ },
+ "copilotApp.copilot.askAi.access.errors.busy.title": {
+  "en": "Too many requests",
+  "ko": "요청이 너무 많습니다"
+ },
+ "copilotApp.copilot.askAi.access.errors.contract.message": {
+  "en": "The server answered in a format this version of Ask AI can't read. Reloading won't help — please report it.",
+  "ko": "서버가 이 버전의 'AI에게 문의'에서 읽을 수 없는 형식으로 응답했습니다. 새로고침해도 해결되지 않으니 문제를 신고해 주세요."
+ },
+ "copilotApp.copilot.askAi.access.errors.contract.title": {
+  "en": "This screen is out of date",
+  "ko": "이 화면은 최신 버전이 아닙니다"
+ },
+ "copilotApp.copilot.askAi.access.errors.forbidden.message": {
+  "en": "Your role doesn't allow it, or this sub-account belongs to another agency.",
+  "ko": "역할에서 허용되지 않거나, 이 서브 계정이 다른 에이전시에 속해 있습니다."
+ },
+ "copilotApp.copilot.askAi.access.errors.forbidden.title": {
+  "en": "You can't make that change",
+  "ko": "이 변경을 할 수 없습니다"
+ },
+ "copilotApp.copilot.askAi.access.errors.generic.message": {
+  "en": "Nothing was changed. Try again.",
+  "ko": "아무것도 변경되지 않았습니다. 다시 시도하세요."
+ },
+ "copilotApp.copilot.askAi.access.errors.generic.title": {
+  "en": "Something went wrong",
+  "ko": "문제가 발생했습니다"
+ },
+ "copilotApp.copilot.askAi.access.errors.missing.message": {
+  "en": "It may have been deleted since this screen loaded. Reload to see what's there now.",
+  "ko": "이 화면을 불러온 뒤 삭제되었을 수 있습니다. 새로고침하여 현재 상태를 확인하세요."
+ },
+ "copilotApp.copilot.askAi.access.errors.missing.title": {
+  "en": "That no longer exists",
+  "ko": "더 이상 존재하지 않는 항목입니다"
+ },
+ "copilotApp.copilot.askAi.access.errors.offline.title": {
+  "en": "No connection",
+  "ko": "연결 없음"
+ },
+ "copilotApp.copilot.askAi.access.errors.rejected.message": {
+  "en": "The server refused it, so nothing was changed. Check what you changed and try again.",
+  "ko": "서버가 요청을 거부하여 아무것도 변경되지 않았습니다. 변경한 내용을 확인하고 다시 시도하세요."
+ },
+ "copilotApp.copilot.askAi.access.errors.rejected.title": {
+  "en": "That change wasn't accepted",
+  "ko": "변경이 수락되지 않았습니다"
+ },
+ "copilotApp.copilot.askAi.access.errors.requestId": {
+  "en": "Reference {requestId}",
+  "ko": "참조 번호 {requestId}"
+ },
+ "copilotApp.copilot.askAi.access.errors.sensitive.message": {
+  "en": "A sensitive skill is being raised, so the server asks you to confirm the level before it saves.",
+  "ko": "민감한 스킬의 수준을 높이는 중이므로, 서버가 저장 전에 수준을 확인하도록 요청합니다."
+ },
+ "copilotApp.copilot.askAi.access.errors.sensitive.title": {
+  "en": "This needs confirming",
+  "ko": "확인이 필요합니다"
+ },
+ "copilotApp.copilot.askAi.access.errors.serverError.message": {
+  "en": "Nothing was changed. Try again.",
+  "ko": "아무것도 변경되지 않았습니다. 다시 시도하세요."
+ },
+ "copilotApp.copilot.askAi.access.errors.serverError.title": {
+  "en": "The server couldn't finish that",
+  "ko": "서버에서 작업을 완료하지 못했습니다"
+ },
+ "copilotApp.copilot.askAi.access.errors.tierArchived.message": {
+  "en": "This level was archived somewhere else since this screen loaded, so nothing was changed. Refresh the list, then pick a different level.",
+  "ko": "이 화면을 불러온 뒤 다른 곳에서 이 수준이 보관되어 아무것도 변경되지 않았습니다. 목록을 새로고침한 후 다른 수준을 선택하세요."
+ },
+ "copilotApp.copilot.askAi.access.errors.tierInUse.title": {
+  "en": "Still in use",
+  "ko": "아직 사용 중"
+ },
+ "copilotApp.copilot.askAi.access.errors.tierIsAgencyDefault.message": {
+  "en": "Every sub-account with no level of its own inherits this one. Change the default first.",
+  "ko": "개별 수준이 없는 모든 서브 계정이 이 수준을 상속합니다. 먼저 기본값을 변경하세요."
+ },
+ "copilotApp.copilot.askAi.access.errors.tierIsAgencyDefault.title": {
+  "en": "It's the default",
+  "ko": "기본 수준입니다"
+ },
+ "copilotApp.copilot.askAi.access.errors.tierIsBuiltIn.message": {
+  "en": "Assistant, Operator and Builder can be edited, but not renamed, rebased or archived.",
+  "ko": "어시스턴트, 오퍼레이터, 빌더는 편집할 수 있지만 이름 변경, 기준 수준 변경, 보관은 할 수 없습니다."
+ },
+ "copilotApp.copilot.askAi.access.errors.tierIsBuiltIn.title": {
+  "en": "Built-in level",
+  "ko": "내장 수준"
+ },
+ "copilotApp.copilot.askAi.access.errors.tierLimitReached.message": {
+  "en": "An agency can have {max} custom access levels. Archive one to make room.",
+  "ko": "에이전시당 사용자 지정 액세스 수준은 {max}개까지 만들 수 있습니다. 자리를 만들려면 하나를 보관하세요."
+ },
+ "copilotApp.copilot.askAi.access.errors.tierLimitReached.title": {
+  "en": "No room for another level",
+  "ko": "수준을 더 추가할 수 없습니다"
+ },
+ "copilotApp.copilot.askAi.access.errors.tierNameInvalid.message": {
+  "en": "Give the level a name of 1 to 40 characters, with no line breaks.",
+  "ko": "줄바꿈 없이 1~40자로 수준 이름을 입력하세요."
+ },
+ "copilotApp.copilot.askAi.access.errors.tierNameInvalid.title": {
+  "en": "That name won't work",
+  "ko": "사용할 수 없는 이름입니다"
+ },
+ "copilotApp.copilot.askAi.access.errors.tierNameTaken.message": {
+  "en": "Another access level already uses that name. Pick a different one.",
+  "ko": "다른 액세스 수준에서 이미 사용 중인 이름입니다. 다른 이름을 선택하세요."
+ },
+ "copilotApp.copilot.askAi.access.errors.tierNameTaken.title": {
+  "en": "That name is taken",
+  "ko": "이미 사용 중인 이름입니다"
+ },
+ "copilotApp.copilot.askAi.access.errors.tierUnknown.message": {
+  "en": "That access level no longer exists. Refresh and try again.",
+  "ko": "해당 액세스 수준이 더 이상 존재하지 않습니다. 새로고침한 후 다시 시도하세요."
+ },
+ "copilotApp.copilot.askAi.access.errors.tierUnknown.title": {
+  "en": "Level not found",
+  "ko": "수준을 찾을 수 없습니다"
+ },
+ "copilotApp.copilot.askAi.access.errors.unassignUnavailable.message": {
+  "en": "Following the agency default again hasn't been switched on yet, so no role can do it and nothing was changed. Set an access level explicitly instead.",
+  "ko": "에이전시 기본값을 다시 따르도록 하는 기능이 아직 활성화되지 않아 어떤 역할로도 실행할 수 없으며, 아무것도 변경되지 않았습니다. 대신 액세스 수준을 직접 지정하세요."
+ },
+ "copilotApp.copilot.askAi.access.errors.unassignUnavailable.title": {
+  "en": "Not available yet",
+  "ko": "아직 사용할 수 없음"
+ },
+ "copilotApp.copilot.askAi.access.errors.unavailable.message": {
+  "en": "Nothing was changed. Try again shortly.",
+  "ko": "아무것도 변경되지 않았습니다. 잠시 후 다시 시도하세요."
+ },
+ "copilotApp.copilot.askAi.access.errors.unavailable.title": {
+  "en": "A service Ask AI access needs is down",
+  "ko": "'AI에게 문의' 액세스에 필요한 서비스가 중단되었습니다"
+ },
+ "copilotApp.copilot.askAi.access.errors.uncertain.message": {
+  "en": "The change failed and so did undoing it, so what's stored now isn't known. Don't try again — reload to see the current state, and send support the reference below.",
+  "ko": "변경과 되돌리기가 모두 실패하여 현재 저장된 상태를 알 수 없습니다. 다시 시도하지 말고 새로고침하여 현재 상태를 확인한 뒤, 아래 참조 번호를 지원팀에 보내 주세요."
+ },
+ "copilotApp.copilot.askAi.access.errors.uncertain.title": {
+  "en": "Permission state is uncertain",
+  "ko": "권한 상태를 확인할 수 없습니다"
+ },
+ "copilotApp.copilot.askAi.access.group.admin": {
+  "en": "Admin & settings",
+  "ko": "관리 및 설정"
+ },
+ "copilotApp.copilot.askAi.access.group.automation": {
+  "en": "Automation",
+  "ko": "자동화"
+ },
+ "copilotApp.copilot.askAi.access.group.knowledgeMemory": {
+  "en": "Knowledge & memory",
+  "ko": "지식 및 메모리"
+ },
+ "copilotApp.copilot.askAi.access.group.mixed": {
+  "en": "Mixed",
+  "ko": "혼합"
+ },
+ "copilotApp.copilot.askAi.access.group.ofOn": {
+  "en": "of {total} on",
+  "ko": "/ {total} 켜짐"
+ },
+ "copilotApp.copilot.askAi.access.group.off": {
+  "en": "Off",
+  "ko": "끔"
+ },
+ "copilotApp.copilot.askAi.access.group.on": {
+  "en": "On",
+  "ko": "켬"
+ },
+ "copilotApp.copilot.askAi.access.group.paymentsBilling": {
+  "en": "Payments & billing",
+  "ko": "결제 및 청구"
+ },
+ "copilotApp.copilot.askAi.access.group.phoneEmailCompliance": {
+  "en": "Phone, email & compliance",
+  "ko": "전화, 이메일 및 규정 준수"
+ },
+ "copilotApp.copilot.askAi.access.group.reportingAds": {
+  "en": "Reporting & ads",
+  "ko": "리포팅 및 광고"
+ },
+ "copilotApp.copilot.askAi.access.group.setWholeGroup": {
+  "en": "Set the whole group",
+  "ko": "그룹 전체 설정"
+ },
+ "copilotApp.copilot.askAi.access.group.setWholeGroupFor": {
+  "en": "Set every skill in {group}",
+  "ko": "{group}의 모든 스킬 설정"
+ },
+ "copilotApp.copilot.askAi.access.group.sitesContent": {
+  "en": "Sites & content",
+  "ko": "사이트 및 콘텐츠"
+ },
+ "copilotApp.copilot.askAi.access.group.studioSkills": {
+  "en": "Skill Studio skills",
+  "ko": "Skill Studio 스킬"
+ },
+ "copilotApp.copilot.askAi.access.group.toggleGroup": {
+  "en": "Turn {group} on or off",
+  "ko": "{group} 켜기/끄기"
+ },
+ "copilotApp.copilot.askAi.access.history.unavailableForPerson": {
+  "en": "Changes to {name}’s access are recorded in the audit log, which Ask AI can’t read from your browser yet.",
+  "ko": "{name}의 액세스 변경 내역은 감사 로그에 기록되지만, 'AI에게 문의'는 아직 브라우저에서 감사 로그를 읽을 수 없습니다."
+ },
+ "copilotApp.copilot.askAi.access.history.unavailableForSubAccount": {
+  "en": "Access changes for {name} are recorded in the audit log, which Ask AI can’t read from your browser yet.",
+  "ko": "{name}의 액세스 변경 내역은 감사 로그에 기록되지만, 'AI에게 문의'는 아직 브라우저에서 감사 로그를 읽을 수 없습니다."
+ },
+ "copilotApp.copilot.askAi.access.history.unavailableMessage": {
+  "en": "Access changes are recorded in the audit log, which Ask AI can’t read from your browser yet.",
+  "ko": "액세스 변경 내역은 감사 로그에 기록되지만, 'AI에게 문의'는 아직 브라우저에서 감사 로그를 읽을 수 없습니다."
+ },
+ "copilotApp.copilot.askAi.access.history.unavailableNote": {
+  "en": "Every change you make here is still recorded with your name and the time — this view is what’s missing, not the record.",
+  "ko": "여기에서 변경한 모든 내용은 여전히 이름과 시간과 함께 기록됩니다. 빠진 것은 기록이 아니라 이 보기 화면입니다."
+ },
+ "copilotApp.copilot.askAi.access.history.unavailableTitle": {
+  "en": "Change history isn’t available here yet",
+  "ko": "여기에서는 아직 변경 기록을 볼 수 없습니다"
+ },
+ "copilotApp.copilot.askAi.access.module.agencyOnly": {
+  "en": "Agency only",
+  "ko": "에이전시 전용"
+ },
+ "copilotApp.copilot.askAi.access.module.agencyUsersOnly": {
+  "en": "Agency users only",
+  "ko": "에이전시 사용자 전용"
+ },
+ "copilotApp.copilot.askAi.access.module.agencyUsersOnlyReason": {
+  "en": "Super critical: runs only for agency users, so a sub-account level cannot turn it on.",
+  "ko": "최고 위험: 에이전시 사용자에게만 실행되므로 서브 계정 수준에서는 켤 수 없습니다."
+ },
+ "copilotApp.copilot.askAi.access.module.blocked": {
+  "en": "Blocked",
+  "ko": "차단됨"
+ },
+ "copilotApp.copilot.askAi.access.module.blockedReason": {
+  "en": "Blocked for every access level. Ask AI never calls this, and no level can allow it.",
+  "ko": "모든 액세스 수준에서 차단됩니다. 'AI에게 문의'는 이 항목을 호출하지 않으며, 어떤 수준에서도 허용할 수 없습니다."
+ },
+ "copilotApp.copilot.askAi.access.module.cappedBySkill": {
+  "en": "Bounded by the {module} skill's level — raise that first.",
+  "ko": "{module} 스킬의 수준으로 제한됩니다. 먼저 해당 수준을 높이세요."
+ },
+ "copilotApp.copilot.askAi.access.module.changed": {
+  "en": "Customized",
+  "ko": "사용자 지정됨"
+ },
+ "copilotApp.copilot.askAi.access.module.default": {
+  "en": "Inherited",
+  "ko": "상속됨"
+ },
+ "copilotApp.copilot.askAi.access.module.destructive": {
+  "en": "· {count} destructive",
+  "ko": "· 데이터 삭제 작업 {count}개"
+ },
+ "copilotApp.copilot.askAi.access.module.destructiveSubSkills": {
+  "en": "{count} of them destructive",
+  "ko": "그중 {count}개는 데이터 삭제 작업"
+ },
+ "copilotApp.copilot.askAi.access.module.destructiveSubSkillsOne": {
+  "en": "{count} of them destructive",
+  "ko": "그중 {count}개는 데이터 삭제 작업"
+ },
+ "copilotApp.copilot.askAi.access.module.included": {
+  "en": "Included",
+  "ko": "포함됨"
+ },
+ "copilotApp.copilot.askAi.access.module.levelFor": {
+  "en": "Access level for {module}",
+  "ko": "{module} 액세스 수준"
+ },
+ "copilotApp.copilot.askAi.access.module.levelForSubSkill": {
+  "en": "Access level for {module} · {subSkill}",
+  "ko": "{module} · {subSkill} 액세스 수준"
+ },
+ "copilotApp.copilot.askAi.access.module.levelNotApplicable": {
+  "en": "This sub-skill only runs as {level} — choose {level} or Off.",
+  "ko": "이 하위 스킬은 {level} 수준으로만 실행됩니다. {level} 또는 끔을 선택하세요."
+ },
+ "copilotApp.copilot.askAi.access.module.noSubSkills": {
+  "en": "This skill has no sub-skills. The switch above turns the whole skill on or off.",
+  "ko": "이 스킬에는 하위 스킬이 없습니다. 위의 스위치로 스킬 전체를 켜거나 끌 수 있습니다."
+ },
+ "copilotApp.copilot.askAi.access.module.notIncluded": {
+  "en": "Not included at {level}",
+  "ko": "{level} 수준에 포함되지 않음"
+ },
+ "copilotApp.copilot.askAi.access.module.operations": {
+  "en": "{count} operations",
+  "ko": "작업 {count}개"
+ },
+ "copilotApp.copilot.askAi.access.module.operationsOne": {
+  "en": "{count} operation",
+  "ko": "작업 {count}개"
+ },
+ "copilotApp.copilot.askAi.access.module.resetSubSkill": {
+  "en": "Back to the skill's level",
+  "ko": "스킬 수준으로 재설정"
+ },
+ "copilotApp.copilot.askAi.access.module.sensitive": {
+  "en": "Sensitive",
+  "ko": "민감함"
+ },
+ "copilotApp.copilot.askAi.access.module.sensitiveCeiling": {
+  "en": "capped at {level} on this level",
+  "ko": "이 수준에서는 최대 {level}(으)로 제한됨"
+ },
+ "copilotApp.copilot.askAi.access.module.subSkills": {
+  "en": "{count} sub-skills",
+  "ko": "하위 스킬 {count}개"
+ },
+ "copilotApp.copilot.askAi.access.module.subSkillsFor": {
+  "en": "Sub-skills of {module}",
+  "ko": "{module}의 하위 스킬"
+ },
+ "copilotApp.copilot.askAi.access.module.toggleNoApiOverview": {
+  "en": "Include the {module} overview",
+  "ko": "{module} 개요 포함"
+ },
+ "copilotApp.copilot.askAi.access.module.toggleNoApiSubSkill": {
+  "en": "Include {subSkill} in {module}",
+  "ko": "{module}에 {subSkill} 포함"
+ },
+ "copilotApp.copilot.askAi.access.module.toggleSkill": {
+  "en": "Turn {module} on or off",
+  "ko": "{module} 켜기/끄기"
+ },
+ "copilotApp.copilot.askAi.access.module.toggleSubSkill": {
+  "en": "Turn {module} · {subSkill} on or off",
+  "ko": "{module} · {subSkill} 켜기/끄기"
+ },
+ "copilotApp.copilot.askAi.access.module.unavailable": {
+  "en": "Fixed by your agency",
+  "ko": "에이전시에서 고정됨"
+ },
+ "copilotApp.copilot.askAi.access.people.accessEditingUnavailable": {
+  "en": "Access editing is unavailable until this person's identity can be verified. Their current access is unchanged.",
+  "ko": "이 사용자의 신원이 확인될 때까지 액세스를 편집할 수 없습니다. 현재 액세스는 그대로 유지됩니다."
+ },
+ "copilotApp.copilot.askAi.access.people.accountAdmin": {
+  "en": "Account admin",
+  "ko": "계정 관리자"
+ },
+ "copilotApp.copilot.askAi.access.people.accountUser": {
+  "en": "Account user",
+  "ko": "계정 사용자"
+ },
+ "copilotApp.copilot.askAi.access.people.actsIn": {
+  "en": "· acts in {count} skills",
+  "ko": "· 스킬 {count}개에서 작업 가능"
+ },
+ "copilotApp.copilot.askAi.access.people.agencyAdmin": {
+  "en": "Agency admin",
+  "ko": "에이전시 관리자"
+ },
+ "copilotApp.copilot.askAi.access.people.agencyAdminAccessLocked": {
+  "en": "Agency users and admins have full Ask AI access. Their access cannot be changed.",
+  "ko": "에이전시 사용자와 관리자는 'AI에게 문의' 전체 액세스 권한을 가집니다. 이들의 액세스는 변경할 수 없습니다."
+ },
+ "copilotApp.copilot.askAi.access.people.agencyAdminBulkExclusion": {
+  "en": "Agency users and admins are excluded and keep full access.",
+  "ko": "에이전시 사용자와 관리자는 제외되며 전체 액세스를 유지합니다."
+ },
+ "copilotApp.copilot.askAi.access.people.agencyUser": {
+  "en": "Agency user",
+  "ko": "에이전시 사용자"
+ },
+ "copilotApp.copilot.askAi.access.people.allRoles": {
+  "en": "All roles",
+  "ko": "모든 역할"
+ },
+ "copilotApp.copilot.askAi.access.people.allUserTypes": {
+  "en": "All user types",
+  "ko": "모든 사용자 유형"
+ },
+ "copilotApp.copilot.askAi.access.people.askAiAccess": {
+  "en": "Ask AI access",
+  "ko": "'AI에게 문의' 액세스"
+ },
+ "copilotApp.copilot.askAi.access.people.bulkConfirm": {
+  "en": "Apply",
+  "ko": "적용"
+ },
+ "copilotApp.copilot.askAi.access.people.bulkConfirmClearMessage": {
+  "en": "Each person selected goes back to their sub-account’s default. Ask AI picks it up immediately.",
+  "ko": "선택한 각 사용자가 서브 계정 기본값으로 돌아갑니다. 'AI에게 문의'에 즉시 반영됩니다."
+ },
+ "copilotApp.copilot.askAi.access.people.bulkConfirmMessage": {
+  "en": "Ask AI picks the new access up immediately for everyone selected.",
+  "ko": "선택한 모든 사용자의 새 액세스가 'AI에게 문의'에 즉시 적용됩니다."
+ },
+ "copilotApp.copilot.askAi.access.people.bulkConfirmTitle": {
+  "en": "Set {count} people to {level}?",
+  "ko": "사용자 {count}명을 {level}(으)로 설정하시겠습니까?"
+ },
+ "copilotApp.copilot.askAi.access.people.bulkConfirmTitleOne": {
+  "en": "Set {count} person to {level}?",
+  "ko": "사용자 {count}명을 {level}(으)로 설정하시겠습니까?"
+ },
+ "copilotApp.copilot.askAi.access.people.bulkDefaultOption": {
+  "en": "Use sub-account default",
+  "ko": "서브 계정 기본값 사용"
+ },
+ "copilotApp.copilot.askAi.access.people.bulkIncludesYou": {
+  "en": "This includes your own access.",
+  "ko": "본인의 액세스도 포함됩니다."
+ },
+ "copilotApp.copilot.askAi.access.people.bulkRoleDefaultHint": {
+  "en": "Removes each person’s own level, so their role decides again.",
+  "ko": "각 사용자의 개별 수준을 제거하여 다시 역할에 따라 결정되도록 합니다."
+ },
+ "copilotApp.copilot.askAi.access.people.bulkRoleDefaultOption": {
+  "en": "Reset to role default",
+  "ko": "역할 기본값으로 재설정"
+ },
+ "copilotApp.copilot.askAi.access.people.clearSelection": {
+  "en": "Clear selection",
+  "ko": "선택 해제"
+ },
+ "copilotApp.copilot.askAi.access.people.columnAccess": {
+  "en": "Ask AI access",
+  "ko": "'AI에게 문의' 액세스"
+ },
+ "copilotApp.copilot.askAi.access.people.columnPerson": {
+  "en": "Person",
+  "ko": "사용자"
+ },
+ "copilotApp.copilot.askAi.access.people.columnRole": {
+  "en": "Role",
+  "ko": "역할"
+ },
+ "copilotApp.copilot.askAi.access.people.crmPermissionAssigned": {
+  "en": "Some actions are limited to assigned records. Record access is checked when the action runs.",
+  "ko": "일부 작업은 할당된 레코드로 제한됩니다. 레코드 액세스는 작업 실행 시 확인됩니다."
+ },
+ "copilotApp.copilot.askAi.access.people.crmPermissionNote": {
+  "en": "Counts include only actions allowed by both Ask AI settings and the user's CRM module permissions. Record access and other request requirements are checked when an action runs.",
+  "ko": "집계에는 'AI에게 문의' 설정과 사용자의 CRM 모듈 권한에서 모두 허용된 작업만 포함됩니다. 레코드 액세스 및 기타 요청 요건은 작업 실행 시 확인됩니다."
+ },
+ "copilotApp.copilot.askAi.access.people.crmPermissionPartial": {
+  "en": "Permission checks are incomplete for {count} skills. Unverified actions are not included in these counts.",
+  "ko": "스킬 {count}개의 권한 확인이 완료되지 않았습니다. 확인되지 않은 작업은 이 집계에 포함되지 않습니다."
+ },
+ "copilotApp.copilot.askAi.access.people.crmPermissionPartialOne": {
+  "en": "Permission checks are incomplete for {count} skill. Unverified actions are not included in these counts.",
+  "ko": "스킬 {count}개의 권한 확인이 완료되지 않았습니다. 확인되지 않은 작업은 이 집계에 포함되지 않습니다."
+ },
+ "copilotApp.copilot.askAi.access.people.crmPermissionSummary": {
+  "en": "CRM permission check",
+  "ko": "CRM 권한 확인"
+ },
+ "copilotApp.copilot.askAi.access.people.crmPermissionUnknown": {
+  "en": "CRM permissions could not be checked. Configured Ask AI access above is not a guarantee that CRM actions are allowed.",
+  "ko": "CRM 권한을 확인할 수 없습니다. 위에 설정된 'AI에게 문의' 액세스가 CRM 작업 허용을 보장하지는 않습니다."
+ },
+ "copilotApp.copilot.askAi.access.people.default": {
+  "en": "Default",
+  "ko": "기본"
+ },
+ "copilotApp.copilot.askAi.access.people.defaultHint": {
+  "en": "Follows this sub-account’s default level, and changes when the default changes. Pick a level below to set one for this person only.",
+  "ko": "이 서브 계정의 기본 수준을 따르며, 기본값이 바뀌면 함께 바뀝니다. 이 사용자에게만 수준을 지정하려면 아래에서 수준을 선택하세요."
+ },
+ "copilotApp.copilot.askAi.access.people.defaultOption": {
+  "en": "Default · {level}",
+  "ko": "기본 · {level}"
+ },
+ "copilotApp.copilot.askAi.access.people.defaultShort": {
+  "en": "the sub-account default",
+  "ko": "서브 계정 기본값"
+ },
+ "copilotApp.copilot.askAi.access.people.emptyTitle": {
+  "en": "Nobody matches those filters",
+  "ko": "필터와 일치하는 사용자가 없습니다"
+ },
+ "copilotApp.copilot.askAi.access.people.explanationFailed": {
+  "en": "Couldn't work out what this access level allows in {subAccount}, so the comparison below is left out rather than shown with the agency-wide numbers.",
+  "ko": "{subAccount}에서 이 액세스 수준이 허용하는 범위를 파악하지 못해, 에이전시 전체 수치로 대신 표시하지 않고 아래 비교를 생략했습니다."
+ },
+ "copilotApp.copilot.askAi.access.people.explanationLoading": {
+  "en": "Working out what this access level allows in {subAccount}…",
+  "ko": "{subAccount}에서 이 액세스 수준이 허용하는 범위를 확인하는 중…"
+ },
+ "copilotApp.copilot.askAi.access.people.failedTitle": {
+  "en": "Couldn't load people",
+  "ko": "사용자를 불러올 수 없습니다"
+ },
+ "copilotApp.copilot.askAi.access.people.filterByUserType": {
+  "en": "Filter by user type",
+  "ko": "사용자 유형별 필터"
+ },
+ "copilotApp.copilot.askAi.access.people.hasHiddenModules": {
+  "en": "Turned off skills themselves",
+  "ko": "스킬을 직접 끈 사용자"
+ },
+ "copilotApp.copilot.askAi.access.people.hasHiddenModulesHint": {
+  "en": "People who turned off one or more skills for themselves in their own Ask AI settings. They can turn them back on; this only hides, it never grants.",
+  "ko": "자신의 'AI에게 문의' 설정에서 스킬을 하나 이상 직접 끈 사용자입니다. 다시 켤 수 있으며, 이 설정은 숨기기만 할 뿐 권한을 부여하지는 않습니다."
+ },
+ "copilotApp.copilot.askAi.access.people.hiddenModules": {
+  "en": "{name} has hidden {count} skills from their own Ask AI. A personal preference; it can only narrow, never widen.",
+  "ko": "{name}님이 자신의 'AI에게 문의'에서 스킬 {count}개를 숨겼습니다. 개인 설정이므로 범위를 좁힐 수만 있고 넓힐 수는 없습니다."
+ },
+ "copilotApp.copilot.askAi.access.people.hiddenModulesOne": {
+  "en": "{name} has hidden {count} skill from their own Ask AI. A personal preference; it can only narrow, never widen.",
+  "ko": "{name}님이 자신의 'AI에게 문의'에서 스킬 {count}개를 숨겼습니다. 개인 설정이므로 범위를 좁힐 수만 있고 넓힐 수는 없습니다."
+ },
+ "copilotApp.copilot.askAi.access.people.hidesCount": {
+  "en": "· hides {count} skills",
+  "ko": "· 스킬 {count}개 숨김"
+ },
+ "copilotApp.copilot.askAi.access.people.historyForPerson": {
+  "en": "Change history for this person",
+  "ko": "이 사용자의 변경 기록"
+ },
+ "copilotApp.copilot.askAi.access.people.levelFor": {
+  "en": "Ask AI access level for {name}",
+  "ko": "{name}님의 'AI에게 문의' 액세스 수준"
+ },
+ "copilotApp.copilot.askAi.access.people.levelRetired": {
+  "en": "Archived. This person is still on it, but nobody new can be put on it.",
+  "ko": "보관된 수준입니다. 이 사용자는 계속 사용하지만 다른 사용자에게 새로 지정할 수는 없습니다."
+ },
+ "copilotApp.copilot.askAi.access.people.loading": {
+  "en": "Loading people…",
+  "ko": "사용자 불러오는 중…"
+ },
+ "copilotApp.copilot.askAi.access.people.manageAccess": {
+  "en": "Change access",
+  "ko": "액세스 변경"
+ },
+ "copilotApp.copilot.askAi.access.people.minExplanation": {
+  "en": "The lower of two things: {subAccount} allows {subAccountTier} (act in {subAccountEdit}) and {name} is on {personTier} (act in {personEdit}). Ask AI gets the smaller of the two, skill by skill.",
+  "ko": "두 설정 중 낮은 쪽이 적용됩니다. {subAccount}은(는) {subAccountTier}을(를) 허용하고({subAccountEdit}에서 작업 가능), {name}님은 {personTier} 수준입니다({personEdit}에서 작업 가능). 'AI에게 문의'는 스킬별로 둘 중 더 좁은 쪽을 따릅니다."
+ },
+ "copilotApp.copilot.askAi.access.people.noAccess": {
+  "en": "Actions restricted",
+  "ko": "작업 제한됨"
+ },
+ "copilotApp.copilot.askAi.access.people.noAccessHint": {
+  "en": "Ask AI is available. Choose a level to update action permissions.",
+  "ko": "'AI에게 문의'를 사용할 수 있습니다. 작업 권한을 변경하려면 수준을 선택하세요."
+ },
+ "copilotApp.copilot.askAi.access.people.noneMessage": {
+  "en": "Once someone is added to this sub-account, they appear here with the Ask AI access they get.",
+  "ko": "이 서브 계정에 사용자가 추가되면 해당 사용자가 받는 'AI에게 문의' 액세스와 함께 여기에 표시됩니다."
+ },
+ "copilotApp.copilot.askAi.access.people.noneTitle": {
+  "en": "Nobody in this sub-account yet",
+  "ko": "이 서브 계정에 아직 사용자가 없습니다"
+ },
+ "copilotApp.copilot.askAi.access.people.openPerson": {
+  "en": "What Ask AI can do for {name}",
+  "ko": "{name}님의 'AI에게 문의' 허용 범위"
+ },
+ "copilotApp.copilot.askAi.access.people.overrideNotice": {
+  "en": "Set specifically for this person, replacing the {defaultLevel} sub-account default.",
+  "ko": "이 사용자에게 개별 설정되어 서브 계정 기본값인 {defaultLevel}을(를) 대신합니다."
+ },
+ "copilotApp.copilot.askAi.access.people.role": {
+  "en": "Role",
+  "ko": "역할"
+ },
+ "copilotApp.copilot.askAi.access.people.roleAdmin": {
+  "en": "Admin",
+  "ko": "관리자"
+ },
+ "copilotApp.copilot.askAi.access.people.roleDefault": {
+  "en": "Role default",
+  "ko": "역할 기본값"
+ },
+ "copilotApp.copilot.askAi.access.people.roleDefaultHint": {
+  "en": "Removes their own level, so their role decides again.",
+  "ko": "개별 수준을 제거하여 다시 역할에 따라 결정되도록 합니다."
+ },
+ "copilotApp.copilot.askAi.access.people.roleDefaultOption": {
+  "en": "Role default · {level}",
+  "ko": "역할 기본값 · {level}"
+ },
+ "copilotApp.copilot.askAi.access.people.roleDefaultShort": {
+  "en": "their role default",
+  "ko": "역할 기본값"
+ },
+ "copilotApp.copilot.askAi.access.people.roleUser": {
+  "en": "User",
+  "ko": "사용자"
+ },
+ "copilotApp.copilot.askAi.access.people.scopeAll": {
+  "en": "Change eligible users…",
+  "ko": "대상 사용자 변경…"
+ },
+ "copilotApp.copilot.askAi.access.people.searchPlaceholder": {
+  "en": "Search people",
+  "ko": "사용자 검색"
+ },
+ "copilotApp.copilot.askAi.access.people.selectAllLoaded": {
+  "en": "Select all loaded people",
+  "ko": "불러온 사용자 모두 선택"
+ },
+ "copilotApp.copilot.askAi.access.people.selectRow": {
+  "en": "Select {name}",
+  "ko": "{name} 선택"
+ },
+ "copilotApp.copilot.askAi.access.people.selectedCount": {
+  "en": "{count} people selected",
+  "ko": "{count}명 선택됨"
+ },
+ "copilotApp.copilot.askAi.access.people.selectedCountOne": {
+  "en": "{count} person selected",
+  "ko": "{count}명 선택됨"
+ },
+ "copilotApp.copilot.askAi.access.people.selfChangeCancel": {
+  "en": "Keep my access",
+  "ko": "내 액세스 유지"
+ },
+ "copilotApp.copilot.askAi.access.people.selfChangeConfirm": {
+  "en": "Change my access",
+  "ko": "내 액세스 변경"
+ },
+ "copilotApp.copilot.askAi.access.people.selfChangeCustom": {
+  "en": "This changes what Ask AI can do for you in {subAccount} to the selected custom level. Your admin rights are unchanged.",
+  "ko": "{subAccount}에서 내 'AI에게 문의' 허용 범위가 선택한 사용자 지정 수준으로 변경됩니다. 관리자 권한은 그대로 유지됩니다."
+ },
+ "copilotApp.copilot.askAi.access.people.selfChangeLower": {
+  "en": "This narrows what Ask AI will do for you in {subAccount}. Your admin rights are unchanged, and you can set yourself back at any time.",
+  "ko": "{subAccount}에서 내 'AI에게 문의' 허용 범위가 좁아집니다. 관리자 권한은 그대로 유지되며, 언제든지 다시 되돌릴 수 있습니다."
+ },
+ "copilotApp.copilot.askAi.access.people.selfChangeOff": {
+  "en": "This turns Ask AI off for you in {subAccount}. Your admin rights are unchanged — only what Ask AI will do for you here.",
+  "ko": "{subAccount}에서 내 'AI에게 문의'가 꺼집니다. 관리자 권한은 그대로이며, 여기에서 'AI에게 문의'가 대신 해 주는 작업만 바뀝니다."
+ },
+ "copilotApp.copilot.askAi.access.people.selfChangeTitle": {
+  "en": "Change your own Ask AI access?",
+  "ko": "내 'AI에게 문의' 액세스를 변경하시겠습니까?"
+ },
+ "copilotApp.copilot.askAi.access.people.setForThisPerson": {
+  "en": "Changed from default",
+  "ko": "기본값에서 변경됨"
+ },
+ "copilotApp.copilot.askAi.access.people.setForThisPersonHint": {
+  "en": "People given a level of their own, instead of following this sub-account’s default.",
+  "ko": "이 서브 계정의 기본값을 따르지 않고 개별 수준이 지정된 사용자입니다."
+ },
+ "copilotApp.copilot.askAi.access.people.showingFiltered": {
+  "en": "Showing {shown} matches · {total} people in all",
+  "ko": "일치 항목 {shown}개 표시 중 · 전체 사용자 {total}명"
+ },
+ "copilotApp.copilot.askAi.access.people.showingFilteredOne": {
+  "en": "Showing {shown} match · {total} people in all",
+  "ko": "일치 항목 {shown}개 표시 중 · 전체 사용자 {total}명"
+ },
+ "copilotApp.copilot.askAi.access.people.thisSubAccount": {
+  "en": "this sub-account",
+  "ko": "이 서브 계정"
+ },
+ "copilotApp.copilot.askAi.access.people.turnedOff": {
+  "en": "Ask AI is available. Choose a level to update action permissions.",
+  "ko": "'AI에게 문의'를 사용할 수 있습니다. 작업 권한을 변경하려면 수준을 선택하세요."
+ },
+ "copilotApp.copilot.askAi.access.people.unrestricted": {
+  "en": "Full access",
+  "ko": "전체 액세스"
+ },
+ "copilotApp.copilot.askAi.access.people.whatAskAiCanDo": {
+  "en": "Configured Ask AI access for {name}",
+  "ko": "{name}님에게 설정된 'AI에게 문의' 액세스"
+ },
+ "copilotApp.copilot.askAi.access.people.you": {
+  "en": "You",
+  "ko": "나"
+ },
+ "copilotApp.copilot.askAi.access.review.canDo": {
+  "en": "Includes {list}.",
+  "ko": "포함 항목: {list}."
+ },
+ "copilotApp.copilot.askAi.access.review.canDoMore": {
+  "en": "Includes {list}, and {count} more.",
+  "ko": "포함 항목: {list} 외 {count}개."
+ },
+ "copilotApp.copilot.askAi.access.review.canDoMoreOne": {
+  "en": "Includes {list}, and {count} more sub-skill.",
+  "ko": "포함 항목: {list} 외 하위 스킬 {count}개."
+ },
+ "copilotApp.copilot.askAi.access.review.closingKeeps": {
+  "en": "Closing keeps this reminder. Only Done clears it.",
+  "ko": "닫아도 이 알림은 유지됩니다. '검토 완료'를 눌러야만 사라집니다."
+ },
+ "copilotApp.copilot.askAi.access.review.destructive": {
+  "en": "Includes {count} actions that can delete data.",
+  "ko": "데이터를 삭제할 수 있는 작업 {count}개가 포함되어 있습니다."
+ },
+ "copilotApp.copilot.askAi.access.review.destructiveOne": {
+  "en": "Includes {count} action that can delete data.",
+  "ko": "데이터를 삭제할 수 있는 작업 {count}개가 포함되어 있습니다."
+ },
+ "copilotApp.copilot.askAi.access.review.done": {
+  "en": "Done reviewing",
+  "ko": "검토 완료"
+ },
+ "copilotApp.copilot.askAi.access.review.heldOff": {
+  "en": "Held off",
+  "ko": "보류됨"
+ },
+ "copilotApp.copilot.askAi.access.review.lede": {
+  "en": "These skills are new since {tier} was last reviewed. Decide which ones this access level should have.",
+  "ko": "{tier}을(를) 마지막으로 검토한 이후 추가된 새 스킬입니다. 이 액세스 수준에 포함할 스킬을 정하세요."
+ },
+ "copilotApp.copilot.askAi.access.review.noSubSkills": {
+  "en": "No sub-skills yet.",
+  "ko": "아직 하위 스킬이 없습니다."
+ },
+ "copilotApp.copilot.askAi.access.review.off": {
+  "en": "Off",
+  "ko": "끔"
+ },
+ "copilotApp.copilot.askAi.access.review.on": {
+  "en": "On",
+  "ko": "켬"
+ },
+ "copilotApp.copilot.askAi.access.review.scopeNote": {
+  "en": "Only brand-new skills are listed here — reworded descriptions and changed sub-skills are not.",
+  "ko": "여기에는 완전히 새로운 스킬만 표시됩니다. 설명이 수정되었거나 하위 스킬이 변경된 스킬은 표시되지 않습니다."
+ },
+ "copilotApp.copilot.askAi.access.review.tally": {
+  "en": "{on} on · {off} off",
+  "ko": "켬 {on} · 끔 {off}"
+ },
+ "copilotApp.copilot.askAi.access.review.title": {
+  "en": "{count} new skills to review",
+  "ko": "검토할 새 스킬 {count}개"
+ },
+ "copilotApp.copilot.askAi.access.review.titleOne": {
+  "en": "{count} new skill to review",
+  "ko": "검토할 새 스킬 {count}개"
+ },
+ "copilotApp.copilot.askAi.access.saveDialog.auditNote": {
+  "en": "Writes one entry to Change history with your name, the time, and this before/after.",
+  "ko": "변경 기록에 내 이름, 시간, 변경 전후 내용이 담긴 항목이 하나 기록됩니다."
+ },
+ "copilotApp.copilot.askAi.access.saveDialog.blastRadius": {
+  "en": "{count} sub-accounts use {tier}. They change immediately — Ask AI gains or loses these abilities on the next message anyone sends.",
+  "ko": "서브 계정 {count}개가 {tier}을(를) 사용 중이며 즉시 변경됩니다. 누군가 다음 메시지를 보내는 시점부터 'AI에게 문의'에 이 기능이 추가되거나 빠집니다."
+ },
+ "copilotApp.copilot.askAi.access.saveDialog.blastRadiusAtLeast": {
+  "en": "At least {count} sub-accounts use {tier}, and possibly more — your sub-account list could not be read. Every one of them changes immediately.",
+  "ko": "최소 {count}개 서브 계정에서 {tier}을(를) 사용 중입니다. 서브 계정 목록을 읽을 수 없어 실제 수는 더 많을 수 있으며, 모두 즉시 변경됩니다."
+ },
+ "copilotApp.copilot.askAi.access.saveDialog.blastRadiusAtLeastOne": {
+  "en": "At least {count} sub-account uses {tier}, and possibly more — your sub-account list could not be read. It changes immediately.",
+  "ko": "최소 {count}개 서브 계정에서 {tier}을(를) 사용 중입니다. 서브 계정 목록을 읽을 수 없어 실제 수는 더 많을 수 있으며, 즉시 변경됩니다."
+ },
+ "copilotApp.copilot.askAi.access.saveDialog.blastRadiusOne": {
+  "en": "{count} sub-account uses {tier}. It changes immediately — Ask AI gains or loses these abilities on the next message anyone sends.",
+  "ko": "서브 계정 {count}개가 {tier}을(를) 사용 중이며 즉시 변경됩니다. 누군가 다음 메시지를 보내는 시점부터 'AI에게 문의'에 이 기능이 추가되거나 빠집니다."
+ },
+ "copilotApp.copilot.askAi.access.saveDialog.blastRadiusWho": {
+  "en": "{tier} is used by {who}. Changes apply immediately — Ask AI gains or loses these abilities on the next message anyone sends.",
+  "ko": "{tier} 사용 대상: {who}. 변경사항은 즉시 적용되며, 누군가 다음 메시지를 보내는 시점부터 'AI에게 문의'에 이 기능이 추가되거나 빠집니다."
+ },
+ "copilotApp.copilot.askAi.access.saveDialog.blastRadiusZero": {
+  "en": "Nothing uses {tier} yet, so this changes nobody today — it takes effect for anyone you put on it later.",
+  "ko": "아직 {tier}을(를) 사용하는 곳이 없어 지금은 영향받는 대상이 없습니다. 나중에 이 수준을 지정하는 대상부터 적용됩니다."
+ },
+ "copilotApp.copilot.askAi.access.saveDialog.builtInNote": {
+  "en": "{tier} is a built-in level. Editing it changes what that name means everywhere in your agency, including the description on its card.",
+  "ko": "{tier}은(는) 내장 수준입니다. 편집하면 카드의 설명을 포함해 에이전시 전체에서 이 이름이 의미하는 내용이 바뀝니다."
+ },
+ "copilotApp.copilot.askAi.access.saveDialog.confirm": {
+  "en": "Save for {count} sub-accounts",
+  "ko": "서브 계정 {count}개에 저장"
+ },
+ "copilotApp.copilot.askAi.access.saveDialog.confirmOne": {
+  "en": "Save for {count} sub-account",
+  "ko": "서브 계정 {count}개에 저장"
+ },
+ "copilotApp.copilot.askAi.access.saveDialog.confirmZero": {
+  "en": "Save changes",
+  "ko": "변경사항 저장"
+ },
+ "copilotApp.copilot.askAi.access.saveDialog.heldNoGrant": {
+  "en": "{count} sub-skills stay pinned off on their own, so they stay off whatever their skill's level is: {subSkills}.",
+  "ko": "하위 스킬 {count}개는 개별적으로 꺼짐으로 고정되어 있어 상위 스킬의 수준과 관계없이 꺼진 상태로 유지됩니다: {subSkills}."
+ },
+ "copilotApp.copilot.askAi.access.saveDialog.heldNoGrantOne": {
+  "en": "{count} sub-skill stays pinned off on its own, so it stays off whatever its skill's level is: {subSkills}.",
+  "ko": "하위 스킬 {count}개는 개별적으로 꺼짐으로 고정되어 있어 상위 스킬의 수준과 관계없이 꺼진 상태로 유지됩니다: {subSkills}."
+ },
+ "copilotApp.copilot.askAi.access.saveDialog.released": {
+  "en": "{count} sub-skills stop being held individually and follow their skill again. They stay off at the skill's new level: {subSkills}.",
+  "ko": "하위 스킬 {count}개의 개별 고정이 해제되어 다시 상위 스킬을 따릅니다. 상위 스킬의 새 수준에서는 꺼진 상태입니다: {subSkills}."
+ },
+ "copilotApp.copilot.askAi.access.saveDialog.releasedOne": {
+  "en": "{count} sub-skill stops being held individually and follows its skill again. It stays off at the skill's new level: {subSkills}.",
+  "ko": "하위 스킬 {count}개의 개별 고정이 해제되어 다시 상위 스킬을 따릅니다. 상위 스킬의 새 수준에서는 꺼진 상태입니다: {subSkills}."
+ },
+ "copilotApp.copilot.askAi.access.saveDialog.started": {
+  "en": "{count} more sub-skills start working, because the skills above them now reach what they need: {subSkills}.",
+  "ko": "상위 스킬이 필요한 수준에 도달하여 하위 스킬 {count}개가 추가로 작동합니다: {subSkills}."
+ },
+ "copilotApp.copilot.askAi.access.saveDialog.startedOne": {
+  "en": "{count} more sub-skill starts working, because the skill above it now reaches what it needs: {subSkills}.",
+  "ko": "상위 스킬이 필요한 수준에 도달하여 하위 스킬 {count}개가 추가로 작동합니다: {subSkills}."
+ },
+ "copilotApp.copilot.askAi.access.saveDialog.stopped": {
+  "en": "{count} more sub-skills stop working, because the skills above them drop below what they need: {subSkills}.",
+  "ko": "상위 스킬이 필요한 수준보다 낮아져 하위 스킬 {count}개가 추가로 작동하지 않습니다: {subSkills}."
+ },
+ "copilotApp.copilot.askAi.access.saveDialog.title": {
+  "en": "Save changes to {tier}?",
+  "ko": "{tier} 변경사항을 저장하시겠습니까?"
+ },
+ "copilotApp.copilot.askAi.access.sensitive.allow": {
+  "en": "Allow {level}",
+  "ko": "{level} 허용"
+ },
+ "copilotApp.copilot.askAi.access.sensitive.destructiveSuffix": {
+  "en": ", {count} of them destructive",
+  "ko": "(그중 {count}개는 데이터 삭제 작업)"
+ },
+ "copilotApp.copilot.askAi.access.sensitive.impactDelete": {
+  "en": "This lets Ask AI create, change and delete across {operations} operations{destructiveSuffix}. Destructive actions still ask for confirmation every time, at every level.",
+  "ko": "'AI에게 문의'가 작업 {operations}개{destructiveSuffix}에 걸쳐 생성, 변경, 삭제를 할 수 있게 됩니다. 데이터 삭제 작업은 어느 수준에서든 매번 확인을 요청합니다."
+ },
+ "copilotApp.copilot.askAi.access.sensitive.impactDeleteOne": {
+  "en": "This lets Ask AI create, change and delete across {operations} operation{destructiveSuffix}. Destructive actions still ask for confirmation every time, at every level.",
+  "ko": "'AI에게 문의'가 작업 {operations}개{destructiveSuffix}에 걸쳐 생성, 변경, 삭제를 할 수 있게 됩니다. 데이터 삭제 작업은 어느 수준에서든 매번 확인을 요청합니다."
+ },
+ "copilotApp.copilot.askAi.access.sensitive.impactRaise": {
+  "en": "This lets Ask AI create and change across {operations} operations{destructiveSuffix}. Destructive actions still ask for confirmation every time, at every level.",
+  "ko": "'AI에게 문의'가 작업 {operations}개{destructiveSuffix}에 걸쳐 생성 및 변경을 할 수 있게 됩니다. 데이터 삭제 작업은 어느 수준에서든 매번 확인을 요청합니다."
+ },
+ "copilotApp.copilot.askAi.access.sensitive.impactRaiseOne": {
+  "en": "This lets Ask AI create and change across {operations} operation{destructiveSuffix}. Destructive actions still ask for confirmation every time, at every level.",
+  "ko": "'AI에게 문의'가 작업 {operations}개{destructiveSuffix}에 걸쳐 생성 및 변경을 할 수 있게 됩니다. 데이터 삭제 작업은 어느 수준에서든 매번 확인을 요청합니다."
+ },
+ "copilotApp.copilot.askAi.access.sensitive.lede": {
+  "en": "{module} is sensitive. Every access level caps it at View on purpose.",
+  "ko": "{module}은(는) 민감합니다. 모든 액세스 수준에서 의도적으로 '보기'까지만 허용합니다."
+ },
+ "copilotApp.copilot.askAi.access.sensitive.serverEnforced": {
+  "en": "This confirmation is required. Without it the change is refused.",
+  "ko": "이 확인은 필수입니다. 확인하지 않으면 변경이 거부됩니다."
+ },
+ "copilotApp.copilot.askAi.access.sensitive.titleDelete": {
+  "en": "Allow Ask AI to delete in {module}?",
+  "ko": "'AI에게 문의'가 {module}에서 삭제하도록 허용하시겠습니까?"
+ },
+ "copilotApp.copilot.askAi.access.sensitive.titleRaise": {
+  "en": "Allow Ask AI to change {module}?",
+  "ko": "'AI에게 문의'가 {module}을(를) 변경하도록 허용하시겠습니까?"
+ },
+ "copilotApp.copilot.askAi.access.subAccountDetail.customBasedOn": {
+  "en": "Based on {base} · shared by {count} sub-accounts",
+  "ko": "{base} 기반 · 서브 계정 {count}개에서 공유"
+ },
+ "copilotApp.copilot.askAi.access.subAccountDetail.customBasedOnOne": {
+  "en": "Based on {base} · shared by {count} sub-account",
+  "ko": "{base} 기반 · 서브 계정 {count}개에서 공유"
+ },
+ "copilotApp.copilot.askAi.access.subAccountDetail.definedElsewhere": {
+  "en": "Access levels are defined once on the Access levels screen. Here you only choose which one this sub-account gets.",
+  "ko": "액세스 수준은 액세스 수준 화면에서 한 번만 정의합니다. 여기에서는 이 서브 계정에 적용할 수준만 선택합니다."
+ },
+ "copilotApp.copilot.askAi.access.subAccountDetail.editCustom": {
+  "en": "Edit on the Access levels screen",
+  "ko": "액세스 수준 화면에서 편집"
+ },
+ "copilotApp.copilot.askAi.access.subAccountDetail.lede": {
+  "en": "Set what the Ask AI copilot can do for each person in this sub-account.",
+  "ko": "이 서브 계정의 각 사용자에게 'AI에게 문의' 코파일럿이 할 수 있는 작업을 설정하세요."
+ },
+ "copilotApp.copilot.askAi.access.subAccountDetail.selectedHiddenByFilter": {
+  "en": "{tier} is selected but hidden by your filters. It stays selected, and Save still applies it.",
+  "ko": "{tier}은(는) 선택되어 있지만 필터로 인해 숨겨져 있습니다. 선택 상태는 유지되며, 저장하면 그대로 적용됩니다."
+ },
+ "copilotApp.copilot.askAi.access.subAccountDetail.tab.access": {
+  "en": "Access level",
+  "ko": "액세스 수준"
+ },
+ "copilotApp.copilot.askAi.access.subAccountDetail.tab.history": {
+  "en": "History",
+  "ko": "기록"
+ },
+ "copilotApp.copilot.askAi.access.subAccountDetail.tab.users": {
+  "en": "Users",
+  "ko": "사용자"
+ },
+ "copilotApp.copilot.askAi.access.subAccountDetail.unsavedDiscard": {
+  "en": "Discard",
+  "ko": "버리기"
+ },
+ "copilotApp.copilot.askAi.access.subAccountDetail.unsavedKeep": {
+  "en": "Keep editing",
+  "ko": "계속 편집"
+ },
+ "copilotApp.copilot.askAi.access.subAccountDetail.unsavedMessage": {
+  "en": "This sub-account is still on its previous access level. Your change hasn't been applied.",
+  "ko": "이 서브 계정은 아직 이전 액세스 수준을 사용하고 있습니다. 변경사항이 적용되지 않았습니다."
+ },
+ "copilotApp.copilot.askAi.access.subAccountDetail.unsavedTitle": {
+  "en": "Leave without saving?",
+  "ko": "저장하지 않고 나가시겠습니까?"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.allLevels": {
+  "en": "All access levels",
+  "ko": "모든 액세스 수준"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.apply": {
+  "en": "Apply",
+  "ko": "적용"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.assignToSelected": {
+  "en": "Assign to {count} selected",
+  "ko": "선택한 {count}개에 지정"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.bulkConfirmAction": {
+  "en": "Assign to {count} sub-accounts",
+  "ko": "서브 계정 {count}개에 지정"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.bulkConfirmActionOne": {
+  "en": "Assign to {count} sub-account",
+  "ko": "서브 계정 {count}개에 지정"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.bulkConfirmAffects": {
+  "en": "This changes Ask AI for {users} across {count} sub-accounts: {names}.",
+  "ko": "서브 계정 {count}개에 걸쳐 {users}의 'AI에게 문의'가 변경됩니다: {names}."
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.bulkConfirmAffectsOne": {
+  "en": "This changes Ask AI for {users} in {names}.",
+  "ko": "{names}에서 {users}의 'AI에게 문의'가 변경됩니다."
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.bulkConfirmAffectsPartial": {
+  "en": "This changes Ask AI for at least {users} across {count} sub-accounts: {names}. Some user counts could not be read.",
+  "ko": "서브 계정 {count}개에 걸쳐 최소 {users}의 'AI에게 문의'가 변경됩니다: {names}. 일부 서브 계정의 사용자 수를 읽을 수 없습니다."
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.bulkConfirmAffectsPartialOne": {
+  "en": "This changes Ask AI in {names}. Its user count could not be read.",
+  "ko": "{names}의 'AI에게 문의'가 변경됩니다. 이 서브 계정의 사용자 수를 읽을 수 없습니다."
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.bulkConfirmAndMore": {
+  "en": "and {count} more",
+  "ko": "외 {count}개"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.bulkConfirmAndMoreOne": {
+  "en": "and {count} more",
+  "ko": "외 {count}개"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.bulkConfirmDowngradeTitle": {
+  "en": "Lower {count} sub-accounts to {tier}?",
+  "ko": "서브 계정 {count}개를 {tier}(으)로 낮추시겠습니까?"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.bulkConfirmDowngradeTitleOne": {
+  "en": "Lower 1 sub-account to {tier}?",
+  "ko": "서브 계정 1개를 {tier}(으)로 낮추시겠습니까?"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.bulkConfirmDowngradeWarning": {
+  "en": "{count} of them move to a narrower level — Ask AI will be able to do less for their users than it can today.",
+  "ko": "그중 {count}개는 더 제한된 수준으로 바뀝니다. 해당 사용자에게 'AI에게 문의'가 할 수 있는 작업이 지금보다 줄어듭니다."
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.bulkConfirmDowngradeWarningOne": {
+  "en": "{count} of them moves to a narrower level — Ask AI will be able to do less for its users than it can today.",
+  "ko": "그중 {count}개는 더 좁은 수준으로 바뀝니다. 해당 사용자에게 'AI에게 문의'가 할 수 있는 작업이 지금보다 줄어듭니다."
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.bulkConfirmFrom": {
+  "en": "On {levels} now.",
+  "ko": "현재 수준: {levels}."
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.bulkConfirmHint": {
+  "en": "Copilot access is always limited by each user's own permissions.",
+  "ko": "코파일럿 액세스는 항상 각 사용자의 권한으로 제한됩니다."
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.bulkConfirmMessageOne": {
+  "en": "{count} selected sub-account will switch to {tier}. The copilot picks the new access up immediately. Review what this access level allows:",
+  "ko": "선택한 서브 계정 {count}개가 {tier}(으)로 전환됩니다. 코파일럿에 새 액세스가 즉시 적용됩니다. 이 수준에서 허용되는 항목을 검토하세요:"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.bulkConfirmTitle": {
+  "en": "Assign {tier} to {count} sub-accounts?",
+  "ko": "서브 계정 {count}개에 {tier}을(를) 지정하시겠습니까?"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.bulkConfirmTitleOne": {
+  "en": "Assign {tier} to {count} sub-account?",
+  "ko": "서브 계정 {count}개에 {tier}을(를) 지정하시겠습니까?"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.bulkDefaultMessage": {
+  "en": "Selected sub-accounts: {count}. This saves their default access level for users without an individual override. Existing individual overrides stay unchanged.",
+  "ko": "선택한 서브 계정: {count}개. 개별 설정이 없는 사용자에게 적용되는 기본 액세스 수준을 저장합니다. 기존 개별 설정은 변경되지 않습니다."
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.bulkPick": {
+  "en": "Set access level…",
+  "ko": "액세스 수준 설정…"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.changeSelectedDefaults": {
+  "en": "Change default access",
+  "ko": "기본 액세스 변경"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.clearSelection": {
+  "en": "Clear selection",
+  "ko": "선택 해제"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.columnAccess": {
+  "en": "Access level",
+  "ko": "액세스 수준"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.columnName": {
+  "en": "Sub-account",
+  "ko": "서브 계정"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.columnSource": {
+  "en": "Set by",
+  "ko": "설정 방식"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.columnUserAccessHint": {
+  "en": "People without their own level follow this. Changing it changes their access.",
+  "ko": "개별 수준이 없는 사용자는 이 설정을 따릅니다. 변경하면 해당 사용자의 액세스도 바뀝니다."
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.columnUsers": {
+  "en": "Users",
+  "ko": "사용자"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.defaultLevelRetired": {
+  "en": "Archived. This sub-account still uses it, but it cannot be selected for another sub-account.",
+  "ko": "보관된 수준입니다. 이 서브 계정은 계속 사용하지만 다른 서브 계정에는 선택할 수 없습니다."
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.emptyTitle": {
+  "en": "No sub-accounts match those filters",
+  "ko": "필터와 일치하는 서브 계정이 없습니다"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.failedMessage": {
+  "en": "Something went wrong reading your sub-accounts.",
+  "ko": "서브 계정을 불러오는 중 문제가 발생했습니다."
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.failedTitle": {
+  "en": "Couldn't load sub-accounts",
+  "ko": "서브 계정을 불러올 수 없습니다"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.filterByLevel": {
+  "en": "Filter by access level",
+  "ko": "액세스 수준별 필터"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.inheritConfirm": {
+  "en": "Follow the default",
+  "ko": "기본값 적용"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.inheritMessage": {
+  "en": "{name} loses its own access level and follows the agency default from now on, including when that default changes.",
+  "ko": "{name}의 개별 액세스 수준이 제거되고 이제부터 에이전시 기본값을 따릅니다. 기본값이 바뀌면 그 변경도 그대로 따릅니다."
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.inheritMessageNamed": {
+  "en": "{name} loses its own access level and follows the agency default — {tier} today — including when that default changes.",
+  "ko": "{name}의 개별 액세스 수준이 제거되고 이제부터 에이전시 기본값(현재 {tier})을 따릅니다. 기본값이 바뀌면 그 변경도 그대로 따릅니다."
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.inheritOption": {
+  "en": "Follow the agency default",
+  "ko": "에이전시 기본값 사용"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.inheritOptionHint": {
+  "en": "Remove this sub-account's own access level",
+  "ko": "이 서브 계정의 개별 액세스 수준을 제거합니다"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.inheritTitle": {
+  "en": "Let {name} follow the agency default?",
+  "ko": "{name}에 에이전시 기본값을 적용하시겠습니까?"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.jobConfirm": {
+  "en": "Start the change",
+  "ko": "변경 시작"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.jobConfirmApprox": {
+  "en": "The sub-accounts are matched again when the job runs, so the final number may differ slightly from the one shown.",
+  "ko": "작업이 실행될 때 서브 계정을 다시 조회하므로 최종 수는 표시된 수와 약간 다를 수 있습니다."
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.jobConfirmMessage": {
+  "en": "This runs in the background and keeps going after you close this screen. Each person’s access changes as it reaches them, and every change is recorded.",
+  "ko": "이 작업은 백그라운드에서 실행되며 이 화면을 닫아도 계속 진행됩니다. 각 사용자의 액세스는 처리되는 순서대로 변경되며, 모든 변경사항이 기록됩니다."
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.jobConfirmTitle": {
+  "en": "Set every user in {count} sub-accounts to {level}?",
+  "ko": "서브 계정 {count}개의 모든 사용자를 {level}(으)로 설정하시겠습니까?"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.jobConfirmTitleNamed": {
+  "en": "Set eligible users in {name} to {level}?",
+  "ko": "{name}의 대상 사용자를 {level}(으)로 설정하시겠습니까?"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.jobConfirmTitleNamedCount": {
+  "en": "Set eligible users in {name} ({count} total users) to {level}?",
+  "ko": "{name}의 대상 사용자(전체 사용자 {count}명)를 {level}(으)로 설정하시겠습니까?"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.jobDismiss": {
+  "en": "Dismiss",
+  "ko": "닫기"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.jobDoneTitle": {
+  "en": "User access updated",
+  "ko": "사용자 액세스 업데이트됨"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.jobFailedTitle": {
+  "en": "Could not change user access",
+  "ko": "사용자 액세스를 변경할 수 없습니다"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.jobLastProgressMinutes": {
+  "en": "Last progress {minutes} min ago",
+  "ko": "마지막 진행: {minutes}분 전"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.jobLastProgressNow": {
+  "en": "Last progress just now",
+  "ko": "마지막 진행: 방금 전"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.jobLocked": {
+  "en": "Other access changes are paused until this one finishes.",
+  "ko": "이 작업이 끝날 때까지 다른 액세스 변경은 일시 중지됩니다."
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.jobProgress": {
+  "en": "{done} of {total} sub-accounts · {users} people updated · {failed} failed",
+  "ko": "서브 계정 {total}개 중 {done}개 · 사용자 {users}명 업데이트됨 · {failed}개 실패"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.jobProgressPeople": {
+  "en": "{done} of {total} people checked · {users} updated · {unchanged} already on this level · {failed} failed",
+  "ko": "사용자 {total}명 중 {done}명 확인 · {users}명 업데이트됨 · {unchanged}명 이미 이 수준 · {failed}명 실패"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.jobProgressPeopleStopped": {
+  "en": "Stopped at {done} of {total} people · at least {users} updated · {failed} failed",
+  "ko": "사용자 {total}명 중 {done}명에서 중지됨 · 최소 {users}명 업데이트됨 · {failed}명 실패"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.jobProgressStopped": {
+  "en": "Stopped at {done} of {total} sub-accounts · at least {users} people updated · {failed} failed",
+  "ko": "서브 계정 {total}개 중 {done}개에서 중지됨 · 최소 사용자 {users}명 업데이트됨 · {failed}개 실패"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.jobProgressWithUnchanged": {
+  "en": "{done} of {total} sub-accounts · {users} people updated · {unchanged} already on this level · {failed} failed",
+  "ko": "서브 계정 {total}개 중 {done}개 · 사용자 {users}명 업데이트됨 · {unchanged}명 이미 이 수준 · {failed}개 실패"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.jobRunningTitle": {
+  "en": "Changing user access…",
+  "ko": "사용자 액세스 변경 중…"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.jobStalledDetail": {
+  "en": "Stuck at {done} of {total} sub-accounts since {time}. It picks up from here once the service recovers, or you can stop it.",
+  "ko": "{time}부터 서브 계정 {total}개 중 {done}개에서 멈춰 있습니다. 서비스가 복구되면 여기서부터 이어서 진행되며, 직접 중지할 수도 있습니다."
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.jobStalledTitle": {
+  "en": "Bulk change isn’t making progress",
+  "ko": "일괄 변경이 진행되지 않고 있습니다"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.jobStop": {
+  "en": "Stop",
+  "ko": "중지"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.jobStopConfirm": {
+  "en": "Stop the change",
+  "ko": "변경 중지"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.jobStopConfirmMessage": {
+  "en": "People already updated keep the new level — stopping doesn’t undo them. Everyone else keeps the access they have now.",
+  "ko": "이미 업데이트된 사용자는 새 수준을 유지하며, 중지해도 되돌려지지 않습니다. 나머지 사용자는 현재 액세스를 그대로 유지합니다."
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.jobStopConfirmTitle": {
+  "en": "Stop this bulk change?",
+  "ko": "이 일괄 변경을 중지하시겠습니까?"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.jobStopKeepRunning": {
+  "en": "Keep running",
+  "ko": "계속 실행"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.jobStoppedWatching": {
+  "en": "Still running. This screen stopped checking — reopen it to see where it got to.",
+  "ko": "아직 실행 중입니다. 이 화면에서 상태 확인을 멈췄으니 진행 상황을 보려면 화면을 다시 여세요."
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.jobUnreachable": {
+  "en": "Can’t reach the server to check on this change. It may still be running — this updates once the connection is back.",
+  "ko": "서버에 연결할 수 없어 이 변경의 상태를 확인할 수 없습니다. 아직 실행 중일 수 있으며, 연결이 복구되면 이 내용이 업데이트됩니다."
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.lede": {
+  "en": "Each sub-account has a default access level. Its people follow that default unless you give someone a level of their own. Access is always limited by each user's own permissions.",
+  "ko": "각 서브 계정에는 기본 액세스 수준이 있습니다. 개별 수준을 지정하지 않은 사용자는 이 기본값을 따릅니다. 액세스는 항상 각 사용자의 권한으로 제한됩니다."
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.levelFor": {
+  "en": "Ask AI access level for {name}",
+  "ko": "{name}의 'AI에게 문의' 액세스 수준"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.loading": {
+  "en": "Loading sub-accounts…",
+  "ko": "서브 계정 불러오는 중…"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.manageAccess": {
+  "en": "Change user access",
+  "ko": "사용자 액세스 변경"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.noneMessage": {
+  "en": "Create your first sub-account, then come back here to set what Ask AI can do in it.",
+  "ko": "첫 서브 계정을 만든 뒤 여기로 돌아와 해당 서브 계정에서 'AI에게 문의'가 할 수 있는 작업을 설정하세요."
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.noneTitle": {
+  "en": "No sub-accounts yet",
+  "ko": "아직 서브 계정이 없습니다"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.openDetail": {
+  "en": "Open {name}",
+  "ko": "{name} 열기"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.partialScanMessage": {
+  "en": "The server stopped there rather than reading every sub-account, so this is not an answer yet. Keep looking to read further in.",
+  "ko": "서버가 모든 서브 계정을 읽지 않고 여기서 멈췄으므로 아직 최종 결과가 아닙니다. 더 찾아보려면 계속 검색하세요."
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.partialScanTitle": {
+  "en": "No matches in the first {scanned} of {total} sub-accounts",
+  "ko": "서브 계정 {total}개 중 처음 {scanned}개에서 일치 항목 없음"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.partialScanTitleOne": {
+  "en": "No matches in the first {scanned} of {total} sub-account",
+  "ko": "서브 계정 {total}개 중 처음 {scanned}개에서 일치 항목 없음"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.rowLevelLabel": {
+  "en": "Default Ask AI access for {name}",
+  "ko": "{name}의 기본 'AI에게 문의' 액세스"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.rowLevelPlaceholder": {
+  "en": "Change…",
+  "ko": "변경…"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.scopeAll": {
+  "en": "Change everyone in all {total}…",
+  "ko": "전체 {total}개의 모든 사용자 변경…"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.scopeAllMatching": {
+  "en": "Change everyone in {total} matching…",
+  "ko": "일치하는 {total}개의 모든 사용자 변경…"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.scopeAllPending": {
+  "en": "Change everyone…",
+  "ko": "모든 사용자 변경…"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.scopeMenuTitle": {
+  "en": "Set the access level of every person in these sub-accounts",
+  "ko": "이 서브 계정들에 속한 모든 사용자의 액세스 수준 설정"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.searchPlaceholder": {
+  "en": "Search sub-accounts",
+  "ko": "서브 계정 검색"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.searchScopeNote": {
+  "en": "Search matches sub-account details, including address, and the names or email addresses of people in each sub-account. Agency admins are not matched: their Ask AI access is unrestricted.",
+  "ko": "주소를 포함한 서브 계정 정보와 각 서브 계정 사용자의 이름 또는 이메일 주소로 검색합니다. 에이전시 관리자는 'AI에게 문의' 액세스에 제한이 없으므로 검색 대상에서 제외됩니다."
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.selectAllLoaded": {
+  "en": "Select all loaded sub-accounts",
+  "ko": "불러온 서브 계정 모두 선택"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.selectRow": {
+  "en": "Select {name}",
+  "ko": "{name} 선택"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.selectedCount": {
+  "en": "{count} sub-accounts selected",
+  "ko": "{count}개 서브 계정 선택됨"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.selectedCountOfTotal": {
+  "en": "{count} of {total} sub-accounts selected",
+  "ko": "서브 계정 {total}개 중 {count}개 선택됨"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.selectedCountOne": {
+  "en": "{count} sub-account selected",
+  "ko": "{count}개 서브 계정 선택됨"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.slowNote": {
+  "en": "Still reading your sub-accounts — a large agency takes a few moments…",
+  "ko": "서브 계정을 계속 읽는 중입니다. 규모가 큰 에이전시는 잠시 시간이 걸립니다…"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.sourceAssigned": {
+  "en": "Chosen",
+  "ko": "지정됨"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.tableLabel": {
+  "en": "Sub-accounts and their Ask AI access level",
+  "ko": "서브 계정 및 각 서브 계정의 'AI에게 문의' 액세스 수준"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.unknownName": {
+  "en": "A sub-account",
+  "ko": "서브 계정"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.usersCount": {
+  "en": "{count} users",
+  "ko": "사용자 {count}명"
+ },
+ "copilotApp.copilot.askAi.access.subAccounts.usersCountOne": {
+  "en": "{count} user",
+  "ko": "사용자 {count}명"
+ },
+ "copilotApp.copilot.askAi.access.toasts.assignFailedMessage": {
+  "en": "The access level was put back to what it was.",
+  "ko": "액세스 수준이 이전 상태로 되돌려졌습니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.assignFailedTitle": {
+  "en": "Couldn't change {name}",
+  "ko": "{name}을(를) 변경할 수 없습니다"
+ },
+ "copilotApp.copilot.askAi.access.toasts.assignedMessage": {
+  "en": "Recorded in change history.",
+  "ko": "변경 기록에 기록되었습니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkAndNMore": {
+  "en": "and {count} more",
+  "ko": "외 {count}개"
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkAndOneMore": {
+  "en": "and 1 more",
+  "ko": "외 1개"
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkAppliedMessage": {
+  "en": "One change-history entry per sub-account.",
+  "ko": "서브 계정마다 변경 기록 항목이 하나씩 기록되었습니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkAppliedTitle": {
+  "en": "{count} sub-accounts set to {tier}",
+  "ko": "서브 계정 {count}개가 {tier}(으)로 설정됨"
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkAppliedTitleOne": {
+  "en": "1 sub-account set to {tier}",
+  "ko": "서브 계정 1개가 {tier}(으)로 설정됨"
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkCancelledSentence": {
+  "en": "The update was stopped before {count} sub-accounts answered, so those {count} outcomes are unknown — each one may or may not be on {tier} now. All {count} stay selected, and applying again is safe: {names}.",
+  "ko": "서브 계정 {count}개가 응답하기 전에 업데이트가 중지되어 이 {count}개의 결과를 알 수 없습니다. 각 서브 계정이 현재 {tier}을(를) 사용 중일 수도, 아닐 수도 있습니다. {count}개 모두 선택된 상태로 유지되며, 다시 적용해도 안전합니다: {names}."
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkCancelledSentenceOne": {
+  "en": "The update was stopped before {names} answered, so that outcome is unknown — {names} may or may not be on {tier} now, and stays selected. Applying again is safe.",
+  "ko": "{names}이(가) 응답하기 전에 업데이트가 중지되어 결과를 알 수 없습니다. {names}은(는) 현재 {tier}을(를) 사용 중일 수도, 아닐 수도 있으며 선택된 상태로 유지됩니다. 다시 적용해도 안전합니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkCancelledTitle": {
+  "en": "Stopped before {count} sub-accounts answered",
+  "ko": "서브 계정 {count}개가 응답하기 전에 중지됨"
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkCancelledTitleOne": {
+  "en": "Stopped before 1 sub-account answered",
+  "ko": "서브 계정 1개가 응답하기 전에 중지됨"
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkCongestedSentence": {
+  "en": "{congested} sub-accounts weren't updated because the server was too busy. Those {congested} are still on the level from before and stay selected — wait a moment, then try again: {names}.",
+  "ko": "서버가 너무 바빠 서브 계정 {congested}개가 업데이트되지 않았습니다. 이 {congested}개는 이전 수준을 그대로 유지하며 선택된 상태로 남아 있습니다. 잠시 후 다시 시도하세요: {names}."
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkCongestedSentenceOne": {
+  "en": "{names} wasn't updated because the server was too busy, is still on the level from before, and stays selected — wait a moment, then try again.",
+  "ko": "서버가 너무 바빠 {names}이(가) 업데이트되지 않았습니다. 이전 수준을 그대로 유지하며 선택된 상태로 남아 있습니다. 잠시 후 다시 시도하세요."
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkCongestedTitle": {
+  "en": "The server asked us to slow down",
+  "ko": "서버에서 요청 속도를 낮추도록 요청했습니다"
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkFailedMessage": {
+  "en": "None of the {count} sub-accounts were updated. All {count} are still on the level from before and stay selected, so you can try again: {names}.",
+  "ko": "서브 계정 {count}개 중 업데이트된 곳이 없습니다. {count}개 모두 이전 수준을 그대로 유지하며 선택된 상태로 남아 있으므로 다시 시도할 수 있습니다: {names}."
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkFailedMessageOne": {
+  "en": "{names} wasn't updated, is still on the level from before, and stays selected, so you can try again.",
+  "ko": "{names}이(가) 업데이트되지 않았습니다. 이전 수준을 그대로 유지하며 선택된 상태로 남아 있으므로 다시 시도할 수 있습니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkFailedTitle": {
+  "en": "Couldn't save that access level",
+  "ko": "해당 액세스 수준을 저장할 수 없습니다"
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkMixedTitle": {
+  "en": "{onTier} of {total} sub-accounts are on {tier}",
+  "ko": "서브 계정 {total}개 중 {onTier}개가 {tier} 사용 중"
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkMixedTitleOne": {
+  "en": "1 of {total} sub-accounts is on {tier}",
+  "ko": "서브 계정 {total}개 중 1개가 {tier} 사용 중"
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkNoChangeMessage": {
+  "en": "All {count} sub-accounts you picked were already on {tier}.",
+  "ko": "선택한 서브 계정 {count}개 모두 이미 {tier}을(를) 사용 중이었습니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkNoChangeTitle": {
+  "en": "No changes needed",
+  "ko": "변경할 필요 없음"
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkNoChangeTitleOne": {
+  "en": "No change needed",
+  "ko": "변경할 필요 없음"
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkNotSentNote": {
+  "en": "A further {notSent} sub-accounts were never sent, so those {notSent} are unchanged and stay selected: {names}.",
+  "ko": "또한 서브 계정 {notSent}개는 요청이 전송되지 않아 변경되지 않았으며, 이 {notSent}개는 선택된 상태로 남아 있습니다: {names}."
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkNotSentNoteOne": {
+  "en": "{names} was never sent, so that sub-account is unchanged and stays selected.",
+  "ko": "{names}에 대한 요청이 전송되지 않아 해당 서브 계정은 변경되지 않았으며 선택된 상태로 남아 있습니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkNotUpdatedNoteOne": {
+  "en": "Separately, {names} came back not updated, is still on the level from before, and stays selected, so you can try again.",
+  "ko": "이와 별도로 {names}이(가) 업데이트되지 않았습니다. 이전 수준을 그대로 유지하며 선택된 상태로 남아 있으므로 다시 시도할 수 있습니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkPeopleDoneTitle": {
+  "en": "{count} people set to {level}",
+  "ko": "사용자 {count}명이 {level}(으)로 설정됨"
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkPeopleDoneTitleOne": {
+  "en": "{count} person set to {level}",
+  "ko": "사용자 {count}명이 {level}(으)로 설정됨"
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkPeopleFailedMessage": {
+  "en": "Nothing was changed. Try again in a moment.",
+  "ko": "아무것도 변경되지 않았습니다. 잠시 후 다시 시도하세요."
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkPeopleFailedTitle": {
+  "en": "Could not change access",
+  "ko": "액세스를 변경할 수 없습니다"
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkPeoplePartialMessage": {
+  "en": "{count} could not be changed and are still selected, so you can try again.",
+  "ko": "{count}명은 변경할 수 없어 선택된 상태로 남아 있으므로 다시 시도할 수 있습니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkPeoplePartialMessageOne": {
+  "en": "{count} could not be changed and is still selected, so you can try again.",
+  "ko": "{count}명은 변경할 수 없어 선택된 상태로 남아 있으므로 다시 시도할 수 있습니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkPeoplePartialTitle": {
+  "en": "{count} people set to {level}",
+  "ko": "사용자 {count}명이 {level}(으)로 설정됨"
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkPeoplePartialTitleOne": {
+  "en": "{count} person set to {level}",
+  "ko": "사용자 {count}명이 {level}(으)로 설정됨"
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkRefusedSentence": {
+  "en": "{refused} sub-accounts weren't updated because the request was refused. Those {refused} are still on the level from before and stay selected: {names}.",
+  "ko": "요청이 거부되어 서브 계정 {refused}개가 업데이트되지 않았습니다. 이 {refused}개는 이전 수준을 그대로 유지하며 선택된 상태로 남아 있습니다: {names}."
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkRefusedSentenceOne": {
+  "en": "{names} wasn't updated because the request was refused, is still on the level from before, and stays selected.",
+  "ko": "요청이 거부되어 {names}이(가) 업데이트되지 않았습니다. 이전 수준을 그대로 유지하며 선택된 상태로 남아 있습니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkRefusedTitle": {
+  "en": "That access level was refused",
+  "ko": "해당 액세스 수준이 거부되었습니다"
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkStaleNote": {
+  "en": "We couldn't re-read the list, so the levels shown below may be out of date — reload the page.",
+  "ko": "목록을 다시 읽을 수 없어 아래에 표시된 수준이 최신이 아닐 수 있습니다. 페이지를 새로고침하세요."
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkUncertainSentence": {
+  "en": "The connection dropped before {count} sub-accounts answered, so those {count} outcomes are unknown — each one may or may not be on {tier} now. All {count} stay selected, and applying again is safe: {names}.",
+  "ko": "서브 계정 {count}개가 응답하기 전에 연결이 끊겨 이 {count}개의 결과를 알 수 없습니다. 각 서브 계정이 현재 {tier}을(를) 사용 중일 수도, 아닐 수도 있습니다. {count}개 모두 선택된 상태로 유지되며, 다시 적용해도 안전합니다: {names}."
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkUncertainSentenceOne": {
+  "en": "The connection dropped before {names} answered, so that outcome is unknown — {names} may or may not be on {tier} now, and stays selected. Applying again is safe.",
+  "ko": "{names}이(가) 응답하기 전에 연결이 끊겨 결과를 알 수 없습니다. {names}은(는) 현재 {tier}을(를) 사용 중일 수도, 아닐 수도 있으며 선택된 상태로 유지됩니다. 다시 적용해도 안전합니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkUncertainTitle": {
+  "en": "Couldn't confirm {count} sub-accounts",
+  "ko": "서브 계정 {count}개를 확인할 수 없습니다"
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkUnchangedSentence": {
+  "en": "{unchanged} sub-accounts were already on {tier}.",
+  "ko": "서브 계정 {unchanged}개는 이미 {tier}을(를) 사용 중이었습니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkUnchangedSentenceOne": {
+  "en": "{names} was already on {tier}.",
+  "ko": "{names}은(는) 이미 {tier}을(를) 사용 중이었습니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkUpdatedSentence": {
+  "en": "{updated} sub-accounts are newly on {tier}.",
+  "ko": "서브 계정 {updated}개가 새로 {tier}을(를) 사용합니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.bulkUpdatedSentenceOne": {
+  "en": "{names} is newly on {tier}.",
+  "ko": "{names}이(가) 새로 {tier}을(를) 사용합니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.defaultAssignedTitle": {
+  "en": "{name} default → {tier}",
+  "ko": "{name} 기본값 → {tier}"
+ },
+ "copilotApp.copilot.askAi.access.toasts.groupSetSensitiveKept": {
+  "en": "{count} sensitive skills were kept at their cap — raise those one at a time.",
+  "ko": "민감한 스킬 {count}개는 상한 수준으로 유지되었습니다. 이 스킬은 하나씩 올리세요."
+ },
+ "copilotApp.copilot.askAi.access.toasts.groupSetSensitiveKeptOne": {
+  "en": "{count} sensitive skill was kept at its cap — raise it on its own.",
+  "ko": "민감한 스킬 {count}개는 상한 수준으로 유지되었습니다. 이 스킬은 개별적으로 올리세요."
+ },
+ "copilotApp.copilot.askAi.access.toasts.inheritFailedTitle": {
+  "en": "Couldn't change {name} back",
+  "ko": "{name}을(를) 되돌릴 수 없습니다"
+ },
+ "copilotApp.copilot.askAi.access.toasts.inheritedTitle": {
+  "en": "{name} follows the agency default",
+  "ko": "{name}이(가) 에이전시 기본값을 따릅니다"
+ },
+ "copilotApp.copilot.askAi.access.toasts.jobCancelledMessage": {
+  "en": "At least {users} people were already updated across {subAccounts} sub-accounts, and those changes stay.",
+  "ko": "서브 계정 {subAccounts}개에서 최소 {users}명이 이미 업데이트되었으며, 해당 변경사항은 유지됩니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.jobCancelledMessageNone": {
+  "en": "It stopped before any updates were recorded. Changes already in progress may still apply.",
+  "ko": "업데이트가 기록되기 전에 중지되었습니다. 이미 진행 중이던 변경사항은 계속 적용될 수 있습니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.jobCancelledMessageOne": {
+  "en": "At least {users} person was already updated across {subAccounts} sub-accounts, and that change stays.",
+  "ko": "서브 계정 {subAccounts}개에서 최소 {users}명이 이미 업데이트되었으며, 해당 변경사항은 유지됩니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.jobCancelledTitle": {
+  "en": "Bulk change stopped",
+  "ko": "일괄 변경 중지됨"
+ },
+ "copilotApp.copilot.askAi.access.toasts.jobDoneAlreadyMessage": {
+  "en": "Checked {unchanged} people across {subAccounts} sub-accounts. Nothing needed changing.",
+  "ko": "서브 계정 {subAccounts}개에서 사용자 {unchanged}명을 확인했습니다. 변경할 항목이 없었습니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.jobDoneAlreadyMessageOne": {
+  "en": "Checked {unchanged} person across {subAccounts} sub-accounts. Nothing needed changing.",
+  "ko": "서브 계정 {subAccounts}개에서 사용자 {unchanged}명을 확인했습니다. 변경할 항목이 없었습니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.jobDoneAlreadyTitle": {
+  "en": "Everyone was already on this level",
+  "ko": "모든 사용자가 이미 이 수준을 사용 중입니다"
+ },
+ "copilotApp.copilot.askAi.access.toasts.jobDoneMessage": {
+  "en": "The change finished across {subAccounts} sub-accounts.",
+  "ko": "서브 계정 {subAccounts}개 전체에서 변경이 완료되었습니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.jobDoneMessageOne": {
+  "en": "The change finished across {subAccounts} sub-account.",
+  "ko": "서브 계정 {subAccounts}개에서 변경이 완료되었습니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.jobDoneMessageUnchanged": {
+  "en": "Finished across {subAccounts} sub-accounts. {unchanged} people were already on this level.",
+  "ko": "서브 계정 {subAccounts}개에서 완료되었습니다. {unchanged}명은 이미 이 수준이었습니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.jobDoneMessageUnchangedOne": {
+  "en": "Finished across {subAccounts} sub-accounts. {unchanged} person was already on this level.",
+  "ko": "서브 계정 {subAccounts}개에서 완료되었습니다. {unchanged}명은 이미 이 수준이었습니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.jobDoneTitleOne": {
+  "en": "{users} person updated",
+  "ko": "{users}명 업데이트됨"
+ },
+ "copilotApp.copilot.askAi.access.toasts.jobFailedMessage": {
+  "en": "{users} people were updated before it stopped, and those changes stay. Nothing else was touched.",
+  "ko": "중단되기 전에 {users}명이 업데이트되었으며, 이 변경사항은 유지됩니다. 그 밖에는 아무것도 변경되지 않았습니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.jobFailedTitle": {
+  "en": "Couldn't finish the bulk change",
+  "ko": "일괄 변경을 완료하지 못했습니다"
+ },
+ "copilotApp.copilot.askAi.access.toasts.jobPartialMessage": {
+  "en": "The change finished, but {failed} people kept the access they had. Open Bulk changes to see why.",
+  "ko": "변경이 완료되었지만 {failed}명은 기존 액세스가 그대로 유지되었습니다. 이유를 확인하려면 일괄 변경을 여세요."
+ },
+ "copilotApp.copilot.askAi.access.toasts.jobPartialMessageOne": {
+  "en": "The change finished, but {failed} person kept the access they had. Open Bulk changes to see why.",
+  "ko": "변경이 완료되었지만 {failed}명은 기존 액세스가 그대로 유지되었습니다. 이유를 확인하려면 일괄 변경을 여세요."
+ },
+ "copilotApp.copilot.askAi.access.toasts.jobPartialTitle": {
+  "en": "{users} updated · {failed} people unchanged",
+  "ko": "{users}명 업데이트됨 · {failed}명 변경 안 됨"
+ },
+ "copilotApp.copilot.askAi.access.toasts.jobPartialTitleOne": {
+  "en": "{users} updated · {failed} person unchanged",
+  "ko": "{users}명 업데이트됨 · {failed}명 변경 안 됨"
+ },
+ "copilotApp.copilot.askAi.access.toasts.personLevelCappedMessage": {
+  "en": "{requested} is more than this person can be given here, so {level} was stored instead. Recorded in this person's history.",
+  "ko": "{requested}은(는) 여기서 이 사용자에게 부여할 수 있는 범위를 넘으므로 대신 {level}(으)로 저장되었습니다. 이 사용자의 변경 기록에 남았습니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.personLevelClearedMessage": {
+  "en": "Their own level was removed, so they get {level} now. Recorded in this person's history.",
+  "ko": "개별 지정 수준이 제거되어 이제 {level}이(가) 적용됩니다. 이 사용자의 변경 기록에 남았습니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.personLevelClearedPlainMessage": {
+  "en": "Their own level was removed. Recorded in this person's history.",
+  "ko": "개별 지정 수준이 제거되었습니다. 이 사용자의 변경 기록에 남았습니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.personLevelClearedTitle": {
+  "en": "{name} follows the role default",
+  "ko": "{name}: 역할 기본값 적용"
+ },
+ "copilotApp.copilot.askAi.access.toasts.personLevelDefaultMessage": {
+  "en": "Their own level was removed, so they get {level} now. Recorded in this person's history.",
+  "ko": "개별 지정 수준이 제거되어 이제 {level}이(가) 적용됩니다. 이 사용자의 변경 기록에 남았습니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.personLevelDefaultPlainMessage": {
+  "en": "Their own level was removed. Recorded in this person's history.",
+  "ko": "개별 지정 수준이 제거되었습니다. 이 사용자의 변경 기록에 남았습니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.personLevelDefaultTitle": {
+  "en": "{name} follows the sub-account default",
+  "ko": "{name}: 서브 계정 기본값 적용"
+ },
+ "copilotApp.copilot.askAi.access.toasts.personLevelFailedMessage": {
+  "en": "Their access level was put back to what it was.",
+  "ko": "액세스 수준이 이전 상태로 되돌아갔습니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.personLevelFailedTitle": {
+  "en": "Couldn't change {name}",
+  "ko": "{name}을(를) 변경할 수 없습니다"
+ },
+ "copilotApp.copilot.askAi.access.toasts.personLevelMessage": {
+  "en": "Recorded in this person's history.",
+  "ko": "이 사용자의 변경 기록에 남았습니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.reviewFailedMessage": {
+  "en": "Nothing changed — the new skills are still held off. Try again.",
+  "ko": "아무것도 변경되지 않았습니다. 새 스킬은 여전히 꺼진 상태로 보류되어 있습니다. 다시 시도하세요."
+ },
+ "copilotApp.copilot.askAi.access.toasts.reviewFailedTitle": {
+  "en": "Couldn’t mark {tier} as reviewed",
+  "ko": "{tier}을(를) 검토 완료로 표시하지 못했습니다"
+ },
+ "copilotApp.copilot.askAi.access.toasts.reviewedMessage": {
+  "en": "The new skills now follow this level instead of being held off.",
+  "ko": "이제 새 스킬은 꺼진 상태로 보류되지 않고 이 수준을 따릅니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.reviewedTitle": {
+  "en": "{tier} marked as reviewed",
+  "ko": "{tier} 검토 완료로 표시됨"
+ },
+ "copilotApp.copilot.askAi.access.toasts.sensitiveAllowedMessage": {
+  "en": "Recorded as a sensitive change.",
+  "ko": "민감한 변경으로 기록되었습니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.sensitiveCeilingMessage": {
+  "en": "{base} caps sensitive skills at {level}, so {requested} can't be granted here and nothing was changed. Build this level on a higher starting level if it needs more.",
+  "ko": "{base}은(는) 민감한 스킬을 최대 {level}까지만 허용하므로 여기서 {requested}을(를) 부여할 수 없으며, 아무것도 변경되지 않았습니다. 더 높은 권한이 필요하면 더 높은 시작 수준을 기반으로 이 수준을 만드세요."
+ },
+ "copilotApp.copilot.askAi.access.toasts.sensitiveCeilingTitle": {
+  "en": "{module} can't go above {level}",
+  "ko": "{module}은(는) {level}보다 높게 설정할 수 없습니다"
+ },
+ "copilotApp.copilot.askAi.access.toasts.staleAfterWriteMessage": {
+  "en": "The change was saved, but we couldn't re-read the list — reload the page to see the current levels.",
+  "ko": "변경사항은 저장되었지만 목록을 다시 읽지 못했습니다. 현재 수준을 보려면 페이지를 새로고침하세요."
+ },
+ "copilotApp.copilot.askAi.access.toasts.tierArchivedMessage": {
+  "en": "It is off the grid and out of the pickers. Restore it any time from the Archived filter.",
+  "ko": "목록과 선택 메뉴에서 제외되었습니다. 보관됨 필터에서 언제든지 복원할 수 있습니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.tierArchivedTitle": {
+  "en": "{tier} archived",
+  "ko": "{tier} 보관됨"
+ },
+ "copilotApp.copilot.askAi.access.toasts.tierRebasedMessage": {
+  "en": "Custom now starts from {base} — untouched skills follow it.",
+  "ko": "이제 사용자 지정 수준은 {base}에서 시작합니다. 변경하지 않은 스킬은 이 시작 수준을 따릅니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.tierRebasedTitle": {
+  "en": "Custom rebased",
+  "ko": "사용자 지정 수준의 시작 기준 변경됨"
+ },
+ "copilotApp.copilot.askAi.access.toasts.tierRenamedMessage": {
+  "en": "Everyone on this level keeps the same permissions.",
+  "ko": "이 수준을 사용하는 모든 대상의 권한은 그대로 유지됩니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.tierRenamedTitle": {
+  "en": "Renamed to {tier}",
+  "ko": "이름이 {tier}(으)로 변경됨"
+ },
+ "copilotApp.copilot.askAi.access.toasts.tierResetMessage": {
+  "en": "Every skill follows {base} again.",
+  "ko": "모든 스킬이 다시 {base}을(를) 따릅니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.tierRestoredMessage": {
+  "en": "It is back on the grid with its permissions intact, and can be assigned again.",
+  "ko": "권한이 그대로 유지된 채 목록에 다시 표시되며, 다시 할당할 수 있습니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.tierRestoredTitle": {
+  "en": "{tier} restored",
+  "ko": "{tier} 복원됨"
+ },
+ "copilotApp.copilot.askAi.access.toasts.tierSaveFailedMessage": {
+  "en": "Nothing changed — your edits are still here, try again.",
+  "ko": "아무것도 변경되지 않았습니다. 편집한 내용은 그대로 남아 있으니 다시 시도하세요."
+ },
+ "copilotApp.copilot.askAi.access.toasts.tierSavedMessage": {
+  "en": "{count} sub-accounts now use the new settings.",
+  "ko": "이제 서브 계정 {count}개가 새 설정을 사용합니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.tierSavedMessageOne": {
+  "en": "{count} sub-account now uses the new settings.",
+  "ko": "이제 서브 계정 {count}개가 새 설정을 사용합니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.tierSavedMessageWho": {
+  "en": "The new settings now apply to {who}.",
+  "ko": "이제 {who}에 새 설정이 적용됩니다."
+ },
+ "copilotApp.copilot.askAi.access.toasts.tierSavedTitle": {
+  "en": "{tier} updated",
+  "ko": "{tier} 업데이트됨"
+ },
+ "copilotApp.copilot.askAi.announce.alsoNew": {
+  "en": "Also new",
+  "ko": "이것도 신규"
+ },
+ "copilotApp.copilot.askAi.announce.new": {
+  "en": "New",
+  "ko": "신규"
+ },
+ "copilotApp.copilot.askAi.announce.newSkills.badge": {
+  "en": "New",
+  "ko": "신규"
+ },
+ "copilotApp.copilot.askAi.announce.newSkills.body": {
+  "en": "{count} skills were added to Ask AI. Review which access levels get them.",
+  "ko": "'AI에게 문의'에 스킬 {count}개가 추가되었습니다. 어떤 액세스 수준에 제공할지 검토하세요."
+ },
+ "copilotApp.copilot.askAi.announce.newSkills.bodyOne": {
+  "en": "{count} skill was added to Ask AI. Review which access levels get it.",
+  "ko": "'AI에게 문의'에 스킬 {count}개가 추가되었습니다. 어떤 액세스 수준에 제공할지 검토하세요."
+ },
+ "copilotApp.copilot.askAi.announce.newSkills.cta": {
+  "en": "Review new skills",
+  "ko": "새 스킬 검토"
+ },
+ "copilotApp.copilot.askAi.announce.newSkills.title": {
+  "en": "New skills need a decision",
+  "ko": "새 스킬에 대한 결정이 필요합니다"
+ },
+ "copilotApp.copilot.askAi.announce.skillAccess.body": {
+  "en": "Skill permissions let you decide, per access level, which skills your sub-account users can use — and which they only read.",
+  "ko": "스킬 권한을 사용하면 액세스 수준별로 서브 계정 사용자가 실행할 수 있는 스킬과 조회만 할 수 있는 스킬을 정할 수 있습니다."
+ },
+ "copilotApp.copilot.askAi.announce.skillAccess.title": {
+  "en": "Choose what Ask AI can do",
+  "ko": "'AI에게 문의'가 할 수 있는 작업 선택"
  }
 }
