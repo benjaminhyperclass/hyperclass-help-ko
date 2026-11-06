@@ -286,6 +286,7 @@
  "agentLogs.metrics.export.document.filters": "Filters",
  "agentLogs.metrics.export.document.generated": "Generated",
  "agentLogs.metrics.export.document.metric": "Metric",
+ "agentLogs.metrics.export.document.no": "No",
  "agentLogs.metrics.export.document.noData": "No data",
  "agentLogs.metrics.export.document.page": "Page {'{current}'} of {'{total}'}",
  "agentLogs.metrics.export.document.period": "Period",

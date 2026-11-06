@@ -1,5 +1,6 @@
 {
  "common.confirmationModalDeleteOkButtonText": "Delete",
+ "customVariables.id": "ID",
  "customVariables.otp": "OTP",
  "customVariables.pdfLink": "PDF URL",
  "customVariables.pdfUrl": "PDF URL",

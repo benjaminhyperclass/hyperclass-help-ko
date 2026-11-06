@@ -1,5 +1,6 @@
 {
  "common.communitiesDomain": "communities.io",
+ "common.delete": "Delete",
  "common.httpsPrefix": "https://",
  "domainSetup.customDomainDescription": "Lorem ipsum",
  "domainSetup.customDomainPlaceholder": "example.com",
