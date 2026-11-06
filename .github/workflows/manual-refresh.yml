@@ -85,11 +85,11 @@ jobs:
         with: { path: /tmp/outs }
       - name: 결과를 manual-out 브랜치에 커밋
         run: |
-          mkdir -p /tmp/res && cd /tmp/res
-          git init -q -b manual-out
+          R="https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
+          git clone -q --depth 1 -b manual-out "$R" /tmp/res || { mkdir -p /tmp/res && git -C /tmp/res init -q -b manual-out; }
+          cd /tmp/res
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git fetch -q --depth 1 "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" manual-out && git reset -q --soft FETCH_HEAD || true
           RUN=$(jq -r '.run // "run"' $GITHUB_WORKSPACE/manual-refresh/trigger.json)
           mkdir -p "$RUN"
           cp -r /tmp/outs/*/* "$RUN"/ 2>/dev/null || true

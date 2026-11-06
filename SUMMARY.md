@@ -2893,12 +2893,6 @@
 
   * [구글 비즈니스 프로필에 메시징 및 소셜 채널 연결하기](docs/google-business-page/messaging-and-social-channel-connection-with-gbp.md)
 
-## hyperaxis
-
-  * [📊 Hyperaxis — 법적 고지](docs/hyperaxis/README.md)
-  * [개인정보(데이터) 삭제 요청](docs/hyperaxis/data-deletion.md)
-  * [개인정보처리방침](docs/hyperaxis/privacy-policy.md)
-  * [이용약관](docs/hyperaxis/terms-of-service.md)
 
 ## lead-connector-mobile-desktop-app
 
