@@ -2,6 +2,8 @@
  "common.businessEmail": "business{'@'}yourcompany.com",
  "common.customerEmail": "customer{'@'}email.com",
  "common.helloWorld": "hello world!",
+ "manageScoring.delete": "Delete",
+ "manualActions.delete": "Delete",
  "manualActions.redirect.alreadyCompleted": "This manual action was already completed. It has been removed from your queue.",
  "manualActions.redirect.inProgressByOtherAgent": "{contactName} is already on a call with another user.",
  "manualActions.redirect.notFound": "This manual action is no longer available.",
@@ -28,5 +30,6 @@
  "snippets.rcs": "RCS",
  "snippets.rcsBusinessHandle": "yourbusiness.rcs",
  "snippets.suggestedActionUrlLabel": "URL",
- "snippets.suggestedActionUrlPlaceholder": "https://www.example.com"
+ "snippets.suggestedActionUrlPlaceholder": "https://www.example.com",
+ "triggerLinks.delete": "Delete"
 }
