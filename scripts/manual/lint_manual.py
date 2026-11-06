@@ -40,10 +40,19 @@ def check(path, src_images=None):
     if not re.search(r"^# \S", t, re.M): issues.append(("title", "없음"))
     letters = len(re.findall(r"[A-Za-z]", prose)); ko = len(re.findall(r"[가-힣]", prose))
     if letters > 1.5 * ko + 300: issues.append(("english", f"en {letters} / ko {ko}"))
+    # 상대 링크가 실제 문서를 가리키는지 (docs/ 안에서 검사할 때만)
+    if CHECK_LINKS:
+        for m in re.finditer(r"\]\(([^)#\s]+\.md)(?:#[^)]*)?\)", t):
+            tgt = m.group(1)
+            if tgt.startswith("http"): continue
+            full = os.path.normpath(os.path.join(os.path.dirname(path), tgt))
+            if not os.path.exists(full): issues.append(("link", tgt[-60:]))
     if src_images is not None:
         n = len(re.findall(r"!\[[^\]]*\]\(", t))
         if n < src_images: issues.append(("images", f"{n}/{src_images}"))
     return issues
+
+CHECK_LINKS = "--links" in sys.argv
 
 def main():
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
