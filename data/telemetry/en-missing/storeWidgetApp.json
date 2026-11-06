@@ -1,4 +1,5 @@
 {
+ "common.delete": "Delete",
  "common.id": "ID",
  "pickupLocations.addButton": "Add pickup location",
  "pickupLocations.addPickupLocation": "Add pickup location",
@@ -78,6 +79,7 @@
  "pickupLocations.title": "Pickup in store",
  "shippingProfile.blockShipping": "Block shipping if no conditions match",
  "shippingProfile.blockShippingTooltip": "When enabled, shipping will be blocked for orders that don't match any of your configured shipping zone conditions",
+ "shippingRate.form.kg": "kg",
  "shopify.contactCustomFieldsNote": "This adds new Shopify custom fields (e.g., customer ID, lifetime value, order count) to your contacts.",
  "woocommerce.cardTitle": "WooCommerce"
 }

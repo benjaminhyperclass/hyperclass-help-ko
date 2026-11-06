@@ -1,5 +1,6 @@
 {
  "common.confirmationModalDeleteOkButtonText": "Delete",
+ "customVariables.AMPM": "AM/PM",
  "customVariables.id": "ID",
  "customVariables.otp": "OTP",
  "customVariables.pdfLink": "PDF URL",
