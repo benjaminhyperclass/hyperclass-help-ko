@@ -146,8 +146,10 @@ jobs:
           [ -f data/hc-portal-rev.json ] || { echo "(포털 포인터 없음)"; exit 0; }
           fail=0
           rev=$(python3 -c "import json;print(json.load(open('data/hc-portal-rev.json'))['rev'])")
-          # 브랜치에만 있는 커밋은 스쿼시 머지·브랜치 삭제 뒤 GC 되어 jsDelivr·raw 가 404 를 낸다 → main(HEAD) 의 조상만 허용
-          anc() { git merge-base --is-ancestor "$1" HEAD 2>/dev/null || { echo "❌ $2=$1 은 HEAD(main) 의 조상이 아님 — 브랜치 전용 커밋 금지"; fail=1; }; }
+          # 브랜치에만 있는 커밋은 스쿼시 머지·브랜치 삭제 뒤 GC 되어 jsDelivr·raw 가 404 를 낸다 → main(HEAD) 의 조상만 허용.
+          # 예외: 런타임 배포 브랜치 cdn(scripts/publish-cdn.sh, 2026-11-06 — jsDelivr 50MB 한도)은 지우거나 강제 푸시하지 않는 영구 브랜치다.
+          git fetch -q origin cdn:refs/remotes/origin/cdn 2>/dev/null || true
+          anc() { git merge-base --is-ancestor "$1" HEAD 2>/dev/null || git merge-base --is-ancestor "$1" refs/remotes/origin/cdn 2>/dev/null || { echo "❌ $2=$1 은 main·cdn 어느 쪽의 조상도 아님 — 브랜치 전용 커밋 금지"; fail=1; }; }
           if git cat-file -e "$rev:data/hc-ko-i18n.json" 2>/dev/null; then echo "  ✅ rev ${rev:0:7} 에 포털 사전 있음"; else echo "❌ rev=$rev 커밋에 data/hc-ko-i18n.json 없음"; fail=1; fi
           anc "$rev" rev
           # 포털 로더 내장 REV 도 같은 조건
@@ -174,7 +176,8 @@ jobs:
           set -e
           [ -f data/hc-pay-rev.json ] || { echo "(결제 포인터 없음)"; exit 0; }
           fail=0
-          anc() { git merge-base --is-ancestor "$1" HEAD 2>/dev/null || { echo "❌ $2=$1 은 HEAD(main) 의 조상이 아님"; fail=1; }; }
+          git fetch -q origin cdn:refs/remotes/origin/cdn 2>/dev/null || true
+          anc() { git merge-base --is-ancestor "$1" HEAD 2>/dev/null || git merge-base --is-ancestor "$1" refs/remotes/origin/cdn 2>/dev/null || { echo "❌ $2=$1 은 main·cdn 어느 쪽의 조상도 아님"; fail=1; }; }
           rev=$(python3 -c "import json;print(json.load(open('data/hc-pay-rev.json'))['rev'])")
           echo "$rev" | grep -qE '^[0-9a-f]{40}$' || { echo "❌ rev 형식(40자)"; fail=1; }
           git cat-file -e "$rev:data/hc-ko-payments.json" 2>/dev/null && echo "  ✅ rev ${rev:0:7} 에 결제 사전" || { echo "❌ rev 커밋에 결제 사전 없음"; fail=1; }
