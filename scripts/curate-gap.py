@@ -73,15 +73,12 @@ RUNTIME_EXACT = {
     'Search b', 'Search by use', 'Hi benjami',                            # 프레임 건너뛴 체인 조각
 }
 USER_DATA_EXACT = {
-    'Actions for integration hyperaxis', 'Seokwoo Jung', 'Kettlebell_otaku', 'Cludyclia',
+    'Actions for integration hyperaxis', 'Cludyclia',   # 제3자 실명·핸들은 공개 레포라 뺐다(2026-11-06)
     'HG Tech', 'HyperClass-TrueGrow', 'HyperclassAI',
     'Community(Free) Link', 'Community(Hyper x Truegrow) Link',
     "CEO's Email", 'Color logo_url', 'Grey logo_whitebackground_url', 'Meta API Token', 'Meta Pixel ID',
-    'if a contact reply and contact Has tag - A3PgJrLkzIwung4ab01U',
     'toss test user test', 'test test',
-    'Id: iHMVjt33CphudEOinQv6', 'UaFUhbpJplSpKnLweIgW',
     'Better Sales Made SImple',
-    'Do you want to delete blog.rubynail.co?',
     'Nail Artist Website Template (Beauty Salon) * CLONE FIRST BEFORE USING',
     'Sales Funnel TEMPLATE - Beauty  * CLONE BEFORE USING',
     'AI PROPOSAL', 'REMEMBER', 'NOT FOR', 'WHO NOT',                       # 커뮤니티 게시물 본문 조각
