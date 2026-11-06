@@ -9901,7 +9901,7 @@
  },
  "common.useLcEmail": {
   "en": "Use LC Email",
-  "ko": "LC 이메일 사용"
+  "ko": "하이퍼클래스 이메일 사용"
  },
  "common.21Jun2018": {
   "en": "21 Jun 2018",
@@ -12185,7 +12185,7 @@
  },
  "common.sidebar.lcIntegrations": {
   "en": "LC Integrations",
-  "ko": "LC 연동"
+  "ko": "하이퍼클래스 연동"
  },
  "common.sidebar.allIntegrations": {
   "en": "All Integrations",
@@ -25445,7 +25445,7 @@
  },
  "campaign.email.lcEmail.migrationModal.useLcEmail": {
   "en": "Use LC Email",
-  "ko": "LC 이메일 사용"
+  "ko": "하이퍼클래스 이메일 사용"
  },
  "campaign.email.newPostModal.dragDropMedia": {
   "en": "Drag or Drop Media Here",
@@ -52293,7 +52293,7 @@
  },
  "reportingApp.locationDashboard.emailHealthReport.errors.locationDoesNotHaveLCEmail": {
   "en": "Email health report is only available for LC email customers.",
-  "ko": "이메일 상태 리포트는 LC 이메일 고객만 이용할 수 있습니다."
+  "ko": "이메일 상태 리포트는 하이퍼클래스 이메일 고객만 이용할 수 있습니다."
  },
  "reportingApp.locationDashboard.emailHealthReport.scoreTooltip.increased": {
   "en": "Your score has increased by {points} points",
@@ -123457,7 +123457,7 @@
  },
  "externalTrackingApp.externalTracking.troubleshoot.section1.step3": {
   "en": "3. Look for console logs prefixed with [LC Tracking], such as 'Tracker initialized successfully' and 'Tracking initial page view'",
-  "ko": "3. 'Tracker initialized successfully', 'Tracking initial page view' 와 같이 [LC Tracking] 접두사가 붙은 콘솔 로그를 확인하세요"
+  "ko": "3. 'Tracker initialized successfully', 'Tracking initial page view' 와 같이 접두사에 Tracking 이 들어간 콘솔 로그를 확인하세요"
  },
  "externalTrackingApp.externalTracking.troubleshoot.section1.step4": {
   "en": "4. If no logs appear, verify the script loaded and data-debug=\"true\" is on that script tag. If logs appear but events are missing, inspect POST /external-tracking/events in the Network tab and verify the tracking ID and API endpoint.",
@@ -129989,7 +129989,7 @@
  },
  "preferenceManagementApp.preferenceManagement.lcEmail": {
   "en": "LC Email",
-  "ko": "LC 이메일"
+  "ko": "하이퍼클래스 이메일"
  },
  "preferenceManagementApp.preferenceManagement.enabled": {
   "en": "enabled.",
@@ -197569,7 +197569,7 @@
  },
  "selectFreeUnits.lcEmailVerification.label": {
   "en": "LC Email Verification",
-  "ko": "LC 이메일 인증"
+  "ko": "하이퍼클래스 이메일 인증"
  },
  "selectFreeUnits.lcEmailVerification.description": {
   "en": "Email address verification",
@@ -199661,7 +199661,7 @@
  },
  "marketplace.appInfo.scopesCategory.lc-email": {
   "en": "LC Email",
-  "ko": "LC 이메일"
+  "ko": "하이퍼클래스 이메일"
  },
  "marketplace.appInfo.scopesCategory.medias": {
   "en": "Media",
@@ -203493,7 +203493,7 @@
  },
  "privateIntegration.scopes.lcemailreadonly": {
   "en": "View LC Email",
-  "ko": "LC 이메일 보기"
+  "ko": "하이퍼클래스 이메일 보기"
  },
  "privateIntegration.scopes.locationstaskswrite": {
   "en": "Edit Location Tasks",
@@ -250997,7 +250997,7 @@
  },
  "paneSubAccountSetting.drawrSubAccountConfiguration.subAccountFeatures.rebilling.notUnderGhl.description": {
   "en": "Rebilling can only be enabled for LC sub-accounts",
-  "ko": "재청구는 LC 서브 계정에서만 활성화할 수 있습니다"
+  "ko": "재청구는 하이퍼클래스 서브 계정에서만 활성화할 수 있습니다"
  },
  "paneSubAccountSetting.drawrSubAccountConfiguration.subAccountFeatures.rebilling.notifications.success.title": {
   "en": "{status} Rebilling ",
@@ -251297,11 +251297,11 @@
  },
  "paneSubAccountSetting.modalLCPhone.purchaseDescription": {
   "en": "LC Phone System Optin - 3DS verification",
-  "ko": "LC 전화 시스템 옵트인 - 3DS 인증"
+  "ko": "하이퍼클래스 전화 시스템 옵트인 - 3DS 인증"
  },
  "paneSubAccountSetting.modalLCPhoneAndTwilio.purchaseDescription": {
   "en": "LC Phone System Optin - 3DS verification",
-  "ko": "LC 전화 시스템 옵트인 - 3DS 인증"
+  "ko": "하이퍼클래스 전화 시스템 옵트인 - 3DS 인증"
  },
  "paneSubAccountSetting.subAccountMenuOption.noOptions": {
   "en": "No options",
@@ -251333,7 +251333,7 @@
  },
  "paneSubAccountSetting.lcPhone": {
   "en": "Lc Phone",
-  "ko": "LC 전화"
+  "ko": "하이퍼클래스 전화"
  },
  "agencySettings.subAccount.restricted": {
   "en": "Restricted",
@@ -251425,7 +251425,7 @@
  },
  "paneAgencySetting.lcIntegrationCard.a2pAndCarrierFees": {
   "en": "A2P and carrier fees are passed through without markup; A2P is not billed for non-LC accounts.",
-  "ko": "A2P 및 통신사 요금은 마크업 없이 그대로 부과되며, LC 계정이 아닌 경우 A2P는 청구되지 않습니다."
+  "ko": "A2P 및 통신사 요금은 마크업 없이 그대로 부과되며, 하이퍼클래스 계정이 아닌 경우 A2P는 청구되지 않습니다."
  },
  "paneAgencySetting.lcIntegrationCard.useLcPhone": {
   "en": "Use {productName}",
@@ -251553,7 +251553,7 @@
  },
  "paneAgencySetting.quickLinksCard.quickLinks.lcPhoneSystemOptin3DSVerification": {
   "en": "LC Phone System Optin - 3DS verification",
-  "ko": "LC 전화 시스템 옵트인 - 3DS 인증"
+  "ko": "하이퍼클래스 전화 시스템 옵트인 - 3DS 인증"
  },
  "paneAgencySetting.twilioIntegrationCard.connectedToTwilio": {
   "en": "Connected to Twilio account",
@@ -251761,7 +251761,7 @@
  },
  "paneAgencySetting.paneEmailNotificationsSetting.header.description": {
   "en": "This notification is only applicable for the sub-accounts which are using Native Phone System (previously known as LC Phone System)",
-  "ko": "이 알림은 네이티브 전화 시스템(이전 명칭: LC 전화 시스템)을 사용하는 서브 계정에만 적용됩니다"
+  "ko": "이 알림은 네이티브 전화 시스템(이전 명칭: 하이퍼클래스 전화 시스템)을 사용하는 서브 계정에만 적용됩니다"
  },
  "paneAgencySetting.paneEmailNotificationsSetting.totalSubAccounts": {
   "en": "Total number of Sub-accounts using Native phone system",
@@ -253077,7 +253077,7 @@
  },
  "whatsapp.onboard_form.onboard.api.body": {
   "en": "Connect a new phone number that is not currently in use on your mobile app. You can choose either an LC Phone Number or a local phone number.",
-  "ko": "현재 모바일 앱에서 사용 중이지 않은 새 전화번호를 연결하세요. LC 전화번호 또는 지역 전화번호를 선택할 수 있습니다."
+  "ko": "현재 모바일 앱에서 사용 중이지 않은 새 전화번호를 연결하세요. 하이퍼클래스 전화번호 또는 지역 전화번호를 선택할 수 있습니다."
  },
  "whatsapp.onboard_form.onboard.api.btn": {
   "en": "Set Up a New WhatsApp Number",
@@ -424074,5 +424074,777 @@
  "ghlEmailBuilderCommon.emailTemplate.providers.activeCampaign": {
   "en": "Active Campaign",
   "ko": "ActiveCampaign"
+ },
+ "agentLogsApp.agentLogs.metrics.export.document.no": {
+  "en": "No",
+  "ko": "아니오"
+ },
+ "calendarComponentsApp.calendarAI.availabilityPicker.to": {
+  "en": "to",
+  "ko": "~"
+ },
+ "calendarComponentsApp.calendarAI.models.welcomeGreetingDefault": {
+  "en": "Hi!",
+  "ko": "안녕하세요!"
+ },
+ "chatWidgetApp.analytics.colOpenRate": {
+  "en": "Open rate",
+  "ko": "오픈율"
+ },
+ "chatWidgetApp.analytics.trendNet": {
+  "en": "Net",
+  "ko": "순 감성"
+ },
+ "chatWidgetApp.videoAvatar.chatPromptLockedHelper": {
+  "en": "Turned off while Video avatar is on.",
+  "ko": "동영상 아바타가 켜져 있는 동안에는 꺼집니다."
+ },
+ "chatWidgetApp.videoAvatar.media": {
+  "en": "Video",
+  "ko": "동영상"
+ },
+ "clientPortalBuilder.dashboard.switchBack.popoverOnTag": {
+  "en": "On",
+  "ko": "켜짐"
+ },
+ "clientPortalBuilder.dashboard.whatsNew.deadlineBadge": {
+  "en": "Retires Dec 1, 2026",
+  "ko": "2026년 12월 1일 지원 종료"
+ },
+ "clientPortalBuilder.dashboard.whatsNew.deadlinePill": {
+  "en": "Classic portal retires Dec 1, 2026",
+  "ko": "클래식 포털 2026년 12월 1일 지원 종료"
+ },
+ "contactsApp.common.at": {
+  "en": "at",
+  "ko": "-"
+ },
+ "conversations.no": {
+  "en": "No",
+  "ko": "아니오"
+ },
+ "crmCommon.associations.no": {
+  "en": "No",
+  "ko": "아니오"
+ },
+ "crmCommon.common.no": {
+  "en": "No",
+  "ko": "아니오"
+ },
+ "crmCommon.common.of": {
+  "en": "of",
+  "ko": "/"
+ },
+ "crmCommon.common.to": {
+  "en": "to",
+  "ko": "~"
+ },
+ "crmCommon.filters.operators.is": {
+  "en": "Is",
+  "ko": "다음과 같음"
+ },
+ "crmCommon.filters.operators.on": {
+  "en": "On",
+  "ko": "날짜"
+ },
+ "crmCommon.tasks.common.on": {
+  "en": "On",
+  "ko": "지정일"
+ },
+ "externalTrackingApp.externalTracking.settings.domains.formTypes.iframe": {
+  "en": "Iframe",
+  "ko": "iframe"
+ },
+ "externalTrackingApp.externalTracking.settings.domains.title": {
+  "en": "Configure events at domain level",
+  "ko": "도메인별 이벤트 구성"
+ },
+ "externalTrackingApp.externalTracking.settings.forms.columns.name": {
+  "en": "Form name",
+  "ko": "폼 이름"
+ },
+ "externalTrackingApp.externalTracking.troubleshoot.section1.steps.item3": {
+  "en": "Look for console logs prefixed with `copy:[LC Tracking]`, such as 'Tracker initialized successfully' and 'Tracking initial page view'",
+  "ko": "'Tracker initialized successfully', 'Tracking initial page view'처럼 접두사에 `copy:Tracking`이 들어간 콘솔 로그를 확인하세요."
+ },
+ "formSurveyApp.common.of": {
+  "en": "of",
+  "ko": "/"
+ },
+ "formSurveyApp.common.ok": {
+  "en": "Ok",
+  "ko": "확인"
+ },
+ "formSurveyApp.settings.state.on": {
+  "en": "On",
+  "ko": "켬"
+ },
+ "mediaCenterApp.common.tagsCount": {
+  "en": "{0} of {1}",
+  "ko": "{0}/{1}"
+ },
+ "mediaCenterApp.components.filePreviewModal.counter": {
+  "en": "{0} of {1}",
+  "ko": "{0}/{1}"
+ },
+ "powerDialerApp.common.on": {
+  "en": "On",
+  "ko": "켜짐"
+ },
+ "powerDialerApp.common.or": {
+  "en": "or",
+  "ko": "또는"
+ },
+ "powerDialerApp.or": {
+  "en": "or",
+  "ko": "또는"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.businessInUse.competitorAlreadyAdded": {
+  "en": "{name} is already in your competitor list.",
+  "ko": "{name}은(는) 이미 경쟁사 목록에 있습니다."
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.businessInUse.competitorIsPrimary": {
+  "en": "{name} is your business. Choose another business as a competitor.",
+  "ko": "{name}은(는) 내 비즈니스입니다. 경쟁사로는 다른 비즈니스를 선택하세요."
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.businessInUse.primaryAlreadySelected": {
+  "en": "No changes needed: {name} is already set as your business.",
+  "ko": "변경할 내용이 없습니다. {name}은(는) 이미 내 비즈니스로 설정되어 있습니다."
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.businessInUse.thisBusiness": {
+  "en": "This business",
+  "ko": "이 비즈니스"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.syncStatus.delayed": {
+  "en": "Update delayed",
+  "ko": "업데이트 지연됨"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.syncStatus.delayedDescription": {
+  "en": "The scheduled refresh didn’t run, so this data may be out of date.",
+  "ko": "예약된 새로고침이 실행되지 않아 이 데이터가 최신이 아닐 수 있습니다."
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.syncStatus.failedDescription": {
+  "en": "We couldn’t refresh this business’s data.",
+  "ko": "이 비즈니스의 데이터를 새로고침하지 못했습니다."
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.syncStatus.lastSyncFailed": {
+  "en": "Last update failed",
+  "ko": "마지막 업데이트 실패"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.syncStatus.lastSyncedAt": {
+  "en": "Last updated: {date}",
+  "ko": "마지막 업데이트: {date}"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.syncStatus.nextSyncAt": {
+  "en": "Next update: {date}",
+  "ko": "다음 업데이트: {date}"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.syncStatus.syncedDaysAgo": {
+  "en": "Updated {count} days ago",
+  "ko": "{count}일 전 업데이트됨"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.syncStatus.syncedToday": {
+  "en": "Updated today",
+  "ko": "오늘 업데이트됨"
+ },
+ "reputationApp.reputation.reputationOverview.competitorAnalysis.syncStatus.syncedYesterday": {
+  "en": "Updated yesterday",
+  "ko": "어제 업데이트됨"
+ },
+ "reputationApp.reputation.reputationSettings.emailComponent.previewTitle": {
+  "en": "email-builder-preview",
+  "ko": "이메일 빌더 미리보기"
+ },
+ "reputationApp.reputation.reputationSettings.integrations.disconnectConfirmation": {
+  "en": "Are you sure you want to disconnect this",
+  "ko": "연결을 해제하시겠습니까"
+ },
+ "reputationApp.reputation.sendReviewRequestModal.emailTemplateThumbnailAlt": {
+  "en": "email-template-thumbnail",
+  "ko": "이메일 템플릿 썸네일"
+ },
+ "schemaMarkupApp.schemaMarkup.categories.blogDetails": {
+  "en": "Blog details",
+  "ko": "블로그 세부 정보"
+ },
+ "schemaMarkupApp.schemaMarkup.categories.corporateDetails": {
+  "en": "Corporate details",
+  "ko": "기업 세부 정보"
+ },
+ "schemaMarkupApp.schemaMarkup.categories.locationInformation": {
+  "en": "Location information",
+  "ko": "위치 정보"
+ },
+ "schemaMarkupApp.schemaMarkup.categories.seoDiscovery": {
+  "en": "SEO & discovery",
+  "ko": "SEO 및 검색 노출"
+ },
+ "schemaMarkupApp.schemaMarkup.common.credentialType": {
+  "en": "credential type",
+  "ko": "자격증 유형"
+ },
+ "schemaMarkupApp.schemaMarkup.dashboard.generateWithAITooltip": {
+  "en": "Select one or more pages to generate/update the schema using AI.",
+  "ko": "AI로 스키마를 생성하거나 업데이트할 페이지를 하나 이상 선택하세요."
+ },
+ "schemaMarkupApp.schemaMarkup.dashboard.stickySaveBar.variantB": {
+  "en": "You have unsaved schemas that are ready to be saved and published.",
+  "ko": "저장하지 않은 스키마가 있습니다. 지금 저장하고 게시할 수 있습니다."
+ },
+ "schemaMarkupApp.schemaMarkup.extraFieldsBanner.showDetails": {
+  "en": "Show details",
+  "ko": "세부 정보 보기"
+ },
+ "schemaMarkupApp.schemaMarkup.fallbackLabels.albumCover": {
+  "en": "Album cover",
+  "ko": "앨범 커버"
+ },
+ "schemaMarkupApp.schemaMarkup.fallbackLabels.countryName": {
+  "en": "Country name",
+  "ko": "국가명"
+ },
+ "schemaMarkupApp.schemaMarkup.fallbackLabels.distanceOrQuantitative": {
+  "en": "Select whether to use Distance or QuantitativeValue",
+  "ko": "Distance 또는 QuantitativeValue 중 사용할 유형을 선택하세요"
+ },
+ "schemaMarkupApp.schemaMarkup.fallbackLabels.eventName": {
+  "en": "Event name",
+  "ko": "이벤트 이름"
+ },
+ "schemaMarkupApp.schemaMarkup.fallbackLabels.homeTeam": {
+  "en": "Home team",
+  "ko": "홈 팀"
+ },
+ "schemaMarkupApp.schemaMarkup.fallbackLabels.measurementType": {
+  "en": "Measurement type",
+  "ko": "측정 유형"
+ },
+ "schemaMarkupApp.schemaMarkup.fallbackLabels.procedureType": {
+  "en": "Procedure type",
+  "ko": "시술 유형"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.article.AggregateRating.ratingValue.shortDesc": {
+  "en": "Average rating score",
+  "ko": "평균 평점"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.article.OrganizationRef.url.shortDesc": {
+  "en": "Organization website",
+  "ko": "조직 웹사이트"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.article.Person.jobTitle.shortDesc": {
+  "en": "Position or role",
+  "ko": "직책 또는 역할"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.article.Place.name.shortDesc": {
+  "en": "Name of place",
+  "ko": "장소명"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.article.VideoObject.embedUrl.shortDesc": {
+  "en": "Video embed URL",
+  "ko": "동영상 임베드 URL"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.article.VideoObject.startOffset.desc": {
+  "en": "Enter the start time offset in seconds (optional)",
+  "ko": "시작 시간 오프셋을 초 단위로 입력하세요 (선택사항)"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.article.VideoObject.thumbnailUrl.label": {
+  "en": "Thumbnail URL",
+  "ko": "썸네일 URL"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.article.VideoObject.uploadDate.shortDesc": {
+  "en": "When video was uploaded",
+  "ko": "동영상 업로드 날짜"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.AggregateOfferItemOffer.@type.shortDesc": {
+  "en": "Person or organization",
+  "ko": "인물 또는 조직"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.AggregateOfferItemOffer.price.desc": {
+  "en": "Enter the offer price amount (e.g., 49.99)",
+  "ko": "오퍼 가격을 입력하세요 (예: 49.99)"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.AreaServed.longitude.desc": {
+  "en": "Enter the longitude coordinate (e.g., -74.0060)",
+  "ko": "경도 좌표를 입력하세요 (예: -74.0060)"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.ContactPoint.contactType.shortDesc": {
+  "en": "Type of contact",
+  "ko": "연락처 유형"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.CriticReviewItemReviewed.offers.desc": {
+  "en": "Provide offer details such as price and currency",
+  "ko": "가격, 통화 등 오퍼 세부 정보를 입력하세요"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.CriticReviewItemReviewed.ratingValue.label": {
+  "en": "Rating value",
+  "ko": "평점 값"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.CriticReviewItemReviewed.ratingValue.shortDesc": {
+  "en": "Average rating",
+  "ko": "평균 평점"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.CriticReviewItemReviewed.reviewCount.shortDesc": {
+  "en": "Total reviews",
+  "ko": "총 리뷰 수"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.HowToStep.itemListElement.desc": {
+  "en": "Enter detailed sub-directions for complex steps (optional)",
+  "ko": "복잡한 단계에 대한 세부 지침을 입력하세요 (선택사항)"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.HowToStep.video.label": {
+  "en": "Step video",
+  "ko": "단계 동영상"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.HowToTool.name.shortDesc": {
+  "en": "Tool name",
+  "ko": "도구 이름"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.ImageObject.url.label": {
+  "en": "Image URL",
+  "ko": "이미지 URL"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.InteractionCounter.interactionType.options.view": {
+  "en": "View",
+  "ko": "조회"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.Location.address.streetAddress.label": {
+  "en": "Street address",
+  "ko": "도로명 주소"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.Location.addressLocality.desc": {
+  "en": "Enter the city or locality name",
+  "ko": "도시 또는 지역명을 입력하세요"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.Location.addressRegion.label": {
+  "en": "State/Region",
+  "ko": "주/지역"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.Location.postalCode.shortDesc": {
+  "en": "Postal code",
+  "ko": "우편번호"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.MerchantReturnPolicy.applicableCountry.desc": {
+  "en": "Enter the country code where this return policy applies (e.g., US, GB, CA)",
+  "ko": "이 반품 정책이 적용되는 국가 코드를 입력하세요 (예: US, GB, CA)"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.MonetaryAmount.currency.shortDesc": {
+  "en": "Currency code",
+  "ko": "통화 코드"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.MonetaryAmount.value.desc": {
+  "en": "Enter the estimated cost amount (numeric value only, e.g., 25.99)",
+  "ko": "예상 비용을 입력하세요 (숫자 값만, 예: 25.99)"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.NonprofitType.name.label": {
+  "en": "Nonprofit status",
+  "ko": "비영리 단체 유형"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.OfferShippingDetails.value.desc": {
+  "en": "Enter the numeric shipping price (e.g., 5.99)",
+  "ko": "배송비를 숫자로 입력하세요 (예: 5.99)"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.OfferShippingDetails.value.label": {
+  "en": "Shipping price",
+  "ko": "배송비"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.PersonOrOrg.url.shortDesc": {
+  "en": "Website or profile URL",
+  "ko": "웹사이트 또는 프로필 URL"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.Place.address.shortDesc": {
+  "en": "Place address",
+  "ko": "장소 주소"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.Place.addressCountry.label": {
+  "en": "Country",
+  "ko": "국가"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.Place.addressCountry.shortDesc": {
+  "en": "Country",
+  "ko": "국가"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.PriceSpecification.price.desc": {
+  "en": "Enter the price amount (e.g., 19.99)",
+  "ko": "가격을 입력하세요 (예: 19.99)"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.QuantitativeValue.maxValue.desc": {
+  "en": "Enter the maximum value",
+  "ko": "최댓값을 입력하세요"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.Rating.ratingValue.shortDesc": {
+  "en": "Rating score",
+  "ko": "평점"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.Review.ratingValue.shortDesc": {
+  "en": "Rating score",
+  "ko": "평점"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.Review.reviewRating.desc": {
+  "en": "Rating details for this review",
+  "ko": "이 리뷰의 평점 세부 정보"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.ReviewItemReviewed.name.shortDesc": {
+  "en": "Name of reviewed item",
+  "ko": "리뷰 대상 항목 이름"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.SportsTeam.name.label": {
+  "en": "Team name",
+  "ko": "팀 이름"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.VideoObject.duration.shortDesc": {
+  "en": "Length of video",
+  "ko": "동영상 길이"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.VideoObject.url.shortDesc": {
+  "en": "Where clip can be viewed",
+  "ko": "클립을 볼 수 있는 위치"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.course.CourseInstance.instructor.url.label": {
+  "en": "Instructor URL",
+  "ko": "강사 URL"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.event.Audience.audienceType.label": {
+  "en": "Audience type",
+  "ko": "오디언스 유형"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.event.EventOffer.price.label": {
+  "en": "Price",
+  "ko": "가격"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.event.EventOffer.priceCurrency.label": {
+  "en": "Currency code",
+  "ko": "통화 코드"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.event.Offers.availabilityOptions.limitedAvailability": {
+  "en": "Limited availability",
+  "ko": "한정 수량"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.event.Offers.offerCount.label": {
+  "en": "Number of offers",
+  "ko": "오퍼 수"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.event.Performer.name.label": {
+  "en": "Name",
+  "ko": "이름"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.event.PerformerMusic.typeLabel": {
+  "en": "Type",
+  "ko": "유형"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.event.SportsTeamOrPerson.url.desc": {
+  "en": "Enter the URL of the team or person's page (optional)",
+  "ko": "팀 또는 인물 페이지의 URL을 입력하세요 (선택사항)"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.faqPage.Question.acceptedAnswer.shortDesc": {
+  "en": "The answer to the question",
+  "ko": "질문에 대한 답변"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.howTo.performTime.desc": {
+  "en": "Enter the active work time (excluding waiting periods)",
+  "ko": "대기 시간을 제외한 실제 작업 시간을 입력하세요"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.localBusiness.Menu.name.shortDesc": {
+  "en": "Name of the menu",
+  "ko": "메뉴 이름"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.localBusiness.PostalAddress.addressCountry.label": {
+  "en": "Country",
+  "ko": "국가"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.localBusiness.PostalAddress.postalCode.label": {
+  "en": "Zip code",
+  "ko": "우편번호"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.organization.ContactPoint.contactType.shortDesc": {
+  "en": "Contact type",
+  "ko": "연락처 유형"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.organization.MusicAlbum.track.shortDesc": {
+  "en": "Track listings",
+  "ko": "트랙 목록"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.organization.MusicRecording.byArtist.desc": {
+  "en": "Enter the artist or music group who performed the track (optional)",
+  "ko": "이 트랙을 연주하거나 부른 아티스트 또는 음악 그룹을 입력하세요 (선택사항)"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.organization.MusicRecording.recordingOf.label": {
+  "en": "Composition",
+  "ko": "악곡"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.organization.MusicRecording.url.shortDesc": {
+  "en": "Link to track",
+  "ko": "트랙 링크"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.organization.OrganizationEvent.startDate.desc": {
+  "en": "Enter the start date of the event",
+  "ko": "이벤트 시작일을 입력하세요"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.organization.PostalAddress.postalCode.shortDesc": {
+  "en": "Postal code",
+  "ko": "우편번호"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.organization.eventTypeOptions.SportsEvent": {
+  "en": "Sports event",
+  "ko": "스포츠 이벤트"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.organization.serviceTypeOptions.MedicalProcedure": {
+  "en": "Medical procedure",
+  "ko": "의료 시술"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.product.EngineSpecification.displacementUnit.desc": {
+  "en": "Enter the unit code (e.g., LTR for liters, D61 for cubic centimeters)",
+  "ko": "단위 코드를 입력하세요 (예: 리터는 LTR, 세제곱센티미터는 D61)"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.product.Offers.availabilityOptions.limitedAvailability": {
+  "en": "Limited availability",
+  "ko": "한정 수량"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.product.ProductBrand.logo.label": {
+  "en": "Brand logo",
+  "ko": "브랜드 로고"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.product.ProductOffer.availabilityOptions.outOfStock": {
+  "en": "Out of stock",
+  "ko": "품절"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.product.ProductOffer.type.label": {
+  "en": "Offer type",
+  "ko": "오퍼 유형"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.product.ProductOrService.offers.label": {
+  "en": "Offers",
+  "ko": "오퍼"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.product.ProductOrService.url.label": {
+  "en": "Product or service URL",
+  "ko": "상품 또는 서비스 URL"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.product.ProductWidth.@type.desc": {
+  "en": "Select whether to use Distance or QuantitativeValue",
+  "ko": "Distance 또는 QuantitativeValue 중 사용할 유형을 선택하세요"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.product.VehicleFuelEfficiency.value.label": {
+  "en": "Fuel efficiency value",
+  "ko": "연비 값"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.product.VideoObject.thumbnailUrl.label": {
+  "en": "Thumbnail URL",
+  "ko": "썸네일 URL"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.service.OrganizationRef.url.label": {
+  "en": "Organization URL",
+  "ko": "조직 URL"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.service.ProductWeight.unitCode.desc": {
+  "en": "Enter the unit (e.g., P1Y for years, P1M for months, % for percentage)",
+  "ko": "단위를 입력하세요 (예: 연 단위는 P1Y, 월 단위는 P1M, 백분율은 %)"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.service.ServiceChannel.serviceUrl.desc": {
+  "en": "Enter the URL of the service channel (e.g., booking page, app download link)",
+  "ko": "서비스 채널의 URL을 입력하세요 (예: 예약 페이지, 앱 다운로드 링크)"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.videoObject.OrganizationRef.name.shortDesc": {
+  "en": "Name of publishing organization",
+  "ko": "발행 조직명"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.videoObject.PersonOrOrg.name.shortDesc": {
+  "en": "Creator/publisher name",
+  "ko": "제작자/발행인 이름"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.website.OrganizationRef.logo.desc": {
+  "en": "Enter the full URL of the publisher's logo image",
+  "ko": "발행인 로고 이미지의 전체 URL을 입력하세요"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.website.OrganizationRef.logo.label": {
+  "en": "Publisher logo",
+  "ko": "발행인 로고"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.website.PersonOrOrg.logo.label": {
+  "en": "Logo",
+  "ko": "로고"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.website.PersonOrOrg.logo.shortDesc": {
+  "en": "Organization logo URL",
+  "ko": "조직 로고 URL"
+ },
+ "schemaMarkupApp.schemaMarkup.openingHours.days.tuesday": {
+  "en": "Tuesday",
+  "ko": "화요일"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.article.about.shortDesc": {
+  "en": "Article subject matter",
+  "ko": "아티클 주제"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.article.accessMode.label": {
+  "en": "Access mode",
+  "ko": "접근 방식"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.article.contributor.desc": {
+  "en": "Enter information about people who contributed to the article",
+  "ko": "아티클에 기여한 사람에 대한 정보를 입력하세요"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.article.editor.label": {
+  "en": "Editor",
+  "ko": "편집자"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.article.image.label": {
+  "en": "Image",
+  "ko": "이미지"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.article.printEdition.label": {
+  "en": "Print edition",
+  "ko": "인쇄판"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.event.awayTeam.desc": {
+  "en": "Enter details about the away team or athlete",
+  "ko": "원정 팀 또는 선수에 대한 세부 정보를 입력하세요"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.event.endDate.shortDesc": {
+  "en": "Event end date/time",
+  "ko": "이벤트 종료 날짜/시간"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.event.eventStatus.desc": {
+  "en": "Enter the status of the event (e.g., EventScheduled, EventCancelled, EventPostponed, EventRescheduled)",
+  "ko": "이벤트 상태를 입력하세요 (예: EventScheduled, EventCancelled, EventPostponed, EventRescheduled)"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.event.offers.desc": {
+  "en": "Enter ticket pricing and availability information",
+  "ko": "티켓 가격 및 구매 가능 여부 정보를 입력하세요"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.event.performers.label": {
+  "en": "Performers",
+  "ko": "출연자"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.event.previousStartDate.desc": {
+  "en": "Enter the original start date if the event was rescheduled or postponed",
+  "ko": "이벤트 일정이 변경되었거나 연기된 경우 원래 시작일을 입력하세요"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.event.recordedIn.label": {
+  "en": "Recording",
+  "ko": "녹화본"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.event.url.desc": {
+  "en": "Enter the URL of the event details page on your website",
+  "ko": "웹사이트에서 이벤트 상세 페이지의 URL을 입력하세요"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.event.url.label": {
+  "en": "Event URL",
+  "ko": "이벤트 URL"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.howTo.image.desc": {
+  "en": "Enter URLs of images showing the process or result",
+  "ko": "과정이나 결과를 보여 주는 이미지의 URL을 입력하세요"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.howTo.image.label": {
+  "en": "Guide images",
+  "ko": "가이드 이미지"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.howTo.tool.desc": {
+  "en": "Enter the tools or equipment needed",
+  "ko": "필요한 도구나 장비를 입력하세요"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.imageObject.contentUrl.desc": {
+  "en": "Enter the direct URL to the image file",
+  "ko": "이미지 파일로 바로 연결되는 URL을 입력하세요"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.imageObject.name.label": {
+  "en": "Image name",
+  "ko": "이미지 이름"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.imageObject.name.shortDesc": {
+  "en": "Image title",
+  "ko": "이미지 제목"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.imageObject.url.shortDesc": {
+  "en": "Image page URL",
+  "ko": "이미지 페이지 URL"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.localBusiness.aggregateRating.desc": {
+  "en": "Enter the overall rating value (1-5) and total number of reviews",
+  "ko": "종합 평점(1-5)과 총 리뷰 수를 입력하세요"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.localBusiness.servesCuisine.desc": {
+  "en": "Enter the types of cuisine served (e.g., Italian, Mexican, American)",
+  "ko": "제공하는 요리 종류를 입력하세요 (예: 이탈리아식, 멕시코식, 미국식)"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.localBusiness.slogan.shortDesc": {
+  "en": "Business slogan",
+  "ko": "사업체 슬로건"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.localBusiness.telephone.desc": {
+  "en": "Enter the primary contact phone number for your business",
+  "ko": "사업체의 기본 연락처 전화번호를 입력하세요"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.localBusiness.telephone.label": {
+  "en": "Phone number",
+  "ko": "전화번호"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.offer.price.shortDesc": {
+  "en": "Offer price",
+  "ko": "오퍼 가격"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.organization.email.desc": {
+  "en": "Enter the primary public email address of your organization",
+  "ko": "조직의 기본 공개 이메일 주소를 입력하세요"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.organization.genre.shortDesc": {
+  "en": "Performance genre type",
+  "ko": "공연 장르 유형"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.organization.url.desc": {
+  "en": "Enter the URL of your organization's official website",
+  "ko": "조직 공식 웹사이트의 URL을 입력하세요"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.organization.usNPI.desc": {
+  "en": "Enter the 10-digit National Provider Identifier (NPI) for this US healthcare provider",
+  "ko": "이 미국 의료 서비스 제공자의 10자리 NPI(National Provider Identifier)를 입력하세요"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.product.fuelEfficiency.shortDesc": {
+  "en": "Fuel economy rating",
+  "ko": "연비"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.product.motorcycleBodyType.desc": {
+  "en": "Enter the motorcycle type (e.g., Cruiser, Sport, Touring, Adventure, Standard)",
+  "ko": "오토바이 유형을 입력하세요 (예: 크루저, 스포츠, 투어링, 어드벤처, 스탠다드)"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.product.numberOfDoors.shortDesc": {
+  "en": "Door count",
+  "ko": "도어 수"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.product.vehicleConfiguration.desc": {
+  "en": "Enter the vehicle configuration or trim level",
+  "ko": "차량 구성 또는 트림 등급을 입력하세요"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.recipe.datePublished.shortDesc": {
+  "en": "Publication date",
+  "ko": "게시일"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.recipe.name.desc": {
+  "en": "Enter the name of the recipe",
+  "ko": "레시피 이름을 입력하세요"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.recipe.prepTime.desc": {
+  "en": "Enter the preparation time in ISO 8601 format (e.g., PT20M for 20 minutes)",
+  "ko": "준비 시간을 ISO 8601 형식으로 입력하세요 (예: 20분은 PT20M)"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.service.feesAndCommissionsSpecification.label": {
+  "en": "Fees and commissions",
+  "ko": "수수료 및 커미션"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.service.servesCuisine.desc": {
+  "en": "Enter the types of cuisine offered (e.g., Italian, Mexican, Vegan, American)",
+  "ko": "제공하는 요리 종류를 입력하세요 (예: 이탈리아식, 멕시코식, 비건, 미국식)"
+ },
+ "schemaMarkupApp.schemaMarkup.unsavedChanges.message": {
+  "en": "Your schema markup has unsaved changes. Would you like to save before closing?",
+  "ko": "스키마 마크업에 저장되지 않은 변경사항이 있습니다. 닫기 전에 저장하시겠습니까?"
+ },
+ "schemaMarkupApp.schemaMarkup.validation.eitherOrRequiredList": {
+  "en": "Either {fields}, or {last} is required",
+  "ko": "{fields} 또는 {last} 중 하나는 필수입니다"
+ },
+ "schemaMarkupApp.schemaMarkup.validation.invalidValue": {
+  "en": "Please enter a valid value",
+  "ko": "올바른 값을 입력하세요"
  }
 }
