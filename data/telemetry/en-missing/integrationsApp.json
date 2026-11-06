@@ -68,6 +68,7 @@
  "platformDebug.addHeader": "+ Add header",
  "platformDebug.addParam": "+ Add param",
  "platformDebug.appLabel": "App ID",
+ "platformDebug.appPlaceholder": "6489a1f0c2b3e40b2a91d7c4",
  "platformDebug.appRequired": "App ID is required",
  "platformDebug.bannerTransport": "Network error — the upstream host did not respond within the 30s timeout. Nothing was returned; the request may still have been processed upstream.",
  "platformDebug.bannerUpstream": "Upstream rejected the request. The token resolved, but the provider refused it — check scopes or re-authorize the app.",

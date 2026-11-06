@@ -899,6 +899,7 @@
  "common.noOptionsAvailable": "No options available",
  "common.none": "None",
  "common.notApplicable": "NA",
+ "common.notAvailable": "N/A",
  "common.notSaved": "Not Saved",
  "common.note": "Note",
  "common.numbers": "Numbers",
@@ -4133,6 +4134,8 @@
  "tableFilters.sortDateNewestFirst": "Newest → Oldest",
  "tableFilters.sortDateOldestFirst": "Oldest → Newest",
  "tableFilters.sortDescending": "Sort descending",
+ "tableFilters.sortTextAZ": "(A → Z)",
+ "tableFilters.sortTextZA": "(Z → A)",
  "tableFilters.tomorrow": "Tomorrow",
  "tableFilters.yesterday": "Yesterday"
 }

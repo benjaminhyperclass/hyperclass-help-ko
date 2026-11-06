@@ -1,0 +1,19 @@
+{
+ "featureCard.beforeCustomCode": "Custom CSS and JS for the old sidebar doesn't run on New Design Experience. You can switch it back on to compare.",
+ "featureCard.beforePlan": "How much you can customize depends on your plan.",
+ "featureCard.beforeTitle": "Before you turn it on",
+ "featureCard.beforeTurnOff": "Turning New Design Experience off brings back the old navigation but doesn't keep your layout.",
+ "featureCard.planRequired297": "Available on $297 and $497 plans",
+ "featureCard.planRequired497": "Available on the $497 plan",
+ "featureCard.previewCta": "Preview",
+ "featureCard.previewNote": "Opens in a new tab, only for you. Nothing to undo.",
+ "featureCard.spotlightFindBody": "Pin the pages you live in, jump back to recent ones, and search any page, setting or record.",
+ "featureCard.spotlightFindTitle": "Stop hunting",
+ "featureCard.spotlightSameBody": "Every feature works as it does today. New Design Experience changes how you move, not what you can do.",
+ "featureCard.spotlightSameTitle": "Nothing else changes",
+ "featureCard.spotlightTemplateBody": "Save a layout as a template and push it to every sub-account. One push updates them all.",
+ "featureCard.spotlightTemplateTitle": "Build once, apply everywhere",
+ "featureCard.spotlightYoursBody": "Rename, reorder and hide groups so each sub-account looks built for its business.",
+ "featureCard.spotlightYoursTitle": "Make it yours",
+ "featureCard.upgrade": "Upgrade"
+}

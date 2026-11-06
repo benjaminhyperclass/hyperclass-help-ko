@@ -20,6 +20,7 @@
  "common.pinterest": "Pinterest",
  "common.rss": "RSS",
  "common.tikTok": "TikTok",
+ "common.twitter": "X",
  "common.utc": "UTC",
  "common.youtube": "YouTube",
  "community.options.itemTitleTag": "RSS post title",
@@ -50,6 +51,7 @@
  "gmbOptions.url": "URL",
  "initialisedPlanner.needClientToConnect": "Need your client to connect accounts for you?",
  "initialisedPlanner.sendSocialConnectInvite": "Send social connect invite",
+ "initialisedPlanner.v3.previewLikes": "1.2k",
  "instagramOption.googlePlay": "Google Play",
  "integrationPermissions.description": "Your social account(s) needs to be reconnected to grant the required permissions for {permissions}. Reconnect your account to continue.",
  "integrationPermissions.scopes.ads_management": "Manage ads",
@@ -88,6 +90,7 @@
  "platformErrors.instagram.connectionUnreachable": "We couldn't reach your Instagram connection. Please try again in a few minutes or contact support for assistance.",
  "platformErrors.linkedin.unverifiedShareLimit": "LinkedIn daily posting limit reached for unverified members. Verify your LinkedIn account or try again later.",
  "platformErrors.tiktok.spamRisk": "TikTok flagged this post as potential spam. Make sure your content is original, avoid posting repetitive or duplicate content, and ensure it follows TikTok’s Community Guidelines before trying again.",
+ "postPreview.previewLikeCount": "25K",
  "postTable.url": "URL",
  "settings.accountReconnected": "Account reconnected — permissions updated",
  "settings.agencySocialComments.clearSelection": "Clear selection",
@@ -741,6 +744,7 @@
  "socialListening.topicSources.trigger": "Sources setup",
  "socialListening.track": "Track",
  "socialListening.trackKeyword": "Track this keyword",
+ "textFormatPresets.iconLetter": "A",
  "tikTokModal.title": "TikTok",
  "tikTokOption.commentRequiredForFollowUp": "Comments stay on while this post has a follow-up comment. Remove it to turn comments off."
 }
