@@ -49,6 +49,23 @@ jobs:
           git add -A && git commit -qm "GHL 도움말 원문 스냅샷 $(date -u +%F)"
           git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" manual-src
 
+  diag:
+    needs: plan
+    if: needs.plan.outputs.command == 'diag'
+    runs-on: ubuntu-latest
+    steps:
+      - name: 원문 HTML 표본
+        run: |
+          mkdir -p /tmp/d && cd /tmp/d
+          UA="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126 Safari/537.36"
+          curl -sL -A "$UA" https://help.gohighlevel.com/support/solutions/folders/155000001588 -o folder.html
+          curl -sL -A "$UA" "https://help.gohighlevel.com/support/solutions/folders/155000001588/page/2" -o folder-p2a.html
+          curl -sL -A "$UA" "https://help.gohighlevel.com/support/solutions/folders/155000001588?page=2" -o folder-p2b.html
+          curl -sL -A "$UA" https://help.gohighlevel.com/support/solutions/articles/155000000079-best-practices-for-sms-deliverability-and-avoiding-sms-restrictions -o article.html
+          ls -la
+          git init -q -b manual-diag && git config user.name bot && git config user.email bot@users.noreply.github.com
+          git add -A && git commit -qm diag && git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" manual-diag
+
   translate:
     needs: plan
     if: needs.plan.outputs.command == 'translate'
