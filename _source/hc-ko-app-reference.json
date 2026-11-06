@@ -12421,7 +12421,7 @@
  },
  "common.table.pagination.to": {
   "en": "to",
-  "ko": " 대상: "
+  "ko": "~"
  },
  "common.table.pagination.of": {
   "en": "of",
@@ -30269,7 +30269,7 @@
  },
  "task.recurringTask.on": {
   "en": "On",
-  "ko": "날짜"
+  "ko": "지정일"
  },
  "task.recurringTask.selectDate": {
   "en": "Select Date",
@@ -79193,7 +79193,7 @@
  },
  "voiceAiApp.workingHours.to": {
   "en": "to",
-  "ko": " 대상: "
+  "ko": "~"
  },
  "voiceAiApp.workingHours.validation.closeTimeMustBeAfterOpenTime": {
   "en": "End time must be after start time",
@@ -87585,7 +87585,7 @@
  },
  "crmObjectsSettingsApp.customFields.rangeTo": {
   "en": "to",
-  "ko": " 대상: "
+  "ko": "~"
  },
  "crmObjectsSettingsApp.customFields.dateRangeAny": {
   "en": "Any date",
@@ -159713,7 +159713,7 @@
  },
  "calendarRentalsApp.schedule.to": {
   "en": "to",
-  "ko": " 대상: "
+  "ko": "~"
  },
  "calendarRentalsApp.schedule.copy_times_to": {
   "en": "Copy times to...",
@@ -178677,7 +178677,7 @@
  },
  "conversationAI.actions.stopBot.modal.on": {
   "en": "On",
-  "ko": "날짜"
+  "ko": "켬"
  },
  "conversationAI.actions.stopBot.modal.off": {
   "en": "Off",
@@ -178965,7 +178965,7 @@
  },
  "conversationAI.actions.humanHandover.modal.on": {
   "en": "On",
-  "ko": "날짜"
+  "ko": "켬"
  },
  "conversationAI.actions.humanHandover.modal.off": {
   "en": "Off",
@@ -179273,7 +179273,7 @@
  },
  "conversationAI.actions.transferBot.modal.on": {
   "en": "On",
-  "ko": "날짜"
+  "ko": "켬"
  },
  "conversationAI.actions.transferBot.modal.newTransfer": {
   "en": "New Bot Transfer",
@@ -179457,7 +179457,7 @@
  },
  "conversationAI.actions.autoFollowup.modal.on": {
   "en": "On",
-  "ko": "날짜"
+  "ko": "켬"
  },
  "conversationAI.actions.autoFollowup.modal.off": {
   "en": "Off",
@@ -179625,7 +179625,7 @@
  },
  "conversationAI.actions.autoFollowup.settings.to": {
   "en": "to",
-  "ko": " 대상: "
+  "ko": "~"
  },
  "conversationAI.actions.autoFollowup.settings.copyTimesTo": {
   "en": "Copy times to...",
@@ -180221,7 +180221,7 @@
  },
  "conversationAI.employees.list.to": {
   "en": "to",
-  "ko": " 대상: "
+  "ko": "~"
  },
  "conversationAI.employees.list.of": {
   "en": "of",
@@ -185713,7 +185713,7 @@
  },
  "calendarAI.availabilityPicker.to": {
   "en": "to",
-  "ko": " 대상: "
+  "ko": "~"
  },
  "calendarAI.availabilityPicker.confirm": {
   "en": "Confirm",
@@ -186649,7 +186649,7 @@
  },
  "tasks.common.on": {
   "en": "On",
-  "ko": "날짜"
+  "ko": "지정일"
  },
  "tasks.common.after": {
   "en": "After",
@@ -208325,7 +208325,7 @@
  },
  "customRecurring.on": {
   "en": "On",
-  "ko": "날짜"
+  "ko": "지정일"
  },
  "customRecurring.ends": {
   "en": "Ends",
@@ -275697,7 +275697,7 @@
  },
  "dashboard.switchBack.popoverOnTag": {
   "en": "On",
-  "ko": "날짜"
+  "ko": "켜짐"
  },
  "dashboard.switchBack.switchBackAction": {
   "en": "Switch back to the classic portal",
@@ -324509,7 +324509,7 @@
  },
  "liveSessions.recurrence.on": {
   "en": "On",
-  "ko": "날짜"
+  "ko": "지정일"
  },
  "liveSessions.recurrence.repeatsEveryLabel": {
   "en": "Repeats every",
@@ -398009,7 +398009,7 @@
  },
  "opportunitiesApp.tasks.common.on": {
   "en": "On",
-  "ko": "날짜"
+  "ko": "지정일"
  },
  "opportunitiesApp.common.of": {
   "en": "of",
