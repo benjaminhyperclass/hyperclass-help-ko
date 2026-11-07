@@ -8,14 +8,14 @@ import glob, os, re
 R = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 SECTIONS = [
-    ("00-자주묻는질문", "자주 묻는 질문"),
+    ("00-자주묻는질문", "자주 묻는 질문 (FAQ)"),
     ("01-시작하기", "시작하기"),
-    ("43-한국-앱", "한국 전용 앱 (토스페이먼츠 · KAKA)"),
+    ("43-한국-앱", "한국 전용 앱 (Korea Apps) — 토스페이먼츠 · 카카오톡"),
     ("02-연락처", "연락처"),
     ("03-대화", "대화"),
     ("04-캘린더-예약", "캘린더 · 예약"),
     ("05-기회-파이프라인", "기회 관리 · 파이프라인"),
-    ("06-사이트", "사이트 (퍼널 · 웹사이트 · 폼)"),
+    ("06-사이트", "사이트 · 퍼널 · 폼"),
     ("07-워크플로우", "자동화 · 워크플로우"),
     ("08-결제", "결제"),
     ("09-이메일", "이메일"),
@@ -28,7 +28,7 @@ SECTIONS = [
     ("15-전화-시스템", "전화 시스템"),
     ("13-AI-Employee", "AI 직원"),
     ("22-Eliza", "Eliza 에이전트"),
-    ("44-신기능-2026", "2026 신기능 소개"),
+    ("44-신기능-2026", "2026 신기능 (What's New 2026)"),
     ("12-대시보드", "대시보드"),
     ("18-리포팅", "리포팅"),
     ("11-설정", "설정"),
@@ -41,9 +41,9 @@ SECTIONS = [
     ("34-국제화", "다국어 · 국제화"),
     ("38-인증서", "수료증"),
     ("16-SaaS-설정", "SaaS 설정 (에이전시)"),
-    ("19-에이전시-뷰", "에이전시 보기 (에이전시)"),
-    ("28-에이전시-리포팅", "에이전시 리포팅 (에이전시)"),
-    ("29-스냅샷", "스냅샷 (에이전시)"),
+    ("19-에이전시-뷰", "에이전시 보기"),
+    ("28-에이전시-리포팅", "에이전시 리포팅"),
+    ("29-스냅샷", "스냅샷 · 에이전시 (Snapshots)"),
     ("31-리셀링", "리셀링 (에이전시)"),
     ("21-어필리에이트", "제휴 프로그램"),
     ("25-애드온-세일즈", "애드온 · 세일즈"),
@@ -54,6 +54,26 @@ SECTIONS = [
     ("35-개발자", "개발자 리소스"),
     ("36-기타", "기타"),
 ]
+
+import json as _json, sys as _sys
+_sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from gitbook_urls import slug as _slug
+_OLD = _json.load(open(os.path.join(R, "data/manual/old-section-headings.json"), encoding="utf-8"))
+
+def heading(folder, display):
+    """GitBook 주소(묶음 slug)가 예전과 같도록 제목을 고른다. 한글 부분은 바꿔도 되고 영문 부분이 주소를 정한다."""
+    base = re.sub(r"\s*\((에이전시)\)$", r" · \1", display)
+    if "(" in base or folder not in _OLD or _OLD[folder].startswith(("00-", "43-")):
+        return base
+    old = _OLD[folder]
+    m = re.search(r"\(([^)]*)\)\s*$", old)
+    eng = m.group(1) if m else ""
+    cands = [f"{base} ({eng})" if eng else base, f"{base.replace(' · ', ' & ')} ({eng})" if eng else base,
+             old.replace("하이레벨", "하이퍼클래스")]
+    for c in cands:
+        if _slug(c) == _slug(old):
+            return c
+    return old.replace("하이레벨", "하이퍼클래스")
 
 def title(p):
     for line in open(p, encoding="utf-8", errors="ignore"):
@@ -122,7 +142,7 @@ def main():
         if not os.path.isdir(full): continue
         lines, seen = emit_dir(full, full)
         if not lines: continue
-        out += [f"## {name}", ""] + lines + [""]
+        out += [f"## {heading(d, name)}", ""] + lines + [""]
         total += len(seen)
     open(f"{R}/SUMMARY.md", "w", encoding="utf-8").write("\n".join(out))
     print("pages", total)
