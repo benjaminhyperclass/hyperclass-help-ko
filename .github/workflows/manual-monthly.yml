@@ -48,8 +48,10 @@ jobs:
         if: ${{ github.event_name == 'schedule' || inputs.dry_run == false }}
         run: |
           [ -d /tmp/out/docs ] || exit 0
+          python scripts/manual/postprocess.py /tmp/out --review data/manual/review-notes.json
           python scripts/manual/lint_manual.py /tmp/out/docs --json /tmp/lint.json
           python scripts/manual/publish_results.py /tmp/out /tmp/lint.json
+          python scripts/manual/apply_plan.py links || true
           cp manual-refresh/src-state.next.json data/manual/src-state.json
           python scripts/manual/gen_summary.py
           git config user.name "github-actions[bot]"
