@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "version": "4.2.63",
+  "version": "4.2.64",
   "built": "2026-11-07",
-  "source": "nd cnam 0 + round contactsApp 2 + round conversations 1 + round copilotApp 1 + round crmCommon 7 + round externalTrackingApp 5 + round formSurveyApp 3 + round funnelWebsiteApp 0 + round ghlEmailBuilderCommon 6 + round launchpadApp 1 + round mediaCenterApp 2 + round onboardingApp 1 + round opportunitiesApp 1 + round powerDialerApp 3 + round productsApp 4 + round proposalCommon 1 + round reputationApp 18 + round schemaMarkupApp 146 + round storeCatalogApp 1 + round superagentsApp 2 + round usersMicroApp 1 + round voiceAiApp 0 + 외부 트래킹 문제 해결 'Do’s' 1 — GHL main 2194 스윕 잔여(나머지는 사전에 있거나 영어 그대로) + round agentLogs|common 1319 + round abandonedCheckout|accessibility|additionalCharges|collection|common 81 + round accessibility|app|automaticTaxConfig|common|contactPayments 50 + round accessibility|autoPayment|common|customization|editor 56 + round actionModal|addAssociation|addCustomFields|addCustomObj|addNew 170 + round activity_log|addContact|addGuests|app|appointmentModal 721 + round aiTemplates|app|common|error|gettingStarted 399 + 별도 앱 카탈로그 보강: 에이전트 로그 agentLogs|common 1,319(연락처 상세·대화 화면, 새 지문 — host.agentLogsApp 이관) · 캘린더 화면 721 · 앱 마켓플레이스 399 · 오브젝트 설정 170 · 주문 81 · 인보이스 56 · 결제 50(신규 1,063 + 같은 원문 이관 518, 독립 검수 교정 74) · 기존 값 정정 28(수금 통일·리스팅·애드온·플랜·견적서·ghl 예시) + 마켓플레이스 카드 개발자 표기 '{name} 제공' 통일 · 개발자명 LeadConnector → 하이퍼클래스(_text 3) + SaaS 상품 편집 saasApp 1,317(상품 편집 화면에서만 로드돼 스윕에 안 잡히던 네임스페이스 — 같은 앱 카탈로그에서 경로 이관 1,267 + 신규 50, 독립 검수 교정 106) · 상품 편집 메뉴 'Search Engine Listing' _text + 상세 화면 점검: 인보이스 요약 카드 '결제 완료 인보이스'(표기 통일) · 상품 편집 SaaS 'Usage limits' · 인보이스/견적서 편집기 'Opportunity 연결' 등 6(_text, 개체 이름 매개변수) · 코스 편집기(Live Sessions·Community Groups·코스 태그·난이도·주제·언어 — _text 6·_textScoped 21) · _textScoped 표기 정정 9(수신자들→수신자·결과들→결과·받은함→받은 편지함·옵트인→수신 동의·구독취소→구독 취소됨·대기중→대기 중·통화 종료→종료·고급 설정→고급)",
+  "source": "nd cnam 0 + round contactsApp 2 + round conversations 1 + round copilotApp 1 + round crmCommon 7 + round externalTrackingApp 5 + round formSurveyApp 3 + round funnelWebsiteApp 0 + round ghlEmailBuilderCommon 6 + round launchpadApp 1 + round mediaCenterApp 2 + round onboardingApp 1 + round opportunitiesApp 1 + round powerDialerApp 3 + round productsApp 4 + round proposalCommon 1 + round reputationApp 18 + round schemaMarkupApp 146 + round storeCatalogApp 1 + round superagentsApp 2 + round usersMicroApp 1 + round voiceAiApp 0 + 외부 트래킹 문제 해결 'Do’s' 1 — GHL main 2194 스윕 잔여(나머지는 사전에 있거나 영어 그대로) + round agentLogs|common 1319 + round abandonedCheckout|accessibility|additionalCharges|collection|common 81 + round accessibility|app|automaticTaxConfig|common|contactPayments 50 + round accessibility|autoPayment|common|customization|editor 56 + round actionModal|addAssociation|addCustomFields|addCustomObj|addNew 170 + round activity_log|addContact|addGuests|app|appointmentModal 721 + round aiTemplates|app|common|error|gettingStarted 399 + 별도 앱 카탈로그 보강: 에이전트 로그 agentLogs|common 1,319(연락처 상세·대화 화면, 새 지문 — host.agentLogsApp 이관) · 캘린더 화면 721 · 앱 마켓플레이스 399 · 오브젝트 설정 170 · 주문 81 · 인보이스 56 · 결제 50(신규 1,063 + 같은 원문 이관 518, 독립 검수 교정 74) · 기존 값 정정 28(수금 통일·리스팅·애드온·플랜·견적서·ghl 예시) + 마켓플레이스 카드 개발자 표기 '{name} 제공' 통일 · 개발자명 LeadConnector → 하이퍼클래스(_text 3) + SaaS 상품 편집 saasApp 1,317(상품 편집 화면에서만 로드돼 스윕에 안 잡히던 네임스페이스 — 같은 앱 카탈로그에서 경로 이관 1,267 + 신규 50, 독립 검수 교정 106) · 상품 편집 메뉴 'Search Engine Listing' _text + 상세 화면 점검: 인보이스 요약 카드 '결제 완료 인보이스'(표기 통일) · 상품 편집 SaaS 'Usage limits' · 인보이스/견적서 편집기 'Opportunity 연결' 등 6(_text, 개체 이름 매개변수) · 코스 편집기(Live Sessions·Community Groups·코스 태그·난이도·주제·언어 — _text 6·_textScoped 21) · _textScoped 표기 정정 9(수신자들→수신자·결과들→결과·받은함→받은 편지함·옵트인→수신 동의·구독취소→구독 취소됨·대기중→대기 중·통화 종료→종료·고급 설정→고급) + 연락처 상세 오른쪽 패널 빈 상태(새 UI record-details-new-ui 의 하드코딩 문자열 — 활동·메모·예약·작업·AI 에이전트 안내) _text 10(참조본의 같은 원문 번역 재사용)",
   "strings": 102718
  },
  "host": {
@@ -169820,7 +169820,17 @@
   "Course tags": "코스 태그",
   "Add tags to your course to help learners quickly filter and discover it": "학습자가 코스를 빠르게 찾고 필터링할 수 있도록 태그를 추가하세요",
   "Select language": "언어 선택",
-  "Health & fitness": "건강 & 피트니스"
+  "Health & fitness": "건강 & 피트니스",
+  "No activities yet!": "아직 활동이 없습니다!",
+  "Page visits, form submissions, appointments, calls, and more will appear here. Engage now to start tracking!": "페이지 방문, 폼 제출, 예약, 통화 등이 여기에 표시됩니다. 지금 소통을 시작해 활동을 추적해 보세요!",
+  "No notes yet": "아직 메모가 없습니다",
+  "Keep track of important details by adding your first note": "첫 메모를 추가하여 중요한 세부 정보를 기록하세요",
+  "No appointments yet": "아직 예약이 없습니다",
+  "No tasks yet": "아직 작업이 없습니다",
+  "Stay organized by creating your first task.": "첫 번째 작업을 생성하여 체계적으로 관리하세요.",
+  "Let AI draft your replies": "AI가 답장 초안을 작성하도록 하세요",
+  "Get AI reply suggestions for every inbound message. You approve before anything is sent.": "받은 메시지마다 AI 답장 제안을 받아 보세요. 보내기 전에 직접 승인합니다.",
+  "Turn on AI Agent": "AI 에이전트 켜기"
  },
  "_textScoped": {
   "AM": "오전",
