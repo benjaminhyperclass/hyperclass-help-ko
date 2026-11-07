@@ -4,6 +4,8 @@
  *          ③ 상대 시각 '2 months ago'·'an hour ago'·'in 3 days' → '2개월 전'·'1시간 전'·'3일 후'(코스 댓글 등, 노드 전체 일치)
  *          ④ 상태 칩 허용 목록에 소문자 paid·pending(인보이스 미리보기 결제 일정) · Tailwind 알약(.rounded-full) 안의 상태어(커뮤니티 그룹 'Active').
  *          ⑤ '라벨 (숫자)' — 라벨이 사전 단어일 때('Companies (0)' → '회사 (0)', 연락처 상세 연관 패널) · 'N items' → 'N개 항목'.
+ *          ⑥ 월 이름 단독(전체 이름)·"January '27" → '10월'·'2027년 1월'(기회 예측 타임라인 열 머리).
+ *          ⑦ 앱이 조각을 이어 붙인 문장 패턴 — 기회 예측 위험 규칙 'Slipped 2+ times 또는 14+ days (excluding high)'.
  * v4.21.14: 교차 출처 iframe(자동화 워크플로우·비즈니스 프로필) 같은 출처 중계 — IFR_LOCS 로케이션에서 부팅했을 때만.
  *          iframe 주소를 app.hyperclass.ai/__ifr/{wf|crm}/… (엣지 Worker hc-ifr-proxy)로 바꾸고, 같은 출처가 된 iframe 문서에
  *          기존 DOM 번역(pass·mo)을 건다. Worker 헬스(x-hc-ifr) 확인 전·실패 시엔 원래 주소. 끄기: localStorage.hcKoIfr='0'.
@@ -607,6 +609,7 @@
   var KD_WD = { sun: '일', mon: '월', tue: '화', tues: '화', wed: '수', thu: '목', thur: '목', thurs: '목', fri: '금', sat: '토',
     sunday: '일', monday: '월', tuesday: '화', wednesday: '수', thursday: '목', friday: '금', saturday: '토' };
   var KD_REL = { today: '오늘', yesterday: '어제', tomorrow: '내일' };
+  var KD_FULLMON = /^(?:January|February|March|April|May|June|July|August|September|October|November|December)$/;
   var KD_PRE = /^(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|Mon|Tue|Wed|Thu|Fri|Sat|Sun|Today|Yesterday|Tomorrow|\d{1,2}[ :])/;
   var KD_TIME = /^(\d{1,2}):(\d{2})(?::(\d{2}))?(?:\s?([AaPp])\.?[Mm]\.?)?$/;
   function kdMon(s) { var k = String(s).toLowerCase().replace(/\.$/, ''); return KD_MON.hasOwnProperty(k) ? KD_MON[k] : 0; }
@@ -630,6 +633,9 @@
     if ((m = s.match(/^([A-Za-z]{3,9}\.?)\s+(\d{1,2})(?:st|nd|rd|th)?(?:,?\s+(\d{4}))?$/)) && (mo = kdMon(m[1]))) { d = +m[2]; y = m[3]; }
     else if ((m = s.match(/^(\d{1,2})\s+([A-Za-z]{3,9}\.?),?(?:\s+(\d{4}))?$/)) && (mo = kdMon(m[2]))) { d = +m[1]; y = m[3]; }
     else if ((m = s.match(/^([A-Za-z]{3,9}\.?),?\s+(\d{4})$/)) && (mo = kdMon(m[1]))) { return wd ? null : m[2] + '년 ' + mo + '월'; }
+    // v4.21.15 ⑥: "January '27" → '2027년 1월' · 월 이름 단독(전체 이름만 — 'October' → '10월', 기회 예측 타임라인 열 머리)
+    else if ((m = s.match(/^([A-Za-z]{3,9}\.?) '(\d{2})$/)) && (mo = kdMon(m[1]))) { return wd ? null : '20' + m[2] + '년 ' + mo + '월'; }
+    else if (!wd && KD_FULLMON.test(s)) return kdMon(s) + '월';
     else return null;
     if (d < 1 || d > 31) return null;
     return (y ? y + '년 ' : '') + mo + '월 ' + d + '일' + (wd ? ' (' + wd + ')' : '');
@@ -702,6 +708,20 @@
     }
     return (m = t.match(KD_ITEMS)) ? m[1] + '개 항목' : null;
   }
+  // v4.21.15 ⑦: 앱이 숫자·조각을 이어 붙여 사전 키와 일치하지 않는 문장(노드 전체 일치). 첫 글자로 먼저 거른다.
+  var FIX_PATS = [
+    ['S', /^Slipped (\d+)\+ times (?:or|또는) (\d+)\+ days(?: \(excluding (high|high\/medium)\))?\.?$/, function (m) {
+      return m[1] + '회 이상 지연 또는 ' + m[2] + '일 이상 지연' + (m[3] ? (m[3] === 'high' ? ' (상 제외)' : ' (상/중 제외)') : '');
+    }]
+  ];
+  function kdPat(t) {
+    if (t.length > 120) return null;
+    for (var i = 0; i < FIX_PATS.length; i++) {
+      if (t.charAt(0) !== FIX_PATS[i][0]) continue;
+      var m = t.match(FIX_PATS[i][1]); if (m) return FIX_PATS[i][2](m);
+    }
+    return null;
+  }
   // v4.21.15: 한국어 라벨 + 영어 날짜 — i18n 값('기한 {date}')에 앱이 영어로 찍은 날짜를 넣는 경우(인보이스 결제 일정 실측).
   // 라벨은 한글·공백·가운뎃점·쌍점만, 나머지가 통째로 날짜(kdCore)일 때만 바꾼다.
   var KD_KOLAB = /^[\uAC00-\uD7A3][\uAC00-\uD7A3\s·]*:?\s+$/;
@@ -764,8 +784,9 @@
     if (v === undefined && PILL_WORDS.hasOwnProperty(t) && inPill(n.parentElement)) { v = PILL_WORDS[t]; scoped = true; }   // v4.21.12
     if (v === undefined) {
       if (TS && (v = TS[t]) !== undefined) {
-        if (!inScope(n.parentElement) && !inStatusTag(n.parentElement, t) && !inEnumMenu(n.parentElement)) return;
-        scoped = true;
+        if (inScope(n.parentElement) || inStatusTag(n.parentElement, t) || inEnumMenu(n.parentElement)) scoped = true;
+        else if (kdOn() && KD_FULLMON.test(t)) { v = kdMon(t) + '월'; dated = true; }   // v4.21.15 ⑥ 월 이름 단독(범위 밖)
+        else return;
       } else {
         if (!kdOn()) return;                                                  // D3 날짜·시각(v4.21)·차트·페이지 크기
         if (kdPre(t) && (v = koDate(t)) !== null) dated = true;
@@ -775,6 +796,7 @@
         else if ((v = kdAgo(t)) !== null) dated = true;              // v4.21.15
         else if ((v = kdKoLabel(t)) !== null) dated = true;          // v4.21.15
         else if ((v = kdCount(n.parentElement, t)) !== null) dated = true;   // v4.21.15
+        else if ((v = kdPat(t)) !== null) dated = true;              // v4.21.15
         else return;
       }
     }

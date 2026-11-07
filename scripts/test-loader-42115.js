@@ -18,6 +18,8 @@ const BODY = `<div id="app">
 <p id="n1">Business</p>
 <div class="hr-tabs-tab"><span class="hr-tabs-tab__label"><div id="c1">Comments</div></span></div>
 <p class="hr-text hr-text-md hr-text-medium" id="k1">Companies (0)</p><p id="k2">Companies (3)</p><p id="k3">Live Sessions (12)</p><p id="k4">My Custom Thing (2)</p><span id="k5">0 items</span><span id="k6">1 item</span>
+<div id="m3">October</div><div id="m4">January '27</div><div id="m5">Mar</div><div id="m6">Maybe</div>
+<span id="s1">Slipped 2+ times 또는 14+ days</span><span id="s2">Slipped 1+ times or 7+ days (excluding high)</span><span id="s3">Slipped 1+ times 또는 1+ days (excluding high/medium)</span><span id="s4">Slipped away</span>
 </div>`;
 const HTML = `<!doctype html><html><head><meta charset="utf-8"><script src="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@test/js/hc-ko-app-loader.js"></script></head><body>${BODY}
 <script>setTimeout(function(){var p=document.createElement('p');p.id='late';p.textContent='기한 October 30, 2026';document.getElementById('app').appendChild(p);var o=document.createElement('div');o.className='hr-base-select-option';o.innerHTML='<div id="o6">Intermediate</div>';document.getElementById('m1').appendChild(o);},23000)</script></body></html>`;
@@ -37,7 +39,7 @@ const HTML = `<!doctype html><html><head><meta charset="utf-8"><script src="http
   const out = await page.evaluate(() => { const r = {}; document.querySelectorAll('[id]').forEach(e => { if (e.id !== 'app' && e.children.length === 0) r[e.id] = e.textContent; }); const st = window.__hcKoApp && window.__hcKoApp.status(); r._v = window.__hcKoApp && window.__hcKoApp.version; r._st = st && { dateHits: st.dateHits, scopedHits: st.scopedHits, textHits: st.textHits }; return r; });
   await browser.close();
   console.log(JSON.stringify(out, null, 1)); console.log('external', [...new Set(ext)]);
-  const exp = { d1: '기한 2026년 9월 30일', d2: '결제 2 / 3', d3: '사용자 25', t1: '결제 완료', t2: '대기 중', t3: '활성', t4: 'BS', r1: '2개월 전', r2: '방금 전', r3: '3일 후', r4: '1시간 전', r5: '3일', r6: 'in 3 days ago', o1: '초급', o2: '전문가', o3: '건강 & 피트니스', o4: 'Beginner', o5: 'My Pipeline X', n1: 'Business', c1: '댓글', late: '기한 2026년 10월 30일', o6: '중급', k1: '회사 (0)', k2: 'Companies (3)', k3: '라이브 세션 (12)', k4: 'My Custom Thing (2)', k5: '0개 항목', k6: '1개 항목' };
+  const exp = { d1: '기한 2026년 9월 30일', d2: '결제 2 / 3', d3: '사용자 25', t1: '결제 완료', t2: '대기 중', t3: '활성', t4: 'BS', r1: '2개월 전', r2: '방금 전', r3: '3일 후', r4: '1시간 전', r5: '3일', r6: 'in 3 days ago', o1: '초급', o2: '전문가', o3: '건강 & 피트니스', o4: 'Beginner', o5: 'My Pipeline X', n1: 'Business', c1: '댓글', late: '기한 2026년 10월 30일', o6: '중급', k1: '회사 (0)', k2: 'Companies (3)', k3: '라이브 세션 (12)', k4: 'My Custom Thing (2)', k5: '0개 항목', k6: '1개 항목', m3: '10월', m4: '2027년 1월', m5: 'Mar', m6: 'Maybe', s1: '2회 이상 지연 또는 14일 이상 지연', s2: '1회 이상 지연 또는 7일 이상 지연 (상 제외)', s3: '1회 이상 지연 또는 1일 이상 지연 (상/중 제외)', s4: 'Slipped away' };
   let bad = 0; for (const k in exp) if (out[k] !== exp[k]) { bad++; console.log('✗', k, JSON.stringify(out[k]), '≠', exp[k]); }
   console.log(bad ? `실패 ${bad}` : '전부 통과', 'd4=', out.d4); process.exit(bad ? 1 : 0);
 })();
