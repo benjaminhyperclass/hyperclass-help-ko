@@ -11,6 +11,8 @@
  *          ⑧ 대화 타임라인 시스템 이벤트 줄 — 'Appointment X'·'updated'·' → marked as cancelled for Oct 31, 2026 04:45PM'
  *             → '예약 X'·'업데이트됨'·' → 취소됨 · 2026년 10월 31일 오후 4:45'(굵은 조각 2개 + 꼬리 구조일 때만).
  *          ⑨ 쌍점 라벨 'Status:' → '상태:'(라벨이 사전 단어일 때) · 바로 뒤 값이 상태어면 범위 밖이어도 번역(기회 카드 'Status: Open').
+ *          ⑩ 중계 iframe(IFR) 문서 안 Vue 앱 카탈로그도 지문으로 병합 — 워크플로우 앱(9,399문자열, 로케일 en)은 DOM 치환만으론
+ *             빌더 대부분이 영어였다. iframe 의 #app 은 호스트가 아니므로 별도 앱 경로(applyApp)로만 다룬다.
  * v4.21.14: 교차 출처 iframe(자동화 워크플로우·비즈니스 프로필) 같은 출처 중계 — IFR_LOCS 로케이션에서 부팅했을 때만.
  *          iframe 주소를 app.hyperclass.ai/__ifr/{wf|crm}/… (엣지 Worker hc-ifr-proxy)로 바꾸고, 같은 출처가 된 iframe 문서에
  *          기존 DOM 번역(pass·mo)을 건다. Worker 헬스(x-hc-ifr) 확인 전·실패 시엔 원래 주소. 끄기: localStorage.hcKoIfr='0'.
@@ -503,12 +505,32 @@
           '| top:', Object.keys(catalogOf(g)).slice(0, 8).join(','));
     }
   }
+  // v4.21.15 ⑩: 중계 iframe 문서의 앱 — #app 이어도 호스트가 아니다. 지문 매칭(applyApp)만.
+  function handleIfrApp(el, app) {
+    var n = attempts.get(app) || 0;
+    if (n === -1 || n >= MAX_TRY) return;
+    var g = composerOf(app);
+    if (!g) { attempts.set(app, n + 1); return; }
+    if (!appsDict) return;
+    if (applyApp(el, g)) { attempts.set(app, -1); return; }
+    attempts.set(app, n + 1);
+    if (n + 1 >= MAX_TRY) { stats.unmatched++; log('no dict for iframe app', fingerprint(g).slice(0, 60)); }
+  }
+  var ifrDocs = [];
   function scanApps() {
     if (!core || suspended || deferred) return;
     var els = document.querySelectorAll('*');
     for (var i = 0; i < els.length; i++) {
       var app = els[i].__vue_app__;
       if (app) handle(els[i], app);
+    }
+    for (var k = ifrDocs.length - 1; k >= 0; k--) {
+      var d = ifrDocs[k];
+      if (!d || !d.defaultView || !d.documentElement) { ifrDocs.splice(k, 1); continue; }   // iframe 이 다른 문서로 바뀜
+      try {
+        var es = d.querySelectorAll('*');
+        for (var j = 0; j < es.length; j++) { var a = es[j].__vue_app__; if (a) handleIfrApp(es[j], a); }
+      } catch (e) {}
     }
   }
   function applyPendingApps() { scanApps(); }   // apps 사전이 늦게 도착했을 때
@@ -955,6 +977,9 @@
       var d = ifrDoc(el);
       if (!d || d.__hcKoIfr) return;
       d.__hcKoIfr = 1; ifr.frames++;
+      if (ifrDocs.indexOf(d) < 0) ifrDocs.push(d);   // ⑩ 카탈로그 병합 대상
+      // iframe 앱은 load 뒤 인증을 거쳐 늦게 마운트된다 — 마운트 루트(#app)는 이미 있던 노드라 mo 가 새 앱을 못 본다
+      [400, 1500, 4000, 10000].forEach(function (t) { setTimeout(scanApps, t); });
       var css = d.createElement('style'); css.textContent = 'body{word-break:keep-all;overflow-wrap:anywhere}';
       (d.head || d.documentElement).appendChild(css);
       ifrHook(d);
