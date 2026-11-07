@@ -1,0 +1,46 @@
+# 월간 번역 런북 — Claude 플랜(구독) 안에서만, 추가 요금 없이
+
+> 2026-11-07 벤자민 지침: 모든 번역·검수는 Claude 플랜 안에서 한다. API 키(ANTHROPIC_API_KEY)로 과금되는 호출은 쓰지 않는다.
+> 저장소 변수 `ALLOW_PAID_API` 가 `true` 가 아니면 모든 워크플로우의 API 단계는 꺼져 있다(기본 꺼짐). 이 값을 켜지 말 것.
+> 한 번에 다 하지 않는다. 매달 상한만큼 처리하고, 남은 것은 다음 달로 넘긴다.
+
+## 누가 무엇을
+| 단계 | 누가 | 비용 |
+|---|---|---|
+| GHL 도움말 원문 수집·변동 감지 → `data/manual/queue.json` | GitHub Actions `manual-monthly.yml` (매월 2일 06:00 KST) | 무료 |
+| 화면 미번역 키 수집 → `data/telemetry/en-missing/` | `ko-telemetry-digest.yml` (매일) | 무료 |
+| 번역·검수·반영 | 월간 예약 작업(Claude 세션, 매월 3일) | 플랜 안 |
+| 빌드·검증·배포(REV 전진, GitBook 동기화) | 기존 Actions·Git Sync | 무료 |
+
+## 월 상한 (첫 달 결과를 보고 조정)
+- 화면(UI) 미번역 키: **300개** — 2026-11 기준 대기 744개(23개 화면 묶음) → 약 3개월
+- 매뉴얼 문서: **40건** — 새 글·바뀐 글 중 핵심 카테고리부터(`queue.py` 우선순위)
+- 세션 사용량이 빠듯하면 상한을 줄이고, 남으면 다음 달로 넘긴다. 상한을 넘겨 한 번에 처리하지 않는다.
+
+## A. 화면(UI) 번역 라운드
+1. `git pull` 후 `NS_IN= MIN=20 python3 scripts/round-prep.py` → `/tmp/round/plan.json` (묶음별 todo 키 수)
+2. todo 가 적은 묶음부터 합계 300키가 될 때까지 고른다. 각 `/tmp/round/<ns>/data/ghl-i18n-en.json` 에서 `ghl-i18n-ko.json` 에 없는 키를 **직접 번역**해 ko 파일에 채운다(seed 는 그대로 둔다).
+   - 규칙: `_source/TRANSLATE_INSTRUCTIONS.md`, `data/glossary.ko.json`(확정 용어), 합쇼체, DNT(DELETE·CONFIRM·REMOVE·CANCEL·TRANSFER·DISABLE·RESET) 영어 유지, `{name}`·`@:`·`|` 복수형 등 자리표시자 그대로, 브랜드(GoHighLevel·HighLevel·LeadConnector) 금지.
+   - 키가 많으면 서브에이전트에 묶음별로 나눠 맡긴다(같은 규칙 전달).
+3. 고른 묶음만 남기도록 `/tmp/round/plan.json` 을 줄인 뒤, `ko-translate-round.yml` 의 **'병합 · 빌드 · 검증'** 단계 스크립트를 그대로 실행(round-merge → 버전 +1 → split → validate → DNT/브랜드 0 → glossary-audit).
+4. 브랜치 `round/<날짜>` 커밋 → PR → `ko-round-review`(규칙 검사만, 무료) 통과 확인 → 머지. 머지되면 `ko-app-pointer` 가 REV 를 전진시킨다.
+
+## B. 매뉴얼 문서
+1. `python3 scripts/manual/queue.py status` → `python3 scripts/manual/queue.py next 40 --out /tmp/mq`
+2. 각 `/tmp/mq/NNN.json`(원문 `source_md`, 화면 이름표 `labels`, 링크표 `links`, `workflow_builder`)을 `scripts/manual/prompt_manual_v2.md` 규칙대로 **직접 번역**해 `/tmp/mq-out/<out_path>` 에 쓴다. 서브에이전트에 5~10건씩 나눠 맡겨도 된다(프롬프트 파일 전체 + 해당 json 전달).
+3. 후처리·검수·반영:
+   ```
+   python3 scripts/manual/postprocess.py /tmp/mq-out --review data/manual/review-notes.json
+   python3 scripts/manual/lint_manual.py /tmp/mq-out/docs --json /tmp/mq-lint.json
+   python3 scripts/manual/publish_results.py /tmp/mq-out /tmp/mq-lint.json --report /tmp/mq-report.json   # 검수 통과분만 docs/ 로
+   python3 scripts/manual/apply_plan.py links
+   python3 scripts/manual/gen_summary.py
+   python3 scripts/manual/lint_manual.py docs --links      # 브랜드 0 · 링크 0 확인
+   python3 scripts/manual/queue.py done <반영한 id ...>
+   ```
+4. 브랜치 → PR → 머지(GitBook 자동 동기화). SUMMARY `## 제목`의 영문 부분은 바꾸지 않는다(공개 주소가 바뀜).
+
+## 하지 말 것
+- `ALLOW_PAID_API` 켜기, `translate_batch.py`·`i18n-batch-translator.py`·`ghl-help-updater.py` 실행(모두 API 키 과금)
+- 상한을 넘겨 한 달에 몰아서 처리
+- `scripts/` 기존 파일 수정은 diff 검토·승인 원칙 그대로

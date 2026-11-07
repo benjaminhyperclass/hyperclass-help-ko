@@ -1,3 +1,4 @@
+# 2026-11-07 벤자민 지침: 추가 요금 없이 Claude 플랜(구독) 안에서만 번역·검수한다. API 키 호출은 저장소 변수 ALLOW_PAID_API=true 일 때만 켜진다(기본 꺼짐).
 name: 메인 앱 한글팩 — 번역 라운드 (텔레메트리 입력 → PR)
 
 # 입력: data/telemetry/en-missing/<ns>.json (ko-telemetry-digest 가 매일 채움 — 로더 v4.16+ 가 보낸 미번역 키의 영어 원문)
@@ -15,8 +16,9 @@ on:
         description: '자동 선택 시 최소 키 수'
         required: false
         default: '20'
-  schedule:
-    - cron: '47 1 * * 1'   # 매주 월 KST 10:47 에 깨어나, 짝수 ISO 주에만 실행 → **2주 주기**(벤자민 결정 2026-10-29). digest(00:17 UTC) 뒤
+  # schedule 해제(2026-11-07): 번역은 월간 플랜 내 세션이 data/telemetry/en-missing 을 직접 처리한다.
+  # schedule:
+  #   - cron: '47 1 * * 1'   # 매주 월 KST 10:47 에 깨어나, 짝수 ISO 주에만 실행 → **2주 주기**(벤자민 결정 2026-10-29). digest(00:17 UTC) 뒤
 
 permissions:
   contents: write
@@ -28,6 +30,7 @@ concurrency:
 
 jobs:
   round:
+    if: vars.ALLOW_PAID_API == 'true'
     runs-on: ubuntu-latest
     steps:
       - name: 2주 주기 게이트 (스케줄 실행은 짝수 ISO 주만, 수동 실행은 항상)
@@ -99,7 +102,7 @@ jobs:
       - name: 번역 (i18n-batch-translator, 네임스페이스별)
         if: steps.prep.outputs.count != '0'
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ vars.ALLOW_PAID_API == 'true' && secrets.ANTHROPIC_API_KEY || '' }}
         run: |
           set -e
           for ns in $(python3 -c "import json;print(' '.join(r['ns'] for r in json.load(open('/tmp/round/plan.json'))))"); do
