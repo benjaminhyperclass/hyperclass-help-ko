@@ -23,7 +23,7 @@ SRC=$(git rev-parse "${SRC_IN}^{commit}")
 # 마켓플레이스 번들, 포털 러너). 포인터(*-rev.json)는 언제나 raw@main 에서 읽으므로 넣지 않는다 — 그래야 포인터만
 # 바뀐 커밋은 런타임 트리가 같아 cdn 커밋을 재사용한다. 레거시 dashboard-ko 는 슬롯에서 은퇴했고 롤백은 @8fabb6a 고정.
 PATHS=(js
-       data/hc-ko-app-core.json data/hc-ko-app-apps.json
+       data/hc-ko-app-core.json data/hc-ko-app-apps.json data/hc-ko-app-ifr.json
        data/hc-ko-i18n.json
        data/hc-ko-payments.json
        data/hc-dict.min.json
