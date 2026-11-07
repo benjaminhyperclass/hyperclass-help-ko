@@ -12,7 +12,7 @@ WhatsApp 메시지 템플릿을 만들거나 업데이트할 때 다음과 같�
 
 > "New English (US) content can't be added while the existing English (US) content is being deleted. Try again in 4 weeks or consider creating a new message template."
 
-(뜻: 기존 영어(미국) 콘텐츠를 삭제하는 중에는 새 영어(미국) 콘텐츠를 추가할 수 없습니다. 4주 뒤에 다시 시도하거나 새 메시지 템플릿을 만들어 보세요.)
+(뜻: 기존 영어(미국) 콘텐츠를 삭제하는 중에는 새 영어(미국) 콘텐츠를 추가할 수 없어요. 4주 뒤에 다시 시도하거나 새 메시지 템플릿을 만들어 보세요.)
 
 ![영어(미국) 콘텐츠 삭제 오류 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155052793979/original/x9Cj-r2EA93ETkN34myit8SgVM6rGLewQg.png?1756720609)
 

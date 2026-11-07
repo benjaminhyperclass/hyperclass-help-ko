@@ -27,8 +27,8 @@ OTP 인증이 실패하는 가장 흔한 이유는, 연결하려는 전화번호
 
 **방법 1: WhatsApp의 Click to Chat 기능 사용하기**
 
-1. 브라우저를 엽니다.
-2. 아래 주소를 입력합니다. `<countrycode><phonenumber>` 자리에 국가 번호를 포함한 전체 번호를 넣으세요.
+1. 브라우저를 여세요.
+2. 아래 주소를 입력하세요. `<countrycode><phonenumber>` 자리에 국가 번호를 포함한 전체 번호를 넣으세요.
 
 ```
 https://wa.me/<countrycode><phonenumber>
@@ -36,18 +36,18 @@ https://wa.me/<countrycode><phonenumber>
 Example: https://wa.me/919876543210
 ```
 
-3. Enter 키를 누릅니다.
+3. Enter 키를 누르세요.
 
 결과는 이렇게 해석해요.
 
 - WhatsApp이 열리면 → 번호가 WhatsApp에 등록되어 있어요(개인 계정일 수도, 비즈니스 계정일 수도 있어요).
-- "Phone number shared via url is invalid"(URL로 공유된 전화번호가 올바르지 않습니다)라고 나오면 → 번호가 WhatsApp에 등록되어 있지 않아요.
+- "Phone number shared via url is invalid"(URL로 공유된 전화번호가 올바르지 않아요)라고 나오면 → 번호가 WhatsApp에 등록되어 있지 않아요.
 
 **방법 2: WhatsApp Business 앱에서 확인하기**
 
-1. 휴대폰 연락처에 해당 번호를 저장합니다.
-2. WhatsApp을 엽니다.
-3. **새 채팅 시작**을 선택한 뒤 저장한 연락처를 검색합니다.
+1. 휴대폰 연락처에 해당 번호를 저장하세요.
+2. WhatsApp을 여세요.
+3. **새 채팅 시작**을 선택한 뒤 저장한 연락처를 검색하세요.
 
 결과는 이렇게 확인해요.
 
@@ -69,7 +69,7 @@ Example: https://wa.me/919876543210
 
 |  |  |
 | --- | --- |
-| 2 | 기존 WhatsApp 계정 삭제하기<br>꼭 같은 번호를 써야 한다면 아래 순서를 차근차근 따라 하세요.<br>1. 같은 번호로 모바일 기기에 WhatsApp(Business 또는 일반)을 설치합니다.<br>2. WhatsApp을 열고 **설정**으로 이동합니다.<br>3. **계정**을 선택한 다음 **계정 삭제**를 누릅니다.<br>4. 모바일 기기에서 **삭제 확인**을 눌러 WhatsApp 계정 삭제를 확정합니다.<br>5. 몇 분 기다린 뒤, 서브 계정에서 연결 절차와 OTP 인증을 다시 진행합니다. |
+| 2 | 기존 WhatsApp 계정 삭제하기<br>꼭 같은 번호를 써야 한다면 아래 순서를 차근차근 따라 하세요.<br>1. 같은 번호로 모바일 기기에 WhatsApp(Business 또는 일반)을 설치해요.<br>2. WhatsApp을 열고 **설정**으로 이동해요.<br>3. **계정**을 선택한 다음 **계정 삭제**를 눌러요.<br>4. 모바일 기기에서 **삭제 확인**을 눌러 WhatsApp 계정 삭제를 확정해요.<br>5. 몇 분 기다린 뒤, 서브 계정에서 연결 절차와 OTP 인증을 다시 진행해요. |
 
 {% hint style="warning" %}
 WhatsApp 계정을 삭제하면 해당 번호와 연결된 대화 내역과 데이터가 영구적으로 지워져요.

@@ -49,10 +49,10 @@ Client App Builder는 현재 **실험실**에서 제공돼요.
 
 ### 1단계: 기능 켜기
 
-1. 하이퍼클래스 계정을 엽니다.
-2. **실험실**로 이동합니다.
-3. **Client App Builder**를 찾습니다.
-4. 서브 계정에서 이 기능을 켭니다.
+1. 하이퍼클래스 계정을 여세요.
+2. **실험실**로 이동하세요.
+3. **Client App Builder**를 찾으세요.
+4. 서브 계정에서 이 기능을 켜세요.
 
 ![실험실의 Client App Builder 토글](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084618262/original/MJVKp03aX1qvEO1p5EnMU2_56B0I-bcZ6A.jpeg?1793372091)
 
@@ -263,12 +263,12 @@ CRM 데이터
 
 ### 사용자 지정 객체 작동 방식
 
-1. 멤버가 제출하거나 관리할 정보를 설명합니다.
-2. 요청에 CRM 데이터 저장이 필요하면, AI가 사용자 지정 객체를 쓸지 물어봅니다.
-3. AI가 필드, 드롭다운 옵션, 지원되는 관계를 포함한 데이터 구조를 제안합니다.
-4. 제안된 구조, 샘플 레코드, 멤버에게 보이는 범위를 검토합니다.
-5. 계획을 승인하거나 변경을 요청합니다.
-6. AI가 승인된 객체와 연결된 앱 경험을 만듭니다.
+1. 멤버가 제출하거나 관리할 정보를 설명해요.
+2. 요청에 CRM 데이터 저장이 필요하면, AI가 사용자 지정 객체를 쓸지 물어보세요.
+3. AI가 필드, 드롭다운 옵션, 지원되는 관계를 포함한 데이터 구조를 제안해요.
+4. 제안된 구조, 샘플 레코드, 멤버에게 보이는 범위를 검토하세요.
+5. 계획을 승인하거나 변경을 요청해요.
+6. AI가 승인된 객체와 연결된 앱 경험을 만드세요.
 
 ![제안된 사용자 지정 객체 구조](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084618277/original/oDE3lPOpumGBnwupg78KLZmrxG875g3icw.jpeg?1793372092)
 
@@ -316,11 +316,11 @@ Client App Builder는 만드는 동안 실시간 미리보기를 보여 줘서 �
 
 앱이 마음에 들면 다음 순서로 게시하세요.
 
-1. 게시 컨트롤을 엽니다.
-2. app.clientclub.net에서 사용할 수 있는 주소를 고릅니다.
-3. 아직 만들지 않은 연결 페이지가 있다는 경고가 있으면 확인합니다.
-4. 빠진 페이지를 만들거나, 해당 페이지가 미완성인 채로 게시하기를 선택합니다.
-5. 앱을 게시합니다.
+1. 게시 컨트롤을 여세요.
+2. app.clientclub.net에서 사용할 수 있는 주소를 고르세요.
+3. 아직 만들지 않은 연결 페이지가 있다는 경고가 있으면 확인해요.
+4. 빠진 페이지를 만들거나, 해당 페이지가 미완성인 채로 게시하기를 선택하세요.
+5. 앱을 게시하세요.
 
 ![게시 창 - 앱 주소와 사용자 지정 도메인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084618267/original/OZypRGh2URDlC20adzFDInZucAlSgjJDsg.jpeg?1793372091)
 
@@ -363,11 +363,11 @@ Client App Builder로 브랜드 Android 모바일 앱도 만들 수 있어요.
 
 준비가 끝나면 다음 순서로 진행하세요.
 
-1. 모바일 앱의 게시 컨트롤을 엽니다.
-2. 필요한 앱 아이덴티티와 브랜딩 자산을 입력합니다.
-3. Android APK 빌드를 시작합니다.
-4. 빌드 상태를 확인합니다.
-5. 서명된 APK가 준비되면 다운로드합니다.
+1. 모바일 앱의 게시 컨트롤을 여세요.
+2. 필요한 앱 아이덴티티와 브랜딩 자산을 입력하세요.
+3. Android APK 빌드를 시작하세요.
+4. 빌드 상태를 확인하세요.
+5. 서명된 APK가 준비되면 다운로드해요.
 
 ![Android APK 게시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084618263/original/za0xZUL9D8-lHSFs6XcbqT9dHICJZSxgEQ.jpeg?1793372091)
 
@@ -439,12 +439,12 @@ Client App Builder에는 앱을 확인하고 관리하는 프로젝트 대시보
 
 ### 작동 방식
 
-1. Client App Builder에서 **Build from your editor**(에디터에서 만들기) 섹션을 엽니다.
-2. 사용할 지원 AI 도구를 고릅니다.
+1. Client App Builder에서 **Build from your editor**(에디터에서 만들기) 섹션을 여세요.
+2. 사용할 지원 AI 도구를 고르세요.
 3. 화면에 나오는 MCP 연결 안내를 따릅니다.
-4. 하이퍼클래스에 로그인합니다.
-5. 작업할 서브 계정을 선택합니다.
-6. 요청된 접근 권한을 승인합니다.
+4. 하이퍼클래스에 로그인해요.
+5. 작업할 서브 계정을 선택하세요.
+6. 요청된 접근 권한을 승인해요.
 
 ![에디터에서 만들기(MCP)](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084618261/original/pR7z2nPg-E3b3lO5C909ffdjq_03sMyC2w.jpeg?1793372091)
 

@@ -28,25 +28,25 @@
 
 잠재고객을 만들 때 알맞은 파이프라인과 단계를 고르면, 잠재고객이 올바른 위치에 들어가고 영업팀이 바로 후속 작업을 할 수 있어요. CRM도 깔끔하게 유지되고, 영업 프로세스에 맞춰 후속 연락을 관리할 수 있어요.
 
-1. 서브 계정에서 **잠재고객 발굴**을 엽니다. 서브 계정에서 쓰는 방법은 [서브 계정에서 잠재고객 발굴 사용하기](../19-에이전시-뷰/Prospecting-Tool/prospecting-at-sub-accounts-complete-guide-benefits-setup.md)에서 볼 수 있어요.
+1. 서브 계정에서 **잠재고객 발굴**을 여세요. 서브 계정에서 쓰는 방법은 [서브 계정에서 잠재고객 발굴 사용하기](../19-에이전시-뷰/Prospecting-Tool/prospecting-at-sub-accounts-complete-guide-benefits-setup.md)에서 볼 수 있어요.
 
    ![서브 계정의 잠재고객 발굴 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066082373/original/wlJpKQaHjkp3qdhHW5ajpLP3CFib7mxUGg.png?1772536563)
-2. **Keyword**(키워드), **Location**(위치), **Radius**(반경)를 입력해서 잠재고객을 검색합니다.
+2. **Keyword**(키워드), **Location**(위치), **Radius**(반경)를 입력해서 잠재고객을 검색하세요.
 
    ![키워드, 위치, 반경으로 잠재고객을 검색하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066082613/original/1KBCoIqG9hM73L-9eCgP-qlWB1aJu3ovjA.png?1772536687)
-3. 가져오려는 잠재고객에서 **추가**를 클릭합니다.
+3. 가져오려는 잠재고객에서 **추가**를 클릭하세요.
 
    ![잠재고객 옆의 추가 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066082798/original/cknE4JaOB1rZbL64GrtP1RLsSUA6VNueWA.png?1772536789)
-4. 파이프라인 옵션을 설정합니다.
-   - **Add to a pipeline**(파이프라인에 추가) 옵션을 켭니다.
-   - 잠재고객을 넣을 **파이프라인**을 선택합니다.
-   - 그 파이프라인 안에서 알맞은 **Stage**(단계)를 선택합니다.
+4. 파이프라인 옵션을 설정하세요.
+   - **Add to a pipeline**(파이프라인에 추가) 옵션을 켜세요.
+   - 잠재고객을 넣을 **파이프라인**을 선택하세요.
+   - 그 파이프라인 안에서 알맞은 **Stage**(단계)를 선택하세요.
 
    ![파이프라인에 추가 옵션을 켜고 파이프라인과 단계를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066083150/original/_kocT0wwUX09sqKI4I0F95lHhAGAlWRzmA.png?1772537006)
-5. **리포트 생성**을 클릭합니다.
+5. **리포트 생성**을 클릭하세요.
 
    ![리포트 생성 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066083478/original/VAY7GUm9vdZ2a10EeUt4bV24IX456fhaHg.png?1772537165)
-6. 선택한 단계에 잠재고객이 CRM 파이프라인에 들어왔는지 확인합니다.
+6. 선택한 단계에 잠재고객이 CRM 파이프라인에 들어왔는지 확인하세요.
 
    ![선택한 단계에 추가된 잠재고객을 보여 주는 CRM 파이프라인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066083868/original/Y2v8xFM_fxMeCsm0sRUO9856dkNuPfmLhA.png?1772537355)
 

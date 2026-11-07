@@ -51,7 +51,7 @@
 
 - **Action Name**(액션 이름): 발신자에게 보내는 환영 메시지
 - **Say or Play Message**: Say a message
-- **Text to Say**: "Hello, welcome to ABC Services. Please press 1 for Sales, 2 for Support." (안녕하세요, ABC 서비스입니다. 영업 문의는 1번, 지원 문의는 2번을 눌러 주세요.)
+- **Text to Say**: "Hello, welcome to ABC Services. Please press 1 for Sales, 2 for Support." (안녕하세요, ABC 서비스예요. 영업 문의는 1번, 지원 문의는 2번을 눌러 주세요.)
 - **Language**: English (US)
 - **Message Voice**: Woman
 - **Number of Loops**: 1

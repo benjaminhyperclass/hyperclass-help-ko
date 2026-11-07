@@ -6,10 +6,13 @@
 3. HighLevel 채널 영상 링크(YouTube·Loom·Vimeo·Wistia·Vidyard)를 뺀다 — 화이트라벨 원칙.
 4. 확정 용어집의 띄어쓰기·표기 변형을 화면 표기로 맞춘다(코드·URL 제외).
 5. 기술 URL 의 대문자 브랜드 표기(LeadConnectorhq)를 소문자로.
+6. 합니다체로 끝난 문장을 해요체로(단계 목록의 동작은 '~하세요').
 
 사용: python3 scripts/manual/postprocess.py <결과 폴더> [--review out.json]
 """
 import glob, json, os, re, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from register_fix import fix_register
 
 VIDEO = re.compile(r"https?://(?:www\.)?(?:youtube\.com|youtu\.be|loom\.com|(?:player\.)?vimeo\.com|"
                    r"(?:fast\.)?wistia\.(?:net|com)|[a-z0-9-]+\.wistia\.com|(?:share|play)\.vidyard\.com|watchclueso\.com|jumpshare\.com|app\.supademo\.com|guidejar\.com|scribehow\.com|tella\.tv|screenpal\.com|app\.arcade\.software|speakwith\.us|storage\.googleapis\.com/msgsndr/\S+\.(?:mp4|mov|webm))[^\s)>]*", re.I)
@@ -94,6 +97,39 @@ def fix_terms(seg):
     out.append(apply(seg[last:]))
     return "".join(out)
 
+PRICE = re.compile(r"\$\s?\d")
+PRICE_CTX = re.compile(r"요금|플랜|가격|비용|과금|청구|구독료|월 \$|/월")
+NOTICE_MARK = "하이퍼클래스에서 실제로 적용되는 요금"
+
+def add_price_notice(path, t):
+    if NOTICE_MARK in t: return t
+    prose = CODE.sub(" ", t)
+    if len(PRICE.findall(prose)) < 1 or not PRICE_CTX.search(prose): return t
+    docs_root = path.split("/docs/")[0] + "/docs" if "/docs/" in path else "docs"
+    rel = os.path.relpath(os.path.join(docs_root, "00-자주묻는질문"), os.path.dirname(path))
+    hint = ("{% hint style=\"info\" %}\n문서에 나온 금액(달러)과 요금제 이름은 참고용이에요. "
+            f"하이퍼클래스에서 실제로 적용되는 요금은 [요금제 안내]({rel}/pricing-plans.md)와 "
+            f"[AI·SMS·음성 사용료]({rel}/usage-costs.md)를 확인하세요.\n{{% endhint %}}\n")
+    m = re.search(r"^# .*\n+(?:[^\n#{|!-].*\n)+", t, re.M)   # 제목 + 첫 문단 뒤
+    if not m: return t
+    return t[:m.end()] + "\n" + hint + t[m.end():]
+
+BLOCK_START = re.compile(r"^\s*(?:[-*+]\s|\d+[.)]\s|#|\||>|!\[|\{%|<)")
+
+def split_labels(seg):
+    """문단 바로 다음 줄에 붙은 짧은 소제목(예: '설정')을 별도 문단으로 뗀다."""
+    L = seg.split("\n")
+    out = []
+    for i, l in enumerate(L):
+        st = l.strip()
+        prev = out[-1] if out else ""
+        if (st and len(st) <= 15 and re.search(r"[가-힣A-Za-z]", st) and not re.search(r"[.。!?,:;)]$", st)
+                and not BLOCK_START.match(l) and prev.strip() and not BLOCK_START.match(prev)
+                and not l.startswith(" ")):
+            out.append("")
+        out.append(l)
+    return "\n".join(out)
+
 def process(path, notes):
     t = open(path, encoding="utf-8").read()
     o = t
@@ -106,8 +142,18 @@ def process(path, notes):
     # 3·4) 본문(코드 밖)만
     head, body = (t.split("\n---\n", 1) if t.startswith("---") and "\n---\n" in t[3:] else ("", t))
     body = protect(body, lambda s: fix_terms(strip_videos(s)))
+    # 말투 변환은 코드 조각을 자리표시자로 가린 채 줄 전체를 본다(따옴표 안 코드가 따옴표를 끊지 않도록)
+    keep = []
+    def mask(m):
+        keep.append(m.group(0)); return f"\x00{len(keep) - 1}\x00"
+    masked = CODE.sub(mask, body)
+    masked = fix_register(masked)
+    body = re.sub(r"\x00(\d+)\x00", lambda m: keep[int(m.group(1))], masked)
+    body = protect(body, split_labels)
     body = re.sub(r"\n{3,}", "\n\n", body)
     t = (head + "\n---\n" + body) if head else body
+    # 7) 달러 요금이 나오는 문서에는 하이퍼클래스 요금 안내로 가는 알림을 한 번 붙인다
+    t = add_price_notice(path, t)
     # 5) 기술 URL 대문자 표기
     t = re.sub(r"LeadConnectorhq", "leadconnectorhq", t)
     if t != o:

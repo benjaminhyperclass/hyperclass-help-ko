@@ -9,6 +9,10 @@
 하이퍼클래스 워크플로우에서 GPT 기반 AI 모델(최신 GPT-4 Turbo 포함)을 쓰는 방법을 안내해요. AI 스텝을 설정하고 프롬프트를 구성해서 리드 후속 연락, 대화 요약, 맞춤 메시지 작성 같은 작업을 자동화할 수 있어요.
 
 {% hint style="info" %}
+문서에 나온 금액(달러)과 요금제 이름은 참고용이에요. 하이퍼클래스에서 실제로 적용되는 요금은 [요금제 안내](../../00-자주묻는질문/pricing-plans.md)와 [AI·SMS·음성 사용료](../../00-자주묻는질문/usage-costs.md)를 확인하세요.
+{% endhint %}
+
+{% hint style="info" %}
 이 문서는 ChatGPT와 그 버전인 GPT-4를 다뤄요. 워크플로우에서 AI를 사용하는 전반적인 방법이 궁금하다면 [워크플로우 액션 - GPT powered by OpenAI](../Workflow-AI-Workflow-Actions/workflow-action-gpt-powered-by-openai.md)를 참고하세요.
 {% endhint %}
 

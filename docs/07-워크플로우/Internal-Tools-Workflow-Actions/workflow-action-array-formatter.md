@@ -8,6 +8,10 @@
 
 Array Formatter는 배열(데이터 목록)을 다루는 워크플로우 액션이에요. 목록에서 원하는 데이터를 찾거나 걸러 내고, 계산하고, 다른 모양의 목록으로 다시 만들 수 있어요.
 
+{% hint style="info" %}
+문서에 나온 금액(달러)과 요금제 이름은 참고용이에요. 하이퍼클래스에서 실제로 적용되는 요금은 [요금제 안내](../../00-자주묻는질문/pricing-plans.md)와 [AI·SMS·음성 사용료](../../00-자주묻는질문/usage-costs.md)를 확인하세요.
+{% endhint %}
+
 ## Array Formatter란?
 
 Array Formatter는 하이퍼클래스 워크플로우 안에서 배열을 다루는 액션 모음이에요. 주문 상품 목록(line items)이나 고객 속성처럼 객체가 여러 개 담긴 목록이 배열이에요. 이런 배열은 워크플로우에서 자주 나타나는데, Array Formatter로 필요한 데이터를 꺼내거나 걸러 내거나 계산할 수 있어요.
@@ -46,26 +50,26 @@ Array Formatter는 하이퍼클래스 워크플로우 안에서 배열을 다루
 
 워크플로우에서 Array Formatter를 설정하는 순서는 다음과 같아요.
 
-1. 워크플로우 빌더를 엽니다. 하이퍼클래스에서 **자동화** 메뉴로 이동한 다음, 워크플로우를 만들거나 기존 워크플로우를 선택하세요.
+1. 워크플로우 빌더를 여세요. 하이퍼클래스에서 **자동화** 메뉴로 이동한 다음, 워크플로우를 만들거나 기존 워크플로우를 선택하세요.
 
    ![워크플로우 빌더 열기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040473379/original/BNeYKRSqIiAKoO2etWq1iFcGanZGh-DEXg.png?1737942844)
 
-2. Array Function 액션을 추가합니다. **Add Action**(액션 추가)을 클릭하고, **Premium Actions**(프리미엄 액션) 섹션에서 **Array Function**(배열 함수)을 선택하세요.
+2. Array Function 액션을 추가하세요. **Add Action**(액션 추가)을 클릭하고, **Premium Actions**(프리미엄 액션) 섹션에서 **Array Function**(배열 함수)을 선택하세요.
    ![Array Function 액션 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040473375/original/0jHYbd1q6WtZWX1mZca3xyn9BEJEUgoo7Q.png?1737942775)
 
-3. 함수 유형을 고릅니다. **Find**(찾기), **Filter**(필터), **Find by Index**(인덱스로 찾기), **Line Items**(라인 아이템), **Math**(수학) 중에서 원하는 함수를 선택하세요.
+3. 함수 유형을 고르세요. **Find**(찾기), **Filter**(필터), **Find by Index**(인덱스로 찾기), **Line Items**(라인 아이템), **Math**(수학) 중에서 원하는 함수를 선택하세요.
 
    ![함수 유형 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040473392/original/-VA72O-j_YI5szbXcqDpIRm8jtKJCz_ALA.png?1737942929)
 
-4. 입력값을 설정합니다. 입력 배열을 지정하고, 선택한 함수 유형에 맞게 키, 값, 조건을 정하세요.
+4. 입력값을 설정하세요. 입력 배열을 지정하고, 선택한 함수 유형에 맞게 키, 값, 조건을 정하세요.
 
    ![입력값 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040473413/original/mgFN2ZZM68q4RzHXmgQlO5j5xOhCdWh-og.png?1737943149)
 
-5. 워크플로우를 저장하고 테스트합니다. 액션이 의도한 대로 동작하는지 확인하세요.
+5. 워크플로우를 저장하고 테스트해요. 액션이 의도한 대로 동작하는지 확인하세요.
 
    ![저장 및 테스트](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040473426/original/ESwsr1PF1dntsi5CpxqRcBRH0JK1u4j79w.png?1737943285)
 
-6. 결과값을 사용합니다. 액션이 제대로 동작하면 변수가 만들어져요. 이 변수는 다른 액션에서 불러와 쓸 수 있어요.
+6. 결과값을 사용하세요. 액션이 제대로 동작하면 변수가 만들어져요. 이 변수는 다른 액션에서 불러와 쓸 수 있어요.
 
    ![결과값 사용](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040480458/original/1eTghHjhNXhJv7nQaSMqii0CKYI8rUpswg.png?1737961504)
 

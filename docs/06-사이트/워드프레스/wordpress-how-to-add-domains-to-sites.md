@@ -15,7 +15,7 @@ WordPress 사이트에 도메인을 연결하면 방문자가 그 도메인 주�
 {% hint style="info" %}
 도메인 관리는 **라이브**(Live) 환경에서만 쓸 수 있어요.
 
-**Staging**(스테이징) 환경에서는 도메인 영역이 비활성화되고 "This feature is only available in the live environment. Please switch to access it."(이 기능은 라이브 환경에서만 사용할 수 있습니다. 전환해서 이용하세요.)라는 문구가 나와요.
+**Staging**(스테이징) 환경에서는 도메인 영역이 비활성화되고 "This feature is only available in the live environment. Please switch to access it."(이 기능은 라이브 환경에서만 사용할 수 있어요. 전환해서 이용하세요.)라는 문구가 나와요.
 
 오른쪽 위 헤더의 **environment selector**(환경 선택기)로 **라이브**로 전환하세요.
 

@@ -52,10 +52,10 @@
 
 제거 피드백을 확인하려면 다음 순서로 진행하세요.
 
-1. **Developer Marketplace**를 엽니다.
-2. 확인할 앱을 선택합니다.
-3. **인사이트**로 이동합니다.
-4. **Uninstall feedback**(제거 피드백)을 선택합니다.
+1. **Developer Marketplace**를 여세요.
+2. 확인할 앱을 선택하세요.
+3. **인사이트**로 이동하세요.
+4. **Uninstall feedback**(제거 피드백)을 선택하세요.
 
 {% hint style="warning" %}
 이 기능은 개발자 포털인 **Developer Marketplace**에서만 볼 수 있어요.

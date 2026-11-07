@@ -131,7 +131,7 @@ Zapier나 Pabbly Connect 같은 외부 연동 도구를 쓸 수 있어요. 자�
 
 ### 서브 계정에서 Facebook 토큰이 만료됐어요. 왜 이런 일이 생기고 어떻게 해결하나요?
 
-제목이 "Important: Facebook connection has expired."(중요: Facebook 연결이 만료되었습니다)인 이메일을 받았다면, 서브 계정 중 하나의 Facebook 연동이 끊어졌다는 뜻이에요.
+제목이 "Important: Facebook connection has expired."(중요: Facebook 연결이 만료되었어요)인 이메일을 받았다면, 서브 계정 중 하나의 Facebook 연동이 끊어졌다는 뜻이에요.
 
 #### 연결이 끊어지는 이유
 

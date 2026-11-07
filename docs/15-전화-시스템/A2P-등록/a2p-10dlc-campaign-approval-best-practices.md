@@ -82,13 +82,13 @@ A2P 10DLC 캠페인 심사는 비즈니스가 SMS나 MMS를 어떻게 사용할 
 
 Acme sends appointment reminders and service updates to existing customers who provide SMS consent through our online appointment form.
 
-(뜻: Acme는 온라인 예약 폼으로 SMS 수신 동의를 한 기존 고객에게 예약 알림과 서비스 소식을 보냅니다.)
+(뜻: Acme는 온라인 예약 폼으로 SMS 수신 동의를 한 기존 고객에게 예약 알림과 서비스 소식을 보내요.)
 
 피해야 할 예:
 
 This Campaign sends messages to customers.
 
-(뜻: 이 캠페인은 고객에게 메시지를 보냅니다.)
+(뜻: 이 캠페인은 고객에게 메시지를 보내요.)
 
 두 번째 예시는 심사자가 캠페인을 분명히 이해하기에 정보가 부족해요.
 
@@ -114,7 +114,7 @@ This Campaign sends messages to customers.
 
 Acme Dental: Hi [First Name], your appointment is scheduled for [Date] at [Time]. Reply STOP to unsubscribe.
 
-(뜻: Acme Dental: [First Name]님, 예약이 [Date] [Time]에 잡혀 있습니다. 수신을 중단하려면 STOP이라고 답장하세요.)
+(뜻: Acme Dental: [First Name]님, 예약이 [Date] [Time]에 잡혀 있어요. 수신을 중단하려면 STOP이라고 답장하세요.)
 
 {% hint style="warning" %}
 샘플 메시지가 캠페인에서 실제로 보낼 내용을 정확히 나타내고, 등록할 때 선택한 사용 사례와 맞는지 확인하세요.

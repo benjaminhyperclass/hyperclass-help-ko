@@ -129,8 +129,8 @@ Google 캠페인에서는 EU 정치 광고에 관한 선언을 추가로 해야 
 
 캠페인에 맞는 옵션을 선택하세요.
 
-- **No, this campaign doesn't have EU political ads**(아니요, 이 캠페인에는 EU 정치 광고가 없습니다)
-- **Yes, this campaign has EU political ads**(예, 이 캠페인에는 EU 정치 광고가 있습니다)
+- **No, this campaign doesn't have EU political ads**(아니요, 이 캠페인에는 EU 정치 광고가 없어요)
+- **Yes, this campaign has EU political ads**(예, 이 캠페인에는 EU 정치 광고가 있어요)
 
 지원되는 Google 캠페인은 이 항목을 선택해야 게시 단계로 넘어갈 수 있어요. 캠페인에 어떤 요건이 적용되는지는 Google의 최신 정치 콘텐츠 정책을 참고하세요.
 

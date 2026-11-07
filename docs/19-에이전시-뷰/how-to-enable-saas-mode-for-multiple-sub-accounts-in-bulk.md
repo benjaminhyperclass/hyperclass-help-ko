@@ -226,7 +226,7 @@ SaaS 요금제에 따라 선택한 서브 계정이 받는 혜택과 구독 구�
 
 ### 6단계: 일괄 작업 기록 확인하기
 
-새로 열린 **Bulk Action Initiated Successfully**(일괄 작업이 시작되었습니다) 창에 "it can take a few minutes to complete execution. View the detailed progress from Bulk Actions History page."라는 안내가 보여요. 완료까지 몇 분 걸릴 수 있고, 자세한 진행 상황은 일괄 작업 기록 페이지에서 볼 수 있다는 뜻이에요. **View Bulk Action History**(일괄 작업 기록 보기)를 클릭해서 확인하세요.
+새로 열린 **Bulk Action Initiated Successfully**(일괄 작업이 시작되었어요) 창에 "it can take a few minutes to complete execution. View the detailed progress from Bulk Actions History page."라는 안내가 보여요. 완료까지 몇 분 걸릴 수 있고, 자세한 진행 상황은 일괄 작업 기록 페이지에서 볼 수 있다는 뜻이에요. **View Bulk Action History**(일괄 작업 기록 보기)를 클릭해서 확인하세요.
 
 ![일괄 작업이 시작되었다는 안내 창](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048945733/original/Nd8n_7nDkPR449Gl0uX31U63hYE9QFkddQ.png?1750959453)
 

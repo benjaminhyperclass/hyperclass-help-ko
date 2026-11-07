@@ -151,5 +151,5 @@ Export Center에서는 일회성 내보내기와 예약 내보내기를 모두 �
 ## 함께 보면 좋은 문서
 
 - [에이전시 지갑 거래 내역용 Export Center](../11-설정/에이전시-설정/export-center-for-agency-wallet-transactions.md)
-- [하이퍼클래스 요금 가이드](../20-고객지원/Billing-Support/hyperclass-pricing-guide.md)
+- 하이퍼클래스 요금 가이드
 - [재청구, 재판매, 지갑 설명](../36-기타/Miscellaneous/rebilling-reselling-and-wallets-explained.md)

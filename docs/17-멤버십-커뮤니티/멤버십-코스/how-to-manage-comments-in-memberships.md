@@ -14,19 +14,19 @@
 
 ### 카테고리 안의 모든 강의에 댓글 활성화하기
 
-1. **상품** 탭을 엽니다.
-2. 기존 **상품**을 선택하거나 새로 만듭니다.
-3. **Comments**(댓글) 섹션을 클릭합니다.
-4. 댓글을 **활성화됨**, **숨김**, **잠김**으로 설정할 카테고리를 선택합니다.
+1. **상품** 탭을 여세요.
+2. 기존 **상품**을 선택하거나 새로 만드세요.
+3. **Comments**(댓글) 섹션을 클릭하세요.
+4. 댓글을 **활성화됨**, **숨김**, **잠김**으로 설정할 카테고리를 선택하세요.
 
 ![카테고리 전체 강의의 댓글 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48247121266/original/KnFljltjZc4Bg8k1VoLxbxE3wuI7cNZv0A.gif?1661349365)
 
 ### 카테고리 안의 선택한 강의에만 댓글 활성화하기
 
-1. **상품** 탭을 엽니다.
-2. 기존 **상품**을 선택하거나 새로 만듭니다.
-3. **Comments**(댓글) 섹션을 클릭합니다.
-4. 카테고리 안에서 댓글을 **활성화됨**, **숨김**, **잠김**으로 설정할 강의를 선택합니다.
+1. **상품** 탭을 여세요.
+2. 기존 **상품**을 선택하거나 새로 만드세요.
+3. **Comments**(댓글) 섹션을 클릭하세요.
+4. 카테고리 안에서 댓글을 **활성화됨**, **숨김**, **잠김**으로 설정할 강의를 선택하세요.
 
 ![선택한 강의의 댓글 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48247122489/original/jHinaoId928a-e1tDJQZUcG8sy_nlGvWXg.gif?1661349614)
 
@@ -71,17 +71,17 @@
 
 #### 댓글 삭제하기
 
-1. **상품** > **댓글 관리**를 클릭합니다.
-2. 삭제할 댓글을 찾아 선택합니다.
-3. **삭제**를 클릭합니다.
+1. **상품** > **댓글 관리**를 클릭하세요.
+2. 삭제할 댓글을 찾아 선택하세요.
+3. **삭제**를 클릭하세요.
 
 ![댓글을 삭제하는 모습](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48247156145/original/mFzDPtiK27ieMR3ImxGO51TTEasvJmjh6w.gif?1661357097)
 
 #### 삭제한 댓글 복원하기
 
-1. **상품** > **댓글 관리**를 클릭합니다.
-2. **삭제됨** 탭을 클릭합니다.
-3. 복원할 댓글을 찾아 선택합니다.
-4. **복원**을 클릭합니다.
+1. **상품** > **댓글 관리**를 클릭하세요.
+2. **삭제됨** 탭을 클릭하세요.
+3. 복원할 댓글을 찾아 선택하세요.
+4. **복원**을 클릭하세요.
 
 ![삭제한 댓글을 복원하는 모습](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48247157253/original/f-GkDVNdfc_gqTbe6GybY4VNUke_3dGyZg.gif?1661357314)

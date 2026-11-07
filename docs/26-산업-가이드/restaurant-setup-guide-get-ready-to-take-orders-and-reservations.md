@@ -50,10 +50,10 @@
 
 레스토랑 대시보드에서 6단계 체크리스트를 열 수 있어요.
 
-1. **레스토랑 > 개요**를 엽니다.
-2. **Restaurant setup**을 찾아 **Restaurant details**(**Start here**, 여기서 시작)나 원하는 다른 단계를 선택합니다.
+1. **레스토랑 > 개요**를 여세요.
+2. **Restaurant setup**을 찾아 **Restaurant details**(**Start here**, 여기서 시작)나 원하는 다른 단계를 선택하세요.
 
-![레스토랑을 클릭한 다음 개요를 클릭합니다.](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084942672/original/wseejWewpAJg-kIhqrice6wsF6ZZ9z-i0w.png?1793797313)  
+![레스토랑을 클릭한 다음 개요를 클릭해요.](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084942672/original/wseejWewpAJg-kIhqrice6wsF6ZZ9z-i0w.png?1793797313)  
   
 ![개요 화면의 레스토랑 초기 설정 체크리스트](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084942676/original/tku2DFBs7lWsaP0T-X2eQMfuFHCxG5fUwQ.png?1793797314)  
   
@@ -87,13 +87,13 @@
 
 레스토랑 결제를 받을 제공업체를 연결해요. **결제 연동**은 다른 브라우저 탭에서 열려요.
 
-1. **Open Payments**(결제 열기)를 선택합니다.  
+1. **Open Payments**(결제 열기)를 선택하세요.  
      
    ![결제 단계 화면. Open Payments를 누르면 새 탭에서 결제 연동이 열려요.](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084960137/original/j8haT7zAP0kxIs2knZMkBqj07Tqn9XAoEQ.png?1793805516)
 2. **결제 연동**에서 사용할 제공업체 옆의 **연결**을 선택하고 안내에 따릅니다.  
      
    ![결제 연동에서 결제 제공업체를 연결하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084960152/original/-nPqwXB3hY0uhD9CTnNzTWvrGS8ib4ExJA.png?1793805528)
-3. 초기 설정 화면으로 돌아와 **Your payment provider is connected**(결제 제공업체가 연결되었습니다) 문구를 확인하고 **계속**을 선택합니다.
+3. 초기 설정 화면으로 돌아와 **Your payment provider is connected**(결제 제공업체가 연결되었어요) 문구를 확인하고 **계속**을 선택하세요.
 
 ![제공업체가 연결되면 결제 단계에 초록색 체크가 표시돼요.](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084942929/original/BW1ClTc_JxmniA28xt4frQx7L73173yLXg.png?1793797443)  
   
@@ -116,17 +116,17 @@ Stripe를 연결하는 방법은 [시작하기 - Stripe 연결](../01-시작하�
 
 가져오기를 하면 항목이 메뉴에 추가되기 전에 먼저 편집할 수 있는 임시 저장본이 만들어져요.
 
-1. **Upload your menu**를 선택하고 파일을 고른 다음 **Upload menu**(메뉴 업로드)를 클릭합니다. PDF, JPG, PNG, WEBP, CSV, XLSX 파일을 올릴 수 있어요(파일당 최대 50MB, 한 번에 15개까지). 샘플 스프레드시트도 받을 수 있어요.  
+1. **Upload your menu**를 선택하고 파일을 고른 다음 **Upload menu**(메뉴 업로드)를 클릭하세요. PDF, JPG, PNG, WEBP, CSV, XLSX 파일을 올릴 수 있어요(파일당 최대 50MB, 한 번에 15개까지). 샘플 스프레드시트도 받을 수 있어요.  
      
    ![메뉴를 사진, PDF, 스프레드시트로 업로드하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084960358/original/z7EqEq_y4BDrk_wZX5OuLjSH7JRBNi387A.png?1793805634)
-2. **Found so far**(지금까지 찾은 항목)에 인식된 카테고리와 항목이 표시될 때까지 기다립니다.  
+2. **Found so far**(지금까지 찾은 항목)에 인식된 카테고리와 항목이 표시될 때까지 기다려요.  
      
    ![하이퍼클래스가 메뉴를 페이지별로 읽어 임시 저장본을 만드는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084960470/original/ivyKVuXRr1KvG0O-4ZbBYcFJbWWz6V_LMQ.png?1793805652)
-3. **전체 항목**과 **검토 필요**를 확인합니다. 점 세 개 메뉴에서 **Edit item**(항목 편집), **카테고리로 이동**, **Remove from draft**(임시 저장에서 제거)를 사용할 수 있어요.  
+3. **전체 항목**과 **검토 필요**를 확인하세요. 점 세 개 메뉴에서 **Edit item**(항목 편집), **카테고리로 이동**, **Remove from draft**(임시 저장에서 제거)를 사용할 수 있어요.  
      
    ![임시 저장본을 메뉴에 추가하기 전에 모든 항목을 검토하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084960561/original/7_K6fIfLykbWuoq5eo-8Hdvmx5LvChJn1g.png?1793805666)  
    ![임시 저장본의 항목을 편집, 이동, 제거하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084960641/original/7_NFXwOJ9a8N2sffIy1vbMna9o3uMWxXvQ.png?1793805682)
-4. **Add items to menu**(메뉴에 항목 추가)를 선택하고, **Your menu**(내 메뉴)를 확인한 다음 빠진 항목이나 카테고리를 추가하고 **계속**을 클릭합니다.
+4. **Add items to menu**(메뉴에 항목 추가)를 선택하고, **Your menu**(내 메뉴)를 확인한 다음 빠진 항목이나 카테고리를 추가하고 **계속**을 클릭하세요.
 
 ![임시 저장본을 추가한 뒤의 내 메뉴: 5개 카테고리에 13개 항목](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084942948/original/uyPp2AwiswcSGfDpuqR_Cdhx6dVl_eZ79Q.png?1793797458)  
   
@@ -145,7 +145,7 @@ Stripe를 연결하는 방법은 [시작하기 - Stripe 연결](../01-시작하�
 
 | 설정 | 방법 |
 | --- | --- |
-| 픽업 | **Do you want to offer pickup?**(픽업을 제공하시겠어요?)을 켭니다. |
+| 픽업 | **Do you want to offer pickup?**(픽업을 제공하시겠어요?)을 켜요. |
 | 운영 시간 | 영업시간을 그대로 쓰거나 픽업 전용 시간을 따로 정해요. |
 | 예약 주문 | 손님이 나중 시간의 픽업을 선택할 수 있게 해요. |
 | 가격 추가 비율 | 가격에 더할 비율(%)이에요. 0이면 메뉴 가격이 그대로 적용돼요. |
@@ -157,7 +157,7 @@ Stripe를 연결하는 방법은 [시작하기 - Stripe 연결](../01-시작하�
 
 **Do you want to offer delivery?**(배송을 제공하시겠어요?)를 선택한 다음, **Distance bands**(거리 구간) 또는 **Per mile**(마일당) 요금 방식을 고르고 마일 또는 킬로미터 단위를 선택하세요. 거리는 레스토랑에서 직선거리로 재요.
 
-1. **Add area**(배송 지역 추가)를 선택하고 아래 내용을 입력합니다.
+1. **Add area**(배송 지역 추가)를 선택하고 아래 내용을 입력하세요.
 
 | 필드 | 입력할 내용 |
 | --- | --- |
@@ -170,9 +170,9 @@ Stripe를 연결하는 방법은 [시작하기 - Stripe 연결](../01-시작하�
 ![배송 지역을 추가하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084942955/original/A6knniwKnq3NPyyxwB0Yiu1sxmgVNmhYZg.png?1793797459)  
   
 
-2. 필요하면 지역을 더 추가합니다. **Already covered**(이미 포함된 거리)에서 사용 중인 거리를 확인할 수 있어요.
+2. 필요하면 지역을 더 추가하세요. **Already covered**(이미 포함된 거리)에서 사용 중인 거리를 확인할 수 있어요.
 3. **Test an address**(주소 테스트)를 사용하면 설정을 바꾸지 않고 배송 가능 범위, 배송비, 배송 시간을 미리 확인할 수 있어요.
-4. 배송 시간, 예약 주문, 가격 추가 비율, 최소 주문 금액(선택)을 설정하고 **저장 후 계속**을 클릭합니다.
+4. 배송 시간, 예약 주문, 가격 추가 비율, 최소 주문 금액(선택)을 설정하고 **저장 후 계속**을 클릭하세요.
 
 ![배송 지역 두 곳. 지역마다 배송비, 무료 배송 금액, 배송 시간이 달라요.](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084942962/original/vZOXxecHVwJrZcZ5oxd9RZpGoauHl_7Jlg.png?1793797461)  
   
@@ -185,10 +185,10 @@ Stripe를 연결하는 방법은 [시작하기 - Stripe 연결](../01-시작하�
 
 플로어 레이아웃은 예약과 워크인(예약 없이 방문) 손님에게 쓰는 테이블을 나타내요.
 
-1. 필요하면 **Main dining**(메인 다이닝) 구역의 이름을 바꿉니다. 처음에는 원형 테이블 5개로 시작해요.
-2. 테이블마다 이름, 좌석 수, 모양을 설정합니다. 모양은 **Round**(원형), **Square**(정사각형), **Rectangle**(직사각형), **Booth**(부스), **Bar seat**(바 좌석) 중에서 고를 수 있어요.
+1. 필요하면 **Main dining**(메인 다이닝) 구역의 이름을 바꾸세요. 처음에는 원형 테이블 5개로 시작해요.
+2. 테이블마다 이름, 좌석 수, 모양을 설정하세요. 모양은 **Round**(원형), **Square**(정사각형), **Rectangle**(직사각형), **Booth**(부스), **Bar seat**(바 좌석) 중에서 고를 수 있어요.
 3. **Add table**(테이블 추가), 휴지통 아이콘, **Add another area**(구역 추가)를 사용해 레스토랑 구성에 맞춥니다.
-4. 미리보기에서 테이블 수와 좌석 수를 확인합니다.
+4. 미리보기에서 테이블 수와 좌석 수를 확인하세요.
 
 ![메인 다이닝 구역의 테이블 5개와 좌석 16개, 그리고 테라스 구역](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084942960/original/l_0H8PEqb9xweaqGL5uSEA21mAJvPAE0xA.png?1793797461)
 
@@ -250,7 +250,7 @@ Stripe를 연결하는 방법은 [시작하기 - Stripe 연결](../01-시작하�
 
 **Save and complete setup**을 클릭하면 **레스토랑 웹사이트 > 대시보드**에 **Setup complete**(설정 완료)가 표시돼요. 픽업, 배송, 예약은 **Ready**(준비 완료)로 표시돼요.
 
-1. **Preview website**(웹사이트 미리보기)를 선택해 레스토랑 사이트를 확인합니다.
+1. **Preview website**(웹사이트 미리보기)를 선택해 레스토랑 사이트를 확인하세요.
 2. **Publish website**(웹사이트 게시)를 선택하면 고객이 온라인으로 주문하고 예약할 수 있어요.
 
 ![설정 완료 화면. 웹사이트를 미리 본 다음 게시하세요.](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084942986/original/v8h8kU17W1Ogt62SEsokcVgw6wgWs4lKmQ.png?1793797473)  
@@ -270,7 +270,7 @@ Stripe를 연결하는 방법은 [시작하기 - Stripe 연결](../01-시작하�
 | 메뉴 카테고리, 항목, 가격 | **레스토랑 > 메뉴** |
 | 결제 제공업체 | **결제 > 결제 연동** |
 
-![레스토랑을 클릭한 다음 레스토랑 설정을 클릭합니다.](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084942997/original/QhN1ANVMeJ79PWu4x6iaNReu5kgM62s67w.png?1793797474)  
+![레스토랑을 클릭한 다음 레스토랑 설정을 클릭해요.](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084942997/original/QhN1ANVMeJ79PWu4x6iaNReu5kgM62s67w.png?1793797474)  
   
 ![레스토랑 세부 정보와 규칙을 나중에 바꾸는 레스토랑 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084942998/original/QfSgS8j0e-iS7__RZ6dXUj1TJr80MZba2A.png?1793797476)  
   

@@ -17,15 +17,15 @@
 
 ## 사용 방법
 
-1. **연락처**에서 원하는 연락처를 엽니다.
+1. **연락처**에서 원하는 연락처를 여세요.
 
    ![연락처 상세 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155026788666/original/Glbip9r2-GXvEfCKs2ZO24kRHOAxsoPkVg.jpeg?1716996025)
 
-2. **Document Management**(문서 관리) 아이콘을 클릭합니다.
+2. **Document Management**(문서 관리) 아이콘을 클릭하세요.
 
    ![문서 관리 아이콘](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155026788665/original/mYbirHDqNSCfcGVgZJjkj2QXi_Y5G_J2kw.jpeg?1716996025)
 
-3. **All**(전체) 탭에서 문서 목록과 각 문서의 상태를 확인합니다. 이 탭에서는 문서를 다운로드하고, 편집기에서 원본을 볼 수 있어요. 발송된 문서는 링크도 복사할 수 있어요.
+3. **All**(전체) 탭에서 문서 목록과 각 문서의 상태를 확인하세요. 이 탭에서는 문서를 다운로드하고, 편집기에서 원본을 볼 수 있어요. 발송된 문서는 링크도 복사할 수 있어요.
 
    ![전체 탭의 문서 목록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155026788667/original/jPEupaOx9i1yept2KUJONvycibwbLOvXjg.jpeg?1716996025)
 

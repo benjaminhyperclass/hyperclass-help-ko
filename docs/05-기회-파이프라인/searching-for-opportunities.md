@@ -10,7 +10,7 @@
 
 ## 1단계: 기회 관리 화면 열기
 
-1. 하이퍼클래스에 로그인한 뒤 서브 계정을 엽니다.
+1. 하이퍼클래스에 로그인한 뒤 서브 계정을 여세요.
 2. 왼쪽 메뉴에서 **기회 관리**(Opportunities)를 선택하세요.
 
 ![기회 관리 화면으로 이동하는 왼쪽 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155021427877/original/pHaxiq16lJCxkIQKDac3zIwACAvtbBFZ6Q.png?1708707911)

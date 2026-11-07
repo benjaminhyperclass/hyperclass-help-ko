@@ -40,10 +40,10 @@ Advanced Builder는 자동화를 만드는 완전한 시각형 자유 캔버스�
 
 Stats View를 사용하려면 다음 순서로 진행하세요.
 
-1. Advanced Builder에서 워크플로우를 엽니다.
-2. **Stats Mode**를 켭니다.
-3. 트리거나 트리거에 표시된 통계 중 하나를 선택합니다.
-4. **Attempted**(시도됨), **Matched**(일치됨), **Unmatched**(일치하지 않음) 등록 결과를 확인합니다.
+1. Advanced Builder에서 워크플로우를 여세요.
+2. **Stats Mode**를 켜세요.
+3. 트리거나 트리거에 표시된 통계 중 하나를 선택하세요.
+4. **Attempted**(시도됨), **Matched**(일치됨), **Unmatched**(일치하지 않음) 등록 결과를 확인하세요.
 
 ![Stats View에서 트리거 통계를 확인하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155076677185/original/JVfuhVn41VeAXURlhr6vgP0p69mNKwWgug.png?1784803303)
 
@@ -79,9 +79,9 @@ Stats View를 켜 둔 동안에는 워크플로우를 편집할 수 없어요. �
 
 ### 스텝 추가하고 연결하기
 
-- **Triggers & Actions**(트리거 및 액션) 패널을 엽니다.
+- **Triggers & Actions**(트리거 및 액션) 패널을 여세요.
 - 패널에서 설정하거나, 항목을 캔버스로 바로 끌어다 놓습니다.
-- 커넥터 핸들(또는 **+** 아이콘)에서 끌어 노드를 연결합니다.
+- 커넥터 핸들(또는 **+** 아이콘)에서 끌어 노드를 연결하세요.
 
 ![캔버스에서 스텝을 추가하고 연결하는 모습](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055989412/original/neH1lwsEiNitnKprmoJTFVi9jfqESgVFFw.gif?1760459760)
 
@@ -127,7 +127,7 @@ Stats View를 켜 둔 동안에는 워크플로우를 편집할 수 없어요. �
 
 순서대로 이어지지 않는 브랜치를 만들 수 있어요. 한 캔버스에서 여러 트리거나 결과를 다룰 때 유용해요.
 
-- 캔버스 어디에든 액션으로 이루어진 독립 그룹을 만듭니다.
+- 캔버스 어디에든 액션으로 이루어진 독립 그룹을 만드세요.
 - **Go-To** 연결로 트리거를 붙이면 그 브랜치에서 시작해요.
 - 각 브랜치는 같은 워크플로우 안에서 독립적으로 실행돼요.
 
@@ -159,10 +159,10 @@ Advanced Builder에서 병렬 브랜치가 여러 개인 워크플로우는 **De
 
 **Default Path 지정하기**
 
-1. Advanced Builder에서 병렬 브랜치가 여러 개인 워크플로우를 엽니다.
-2. 기본 경로로 쓸 브랜치의 첫 번째 액션에서 브랜치 아이콘을 클릭합니다.
-3. 그 브랜치를 Default Path로 지정합니다.
-4. 워크플로우 테스트를 실행하거나 다른 워크플로우에서 연락처를 등록해 경로를 확인합니다.
+1. Advanced Builder에서 병렬 브랜치가 여러 개인 워크플로우를 여세요.
+2. 기본 경로로 쓸 브랜치의 첫 번째 액션에서 브랜치 아이콘을 클릭하세요.
+3. 그 브랜치를 Default Path로 지정하세요.
+4. 워크플로우 테스트를 실행하거나 다른 워크플로우에서 연락처를 등록해 경로를 확인하세요.
 
 **예시**
 
@@ -174,8 +174,8 @@ Advanced Builder에서 병렬 브랜치가 여러 개인 워크플로우는 **De
 
 테스트할 때 액션이나 조건을 삭제하거나 다시 연결하지 않고도 꺼 둘 수 있어요.
 
-- **Disable**(비활성화): 노드에 마우스를 올리고 **pause**(일시정지)를 클릭합니다.
-- **Enable**(활성화): 다시 마우스를 올리고 **play**(재생)를 클릭합니다.
+- **Disable**(비활성화): 노드에 마우스를 올리고 **pause**(일시정지)를 클릭하세요.
+- **Enable**(활성화): 다시 마우스를 올리고 **play**(재생)를 클릭하세요.
 - 실행 방식: 비활성화된 노드는 건너뛰어요. 연결은 그대로 유지돼요.
 
 ![노드를 비활성화하고 활성화하는 모습](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155069380308/original/pIAzyiTju06bN5sLZiyBuWJjv48rI_8vQQ.gif?1776429288)
@@ -186,8 +186,8 @@ Advanced Builder에서 병렬 브랜치가 여러 개인 워크플로우는 **De
 
 팀원이나 나중의 나를 위해 메모로 로직을 설명해 두세요.
 
-- 왼쪽 사이드바에서 메모를 추가합니다.
-- 색상과 스타일을 고른 뒤 내용을 입력합니다.
+- 왼쪽 사이드바에서 메모를 추가하세요.
+- 색상과 스타일을 고른 뒤 내용을 입력하세요.
 - 메모에는 이미지와 링크를 넣을 수 있어요.
 
 ![캔버스에 스티커 메모를 추가한 모습](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055990171/original/lWesgzRmMXSAmj5Roh_xnlzy2AwJRdhL0w.png?1760460252)
@@ -224,8 +224,8 @@ Advanced Builder에서 병렬 브랜치가 여러 개인 워크플로우는 **De
 
 빌더를 벗어나지 않고 다른 워크플로우로 이동할 수 있어요.
 
-- 왼쪽 사이드바에서 **Workflow Switcher**를 엽니다.
-- 최근 워크플로우를 보거나 이름·태그로 검색합니다.
+- 왼쪽 사이드바에서 **Workflow Switcher**를 여세요.
+- 최근 워크플로우를 보거나 이름·태그로 검색하세요.
 - 결과를 클릭하면 새 탭에서 열려요. 지금 작업 중인 캔버스는 그대로 열려 있어요.
 
 ![Workflow Switcher를 여는 위치](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055755871/original/Dho5NNvnSv5K45y8vi4bKnclX5f8umMTFg.jpeg?1760134184)

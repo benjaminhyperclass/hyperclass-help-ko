@@ -8,6 +8,10 @@
 
 Google Ads 위젯을 쓰면 플랫폼을 오가지 않고 하이퍼클래스 안에서 Google Ads 성과를 볼 수 있어요. 서브 계정 **대시보드**와 **사용자 지정 리포트**에 광고비, 클릭, 노출, 전환, 캠페인별 성과가 한곳에 모여서, 에이전시와 고객사가 함께 현황을 확인할 수 있어요.
 
+{% hint style="info" %}
+문서에 나온 금액(달러)과 요금제 이름은 참고용이에요. 하이퍼클래스에서 실제로 적용되는 요금은 [요금제 안내](../../00-자주묻는질문/pricing-plans.md)와 [AI·SMS·음성 사용료](../../00-자주묻는질문/usage-costs.md)를 확인하세요.
+{% endhint %}
+
 ![Google Ads 위젯이 표시된 대시보드](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155075993384/original/gn6R2rV1F1QBzn4xyESuaHG4YC7KcM3BuQ.png?1784047432)
 
 ## Google Ads 위젯이란?

@@ -24,20 +24,20 @@
 
 #### 그룹 캘린더에서 배정된 사용자의 '새 예약 요청' 비활성화하기
 
-1. **설정 > 캘린더 설정**을 엽니다.
-2. 해당 캘린더를 엽니다.
-3. **3. Confirmation**(3. 확인) 탭을 클릭합니다.
-4. 저장합니다.
+1. **설정 > 캘린더 설정**을 여세요.
+2. 해당 캘린더를 여세요.
+3. **3. Confirmation**(3. 확인) 탭을 클릭하세요.
+4. 저장해요.
 
 ![그룹 캘린더에서 새 예약 요청 비활성화](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48252827089/original/4raiJ9DfsyCZUproWQAFBU8qdbUXaC_Rsg.png?1663941035)
 
 #### 미배정 캘린더에서 '새 예약 요청' 비활성화하기
 
-1. **설정 > 캘린더 설정**을 엽니다.
-2. 해당 캘린더를 엽니다.
-3. **3. Confirmation** 탭을 클릭합니다.
-4. 이메일 주소를 제거합니다.
-5. 저장합니다.
+1. **설정 > 캘린더 설정**을 여세요.
+2. 해당 캘린더를 여세요.
+3. **3. Confirmation** 탭을 클릭하세요.
+4. 이메일 주소를 제거해요.
+5. 저장해요.
 
 ![미배정 캘린더의 확인 탭에서 이메일 제거](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48252827085/original/kfcgFMaRBedVPmRfd5hoeEZnQrEu377X3g.png?1663941034)
 

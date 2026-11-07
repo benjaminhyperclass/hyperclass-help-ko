@@ -71,19 +71,19 @@ AI 스튜디오 사이트는 대부분 싱글 페이지 애플리케이션(SPA)�
 
 AI 스튜디오 프로젝트 안에서 다음 순서로 진행하세요.
 
-1. 설정할 AI 스튜디오 프로젝트를 엽니다.
-2. 빌더 상단에서 **더보기**를 클릭한 다음, 더보기 패널에서 **SEO & AI search**(SEO 및 AI 검색)를 엽니다.
+1. 설정할 AI 스튜디오 프로젝트를 여세요.
+2. 빌더 상단에서 **더보기**를 클릭한 다음, 더보기 패널에서 **SEO & AI search**(SEO 및 AI 검색)를 여세요.
 
    ![더보기 패널의 SEO & AI search 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155079917962/original/Jx2xQbkhl-JPN8Zq9WIkCF5g3d4x-GFjow.png?1788355686)
-3. 프로젝트가 게시되어 있고, 사용자 지정 도메인이 연결되어 있고, 그 도메인이 기본 도메인으로 설정되어 있는지 확인합니다.
+3. 프로젝트가 게시되어 있고, 사용자 지정 도메인이 연결되어 있고, 그 도메인이 기본 도메인으로 설정되어 있는지 확인하세요.
 
    AI 스튜디오 프로젝트 게시 방법은 [AI 스튜디오 프로젝트 게시하기](ai-studio-in-hyperclass.md)에서 확인하세요.
 
    ![게시 및 도메인 연결 상태 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155069332146/original/3vcUYZb42nAW25K7dqMbIshS6ANXokgZJQ.png?1776366016)
-4. **활성화**를 클릭해 **Advanced SEO Support**를 켭니다.
+4. **활성화**를 클릭해 **Advanced SEO Support**를 켜세요.
 
    ![활성화 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155069332136/original/IJ6ImAL5yipWf8xBvPzzG9axVF6naCvvfQ.png?1776365981)
-5. **Advanced SEO Support** 토글이 보라색으로 바뀌었는지 확인합니다. 그런 다음 프로젝트를 다시 게시하세요. 그래야 최신 렌더링 결과를 지원되는 봇이 받을 수 있어요.
+5. **Advanced SEO Support** 토글이 보라색으로 바뀌었는지 확인하세요. 그런 다음 프로젝트를 다시 게시하세요. 그래야 최신 렌더링 결과를 지원되는 봇이 받을 수 있어요.
 
    ![보라색으로 켜진 토글](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155069332124/original/bwwtDtzP8lL5-ZkxsOrnH4_OVj16X50HRA.png?1776365958)
 
@@ -97,21 +97,21 @@ AI 스튜디오 프로젝트 안에서 다음 순서로 진행하세요.
 
 소셜 미디어와 링크 미리보기를 만드는 방법은 다음과 같아요.
 
-1. 업데이트할 AI 스튜디오 프로젝트를 엽니다.
-2. 빌더 상단에서 **더보기**를 클릭한 다음 **SEO & AI search**를 엽니다.
+1. 업데이트할 AI 스튜디오 프로젝트를 여세요.
+2. 빌더 상단에서 **더보기**를 클릭한 다음 **SEO & AI search**를 여세요.
 
    ![더보기 패널에서 SEO & AI search 열기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155079918427/original/nMre5csDOlqLBug2cUOs-4n1Q9dYu_KNzg.png?1788355885)
-3. **Improve social preview content**를 찾아 **Copy prompt**를 클릭합니다.
+3. **Improve social preview content**를 찾아 **Copy prompt**를 클릭하세요.
 
    ![Improve social preview content의 Copy prompt 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155079918507/original/aWwzBsRfTILM0fsAxPBuyTTJYDzmiXQ4Zg.png?1788355914)
-4. 복사한 프롬프트를 AI 스튜디오 채팅에 붙여넣습니다.
+4. 복사한 프롬프트를 AI 스튜디오 채팅에 붙여넣으세요.
 
    ![AI 스튜디오 채팅에 프롬프트 붙여넣기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155069335531/original/PfYQEObBtubtMLq-VIe1x6YK6jzokMkhzQ.png?1776372507)
-5. 빌더에 나온 업데이트 요약을 확인한 다음, 프로젝트를 게시해 변경 사항을 적용합니다.
+5. 빌더에 나온 업데이트 요약을 확인한 다음, 프로젝트를 게시해 변경 사항을 적용하세요.
 
    ![업데이트 요약 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155069335730/original/DguwRcIw0eFaf9-_piaigDZ5khr8Xg8WQQ.png?1776373017)
 6. 아래 방법으로 제대로 적용됐는지 확인하세요.
-   - 실제 URL을 Facebook, Twitter, LinkedIn, WhatsApp, Slack, Discord 같은 지원 플랫폼에 공유합니다. 미리보기에 원하는 제목, 설명, Open Graph 이미지가 나오는지 확인하세요.
+   - 실제 URL을 Facebook, Twitter, LinkedIn, WhatsApp, Slack, Discord 같은 지원 플랫폼에 공유해요. 미리보기에 원하는 제목, 설명, Open Graph 이미지가 나오는지 확인하세요.
    - [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) 또는 [Twitter Card Validator](https://cards-dev.twitter.com/validator)로 Open Graph 태그가 제대로 제공되는지 확인하세요.
 
 ---
@@ -124,20 +124,20 @@ AI 스튜디오 프로젝트 안에서 다음 순서로 진행하세요.
 
 사이트맵을 생성하는 방법은 다음과 같아요.
 
-1. 업데이트할 AI 스튜디오 프로젝트를 엽니다.
-2. 빌더 상단에서 **더보기**를 클릭한 다음 **SEO & AI search**를 엽니다.
+1. 업데이트할 AI 스튜디오 프로젝트를 여세요.
+2. 빌더 상단에서 **더보기**를 클릭한 다음 **SEO & AI search**를 여세요.
 
    ![더보기 패널에서 SEO & AI search 열기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155079918693/original/e5fIvAe1HlX4qA_AWKmvZsyVArwwRHrRcA.jpeg?1788355982)
-3. **Generate sitemap**을 찾아 **Copy prompt**를 클릭합니다.
+3. **Generate sitemap**을 찾아 **Copy prompt**를 클릭하세요.
 
    ![Generate sitemap의 Copy prompt 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155069332162/original/ETkb4VGmYgZ5_niWHwrgfTqBh33hY5M7OA.png?1776366055)
-4. 복사한 프롬프트를 AI 스튜디오 채팅에 붙여넣습니다.
+4. 복사한 프롬프트를 AI 스튜디오 채팅에 붙여넣으세요.
 
    ![AI 스튜디오 채팅에 프롬프트 붙여넣기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155069335739/original/H765GV75hozWe6QqsIDj65ViWVSasPdHcA.png?1776373064)
-5. 빌더에 나온 업데이트 요약을 확인한 다음, 프로젝트를 게시해 변경 사항을 적용합니다. **상세 정보**를 클릭하면 사이트맵을 볼 수 있어요.
+5. 빌더에 나온 업데이트 요약을 확인한 다음, 프로젝트를 게시해 변경 사항을 적용하세요. **상세 정보**를 클릭하면 사이트맵을 볼 수 있어요.
 
    ![상세 정보에서 사이트맵 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155069335827/original/98shH1SJJWIus2bAC1SvgqF39h0mgkeTEw.png?1776373260)
-6. 사이트맵을 Google Search Console에 제출합니다. Google이 URL을 찾고 사이트맵 처리 상태를 확인하는 데 도움이 돼요.
+6. 사이트맵을 Google Search Console에 제출해요. Google이 URL을 찾고 사이트맵 처리 상태를 확인하는 데 도움이 돼요.
 
    ![Google Search Console에 사이트맵 제출](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155069335797/original/Wd88q0mIPDw939R8w8tQTAsl9x7Eb7FIVQ.png?1776373179)
 

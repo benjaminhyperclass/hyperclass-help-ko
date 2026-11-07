@@ -46,7 +46,7 @@
 
     - 기본 도메인
     - 선택한 추가 확장자
-13. **"I agree to terms and conditions."**(이용약관에 동의합니다.) 체크박스를 선택하세요.
+13. **"I agree to terms and conditions."**(이용약관에 동의해요.) 체크박스를 선택하세요.
 14. **Pay $X.XX**(X.XX달러 결제)를 클릭하면 도메인과 선택한 확장자의 구매가 완료돼요.
 
     ![도메인과 추가 확장자 구매 과정 녹화 화면](https://jumpshare.com/share/Dh1i0jqF4dQINib23FPI+/GIF+Recording+2025-08-18+at+11.02.56+PM.gif)

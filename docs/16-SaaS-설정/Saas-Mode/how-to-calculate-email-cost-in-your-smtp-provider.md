@@ -8,6 +8,10 @@
 
 사용 중인 SMTP 서비스의 요금제로 이메일 1건당 비용을 계산하는 방법을 안내해요. 어떤 이메일 서비스를 써야 할지 고르는 기준도 함께 정리했어요.
 
+{% hint style="info" %}
+문서에 나온 금액(달러)과 요금제 이름은 참고용이에요. 하이퍼클래스에서 실제로 적용되는 요금은 [요금제 안내](../../00-자주묻는질문/pricing-plans.md)와 [AI·SMS·음성 사용료](../../00-자주묻는질문/usage-costs.md)를 확인하세요.
+{% endhint %}
+
 ![SMTP 서비스 요금제 화면 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48120436123/original/Tw23HUiCJ8NkoaGoLo4mF2wupkmzxD99JQ.png?1626186619)
 
 ## 이메일 비용 계산하기

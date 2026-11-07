@@ -74,7 +74,7 @@
 
 ![서비스 지역 밖 예약 처리 방식 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084162793/original/sU8m_VLv1pjlvSzG_A7bfZsYcy4dKPnsnQ.jpg?1792999511)
 
-서비스 지역 밖의 주소로 작업을 만들면 **Outside your service area. This job will be flagged for review.**(서비스 지역 밖입니다. 이 작업은 검토 대상으로 표시됩니다.)라는 경고가 나와요. 작업에는 어느 서비스 지역에서 서비스하는지도 함께 표시돼요.
+서비스 지역 밖의 주소로 작업을 만들면 **Outside your service area. This job will be flagged for review.**(서비스 지역 밖이에요. 이 작업은 검토 대상으로 표시돼요.)라는 경고가 나와요. 작업에는 어느 서비스 지역에서 서비스하는지도 함께 표시돼요.
 
 ## 서비스 지역이 직원에게 미치는 영향
 

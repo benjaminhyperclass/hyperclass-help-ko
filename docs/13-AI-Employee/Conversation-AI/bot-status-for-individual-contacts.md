@@ -54,19 +54,19 @@
 
 ## 연락처별 봇 상태 바꾸기
 
-1. **대화**로 이동해 상태를 바꿀 연락처의 대화를 엽니다.
+1. **대화**로 이동해 상태를 바꿀 연락처의 대화를 여세요.
 
    ![대화 목록에서 연락처 대화 열기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155072346573/original/047wNX6NoR0C1u1Ovp4dlf5jHE5ac_4NDw.png?1779914424)
-2. 메시지 작성 영역에서 대화 AI 상태 아이콘을 찾습니다. 아이콘으로 대화 AI가 지금 활성, 비활성, 슬립 중 어느 상태인지 알 수 있어요.
+2. 메시지 작성 영역에서 대화 AI 상태 아이콘을 찾으세요. 아이콘으로 대화 AI가 지금 활성, 비활성, 슬립 중 어느 상태인지 알 수 있어요.
 
    ![메시지 작성 영역의 대화 AI 상태 아이콘](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155072346589/original/n-pROkwIhfBXX09pu6bZmwZ_kO75FQzmHw.png?1779914463)
-3. 대화 AI 상태 아이콘을 클릭하고 원하는 상태를 선택합니다.
+3. 대화 AI 상태 아이콘을 클릭하고 원하는 상태를 선택하세요.
 
    - **활성**: 설정한 모드에 따라 대화 AI가 답하거나 답장을 제안해요.
    - **비활성**: 해당 연락처에서 대화 AI를 꺼요. 대화 AI를 잠시만 멈추는 **Sleep/Snooze**를 쓰려면 **비활성**을 선택하세요.
 
    ![대화 AI 상태 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155072346598/original/fU2g_VLmJHgxFy31CdoCioucVXvdoycl0Q.png?1779914500)
-4. 상태를 **Sleep/Snooze**로 설정하려면 **비활성**을 선택합니다. 그런 다음 **Reactive bot after**(다음 시간 뒤 봇 다시 켜기)를 체크하고, 분·시간·일 중 원하는 기간을 선택해 대화 AI가 다시 켜질 시점을 정하세요.
+4. 상태를 **Sleep/Snooze**로 설정하려면 **비활성**을 선택하세요. 그런 다음 **Reactive bot after**(다음 시간 뒤 봇 다시 켜기)를 체크하고, 분·시간·일 중 원하는 기간을 선택해 대화 AI가 다시 켜질 시점을 정하세요.
 
    봇을 직접 다시 켜기 전까지 비활성 상태로 두려면 자동 재활성화 체크를 비워 두세요.
 

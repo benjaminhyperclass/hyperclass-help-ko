@@ -63,7 +63,7 @@ AI에게 문의 컴퓨터는 사용할 수 있는 서브 계정에서만 쓸 수
 1. **컴퓨터** 채팅이 데스크톱 미리보기와 함께 열려요.
 2. 미리보기에 **컴퓨터가 꺼져 있습니다**라고 나오면 **켜기**를 클릭해 컴퓨터를 시작하세요.
 
-![컴퓨터가 꺼져 있습니다 화면에서 켜기 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084304147/original/mKGyBK05doWeje_kYO6xyT0GjHigKIgDDA.png?1793103219)
+![컴퓨터가 꺼져 있어요 화면에서 켜기 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084304147/original/mKGyBK05doWeje_kYO6xyT0GjHigKIgDDA.png?1793103219)
 
 ### 3단계: 작업 입력하기
 

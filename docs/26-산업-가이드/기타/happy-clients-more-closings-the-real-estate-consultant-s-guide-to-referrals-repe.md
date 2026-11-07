@@ -132,7 +132,7 @@
 예시 메시지:
 "집을 사거나 팔려는 분이 주변에 계신가요? 저를 소개해 주세요. 감사의 마음으로 250달러 계약 크레딧이나 원하는 기프트 카드를 드릴게요!"
 
-#### [자동 추천 프로그램을 설정하는 방법](../Affiliates-Program/affiliate-referral-page-leads-customers-cancelled-statuses.md)
+#### 자동 추천 프로그램을 설정하는 방법
 
 ---
 

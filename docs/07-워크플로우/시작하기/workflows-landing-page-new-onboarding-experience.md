@@ -75,10 +75,10 @@
 
 ### 사용 방법
 
-1. 워크플로우에서 **Triggers**(트리거) 또는 **Actions**(액션) 사이드바를 엽니다.
+1. 워크플로우에서 **Triggers**(트리거) 또는 **Actions**(액션) 사이드바를 여세요.
 2. 추가할 트리거나 액션을 누른 채로 캔버스까지 끌어옵니다.
-3. 놓을 수 있는 위치(**+** 표시 또는 기존 단계 사이)에 마우스를 올립니다. 강조된 자리 표시가 단계가 들어갈 위치를 보여 줘요.
-4. 항목을 놓고 설정한 다음 **Save**(저장)를 눌러 워크플로우에 추가합니다.
+3. 놓을 수 있는 위치(**+** 표시 또는 기존 단계 사이)에 마우스를 올리세요. 강조된 자리 표시가 단계가 들어갈 위치를 보여 줘요.
+4. 항목을 놓고 설정한 다음 **Save**(저장)를 눌러 워크플로우에 추가하세요.
 
 ![트리거를 캔버스로 끌어다 놓는 모습](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064712764/original/OXfbIYzBFxXo0ngPp2k3FnOXM0JGPQkz7A.gif?1770826719)
 
@@ -94,11 +94,11 @@
 
 ### 에이전시 전체(모든 서브 계정 포함)에서 끄기
 
-**설정 > 실험실**로 이동해서 **Workflow AI Builder**를 끕니다.
+**설정 > 실험실**로 이동해서 **Workflow AI Builder**를 꺼요.
 
 ### 특정 서브 계정에서만 끄기
 
-**자동화 > 글로벌 워크플로우 설정 > Workflow AI**(워크플로우 AI)로 이동해서 **AI 빌더**를 끕니다.
+**자동화 > 글로벌 워크플로우 설정 > Workflow AI**(워크플로우 AI)로 이동해서 **AI 빌더**를 꺼요.
 
 ![글로벌 워크플로우 설정에서 AI 빌더를 끄는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155071093803/original/4gIwSQd6Mf19iYzJgl1X4URN46hpi5_8gQ.png?1778570385)
 
@@ -128,5 +128,5 @@
 
 AI 빌더는 두 가지 단위에서 끌 수 있어요.
 
-- 에이전시: **설정 > 실험실**에서 **Workflow AI Builder**를 끕니다.
-- 서브 계정: **자동화 > 글로벌 워크플로우 설정 > Workflow AI**에서 **AI 빌더**를 끕니다.
+- 에이전시: **설정 > 실험실**에서 **Workflow AI Builder**를 끄세요.
+- 서브 계정: **자동화 > 글로벌 워크플로우 설정 > Workflow AI**에서 **AI 빌더**를 끄세요.

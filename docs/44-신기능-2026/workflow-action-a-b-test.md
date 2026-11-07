@@ -47,7 +47,7 @@ A/B 테스트를 쓰면 자동 후속 시퀀스를 데이터에 근거해 정할
 
 | 기준 | 설명 |
 | --- | --- |
-| **Goal Event**(목표 이벤트) | 이벤트로 전환을 측정해요. 이메일 활동(**Email activity**), 트리거 링크 클릭(**Clicked a trigger link**), **Appointment status**(예약 상태), **Form submitted**(폼이 제출되었습니다), **Payment received**(결제 완료), 인보이스 결제(**Invoice paid**) 등을 쓸 수 있어요. 안내에 따라 해당 항목을 선택하세요. |
+| **Goal Event**(목표 이벤트) | 이벤트로 전환을 측정해요. 이메일 활동(**Email activity**), 트리거 링크 클릭(**Clicked a trigger link**), **Appointment status**(예약 상태), **Form submitted**(폼이 제출되었어요), **Payment received**(결제 완료), 인보이스 결제(**Invoice paid**) 등을 쓸 수 있어요. 안내에 따라 해당 항목을 선택하세요. |
 | **Custom Condition**(사용자 지정 조건) | 리드 자격 상태처럼 연락처 필드나 커스텀 필드 조건으로 전환을 정의해요. |
 
 ![Winning Criteria 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084005199/original/ltK6xHTi_c7ayie4pouMmq5h6KcqGJBv5Q.png?1792696853)

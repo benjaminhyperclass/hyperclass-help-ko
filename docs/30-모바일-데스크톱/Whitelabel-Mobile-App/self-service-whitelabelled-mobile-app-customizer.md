@@ -99,16 +99,16 @@
 
 앱을 만드는 단계부터 실제 출시까지 확인 지점을 따라 진행해요. 순서대로 마치면 심사 문제를 줄이고 승인을 더 빨리 받을 수 있어요.
 
-1. 커스터마이저를 엽니다. 에이전시 화면으로 이동해 **모바일 앱**을 클릭하세요.
+1. 커스터마이저를 여세요. 에이전시 화면으로 이동해 **모바일 앱**을 클릭하세요.
 
    ![모바일 앱 메뉴 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155060104847/original/NdxVcMiYG50zhyJCbxyy8YvBbAbh1X8iHw.png?1765191363)
-2. 앱을 선택합니다. **Selected App icon**(선택한 앱 아이콘)을 클릭하면 앱에 대한 설명을 보고 다른 앱 버전으로 바꿀 수 있어요. 그다음 **App Name**(앱 이름)과 **Domain Name**(도메인 이름)을 입력하세요. 고유한 패키지/번들 식별자가 자동으로 만들어져요.
+2. 앱을 선택하세요. **Selected App icon**(선택한 앱 아이콘)을 클릭하면 앱에 대한 설명을 보고 다른 앱 버전으로 바꿀 수 있어요. 그다음 **App Name**(앱 이름)과 **Domain Name**(도메인 이름)을 입력하세요. 고유한 패키지/번들 식별자가 자동으로 만들어져요.
 
    ![앱 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155060105080/original/S393LOGtTVFw6TlBcxTW_MFgfaVyrKga2A.png?1765191433)![앱 이름과 도메인 이름 입력 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155060105505/original/pIVN6mC59AfjVfJrgc_e2nOSAoffhHGi2g.jpeg?1765191607)
-3. 앱을 브랜딩합니다. **사용자 지정 > 브랜딩**을 클릭하세요. **브랜딩** 페이지에서 앱 아이콘, 로그인 로고, 스플래시 로고(라이트/다크)를 올려요.
+3. 앱을 브랜딩해요. **사용자 지정 > 브랜딩**을 클릭하세요. **브랜딩** 페이지에서 앱 아이콘, 로그인 로고, 스플래시 로고(라이트/다크)를 올려요.
 
    ![브랜딩 페이지 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155062057933/original/a9EW9ziZAUUYNgHAM-v3F3TGeSWsk5gJ6w.png?1767727905)
-4. **사용자 지정**에서 앱 화면을 설정합니다.
+4. **사용자 지정**에서 앱 화면을 설정하세요.
 
    **A. Login Screen**(로그인 화면)
 
@@ -131,26 +131,26 @@
    {% endhint %}
 
    ![사용자 지정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155062058418/original/NDo0JHosyylEOQ7II1jFxNDsn_g-1pv3-Q.png?1767728717)
-5. **Distribution > Profile**(배포 > 프로필, 스토어 등록 정보)에서 앱 정보를 입력합니다.
+5. **Distribution > Profile**(배포 > 프로필, 스토어 등록 정보)에서 앱 정보를 입력하세요.
 
    앱 이름과 설명, **지원 이메일**과 **Support URL**(지원 URL)을 입력하세요.
 
    **개인정보처리방침 URL**과 **Terms & Conditions URL**(이용약관 URL)도 추가하세요.
 
    ![스토어 등록 정보 입력 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155062058716/original/51embLkW31rUunyVcaSvM0m6Wh5kCbsegw.png?1767729053)
-6. **Distribution > Channels**(배포 > 채널, 스토어 연결)에서 스토어를 연결합니다.
+6. **Distribution > Channels**(배포 > 채널, 스토어 연결)에서 스토어를 연결하세요.
 
    마법사를 따라 App Store Connect와 Play Console을 연결하세요.
 
    두 곳 모두 **Connected**(연결됨, 초록색)로 표시되는지 확인하세요.
 
    ![스토어 연결 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155062058759/original/d88VQkpIZjC0pezZhT8Oxfb-gNpGCr9Big.png?1767729141)
-7. **구독**에서 요금제를 선택합니다.
+7. **구독**에서 요금제를 선택하세요.
 
    빌드와 배포를 켜려면 월간(Monthly) 또는 분기(Quarterly) 요금제를 고르세요.
 
    ![구독 요금제 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155062058771/original/syieaYBIJ214MLsTjN8RhGk0UQyMdOq2_w.png?1767729174)
-8. **Build & Release**(빌드 및 배포)를 진행합니다.
+8. **Build & Release**(빌드 및 배포)를 진행해요.
 
    **Create App**(앱 만들기)은 처음 한 번만 하면 돼요.
 

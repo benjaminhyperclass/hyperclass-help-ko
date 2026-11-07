@@ -78,11 +78,11 @@
 
 예약을 열면 미팅 정보와 지금 할 수 있는 작업이 한 화면에 보여요. 취소와 일정 변경 옵션은 캘린더에 설정된 정책상 해당 예약이 아직 변경·취소 가능할 때만 나타나요.
 
-1. 클라이언트 포탈 메뉴에서 **예약**을 엽니다.
-2. 확인할 예약을 찾습니다.
-3. **상세 정보**를 클릭합니다.
-4. 예약 정보를 확인합니다.
-5. 가능하면 **취소** 또는 **일정 변경**을 선택합니다.
+1. 클라이언트 포탈 메뉴에서 **예약**을 여세요.
+2. 확인할 예약을 찾으세요.
+3. **상세 정보**를 클릭하세요.
+4. 예약 정보를 확인하세요.
+5. 가능하면 **취소** 또는 **일정 변경**을 선택하세요.
 
 ![예약 세부 정보 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155080525282/original/0cGLDz1m9ov8FthhQR4r6J4Xm9409PAvdg.png?1788971421)
 
@@ -92,12 +92,12 @@
 
 클라이언트는 여러분이 열어 둔 캘린더 중에서 하나를 고르고, 예약 가능한 날짜와 시간을 선택할 수 있어요. 포탈을 벗어날 필요가 없어요. 기존 연락처 정보는 가능한 범위에서 자동으로 채워지고, 예약할 수 있는 날짜와 시간은 선택한 캘린더가 계속 결정해요.
 
-1. 클라이언트 포탈에서 **예약**을 엽니다.
-2. **예약하기**를 클릭합니다.
-3. 예약 가능한 캘린더를 선택합니다.
-4. 예약 가능한 날짜를 선택합니다.
-5. 예약 가능한 시간을 고릅니다.
-6. 예약을 완료합니다.
+1. 클라이언트 포탈에서 **예약**을 여세요.
+2. **예약하기**를 클릭하세요.
+3. 예약 가능한 캘린더를 선택하세요.
+4. 예약 가능한 날짜를 선택하세요.
+5. 예약 가능한 시간을 고르세요.
+6. 예약을 완료하세요.
 
 ![클라이언트 포탈 예약 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155080525340/original/Z0DyFwUzuPOCTxVAfPeXD1S7Z8DeRPbJxA.png?1788971442)
 
@@ -128,19 +128,19 @@
 
 클라이언트가 캘린더를 고르려면 먼저 캘린더마다 클라이언트 포탈 예약을 직접 켜야 해요. 이렇게 하면 클라이언트 포탈 사용자에게 알맞은 캘린더만 열고, 나머지 캘린더는 이 예약 경로로 쓸 수 없게 둘 수 있어요.
 
-1. **캘린더**로 이동해 **캘린더 설정**을 엽니다.
+1. **캘린더**로 이동해 **캘린더 설정**을 여세요.
 
 ![캘린더 설정 열기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155080525360/original/4Hlu9qVu7dSx77OJiiSz-RvgWFTC-6XgbA.gif?1788971461)
 
-2. **미팅 > 캘린더**에서 열어 둘 캘린더를 찾습니다.
-3. **캘린더 편집** 아이콘을 클릭합니다.
+2. **미팅 > 캘린더**에서 열어 둘 캘린더를 찾으세요.
+3. **캘린더 편집** 아이콘을 클릭하세요.
 
 ![캘린더 편집 아이콘](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155080525458/original/zcXDyWkEXx7ZFxkRVdyCFFJVft_HPAINZQ.png?1788971548)
 
 4. 캘린더 편집 화면에서 **고급 설정**을 펼칩니다.
-5. **Booking channels**(예약 채널)를 선택합니다.
-6. **Client Portal booking**(클라이언트 포탈 예약)을 켭니다.
-7. **변경사항 저장**을 클릭합니다.
+5. **Booking channels**(예약 채널)를 선택하세요.
+6. **Client Portal booking**(클라이언트 포탈 예약)을 켜세요.
+7. **변경사항 저장**을 클릭하세요.
 
 ![클라이언트 포탈 예약 켜기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155080525528/original/lG-JMQVf0wBx0UvHA0frdE19Y7KrTQ3WDw.png?1788971589)
 
@@ -150,16 +150,16 @@
 
 예약 하위 앱을 켜면 클라이언트 포탈 안에 예약 기능이 보여요. **앱 권한**은 서브 계정 단위로 설정돼요. 그래서 선택한 하위 앱 표시 여부는 해당 서브 계정의 클라이언트 포탈을 쓰는 연락처 모두에게 적용돼요.
 
-1. **멤버십**으로 이동합니다.
-2. **클라이언트 포탈**을 엽니다.
-3. **설정**을 선택합니다.
-4. **앱 권한**을 엽니다.
+1. **멤버십**으로 이동하세요.
+2. **클라이언트 포탈**을 여세요.
+3. **설정**을 선택하세요.
+4. **앱 권한**을 여세요.
 
 ![앱 권한 열기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155080525542/original/mnjZJ-E2lap5gbw2NVQ0GtQrcXyXIBOK0A.png?1788971616)
 
-5. 하위 앱 목록에서 **예약**을 찾습니다.
-6. **예약**을 켭니다.
-7. **설정 저장**을 클릭합니다.
+5. 하위 앱 목록에서 **예약**을 찾으세요.
+6. **예약**을 켜세요.
+7. **설정 저장**을 클릭하세요.
 
 ![앱 권한에서 예약 켜기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155080525579/original/hVk_lHQtBAVXmfKv_RUaaUq9spsP5zs9FQ.png?1788971652)
 

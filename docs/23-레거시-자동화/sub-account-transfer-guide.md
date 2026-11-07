@@ -28,7 +28,7 @@
 
 ## 서브 계정을 다른 에이전시로 보내기
 
-**Sub-Account Requestor Form**(서브 계정 요청 폼)에 접근할 수 없거나 이전 과정에서 문제가 생기면 [하이퍼클래스 고객지원에 문의하세요](../20-고객지원/General-Support-Info/24-7-customer-support-options.md).
+**Sub-Account Requestor Form**(서브 계정 요청 폼)에 접근할 수 없거나 이전 과정에서 문제가 생기면 하이퍼클래스 고객지원에 문의하세요.
 
 1. **Agency Level**(에이전시 레벨) > **서브 계정**으로 이동해요. 이전할 서브 계정의 **고객 관리**를 클릭하세요.
 

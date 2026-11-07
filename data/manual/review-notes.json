@@ -730,6 +730,11 @@
  "docs/08-결제/tap-to-pay.md": [
   "검토 필요: 아래 영상에 HighLevel 브랜드가 노출되는지 확인 후 유지 여부 결정"
  ],
+ "docs/08-결제/결제-연동/how-to-build-a-custom-payments-integration-on-the-platform.md": [
+  "검토 필요: 원문의 소개 영상(Loom) 링크는 하이퍼클래스 브랜드가 노출될 수 있어 뺐어요",
+  "검토 필요: 원문에 9.4.3 제목이 두 번 나와 하나로 합쳤고, 원고 작성 중 남은 안내 문장은 뺐어요",
+  "검토 필요: 원문 JSON에서 transactionId 뒤 쉼표가 빠져 있어 추가했어요"
+ ],
  "docs/08-결제/결제-연동/managing-granular-permissions-for-payments.md": [
   "검토 필요: 원문 내용이 서로 다름"
  ],
@@ -893,6 +898,9 @@
  "docs/10-마케팅/Email-Builder-Capabilities/how-to-use-template-library-to-create-branded-review-request-emails.md": [
   "검토 필요: 원문 내용이 서로 다름 (삭제는 영구 제거라고 하면서 복원으로 되살릴 수 있다고 함)",
   "검토 필요: 원문 내용이 서로 다름 (본문에는 새로 만들기 버튼으로 안내하는데 FAQ에는 Create Email로 적혀 있음)"
+ ],
+ "docs/10-마케팅/Email-Builder-Capabilities/how-to-use-the-email-builder-and-its-in-line-editor.md": [
+  "검토 필요: 원문 문장이 \"More on that in\" 에서 끝나 있음"
  ],
  "docs/10-마케팅/Email-Builder-Capabilities/image-element-in-email-builder.md": [
   "검토 필요: 원문 내용이 서로 다름 (이미지 요소 문서에 스페이서 FAQ가 포함되어 있음)"
@@ -1196,6 +1204,11 @@
  "docs/13-AI-Employee/agent-studio-router-tool-ai-conditional-router.md": [
   "검토 필요: 원문 내용이 서로 다름 (같은 질문이 두 번 나오고 답이 서로 다름)",
   "검토 필요: 원문 내용이 서로 다름 (같은 질문이 두 번 나오고 답이 서로 다름)"
+ ],
+ "docs/13-AI-Employee/ai-product-pricing-update.md": [
+  "검토 필요: 원문에서 '두 모델'이라고 했지만 아래 표에는 모델이 5개 있음",
+  "검토 필요: 원문 내용이 서로 다름 (Claude 4.5 Sonnet이 가격 $3.00과 $1.00으로 두 번 나옴)",
+  "검토 필요: 'Workflow AI Builder'는 화면 이름표에 없어 영어 그대로 두었어요"
  ],
  "docs/13-AI-Employee/ai-studio-cloud-pricing.md": [
   "검토 필요: 원문의 '요금 예시' 섹션에 예시 내용이 비어 있음"
@@ -1547,20 +1560,6 @@
  "docs/19-에이전시-뷰/기타/guest-tutorial-pabbly-connect-how-to-integrate-facebook-leads-ads-with-your-sub.md": [
   "검토 필요: 원문 튜토리얼 영상에 HighLevel 브랜드가 노출될 수 있어 영상 링크를 뺐어요. 브랜드 노출이 없는지 확인한 뒤 https://www.youtube.com/embed/wukYJYrz_ZY 링크를 다시 넣을지 결정해 주세요."
  ],
- "docs/20-고객지원/Billing-Support/hyperclass-pricing-guide.md": [
-  "검토 필요: 원문 내용이 서로 다름 (위 표에서는 활성화한 서브 계정당 가격, 여기서는 에이전시 기준 가격으로 적혀 있음)"
- ],
- "docs/20-고객지원/General-Support-Info/24-7-customer-support-options.md": [
-  "검토 필요: 원문의 결제 팀 이메일 주소(billing@ 로 시작, 원 브랜드 도메인 사용)는 화이트라벨 규칙에 따라 제거함. 하이퍼클래스 결제 팀 이메일 주소로 교체 필요",
-  "검토 필요: 원문에는 프리미엄 지원 안내 문서 링크가 있었으나 문서 링크표에 없어 링크를 제거함",
-  "검토 필요: 원문의 공식 웹사이트 주소와 지원 티켓 폼 링크는 화이트라벨 규칙에 따라 제거함. 하이퍼클래스 웹사이트·폼 주소로 교체 필요",
-  "검토 필요: 원문의 지식 베이스·YouTube 채널 링크는 브랜드 노출 또는 문서 링크표에 없어 제거함. 하이퍼클래스 주소로 교체 필요",
-  "검토 필요: 원문의 이벤트·데모·Q&A 링크는 원 브랜드 도메인이라 제거함. 하이퍼클래스 주소로 교체 필요",
-  "검토 필요: 원문의 Facebook 그룹 링크는 원 브랜드 그룹이라 제거함. 하이퍼클래스 그룹 주소로 교체 필요"
- ],
- "docs/20-고객지원/Premium-Support-Upgrade/how-to-upgrade-to-premium-customer-support.md": [
-  "검토 필요: 원문에 앱 내 해지 관련 편집 지시 문장(\"I would also remove any sentence...\")이 섞여 있어 번역에서 제외함"
- ],
  "docs/20-고객지원/Software-Migration-Guides/calendly-to-hyperclass-migration-guide.md": [
   "검토 필요: 원문 내용이 서로 다름"
  ],
@@ -1576,54 +1575,17 @@
  "docs/20-고객지원/managing-course-drip-settings-in-hyperclass.md": [
   "검토 필요: 원문 내용이 서로 다름 (제목과 FAQ는 코스 드립 설정, 본문은 Kajabi 마이그레이션 안내)"
  ],
- "docs/21-어필리에이트/Affiliates-Program/5-ways-to-find-your-first-5-affiliate-referrals.md": [
-  "검토 필요: 원문 내용이 서로 다름 (캠페인 이름이 'Potential Affiliate Nurture'와 'A Potential Affiliate Nurture'로 다르게 쓰여 있음)"
- ],
- "docs/21-어필리에이트/Affiliates-Program/affiliate-referral-page-leads-customers-cancelled-statuses.md": [
-  "검토 필요: 원문 내용이 서로 다름 (카테고리 목록에는 \"Signup\"으로, 아래 제목에는 \"Free / TrialSignup\"으로 적혀 있음)"
- ],
- "docs/21-어필리에이트/Affiliates-Program/become-a-hyperclass-affiliate.md": [
-  "검토 필요: 원문 동영상(https://www.youtube.com/embed/0-yFPQjKWwo)이 하이퍼클래스가 아닌 다른 브랜드를 노출할 수 있어 링크를 뺐어요. 영상을 확인한 뒤 브랜드가 없으면 다시 넣어 주세요."
- ],
- "docs/21-어필리에이트/Affiliates-Program/creating-affiliate-links-from-hyperclass-landing-pages.md": [
-  "검토 필요: 원문 안내 영상이 HighLevel 브랜드를 노출할 수 있어 영상 링크를 뺐어요"
- ],
- "docs/21-어필리에이트/Affiliates-Program/how-can-i-refer-affiliate-customers-to-hyperclass-pro.md": [
-  "검토 필요: 원문 내용이 서로 다름 (문서 상단은 \"활성 체험 100개\", 이 답변은 \"활성 고객 100명 이상\"으로 기준이 다르게 적혀 있음)",
-  "검토 필요: 원문 내용이 서로 다름 (\"즉시 업그레이드\"와 \"1~3 영업일\"이 한 문장에 함께 쓰임)"
- ],
- "docs/21-어필리에이트/Affiliates-Program/how-to-find-your-affiliate-customers-and-commission-in-your-affiliate-portal.md": [
-  "검토 필요: 원문 내용이 서로 다름"
- ],
- "docs/21-어필리에이트/Affiliates-Program/how-to-use-affiliate-portal.md": [
-  "검토 필요: 원문 내용이 서로 다름 (원문에서 'customize link button'과 'Customize Token'을 함께 사용)"
- ],
- "docs/21-어필리에이트/Affiliates-Program/integrishield-affiliate-content-compliance.md": [
-  "검토 필요: 원문 내용이 서로 다름 (두 번째 이메일 주소가 gohgihelvel.com과 gohighlevel.com으로 다르게 적혀 있음)"
- ],
- "docs/21-어필리에이트/Affiliates-Program/my-affiliate-commission-looks-incorrect.md": [
-  "검토 필요: 링크 대상 문서의 제목은 원문에 없어 임의로 적었습니다. 실제 문서 제목에 맞게 확인해 주세요."
- ],
- "docs/21-어필리에이트/how-to-set-up-affiliate-program-postbacks-to-run-automations-firstpromoter-webho.md": [
-  "검토 필요: 원문 내용이 서로 다름 (표의 포스트백 이름과 아래 1~5단계의 포스트백 이름이 달라요)"
- ],
  "docs/22-Eliza/Eliza-Agent-Platform-Onboarding/eliza-agent-platform-settings.md": [
   "검토 필요: 원문 내용이 불완전함"
+ ],
+ "docs/23-레거시-자동화/glossary.md": [
+  "검토 필요: 원문은 알파벳 순서로 정리되어 있으나 Stages, Sub-Account, Survey 항목이 T 앞에 놓여 있음(원문 구조 그대로 유지)"
  ],
  "docs/23-레거시-자동화/how-to-use-custom-fields.md": [
   "검토 필요: 원문에 \"게시 전에 각 필드 아이콘의 정확한 의미를 확인할 것\"이라는 내부 메모가 있음. 아이콘별 의미 확인 후 설명 추가 필요"
  ],
  "docs/23-레거시-자동화/sub-accounts-transfers-bulk-transfer-sub-accounts-to-an-existing-agency.md": [
   "검토 필요: 원문 내용이 서로 다름 (받는 에이전시 안내인데 '발송됨' 탭에서 확인한다고 되어 있음)"
- ],
- "docs/24-대학/hyperclass-How-Toand#39-s/how-to-build-a-double-opt-in-flow.md": [
-  "검토 필요: 원문에 영상 외 본문이 없음. 영상의 브랜드 노출 여부 확인 필요"
- ],
- "docs/24-대학/hyperclass-How-Toand#39-s/how-to-use-custom-values-for-images-in-funnels-and-websites.md": [
-  "검토 필요: 원문에 텍스트 설명 없이 영상만 있음"
- ],
- "docs/24-대학/hyperclass-How-Toand#39-s/hyperclass-how-to-s-build-a-payment-page-to-sign-up-new-clients.md": [
-  "검토 필요: 영상에 하이퍼클래스 외 브랜드(HighLevel)가 노출되는지 확인"
  ],
  "docs/25-애드온-세일즈/Sales-Trainings-and-Case-Studies/prospect-new-clients-with-saas-audits.md": [
   "검토 필요: 원문 첨부 파일(pptx) 링크는 원본 도움말 센터 경로라 제거했어요. 필요하면 파일을 새로 업로드해 링크를 연결하세요."

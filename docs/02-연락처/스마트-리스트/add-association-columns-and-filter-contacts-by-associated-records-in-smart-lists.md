@@ -17,16 +17,16 @@
 
 ## 연결 열 추가하기
 
-1. **연락처 > 스마트 리스트**로 이동해 확인할 리스트를 엽니다.
-2. 표 위의 열 설정 버튼을 누릅니다. 필드 선택 창에서 **Associations**(연결)를 찾습니다.
-3. 표시할 연결 레이블을 각각 선택합니다. 여러 레이블이 같은 객체를 가리켜도 레이블마다 열이 하나씩 추가돼요.
-4. 각 연락처 행에 표시된 연결 레코드 칩을 확인합니다. 칩을 클릭하면 연결된 레코드가 열려요.
+1. **연락처 > 스마트 리스트**로 이동해 확인할 리스트를 여세요.
+2. 표 위의 열 설정 버튼을 누르세요. 필드 선택 창에서 **Associations**(연결)를 찾으세요.
+3. 표시할 연결 레이블을 각각 선택하세요. 여러 레이블이 같은 객체를 가리켜도 레이블마다 열이 하나씩 추가돼요.
+4. 각 연락처 행에 표시된 연결 레코드 칩을 확인하세요. 칩을 클릭하면 연결된 레코드가 열려요.
 
-1단계: 리스트 위의 열 설정 버튼을 눌러 **필드 관리**를 엽니다.
+1단계: 리스트 위의 열 설정 버튼을 눌러 **필드 관리**를 열어요.
 
 ![필드 관리 창을 여는 열 설정 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084196732/original/5vCkcA4YRMY5aq6th7_19x0Rj1td-k14ng.png?1793015077)
 
-2단계: **Associations** 아래에서 표시할 레이블을 선택하고 **적용**을 클릭합니다.
+2단계: **Associations** 아래에서 표시할 레이블을 선택하고 **적용**을 클릭해요.
 
 ![Associations 아래에서 표시할 레이블을 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084196743/original/wwZ5EGggrNXJfqer32HmOOG-izW3rAZuKQ.png?1793015087)
 
@@ -50,25 +50,25 @@
 
 ## 연결된 레코드로 연락처 필터링하기
 
-1. 연락처 목록 위의 **필터**를 열고 필터를 추가합니다.
-2. 확인할 관계의 연결 필드를 선택합니다. 예: 'Owned Pet (Associated Pets)'
-3. **다음 중 하나 포함**, **다음 중 어느 것도 포함하지 않음**, **비어있지 않음**, **비어 있음** 중에서 선택합니다.
-4. **다음 중 하나 포함** 또는 **다음 중 어느 것도 포함하지 않음**을 선택했다면, 레코드 선택기에서 비교할 연결 레코드를 검색해 선택합니다. **비어있지 않음**과 **비어 있음**은 레코드 값을 고르지 않아도 돼요.
-5. 필요하면 다른 조건을 더하고 **적용**을 클릭합니다. 나중에 다시 쓰려면 이 조건을 스마트 리스트로 저장하세요.
+1. 연락처 목록 위의 **필터**를 열고 필터를 추가하세요.
+2. 확인할 관계의 연결 필드를 선택하세요. 예: 'Owned Pet (Associated Pets)'
+3. **다음 중 하나 포함**, **다음 중 어느 것도 포함하지 않음**, **비어있지 않음**, **비어 있음** 중에서 선택하세요.
+4. **다음 중 하나 포함** 또는 **다음 중 어느 것도 포함하지 않음**을 선택했다면, 레코드 선택기에서 비교할 연결 레코드를 검색해 선택하세요. **비어있지 않음**과 **비어 있음**은 레코드 값을 고르지 않아도 돼요.
+5. 필요하면 다른 조건을 더하고 **적용**을 클릭하세요. 나중에 다시 쓰려면 이 조건을 스마트 리스트로 저장하세요.
 
-5단계: 리스트 위의 **필터**를 클릭합니다.
+5단계: 리스트 위의 **필터**를 클릭해요.
 
 ![리스트 위의 필터 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084196766/original/At_irAEB-avF0Mv04_MwpkZuDPJyj_lWUw.png?1793015109)
 
-6단계: 연결 필드를 검색합니다. 각 레이블은 **Associations** 아래에 나와요.
+6단계: 연결 필드를 검색해요. 각 레이블은 **Associations** 아래에 나와요.
 
 ![Associations 아래에서 연결 필드를 검색하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084196774/original/188O2tGTSkt7YvfrchaCShoLcvDwMPtXzQ.png?1793015113)
 
-7단계: 연산자를 선택합니다. **다음 중 하나 포함**, **다음 중 어느 것도 포함하지 않음**, **비어있지 않음**, **비어 있음** 중에서 고를 수 있어요.
+7단계: 연산자를 선택해요. **다음 중 하나 포함**, **다음 중 어느 것도 포함하지 않음**, **비어있지 않음**, **비어 있음** 중에서 고를 수 있어요.
 
 ![필터 연산자를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084196854/original/EgS9H2Tisqj5MUZhvnVyfD_UGC-q0FaS8g.png?1793015136)
 
-8단계: 일치시킬 연결 레코드를 선택하고 **적용**을 클릭합니다.
+8단계: 일치시킬 연결 레코드를 선택하고 **적용**을 클릭해요.
 
 ![연결 레코드를 선택하고 적용을 클릭하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084196860/original/1rlMB8N9jmwxXrwhDM1Nn1fDCda7Y4ebDQ.png?1793015141)
 

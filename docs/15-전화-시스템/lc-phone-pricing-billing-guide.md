@@ -8,6 +8,10 @@
 
 하이퍼클래스 전화 시스템의 전체 요금 구조를 정리한 문서예요. 전화번호 임대, SMS/MMS 메시징, 음성 통화, 통신사 전달 요금, A2P 등록 요금을 다뤄요. 요금은 Twilio 요금과 같아요.
 
+{% hint style="info" %}
+문서에 나온 금액(달러)과 요금제 이름은 참고용이에요. 하이퍼클래스에서 실제로 적용되는 요금은 [요금제 안내](../00-자주묻는질문/pricing-plans.md)와 [AI·SMS·음성 사용료](../00-자주묻는질문/usage-costs.md)를 확인하세요.
+{% endhint %}
+
 모든 금액은 미국 달러(USD) 기준이에요.
 
 전화번호를 구매하려면 'How to Purchase a Phone Number' 문서를 참고하세요. 수신자 부담 번호(Toll-Free)를 구매하려면 'How to buy a toll free number' 문서를 참고하세요.

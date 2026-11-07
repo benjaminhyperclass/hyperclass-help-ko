@@ -65,30 +65,30 @@ SaaS V1 구독 동기화 안내: 판매용 서브 계정으로 판매한 SaaS V1
 
 조건에 맞는 Stripe 가격을, 퍼널을 설정하는 하이퍼클래스 서브 계정으로 가져오세요. 가져오기가 끝나면 결제 화면에 추가하기 전에 **결제**에서 상품이 생겼는지 확인하세요.
 
-1. 상품을 판매할 하이퍼클래스 서브 계정을 엽니다.
-2. 왼쪽 메뉴에서 **결제**를 선택합니다.
-3. **상품**을 선택합니다.
-4. **Import From Stripe**(Stripe에서 가져오기)를 클릭합니다.
+1. 상품을 판매할 하이퍼클래스 서브 계정을 여세요.
+2. 왼쪽 메뉴에서 **결제**를 선택하세요.
+3. **상품**을 선택하세요.
+4. **Import From Stripe**(Stripe에서 가져오기)를 클릭하세요.
 
 ![상품 화면에서 Stripe에서 가져오기 버튼을 클릭하는 모습](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081130352/original/aXDWiozf0sJe8I-NJFYK5QjPwxdtN4M9pw.png?1789610903)
 
-5. 가져올 Stripe 상품을 검색합니다.
-6. 사용할 수 있는 반복 결제 가격을 확인합니다.
-7. 가져올 상품과 가격을 선택합니다.
-8. 가져오기를 완료합니다.
+5. 가져올 Stripe 상품을 검색하세요.
+6. 사용할 수 있는 반복 결제 가격을 확인하세요.
+7. 가져올 상품과 가격을 선택하세요.
+8. 가져오기를 완료하세요.
 
 ![가져올 Stripe 상품과 가격을 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081130354/original/O3i0h-3jl2uwUv2zOkJKgq3n7-3T9BguPw.png?1789610929)
 
-9. **결제 > 상품**에 가져온 상품이 보이는지 확인합니다.
+9. **결제 > 상품**에 가져온 상품이 보이는지 확인하세요.
 
 ![결제 > 상품에 가져온 상품이 표시된 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081130313/original/4b9YL8bLTIwpZd56txU9Obk5RVmniXU5YA.png?1789610776)
 
-10. 왼쪽 메뉴에서 **사이트**를 선택합니다.
-11. **퍼널**을 선택합니다.
-12. 상품을 판매할 퍼널을 엽니다.
-13. 해당 주문 폼이나 상품 설정을 엽니다.
-14. 가져온 하이퍼클래스 상품과 반복 결제 가격을 선택합니다.
-15. 결제 설정을 테스트한 다음 **저장 및 게시**를 선택해 퍼널을 게시합니다.
+10. 왼쪽 메뉴에서 **사이트**를 선택하세요.
+11. **퍼널**을 선택하세요.
+12. 상품을 판매할 퍼널을 여세요.
+13. 해당 주문 폼이나 상품 설정을 여세요.
+14. 가져온 하이퍼클래스 상품과 반복 결제 가격을 선택하세요.
+15. 결제 설정을 테스트한 다음 **저장 및 게시**를 선택해 퍼널을 게시하세요.
 
 ![퍼널 주문 폼에서 가져온 상품을 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081130369/original/NMFxrBLVuXJrBYRQg3-YWG0J3SUs1R6TWQ.png?1789610960)
 

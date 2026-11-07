@@ -6,7 +6,7 @@
 
 # 결제 링크로 상품 판매하기
 
-**결제 링크**를 만들면 웹사이트 없이도 상품이나 서비스를 판매할 수 있어요. 클릭 몇 번으로 결제 페이지를 완성하고, 링크를 고객에게 공유하면 됩니다. 코드는 필요 없어요.
+**결제 링크**를 만들면 웹사이트 없이도 상품이나 서비스를 판매할 수 있어요. 클릭 몇 번으로 결제 페이지를 완성하고, 링크를 고객에게 공유하면 돼요. 코드는 필요 없어요.
 
 ![결제 링크 결제 페이지 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023729137/original/ys4Fglfuo4X4dxUuWP7Ur-U6KugdictfkA.png?1711747942)
 

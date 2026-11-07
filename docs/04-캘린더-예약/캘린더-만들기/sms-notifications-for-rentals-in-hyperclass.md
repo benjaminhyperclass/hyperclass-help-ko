@@ -76,7 +76,7 @@ SMS 템플릿을 쓰면 대여 예약 알림 전반에서 메시지를 일관되
 
 가능한 경우 **연락처**와 **비즈니스** 수신자별로 템플릿을 따로 설정할 수 있어요. 받는 사람에 맞게 말투, 상세 정도, 행동 유도 문구를 다르게 쓸 수 있어요.
 
-기본 메시지에는 연락처 정보와 대여 예약 정보가 들어 있어요. 예를 들면 이런 식이에요. "`{{contact.name}}`님, 예약이 `{{rentalBooking.start_time}}` `{{rentalBooking.timezone}}`에 확정되었습니다."
+기본 메시지에는 연락처 정보와 대여 예약 정보가 들어 있어요. 예를 들면 이런 식이에요. "`{{contact.name}}`님, 예약이 `{{rentalBooking.start_time}}` `{{rentalBooking.timezone}}`에 확정되었어요."
 
 ![SMS 템플릿과 메시지 본문 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155078000352/original/BnZsQEws5M5qMwSZdU2xsUpz2Slx_knBIQ.png?1786354136)
 

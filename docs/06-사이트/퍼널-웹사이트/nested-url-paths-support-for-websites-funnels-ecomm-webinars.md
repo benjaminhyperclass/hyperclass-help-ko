@@ -42,7 +42,7 @@ URL 경로를 계층 구조로 깔끔하게 만들면 검색 노출에 도움이
 
 중첩 URL은 최대 5단계까지 지원해요(예: `/level1/level2/level3/level4/level5`).
 
-슬래시(/) 사이의 구간 하나가 1단계예요. 메인 도메인과 서브도메인은 단계 수에 포함되지 않아요. 5단계를 넘기면 빌더에서 저장이 막히고 **"URL path is too deep. Maximum 5 levels allowed."**(URL 경로가 너무 깊습니다. 최대 5단계까지 허용됩니다.)라는 메시지가 나와요.
+슬래시(/) 사이의 구간 하나가 1단계예요. 메인 도메인과 서브도메인은 단계 수에 포함되지 않아요. 5단계를 넘기면 빌더에서 저장이 막히고 **"URL path is too deep. Maximum 5 levels allowed."**(URL 경로가 너무 깊습니다. 최대 5단계까지 허용돼요.)라는 메시지가 나와요.
 
 ![5단계를 초과했을 때 나오는 오류 메시지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050251411/original/an32vTeoLR8LKNchgjeX3ojEXHaWiDnpsg.png?1753198355)
 

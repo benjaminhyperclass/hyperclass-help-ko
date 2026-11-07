@@ -166,7 +166,7 @@ Google에 나타나지 않으면 경쟁 업체가 그 일을 가져가요.
 ### 더 자세히 알아보기
 
 - [Spotless Rankings: Google 검색을 장악하는 청소·관리 업체 가이드](spotless-rankings-the-cleaning-maintenance-business-guide-to-dominating-google-s.md)
-- [Spotless Success: 청소·관리 업체의 재방문·소개로 폭발적으로 성장하는 방법](../../21-어필리에이트/기타/spotless-success-mastering-retention-referrals-for-explosive-growth-in-cleaning.md)
+- [Spotless Success: 청소·관리 업체의 재방문·소개로 폭발적으로 성장하는 방법](spotless-success-mastering-retention-referrals-for-explosive-growth-in-cleaning.md)
 - [Sparkling Ads: 청소·관리 업체가 더 많은 고객을 모으는 광고 청사진](sparkling-ads-the-blueprint-to-sweep-up-more-clients-for-your-cleaning-maintenan.md)
 - [Sparkle & Scale: 청소·관리 업체의 소셜 미디어 공략 플레이북](../Cleaning-And-Maintenance/sparkle-scale-the-cleaning-maintenance-social-media-domination-playbook.md)
 - [Spotless Content Strategy: 청소·관리 업체 플레이북](../Cleaning-And-Maintenance/spotless-content-strategy-the-cleaning-maintenance-playbook.md)

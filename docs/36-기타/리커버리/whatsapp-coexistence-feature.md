@@ -6,11 +6,11 @@
 
 # WhatsApp Coexistence — 기존 WhatsApp Business 앱을 하이퍼클래스에 연결하기
 
-지금 쓰고 있는 WhatsApp Business 앱을 그대로 쓰면서 하이퍼클래스에도 연결할 수 있어요. 같은 번호로 앱과 하이퍼클래스를 동시에 쓸 수 있습니다. 이 문서에서는 Coexistence(공존) 방식의 작동 원리, 단계별 설정, 연락처와 채팅 기록 가져오기, 알아 둘 제한 사항을 설명해요.
+지금 쓰고 있는 WhatsApp Business 앱을 그대로 쓰면서 하이퍼클래스에도 연결할 수 있어요. 같은 번호로 앱과 하이퍼클래스를 동시에 쓸 수 있어요. 이 문서에서는 Coexistence(공존) 방식의 작동 원리, 단계별 설정, 연락처와 채팅 기록 가져오기, 알아 둘 제한 사항을 설명해요.
 
 ## Coexistence란?
 
-Coexistence를 쓰면 기존 WhatsApp Business 앱을 계속 쓰면서 하이퍼클래스에 연결할 수 있어요. 설정이 끝나면 같은 번호로 휴대폰 앱과 하이퍼클래스 **양쪽에서 동시에** WhatsApp 메시지를 보내고 받을 수 있습니다.
+Coexistence를 쓰면 기존 WhatsApp Business 앱을 계속 쓰면서 하이퍼클래스에 연결할 수 있어요. 설정이 끝나면 같은 번호로 휴대폰 앱과 하이퍼클래스 **양쪽에서 동시에** WhatsApp 메시지를 보내고 받을 수 있어요.
 
 이미 WhatsApp Business 앱을 활발히 쓰고 있고, 앞으로도 하이퍼클래스와 함께 쓰고 싶다면 이 방식이 알맞아요.
 
@@ -97,7 +97,7 @@ Facebook 계정 로그인 정보와, 지금 WhatsApp Business 앱에서 쓰고 �
 
 {% hint style="info" %}
 **참고**
-1. WhatsApp Business 앱에서는 템플릿 메시지를 보낼 수 없어요. 템플릿 메시지는 하이퍼클래스에서만 보낼 수 있습니다.
+1. WhatsApp Business 앱에서는 템플릿 메시지를 보낼 수 없어요. 템플릿 메시지는 하이퍼클래스에서만 보낼 수 있어요.
 2. WhatsApp 프로필은 하이퍼클래스가 아니라 WhatsApp Business 앱에서 관리해요.
 3. Coexistence로는 전화번호를 최대 1개만 연결할 수 있어요.
 {% endhint %}
@@ -108,7 +108,7 @@ Coexistence를 선택하기 전에 아래 제한 사항을 꼭 알아 두세요.
 
 ### 템플릿 메시지는 하이퍼클래스에서 보내야 해요
 
-WhatsApp Business 앱에서는 WhatsApp 템플릿 메시지를 보낼 수 없어요. 템플릿은 모두 하이퍼클래스에서만 만들고 보낼 수 있습니다.
+WhatsApp Business 앱에서는 WhatsApp 템플릿 메시지를 보낼 수 없어요. 템플릿은 모두 하이퍼클래스에서만 만들고 보낼 수 있어요.
 
 ### 프로필 관리는 WhatsApp Business 앱에서 해요
 

@@ -30,8 +30,8 @@
 
 ### 위반 시 서브 계정에 어떤 오류 화면이 나오나요?
 
-- **대화** 오류: "You have exceeded your SMS sending limit."(SMS 발송 한도를 초과했습니다.)
-- **일괄 액션** 오류: "You are allowed to send 5000 message(s) in a day. You have already sent 5000 message(s). If you wish to proceed, 1 Message(s) will be failed."(하루에 5,000건의 메시지를 보낼 수 있고, 이미 5,000건을 보냈습니다. 계속 진행하면 1건의 메시지가 실패 처리됩니다.)
+- **대화** 오류: "You have exceeded your SMS sending limit."(SMS 발송 한도를 초과했어요.)
+- **일괄 액션** 오류: "You are allowed to send 5000 message(s) in a day. You have already sent 5000 message(s). If you wish to proceed, 1 Message(s) will be failed."(하루에 5,000건의 메시지를 보낼 수 있고, 이미 5,000건을 보냈습니다. 계속 진행하면 1건의 메시지가 실패 처리돼요.)
 
 ![SMS 발송 한도를 초과했다는 대화 오류 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48222961915/original/2QKxVz00B7OVVQAHVK3y2npqoXsM7NyViA.png?1651581300)
 ![하루 발송 한도에 도달했다는 일괄 액션 오류 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48222962001/original/CJSFxDMFuf9RF8nd-vVYLdPc6GDRw2W76w.png?1651581314)
@@ -108,7 +108,7 @@
 
 ### 스팸 메시지 오류 화면
 
-- **대화**: "Cannot send messages as DND is active for SMS."(SMS에 수신거부가 설정되어 있어 메시지를 보낼 수 없습니다.)
+- **대화**: "Cannot send messages as DND is active for SMS."(SMS에 수신거부가 설정되어 있어 메시지를 보낼 수 없어요.)
 - **일괄 액션**: 워크플로우나 일괄 SMS로 보내는 모든 SMS는 수신거부로 표시된 연락처를 발송 대상에서 자동으로 건너뛰어요.
 
 ![SMS 수신거부가 켜져 있다는 대화 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053452149/original/MCPIyZBNxEMDLfROubCaT6EVYvv-erzHgQ.png?1757496520)

@@ -25,26 +25,26 @@
 
 복사할 위치와 붙여넣는 방법을 순서대로 안내해요.
 
-1. **자동화 > 워크플로우**를 엽니다.
-2. 복사할 액션이 있는 워크플로우를 선택하고, 재사용할 액션을 찾습니다.
-3. 해당 액션의 점 세 개 메뉴를 클릭합니다.
-4. 아래 중 하나를 선택합니다.
+1. **자동화 > 워크플로우**를 여세요.
+2. 복사할 액션이 있는 워크플로우를 선택하고, 재사용할 액션을 찾으세요.
+3. 해당 액션의 점 세 개 메뉴를 클릭하세요.
+4. 아래 중 하나를 선택하세요.
    - **Copy Action**(액션 복사): 해당 액션 하나만 복사해요.
    - **Copy All Actions From Here**(여기서부터 모든 액션 복사): 선택한 액션부터 이어지는 액션 묶음을 복사해요.
 
    ![액션의 점 세 개 메뉴에서 복사 옵션을 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155052094641/original/fn5HsFGRNeAtjoG4W5R-med1BeXisJdtUw.png?1755785648)
 
-5. 붙여넣을 워크플로우로 이동합니다. 같은 탭이어도 되고, 같은 서브 계정 안의 다른 탭이어도 돼요.
-6. 아래 두 방법 중 하나로 붙여넣습니다.
-   - 새 액션을 추가하는 **+** 버튼 옆의 **Quick Paste**(빠른 붙여넣기)를 클릭합니다.
+5. 붙여넣을 워크플로우로 이동하세요. 같은 탭이어도 되고, 같은 서브 계정 안의 다른 탭이어도 돼요.
+6. 아래 두 방법 중 하나로 붙여넣으세요.
+   - 새 액션을 추가하는 **+** 버튼 옆의 **Quick Paste**(빠른 붙여넣기)를 클릭하세요.
 
      ![+ 버튼 옆의 Quick Paste 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155052094723/original/m54deH56wAwIcqEEVybb_sibNN9X8xxEpg.png?1755785705)
 
-   - 또는 아무 액션이나 점 세 개 메뉴를 열고 **Paste Below**(아래에 붙여넣기)를 선택합니다.
+   - 또는 아무 액션이나 점 세 개 메뉴를 열고 **Paste Below**(아래에 붙여넣기)를 선택하세요.
 
      ![액션의 점 세 개 메뉴에서 Paste Below를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155052795534/original/CKIGsJ1Ic1ggf5D0RB629-ODjMzTzT7mXw.png?1756721355)
 
-7. 붙여넣은 액션의 자산과 로직이 올바른지 확인한 뒤 **Save**(저장)를 클릭합니다.
+7. 붙여넣은 액션의 자산과 로직이 올바른지 확인한 뒤 **Save**(저장)를 클릭하세요.
 
    ![붙여넣은 액션을 확인하고 Save를 클릭하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155052116340/original/jPTujJ_4cupbqbaoGsySSOEiCIAB5za8ng.png?1755796215)
 

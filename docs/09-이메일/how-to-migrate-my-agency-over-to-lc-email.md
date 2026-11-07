@@ -38,7 +38,7 @@ Mailgun이나 SMTP를 연동해 쓰는 하이퍼클래스 기존 고객이라면
 
 **요청 실패**
 
-이 도메인(replies.example.com)은 이미 Mailgun 계정에 설정되어 있습니다.
+이 도메인(replies.example.com)은 이미 Mailgun 계정에 설정되어 있어요.
 
 Mailgun에 로그인해서 해당 도메인을 삭제하면 하이퍼클래스 이메일에서 사용할 수 있어요.
 

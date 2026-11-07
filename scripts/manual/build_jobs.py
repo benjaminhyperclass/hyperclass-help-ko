@@ -55,12 +55,21 @@ def slug_of(url):
     m = re.search(r"/articles/\d+-([^/?#]+)", url or "")
     return m.group(1)[:80] if m else None
 
+EXCL = json.load(open(os.path.join(R, "data/manual/exclude.json"), encoding="utf-8"))
+
+def is_excluded(a):
+    slug = slug_of(a["url"]) or ""
+    if any(slug.startswith(k) for k in EXCL.get("keep_slugs", [])): return False
+    fol = re.sub(r"\s*\(\d+\)$", "", a.get("folder") or "")
+    return (a.get("category") in EXCL.get("categories", []) or fol in EXCL.get("folders", [])
+            or any(slug.startswith(k) for k in EXCL.get("extra_slugs", [])))
+
 def load_src(src_dir):
     arts = {}
     for f in sorted(glob.glob(os.path.join(src_dir, "articles-*.jsonl.gz"))):
         for line in gzip.open(f, "rt", encoding="utf-8"):
             a = json.loads(line)
-            if a.get("ok"):
+            if a.get("ok") and not is_excluded(a):
                 arts[art_id(a["url"])] = a
     return arts
 
@@ -127,7 +136,9 @@ def sanitize(path):
     out = []
     for k, seg in enumerate(parts):
         base, ext = (os.path.splitext(seg) if k == len(parts) - 1 else (seg, ""))
-        base = base.replace("&amp;", "and").replace("&", "and")
+        import html as _html
+        base = _html.unescape(_html.unescape(base)).replace("'", "")
+        base = base.replace("&", "and").replace("#", "")
         base = re.sub(r"%[0-9A-Fa-f]{2}", "-", base)
         # 주소창에 브랜드가 보이지 않게
         base = re.sub(r"(?i)go-?high-?level|high-?level|lead-?connector(?:hq)?", "hyperclass", base)

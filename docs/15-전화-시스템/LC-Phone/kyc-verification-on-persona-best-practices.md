@@ -42,7 +42,7 @@ Persona 인증을 미리 마쳐 두면, 나중에 해당하는 전화번호를 �
 신분증 사진이 선명하고 잘리지 않았는지 확인하세요. 입력한 정보는 등록 정보와 정확히 같아야 해요.
 {% endhint %}
 
-![번호 구매 화면에 KYC 인증에 실패했습니다 메시지가 표시된 모습](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155076965025/original/maEBJWNy5fpGfNE-HyA5LaqIl_r6UNvQiA.png?1785172964)
+![번호 구매 화면에 KYC 인증에 실패했어요 메시지가 표시된 모습](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155076965025/original/maEBJWNy5fpGfNE-HyA5LaqIl_r6UNvQiA.png?1785172964)
 
 ### 2. "Session Expired" 오류 피하기
 

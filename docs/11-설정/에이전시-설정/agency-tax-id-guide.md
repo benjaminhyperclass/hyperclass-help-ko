@@ -33,7 +33,7 @@ VAT 면제
    ![세금 ID 팝업에서 유형과 번호를 입력하고 저장하는 화면](https://jumpshare.com/share/lGtNZIzbAOhxkhEmPBw0+/Screen+Shot+2026-08-14+at+18.58.32.png)
 
 {% hint style="info" %}
-다음 중 하나에 해당하면 **I do not have a Tax ID**(세금 ID가 없습니다) 체크박스를 선택하세요.
+다음 중 하나에 해당하면 **I do not have a Tax ID**(세금 ID가 없어요) 체크박스를 선택하세요.
 
 - 세금 ID는 있지만 아래 목록에 없어요.
 - 세금 ID 번호가 없어요.

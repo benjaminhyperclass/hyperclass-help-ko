@@ -106,13 +106,13 @@
 
 ### 폴더 만들기
 
-1. **설정**을 엽니다.
-2. **커스텀 필드**로 이동합니다.
-3. 오브젝트 선택기에서 관리할 오브젝트를 고릅니다.
-4. **폴더** 탭을 엽니다.
-5. **폴더 만들기**를 클릭합니다.
-6. 폴더 이름을 입력합니다.
-7. **저장**을 클릭합니다.
+1. **설정**을 여세요.
+2. **커스텀 필드**로 이동하세요.
+3. 오브젝트 선택기에서 관리할 오브젝트를 고르세요.
+4. **폴더** 탭을 여세요.
+5. **폴더 만들기**를 클릭하세요.
+6. 폴더 이름을 입력하세요.
+7. **저장**을 클릭하세요.
 
 폴더를 만든 뒤에는 필드를 폴더에 지정해 더 체계적으로 정리할 수 있어요.
 
@@ -122,29 +122,29 @@
 
 다음 순서를 따라 계정에서 커스텀 필드를 만들고 정리해 보세요.
 
-1. **설정 > 커스텀 필드**로 이동합니다. 계정에서 **설정**을 클릭한 다음 **커스텀 필드**를 클릭하세요.
+1. **설정 > 커스텀 필드**로 이동하세요. 계정에서 **설정**을 클릭한 다음 **커스텀 필드**를 클릭하세요.
 
    ![설정에서 커스텀 필드 메뉴 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155079788258/original/Geeq2-Ipr1WJ5QcFAsuNs-A2yKdvRQUzqQ.png?1788259685)
 
-2. 오브젝트를 선택합니다. 페이지 맨 위의 오브젝트 선택기에서 관리할 오브젝트를 고르세요.
-3. **필드** 탭을 엽니다. **필드** 탭에서 기존 필드를 확인하고 새 필드를 만들 수 있어요.
+2. 오브젝트를 선택하세요. 페이지 맨 위의 오브젝트 선택기에서 관리할 오브젝트를 고르세요.
+3. **필드** 탭을 여세요. **필드** 탭에서 기존 필드를 확인하고 새 필드를 만들 수 있어요.
 
    ![필드 탭 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155072345406/original/ArQjXTbBSaOsAf_SSKGA7cQQeD6LjThitw.png?1779911757)
 
-4. 페이지 오른쪽 위의 **필드 만들기**를 클릭합니다.
-5. **필드 유형 선택** 화면에서 만들려는 필드 유형을 고릅니다.
+4. 페이지 오른쪽 위의 **필드 만들기**를 클릭하세요.
+5. **필드 유형 선택** 화면에서 만들려는 필드 유형을 고르세요.
 
    ![필드 유형 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155069290219/original/WlNtThFx6snR4gViN1jaJQJGxgatzCMoPQ.png?1776338844)
 
-6. 필드 이름 등 필드 정보를 입력합니다. 필요하면 폴더도 지정하세요.
+6. 필드 이름 등 필드 정보를 입력하세요. 필요하면 폴더도 지정하세요.
 
    ![필드 정보 입력 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155069290765/original/6zaShf6HHJz7SAL7gro4_9WumqfukG6YWw.png?1776339089)
 
-7. **실시간 미리보기** 패널에서 필드가 어떻게 보일지 확인합니다.
+7. **실시간 미리보기** 패널에서 필드가 어떻게 보일지 확인하세요.
 
    ![실시간 미리보기 패널](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155069291322/original/EPYVFabzkOzqPJKnuMsnoK2DdkBzTkKCUA.png?1776339395)
 
-8. **커스텀 필드 만들기**를 클릭해 필드를 저장합니다.
+8. **커스텀 필드 만들기**를 클릭해 필드를 저장하세요.
 
    ![커스텀 필드 만들기 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155069291497/original/LEN3EzAyraO2t3sfRVZy7T0pi0QgOfAHSQ.png?1776339485)
 

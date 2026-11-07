@@ -31,24 +31,24 @@ Google Play 개발자 계정을 하이퍼클래스에 연결하고, 브랜드 �
 
 **비디오 튜토리얼: **
 
-1. **Agency App Manager**를 엽니다.
+1. **Agency App Manager**를 여세요.
    - 하이퍼클래스 왼쪽 메뉴에서 **모바일 앱**으로 이동해요.
    - **Agency App Manager**를 열어요. **Apple App Store**와 **Google Playstore** 두 개의 타일이 보이고, 각 타일에 **Set Up**(셋업) 버튼이 있어요.
    - 왼쪽 **단계** 표시줄에 **Distribution**(배포)이 선택되어 있는지 확인하세요.
-2. Google Play 연결을 시작합니다.
+2. Google Play 연결을 시작하세요.
    - **Google Playstore** 타일에서 **Set Up**을 클릭하세요.
    - Play Store 연결 폼이 열려요.
-3. 연결 이름을 정합니다.
+3. 연결 이름을 정해요.
    - **Play Store account name**(Play Store 계정 이름)에 나와 팀원이 알아볼 수 있는 짧은 이름을 입력하세요. 에이전시 이름이나 브랜드 이름을 쓰면 좋아요.
    - 나중에 Play 계정을 여러 개 연결할 계획이라면 서로 겹치지 않는 이름을 쓰세요.
-4. 폼 안의 링크로 Google Play Console을 엽니다.
+4. 폼 안의 링크로 Google Play Console을 여세요.
    - 폼에 있는 링크를 클릭하면 새 탭에서 Google 개발자 계정 페이지인 [![Google 아이콘](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155062059746/original/vySdHUQJmHcgZuq_iptJP2rBYZ_bsXsx-w.png?1767731032) Google Play Console](https://play.google.com/console/developers)이 열려요.
    - **Google Play 개발자** 프로그램을 소유한 Google 계정으로 로그인하세요. 이미 로그인되어 있다면 올바른 계정인지 확인하세요.
-5. Play Console에서 접근 권한을 확인합니다.
+5. Play Console에서 접근 권한을 확인하세요.
    - 개발자 콘솔 홈 화면에 들어갈 수 있는지 확인하세요.
    - Google이 업데이트된 약관에 동의하거나 계정을 인증하라고 안내하면 먼저 마치세요.
    - 권한 오류가 보이면 소유자(Owner)나 관리자에게 **Users and permissions**(사용자 및 권한)에서 내게 **관리자** 권한을 부여해 달라고 요청하세요.
-6. 하이퍼클래스로 돌아와 저장합니다.
+6. 하이퍼클래스로 돌아와 저장하세요.
    - 하이퍼클래스 탭으로 돌아가세요.
    - **Play Store account name** 필드가 채워져 있는지 확인하세요.
    - **저장** 또는 **계속**을 클릭해 연결 정보를 저장하세요.
@@ -66,10 +66,10 @@ Google Play 개발자 계정을 하이퍼클래스에 연결하고, 브랜드 �
 
 **비디오 튜토리얼: **
 
-1. 같은 연결 과정에서 **App Setup**(앱 설정) 단계를 엽니다.
-2. **Register**(등록)를 클릭해 Android 패키지 이름을 만듭니다.
+1. 같은 연결 과정에서 **App Setup**(앱 설정) 단계를 여세요.
+2. **Register**(등록)를 클릭해 Android 패키지 이름을 만드세요.
 3. 역방향 DNS 형식의 식별자를 입력하세요. 예: `com.youragency.clientapp` 공백과 대문자는 쓰지 마세요.
-4. 등록을 확인합니다. 하이퍼클래스가 입력한 값을 검증하고 등록을 마쳐요. 패키지 이름이 등록되면 성공 상태가 표시돼요.
+4. 등록을 확인하세요. 하이퍼클래스가 입력한 값을 검증하고 등록을 마쳐요. 패키지 이름이 등록되면 성공 상태가 표시돼요.
 5. 앱 배포 설정의 다음 단계로 넘어가세요. 준비할 자료가 더 있다면 나중에 돌아와도 돼요.
 
 ## 확인 사항과 자주 나는 오류

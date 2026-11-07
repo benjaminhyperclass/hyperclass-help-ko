@@ -8,6 +8,10 @@
 
 Uberall은 하이퍼클래스의 모든 에이전시에서 쓸 수 있는 로컬 리스팅 관리 플랫폼이에요. 이 문서에서는 Uberall과 Yext 중 리스팅 엔진을 고르고 설정하는 방법을 안내해요. 에이전시 관리자만 설정할 수 있어요.
 
+{% hint style="info" %}
+문서에 나온 금액(달러)과 요금제 이름은 참고용이에요. 하이퍼클래스에서 실제로 적용되는 요금은 [요금제 안내](../../00-자주묻는질문/pricing-plans.md)와 [AI·SMS·음성 사용료](../../00-자주묻는질문/usage-costs.md)를 확인하세요.
+{% endhint %}
+
 ---
 
 ## Uberall이란?
@@ -82,7 +86,7 @@ Uberall은 여러 지점을 운영하는 비즈니스를 위한 글로벌 리스
 엔진을 선택하면 아래 문구에 체크해서 확인해야 해요.
 
 *"I understand that this engine will be the default for all new entities my subaccounts create, and agree to move forward with this selection"*
-(이 엔진이 서브 계정에서 새로 만드는 모든 엔티티의 기본 엔진이 된다는 점을 이해하며, 이 선택으로 진행하는 데 동의합니다.)
+(이 엔진이 서브 계정에서 새로 만드는 모든 엔티티의 기본 엔진이 된다는 점을 이해하며, 이 선택으로 진행하는 데 동의해요.)
 
 ---
 

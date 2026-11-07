@@ -51,7 +51,7 @@
 - **Action Name**: End IVR Call
 - **Add Voice Instructions**: 켜짐
 - **Say or Play Message**: Say a message
-- **Text to Say**: "Thank you for calling ABC Services. Your call will now end."(ABC 서비스에 전화해 주셔서 감사합니다. 이제 통화를 종료합니다.)
+- **Text to Say**: "Thank you for calling ABC Services. Your call will now end."(ABC 서비스에 전화해 주셔서 감사해요. 이제 통화를 종료해요.)
 - **Language**: English (US)
 - **Message Voice**: Woman
 - **Number of Loops**: 1

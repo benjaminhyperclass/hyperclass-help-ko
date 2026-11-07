@@ -29,21 +29,21 @@
 
 설정이 간단해서 멤버는 바로 협업을 시작할 수 있고, 관리자는 사용 방식을 분명하게 안내할 수 있어요.
 
-1. 하이퍼클래스에 **로그인**하고 GoKollab을 엽니다.
+1. 하이퍼클래스에 **로그인**하고 GoKollab을 여세요.
 
    ![하이퍼클래스에서 GoKollab 열기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053380847/original/SEfIDc-766-4hXm3p8XFSUesHaMiiLpqUA.png?1757420041)
 
    **또는** GoKollab 웹사이트에서 직접 로그인해도 돼요.
 
    ![GoKollab 웹사이트에서 로그인하기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053381166/original/LPeswmYaWW_cg6YVzRPANc4zXbS1gc8uBw.png?1757420155)
-2. 커뮤니티 토론 페이지로 이동합니다.
-3. 오른쪽 위의 **채팅** 버튼을 눌러 커뮤니티 멤버와 대화를 시작합니다.
+2. 커뮤니티 토론 페이지로 이동하세요.
+3. 오른쪽 위의 **채팅** 버튼을 눌러 커뮤니티 멤버와 대화를 시작하세요.
 
    ![토론 페이지 오른쪽 위의 채팅 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053671061/original/lJCOFkgIOdq3xloMSTvr_0-nzRUKDgnyQA.png?1757685471)
 4. **채팅** 받은편지함을 열어 대화를 확인하고, 검색하고, 이어서 나눠요.
 
    ![채팅 받은편지함 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053671100/original/Wd9GhVD3Iz37fNJx-t_HJ4D4aXeFqKCQIA.png?1757685512)
-5. 새 메시지를 놓치지 않도록 앱 내 알림이 켜져 있는지 확인합니다.
+5. 새 메시지를 놓치지 않도록 앱 내 알림이 켜져 있는지 확인하세요.
 
 ## 플랫폼 안에서 메시지 주고받기
 

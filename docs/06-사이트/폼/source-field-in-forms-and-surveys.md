@@ -49,17 +49,17 @@
 
 설정을 제대로 해 두면 제출할 때마다 원하는 출처 값이 저장돼요. 연락처 폼을 만드는 방법은 [하이퍼클래스에서 연락처 폼 만들기](../../02-연락처/기타/how-to-create-a-contact-form-in-hyperclass.md)를 참고하세요.
 
-1. **사이트 > 폼** 또는 **사이트 > 설문**으로 이동해서 편집할 폼이나 설문을 엽니다.
-2. 폼이나 설문에 **출처** 요소를 추가합니다.
-3. 하이퍼클래스에 저장할 출처 값을 입력합니다.
+1. **사이트 > 폼** 또는 **사이트 > 설문**으로 이동해서 편집할 폼이나 설문을 여세요.
+2. 폼이나 설문에 **출처** 요소를 추가하세요.
+3. 하이퍼클래스에 저장할 출처 값을 입력하세요.
 
    ![출처 요소에 출처 값을 입력하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155080330759/original/KCKyDGLOw50_F61qwG9k72IxdzOCMBl-yQ.png?1788850572)
-4. 폼이나 설문을 저장합니다.
-5. 테스트로 응답을 제출합니다.
-6. 제출 내용을 열어 출처 값을 확인합니다. 설문 제출 내용을 찾는 방법은 [설문 제출 내용 확인하고 내보내기](../설문/how-to-access-and-export-survey-submissions.md)를 참고하세요.
+4. 폼이나 설문을 저장하세요.
+5. 테스트로 응답을 제출해요.
+6. 제출 내용을 열어 출처 값을 확인하세요. 설문 제출 내용을 찾는 방법은 [설문 제출 내용 확인하고 내보내기](../설문/how-to-access-and-export-survey-submissions.md)를 참고하세요.
 
    ![제출 내용에서 출처 값을 확인하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155080330917/original/hmnEm1ozp_UFm6rGcKdQtlKvLZeQ4cUQXg.png?1788850726)
-7. 해당 연락처 상세 화면을 열어 **연락처 출처**를 확인합니다.
+7. 해당 연락처 상세 화면을 열어 **연락처 출처**를 확인하세요.
 
 ![연락처 상세 화면에서 연락처 출처를 확인하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155080331193/original/RzytOhZrzby3EWvq6yG0iyusInXsEzWpDQ.png?1788850872)
 

@@ -71,10 +71,10 @@
 
 복제 음성을 만들고, 처리가 끝날 때까지 기다린 뒤, 완성된 음성을 에이전트에 지정하는 순서로 진행해요. 이 과정을 끝까지 따라 하면 실제 통화를 테스트하기 전에 복제된 음성이 알맞은 위치에 준비돼요.
 
-1. 대상 서브 계정을 엽니다. **AI 에이전트 > 음성 AI > 에이전트 목록**으로 이동한 뒤, Voice AI 에이전트를 열거나 새로 만드세요.
+1. 대상 서브 계정을 여세요. **AI 에이전트 > 음성 AI > 에이전트 목록**으로 이동한 뒤, Voice AI 에이전트를 열거나 새로 만드세요.
 
    ![에이전트 목록에서 Voice AI 에이전트 열기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155071701629/original/JegQQIWvIbbH-Khy1eNGjQzyMEiTkjeVmQ.png?1779201707)
-2. 에이전트의 현재 음성을 클릭해 **음성 선택**을 엽니다.
+2. 에이전트의 현재 음성을 클릭해 **음성 선택**을 여세요.
 
    ![에이전트의 현재 음성을 눌러 음성 선택 열기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155071701740/original/COGkXkf2FdgQqs6YUCi3yK1GEV3v0o6Lxg.png?1779201727)
 3. **내 음성** 탭으로 이동해 **커스텀 음성 추가**를 클릭하고, 드롭다운에서 **복제**를 선택하세요.
@@ -83,7 +83,7 @@
    - **복제**는 **Clone Voice**(음성 복제) 창을 열어, 오디오 샘플로 새 음성을 만들어요.
 
    ![커스텀 음성 추가 드롭다운에서 복제 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155071701809/original/2TKpF8gsZXLlpRpUvAHaP2DDKUEs4XMPgg.png?1779201748)
-4. **Clone Voice** 창에서 다음 순서로 입력합니다.
+4. **Clone Voice** 창에서 다음 순서로 입력하세요.
 
    1. 알아보기 쉬운 **음성 이름**을 입력하세요. 예를 들어 "프런트 데스크 - 엠마", "대표 목소리"처럼 쓸 수 있어요.
    2. **Target Voice Provider**(대상 음성 제공업체)를 선택하세요.

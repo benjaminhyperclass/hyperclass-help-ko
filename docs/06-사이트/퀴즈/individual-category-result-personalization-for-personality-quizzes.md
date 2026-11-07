@@ -48,35 +48,35 @@
 
 설정을 꼼꼼히 해 두면 응답자가 점수 결과에 맞는 콘텐츠를 정확히 받을 수 있어요. 아래 순서대로 진행하면 모든 카테고리의 결과 화면을 일관되게 관리할 수 있어요.
 
-1. **퀴즈 빌더**를 엽니다.
+1. **퀴즈 빌더**를 여세요.
 
    ![퀴즈 빌더 열기 화면 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155072629432/original/ST-VDZFZhD0d0kc85LbtJxn9YZeos1peQw.png?1780327282)
 
    ![퀴즈 빌더 열기 화면 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155072629562/original/Xs1z62yUd1yO10NX-Z9d4nNPXEkkG-B31g.png?1780327348)
-2. 왼쪽 패널에서 **+ Add Section**(섹션 추가)을 클릭합니다.
+2. 왼쪽 패널에서 **+ Add Section**(섹션 추가)을 클릭하세요.
 
    ![왼쪽 패널에서 섹션 추가 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155072629892/original/Z1j4CgaTV3yCueiZv_uQI8E9wCAtSDfsVA.png?1780327494)
-3. 섹션 선택 창에서 **Individual Category**(개별 카테고리)를 선택합니다.
+3. 섹션 선택 창에서 **Individual Category**(개별 카테고리)를 선택하세요.
 
    ![섹션 선택 창에서 개별 카테고리 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155072629967/original/kKgBLFV5yQiihVOHuZlOS9GKzewTU7hoGg.png?1780327548)
 4. 왼쪽 패널에 새로 추가된 **Individual Category** 섹션을 클릭해 펼칩니다.
 
    ![추가된 개별 카테고리 섹션 펼치기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155072630122/original/iKLStgDFk-W0k9V5COS1RAa0R22cv2e8yQ.png?1780327618)
-5. 맞춤 설정할 카테고리를 선택합니다.
+5. 맞춤 설정할 카테고리를 선택하세요.
 
    ![맞춤 설정할 카테고리 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155072630160/original/DbKMKaC1vPiM4910L0-Q8Z1cMv0Wr2P3tQ.png?1780327664)
-6. 오른쪽 패널에서 **Display Category**(표시 카테고리)를 찾습니다. 이 콘텐츠를 **Highest Score**(최고 점수)와 **Lowest Score**(최저 점수) 중 어느 쪽에 적용할지 선택합니다.
+6. 오른쪽 패널에서 **Display Category**(표시 카테고리)를 찾으세요. 이 콘텐츠를 **Highest Score**(최고 점수)와 **Lowest Score**(최저 점수) 중 어느 쪽에 적용할지 선택하세요.
 
    ![표시 카테고리에서 최고 점수 또는 최저 점수 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155072630289/original/AConX-n4TJ-I89GPe1b-P1wD4wnZ7sw5Qw.png?1780327731)
-7. 선택한 카테고리의 콘텐츠를 맞춤 설정합니다.
+7. 선택한 카테고리의 콘텐츠를 맞춤 설정하세요.
 
    - 텍스트
    - 이미지
    - CTA 텍스트
    - CTA 링크
-8. 맞춤 설정할 카테고리마다 같은 과정을 반복합니다.
-9. 결과 페이지를 미리보기로 확인합니다.
-10. **저장 및 게시**를 클릭해 퀴즈를 게시합니다.
+8. 맞춤 설정할 카테고리마다 같은 과정을 반복해요.
+9. 결과 페이지를 미리보기로 확인하세요.
+10. **저장 및 게시**를 클릭해 퀴즈를 게시하세요.
 
 ## 자주 묻는 질문
 

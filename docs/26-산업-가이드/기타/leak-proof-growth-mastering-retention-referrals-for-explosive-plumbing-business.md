@@ -114,7 +114,7 @@
 예시 메시지:  
 *"저희 배관 서비스가 마음에 드셨나요? 친구를 소개해 주세요. 두 분 모두 다음 작업에서 50달러를 할인해 드려요! 이 링크를 보내 주시면 돼요: [추천 링크]"*
 
-#### [자동 추천 프로그램을 설정하는 방법](../Affiliates-Program/affiliate-referral-page-leads-customers-cancelled-statuses.md)
+#### 자동 추천 프로그램을 설정하는 방법
 
 ### 3.2 추천 후속 연락 자동화
 

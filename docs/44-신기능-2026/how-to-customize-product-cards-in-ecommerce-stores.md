@@ -12,9 +12,9 @@
 
 **Product Card Customization**(상품 카드 사용자 지정)을 쓰면 **Product List**(상품 목록), **Featured Products**(추천 상품), **컬렉션** 컴포넌트의 상품 카드 모양을 바꿀 수 있어요.
 
-1. **Store Builder**(스토어 빌더)를 엽니다.
-2. 지원하는 컴포넌트를 선택합니다.
-3. 컴포넌트 설정에서 **Product Card Customization**을 엽니다.
+1. **Store Builder**(스토어 빌더)를 여세요.
+2. 지원하는 컴포넌트를 선택하세요.
+3. 컴포넌트 설정에서 **Product Card Customization**을 여세요.
 
 {% hint style="info" %}
 이미 만들어 둔 상품 카드 레이아웃은 이 설정을 바꾸기 전까지 지금 스타일이나 기본 스타일을 그대로 유지해요.
@@ -42,7 +42,7 @@
 
 ### 이미지 비율과 호버 효과
 
-카드 안에서 상품 이미지가 어떻게 맞춰질지 **Square**(정사각형), **Portrait**(세로형), **Original**(원본) 중에서 고릅니다.
+카드 안에서 상품 이미지가 어떻게 맞춰질지 **Square**(정사각형), **Portrait**(세로형), **Original**(원본) 중에서 골라요.
 
 마우스를 올렸을 때의 효과도 정할 수 있어요.
 

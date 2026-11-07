@@ -9,6 +9,10 @@
 하이퍼클래스 WhatsApp 애드온의 요금 구조와 포함 기능을 정리하고, 다른 WhatsApp 서비스와 비교한 문서예요. WhatsApp 도입을 검토하거나 고객사에 안내할 때 참고하세요.
 
 {% hint style="info" %}
+문서에 나온 금액(달러)과 요금제 이름은 참고용이에요. 하이퍼클래스에서 실제로 적용되는 요금은 [요금제 안내](../00-자주묻는질문/pricing-plans.md)와 [AI·SMS·음성 사용료](../00-자주묻는질문/usage-costs.md)를 확인하세요.
+{% endhint %}
+
+{% hint style="info" %}
 **WhatsApp 요금 정보가 이동했어요.** 2026년 10월 1일부터 적용되는 청구 변경 사항을 반영해 WhatsApp 요금 정보를 업데이트했어요. 최신 메시지 요금, 무료 제공량, 재청구 정보는 [WhatsApp 요금, 청구 및 재청구 가이드](WhatsApp/whatsapp-pricing-billing-and-rebilling-guide.md)에서 확인하세요. 현재 WhatsApp 요금은 이 가이드를 가장 먼저 참고하세요.
 {% endhint %}
 

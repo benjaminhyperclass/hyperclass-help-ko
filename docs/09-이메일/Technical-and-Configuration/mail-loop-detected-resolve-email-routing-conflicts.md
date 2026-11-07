@@ -20,7 +20,7 @@
 
 ### 대표적인 루프 감지 메시지
 
-- "The message was rejected because it was caught in a routing loop between mail servers."(메일 서버 사이의 라우팅 루프에 걸려 메시지가 거부되었습니다.)
+- "The message was rejected because it was caught in a routing loop between mail servers."(메일 서버 사이의 라우팅 루프에 걸려 메시지가 거부되었어요.)
 
 ## 메일 루프의 원인
 

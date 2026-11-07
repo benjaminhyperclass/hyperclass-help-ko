@@ -8,6 +8,10 @@
 
 구매 전에 고객의 카드를 먼저 승인받고 싶을 때 쓰는 설정이에요. 이 문서는 예전 웹사이트 빌더(버전 1)에서 상품별로 카드 승인을 켜는 방법과 승인 방식을 안내해요.
 
+{% hint style="info" %}
+문서에 나온 금액(달러)과 요금제 이름은 참고용이에요. 하이퍼클래스에서 실제로 적용되는 요금은 [요금제 안내](../../00-자주묻는질문/pricing-plans.md)와 [AI·SMS·음성 사용료](../../00-자주묻는질문/usage-costs.md)를 확인하세요.
+{% endhint %}
+
 웹사이트 빌더 버전 2를 사용 중이라면 버전 2용 도움말을 참고하세요.
 
 ![웹사이트 빌더 버전 1 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48170360013/original/eTmb5y8-L8XBuNd_8XJ_b6lb7eldXSIU3Q.png?1639435259)

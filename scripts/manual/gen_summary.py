@@ -61,28 +61,71 @@ def title(p):
             return line[2:].strip().replace("[", "(").replace("]", ")")
     return os.path.splitext(os.path.basename(p))[0]
 
+ORDER_43 = ["README.md", "tosspayments-getting-started.md", "part0-website-check.md", "part1-preparation.md",
+            "part2-application.md", "part3-app-connection.md", "part4-products-test.md", "part5-payment-path-docs.md",
+            "part6-review-response.md", "tosspayments-installation.md", "faq-popup-blocker.md", "faq-cancel-refund.md",
+            "appendix.md", "kaka/README.md"]
+
+def entry(p, indent=""):
+    rel = os.path.relpath(p, R)
+    return f"{indent}* [{title(p)}]({rel.replace(' ', '%20')})"
+
+def emit_dir(d, base, indent=""):
+    """폴더 안 문서를 쓴다. 하위 폴더에 README.md 가 있으면 그 아래로 들여 쓴다(가이드 묶음)."""
+    lines, seen = [], set()
+    files = [f for f in os.listdir(d) if f.endswith(".md") and os.path.getsize(os.path.join(d, f)) > 0]
+    subdirs = sorted(x for x in os.listdir(d) if os.path.isdir(os.path.join(d, x)))
+    def k(f):
+        return (0 if f == "README.md" else 1, f if re.match(r"^(\d|part\d)", f) else title(os.path.join(d, f)))
+    if os.path.relpath(d, R) == "docs/43-한국-앱":
+        k = lambda f: (ORDER_43.index(f) if f in ORDER_43 else 99, title(os.path.join(d, f)))
+    flat = []
+    for sd in subdirs:
+        full = os.path.join(d, sd)
+        if os.path.exists(os.path.join(full, "README.md")):
+            continue
+        for p in glob.glob(f"{full}/**/*.md", recursive=True):
+            if os.path.getsize(p) > 0: flat.append(p)
+    for f in sorted(files, key=k):
+        lines.append(entry(os.path.join(d, f), indent)); seen.add(os.path.join(d, f))
+        if os.path.relpath(d, R) == "docs/43-한국-앱" and f == "appendix.md":
+            pass
+    for p in sorted(flat, key=lambda p: (os.path.relpath(os.path.dirname(p), d), title(p))):
+        lines.append(entry(p, indent)); seen.add(p)
+    for sd in subdirs:
+        full = os.path.join(d, sd)
+        if os.path.exists(os.path.join(full, "README.md")):
+            sub, sub_seen = emit_dir_group(full, indent)
+            lines += sub; seen |= sub_seen
+    return lines, seen
+
+def emit_dir_group(full, indent):
+    lines = [entry(os.path.join(full, "README.md"), indent)]
+    seen = {os.path.join(full, "README.md")}
+    children = [f for f in os.listdir(full) if f.endswith(".md") and f != "README.md" and os.path.getsize(os.path.join(full, f)) > 0]
+    for f in sorted(children, key=lambda f: f if re.match(r"^\d", f) else title(os.path.join(full, f))):
+        lines.append(entry(os.path.join(full, f), indent + "  ")); seen.add(os.path.join(full, f))
+    for p in glob.glob(f"{full}/*/**/*.md", recursive=True):
+        if p not in seen and os.path.getsize(p) > 0:
+            lines.append(entry(p, indent + "  ")); seen.add(p)
+    return lines, seen
+
 def main():
     out = ["# 하이퍼클래스 도움말", ""]
     if os.path.exists(f"{R}/README.md"):
         out += ["* [하이퍼클래스 도움말](README.md)", ""]
-    seen = set()
     known = {d for d, _ in SECTIONS}
     extra = sorted(d for d in os.listdir(f"{R}/docs") if os.path.isdir(f"{R}/docs/{d}") and d not in known)
+    total = 0
     for d, name in SECTIONS + [(d, d) for d in extra]:
-        files = [p for p in glob.glob(f"{R}/docs/{d}/**/*.md", recursive=True) if os.path.getsize(p) > 0]
-        if not files: continue
-        def key(p):
-            rel = os.path.relpath(p, f"{R}/docs/{d}")
-            sub = os.path.dirname(rel)
-            return (0 if rel == "README.md" else 1, sub, title(p))
-        out += [f"## {name}", ""]
-        for p in sorted(files, key=key):
-            rel = os.path.relpath(p, R)
-            seen.add(rel)
-            out.append(f"* [{title(p)}]({rel.replace(' ', '%20')})")
-        out.append("")
+        full = f"{R}/docs/{d}"
+        if not os.path.isdir(full): continue
+        lines, seen = emit_dir(full, full)
+        if not lines: continue
+        out += [f"## {name}", ""] + lines + [""]
+        total += len(seen)
     open(f"{R}/SUMMARY.md", "w", encoding="utf-8").write("\n".join(out))
-    print("pages", len(seen))
+    print("pages", total)
 
 if __name__ == "__main__":
     main()

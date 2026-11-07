@@ -228,7 +228,7 @@ HVAC용 블로그 만드는 방법
 #### 더 자세히 알아보기
 
 - [Flooded with Work: Google 검색을 장악하는 배관 업체 가이드](flooded-with-work-the-plumber-s-guide-to-dominating-google-search.md)
-- [Leak-Proof Growth: 재방문과 소개로 배관 사업을 폭발적으로 키우는 방법](../../21-어필리에이트/기타/leak-proof-growth-mastering-retention-referrals-for-explosive-plumbing-business.md)
+- [Leak-Proof Growth: 재방문과 소개로 배관 사업을 폭발적으로 키우는 방법](../기타/leak-proof-growth-mastering-retention-referrals-for-explosive-plumbing-business.md)
 - [PipeLine Profits: 배관 업체 일정을 꽉 채우는 검증된 광고 전략](../../05-기회-파이프라인/기타/pipeline-profits-the-proven-ads-strategy-to-keep-your-plumbing-business-booked-s.md)
 - [Pipes, Posts & Profits: 배관 업체 소셜 미디어 장악 플레이북](pipes-posts-profits-the-plumbing-social-media-domination-playbook.md)
 - [Pipeline to Profits: 배관 업체 콘텐츠 플레이북](pipeline-to-profits-the-plumbing-business-content-playbook.md)

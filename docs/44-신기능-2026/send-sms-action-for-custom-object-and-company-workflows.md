@@ -16,17 +16,17 @@
 
 ## SMS 전송 액션 추가하고 설정하기
 
-1. **자동화 > 워크플로우**로 이동해 사용자 지정 객체 워크플로우나 회사 워크플로우를 엽니다.
-2. 액션을 넣을 위치에서 액션을 추가하고 **Communication**(커뮤니케이션) > **SMS 전송**을 선택합니다.
-3. **SMS recipients**(SMS 수신자) 옵션을 하나 고르고, **연결 라벨**을 하나 이상 선택합니다.
-4. **템플릿을 선택하세요**에서 템플릿을 고르거나, **None**(없음)을 선택해 **Message**(메시지)를 직접 씁니다. **custom value picker**(커스텀 값 선택기)를 쓰면 등록된 사용자 지정 객체 필드나 회사 필드를 받는 연락처 필드와 함께 넣을 수 있어요. 필요하면 **첨부 파일 추가**를 사용하세요.
-5. **Save action**(액션 저장)을 선택합니다. 게시하기 전에 받는 사람 규칙과 워크플로우의 나머지 부분을 한 번 더 확인하세요.
+1. **자동화 > 워크플로우**로 이동해 사용자 지정 객체 워크플로우나 회사 워크플로우를 여세요.
+2. 액션을 넣을 위치에서 액션을 추가하고 **Communication**(커뮤니케이션) > **SMS 전송**을 선택하세요.
+3. **SMS recipients**(SMS 수신자) 옵션을 하나 고르고, **연결 라벨**을 하나 이상 선택하세요.
+4. **템플릿을 선택하세요**에서 템플릿을 고르거나, **None**(없음)을 선택해 **Message**(메시지)를 직접 쓰세요. **custom value picker**(커스텀 값 선택기)를 쓰면 등록된 사용자 지정 객체 필드나 회사 필드를 받는 연락처 필드와 함께 넣을 수 있어요. 필요하면 **첨부 파일 추가**를 사용하세요.
+5. **Save action**(액션 저장)을 선택하세요. 게시하기 전에 받는 사람 규칙과 워크플로우의 나머지 부분을 한 번 더 확인하세요.
 
-**1단계:** 회사 워크플로우나 사용자 지정 객체 워크플로우에서 +를 클릭해 액션을 추가합니다.
+**1단계:** 회사 워크플로우나 사용자 지정 객체 워크플로우에서 +를 클릭해 액션을 추가해요.
 
 ![액션 추가 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084190781/original/E9EphtBGzI7oE-Ha9eOrO2aBEkj4PQ4DTQ.png?1793012513)
 
-**2단계:** **Communication** 아래에서 **SMS 전송**을 선택합니다.
+**2단계:** **Communication** 아래에서 **SMS 전송**을 선택해요.
 
 ![Communication 아래의 SMS 전송 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084190811/original/ZvCr2L3TfZ8KI6ZRrTa_dpzsw5WIr6wODA.png?1793012526)
 
@@ -38,7 +38,7 @@
 
 '가장 최근'과 '가장 먼저'는 연락처 레코드를 만든 시점이 아니라 레코드와 연결된 시점을 기준으로 해요. 선택한 라벨이 여러 개 겹치는 연락처도 액션을 한 번 실행할 때 SMS를 한 번만 받아요.
 
-**3단계:** SMS를 받을 사람을 선택합니다. 연결된 모든 연락처, 가장 최근에 연결된 연락처, 가장 먼저 연결된 연락처 중에서 고르세요.
+**3단계:** SMS를 받을 사람을 선택해요. 연결된 모든 연락처, 가장 최근에 연결된 연락처, 가장 먼저 연결된 연락처 중에서 고르세요.
 
 ![SMS 받는 사람 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084190818/original/WfAt5JVE6dX4UXL8Ycse3OP3feUjSp5Y9w.png?1793012533)
 
@@ -50,7 +50,7 @@
 
 **주 회사**를 다른 라벨과 함께 선택하면 액션은 **연결된 모든 연락처**로 동작해요. 이 조합에서는 **가장 최근에 연결된 연락처**와 **가장 먼저 연결된 연락처**를 쓸 수 없어요. 라벨을 바꾼 뒤에는 화면에 나오는 안내를 확인하세요.
 
-**4단계:** 연결 라벨을 하나 이상 선택합니다.
+**4단계:** 연결 라벨을 하나 이상 선택해요.
 
 ![연결 라벨 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084191186/original/KzEbGhXvpHCXbwO1SE245MUhfqEHrXvhlw.png?1793012663)
 
@@ -58,11 +58,11 @@
 
 ![라벨 조합 시 수신 대상 안내](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084191206/original/7jg3-jcU7mcCkD4mwpsLvoZfJVm8j-0pqQ.png?1793012682)
 
-**6단계:** 메시지를 씁니다. **custom value picker**로 메시지를 개인화하세요.
+**6단계:** 메시지를 써요. **custom value picker**로 메시지를 개인화하세요.
 
 ![메시지 작성과 커스텀 값 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084191237/original/_uDo3flr_YFunMvI5r7YxnP-H1UN0v6zsA.png?1793012686)
 
-**7단계:** **Save action**을 클릭합니다.
+**7단계:** **Save action**을 클릭해요.
 
 ![Save action 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084191248/original/aFpHutJKiEJIifpw64T_3N7iBVzOr6mcbw.png?1793012690)
 

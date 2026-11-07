@@ -39,9 +39,9 @@
 
 새 버전을 적용하려면 다음 순서로 진행하세요.
 
-1. 마켓플레이스에서 설치한 앱을 엽니다.
-2. 제공된 업데이트 내용을 확인합니다.
-3. 적용할 준비가 되면 **업데이트**를 클릭합니다.
+1. 마켓플레이스에서 설치한 앱을 여세요.
+2. 제공된 업데이트 내용을 확인하세요.
+3. 적용할 준비가 되면 **업데이트**를 클릭하세요.
 
 이제 라이브 상태에서 직접 수정하는 대신, 버전이 관리되는 마켓플레이스 업데이트로 템플릿 개선 사항을 반영할 수 있어요.
 
@@ -89,7 +89,7 @@
 
 ### A) 대화 AI·음성 AI 템플릿 등록하기 (만든 사람용)
 
-1. **대화 AI** 또는 **음성 AI**에서 에이전트를 선택하고 **Sell Template on Marketplace**(마켓플레이스에서 템플릿 판매)를 클릭합니다. 에이전시 소유자와 관리자만 쓸 수 있어요.
+1. **대화 AI** 또는 **음성 AI**에서 에이전트를 선택하고 **Sell Template on Marketplace**(마켓플레이스에서 템플릿 판매)를 클릭하세요. 에이전시 소유자와 관리자만 쓸 수 있어요.
 
    ![에이전트 화면의 템플릿 판매 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059002349/original/rXNNRxwBHFoNBIqWVtw-VBaROjaEpTOUJA.png?1763823121)
 2. 개발자 포털로 연결되는 링크를 따라가세요. 로그인하거나 가입하면 돼요. 등록 정보가 미리 채워질 수 있어요. 나머지 항목을 채우고 검토를 요청하세요.
@@ -104,19 +104,19 @@
 
 ### B) 템플릿 찾아서 설치하기 (구매자용)
 
-1. 서브 계정에서 **AI 에이전트** > **대화 AI** 또는 **음성 AI**로 이동하고, **봇 만들기** 또는 **Create Agent**(에이전트 만들기)를 클릭합니다.
+1. 서브 계정에서 **AI 에이전트** > **대화 AI** 또는 **음성 AI**로 이동하고, **봇 만들기** 또는 **Create Agent**(에이전트 만들기)를 클릭하세요.
 
    ![AI 에이전트 메뉴에서 봇 만들기를 클릭하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059001598/original/Fw57eKBUN35nQNHf3DqUIQlDcVVTVhP1tQ.png?1763821117)
-2. **프롬프트 기반 봇** > **마켓플레이스 템플릿**을 선택하고 목록을 둘러봅니다.
+2. **프롬프트 기반 봇** > **마켓플레이스 템플릿**을 선택하고 목록을 둘러보세요.
 
    ![마켓플레이스 템플릿 목록을 둘러보는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059001656/original/htpiJhKa3F2B49FN055axl4edAAnsNBB-Q.gif?1763821224)
-3. 카드를 열어 아바타, 사용 사례, 설명, 설치 수, 평점 같은 상세 정보를 확인합니다.
+3. 카드를 열어 아바타, 사용 사례, 설명, 설치 수, 평점 같은 상세 정보를 확인하세요.
 
    ![템플릿 카드의 상세 정보 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059001771/original/9-Z05pnmvkvL8hlUv2FPFgQ7N4UTvTMN7w.gif?1763821535)
-4. 대화 AI 템플릿은 내장 채팅 미리보기에서 직접 테스트합니다.
+4. 대화 AI 템플릿은 내장 채팅 미리보기에서 직접 테스트해요.
 
    ![내장 채팅 미리보기로 테스트하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059001812/original/gFCfWi-QZSXiMI3rZqKGRl6TY3vyUGCBEw.gif?1763821709)
-5. **설치**를 클릭한 뒤, 안내에 따라 함께 담긴 자산을 확인하고 설치를 마칩니다.
+5. **설치**를 클릭한 뒤, 안내에 따라 함께 담긴 자산을 확인하고 설치를 마치세요.
 
 {% hint style="info" %}
 **모범 사례**

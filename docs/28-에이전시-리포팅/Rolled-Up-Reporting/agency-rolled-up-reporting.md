@@ -8,6 +8,10 @@
 
 서브 계정의 주요 데이터를 에이전시 계정으로 모아 한곳에서 볼 수 있어요. 에이전시에 속한 모든 서브 계정의 성과를 한눈에 확인할 때 쓰세요.
 
+{% hint style="info" %}
+문서에 나온 금액(달러)과 요금제 이름은 참고용이에요. 하이퍼클래스에서 실제로 적용되는 요금은 [요금제 안내](../../00-자주묻는질문/pricing-plans.md)와 [AI·SMS·음성 사용료](../../00-자주묻는질문/usage-costs.md)를 확인하세요.
+{% endhint %}
+
 ![에이전시 통합 리포팅 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48258801812/original/_7pV4LsbZzmunPZEuDah4_mzQbkbKWZndg.gif?1666621167)
 
 {% hint style="info" %}

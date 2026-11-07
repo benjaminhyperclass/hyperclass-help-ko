@@ -47,7 +47,7 @@
    1. 로그인을 시도하는 화면에서 페이지를 검사(Inspect)해요.
    2. Network 탭을 열어요.
    3. 전송되는 요청을 Loom으로 녹화하고, API 응답이 보이게 해 주세요.
-   4. [하이퍼클래스 고객지원](../20-고객지원/General-Support-Info/24-7-customer-support-options.md)에 문의해 티켓을 열고, 아래 영상처럼 녹화한 Loom 영상을 보내 주세요.
+   4. 하이퍼클래스 고객지원에 문의해 티켓을 열고, 아래 영상처럼 녹화한 Loom 영상을 보내 주세요.
 
 ---
 
@@ -55,7 +55,7 @@
 
 ![보안 코드를 보낼 수 없다는 오류 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48208336001/original/hd-njyZxcCzRRNN6-YVAEahHCLRPy52sUQ.png?1648508301)
 
-로그인하려는 사용자에게 2FA 코드를 문자로 보내려면 사용자 전화번호가 등록되어 있어야 해요. 에이전시 관리자에게 해당 사용자의 전화번호를 추가해 달라고 요청하세요. 에이전시 관리자가 본인뿐이라면 [하이퍼클래스 고객지원](../20-고객지원/General-Support-Info/24-7-customer-support-options.md)에 문의해 주세요. 사용자 전화번호를 대신 업데이트해 드려요.
+로그인하려는 사용자에게 2FA 코드를 문자로 보내려면 사용자 전화번호가 등록되어 있어야 해요. 에이전시 관리자에게 해당 사용자의 전화번호를 추가해 달라고 요청하세요. 에이전시 관리자가 본인뿐이라면 하이퍼클래스 고객지원에 문의해 주세요. 사용자 전화번호를 대신 업데이트해 드려요.
 
 이메일 인증이 되지 않을 때는 아래 영상을 참고하세요.
 
@@ -111,7 +111,7 @@
 
    ![Chrome에서 사이트 데이터를 지우는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155022406765/original/dVbD6_BoWBFbPRBvNHEZb8UEqddug13kOA.png?1709769796)
 
-4. 브라우저를 새로고침하고 다시 로그인해 보세요. 그래도 로그인할 수 없다면 [하이퍼클래스 고객지원](../20-고객지원/General-Support-Info/24-7-customer-support-options.md)에 문의하세요.
+4. 브라우저를 새로고침하고 다시 로그인해 보세요. 그래도 로그인할 수 없다면 하이퍼클래스 고객지원에 문의하세요.
 
 ### Safari에서 사이트 데이터 지우기
 
@@ -131,4 +131,4 @@
 
    ![Local Storage에서 휴지통 아이콘으로 데이터를 지우는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155022407114/original/0vJPTlj6kLu2t92xPgEfgThlhYixP8FEqg.png?1709770754)
 
-5. 브라우저를 새로고침하고 다시 로그인해 보세요. 그래도 로그인할 수 없다면 [하이퍼클래스 고객지원](../20-고객지원/General-Support-Info/24-7-customer-support-options.md)에 문의하세요.
+5. 브라우저를 새로고침하고 다시 로그인해 보세요. 그래도 로그인할 수 없다면 하이퍼클래스 고객지원에 문의하세요.

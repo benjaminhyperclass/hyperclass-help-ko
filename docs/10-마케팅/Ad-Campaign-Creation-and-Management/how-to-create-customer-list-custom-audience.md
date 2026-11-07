@@ -14,10 +14,10 @@
 
 1. ### 캠페인을 만드는 중에 만들기
 
-   - 광고 세트 단계에서 **Audience Controls**(오디언스 컨트롤)로 이동한 뒤 **Intended Audience**(대상 오디언스) 섹션을 엽니다.
+   - 광고 세트 단계에서 **Audience Controls**(오디언스 컨트롤)로 이동한 뒤 **Intended Audience**(대상 오디언스) 섹션을 여세요.
 
      ![광고 세트의 대상 오디언스 섹션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051625719/original/IUicvaGBvMEv3h3e6zj9sIt_57Rv-WHk-Q.png?1755176224)
-   - **리타겟팅** 탭에서 **리타겟팅 오디언스 새로 만들기 또는 선택** 드롭다운을 클릭하고 **Create a Custom Audience**(맞춤 잠재고객 만들기)를 선택합니다.
+   - **리타겟팅** 탭에서 **리타겟팅 오디언스 새로 만들기 또는 선택** 드롭다운을 클릭하고 **Create a Custom Audience**(맞춤 잠재고객 만들기)를 선택하세요.
 
      ![리타겟팅 탭의 드롭다운에서 맞춤 잠재고객 만들기 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051625765/original/hBRo2x5sMOvbXvLmIE0_DGvt4JHZ9sVCZA.png?1755176271)
 2. ### 광고 관리자 설정에서 만들기
@@ -52,7 +52,7 @@ Meta 고객 리스트 맞춤 잠재고객은 이메일, 전화번호 같은 보�
 
 고객 리스트 맞춤 잠재고객은 두 단계로 만들어요.
 
-1. (캠페인 만드는 화면 또는 **오디언스** 탭에서) **Create a Custom Audience**(맞춤 잠재고객 만들기)를 클릭합니다.
+1. (캠페인 만드는 화면 또는 **오디언스** 탭에서) **Create a Custom Audience**(맞춤 잠재고객 만들기)를 클릭하세요.
 
    ![맞춤 잠재고객 만들기 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051625884/original/OFCWvUoFLruMb-ReaqPJHeaiBWAdMW8HWA.png?1755176333)
 2. 소스로 **Customer List**(고객 리스트)를 선택하고 다음으로 넘어갑니다.
@@ -65,7 +65,7 @@ Meta 고객 리스트 맞춤 잠재고객은 이메일, 전화번호 같은 보�
 
 ### 1. CSV 업로드
 
-- 고객 데이터가 담긴 CSV 파일을 업로드합니다.
+- 고객 데이터가 담긴 CSV 파일을 업로드하세요.
 - [Meta의 형식 가이드](https://www.facebook.com/business/help/2082575038703844?id=2469097953376494)를 따라 주세요.
 - 제공되는 샘플 파일을 참고하면 데이터를 올바르게 준비할 수 있어요.
 
@@ -91,15 +91,15 @@ Meta 고객 리스트 맞춤 잠재고객은 이메일, 전화번호 같은 보�
 
 만드는 순서:
 
-1. **Use Smart List**(스마트 리스트 사용)를 선택합니다.
-2. 드롭다운에서 스마트 리스트를 하나 이상 선택합니다. **연락처**에서 미리 만들어 둔 스마트 리스트만 선택할 수 있어요.
-3. **Advanced Conditions**(고급 조건)에서 다음 중 하나를 선택합니다.
+1. **Use Smart List**(스마트 리스트 사용)를 선택하세요.
+2. 드롭다운에서 스마트 리스트를 하나 이상 선택하세요. **연락처**에서 미리 만들어 둔 스마트 리스트만 선택할 수 있어요.
+3. **Advanced Conditions**(고급 조건)에서 다음 중 하나를 선택하세요.
 
    - **No, only include the contacts currently on the Smart List**(아니요, 현재 스마트 리스트에 있는 연락처만 포함): 정적
    - **예, 동적 업데이트 포함**: 동적
-4. 전체 연락처 수를 확인합니다.
-5. 오디언스 이름을 입력하고, 필요하면 설명도 입력합니다.
-6. **Create Audience**(오디언스 만들기)를 클릭합니다. 요약 화면에 정적 오디언스인지 동적 오디언스인지 표시돼요.
+4. 전체 연락처 수를 확인하세요.
+5. 오디언스 이름을 입력하고, 필요하면 설명도 입력하세요.
+6. **Create Audience**(오디언스 만들기)를 클릭하세요. 요약 화면에 정적 오디언스인지 동적 오디언스인지 표시돼요.
 
 ## 알아 두세요
 

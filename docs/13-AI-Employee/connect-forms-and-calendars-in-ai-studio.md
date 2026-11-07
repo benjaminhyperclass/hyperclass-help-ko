@@ -96,13 +96,13 @@ AI 스튜디오의 폼은 처음에는 프런트엔드 레이아웃으로만 만
 
 워크플로우는 다음과 같이 설정해요.
 
-1. **자동화 > 워크플로우**로 이동해 새 워크플로우를 만들거나 기존 워크플로우를 엽니다.
-2. **Add New Trigger**(새 트리거 추가)를 클릭합니다.
-3. **AI Studio Form Submitted**(AI 스튜디오 폼 제출)를 검색해서 선택합니다.
+1. **자동화 > 워크플로우**로 이동해 새 워크플로우를 만들거나 기존 워크플로우를 여세요.
+2. **Add New Trigger**(새 트리거 추가)를 클릭하세요.
+3. **AI Studio Form Submitted**(AI 스튜디오 폼 제출)를 검색해서 선택하세요.
 
    ![AI Studio Form Submitted 트리거 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155082941344/original/AyMZhWzo41MAe2pMPZsQs1GBWBVm-1SGLg.png?1791544992)
-4. 어떤 폼 제출이 워크플로우를 시작할지 정하려면 필요에 따라 필터를 추가합니다.
-5. 폼이 제출된 뒤 실행할 워크플로우 액션을 추가합니다. 준비가 되면 워크플로우를 저장하고 게시하세요.
+4. 어떤 폼 제출이 워크플로우를 시작할지 정하려면 필요에 따라 필터를 추가하세요.
+5. 폼이 제출된 뒤 실행할 워크플로우 액션을 추가하세요. 준비가 되면 워크플로우를 저장하고 게시하세요.
 
    ![폼 제출 후 실행할 워크플로우 액션 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155082941343/original/yOXohyEQjmgDMiMFzGYRHnALclvTd-yTlw.png?1791544992)
 
@@ -130,10 +130,10 @@ AI 스튜디오는 표준 캘린더 위젯을 그대로 넣는 대신, 프런트
 
 캘린더를 연결하면 페이지의 예약 섹션이 실제로 일정을 받는 화면이 돼요. 일정 예약 기능을 직접 만들 필요 없이, AI 스튜디오가 서브 계정에 있는 캘린더를 연결하도록 도와줘요.
 
-1. AI 스튜디오에 예약 중심 페이지나 일정 예약 섹션을 만들어 달라고 요청합니다.
-2. 채팅에서 안내가 나오면 서브 계정에서 사용할 캘린더를 선택합니다.
-3. 선택한 캘린더를 페이지 구성 요소에 연결합니다.
-4. 예약 화면을 미리보기로 확인하고 테스트합니다.
+1. AI 스튜디오에 예약 중심 페이지나 일정 예약 섹션을 만들어 달라고 요청해요.
+2. 채팅에서 안내가 나오면 서브 계정에서 사용할 캘린더를 선택하세요.
+3. 선택한 캘린더를 페이지 구성 요소에 연결하세요.
+4. 예약 화면을 미리보기로 확인하고 테스트해요.
 
 ![캘린더를 페이지에 연결하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155068284764/original/6iugIWnPI-GnOtwjnSlQCDhz1yHL-Wu2fg.png?1775060780)
 

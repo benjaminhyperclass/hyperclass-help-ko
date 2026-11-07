@@ -34,19 +34,19 @@
 
 아래 순서대로 설정하면 빠르게 만들 수 있고, 여러 페이지에서 가격을 일관되게 유지할 수 있어요.
 
-1. 서브 계정 왼쪽 메뉴에서 **사이트**를 클릭하고, 가격표를 넣을 퍼널이나 웹사이트를 엽니다. 해당 페이지의 파란색 **편집** 버튼을 클릭해 페이지 빌더를 엽니다.
+1. 서브 계정 왼쪽 메뉴에서 **사이트**를 클릭하고, 가격표를 넣을 퍼널이나 웹사이트를 여세요. 해당 페이지의 파란색 **편집** 버튼을 클릭해 페이지 빌더를 여세요.
 
    ![사이트 메뉴에서 페이지 편집 버튼을 클릭하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053691733/original/VC4L91-VZN3tIpoEPJMgWKHpxQ8pkP9ZQQ.png?1757698028)
 2. **Elements**(요소) 패널에서 **Pricing Table**을 캔버스로 끌어다 놓습니다. 요소를 끌어다 놓는 방법은 [자동 계층 레이아웃으로 끌어다 놓기](drag-and-drop-with-auto-hierarchical-layout-in-funnel-website-builder.md)에서 더 볼 수 있어요.
 
    ![가격표 요소를 캔버스로 끌어다 놓는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053305519/original/zAldnKQPIgXaNRHEy6Fl20qX2yxJJYVtYA.gif?1757341448)
-3. 오른쪽 설정 막대에서 **그리드**, **캐러셀**, **클래식**, **Comparison** 중 하나를 선택합니다.
+3. 오른쪽 설정 막대에서 **그리드**, **캐러셀**, **클래식**, **Comparison** 중 하나를 선택하세요.
 
    ![오른쪽 설정 막대에서 레이아웃을 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053322294/original/JAGhBNsHYRyAvO5okG3-NgDyMkPs-GIwrw.png?1757352474)
-4. **레이아웃**(가격, 기능, 버튼 등)과 **스타일**을 설정합니다.
+4. **레이아웃**(가격, 기능, 버튼 등)과 **스타일**을 설정하세요.
 
    ![가격표 레이아웃과 스타일을 설정하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053691242/original/GigWLk63VmdwkkJ3AdSXGPi-IDMABBlU1w.png?1757697302)
-5. **데스크톱**과 **모바일** 미리보기로 화면이 잘 맞는지 확인한 뒤 **저장**하고 **게시**합니다.
+5. **데스크톱**과 **모바일** 미리보기로 화면이 잘 맞는지 확인한 뒤 **저장**하고 **게시**해요.
 
    ![데스크톱과 모바일 미리보기 후 저장하고 게시하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053675368/original/abInH4Z6V5QvNPbtH7iusKr9t5iJojvC8Q.png?1757687698)
 

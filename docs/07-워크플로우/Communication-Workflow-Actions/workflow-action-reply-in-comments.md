@@ -18,10 +18,10 @@ Facebook이나 Instagram 계정의 게시물에는 댓글이 달려요. 이런 �
 
 ## 이 액션은 어디에 있나요?
 
-1. 왼쪽 메뉴에서 **자동화 > 워크플로우**로 이동해 워크플로우 빌더를 엽니다.
-2. 빌더에서 **Actions**(액션)를 선택합니다.
-3. **Communication**(커뮤니케이션)을 선택합니다.
-4. **Reply In Comments**를 선택합니다.
+1. 왼쪽 메뉴에서 **자동화 > 워크플로우**로 이동해 워크플로우 빌더를 여세요.
+2. 빌더에서 **Actions**(액션)를 선택하세요.
+3. **Communication**(커뮤니케이션)을 선택하세요.
+4. **Reply In Comments**를 선택하세요.
 
 ![워크플로우 빌더에서 Reply In Comments 액션을 찾는 화면 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041689521/original/_crQZmWN0VdXKdvGlXXOJg55CGKKa0WbiQ.png?1739767440)
 

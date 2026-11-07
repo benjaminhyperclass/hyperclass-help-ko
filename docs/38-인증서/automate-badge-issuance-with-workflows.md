@@ -59,19 +59,19 @@
 
 배지를 자동으로 발급하려면 워크플로우에 **Issue Badge** 액션을 설정해요. 다음 단계를 따라 하세요.
 
-1. **자동화 > 워크플로우**로 이동해서 새 워크플로우를 만들거나, 배지 발급을 추가할 기존 워크플로우를 엽니다.
+1. **자동화 > 워크플로우**로 이동해서 새 워크플로우를 만들거나, 배지 발급을 추가할 기존 워크플로우를 여세요.
 
    ![워크플로우 목록 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155079017207/original/N3lwClH59-QV_ArKnfMT8PVfM-tfMkEONw.png?1787320482)
 
-2. 워크플로우 빌더에서 새 액션을 추가합니다. 사용할 수 있는 액션 목록에서 **Issue Badge**(배지 발급)를 검색해 선택하세요.
+2. 워크플로우 빌더에서 새 액션을 추가하세요. 사용할 수 있는 액션 목록에서 **Issue Badge**(배지 발급)를 검색해 선택하세요.
 
    ![액션 목록에서 Issue Badge 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155079017388/original/77AKgpbotR8ce2sb0qyjHxfuYYmJtToCPg.png?1787320557)
 
-3. 드롭다운 메뉴에서 워크플로우가 이 액션에 도달했을 때 발급할 배지를 선택합니다. 계정에 설정된 활성 배지만 목록에 나타나요.
+3. 드롭다운 메뉴에서 워크플로우가 이 액션에 도달했을 때 발급할 배지를 선택하세요. 계정에 설정된 활성 배지만 목록에 나타나요.
 
    ![발급할 배지 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155079017291/original/S294ffEdnbmzXiGOxRR_HlyDqu6wTmqipA.png?1787320515)
 
-4. 변경사항을 저장하고 워크플로우를 활성화합니다. 이제 워크플로우 조건이 충족되고 액션에 도달할 때마다 배지가 자동으로 발급돼요.
+4. 변경사항을 저장하고 워크플로우를 활성화하세요. 이제 워크플로우 조건이 충족되고 액션에 도달할 때마다 배지가 자동으로 발급돼요.
 
 {% hint style="info" %}
 배지가 발급된 뒤의 후속 작업을 설정하려면 **Badge Issued** 트리거를 쓰는 워크플로우를 따로 만드세요. 워크플로우를 시작할 배지를 선택한 다음, 이메일 보내기, 연락처 필드 업데이트, 추가 자동화 시작 같은 액션을 추가하면 돼요. 후속 시나리오별로 같은 배지를 **Badge Issued** 트리거에 지정한 워크플로우를 여러 개 만들 수도 있어요.

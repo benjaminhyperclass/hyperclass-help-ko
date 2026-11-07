@@ -152,7 +152,7 @@ AI 기반 리뷰 필터링을 사용해요.
 
 하이퍼클래스의 워크플로우로 계약 2주 뒤에 소개 요청 메시지가 자동 발송되게 설정하세요.
 
-#### [자동 소개 프로그램 설정 방법](../../21-어필리에이트/Affiliates-Program/affiliate-referral-page-leads-customers-cancelled-statuses.md)
+#### 자동 소개 프로그램 설정 방법
 
 ---
 

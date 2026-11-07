@@ -47,16 +47,16 @@ Meta 비즈니스 포트폴리오가 없다면 Meta의 공식 안내를 따라 �
 
 사용하려는 Meta 광고 계정과 페이지에 이미 접근 권한이 있는 Facebook 프로필을 사용하세요.
 
-1. 올바른 하이퍼클래스 서브 계정을 엽니다.
-2. **마케팅 > 광고 관리자**로 이동합니다.
-3. 안내가 나타나면 **광고 관리자 활성화**를 클릭합니다.
-4. 설정 화면에서 **Facebook 연결**을 클릭합니다.
-5. 올바른 Facebook 프로필로 로그인하고 승인을 완료합니다.
-6. 승인하는 동안 해당하는 Facebook 페이지를 모두 선택된 상태로 둡니다.
-7. 사용할 **Meta ads account**(Meta 광고 계정)를 선택합니다.
-8. 사용할 Facebook 페이지를 선택합니다.
-9. **연결**을 클릭합니다.
-10. 두 자산이 모두 연결됨으로 표시되면 **시작하기**를 클릭합니다.
+1. 올바른 하이퍼클래스 서브 계정을 여세요.
+2. **마케팅 > 광고 관리자**로 이동하세요.
+3. 안내가 나타나면 **광고 관리자 활성화**를 클릭하세요.
+4. 설정 화면에서 **Facebook 연결**을 클릭하세요.
+5. 올바른 Facebook 프로필로 로그인하고 승인을 완료하세요.
+6. 승인하는 동안 해당하는 Facebook 페이지를 모두 선택된 상태로 두세요.
+7. 사용할 **Meta ads account**(Meta 광고 계정)를 선택하세요.
+8. 사용할 Facebook 페이지를 선택하세요.
+9. **연결**을 클릭하세요.
+10. 두 자산이 모두 연결됨으로 표시되면 **시작하기**를 클릭하세요.
 
 ![Facebook 연결 설정 화면 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081372655/original/8LdGpL4X8qDywwYu5oe1VBCXEiUJDpr26g.png?1789857354)
 ![Facebook 연결 설정 화면 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081372658/original/3m2tF5qv_ui1TJiDExCZrNtZaTWOAaYbIg.png?1789857367)
@@ -65,12 +65,12 @@ Meta 비즈니스 포트폴리오가 없다면 Meta의 공식 안내를 따라 �
 
 처음 설정을 마친 뒤에도 **광고 관리자** 활성화 과정을 처음부터 다시 하지 않고 페이지를 더 추가할 수 있어요.
 
-1. **마케팅 > 광고 관리자**로 이동합니다.
-2. **설정 > 플랫폼 설정**을 엽니다.
-3. **Facebook pages**(Facebook 페이지) 섹션을 찾습니다.
-4. **+ Facebook 페이지 연결**을 클릭합니다.
-5. Facebook 승인을 완료합니다.
-6. 추가할 페이지를 선택합니다.
+1. **마케팅 > 광고 관리자**로 이동하세요.
+2. **설정 > 플랫폼 설정**을 여세요.
+3. **Facebook pages**(Facebook 페이지) 섹션을 찾으세요.
+4. **+ Facebook 페이지 연결**을 클릭하세요.
+5. Facebook 승인을 완료하세요.
+6. 추가할 페이지를 선택하세요.
 
 {% hint style="warning" %}
 같은 Facebook 프로필로 다시 연결할 때는 이전에 승인한 페이지를 선택된 상태로 두세요.
@@ -92,13 +92,13 @@ Meta 비즈니스 포트폴리오가 없다면 Meta의 공식 안내를 따라 �
 
 그래도 필요한 페이지가 보이지 않으면 Facebook에서 하이퍼클래스 비즈니스 연동을 확인하세요.
 
-1. Facebook에서 **Settings & privacy**(설정 및 개인정보) > **Settings**(설정)를 엽니다.
-2. **Business Integrations**(비즈니스 연동)를 엽니다.
-3. **하이퍼클래스**를 찾습니다.
-4. **View and edit**(보기 및 편집)을 클릭합니다.
-5. 필요한 권한이 켜져 있는지 확인합니다.
-6. 해당하는 Facebook 페이지가 모두 선택되어 있는지 확인합니다.
-7. **저장**을 클릭합니다.
+1. Facebook에서 **Settings & privacy**(설정 및 개인정보) > **Settings**(설정)를 여세요.
+2. **Business Integrations**(비즈니스 연동)를 여세요.
+3. **하이퍼클래스**를 찾으세요.
+4. **View and edit**(보기 및 편집)을 클릭하세요.
+5. 필요한 권한이 켜져 있는지 확인해요.
+6. 해당하는 Facebook 페이지가 모두 선택되어 있는지 확인해요.
+7. **저장**을 클릭하세요.
 
 ![Facebook 비즈니스 연동 권한 확인 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081372648/original/kdMvaSBtlMCV6ACO8od_yXVXJ3JtIxiD7Q.png?1789857267)
 
@@ -110,10 +110,10 @@ Meta 비즈니스 포트폴리오가 없다면 Meta의 공식 안내를 따라 �
 
 ### 잘못된 Facebook 프로필로 연결했어요
 
-1. 잘못된 Facebook 프로필에서 로그아웃합니다.
-2. 필요한 Meta 자산에 접근할 수 있는 프로필로 로그인합니다.
-3. **광고 관리자**로 돌아와 Facebook을 다시 연결합니다.
-4. 올바른 광고 계정과 페이지를 선택합니다.
+1. 잘못된 Facebook 프로필에서 로그아웃해요.
+2. 필요한 Meta 자산에 접근할 수 있는 프로필로 로그인해요.
+3. **광고 관리자**로 돌아와 Facebook을 다시 연결하세요.
+4. 올바른 광고 계정과 페이지를 선택하세요.
 
 ## 자주 묻는 질문
 

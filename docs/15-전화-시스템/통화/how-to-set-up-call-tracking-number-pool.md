@@ -22,7 +22,7 @@
 
 ### 1단계. 설정 > 전화번호 열기
 
-왼쪽 메뉴에서 **설정**을 엽니다.
+왼쪽 메뉴에서 **설정**을 열어요.
 
 ![설정 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035553055/original/C6klWkTlntyoKouYxf_cuwjfuRcXa_2v3A.png?1730118765)
 
@@ -128,7 +128,7 @@ Twilio 또는 하이퍼클래스 전화번호는 착신 번호로 쓸 수 없어
 
 ### 1단계. 번호 풀에서 스니펫 복사
 
-**번호 풀**로 이동하세요. 사용할 번호 풀에서 점 세 개 아이콘을 클릭합니다.
+**번호 풀**로 이동하세요. 사용할 번호 풀에서 점 세 개 아이콘을 클릭해요.
 
 ![번호 풀로 이동](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035604138/original/wEcLv3jCTow4lVT_3tCF2Jl80OoaL4VpIA.png?1730188747)
 ![번호 풀 점 세 개 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035604533/original/SnnfA1hQ0EK2d4cskqQGtTPxRnd8y4IT2g.png?1730189043)
@@ -151,7 +151,7 @@ Twilio 또는 하이퍼클래스 전화번호는 착신 번호로 쓸 수 없어
 
 ![퍼널 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035992387/original/E_zhEm3F7yGO9iFYQnRkJe_-OYzugI8qKw.png?1730791942)
 
-퍼널이나 웹사이트 안으로 들어가서 **설정** 탭을 클릭하세요. 복사한 일반 스니펫을 **Body Tracking code**(본문 트래킹 코드) 입력란 맨 아래에 붙여 넣습니다.
+퍼널이나 웹사이트 안으로 들어가서 **설정** 탭을 클릭하세요. 복사한 일반 스니펫을 **Body Tracking code**(본문 트래킹 코드) 입력란 맨 아래에 붙여 넣어요.
 
 ![Body Tracking code에 스니펫 붙여 넣기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035609415/original/cao5aLXuVvjYdCDflhi-3E5vkZF2Q5-hbw.png?1730192328)
 
@@ -176,11 +176,11 @@ Twilio 또는 하이퍼클래스 전화번호는 착신 번호로 쓸 수 없어
 
 ### 4단계. 필요하면 나중에 교체 번호 바꾸기
 
-번호 풀 설정 화면으로 돌아가세요. 방금 만든 번호 풀 위에 마우스를 올리고 점 세 개 메뉴를 클릭합니다.
+번호 풀 설정 화면으로 돌아가세요. 방금 만든 번호 풀 위에 마우스를 올리고 점 세 개 메뉴를 클릭해요.
 
 ![번호 풀 위에 마우스를 올렸을 때 나오는 점 세 개 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035618716/original/qq-lc41A4ETx0UyELKvWiCwQ59YBq3Nk7Q.png?1730197647)
 
-**추적 번호 업데이트**를 클릭하세요. 교체 번호를 복사해서 퍼널이나 웹사이트에 붙여 넣습니다.
+**추적 번호 업데이트**를 클릭하세요. 교체 번호를 복사해서 퍼널이나 웹사이트에 붙여 넣어요.
 
 ![추적 번호 업데이트 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035618746/original/FVyqaFuWsM1GWbo55UqxC7cmeLfCp87_1Q.png?1730197666)
 ![교체 번호 복사](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035627351/original/VjTwJFHUMyOOXFNIaB34FohFH3gAeiRMQA.png?1730202367)
@@ -189,7 +189,7 @@ Twilio 또는 하이퍼클래스 전화번호는 착신 번호로 쓸 수 없어
 
 ![점 세 개 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035628979/original/AlUzjbIachBUwPI6kEVf24xg0UHhyAGo2w.png?1730203165)
 
-**Swapping number(s) same as forwarding number**(교체 번호를 착신 번호와 동일하게 설정) 옵션의 체크를 해제하고 원하는 교체 번호를 설정하세요. 해당 입력란에 교체 번호를 입력하고 **추가** 버튼을 클릭합니다.
+**Swapping number(s) same as forwarding number**(교체 번호를 착신 번호와 동일하게 설정) 옵션의 체크를 해제하고 원하는 교체 번호를 설정하세요. 해당 입력란에 교체 번호를 입력하고 **추가** 버튼을 클릭해요.
 
 ![구성 편집 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035629044/original/iAayPphnG_T7S5HiWGKhwiKXRnG3NTPFwA.png?1730203190)
 

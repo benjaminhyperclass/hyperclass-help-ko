@@ -25,28 +25,28 @@
 
 CRM에서 개별 딜을 관리하다가 바로 인보이스나 견적서를 연결하는 방법이에요.
 
-1. **기회 관리**(Opportunities)로 이동해 딜을 엽니다.
+1. **기회 관리**(Opportunities)로 이동해 딜을 여세요.
 
    ![기회 관리에서 딜을 연 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066177432/original/Wv1wZm5RtDA7jLWtEDBIwkSSOW1JebrygQ.png?1772625132)
-2. **결제** 탭을 클릭합니다. **Actions**(작업 메뉴)에서 **인보이스 만들기** 또는 **견적서 만들기**를 선택하세요.
+2. **결제** 탭을 클릭하세요. **Actions**(작업 메뉴)에서 **인보이스 만들기** 또는 **견적서 만들기**를 선택하세요.
 
    ![결제 탭의 작업 메뉴에서 인보이스 만들기 또는 견적서 만들기를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066177546/original/t2H3pW63cpvWfOsWHNYGVT82kQDbI_WqBA.png?1772625205)
 3. 기회가 이미 연결된 상태로 인보이스/견적서 편집 화면이 열려요.
 
    ![기회가 연결된 상태로 열린 인보이스 편집 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066177574/original/X0wLq_Fx0LVi8gZUjwHX3f4PbVVrj8Qisg.png?1772625228)
-4. 폼을 작성하고, 준비되면 보냅니다.
+4. 폼을 작성하고, 준비되면 보내세요.
 
 ## 결제 메뉴에서 연결하기
 
 메인 메뉴의 **결제**에서 인보이스와 견적서를 딜에 직접 연결하는 방법이에요.
 
-1. 왼쪽 메뉴에서 **결제**로 이동합니다. 드롭다운에서 **인보이스** 또는 **견적서**로 전환하세요.
+1. 왼쪽 메뉴에서 **결제**로 이동하세요. 드롭다운에서 **인보이스** 또는 **견적서**로 전환하세요.
 
    ![결제 메뉴에서 인보이스와 견적서를 전환하는 드롭다운](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066177873/original/ZsvZkcnuetJytVVgt5o6O_33PqFX8RVZtg.png?1772625397)
-2. **인보이스 만들기** 또는 **견적서 만들기**를 클릭합니다.
+2. **인보이스 만들기** 또는 **견적서 만들기**를 클릭하세요.
 
    ![인보이스 만들기 또는 견적서 만들기 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066178194/original/slrho-qOS9WxPuF45IbGpSwHIHEAjiY3CA.png?1772625609)
-3. **연락처**를 선택합니다.
+3. **연락처**를 선택하세요.
 4. 문서 편집 화면의 **Link Opportunity**(기회 연결)에서 관련 **기회**를 선택하세요.
 
    ![편집 화면의 Link Opportunity에서 기회를 선택하는 모습](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066178213/original/QEBG5dd3vIAjWbe4MH0tK_cdgO7hW8UFYQ.png?1772625631)
@@ -55,11 +55,11 @@ CRM에서 개별 딜을 관리하다가 바로 인보이스나 견적서를 연�
 
 인보이스와 견적서가 직접 작업하지 않아도 만들어지고 연결되도록 전체 과정을 자동화할 수 있어요.
 
-1. **워크플로우**로 이동해 새 워크플로우를 만들거나 기존 워크플로우를 엽니다.
+1. **워크플로우**로 이동해 새 워크플로우를 만들거나 기존 워크플로우를 여세요.
 
    ![워크플로우 목록 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066178794/original/ftYkSKniQvKAvKS-AAvyKSxyo3o8XdQrYA.png?1772625995)
-2. 기회와 관련된 트리거를 사용합니다. 예를 들어 기회의 단계가 바뀌거나 상태가 업데이트될 때 실행되는 트리거예요.
-3. **Send Invoice**(인보이스 보내기) 또는 **Send Estimate**(견적서 보내기) 액션을 추가합니다.
+2. 기회와 관련된 트리거를 사용하세요. 예를 들어 기회의 단계가 바뀌거나 상태가 업데이트될 때 실행되는 트리거예요.
+3. **Send Invoice**(인보이스 보내기) 또는 **Send Estimate**(견적서 보내기) 액션을 추가하세요.
 
    ![워크플로우에 Send Invoice 액션을 추가하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066179514/original/XtlGF_lOSQzgzDEpN80OByJD-amMS9yEgQ.png?1772626353)
 4. 워크플로우가 실행되면 문서를 만들어 보내고, 해당 기회에 자동으로 연결해 줘요.

@@ -29,21 +29,21 @@ Text-To-Pay 링크는 대화 안에서 SMS로 보내는 보안 결제 요청이�
 
 ## 대화에서 Text-To-Pay 링크 보내기
 
-1. **대화**로 이동해서 Text-To-Pay 링크를 보낼 연락처와의 대화를 엽니다.
+1. **대화**로 이동해서 Text-To-Pay 링크를 보낼 연락처와의 대화를 여세요.
 
    ![대화 목록에서 연락처 대화 열기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059937500/original/Z06JS7DfNEdQHNj3HkaoZkBJ4ycTg6iXhg.png?1764888541)
-2. 메시지 입력창의 채널 선택에서 **SMS**를 선택합니다.
+2. 메시지 입력창의 채널 선택에서 **SMS**를 선택하세요.
 
    ![메시지 입력창에서 SMS 채널 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059937514/original/bkqzsFiLaazDrhnC4ZwP2PVZOAckyAX6Qg.png?1764888582)
-3. 텍스트 편집기 아래의 **결제 요청**($ 아이콘)을 클릭합니다.
+3. 텍스트 편집기 아래의 **결제 요청**($ 아이콘)을 클릭하세요.
 
    ![텍스트 편집기 아래의 결제 요청 아이콘](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059937521/original/gmxcwUzu_sQgY1-l_3evlJWNqMs2SpCYkA.png?1764888617)
-4. **결제 요청** 창에서 상품(또는 항목)을 선택하고 가격을 확인합니다. 필요하면 할인이나 세금을 추가하고, **만료일**을 정합니다. 그다음 **테스트**와 **라이브** 중 하나를 선택합니다. 실제 결제가 아닌 확인용이면 **테스트**를 쓰세요.
+4. **결제 요청** 창에서 상품(또는 항목)을 선택하고 가격을 확인하세요. 필요하면 할인이나 세금을 추가하고, **만료일**을 정해요. 그다음 **테스트**와 **라이브** 중 하나를 선택하세요. 실제 결제가 아닌 확인용이면 **테스트**를 쓰세요.
 
    **미리보기**를 클릭하면 고객이 보게 될 결제 화면을 먼저 확인할 수 있어요. **Copy link & Mark as sent**(링크 복사 및 발송 완료로 표시)를 클릭해도 돼요.
 
    ![결제 요청 창에서 상품, 가격, 할인, 세금, 만료일 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059937574/original/QPsNg403TjgyWqIV6H04JlwZFcEvXuf1jw.png?1764888764)
-5. **보내기**를 클릭해서 Text-To-Pay 링크를 보냅니다. 고객이 링크를 열면 아래와 같은 화면이 보여요.
+5. **보내기**를 클릭해서 Text-To-Pay 링크를 보내세요. 고객이 링크를 열면 아래와 같은 화면이 보여요.
 
    {% hint style="info" %}
    이 결제 페이지는 꾸밀 수 있어요. 자세한 방법은 "결제 링크를 브랜드 색상으로 꾸미는 방법" 문서를 참고하세요.

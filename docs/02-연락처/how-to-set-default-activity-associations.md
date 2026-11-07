@@ -60,32 +60,32 @@
 
 ### 연결 규칙 설정하기
 
-1. 하이퍼클래스에서 **서브 계정** 화면을 엽니다.
-2. 왼쪽 메뉴에서 **설정**을 선택합니다.
-3. **오브젝트**를 선택합니다.
-4. 오른쪽 위에 있는 **Default activity associations**를 클릭합니다.
+1. 하이퍼클래스에서 **서브 계정** 화면을 여세요.
+2. 왼쪽 메뉴에서 **설정**을 선택하세요.
+3. **오브젝트**를 선택하세요.
+4. 오른쪽 위에 있는 **Default activity associations**를 클릭하세요.
 
 ![설정 > 오브젝트 페이지의 기본 활동 연결 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084261525/original/CUfa4cKE_4EoATTgj-IIBHq2XNRJAksmLQ.png?1793076564)
 
-5. **활동 연결** 페이지에서 설정할 활동 유형을 선택합니다.
+5. **활동 연결** 페이지에서 설정할 활동 유형을 선택하세요.
 
    선택할 수 있는 탭은 **이메일**, **SMS**, **전화**, **WhatsApp**, **Facebook**, **Instagram**, **TikTok**, **채팅 위젯**, **예약**, **메모**, **작업**이에요.
 
 ![활동 유형 탭이 보이는 활동 연결 페이지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084259926/original/4ZpJuvKgWbuQHAK59HHJP-2AVik_EyxuSQ.png?1793072170)
 
-6. **Select an object**(오브젝트 선택)에서 활동이 시작되는 위치를 고릅니다. **연락처**, **기회**, **회사**, 또는 사용할 수 있는 사용자 지정 객체 중에서 선택하세요.
+6. **Select an object**(오브젝트 선택)에서 활동이 시작되는 위치를 고르세요. **연락처**, **기회**, **회사**, 또는 사용할 수 있는 사용자 지정 객체 중에서 선택하세요.
 
 ![시작 오브젝트 목록이 보이는 Select an object 드롭다운](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084183090/original/-rldpPM1IrEC74bDUsYX-rb6vQYwI69dqA.png?1793009222)
 
-7. 수정할 수 있는 관련 오브젝트 행마다 규칙을 선택합니다. 예를 들면 **Associated companies**(연결된 회사), **Associated opportunities**(연결된 기회) 행이 있어요.
+7. 수정할 수 있는 관련 오브젝트 행마다 규칙을 선택하세요. 예를 들면 **Associated companies**(연결된 회사), **Associated opportunities**(연결된 기회) 행이 있어요.
 
 ![선택할 수 있는 규칙이 보이는 연결 규칙 드롭다운](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084183099/original/9L5WdRywe6ZBmHryVVxO_WYK_7PIhbdQSA.png?1793009224)
 
-8. 오른쪽의 **활동** 패널에서 새 활동이 연결될 기록을 미리 확인합니다.
+8. 오른쪽의 **활동** 패널에서 새 활동이 연결될 기록을 미리 확인하세요.
 
 ![연결 결과를 보여 주는 활동 패널 미리보기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084261640/original/uD1G2hin1MXdASmKyyL8igsDMr4uit8z7A.png?1793076588)
 
-9. **저장**을 클릭해 변경 사항을 적용합니다.
+9. **저장**을 클릭해 변경 사항을 적용하세요.
 
 ![변경된 활동 연결 규칙과 활성화된 저장 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084261022/original/KL-pI5mb-UHtFOEb-qgubbebOSOfKzKI2g.png?1793075665)
 
@@ -99,13 +99,13 @@
 
 **Reset all changes**(모든 변경 사항 초기화)를 쓰면 선택한 활동 유형과 오브젝트의 규칙이 원래대로 돌아가요. 다른 활동 유형과 오브젝트에 저장된 설정은 그대로 유지돼요.
 
-1. 하이퍼클래스에서 **서브 계정** 화면을 엽니다.
-2. 왼쪽 메뉴에서 **설정**을 선택합니다.
-3. **오브젝트**를 선택한 다음 **Default activity associations**를 선택합니다.
-4. 활동 유형과 시작 오브젝트를 선택합니다.
-5. **Reset all changes**를 클릭합니다.
-6. **Reset to default?** 확인 창에서 **기본값으로 초기화**를 선택합니다.
-7. **저장**을 클릭해 초기화를 적용합니다.
+1. 하이퍼클래스에서 **서브 계정** 화면을 여세요.
+2. 왼쪽 메뉴에서 **설정**을 선택하세요.
+3. **오브젝트**를 선택한 다음 **Default activity associations**를 선택하세요.
+4. 활동 유형과 시작 오브젝트를 선택하세요.
+5. **Reset all changes**를 클릭하세요.
+6. **Reset to default?** 확인 창에서 **기본값으로 초기화**를 선택하세요.
+7. **저장**을 클릭해 초기화를 적용하세요.
 
 **Reset all changes**는 선택한 활동 유형과 오브젝트에서 변경 사항을 저장하기 전까지 비활성화되어 있어요. 확인 창에서 초기화를 확정해도 **저장**을 누르기 전에는 적용되지 않아요.
 

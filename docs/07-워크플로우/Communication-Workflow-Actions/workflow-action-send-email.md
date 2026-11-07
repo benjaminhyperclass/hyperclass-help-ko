@@ -100,14 +100,14 @@
    - **Action Name**: 예약 확인 이메일
    - **From Name**: 우리 회사
    - **From Email**: mycompany@email.com
-   - **Subject**: 예약해 주셔서 감사합니다!
+   - **Subject**: 예약해 주셔서 감사해요!
    - **Body**(본문):
 
      안녕하세요 {{contact.first_name}}님,
 
-     예약해 주셔서 감사합니다! 예약 일시는 {{appointment.only_start_date}} {{appointment.start_time}}입니다.
+     예약해 주셔서 감사해요! 예약 일시는 {{appointment.only_start_date}} {{appointment.start_time}}입니다.
 
-     곧 뵙겠습니다!
+     곧 뵙겠어요!
 
 3. (선택) 예약 상세 PDF의 첨부파일 URL을 추가해요.
 4. 테스트 이메일을 보내요.

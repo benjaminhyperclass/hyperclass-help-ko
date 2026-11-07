@@ -135,7 +135,7 @@
 
    ![선택할 수 있는 업종](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084817467/original/gcUKOJZ4W8D7qc29DQQDQHbRgFRcZHjxtA.png?1793699942)
 
-4. 업종을 선택하기 전에는 **Set Industry**(업종 설정)가 회색으로 비활성화돼 있어요. 업종을 고르고 **Set Industry**를 클릭하면 고객의 워크스페이스에 그 업종의 도구가 생겨요. **Industry** 상자에는 설정된 업종이 표시돼요. 예를 들면 **Restaurants is set. Contact support if you need to change it.**(레스토랑이 설정되었습니다. 변경이 필요하면 고객지원에 문의하세요.)이라고 나와요.
+4. 업종을 선택하기 전에는 **Set Industry**(업종 설정)가 회색으로 비활성화돼 있어요. 업종을 고르고 **Set Industry**를 클릭하면 고객의 워크스페이스에 그 업종의 도구가 생겨요. **Industry** 상자에는 설정된 업종이 표시돼요. 예를 들면 **Restaurants is set. Contact support if you need to change it.**(레스토랑이 설정되었어요. 변경이 필요하면 고객지원에 문의하세요.)이라고 나와요.
 
    ![설정된 업종은 여기서 바꿀 수 없어요](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084817517/original/59RwJOjnBirxX9Jiq2fGgX1SCH5D6ykp4A.png?1793699967)
 

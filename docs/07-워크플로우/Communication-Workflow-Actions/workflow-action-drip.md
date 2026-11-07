@@ -50,7 +50,7 @@
 ![배치 크기 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041806001/original/-DyEvE0byzhzTJHtG2SjeW7_lKKHvFPUUA.png?1739884042)
 
 {% hint style="info" %}
-이미 게시된 워크플로우에서 **Drip** 액션에 대기 중인 연락처가 있는 상태로 배치 크기를 바꾸면 안내 문구가 나타나요. 문구는 영어로 표시돼요: "Contacts already queued in this drip will use the previous batch size. New contacts will use the updated batch size."(이 드립에 이미 대기 중인 연락처는 이전 배치 크기를 쓰고, 새 연락처는 변경한 배치 크기를 씁니다.) 변경한 내용은 새로 들어오는 연락처에만 적용된다는 뜻이에요.
+이미 게시된 워크플로우에서 **Drip** 액션에 대기 중인 연락처가 있는 상태로 배치 크기를 바꾸면 안내 문구가 나타나요. 문구는 영어로 표시돼요: "Contacts already queued in this drip will use the previous batch size. New contacts will use the updated batch size."(이 드립에 이미 대기 중인 연락처는 이전 배치 크기를 쓰고, 새 연락처는 변경한 배치 크기를 써요.) 변경한 내용은 새로 들어오는 연락처에만 적용된다는 뜻이에요.
 {% endhint %}
 
 ![배치 크기 변경 안내 문구](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155069572115/original/_Ex3L0zrtg4ASGLMOUmwzD-sxPqbMN8x1Q.png?1776757324)
@@ -74,7 +74,7 @@
 미리보기에는 이런 내용이 나와요.
 
 - 배치 번호와 예정 발송 시간이 담긴 배치 표가 최대 10개 배치까지 표시돼요. 배치가 10개보다 적으면 전부 보여 줘요.
-- **Workflow Time Window**(워크플로우 실행 시간 제한)가 켜져 있으면 안내 경고가 표시돼요. 경고는 영어로 나와요: "Workflow time window (e.g., 8 AM – 7 PM, Mon–Fri) is shifting some batches to the next available slot."(워크플로우 시간 제한으로 일부 배치가 다음 가능한 시간대로 밀리고 있습니다.) 경고 안의 time window 글자를 클릭하면 해당 설정이 바로 열려요.
+- **Workflow Time Window**(워크플로우 실행 시간 제한)가 켜져 있으면 안내 경고가 표시돼요. 경고는 영어로 나와요: "Workflow time window (e.g., 8 AM – 7 PM, Mon–Fri) is shifting some batches to the next available slot."(워크플로우 시간 제한으로 일부 배치가 다음 가능한 시간대로 밀리고 있어요.) 경고 안의 time window 글자를 클릭하면 해당 설정이 바로 열려요.
 - 미리보기는 처음 설정할 때 표시돼요. 이미 연락처가 들어 있는 **Drip** 액션을 편집할 때는 화면이 복잡해지지 않도록 숨겨져요.
 
 ![Drip 일정 미리보기 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155069572841/original/TyEfvY-qJpAvc3Q1VUJEE-LUTXGfk-mG-g.gif?1776757563)

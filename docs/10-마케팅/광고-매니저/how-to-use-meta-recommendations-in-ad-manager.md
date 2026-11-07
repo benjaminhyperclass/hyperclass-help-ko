@@ -28,12 +28,12 @@ Meta의 제안을 하이퍼클래스 **광고 관리자**로 가져와서, 캠�
 
 게시된 Meta 캠페인은 **검토 화면**에 최적화 제안을 표시해요. 주의가 필요한 부분을 빠르게 찾을 수 있어요.
 
-1. **광고 관리자**에서 게시된 Meta 캠페인을 엽니다.
-2. **검토 화면**으로 이동합니다.
-3. 왼쪽 위에서 **Meta 추천**을 클릭합니다.
+1. **광고 관리자**에서 게시된 Meta 캠페인을 여세요.
+2. **검토 화면**으로 이동하세요.
+3. 왼쪽 위에서 **Meta 추천**을 클릭하세요.
 
    ![Meta 추천 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084059157/original/ShyBH68rxgEGrNUsxHAgB5RLisWN1tny-A.png?1792757414)
-4. 표시된 제안과 추천 개수를 확인합니다.
+4. 표시된 제안과 추천 개수를 확인하세요.
 
 Meta가 제안할 내용이 없으면 패널에 **지금은 추천 항목이 없습니다**가 표시돼요.
 
@@ -54,13 +54,13 @@ Meta가 제안할 내용이 없으면 패널에 **지금은 추천 항목이 없
 
 **검토 및 업데이트**를 누르면 Meta 추천과 관련된 설정으로 쉽게 이동할 수 있어요. 제안을 확인한 뒤 필요한 캠페인 변경은 직접 해야 해요.
 
-1. **Meta 추천** 패널을 엽니다.
-2. 검토할 추천을 선택합니다.
-3. **검토 및 업데이트**를 클릭합니다.
+1. **Meta 추천** 패널을 여세요.
+2. 검토할 추천을 선택하세요.
+3. **검토 및 업데이트**를 클릭하세요.
 
    ![검토 및 업데이트 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084059243/original/19WJCEOacOtr-AfMPk_1BrSY3tqxK4fRzg.png?1792757459)
-4. 해당 캠페인 섹션으로 이동합니다.
-5. 제안된 내용으로 변경하고, 해당하는 캠페인 업데이트를 제출합니다.
+4. 해당 캠페인 섹션으로 이동하세요.
+5. 제안된 내용으로 변경하고, 해당하는 캠페인 업데이트를 제출해요.
 
 {% hint style="info" %}
 **검토 및 업데이트**를 눌러도 추천이 자동으로 적용되지는 않아요. 게시된 캠페인의 일부 설정은 편집이 제한되어 있고, 변경 시 Meta의 검토가 필요할 수 있어요.
@@ -72,22 +72,22 @@ Meta가 제안할 내용이 없으면 패널에 **지금은 추천 항목이 없
 
 Meta 추천으로 개선할 점을 확인하고, 하이퍼클래스 안에서 수정할 수 있는 캠페인 설정을 업데이트할 수 있어요.
 
-1. **마케팅 > 광고 관리자**로 이동합니다.
+1. **마케팅 > 광고 관리자**로 이동하세요.
 
    ![마케팅 메뉴의 광고 관리자](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084059363/original/H1j7ozQKoHHhrKybsKiIJ_veZTS5MVgB8w.png?1792757522)
-2. 게시된 Meta 캠페인을 엽니다.
-3. **검토 화면**으로 이동합니다.
+2. 게시된 Meta 캠페인을 여세요.
+3. **검토 화면**으로 이동하세요.
 
    ![캠페인 검토 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084059519/original/kKKFBPTHpn2G7f3nE9mAJKRlgJYmGgLBqQ.png?1792757570)
-4. 왼쪽 위에서 **Meta 추천**을 클릭합니다.
+4. 왼쪽 위에서 **Meta 추천**을 클릭하세요.
 
    ![왼쪽 위 Meta 추천 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084059608/original/3WhSdv19f8G_wSVaQ8JlENkNRxINdCpzxw.png?1792757604)
-5. 표시된 추천과 영향도를 확인합니다.
-6. 원하는 추천에서 **검토 및 업데이트**를 클릭합니다.
+5. 표시된 추천과 영향도를 확인하세요.
+6. 원하는 추천에서 **검토 및 업데이트**를 클릭하세요.
 
    ![추천 항목의 검토 및 업데이트 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084059686/original/41Z_1cfZHPWpU-qxVv2rYr99Pxqr3cP6lA.png?1792757637)
-7. 해당 캠페인 섹션에서 제안된 내용으로 변경합니다.
-8. 캠페인 편집 과정에 따라 해당하는 업데이트를 제출합니다.
+7. 해당 캠페인 섹션에서 제안된 내용으로 변경하세요.
+8. 캠페인 편집 과정에 따라 해당하는 업데이트를 제출해요.
 
 ## 자주 묻는 질문
 

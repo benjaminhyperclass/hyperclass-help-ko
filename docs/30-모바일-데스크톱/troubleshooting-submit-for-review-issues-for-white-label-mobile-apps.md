@@ -17,7 +17,7 @@
 
 ## 문제를 고친 뒤 다시 확인하는 방법
 
-이 단계의 문제는 대부분 App Store Connect나 Google Play Console에서 고쳐요. 수정을 마쳤다면 체크리스트로 돌아와 **I have fixed all blocking issues**(차단 문제를 모두 해결했습니다)를 체크하고 **인증**을 선택하세요.
+이 단계의 문제는 대부분 App Store Connect나 Google Play Console에서 고쳐요. 수정을 마쳤다면 체크리스트로 돌아와 **I have fixed all blocking issues**(차단 문제를 모두 해결했어요)를 체크하고 **인증**을 선택하세요.
 
 {% hint style="info" %}
 Apple이 빌드를 처리하는 데는 시간이 걸려요. 업로드한 뒤 15~30분 기다렸다가 제출하세요. 빌드가 올라왔는지는 **App Store Connect**의 **활동**에서 볼 수 있어요.

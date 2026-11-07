@@ -34,35 +34,35 @@ A/B 테스트(스플릿 테스트라고도 해요)는 이메일을 두 가지 �
 
 ## A/B 테스트 켜기
 
-1. **이메일 빌더**에서 **이메일 캠페인**을 엽니다.
+1. **이메일 빌더**에서 **이메일 캠페인**을 여세요.
 
    ![이메일 빌더에서 이메일 캠페인을 연 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055819742/original/w97LQSt9TmdJAWuhEJs3HYC70m1z1smckQ.png?1760340432)
-2. 왼쪽 패널에서 **Enable A/B Testing**(A/B 테스트 사용) 토글을 켭니다.
+2. 왼쪽 패널에서 **Enable A/B Testing**(A/B 테스트 사용) 토글을 켜세요.
 
    ![왼쪽 패널의 A/B 테스트 사용 토글](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055819789/original/mK4GNtgaPEoK1JyDO8PvHpYXxSVhnpVgWA.png?1760340447)
-3. **테스트 유형**을 선택합니다.
+3. **테스트 유형**을 선택하세요.
 
    - **이메일 제목**: 제목을 여러 가지로 테스트해서 열람이 더 많은 제목을 찾아요.
    - **이메일 콘텐츠**: 이미지, 버튼, 문구 같은 콘텐츠 변형을 테스트해요.
-4. **Test Duration**(테스트 기간)을 설정합니다. 예를 들어 4시간, 8시간 등을 고를 수 있어요.
+4. **Test Duration**(테스트 기간)을 설정하세요. 예를 들어 4시간, 8시간 등을 고를 수 있어요.
 
    - 이 시간이 지나면 우승 버전이 정해져요. 테스트가 진행되는 시간을 뜻해요.
-5. **Number of Variations**(변형 개수)를 선택합니다. 최대 6개까지 고를 수 있어요.
-6. 슬라이더로 **Test Size**(테스트 규모)를 조정합니다.
+5. **Number of Variations**(변형 개수)를 선택하세요. 최대 6개까지 고를 수 있어요.
+6. 슬라이더로 **Test Size**(테스트 규모)를 조정해요.
 
    - 예: 두 가지 버전(A와 B)을 테스트한다면 각각 수신자의 25%에게 보내고, 나머지 50%는 우승 버전용으로 남겨 둘 수 있어요.
 
      ![테스트 규모 슬라이더로 수신자 비율을 조정하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155082957717/original/jVkAuviYdNQ7I3AsI-hrTDvFH8w7i1yZrA.png?1791552749)
-7. **Subject Variations**(제목 변형) 또는 **콘텐츠 변형**을 추가합니다.
+7. **Subject Variations**(제목 변형) 또는 **콘텐츠 변형**을 추가하세요.
 
    - 필요하면 **콘텐츠 AI**로 다양한 변형을 자동으로 만들 수 있어요.
-8. **Winning Criteria**(우승 기준)를 선택합니다.
+8. **Winning Criteria**(우승 기준)를 선택하세요.
 
    - **Unique Open Rate**(고유 열람률): 제목 테스트에 알맞아요.
    - **Unique Click Rate**(고유 클릭률): 콘텐츠 테스트에 알맞아요.
 
      ![우승 기준을 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155082957932/original/qit43gZq_OcItLGBU5RlDy0j8Xja-jQnJw.png?1791552835)
-9. 설정을 마쳤으면 **Send or Schedule**(보내기 또는 예약)을 클릭합니다. 시스템이 테스트를 자동으로 진행하고, 가장 성과가 좋은 버전을 나머지 수신자에게 보내요.
+9. 설정을 마쳤으면 **Send or Schedule**(보내기 또는 예약)을 클릭하세요. 시스템이 테스트를 자동으로 진행하고, 가장 성과가 좋은 버전을 나머지 수신자에게 보내요.
 
 ---
 

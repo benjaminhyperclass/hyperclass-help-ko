@@ -6,7 +6,7 @@
 
 # 오류 "This number is registered to an existing WhatsApp account" 해결
 
-WhatsApp 온보딩 중 "This number is registered to an existing WhatsApp account"(이 번호는 이미 WhatsApp 계정에 등록되어 있습니다) 오류가 나올 때 원인을 확인하고 해결하는 방법을 안내해요.
+WhatsApp 온보딩 중 "This number is registered to an existing WhatsApp account"(이 번호는 이미 WhatsApp 계정에 등록되어 있어요) 오류가 나올 때 원인을 확인하고 해결하는 방법을 안내해요.
 
 ## 이 오류는 무슨 뜻인가요?
 
@@ -31,10 +31,10 @@ WhatsApp 온보딩 중 "This number is registered to an existing WhatsApp accoun
 
 번호가 현재 사용 중인 기기에서 다음과 같이 진행하세요.
 
-1. **WhatsApp** 또는 **WhatsApp Business** 앱을 엽니다.
-2. **설정** > **계정**으로 이동합니다.
-3. **Delete my account**(내 계정 삭제)를 선택합니다.
-4. 전화번호를 확인하고 삭제를 완료합니다.
+1. **WhatsApp** 또는 **WhatsApp Business** 앱을 여세요.
+2. **설정** > **계정**으로 이동하세요.
+3. **Delete my account**(내 계정 삭제)를 선택하세요.
+4. 전화번호를 확인하고 삭제를 완료하세요.
 
 {% hint style="warning" %}
 앱을 지우는 것만으로는 충분하지 않아요. 반드시 WhatsApp 설정에서 계정을 삭제해야 해요.
@@ -53,9 +53,9 @@ WhatsApp 온보딩 중 "This number is registered to an existing WhatsApp accoun
 
 ### 3단계: 온보딩 다시 시도하기
 
-1. 온보딩 페이지로 돌아갑니다.
-2. 전화번호를 다시 입력합니다.
-3. 인증번호(OTP)를 다시 요청하고 인증합니다.
+1. 온보딩 페이지로 돌아가요.
+2. 전화번호를 다시 입력하세요.
+3. 인증번호(OTP)를 다시 요청하고 인증해요.
 
 ---
 

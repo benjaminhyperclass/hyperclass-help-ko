@@ -29,19 +29,19 @@
 
 ## 설정 방법
 
-1. 하이퍼클래스 계정에서 **워크플로우 빌더**를 엽니다.
-2. 새 워크플로우를 만듭니다.
-   1. **Create a Workflow**(워크플로우 만들기)를 클릭합니다.
-   2. 알맞은 액션 유형인 **Grant Private Channel Access** 또는 **Revoke Private Channel Access**를 선택합니다.
-3. 접근 권한을 줄(또는 거둘) 그룹과 비공개 채널을 지정합니다.
-   - 먼저 그룹을 고르고, 이어서 비공개 채널을 고릅니다. 선택 목록에는 비공개 채널만 나타나요. 대상 비공개 채널이 미리 만들어져 있는지 확인하세요.
+1. 하이퍼클래스 계정에서 **워크플로우 빌더**를 여세요.
+2. 새 워크플로우를 만드세요.
+   1. **Create a Workflow**(워크플로우 만들기)를 클릭하세요.
+   2. 알맞은 액션 유형인 **Grant Private Channel Access** 또는 **Revoke Private Channel Access**를 선택하세요.
+3. 접근 권한을 줄(또는 거둘) 그룹과 비공개 채널을 지정하세요.
+   - 먼저 그룹을 고르고, 이어서 비공개 채널을 고르세요. 선택 목록에는 비공개 채널만 나타나요. 대상 비공개 채널이 미리 만들어져 있는지 확인하세요.
    - 멤버가 아직 그룹에 속해 있지 않으면 그룹에 먼저 추가되고, 이어서 선택한 채널에도 추가돼요.
-   - 이어서 자동화하고 싶은 액션이 있으면 추가합니다.
+   - 이어서 자동화하고 싶은 액션이 있으면 추가해요.
 
      ![비공개 채널 접근 권한 액션 설정 화면 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034017891/original/fIFFeFv2jyenVn4oV3a9ZTThOcFGqjLvKQ.png?1727951539)
      ![비공개 채널 접근 권한 액션 설정 화면 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034018460/original/BnAM80CYzX_JkpqTvvDkTGKquYI8Rjr1WQ.png?1727951833)
-4. 테스트 환경에서 워크플로우가 의도대로 동작하는지 확인합니다.
-5. 문제가 없으면 워크플로우를 저장하고 활성화합니다.
+4. 테스트 환경에서 워크플로우가 의도대로 동작하는지 확인하세요.
+5. 문제가 없으면 워크플로우를 저장하고 활성화하세요.
 
 ## 예시
 

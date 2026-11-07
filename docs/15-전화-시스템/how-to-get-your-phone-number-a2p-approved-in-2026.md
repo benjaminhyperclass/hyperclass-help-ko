@@ -30,11 +30,11 @@ A2P 10DLC 등록은 미국에서 앱을 통해 개인에게 SMS를 보내는(A2P
 
 1. > I consent to receive marketing text messages, about special offers, discounts, and service updates, from [BUSINESS NAME] at the phone number provided. Message frequency may vary. Message & data rates may apply. Text HELP for assistance, reply STOP to opt out.
 
-   뜻: 제공한 전화번호로 [BUSINESS NAME]에서 보내는 특별 오퍼, 할인, 서비스 업데이트 등의 마케팅 문자 메시지를 받는 데 동의합니다. 메시지 빈도는 달라질 수 있고, 메시지 및 데이터 요금이 부과될 수 있습니다. 도움이 필요하면 HELP를 보내고, 수신을 중단하려면 STOP이라고 답장하세요.
+   뜻: 제공한 전화번호로 [BUSINESS NAME]에서 보내는 특별 오퍼, 할인, 서비스 업데이트 등의 마케팅 문자 메시지를 받는 데 동의해요. 메시지 빈도는 달라질 수 있고, 메시지 및 데이터 요금이 부과될 수 있어요. 도움이 필요하면 HELP를 보내고, 수신을 중단하려면 STOP이라고 답장하세요.
 
 2. > I consent to receive non-marketing text messages from [BUSINESS NAME] about [USE_CASE_FROM_CAMPAIGN_DESCRIPTION]. Message frequency may vary, message & data rates may apply. Text HELP for assistance, reply STOP to opt out.
 
-   뜻: [BUSINESS NAME]에서 보내는 [캠페인 설명에 적은 사용 사례]에 관한 비마케팅 문자 메시지를 받는 데 동의합니다. 메시지 빈도는 달라질 수 있고, 메시지 및 데이터 요금이 부과될 수 있습니다. 도움이 필요하면 HELP를 보내고, 수신을 중단하려면 STOP이라고 답장하세요.
+   뜻: [BUSINESS NAME]에서 보내는 [캠페인 설명에 적은 사용 사례]에 관한 비마케팅 문자 메시지를 받는 데 동의해요. 메시지 빈도는 달라질 수 있고, 메시지 및 데이터 요금이 부과될 수 있어요. 도움이 필요하면 HELP를 보내고, 수신을 중단하려면 STOP이라고 답장하세요.
 
 [BUSINESS NAME]은 CP 575/147C 서류에 적힌 이름과 같아야 해요.
 
@@ -120,7 +120,7 @@ A2P 제출이 성공하려면 모든 폼의 푸터에 아래 요소가 모두 �
 
 > "No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. Information sharing to subcontractors in support services, such as customer service, is permitted. All other use case categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties."
 
-뜻: 모바일 정보는 마케팅·프로모션 목적으로 제3자나 제휴사와 공유되지 않습니다. 고객 서비스 같은 지원 업무를 맡은 하청업체와 정보를 공유하는 것은 허용됩니다. 그 밖의 모든 사용 사례 범주에서는 문자 발신자의 수신 동의 데이터와 동의 내역을 제외하며, 이 정보는 어떤 제3자와도 공유되지 않습니다.
+뜻: 모바일 정보는 마케팅·프로모션 목적으로 제3자나 제휴사와 공유되지 않아요. 고객 서비스 같은 지원 업무를 맡은 하청업체와 정보를 공유하는 것은 허용돼요. 그 밖의 모든 사용 사례 범주에서는 문자 발신자의 수신 동의 데이터와 동의 내역을 제외하며, 이 정보는 어떤 제3자와도 공유되지 않아요.
 
 ---
 
@@ -138,13 +138,13 @@ A2P 제출이 성공하려면 모든 폼의 푸터에 아래 요소가 모두 �
 
 > "You can cancel the SMS service at any time. Just text "STOP" to the [Phone Number]. After you send the SMS message "STOP" to us, we will send you an SMS message to confirm that you have been unsubscribed. After this, you will no longer receive SMS messages from us. If you want to join again, just sign up as you did the first time and we will start sending SMS messages to you again. If you are experiencing issues with the messaging program you can reply with the keyword HELP for more assistance, or you can get help directly at [support email address or toll-free number]."
 
-뜻: SMS 서비스는 언제든 해지할 수 있습니다. [전화번호]로 "STOP"이라고 문자를 보내세요. "STOP"을 보내면 구독이 해지되었음을 알리는 SMS를 보내 드리며, 이후에는 SMS를 받지 않게 됩니다. 다시 받고 싶다면 처음처럼 가입하면 SMS를 다시 보내 드립니다. 메시지 프로그램에 문제가 있으면 HELP라고 답장하거나 [지원 이메일 주소 또는 수신자 부담 전화번호]로 직접 도움을 받을 수 있습니다.
+뜻: SMS 서비스는 언제든 해지할 수 있어요. [전화번호]로 "STOP"이라고 문자를 보내세요. "STOP"을 보내면 구독이 해지되었음을 알리는 SMS를 보내 드리며, 이후에는 SMS를 받지 않게 돼요. 다시 받고 싶다면 처음처럼 가입하면 SMS를 다시 보내 드려요. 메시지 프로그램에 문제가 있으면 HELP라고 답장하거나 [지원 이메일 주소 또는 수신자 부담 전화번호]로 직접 도움을 받을 수 있어요.
 
 ### 이용약관: 이동통신사 책임 조항
 
 > "Carriers are not liable for delayed or undelivered messages."
 
-뜻: 이동통신사는 지연되거나 전달되지 않은 메시지에 책임을 지지 않습니다.
+뜻: 이동통신사는 지연되거나 전달되지 않은 메시지에 책임을 지지 않아요.
 
 ### 이용약관: 메시지 빈도 조항
 
@@ -152,7 +152,7 @@ A2P 제출이 성공하려면 모든 폼의 푸터에 아래 요소가 모두 �
 
 > "As always, message and data rates may apply for any messages sent to you from us and to us from you. You will receive [message frequency]. If you have any questions about your text plan or data plan, it is best to contact your wireless provider."
 
-뜻: 언제나 그렇듯 저희가 보내는 메시지와 회원님이 보내는 메시지 모두 메시지 및 데이터 요금이 부과될 수 있습니다. [메시지 빈도]로 메시지를 받게 됩니다. 문자 요금제나 데이터 요금제에 궁금한 점이 있다면 이동통신사에 문의하는 것이 가장 좋습니다.
+뜻: 언제나 그렇듯 저희가 보내는 메시지와 회원님이 보내는 메시지 모두 메시지 및 데이터 요금이 부과될 수 있어요. [메시지 빈도]로 메시지를 받게 돼요. 문자 요금제나 데이터 요금제에 궁금한 점이 있다면 이동통신사에 문의하는 것이 가장 좋습니다.
 
 ### 이용약관: 개인정보 처리방침 링크
 

@@ -94,31 +94,31 @@ MCP 제공업체마다 필요한 인증 방식이 달라요. 하이퍼클래스�
 
 설정을 제대로 해 두면 워크플로우를 실행하는 동안 AI 에이전트가 외부 서비스와 안전하게 통신할 수 있어요.
 
-1. 원하는 워크플로우를 엽니다.
-2. **AI Agent**(AI 에이전트) 액션을 추가하거나 편집합니다.
-3. **Add Tools**(도구 추가)를 선택합니다.
+1. 원하는 워크플로우를 여세요.
+2. **AI Agent**(AI 에이전트) 액션을 추가하거나 편집하세요.
+3. **Add Tools**(도구 추가)를 선택하세요.
 
    ![도구 추가 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155075528017/original/tAnm6_KhDvo0fiNH5zIJD8U63K63H8X54w.png?1783518106)
-4. **MCP** 탭을 엽니다.
+4. **MCP** 탭을 여세요.
 
    ![MCP 탭 열기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155075528140/original/4yKAL_sQBGQZIafmA-Z9vBRyVQagnu9nlw.png?1783518152)
-5. **Add Connection**(연결 추가)을 클릭합니다.
+5. **Add Connection**(연결 추가)을 클릭하세요.
 
    ![연결 추가 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155075528294/original/xtoMJjTQ1Tbh03IciVOAf3BMnylMa427cA.png?1783518193)
-6. 연결 정보를 입력합니다.
-   - **Connection Name**(연결 이름)에 알아보기 쉬운 이름을 입력합니다.
-   - **Server URL**(서버 URL)에 MCP 제공업체가 알려 준 서버 URL을 입력합니다.
-   - **Transport Type**(전송 유형)에서 알맞은 유형을 선택합니다.
-   - **Authentication Type**(인증 유형)에서 필요한 유형을 선택합니다.
-   - 필요한 자격 증명을 입력합니다.
+6. 연결 정보를 입력하세요.
+   - **Connection Name**(연결 이름)에 알아보기 쉬운 이름을 입력하세요.
+   - **Server URL**(서버 URL)에 MCP 제공업체가 알려 준 서버 URL을 입력하세요.
+   - **Transport Type**(전송 유형)에서 알맞은 유형을 선택하세요.
+   - **Authentication Type**(인증 유형)에서 필요한 유형을 선택하세요.
+   - 필요한 자격 증명을 입력하세요.
 
    ![연결 정보 입력](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155075528721/original/CUKOQ4tJfUyQE_pu5RgatQ_pbKTpTMRhAg.png?1783518316)
-7. **Test Connection**(연결 테스트)을 클릭합니다.
+7. **Test Connection**(연결 테스트)을 클릭하세요.
 
    ![연결 테스트 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155075529008/original/MNO4-rmrRsQBsYdOWsxZtMAgvK7FgKNXgg.png?1783518387)
-8. 찾아낸 도구를 확인합니다.
-9. AI 에이전트가 사용해도 되는 도구만 켭니다.
-10. 연결을 저장합니다.
+8. 찾아낸 도구를 확인하세요.
+9. AI 에이전트가 사용해도 되는 도구만 켜요.
+10. 연결을 저장하세요.
 
 ---
 
@@ -130,10 +130,10 @@ MCP 서버 하나가 여러 도구를 제공하는 경우가 많아요. 모든 �
 
 연결을 테스트한 뒤에 다음과 같이 진행하세요.
 
-- 찾아낸 도구를 확인합니다.
-- 필요한 도구만 켭니다.
-- 워크플로우에 필요 없는 도구는 끕니다.
-- 선택한 내용을 저장합니다.
+- 찾아낸 도구를 확인하세요.
+- 필요한 도구만 켜요.
+- 워크플로우에 필요 없는 도구는 끄세요.
+- 선택한 내용을 저장하세요.
 
 이 권한은 AI 에이전트 단위로 적용돼요. 같은 서버에 연결하더라도 에이전트마다 다른 도구 조합을 쓸 수 있어요.
 
