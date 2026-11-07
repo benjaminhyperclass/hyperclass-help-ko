@@ -6,7 +6,8 @@
  *          ⑤ '라벨 (숫자)' — 라벨이 사전 단어일 때('Companies (0)' → '회사 (0)', 연락처 상세 연관 패널) · 'N items' → 'N개 항목'
  *             · 페이지 표시 '1 - 3 of 3' → '3개 중 1–3'.
  *          ⑥ 월 이름 단독(전체 이름)·"January '27" → '10월'·'2027년 1월'(기회 예측 타임라인 열 머리).
- *          ⑦ 앱이 조각을 이어 붙인 문장 패턴 — 기회 예측 위험 규칙 'Slipped 2+ times 또는 14+ days (excluding high)'.
+ *          ⑦ 앱이 조각을 이어 붙인 문장 패턴 — 기회 예측 위험 규칙 'Slipped 2+ times 또는 14+ days (excluding high)'
+ *             · 인보이스 요약 카드 '0 Invoice(s) in Draft' → '0 건 임시 저장'(카탈로그 패치보다 데이터가 먼저 오면 영어로 굳는 경합).
  *          ⑧ 대화 타임라인 시스템 이벤트 줄 — 'Appointment X'·'updated'·' → marked as cancelled for Oct 31, 2026 04:45PM'
  *             → '예약 X'·'업데이트됨'·' → 취소됨 · 2026년 10월 31일 오후 4:45'(굵은 조각 2개 + 꼬리 구조일 때만).
  *          ⑨ 쌍점 라벨 'Status:' → '상태:'(라벨이 사전 단어일 때) · 바로 뒤 값이 상태어면 범위 밖이어도 번역(기회 카드 'Status: Open').
@@ -718,12 +719,17 @@
   var FIX_PATS = [
     ['S', /^Slipped (\d+)\+ times (?:or|또는) (\d+)\+ days(?: \(excluding (high|high\/medium)\))?\.?$/, function (m) {
       return m[1] + '회 이상 지연 또는 ' + m[2] + '일 이상 지연' + (m[3] ? (m[3] === 'high' ? ' (상 제외)' : ' (상/중 제외)') : '');
+    }],
+    // 결제 → 인보이스 요약 카드: 앱이 '{숫자} {라벨}' 을 데이터 도착 때 한 번 조립한다. 별도 앱 카탈로그(listInvoices) 패치보다
+    // 데이터가 먼저 오면 영어 문자열이 그대로 남는다(2026-11-07 같은 계정에서 두 경우 모두 실측) → 사전 값과 같은 꼴로 맞춘다.
+    ['', /^(\d[\d,]*) Invoice\(s\) (in Draft|in Due|received|Overdue)$/, function (m) {
+      return m[1] + ' 건 ' + ({ 'in Draft': '임시 저장', 'in Due': '지급 예정', received: '결제 완료', Overdue: '기한 초과' })[m[2]];
     }]
   ];
   function kdPat(t) {
     if (t.length > 120) return null;
     for (var i = 0; i < FIX_PATS.length; i++) {
-      if (t.charAt(0) !== FIX_PATS[i][0]) continue;
+      if (FIX_PATS[i][0] && t.charAt(0) !== FIX_PATS[i][0]) continue;
       var m = t.match(FIX_PATS[i][1]); if (m) return FIX_PATS[i][2](m);
     }
     return null;
