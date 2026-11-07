@@ -1,0 +1,59 @@
+---
+원문: https://help.gohighlevel.com/support/solutions/articles/155000003531-workflow-action-whatsapp
+번역일: 2026-11-07
+카테고리: 07-워크플로우
+---
+
+# 워크플로우 액션 — WhatsApp Send Message(WhatsApp 메시지 보내기)
+
+워크플로우 안에서 WhatsApp 메시지를 바로 보내는 액션이에요. 직접 쓴 메시지를 보낼 수도 있고, 승인된 템플릿을 쓸 수도 있어요.
+
+## 개요
+
+**WhatsApp** 액션을 쓰면 워크플로우에서 WhatsApp으로 고객에게 실시간 메시지를 보낼 수 있어요.
+
+## 액션 설명
+
+**WhatsApp Send Message**(WhatsApp 메시지 보내기) 액션은 워크플로우 트리거에 따라 고객에게 WhatsApp 메시지를 자동으로 보내요. 24시간 메시지 창 안에서는 자유롭게 쓴 텍스트 메시지를 보낼 수 있어요. 창 밖에서 대화를 시작할 때는 승인된 템플릿을 보내요. 문의에 후속 연락을 하거나, 예약 확인 메시지나 프로모션 내용을 보낼 때 유용해요.
+
+**주요 기능**
+
+- 워크플로우에서 WhatsApp 메시지를 실시간으로 보낼 수 있어요.
+- 24시간 창 밖에서는 승인된 템플릿으로 메시지를 보낼 수 있어요.
+- 연락처 이름, 이메일 같은 동적 변수로 메시지를 맞춤 설정할 수 있어요.
+- 기업이 먼저 시작한 대화와 고객이 먼저 시작한 대화를 모두 지원해요.
+
+## 설정 방법
+
+1. **사전 준비**
+   - 하이퍼클래스 계정에서 WhatsApp이 켜져 있고 설정되어 있는지 확인하세요.
+   - 기업이 먼저 대화를 시작하려면 승인된 WhatsApp 메시지 템플릿이 있어야 해요. 템플릿 만드는 방법은 [WhatsApp 템플릿 만들기](../../31-리셀링/WhatsApp/how-to-create-a-whatsapp-template.md)를 참고하세요. WhatsApp 서브 계정 설정 문서도 함께 확인해 보세요.
+2. **액션 선택**
+   - 워크플로우 빌더에서 사용 가능한 액션 목록 중 **WhatsApp**을 선택하세요.
+3. **액션 이름 입력**
+   - **Name**(이름)에 알아보기 쉬운 이름을 입력하세요. 예: "고객이 답장함"
+4. **메시지 유형 선택**
+   - **WhatsApp Template**(WhatsApp 템플릿): 승인된 템플릿을 골라 24시간 창 밖에서도 메시지를 보낼 수 있어요.
+5. **저장 및 활성화**
+   - 액션을 저장하고 워크플로우를 활성화하세요. 설정한 트리거에 따라 연락처에게 WhatsApp 메시지가 전송돼요.
+
+![워크플로우에서 WhatsApp 액션을 설정하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033136825/original/gUsOUMDa1828kR5I1lxHgN1A16YjZ8Bkzg.png?1726725390)
+
+### 참고 사항
+
+- 무료 진입점 대화(Free Entry Point): 고객이 WhatsApp 메시지에 답장하면 무료 진입점 대화가 열려요. 이 대화에서는 최대 72시간 동안 자유 형식 메시지나 템플릿 메시지를 추가 비용 없이 보낼 수 있어요.
+- 수신거부(DND): WhatsApp 수신거부를 설정하면 고객의 연락 선호를 관리할 수 있어요. 수신을 원하지 않는 고객도 존중할 수 있어요.
+
+## 예시
+
+시나리오: 예약된 미팅 24시간 전에 WhatsApp으로 예약 알림을 보내려고 해요.
+
+워크플로우 설정
+
+- 트리거: **Appointment Reminder**(예약 알림)
+- 액션: **WhatsApp Send Message**
+  - **Name**: "WhatsApp 예약 알림 보내기"
+  - **Message Type**(메시지 유형): 템플릿 - 예약 알림
+  - 템플릿 내용: "안녕하세요 {{contact.first_name}}님, {{appointment.date}}에 예약된 일정을 안내해 드려요."
+
+결과: 연락처가 다가오는 예약을 알려 주는 맞춤 WhatsApp 메시지를 자동으로 받아요.

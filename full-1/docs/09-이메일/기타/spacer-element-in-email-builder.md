@@ -1,0 +1,65 @@
+---
+원문: https://help.gohighlevel.com/support/solutions/articles/155000005495-spacer-element-in-email-builder
+번역일: 2026-11-07
+카테고리: 09-이메일
+---
+
+# 이메일 빌더의 여백 요소 사용하기
+
+이메일 빌더의 새 **여백** 요소를 소개해요. 이메일 레이아웃의 간격을 데스크톱과 모바일 모두에서 더 쉽고 정확하게 조정할 수 있어요.
+
+[동영상](https://www.youtube.com/embed/bRfVbY_fdIw?&wmode=opaque)
+
+## 여백 요소란?
+
+**여백** 요소는 이메일 템플릿의 콘텐츠 블록 사이에 세로나 가로 여백을 넣는 드래그 앤 드롭 도구예요. 구분선을 대신 쓰거나 패딩을 일일이 조정하지 않아도 간격을 간단하게 조절할 수 있어요. 이메일 레이아웃이 깔끔하고 전문적으로 보이고, 모든 기기에서 화면 크기에 맞게 표시돼요.
+
+## 여백 요소의 장점
+
+- 복잡한 우회 방법 없이 이메일 레이아웃을 쉽게 조정할 수 있어요.
+- 이메일 디자인이 더 깔끔하고 전문적으로 보여요.
+- 구분선을 여백 대용으로 쓰거나 패딩을 직접 조정할 필요가 없어요.
+- 모바일과 데스크톱에 맞춰 간격이 자동으로 조정돼요.
+- 이메일이 더 보기 좋고 읽기 편해져요.
+
+## 여백 요소 설정하기
+
+여백 요소를 제대로 설정하면 원하는 간격을 정확히 만들 수 있고, 이메일이 더 보기 좋고 읽기 편해져요. 아래 순서대로 이메일 템플릿에 여백 요소를 추가하고 조정해 보세요.
+
+1. 서브 계정 대시보드에서 **마케팅 > 이메일 > 템플릿**으로 이동하세요.
+
+   ![마케팅 > 이메일 > 템플릿 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048036120/original/zaRXnBCweIwnyjatGAappWyzBnBgtMY7ow.png?1749586302)
+2. 기존 이메일 템플릿을 클릭해서 열거나, 오른쪽 위의 **+ 신규** 버튼을 클릭해 새 템플릿을 만드세요.
+
+   ![템플릿 열기 또는 새로 만들기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048036183/original/Ry6kkeO7KmPIaU_exR0a_7NE1gQegKvfGQ.png?1749586508)
+3. 이메일 빌더 왼쪽 위의 **요소 추가(+)** 아이콘을 클릭하세요. 사이드바에서 **여백** 요소를 찾으세요.
+
+   ![사이드바에서 여백 요소 찾기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048036254/original/OgQ6AbeonTYJv4z4ZF2fsX8bIp1xcPUU-w.png?1749586677)
+4. 여백 요소를 이메일 레이아웃에서 원하는 위치로 끌어다 놓으세요.
+5. 여백 요소를 클릭한 뒤 오른쪽 사이드바의 **편집** 탭에서 높이, 너비, 색상을 조정하세요. **공개 범위** 탭에서는 **Device-Based Visibility**(기기별 공개 설정)와 **조건부 발송**을 설정할 수 있어요.
+
+   ![편집 탭에서 높이, 너비, 색상 조정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155082952361/original/pu0oxGJafqVtMaJJk7PtEIv__xNWkNCWrw.png?1791550209)
+   ![공개 범위 탭에서 기기별 공개 설정과 조건부 발송 조정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155082952424/original/THm_LvQ1DTMRYqEYdqSth_CYglpuhmDgwg.png?1791550244)
+6. 이메일을 미리보기로 열어 데스크톱과 모바일에서 간격이 알맞게 보이는지 확인하세요.
+
+## 자주 묻는 질문
+
+### 여백 요소는 모바일 기기에서도 화면에 맞게 표시되나요?
+
+여백 요소는 모바일 화면에 맞게 자동으로 조정되어, 어떤 기기에서도 간격이 일정하게 유지돼요. 데스크톱과 모바일 미리보기에서 모두 확인해 보세요.
+
+### 여백 요소를 넣으면 이메일에 눈에 보이는 내용이 추가되나요?
+
+아니요. 여백 요소는 빈 공간만 만들고, 눈에 보이는 내용은 표시하지 않아요.
+
+### 여백 요소로 세로 간격과 가로 간격을 모두 설정할 수 있나요?
+
+네. 레이아웃에 맞게 높이로 세로 간격을, 너비로 가로 간격을 조정할 수 있어요.
+
+### 여백 요소가 이메일 전달률이나 로딩 속도에 영향을 주나요?
+
+아니요. 여백 요소는 가벼워서 전달률이나 로딩 시간에 영향을 주지 않아요.
+
+### 여백 요소가 더 이상 필요 없으면 어떻게 지우나요?
+
+여백 요소를 클릭한 뒤 삭제(휴지통) 아이콘을 누르면 레이아웃에서 지워져요.

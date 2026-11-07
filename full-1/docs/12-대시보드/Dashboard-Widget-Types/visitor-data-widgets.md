@@ -1,0 +1,27 @@
+---
+원문: https://help.gohighlevel.com/support/solutions/articles/155000004200-visitor-data-widgets
+번역일: 2026-11-07
+카테고리: 12-대시보드
+---
+
+# 방문자 데이터 위젯
+
+웹사이트와 퍼널의 방문자 데이터를 보여 주는 위젯을 정리했어요. 어떤 위젯이 어떤 수치를 보여 주는지 확인할 때 참고하세요.
+
+[동영상](https://www.youtube.com/embed/9aSaCIVOp0U?&wmode=opaque)
+
+## 웹사이트/퍼널 방문자 데이터 위젯
+
+1. **총 퍼널 조회 수**: 모든 퍼널의 조회 수를 보여 줘요. 퍼널과 페이지 유형별로 설정할 수 있어요.
+2. **순 방문 퍼널 조회수**: 모든 퍼널에서 중복을 제외한 방문자 수를 보여 줘요.
+3. **Total Website Views**(총 웹사이트 조회 수): 모든 웹사이트의 총 조회 수를 보여 줘요.
+4. **Unique Website Views**(순 방문 웹사이트 조회수): 모든 웹사이트에서 중복을 제외한 방문자 수를 보여 줘요.
+5. **Funnel Views Trend**(퍼널 조회 추이): 퍼널 조회 수가 시간에 따라 어떻게 변하는지 꺾은선형 차트로 보여 줘요.
+6. **Website Views Trend**(웹사이트 조회 추이): 웹사이트 조회 수의 추이를 꺾은선형 차트로 보여 줘요.
+7. **Top Funnels by Unique Views**(순 방문 기준 상위 퍼널): 순 방문 수가 많은 상위 퍼널 5개를 보여 줘요.
+8. **Top Websites by Unique Views**(순 방문 기준 상위 웹사이트): 순 방문자 수가 많은 상위 웹사이트 5개를 보여 줘요.
+9. **Total Funnel Page Views (Last Week)**(총 퍼널 페이지 조회 수, 최근 1주일): 최근 1주일 동안의 퍼널 조회 수를 보여 줘요.
+10. **Unique Funnel Views (Last Week)**(순 방문 퍼널 조회수, 최근 1주일): 최근 1주일 동안 퍼널을 방문한 순 방문자 수를 보여 줘요.
+11. **Total Funnel Page Views (Last Month)**(총 퍼널 페이지 조회 수, 최근 한 달): 최근 한 달 동안의 퍼널 총 조회 수를 보여 줘요.
+12. **Unique Funnel Views (Last Month)**(순 방문 퍼널 조회수, 최근 한 달): 최근 한 달 동안의 퍼널 순 방문 조회수를 보여 줘요.
+13. **Total Opt-ins (All Funnels)**(총 옵트인 수, 전체 퍼널): 모든 퍼널의 옵트인 수를 합산해서 보여 줘요.

@@ -1,0 +1,81 @@
+---
+원문: https://help.gohighlevel.com/support/solutions/articles/155000003903-how-to-personalize-your-campaigns-with-conditional-elements
+번역일: 2026-11-07
+카테고리: 10-마케팅
+---
+
+# 조건부 요소로 이메일 캠페인 개인화하기
+
+조건부 요소를 쓰면 연락처 정보에 따라 이메일 안의 특정 콘텐츠 블록을 보여 주거나 숨길 수 있어요. 이메일 빌더에서 설정하며, 캠페인을 따로 나누지 않고도 연락처마다 다른 내용을 보낼 수 있어요.
+
+[동영상](https://www.youtube.com/embed/eXyXP2m9ObY?&wmode=opaque)
+
+## 조건부 요소란?
+
+조건부 요소는 연락처가 특정 기준을 충족할 때만 이미지나 텍스트 같은 콘텐츠를 이메일에 표시하는 기능이에요. 연락처마다 알맞은 메시지를 자동으로 보낼 수 있어요.
+
+조건부 요소는 **이메일 빌더**에서 요소 단위(텍스트, 이미지, 버튼, 행/섹션 등)로 설정해요. 여러 종류의 기준을 사용할 수 있어요. 예를 들면 다음과 같아요.
+
+- 위치 기반 콘텐츠: 연락처의 지역에 따라 다른 이미지나 오퍼를 보여 줘요.
+- 필드 기반 텍스트: 직책이나 관심사 같은 연락처 필드에 따라 텍스트 요소를 바꿔요.
+
+## 조건부 요소의 장점
+
+- 개인화: 연락처마다 맞춤 콘텐츠를 보여 줘서 캠페인이 더 와닿아요.
+- 시간 절약: 스마트 리스트와 캠페인을 따로 만들 필요 없이, 조건부 요소를 쓴 캠페인 하나로 처리할 수 있어요.
+- 참여도 향상: 수신자에게 맞춘 콘텐츠를 보여 주면 클릭률, 응답률, 전환율이 높아질 가능성이 커요.
+- 간편한 캠페인 관리: 여러 리스트와 캠페인을 오가는 대신 모든 콘텐츠 변형을 한곳에서 관리할 수 있어요. 그만큼 복잡함과 실수가 줄어요.
+
+## 조건부 요소 사용하기
+
+1. **이메일 빌더**(Email Builder)에서 이메일을 열어요. (**마케팅 > 이메일 > 캠페인** 또는 **템플릿**)
+
+   ![이메일 빌더에서 이메일 열기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064214065/original/0_VFLp06V9FNJdGyL9MwqrOUOdB0ozPEWg.png?1770235093)
+
+2. 요소(텍스트, 이미지, 버튼 등)를 선택하고, 설정 패널에서 **공개 범위** 탭을 열어요.
+
+   ![요소 설정 패널의 공개 범위 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064214124/original/8an3-B_coLa2a2ovUe8sqpVcVEUcv6ZfYQ.png?1770235228)
+
+   요소 위에 나타나는 액션 중 **요소 아이콘**(조건부 요소)을 클릭해도 바로 열 수 있어요.
+
+   ![요소 오버레이의 조건부 요소 아이콘](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064214302/original/DxWB3jHLbF1CH1POX4wNzBqWkqRKJRhW7Q.png?1770235626)
+
+3. **조건부 발송**을 켜요.
+
+   ![조건부 발송 켜기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064214135/original/gO7lepdZAkHWsLCSSGOPSO56uvJIxocvyQ.png?1770235265)
+
+4. **Field**(필드)를 고르고, **조건**(**Is** / **Is Not**)을 정한 다음, **Value**(값)를 입력해요.
+
+   값을 비워 두면 조건부 요소의 값이 null로 설정돼요. null로 설정하면 지정한 필드가 비어 있을 때만 요소가 표시돼요.
+
+   ![필드, 조건, 값 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064214196/original/09Aj5eafLj8sNjKxee8GPgQ6KPSOjnxXSg.png?1770235408)
+
+연락처의 커스텀 필드가 설정되지 않은 경우에도 조건부 요소가 안정적으로 평가돼요.
+
+## 조건부 표시의 새 연산자
+
+**조건부 표시**에서 더 유연한 규칙을 쓸 수 있어요. 이메일을 개인화할 때 값이 없거나 비어 있는 경우를 더 깔끔하게 처리할 수 있어요.
+
+공개 범위 규칙을 설정할 때 다음 연산자를 쓸 수 있어요.
+
+- **Is**(일치)
+- **Is Not**(일치하지 않음)
+- **Is Empty**(비어 있음)
+- **Is Present**(값이 있음)
+
+이 연산자는 **공개 범위** 드롭다운에서 첨부파일 필드를 포함한 커스텀 필드에 사용할 수 있어요.
+
+사용 예시
+
+- 첨부파일 필드에 **Is Present**를 적용해서, 값이 있을 때만 "인보이스 다운로드" 버튼을 표시해요.
+- 이름(First Name)에 **Is Empty**를 적용해서, 이름이 비어 있으면 개인화된 인사말을 숨겨요.
+
+## 자주 묻는 질문
+
+### 비어 있는 필드를 지정하려고 값에 "NULL"을 입력해도 되나요?
+
+아니요. "NULL"을 입력해도 빈 필드와 일치하지 않아요. 연락처의 필드는 비워 두고, 조건을 **Is Empty**로 설정하세요. 필드에 공백이나 플레이스홀더 텍스트가 없는지도 확인하세요.
+
+### 조건부 요소에는 어떤 필드 유형을 쓸 수 있나요?
+
+한 줄 텍스트, 숫자, 라디오 선택, 단일 선택 드롭다운을 지원해요. 숫자는 기호 없이 숫자만 입력하세요. 라디오나 단일 선택 필드는 저장된 옵션 값과 정확히 같게 입력해야 해요.

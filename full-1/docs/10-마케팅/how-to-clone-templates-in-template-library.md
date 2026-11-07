@@ -1,0 +1,52 @@
+---
+원문: https://help.gohighlevel.com/support/solutions/articles/155000001458-how-to-clone-templates-in-template-library-
+번역일: 2026-11-07
+카테고리: 10-마케팅
+---
+
+# 템플릿 라이브러리에서 템플릿 복제하기
+
+**템플릿 라이브러리**에 있는 템플릿을 복제해서 새 템플릿의 바탕으로 쓰는 방법을 안내해요. 브랜딩을 일관되게 유지하고 새 채널을 만드는 시간도 줄이려면, 나와 팀원이 만든 기존 템플릿에서 시작하는 것이 좋아요.
+
+[동영상](https://www.youtube.com/embed/lPB_V8p9zaA?&wmode=opaque)
+
+## 커뮤니티 튜토리얼 더 보기
+
+<https://youtu.be/gkUtOinHmQY>
+
+<https://youtu.be/7ut-r0lnWPM>
+
+## 누가 복제할 수 있나요?
+
+현재는 **에이전시 관리자**만 템플릿을 복제할 수 있어요.
+
+## 템플릿 복제하는 방법
+
+### 방법 1. 목록에서 바로 복제하기
+
+1. **템플릿 라이브러리**로 이동한 다음, 복제할 템플릿 위에 마우스를 올려요.
+2. 오른쪽 위에 있는 점 세 개 아이콘을 클릭해요.
+
+   ![템플릿 위에 마우스를 올렸을 때 오른쪽 위에 보이는 점 세 개 아이콘](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155013011922/original/V-L4YmtjRO9vJPtXwA2ZkuMxXd3wx9NLLQ.png?1700232131)
+
+3. **템플릿 복제**를 클릭한 다음 **확인**을 클릭해요.
+
+### 방법 2. 템플릿을 열어서 복제하기
+
+1. **템플릿 라이브러리**로 이동한 다음, 복제할 템플릿 위에 마우스를 올려요.
+2. 템플릿을 열어요.
+3. 오른쪽 위에 있는 점 세 개 아이콘을 클릭해요.
+
+   ![템플릿을 연 화면에서 오른쪽 위에 보이는 점 세 개 아이콘](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155013011921/original/anJykjaQma17NzG-JqmHUnOekZPbiwEa8A.png?1700232131)
+
+4. **템플릿 복제**를 클릭한 다음 **확인**을 클릭해요.
+
+## 자주 묻는 질문
+
+### 템플릿은 누가 복제할 수 있나요?
+
+에이전시 관리자가 템플릿을 복제할 수 있어요.
+
+### 복제한 이메일 템플릿의 제목을 바꿀 수 있나요?
+
+네, 바꿀 수 있어요. **편집**을 클릭해서 복제한 템플릿의 제목을 수정하세요.

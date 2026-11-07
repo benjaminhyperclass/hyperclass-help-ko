@@ -1,0 +1,92 @@
+---
+원문: https://help.gohighlevel.com/support/solutions/articles/155000005156-getting-started-with-reviews-ai-agents
+번역일: 2026-11-07
+카테고리: 13-AI-Employee
+---
+
+# 리뷰 AI 에이전트 시작하기
+
+리뷰 AI 에이전트는 어조, 감정, 문체 설정에 맞춰 리뷰에 자동으로 답글을 다는 AI 캐릭터예요. 이 문서에서는 에이전트를 만들고, 상황에 맞게 배정하고, 동작 방식을 조정해서 모든 고객 응대에서 브랜드 일관성을 지키는 방법을 안내해요.
+
+[동영상](https://www.youtube.com/embed/KaTV\_bvRTTU?&wmode=opaque)
+
+## 리뷰 AI 에이전트 설정하기
+
+### 1단계: 리뷰 AI 설정 화면 열기
+
+1. 계정에서 **평판 관리**(Reputation Management)로 이동하세요.
+2. **설정**을 클릭하세요.
+3. **리뷰 AI** 탭으로 이동하세요.
+4. 이 화면에서 AI 에이전트를 만들고 관리할 수 있어요.
+
+![평판 관리 설정의 리뷰 AI 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045757887/original/BmMNwYY1jy0mBB4ci2MqwrZiRLiQzrTT5A.png?1745836397)
+
+### 2단계: AI 에이전트 만들기 또는 선택하기
+
+1. **에이전트 만들기**를 클릭하세요.
+2. 어조, 문체, 특성을 직접 정해서 처음부터 만들거나, 미리 만들어 둔 템플릿을 사용하세요.
+3. 아래 항목을 설정하세요.
+   - **에이전트 이름**: 에이전트에 알아보기 쉬운 이름을 붙이세요. 성과나 리뷰 답글 품질을 확인할 때 도움이 돼요.
+   - **어조**: 친근함, 전문적, 공감 등을 고를 수 있어요.
+   - **프롬프트**: 에이전트에게 줄 지시를 간결하게 쓰세요.
+
+![에이전트 만들기 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155082843239/original/nUHQ1Yw4i_yjzTITQpm8rjIaa_ikhZw0Jg.png?1791459706)
+
+{% hint style="info" %}
+**스타터 에이전트 만들기**를 선택하면 미리 만들어진 AI 에이전트를 한 번에 모두 켤 수 있어요. 에이전트를 하나씩 만들지 않아도 템플릿으로 만든 캐릭터를 바로 쓸 수 있어요.
+{% endhint %}
+
+### 3단계: AI 에이전트 배정 규칙 정하기
+
+- 리뷰의 감정(**Review Sentiment**, 리뷰 감정)에 따라 AI 에이전트를 배정하세요. 감정은 긍정, 중립, 부정으로 나뉘어요.
+- 다양한 느낌의 답글을 원하면 **Round Robin Assignment**(라운드 로빈 배정)를 켜세요. 에이전트가 자동으로 돌아가며 답글을 달아요.
+
+### 4단계: 언어 감지 설정하기
+
+- AI가 리뷰 언어를 자동으로 감지해요.
+- 리뷰 언어를 감지하지 못할 때를 대비해 **Fallback Language**(대체 언어)를 정하세요.
+
+### 5단계: Google 비즈니스 페이지 선택하기(선택 사항)
+
+- AI 에이전트를 특정 **Google Business Pages**(Google 비즈니스 페이지)에 배정할 수 있어요.
+- 브랜드나 지점이 여러 곳일 때 답글을 나눠서 관리하기에 좋아요.
+
+![Google 비즈니스 페이지에 에이전트를 배정하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045758725/original/c-q7EwNAHxXNq9C4LDDSZ9vF_yoRLgt43Q.png?1745837023)
+
+### 6단계: AI 에이전트 관리하고 테스트하기
+
+- AI 에이전트는 언제든 **편집**, **복제**, **삭제**할 수 있어요.
+- 게시하기 전에 AI가 만든 답글을 미리 볼 수 있어요.
+- 각 리뷰 답글을 어떤 에이전트가 썼는지 **평판 관리** 화면에서 쉽게 확인할 수 있어요.
+
+![에이전트 관리 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155082844279/original/tG7K1MCok4Ce74UVAmRKGBk42hK9BSvCEQ.png?1791460175)
+
+#### 저장하기 전에 AI 답글 미리 보기
+
+실시간 답글 미리보기를 쓰면 설정을 저장하기 전에 AI 에이전트가 어떻게 답할지 확인할 수 있어요. 아래 리뷰 유형별로 미리보기 예시가 제공돼요.
+
+- 긍정 리뷰
+- 중립 리뷰
+- 부정 리뷰
+
+에이전트의 어조, 프롬프트, **Brand Voice**(브랜드 보이스), 그 밖에 지원되는 설정을 바꿀 때마다 미리보기를 다시 생성해 보세요. 실제 리뷰 답글에 설정을 적용하기 전에 답글 문체와 일관성을 점검할 수 있어요.
+
+![긍정, 중립, 부정 리뷰 예시를 보여 주는 리뷰 AI 에이전트 실시간 답글 미리보기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155082844014/original/44Ow8bbiUQlsh9fdw5bT0nyw354Gu8HEuA.png?1791460062)
+
+## 리뷰 AI 에이전트 활용 팁
+
+- 브랜드 보이스에 맞게 어조와 문체를 분명하게 정하세요.
+- 긍정, 중립, 부정 리뷰를 다르게 처리하도록 설정하세요.
+- 답글 지침은 단순하고 구체적으로 쓰세요.
+- 해당되면 사업장 이름이나 지점명을 넣어서 답글을 개인화하세요.
+- 어조와 내용이 기대에 맞는지 정기적으로 답글을 미리 확인하세요.
+- 게시하기 전에 **Brand Voice**를 설정하세요. 답글의 관점, 사업장 이름, 어조, 길이, 맺음말을 정해 두면 생성된 답글이 브랜드와 일관되게 유지돼요.
+- 더 안전한 답글을 위해 **Quality Guardrails**(품질 가드레일)를 사용하세요. 제공되는 옵션을 켜면 반복되는 첫 문장과 위험할 수 있는 표현을 줄일 수 있어요.
+- 리뷰 감정별로 미리보기를 확인하세요. 에이전트 설정을 저장하기 전에 긍정, 중립, 부정 답글 예시를 살펴보세요.
+- 민감한 상황에서는 사람이 직접 검토하세요. 위험도가 높은 답글이 게시되기 전에 추가로 확인하고 싶다면 민감한 리뷰 보류 기능을 켜세요.
+
+이제 리뷰 AI 에이전트를 만들고 관리해서, 더 개인화되고 일관된 리뷰 답글을 자동으로 보낼 수 있어요.
+
+{% hint style="info" %}
+리뷰 AI 에이전트는 사용자 권한에 따라 사용할 수 있어요. 에이전트를 만들거나 편집하는 옵션이 보이지 않으면, 관리자에게 내 역할에 **Manage Reviews AI Agents**(리뷰 AI 에이전트 관리) 권한을 켜 달라고 요청하세요.
+{% endhint %}

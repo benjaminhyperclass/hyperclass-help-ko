@@ -1,0 +1,80 @@
+---
+원문: https://help.gohighlevel.com/support/solutions/articles/155000003529-adding-additional-attributes-to-listings
+번역일: 2026-11-07
+카테고리: 31-리셀링
+---
+
+# 리스팅에 추가 속성 등록하기
+
+비즈니스의 온라인 리스팅에 **추가 속성**을 넣어 정보를 더 자세히 보여 주는 방법을 안내해요. 제공하는 서비스, 취급 브랜드, 사용 언어 등을 분명히 보여 주면 고객이 필요한 정보를 쉽게 찾을 수 있어요.
+
+[동영상](https://www.youtube.com/embed/qoRtTzcvIjM?&wmode=opaque)
+
+---
+
+## 리스팅의 추가 속성이란?
+
+**리스팅**의 **추가 속성** 기능을 쓰면 비즈니스 운영 정보를 더 자세하고 폭넓게 알릴 수 있어요. 속성을 잘 채워 두면 온라인 노출이 늘고 신뢰도가 높아지며, 잠재 고객에게 비즈니스의 핵심 정보를 분명하게 전할 수 있어요.
+
+---
+
+## 추가 속성을 쓰면 좋은 점
+
+- 노출 강화: 서비스를 분명하게 보여 주어 관련성 높은 리드를 끌어와요.
+- 신뢰도 향상: 소속 단체를 보여 주어 신뢰를 쌓아요.
+- 고객 이해도 향상: 취급하는 브랜드를 밝혀 고객이 쉽게 알아보게 해요.
+- 포용성과 접근성: 사용 가능한 언어를 알려 더 다양한 고객에게 다가가요.
+- 검색 노출 최적화: 전략적으로 고른 키워드로 온라인 검색 노출을 높여요.
+
+---
+
+## 추가 속성 등록·수정하기
+
+다음 단계를 따라 리스팅의 속성을 등록하거나 수정하세요.
+
+1. **평판 관리 > 리스팅 > 사업체 유형**으로 이동하세요.
+
+   ![평판 관리 > 리스팅 > 사업체 유형 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049107358/original/-0MD8FBpzfS3hBZ4U3gRhoq7175qSNKuHw.png?1751305444)
+2. 수정할 사업체 옆의 점 3개(⋮) 아이콘을 클릭한 다음 **편집**을 클릭하세요.
+
+   ![사업체 옆 점 3개 아이콘과 편집 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049107398/original/sXKHnX8M5WYu-waYpF579KFOVF228qNKMA.png?1751305539)
+3. 상단 메뉴 바에서 **추가 속성**을 클릭하세요.
+
+   ![상단 메뉴 바의 추가 속성 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049107497/original/JxexlxRHg8BNi2qVRxFPh9n_j0fzIY-Z9A.png?1751305695)
+4. 비즈니스 속성을 입력하거나 수정한 다음 파란색 **저장** 버튼을 클릭하세요.
+
+   ![속성 입력 후 저장 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049107654/original/VmhQgM5QbvTKA6ORW3kdX2qDaJm5N5VODQ.png?1751305966)
+
+---
+
+## 추가 속성 항목 살펴보기
+
+**설립 연도**: 비즈니스를 시작한 연도를 알리면 경험과 신뢰도를 보여 줄 수 있어요. 잠재 고객이 더 믿고 찾게 돼요.
+
+**서비스**: 비즈니스에서 제공하는 서비스를 구체적으로 적어 주세요. 고객이 무엇을 제공하는지 정확히 알 수 있어요. 고객이 찾는 것과 제공하는 서비스가 맞아떨어지니 관련성 높은 리드를 더 많이 얻을 수 있어요.
+
+**연관**: 소속된 전문 협회, 단체, 제휴 관계를 보여 주세요. 이런 연결을 드러내면 업계에서 믿을 만한 비즈니스라는 인상을 줄 수 있어요.
+
+**브랜드**: 취급하거나 대표하는 브랜드를 적어 주세요. 고객이 상품이나 서비스의 맥락을 이해하는 데 도움이 돼요. 알려진 브랜드는 고객의 신뢰를 높여 줘요.
+
+**언어**: 비즈니스에서 사용할 수 있는 언어를 알려 주세요. 다양한 고객과 원활하게 소통할 수 있고, 고객 만족도가 높아지며 시장 범위도 넓어져요.
+
+**키워드**: 비즈니스를 설명하는 관련 키워드를 추가하세요. 온라인에서 더 잘 보이고, 잠재 고객이 비즈니스를 쉽게 찾아 방문 횟수와 발견될 가능성이 늘어나요.
+
+![추가 속성 입력 화면 예시 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033132137/original/8uEeWMqa51AU0AwBXG1vlZDjd1k2Hs2S2A.jpeg?1726709836)![추가 속성 입력 화면 예시 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033132138/original/hKU0pCa7AA6sbOLcScr2bpgM7bwm7lRRUg.jpeg?1726709836)
+
+---
+
+## 자주 묻는 질문
+
+### 속성을 저장한 뒤에도 수정할 수 있나요?
+네, **리스팅** 화면에서 바로 언제든 수정할 수 있어요.
+
+### 모든 속성을 꼭 입력해야 하나요?
+아니요. 비즈니스에 해당하는 속성만 골라서 입력해도 돼요.
+
+### 변경 내용이 온라인에 얼마나 빨리 반영되나요?
+보통 24~48시간 안에 반영돼요. 플랫폼에 따라 달라질 수 있어요.
+
+### 키워드를 추가하면 SEO 순위에 직접 영향을 주나요?
+네, 전략적으로 고른 키워드를 추가하면 리스팅의 온라인 노출을 높일 수 있어요.

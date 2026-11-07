@@ -1,0 +1,17 @@
+---
+원문: https://help.gohighlevel.com/support/solutions/articles/155000003093-how-to-use-gifs-in-communities-for-posts-and-comments
+번역일: 2026-11-07
+카테고리: 17-멤버십-커뮤니티
+---
+
+# 커뮤니티 게시글과 댓글에 GIF 넣기
+
+**커뮤니티**(Communities)의 게시글과 댓글에서 GIF를 쓰는 방법을 안내해요. GIF를 넣어 대화를 더 재미있고 생동감 있게 만들고 싶을 때 참고하세요.
+
+[동영상](https://www.youtube.com/embed/Ino2JM7S_Rg?&wmode=opaque)
+
+## GIF 지원 강화
+
+이제 커뮤니티에서 GIF를 더 쉽게 쓸 수 있어요. GIF가 단순한 첨부파일이 아니라 게시글과 댓글 안에 바로 보이는 인라인 콘텐츠로 들어가요. 웹과 모바일 모두에서 쓸 수 있어요.
+
+- 게시글과 댓글에 GIF를 직접 넣어서 대화에 재미와 생동감을 더할 수 있어요.

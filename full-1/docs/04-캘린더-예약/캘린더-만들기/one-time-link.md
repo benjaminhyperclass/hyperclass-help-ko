@@ -1,0 +1,73 @@
+---
+원문: https://help.gohighlevel.com/support/solutions/articles/155000001692-one-time-link
+번역일: 2026-11-07
+카테고리: 04-캘린더-예약
+---
+
+# 일회용 링크
+
+일회용 링크는 예약이 한 번 잡히면 자동으로 만료되는 캘린더 예약 링크예요. 캘린더 전체를 공개하지 않고 특정 연락처에게만 예약을 받고 싶을 때 쓰세요.
+
+[동영상](https://www.youtube.com/embed/bHmwfqESdJc?&wmode=opaque)
+
+커뮤니티 튜토리얼 더 보기
+
+<https://youtu.be/mC2nQZ1oH5c>
+
+<https://youtu.be/zSpu_5q566Q>
+
+<https://youtu.be/9n-jJgJYwps>
+
+<https://youtu.be/LfjRdGikkL0>
+
+---
+
+## 일회용 링크란?
+
+일회용 링크는 내 캘린더로 연결되는 고유한 예약 링크예요. 예약이 잡히면 자동으로 만료돼요. **영구 링크**나 **Scheduling Link**(예약 링크)와 달리, 캘린더에 딱 한 번만 접속할 수 있어요.
+
+---
+
+## 일회용 링크를 쓰면 좋은 이유
+
+- 캘린더 전체를 공유하고 싶지 않은 분께 특히 유용해요. 업종에 상관없이 쓸 수 있어요.
+- 예약이 한 번 완료될 때마다 링크가 자동으로 만료돼요. 내 가능한 시간을 직접 관리하고, 원하지 않는 예약을 막을 수 있어요.
+- 링크로 예약을 마친 사람은 새 링크를 받기 전에는 다시 예약할 수 없어요.
+- 예약한 사람이 내 가능한 시간을 모르는 사람에게 공유하는 일도 막을 수 있어요.
+
+---
+
+## 일회용 링크 공유하기
+
+캘린더 화면 위쪽에서 일회용 링크를 바로 만들 수 있어요. **공유**를 쓰면 설정 화면을 벗어나지 않고 한 번만 쓸 수 있는 예약 링크를 만들 수 있어요.
+
+1. 서브 계정을 엽니다.
+2. **설정**으로 이동합니다.
+3. **캘린더**를 클릭합니다.
+4. 사용할 캘린더를 엽니다.
+5. 오른쪽 위에서 **공유**를 클릭합니다.
+6. **One-Time Link**(일회용 링크)를 선택합니다.
+7. 만들어진 링크를 복사해서 연락처에게 보냅니다.
+
+일회용 링크는 예약이 완료되면 만료돼요. 그래서 캘린더에 접근하는 범위를 직접 관리할 수 있어요.
+
+{% hint style="info" %}
+이제 **캘린더 설정**의 **공유**에서 **Scheduling Link**(예약 링크), **영구 링크**, **One Time Link**(일회용 링크), **Embed Code**(임베드 코드)를 모두 열 수 있어요.
+{% endhint %}
+
+![캘린더 설정의 공유 옵션 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155014409460/original/tJYXyaOQZmJNdHJzXRq97if3mpqCUwBGYg.png?1701779399)
+
+- 공유 옵션에서 **One Time Link** 탭을 찾으세요.
+
+![One Time Link 탭 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155014410379/original/gMZzOPcD61-89Nzbv1-uHpAvA9b4vROLGg.png?1701779522)
+
+- **복사**를 클릭하면 일회용 링크를 복사해 필요한 곳에 붙여 넣을 수 있어요.
+- 새 링크가 필요하면 **새 링크 생성**을 클릭하세요. 새 URL이 만들어져요.
+
+---
+
+## 예약이 끝난 뒤에는 어떻게 되나요?
+
+예약이 잡히면 링크가 만료돼요. 이후 같은 링크로 다시 예약하려는 사람에게는 링크가 이미 만료되었으니 캘린더 소유자에게 문의하라는 안내가 나와요. 그래서 유효한 최신 링크로만 예약을 받을 수 있어요.
+
+![만료된 일회용 링크로 접속했을 때 나오는 안내 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155017921861/original/SpF26wehi_72V7aOQakJQO4ciBFaAeplXg.png?1705483286)

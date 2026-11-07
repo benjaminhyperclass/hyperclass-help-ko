@@ -1,0 +1,133 @@
+---
+원문: https://help.gohighlevel.com/support/solutions/articles/155000004871-workflows-landing-page-new-onboarding-experience
+번역일: 2026-11-06
+카테고리: 07-워크플로우
+---
+
+# 워크플로우 첫 화면의 새 온보딩 경험
+
+워크플로우를 처음 쓰는 사용자를 위해 워크플로우 자동화 첫 화면이 새로 바뀌었어요. 이 문서에서는 AI로 워크플로우 만들기, 비즈니스 니치별 추천 템플릿, 화면 안 영상, 드래그 앤 드롭으로 트리거·액션 추가하기, AI 빌더를 켜고 끄는 방법을 안내해요.
+
+새 첫 화면은 AI로 워크플로우를 만드는 기능, 시각적 안내, 온보딩 때 고른 비즈니스 니치에 맞춘 콘텐츠로 구성되어 있어요. 처음부터 내 업종에 맞는 예시와 추천을 볼 수 있어서, 자동화가 어떻게 돌아가는지 이해하고 첫 워크플로우를 빠르게 만들 수 있어요.
+
+시작하는 방법은 여러 가지예요. **AI 빌더**에 만들고 싶은 자동화를 평소 쓰는 말로 적어도 되고, 미리 만들어 둔 템플릿을 둘러봐도 되고, **Create Workflow**(워크플로우 만들기)를 눌러 처음부터 만들어도 돼요.
+
+{% hint style="warning" %}
+**Workflow AI Builder**(워크플로우 AI 빌더)는 실험실을 통해 모든 에이전시에서 기본으로 켜져 있어요. **AI 빌더**가 보이지 않는다면 에이전시 또는 서브 계정 단위에서 꺼져 있을 수 있어요.
+{% endhint %}
+
+---
+
+## Workflow AI Builder(워크플로우 AI 빌더)
+
+이제 워크플로우 첫 화면에서 AI 빌더를 바로 볼 수 있어서, 처음 쓰는 사용자도 첫 워크플로우를 쉽게 만들 수 있어요. 자동화하고 싶은 내용을 평소 쓰는 말로 적으면 AI가 워크플로우를 만들어 줘요.
+
+화면 맨 위에서 "무엇을 자동화하고 싶으세요?"라는 입력창을 찾아보세요. 예를 들어 이렇게 적을 수 있어요.
+
+"폼이 제출되면 리드에게 SMS를 보내고, 5분 동안 답장을 기다려요. 답장이 없으면 통화 작업을 만들고, 답장이 있으면 태그를 추가해요."
+
+그러면 AI가 이 내용대로 워크플로우를 만들어 줘요.
+
+입력창 아래에는 **Lead Nurturing**(리드 육성), **Form Automation**(폼 자동화), **이메일 캠페인** 같은 빠른 시작 추천도 있어요. 눌러서 더 빠르게 시작해 보세요.
+
+---
+
+## 비즈니스 니치에 맞춘 온보딩
+
+워크플로우를 처음 시작하면 **비즈니스 니치**(업종)를 고르게 돼요. 선택한 니치에 맞춰 예시부터 추천 템플릿까지 화면이 구성돼요.
+
+![비즈니스 니치별 추천 템플릿이 보이는 워크플로우 첫 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155060472773/original/4tockivB27MYSUG3Bno4xKEOTfKHXpsLFA.png?1765531296)
+
+- **학력**, **건강**, **금융**, **부동산** 같은 인기 니치용 템플릿이 준비되어 있어요. 각 업종에서 자주 쓰는 자동화 상황을 담고 있어요. 예를 들어 부동산 중개인에게는 새 매물 문의에 후속 연락을 하는 템플릿이, 병원에는 예약 알림 템플릿이 보일 수 있어요. 처음부터 만들지 않고, 니치별 템플릿으로 시작해서 내게 맞게 고쳐 쓰세요.
+- 첫 화면에 있는 **모든 템플릿** 링크를 누르면 전체 템플릿을 바로 둘러볼 수 있어요. 아이디어가 필요하거나 빠르게 시작하고 싶을 때 좋아요.
+
+![모든 템플릿 링크가 있는 워크플로우 첫 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155060473194/original/E6qoXfLEk9FZ_g5lpbMkDyCKwgHeqxt_6A.png?1765531167)
+
+---
+
+## 화면 안 영상이 있는 새 레이아웃
+
+![튜토리얼 영상이 있는 새 레이아웃](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155060473573/original/YDnMJApmLEqWYOZM2B4GmpFEF-2XVAvcSA.png?1765531296)
+
+첫 화면에 튜토리얼 영상이 있는 **Learn About Workflows**(워크플로우 알아보기) 섹션이 생겼어요. 첫 화면을 스크롤해서 템플릿을 찾아 바로 시작할 수도 있고, 다른 화면으로 이동하지 않고 짧은 소개 영상을 볼 수도 있어요. 시작할 때 쓸 템플릿과 학습 자료를 한 화면에서 볼 수 있어요.
+
+영상 목록이에요.
+
+- 워크플로우 소개: [영상 보기](https://storage.googleapis.com/automation-workflows-production/static/workflow-onboarding-videos/introduction-to-workflows.mp4)
+- 워크플로우 템플릿: [영상 보기](https://storage.googleapis.com/automation-workflows-production/static/workflow-onboarding-videos/workflow-recipes.mp4)
+- 처음부터 워크플로우 만들기: [영상 보기](https://storage.googleapis.com/automation-workflows-production/static/workflow-onboarding-videos/building-a-workflow-from-scratch.mp4)
+- 워크플로우 설정, 등록 기록, 실행 로그: [영상 보기](https://storage.googleapis.com/automation-workflows-production/static/workflow-onboarding-videos/workflow-settings-logs.mp4)
+
+### 메시지에서 바로 열기
+
+문제를 확인할 때는 대화의 메시지에서 해당 워크플로우 실행 내역을 바로 열 수 있어요.
+
+빠른 이동 경로는 다음과 같아요.
+
+- **대화**에서: **message details**(메시지 상세 정보) > **워크플로우** > **Execution Details**(실행 상세 정보). 해당 메시지의 내용이 그대로 불러와져요.
+- 워크플로우에서: **워크플로우**에서 워크플로우를 열고 **Logs**(로그)로 이동해요.
+
+---
+
+## 트리거와 액션을 캔버스로 드래그 앤 드롭하기
+
+사이드바에서 트리거와 액션을 워크플로우 캔버스로 바로 끌어다 놓으면 단계를 더 빠르게 추가할 수 있어요.
+
+### 사용 방법
+
+1. 워크플로우에서 **Triggers**(트리거) 또는 **Actions**(액션) 사이드바를 엽니다.
+2. 추가할 트리거나 액션을 누른 채로 캔버스까지 끌어옵니다.
+3. 놓을 수 있는 위치(**+** 표시 또는 기존 단계 사이)에 마우스를 올립니다. 강조된 자리 표시가 단계가 들어갈 위치를 보여 줘요.
+4. 항목을 놓고 설정한 다음 **Save**(저장)를 눌러 워크플로우에 추가합니다.
+
+![트리거를 캔버스로 끌어다 놓는 모습](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064712764/original/OXfbIYzBFxXo0ngPp2k3FnOXM0JGPQkz7A.gif?1770826719)
+
+{% hint style="warning" %}
+저장하지 않고 워크플로우에서 나가면, 끌어다 놓은 트리거나 액션은 캔버스에 추가되지 않아요.
+{% endhint %}
+
+---
+
+## AI 빌더 사용 여부 설정
+
+**Workflow AI Builder**는 모든 에이전시에서 기본으로 켜져 있어요.
+
+### 에이전시 전체(모든 서브 계정 포함)에서 끄기
+
+**설정 > 실험실**로 이동해서 **Workflow AI Builder**를 끕니다.
+
+### 특정 서브 계정에서만 끄기
+
+**자동화 > 글로벌 워크플로우 설정 > Workflow AI**(워크플로우 AI)로 이동해서 **AI 빌더**를 끕니다.
+
+![글로벌 워크플로우 설정에서 AI 빌더를 끄는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155071093803/original/4gIwSQd6Mf19iYzJgl1X4URN46hpi5_8gQ.png?1778570385)
+
+---
+
+### 서브 계정의 소유자 팝업
+
+에이전시 소유자가 AI 빌더가 적용된 서브 계정에 들어가면 확인 팝업이 나타나요. 이 팝업에서 **비활성화**를 눌러 해당 서브 계정의 AI 빌더를 바로 끌 수 있어요.
+
+---
+
+## Create Workflow 드롭다운 옵션
+
+처음부터 만드는 옵션도 그대로 남아 있어요. **Create Workflow** 드롭다운에서 확인할 수 있어요.
+
+![Create Workflow 드롭다운 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066282177/original/WVbDBRy8wIjfAKgi_Zy_da7nGIw117QnHw.png?1772717154)
+
+---
+
+## 자주 묻는 질문
+
+### 서브 계정에서 새 화면이 보이지 않아요. 왜 그런가요?
+
+<!-- 검토 필요: 원문 내용이 서로 다름 (앞에서는 AI 빌더가 기본으로 켜져 있다고 했고, 이 FAQ에서는 실험실에서 먼저 켜야 한다고 함) -->
+이 화면을 쓰려면 실험실에서 AI 빌더를 먼저 켜야 해요. **설정 > 실험실**에서 **AI 빌더** 기능을 켜면 새 워크플로우 첫 화면을 볼 수 있어요.
+
+### AI가 들어간 새 화면을 사용자에게 보여 주고 싶지 않아요. 어떻게 없애나요?
+
+AI 빌더는 두 가지 단위에서 끌 수 있어요.
+
+- 에이전시: **설정 > 실험실**에서 **Workflow AI Builder**를 끕니다.
+- 서브 계정: **자동화 > 글로벌 워크플로우 설정 > Workflow AI**에서 **AI 빌더**를 끕니다.
