@@ -486034,5 +486034,33 @@
  "agency|agencyProductSettingConcent|agencyProductSettingModal|apiKey|auditLogs.profile.integration": {
   "en": "Integration",
   "ko": "연동"
+ },
+ "estimatesApp.editor.prefill.invalid": {
+  "en": "We couldn't read the prefilled details. Starting with a blank estimate.",
+  "ko": "미리 채운 정보를 읽지 못했습니다. 빈 견적서로 시작합니다."
+ },
+ "estimatesApp.editor.prefill.locationMismatch": {
+  "en": "The prefilled details belong to another location. Starting with a blank estimate.",
+  "ko": "미리 채운 정보가 다른 서브 계정의 것입니다. 빈 견적서로 시작합니다."
+ },
+ "estimatesApp.editor.prefill.notFound": {
+  "en": "The prefilled details are no longer available. Please start again from where you came from.",
+  "ko": "미리 채운 정보를 더 이상 쓸 수 없습니다. 처음 들어온 화면에서 다시 시작해 주세요."
+ },
+ "estimatesApp.editor.prefill.partial": {
+  "en": "Some prefilled details could not be added: {details}",
+  "ko": "미리 채운 정보 일부를 추가하지 못했습니다: {details}"
+ },
+ "estimatesApp.editor.prefill.skippedContact": {
+  "en": "contact not found",
+  "ko": "연락처를 찾을 수 없음"
+ },
+ "estimatesApp.editor.prefill.skippedItems": {
+  "en": "{count} item(s) could not be added",
+  "ko": "항목 {count}개를 추가하지 못함"
+ },
+ "aiEmployeesApp.aiValueLandingPage.call.calling": {
+  "en": "calling...",
+  "ko": "전화 거는 중..."
  }
 }
