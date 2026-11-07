@@ -586,7 +586,7 @@
     certificate: 1, badge: 1,     // v4.21.12: 자격 증명 목록 유형 칩(소문자 + CSS capitalize)
     paid: 1, pending: 1 };        // v4.21.15: 인보이스 미리보기 결제 일정 상태(소문자 + CSS capitalize)
   // v4.21.15: Tailwind 알약(.rounded-full — 코스 편집기 커뮤니티 그룹 'Active' 실측). 허용 목록 단어만이라 아바타 머리글자 등은 무관
-  var TAG_SEL = '.n-tag,.hr-tag,.rounded-full';
+  var TAG_SEL = '.n-tag,.hr-tag,.ui-tag,.rounded-full';   // .ui-tag: 거래 상세 상태 칩 'Succeeded'(rounded, 알약 아님)
   // v4.21.12: 배지·알약(pill) 안의 'New' 는 버튼(_textScoped 'New'=새로 만들기)이 아니라 '신규'('AI에게 문의' 배너 .askai-banner__pill 실측)
   var PILL_WORDS = { New: '신규', NEW: '신규' };
   var PILL_SEL = '[class*="__pill"],[class*="-pill"],[class*="badge"]';
@@ -758,6 +758,8 @@
   }
   // v4.21.15 ⑨: 쌍점 라벨('Status:' — 라벨이 사전 단어/구일 때만)과 그 바로 뒤 상태 값('Open' 등, 이전 형제 요소가 상태 라벨일 때만)
   var COLON_RE = /^([A-Za-z][A-Za-z ]{1,30}):$/, STATUS_LAB = { 'Status:': 1, '상태:': 1 };
+  // 유형 라벨 뒤 값(거래 상세 '유형: Funnel') — 여기 오는 값은 이미 _textScoped 에 있는 단어뿐이라 열거값만 바뀐다
+  var TYPE_LAB = { 'Type:': 1, '유형:': 1, 'Sub type:': 1, 'Sub Type:': 1, '하위 유형:': 1, 'Source:': 1, '출처:': 1 };
   var STATUS_VAL = { Open: 1, Won: 1, Lost: 1, Abandoned: 1 };
   function kdColon(t) {
     var m = t.match(COLON_RE); if (!m) return null;
@@ -766,8 +768,10 @@
   }
   function afterStatusLabel(p, t) {
     try {
-      if (!(STATUS_WORDS[t] === 1 || STATUS_VAL[t] === 1) || !p) return false;
-      var q = p.previousElementSibling; return !!q && STATUS_LAB[(q.textContent || '').trim()] === 1;
+      var q = p && p.previousElementSibling; if (!q) return false;
+      var lt = (q.textContent || '').trim();
+      if (STATUS_LAB[lt] === 1) return STATUS_WORDS[t] === 1 || STATUS_VAL[t] === 1;
+      return TYPE_LAB[lt] === 1;
     } catch (e) { return false; }
   }
   // v4.21.15 ⑧: 대화·활동 타임라인의 시스템 이벤트 줄 — 서버 활동 기록을 앱이 '<개체> <이름>'(굵게) + '<동사>'(굵게) + 꼬리
