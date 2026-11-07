@@ -194,12 +194,13 @@
   var POINTER_CACHE = 'hc-ko-pointer';
   var SHA_RE = /^[0-9a-f]{40}$/;
   var REV, revSource, revNext = null;
-  var BASE, URL_CORE, URL_APPS, CACHE, RAW, IMMUTABLE;
+  var BASE, URL_CORE, URL_APPS, URL_IFR, CACHE, RAW, IMMUTABLE;
   function applyRev(rev, src) {
     REV = rev; revSource = src;
     BASE = 'https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@' + REV + '/data/';
     URL_CORE = BASE + 'hc-ko-app-core.json';
     URL_APPS = BASE + 'hc-ko-app-apps.json';
+    URL_IFR = BASE + 'hc-ko-app-ifr.json';   // v4.21.15 ⑩: 중계 iframe 앱 카탈로그 — IFR 이 붙을 때만 받는다(전 고객 apps 무게 제외)
     CACHE = 'hc-ko-app-' + REV.slice(0, 7);
     // CSP 가 connect-src 를 다르게 걸어 jsDelivr fetch 가 막힐 때의 폴백 (커뮤니티 트랙과 같은 raw 경로)
     RAW = 'https://raw.githubusercontent.com/benjaminhyperclass/hyperclass-help-ko/' + REV + '/data/';
@@ -506,11 +507,21 @@
     }
   }
   // v4.21.15 ⑩: 중계 iframe 문서의 앱 — #app 이어도 호스트가 아니다. 지문 매칭(applyApp)만.
+  var ifrDict = null, ifrDictReq = false;
+  function loadIfrDict() {        // 첫 IFR 문서가 붙을 때 한 번. 파일이 없으면(404) 조용히 apps 사전만 쓴다
+    if (ifrDictReq || !URL_IFR) return; ifrDictReq = true;
+    load(URL_IFR, function (nd) { ifrDict = nd.apps || {}; scanApps(); })
+      .then(function (d) { ifrDict = (d && d.apps) || {}; scanApps(); })
+      .catch(function (e) { ifrDict = {}; log('ifr 사전 없음', e && e.message); });
+  }
   function handleIfrApp(el, app) {
     var n = attempts.get(app) || 0;
     if (n === -1 || n >= MAX_TRY) return;
     var g = composerOf(app);
     if (!g) { attempts.set(app, n + 1); return; }
+    if (ifrDict === null) { loadIfrDict(); return; }   // 사전 도착 전 — 횟수 세지 않는다
+    var fp = fingerprint(g);
+    if (ifrDict[fp] && !merged.has(g)) { merged.add(g); mergeInto(g, ifrDict[fp], 'ifr-app'); stats.apps++; attempts.set(app, -1); return; }
     if (!appsDict) return;
     if (applyApp(el, g)) { attempts.set(app, -1); return; }
     attempts.set(app, n + 1);
@@ -982,6 +993,7 @@
       if (!d || d.__hcKoIfr) return;
       d.__hcKoIfr = 1; ifr.frames++;
       if (ifrDocs.indexOf(d) < 0) ifrDocs.push(d);   // ⑩ 카탈로그 병합 대상
+      loadIfrDict();
       // iframe 앱은 load 뒤 인증을 거쳐 늦게 마운트된다 — 마운트 루트(#app)는 이미 있던 노드라 mo 가 새 앱을 못 본다
       [400, 1500, 4000, 10000].forEach(function (t) { setTimeout(scanApps, t); });
       var css = d.createElement('style'); css.textContent = 'body{word-break:keep-all;overflow-wrap:anywhere}';
