@@ -150,6 +150,7 @@
  "externalTracking.troubleshoot.section2.dos.item2": "Render the form directly in the page DOM inside a valid `<form>` element.",
  "externalTracking.troubleshoot.section2.dos.item3": "Give every field you want to capture a `name` attribute and ensure it is not disabled. For reliable contact matching, include `copy:<input type='email' name='email'>`. Phone fields such as `copy:<input type='tel' name='phone'>` are also supported.",
  "externalTracking.troubleshoot.section2.dos.item4": "Submit through the form's native submit event using `copy:<button type='submit'>` or `copy:<input type='submit'>`.",
+ "externalTracking.troubleshoot.section2.dos.label": "Do’s",
  "externalTracking.troubleshoot.section3.cta": "Open guide",
  "externalTracking.troubleshoot.section3.guideDescription": "Open the guide for detailed troubleshooting instructions for the tracking script."
 }
