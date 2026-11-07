@@ -1,5 +1,5 @@
 ---
-원문: https://help.gohighlevel.com/support/solutions/articles/155000000087-how-to-use-the-email-builder-and-its-in-line-editor
+원문: /support/solutions/articles/155000000087-how-to-use-the-email-builder-and-its-in-line-editor
 번역일: 2026-11-07
 카테고리: 10-마케팅
 ---
@@ -19,8 +19,6 @@
 예를 들어 텍스트를 선택해 글꼴이나 색상을 바꾸고, 버튼을 넣어 행동을 유도하고, 이미지를 넣어 메시지를 보완할 수 있어요.
 
 **이메일 빌더**에서는 콘텐츠 편집, 레이아웃 조정, 개인화, 미리보기를 한 작업 공간에서 할 수 있어요.
-
-[동영상](https://www.loom.com/embed/f4d9eeeb07db4f0e8a3a95ea4f9d5ab7)
 
 ![이메일 빌더 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083970587/original/EISaqEpXL0i7iXYCbLORYhVeYvrkOTwbVQ.png?1792673994)
 
@@ -109,16 +107,6 @@
 
 ![편집 패널 위치 전환](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083971961/original/8UepJTsdbsJEhFSyCtz3SHJDmeEDpLYGkA.png?1792674553)
 
-### [동영상](https://www.youtube.com/embed/UwGtSWoeYN8?&wmode=opaque) 커뮤니티 튜토리얼 더 보기
-
-<https://youtu.be/kH1UmxQd6HU>
-
-<https://youtu.be/_YeRw_m4NVo>
-
-<https://youtu.be/VQ_JUYr7haE>
-
-<https://youtu.be/pwc5pRlta-4>
-
 #### 버튼
 
 **버튼** 요소로 독자의 반응을 이끌어 낼 수 있어요. 웹페이지로 연결하거나 파일 다운로드를 시작하는 등 클릭으로 실행되는 동작을 설정할 수 있어요.
@@ -189,13 +177,13 @@
 
 #### 푸터
 
-**푸터** 요소에는 연락처, 회사 주소, 수신 거부 링크 같은 필수 정보를 넣어요.
+**푸터** 요소에는 연락처, 회사 주소, 수신거부 링크 같은 필수 정보를 넣어요.
 
 ![푸터 요소 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155000366980/original/I8-suzLj0ciFDn4J-wwsA8DnAea7yib-_Q.png?1685734315)
 
 ![푸터 요소 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083972720/original/0AV-1xrg0Whkpi2wF76GtELiAu9by2aUHQ.png?1792674862)
 
-- 텍스트 편집: 푸터 텍스트를 클릭하면 인라인 편집기가 켜져요. 필요에 맞게 텍스트를 고치세요. 회사 주소, 개인정보 처리방침 링크, 수신 거부 링크 등을 푸터에 바로 입력할 수 있어요.
+- 텍스트 편집: 푸터 텍스트를 클릭하면 인라인 편집기가 켜져요. 필요에 맞게 텍스트를 고치세요. 회사 주소, 개인정보 처리방침 링크, 수신거부 링크 등을 푸터에 바로 입력할 수 있어요.
 - 글꼴과 스타일: 인라인 편집기로 푸터 텍스트의 글꼴, 크기, 색상을 바꿀 수 있어요. 바꾸려는 텍스트를 드래그해서 선택한 뒤 편집 도구 모음의 옵션을 고르세요. 굵게, 기울임, 밑줄, 취소선도 적용할 수 있어요.
 - 링크: 인라인 편집기로 푸터에 하이퍼링크를 쉽게 넣을 수 있어요. 링크로 만들 텍스트를 선택하고, 도구 모음의 **링크** 아이콘을 누른 뒤 원하는 URL을 입력하세요. 회사 웹사이트나 서비스 이용약관, 개인정보 처리방침 같은 특정 페이지로 연결할 때 편해요.
 - 정렬과 간격: 디자인에 맞게 텍스트를 왼쪽, 오른쪽, 가운데로 정렬하세요. 줄 간격도 조정해서 푸터 텍스트를 읽기 쉽고 깔끔하게 보이게 할 수 있어요.
@@ -427,12 +415,11 @@ RSS 편집 옵션은 다음과 같아요.
 
 ![커스텀 값 선택기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034109121/original/6oxFeaWK7INztLF5qu_X0HWB4nZkt41iIg.jpeg?1728045887)
 
-**트리거 링크**: 수신자가 이메일에서 바로 구독 확인, 수신 거부, 특별 오퍼 확인 같은 행동을 할 수 있게 해 줘요. 수신자의 행동이 간단해져서 참여와 전환을 높이는 데 도움이 돼요.
+**트리거 링크**: 수신자가 이메일에서 바로 구독 확인, 수신거부, 특별 오퍼 확인 같은 행동을 할 수 있게 해 줘요. 수신자의 행동이 간단해져서 참여와 전환을 높이는 데 도움이 돼요.
 
 ![트리거 링크](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034108891/original/O64_8g_YlwM4Xt9Fn6LjDcAYUCOKw8t7lQ.png?1728045724)
 
-**콘텐츠 AI** 기능은 인공지능으로 텍스트 콘텐츠 작성을 도와줘요. 콘텐츠 제목, 설명, 키워드를 입력하면 알맞은 텍스트를 자동으로 만들어 줘요. 자세한 내용은 아래를 참고하세요. <!-- 검토 필요: 원문 문장이 "More on that in" 에서 끝나 있음 -->
-
+**콘텐츠 AI** 기능은 인공지능으로 텍스트 콘텐츠 작성을 도와줘요. 콘텐츠 제목, 설명, 키워드를 입력하면 알맞은 텍스트를 자동으로 만들어 줘요. 자세한 내용은 아래를 참고하세요.
 ![콘텐츠 AI 열기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033414105/original/LWVq6Er5rHqRBNePkyPld-KudW2yjGPVXQ.png?1727156790)
 
 ![콘텐츠 AI 입력 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034108647/original/L2lZ0LwXKMvXuI7u5VsLzh5V8mWXvtAldw.png?1728045553)
@@ -630,7 +617,7 @@ RSS 편집 옵션은 다음과 같아요.
 
 이미지보다 일반 텍스트 우선하기: 일부 이메일 클라이언트는 이미지를 자동으로 표시하지 않아요. 메시지가 전달되도록 가능한 한 텍스트를 쓰고, 꼭 필요할 때만 이미지를 쓰세요.
 
-수신 거부 옵션: 수신자가 쉽게 이메일 수신을 거부할 수 있게 하세요. 법적 요구 사항일 뿐 아니라 사용자 경험도 좋아져요.
+수신거부 옵션: 수신자가 쉽게 이메일 수신을 거부할 수 있게 하세요. 법적 요구 사항일 뿐 아니라 사용자 경험도 좋아져요.
 
 접근성: 누구나 이메일을 볼 수 있게 만드세요. 큰 글꼴을 쓰고, 텍스트와 배경의 대비를 충분히 주고, 이미지에 대체 텍스트를 넣는 것이 포함돼요.
 
@@ -653,17 +640,9 @@ RSS 편집 옵션은 다음과 같아요.
 
 ## 이메일 빌더에서 브라우저에서 미리보기 링크 사용하기
 
-### [동영상](https://www.youtube.com/embed/tYlL_Kn54ZM?&wmode=opaque)
+### 
 
 ### 커뮤니티의 다른 튜토리얼
-
-<https://youtu.be/LwyfR8NdzLs>
-
-<https://youtu.be/CD-y24zFN2Y>
-
-<https://youtu.be/NjK6SE8ub2U>
-
-<https://youtu.be/MHgiQr2GJAU>
 
 이제 새 캠페인과 기존 캠페인에 **브라우저에서 미리보기** 링크를 쉽게 넣어서 이메일 디자인을 정확하게 보여 줄 수 있어요.
 
