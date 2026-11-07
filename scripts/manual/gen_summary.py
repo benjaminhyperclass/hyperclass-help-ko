@@ -132,8 +132,7 @@ def emit_dir_group(full, indent):
 
 def main():
     out = ["# 하이퍼클래스 도움말", ""]
-    if os.path.exists(f"{R}/README.md"):
-        out += ["* [하이퍼클래스 도움말](README.md)", ""]
+    # 첫 화면(README.md)은 .gitbook.yaml structure.readme 로 GitBook 이 자동으로 붙인다(주소 'readme').
     known = {d for d, _ in SECTIONS}
     extra = sorted(d for d in os.listdir(f"{R}/docs") if os.path.isdir(f"{R}/docs/{d}") and d not in known)
     total = 0
