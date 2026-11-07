@@ -1,4 +1,8 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.14
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.15
+ * v4.21.15: ① 선택 목록 옵션의 단어 1개 — 같은 메뉴 옵션이 전부 사전 단어일 때만(앱이 정한 열거값: 코스 난이도·주제·언어)
+ *          ② 한국어 라벨 + 영어 날짜('기한 September 30, 2026' → '기한 2026년 9월 30일', 인보이스 결제 일정)
+ *          ③ 상대 시각 '2 months ago'·'an hour ago'·'in 3 days' → '2개월 전'·'1시간 전'·'3일 후'(코스 댓글 등, 노드 전체 일치)
+ *          ④ 상태 칩 허용 목록에 소문자 paid·pending(인보이스 미리보기 결제 일정) · Tailwind 알약(.rounded-full) 안의 상태어(커뮤니티 그룹 'Active').
  * v4.21.14: 교차 출처 iframe(자동화 워크플로우·비즈니스 프로필) 같은 출처 중계 — IFR_LOCS 로케이션에서 부팅했을 때만.
  *          iframe 주소를 app.hyperclass.ai/__ifr/{wf|crm}/… (엣지 Worker hc-ifr-proxy)로 바꾸고, 같은 출처가 된 iframe 문서에
  *          기존 DOM 번역(pass·mo)을 건다. Worker 헬스(x-hc-ifr) 확인 전·실패 시엔 원래 주소. 끄기: localStorage.hcKoIfr='0'.
@@ -210,7 +214,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.21.14',
+    version: '4.21.15',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -549,13 +553,39 @@
   var STATUS_WORDS = { Succeeded: 1, Pending: 1, Failed: 1, Refunded: 1, Paid: 1, Unpaid: 1, Overdue: 1, Draft: 1, Sent: 1, Void: 1,
     Active: 1, Inactive: 1, Canceled: 1, Cancelled: 1, Expired: 1, Scheduled: 1, Completed: 1, Processing: 1, Published: 1,
     Archived: 1, Incomplete: 1, Trialing: 1,
-    certificate: 1, badge: 1 };   // v4.21.12: 자격 증명 목록 유형 칩(소문자 + CSS capitalize)
-  var TAG_SEL = '.n-tag,.hr-tag';
+    certificate: 1, badge: 1,     // v4.21.12: 자격 증명 목록 유형 칩(소문자 + CSS capitalize)
+    paid: 1, pending: 1 };        // v4.21.15: 인보이스 미리보기 결제 일정 상태(소문자 + CSS capitalize)
+  // v4.21.15: Tailwind 알약(.rounded-full — 코스 편집기 커뮤니티 그룹 'Active' 실측). 허용 목록 단어만이라 아바타 머리글자 등은 무관
+  var TAG_SEL = '.n-tag,.hr-tag,.rounded-full';
   // v4.21.12: 배지·알약(pill) 안의 'New' 는 버튼(_textScoped 'New'=새로 만들기)이 아니라 '신규'('AI에게 문의' 배너 .askai-banner__pill 실측)
   var PILL_WORDS = { New: '신규', NEW: '신규' };
   var PILL_SEL = '[class*="__pill"],[class*="-pill"],[class*="badge"]';
   function inPill(p) { try { return !!p && !!p.closest && !!p.closest(PILL_SEL); } catch (e) { return false; } }
   function inStatusTag(p, t) { try { return STATUS_WORDS[t] === 1 && !!p && !!p.closest && !!p.closest(TAG_SEL); } catch (e) { return false; } }
+  // v4.21.15: 선택 목록 옵션(새 디자인 시스템·naive) 안의 단어 1개는 사용자 데이터(파이프라인·태그·사람 이름)와 섞여 범위 밖이었다.
+  // 같은 메뉴의 옵션이 **전부** 사전 단어(_text·_textScoped, 또는 이미 한국어)이면 앱이 정한 열거값 목록으로 보고 연다
+  // (코스 편집기 난이도 Beginner…Expert·주제·언어 실측). 사용자 데이터가 하나라도 섞이면 그 메뉴는 그대로 둔다.
+  // 판정은 메뉴별로 옵션 수·첫/끝 옵션 글자를 열쇠로 기억한다(가상 스크롤로 옵션이 바뀌면 다시 본다).
+  var ENUM_OPT = '.hr-base-select-option,.n-base-select-option', ENUM_MENU = '.hr-base-select-menu,.n-base-select-menu';
+  var enumMemo = typeof WeakMap === 'function' ? new WeakMap() : null;
+  function enumWord(s) {
+    s = (s || '').trim();
+    return !s || /[\uAC00-\uD7A3]/.test(s) || (!!T && typeof T[s] === 'string') || (!!TS && typeof TS[s] === 'string');
+  }
+  function inEnumMenu(p) {
+    try {
+      var o = p && p.closest ? p.closest(ENUM_OPT) : null; if (!o) return false;
+      var menu = o.closest(ENUM_MENU); if (!menu) return false;
+      var opts = menu.querySelectorAll(ENUM_OPT), n = opts.length; if (n < 2) return false;
+      var key = n + '|' + (opts[0].textContent || '') + '|' + (opts[n - 1].textContent || '');
+      var c = enumMemo && enumMemo.get(menu);
+      if (c && c.k === key) return c.ok;
+      var ok = true;
+      for (var i = 0; i < n && ok; i++) ok = enumWord(opts[i].textContent);
+      if (enumMemo) enumMemo.set(menu, { k: key, ok: ok });
+      return ok;
+    } catch (e) { return false; }
+  }
   function inScope(p) {
     if (inChart(p)) return true;
     try {
@@ -651,6 +681,24 @@
   // v4.21.7: 기간 '0 minutes'·'56 seconds'·'0 min'·'3 days' → '0분'·'56초'·'0분'·'3일'(평판 응답 시간 등 — 노드 전체 일치만)
   var KD_DUR = /^(\d+(?:\.\d+)?) ?(seconds?|secs?|minutes?|mins?|hours?|hrs?|days?|weeks?|months?|years?)$/i;
   var KD_DUR_KO = { s: '초', mi: '분', h: '시간', d: '일', w: '주', mo: '개월', y: '년' };
+  // v4.21.15: 상대 시각(dayjs/moment fromNow) — 'ago'·'in' 중 하나만, 노드 전체 일치. 'a few seconds ago' → '방금 전'
+  var KD_AGO = /^(in )?(\d+|an?|a few) (second|minute|hour|day|week|month|year)s?( ago)?$/i;
+  var KD_AGO_KO = { second: '초', minute: '분', hour: '시간', day: '일', week: '주', month: '개월', year: '년' };
+  function kdAgo(t) {
+    var m = t.match(KD_AGO); if (!m || !m[1] === !m[4]) return null;
+    var u = m[3].toLowerCase(), q = m[2].toLowerCase();
+    if (q === 'a few') return u === 'second' ? (m[1] ? '잠시 후' : '방금 전') : null;
+    return (/^\d/.test(q) ? q : '1') + KD_AGO_KO[u] + (m[1] ? ' 후' : ' 전');
+  }
+  // v4.21.15: 한국어 라벨 + 영어 날짜 — i18n 값('기한 {date}')에 앱이 영어로 찍은 날짜를 넣는 경우(인보이스 결제 일정 실측).
+  // 라벨은 한글·공백·가운뎃점·쌍점만, 나머지가 통째로 날짜(kdCore)일 때만 바꾼다.
+  var KD_KOLAB = /^[\uAC00-\uD7A3][\uAC00-\uD7A3\s·]*:?\s+$/;
+  function kdKoLabel(t) {
+    var c = t.charCodeAt(0); if (c < 0xAC00 || c > 0xD7A3 || t.length > 64) return null;
+    var i = t.search(/[A-Za-z0-9]/); if (i < 2) return null;
+    var lab = t.slice(0, i); if (!KD_KOLAB.test(lab)) return null;
+    var v = kdCore(t.slice(i)); return v === null ? null : lab + v;
+  }
   function kdDur(t) {
     var m = t.match(KD_DUR); if (!m) return null;
     var u = m[2].toLowerCase(), k = u.charAt(0) === 'm' ? (u.indexOf('mo') === 0 ? 'mo' : 'mi') : u.charAt(0);
@@ -704,7 +752,7 @@
     if (v === undefined && PILL_WORDS.hasOwnProperty(t) && inPill(n.parentElement)) { v = PILL_WORDS[t]; scoped = true; }   // v4.21.12
     if (v === undefined) {
       if (TS && (v = TS[t]) !== undefined) {
-        if (!inScope(n.parentElement) && !inStatusTag(n.parentElement, t)) return;
+        if (!inScope(n.parentElement) && !inStatusTag(n.parentElement, t) && !inEnumMenu(n.parentElement)) return;
         scoped = true;
       } else {
         if (!kdOn()) return;                                                  // D3 날짜·시각(v4.21)·차트·페이지 크기
@@ -712,6 +760,8 @@
         else if ((v = kdChart(n.parentElement, t)) !== null) dated = true;
         else if (KD_PAGE.test(t)) { v = t.replace(KD_PAGE, '$1 / 페이지'); dated = true; }
         else if ((v = kdDur(t)) !== null) dated = true;
+        else if ((v = kdAgo(t)) !== null) dated = true;              // v4.21.15
+        else if ((v = kdKoLabel(t)) !== null) dated = true;          // v4.21.15
         else return;
       }
     }
