@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "version": "4.2.67",
+  "version": "4.2.68",
   "built": "2026-11-07",
-  "source": "새 지문 — host.agentLogsApp 이관) · 캘린더 화면 721 · 앱 마켓플레이스 399 · 오브젝트 설정 170 · 주문 81 · 인보이스 56 · 결제 50(신규 1,063 + 같은 원문 이관 518, 독립 검수 교정 74) · 기존 값 정정 28(수금 통일·리스팅·애드온·플랜·견적서·ghl 예시) + 마켓플레이스 카드 개발자 표기 '{name} 제공' 통일 · 개발자명 LeadConnector → 하이퍼클래스(_text 3) + SaaS 상품 편집 saasApp 1,317(상품 편집 화면에서만 로드돼 스윕에 안 잡히던 네임스페이스 — 같은 앱 카탈로그에서 경로 이관 1,267 + 신규 50, 독립 검수 교정 106) · 상품 편집 메뉴 'Search Engine Listing' _text + 상세 화면 점검: 인보이스 요약 카드 '결제 완료 인보이스'(표기 통일) · 상품 편집 SaaS 'Usage limits' · 인보이스/견적서 편집기 'Opportunity 연결' 등 6(_text, 개체 이름 매개변수) · 코스 편집기(Live Sessions·Community Groups·코스 태그·난이도·주제·언어 — _text 6·_textScoped 21) · _textScoped 표기 정정 9(수신자들→수신자·결과들→결과·받은함→받은 편지함·옵트인→수신 동의·구독취소→구독 취소됨·대기중→대기 중·통화 종료→종료·고급 설정→고급) + 연락처 상세 오른쪽 패널 빈 상태(새 UI record-details-new-ui 의 하드코딩 문자열 — 활동·메모·예약·작업·AI 에이전트 안내) _text 10(참조본의 같은 원문 번역 재사용) + 기회 예측 화면(위험 단계 제목·마감일 없음 열 _text 4, '위험도 높음'→'높은 위험' 통일) · 연락처 AI 성장 배너 _text 2 · '{objectNamePlural}을(를)' 어색한 조사 2(→ '…에서 검색 결과가 없습니다'·'… 목록을 불러오지 못했습니다') + 독립 검수 반영(오늘 추가분 9건): 위험 단계 '위험도 높음·보통·낮음' · 인보이스 요약 카드 '0 건 임시 저장' 꼴 · Queued 대기열 · 고객→연락처 · 기회 지우기→기회 연결 해제 · 빈 상태·AI 안내 문구 다듬기 · 사용자 유형 'Account - user/admin'·'Agency - user' · 설정 → 사용자 → 역할 및 권한 목록 영어 37(서버 권한 목록 — 기존 '… 보기 및 관리' 꼴, WhatsApp·GBP 원문 유지) · 권한 목록 기존 값 용어 통일 7(제품→상품·인증서→수료증·프로스펙팅→잠재 고객 발굴·대량→일괄·adwords→Google Ads) + 워크플로우 앱(자동화 — 중계 iframe, 로케일 en) 카탈로그 5,309: 이관 2,398(독립 검수 2갈래 교정 165) + 1~3단어 라벨 신규 3,023(번역 4갈래 + 독립 검수 2갈래 교정 32). 4단어 이상 문장 약 3,970은 다음 라운드. 로더 v4.21.15 ⑩(iframe 카탈로그 병합) 뒤 캐너리에서 적용",
+  "source": " 제공' 통일 · 개발자명 LeadConnector → 하이퍼클래스(_text 3) + SaaS 상품 편집 saasApp 1,317(상품 편집 화면에서만 로드돼 스윕에 안 잡히던 네임스페이스 — 같은 앱 카탈로그에서 경로 이관 1,267 + 신규 50, 독립 검수 교정 106) · 상품 편집 메뉴 'Search Engine Listing' _text + 상세 화면 점검: 인보이스 요약 카드 '결제 완료 인보이스'(표기 통일) · 상품 편집 SaaS 'Usage limits' · 인보이스/견적서 편집기 'Opportunity 연결' 등 6(_text, 개체 이름 매개변수) · 코스 편집기(Live Sessions·Community Groups·코스 태그·난이도·주제·언어 — _text 6·_textScoped 21) · _textScoped 표기 정정 9(수신자들→수신자·결과들→결과·받은함→받은 편지함·옵트인→수신 동의·구독취소→구독 취소됨·대기중→대기 중·통화 종료→종료·고급 설정→고급) + 연락처 상세 오른쪽 패널 빈 상태(새 UI record-details-new-ui 의 하드코딩 문자열 — 활동·메모·예약·작업·AI 에이전트 안내) _text 10(참조본의 같은 원문 번역 재사용) + 기회 예측 화면(위험 단계 제목·마감일 없음 열 _text 4, '위험도 높음'→'높은 위험' 통일) · 연락처 AI 성장 배너 _text 2 · '{objectNamePlural}을(를)' 어색한 조사 2(→ '…에서 검색 결과가 없습니다'·'… 목록을 불러오지 못했습니다') + 독립 검수 반영(오늘 추가분 9건): 위험 단계 '위험도 높음·보통·낮음' · 인보이스 요약 카드 '0 건 임시 저장' 꼴 · Queued 대기열 · 고객→연락처 · 기회 지우기→기회 연결 해제 · 빈 상태·AI 안내 문구 다듬기 · 사용자 유형 'Account - user/admin'·'Agency - user' · 설정 → 사용자 → 역할 및 권한 목록 영어 37(서버 권한 목록 — 기존 '… 보기 및 관리' 꼴, WhatsApp·GBP 원문 유지) · 권한 목록 기존 값 용어 통일 7(제품→상품·인증서→수료증·프로스펙팅→잠재 고객 발굴·대량→일괄·adwords→Google Ads) + 워크플로우 앱(자동화 — 중계 iframe, 로케일 en) 카탈로그 5,309: 이관 2,398(독립 검수 2갈래 교정 165) + 1~3단어 라벨 신규 3,023(번역 4갈래 + 독립 검수 2갈래 교정 32). 4단어 이상 문장 약 3,970은 다음 라운드. 로더 v4.21.15 ⑩(iframe 카탈로그 병합) 뒤 캐너리에서 적용 + 멤버십 → 코스 → 분석(membership-analytics 별도 앱, 지문 analytics, 로케일 en_US) 318 전부 영어였음 — 번역 1갈래(기존 같은 원문 108 제안 반영) + 독립 검수 교정 1 · 거래 상세 'Two/One Step Order Form' _text · 거래 보기·권한 범위 용어(트랜잭션→거래 내역, 제품→상품) 정정 9",
   "strings": 102718
  },
  "host": {
@@ -82162,7 +82162,7 @@
     "useOnetime": "일회성 사용",
     "variants": "변형",
     "view": "보기",
-    "viewTransaction": "트랜잭션 보기",
+    "viewTransaction": "거래 보기",
     "yesCancel": "예, 취소합니다",
     "membershipProduct": "멤버십 상품",
     "of": "/",
@@ -103961,12 +103961,12 @@
      "paymentsintegrationwrite": "커스텀 결제 연동 수정",
      "paymentsordersreadonly": "결제 주문 보기",
      "paymentsorderswrite": "결제 주문 수정",
-     "paymentstransactionsreadonly": "결제 트랜잭션 보기",
-     "paymentssubscriptionsreadonly": "결제 트랜잭션 수정",
-     "productsreadonly": "제품 보기",
-     "productswrite": "제품 수정",
-     "productspricesreadonly": "제품 가격 보기",
-     "productspriceswrite": "제품 가격 수정",
+     "paymentstransactionsreadonly": "결제 거래 내역 보기",
+     "paymentssubscriptionsreadonly": "결제 거래 내역 수정",
+     "productsreadonly": "상품 보기",
+     "productswrite": "상품 수정",
+     "productspricesreadonly": "상품 가격 보기",
+     "productspriceswrite": "상품 가격 수정",
      "oauthreadonly": "앱이 설치된 서브 계정 보기",
      "oauthwrite": "설치된 서브 계정의 앱 API 토큰 관리",
      "saaslocationwrite": "SaaS 구독 수정",
@@ -127162,7 +127162,7 @@
     "viewOrder": "주문 보기",
     "viewCustomer": "고객 보기",
     "viewHistory": "히스토리 보기",
-    "viewTransaction": "트랜잭션 보기",
+    "viewTransaction": "거래 보기",
     "viewSubscription": "보기",
     "cancelSubscription": "취소",
     "paymentMode": "결제 모드",
@@ -131110,7 +131110,7 @@
     "viewOrder": "주문 보기",
     "viewCustomer": "고객 보기",
     "viewHistory": "히스토리 보기",
-    "viewTransaction": "트랜잭션 보기",
+    "viewTransaction": "거래 보기",
     "viewSubscription": "구독 보기",
     "cancelSubscription": "구독 취소",
     "paymentMode": "결제 모드",
@@ -162554,6 +162554,438 @@
    "you_can_enable": "활성화할 수 있습니다",
    "zero_errors": "오류 없음",
    "zero_errors_count": "오류 0개"
+  },
+  "analytics": {
+   "analytics": {
+    "courseAnalytics": {
+     "filters": {
+      "courses": {
+       "allCourses": "전체 코스",
+       "clearAriaLabel": "코스 필터 지우기",
+       "label": "코스",
+       "loadError": "코스를 불러오지 못했습니다",
+       "loading": "코스 불러오는 중",
+       "noProductsAvailable": "사용 가능한 코스가 없습니다",
+       "searchPlaceholder": "코스 검색"
+      },
+      "enrollmentDate": {
+       "clearAriaLabel": "등록일 필터 지우기",
+       "label": "등록일",
+       "presets": {
+        "allTime": "전체 기간",
+        "custom": "사용자 지정",
+        "last30Days": "최근 30일",
+        "last6Months": "최근 6개월",
+        "last90Days": "최근 90일",
+        "thisMonth": "이번 달"
+       }
+      }
+     },
+     "funnel": {
+      "ariaLabel": "사용자 전환 퍼널",
+      "collapseAriaLabel": "사용자 전환 퍼널 접기",
+      "completedTooltip": "코스 콘텐츠를 100% 완료한 사용자입니다.",
+      "error": "지표를 불러오지 못했습니다",
+      "expandAriaLabel": "사용자 전환 퍼널 펼치기",
+      "fallout": {
+       "notCompleted": "코스 미완료({count})",
+       "notStarted": "학습 미시작({count})"
+      },
+      "loading": "불러오는 중",
+      "notCompletedCourseLabel": "코스 미완료",
+      "notCompletedFilterAriaLabel": "코스 진행률 회원을 코스 미완료로 필터링",
+      "notStartedFilterAriaLabel": "코스 진행률 회원을 학습 미시작으로 필터링",
+      "notStartedLearningLabel": "학습 미시작",
+      "stages": {
+       "completedCourse": "코스 완료",
+       "newUsers": "신규 사용자",
+       "startedLearning": "학습 시작"
+      },
+      "startedTooltip": "등록 후 강의나 코스 콘텐츠를 하나 이상 열람한 사용자입니다.",
+      "subtitle": "사용자가 학습 과정을 어떻게 진행하는지 추적합니다",
+      "title": "사용자 전환 퍼널",
+      "tooltip": "선택한 기간에 등록한 사용자가 가입부터 코스 완료까지 어떻게 진행하는지 추적합니다."
+     },
+     "header": {
+      "lastUpdated": "마지막 업데이트: {value}",
+      "refreshAriaLabel": "코스 진행률 새로고침",
+      "refreshError": "코스 진행률을 새로고침하지 못했습니다. 다시 시도해 주세요.",
+      "refreshLabel": "새로고침",
+      "refreshRateLimited": "1분 후에 다시 새로고침해 주세요.",
+      "refreshSuccess": "코스 진행률을 새로고침했습니다",
+      "subtitle": "코스 참여도와 학습자 진행 상황을 추적합니다",
+      "title": "코스 진행률"
+     },
+     "membersTable": {
+      "columns": {
+       "courseCompletion": "코스 완료",
+       "courseCompletionTooltip": "등록한 전체 코스 중 완료한 코스 수",
+       "enrolmentDate": "등록일",
+       "lastAccessed": "마지막 접속",
+       "members": "회원",
+       "progress": "진행률",
+       "sessionCount": "접속 횟수",
+       "startDate": "시작일"
+      },
+      "copy": {
+       "ariaLabel": "{email} 복사",
+       "copied": "복사됨"
+      },
+      "description": "회원별 코스 진행률과 활동을 확인합니다.",
+      "empty": "회원이 없습니다",
+      "emptyState": {
+       "createCourse": "코스 만들기",
+       "description": "코스를 만들고 회원을 등록하면 진행률 등 세부 정보를 확인할 수 있습니다",
+       "filteredDescription": "회원을 찾으려면 검색어나 필터를 조정해 보세요.",
+       "title": "회원이 없습니다"
+      },
+      "error": "회원을 불러오지 못했습니다",
+      "export": "내보내기",
+      "exportAriaLabel": "코스 진행률 회원 내보내기",
+      "exportError": {
+       "description": "코스 진행률 회원을 내보내지 못했습니다. 다시 시도해 주세요.",
+       "title": "내보내기 실패"
+      },
+      "exportModal": {
+       "asyncDescription": "보고서 다운로드 링크가 담긴 이메일이 곧 발송됩니다.",
+       "inProgressTitle": "내보내기 진행 중!",
+       "okay": "확인",
+       "syncDescription": "코스 분석 시트를 내보내는 중입니다."
+      },
+      "filters": {
+       "apply": "적용",
+       "clear": "지우기",
+       "dateConditions": {
+        "exactly": "특정 날짜",
+        "none": "없음",
+        "pastMonth": "지난 1개월 이내",
+        "pastWeek": "지난 1주 이내",
+        "pastYear": "지난 1년 이내",
+        "today": "오늘",
+        "yesterday": "어제"
+       },
+       "displaying": "{count}개 표시 중",
+       "filterByCondition": "조건으로 필터링",
+       "openFilterAriaLabel": "열 필터 열기",
+       "searchPlaceholder": "값 검색",
+       "selectAll": "{count}개 모두 선택",
+       "sortAscending": "오름차순 정렬",
+       "sortDescending": "내림차순 정렬",
+       "toggleSortAriaLabel": "정렬 방향 전환"
+      },
+      "loading": "회원 불러오는 중",
+      "pagination": {
+       "currentPageAriaLabel": "현재 페이지 {page}",
+       "next": "다음",
+       "pageResults": "이 페이지의 회원 {count}명",
+       "perPageText": "페이지당 행 수",
+       "previous": "이전",
+       "totalResults": "전체 회원 {count}명"
+      },
+      "searchLabel": "회원 검색",
+      "searchPlaceholder": "이름 또는 이메일 검색",
+      "tableFilters": {
+       "customProgress": "사용자 지정",
+       "selectedFunnelStageChipAriaLabel": "선택한 퍼널 단계 필터: {name}",
+       "selectedProgressChipAriaLabel": "선택한 진행률 필터: {name}",
+       "selectedProgressChipLabel": "진행률: {name}"
+      },
+      "title": "코스 진행률"
+     },
+     "sampleDataBanner": {
+      "ariaLabel": "샘플 데이터 안내",
+      "clearSampleData": "샘플 데이터 지우기",
+      "createCourse": "코스 만들기",
+      "title": "샘플 데이터를 보고 있습니다. 실제 데이터를 보려면 직접 코스를 만드세요"
+     },
+     "summaryCards": {
+      "ariaLabel": "코스 진행률 요약",
+      "averageCourseProgress": {
+       "title": "평균 코스 진행률",
+       "tooltip": "등록한 전체 사용자의 평균 콘텐츠 완료율입니다. 강의 10개 중 3개를 완료한 사용자는 진행률 30%로 계산됩니다."
+      },
+      "averageTimeToComplete": {
+       "title": "평균 완료 소요 시간",
+       "tooltip": "코스를 완료한 사용자를 기준으로, 첫 강의 접속부터 코스 완료까지 걸린 평균 시간입니다."
+      },
+      "dayAbbreviation": "일",
+      "daysAbbreviation": "일",
+      "error": "지표를 불러오지 못했습니다",
+      "hoursAbbreviation": "시간",
+      "loading": "불러오는 중",
+      "noComparisonAvailable": "비교할 데이터가 없습니다",
+      "noPriorPeriodToCompare": "비교할 이전 기간이 없습니다",
+      "overallCompletionRate": {
+       "title": "전체 완료율",
+       "tooltip": "등록한 사용자 중 코스 콘텐츠를 모두 완료한 사용자의 비율입니다. 선택한 등록일 범위에 해당하는 사용자만 포함됩니다."
+      },
+      "trendDecreaseAriaLabel": "{value} 감소",
+      "trendIncreaseAriaLabel": "{value} 증가",
+      "trendNoChangeAriaLabel": "변화 없음, {value}",
+      "vsCustomDateRange": "{range} 대비",
+      "vsPrevious30Days": "이전 30일 대비",
+      "vsPrevious6Months": "이전 6개월 대비",
+      "vsPrevious90Days": "이전 90일 대비",
+      "vsPreviousPeriod": "이전 기간 대비",
+      "vsPreviousThisMonth": "지난달 대비"
+     }
+    },
+    "fallback": {
+     "backToCourseProgress": "코스 진행률로 돌아가기",
+     "description": "링크가 오래되었거나 페이지가 이동되었을 수 있습니다. 코스 진행률로 돌아가 계속 진행하세요.",
+     "header": "페이지를 찾을 수 없습니다",
+     "navigationError": "코스 진행률을 열지 못했습니다. 다시 시도해 주세요.",
+     "subheader": "존재하지 않는 분석 페이지입니다",
+     "title": "이 분석 페이지를 찾을 수 없습니다"
+    },
+    "legacy": {
+     "assessmentTitle": "평가",
+     "handshakeFailed": "이 화면을 불러오지 못했습니다. 페이지를 새로고침한 후 다시 시도해 주세요.",
+     "loading": "불러오는 중...",
+     "missingAuthToken": "이 화면을 불러오는 데 필요한 인증 토큰을 가져오지 못했습니다.",
+     "missingHostBridge": "호스트 애플리케이션이 필요한 컨텍스트를 제공하지 않아 이 화면을 열 수 없습니다.",
+     "missingLocation": "선택된 서브 계정이 없어 이 화면을 불러올 수 없습니다."
+    },
+    "memberAnalytics": {
+     "deprecationBanner": {
+      "ariaLabel": "회원 분석 지원 종료 안내",
+      "dismissAriaLabel": "안내 닫기",
+      "message": "이 모든 기능과 그 이상을 이제 코스 진행률 분석에서 확인할 수 있습니다.",
+      "tryItOut": "사용해 보기"
+     }
+    },
+    "sidebar": {
+     "assessment": "평가",
+     "courseAnalytics": "코스 진행률",
+     "memberAnalytics": "회원 분석",
+     "revenueAnalytics": "매출 분석",
+     "toggleCollapse": "사이드바 접기",
+     "toggleExpand": "사이드바 펼치기",
+     "videoAnalytics": "동영상 분석"
+    },
+    "title": "분석",
+    "videoAnalytics": {
+     "courseTable": {
+      "columns": {
+       "avg": "평균",
+       "avgCompletion": "완주율",
+       "avgEngagement": "평균 참여도",
+       "completion": "완료율",
+       "course": "코스",
+       "duration": "재생 시간",
+       "engagement": "참여도",
+       "video": "동영상",
+       "videos": "동영상",
+       "views": "조회수",
+       "watchTime": "시청 시간"
+      },
+      "details": "상세 정보",
+      "detailsAriaLabel": "{video} 상세 정보 보기",
+      "emptyState": "동영상이 없습니다",
+      "emptyStateDescription": "동영상을 찾으려면 검색어나 필터를 조정해 보세요.",
+      "export": "CSV 내보내기",
+      "exportAriaLabel": "동영상 분석 CSV 내보내기",
+      "filters": {
+       "openFilter": "열 필터",
+       "sortAscending": "오름차순 정렬 A-Z",
+       "sortDescending": "내림차순 정렬 Z-A",
+       "toggleSort": "정렬 방향 전환"
+      },
+      "open": "상세 정보",
+      "openAriaLabel": "{video} 상세 정보 보기",
+      "pagination": {
+       "currentPageAriaLabel": "현재 페이지 {page}",
+       "next": "다음",
+       "previous": "이전",
+       "rowsPerPage": "페이지당 행 수",
+       "totalResults": "전체 동영상 {count}개"
+      },
+      "rangeIndicatorWithTotal": "{total} 중 {start}-{end}",
+      "searchPlaceholder": "동영상 이름으로 검색",
+      "title": "동영상"
+     },
+     "detail": {
+      "devices": {
+       "disclaimer": "데스크톱 조회수는 2026년 7월 4일부터, 모바일 조회수는 2026년 9월 18일부터 집계됩니다. 기기는 브라우저 정보로 판별하며, 일부 태블릿은 데스크톱으로 집계됩니다.",
+       "title": "기기별 분포",
+       "views": "조회수 {count}회"
+      },
+      "funnel": {
+       "biggestDrop": "최대 이탈 구간",
+       "dropIndicator": "이탈: {count}",
+       "subtitle": "재생을 누른 전체 시청자 기준",
+       "title": "시청 완료 퍼널",
+       "tooltip": "재생을 누른 후 각 체크포인트에 도달한 시청자입니다.",
+       "viewersLeft": "시청자 {count}명이 여기서 이탈했습니다"
+      },
+      "geo": {
+       "columnCountry": "국가",
+       "columnViews": "조회수",
+       "otherCountries": "기타 국가",
+       "otherRegions": "기타 지역",
+       "showCountriesOnly": "지역 숨기기",
+       "subtitle": "위치를 알 수 없는 항목도 목록에 남겨 두므로 합계가 그대로 맞습니다.",
+       "subtitleRegions": "국가별 상위 지역입니다. 위치를 알 수 없는 항목도 목록에 남겨 둡니다.",
+       "title": "국가별 조회수",
+       "viewAllRegions": "지역 보기",
+       "views": "조회수 {count}회"
+      },
+      "header": {
+       "allVideosAriaLabel": "이 코스의 전체 동영상으로 돌아가기",
+       "allVideosInCourse": "이 코스의 전체 동영상",
+       "nextVideo": "다음 동영상",
+       "pagination": "{total} 중 {current}",
+       "prevVideo": "이전 동영상"
+      },
+      "insights": {
+       "aiHint": "AI가 패턴을 잘못 해석할 수 있습니다. 영상을 잘라내기 전에 아래 차트를 확인하세요.",
+       "feedback": {
+        "cancel": "취소",
+        "conflict": "다른 곳에서 변경되었습니다. 새로고침한 후 다시 시도하세요.",
+        "detailsPlaceholder": "이 응답에서 불만족스러웠던 점은 무엇인가요?",
+        "didNotFollowRequest": "요청을 제대로 따르지 않음",
+        "failed": "피드백을 제출하지 못했습니다. 다시 시도해 주세요.",
+        "forbidden": "이 작업을 수행할 권한이 없습니다.",
+        "harmfulContent": "유해 콘텐츠",
+        "incompleteResponse": "불완전한 응답",
+        "noInsights": "이 동영상에 대한 인사이트가 아직 없습니다.",
+        "notFactuallyCorrect": "사실과 다름",
+        "other": "기타",
+        "provideDetails": "세부 정보를 입력해 주세요",
+        "recorded": "피드백이 기록되었습니다",
+        "selectIssue": "문제 선택",
+        "submit": "피드백 제출",
+        "thanks": "피드백을 보내 주셔서 감사합니다.",
+        "title": "피드백"
+       },
+       "helpful": "도움이 됨",
+       "hideSteps": "추천 다음 단계 숨기기",
+       "loading": "이 동영상의 시청 패턴을 분석하는 중",
+       "loadingHint": "보통 몇 초 정도 걸립니다.",
+       "notHelpful": "요점을 벗어남",
+       "rateLimited": "요청이 너무 많습니다",
+       "rateLimitedHint": "잠시 후 다시 시도하세요.",
+       "retry": "다시 시도",
+       "showSteps": "추천 다음 단계 보기",
+       "unavailable": "지금은 인사이트를 사용할 수 없습니다",
+       "unavailableHint": "요약을 생성하지 못했습니다. 아래 차트는 여전히 최신 상태입니다."
+      },
+      "kpi": {
+       "avgEngagement": "평균 참여도",
+       "avgEngagementShort": "평균 참여도",
+       "avgEngagementTooltip": "시청자가 이 동영상을 평균적으로 얼마나 시청하는지 나타내는 비율입니다.",
+       "reviewerRate": "재시청률",
+       "reviewerRateShort": "재시청자 비율",
+       "reviewerRateTooltip": "두 번 이상 시청한 시청자의 비율입니다.",
+       "sinceJul8": "데스크톱은 7월 4일부터, 모바일은 9월 18일부터 집계됩니다.",
+       "totalViews": "총 조회수",
+       "totalViewsTooltip": "조회로 인정되는 기준을 넘긴 재생 횟수입니다.",
+       "uniqueViewers": "순 시청자 수",
+       "uniqueViewersTooltip": "이 동영상을 시청한 서로 다른 사람의 수입니다.",
+       "vsPrev30Days": "이전 30일 대비",
+       "vsPrev90Days": "이전 90일 대비",
+       "watchTime": "시청 시간",
+       "watchTimeTooltip": "이 동영상을 시청하는 데 쓴 총 시간입니다."
+      },
+      "retention": {
+       "rewatchDensity": "재시청 밀도",
+       "stillWatching": "계속 시청 중",
+       "subtitle": "아무 지점에나 마우스를 올리면 값을 볼 수 있고, 클릭하면 마커를 옮길 수 있습니다.",
+       "title": "시청자 유지율"
+      },
+      "sessions": {
+       "disclaimer": "세션 행은 원시 이벤트 스트림에서 가져오므로 보존 기간이 지나면 만료됩니다. 위 차트는 만료되지 않습니다.",
+       "loadMore": "더 보기",
+       "showingText": "세션 {total}개 중 {count}개 표시 중",
+       "subtitle": "시청 세션마다 한 행씩 표시됩니다. 막대는 해당 시청자가 실제로 시청한 구간을 보여 줍니다.",
+       "title": "최근 세션"
+      }
+     },
+     "filters": {
+      "courses": {
+       "allCourses": "전체 코스",
+       "clearAriaLabel": "코스 필터 지우기",
+       "label": "코스",
+       "loadError": "코스를 불러오지 못했습니다",
+       "loading": "코스 불러오는 중",
+       "noProductsAvailable": "사용 가능한 코스가 없습니다",
+       "searchPlaceholder": "코스 검색"
+      },
+      "viewedDate": {
+       "allTime": "전체 기간",
+       "custom": "사용자 지정",
+       "label": "조회 기간",
+       "last30Days": "최근 30일",
+       "last6Months": "최근 6개월",
+       "last90Days": "최근 90일"
+      }
+     },
+     "header": {
+      "exportAriaLabel": "동영상 분석 CSV 내보내기",
+      "exportCsv": "CSV 내보내기",
+      "exportModal": {
+       "asyncDescription": "보고서 다운로드 링크가 담긴 이메일이 곧 발송됩니다.",
+       "errorDescription": "동영상 분석을 내보내지 못했습니다. 다시 시도해 주세요.",
+       "errorTitle": "내보내기 실패",
+       "syncDescription": "동영상 분석 시트를 내보내는 중입니다."
+      },
+      "lastUpdated": "마지막 업데이트: {value}",
+      "refreshAriaLabel": "동영상 분석 새로고침",
+      "refreshLabel": "새로고침",
+      "refreshSuccess": "동영상 분석을 새로고침했습니다",
+      "subtitle": "각 동영상이 시청자의 관심을 얼마나 붙잡는지, 시청자가 어디서 이탈하는지 확인하세요",
+      "title": "동영상 분석"
+     },
+     "infoBanner": {
+      "description": "조회는 동영상이 다음에 재생되는 시점부터 해당 강의와 연결되므로, 그 이전 조회는 여기에 집계되지 않습니다. 이전 데이터는 소급 반영되지 않습니다.",
+      "dismissAriaLabel": "안내 닫기",
+      "title": "데스크톱 조회수는 2026년 7월 4일부터, 모바일 조회수는 2026년 9월 18일부터 집계됩니다."
+     },
+     "modal": {
+      "close": "닫기",
+      "disclaimer": "거의 실시간으로 반영됩니다. 데스크톱 조회수는 2026년 7월 4일부터, 모바일 조회수는 2026년 9월 18일부터 집계됩니다.",
+      "hoverToScrub": "마우스를 올려 구간 탐색",
+      "last30Days": "최근 30일",
+      "playhead": "재생 위치 {time}",
+      "retentionTitle": "타임라인별 시청 유지율",
+      "title": "동영상 통계",
+      "viewInAnalytics": "분석에서 보기"
+     },
+     "summaryCards": {
+      "ariaLabel": "동영상 분석 요약 지표",
+      "avgCompletion": {
+       "title": "평균 완주율",
+       "tooltip": "끝까지 시청한 시청자의 비율을 이 코스 전체에서 평균한 값입니다.",
+       "tooltipComparisonDown": "끝까지 시청한 시청자의 비율을 이 코스 전체에서 평균한 값입니다. {period} 대비 {prev}에서 {curr}(으)로 낮아졌습니다.",
+       "tooltipComparisonSteady": "끝까지 시청한 시청자의 비율을 이 코스 전체에서 평균한 값입니다. {period} 대비 {curr}(으)로 변동 없이 유지되었습니다.",
+       "tooltipComparisonUp": "끝까지 시청한 시청자의 비율을 이 코스 전체에서 평균한 값입니다. {period} 대비 {prev}에서 {curr}(으)로 높아졌습니다."
+      },
+      "avgEngagement": {
+       "title": "평균 참여도",
+       "tooltip": "이 코스 전체에서 시청자가 동영상을 평균적으로 얼마나 시청하는지 나타냅니다. 재시청하면 100%를 넘을 수 있습니다.",
+       "tooltipComparisonDown": "이 코스 전체에서 시청자가 동영상을 평균적으로 얼마나 시청하는지 나타냅니다. 재시청하면 100%를 넘을 수 있습니다. {period} 대비 {prev}에서 {curr}(으)로 낮아졌습니다.",
+       "tooltipComparisonSteady": "이 코스 전체에서 시청자가 동영상을 평균적으로 얼마나 시청하는지 나타냅니다. 재시청하면 100%를 넘을 수 있습니다. {period} 대비 {curr}(으)로 변동 없이 유지되었습니다.",
+       "tooltipComparisonUp": "이 코스 전체에서 시청자가 동영상을 평균적으로 얼마나 시청하는지 나타냅니다. 재시청하면 100%를 넘을 수 있습니다. {period} 대비 {prev}에서 {curr}(으)로 높아졌습니다."
+      },
+      "noComparisonAvailable": "비교할 데이터가 없습니다",
+      "totalVideoViews": {
+       "title": "총 동영상 조회수",
+       "tooltip": "사람 수가 아닌 재생 횟수입니다. 한 사람이 두 번 시청하면 두 번으로 집계됩니다. 이 코스의 동영상 {count}개 기준입니다.",
+       "tooltipAll": "사람 수가 아닌 재생 횟수입니다. 한 사람이 두 번 시청하면 두 번으로 집계됩니다. 동영상 {count}개 기준입니다.",
+       "tooltipDefault": "사람 수가 아닌 재생 횟수입니다. 한 사람이 두 번 시청하면 두 번으로 집계됩니다. 이 코스의 전체 동영상 기준입니다."
+      },
+      "vsPrevious30Days": "이전 30일 대비",
+      "vsPrevious6Months": "이전 6개월 대비",
+      "vsPrevious7Days": "이전 7일 대비",
+      "vsPrevious90Days": "이전 90일 대비",
+      "watchTime": {
+       "title": "시청 시간",
+       "tooltip": "이 코스의 모든 세션에서 실제로 시청한 시간을 합산한 값입니다.",
+       "tooltipAll": "모든 세션에서 실제로 시청한 시간을 합산한 값입니다."
+      }
+     }
+    }
+   }
   }
  },
  "appsMeta": {
@@ -176473,7 +176905,9 @@
   "Delete & deprecate WhatsApp flows": "WhatsApp 플로우 삭제 및 지원 중단",
   "Update WhatsApp business profile": "WhatsApp 비즈니스 프로필 업데이트",
   "Add & manage WhatsApp phone numbers": "WhatsApp 전화번호 추가 및 관리",
-  "Disconnect WhatsApp integration": "WhatsApp 연동 해제"
+  "Disconnect WhatsApp integration": "WhatsApp 연동 해제",
+  "Two Step Order Form": "2단계 주문 폼",
+  "One Step Order Form": "1단계 주문 폼"
  },
  "_textScoped": {
   "AM": "오전",
