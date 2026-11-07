@@ -1,4 +1,5 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.14
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.15
+ * v4.21.15: 숫자가 앞에 붙는 하드코딩 문구 패턴(COUNT_PATS) — 결제 → 인보이스 요약 카드 '0 Invoice(s) in Draft' 등(i18n 키 없음, 앱이 문자열을 직접 조립).
  * v4.21.14: 교차 출처 iframe(자동화 워크플로우·비즈니스 프로필) 같은 출처 중계 — IFR_LOCS 로케이션에서 부팅했을 때만.
  *          iframe 주소를 app.hyperclass.ai/__ifr/{wf|crm}/… (엣지 Worker hc-ifr-proxy)로 바꾸고, 같은 출처가 된 iframe 문서에
  *          기존 DOM 번역(pass·mo)을 건다. Worker 헬스(x-hc-ifr) 확인 전·실패 시엔 원래 주소. 끄기: localStorage.hcKoIfr='0'.
@@ -210,7 +211,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.21.14',
+    version: '4.21.15',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -553,6 +554,19 @@
   var TAG_SEL = '.n-tag,.hr-tag';
   // v4.21.12: 배지·알약(pill) 안의 'New' 는 버튼(_textScoped 'New'=새로 만들기)이 아니라 '신규'('AI에게 문의' 배너 .askai-banner__pill 실측)
   var PILL_WORDS = { New: '신규', NEW: '신규' };
+  // v4.21.15: 숫자 + 하드코딩 영어 꼬리. 사전(_text)은 전체 일치라 숫자가 바뀌면 못 잡는다.
+  // 숫자로 시작하는 60자 이하 텍스트에만 시험한다(대부분의 노드는 첫 글자에서 걸러진다).
+  var COUNT_PATS = [
+    [/^(\d[\d,]*) Invoice\(s\) in Draft$/, '임시 저장 인보이스 $1건'],
+    [/^(\d[\d,]*) Invoice\(s\) in Due$/, '지급 예정 인보이스 $1건'],
+    [/^(\d[\d,]*) Invoice\(s\) received$/, '결제 완료 인보이스 $1건'],
+    [/^(\d[\d,]*) Invoice\(s\) Overdue$/, '기한 초과 인보이스 $1건']
+  ];
+  function countPat(t) {
+    var c = t.charCodeAt(0); if (c < 48 || c > 57 || t.length > 60) return null;
+    for (var i = 0; i < COUNT_PATS.length; i++) if (COUNT_PATS[i][0].test(t)) return t.replace(COUNT_PATS[i][0], COUNT_PATS[i][1]);
+    return null;
+  }
   var PILL_SEL = '[class*="__pill"],[class*="-pill"],[class*="badge"]';
   function inPill(p) { try { return !!p && !!p.closest && !!p.closest(PILL_SEL); } catch (e) { return false; } }
   function inStatusTag(p, t) { try { return STATUS_WORDS[t] === 1 && !!p && !!p.closest && !!p.closest(TAG_SEL); } catch (e) { return false; } }
@@ -706,6 +720,8 @@
       if (TS && (v = TS[t]) !== undefined) {
         if (!inScope(n.parentElement) && !inStatusTag(n.parentElement, t)) return;
         scoped = true;
+      } else if ((v = countPat(t)) !== null) {
+        scoped = true;                                                        // v4.21.15 숫자 + 하드코딩 꼬리
       } else {
         if (!kdOn()) return;                                                  // D3 날짜·시각(v4.21)·차트·페이지 크기
         if (kdPre(t) && (v = koDate(t)) !== null) dated = true;
