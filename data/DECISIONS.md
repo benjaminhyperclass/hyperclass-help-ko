@@ -278,3 +278,12 @@ superagentsApp(Managed Agents 빌더·목록·채팅 레이어)의 제품명 표
 - 구독 취소처럼 **사용자가 단어를 입력해 확인하는** 키(cancelWord 등)는 DNT — 영어 그대로 두고 앞뒤 조각만 번역한다('확인하려면 Cancel 을 입력하세요').
 - 교차 출처 iframe 화면(한글팩이 닿지 않음, 73라우트 숨은 iframe 조사): 설정 → 캘린더(`calendar-app.leadconnectorhq.com`), 설정 → 이메일 서비스(`ghl-isv-app-prod.`), 설정 → 대화 제공자(`client-app-crm-conversations.`), 마케팅 → 제휴 관리자(`client-app-affiliate-manager.`), AI Studio(`leadgen-vibe-ai-builder.`), 모바일 앱 커스터마이저(`mobile-whitelabel-customizer.`), 잠재 고객 발굴(외부). 자동화·비즈니스 프로필의 같은 출처 중계(로더 v4.21.14, 캐너리)가 정식이 되면 이 목록이 다음 대상 후보다 — 특히 **캘린더 설정은 신규 계정 첫 설정 화면**이라 우선순위가 높다.
 - verify-deploy 의 textEntries 는 **배포된 core 의 _text 건수**다(pretty 보다 C7 미배포분만큼 적다 — 11-07 에 pretty 건수를 넣었다가 바로잡음).
+
+## [기록] 상세 화면 점검 결과 — 사전 v4.2.63 · 로더 v4.21.15 초안 — 2026-11-07
+
+- **인보이스 요약 카드**: GHL 이 문자열 조립을 `list.dashboard.*` i18n 키(별도 앱 listInvoices)로 바꿨다 → 사전으로 해결, PR #98(숫자+꼬리 패턴) 닫음.
+- **사용자 데이터로 보고 번역하지 않는 것**: SaaS 상품 가격 이름 Monthly·Yearly(SaaS 설정이 만든 기본 이름이지만 고객 결제 화면에도 그대로 나가는 가격 이름) · 인보이스 미리보기 제목 'INVOICE'(인보이스 설정의 제목 값) · 편집기 글꼴 이름(Inter).
+- **매개변수가 영어인 i18n 값**(`{opportunityObject} 연결` → 'Opportunity 연결'): 값에서 매개변수를 빼면 검증(C 규칙)에 걸리고 오브젝트 이름을 바꾼 계정이 깨진다 → 결과 문자열을 `_text` 로 잡는다.
+- **로더 v4.21.15(PR #109, 초안)**: 선택 목록 옵션의 단어 1개는 *같은 메뉴 옵션이 전부 사전 단어일 때만* 번역(앱 열거값만 — 사용자 데이터가 섞인 메뉴는 그대로) · 한국어 라벨+영어 날짜 · 상대 시각(ago/in) · 소문자 상태 칩·Tailwind 알약 상태어. **v4.21.14 캐너리(교차 출처 iframe) 관찰이 끝난 뒤** 같은 절차로 next → stable.
+- **빌더 iframe(폼·설문·페이지 빌더)** 은 v4.21.14 중계(hc-ifr-proxy)를 넓혀야 닿는다. 페이지 빌더는 자산 요청이 많아 Workers Free 한도(계정 10만 요청/일) 판단이 먼저 — '추가 요금 없이 플랜 안에서만'(2026-11-07) 결정과 부딪히므로 **벤자민 결정 사항**으로 둔다(유료 $5 전환 또는 Worker 캐시 설계).
+
