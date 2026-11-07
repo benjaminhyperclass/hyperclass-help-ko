@@ -6,6 +6,9 @@
  *          ⑤ '라벨 (숫자)' — 라벨이 사전 단어일 때('Companies (0)' → '회사 (0)', 연락처 상세 연관 패널) · 'N items' → 'N개 항목'.
  *          ⑥ 월 이름 단독(전체 이름)·"January '27" → '10월'·'2027년 1월'(기회 예측 타임라인 열 머리).
  *          ⑦ 앱이 조각을 이어 붙인 문장 패턴 — 기회 예측 위험 규칙 'Slipped 2+ times 또는 14+ days (excluding high)'.
+ *          ⑧ 대화 타임라인 시스템 이벤트 줄 — 'Appointment X'·'updated'·' → marked as cancelled for Oct 31, 2026 04:45PM'
+ *             → '예약 X'·'업데이트됨'·' → 취소됨 · 2026년 10월 31일 오후 4:45'(굵은 조각 2개 + 꼬리 구조일 때만).
+ *          ⑨ 쌍점 라벨 'Status:' → '상태:'(라벨이 사전 단어일 때) · 바로 뒤 값이 상태어면 범위 밖이어도 번역(기회 카드 'Status: Open').
  * v4.21.14: 교차 출처 iframe(자동화 워크플로우·비즈니스 프로필) 같은 출처 중계 — IFR_LOCS 로케이션에서 부팅했을 때만.
  *          iframe 주소를 app.hyperclass.ai/__ifr/{wf|crm}/… (엣지 Worker hc-ifr-proxy)로 바꾸고, 같은 출처가 된 iframe 문서에
  *          기존 DOM 번역(pass·mo)을 건다. Worker 헬스(x-hc-ifr) 확인 전·실패 시엔 원래 주소. 끄기: localStorage.hcKoIfr='0'.
@@ -722,6 +725,53 @@
     }
     return null;
   }
+  // v4.21.15 ⑨: 쌍점 라벨('Status:' — 라벨이 사전 단어/구일 때만)과 그 바로 뒤 상태 값('Open' 등, 이전 형제 요소가 상태 라벨일 때만)
+  var COLON_RE = /^([A-Za-z][A-Za-z ]{1,30}):$/, STATUS_LAB = { 'Status:': 1, '상태:': 1 };
+  var STATUS_VAL = { Open: 1, Won: 1, Lost: 1, Abandoned: 1 };
+  function kdColon(t) {
+    var m = t.match(COLON_RE); if (!m) return null;
+    var x = (T && typeof T[m[1]] === 'string') ? T[m[1]] : (TS && typeof TS[m[1]] === 'string') ? TS[m[1]] : null;
+    return x ? x + ':' : null;
+  }
+  function afterStatusLabel(p, t) {
+    try {
+      if (!(STATUS_WORDS[t] === 1 || STATUS_VAL[t] === 1) || !p) return false;
+      var q = p.previousElementSibling; return !!q && STATUS_LAB[(q.textContent || '').trim()] === 1;
+    } catch (e) { return false; }
+  }
+  // v4.21.15 ⑧: 대화·활동 타임라인의 시스템 이벤트 줄 — 서버 활동 기록을 앱이 '<개체> <이름>'(굵게) + '<동사>'(굵게) + 꼬리
+  // (' for <날짜>'·' in <곳>'·' → marked as <상태> for <날짜>')로 조립한다(i18n 아님, 대화 화면 실측). 줄 구조(굵은 조각 2개 이상,
+  // 첫 조각이 개체 이름으로 시작)를 확인한 뒤에만 바꾼다. 이름·곳(사용자 데이터)은 그대로 둔다.
+  var EV_ENT = { Appointment: '예약', Opportunity: '기회', Contact: '연락처', Task: '작업', Invoice: '인보이스', Estimate: '견적서', Order: '주문' };
+  var EV_VERB = { created: '생성됨', updated: '업데이트됨', deleted: '삭제됨', booked: '예약됨', cancelled: '취소됨', canceled: '취소됨',
+    rescheduled: '일정 변경됨', confirmed: '확정됨', moved: '이동됨', completed: '완료됨', assigned: '배정됨', won: '고객전환성공', lost: '고객전환실패' };
+  var EV_STAT = { cancelled: '취소됨', canceled: '취소됨', confirmed: '확정됨', showed: '출석', noshow: '노쇼', 'no-show': '노쇼', booked: '예약됨',
+    invalid: '무효', rescheduled: '일정 변경됨', open: '진행 중', won: '고객전환성공', lost: '고객전환실패', abandoned: '중단됨', completed: '완료됨' };
+  var EV_ENT_RE = /^(Appointment|Opportunity|Contact|Task|Invoice|Estimate|Order) (.+)$/;
+  var EV_HEAD_RE = /^(?:Appointment|Opportunity|Contact|Task|Invoice|Estimate|Order|예약|기회|연락처|작업|인보이스|견적서|주문) /;
+  function evBox(el) {
+    for (var c = el, k = 0; c && c.nodeType === 1 && k < 3; c = c.parentElement, k++) {
+      var b = [], ch = c.children;
+      for (var i = 0; i < ch.length && b.length < 3; i++) if (ch[i].tagName === 'SPAN' && /(^|\s)font-semibold(\s|$)/.test(ch[i].className)) b.push(ch[i]);
+      if (b.length >= 2 && EV_HEAD_RE.test((b[0].textContent || '').trim())) return c;
+    }
+    return null;
+  }
+  function evDate(d) { var v = koDate(d); return v === null ? d : v; }
+  function kdEvent(n, t) {
+    var m, p = n.parentElement, box;
+    if ((m = t.match(EV_ENT_RE))) {
+      box = evBox(p); return box && p.parentElement === box ? EV_ENT[m[1]] + ' ' + m[2] : null;
+    }
+    if (EV_VERB.hasOwnProperty(t)) { box = evBox(p); return box && p.parentElement === box ? EV_VERB[t] : null; }
+    if (t.length > 160 || !/^(?:for |in |→ )/.test(t)) return null;
+    box = evBox(p); if (!box || p !== box) return null;
+    if ((m = t.match(/^→ marked as ([A-Za-z-]+) for (.+)$/))) return EV_STAT.hasOwnProperty(m[1].toLowerCase()) ? '→ ' + EV_STAT[m[1].toLowerCase()] + ' · ' + evDate(m[2]) : null;
+    if ((m = t.match(/^→ marked as ([A-Za-z-]+)$/))) return EV_STAT.hasOwnProperty(m[1].toLowerCase()) ? '→ ' + EV_STAT[m[1].toLowerCase()] : null;
+    if ((m = t.match(/^for (.+)$/))) return '· ' + evDate(m[1]);
+    if ((m = t.match(/^in (.+)$/))) return '· ' + m[1];
+    return null;
+  }
   // v4.21.15: 한국어 라벨 + 영어 날짜 — i18n 값('기한 {date}')에 앱이 영어로 찍은 날짜를 넣는 경우(인보이스 결제 일정 실측).
   // 라벨은 한글·공백·가운뎃점·쌍점만, 나머지가 통째로 날짜(kdCore)일 때만 바꾼다.
   var KD_KOLAB = /^[\uAC00-\uD7A3][\uAC00-\uD7A3\s·]*:?\s+$/;
@@ -784,7 +834,7 @@
     if (v === undefined && PILL_WORDS.hasOwnProperty(t) && inPill(n.parentElement)) { v = PILL_WORDS[t]; scoped = true; }   // v4.21.12
     if (v === undefined) {
       if (TS && (v = TS[t]) !== undefined) {
-        if (inScope(n.parentElement) || inStatusTag(n.parentElement, t) || inEnumMenu(n.parentElement)) scoped = true;
+        if (inScope(n.parentElement) || inStatusTag(n.parentElement, t) || inEnumMenu(n.parentElement) || afterStatusLabel(n.parentElement, t)) scoped = true;
         else if (kdOn() && KD_FULLMON.test(t)) { v = kdMon(t) + '월'; dated = true; }   // v4.21.15 ⑥ 월 이름 단독(범위 밖)
         else return;
       } else {
@@ -797,6 +847,8 @@
         else if ((v = kdKoLabel(t)) !== null) dated = true;          // v4.21.15
         else if ((v = kdCount(n.parentElement, t)) !== null) dated = true;   // v4.21.15
         else if ((v = kdPat(t)) !== null) dated = true;              // v4.21.15
+        else if ((v = kdEvent(n, t)) !== null) dated = true;         // v4.21.15 ⑧
+        else if ((v = kdColon(t)) !== null) dated = true;            // v4.21.15 ⑨
         else return;
       }
     }
