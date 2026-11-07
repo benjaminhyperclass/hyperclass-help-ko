@@ -272,3 +272,9 @@ superagentsApp(Managed Agents 빌더·목록·채팅 레이어)의 제품명 표
 - 조치: 모든 워크플로우의 API 키 주입을 저장소 변수 `ALLOW_PAID_API=true` 일 때만 켜지게 바꿈(기본 꺼짐 — 켜지 말 것). `ko-translate-round` 정기 실행 해제, `ui-updater` 신규 키 번역 단계 끔, `ko-round-review` 는 규칙 검사만, `manual-monthly` 는 변동 감지·대기열(`data/manual/queue.json`)만.
 - 번역은 월간 예약 작업(Claude 세션, 매월 3일)이 `scripts/manual/MONTHLY-RUNBOOK.md` 대로 처리: 화면 미번역 키 월 300개, 매뉴얼 문서 월 40건 상한, 남은 건 다음 달로. 첫 달 결과를 보고 상한 조정.
 - 2026-11 기준 대기: 화면 미번역 744키(23개 묶음, `scripts/round-prep.py`), 매뉴얼은 다음 감지(12-02)부터.
+
+## [기록] 상세·편집 화면 전용 네임스페이스와 교차 출처 iframe 목록 — 2026-11-07
+- 목록 화면 스윕으로는 **편집 화면에서만 로드되는 네임스페이스**가 안 잡힌다. 상품 편집(SaaS 상품)의 `saasApp` 이 1,337/1,345 영어였다(v4.2.62 에서 같은 앱 카탈로그 경로 이관으로 해결). 상세·편집 화면(상품·인보이스·견적서·강좌·폼 빌더·캘린더 예약 설정)은 메인 탭에서 직접 열어 host 네임스페이스 영어 수를 센다.
+- 구독 취소처럼 **사용자가 단어를 입력해 확인하는** 키(cancelWord 등)는 DNT — 영어 그대로 두고 앞뒤 조각만 번역한다('확인하려면 Cancel 을 입력하세요').
+- 교차 출처 iframe 화면(한글팩이 닿지 않음, 73라우트 숨은 iframe 조사): 설정 → 캘린더(`calendar-app.leadconnectorhq.com`), 설정 → 이메일 서비스(`ghl-isv-app-prod.`), 설정 → 대화 제공자(`client-app-crm-conversations.`), 마케팅 → 제휴 관리자(`client-app-affiliate-manager.`), AI Studio(`leadgen-vibe-ai-builder.`), 모바일 앱 커스터마이저(`mobile-whitelabel-customizer.`), 잠재 고객 발굴(외부). 자동화·비즈니스 프로필의 같은 출처 중계(로더 v4.21.14, 캐너리)가 정식이 되면 이 목록이 다음 대상 후보다 — 특히 **캘린더 설정은 신규 계정 첫 설정 화면**이라 우선순위가 높다.
+- verify-deploy 의 textEntries 는 **배포된 core 의 _text 건수**다(pretty 보다 C7 미배포분만큼 적다 — 11-07 에 pretty 건수를 넣었다가 바로잡음).
