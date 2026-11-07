@@ -1,145 +1,151 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 06-사이트 > 채팅-위젯
+원문: /support/solutions/articles/155000004779-how-to-use-the-all-in-one-chat-widget
+번역일: 2026-11-06
+카테고리: 06-사이트
 ---
 
-# 올인원 채팅 위젯 사용법
+# 올인원 채팅 위젯 사용하기
 
-## **개요**
+올인원 채팅 위젯은 라이브 채팅, SMS / 이메일, WhatsApp, Facebook, Instagram, 음성 AI를 위젯 하나에 모아 보여 주는 기능이에요. 위젯을 여러 개 관리하지 않아도 되고, 방문자는 원하는 방법을 골라 편하게 문의할 수 있어요.
 
-올인원 채팅 위젯(All-in-One Chat Widget)을 사용하면 실시간 채팅, SMS/이메일, 왓츠앱, 페이스북, 인스타그램, 음성 AI까지 여러 커뮤니케이션 채널을 하나의 통합된 인터페이스로 제공할 수 있습니다. 여러 개의 위젯을 따로 관리할 필요가 없을 뿐만 아니라, 방문자가 원하는 소통 방식을 자유롭게 선택할 수 있는 매끄러운 경험을 제공합니다.
-
-![올인원 채팅 위젯 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043226156/original/BLsxbqP9f9JOHweq1RUK7whY3XPB2nVDNw.png?1741875144)
-
-**목차**
-
-- [개요](#개요)
-- [주요 이점](#주요-이점)
-- [지원 채널 및 요구사항](#지원-채널-및-요구사항)
-- [단계별 설정](#단계별-설정)
-- [올인원 채팅 위젯 사용하기](#올인원-채팅-위젯-사용하기)
-- [자주 묻는 질문](#자주-묻는-질문)
-- [문제 해결](#문제-해결)
+![올인원 채팅 위젯 개요](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043226156/original/BLsxbqP9f9JOHweq1RUK7whY3XPB2nVDNw.png?1741875144)
 
 ---
 
-## **주요 이점**
+## 주요 장점
 
-- 실시간 채팅, SMS/이메일, 왓츠앱, 페이스북, 인스타그램, 음성 AI 채널을 하나의 위젯에서 통합 관리할 수 있습니다.
-- 초기 환영 메시지를 커스터마이징하여 방문자를 적절한 채널로 안내할 수 있습니다.
-- 통일된 색상 체계로 일관성 있는 브랜딩을 유지합니다.
-- 활성화된 커뮤니케이션 채널을 기반으로 간편하게 설정하고 채널을 선택할 수 있습니다.
+- 라이브 채팅, SMS / 이메일, WhatsApp와 선택 채널인 Facebook, Instagram, 음성 AI를 위젯 하나에서 관리할 수 있어요.
+- 첫 환영 메시지를 직접 꾸며 방문자를 알맞은 채널로 안내할 수 있어요.
+- 통일된 색상으로 브랜드 이미지를 일관되게 유지할 수 있어요.
+- 사용 중인 소통 채널에 맞춰 간단하게 설정하고 채널을 고를 수 있어요.
 
-## 지원 채널 및 요구사항
+---
 
-- **계정 접근 권한**: 계정에서 채팅 위젯을 생성하거나 편집할 수 있는 적절한 권한이 있는지 확인하세요.
-- 올인원 채팅 위젯은 여러 채널을 표시할 수 있지만, 일부 옵션은 해당 전제조건을 충족해야 나타납니다:
+## 지원되는 채널 및 요건
 
-**페이스북** - 하위 계정에 페이스북 페이지나 계정이 연결된 경우에만 채팅 유형 선택기에 표시됩니다.  
-**인스타그램** - 하위 계정에 인스타그램 계정이 연결된 경우에만 표시됩니다.  
-**음성 AI** - 하위 계정에 음성 AI 위젯이 구성된 경우에만 표시됩니다.  
-**왓츠앱** - 하위 계정에 왓츠앱 번호가 연결되고 왓츠앱 채팅 위젯이 존재하는 경우에만 선택할 수 있습니다.
+1. 계정 접근 권한
+   - 내 계정에서 채팅 위젯을 만들고 편집할 수 있는 권한이 있는지 확인하세요.
+2. 올인원 채팅 위젯은 여러 채널을 보여 줄 수 있지만, 일부 채널은 조건을 갖춰야 선택 목록에 나타나요.
+   - Facebook: 서브 계정에 Facebook 페이지나 계정이 연결되어 있어야 **채팅 유형** 선택 목록에 나타나요.
+   - Instagram: 서브 계정에 Instagram 계정이 연결되어 있어야 나타나요.
+   - 음성 AI: 서브 계정에 음성 AI 위젯이 설정되어 있어야 나타나요.
+   - WhatsApp: 서브 계정에 WhatsApp 번호가 연결되어 있고 WhatsApp 채팅 위젯이 있어야 선택할 수 있어요.
 
-채널이 전제조건을 충족하지 않으면 해당 위젯의 채팅 유형 다중 선택에서 옵션으로 나타나지 않습니다.
+   조건을 갖추지 못한 채널은 해당 위젯의 **채팅 유형** 다중 선택 목록에 나타나지 않아요.
 
-## **단계별 설정**
+---
 
-**1. 채팅 위젯 섹션으로 이동**
-- 계정에 로그인합니다.
-- 왼쪽 네비게이션 메뉴에서 Sites(사이트) → Chat Widget(채팅 위젯)으로 이동합니다.
+## 단계별 설정
 
-![채팅 위젯 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043226454/original/X2dtIAtO4NGdndH2rLtBWENT6Gjet0RtDw.png?1741875273)
+1. **채팅 위젯** 메뉴로 이동하세요.
+   1. 계정에 로그인하세요.
+   2. 왼쪽 메뉴에서 **사이트 > 채팅 위젯**으로 이동하세요.
 
-**2. 새 채팅 위젯 생성**
-- Create a New Chat Widget(새 채팅 위젯 생성)을 클릭하고 채팅 유형 목록에서 All-in-One Chat(올인원 채팅)을 선택합니다.
+      ![사이트 메뉴의 채팅 위젯으로 이동](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043226454/original/X2dtIAtO4NGdndH2rLtBWENT6Gjet0RtDw.png?1741875273)
+2. **Create a New Chat Widget**(새 채팅 위젯 만들기)을 선택한 다음, 채팅 유형 목록에서 **All-in-One Chat**(올인원 채팅)을 선택하세요.
 
-![올인원 채팅 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043226537/original/OfwQDLmd26LoF-Fe68PkvJbAp6LLmaYlZw.png?1741875305)
+   ![채팅 유형 목록에서 올인원 채팅 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043226537/original/OfwQDLmd26LoF-Fe68PkvJbAp6LLmaYlZw.png?1741875305)
 
-참고: "All-in-One Chat"이 보이지 않는다면, 계정이 최신 업데이트에 접근할 수 있는지 확인하세요. 새로고침하거나 로그아웃했다가 다시 로그인해야 할 수도 있습니다.
+   {% hint style="info" %}
+   **All-in-One Chat**(올인원 채팅)이 보이지 않으면 계정에 최신 업데이트가 적용되었는지 확인하세요. 페이지를 새로 고치거나 로그아웃했다가 다시 로그인해야 할 수도 있어요.
+   {% endhint %}
+3. **채널 선택**
+   1. 올인원 채팅 위젯을 만든 뒤 위젯을 열고 **스타일** 탭으로 이동하세요.
+   2. **채팅 유형**의 다중 선택 드롭다운에서 다음 중 원하는 채널을 자유롭게 조합해 고르세요.
+      - 라이브 채팅
+      - SMS / 이메일
+      - 음성 AI
+      - Facebook
+      - Instagram
+      - WhatsApp
+   3. 채널은 개수 제한 없이 한꺼번에 켤 수 있어요. 선택한 내용은 미리보기에 바로 반영돼요.
+   4. 위젯 배치를 선택하세요.
 
-**3. 채널 선택**
-- 올인원 채팅 위젯을 생성한 후, 위젯을 열고 **Style(스타일)** 탭으로 이동합니다.
-- **Chat Type(채팅 유형)**에서 다중 선택 드롭다운을 사용하여 다음 중 원하는 조합을 선택합니다:
-  - Live Chat(실시간 채팅)
-  - SMS/Email(SMS/이메일)
-  - Voice AI(음성 AI)
-  - Facebook(페이스북)
-  - Instagram(인스타그램)
-  - WhatsApp(왓츠앱)
-- 이 채널들을 원하는 수만큼 동시에 활성화할 수 있습니다. 미리보기가 선택 사항에 따라 즉시 업데이트됩니다.
+      **스타일** 탭의 **위젯 배치**에서 배치 방식을 고르세요.
 
-![채널 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155060490340/original/CKiaFjXGmHmw9wNsy3lX8Vux5k9pxKVMPQ.png?1765540649)
+      - **고정**: 위젯을 페이지 모서리에 고정해요.
+      - **임베드/인라인**: 올인원 채팅을 페이지 콘텐츠 안에 인라인으로 보여 줘요.
 
-**4. 위젯 설정 커스터마이징**
+      **임베드/인라인**으로 배치하면 위젯이 자동으로 열리고 페이지 안에 계속 보여요. 떠 있는 채팅 말풍선과 첫 프롬프트 팝업은 표시되지 않고, 임베드된 위젯은 최소화할 수 없어요.
 
-**일반 설정:**
-- 쉽게 구분할 수 있도록 위젯 이름을 지정합니다 (예: "메인 웹사이트 위젯").
-- 브랜드와 어울리도록 위젯 색상을 설정합니다.
+      ![위젯 배치 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155060490340/original/CKiaFjXGmHmw9wNsy3lX8Vux5k9pxKVMPQ.png?1765540649)
+4. 리디렉션 콜투액션을 설정하세요.
 
-![일반 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043226755/original/vLZnZOrW6p3j0YFyKHPTn_Gq-4YtGg4NhQ.png?1741875438)
+   **채팅 창** 탭에서 **리디렉션 콜투액션**을 켜면, 방문자를 외부 웹사이트로 안내하는 클릭 가능한 메시지를 보여 줄 수 있어요.
 
-**채널별 설정:**
+   방문자에게 보일 문구는 **리디렉션 텍스트**에, 이동할 주소는 **웹사이트 리디렉션**에 입력하세요.
 
-**실시간 채팅:**
-표시 이름, 인사말, 오프라인 상태 동작(있는 경우)을 설정합니다.
+   채팅 창 설정에 대한 자세한 내용은 [채팅 위젯 사용자 지정 개요](../overview-of-chat-widget-customizations.md)를 참고하세요.
 
-![실시간 채팅 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043226812/original/AgZ8hp9lGo3s1oewbqTo3Lay3km1jlsr1Q.png?1741875470)
+   ![리디렉션 콜투액션 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081213353/original/7RDoryQr9pkKAitXa4gcvSal1YW9RqpOxA.png?1789660676)
+5. 위젯 설정을 사용자 지정하세요.
+   1. **일반 설정**
+      1. 나중에 쉽게 찾을 수 있도록 위젯 이름을 정하세요(예: "메인 웹사이트 위젯").
+      2. 브랜드에 맞게 위젯 색상을 설정하세요.
 
-**이메일 채팅:** 메시지를 추가하고 사용자에게 인사할 폼 필드를 커스터마이징합니다.
+         ![일반 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043226755/original/vLZnZOrW6p3j0YFyKHPTn_Gq-4YtGg4NhQ.png?1741875438)
+   2. 채널별 설정
+      1. **라이브 채팅**: **표시 이름**, 인사말, 오프라인일 때의 동작(해당하는 경우)을 설정하세요.
 
-![이메일 채팅 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043226852/original/8tjzhINhEKsPDLsno15M-N9eLyVsAc3q6A.png?1741875488)
+         ![라이브 채팅 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043226812/original/AgZ8hp9lGo3s1oewbqTo3Lay3km1jlsr1Q.png?1741875470)
+      2. **Email Chat**(이메일 채팅): 메시지를 추가하고 폼 필드를 사용자 지정해 방문자를 맞이하세요.
 
-**왓츠앱:** 활성화된 경우 왓츠앱 번호와 기본 인사 메시지를 확인합니다.
+         ![이메일 채팅 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043226852/original/8tjzhINhEKsPDLsno15M-N9eLyVsAc3q6A.png?1741875488)
+      3. **WhatsApp**: 켜 두었다면 WhatsApp 번호와 기본 환영 메시지를 확인하세요.
+   3. **올인원 초기 메시지**
 
-**초기 메시지:**
-방문자가 위젯을 열 때 나타나는 메시지를 개인화합니다(예: "안녕하세요! 무엇을 도와드릴까요?").
+      방문자가 위젯을 열었을 때 보이는 메시지를 원하는 대로 바꿔 보세요(예: "안녕하세요! 무엇을 도와드릴까요?").
 
-올인원 채팅 내의 실시간 채팅에서는 Chat Window(채팅 창) 탭에서 두 개의 편집 가능한 프롬프트를 지원합니다: **Contact Form Intro Message(연락처 폼 소개 메시지)**와 **Contact Form System Message(연락처 폼 시스템 메시지)**입니다. 두 필드 중 하나를 비워두면 프롬프트를 건너뛰고 폼이 바로 열립니다. [이러한 소개 메시지 커스터마이징에 대한 자세한 정보는 여기를 클릭하세요.](collect-visitor-details-before-live-chat-starts.md)
+      올인원 채팅 안의 라이브 채팅은 **채팅 창** 탭에서 편집할 수 있는 프롬프트 두 가지도 지원해요. **문의 폼 소개 메시지**와 **문의 폼 시스템 메시지**예요. 둘 중 하나를 비워 두면 그 프롬프트는 건너뛰고 바로 폼이 열려요. 이 소개 메시지를 사용자 지정하는 방법은 아래 링크에서 확인하세요.
 
-![초기 메시지 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043226967/original/Egsq_uiadrYC7X4nJQ_LcT0FlroWsOQmFg.png?1741875528)
+      [자세한 정보를 보려면 여기를 클릭하세요](collect-visitor-details-before-live-chat-starts.md)
 
-**5. 저장 및 미리보기**
-- Save(저장)를 클릭하여 변경사항을 저장합니다.
-- 웹사이트나 Hyperclass 내에서 위젯을 미리보기하여 각 채널이 의도한 대로 작동하는지 확인합니다.
+      ![초기 메시지 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043226967/original/Egsq_uiadrYC7X4nJQ_LcT0FlroWsOQmFg.png?1741875528)
+6. 저장하고 미리 확인하세요.
+   1. **저장**을 눌러 변경 내용을 저장하세요.
+   2. 웹사이트나 하이퍼클래스 안에서 위젯을 미리 보고, 각 채널이 의도대로 작동하는지 확인하세요.
+
+---
 
 ## 올인원 채팅 위젯 사용하기
 
-**채널 전환:**
-방문자는 채팅 헤더의 컨트롤을 사용하여 활성화된 모든 채널(예: 실시간 채팅, SMS/이메일, 왓츠앱, 페이스북, 인스타그램, 음성 AI) 사이를 전환할 수 있습니다. 채팅 유형 다중 선택에서 선택한 채널만 위젯에 나타납니다.
+1. **채널 전환**
 
-![채널 전환](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043227189/original/w4-Fxq1VzilY28YKSwezVKIP2Y3vQzyC4Q.png?1741875628)
+   방문자는 채팅 헤더의 컨트롤로 켜 둔 채널(예: 라이브 채팅, SMS / 이메일, WhatsApp, Facebook, Instagram, 음성 AI) 사이를 오갈 수 있어요. 위젯에는 **채팅 유형** 다중 선택에서 고른 채널만 나타나요.
 
-**활성 대화:**
-채팅 세션은 하위 계정 사용자가 수동으로 종료하거나 위젯의 타임아웃 설정에 따라 비활성으로 인해 자동 종료될 때까지 활성 상태를 유지합니다.
+   ![채팅 헤더에서 채널 전환](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043227189/original/w4-Fxq1VzilY28YKSwezVKIP2Y3vQzyC4Q.png?1741875628)
+2. **진행 중인 대화**
 
-**연락처 폼 필드:**
-이메일과 왓츠앱 채팅의 경우 사용자 정보를 수집하기 위한 표준 연락처 폼 필드(예: "메시지")가 제공됩니다.
+   채팅 세션은 서브 계정 사용자가 직접 종료하거나, 위젯의 타임아웃 설정에 따라 비활성 상태로 닫힐 때까지 유지돼요.
+3. **문의 폼 필드**
 
-![연락처 폼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043227227/original/JM1secbGp-8G3-9AGFljGXbMSd7f5zI66g.png?1741875666)
+   이메일 채팅과 WhatsApp 채팅에는 방문자 정보를 받는 기본 문의 폼 필드(예: "메시지")가 있어요.
 
-## **자주 묻는 질문**
-
-**Q: 왓츠앱 번호가 없다면 어떻게 하나요?**
-실시간 채팅과 이메일 채팅만으로도 올인원 채팅 위젯을 사용할 수 있습니다. 왓츠앱 채팅은 유효한 번호가 추가될 때까지 숨겨집니다.
-
-**Q: 각 채널별로 색상을 따로 커스터마이징할 수 있나요?**
-올인원 채팅 위젯은 일관된 브랜드 경험을 유지하기 위해 모든 채널에 통일된 색상 체계를 적용합니다.
-
-**Q: 이 설정을 위해 별도의 권한이 필요한가요?**
-일반적으로 Sites(사이트) → Chat Widget(채팅 위젯)에 접근할 수 있는 사용자는 위젯을 생성하고 구성할 수 있습니다. 옵션이 보이지 않는다면 관리자에게 문의하세요.
-
-**Q: 실시간 채팅 세션을 종료하려면 어떻게 하나요?**
-하위 계정 사용자는 Hyperclass의 대화 패널에서 세션을 종료할 수 있으며, 지정된 비활성 타임아웃 후에는 자동으로 종료됩니다.
-
-## **문제 해결**
-
-**위젯이 표시되지 않는 경우:** 웹사이트에 위젯 코드를 올바르게 삽입했는지 확인하세요. 이 코드는 Sites(사이트) → Chat Widget(채팅 위젯) → Install Code(설치 코드)에서 찾을 수 있습니다.
-
-**왓츠앱을 사용할 수 없는 경우:** 활성화된 왓츠앱 번호가 있는지 확인하세요. 여전히 보이지 않는다면 왓츠앱 연동 설정을 다시 확인해보세요.
-
-**이메일이 전송되지 않는 경우:** 이메일 주소가 인증되고 계정 설정에서 올바르게 설정되었는지 확인하세요.
+   ![문의 폼 필드](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043227227/original/JM1secbGp-8G3-9AGFljGXbMSd7f5zI66g.png?1741875666)
 
 ---
-*원문 최종 수정: Wed, 21 Jan, 2026 at 1:42 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+
+## 자주 묻는 질문
+
+### WhatsApp 번호가 없으면 어떻게 되나요?
+라이브 채팅과 이메일 채팅만으로도 올인원 채팅 위젯을 쓸 수 있어요. 유효한 번호를 추가하기 전까지 WhatsApp 채팅은 숨겨져요.
+
+### 채널마다 색상을 다르게 설정할 수 있나요?
+올인원 채팅 위젯은 모든 채널에 하나의 통일된 색상을 적용해요. 브랜드 경험을 일관되게 유지하기 위해서예요.
+
+### 설정하려면 별도 권한이 필요한가요?
+보통 **사이트 > 채팅 위젯**에 접근할 수 있는 사용자는 위젯을 만들고 설정할 수 있어요. 해당 메뉴가 보이지 않으면 관리자에게 문의하세요.
+
+### 라이브 채팅 세션은 어떻게 종료하나요?
+서브 계정 사용자가 하이퍼클래스의 **대화** 화면에서 세션을 종료할 수 있어요. 직접 종료하지 않으면 지정한 비활성 타임아웃이 지난 뒤 자동으로 닫혀요.
+
+---
+
+## 문제 해결
+
+1. **위젯이 보이지 않아요.**
+   웹사이트에 위젯 코드를 올바르게 삽입했는지 확인하세요. 코드는 **사이트 > 채팅 위젯 > Install Code**(코드 설치)에서 찾을 수 있어요.
+2. **WhatsApp을 사용할 수 없어요.**
+   사용 중인 WhatsApp 번호가 있는지 확인하세요. 그래도 보이지 않으면 WhatsApp 연동 설정을 다시 확인하세요.
+3. **이메일이 발송되지 않아요.**
+   이메일 주소가 인증되어 있고 계정 설정에 올바르게 등록되어 있는지 확인하세요.

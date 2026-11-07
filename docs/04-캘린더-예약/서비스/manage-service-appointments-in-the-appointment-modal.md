@@ -1,217 +1,160 @@
 ---
-원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000009521-manage-service-appointments-in-the-appointment-modal
-번역일: 2026-11-02
-카테고리: 04-캘린더-예약 > 서비스
+원문: /support/solutions/articles/155000009521-manage-service-appointments-in-the-appointment-modal
+번역일: 2026-11-06
+카테고리: 04-캘린더-예약
 ---
 
-# 예약 모달(Appointment Modal)에서 서비스 예약 관리하기
+# 예약 모달에서 서비스 예약 관리
 
-예약 모달(Appointment Modal)을 사용하면 서비스(Service) 예약을 더욱 효율적으로 관리할 수 있어요. 예약 세부 정보를 확인하고, 예약을 편집하거나 복제하고, 일정 변경 링크를 생성하고, 차단 슬롯을 만들고, 배정된 리소스를 확인할 수 있습니다. 또한 서비스 예약 생성 시 첨부된 접수 양식(intake form)도 확인할 수 있어요.
+예약 모달에서 서비스 예약의 상세 정보를 확인하고, 편집·복제하고, 일정 변경 링크를 만들고, 시간을 차단하고, 배정된 리소스를 볼 수 있어요. 서비스 예약을 만들 때 첨부한 접수 폼도 여기서 확인할 수 있어요.
 
----
+## 서비스 예약용 예약 모달이란?
 
-**목차**
+예약 모달은 서비스 예약 한 건을 확인하고 처리하는 사이드 패널이에요. 관리자와 직원이 이 패널에서 상세 정보 편집, 일정 변경, 예약 복제, 제출된 예약 폼 확인을 할 수 있어요. 덕분에 여러 화면을 오가지 않고도 캘린더를 정확하게 관리할 수 있어요.
 
-- [서비스 예약을 위한 예약 모달이란?](#What-is-the-Appointment-Modal-for-Service-Appointments?)
-- [서비스 예약 관리의 주요 장점](#Key-Benefits-of-Managing-Service-Appointments)
-- [예약 모달 접근 방법](#How-to-Access-the-Appointment-Modal-for-Service-Appointments)
-- [제출된 서비스 예약 양식 확인하기](#View-a-Submitted-Service-Booking-Form)
-- [일정 변경 링크 생성 및 복사하기](#Generate-and-Copy-a-Reschedule-Link)
-- [서비스 예약 편집하기](#Edit-Service-Appointments)
-- [서비스 예약 복제하기](#Duplicate-Service-Appointments)
-- [서비스 캘린더(Service Calendar)의 차단 슬롯](#Blocked-Slots-on-Your-Service-Calendar)
-- [예약 모달에서 리소스 표시하기](#Show-Resource-in-Appointment-Modal)
-- [서비스 알림에서 커스텀 값(Custom Value) 사용하기](#Use-Custom-Values-in-Service-Notifications??)
-- [자주 묻는 질문](#Frequently-Asked-Questions)
+## 서비스 예약을 이렇게 관리하면 좋아요
 
----
+한곳에서 예약 정보를 관리하면 일정이 바뀔 때 빠르게 대응하고, 고객 정보도 화면을 옮겨 다니지 않고 확인할 수 있어요.
 
-# **서비스 예약을 위한 예약 모달이란?**
+- 속도: 페이지를 벗어나지 않고 서비스 예약을 편집하고 일정을 변경할 수 있어요.
+- 제어: 예약 과정에서 바로 예약을 받을 수 없는 시간을 차단할 수 있어요.
+- 확장성: 반복 고객이나 비슷한 고객의 예약을 복제해서 만들 수 있어요.
+- 폼 확인: 서비스 예약을 만들 때 첨부한 접수 폼의 제출 내용을 확인할 수 있어요.
 
-예약 모달(Appointment Modal)은 관리자와 팀원이 개별 서비스 예약(Service booking)을 확인하고 조치를 취할 수 있는 사이드 패널입니다. 세부 정보 편집, 일정 변경, 예약 복제, 제출된 예약 양식 확인 등 핵심 작업을 한곳에 모아두어, 팀이 여러 화면을 오가지 않고도 정확한 캘린더를 유지할 수 있도록 도와줍니다.
+## 예약 모달 열기
 
----
+서비스 예약을 열면 사이드 패널에 **예약 상세정보**가 나타나요. 여기서 예약 정보를 확인하고 예약 액션을 사용할 수 있어요.
 
-## **서비스 예약 관리의 주요 장점**
+1. **캘린더 > 캘린더 보기**(또는 **예약 목록 보기**)로 이동한 다음 **서비스**를 선택하세요.
 
-예약 세부 정보를 한곳에서 관리하면 팀원이 여러 화면을 오가지 않고도 일정 변경에 대응하고 고객 정보를 확인할 수 있어요.
+![캘린더 메뉴에서 서비스 예약의 캘린더 보기를 여는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084556058/original/zErCmaHPv9E13YsTKVPiqadVflmHq1jKCA.png?1793336761)
 
-- **속도:** 페이지를 벗어나지 않고 서비스 예약을 편집하고 일정을 변경할 수 있어요.
+2. 예약을 클릭하면 사이드 패널(예약 모달)에 **예약 상세정보**가 열려요.
 
-- **제어:** 예약 가능 시간대에서 불가능한 시간을 차단할 수 있어요.
+![선택한 서비스 예약의 예약 상세정보 사이드 패널](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084555959/original/1epvOS5fDj6Apcxo5C3BKaHzm3IqvaZPfg.png?1793336589)
 
-- **확장성:** 반복 고객이나 유사한 고객을 위해 예약을 복제할 수 있어요.
+## 제출된 서비스 예약 폼 보기
 
-- **양식 가시성:** 서비스 예약 생성 시 첨부된 접수 양식(intake form) 제출 내용을 확인할 수 있어요.
+서비스 예약을 만들 때 폼을 첨부했다면, 제출된 응답을 **예약 상세정보**에서 볼 수 있어요. 저장된 예약과 함께 고객이 남긴 접수 정보를 팀이 바로 확인할 수 있어요.
 
----
+1. **캘린더 > 캘린더 보기**로 이동한 다음 **서비스**를 선택하세요.
+2. 저장된 서비스 예약을 선택해 **예약 상세정보**를 여세요.
+3. 예약 상세정보 패널에서 폼 아이콘을 클릭해 **폼 제출**을 여세요.
+4. 제출된 답변을 확인하세요.
 
-## **서비스 예약을 위한 예약 모달 접근 방법**
+![첨부된 폼 제출 내용과 고객 응답이 표시된 서비스 예약 상세정보](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084553858/original/jwzTo6uFUfoK6vCGKnz0RGyd4owWinuOnw.png?1793330343)
 
-서비스 예약을 열면 예약 세부 정보(Booking Details) 사이드 패널이 표시되며, 여기서 정보를 확인하고 사용 가능한 예약 작업을 실행할 수 있어요.
+{% hint style="warning" %}
+폼은 예약을 만들 때 첨부해야 해요. 이미 만들어진 예약에는 폼을 첨부할 수 없고, 제출된 폼을 나중에 편집할 수도 없어요.
+{% endhint %}
 
-- **캘린더(Calendars) → 캘린더 보기(Calendar View)**(또는 **예약 목록 보기(Appointment List View)**)로 이동한 후 **서비스(Services)**를 선택하세요.
+## 일정 변경 링크 만들고 복사하기
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084556058/original/zErCmaHPv9E13YsTKVPiqadVflmHq1jKCA.png?1793336761)
+고객이 직접 새 시간을 고르게 하고 싶다면 예약의 일정 변경 링크를 사용하세요. 기존 서비스 예약에서 링크를 바로 만들고, 원하는 채널로 고객에게 보낼 수 있어요.
 
-- 예약을 클릭하여 사이드 패널(예약 모달)에서 **예약 세부 정보(Booking Details)**를 여세요.
+1. 서비스 예약을 여세요.
+2. **예약 액션**을 클릭하세요.
+3. **Generate Reschedule Link**(일정 변경 링크 생성)를 선택하세요.
+4. 링크가 만들어지면 **링크 복사**를 클릭하세요.
+5. 복사한 링크를 고객에게 보내세요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084555959/original/1epvOS5fDj6Apcxo5C3BKaHzm3IqvaZPfg.png?1793336589)
+고객은 받은 링크를 열어 기존 일정 변경 화면에서 새 예약 시간을 고를 수 있어요.
 
----
+## 서비스 예약 편집
 
-## **제출된 서비스 예약 양식 확인하기**
+결제가 이루어졌는지에 따라 편집할 수 있는 항목이 달라요. 결제 전 예약은 더 많은 항목을 바꿀 수 있고, 결제된 예약은 기존 예약과 결제 정보를 보호하기 위해 구조와 관련된 편집이 제한돼요.
 
-서비스 예약 생성 시 양식이 첨부된 경우, 제출된 응답 내용을 예약 세부 정보(Booking Details)에서 확인할 수 있어요. 이를 통해 팀이 저장된 예약과 함께 고객 접수 정보를 바로 확인할 수 있습니다.
+### 결제 전 예약 편집
 
-- **캘린더(Calendars) → 캘린더 보기(Calendar View)**로 이동한 후 **서비스(Services)**를 선택하세요.
+결제 전 서비스 예약은 취소하거나 다시 예약하지 않고 편집 화면에서 바로 수정할 수 있어요. 막바지 요청이나 정정, 변경 사항을 처리하기 쉬워요.
 
-- 저장된 서비스 예약을 선택하여 **예약 세부 정보(Booking Details)**를 여세요.
+바꿀 수 있는 항목은 다음과 같아요.
 
-- 예약 세부 정보 패널에서 양식 아이콘을 클릭하여 **양식 제출 내역(Form submission)**을 여세요.
+- **서비스** 추가 또는 제거
+- **애드온** 추가 또는 제거
+- **직원** 또는 **Service Variants**(서비스 변형) 변경
+- **위치**, 예약 제목, 날짜·시간, 시간대, 쿠폰 코드 변경
 
-- 제출된 답변을 확인하세요.
+결제 전 서비스 예약을 편집하려면 다음과 같이 하세요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084553858/original/jwzTo6uFUfoK6vCGKnz0RGyd4owWinuOnw.png?1793330343)
+1. 편집할 예약을 선택하고 연필 아이콘을 클릭해 편집 화면을 여세요.
 
-**중요:** 양식은 예약 생성 시에만 첨부할 수 있어요. 기존 예약에 양식을 추가하거나, 이미 제출된 양식을 나중에 수정할 수는 없습니다.
+![서비스 예약 모달의 편집 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084556126/original/ehVF_-mdtnkjbXODYYkJKwYRRXpPdQRSCw.png?1793336850)
 
----
+2. 서비스, 애드온, 직원/변형, 위치, 제목, 날짜·시간, 시간대, 쿠폰 코드 중 바꿀 항목을 수정하고 **저장**을 클릭하세요.
 
-## **일정 변경 링크 생성 및 복사하기**
+![변경할 수 있는 항목이 표시된 결제 전 서비스 예약 편집 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064119010/original/cCZClATqPysQRMMvk3_aaIk4G2Zyp2Rz3A.png?1770140560)
 
-고객이 직접 새로운 시간을 선택하도록 하고 싶을 때는 예약의 일정 변경 링크를 사용하세요. 기존 서비스 예약에서 직접 링크를 생성하여 원하는 커뮤니케이션 채널로 공유할 수 있어요.
+### 결제된 예약 편집
 
-- **서비스 예약**을 여세요.
+결제된 예약은 서비스나 직원 변경처럼 구조와 관련된 항목을 바꿀 수 없어요. 대신 예약을 복제해 새 예약을 만들고 세부 정보만 고쳐서 다시 예약하면, 처음부터 입력하지 않아도 돼요.
 
-- **예약 작업(Appointment Actions)**을 클릭하세요.
+편집 화면에는 바꿀 수 있는 항목과 바꿀 수 없는 항목을 알려 주는 메시지가 표시돼요.
 
-- **일정 변경 링크 생성(Generate Reschedule Link)**을 선택하세요.
+## 서비스 예약 복제
 
-- 링크가 생성되면 **링크 복사(Copy Link)**를 클릭하세요.
+예약을 복제하면 기존 정보를 그대로 가져와서 반복 예약이나 비슷한 서비스 예약을 빠르게 만들 수 있어요. 같은 내용을 다시 입력하지 않아도 돼요.
 
-- 링크를 고객에게 공유하세요.
+예약 모달에는 **Duplicate Appointment**(예약 복제) 버튼이 있어요. 복제할 예약을 열고 **중복** 아이콘을 선택하세요. 복사된 정보를 확인하고 필요한 부분을 고친 뒤 새 예약을 완료하세요.
 
-고객은 공유된 링크를 열어 기존 일정 변경 절차를 통해 새로운 예약 시간을 선택할 수 있어요.
+![예약 상세정보 패널의 서비스 예약 복제 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084556112/original/TXsLc-VzgsiiA8MegMSxunyd9O9uuWgccA.png?1793336819)
 
----
+## 서비스 캘린더에서 시간 차단
 
-## **서비스 예약 편집하기**
+**차단된 슬롯**을 만들면 해당 시간을 예약 불가로 표시해서 캘린더를 정확하게 유지하고 실수로 예약이 잡히는 것을 막을 수 있어요.
 
-편집 가능 범위는 결제 여부에 따라 달라집니다. 결제되지 않은 예약은 더 많은 변경이 가능하지만, 결제된 예약은 기존 예약 및 결제 정보를 보호하기 위해 구조적인 편집이 제한됩니다.
+차단된 슬롯을 만들려면 다음과 같이 하세요.
 
-### **결제되지 않은 예약 편집하기**
+1. 캘린더에서 **New Booking**(새 예약)을 클릭하세요.
 
-사용자는 취소하거나 재예약하지 않고도 편집 화면에서 직접 결제되지 않은 서비스 예약을 수정할 수 있어요. 덕분에 막바지 요청, 수정, 변경 사항을 더 쉽게 처리할 수 있습니다.
+![차단된 슬롯을 만들기 위한 새 예약 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084556055/original/-NchWUgfUri2SCT2HoB26Kg3KftdwR17Nw.png?1793336753)
 
-지원되는 변경 사항은 다음과 같습니다:
+2. **Event Type**(이벤트 유형)을 **차단된 슬롯**으로 바꾸세요.
 
-- **서비스(Services)** 추가 또는 제거
+![이벤트 유형에서 차단된 슬롯을 선택한 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064119381/original/n-Jf9wQYrMhdQ3LjBKzuXe086l_HvNeZ3A.png?1770140952)
 
-- **애드온(Add-Ons)** 추가 또는 제거
+3. 날짜·시간, 제목, 직원을 선택한 다음 **시간 차단**을 클릭하세요.
 
-- **담당자(Staff)** 또는 **서비스 변형(Service Variants)** 변경
+![시간과 직원 옵션이 표시된 차단된 슬롯 폼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064119444/original/pDXeA17Ua3DUSRqDP4QlULzoxoP9hSjA1A.png?1770141018)
 
-- **위치(Location)**, 예약 제목, 날짜/시간, 타임존, 쿠폰 코드 변경
+## 예약 모달에서 리소스 확인
 
-결제되지 않은 서비스 예약을 편집하려면:
+예약 모달에는 서비스 예약에 배정된 리소스가 표시돼요. 예약된 리소스를 확인하면 어떤 사람이나 리소스가 예약됐는지 팀이 바로 알 수 있어서 배정과 관련한 혼선을 줄일 수 있어요.
 
-- 편집하려는 예약을 선택한 후 **연필** 아이콘을 클릭하여 편집기를 여세요.
+![서비스 예약 모달에 표시된 리소스 정보](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084556032/original/UP_E_3nf6D2nGX2iWGRgznoQIArc0CRvTw.png?1793336724)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084556126/original/ehVF_-mdtnkjbXODYYkJKwYRRXpPdQRSCw.png?1793336850)
+## 서비스 알림에서 커스텀 값 사용
 
-- 해당하는 서비스, 애드온, 담당자/변형, 위치, 제목, 날짜/시간, 타임존, 쿠폰 코드를 조정한 후 **저장(Save)**을 클릭하세요.
+**커스텀 값**을 쓰면 예약 확인, 리마인더 같은 고객 알림에 예약 정보를 매번 직접 입력하지 않아도 넣을 수 있어요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064119010/original/cCZClATqPysQRMMvk3_aaIk4G2Zyp2Rz3A.png?1770140560)
+캘린더 알림에는 다음 두 가지 커스텀 값을 쓸 수 있어요.
 
-### **결제된 예약을 위한 강화된 지원**
+- **Service Booking Price**(서비스 예약 가격)
+- **Meeting Location Name**(미팅 장소 이름): 전체 주소 대신 짧은 이름으로 표시돼요.
 
-결제된 예약은 서비스나 담당자 변경과 같은 구조적인 변경에 대해 잠겨 있어요. 예약을 복제하여 새로운 예약을 생성하고 세부 정보를 조정한 후, 처음부터 다시 시작하지 않고 재예약할 수 있습니다.
+사용 방법은 다음과 같아요.
 
-편집 화면에는 어떤 정보를 변경할 수 있고 변경할 수 없는지 설명하는 메시지가 표시됩니다.
+1. **캘린더 > 캘린더 설정 > 알림**으로 이동하세요.
+2. 확인, 리마인더 등 수정할 알림 템플릿을 여세요.
+3. 머지 필드 선택 목록에서 **Service Booking Price** 또는 **Meeting Location Name**을 삽입하세요.
+4. 저장한 다음 알림을 테스트하세요.
 
----
+![사용할 수 있는 커스텀 값이 표시된 서비스 알림 템플릿](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064119604/original/B80PfHsuKgrj_7P9Hq56wv6Aop-IiAMHLQ.png?1770141210)
 
-## **서비스 예약 복제하기**
+## 자주 묻는 질문
 
-예약을 복제하면 기존 세부 정보를 다시 입력할 필요 없이 반복되거나 유사한 서비스 예약을 빠르게 생성할 수 있어요.
+### 결제가 끝난 뒤에도 직원이나 서비스를 바꿀 수 있나요?
 
-**예약 복제(Duplicate Appointment)** 버튼은 예약 모달(Appointment Modal)에서 사용할 수 있어요. 복제하려는 예약을 열고 **복제(Duplicate)** 아이콘을 선택하세요. 새 예약을 완료하기 전에 복사된 세부 정보를 검토하고 조정하세요.
+결제된 예약은 구조와 관련된 항목(서비스, 애드온, 직원/변형, 쿠폰, 제목, 위치)을 편집할 수 없어요. 날짜·시간은 일정 변경으로 바꿀 수 있어요. 다른 항목을 바꾸려면 **Duplicate Appointment**로 예약을 복제해 변경 사항을 반영한 뒤 다시 예약하세요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084556112/original/TXsLc-VzgsiiA8MegMSxunyd9O9uuWgccA.png?1793336819)
+### 예약을 복제하면 어떤 정보가 그대로 복사되나요?
 
----
+연락처, 서비스, 애드온, 직원/리소스, 미팅 장소, 메모가 대체로 그대로 복사돼요. 복사본을 예약하기 전에 필요한 부분을 고치세요.
 
-## **서비스 캘린더(Service Calendar)의 차단 슬롯**
+### 결제된 예약의 일정을 변경하면 기존 주문이나 결제도 바뀌나요?
 
-차단 슬롯(Blocked Slot)을 사용하면 특정 시간을 예약 불가능으로 표시하여 캘린더를 정확하게 유지하고 실수로 인한 예약을 방지할 수 있어요.
+아니요. 결제는 원래 예약에 그대로 연결돼 있어요.
 
-차단 슬롯을 만들려면:
+### 서비스 예약을 만든 뒤에 폼을 첨부할 수 있나요?
 
-- 캘린더에서 **새 예약(New Booking)**을 클릭하세요.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084556055/original/-NchWUgfUri2SCT2HoB26Kg3KftdwR17Nw.png?1793336753)
-
-- **이벤트 유형(Event Type)**을 **차단 슬롯(Blocked Slot)**으로 전환하세요.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064119381/original/n-Jf9wQYrMhdQ3LjBKzuXe086l_HvNeZ3A.png?1770140952)
-
-- 날짜/시간, 제목, 담당자를 선택한 후 **시간 차단(Block Time)**을 클릭하세요.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064119444/original/pDXeA17Ua3DUSRqDP4QlULzoxoP9hSjA1A.png?1770141018)
-
----
-
-## **예약 모달에서 리소스 표시하기**
-
-예약 모달(Appointment Modal)에는 서비스 예약에 배정된 리소스가 표시됩니다. 예약된 리소스를 확인하면 팀이 어떤 담당자나 리소스가 예약되었는지 파악하고 배정에 대한 혼란을 방지할 수 있어요.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084556032/original/UP_E_3nf6D2nGX2iWGRgznoQIArc0CRvTw.png?1793336724)
-
----
-
-## **서비스 알림에서 커스텀 값(Custom Value) 사용하기**
-
-커스텀 값(Custom Value)을 사용하면 매번 수동으로 정보를 입력하지 않아도 고객 확인 메시지, 리마인더, 기타 알림에 관련 예약 정보를 포함시킬 수 있어요.
-
-캘린더 알림에 사용할 수 있는 커스텀 값은 두 가지입니다:
-
-- **서비스 예약 금액(Service Booking Price)**
-
-- **미팅 위치 이름(Meeting Location Name)** (전체 주소 대신 간단한 라벨)
-
-이 값들을 사용하려면:
-
-- **캘린더(Calendars) → 캘린더 설정(Calendar Settings) → 알림(Notifications)**으로 이동하세요.
-
-- 알림 템플릿(확인, 리마인더 등)을 여세요.
-
-- 병합 필드 선택기에서 **서비스 예약 금액(Service Booking Price)** 또는 **미팅 위치 이름(Meeting Location Name)**을 삽입하세요.
-
-- 저장한 후 알림을 테스트하세요.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064119604/original/B80PfHsuKgrj_7P9Hq56wv6Aop-IiAMHLQ.png?1770141210)
-
----
-
-## **자주 묻는 질문**
-
-**Q: 결제가 완료된 후에도 담당자나 서비스를 변경할 수 있나요?**
-
-구조적인 변경(서비스, 애드온, 담당자/변형, 쿠폰, 제목, 위치)은 결제된 예약에서는 잠겨 있어요. 날짜/시간을 일정 변경하거나, **예약 복제(Duplicate Appointment)**를 사용해 변경 사항을 반영한 새 예약을 만드세요.
-
-**Q: 예약을 복제하면 어떤 정보가 함께 복사되나요?**
-
-연락처, 서비스, 애드온, 담당자/리소스, 미팅 위치, 메모가 일반적으로 함께 복사됩니다. 복제된 예약을 확정하기 전에 필요한 부분을 조정하세요.
-
-**Q: 결제된 예약의 일정을 변경하면 기존 주문이나 결제 내용이 바뀌나요?**
-
-아니요. 결제 정보는 원래 예약에 그대로 연결되어 유지됩니다.
-
-**Q: 서비스 예약을 생성한 후에도 양식을 첨부할 수 있나요?**
-
-아니요. 양식은 예약 생성 시에만 첨부할 수 있어요. 이미 양식이 첨부된 경우 **예약 세부 정보(Booking Details)**에서 제출된 응답을 확인할 수 있지만, 이후에 양식을 추가하거나 수정할 수는 없습니다.
-
----
-*원문 최종 수정: 2026-10-30*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+아니요. 폼은 예약을 만들 때만 첨부할 수 있어요. 폼을 첨부했다면 **예약 상세정보**에서 제출된 응답을 확인할 수 있지만, 나중에 폼을 추가하거나 편집할 수는 없어요.

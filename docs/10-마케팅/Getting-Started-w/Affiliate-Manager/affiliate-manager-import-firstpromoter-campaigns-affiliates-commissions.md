@@ -1,136 +1,122 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 10-마케팅 > 제휴 관리 시작하기
+원문: /support/solutions/articles/155000006577-affiliate-manager-import-firstpromoter-campaigns-affiliates-commissions
+번역일: 2026-11-06
+카테고리: 10-마케팅
 ---
 
-# 제휴 관리: FirstPromoter 캠페인, 제휴사 및 커미션 가져오기
+# FirstPromoter 캠페인·제휴 파트너·커미션 가져오기
 
-안녕하세요! 이 가이드에서는 새로운 가이드형 가져오기 기능을 사용해서 FirstPromoter 프로그램을 **Hyperclass 제휴 관리(Affiliate Manager)**로 마이그레이션하는 방법을 알려드립니다. CSV 파일 없이도 캠페인, 제휴사, 과거 커미션 데이터를 모두 가져올 수 있어서, 정확한 리포팅과 함께 모든 것을 한 곳에서 관리할 수 있습니다.
+FirstPromoter에서 운영하던 프로그램을 하이퍼클래스 **제휴 관리자**(Affiliate Manager)로 옮기는 방법이에요. 안내에 따라 진행하면 CSV 파일 없이 캠페인, 제휴 파트너, 과거 커미션을 한 번에 가져올 수 있어요. 가져온 데이터는 한곳에서 관리하고 리포트로 확인할 수 있어요.
 
----
+## FirstPromoter 가이드형 가져오기란?
 
-**목차**
+가이드형 가져오기는 API로 FirstPromoter 워크스페이스와 하이퍼클래스를 연결하는 방식이에요. 자격 증명을 확인한 뒤 가져올 캠페인을 고르고, 연락처 충돌이 있으면 확인한 다음 가져와요. 수동으로 내보내는 것보다 빠르고, 데이터가 깔끔하게 정리되며 이력도 그대로 유지돼요.
 
-- [FirstPromoter 가이드형 가져오기란?](#firstpromoter-가이드형-가져오기란)
-- [FirstPromoter 가져오기의 핵심 장점](#firstpromoter-가져오기의-핵심-장점)
-- [FirstPromoter 가져오기 설정 방법](#firstpromoter-가져오기-설정-방법)
-- [자주 묻는 질문](#자주-묻는-질문)
+- **계정 ID**와 **API 키**로 FirstPromoter 계정을 연결해요.
+- 가져올 캠페인과 가져오기 환경설정을 선택해요.
+- 이메일 충돌을 확인하고 해결한 뒤 가져와요.
 
----
+## FirstPromoter 가져오기의 장점
 
-# **FirstPromoter 가이드형 가져오기란?**
+가져오기를 언제 쓰면 좋은지, 제휴 운영과 리포팅에 어떤 도움이 되는지 정리했어요.
 
-가이드형 가져오기는 FirstPromoter 워크스페이스를 Hyperclass에 연결하는 API 기반 워크플로우입니다. 빠른 자격 증명 확인 후, 가져올 캠페인을 선택하고 연락처 충돌을 검토한 다음 가져오기를 진행합니다. 이를 통해 수동 내보내기와 비교해서 깔끔한 데이터, 보존된 기록, 더 빠른 전환을 보장합니다.
+- 빠른 설정: 연결, 선택, 가져오기까지 코딩 없이 3단계로 끝나요.
+- 이력 유지: 과거 추천과 커미션이 그대로 남아서 추이와 지급 내역을 정확하게 볼 수 있어요.
+- 깔끔한 연락처: 중복 이메일을 자동으로 찾아 주고, **병합**이나 **건너뛰기**를 선택할 수 있어서 연락처가 지저분해지지 않아요.
+- 지급 기준 설정: **Pending Commissions**(대기 중인 커미션)를 포함할지 정하고 **Payout Terms**(지급 조건)를 지정할 수 있어요. 가져온 커미션도 우리 지급 주기에 맞게 처리돼요.
+- 통합 분석: 캠페인과 제휴 파트너가 **제휴 관리자** 대시보드에 다른 성과 지표와 함께 표시돼요.
 
-- FirstPromoter 계정을 **계정 ID**와 **API 키**로 연결
-- 캠페인 선택 및 가져오기 설정 구성
-- 이메일 충돌 검토/해결 후 가져오기 실행
+## 가져오기 설정하는 방법
 
----
+아래 순서대로 따라 하면 오류를 최소로 줄이면서 처음부터 끝까지 가져올 수 있어요.
 
-## **FirstPromoter 가져오기의 핵심 장점**
+### 1. 가져오기 마법사 열기
 
-이러한 장점을 이해하면 언제 가져오기를 사용할지 결정하고, 지속적인 제휴 운영 및 리포팅을 개선하는 데 도움이 됩니다.
+**마케팅 > 제휴 관리자 > 캠페인 > 가져오기**로 이동하세요.
 
-- **빠른 설정**: 연결, 선택, 가져오기를 위한 3단계 노코드 마법사
-- **기록 연속성**: 과거 리퍼럴과 커미션을 보존하여 정확한 추세 및 지급 내역 확인 가능
-- **깔끔한 연락처**: 스마트 중복 이메일 감지를 통한 병합/건너뛰기 옵션으로 지저분한 레코드 방지
-- **지급 제어**: **미지급 커미션** 포함 여부와 **지급 조건** 설정으로 가져온 항목이 결제 주기를 준수하도록 선택 가능
-- **통합 분석**: 캠페인과 제휴사가 다른 성과 지표와 함께 제휴 관리 대시보드에 표시
+![계정 ID와 API 키 입력란, 'API 자격 증명을 찾는 곳' 안내 상자가 있는 계정 연결 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055517469/original/JK86nfcBuS9_rmv3na2xpZyo4ngidgUgiQ.png?1759925880)
 
----
+화면에 **계정 ID**와 **API 키** 입력란이 있고, 파란색 안내 상자에서 **API 자격 증명**을 찾는 방법을 볼 수 있어요. FirstPromoter에 로그인한 뒤 Settings → API & Webhooks에서 읽기 권한이 있는 키를 만들면 돼요.
 
-## **FirstPromoter 가져오기 설정 방법**
+### 2. FirstPromoter 연결하기
 
-오류를 최소화하면서 가져오기를 완전히 실행하기 위한 명확하고 반복 가능한 단계를 따라하세요.
+**계정 ID**와 **API 키**를 붙여 넣고 **Connect & Fetch**(연결하고 불러오기)를 클릭하세요.
 
-### 가져오기 마법사 열기
+![FirstPromoter에서 계정 ID와 API 키를 찾는 위치를 보여 주는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055517501/original/JJnyvc0gsXTAoAgSBlfBrOsqbmSwNUOmIg.png?1759925901)
 
-Marketing(마케팅) → **Affiliate Manager(제휴 관리)** → **Campaigns(캠페인)** → **Import(가져오기)**
+{% hint style="info" %}
+FirstPromoter에서 Settings → API & Webhooks로 이동해 Account ID를 복사하고, affiliates와 campaigns에 대한 읽기 권한이 있는 API Key를 만드세요.
+{% endhint %}
 
-계정 ID 및 API 키 필드와 "API 자격 증명을 찾는 방법"이라는 제목의 파란색 도움말 상자가 있는 계정 연결 화면
+### 3. 캠페인 선택하기
 
-![FirstPromoter 연결 폼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055517469/original/JK86nfcBuS9_rmv3na2xpZyo4ngidgUgiQ.png?1759925880)
+옮기려는 캠페인을 체크하세요. 목록에서 **상태**, 커미션 규칙, 제휴 파트너 수, 쿠키 유효 기간을 미리 확인할 수 있어서 엉뚱한 캠페인을 가져오는 실수를 막을 수 있어요.
 
-### FirstPromoter 연결
+- 검색과 체크박스로 캠페인을 선택하세요.
+- **상태**, **제휴**, **Commissions**(커미션), **Cookie life**(쿠키 유효 기간) 같은 열을 확인하세요.
 
-**계정 ID**와 **API 키**를 붙여넣기 → **Connect & Fetch(연결 및 가져오기)**
+{% hint style="info" %}
+FirstPromoter에서 결제가 Stripe로 처리된 것으로 표시되더라도, 이는 기존 FirstPromoter 설정을 그대로 보여 주는 거예요.
+{% endhint %}
 
-FirstPromoter에서 자격 증명 찾는 방법: **Settings(설정) → API & Webhooks** → 계정 ID를 복사하고 제휴사 및 캠페인에 대한 **읽기** 권한으로 API 키를 생성하세요.
+![캠페인, 상태, 제휴, 커미션, 쿠키 유효 기간 열이 있는 캠페인 선택 표](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055517800/original/T-ReWo0_-Xi2uEM6UqOOEx059oi9Xu9TbQ.png?1759926068)
 
-![FirstPromoter API 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055517501/original/JJnyvc0gsXTAoAgSBlfBrOsqbmSwNUOmIg.png?1759925901)
+### 4. 환경설정하기
 
-### 캠페인 선택
+**환경설정**에서 필요하면 **Pending Commissions**를 켜고 **Payout Terms**를 확인하세요. 무엇을 가져올지, 지급 일정을 어떻게 잡을지 정해 두면 가져온 뒤에도 정산 업무를 이전과 같게 유지할 수 있어요.
 
-마이그레이션하려는 캠페인에 체크 표시하세요. 상태, 커미션 규칙, 제휴사 수, 쿠키 수명을 검토합니다. 정확히 마이그레이션할 프로그램을 선택하고 주요 세부 정보(상태, 커미션 유형, 제휴사 수, 쿠키 수명)를 미리 보면서 잘못된 항목을 가져오는 것을 방지하세요.
+- **Pending Commissions**(토글): FirstPromoter에서 아직 지급하지 않은 커미션을 하이퍼클래스에서 바로 추적하고 싶을 때 켜세요.
+- **Current Payout Terms**(현재 지급 조건, 드롭다운): 예를 들어 **Net-30 (30 days after month ends)**(월말 기준 30일 후)처럼 선택해요. 이 값에 따라 가져온 커미션이 **제휴 관리자**에서 언제 지급 대상이 되는지가 정해져요.
 
-- 검색과 체크박스를 사용해서 캠페인을 선택
-- **상태**, **제휴사**, **커미션**, **쿠키 수명** 등의 컬럼 검토
-- 참고: FirstPromoter가 Stripe를 통해 처리된 결제를 표시한다면, 이는 원래 FirstPromoter 설정을 반영한 것입니다
+![캠페인 목록 아래의 환경설정 카드. Pending Commissions 토글과 Payout Terms 드롭다운이 있다](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055518281/original/DVDVuQL3emC2wLCH2VpIiQaoeNObn1XIbg.png?1759926334)
 
-![캠페인 선택 테이블](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055517800/original/T-ReWo0_-Xi2uEM6UqOOEx059oi9Xu9TbQ.png?1759926068)
+### 5. 제휴 파트너 확인하기
 
-### 환경 설정
+**Affiliate Management**(제휴 관리) 화면에서 **Conflicts**(충돌)가 있으면 **병합**이나 **건너뛰기**를 선택해 해결하세요. 새 제휴 파트너는 연락처로 자동 생성돼요. 이미 같은 이메일이 있으면 충돌을 해결해서 CRM 프로필이 하나만 남도록 해야 해요.
 
-필요한 경우 **미지급 커미션**을 켜고 **지급 조건**을 확인하세요. 가져올 내용과 지급 일정을 세밀하게 조정해서 마이그레이션 후에도 재무 워크플로우가 일관되게 유지되도록 하세요.
+- 탭에서 **합계**, **신규**, **Conflicts**별 개수를 볼 수 있어요.
+- 충돌한 항목은 **Affiliate Name**(제휴 파트너 이름), **상태**, **이메일**, **Join Date**(가입일)를 비교해 보세요.
+- 보통 다음 두 가지 중에서 선택해요.
+  - **병합**: 기존 연락처를 그대로 두고 제휴 데이터를 붙여요.
+  - **건너뛰기**: 이 제휴 파트너는 이번에 가져오지 않아요.
 
-- **미지급 커미션** (토글): FirstPromoter의 미지급 커미션을 Hyperclass에서 즉시 추적하려면 포함
-- 현재 지급 조건 (드롭다운, 예: **Net-30 (월 종료 후 30일)**): 제휴 관리에서 가져온 커미션의 지급 예정일 결정
+![탭과 '모든 충돌이 해결되었습니다' 녹색 배너가 있는 제휴 관리 목록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055518363/original/-nVAAY_2WgYtHUHnhmG5WvEURMOOB5btow.png?1759926350)
 
-![환경 설정 패널](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055518281/original/DVDVuQL3emC2wLCH2VpIiQaoeNObn1XIbg.png?1759926334)
+### 6. 가져오기 시작
 
-### 제휴사 검토
+**가져오기 시작**을 클릭하세요. 시작한 뒤에는 페이지를 열어 둬도 되고 다른 곳으로 이동해도 돼요. 가져오기는 계속 진행돼요. 시작하면 어떤 항목이 대기열에 들어갔는지, 이후에 무엇을 하면 되는지 간단한 요약이 나와요.
 
-**Affiliate Management(제휴사 관리)**에서 **병합** 또는 **건너뛰기**를 선택해서 **충돌**을 해결하세요. 새로운 제휴사는 자동으로 연락처로 생성됩니다. 이메일이 이미 존재한다면 단일하고 깔끔한 CRM 프로필을 유지하기 위해 충돌을 해결해야 합니다.
+- 요약 카드에 가져오기 대기 중인 **캠페인**, **Total Affiliates**(전체 제휴 파트너 수), **Historical Referrals**(과거 추천 내역) 수가 표시돼요.
+- 가져오기가 끝나면 하이퍼클래스가 알려 주니, 그때까지 페이지를 나가도 괜찮아요.
 
-- 탭에 **전체**, **신규**, **충돌** 표시
-- 충돌의 경우 **제휴사 이름**, **상태**, **이메일**, **가입일** 비교
-- 액션은 일반적으로 **병합**(기존 연락처 유지하고 제휴사 데이터 첨부) 또는 **건너뛰기**(현재 이 제휴사는 가져오지 않음) 포함
+요약 화면에는 **다음 단계** 안내 상자도 함께 나와요.
 
-![제휴사 관리 목록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055518363/original/-nVAAY_2WgYtHUHnhmG5WvEURMOOB5btow.png?1759926350)
+## 자주 묻는 질문
 
-### **가져오기 시작**
+### FirstPromoter에서 CSV로 내보내야 하나요?
 
-**Start Import(가져오기 시작)**을 클릭하세요. 페이지를 열어두거나 다른 곳으로 이동해도 처리는 계속됩니다. 가져오기를 시작한 후 무엇이 대기열에 추가되었는지와 추적을 시작하기 위해 다음에 할 일을 알 수 있는 간단한 요약을 확인할 수 있습니다.
+아니요. API 기반 마법사가 지원하는 데이터는 CSV로 직접 옮길 필요가 없어요.
 
-- 요약 카드에 가져오기 대기열에 추가된 **캠페인**, **전체 제휴사**, **과거 리퍼럴** 표시
-- 완료되면 페이지를 안전하게 떠날 수 있습니다—Hyperclass가 알림을 보냅니다
+### 가져올 때 커미션 상태는 어떻게 되나요?
 
-![가져오기 시작 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055518537/original/3-LA0jqTWQ77dBDUMdoYBSIoAesNWxOZcw.png?1759926481)
+각 커미션은 원래 상태(예: Pending(대기)/Approved(승인))를 그대로 유지해요. 지급 시기는 **환경설정**에서 정한 **Payout Terms**를 따라요.
 
----
+### 아직 지급하지 않은 수익도 가져올 수 있나요?
 
-## **자주 묻는 질문**
+네. **Pending Commissions**를 켜면 미지급 항목도 가져와서 **제휴 관리자**의 지급 흐름에 표시돼요.
 
-**Q: FirstPromoter에서 CSV 내보내기를 여전히 해야 하나요?**
+### 가져오면 연락처가 중복으로 생기나요?
 
-아니요. API 기반 마법사가 지원되는 데이터에 대한 수동 CSV 전송을 대체합니다.
+아니요. 이메일이 중복되면 확인 대상으로 표시돼요. **병합**을 선택하면 연락처 하나에 제휴 데이터가 붙고, **건너뛰기**를 선택하면 해당 항목은 가져오지 않아요.
 
-**Q: 가져오기 중에 커미션 상태는 어떻게 되나요?**
+### 가져오기를 여러 번 실행할 수 있나요?
 
-각 커미션은 원래 상태(예: 미지급/승인됨)를 유지합니다. 지급 일정은 환경 설정에서 설정한 **지급 조건**을 따릅니다.
+네. 마법사를 다시 실행해서 다른 캠페인이나 제휴 파트너를 더 가져올 수 있어요. 이미 가져온 항목은 중복되지 않아요.
 
-**Q: 미지급 수익을 포함할 수 있나요?**
+### 상품 기준 커미션도 가져올 수 있나요?
 
-네. **미지급 커미션**을 토글해서 미지급 항목을 가져오면 제휴 관리의 지급 워크플로우에 나타납니다.
+가져오는 과정에서는 지원하지 않아요. 가져온 뒤에 **제휴 관리자**에서 상품 기준 커미션 규칙을 직접 설정하세요.
 
-**Q: 가져오기에서 중복 연락처가 생성되나요?**
+### 가져온 뒤 트래킹 스크립트는 어디에 추가하나요?
 
-아니요. 중복 이메일은 검토를 위해 플래그가 지정됩니다. **병합**을 사용해서 제휴사 데이터가 첨부된 단일 연락처 레코드를 유지하거나 **건너뛰기**로 해당 항목을 제외하세요.
-
-**Q: 가져오기를 여러 번 실행할 수 있나요?**
-
-네. 추가 캠페인이나 제휴사를 가져오기 위해 마법사를 다시 실행할 수 있습니다. 이전에 가져온 항목은 중복되지 않습니다.
-
-**Q: 상품 기반 커미션이 지원되나요?**
-
-가져오기 자체에서는 지원되지 않습니다. 가져오기 후에 **제휴 관리**에서 직접 상품 기반 커미션 규칙을 구성하세요.
-
-**Q: 가져오기 후에 추적 스크립트를 어디에 추가하나요?**
-
-가져온 캠페인을 열고, 캠페인 목록의 **⋯** 메뉴를 사용해서 추적 스크립트를 찾아 캠페인을 활성화하기 전에 추가하세요.
-
----
-*원문 최종 수정: Wed, 14 Jan, 2026 at 2:03 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+가져온 캠페인을 열고, 캠페인 목록의 **⋯** 메뉴에서 트래킹 스크립트를 찾으세요. 캠페인을 활성화하기 전에 스크립트를 추가하면 돼요.

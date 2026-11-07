@@ -1,194 +1,219 @@
 ---
-원문: https://help.leadconnectorhq.com/support/solutions/articles/155000007630-workflow-action-create-update-multiple-rows-in-google-sheets
-번역일: 2026-04-23
-카테고리: workflow
+원문: /support/solutions/articles/155000002097-workflow-action-create-update-multiple-rows-in-google-sheets
+번역일: 2026-11-06
+카테고리: 07-워크플로우
 ---
 
-# 워크플로우 액션 - Google Sheets에서 여러 행 생성 및 업데이트
+# 워크플로우 액션 — Create & Update Multiple Rows in Google Sheets(Google Sheets 여러 행 만들기·업데이트)
 
-Google Sheets에서 여러 행 생성 및 업데이트 워크플로우 액션은 하나의 워크플로우 내에서 새로운 스프레드시트 항목을 생성하거나 기존 항목을 대량으로 업데이트할 수 있게 해줍니다. 이 문서는 이 기능의 역할, 각 액션 유형을 언제 사용해야 하는지, 그리고 Google Sheets에서 올바르게 설정하는 방법을 다룹니다.
+하나의 하이퍼클래스 워크플로우에서 Google Sheets에 새 행을 한꺼번에 추가하거나, 이미 있는 행을 한꺼번에 업데이트할 수 있어요. 이 문서에서는 이 액션이 하는 일, 만들기와 업데이트를 각각 언제 쓰는지, Google Sheets에서 올바르게 설정하는 방법을 안내해요.
 
-**목차**
+---
 
-- [Google Sheets에서 여러 행 생성 및 업데이트란 무엇인가요?](#What-is-Create-&-Update-Multiple-Rows-in-Google-Sheets?)
-- [Google Sheets 여러 행 생성 및 업데이트 액션의 주요 장점](#Key-benefits-of-Create-&-Update-Multiple-Rows-in-Google-Sheets-Action)
-- [사전 요구사항](#Prerequisites)
-- [여러 스프레드시트 행 생성 액션 사용법](#How-to-Use-the-Action-to-Create-Multiple-Spreadsheet-Row(s))
-- [여러 스프레드시트 행 업데이트 액션 사용법](#How-to-Use-the-Action-to-Update-Multiple-Spreadsheet-Row(s))
-- [자주 묻는 질문](#Frequently-asked-questions)
+## Create & Update Multiple Rows in Google Sheets 액션이란?
 
-## Google Sheets에서 여러 행 생성 및 업데이트란 무엇인가요?
+{% hint style="info" %}
+이 액션은 프리미엄 액션이에요. 실행할 때마다 추가 요금이 발생해요.
+{% endhint %}
 
-**참고:** 이는 **프리미엄 액션**입니다. 이 액션을 사용하면 **실행당 추가 요금**이 **발생**합니다.
+이 액션을 쓰면 자동화 한 번을 실행하는 동안 스프레드시트 행을 여러 개 만들거나 업데이트할 수 있어요. 반복되거나 묶음으로 생기는 데이터를 다룰 때 편해요. 예를 들어 항목을 여러 개 기록하거나, 구조화된 레코드를 동기화하거나, 스프레드시트 값을 여러 개 한 번에 바꿀 때 쓸 수 있어요.
 
-이 워크플로우 액션을 통해 하나의 자동화 흐름 중에 스프레드시트에서 여러 행을 생성하거나 업데이트할 수 있습니다. 여러 항목을 기록하거나, 그룹화된 레코드를 동기화하거나, 스프레드시트를 정리된 상태로 유지하면서 여러 값을 한 번에 업데이트해야 할 때 특히 유용합니다.
+이 기능은 Google Sheets 프리미엄 워크플로우 액션에 포함돼 있고, 한 행씩만 처리하는 액션보다 할 수 있는 일이 더 많아요. 데이터를 한 행씩 보내는 대신 여러 행을 한 번에 쓰거나 수정하도록 워크플로우를 설정할 수 있어요.
 
-이 기능은 Google Sheets 프리미엄 워크플로우 액션의 일부로, 단일 행 액션을 넘어서 여러 행을 더 효율적으로 작성하거나 수정할 수 있게 해줍니다.
+---
 
-### Google Sheets 여러 행 생성 및 업데이트 액션의 주요 장점
+## 이 액션의 장점
 
-- **빠른 데이터 기록**: 설정 단계를 반복하는 대신 하나의 액션으로 여러 스프레드시트 행을 생성할 수 있습니다.
+- 데이터를 더 빠르게 기록해요: 같은 설정을 여러 번 반복하지 않고, 워크플로우 액션 하나로 스프레드시트 행을 여러 개 만들 수 있어요.
+- 더 체계적으로 정리해요: 워크플로우가 묶음 데이터나 반복 데이터를 만들 때 관련 레코드를 Google Sheets에 모아 둘 수 있어요.
+- 수작업이 줄어요: 워크플로우가 실행된 뒤에 행을 직접 추가하거나 고치는 일이 줄어들어요.
+- 정확도가 높아져요: 스프레드시트 열을 워크플로우 데이터에 바로 매핑하므로 복사·붙여넣기 실수가 줄어요.
+- 업데이트가 더 유연해요: 레코드를 바꿔야 할 때 지정한 스프레드시트 범위 안의 여러 행 값을 업데이트할 수 있어요.
 
-- **더 나은 구성**: 워크플로우에서 그룹화되거나 반복된 데이터를 생성할 때 관련 레코드를 함께 유지할 수 있습니다.
+---
 
-- **수동 작업 감소**: 워크플로우 실행 후 수동으로 행을 추가하거나 편집할 필요가 줄어듭니다.
+## 사전 준비
 
-- **정확도 향상**: 스프레드시트 열을 워크플로우 데이터에 직접 매핑하여 복사/붙여넣기 오류를 줄입니다.
+필드를 매핑하기 전에 스프레드시트와 워크플로우를 먼저 준비해 두면 좋아요. 권한, 헤더, 시트 구조를 미리 확인하면 매핑이 깨지거나 잘못 업데이트되거나 데이터가 빠지는 문제를 막을 수 있어요.
 
-- **더 유연한 업데이트**: 레코드를 변경해야 할 때 정의된 스프레드시트 범위에서 여러 값을 업데이트할 수 있습니다.
+- 하이퍼클래스에 Google 계정이 연결되어 있는지 확인하세요.
+- 스프레드시트가 올바른 Google Drive에 있는지 확인하세요.
+- 워크시트의 첫 번째 행에 알아보기 쉬운 열 헤더를 넣으세요.
+- 액션에서 워크시트를 선택하기 전에 워크시트 탭 이름을 확인하세요.
+- 필요한 경우, 계정에서 Google Sheets 프리미엄 워크플로우 액션이 활성화되어 있는지 확인하세요.
+- 열을 추가하거나, 이름을 바꾸거나, 순서를 바꿨다면 액션에서 **Refresh Headers**(헤더 새로고침)를 눌러 헤더를 새로 불러오세요.
 
-## 사전 요구사항
+---
 
-필드를 매핑하기 전에 스프레드시트와 워크플로우 설정을 확인하여 매핑 오류, 잘못된 업데이트 또는 데이터 누락을 방지하세요.
+## Google Sheets에서 여러 행 만들기
 
-- Google 계정이 연결되어 있는지 확인하세요.
+**Create Multiple Spreadsheet Row(s)**(스프레드시트 여러 행 만들기)는 이미 있는 행을 바꾸지 않고 Google Sheets에 새 항목을 추가할 때 알맞아요. 반복되는 레코드를 쓰거나, 묶음 데이터를 저장하거나, 워크플로우를 한 번 실행하는 동안 여러 값을 스프레드시트로 보낼 때 쓸 수 있어요.
 
-- 스프레드시트가 올바른 Google Drive에 저장되어 있는지 확인하세요.
+1. **자동화 > 워크플로우**로 이동하세요.
 
-- 워크시트의 첫 번째 행에 명확한 열 헤더를 추가하세요.
+   ![자동화 > 워크플로우 메뉴](https://jumpshare.com/share/0JWEsWQU9NawnWRXArkh+/Screen+Shot+2026-04-06+at+21.20.01.png)
+2. 새 워크플로우를 만들거나 기존 워크플로우를 편집하세요.
 
-- 액션에서 선택하기 전에 워크시트 탭 이름을 검토하세요.
+   ![새 워크플로우 만들기 또는 기존 워크플로우 편집](https://jumpshare.com/share/BXEsCvFYK7i5WsZpbUNj+/Screen+Shot+2026-04-06+at+21.21.45.png)
+3. 상황에 맞는 트리거를 추가하세요. 예를 들면 **Contact Created**(연락처 생성), **Form Submitted**(폼 제출) 같은 트리거가 있어요.
 
-- 계정에 Google Sheets 프리미엄 워크플로우 액션이 활성화되어 있는지 확인하세요(필요한 경우).
+   ![트리거 추가 화면](https://jumpshare.com/share/u1UFwknt8WsBsvkvjHaE+/GIF+Recording+2026-04-08+at+20.15.07.gif)
+4. **+** 버튼을 눌러 액션을 추가하세요.
+5. **Google Sheets** 액션을 검색해서 선택하세요.
+6. **Connect your location's Google Account**(로케이션의 Google 계정을 연결하세요)를 눌러 Google 계정을 연결하세요.
 
-- 열이 추가, 이름 변경 또는 재정렬될 때마다 액션에서 헤더를 새로고침하세요.
+   ![로케이션의 Google 계정 연결](https://jumpshare.com/share/FZLxmIbexGB6cmaB4lRS+/GIF+Recording+2026-04-08+at+20.16.38.gif)
+7. Google 계정을 연결한 뒤 **Action** 드롭다운에서 **Create Multiple Spreadsheet Row(s)**를 선택하세요.
 
-## 여러 스프레드시트 행 생성 액션 사용법
+   ![Action 드롭다운에서 Create Multiple Spreadsheet Row(s) 선택](https://jumpshare.com/share/VKJM23utsNxLgvLCF5lt+/Screen+Shot+2026-04-08+at+20.24.33.png)
+8. 서브 계정에 연동된 Google 계정이 모두 드롭다운에 표시돼요. 그중 하나를 선택하세요.
+9. 스프레드시트가 있는 **Drive**를 선택하세요.
 
-여러 스프레드시트 행 생성은 워크플로우에서 Google Sheets에 새 항목을 추가해야 할 때 최적입니다(기존 행을 변경하는 대신). 이는 반복되는 레코드를 작성하거나, 그룹화된 데이터를 저장하거나, 하나의 워크플로우 실행 중에 여러 값을 스프레드시트로 보낼 때 유용합니다.
+   ![Drive 선택](https://jumpshare.com/share/2vicPz07nBCO9DeVN0Gt+/Screen+Shot+2026-04-08+at+20.32.09.png)
+10. Drive를 선택하면 다음 드롭다운에 그 Drive에 있는 스프레드시트 목록이 나타나요. 변경할 스프레드시트를 선택하고 워크시트도 선택하세요.
 
-- Automations(자동화) > Workflows(워크플로우)로 이동하세요.
+    ![스프레드시트와 워크시트 선택](https://jumpshare.com/share/JENuPFXLxh7AFgXgbu6T+/Screen+Shot+2026-04-08+at+20.33.53.png)
+11. 시트의 헤더를 바꿨다면 **Refresh Headers** 버튼을 눌러 시트의 최신 헤더 값을 불러오세요. 그러면 데이터가 올바른 열에 매핑되고, 워크플로우에도 시트의 최신 구성이 반영돼요.
 
-![](https://jumpshare.com/share/R6GO26PNEYR6PrjZgasb+/1.png)
+    ![Refresh Headers 버튼](https://jumpshare.com/share/BMPXz4FX5YgDdSrxq9po+/Screen+Shot+2026-04-08+at+20.38.37.png)
+12. 워크시트에서 **Start column**과 **End Column**을 선택하세요. 하이퍼클래스 워크플로우로 Google Sheets 문서에 데이터를 보낼 때 시트의 첫 번째 행은 자동으로 헤더 행으로 인식되고, 각 열은 그 행의 헤더 값을 이름으로 사용해요.
+13. 이 기능 덕분에 데이터 관리를 자동화하고, 워크플로우에서 다루는 데이터를 정확하게 유지하기 쉬워요.
+14. **Save Action**(액션 저장)을 누르세요.
 
-- **새 워크플로우를 생성**하거나 **기존 워크플로우를 편집**하세요.
+    ![Save Action 버튼](https://jumpshare.com/share/Ws0DiAH8zry7zNA6izw6+/GIF+Recording+2026-04-08+at+20.49.42.gif)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155068897112/original/hd3YE5OWBO6Bn75pAZ0GJUsv_H5auG0hEg.png?1775829007)
+### Create Multiple Spreadsheet Row(s)가 동작하는 방식
 
-- 관련 트리거를 추가하세요(예: Contact Created(연락처 생성), Form Submitted(폼 제출) 등).
+Create Multiple Spreadsheet Row(s)는 워크플로우 실행에서 데이터를 행 객체의 배열(목록)로 받을 때만 행을 여러 개 만들어요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155068896022/original/crJB_jwD3CqF6XDpCWO2CN-WXxk8jj_BNg.gif?1775828628)
+- 배열에 들어 있는 객체 하나가 스프레드시트 행 하나가 돼요.
+- 워크플로우 실행에 레코드 하나의 데이터만 있으면(예: 연락처 한 명이 워크플로우에 등록된 경우) 행이 하나만 쓰여요. 이 경우에는 한 행만 만드는 액션과 차이를 느끼기 어려울 수 있어요.
+- 서로 다른 시점에 워크플로우에 들어온 연락처를 자동으로 기다렸다가 묶어서 처리하지 않아요. 한 번의 워크플로우 실행 안에 있는 배열을 그대로 써요.
 
-- + 버튼을 클릭하여 액션을 추가하세요.
+예시 배열(행 3개 생성)
 
-- Google Sheets를 검색하고 선택하세요.
+```
+[
+  {
+    "Name": "Sam",
+    "Email": "sam@test.com",
+    "Status": "New"
+  },
+  {
+    "Name": "Arjun",
+    "Email": "arjun@example.com",
+    "Status": "In Progress"
+  },
+  {
+    "Name": "Meera",
+    "Email": "meera@example.com",
+    "Status": "Completed"
+  }
+]
+```
 
-- 로케이션의 Google 계정을 연결하세요.
+예시 2:
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155068896330/original/_owjn25xuetBlLuhA7nHPSmYSMG-Q4X4WQ.gif?1775828664)
+```
+[
+  { FirstName: "John", LastName: "Doe", Email: "john@email.com" },
+  { FirstName: "Jane", LastName: "Smith", Email: "jane@email.com" }
+]
+```
 
-- Action(액션) 드롭다운에서 Create Multiple Spreadsheet Row(s)(여러 스프레드시트 행 생성)을 선택하세요.
+### 액션에 여러 행을 전달하는 방법
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155068896435/original/II2MySM1eXOyrFhBo6jyoaS1lPVM46OKSQ.jpeg?1775828707)
+한 번의 워크플로우 실행으로 행을 여러 개 만들려면, 워크플로우가 행 객체의 배열로 시작하거나 배열을 만들어 내야 해요. 보통 다음과 같은 방법을 써요.
 
-- 사용할 연결된 Google 계정을 선택하세요.
+- 행 배열이 담긴 JSON 데이터를 보내는 **Inbound Webhook**(인바운드 웹훅) 트리거
+- 이전 단계에서 배열을 반환하고, 그 배열을 이 액션에 매핑하는 웹훅 기반 연동
 
-- 스프레드시트가 저장된 Drive를 선택하세요.
+{% hint style="info" %}
+이미 CRM에 있는 연락처 수천 명(예: 5,000명)을 시트에 쓰려고 연락처를 하나씩 워크플로우에 등록하면, 워크플로우가 연락처마다 따로 실행돼요. 이때는 자동으로 묶어서 처리하지 않아요.
+{% endhint %}
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155068896520/original/vxSG53T4CJvt2M1OHf8HFIUyP-Lsj9ufjQ.jpeg?1775828737)
+### 이럴 때 활용하세요
 
-- Spreadsheet(스프레드시트)와 Worksheet(워크시트)(탭)를 선택하세요.
+- 반복되는 워크플로우 결과를 스프레드시트에 기록할 때
+- 자동화 하나에서 나온 묶음 항목을 기록할 때
+- 추적이나 리포팅을 위해 서로 관련된 데이터를 여러 개 저장할 때
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155068896580/original/5VGRtM7ZjDAsmiv4mAf4kqUunt0_bE6KKA.jpeg?1775828752)
+---
 
-- (선택사항) Refresh Headers(헤더 새로고침)를 클릭하여 시트에서 최신 헤더 값을 가져와 매핑이 정확하게 유지되도록 하세요.
+## Google Sheets에서 여러 행 업데이트하기
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155068896625/original/FOTPc7I1F_Maxc-O5obCRaOKLMHGYFKBzw.jpeg?1775828772)
+**Update Multiple Spreadsheet Row(s)**(스프레드시트 여러 행 업데이트)는 스프레드시트에 행이 이미 있고, 워크플로우가 선택한 행 범위의 값을 바꿔야 할 때 유용해요. 중복 항목을 만들지 않고 레코드를 정확하게 유지할 수 있어요. 기존 스프레드시트 데이터를 계속 최신 상태로 관리해야 할 때도 도움이 돼요.
 
-- Starting Column(시작 열)과 Ending Column(종료 열)을 선택하여 매핑에 사용할 수 있는 열 범위를 정의하세요. 첫 번째 행은 헤더 행으로 취급되며 열은 해당 헤더 값을 사용하여 라벨이 지정됩니다.
+1. **자동화 > 워크플로우**로 이동하세요.
 
-- Save Action(액션 저장)을 클릭하세요.
+   ![자동화 > 워크플로우 메뉴](https://jumpshare.com/share/0JWEsWQU9NawnWRXArkh+/Screen+Shot+2026-04-06+at+21.20.01.png)
+2. 새 워크플로우를 만들거나 기존 워크플로우를 편집하세요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155068896749/original/XKUHEzrj0pz_6vDdIfR2UVab_vVaQWEPwA.gif?1775828809)
+   ![새 워크플로우 만들기 또는 기존 워크플로우 편집](https://jumpshare.com/share/BXEsCvFYK7i5WsZpbUNj+/Screen+Shot+2026-04-06+at+21.21.45.png)
+3. 상황에 맞는 트리거를 추가하세요. 예를 들면 **Contact Created**(연락처 생성), **Form Submitted**(폼 제출) 같은 트리거가 있어요.
 
-### 최적 사용 사례
+   ![트리거 추가 화면](https://jumpshare.com/share/u1UFwknt8WsBsvkvjHaE+/GIF+Recording+2026-04-08+at+20.15.07.gif)
+4. **+** 버튼을 눌러 액션을 추가하세요.
+5. **Google Sheets** 액션을 검색해서 선택하세요.
+6. **Connect your location's Google Account**를 눌러 Google 계정을 연결하세요.
 
-- 반복되는 워크플로우 출력을 스프레드시트에 기록하기
-- 하나의 자동화에서 그룹화된 항목 기록하기
-- 추적이나 리포팅을 위한 여러 관련 데이터 포인트 저장하기
+   ![로케이션의 Google 계정 연결](https://jumpshare.com/share/FZLxmIbexGB6cmaB4lRS+/GIF+Recording+2026-04-08+at+20.16.38.gif)
+7. Google 계정을 연결한 뒤 **Action** 드롭다운에서 **Update Multiple Spreadsheet Row(s)**를 선택하세요.
 
-## 여러 스프레드시트 행 업데이트 액션 사용법
+   ![Action 드롭다운에서 Update Multiple Spreadsheet Row(s) 선택](https://jumpshare.com/share/AiPRH2CBOeXcZIS7MMZQ+/Screen+Shot+2026-04-08+at+20.59.28.png)
+8. 서브 계정에 연동된 Google 계정이 모두 드롭다운에 표시돼요. 그중 하나를 선택하세요.
+9. 스프레드시트가 있는 **Drive**를 선택하세요.
 
-여러 스프레드시트 행 업데이트는 스프레드시트 행이 이미 존재하고 워크플로우에서 선택된 행 범위 내의 값을 수정해야 할 때 유용합니다. 이는 중복 항목을 생성하지 않고도 정확한 레코드를 유지하는 데 도움이 됩니다.
+   ![Drive 선택](https://jumpshare.com/share/y3riMM76YT9ad9YH5t0J+/Screen+Shot+2026-04-08+at+21.08.50.png)
+10. Drive를 선택하면 다음 드롭다운에 그 Drive에 있는 스프레드시트 목록이 나타나요. 변경할 스프레드시트를 선택하고 워크시트도 선택하세요.
 
-- Automations(자동화) > Workflows(워크플로우)로 이동하세요.
+    ![스프레드시트와 워크시트 선택](https://jumpshare.com/share/xI9dyp1lqWRJ8Kc1nvHm+/Screen+Shot+2026-04-08+at+21.13.37.png)
+11. 시트 업데이트를 시작할 행 번호를 입력하세요.
+12. 워크시트에서 **Start column**과 **End Column**을 선택하세요. 하이퍼클래스 워크플로우로 Google Sheets 문서에 데이터를 보낼 때 시트의 첫 번째 행은 자동으로 헤더 행으로 인식되고, 각 열은 그 행의 헤더 값을 이름으로 사용해요.
+13. 시트의 헤더를 바꿨다면 **Refresh Headers** 버튼을 눌러 시트의 최신 헤더 값을 불러오세요. 그러면 데이터가 올바른 열에 매핑되고, 워크플로우에도 시트의 최신 구성이 반영돼요.
+14. 이 기능 덕분에 데이터 관리를 자동화하고, 워크플로우에서 다루는 데이터를 정확하게 유지하기 쉬워요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155068897125/original/LS2amw39eb0GpQ3STKTx2uJLnlOR4GOwQA.jpeg?1775829032)
+    ![열 범위와 헤더 설정 화면](https://jumpshare.com/share/C8GCswkgzYdlhgLw20lI+/Screen+Shot+2026-04-08+at+21.19.54.png)
+15. **Save Action**을 누르세요.
 
-- **새 워크플로우를 생성**하거나 **기존 워크플로우를 편집**하세요.
+    ![Save Action 버튼](https://jumpshare.com/share/0m3kf2wvKYTK7AAbJSDw+/Screen+Shot+2026-04-08+at+21.22.20.png)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155068897168/original/S9jOHUIHdgrLxjDHTURGzTnL5iRZb0jsDQ.jpeg?1775829062)
+### 이럴 때 업데이트를 쓰세요
 
-- 관련 트리거를 추가하세요(예: Contact Created(연락처 생성), Form Submitted(폼 제출) 등).
+- 스프레드시트 행이 이미 있을 때
+- 현재 레코드의 값을 바꾸거나 최신 값으로 갱신해야 할 때
+- 같은 데이터 세트에 중복 행이 추가되지 않게 하고 싶을 때
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155068897417/original/0whQIk0cebK76SAogoDsKFb8_IZOETUWPw.gif?1775829281)
-
-- + 버튼을 클릭하여 액션을 추가하세요.
-
-- Google Sheets를 검색하고 선택하세요.
-
-- 로케이션의 Google 계정을 연결하세요.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155068897669/original/6eQPOBJRg5UD-kYjVFpPg59259j7SmmnDA.gif?1775829417)
-
-- Action(액션) 드롭다운에서 Update Multiple Spreadsheet Row(s)(여러 스프레드시트 행 업데이트)를 선택하세요.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155068897794/original/TghRtccOKnMSo5B9e4DjGNhiHVBohQWM3g.jpeg?1775829496)
-
-- 사용할 연결된 Google 계정을 선택하세요.
-
-- 스프레드시트가 저장된 Drive를 선택하세요.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155068898122/original/g4bTe-hCV-Rc9MtEMS3o6cb4A63pa1RJcg.jpeg?1775829599)
-
-- Spreadsheet(스프레드시트)와 Worksheet(워크시트)(탭)를 선택하세요.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155068898203/original/9eDiZIKq_sq4t9Qu5SQxMs0OoYNPw-aCyg.jpeg?1775829629)
-
-- 업데이트를 시작할 행 번호를 입력하세요.
-
-- Starting Column(시작 열)과 Ending Column(종료 열)을 선택하여 매핑에 사용할 수 있는 열 범위를 정의하세요(헤더는 첫 번째 행에서 가져옵니다).
-
-- (선택사항) 최근에 열 이름이나 순서를 변경한 경우 Refresh Headers(헤더 새로고침)를 클릭하세요.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155068898236/original/GKDavN-zl51Rjp_B4NvJuBLf8n7PeD9szw.jpeg?1775829647)
-
-- Save Action(액션 저장)을 클릭하세요.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155068898279/original/qbEowtRa4Lwtq2BPgKFCg6mycHYPFGqHEg.jpeg?1775829667)
-
-### 언제 이 옵션을 사용할까요?
-
-- 스프레드시트 행이 이미 존재할 때
-- 기존 레코드의 값을 교체하거나 새로고침해야 할 때
-- 같은 데이터 세트에 대한 중복 행 추가를 피하고 싶을 때
+---
 
 ## 자주 묻는 질문
 
-**Q: 여러 스프레드시트 행 생성과 여러 스프레드시트 행 업데이트의 차이점이 무엇인가요?**
-여러 스프레드시트 행 생성은 새로운 스프레드시트 항목을 추가합니다. 여러 스프레드시트 행 업데이트는 이미 존재하는 행의 값을 변경합니다.
+### Create Multiple Spreadsheet Row(s)와 Update Multiple Spreadsheet Row(s)는 뭐가 다른가요?
+Create Multiple Spreadsheet Row(s)는 스프레드시트에 새 항목을 추가해요. Update Multiple Spreadsheet Row(s)는 이미 있는 행의 값을 바꿔요.
 
-**Q: Google Sheet에 헤더가 필요한가요?**
-네. 명확한 헤더는 시스템이 매핑에 사용할 수 있는 열을 인식하고 설정 오류를 줄이는 데 도움이 됩니다.
+### Create Multiple Spreadsheet Row(s)는 한 행만 만드는 액션과 어떻게 다른가요?
+Create Multiple Spreadsheet Row(s)는 워크플로우를 한 번 실행하는 동안 행을 여러 개 쓸 수 있어요. 단, 행 객체의 배열을 전달할 때만 가능해요. 워크플로우 실행에 레코드 하나의 데이터만 있으면 행도 하나만 만들어져요.
 
-**Q: 헤더를 새로고침해야 하는 이유가 무엇인가요?**
-헤더를 새로고침하면 스프레드시트 변경 후 워크플로우 액션 내에서 사용할 수 있는 열 이름이 업데이트됩니다.
+### 워크플로우에 등록된 연락처를 이 액션이 자동으로 묶어서 처리하나요?
+아니요. 워크플로우는 여러 연락처를 자동으로 모아서 한 번에 보내지 않아요. 한 번의 요청으로 행을 여러 개 쓰려면 워크플로우 실행 시점에 이미 묶음 배열이 있어야 해요. 보통 **Inbound Webhook**으로 보내요.
 
-**Q: 잘못된 워크시트 탭을 선택하면 어떻게 되나요?**
-워크플로우가 잘못된 위치에 데이터를 작성하거나 예상된 열을 올바르게 매핑하지 못할 수 있습니다.
+### Google 시트에 헤더가 꼭 있어야 하나요?
+네. 알아보기 쉬운 헤더가 있으면 하이퍼클래스가 매핑할 수 있는 열을 인식하고, 설정 오류도 줄어요.
 
-**Q: 어떤 열을 사용할지 제한할 수 있나요?**
-네. Starting Column(시작 열)과 Ending Column(종료 열) 필드로 매핑에 사용할 수 있는 열 범위를 정의할 수 있습니다.
+### 헤더를 새로고침해야 하는 이유는 뭔가요?
+스프레드시트를 수정한 뒤 **Refresh Headers**를 누르면 워크플로우 액션 안의 열 이름 목록이 최신 상태로 바뀌어요.
 
-**Q: 표준 행 액션 대신 여러 행 액션을 언제 사용해야 하나요?**
-워크플로우에서 같은 프로세스의 일부로 여러 스프레드시트 행을 생성하거나 업데이트해야 할 때 여러 행 액션을 사용하세요.
+### 워크시트 탭을 잘못 선택하면 어떻게 되나요?
+데이터가 엉뚱한 위치에 쓰이거나, 원하는 열이 제대로 매핑되지 않을 수 있어요.
 
-**Q: 중복을 생성하지 않고 기존 행을 업데이트할 수 있나요?**
-네. 대상 행이 이미 존재하고 값만 변경하면 되는 경우 여러 스프레드시트 행 업데이트를 사용하세요.
+### 사용할 열을 제한할 수 있나요?
+네. **Starting Column**과 **Ending Column** 필드로 매핑에 쓸 수 있는 열의 범위를 정할 수 있어요.
 
-**Q: 새 열이 워크플로우 액션에 표시되지 않는 이유가 무엇인가요?**
-스프레드시트 열을 추가하거나 이름을 변경한 후 헤더 새로고침을 클릭하여 액션이 최신 시트 구조를 가져오도록 하세요.
+### 일반 행 액션 대신 여러 행 액션은 언제 쓰나요?
+같은 작업 안에서 스프레드시트 행을 여러 개 만들거나 업데이트해야 할 때 쓰세요.
 
----
-*원문 최종 수정: Fri, 10 Apr, 2026 at  9:08 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### 중복 행을 만들지 않고 기존 행을 업데이트할 수 있나요?
+네. 대상 행이 이미 있고 값만 바꾸면 될 때 Update Multiple Spreadsheet Row(s)를 사용하세요.
+
+### 새로 추가한 열이 워크플로우 액션에 안 보여요.
+액션이 이전 시트 구조를 그대로 쓰고 있을 수 있어요. 스프레드시트에 열을 추가하거나 이름을 바꾼 뒤에는 **Refresh Headers**를 누르세요.

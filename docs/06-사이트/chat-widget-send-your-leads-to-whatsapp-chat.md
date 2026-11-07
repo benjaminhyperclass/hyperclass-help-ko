@@ -1,40 +1,153 @@
 ---
-번역일: 2026-04-06T00:00:00.000Z
+원문: /support/solutions/articles/155000002269-chat-widget-send-your-leads-to-whatsapp-chat
+번역일: 2026-11-06
 카테고리: 06-사이트
 ---
 
-# 채팅 위젯 - 리드를 왓츠앱 채팅으로 연결하기
+# 채팅 위젯으로 리드를 WhatsApp 대화로 연결하기
 
-**참고사항**: 이 기능을 사용하려면 왓츠앱이 활성화되어 있고 전화번호가 등록되어 있어야 합니다. `Settings(설정) → WhatsApp(왓츠앱)` 메뉴에서 설정할 수 있습니다.
+웹사이트 방문자가 사이트에서 바로 WhatsApp으로 비즈니스에 대화를 걸 수 있게 해 주는 WhatsApp 채팅 위젯의 설정과 설치 방법을 안내해요. 방문자가 보낸 메시지는 하이퍼클래스 **대화**에서 이어서 관리할 수 있어요.
 
-## 왓츠앱 채팅 위젯 활성화 방법
+]()
 
-1. `Sites(사이트) → Chat Widget(채팅 위젯)`으로 이동합니다.
-2. 채팅 위젯에서 Chat type(채팅 유형)으로 이동하여 WhatsApp Chat(왓츠앱 채팅) 옵션을 선택합니다.
+## WhatsApp 채팅 위젯이란?
 
-![왓츠앱 채팅 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035806617/original/4hkhHLMmq2RG6G-LZ6OWev2otx3J-WkavA.jpeg?1730391118)
+WhatsApp 채팅 위젯을 쓰면 방문자가 웹사이트에서 바로 WhatsApp 대화를 시작할 수 있어요. 리드가 웹사이트에서 WhatsApp으로 쉽게 넘어오고, 대화는 하이퍼클래스에 설정된 WhatsApp 채널과 계속 연결돼요.
 
-![채팅 유형 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035806628/original/cmYN5LaUTB0JQy1iKHnrBVPlRy2DdnPfpg.png?1730391126)
+방문자가 WhatsApp 메시지를 보내면 하이퍼클래스 **대화**에서 그 대화를 관리할 수 있어요.
 
-참고 - 왓츠앱 번호가 설정되지 않은 경우, 왓츠앱 번호 추가를 위한 설정 페이지로 이동됩니다. [왓츠앱 번호 추가 방법은?](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/19-%EC%97%90%EC%9D%B4%EC%A0%84%EC%8B%9C-%EB%B7%B0/%EA%B8%B0%ED%83%80/whatsapp-overview-sub-account-set-up-and-best-practices.md)
+---
 
-3. 왓츠앱 채팅 옵션을 선택한 후, 위젯 창에서 텍스트, 색상, 브랜딩, 이메일/전화번호 폼을 커스터마이징할 수 있습니다. 왓츠앱 채팅 유형으로 설정하면 기본적으로 왓츠앱의 초록색 계열 색상이 사용되지만, 사용자가 원하는 색상으로 변경할 수 있습니다.
+## 사전 준비
 
-![위젯 커스터마이징](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035806841/original/QxF7yZxfaKSNme5dCrvNjia7EkGylNyrPQ.png?1730391349)
+WhatsApp 채팅 위젯을 쓰려면 서브 계정에 WhatsApp 번호가 설정되고 연결되어 있어야 해요. 위젯은 연결된 번호를 방문자 대화의 연결 대상으로 사용해요.
 
-4. 설정이 완료되면, 마지막으로 왓츠앱 번호를 선택합니다. 이 번호로 고객이 채팅을 시작했을 때 메시지가 전달됩니다.
+{% hint style="info" %}
+WhatsApp 채팅 위젯을 사용하기 전에 서브 계정에 WhatsApp 번호를 설정하고 연결해야 해요.
+{% endhint %}
 
-![왓츠앱 번호 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155024655030/original/NtZbeNySAZAkKNIot2KiyiJwpbhw6fRNSg.png?1713404519)
+---
 
-5. 설정이 모두 완료되면 "Save(저장)" 버튼을 클릭합니다.
+## WhatsApp 채팅 위젯 설정하기
 
-## 작동 방식
+WhatsApp 채팅 위젯은 하이퍼클래스의 채팅 위젯 설정에서 만들 수 있어요. 사이트에 설치하기 전에 위젯의 모양, 방문자에게 보이는 입력 항목, 연결할 번호, 메시지 화면을 원하는 대로 바꿀 수 있어요.
 
-1. 랜딩 페이지(외부 서비스)의 헤더 코드에 코드를 추가하거나, 퍼널/웹사이트 설정에서 토글을 활성화하여 사용합니다.
-2. 채팅 위젯이 삽입되면 브라우저 창에서 페이지가 로드될 때 랜딩 페이지에 표시됩니다.
-3. 연락처가 페이지를 방문하여 폼을 작성하고 제출하면, 위젯 창에서 선택한 번호로 메시지와 함께 왓츠앱 웹 앱으로 연결됩니다.
-4. 이후 대화(Conversations) 화면에서 알림을 받게 되며, 연락처와 메시지를 주고받을 수 있습니다.
+1. **사이트 > 채팅 위젯**으로 이동하세요.
+2. 새 채팅 위젯을 만들거나 기존 위젯을 여세요.
 
-***
+   ![채팅 위젯 목록 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081308084/original/0FNUf5zZNTmJISESxXu9qmpvMgpXmLfQZg.png?1789740263)
+3. 채팅 유형으로 **WhatsApp Chat**(WhatsApp 채팅)을 선택하세요.
 
-_원문 최종 수정: Thu, 31 Oct, 2024 at 11:15 AM_ _Hyperclass 사용 가이드 — hyperclass.ai_
+   ![채팅 유형에서 WhatsApp 채팅 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081308141/original/M_LRQnxbZt2ez6FjPCChjP5ZpjTBlKfD8w.png?1789740287)
+4. **WhatsApp 번호 선택**에서 방문자가 연락할 번호를 고르세요.
+5. 위젯의 모양과 방문자에게 보이는 화면을 설정하세요.
+
+   ![위젯 모양과 방문자 화면 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081308285/original/g-1baoVmfidbqud4AbVQGmzeossyd2fzVg.png?1789740379)
+6. **변경사항 저장**을 클릭하세요.
+
+---
+
+## 채팅 창 꾸미기
+
+**채팅 창**은 방문자가 WhatsApp으로 넘어가기 전에 보게 되는 화면이에요. 브랜드에 맞게 꾸미고, 대화를 시작하기 전에 필요한 정보를 받을 수 있어요.
+
+다음과 같은 항목을 설정할 수 있어요.
+
+- 제목과 환영 메시지
+- 색상과 브랜딩
+- 방문자에게 받을 수 있는 정보 입력 항목
+- **Message**(메시지) 필드
+- 그 밖에 채팅 위젯에서 설정할 수 있는 표시 옵션
+
+위젯 설정에 따라 사용할 수 있는 항목은 달라질 수 있어요.
+
+### 미리 입력된 메시지
+
+WhatsApp 대화를 시작하는 방문자에게 **채팅 창**에서 추천 메시지를 보여 줄 수 있어요. 방문자는 이 메시지를 그대로 보내거나, 수정한 다음 WhatsApp으로 넘어갈 수 있어요.
+
+예를 들어 이런 메시지를 미리 입력해 둘 수 있어요.
+
+> 안녕하세요, 서비스에 대해 더 알고 싶어서 연락드려요.
+
+---
+
+## WhatsApp 채팅 위젯의 작동 방식
+
+위젯은 웹사이트에서 WhatsApp으로 방문자를 간단하게 이어 줘요.
+
+일반적인 흐름은 다음과 같아요.
+
+1. 방문자가 웹사이트에서 채팅 위젯을 열어요.
+2. 방문자가 해당하는 입력 항목을 채워요.
+3. 방문자가 위젯에서 다음 단계로 진행해요.
+4. 방문자가 **WhatsApp**으로 이동해서, 선택한 WhatsApp 번호와 대화를 시작해요.
+5. 방문자가 WhatsApp 메시지를 보내요.
+6. 이후 이 대화는 하이퍼클래스 **대화**에서 연결된 WhatsApp 채널로 관리할 수 있어요.
+
+{% hint style="info" %}
+WhatsApp이 열리는 방식은 방문자의 기기, 브라우저, 설치된 앱에 따라 달라질 수 있어요. 모든 방문자가 WhatsApp Web이나 모바일 앱을 열 거라고 단정하지 마세요.
+{% endhint %}
+
+---
+
+## WhatsApp 채팅 위젯 설치하기
+
+위젯 설정을 마쳤다면, 웹사이트가 어디에 있는지에 따라 설치해 주세요.
+
+### 하이퍼클래스 웹사이트와 퍼널
+
+하이퍼클래스에서 운영하는 웹사이트나 퍼널에 설치하는 방법이에요.
+
+1. 해당 웹사이트나 퍼널을 여세요.
+2. 해당 사이트의 **설정**으로 이동하세요.
+3. 만들어 둔 채팅 위젯을 선택하거나 켜세요.
+4. **저장 및 게시**를 클릭하세요.
+
+### 외부 웹사이트
+
+하이퍼클래스 밖에서 운영하는 웹사이트에 설치하는 방법이에요.
+
+1. 채팅 위젯 설치 옵션을 여세요.
+2. 생성된 임베드 코드를 복사하세요.
+3. 외부 웹사이트의 알맞은 위치에 코드를 붙여 넣으세요.
+4. 웹사이트를 게시하세요.
+5. 실제 페이지에서 위젯이 잘 작동하는지 테스트하세요.
+
+---
+
+## WhatsApp 채팅 위젯 문제 해결
+
+채팅 유형에 WhatsApp이 보이지 않거나 연결할 번호가 없다면, 먼저 서브 계정에 WhatsApp 번호가 제대로 설정되고 연결되어 있는지 확인하세요.
+
+다음 사항도 함께 확인해 보세요.
+
+- 위젯에서 올바른 WhatsApp 번호를 선택했는지
+- 위젯을 저장했는지
+- 위젯을 의도한 웹사이트, 퍼널 또는 외부 사이트에 설치했는지
+- 설치한 뒤에 사이트를 게시했는지
+- 방문자가 다음 단계로 넘어가기 전에 해당하는 위젯 입력 항목을 채웠는지
+- 방문자가 WhatsApp에서 메시지를 실제로 보냈는지. 메시지를 보내야 하이퍼클래스 **대화**에 대화가 나타나요.
+
+---
+
+## 자주 묻는 질문
+
+### WhatsApp 채팅 위젯을 쓰려면 연결된 WhatsApp 번호가 꼭 필요한가요?
+
+네. WhatsApp 채팅을 위젯 유형으로 쓰려면 서브 계정에 WhatsApp 번호가 설정되고 연결되어 있어야 해요.
+
+### 위젯을 누르면 항상 WhatsApp Web이 열리나요?
+
+아니요. WhatsApp이 열리는 방식은 방문자의 기기, 브라우저, 설치된 앱에 따라 달라질 수 있어요. 위젯은 방문자를 WhatsApp으로 보내 줄 뿐, WhatsApp Web이나 모바일 앱 중 특정한 방식으로 열리게 하지는 않아요.
+
+### 하이퍼클래스 대화에는 언제 대화가 나타나나요?
+
+방문자가 WhatsApp 메시지를 보내야 해요. 연결된 WhatsApp 채널로 메시지가 전송되면 하이퍼클래스 **대화**에서 그 대화를 관리할 수 있어요.
+
+### 방문자에게 미리 입력된 WhatsApp 메시지를 보여 줄 수 있나요?
+
+네. **채팅 창**의 **Message** 필드에 추천 메시지를 설정할 수 있어요. 방문자는 이 메시지를 그대로 보내거나, 수정한 다음 WhatsApp으로 넘어갈 수 있어요.
+
+### 외부 웹사이트에서도 WhatsApp 채팅 위젯을 쓸 수 있나요?
+
+네. 생성된 채팅 위젯 임베드 코드를 외부 웹사이트의 알맞은 위치에 붙여 넣으면 돼요.

@@ -1,54 +1,45 @@
 ---
-
-번역일: 2026-04-06
+원문: /support/solutions/articles/155000001679-steps-for-agency-a-to-share-templates-effectively-with-agency-b-
+번역일: 2026-11-07
 카테고리: 10-마케팅
 ---
 
-# 에이전시 A가 에이전시 B와 템플릿을 효과적으로 공유하는 방법
+# 에이전시 간 템플릿 공유하기
 
-### 커뮤니티 추가 튜토리얼
-[https://youtu.be/zOm6QzaCGvY](https://youtu.be/zOm6QzaCGvY)
+**템플릿 라이브러리**가 업그레이드되어, 에이전시끼리 템플릿을 쉽게 공유할 수 있어요. 이 문서에서는 에이전시 A가 공유 링크를 만드는 방법과 에이전시 B가 그 템플릿을 가져오는 방법을 안내해요.
 
-[https://youtu.be/xYsowxyBtsE](https://youtu.be/xYsowxyBtsE)
+커뮤니티에서 올린 다른 튜토리얼도 볼 수 있어요.
 
-[https://youtu.be/jYM-RkapZdA](https://youtu.be/jYM-RkapZdA)
+## 에이전시 A가 에이전시 B에게 템플릿을 공유하려면
 
-### 에이전시 간 템플릿 공유가 가능한 새로운 템플릿 라이브러리 업그레이드를 발표합니다! 이 개선 사항은 협업을 간소화하고, 창의성을 촉진하며, 사용자 커뮤니티 내에서 모범 사례 공유를 활성화하기 위해 설계되었습니다.
+1. 관리자 화면에서 **템플릿 라이브러리**로 이동하세요.
+2. 공유할 템플릿을 선택하세요.
+3. **공유**를 클릭해 선택한 템플릿 전용 링크를 만드세요.
 
-## 에이전시 A가 에이전시 B에게 템플릿을 공유하는 방법
+   ![공유 링크를 만드는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155017440347/original/nsMlmoTQuheXog5ochC6r7QagkJffGviZw.png?1704982556)
 
-![에이전시 A 템플릿 공유 과정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155021191314/original/8ScVuXcjLU55sDzmyuXx9ljkKYD55iVvXw.png?1708535895)
+4. 필요에 맞게 접근 설정을 조정하세요.
 
-1. **Template Library(템플릿 라이브러리) 접속**: Admin(관리자) 화면에서 Template Library로 이동하세요.
-2. **공유할 템플릿 선택**: 원하는 템플릿을 선택합니다.
-3. **공유 링크 생성**: "Share(공유)" 옵션을 클릭하여 선택한 템플릿과 연결된 고유 링크를 생성합니다.
+   ![접근 설정을 조정하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155017440455/original/RbqtqD2mNbCj10IIOVHwdOvYa0yesK4OZA.png?1704982607)
 
-![공유 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155017440347/original/nsMlmoTQuheXog5ochC6r7QagkJffGviZw.png?1704982556)
+5. 만들어진 링크를 복사해 이메일, 메신저 등 원하는 방법으로 에이전시 B에게 안전하게 전달하세요.
 
-4. **접근 권한 설정**: 필요에 따라 접근 권한을 조정합니다.
+## 에이전시 B가 템플릿을 가져오려면
 
-![접근 설정 상세](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155017440455/original/RbqtqD2mNbCj10IIOVHwdOvYa0yesK4OZA.png?1704982607)
+1. 에이전시 A가 보낸 공유 링크를 받으세요.
+2. 링크의 URL로 바로 들어가 템플릿 가져오기를 수락하세요.
+3. **템플릿 가져오기**를 클릭하면 내 라이브러리에 템플릿이 추가돼요.
 
-5. **링크 공유**: 생성된 링크를 복사하여 이메일, 메시지 또는 원하는 채널을 통해 에이전시 B에게 안전하게 공유합니다.
+   ![템플릿 가져오기 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155017443781/original/lsX3QuHbK4hY-8LcRnwmq4TjReRPdjLAlQ.png?1704983429)
 
-## 에이전시 B가 템플릿을 가져오는 방법
+{% hint style="warning" %}
+**보안 안내** ![잠금 해제 아이콘](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155021191315/original/n0ZOWu8CBRrZE1w3exVpyw9oFUXqWB-Fuw.png?1708535895)
 
-![에이전시 B 템플릿 가져오기 과정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155021191313/original/9mitUtOn7hBY_opltoJKeeTCrkW8wdfyMA.png?1708535895)
+템플릿을 안전하게 지키려면 **공유**에서 접근 설정을 업데이트하세요. 링크에 접근할 수 있는 사람을 직접 관리할 수 있도록, 링크를 공유할 때 주의하세요.
+{% endhint %}
 
-1. **공유 링크 수신**: 에이전시 B가 공유된 링크를 받습니다.
-2. **직접 가져오기**: URL에 직접 접속하여 템플릿 가져오기를 승인합니다.
-3. **Import Template(템플릿 가져오기)** 버튼을 클릭하여 내 라이브러리에 추가합니다.
+{% hint style="warning" %}
+**중요**
 
-![템플릿 가져오기 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155017443781/original/lsX3QuHbK4hY-8LcRnwmq4TjReRPdjLAlQ.png?1704983429)
-
-## 보안 주의사항
-
-![보안 설정 알림](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155021191315/original/n0ZOWu8CBRrZE1w3exVpyw9oFUXqWB-Fuw.png?1708535895)
-
-템플릿 보안을 유지하려면 Share(공유) 옵션에서 접근 설정을 업데이트해 주세요. 누가 접근할 수 있는지 제어하기 위해 링크를 공유할 때 주의를 기울이세요.
-
-**중요**: 공유 링크 생성은 에이전시 관리자만 가능합니다.
-
----
-*원문 최종 수정: Wed, 21 Feb, 2024 at 11:19 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+공유 링크는 에이전시 관리자만 만들 수 있어요.
+{% endhint %}

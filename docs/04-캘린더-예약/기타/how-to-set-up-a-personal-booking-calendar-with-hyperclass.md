@@ -1,43 +1,34 @@
 ---
-
-번역일: 2026-04-09
-카테고리: 99-리커버리
+원문: /support/solutions/articles/155000005153-how-to-set-up-a-personal-booking-calendar-with-highlevel
+번역일: 2026-11-07
+카테고리: 04-캘린더-예약
 ---
 
-# 개인 예약 캘린더 설정하는 방법
+# 개인 예약 캘린더 설정하기
 
-**목차**
+1:1 예약을 받을 때 쓰는 **Personal Booking**(개인 예약) 캘린더 유형을 소개해요. 여러 사용자 없이 나 혼자 예약을 받고 싶을 때 이 유형으로 캘린더를 만들면 돼요.
 
-- [새로운 기능이란?](#새로운-기능이란)
-- [사용 방법](#사용-방법)
-- [참고사항](#참고사항)
+## 새로 추가된 기능
 
-## **새로운 기능이란?**
+1:1 예약을 받으려는 사용자 중에는 **Round Robin**(라운드 로빈) 유형이 여러 사용자용처럼 보여서 선택을 망설이는 분이 많았어요. 그래서 **Event Calendar**(이벤트 캘린더)를 쓰는 경우도 많았는데, 이 유형은 오프라인 행사용이라 Zoom이나 Google Meet를 지원하지 않아요.
 
-1:1 예약을 만들려는 사용자들은 라운드 로빈(Round Robin) 옵션을 망설여했습니다. 이 기능이 여러 사용자를 위한 것처럼 보였기 때문입니다. 그 결과 많은 분들이 이벤트 캘린더(Event Calendar)를 사용했는데, 이는 실제 오프라인 이벤트용이며 Zoom이나 Google Meet을 지원하지 않는다는 점을 모르고 계셨습니다.
+{% hint style="info" %}
+**Event Calendar**를 고민 중이라면 캘린더를 만들거나 편집하는 화면에서 **This calendar type has key differences**(이 캘린더 유형에는 주요 차이점이 있어요) 안내를 먼저 확인해 보세요. 진행하기 전에 제한 사항을 알 수 있어요.
+{% endhint %}
 
-팁: 이벤트 캘린더를 고려 중이시라면, 생성/편집 화면의 새로운 설정 도우미("이 캘린더 유형은 주요 차이점이 있습니다")를 확인하여 진행 전에 제한사항을 이해해보세요.
+이런 혼란을 줄이고 고객지원 문의를 줄이기 위해, 1:1 캘린더 유형을 제공하는 다른 서비스와 같은 수준으로 맞추고자 **Personal Booking**을 새로 추가했어요. 여러 사용자를 설정하는 복잡함 없이 개인 1:1 예약을 만들 수 있어요.
 
-이러한 혼란을 해결하고 지원 티켓을 줄이며, 1:1 캘린더 유형을 제공하는 경쟁업체와 동등한 수준을 달성하기 위해 개인 예약 캘린더(Personal Booking Calendar)를 도입했습니다. 이 기능을 통해 복잡한 다중 사용자 설정 없이도 개인 1:1 예약을 만들 수 있습니다.
+## 사용 방법
 
-## **사용 방법**
+1. **캘린더 설정**으로 이동하세요.
+2. **Create Calendar**(캘린더 만들기)를 클릭하세요.
+3. **Personal Booking**(개인 예약)을 선택하고, 원하는 대로 캘린더를 설정하세요.
 
-- 캘린더 설정(Calendar Settings)으로 이동하세요.
+{% hint style="info" %}
+- 캘린더를 만든 사용자가 기본으로 팀원에 자동 추가돼요. 이 설정은 바꿀 수 있어요.
+- **Personal Booking** 캘린더는 **Round Robin** 캘린더와 기능이 모두 같아요. 다만 팀원을 한 명만 둘 수 있어요. **Round Robin**은 팀원을 여러 명 둘 수 있어요.
+{% endhint %}
 
-- 캘린더 생성(Create Calendar)을 클릭하세요.
-
-- 개인 예약(Personal Booking)을 선택하고 선호도에 따라 캘린더를 구성하세요.
-
-## 참고사항
-
-- 기본적으로 캘린더를 생성한 사용자가 자동으로 팀 멤버로 추가되지만, 이는 변경할 수 있습니다.
-
-- 개인 캘린더(Personal Calendar)는 라운드 로빈 캘린더(Round Robin Calendar)와 모든 기능을 공유하지만, 한 명의 팀 멤버로 제한되는 반면 라운드 로빈은 여러 팀 멤버를 지원합니다.
-
-![개인 예약 캘린더 생성 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045689961/original/3HZTsKXAS6bKYxNRKcMja5lh-OVhe5XyrQ.jpeg?1745605527)
+![개인 예약 캘린더 유형 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045689961/original/3HZTsKXAS6bKYxNRKcMja5lh-OVhe5XyrQ.jpeg?1745605527)
 
 ![개인 예약 캘린더 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045689960/original/ze8FJfUWrsA5kgHawgdiMkNbJSXb1b9rlw.jpeg?1745605527)
-
----
-*원문 최종 수정: Wed, 11 Feb, 2026 at 4:23 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*

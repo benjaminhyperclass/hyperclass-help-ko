@@ -1,58 +1,44 @@
 ---
-
-번역일: 2026-04-06
+원문: /support/solutions/articles/155000001458-how-to-clone-templates-in-template-library-
+번역일: 2026-11-07
 카테고리: 10-마케팅
 ---
 
-# 템플릿 라이브러리에서 템플릿을 복제하는 방법
+# 템플릿 라이브러리에서 템플릿 복제하기
 
-### 커뮤니티 추가 튜토리얼
+**템플릿 라이브러리**에 있는 템플릿을 복제해서 새 템플릿의 바탕으로 쓰는 방법을 안내해요. 브랜딩을 일관되게 유지하고 새 채널을 만드는 시간도 줄이려면, 나와 팀원이 만든 기존 템플릿에서 시작하는 것이 좋아요.
 
-[https://youtu.be/gkUtOinHmQY](https://youtu.be/gkUtOinHmQY)
+## 누가 복제할 수 있나요?
 
-[https://youtu.be/7ut-r0lnWPM](https://youtu.be/7ut-r0lnWPM)
+현재는 **에이전시 관리자**만 템플릿을 복제할 수 있어요.
 
-브랜딩의 일관성을 유지하고 새로운 채널을 구축하는 시간을 단축하려면, 본인과 팀원이 만든 기존 템플릿을 기반으로 시작하는 것이 효과적입니다.
+## 템플릿 복제하는 방법
 
-**누가 할 수 있나요?**
-현재 에이전시 관리자(Agency Admin)만 사용할 수 있습니다.
+### 방법 1. 목록에서 바로 복제하기
 
-**복제 단계:**
+1. **템플릿 라이브러리**로 이동한 다음, 복제할 템플릿 위에 마우스를 올려요.
+2. 오른쪽 위에 있는 점 세 개 아이콘을 클릭해요.
 
-**방법 1:**
+   ![템플릿 위에 마우스를 올렸을 때 오른쪽 위에 보이는 점 세 개 아이콘](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155013011922/original/V-L4YmtjRO9vJPtXwA2ZkuMxXd3wx9NLLQ.png?1700232131)
 
-**1단계.** 템플릿 라이브러리(Template Library)로 이동하여 복제하려는 템플릿 위에 마우스를 올리세요
+3. **템플릿 복제**를 클릭한 다음 **확인**을 클릭해요.
 
-**2단계.** 우측 상단 모서리의 점 3개 메뉴를 클릭하세요
+### 방법 2. 템플릿을 열어서 복제하기
 
-![템플릿 복제 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155013011922/original/V-L4YmtjRO9vJPtXwA2ZkuMxXd3wx9NLLQ.png?1700232131)
+1. **템플릿 라이브러리**로 이동한 다음, 복제할 템플릿 위에 마우스를 올려요.
+2. 템플릿을 열어요.
+3. 오른쪽 위에 있는 점 세 개 아이콘을 클릭해요.
 
-**3단계.** "Clone Template(템플릿 복제)"를 클릭하고 "Confirm(확인)"을 클릭하세요
+   ![템플릿을 연 화면에서 오른쪽 위에 보이는 점 세 개 아이콘](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155013011921/original/anJykjaQma17NzG-JqmHUnOekZPbiwEa8A.png?1700232131)
 
-**또는**
+4. **템플릿 복제**를 클릭한 다음 **확인**을 클릭해요.
 
-**방법 2:**
+## 자주 묻는 질문
 
-**1단계.** 템플릿 라이브러리로 이동하여 복제하려는 템플릿 위에 마우스를 올리세요
+### 템플릿은 누가 복제할 수 있나요?
 
-**2단계.** 템플릿을 열어주세요
+에이전시 관리자가 템플릿을 복제할 수 있어요.
 
-**3단계.** 우측 상단 모서리의 점 3개 메뉴를 클릭하세요
+### 복제한 이메일 템플릿의 제목을 바꿀 수 있나요?
 
-![템플릿 내부 복제 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155013011921/original/anJykjaQma17NzG-JqmHUnOekZPbiwEa8A.png?1700232131)
-
-**4단계.** "Clone Template(템플릿 복제)"를 클릭하고 "Confirm(확인)"을 클릭하세요
-
-## FAQ
-
-### 누가 템플릿을 복제할 수 있나요?
-
-에이전시 관리자만 템플릿 복제 권한을 가지고 있습니다.
-
-### 복제된 이메일 템플릿의 제목을 변경할 수 있나요?
-
-네, 복제된 템플릿의 제목을 변경하려면 편집(Edit) 섹션을 클릭하세요.
-
----
-*원문 최종 수정: Thu, 11 Jan, 2024 at 3:57 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+네, 바꿀 수 있어요. **편집**을 클릭해서 복제한 템플릿의 제목을 수정하세요.

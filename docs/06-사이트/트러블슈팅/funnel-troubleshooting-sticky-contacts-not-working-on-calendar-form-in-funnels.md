@@ -1,13 +1,12 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 06-사이트 > 트러블슈팅
+원문: /support/solutions/articles/48001163821-funnel-troubleshooting-sticky-contacts-not-working-on-calendar-form-in-funnels
+번역일: 2026-11-07
+카테고리: 06-사이트
 ---
 
-# 퍼널 트러블슈팅 | 퍼널의 캘린더/폼에서 고정 연락처(Sticky Contacts)가 작동하지 않을 때
+# 퍼널에서 캘린더·폼의 Sticky Contacts가 작동하지 않을 때
 
-퍼널에 폼과 캘린더를 추가할 때는 두 요소 모두 동일한 방식을 사용해야 합니다. 폼과 캘린더 요소(Elements)를 둘 다 사용하거나, 하나를 커스텀 HTML/JS 임베드로 사용한다면 다른 하나도 동일하게 커스텀 HTML/JS 임베드를 사용해 주세요.
+퍼널에 폼과 캘린더를 함께 넣었는데 Sticky Contacts(고정 연락처)가 제대로 작동하지 않을 때 확인할 내용을 안내해요.
 
----
-*원문 최종 수정: Tue, 26 Sep, 2023 at 1:19 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+퍼널에 폼과 캘린더를 넣을 때는 둘 다 폼 요소와 캘린더 요소로 추가하세요. 둘 중 하나를 사용자 지정 HTML/JS 임베드 코드로 넣었다면, 나머지 하나도 같은 방식으로 임베드하세요.
+

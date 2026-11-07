@@ -1,137 +1,110 @@
 ---
-
-번역일: 2026-04-06
+원문: /support/solutions/articles/155000001491-workflow-trigger-documents-contracts
+번역일: 2026-11-06
 카테고리: 14-문서-계약
 ---
 
-# 워크플로우 트리거 - 문서 및 계약
+# 워크플로우 트리거 — Documents & Contracts(문서 & 계약)
 
-이 글에서는 문서 상태를 기준으로 자동화 작업을 실행하는 "문서 및 계약" 워크플로우 트리거 사용법을 설명합니다. 문서가 발송되거나 서명되거나 조회되거나 완료됐을 때, 이 트리거를 사용하면 알림 발송, 연락처 태그 추가, 파이프라인 업데이트 등의 워크플로우를 자동으로 시작할 수 있어요. 템플릿, 수신자 유형, 문서 금액별로 필터링해서 매우 구체적인 자동화 경로를 만들 수도 있습니다. 제안서, NDA, 계약서를 더 효율적으로 관리하는 데 특히 유용해요.
+**Documents & Contracts**(문서 & 계약) 트리거를 쓰면 문서가 발송·조회·서명·완료될 때마다 알림 보내기, 태그 지정, 파이프라인 업데이트 같은 작업을 자동으로 실행할 수 있어요. 템플릿, 수신자 유형, 문서 값으로 조건을 좁힐 수 있어서 제안서, NDA, 서명 계약서를 더 효율적으로 관리할 수 있어요.
 
----
+## Documents & Contracts 워크플로우 트리거란?
 
-목차
+하이퍼클래스의 **Documents & Contracts** 트리거는 문서 상태가 바뀔 때 작업을 자동으로 실행해요. 문서가 발송·조회·서명·완료되는 순간을 워크플로우와 연결해서, 수신자의 반응에 맞춰 바로 다음 작업을 할 수 있어요. 제안서나 계약서와 관련된 커뮤니케이션, 기록 관리, 후속 조치를 간편하게 처리할 때 알맞아요.
 
-- [문서 및 계약 워크플로우 트리거란?](#문서-및-계약-워크플로우-트리거란)
-- [문서 및 계약 워크플로우 트리거의 주요 장점](#문서-및-계약-워크플로우-트리거의-주요-장점)
-- [문서 및 계약 워크플로우 트리거 설정 방법](#문서-및-계약-워크플로우-트리거-설정-방법)
-- [자주 묻는 질문](#자주-묻는-질문)
----
+서명이나 승인을 받기 위해 문서를 자주 보내는 에이전시, 서비스 제공업체, 일반 기업에 특히 유용해요. **Status**(상태), **Template Name**(템플릿 이름), **Recipient Type**(수신자 유형) 같은 필터를 쓰면 특정 상황에 딱 맞는 워크플로우를 만들 수 있어요. NDA, 영업 제안서, 계약서 등 어떤 문서든 업무를 체계적으로 정리하고 제때 처리하는 데 도움이 돼요.
 
-# **문서 및 계약 워크플로우 트리거란?**
+## Documents & Contracts 워크플로우 트리거의 주요 이점
 
-Hyperclass의 **문서 및 계약 워크플로우 트리거**는 문서 상태가 변경될 때 자동화 작업을 실행하도록 설계됐어요. 문서가 발송, 조회, 서명, 완료됐을 때 말이죠. 이 트리거는 문서의 생명주기를 워크플로우 자동화와 연결해서, 수신자의 행동에 따라 즉시 작업을 수행할 수 있게 해줍니다. 제안서, 계약서, 협약서와 관련된 커뮤니케이션, 기록 관리, 후속 작업을 간소화하는 데 이상적이에요.
+이 트리거로 문서와 관련된 작업을 정확하게 자동화할 수 있어요. 서명 현황을 추적하거나 문서 상태에 따라 후속 조치를 달리할 때 업무 효율과 소통이 좋아져요.
 
-이 트리거는 정기적으로 서명이나 승인을 위한 문서를 보내는 **에이전시, 서비스 제공업체, 비즈니스**에 특히 유용합니다. **상태, 템플릿명, 수신자 유형** 등의 필터를 활용하면 특정 시나리오에 맞는 매우 타겟팅된 워크플로우를 구축할 수 있어요. NDA, 영업 제안서, 계약서 관리 등 어떤 용도든 이 트리거는 프로세스를 체계적이고 시의적절하며 확장 가능하게 유지해 줍니다.
+- 문서 상태에 따른 자동 후속 조치: 문서가 발송·조회·서명·완료될 때 맞춤 워크플로우를 실행해요. 직접 확인하지 않아도 알림, 업데이트, 내부 작업이 제때 이루어져요.
+- 기록 관리 개선: 문서 활동에 따라 CRM 필드, Google Sheets, Slack 채널을 자동으로 업데이트해요. 기록을 최신 상태로 유지하고 데이터 입력 오류를 줄일 수 있어요.
+- 필터로 정교한 자동화: **Template Name**, **Status**, **Recipient Type** 같은 필터로 특정 문서나 수신자에게만 워크플로우를 실행해요. 문서 종류마다 다른 워크플로우를 운영할 때 알맞아요.
+- 내부 팀 협업 강화: 문서에서 중요한 일이 생기면 내부에 바로 알림을 보내요. 영업팀이나 운영팀이 지체 없이 후속 조치를 하거나 다음 단계로 넘어갈 수 있어요.
+- 개인화된 고객 경험: 연락처나 문서의 커스텀 값으로 발송 이메일, 알림, 작업을 개인화해요. 전문적이면서 고객 중심의 소통을 이어 갈 수 있어요.
 
----
+## Documents & Contracts 워크플로우 트리거 설정하기
 
-## **문서 및 계약 워크플로우 트리거의 주요 장점**
+### 1. 자동화 메뉴로 이동하기
 
-이 워크플로우 트리거는 정밀한 문서 기반 작업 자동화를 가능하게 해줍니다. 서명 추적이든 문서 상태에 따른 후속 조치 커스터마이징이든, 이 트리거는 운영 효율성과 커뮤니케이션을 향상시켜줘요.
+왼쪽 메뉴에서 **자동화**를 클릭하세요. 그다음 오른쪽 위의 파란색 **+ Create Workflow**(워크플로우 만들기) 버튼을 클릭하고 **처음부터 시작**을 선택하면 직접 워크플로우를 만들 수 있어요.
 
-- 문서 상태 기반 자동 후속 조치: 문서가 발송, 조회, 서명, 완료됐을 때 개인화된 워크플로우를 트리거해서 수동 추적 없이도 시의적절한 리마인더, 업데이트, 내부 작업을 보장합니다.
+![자동화 메뉴에서 워크플로우 만들기를 시작하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050138126/original/JDTNUOmFqwSypcTAt4onvzkPLr16UZYjKA.png?1753084464)
 
-- 향상된 기록 관리: 문서 활동을 기준으로 CRM 필드, 구글 시트, 슬랙 채널을 자동 업데이트해서 기록을 최신 상태로 유지하고 데이터 입력 오류를 방지해요.
+### 2. 새 트리거 추가하기
 
-- 타겟 자동화를 위한 동적 필터링: 템플릿명, 상태, 수신자 유형 등의 필터를 사용해서 특정 문서나 수신자에게만 워크플로우를 트리거할 수 있어요. 다양한 문서 유형을 서로 다른 워크플로우로 관리하기에 완벽하죠.
+워크플로우 빌더에서 **+ Add New Trigger**(새 트리거 추가)를 클릭해 시작 조건을 정하세요. 트리거 목록을 아래로 스크롤해 **Payments**(결제) 섹션에서 **Documents & Contracts**(문서 & 계약)를 클릭하세요. 문서와 관련된 이벤트가 생기면 워크플로우가 실행돼요.
 
-- 향상된 내부 팀 협업: 문서에서 주요 작업이 수행됐을 때 즉시 내부 알림을 보내서 영업팀이나 운영팀이 지체 없이 후속 조치하거나 다음 단계를 진행할 수 있게 해줘요.
+![트리거 목록의 Payments 섹션에서 Documents & Contracts를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050138163/original/YxYmN0at4n7IVWc8FZT1sZ3_UUpytUUDlg.png?1753084486)
 
-- 개인화된 고객 경험: 연락처나 문서의 커스텀 값을 사용해서 발신 이메일, 알림, 작업을 개인화할 수 있어요. 전문적이고 고객 중심적인 커뮤니케이션 플로우를 유지하는 데 도움이 됩니다.
+### 3. 트리거 이름 정하기
 
----
+나중에 알아보기 쉽도록 **Workflow Trigger Name**(워크플로우 트리거 이름) 필드에 구체적인 이름을 입력하세요. 예: "계약서 조회 – 온보딩 문서"
 
-## 문서 및 계약 워크플로우 트리거 설정 방법
+![Workflow Trigger Name 필드에 트리거 이름을 입력하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050138195/original/vJVVL0mNv_ugyeTIv2cmmVIEJS0elB5bfA.png?1753084509)
 
-### 자동화 메뉴로 이동하기
+### 4. 필터 추가하기
 
-왼쪽 네비게이션 패널에서 Automation(자동화)을 클릭한 다음, 상단 우측의 파란색 + Create Workflow(워크플로우 만들기) 버튼을 선택하세요. Start from Scratch(처음부터 시작)를 선택해서 커스텀 워크플로우를 만들어보세요.
+**Add Filters**(필터 추가)를 클릭해 워크플로우가 실행될 구체적인 조건을 설정하세요.
 
-![자동화 워크플로우 생성](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050138126/original/JDTNUOmFqwSypcTAt4onvzkPLr16UZYjKA.png?1753084464)
+![Add Filters 버튼을 클릭하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050138353/original/B5B6W4cjjAM8SSaIxCGuduxgzRV3tgktRQ.png?1753084634)
 
-### **새 트리거 추가하기**
+### 5. 필터 필드와 조건 선택하기
 
-워크플로우 빌더 안에서 + Add New Trigger(새 트리거 추가)를 클릭해서 시작 조건을 설정하세요. 트리거 목록에서 Payments(결제) 섹션으로 스크롤해서 Documents & Contracts(문서 및 계약)를 클릭해주세요. 문서 관련 이벤트가 발생했을 때 워크플로우가 트리거됩니다.
+기본으로 제공되는 필터는 다음과 같아요.
 
-![문서 및 계약 트리거 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050138163/original/YxYmN0at4n7IVWc8FZT1sZ3_UUpytUUDlg.png?1753084486)
+- **Recipient Type**(수신자 유형): **Contact**(연락처) 또는 **Business User**(비즈니스 사용자)
+- **Status**(상태): **Viewed**(조회함), **Signed/Accepted**(서명 완료/수락됨), **Completed**(완료), **Sent**(발송됨)
+- **Template**(템플릿): 특정 문서 템플릿
+- **Value**(값): 계약 금액. 고액 계약만 골라낼 때 유용해요.
 
-### **트리거 이름 지정하기**
+![필터 필드와 조건을 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050138365/original/EQOWr2EwHhRQd6Dt3cVXCa5rEpoyl2Cqcg.png?1753084655)
 
-체계적인 관리를 위해 Workflow Trigger Name(워크플로우 트리거명) 필드에 구체적인 이름(예: "계약서 조회 – 온보딩 문서")을 지어주세요.
+### 6. Recipient Type 필터
 
-![트리거 이름 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050138195/original/vJVVL0mNv_ugyeTIv2cmmVIEJS0elB5bfA.png?1753084509)
+**Recipient Type** 필터로 문서를 받은 대상이 **Business User**인지 **Contact**인지 정해요. 의도한 수신자 유형이 한 행동에만 워크플로우가 실행돼요.
 
-### 필터 추가하기
+![Recipient Type 필터를 설정하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050138662/original/VomGMNsKJ5LWh2AaOrDYbMYcb_uBxHwkpw.png?1753084845)
 
-Add Filters(필터 추가)를 클릭해서 워크플로우가 언제 트리거될지 결정하는 구체적인 조건을 설정하세요.
+### 7. Status 필터
 
-![필터 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050138353/original/B5B6W4cjjAM8SSaIxCGuduxgzRV3tgktRQ.png?1753084634)
+**Status** 필터로 문서의 진행 단계에 따라 워크플로우를 실행해요. **Sent**, **Viewed**, **Signed/Accepted**, **Completed** 중에서 고를 수 있어요. 문서에 일어난 특정 행동에 맞춰 자동화를 설계할 수 있어요.
 
-### **필터 필드와 조건 선택하기**
+![Status 필터를 설정하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050138722/original/S8VozLTPqiGht7et4f0satCACVzNu73wXQ.png?1753084893)
 
-다음과 같은 기본 필터 중에서 선택할 수 있어요:
+### 8. Template 필터
 
-- **Recipient Type(수신자 유형):** Contact(연락처) 또는 Business User(비즈니스 사용자)
+**Template** 필터로 워크플로우를 실행할 문서나 계약서 템플릿을 지정해요. 온보딩 폼이나 서비스 계약서처럼 특정 문서에만 자동화를 실행하고 싶을 때 유용해요.
 
-- **Status(상태):** Viewed(조회함), Signed/Accepted(서명함/승인함), Completed(완료), Sent(발송함)
+![Template 필터를 설정하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050138775/original/vknXb90h7z_GqRa0OvZXn10dt42YcOt6sg.png?1753084950)
 
-- **Template(템플릿):** 특정 문서 템플릿
+### 9. Value 필터
 
-- **Value(금액):** 계약 금액, 고액 거래 필터링에 유용
+**Value** 필터로 문서에 지정된 금액이나 수치에 따라 워크플로우를 실행해요. **Greater than**(초과), **Equals to**(같음) 같은 연산자를 쓰면 문서가 특정 값 조건을 충족할 때만 자동화가 실행돼요. 예산 기준이나 가격 구간이 정해진 계약에 알맞아요.
 
-![필터 조건 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050138365/original/EQOWr2EwHhRQd6Dt3cVXCa5rEpoyl2Cqcg.png?1753084655)
+![Value 필터를 설정하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050138918/original/w6QjbwMT4mYadLEMbtRno0WL83220eqGbQ.png?1753085030)
 
-### 수신자 유형 필터
+### 10. 트리거 저장하기
 
-"Recipient Type(수신자 유형)" 필터를 사용해서 문서가 누구에게 보내졌는지 지정하세요—Business User(비즈니스 사용자) 또는 Contact(연락처) 중 하나요. 이렇게 하면 의도한 수신자 유형이 취한 행동에 기반해서만 워크플로우가 트리거됩니다.
+필터 설정을 마쳤으면 **Save Trigger**(트리거 저장)를 클릭해 설정을 적용하세요. 이제 정해 둔 조건에 맞는 문서 이벤트가 생기면 워크플로우가 자동으로 실행돼요.
 
-![수신자 유형 필터](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050138662/original/VomGMNsKJ5LWh2AaOrDYbMYcb_uBxHwkpw.png?1753084845)
-
-### **상태 필터**
-
-"Status(상태)" 필터를 사용하면 문서의 단계에 따라 워크플로우를 트리거할 수 있어요—Sent(발송함), Viewed(조회함), Signed/Accepted(서명함/승인함), Completed(완료) 등이요. 문서에서 취해진 구체적인 행동에 맞춰 자동화를 조정할 수 있습니다.
-
-![상태 필터](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050138722/original/S8VozLTPqiGht7et4f0satCACVzNu73wXQ.png?1753084893)
-
-### 템플릿 필터
-
-"Template(템플릿)" 필터를 사용하면 어떤 문서나 계약 템플릿이 워크플로우를 트리거할지 지정할 수 있어요. 온보딩 폼이나 서비스 계약 등 특정 협약에 대해서만 자동화를 실행하고 싶을 때 유용합니다.
-
-![템플릿 필터](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050138775/original/vknXb90h7z_GqRa0OvZXn10dt42YcOt6sg.png?1753084950)
-
-### 금액 필터
-
-"Value(금액)" 필터를 사용하면 문서에 지정된 금전적 금액이나 수치 값을 기준으로 워크플로우를 트리거할 수 있어요. "보다 큰", "같음" 등의 연산자를 적용해서 특정 금액 조건을 만족하는 문서에서만 자동화를 실행할 수 있죠. 예산 기준점이나 가격 단계에 연결된 계약에 이상적입니다.
-
-![금액 필터](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050138918/original/w6QjbwMT4mYadLEMbtRno0WL83220eqGbQ.png?1753085030)
-
-### **트리거 저장하기**
-
-필터 설정이 완료되면 Save Trigger(트리거 저장)를 클릭해서 설정을 적용하세요. 이제 정의한 조건에 맞는 문서 이벤트를 기준으로 워크플로우가 자동으로 활성화될 거예요.
-
-![트리거 저장](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050138603/original/U47aDMa6KtUVMvs9RZFdsjNAMMF2jbcirA.png?1753084817)
-
----
+![Save Trigger 버튼을 클릭하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050138603/original/U47aDMa6KtUVMvs9RZFdsjNAMMF2jbcirA.png?1753084817)
 
 ## 자주 묻는 질문
 
-**Q: 연락처가 서명한 문서와 비즈니스 사용자가 서명한 문서에 따라 다른 워크플로우를 트리거할 수 있나요?**
+### 연락처가 서명했을 때와 비즈니스 사용자가 서명했을 때 서로 다른 워크플로우를 실행할 수 있나요?
 
-네, 가능해요. **수신자 유형 필터**를 사용하면 트리거가 **연락처**(리드나 고객 같은 외부 사용자)에게 적용될지 **비즈니스 사용자**(팀원이나 직원)에게 적용될지 선택할 수 있어요. 고객 대상 계약과 내부 승인에 대해 별도의 워크플로우를 실행해야 할 때 특히 유용하죠. 예를 들어, 연락처가 제안서에 서명하면 고객 온보딩 이메일을 보내고, 비즈니스 사용자가 내부 검토 문서에 서명하면 내부 슬랙 알림을 트리거할 수 있어요.
+네, 할 수 있어요. **Recipient Type** 필터에서 트리거를 **Contact**(리드나 고객 같은 외부 사용자)에게 적용할지, **Business User**(팀원이나 직원)에게 적용할지 고르면 돼요. 고객에게 보내는 계약과 내부 승인 문서에 서로 다른 워크플로우를 적용할 때 유용해요. 예를 들어 연락처가 제안서에 서명하면 고객 온보딩 이메일을 보내고, 비즈니스 사용자가 내부 검토 문서를 승인하면 내부 Slack 알림을 보낼 수 있어요.
 
-**Q: 같은 문서가 조회되기도 하고 서명되기도 한다면 트리거가 두 번 실행되나요?**
+### 같은 문서를 조회하고 서명도 하면 트리거가 두 번 실행되나요?
 
-네, 맞아요. 각 **상태 변경**(예: "조회함"에서 "서명함/승인함"으로)은 별개 이벤트로 처리되며, 두 상태 모두 트리거로 설정되어 있다면 각각 독립적으로 워크플로우를 활성화할 수 있어요. 중복 자동화를 피하려면 워크플로우 안에 **조건부 로직을 추가**해서 액션을 실행하기 전에 태그나 커스텀 필드 값을 확인해야 해요. 이렇게 하면 중복 메시지나 업데이트를 방지할 수 있습니다.
+네, 그럴 수 있어요. 상태가 바뀔 때마다(예: **Viewed**에서 **Signed/Accepted**로) 별개의 이벤트로 처리돼요. 두 상태를 모두 트리거로 설정했다면 각각 워크플로우가 실행될 수 있어요. 같은 자동화가 중복 실행되지 않게 하려면 워크플로우 안에 조건 분기를 추가해서, 작업을 실행하기 전에 태그나 커스텀 필드 값을 확인하세요. 그러면 메시지나 업데이트가 겹치는 일을 막을 수 있어요.
 
-**Q: "금액" 필터를 사용해서 5천 달러 이상의 고액 계약 제안서에서만 워크플로우를 트리거할 수 있나요?**
+### Value 필터로 5,000달러를 넘는 제안서 같은 고액 계약에만 워크플로우를 실행할 수 있나요?
 
-물론이죠. **금액 필터**에서는 "보다 큰", "같음" 등의 연산자를 적용할 수 있어요. 계약 금액이 특정 기준점을 초과했을 때만 활성화되도록 트리거를 설정할 수 있습니다. 고액 고객에게 다른 온보딩 단계를 보내거나 대형 계약에 대해 영업 관리자에게 알림을 보내는 데 특히 유용해요.
+네, 할 수 있어요. **Value** 필터에서 **Greater than**(초과), **Equals to**(같음) 같은 연산자를 쓸 수 있어요. 계약 금액이 정해 둔 기준을 넘을 때만 트리거가 실행되도록 설정하세요. 고액 고객에게 다른 온보딩 단계를 안내하거나, 큰 딜을 영업 매니저에게 알릴 때 특히 유용해요.
 
-**Q: 특정 문서 템플릿(예: NDA나 서비스 계약)에서만 워크플로우를 트리거하도록 제한하려면 어떻게 하나요?**
+### 특정 문서 템플릿(예: NDA, 서비스 계약서)에서만 워크플로우가 실행되게 하려면 어떻게 하나요?
 
-**템플릿 필터**를 사용해서 워크플로우를 활성화할 특정 문서 템플릿을 선택하세요. 이렇게 하면 개별 문서 유형에 연결된 고유한 자동화를 실행할 수 있어요. 예를 들어, "서비스 계약" 템플릿에 서명한 고객에게는 환영 시퀀스를 보내고, "NDA" 템플릿을 완료한 고객에게는 다른 시퀀스를 보낼 수 있죠. 이렇게 하면 워크플로우가 **상황별로 맞춤화**되고 정확한 템플릿이 사용됐을 때만 트리거됩니다.
-
----
-*원문 최종 수정: 2025년 7월 25일*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+**Template** 필터에서 워크플로우를 실행할 문서 템플릿을 선택하세요. 문서 종류별로 별도의 자동화를 운영할 수 있어요. 예를 들어 "서비스 계약서" 템플릿에 서명한 고객에게는 환영 시퀀스를 보내고, "NDA" 템플릿을 완료한 고객에게는 다른 시퀀스를 보낼 수 있어요. 이렇게 하면 정확히 그 템플릿을 사용했을 때만 워크플로우가 실행돼요.

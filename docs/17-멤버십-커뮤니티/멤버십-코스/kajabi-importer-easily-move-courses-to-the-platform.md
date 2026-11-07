@@ -1,77 +1,102 @@
 ---
-원문: https://help.leadconnectorhq.com/support/solutions/articles/155000002345-kajabi-importer-easily-move-courses-to-the-platform
-번역일: 2026-04-23
-카테고리: membership-and-communities
+원문: /support/solutions/articles/155000001725-kajabi-importer-easily-move-courses-to-highlevel
+번역일: 2026-11-06
+카테고리: 17-멤버십-커뮤니티
 ---
 
-# Kajabi 가져오기 도구로 강의를 쉽게 이전하기
+# Kajabi 코스를 하이퍼클래스로 가져오기
 
-Kajabi 가져오기 도구를 사용하면 Kajabi의 강의를 Courses(강의) 섹션으로 간단하게 이전할 수 있습니다. 이 가이드는 소중한 콘텐츠를 플랫폼으로 원활하게 이전할 수 있도록 단계별 안내를 제공합니다.
+Kajabi 가져오기 기능을 쓰면 Kajabi의 코스를 하이퍼클래스의 **코스**로 간단히 옮길 수 있어요. 이 문서에서는 소중한 콘텐츠를 문제없이 옮기는 방법을 단계별로 안내해요.
 
-## 가져오기 도구 접속 방법
+## 가져오기 화면 찾기
 
-`Memberships(멤버십) → Courses(강의) → Products(상품) → Create Product(상품 만들기) → Import(가져오기)`로 이동하세요.
+- **멤버십 > 코스 > 상품 > 상품 만들기 > 가져오기**로 이동하세요.
 
-![Kajabi 가져오기 도구 접속](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155025258246/original/c1w4cEUYQKoUPVZoKSj7uNDrMIag_8yX8g.png?1714412536)
+  ![멤버십 > 코스 > 상품 > 상품 만들기 > 가져오기로 이동하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155018566510/original/7L5pOJJFPEj--CNMLxp5vb7m1UFL8dq69w.png?1706093766)
 
-## 모범 사례
+## 권장 사항
 
-- **커스텀 CSS 사용 제한**: 최적의 경험을 위해 커스텀 CSS 사용을 피하는 것이 좋습니다.
-- **테마 백업 생성**: 필요한 경우 원래 설정으로 되돌릴 수 있도록 테마를 미리 백업해 두세요.
-- **비업무 시간 이전**: 수강생이 강의를 이용하는 중에 발생할 수 있는 영향을 최소화하기 위해 비업무 시간에 이전 작업을 진행하세요.
+- 사용자 지정 CSS는 쓰지 않는 것이 좋아요.
+- 테마를 미리 백업해 두세요. 필요할 때 원래 설정으로 되돌릴 수 있어요.
+- 코스를 이용하는 학습자에게 미치는 영향을 줄이려면 이용자가 적은 시간대에 옮기세요.
 
-## 강의 가져오기 단계
+---
 
-다음 단계에 따라 강의를 가져오세요:
+### 큰 Kajabi 코스도 더 안정적으로 가져와요
 
-### 1단계: 학습자 프로필 생성
+최근 개선으로 Kajabi 코스를 더 빠짐없이, 더 안정적으로 가져올 수 있어요. 구조가 큰 코스일수록 효과가 커요.
 
-- **학습자 프로필 생성**: 가져올 플랫폼에서 학습자 프로필을 생성합니다.
-- **새 연락처 생성**: 시스템에서 제공한 이메일 ID를 사용하여 가져올 플랫폼 내에서 새 연락처를 생성하세요.
-- **비밀번호 입력**: 생성 완료 후 강의 가져오기 화면으로 돌아가서 이전 단계에서 계정 생성 시 사용한 비밀번호를 입력합니다.
-- **도메인 추가**: 도메인 필드에 학습자 도메인(학습자 로그인 자격 증명을 입력하는 도메인)을 추가합니다.
-- **가져오기 실행**: "Import(가져오기)" 버튼을 클릭합니다.
+1. 가져오는 동안 **더 보기** 버튼을 찾아서 눌러 줘요.
+2. 카테고리와 하위 카테고리 안에 숨어 있는 강의도 반복 탐색으로 가져와요.
+3. 용량이 큰 가져오기 데이터를 더 안정적으로 처리해서, 큰 Kajabi 코스에서 일부만 가져와지는 일이 줄어들어요.
 
-### 2단계: 가져오기 과정
+달라지는 점은 이래요. Kajabi 코스에 중첩된 섹션이나 숨겨진 강의 목록이 있어도, 하이퍼클래스가 가져올 때 그 구조를 더 많이 가져와요.
 
-- 가져오기 과정이 시작되면 학습자 자격 증명을 통해 로그인하고 강의 가져오기를 시작합니다.
-- 진행률이 표시되지만 정확한 상태를 확인하려면 "Refresh(새로고침)" 버튼을 클릭하세요.
-- 가져오기 과정을 취소하려면 "Cancel(취소)" 버튼을 클릭합니다.
-- 가져오는 동안 탭을 전환할 수 있지만 탭이나 창을 닫지는 마세요.
-- 강의(및 레슨)의 모든 동영상, 이미지, 텍스트 콘텐츠가 이전됩니다.
+{% hint style="warning" %}
+가져오기는 여전히 게시된 강의만 가져와요. 과제, 퀴즈, 평가는 여전히 포함되지 않아요.
+{% endhint %}
 
-**참고**: 발행된 레슨만 가져올 수 있습니다. 또한 과제, 퀴즈, 평가는 가져오기 과정에 포함되지 않습니다. Library(라이브러리)와 Product(상품) 섹션의 권장 테마는 각각 Encore Site와 Premier Product입니다.
+---
 
-![가져오기 과정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155025258249/original/MbMX7qwvpugGtzhL_qBgf3CB9O9RNy2AIw.jpeg?1714412537)
+## 코스 가져오는 순서
 
-![가져오기 진행률](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155025258251/original/UOeKzleAn-GQCgbMapRzWWg1x7_ytlXcBQ.jpeg?1714412537)
+아래 순서대로 코스를 가져오세요.
+
+### 1단계: 학습자 프로필 만들기
+
+1. Kajabi에서 학습자 프로필을 만드세요.
+   - 가져오려는 플랫폼 안에서 새 연락처를 만드는 것인지 확인하세요.
+2. 프로필을 만들었으면 **상품 가져오기** 화면으로 돌아가, 앞에서 계정을 만들 때 쓴 이메일과 비밀번호를 입력하세요.
+3. 도메인 입력란에 학습자 도메인을 입력하세요. 학습자가 로그인 정보를 입력하는 페이지의 도메인이에요.
+4. **가져오기** 버튼을 클릭하세요.
+
+### 2단계: 가져오기 진행
+
+- 가져오기가 시작되면 학습자 계정으로 로그인한 뒤 코스를 가져오기 시작해요.
+- 진행 상황이 표시되지만, 정확한 상태를 보려면 **새로고침** 버튼을 클릭하세요.
+- 가져오기를 멈추려면 **취소** 버튼을 클릭하세요.
+- 가져오는 동안 다른 탭으로 이동해도 되지만, 이 탭이나 창은 닫지 마세요.
+- 코스와 강의의 동영상, 이미지, 텍스트 콘텐츠는 모두 옮겨져요.
+
+{% hint style="info" %}
+게시된 강의만 가져와요. 또 과제, 퀴즈, 평가는 가져오기에 포함되지 않아요.
+
+**Library**(라이브러리)와 **상품** 섹션에는 각각 Encore Site와 Premier Product 테마를 권장해요.
+{% endhint %}
+
+![가져오기 진행 화면 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155018576455/original/XHhcFVIItYARCTc-UDpFDOh0UROw5vCO_w.png?1706097723)
+
+![가져오기 진행 화면 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155018706431/original/JNc0WS2Q0tUkK-7EdJaUh4-6W7J5KlJfeQ.png?1706188954)
 
 ### 3단계: 가져오기 완료
 
-- 강의가 성공적으로 가져와지면 Products(상품) 섹션에 나타납니다.
-- Import(가져오기) 섹션에서 마지막 업데이트 시간을 확인할 수 있으며, 마지막 처리가 언제 이루어졌는지 표시됩니다.
+- 코스를 성공적으로 가져오면 **상품** 섹션에 표시돼요.
+- **가져오기** 섹션 아래의 **최근 수정**에는 마지막으로 가져온 시점이 표시돼요.
 
-![가져오기 완료](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155025258250/original/IUNuraWWo5pcl1JmGTAoBDBNb1Vy5cGsrw.jpeg?1714412537)
+![가져오기 완료 후 최근 수정이 표시된 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155018711027/original/TCxIDrKeqSoQa12lFgzZ89ENi0v1c1Wn6g.png?1706190354)
+
+---
 
 ## 자주 묻는 질문
 
-**인증 오류는 왜 발생하나요?**
+### 인증 오류가 나는 이유가 뭔가요?
+입력한 도메인이나 로그인 정보가 올바르지 않을 때 인증 오류가 나타나요. 가져오기를 시작하기 전에 로그인 정보를 다시 꼼꼼히 확인하세요.
 
-인증 오류는 추가한 도메인이나 자격 증명이 올바르지 않을 때 나타납니다. 이를 해결하려면 자격 증명을 다시 신중히 확인하고 올바른지 확인한 후 가져오기 과정을 시작하세요.
+![인증 오류 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155018712061/original/WEbwNZ5MJkgmm0i-E97SCQT9PmY3nt--VA.png?1706190664)
 
-![인증 오류](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155025258248/original/9IgkSLRO1aDlVMSc46HRf1JsmDb8LbzKBg.jpeg?1714412537)
+### "코스 가져오기 실패" 오류가 나는 이유가 뭔가요?
+가져오기가 실패하는 원인은 다음과 같아요.
 
-**"강의 가져오기 실패" 오류는 왜 발생하나요?**
+- 잘못된 테마: 선택한 테마가 맞는지 확인하세요.
+- 로그인 정보 확인: 입력한 로그인 정보가 정확한지 다시 확인하세요.
+- 유효한 도메인: 입력한 도메인이 "/login" 경로와 맞는지 확인하세요. 예를 들어 "domainName/login"으로 접속하면 로그인 페이지가 나와야 해요.
+- 재시도: 가져오기가 실패하면 **재시도**를 클릭해서 중단된 지점부터 이어서 진행할 수 있어요.
+- 취소 시 동작: 가져오기를 직접 취소하면 사용자가 취소한 것으로 처리돼요. 이후 새로 가져오면 처음부터 시작해요.
 
-가져오기 실패의 가능한 원인:
-- **잘못된 테마**: 선택한 테마가 올바른지 확인하세요.
-- **자격 증명 검증**: 제공한 자격 증명의 정확성을 다시 확인하세요.
-- **유효한 도메인**: 제공한 도메인이 "/login" 경로와 호환되는지 확인하세요. 예를 들어 "도메인명/login"이 로그인 페이지로 연결되어야 합니다.
-- **재시도 옵션**: 가져오기가 실패하면 "retry(재시도)"를 클릭하여 중단된 지점부터 과정을 재개할 수 있습니다.
-- **취소 안내**: 사용자가 가져오기를 취소하면 사용자 취소로 간주되며, 새로운 가져오기는 처음부터 다시 시작됩니다.
+  ![코스 가져오기 실패 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155018713073/original/iVaDB5sVbG5cL-_KmY_RU0khfosqugu7bA.png?1706190986)
 
-![가져오기 실패 오류](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155025258247/original/PwnAq61KU4jVXLTYBObMRDriv5nyzq8hNQ.jpeg?1714412537)
+### 최근 Kajabi 가져오기에서 강의가 더 많이 보이는 이유가 뭔가요?
+이제 하이퍼클래스가 Kajabi를 가져올 때 펼쳐진 콘텐츠를 더 안정적으로 찾아내요. **더 보기** 버튼 뒤에 숨은 강의와 중첩된 카테고리 구조도 포함돼요. 예전에 가져올 때 강의가 빠졌다면, 다시 가져오면 게시된 콘텐츠를 더 가져올 수 있어요.
 
 ---
-*원문 최종 수정: Mon, 29 Apr, 2024 at 12:44 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+

@@ -1,92 +1,67 @@
 ---
-번역일: 2026-04-06T00:00:00.000Z
+원문: /support/solutions/articles/155000005607-how-to-customize-payment-links-with-your-brand-colors
+번역일: 2026-11-07
 카테고리: 08-결제
 ---
 
-# 브랜드 컬러로 결제 링크를 커스터마이징하는 방법
+# 결제 링크를 브랜드 색상으로 꾸미기
 
-## 브랜드 컬러로 결제 링크를 커스터마이징하는 방법
+결제 링크의 색상과 스타일을 우리 브랜드에 맞게 바꾸는 방법을 안내해요. 결제 페이지가 브랜드와 통일된 모습이 되어 고객이 더 안심하고 결제할 수 있어요.
 
-Hyperclass의 결제 링크(Payment Link) 커스터마이징 기능으로 브랜드에 맞는 결제 경험을 제공하세요. 결제 링크를 브랜드 컬러와 스타일에 맞춰 쉽게 변경하여 모든 거래에서 전문적이고 일관된 모습을 보여줄 수 있습니다.
+## 결제 링크 커스터마이징이란?
 
-***
+하이퍼클래스의 **결제 링크 커스터마이징**은 결제 링크의 모양을 브랜드 이미지에 맞게 바꾸는 기능이에요. **브랜드 보드**를 연결하거나 원하는 색상을 직접 골라서 적용할 수 있어요. 결제 과정 어디에서나 우리 비즈니스다운 모습을 보여 줄 수 있고, 고객에게 신뢰감과 일관된 인상을 줘요.
 
-**목차**
+## 결제 링크 커스터마이징의 장점
 
-* [결제 링크 커스터마이징이란?](how-to-customize-payment-links-with-your-brand-colors.md#결제-링크-커스터마이징이란)
-* [결제 링크 커스터마이징의 주요 장점](how-to-customize-payment-links-with-your-brand-colors.md#결제-링크-커스터마이징의-주요-장점)
-* [결제 링크를 커스터마이징하는 방법](how-to-customize-payment-links-with-your-brand-colors.md#결제-링크를-커스터마이징하는-방법)
-* [브랜드 보드 연동](how-to-customize-payment-links-with-your-brand-colors.md#브랜드-보드-연동)
-* [자주 묻는 질문](how-to-customize-payment-links-with-your-brand-colors.md#자주-묻는-질문)
+결제 링크를 브랜드에 맞게 꾸미면 브랜드 인지도가 높아지고, 결제하는 순간에도 고객 신뢰를 쌓을 수 있어요.
 
-***
+- 일관된 브랜딩: 모든 결제 페이지가 브랜드의 색상과 스타일에 맞춰져요.
+- **실시간 미리보기**: 저장하기 전에 디자인 변경 내용을 바로 확인할 수 있어요.
+- 모바일 반응형 디자인: 설정한 테마가 모든 기기 화면에 맞게 자연스럽게 표시돼요.
+- 간편한 연동: 이미 만들어 둔 브랜드 보드 설정을 그대로 가져와 바로 적용할 수 있어요.
+- 전문적인 인상: 통일된 디자인으로 신뢰도를 높여요.
 
-## **결제 링크 커스터마이징이란?**
+## 결제 링크 꾸미는 방법
 
-Hyperclass의 결제 링크 커스터마이징은 브랜드 아이덴티티를 반영하도록 결제 링크의 외관을 개인화할 수 있는 기능입니다. 브랜드 보드(Brand Board)를 연동하거나 커스텀 컬러를 선택하여 모든 결제 과정이 비즈니스의 모습과 느낌을 그대로 반영하도록 하고, 고객에게 신뢰와 일관성을 제공할 수 있습니다.
+몇 단계만 거치면 모든 결제에서 브랜드를 돋보이게 할 수 있어요.
 
-***
+1. **결제 > 설정 > 결제 링크 커스터마이징**으로 이동해요.
 
-### **결제 링크 커스터마이징의 주요 장점**
+   ![결제 링크 커스터마이징 화면으로 이동](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048883900/original/yMVjOmX7_XYJYS9-mD1xQI1abI98vpLFKA.png?1750879902)
+2. **브랜드 보드 사용**과 **테마 선택** 중 하나를 골라요.
 
-결제 링크를 개인화하면 브랜드 인지도를 강화하고 거래 중 고객 신뢰를 구축할 수 있습니다.
+   ![브랜드 보드 사용 또는 테마 선택 고르기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048883916/original/g5Zbg9nKChJVOrgsonrssj45rrLZZwOP4w.png?1750879961)
+3. **테마 선택**을 쓰는 경우 배경 색상과 버튼 색상을 조정해요.
 
-* **일관된 브랜딩**: 모든 결제 페이지가 브랜드의 컬러와 스타일에 맞춰집니다
-* **실시간 미리보기**: 저장하기 전에 디자인 변경 사항을 즉시 확인할 수 있습니다
-* **모바일 반응형 디자인**: 모든 기기에서 테마가 자연스럽게 적용됩니다
-* **간편한 연동**: 기존 브랜드 보드 설정을 사용해 브랜딩을 즉시 적용할 수 있습니다
-* **전문성 향상**: 일관된 디자인으로 신뢰성을 강화합니다
+   ![배경 색상과 버튼 색상 조정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048883956/original/h3IQPEHP8TMBu96ttwqqsWcxuU9fhQyEZA.png?1750880044)
+4. **브랜드 보드 사용**을 쓰는 경우 **브랜드 보드 선택** 드롭다운에서 원하는 브랜드 보드를 골라요.
 
-***
+   ![브랜드 보드 선택 드롭다운에서 브랜드 보드 고르기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048883996/original/MN03NS9nW42hMbGh1KhDGLuuYzhfhXiW_w.png?1750880156)
+5. **실시간 미리보기** 패널에서 바뀐 색상이 어떻게 보이는지 확인해요.
 
-### **결제 링크를 커스터마이징하는 방법**
+   ![실시간 미리보기 패널에서 변경된 색상 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048883980/original/25yT-tPuU1CY2XrJd2uT98-XYVfOqnZHZA.png?1750880099)
+6. 오른쪽 아래의 파란색 **저장** 버튼을 눌러 변경 내용을 저장해요. 결제 링크를 열어서 변경 내용이 제대로 적용됐는지 확인하세요.
 
-결제 링크 커스터마이징은 모든 거래에서 브랜드가 돋보이도록 하는 빠른 과정입니다.
+## 브랜드 보드 연동
 
-* `Payments(결제) → Settings(설정) → Payment Link Customization(결제 링크 커스터마이징)`로 이동하세요.
+브랜드 보드 연동을 쓰면 선택한 브랜드 보드의 색상과 스타일이 모든 결제 링크에 자동으로 적용돼요. 그래서 브랜드의 시각적 일관성을 쉽게 유지할 수 있어요. 브랜드 보드를 수정하면 모든 결제 링크에 바로 반영되므로 **테마 선택**으로 일일이 직접 설정하지 않아도 돼요.
 
-![결제 링크 커스터마이징 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048883900/original/yMVjOmX7_XYJYS9-mD1xQI1abI98vpLFKA.png?1750879902)
+브랜드 보드에 대해 더 알고 싶다면 '브랜드 보드 만들기' 문서를 참고하세요.
 
-* **Use Brand Board(브랜드 보드 사용)** 또는 **Choose Theme(테마 선택)** 중에서 선택하세요.
+## 자주 묻는 질문
 
-![브랜드 보드 또는 테마 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048883916/original/g5Zbg9nKChJVOrgsonrssj45rrLZZwOP4w.png?1750879961)
+### 이미 만든 결제 링크도 새 브랜딩으로 자동 변경되나요?
+네. 저장하면 선택한 테마가 기존 결제 링크와 앞으로 만들 결제 링크 모두에 적용돼요.
 
-* 커스텀 테마를 사용하는 경우 배경과 버튼 컬러를 조정하세요.
+### 결제 링크마다 다른 테마를 쓸 수 있나요?
+아니요. 테마는 계정 안의 모든 결제 링크에 똑같이 적용돼요.
 
-![커스텀 테마 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048883956/original/h3IQPEHP8TMBu96ttwqqsWcxuU9fhQyEZA.png?1750880044)
+### 브랜드 보드를 만들어 두지 않았어요. 그래도 쓸 수 있나요?
+네. **테마 선택**으로 스타일을 직접 적용하면 돼요. 브랜드 보드를 만드는 방법은 '브랜드 보드 만들기' 문서를 참고하세요.
 
-* 브랜드 보드를 사용하는 경우 Select a Brand Board(브랜드 보드 선택) 드롭다운에서 원하는 브랜드 보드를 선택하세요.
+### 모바일 기기에서도 브랜딩이 그대로 보이나요?
+네. 모든 스타일 옵션은 반응형이라 어떤 기기에서든 똑같이 표시돼요.
 
-![브랜드 보드 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048883996/original/MN03NS9nW42hMbGh1KhDGLuuYzhfhXiW_w.png?1750880156)
-
-* \*\*Live Preview Panel(실시간 미리보기 패널)\*\*에서 업데이트된 컬러가 적용된 실시간 미리보기를 통해 변경 사항을 검토하세요.
-
-![실시간 미리보기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048883980/original/25yT-tPuU1CY2XrJd2uT98-XYVfOqnZHZA.png?1750880099)
-
-* 우측 하단의 파란색 **Save(저장)** 버튼을 클릭하여 변경 사항을 저장하세요. 결제 링크를 열어 올바른 변경 사항이 적용되었는지 확인하세요.
-
-***
-
-### **브랜드 보드 연동**
-
-브랜드 보드 연동은 선택한 브랜드 보드의 컬러와 스타일을 모든 결제 링크에 자동으로 적용하여 일관된 시각적 아이덴티티를 유지하는 과정을 간소화합니다. 브랜드 보드의 모든 업데이트는 링크 전체에 즉시 반영되므로 \*\*Choose Theme(테마 선택)\*\*을 사용한 수동 커스터마이징이 필요하지 않습니다.
-
-[브랜드 보드에 대해 더 자세히 알아보려면 여기를 클릭하세요.](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/10-%EB%A7%88%EC%BC%80%ED%8C%85/how-to-create-a-brand-board.md)
-
-***
-
-### **자주 묻는 질문**
-
-**Q: 기존 결제 링크가 새 브랜딩으로 자동 업데이트되나요?** 네, 저장하면 선택한 테마가 현재와 향후 모든 링크에 전체적으로 적용됩니다.
-
-**Q: 결제 링크마다 다른 테마를 사용할 수 있나요?** 아니요, 테마는 계정의 모든 결제 링크에 전체적으로 적용됩니다.
-
-**Q: 브랜드 보드를 설정하지 않았다면 어떻게 하나요?** 커스텀 테마 빌더를 사용해 수동으로 스타일을 적용할 수 있습니다. [브랜드 보드를 만드는 방법을 알아보려면 여기를 클릭하세요.](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/10-%EB%A7%88%EC%BC%80%ED%8C%85/how-to-create-a-brand-board.md)
-
-**Q: 모바일 기기에서도 브랜딩이 표시되나요?** 네, 모든 스타일링 옵션은 반응형이며 모든 기기에서 표시됩니다.
-
-**Q: 결제 링크 커스터마이징이 결제 처리나 보안에 영향을 주나요?** 아니요, 변경 사항은 순전히 시각적인 것으로 기능이나 규정 준수에 영향을 주지 않습니다.
-
-***
-
-_원문 최종 수정: Wed, 25 Jun, 2025 at 2:58 PM_ _Hyperclass 사용 가이드 — hyperclass.ai_
+### 결제 링크를 꾸미면 결제 처리나 보안에 영향이 있나요?
+아니요. 시각적인 부분만 바뀌고, 기능이나 규정 준수에는 영향이 없어요.

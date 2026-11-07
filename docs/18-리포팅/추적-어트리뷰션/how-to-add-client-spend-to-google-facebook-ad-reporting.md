@@ -1,25 +1,23 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 18-리포팅 > 추적-어트리뷰션
+원문: /support/solutions/articles/48001220946-how-to-add-client-spend-to-google-facebook-ad-reporting-
+번역일: 2026-11-07
+카테고리: 18-리포팅
 ---
 
-# Google/Facebook 광고 보고서에 고객 지출 비용을 추가하는 방법
+# Google·Facebook 광고 리포팅에 Client Spend 추가하기
 
-고객 지출(Client Spend) 설정은 에이전시 관리자와 에이전시 사용자에게만 표시됩니다. 에이전시는 고객 지출 옆의 설정에서 마크업 값을 설정할 수 있어요.
+월 관리 수수료를 고객의 광고비에 더해서 광고 리포팅에 보여 줄 수 있어요. 이 문서에서는 **Client Spend**(고객 지출액) 설정이 무엇이고 어디에서 쓰는지 안내해요.
 
-고객 지출 = 모든 광고 비용 + 관리 수수료
+**Client Spend** 설정은 **에이전시 관리자**와 에이전시 사용자에게만 보여요. 에이전시는 **Client Spend** 옆에 있는 설정에서 마크업 값을 지정할 수 있어요.
 
-## 고객 지출을 찾고 추가하는 방법
+Client Spend = 모든 광고 비용 + 관리 수수료
 
-고객의 광고 지출에 월별 관리 수수료를 추가하세요. 이 마크업 수수료는 모든 비용 관련 지표에 추가됩니다.
+## Client Spend 설정 위치와 추가 방법
 
-![고객 지출 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48248546597/original/WhIqtaEzLdwXD4JFPDuY1yLHw4MQdQpmsw.png?1662023678)
+고객의 광고비에 월 관리 수수료를 더해 보세요. 이렇게 추가한 마크업 수수료는 비용과 관련된 모든 지표에 반영돼요.
 
-![마크업 설정 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48248546731/original/P140visHi_kkLeH6Y2u2ctvCyjcxR6KU8A.png?1662023715)
+![Client Spend 설정 위치 화면 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48248546597/original/WhIqtaEzLdwXD4JFPDuY1yLHw4MQdQpmsw.png?1662023678)
 
-![최종 설정 완료 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48248546829/original/VWhcXIp9ITP_NJd_FYspfGK7e-Hx9YzLWQ.png?1662023747)
+![Client Spend 설정 위치 화면 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48248546731/original/P140visHi_kkLeH6Y2u2ctvCyjcxR6KU8A.png?1662023715)
 
----
-*원문 최종 수정: Mon, 5 Sep, 2022 at 9:05 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+![Client Spend 설정 위치 화면 3](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48248546829/original/VWhcXIp9ITP_NJd_FYspfGK7e-Hx9YzLWQ.png?1662023747)

@@ -1,53 +1,42 @@
 ---
-
-번역일: 2026-04-06
+원문: /support/solutions/articles/155000003545-hide-third-party-calendar-details
+번역일: 2026-11-07
 카테고리: 04-캘린더-예약
 ---
 
-# 외부 캘린더 세부 정보 숨기기
+# 연동한 외부 캘린더의 일정 상세 정보 숨기기
 
-동기화된 이벤트에 대한 **비공개 모드(Private Mode)**를 추가했습니다. 이 기능을 통해 사용자는 외부 캘린더의 세부 정보를 기밀로 유지할 수 있어요. 이 설정을 활성화하면 캘린더를 연결한 본인만 이벤트 세부 정보를 볼 수 있고, 다른 팀원들은 플랫폼에서 해당 정보를 볼 수 없습니다. 이 기능은 **개인정보 보호를 강화**하고 외부 캘린더 이벤트에 대한 **무단 접근을 방지**하기 위해 설계되었습니다.
+외부 캘린더에서 가져온 일정의 상세 정보를 다른 사람에게 보이지 않게 하는 방법을 안내해요. 이 설정을 켜면 캘린더를 연결한 사용자만 일정 상세 정보를 볼 수 있어요. 다른 사용자는 하이퍼클래스에서 상세 정보를 볼 수 없어서 개인 정보를 지키고, 허락 없는 접근을 막을 수 있어요.
 
-**목차**
-- [사용 방법](#사용-방법)
-  - [내 프로필](#내-프로필)
-  - [캘린더 설정 > 연동](#캘린더-설정-연동)
-- [참고사항](#참고사항)
+## 사용 방법
 
-## **사용 방법**
+이 기능은 **내 프로필**과 **캘린더 설정 > 연결**, 두 곳에서 켜고 끌 수 있어요.
 
-이 기능은 두 곳에서 접근하고 관리할 수 있습니다: 내 프로필(My Profile) & 캘린더 연동(Calendar Connections)
+### 내 프로필에서 설정하기
 
-### **내 프로필**
+1. **설정 > 내 프로필**로 이동하세요.
+2. 아래로 스크롤해서 **캘린더 구성** 섹션을 찾으세요.
+3. **Private Mode for Synced Events**(동기화된 이벤트 비공개 모드) 옵션을 필요에 따라 켜거나 끄세요.
 
-- `Settings(설정) > My Profile(내 프로필)`로 이동하세요.
-- 아래로 스크롤하여 Calendar Configuration(캘린더 설정) 섹션을 찾으세요.
-- Private Mode for Synced Events(동기화된 이벤트 비공개 모드) 옵션을 찾아 필요에 따라 활성화하거나 비활성화하세요.
+### 캘린더 설정 > 연결에서 설정하기
 
-### **캘린더 설정 > 연동**
+1. **캘린더 설정 > 연결**로 이동하세요.
+2. 아래로 스크롤해서 **Private Mode for Synced Events** 옵션을 찾으세요.
+3. 원하는 대로 켜거나 끄세요.
 
-- `Calendar Settings(캘린더 설정) > Connections(연동)`로 이동하세요.
-- Private Mode for Synced Events(동기화된 이벤트 비공개 모드) 옵션까지 스크롤하세요.
-- 원하는 대로 설정을 활성화하거나 비활성화하세요.
+{% hint style="info" %}
+이 기능은 **실험실**에서 사용할 수 있고, 모든 사용자에게 기본으로 켜져 있어요. 동기화된 일정은 나에게만 보이기 때문에 캘린더 공개 범위를 완전히 직접 관리할 수 있어요.
+{% endhint %}
 
-## **참고사항**
+![Private Mode for Synced Events 설정 화면 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033207537/original/0RbVh3SPWdcjZnoI9flFgrSOAeZXjJKaGA.jpeg?1726780198)
+![Private Mode for Synced Events 설정 화면 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033207540/original/5HtfEDLiYkMeLefMQbnqHQS0EIsWl22Ikg.jpeg?1726780198)
 
-이 기능은 Labs에서 사용할 수 있으며, 모든 사용자에게 기본적으로 활성화되어 있습니다. 이를 통해 동기화된 이벤트가 본인에게만 표시되어 캘린더 개인정보 보호를 완전히 제어할 수 있어요.
+{% hint style="warning" %}
+**중요**
 
-![동기화된 이벤트 비공개 모드 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033207537/original/0RbVh3SPWdcjZnoI9flFgrSOAeZXjJKaGA.jpeg?1726780198)
+1. 지원하는 캘린더: 이 기능은 Google 캘린더와 Outlook 캘린더에만 적용돼요. iCloud는 비공개/공개 일정 설정을 지원하지 않아서, iCloud 일정은 모든 사용자에게 그대로 보여요.
+2. Google·Outlook 캘린더의 비공개 일정:
 
-![캘린더 연동 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033207540/original/5HtfEDLiYkMeLefMQbnqHQS0EIsWl22Ikg.jpeg?1726780198)
-
----
-
-**중요 안내사항:**
-
-- **지원 캘린더:** 이 기능은 Google과 Outlook 캘린더에만 적용됩니다. iCloud는 개인/공개 이벤트 설정을 지원하지 않아서, 모든 iCloud 이벤트는 모든 사용자에게 표시됩니다.
-
-- **Google 및 Outlook 캘린더의 비공개 이벤트:**
-  - 외부 캘린더(Google/Outlook)에서 개별 이벤트가 비공개로 설정되어 있으면, "이벤트 숨기기" 토글 활성화 여부와 관계없이 플랫폼에서 기본적으로 자동 숨김 처리됩니다.
-  - "이벤트 숨기기" 토글이 **켜져** 있으면, 동기화된 모든 이벤트(비공개 및 공개 모두)가 세부 정보 대신 **'바쁨(Busy)'**으로만 표시됩니다.
-
----
-*원문 최종 수정: Wed, 5 Feb, 2025 at 5:10 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+   - 외부 캘린더(Google/Outlook)에서 개별 일정을 비공개로 지정했다면, **Hide Events**(이벤트 숨기기) 토글을 켰는지와 상관없이 하이퍼클래스에서는 기본으로 자동 숨김 처리돼요.
+   - **Hide Events** 토글을 켜면 비공개·공개 일정을 포함한 동기화된 모든 일정이 상세 정보 대신 "Busy"(바쁨)로 표시돼요.
+{% endhint %}

@@ -1,27 +1,35 @@
 ---
-원문: https://help.leadconnectorhq.com/support/solutions/articles/155000004157-how-to-create-your-whitelabel-community-inside-a-subaccount
-번역일: 2026-04-23
-카테고리: membership-and-communities
+원문: /support/solutions/articles/155000004156-how-to-create-your-whitelabel-community
+번역일: 2026-11-07
+카테고리: 17-멤버십-커뮤니티
 ---
 
-# 하위 계정에서 화이트라벨 커뮤니티 만들기
+# 화이트라벨 커뮤니티 만들기
 
-화이트라벨 커뮤니티를 만드는 것은 커뮤니티 기능을 내 브랜드에 맞게 커스터마이징하는 과정입니다. 단계별 가이드를 제공해 드릴게요:
+서브 계정의 커뮤니티 기능을 내 브랜드에 맞게 설정해서 화이트라벨 커뮤니티를 만드는 방법을 안내해요. 내 도메인으로 커뮤니티를 열고 싶을 때 따라 하세요.
 
-### 1. 하위 계정에 접근하기
+## 1. 서브 계정에서 커뮤니티 메뉴 열기
 
-- 앱에 로그인하세요.
-- 커뮤니티를 만들고자 하는 하위 계정으로 이동하세요.
-- `Memberships(멤버십) > Communities(커뮤니티)`로 이동하세요.
+1. 하이퍼클래스에 로그인하세요.
+2. 커뮤니티를 만들 서브 계정으로 이동하세요.
+3. **멤버십 > 커뮤니티**로 이동하세요.
 
-### 2. 커스텀 도메인 설정하기 (화이트라벨링)
+## 2. 사용자 지정 도메인 설정하기
 
-- `Community Settings(커뮤니티 설정) > Domains(도메인)`에서 커뮤니티를 호스팅할 커스텀 도메인(또는 서브도메인)을 추가하세요(클라이언트 포털 내에서). 예: community.yourdomain.com
-- DNS 설정을 업데이트하여 서버를 가리키도록 하는 안내사항을 따르세요. 이렇게 하면 커뮤니티가 내 도메인 하에서 완전한 화이트라벨로 운영됩니다.
-- 참고: 커뮤니티는 클라이언트 포털 내에 존재하므로, 도메인 설정은 클라이언트 포털을 위한 것입니다.
+커뮤니티는 클라이언트 포탈 안에서 운영돼요. 그래서 커뮤니티를 연결할 도메인도 클라이언트 포탈용으로 설정해야 해요.
 
-![커뮤니티 도메인 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155036347756/original/r2Awd-Fj-gJQUzaJolsec9Me6B2oMMsQ5w.png?1731332011)
+1. **Community Settings**(커뮤니티 설정) > **도메인**으로 이동하세요.
+2. 커뮤니티를 운영할 사용자 지정 도메인(또는 서브도메인)을 추가하세요. 예: `community.yourdomain.com`
+3. 안내에 따라 DNS 설정을 업데이트해서 도메인이 하이퍼클래스 서버를 가리키게 하세요. 이렇게 하면 커뮤니티가 내 도메인으로 완전히 화이트라벨돼요.
 
----
-*원문 최종 수정: Mon, 11 Nov, 2024 at 7:36 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+도메인이 무엇인지 간단히 알고 싶다면 [도메인 종류별 설정 방법](../../06-사이트/일반-설정/how-to-set-up-different-domain-types-in-hyperclass-websites-email-wordpress-more.md)을 참고하세요.
+
+{% hint style="info" %}
+커뮤니티는 클라이언트 포탈 안에 있어서, 도메인 설정은 **클라이언트 포탈**용으로 해야 해요.
+{% endhint %}
+
+![커뮤니티 도메인 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155036347392/original/L9YL09Ea_8jMyqkey9KoJ0bl6JugLN_aDw.png?1731331756)
+
+## 3. 커뮤니티 만들기
+
+커뮤니티를 만드는 방법을 포함한 커뮤니티 관련 도움말은 커뮤니티 도움말 모음에서 확인하세요.

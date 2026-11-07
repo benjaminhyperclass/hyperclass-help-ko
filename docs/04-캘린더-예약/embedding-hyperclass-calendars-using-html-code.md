@@ -1,21 +1,21 @@
 ---
-
-번역일: 2026-04-06
+원문: /support/solutions/articles/48000982201-embedding-highlevel-calendars-using-html-code
+번역일: 2026-11-07
 카테고리: 04-캘린더-예약
 ---
 
-# HTML 코드를 사용한 하이퍼클래스 캘린더 임베드
+# 하이퍼클래스 캘린더를 HTML 코드로 다른 웹사이트에 임베드하기
 
-- `Calendars(캘린더) → Calendar Settings(캘린더 설정)`으로 이동하세요
-- 임베드하고 싶은 특정 캘린더에서 "점 3개" 아이콘을 클릭하고 `Share(공유)`를 선택하세요
-- 팝업 창에서 `Embed Code(임베드 코드)` 탭을 선택하세요
-- `Copy(복사)` 버튼을 클릭하세요
-- 원하는 다른 웹사이트의 커스텀 코드 요소에 임베드 코드를 붙여넣으세요
+임베드 코드를 복사해 다른 웹사이트에 붙여 넣으면 하이퍼클래스 캘린더를 그 사이트에 보여 줄 수 있어요. 이 문서에서는 코드를 복사하는 방법을 안내해요.
 
-**참고:** 하이퍼클래스 퍼널이나 웹사이트 페이지 안에 하이퍼클래스 캘린더를 삽입하려면, 페이지 빌더의 Calendar 요소를 사용하시면 됩니다. 이 요소를 사용하면 표시하고 싶은 캘린더를 선택할 수 있고, 임베드 코드를 수동으로 추가할 필요 없이 자동으로 삽입됩니다.
+1. **캘린더 > 캘린더 설정**으로 이동하세요.
+2. 임베드할 캘린더에서 점 세 개 아이콘을 클릭하고 **공유**를 선택하세요.
+3. 팝업 창에서 **임베드 코드** 탭을 선택하세요.
+4. **복사**를 클릭하세요.
+5. 캘린더를 넣을 다른 웹사이트에서 커스텀 코드 요소를 열고, 복사한 임베드 코드를 붙여 넣으세요.
 
-![HTML 코드로 캘린더 임베드하기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155019148549/original/pl4zuB3ULiZ4VUKS7dfbIW3S0605VpCqjA.gif?1706645557)
+![캘린더 임베드 코드를 복사하는 과정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155019148549/original/pl4zuB3ULiZ4VUKS7dfbIW3S0605VpCqjA.gif?1706645557)
 
----
-*원문 최종 수정: Tue, 17 Mar, 2026 at 7:34 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+{% hint style="info" %}
+하이퍼클래스의 퍼널이나 웹사이트 페이지에 캘린더를 넣으려면 임베드 코드가 필요 없어요. 페이지 빌더의 **캘린더** 요소를 쓰면 표시할 캘린더를 골라 바로 넣을 수 있어요.
+{% endhint %}

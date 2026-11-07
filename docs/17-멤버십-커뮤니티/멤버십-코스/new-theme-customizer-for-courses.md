@@ -1,167 +1,191 @@
 ---
-원문: https://help.leadconnectorhq.com/support/solutions/articles/155000006554-new-theme-customizer-for-courses
-번역일: 2026-04-23
-카테고리: 멤버십 및 커뮤니티
+원문: /support/solutions/articles/155000004888-new-theme-customizer-for-courses
+번역일: 2026-11-06
+카테고리: 17-멤버십-커뮤니티
 ---
 
-# 강의용 새 테마 커스터마이저
+# 코스 사이트 디자인을 바꾸는 새 테마 커스터마이저
 
-## 개요
+새 테마 커스터마이저로 코스 사이트의 모양을 코딩 없이 꾸밀 수 있어요. 로고, 검색창, 히어로 섹션, 코스 사이드바 같은 주요 디자인 요소를 직접 조정해 브랜드에 맞는 학습 화면을 만들 수 있어요.
 
-새 테마 커스터마이저는 사용자가 강의 사이트의 외관을 쉽게 개인화할 수 있는 강력한 새 기능입니다. 로고와 검색바부터 히어로 섹션과 강의 사이드바까지, 사용자는 주요 디자인 요소를 완전히 제어하여 시각적으로 매력적이고 브랜드에 맞는 학습 경험을 만들 수 있습니다.
+요소를 표시하거나 숨기고, 색상과 텍스트를 바꾸고, 콘텐츠 블록을 추가하고, 디자인을 템플릿으로 저장할 수 있어요. 변경 내용은 실시간 미리보기에 바로 반영돼요. 시스템 템플릿과 내 템플릿을 쓰면 원하는 디자인을 빠르게 적용할 수 있어요.
 
-직관적인 표시/숨김 토글, 색상 및 텍스트 재정의, 커스텀 콘텐츠 블록, 템플릿 저장 옵션을 통해 사용자는 코딩 전문 지식 없이도 브랜드 아이덴티티에 맞는 강의 사이트를 손쉽게 디자인할 수 있습니다. 실시간 미리보기로 변경사항이 즉시 반영되며, 시스템 및 커스텀 템플릿으로 빠른 배포를 위한 유연성을 제공합니다.
+이 문서에서는 사용할 수 있는 기능과 사용자 지정 옵션을 하나씩 살펴봐요.
 
-이 문서는 사용 가능한 각 기능과 커스터마이제이션 옵션에 대한 자세한 설명을 제공합니다.
+## 새 테마 커스터마이저 사용하기
+
+1. 코스 개요(**Course Outline**)에서 **커스터마이징**을 클릭하세요.
+
+![코스 개요의 커스터마이징 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044175223/original/OFrDPO2uoIZ7HZ4q7AUeYvcOSkHje9xMrw.png?1743167531)
+
+2. **시스템 템플릿 둘러보기**를 클릭하세요.
+
+3. **네오 클래식 테마**를 선택하면 새 커스터마이저를 쓸 수 있어요.
+
+{% hint style="info" %}
+**템플릿 둘러보기**에서 네오 클래식을 적용하면 테마 이름이 **네오 클래식 테마**로 표시돼요. 직접 저장한 템플릿과 구분하기 쉽도록 한 거예요.
+{% endhint %}
+
+**템플릿으로 저장**
+
+**템플릿으로 저장**을 쓰면 지금 꾸민 테마를 저장해 두고 다시 쓸 수 있어요.
+
+1. 테마 편집기에서 **템플릿으로 저장**을 클릭하세요.
+
+2. 이름 입력 창에 템플릿 이름을 입력하세요.
+
+3. **저장**을 클릭하세요.
+
+4. 저장이 끝나면 새로 만든 템플릿 화면으로 이동해요.
+
+**내 템플릿 (비어 있을 때)**
+
+저장한 템플릿이 아직 없으면 **내 템플릿**에 더 알기 쉬운 안내가 담긴 빈 화면이 나와요.
+
+**활성화한 테마 이름의 로딩 표시**
+
+테마를 활성화하면 변경이 적용되는 동안 활성화한 테마 이름에 반짝이는 로딩 효과(shimmer)가 나타날 수 있어요.
+
+**템플릿 편집기의 CTA 버튼과 툴팁 변경**
+
+- 주요 CTA 버튼이 **템플릿 활성화**로 바뀌었어요.
+- 버튼 이름과 툴팁이 더 알기 쉽게 바뀌었어요.
+
+![템플릿 편집기 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044175300/original/RNC6wDcIIWamj1ZTroRlIQCqyFfNXrJElw.png?1743167569)
+
+4. 사용할 수 있는 사용자 지정 옵션으로 원하는 대로 수정한 뒤, 나중에 쓸 수 있게 저장하세요.
+
+5. 저장했다면 **커스터마이징** 메인 화면의 **내 템플릿**에서 찾을 수 있어요.
 
 ---
 
-## 새 테마 커스터마이저 사용 방법
+## 주요 기능과 사용자 지정 옵션
 
-- 강의 개요에서 "Customize(커스터마이즈)" 옵션으로 이동하세요.
+**1. 로고 (필수)**
 
-![강의 커스터마이즈 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044175223/original/OFrDPO2uoIZ7HZ4q7AUeYvcOSkHje9xMrw.png?1743167531)
+- **공개 범위**: **표시** 또는 **숨기기**를 선택해요.
+- **Category Types**(유형): **문자**, **이미지**
+- **Logo Action**(로고 동작): 로고를 클릭했을 때 사용자가 이동할 곳을 정해요.
+  - 사이트 홈
+  - 상품 홈
+- **Height Options**(높이): **작게**, **미디엄**
+- 위치: 일반적으로 헤더의 왼쪽 위나 가운데에 놓여요.
 
-- "Browse System Templates(시스템 템플릿 찾아보기)"를 클릭하세요.
+**2. Search Bar**(검색창) (필수)
 
-- "Neo Classic" 테마를 선택하여 새 커스터마이저를 활용하세요.
+- **공개 범위**: **표시** 또는 **숨기기**를 선택해요.
+- **Search Helper Text**(검색 안내 문구): 검색창 안에 안내 문구를 넣어 사용자가 무엇을 입력하면 되는지 알려 줘요.
+- 모양 속성:
+  - **배경 색상** 덮어쓰기(Override)
+  - 텍스트 색상 덮어쓰기(Override)
 
-![Neo Classic 테마 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044175300/original/RNC6wDcIIWamj1ZTroRlIQCqyFfNXrJElw.png?1743167569)
+  ![검색창 사용자 지정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044187405/original/KBNa6b3XissJF0OX0Ux99bkjN2MQ21Ao5Q.png?1743175111)
 
-- 사용 가능한 커스터마이제이션 옵션에 따라 수정을 하고 향후 사용을 위해 저장할 수 있습니다.
+**3. 히어로 섹션 (필수)**
 
-- 저장하기로 선택하면, 나중에 메인 "Customize(커스터마이즈)" 화면의 "My Templates(내 템플릿)" 옵션에서 찾을 수 있습니다.
+코스 페이지에서 맨 위에 보이는 영역의 모양을 바꿀 수 있어요.
 
-## 주요 기능 및 커스터마이제이션 옵션
+- **공개 범위**: **표시** 또는 **숨기기**를 선택해요.
+- **Appearance Types**(모양 유형):
+  - 이미지 배경
+  - 단색 배경용 색상 선택기
+- **Overlay Options**(오버레이):
+  - **No Overlay**(오버레이 없음) 체크박스
+  - 오버레이 색상과 불투명도 설정
+- **Course Info Customization**(코스 정보 사용자 지정):
+  - 제목: 텍스트, 색상 덮어쓰기, 굵게/기울임, 정렬(왼쪽, 가운데, 오른쪽)
+  - 설명: 텍스트, 색상 덮어쓰기, 굵게/기울임, 정렬
+- **Spacing Options**(간격):
+  - **Full Height**(전체 높이)
+  - **미디엄**
+  - **작게**
+- **Start Button Customization**(시작 버튼 사용자 지정):
+  - 텍스트: 색상 덮어쓰기, 내용
+  - 버튼: 색상 덮어쓰기, 정렬
 
-### 1. 로고 (필수)
+![히어로 섹션 사용자 지정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155067617584/original/gE3OxzwgjoKfk1ZnSnsaqb1GVyc_lxUGMQ.jpeg?1774361205)
 
-- 표시: 보이기/숨기기 옵션
-- 카테고리 유형: 텍스트, 이미지
-- 로고 액션: 로고 클릭 시 사용자를 다음으로 리다이렉트하는 액션 설정:
-  - Site Home(사이트 홈)
-  - Product Home(상품 홈)
-- 높이 옵션: Small(작게), Medium(보통)
-- 위치: 일반적으로 헤더의 왼쪽 상단 또는 중앙
+**4. Welcome Body**(웰컴 본문) (**Add Section**: 섹션 추가)
 
-### 2. 검색바 (필수)
+웰컴 본문에는 이미지, 텍스트, 동영상, CTA 같은 콘텐츠 블록을 여러 개 추가할 수 있어요.
 
-- 표시: 보이기/숨기기 옵션
-- 검색 도움말 텍스트: 사용자를 안내하기 위해 검색바 내부에 안내 텍스트 추가
-- 외관 속성:
-  - Background Colour Override(배경색 재정의)
-  - Text Colour Override(텍스트색 재정의)
+- **Image Block**(이미지 블록):
+  - **이미지 업로드**
+  - 이미지 동작 설정(클릭하면 이동할 URL 링크)
+- **Text Block**(텍스트 블록):
+  - **텍스트 정렬**(왼쪽, 가운데, 오른쪽)
+  - 색상 덮어쓰기, 굵게, 기울임
+  - 표시할 동영상을 직접 업로드
+- **Custom Block**(사용자 지정 블록):
+  - 텍스트: 정렬, 색상 덮어쓰기, 굵게, 기울임
+  - 이미지: **이미지 업로드**, 이동할 URL 추가
+  - CTA 버튼: 버튼 색상, 텍스트 색상, 내용, 이동할 링크 설정. CTA로 수강생의 참여를 이끌어 보세요.
+  - 동영상: 동영상 업로드
 
-![검색바 커스터마이제이션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044187405/original/KBNa6b3XissJF0OX0Ux99bkjN2MQ21Ao5Q.png?1743175111)
+**5. Course Syllabus**(코스 강의 목차) (필수)
 
-### 3. 히어로 섹션 (필수)
+코스 모듈과 강의의 개요를 보여 주는 영역이에요.
 
-![히어로 섹션 커스터마이제이션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044187453/original/XsOCn6P1dyfXZOToSQabEO0DxT3pGmbLyg.png?1743175160)
+- **공개 범위**: **표시** 또는 **숨기기**를 선택해요.
+- **Syllabus Type Selection**(목차 유형 선택):
+  - **카테고리**: 코스를 카테고리별로 정리해요.
+  - **게시글**: 목차를 코스 게시글 목록으로 보여 줘요.
+- 텍스트 필드 사용자 지정:
+  - **Categories Label**(카테고리 레이블)
+  - **곧 출시** 텍스트
+  - **더 보기** 텍스트
 
-강의 페이지의 히어로 섹션을 커스터마이즈하여 페이지 최상단 섹션의 외관을 변경하세요.
+**6. Course Sidebar**(코스 사이드바)
 
-- 표시: 보이기/숨기기 옵션
-- 외관 유형:
-  - Image background(이미지 배경)
-  - Colour Picker(색상 선택기)로 단색 배경 설정
-- 오버레이 옵션:
-  - No Overlay(오버레이 없음) 체크박스
-  - 오버레이 색상 및 투명도 커스터마이제이션
-- 강의 정보 커스터마이제이션:
-  - Title(제목): 텍스트, 색상 재정의, 굵게/기울임, 정렬(왼쪽, 중앙, 오른쪽)
-  - Description(설명): 텍스트, 색상 재정의, 굵게/기울임, 정렬
-- 간격 옵션:
-  - Full Height(전체 높이)
-  - Medium(보통)
-  - Small(작게)
-- 시작 버튼 커스터마이제이션:
-  - Text(텍스트): 색상 재정의, 내용
-  - Button(버튼): 색상 재정의, 정렬
+![코스 사이드바 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044187583/original/jRHQQlDKIFD1BaeyjR1wuzeXXNftM9dwOg.png?1743175248)
 
-### 4. Welcome Body (섹션 추가)
+- **진행률 표시줄**:
+  - 표시/숨기기
+  - 색상 덮어쓰기
+  - 텍스트 덮어쓰기(정보 아이콘에 설명이 표시돼요)
+- **Instructor Section**(강사 섹션):
+  - 표시/숨기기
+  - **Headshot Display**(프로필 사진 표시): 표시/숨기기, **이미지 업로드**
+  - **Instructor Info**(강사 정보): 제목, 이름, 직함, 소개
+- **Cross-Sell Section**(교차 판매 섹션):
 
-사용자는 웰컴 본문에 이미지, 텍스트, 비디오, CTA를 포함한 여러 콘텐츠 블록을 추가할 수 있습니다.
+  코스 상품에서 다른 오퍼를 바로 홍보해 기존 고객의 구매를 유도할 수 있어요. 사이드바의 교차 판매 블록에서 오퍼가 보이는 모양을 설정해요.
 
-- 이미지 블록:
-  - 이미지 업로드
-  - 이미지 액션 설정(클릭 시 URL 링크)
-- 텍스트 블록:
-  - 텍스트 정렬(왼쪽, 중앙, 오른쪽)
-  - 색상 재정의, 굵게, 기울임
-- 비디오 블록:
-  - 표시할 비디오를 직접 업로드
-- 커스텀 블록:
-  - Text(텍스트): 정렬, 색상 재정의, 굵게, 기울임
-  - Image(이미지): 이미지 업로드, 액션 URL 추가
-  - CTA Button(CTA 버튼): 버튼 색상, 텍스트 색상, 내용, 대상 링크 커스터마이즈. 최대 참여를 위한 전략적 CTA로 학습자를 안내하세요.
-  - Video(비디오): 비디오 업로드
-
-### 5. 강의 실라버스 (필수)
-
-강의 실라버스는 강의 모듈과 레슨의 개요입니다.
-
-- 표시: 보이기/숨기기 옵션
-- 실라버스 유형 선택:
-  - Categories(카테고리): 카테고리별로 강의 정리
-  - Posts(게시물): 강의 게시물 목록으로 실라버스 표시
-- 커스터마이즈 가능한 텍스트 필드:
-  - Categories Label(카테고리 라벨)
-  - "Coming Soon" Text("출시 예정" 텍스트)
-  - "Show More" Text("더 보기" 텍스트)
-
-### 6. 강의 사이드바
-
-![강의 사이드바](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044187583/original/jRHQQlDKIFD1BaeyjR1wuzeXXNftM9dwOg.png?1743175248)
-
-- 진행률 표시줄:
-  - 보이기/숨기기
-  - 색상 재정의
-  - 커스텀 텍스트 재정의(설명을 표시하는 정보 아이콘 포함)
-- 강사 섹션:
-  - 보이기/숨기기
-  - 프로필 사진 표시: 보이기/숨기기, 이미지 업로드
-  - 강사 정보: 제목, 이름, 직책, 약력
-- 교차 판매 섹션:
-  기존 고객이 구매하도록 강의 상품에서 직접 다른 오퍼를 홍보하세요. 사이드바의 교차 판매 블록에서 오퍼의 외관을 커스터마이즈하세요.
   - 오퍼 선택
   - 가입을 유도하는 CTA 텍스트 설정
-- 커스텀 블록:
+- **Custom Blocks**(사용자 지정 블록):
 
-![커스텀 블록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044187811/original/M6s7VEc_jQH6lwVR9MQncc0XKhS_DJP1Qw.png?1743175482)
+  ![사이드바 사용자 지정 블록 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044187811/original/M6s7VEc_jQH6lwVR9MQncc0XKhS_DJP1Qw.png?1743175482)
 
-사이드바에 커스텀 블록을 추가하여 다른 오퍼를 구축하고, 프로모션을 표시하고, 공지사항을 전달하는 등의 작업을 하세요! 커스텀 블록은 여러분이 디자인할 수 있습니다. 커스텀 블록에서는 다음을 포함하도록 선택할 수 있습니다:
+  사이드바에 사용자 지정 블록을 추가해 다른 오퍼를 넣거나, 프로모션을 보여 주거나, 공지를 전할 수 있어요. 블록은 원하는 대로 디자인할 수 있고, 다음 요소를 넣을 수 있어요.
 
-- Text(텍스트): 내용, 색상, 스타일, 정렬 커스터마이즈
-- Image Block(이미지 블록): 이미지를 업로드하고 액션 URL 할당
-- CTA Button(CTA 버튼): 내용 및 대상 링크 커스터마이즈
-
----
-
-## 추가 커스터마이제이션 옵션
-
-### 레슨 페이지 커스터마이제이션
-
-- 브레드크럼 네비게이션: 강의 홈페이지로 돌아가는 경로 역할을 하도록 표시할 수 있습니다.
-
-![브레드크럼 네비게이션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044187639/original/AEOr7JCiUvNtW6r0ajBtGnKrRQi7hyKcZg.png?1743175298)
-
-- 보이기/숨기기
-- 레슨 플레이어 설정:
-  - Background Colour Override(배경색 재정의)
-  - Auto Advance(자동 진행) (켜기/끄기)
-- 레슨 본문: 레슨 본문의 외관을 구성하여 텍스트 정렬, 완료 표시 버튼 등을 조정할 수 있습니다.
-
-![레슨 본문 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044187725/original/M1V6nfNwHIN5YqKpqmASL0K0p_MuT8-3zA.png?1743175383)
-
-- Text Alignment(텍스트 정렬): 왼쪽, 오른쪽, 중앙
-- Text Colour Override(텍스트 색상 재정의)
-
-### 카테고리 페이지 커스터마이제이션
-
-- 카테고리 사이드바:
-  - Progress Bar(진행률 표시줄): 보이기/숨기기, 색상 재정의
-  - Text Override(텍스트 재정의) (툴팁용 "i" 아이콘 포함)
+  - 텍스트: 내용, 색상, 스타일, 정렬 설정
+  - 이미지 블록: **이미지 업로드**, 이동할 URL 지정
+  - CTA 버튼: 내용과 이동할 링크 설정
 
 ---
-*원문 최종 수정: Tue, 7 Oct, 2025 at 4:43 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+
+## 추가 사용자 지정 옵션
+
+**강의 페이지 사용자 지정**
+
+- **Breadcrumb Navigation**(경로 표시): 코스 홈페이지로 돌아가는 경로를 보여 줄 수 있어요.
+
+  ![강의 페이지 경로 표시 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044187639/original/AEOr7JCiUvNtW6r0ajBtGnKrRQi7hyKcZg.png?1743175298)
+
+  - 표시/숨기기
+- **Lesson Player Settings**(강의 플레이어 설정):
+  - **배경 색상** 덮어쓰기
+  - **Auto Advance**(자동 넘김): 켜기/끄기
+- **Lesson Body**(강의 본문): 강의 본문의 모양을 설정해요. 텍스트 정렬이나 **완료로 표시** 버튼 등을 조정할 수 있어요.
+
+  ![강의 본문 사용자 지정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044187725/original/M1V6nfNwHIN5YqKpqmASL0K0p_MuT8-3zA.png?1743175383)
+
+  - **텍스트 정렬**: 왼쪽, 오른쪽, 가운데
+  - 텍스트 색상 덮어쓰기
+
+**카테고리 페이지 사용자 지정**
+
+- **Categories Sidebar**(카테고리 사이드바):
+  - **진행률 표시줄**: 표시/숨기기, 색상 덮어쓰기
+  - 텍스트 덮어쓰기(툴팁을 보여 주는 "i" 아이콘 포함)

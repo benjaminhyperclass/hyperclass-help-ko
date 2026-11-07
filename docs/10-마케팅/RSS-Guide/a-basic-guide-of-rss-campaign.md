@@ -1,128 +1,100 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 10-마케팅 > RSS Guide
+원문: /support/solutions/articles/155000004928-a-basic-guide-of-rss-campaign
+번역일: 2026-11-06
+카테고리: 10-마케팅
 ---
 
-# RSS 캠페인 기본 가이드
+# RSS 이메일 캠페인 기본 가이드
 
-Hyperclass에서는 RSS 콘텐츠 블록을 사용하여 직접 캠페인과 자동화 캠페인에 RSS 피드(아이템과 헤더)를 포함할 수 있습니다. 이를 통해 구독자들이 블로그 포스트, 뉴스 기사 등 온라인 콘텐츠 소스의 업데이트를 자동으로 받아보고 읽을 수 있습니다.
+RSS 이메일 캠페인은 RSS 피드에 올라온 게시물을 가져와 예약 발송 이메일로 보내는 기능이에요. 새 글이 올라올 때마다 뉴스레터를 새로 만들 필요 없이, 이메일 디자인 하나를 재사용하면서 구독자에게 보낼 시점을 정할 수 있어요. 이 문서에서는 설정 방법, 테스트 방법, 새 게시물이 없을 때 어떻게 되는지를 설명해요.
 
-## RSS 캠페인은 어떻게 작동하나요?
+## RSS 이메일 캠페인이란?
 
-RSS 아이템 또는 헤더 요소를 삽입하고 발송 또는 예약 섹션에서 RSS 피드 URL을 추가할 수 있습니다. 캠페인을 예약한 시점과 이메일이 발송되는 시점 사이에 게시된 모든 피드 업데이트가 포함됩니다. 피드에서 표시하고 싶은 태그를 선택하여 피드 레이아웃을 사용자 정의할 수 있습니다.
+RSS(Really Simple Syndication)는 웹사이트가 블로그 글이나 뉴스 같은 새 소식을 알릴 때 쓰는 형식이에요. RSS 이메일 캠페인은 피드 URL에서 이 소식을 읽어 와요. 그리고 예약된 발송 시점이 되면 발송 대상이 되는 게시물을 이메일에 넣어요.
 
-일반적인 RSS 아이템
-RSS 요소를 추가할 때, 피드에 있는 세부 정보에 따라 빌더에서 해당 커스텀 값을 사용할 수 있으며, 자동으로 관련 데이터를 가져옵니다.
-예를 들어, 블로그 제목과 내용만 추가하고 싶다면:
+캠페인은 직접 정한 주기에 맞춰 실행돼요. 게시물이 올라올 때마다 이메일이 따로 발송되는 건 아니에요.
 
-1단계: 템플릿에 RSS 헤더 추가
+## RSS 이메일 캠페인의 장점
 
-2단계: {{rss_item.title}}과 {{rss_item.content}}가 있는지 확인합니다. 필요한 필드에 따라 해당 커스텀 값을 추가하세요.
-3단계: 발송 또는 예약 섹션에서 RSS URL을 추가합니다.
+RSS 이메일을 반복 발송하면 블로그가 업데이트될 때마다 캠페인을 새로 만들지 않아도 구독자에게 소식을 전할 수 있어요.
 
-4단계: 캠페인을 예약합니다.
+- 수작업 줄이기: 이메일 디자인 하나를 여러 번 재사용해요.
+- 꾸준한 소식 전달: 새 게시물을 정해진 주기로 보내요.
+- 유연한 콘텐츠: 게시물 제목, 발췌문, 이미지 등 피드에서 지원하는 정보를 보여 줄 수 있어요.
+- 발송량 조절: 이메일 한 통에 들어가는 최근 게시물 수를 제한할 수 있어요.
 
-**동작 방식:** 캠페인이 발송될 때, 템플릿에서 연락처는 예약된 날짜부터의 모든 블로그 제목과 내용을 볼 수 있습니다.
+## RSS 이메일 캠페인의 작동 방식
 
-## RSS 헤더와 아이템 블록에 대한 세부 정보
+RSS 캠페인은 원본 피드, 콘텐츠 블록, RSS 전용 발송 일정으로 이루어져요. 각 요소의 역할은 아래와 같아요.
 
-RSS 헤더란 무엇인가요?
+| 컴포넌트 | 용도 |
+| --- | --- |
+| **RSS 피드 URL** | 게시된 글과 해당 글의 상세 정보를 가져와요. |
+| **RSS Items**(RSS 항목) | 제목, 발췌문, 링크 등 개별 게시물을 보여 줘요. |
+| **RSS Header**(RSS 헤더) | 피드 이름이나 설명 같은 피드 단위 정보를 선택적으로 보여 줘요. |
+| **RSS Schedule**(RSS 일정) | 캠페인이 콘텐츠를 확인하는 시점, 받는 사람, 포함할 항목 수를 정해요. |
 
-RSS 피드에서 <channel> 태그를 동적으로 채워줍니다. RSS 헤더 요소는 다음 RSS 채널 태그를 지원하며, 해당하는 커스텀 값을 사용하여 이메일에 해당 태그 값을 채워줍니다:
+게시물 자체는 **RSS Items**로 보여 줘요. **RSS Header**는 꼭 넣지 않아도 되고, **RSS Items** 블록을 대신하지도 않아요.
 
-| RSS 태그 | Hyperclass용 커스텀 값 |
-|----------|----------------------|
-| `<title>` | `{{rss_feed.title}}` |
-| `<description>` | `{{rss_feed.description}}` |
-| `<link>` | `{{rss_feed.url}}` |
-| `<lastBuildDate>` | `{{rss_feed.date}}` |
+## 시작하기 전에
 
-RSS 아이템 블록이란 무엇인가요?
+정상적으로 작동하는 RSS 피드와 이메일을 받을 대상이 준비되어 있어야 해요. 이메일을 디자인하기 전에 피드를 확인해서 어떤 게시물 정보를 쓸 수 있는지 먼저 파악해 두세요.
 
-RSS 아이템 블록은 다음 커스텀 값들을 받아들이고 해당하는 RSS 태그를 동적으로 삽입합니다:
+- **RSS 피드 URL**: 웹사이트나 다른 콘텐츠 출처에서 접근할 수 있는 올바른 피드를 쓰세요. 하이퍼클래스 블로그라면 [블로그용 RSS 피드](../../06-사이트/블로그/rss-feed-for-blogs.md)를 참고하세요.
+- 게시된 콘텐츠: 보여 주고 싶은 제목, 링크 등의 정보가 피드의 게시물에 들어 있는지 확인하세요. 하이퍼클래스 블로그의 RSS 피드에는 게시된 글만 포함되고, 임시 저장 글은 포함되지 않아요.
+- 이메일 설정: 예약하기 전에 발신자 정보와 수신 대상을 준비하세요.
 
-| RSS 태그 | 커스텀 값 | 설명 |
-|----------|-----------|------|
-| `<title/>` | `{{rss_item.title}}` | RSS 아이템의 제목, 주로 블로그 포스트 제목 |
-| `<description/>` | `{{rss_item.content}}` | HTML 형식의 RSS 아이템 요약으로, `<description>` 태그 안의 정보를 포함합니다. 피드에 `<description>` 태그가 없으면 `<content:encoded>` 태그의 정보를 표시합니다 |
-| `<link/>` | `{{rss_item.url}}` | 온라인 RSS 아이템의 텍스트 링크로, 텍스트로 표시하거나 하이퍼링크로 사용할 수 있습니다 |
-| `<content:encoded/>` | `{{rss_item.content_full}}` | RSS 아이템의 `<content:encoded>` 태그 안에 있는 전체 정보를 HTML 형식으로 표시합니다. `<content:encoded>` 태그가 없으면 `<description>` 태그의 정보를 표시합니다 |
-| `pubDate` | `{{rss_item.date}}` | RSS 아이템이 게시된 날짜를 `MMM DD, YYYY hh:mm A` 형식으로 표시합니다. 향후 사용자 정의 포맷을 지원할 예정입니다 |
-| `<dc:creator>` | `{{rss_item.author}}` | RSS 아이템의 작성자 |
-| `<media:content>` | `{{rss_item.imageUrl}}` | 이미지의 src URL을 텍스트로 제공합니다. 이미지로 렌더링하려면 `{{rss_img}}`를 사용하세요 |
+## RSS 이메일 캠페인 설정하기
 
-`{{rss_img alt="alt_text" src=rss_item.imageUrl height="200" width="200"}}`
+RSS 블록으로 이메일을 만들고, 실제 피드 URL로 테스트한 다음, 반복 발송을 위해 **RSS Schedule**을 선택해요. RSS 콘텐츠가 이메일에 채워지려면 올바른 발송 방식을 써야 해요.
 
-| `<item>` | `{{#rss_items rss_items}}` | 아무것도 표시하지 않습니다. 개별 RSS 아이템의 사용자 정의 포맷을 시작하는 데 사용됩니다 |
-| `</item>` | `{{/rss_items}}` | 아무것도 표시하지 않습니다. 개별 RSS 아이템의 사용자 정의 포맷을 닫는 데 사용됩니다 |
+1. **마케팅 > 이메일 > 캠페인 > 이메일 캠페인**으로 이동한 뒤 **New Campaign**(새 캠페인)을 만드세요.
+2. 템플릿을 열거나 **이메일 빌더**에서 새 디자인을 시작하세요. 게시물을 보여 줄 **RSS Items** 블록을 추가하세요. 피드 단위 정보도 보여 주고 싶을 때만 **RSS Header**를 추가하세요.
+3. **RSS Items**에서 지원하는 레이아웃(예: **제목**, **발췌문**)을 고르고, 제공되는 서식 옵션을 조정하세요.
 
-## RSS 캠페인을 발송하는 방법
+![RSS Items 레이아웃을 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083459049/original/emlqltn5gwkZTFOSNEz5xSr-S6tAqtQTRQ.png?1792104031)
 
-### 1. RSS 피드 URL 찾기
+4. 이메일을 미리 확인하세요. 피드 콘텐츠를 테스트하려면 **미리보기** 옆 메뉴를 열고 **테스트 이메일**을 선택하세요. 그다음 올바른 **RSS 피드 URL**과 요청하는 테스트 정보를 입력하세요. 받은 이메일을 열어 게시물 내용과 링크를 확인하세요.
+5. **Send or Schedule**(보내기 또는 일정 설정)을 클릭하고 **RSS Schedule**을 선택하세요. 피드 URL을 입력하고, 선택 가능한 반복 주기와 발송 시간을 고른 뒤 **maximum number of items**(최대 항목 수)를 설정하세요.
+6. 발신자 정보, 이메일 제목, 수신 대상을 입력하세요. 다음 실행 시간과 화면에 표시된 시간대를 확인하세요.
+7. **일정**을 클릭해 반복 캠페인을 확정하세요.
 
-- 사이트 하단이나 사이드바에서 RSS 아이콘을 찾으세요.
-- 페이지 소스를 보고 rss나 xml을 검색하세요.
-- /feed, /rss, /rss.xml과 같은 일반적인 끝말을 시도해보세요.
-- 브라우저 확장 프로그램이나 Feedbucket, CtrlQ 같은 도구를 사용하여 피드를 감지하세요.
+![반복 발송 일정을 확정하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083459116/original/9kOz3escuNkPGMImn5LIXhIyxooeb0Y-9w.png?1792104201)
 
-### 2. RSS URL 입력
+{% hint style="warning" %}
+RSS 변수가 들어 있는 이메일은 **RSS Schedule**로 보내세요. 일반 **Send Now**(즉시 보내기), **일정**, **배치 일정** 방식으로 보내면 RSS 콘텐츠가 비어 있을 수 있어요. RSS 테스트 이메일에도 올바른 **RSS 피드 URL**이 필요해요.
+{% endhint %}
 
-발송 또는 예약(Send or Schedule) → RSS Campaign으로 가서 피드 URL을 붙여넣으세요.
+자세한 화면 안내와 캠페인 관리 방법은 [RSS 이메일 캠페인 보내기](how-to-send-rss-email-campaign-s.md)를 참고하세요.
 
-![RSS URL 입력](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044064262/original/ZNtVQGvrlt2DDSMYM4nOzSPPEODXe1wULg.png?1743061150)
+## 예약된 RSS 이메일은 어떻게 발송되나요?
 
-### 3. RSS 콘텐츠 추가
+수신자가 받는 내용은 피드에 있는 게시물과 캠페인 설정에 따라 정해져요. 처음 예약된 실행 결과를 확인해 보면 의도한 대로 나오는지 알 수 있어요.
 
-이메일 빌더에서 RSS 헤더 또는 RSS 아이템 요소를 삽입하세요.
+- 새 게시물: 예약 발송 때는 피드에 있던 지난 글을 모두 보내지 않고, 해당 기간에 발송 대상이 되는 업데이트만 사용해요.
+- 최대 항목 수: 발송 대상 게시물이 설정한 제한보다 많으면, 가장 최근 게시물부터 제한 수만큼 포함해요.
+- 새 게시물이 없을 때: 예약된 주기에 피드에 새 항목이 없으면 그 회차 발송은 건너뛰어요. 발송이 건너뛰어진 이유를 알아보려면 캠페인 감사 로그를 확인하세요.
 
-![RSS 콘텐츠 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044064296/original/X-oJsYjlONXwwYwFFetlJ5SWeFMk97eHeA.png?1743061209)
+![예약된 RSS 이메일 실행 결과를 확인하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083459263/original/OqWTjQ2YrBsmVpm8htCNmFeCKothZ5mZGg.png?1792104729)
 
-### 4. 커스텀 값 설정
+## 자주 묻는 질문
 
-RSS 태그에 필요한 커스텀 필드를 추가하세요.
+### 이메일 제목에도 RSS 정보를 넣을 수 있나요?
 
-![커스텀 값 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044064334/original/jZdjc8KmvvvMg9RV-Xh1BQNg-qv4NKx1oA.png?1743061238)
+네. 하이퍼클래스에서는 `{{rss_feed.title}}` 같은 피드 단위 값을 RSS 캠페인의 이메일 제목에 쓸 수 있어요.
 
-### 5. 예약 설정
+### 테스트 이메일에서 RSS 플레이스홀더가 비어 있어요.
 
-발송 또는 예약(Send or Schedule) → RSS Schedule에서 발송 시간과 포함할 아이템 수를 설정하세요.
+테스트를 보낼 때 올바른 **RSS 피드 URL**을 입력했는지 확인하세요. 이메일 레이아웃에서 쓰는 필드가 피드에 들어 있는지도 함께 확인하세요.
 
-![예약 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044064446/original/CrG6AVKZHoYeLkyUHPKZoFR9UeeM_I6sJw.png?1743061302)
+### RSS 게시물에서 이미지가 보이지 않아요.
 
-### 6. 캠페인 예약
+피드가 호환되는 이미지 정보를 제공하지 않거나, 선택한 **RSS Items** 레이아웃이 이미지를 보여 주지 않을 수 있어요. 원본 피드를 확인하고, 이미지를 지원하는 레이아웃을 선택하세요.
 
-RSS 캠페인을 검토하고 예약하세요.
+### RSS 캠페인을 예약한 뒤에 바꿀 수 있나요?
 
-## 자주 묻는 질문(FAQ)
+수정하거나 다시 예약할 수 있는 캠페인이라면, 캠페인에서 제공하는 작업으로 편집하거나 일정을 다시 잡을 수 있어요. 최신 [RSS 캠페인 관리 방법](how-to-send-rss-email-campaign-s.md)을 따라 하세요. 변경은 다음 실행 전에 해 두세요.
 
-### 1. description이 HTML 콘텐츠인 경우는 어떻게 처리하나요?
+### RSS 이메일을 열어 보지 않은 사람에게 다시 보낼 수 있나요?
 
-RSS 기반 커스텀 변수 {{rss_item.title}}이 반환하는 값들은 HTML이 이스케이프됩니다. 예를 들어, 표현식에 &가 포함되면 반환되는 HTML 이스케이프 출력이 &amp;로 생성되거나, RSS 피드에 일반 텍스트 대신 HTML 기반 텍스트가 있으면 일반 텍스트로 렌더링됩니다.
-
-값을 이스케이프하고 싶지 않다면 "트리플 스태시(triple-stash)" {{{를 사용하세요:
-
-예: RSS 피드 소스가 다음과 같다면
-
-![RSS 피드 소스 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044064498/original/053-vudl3uozwzP1Jenv_6x0A937_zBr-g.png?1743061362)
-
-"트리플 스태시" 없이는 다음과 같이 렌더링됩니다:
-
-![트리플 스태시 없는 렌더링](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044064499/original/0lJbkcnhpyV1FeCYL-L8f1VWUhGX7TQ5TA.png?1743061362)
-
-"트리플 스태시" {{{rss_item.content}}}를 사용하면 다음과 같이 렌더링됩니다:
-
-![트리플 스태시 사용한 렌더링](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044064500/original/pgFuMeYnJqPkP0UFa3vHK8k63GH3YNiQjA.png?1743061362)
-
-### 2. 다음 달 RSS 캠페인에서 어떤 콘텐츠를 예상할 수 있나요?
-
-3월 10일에 캠페인을 만들고 3월 25일로 예약했다면, 3월 10일 이후의 모든 블로그 포스트가 3월 25일 캠페인에 포함됩니다.
-포스트 수를 제한하고 싶다면, 발송 또는 예약에서 최대 피드 수를 설정하세요. 사용자가 "5"를 지정하면, 캠페인에서 가장 최근 5개의 블로그를 보여줍니다.
-
-### 3. RSS 캠페인이 예약된 후 블로그가 없으면 어떻게 되나요?
-
-다음 주기에는 캠페인이 발송되지 않습니다. 감사 로그(audit log)에서 새로운 피드가 없어 예약이 실패했다는 항목을 확인할 수 있습니다.
-
----
-*원문 최종 수정: Thu, 27 Mar, 2025 at  2:48 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+네. 이미 발송된 RSS 캠페인이라면 사용할 수 있는 곳에서 **Resend to Unopened**(열어 보지 않은 수신자에게 재발송)를 쓰세요. 자세한 내용은 [RSS 및 배치 일정 이메일의 미열람자 재발송](resend-to-unopened-for-rss-and-batch-scheduled-emails.md)을 참고하세요.

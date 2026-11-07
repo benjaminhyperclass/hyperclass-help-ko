@@ -1,66 +1,70 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 21-어필리에이트 > 어필리에이트 프로그램
+원문: /support/solutions/articles/48001213448-affiliate-referral-page-leads-customers-cancelled-statuses
+번역일: 2026-11-07
+카테고리: 21-어필리에이트
 ---
 
-# 어필리에이트 추천 페이지 - 리드, 고객, 취소 상태
+# 제휴 추천 페이지의 리드·고객·취소됨 상태 이해하기
 
-어필리에이트 추천 페이지는 Hyperclass의 제휴 관리(Affiliate Manager) 시스템을 사용하는 어필리에이트에게 중요한 구성 요소입니다. 이 가이드는 어필리에이트와 관리자가 제휴 추천 생애주기에서 연락처가 어떻게 분류되는지—특히 리드(Leads), 고객(Customers), 취소(Cancelled) 상태로—명확하게 이해할 수 있도록 도와드립니다.
+**제휴 포털**의 추천 페이지는 하이퍼클래스 **제휴 관리자**를 쓰는 제휴 파트너에게 꼭 필요한 화면이에요. 이 문서에서는 추천으로 들어온 연락처가 리드, 고객, 취소됨 중 어디에 속하는지 알아봐요.
 
-목차
-- [추천 페이지는 어디에서 찾을 수 있나요?](#추천-페이지는-어디에서-찾을-수-있나요)
-- [추천 카테고리](#추천-카테고리)
+{% hint style="info" %}
+알림: 지금 **제휴 포털**을 업데이트하고 있어요. 그래서 이 문서의 영상이나 이미지가 실제 화면과 조금 다를 수 있어요. 곧 최신 화면으로 바꿀 예정이에요. 그동안 궁금한 점이 있으면 에게 문의하세요.
+{% endhint %}
 
-## 추천 페이지는 어디에서 찾을 수 있나요?
+## 추천 페이지는 어디에 있나요?
 
-First Promoter와 제휴 포털(Affiliate Portal) 모두에서 대시보드 상단의 Referrals를 클릭하세요.
+**제휴 포털**의 대시보드에서 **Referrals**(추천) 섹션으로 이동하면 모든 추천 활동을 볼 수 있어요.
 
-1. 제휴 포털(Affiliate Portal)을 클릭합니다
-2. 대시보드 상단의 Referrals를 클릭합니다
+1. **제휴 포털**을 클릭하세요.
+2. 대시보드 상단의 **Referrals**를 클릭하세요.
 
-![어필리에이트 추천 페이지 접근](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48216411984/original/ox9xHKZR_cJz1ApvKcjv0F7NcVBKglGY3g.png?1649973581)
+![제휴 포털 대시보드 상단의 Referrals 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155068662666/original/d3eDIPCqZ86Si_1OezFEUyrz9Oy1nUwwuw.png?1775632062)
 
-참고: 이제 이 화면에서 추천한 고객의 이름도 확인할 수 있습니다!
+{% hint style="info" %}
+참고: 이제 이 화면에서 추천 고객의 이름(First name)도 볼 수 있어요.
+{% endhint %}
 
 ## 추천 카테고리
 
-- 전체(All)
-- 리드(Lead)  
-- 무료/체험(Free/Trial)
-- 유료(Paying)
-- 취소(Canceled)
+- **모두**
+- **활성 / Paying**(결제 중)
+- **Signup**(가입)
+- **리드**(또는 **구독됨**)
+- **취소됨**
 
-### 전체(All)
+### 모두
 
-모든 추천 카테고리의 어필리에이트 고객을 모두 보여줍니다.
+모든 추천 카테고리의 제휴 고객을 한꺼번에 보여 줘요.
 
-### 리드(Lead)
+### 활성 / Paying
 
-무료 체험 가입의 첫 번째 단계만 완료한 고객들입니다.
+하이퍼클래스 구독료를 내고 있는 현재 활성 제휴 고객이에요. 이 고객이 구독을 갱신할 때마다 커미션을 받아요.
 
-![리드 상태 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48216411983/original/nHbmRrWlXV0rwsYpL0XRUdZL3t-MOinJ7Q.png?1649973581)
+{% hint style="info" %}
+참고: 구독료를 낸 고객에게서만 커미션을 받아요. 고객이 구독을 일시 중지하거나 취소하거나 환불을 요청하면 그 고객에 대한 커미션은 받지 못해요.
+{% endhint %}
 
-### 무료/체험(Free/Trial)
+### 무료 / TrialSignup
 
-가입을 완료했으며 무료 체험 중인 활성 Hyperclass 계정을 보유한 고객들입니다.
+가입을 마치고 무료 체험 중인 하이퍼클래스 계정을 가진 고객이에요.
 
-이 고객들은 "아직 고객이 아님(Not A customer yet)" 상태로 표시됩니다. 이는 체험 중이며 첫 번째 구독료를 결제할 때 고객이 된다는 의미입니다.
+이 고객의 상태에는 **Not A customer yet**(아직 고객이 아님)이라고 표시돼요. 체험 중이라는 뜻이고, 첫 구독료를 내면 고객이 돼요.
 
-![무료/체험 상태 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48216412279/original/91zS2uQiNlF6Jta-YUX948iJxkxdestjHg.png?1649973819)
+### 리드 (또는 구독됨)
 
-### 유료(Paying)
+무료 체험 가입의 첫 번째 단계만 마친 고객이에요. 내 추천 링크로 가입을 시작했지만 끝까지 마치지 않아서 무료 체험이 시작되지 않았어요.
 
-현재 Hyperclass 구독료를 결제하고 있는 활성 어필리에이트 고객들입니다. 이 고객들이 구독을 갱신할 때마다 수수료를 받게 됩니다!
+![리드 상태의 추천 목록 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48216411983/original/nHbmRrWlXV0rwsYpL0XRUdZL3t-MOinJ7Q.png?1649973581)
 
-참고: 구독료를 결제하는 고객에 대해서만 수수료를 받을 수 있습니다. 고객이 일시정지, 취소하거나 환불을 요청하는 경우 해당 고객에 대한 수수료를 받지 못합니다.
+{% hint style="info" %}
+참고: 이 상태의 추천에서는 상태가 "리드"로 보이기도 하고 "구독됨"으로 보이기도 해요. 여기서 "구독됨"과 "리드"는 같은 뜻이에요.
+{% endhint %}
 
-### 취소(Canceled)
+### 취소됨
 
-Hyperclass 구독을 취소한 고객들입니다. 현재 이 고객들에 대한 수수료를 받고 있지 않습니다. 이 고객들이 구독을 재개하면 다시 유료 카테고리로 전환됩니다.
+하이퍼클래스 구독을 취소한 고객이에요. 이 고객에게서는 지금 커미션을 받지 못해요. 이 고객이 구독을 다시 갱신하면 결제 중 카테고리로 돌아가요.
 
-참고: 때때로 어필리에이트 고객이 마켓플레이스 서비스를 취소할 때 어필리에이트 소프트웨어에서 일시적으로 "취소됨"으로 표시되는 버그가 있습니다. Hyperclass에 대한 다음 결제가 이루어지면 계정이 다시 "활성"으로 표시됩니다. 이 문제를 인지하고 있으며 수정 작업 중입니다. 취소된 고객에 대한 설명이 필요하시면 지원팀에 문의해 주세요.
-
----
-*원문 최종 수정: Thu, 8 May, 2025 at 6:48 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+{% hint style="info" %}
+참고: 제휴 고객이 마켓플레이스 서비스를 취소하면 제휴 소프트웨어가 해당 고객을 일시적으로 "취소됨"으로 표시하는 버그가 있어요. 그 고객이 하이퍼클래스 구독료를 다음에 결제하면 내 계정에서 다시 "활성"으로 표시돼요. 이 문제는 알고 있고 수정 중이에요. 취소된 고객을 확인하는 데 도움이 필요하면 하이퍼클래스 고객지원에 문의하세요.
+{% endhint %}

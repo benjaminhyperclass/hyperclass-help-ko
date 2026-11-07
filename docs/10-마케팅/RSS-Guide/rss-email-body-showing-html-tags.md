@@ -1,33 +1,94 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 10-마케팅 > RSS 가이드
+원문: /support/solutions/articles/155000009199-rss-email-body-showing-html-tags-how-to-fix-it
+번역일: 2026-11-07
+카테고리: 10-마케팅
 ---
 
-# RSS 이메일 본문에 HTML 태그가 표시되나요?
+# RSS 이메일 본문에 HTML 태그가 그대로 보일 때 해결하기
 
-문제: RSS 이메일 본문에 `<p>` 같은 HTML 태그가 그대로 표시됩니다.
+RSS 이메일에 서식이 적용된 글 대신 `<p>`나 `<br>` 같은 태그가 그대로 보이면, 피드의 HTML이 일반 텍스트로 표시되고 있는 거예요. 하이퍼클래스에서는 **Custom RSS Items**(사용자 지정 RSS 항목) 레이아웃을 쓰면 신뢰할 수 있는 피드의 HTML을 그대로 렌더링할 수 있어요. RSS 설명 변수의 중괄호를 두 개에서 세 개로 바꾸면 돼요. 아래 순서대로 수정하고, 발송 전에 꼭 테스트해 보세요.
 
-**해결 방법:** 이메일 빌더에서 Custom RSS Item 요소를 사용하고, `{{rss_item.content}}` 대신 `{{{rss_item.content}}}`를 사용하세요.
+## HTML 태그가 RSS 이메일에 보이는 이유
 
-## HTML 기반 RSS 피드
+일부 RSS 피드는 게시글 설명에 HTML 마크업이 들어 있어요. 기본 변수인 `{{rss_item.content}}`는 이 마크업을 이스케이프 처리해요. 그래서 태그가 서식으로 적용되지 않고 글자 그대로 보일 수 있어요.
 
-RSS 기반 커스텀 변수 `{{rss_item.title}}`이 반환하는 값은 HTML 이스케이프 처리됩니다. 예를 들어, 표현식에 &가 포함되어 있으면 HTML 이스케이프 처리된 출력이 &amp;로 생성됩니다. 또는 RSS 피드가 일반 텍스트 대신 HTML 기반 텍스트를 포함하고 있다면 일반 텍스트로 렌더링됩니다.
+**Custom RSS Items** 레이아웃에서 `{{{rss_item.content}}}`를 쓰면 신뢰할 수 있는 HTML 콘텐츠가 렌더링돼요.
 
-값을 이스케이프 처리하지 않으려면 "삼중 중괄호" `{{{`를 사용하세요:
+## RSS HTML을 제대로 표시하면 좋은 점
 
-예시: RSS 피드 소스가 다음과 같다면
+지원되는 HTML을 제대로 렌더링하면, 수신자가 서식 코드를 보지 않고 RSS 설명을 읽을 수 있어요.
 
-![RSS 피드 소스 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48155855360/original/uPxMn189zEmr7WCh_6qYv6DAQ_WrxdccDA.png?1636131880)
+- 읽기 쉬운 설명: 화면에 보이던 HTML 태그가 서식이 적용된 글로 바뀌어요.
+- 서식 유지: 피드에 있는 지원되는 문단과 링크가 그대로 표시돼요.
+- 필요한 부분만 수정: 캠페인을 처음부터 다시 만들지 않고 RSS 콘텐츠 변수만 고치면 돼요.
 
-"삼중 중괄호" 없이는 다음과 같이 렌더링됩니다:
+## RSS 이메일 본문의 HTML 태그 해결하기
 
-![삼중 중괄호 없이 렌더링된 모습](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48158897349/original/WrYKfyhcJ5DK5j0lLKBZhA2VMTG80JaNkw.png?1636829725)
+수정은 **RSS Items**(RSS 항목) 블록의 사용자 지정 레이아웃 안에서 해요. HTML을 표시하려는 콘텐츠 변수만 바꾸고, 출처는 신뢰할 수 있는 곳이어야 해요.
 
-"삼중 중괄호" `{{{rss_item.content}}}`를 사용하면 다음과 같이 렌더링됩니다:
+![RSS 항목 블록의 사용자 지정 레이아웃 편집 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083455404/original/6XiIj3c9rarf2DcB3rXsGKeh8kzYGtp_qw.png?1792095646)
 
-![삼중 중괄호 사용 시 렌더링된 모습](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48158897351/original/rxmtzjEm8PqMouDcAVPjKT1IJ7DnYuLEfA.png?1636829727)
+1. **마케팅 > 이메일 > 템플릿**으로 이동해 해당 이메일을 **디자인 에디터**에서 여세요. 해당 캠페인의 이메일 디자인을 열어도 돼요.
+2. **RSS Items** 블록을 선택하고, **RSS Editing Options**(RSS 편집 옵션)에서 **사용자 지정**을 선택하세요.
+3. 설명 변수를 찾아 아래와 같이 정확히 바꾸세요.
 
----
-*원문 최종 수정: Sat, 13 Nov, 2021 at  1:04 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+   변경 전 — HTML이 이스케이프됨:
+
+   ```
+   {{rss_item.content}}
+   ```
+
+   변경 후 — HTML이 렌더링됨:
+
+   ```
+   {{{rss_item.content}}}
+   ```
+
+4. RSS Items의 기존 시작·종료 반복 태그는 그대로 두세요.
+5. **변경사항 저장**을 선택하세요.
+
+{% hint style="warning" %}
+중괄호 세 개는 HTML을 이스케이프하지 않고 그대로 넣어요. 신뢰할 수 있는 RSS 피드에만 사용하세요. 지원되지 않는 HTML이나 스타일은 이메일 클라이언트에 따라 다르게 보일 수 있어요.
+{% endhint %}
+
+## 수정 결과 테스트하기
+
+실제 피드 콘텐츠로 테스트하면 HTML 태그 대신 서식이 적용된 글이 보이는지 확인할 수 있어요.
+
+1. **이메일 빌더**에서 **미리보기**를 선택하세요.
+2. **미리보기** 옆의 점 세 개 메뉴를 열고 **테스트 이메일**을 선택하세요.
+3. 테스트 이메일 정보를 입력하고 유효한 **RSS 피드 URL**을 입력하세요.
+
+   ![테스트 이메일 정보와 RSS 피드 URL 입력 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083455857/original/onOV4JDaSvRkuNE1YIKlpZ3tSI87g8KwXA.png?1792096449)
+
+4. 테스트 이메일을 보내세요.
+
+   ![테스트 이메일 발송 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083455883/original/bpcpG4JpNOVCjryFcWXVQX-6dYxkXLvJFA.png?1792096502)
+
+5. 받은 이메일을 열어 문단, 링크 등 지원되는 서식이 제대로 보이는지 확인하세요.
+
+{% hint style="info" %}
+받는 사람들이 자주 쓰는 메일함에서 테스트해 보세요. HTML과 스타일은 이메일 클라이언트마다 다르게 보일 수 있어요.
+{% endhint %}
+
+## RSS HTML이 여전히 이상하게 보일 때
+
+RSS 콘텐츠가 아직도 제대로 보이지 않으면, 아래에서 증상에 맞는 항목을 확인해 보세요.
+
+- HTML 태그가 계속 보여요: **RSS Items** 블록을 **사용자 지정** 모드에서 수정했는지, 올바른 설명 변수를 바꿨는지 확인하세요. 원본 피드가 HTML을 어떤 방식으로 제공하는지도 확인해 보세요.
+- RSS 콘텐츠가 비어 있어요: 테스트에 유효한 **RSS 피드 URL**을 넣었는지 확인하세요. 실제 RSS 캠페인을 보낼 때는 일반 발송이 아니라 **RSS Schedule**(RSS 예약)을 사용하세요.
+- 서식이 다르게 보여요: 일부 HTML과 CSS는 모든 이메일 클라이언트에서 지원되지 않아요. 필요하면 피드의 마크업을 단순하게 줄이고 다시 테스트 이메일을 보내 보세요.
+
+## 자주 묻는 질문
+
+### RSS 변수를 전부 중괄호 세 개로 바꿔야 하나요?
+아니요. 신뢰할 수 있는 HTML을 렌더링하려는 필드만 바꾸세요. 제목, URL 등 다른 변수는 특별한 이유가 없다면 안내된 형식 그대로 두세요.
+
+### 이 수정으로 웹사이트나 RSS 피드가 바뀌나요?
+아니요. 선택한 RSS 필드가 이메일에 표시되는 방식만 바뀌어요. 원본 피드는 그대로예요.
+
+### RSS 설명이 일반 텍스트뿐이면 어떻게 하나요?
+기본인 중괄호 두 개 변수를 그대로 쓰세요. 렌더링할 HTML이 없으면 중괄호 세 개는 필요하지 않아요.
+
+### 수정하면 **RSS Items** 블록의 모든 게시글에 적용되나요?
+네. **Custom RSS Items** 레이아웃은 그 블록에 포함된 게시글마다 반복되기 때문에, 바꾼 콘텐츠 변수가 표시되는 모든 항목에 적용돼요.

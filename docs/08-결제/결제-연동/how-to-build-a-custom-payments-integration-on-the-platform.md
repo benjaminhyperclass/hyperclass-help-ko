@@ -6,7 +6,7 @@
 
 # 플랫폼에서 커스텀 결제 연동을 구축하는 방법
 
-이 가이드는 Hyperclass의 모든 결제 사용 사례(체크아웃, 구독, 저장된 결제 방법 등)에 연결되는 커스텀 결제 제공업체를 구축하는 방법을 안내합니다. Hyperclass의 Marketplace와 Payments API를 사용하여 자체 게이트웨이나 서드파티 프로세서를 연결하고 모든 Hyperclass 로케이션(하위 계정)에서 사용할 수 있게 만들 수 있습니다.
+이 가이드는 Hyperclass의 모든 결제 사용 사례(체크아웃, 구독, 저장된 결제 방법 등)에 연결되는 커스텀 결제 제공업체를 구축하는 방법을 안내합니다. Hyperclass의 Marketplace와 Payments API를 사용하여 자체 게이트웨이나 서드파티 프로세서를 연결하고 모든 Hyperclass 로케이션(서브 계정)에서 사용할 수 있게 만들 수 있습니다.
 
 목차
 
@@ -99,8 +99,6 @@ Hyperclass이 Marketplace UI의 iframe 내부에서 로드하는 공개 URL입�
   - 연동 구성(커스텀 페이지)
   - iframe을 통한 결제 수집(paymentsUrl)
 - 테스트 및 라이브 결제 모드 구성 및 종단 간 플로우 테스트
-
-참고용 소개 비디오 - https://www.loom.com/share/f524dbd7858a47dea08f8a27c688ed46
 
 ## 5. 1단계 – Marketplace 앱 생성
 
@@ -239,7 +237,7 @@ Hyperclass이 SSO 키를 제공합니다.
 - name (string) – Hyperclass 전체에 표시되는 연동 이름(Marketplace, Integrations 등)
 - description (string) – 결제(Payments) > 연동(Integrations)에 표시되는 짧은 설명/태그라인
 - imageUrl (string, URL) – 결제 제공업체 로고의 공개 URL
-- locationId (string) – 앱이 설치된 Hyperclass 하위 계정 ID
+- locationId (string) – 앱이 설치된 Hyperclass 서브 계정 ID
 - queryUrl (string, URL) – Hyperclass이 결제 관련 작업을 위해 호출하는 백엔드 엔드포인트: verify, refund, list/charge payment methods, create subscriptions 등
 - paymentsUrl (string, URL) – Hyperclass이 고객 대면 결제를 위해 iframe 내부에서 로드하는 공개 체크아웃 페이지 URL
 
@@ -404,10 +402,7 @@ curl --location '${queryUrl}' \
   }'
 ```
 
-**예상 응답**
-- `{ "success": true }` - Hyperclass에서 주문 및 거래를 성공으로 표시합니다
-- `{ "failed": true }` - 거래를 실패로 표시합니다
-- `{ "success": false }` - 거래를 대기 상태로 둡니다. 나중에 웹훅을 통해 성공으로 표시할 수 있습니다
+**예상 응답**`{ "success": true }` - Hyperclass에서 주문 및 거래를 성공으로 표시합니다`{ "failed": true }` - 거래를 실패로 표시합니다`{ "success": false }` - 거래를 대기 상태로 둡니다. 나중에 웹훅을 통해 성공으로 표시할 수 있습니다
 
 ## 9. 5단계 – 저장된 결제 방법 및 수동 구독
 

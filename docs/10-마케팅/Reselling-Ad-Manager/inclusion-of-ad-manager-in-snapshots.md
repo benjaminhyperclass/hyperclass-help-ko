@@ -1,92 +1,98 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 10-마케팅 > Reselling Ad Manager
+원문: /support/solutions/articles/155000003286-inclusion-of-ad-manager-in-snapshots
+번역일: 2026-11-06
+카테고리: 10-마케팅
 ---
 
-# 스냅샷에 광고 관리 포함
+# 스냅샷에 광고 관리자 캠페인 포함하기
 
-이 가이드에서는 스냅샷을 사용해 한 하위 계정의 광고 캠페인을 다른 하위 계정으로 복제하는 방법을 설명합니다.
+스냅샷을 이용해 한 서브 계정의 광고 캠페인을 다른 서브 계정으로 복제하는 방법을 안내해요. 에이전시 관리자가 쓰는 기능이에요.
 
-스냅샷을 사용하면 에이전시 사용자가 온보딩 시간을 절약하고, 로케이션(하위 계정)에게 시작 템플릿으로 활용할 수 있는 원하는 광고 캠페인을 제공할 수 있습니다. 에이전시는 한 하위 계정에서 원하는 광고 캠페인이나 성과가 좋은 광고 캠페인의 스냅샷을 생성하고, 이를 기존 또는 새로운 하위 계정에 쉽게 로드할 수 있어 사용자가 미리 구성된 광고 캠페인을 원활하게 사용할 수 있습니다. 아래는 한 로케이션에서 다른 로케이션으로 광고 캠페인을 복제하는 단계입니다.
+---
 
-## 목차
+스냅샷을 쓰면 **광고 관리자**(Ad Manager)에서 지원하는 캠페인을 한 서브 계정에서 다른 서브 계정으로 복제할 수 있어요. 검증된 캠페인 설정을 온보딩이나 계정 세팅 때 다시 쓰기 쉬워져요.
 
-- [1단계: 계정 스냅샷으로 이동](#1단계-계정-스냅샷으로-이동)
-- [2단계: 새 스냅샷 생성](#2단계-새-스냅샷-생성)
-- [3단계: 스냅샷 만들기](#3단계-스냅샷-만들기)
-- [4단계: 대상 하위 계정 선택](#4단계-대상-하위-계정-선택)
-- [5단계: 스냅샷 로드](#5단계-스냅샷-로드)
-- [6단계: 광고 캠페인 선택](#6단계-광고-캠페인-선택)
-- [7단계: 계정 스냅샷 로딩 완료 확인](#7단계-계정-스냅샷-로딩-완료-확인)
-- [8단계: 로드된 광고 캠페인 확인](#8단계-로드된-광고-캠페인-확인)
-- [중요 사항](#중요-사항)
+현재 스냅샷에는 지원되는 Meta 광고 캠페인과 Google 광고 캠페인을 담을 수 있어요. 원본 서브 계정의 캠페인 설정을 저장해 두었다가 새 서브 계정이나 기존 서브 계정에 불러올 수 있어요.
 
-## 1단계: 계정 스냅샷으로 이동
+## 1단계: 계정 스냅샷 페이지로 이동하기
 
-### 에이전시 뷰로 이동하여 계정 스냅샷(Account Snapshots) 페이지로 이동합니다.
+1. **에이전시 보기**(Agency View)로 이동해요.
+2. **계정 스냅샷** 페이지를 열어요.
 
-![스냅샷 페이지로 이동](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032192004/original/c8CMSDpB_NZEXikw_p1eQGxnpZKvTP6Vbg.png?1725399853)
+## 2단계: 새 스냅샷 만들기
 
-## 2단계: 새 스냅샷 생성
+1. **새 스냅샷 생성**을 클릭하고 스냅샷 이름을 입력해요.
+2. 다른 서브 계정과 공유하려는 광고 캠페인이 있는 원본 서브 계정을 선택해요.
 
-"Create New Snapshot(새 스냅샷 생성)"을 클릭하고 이름을 지정합니다. 다른 로케이션과 공유하려는 이상적인 광고 캠페인이 있는 소스 하위 계정을 선택합니다.
-
-![새 스냅샷 생성](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032192068/original/YBts3Km8U7V6On6bIXytDwcHYKKE8qE69w.png?1725400053)
+![새 스냅샷 생성 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032192068/original/YBts3Km8U7V6On6bIXytDwcHYKKE8qE69w.png?1725400053)
 
 ## 3단계: 스냅샷 만들기
 
-소스 하위 계정에 있는 자산 목록을 확인하고 원하는 광고 캠페인이 있는지 확인한 후 'Create(만들기)'를 클릭합니다.
+1. 원본 서브 계정의 자산 목록에 원하는 광고 캠페인이 있는지 확인한 뒤 **만들기**를 클릭해요.
 
-![스냅샷 생성 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032192107/original/OGHgN9qwpFnuH4GvBGNYWGtpa2KLSx6_Uw.png?1725400206)
+   ![자산 목록 확인 후 만들기 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032192107/original/OGHgN9qwpFnuH4GvBGNYWGtpa2KLSx6_Uw.png?1725400206)
 
-생성되면 목록에 스냅샷이 추가된 것을 확인할 수 있습니다.
+2. 스냅샷이 만들어지면 목록에 추가된 것을 확인할 수 있어요.
 
-![생성된 스냅샷 목록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032192142/original/HGJj64jelVY79hji9j0MPGLnO39yGS2oJA.png?1725400291)
+   ![스냅샷 목록에 추가된 모습](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032192142/original/HGJj64jelVY79hji9j0MPGLnO39yGS2oJA.png?1725400291)
 
-## 4단계: 대상 하위 계정 선택
+## 4단계: 대상 서브 계정 선택하기
 
-이제 새로 생성한 스냅샷과 원하는 광고 캠페인을 로드할 새 하위 계정을 만들거나 목록에서 기존 하위 계정을 선택할 수 있습니다.
+새로 만든 스냅샷을 불러올 서브 계정은 새로 만들어도 되고, 목록에서 기존 서브 계정을 골라도 돼요.
 
-"Sub-Accounts(하위 계정)"로 이동하여 스냅샷을 로드하려는 하위 계정을 선택합니다. 하위 계정의 'basic details(기본 세부 정보)' 탭에서 오른쪽 상단의 'Actions(작업)' 드롭다운에서 "load snapshot(스냅샷 로드)"를 선택합니다.
+1. **서브 계정**으로 이동해요.
+2. 스냅샷을 불러올 서브 계정을 선택해요.
+3. 서브 계정의 **Basic Details**(기본 정보) 탭을 열어요.
+4. 오른쪽 위 **작업** 드롭다운에서 **Load Snapshot**(스냅샷 불러오기)을 선택해요.
 
-![스냅샷 로드 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032192181/original/hAATgFMhgqui4x77k3PJdO9WnGw4xXAqqA.png?1725400450)
+![작업 드롭다운에서 스냅샷 불러오기 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032192181/original/hAATgFMhgqui4x77k3PJdO9WnGw4xXAqqA.png?1725400450)
 
-## 5단계: 스냅샷 로드
+## 5단계: 스냅샷 불러오기
 
-'Load Snapshot(스냅샷 로드)'를 클릭하면 4단계 대화상자가 표시됩니다. 첫 번째 단계에서 상위 로케이션에서 생성하여 원하는 로케이션에 로드하려는 스냅샷을 찾습니다.
+**Load Snapshot**을 클릭하면 4단계로 이루어진 창이 열려요.
 
-![스냅샷 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032192301/original/aZx-s3FgqAgF6pMSLU_G2k1IzIaQxwn04g.png?1725400811)
+1. 첫 번째 단계에서 원본 계정에서 만든 스냅샷 중 불러올 스냅샷을 찾아 선택해요.
 
-## 6단계: 광고 캠페인 선택
+![불러올 스냅샷 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032192301/original/aZx-s3FgqAgF6pMSLU_G2k1IzIaQxwn04g.png?1725400811)
 
-두 번째 단계에서 표시되는 자산 목록에서 "Ad Campaigns - Meta(광고 캠페인 - 메타)"와 "Ad Campaigns - Google(광고 캠페인 - 구글)" 자산을 찾아서 대상 로케이션에 로드하려는 광고 캠페인을 하나 또는 전부 선택합니다.
+## 6단계: 광고 캠페인 자산 선택하기
 
-![광고 캠페인 자산 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042288473/original/oETo1E9tsG4dcV8iVFvuYiAhHpPREZ0jNw.png?1740579110)
+스냅샷을 구성할 때 포함할 광고 캠페인 자산을 선택해요.
 
-광고 캠페인 자산을 선택했으면 'Proceed(진행)'를 클릭합니다. 다음 단계로 이동하여 대상 로케이션에서 충돌을 확인합니다. 충돌이 있는 경우 3단계에서 세부 사항이 표시되며, 충돌하는 항목을 건너뛰거나 덮어쓸 수 있는 옵션이 제공됩니다.
+- **광고 캠페인 - Meta**
+- **광고 캠페인 - Google**
 
-![진행 및 충돌 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032192462/original/rsL0dWVOJUltRyjvY_FMvi93HzvE7-1kfg.png?1725401280)
+원본 서브 계정에서 복사할 캠페인을 선택한 뒤 스냅샷을 저장해요.
 
-## 7단계: 계정 스냅샷 로딩 완료 확인
+![광고 캠페인 자산 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042288473/original/oETo1E9tsG4dcV8iVFvuYiAhHpPREZ0jNw.png?1740579110)
 
-선택을 확인하고 로딩 프로세스를 진행합니다.
+1. 광고 캠페인 자산을 모두 선택했으면 **계속하기**를 클릭해요.
+2. 다음 단계에서 대상 계정과 충돌하는 항목이 있는지 확인해요. 충돌하는 항목이 있으면 창의 3단계에 자세한 내용이 표시돼요. 충돌한 항목은 건너뛰거나 덮어쓸 수 있어요.
 
-![로딩 프로세스 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032192516/original/qmYcRdbNIB6EVqdp7XjQ-ebXCRqSFUjalw.png?1725401486)
+![충돌 항목 확인 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032192462/original/rsL0dWVOJUltRyjvY_FMvi93HzvE7-1kfg.png?1725401280)
 
-원하는 하위 계정에 스냅샷이 성공적으로 로드되면, 애플리케이션 오른쪽 상단의 벨 아이콘 아래에 선택한 스냅샷 자산이 성공적으로 복사되었다는 알림(Notification)이 표시됩니다.
+## 7단계: 불러오기 결과 확인하기
 
-![로딩 완료 알림](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032192574/original/QUDRn35wPmdSRuMMgRTv2zNEaOXYyUXYfA.png?1725401633)
+1. 선택한 내용을 확인하고 불러오기를 진행해요.
 
-## 8단계: 로드된 광고 캠페인 확인
+   ![선택 내용 확인 후 불러오기 진행](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032192516/original/qmYcRdbNIB6EVqdp7XjQ-ebXCRqSFUjalw.png?1725401486)
 
-대상 하위 계정으로 이동하면, 페이스북 계정, 광고 계정, 페이스북 페이지 연결의 온보딩 프로세스를 완료한 후 'Campaign Details(캠페인 세부 정보)' 목록에서 로드된 광고 캠페인을 확인할 수 있습니다.
+2. 스냅샷이 대상 서브 계정에 불러와지면 화면 오른쪽 위 벨 아이콘에 알림이 표시돼요. 선택한 스냅샷 자산이 복사되었다는 알림이에요.
+
+   ![벨 아이콘에 표시된 불러오기 완료 알림](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032192574/original/QUDRn35wPmdSRuMMgRTv2zNEaOXYyUXYfA.png?1725401633)
+
+## 8단계: 불러온 광고 캠페인 확인하기
+
+1. 대상 서브 계정으로 이동해요.
+2. Facebook 계정, 광고 계정, Facebook 페이지를 연결하는 온보딩을 마치면, 불러온 광고 캠페인이 **캠페인 상세 정보** 목록에 표시돼요.
+
+{% hint style="info" %}
+광고 관리자는 여러 광고 플랫폼을 지원하지만, 스냅샷 지원 여부는 플랫폼과 캠페인 유형에 따라 달라요. 현재 스냅샷 자산으로 지원되는 것은 Meta 광고 캠페인과 Google 광고 캠페인이에요. 스냅샷을 만들거나 불러올 때는 스냅샷 자산 목록에 표시되는 캠페인 유형만 포함할 수 있어요.
+{% endhint %}
+
+---
 
 ## 중요 사항
 
-- 원하는 하위 계정에 로드된 광고 캠페인은 대상 하위 계정에서 선택하고 연결한 기본 페이지 하에 생성됩니다. 사용자는 원하는 페이지로 변경할 수 있습니다.
-- 리드 폼, 커스텀 오디언스, 유사 오디언스와 같은 모든 페이스북 특정 자산은 소스 하위 계정에 연결된 광고 계정 및 비즈니스 관리자에 특정되므로 복사되지 않습니다. 따라서 소스 하위 계정 광고 캠페인이 이러한 자산을 사용하는 경우, 대상 하위 계정에 복사된 광고 캠페인에는 포함되지 않습니다. 사용자는 동일한 자산을 추가하거나 온보딩 중에 연결할 광고 계정과 연결된 자산을 사용해야 합니다.
-
----
-*원문 최종 수정: Thu, 27 Feb, 2025 at 2:05 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+1. 대상 서브 계정에 불러온 광고 캠페인은 대상 서브 계정에 연결된 기본 페이지 아래에 만들어져요. 다른 페이지로 바꾸고 싶다면 직접 변경할 수 있어요.
+2. 리드 폼, **맞춤 오디언스**, 유사 오디언스 같은 Facebook 전용 자산은 복사되지 않아요. 이런 자산은 원본 서브 계정에 연결된 광고 계정과 Business Manager에 속해 있기 때문이에요. 원본 서브 계정의 광고 캠페인이 이런 자산을 쓰고 있어도, 대상 서브 계정으로 복사되는 캠페인에는 포함되지 않아요. 온보딩에서 연결하는 광고 계정에 속한 자산을 쓰거나, 같은 자산을 새로 추가해야 해요.

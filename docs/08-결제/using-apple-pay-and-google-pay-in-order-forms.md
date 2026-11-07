@@ -1,116 +1,181 @@
 ---
-
-번역일: 2026-04-06
+원문: /support/solutions/articles/48001229200-using-apple-pay-and-google-pay-in-order-forms
+번역일: 2026-11-06
 카테고리: 08-결제
 ---
 
 # 주문 폼에서 Apple Pay와 Google Pay 사용하기
 
-주문 폼(Order Form)에서 Apple Pay와 Google Pay를 지원하는 것은 고객의 구매 경험을 크게 향상시키는 방법입니다. 이러한 결제 수단은 기존 결제 방식으로는 제공하기 어려운 편의성, 보안성, 속도를 제공합니다.
+Apple Pay와 Google Pay를 쓰면 고객이 결제할 때 카드 정보를 직접 입력하지 않아도 돼요. 결제 에이전시로 Stripe를 쓰는 경우, 하이퍼클래스는 조건이 맞는 원스텝·투스텝 주문 폼에서 이 디지털 지갑을 지원해요. 지갑 설정은 하이퍼클래스 서브 계정에서 바로 관리할 수 있어요. 이 문서에서는 Apple Pay와 Google Pay를 설정하는 방법, 결제 화면에 표시되는 조건, 지갑이 보이지 않을 때 확인할 사항을 안내해요.
 
-## 이 문서에서 다루는 내용:
+이 문서에서는 Stripe 연동에서 Apple Pay와 Google Pay를 관리하는 방법, 올바른 주문 폼과 결제 환경을 설정하는 방법, Apple Pay 도메인 인증이 무엇인지, 결제 화면에 지갑이 나타나지 않을 때 어떻게 확인하는지 알아봐요.
 
-- [CRM에서 Apple Pay와 Google Pay를 사용하는 방법](#crm에서-apple-pay와-google-pay를-사용하는-방법)
-- [Apple Pay와 Google Pay를 활성화하는 방법](#apple-pay와-google-pay를-활성화하는-방법)
-- [Apple Pay 문제 해결](#apple-pay-문제-해결)
-- [Google Pay 문제 해결](#google-pay-문제-해결)
-- [자주 묻는 질문](#자주-묻는-질문)
-- [거래 및 주문 보고에서 달라지는 점은 무엇인가요?](#거래-및-주문-보고에서-달라지는-점은-무엇인가요)
-- [신용카드와 Apple/Google Pay 처리의 Stripe 요금 차이는 무엇인가요?](#신용카드와-applegoogle-pay-처리의-stripe-요금-차이는-무엇인가요)
-- [Stripe 대신 PayPal을 결제 제공업체로 사용 중입니다. Apple Pay와 Google Pay를 제공할 수 있나요?](#stripe-대신-paypal을-결제-제공업체로-사용-중입니다-apple-pay와-google-pay를-제공할-수-있나요)
-- [은행 리다이렉트나 ACH 같은 다른 결제 수단도 활성화할 수 있나요?](#은행-리다이렉트나-ach-같은-다른-결제-수단도-활성화할-수-있나요)
-- [한번 활성화한 후 다른 결제 수단 옵션을 비활성화하려면 어떻게 하나요?](#한번-활성화한-후-다른-결제-수단-옵션을-비활성화하려면-어떻게-하나요)
+{% hint style="warning" %}
+지갑을 켠다고 해서 모든 고객에게 보이는 것은 아니에요. 지갑이 보이는지는 상품 영역, 테스트·라이브 설정, Stripe 계정 자격, 고객의 위치, 브라우저나 기기, 지갑 설정, Apple Pay 도메인 인증 같은 추가 요건에 따라 달라질 수 있어요.
+{% endhint %}
 
-## CRM에서 Apple Pay와 Google Pay를 사용하는 방법
+## 하이퍼클래스 주문 폼에서 Apple Pay와 Google Pay란?
 
-Stripe은 기본적으로 신용카드 옵션과 함께 Google Pay를 표시합니다. Apple Pay를 표시하려면 연동(Integration) 페이지에서 토글을 켜서 Stripe에 도메인을 등록하는 추가 요구사항을 완료해야 합니다.
+Apple Pay와 Google Pay는 고객이 하이퍼클래스 주문 폼 결제에서 쓸 수 있는 디지털 지갑 결제 수단이에요. Stripe를 통해 제공되며, 고객과 결제 환경이 요건을 충족하면 다른 결제 수단과 함께 표시돼요.
 
-![Apple Pay와 Google Pay 활성화 토글](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155003234638/original/CIq6-4GxITrF4kSlh7XlUG4_NWGaR9PjEQ.png?1689772696)
+하이퍼클래스는 조건이 맞는 **Funnels - One-Step Order Form**(퍼널 - 원스텝 주문 폼)과 **Funnels - Two-Step Order Form**(퍼널 - 투스텝 주문 폼) 결제에서 Apple Pay와 Google Pay를 지원해요.
 
-완료되면 주문 폼에서 신용카드 옵션과 함께 Google Pay와 Apple Pay가 표시됩니다. Apple Pay/Google Pay로 정기 결제와 업셀도 지원됩니다.
+### Apple Pay와 Google Pay의 장점
 
-![주문 폼의 Google Pay](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155003227532/original/hx9QDvGm4Xpm06lgnDi2mXobknNXL6dD6w.png?1689768902)
+디지털 지갑을 쓰면 조건이 맞는 고객은 결제할 때 직접 입력할 정보가 줄어들어요. 비즈니스는 Stripe가 지원하는 결제 수단을 어디에서 쓸지 한곳에서 관리할 수 있어요.
 
-![주문 폼의 Apple Pay](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155003227578/original/_lrqMDwNra0tiGcrVzYBCZ8EwdMzZ9b4Sg.png?1689768914)
+- 빠른 결제: 조건이 맞는 고객은 카드 정보를 직접 입력하는 대신 저장된 지갑을 쓸 수 있어요.
+- 한곳에서 관리: Stripe가 지원하는 결제 수단을 하이퍼클래스 서브 계정에서 바로 관리해요.
+- 주문 폼 지원: 조건이 맞는 원스텝·투스텝 주문 폼마다 지갑 사용 여부를 설정해요.
+- 환경별 설정: 지원되는 결제 수단을 **테스트**와 **라이브** 환경에서 각각 따로 설정해요.
+- 구독 설정: 결제에 정기 상품이 포함되면 구독 전용 결제 수단 설정을 확인해요.
 
-**PayPal은 결제(Payments) → 연동(Integrations)에서 PayPal이 활성화된 경우에만 표시됩니다**
+### 사전 조건과 제한 사항
 
-고객은 거주 지역과 웹 브라우저에 따라 Apple Pay와 Google Pay를 볼 수 있습니다. Google 계정/Apple 계정에 연결된 결제 수단이 있는 경우에만 사용할 수 있습니다. 이 두 조건이 모두 충족되는 경우에만 기본 신용카드 선택지와 함께 Google Pay/Apple Pay가 결제 옵션으로 표시됩니다.
+결제 설정과 고객의 결제 환경이 요건을 충족해야 Apple Pay와 Google Pay가 표시돼요. 먼저 아래 조건을 확인하면 불필요한 문제 해결을 줄일 수 있어요.
 
-[Apple Pay를 지원하는 국가 및 지역](https://support.apple.com/en-in/HT207957)
-[Google Pay를 지원하는 국가](https://support.google.com/googlepay/answer/12429287)
+- 해당 하이퍼클래스 서브 계정에 Stripe가 연결되어 있어야 해요.
+- 해당 주문 폼 상품 영역에서 지갑을 켜 두어야 해요.
+- **테스트**와 **라이브** 중 올바른 환경을 설정하고 있는지 확인하세요.
+- 고객의 국가, 기기, 브라우저, 결제 계정이 선택한 지갑을 지원해야 해요.
+- 고객의 해당 지갑에 쓸 수 있는 결제 수단이 등록되어 있어야 해요.
+- Apple Pay는 도메인 인증을 마쳐야 결제 화면에 표시될 수 있어요.
+- 구독 결제는 **구독**에서 결제 수단 설정이 따로 있을 수 있어요.
+- **구독** 설정은 해당 서브 계정에서 라이브 모드로 구독 상품을 추가한 뒤에 나타나요.
 
-현재 지원되는 브라우저는 Chrome Desktop, Chrome Android, macOS Safari, iOS Safari, Windows용 Microsoft Edge입니다.
+{% hint style="info" %}
+결제 에이전시 범위: 여기서 다루는 주문 폼용 Apple Pay와 Google Pay는 Stripe를 통해 제공돼요. 다른 결제 에이전시는 각자 지원하는 결제 수단과 상품 영역이 달라요.
+{% endhint %}
 
-**참고사항:**
+## 주문 폼에 Apple Pay와 Google Pay 설정하기
 
-이 기능은 버전 2 퍼널에서만 작동합니다. V1 퍼널을 V2로 업그레이드하는 방법은 [이 문서](../06-사이트/기타/why-and-how-to-upgrade-a-version-1-funnel-to-version-2-.md)를 참조하세요.
+Stripe 결제 수단은 하이퍼클래스 서브 계정의 **결제** 메뉴에서 관리해요. 고객 결제 화면을 테스트하기 전에, 해당 주문 폼 상품 영역과 결제 환경에서 지갑을 먼저 설정하세요.
 
-**알아두세요:**
+### 1단계: Stripe 연동 열기
 
-브라우저가 최신 버전이 아니거나, 고객 국가에서 Apple Pay와 Google Pay가 지원되지 않거나, 고객의 Apple/Google 계정에 관련 신용카드가 추가되지 않은 경우가 있을 수 있습니다. 이런 경우 Apple Pay나 Google Pay 결제 옵션은 나타나지 않지만, 고객은 여전히 신용카드 옵션으로 결제할 수 있습니다.
+Stripe 연동에서 연결된 계정의 결제 수단 관리와 지갑 관련 설정으로 들어갈 수 있어요.
 
-## Apple Pay와 Google Pay를 활성화하는 방법
+1. 하이퍼클래스 서브 계정 화면에서 **결제**를 선택하세요.
+2. **연동**을 선택하세요.
+3. **Stripe**를 찾으세요.
+4. **관리**를 클릭하세요.
 
-결제(Payments) → 연동(Integrations) 페이지에서 Stripe Connect를 사용하는 것이 기본 요구사항입니다. Stripe API를 사용하여 Stripe에 연결하고 있다면 이 기능을 사용하기 위해 Stripe Connect를 사용하세요. 결제 > 연동에서 Stripe 계정을 연결하면 주문 폼에서 Apple Pay와 Google Pay를 활성화하는 토글이 제공됩니다.
+![결제 > 연동에서 Stripe 관리 열기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081349015/original/WVJMR68TiXPoMzMU2WaZ7Ds6oERy4PCbjQ.png?1789796366)
 
-## Apple Pay 문제 해결
+### 2단계: 결제 수단 관리 열기
 
-1. Stripe이 로케이션에 연결되어 있는 상태에서 Apple Pay와 Google Pay 활성화 토글이 켜져 있어야 합니다
+Stripe 관리 페이지에서 결제 수단 설정과, Apple Pay와 Link에 쓰는 도메인 등록 항목을 볼 수 있어요.
 
-2. [Apple Pay가 당신의 국가에서 사용 가능한지 확인하세요](https://stripe.com/docs/connect/payment-method-available-countries#apple-pay)
+1. **결제 연동 관리** 페이지에서 Stripe 연결 상태를 확인하세요.
+2. **Apple Pay용 도메인 등록** 항목을 확인하세요.
+3. **결제 수단 관리**를 클릭하세요.
 
-3. 퍼널이 호스팅되는 도메인이 Stripe에 등록되어 있는지 확인하세요. 이는 Apple Pay의 추가 요구사항이며 토글을 켜자마자 자동으로 이루어져야 합니다
+![결제 연동 관리 페이지에서 결제 수단 관리 열기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081349023/original/nIMKflhmzf6zh0Gvq_HXTomMRZ_hLP48pA.png?1789796400)
 
-   a. [이 URL에서](https://dashboard.stripe.com/settings/payments/apple_pay) Stripe 대시보드로 가서 웹 도메인 섹션에 도메인이 나열되어 있는지 확인하세요
+{% hint style="info" %}
+Apple Pay 요건: Apple Pay는 도메인 인증을 마쳐야 해요. Apple Pay를 켰는데 결제 화면에 나타나지 않는다면, 도메인 인증을 가장 먼저 확인하세요.
+{% endhint %}
 
-   b. 도메인이 여기에 없다면 "Add New Domain"을 클릭하여 수동으로 도메인을 추가할 수 있습니다. 이는 빠른 해결을 위한 것이므로, 토글을 켰을 때 자동으로 등록되지 않는다면 저희에게 티켓을 제출하세요.
+### 3단계: 주문 폼 결제 수단 설정하기
 
-4. 도메인이 등록된 것으로 보인다면 해당 도메인에 대해 도메인 연결 파일이 호스팅되어 있는지 확인하세요. [https://example.com](https://example.com)에서 등록하는 경우 [https://example.com/.well-known/apple-developer-merchantid-domain-association](https://example.com/.well-known/apple-developer-merchantid-domain-associationif)을 방문했을 때 파일이 다운로드되어야 합니다. [자세한 정보는 여기를 클릭하세요.](https://stripe.com/docs/stripe-js/elements/payment-request-button?client=html#verifying-your-domain-with-apple-pay)
+결제 수단은 상품 영역별로 설정해요. 그래서 원스텝 주문 폼, 투스텝 주문 폼, 그 밖에 지원되는 결제 환경마다 지갑을 쓸지 정할 수 있어요.
 
-5. 브라우저나 기기가 다음 요구사항을 충족해야 합니다:
+1. 사용할 수 있는 Stripe 결제 수단 설정을 확인하세요.
+2. 사용하는 결제 화면에 맞춰 **Funnels - One-Step Order Form** 또는 **Funnels - Two-Step Order Form**을 찾으세요.
+3. 선택할 수 있다면 **Apple Pay**를 켜세요.
+4. 선택할 수 있다면 **Google Pay**를 켜세요.
+5. **저장**을 클릭해 변경 내용을 저장하세요.
 
-   최종 고객이 iOS 10 또는 macOS Sierra부터 시작하는 Safari에서 웹을 사용 중이어야 합니다
+### 4단계: 테스트·라이브 모드 확인하기
 
-   [Apple Pay 호환 기기 목록](https://support.apple.com/en-us/HT208531)
-   [Apple Pay 참여 은행 목록](https://support.apple.com/en-us/HT204916)
+**테스트**와 **라이브** 결제 수단 설정은 서로 별개예요. 한쪽 환경에서만 지갑을 켜 두면, 결제가 다른 환경으로 진행될 때 지갑이 나타나지 않을 수 있어요.
 
-## Google Pay 문제 해결
+1. **테스트**와 **라이브** 중 어느 환경을 설정하고 있는지 확인하세요.
+2. 테스트하거나 사용할 환경에서 Apple Pay와 Google Pay가 켜져 있는지 확인하세요.
+3. 변경한 내용은 저장한 뒤에 주문 폼을 다시 테스트하세요.
 
-1. Stripe이 로케이션에 연결되어 있는 상태에서 Apple Pay와 Google Pay 활성화 토글이 켜져 있어야 합니다.
+### 5단계: 필요하면 구독 설정 확인하기
 
-2. Google Pay가 [당신의 국가에서 사용 가능한지](https://stripe.com/docs/connect/payment-method-available-countries#google-pay) 확인하세요
+구독 상품은 결제 수단 설정이 따로 있을 수 있어요. 정기 결제는 일회성 주문 폼 설정과 별도로 확인하세요.
 
-3. 고객이 Google Chrome 또는 Safari를 사용하고 있어야 합니다.
+1. **구독** 결제 수단 설정이 보이면 여세요.
+2. 구독 결제에서 쓸 수 있는 지갑 결제 수단을 확인하세요.
+3. 필요한 지갑 설정을 켜고 변경 내용을 저장하세요.
 
-4. 고객이 Google Pay에 등록된 유효한 카드를 가지고 있어야 합니다.
+{% hint style="info" %}
+**구독**이 보이지 않나요? **구독** 설정은 해당 서브 계정에서 라이브 모드로 구독 상품을 하나 이상 추가한 뒤에 나타나요.
+{% endhint %}
+
+## 결제 화면에서 지갑이 표시되는 조건
+
+지갑을 켜면 조건이 맞는 결제 화면에서 쓸 수 있게 돼요. 하지만 고객에게 실제로 보이는 결제 수단은 결제 시점에 여러 설정과 자격 조건을 따져서 정해져요.
+
+| 요소 | 중요한 이유 |
+| --- | --- |
+| 상품 영역 | 사용하는 결제 유형에서 지갑을 켜 두어야 해요. |
+| 테스트·라이브 모드 | 테스트하거나 사용하는 결제 환경과 같은 환경에서 결제 수단을 켜 두어야 해요. |
+| Stripe 계정 자격 | 결제 수단을 쓸 수 있는지는 계정 활성화 여부, 지역, Stripe 자격 요건에 따라 달라질 수 있어요. |
+| 고객 위치 | 일부 결제 수단은 지원하는 국가나 지역에서만 쓸 수 있어요. |
+| 기기와 브라우저 | 고객의 결제 환경이 해당 지갑을 지원해야 해요. |
+| 지갑 설정 | 고객에게 쓸 수 있는 지갑이 있고, 지원되는 결제 수단이 등록되어 있어야 해요. |
+| Apple Pay 도메인 인증 | 웹 결제에 Apple Pay가 표시되려면 도메인 인증이 필요해요. |
+
+지갑이 보이지 않으면, 주문 폼 문제로 보기 전에 결제 설정과 고객 자격 조건부터 확인하세요.
+
+## Apple Pay와 Google Pay가 안 보일 때
+
+지갑이 보이는지는 여러 단계의 설정에 따라 정해져요. 먼저 Stripe 연동과 결제 수단 설정을 확인한 다음, 결제 환경과 고객 자격 조건을 확인하세요.
+
+### Apple Pay가 안 보일 때
+
+지원되는 결제 화면에 Apple Pay가 표시되려면 Stripe 설정이 조건에 맞아야 하고, 주문 폼 설정이 올바라야 하며, 도메인 인증도 끝나 있어야 해요.
+
+1. **결제 > 연동**으로 이동하세요.
+2. Stripe의 **관리**를 클릭하세요.
+3. **결제 수단 관리**를 여세요.
+4. 해당 원스텝 또는 투스텝 주문 폼에서 **Apple Pay**가 켜져 있는지 확인하세요.
+5. 올바른 환경(**테스트** 또는 **라이브**)인지 확인하세요.
+6. 결제에 구독 상품이 있으면 **구독** 결제 수단 설정을 확인하세요.
+7. Stripe 계정이 활성화되어 있고 해당 결제 수단을 쓸 수 있는지 확인하세요.
+8. Apple Pay 도메인 인증이 끝났는지 확인하세요.
+9. Apple Pay를 설정해 둔, 조건에 맞는 고객 환경에서 테스트하세요.
+
+### Google Pay가 안 보일 때
+
+Google Pay가 보이는지는 Stripe 결제 수단 설정과, 고객의 결제 환경이 지갑을 표시할 수 있는 환경인지에 따라 달라져요.
+
+1. **결제 > 연동**으로 이동하세요.
+2. Stripe의 **관리**를 클릭하세요.
+3. **결제 수단 관리**를 여세요.
+4. 해당 원스텝 또는 투스텝 주문 폼에서 **Google Pay**가 켜져 있는지 확인하세요.
+5. 올바른 환경(**테스트** 또는 **라이브**)인지 확인하세요.
+6. 결제에 구독 상품이 있으면 **구독** 결제 수단 설정을 확인하세요.
+7. Stripe 계정과 결제 수단을 쓸 수 있는지 확인하세요.
+8. Google Pay를 설정해 둔, 지원되는 고객 환경에서 테스트하세요.
+
+{% hint style="info" %}
+확인 순서: 주문 폼 자체를 바꾸기 전에 상품 영역, 테스트·라이브 모드, 결제 수단 상태, Stripe 자격 조건, 고객 환경을 먼저 확인하세요.
+{% endhint %}
 
 ## 자주 묻는 질문
 
-### 거래 및 주문 보고에서 달라지는 점은 무엇인가요?
+### 지갑을 켰는데도 결제 화면에 안 보여요. 왜 그런가요?
+지갑이 보이는지는 선택한 상품 영역, 테스트·라이브 환경, Stripe 계정 자격, 고객 위치, 브라우저나 기기, 지갑 설정에도 따라 달라져요. Apple Pay는 도메인 인증도 필요해요.
 
-거래 및 주문의 보고나 추적에는 변화가 없습니다. Stripe은 Apple Pay와 Google Pay 결제를 카드 결제로 취급합니다. Apple Pay나 Google Pay로 구매한 모든 주문은 주문/거래/구독 페이지에 반영됩니다.
+### 테스트와 라이브 결제 수단을 따로 설정할 수 있나요?
+네. Stripe 결제 수단은 **테스트**와 **라이브** 환경에서 각각 따로 설정할 수 있어요.
 
-### 신용카드와 Apple/Google Pay 처리의 Stripe 요금 차이는 무엇인가요?
+### 구독 상품에서도 Apple Pay나 Google Pay를 쓸 수 있나요?
+구독 결제는 결제 수단 설정이 따로 있어요. **구독** 설정을 확인하고, 해당 결제에서 쓸 수 있는 지갑을 켜세요.
 
-신용카드 거래와 Apple Pay/Google Pay 거래 간에는 요금 차이가 없습니다. 신용카드 거래와 동일하게 청구됩니다. [Apple Pay에 대해 더 알아보기](https://stripe.com/docs/apple-pay)
+### 구독 결제 수단 설정이 안 보여요. 왜 그런가요?
+**구독** 설정은 해당 서브 계정에서 라이브 모드로 구독 상품을 하나 이상 추가한 뒤에 나타나요.
 
-### Stripe 대신 PayPal을 결제 제공업체로 사용 중입니다. Apple Pay와 Google Pay를 제공할 수 있나요?
+### Apple Pay와 Google Pay 거래도 하이퍼클래스 리포팅에 나타나나요?
+지원되는 Stripe 거래는 지금처럼 **결제** 메뉴에 기록돼요. 기존 워크플로우 트리거인 **Order Submitted**(주문 제출)와 **Payment Received**(결제 완료)도, 지원되는 결제 수단 거래에서 계속 작동해요.
 
-아니요, Apple Pay와 Google Pay는 퍼널 버전 2에서 Stripe Connect를 사용해서만 결제 수단으로 제공할 수 있습니다.
+### Apple Pay와 Google Pay 거래 수수료는 항상 카드 결제와 같은가요?
+꼭 그렇지는 않아요. Stripe 거래 수수료는 국가와 결제 수단에 따라 다를 수 있어요. 내 계정과 지역에 적용되는 최신 Stripe 요금을 확인하세요.
 
-### 은행 리다이렉트나 ACH 같은 다른 결제 수단도 활성화할 수 있나요?
-
-현재 Stripe을 사용해서는 Apple Pay와 Google Pay만 활성화할 수 있습니다. 다른 결제 수단 활성화는 2023년 3분기/4분기에 제공될 예정입니다.
-
-### Google Pay를 활성화하지 않았는데 왜 표시되나요?
-
-Stripe은 계정 설정과 기기/브라우저 호환성에 따라 Apple Pay와 Google Pay를 포함한 지원되는 결제 방법을 자동으로 활성화할 수 있습니다. Google Pay를 명시적으로 활성화하지 않았더라도 브라우저나 기기에서 Google Pay/Apple Pay를 지원하거나 계정에 Stripe의 기본 지갑 설정이 활성화되어 있으면 Hyperclass 주문 폼에 나타날 수 있습니다.
-
-### Apple Pay나 Google Pay로 테스트 거래를 실행하면 어떻게 되나요?
-
-Stripe을 테스트 모드로 사용할 때 Apple Pay나 Google Pay 거래는 시뮬레이션되며 실제 청구나 금액 이동을 포함하지 않습니다. Stripe 대시보드에서 성공적인 거래를 볼 수 있지만 이는 테스트 목적일 뿐입니다. 테스트 거래를 되돌리거나 환불할 필요는 없습니다. 테스트 목적으로만 사용되며 Stripe 잔액에는 영향을 주지 않습니다.
-
----
-*원문 최종 수정: Tue, 22 Apr, 2025 at 5:09 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### Apple Pay와 Google Pay 말고 다른 Stripe 결제 수단도 켤 수 있나요?
+네. 하이퍼클래스는 조건이 맞는 상품 영역에서 다른 Stripe 결제 수단도 지원해요. 사용 가능 여부는 상품 영역, 결제 계정, 지역, 결제 수단, 그 밖의 추가 요건에 따라 달라요.

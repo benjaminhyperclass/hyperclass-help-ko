@@ -1,81 +1,132 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 10-마케팅 > Facebook Conversion API (CAPI)
+원문: /support/solutions/articles/155000002478-how-to-send-meta-conversion-data-from-highlevel-ad-manager
+번역일: 2026-11-06
+카테고리: 10-마케팅
 ---
 
-# 광고 관리자에 전환 데이터를 전송하는 방법
+# 광고 관리자에서 Meta로 전환 데이터 보내기
 
-전환 추적은 광고의 완벽한 타겟 오디언스 설정의 정확도를 높이고, 더 나은 결과와 더 많은 리드 전환을 도와 향후 더 나은 퍼널을 구축하는 데 도움이 됩니다. 이 가이드에서는 더 나은 타겟팅을 위한 전환 픽셀을 만드는 방법을 알아보겠습니다.
+하이퍼클래스에서 일어난 고객 행동을 Meta로 보내면 광고 성과 측정, 어트리뷰션, 캠페인 최적화에 도움이 돼요. 이 문서에서는 광고 관리자에서 전환 픽셀을 만드는 방법과 이벤트 유형을 설명하고, Meta 광고 워크플로우에 쓸 수 있도록 준비하는 과정을 안내해요.
 
----
+## 광고 관리자 전환 픽셀이란?
 
-## **목차**
+광고 관리자 전환 픽셀은 하이퍼클래스에서 일어나는 고객 행동을 Meta 광고 활동과 연결해 줘요. 전환 픽셀을 만들어 두면, 워크플로우에서 지원되는 Meta Conversion API 이벤트를 보낼 때 하이퍼클래스가 전환 출처를 확인할 수 있어요.
 
-- [전환 픽셀 생성 옵션은 어디에서 찾을 수 있나요?](#전환-픽셀-생성-옵션은-어디에서-찾을-수-있나요)
-- [전환 탭에는 어떤 세부 정보가 표시되나요?](#전환-탭에는-어떤-세부-정보가-표시되나요)
-- [새 전환 픽셀을 만드는 방법은?](#새-전환-픽셀을-만드는-방법은)
-- [전환 픽셀 생성의 활용 방안은?](#전환-픽셀-생성의-활용-방안은)
-- [생성된 전환 픽셀에 대한 중요 정보](#생성된-전환-픽셀에-대한-중요-정보)
+광고 관리자에서 만든 전환 픽셀에는 자동으로 생성된 **픽셀 ID**와 구성 정보가 들어 있어요. 이 픽셀은 Meta로 퍼널 이벤트나 리드 이벤트를 보낼 때 쓸 수 있어요.
 
----
+픽셀을 만드는 것은 전환 추적 과정의 한 단계일 뿐이에요. 전환 이벤트를 Meta로 보내려면 하이퍼클래스 워크플로우에서 **Meta Conversion API**(Meta 전환 API) 액션도 설정해야 해요.
 
-## 전환 픽셀 생성 옵션은 어디에서 찾을 수 있나요?
-
-광고 관리자 홈 페이지에서 설정 아이콘(아래 스크린샷에 강조 표시됨)을 클릭하여 광고 관리자 설정으로 이동할 수 있습니다. 설정 아이콘은 톱니바퀴 모양으로 표시됩니다.
-
-![광고 관리자 설정 아이콘](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037626834/original/h0dyc4bj0yv4SRB6_6uSSZGkAUe6XkVMdQ.png?1733211399)
-
-![광고 관리자 설정 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037627112/original/mKkHPZipxr7qhvPqNKPLr0sfmeGzubZfDw.png?1733211480)
-
-광고 관리자 설정에는 'Integrations(연동)', 'Pages(페이지)', 'Conversions(전환)', 'Audiences(오디언스)', 'Subscription(구독)' 등 5개의 탭이 있으며, 각각 특정 기능이나 정보를 담고 있습니다. 여기서는 'Conversions(전환)' 탭에 집중하겠습니다.
+[광고 관리자용 Meta Conversion API 액션 보내는 방법 알아보기](how-to-send-a-meta-conversion-api-action-for-ad-manager.md)
 
 ---
 
-## **전환 탭에는 어떤 세부 정보가 표시되나요?**
+## 광고 관리자 전환 픽셀의 장점
 
-전환 탭에서는 연결된 Meta 광고 계정에서 가져온 모든 픽셀과 "Create new conversion pixel(새 전환 픽셀 만들기)" 버튼을 사용하여 광고 관리자에서 생성한 픽셀을 모두 확인할 수 있습니다.
-
-![전환 탭 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037629695/original/Nw3wemurDhQ8kxY_-JHdcj-Nix3ZYrgXtA.png?1733211852)
-
----
-
-## **새 전환 픽셀을 만드는 방법은?**
-
-"Create new conversion pixel(새 전환 픽셀 만들기)" 버튼을 클릭하면 픽셀 이름을 입력하라는 대화 상자가 열립니다. 픽셀 ID와 코드는 워크플로우를 만들어 Facebook에 CAPI 이벤트를 다시 전송할 때 사용하기 쉽도록 자동으로 생성됩니다.
-
-![새 전환 픽셀 생성 대화상자](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037630152/original/VJ4Ev0BbzZeezBUIElENO93U8lRxQZyR4A.png?1733212034)
+- 전환 추적 개선: 하이퍼클래스에서 지원되는 고객 행동을 Meta 광고 활동과 연결해요.
+- 어트리뷰션 개선: 고객 행동을 광고 상호작용과 연결하는 데 도움이 되는 전환 신호를 Meta에 더 많이 전달해요.
+- 캠페인 최적화: Meta가 의미 있는 고객 행동을 목표로 캠페인을 최적화할 때 쓸 전환 데이터를 더 많이 제공해요.
+- 리드 여정 확인: 리드가 폼을 제출하거나, 예약하거나, 파이프라인 단계를 옮겨 가는 과정에서 생기는 이벤트를 추적해요.
+- 유연한 이벤트 추적: 같은 전환 픽셀을 지원되는 퍼널 이벤트와 리드 이벤트에 모두 쓸 수 있어요.
+- 간편한 워크플로우 설정: Meta Conversion API 워크플로우 액션에서 **Ad Manager**(광고 관리자) 연결 유형을 쓰면 선택 가능한 광고 관리자 픽셀이 목록에 나타나고, 하이퍼클래스가 액세스 토큰을 관리해요.
+- 오디언스와 리타기팅 지원: 알맞게 설정하면 전환 데이터와 오디언스 데이터를 더 폭넓은 Meta 광고 전략에 활용할 수 있어요.
 
 ---
 
-## **전환 픽셀 생성의 활용 방안은?**
+## 퍼널 이벤트와 리드 이벤트(Funnel Events and Lead Events)
 
-전환 픽셀은 온라인 광고의 효과를 측정, 최적화, 개선하는 중요한 도구입니다. 더 나은 추적, 리타겟팅, 고객 행동 이해를 가능하게 하여 궁극적으로 마케팅 ROI 향상에 도움이 됩니다.
+**Funnel Event**(퍼널 이벤트)는 보통 하이퍼클래스의 퍼널, 웹사이트, 폼, 설문, 예약, 주문 폼에서 시작된 고객 행동에 써요.
 
-전환 픽셀은 사용자 행동을 추적하고 광고 캠페인의 성공을 측정하기 위해 웹사이트에 설치하는 작은 코드 조각입니다. 주요 활용 방안은 다음과 같습니다:
+지원되는 워크플로우 트리거에는 다음이 포함될 수 있어요.
 
-- **전환 추적**: 구매, 가입, 폼 제출 등 특정 행동을 측정합니다.
-- **광고 최적화**: 광고 타겟팅 개선에 도움이 됩니다.
-- **리타겟팅**: 사이트와 상호작용했지만 전환하지 않은 사용자에게 광고를 표시할 수 있습니다.
-- **ROAS 측정**: 전환을 광고와 연결하여 광고 지출 대비 수익을 추적합니다.
-- **A/B 테스트**: 광고 변형을 비교하고 캠페인 성과를 개선하는 데 도움이 됩니다.
-- **크로스 디바이스 추적**: 여러 기기에서 사용자 행동을 추적하여 더 나은 어트리뷰션을 제공합니다.
-- **커스텀 이벤트**: 동영상 시청이나 콘텐츠 참여 등 특정 사용자 행동을 추적합니다.
-- **오디언스 세분화**: 사용자 행동에 기반한 타겟 오디언스를 생성합니다.
+- **Form Submitted**(폼 제출)
+- **Survey Submitted**(설문 제출)
+- **Customer Booked Appointment**(고객 예약 완료)
+- **Order Form Submission**(주문 폼 제출)
+
+퍼널 이벤트 설정을 더 자세히 알아보려면 [Facebook Conversion API용 퍼널 이벤트 픽셀 설정하기](../../42-통합/Facebook-Integration/how-to-set-up-a-funnel-event-pixel-for-facebook-conversion-api.md)를 참고하세요.
+
+### 리드 이벤트(Lead Events)
+
+**Lead Event**(리드 이벤트)에 자주 쓰는 트리거는 다음과 같아요.
+
+- **Facebook Lead Form Submission**(Facebook 리드 폼 제출)
+- **Pipeline Stage Change**(파이프라인 단계 변경)
+
+리드 이벤트는 리드 적격 판정이나 파이프라인 진행처럼 후반 단계의 결과를 Meta로 다시 보낼 때 유용해요.
+
+연락처에 이벤트를 매칭하는 데 필요한 Meta 어트리뷰션 데이터가 있다면, 연락처 기반의 다른 워크플로우 트리거도 쓸 수 있어요.
+
+리드 이벤트 요구 사항과 어트리뷰션 설정을 자세히 알아보려면 [Facebook 전환 리드 안내](../../42-통합/Facebook-Integration/facebook-conversion-leads-walkthrough.md)를 참고하세요.
+
+{% hint style="warning" %}
+중요: 어트리뷰션이 제대로 되려면 연락처에 필요한 Meta 어트리뷰션 정보가 있어야 해요. 이벤트와 설정에 따라 FBCLID/FBC, Paid Social(Facebook) 어트리뷰션, Facebook Lead ID가 포함될 수 있어요.
+{% endhint %}
 
 ---
 
-## **생성된 전환 픽셀에 대한 중요 정보**
+## 전환 픽셀과 Meta CAPI 워크플로우의 관계
 
-전환 픽셀을 생성한 후에는 다음과 같이 자동으로 처리되는 사항들이 있습니다:
+광고 관리자에서 전환 픽셀을 만들면 전환 자산이 준비돼요. 전환 데이터를 Meta로 실제로 보내는 시점은 Meta Conversion API 워크플로우 액션이 정해요.
 
-- 픽셀 ID와 코드는 자동으로 생성되며, 워크플로우를 생성하여 Facebook에 CAPI 이벤트를 다시 전송할 때 동일하게 사용됩니다.
-- UTM 매개변수는 자동으로 생성되어 효과적인 추적을 위해 픽셀에 추가되므로 사용자가 신경 쓸 필요가 없습니다.
-- 목표 유형: Lead Event는 Facebook 폼 리드가 기회 관리 파이프라인의 한 단계에서 다른 단계로 이동할 때 데이터를 전송하는 데 사용됩니다.
-- 목표 유형: Funnel Event는 폼 제출, 설문 제출, 채팅 위젯 답변, 넘버 풀 통화의 데이터를 전송하는 데 사용됩니다.
-- 픽셀이 생성되면 목표 유형이 Funnel Event로 표시되며, 워크플로우에서 CAPI를 사용하여 Facebook에 성공적인 이벤트가 전송된 후 퍼널 이벤트인지 리드 이벤트인지에 따라 적절히 변경됩니다.
-- 하나의 전환 픽셀로 퍼널 이벤트와 리드 이벤트를 모두 Facebook에 문제없이 전송할 수 있습니다.
+워크플로우에서 **Meta Conversion API** 액션을 설정할 때는 두 가지 연결 유형 중에서 고를 수 있어요.
+
+- **Integrations**(연동)
+- **Ad Manager**
+
+**Ad Manager** 연결 유형을 쓰면 광고 관리자에 있는 전환 픽셀이 미리 채워져 선택만 하면 돼요. 하이퍼클래스가 액세스 토큰도 관리하기 때문에, 토큰을 직접 만들어 워크플로우 액션에 붙여 넣을 필요가 없어요.
+
+워크플로우 트리거와 **Event Type**(이벤트 유형)은 보고하려는 고객 활동과 맞아야 해요. 예를 들어 폼 제출은 퍼널 이벤트로 설정하고, Meta 리드가 파이프라인 단계를 옮겨 가는 활동은 리드 이벤트로 설정할 수 있어요.
+
+[광고 관리자용 Meta Conversion API 액션 설정 더 알아보기](how-to-send-a-meta-conversion-api-action-for-ad-manager.md)
 
 ---
-*원문 최종 수정: 2024년 12월 3일*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+
+## 광고 관리자 전환 픽셀 설정하기
+
+1. 하이퍼클래스 서브 계정에서 **마케팅 > 광고 관리자**로 이동한 다음 **설정** 버튼을 클릭해 광고 관리자 설정 화면을 여세요.
+
+   ![광고 관리자 설정 화면 열기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155078360502/original/pweu3LarV3Ub8U3lIFfYdB9iBBITvh8cmw.png?1786632122)
+
+2. **전환** 탭을 선택해 사용 가능한 전환 픽셀을 확인한 다음 **새 전환 만들기**를 클릭하세요.
+
+   ![전환 탭에서 새 전환 만들기 클릭](https://jumpshare.com/share/C5X11PXlQKABtbO62taf+/Screen+Shot+2026-08-13+at+10.32.02+AM.png)
+
+3. 전환 픽셀 이름을 입력하고 **완료**를 클릭해 만들기를 마치세요.
+
+   ![전환 픽셀 이름 입력 후 완료](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155078368890/original/vRn1uFv6VQQwiM17cR7YZN0eZ6AxXbHejw.png?1786635510)
+
+{% hint style="info" %}
+새 픽셀이 **전환** 탭에 보이는지 확인하세요.
+새로 만든 전환 픽셀은 처음에는 광고 관리자에 사용 가능한 전환 정보가 표시되고, 이후 지원되는 Meta Conversion API 워크플로우를 설정할 때 선택할 수 있어요.
+{% endhint %}
+
+**Ad Manager** 연결 유형을 선택하면 하이퍼클래스가 액세스 토큰을 관리해요.
+
+전체 워크플로우 설정 방법은 [광고 관리자용 Meta Conversion API 액션 설정하기](how-to-send-a-meta-conversion-api-action-for-ad-manager.md)를 참고하세요.
+
+{% hint style="info" %}
+참고: Meta Conversion API 워크플로우 액션을 설정할 때 **Custom Mapping**(사용자 지정 매핑)을 쓸 수 있어요. 지원되는 매핑과 설정 방법은 [광고 관리자용 Meta Conversion API 액션 설정하기](how-to-send-a-meta-conversion-api-action-for-ad-manager.md)를 참고하세요.
+{% endhint %}
+
+{% hint style="info" %}
+컴플라이언스 참고: Meta는 금지되었거나 민감한 정보를 담고 있거나 암시하는 맞춤 오디언스와 맞춤 전환에 제한을 적용해요. 전환 이름과 설정이 Meta 요건에 맞는지 확인하세요. 자세한 내용은 [Meta: 맞춤 오디언스 및 전환 제한 사항](../Troubleshooting-Ad-Manager/meta-custom-audiences-and-conversions-restrictions.md)을 참고하세요.
+{% endhint %}
+
+---
+
+## 자주 묻는 질문
+
+### 전환 픽셀을 만들면 Meta로 데이터가 자동으로 전송되나요?
+아니요. 하이퍼클래스가 전환 이벤트를 Meta로 보내려면 워크플로우에 **Meta Conversion API** 액션도 추가해야 해요.
+
+### Meta 액세스 토큰을 직접 만들어야 하나요?
+아니요. 연결 유형으로 **Ad Manager**를 선택하면 하이퍼클래스가 액세스 토큰을 관리해 줘요.
+
+### 같은 픽셀을 여러 이벤트 유형에 쓸 수 있나요?
+네. 같은 전환 픽셀을 지원되는 퍼널 이벤트와 리드 이벤트에 모두 쓸 수 있어요.
+
+### 전환이 Meta에 표시되지 않아요. 왜 그런가요?
+연락처에 전환을 원래 광고 상호작용과 매칭하는 데 필요한 Meta 추적 정보가 없을 수 있어요.
+
+### 퍼널 이벤트와 리드 이벤트 중 무엇을 골라야 하나요?
+폼 제출, 설문, 예약, 주문 폼 같은 행동에는 **Funnel Event**를 고르세요. Meta 리드 폼 제출이나 CRM에서의 리드 진행 상황에는 **Lead Event**를 고르세요.

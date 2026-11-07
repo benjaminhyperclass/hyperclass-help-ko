@@ -1,68 +1,51 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 14-문서-계약 > 문서-계약
+원문: /support/solutions/articles/155000002624-how-to-set-signing-order-for-recipients-in-documents-and-contracts
+번역일: 2026-11-07
+카테고리: 14-문서-계약
 ---
 
-# 문서 및 계약서 수신자 서명 순서 설정 방법
+# 문서 & 계약에서 수신자 서명 순서 설정하기
 
-### **커뮤니티에서 제공하는 더 많은 튜토리얼**
-
-[https://youtu.be/hmdz7X8kBVU](https://youtu.be/hmdz7X8kBVU)
-
-[https://youtu.be/_uN77Q2vI08](https://youtu.be/_uN77Q2vI08)
-
-[https://youtu.be/qXYRyZ0HRQ0](https://youtu.be/qXYRyZ0HRQ0)
-
-[https://youtu.be/tsDkZkGEKnM](https://youtu.be/tsDkZkGEKnM)
+문서나 계약서를 보낼 때 수신자가 정해진 순서대로 서명하게 할지 직접 정할 수 있어요. 승인자가 필요한 문서에 특히 유용하고, 수신자 순서는 끌어서 놓는 방식으로 바꿀 수 있어요.
 
 ## 주요 기능
 
-- 이제 고객/사용자는 문서를 보낼 때 서명 순서를 활성화/비활성화할 수 있습니다. 문서 승인자가 필요한 모든 사용자가 이 기능을 쉽게 사용할 수 있습니다.
-- 드래그 앤 드롭 기능으로 서명자/수신자 순서를 간편하게 조정할 수 있습니다.
-
-## 핵심 기능
-
-- **서명 순서 활성화/비활성화**: 고객/사용자가 수신자의 서명 순서를 적용할지 여부를 선택할 수 있습니다.
-- **드래그 앤 드롭 순서 조정**: 원하는 대로 서명자/수신자 순서를 쉽게 조정할 수 있습니다.
-- **순차 이메일 발송**: 서명 순서가 활성화된 경우, 서명자/수신자 순서에 따라 이메일이 발송됩니다.
-- **동시 이메일 발송**: 서명 순서가 비활성화된 경우, 모든 수신자에게 이메일이 동시에 발송됩니다.
+- 서명 순서 켜기/끄기: 수신자에게 서명 순서를 적용할지 선택할 수 있어요.
+- 끌어서 놓아 순서 변경: 서명자(수신자)의 순서를 원하는 대로 쉽게 바꿀 수 있어요.
+- 순차 이메일 발송: 서명 순서를 켜면 서명자(수신자) 순서에 따라 이메일이 차례로 발송돼요.
+- 동시 이메일 발송: 서명 순서를 끄면 모든 수신자에게 이메일이 동시에 발송돼요.
 
 ## 장점
 
-- **향상된 제어**: 고객/사용자가 서명 순서를 지정하여 체계적인 프로세스를 보장할 수 있습니다.
-- **효율성 개선**: 드래그 앤 드롭 기능으로 서명자/수신자 관리가 간편해집니다.
+- 서명 순서를 직접 정할 수 있어서 진행 과정을 더 체계적으로 관리할 수 있어요.
+- 끌어서 놓는 방식이라 서명자(수신자)를 관리하기가 간편해요.
 
 ## 사용 방법
 
-### 서명 순서 활성화/비활성화:
+### 서명 순서 켜기/끄기
 
-- 문서 또는 계약서 발송 페이지로 이동합니다.
-- 원하는 설정에 따라 서명 순서 토글 스위치를 켜거나 끕니다.
+1. 문서 또는 계약 발송 화면으로 이동하세요.
+2. **Signing Order**(서명 순서) 토글을 눌러 기능을 켜거나 끄세요.
 
-![서명 순서 토글](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155027315115/original/To7y8iMY_ww-w2Ifds7obE70TPkz9X_u4g.jpeg?1717787888)
+![서명 순서 토글 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155027315115/original/To7y8iMY_ww-w2Ifds7obE70TPkz9X_u4g.jpeg?1717787888)
 
-### 서명자/수신자 순서 조정:
+### 서명자(수신자) 순서 바꾸기
 
-- 서명자/수신자 이름을 클릭하고 드래그합니다.
-- 원하는 위치로 이동시킵니다.
-- 드래그를 놓으면 새로운 순서가 적용됩니다.
+1. 서명자(수신자)의 이름을 길게 누르세요.
+2. 목록에서 원하는 위치로 끌어 옮기세요.
+3. 마우스 버튼을 놓으면 새 순서가 적용돼요.
 
-![드래그 앤 드롭 순서 조정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155027315116/original/SHuSzwwrEC4bLPWPHb45mOMEpU4GutTcHg.jpeg?1717787888)
+![서명자 순서를 끌어서 바꾸는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155027315116/original/SHuSzwwrEC4bLPWPHb45mOMEpU4GutTcHg.jpeg?1717787888)
 
-### 이메일 발송 관리:
+### 이메일 발송 방식
 
-- 서명 순서가 활성화된 경우: 서명자/수신자 순서에 따라 순차적으로 이메일이 발송됩니다.
-- 서명 순서가 비활성화된 경우: 모든 수신자에게 동시에 이메일이 발송됩니다.
+- **Signing Order**(서명 순서)를 켜면 서명자(수신자) 순서대로 이메일이 차례로 발송돼요.
+- **Signing Order**(서명 순서)를 끄면 모든 수신자에게 이메일이 동시에 발송돼요.
 
-![이메일 발송 관리](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155027315117/original/uwQe4_cfGt1TW5bhwRqWbfbxIldQzv9JyQ.jpeg?1717787888)
+![서명 순서에 따른 이메일 발송 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155027315117/original/uwQe4_cfGt1TW5bhwRqWbfbxIldQzv9JyQ.jpeg?1717787888)
 
-## 왜 이 기능이 필요한가요?
+## 이 기능이 필요한 이유
 
-- 서명 순서 기능은 문서 관리 시스템에 전문성을 더하며, 다양한 비즈니스 시나리오에서 순차적 워크플로우의 필요성을 해결합니다.
-- 이 기능은 서명 프로세스를 정밀하게 제어해야 하는 고객/사용자를 위한 것으로, 규정 준수와 효율성을 보장합니다.
-- 이메일 배포의 유연성과 명확한 알림을 제공하여 사용자 경험을 향상시키고 소중한 고객의 문서 워크플로우를 간소화하는 것을 목표로 합니다.
-
----
-*원문 최종 수정: 2024년 6월 7일*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+- 서명 순서 기능은 여러 업무 상황에서 필요한 순차적인 문서 처리 흐름을 지원해요.
+- 서명 과정을 세밀하게 관리해야 하는 사용자가 규정 준수와 업무 효율을 챙길 수 있어요.
+- 이메일 발송 방식을 선택할 수 있고 알림이 명확해서, 문서 처리 과정을 더 매끄럽게 운영할 수 있어요.

@@ -1,35 +1,31 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 21-어필리에이트 > 제휴 프로그램
+원문: /support/solutions/articles/155000001898-how-to-complete-your-1099-form-for-2023-income
+번역일: 2026-11-07
+카테고리: 21-어필리에이트
 ---
 
-# 2023년 소득에 대한 1099 양식 작성 방법
+# 2023년 소득 1099 작성하기
 
-![1099 양식 관련 안내 이미지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155019276002/original/j55BqKOQ_4tyIzgJ5HHcj8KypFlqPUi7ng.jpg?1706739771)
+2023년 소득에 대한 1099를 Tax1099.com에서 확인하고 작성하는 방법을 안내해요. 요건을 충족한 제휴 파트너라면 Tax1099.com에서 온 이메일을 받았을 거예요.
 
-세무 신고 시즌이 다가오면서, 모든 분들께 원활한 절차를 제공하고자 합니다. 자격을 갖춘 제휴 파트너(Affiliate)분들께서는 2023년 세무 연도에 대한 Hyperclass의 1099 양식에 접근하기 위해 [Tax1099.com](http://Tax1099.com)으로부터 이메일을 받으셨을 것입니다.
+![1099 안내 이미지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155019276002/original/j55BqKOQ_4tyIzgJ5HHcj8KypFlqPUi7ng.jpg?1706739771)
 
-국세청(IRS) 규정에 따라 저희는 1월 31일 이전에 1099 양식을 발송해야 합니다. 이 1099 양식에는 2023년에 Hyperclass로부터 받으신 총 금액이 명시되어 있으며, 세무 신고에 필수적인 서류입니다.
+세금 신고 시즌이 다가오고 있어요. 모든 분이 순조롭게 진행할 수 있도록 안내해 드려요. 요건을 충족한 제휴 파트너께는 2023년 과세 연도 기준 하이퍼클래스 1099를 확인할 수 있도록 [Tax1099.com](http://Tax1099.com)에서 이메일을 보냈어요.
 
-해당 이메일에 제공된 안내에 따라 양식에 접근하실 수 있습니다.
+미국 국세청(IRS)은 1월 31일 전에 1099를 발송하도록 요구해요. 이 1099에는 2023년에 하이퍼클래스에서 받은 총금액이 담겨 있고, 세금 신고에 꼭 필요한 서류예요.
 
-**진행 방법:**
+1099를 확인하려면 해당 이메일의 안내에 따라 진행하세요.
 
-**1. 로그인:** [여기를 클릭](https://www.tax1099.com/)하여 로그인 페이지로 이동하세요.
+## 진행 방법
 
-**2. 이메일 ID 입력:** Tax1099.com 이메일을 받으신 이메일 주소를 사용하세요.
+1. [여기](https://www.tax1099.com/)를 눌러 로그인 페이지로 이동하세요.
+2. 이메일 ID에는 Tax1099.com 이메일을 받은 이메일 주소를 입력하세요.
+3. 비밀번호는 로그인 화면 아래쪽의 **Password Scenarios**(비밀번호 안내)를 보고, 본인 상황에 맞는 비밀번호를 입력하세요.
 
-**3. 비밀번호:** 로그인 화면 하단에 나열된 비밀번호 시나리오를 참조하여 올바른 비밀번호를 입력하세요.
+받은 편지함에서 해당 이메일을 쉽게 찾을 수 있도록 이메일 예시 화면을 보여 드려요.
 
-받으신 이메일이 어떤 모습인지 미리 보여드리니, 받은 편지함에서 찾는 데 도움이 되시길 바랍니다:
+![Tax1099.com 이메일 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155019276142/original/U82bx6_ItCDmAe6EbUQQAlPfiwCo8y_6Tg.png?1706740189)
 
-![Tax1099.com에서 보낸 이메일 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155019276142/original/U82bx6_ItCDmAe6EbUQQAlPfiwCo8y_6Tg.png?1706740189)
+빠르게 확인해 주시면 모두가 원활하게 세금 신고 시즌을 보낼 수 있어요. 협조해 주셔서 감사합니다.
 
-이 문제에 신속하게 대응해 주셔서 감사합니다. 여러분의 협조로 모두에게 원활한 세무 시즌을 보장할 수 있습니다.
-
-질문이 있으시거나 문제가 발생하시면 저희 회계팀 **accounting@Hyperclass.com**으로 연락해 주세요.
-
----
-*원문 최종 수정: Wed, 31 Jan, 2024 at 4:48 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+궁금한 점이 있거나 문제가 생기면 하이퍼클래스 고객지원에 문의하세요.

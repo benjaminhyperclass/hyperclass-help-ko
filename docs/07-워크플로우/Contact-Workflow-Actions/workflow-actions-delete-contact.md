@@ -1,77 +1,53 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 07-워크플로우 > Contact Workflow Actions
+원문: /support/solutions/articles/155000003423-workflow-actions-delete-contact
+번역일: 2026-11-07
+카테고리: 07-워크플로우
 ---
 
-# 워크플로우 액션 - 연락처 삭제
+# 워크플로우 액션 — Delete Contact(연락처 삭제)
 
-이 글에서는 워크플로우 내의 **연락처 삭제** 액션이 무엇인지, 어떻게 설정하는지, 그리고 사용하기 전에 꼭 고려해야 할 중요한 사항들을 설명합니다.
+워크플로우에서 **Delete Contact**(연락처 삭제) 액션이 무엇인지, 어떻게 설정하는지, 쓰기 전에 무엇을 확인해야 하는지 안내해요.
 
----
+## Delete Contact 액션이란?
 
-**목차**
+**Delete Contact** 액션을 쓰면 연락처의 모든 기록을 시스템에서 자동으로 삭제할 수 있어요. 특정 조건에 맞아서 CRM에 더 이상 필요 없는 연락처를 정리할 때 사용해요. 연락처를 삭제하면 되돌릴 수 없으므로설정을 꼼꼼히 확인하고 영향을 이해한 뒤에 쓰세요.
 
-- [연락처 삭제 액션이란?](#연락처-삭제-액션이란)
-- [연락처 삭제 액션 사용하는 방법](#연락처-삭제-액션-사용하는-방법)
-- [자주 묻는 질문](#자주-묻는-질문)
+## Delete Contact 액션 사용하기
 
----
+{% hint style="warning" %}
+자동 삭제 대상이 되는 필터 조건을 꼭 세 번 확인하고, 워크플로우를 테스트한 뒤에 그대로 두세요. 연락처 데이터는 직접 백업해 두고, **Delete Contact** 액션을 쓴다는 사실을 관련 팀원에게 알려 두는 것이 좋아요.
+{% endhint %}
 
-# 연락처 삭제 액션이란?
+1. 워크플로우 빌더를 열어요. 서브 계정의 **자동화** 메뉴로 이동해서 원하는 워크플로우를 열거나, 새로 만들거나, 레시피로 만들어요.
 
-**연락처 삭제** 액션은 시스템에서 연락처의 모든 기록을 자동으로 제거할 수 있는 강력한 도구입니다. 특정 조건에 맞는 연락처가 더 이상 CRM에서 필요하지 않을 때 사용할 수 있습니다. 하지만 연락처 삭제는 되돌릴 수 없는 작업이므로, 이 액션을 신중하게 설정하고 그 결과를 충분히 이해하는 것이 중요합니다.
+   ![워크플로우 빌더 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040683086/original/u0cx1mRLK1gmXsIteDcxdqITxu9TJo-6Sw.png?1738188522)
 
----
+2. 액션을 추가해요. 워크플로우 빌더에서 더하기(+) 버튼을 눌러 액션 메뉴를 열고, 검색하거나 스크롤해서 **Delete Contact**를 찾아 선택해요.
 
-## 연락처 삭제 액션 사용하는 방법
+   {% hint style="info" %}
+   **Delete Contact** 액션은 워크플로우의 맨 끝에 두세요. 연락처가 바로 삭제되면서 워크플로우도 끝나기 때문에, **Delete Contact** 뒤에 있는 액션은 실행되지 않아요.
+   {% endhint %}
 
-워크플로우에서 **연락처 삭제** 액션을 사용하려면 다음 단계를 따르세요.
+   ![액션 메뉴에서 Delete Contact 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040683126/original/FClehbjOj1HSlOHtl_wxXgxLutnC-Aimqg.png?1738188646)
 
-연락처 자동 삭제 조건에 해당하는 필터 조건을 **반드시 세 번 확인**하고, 워크플로우를 방치하기 전에 **테스트**하세요. 연락처 데이터를 **직접 백업**하고 연락처 삭제 액션 사용에 대해 **관련 팀원들에게 미리 알려주는** 것이 좋습니다.
+3. 액션을 구성해요. **Delete Contact** 액션에는 따로 설정할 항목이 없어요. 워크플로우에서 진행 중인 연락처를 그대로 삭제해요.
 
-**1단계:** 워크플로우 빌더(Workflow Builder) 열기
+   ![설정 항목이 없는 Delete Contact 액션 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040683193/original/Mu8ynRedaS6nVDdLjbGRwJgUhSsNWgAioA.png?1738188834)
 
-하위 계정 > 자동화(Automations)로 이동하여 원하는 워크플로우를 열거나, 처음부터 새로 만들거나 레시피에서 새로 만드세요.
+4. **Save Action**(액션 저장)을 눌러 워크플로우에 액션을 추가해요. 워크플로우를 테스트한 뒤 준비가 되면 게시할 수 있어요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040683086/original/u0cx1mRLK1gmXsIteDcxdqITxu9TJo-6Sw.png?1738188522)
+   ![Save Action 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040683264/original/_LohJHHZoMXWc0iaw0pncXmvP4kmjBzjlQ.png?1738188970)
 
-**2단계:** 액션 추가
+## 자주 묻는 질문
 
-워크플로우 빌더에서 플러스(+) 버튼을 클릭하여 액션 메뉴를 엽니다. 검색하거나 스크롤해서 연락처 삭제(Delete Contact) 액션을 찾으세요.
+### 삭제된 연락처를 복원할 수 있나요?
 
-연락처 삭제 액션은 워크플로우 맨 끝에 배치하세요. 연락처 삭제는 즉시 실행되므로 어차피 워크플로우가 종료됩니다. 연락처 삭제 액션 이후의 모든 액션은 실행되지 않습니다.
+**Delete Contact** 옵션으로 삭제한 연락처는 삭제 후 2개월 이내에 복원할 수 있어요. 자세한 내용은 "How To Delete Contacts And Their Data" 문서를 참고하세요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040683126/original/FClehbjOj1HSlOHtl_wxXgxLutnC-Aimqg.png?1738188646)
+### 연락처를 삭제하면 무엇이 함께 삭제되나요?
 
-**3단계**: 액션 "설정"
+연락처 기록과 함께 대화, 메모, 작업, 활동 이력 같은 관련 데이터도 모두 삭제되고 영구적으로 사라져요. 삭제된 연락처를 복원해도 이 관련 데이터는 복구되지 않아요.
 
-연락처 삭제 액션은 설정할 수 없습니다. 별도 설정 항목이 없고, 워크플로우에서 활성화된 연락처를 그대로 삭제합니다.
+### 삭제 말고 다른 방법은 없나요?
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040683193/original/Mu8ynRedaS6nVDdLjbGRwJgUhSsNWgAioA.png?1738188834)
-
-**4단계:** 액션 저장
-
-"액션 저장(save action)"을 클릭하여 워크플로우에 액션을 생성합니다. 워크플로우를 테스트해보고, 준비가 되면 발행할 수도 있습니다.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040683264/original/_LohJHHZoMXWc0iaw0pncXmvP4kmjBzjlQ.png?1738188970)
-
----
-
-## **자주 묻는 질문**
-
-**Q: 삭제한 연락처를 복구할 수 있나요?**
-
-A: 연락처 삭제 옵션으로 삭제한 연락처는 삭제 후 2개월 이내에 복구할 수 있습니다. 자세한 내용은 이 글을 참고하세요: [연락처 및 데이터 삭제 방법](../../02-연락처/스마트-리스트/how-to-delete-contacts-and-their-data.md)
-
-**Q: 연락처와 함께 무엇이 삭제되나요?**
-
-A: 연락처 기록이 삭제되고, 대화 내역, 노트, 할 일, 활동 기록 등 모든 관련 데이터도 영구적으로 삭제됩니다. 삭제된 연락처를 복구해도 이러한 관련 데이터는 복구되지 않습니다.
-
-**Q: 삭제 대신 다른 방법이 있나요?**
-
-A: 네, 연락처를 영구 삭제하고 싶지 않지만 워크플로우에서 더 이상 진행되지 않도록 하려면 **"워크플로우에서 제거(Remove from Workflow)"** 액션을 사용하는 것을 고려해보세요. 이 옵션은 시스템의 데이터에 영향을 주지 않고 해당 자동화에서만 연락처를 제거합니다.
-
----
-*원문 최종 수정: Wed, 29 Jan, 2025 at 6:07 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+있어요. 연락처를 영구 삭제하고 싶지는 않지만 워크플로우 진행만 멈추고 싶다면 **Remove From Workflow**(워크플로우에서 제거) 액션을 써 보세요. 해당 워크플로우에서만 연락처를 빼고, 시스템에 있는 연락처 데이터에는 영향을 주지 않아요.

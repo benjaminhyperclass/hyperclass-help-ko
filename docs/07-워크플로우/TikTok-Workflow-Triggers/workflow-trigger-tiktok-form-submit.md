@@ -1,14 +1,16 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 07-워크플로우 > TikTok Workflow Triggers
+원문: /support/solutions/articles/155000003262-workflow-trigger-tiktok-form-submit
+번역일: 2026-11-07
+카테고리: 07-워크플로우
 ---
 
-# 워크플로우 트리거 - TikTok 폼 제출
+# 워크플로우 트리거 — TikTok Form Submitted(TikTok 폼 제출)
+
+**TikTok Form Submitted**(TikTok 폼 제출) 트리거는 TikTok에서 폼이 제출될 때 워크플로우를 시작해요. TikTok 사용자에게서 리드를 모으거나 피드백, 정보를 받은 뒤 이어지는 작업을 자동화할 때 쓰면 좋아요.
 
 ## 개요
 
-**TikTok 폼 제출(TikTok Form Submitted)** 트리거는 TikTok을 통해 폼이 제출될 때마다 워크플로우를 시작하도록 설계되었습니다. 이 트리거는 TikTok 사용자로부터 리드를 수집하거나, 피드백을 모으거나, 정보를 수집한 후 후속 작업을 자동화하는 데 특히 유용합니다.
+**TikTok Form Submitted** 트리거는 TikTok을 통해 폼이 제출될 때마다 워크플로우를 시작해요. 이 트리거로 리드 수집, 피드백 수집, TikTok 사용자 정보 수집 후 필요한 후속 작업을 자동화할 수 있어요.
 
 ## 트리거 이름
 
@@ -16,36 +18,30 @@
 
 ## 트리거 설명
 
-이 트리거는 TikTok의 특정 폼이 제출될 때 워크플로우를 활성화합니다. 필터를 사용하여 어떤 폼 제출이 워크플로우를 트리거해야 하는지 지정할 수 있어, 관련 있는 제출만이 워크플로우를 시작하도록 보장합니다.
+TikTok에서 특정 폼이 제출되면 워크플로우가 시작돼요. **Filters**(필터)로 어떤 폼 제출에 워크플로우를 시작할지 정할 수 있어요. 필요한 제출만 골라서 워크플로우를 시작할 수 있어요.
 
 ## 설정 방법
 
-1. **워크플로우 트리거 선택**: 사용 가능한 트리거 목록에서 **TikTok Form Submitted**를 선택합니다.
-
-2. **워크플로우 트리거 이름**: 트리거에 대한 설명적인 이름을 입력합니다. 예: "TikTok 리드 수집" 또는 "TikTok 피드백 폼"
-
-3. **필터**: 필터를 사용하여 어떤 폼 제출이 워크플로우를 활성화할지 지정합니다. 폼 이름을 기준으로 필터링하여 특정 폼으로 트리거를 제한할 수 있습니다.
+1. **Choose a Workflow Trigger**(워크플로우 트리거 선택)에서 사용할 수 있는 트리거 목록 중 **TikTok Form Submitted**를 선택해요.
+2. **Workflow Trigger Name**(워크플로우 트리거 이름)에 알아보기 쉬운 이름을 입력해요. 예를 들어 "TikTok Lead Capture", "TikTok Feedback Form"처럼 쓸 수 있어요.
+3. **Filters**에서 워크플로우를 시작할 폼 제출 조건을 정해요. 폼 이름을 기준으로 필터링하면 특정 폼만 트리거로 쓸 수 있어요.
 
 | 값 | 설명 | 필수 여부 |
-|---|---|---|
-| In Form | 제출 시 워크플로우를 트리거할 특정 TikTok 폼을 선택합니다. | 예 |
+| --- | --- | --- |
+| **In Form**(폼 선택) | 제출 시 워크플로우를 시작할 TikTok 폼을 선택해요. | 예 |
 
-![TikTok 폼 제출 트리거 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032022492/original/A426hQAmcPS1t1wwCkwPOXY0vI_wRDYPqw.png?1725189426)
+![TikTok Form Submitted 트리거 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032022492/original/A426hQAmcPS1t1wwCkwPOXY0vI_wRDYPqw.png?1725189426)
 
 ## 예시
 
-TikTok에서 피드백 폼을 제출한 사용자에게 감사 이메일을 보내는 워크플로우를 만들고 싶다고 가정해 보겠습니다.
+TikTok에서 피드백 폼을 제출한 사용자에게 감사 이메일을 보내는 워크플로우를 만든다고 해 볼게요.
 
-- **워크플로우 트리거 이름**: "TikTok 피드백 감사"
-- **필터**:
-  - **In Form**: "TikTok Feedback Form" (이 폼의 제출만 워크플로우를 트리거함)
+- **Workflow Trigger Name**: "TikTok Feedback Thank You"
+- **Filters**:
+  - **In Form**: "TikTok Feedback Form" (이 폼에서 제출된 건만 워크플로우를 시작해요)
 
-**워크플로우 단계**:
+**워크플로우 단계**
 
-1. **트리거**: TikTok Form Submitted (위에서 설정한 대로)
-2. **액션**: 이메일 발송 - 피드백에 대해 사용자에게 감사 인사
-3. **액션**: 연락처 업데이트 - 피드백을 제출한 사용자를 추적하기 위해 연락처에 "피드백 제공" 태그 추가
-
----
-*원문 최종 수정: Sun, 1 Sep, 2024 at 6:18 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+1. **Trigger**(트리거): TikTok Form Submitted (위와 같이 설정)
+2. **Action**(액션): **Send Email**(이메일 보내기) - 피드백을 남긴 사용자에게 감사 인사를 전해요.
+3. **Action**: **Update Contact**(연락처 업데이트) - 연락처에 "Feedback Provided" 태그를 추가해서 피드백을 제출한 사용자를 구분해요.

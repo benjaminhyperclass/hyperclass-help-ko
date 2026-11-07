@@ -1,194 +1,132 @@
 ---
-
-번역일: 2026-04-06
-카테고리: 03-대화 > 대화
+원문: /support/solutions/articles/155000003707-conversations-snippets
+번역일: 2026-11-06
+카테고리: 03-대화
 ---
 
-# 대화 - 스니펫(Snippets)
+# 대화에서 스니펫 만들고 사용하기
 
-스니펫은 재사용 가능한 미리 작성된 텍스트 템플릿을 제공하여 커뮤니케이션을 간소화하는 시간 절약 도구입니다. 이 가이드에서는 스니펫 기능을 이해하고, 찾고, 효과적으로 사용하는 방법을 안내합니다. 또한 이러한 템플릿을 체계적으로 정리하여 효율성을 높이고 메시지에서 브랜드 일관성을 유지하는 방법도 설명합니다.
+스니펫은 자주 쓰는 문자·이메일 내용을 저장해 두고 필요할 때 꺼내 쓰는 기능이에요. **대화**에서 스니펫을 만들고, 정리하고, 검색하고, 메시지에 바로 넣을 수 있어요. 같은 메시지를 매번 다시 쓰지 않아도 돼요.
 
-**목차**
+텍스트 스니펫과 이메일 스니펫을 만드는 방법, 사용자 권한 설정, 스니펫 정리, 대화에서 스니펫을 넣는 방법을 다뤄요.
 
-- [스니펫이란 무엇인가요?](#스니펫이란-무엇인가요)
-- [스니펫 사용의 장점](#스니펫-사용의-장점)
-- [스니펫을 찾는 위치](#스니펫을-찾는-위치)
-- [스니펫 설정 방법](#스니펫-설정-방법)
-- [스니펫을 폴더로 정리하기](#스니펫을-폴더로-정리하기)
-- [대화에서 스니펫 사용하기](#대화에서-스니펫-사용하기)
-- [사용자 접근 및 권한](#사용자-접근-및-권한)
-- [자주 묻는 질문](#자주-묻는-질문)
+{% hint style="warning" %}
+현재 HiRise 스니펫 화면은 자동으로 켜져 있고, 기존(클래식) 스니펫 레이아웃은 더 이상 쓸 수 없어요. **대화**에서 스니펫을 쓰려면 **대화 > View & manage conversation**(대화 보기 및 관리) 권한이 필요해요.
+{% endhint %}
 
----
+## 대화의 스니펫이란?
 
-# 스니펫이란 무엇인가요?
+스니펫은 고객과의 대화에 빠르게 넣을 수 있는 문자 또는 이메일 메시지예요. 텍스트 스니펫과 이메일 스니펫이 따로 있어서, 메시지를 보낼 채널에 맞게 내용을 미리 준비할 수 있어요.
 
-스니펫은 팀이 일관된 커뮤니케이션을 유지할 수 있도록 도와주는 재사용 가능한 텍스트 또는 이메일 메시지 템플릿입니다. 스니펫을 사용하면 반복적인 메시지 작성 시간을 절약하고, 모든 상호작용에서 정확성과 브랜드에 맞는 톤을 보장할 수 있습니다. 이러한 템플릿은 대화에 빠르게 삽입할 수 있어 고객 커뮤니케이션을 더 빠르고 효율적으로 만듭니다. 스니펫은 이름이나 트리거 링크와 같은 플레이스홀더를 사용한 커스터마이징도 지원하여 다양한 상황에서 활용할 수 있습니다.
+스니펫에는 **커스텀 값**, **트리거 링크** 같은 지원되는 개인화 항목도 넣을 수 있어요.
 
-## 스니펫 사용의 장점
+이런 경우에 자주 써요.
 
-커뮤니케이션 비효율성은 지연, 일관성 없는 메시지, 고객과 효과적으로 소통할 기회를 놓치는 결과를 가져올 수 있습니다. 스니펫은 다음과 같은 방법으로 이러한 문제를 해결합니다:
+- 예약 알림과 후속 안내
+- 자주 묻는 질문
+- 리드 후속 연락
+- 고객 문의 답변
+- 운영시간 및 이용 안내
+- 자주 다시 쓰는 이메일 내용
 
-- 반복적인 메시지 입력 시간 단축
-- 팀 전체에서 일관된 톤과 언어 보장
-- 미리 정리된 사용 준비 완료 템플릿으로 생산성 향상
-- 브랜드 보이스에 맞는 재사용 가능한 사전 승인 텍스트로 오류 방지
+## 스니펫을 쓰면 좋은 점
 
-FAQ 응답, 놓친 예약에 대한 후속 조치, 반복되는 문의 관리 등 무엇이든 스니펫은 수동 작업을 줄이고 전문성을 유지합니다.
+스니펫을 쓰면 같은 내용을 반복해서 입력하지 않아도 돼요. 팀이 함께 쓰는 메시지 모음을 한곳에 두고, 상황이 바뀌면 고쳐서 계속 쓸 수 있어요.
 
-## 스니펫을 찾는 위치
+- 시간 절약: 자주 쓰는 답변을 다시 쓰지 않고 그대로 가져다 써요.
+- 일관성 유지: 팀원 모두가 정해진 문구를 사용할 수 있어요.
+- 개인화: 재사용하는 내용에 지원되는 커스텀 값을 넣을 수 있어요.
+- 체계적인 관리: 폴더, 검색, 필터로 스니펫을 정리해요.
+- 보내기 전 수정: 넣은 내용을 확인하고 고친 다음 연락처에게 보낼 수 있어요.
 
-스니펫은 소프트웨어 인터페이스 내에 위치하며 다음 두 가지 방법으로 접근할 수 있습니다:
+## 사전 준비와 권한
 
-**대화(Conversations) 접근**
+대화의 스니펫은 사용자의 **대화** 권한에 따라 쓸 수 있어요. 스니펫 탭이나 메시지 입력창의 스니펫 옵션이 보이지 않는다면 이 권한부터 확인해 보세요.
 
-왼쪽 메뉴에서 대화(Conversations)로 이동합니다. 화면 상단에서 스니펫(Snippets)을 선택합니다.
+- 스니펫은 해당 **서브 계정** 안에서 관리해요.
+- HiRise 스니펫 화면은 자동으로 켜져 있어요.
+- 사용자에게 **대화 > View & manage conversation**(대화 보기 및 관리) 권한이 필요해요.
 
-![스니펫 접근 방법 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155036790839/original/h_pRGPiSamgxwMXmr2h24mjspE454izlnA.png?1732004435)
+### 사용자에게 스니펫 권한 주기
 
-**마케팅(Marketing) 접근**
+사용자의 **대화** 권한에 따라 대화 화면과 스니펫 도구를 쓸 수 있는지가 정해져요.
 
-또는 마케팅(Marketing) > 스니펫(Snippets)을 통해 접근할 수 있습니다.
+1. **서브 계정 보기**에서 **설정**을 클릭하세요.
+2. **사용자**를 선택하세요.
+3. 권한을 바꿀 팀원을 선택하세요.
+4. **Roles & Permissions**(역할 및 권한)를 여세요.
+5. **대화**를 선택하세요.
+6. **View & manage conversation**(대화 보기 및 관리)을 켜세요.
+7. **저장**을 클릭하세요.
 
-![스니펫 접근 방법 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155036791054/original/wIAek4-p72d2ciJ9gWlF9Pkd6EKtJomLAA.png?1732004559)
+![사용자 역할 및 권한에서 대화 권한 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081373450/original/-VRLF3lP5ENMkTdEFmfjgwJXYyEgoRHsHA.png?1789861346)
 
----
+## 스니펫 만들기
 
-## **스니펫 설정 방법**
+스니펫을 만들어 두면 같은 종류의 메시지가 필요할 때마다 검색해서 바로 넣을 수 있어요.
 
-**새 스니펫 만들기**
+1. **서브 계정 보기**에서 **대화**를 클릭하세요.
+2. 페이지 위쪽의 **스니펫**을 선택하세요.
+3. **+ New Snippet**(새 스니펫 추가)을 클릭하세요.
+4. **텍스트 스니펫 추가** 또는 **이메일 스니펫 추가**를 선택하세요.
+5. **설명이 되는 이름 입력** 칸에 스니펫 이름을 입력하세요.
+6. 메시지 내용을 입력하세요.
+7. 필요하면 지원되는 **커스텀 값**이나 **트리거 링크**를 추가하세요.
+8. 미리보기나 테스트 옵션이 있으면 내용을 확인하세요.
+9. **저장**을 클릭하세요.
 
-대화(Conversations) > 스니펫(Snippets) 또는 마케팅(Marketing) > 스니펫(Snippets)으로 이동합니다. 스니펫 추가(Add Snippet)를 클릭하고 텍스트(Text) 또는 이메일(Email) 중 선택합니다.
+![새 폴더와 새 스니펫 버튼, 텍스트·이메일 스니펫 옵션이 보이는 HiRise 스니펫 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056243868/original/sK2i8lnlVoluWHqwbM9WF7TbQVsjM5sfhQ.png?1760702857=)
 
-![스니펫 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155036793361/original/rSCe_dVvts-xDSetV5H6XUAGcE4DYtH_Ig.png?1732005921)
+다른 방법: **마케팅 > 스니펫**에서도 스니펫에 들어갈 수 있어요.
 
-**스니펫 이름 지정**
+## 스니펫 정리하고 관리하기
 
-"놓친 예약 후속 조치" 또는 "FAQ: 운영 시간"과 같이 적절하게 스니펫 이름을 지정합니다.
+스니펫을 잘 정리해 두면 팀원이 승인된 내용을 빨리 찾을 수 있어요. 오래된 메시지나 중복된 메시지를 다시 쓰는 일도 줄어요.
 
-![스니펫 이름 지정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155036793458/original/hVL2OP1nsLSETZPdXlRlhHcwEwG5qHVMYw.png?1732006016)
+**대화 > 스니펫**에서 이렇게 할 수 있어요.
 
-### 메시지 작성
+- **검색**으로 이름이나 키워드로 스니펫을 찾아요.
+- **필터**로 지원되는 스니펫 유형별로 목록을 걸러 봐요.
+- **새 폴더**를 클릭해 관련 있는 스니펫을 묶어요.
+- 점 세 개 메뉴(⋮)에서 스니펫을 이동, 편집, 복제, 삭제할 수 있어요.
 
-개인화를 위해 커스텀 값(Custom Values)이나 플레이스홀더를 사용하여 메시지 본문을 작성합니다.
+폴더는 영업, 고객 지원, 예약, 결제, 자주 묻는 질문 같은 주제로 나누면 좋아요.
 
-![메시지 작성](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155036793492/original/-UiU5_YqWb-4tyZEXQT6zTT6c_0PWdwYAQ.png?1732006030)
+## 대화에서 스니펫 사용하기
 
-### 미리보기
+스니펫을 넣으면 준비해 둔 내용이 메시지 입력창에 바로 채워져요. 보내기 전에 내용을 확인하고 개인화하거나 고칠 수 있어요.
 
-정확성을 확인하기 위해 오른쪽에서 스니펫을 미리봅니다.
+1. **대화**로 이동하세요.
+2. 연락처와의 대화를 여세요.
+3. 사용할 메시지 채널을 선택하세요.
+4. 메시지 입력창에서 **스니펫** 아이콘을 클릭하세요.
+5. 폴더를 둘러보거나 스니펫을 검색하세요.
+6. 사용할 스니펫을 선택하세요.
+7. 채워진 내용과 지원되는 동적 정보를 확인하세요.
+8. 필요한 부분을 수정하세요.
+9. 메시지를 보내세요.
 
-![스니펫 미리보기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155036793570/original/Xk6Q1ySP9B7yGCyzWPBNGy-oidSrq18Gvg.png?1732006067)
-
-### 스니펫 테스트
-
-필요한 경우 자신에게 샘플을 발송(SMS 또는 이메일)하여 스니펫을 테스트합니다.
-
-![스니펫 테스트](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155036793626/original/WnRkKAcu3Xsn8XyhFfOhZZr6lgwzTvZjWA.png?1732006088)
-
-### 스니펫 저장
-
-완료되면 저장(Save)을 클릭합니다.
-
-![스니펫 저장](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155036793653/original/40NKHZweBqI2D-bu9eRq9-qKSJbO_hFuGg.png?1732006111)
-
-## 스니펫을 폴더로 정리하기
-
-### 폴더 추가
-
-폴더 추가(Add Folder)를 클릭하여 폴더를 만듭니다(예: "예약").
-
-![폴더 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155036799081/original/AojVFov0F2b0dZgxq9MJKry5sobLFopd4A.png?1732009113)
-
-### 폴더로 이동
-
-스니펫을 선택하고 점 3개 메뉴를 클릭한 다음 폴더로 이동(Move to Folder)을 선택하여 스니펫을 폴더에 할당합니다.
-
-![폴더로 이동](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155036799531/original/UKP9sDOtf98HYzAKjO9hLU--AQTlJEWKtg.png?1732009430)
-
-### 일괄 작업
-
-더 나은 정리를 위해 여러 스니펫을 한 번에 폴더로 일괄 이동할 수도 있습니다.
-
-![일괄 이동](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155036799574/original/51ELq_3DGkdbRwmAjdWG6v_UqHygzbAGSQ.png?1732009456)
-
-**검색 바 사용**
-
-키워드를 입력하여 스니펫을 빠르게 찾습니다.
-
-![스니펫 검색](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155036800281/original/NJb_qLvBC07Jze3piOMXZRXAwXMyGXUm8g.png?1732009882)
-
-### **필터**
-
-필터(텍스트(Text) 또는 이메일(Email))를 사용하여 결과를 좁힙니다.
-
-![필터 사용](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155036800290/original/q4aev34ufyzKSyoVDrSUQDCgnmOOhuk_eA.png?1732009890)
-
-### **점 3개 액션 메뉴**
-
-메뉴 옵션에서 직접 편집, 복제, 삭제하여 스니펫을 효율적으로 관리합니다.
-
-![액션 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155036800363/original/7SAul7XHol6Tpc5k-2IjYWm6ib5dEwCfqQ.png?1732009970)
-
----
-
-## **대화에서 스니펫 사용하기**
-
-대화 스레드를 열고 하단의 스니펫(Snippets) 아이콘을 클릭합니다.
-
-![대화에서 스니펫 사용](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155036805905/original/cKA4wg14jQTiqOlPjOff1n0xHyx6e-vgkQ.png?1732013094)
-
-### 스니펫 찾기
-
-폴더를 탐색하거나 검색 바를 사용하여 원하는 스니펫을 찾습니다.
-
-![스니펫 찾기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155036805928/original/MtvndZUtR2C1-OSXEfNUpI2Shjo1lGAFyw.png?1732013112)
-
-### **스니펫 선택**
-
-스니펫을 클릭하면 텍스트 상자에 자동으로 채워져 전송하거나 추가 편집할 준비가 됩니다.
-
-![스니펫 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155036805982/original/3zlQyTsV8C7rrotCd8IFEGTt9skYAeyyKA.png?1732013129)
-
----
-
-## 사용자 접근 및 권한
-
-팀원들이 대화(Conversations) 탭 내에서 스니펫을 보고 사용할 수 있도록 하려면 사용자 역할에서 올바른 권한이 활성화되어 있어야 합니다. 사용자는 다음 권한이 활성화되어 있어야 합니다:
-
-- 대화(Conversations) → 대화 보기 및 관리(View & manage conversation)
-
-이 권한은 스니펫이 생성되고 사용되는 대화(Conversations) 탭에 대한 접근을 제어합니다. 이 권한이 없으면 사용자에게 스니펫 기능이 표시되지 않습니다. 이 권한을 활성화하려면 다음 단계를 따르세요:
-
-- 하위 계정의 설정(Settings)으로 이동합니다.
-- 내 직원(My Staff)을 클릭합니다.
-- 업데이트하려는 팀원을 선택합니다.
-- 역할 및 권한(Roles & Permissions)을 클릭합니다.
-- 대화(Conversations) 토글이 켜져 있고, 대화 보기 및 관리(View & manage conversation) 체크박스가 선택되어 있는지 확인합니다.
-- 저장(Save)을 클릭합니다.
-
-![사용자 권한 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045229673/original/Sduo3jMHsWMlJjyyj1HjBHEbuAXQaGPYrw.png?1744835864)
-
----
+![재사용 메시지를 고르는 스니펫 선택 창이 열린 대화 입력창](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081372383/original/-u4VGvyjoGhCqJQXeRqtHysHub-KsrCjYg.png?1789854576)
 
 ## 자주 묻는 질문
 
-**Q. 다른 고객에 맞게 스니펫을 커스터마이징할 수 있나요?**
+### 텍스트 스니펫과 이메일 스니펫은 무엇이 다른가요?
+서로 다른 종류의 재사용 콘텐츠예요. 문자 메시지에는 텍스트 스니펫을, 이메일에 다시 쓸 내용에는 이메일 스니펫을 사용하세요.
 
-네! 스니펫은 커스텀 값과 플레이스홀더를 지원하므로 고객 이름, 예약 세부 정보 또는 기타 동적 필드로 메시지를 개인화할 수 있습니다. 이를 통해 응답이 일반적이지 않고 맞춤형으로 느껴지도록 할 수 있습니다.
+### 스니펫은 어디에서 볼 수 있나요?
+**서브 계정 보기 > 대화 > 스니펫**으로 이동하세요. **마케팅 > 스니펫**에서도 들어갈 수 있어요.
 
-**Q. 만들 수 있는 스니펫 수에 제한이 있나요?**
+### HiRise 스니펫을 **실험실**에서 따로 켜야 하나요?
+아니요. HiRise 스니펫 페이지는 자동으로 켜져 있고, 기존 스니펫 레이아웃은 더 이상 쓸 수 없어요.
 
-생성할 수 있는 스니펫 수에는 고정 제한이 없습니다. 폴더로 정리하고 검색 및 필터 옵션을 사용하여 대량의 컬렉션을 효율적으로 관리할 수 있습니다.
+### 스니펫을 개인화할 수 있나요?
+네. 스니펫에는 커스텀 값과 지원되는 다른 플레이스홀더를 넣어 동적 정보를 표시할 수 있어요.
 
-**Q. 팀에서 스니펫을 공유할 수 있나요?**
+### 대화에 넣은 스니펫을 수정할 수 있나요?
+네. 메시지 입력창에 채워진 내용을 확인하고, 보내기 전에 수정하세요.
 
-네, 스니펫은 시스템 내 모든 팀원이 접근할 수 있습니다. 이를 통해 일관된 메시지를 보장하고 팀이 사전 승인된 템플릿을 사용하여 빠르게 응답할 수 있습니다.
+### 만들 수 있는 스니펫 개수에 제한이 있나요?
+현재 스니펫 개수에 정해진 제한은 안내되어 있지 않아요. 스니펫이 많다면 폴더, 검색, 필터로 관리하세요.
 
-**Q. 기존 스니펫을 업데이트하거나 삭제하려면 어떻게 해야 하나요?**
-
-스니펫을 편집하거나 삭제하려면 스니펫(Snippets) 섹션으로 이동하고, 스니펫을 찾아 옆의 점 3개 메뉴(⋮)를 클릭한 다음 필요에 따라 편집(Edit) 또는 삭제(Delete)를 선택합니다. 더 나은 정리를 위해 스니펫을 다른 폴더로 이동할 수도 있습니다.
-
----
-*원문 최종 수정: Wed, 16 Apr, 2025 at 4:43 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### 대화에서 스니펫을 쓰려면 어떤 권한이 필요한가요?
+**대화 > View & manage conversation**(대화 보기 및 관리) 권한이 필요해요. **설정 > 사용자 > Roles & Permissions**(역할 및 권한)에서 설정할 수 있어요.

@@ -1,65 +1,42 @@
 ---
-
-번역일: 2026-04-06
+원문: /support/solutions/articles/155000003966-how-to-customize-dashboard-themes
+번역일: 2026-11-07
 카테고리: 12-대시보드
 ---
 
-# 대시보드 테마 커스터마이징 방법
+# 대시보드 테마 설정하기
 
-대시보드를 테마로 커스터마이징하면 외관을 개인화하고 시각적 매력을 향상시킬 수 있어요. 테마를 적용하거나 직접 만드는 간단한 단계를 따라해보세요.
-
-**목차**
-
-- [1단계: 대시보드 열기](#1단계-대시보드-열기)
-- [2단계: 편집 모드 시작](#2단계-편집-모드-시작)
-- [3단계: 테마 섹션 접근](#3단계-테마-섹션-접근)
-- [4단계: 테마 선택 또는 생성](#4단계-테마-선택-또는-생성)
-- [5단계: 변경사항 저장](#5단계-변경사항-저장)
-- [6단계: 위젯 테마 설정 (선택사항)](#6단계-위젯-테마-설정-선택사항)
-
----
+테마를 적용하면 대시보드의 모양을 원하는 대로 바꿀 수 있어요. 이미 만들어진 테마를 고르거나, 직접 테마를 만들어 적용해 보세요.
 
 ### 1단계: 대시보드 열기
 
-- 커스터마이징하려는 대시보드로 이동하세요.
+- 꾸미고 싶은 **대시보드**로 이동하세요.
+  ![꾸미고 싶은 대시보드 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037058284/original/lUE1D8ywhjdjCvu9KOKjAe70Y_X09KIwaQ.png?1732288324)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037058284/original/lUE1D8ywhjdjCvu9KOKjAe70Y_X09KIwaQ.png?1732288324)
+### 2단계: 편집 모드로 들어가기
 
-### 2단계: 편집 모드 시작
+- 대시보드 오른쪽 위에 있는 연필 아이콘을 클릭하세요.
+  ![대시보드 오른쪽 위의 연필 아이콘](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037058332/original/PS7soQNVsTny_XFkPuWtWVlhuiZPEKKc8A.png?1732288358)
+- 편집 모드가 되면 **Add Widget**(위젯 추가)을 선택해 사용자 지정 옵션을 여세요.
+  ![Add Widget 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037058383/original/WopClLrIBLHZDOy3sHRtvCYNKafXnXgeYg.png?1732288391)
 
-- 대시보드 오른쪽 상단의 연필 아이콘을 클릭하세요.
+### 3단계: 테마 섹션 열기
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037058332/original/PS7soQNVsTny_XFkPuWtWVlhuiZPEKKc8A.png?1732288358)
+- 나타난 사이드바에서 **테마** 탭으로 전환하세요.
+  ![사이드바의 테마 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037058467/original/ll-mX_barsSCyl73dX7U-pk0ayVqb_xOGA.png?1732288445)
 
-- 편집 모드로 들어간 후 **Add Widget(위젯 추가)**을 선택해서 커스터마이징 옵션에 접근하세요.
+### 4단계: 테마 고르거나 만들기
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037058383/original/WopClLrIBLHZDOy3sHRtvCYNKafXnXgeYg.png?1732288391)
+- 아래 두 가지 중 하나를 선택할 수 있어요.
+- 제공되는 테마 중에서 하나를 고르세요.
+- 배경 색상, 텍스트 색상, 위젯 스타일 등 대시보드 요소를 하나씩 설정해 나만의 테마를 만드세요.
+  ![테마 선택 및 사용자 지정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037058605/original/5Ckf-mJqYTvMWMJEj3TdkMbqs6-CRVphjw.png?1732288513)
 
-### 3단계: 테마 섹션 접근
+### 5단계: 변경 내용 저장하기
 
-- 나타나는 사이드바에서 Themes(테마) 탭으로 전환하세요.
+- 테마를 고르거나 만들었으면 **저장**을 클릭해 대시보드에 적용하세요.
+  ![저장 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037058637/original/Q6Ncj7U1SrvueV2p1HS7rd5KG5R5ojmcFA.png?1732288530)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037058467/original/ll-mX_barsSCyl73dX7U-pk0ayVqb_xOGA.png?1732288445)
+### 6단계: 위젯 테마 설정하기 (선택)
 
-### 4단계: 테마 선택 또는 생성
-
-다음 중 하나를 선택할 수 있어요:
-
-- 사용 가능한 옵션에서 미리 정의된 테마를 선택하거나
-- 각 대시보드 요소(배경 색상, 텍스트 색상, 위젯 스타일 등)를 설정해서 나만의 커스텀 테마를 생성하세요.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037058605/original/5Ckf-mJqYTvMWMJEj3TdkMbqs6-CRVphjw.png?1732288513)
-
-### 5단계: 변경사항 저장
-
-- 테마를 선택하거나 생성한 후 Save(저장)를 클릭해서 대시보드에 변경사항을 적용하세요.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037058637/original/Q6Ncj7U1SrvueV2p1HS7rd5KG5R5ojmcFA.png?1732288530)
-
-### 6단계: 위젯 테마 설정 (선택사항)
-
-- 특정 위젯도 테마를 설정할 수 있어요. 위젯을 편집하고 사이드바에서 테마 섹션으로 전환하면 됩니다.
-
----
-*원문 최종 수정: Fri, 16 May, 2025 at 2:29 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+- 특정 위젯에도 따로 테마를 설정할 수 있어요. 위젯을 편집한 다음, 사이드바에서 **테마** 섹션으로 전환하세요.

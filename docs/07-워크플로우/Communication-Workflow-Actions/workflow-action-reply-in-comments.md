@@ -1,71 +1,55 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 07-워크플로우 > Communication Workflow Actions
+원문: /support/solutions/articles/155000003302-workflow-action-reply-in-comments
+번역일: 2026-11-07
+카테고리: 07-워크플로우
 ---
 
-# 워크플로우 액션 - 댓글 답글
+# 워크플로우 액션 — Reply In Comments(댓글에 답글 달기)
 
-이 워크플로우 액션은 댓글에 댓글로 답글을 달 때 사용합니다.
+**Reply In Comments**(댓글에 답글 달기) 액션은 댓글에 댓글로 답할 때 써요. 이 문서에서는 액션을 찾는 위치와 설정 항목, 자주 묻는 질문을 안내해요.
 
----
+## Reply In Comments란?
 
-**목차**
+Facebook이나 Instagram 계정의 게시물에는 댓글이 달려요. 이런 댓글 때문에 워크플로우가 시작되면, 이 액션으로 해당 댓글 아래에 답글을 달 수 있어요. 그 댓글에 좋아요를 누르는 것도 가능해요.
 
-- [댓글 답글이란?](#댓글-답글이란)
-- [이 액션을 찾는 위치](#이-액션을-찾는-위치)
-- [구성 요소](#구성-요소)
-- [자주 묻는 질문](#자주-묻는-질문)
----
+{% hint style="info" %}
+**Reply In Comments** 액션은 관련 트리거와 함께 써야 해요. 사용할 수 있는 트리거는 **Facebook Comment(s) On A Post**(Facebook 게시물 댓글)와 **Instagram Comment(s) On A Post**(Instagram 게시물 댓글)예요.
+{% endhint %}
 
-## **댓글 답글이란?**
+## 이 액션은 어디에 있나요?
 
-페이스북이나 인스타그램 계정에 게시물에 댓글이 달리면, 해당 댓글로 인해 워크플로우가 트리거되었을 때 이 액션을 사용해 그 댓글 아래에 답글을 달 수 있어요. 댓글에 좋아요를 누르는 것도 가능합니다.
+1. 왼쪽 메뉴에서 **자동화 > 워크플로우**로 이동해 워크플로우 빌더를 엽니다.
+2. 빌더에서 **Actions**(액션)를 선택합니다.
+3. **Communication**(커뮤니케이션)을 선택합니다.
+4. **Reply In Comments**를 선택합니다.
 
-댓글 답글 액션은 반드시 관련된 트리거와 함께 사용해야 해요: [Facebook Comment(s) On A Post](../Facebook/Instagram-Events-Workflow-Triggers/workflow-trigger-facebook-comment-s-on-a-post.md) 또는 [Instagram Comment(s) On A Post](../Facebook/Instagram-Events-Workflow-Triggers/workflow-trigger-instagram-comment-s-on-a-post.md)
+![워크플로우 빌더에서 Reply In Comments 액션을 찾는 화면 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041689521/original/_crQZmWN0VdXKdvGlXXOJg55CGKKa0WbiQ.png?1739767440)
 
----
+![워크플로우 빌더에서 Reply In Comments 액션을 찾는 화면 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041689518/original/4JZ1TD_6BjU1061yZJcS4ODQcq8reIFB0w.png?1739767423)
 
-## **이 액션을 찾는 위치**
+## 설정 항목
 
-Automation(자동화) > Workflow(워크플로우) > Workflow Builder(워크플로우 빌더) > Actions(액션) > Communication(커뮤니케이션) > Reply In Comments(댓글 답글)로 이동하세요.
+**Reply In Comments** 액션에는 설정 항목이 두 가지 있어요.
 
-![댓글 답글 액션 위치](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041689521/original/_crQZmWN0VdXKdvGlXXOJg55CGKKa0WbiQ.png?1739767440)
+1. **Comments**(댓글): 답글을 최대 10개까지 만들 수 있고, 이 중에서 무작위로 사용돼요. 미리 써 둔 답글을 직접 입력해도 되고, 태그 아이콘을 눌러 커스텀 값이나 앞선 AI 액션 등 다른 출처의 답글을 가져올 수도 있어요.
+2. **Like Comments**(댓글 좋아요): 끄면 댓글에 좋아요를 누르지 않아요. 켜면 답글을 다는 댓글에 좋아요를 눌러요.
 
-![댓글 답글 액션 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041689518/original/4JZ1TD_6BjU1061yZJcS4ODQcq8reIFB0w.png?1739767423)
+![Reply In Comments 액션의 설정 항목 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041689548/original/_IuxCOq_BNpeo2Ia9TOm24QVugzes7vQsA.png?1739767557)
 
----
+## 자주 묻는 질문
 
-## **구성 요소**
+### Reply In Comments 액션에는 어떤 트리거를 써야 하나요?
 
-댓글 답글 액션은 두 가지 구성 요소만 있어요:
+**Facebook Comment(s) On A Post**와 **Instagram Comment(s) On A Post** 트리거를 쓰세요. 그래야 액션이 어떤 댓글에 답해야 하는지 알 수 있어요.
 
-- **Comments(댓글):** 랜덤하게 사용될 최대 10개의 댓글을 작성할 수 있어요. 직접 미리 작성한 답글을 입력하거나, 태그 아이콘을 사용해 커스텀 값이나 이전 AI 액션 등 다른 소스에서 답글을 가져올 수 있습니다.
+### Reply In Comments 액션으로 댓글에 좋아요를 누를 수 있나요?
 
-- **Like Comments(댓글 좋아요):** 토글을 끄면 댓글에 좋아요를 누르지 않아요. 토글을 켜면 답글을 다는 댓글에 좋아요를 누릅니다.
+네, 가능해요. **Reply In Comments** 액션에는 답글을 다는 댓글에 좋아요를 누를지 정하는 **Like Comments** 토글이 있어요.
 
-![댓글 답글 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041689548/original/_IuxCOq_BNpeo2Ia9TOm24QVugzes7vQsA.png?1739767557)
+### Reply In Comments 액션을 AI와 함께 쓸 수 있나요?
 
----
+네, 가능해요. 앞에 AI 액션을 두면 그 액션의 응답을 **Reply In Comments**에서 쓸 수 있어요.
 
-## **자주 묻는 질문**
+### 특정 댓글에 특정 답글을 지정할 수 있나요?
 
-**Q: 댓글 답글 액션과 함께 어떤 트리거를 사용해야 하나요?**
-
-A: 액션이 어떤 댓글에 답글을 달아야 하는지 알 수 있도록 Facebook Comment(s) On A Post와 Instagram Comment(s) On A Post 트리거를 사용해야 해요.
-
-**Q: 댓글 답글 액션으로 댓글에 좋아요를 누를 수 있나요?**
-
-A: 네, 댓글 답글 액션에는 답글을 다는 댓글에 좋아요를 켜고/끄는 토글이 있어요.
-
-**Q: 댓글 답글 액션을 AI와 함께 사용할 수 있나요?**
-
-A: 네, 이전에 AI 액션이 있다면 해당 액션의 응답을 댓글 답글에서 사용할 수 있어요.
-
-**Q: 특정 댓글에 특정 답글을 지정할 수 있나요?**
-
-A: 아니요, 댓글 답글 액션은 제공된 답글 중에서 랜덤하게 선택해요. 맞춤형 답글을 원한다면 이전에 AI 액션을 사용하거나 If/Else 분기를 사용하거나, 다른 워크플로우에서 다른 기준을 가진 다양한 댓글 트리거를 사용할 수 있어요.
-
----
-*원문 최종 수정: Mon, 17 Feb, 2025 at 1:12 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+아니요, 지정할 수 없어요. **Reply In Comments** 액션은 입력해 둔 답글 중에서 무작위로 골라요. 댓글마다 맞춤 답글이 필요하다면 이 액션 앞에 AI 액션이나 **If/Else**(조건 분기) 브랜치를 두세요. 또는 조건이 서로 다른 댓글 트리거를 각각 다른 워크플로우에 사용할 수도 있어요.

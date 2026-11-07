@@ -1,67 +1,57 @@
 ---
-번역일: 2026-04-07T00:00:00.000Z
-카테고리: 07-워크플로우 > Opportunity Workflow Triggers
+원문: /support/solutions/articles/155000004303-workflow-trigger-order-submitted-vs-order-form-submission
+번역일: 2026-11-07
+카테고리: 07-워크플로우
 ---
 
-# 워크플로우 트리거 - 주문 완료 vs 주문 폼 제출
+# 워크플로우 트리거 — Order Submitted(주문 제출)와 Order Form Submission(주문 폼 제출) 차이
 
-주문 폼 제출 트리거와 주문 완료 트리거의 차이점은 결제 여부입니다. 주문 폼이 제출되면 하나의 트리거가 실행되고, 주문 결제가 완료되면 다른 트리거가 실행됩니다. 주문 폼 제출과 결제가 모두 발생하면 두 트리거 모두 실행될 수 있습니다.
+이 문서는 주문 폼이 제출됐을 때와 주문이 완료됐을 때 각각 작동하는 두 트리거의 차이를 설명해요. 어떤 상황에 어느 트리거를 써야 할지 고를 때 참고하세요.
 
-이 두 트리거는 영업과 마케팅 퍼널의 서로 다른 단계에서 유용합니다. 주문 완료 트리거는 일반적으로 고객이 구매를 완료한 후에 사용되고, 주문 폼 제출 트리거는 잠재 리드를 확보하거나 후속 조치를 위한 정보를 수집하는 초기 단계에서 사용됩니다.
+두 트리거를 가르는 기준은 결제예요. 주문 폼이 제출되면 한 트리거가, 주문 결제가 이루어지면 다른 트리거가 작동해요. 주문 폼도 있고 결제도 있다면 두 트리거가 모두 작동할 수 있어요.
 
-***
+두 트리거는 판매·마케팅 퍼널의 서로 다른 단계에서 쓰여요. **Order Submitted**(주문 제출) 트리거는 보통 고객이 구매를 마친 뒤에 써요. **Order Form Submission**(주문 폼 제출) 트리거는 그보다 앞선 단계에서 써요. 예를 들어 잠재 리드를 확보하거나 후속 연락에 필요한 정보를 모을 때예요.
 
-목차
+## 트리거는 어디에 있나요?
 
-* [이 트리거들을 찾는 방법](workflow-trigger-order-submitted-vs-order-form-submission.md#이-트리거들을-찾는-방법)
-* [트리거 - 주문 완료](workflow-trigger-order-submitted-vs-order-form-submission.md#트리거-주문-완료)
-* [트리거 - 주문 폼 제출](workflow-trigger-order-submitted-vs-order-form-submission.md#트리거-주문-폼-제출)
-* [주문 트리거와 주문 폼 트리거의 주요 차이점](workflow-trigger-order-submitted-vs-order-form-submission.md#주문-트리거와-주문-폼-트리거의-주요-차이점)
+**Order Form Submission**과 **Order Submitted** 트리거는 **워크플로우 빌더**의 **Payments**(결제) 항목 아래에 있어요.
 
-## **이 트리거들을 찾는 방법**
+![워크플로우 빌더의 Payments 항목 아래에 있는 주문 관련 트리거](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037341103/original/rMToiDblKmlcDM7EI6xuAAcNtIpFZ8pt2g.png?1732737641)
 
-주문 폼 제출(Order Form Submission)과 주문 완료(Order Submitted) 트리거는 워크플로우 빌더의 결제(Payments) 섹션에 있습니다.
+## Order Submitted 트리거
 
-![워크플로우 빌더에서 결제 트리거 위치](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037341103/original/rMToiDblKmlcDM7EI6xuAAcNtIpFZ8pt2g.png?1732737641)
+자세한 내용은 **Order Submitted** 트리거 문서를 참고하세요.
 
-## **트리거 - 주문 완료**
+이 트리거는 시스템에서 실제 주문 결제(거래)가 이루어졌을 때 작동해요. 예를 들어 누군가 상품을 구매했을 때예요.
 
-[트리거 - 주문 완료 자세한 내용 보기](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/07-%EC%9B%8C%ED%81%AC%ED%94%8C%EB%A1%9C%EC%9A%B0/Opportunity-Workflow-Triggers/workflow-trigger-order-submitted.md)
+- 사용 사례: 보통 결제 거래와 연결해서 써요. 고객이 구매를 마치면 이 트리거로 후속 작업을 자동화할 수 있어요. 주문 확인 이메일 보내기, CRM 기록 업데이트, SMS 알림 보내기, 배송 워크플로우 시작하기 등이 있어요.
+- 워크플로우 액션 예시:
+  - "구매해 주셔서 감사합니다" 이메일 보내기
+  - 인보이스 만들기 또는 결제 처리하기
+  - 배송 절차를 시작하거나 배송 담당 팀에 알리기
 
-이 트리거는 실제 주문 결제/거래가 시스템에서 처리될 때 실행됩니다(예: 누군가 상품을 구매할 때).
+## Order Form Submission 트리거
 
-* **활용 사례:** 일반적으로 결제 거래와 연결됩니다. 고객이 구매를 완료하면 이 트리거를 사용하여 주문 확인 이메일 발송, CRM 기록 업데이트, SMS 알림 전송, 배송 워크플로우 시작 등의 후속 작업을 자동화할 수 있습니다.
-* **워크플로우 액션 예시:**
-  * "구매해주셔서 감사합니다" 이메일 발송
-  * 인보이스 생성 또는 결제 처리
-  * 배송 프로세스 시작 또는 배송팀에 알림
+자세한 내용은 **Order Form Submission** 트리거 문서를 참고하세요.
 
-## **트리거 - 주문 폼 제출**
+이 트리거는 고객이 주문 정보가 담긴 폼을 제출했을 때 작동해요. 다만 거래가 완료됐다는 뜻은 아닐 수 있어요. 확정된 주문이 아니라 폼 제출 자체에 초점을 둔 트리거예요.
 
-[트리거 - 주문 폼 제출 자세한 내용 보기](workflow-trigger-order-form-submission.md)
+- 사용 사례: 주로 리드 확보용 폼이나 견적 요청(RFQ) 폼에 써요. 주문과 관련된 정보를 입력하지만 아직 결제는 하지 않은 경우예요. 사전 주문 폼이나 문의 폼처럼, 정식 구매 전에 관심을 보이거나 정보를 남기는 경우도 포함돼요.
+- 워크플로우 액션 예시:
+  - 접수 확인 이메일이나 문의 감사 이메일 보내기
+  - 리드가 주문 폼을 작성했다고 영업 담당자에게 알리기
+  - 계약 성사를 돕는 후속 시퀀스 시작하기
 
-이 트리거는 고객이 주문 정보가 포함된 폼을 제출할 때 실행됩니다(하지만 완료된 거래를 의미하지는 않을 수 있습니다). 완료된 주문보다는 폼 제출 자체에 초점을 맞춘 트리거입니다.
+## 두 트리거의 주요 차이
 
-* **활용 사례:** 일반적으로 리드 확보나 견적 요청(RFQ) 폼에 사용됩니다. 사람이 주문 관련 정보를 입력하지만 아직 결제는 하지 않은 상황입니다. 또한 사용자가 공식적으로 구매하기 전에 관심을 표현하거나 정보를 제공하는 "사전 주문" 폼이나 문의 양식도 포함됩니다.
-* **워크플로우 액션 예시:**
-  * 문의 확인 이메일 또는 감사 메시지 발송
-  * 리드가 주문 폼을 작성했다고 영업 담당자에게 알림
-  * 영업 성사를 위한 후속 시퀀스 실행
+- **Order Submitted**: 실제 구매나 완료된 거래와 연결돼요. 결제 과정이 포함되는 경우가 많아요. 주문 폼이 있었는지는 따지지 않아요.
+- **Order Form Submission**: 주문 정보가 담긴 폼을 제출하면 작동해요. 거래가 완료됐다는 뜻은 아니에요(예: 리드 폼, 견적 요청). 결제가 있었는지는 따지지 않아요.
+- 사용 가능한 값: 주문과 관련된 값 중에는 워크플로우에 **Order Submitted** 트리거가 있을 때만 쓸 수 있는 값이 있어요.
 
-## **주문 트리거와 주문 폼 트리거의 주요 차이점**
+  |  |  |
+  | --- | --- |
+  | **Order Form Submission** |  |
+  | **Order Submitted** |  |
 
-* **주문 완료(Order Submitted):** 실제 구매나 완료된 거래와 연결되며, 대부분 결제 요소가 포함됩니다. 이 트리거는 주문 폼이 있었는지 여부에 관계없이 작동합니다.
-* **주문 폼 제출(Order Form Submission):** 주문 세부 정보가 포함된 폼을 제출할 때 트리거되지만 반드시 거래가 완료되었음을 의미하지는 않습니다(예: 리드 폼이나 견적 요청). 이 트리거는 결제 여부에 관계없이 작동합니다.
-* **사용 가능한 값들:** 주문 완료(Order Submitted) 트리거가 있을 때만 워크플로우에서 사용할 수 있는 주문 관련 값들이 있습니다.
-
-주문 폼 제출 ![주문 폼 제출 트리거의 사용 가능한 값들](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037688583/original/35KfRaIJNLEbYoWRlOQ1Hbqp1ZJUMbtgJw.png?1733246873)
-
-주문 완료 ![주문 완료 트리거의 사용 가능한 값들](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037688607/original/i35Aij96u0RTH-k5jfvfu83fUfeBT79IoQ.png?1733246930)
-
-* **쇼핑 카트:** 주문 완료 값들을 사용할 수 있을 때, 이메일 템플릿 빌더에 추가된 쇼핑 카트 요소는 주문의 항목 세부 정보로 해당 템플릿을 자동으로 채웁니다.
-
-![이메일 템플릿의 쇼핑 카트 요소](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037688926/original/JQLNpZGa7HKoBRgFL1iBOJyhAhS2wRxoog.png?1733247406)
-
-***
-
-_원문 최종 수정: Tue, 3 Dec, 2024 at 3:03 PM_ _Hyperclass 사용 가이드 — hyperclass.ai_
+- **Shopping Cart**(장바구니): **Order Submitted** 값을 사용할 수 있으면, **이메일 템플릿** 빌더에 추가한 **Shopping Cart** 요소에 주문의 상품 정보가 자동으로 채워져요.  
+  ![이메일 템플릿 빌더의 Shopping Cart 요소에 주문 상품 정보가 자동으로 채워진 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037688926/original/JQLNpZGa7HKoBRgFL1iBOJyhAhS2wRxoog.png?1733247406)

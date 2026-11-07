@@ -1,106 +1,126 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 어필리에이트 프로그램
+원문: /support/solutions/articles/48001217006-how-to-find-your-affiliate-customers-and-commission-in-your-affiliate-portal
+번역일: 2026-11-06
+카테고리: 21-어필리에이트
 ---
 
-# 어필리에이트 포털에서 내 추천 고객과 수수료 확인하는 방법
+# 제휴 포털에서 제휴 고객과 커미션 찾기
 
-어필리에이트 링크를 새로운 하이퍼클래스 고객에게 보냈는데, 그들이 내 하위에 등록되었는지 어디서 확인해야 할지 모르겠나요? 여기서 어필리에이트 고객을 찾을 수 있는 모든 단계를 보여드리겠습니다!
+내 제휴 링크를 보낸 하이퍼클래스 신규 고객이 내 추천 고객으로 잡혔는지 확인하는 방법을 안내해요. 추천 고객의 진행 단계와 커미션도 **제휴 포털**에서 확인할 수 있어요.
 
-이 글에서 다루는 내용:
-- 하이퍼클래스에 로그인하여 어필리에이트 대시보드 보기
-- 추천(Referrals) 탭 살펴보기
-- 슈퍼차지드 SaaS 캠페인
-- 리워드 탭에서 수수료 확인하기
-- 자주 묻는 질문
+{% hint style="info" %}
+현재 **제휴 포털**을 업데이트하고 있어서, 이 문서의 일부 영상과 이미지가 지금 보이는 화면과 다를 수 있어요. 곧 최신 화면으로 바뀔 예정이에요. 그사이 궁금한 점이 있으면 에게 문의하세요.
+{% endhint %}
 
-# 하이퍼클래스에 로그인하여 어필리에이트 대시보드 보기
+## 하이퍼클래스에 로그인해 제휴 대시보드 확인하기
 
-참고: 활성 상태인 하이퍼클래스 에이전시 계정이 없다면, First Promoter 사이트에 직접 로그인하세요: [Hyperclass.firstpromoter.com/login](http://gohighlevel.firstpromoter.com/login)
+**Affiliate Dashboard**(제휴 대시보드)는 추천 고객을 단계별로 나눠 보여 줘요. 그래서 각 고객이 어디까지 진행했는지 한눈에 볼 수 있어요.
 
-## 1. Affiliate Portal(어필리에이트 포털) 클릭
+제휴 대시보드를 찾고 사용하는 방법이 궁금하다면 [제휴 포털 사용 방법](how-to-use-affiliate-portal.md)을 참고하세요.
 
-![어필리에이트 포털 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48234499957/original/IhpG7o0WjYDLvGg2ZTqF5VvKST_rAIjmcw.png?1656024155)
-
-## 2. 어필리에이트 대시보드에서 시작하기
-
-![어필리에이트 대시보드](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48234499976/original/nC4HGwX8VlvfZZ_jrTJQqEebeGGYcAt3kA.png?1656024175)
-
-## 3. Referrals(추천) 클릭
-
-추천 페이지의 기본 화면은 "All(전체)" 탭입니다. 여기서 내가 하이퍼클래스에 추천한 모든 고객을 볼 수 있습니다.
-
-![추천 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48234500000/original/xuruIeW0Q9eBG56wpuHsUcWoO8Khyf5P0Q.png?1656024191)
-
-## 4. Leads(리드)
-
-리드는 하이퍼클래스 가입 양식의 첫 부분은 작성했지만, 계정 생성까지 완료하지 않은 고객들입니다.
-
-![리드 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48234500010/original/29B7kmCbyjrUBXwlLgGSUlClD72Co5-xPA.png?1656024205)
-
-**참고**: 이 영역에서 예상했던 리드나 고객을 찾을 수 없다면, 지원팀에 도움을 요청하세요. 24시간 지원팀 연락 방법: [https://hyperclass.ai/support](https://hyperclass.ai/support)
-
-## 5. Free / Trial(무료/체험) 클릭
-
-현재 체험 기간 중이며 하이퍼클래스 계정을 보유한 추천 고객들입니다.
-
-![무료/체험 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48234500031/original/-_pSoBtj92x4tCC0TtqZficqowtes08irw.png?1656024222)
-
-## 6. Paying & Cancelled(결제 중 & 취소됨)
-
-Paying(결제 중) 탭은 현재 활성 구독을 유지 중인 추천 고객들이고, Cancelled(취소됨) 탭은 더 이상 활성 구독이 없는 추천 고객들입니다.
-
-![결제 중 & 취소됨 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48234500076/original/j1XTTujMXQoQ0Is-sApKhGhkw6Oh8yr9gA.png?1656024238)
+{% hint style="info" %}
+활성 하이퍼클래스 에이전시가 없다면 FirstPromoter 로그인 페이지에서 같은 내용을 따라 볼 수 있어요. 로그인 주소는 에게 문의하세요.
+{% endhint %}
 
 ---
 
-# 슈퍼차지드 SaaS 캠페인
+### 추천 고객 단계 확인하기
 
-슈퍼차지드 SaaS 캠페인에서 리워드나 수수료를 받았다는 이메일을 받으셨나요? 해당 리워드나 고객을 확인하려면 "View another Campaign(다른 캠페인 보기)"을 클릭해야 합니다. (이는 고객이 업그레이드한 후 하이퍼클래스 어필리에이트 프로그램 화면에서 "사라진" 경우를 확인하기에도 좋은 곳입니다)
+1. **제휴 포털**을 클릭하세요.
+2. 제휴 대시보드에서 **Referrals**(추천)를 클릭하세요.
 
-![캠페인 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48234500087/original/lrZ-aNFf6URPuIpCNN_DDs0Ad35thD9zVQ.png?1656024258)
+![제휴 대시보드의 Referrals 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155068667342/original/7jdANMqH1tJ79yaAjMuDpBtE0NbnWcT9xQ.png?1775635430)
 
-## 1. Supercharged SaaS Program 아래의 "View Campaign" 클릭
+**추천 고객 분류**는 다음 다섯 가지예요.
 
-(이들은 월 497달러 플랜으로 업그레이드한 고객들로, SaaS 플랜 또는 Pro 플랜이라고도 합니다. 이 고객들은 이 캠페인으로 이동됩니다.)
+1. **Any**(전체)
+2. **Active / Paying**(활성 / 결제 중)
+3. **Signup**(가입)
+4. **리드**(또는 **구독됨**)
+5. **Canceled**(취소)
 
-![슈퍼차지드 SaaS 프로그램](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48234500115/original/rPWDA7xWkSXXnDQig6nYYOvSuovieinJBQ.png?1656024280)
+#### 1) Any
 
-## 2. Referrals(추천) 클릭
+모든 분류의 제휴 고객을 한 번에 보여 줘요.
 
-추천을 클릭하고 여기 표시된 탭에서 고객을 찾을 수 있는지 확인하세요!
+#### 2) Active / Paying
 
-![슈퍼차지드 추천 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48234500125/original/NFyKtL_r2NyjFE5tBe1zvk1cBgJGpwNubA.png?1656024295)
+하이퍼클래스 구독료를 내고 있는 현재 활성 제휴 고객이에요. 이 고객들이 구독을 갱신할 때마다 커미션을 받아요.
 
-## 3. 슈퍼차지드 SaaS 프로그램의 추천 탭
+{% hint style="info" %}
+커미션은 구독료를 낸 고객에게서만 받을 수 있어요. 고객이 구독을 일시 중지하거나 취소하거나 환불을 요청하면 그 고객에 대한 커미션은 받을 수 없어요.
+{% endhint %}
 
-슈퍼차지드 SaaS 프로그램 캠페인은 하이퍼클래스 어필리에이트 프로그램 캠페인과 같은 추천 탭들을 보여줍니다.
+#### 3) Signup
 
-![슈퍼차지드 추천 탭 구성](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48234218999/original/MvkXLoOeUHmWeulfO6LGlkJRaHTcA-VYMw.png?1655932147)
+가입을 마치고 무료 체험 중인 하이퍼클래스 계정이 있는 고객이에요.
 
-# 리워드 탭에서 수수료 찾기
+이 고객들의 상태에는 **Not A customer yet**(아직 고객 아님)이라고 표시돼요. 체험 중이라는 뜻이고, 첫 구독료를 내면 고객이 돼요.
 
-"Rewards(리워드)"를 클릭하여 획득한 수수료를 확인하세요.
+#### 4) 리드(또는 구독됨)
 
-하이퍼클래스 497달러 Pro 플랜에서 발생한 수수료는 슈퍼차지드 SaaS 프로그램 캠페인에 배치됩니다. 해당 수수료를 보려면 "View another campaign(다른 캠페인 보기)"을 클릭하세요.
+무료 체험 가입의 첫 단계만 마친 고객이에요.
 
-![리워드 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48244489599/original/STmHcDikP6ecXT-WMDdXBMFdGEqBE95BiA.png?1660156432)
+내 추천 링크로 가입을 시작했지만 끝까지 마치지 않아서 무료 체험을 시작하지 못한 잠재 고객이에요.
 
-# 자주 묻는 질문
+\* 이 상태의 추천 고객은 **State Filter**(상태 필터)에는 '리드', **State**(상태)에는 '구독됨'으로 다르게 보일 수 있어요. 여기서 '구독됨'과 '리드'는 같은 뜻이에요.
 
-**Q: 기존 고객을 하이퍼클래스 Pro에 추천했는데, 내 추천 목록에 표시되지 않는 이유가 무엇인가요?**
+#### 5) Canceled
 
-A: 기존 고객을 하이퍼클래스 Pro에 추천하면 그들은 분할 고객(split customer)이 됩니다. 당신이 하이퍼클래스로 처음 데려온 원래 어필리에이트가 아니기 때문에 추천 목록에 표시되지 않습니다. 하지만 그들이 하이퍼클래스 Pro 구독료를 결제하면, 리워드 탭에서 해당 고객의 이메일과 함께 수수료를 확인할 수 있습니다.
-
-Pro에 추천한 고객에 대해 분할 어필리에이트인지 확인하고 싶다면, 위 링크를 통해 지원팀에 문의하세요!
-
-## 추천 탭에 대해 더 자세히 알고 싶으신가요?
-
-[각 탭에 대한 더 자세한 설명을 보려면 여기를 클릭하세요!](../기타/affiliate-refferal-page-leads-customers-cancelled-statuses.md)
-
-여전히 추천 고객을 찾을 수 없나요? 지원팀에 연락하여 더 많은 도움을 받으려면 여기를 클릭하세요!
+하이퍼클래스 구독을 취소한 고객이에요. 지금은 이 고객들에 대한 커미션을 받지 못해요. 이 고객들이 구독을 다시 갱신하면 **Active / Paying** 분류로 돌아가요.
 
 ---
-*원문 최종 수정: Wed, 31 Aug, 2022 at 12:27 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+
+## Super Charged SaaS 캠페인
+
+Super Charged SaaS 캠페인에서 보상이나 커미션이 생겼다는 이메일을 받았나요? 그 보상과 고객을 보려면 **View another campaign**(다른 캠페인 보기)을 클릭해야 해요.
+
+업그레이드한 고객이 하이퍼클래스 제휴 프로그램 화면에서 "사라진" 것처럼 보일 때도 여기를 확인해 보세요.
+
+![View another campaign 버튼이 있는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48234500087/original/lrZ-aNFf6URPuIpCNN_DDs0Ad35thD9zVQ.png?1656024258)
+
+### 1. Supercharged SaaS Program에서 View Campaign 클릭하기
+
+**Supercharged SaaS Program** 아래의 **View Campaign**(캠페인 보기)을 클릭하세요.
+
+월 497달러 SaaS 플랜(Pro 플랜이라고도 해요)으로 업그레이드한 고객은 이 캠페인으로 옮겨져요.
+
+![Supercharged SaaS Program의 View Campaign 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48234500115/original/rPWDA7xWkSXXnDQig6nYYOvSuovieinJBQ.png?1656024280)
+
+### 2. Referrals 클릭하기
+
+**Referrals**를 클릭한 다음, 아래 화면에 보이는 탭에서 고객을 찾아보세요.
+
+![Referrals 탭 목록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48234500125/original/NFyKtL_r2NyjFE5tBe1zvk1cBgJGpwNubA.png?1656024295)
+
+---
+
+### 3. Supercharged SaaS Program의 Referrals 탭
+
+Supercharged SaaS Program 캠페인의 **Referrals** 아래에는 하이퍼클래스 제휴 프로그램 캠페인과 같은 탭이 보여요.
+
+![Supercharged SaaS Program의 Referrals 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48234218999/original/MvkXLoOeUHmWeulfO6LGlkJRaHTcA-VYMw.png?1655932147)
+
+## Reports 탭에서 커미션 찾기
+
+**Rewards**(보상)를 클릭하면 지금까지 받은 커미션을 볼 수 있어요.
+
+하이퍼클래스 497달러 Pro 플랜에서 발생한 커미션은 Super Charged SaaS 캠페인에 들어가요. 그 커미션을 보려면 **View another campaign**을 클릭하세요.
+
+## FAQ
+
+### 이미 하이퍼클래스를 쓰고 있는 고객에게 Pro를 추천했는데 제 추천 고객 목록에 안 보여요.
+
+이미 쓰고 있던 고객에게 하이퍼클래스 Pro를 추천하면 그 고객은 분할(split) 고객이 돼요. 내가 그 고객을 하이퍼클래스로 처음 데려온 제휴 파트너가 아니기 때문에 추천 고객 목록에는 나타나지 않아요.
+
+대신 그 고객이 하이퍼클래스 Pro 구독료를 내면, **Rewards** 탭에서 그 고객의 이메일과 함께 커미션을 확인할 수 있어요.
+
+Pro로 추천한 고객에 대해 내가 분할 제휴 파트너가 맞는지 확인하고 싶다면 를 통해 고객지원에 문의하세요.
+
+### Referrals 탭에 대해 더 자세히 알고 싶어요.
+
+각 탭의 상태는 [제휴 추천 페이지의 리드·고객·취소 상태](affiliate-referral-page-leads-customers-cancelled-statuses.md)에서 더 자세히 설명해요.
+
+### 그래도 추천한 고객을 찾을 수 없어요.
+
+하이퍼클래스 고객지원에 문의하세요.

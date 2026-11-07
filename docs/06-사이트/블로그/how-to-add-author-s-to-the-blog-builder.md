@@ -1,33 +1,31 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 06-사이트 > 블로그
+원문: /support/solutions/articles/48001220290-how-to-add-author-s-to-the-blog-builder
+번역일: 2026-11-07
+카테고리: 06-사이트
 ---
 
-# 블로그 빌더에 작성자 추가하는 방법
+# 블로그에 작성자 추가하기
 
-모든 블로그 글은 마케터, 기여자 또는 콘텐츠 전문가인 작성자가 작성할 수 있습니다. [블로그 포스트](getting-started-with-blogs-and-blog-posts.md)의 작성자로 선택하기 전에 먼저 블로그 빌더에 작성자를 추가해야 합니다(이 문서에서 설명).
+블로그 글은 마케터, 기고자, 콘텐츠 전문가 같은 작성자가 쓸 수 있어요. 이 문서에서는 블로그 빌더에 작성자를 등록하는 방법을 안내해요. 작성자를 먼저 등록해야 블로그 게시글을 쓸 때 작성자로 고를 수 있어요.
 
-**중요 사항:**
+{% hint style="warning" %}
+블로그를 게시한 뒤에는 **카테고리**, **Keywords**(키워드), **작성자**, **Slug**(슬러그)를 수정할 수 없어요. 개발팀이 해결 방법을 준비 중이며, 곧 출시될 예정이에요.
+{% endhint %}
 
-카테고리, 키워드, 작성자, 슬러그는 블로그가 발행된 후에는 수정할 수 없습니다. 개발자가 해결책을 작업 중이며 곧 출시될 예정입니다.
+## 블로그 빌더에 작성자 추가하기
 
-## 블로그 빌더에 작성자를 추가하는 방법은?
+1. **사이트 > 블로그 > 설정**(톱니바퀴 아이콘)을 클릭하세요.
 
-Sites(사이트) > Blogs(블로그) > Settings(설정) 톱니바퀴를 클릭하세요
+   ![블로그 설정 화면으로 이동하는 모습](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48265308321/original/4cqYzeC1iwWnSb44SQST1yNLn0Qwq5ssEA.png?1669273699)
 
-![블로그 설정 접근하기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48265308321/original/4cqYzeC1iwWnSb44SQST1yNLn0Qwq5ssEA.png?1669273699)
+2. 왼쪽의 **작성자** 탭을 클릭하세요.
+3. **새 작성자 추가**를 클릭하세요.
+4. 작성자 이름, 사진, 이미지 대체 텍스트, 소셜 페이지, 작성자 설명을 입력하세요.
+5. 입력을 마쳤으면 **Create Author**(작성자 만들기)를 클릭하세요.
 
-### 왼쪽 "Author(작성자)" 탭 클릭 > "+ Add new author(+ 새 작성자 추가)"
+   ![작성자 정보를 입력하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48265308440/original/VTwYfgZcftKDwzFyUasEvZ5MQnByKigkrw.png?1669273765)
 
-![작성자 탭에서 새 작성자 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48265308352/original/AxEOdMO2K21bM97yBgKTQxqEcwclmsTi1A.png?1669273725)
-
-### 작성자 이름, 사진, 이미지 대체 텍스트, 소셜 페이지, 작성자 설명을 추가한 후 > 준비가 되면 "+ Create Author(+ 작성자 생성)" 클릭
-
-![작성자 정보 입력 및 생성](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48265308440/original/VTwYfgZcftKDwzFyUasEvZ5MQnByKigkrw.png?1669273765)
-
-참고 - 작성자 이미지는 최대 10MB까지 지원됩니다
-
----
-*원문 최종 수정: Thu, 24 Nov, 2022 at 1:09 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+{% hint style="info" %}
+- 작성자 이미지는 최대 10MB까지 올릴 수 있어요.
+- 만들 수 있는 작성자 수에는 제한이 없어요.
+{% endhint %}

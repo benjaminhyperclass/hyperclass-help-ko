@@ -1,102 +1,78 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 18-리포팅 > 추적-어트리뷰션
+원문: /support/solutions/articles/48001220949-understanding-facebook-ad-reporting-terminology
+번역일: 2026-11-07
+카테고리: 18-리포팅
 ---
 
-# 페이스북 광고 리포팅 용어 이해하기
+# Facebook 광고 리포팅 용어 정리
 
-페이스북 광고 리포팅(Facebook Ad Reporting)은 고객의 디지털 광고 캠페인에 대한 실시간 리포팅과 분석을 제공합니다. 페이스북 광고 리포팅은 전체적인 캠페인 분석을 제공하므로 고객의 광고 성과를 쉽게 이해하고 ROI를 향상시킬 수 있습니다.
+Facebook 광고 리포팅에서는 고객사의 디지털 광고 캠페인 성과를 실시간으로 보고 분석할 수 있어요. 캠페인 전체 흐름을 한눈에 파악해 광고 성과를 이해하고 ROI를 높이는 데 도움이 돼요. 이 문서에서는 리포트에 나오는 용어의 뜻과 계산 방식을 설명해요.
 
-#### 이 아티클에서 다루는 내용:
+## 노출수
 
-- [노출수 (Impressions)](#노출수-impressions)
-- [클릭수 (Clicks)](#클릭수-clicks)
-- [전환 (Conversions)](#전환-conversions)
-- [클라이언트 지출 (Client Spend)](#클라이언트-지출-client-spend)
-- [평균 CPC (클릭당 비용)](#평균-cpc-클릭당-비용)
-- [전환당 비용 (CPA)](#전환당-비용-cpa)
-- [전환율 (Conversion Rate)](#전환율-conversion-rate)
-- [매출 (Revenue)](#매출-revenue)
-- [ROI](#roi)
-- [세일즈 (Sales)](#세일즈-sales)
-- [CPS (세일즈당 비용)](#cps-세일즈당-비용)
-- [리드 (Leads)](#리드-leads)
-- [CPL (리드당 비용)](#cpl-리드당-비용)-)
+노출수는 광고가 Facebook 네트워크 안의 검색 결과 페이지나 다른 웹사이트에 표시된 횟수예요.
 
-## 노출수 (Impressions)
+## 클릭
 
-노출수는 검색 결과 페이지나 페이스북 네트워크 내 다른 웹사이트에서 광고가 표시된 횟수입니다.
+누군가 광고를 클릭하면 Facebook 광고는 이를 클릭 1회로 집계해요. 텍스트 광고의 파란색 제목이나 전화번호를 클릭하는 경우가 그 예예요.
 
-## 클릭수 (Clicks)
+## 전환
 
-누군가 광고의 파란색 헤드라인이나 텍스트 광고의 전화번호 등을 클릭하면, 페이스북 광고에서 이를 클릭으로 집계합니다.
+전환은 사용자가 어떤 행동을 해서, 비즈니스에 의미 있는 목표 행동으로 이어지는 모든 경우를 말해요. 웹사이트, 랜딩 페이지, Facebook 같은 소셜 미디어, 앱 등 어떤 접점에서 일어나도 괜찮아요.
 
-## 전환 (Conversions)
+뉴스레터 가입, 구매 완료, 폼 제출, 자료 다운로드, Facebook 리드 광고 참여가 대표적인 예예요. 무엇을 전환으로 볼지는 비즈니스 목표에 따라 직접 정해요. 전환을 추적하는 최종 목적은 잠재 고객을 리드나 고객으로 바꾸는 거예요.
 
-전환은 웹사이트, 랜딩 페이지, 소셜 미디어 플랫폼(페이스북 등), 앱 또는 기타 디지털 접점에서 발생하는 미리 정의된 가치 있는 비즈니스 행동을 수행하는 사용자 상호작용입니다.
+## Client Spend(고객사 지출)
 
-예시로는 뉴스레터 가입, 구매 완료, 폼 제출, 리소스 다운로드 또는 페이스북 리드 광고 참여 등이 있습니다. 비즈니스 목표에 따라 무엇을 전환으로 볼지 정의할 수 있습니다. 전환 추적의 궁극적인 목적은 잠재 고객을 리드나 고객으로 전환시키는 것입니다.
+광고 운영 비용에 에이전시 관리 수수료를 더한 금액이에요. 이 값은 **에이전시 관리자**와 **Agency User**(에이전시 사용자)에게만 보여요.
 
-## 클라이언트 지출 (Client Spend)
+## Average CPC(평균 클릭당 비용)
 
-광고 실행 비용에 에이전시 관리 수수료를 더한 금액입니다 (에이전시 관리자와 에이전시 사용자에게만 표시됩니다).
+CPC(Cost per Click)는 광고주가 광고가 클릭될 때마다 지불하는 평균 금액이에요. CPC가 높을수록 광고를 게재하는 비용이 더 많이 들어요.
 
-## 평균 CPC (클릭당 비용)
-
-CPC는 퍼블리셔가 광고의 각 클릭에 대해 지불하는 평균 금액입니다. CPC가 높을수록 광고를 게재하는 데 더 많은 비용이 듭니다.
-
-광고 게재 비용은 다음과 같은 여러 요인에 따라 달라질 수 있습니다:
+광고 게재 비용은 다음과 같은 여러 요인에 따라 달라져요.
 
 - 광고주의 예산
 - 노출수
-- 위치와 시간대
-- 콘텐츠 유형
+- 지역과 시간대
+- 광고가 게재되는 콘텐츠의 유형
 
-## 전환당 비용 (CPA)
+## Cost Per Conversion(전환당 비용, CPA)
 
-신규 고객 한 명을 획득하는 데 드는 평균 비용을 측정하는 지표입니다. 고객획득비용(Cost per Acquisition) 또는 CPA라고도 알려져 있습니다. 총 광고 비용을 총 전환 수로 나누어 계산합니다.
+고객 한 명을 새로 확보하는 데 드는 평균 비용을 나타내는 지표예요. Cost per Acquisition, 줄여서 CPA라고도 해요. 광고 총비용을 전체 전환 수로 나눠서 계산해요.
 
-## 전환율 (Conversion Rate)
+## 전환율
 
-전환율은 전환 수를 같은 기간 동안 전환으로 추적할 수 있는 총 광고 상호작용 수로 나누어 계산합니다. 예를 들어, 1,000회 상호작용에서 50건의 전환이 있었다면, 50 ÷ 1,000 = 5%이므로 전환율은 5%입니다.
+전환율은 전환 수를 같은 기간에 전환으로 이어질 수 있는 전체 광고 상호작용 수로 나눠서 계산해요. 예를 들어 상호작용 1,000건 중 전환이 50건이라면 50 ÷ 1,000 = 5%이므로 전환율은 5%예요.
 
-## 매출 (Revenue)
+## 매출
 
-기회 관리에서 기회가 '성사(Won)'로 표시되면, 해당 기회에 리드 가치(금액)가 추가됩니다. 이는 특정 페이스북 광고 캠페인에 대해 성사로 표시된 모든 기회의 총합입니다.
+기회를 고객전환성공으로 표시하면, 그 기회에 **Lead Value**(리드 가치, 금액)가 추가돼요. 매출은 특정 Facebook 광고 캠페인에서 고객전환성공으로 표시된 모든 기회의 값을 합한 금액이에요.
 
-참고사항:
+{% hint style="info" %}
+**Lead Value**를 입력할 때는 숫자만 입력하세요. 필드에 이미 $ 표시가 반영되어 있으니 $ 기호는 붙이지 않아도 돼요. (아래 예시를 참고하세요.)
+{% endhint %}
 
-리드 가치를 입력할 때는 숫자만 사용하세요. $ 기호는 필드에서 이미 고려되므로 추가할 필요가 없습니다 (아래 예시 참조).
-
-[
-![리드 가치 입력 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48248679006/original/j7gNWZUg6YZXVq1Mg8jEISwJrcXzBX9rkw.jpeg?1662051755)
-](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48241707307/original/n4Q9x-G_xbtco9dnWK_2SSKSBQOFNkLGUw.png?1659026778)
+[![리드 가치 입력 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48248679006/original/j7gNWZUg6YZXVq1Mg8jEISwJrcXzBX9rkw.jpeg?1662051755)](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48241707307/original/n4Q9x-G_xbtco9dnWK_2SSKSBQOFNkLGUw.png?1659026778)
 
 ## ROI
 
-투자수익률(Return On Investment, ROI)은 광고 캠페인 중에 발생한 비용과 해당 캠페인에서 발생한 매출 간의 비율을 계산하여 측정됩니다. ROI는 개별 광고 또는 전체 페이지에 적용할 수 있습니다.
+ROI(Return On Investment, 투자수익률)는 광고 캠페인에 들어간 비용과 그 캠페인에서 발생한 매출의 비율로 계산해요. 광고 하나하나에도, 페이지 전체에도 적용할 수 있어요.
 
-## 세일즈 (Sales)
+## 판매
 
-'성사(Won)'로 표시된 리드/기회를 의미합니다.
+고객전환성공으로 표시된 리드/기회를 말해요.
 
-[
-![성사된 기회 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48248679004/original/YHkis7O-Ss55yhKo7tr9JUj5n4Kux_HdYQ.png?1662051755)
-](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48247982025/original/jPd0Kh-Q6Sh4dMgRKaXkowGGiqjBND-vxg.png?1661809072)
+[![판매 수치 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48248679004/original/YHkis7O-Ss55yhKo7tr9JUj5n4Kux_HdYQ.png?1662051755)](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48247982025/original/jPd0Kh-Q6Sh4dMgRKaXkowGGiqjBND-vxg.png?1661809072)
 
-## CPS (세일즈당 비용)
+## CPS(판매당 비용)
 
-CPS는 특정 캠페인 실행 비용을 성사로 표시된 기회 수로 나누어 측정합니다.
+CPS(Cost per Sales)는 특정 캠페인을 운영한 비용을 고객전환성공으로 표시된 기회 수로 나눠서 계산해요.
 
-## 리드 (Leads)
+## 리드
 
-폼 제출, 채팅 위젯을 통한 응답 또는 전화 통화를 통해 열린 상태로 기록된 리드/기회를 의미합니다.
+폼 제출, 채팅 위젯 응답, 전화 통화를 통해 Open 상태로 기록된 리드/기회를 말해요.
 
-## CPL (리드당 비용)
+## CPL(리드당 비용)
 
-CPL은 특정 캠페인 실행 비용을 열린 단계에 있는 기회 수로 나누어 측정합니다.
-
----
-*원문 최종 수정: Thu, 1 May, 2025 at 12:30 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+CPL(Cost per Lead)은 특정 캠페인을 운영한 비용을 Open 상태인 기회 수로 나눠서 계산해요.

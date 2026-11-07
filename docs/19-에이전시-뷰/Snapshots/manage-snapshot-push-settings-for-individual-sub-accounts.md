@@ -1,38 +1,28 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 에이전시 관리 > 스냅샷
+원문: /support/solutions/articles/155000005416-manage-snapshot-push-settings-for-individual-sub-accounts
+번역일: 2026-11-07
+카테고리: 19-에이전시-뷰
 ---
 
-# 개별 하위 계정의 스냅샷 푸시 설정 관리하기
+# 스냅샷 푸시 대상 서브 계정 편집하기
 
-스냅샷 관리가 더욱 쉬워졌습니다. 최신 업데이트를 통해 이제 스냅샷 푸시 대상 로케이션을 편집할 수 있어, 스냅샷이 전송될 위치를 더 정밀하게 제어할 수 있습니다. 이 개선사항으로 프로세스가 간소화되고 가시성이 향상되어 스냅샷 관리가 더욱 직관적이고 효율적이 되었습니다.
+스냅샷을 푸시할 때 어떤 서브 계정으로 보낼지 직접 고를 수 있어요. 에이전시 관리자만 쓸 수 있고, 스냅샷을 보낼 서브 계정을 더 세밀하게 관리하고 싶을 때 활용하세요.
 
-**목차**
+## 새로워진 점
 
-- [새로운 기능](#새로운-기능)
-- [어디서 찾나요?](#어디서-찾나요)
-- [왜 만들었나요?](#왜-만들었나요)
+- 스냅샷을 푸시할 때 대상 서브 계정을 편집할 수 있어요. 스냅샷을 보낼 서브 계정을 직접 정할 수 있습니다.
+- 스냅샷 대상 서브 계정을 보여 주는 새 화면이 생겼어요. 활성화된 서브 계정과 비활성화된 서브 계정을 한눈에 구분할 수 있습니다.
 
-## **새로운 기능**
+## 어디에서 찾나요?
 
-- **향상된 스냅샷 푸시 제어**: 이제 스냅샷 푸시 중에 로케이션을 편집하여 스냅샷이 전송될 위치를 제어할 수 있습니다.
-- **스냅샷 로케이션용 새로운 UI**: 활성화된 로케이션과 비활성화된 로케이션을 명확하게 볼 수 있는 새로운 인터페이스가 도입되었습니다.
+**계정 스냅샷 > 내 스냅샷**에서 스냅샷 행마다 있는 **추가 작업**(점 세 개)을 눌러 **Edit Snapshot**(스냅샷 편집)을 선택하세요.
 
-## **어디서 찾나요?**
+## 이렇게 바뀐 이유
 
-Account Snapshots(계정 스냅샷) > My Snapshots(내 스냅샷) > 각 항목의 More Actions(더 많은 작업) [점 세 개] > Edit Snapshot(스냅샷 편집)
+서브 계정별 상태를 한눈에 보고 쉽게 관리할 수 있도록, 스냅샷 관리 전반을 더 편하게 만들기 위해서예요.
 
-## **왜 만들었나요?**
+![스냅샷 편집 화면 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047623600/original/nDjfOpw1TdwO4a7vhi_zuRdIZGKWYJ4q2g.png?1748900261)
 
-로케이션 상태를 보고 관리할 수 있는 명확하고 직관적인 방법을 도입하여 전반적인 스냅샷 관리 경험을 개선하는 것이 저희의 목표였습니다.
+![스냅샷 편집 화면 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047623601/original/6p6VD5oQvjkRDizFxn385u3JdPD3VWISsg.png?1748900261)
 
-![스냅샷 푸시 설정 관리 인터페이스](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047623600/original/nDjfOpw1TdwO4a7vhi_zuRdIZGKWYJ4q2g.png?1748900261)
-
-![로케이션 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047623601/original/6p6VD5oQvjkRDizFxn385u3JdPD3VWISsg.png?1748900261)
-
-![스냅샷 편집 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047623599/original/RHQKQdNm55cgjzB1E7xKqPQEgIlZrfutKw.png?1748900261)
-
----
-*원문 최종 수정: 2025년 6월 2일 월요일 오후 4:43*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+![스냅샷 편집 화면 3](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047623599/original/RHQKQdNm55cgjzB1E7xKqPQEgIlZrfutKw.png?1748900261)

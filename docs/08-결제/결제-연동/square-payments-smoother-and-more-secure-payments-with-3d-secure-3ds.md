@@ -1,156 +1,124 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 08-결제 > 결제-연동
+원문: /support/solutions/articles/155000006629-square-payments-smoother-and-more-secure-payments-with-3d-secure-3ds-
+번역일: 2026-11-06
+카테고리: 08-결제
 ---
 
-# Square 결제: 3D Secure(3DS)로 더 원활하고 안전한 결제
+# Square 결제의 3D Secure(3DS) 인증
 
-Hyperclass가 이제 Square와 함께 3D Secure(3DS)를 지원합니다. 온라인 체크아웃에 카드 소지자 인증 단계를 추가하여 보안을 강화했어요. 구매자의 카드나 지역 규정에서 강력한 고객 인증(SCA)이 필요한 경우 자동으로 검증 단계가 작동하여, 사기를 방지하면서도 더 많은 결제를 성공시킬 수 있습니다. ([squareup.com](https://squareup.com/help/us/en/article/7623-risk-manager-3d-secure-3ds))
-
----
-
-**목차**
-
-- [Square용 3D Secure(3DS)란?](#square용-3d-secure3ds란)란?)
-- [Square용 3D Secure(3DS)의 주요 장점](#square용-3d-secure3ds의-주요-장점)의-주요-장점)
-- [3DS 체크아웃 흐름 개요](#3ds-체크아웃-흐름-개요)
-- [전제조건 및 지원 흐름](#전제조건-및-지원-흐름)
-- [3DS 오류 처리 및 문제해결](#3ds-오류-처리-및-문제해결)
-- [어떻게 작동하나요?](#어떻게-작동하나요)[Square에서의 3DS 흐름](#square에서의-3ds-흐름)
-- [NMI에서의 3DS 흐름](#nmi에서의-3ds-흐름)
-- [NMI에서 Public key 추가하기](#nmi에서-public-key-추가하기)
-- [자주 묻는 질문](#자주-묻는-질문)
----
-
-## **Square용 3D Secure(3DS)란?**
-
-3D Secure(3DS)는 거래가 승인되기 전에 구매자의 신원을 확인하도록 요구하는 업계 표준 프로토콜입니다(예: 일회용 SMS 코드, Face ID, 또는 발급 은행으로의 리다이렉트). 3DS를 활성화하면 인증이 성공한 후 책임이 카드 발급사로 전가되기 때문에 사기 관련 지불거절을 크게 줄일 수 있어요. Square는 내장된 Risk Manager의 일부로 3DS를 제공하며, Hyperclass는 이제 필요한 데이터를 전달하여 Square가 필요할 때마다 추가 검증 단계를 실행할 수 있습니다.
+하이퍼클래스에서 Square 결제에 3D Secure(3DS)를 쓸 수 있어요. 온라인 결제 중에 카드 소유자를 한 번 더 확인하는 단계예요. 구매자의 카드나 지역 규정에서 강력한 고객 인증(SCA)을 요구하면 이 확인 단계가 자동으로 나타나요. 그래서 사기를 막으면서 더 많은 결제를 받을 수 있어요. ([squareup.com](https://squareup.com/help/us/en/article/7623-risk-manager-3d-secure-3ds))
 
 ---
 
-## **Square용 3D Secure(3DS)의 주요 장점**
+## Square의 3D Secure(3DS)란?
 
-새로운 Square 3DS 연동은 즉각적인 이점을 제공합니다:
-
-- 3DS가 필수인 카드에서 결제 실패가 줄어들어 전환율이 향상됩니다.
-
-- 인증 성공 후 사기 방지 및 지불거절 책임 전가가 제공됩니다.
-
-- 영국과 EU 등 지역에서 추가 코딩 없이 자동 SCA 규정 준수가 됩니다.
-
-- 체크아웃 내 팝업으로 마찰을 최소화하여 고객이 Hyperclass 퍼널 안에서 더 원활한 경험을 할 수 있습니다.
+3D Secure(3DS)는 결제를 승인하기 전에 구매자가 본인임을 확인하게 하는 업계 표준 방식이에요. 일회용 SMS 코드, Face ID, 카드 발급 은행으로 이동하는 방법 등이 있어요. 인증에 성공하면 책임이 카드 발급사로 넘어가요. 그래서 3DS를 켜면 사기로 인한 지불 거절(차지백)이 크게 줄어요. Square는 기본 제공하는 Risk Manager에 3DS를 포함하고 있어요. 하이퍼클래스는 Square가 필요할 때 추가 인증을 진행할 수 있도록 필요한 데이터를 전달해요.
 
 ---
 
-## 3DS 체크아웃 흐름 개요
+## Square 3DS의 주요 장점
 
-Square 계정이 Hyperclass에 연결되면 3DS가 완전히 자동으로 작동합니다.
+Square 3DS 연동으로 바로 얻을 수 있는 장점이에요.
 
-- 구매자가 주문 폼(Order Form), 결제 요소(Payment Element), 인보이스(Invoice), 또는 스토어 체크아웃에서 필수 청구 주소 및 연락처 필드를 입력합니다.
-
-- Hyperclass가 거래 요청을 Square로 전송하면, Square 위험 규칙이 카드, 금액, 위치 및 기타 요소를 기반으로 3DS가 필요한지 결정합니다.
-
-- 3DS가 트리거되면 구매자가 인증을 완료할 수 있도록 보안 팝업/모달이 나타납니다.
-
-- 검증 성공 시 결제가 캡처되고 Hyperclass 주문/인보이스 상태가 "결제됨"으로 업데이트됩니다.
-
-- 검증 실패 또는 시간 초과 시 결제가 거절되고, Hyperclass가 오류를 표시하여 구매자가 다른 카드로 시도할 수 있습니다.
+- 3DS가 필수인 카드에서 결제 실패가 줄어 전환율이 올라가요.
+- 사기 방지 효과가 더해지고, 인증에 성공하면 차지백 책임이 카드 발급사로 넘어가요.
+- 영국, EU 같은 지역의 SCA 규정을 별도 코딩 없이 자동으로 지켜요.
+- 결제 화면 안에 작은 팝업으로 인증 창이 떠서, 고객이 하이퍼클래스 퍼널을 벗어나지 않고 편하게 결제할 수 있어요.
 
 ---
 
-## **전제조건 및 지원 흐름**
+## 3DS 결제 흐름
 
-Square용 3DS는 Hyperclass에서 Square 카드 결제를 이미 받을 수 있는 모든 곳에서 사용 가능합니다: 주문 폼, 결제 링크, 이커머스 스토어, 인보이스 등.
+하이퍼클래스에 Square 계정을 연결하면 3DS는 모두 자동으로 처리돼요.
 
-전제조건:
-
-- 하위 계정(Sub-Account) → 결제(Payments) → 연동(Integrations)에서 연결된 Square 계정
-
-- Square 위치가 라이브 모드로 설정됨
-
-- Square가 구매자를 검증할 수 있도록 체크아웃 폼에서 청구 주소 + 이메일/전화 필드가 표시됨(가급적 필수로 설정)
-
-- 구매자가 3DS를 지원하는 카드와 발급 은행을 사용함
+- 구매자가 **주문 폼**, Payment Element(결제 요소), **인보이스**, 스토어 결제 화면에서 필요한 청구지 주소와 연락처 정보를 입력해요.
+- 하이퍼클래스가 Square에 결제 요청을 보내면, Square의 위험 규칙이 카드, 금액, 위치 등을 보고 3DS가 필요한지 판단해요.
+- 3DS가 필요하면 구매자에게 인증용 보안 팝업(모달)이 나타나요.
+- 인증에 성공하면 결제가 완료되고, 하이퍼클래스의 주문/인보이스 상태가 **유료**로 바뀌어요.
+- 인증에 실패하거나 시간이 초과되면 결제가 거절돼요. 하이퍼클래스가 오류를 보여 주므로 구매자는 다른 카드로 다시 시도할 수 있어요.
 
 ---
 
-## **3DS 오류 처리 및 문제해결**
+## 사용 조건과 지원하는 결제 방식
 
-일반적인 시나리오를 이해하면 고객을 더 잘 지원할 수 있습니다:
+하이퍼클래스에서 Square 카드 결제를 받을 수 있는 곳이라면 어디서든 3DS를 쓸 수 있어요. **주문 폼**, **결제 링크**, 이커머스 스토어, **인보이스** 등이 해당돼요.
 
-- **"인증 실패"** — 구매자가 잘못된 SMS 코드를 입력했거나 Face ID를 거절했습니다. 다시 시도하거나 다른 카드를 사용하도록 안내하세요.
+사용 조건은 다음과 같아요.
 
-- **"발급사 거절"** — 카드 발급 은행이 3DS 전후에 거래를 차단했습니다. 은행에 문의하도록 안내하세요.
-
-- **"3DS 미완료"** — 구매자가 팝업을 닫았습니다. 단계를 완료하도록 격려하세요.
-
-Hyperclass는 항상 결제(Payments) → 거래(Transactions)에서 게이트웨이 응답을 기록하여 쉽게 참조할 수 있습니다.
-
----
-
-## **어떻게 작동하나요?**
-
-- **Square**: 설정이 필요 없습니다 - 고객이 체크아웃 중에 주소와 연락처 필드를 추가하면 바로 작동합니다.
-
-- **NMI**: 3DS 활성화를 위한 일회성 설정이 필요합니다:
-
-- NMI 계정에서 Payer Authentication 2.0에 등록하세요.
-
-- 서비스 상태가 활성(Active)인지 확인하세요.
-
-- NMI 판매자 포털에서 3DS용 Checkout Public Key를 생성하고 Hyperclass 연동에 추가하세요.
-
-설정 완료 후 카드에서 3DS가 필요할 때마다 고객이 자동으로 인증 및 결제 완료를 위한 팝업을 보게 됩니다. [도움말 문서](../how-to-set-up-the-nmi-integration-.md)를 참조하세요.
-
-### **Square에서의 3DS 흐름**
-
-![Square에서의 3DS 흐름](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055734493/original/LGFC9Zao8SCoOuRY9PTj9t4FUr5LTP0nBw.png?1760108727)
-
-### **NMI에서의 3DS 흐름**
-
-![NMI에서의 3DS 흐름](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055734693/original/dVnEpwdSrrFB7sPsTtqaNc4Uo7j1BGB_zg.png?1760108824)
-
-### **NMI에서 Public key 추가하기**
-
-![NMI에서 Public key 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055734649/original/fZqOcq4KN3rowN8LG9vZbWFJIivy8c1hlw.png?1760108801)
+- 서브 계정의 **결제 > 연동**에서 Square 계정이 연결되어 있어야 해요.
+- Square 위치(location)가 라이브 모드로 설정되어 있어야 해요.
+- Square가 구매자를 확인할 수 있도록 결제 폼에 **청구지 주소**와 이메일/전화번호 필드가 보여야 해요. 가능하면 필수 입력으로 설정하세요.
+- 구매자가 3DS를 지원하는 카드와 발급 은행을 사용해야 해요.
 
 ---
 
-## **자주 묻는 질문**
+## 3DS 오류 처리와 문제 해결
 
-**Q: Square 대시보드에서 무언가를 활성화해야 하나요?**
+자주 나오는 상황을 알아 두면 고객을 안내하기 쉬워요.
 
-아니요. Square의 기본 Risk Manager 규칙이 이미 고위험 거래나 SCA 의무 거래에 3DS를 적용합니다.
+- “Authentication failed”(인증 실패): 구매자가 SMS 코드를 잘못 입력했거나 Face ID를 거부한 경우예요. 다시 시도하거나 다른 카드를 쓰도록 안내하세요.
+- “Issuer declined”(발급사 거절): 카드 발급 은행이 3DS 전이나 후에 결제를 막은 경우예요. 구매자에게 은행에 문의해 보도록 안내하세요.
+- “3DS not completed”(3DS 미완료): 구매자가 팝업을 닫은 경우예요. 인증 단계를 끝까지 완료하도록 안내하세요.
 
-**Q: 저장된 "Card on File" 결제에서도 3DS가 작동하나요?**
-
-Square 3DS는 실시간 카드 소지자 시작 결제에만 적용됩니다. Card-on-file 직불은 면제됩니다.
-
-**Q: 3DS 사용에 추가 수수료가 있나요?**
-
-Square는 추가 3DS 수수료를 부과하지 않으며, 표준 Square 처리 요금이 적용됩니다.
-
-**Q: 모든 거래에서 3DS가 나타나나요?**
-
-아니요. 카드 발급사와 Square의 위험 엔진이 언제 3DS를 트리거할지 결정합니다. 많은 저위험 결제는 챌린지 없이 바로 통과됩니다.
-
-**Q: 3DS를 비활성화할 수 있나요?**
-
-Hyperclass 내에서는 3DS를 비활성화할 수 없으며, Square가 규칙을 관리합니다. Square 대시보드에서 위험 규칙을 조정할 수는 있지만 SCA 지역에서는 권장되지 않습니다.
-
-**Q: 3DS가 체크아웃을 느리게 하나요?**
-
-추가 단계는 몇 초만 더 걸리며 페이지 내에 임베드되어 마찰을 최소화합니다.
-
-**Q: POS나 모바일 결제에서 3DS가 지원되나요?**
-
-아니요. 3DS는 온라인(카드 부재) 플로우에서만 사용됩니다. 대면 Square POS 거래는 대신 칩이나 탭을 사용하여 보안을 제공합니다.
-
-**Q: 반복되는 3DS 실패는 어떻게 문제해결하나요?**
-
-청구 주소가 카드 발급사 기록과 일치하는지 확인하고, 구매자의 기기에서 팝업을 허용하는지 확인한 후, 문제가 지속되면 다른 카드로 다시 시도하도록 안내하세요.
+하이퍼클래스는 게이트웨이 응답을 항상 **결제 > 거래 내역**에 기록해요. 필요할 때 여기서 확인하세요.
 
 ---
-*원문 최종 수정: Tue, 14 Oct, 2025 at 10:57 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+
+## 어떻게 작동하나요?
+
+- Square: 따로 설정할 것이 없어요. 고객이 결제 중에 주소와 연락처 필드를 입력하면 바로 작동해요.
+- NMI: 3DS를 켜려면 한 번만 간단히 설정하면 돼요.
+
+1. NMI 계정에서 Payer Authentication 2.0에 가입하세요.
+2. 서비스 상태가 Active(활성)인지 확인하세요.
+3. NMI Merchant Portal에서 3DS용 Checkout Public Key를 만들고, 하이퍼클래스 연동에 추가하세요.
+
+설정을 마치면, 카드에 3DS가 필요할 때마다 고객에게 인증 팝업이 자동으로 나타나요. 고객은 팝업에서 인증하고 결제를 마칠 수 있어요. 자세한 방법은 [도움말 문서](../how-to-set-up-the-nmi-integration.md)를 참고하세요.
+
+### Square의 3DS 흐름
+
+![Square의 3DS 흐름 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055734493/original/LGFC9Zao8SCoOuRY9PTj9t4FUr5LTP0nBw.png?1760108727)
+
+### NMI의 3DS 흐름
+
+![NMI의 3DS 흐름 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055734693/original/dVnEpwdSrrFB7sPsTtqaNc4Uo7j1BGB_zg.png?1760108824)
+
+### NMI에서 Public Key 추가하기
+
+![NMI에서 Public Key를 추가하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055734649/original/fZqOcq4KN3rowN8LG9vZbWFJIivy8c1hlw.png?1760108801)
+
+---
+
+## 자주 묻는 질문
+
+### Square 대시보드에서 따로 설정해야 하는 게 있나요?
+
+아니요. Square의 기본 Risk Manager 규칙이 위험도가 높거나 SCA가 필수인 결제에 이미 3DS를 적용해요.
+
+### 저장된 카드(Card on File)로 결제할 때도 3DS가 작동하나요?
+
+Square 3DS는 카드 소유자가 그 자리에서 직접 진행하는 실시간 결제에만 적용돼요. 저장된 카드로 청구하는 결제는 대상이 아니에요.
+
+### 3DS를 쓰면 추가 수수료가 있나요?
+
+Square는 3DS에 별도 수수료를 받지 않아요. Square의 일반 결제 수수료만 적용돼요.
+
+### 모든 결제에서 3DS 인증 창이 나타나나요?
+
+아니요. 3DS를 띄울지는 카드 발급사와 Square의 위험 판단 시스템이 정해요. 위험이 낮은 결제는 인증 없이 바로 처리되는 경우가 많아요.
+
+### 3DS를 끌 수 있나요?
+
+하이퍼클래스 안에서는 3DS를 끌 수 없어요. 규칙은 Square가 관리해요. Square 대시보드에서 위험 규칙을 조정할 수는 있지만, SCA가 적용되는 지역에서는 권장하지 않아요.
+
+### 3DS 때문에 결제가 느려지나요?
+
+추가되는 단계는 몇 초 정도예요. 같은 페이지 안에 팝업으로 나타나서 불편함도 적어요.
+
+### POS나 모바일 결제에서도 3DS를 쓸 수 있나요?
+
+아니요. 3DS는 온라인(카드 미제시) 결제에만 쓰여요. Square POS로 직접 받는 결제는 보안을 위해 칩이나 탭(비접촉) 방식을 사용해요.
+
+### 3DS 실패가 계속 나면 어떻게 해결하나요?
+
+청구지 주소가 카드 발급사에 등록된 주소와 같은지 확인하세요. 구매자의 기기에서 팝업이 허용되어 있는지도 확인하세요. 그래도 문제가 계속되면 다른 카드로 다시 시도하도록 안내하세요.

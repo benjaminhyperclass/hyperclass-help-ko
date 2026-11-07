@@ -1,46 +1,39 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 06-사이트 > 워드프레스
+원문: /support/solutions/articles/48001221815-wordpress-error-codes-and-troubleshooting
+번역일: 2026-11-07
+카테고리: 06-사이트
 ---
 
-# 워드프레스 오류 코드 및 문제 해결
+# WordPress 오류 코드와 해결 방법
 
-Hyperclass의 워드프레스 호스팅 시스템에는 저희 시스템에서만 발생하는 고유한 오류 코드들이 있으며, 이를 해결하기 위한 특별한 문제 해결 단계가 필요합니다.
+WordPress 호스팅에서만 나타나는 오류 코드가 몇 가지 있고, 오류마다 해결 방법이 달라요. 이 문서에서 오류별 의미와 해결 방법을 확인하세요.
 
-이 가이드에서 다루는 내용:
+## 오류별 의미와 해결 방법
 
-- [각 오류의 의미와 해결 방법](#각-오류의-의미와-해결-방법)
-- [파일 손상](#파일-손상)
-- [플러그인 문제](#플러그인-문제)  
-- [알 수 없는 오류(플러그인과 파일 모두 손상된 경우)](#알-수-없는-오류플러그인과-파일-모두-손상된-경우)
+### 파일 손상 (File Corrupted)
 
-## 각 오류의 의미와 해결 방법
-
-### 파일 손상
-
-현재 워드프레스 설치본이나 원본 워드프레스 설치본(가져오기 파일을 생성한 소스)에서 파일이 손상되어 가져오기에 사용할 수 없습니다. 이 파일을 삭제하고 다시 시도해 주세요.
+현재 WordPress 설치본이나, 이 파일을 만든 원본 WordPress 설치본에서 파일이 손상됐을 수 있어요. 이 경우 손상된 파일은 가져오기에 쓸 수 없어요. 파일을 삭제하고 다시 시도하세요.
 
 ![파일 손상 오류 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48250641974/original/YBX42hBJXjah-FzXIlUzTtr7XZHkiT69Vw.png?1663058735)
 
-### 플러그인 문제
+### 플러그인 문제 (Plugin Issue)
 
-오류 메시지는 다음과 같이 표시됩니다: "Plugin named "yith-topbar-countdown" is corrupted."
+오류 메시지는 다음과 비슷하게 나타나요.
 
-이 오류는 현재 워드프레스 설치본에서 발생할 수도 있고, 원본 워드프레스 설치본(가져오기 파일을 생성한 소스)에서 발생할 수도 있습니다. 해당 플러그인을 삭제하고 다시 시도해 주세요.
+"Plugin named “yith-topbar-countdown” is corrupted."
 
-![플러그인 오류 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48250642923/original/XEJUx0ComeNFLCpoacYn1p3UmBApX8HYIw.png?1663058962)
+(“yith-topbar-countdown”이라는 플러그인이 손상되었다는 뜻이에요.)
 
-### 알 수 없는 오류(플러그인과 파일 모두 손상된 경우)
+오류는 현재 WordPress 설치본에 있을 수도 있고, 이 파일을 만든 원본 WordPress 설치본에 있을 수도 있어요. 해당 플러그인을 삭제하고 다시 시도하세요.
 
-시스템은 플러그인 문제를 먼저 감지하여 UI에 플러그인 오류를 표시합니다.
+![플러그인 손상 오류 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48250642923/original/XEJUx0ComeNFLCpoacYn1p3UmBApX8HYIw.png?1663058962)
 
-"Plugin named "yith-topbar-countdown" is corrupted." 
+### 알 수 없는 오류 (플러그인과 파일이 모두 손상된 경우)
 
-이 오류는 현재 워드프레스 설치본에서 발생할 수도 있고, 원본 워드프레스 설치본(가져오기 파일을 생성한 소스)에서 발생할 수도 있습니다. 해당 플러그인을 삭제하고 다시 시도해 주세요. 
+이 경우에는 플러그인 문제를 먼저 감지해서 화면에 플러그인 오류를 보여 줘요.
 
-플러그인 문제를 해결한 후에도 파일이 손상된 경우, 오류 메시지가 변경되어 위에서 설명한 파일 손상 오류가 표시됩니다. 그런 경우 파일을 삭제하고 다시 시도하면 됩니다.
+"Plugin named “yith-topbar-countdown” is corrupted."
 
----
-*원문 최종 수정: Tue, 13 Jun, 2023 at 4:19 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+오류는 현재 WordPress 설치본에 있을 수도 있고, 이 파일을 만든 원본 WordPress 설치본에 있을 수도 있어요. 해당 플러그인을 삭제하고 다시 시도하세요.
+
+플러그인을 삭제한 뒤에도 파일이 손상된 상태라면 오류가 위에서 설명한 파일 손상 오류로 바뀌어요. 그때는 파일을 삭제하고 다시 시도하세요.

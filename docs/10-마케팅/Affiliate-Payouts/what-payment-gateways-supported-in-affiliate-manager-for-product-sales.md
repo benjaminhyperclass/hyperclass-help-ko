@@ -1,57 +1,55 @@
 ---
-번역일: 2026-04-07T00:00:00.000Z
-카테고리: 10-마케팅 > 제휴 수수료 지급
+원문: /support/solutions/articles/155000003656-which-payment-gateways-are-supported-for-affiliate-manager-product-sales-
+번역일: 2026-11-07
+카테고리: 10-마케팅
 ---
 
-# 제휴 관리에서 상품 판매에 지원되는 결제 게이트웨이는?
+# 제휴 관리자 상품 판매에서 지원하는 결제 게이트웨이
 
-더 나은 경험을 제공하기 위해, 저희 플랫폼은 상품 판매 및 거래를 위한 4개 주요 결제 게이트웨이 연동을 지원합니다:
+**제휴 관리자**(Affiliate Manager)로 상품을 판매할 때 쓸 수 있는 결제 게이트웨이와, 연동 방법을 안내해요.
 
-* **Stripe**
-* **NMI**
-* Authorize.net
-* PayPal
+하이퍼클래스는 상품 판매와 거래에 쓸 수 있는 주요 결제 게이트웨이 네 가지를 지원해요.
 
-이러한 게이트웨이들은 퍼널이나 웹사이트를 통해 판매되는 상품의 결제를 원활하게 관리할 수 있도록 합니다. 아래 단계에 따라 원하는 결제 게이트웨이를 연동하고 시작해보세요.
+1. Stripe
+2. NMI
+3. Authorize.net
+4. PayPal
 
-![결제 게이트웨이 연동 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033809084/original/7IslFiv16FI4TcpaNIMhCQ_PD-BsgsIYzQ.jpeg?1727705501)
+이 게이트웨이를 연동하면 퍼널이나 웹사이트에서 판매한 상품의 결제를 안정적으로 관리할 수 있어요. 아래 단계에 따라 원하는 결제 게이트웨이를 연동해 보세요.
 
-***
+![결제 게이트웨이 연동 안내 이미지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033809084/original/7IslFiv16FI4TcpaNIMhCQ_PD-BsgsIYzQ.jpeg?1727705501)
 
-## **결제 게이트웨이 연동 방법**
+---
 
-### **1단계: 연동으로 이동**
+## 결제 게이트웨이 연동 절차
 
-시작하려면 결제 모듈 내의 **"Integration(연동)"** 탭으로 이동하세요.
+### 1단계: 연동 메뉴 열기
 
-### **2단계: 선호하는 게이트웨이 선택 및 연동**
+**결제 > 연동**으로 이동하세요.
 
-지원되는 게이트웨이 중에서 선택하세요:
+### 2단계: 사용할 게이트웨이 선택하고 연동하기
 
-* **NMI**: [NMI 연동 방법 알아보기](../../08-결제/how-to-set-up-the-nmi-integration-.md)
-* **Authorize.net**: [Authorize.net 연동 방법 알아보기](../../08-결제/authorize-net-integration-for-processing-payments.md)
-* **Stripe**: [Stripe 연동 설정 과정 따라하기](../../08-결제/기타/stripe-integration.md)
-* **PayPal**: [PayPal 연동 방법 알아보기](../../08-결제/how-to-set-up-a-paypal-integration.md)
+**결제 > 연동**에서 결제 단계에 필요한 결제 제공업체를 연결하세요. 사용할 수 있는 결제 제공업체는 결제를 받는 하이퍼클래스 기능 영역에 따라 달라요.
 
-### **3단계: 기본 게이트웨이 설정**
+{% hint style="info" %}
+**제휴 관리자**의 어트리뷰션 지원 범위는 일반 결제 제공업체 지원 범위와 다를 수 있어요.
+{% endhint %}
 
-게이트웨이를 성공적으로 연동한 후, 거래를 효율적으로 처리하기 위해 선호하는 게이트웨이를 기본값으로 설정할 수 있습니다.
+### 3단계: 판매 채널에 맞게 결제 제공업체 설정하기
 
-***
+결제 제공업체를 연결한 뒤에는 해당 판매 채널에서 어떤 제공업체를 쓸지 설정하세요. 판매 채널별 결제 제공업체 설정은 전체 기본 제공업체 설정보다 우선할 수 있어요.
 
-### **다음 단계: 상품 등록하기**
+---
 
-게이트웨이가 연동되면, 상품을 등록하고 퍼널이나 웹사이트에서 결제를 받을 준비가 완료됩니다. 퍼널이나 웹사이트에서 상품 설정 방법 알아보기
+## 다음 단계: 상품 등록하기
 
-***
+결제 제공업체 설정을 마쳤다면, 판매할 상품을 알맞은 퍼널, 웹사이트, 폼, 설문, 캘린더, 스토어 등 지원하는 판매 화면에 추가하세요. 상품이 **제휴 관리자** 캠페인에 포함된다면 캠페인의 소스, 상품, 트래킹, 커미션 설정도 함께 확인하세요. [퍼널이나 웹사이트에 상품을 설정하는 방법](../../06-사이트/기타/how-to-create-and-add-products-to-a-funnel-website-payments.md)을 참고하세요.
 
-## 다음으로 읽어보세요:
+---
 
-* [제휴 파트너에게 수수료 지급하는 방법](how-to-pay-your-affiliates.md)
-* [PayPal 자동 지급을 사용하여 제휴 파트너 설정 및 수수료 지급하는 방법](how-to-set-up-and-pay-affiliates-using-paypal-auto-payouts.md)
-* [제휴 수수료 지급 FAQ](faqs-for-affiliate-payouts.md)
-* [제휴 파트너의 PayPal 계정을 수수료 지급용으로 추가/연결하는 방법](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/21-%EC%96%B4%ED%95%84%EB%A6%AC%EC%97%90%EC%9D%B4%ED%8A%B8/%EA%B8%B0%ED%83%80/how-to-add-link-affiliate-s-paypal-account-for-payouts.md)
+## 함께 보면 좋은 문서
 
-***
-
-_원문 최종 수정: Mon, 9 Jun, 2025 at 6:36 PM_ _Hyperclass 사용 가이드 — hyperclass.ai_
+- 제휴 파트너에게 수익을 지급하는 방법
+- PayPal 자동 지급으로 제휴 파트너에게 지급하는 방법
+- 제휴 지급 관련 자주 묻는 질문
+- 지급을 위해 제휴 파트너의 PayPal 계정을 추가·연결하는 방법

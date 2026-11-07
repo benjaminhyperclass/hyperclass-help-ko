@@ -1,125 +1,112 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 42-통합 > Google 연동
+원문: /support/solutions/articles/48001222899-how-to-integrate-google-business-profile-gbp-with-highlevel
+번역일: 2026-11-06
+카테고리: 42-통합
 ---
 
-# 구글 마이 비즈니스(GBP)를 Hyperclass와 연동하는 방법
+# Google Business Profile(GBP)과 하이퍼클래스 연동하기
 
-구글 마이 비즈니스(Google Business Profile, GBP)를 연결하면 리뷰, 메시지, 온라인 평판을 CRM 내에서 직접 관리할 수 있습니다. 이 연동을 통해 구글 검색이나 지도에서 오는 고객과의 소통을 놓치지 않으면서 모든 커뮤니케이션과 평판 관리를 한 곳에서 처리할 수 있습니다. 이 가이드에서는 GBP 연동이 무엇인지, 주요 장점, 스크린샷과 함께 설정 단계, 그리고 자주 묻는 질문에 대한 답변을 통해 연동 과정을 자신있게 완료할 수 있도록 도와드립니다.
+Google Business Profile(GBP)을 연동하면 Google 리뷰와 메시지를 하이퍼클래스 안에서 바로 관리할 수 있어요. 이 문서에서는 GBP 연동이 무엇인지, 어떤 점이 좋은지, 설정 방법과 자주 묻는 질문을 안내해요.
 
----
+## Google Business Profile 연동이란?
 
-**목차**
+Google Business Profile(예전 이름은 Google 마이 비즈니스)은 Google 검색과 지도에서 내 비즈니스가 어떻게 보일지 관리하는 Google의 무료 도구예요. GBP를 하이퍼클래스와 연동하면 고객 메시지, 리뷰, 평판 데이터가 하이퍼클래스로 동기화돼요.
 
-- [구글 마이 비즈니스 연동이란?](#구글-마이-비즈니스-연동이란)
-- [구글 마이 비즈니스 연동의 주요 장점](#구글-마이-비즈니스-연동의-주요-장점)
-- [구글 마이 비즈니스 연동 설정 방법](#구글-마이-비즈니스-연동-설정-방법)
-- [자주 묻는 질문](#자주-묻는-질문)
----
+Google에서 들어오는 고객 소통이 모두 하이퍼클래스로 모이기 때문에 더 빠르게 답하고 평판을 관리할 수 있어요. SMS, 이메일, Facebook 같은 다른 채널의 소통도 한곳에서 함께 볼 수 있어요.
 
-# **구글 마이 비즈니스 연동이란?**
+## Google Business Profile 연동의 장점
 
-구글 마이 비즈니스(이전 명칭: Google My Business)는 구글에서 제공하는 무료 도구로, 비즈니스가 구글 검색과 지도에서 어떻게 표시되는지 관리할 수 있게 해줍니다. GBP를 Hyperclass와 연동하면 고객 메시지, 리뷰, 평판 데이터를 CRM으로 동기화할 수 있습니다.
+GBP 연동은 계정을 연결하는 데서 끝나지 않아요. 하이퍼클래스 안에서 바로 확인하고 처리할 수 있어서 잠재 고객, 고객과의 소통 방식이 한층 편해져요.
 
-GBP를 연결하면 모든 구글 고객 상호작용이 CRM으로 유입됩니다. 이를 통해 더 빠르게 응답하고, 평판을 더 효과적으로 관리하며, SMS, 이메일, 페이스북과 같은 다른 채널과 함께 커뮤니케이션을 중앙집중화할 수 있습니다.
+- 리뷰 한곳에서 관리: 새 Google 리뷰가 **대화**로 자동 동기화돼요. 하이퍼클래스를 벗어나지 않고 답글을 남길 수 있어요.
+- 메시지 연동: 통신 채널을 추가해 하이퍼클래스에 연결하면 메시지가 동기화돼요. (Communication and Social channel connection with GBP 문서 참고)
+- 평판 추적: **평판 관리** 탭에서 리뷰를 확인하고 관리할 수 있어요.
+- 노출 강화: 비즈니스 프로필을 꾸준히 활성 상태로 유지하면 고객 참여와 로컬 SEO에 도움이 돼요.
+- 업무 흐름 간소화: Facebook, Instagram, SMS 같은 다른 연동과 함께 Google 소통도 한 화면에서 관리해요.
 
----
+## Google Business Profile 연동 설정 방법
 
-## **구글 마이 비즈니스 연동의 주요 장점**
+설정을 제대로 마치면 Google 리뷰와 메시지가 하이퍼클래스로 안정적으로 들어와요. 아래 순서대로 GBP를 연결하고 확인해 보세요.
 
-GBP를 Hyperclass에 연동하는 것은 단순히 계정을 연결하는 것을 넘어섭니다. CRM 내에서 직접 가시성과 도구를 제공함으로써 비즈니스가 잠재고객 및 고객과 소통하는 방식을 향상시킵니다.
+1. 서브 계정 대시보드의 왼쪽 메뉴에서 아래로 스크롤해 **설정**을 클릭하세요. 연동을 포함한 계정 단위 설정을 여기서 관리해요.
 
-- **중앙집중화된 리뷰 관리**: 새로운 구글 리뷰가 자동으로 대화(Conversations)에 동기화되어, Hyperclass를 벗어나지 않고도 답변할 수 있습니다.
+   ![설정 메뉴 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051830775/original/7hRCj8JFxzVeEdRBkIZkGV5IxlBmEwCnOw.png?1755529688)
 
-- **메시지 연동**: 커뮤니케이션 채널이 추가되고 메시지 동기화를 위해 CRM과 연결됩니다. ([GBP와의 커뮤니케이션 및 소셜 채널 연결](communication-and-social-channel-connection-with-gbp.md)
+2. **설정** 메뉴에서 **연동**을 클릭하세요. 이곳에서 Google Business Profile 같은 외부 도구와 계정을 연결해 동기화할 수 있어요.
 
-- **평판 추적**: 평판(Reputation) 탭에서 리뷰를 모니터링하고 관리합니다.
+   ![연동 메뉴 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051830784/original/62zgLM5mHcbbeUcsKWOtD7jvdXHZ6uMGew.png?1755529701)
 
-- **가시성 증대**: 비즈니스 프로필을 활성 상태로 유지하여 고객 참여를 촉진하고 지역 SEO를 개선합니다.
+3. **Google 계정 연결**을 클릭해 Google 계정으로 로그인하고 접근을 승인하세요. 연결에 성공하면 계정에 **연결됨** 상태가 표시돼요. 연동이 활성화됐다는 뜻이에요.
 
-- **간소화된 워크플로우**: 페이스북, 인스타그램, SMS와 같은 다른 CRM 연동과 함께 구글 상호작용을 관리합니다.
+   ```
+   GBP 위치에 대한 소유자(Owner) 또는 관리자(Manager) 권한이 있는 Google 계정으로 로그인하세요.
+   ```
 
----
+   ![Google 계정 연결 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051831399/original/5A9R3tdb9H0lp5EnRVxQwRL1Qz_pl8YILA.png?1755529933)
 
-## **구글 마이 비즈니스 연동 설정 방법**
+4. **연동** 탭에서 **비즈니스 프로필**을 찾아 **연결**을 클릭하세요. 인증된 비즈니스 프로필을 하이퍼클래스 계정에 연결하는 과정이 시작돼요.
 
-올바른 설정은 구글 리뷰와 메시지가 CRM으로 원활하게 유입되도록 보장합니다. 아래 단계를 따라 GBP를 Hyperclass와 연결하고 확인해보세요.
+   ```
+   진행하려면 비즈니스에 인증된 Google Business Profile이 이미 있어야 해요.
+   ```
 
-### **설정(Settings) 열기**
+   ![비즈니스 프로필 연결 시작](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051830811/original/Qg-TC3w1kyRuxqDeMigF6JK5rNxPaBSCww.png?1755529717)
 
-하위 계정 대시보드의 왼쪽 메뉴에서 아래로 스크롤하여 **설정(Settings)**을 클릭하세요. 여기서 연동을 포함한 모든 계정 수준의 구성을 관리할 수 있습니다.
+5. 목록에서 알맞은 Google Business Profile 위치를 선택하세요. 사용할 수 있는 페이지가 여러 개라면, 연결하기 전에 해당 비즈니스 옆의 체크박스를 선택하세요.
 
-![설정 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051830775/original/7hRCj8JFxzVeEdRBkIZkGV5IxlBmEwCnOw.png?1755529688)
+   ```
+   위치 검색 및 필터링
+   검색 드롭다운으로 아래 기준에 따라 위치를 걸러 볼 수 있어요.
 
-### **연동(Integrations) 접근**
+   - 페이지 이름
+   - 매장 코드
+   - 우편번호
+   - 지역(Locality)
 
-설정 메뉴에서 **연동(Integrations)**을 클릭하세요. 이 섹션에서는 원활한 동기화를 위해 구글 마이 비즈니스를 포함한 외부 도구와 계정을 연결할 수 있습니다.
+   표시되는 위치가 없으면 화면의 안내에 따라, 관리하려는 Google Business Profile 위치에 접근 권한이 있는 Google 계정을 연결하세요.
+   ```
 
-![연동 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051830784/original/62zgLM5mHcbbeUcsKWOtD7jvdXHZ6uMGew.png?1755529701)
+   ![비즈니스 위치 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058387399/original/GrLDeKQXSrrzi-xOLWBTuY7OqmjkRyNpJA.png?1763119180)
 
-### **구글 계정 연결**
+6. Google Business Profile로 걸려 오는 고객 전화를 추적하려면 **GBP 통화 추적**을 켜세요. 통화 데이터를 하이퍼클래스에서 바로 확인할 수 있어요.
 
-구글 계정으로 로그인하고 접근을 승인하세요. 성공적으로 연결되면 계정에 **연결됨(Connected)** 상태가 표시되어 연동이 활성화되었음을 확인할 수 있습니다.
+   ![GBP 통화 추적 켜기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058387579/original/epWBP3S4vfzSwZfKR039z-i5uDyfjRqwbw.png?1763119243)
 
-GBP 위치(들)에 대한 소유자 또는 관리자 권한이 있는 구글 계정으로 로그인하세요.
+7. 비즈니스와 옵션을 선택한 뒤 **연결** 버튼을 클릭하세요. 설정이 마무리되고 Google Business Profile이 하이퍼클래스에 연결돼요.
 
-![구글 계정 연결](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051831399/original/5A9R3tdb9H0lp5EnRVxQwRL1Qz_pl8YILA.png?1755529933)
+   ![연결 완료하기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058387620/original/6Orf7ySXIuUtRmEp6Enx7GU6TRvpSuprmQ.png?1763119262)
 
-### **구글 마이 비즈니스 선택**
+8. 연결 상태를 확인하세요. 연결이 끝나면 맨 위에 Google Business Profile 아이콘과 초록색 **연결됨** 상태, 데이터를 동기화하는 새로고침 버튼이 보여요. 아래쪽 **Connected Pages**(연결된 페이지) 섹션에는 연결된 비즈니스 이름이 표시돼요. 위치를 바꾸려면 **페이지 관리**를, 연동을 제거하려면 **연결 해제**를 사용하세요. 맨 아래에서는 **통화 추적**이 켜져 있는지 꺼져 있는지도 확인할 수 있어요.
 
-연동(Integrations) 탭에서 **Google Business Profile**을 찾아 **연결(Connect)**을 클릭하세요. 이는 인증된 비즈니스 프로필을 Hyperclass 계정에 연결하는 과정을 시작합니다.
+   ![연결 상태 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051921224/original/8L1-JZThQGU4DNInlcsxras3aatmHLNhMw.png?1755615101)
 
-계속 진행하려면 비즈니스에 이미 인증된 구글 마이 비즈니스 프로필이 있어야 합니다.
+## 리뷰 스레드에 페이지 이름이 표시돼요
 
-![GBP 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051830811/original/Qg-TC3w1kyRuxqDeMigF6JK5rNxPaBSCww.png?1755529717)
+Google Business Profile 리뷰가 **대화**에 나타나면, 각 리뷰 스레드에 해당 페이지 이름이 바로 표시돼요. 페이지를 여러 개 연결했을 때 어느 페이지의 리뷰인지 쉽게 알 수 있어요.
 
-### **비즈니스 위치 선택**
+보내는 리뷰 답글에도 페이지 이름이 함께 표시돼요. 답글을 남기기 전에 어느 비즈니스 페이지의 대화인지 빠르게 확인할 수 있어요.
 
-목록에서 적절한 구글 마이 비즈니스 프로필 위치를 선택하세요. 여러 페이지가 있는 경우, 연결을 진행하기 전에 올바른 비즈니스 옆의 체크박스를 선택하세요.
+페이지를 여러 개 연결해 쓸 때 특히 유용해요. 서로 다른 Google Business Profile 페이지의 리뷰가 같은 **대화** 화면에 함께 나타날 수 있기 때문이에요.
 
-![비즈니스 위치 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058387399/original/GrLDeKQXSrrzi-xOLWBTuY7OqmjkRyNpJA.png?1763119180)
+![리뷰 스레드에 표시된 페이지 이름](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155071139784/original/rmwIZ2d_o1A4UmQNX6QP7ZyTx6Zxy3Rsmg.png?1778590340)
 
-### **통화 추적 활성화**
+![리뷰 답글에 표시된 페이지 이름](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155071139839/original/4rD6rvnP6yl8yPb1KLNoXdy5yGLddE1A1w.png?1778590370)
 
-구글 마이 비즈니스를 통해 이루어진 고객 통화를 추적하려면 **GBP 통화 추적(GBP Call Tracking)**을 토글로 활성화하세요. 이를 통해 Hyperclass 내에서 직접 소중한 통화 데이터를 수집할 수 있습니다.
+## 자주 묻는 질문
 
-![통화 추적 활성화](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058387579/original/epWBP3S4vfzSwZfKR039z-i5uDyfjRqwbw.png?1763119243)
+### GBP 위치를 여러 개 하이퍼클래스에 연결할 수 있나요?
+네, 할 수 있어요. 다만 위치마다 연결 절차를 반복해야 해요. 이때 같은 Google 계정이나 다른 Google 계정을 쓸 수 있고, 해당 위치에 대한 권한이 있어야 해요.
+### 연결에 실패하면 어떻게 하나요?
+Google 연결은 완료로 표시되는데 일부 기능이 계속 작동하지 않으면 **설정 > 연동 > Google**에서 권한 누락 경고가 있는지 확인하세요. 경고를 열어 누락된 권한과 영향을 받는 기능을 확인한 다음, **Reconnect**(다시 연결)를 클릭해 Google에서 부족한 권한을 허용하세요.
 
-### **연결 확인**
+### 리뷰와 메시지가 바로 동기화되나요?
+네, 연결하고 나면 리뷰와 메시지가 거의 실시간으로 **대화** 목록에 나타나요.
 
-비즈니스와 환경설정을 선택한 후 **연결(Connect)** 버튼을 클릭하세요. 이것으로 설정이 완료되고 구글 마이 비즈니스가 Hyperclass에 연결됩니다.
+### 나중에 GBP 연결을 해제할 수 있나요?
+네, 할 수 있어요. **설정 > 연동**으로 이동해서 Google Business Profile 옆의 **연결 해제**를 클릭하세요.
 
-![연결 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058387620/original/6Orf7ySXIuUtRmEp6Enx7GU6TRvpSuprmQ.png?1763119262)
+### 연결하기 전에 GBP 인증을 받아야 하나요?
+네, 연동이 작동하려면 Google에서 비즈니스 인증을 먼저 받아야 해요.
 
-### **연결 상태 확인**
-
-연결이 완료되면 상단에 **구글 마이 비즈니스 아이콘**과 함께 **녹색 연결됨(Connected) 상태** 및 데이터 동기화를 위한 새로고침 옵션이 표시됩니다. 하단의 **연결된 페이지(Connected Pages)** 섹션에서는 연결된 특정 비즈니스 이름을 보여줍니다. **페이지 관리(Manage Pages)**를 사용하여 위치를 업데이트하고, **연결 해제(Disconnect)**로 연동을 제거하며, 하단에서 **통화 추적(Call Tracking)**이 활성화 또는 비활성화 되었는지 확인할 수 있습니다.
-
-![연결 상태 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051921224/original/8L1-JZThQGU4DNInlcsxras3aatmHLNhMw.png?1755615101)
-
----
-
-## **자주 묻는 질문**
-
-**Q: Hyperclass에 여러 GBP 위치를 연결할 수 있나요?**
-네, 가능합니다. 하지만 적절한 접근 권한이 있는 동일하거나 다른 구글 계정을 사용하여 각 위치마다 연결 단계를 반복해야 합니다.
-
-**Q: 연결이 실패하면 어떻게 되나요?**
-구글 연결이 연결됨으로 표시되지만 기능이 여전히 작동하지 않는다면, 설정(Settings) → 연동(Integrations) → Google에서 권한 누락 경고를 확인하세요. 경고를 열어 누락된 권한과 영향을 받는 기능을 검토한 후, 재연결(Reconnect)을 클릭하여 구글에서 누락된 권한을 부여하세요.
-
-**Q: 리뷰와 메시지가 즉시 동기화되나요?**
-네, 연결되면 리뷰와 메시지가 대화(Conversations) 스트림에 실시간으로 나타납니다.
-
-**Q: 나중에 GBP 연결을 해제할 수 있나요?**
-네, 가능합니다. 설정(Settings) > 연동(Integrations)으로 가서 구글 마이 비즈니스 옆의 **연결 해제(Disconnect)**를 클릭하면 됩니다.
-
-**Q: 연결하기 전에 인증된 GBP가 필요한가요?**
-네, 연동이 작동하려면 먼저 구글에서 비즈니스 인증을 받아야 합니다.
-
-**Q: GBP를 연결하면 구글 메시징이 자동으로 활성화되나요?**
-구글 메시징은 2024년 7월에 중단되었습니다. 사용자는 이제 GBP 페이지에 왓츠앱 번호와 문자 번호를 연결할 수 있습니다. 이러한 채널이 CRM에 연동되면 메시지가 동기화됩니다.
-
----
-*원문 최종 수정: 2026년 2월 12일*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### GBP를 연결하면 Google 메시징이 자동으로 켜지나요?
+Google 메시징은 2024년 7월에 지원이 중단됐어요. 이제는 WhatsApp 번호와 문자 수신용 번호를 GBP 페이지에 연결할 수 있어요. 이 채널들을 하이퍼클래스에 연동하면 메시지가 동기화돼요.

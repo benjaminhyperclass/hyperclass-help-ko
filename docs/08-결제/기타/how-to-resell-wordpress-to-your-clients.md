@@ -1,108 +1,102 @@
 ---
-
-번역일: 2026-04-09
-카테고리: 99-리커버리
+원문: /support/solutions/articles/48001199647-how-to-resell-wordpress-to-clients
+번역일: 2026-11-06
+카테고리: 08-결제
 ---
 
-# 클라이언트에게 WordPress를 재판매하는 방법
+# 고객에게 WordPress 호스팅 재판매하기
 
-이 가이드에서는 클라이언트에게 WordPress를 재판매하는 방법을 안내드리겠습니다.
+하이퍼클래스의 관리형 WordPress 호스팅을 에이전시가 정한 가격으로 고객에게 판매할 수 있어요. 이 문서에서는 호스팅 플랜 선택, 고객 가격 설정, 고객별 맞춤 오퍼 만들기, 호스팅 배포, 고객 결제 구조를 안내해요. 에이전시 관리자만 쓸 수 있는 기능이에요.
 
-#### [사전 요구사항](#사전-요구사항)
+## WordPress 호스팅 재판매란?
 
-#### [에이전시 Stripe 계정 연결하기](#에이전시-stripe-계정-연결하기)
+에이전시가 하이퍼클래스에서 WordPress 호스팅을 구매한 뒤, 에이전시가 정한 가격으로 고객에게 제공하는 방식이에요. 제공 방법은 두 가지예요. 고객이 에이전시가 설정한 가격으로 직접 호스팅을 구매할 수도 있고, 에이전시가 서브 계정에 호스팅을 직접 배포하고 비용을 부담할 수도 있어요.
 
-#### [요금제 선택하기](#요금제-선택하기)
+하이퍼클래스는 에이전시 상황에 맞게 여러 WordPress 호스팅 플랜을 제공해요. 에이전시 플랜을 고른 다음 고객 가격을 설정하고, 서브 계정별 WordPress 오퍼를 관리하면 돼요.
 
-#### [판매 가격 설정하기](#판매-가격-설정하기)
+## WordPress 호스팅 재판매의 장점
 
-#### [특정 클라이언트를 위한 맞춤 오퍼](#특정-클라이언트를-위한-맞춤-오퍼)
+- 반복 수익: 고객 가격을 에이전시 비용보다 높게 설정하면 WordPress 호스팅에서 반복 수익을 만들 수 있어요.
+- 유연한 가격 설정: 기본 고객 가격을 정해 두고, 특정 고객에게는 별도 가격을 설정할 수 있어요.
+- 다양한 에이전시 플랜: 호스팅 요구 사항에 따라 **표준**, **유틸리티**, **Truly Unlimited**(완전 무제한) 중에서 고를 수 있어요.
+- 한곳에서 관리: 에이전시의 **재판매** 메뉴에서 서브 계정의 WordPress 호스팅 오퍼를 관리해요.
+- 유연한 배포: 고객이 직접 호스팅을 구매하게 하거나, WordPress를 직접 배포하고 비용을 에이전시에 청구할 수 있어요.
 
-#### [특정 클라이언트의 오퍼 비활성화](#특정-클라이언트의-오퍼-비활성화)
+## 사전 준비: 에이전시 Stripe 계정 연결
 
-#### [클라이언트 경험은 어떤가요?](#클라이언트-경험은-어떤가요)
+고객이 재판매 WordPress 호스팅을 구매할 때 하이퍼클래스가 결제를 처리하려면 에이전시 Stripe 계정이 연결되어 있어야 해요. 고객이 직접 결제하는 WordPress 오퍼를 켜기 전에 연결을 마쳐 주세요. 그래야 설정한 고객 가격으로 결제를 받을 수 있어요.
 
-#### [클라이언트가 이 기능을 어떻게 발견하나요?](#클라이언트가-이-기능을-어떻게-발견하나요)
+고객 구매용으로 WordPress 호스팅을 설정하기 전에 에이전시 Stripe 계정이 연결되어 있는지 확인하세요.
 
-#### [클라이언트가 구매를 어떻게 완료하나요?](#클라이언트가-구매를-어떻게-완료하나요)
+고객이 구매하지 않고 에이전시가 WordPress를 직접 배포해 구독료를 내는 경우에는, 에이전시에 등록된 결제 수단으로 결제돼요.
 
-#### [청구는 어떻게 작동하나요?](#청구는-어떻게-작동하나요)
+## WordPress 호스팅 플랜과 에이전시 청구
 
-# 사전 요구사항
+WordPress 호스팅 플랜에 따라 에이전시가 쓸 수 있는 호스팅 용량과 하이퍼클래스에 내는 기본 금액이 달라져요. 고객 가격을 설정하기 전에 알맞은 플랜을 먼저 고르면 비용을 파악하고 고객에게 어떻게 상품을 구성할지 정하기 쉬워요.
 
-## 에이전시 Stripe 계정 연결하기
+1. 하이퍼클래스 에이전시 계정에 로그인하세요.
+2. 왼쪽 메뉴에서 **재판매**(Reselling)를 클릭하세요.
+3. **구독** 아래에서 **WordPress**를 선택하세요.
+4. 사용할 수 있는 WordPress 호스팅 플랜을 확인하세요.
+   - **표준**
+   - **유틸리티**
+   - **Truly Unlimited**
+5. **플랜 상세**를 클릭해 플랜별 포함 내용을 비교하세요.
+6. 에이전시가 원하는 결제 주기에 따라 **매월** 또는 **연간**을 선택하세요.
+7. 에이전시의 호스팅 요구 사항에 맞는 플랜을 선택하거나 업그레이드하세요.
 
-에이전시 Stripe 계정은 클라이언트로부터 WordPress 호스팅 구독 결제를 수집하는 데 사용됩니다. 다음 도움말 문서에 따라 에이전시 Stripe 계정을 연결할 수 있습니다 - Stripe를 에이전시 대시보드에 연결하는 방법
+![WordPress 호스팅 플랜 선택 화면 녹화](https://jumpshare.com/share/3UJKkQS7ngQZdVrqymBg+/GIF+Recording+2026-09-09+at+20.00.33.gif)
 
-# 요금제 선택하기
+## WordPress 재판매 가격 설정
 
-에이전시 좌측 메뉴 → reselling 화면에서 요금제를 선택할 수 있습니다.
+**Subscription Markup**(구독 마크업)은 고객이 서브 계정에서 WordPress 호스팅을 구매할 때 보게 되는 고객 가격을 정하는 설정이에요. 에이전시 비용, 고객 가격, 계산된 수익이 함께 표시돼요. 고객에게 오퍼를 공개하기 전에 마진을 미리 확인할 수 있어요.
 
-현재 모든 사용자를 위한 표준 요금제가 있습니다:
-- 사이트당 월 $10의 구독료를 지불하는 종량제 요금제 + 원하는 금액으로 재판매 가능
+1. **Subscription Markup** 설정을 찾으세요.
+2. **설정 가격**을 확인하세요. 해당 WordPress 호스팅 구독에 대해 에이전시가 내는 금액이에요.
+3. 고객이 낼 금액을 **Customer's Price**(고객 가격)에 입력하세요.
+4. 표시된 **수익**을 확인하세요. 에이전시 비용과 고객 가격의 차이예요.
+5. **변경사항 저장**을 클릭하세요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032101844/original/e77ilId3vYHlvqNGGMTs6eEcEXNumYoF9A.png?1725298037)
+예를 들어 해당 구독의 에이전시 비용이 $10이고 고객 가격을 $15로 설정하면, 차액인 $5가 수익으로 표시돼요.
 
-# 판매 가격 설정하기
+설정한 고객 가격은 대상 고객에게 제공하는 기본 WordPress 호스팅 오퍼가 돼요. 고객에 따라 다른 오퍼가 필요하면 서브 계정별로 가격을 따로 설정할 수도 있어요.
 
-에이전시 좌측 메뉴 → reselling 탭에서 설정하여 에이전시 전체 오퍼를 설정할 수 있습니다.
+![고객 가격과 수익을 설정하는 화면](https://jumpshare.com/share/bjRoZBcXDRE5DSsLBhek+/Screen+Shot+2026-09-09+at+21.04.16.png)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032101848/original/BxZGkToqJ30HYuqj1s8ke1b7qUJeXXhXXA.png?1725298050)
+## 특정 고객에게 맞춤 오퍼 만들기
 
-## 특정 클라이언트를 위한 맞춤 오퍼
+맞춤 오퍼를 쓰면 다른 고객에게 제공하는 기본 가격은 그대로 두고, 서브 계정 하나의 WordPress 호스팅 가격만 바꿀 수 있어요. 고객마다 협의한 가격이 다르거나, 서비스 패키지가 다르거나, 계정별로 따로 정한 조건이 있을 때 유용해요.
 
-특정 클라이언트에게 다른 요금을 제안하고 싶다면, Account List(계정 목록) → 클라이언트 검색 → 세부 정보 보기로 이동하여 설정할 수 있습니다.
+1. **재판매 > 구독 > WordPress**로 이동하세요.
+2. 서브 계정 관리 영역에서 **관리**를 클릭하세요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48164166910/original/UpglKg0Rdhsu9TQKsYOc8qyclB9LzkVMXg.png?1637978687)
+   ![서브 계정 관리 영역](https://jumpshare.com/share/GAtZbKx8Ub6piY2yRXJw+/Screen+Shot+2026-09-10+at+13.32.15.png)
+3. 오퍼를 바꿀 서브 계정에서 점 세 개 아이콘을 클릭한 다음 **Set Markup Price**(마크업 가격 설정)를 선택하세요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032101856/original/h-2rN-mjODnlHvryLExe221GovRWn7XT1Q.png?1725298066)
+   ![점 세 개 메뉴에서 마크업 가격 설정 선택](https://jumpshare.com/share/9u1Nel3dKUbkCzjWagzl+/Screen+Shot+2026-09-10+at+13.41.51.png)
+4. 맞춤 가격 기준으로 표시되는 수익을 확인하세요.
+5. **활성화**를 클릭하면 해당 서브 계정에 오퍼가 적용돼요.
+6. 맞춤 가격은 해당 서브 계정에만 적용돼요. 그래서 고객마다 다른 WordPress 호스팅 가격을 제공할 수 있어요.
 
-## 특정 클라이언트의 오퍼 비활성화
+   ![맞춤 가격 활성화 화면](https://jumpshare.com/share/HXSKzzriGMXjc54zAkOa+/Screen+Shot+2026-09-10+at+13.48.55.png)
 
-WordPress를 제공하고 싶지 않은 특정 클라이언트가 있다면, 에이전시 좌측 메뉴 → List of accounts(계정 목록) → 로케이션 검색 → 세부 정보 보기에서 Offer WordPress 옵션을 끄면 됩니다.
+## 고객이 WordPress 호스팅을 구매하는 방법
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032101886/original/zY8EEtAcqy3bqMBsFURnh6otadnLQpx8hqDi2A.png?1725298082)
+고객이 직접 결제해 활성화하는 방식이에요. 에이전시가 구독을 수동으로 배포하지 않아도 고객이 구매를 마칠 수 있어요. 고객은 자기 서브 계정에 설정된 가격을 보고 자기 카드로 결제해요.
 
-주의사항:
-이 오퍼는 판매가 발생하기 전에만 비활성화할 수 있습니다. 로케이션에서 이미 WordPress를 구매한 후에는 여기서 비활성화할 수 없습니다.
+1. 고객이 서브 계정에서 **사이트 > WordPress**로 이동해요.
+2. 고객이 **Activate WordPress**(WordPress 활성화)를 클릭해요.
+3. 하이퍼클래스가 에이전시가 해당 고객에게 설정한 WordPress 호스팅 가격을 보여 줘요.
+4. 고객이 카드 결제 옵션을 선택하고 필요한 결제 정보를 입력해요.
+5. 고객이 구매를 완료해요.
 
-# 클라이언트 경험은 어떤가요?
+![고객이 WordPress를 활성화하는 과정 녹화](https://jumpshare.com/share/t1G0c7lD1JtU73uyeafv+/GIF+Recording+2026-09-10+at+15.04.13.gif)
 
-## 클라이언트가 이 기능을 어떻게 발견하나요?
+## 결제는 어떻게 이루어지나요?
 
-클라이언트는 3가지 방법으로 WordPress 오퍼를 발견할 수 있습니다:
+고객이 WordPress를 구매하면 시스템에 구독이 2개 만들어져요.
 
-- 상단바 알림 배너 (일회성 알림이며, 한 번 닫으면 영구히 사라집니다)
-- 런치패드(LaunchPad) 항목
-- 로케이션 좌측 메뉴 → Sites(사이트) → WordPress
+1. 고객의 카드와 에이전시의 Stripe 계정 사이의 구독이에요. 에이전시가 고객에게 결제를 받는 용도예요.
+2. 하이퍼클래스와 에이전시의 카드 사이의 구독이에요. 에이전시가 하이퍼클래스에 월 $10을 내는 용도예요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48164168419/original/DU3esj_3qMBsFURnh6otadnLQpx8hqDi2A.png?1637980934)
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48164168461/original/eeBFmrjEWDyFJeiv44PDKktOEHOuYlhxZA.png?1637980993)
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032101828/original/CASFtxsLNlWdVHaOWEnAuu6rPrDOjOqIOg.png?1725298013)
-
-## 클라이언트가 구매를 어떻게 완료하나요?
-
-클라이언트가 기능을 발견한 후, get started 버튼을 클릭하여 WordPress 구매를 진행할 수 있습니다.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032101980/original/HJBV0cDcbR6q-Bs9mPmBMgWTD-sCQApt4Q.png?1725298192)
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48164168974/original/ioCa8XObYXH1XzlFRSNuMwVi32LvxSEqXA.png?1637981536)
-
-클라이언트가 Continue 버튼을 클릭하면 시스템이 구독을 생성하고, 결제를 처리한 후, WordPress 대시보드로 이동합니다.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48164169148/original/2RXYq2K8f25hYsZkLV9zCLn7zSkgBqzYFA.png?1637981751)
-
-# 청구는 어떻게 작동하나요?
-
-클라이언트가 WordPress를 구매하면 시스템에 2개의 구독이 생성됩니다:
-
-- 클라이언트의 카드와 귀하의 Stripe 계정 간의 구독 (클라이언트로부터 결제를 수집하기 위해)
-- Hyperclass과 귀하의 카드 간의 구독 (Hyperclass에 월 $10을 지불하기 위해)
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155019817683/original/WlizuiB6eLgCdpqegzNiMSgwza5hghLpyQ.png?1707287610)
-
----
-*원문 최종 수정: Mon, 2 Sep, 2024 at 12:30 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+![고객 결제와 에이전시 결제의 구독 구조](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155019817683/original/WlizuiB6eLgCdpqegzNiMSgwza5hghLpyQ.png?1707287610)

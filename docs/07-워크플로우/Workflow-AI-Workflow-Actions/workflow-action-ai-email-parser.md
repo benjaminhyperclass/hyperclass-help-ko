@@ -1,199 +1,176 @@
 ---
-원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000008742-workflow-action-ai-email-parser
-번역일: 2026-10-02
-카테고리: 07-워크플로우 > Workflow AI Workflow Actions
+원문: /support/solutions/articles/155000008742-workflow-action-ai-email-parser
+번역일: 2026-11-06
+카테고리: 07-워크플로우
 ---
 
-# 워크플로우 액션 - AI 이메일 파서(AI Email Parser)
+# 워크플로우 액션 — AI Email Parser(AI 이메일 파서)
 
-하이퍼클래스의 **이메일 파서(Email Parser)** 워크플로우 액션(Action)은 AI를 활용해 수신 이메일에서 구조화된 데이터를 추출하여 자동화에 활용할 수 있도록 해줘요. 이 글에서는 액션 설정 방법, 추출할 데이터 정의 방법, 그리고 추출된 값을 이후 워크플로우 단계에서 활용하는 방법을 안내해 드릴게요.
+**Email Parser**(이메일 파서) 워크플로우 액션은 AI로 인바운드 이메일에서 필요한 정보를 뽑아 자동화에 쓸 수 있는 데이터로 바꿔 줘요. 이 문서에서는 액션을 설정하는 방법, 추출할 데이터를 정하는 방법, 추출한 값을 이후 단계에서 활용하는 방법을 안내해요.
 
-**참고:** AI 이메일 파서는 **프리미엄 워크플로우 액션**으로, 실행할 때마다 **추가 요금**이 부과돼요.
+{% hint style="info" %}
+AI Email Parser는 프리미엄 워크플로우 액션이에요. 실행할 때마다 추가 요금이 발생해요.
+{% endhint %}
 
-**목차**
+## AI Email Parser 액션이란?
 
-- [AI 이메일 파서 액션이란?](#What-is-the-AI-Email-Parser-Action?)
-- [AI 이메일 파서 액션의 주요 장점](#Key-Benefits-of-the-AI-Email-Parser-Action)
-- [AI 이메일 파서 액션 사용 방법](#How-To-Use-the-AI-Email-Parser-Action)
-- [자주 묻는 질문](#Frequently-Asked-Questions)
+AI Email Parser는 이메일에 담긴 정보를 워크플로우에서 쓸 수 있는 데이터로 바꿔 주는 액션이에요. 리드 제공업체, 문의 폼, 예약 시스템, 주문 알림 등 외부에서 오는 이메일로 시작하는 업무를 자동화할 때 유용해요.
 
-# **AI 이메일 파서 액션이란?**
+이 액션은 워크플로우를 시작시킨 이메일을 읽고, 사용자가 지정한 정보를 찾아내요. 추출한 값은 이후 워크플로우 액션에서 쓸 수 있어요.
 
-AI 이메일 파서는 이메일에 담긴 정보를 구조화된 워크플로우 데이터로 변환하기 위해 특별히 설계된 워크플로우 액션이에요. 리드 제공업체, 문의 폼, 예약 시스템, 주문 알림 등 외부 소스에서 전달되는 이메일로 시작되는 프로세스를 자동화하기 쉽게 만들어줘요.
+예를 들어 부동산 리드 알림 이메일에는 잠재 고객의 이름, 이메일 주소, 전화번호, 문의 내용이 들어 있을 수 있어요. Email Parser로 이 값들을 추출하면 연락처를 자동으로 만들고 후속 응대까지 이어갈 수 있어요.
 
-이 액션은 워크플로우를 트리거(Trigger)한 이메일을 읽고, 사용자가 지정한 정보를 식별한 다음, 추출된 값을 이후 워크플로우 액션에서 사용할 수 있게 만들어줘요.
+---
 
-예를 들어, 부동산 리드 알림 이메일에는 잠재 고객의 이름, 이메일 주소, 전화번호, 문의 내용이 담겨 있을 수 있어요. 이메일 파서는 이 값들을 추출한 다음 자동으로 연락처(Contacts)를 생성하고 후속 조치를 시작할 수 있어요.
+## AI Email Parser 액션 사용하기
 
-## AI 이메일 파서 액션의 주요 장점
+워크플로우를 제대로 설정해야 알맞은 수신 이메일만 자동화를 시작시키고, Email Parser도 정확한 데이터를 뽑을 만큼 충분한 내용을 받아요. 아래 예시는 부동산 리드 알림 이메일을 받아서, 파싱한 정보로 연락처를 만드는 흐름이에요.
 
-- 전용 이메일 파싱 기능: 더 범용적인 AI 데이터 추출(AI Extract Data) 액션을 별도로 설정할 필요 없이, 수신 이메일에서 구조화된 정보를 바로 추출할 수 있어요.
+**시작하기 전에**
 
-- 사전 제작된 추출 템플릿: 신규 리드(New Lead), 주문 상세(Order Details), 문의(Inquiry), 예약(Appointment) 같은 일반적인 사용 사례로 바로 시작할 수 있어요.
+- 어떤 메일함 또는 이메일 흐름으로 워크플로우를 시작할지 확인하세요.
+- 이메일에서 어떤 값을 추출할지 정하세요.
+- 추출한 값을 어디에 저장하거나 어떻게 쓸지 정하세요.
 
-- 커스텀 데이터 추출: AI가 이메일에서 식별해야 할 추가 정보를 직접 정의할 수 있어요.
+{% hint style="info" %}
+AI Email Parser 액션을 쓰려면 **Inbound Email**(인바운드 이메일) 트리거가 있어야 해요.
+{% endhint %}
 
-- 다양한 데이터 유형: 값을 텍스트(Text), 이메일(Email), 전화번호(Phone Number), 날짜(Date), 날짜 및 시간(Date and Time), URL, 또는 불리언(Boolean) 필드로 추출할 수 있어요.
+### 1단계: 새 워크플로우 만들기
 
-- 재사용 가능한 워크플로우 결과값: 파싱된 값을 연락처 생성(Create Contact), 이메일 보내기(Send Email), SMS 보내기(Send SMS), 기회(Opportunity) 관련 액션, 알림, 담당자 배정 등 다른 워크플로우 단계에서 활용할 수 있어요.
+1. **자동화 > 워크플로우**로 이동하세요.
+2. **+ Create Workflow**(워크플로우 만들기)를 클릭하세요.
+3. **처음부터 시작**을 선택하세요.
+4. 원하는 대로 **Standard Builder**(표준 빌더) 또는 **Advanced Builder**(고급 빌더)를 선택하세요.
 
-- 유연한 이메일 콘텐츠 선택: 워크플로우에 따라 최신 이메일 메시지, 전체 이메일 스레드, 또는 커스텀 값(Custom Value) 중에서 파싱할 대상을 선택할 수 있어요.
+![새 워크플로우를 처음부터 만드는 화면](https://jumpshare.com/share/d2BdXJDO3sLLJUZ0ip3P+/GIF+Recording+2026-07-03+at+18.01.03.gif)
 
-## **AI 이메일 파서 액션 사용 방법**
+### 2단계: 이메일 트리거 추가하기
 
-올바르게 설정된 워크플로우는 정확한 수신 이메일이 자동화를 트리거하고, 이메일 파서가 신뢰할 수 있는 구조화된 데이터를 추출할 수 있을 만큼 충분한 맥락을 받도록 보장해줘요. 아래 예시에서는 수신된 부동산 리드 알림 이메일을 활용해 파싱된 정보로 연락처를 생성하는 과정을 보여드릴게요.
+{% hint style="info" %}
+트리거 동작과 이메일 설정 조건을 자세히 알고 싶다면 [워크플로우 트리거 - Inbound Email](../workflow-trigger-inbound-email.md) 문서를 참고하세요.
+{% endhint %}
 
-시작하기 전에 확인할 사항:
+1. **+ Add New Trigger**(새 트리거 추가)를 클릭하세요.
+2. **Inbound Email**을 선택하세요.
+3. 감시하려는 메일함이나 이메일 패턴에 맞게 트리거를 설정하세요.
+4. 필요에 따라 아래와 같은 필터를 사용하세요.
 
-- 어떤 메일함 또는 이메일 흐름이 워크플로우를 트리거해야 하는지 확인하세요.
-- 이메일에서 추출하고 싶은 값을 결정하세요.
-- 추출된 값을 어디에 저장하거나 어떻게 사용할지 결정하세요.
+   - **Email Sent To Mailbox**(이메일을 받은 메일함)
+   - **Email Sent From**(이메일을 보낸 사람)
+   - **Subject**(제목)
+   - **Body Plain Text**(본문 일반 텍스트)
+   - **Has Attachments**(첨부파일 있음)
+5. **Advanced Settings**(고급 설정)에서 새 이메일 대화일 때만 워크플로우를 실행할지 정하세요.
+6. 예를 들어 리드 알림 이메일에 "New Buyer Lead" 같은 문구가 항상 들어 있다면, **Body Plain Text > Contains**(포함)를 설정하고 그 문구를 입력하면 돼요. 알림이 늘 같은 발신자에게서 온다면 발신자 이메일 주소로도 걸러 낼 수 있어요.
 
-참고: AI 이메일 파서 액션을 사용하려면 수신 이메일(Inbound Email) 트리거가 반드시 있어야 해요.
+   기존 대화에 달린 답장 때문에 워크플로우가 다시 실행되지 않게 하려면 **Trigger Only for New Email Conversations**(새 이메일 대화에서만 트리거)를 켜세요. 이 옵션을 켜면 새 대화를 시작하는 첫 이메일만 워크플로우를 시작시켜요.
+7. **Save Trigger**(트리거 저장)를 클릭하세요.
 
-### 1단계: 새 워크플로우 생성
+![인바운드 이메일 트리거를 설정하는 화면](https://jumpshare.com/share/iNckpBfLhtAz9ZAIGauw+/GIF+Recording+2026-07-03+at+18.10.17.gif)
 
-- **자동화(Automation) > 워크플로우(Workflows)**로 이동하세요.
-- **+ 워크플로우 생성(+ Create Workflow)**을 클릭하세요.
-- **처음부터 시작(Start from Scratch)**을 선택하세요.
-- 원하는 대로 표준 빌더(Standard Builder) 또는 고급 빌더(Advanced Builder)를 선택하세요.
+### 3단계: Email Parser 액션 추가하기
 
-![](https://jumpshare.com/share/d2BdXJDO3sLLJUZ0ip3P+/GIF+Recording+2026-07-03+at+18.01.03.gif)
+1. 트리거 아래의 **+** 아이콘을 클릭하세요.
+2. **Email Parser**를 검색하세요.
+3. **AI Actions**(AI 액션)에서 **Email Parser**를 선택하세요.
 
-### 2단계: 이메일 트리거 추가
+![Email Parser 액션을 추가하는 화면](https://jumpshare.com/share/RlbXuLXYtyz1f603vlRI+/GIF+Recording+2026-09-14+at+16.56.43.gif)
 
-참고: 트리거의 전체 동작 방식과 이메일 설정 요건에 대해서는 [워크플로우 트리거 - 수신 이메일(Inbound Email)](https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000007650-workflow-trigger-inbound-email) 문서를 참고하세요.
+### 4단계: 액션 설정하기
 
-- **+ 새 트리거 추가(+ Add New Trigger)**를 클릭하세요.
-- **수신 이메일(Inbound Email)**을 선택하세요.
-- 모니터링하고 싶은 메일함이나 이메일 패턴에 맞춰 트리거를 설정하세요.
-- 다음과 같은 필터를 사용할 수 있어요:
+1. 필요하면 **Action Name**(액션 이름)을 입력하거나 수정하세요.
+2. **Email Content**(이메일 콘텐츠)에서 AI가 분석할 내용을 선택하세요.
 
-수신 메일함(Email Sent To Mailbox)
-- 발신자(Email Sent From)
-- 제목(Subject)
-- 본문 일반 텍스트(Body Plain Text)
-- 첨부파일 유무(Has Attachments)
+   AI는 이 워크플로우를 시작시킨 이메일을 읽어요. **Body** 또는 **Full Body**를 선택하면 제목도 기본으로 함께 읽어요. **Custom Value**(커스텀 값)를 선택하면 AI가 이메일 대신 그 값을 읽어요. 이 값은 이메일이 아닐 수도 있어요.
 
-- 고급 설정(Advanced Settings)에서 워크플로우가 새로운 이메일 대화에서만 실행되게 할지 여부를 선택하세요.
+   - **Body**(본문): 가장 최근 이메일 메시지를 분석해요.
+   - **Full Body**(전체 본문): 답장 스레드까지 함께 분석해야 할 때 선택해요.
+3. **About This Email**(이메일 설명) 필드에 AI가 분석할 이메일이 어떤 종류인지 알려 주세요.
 
-- 예를 들어, 리드 알림 이메일에 "New Buyer Lead"와 같은 문구가 항상 포함되어 있다면, 본문 일반 텍스트(Body Plain Text) > 포함(Contains) 조건을 설정하고 해당 문구를 입력할 수 있어요. 알림이 항상 같은 발신자에게서 온다면 발신자 이메일 주소로도 필터링할 수 있어요.
+   예: `New buyer lead notification from a real estate lead provider.`
 
-기존 스레드에 대한 답장이 워크플로우를 다시 트리거하지 않도록 하려면, **새 이메일 대화에서만 트리거(Trigger Only for New Email Conversations)**를 활성화하세요. 이 옵션을 활성화하면 새로운 대화를 시작하는 첫 번째 이메일만 워크플로우를 트리거해요.
+   설명은 짧고 구체적으로 쓰세요. 그래야 AI가 추출할 때 참고할 맥락이 분명해져요.
 
-- **트리거 저장(Save Trigger)**을 클릭하세요.
+![Email Parser 액션을 설정하는 화면](https://jumpshare.com/share/ZeU98BFW0hS5Y7SNBjBG+/GIF+Recording+2026-09-14+at+17.00.40.gif)
 
-![](https://jumpshare.com/share/iNckpBfLhtAz9ZAIGauw+/GIF+Recording+2026-07-03+at+18.10.17.gif)
+### 5단계: 추출할 필드 설정하기
 
-### **3단계:** 이메일 파서 액션 추가
+1. **Fields to Extract**(추출할 필드)에서 미리 만들어 둔 템플릿 중 하나를 선택하세요. **New Lead**(새 리드), **Order Details**(주문 상세), **Inquiry**(문의), **Appointment**(예약)가 있어요.
+2. 이 예시에서는 **New Lead**를 사용해요.
+3. 추출할 정보를 설정하세요. 예를 들면 다음과 같아요.
 
-- 트리거 아래의 **+** 아이콘을 클릭하세요.
-- **Email Parser**를 검색하세요.
-- **AI 액션(AI Actions)** 카테고리에서 **Email Parser**를 선택하세요.
+   - Name
+   - Email
+   - Phone
+   - Message
+4. 각 필드에 알맞은 데이터 유형을 선택하세요.
+5. 필드에 어떤 정보가 들어가야 하는지 짧게 설명을 입력하세요.
+6. 필드가 더 필요하면 **Add Data**(데이터 추가)를 클릭하세요.
+7. 설정이 끝나면 **Save Action**(액션 저장)을 클릭하세요.
 
-![](https://jumpshare.com/share/RlbXuLXYtyz1f603vlRI+/GIF+Recording+2026-09-14+at+16.56.43.gif)
+Inbound Email 트리거 조건에 맞는 이메일이 워크플로우에 들어오면, Email Parser가 선택한 내용을 분석해서 설정한 값을 돌려줘요.
 
-### **4단계:** 액션 설정
+![추출할 필드를 설정하는 화면](https://jumpshare.com/share/ZicqXlj8xhawE07iH22Q+/GIF+Recording+2026-09-14+at+17.06.22.gif)
 
-- 필요한 경우 **액션 이름(Action Name)**을 입력하거나 수정하세요.
-- **이메일 콘텐츠(Email Content)**에서 AI가 파싱해야 할 콘텐츠를 선택하세요:
+### 6단계: 추출한 값을 저장하거나 쓸 액션 추가하기
 
-**AI는 이 워크플로우를 트리거한 이메일을 읽어요. 본문(Body) 또는 전체 본문(Full Body)을 선택하면 제목(subject line)이 기본으로 포함돼요. '커스텀 값(Custom Value)'을 선택하면 AI는 대신 해당 값을 읽는데, 이 경우 이메일이 아닐 수도 있어요.**
+{% hint style="warning" %}
+AI Email Parser는 추출한 값을 스스로 저장하지 않아요. 추출한 값은 이후 액션의 커스텀 값 선택기를 통해서만 워크플로우 안에서 쓸 수 있어요. **AI Extract Data**(AI 데이터 추출) 액션 뒤에 다른 액션을 추가하지 않으면, 추출한 데이터는 연락처, 기회, 그 밖의 어떤 레코드에도 저장되지 않아요.
+{% endhint %}
 
-본문(Body): 최신 이메일 메시지만 파싱해요.
+1. 다음 액션으로는 보통 아래와 같은 것을 사용해요.
 
-- 전체 본문(Full Body): 답장 스레드까지 함께 분석해야 할 때 사용해요.
+   - **Update Contact Field**(연락처 필드 업데이트)
+   - **Create Opportunity**(기회 만들기)
+   - **Update Opportunity**(기회 업데이트)
+   - **Internal Notification**(내부 알림)
+   - **Send Email/SMS**(이메일/SMS 보내기)
+2. **Create Opportunity** 또는 **Update Opportunity**에서는 커스텀 값 선택기로, AI가 추출한 값(이름, 예산, 서비스 유형, 작업 내용 등)을 알맞은 기회 필드에 연결하세요.
 
-- **이 이메일에 대한 설명(About This Email)** 필드를 사용해 AI에게 분석 중인 이메일이 어떤 유형인지 알려주세요.
+![추출한 값을 기회 필드에 연결하는 화면](https://jumpshare.com/share/gXbOS8PzzaVzmbEvfggw+/GIF+Recording+2026-10-08+at+20.51.20.gif)
 
-예시: 부동산 리드 제공업체로부터 온 신규 구매자 리드 알림
+### 7단계: 후속 액션 추가하기
 
-AI가 추출 작업에 유용한 맥락을 가질 수 있도록 설명은 짧고 구체적으로 작성하세요.
+이메일을 파싱해서 워크플로우에서 정보를 쓸 수 있게 되면, 업무 방식에 맞게 자동화를 이어 갈 수 있어요.
 
-![](https://jumpshare.com/share/ZeU98BFW0hS5Y7SNBjBG+/GIF+Recording+2026-09-14+at+17.00.40.gif)
-
-### **5단계:** 추출할 필드 설정
-
-- **추출할 필드(Fields to Extract)**에서 사전 제작된 템플릿을 선택하세요: 신규 리드(New Lead), 주문 상세(Order Details), 문의(Inquiry), 예약(Appointment).
-
-- 이 예시에서는 신규 리드(New Lead)를 사용할게요.
-
-- 추출해야 할 정보를 설정하세요. 예를 들면:
-
-이름(Name)
-- 이메일(Email)
-- 전화번호(Phone)
-- 메시지(Message)
-
-- 각 필드에 맞는 올바른 데이터 유형을 선택하세요.
-
-- 해당 필드에 어떤 정보가 담겨야 하는지 설명하는 짧은 문구를 추가하세요.
-
-- 추가 필드가 필요하면 **데이터 추가(Add Data)**를 클릭하세요.
-
-- 완료되면 **액션 저장(Save Action)**을 클릭하세요.
-
-수신 이메일(Inbound Email) 트리거 조건과 일치하는 이메일이 워크플로우에 들어오면, 이메일 파서는 선택된 콘텐츠를 분석하여 설정된 값을 반환해요.
-
-![](https://jumpshare.com/share/ZicqXlj8xhawE07iH22Q+/GIF+Recording+2026-09-14+at+17.06.22.gif)
-
-### 6단계: 추출된 값을 저장하거나 사용할 후속 액션 추가
-
-중요: AI 이메일 파서는 **추출된 값을 자체적으로 영구 저장하지 않아요**. 추출된 **값은 이후 액션의 커스텀 값 선택기(custom value picker)를 통해 워크플로우 내에서만 사용할 수 있어요**. AI 데이터 추출 이후에 다른 액션을 추가하지 않으면, 추출된 데이터는 연락처, 기회(Opportunity), 또는 다른 어떤 레코드에도 저장되지 않아요.
-
-- 일반적으로 많이 사용하는 다음 액션들:
-
-연락처 생성(Create Contact)
-- 연락처 필드 업데이트(Update Contact Field)
-- 기회 생성(Create Opportunity)
-- 기회 생성/업데이트(Create/Update Opportunity)
-- 내부 알림(Internal Notification)
-- 이메일/SMS 보내기(Send Email/SMS)
-
-- 연락처 생성(Create Contact) 또는 **연락처 필드 업데이트(Update Contact Field)**에서 각 대상 필드를 커스텀 값 선택기에 있는 **AI 데이터 추출(AI Extract Data)**의 해당 값과 매핑하세요.
-
-- 기회를 생성하거나 업데이트하고 싶다면, 예산, 서비스 유형, 작업 상세 내용 등 추출된 관련 값을 올바른 기회 필드에 매핑하세요.
-
-![](https://jumpshare.com/share/Ekk8smrN1hKfCgfGLoJm+/GIF+Recording+2026-09-14+at+17.10.06.gif)
-
-### 7단계: 후속 액션 추가
-
-이메일이 파싱되고 정보가 워크플로우 안에서 사용 가능해지면, 비즈니스 프로세스에 맞춰 자동화를 계속 진행할 수 있어요.
-
-예시:
+예를 들면 다음과 같아요.
 
 - 이메일 보내기
 - SMS 보내기
-- 기회 생성 또는 업데이트
 - 내부 알림 보내기
-- 리드를 담당자에게 배정
-- 다른 워크플로우 트리거
-- 다른 자동 후속 프로세스 시작
+- 리드를 사용자에게 배정하기
+- 다른 워크플로우 실행하기
+- 다른 자동 후속 프로세스 시작하기
 
-예를 들어, 연락처를 생성한 직후 **이메일 보내기(Send Email)** 액션을 추가해서 문의에 대한 접수 확인을 바로 보낼 수 있어요.
+예를 들어 연락처를 만든 직후에 [**Send Email**](../Communication-Workflow-Actions/workflow-action-send-email.md) 액션을 추가하면 문의를 받았다는 안내 메일을 바로 보낼 수 있어요.
 
-![](https://jumpshare.com/share/bfzq1uIDOawkZ6JCvJuG+/Screen+Shot+2026-09-14+at+17.16.38.png)
-
-## **자주 묻는 질문**
-
-**Q: AI 이메일 파서(AI Email Parser)와 AI 데이터 추출(AI Extract Data)의 차이는 무엇인가요?**
-**AI 이메일 파서**는 이메일에서 구조화된 정보를 추출하는 데 특화되어 설계된 반면, **AI 데이터 추출**은 이메일, SMS 콘텐츠, 웹훅(Webhook) 페이로드, AI 결과값 등 다양한 텍스트 기반 입력에서 데이터를 추출할 수 있는 더 범용적인 액션이에요. 워크플로우가 이메일 파싱에만 특화되어 있다면 이메일 파서를 사용하고, 다양한 유형의 콘텐츠에 걸쳐 더 유연하게 사용하고 싶다면 AI 데이터 추출을 사용하세요.
-
-Q: 이메일 파서를 사용하려면 수신 이메일(Inbound Email) 트리거가 꼭 필요한가요?
-이 글에서 설명한 표준 이메일 파싱 워크플로우의 경우, 수신 이메일 트리거가 이메일 파서가 분석할 이메일을 제공해요. 커스텀 값(Custom Value) 옵션을 선택한 경우에는 이메일 파서가 해당 값을 분석할 수도 있어요.
-
-Q: 본문(Body)과 전체 본문(Full Body) 중 어떤 것을 사용해야 하나요?
-필요한 정보가 최신 메시지에 포함되어 있다면 **본문(Body)**을 사용하세요. 이메일 스레드의 다른 부분에 있는 정보도 분석에 포함되어야 한다면 **전체 본문(Full Body)**을 사용하세요.
-
-Q: 사전 제작된 템플릿에 포함되지 않은 필드도 추출할 수 있나요?
-네, 가능해요. 추가 데이터 필드를 더하고, AI가 추출할 정보의 데이터 유형과 설명을 직접 정의할 수 있어요.
-
-Q: 추출된 값을 이후의 워크플로우 액션에서 사용할 수 있나요?
-네, 가능해요. 이메일 파서의 결과값은 커스텀 값 선택기를 통해 사용할 수 있으며, 이후 워크플로우 액션에 매핑할 수 있어요.
-
-Q: 같은 이메일 스레드의 답장이 워크플로우를 반복해서 시작하지 않게 하려면 어떻게 하나요?
-수신 이메일(Inbound Email) 트리거에서 **새 이메일 대화에서만 트리거(Trigger Only for New Email Conversations)**를 활성화하세요. 이 옵션을 활성화하면 기존 이메일 대화에 대한 답장은 트리거에서 무시돼요.
+![후속 액션으로 이메일 보내기를 추가한 화면](https://jumpshare.com/share/OwGMNcYfWYoJXjNOi2m2+/Screen+Shot+2026-10-08+at+20.53.48.png)
 
 ---
-*원문 최종 수정: 2026-09-14*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+
+## 자주 묻는 질문
+
+### AI Email Parser와 AI Extract Data는 어떻게 다른가요?
+
+**AI Email Parser**는 이메일에서 정보를 뽑는 데 맞춰 만든 액션이에요. [**AI Extract Data**](workflow-action-ai-extract-data.md)는 더 범용적인 액션으로, 이메일뿐 아니라 SMS 내용, 웹훅 페이로드, AI 출력, 그 밖의 텍스트 기반 입력에서도 데이터를 추출할 수 있어요. 이메일 파싱이 목적이라면 Email Parser를, 여러 종류의 콘텐츠를 유연하게 다뤄야 한다면 AI Extract Data를 사용하세요.
+
+### Email Parser를 쓰려면 Inbound Email 트리거가 꼭 필요한가요?
+
+이 문서에서 설명한 일반적인 이메일 파싱 워크플로우에서는 Inbound Email 트리거가 Email Parser가 분석할 이메일을 전달해 줘요. **Custom Value** 옵션을 선택하면 Email Parser가 커스텀 값을 분석할 수도 있어요.
+
+### Body와 Full Body 중 무엇을 선택해야 하나요?
+
+필요한 정보가 가장 최근 메시지에 있다면 **Body**를 선택하세요. 이메일 스레드의 다른 곳에 있는 정보까지 분석해야 한다면 **Full Body**를 선택하세요.
+
+### 미리 만들어 둔 템플릿에 없는 필드도 추출할 수 있나요?
+
+네, 할 수 있어요. 데이터 필드를 추가하고, AI가 추출할 정보의 데이터 유형과 설명을 직접 정하면 돼요.
+
+### 추출한 값을 이후 워크플로우 액션에서 쓸 수 있나요?
+
+네, 쓸 수 있어요. Email Parser의 결과값은 커스텀 값 선택기에서 고를 수 있고, 이후 액션에 연결해서 사용할 수 있어요.
+
+### 같은 이메일 스레드의 답장 때문에 워크플로우가 계속 시작되지 않게 하려면 어떻게 하나요?
+
+Inbound Email 트리거에서 **Trigger Only for New Email Conversations**를 켜세요. 이 옵션을 켜면 기존 이메일 대화에 달린 답장은 트리거가 무시해요.

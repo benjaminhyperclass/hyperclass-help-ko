@@ -1,142 +1,145 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 31-리셀링 > WhatsApp
+원문: /support/solutions/articles/155000001637-whatsapp-messaging-limits
+번역일: 2026-11-06
+카테고리: 31-리셀링
 ---
 
-# WhatsApp - 메시지 한도
+# WhatsApp 메시징 한도 이해하기
 
-메시지 한도는 비즈니스 전화번호가 24시간 이동 기간 동안 개시할 수 있는 비즈니스 시작 대화(마케팅, 유틸리티 또는 인증 템플릿을 WhatsApp 사용자에게 보낸 결과로 시작되는 대화)의 최대 수입니다.
+WhatsApp 메시징 한도가 어떻게 적용되는지, 한도를 어떻게 늘리는지, 메시지 품질을 높게 유지하는 방법은 무엇인지 안내해요.
 
-비즈니스 전화번호는 처음에 24시간 이동 기간 동안 250개의 비즈니스 시작 대화로 제한되지만, 이 한도는 증가시킬 수 있습니다.
+메시징 한도는 고객 서비스 창 밖에서, 24시간 이동 기간 안에 비즈니스가 메시지를 보낼 수 있는 고유한 WhatsApp 사용자 전화번호의 최대 개수예요.
 
-## WhatsApp 메시지 한도 이해하기
+메시징 한도는 **비즈니스 포트폴리오** 단위로 계산하고 설정해요. 같은 포트폴리오에 속한 모든 비즈니스 전화번호가 한도를 함께 써요. 그래서 포트폴리오에 비즈니스 전화번호가 여러 개라면, 한 번호가 해당 기간의 메시징 용량을 모두 쓸 수도 있어요.
 
-WhatsApp 메시지 한도는 비즈니스 전화번호가 24시간 기간 내에 개시할 수 있는 비즈니스 시작 대화의 최대 개수를 의미합니다. 이러한 대화는 일반적으로 WhatsApp 사용자에게 마케팅, 유틸리티 또는 인증 템플릿을 보내는 것으로 시작됩니다. Meta는 이러한 한도가 어떻게 작동하는지와 효과적으로 활용하는 방법을 자세히 설명합니다.
+비즈니스 포트폴리오의 처음 한도는 24시간 이동 기간 동안 메시지 250건이에요. 이 한도는 늘릴 수 있어요.
 
----
+```
+하이퍼클래스는 WhatsApp 메시징 한도를 비즈니스 포트폴리오 단위로 표시합니다. 같은 비즈니스 포트폴리오에 WhatsApp 전화번호가 여러 개 있으면, 번호마다 따로 한도를 받지 않고 표시된 메시징 한도를 함께 사용합니다.
+```
 
-## 초기 WhatsApp 메시지 한도
+## WhatsApp 메시징 한도란?
 
-처음에 비즈니스 전화번호는 24시간 기간 내에 250개의 비즈니스 시작 대화로 제한됩니다. 하지만 이 한도는 조정 가능하며 더 많은 볼륨을 수용하도록 증가시킬 수 있습니다. 증가 단계는 다음과 같습니다:
+WhatsApp 메시징 한도는 고객 서비스 창 밖에서, 24시간 이동 기간 안에 비즈니스가 메시지를 보낼 수 있는 고유한 WhatsApp 사용자 전화번호의 최대 개수예요. 이 한도는 비즈니스가 먼저 시작하는 대화에 적용돼요. 마케팅, 유틸리티, 인증 템플릿으로 보내는 메시지가 여기에 해당해요.
 
-- 1,000개 비즈니스 시작 대화
-- 10,000개 비즈니스 시작 대화
-- 100,000개 비즈니스 시작 대화
-- 무제한 비즈니스 시작 대화
+한도는 전화번호별이 아니라 비즈니스 포트폴리오 단위로 정해져요. 포트폴리오 안의 모든 비즈니스 전화번호가 같은 한도를 나눠 쓰기 때문에, 한 번호를 많이 쓰면 같은 포트폴리오의 다른 번호가 쓸 수 있는 용량이 줄어들 수 있어요.
 
-![메시지 한도 증가 단계](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155024898508/original/SpAE7ByTb9YnYEJoFN4xiaEHueNnUH4tKg.png?1713856803)
+## 처음 적용되는 WhatsApp 메시징 한도
 
----
+새로 만든 비즈니스 포트폴리오의 메시징 한도는 250건으로 시작해요. 더 많은 양을 보내야 하면 한도를 늘릴 수 있어요. 단계는 다음과 같아요.
 
-## WhatsApp 메시지 한도 증가시키기
+- 250건: 새 비즈니스 포트폴리오의 기본값
+- 2,000건: 확장 경로를 완료하면 적용
+- 10,000건: 자동 확장으로 적용
+- 100,000건: 자동 확장으로 적용
+- 무제한: 자동 확장으로 적용
 
-비즈니스 전화번호가 증가 자격을 얻으려면 [연결된 상태](https://developers.facebook.com/docs/whatsapp/cloud-api/phone-numbers#phone-number-status)여야 하며, 비즈니스 전화번호가 [낮은 품질](https://www.facebook.com/business/help/896873687365001) 등급을 가지고 있다면 품질 등급이 개선될 때까지 250개 비즈니스 시작 대화로 계속 제한될 수 있습니다.
+![WhatsApp 메시징 한도 단계](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155079457680/original/ADWlmIkNr-vI6NYSCD6i7Gf6EhrMMqnvfw.png?1787837069)
 
-### 비즈니스 인증
+{% hint style="info" %}
+메시징 한도는 포트폴리오 안의 모든 비즈니스 전화번호가 함께 써요. 메시지를 많이 보내는 번호 하나가 포트폴리오의 하루 한도를 전부 쓸 수도 있어요.
+{% endhint %}
 
-[비즈니스 인증](https://www.facebook.com/business/help/2058515294227817)을 위해 비즈니스를 제출하세요. 비즈니스가 승인되면 Meta는 [메시징 품질](https://developers.facebook.com/docs/whatsapp/messaging-limits/#messaging-quality)을 분석하여 메시징 활동이 메시징 한도 증가를 보장하는지 결정합니다. 이 분석을 바탕으로 Meta는 메시징 한도 증가를 [승인](https://developers.facebook.com/docs/whatsapp/messaging-limits/#increase-approvals)하거나 [거부](https://developers.facebook.com/docs/whatsapp/messaging-limits/#increase-denials)합니다.
+## WhatsApp 메시징 한도 늘리기
 
-![비즈니스 인증 프로세스](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155024898924/original/flaijVvBm7jbgNfIieDYCcLSGZrnFIccXQ.png?1713857256)
+아래 확장 경로 중 하나를 완료하면 메시징 한도를 2,000건으로 늘릴 수 있어요. 그 뒤에는 자동 확장 기준을 충족하면 Meta가 한도를 자동으로 더 늘려 줘요.
 
-### 신원 인증
+### 확장 경로
 
-비즈니스 인증을 제출하고 승인을 받으면 [신원 인증](https://www.facebook.com/business/help/587323819101032)을 요청받을 수 있습니다.
+다음 중 하나를 완료하면 한도를 2,000건으로 늘릴 수 있는 자격이 생겨요.
 
-신원 인증을 요청받으면 [WhatsApp Manager](https://business.facebook.com/wa/manage/home/) > Overview > Limits 패널에 다음과 같은 알림이 표시됩니다:
+- Meta의 비즈니스 인증 절차로 [비즈니스를 인증](https://www.facebook.com/business/help/2058515294227817)하세요.
+- 솔루션 파트너를 통해 가입했다면, 솔루션 제공업체가 대신 비즈니스를 인증하게 하세요.
+- 30일 이동 기간 안에, [품질 평가가 높은](https://developers.facebook.com/documentation/business-messaging/whatsapp/templates/template-quality) 템플릿으로 고객 서비스 창 밖에서 고유한 WhatsApp 사용자 전화번호에 전달된 메시지를 2,000건 보내세요.
 
-![신원 인증 요청 알림](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155024896857/original/Wx2M0OQXVaph-NQfMHg-_8C_KrDjEvQAUA.png?1713854985)
+이 중 하나를 완료하면 Meta가 메시지 품질을 분석해 번호가 한도 증가 대상인지 판단해요.
 
-신원 인증을 완료하고 신원이 확인되면 Meta는 메시징 한도 증가를 [승인](https://developers.facebook.com/docs/whatsapp/messaging-limits/#increase-approvals)합니다. 신원이 확인되지 않으면 Meta는 메시징 한도 증가를 [거부](https://developers.facebook.com/docs/whatsapp/messaging-limits/#increase-denials)하며, [WhatsApp Manager](https://business.facebook.com/wa/manage/home/) > Overview > Limits 패널에 다음 알림 중 하나가 표시됩니다:
+### 승인된 경우
 
-![신원 인증 거부 알림 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155024896906/original/gcYX6j1iQK0I1RQG4dRaD6H_F3uGtFRqLQ.png?1713855043)
+요청이 승인되면 Meta가 비즈니스 전화번호의 메시징 한도를 바로 2,000건으로 늘리고, 이메일과 개발자 알림으로 알려 줘요. 새 한도 값이 담긴 `business_capability_update` 웹훅도 함께 발생해요.
 
-![신원 인증 거부 알림 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155024896918/original/cAbM9SCQmwMZvkEJI2O2ZhC9mHHein4dFA.png?1713855050)
+2,000건으로 승인된 뒤에는 한도가 자동으로 계속 늘어날 수 있어요. 아래 [자동 확장](#자동-확장)을 확인하세요.
 
-### 30일 동안 1,000개 대화 개시
+### 거부된 경우
 
-[높은 품질 등급](https://www.facebook.com/business/help/896873687365001)의 템플릿을 사용하여 30일 이동 기간 동안 1,000개 이상의 비즈니스 시작 대화를 개시하세요. 이 임계값에 도달하면 Meta는 [메시징 품질](https://developers.facebook.com/docs/whatsapp/messaging-limits/#messaging-quality)을 분석하여 메시징 활동이 메시징 한도 증가를 보장하는지 결정합니다. 이 분석을 바탕으로 Meta는 증가를 [승인](https://developers.facebook.com/docs/whatsapp/messaging-limits/#increase-approvals)하거나 [거부](https://developers.facebook.com/docs/whatsapp/messaging-limits/#increase-denials)합니다.
+요청이 거부되면 메시징 한도는 현재 수준 그대로예요. Meta가 이메일과 개발자 알림으로 알려 줘요. 이때 다른 어떤 경로를 선택할 수 있는지 알려 주는 `account_alerts` 웹훅이 발생해요.
 
-### 고품질 메시지 발송
+`INCREASED_CAPABILITIES_ELIGIBILITY_DEFERRED`
 
-비즈니스 또는 신원 인증이 거부된 경우, 고품질 메시지를 보내고 있는지 확인하세요. Meta는 메시징 활동과 품질을 정기적으로 재평가하며, 이 분석을 바탕으로 증가를 [승인](https://developers.facebook.com/docs/whatsapp/messaging-limits/#increase-approvals)할 수 있습니다.
+30일 안에 품질이 높은 템플릿으로 고객 서비스 창 밖에서 고유한 WhatsApp 사용자에게 전달된 메시지를 2,000건 보내세요.
 
-고품질 메시지를 보내기 위한 지침은 다음과 같습니다:
+`INCREASED_CAPABILITIES_ELIGIBILITY_FAILED`
 
-- 메시지가 [WhatsApp 비즈니스 메시징 정책](https://business.whatsapp.com/policy?fbclid=IwZXh0bgNhZW0CMTEAAR32s0sx7BV-s-H2qLRdlqPXowSfdAkcyu451sDhd3zojoWkvitoHdYC2TE_aem_AfXsqBIoXPdFha8AAq55fELrm7Un-QpMMQ17WTmh0CwRmBaXtDvBlWzZawuXFlsEjajqzvRZCFVKtKSCpHIdgdkX)을 준수하는지 확인하세요.
-- 비즈니스에서 메시지 수신에 동의한 사용자에게만 메시지를 보내세요.
-- 메시지를 사용자에게 개인화되고 유용하게 만드세요. 개방형 환영 메시지나 소개 메시지는 피하세요.
-- 메시징 빈도를 고려하세요. 고객에게 하루에 너무 많은 메시지를 보내지 마세요. 정보성 메시지는 내용과 길이를 최적화하여 신중하게 보내세요.
+30일 안에 품질이 높은 템플릿으로 고객 서비스 창 밖에서 고유한 WhatsApp 사용자에게 전달된 메시지를 2,000건 보내세요.
 
-### 증가 요청
+`INCREASED_CAPABILITIES_ELIGIBILITY_NEED_MORE_INFO`
 
-비즈니스 인증이나 신원 인증을 완료했거나 30일 동안 1,000개 대화 임계값을 충족했지만 여전히 250개 비즈니스 시작 대화로 제한된다면, 직접 지원 티켓을 열어 메시징 티어 업그레이드를 요청할 수 있습니다.
+[신원을 인증](https://www.facebook.com/business/help/587323819101032)하거나, 30일 안에 품질이 높은 템플릿으로 고객 서비스 창 밖에서 전달된 메시지를 2,000건 보내세요.
 
-Ask a Question > WABiz: Phone Number & Registration > Request type > Request a Messaging Tier Upgrade
+### 자동 확장
 
-지원 제출과 [메시징 품질](https://developers.facebook.com/docs/whatsapp/messaging-limits/#messaging-quality)을 바탕으로 Meta는 증가를 [승인](https://developers.facebook.com/docs/whatsapp/messaging-limits/#increase-approvals)하거나 [거부](https://developers.facebook.com/docs/whatsapp/messaging-limits/#increase-denials)합니다.
+비즈니스 포트폴리오의 메시징 한도가 2,000건으로 늘어나면, Meta가 그 이후의 증가 여부를 자동으로 평가해요. 아래 두 조건을 모두 충족하면 6시간 안에 한도가 다음 단계로 올라가요.
 
----
+- 모든 비즈니스 전화번호와 템플릿에서 품질이 높은 메시지를 보내고 있어요.
+- 최근 7일 동안 현재 메시징 한도의 절반 이상을 사용했어요.
+
+```
+자동 확장은 한도를 한 번에 한 단계씩 올립니다: 2,000 → 10,000 → 100,000 → 무제한. 조건을 충족하면 각 단계는 6시간 안에 적용됩니다.
+```
 
 ## 모범 사례
 
-**옵트인 동의:** 고객이 WhatsApp에서 비즈니스 메시지 수신에 명시적으로 동의했는지 항상 확인하세요. 개인정보와 선호도를 존중하세요.
+- 수신 동의: 고객이 WhatsApp으로 비즈니스의 메시지를 받는 데 명확히 동의했는지 항상 확인하세요. 고객의 개인정보와 선호를 존중하세요.
+- 빠른 응답: 고객 문의에 신속하게 답하세요. 빠르게 답하면 고객 만족도가 높아지고 전반적인 고객 경험도 좋아져요.
+- 개인화: 가능하면 고객마다 메시지를 맞춰 보내세요. 개인화한 메시지는 관심을 끌기 쉽고, 고객과 더 단단한 관계를 만드는 데 도움이 돼요.
+- 가치 있는 콘텐츠: 상품 소식, 단독 혜택, 업종과 관련된 유용한 팁처럼 고객에게 도움이 되는 콘텐츠를 WhatsApp으로 전하세요.
+- 명확한 소통: 메시지는 간결하고 명확하며 고객과 관련 있게 쓰세요. 고객을 불쾌하게 할 수 있는 스팸성 내용이나 관련 없는 내용은 피하세요.
 
-**신속한 응답:** 고객 문의에 신속하게 응답하도록 노력하세요. 빠른 응답은 고객 만족도를 높이고 전반적인 고객 경험을 개선합니다.
+예시
 
-**개인화:** 가능할 때마다 각 고객에게 메시지를 맞춤화하세요. 개인화된 메시지는 더 매력적이며 더 강한 고객 관계를 조성할 수 있습니다.
+```
+좋은 예: "안녕하세요, 사라 님! 봄 컬렉션이 새로 나왔어요! 최신 스타일을 확인하고, 첫 구매 시 SPRING20 코드로 20% 할인도 받아 보세요. 지금 쇼핑하기: [링크]"
+```
 
-**부가가치 콘텐츠:** 제품 업데이트, 독점 제안, 업계 관련 유용한 팁 등 WhatsApp을 통해 고객에게 가치 있는 콘텐츠를 제공하세요.
+```
+피해야 할 예: "사라야! 우리 신발도 파는 거 알았어? 매장에 놀러 와서 신발 할인 받아 가!!!! #ShoeLove"
+```
 
-**명확한 소통:** 메시지가 간결하고 명확하며 관련성 있는지 확인하세요. 고객을 짜증나게 할 수 있는 스팸성 또는 무관한 콘텐츠는 피하세요.
+- 보안 조치: 고객 데이터를 보호하고 대화의 기밀성을 지킬 수 있도록 보안 조치를 갖추세요. WhatsApp으로 민감한 정보를 주고받지 않도록 하세요.
+- 피드백 수집: 고객이 WhatsApp에서의 경험에 대한 의견을 남기도록 안내하세요. 받은 의견은 서비스와 상품을 개선하는 데 활용하세요.
 
-**예시**
+## 자주 묻는 질문
 
-보내기: "안녕하세요 Sarah님! 저희 봄 컬렉션이 출시되었다는 소식을 전하게 되어 기쁩니다! 🌸 최신 스타일을 확인하시고 코드 SPRING20으로 첫 구매 시 20% 할인 혜택을 누리세요. 지금 쇼핑하기: [링크]"
+### WhatsApp Business 계정으로 처음에는 대화를 몇 건까지 시작할 수 있나요?
 
-피하기: "안녕 Sarah! 저희가 신발도 판다는 거 알고 있었어? 신발 할인 혜택을 위해 매장에 와보세요!!!! #신발사랑"
+새 비즈니스 포트폴리오는 24시간 이동 기간 동안 고유한 사용자에게 전달된 메시지 250건으로 시작해요.
 
-**보안 조치:** 고객 데이터를 보호하고 대화의 기밀성을 보장하기 위한 보안 조치를 구현하세요. WhatsApp을 통해 민감한 정보를 공유하지 마세요.
+### 한도가 "포트폴리오 단위"라는 게 무슨 뜻인가요?
 
-**피드백 루프:** 고객이 WhatsApp에서 비즈니스 경험에 대한 피드백을 제공하도록 격려하세요. 이 피드백을 사용하여 서비스와 제공 사항을 개선하세요.
+같은 비즈니스 포트폴리오에 속한 모든 비즈니스 전화번호가 하나의 메시징 한도를 함께 써요. 한 전화번호에서 메시지를 많이 보내면, 그 기간 동안 같은 포트폴리오의 다른 번호가 쓸 수 있는 용량이 줄어들어요.
 
----
+### '비즈니스가 시작한' 대화란 무엇인가요?
 
-## FAQ
+고객 서비스 창 밖에서 비즈니스가 고객에게 보내는 모든 메시지를 말해요. 보통 마케팅, 유틸리티, 인증 템플릿으로 보내는 메시지예요. 이런 메시지는 메시징 한도에 포함돼요.
 
-### Q: WhatsApp 비즈니스 계정으로 처음에 몇 개의 대화를 시작할 수 있나요?
+### 대화 한도를 늘리려면 어떻게 하나요?
 
-처음에는 24시간 이동 기간 내에 250개의 비즈니스 시작 대화로 제한됩니다.
+아래 확장 경로 중 하나를 완료하면 2,000건 단계에 도달할 수 있어요.
 
-### Q: '비즈니스 시작' 대화는 무엇을 의미하나요?
+- Meta의 비즈니스 인증 절차로 비즈니스를 인증하세요.
+- 솔루션 제공업체가 비즈니스를 인증하게 하세요.
+- 30일 안에 품질이 높은 템플릿으로 고유한 WhatsApp 사용자에게 전달된 메시지를 2,000건 보내세요.
 
-이는 WhatsApp 사용자에게 마케팅, 유틸리티 또는 인증 템플릿을 보내서 비즈니스가 시작하는 모든 대화를 의미합니다.
+2,000건에 도달한 뒤에는 사용량과 메시지 품질에 따라 한도가 10,000건, 100,000건, 무제한으로 자동으로 늘어날 수 있어요.
 
-### Q: 대화 한도를 어떻게 증가시킬 수 있나요?
+### 한도를 자동으로 늘릴 수 있나요?
 
-여러 가지 방법이 있습니다:
+네. 포트폴리오가 2,000건 단계가 되면 Meta가 한도 증가 여부를 자동으로 평가해요. 최근 7일 동안 현재 한도의 절반 이상을 사용했고 품질이 높은 메시지를 보내고 있다면, 6시간 안에 한도가 다음 단계로 올라가요.
 
-- 비즈니스 인증 받기: 비즈니스를 인증에 제출하세요.
-- 30일 동안 1,000개 이상 대화 보내기: 30일 기간 동안 고품질 메시지 템플릿을 사용하세요.
-- 고품질 메시징 유지: 메시지가 개인화되고 유용하며 WhatsApp 비즈니스 메시징 정책을 준수하는지 확인하세요.
-- 직접 증가 요청: 다른 기준을 충족하는 경우 지원 티켓을 여세요. **Ask a Question > WABiz: Phone Number & Registration > Request type > Request a Messaging Tier Upgrade**
+### 대화 한도를 늘리려면 메시지 품질이 왜 중요한가요?
 
-### Q: 한도가 자동으로 증가되는 방법이 있나요?
+WhatsApp은 긍정적인 사용자 경험을 우선해요. 품질이 높고 관련성 있는 메시지를 보내면 사용자와 Meta 시스템 모두에게 신뢰를 쌓을 수 있어요. 처음 승인을 받을 때도, 이후 자동 확장을 받을 때도 꼭 필요한 조건이에요.
 
-네! 1,000개 대화 한도에 도달하고 다른 요구 사항(좋은 품질 등급, 연결된 전화번호)을 유지하면 사용량에 따라 한도가 자동으로 증가될 수 있습니다.
+### 현재 대화 한도는 어디에서 확인하나요?
 
-### Q: 대화 한도 증가에 메시지 품질이 중요한 이유는 무엇인가요?
-
-WhatsApp은 긍정적인 사용자 경험을 우선시합니다. 사용자가 가치 있다고 생각하는 고품질 메시지를 보내는 것은 신뢰를 구축하고 대화 한도 증가로 이어집니다.
-
-### Q: 현재 대화 한도와 품질 등급을 어디에서 확인할 수 있나요?
-
-이 정보는 [WhatsApp Manager](https://business.facebook.com/wa/manage/home/)에서 찾을 수 있습니다:
-
-한도는 **Overview > Limits 패널**(1K 한도 도달 전) 또는 **Account tools > Insights 패널**(1K 한도 도달 후)에서 확인할 수 있습니다.
-
-품질 등급은 **Account tools > Phone numbers 패널**에서 확인할 수 있습니다.
-
----
-*원문 최종 수정: Tue, 23 Apr, 2024 at 2:28 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+[WhatsApp Manager](https://business.facebook.com/wa/manage/home/)에서 **Account tools**(계정 도구) > **메시징 한도** 패널로 이동하세요.

@@ -1,98 +1,84 @@
 ---
-원문: https://help.leadconnectorhq.com/support/solutions/articles/155000006349-web-chat-inside-conversations
-번역일: 2026-04-23
-카테고리: conversations-view
+원문: /support/solutions/articles/155000007355-web-chat-inside-conversations
+번역일: 2026-11-07
+카테고리: 03-대화
 ---
 
-# 대화(Conversations) 내 웹 채팅
+# 대화에서 웹 채팅 사용하기
 
-웹 채팅(Web Chat)은 웹사이트 채팅 위젯을 통해 기업이 웹사이트 방문자와 실시간으로 소통할 수 있게 해줍니다. 위젯에서 보낸 메시지는 대화(Conversations) 인박스에 바로 나타나며, 팀은 SMS, 이메일, 기타 커뮤니케이션 채널과 함께 이를 관리할 수 있습니다.
+웹사이트 채팅 위젯으로 방문자와 실시간으로 이야기하고, 그 메시지를 **대화**(Conversations) 받은편지함에서 한꺼번에 관리하는 방법을 안내해요. 위젯으로 보낸 메시지는 SMS, 이메일 등 다른 채널의 메시지와 같은 곳에 표시돼요. 이 문서에서는 웹 채팅이 동작하는 방식, 채팅 위젯 설정 방법, 웹 채팅 대화를 관리하는 방법을 설명해요.
 
-이 가이드에서는 웹 채팅의 작동 방식, 채팅 위젯 설정 방법, 대화 내에서 웹 채팅 대화를 관리하는 방법을 설명합니다.
+{% hint style="warning" %}
+웹 채팅은 라이브 채팅과 달라요. 두 기능을 쉽게 구분할 수 있도록 플랫폼 전체에서 채널 이름을 통일했어요.
+{% endhint %}
 
-**중요:** 웹 채팅(Web Chat)은 라이브 채팅(Live Chat)과는 다릅니다. 이제 플랫폼 전체에서 채널 라벨이 일관되게 표시되어 두 기능을 명확히 구분할 수 있습니다.
+## 웹 채팅이 동작하는 방식
 
----
+웹 채팅을 쓰면 웹사이트 방문자가 바로 대화를 시작할 수 있어요. 방문자가 채팅 위젯으로 메시지를 보내면, 그 메시지는 서브 계정의 **대화** 받은편지함으로 바로 전달돼요.
 
-# 웹 채팅 작동 원리
+**대화**에서는 웹 채팅 메시지가 실시간으로 표시돼요. 상담원은 대화를 열어 바로 답하고, 담당자를 지정하는 등 다른 채널과 똑같이 관리할 수 있어요.
 
-웹 채팅을 통해 웹사이트 방문자는 즉시 대화를 시작할 수 있습니다. 방문자가 채팅 위젯을 통해 메시지를 보내면, 해당 메시지가 하위 계정의 대화(Conversations) 인박스로 직접 전달됩니다.
+웹사이트에서 온 대화가 한곳에 모이기 때문에, 팀이 여러 플랫폼을 오가지 않아도 돼요.
 
-대화(Conversations) 내에서 웹 채팅 메시지는 실시간으로 표시됩니다. 상담원은 스레드를 열어 즉시 응답하거나, 대화를 배정하거나, 다른 채널과 동일하게 관리할 수 있습니다.
+## 웹 채팅 설정하기
 
-웹 채팅은 웹사이트 대화를 중앙 집중화하여 팀이 플랫폼 간 전환 없이 업무를 처리할 수 있게 합니다.
+웹 채팅을 쓰려면 채팅 위젯을 만들고 설정해야 해요.
 
----
+1. **사이트 > 채팅 위젯**으로 이동해요.
+2. **+ 신규**를 클릭해 위젯을 만들어요.
 
-## 웹 채팅 설정
+   ![사이트 > 채팅 위젯 화면에서 새 위젯 만들기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064712895/original/YYkwwOk7UdKbICVBGF7Bi966rwqh1rMOTA.png?1770826807)
+   ![채팅 위젯 만들기 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064713569/original/FxlWfSBKlVY305W8RQ9nPQJEc-ITSM1Jjw.png?1770827200)
 
-웹 채팅을 활성화하려면 채팅 위젯을 생성하고 설정해야 합니다.
+3. 채팅 유형에서 **실시간 채팅**을 선택해요. 설정 화면에는 '실시간 채팅'이라고 나오지만, 이 옵션이 웹사이트 메시지를 **대화**로 보내는 웹 채팅 채널을 설정해요.
+4. 필요에 맞게 위젯 설정을 바꿔요.
 
-`Sites(사이트) → Chat Widget(채팅 위젯)`으로 이동한 후 `+ New`를 클릭하여 위젯을 생성합니다.
+   ![채팅 위젯 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064713593/original/OC_HIOJgXVHQfE8HqK9tfrSU1lMGHmru3Q.png?1770827226)
 
-![새 채팅 위젯 생성](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064712895/original/YYkwwOk7UdKbICVBGF7Bi966rwqh1rMOTA.png?1770826807)
+   설정할 수 있는 항목은 다음과 같아요.
 
-![채팅 위젯 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064713569/original/FxlWfSBKlVY305W8RQ9nPQJEc-ITSM1Jjw.png?1770827200)
+   - **인트로 메시지**
+   - 에이전트 아바타와 브랜딩
+   - 비활성 상태일 때 보내는 대체 메시지
+   - 채팅 타임아웃 메시지
 
-채팅 유형을 선택할 때 **Live chat**을 선택하세요. 설정 화면에 "Live chat"으로 표시되지만, 이 옵션은 웹사이트 메시지를 대화(Conversations)로 연결하는 웹 채팅 채널을 설정합니다.
+5. 위젯을 저장해요.
+6. 제공되는 스크립트를 복사해 웹사이트의 푸터 또는 본문(body) 영역에 붙여 넣어요. WordPress를 쓴다면 하이퍼클래스 플러그인을 설치해 위젯을 켜세요.
 
-채팅 유형을 선택한 후, 필요에 따라 위젯 설정을 커스터마이징합니다.
+설치가 끝나면 방문자가 웹사이트에서 웹 채팅 메시지를 보낼 수 있어요.
 
-![위젯 설정 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064713593/original/OC_HIOJgXVHQfE8HqK9tfrSU1lMGHmru3Q.png?1770827226)
+## 웹 채팅 대화 관리하기
 
-다음 항목을 설정할 수 있습니다:
+방문자가 메시지를 보내면 **대화**에 바로 표시돼요.
 
-- 인트로 메시지
-- 상담원 아바타 및 브랜딩
-- 비활성 상태 대체 메시지
-- 채팅 타임아웃 메시지
+![대화 받은편지함에 표시된 웹 채팅 메시지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064713051/original/M9s2JNrW0_rpY2_OZcdoRPmYeArr7JCNBA.png?1770826888)
 
-설정 완료 후 위젯을 저장하고, 제공된 스크립트를 웹사이트의 푸터나 본문 섹션에 복사하여 설치합니다. 워드프레스를 사용하는 경우 **LeadConnector 플러그인**을 설치하여 위젯을 활성화할 수 있습니다.
+받은편지함의 채팅 아이콘으로 웹 채팅 대화를 알아볼 수 있어요. 대화를 열면 실시간으로 답할 수 있어요. 대화는 직접 팀원에게 배정하거나, 워크플로우나 소유권 규칙으로 자동 배정할 수 있어요.
 
-설치 후 방문자가 웹사이트에서 웹 채팅 메시지를 보낼 수 있습니다.
+웹 채팅 메시지만 보려면 **대화**의 **필터**를 사용해요.
 
----
+![대화 필터에서 웹 채팅 메시지만 보기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064713123/original/LT60iImtWOgmPVqFgRHF9JM-KmgcemlLng.png?1770826906)
 
-## 웹 채팅 대화 관리
+1. **마지막 메시지 채널**에서 **라이브 채팅**을 선택해요.
+2. 필터를 적용해요.
 
-방문자가 메시지를 보내면 **대화(Conversations)** 내에 즉시 표시됩니다.
+그러면 웹사이트에서 시작된 웹 채팅 대화만 표시돼요.
 
-![대화 내 웹 채팅 메시지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064713051/original/M9s2JNrW0_rpY2_OZcdoRPmYeArr7JCNBA.png?1770826888)
-
-웹 채팅 대화는 인박스의 채팅 아이콘으로 식별할 수 있습니다. 스레드를 열어 실시간으로 응답할 수 있으며, 워크플로우나 소유권 규칙을 사용하여 팀원에게 대화를 수동 또는 자동으로 배정할 수 있습니다.
-
-웹 채팅 메시지만 보려면 대화(Conversations) 내의 필터 옵션을 사용하세요.
-
-![웹 채팅 필터링](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064713123/original/LT60iImtWOgmPVqFgRHF9JM-KmgcemlLng.png?1770826906)
-
-**Last Message Channel** 아래에서 **Live Chat**을 선택하고 필터를 적용합니다. 그러면 웹사이트에서 시작된 웹 채팅 대화만 표시됩니다.
-
-대화가 완료되면 **End Chat** 옵션을 사용할 수 있습니다. 위젯에서 설정한 비활성 상태 설정에 따라 채팅이 자동으로 종료될 수도 있습니다.
-
----
+대화가 끝나면 **End Chat**(채팅 종료) 옵션을 사용할 수 있어요. 위젯에 설정한 비활성 시간 기준에 따라 채팅이 자동으로 종료되기도 해요.
 
 ## 자주 묻는 질문
 
-**Q: 웹 채팅 메시지가 대화(Conversations)에 나타나게 하려면 어떻게 해야 하나요?**
+### 웹 채팅 메시지가 대화에 표시되게 하려면 어떻게 하나요?
+채팅 위젯을 설치해 켜고, **사이트 > 채팅 위젯**에서 **실시간 채팅**을 선택하세요. 메시지가 **대화**로 자동 전달돼요.
 
-채팅 위젯을 설치 및 활성화하고 `Sites(사이트) → Chat Widget(채팅 위젯)`에서 **Live chat**을 선택하세요. 메시지가 자동으로 대화(Conversations)로 전달됩니다.
+### 웹 채팅인데 설정 화면에는 왜 '실시간 채팅'이라고 나오나요?
+현재 위젯 설정 화면에서는 '실시간 채팅'이라는 이름을 쓰지만, 실제로는 웹사이트 대화를 **대화**로 보내는 웹 채팅 채널을 설정해요.
 
-**Q: 웹 채팅인데 설정 화면에서는 왜 "Live chat"이라고 나오나요?**
+### 웹 채팅 메시지에 아무도 답하지 않으면 어떻게 되나요?
+설정한 비활성 시간 안에 상담원이 답하지 않으면, 대체 메시지가 방문자에게 연락처를 남기도록 안내해요. 그러면 나중에 이어서 연락할 수 있어요.
 
-위젯 설정에서는 현재 "Live chat"이라는 라벨을 사용하지만, 실제로는 웹사이트 대화를 대화(Conversations)로 전달하는 웹 채팅 채널을 설정합니다.
+### 웹 채팅 대화를 특정 팀원에게 배정할 수 있나요?
+네. 직접 배정하거나, 워크플로우와 배정 규칙으로 자동 배정할 수 있어요.
 
-**Q: 웹 채팅 메시지에 아무도 응답하지 않으면 어떻게 되나요?**
-
-설정된 비활성 시간 내에 상담원이 응답하지 않으면, 대체 메시지가 방문자에게 연락처를 남기도록 안내하여 나중에 후속 조치를 이어갈 수 있습니다.
-
-**Q: 웹 채팅 대화를 특정 팀원에게 배정할 수 있나요?**
-
-네. 워크플로우와 배정 규칙을 사용하여 대화를 수동 또는 자동으로 배정할 수 있습니다.
-
-**Q: 웹 채팅 대화만 필터링할 수 있나요?**
-
-네. 대화(Conversations)의 필터 옵션을 사용하여 메시지 채널 필터에서 **Live Chat**을 선택하면 됩니다.
-
----
-*원문 최종 수정: Wed, 11 Feb, 2026 at 10:35 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### 웹 채팅 대화만 따로 볼 수 있나요?
+네. **대화**의 **필터**에서 메시지 채널 필터의 **라이브 채팅**을 선택하세요.

@@ -1,66 +1,47 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 06-사이트 > 채팅-위젯
+원문: /support/solutions/articles/48001239760-add-highlevel-s-chat-widget-to-your-squarespace-website
+번역일: 2026-11-07
+카테고리: 06-사이트
 ---
 
-# Squarespace 웹사이트에 Hyperclass 채팅 위젯 추가하기
+# Squarespace 웹사이트에 채팅 위젯 추가하기
 
-웹사이트 방문자와 쉽게 소통하고 고객으로 전환시킬 수 있는 방법을 찾고 계신가요? Squarespace용 Hyperclass 웹채팅이 완벽한 솔루션입니다!
+하이퍼클래스 채팅 위젯을 Squarespace 웹사이트에 붙이면 방문자와 바로 대화하고 고객으로 이어 갈 수 있어요. 이 문서에서는 채팅 위젯 코드를 가져오는 방법과, 코드를 Squarespace 사이트에 넣는 두 가지 방법을 안내해요.
 
-이 가이드에서는 Squarespace용 Hyperclass 웹채팅을 시작하는 단계를 안내해드리겠습니다.
+## 웹챗 임베드 코드 가져오기
 
-#### 이 가이드에서 다룰 내용:
+**사이트** > **채팅 위젯** > **코드 가져오기**에서 임베드 코드를 복사하세요.
 
-#### [웹사이트용 웹채팅 임베드 코드 얻는 방법](#웹사이트용-웹채팅-임베드-코드-얻는-방법)
+![채팅 위젯 코드 가져오기 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297297829/original/oKtzhm7Qaeia1e1Pzl-q2_GbFteEF8ZoBw.gif?1683912268)
 
-#### [여러 방법으로 Squarespace 웹사이트에 커스텀 채팅 위젯을 추가하는 상세 단계](#여러-방법으로-squarespace-웹사이트에-커스텀-채팅-위젯을-추가하는-상세-단계)
+## 방법 1. Code Injection으로 채팅 위젯 추가하기
 
-- **방법 1:** 코드 인젝션을 사용한 커스텀 채팅 위젯 추가
-- **방법 2:** 임베드 블록을 사용한 커스텀 채팅 위젯 추가
+1. 위에서 설명한 대로 채팅 위젯 코드를 복사해요.
+2. Squarespace 계정에 로그인한 뒤, 채팅 위젯을 추가할 웹사이트로 이동해요.
+3. 메인 메뉴에서 **설정**을 클릭해요.
 
-## 웹사이트용 웹채팅 임베드 코드 얻는 방법
+   ![Squarespace 메인 메뉴의 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297298463/original/7osDmJaDbDDGyz3eoae8jWLZgNntqPfhXQ.jpeg?1683912499)
 
-Sites(사이트) > Chat Widget(채팅 위젯) > Get Code(코드 가져오기)에서 임베드 코드를 복사하세요.
+4. **웹사이트** 섹션에서 **Developer Tools**(개발자 도구)를 선택해요.
 
-![Hyperclass 채팅 위젯 코드 가져오기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297297829/original/oKtzhm7Qaeia1e1Pzl-q2_GbFteEF8ZoBw.gif?1683912268)
+   ![웹사이트 섹션의 Developer Tools 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297298462/original/lEupdS6onJfVFtT3B7N2vJtchbGiLmOkcg.jpeg?1683912499)
 
-## 여러 방법으로 Squarespace 웹사이트에 커스텀 채팅 위젯을 추가하는 상세 단계
+5. **Code Injection**(코드 삽입)을 클릭해요.
 
-### 방법 1: 코드 인젝션을 사용한 커스텀 채팅 위젯 추가
+   ![Code Injection 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297298464/original/avj99lSZILiLAh4n0vlBtaJvR05DoOeg-w.jpeg?1683912499)
 
-- 위에서 설명한 대로 채팅 위젯(Chat Widget) 코드를 가져오세요.
-- Squarespace 계정에 로그인하고 채팅 위젯을 추가하려는 웹사이트로 이동하세요.
-- 메인 메뉴에서 "Settings"을 클릭하세요.
+6. **머리글** 또는 **푸터** 필드에 채팅 위젯 코드를 붙여 넣어요.
 
-![Squarespace 설정 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297298463/original/7osDmJaDbDDGyz3eoae8jWLZgNntqPfhXQ.jpeg?1683912499)
+   ![머리글과 푸터 필드에 코드를 붙여 넣은 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297298461/original/PuvfzPL-G4QWwZZBSituwfgcKuI0inTvbQ.jpeg?1683912498)
 
-- "Website" 섹션에서 "Developer Tools"를 선택하세요.
+7. **저장**을 클릭해요.
+8. 웹사이트를 미리 보면서 채팅 위젯이 제대로 나타나는지 확인해요.
 
-![Squarespace 개발자 도구](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297298462/original/lEupdS6onJfVFtT3B7N2vJtchbGiLmOkcg.jpeg?1683912499)
+## 방법 2. 임베드 블록으로 채팅 위젯 추가하기
 
-- "Code Injection"을 클릭하세요.
-
-![Squarespace 코드 인젝션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297298464/original/avj99lSZILiLAh4n0vlBtaJvR05DoOeg-w.jpeg?1683912499)
-
-- "Header" 또는 "Footer" 필드에 채팅 위젯 코드를 붙여넣으세요.
-
-![Squarespace 코드 붙여넣기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297298461/original/PuvfzPL-G4QWwZZBSituwfgcKuI0inTvbQ.jpeg?1683912498)
-
-- "Save"를 클릭하여 변경 사항을 저장하세요.
-- 웹사이트를 미리 보기하여 채팅 위젯이 올바르게 표시되는지 확인하세요.
-
----
-
-### 방법 2: 임베드 블록을 사용한 커스텀 채팅 위젯 추가
-
-- Squarespace 계정에 로그인하고 채팅 위젯을 추가하려는 페이지로 이동하세요.
-- 페이지 편집기를 클릭하고 채팅 위젯을 추가하려는 섹션을 선택하세요.
-- 플러스 아이콘을 클릭하여 새 콘텐츠 블록을 추가하고 드롭다운 메뉴에서 "Embed"를 선택하세요.
-- "Code Snippet" 필드에 채팅 위젯 코드를 붙여넣으세요.
-- "Apply"를 클릭하여 변경 사항을 적용하세요.
-- 웹사이트를 미리 보기하여 채팅 위젯이 올바르게 표시되는지 확인하세요.
-
----
-*원문 최종 수정: Fri, 2 May, 2025 at 10:08 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+1. Squarespace 계정에 로그인한 뒤, 채팅 위젯을 추가할 페이지로 이동해요.
+2. 페이지 편집기를 열고, 채팅 위젯을 넣을 섹션을 선택해요.
+3. 더하기(+) 아이콘을 클릭해 새 콘텐츠 블록을 추가하고, 드롭다운 메뉴에서 **임베드**를 선택해요.
+4. **Code Snippet**(코드 스니펫) 필드에 채팅 위젯 코드를 붙여 넣어요.
+5. **적용**을 클릭해요.
+6. 웹사이트를 미리 보면서 채팅 위젯이 제대로 나타나는지 확인해요.

@@ -1,23 +1,23 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 07-워크플로우 > Opportunity Workflow Triggers
+원문: /support/solutions/articles/155000000887-workflow-triggers-opportunity-created
+번역일: 2026-11-07
+카테고리: 07-워크플로우
 ---
 
-# 워크플로우 트리거 - 기회 생성
+# 워크플로우 트리거 — Opportunity Created(기회 생성됨)
 
-### 기회가 생성될 때 실행됩니다
+**Opportunity Created**(기회 생성됨) 트리거는 새 기회가 만들어질 때 워크플로우를 시작해요. 기회가 생길 때마다 자동으로 후속 작업을 실행하고 싶을 때 사용하세요.
 
-![기회 생성 트리거 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155006871297/original/eFVrDP9dBBfbUJTwKPORfnAQ78x2IX25QQ.png?1693918019)
+## 기회가 만들어지면 실행돼요
 
-### 필터: 
+![Opportunity Created 트리거 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155006871297/original/eFVrDP9dBBfbUJTwKPORfnAQ78x2IX25QQ.png?1693918019)
 
-![기회 생성 트리거 필터 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155006870159/original/BYvzRr3v7bVrXrBLIX_rW7-8BxMsWuq69Q.png?1693917550)
+## Filters
 
-### 커스텀 값: 
+**Filters**(필터)를 사용하면 조건에 맞는 기회가 만들어질 때만 워크플로우가 실행되도록 제한할 수 있어요.
 
-![기회 생성 트리거 커스텀 값 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155006870904/original/0HlGdUswVTLiT5Nmgcy8gqfRRlwUWH3lAQ.png?1693917819)
+![Opportunity Created 트리거의 Filters 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155006870159/original/BYvzRr3v7bVrXrBLIX_rW7-8BxMsWuq69Q.png?1693917550)
 
----
-*원문 최종 수정: Wed, 15 Jan, 2025 at 3:41 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+## Custom Values
+
+**Custom Values**(커스텀 값)

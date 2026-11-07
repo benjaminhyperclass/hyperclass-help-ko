@@ -1,96 +1,214 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 11-설정 > Domain Purchase / Transfer
+원문: /support/solutions/articles/155000004674-configure-connect-purchased-domains
+번역일: 2026-11-06
+카테고리: 11-설정
 ---
 
-# 구매한 도메인 설정 및 연결하기
+# 구매한 도메인 구성 및 연결
 
-Hyperclass에서 도메인을 구매한 경우(외부에서 구매한 도메인을 연결하는 것이 아닌), DNS 레코드를 Hyperclass 내에서 직접 관리할 수 있습니다.
+하이퍼클래스에서 구매한 도메인은 플랫폼 안에서 DNS 레코드를 관리하고, 퍼널·웹사이트·스토어·블로그에 바로 연결할 수 있어요. 이 문서에서는 구매한 도메인을 찾는 위치, DNS 레코드 관리 방법, 사이트 연결 방법을 안내해요.
 
----
+{% hint style="warning" %}
+이 문서는 하이퍼클래스에서 구매한 도메인에 해당해요. 다른 등록 업체에서 구매한 도메인은 외부 도메인 연결 절차를 따르세요.
+{% endhint %}
 
-**목차**
+## 구매한 도메인 구성이란?
 
-- [구매한 도메인 설정이란?](#구매한-도메인-설정이란)
-- [구매한 도메인 설정 메뉴 위치](#구매한-도메인-설정-메뉴-위치)
-- [설정하기](#설정하기)
-- [설정 - DNS 레코드](#설정-dns-레코드)
-- [설정 - 도메인 연결](#설정-도메인-연결)
+구매한 도메인 구성은 하이퍼클래스에서 직접 구매한 도메인을 관리하는 기능이에요. 도메인 등록을 하이퍼클래스가 관리하기 때문에, 별도의 등록 업체에 로그인하지 않고 서브 계정에서 지원되는 DNS 레코드를 확인하고 수정할 수 있어요.
 
----
+구매한 도메인 구성에서 할 수 있는 일은 다음과 같아요.
 
-## **구매한 도메인 설정이란?**
-
-모든 도메인에는 설정(DNS)이 있습니다. Hyperclass를 통해 도메인을 구매한 경우, Hyperclass가 도메인 등록기관이 되므로 Hyperclass를 벗어나지 않고도 도메인을 설정할 수 있습니다. 관련 DNS 레코드(예: CNAME)를 추가, 편집, 삭제할 수 있습니다.
-
----
-
-## **구매한 도메인 설정 메뉴 위치**
-
-`하위 계정 → Settings(설정) → Domains → Purchased Domains`로 이동하세요.
-
-![구매한 도메인 설정 메뉴 위치](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042070927/original/E-L8yQ9nA2R1PQTKGP3DCXlsuQXQ8UfVAQ.png?1740261457)
-
-![구매한 도메인 목록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042146866/original/fNeSIN4pTex6c5Zc2cULAyQNNkgfZJBp7Q.png?1740412636)
+- 지원되는 DNS 레코드를 추가, 편집, 제거해요.
+- 도메인을 퍼널, 웹사이트, 스토어, 블로그에 연결해요.
+- 도메인의 상태와 갱신 정보를 확인해요.
+- 도메인을 구매한 하이퍼클래스 서브 계정에서 바로 관리해요.
 
 ---
 
-## 설정하기
+## 구매한 도메인 구성의 장점
 
-구매한 도메인 옆의 Configure를 클릭하여 설정을 엽니다. 도메인을 두 가지 방식으로 관리할 수 있습니다:
+구매한 도메인을 하이퍼클래스 안에서 관리하면 자주 하는 도메인 작업을 한곳에서 처리할 수 있어요. 여러 플랫폼을 오갈 필요가 줄어들어요.
 
-- **Add Record**(레코드 추가) 또는 기존 레코드 편집
-- **Connect Domain**(도메인 연결) - 사이트 섹션의 항목(웹사이트, 스토어 등)에 연결
-
-![도메인 설정 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042070969/original/_UmEc0xX_VxHBd3NaynhcKXaTJ51giI8Ig.png?1740261829)
-
-![도메인 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042071018/original/W9rJlJr5zItRSLpC3vmhfzBnUyMznEmPlg.png?1740262071)
-
-### **설정 - DNS 레코드**
-
-다음 DNS 레코드를 추가하고 편집할 수 있습니다:
-- A
-- CNAME
-- AAAA
-- MX
-- TXT
-
-루트 도메인을 연결할 때는 A 레코드를 하나만 가져야 합니다. 같은 도메인(예: yourdomain.com)에 여러 개의 A 레코드가 있으면 DNS 해석 충돌이 발생할 수 있으며, 특히 시스템이 필요한 A 레코드를 자동으로 삽입하려고 시도할 때 문제가 됩니다.
-
-![DNS 레코드 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042071007/original/iKo0QleN6FjXmket82lmnAcwglbRYoqQPw.png?1740261988)
-
-### 설정 - 도메인 연결
-
-Connect This Domain을 클릭하여 사이트 섹션에서 만든 퍼널, 웹사이트, 스토어, 블로그 등에 도메인을 연결합니다.
-
-Continue를 클릭하세요
-![도메인 연결 1단계](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042071078/original/Ny8uVT-XCKEB6LhIWAS2IFZxSDpVPhHOkA.png?1740262721)
-Continue를 클릭하세요
-![도메인 연결 2단계](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042071079/original/kwAX5QDhIPRhAkC8A0hHKa1obdi62W_6uw.png?1740262727)
-Add Records를 클릭하세요
-![도메인 연결 3단계](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042071082/original/IAHyGBfIpPJGdomSfo7wQafMRHJcIs3hbg.png?1740262740)
-올바른 사이트 하위 유형을 선택하고 Proceed를 클릭하여 완료하세요
-![도메인 연결 4단계](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042071083/original/FMXi857lqnt5t8qetOwy5TbXrAQ_SeQFKg.png?1740262745)
-완료되었습니다.
-![도메인 연결 완료](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042071084/original/IT1Zc8QwOdXA9PMAqzJiPrqimxLfa5JGYw.png?1740262755)
+- DNS 관리를 한곳에서: 지원되는 DNS 레코드를 하이퍼클래스에서 바로 추가하고 관리해요.
+- 빠른 사이트 연결: 안내에 따라 지원되는 하이퍼클래스 사이트에 도메인을 연결해요.
+- 명확한 도메인 상태: 도메인이 아직 설정 중인지, 활성 상태로 관리할 수 있는지 확인해요.
+- 외부 등록 업체 로그인 불필요: 하이퍼클래스에서 구매한 도메인은 일반적인 DNS 변경을 다른 등록 업체 계정 없이 끝낼 수 있어요.
 
 ---
 
-## **자주 묻는 질문**
+## 지원되는 DNS 레코드
 
-**Q1: 구매한 도메인 하나로 웹사이트와 퍼널을 동시에 사용할 수 있나요?**
+구매한 도메인에서는 다음 DNS 레코드 유형을 관리할 수 있어요.
+`A`: 도메인이나 호스트 이름을 IPv4 주소로 연결해요.`CNAME`: 한 호스트 이름을 다른 호스트 이름으로 연결해요.`AAAA`: 도메인이나 호스트 이름을 IPv6 주소로 연결해요.`MX`: 도메인의 이메일을 받는 메일 서버를 지정해요.`TXT`: 텍스트 정보를 저장해요. 도메인 인증이나 이메일 인증에 자주 쓰여요.
 
-아니요, 하나의 루트 도메인은 한 번에 하나의 사이트 유형(웹사이트, 퍼널, 블로그, 스토어 등)에만 연결할 수 있습니다. 같은 도메인을 여러 용도로 사용하려면 각 콘텐츠 유형별로 서브도메인(store.yourdomain.com 또는 blog.yourdomain.com 같은)을 만들어 연결하는 것이 좋습니다.
-
-**Q2: Hyperclass에서 구매한 도메인의 DNS 레코드는 어떤 것들을 관리할 수 있나요?**
-
-Hyperclass를 통해 도메인을 구매하면 플랫폼 내에서 DNS를 직접 완전히 관리할 수 있습니다. A, CNAME, AAAA, MX, TXT 레코드를 추가, 편집, 삭제할 수 있어서 외부 등록기관이나 서드파티 DNS 도구가 필요하지 않습니다.
-
-**Q3: Hyperclass에서 구매한 도메인은 구매 후 별도로 인증해야 하나요?**
-
-아니요, Hyperclass에서 직접 구매한 도메인은 자동으로 인증되며 바로 설정할 수 있습니다. DNS 설정을 관리하고 퍼널, 웹사이트, 스토어, 블로그에 도메인을 연결하는 작업을 즉시 시작할 수 있습니다.
+{% hint style="warning" %}
+이미 사용 중인 DNS 레코드를 바꿀 때는 조심하세요. 잘못 바꾸면 도메인에 연결된 웹사이트, 이메일 등 다른 서비스에 문제가 생길 수 있어요.
+{% endhint %}
 
 ---
-*원문 최종 수정: Thu, 24 Apr, 2025 at 9:56 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+
+## 구매한 도메인 관리하기
+
+**구매한 도메인** 영역에서 도메인 구성 화면을 열고, DNS 레코드를 관리할지 도메인을 하이퍼클래스 사이트에 연결할지 선택해요.
+
+1. 서브 계정에서 **설정**을 클릭하세요.
+
+   **![설정 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155078640875/original/NRPJ6JZa-IqYj12DJ3fkm-PcEOjXO0CL0w.png?1787000945)**
+2. **도메인**을 열고 **구매한 도메인** 아래에서 도메인을 찾으세요.
+
+   도메인을 아직 준비 중이라면 상태에 **Setting up your Domain**(도메인 설정 중)이 보일 수 있어요. 이때는 **구성** 버튼을 아직 사용할 수 없을 수 있어요.
+
+   **![구매한 도메인 목록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155078640886/original/Zbf-hXjAbM6g6ubxgB6nKN8JBOVhFsPpjg.png?1787000966)**
+3. 도메인 상태가 **활성**으로 바뀌면 **구성**을 클릭하세요.
+
+   **![활성 상태 도메인의 구성 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155078640893/original/DhRgPk_tDZD5WVAHdBo92d9pyWvbvGEz2g.png?1787000989)**
+4. 도메인 구성 화면에서 두 가지 주요 옵션을 선택할 수 있어요.
+
+   - **레코드 추가**: DNS 레코드를 직접 추가해요.
+   - **이 도메인 연결**: 도메인을 지원되는 하이퍼클래스 사이트 자산에 연결해요.
+
+     **![도메인 구성 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155078640904/original/8qrlHGFHowdUGLiq-CkS89gpTBVSaxxQxw.png?1787001031)**
+
+---
+
+## 구매한 도메인 상태 문제 해결
+
+### 정상적인 도메인 상태
+
+도메인을 구매하면 상태에 **Setting up your Domain**(도메인 설정 중)이 보일 수 있어요.
+
+설정이 끝나면 도메인 상태가 **활성**으로 바뀌고 **관리** 옵션을 사용할 수 있어요.
+
+도메인 등록은 보통 1분 정도 걸려요.
+
+### 관리 옵션이 나타나는 시점
+
+**관리** 옵션은 도메인이 **활성** 상태가 된 뒤에 나타나요.
+
+도메인이 아직 설정 중이라면 준비가 끝날 때까지 기다려야 할 수 있어요.
+
+### **갱신일**의 의미
+
+**갱신일**은 구매한 도메인이 다음 등록 기간으로 갱신되도록 예정된 날짜예요.
+
+예를 들어 **갱신일**이 2027년 9월 10일로 표시되어 있다면, 갱신이 계속 켜져 있고 계정에서 결제가 가능한 경우 그날 도메인이 갱신될 예정이에요.
+
+### 확인할 사항
+
+고객지원에 문의하기 전에 아래 내용을 확인해 보세요.
+
+- **설정 > 도메인 > 구매한 도메인**에 도메인이 보이는지 확인해요.
+- 현재 도메인 상태를 확인해요.
+- 페이지를 새로고침해요.
+- **관리**를 사용할 수 있는지 확인해요.
+- 오류 메시지가 있는지 살펴봐요.
+- **갱신일** 옆에 무엇이 표시되는지 기록해 두세요.
+
+### 고객지원에 문의해야 할 때
+
+도메인이 예상보다 오래 설정 중 상태로 남아 있거나, **관리**를 사용할 수 없거나, 오류가 보이면 하이퍼클래스 고객지원에 문의하세요.
+
+문의할 때 아래 정보를 함께 알려 주세요.
+
+- 도메인 이름
+- 도메인 상태 화면 캡처
+- **갱신일** 옆에 표시된 내용
+- 도메인을 구매한 대략적인 날짜와 시간
+- 표시된 오류 메시지
+
+이 정보가 있으면 고객지원이 도메인 준비 상태를 확인하는 데 도움이 돼요.
+
+---
+
+## DNS 레코드 추가하기
+
+웹사이트, 이메일 서비스, 인증 절차, 그 밖의 연동 서비스에 특정 레코드가 필요할 때 DNS를 직접 관리하면 편해요.
+
+1. 구매한 도메인 구성 화면에서 **레코드 추가**를 클릭하세요.
+2. 필요한 DNS 레코드 **유형**을 선택하세요.
+3. **이름**(호스트 값)을 입력하세요.
+4. 필요한 연결 대상 또는 내용 값을 입력하세요.
+5. **TTL**(레코드가 캐시에 유지되는 시간) 값을 선택하세요.
+6. **저장**을 클릭하세요.
+
+**![DNS 레코드 추가 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155078640914/original/IRAzXxADU4GYbWuddTzG-YTN3NIdNYI5MA.png?1787001076)**
+
+선택한 DNS 레코드 유형에 따라 화면에 보이는 입력란이 달라질 수 있어요.
+
+### 루트 도메인 A 레코드
+
+루트 도메인을 연결할 때는 설정상 꼭 필요한 경우가 아니라면, 같은 루트 호스트 이름에 A 레코드를 여러 개 만들지 마세요.
+
+같은 루트 도메인에 A 레코드가 여러 개 있으면 DNS 해석에 충돌이 생길 수 있어요. 하이퍼클래스가 필요한 A 레코드를 자동으로 추가해야 할 때 특히 그래요.
+
+---
+
+## 구매한 도메인 연결하기
+
+**이 도메인 연결**은 안내에 따라 구매한 도메인을 하이퍼클래스에서 만든 콘텐츠와 연결하는 기능이에요.
+
+1. 도메인 구성 화면에서 **이 도메인 연결**을 클릭하세요.
+2. 연결할 도메인을 확인하세요.
+
+   선택할 수 있는 경우에는 도메인의 `www` 버전을 포함할지도 고를 수 있어요.
+
+   **![연결할 도메인 확인 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155078640816/original/YB1QC958yRgWZ6H0SchbF3m_tngVvi2MFw.png?1787000774)**
+3. **계속**을 클릭하고 안내에 따라 필요한 DNS 레코드를 추가하세요.
+4. 도메인을 연결할 대상을 선택하세요.
+
+   - 퍼널
+   - 웹사이트
+   - 스토어
+   - 블로그
+5. 드롭다운에서 연결할 자산을 선택하세요.
+6. 추가 옵션이 있으면 확인한 뒤 **완료로 진행**을 클릭하세요.
+
+   ![연결 대상 선택 및 완료 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155078640806/original/vdiXE14iPfsSdCtxx4y_P5FxXqqk4PsFeQ.png?1787000741)
+7. 구성이 끝나면 구매한 도메인 페이지로 돌아가 DNS 레코드를 확인하세요.
+
+   **![연결 후 DNS 레코드 확인 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155078640800/original/T4gxDDuer8gKvf56fCO6ZNMn3dIkHo7vRg.png?1787000716)**
+
+{% hint style="info" %}
+DNS 변경 내용이 인터넷 전체에 반영되려면 시간이 걸릴 수 있어요. 연결한 도메인이 바로 동작하지 않으면, DNS 변경이 반영될 때까지 기다린 뒤에 문제를 확인하세요.
+{% endhint %}
+
+---
+
+## 루트 도메인을 여러 사이트에 사용하기
+
+루트 도메인 하나는 보통 한 번에 하나의 주 사이트 유형에만 연결해요. 예를 들어 같은 루트 도메인을 웹사이트와 별도의 스토어 양쪽의 직접 주소로 쓸 수는 없어요.
+
+같은 도메인에서 서로 다른 사이트를 운영해야 한다면 다음과 같은 서브도메인을 쓰세요.
+`www.example.com``store.example.com``blog.example.com`
+
+이렇게 하면 루트 도메인에서 충돌 없이 서브도메인마다 다른 대상으로 연결할 수 있어요.
+
+## 자주 묻는 질문
+
+### 다른 곳에서 구매한 도메인도 하이퍼클래스에서 관리할 수 있나요?
+
+외부에서 구매한 도메인을 하이퍼클래스에 연결할 수는 있어요. 하지만 이 문서의 구매한 도메인 구성은 하이퍼클래스에서 구매한 도메인 전용이에요. 외부 도메인은 등록 업체나 DNS 제공업체에서 DNS를 변경해야 할 수 있어요.
+
+### 구매한 도메인에서 어떤 DNS 레코드를 관리할 수 있나요?
+
+구매한 도메인 구성 화면에서 A, CNAME, AAAA, MX, TXT 레코드를 관리할 수 있어요.
+
+### 구성 버튼을 사용할 수 없어요.
+
+도메인이 아직 설정 중이면 구성을 사용할 수 없을 수 있어요. 구매한 도메인이 **활성** 상태로 바뀔 때까지 기다린 뒤 **구성**을 열어 주세요.
+
+### 하이퍼클래스에서 구매한 도메인은 직접 인증해야 하나요?
+
+하이퍼클래스에서 직접 구매한 도메인은 하이퍼클래스의 도메인 구매 시스템 안에서 처리돼요. 그래서 타사 도메인을 연결할 때 거치는 외부 등록 업체 인증 절차를 똑같이 진행하지 않아도 돼요.
+
+### 같은 루트 도메인을 퍼널과 웹사이트에 동시에 연결할 수 있나요?
+
+루트 도메인은 한 번에 하나의 사이트 유형에만 연결해야 해요. 자산별로 연결 대상이 따로 필요하면 서브도메인을 사용하세요.
+
+### DNS를 바꿨는데 도메인이 바로 동작하지 않아요.
+
+DNS 변경은 바로 적용되지 않을 수 있어요. 반영되는 데 시간이 걸리니, DNS 업데이트가 끝날 때까지 기다린 뒤에 구성이 실패했는지 판단하세요.
+
+### 하이퍼클래스 계정을 해지했는데 하이퍼클래스에서 구매한 도메인이 아직 제 소유라면 어떻게 하나요?
+
+계정을 해지한 뒤 도메인 관리 화면에 더 이상 접근할 수 없다면, 하이퍼클래스의 구매한 도메인 전용 해제 절차를 이용하세요.

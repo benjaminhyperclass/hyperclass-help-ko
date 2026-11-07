@@ -85,9 +85,49 @@ def clean(text):
     t = re.sub(r"\n```\s*$", "", t)
     return t.strip() + "\n"
 
+SPLIT_AT = 30000  # 원문이 이보다 길면 ## 단위로 나눠 옮긴 뒤 잇는다
+
+def split_parts(md):
+    secs = re.split(r"(?m)^(?=## )", md)
+    parts, cur = [], ""
+    for sec in secs:
+        if cur and len(cur) + len(sec) > SPLIT_AT:
+            parts.append(cur); cur = ""
+        cur += sec
+    if cur: parts.append(cur)
+    return parts
+
+def run_split(job):
+    parts = split_parts(job["source_md"])
+    texts, usage, model = [], {"in": 0, "out": 0}, None
+    for k, part in enumerate(parts):
+        j = dict(job, source_md=part, existing_ko="")
+        if k > 0:
+            j["title_en"] = job.get("title_en", "") + f" (part {k + 1}/{len(parts)})"
+        r, model = call(j)
+        t = clean("".join(b.text for b in r.content if getattr(b, "type", "") == "text"))
+        if r.stop_reason != "end_turn":
+            raise RuntimeError(f"part {k + 1} stop:{r.stop_reason}")
+        if k > 0:   # 이어지는 부분은 머리말·제목을 떼고 본문만
+            t = re.sub(r"^---.*?\n---\n", "", t, count=1, flags=re.S).lstrip()
+            t = re.sub(r"^# .*\n+", "", t, count=1)
+        texts.append(t.strip())
+        usage["in"] += r.usage.input_tokens; usage["out"] += r.usage.output_tokens
+    return "\n\n".join(texts) + "\n", model, usage
+
 def run(job, out_dir, res_fh):
     t0 = time.time()
     try:
+        if job["mode"] == "translate" and len(job.get("source_md", "")) > SPLIT_AT:
+            text, m, u = run_split(job)
+            p = os.path.join(out_dir, job["out_path"])
+            os.makedirs(os.path.dirname(p), exist_ok=True)
+            open(p, "w", encoding="utf-8").write(text)
+            rec = {"id": job["id"], "out_path": job["out_path"], "status": "ok", "model": m, "in": u["in"],
+                   "out": u["out"], "split": True, "sec": round(time.time() - t0, 1)}
+            with lock:
+                res_fh.write(json.dumps(rec, ensure_ascii=False) + "\n"); res_fh.flush()
+            return rec
         r, m = call(job)
         text = clean("".join(b.text for b in r.content if getattr(b, "type", "") == "text"))
         status = "ok" if r.stop_reason == "end_turn" else f"stop:{r.stop_reason}"

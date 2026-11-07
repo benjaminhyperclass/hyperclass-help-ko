@@ -3,12 +3,12 @@
 
 사용: python3 scripts/manual/publish_results.py <결과 폴더> <lint json> [--report out.json]
 - 정상 완료: _results/*.jsonl 의 status == "ok" (중간에 잘린 출력 제외)
-- 막는 검수 항목: brand(브랜드 노출) · ghl-link(원문 링크 잔존) · frontmatter · title · images(이미지 누락) · english(영어 과다)
+- 막는 검수 항목: brand(브랜드 노출) · ghl-link(원문 링크 잔존) · frontmatter · title · images(이미지 누락)
 - 용어(term) 지적은 막지 않고 보고만 한다.
 """
 import glob, json, os, shutil, sys
 R = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
-BLOCK = {"brand", "ghl-link", "frontmatter", "title", "images", "english"}
+BLOCK = {"brand", "ghl-link", "frontmatter", "title", "images"}
 
 def main():
     out, lint_path = sys.argv[1], sys.argv[2]

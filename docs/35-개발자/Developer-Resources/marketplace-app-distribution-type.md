@@ -1,135 +1,123 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 35-개발자 > Developer Resources
+원문: /support/solutions/articles/155000002141-marketplace-app-distribution-type
+번역일: 2026-11-06
+카테고리: 35-개발자
 ---
 
-# 마켓플레이스 앱 배포 유형
+# 마켓플레이스 앱 배분 유형
 
-이 가이드는 개발자를 위한 새로운 간소화된 마켓플레이스 배포 모델과 올바른 액세스 토큰을 얻기 위해 구현해야 하는 OAuth 플로우를 다룹니다.
+마켓플레이스 앱의 배분 방식을 설정하는 방법과, 설치 유형에 맞는 액세스 토큰을 받기 위해 구현해야 하는 OAuth 흐름을 정리한 개발자용 안내예요. 새로 단순해진 마켓플레이스 배분 모델을 기준으로 설명해요.
 
-**목차**
+## 앱 배분 모델
 
-- [앱 배포 모델](#앱-배포-모델)
-- [배포 시나리오](#배포-시나리오)
-- [각 배포 모델별 지원 가격 모델을 설명한 문서](#각-배포-모델별-지원-가격-모델을-설명한-문서)
-- [역호환성](#역호환성)
-- [대상 사용자: 에이전시](#대상-사용자-에이전시)
-- [대상 사용자: 하위 계정 - 둘 다 설치 가능](#대상-사용자-하위-계정-둘-다-설치-가능)
-- [대상 사용자: 하위 계정 - 에이전시만 설치 가능](#대상-사용자-하위-계정-에이전시만-설치-가능)
-
-## 앱 배포 모델
-
-원하는 앱 배포 모델을 설정하기 위해 세 가지 필드를 사용합니다:
+원하는 앱 배분 방식을 설정하려면 필드 세 가지를 지정해요.
 
 | 필드 | 값 | 설명 |
-|------|----|----|
-| 앱의 대상 사용자는 누구인가요? | 'Agency' / 'Sub-account' | • 누가 앱과 상호작용할 예정인가요?<br>• 즉, 앱이 최종적으로 필요로 하는 액세스 토큰은 누구의 것인가요?<br>• 앱의 95%는 "Sub-account"에 해당합니다 (권장)<br>• 이 필드는 설정 후 수정할 수 없습니다. |
-| 누가 앱을 설치할 수 있나요? | 'Both Agency and Sub-account' / 'Agency Only' | • 어떤 사용자가 마켓플레이스 UI에서 앱을 보고 설치할 수 있나요?<br>• **권장 옵션은 "Both Agency & Sub-account"**입니다. 앱이 최대한 많은 사용자에게 도달할 수 있도록 보장합니다<br>• 에이전시만 발견하여 하위 계정에 설치할 수 있는 완전 화이트라벨 SaaS 기능으로 앱을 구축하는 경우에만 "Agency Only"를 사용하세요. |
-| 이 앱을 에이전시에서 일괄 설치할 수 있나요? | 'Yes' / 'No' | • 이는 **마켓플레이스에 이미 등록된 앱의 역호환성만을 위한** 것입니다. 앞으로 마켓플레이스에 추가되는 모든 앱은 "Yes"로 설정됩니다 (필수).<br>• 'Yes'인 경우, 에이전시 소유자/관리자가 한 번의 작업으로 여러 하위 계정에 앱을 설치할 수 있습니다.<br>• 'Yes'로 설정되면 이 필드를 'No'로 되돌릴 수 없습니다. |
+| --- | --- | --- |
+| **Who is the target user of the app?**(앱의 대상 사용자는 누구인가요?) | **Agency**(에이전시) / **Sub-account**(서브 계정) | - 누가 앱을 사용하나요?<br>- 다시 말해, 앱이 최종적으로 누구의 액세스 토큰을 필요로 하나요?<br>- 앱의 95%는 **Sub-account**(권장)에 해당해요.<br>- 이 필드는 한 번 설정하면 바꿀 수 없어요. |
+| **Who can install the app?**(누가 앱을 설치할 수 있나요?) | **Both Agency and Sub-account**(에이전시와 서브 계정 모두) / **에이전시 전용** | - 마켓플레이스 화면에서 앱을 보고 설치할 수 있는 사용자를 정해요.<br>- 앱이 최대한 많은 사용자에게 닿으려면 **Both Agency and Sub-account**를 권장해요.<br>- 에이전시만 찾아서 자기 서브 계정에 설치할 수 있는 완전한 화이트라벨 SaaS 기능으로만 앱을 만든다면 **에이전시 전용**을 선택하세요. |
+| **Can this app be bulk-installed by agencies?**(에이전시가 이 앱을 일괄 설치할 수 있나요?) | **예** / **아니오** | - 이 필드는 이미 마켓플레이스에 있는 앱과의 호환성을 유지하기 위한 것이에요. 앞으로 마켓플레이스에 추가되는 모든 앱은 **예**로 설정돼요(필수).<br>- **예**이면 에이전시 소유자·관리자가 한 번의 작업으로 여러 서브 계정에 앱을 설치할 수 있어요.<br>- 한 번 **예**로 설정하면 **아니오**로 되돌릴 수 없어요. |
 
-## 비공개 앱 설치 제한 (정책)
+## 비공개 앱 설치 한도(정책)
 
-마켓플레이스 앱이 앱 유형 = Private로 설정된 경우, 설치는 소규모 파일럿으로 제한됩니다:
+마켓플레이스 앱의 **App type**(앱 유형)을 **Private**(비공개)로 설정하면 소규모 시범 운영 형태로 설치가 제한돼요.
 
-**제한:** 비공개 앱은 최대 5개 에이전시에 설치할 수 있습니다.
+- 한도: 비공개 앱은 최대 5개 에이전시에 설치할 수 있어요.
+- 차단: 앱이 설치된 에이전시가 6개 이상이 되면, 개발자가 아래 중 하나를 할 때까지 신규 설치가 차단돼요.
+  1. 앱을 **Public**(공개, 목록에 노출)으로 게시해요.
+  2. 보안 검토를 통과해요. 승인되면 앱을 **Private**으로 유지한 채 설치를 계속할 수 있어요.
 
-**차단:** 앱이 6개 이상의 에이전시에 도달하면, 개발자가 다음 중 하나를 수행할 때까지 새로운 설치가 차단됩니다:
+**집계 규칙**
 
-- 앱을 Public(목록에 표시)으로 게시합니다.
-- 보안 검토를 통과합니다 (승인되면 앱은 비공개로 유지될 수 있고 설치를 계속할 수 있습니다).
+- 에이전시 하나를 1로 세요. 그 에이전시의 서브 계정(위치) 몇 곳에 설치했는지는 상관없어요.
+- 일괄 설치도 에이전시당 1로 세요.
+- 에이전시에서 앱이 완전히 삭제되면 집계 수가 실시간으로 갱신돼요.
 
-**계산 규칙**
+---
 
-각 고유한 에이전시는 앱이 설치된 하위 계정(로케이션) 수에 관계없이 1로 계산됩니다.
+## 배분 시나리오
 
-일괄 설치도 에이전시당 1로 계산됩니다.
+개발자가 설정한 배분 구성, 사용자의 설치 상황, 올바른 액세스 토큰을 받는 방법을 정리한 표예요. 1단계에서는 액세스 토큰 가져오기(Get Access Token) API의 응답으로 설치 유형을 확인해요.
 
-앱이 에이전시에서 완전히 제거되면 실시간으로 계산이 업데이트됩니다.
+| 대상 사용자 | 설치 가능 대상 | 에이전시 일괄 설치 가능 여부 | 설치 시나리오 | 1단계: 설치 유형 확인 (액세스 토큰 가져오기 API 응답) | 2단계 |
+| --- | --- | --- | --- | --- | --- |
+| 에이전시 | 해당 없음 | 해당 없음 | 에이전시 사용자가 앱을 설치해요 | `"isBulkInstallation": false`<br>`"userType": "Company"` | 해당 없음 |
+| 서브 계정 | 에이전시와 서브 계정 모두 | 아니오 | 서브 계정 사용자가 앱을 설치해요 | `"isBulkInstallation": false`<br>`"userType": "Location"` | 해당 없음 |
+| 서브 계정 | 에이전시와 서브 계정 모두 | 아니오 | 에이전시 사용자가 앱을 설치해요 | `"isBulkInstallation": false`<br>`"userType": "Location"` | 해당 없음 |
+| 서브 계정 | 에이전시와 서브 계정 모두 | 예 | 서브 계정 사용자가 앱을 설치해요 | `"isBulkInstallation": false`<br>`"userType": "Location"` | 해당 없음 |
+| 서브 계정 | 에이전시와 서브 계정 모두 | 예 | [신규·권장] 에이전시 사용자가 앱을 설치해요 | `"isBulkInstallation": true`<br>`"userType": "Company"` | 1. 앱이 설치된 서브 계정 가져오기(Get sub-accounts where app is installed)<br>2. 앱이 설치된 서브 계정(위치)마다 에이전시 토큰으로 위치 토큰 가져오기(Get Location Token using Agency Token)<br>3. 이후 자동으로 이뤄지는 설치나 SaaS 플랜에 포함된 설치는 AppInstall 웹훅 이벤트로 받고, 새로 설치된 서브 계정(위치)마다 에이전시 토큰으로 위치 토큰 가져오기 |
+| 서브 계정 | 에이전시 전용 | 예 | 에이전시 사용자가 앱을 설치해요 | `"isBulkInstallation": true`<br>`"userType": "Company"` | -|
 
-## 배포 시나리오
+## [배분 유형별로 지원하는 가격 모델 안내 문서](set-up-your-marketplacapp-pricing.md)
 
-| 개발자의 배포 설정 시나리오 | 사용자 설치 시나리오 | 올바른 액세스 토큰 얻기 |
-|---|---|---|
-| **대상 사용자는 누구인가요?** | **누가 앱을 설치할 수 있나요?** | **에이전시에서 앱을 일괄 설치할 수 있나요?** |
-| Agency | NA | NA | Agency 사용자가 앱 설치 | **1단계:** [Get Access Token API](https://marketplace.hyperclass.ai/docs/ghl/oauth/get-access-token)에서 설치 유형 확인<br>"isBulkInstallation" : false,<br>"userType" : "Company" | **2단계:** NA |
-| Sub-account | Agency & sub-account | No | Sub-account 사용자가 앱 설치 | "isBulkInstallation" : false,<br>"userType" : "Location" | NA |
-| | | | Agency 사용자가 앱 설치 | "isBulkInstallation" : false,<br>"userType" : "Location" | NA |
-| | | Yes | Sub-account 사용자가 앱 설치 | "isBulkInstallation" : false,<br>"userType" : "Location" | NA |
-| | | | **[새롭고 권장되는 방식]**<br>Agency 사용자가 앱 설치 | "isBulkInstallation" : true,<br>"userType" : "Company" | 1. [앱이 설치된 하위 계정 가져오기](https://marketplace.hyperclass.ai/docs/ghl/oauth/get-installed-location)<br>2. 앱이 설치된 모든 로케이션에 대해 [에이전시 토큰을 사용하여 로케이션 토큰 가져오기](https://marketplace.hyperclass.ai/docs/ghl/oauth/get-location-access-token)<br>3. 향후 자동 설치나 SaaS 플랜의 일부로 수행되는 설치에 대해 [AppInstall 웹훅 이벤트](https://marketplace.hyperclass.ai/docs/webhook/AppInstall) 수신 및 새로 설치된 로케이션에 대해 [에이전시 토큰을 사용하여 로케이션 토큰 가져오기](https://marketplace.hyperclass.ai/docs/ghl/oauth/get-location-access-token) |
-| | Agency Only | Yes | Agency 사용자가 앱 설치 | "isBulkInstallation" : true,<br>"userType" : "Company" | 위와 동일 |
+---
 
-## [각 배포 모델별 지원 가격 모델을 설명한 문서](../../36-기타/리커버리/set-up-your-app-pricing.md)
+## 기존 앱과의 호환성
 
-## 역호환성
+기존 앱은 지금의 설치 흐름과 토큰 교환 방식이 그대로 유지되도록, 기존 **배분 유형**을 아래와 같이 필드 값으로 설정해 두었어요.
 
-기존 앱의 현재 설치 플로우와 토큰 교환 메커니즘을 유지하기 위해, 기존/레거시 배포 유형에 대해 다음과 같이 필드를 설정했습니다:
+| 기존 **배분 유형** | 대상 사용자 | 설치 가능 대상 | 에이전시 일괄 설치 가능 여부 | 앱 도달 범위를 넓히는 방법 |
+| --- | --- | --- | --- | --- |
+| 에이전시 전용 | 에이전시 | 해당 없음 | 해당 없음 | 해당 없음 |
+| 서브 계정 전용 | 서브 계정 | 에이전시와 서브 계정 모두 | 아니오 | 1. 앞에서 설명한 일괄 설치 흐름용 토큰 교환 방식을 개발해요.<br>2. 개발이 끝나면 **Can this app be bulk-installed by agencies?** 를 **예**로 설정해요. |
+| 에이전시 서브 계정 | 서브 계정 | 에이전시 전용 | 예 | 서브 계정에서도 앱을 쓸 수 있게 하려면, 앱이 아래와 같은 에이전시 수준 권한을 요구하지 않아야 해요.<br>• 에이전시 수준 스코프: `companies.readonly`, `companies.write`, `location.write`, `saas/location.write`, `snapshots.readonly`, `snapshots.write`, `custom-menu-link.readonly`, `custom-menu-link.write`<br>• `Module > Snapshots`<br>• `Module > CustomJS`<br><br>위 항목이 하나도 필요 없다면 다음 순서로 진행해요.<br>1. 서브 계정 관리자가 설치할 수 있는 OAuth 흐름을 개발해요. 앞에서 설명한 대로 `userType: Location` 토큰이 만들어져요.<br>2. 개발이 끝나면 **Who can install the app?** 를 **Both Agency and Sub-account** 로 바꿔요. |
 
-| 레거시 배포 유형 | 역호환성 보장을 위한 개발자의 배포 설정 매핑 | 앱의 도달 범위를 최대화하는 방법에 대한 권장사항 |
-|---|---|---|
-| | **대상 사용자는 누구인가요?** | **누가 앱을 설치할 수 있나요?** | **에이전시에서 앱을 일괄 설치할 수 있나요?** |
-| Agency Only | Agency | NA | NA | NA |
-| Sub-account Only | Sub-account | Agency & sub-account | No | 1. 위에서 언급한 일괄 설치 플로우를 위한 토큰 교환 메커니즘 개발<br>2. 완료 후 "에이전시에서 앱을 일괄 설치할 수 있나요?"를 "Yes"로 설정 |
-| Agency & Sub-account | Sub-account | Agency Only | Yes | 앱을 하위 계정에서도 접근 가능하게 하려면, 앱이 다음과 같은 에이전시 레벨 접근을 필요로 하지 않아야 합니다:<br>- Agency Level Scopes - companies.readonly, companies.write, location.write, saas/location.write, snapshots.readonly, snapshots.write, custom-menu-link.readonly, custom-menu-link.write<br>- Module > Snapshots<br>- Module > CustomJS<br><br>앱이 위의 사항을 필요로 하지 않는 경우:<br>1. 하위 계정 관리자의 설치를 위한 OAuth 플로우 개발 (위에서 언급한 대로 userType: Location 토큰 생성)<br>2. 완료 후 "누가 앱을 설치할 수 있나요?"를 "Agency & sub-account"로 변경 |
+---
 
 ## 대상 사용자: 에이전시
 
-앱의 기능이 에이전시 레벨 계정에만 적용되는 경우 에이전시 배포 유형을 선택하세요.
+앱 기능이 에이전시 계정에만 해당한다면 **Agency**(에이전시) 배분 유형을 선택하세요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048583581/original/w4Mv3eWxtc7ky1cU_fU1FfLuBdg8fYAt_w.png?1750392548)
+![에이전시 배분 유형 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048583581/original/w4Mv3eWxtc7ky1cU_fU1FfLuBdg8fYAt_w.png?1750392548)
 
-**앱 목록**: 앱은 에이전시 레벨 앱 마켓플레이스에만 표시됩니다.
+앱 목록 노출: 앱은 에이전시용 마켓플레이스에만 표시돼요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048583594/original/f4TxfrBHaJTtETQV7pYDWWQ4nI5z7bz-vw.png?1750392601)
+![에이전시용 마켓플레이스 앱 목록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048583594/original/f4TxfrBHaJTtETQV7pYDWWQ4nI5z7bz-vw.png?1750392601)
 
-**설치 및 제거**: 에이전시 관리자 또는 소유자만이 에이전시 계정 레벨에서 앱을 설치하거나 제거할 권한이 있습니다.
+설치 및 삭제: 에이전시 계정 수준에서 앱을 설치하거나 삭제할 수 있는 사람은 에이전시 관리자 또는 소유자뿐이에요.
 
-**결제**: 유료 애플리케이션의 경우, 설치하는 에이전시가 앱 비용을 부담합니다.
+결제: 유료 앱은 앱을 설치한 에이전시가 비용을 부담해요.
 
-**재판매**: 에이전시는 이러한 앱을 재판매할 수 없습니다. 하위 계정 레벨에서 설치할 수 없기 때문입니다.
-
-## 대상 사용자: 하위 계정 - 둘 다 설치 가능
-
-앱의 기능이 하위 계정 레벨 계정을 위한 것이라면 하위 계정(둘 다 설치 가능) 유형을 선택하세요.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048583624/original/kJtU4fEgullilWG0fxoAnDDRM-hJdD-cdg.png?1750392750)
-
-**앱 목록**: 이러한 앱은 에이전시 소유자/관리자와 하위 계정 관리자 모두 설치할 수 있습니다. 이 앱들은 두 마켓플레이스 모두에 표시됩니다.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048583635/original/eYRbavl9kxE3dTmJWUzJ26BuxrtACE9o4g.png?1750392836)
-
-**설치 및 제거**: 하위 계정 관리자와 에이전시 관리자 모두 앱을 설치할 수 있습니다.
-
-하위 계정 관리자는 이러한 앱을 찾아서 해당 하위 계정에 설치할 수 있습니다.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023404538/original/lQxf69LOM8uFEPOdE9MQ6M8gYq-b4GDkoA.png?1711222807)
-
-**일괄 설치**: 앱 개발자가 일괄 설치를 지원하는 경우, 에이전시 관리자는 이러한 앱을 일괄 설치할 수 있습니다. 지원하지 않는 경우, 에이전시 관리자는 한 번에 하나의 하위 계정씩 앱을 설치할 수 있습니다. 에이전시는 초기 설치 시 '모든 하위 계정' 옵션을 선택하면 향후 하위 계정에 이러한 앱을 자동으로 설치할 수 있습니다.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023404499/original/MqHiBlSiuQlJPZxBKZ49b7ZdsXzUeYZ6tw.png?1711222532)
-
-**결제**: 유료 앱을 설치하는 하위 계정이 비용을 부담합니다.
-
-**재판매**: 이러한 앱은 에이전시에서 재판매할 수 있습니다.
-
-## 대상 사용자: 하위 계정 - 에이전시만 설치 가능
-
-에이전시 소유자만이 유일한 관련 설치자가 되도록 앱이 설계된 경우 하위 계정(에이전시만 설치 가능) 배포 유형을 선택하세요.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048584235/original/ifH_YbCWG2-uY5wxZFLw6jeWGAm3Ma0PpQ.png?1750394316)
-
-**앱 목록**: 이러한 앱은 마켓플레이스의 에이전시 뷰에서만 표시됩니다.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023404478/original/ZaZlYBRJIocjPL0AfUJkH_yXBSpC_BEoWg.png?1711222458)
-
-**설치 및 제거**: 하위 계정 레벨에서 이러한 앱의 설치 및 제거는 에이전시 관리자 또는 소유자만 수행할 수 있습니다.
-
-**일괄 설치**: 활성화된 경우, 에이전시 관리자는 이러한 앱을 일괄 설치할 수 있습니다. 비활성화된 경우, 에이전시 관리자는 한 번에 하나의 하위 계정씩 앱을 설치할 수 있습니다. 에이전시는 초기 설치 시 '모든 하위 계정' 옵션을 선택하면 향후 하위 계정에 이러한 앱을 자동으로 설치할 수 있습니다.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023404499/original/MqHiBlSiuQlJPZxBKZ49b7ZdsXzUeYZ6tw.png?1711222532)
-
-**재판매**: 에이전시는 이러한 앱을 하위 계정에 재판매할 수 있으며, 에이전시는 개발자가 설정한 기본 가격을 지불하고 하위 계정은 에이전시가 설정한 마크업된 가격을 지불합니다.
+재판매: 이 앱은 서브 계정 수준에서 설치할 수 없으므로 에이전시가 재판매할 수 없어요.
 
 ---
-*원문 최종 수정: Mon, 30 Mar, 2026 at 5:43 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+
+## 대상 사용자: 서브 계정 — 둘 다 설치 가능
+
+앱 기능이 서브 계정에서 쓰도록 만들어졌다면 **Sub-account (both can install)**(서브 계정 – 둘 다 설치 가능) 유형을 선택하세요.
+
+![서브 계정(둘 다 설치 가능) 배분 유형 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048583624/original/kJtU4fEgullilWG0fxoAnDDRM-hJdD-cdg.png?1750392750)
+
+앱 목록 노출: 에이전시 소유자·관리자와 서브 계정 관리자 모두 이 앱을 설치할 수 있어요. 앱은 두 마켓플레이스에 모두 표시돼요.
+
+![두 마켓플레이스에 모두 표시되는 앱 목록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048583635/original/eYRbavl9kxE3dTmJWUzJ26BuxrtACE9o4g.png?1750392836)
+
+설치 및 삭제: 서브 계정 관리자와 에이전시 관리자 모두 앱을 설치할 수 있어요. 서브 계정 관리자는 이 앱을 직접 찾아 자기 서브 계정에 설치할 수 있어요.
+
+일괄 설치: 앱 개발자가 일괄 설치를 지원하면 에이전시 관리자가 이 앱을 일괄 설치할 수 있어요. 지원하지 않으면 서브 계정을 하나씩 설치해야 해요. 처음 설치할 때 **all sub-accounts**(모든 서브 계정) 옵션을 선택하면, 앞으로 생기는 서브 계정에도 앱이 자동으로 설치돼요.
+
+![모든 서브 계정에 일괄 설치하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023404499/original/MqHiBlSiuQlJPZxBKZ49b7ZdsXzUeYZ6tw.png?1711222532)
+
+결제: 유료 앱은 앱을 설치한 서브 계정이 비용을 부담해요.
+
+재판매: 에이전시가 이 앱을 재판매할 수 있어요.
+
+---
+
+## 대상 사용자: 서브 계정 — 에이전시만 설치 가능
+
+에이전시 소유자만 설치하도록 앱을 설계했다면 **Sub-account (only agency can install)**(서브 계정 – 에이전시만 설치 가능) 배분 유형을 선택하세요.
+
+![서브 계정(에이전시만 설치 가능) 배분 유형 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048584235/original/ifH_YbCWG2-uY5wxZFLw6jeWGAm3Ma0PpQ.png?1750394316)
+
+앱 목록 노출: 이 앱은 마켓플레이스의 에이전시 화면에만 표시돼요.
+
+![에이전시 화면에만 표시되는 앱 목록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023404478/original/ZaZlYBRJIocjPL0AfUJkH_yXBSpC_BEoWg.png?1711222458)
+
+설치 및 삭제: 서브 계정 수준에서 이 앱을 설치하거나 삭제하는 일은 에이전시 관리자 또는 소유자만 할 수 있어요.
+
+일괄 설치: 일괄 설치가 활성화되어 있으면 에이전시 관리자가 이 앱을 일괄 설치할 수 있어요. 그렇지 않으면 서브 계정을 하나씩 설치해야 해요. 처음 설치할 때 **all sub-accounts**(모든 서브 계정) 옵션을 선택하면, 앞으로 생기는 서브 계정에도 앱이 자동으로 설치돼요.
+
+![모든 서브 계정에 일괄 설치하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023404499/original/MqHiBlSiuQlJPZxBKZ49b7ZdsXzUeYZ6tw.png?1711222532)
+
+재판매: 에이전시가 이 앱을 자기 서브 계정에 재판매할 수 있어요. 에이전시는 개발자가 정한 기본 가격을 내고, 서브 계정은 에이전시가 정한 마크업 가격을 내요.

@@ -1,55 +1,54 @@
 ---
-
-번역일: 2026-04-06
-카테고리: 04-캘린더-예약 > 캘린더-만들기
+원문: /support/solutions/articles/155000002738-cancellation-reschedule-policy-booking-widget-
+번역일: 2026-11-07
+카테고리: 04-캘린더-예약
 ---
 
-# 취소 및 일정 변경 정책 (예약 위젯)
+# 예약 위젯의 취소·일정 변경 정책
 
-목차
-
-- [개요](#개요)
-- [사용 방법](#사용-방법)
-- [예약자가 취소 및 일정 변경 링크를 받는 방법](#예약자가-취소-및-일정-변경-링크를-받는-방법)
-
----
+예약자가 예약 위젯에서 취소 링크나 일정 변경 링크를 쓸 수 있는 기간을 정하는 설정이에요. 예약 직전에 일정이 바뀌는 일을 줄이고 싶을 때 사용하세요.
 
 ## 개요
 
-취소 및 일정 변경 정책 설정을 통해 예약 위젯에서 예약자가 취소 또는 일정 변경 링크에 접근할 수 있는 시간 범위를 정의할 수 있습니다.
+취소·일정 변경 정책 설정으로 예약자가 예약 위젯에서 취소 링크나 일정 변경 링크에 접근할 수 있는 기간을 정할 수 있어요.
 
-이 기능을 사용하면 일정 시간이 지난 후에는 예약자가 취소나 일정 변경 링크에 접근하여 예약을 수정할 수 없도록 제한할 수 있습니다. 대신 변경사항이 필요한 경우 비즈니스 담당자에게 직접 연락해야 합니다. 이는 주로 비즈니스에서 막판 예약 변경을 방지하는 데 도움이 됩니다.
-
----
+정해 둔 기간이 지나면 예약자는 링크로 예약을 바꿀 수 없어요. 이후에 변경하려면 사업주에게 직접 문의해야 해요. 주로 예약 직전의 변경을 막는 데 도움이 돼요.
 
 ## 사용 방법
 
-- Calendar Settings(캘린더 설정)으로 이동하여 원하는 캘린더를 선택하세요.
+1. **캘린더 설정**으로 이동해 원하는 캘린더를 선택해요.
+2. **Notifications**(알림)와 **추가 옵션** 섹션으로 이동해요.
+3. **Cancellation and Reschedule Policy**(취소 및 일정 변경 정책) 아래에서 **Allow Cancellation of Meeting**(미팅 취소 허용)과 **Allow Rescheduling of Meeting**(미팅 일정 변경 허용)을 켜요.
 
-- Notifications and Additional Options(알림 및 추가 옵션) 섹션으로 이동하세요.
+   ![취소 및 일정 변경 정책의 허용 옵션을 켠 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033230340/original/MGArGrsEbh_tCpZA3xJKHLl8MT4AbFkWww.png?1726823029)
 
-- Cancellation and Reschedule Policy(취소 및 일정 변경 정책) 아래에서 "Allow Cancellation of Meeting(미팅 취소 허용)"과 "Allow Rescheduling of Meeting(미팅 일정 변경 허용)"을 활성화하세요.
+4. 링크를 비활성화할 시간 범위를 지정해요.
 
-![취소 및 일정 변경 정책 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033230340/original/MGArGrsEbh_tCpZA3xJKHLl8MT4AbFkWww.png?1726823029)
+   ![링크를 비활성화할 시간 범위를 지정하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033230968/original/erSvM9kLoVd-ymDmepj8Q0ymFUa9TTZOvg.png?1726823494)
 
-- 링크가 비활성화될 시간 범위를 지정하세요. (참고: 값을 비워두면 링크가 만료되지 않으며 예약자가 언제든지 접근할 수 있습니다.)
+{% hint style="info" %}
+값을 비워 두면 링크가 만료되지 않아요. 예약자는 언제든 링크를 쓸 수 있어요.
+{% endhint %}
 
-![시간 범위 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033230968/original/erSvM9kLoVd-ymDmepj8Q0ymFUa9TTZOvg.png?1726823494)
+**이 설정을 켜면**
 
-이 설정이 활성화되면:
+추가 메모 영역에 취소 링크와 일정 변경 링크가 들어가고, 캘린더 초대에도 포함돼요. 이 링크는 설정한 기간이 지나면 만료돼요. 그러면 예약자는 미팅을 취소하거나 일정을 바꿀 수 없어요.
 
-취소 링크와 일정 변경 링크가 추가 메모 섹션에 추가되고 캘린더 초대에 포함됩니다. 이러한 링크는 설정된 시간에 따라 만료되어 예약자가 미팅을 취소하거나 일정을 변경하는 것을 방지합니다.
+![추가 메모 영역에 취소 링크와 일정 변경 링크가 표시된 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155028626656/original/zXnX_zWHfeFSujbXsJo_pLkf7ip-kwMigQ.png?1719999815)
 
-![캘린더 초대 메모의 링크](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155028626656/original/zXnX_zWHfeFSujbXsJo_pLkf7ip-kwMigQ.png?1719999815)
+## 예약자는 취소·일정 변경 링크를 어떻게 받나요?
 
----
+**Allow Cancellation of Meeting**(미팅 취소 허용)과 **Allow Rescheduling of Meeting**(미팅 일정 변경 허용)을 켜면 두 링크가 추가 메모 영역에 들어가요. 이 영역의 내용은 캘린더 초대의 메모에도 포함돼요. 예약자는 이 링크로 예약을 취소하거나 일정을 변경할 수 있어요.
 
-## 예약자가 취소 및 일정 변경 링크를 받는 방법
+워크플로우에서 커스텀 값 `{{appointment.reschedule_link}}`와 `{{appointment.cancellation_link}}`를 써서 예약자에게 링크를 보낼 수도 있어요. 이 값은 예약과 관련된 이벤트로 시작하는 워크플로우에서만 작동해요. 예를 들어 **Appointment Status**(예약 상태)나 **Customer Booked Appointment**(고객 예약 완료) 트리거가 있어요. 일반 폼 제출이나 단계 변경처럼 예약 트리거가 없는 워크플로우에는 예약 정보가 전달되지 않아서 값이 빈 칸으로 나와요.
 
-"Allow Cancellation(취소 허용)"과 "Allow Reschedule(일정 변경 허용)"을 활성화하면 이러한 링크가 추가 메모 섹션에 추가됩니다. 이 섹션의 내용은 캘린더 초대의 메모 섹션에 포함됩니다. 예약자는 해당 링크를 사용하여 예약을 취소하거나 일정을 변경할 수 있습니다.
+미팅과 서비스는 이미 만든 예약에서 바로 일정 변경 링크를 만들 수도 있어요.
 
-또는 워크플로우에서 커스텀 값 `{{appointment.reschedule_link}}`와 `{{appointment.cancellation_link}}`을 사용하여 예약자에게 이러한 링크를 발송할 수 있습니다. 이러한 값들은 Appointment Status(예약 상태)나 Customer Booked Appointment(고객 예약 완료)와 같은 예약 기반 이벤트로 워크플로우가 트리거되는 경우에만 작동합니다. 예약 트리거가 없는 워크플로우(일반적인 폼 제출이나 단계 변경 등)는 예약 컨텍스트를 전달하지 않으므로 해당 값들이 빈 값으로 렌더링됩니다.
+1. 예약을 열어요.
+2. **예약 액션**을 클릭해요.
+3. **Generate Reschedule Link**(일정 변경 링크 생성)를 선택해요.
+4. **링크 복사**를 클릭해요.
 
----
-*원문 최종 수정: Mon, 9 Jun, 2025 at 3:21 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+복사한 링크는 원하는 방법으로 고객에게 전달하면 돼요.
+
+이렇게 하면 고객이 일정 변경 링크가 들어 있는 이전 캘린더 초대, 이메일, 알림을 찾지 않아도 일정 변경 화면으로 들어갈 수 있어요.

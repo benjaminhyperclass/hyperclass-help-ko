@@ -1,122 +1,108 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 07-워크플로우 > Internal Tools Workflow Actions
+원문: /support/solutions/articles/155000002553-workflow-action-remove-from-workflow
+번역일: 2026-11-06
+카테고리: 07-워크플로우
 ---
 
-# 워크플로우 액션 - 워크플로우에서 제거
+# 워크플로우 액션 — Remove from Workflow(워크플로우에서 제거)
 
-이 글에서는 "워크플로우에서 제거(Remove from Workflow)" 액션을 사용하여 자동화 워크플로우에서 연락처를 효율적으로 관리하는 방법을 알아보겠습니다. 이 액션의 기능과 주요 이점을 설명하고, 단계별 설정 가이드를 제공합니다. 또한 실제 사례를 통해 이 액션이 어떻게 프로세스를 간소화하고 고객 커뮤니케이션을 개선하는지 보여드리겠습니다.
+**Remove from Workflow**(워크플로우에서 제거) 액션은 연락처를 워크플로우에서 자동으로 빼 주는 액션이에요. 이 문서에서는 액션이 하는 일과 장점, 설정 방법, 실제 활용 예시를 알려 드려요.
 
-목차
+## Remove from Workflow 액션이란?
 
-- 워크플로우에서 제거 액션이란?
-- 워크플로우에서 제거 액션의 주요 이점
-- 워크플로우에서 제거 액션 설정: 단계별 과정
-- 활용 사례
-- FAQ
+**Remove from Workflow** 액션은 특정 트리거나 조건에 따라 연락처를 하나 또는 여러 워크플로우에서 자동으로 제거해요. 연락처가 더 이상 필요 없는 워크플로우에 남아 있지 않게 정리해 주기 때문에, 알맞은 시점에 알맞은 메시지만 받을 수 있어요. 같은 내용이나 상황에 맞지 않는 메시지가 계속 가는 일도 줄어요.
 
-# 워크플로우에서 제거 액션이란?
+## Remove from Workflow 액션의 장점
 
-"워크플로우에서 제거" 액션은 워크플로우에서 연락처 관리를 자동화하는 강력한 도구입니다. 특정 트리거나 조건에 따라 하나 또는 여러 워크플로우에서 연락처를 자동으로 제거할 수 있습니다. 워크플로우를 깔끔하고 관련성 있게 유지함으로써, 연락처가 적절한 시점에 올바른 커뮤니케이션을 받을 수 있도록 하며, 중복되거나 관련 없는 상호작용으로 인한 부담을 줄입니다.
+1. **연락처 관리가 편해져요:** 더 이상 참여할 필요가 없는 워크플로우에서 연락처를 자동으로 제거해 시간과 수고를 줄여 줘요.
+2. **메시지가 상황에 맞게 가요:** 연락처의 현재 상태에 해당하는 워크플로우에만 남겨 두기 때문에, 중복되거나 맞지 않는 메시지를 받지 않아요.
+3. **자동화가 효율적이에요:** 연락처를 직접 제거할 일이 줄어서 더 중요한 업무에 집중할 수 있어요.
+4. **고객 경험이 좋아져요:** 불필요한 이메일이나 알림에 시달리지 않고 꼭 필요한 안내만 받아요.
 
-## 워크플로우에서 제거 액션의 주요 이점
+## Remove from Workflow 액션 설정하기
 
-- **간소화된 연락처 관리**: 더 이상 필요하지 않은 워크플로우에서 연락처를 자동으로 제거하여 시간과 노력을 절약합니다.
-- **커뮤니케이션 관련성 향상**: 현재 상태에 적합한 워크플로우에만 연락처를 유지하여 중복되거나 관련 없는 메시지 수신을 방지합니다.
-- **자동화 효율성**: 연락처 제거 과정을 자동화하여 수동 개입을 줄이고, 더 전략적인 업무에 집중할 수 있습니다.
-- **고객 경험 개선**: 불필요한 이메일이나 알림으로 압도당하지 않도록 적절한 커뮤니케이션을 보장합니다.
+1. 왼쪽 메뉴에서 **자동화 > 워크플로우**를 클릭하세요.
 
-## 워크플로우에서 제거 액션 설정: 단계별 과정
+   ![자동화 메뉴에서 워크플로우 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037743577/original/LducBGjpOhjDCyAciTCMv6xmHWntNsT0eQ.png?1733319807)
 
-CRM의 "Automation(자동화)" 섹션으로 이동하세요. 거기서 **"Workflows(워크플로우)"** 메뉴를 클릭하세요.
+2. **+ Create Workflow**(워크플로우 만들기) 버튼을 클릭하세요.
+3. 드롭다운 메뉴에서 **+ 처음부터 시작**을 클릭하세요. 워크플로우 편집 화면으로 이동해요.
 
-![워크플로우 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037743577/original/LducBGjpOhjDCyAciTCMv6xmHWntNsT0eQ.png?1733319807)
+   ![처음부터 시작 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038188859/original/bSWlYHJGZWprpe5cfNxNfeUQjg8BIywZEw.png?1733983194)
 
-**"+ Create Workflow(워크플로우 생성)"** 버튼을 클릭하세요. 다음으로 드롭다운 메뉴에서 **"+ Start from Scratch(처음부터 시작)"** 옵션을 클릭하세요. 워크플로우 편집기 메뉴로 이동합니다.
+### 액션 추가하기
 
-![워크플로우 생성](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038188859/original/bSWlYHJGZWprpe5cfNxNfeUQjg8BIywZEw.png?1733983194)
+1. **+** 아이콘을 클릭하면 워크플로우 액션 목록이 나와요.
+2. 목록을 아래로 스크롤해 **Remove from Workflow** 액션을 찾아 클릭하세요. 설정 화면이 열려요.
 
-워크플로우에서 제거 액션 추가
+   ![액션 목록에서 Remove from Workflow 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037749735/original/cDMwvUsu4s0n_nF2gN1fXpMumVR63h1wVA.png?1733323255)
 
-모든 워크플로우 액션 목록을 보려면 "+" 아이콘을 클릭하세요. 목록이 나타나면 아래로 스크롤하여 **"Remove from Workflow(워크플로우에서 제거)"** 액션을 찾으세요. 해당 액션을 클릭하여 설정을 구성하세요.
+### 액션 이름 정하기
 
-![워크플로우에서 제거 액션 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037749735/original/cDMwvUsu4s0n_nF2gN1fXpMumVR63h1wVA.png?1733323255)
+**Action Name**(액션 이름)에 워크플로우에서 쉽게 알아볼 수 있는 이름을 입력하세요. 예를 들면 "마케팅 캠페인 워크플로우에서 제거"처럼 쓸 수 있어요.
 
-액션 이름 지정
+![액션 이름 입력](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037749730/original/K6R-lpptNAiWwmR5mZaPcoHG-Tu1OZgUMg.png?1733323246)
 
-워크플로우에서 쉽게 식별할 수 있도록 액션에 설명적인 이름을 제공하세요(예: "마케팅 캠페인 워크플로우에서 제거").
+### 제거 방식 선택하기
 
-![액션 이름 지정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037749730/original/K6R-lpptNAiWwmR5mZaPcoHG-Tu1OZgUMg.png?1733323246)
+아래 중 원하는 옵션을 고르세요.
 
-워크플로우 제거 옵션 선택
+- **Current Workflow**(현재 워크플로우): 연락처가 지금 들어 있는 워크플로우에서 제거해요.
+- **Another Workflow**(다른 워크플로우): 연락처를 제거할 다른 워크플로우를 직접 지정해요.
+- **All Except Current Workflow**(현재 워크플로우를 제외한 전체): 지금 들어 있는 워크플로우를 뺀 나머지 모든 워크플로우에서 제거해요.
+- **All Workflows**(모든 워크플로우): 진행 중인 모든 워크플로우에서 제거해요.
 
-- **Current Workflow(현재 워크플로우)**: 현재 진행 중인 워크플로우에서 연락처를 제거합니다.
-- **Another Workflow(다른 워크플로우)**: 연락처를 제거할 다른 워크플로우를 지정합니다.
-- **All Except Current Workflow(현재 워크플로우 제외 전체)**: 현재 워크플로우를 제외한 모든 워크플로우에서 연락처를 제거합니다.
-- **All Workflows(모든 워크플로우)**: 모든 활성 워크플로우에서 연락처를 제거합니다.
+![제거 방식 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038191746/original/GZ0jPomXVuNWGsyullicEeQ7U01QHyYBaQ.png?1733986911)
 
-![워크플로우 제거 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038191746/original/GZ0jPomXVuNWGsyullicEeQ7U01QHyYBaQ.png?1733986911)
+드롭다운에서 연락처를 제거할 워크플로우를 선택하세요.
 
-드롭다운에서 연락처를 제거하고자 하는 워크플로우를 선택하세요.
+![제거할 워크플로우 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037749816/original/UmFTlc2p8-Du7R-MX4Ys2EiWR3KKBCwmxw.png?1733323294)
 
-![워크플로우 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037749816/original/UmFTlc2p8-Du7R-MX4Ys2EiWR3KKBCwmxw.png?1733323294)
+### 저장하고 테스트하기
 
-워크플로우 저장 및 테스트
+액션을 저장한 뒤, 워크플로우를 실행해 보면서 의도한 대로 동작하는지 확인하세요.
 
-액션을 저장하고 워크플로우를 트리거하여 예상대로 작동하는지 테스트하세요.
+![액션 저장](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037749910/original/pbv1OpZB9EuPSuEcSL8d3GKtKHv7f5n4Kg.png?1733323331)
 
-![워크플로우 저장](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037749910/original/pbv1OpZB9EuPSuEcSL8d3GKtKHv7f5n4Kg.png?1733323331)
+워크플로우를 실제로 가동할 준비가 되면 **Publish**(게시) 토글을 켜세요.
 
-워크플로우를 활성화할 준비가 되면, 토글을 **"Publish(발행)"**로 전환하세요.
+![Publish 토글 켜기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038191955/original/M1cMZ4bRqUlwkjOmdUxlP3-fZF_fdpjHjA.png?1733987133)
 
-![워크플로우 발행](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038191955/original/M1cMZ4bRqUlwkjOmdUxlP3-fZF_fdpjHjA.png?1733987133)
+## 사용 사례
 
-## 활용 사례
+**시나리오:** 연락처가 구매 같은 특정 행동을 완료하면, 진행 중인 마케팅 캠페인 워크플로우에서 빼서 같은 내용의 메시지가 계속 가지 않게 하고 싶어요.
 
-시나리오: 연락처가 특정 행동(예: 구매 완료)을 완료한 후에는 진행 중인 마케팅 캠페인 워크플로우에서 제거하여 중복 커뮤니케이션을 피하고자 하는 비즈니스.
+**설정 방법:**
 
-**구현 단계:**
+1. **트리거:** 연락처가 구매를 완료하거나 서비스를 구독하면 워크플로우가 시작되도록 트리거를 설정해요.
+2. **Remove from Workflow** 액션을 추가해요.
+   - **Action Name:** 마케팅 캠페인 워크플로우에서 제거
+   - **Workflow Selection**(워크플로우 선택): **Another Workflow**를 선택해요.
+   - **Specified Workflow**(지정한 워크플로우): 연락처를 제거할 마케팅 캠페인 워크플로우를 선택해요.
+3. **결과:**
+   - 연락처가 지정한 마케팅 캠페인 워크플로우에서 자동으로 제거돼요.
+   - 프로모션 이메일이 더 이상 가지 않아서, 상황에 맞고 중복 없는 메시지만 받아요.
 
-1. **트리거**: 연락처가 구매를 완료하거나 서비스를 구독할 때 워크플로우가 활성화되도록 트리거를 설정합니다.
+**최종 효과:** 이 자동화를 쓰면 불필요한 메시지를 줄이고 소통을 깔끔하게 유지할 수 있어요. 고객 만족도와 참여도도 높아져요.
 
-2. **"워크플로우에서 제거" 액션 추가**:
-   - 액션 이름: 마케팅 캠페인 워크플로우에서 제거
-   - 워크플로우 선택: 다른 워크플로우 선택
-   - 지정된 워크플로우: 연락처를 제거할 관련 마케팅 캠페인 워크플로우 선택
+## 자주 묻는 질문
 
-3. **결과**:
-   - 연락처가 지정된 마케팅 캠페인 워크플로우에서 자동으로 제거됩니다.
-   - 프로모션 이메일 수신을 중단하여 관련성 있고 중복되지 않는 커뮤니케이션을 보장합니다.
+### 연락처가 여러 워크플로우에 들어 있으면 어떻게 되나요?
+다음 중에서 선택해 제거할 수 있어요.
 
-결과: 이 자동화는 불필요한 메시지를 피하여 깔끔하고 관련성 있는 커뮤니케이션 전략을 유지하고, 고객 만족도와 참여도를 향상시킵니다.
+- 현재 워크플로우에서만 제거
+- 직접 고른 다른 워크플로우에서 제거
+- 현재 워크플로우를 제외한 모든 워크플로우에서 제거
+- 진행 중인 모든 워크플로우에서 제거
 
-## FAQ
+### 연락처가 특정 행동을 완료하면 워크플로우에서 자동으로 제거할 수 있나요?
+네. "구매 완료" 같은 트리거를 설정하면 특정 워크플로우에서 연락처를 자동으로 제거할 수 있어요. 그러면 연락처가 상황에 맞지 않는 메시지를 더 이상 받지 않아요.
 
-**1. 연락처가 여러 워크플로우에 있다면 어떻게 되나요?**
+### Remove from Workflow 액션이 제대로 동작하는지 어떻게 알 수 있나요?
+테스트용 연락처로 워크플로우를 실행해서 의도한 대로 제거되는지 확인하세요. 활동 로그에서도 제거가 잘 됐는지 확인할 수 있어요.
 
-다음과 같이 연락처를 제거할 수 있습니다:
-- 현재 워크플로우만
-- 선택한 다른 특정 워크플로우
-- 현재 워크플로우를 제외한 모든 워크플로우
-- 모든 활성 워크플로우
+### 한 번 실행된 Remove from Workflow 액션을 되돌릴 수 있나요?
+아니요. 연락처가 제거되면 자동으로 되돌릴 수 없어요. 필요하면 직접 다시 등록해야 해요.
 
-**2. 특정 행동을 완료한 후 워크플로우에서 연락처를 자동으로 제거할 수 있나요?**
-
-네, "구매 완료"와 같은 트리거를 설정하여 특정 워크플로우에서 연락처를 자동으로 제거할 수 있으며, 이를 통해 더 이상 관련 없는 메시지를 받지 않도록 할 수 있습니다.
-
-**3. "워크플로우에서 제거" 액션이 작동하는지 어떻게 알 수 있나요?**
-
-샘플 연락처를 사용하여 워크플로우를 테스트하여 예상대로 제거되는지 확인하세요. 또한 활동 로그를 확인하여 성공적으로 제거되었는지 검증할 수 있습니다.
-
-**4. "워크플로우에서 제거" 액션이 트리거된 후 되돌릴 수 있나요?**
-
-아니요, 연락처가 제거된 후에는 자동으로 되돌릴 수 없습니다. 필요한 경우 수동으로 다시 등록해야 합니다.
-
-**5. 연락처가 워크플로우에서 제거될 때 알림을 받나요?**
-
-아니요, 연락처는 알림을 받지 않습니다. 이 액션은 내부 워크플로우 상태에만 영향을 미치며 연락처에게 알리지 않습니다.
-
----
-*원문 최종 수정: Tue, 8 Apr, 2025 at 4:03 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### 워크플로우에서 제거되면 연락처에게 알림이 가나요?
+아니요. 이 액션은 내부 워크플로우 상태에만 영향을 주고, 연락처에게는 알림이 가지 않아요.

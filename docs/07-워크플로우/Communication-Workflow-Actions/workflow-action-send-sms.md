@@ -1,145 +1,116 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 07-워크플로우 > Communication Workflow Actions
+원문: /support/solutions/articles/155000002474-workflow-action-send-sms
+번역일: 2026-11-06
+카테고리: 07-워크플로우
 ---
 
-# 워크플로우 액션 - SMS 발송
+# 워크플로우 액션 — Send SMS(SMS 전송)
 
-SMS 발송 액션을 사용하면 문자 메시지를 통해 연락처와 직접 소통할 수 있습니다. 이 가이드에서는 액션 설정 방법을 단계별로 안내하고, 예약 리마인더, 프로모션 캠페인 등에 활용하는 실제 사례를 통해 그 이점을 보여드립니다.
+**Send SMS**(SMS 전송) 액션을 쓰면 워크플로우 안에서 연락처에게 문자 메시지를 바로 보낼 수 있어요. 이 문서에서는 액션을 설정하는 순서와 함께, 예약 알림이나 프로모션 안내 같은 실제 활용 예시를 소개해요.
 
----
+## Send SMS 액션이란?
 
-**목차**
+**Send SMS** 액션은 자동화된 워크플로우의 한 단계로 맞춤 문자 메시지를 보내는 액션이에요. 조건, 트리거, 일정에 따라 메시지가 나가기 때문에 알맞은 때에 연락할 수 있어요. 연락처 이름 같은 동적 필드로 내용을 맞춤 설정할 수 있고, URL로 첨부 자료를 함께 보낼 수도 있어요.
 
-- [SMS 발송 액션이란?](#sms-발송-액션이란)
-- [SMS 발송 액션은 언제 사용하나요?](#sms-발송-액션은-언제-사용하나요)
-- [단계별 안내: SMS 발송 액션 설정하기](#단계별-안내-sms-발송-액션-설정하기)
-- [SMS 발송 액션 실제 활용 사례](#sms-발송-액션-실제-활용-사례)
-- [자주 묻는 질문](#자주-묻는-질문)
+## 언제 쓰면 좋나요?
 
----
+**Send SMS** 액션은 적절한 시점에 대상을 정해 연락해야 할 때 잘 맞아요.
 
-# **SMS 발송 액션이란?**
+- 예약 알림: 자동 알림으로 노쇼를 줄여요.
+- 프로모션 안내: 할인이나 혜택 소식을 고객의 휴대폰으로 바로 전해요.
+- 주문 현황 안내: 주문한 상품이 발송되면 고객에게 알려요.
+- 이벤트 안내: 일정이 바뀌거나 취소되면 참석자에게 알려요.
 
-SMS 발송 액션은 자동화된 워크플로우의 일부로 개인화된 문자 메시지를 보낼 수 있는 강력한 도구입니다. 이 기능은 조건, 트리거 또는 일정에 따라 메시지를 발송하여 적시에 소통할 수 있도록 도와줍니다. 연락처 이름과 같은 동적 필드로 SMS 내용을 커스터마이징할 수 있고, URL을 통해 첨부파일도 포함하여 더욱 풍부한 커뮤니케이션이 가능합니다.
+## Send SMS 액션 설정 순서
 
----
+### 1단계: Send SMS 액션 추가
 
-## SMS 발송 액션은 언제 사용하나요?
+1. 워크플로우 편집 화면을 열어요. 새 워크플로우를 만들어도 되고, 실습용으로 기존 워크플로우를 선택해도 돼요.
 
-SMS 발송 액션은 적시에 타겟팅된 커뮤니케이션이 필요한 상황에 완벽합니다:
+   ![워크플로우 편집 화면 열기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037717482/original/P3-hyXNpkiRB39FUnx2QwQd-wmjTFBmbgw.png?1733302478)
 
-• **예약 리마인더:** 자동화된 리마인더로 노쇼(no-show)를 최소화하세요.
+2. **Send SMS** 액션을 원하는 트리거나 조건 뒤로 끌어다 놓아요.
 
-• **프로모션 캠페인:** 고객의 휴대폰으로 직접 특가 정보를 전달하세요.
+   ![Send SMS 액션을 워크플로우에 끌어다 놓기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037717484/original/8S5CFrbAzmyxz1YN9Wt4QLIwyVsBvHeUyg.png?1733302492)
 
-• **주문 업데이트:** 주문이 배송될 때 고객에게 알려주세요.
+### 2단계: 액션 이름 정하기
 
-• **이벤트 알림:** 참석자들에게 변경사항이나 취소 소식을 업데이트하세요.
+- 워크플로우에서 쉽게 알아볼 수 있도록 "예약 알림 SMS"처럼 내용을 알 수 있는 이름을 붙여요.
 
----
+![액션 이름 입력](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037717512/original/m7ce-UIp_VUuhzge0y9nX7fL870VCyEsnA.png?1733302519)
 
-## **단계별 안내: SMS 발송 액션 설정하기**
+### 3단계: 메시지 작성
 
-**1단계: SMS 발송 액션 추가하기**
+- **Message**(메시지): SMS 내용을 작성해요. `{{contact.first_name}}` 같은 동적 필드를 넣으면 받는 사람에 맞춰 내용을 바꿀 수 있어요.
 
-1. 워크플로우 편집기를 열어주세요. 새 워크플로우를 만들거나 이해를 위해 기존 워크플로우를 선택할 수 있습니다.
+  ![Message 입력란에 SMS 내용 작성](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037717520/original/4HaY46EhBTWCmgtwkDOviN3Wg1j-g96ZGA.png?1733302544)
 
-![워크플로우 편집기 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037717482/original/P3-hyXNpkiRB39FUnx2QwQd-wmjTFBmbgw.png?1733302478)
+- **Templates**(템플릿): 미리 만들어 둔 템플릿이 있으면 골라서 시간을 아낄 수 있어요.
 
-2. "SMS 발송" 액션을 원하는 트리거나 조건 뒤의 워크플로우에 드래그 앤 드롭하세요.
+  ![Templates에서 템플릿 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037717749/original/XInvYP3fZNNF1mDamdkOrbhDjU1l4TEpQw.png?1733302717)
 
-![SMS 발송 액션 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037717484/original/8S5CFrbAzmyxz1YN9Wt4QLIwyVsBvHeUyg.png?1733302492)
+### 4단계: 첨부 추가(선택)
 
-**2단계: 액션 이름 지정하기**
+**Add Attachments**(첨부파일 추가)에서 URL로 파일이나 자료를 첨부할 수 있어요. 지도, 티켓, 안내문 같은 자료를 보낼 때 쓰세요.
 
-• 워크플로우에서 쉽게 식별할 수 있도록 "예약 리마인더 SMS"와 같은 설명적인 이름을 지정하세요.
+![Add Attachments에서 URL로 첨부](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037717564/original/kEC9Ya3v5wlKY_JgiNfgxjRYREl82TPgHA.png?1733302566)
 
-![액션 이름 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037717512/original/m7ce-UIp_VUuhzge0y9nX7fL870VCyEsnA.png?1733302519)
+### 5단계: SMS 테스트
 
-**3단계: 메시지 작성하기**
+워크플로우를 켜기 전에 **Test Phone Number**(테스트 전화번호) 입력란으로 메시지를 미리 확인하고 테스트할 수 있어요.
 
-• **메시지:** SMS 내용을 작성하세요. 개인화를 위해 {{contact.first_name}}과 같은 동적 필드를 사용하세요.
+1. **Test Phone Number** 입력란 옆의 국가 깃발을 확인해요. 기본값은 서브 계정의 국가예요.
+2. 다른 국가를 쓰려면 깃발을 클릭한 뒤 국가 이름이나 국가 번호로 검색해요.
+3. 선택한 국가의 현지 형식으로 전화번호를 입력하고 **Send test SMS**(테스트 SMS 발송)를 클릭해요.
 
-![메시지 작성 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037717520/original/4HaY46EhBTWCmgtwkDOviN3Wg1j-g96ZGA.png?1733302544)
+![Test Phone Number 입력란과 Send test SMS 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155079722813/original/3shK6hN_PUfcsr0PPYzvft9w5L9xS5qTAA.png?1788189413)
 
-• **템플릿:** 시간을 절약하기 위해 사전 제작된 템플릿이 있다면 선택하세요.
+### 6단계: 워크플로우 저장 및 테스트
 
-![템플릿 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037717749/original/XInvYP3fZNNF1mDamdkOrbhDjU1l4TEpQw.png?1733302717)
+- 워크플로우를 저장한 뒤, 샘플 데이터로 테스트해서 SMS가 의도한 대로 나가는지 확인해요.
 
-**4단계: 첨부파일 추가하기 (선택사항)**
+![워크플로우 저장 후 테스트](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037717636/original/MhyfQA1O-cBNHGsREX8QLgHsHiXIiAKatg.png?1733302611)
 
-• URL을 사용하여 파일이나 리소스를 첨부하세요(예: 지도, 티켓, 안내서 등).
+## 활용 예시
 
-![첨부파일 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037717564/original/kEC9Ya3v5wlKY_JgiNfgxjRYREl82TPgHA.png?1733302566)
+### 단계별 예약 알림
 
-**5단계: SMS 테스트하기**
+시나리오: 예약 알림으로 노쇼를 줄여요.
 
-• "테스트 전화번호" 필드를 사용하여 메시지를 미리보고 테스트하세요.
+![예약 알림 워크플로우 전체 구성](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037720188/original/IupbkZVZZnwlVj79eRr6EgHdqO95uVN8YA.png?1733304377)
 
-![SMS 테스트](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037717593/original/xUFXgIMGpNH7I4diECA_RXcSXsGD-Be5Pw.png?1733302585)
+워크플로우:
 
-**6단계: 워크플로우 저장 및 테스트하기**
+1. 트리거: 고객이 예약했을 때
+2. 액션 1: 예약 24시간 전까지 대기해요.
+3. 액션 2: 24시간 전에 알림 SMS를 보내요.
 
-• 워크플로우를 저장하고 샘플 데이터로 테스트하여 SMS가 예상대로 발송되는지 확인하세요.
+   **Message**:
 
-![워크플로우 저장](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037717636/original/MhyfQA1O-cBNHGsREX8QLgHsHiXIiAKatg.png?1733302611)
+   > 안녕하세요 `{{contact.first_name}}`님, 내일 `{{appointment.start_time}}`에 예약이 있어서 알려 드려요. 뵙기를 기다리고 있을게요!
 
----
+   ![24시간 전 알림 SMS 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037720211/original/IMO9U8SvgmQjahCbhZfEcElJjFBb0dkcaA.png?1733304392)
 
-## SMS 발송 액션 실제 활용 사례
+4. 액션 3: 예약 1시간 전까지 대기해요.
 
-**다단계 예약 리마인더**
+   ![1시간 전까지 대기 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037720224/original/4w617tEuBrSk6w_d_R2iHdaSg3o0_lQ23A.png?1733304411)
 
-시나리오: 리마인더를 통해 예약 노쇼를 줄이기
+5. 액션 4: 예약 1시간 전에 알림 SMS를 한 번 더 보내요.
 
-![다단계 리마인더 워크플로우](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037720188/original/IupbkZVZZnwlVj79eRr6EgHdqO95uVN8YA.png?1733304377)
+   **Message**:
 
-**워크플로우:**
-
-1. **트리거:** 고객이 예약을 완료함
-
-2. **액션 1:** 예약 시간 24시간 전까지 대기
-
-3. **액션 2:** 24시간 전에 리마인더 SMS 발송
-
-• 메시지:
-
-안녕하세요 {{contact.first_name}}님, 내일 {{appointment.start_time}}에 예약이 있다는 알림드립니다. 뵙기를 기대하고 있겠습니다!
-
-![24시간 전 리마인더 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037720211/original/IMO9U8SvgmQjahCbhZfEcElJjFBb0dkcaA.png?1733304392)
-
-4. **액션 3:** 예약 시간 1시간 전까지 대기
-
-![1시간 전 대기 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037720224/original/4w617tEuBrSk6w_d_R2iHdaSg3o0_lQ23A.png?1733304411)
-
-5. **액션 4:** 예약 시간 1시간 전에 또 다른 SMS 리마인더 발송
-
-• **메시지:**
-
-안녕하세요 {{contact.first_name}}님, {{appointment.start_time}}에 예약이 한 시간 남았습니다. 곧 뵙겠습니다!
-
----
+   > 안녕하세요 `{{contact.first_name}}`님, 1시간 뒤 `{{appointment.start_time}}`에 예약이 있어요. 곧 만나요!
 
 ## 자주 묻는 질문
 
-**Q: SMS 발송 액션으로 보내는 메시지를 개인화할 수 있나요?**
+### Send SMS 액션으로 보내는 문자를 연락처별로 다르게 쓸 수 있나요?
+네. **Send SMS** 액션은 동적 필드를 지원해서 연락처 이름, 예약 시간, 커스텀 필드 같은 연락처·예약 정보를 메시지에 넣을 수 있어요. 받는 사람에게 더 맞는 메시지를 보낼 수 있어요.
 
-네. SMS 발송 액션은 연락처의 이름, 예약 시간, 커스텀 필드 등 연락처 및 예약 정보를 사용하여 메시지를 개인화할 수 있는 동적 필드를 지원합니다. 이를 통해 더욱 관련성 있고 매력적인 메시지를 만들 수 있습니다.
+### SMS에 링크나 첨부파일을 넣을 수 있나요?
+네. SMS에는 파일을 직접 첨부할 수 없지만, 파일, 문서, 지도, 티켓 같은 온라인 자료로 연결되는 URL은 넣을 수 있어요.
 
-**Q: SMS 메시지에 링크나 첨부파일을 포함할 수 있나요?**
+### 워크플로우를 켜기 전에 SMS를 테스트할 수 있나요?
+네. **Send SMS** 액션의 **Test Phone Number** 입력란에서 워크플로우를 켜기 전에 테스트 메시지를 보내 볼 수 있어요. 메시지 내용과 동적 필드가 제대로 나오는지 확인하세요.
 
-네. SMS 메시지는 직접적인 파일 첨부를 지원하지 않지만, 파일, 문서, 지도, 티켓 또는 기타 온라인 리소스로 연결되는 URL을 포함할 수 있습니다.
-
-**Q: 워크플로우를 활성화하기 전에 SMS를 테스트할 수 있나요?**
-
-네. SMS 발송 액션에는 **테스트 전화번호** 필드가 있어서 워크플로우를 활성화하기 전에 테스트 메시지를 미리보고 발송할 수 있습니다. 이를 통해 메시지 내용과 개인화가 예상대로 나타나는지 확인할 수 있습니다.
-
-**Q: 워크플로우에서 SMS는 언제 발송되나요?**
-
-SMS는 워크플로우의 앞부분에서 설정된 트리거, 조건, 대기 단계에 따라 워크플로우가 SMS 발송 액션에 도달했을 때 발송됩니다. 이를 통해 메시지 타이밍과 전달을 정확하게 제어할 수 있습니다.
-
----
-*원문 최종 수정: Mon, 22 Dec, 2025 at 8:49 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### 워크플로우에서 SMS는 언제 발송되나요?
+워크플로우가 **Send SMS** 액션에 도달하면 SMS가 발송돼요. 앞에서 설정한 트리거, 조건, 대기 단계에 따라 도달 시점이 정해지므로 발송 타이밍을 세밀하게 조절할 수 있어요.

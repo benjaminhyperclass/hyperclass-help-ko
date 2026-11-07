@@ -1,56 +1,56 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 평판 관리 > 리뷰 요청
+원문: /support/solutions/articles/48001180761-how-to-dispute-a-google-review-and-check-on-the-dispute-status
+번역일: 2026-11-07
+카테고리: 41-평판-리뷰
 ---
 
-# 구글 리뷰 신고 방법과 신고 상태 확인하기
+# Google 리뷰 이의제기와 처리 상태 확인
 
-리뷰를 부적절한 내용으로 신고하면, 구글이 해당 리뷰어에게 조치를 취할 수 있습니다. 리뷰 삭제나 향후 리뷰 작성 금지 등의 조치가 가능합니다. 이러한 조치는 보통 리뷰가 구글 가이드라인을 위반한 경우에만 실행됩니다. 예를 들어 스팸성 게시물이거나 욕설이 포함된 경우입니다. 리뷰가 가짜이거나 편향적이라고 생각되면, 구글에 신고하여 추가 조사를 요청할 수 있습니다.
+부적절한 Google 리뷰를 Google에 신고하는 방법과, 이미 신고한 리뷰의 처리 상태를 확인하는 방법을 안내해요.
 
-**참고사항:**
+리뷰를 부적절한 리뷰로 신고하면 Google이 리뷰를 삭제하거나 작성자의 이후 리뷰 작성을 막는 등의 조치를 할 수 있어요. 보통 스팸이나 욕설처럼 Google 가이드라인을 어긴 리뷰에만 이런 조치를 해요. 가짜 리뷰이거나 한쪽으로 치우친 리뷰라고 생각되면 Google에 신고해 추가 조사를 요청할 수 있어요.
 
-시스템에서 생성된 리뷰만 대화(Conversations) 탭에서 신고할 수 있습니다. 시스템에서 생성되지 않은 리뷰는 [**여기를 클릭해서 신고 절차를 시작하세요**](https://support.google.com/business/workflow/9945796)
+{% hint style="info" %}
+시스템에서 생성된 리뷰만 **대화** 탭에서 이의제기할 수 있어요. 시스템에서 생성된 리뷰가 아니라면 여기를 클릭해서 절차를 시작하세요.
 
-![구글 리뷰 신고 과정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48254226266/original/V6iZPyYh8-AxOnz6UeavOsa9C_2qyqNPuw.gif?1664569520)
+![시스템에서 생성되지 않은 리뷰의 이의제기 시작 안내](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48254226266/original/V6iZPyYh8-AxOnz6UeavOsa9C_2qyqNPuw.gif?1664569520)
+{% endhint %}
 
-이 글에서 다루는 내용
+## 대화 탭에서 Google 리뷰 신고하기
 
-[대화 탭에서 구글 리뷰 신고하기](#대화-탭에서-구글-리뷰-신고하기)
+1. **대화** 탭으로 이동해요.
+2. 리뷰를 신고하려는 연락처를 검색한 뒤 **이 리뷰에 이의제기**를 클릭해요.
+3. 해당 GMB 리뷰와 연결된 Google 이메일과 비즈니스 계정을 확인하라는 안내가 나와요. 내용을 확인해요.
+4. 새 리뷰를 신고할지, 이미 신고한 리뷰의 상태를 확인할지 선택해요.
 
-[신고한 리뷰의 현재 상태 확인하기](#신고한-리뷰의-현재-상태-확인하기)
+   ![리뷰 신고 또는 상태 확인 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48098341984/original/l6Sg0IGlM3RP_Yb9hubRkFeT-9LgK8-LNg.png?1618435743)
 
-## 대화 탭에서 구글 리뷰 신고하기
+5. 삭제할 새 리뷰를 신고하겠다고 선택하면 Google이 최근 리뷰 목록을 보여 줘요. 리뷰를 클릭하면 Google 지도에서 리뷰를 보거나 삭제 요청을 제출할 수 있어요.
 
-CRM 내에서 구글 리뷰를 신고하려면 대화(Conversations) 탭으로 이동해서 리뷰를 신고하고 싶은 연락처를 검색한 다음 "이 리뷰 신고하기"를 클릭하세요:
+   ![최근 리뷰 목록과 삭제 요청 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48098342358/original/dIDfNOu3Bv4rgAPuOh-SK-l34QdrFQiCWA.jpeg?1618435912)
 
-### 해당 GMB 리뷰와 연결된 **구글 이메일**과 비즈니스 계정을 확인하라는 메시지가 표시됩니다.
-![구글 계정 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48253494223/original/fU3-oTDFmGwtrG884xKaY-c7Y9uadG2omA.gif?1664305457)
+## 신고한 리뷰의 처리 상태 확인하기
 
-### 다음으로, 새로운 리뷰를 신고할 것인지 또는 이미 신고한 리뷰의 상태를 확인할 것인지 선택하게 됩니다:
-
-![리뷰 신고 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48098341984/original/l6Sg0IGlM3RP_Yb9hubRkFeT-9LgK8-LNg.png?1618435743)
-
-새로운 리뷰 삭제 신고를 선택하면, 구글이 최근 리뷰 목록을 보여주고 각 리뷰를 구글 맵에서 확인하거나 삭제 요청을 제출할 수 있습니다:
-
-![리뷰 삭제 요청 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48098342358/original/dIDfNOu3Bv4rgAPuOh-SK-l34QdrFQiCWA.jpeg?1618435912)
-
-## 신고한 리뷰의 현재 상태 확인하기
+{% hint style="info" %}
+**대화**에서 Google 리뷰 카드에 해당 Google Business Profile 페이지 이름이 표시돼요. 이의제기하거나 답글을 달기 전에 리뷰가 어느 비즈니스 페이지의 것인지 확인할 수 있어요.
+{% endhint %}
 
 이미 신고한 리뷰의 상태를 확인하려면 [여기를 클릭하세요](https://support.google.com/business/workflow/9945796).
 
-### 이전에 신고한 리뷰의 상태를 확인하기를 선택하면, 현재 상태를 포함해 해당 리뷰들을 볼 수 있습니다.
+이전에 신고한 리뷰의 상태를 확인하겠다고 선택했다면, 신고한 리뷰와 각 리뷰의 현재 상태가 나와요.
 
-![신고 상태 확인 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48098342472/original/aQcP06r9IEUyhL93MSYr_lvuBTTWGx5w1A.png?1618435962)
+![신고한 리뷰와 현재 상태 목록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48098342472/original/aQcP06r9IEUyhL93MSYr_lvuBTTWGx5w1A.png?1618435962)
 
-### 해당 리뷰를 선택하면 더 자세한 요약을 볼 수 있고, 삭제 요청이 거부된 경우 이의 제기도 할 수 있습니다.
+리뷰를 선택하면 요약 내용을 더 자세히 볼 수 있어요. 삭제 요청이 받아들여지지 않았다면 이의 신청도 제출할 수 있어요.
 
-![리뷰 상세 정보 및 이의제기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48098342573/original/klzJKb29MgiKe_VpSBoM5TuR_jezRmz5LA.png?1618436001)
+![리뷰 요약과 이의 신청 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48098342573/original/klzJKb29MgiKe_VpSBoM5TuR_jezRmz5LA.png?1618436001)
 
-참고사항:
+![이의 신청 제출 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155071140313/original/jVJlRar2-0s4zxfbpDaO5llFwCKj9RgzYw.png?1778590619)
 
-구글에서 여기에 표시되는 리뷰 수에는 제한이 있습니다. [Joy Hawkins의 보고](https://localu.org/google-my-business-launches-tool-to-manage-review-removal-requests/)에 따르면, "이 기능은 적은 수의 리스팅을 가진 구글 마이 비즈니스 계정에서만 작동하는 것 같습니다. 33개의 리스팅을 가진 계정에서 시도했을 때 '관리하시는 비즈니스 프로필 수가 많아서 이 절차를 이용할 수 없습니다'라는 메시지가 나타났습니다. 저희 에이전시 계정도 리스팅이 너무 많아서 이 기능을 사용할 수 없었습니다."
+{% hint style="info" %}
+Google이 여기에 보여 주는 리뷰 수에는 한도가 있어요.
 
----
-*원문 최종 수정: Fri, 30 Sep, 2022 at 3:34 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+Joy Hawkins는 이렇게 전했어요.
+
+"이 기능은 등록된 비즈니스 정보(리스팅)가 적은 Google My Business 계정에서만 작동하는 것 같습니다. 리스팅이 33개인 계정에서 써 봤더니 '관리 중인 Business Profile 수를 고려할 때 이 절차를 이용할 수 없습니다'라는 메시지가 나왔습니다. 저희 에이전시 계정도 리스팅이 너무 많아 이 기능을 쓸 수 없었습니다."
+{% endhint %}

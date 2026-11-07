@@ -1,332 +1,405 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 07-워크플로우 > Webhooks Workflow Actions
+원문: /support/solutions/articles/155000003299-workflow-action-webhook-outbound-
+번역일: 2026-11-06
+카테고리: 07-워크플로우
 ---
 
-# 워크플로우 액션 - 웹훅(아웃바운드)
+# 워크플로우 액션 — Webhook(아웃바운드)
 
-워크플로우 빌더에서 아웃바운드 웹훅 액션을 사용하는 방법을 알아보세요. Hyperclass에서 외부 애플리케이션이나 서비스로 연락처 데이터(및 기타 정보)를 실시간으로 자동 전송하여 강력한 커스텀 연동을 구현하고 자동화 기능을 확장하는 방법을 알아보겠습니다.
+워크플로우 빌더의 **Webhook** 액션을 쓰면 연락처 데이터 등을 하이퍼클래스에서 외부 앱이나 서비스로 실시간 전송할 수 있어요. 이 문서에서는 설정 방법, 전송되는 데이터, 테스트와 게시 방법을 안내해요.
 
----
+## 워크플로우 액션 웹훅이란?
 
-**목차**
+워크플로우 액션 웹훅은 하이퍼클래스의 정보를 다른 소프트웨어로 자동 전달하는 메신저 같은 기능이에요. 웹 요청을 받을 수 있는 외부 시스템이라면 거의 모두 하이퍼클래스와 연결할 수 있어요.
 
-- [워크플로우 액션 웹훅이란?](#워크플로우-액션-웹훅이란)
-- [아웃바운드 웹훅 사용의 주요 이점](#아웃바운드-웹훅-사용의-주요-이점)
-- [웹훅 액션 설정 및 구성 방법](#웹훅-액션-설정-및-구성-방법)
-- [웹훅 세부사항 구성](#웹훅-세부사항-구성)
-- [커스텀 데이터 추가](#커스텀-데이터-추가)
-- [웹훅 데이터(페이로드) 이해](#웹훅-데이터페이로드-이해)
-- [테스트 및 라이브 전환](#테스트-및-라이브-전환)
-- [데이터 형식 세부사항](#데이터-형식-세부사항)
-- [자주 묻는 질문](#자주-묻는-질문)
+아웃바운드 웹훅은 하이퍼클래스 워크플로우에서 지정한 목적지 URL로 보내는 자동 메시지예요. 연락처가 워크플로우의 웹훅 단계에 도달하면 하이퍼클래스가 그 연락처와 트리거가 된 이벤트의 데이터를 모아 "페이로드"로 묶어요. 그리고 입력한 URL로 보내요. 이 데이터로 하이퍼클래스 밖의 다른 앱에서 작업을 실행하거나, 데이터를 동기화하거나, 프로세스를 시작할 수 있어요.
 
 ---
 
-# **워크플로우 액션 웹훅이란?**
+## 아웃바운드 웹훅을 쓰면 좋은 점
 
-워크플로우 액션 웹훅은 Hyperclass에서 다른 소프트웨어 애플리케이션으로 정보를 자동으로 전송하는 강력한 메신저 역할을 하는 도구입니다. 이 기능을 통해 Hyperclass을 웹 요청을 수신할 수 있는 거의 모든 외부 시스템과 연결할 수 있어, 커스텀 연동의 무한한 가능성을 열어줍니다.
+웹훅은 기본 연동만으로는 어려운 복잡한 연동 문제를 풀고, 더 고급스러운 자동화를 만들 때 쓸 수 있어요.
 
-아웃바운드 웹훅은 Hyperclass 워크플로우에서 특정 대상 URL로 전송되는 자동화된 메시지입니다. 연락처가 워크플로우의 웹훅 단계에 도달하면, Hyperclass이 해당 연락처와 트리거 이벤트에 대한 관련 데이터를 수집하여 "페이로드"로 패키징한 후 제공된 URL로 전송합니다. 이를 통해 Hyperclass 외부의 다른 애플리케이션에서 작업을 트리거하거나, 데이터를 동기화하거나, 프로세스를 시작할 수 있습니다.
-
----
-
-## **아웃바운드 웹훅 사용의 주요 이점**
-
-웹훅은 복잡한 연동 과제를 해결하고 네이티브 연동만으로는 불가능한 고급 자동화 전략을 활용할 수 있게 해줍니다.
-
-- **무제한 연동**: 수천 개의 서드파티 앱과 서비스(Zapier, Make, 커스텀 도구 등)에 연결하여 Hyperclass 외부에서 작업을 트리거할 수 있습니다.
-
-- **실시간 데이터 동기화**: 워크플로우에서 이벤트가 발생하는 즉시 외부 데이터베이스, 스프레드시트 또는 분석 플랫폼으로 데이터를 전송합니다.
-
-- **커스터마이징된 자동화**: 다이렉트 메일 발송, 독점 CRM 업데이트, 외부 강의 플랫폼에 사용자 등록 등 다른 시스템에서 고유한 프로세스를 트리거합니다.
-
-- **향상된 보고**: 워크플로우 및 연락처 데이터를 비즈니스 인텔리전스 도구로 전송하여 고급 커스텀 보고서와 대시보드를 구축합니다.
-
-- **궁극적인 유연성**: 정확한 비즈니스 요구사항에 맞춘 맞춤형 솔루션을 생성하여 Hyperclass 자동화의 성능을 확장합니다.
+- 무제한 연동: Zapier, Make, 직접 만든 도구 등 수천 개의 외부 앱·서비스와 연결해서 하이퍼클래스 밖의 작업을 실행할 수 있어요.
+- 실시간 데이터 동기화: 워크플로우에서 이벤트가 일어나는 즉시 외부 데이터베이스, 스프레드시트, 분석 플랫폼으로 데이터를 보낼 수 있어요.
+- 맞춤형 자동화: 우편물 발송, 자체 CRM 업데이트, 외부 코스 플랫폼에 사용자 등록처럼 다른 시스템의 고유한 프로세스를 실행할 수 있어요.
+- 리포팅 강화: 워크플로우와 연락처 데이터를 BI 도구로 보내 맞춤형 리포트와 대시보드를 만들 수 있어요.
+- 높은 유연성: 비즈니스에 꼭 맞는 솔루션을 만들어 하이퍼클래스 자동화를 확장할 수 있어요.
 
 ---
 
-## **웹훅 액션 설정 및 구성 방법**
+## Webhook 액션 추가하고 설정하기
 
-원하는 대상으로 데이터를 전송하도록 웹훅이 올바르게 설정되도록 다음 지침을 따르세요.
+아래 순서대로 따라 하면 원하는 목적지로 데이터를 보내는 웹훅을 만들 수 있어요.
 
-1. 로케이션의 메인 메뉴에서 **Automation(자동화)** 탭으로 이동하여 워크플로우 빌더로 이동합니다.
+1. 서브 계정 왼쪽 메뉴에서 **자동화**를 클릭해 **워크플로우 빌더**로 이동하세요.
+2. 새 워크플로우를 만들거나, 편집할 기존 워크플로우를 선택하세요.
+3. 워크플로우에 트리거가 하나 이상 설정되어 있는지 확인하세요. 예를 들어 **Contact Tag Added**(연락처 태그 추가됨) 트리거가 있어요.
 
-2. 새 워크플로우를 **생성**하거나 기존 워크플로우를 선택하여 **편집**합니다.
+   ![워크플로우에 트리거가 설정된 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053613164/original/sxl1bvnrmOfa15b-qWi1Yong5tmq8plIxw.png?1757635770)
 
-3. 워크플로우에 최소한 하나의 **트리거**가 구성되어 있는지 확인합니다(예: "연락처 태그 추가").
+4. 액션을 추가할 위치의 워크플로우 캔버스에서 플러스 아이콘(+)을 클릭하세요. 화면 오른쪽에 **Actions**(액션) 패널이 열려요.
+5. **Actions** 패널의 검색창에 `webhook`을 입력하세요.
+6. 목록에서 **Webhook**을 선택하세요. 워크플로우에 단계가 추가되고 **Webhook** 설정 패널이 열려요.
 
-![웹훅 트리거 설정 이미지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053613164/original/sxl1bvnrmOfa15b-qWi1Yong5tmq8plIxw.png?1757635770)
-
-4. 액션을 추가하려는 워크플로우 캔버스의 위치에서 **더하기 아이콘(+)**을 클릭합니다. 화면 오른쪽에 액션 패널이 열립니다.
-
-5. '액션' 패널 검색창에 `**webhook**`을 입력합니다.
-
-6. 목록에서 **Webhook** 옵션을 선택합니다. 이렇게 하면 워크플로우에 단계가 추가되고 'Webhook' 구성 패널이 열립니다.
-
-![웹훅 액션 선택 이미지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053613176/original/l0oi-bAwLYD5cyjUPNOXi-7wiSvBabDDJw.png?1757635847)
+   ![Actions 패널에서 Webhook을 검색해 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053613176/original/l0oi-bAwLYD5cyjUPNOXi-7wiSvBabDDJw.png?1757635847)
 
 ---
 
-## **웹훅 세부사항 구성**
+## 웹훅 세부 설정
 
-웹훅이 올바르게 작동하려면 적절한 구성이 중요합니다. 이 섹션에서는 웹훅 구성 패널의 각 필드를 설명하고, 올바른 장소에 올바른 정보로 데이터가 전송되도록 하는 방법을 안내합니다.
+웹훅이 제대로 동작하려면 설정을 정확히 해야 해요. **Webhook** 설정 패널의 각 항목은 아래와 같아요.
 
-웹훅 액션을 추가하면 구성 패널이 나타납니다. 설정 방법은 다음과 같습니다:
+- **Action Name**(액션 이름): 웹훅의 목적을 알 수 있는 이름을 입력하세요. 예: "Send New Lead to Slack", "Update External DB". 나중에 워크플로우에서 이 단계를 쉽게 찾을 수 있어요.
+- **Method**(방법): 요청에 사용할 HTTP 메서드를 선택하세요. 데이터를 보낼 때는 POST를 가장 많이 쓰고, 기본으로 선택되어 있어요.
+- **URL**: 데이터를 받을 외부 서비스의 고유 URL을 입력하세요. 가장 중요한 항목이니 받는 서비스에서 복사해 정확히 붙여 넣으세요.
 
-- **Action Name(액션 이름):** 웹훅의 목적을 설명하는 이름을 지정합니다(예: "신규 리드 Slack으로 전송" 또는 "외부 DB 업데이트"). 이렇게 하면 나중에 워크플로우에서 단계를 쉽게 식별할 수 있습니다.
-
-- **Method(메소드):** 요청에 대한 HTTP 메소드를 선택합니다. POST가 데이터 전송에 가장 일반적인 메소드이며 기본값으로 선택됩니다.
-
-- **URL:** 데이터를 수신할 외부 서비스의 고유 URL을 입력합니다. 이는 가장 중요한 필드이므로 대상 서비스에서 올바르게 복사하여 붙여넣기했는지 확인하세요.
-
-![웹훅 구성 세부사항 이미지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053613194/original/alZJip9nvp_sBWBOGnyTZlzGHpevKR1ERg.png?1757635963)
+![Webhook 설정 패널의 Action Name, Method, URL 항목](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053613194/original/alZJip9nvp_sBWBOGnyTZlzGHpevKR1ERg.png?1757635963)
 
 ---
 
-## **커스텀 데이터 추가**
+## 커스텀 데이터 추가하기
 
-웹훅 페이로드에 추가 커스텀 정보를 포함할 수 있습니다.
+웹훅 페이로드에 원하는 정보를 더 담을 수 있어요.
 
-1. CUSTOM DATA 섹션 하단에서 **+ Add item(항목 추가)** 버튼을 클릭합니다.
+1. **CUSTOM DATA**(커스텀 데이터) 섹션에서 **+ Add item**(항목 추가) 버튼을 클릭하세요.
+2. **Key**(키)와 **Value**(값) 입력란이 있는 새 줄이 나타나요.
+3. **Key**에는 보내려는 데이터 필드의 이름을 입력하세요. 예: `lead_source`, `product_interest`. 공백 없는 간단한 텍스트로 쓰세요.
+4. **Value**에는 보낼 데이터를 입력하세요. 일반 텍스트를 쓰거나, 커스텀 값으로 동적 데이터를 넣을 수 있어요. 예: `{{contact.source}}`, `{{custom_fields.product_id}}`
 
-2. **Key(키)**와 **Value(값)** 필드가 있는 새 행이 나타납니다.
+![CUSTOM DATA 섹션에서 Key와 Value를 입력하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053613212/original/te2gT8iZzsHjip9pIGUg0TU0UGWqTQQ0bg.png?1757636087)
 
-3. **Key(키):** 전송하는 데이터 필드의 라벨입니다(예: `lead_source` 또는 `product_interest`). 공백 없는 단순한 텍스트 문자열이어야 합니다.
-
-4. **Value(값):** 전송하려는 데이터입니다. 일반 텍스트를 사용하거나 커스텀 값을 사용하여 동적 데이터를 삽입할 수 있습니다(예: `{{contact.source}}` 또는 `{{custom_fields.product_id}}`).
-
-![커스텀 데이터 추가 이미지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053613212/original/te2gT8iZzsHjip9pIGUg0TU0UGWqTQQ0bg.png?1757636087)
-
-모든 세부사항을 입력한 후, 패널 하단의 파란색 **Save Action(액션 저장)** 버튼을 클릭하여 구성을 저장합니다.
+모든 항목을 입력했으면 패널 아래쪽의 파란색 **Save Action**(액션 저장) 버튼을 클릭해 설정을 저장하세요.
 
 ---
 
-## **웹훅 데이터(페이로드) 이해**
+## 웹훅 데이터(페이로드) 이해하기
 
-"페이로드"라고 알려진 웹훅으로 전송되는 데이터에는 중요한 정보가 포함되어 있습니다. 기본적으로 포함되는 데이터와 워크플로우의 트리거가 받는 정보에 미치는 영향을 알아보겠습니다. 이는 외부 시스템에서 데이터를 올바르게 처리하는 데 필수적입니다.
+웹훅이 보내는 데이터를 "페이로드"라고 해요. 기본으로 어떤 데이터가 담기는지, 워크플로우 트리거에 따라 받는 정보가 어떻게 달라지는지 알아 두면 외부 시스템에서 데이터를 제대로 처리할 수 있어요.
 
-### **표준 데이터**
+### 기본 데이터
 
-기본적으로 모든 웹훅은 워크플로우에 관련된 연락처에 대한 표준 정보 세트를 전송합니다. 여기에는 다음이 포함됩니다:
+모든 웹훅은 기본적으로 워크플로우에 참여한 연락처의 기본 정보를 보내요. 아래 항목이 포함돼요.
 
-* 전체 이름, 이름, 성
-* 이메일 및 전화번호
-* 주소
-* 태그
-* 연락처와 관련된 모든 표준 및 커스텀 필드
+- 전체 이름, 이름, 성
+- 이메일과 전화번호
+- 주소
+- 태그
+- 연락처에 연결된 모든 기본 필드와 커스텀 필드
 
-포함된 모든 표준 필드의 전체 목록은 구성 패널에서 **standard data(표준 데이터)** 링크를 클릭하여 공식 문서를 확인하세요.
+포함되는 기본 필드의 전체 목록은 설정 패널의 **standard data** 링크를 클릭하면 공식 문서에서 볼 수 있어요.
 
-### **트리거 종속 데이터**
+### 트리거에 따라 달라지는 데이터
 
-웹훅 페이로드에는 워크플로우를 시작한 특정 트리거와 관련된 추가 데이터가 포함될 수 있습니다. 이는 이해해야 할 중요한 개념입니다.
+웹훅 페이로드에는 워크플로우를 시작한 트리거와 관련된 데이터가 추가로 담길 수 있어요. 꼭 알아 두어야 할 개념이에요.
 
-- **예시:** 워크플로우 트리거가 "예약 완료"인 경우, 웹훅 페이로드에는 해당 특정 예약에 대한 세부사항(예: 시작 시간, 캘린더 ID, 예약 상태)도 포함됩니다.
+- 예시: 워크플로우 트리거가 **Appointment Booked**(예약 완료)이면 웹훅 페이로드에 해당 예약의 정보(시작 시간, 캘린더 ID, 예약 상태 등)도 함께 담겨요.
 
-- **중요사항:** 트리거가 특정 객체와 관련되지 않은 경우(예: "연락처 태그 추가" 트리거), 예약이나 기회 관리와 같은 다른 객체의 데이터는 페이로드에 **포함되지 않습니다**. 필요한 데이터를 얻으려면 올바른 트리거를 사용해야 합니다.
-
----
-
-## **테스트 및 라이브 전환**
-
-워크플로우를 활성화하기 전에 웹훅을 테스트하여 데이터가 올바르게 전송되는지 확인하는 것이 중요합니다. 이 섹션에서는 테스트 프로세스, 실행 로그에서 결과를 검토하는 방법, 마지막으로 워크플로우를 게시하는 방법을 안내합니다.
-
-웹훅을 테스트하기 위해 여러 무료 사이트를 사용할 수 있습니다. [https://webhook.site/](https://webhook.site/)가 좋은 옵션입니다. "무료 웹훅 테스트"로 구글 검색해보세요.
-
-1. 웹훅 액션을 **저장**한 후, 빌더 오른쪽 상단에서 **Test Workflow(워크플로우 테스트)** 버튼을 클릭합니다.
-
-2. '연락처에 대한 테스트 실행' 패널이 열립니다. SELECT CONTACTS 드롭다운을 사용하여 시스템에서 **테스트 연락처**를 선택합니다.
-
-3. 파란색 **Run Test(테스트 실행)** 버튼을 클릭합니다. 이렇게 하면 웹훅 액션 실행을 포함하여 해당 연락처에 대한 전체 워크플로우가 실행됩니다.
-
-![웹훅 테스트 실행 이미지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053613253/original/nNtyFfTfBe42PYSJhinEiV8LhO8kUNkgjQ.png?1757636342)
-
-4. 테스트가 성공했는지 확인하려면 **Execution Logs(실행 로그)** 탭을 클릭합니다.
-
-5. 테스트 연락처에 대한 로그 항목을 찾습니다. 실행됨 상태의 웹훅 액션이 표시되어야 합니다. 이는 Hyperclass이 제공한 URL로 데이터를 성공적으로 전송했음을 확인해 줍니다.
-
-![실행 로그 확인 이미지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053613268/original/qO-eiyrUCHBfHi8MqVet-7-A5oIEHdFcuA.png?1757636410)
-
-6. 웹훅이 예상대로 작동하는 것을 확인했으면, 오른쪽 상단의 **Publish(발행)** 토글을 클릭하여 워크플로우를 라이브로 설정하고 실제 이벤트에 의해 트리거될 수 있도록 합니다.
+{% hint style="warning" %}
+**Contact Tag Added** 같은 트리거처럼 특정 오브젝트와 관련 없는 트리거라면, 예약이나 기회 같은 다른 오브젝트의 데이터는 페이로드에 포함되지 않아요. 필요한 데이터를 받으려면 알맞은 트리거를 사용해야 해요.
+{% endhint %}
 
 ---
 
-## **데이터 형식 세부사항**
+## 웹훅 테스트하고 게시하기
 
-연락처 데이터와 하위 계정(로케이션) 객체 데이터는 기본적으로 사용할 수 있지만, 예약, 할 일 등과 같은 다른 관련 객체들은 워크플로우에 해당 트리거가 적용된 경우에만 포함됩니다.
+워크플로우를 활성화하기 전에 웹훅이 데이터를 제대로 보내는지 테스트해 보세요. 아래에서 테스트 방법, **Execution Logs**(실행 로그)에서 결과를 확인하는 방법, 워크플로우를 게시하는 방법을 안내해요.
 
-예를 들어, 예약의 날짜와 시간은 워크플로우가 "예약 완료"와 같은 예약 참조를 입력 트리거로 가지고 있는 경우에만 검색할 수 있습니다. 마찬가지로 파이프라인의 다양한 기회의 기회 담당자는 워크플로우가 "파이프라인 변경"과 같은 기회 관리 트리거를 가지고 있는 경우에만 사용할 수 있습니다.
+{% hint style="info" %}
+무료 사이트로 웹훅을 테스트할 수 있어요. https://webhook.site/ 가 대표적이에요. 또는 "free webhook test"로 검색해 보세요.
+{% endhint %}
 
-```json
+1. 웹훅 액션을 저장한 뒤, 빌더 오른쪽 위에 있는 **Test Workflow**(워크플로우 테스트) 버튼을 클릭하세요.
+2. **Run A Test For Contact**(연락처로 테스트 실행) 패널이 열려요. **SELECT CONTACTS**(연락처 선택) 드롭다운에서 테스트용 연락처를 선택하세요.
+3. 파란색 **Run Test**(테스트 실행) 버튼을 클릭하세요. 웹훅 액션을 포함해 선택한 연락처에 대해 워크플로우 전체가 실행돼요.
+
+   ![Run A Test For Contact 패널에서 테스트 연락처를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053613253/original/nNtyFfTfBe42PYSJhinEiV8LhO8kUNkgjQ.png?1757636342)
+
+4. 테스트가 성공했는지 확인하려면 **Execution Logs** 탭을 클릭하세요.
+5. 테스트 연락처의 로그 항목을 찾으세요. **Webhook** 액션의 상태가 **Executed**(실행됨)로 보이면, 하이퍼클래스가 입력한 URL로 데이터를 성공적으로 보냈다는 뜻이에요.
+
+   ![Execution Logs에서 Webhook 액션이 Executed 상태로 표시된 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053613268/original/qO-eiyrUCHBfHi8MqVet-7-A5oIEHdFcuA.png?1757636410)
+
+6. 웹훅이 의도대로 동작하는 것을 확인했다면, 오른쪽 위의 **Publish**(게시) 토글을 켜세요. 워크플로우가 라이브 상태가 되어 실제 이벤트로 실행돼요.
+
+---
+
+## 데이터 형식 자세히 보기
+
+연락처 데이터와 서브 계정(location) 오브젝트 데이터는 기본으로 포함돼요. 반면 예약, 작업 같은 다른 관련 오브젝트는 해당 트리거가 워크플로우에 적용된 경우에만 전달돼요.
+
+예를 들어 예약 날짜와 시간은 **Appointment Booked** 같은 트리거로 워크플로우가 예약 정보를 입력값으로 가지고 있을 때만 가져올 수 있어요. 마찬가지로 파이프라인에 있는 여러 기회의 **Opportunity owner**(기회 담당자)는 **Pipeline Changed**(파이프라인 변경됨) 같은 기회 트리거가 있는 워크플로우에서만 사용할 수 있어요.
+
+```
 {
-  // 연락처 표준 필드
+
+  // Contact standard fields
+
   first_name,
+
   last_name,
+
   full_name,
+
   email,
+
   phone,
+
   tags,
+
   address1,
+
   city,
+
   state,
+
   country,
+
   timezone,
+
   date_created,
+
   postal_code,
+
   company_name,
+
   website,
+
   date_of_birth,
+
   contact_source,
+
   full_address,
+
   contact_type,
+
   gclid,
 
   ...
-  ... 연락처 커스텀 필드
+
+  ... Contact Custom Fields
+
   ...
 
-  // 로케이션 데이터는 대부분 모든 웹훅에서 항상 존재, 키 필드: location
+  // Location Data mostly present alawys with all webhooks, key field: location
+
   location: {
+
       name,
+
       address,
+
       city,
+
       state,
+
       country,
+
       postalCode,
+
       fullAddress,
+
       id
+
   }
 
-  // 해당하는 경우 기회 관리, 루트 레벨에 추가
+  // Opportunity if applicable, added on root level
+
   opportunity_name,
+
   status,
+
   lead_value,
+
   opportunity_source,
+
   source,
-  pipleline_stage, // 파이프라인 단계 이름
+
+  pipleline_stage, // name of pipeline stage
+
   pipeline_id,
+
   id,
+
   pipeline_name,
 
-  // 해당하는 경우 캠페인, 필드 키: campaign
+  // Campaign if applicable, field key: campaign
+
   campaign: {
+
       id,
+
       name
+
   },
 
-  // 해당하는 경우 사용자, 필드 키: user
+  // User if applicable, field key: user
+
   user: {
+
       firstName,
+
       lastName,
+
       email,
+
       phone,
+
       extension,
+
       address1,
+
       city,
+
       state,
+
       country,
+
       postalCode
+
   },
 
-  // 해당하는 경우 예약, 필드 키: calendar 
+  // Appointment if applicable, field key: calendar 
+
   calendar: {
-      id, // 캘린더 id
+
+      id, // calendar id
+
       calendarName, // calendar.name,
-      title, // 예약 제목
-      selectedTimezone, // 로케이션 타임존 또는 'UTC'
+
+      title, // appointment title
+
+      selectedTimezone, // location timezone OR 'UTC'
+
       appointmentId,
-      startTime: // selectedTimezone에 따른 시작시간 'YYYY-MM-DDTHH:mm:ss' 형식
-      endTime: // selectedTimezone에 따른 종료시간 'YYYY-MM-DDTHH:mm:ss' 형식
+
+      startTime: // startTime as per the selectedTimezone in format 'YYYY-MM-DDTHH:mm:ss'
+
+      endTime: // endTime as per the selectedTimezone in format 'YYYY-MM-DDTHH:mm:ss'
+
       status,
+
       appoinmentStatus,
+
       address,
+
       notes,
+
       date_created,
-      created_by, // 사용자가 생성한 경우 사용자명
-      created_by_user_id // 사용자가 생성한 경우 사용자 id
-      created_by_meta: { // 내부 필드
+
+      created_by, // user name if this is created by user
+
+      created_by_user_id // user id if this is created by user
+
+      created_by_meta: { // internal fields
+
         source,
+
         channel
+
       },
-      last_updated_by_meta: { // 내부 필드
+
+      last_updated_by_meta: { // internal fields
+
         source,
+
         channel
+
       }
+
   },
 
-  // 해당하는 경우 2단계 주문폼, 필드 키: order
+  // Two Step OrderForm if applicable, field key: order
+
   order: {
-      ... // 동적 데이터, 예시 데이터를 얻기 위해 테스트를 실행하세요
+
+      ... // Dynamic data, please run the test in order to get example data
+
   },
 
-  // 해당하는 경우 인보이스, 필드 키: invoice
+  // Invoice if applicable, field key: invoice
+
   invoice: {
-      ... // 동적 데이터, 예시 데이터를 얻기 위해 테스트를 실행하세요
+
+      ... // Dynamic data, please run the test in order to get example data
+
   },
 
-  // 해당하는 경우 할 일, 필드 키: task
+  // Task if applicable, field key: task
+
   task: {
+
       title,
+
       body,
-      dueDate: // UTC 타임존으로 변환된 마감일 'YYYY-MM-DDTHH:mm:ss' 형식
+
+      dueDate: dueDate converted to UTC timezone with format 'YYYY-MM-DDTHH:mm:ss'
+
   }
 
-  // 해당하는 경우 노트, 필드 키: note
+  // Note if applicable, field key: note
+
   note: {
+
       body
+
   }
 
-  // 해당하는 경우 메시지, 필드 키: message
+  // Message if applicable, field key: message
+
   message: {
+
       type,
+
       body,
+
       direction,
+
       status
+
   }
 
-  // 해당하는 경우 워크플로우, 필드 키: workflow
+  // Workflow if applicable, field key: workflow
+
   workflow: {
+
       id,
+
       name
+
   }
+
 }
 ```
 
 ---
 
-## **자주 묻는 질문**
+## 자주 묻는 질문
 
-**Q: 아웃바운드 웹훅과 인바운드 웹훅의 차이점은 무엇인가요?**
+### 아웃바운드 웹훅과 인바운드 웹훅은 뭐가 다른가요?
 
-아웃바운드 웹훅(이 액션)은 Hyperclass *에서* 외부 서비스 *로* 데이터를 전송합니다. 인바운드 웹훅(워크플로우 트리거의 한 유형)은 외부 서비스 *에서* Hyperclass *로* 데이터를 수신하여 워크플로우를 시작합니다.
+아웃바운드 웹훅(이 액션)은 하이퍼클래스에서 외부 서비스로 데이터를 보내요. 인바운드 웹훅(워크플로우 트리거의 한 종류)은 외부 서비스에서 하이퍼클래스로 데이터를 받아 워크플로우를 시작해요.
 
-**Q: 웹훅에서 전송된 정확한 데이터를 어떻게 볼 수 있나요?**
+### 웹훅으로 실제 전송된 데이터를 확인하려면 어떻게 하나요?
 
-실행 로그는 액션이 실행되었음을 확인해 주지만 데이터 페이로드 자체는 표시하지 않습니다. 데이터를 보려면 테스트 중에 URL로 설정하여 `webhook.site`와 같은 무료 웹훅 테스트 도구를 사용할 수 있습니다. 또는 수신 애플리케이션의 수신 데이터 로그를 확인할 수 있습니다.
+**Execution Logs**에서는 액션이 실행되었는지만 확인할 수 있고, 페이로드 데이터 자체는 보이지 않아요. 데이터를 보려면 테스트할 때 `webhook.site` 같은 무료 웹훅 테스트 도구의 주소를 URL로 설정해 보세요. 데이터를 받는 앱의 수신 데이터 로그에서 확인할 수도 있어요.
 
-**Q: 웹훅 액션이 실행 로그에서 오류를 표시합니다. 어떻게 해야 하나요?**
+### Execution Logs에 웹훅 액션 오류가 표시돼요. 어떻게 해야 하나요?
 
-먼저 웹훅 구성의 URL이 100% 정확하고 활성화되어 있는지 다시 확인하세요. 둘째, 수신 애플리케이션이 POST 요청을 받을 수 있도록 설정되어 있고 Hyperclass의 데이터 형식을 처리할 수 있는지 확인하세요. 마지막으로 외부 애플리케이션의 오류 로그에서 요청이 실패한 이유에 대한 구체적인 세부사항을 확인하세요.
+먼저 웹훅 설정의 URL이 정확하고 사용 가능한 주소인지 다시 확인하세요. 다음으로 받는 앱이 POST 요청을 받도록 설정되어 있고, 하이퍼클래스가 보내는 데이터 형식을 처리할 수 있는지 확인하세요. 마지막으로 외부 앱의 오류 로그에서 요청이 실패한 이유를 자세히 확인하세요.
 
-**Q: 해당 트리거를 사용하지 않고 특정 기회나 예약에 대한 데이터를 전송할 수 있나요?**
+### 특정 기회나 예약을 트리거로 쓰지 않고도 그 데이터를 보낼 수 있나요?
 
-아니요. 데이터 페이로드는 컨텍스트에 따라 달라집니다. 기회와 같은 특정 객체에 대한 데이터를 얻으려면 워크플로우가 해당 기회와 관련된 이벤트(예: "파이프라인 단계 변경")에 의해 트리거되어야 합니다. "태그 추가"와 같은 일반적인 트리거는 연락처 수준 데이터만 전송합니다.
+아니요. 페이로드 데이터는 워크플로우가 시작된 상황에 따라 달라져요. 기회 같은 특정 오브젝트의 데이터를 받으려면 그 기회와 관련된 이벤트(예: **Pipeline Stage Changed**(파이프라인 단계 변경됨))로 워크플로우가 시작되어야 해요. **Tag Added**(태그 추가됨) 같은 일반 트리거는 연락처 수준의 데이터만 보내요.
 
-**Q: 웹훅과 함께 사용할 수 있는 인기 있는 도구는 무엇인가요?**
+### 웹훅과 함께 많이 쓰는 도구에는 어떤 것이 있나요?
 
-웹훅은 일반적으로 Zapier나 Make(이전 Integromat)와 같은 연동 플랫폼으로 데이터를 전송하는 데 사용되며, 이를 통해 수천 개의 다른 앱에 연결할 수 있습니다. 또한 커스텀 서버, Google 시트(Zapier와 같은 서비스를 통해) 또는 Slack과 같은 커뮤니케이션 도구로 데이터를 전송하는 데도 사용됩니다.
+웹훅은 Zapier나 Make(예전 Integromat) 같은 연동 플랫폼으로 데이터를 보낼 때 많이 써요. 이런 플랫폼은 수천 개의 다른 앱과 연결할 수 있어요. 직접 만든 서버, Google Sheets(Zapier 같은 서비스를 거쳐서), Slack 같은 커뮤니케이션 도구로 데이터를 보낼 때도 써요.
 
-**Q: 이 기능을 사용하려면 개발자여야 하나요?**
+### 이 기능을 쓰려면 개발자여야 하나요?
 
-Hyperclass에서 웹훅 액션을 설정하는 것은 간단하며 코딩이 필요하지 않습니다. 하지만 데이터를 전송하려는 서비스에서 대상 URL을 가져와야 합니다. 해당 서비스가 무엇을 받을 것으로 예상하는지 이해하는 것이 도움이 되지만, 많은 서비스에서 URL과 모든 필요한 지침을 제공합니다.
+하이퍼클래스에서 웹훅 액션을 설정하는 일은 간단하고 코딩이 필요 없어요. 다만 데이터를 보낼 서비스에서 목적지 URL을 받아 와야 해요. 그 서비스가 어떤 데이터를 받는지 알면 도움이 되지만, 많은 서비스가 URL과 필요한 안내를 모두 제공해요.
 
-**Q: 웹훅 액션을 통해 이미지/파일을 전송할 수 있나요?**
+### 웹훅 액션으로 이미지나 파일도 보낼 수 있나요?
 
-아니요, 웹훅 액션을 사용하여 이미지/파일을 전송할 수 없습니다.
-
----
-*원문 최종 수정: Mon, 16 Mar, 2026 at 11:23 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+아니요, 웹훅 액션으로는 이미지나 파일을 보낼 수 없어요.

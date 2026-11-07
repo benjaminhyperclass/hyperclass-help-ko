@@ -1,286 +1,243 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 20-고객지원 > Software Migration Guides
+원문: /support/solutions/articles/155000003308-calendly-to-highlevel-migration-guide-
+번역일: 2026-11-06
+카테고리: 20-고객지원
 ---
 
-# Calendly에서 Hyperclass로 이전하기 (마이그레이션 가이드)
+# Calendly에서 하이퍼클래스로 일정 예약 옮기기 (마이그레이션 가이드)
 
-이 가이드는 Calendly의 예약 및 일정 관리 기능을 Hyperclass로 완전히 이전하는 방법을 안내합니다. 기존 예약 기능과 자동화를 유지하면서 Hyperclass의 확장된 기능을 활용할 수 있도록 원활한 전환을 목표로 합니다.
+Calendly에서 쓰던 일정 예약과 예약 관련 설정을 하이퍼클래스로 옮기는 방법을 안내해요. 예약 기능과 자동화를 그대로 이어 가면서 하이퍼클래스의 다양한 기능도 함께 쓸 수 있어요.
 
-**중요:** Calendly에서 Hyperclass로 이전할 때 다음 구성 요소를 모두 마이그레이션해야 합니다.
+{% hint style="warning" %}
+Calendly에서 하이퍼클래스로 옮길 때는 아래 항목을 모두 옮기세요.
 
 1. 사용자
-2. 캘린더 설정
-3. 예약 가능 시간 설정
+2. 캘린더 구성
+3. 가용성 설정
 4. 화상 회의
-5. 결제 수집
-6. 캘린더(이벤트 유형)
+5. 결제 수단
+6. 캘린더(Calendly의 Event Types)
 7. 워크플로우(자동화)
+{% endhint %}
 
----
+## 사용자 옮기기
 
-**목차**
+Calendly는 하나의 Calendly 조직(Organization) 안에 여러 사용자를 둘 수 있어요. 에이전시와 비슷한 단위라고 생각하면 돼요. 사용자마다 개인 Calendly 계정과 개인 Calendly 페이지가 있고, 그 계정에 이벤트 유형(Event Types)이 배정돼요.
 
-- [사용자 이전](#사용자-이전)
-- [캘린더 설정 이전](#캘린더-설정-이전)
-- [예약 가능 시간 설정 이전](#예약-가능-시간-설정-이전)
-- [화상 회의 설정](#화상-회의-설정)
-- [결제 수집 설정](#결제-수집-설정)
-- [캘린더(이벤트 유형) 이전](#캘린더이벤트-유형-이전)
-- [워크플로우(자동화) 이전](#워크플로우자동화-이전)
-- [연락처 이전](#연락처-이전)
-- [추가 이전 고려사항](#추가-이전-고려사항)
-- [자주 묻는 질문](#자주-묻는-질문)
+Calendly 조직의 관리자(Admin)와 소유자(Owner)는 조직 구성원 목록을 내려받을 수 있어요. 이 목록으로 모든 사용자가 하이퍼클래스 서브 계정에 추가됐는지 확인할 수 있어요.
 
-# 사용자 이전
+### 1단계. Calendly 사용자 목록 내보내기
 
-Calendly는 조직(에이전시 레벨) 내에서 여러 사용자를 지원합니다. 각 사용자는 개별 Calendly 계정과 페이지, 그리고 할당된 이벤트 유형을 가집니다.
+1. Calendly에 로그인하세요.
+2. 아무 Calendly 페이지에서나 오른쪽 위에서 **Account > Users**(계정 > 사용자)를 선택하세요.
+3. **Export**(내보내기)를 선택하세요. CSV 파일이 내려받아져요.
 
-Calendly 조직의 관리자와 소유자는 조직 구성원 목록을 다운로드할 수 있으며, 이 목록은 모든 구성원의 정보를 포함합니다. 이 목록을 통해 사용자들이 Hyperclass 하위 계정에 올바르게 추가되었는지 확인할 수 있습니다.
+### 2단계. 하이퍼클래스 서브 계정에 사용자 추가하고 배정하기
 
-### **1단계:** Calendly 사용자 목록 내보내기
+1. 하이퍼클래스에 로그인한 뒤 **에이전시 설정 > 팀**으로 이동하세요. 에이전시 설정은 에이전시 관리자만 쓸 수 있어요.
+2. Calendly에 있던 사용자가 모두 하이퍼클래스 서브 계정에 추가되고 배정돼 있는지 확인하세요.
+3. 빠진 사용자가 있으면 **+ 직원 추가**로 추가하세요. 사용자의 역할은 Calendly에서 내보낸 파일을 보고 정하세요.
 
-- **Calendly 로그인:** Calendly 페이지 우측 상단에서 Account > Users를 선택합니다. Export를 클릭하면 CSV 파일이 다운로드됩니다.
+![사용자 옮기기 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032351762/original/syJARtn1yQfzWRaR6sSqpuQ_vrIKJ4Nh0Q.png?1725552971)
 
-### **2단계:** Hyperclass 하위 계정에 사용자 추가 및 할당
+## 캘린더 구성 옮기기
 
-- **Hyperclass 로그인:** Agency Settings(에이전시 설정) > Team(팀)으로 이동합니다. Calendly의 사용자들이 Hyperclass 하위 계정에 추가되고 할당되었는지 확인합니다.
+Calendly는 Google Calendar, Outlook, iCloud 캘린더와 가용 시간을 동기화해서, 사용자가 가능한 시간에만 일정이 잡히게 해요. 하이퍼클래스에도 중복 예약을 막는 비슷한 기능이 있어요.
 
-- + Add Employee(직원 추가)를 사용하여 누락된 사용자를 추가합니다. Calendly 내보내기 파일을 참조하여 사용자 역할을 결정하세요.
+{% hint style="warning" %}
+옮기려는 사용자마다 아래 단계를 진행하세요.
+{% endhint %}
 
-![사용자 추가 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032351762/original/syJARtn1yQfzWRaR6sSqpuQ_vrIKJ4Nh0Q.png?1725552971)
+### 1단계. Calendly에서 Google Calendar 연결 해제하기
 
----
+1. Calendly에서 **Account > Calendar Sync**(캘린더 동기화)로 이동하세요.
+2. Calendly에 연결된 Google Calendar나 Outlook Calendar 연결을 해제하세요.
 
-# 캘린더 설정 이전
+### 2단계. 하이퍼클래스에 Google Calendar 연결하기
 
-Calendly는 Google 캘린더, Outlook, iCloud 캘린더와 동기화하여 사용자의 가용성을 기반으로 이벤트를 예약합니다. Hyperclass도 중복 예약을 방지하는 유사한 기능을 제공합니다.
+1. 하이퍼클래스에서 **설정 > 연동**으로 이동하세요.
+2. **Google**을 선택하고 안내에 따라 로그인해서 캘린더를 연결하세요. Outlook도 같은 방법으로 연결해요. 하이퍼클래스는 Google Calendar의 가용 시간을 기준으로 일정 충돌을 확인해요.
+3. **캘린더 > 캘린더 설정 > 연결**로 이동하세요.
+4. 취소 내용을 동기화할지 등, Calendly에서 설정했던 것과 비슷하게 동기화 설정을 맞추세요.
 
-### **중요:** 이전하는 각 사용자에 대해 다음 단계를 수행하세요.
+### 3단계. 이전 후 확인하기
 
-### **1단계:** Calendly에서 Google 캘린더 연결 해제
+Google에 테스트 일정을 만들어 보세요. 하이퍼클래스 캘린더에서 그 시간이 예약 불가로 표시되는지 확인하세요. Google Calendar에 이미 있는 다른 바쁜 일정도 하이퍼클래스 캘린더에 반영되는지 확인하세요.
 
-- **캘린더 동기화 설정 접근:** Calendly에서 Account > Calendar Sync로 이동합니다.
+![캘린더 구성 옮기기 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032351757/original/kppG7-3Whe8ttZmUxdwwSnWgEanW4UliuA.png?1725552970)
 
-- **캘린더 연결 해제:** Calendly에서 Google 캘린더/Outlook 캘린더 연결을 해제합니다.
+## 가용성 설정 옮기기
 
-### **2단계:** Hyperclass에 Google 캘린더 연결
+Calendly에는 시간 간격, 가용 시간, 시간대 관리 같은 예약 설정이 있어요. 일정 예약이 이전과 똑같이 동작하려면 이 설정을 하이퍼클래스에서도 똑같이 맞춰야 해요.
 
-- **연동으로 이동:** Hyperclass에서 Settings(설정) > Integrations(연동)으로 이동합니다.
+### 1단계. 예약 설정 기록해 두기
 
-- **Google 캘린더 및 Outlook 연결:** Google을 선택하고 안내에 따라 로그인하여 캘린더를 연결합니다. Hyperclass는 Google 캘린더의 가용성을 기반으로 충돌을 확인합니다.
+Calendly에서 지금 쓰는 예약 설정을 적어 두세요. 가용 시간, 버퍼 시간, 최소 사전 예약 시간(minimum notice), 하루 예약 한도, 시간대 표시 설정을 포함하세요.
 
-- **동기화 기본 설정:** Calendars(캘린더) > Calendar Settings(캘린더 설정) > Connections(연결)로 이동합니다. Calendly에서 설정한 것과 유사하게 취소 동기화 및 기타 기본 설정을 구성합니다.
+### 2단계. 하이퍼클래스에서 예약 설정하기
 
-### **3단계:** 이전 후 확인
+1. 하이퍼클래스에서 만든 캘린더를 열고 **가용성** 설정으로 이동하세요.
+2. Calendly에서 기록해 둔 대로 가용 시간, 버퍼 시간, 하루 예약 한도를 설정하세요.
+3. 서브 계정 설정과 사용자 프로필의 시간대가 Calendly에서 쓰던 표시 설정과 같은지 확인하세요.
 
-- **캘린더 동기화 테스트:** Google에서 테스트 이벤트를 예약하고 Hyperclass 캘린더에서 차단된 것으로 나타나는지, 그리고 Google 캘린더의 기존 바쁜 이벤트가 Hyperclass 캘린더에서 존중되는지 확인합니다.
+### 3단계. 이전 후 확인하기
 
-![캘린더 연결 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032351757/original/kppG7-3Whe8ttZmUxdwwSnWgEanW4UliuA.png?1725552970)
+하이퍼클래스 캘린더를 열어 보세요. 예약 가능한 시간이 Calendly에서 설정한 것과 같은지, 버퍼 시간과 다른 제한이 제대로 적용됐는지 확인하세요.
 
----
+## 화상 회의 설정하기
 
-# 예약 가능 시간 설정 이전
+Calendly는 Zoom과 연동해서 예약된 일정마다 회의 링크를 자동으로 만들어 줘요. 하이퍼클래스에서도 같은 기능을 쓸 수 있어요.
 
-Calendly는 시간 증분, 가용성, 시간대 관리를 포함한 여러 예약 설정을 제공합니다. 예약의 일관성을 유지하려면 이러한 설정을 Hyperclass에서 복제해야 합니다.
+### 1단계. Calendly에서 Zoom 연결 해제하기
 
-### **1단계:** 예약 설정 문서화
+1. Calendly에서 **Integrations > Zoom**으로 이동하세요.
+2. 안내에 따라 Calendly에서 Zoom 계정 연결을 해제하세요.
 
-- **기존 설정 검토:** Calendly에서 현재 예약 설정을 문서화합니다. 여기에는 가능한 시간, 버퍼 시간, 최소 예고 시간, 일일 제한, 시간대 표시 설정이 포함됩니다.
+### 2단계. 하이퍼클래스에 Zoom 연결하기
 
-### **2단계:** Hyperclass에서 예약 설정
+1. 하이퍼클래스에서 **설정 > 캘린더 > 연결**로 이동하세요.
+2. **Zoom**을 선택하고 Zoom 계정에 로그인하세요.
+3. 하이퍼클래스가 Zoom 계정에 접근하도록 승인하세요.
+4. 하이퍼클래스 캘린더 설정에서, 해당하는 경우 Zoom을 예약의 기본 위치로 지정하세요.
 
-- **예약 가능 시간 설정:** Hyperclass에서 생성한 특정 캘린더 아래의 Availability(예약 가능 시간) 설정으로 이동합니다. Calendly에서 문서화한 설정에 따라 가능한 시간, 버퍼 시간, 일일 제한을 설정합니다.
+![Zoom 연결 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032351760/original/3jGcZDKJY2YWNHrNAVmNcKk9rpLEMjK5Iw.png?1725552970)
 
-- **시간대 설정:** Hyperclass 로케이션과 사용자 프로필에서 시간대가 올바르게 구성되어 Calendly에서 사용한 표시 설정과 일치하는지 확인합니다.
+## 결제 수단 설정하기
 
-### **3단계:** 이전 후 확인
+Calendly의 모든 이벤트 유형은 결제를 받을 수 있어요. 개인 이벤트 유형(일대일, 그룹)은 내 Stripe 계정에 연결돼요. 팀 이벤트 유형(라운드 로빈, 공동)은 Calendly 소유자의 Stripe 계정에 연결돼요. 여러 Stripe 계정을 연결하려면 서브 계정을 추가로 만들어야 한다는 점을 고객에게 안내하세요.
 
-- **가용성 확인:** Hyperclass의 캘린더를 확인하여 가능한 시간이 Calendly에서 설정한 것과 일치하고, 버퍼 시간 및 기타 제한사항이 올바르게 적용되었는지 확인합니다.
+### 1단계. Calendly에서 Stripe 연결 해제하기
 
----
+1. Calendly에 로그인하세요.
+2. **Integrations** 페이지로 이동하세요.
+3. Stripe 옵션을 선택하고 **Disconnect**를 클릭하세요. 그러면 Calendly 계정에서 Stripe 연결이 완전히 해제돼요.
 
-# 화상 회의 설정
+{% hint style="warning" %}
+Stripe 연결을 해제하면, Calendly 계정에서 결제를 받던 이벤트 유형이 모두 무료로 바뀌어요.
+{% endhint %}
 
-Calendly는 Zoom과 연동하여 예약된 이벤트에 대해 자동으로 미팅 링크를 생성합니다. 이 기능은 Hyperclass에서도 동일하게 구현할 수 있습니다.
+### 2단계. 하이퍼클래스에 Stripe 연결하기
 
-### 1단계: Calendly에서 Zoom 연결 해제
+1. 하이퍼클래스 서브 계정에 로그인하세요.
+2. **결제** 탭 > **연동**으로 이동해서 결제 게이트웨이를 먼저 추가하세요.
 
-- **연동 접근:** Calendly에서 Integrations > Zoom으로 이동합니다.
+### 3단계. 캘린더에서 결제 받기 켜기
 
-- **Zoom 연결 해제:** 단계에 따라 Calendly에서 Zoom 계정 연결을 해제합니다.
+결제 수단을 하이퍼클래스 캘린더에 연결하는 방법은 관련 도움말을 참고하세요.
 
-### 2단계: Hyperclass에 Zoom 연결
+## 캘린더(이벤트 유형) 옮기기
 
-- **연동으로 이동:** Hyperclass에서 Settings(설정) > Calendar(캘린더) > Connections(연결)로 이동합니다.
+Calendly에서는 캘린더를 이벤트 유형(Event Types)이라고 불러요. 이벤트 유형으로 미팅 일정을 잡고, 결제를 받고, 연락처에게서 추가 정보를 받아요. 하이퍼클래스에서는 예약 시스템으로 같은 일을 할 수 있어요.
 
-- **Zoom 연결:** Zoom을 선택하고 계정에 로그인합니다. Hyperclass가 Zoom 계정에 액세스할 수 있도록 권한을 부여합니다.
+### 1단계. 이벤트 유형 기록해 두기
 
-- **Zoom을 기본 위치로 설정:** 해당하는 경우 Hyperclass의 캘린더 설정에서 Zoom을 예약의 기본 위치로 설정합니다.
+1. Calendly에서 만들어 둔 이벤트 유형을 모두 찾아 이름, 소요 시간, 위치, 관련 설정을 적어 두세요.
+2. 버퍼 시간, 최소 사전 예약 시간, 하루 예약 한도도 함께 적으세요. 초대받은 사람에게 추가 정보를 받으려고 쓴 커스텀 필드가 있으면 그것도 적으세요.
 
-![Zoom 연결 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032351760/original/3jGcZDKJY2YWNHrNAVmNcKk9rpLEMjK5Iw.png?1725552970)
+### 2단계. 하이퍼클래스에서 이벤트 유형 다시 만들기
 
----
+1. 하이퍼클래스에서 **캘린더 > 캘린더 설정**으로 이동하세요.
+2. **Create New Calendar**(새 캘린더 만들기)를 선택해서 새 예약 유형을 만드세요.
+3. **예약 세부사항**에서 이름, 소요 시간, 위치(Date-Specific Hours)를 설정하세요. 버퍼 시간, 최소 사전 예약 시간, 하루 예약 한도 같은 다른 설정도 함께 맞추세요.
+4. 캘린더에 **팀원**을 추가하세요. 이 설정은 Calendly의 이벤트 유형 설정에 해당해요.
+5. Calendly 이벤트 유형에서 질문이나 폼으로 추가 정보를 받았다면, 하이퍼클래스 폼에서 커스텀 필드로 다시 만드세요. 만드는 방법은 관련 도움말을 참고하세요.
 
-# 결제 수집 설정
+### 3단계. 예약 링크 공유하기
 
-Calendly의 모든 이벤트 유형은 결제를 지원합니다. 개인 이벤트 유형(일대일 및 그룹)은 귀하의 Stripe 계정에 연결되고, 팀 이벤트 유형(라운드 로빈 및 공동)은 Calendly 소유자의 Stripe 계정에 연결됩니다. 여러 Stripe 계정 연결을 지원하기 위해 추가 로케이션을 생성하도록 고객을 안내하세요.
+예약 유형을 모두 설정했다면 각각의 예약 링크를 하이퍼클래스에서 만드세요. 이 링크를 팀에 공유하거나 웹사이트와 이메일에 넣어서 기존 Calendly 링크를 바꾸세요.
 
-### **1단계:** Calendly에서 Stripe 연결 해제
+### 4단계. 이전 후 확인하기
 
-- **Calendly 로그인:** Calendly 계정에서 Stripe를 완전히 연결 해제하려면 Integrations 페이지를 방문하여 Stripe 옵션을 선택하고 Disconnect를 클릭합니다.
+새 하이퍼클래스 예약 링크로 테스트 예약을 해 보세요. 버퍼 시간, 폼 질문, 알림, Zoom 링크 등 모든 설정이 제대로 동작하는지 확인하세요.
 
-**중요:** Calendly 계정에서 결제를 받는 모든 이벤트 유형은 Stripe 연결이 해제되면 무료가 됩니다.
+![캘린더 옮기기 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032351761/original/ScGEc9WgdTz4kwEmS8Ba16gVHonecfxvew.png?1725552970)
 
-### **2단계:** Hyperclass에서 Stripe 연결
+## 워크플로우(자동화) 옮기기
 
-- **Hyperclass 하위 계정 로그인:** 하위 계정에서 Payments(결제) 탭 > Integration(연동)으로 이동하여 먼저 결제 게이트웨이를 추가합니다.
+Calendly 워크플로우는 리마인더 이메일이나 후속 메시지 발송 같은 작업을 자동으로 처리해요. 하이퍼클래스에서는 워크플로우 기능으로 비슷한 자동화를 만들 수 있어요.
 
-### **3단계:** 캘린더에서 결제 수집 활성화
+### 1단계. 기존 워크플로우 기록해 두기
 
-- [Hyperclass 캘린더에 결제 솔루션을 연결하는 방법을 알아보려면 여기를 클릭하세요.](../../04-캘린더-예약/캘린더-설정/collecting-payments-in-calendars.md)
+1. [Calendly 홈 페이지](https://calendly.com/event_types/user/me)의 왼쪽 탐색 패널에서 [Workflows](https://calendly.com/app/workflows/user/me)를 선택하세요.
+2. Calendly에 만들어 둔 워크플로우를 기록하세요. 트리거(예: 이벤트 생성, 이벤트 취소)와 액션(예: 이메일 보내기, SMS 보내기)을 포함하세요.
 
----
+### 2단계. 하이퍼클래스에서 워크플로우 다시 만들기
 
-# 캘린더(이벤트 유형) 이전
+1. 하이퍼클래스에서 **자동화 > 워크플로우**로 이동하세요.
+2. **Create New Workflow**(새 워크플로우 만들기)를 선택하세요. Calendly에서 기록한 조건과 액션에 맞게 설정하세요.
+3. 비슷한 이벤트를 기준으로 워크플로우가 시작되도록 하이퍼클래스의 트리거 옵션을 쓰세요(예: 예약 완료, 예약 취소, 예약 노쇼).
+4. 워크플로우에 이메일이나 SMS 메시지가 들어 있으면 하이퍼클래스의 변수로 개인화해서 수정하세요.
 
-Calendly에서 캘린더는 이벤트 유형이라고 부릅니다. 이는 미팅 예약, 결제 수집, 연락처로부터 추가 정보 수집에 사용됩니다. Hyperclass에서는 예약 시스템을 통해 유사한 기능을 구현합니다.
+### 3단계. 이전 후 확인하기
 
-### **1단계:** 이벤트 유형 문서화
+테스트 예약을 만들고 워크플로우가 예상대로 실행되는지 지켜보세요. 메시지가 알맞은 시점에 알맞은 내용으로 발송되는지 확인하세요.
 
-- **이벤트 유형 목록:** Calendly에서 생성한 각 이벤트 유형을 식별하고 문서화합니다. 이름, 지속 시간, 위치, 관련 설정을 포함하세요.
+![워크플로우 옮기기 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032354283/original/WxEkWAhpx4nr9l9l5UOo4xHVk9tUCfXxFA.png?1725555195)
 
-- **세부 사항 기록:** 버퍼 시간, 최소 예고 시간, 일일 제한, 그리고 초대자로부터 추가 정보를 수집하는 데 사용되는 커스텀 필드 등의 세부 사항을 포함하세요.
+## 연락처 옮기기
 
-### **2단계:** Hyperclass에서 이벤트 유형 재생성
+완전히 전환하기 전에 Calendly의 예약 데이터를 내보내 두세요. 예약 데이터에 연락처 정보가 들어 있어서, 옮기는 중에 정보가 사라지지 않게 하려면 꼭 필요해요.
 
-- **Hyperclass 캘린더 접근:** Hyperclass에서 Calendars(캘린더) > Calendar Settings(캘린더 설정)으로 이동합니다.
+### 1단계. 이벤트 상세 내보내기
 
-- **새 예약 유형 생성:** Create New Calendar(새 캘린더 생성)를 선택하여 새로운 예약 유형 설정을 시작합니다.
+1. Calendly에서 내보낼 이벤트만 보이도록 필터를 설정하세요(예: 최근 30일, 특정 이벤트 유형).
+2. Calendly [홈 페이지](https://calendly.com/event_types/user/me)에서 **Meetings**를 선택하세요.
+3. **Scheduled Events** 페이지 오른쪽 위에서 **Export**를 선택하세요. 이벤트 상세 정보가 CSV 형식으로 내려받아져요. 이 파일에는 초대받은 사람의 연락처 정보, 이벤트 유형, 날짜, 위치 등이 들어 있어요.
 
-- **예약 세부 사항 구성:** 이름, 지속 시간, 위치(Date-Specific Hours), 버퍼 시간, 최소 예고 시간, 일일 제한 등의 설정을 구성합니다. 캘린더에 팀 구성원을 추가합니다. 이는 Calendly의 이벤트 유형 설정에 해당합니다.
+### 2단계. CSV 데이터 정리하고 하이퍼클래스로 연락처 가져오기
 
-- **커스텀 필드:** Calendly 이벤트 유형이 추가 정보(예: 질문 또는 양식)를 수집했다면, [Hyperclass 폼에서 커스텀 필드로 재생성하는 방법을 알아보려면 여기를 클릭하세요.](../../06-사이트/폼/how-to-quickly-add-and-edit-custom-fields-in-forms-and-surveys.md)
+- CSV 대량 가져오기 문제 해결(Troubleshooting Bulk Imports Via CSV)
 
-### **3단계:** 예약 링크 공유
+![연락처 옮기기 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032354461/original/Yn8DItbs2HVoVAC8gKufoDOIdtn9pWmoSw.png?1725555440)
 
-- **링크 생성 및 공유:** 각 예약 유형 설정 후, Hyperclass에서 해당 예약 링크를 생성합니다. 이 링크를 팀과 공유하거나 웹사이트 및 이메일에 삽입하여 기존 Calendly 링크를 대체합니다.
+## 이전할 때 함께 살펴볼 것
 
-### **4단계:** 이전 후 확인
+### 교육과 지원
 
-- **예약 프로세스 테스트:** 새로운 Hyperclass 예약 링크를 통해 테스트 예약을 수행하여 예약 프로세스가 예상대로 작동하는지 확인합니다. 모든 설정(예: 버퍼 시간, 양식 질문, 알림, Zoom 링크)이 올바르게 작동하는지 확인합니다.
+- 내부 교육: 팀원을 대상으로 하이퍼클래스 사용법 교육을 진행하세요. Calendly와 다른 기능을 중심으로 알려 주세요.
+- 지원 안내: 고객사 팀이 일정 예약 관련 질문이 있을 때 하이퍼클래스 고객지원 자료를 찾아보는 방법을 알고 있는지 확인하세요.
 
-![캘린더 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032351761/original/ScGEc9WgdTz4kwEmS8Ba16gVHonecfxvew.png?1725552970)
+### 다른 앱도 옮기기
 
----
+- Calendly는 여러 기능 중 하나일 뿐이에요. 고객사가 쓰는 다른 도구가 더 있나요? 다른 소프트웨어를 옮길 때는 소프트웨어별 가이드를 활용하세요.
 
-# 워크플로우(자동화) 이전
-
-Calendly 워크플로우는 알림 이메일이나 후속 메시지 발송과 같은 작업을 자동화합니다. Hyperclass는 워크플로우 기능을 통해 유사한 자동화 기능을 제공합니다.
-
-### **1단계:** 기존 워크플로우 문서화
-
-- **Calendly 워크플로우 검토:** [Calendly 홈 페이지](https://calendly.com/event_types/user/me)에서 왼쪽 네비게이션 패널의 [Workflows](https://calendly.com/app/workflows/user/me)를 선택합니다. Calendly에서 설정한 워크플로우를 문서화합니다. 트리거(예: 이벤트 생성, 이벤트 취소)와 액션(예: 이메일 발송, SMS 발송)을 포함하세요.
-
-### **2단계:** Hyperclass에서 워크플로우 재생성
-
-- **워크플로우 접근:** Hyperclass에서 Automation(자동화) > Workflows(워크플로우)로 이동합니다.
-
-- **새 워크플로우 생성:** Create New Workflow(새 워크플로우 생성)를 선택하고 Calendly에서 문서화한 것과 일치하는 조건과 액션을 설정합니다. Hyperclass의 트리거 옵션을 사용하여 유사한 이벤트(예: 예약 완료, 예약 취소, 예약 노쇼)를 기반으로 워크플로우를 시작합니다.
-
-- **메시지 커스터마이징:** 워크플로우의 일부인 이메일이나 SMS 메시지를 개인화를 위해 Hyperclass의 변수를 사용하여 커스터마이징합니다.
-
-### **3단계:** 이전 후 확인
-
-- **워크플로우 실행 테스트:** 테스트 예약을 생성하고 워크플로우가 예상대로 트리거되는지 관찰합니다. 메시지가 올바른 시간에 올바른 내용으로 발송되는지 확인합니다.
-
-![워크플로우 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032354283/original/WxEkWAhpx4nr9l9l5UOo4xHVk9tUCfXxFA.png?1725555195)
-
----
-
-# 연락처 이전
-
-완전히 전환하기 전에 연락처 정보가 포함된 Calendly의 예약 데이터를 내보내서 마이그레이션 중에 아무것도 손실되지 않도록 하는 것이 중요합니다.
-
-### **1단계:** 이벤트 세부 사항 내보내기
-
-- **Calendly에서 이벤트 필터링:** Calendly에서 내보내야 할 이벤트를 필터링합니다(예: 지난 30일, 특정 이벤트 유형). [홈 페이지](https://calendly.com/event_types/user/me)에서 Meetings를 선택합니다.
-
-- **CSV로 내보내기:** Scheduled Events 페이지 우측 상단에서 Export를 선택하여 이벤트 세부 사항을 CSV 형식으로 다운로드합니다. 이 파일에는 초대자 연락처 정보, 이벤트 유형, 날짜, 위치 등이 포함됩니다.
-
-### **2단계:** CSV 데이터 준비 및 Hyperclass로 연락처 가져오기
-
-- CSV를 통한 대량 가져오기 문제 해결
-
-![연락처 가져오기 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032354461/original/Yn8DItbs2HVoVAC8gKufoDOIdtn9pWmoSw.png?1725555440)
-
----
-
-# 추가 이전 고려사항
-
-### **교육 및 지원**
-
-- **내부 교육:** 팀원들에게 Hyperclass 사용법에 대한 교육 세션을 제공하며, Calendly와 다른 기능에 중점을 둡니다.
-
-- **지원 액세스:** 고객의 팀이 예약 관련 질문이 있을 때 Hyperclass 지원 리소스에 액세스하는 방법을 알고 있는지 확인합니다.
-
-### **다른 앱 마이그레이션**
-
-- **Calendly는 단일 기능:** 고객의 기술 스택에 더 많은 도구가 있나요? 소프트웨어 가이드를 사용하여 고객이 다른 소프트웨어를 마이그레이션하도록 도와주세요.
-
-![마이그레이션 가이드 목록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032354645/original/byIjL1ylRg8YBCgrVfejq3kwNWJOpHtwNQ.png?1725555667)
-
----
+![이전할 때 살펴볼 것 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032354645/original/byIjL1ylRg8YBCgrVfejq3kwNWJOpHtwNQ.png?1725555667)
 
 ## 자주 묻는 질문
 
-**Calendly에서 사용자 목록을 내보내려면 어떻게 하나요?**
+### Calendly에서 사용자 목록을 내보내려면 어떻게 하나요?
+Calendly에 로그인해서 Account, Users 순서로 이동한 뒤 Export를 선택하세요. 모든 사용자 정보가 담긴 CSV 파일이 내려받아져요.
 
-Calendly에서 사용자 목록을 내보내려면 계정에 로그인하고 Account 섹션에서 Users로 이동한 후 Export 옵션을 선택하면 모든 사용자 세부 사항이 포함된 CSV 파일이 다운로드됩니다.
+Calendly에서 캘린더 연결을 해제하고 하이퍼클래스에 연결하려면, 먼저 Calendly 계정 설정을 열고 Calendar Sync로 이동해서 현재 캘린더(Google이나 Outlook 등)를 연결 해제하세요. 그다음 하이퍼클래스에서 **설정 > 연동**으로 이동해 캘린더 계정을 연결하세요. 마지막으로 **캘린더 > 캘린더 설정 > 연결**에서 동기화 설정을 맞추면 모든 설정이 끝나요.
 
-**Calendly에서 캘린더 연결을 해제하고 Hyperclass에 연결하려면 어떻게 하나요?**
+### 하이퍼클래스 서브 계정에 사용자를 추가하고 배정하려면 어떻게 하나요?
+하이퍼클래스에서 **에이전시 설정 > 팀**으로 이동해서 이미 등록된 사용자를 확인하세요. Calendly에서 내보낸 목록과 비교해 빠진 사용자가 있으면 **+ 직원 추가** 버튼으로 추가하세요.
 
-캘린더 연결을 Calendly에서 Hyperclass로 이동하려면 먼저 Calendly 계정 설정을 열고 Calendar Sync 섹션으로 이동하여 현재 캘린더(Google 또는 Outlook 등)를 연결 해제합니다. 그 후 Hyperclass를 열고 Settings(설정) > Integrations(연동)로 이동하여 캘린더 계정을 연결합니다. 연결 후 Calendars(캘린더) > Calendar Settings(캘린더 설정) > Connections(연결)로 이동하여 동기화 기본 설정을 구성하여 모든 것이 올바르게 작동하도록 합니다.
+### Calendly 캘린더 연결을 해제하고 하이퍼클래스에 연결하려면 어떻게 하나요?
+먼저 Calendly 계정 설정을 열고 Calendar Sync 섹션으로 이동해서 현재 캘린더(Google이나 Outlook 등)를 연결 해제하세요. 그다음 하이퍼클래스에서 **설정 > 연동**으로 이동해 캘린더 계정을 연결하세요. 연결한 뒤에는 **캘린더 > 캘린더 설정 > 연결**에서 동기화 설정을 맞춰서 원하는 대로 동작하는지 확인하세요.
 
-**Hyperclass 하위 계정에 사용자를 추가하고 할당하려면 어떻게 하나요?**
+### Calendly 설정과 똑같이 하이퍼클래스에서 가용성을 설정하려면 어떻게 하나요?
+먼저 Calendly에서 쓰는 가용 시간과 버퍼 시간 같은 설정을 기록해 두세요. 그다음 하이퍼클래스에서 해당 캘린더의 **가용성** 설정으로 이동해서 기록한 대로 맞추세요.
 
-Hyperclass 하위 계정에 사용자를 추가하고 할당하려면 Hyperclass에서 Agency Settings(에이전시 설정) > Team(팀)으로 이동하여 이미 시스템에 있는 사용자를 확인하고, + Add Employee(직원 추가) 버튼을 사용하여 Calendly 내보내기를 기반으로 누락된 사용자를 추가합니다.
+### 하이퍼클래스에서 화상 회의용으로 Zoom을 연동하려면 어떻게 하나요?
+먼저 Calendly에서 Integrations, Zoom 순서로 이동해 Zoom 연결을 해제하세요. 그다음 하이퍼클래스에서 **설정 > 캘린더 > 연결**으로 이동해 **Zoom**을 선택하고 로그인하세요. 필요하면 Zoom을 기본 위치로 지정하세요.
 
-**Calendly 구성과 일치하도록 Hyperclass에서 예약 가능 시간 설정을 하려면 어떻게 하나요?**
+### 하이퍼클래스에서 Stripe로 결제를 받으려면 어떻게 하나요?
+먼저 Calendly에서 Integrations, Stripe 순서로 이동해 **Disconnect**를 클릭하세요. 그다음 하이퍼클래스에서 **결제** 탭 > **연동**으로 이동해 Stripe를 추가하고, 캘린더에서 결제 받기를 켜세요.
 
-Calendly 구성과 일치하는 Hyperclass의 예약 가능 시간 설정을 하려면 먼저 가능한 시간과 버퍼 시간 등의 기존 Calendly 설정을 문서화한 후, Hyperclass에서 특정 캘린더의 Availability(예약 가능 시간) 설정으로 이동하여 문서화한 설정과 일치하도록 구성합니다.
+### Calendly 이벤트 유형을 하이퍼클래스에서 다시 만들려면 어떻게 하나요?
+먼저 Calendly의 이벤트 유형을 이름, 소요 시간, 위치 같은 세부 정보까지 기록해 두세요. 그다음 하이퍼클래스에서 **캘린더 > 캘린더 설정**으로 이동해 새 캘린더를 만들고, 기록한 내용에 맞게 세부 설정을 하세요.
 
-**화상 회의를 위해 Hyperclass와 Zoom을 연동하려면 어떻게 하나요?**
+### Calendly 워크플로우(자동화)를 하이퍼클래스로 옮기려면 어떻게 하나요?
+먼저 Calendly 워크플로우를 트리거와 액션까지 기록해 두세요. 그다음 하이퍼클래스에서 **자동화 > 워크플로우**로 이동해, 같은 트리거와 액션으로 새 워크플로우를 만드세요.
 
-화상 회의를 위해 Hyperclass와 Zoom을 연동하려면 먼저 Calendly에서 Integrations > Zoom으로 이동하여 Zoom을 연결 해제합니다. 그 후 Hyperclass에서 Settings(설정) > Calendar(캘린더) > Connections(연결)로 이동하여 Zoom을 선택하고 로그인한 후 필요한 경우 기본 위치로 설정합니다.
+### Calendly 연락처 데이터를 내보내서 하이퍼클래스로 가져오려면 어떻게 하나요?
+먼저 Calendly에서 Home, Meetings 순서로 이동해 이벤트를 필터링하고 Export를 선택해서 연락처 정보가 담긴 CSV 파일을 내려받으세요. 그다음 CSV를 정리한 뒤 하이퍼클래스의 연락처 대량 가져오기 절차를 따르세요.
 
-**Hyperclass에서 Stripe를 사용한 결제 수집을 설정하려면 어떻게 하나요?**
+### 이전 후 모든 게 잘 동작하는지 확인하려면 어떤 점검을 해야 하나요?
+연결한 캘린더에 테스트 일정을 만들고 하이퍼클래스에 표시되는지 확인해서 캘린더 동기화를 점검하세요. 가용성 설정이 이전 설정과 같은지도 확인하세요.
 
-Hyperclass에서 Stripe를 사용한 결제 수집을 설정하려면 먼저 Calendly에서 Integrations > Stripe로 이동하여 Disconnect를 클릭하여 Stripe를 연결 해제합니다. 그 후 Hyperclass에서 Payments(결제) 탭 > Integration(연동)으로 이동하여 Stripe를 추가하고 캘린더에서 활성화합니다.
+테스트 예약을 잡아서 워크플로우, 알림, 연동(예: Zoom, Stripe)이 제대로 동작하는지 확인하세요. 연락처가 제대로 가져와졌는지도 확인하세요.
 
-**Calendly의 이벤트 유형을 Hyperclass에서 재생성하려면 어떻게 하나요?**
-
-Calendly의 이벤트 유형을 Hyperclass에서 재생성하려면 이름, 지속 시간, 위치 등의 세부 사항을 포함한 기존 Calendly 이벤트 유형을 문서화한 후, Hyperclass에서 Calendars(캘린더) > Calendar Settings(캘린더 설정)로 이동하여 새 캘린더를 생성하고 문서화한 내용과 일치하도록 세부 사항을 구성합니다.
-
-**워크플로우(자동화)를 Calendly에서 Hyperclass로 마이그레이션하려면 어떻게 하나요?**
-
-워크플로우(자동화)를 Calendly에서 Hyperclass로 마이그레이션하려면 트리거와 액션을 포함한 Calendly 워크플로우를 문서화한 후, Hyperclass에서 Automation(자동화) > Workflows(워크플로우)로 이동하여 일치하는 트리거와 액션으로 새 워크플로우를 생성합니다.
-
-**Calendly에서 연락처 데이터를 내보내고 Hyperclass로 가져오려면 어떻게 하나요?**
-
-Calendly에서 연락처 데이터를 내보내고 Hyperclass로 가져오려면 먼저 Calendly에서 Home > Meetings로 이동하여 이벤트를 필터링하고 Export를 선택하여 연락처 세부 정보가 포함된 CSV를 다운로드합니다. 그 후 CSV를 준비하고 Hyperclass의 연락처 대량 가져오기 프로세스를 따릅니다.
-
-**모든 것이 올바르게 작동하는지 확인하기 위해 수행해야 할 주요 이전 후 확인 사항은 무엇인가요?**
-
-연결된 캘린더에서 테스트 이벤트를 예약하고 Hyperclass에 나타나는지 확인하여 캘린더 동기화를 테스트합니다. 예약 가능 시간 설정이 이전 구성과 일치하는지 확인합니다.
-
-테스트 예약을 통해 워크플로우, 알림, 연동(예: Zoom, Stripe)이 올바르게 작동하는지 확인합니다. 연락처가 올바르게 가져와졌는지 확인합니다.
-
-**마이그레이션하는 동안 여러 Hyperclass 하위 계정에서 동일한 Calendly 계정을 사용할 수 있나요?**
-
-네. 속해 있는 각 Hyperclass 하위 계정에서 동일한 Calendly 계정을 연결할 수 있습니다. 각 사용자는 하위 계정당 하나의 Calendly 계정만 연결할 수 있습니다.
-
----
-*원문 최종 수정: Tue, 23 Dec, 2025 at 8:23 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### 이전하는 동안 같은 Calendly 계정을 여러 하이퍼클래스 서브 계정에서 쓸 수 있나요?
+네, 쓸 수 있어요. 소속된 하이퍼클래스 서브 계정마다 같은 Calendly 계정을 연결할 수 있어요. 다만 사용자는 서브 계정 하나당 Calendly 계정을 하나만 연결할 수 있어요.

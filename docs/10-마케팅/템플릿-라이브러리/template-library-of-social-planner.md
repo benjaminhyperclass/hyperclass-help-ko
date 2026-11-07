@@ -1,157 +1,137 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 10-마케팅 > 템플릿-라이브러리
+원문: /support/solutions/articles/155000003329-template-library-of-social-planner
+번역일: 2026-11-06
+카테고리: 10-마케팅
 ---
 
-# 소셜 플래너의 템플릿 라이브러리
+# 소셜 플래너 템플릿 라이브러리 사용하기
 
-소셜 플래너(Social Planner)에 강력한 새 업데이트를 소개하게 되어 기쁩니다! 이제 템플릿 라이브러리를 사용하여 게시물을 빠르게 시작할 수 있습니다. 템플릿 라이브러리는 전문적으로 디자인된 바로 사용 가능한 소셜 미디어 템플릿 모음입니다.
-
-뿐만 아니라 에이전시 오너는 이제 자신이 좋아하는 게시물을 템플릿 라이브러리에 직접 추가할 수 있어, 성과가 좋은 콘텐츠를 재사용하기가 그 어느 때보다 쉬워졌습니다!
+**소셜 플래너**(Social Planner)의 **템플릿 라이브러리**에는 전문가가 디자인한 소셜 미디어 템플릿이 모여 있어요. 이 템플릿으로 게시물을 빠르게 만들 수 있어요. 에이전시 소유자는 반응이 좋았던 게시물을 템플릿 라이브러리에 직접 올려 다시 활용할 수도 있어요.
 
 ## 접근 권한
 
-1. 에이전시 관리자만 관리자 패널을 보고 템플릿 라이브러리에 템플릿을 업로드할 수 있습니다
-2. $497 플랜에서만 관리자 패널 접근 및 템플릿 업로드 기능을 제공합니다
-3. 모든 사용자는 템플릿 라이브러리의 미리 정의된 템플릿으로 시작할 수 있습니다
+1. 관리자 패널을 보고 템플릿 라이브러리에 템플릿을 업로드할 수 있는 사람은 **에이전시 관리자**뿐이에요.
+2. 관리자 패널과 템플릿 업로드 권한은 $497 요금제에서만 제공돼요.
+3. 모든 사용자는 템플릿 라이브러리의 기본 제공 템플릿으로 게시물을 시작할 수 있어요.
 
-역할별 접근 권한:
+역할별 권한은 다음과 같아요.
 
-| 역할 | 템플릿 업로드 | 템플릿 사용 |
-|------|-------------|------------|
-| 에이전시 관리자 | 가능 ($497 플랜만) | 가능 |
-| 에이전시 사용자 | 불가능 | 가능 |
-| 로케이션 관리자 | 불가능 | 가능 |
-| 로케이션 사용자 | 불가능 | 가능 |
+| 역할 | 템플릿 업로드 | 템플릿으로 시작 |
+| --- | --- | --- |
+| 에이전시 관리자 | 가능 ($497 요금제만) | 가능 |
+| 에이전시 사용자 | 불가 | 가능 |
+| 서브 계정 관리자 | 불가 | 가능 |
+| 서브 계정 사용자 | 불가 | 가능 |
 
-## 왜 필요한가요?
+## 템플릿 업로드 기능이 필요한 이유
 
-이 새로운 업로드 기능이 중요한 이유:
+- 사용자끼리 템플릿을 공유하면 새로운 아이디어와 디자인을 서로 참고할 수 있어요.
+- 사용자가 만든 템플릿이 늘어날수록 선택할 수 있는 스타일과 형식이 다양해져요.
+- 다른 사람의 템플릿을 활용하면 콘텐츠를 더 빠르게 계획하고 만들 수 있어요.
+- 공유한 자료를 통해 사용자 사이의 협업과 소통이 활발해져요.
+- 사용자가 계속 올리는 템플릿으로 라이브러리가 최신 상태를 유지해요.
 
-- **창의성 향상**: 템플릿을 공유함으로써 사용자들이 신선한 아이디어와 독특한 디자인으로 서로 영감을 줄 수 있습니다.
-- **옵션 확대**: 더 많은 사용자 생성 템플릿은 모든 사람이 선택할 수 있는 더 다양한 스타일과 형식을 의미합니다.
-- **시간 절약**: 다른 사람의 템플릿에 접근하면 사용자가 콘텐츠를 더 빠르게 계획하고 만들 수 있습니다.
-- **커뮤니티 구축**: 공유 리소스를 통해 사용자 기반 내 협업과 참여를 장려합니다.
-- **최신 상태 유지**: 지속적으로 업데이트되는 사용자 기여로 라이브러리를 동적이고 관련성 있게 유지합니다.
+## 템플릿 라이브러리로 게시물 만들기
 
-## 소셜 플래너에서 템플릿 라이브러리 사용 단계
+1. **소셜 플래너** 대시보드로 이동해 **New Posts**(새 게시물) 버튼을 클릭해요.
 
-- **"새 게시물(New Posts)" 클릭**
+   ![New Posts 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044642178/original/khDaUzGMgIv-wV60XqJz12D_Izh_n9Rn8A.png?1744023578)
 
-소셜 플래너 대시보드로 이동합니다.
+2. 나타나는 옵션 중 **소셜 플래너 템플릿**을 선택해요. 사용할 수 있는 게시물 템플릿을 둘러볼 수 있어요.
 
-- 새 소셜 미디어 게시물을 만들기 위해 "New Posts" 버튼을 클릭합니다.
-![소셜 플래너 대시보드](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044642178/original/khDaUzGMgIv-wV60XqJz12D_Izh_n9Rn8A.png?1744023578)
+   ![소셜 플래너 템플릿 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044642211/original/EydDX4s_IgriglBI1y7vmzIHdJpmF7OKiw.png?1744023599)
 
-- **"소셜 플래너 템플릿(Social Planner Templates)" 선택**
+3. **템플릿 선택** 화면에서 템플릿 라이브러리를 둘러보고, 필요에 맞는 템플릿을 선택해요.
 
-제시된 옵션에서 "Social Planner Templates"를 선택하여 사용 가능한 게시물 템플릿을 탐색합니다.
-![템플릿 선택 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044642211/original/EydDX4s_IgriglBI1y7vmzIHdJpmF7OKiw.png?1744023599)
+   ![템플릿 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044642334/original/vfF-WOJMXuePfCqrWp_tCOaKJKZEuNVFjA.png?1744023656)
 
-- **템플릿 선택**
+4. 템플릿을 고른 뒤 **Continue**(계속) 버튼을 클릭해 다음 단계로 넘어가요.
 
-템플릿 라이브러리를 탐색하고 필요에 맞는 템플릿을 선택합니다.
-![템플릿 라이브러리 탐색](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044642334/original/vfF-WOJMXuePfCqrWp_tCOaKJKZEuNVFjA.png?1744023656)
+   ![Continue 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044642366/original/tEPw07PgZ93aMwFt0KIvvCHxjzx_0_BdPg.png?1744023698)
 
-- **"계속(Continue)" 클릭**
+5. **Select Socials**(소셜 채널 선택)를 클릭해요. 그런 다음 **Review & Schedule**(검토 및 일정 등록)을 클릭해 게시물 일정 등록을 이어 가요.
+   ![Review & Schedule 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044642522/original/nEMv3wWUdWbtKJbPqrzXh7Zkax5QwRFY2Q.png?1744023775)
 
-템플릿을 선택한 후, "Continue" 버튼을 클릭하여 다음 단계로 이동합니다.
-![계속 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044642366/original/tEPw07PgZ93aMwFt0KIvvCHxjzx_0_BdPg.png?1744023698)
+6. 게시물을 올릴 날짜, 시간, 채널을 정하고 **일정** 버튼을 클릭해 설정을 저장해요.
 
-- **"소셜 선택(Select Socials)" 클릭**
+   ![날짜, 시간, 채널 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044642546/original/P2MyhtXGBq2aukcauB0jx8-fKADfVN1ewQ.png?1744023802)
 
-게시물 일정을 진행하려면 "Review & Schedule"를 클릭합니다.
-![소셜 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044642522/original/nEMv3wWUdWbtKJbPqrzXh7Zkax5QwRFY2Q.png?1744023775)
+7. 잠시 기다리면 화면이 새로고침되고 **Review & Schedule** 버튼이 나타나요.
 
-- **일정 세부사항 추가 및 "예약(Schedule)" 클릭**
+   ![새로고침 후 Review & Schedule 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044642608/original/w8so_3ZJ76nHp1SX2te9BrNOJdM4lm7lhQ.png?1744023852)
 
-게시물을 게시할 날짜, 시간, 채널을 설정합니다.
+8. **Review & Schedule** 버튼을 클릭해 게시물 내용을 한 번 더 확인해요.
 
-- 예약 설정을 저장하려면 "Schedule" 버튼을 클릭합니다.
-![일정 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044642546/original/P2MyhtXGBq2aukcauB0jx8-fKADfVN1ewQ.png?1744023802)
+   ![게시물 상세 내용 검토](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044642636/original/aQLbLQT0WV9H-9-ZFvrp43bkSmxY1uiIFQ.png?1744023876)
 
-- **"검토 및 예약(Review & Schedule)" 클릭**
+9. 마지막 검토 화면에서 필요하면 텍스트, 미디어, 설정을 수정해요.
+10. 모든 내용이 마음에 들면 **가져오기**를 클릭해요. 게시물이 소셜 플래너에 최종 추가돼요.
 
-잠시 후 인터페이스가 새로고침되고 "Review & Schedule" 버튼이 표시됩니다.
-![검토 및 예약 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044642608/original/w8so_3ZJ76nHp1SX2te9BrNOJdM4lm7lhQ.png?1744023852)
+    ![가져오기 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044642971/original/Bb3EMqC7cEUt9pKhUa9PQmLBe6HLcg9JKA.png?1744024106)
 
-- 전체 게시물 세부사항을 한 번 더 검토하려면 클릭합니다.
-![게시물 검토](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044642636/original/aQLbLQT0WV9H-9-ZFvrp43bkSmxY1uiIFQ.png?1744023876)
+## 유형별로 템플릿 찾기
 
-- **최종 편집하기**
+소셜 플래너 템플릿에는 유형(Type)이 있어서 원하는 형식을 더 빨리 찾을 수 있어요.
 
-이 최종 검토에서 필요에 따라 텍스트, 미디어 또는 설정을 편집할 수 있습니다.
+```
+소셜 플래너 템플릿을 Type(유형)별로 필터링하기
 
-- **"가져오기(Import)" 클릭하여 진행**
+소셜 플래너 템플릿에는 알맞은 형식을 더 빨리 찾도록 돕는 Type(유형)이 있습니다.
 
-모든 세부사항에 만족하면 "Import"를 클릭하여 완료하고 게시물을 플래너에 추가합니다.
+사용 가능한 Type
 
-![가져오기 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044642971/original/Bb3EMqC7cEUt9pKhUa9PQmLBe6HLcg9JKA.png?1744024106)
+Post (1080×1080)
+Story/Reel (1080×1920)
 
-**유형별로 소셜 플래너 템플릿 필터링**
-
-소셜 플래너 템플릿에는 올바른 형식을 더 빠르게 찾을 수 있도록 **유형**이 포함되어 있습니다.
-
-**사용 가능한 유형**
-- Post (1080×1080)
-- Story/Reel (1080×1920)
-
-템플릿 세부 정보에서 템플릿의 유형 보기:
+템플릿의 Type 확인 방법:
 
 1. 소셜 플래너 템플릿을 엽니다.
-2. 템플릿 정보 서랍에서 유형 라벨을 확인합니다.
+2. Template Info Drawer(템플릿 정보 서랍)에서 Type 레이블을 확인합니다.
+```
 
-**템플릿 업로드 단계**
+## 템플릿 업로드하기
 
-1. 소셜 플래너로 이동
-2. 콘텐츠 하위의 CSV 탭 또는 템플릿 라이브러리 탭으로 이동
-3. 세 개의 점에서 템플릿 라이브러리에 업로드하는 옵션이 있습니다
-![업로드 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044643319/original/0Rk_htzTqlLx6mRIqJoG5VMOiNHSXOyKEw.png?1744024288)
+에이전시 관리자만 쓸 수 있어요.
 
-4. 템플릿 이름을 추가하고 카테고리를 하나 선택합니다
+1. **소셜 플래너**로 이동해요.
+2. 콘텐츠 아래의 **CSV** 탭 또는 **템플릿 라이브러리** 탭으로 이동해요.
+3. 점 3개 메뉴를 열고, 템플릿 라이브러리에 업로드하는 옵션을 선택해요.
 
-![템플릿 이름 및 카테고리](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032410120/original/QQRQW4g0b9cD0GwipPNGougrM0o-_nKgxw.png?1725628867)
+   ![점 3개 메뉴의 업로드 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044643319/original/0Rk_htzTqlLx6mRIqJoG5VMOiNHSXOyKEw.png?1744024288)
 
-5. 템플릿 라이브러리 관리자 모드로 리디렉션됩니다
+4. 템플릿 이름을 입력하고 카테고리를 하나 선택해요.
 
-- 이제 커버 사진을 추가할 수 있습니다
-- 이제 태그를 추가하고, 이름을 편집하고, 카테고리를 선택할 수 있습니다
-- 템플릿에 대한 간단한 설명을 제공합니다
-- 퍼널에서 원스텝 주문 폼을 사용하기 위해 Stripe 통합 같은 사용하기 위해 미리 정의된 요구사항을 추가합니다
-- 템플릿을 독특하게 만들기 위해 추천 태그를 추가합니다
+   ![템플릿 이름과 카테고리 입력](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032410120/original/QQRQW4g0b9cD0GwipPNGougrM0o-_nKgxw.png?1725628867)
 
-![템플릿 관리자 모드](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032410123/original/-RJK2UCTFBVxFIPRW3o3BDxsGMpcj7cmyA.jpeg?1725628867)
+5. 템플릿 라이브러리 관리자 모드로 이동하면 다음 작업을 할 수 있어요.
+   - 커버 사진을 추가해요.
+   - 태그를 추가하고, 이름을 수정하고, 카테고리를 선택해요.
+   - 템플릿에 대한 간단한 설명을 입력해요.
+   - 템플릿을 쓰기 전에 필요한 사전 요구 사항을 추가해요. 예를 들어 퍼널에서 원스텝 주문 폼을 쓰려면 Stripe를 연동해야 해요.
+   - **Featured Tags**(주요 태그)를 추가해 내 템플릿을 눈에 띄게 만들어요.
 
-6. 템플릿이 준비되면 공개로 설정합니다 (이렇게 하면 하위 계정에서 하위 계정 클라이언트가 사용할 수 있도록 템플릿이 표시됩니다). 초안으로 설정하면 향후 편집을 위해 템플릿 라이브러리 관리자 패널 내에서만 표시됩니다.
+   ![템플릿 라이브러리 관리자 모드](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032410123/original/-RJK2UCTFBVxFIPRW3o3BDxsGMpcj7cmyA.jpeg?1725628867)
 
-하위 계정의 템플릿 라이브러리 보기:
+6. 템플릿이 준비되면 공개로 전환해요. 공개한 템플릿은 서브 계정에 표시되어 서브 계정의 고객이 쓸 수 있어요. 초안 상태로 두면 템플릿 라이브러리 관리자 패널에만 표시되므로, 나중에 수정할 때 편해요.
 
-![하위 계정 보기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032410122/original/MNEyL-Bibs6v3cg3xe2II5Z7BPR86y4llA.jpeg?1725628867)
+서브 계정에서 본 템플릿 라이브러리예요.
 
-에이전시의 템플릿 라이브러리 보기:
+![서브 계정에서 본 템플릿 라이브러리](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032410122/original/MNEyL-Bibs6v3cg3xe2II5Z7BPR86y4llA.jpeg?1725628867)
 
-![에이전시 보기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032410121/original/8VXxUWTlFTOZnYFQozEf6vmwDhT74KRV7A.jpeg?1725628867)
+에이전시에서 본 템플릿 라이브러리예요.
 
-## 중요사항
+![에이전시에서 본 템플릿 라이브러리](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032410121/original/8VXxUWTlFTOZnYFQozEf6vmwDhT74KRV7A.jpeg?1725628867)
 
-1. **누가 템플릿 라이브러리에 템플릿을 추가/편집할 수 있나요?**
+## 자주 묻는 질문
 
-에이전시 관리자가 모든 하위 계정에서 템플릿을 추가하고 관리할 수 있습니다.
+### 템플릿 라이브러리에서 템플릿을 추가하거나 상세 정보를 수정할 수 있는 사람은 누구인가요?
+에이전시 관리자예요. 에이전시 관리자는 어떤 서브 계정의 템플릿이든 템플릿 라이브러리에 추가하고 관리할 수 있어요.
 
-2. **모든 플랜에서 템플릿 추가가 가능한가요?**
+### 모든 요금제에서 템플릿을 추가할 수 있나요?
+$497 요금제 이상에서 내 템플릿을 템플릿 라이브러리에 추가할 수 있어요.
+### 템플릿 라이브러리에 추가한 템플릿을 수정하면 어떻게 반영되나요?
+- 템플릿이 초안 상태이면 모든 요소의 변경 내용이 반영되어 최신 상태로 유지돼요.
+- 템플릿이 공개 상태이면 새 요소가 추가되어도 템플릿에 반영되지 않아요.
 
-$497 플랜 이상에서 자신의 템플릿을 템플릿 라이브러리에 추가할 수 있습니다.
-
-3. **템플릿 라이브러리에 추가된 템플릿에 업데이트가 있으면 어떻게 처리되나요?**
-
-- 템플릿이 초안 단계에 있을 때는 모든 요소의 업데이트된 기록을 유지하고 최신 상태로 유지합니다
-- 템플릿이 공개 상태일 때는 새로운 요소로 템플릿을 업데이트하지 않습니다
-
-4. **템플릿 라이브러리에 이미 있는 템플릿을 숨기거나 편집할 수 있나요?**
-
-네, 이제 Hyperclass 팀이 추가한 템플릿을 숨길 수 있습니다. 에이전시 관리자는 숨기기를 클릭하여 로케이션 보기에서 템플릿을 제거할 수 있습니다.
-
----
-*원문 최종 수정: Wed, 11 Feb, 2026 at 6:47 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### 템플릿 라이브러리에 이미 있는 템플릿을 숨기거나 수정할 수 있나요?
+하이퍼클래스 팀이 추가한 템플릿은 숨길 수 있어요. 에이전시 관리자가 **숨기기**를 클릭하면 서브 계정 화면에서 해당 템플릿이 보이지 않아요.

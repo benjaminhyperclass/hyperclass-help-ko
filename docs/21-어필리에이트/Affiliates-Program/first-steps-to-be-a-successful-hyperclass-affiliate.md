@@ -1,117 +1,91 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 21-어필리에이트 > 어필리에이트 프로그램
+원문: /support/solutions/articles/48001182420-first-steps-to-be-a-successful-highlevel-affiliate
+번역일: 2026-11-07
+카테고리: 21-어필리에이트
 ---
 
-# 성공적인 Hyperclass 어필리에이트가 되는 첫 단계
+# 하이퍼클래스 제휴 회원이 된 후 첫 단계
 
-### *활성 Hyperclass 에이전시 계정이 있으신가요? 어필리에이트 포털에서 어필리에이트 계정을 관리할 수 있습니다! [자세한 내용은 이 글을 확인하세요.](how-to-use-affiliate-portal.md)*
+하이퍼클래스 제휴 회원이 된 뒤 처음 해야 할 일을 순서대로 안내해요. 제휴 계정을 만들었거나 첫 추천 링크를 보냈다면 이 문서부터 따라 해 보세요.
 
-Hyperclass 어필리에이트가 된 후 취해야 할 첫 번째 단계들
+{% hint style="info" %}
+활성 상태의 하이퍼클래스 에이전시가 있다면 **제휴 포털**에서 제휴 계정을 관리할 수 있어요. 자세한 내용은 [제휴 포털 사용 방법](how-to-use-affiliate-portal.md) 문서를 참고하세요.
+{% endhint %}
 
-축하합니다! 이제 Hyperclass 어필리에이트가 되셨습니다!
+{% hint style="info" %}
+현재 **제휴 포털**을 업데이트하고 있어서, 이 문서의 일부 동영상과 이미지가 실제 화면과 다를 수 있어요. 곧 최신 버전에 맞게 바뀔 예정이에요. 그 전까지 궁금한 점이 있으면 에게 문의하세요.
+{% endhint %}
 
-어필리에이트로서, 여러분이 Hyperclass에 가입시킨 모든 추천고객으로부터 40%의 수수료를 받을 수 있습니다. Starter $97 플랜, $297 Agency Freelancer 플랜, $497 Agency Pro 플랜을 포함한 모든 Hyperclass 구독 플랜에서 수수료를 받을 수 있습니다. 이를 Tier 1 추천이라고 합니다. 또한 원래 고객이 데려온 Tier 2 추천에 대해서는 추가로 5%를 받을 수 있습니다.
+## 제휴 회원이 되면 가장 먼저 할 일
 
-이는 추가 수입을 올릴 수 있는 훌륭한 방법이며, 어필리에이트가 되기 전에도 이미 Hyperclass에 대해 이야기하고 있었을 것이니, 하는 김에 추가 수익도 올려보는 것은 어떨까요?
+축하해요! 이제 하이퍼클래스 제휴 회원이에요.
 
-이제 공식적으로 Hyperclass 어필리에이트가 되셨으니, 이 글에서는 어필리에이트 계정을 설정하거나 첫 추천 링크를 보낸 후에 가장 먼저 해야 할 일들을 안내해드리겠습니다!
+제휴 회원은 추천한 사람이 하이퍼클래스에 가입할 때마다 수수료 40%를 받을 수 있어요. 수수료는 모든 하이퍼클래스 구독 요금제에 적용돼요. Starter($97) 요금제, Agency Freelancer($297) 요금제, Agency Pro($497) 요금제가 모두 포함돼요. 이렇게 직접 추천한 사람을 Tier 1 추천이라고 해요. 처음 추천한 고객이 다시 데려온 Tier 2 추천에 대해서는 추가로 5%를 받아요.
 
-# 
+이미 하이퍼클래스를 주변에 이야기하고 있었다면, 제휴 회원으로 추가 수입도 함께 만들어 보세요.
 
-# 1단계: First Promoter에 로그인하기
+# 1단계: **제휴 포털**에 접속하세요 (FirstPromoter 로그인)
 
-First Promoter는 SaaS 및 구독 서비스를 위한 어필리에이트 및 추천 추적 시스템입니다. 웹사이트 설명에 따르면, "FirstPromoter는 SaaS 회사가 모든 유형의 추천 기반 마케팅 프로그램을 추적, 관리 및 최적화할 수 있게 해주는 올인원 플랫폼"입니다.
+**제휴 포털** 설정 방법은 [제휴 포털 사용 방법](how-to-use-affiliate-portal.md) 문서에서 자세히 볼 수 있어요.
 
-계정에 접속하려면 [Hyperclass.firstpromoter.com](http://gohighlevel.firstpromoter.com)으로 이동하세요.
+하이퍼클래스는 FirstPromoter로 대상 상품의 제휴 추천을 추적해요. 하이퍼클래스 안의 **제휴 포털**은 FirstPromoter 기반으로 운영돼요.
 
-![First Promoter 로그인 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48101121989/original/cRlpS_WkKwH_29gxwN9XLFcOTRYizLfKEw.png?1619723972)
+하이퍼클래스 에이전시에 로그인하지 않은 상태에서 제휴 계정에 접속하는 방법은 하이퍼클래스 고객지원에 문의하세요.
 
-여기서 모든 어필리에이트 활동을 관리하고 추적할 수 있습니다. 누가 링크를 클릭했는지, 수익, 고객 등을 확인할 수 있습니다.
+# 2단계: Tipalti를 설정하세요
 
-## Tipalti 설정을 완료했는지 확인하세요!
+활성 상태의 하이퍼클래스 에이전시가 있다면 **제휴 포털**에서 Tipalti를 설정할 수 있어요. 수수료를 출금하려면 이 단계를 꼭 완료해야 해요. 자세한 방법은 [제휴 수수료 지급: 어디서, 어떻게, 언제 받을 수 있나요?](affiliate-payouts-where-how-when-can-i-get-paid.md) 문서를 참고하세요.
 
-활성 Hyperclass 에이전시가 있다면, [어필리에이트 포털](how-to-use-affiliate-portal.md)에서 Tipalti를 설정할 수 있습니다.
+하이퍼클래스 제휴 회원이지만 활성 구독이 없다면, 하이퍼클래스 고객지원에 문의해서 Tipalti 설정 링크를 받으세요.
 
-Hyperclass 어필리에이트이지만 활성 Hyperclass 구독이 없다면, 지원팀에 연락하여 Tipalti 설정 링크를 받으세요.
+이미 Tipalti 계정이 있어서 로그인하려면 아래 이미지를 클릭하세요.
 
-[![Tipalti 로그인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48281369898/original/EsOMgNqWY0WOwBBvFokLupZDJYjuEqfcWQ.png?1676316705)](https://suppliers.tipalti.com/highlevel/Account/Login)
+[![Tipalti 로그인 이미지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48281369898/original/EsOMgNqWY0WOwBBvFokLupZDJYjuEqfcWQ.png?1676316705)](https://suppliers.tipalti.com/highlevel/Account/Login)
 
-이미 Tipalti 계정이 있고 로그인이 필요하다면 위 이미지를 클릭하세요!
+# 앞의 두 단계를 마쳤다면, 다음은 무엇을 할까요?
 
-# 2단계: First Promoter 대시보드 익히기
+하이퍼클래스 플랫폼을 익히고, 첫 제휴 회원 몇 명을 직접 모셔 보세요.
 
-대시보드에서는 고객, 추천, 클릭, 미지급 수익이 얼마나 되는지 확인할 수 있습니다.
+플랫폼에 대해 더 알고 싶다면 하이퍼클래스 이벤트 일정을 확인해 보세요. 이벤트 일정은 하이퍼클래스 고객지원에 문의하면 안내받을 수 있어요.
 
-플랫폼에 가입시킨 모든 사람과 아직 리드 상태인 사람들을 추적하고 살펴볼 수 있습니다.
+평일마다 Daily Q&A가 열리고, 매주 화요일에는 Weekly Affiliate Department Q&A가 열려요.
 
-![First Promoter 대시보드](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48101121988/original/1GQTs6MdEo-vLY3gPmM8yOnIp8SNucoeEg.png?1619723972)
+![이벤트 일정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48101121993/original/JRButJwRbi3kLZY3OcF4vHbRAmMltjfiBQ.png?1619723972)
 
-또한 Sub-affiliates(하위 어필리에이트) 탭에서 고객들이 데려온 모든 사람들을 볼 수 있습니다.
+이 행사에서는 하이퍼클래스 기능, 자주 생기는 문제, 해결 방법을 다뤄요. 하이퍼클래스는 고객과 소통하는 일을 중요하게 생각해요. 그래서 고객이 플랫폼을 효율적으로 쓸 수 있도록 가능한 모든 기회를 활용해요.
 
-![Sub-affiliates 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48101121990/original/F5RlWiyybZnfC0wm5m6Btj3Q-lQgMkoVXQ.png?1619723972)
+보너스로 월간 Affiliate Hangout도 있어요. 일정은 Facebook 그룹과 이벤트 일정에서 알려 드려요. 아직 그룹에 가입하지 않았다면 가입해 보세요.
 
-추천, 리워드 등도 추적할 수 있습니다.
+# YouTube 채널도 확인하세요
 
-First Promoter 메인 탭에서 "Assets(자료)" 탭을 클릭하세요. 여기서 Hyperclass이 어필리에이트에게 제공하는 모든 마케팅 자료에 접근할 수 있습니다.
+YouTube 채널에 제휴 회원 전용 재생목록이 있어요. 지난 Affiliate Hangout 영상도 모두 이 재생목록에 올라와 있어요.
 
-![Assets 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48101121991/original/M5wJ22GBmNDasLGAYRkBe2XUdo0tIapbUA.png?1619723972)
+Affiliate Hangout에서는 이런 내용을 다뤄요.
 
-# 
-
-# 첫 번째 단계들을 완료한 후, 다음은 무엇인가요?
-
-Hyperclass 플랫폼에 익숙해지고 계정에 첫 몇 명의 어필리에이트를 모셔와야 합니다.
-
-Hyperclass 플랫폼에 대해 더 알고 싶으시다면, [Hyperclass.com/events](http://hyperclass.ai/events)에서 예정된 이벤트 캘린더를 확인해보시기를 추천합니다.
-
-평일마다 Daily Q&A를 제공하고, 매주 화요일에는 Weekly Affiliate Department Q&A를 진행합니다.
-
-![이벤트 캘린더](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48101121993/original/JRButJwRbi3kLZY3OcF4vHbRAmMltjfiBQ.png?1619723972)
-
-이러한 이벤트에서 Hyperclass 기능, 사람들이 겪을 수 있는 일반적인 문제, 그리고 해결 방법들을 다룹니다. 고객과의 소통은 저희 미션의 주요 부분이며, 고객들이 플랫폼을 효과적이고 효율적으로 사용하는 방법을 이해할 수 있도록 가능한 모든 기회를 활용하고자 합니다.
-
-보너스: 매월 Affiliate Hangout도 있으며, 이는 Facebook 그룹(아직 그룹에 가입하지 않으셨나요?)과 이벤트 캘린더에서 공지됩니다.
-
-# YouTube 채널도 놓치지 마세요!
-
-어필리에이트 전용 플레이리스트가 있으며, 지난 Affiliate Hangout은 모두 [여기](https://www.youtube.com/watch?v=8ETsNGJpC6g&list=PLUjgZhyQd8yVHFupNY1i8HesBQLM5Vy5i)에 게시됩니다.
-
-Affiliate Hangout에서는 다음과 같은 내용을 다룹니다:
-
-- 월간 목표
-- 최고 어필리에이트로부터 얻은 팁
+- 월간 마일스톤
+- 상위 제휴 회원들의 팁
 - 기회
 - 콘테스트
-- 그 외 많은 것들
+- 그 외 다양한 내용
 
-![YouTube 채널](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48101121994/original/gn5cREPKA5SRW34Fi3_j7p3OYztLZN28VA.png?1619723972)
+![Affiliate Hangout 영상 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48101121994/original/gn5cREPKA5SRW34Fi3_j7p3OYztLZN28VA.png?1619723972)
 
-# 마지막으로 중요한 것 - Hyperclass 지원 포털 확인하기
+# 하이퍼클래스 고객지원 포털도 살펴보세요
 
-여기에는 성공적인 Hyperclass 어필리에이트가 되는 방법을 안내하는 많은 유용한 문서들이 있습니다.
+하이퍼클래스 고객지원 포털에는 제휴 회원으로 성공하는 데 도움이 되는 문서가 많아요.
 
-가장 유용한 문서 중 하나는 [첫 5명의 어필리에이트를 얻는 5가지 방법](../기타/5-ways-to-get-your-first-5-affiliates.md)입니다. 모든 최고 어필리에이트들에게 효과가 있었던 최고의 팁과 노하우를 검토하여 성공의 발판을 마련하세요.
+그중 가장 도움이 되는 문서는 [첫 제휴 회원 5명을 모으는 5가지 방법](5-ways-to-find-your-first-5-affiliate-referrals.md)이에요. 상위 제휴 회원들에게 효과가 있었던 팁과 요령이 담겨 있어요. 이 문서를 먼저 읽고 좋은 출발을 해 보세요.
 
-![지원 포털](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48101121992/original/SkovHahBJfGTP9Ey0wEiDDXWXpQ8oSvUSQ.png?1619723972)
+![고객지원 포털 문서 목록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48101121992/original/SkovHahBJfGTP9Ey0wEiDDXWXpQ8oSvUSQ.png?1619723972)
 
-# 
+# **환영 코스**도 확인하세요
 
-# 마지막으로, 어필리에이트 환영 코스를 확인하세요!
+**환영 코스**에서는 하이퍼클래스로 꾸준한 반복 수입을 만들기 시작하는 데 필요한 내용을 모두 배울 수 있어요. 코스 접속 방법은 하이퍼클래스 고객지원에 문의하세요.
 
-이 환영 코스에서는 Hyperclass로 수동적이고 반복적인 수입을 얻기 위해 알아야 할 모든 것을 가르쳐 드립니다.
+## 마무리
 
-[https://hyperclass.ai/passiveincome](https://hyperclass.ai/passiveincome)
+제휴 활동을 시작하기로 했다면 바로 해 보면 좋은 단계를 모두 안내했어요.
 
-마무리입니다!
+궁금한 점이 있거나 제휴 계정을 키우는 데 조언이 필요하면 하이퍼클래스 고객지원에 문의하세요. 기꺼이 도와 드릴게요.
 
-이것들이 Hyperclass과 함께 어필리에이트 여정을 시작하기로 결정한 어필리에이트들에게 추천하는 모든 단계입니다.
-
-질문이 있거나 어필리에이트 계정 성장에 대한 조언이 필요하시면, 지원 채팅에 문의해 주시면 기꺼이 도움을 드리겠습니다!
-
-여정에 행운을 빌며, "결과는 하룻밤이 아니라 시간이 지나면서 일어납니다. 열심히 일하고, 일관성을 유지하며, 인내심을 가지세요!"라는 것을 기억하세요.
-
----
-*원문 최종 수정: Mon, 13 Feb, 2023 at 1:35 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+앞으로의 활동을 응원해요. 이 말도 기억하세요. "결과는 하루아침이 아니라 시간이 지나며 만들어져요. 열심히, 꾸준히, 그리고 차분하게 해 나가세요!"

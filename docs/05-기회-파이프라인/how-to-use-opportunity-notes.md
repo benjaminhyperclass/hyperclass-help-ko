@@ -1,161 +1,144 @@
 ---
-
-번역일: 2026-04-06
+원문: /support/solutions/articles/155000005152-how-to-use-opportunity-notes-
+번역일: 2026-11-06
 카테고리: 05-기회-파이프라인
 ---
 
-# 기회 노트를 사용하는 방법
+# 기회 메모 사용하기
 
-**목차**
+기회 메모를 쓰면 메모를 기회와 연락처에 각각 따로 연결할 수 있어요. 이 문서에서는 기회 메모가 무엇인지, 어떻게 만들고 찾는지 알아봐요.
 
-- [기회 노트란 무엇인가요?](#기회-노트란-무엇인가요)
-- [기회 노트의 주요 장점](#기회-노트의-주요-장점)
-- [기회 노트는 어떻게 작동하나요?](#기회-노트는-어떻게-작동하나요)
-- [기회 노트를 사용하는 방법](#기회-노트를-사용하는-방법)
-- [권장사항](#권장사항)
+## 기회 메모란?
 
-## 기회 노트란 무엇인가요?
+기회 메모는 메모를 기회와 연락처에 독立적으로 연결하는 기능이에요. 기회와 연락처 어느 쪽에서든 메모를 더 유연하게 관리하고 볼 수 있어요.
 
-기회(Opportunities)와 연락처(Contacts)에 각각 독립적으로 노트를 연결할 수 있는 기회 노트 기능을 출시했습니다. 이를 통해 기회와 연락처 모두에서 노트를 관리하고 확인하는 방식을 더욱 유연하게 할 수 있습니다.
+기회마다 연락처 메모와 별도로 전용 메모를 둘 수 있어요. 필요하면 하나의 메모를 여러 대상에 함께 연결할 수도 있어요.
 
-각 기회는 연락처 노트와 분리된 전용 노트를 가질 수 있으며, 필요한 경우 여러 항목에 노트를 연결하는 유연성도 그대로 유지됩니다.
-
-참고: 이 기능을 활성화하려면 하위 계정(Sub-account) > 설정(Settings) > Labs로 이동하여 "Opportunity Notes"를 켜주세요.
+{% hint style="info" %}
+이 기능을 켜려면 서브 계정에서 **설정 > 실험실**로 이동한 다음 **Opportunity Notes**(기회 메모)를 켜세요.
+{% endhint %}
 
 ---
 
-## 기회 노트의 주요 장점
+## 기회 메모의 장점
 
-기회 노트 기능을 사용하면 다음이 가능합니다:
+- 기회 전용 메모를 만들 수 있어요. 연락처 메모와 섞이지 않아요. 연락처 화면과 기회 화면 어디서든 만들 수 있어요. (아래 예시 참고)
+- 메모를 연락처, 기회, 또는 둘 다에 연결할 수 있어요.
+- 연락처 메모와 기회 메모가 나뉘어 있어서 화면이 덜 복잡하고 내용을 파악하기 쉬워요.
+- 연결된 대상을 기준으로 메모를 빠르게 걸러서 찾을 수 있어요.
+- 개선된 검색으로 메모를 바로 찾을 수 있어요.
 
-- **항목별 전용 노트**: 연락처 탭이나 기회 탭에서 연락처 노트와 섞이지 않는 기회 전용 노트를 작성할 수 있습니다. (예시 참조)
+## 기회 메모는 어떻게 동작하나요?
 
-- **유연한 연결**: 노트를 연락처, 기회, 또는 둘 다에 연결할 수 있습니다.
+### 예시 상황
 
-- **깔끔한 정리**: 연락처와 기회의 노트를 분리하여 관리함으로써 혼란을 줄이고 명확성을 개선합니다.
+John Doe(연락처)에게는 서로 다른 부동산 두 곳, 부동산 A와 부동산 B에 대한 기회가 있어요. John Doe의 매물을 관리하는 Sara(영업 담당자이자 관리자)는 각 부동산 정보가 해당 기회에만 남도록 기회별 메모를 따로 만들려고 해요.
 
-- **스마트 필터링**: 항목 연결을 기준으로 노트를 빠르게 필터링하고 찾을 수 있습니다.
+Sara는 아래 순서로 기회 메모와 연락처 메모를 만들어요.
 
-- **강력한 검색**: 개선된 검색 기능으로 노트를 즉시 찾을 수 있습니다.
+1. 부동산 A 기회의 **Notes**(메모) 섹션으로 이동해 **Add Note**(메모 추가)를 누르고 메모 내용을 입력해요.
 
-## 기회 노트는 어떻게 작동하나요?
+   ![부동산 A 기회에서 메모 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045627261/original/kwy2UiLV7N-uILJBzwVlJAz4FS4Q0rnqvw.png?1745524788)
 
-예시 시나리오: John Doe(연락처)가 두 개의 다른 부동산 - Property A와 Property B에 대해 두 개의 기회를 가지고 있습니다. John Doe의 부동산을 관리하는 Sara(영업 담당자 & Hyperclass 관리자)가 각 부동산의 기회에만 관련 정보를 연결하기 위해 각 기회별로 특정 노트를 작성하고 싶어합니다.
+2. 메모의 연결 대상을 선택해요. 이번에는 기회(부동산 A)와 연락처(John Doe)를 둘 다 선택해요.
 
-Sara가 기회 및 연락처별 노트를 작성하는 방법은 다음과 같습니다.
+   ![기회와 연락처를 모두 연결](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045647246/original/xdAovQUWcyu1PBp0DejOCt6Jp68gFCGJsQ.png?1745569459)
 
-**1단계**: Property A의 기회에서 Sara가 노트(Notes) 섹션으로 이동하여 노트 추가(Add Note)를 클릭하고 노트 내용을 입력합니다.
+3. 메모를 하나 더 추가해요. 이번에는 연결 대상에서 기회만 선택하고(연락처 John Doe는 선택하지 않아요) **저장**을 눌러 기회 전용 메모를 만들어요.
 
-![Property A 기회에서 노트 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045627261/original/kwy2UiLV7N-uILJBzwVlJAz4FS4Q0rnqvw.png?1745524788)
+   ![기회만 연결한 메모 저장](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045627266/original/VGNeUWF6_trrPym_pNs24iRfTESoO_Sh4A.png?1745524789)
 
-**2단계**: 노트의 연결 대상을 선택합니다. 이 경우 기회(Property A)와 연락처(John Doe) 둘 다를 선택합니다.
+3단계까지 마치면 Sara에게는 메모가 두 개 있어요.
 
-![노트 연결 대상 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045647246/original/xdAovQUWcyu1PBp0DejOCt6Jp68gFCGJsQ.png?1745569459)
+- 부동산 A에만 연결된 메모(기회 전용 메모)
+- John Doe와 부동산 A에 함께 연결된 메모(기회와 연락처가 공유하는 메모)
 
-**3단계**: 다른 노트를 추가하되 연결 대상으로 기회만 선택하고(연락처 John Doe는 제외), 저장을 클릭하여 기회 전용 노트를 생성합니다.
+![기회 전용 메모와 공유 메모 목록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045627523/original/MSUyi0PkUaM6ny-6x6xUxNWhrz-wF3IYMg.png?1745525361)
 
-![기회 전용 노트 생성](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045627266/original/VGNeUWF6_trrPym_pNs24iRfTESoO_Sh4A.png?1745524789)
+**부동산 B 보기**: Sara가 부동산 B 기회로 이동하면 공유 메모(John Doe에게 연결된 메모)만 보여요. 부동산 A 전용 메모는 부동산 B에 연결되어 있지 않기 때문이에요.
 
-**3단계 후**: Sara는 이제 두 개의 노트를 가지고 있습니다:
+![부동산 B 기회에서 보이는 공유 메모](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045627260/original/ObSJPVXX6s8Fr9to5iASYohEgeidE7hjdg.png?1745524788)
 
-- Property A에만 연결된 노트 (기회 전용 노트)
-- John Doe와 Property A 둘 다에 연결된 노트 (기회와 연락처 간 공유 노트)
+**부동산 B에 메모 추가**: Sara가 **Create New Note**(새 메모 만들기)를 누르고 메모를 입력해요. 연결 대상을 모두 선택한 뒤 **저장**을 눌러요.
 
-![두 개의 노트 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045627523/original/MSUyi0PkUaM6ny-6x6xUxNWhrz-wF3IYMg.png?1745525361)
+![부동산 B에 새 메모 만들기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045627265/original/rcbvigQAEJGo99-8W43GmIV304D4YQeajQ.png?1745524789)
 
-**Property B 확인**: Sara가 Property B의 기회로 전환하면, John Doe에 연결된 공유 노트만 보입니다. Property A 전용 노트는 Property B와 연결되지 않았기 때문입니다.
+**연락처에서 필터링**: **연락처**에서 John Doe를 선택하고 **Notes**(메모)로 가면, Sara는 기회 또는 연락처 기준으로 메모를 걸러서 필요한 메모만 볼 수 있어요.
 
-![Property B에서 공유 노트만 표시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045627260/original/ObSJPVXX6s8Fr9to5iASYohEgeidE7hjdg.png?1745524788)
+![연락처 메모 필터 화면 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045627262/original/gFHid4Gk7T8DArL19M9W8KLLx0fcMrc8LA.png?1745524789)    ![연락처 메모 필터 화면 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045627267/original/HzD70z868F_a_nQYfoxPKdS-FGot9xqUtw.png?1745524790)
 
-**Property B에 노트 추가**: 새 노트 생성(Create New Note)을 클릭하고, 노트를 입력한 다음, 연락처 연결을 모두 선택하고 저장을 누릅니다.
+### 핵심 정리
 
-![Property B에 새 노트 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045627265/original/rcbvigQAEJGo99-8W43GmIV304D4YQeajQ.png?1745524789)
+1. 기회 메모를 쓰면 각 딜에 해당하는 메모를 다른 내용과 섞지 않고 따로 관리할 수 있어요.
+2. 연락처와 공유한 메모는 그 연락처의 여러 기회에서 보여요. 기회 전용 메모는 해당 기회에만 남아요.
 
-**연락처에서 필터링**: 연락처(Contacts) 탭에서 John Doe를 선택하고 노트로 이동하면, Sara가 기회나 연락처별로 노트를 필터링하여 필요한 내용만 정확히 볼 수 있습니다.
+## 기회 메모 사용하기
 
-![연락처에서 노트 필터링 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045627262/original/gFHid4Gk7T8DArL19M9W8KLLx0fcMrc8LA.png?1745524789)
+### 1. 메모 만들고 연결 대상 선택하기
 
-![연락처에서 노트 필터링 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045627267/original/HzD70z868F_a_nQYfoxPKdS-FGot9xqUtw.png?1745524790)
+#### a) 기회에서 메모 추가하기
 
-**핵심 포인트**:
+1. **기회 관리**(Opportunities)로 이동해 메모를 추가할 기회를 선택하고 **Add Note**(메모 추가)를 눌러요.
 
-- 기회 노트를 사용하면 맥락을 섞지 않고 각 거래별로 특정 노트를 관리할 수 있습니다.
-- 연락처와 공유된 노트는 모든 기회에서 표시되며, 기회 전용 노트는 해당 기회에만 남아있습니다.
+   ![기회에서 메모 추가 버튼 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045647422/original/4lWljMRq9emO8ebjRFfWWoKhAwnu312Cbw.png?1745569563)
 
-## 기회 노트를 사용하는 방법
+2. 입력란에 메모 내용을 알아보기 쉽게 적어요.
 
-### 1. 노트 생성 및 연결 대상 선택
+   ![메모 내용 입력란](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045627296/original/5HP1rcAbNlj4q3ml2KyxdB03-T4uA6ik-Q.png?1745524863)
 
-**a) 기회를 통한 노트 추가**
+3. **Associated Objects**(연결된 오브젝트)에서 **Associate To**(연결 대상)를 누르고 메모를 연결할 대상을 선택해요.
+   - Opportunities(기회)
+   - Both Opportunities and Contacts(기회와 연락처 모두)
+   - Contact(연락처)
 
-기회 관리(Opportunities) 섹션으로 이동하여 특정 기회를 선택하고 노트 추가를 클릭합니다.
+   ![Associate To에서 연결 대상 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045647521/original/6BxOICn-Cp91zbh9_WGiLGeFARID1eeznA.png?1745569610)
 
-![기회에서 노트 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045647422/original/4lWljMRq9emO8ebjRFfWWoKhAwnu312Cbw.png?1745569563)
+4. 검색해서 추가하는 기능으로 연결할 대상을 정확히 고른 뒤 **저장**을 눌러요.
 
-제공된 텍스트 박스에 노트 설명을 명확히 입력합니다:
+   ![검색으로 대상 추가 후 저장](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045627317/original/6Ls8K5JqPbx6UE_LFK0rw6Sk_PISfdRyiA.png?1745524884)
 
-![노트 설명 입력](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045627296/original/5HP1rcAbNlj4q3ml2KyxdB03-T4uA6ik-Q.png?1745524863)
+#### b) 연락처에서 메모 추가하기
 
-연결된 객체(Associated Objects) 아래에서 연결 대상(Associate To)을 클릭하고 노트를 다음 중 어디에 연결할지 선택합니다:
+1. **연락처**로 이동해 연락처를 선택한 다음 **Notes**(메모) 버튼을 눌러요.
 
-- 기회
-- 기회와 연락처 둘 다
-- 연락처
+   ![연락처에서 메모 버튼 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045647557/original/ODHrVGcIjV7dyroQhmvL2FPrqCY39KhDsQ.png?1745569647)
 
-![연결 대상 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045647521/original/6BxOICn-Cp91zbh9_WGiLGeFARID1eeznA.png?1745569610)
+2. **Add Note**(메모 추가) 버튼을 눌러요.
 
-검색 및 추가 기능을 사용하여 항목을 정확히 연결한 다음 저장을 클릭합니다.
+   ![메모 추가 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045627290/original/UoBcb_gWYh9ouZpde5HrLS0FMZ-K5U7vWA.png?1745524859)
 
-![항목 연결 후 저장](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045627317/original/6Ls8K5JqPbx6UE_LFK0rw6Sk_PISfdRyiA.png?1745524884)
+3. 해당 기회와 함께 연결할 대상을 선택해요.
 
-**b) 연락처를 통한 노트 추가**
+   ![연결할 대상 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045627300/original/NOgGDN6tKKtumUWjqjq3qRAfV2_TUZI-1A.png?1745524864)
 
-연락처(Contacts)로 이동하여 연락처를 선택한 다음 노트(Notes) 버튼을 클릭합니다.
+4. 기회를 검색해서 연결할 기회를 선택해요.
 
-![연락처에서 노트 버튼 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045647557/original/ODHrVGcIjV7dyroQhmvL2FPrqCY39KhDsQ.png?1745569647)
+   ![기회를 검색해 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045627301/original/NlNRYrkWChIVOZXS8MBWSsfN-8NBftSOEA.png?1745524864)
 
-노트 추가(Add Note) 버튼을 클릭합니다.
+### 2. 연결 대상으로 메모 필터링하기
 
-![노트 추가 버튼 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045627290/original/UoBcb_gWYh9ouZpde5HrLS0FMZ-K5U7vWA.png?1745524859)
+- 기회와 연락처의 **Notes**(메모) 탭에서 필터를 쓰면 특정 기회나 연락처에 연결된 메모를 빠르게 찾을 수 있어요.
+- **필터** 아이콘을 눌러 연결 대상을 지정하고 범위를 좁혀요.
 
-특정 기회와 함께 추가하려는 관련 연결을 선택합니다.
+기회의 필터 탭이에요.
 
-![기회 연결 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045627300/original/NOgGDN6tKKtumUWjqjq3qRAfV2_TUZI-1A.png?1745524864)
+![기회의 메모 필터 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045647590/original/oRfHHHEnM1s_Fj0GpxL4xDCOLNemnydYhw.png?1745569684)
 
-기회를 쉽게 검색하고 관련된 기회를 선택합니다.
+연락처의 필터 탭이에요.
 
-![기회 검색 및 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045627301/original/NlNRYrkWChIVOZXS8MBWSsfN-8NBftSOEA.png?1745524864)
+![연락처의 메모 필터 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045647626/original/GiIF8iY4xjG8N25lU23bvAZaeT4XBE0AYw.png?1745569715)
 
-### 2. 연결별 노트 필터링
+### 3. 메모 확인하고 관리하기
 
-- 기회와 연락처의 노트 탭에서 필터를 사용하여 특정 기회나 연락처에 연결된 노트를 빠르게 찾을 수 있습니다.
-- 필터(Filter) 아이콘을 클릭하여 연결을 지정하고 세분화합니다.
+- **연락처** 또는 **기회 관리**의 **Notes**(메모) 탭에서 메모를 보고 관리할 수 있어요.
+- 메모의 연결 표시를 누르면 연결된 대상을 확인하거나 바꿀 수 있어요.
 
-**기회에서 필터 탭**
+![메모의 연결 표시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045647654/original/tFUljxd3ivusutvEWRDW47llMuaxPyoxoA.png?1745569735)
 
-![기회에서 필터 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045647590/original/oRfHHHEnM1s_Fj0GpxL4xDCOLNemnydYhw.png?1745569684)
+## 활용 팁
 
-**연락처에서 필터 탭**
+- 메모의 연결 대상이 맞는지 주기적으로 확인하세요.
+- 메모에 알아보기 쉬운 이름을 붙이면 필터링과 검색이 편해져요.
+- 메모가 제대로 보이지 않으면 연결 설정을 확인하세요.
 
-![연락처에서 필터 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045647626/original/GiIF8iY4xjG8N25lU23bvAZaeT4XBE0AYw.png?1745569715)
-
-### 3. 노트 접근 및 관리
-
-- 연락처나 기회 아래의 노트 탭에서 편리하게 노트를 보고 관리할 수 있습니다.
-- 노트의 연결 표시기를 클릭하여 연결된 항목을 보거나 조정할 수 있습니다.
-
-![노트 연결 관리](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045647654/original/tFUljxd3ivusutvEWRDW47llMuaxPyoxoA.png?1745569735)
-
-## 권장사항
-
-- 노트 연결의 정확성을 정기적으로 검토하세요.
-- 필터링과 검색을 원활하게 하려면 노트에 명확한 라벨을 붙이세요.
-- 노트가 올바르게 표시되지 않으면 연결 설정을 확인하세요.
-
-## 관련 문서
-
-- [노트 추가 및 관리](../36-기타/리커버리/adding-and-managing-notes.md)
-
----
-*원문 최종 수정: Fri, 25 Apr, 2025 at 4:05 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+메모 기능 전반은 [메모 추가 및 관리](../02-연락처/hyperclass-notes-for-managing-contacts-opportunities-and-company-records.md) 문서에서 확인할 수 있어요.

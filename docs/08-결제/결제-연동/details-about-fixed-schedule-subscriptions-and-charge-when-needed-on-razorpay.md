@@ -1,13 +1,13 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 08-결제 > 결제-연동
+원문: /support/solutions/articles/155000007563-details-about-fixed-schedule-subscriptions-and-charge-when-needed-on-razorpay
+번역일: 2026-11-07
+카테고리: 08-결제
 ---
 
-# Razorpay 고정 일정 구독 및 필요시 청구 기능 상세 안내
+# Razorpay 고정 일정 구독과 필요할 때 결제 안내
 
-이 문서는 준비 중입니다. 기능이 정식으로 출시되는 대로 내용이 업데이트됩니다.
+Razorpay의 고정 일정 구독과 필요할 때 결제(Charge when needed)에 대해 설명할 문서예요.
 
----
-*원문 최종 수정: 2026년 3월 26일*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+{% hint style="info" %}
+이 문서는 임시 문서예요. 기능을 사용할 수 있게 되면 내용이 게시될 예정이에요.
+{% endhint %}

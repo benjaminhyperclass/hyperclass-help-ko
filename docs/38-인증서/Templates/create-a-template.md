@@ -1,161 +1,154 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 인증서 > 템플릿
+원문: /support/solutions/articles/155000001235-create-a-template
+번역일: 2026-11-06
+카테고리: 38-인증서
 ---
 
-# 템플릿 만들기
+# 수료증 템플릿 만들기
 
-커뮤니티에서 사용자의 성취를 인정하고 축하하기 위해 설계된 멋진 기능인 인증서(Certificates)를 소개하게 되어 기쁩니다. 인증서 기능을 통해 개인화된 수료증을 만들고 사용자에게 발급할 수 있습니다. 이번 초기 출시에서는 강의 완료에 대한 수료증 발급을 쉽게 만드는 데 중점을 두었습니다.
+**수료증**(Certificates)은 커뮤니티 사용자의 성과를 인정하고 축하하는 기능이에요. 맞춤 수료증을 만들어 사용자에게 발급할 수 있어요. 첫 출시에서는 코스를 수료한 사용자에게 수료증을 쉽게 발급하는 데 초점을 맞췄어요.
 
-시작하는 방법은 다음과 같습니다:
+## 주요 기능
 
-이 글의 내용:
-- [인증서 메뉴 찾기](#인증서-메뉴-찾기)
-- [템플릿 만들기](#템플릿-만들기)
-- [템플릿 편집하기](#템플릿-편집하기)
+**Certificate Builder**(수료증 빌더)는 더 빠르게 불러오고, 부드럽게 편집하고, 외부 도구 없이도 전문적인 레이아웃을 만들 수 있도록 새로 만들었어요.
 
-## **주요 기능:**
+- 반응형 캔버스: 실시간으로 부드럽게 편집하고 바로 미리 볼 수 있어요.
+- 표준 크기와 사용자 지정 크기: **A4**, **US Letter** 중에서 고르거나 캔버스 크기를 **사용자 지정**으로 직접 정할 수 있어요.
+- 다양한 디자인 요소: 선, 도형, 그래픽, 아이콘을 끌어다 놓아 추가하고 편집할 수 있어요.
+- 세련된 템플릿: 전문가가 디자인한 템플릿에서 시작해 브랜드에 맞게 바꿀 수 있어요.
+- 프레임과 서명: 프레임 옵션이 늘어났고, 미리 디자인된 글꼴 스타일의 서명 필드를 쓸 수 있어요.
+- 배경 사용자 지정: 그라데이션 배경을 쓰거나 이미지를 업로드한 다음, 확대·이동·자르기로 원하는 영역만 보이게 할 수 있어요.
 
-인증서 빌더는 더 빠른 로딩, 부드러운 편집, 그리고 외부 도구 없이도 전문적인 레이아웃을 지원하도록 새롭게 구축되었습니다.
+{% hint style="info" %}
+배지 빌더를 써 보셨다면 같은 디자인 엔진을 쓰기 때문에 성능도 똑같이 안정적이에요.
+{% endhint %}
 
-- 반응형 캔버스: 즉시 미리보기가 가능한 부드럽고 실시간적인 편집
-- 표준 및 커스텀 크기: A4, US Letter를 선택하거나 맞춤형 캔버스 크기 설정
-- 풍부한 디자인 요소: 드래그 앤 드롭으로 편집 가능한 선, 도형, 그래픽, 아이콘 추가
-- 현대적인 템플릿: 전문적으로 디자인된 템플릿에서 시작하여 브랜드에 맞게 커스터마이징
-- 프레임과 서명: 확장된 프레임 옵션과 미리 디자인된 폰트 스타일이 적용된 서명 필드
-- 배경 커스터마이징: 그라데이션 배경을 사용하거나 이미지를 업로드한 다음, 원하는 정확한 영역으로 확대, 이동, 자르기
+## 수료증 찾는 위치
 
-**팁: 뱃지 빌더(Badge Builder)를 사용해보셨다면, 이 경험은 일관된 성능을 위해 동일한 디자인 엔진으로 구동됩니다.**
+1. 서브 계정의 왼쪽 메뉴에서 **멤버십 > 수료증**으로 이동하세요.
 
-## **인증서 메뉴 찾기**
+![수료증 메뉴 위치](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010491418/original/UDLUBmWon7i-7gGLUfOf5d5VJ2gX2SnB5w.png?1697660185)
 
-인증서를 시작하려면:
+## 템플릿 만들기
 
-- 왼쪽 메뉴에서 멤버십(Memberships) > 인증서(Certificates)로 이동하세요
+1. **신규**를 클릭하세요.
+2. **Certificate Templates**(수료증 템플릿) 또는 **Blank Certificates**(빈 수료증) 중 하나를 선택하세요.
 
-![인증서 메뉴 찾기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010491418/original/UDLUBmWon7i-7gGLUfOf5d5VJ2gX2SnB5w.png?1697660185)
+![신규 버튼과 템플릿 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010492067/original/3D8JLDvxZ1pd_sb53LmPswUHf40xWILFyQ.png?1697660747)
 
-## **템플릿 만들기**
+### 기존 템플릿으로 만들기
 
-인증서 템플릿을 만들기 시작하려면:
+1. 템플릿을 선택하세요.
+2. **확인**을 클릭하세요.
+3. 템플릿을 바로 쓸 수 있어요.
 
-- *새로 만들기(New)* 버튼을 클릭하세요
-- 템플릿을 만들려면 인증서 템플릿(Certificate Templates) 또는 빈 인증서(Blank Certificates)를 선택하세요
+### 처음부터 만들기
 
-![템플릿 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010492067/original/3D8JLDvxZ1pd_sb53LmPswUHf40xWILFyQ.png?1697660747)
+1. **Blank Certificates**를 클릭하세요.
+2. 빈 화면에서 처음부터 디자인을 시작하세요.
 
-### **기존 템플릿 선택하기**
+![빈 수료증 편집 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010492573/original/bT3kywKc2PuBXuU4M7Yy7HWVqHu6FRT7Pg.png?1697662124)
 
-기존 템플릿에서 템플릿을 만들려면:
+### 요소 선택하고 크기 조절하기
 
-- 템플릿을 선택하세요
-- *확인(Confirm)* 버튼을 클릭하세요
-- 템플릿이 사용할 준비가 완료됩니다
+**Certificate Builder**에서 요소 위에 마우스를 올리면 해당 요소가 강조돼요. 디자인이 복잡할 때도 편집할 요소를 쉽게 찾을 수 있어요.
 
-![템플릿 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010492335/original/pR3lrjO-urp1JV0kk-LOrYYZJ5CHfFDW5w.png?1697661470)
+요소 크기를 바꾸려면 요소를 선택한 다음, 가장자리나 모서리를 끌어 원하는 크기로 조절하세요.
 
-![템플릿 준비 완료](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010492555/original/sCOyrNnOIdY8dn8i9h1JFdS_-aD8V2R45g.png?1697662056)
+## 템플릿 편집하기
 
-### **처음부터 템플릿 만들기**
+템플릿을 편집할 때는 아래 요소들을 쓸 수 있어요.
 
-처음부터 템플릿을 만들려면:
+### 1. 레이아웃
 
-- *빈 인증서(Blank Certificates)* 버튼을 클릭하세요
-- 처음부터 만들기를 시작하세요
+1. **레이아웃**을 클릭하고 **Portrait**(세로) 또는 **Landscape**(가로)를 선택하세요.
+2. 선택한 방향에 맞는 프레임을 각각 고를 수 있어요.
+3. 프레임을 없애려면 오른쪽 바에서 같은 프레임을 다시 클릭하세요.
 
-![빈 템플릿으로 시작](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010492573/original/bT3kywKc2PuBXuU4M7Yy7HWVqHu6FRT7Pg.png?1697662124)
+![레이아웃 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010492648/original/-yXZPAA3uUS5wn0YYQM_6JV65UNqROgRqA.png?1697662356)
 
-## **템플릿 편집하기**
+{% hint style="info" %}
+레이아웃을 세로에서 가로로, 또는 가로에서 세로로 바꾸면 지금까지 편집한 내용이 흐트러져요.
+{% endhint %}
 
-템플릿을 편집하려면 다양한 요소들을 사용할 수 있습니다:
+![레이아웃 변경 안내 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010492813/original/73uw2Kk-z-RoyRlIDXirIwiWMAEV0RDplA.png?1697662750)
 
-#### 1. 레이아웃(Layout):
+### 2. 배경
 
-- 레이아웃을 선택하려면 *레이아웃(Layout)*을 클릭하고 세로(Portrait) 또는 가로(Landscape) 중에서 선택하세요
-- 선택한 후에는 각 레이아웃에 맞는 프레임을 선택할 수 있습니다
-- 프레임을 제거하려면 (오른쪽 바에서) 같은 프레임을 다시 클릭하세요
+1. **배경**을 클릭하세요.
+2. 색상을 선택하세요.
+3. 이미지를 배경으로 업로드하거나, 이미지 링크를 입력해 업로드하세요.
+4. **Opacity**(투명도) 슬라이더로 배경 이미지나 색상의 투명도를 조절하세요.
+5. 패턴을 배경 이미지로 쓰려면 **Patterns**(패턴)를 클릭해 패턴을 고르세요. 이어서 패턴 색상을 선택하세요.
 
-![레이아웃 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010492648/original/-yXZPAA3uUS5wn0YYQM_6JV65UNqROgRqA.png?1697662356)
+![배경 색상 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010492892/original/JxYtQty_YqQpW12lbPbv_ghSf8P-doDSxQ.png?1697663074)
 
-***참고***: 레이아웃을 세로에서 가로로 또는 그 반대로 변경하면 편집 내용이 손상될 수 있습니다.
+![배경 패턴 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010492968/original/vMyrWzD4Z1cBaZEfOG5NQ2MwS9EvXUfpSg.png?1697663373)
 
-![레이아웃 변경 주의사항](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010492813/original/73uw2Kk-z-RoyRlIDXirIwiWMAEV0RDplA.png?1697662750)
+### 3. 머리글
 
-#### 2. 배경(Background):
+1. **머리글** 요소를 템플릿에 끌어다 놓으세요.
+2. 머리글을 선택한 다음 텍스트를 편집하세요.
+3. 복사 아이콘이나 삭제 아이콘을 클릭하면 요소를 복제하거나 삭제할 수 있어요.
+4. 텍스트를 선택한 뒤 상단 바에서 **Font Styles**(글꼴 스타일), **Font Size**(글꼴 크기), **Font Type**(글꼴 유형, Heading 1·Heading 2 등), **Font Colour**(글꼴 색상) 등을 선택하세요.
+5. 요소 크기를 바꾸려면 요소를 선택한 다음, 가장자리나 모서리를 끌어 원하는 크기로 조절하세요.
 
-- 배경을 선택하려면 배경(Background)을 클릭하세요
-- 색상을 선택하세요
-- 배경으로 이미지를 업로드하거나 이미지 링크를 입력해서 업로드하세요
-- 투명도 슬라이더를 사용해서 배경 이미지나 색상의 투명도를 선택하세요
-- 배경 이미지로 패턴을 선택하려면 패턴(Patterns)을 클릭하고 패턴을 선택하세요. 추가로 패턴의 색상도 선택할 수 있습니다
+![머리글 요소 추가 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010493078/original/YLoHp-dsmvWek9_bPWzEN3Ph3-se8I6juQ.png?1697663759)
 
-![배경 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010492892/original/JxYtQty_YqQpW12lbPbv_ghSf8P-doDSxQ.png?1697663074)
+![머리글 텍스트 편집 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010493203/original/f4yu5bSJswzGBD6Fk-E4u0EumbGg0Ja4xA.png?1697664037)
 
-![배경 패턴 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010492968/original/vMyrWzD4Z1cBaZEfOG5NQ2MwS9EvXUfpSg.png?1697663373)
+### 4. 문자
 
-#### 3. 헤더(Header)
+1. **문자** 요소를 템플릿에 끌어다 놓으세요.
+2. 문자 요소를 선택한 다음 텍스트를 편집하세요.
+3. 복사 아이콘이나 삭제 아이콘을 클릭하면 요소를 복제하거나 삭제할 수 있어요.
+4. 텍스트를 선택한 뒤 상단 바에서 **Font Styles**, **Font Size**, **Font Type**(제목, 단락 등), **Font Colour** 등을 선택하세요.
+5. 요소 크기를 바꾸려면 요소를 선택한 다음, 가장자리나 모서리를 끌어 원하는 크기로 조절하세요.
+6. 텍스트를 편집하는 중에는 아래 단축키로 서식을 적용할 수 있어요.`Ctrl/Cmd + B`: 굵게`Ctrl/Cmd + I`: 기울임`Ctrl/Cmd + U`: 밑줄
 
-- 헤더를 추가하려면 *헤더(Header)* 요소를 템플릿에 드래그 앤 드롭하고 선택한 후 텍스트 편집을 시작하세요
-- 복사 및 삭제 아이콘을 클릭해서 요소를 복제하거나 삭제할 수 있습니다
-- 텍스트를 선택한 후 상단 바에서 폰트 스타일, 폰트 크기, 폰트 종류(제목 1, 제목 2 등), 폰트 색상 등을 선택하세요
-- 크기를 조절하려면 텍스트 박스의 파란색 점을 이동하세요
+```
+외부에서 복사한 내용을 Certificate Builder에 붙여 넣을 수 있어요. 붙여 넣은 내용은 서식이 깨지지 않게 처리되어, 기존 콘텐츠를 디자인에 쉽게 옮길 수 있어요.
+```
 
-![헤더 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010493078/original/YLoHp-dsmvWek9_bPWzEN3Ph3-se8I6juQ.png?1697663759)
+![문자 요소 편집 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010493415/original/JaKgxTn-HPAxnP9D3pPuEEQPi5_yPUPAYA.png?1697664751)
 
-![헤더 편집](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010493203/original/f4yu5bSJswzGBD6Fk-E4u0EumbGg0Ja4xA.png?1697664037)
+### 5. 이미지
 
-#### 4. 텍스트(Text)
+1. **이미지** 요소를 템플릿에 끌어다 놓으세요.
+2. 이미지를 업로드하거나 이미지 링크를 입력해 업로드하세요.
+3. **Opacity** 슬라이더로 배경 이미지의 투명도를 조절하세요.
+4. 요소 크기를 바꾸려면 요소를 선택한 다음, 가장자리나 모서리를 끌어 원하는 크기로 조절하세요.
 
-- 텍스트를 추가하려면 *텍스트(Text)* 요소를 템플릿에 드래그 앤 드롭하고 선택한 후 텍스트 편집을 시작하세요
-- 복사 및 삭제 아이콘을 클릭해서 요소를 복제하거나 삭제할 수 있습니다
-- 텍스트를 선택한 후 상단 바에서 폰트 스타일, 폰트 크기, 폰트 종류(제목, 본문 등), 폰트 색상 등을 선택하세요
-- 크기를 조절하려면 텍스트 박스의 파란색 점을 이동하세요
+![이미지 요소 추가 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010493581/original/bTnBsbbxjvpM13IgQ76NqpOKrBtAB6dIeQ.png?1697665218)
 
-![텍스트 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010493415/original/JaKgxTn-HPAxnP9D3pPuEEQPi5_yPUPAYA.png?1697664751)
+### 6. 배지
 
-#### 5. 이미지(Image)
+1. **배지** 요소를 템플릿에 끌어다 놓으세요.
+2. 옵션 중에서 원하는 배지를 클릭해 고르세요.
+3. 요소 크기를 바꾸려면 요소를 선택한 다음, 가장자리나 모서리를 끌어 원하는 크기로 조절하세요.
 
-- 이미지를 추가하려면 *이미지(Image)* 요소를 템플릿에 드래그 앤 드롭하세요
-- 이미지를 업로드하거나 이미지 링크를 추가해서 업로드하세요
-- 투명도 슬라이더를 사용해서 배경 이미지의 투명도를 선택하세요
-- 크기를 조절하려면 박스의 파란색 점을 이동하세요
+![배지 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010493705/original/im6yZ9CjMmcLDfb51pFvp4YE1-Nr6vPzeQ.png?1697665482)
 
-![이미지 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010493581/original/bTnBsbbxjvpM13IgQ76NqpOKrBtAB6dIeQ.png?1697665218)
+### 7. 서명
 
-#### 6. 뱃지(Badge)
+1. **서명** 요소를 템플릿에 끌어다 놓으세요.
+2. 옵션 중에서 원하는 배지를 클릭해 고르세요.3. 서명을 선택한 다음 서명 스타일을 고르세요.
+4. 요소 크기를 바꾸려면 요소를 선택한 다음, 가장자리나 모서리를 끌어 원하는 크기로 조절하세요.
 
-- 뱃지를 추가하려면 *뱃지(Badge)* 요소를 템플릿에 드래그 앤 드롭하세요
-- 옵션에서 클릭해서 뱃지를 선택하세요
-- 크기를 조절하려면 박스의 파란색 점을 이동하세요
+![서명 요소 편집 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010493737/original/yJHOjV1hL6_1mcRME_jzplC8w60qlz8pAA.png?1697665603)
 
-![뱃지 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010493705/original/im6yZ9CjMmcLDfb51pFvp4YE1-Nr6vPzeQ.png?1697665482)
+## 템플릿 미리보기와 저장
 
-#### 7. 서명(Signatures)
+1. 템플릿을 미리 보려면 **미리보기**를 클릭하세요.
+2. 저장하기 전에 화면 위쪽에서 수료증에 맞는 이름을 입력하세요.
+3. 템플릿을 저장하려면 **저장**을 클릭하세요.
 
-- 서명을 추가하려면 *서명(Signature)* 요소를 템플릿에 드래그 앤 드롭하세요
-- 옵션에서 클릭해서 서명을 선택하세요
-- 서명을 선택한 후 서명 스타일을 선택하세요
-- 크기를 조절하려면 박스의 파란색 점을 이동하세요
+![템플릿 이름 입력과 저장 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010494542/original/97ZeVjxTg_-Rga03DoR8W--LzkeBpANo_w.png?1697666809)
 
-![서명 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010493737/original/yJHOjV1hL6_1mcRME_jzplC8w60qlz8pAA.png?1697665603)
+## 저장된 템플릿 확인하기
 
-### **템플릿 미리보기 및 저장**
+1. 저장한 뒤 **뒤로**를 클릭하세요.
+2. 저장된 템플릿은 **템플릿** 탭에서 볼 수 있어요.
+3. 점 세 개 메뉴에서 **미리보기**, **편집**, **삭제**를 선택할 수 있어요.
 
-- 템플릿을 미리보려면 *미리보기(Preview)* 버튼을 클릭하세요
-- 템플릿을 저장하려면 *저장(Save)* 버튼을 클릭하세요
-- 템플릿을 저장하기 전에 상단 섹션에서 인증서의 관련된 이름을 입력하세요
-
-![템플릿 미리보기 및 저장](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010494542/original/97ZeVjxTg_-Rga03DoR8W--LzkeBpANo_w.png?1697666809)
-
-### 저장된 템플릿
-
-- 저장한 후 뒤로(Back) 버튼을 클릭하세요
-- 저장된 템플릿은 템플릿(Template) 탭에서 볼 수 있습니다
-- 점 세 개 메뉴에서 템플릿을 미리보기, 편집 또는 삭제할 수 있습니다
-
-![저장된 템플릿 관리](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010494591/original/xRScoCdIvAGL8xmK1s-C2-ODWxfUWedlmw.png?1697667027)
-
----
-*원문 최종 수정: Wed, 11 Feb, 2026 at 2:02 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+![저장된 템플릿 목록 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010494591/original/xRScoCdIvAGL8xmK1s-C2-ODWxfUWedlmw.png?1697667027)

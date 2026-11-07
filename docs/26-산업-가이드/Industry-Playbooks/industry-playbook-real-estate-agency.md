@@ -1,35 +1,34 @@
 ---
-번역일: 2026-04-08T00:00:00.000Z
-카테고리: 26-산업-가이드 > Industry Playbooks
+원문: /support/solutions/articles/155000000966-industry-playbook-real-estate-agency
+번역일: 2026-11-07
+카테고리: 26-산업-가이드
 ---
 
-# 부동산 중개업소 플레이북
+# 산업 플레이북 — 부동산 중개업체
 
-지역 부동산 중개업소의 온라인 성장 로드맵은 간단합니다: 새로운 리드를 확보하고, 대화를 통해 이들을 매출로 전환하며, 고객을 긍정적인 리뷰와 추천인으로 만드는 것입니다. 여기 플레이북을 소개합니다:
+부동산 중개업체가 온라인에서 성장하는 방법을 단계별로 정리한 가이드예요. 새 리드를 모으고, 대화로 계약까지 이끌고, 고객을 긍정적인 리뷰와 추천으로 연결하는 흐름을 따라가 보세요.
 
-**더 많은 리드 확보**
+지역 부동산 중개업체를 온라인에서 키우는 길은 단순해요. 새 리드를 확보하고, 대화로 그 리드를 계약으로 전환하고, 고객이 긍정적인 리뷰를 남기고 주변에 추천하게 만드는 거예요. 순서대로 살펴볼게요.
 
-* 부동산 중개업소 웹사이트에 [SMS 웹챗 위젯](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/03-%EB%8C%80%ED%99%94/%EA%B8%B0%ED%83%80/highlevel-chat-widget-how-to-add-it-to-your-pages-in-minutes.md)을 설치하세요.
-* 부동산 중개업소의 [구글 비즈니스 프로필](../../41-평판-리뷰/기타/how-to-integrate-your-gmb-into-the-crm.md)을 연동하여 Google Chat을 활성화하세요(구글 비즈니스 프로필이 있는 경우).
-* [부재중 전화 자동 문자 발송](../../11-설정/서브어카운트-설정/where-and-how-to-configure-the-missed-call-text-back-feature.md) 기능을 활성화하여 부동산 중개업소로 걸려온 부재중 전화에 즉시 "죄송합니다. 전화를 받지 못했습니다. 어떻게 도와드릴까요?"라는 문자 메시지를 보내세요.
+## 리드 더 많이 확보하기
 
-**리드를 예약으로 전환**
+- 중개사의 웹사이트에 [SMS 웹챗 위젯](../../06-사이트/how-to-install-hyperclass-s-chat-widget.md)을 설치하세요.
+- 중개사에게 Google Business Profile이 있다면 [Google Business Profile을 연동](../../42-통합/Google-Integrations/how-to-integrate-google-business-profile-gbp-with-hyperclass.md)해서 Google Chat을 활성화하세요.
+- [부재중 전화 문자 자동 응답](../../11-설정/서브어카운트-설정/where-and-how-to-configure-the-missed-call-text-back-feature.md)을 켜세요. 중개사가 받지 못한 전화에는 바로 "전화를 받지 못해 죄송합니다. 무엇을 도와드릴까요?"라는 문자가 가요.
 
-* 부동산 중개업소가 자주 보내는 문구와 링크를 위한 유용한 [텍스트 스니펫](../../36-기타/리커버리/message-templates-snippets-.md)을 설정하세요.
-* [대화 AI 활성화](../../04-캘린더-예약/기타/how-to-use-conversation-ai-in-your-appointment-bookings-.md)를 통해 부동산 중개업소가 완전히 훈련된 24시간 지원 어시스턴트를 통해 대화로 리드를 예약으로 전환할 수 있도록 하세요.
+## 리드를 예약으로 이어 가기
 
-**리드를 매출로 전환**
+- 중개사가 자주 보내는 문구와 링크를 [문자 스니펫](../../10-마케팅/SMS-이메일-템플릿/create-and-use-text-and-email-snippets-in-hyperclass.md)으로 만들어 두세요.
+- [대화 AI를 활성화](../../10-마케팅/appointment-booking-conversation-ai-workflow-action.md)하세요. 충분히 학습된 어시스턴트가 항상 대기하면서 대화로 리드를 예약까지 이끌어 줘요.
 
-* [결제 폼](../../08-결제/기타/selling-products-on-order-forms-with-available-payment-providers-faqs.md), [유료 예약 캘린더](../../04-캘린더-예약/기타/calendar-payments.md), [문자 결제 링크](../../08-결제/text-to-pay-links.md), [탭 투 페이](../../08-결제/tap-to-pay.md)를 위한 결제 연동을 설정하세요.
+## 리드를 계약으로 전환하기
 
-**매출을 긍정적인 리뷰로 전환**
+- 다음 항목에 결제 연동을 설정하세요: [결제 폼](../../08-결제/시작하기/selling-products-on-order-forms-with-available-payment-providers.md), [유료 예약 캘린더](../../04-캘린더-예약/캘린더-설정/collecting-payments-in-calendars.md), [Text-2-Pay(문자 결제 링크)](../../08-결제/text-to-pay-links.md), [Tap-2-Pay](../../08-결제/tap-to-pay.md).
 
-* 이메일 및 SMS 리뷰 요청 템플릿을 설정하여 부동산 중개업소가 버튼 하나로 빠르고 쉽게 리뷰를 요청할 수 있도록 하세요.
+## 계약을 긍정적인 리뷰로 이어 가기
 
-**매출을 추천인으로 전환**
+- 이메일 및 SMS 리뷰 요청 템플릿을 설정하세요. 중개사가 버튼 한 번으로 빠르고 쉽게 리뷰를 요청할 수 있어요.
 
-* 뉴스레터 [이메일 템플릿](../../10-마케팅/Templates/email-templates-vs-email-campaigns.md)을 설정하여 부동산 중개업소가 연락처에게 뉴스, 업데이트, 프로모션을 쉽게 보낼 수 있도록 하세요.
+## 계약을 추천으로 이어 가기
 
-***
-
-_원문 최종 수정: 2023년 10월 3일 오후 3:25_ _Hyperclass 사용 가이드 — hyperclass.ai_
+- 뉴스레터용 [이메일 템플릿](../../10-마케팅/Templates/email-templates-vs-email-campaigns.md)을 설정하세요. 중개사가 소식, 업데이트, 프로모션을 연락처에 쉽게 보낼 수 있어요.

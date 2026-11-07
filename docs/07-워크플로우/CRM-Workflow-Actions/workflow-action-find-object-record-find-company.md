@@ -1,129 +1,133 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 07-워크플로우 > CRM Workflow Actions
+원문: /support/solutions/articles/155000006483-workflow-action-find-object-record-find-company
+번역일: 2026-11-07
+카테고리: 07-워크플로우
 ---
 
-# 워크플로우 액션 – 객체 레코드 찾기 / 회사 찾기
+# 워크플로우 액션 — Find Object Record / Find Company(오브젝트 레코드 찾기 / 회사 찾기)
 
-**목차**
-
-- [개요](#개요)
-- [액션 이름](#액션-이름)
-- [액션 설명](#액션-설명)
-- [액션 세부사항](#액션-세부사항)
-- [예시](#예시)
+이 액션은 인바운드 웹훅으로 들어온 값을 이용해 CRM에서 커스텀 오브젝트 레코드나 회사 레코드를 찾아요. 웹훅으로 받은 데이터를 바탕으로 기존 레코드를 조회한 뒤, 찾았는지 여부에 따라 워크플로우를 나누고 싶을 때 사용하세요.
 
 ## 개요
 
-객체 레코드 찾기(Find Object Record) 액션은 인바운드 웹훅(Inbound Webhook) 트리거의 값을 사용하여 CRM에서 특정 커스텀 객체 레코드를 검색합니다. 웹훅 페이로드의 필드를 객체 필드에 매핑하는 방식으로 작동합니다. 워크플로우가 이미 동일한 객체로 시작되는 트리거를 가지고 있다면 이 단계는 건너뜁니다.
+**Find Object Record**(오브젝트 레코드 찾기) 액션은 **Inbound Webhook**(인바운드 웹훅) 트리거로 받은 값을 사용해 CRM에서 특정 커스텀 오브젝트 레코드를 검색해요. 웹훅 페이로드의 필드를 오브젝트의 필드에 연결해서 조건을 만들어요. 워크플로우가 이미 같은 오브젝트를 트리거로 시작했다면 이 단계는 건너뛰어요.
 
-이 액션은 회사 기반 워크플로우에서는 회사 찾기(Find Company)로도 사용할 수 있으며, 웹훅 값(예: companyName, domain)을 사용하여 회사 레코드를 찾을 수 있습니다.
+회사 기반 워크플로우에서는 이 액션을 **Find Company**(회사 찾기)라는 이름으로 쓸 수 있어요. `companyName`, `domain` 같은 웹훅 값으로 회사 레코드를 찾아요.
 
 ## 액션 이름
 
-- **객체 레코드 찾기(Find Object Record)** (커스텀 객체 워크플로우용)
-- **회사 찾기(Find Company)** (회사 기반 워크플로우용)
+- **Find Object Record**: 커스텀 오브젝트 워크플로우에서 쓰는 이름이에요.
+- **Find Company**: 회사 기반 워크플로우에서 쓰는 이름이에요.
 
 ## 액션 설명
 
-이 액션의 용도:
+이 액션으로 할 수 있는 일이에요.
 
-- **웹훅 매개변수를 객체/회사 필드에 매핑**하여 필터에서 레코드(커스텀 객체 또는 회사)를 조회합니다.
-- **타이브레이커(tie-breaker)**를 사용하여 여러 일치 결과를 해결합니다(가장 빨리 생성됨 / 가장 최근에 생성됨).
-- **레코드 찾음** vs **레코드를 찾지 못함**으로 분기하여 명확하고 결정적인 흐름을 만듭니다.
+- **Filters**(필터)에서 **웹훅 파라미터를 오브젝트 또는 회사 필드에 연결**해 레코드(커스텀 오브젝트 또는 회사)를 조회해요.
+- 일치하는 레코드가 여러 개일 때는 **Earliest Created**(가장 먼저 만든 레코드) 또는 **Latest Created**(가장 최근에 만든 레코드) 기준으로 하나를 골라요.
+- **Record Found**(레코드 찾음)와 **Record Not Found**(레코드 못 찾음)로 흐름을 나눠, 결과가 명확한 워크플로우를 만들어요.
 
-**전제 조건**: 워크플로우에 인바운드 웹훅 트리거가 있어야 합니다. 이 액션은 해당 트리거의 페이로드(본문, 헤더)에서 값을 읽어옵니다.
+{% hint style="warning" %}
+**사전 조건:** 워크플로우에 **Inbound Webhook** 트리거가 있어야 해요. 이 액션은 해당 트리거 페이로드(body, headers)의 값을 읽어요.
+{% endhint %}
 
-## 액션 세부사항
+## Action Details(액션 상세 정보)
 
-![객체 레코드 찾기 액션 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155054908432/original/septxq0_2MS-iQ7j_xfo58ENs5aLj5gNng.png?1759229495)
+**1. Inbound Webhook 필요**
 
-![객체 레코드 찾기 액션 필터 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155054908468/original/hECJ8s0IdoP0_9Zgyu9ZgWa57IsFUGlD3Q.jpeg?1759229520)
+- 워크플로우에 **Inbound Webhook** 트리거가 있을 때만 이 액션을 사용할 수 있어요.
+- 값은 그 트리거의 페이로드에서 가져와요. 예: `{{inboundWebhookRequest.body.petname}}`, `{{inboundWebhookRequest.body.domain}}`
 
-### I. 인바운드 웹훅 필수
+**2. Filter On(필터 기준, 동점 처리)**
 
-- 워크플로우에 인바운드 웹훅 트리거가 포함된 경우에만 활성화됩니다.
-- 해당 트리거의 페이로드에서 값을 가져옵니다(예: {{inboundWebhookRequest.body.petname}}, {{inboundWebhookRequest.body.domain}}).
+일치하는 레코드가 여러 개일 때 어떤 레코드를 선택할지 정해요.
 
-### II. **필터 기준 (타이브레이커)**
+- **Earliest Created Record**(가장 먼저 만든 레코드)
+- **Latest Created Record**(가장 최근에 만든 레코드)
 
-여러 레코드가 일치할 때 하나를 선택하는 방법을 선택합니다:
-• 가장 빨리 생성된 레코드(Earliest Created Record)
-• **가장 최근에 생성된 레코드(Latest Created Record)**
+**3. Filters(필터, AND 조건)**
 
-### III. **필터 (AND 논리)**
+- 행을 하나 이상 추가해요. 모든 필터는 **AND**(그리고) 조건으로 적용돼요.
+- **왼쪽:** 일치 여부를 확인할 오브젝트 또는 회사 필드를 골라요. 예: **Record ID**(레코드 ID), **External ID**(외부 ID), **VIN**, **Pet Name**(펫 이름), **Company Name**(회사명), **Domain**(도메인)
+- **오른쪽(값):** **Inbound Webhook** 트리거의 필드(Body, Headers)를 고르거나 고정값을 직접 입력해요.
 
-- 하나 이상의 행을 추가합니다. 모든 필터는 AND 논리를 사용합니다.
-- **왼쪽**: 일치시킬 객체/회사 필드(예: 레코드 ID, 외부 ID, VIN, 펫 이름, 회사명, 도메인).
-- **오른쪽 (값)**: 인바운드 웹훅 트리거에서 필드를 선택(본문, 헤더) 하거나 고정 값을 입력합니다.
-- **팁**:
-  • 결정적인 결과를 위해 고유 식별자(레코드 ID, 외부 ID, 도메인)를 우선 사용하세요.
-  • 모호한 일치를 피하기 위해 추가 필터(상태, 위치, 유형)를 추가하세요.
+{% hint style="info" %}
+- 결과를 정확히 하나로 좁히려면 **Record ID**, **External ID**, **Domain** 같은 고유 식별자를 사용하세요.
+- 상태, 위치, 유형 같은 필터를 더 추가하면 여러 레코드가 걸리는 상황을 줄일 수 있어요.
+{% endhint %}
 
-### IV. **결과**
+**4. Outcomes(결과)**
 
-- **레코드 찾음**: 일치하는 객체가 하위 액션(업데이트, 연결, 삭제 등)의 **현재 레코드**가 됩니다.
-- **레코드를 찾지 못함**: 이 분기를 사용하여 새 레코드를 생성하거나, 사용자에게 알리거나, 플로우를 중단할 수 있습니다.
+- **Record Found:** 찾은 오브젝트가 이후 액션(**Update**(업데이트), **Associate**(연결), **Clear**(비우기) 등)에서 **현재 레코드**가 돼요.
+- **Record Not Found:** 이 분기에서는 새 레코드를 만들거나, 사용자에게 알림을 보내거나, 워크플로우를 멈출 수 있어요.
 
-### V. **건너뛰기 동작**
+**5. 건너뛰기 동작**
 
-- 워크플로우가 이미 트리거와 동일한 객체로 시작하는 경우(예: "자동차 생성됨" 또는 "회사 생성됨"), 이 단계는 자동으로 건너뜁니다.
+- 워크플로우가 같은 오브젝트를 트리거로 시작하면(예: "Car created" 또는 "Company created") 이 단계는 자동으로 건너뛰어요.
 
-### VI. **모범 사례**
+**6. 권장 사항**
 
-- 웹훅에서 깨끗하고 유형이 지정된 값(문자열/숫자/불린)을 보내도록 합니다.
-- 이름으로 일치시키는 경우 소스 시스템에서 대소문자/공백을 정규화합니다.
-- 라이브로 전환하기 전에 스테이징 워크플로우에서 샘플 페이로드로 테스트하세요.
+- 웹훅이 문자열, 숫자, 불리언 같은 형식이 정리된 값을 보내는지 확인하세요.
+- 이름으로 일치 여부를 확인한다면, 원본 시스템에서 대소문자와 공백을 통일해 두세요.
+- 실제로 운영하기 전에 테스트용 워크플로우에서 샘플 페이로드로 먼저 테스트하세요.
 
 ## 예시
 
-#### 예시 1: 이름으로 펫 찾기 (웹훅 → 조회)
+#### 예시 1: 이름으로 Pet 찾기(웹훅 → 조회)
 
-**목표**: 웹훅에서 petname = "snowy"를 전송. 해당 이름의 Pet 객체를 찾기.
-
-**설정**
-- 필터 기준: 가장 빨리 생성된 레코드
-- 필터:
-  Pet Name = {{inboundWebhookRequest.body.petname}}
-
-**플로우**
-- 인바운드 웹훅이 { "petname": "snowy" }로 트리거됩니다.
-- 액션이 Pet Name이 "snowy"인 Pet을 찾습니다.
-- **레코드 찾음**: Pet 상태를 업데이트하고 주인에게 알림을 보냅니다.
-- **레코드를 찾지 못함**: 이름이 "snowy"인 Pet 레코드를 생성하고 검토용 태그를 추가합니다.
-
-#### 예시 2: 외부 참조로 구독 찾기
-
-**목표**: 결제 웹훅에서 subscription_ref를 전송. 해당 Subscription 객체를 찾기.
+**목표:** 웹훅이 `petname = "snowy"`를 보내면, 그 이름의 **Pet** 오브젝트를 찾아요.
 
 **설정**
-- 필터 기준: 가장 최근에 생성된 레코드
-- 필터:
-  External Reference = {{inboundWebhookRequest.body.subscription_ref}}
-  Status = active (선택적 안전 필터)
 
-**플로우**
-- subscription_ref와 함께 웹훅이 도착합니다.
-- 액션이 해당 참조를 가진 가장 최근의 활성 구독을 선택합니다.
-- **레코드 찾음**: 플랜 필드를 업데이트하고 갱신 이메일을 대기열에 추가합니다.
-- **레코드를 찾지 못함**: 플레이스홀더 구독을 생성하고 재무팀에 알림을 보냅니다.
+- **Filter On:** Earliest Created Record
+- **Filters:**
+
+  - **Pet Name** = `{{inboundWebhookRequest.body.petname}}`
+
+**흐름**
+
+1. Inbound Webhook이 `{ "petname": "snowy" }`와 함께 트리거돼요.
+2. 액션이 **Pet Name**이 *snowy*인 Pet을 찾아요.
+3. **Record Found:** Pet 상태를 업데이트하고 보호자에게 알려요.
+4. **Record Not Found:** 이름이 "snowy"인 Pet 레코드를 만들고 검토용 태그를 붙여요.
+
+---
+
+#### 예시 2: 외부 참조 값으로 구독 찾기
+
+**목표:** 결제 시스템의 웹훅이 `subscription_ref`를 보내면, 해당하는 **구독** 오브젝트를 찾아요.
+
+**설정**
+
+- **Filter On:** Latest Created Record
+- **Filters:**
+
+  - **External Reference**(외부 참조) = `{{inboundWebhookRequest.body.subscription_ref}}`
+  - **Status**(상태) = active (선택 사항, 안전장치용 필터)
+
+**흐름**
+
+1. `subscription_ref`가 담긴 웹훅이 들어와요.
+2. 액션이 해당 참조 값을 가진 활성 구독 중 가장 최근에 만든 구독을 선택해요.
+3. **Record Found:** 요금제 필드를 업데이트하고 갱신 안내 이메일을 대기열에 추가해요.
+4. **Record Not Found:** 임시 구독 레코드를 만들고 재무팀에 알려요.
+
+---
 
 #### 예시 3: 도메인으로 회사 찾기
 
-**목표**: 리드 생성 폼의 웹훅에서 companyDomain을 전달. 해당 도메인의 회사 레코드를 찾기.
+**목표:** 리드 수집 폼에서 보낸 웹훅이 `companyDomain`을 전달하면, 해당 도메인을 가진 **회사** 레코드를 찾아요.
 
 **설정**
-- 필터 기준: 가장 최근에 생성된 레코드
-- 필터:
-  Domain = {{inboundWebhookRequest.body.companyDomain}}
 
-**플로우**
-- 인바운드 웹훅이 { "companyDomain": "acme.com" }으로 트리거됩니다.
-- 액션이 Domain이 "acme.com"인 회사를 찾습니다.
-- **레코드 찾음**: 회사를 "온보딩" 워크플로우에 등록합니다.
-- **레코드를 찾지 못함**: 도메인이 "acme.com"인 새 회사 레코드를 생성합니다.
+- **Filter On:** Latest Created Record
+- **Filters:**
 
----
-*원문 최종 수정: Mon, 13 Oct, 2025 at 3:31 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+  - **Domain** = `{{inboundWebhookRequest.body.companyDomain}}`
+
+**흐름**
+
+1. Inbound Webhook이 `{ "companyDomain": "acme.com" }`와 함께 트리거돼요.
+2. 액션이 **Domain**이 *acme.com*인 회사를 찾아요.
+3. **Record Found:** 해당 회사를 "온보딩" 워크플로우에 등록해요.
+4. **Record Not Found:** 도메인이 *acme.com*인 새 회사 레코드를 만들어요.

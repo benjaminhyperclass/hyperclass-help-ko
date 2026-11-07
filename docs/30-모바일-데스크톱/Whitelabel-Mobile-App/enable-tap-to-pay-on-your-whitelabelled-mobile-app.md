@@ -1,219 +1,147 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 30-모바일-데스크톱 > Whitelabel Mobile App
+원문: /support/solutions/articles/155000006767-enable-tap-to-pay-on-your-whitelabelled-mobile-app
+번역일: 2026-11-06
+카테고리: 30-모바일-데스크톱
 ---
 
-# 화이트라벨 모바일 앱에서 탭투페이 활성화하기
+# 화이트라벨 모바일 앱에서 Tap to Pay 사용 설정하기
+
+화이트라벨 모바일 앱에서 iPhone 또는 Android용 Tap to Pay를 켜는 전체 과정을 안내해요. Tap to Pay를 쓰면 판매자가 별도 결제 단말기 없이 iPhone만으로 비접촉 결제를 받을 수 있어요. 그래서 판매자와 고객 모두 간편하게 결제할 수 있어요.
 
 ## 개요
 
-이 가이드는 iPhone 또는 Android 화이트라벨 모바일 앱에서 **탭투페이(Tap to Pay)** 기능을 활성화하는 단계별 과정을 자세히 설명합니다.
+{% hint style="info" %}
+시작하기 전에 확인하세요.
 
-탭투페이는 가맹점이 **iPhone을 통해 직접 비접촉 결제를 받을 수 있게** 해주어, 추가적인 결제 하드웨어 없이도 사업자와 고객 모두에게 원활한 결제 경험을 제공합니다.
+- Account Holder(계정 소유자) 권한이 있는 조직 단위 Apple Developer 계정이 꼭 있어야 해요.
+- Tap to Pay on iPhone은 지원되는 결제 서비스 제공업체(PSP)에서만 쓸 수 있어요. 하이퍼클래스의 화이트라벨 앱은 PSP로 Stripe 또는 Square를 사용해요.
+- Apple은 entitlement(사용 권한)와 distribution(배포 권한) 요청을 하나씩 심사한 뒤 승인해요.
+- Android의 Tap to Pay는 더 간단한 별도 절차를 따라요. 사전 승인이 필요 없어요.
+{% endhint %}
 
----
+## Tap to Pay on iPhone이란?
 
-## 주의사항
+Tap to Pay on iPhone을 쓰면 판매자가 iPhone만으로 비접촉 체크카드·신용카드, Apple Pay, 그 밖의 디지털 지갑 결제를 받을 수 있어요. 이 기능은 하이퍼클래스 화이트라벨 앱과 바로 연결돼요. 서브 계정은 연결해 둔 Stripe 또는 Square 계정으로 결제 금액을 받아요.
 
-- **조직 수준의 Apple Developer 계정**과 계정 소유자(Account Holder) 권한이 필요합니다.
+Apple은 앱마다 이 기능을 쓸 수 있는 entitlement(사용 권한)와 distribution(배포 권한)을 갖추도록 요구해요. 두 권한은 **Tap to Pay on iPhone Entitlement Request Form**(Tap to Pay on iPhone 권한 요청 폼)을 통해 승인되면 부여돼요.
 
-- iPhone의 탭투페이는 **지원되는 결제 서비스 제공업체(PSP)**에서만 사용 가능합니다. Hyperclass의 화이트라벨 앱은 Stripe 또는 Square를 PSP로 사용합니다.
+{% hint style="info" %}
+Tap to Pay 단계를 시작하기 전에 앱 서랍(app drawer)에서 **POS module**(POS 모듈)을 켜 주세요. Mobile App Customizer(모바일 앱 커스터마이저)에서 POS 모듈이 켜져 있어야 다음 단계로 진행할 수 있어요.
+{% endhint %}
 
-- Apple은 승인을 부여하기 전에 각 자격 요청과 배포 요청을 개별적으로 검토합니다.
+## 설정 과정 한눈에 보기
 
-- Android의 탭투페이는 **더 간단한 과정**을 따르며, 사전 승인이 필요하지 않습니다.
+설정은 크게 세 단계로 이뤄져요.
 
----
+1. Tap to Pay on iPhone entitlement 요청하기
+2. Apple의 심사와 entitlement 추가 기다리기
+3. Tap to Pay distribution 승인에 필요한 자료 제출하기
+4. Apple의 심사와 distribution 추가 기다리기
+5. Tap to Pay distribution 권한이 반영된 앱 업데이트 배포하기
 
-## **이 문서에서 다루는 내용**
+승인이 끝나면 **Mobile App Customizer**를 통해 화이트라벨 앱 업데이트를 요청하세요. 그러면 Tap to Pay 기능을 쓸 수 있어요.
 
-- iPhone 탭투페이란 무엇인가?
+## 1단계: Tap to Pay entitlement 요청하기
 
-- 탭투페이 활성화: 프로세스 개요
+### 준비 사항
 
-- iPhone 탭투페이 승인을 위한 단계별 과정
+- 조직 단위 Apple Developer 계정에 Account Holder로 로그인해야 해요.
+- Apple 공식 요청 페이지인 [Tap to Pay on iPhone Entitlement Request Form](https://developer.apple.com/contact/request/tap-to-pay-on-iphone/)으로 이동하세요.
 
-- Android 탭투페이 활성화
+### 해야 할 일
 
-- 지원 및 일정
+1. 요청 폼을 작성해서 제출하세요.
+2. PSP는 Stripe 또는 Square로 선택하세요.
 
-- 자주 묻는 질문
+각 항목을 정확히 채우는 방법은 샘플 문서의 표를 참고하세요. 샘플 폼을 기준으로 한 주요 입력 항목은 아래와 같아요.
 
----
+| 필드 | 응답 예시 |
+| --- | --- |
+| **PSP** | Stripe |
+| **Organization**(조직) | 조직 이름 |
+| **Name**(이름) | 조직 대표자 이름 |
+| **Email**(이메일) | 조직의 대표 이메일 |
+| **Distribution**(배포) | App Store and Apple Business Manager |
+| **Onboarding Description**(온보딩 설명) | Merchants are onboarded via the web app as sub-accounts. Once connected to Stripe, they can sign in on mobile to process payments. (판매자는 웹 앱에서 서브 계정으로 등록돼요. Stripe를 연결하면 모바일에 로그인해 결제를 처리할 수 있어요.) |
+| **Countries/Regions**(국가/지역) | 고객이 Tap to Pay를 사용할 모든 국가 또는 지역을 출시 순서대로 적으세요. |
 
-## iPhone 탭투페이란 무엇인가?
+승인을 받으려면 모든 응답이 제공된 샘플 문서와 일치해야 해요.
 
-**iPhone 탭투페이**는 가맹점이 iPhone만으로 **비접촉 직불/신용카드, Apple Pay 및 기타 디지털 지갑을 받을 수 있게** 해줍니다. 이 기능은 Hyperclass 화이트라벨 앱과 직접 연동되어, 하위 계정이 연결된 Stripe 또는 Square 계정을 통해 결제를 받을 수 있습니다.
+## 판매자 온보딩 과정
 
-Apple은 각 앱이 이 기능을 사용하기 위해 자격 및 **배포** 권한을 가져야 하며, 이는 **탭투페이 온 iPhone 자격 요청 양식**을 통한 승인 후에 부여됩니다.
+판매자 온보딩은 주로 하이퍼클래스 웹 앱에서 이뤄져요.
 
----
+1. 메인 계정 소유자가 판매자를 서브 계정으로 추가해요.
+2. 각 판매자가 웹 화면에서 Stripe 또는 Square 계정을 연결해요.
+3. 판매자는 서브 계정 로그인 정보로 모바일 앱에 로그인해요. 그러면 결제 금액이 자신의 Stripe 계정으로 바로 들어와요.
 
-## **빠른** 참고사항: 
+이 구조 덕분에 판매자마다 독립적으로 순조롭게 온보딩할 수 있어요.
 
-탭투페이 단계를 시작하기 전에 앱 서랍에서 **POS 모듈**을 활성화해 주세요. 모바일 앱 커스터마이저(Mobile App Customizer)에서 POS 모듈이 활성화된 후에만 진행할 수 있습니다.
+### 심사 과정
 
-## 탭투페이 활성화: 프로세스 개요
+Apple은 제출한 내용과 자격 요건을 바탕으로 요청을 심사해요.
 
-설정 과정은 **3가지 주요 단계**로 구성됩니다:
+승인되면 Tap to Pay entitlement가 개발자 계정의 **Managed Capabilities**(관리되는 기능)에 나타나요.
 
-1. iPhone 탭투페이 자격 요청
+## 2단계: Apple의 entitlement 추가
 
-2. Apple의 검토 및 자격 추가 대기
+Apple이 신청을 승인하면 다음과 같이 진행돼요.
 
-**3.** 탭투페이 배포 승인을 위한 요구사항 제출
+- Tap to Pay entitlement가 개발자 계정에 추가돼요.
+- 하이퍼클래스 담당자에게 알려 주세요. 그러면 다음 단계로 넘어갈 수 있어요.
 
-4. Apple의 검토 및 배포 추가 대기
+## 3단계: distribution 승인에 필요한 자료 제출
 
-5. 탭투페이 배포 권한이 포함된 업데이트 배포
+Apple이 entitlement를 추가해 주면, Apple 팀이 안내하는 요구 사항을 이어서 진행하세요. 여기에는 데모 영상과 요구 사항 체크리스트가 포함돼요.
 
-승인이 완료되면 모바일 앱 커스터마이저를 통해 화이트라벨 앱의 **업데이트를 요청**하여 탭투페이 기능을 활성화할 수 있습니다.
+## 4단계: Apple의 심사와 distribution 추가 기다리기
 
----
+제출한 자료로 distribution 추가 승인을 받을 때까지 기다려요.
 
-## 1단계: 탭투페이 자격 요청
+## 5단계: distribution 권한이 반영된 앱 업데이트 배포
 
-### 전제 조건
+distribution 권한이 부여되면 앱 업데이트를 배포해야 해요. 그래야 모든 앱에서 Tap to Pay on iPhone 기능을 쓸 수 있어요.
 
-- **조직 수준의 Apple Developer 계정**의 **계정 소유자**로 로그인해야 합니다.
+## Android에서 Tap to Pay 사용 설정하기
 
-- Apple 공식 요청 페이지로 이동: [탭투페이 온 iPhone 자격 요청 양식](https://developer.apple.com/contact/request/tap-to-pay-on-iphone/)
+iOS와 달리 Android의 Tap to Pay는 Google의 승인이나 entitlement 요청이 필요 없어요.
 
-### **작업**
+Android에서 Tap to Pay를 켜려면 다음과 같이 하세요.
 
-- 요청 양식을 작성하고 제출합니다.
+- 표준 업데이트 요청 절차에 따라 화이트라벨 앱 업데이트를 요청하세요.
+- 업데이트가 끝나면 Android 앱에서 Tap to Pay 결제를 자동으로 지원해요.
 
-- PSP로 Stripe 또는 Square를 선택합니다.
+## 지원 및 소요 기간
 
-각 필드를 정확하게 작성하는 방법은 샘플 문서 표를 참조하세요.
+### 문의처
 
-다음은 샘플 양식을 기반으로 한 주요 항목들입니다:
+- Apple Developer Support: entitlement 절차와 관련된 문제를 문의하세요.
+- 하이퍼클래스 고객지원: 앱 업데이트나 연동 관련 문의를 하세요.
 
-**필드**
+### 예상 소요 기간
 
-**응답 예시**
+Apple의 심사 기간은 보통 며칠에서 몇 주까지 다양해요.
 
-PSP
+심사가 늦어질 수 있으니 앱 출시 일정에 여유를 두세요.
 
-Stripe
+## 자주 묻는 질문
 
-Organization
+### Tap to Pay entitlement를 쓰려면 추가 비용을 내야 하나요?
 
-귀하의 조직 이름
+아니요. entitlement 자체는 무료예요. 다만 Apple이 승인해야 활성화돼요.
 
-Name
+### Stripe 연동 없이 Tap to Pay를 쓸 수 있나요?
 
-조직 소유자 이름
+아니요. 하이퍼클래스의 Tap to Pay는 현재 결제 서비스 제공업체로 Stripe와 Square만 지원해요.
 
-Email
+### 승인까지 얼마나 걸리나요?
 
-조직의 주요 이메일
+Apple이 정확한 기간을 밝히지는 않아요. 보통 계정 자격에 따라 1~6주 정도 걸려요.
 
-Distribution
+### entitlement 요청이 거절되면 어떻게 하나요?
 
-App Store and Apple Business Manager
+내용을 바로잡아 다시 제출하거나, Apple Developer Support에 문의해 자세한 사유를 확인하세요.
 
-Onboarding Description
+### Tap to Pay는 전 세계에서 쓸 수 있나요?
 
-가맹점은 하위 계정으로 웹 앱을 통해 온보딩됩니다. Stripe에 연결된 후, 모바일에서 로그인하여 결제를 처리할 수 있습니다.
-
-Countries/Regions
-
-클라이언트가 탭투페이를 사용할 모든 국가 또는 지역을 출시 순서대로 나열
-
-성공적인 승인을 위해 모든 응답이 **제공된 샘플 문서와 일치**하는지 확인하세요.
-
----
-
-## 가맹점 온보딩 프로세스
-
-가맹점 온보딩은 주로 **Hyperclass 웹 앱**을 통해 이루어집니다:
-
-- 메인 계정 소유자가 가맹점을 **하위 계정**으로 추가합니다.
-
-- 각 가맹점은 웹 인터페이스를 통해 Stripe 또는 Square 계정을 연결합니다.
-
-- 그 후 가맹점은 **하위 계정 자격증명으로 모바일 앱에 로그인**하여 Stripe 계정으로 직접 결제를 받기 시작합니다.
-
-이러한 구조는 각 가맹점의 원활하고 독립적인 온보딩 과정을 보장합니다.
-
-### **검토 과정**
-
-Apple은 제공된 세부사항과 자격에 따라 각 요청을 검토합니다.
-
-승인되면 **탭투페이 자격**이 귀하 계정의 **관리 기능(Managed Capabilities)** 아래에 나타납니다.
-
-## 2단계: Apple의 자격 추가
-
-Apple이 귀하의 신청을 승인하면:
-
-- **탭투페이 자격**이 개발자 계정에 추가됩니다.
-
-- Hyperclass 계정 담당자에게 다음 단계를 진행할 수 있도록 알립니다.
-
-## 3단계: 탭투페이 배포 승인을 위한 요구사항 제출
-
-Apple의 자격 추가가 승인되면, Apple 팀에서 공유한 요구사항을 제출해야 합니다. 여기에는 데모 비디오와 요구사항 체크리스트가 포함됩니다.
-
-## 4단계: Apple의 검토 및 배포 추가 대기
-
-제출된 자료에 대한 배포 추가 승인을 받을 때까지 기다립니다.
-
-## 5단계: 탭투페이 배포 권한이 포함된 업데이트 배포
-
-배포 권한이 부여되면, 모든 앱에서 iPhone 탭투페이 기능을 활성화하기 위해 앱 업데이트를 배포해야 합니다.
-
-## Android 탭투페이 활성화
-
-iOS와 달리, **Android 탭투페이**는 Google의 승인이나 자격 요청이 필요하지 않습니다.
-
-Android에서 탭투페이를 활성화하려면:
-
-- 표준 Hyperclass 업데이트 요청 과정에 따라 **화이트라벨 앱 업데이트**를 요청합니다.
-
-- 업데이트되면 Android 앱이 자동으로 탭투페이 결제를 지원합니다.
-
----
-
-## 지원 및 일정
-
-### **지원 채널**
-
-- **Apple Developer 지원:** 자격 과정과 관련된 문제
-
-- **Hyperclass 지원팀:** 앱 업데이트 또는 연동 관련 문제
-
-### 예상 일정
-
-Apple의 검토 시간은 다양할 수 있으며, 일반적으로 **며칠에서 몇 주**까지 걸립니다.
-
-검토 지연을 고려하여 앱 출시 일정을 계획하세요.
-
----
-
-## **자주 묻는 질문**
-
-**Q1: 탭투페이 자격을 위해 추가 비용을 지불해야 하나요?**
-
-아니요. 자격 자체는 무료이지만, 활성화되기 전에 Apple의 승인을 받아야 합니다.
-
-**Q2: Stripe 연동 없이 탭투페이를 사용할 수 있나요?**
-
-아니요. Hyperclass의 탭투페이 구현은 현재 결제 서비스 제공업체로 Stripe와 Square만 지원합니다.
-
-**Q3: 승인 과정은 얼마나 걸리나요?**
-
-Apple이 정확한 기간을 명시하지는 않지만, 계정 자격에 따라 일반적으로 1-6주가 소요됩니다.
-
-**Q4: 자격 요청이 거부되면 어떻게 되나요?**
-
-올바른 정보로 다시 제출하거나 Apple Developer 지원에 문의하여 명확한 설명을 받을 수 있습니다.
-
-**Q5: 탭투페이는 전 세계적으로 사용 가능한가요?**
-
-가용성은 **Apple의 지역 출시**와 **Stripe의 국가 지원**에 따라 달라집니다. 요청 양식에서 의도하는 모든 국가를 나열해야 합니다.
-
----
-*원문 최종 수정: 2026년 3월 24일*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+Apple의 지역별 출시 상황과 Stripe가 지원하는 국가에 따라 달라요. 사용하려는 모든 국가를 요청 폼에 빠짐없이 적으세요.

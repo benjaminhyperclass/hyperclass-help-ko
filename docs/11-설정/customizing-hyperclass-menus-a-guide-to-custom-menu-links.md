@@ -1,194 +1,164 @@
 ---
-
-번역일: 2026-04-06
+원문: /support/solutions/articles/48001185767-customizing-highlevel-menus-a-guide-to-custom-menu-links
+번역일: 2026-11-06
 카테고리: 11-설정
 ---
 
-# Hyperclass 메뉴 커스터마이징: 커스텀 메뉴 링크 가이드
+# 사용자 정의 메뉴 링크로 하이퍼클래스 메뉴 꾸미기
 
-이 가이드에서는 Hyperclass에서 커스텀 메뉴 링크(Custom Menu Links)를 생성, 관리, 최적화하여 플랫폼 네비게이션을 향상시키고 외부 도구를 사용자 인터페이스에 직접 통합하는 방법을 설명합니다.
-
----
-
-**목차**
-
-- [커스텀 메뉴 링크란?](#커스텀-메뉴-링크란)
-- [커스텀 메뉴 링크의 주요 장점](#커스텀-메뉴-링크의-주요-장점)
-- [커스텀 메뉴 링크를 관리할 수 있는 사람은?](#커스텀-메뉴-링크를-관리할-수-있는-사람은)
-- [커스텀 메뉴 링크 생성 및 관리 방법](#커스텀-메뉴-링크-생성-및-관리-방법)
-- [커스텀 메뉴 링크에서 사용자 컨텍스트 가져오기](#커스텀-메뉴-링크에서-사용자-컨텍스트-가져오기)
-- [커스텀 메뉴 링크 편집 또는 삭제 방법](#커스텀-메뉴-링크-편집-또는-삭제-방법)
-- [커스텀 메뉴 링크 활용 모범 사례](#커스텀-메뉴-링크-활용-모범-사례)
-- [자주 묻는 질문](#자주-묻는-질문)
-
-## 커스텀 메뉴 링크란?
-
-커스텀 메뉴 링크(Custom Menu Links)는 에이전시가 하위 계정 및 에이전시 사용자를 위해 Hyperclass 네비게이션 메뉴를 개인화할 수 있게 해주는 기능입니다. 이 링크를 통해 사용자를 필수 외부 리소스, 교육 자료, 자주 사용하는 도구로 안내하여 워크플로우 효율성을 향상시킬 수 있습니다. 이러한 커스터마이징은 사용자 경험을 개선하고 Hyperclass 플랫폼 내에서 더 나은 네비게이션을 제공합니다.
-
-커스텀 메뉴 링크는 세 가지 방식으로 구성할 수 있습니다:
-
-- **임베디드 페이지(iFrame):** 네비게이션 구조를 유지하면서 Hyperclass 내에서 외부 페이지를 표시합니다.
-
-- **새 브라우저 탭:** 별도의 브라우저 탭에서 링크를 열어 Hyperclass를 백그라운드에 열어둔 상태로 유지합니다.
-
-- **현재 브라우저 탭:** 현재 Hyperclass 화면을 링크된 콘텐츠로 대체하여 사용자를 플랫폼 외부로 안내합니다.
-
-이러한 옵션들은 에이전시가 사용자들이 외부 도구와 리소스와 상호작용하는 방식에 따라 유연성을 제공합니다.
+**사용자 정의 메뉴 링크**(Custom Menu Links)로 하이퍼클래스 왼쪽 메뉴에 외부 도구나 자료로 가는 링크를 추가할 수 있어요. 이 문서에서는 링크를 만들고, 편집·삭제하고, 순서를 바꾸는 방법을 설명해요.
 
 ---
 
-## 커스텀 메뉴 링크의 주요 장점
+## 사용자 정의 메뉴 링크란?
 
-커스텀 메뉴 링크는 다양한 이점을 제공합니다:
+에이전시는 **사용자 정의 메뉴 링크**로 서브 계정 사용자와 에이전시 사용자가 보는 탐색 메뉴를 원하는 대로 꾸밀 수 있어요. 꼭 필요한 외부 자료, 교육 자료, 자주 쓰는 도구로 바로 갈 수 있는 링크를 넣어 두면 작업이 편해져요.
 
-- **효율적인 네비게이션:** 자주 사용하는 외부 도구에 중앙집중식으로 접근하여 다양한 플랫폼 간 전환에 소요되는 시간을 단축합니다.
+링크는 세 가지 방식으로 설정할 수 있어요.
 
-- **생산성 향상:** 사용자가 Hyperclass 인터페이스를 떠나지 않고도 필수 리소스에 빠르게 접근할 수 있습니다.
+- 페이지 삽입(iFrame): 탐색 메뉴 구조는 그대로 두고, 외부 페이지를 하이퍼클래스 화면 안에 보여 줘요.
+- 새 브라우저 탭: 링크를 별도 탭에서 열고, 하이퍼클래스는 뒤쪽 탭에 그대로 열려 있어요.
+- 현재 브라우저 탭: 지금 보고 있는 하이퍼클래스 화면을 링크 내용으로 바꿔요. 사용자는 플랫폼 밖으로 이동해요.
 
-- **향상된 교육 및 지원 접근성:** 에이전시가 도움말 문서, 지식 베이스, 고객 지원 포털에 대한 직접 링크를 제공할 수 있습니다.
-
-- **원활한 서드파티 통합:** 외부 대시보드, 제휴 포털, 리포팅 도구를 플랫폼 내에 직접 임베딩할 수 있습니다.
-
----
-
-## 커스텀 메뉴 링크를 관리할 수 있는 사람은?
-
-오직 **에이전시 관리자(Agency Admins)**만이 커스텀 메뉴 링크를 생성하고 관리할 수 있어, 승인된 인력만이 네비게이션 옵션을 추가하거나 제거할 수 있도록 보장합니다.
-
-이러한 권한을 조정하려면 `Settings(설정) > Team(팀)`으로 이동하세요. 권한을 업데이트해야 하는 팀원을 선택하고 "Manage Custom Menu Links" 권한이 활성화되어 있는지 확인하세요.
-
-![커스텀 메뉴 링크 권한 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044017895/original/_-z3BNFCNRSL3Q3xwHahQZSTqFp_3bOMrA.gif?1742996532)
+사용자가 외부 도구와 자료를 어떻게 쓰길 원하는지에 따라 방식을 고르면 돼요.
 
 ---
 
-## 커스텀 메뉴 링크 생성 및 관리 방법
+## 사용자 정의 메뉴 링크의 장점
 
-에이전시와 하위 계정 사용자의 네비게이션 사이드바에 표시되는 커스텀 메뉴 링크를 추가하고 구성하는 방법을 알아보세요. 이 단계들을 통해 외부 도구와 리소스를 Hyperclass 워크스페이스에 원활하게 통합할 수 있습니다.
-
-새로운 커스텀 메뉴 링크를 생성하려면 다음 단계를 따르세요:
-
-**1단계:** 좌측 메뉴에서 `Settings(설정) > Custom Menu Links(커스텀 메뉴 링크)`로 이동하고 우측 상단의 **Create New(새로 만들기)** 버튼을 클릭하세요.
-
-![커스텀 메뉴 링크 생성하기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044018239/original/KM6Ct_F5HuuTQ_y-i6CNLucTa_OlPZ4wEA.png?1742996694)
-
-**2단계:** 필수 정보를 입력하세요:
-
-- **Link Icon(링크 아이콘):** 클릭하여 아이콘을 선택하세요.
-
-- **Link Title(링크 제목):** 메뉴 링크의 이름을 입력하세요.
-
-- **URL:** 연결할 외부 URL을 입력하세요. 여기에 로케이션 값과 커스텀 값을 사용할 수 있습니다. (이는 계정 내 로케이션 사이드바에서만 작동합니다.)
-예시: [http://url.com/{{location.id}}?value={{custom_values.my_value}}](http://url.com/{{location.id}}?value={{custom_values.my_value}})
-
-![링크 정보 입력하기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044019159/original/ycCTWqoFnkAWHtYuDPTDZurOg3VbC-e91Q.gif?1742997208)
-
-**중요:** 링크 URL은 메뉴 항목이 사용자를 안내할 웹 주소입니다. http:// 또는 https://로 시작해야 합니다. 임베디드 페이지(iFrame) 옵션을 사용하는 경우 대상 페이지가 임베딩을 허용하는지 확인하세요.
-
-**3단계:** 열기 방식을 선택하세요:
-
-- **임베디드 페이지(iFrame)에서 열기:** Hyperclass 대시보드 내에서 직접 링크된 콘텐츠를 표시하여 사용자를 동일한 인터페이스에 유지합니다. 임베딩을 지원하는 도구에 이상적입니다.
-
-- **새 브라우저 탭에서 열기:** 별도의 탭에서 링크를 열어 사용자가 현재 Hyperclass 뷰를 떠나지 않고 리소스에 접근할 수 있습니다.
-
-- **현재 탭에서 열기:** 현재 Hyperclass 탭을 링크된 URL로 리디렉션합니다. 사용자가 플랫폼 외부에서 작업을 완료해야 하는 경우에 가장 적합합니다.
-
-![열기 방식 선택하기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044020106/original/B5o7eD0xRsZ4r4QyTg4PtYLt1JrdvO3JKQ.png?1742997794)
-
-**4단계:** **사이드바 기본 설정(Sidebar Preference)**과 **역할 기반 가시성(Role-Based Visibility)** 설정
-
-사이드바 기본 설정과 역할 기반 가시성을 설정하여 링크가 어디에 나타나고 누가 접근할 수 있는지 정의하세요. 사이드바 기본 설정을 통해 링크가 에이전시 사이드바, 하위 계정 사이드바, 또는 둘 다에 나타날지 선택할 수 있습니다:
-
-- **에이전시 사이드바**를 선택하면 에이전시 레벨 사용자에게 링크가 표시됩니다.
-
-- **하위 계정의 사이드바**를 선택하면 특정 하위 계정에만 링크를 할당할 수 있습니다. 선택하면 어떤 하위 계정에 커스텀 메뉴 링크를 표시할지 선택할 수 있습니다.
-
-- 역할 기반 가시성을 통해 어떤 유형의 사용자가 커스텀 메뉴 링크를 볼 수 있는지 제어할 수 있습니다:
-  - **All(전체):** 모든 역할에게 링크가 표시됩니다.
-  - **User(사용자):** 사용자 역할을 가진 사용자만 링크를 볼 수 있습니다.
-  - **Admin(관리자):** 관리자만 링크에 접근할 수 있습니다.
-
-![사이드바 및 역할 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044107677/original/YxznXAYax4VlyHyQIAKz2ixH-NGfXouCdw.jpeg?1743087683)
+- 자주 쓰는 외부 도구에 한곳에서 접근할 수 있어서, 여러 플랫폼을 오가는 시간이 줄어요.
+- 하이퍼클래스 화면을 벗어나지 않고도 필요한 자료를 빠르게 열 수 있어요.
+- 도움말 문서, 지식 베이스, 고객 지원 포털로 가는 링크를 직접 제공할 수 있어요.
+- 외부 대시보드, 제휴 포털, 리포팅 도구를 플랫폼 안에 바로 삽입할 수 있어요.
 
 ---
 
-## 커스텀 메뉴 링크에서 사용자 컨텍스트 가져오기
+## 누가 사용자 정의 메뉴 링크를 관리할 수 있나요?
 
-커스텀 메뉴 링크를 생성할 때 다음과 같이 URL을 설정할 수 있습니다:
+사용자 정의 메뉴 링크 권한이 있는 에이전시 사용자만 관리할 수 있어요.
 
+권한을 확인하거나 바꾸려면 **설정 > 팀**으로 이동해 팀원을 선택하고, **Manage Custom Menu Links**(사용자 정의 메뉴 링크 관리)가 켜져 있는지 확인하세요.
+
+![사용자 정의 메뉴 링크 관리 권한 확인 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044017895/original/_-z3BNFCNRSL3Q3xwHahQZSTqFp_3bOMrA.gif?1742996532)
+
+---
+
+## 사용자 정의 메뉴 링크 만들고 관리하기
+
+에이전시 사용자와 서브 계정 사용자의 사이드바에 보이는 메뉴 링크를 추가하고 설정하는 방법이에요. 외부 도구와 자료를 하이퍼클래스 작업 공간에 바로 연결할 수 있어요.
+
+다음 단계를 따라 새 사용자 정의 메뉴 링크를 만드세요.
+
+1. 왼쪽 메뉴에서 **설정 > 사용자 정의 메뉴 링크**로 이동한 뒤, 오른쪽 위의 **새로 만들기** 버튼을 클릭하세요.
+
+   ![사용자 정의 메뉴 링크 화면의 새로 만들기 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044018239/original/KM6Ct_F5HuuTQ_y-i6CNLucTa_OlPZ4wEA.png?1742996694)
+
+2. 필요한 정보를 입력하세요.
+
+   - **Link Icon**(링크 아이콘): 클릭해서 아이콘을 선택해요.
+   - **Link Title**(링크 제목): 메뉴에 표시할 이름을 입력해요.
+   - **URL**: 연결할 외부 URL을 입력해요. URL에는 location 값과 **커스텀 값**을 넣을 수 있어요. 이 값은 계정 안에서 서브 계정 사이드바에 있을 때만 작동해요.
+
+     예시: `http://url.com/{{location.id}}?value={{custom_values.my_value}}`
+
+     {% hint style="warning" %}
+     사용자 정의 메뉴 링크 URL에 넣은 값은 이동하는 웹사이트로 전달돼요. 이 값은 브라우저 방문 기록, 서버 로그, 분석 도구 등 URL을 처리하는 여러 시스템에 노출될 수 있어요. 이동하는 사이트에 꼭 필요한 사용자 값, location 값, 커스텀 값만 넣고, 민감한 정보나 인증 정보는 URL 파라미터에 넣지 마세요.
+     {% endhint %}
+
+     ![URL에 값을 넣는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044019159/original/ycCTWqoFnkAWHtYuDPTDZurOg3VbC-e91Q.gif?1742997208)
+
+     {% hint style="warning" %}
+     링크 URL은 메뉴 항목을 눌렀을 때 사용자가 이동하는 웹 주소예요. 반드시 http:// 또는 https://로 시작해야 해요. **Open in an Embedded Page (iFrame)** 방식을 쓴다면 연결할 페이지가 삽입을 허용하는지 확인하세요.
+     {% endhint %}
+
+3. 링크를 여는 방식을 선택하세요.
+
+   - **Open in an Embedded Page (iFrame)**(임베드 페이지에서 열기): 링크 내용을 하이퍼클래스 대시보드 안에 보여 줘요. 사용자가 같은 화면을 벗어나지 않아요. 삽입을 지원하는 도구에 알맞아요.
+   - **Open in a New Browser Tab**(새 브라우저 탭에서 열기): 링크를 별도 탭에서 열어요. 사용자는 보고 있던 하이퍼클래스 화면을 유지한 채 자료를 볼 수 있어요.
+   - **Open in the Current Tab**(현재 탭에서 열기): 지금 하이퍼클래스가 열려 있는 탭을 링크 URL로 이동시켜요. 사용자가 플랫폼 밖에서 작업을 마쳐야 할 때 쓰면 좋아요.
+
+   ![링크 여는 방식 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044020106/original/B5o7eD0xRsZ4r4QyTg4PtYLt1JrdvO3JKQ.png?1742997794)
+
+   {% hint style="info" %}
+   연결할 웹사이트가 iframe 삽입을 허용해야 해요. 웹사이트가 삽입을 막고 있다면 **Open in a New Browser Tab** 또는 **Open in the Current Tab**을 사용하세요.
+   {% endhint %}
+
+4. **Sidebar Preference**(사이드바 설정)와 **Role-Based Visibility**(역할별 공개 범위)를 설정하세요. 링크를 어느 사이드바에 보여 줄지, 누가 볼 수 있게 할지 정하는 설정이에요.
+
+   **Sidebar Preference**에서는 링크를 에이전시 사이드바, 서브 계정 사이드바, 또는 둘 다에 표시할지 고를 수 있어요.
+
+   - **Agency sidebar**(에이전시 사이드바)를 선택하면 에이전시 수준의 사용자에게 링크가 보여요.
+   - **Sub-Account's sidebar**(서브 계정 사이드바)를 선택하면 링크를 보여 줄 서브 계정을 직접 고를 수 있어요. 선택한 뒤 링크를 표시할 서브 계정을 지정하세요.
+   - **Role-Based Visibility**에서는 어떤 유형의 사용자가 링크를 볼 수 있는지 정해요.
+     - **전체**: 모든 역할에게 링크가 보여요.
+     - **사용자**: 사용자 역할을 가진 사용자에게만 링크가 보여요.
+     - **관리자**: 관리자에게만 링크가 보여요.
+
+   ![사이드바 설정과 역할별 공개 범위 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044107677/original/YxznXAYax4VlyHyQIAKz2ixH-NGfXouCdw.jpeg?1743087683)
+
+---
+
+## 사용자 정보를 링크로 전달하기
+
+사용자 정의 메뉴 링크를 만들 때 URL을 아래처럼 설정할 수 있어요.
+
+```
 https://test.com/test?fname={{user.first_name}}&lname={{user.last_name}}&location_id={{location.id}}&custom_value_example={{custom_values.example_field_name}}
+```
 
-이렇게 하면 사용자가 링크를 클릭할 때 Hyperclass가 사용자의 컨텍스트를 기반으로 매개변수 변수를 실제 값으로 동적으로 대체합니다. 이 매개변수들을 URL에서 추출하여 사용자의 컨텍스트를 가져올 수 있습니다.
+이렇게 하면 사용자가 링크를 클릭할 때 하이퍼클래스가 **URL 파라미터** 변수를 해당 사용자의 실제 값으로 자동으로 바꿔 줘요. 이동한 사이트에서 URL의 파라미터를 읽으면 사용자 정보를 확인할 수 있어요.
 
-**CML에서 지원되는 매개변수:**
-
-- user.first_name
-- user.last_name
-- user.name
-- user.phone
-- user.email
-- location.id
-- location.name
-- location.city
-- location.state
-- location.country
-- location.address
-- location.email
-- location.phone
-- location.postal_code
-- location.full_address
-- location.website
-- location.logo_url
-- location_owner.first_name
-- location_owner.last_name
-- location_owner.email
-- custom_values.{CUSTOM_VALUE_NAME}
-
-## 커스텀 메뉴 링크 편집 또는 삭제 방법
-
-에이전시가 발전함에 따라 빠른 업데이트를 하거나 오래된 커스텀 메뉴 링크를 제거하세요. 이 섹션에서는 기존 링크를 편집하거나 삭제하여 사이드바 네비게이션을 깔끔하고 관련성 있게 유지하는 방법을 보여줍니다.
-
-#### 기존 커스텀 메뉴 링크를 수정하거나 제거하려면:
-
-`Settings(설정) > Custom Menu Links(커스텀 메뉴 링크)`로 이동하여 원하는 링크를 찾고 **Edit(편집)** (연필 아이콘) 또는 **Delete(삭제)** (휴지통 아이콘) 버튼을 클릭하세요. 필요한 업데이트를 하거나 삭제를 확인하세요. 이러한 변경사항에는 기존 링크의 이름과 아이콘 업데이트가 포함됩니다. 변경사항은 모든 사용자의 네비게이션 메뉴에 즉시 반영됩니다.
-
-![메뉴 링크 편집 및 삭제](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044108450/original/9Ra4Y9NK5t2A28FvNBd_hkzp8jz_LBg9DQ.png?1743088097)
-
-#### **커스텀 메뉴 링크 순서 변경 방법**
-
-우측 상단의 **Rearrange Custom Menu Links(커스텀 메뉴 링크 재정렬)** 버튼을 클릭하고 메뉴 링크를 원하는 순서로 드래그 앤 드롭하세요. 마지막으로 **Save(저장)**를 클릭하여 변경사항을 확정하세요.
-
-![메뉴 링크 순서 변경](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044108908/original/eraT6jXtIGI2hNT_SgfDw8O0EBgA-_m4IQ.gif?1743088349)
+사용자 정의 메뉴 링크에서 지원하는 파라미터는 다음과 같아요.
+`user.first_name``user.last_name``user.name``user.phone``user.email``location.id``location.name``location.city``location.state``location.country``location.address``location.email``location.phone``location.postal_code``location.full_address``location.website``location.logo_url``location_owner.first_name``location_owner.last_name``location_owner.email``custom_values.{CUSTOM_VALUE_NAME}`
 
 ---
 
-## 커스텀 메뉴 링크 활용 모범 사례
+## 사용자 정의 메뉴 링크 편집하고 삭제하기
 
-커스텀 메뉴 링크의 효과를 극대화하려면 다음을 고려하세요:
+에이전시 상황이 바뀌면 링크를 빠르게 수정하거나 오래된 링크를 지울 수 있어요. 기존 링크를 편집하거나 삭제해서 사이드바 메뉴를 깔끔하게 관리해 보세요.
 
-- **정리된 상태 유지:** 네비게이션 메뉴를 어수선하게 만들 수 있는 너무 많은 링크 추가를 피하세요.
+### 기존 링크를 수정하거나 삭제하려면
 
-- **명확한 제목과 아이콘 사용:** 메뉴 항목이 사용자에게 쉽게 인식되고 직관적인지 확인하세요.
+- **설정 > 사용자 정의 메뉴 링크**로 이동해 원하는 링크를 찾은 뒤, **편집**(연필 아이콘) 또는 **삭제**(휴지통 아이콘) 버튼을 클릭하세요. 필요한 내용을 수정하거나 삭제를 확인하면 돼요. 기존 링크의 이름과 아이콘도 바꿀 수 있어요. 변경 내용은 모든 사용자의 탐색 메뉴에 바로 반영돼요.
 
-- **iFrame 호환성 테스트:** 일부 외부 웹사이트는 iFrame에 임베딩되는 것을 제한할 수 있습니다.
+  ![링크 편집과 삭제 버튼 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044108450/original/9Ra4Y9NK5t2A28FvNBd_hkzp8jz_LBg9DQ.png?1743088097)
 
-- **정기적인 링크 검토 및 업데이트:** 모든 링크가 시간이 지나도 관련성 있고 기능적인 상태를 유지하는지 확인하세요.
+### 링크 순서 바꾸기
+
+- 오른쪽 위의 **Rearrange Custom Menu Links**(사용자 정의 메뉴 링크 순서 변경) 버튼을 클릭하고, 링크를 드래그 앤 드롭해서 원하는 순서로 옮기세요. 마지막으로 **저장**을 클릭하면 변경이 완료돼요.
+
+  ![링크 순서를 드래그해서 바꾸는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044108908/original/eraT6jXtIGI2hNT_SgfDw8O0EBgA-_m4IQ.gif?1743088349)
+
+---
+
+## 사용자 정의 메뉴 링크 활용 팁
+
+사용자 정의 메뉴 링크를 효과적으로 쓰려면 다음을 참고하세요.
+
+- 정리해서 쓰세요: 링크를 너무 많이 추가하면 탐색 메뉴가 복잡해질 수 있어요.
+- 제목과 아이콘을 분명하게 정하세요: 사용자가 메뉴 항목을 쉽게 알아보고 직관적으로 이해할 수 있어야 해요.
+- iFrame 호환성을 테스트하세요: 일부 외부 웹사이트는 iFrame 삽입을 막아 두었을 수 있어요.
+- 링크를 주기적으로 점검하고 업데이트하세요: 모든 링크가 계속 유효하고 정상적으로 작동하는지 확인하세요.
 
 ---
 
 ## 자주 묻는 질문
 
-**Q: 하위 계정이 자체 커스텀 메뉴 링크를 생성할 수 있나요?**
-아니요, 필요한 권한을 가진 에이전시 사용자만이 커스텀 메뉴 링크를 관리할 수 있습니다.
+### 서브 계정에서도 사용자 정의 메뉴 링크를 직접 만들 수 있나요?
+아니요. 필요한 권한이 있는 에이전시 사용자만 사용자 정의 메뉴 링크를 관리할 수 있어요.
 
-**Q: iFrame 옵션을 사용하여 모든 웹사이트를 임베딩할 수 있나요?**
-모든 웹사이트가 iFrame을 통한 임베딩을 허용하지는 않습니다. 사용자에게 배포하기 전에 링크를 테스트하세요.
+### iFrame 옵션으로 어떤 웹사이트든 삽입할 수 있나요?
+모든 웹사이트가 iFrame 삽입을 허용하지는 않아요. 사용자에게 적용하기 전에 링크를 먼저 테스트해 보세요.
 
-**Q: 커스텀 메뉴 링크를 특정 사용자나 역할로 제한할 수 있나요?**
-네, 팀 설정에서 사용자 역할과 권한을 기반으로 가시성을 제어할 수 있습니다.
+### 사용자 정의 메뉴 링크를 특정 사용자나 역할에게만 보이게 할 수 있나요?
+네. 지원하는 사용자 역할로 공개 범위를 정하고, 링크를 표시할 서브 계정도 선택할 수 있어요.
 
-**Q: 커스텀 메뉴 링크 순서를 어떻게 바꾸나요?**
-**Rearrange Custom Menu Links(커스텀 메뉴 링크 재정렬)**를 클릭하고, 링크를 드래그 앤 드롭하여 새로운 순서를 저장하세요.
+### 사용자 정의 메뉴 링크 순서를 바꾸려면 어떻게 하나요?
+**Rearrange Custom Menu Links**를 클릭하고, 링크를 드래그 앤 드롭한 뒤 새 순서를 저장하세요.
 
 ---
-*원문 최종 수정: Mon, 11 Aug, 2025 at 3:30 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+
+## 관련 문서
+
+- [에이전시 | 사용자 역할 및 권한 관리](사용자-설정/agency-managing-user-roles-permissions.md)
+- [SaaS 플랜에서 사용자 정의 메뉴 링크 사용하기](../16-SaaS-설정/how-to-use-custom-menu-links-in-saas-plans.md)

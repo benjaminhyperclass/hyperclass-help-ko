@@ -1,93 +1,107 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 09-이메일 > LC-이메일
+원문: /support/solutions/articles/155000004151-microsoft-smart-network-data-services-snds-
+번역일: 2026-11-06
+카테고리: 09-이메일
 ---
 
-# Microsoft SNDS(Smart Network Data Services)
+# Microsoft SNDS로 IP 상태 모니터링하기
 
-저희로부터 IP 구독을 구매하신 고객분들께 새로운 기능을 제공하게 되어 기쁩니다. Microsoft SNDS(Smart Network Data Services) 연동을 통한 **IP 상태 모니터링** 기능입니다. 이 기능으로 IP 주소의 전달성 상태를 모니터링하여 잠재적인 이메일 전달성 문제를 미리 예방할 수 있습니다.
+전용 IP 구독을 구매하셨다면 Microsoft SNDS(Smart Network Data Services) 연동으로 **IP Status Monitoring**(IP 상태 모니터링)을 쓸 수 있어요. Outlook과 Hotmail에서 내 IP의 이메일 전달 상태를 확인하고, 발송 평판이 나빠지기 전에 문제를 찾아낼 수 있어요.
 
-**목차**
+## Microsoft SNDS란?
 
-- [Microsoft SNDS란?](#microsoft-snds란)
-- [IP 상태 기능 사용법](#ip-상태-기능-사용법)
-- [주요 지표 해석하기](#주요-지표-해석하기)
-- [IP 차단 또는 높은 스팸 비율 대응법](#ip-차단-또는-높은-스팸-비율-대응법)
+Microsoft SNDS는 Outlook, Hotmail 같은 Microsoft 서비스에서 내 IP의 이메일 활동을 보여 주는 도구예요. IP 상태, 스팸 신고, 필터 결과, 차단 여부를 알려 주기 때문에 이메일이 스팸함이 아닌 받은편지함에 도착하도록 관리하는 데 도움이 돼요.
 
-### **Microsoft SNDS란?**
+## IP 상태 기능 사용하기
 
-Microsoft SNDS는 Outlook, Hotmail 등 Microsoft 플랫폼에서 귀하의 IP 이메일 활동에 대한 인사이트를 제공하는 도구입니다. IP 상태, 스팸 신고, 필터 결과, 차단 상태에 대한 핵심 정보를 제공하여 이메일이 의도한 수신자에게 확실히 도달할 수 있도록 도와줍니다.
+1. **IP 상태 대시보드 열기**
 
-### **IP 상태 기능 사용법**
+   **설정 > 이메일 서비스 > Postmaster Tools(포스트마스터 도구) > Microsoft SNDS**로 이동하세요.
 
-- **IP 상태 대시보드 접속하기**:
-`Settings(설정) → Email Services(이메일 서비스) → Postmaster Tools(포스트마스터 도구) → Microsoft SNDS`로 이동하세요.
+   ![Postmaster Tools에서 Microsoft SNDS로 이동하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035109257/original/RkEAgvx1tE7wc_8z2jcSbEll7Q5tyNZNBw.png?1729520424)
 
-![Microsoft SNDS 접속 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035109257/original/RkEAgvx1tE7wc_8z2jcSbEll7Q5tyNZNBw.png?1729520424)
+2. **IP 주소 선택하기**
 
-- **IP 주소 선택하기**:
-다음과 같은 지표들이 표시된 IP 목록을 보실 수 있습니다:
-  - **Filter Results(필터 결과)**: 스팸으로 분류된 메시지 비율
-  - **Blocked Status(차단 상태)**: IP가 Microsoft 플랫폼에서 차단되었는지 여부
-  - **Trap Hits(트랩 히트)**: 스팸 트랩에 걸린 메시지 수
-  - **Complaint Rate(신고율)**: 사용자가 이메일을 스팸으로 신고한 비율
+   내 IP 목록과 함께 다음 지표가 표시돼요.
 
-- **IP 상태 상세 보기**:
-"View Details"를 클릭하면 선택한 IP에 대한 자세한 정보를 확인할 수 있습니다:
-  - **Activity Period(활동 기간)**: 이메일 활동 시간대
-  - **RCPT Commands와 DATA Commands**: 처리된 메시지 볼륨
-  - **Spam and Complaint Rates(스팸 및 신고율)**: IP 평판 이해에 도움
+   - **Filter Results**(필터 결과): 스팸으로 분류된 메시지의 비율이에요.
+   - **Blocked Status**(차단 상태): Microsoft 서비스에서 해당 IP가 차단되었는지 보여 줘요.
+   - **Trap Hits**(스팸 트랩 적중): 스팸 트랩에 걸린 메시지 수예요.
+   - **Complaint Rate**(신고율): 수신자 중 내 이메일을 스팸으로 신고한 비율이에요.
 
-- **CSV 보고서 다운로드**:
-고급 분석을 위해 **Download CSV** 버튼을 클릭하여 상세 활동 데이터를 내보낼 수 있습니다.
+3. **IP 상태 개요 확인하기**
 
-### 주요 지표 해석하기
+   선택한 IP의 자세한 내용을 보려면 **상세 보기**를 클릭하세요. 다음 항목을 확인할 수 있어요.
 
-![SNDS 상세 지표 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035109530/original/zyeGdoevGu4d1ngOfTqb0vFFXK_V9gaHxQ.png?1729520626)
+   - **Activity Period**(활동 기간): 이메일 활동이 있었던 기간이에요.
+   - **RCPT Commands**(RCPT 명령)와 **DATA Commands**(DATA 명령): 처리된 메시지의 양이에요.
+   - **Spam and Complaint Rates**(스팸률 및 신고율): IP의 평판을 파악하는 데 도움이 돼요.
 
-- **Filter Results(필터 결과)**
-  - **스팸 < 10%**: 이메일이 대부분 스팸 필터를 통과하고 있습니다. 양호한 평판의 좋은 지표입니다.
-  - **스팸 10% 이상**: 일부 이메일이 스팸으로 분류되고 있습니다. 전달성 문제를 피하기 위해 발송 관행, 콘텐츠, 목록을 점검하세요.
+4. **CSV 리포트 다운로드하기**
 
-- **Blocked Status(차단 상태)**
-  - **No**: IP가 차단되지 않았습니다. 제한 없이 이메일을 발송할 수 있습니다.
-  - **Yes**: 스팸 행위나 정책 위반으로 인해 IP가 차단되었습니다. 근본 원인을 조사하고 문제를 해결하기 위한 즉각적인 조치가 필요합니다.
+   더 자세히 분석하려면 **CSV 다운로드**를 클릭해 상세 활동 내역을 내보내세요.
 
-- **Trap Hits(트랩 히트)**
-  - **0 트랩 히트**: IP가 스팸 트랩과 상호작용하지 않고 있습니다. 깨끗한 발송자 평판을 유지하는 데 이상적입니다.
-  - **1개 이상의 트랩 히트**: 스팸 트랩이 귀하의 이메일을 받고 있습니다. 목록에 유효하지 않거나 의심스러운 주소가 포함되어 있을 가능성을 시사합니다. 평판 손상을 방지하기 위해 목록을 정리하세요.
+## 주요 지표 해석하기
 
-- **Complaint Rate(신고율)**
-  - **<0.1%**: 0.1% 미만의 신고율은 우수하며 수신자들이 일반적으로 귀하의 이메일에 만족하고 있음을 보여줍니다.
-  - **>0.1%**: 높은 신고율은 수신자들이 귀하의 이메일을 스팸으로 표시하고 있음을 나타냅니다. 이메일 내용을 검토하고 수신자들이 옵트인했는지 확인하세요.
+![Microsoft SNDS 주요 지표 개요 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035109530/original/zyeGdoevGu4d1ngOfTqb0vFFXK_V9gaHxQ.png?1729520626)
 
-- **RCPT Commands(RCPT 명령)**
-이는 귀하의 이메일을 받은 총 수신자 수를 나타냅니다. 높은 값은 많은 이메일 발송 활동을 의미합니다. 이메일 볼륨이 예상 캠페인 규모와 일치하는지 모니터링하세요.
+| 지표 | 정상 범위 | 의미 |
+| --- | --- | --- |
+| **Filter Results** | 스팸 10% 미만 | 10% 이상이면 일부 이메일이 스팸으로 분류되고 있다는 뜻이에요. 발송 방식, 콘텐츠, 리스트를 점검하세요. |
+| **Blocked Status** | 아니요 | "예"로 표시되면 스팸 의심 행위나 정책 위반으로 IP가 차단된 상태예요. 즉시 조치가 필요해요. |
+| **Trap Hits** | 0 | 1건 이상이면 리스트에 유효하지 않거나 의심스러운 주소가 있다는 뜻이에요. 해당 주소를 정리하세요. |
+| **Complaint Rate** | 0.1% 미만 | 0.1%를 넘으면 수신자들이 내 이메일을 스팸으로 신고하고 있다는 뜻이에요. 콘텐츠를 점검하고 수신 동의를 받았는지 확인하세요. |
+| **RCPT Commands** | 발송량과 일치 | 이메일을 받은 전체 수신자 수예요. 예상한 캠페인 규모와 맞는지 확인하세요. |
+| **DATA Commands** | 발송량과 일치 | 처리된 전체 데이터 전송량으로, 전송된 메시지 수를 반영해요. 계획한 발송량과 비슷하게 유지해야 필터에 걸리지 않아요. |
+| **Trap Message Period**(스팸 트랩 감지 기간) | 0일 | 내 이메일이 스팸 트랩에 감지된 일수예요. 0이 아니면 즉시 원인을 확인해야 해요. |
+| **Red Days (Filter Result Issues)**(레드 데이, 필터 결과 문제) | 0 | 1일 이상이면 스팸률이 높거나 전달에 문제가 있었던 날이 있다는 뜻이에요. 해당 기간의 발송 패턴을 살펴보세요. |
 
-- **DATA Commands(DATA 명령)**
-이 지표는 처리된 총 데이터 페이로드 수를 추적합니다. IP 주소에서 전송된 이메일 메시지를 반영합니다. 스팸 필터 작동을 피하기 위해 볼륨이 계획된 이메일 캠페인과 일치하는지 확인하세요.
+{% hint style="info" %}
+전달 문제가 생긴 뒤에만 보지 말고 이 지표를 정기적으로 확인하세요. 신고율이 오르거나 레드 데이가 생긴 것을 일찍 발견하면 받은편지함 도착률에 영향을 주기 전에 해결하기 훨씬 쉬워요.
+{% endhint %}
 
-- **Trap Message Period(트랩 메시지 기간)**
-스팸 트랩에 의해 이메일이 감지된 일수를 보여줍니다. 이상적으로는 **0**일이어야 합니다. 0이 아닌 값은 즉각적인 조사가 필요합니다.
+## IP가 차단되었거나 스팸률이 높을 때 대처하기
 
-- **Red Days(레드 데이/필터 결과 문제)**
-  - **0 레드 데이**: 이메일 필터링 지표가 양호한 상태이며 이메일이 스팸으로 분류되지 않고 있습니다.
-  - **1일 이상의 레드 데이**: 일부 날짜에 높은 스팸 비율이나 전달성 문제가 있었음을 나타냅니다. 해당 기간의 발송 패턴을 조사하고 적절히 조정하세요.
+IP가 차단되었거나 스팸률이 높게 나오면 다음 순서로 대처하세요.
 
-### **IP 차단 또는 높은 스팸 비율 대응법**
+1. **지표 검토하기**
 
-IP가 차단되었거나 높은 스팸 비율을 보인다면:
+   최근 활동을 분석하세요. 특히 스팸 트랩 적중과 신고 내역을 살펴보세요.
 
-- **지표 검토하기**
-특히 트랩 히트와 신고와 관련된 최근 활동을 분석하세요.
+2. **메일링 리스트 정리하기**
 
-- **메일링 목록 정리하기**
-유효하지 않거나 비활성 주소를 제거하고 모든 수신자가 옵트인했는지 확인하세요.
+   유효하지 않거나 활동이 없는 주소를 삭제하고, 모든 수신자가 수신에 동의했는지 확인하세요.
 
-- **IP 삭제 요청하기**
-IP가 차단된 경우, [Microsoft Outlook 지원 페이지](https://olcsupport.office.com/)를 사용하여 삭제 요청을 제출하세요.
+3. **IP 차단 해제 요청하기**
 
----
-*원문 최종 수정: Sun, 10 Nov, 2024 at 11:31 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+   IP가 차단된 상태라면 [Microsoft Outlook 지원 페이지](https://olcsupport.office.com/)에서 차단 해제를 요청하세요.
+
+{% hint style="warning" %}
+차단된 IP와 0이 아닌 **Trap Message Period**는 즉시 조치가 필요해요. 발송 문제를 오래 방치할수록 Microsoft에서 평판을 회복하기가 더 어려워져요.
+{% endhint %}
+
+## 자주 묻는 질문
+
+### IP 상태 모니터링은 IP 구독에 포함되어 있나요?
+
+네. IP 구독을 구매하셨다면 **설정 > 이메일 서비스 > Postmaster Tools**에서 추가 비용 없이 Microsoft SNDS 기반 IP 상태 모니터링을 쓸 수 있어요.
+
+### 내 IP의 데이터가 아직 보이지 않아요.
+
+Microsoft SNDS는 최근에 Microsoft 서비스로 발송한 이력이 있는 IP만 보고해요. IP가 새로 만들어졌거나 Outlook, Hotmail 수신자에게 보낸 양이 적다면 데이터가 표시되기까지 며칠 걸릴 수 있어요.
+
+### Gmail이나 Yahoo도 모니터링할 수 있나요?
+
+아니요. Microsoft SNDS는 Outlook, Hotmail 같은 Microsoft 소유 메일 서비스의 활동만 보고해요. 다른 메일 제공업체는 각자 포스트마스터 도구를 따로 제공해요.
+
+### IP 상태 대시보드는 얼마나 자주 업데이트되나요?
+
+Microsoft SNDS 데이터는 보통 하루에 한 번 갱신돼요. 특히 대량 캠페인을 보낸 뒤에는 대시보드를 자주 확인해서 신고율 상승 같은 문제가 커지기 전에 발견하세요.
+
+### 스팸 트랩 적중이 보이면 가장 먼저 무엇을 해야 하나요?
+
+먼저 해당 주소가 어떻게 리스트에 들어왔는지 확인하세요. 그 주소와 함께 반응이 없거나 확인되지 않은 다른 연락처도 삭제하세요. 그리고 다음 발송 전에 남은 수신자가 모두 제대로 수신에 동의했는지 확인하세요.
+
+### 차단 해제를 요청하면 얼마나 걸리나요?
+
+Microsoft가 요청을 건별로 검토하기 때문에 소요 시간은 경우마다 달라요. 그동안에도 리스트 정리와 지표 모니터링을 계속하세요. 차단이 풀렸을 때 IP가 좋은 상태일 수 있어요.

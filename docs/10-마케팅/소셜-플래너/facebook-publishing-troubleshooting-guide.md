@@ -1,158 +1,137 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 10-마케팅 > 소셜-플래너
+원문: /support/solutions/articles/48001210328-facebook-publishing-troubleshooting-guide
+번역일: 2026-11-06
+카테고리: 10-마케팅
 ---
 
-# 페이스북 게시 문제해결 가이드
+# Facebook 게시 문제 해결 가이드
 
-이 가이드는 페이스북 페이지 관련 문제를 해결하는 데 도움을 드리기 위해 작성되었습니다. 문제가 발생하면 아래 단계를 따라 문제가 해결되는지 확인해 보세요. 해결되지 않는다면 어떤 문제가 발생했는지 알려주시면 해결책을 찾아드리겠습니다!
+Facebook 페이지 연결이나 게시에 문제가 있을 때 확인할 내용을 정리했어요. 아래 단계를 차례로 따라 해 보세요. 그래도 해결되지 않으면 어떤 문제가 있었는지 하이퍼클래스 고객지원에 알려 주세요.
 
-이 글에서 다루는 내용:
+## Facebook 페이지가 목록에 보이지 않을 때
 
-[목록에 페이스북 페이지가 표시되지 않음](#목록에-페이스북-페이지가-표시되지-않음)
+Facebook 계정을 연결할 때는 모든 권한을 허용해야 해요. 목록에 페이지가 보이지 않는 주된 이유는 다음 두 가지예요.
 
-[콘텐츠 권한이 없음, 비즈니스 매니저를 통해 권한을 가지고 있음](#콘텐츠-권한이-없음-비즈니스-매니저를-통해-권한을-가지고-있음)
+1. **콘텐츠 권한이 없는데, Business Manager를 통해 권한이 있어요.** 연결하는 사용자에게 Facebook 페이지의 관리자 권한이 있어야 해요. Business Manager를 통한 권한은 권장하지 않아요. **소셜 플래너**(Social Planner)는 연결할 때 콘텐츠 권한과 인사이트 권한을 요구해요.
+2. **내가 관리자인데 내 페이지가 보이지 않아요.** 처음 연동한 사용자가 모든 Facebook 페이지에 권한을 허용하지 않은 경우예요. 나중에 다른 페이지를 추가하려고 **소셜 플래너 > 설정 > 연동**에서 인증해도 그 페이지가 보이지 않아요.
 
-[내 페이지가 없음, 나는 관리자임](#내-페이지가-없음-나는-관리자임)
+### 콘텐츠 권한이 없는데 Business Manager를 통해 권한이 있어요
 
-[페이스북 게시물 발행 실패](#페이스북-게시물-발행-실패)
+#### 1. Facebook으로 이동하기
 
-[1. 남용/신고된 콘텐츠/링크가 커뮤니티 기준에 위배됨:](#1-남용신고된-콘텐츠링크가-커뮤니티-기준에-위배됨)
+1. 해당 페이지의 Facebook 계정으로 로그인하세요.
 
-[2. 액세스 토큰 검증 오류:](#2-액세스-토큰-검증-오류)
+   ![Facebook 로그인 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155022952297/original/injToRyAM9GS33jhpYo-LcOoXEULA6l4SA.png?1710500474)
 
-[3. 2단계 인증:](#3-2단계-인증)
+2. 프로필 아이콘을 누르고 **Facebook Page**(Facebook 페이지)를 클릭하세요.
 
-[4. 'managepermissions' 권한이 부여되어야 함:](#4-managepermissions-권한이-부여되어야-함)
+   ![프로필 아이콘에서 Facebook 페이지 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155022952395/original/MD8evuLBN2qAiugnUuIvjWyp0T6ZpZuSEQ.png?1710500533)
 
-[5. 이미지 누락 또는 잘못됨:](#5-이미지-누락-또는-잘못됨)
+3. Facebook 페이지로 이동해서 **Manage**(관리)를 클릭하세요.
 
-[6. 알 수 없는 오류 발생:](#6-알-수-없는-오류-발생)
+   ![Facebook 페이지의 관리 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155022952413/original/gywp2wbkyYigaaLTn2ENYrfPx9FCAi_Qgw.png?1710500561)
 
-[7. 제공한 URL이 유효하지 않거나 이 링크를 게시할 수 없음:](#7-제공한-url이-유효하지-않거나-이-링크를-게시할-수-없음)
+4. 왼쪽 패널에서 **Page Access**(페이지 접근 권한)를 찾으세요.
 
-[8. 소셜 플래너에서 페이지/그룹을 다시 연결할 수 없음](#8-소셜-플래너에서-페이지그룹을-다시-연결할-수-없음)
+   ![왼쪽 패널의 페이지 접근 권한 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155022952428/original/ACL00D0mFYfN0MrtZK71Tpih8nCtPBu-dg.png?1710500574)
 
-# 목록에 페이스북 페이지가 표시되지 않음
+5. Hightest > **페이지 이름**처럼 목록에 본인이 있는지 확인하세요. 소셜 플래너에서 연결하고 게시하려는 사람은 페이지 소유자나 관리자에게 자기를 추가해 달라고 요청해야 해요.
 
-모든 권한을 포함하여 페이스북 계정을 연결하는 것이 중요합니다. 주요 원인은 다음과 같습니다:
+   ![페이지 접근 권한 목록 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155022952443/original/pDauRQa4S6iM8iZngCYY0L40NZq_gA7-xw.png?1710500594)
 
-1. 콘텐츠 권한이 없음, 비즈니스 매니저를 통해 권한을 가지고 있음 - 사용자는 페이스북 페이지에 대한 관리자 권한이 있어야 하며, 비즈니스 매니저는 권장하지 않습니다. 소셜 플래너(Social Planner)는 연결 시 콘텐츠 및 인사이트 권한이 필요합니다.
+페이지 소유자가 **People with Facebook access**(Facebook 액세스 권한이 있는 사람) 목록에 없다면, 다음 방법을 시도해 보세요.
 
-2. 내 페이지가 없음, 나는 관리자임 - 초기 연동을 연결한 사용자가 모든 페이스북 페이지에 대한 권한을 부여하지 않았습니다. 나중에 다른 페이지를 추가하려고 할 때, 소셜 플래너 > 설정(Settings) > 연동(Integration)으로 이동하여 인증을 추가하는 동안 다른 페이지를 볼 수 없습니다.
+1. 다른 사람을 전체 액세스 권한이 있는 관리자로 초대하세요.
+2. 초대받은 사람이 페이지를 소유한 관리자를 **People with Facebook access**에 초대하세요(전체 액세스).
+3. 선택 사항: 관리자에게 전체 권한이 생긴 뒤에는 처음 추가했던 사람을 제거해도 돼요.
 
-## 콘텐츠 권한이 없음, 비즈니스 매니저를 통해 권한을 가지고 있음
+{% hint style="info" %}
+1번과 관련한 참고 사항이에요. 이름을 검색할 때 도움이 되도록, 초대하려는 사람에게 먼저 친구 요청을 보내 두세요.
+{% endhint %}
 
-### 1. 페이스북으로 이동:
+### 내가 관리자인데 내 페이지가 보이지 않아요
 
-1단계 - 해당 페이지의 페이스북 계정에 로그인합니다.
+하이퍼클래스에 Facebook 페이지를 연결하는데 일부 페이지가 목록에 없다면 아래 순서대로 해 보세요.
 
-![페이스북 로그인 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155022952297/original/injToRyAM9GS33jhpYo-LcOoXEULA6l4SA.png?1710500474)
+#### 1. Facebook으로 이동하기
 
-2단계 - 프로필 아이콘으로 이동하여 페이스북 페이지를 클릭합니다.
+1. 페이지 관리자 계정으로 Facebook에 로그인하세요.
+2. 오른쪽에 있는 프로필 사진 아이콘을 누르고 **Settings and Privacy**(설정 및 개인정보)를 클릭하세요.
 
-![프로필 아이콘에서 페이스북 페이지 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155022952395/original/MD8evuLBN2qAiugnUuIvjWyp0T6ZpZuSEQ.png?1710500533)
+   ![프로필 사진 아이콘의 설정 및 개인정보 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155022947878/original/f5EEP43aw0b2fwBXlGL8KG25E6tEFQCSBQ.png?1710497750)
 
-3단계 - 페이스북 페이지로 이동하여 관리(Manage)를 클릭합니다.
+3. **Settings and Privacy > Settings**로 이동하세요.
 
-![페이스북 페이지 관리 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155022952413/original/gywp2wbkyYigaaLTn2ENYrfPx9FCAi_Qgw.png?1710500561)
+   ![설정 및 개인정보의 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155022947975/original/Y3WX_CP4BL8YzoYy7RuK4j2Y6CoSQDNDIA.png?1710497848)
 
-4단계 - 좌측 패널에서 "페이지 액세스(Page Access)"를 찾습니다.
+4. 설정에서 **Business Integration**(비즈니스 연동) > 하이퍼클래스 앱으로 이동하세요.
+5. **View and Edit**(보기 및 수정) 링크를 클릭하세요.
 
-![페이지 액세스 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155022952428/original/ACL00D0mFYfN0MrtZK71Tpih8nCtPBu-dg.png?1710500572)
+   ![View and Edit 링크](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155022948422/original/lyn6Rr7acC4MnBJ-9hUa8lj9ym0ACMB6zQ.png?1710498204)
 
-5단계 - Hightest > 페이지 이름과 같이 나열되어 있는지 확인합니다. 소셜 플래너에서 연결하고 게시하려는 사람을 추가하도록 페이지 소유자/관리자에게 요청해야 합니다.
+#### 2. 페이지 목록 선택하기
 
-![페이지 액세스 권한 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155022952443/original/pDauRQa4S6iM8iZngCYY0L40NZq_gA7-xw.png?1710500594)
+링크를 클릭하면 팝업이 나타나요. 모든 권한을 허용했는지, 소셜 채널을 모두 선택했는지 확인하세요.
 
-**페이지에 페이스북 액세스를 가진 사람이 페이지 소유자로 없는 경우, 다음을 시도해 볼 수 있습니다:**
-1. 다른 사람을 전체 액세스 권한을 가진 관리자로 초대해야 합니다.
-참고 - **추가 사항: 페이지에 페이스북 액세스를 가진 사람이 페이지 소유자로 없는 경우, 다음을 시도해 볼 수 있습니다 - 친구 요청을 보내면 이름을 검색할 때 도움이 됩니다.**
-2. 해당 사람은 페이지를 소유한 관리자를 페이스북 액세스를 가진 사람으로 초대해야 합니다(전체 액세스).
-3. 선택사항으로, 관리자가 전체 권한을 얻은 후 처음에 추가된 사람을 제거할 수 있습니다.
+체크가 해제된 채널이 있으면 여기서 체크하면 돼요.
 
-## 내 페이지가 없음, 나는 관리자임
+![권한 및 채널 선택 팝업](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48194306242/original/O35wyx3uE7MPG_Rw0TZnautqxfe5av17dg.png?1645734827)
 
-Hyperclass 커넥터로 페이스북 페이지를 연결하려고 하는데 일부 페이지가 목록에서 누락된 경우, 아래 가이드를 따라하세요:
+#### 3. 저장하고 다시 연결하기
 
-### 1. 페이스북으로 이동:
+권한을 바꾸거나 새 페이지를 선택했다면 **저장** 버튼을 클릭하세요.
 
-1단계 - 해당 페이지의 페이스북 계정(관리자)에 로그인합니다.
-2단계 - 우측의 프로필 사진 아이콘으로 이동하여 "설정 및 개인정보 보호(Settings and Privacy)"를 클릭합니다.
-
-![설정 및 개인정보 보호 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155022947878/original/f5EEP43aw0b2fwBXlGL8KG25E6tEFQCSBQ.png?1710497750)
-
-3단계 - "설정 및 개인정보 보호" > "설정"에 들어갑니다.
-
-![설정 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155022947975/original/Y3WX_CP4BL8YzoYy7RuK4j2Y6CoSQDNDIA.png?1710497848)
-
-4단계 - 설정에서 "비즈니스 통합(Business Integration)" > "LeadConnector"로 이동합니다.
-5단계 - "보기 및 편집(View and Edit)" 링크를 클릭합니다.
-
-![LeadConnector 비즈니스 통합 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155022948422/original/lyn6Rr7acC4MnBJ-9hUa8lj9ym0ACMB6zQ.png?1710498204)
-
-### 2. 페이지 목록 선택:
-
-링크를 클릭하면 팝업이 표시됩니다. 모든 권한을 부여하고 모든 소셜 채널을 선택했는지 확인하세요.
-
-일부 채널이 체크되지 않았다면 거기서 체크할 수 있습니다.
-
-![페이지 권한 선택 팝업](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48194306242/original/O35wyx3uE7MPG_Rw0TZnautqxfe5av17dg.png?1645734827)
-
-### 3. 저장 및 재연결
-
-권한을 변경하거나 새 페이지를 선택한 후 저장 버튼을 클릭합니다.
-
-이제 소셜 플래너의 설정으로 이동하여 페이스북 페이지를 연결하세요. 이번에는 이전에 표시되지 않았던 페이지를 볼 수 있을 것입니다.
-
-# 페이스북 게시물 발행 실패
-
-페이스북에 콘텐츠를 게시할 때 발생하는 가장 일반적인 오류의 원인을 나열했습니다. 콘텐츠가 나타나지 않아서 머리를 긁적이게 되는 다음과 같은 오류들입니다:
-
-## 1. 남용/신고된 콘텐츠/링크가 커뮤니티 기준에 위배됨:
-
-페이스북의 다른 사람들이 남용적이거나 부적절하다고 신고한 콘텐츠가 포함되어 있어 메시지를 보낼 수 없습니다. 이 링크가 페이스북의 커뮤니티 기준에 위배되어 콘텐츠를 공유할 수 없습니다.
-
-## 2. 액세스 토큰 검증 오류:
-
-관리자가 비밀번호를 변경했거나 페이스북이 보안상의 이유로 세션을 변경했기 때문에 세션이 무효화되었습니다. 페이스북에 대한 세션/액세스 토큰이 만료되었습니다. 이는 다음과 같은 경우에 발생합니다:
-
-- 계정 비밀번호를 변경한 경우
-- 소셜 플래너에서 지난 90일 동안 페이스북에 게시물을 올리지 않은 경우
-
-## 3. 2단계 인증:
-
-관리하고 있는 비즈니스 페이지에서 2단계 인증을 활성화한 경우, 계정 수준에서 2단계 인증을 활성화해야 합니다. 그 후 계정을 다시 연결하면 이 오류가 발생하지 않습니다.
-
-사용자는 페이지를 대신하려면 페이지의 관리자, 편집자 또는 중재자여야 합니다.
-
-## 4. 'manage_permissions' 권한이 부여되어야 함:
-
-고객의 소셜 미디어 페이지에 콘텐츠를 게시하고 있고 그들이 당신을 관리자로 추가한 경우, 이런 오류가 발생합니다. 해당 소셜 미디어 페이지에 대한 관리 액세스 권한이 있는지 확인하고, 계정을 연결할 때 페이지 섹션에 manage_permissions를 허용해야 게시물이 문제없이 발행됩니다.
-
-## 5. 이미지 누락 또는 잘못됨:
-
-소셜 미디어 게시물을 예약했는데 이미지와 함께 공유하는 링크가 더 이상 열리지 않으면 소셜 게시물에 이 오류가 발생합니다.
-
-## 6. 알 수 없는 오류 발생:
-
-이 오류가 발생한다면 페이스북 페이지 액세스 토큰에 콘텐츠를 게시할 충분한 권한이 없을 가능성이 높습니다. 때로는 게시물이 발행되지만 가끔 실패하기도 합니다. 이 문제가 발생하면 페이지를 다시 연결하고 페이스북 페이지를 연결할 때 모든 권한을 부여했는지 확인해야 합니다.
-
-## 7. 제공한 URL이 유효하지 않거나 이 링크를 게시할 수 없음:
-
-메시지에 링크가 포함된 메시지를 게시할 때 페이스북은 이 링크를 확인하고 인덱싱합니다. 페이스북 서버가 과부하 상태일 때 요청 시간 동안 인덱싱할 수 없습니다. 페이스북에서 위에서 언급한 오류 중 하나를 발생시킵니다. 페이스북은 여전히 링크를 인덱싱하므로 몇 분 후 두 번째 시도는 일반적으로 문제없이 진행됩니다.
-
-## 8. 소셜 플래너에서 페이지/그룹을 다시 연결할 수 없음:
-
-![소셜 플래너 페이지 연결 문제](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155025796538/original/bu77nUYSJQKo-ekttxuqFAbDXplG0hEZbg.jpeg?1715280209)
-
-소셜 플래너 탭에서 페이지/그룹을 다시 연결하려면, 원래 해당 로케이션에 페이지/그룹을 연결했던 동일한 사용자의 소셜 미디어 계정을 사용하여 다시 연결하거나, 현재 사용자가 로케이션 설정(Settings) > 연동(Integrations)으로 이동하여 토큰이 만료된 계정의 연결 해제를 클릭한 다음 연결 버튼을 클릭하도록 해야 합니다.
-
-계속하려면 페이지 관리자여야 합니다. 완료되면 소셜 플래너로 돌아가서 소셜 토큰이 여전히 만료되었는지 확인하세요.
-
-예시: Emily가 자신의 계정을 사용하여 페이스북 페이지를 연결했는데, 이제 Alex(계정 관리자)가 연동이 만료되었기 때문에 페이지를 다시 연결하려고 한다면, Alex는 Emily의 페이스북 계정을 사용하여 페이지를 다시 연결하거나, Emily가 소셜 플래너 설정 **(톱니바퀴 아이콘) > 연동(integrations) > 연결 해제(Disconnect)**에서 자신의 계정을 사용하여 페이지를 다시 연결하도록 요청해야 합니다. 그 다음 만료된 토큰이 표시되는 소셜 페이지를 다시 연결하세요.
+그다음 **소셜 플래너 > 설정**으로 이동해서 Facebook 페이지를 연결하세요. 이번에는 전에 보이지 않던 페이지가 보일 거예요.
 
 ---
-*원문 최종 수정: Tue, 5 Nov, 2024 at 3:35 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+
+## Facebook 게시물이 게시되지 않을 때
+
+Facebook에 콘텐츠를 게시했는데 왜 올라가지 않았는지 알 수 없을 때가 있어요. 가장 흔한 오류의 원인을 정리했어요.
+
+### 1. Abusive / Reported Content / Link Goes Against Community Standard (부적절하거나 신고된 콘텐츠, 커뮤니티 규정에 어긋나는 링크)
+
+Facebook의 다른 사용자가 부적절하다고 신고한 콘텐츠가 포함되어 있어서 메시지를 보낼 수 없어요. 링크가 Facebook 커뮤니티 규정에 어긋나서 콘텐츠를 공유할 수 없다는 뜻이기도 해요.
+
+### 2. Error validating access token (액세스 토큰 검증 오류)
+
+관리자가 비밀번호를 바꿨거나, Facebook이 보안상의 이유로 세션을 바꿔서 세션이 무효가 된 경우예요. Facebook 세션(액세스 토큰)이 만료된 거예요. 다음과 같은 경우에 생겨요.
+
+- 계정 비밀번호를 변경했어요.
+- 최근 90일 동안 소셜 플래너에서 Facebook에 게시물을 올리지 않았어요.
+
+### 3. Two Factor Authentication (2단계 인증)
+
+관리하는 비즈니스 페이지에서 2단계 인증을 켜 두었다면, 내 계정에도 2단계 인증을 켜야 해요. 그다음 계정을 다시 연결하면 이 오류가 나타나지 않아요.
+
+페이지를 대신해 게시하려면 해당 페이지의 관리자, 편집자 또는 운영자여야 해요.
+
+### 4. 'manage_permissions' must be granted ('manage_permissions' 권한을 허용해야 해요)
+
+고객의 소셜 미디어 페이지에 콘텐츠를 게시하는데, 고객이 나를 관리자로 추가해 준 경우에 이 오류가 나타나요. 해당 소셜 미디어 페이지의 관리 권한이 있는지 확인하세요. 계정을 연결할 때는 Pages 항목에서 `manage_permissions`를 허용해야 게시물이 문제없이 올라가요.
+
+### 5. 이미지가 없거나 **유효하지 않은 이미지**
+
+소셜 미디어 게시물을 예약했는데, 이미지와 함께 공유한 링크가 더는 열리지 않으면 이 오류가 나타나요.
+
+### 6. **알 수 없는 오류가 발생했습니다**
+
+이 오류는 대개 Facebook 페이지 액세스 토큰에 콘텐츠를 게시할 권한이 충분하지 않아서 생겨요. 게시물이 올라갈 때도 있고 실패할 때도 있어요. 이럴 때는 페이지를 다시 연결하세요. Facebook 페이지를 연결할 때 모든 권한을 허용해야 해요.
+
+### 7. The URL you supplied is invalid or this link could not be posted (입력한 URL이 올바르지 않거나 링크를 게시할 수 없어요)
+
+링크가 들어 있는 메시지를 게시하면, Facebook이 그 링크를 확인하고 색인을 만들어요. Facebook 서버에 부하가 걸리면 요청하는 시점에 색인을 만들지 못해서 위와 같은 오류를 보내요. Facebook은 그 뒤에도 링크의 색인을 만들기 때문에, 몇 분 뒤에 다시 시도하면 대개 문제없이 게시돼요.
+
+### 8. 소셜 플래너에서 페이지/그룹을 다시 연결할 수 없어요
+
+**소셜 플래너**에서 페이지/그룹을 다시 연결하려면 다음 중 한 가지 방법을 쓰세요.
+
+- 처음 그 페이지/그룹을 서브 계정에 연결한 사용자의 소셜 미디어 계정으로 다시 연결하세요.
+- 현재 사용자가 서브 계정의 **설정 > 연동**으로 이동해서, 토큰이 만료된 계정의 **연결 해제**를 클릭한 다음 **Connect**(연결) 버튼을 클릭하세요.
+
+계속하려면 페이지 관리자여야 해요. 완료한 뒤 소셜 플래너로 돌아가서 소셜 토큰이 아직 만료된 상태인지 확인하세요.
+
+```
+예시:
+
+Emily가 자신의 계정으로 Facebook 페이지를 연결했어요. 연동이 만료되어 Alex(계정 관리자)가 페이지를 다시 연결하려고 해요. 이 경우 Alex는 Emily의 Facebook 계정으로 페이지를 다시 연결해야 해요. 또는 Emily에게 소셜 플래너 설정(톱니바퀴 아이콘) > 연동 > 연결 해제를 거쳐, 토큰이 만료된 소셜 페이지를 직접 다시 연결해 달라고 요청하세요.

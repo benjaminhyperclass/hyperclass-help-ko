@@ -1,89 +1,92 @@
 ---
-
-번역일: 2026-04-09
-카테고리: 마케팅
+원문: /support/solutions/articles/155000001325-how-to-fix-grammar-and-spelling-make-longer-content-and-improve-writing-in-social-post-
+번역일: 2026-11-07
+카테고리: 36-기타
 ---
 
-# 소셜 포스트에서 문법/맞춤법 검사, 내용 확장 및 글쓰기 개선하는 방법
+# 소셜 게시물에서 맞춤법·문법 고치기, 글 늘리기, 문장 다듬기
 
-커뮤니티 추가 튜토리얼
+**콘텐츠 AI**(Content AI)의 빠른 문맥 지원을 쓰면 소셜 게시물 글을 AI로 바로 고치고 다듬을 수 있어요. 이 문서에서는 사용할 수 있는 옵션과 **소셜 플래너**에서 쓰는 방법을 안내해요.
 
-[https://www.youtube.com/watch?v=f7y6QRDJOwA&feature=youtu.be](https://www.youtube.com/watch?v=f7y6QRDJOwA&feature=youtu.be)
+커뮤니티의 다른 튜토리얼: 
 
-콘텐츠를 세밀하게 조정하고 적절한 톤을 만들어보세요!
+콘텐츠 AI는 피드백을 반영해 결과를 다듬어 주고, 어조·구성·의도를 점검해 볼 수 있어요. 독자에게 맞는 글을 만들 때 활용하세요.
 
-피드백을 기반으로 반복 개선되는 AI 콘텐츠로 완벽한 글을 작성하고, 독자를 사로잡는 톤, 구조, 의도를 테스트해보세요.
+![콘텐츠 AI 문맥 지원 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010964383/original/NHrpBWRFL_Y_aqV1rW9mL_TsAawULeyMlw.png?1698165252)
 
-![AI 콘텐츠 편집 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010964383/original/NHrpBWRFL_Y_aqV1rW9mL_TsAawULeyMlw.png?1698165252)
+## 문맥 지원에서 쓸 수 있는 옵션
 
-**콘텐츠 AI(Content AI)의 상황별 지원 옵션**
+콘텐츠 AI 문맥 지원(Contextual Support)에는 다음 옵션이 있어요.
 
-- **글쓰기 개선** - 콘텐츠를 새로운 차원으로 끌어올려보세요! 무엇을 고쳐야 할지 확실하지 않을 때도 글쓰기의 변화를 경험할 수 있습니다.
-  - 콘텐츠의 잠재력을 발휘하여 매혹적인 걸작으로 변화시키세요.
-  - 단어들이 생동감과 명료함으로 살아나는 마법을 목격하세요.
+1. **Improvise Writing**(글 다듬기)
+   - 무엇을 고쳐야 할지 잘 모르겠을 때도 글을 더 좋게 바꿔 줘요.
+   - 내용을 더 매력적으로 만들어 줘요.
+   - 글이 더 생생하고 또렷해져요.
+2. **Make Longer**(길게 쓰기)
+   - 처음 떠올린 아이디어를 풍부한 내용으로 늘려 줘요.
+   - 한 문장 한 문장이 더 생생하고 흥미로운 이야기로 확장돼요.
+   - 독자가 더 읽고 싶어지는 글로 바꿔 줘요.
+3. **Make Shorter**(짧게 쓰기)
+   - 군더더기를 덜어 내고 꼭 필요한 내용만 남겨요.
+   - 간결하면서도 힘 있는 메시지를 만들어 독자에게 오래 남게 해 줘요.
+   - 모든 단어에 무게가 실린 짧은 글이 돼요.
+4. **Spelling Check and Grammar**(맞춤법 및 문법 검사)
+   - 맞춤법과 문법이 올바르게 고쳐져요.
+   - 글 고유의 어조는 바꾸지 않고 다듬어 줘요.
+   - 문장이 매끄럽게 이어져요.
+5. **Simplify Writing**(쉽게 쓰기)
+   - 메시지를 간결하게 정리해 누구나 쉽게 이해할 수 있게 해 줘요.
+   - 복잡한 아이디어를 명확하고 짧은 문장으로 바꿔 줘요.
+   - 어떤 독자도 소외되지 않고 이해할 수 있는 글이 돼요.
 
-- **더 길게 만들기** - 아이디어를 풍성한 창작물로 확장하세요! 초기 개념을 가져와서 생각을 자극하는 풍부한 콘텐츠 태피스트리로 꽃피우는 것을 지켜보세요.
-  - 각 문장이 생생하고 매력적인 서사로 꽃피는 아이디어의 성장을 보세요.
-  - 독자들이 더 많은 것을 갈망하게 만드는 몰입적인 경험으로 글쓰기를 변화시키세요.
+## 옵션별 예시
 
-- **더 짧게 만들기** - 뛰어남을 정확한 완벽함으로 압축하세요! 불필요한 부분을 제거하고 정말 중요한 핵심만 남기세요.
-  - 강력한 펀치를 담은 간결한 메시지를 만들어 독자에게 지속적인 임팩트를 남기세요.
-  - 모든 단어가 무게와 의미를 갖는 간결함의 힘을 경험하세요.
+아래는 각 옵션을 적용한 예시예요. 맞춤법·문법 예시는 영어 문장이에요.
 
-- **맞춤법 및 문법 검사** - 완벽한 정확성으로 글쓰기를 향상시키세요! 단어들이 정확한 맞춤법과 완벽한 문법의 심포니로 변화하는 것을 지켜보세요.
-  - 고유한 톤을 바꾸지 않으면서도 글이 완벽하게 다듬어졌다는 확신을 즐기세요.
-  - 모든 문장이 자연스럽게 흐르는 완벽함의 마법을 경험하세요.
+1. 원문: "The cat sat on the mat."
+   - 다듬은 결과: "The sleek feline comfortably settled itself on the soft mat."
+2. 원문: "The sun sets over the horizon, painting the sky with a myriad of vibrant hues, casting a warm, golden glow across the landscape."
+   - 길게 쓴 결과: "As the day draws to a close, the sun gracefully descends beneath the distant horizon, orchestrating a breathtaking display of colors, which range from fiery reds to gentle purples, imbuing the entire vista with a comforting, golden radiance."
+3. 원문: "She ran swiftly through the forest, her heart pounding, the trees a blur."
+   - 짧게 쓴 결과: "Swiftly, heart pounding, she dashed through the forest, the trees a blur."
+4. 원문: "He don't know if its their or there cat."
+   - 맞춤법·문법 검사 결과: "He doesn't know if it's their or there cat."
+5. 원문: "I am unable to comprehend the intricacies of quantum physics."
+   - 쉽게 쓴 결과: "I don't understand quantum physics."
 
-- **글쓰기 단순화** - 손쉽게 명확함을 전달하세요! 모든 배경의 독자가 쉽게 이해할 수 있도록 메시지를 간소화하세요.
-  - 복잡한 아이디어가 독자에게 공감을 불러일으키는 명확하고 간결한 문장으로 변화하는 것을 보세요.
-  - 모든 독자가 포함되고 소중하게 여겨지는 단순한 소통의 즐거움을 경험하세요.
+## 콘텐츠 AI 빠른 문맥 지원 사용하기
 
-이러한 뛰어난 기능들로 글쓰기 경험을 혁신하고, 콘텐츠가 뛰어난 품질과 참여도의 새로운 차원으로 치솟는 것을 목격하세요!
+1. **마케팅 > 소셜 플래너**로 이동하세요. (이후 업데이트에서 이메일 빌더, 블로그, 퍼널, 웹사이트 등 다른 모듈에도 적용될 예정이에요.)
+2. **Create new post**(새 게시물 만들기)를 클릭하세요.
+3. 새 게시물을 만들 때 소셜 계정을 선택하세요.
+4. AI로 글을 새로 만들려면 **AI**를 클릭한 뒤 **edit with AI**(AI로 편집)로 이동하세요. 이미 쓴 글이 있으면 **AI** 옵션을 선택하거나 클릭해서 다음 중 하나를 고르세요.
+   - **Improve Writing**(글 다듬기)
+   - **Fix Spelling and Grammar**(맞춤법 및 문법 수정)
+   - **Make Longer**(길게 쓰기)
+   - **Make Shorter**(짧게 쓰기)
+   - **Simplified Writing**(쉽게 쓰기)
 
-각 요청에 대한 예시는 다음과 같습니다:
+   {% hint style="info" %}
+   텍스트를 선택해서 적용할 수 있어요. 선택하지 않으면 입력된 전체 텍스트에 빠른 작업이 적용돼요.
+   {% endhint %}
 
-- 원본: "The cat sat on the mat." 개선됨: "The sleek feline comfortably settled itself on the soft mat."
-- 원본: "The sun sets over the horizon, painting the sky with a myriad of vibrant hues, casting a warm, golden glow across the landscape." 더 길게: "As the day draws to a close, the sun gracefully descends beneath the distant horizon, orchestrating a breathtaking display of colors, which range from fiery reds to gentle purples, imbuing the entire vista with a comforting, golden radiance."
-- 원본: "She ran swiftly through the forest, her heart pounding, the trees a blur." 더 짧게: "Swiftly, heart pounding, she dashed through the forest, the trees a blur."
-- 원본: "He don't know if its their or there cat." 문법 및 맞춤법 검사: "He doesn't know if it's their or there cat."
-- 원본: "I am unable to comprehend the intricacies of quantum physics." 단순화: "I don't understand quantum physics."
+   예시 — **Fix Spelling and Grammar**
 
-콘텐츠 AI(Content AI)를 사용한 빠른 상황별 텍스트 지원은 어떻게 작동하나요?
+   ![맞춤법 및 문법 수정 예시 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010964385/original/0Z7TPQFycFXxAl0f2oIknHlaHAgJovAUJA.jpeg?1698165253)
+   ![맞춤법 및 문법 수정 예시 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010964384/original/11o8QQcoz3t1D3fYIkMh0NAXLBBUdUnVjw.png?1698165253)
 
-- Marketing(마케팅) > Social Planner(소셜 플래너)로 이동 [향후 릴리스에서는 Email Builder(이메일 빌더), Blogs(블로그), Funnels(퍼널), Website(웹사이트) 등 모든 모듈에 적용 예정]
-- Create new post(새 포스트 작성)을 클릭
-- 새 포스트를 작성할 때 소셜 계정을 선택
-- AI를 사용하여 텍스트를 생성하려면 AI를 클릭하고 edit with AI(AI로 편집)로 이동. 이미 텍스트가 있는 경우, AI 옵션을 선택하거나 클릭하여 다음 작업 수행:
-  - 글쓰기 개선
-  - 맞춤법 및 문법 검사
-  - 더 길게 만들기  
-  - 더 짧게 만들기
-  - 글쓰기 단순화
-    
-    참고 - 텍스트를 선택할 수 있으며, 선택하지 않으면 모든 텍스트가 빠른 작업에 사용됩니다.
+   예시 — **Make Longer**
 
-예시 - 맞춤법 및 문법 검사
+   ![길게 쓰기 예시 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010964387/original/UDzpLDXR4w4zxlw37xhZ098uD4MMGh2hSA.jpeg?1698165254)
+   ![길게 쓰기 예시 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010964388/original/roBPMBCJJJ8B8pQGrHTZ6uRgcNbrt3jB4A.jpeg?1698165254)
 
-![맞춤법 및 문법 검사 예시 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010964385/original/0Z7TPQFycFXxAl0f2oIknHlaHAgJovAUJA.jpeg?1698165253)
+5. 다른 옵션을 선택하거나 다시 생성하면 결과가 페이지별로 나뉘어 표시돼요.
 
-![맞춤법 및 문법 검사 예시 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010964384/original/11o8QQcoz3t1D3fYIkMh0NAXLBBUdUnVjw.png?1698165253)
+   ![페이지별로 표시된 생성 결과](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010964386/original/HDwEW4P81Ggulogkxzd77seJTbB8iOcZVw.jpeg?1698165254)
 
-더 길게 만들기 예시 -
+6. 빠른 작업을 적용한 텍스트(선택한 텍스트 또는 전체 텍스트) 아래에 결과를 추가하거나, 기존 텍스트를 결과로 바꿀 수 있어요.
+7. 생성한 텍스트 기록은 **자동화 > 콘텐츠 AI**에서 확인할 수 있어요.
 
-![더 길게 만들기 예시 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010964387/original/UDzpLDXR4w4zxlw37xhZ098uD4MMGh2hSA.jpeg?1698165254)
-
-![더 길게 만들기 예시 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010964388/original/roBPMBCJJJ8B8pQGrHTZ6uRgcNbrt3jB4A.jpeg?1698165254)
-
-5. 생성하거나 다른 옵션을 선택하면 페이지네이션된 데이터로 표시됩니다.
-
-![생성된 콘텐츠 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010964386/original/HDwEW4P81Ggulogkxzd77seJTbB8iOcZVw.jpeg?1698165254)
-
-6. 빠른 작업을 위해 선택된 또는 고려된 텍스트 아래에 콘텐츠를 추가하거나 텍스트를 교체할 수도 있습니다.
-
-7. Automation(자동화) > Content AI(콘텐츠 AI)에서 생성된 텍스트의 기록을 확인할 수 있습니다.
-
-참고: 이 기능은 현재 릴리스에서 소셜 플래너(Social Planner)에만 제공되며, 다른 제품에도 통합 예정입니다.
-
----
-*원문 최종 수정: Mon, 4 Dec, 2023 at 11:41 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+{% hint style="info" %}
+이번 버전에서는 **소셜 플래너**에서만 이 기능을 쓸 수 있어요. 다른 제품에도 순차적으로 적용할 예정이에요.
+{% endhint %}

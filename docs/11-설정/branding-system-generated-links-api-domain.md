@@ -1,144 +1,119 @@
 ---
-
-번역일: 2026-04-06
+원문: /support/solutions/articles/48001143244-branding-system-generated-links-api-domain-
+번역일: 2026-11-06
 카테고리: 11-설정
 ---
 
-# 시스템 생성 링크 브랜딩 (API 도메인)
+# 시스템에서 만드는 링크에 브랜드 도메인 적용하기 (API 도메인)
 
-이 가이드는 에이전시와 하위 계정 레벨에서 브랜딩된 (API) 도메인을 설정하여 Hyperclass의 시스템 생성 링크를 커스터마이징하는 방법을 설명합니다. 브랜딩된 도메인을 구현하면 링크 전송 시 전달률을 향상시키고 브랜드 인지도를 강화할 수 있습니다.
-
----
-
-**목차**
-
-- [API 도메인이란?](#api-도메인이란)
-- [API 도메인 설정의 주요 장점](#api-도메인-설정의-주요-장점)
-- [에이전시 레벨 API 도메인](#에이전시-레벨-api-도메인)
-- [하위 계정 레벨 도메인 (브랜딩된 도메인)](#하위-계정-레벨-도메인-브랜딩된-도메인)
-- [문제 해결](#문제-해결)
-- [자주 묻는 질문](#자주-묻는-질문)
----
+에이전시와 서브 계정에서 브랜드(API) 도메인을 설정해 시스템이 만드는 링크의 도메인을 바꾸는 방법을 안내해요. 브랜드 도메인을 쓰면 이메일 도달률이 좋아지고, 링크를 받는 사람이 우리 브랜드를 더 쉽게 알아볼 수 있어요.
 
 ## API 도메인이란?
 
-**API 도메인**을 사용하면 폼, 설문, 캘린더 링크, 트리거 링크, 결제 링크, 리뷰 링크 등 시스템에서 생성되는 링크에 사용되는 도메인을 커스터마이징할 수 있습니다. 이러한 커스터마이징을 통해 링크가 선택한 도메인을 반영하여 브랜드 일관성과 신뢰성을 향상시킵니다.
+API 도메인은 시스템이 만드는 링크에 쓰이는 도메인을 원하는 도메인으로 바꾸는 기능이에요. 폼, 설문, 캘린더 링크, 트리거 링크, 단축 링크, 리뷰 링크 등에 적용돼요. 링크마다 우리 도메인이 보이니 브랜드의 일관성과 신뢰도를 높일 수 있어요.
 
-**커스텀 API 도메인**을 설정하면 다음 항목에 생성되는 링크의 도메인이 업데이트됩니다:
+사용자 지정 API 도메인을 설정하면 다음 링크의 도메인이 바뀌어요.
 
 - 폼
 - 설문
 - 캘린더 링크
-- 트리거 링크
-- 결제 링크
-- 리뷰 링크
+- **트리거 링크**
+- **결제 링크**
+- **리뷰 링크**
 
-**API 도메인**은 두 가지 레벨에서 설정할 수 있습니다:
+API 도메인은 두 단계에서 설정할 수 있어요.
 
-| 설정 레벨 | 설명 |
-|----------|------|
-| **에이전시 레벨 (API 도메인)** | 모든 하위 계정에 기본 브랜딩된 도메인을 적용합니다. |
-| **하위 계정 레벨 (브랜딩된 도메인)** | 특정 하위 계정에 브랜딩된 도메인을 적용하여 에이전시 레벨 도메인을 덮어씁니다. |
+| 설정 단계 | 설명 |
+| --- | --- |
+| 에이전시 수준(API 도메인) | 모든 서브 계정에 기본 브랜드 도메인을 적용해요. |
+| 서브 계정 수준(**브랜드 도메인**) | 특정 서브 계정에만 브랜드 도메인을 적용해요. 에이전시 수준 도메인보다 우선해요. |
 
----
+## API 도메인을 설정하면 좋은 점
 
-## API 도메인 설정의 주요 장점
+- 이메일 도달률 향상: 사용자 지정 링크는 스팸으로 분류될 가능성이 낮아 이메일 도달률이 높아져요.
+- 브랜드 인지도 강화: 링크를 받는 사람에게 브랜드 도메인이 보여 브랜드 이미지가 강해져요.
+- 일관된 사용자 경험: 링크 도메인이 통일되어 있어 고객이 매끄럽고 전문적인 경험을 할 수 있어요.
 
-- **전달률 향상**: 커스터마이징된 링크는 스팸으로 표시될 가능성이 낮아 이메일 전달률이 향상됩니다.
+## 에이전시 수준 API 도메인
 
-- **브랜드 인지도 강화**: 수신자가 링크에서 브랜딩된 도메인을 보게 되어 브랜드 아이덴티티가 강화됩니다.
+에이전시 관리자만 쓸 수 있어요. 에이전시에서 API 도메인을 설정하면 시스템이 만드는 모든 링크에 같은 브랜드 도메인이 쓰여 신뢰도와 도달률이 높아져요. 기본 API 도메인을 에이전시에 설정해 두면 서브 계정이 브랜딩을 자동으로 이어받아서 서브 계정마다 따로 설정하지 않아도 돼요.
 
-- **일관된 사용자 경험**: 링크 도메인의 통일성으로 원활하고 전문적인 사용자 경험을 제공합니다.
+### 1단계: 에이전시 도메인 설정 열기
 
----
+**에이전시 보기 > 에이전시 설정 > 회사 > Whitelabel(화이트라벨) > 도메인**으로 이동하세요.
 
-## 에이전시 레벨 API 도메인
-
-에이전시 레벨에서 API 도메인을 설정하면 모든 시스템 생성 링크가 일관된 브랜딩된 도메인을 사용하여 신뢰성과 전달률을 향상시킵니다. 에이전시 레벨에서 기본 API 도메인을 설정하면 하위 계정이 자동으로 브랜딩을 상속받아 수동 설정 작업을 줄이면서도 전문적인 온라인 존재감을 유지할 수 있습니다.
-
-### 1단계: 에이전시 도메인 설정 접근
-
-**Agency** 뷰 → **Agency** Settings(설정) → Company → Whitelabel → Domains로 이동합니다.
-
-![에이전시 도메인 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042628858/original/lDtr3IQBFIawYKEYyxmN0qTU3H701ASifw.png?1741098470)
+![에이전시 설정의 도메인 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042628858/original/lDtr3IQBFIawYKEYyxmN0qTU3H701ASifw.png?1741098470)
 
 ### 2단계: API 도메인 입력
 
-"**Add Domain**" 버튼을 클릭하면 [도메인 연결 마법사](../42-통합/기타/how-to-use-the-domain-connect-feature-.md)가 실행됩니다. 안내에 따라 마법사가 도메인 등록업체에서 자동으로 **CNAME**을 생성하도록 합니다.
+**도메인 추가** 버튼을 클릭하면 [도메인 연결 마법사](../42-통합/기타/how-to-use-the-domain-connect-feature.md)가 열려요. 안내에 따라 진행하면 마법사가 도메인 등록 업체에 CNAME을 자동으로 만들어 줘요.
 
-![API 도메인 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042796264/original/nvfbHGPvFXl546Kr5Iyo6e-f-rZJgDVbLg.png?1741275401)
+![도메인 추가 후 도메인 연결 마법사](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042796264/original/nvfbHGPvFXl546Kr5Iyo6e-f-rZJgDVbLg.png?1741275401)
 
-### 3A단계: DNS 설정 구성
+### 3A단계: DNS 설정하기
 
-**CNAME**을 수동으로 생성해야 하는 경우, DNS 설정에서 도메인 등록업체(예: GoDaddy, CloudFlare, Namecheap)에 로그인합니다.
+CNAME을 직접 만들어야 한다면 도메인 등록 업체(예: GoDaddy, CloudFlare, Namecheap)에 로그인해서 DNS 설정으로 이동하세요.
 
-![DNS 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042879142/original/TQI7K06STR-vqyrZrIVzvnM_MqnZbGua9g.gif?1741374879)
+![도메인 등록 업체의 DNS 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042879142/original/TQI7K06STR-vqyrZrIVzvnM_MqnZbGua9g.gif?1741374879)
 
-### 3B단계: 수동 설정
+### 3B단계: 직접 설정하기
 
-수동 설정을 선호하는 경우, 도메인 등록업체에서 **CNAME** 레코드를 생성합니다:
+직접 설정하려면 도메인 등록 업체에서 다음과 같이 CNAME 레코드를 만드세요.
 
-- Name: 선택한 서브도메인 (예: links)
-- Target: **brand.ludicrous.cloud**
+- **이름**: 사용할 서브도메인 (예: `links`)
+- **타겟**: `brand.ludicrous.cloud`
 
-![수동 DNS 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042879336/original/X99DozJordYQmIRm-u9oKB_XjDILWeyP2w.png?1741375275)
+![CNAME 레코드 입력 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042879336/original/X99DozJordYQmIRm-u9oKB_XjDILWeyP2w.png?1741375275)
 
-**중요:** **Agency Settings(에이전시 설정)** 페이지 > Company 페이지 하단으로 스크롤하여 "**Update Company**" 버튼을 클릭하여 변경사항을 저장합니다.
+{% hint style="warning" %}
+**에이전시 설정 > 회사** 페이지 맨 아래로 스크롤해서 **Update Company**(회사 정보 업데이트) 버튼을 클릭해 변경 사항을 저장하세요.
+{% endhint %}
 
----
+## 서브 계정 수준 도메인 (브랜드 도메인)
 
-## 하위 계정 레벨 도메인 (브랜딩된 도메인)
+서브 계정에서 브랜드 도메인을 설정하면 각 비즈니스가 시스템이 만드는 링크에 자기만의 도메인을 쓸 수 있어요. 이 설정은 에이전시 수준 API 도메인보다 우선해서, 폼·설문 등의 링크에 해당 서브 계정의 브랜딩이 반영돼요.
 
-하위 계정 레벨에서 브랜딩된 도메인을 설정하면 개별 비즈니스가 자체 도메인으로 시스템 생성 링크를 커스터마이징하여 브랜드 아이덴티티와 신뢰성을 향상시킬 수 있습니다. 이는 에이전시 레벨 API 도메인을 덮어써서 폼, 설문 및 기타 기능의 링크가 하위 계정만의 고유한 브랜딩을 반영하도록 합니다.
+### 1단계: 비즈니스 프로필 열기
 
-### 1단계: 비즈니스 프로필 접근
+**서브 계정 보기**에서 **설정 > 비즈니스 프로필**로 이동하세요.
 
-하위 계정 뷰에서 Settings(설정) → Business Profile(비즈니스 프로필)로 이동합니다.
+![서브 계정의 비즈니스 프로필 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042629216/original/roStP7JK9HSGD5_xcBUKLxxkedSqwWBTIA.png?1741098738)
 
-![비즈니스 프로필 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042629216/original/roStP7JK9HSGD5_xcBUKLxxkedSqwWBTIA.png?1741098738)
+### 2단계: 브랜드 도메인 입력
 
-### 2단계: 브랜딩된 도메인 입력
+**브랜드 도메인** 필드에 시스템이 링크를 만들 때 사용할 서브도메인을 입력하세요 (예: links.yourclient.com).
 
-Branded Domain 필드에 시스템에서 시스템 생성 링크를 만들 때 사용할 서브도메인을 입력합니다 (예: links.yourclient.com).
-
-![브랜딩된 도메인 입력](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042796410/original/DiKoLNeD-qGNjht3a0ZUOEVbSWIXGCFz8Q.png?1741275506)
+![브랜드 도메인 입력 필드](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042796410/original/DiKoLNeD-qGNjht3a0ZUOEVbSWIXGCFz8Q.png?1741275506)
 
 ### 3단계: 도메인 추가
 
-**Add Domain**을 클릭하여 [도메인 연결 마법사](../42-통합/기타/how-to-use-the-domain-connect-feature-.md)를 실행합니다. 안내에 따라 도메인 등록업체에서 자동으로 CNAME 레코드를 생성합니다.
+**도메인 추가**를 클릭하면 [도메인 연결 마법사](../42-통합/기타/how-to-use-the-domain-connect-feature.md)가 열려요. 안내에 따라 진행하면 도메인 등록 업체에 CNAME 레코드가 자동으로 만들어져요.
 
-- Name: 선택한 서브도메인 (예: links)
-- Target: **brand.ludicrous.cloud**
+- **이름**: 사용할 서브도메인 (예: `links`)
+- **타겟**: `brand.ludicrous.cloud`
 
-![도메인 연결 마법사](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042796984/original/ySzmgId-7AlODjR6Bdifashr3oJu8fhsuQ.gif?1741275958)
+![도메인 추가 후 CNAME 자동 생성 과정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042796984/original/ySzmgId-7AlODjR6Bdifashr3oJu8fhsuQ.gif?1741275958)
 
-**중요:** **Settings(설정) → Business Profile(비즈니스 프로필)** 페이지 하단으로 스크롤하여 "**Update Information**" 버튼을 클릭하여 변경사항을 저장합니다.
-
----
+{% hint style="warning" %}
+**설정 > 비즈니스 프로필** 페이지 맨 아래로 스크롤해서 **정보 업데이트** 버튼을 클릭해 변경 사항을 저장하세요.
+{% endhint %}
 
 ## 문제 해결
 
-- **기존 API/브랜딩된 도메인 업데이트**: API/브랜딩된 도메인을 **brand.ludicrous.cloud**로 업데이트해야 하는 경우, 기존 도메인 필드를 지우고, 설정을 저장한 후, 새 서브도메인을 다시 입력하고 저장합니다.
+- 기존 API/브랜드 도메인 변경하기: API/브랜드 도메인이 `brand.ludicrous.cloud`를 가리키도록 바꾸려면 기존 도메인 입력란을 비우고 저장하세요. 그런 다음 새 서브도메인을 다시 입력하고 한 번 더 저장하세요.
+- 개발 용도로는 쓸 수 없어요: API 도메인은 시스템이 만드는 링크를 브랜딩하는 용도로만 만들어졌어요. 위에서 설명한 기능의 링크를 화이트라벨(도메인 가림) 처리하는 기능이라서 개발 용도로는 맞지 않아요. API 연동이 필요하다면 하이퍼클래스 고객지원에 문의하세요.
 
-- **개발 목적**: API 도메인은 시스템 생성 링크 브랜딩 전용이며 개발 목적에는 적합하지 않고, 위 문서에서 언급한 기능들에 대해 생성되는 링크를 화이트라벨(또는 마스킹)하기 위해서만 설계되었습니다.
-
-API 연동의 경우 [Hyperclass API 문서](https://developers.hyperclass.ai/)를 참조하세요.
-
-**다음 단계**: 브랜딩된 (API) 도메인 설정 후, 시스템 생성 링크가 새 도메인을 반영하는지 모니터링하세요. DNS 설정을 정기적으로 확인하고 모든 커뮤니케이션에서 원활한 브랜딩을 유지하기 위해 필요에 따라 업데이트합니다.
-
----
+{% hint style="info" %}
+다음 단계: 브랜드(API) 도메인을 설정한 뒤에는 시스템이 만든 링크에 새 도메인이 제대로 반영되는지 확인하세요. 모든 커뮤니케이션에서 브랜딩이 매끄럽게 유지되도록 DNS 설정도 정기적으로 확인하고 필요하면 업데이트하세요.
+{% endhint %}
 
 ## 자주 묻는 질문
 
-**Q: 루트 도메인을 API/브랜딩된 도메인으로 사용할 수 있나요?**
-기존 웹사이트 설정과의 충돌을 피하기 위해 서브도메인(예: links.yoursite.com)을 사용하는 것을 권장합니다.
+### 루트 도메인을 API/브랜드 도메인으로 쓸 수 있나요?
+기존 웹사이트 설정과 충돌하지 않도록 서브도메인(예: `links.yoursite.com`)을 쓰는 것을 권장해요.
 
-**Q: 하위 계정 레벨 브랜딩된 도메인을 설정하지 않으면 어떻게 되나요?**
-시스템은 해당 하위 계정에 대해 에이전시 레벨 브랜딩된 도메인을 기본값으로 사용합니다.
+### 서브 계정 수준 브랜드 도메인을 설정하지 않으면 어떻게 되나요?
+해당 서브 계정은 에이전시 수준의 브랜드 도메인을 기본으로 사용해요.
 
-**Q: DNS 변경사항이 전파되는 데 얼마나 걸리나요?**
-DNS 전파는 최대 48시간이 걸릴 수 있지만, 변경사항은 보통 더 빨리 적용됩니다.
-
----
-*원문 최종 수정: Thu, 22 May, 2025 at 1:07 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### DNS 변경 사항이 적용되기까지 얼마나 걸리나요?
+DNS 전파에는 최대 48시간이 걸릴 수 있어요. 그보다 빨리 적용되는 경우도 많아요.

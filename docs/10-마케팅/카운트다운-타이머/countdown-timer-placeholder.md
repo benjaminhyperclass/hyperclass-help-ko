@@ -1,52 +1,60 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 10-마케팅 > 카운트다운-타이머
+원문: /support/solutions/articles/155000005554-countdown-timer-placeholder
+번역일: 2026-11-07
+카테고리: 10-마케팅
 ---
 
-# 카운트다운 타이머 플레이스홀더
+# 이메일 템플릿을 공유할 때 카운트다운 타이머가 플레이스홀더로 바뀌는 이유
 
-템플릿에 카운트다운 타이머를 삽입한 후, 해당 템플릿을 다른 하위 계정으로 복사하면 카운트다운 타이머가 정적 플레이스홀더로 대체됩니다.
+카운트다운 타이머가 들어 있는 이메일 템플릿을 다른 서브 계정으로 복사하면, 원래 타이머는 고정된 플레이스홀더로 바뀌어요. 이 문서에서는 플레이스홀더가 생기는 이유와 템플릿을 복사하는 방법, 그리고 대상 서브 계정의 타이머로 연결하는 방법을 안내해요.
 
-카운트다운 타이머 플레이스홀더는 **이메일 템플릿**에서만 작동합니다. 다른 템플릿(예: 퍼널)은 준비 중입니다.
----
+## 카운트다운 타이머 플레이스홀더란?
 
-**1단계: 카운트다운 타이머 삽입**
+카운트다운 타이머 플레이스홀더는 카운트다운 타이머가 들어 있는 이메일 템플릿을 다른 서브 계정으로 복사했을 때 나타나요. 템플릿 안에서 타이머가 있던 자리는 그대로 유지돼요. 하지만 대상 서브 계정의 타이머를 선택하기 전까지는 카운트다운으로 작동하지 않아요.
 
-Marketing(마케팅) > Emails(이메일) > Templates(템플릿)로 이동하여 카운트다운 타이머가 포함된 템플릿을 생성하거나 편집하세요. 아직 카운트다운 타이머가 없다면 먼저 생성해야 할 수도 있습니다.
+현재 카운트다운 타이머 플레이스홀더는 공유한 이메일 템플릿에 대해서만 안내하고 있어요.
 
-![카운트다운 타이머가 삽입된 이메일 템플릿](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048492527/original/mS0-lZ31j_kEqh4wG-c0tZBaNsJrdDCBJg.png?1750262364)
+{% hint style="warning" %}
+**중요:** 카운트다운 타이머 플레이스홀더는 작동하는 타이머가 아니에요. 복사한 이메일 템플릿을 쓰기 전에, 대상 서브 계정에 있는 카운트다운 타이머를 선택하거나 새로 만드세요.
+{% endhint %}
 
-**2단계: 템플릿 공유**
+## 카운트다운 타이머가 있는 이메일 템플릿 복사하기
 
-템플릿 편집을 종료하고 3점 메뉴를 클릭한 후 Share(공유)를 클릭하세요.
+이메일 템플릿은 평소처럼 복사하면 돼요. 템플릿이 다른 서브 계정으로 복사되면 카운트다운 타이머는 자동으로 플레이스홀더가 돼요.
 
-![템플릿 공유 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048492720/original/uNjrehN-lsouKq6drCOlfbaIKsROdLOGvg.png?1750262560)
+1. **마케팅 > 이메일 > 템플릿**으로 이동하세요.
+2. 카운트다운 타이머가 들어 있는 이메일 템플릿을 만들거나 열어 주세요.
+   ![작동하는 카운트다운 타이머가 들어 있는 이메일 템플릿](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048492527/original/mS0-lZ31j_kEqh4wG-c0tZBaNsJrdDCBJg.png?1750262364)
+3. **템플릿** 목록으로 돌아가세요.
+4. 해당 템플릿의 점 3개 메뉴를 열고 **공유**를 선택하세요.
+   ![이메일 템플릿의 공유 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155082257680/original/MhYfjO5_ZDfC0yJDvZrSNPhCCMSAQtkxjQ.png?1790831281)
+5. 공유 권한을 설정한 뒤 템플릿 링크를 복사하세요.
+6. 공유 링크를 열고 **템플릿 추가**를 선택하세요.
+7. **대상 서브 계정 선택**에서 서브 계정을 고르세요. 필요하면 템플릿 이름을 바꾸고 템플릿을 복제하세요.
 
-**3단계: 링크 복사**
+## 카운트다운 타이머 플레이스홀더 교체하기
 
-Share Template(템플릿 공유) 모달에서 적절한 권한을 선택한 후 Copy Link(링크 복사)를 클릭하세요.
+복사한 템플릿은 원래 카운트다운 타이머를 자동으로 쓸 수 없어요. 이메일을 쓰기 전에 대상 서브 계정에 있는 카운트다운 타이머를 선택하세요.
 
-![템플릿 공유 모달에서 링크 복사](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048492835/original/NLvvufEVfiMFLoZO3HYBgjKHLnxBMD8nGg.png?1750262625)
+1. 대상 서브 계정에서 **마케팅 > 이메일 > 템플릿**으로 이동하세요.
+2. 복사한 이메일 템플릿을 여세요.
+3. **Countdown Timer Placeholder**(카운트다운 타이머 플레이스홀더)를 선택하세요.
+   ![카운트다운 타이머 플레이스홀더가 선택된 복사본 이메일 템플릿](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048493171/original/frtmWlkoIc1FybEeVPJfACtoypFkZ-EeoA.png?1750262946)  
+   ![카운트다운 타이머 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155082257632/original/x0antuIQaNdYnOlOfLczeeA8imO88Gf9yw.png?1790831186)
+4. 대상 서브 계정에 있는 카운트다운 타이머 중에서 하나를 고르세요.
+5. 알맞은 타이머가 없으면 **마케팅 > 카운트다운 타이머**에서 새로 만드세요. 그런 다음 이메일 템플릿으로 돌아와 새 타이머를 선택하세요.
+6. 저장한 뒤 캠페인에서 쓰기 전에 이메일을 테스트하세요.
 
-**4단계: 새 탭에서 링크 열기**
+## 자주 묻는 질문
 
-새 탭에서 링크를 직접 열거나 다른 사람과 공유하여 열도록 하세요. 에이전시에 로그인된 상태라면 페이지가 열리고 Add Template(템플릿 추가) 버튼을 클릭할 수 있습니다.
+### 카운트다운 타이머가 플레이스홀더로 바뀌었어요. 왜 그런가요?
+이메일 템플릿을 다른 서브 계정으로 복사했기 때문이에요. 복사한 이메일 템플릿의 카운트다운 타이머는 대상 서브 계정의 타이머를 선택하기 전까지 플레이스홀더로 바뀌어요.
 
-![템플릿 추가 페이지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048492884/original/tAh5YvDD-CN-k0EEBgQI8V28lav1pRiizA.png?1750262686)
+### 플레이스홀더가 원래 카운트다운 타이머를 자동으로 쓰나요?
+아니요. 대상 서브 계정에 있는 카운트다운 타이머를 직접 선택해야 해요.
 
-**5단계: 에이전시 하위의 로케이션(하위 계정) 선택**
+### 대상 서브 계정에 카운트다운 타이머가 없으면 어떻게 하나요?
+**마케팅 > 카운트다운 타이머**에서 카운트다운 타이머를 만드세요. 그런 다음 복사한 이메일 템플릿으로 돌아가 그 타이머를 선택하면 돼요.
 
-Clone Email Template(이메일 템플릿 복제) 모달에서 템플릿 사본을 생성할 하위 계정(로케이션)을 선택할 수 있습니다. 원한다면 템플릿 사본의 이름도 변경할 수 있습니다.
-
-![이메일 템플릿 복제 모달](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048492962/original/SeoqpasvhlhK3-aM3SaSIdGAdU22P_Ilow.png?1750262746)
-
-**6단계: 템플릿 사본을 열고 플레이스홀더를 해당 하위 계정의 카운트다운 타이머로 교체**
-
-새 로케이션에서 Marketing(마케팅) > Emails(이메일) > Templates(템플릿)로 이동하여 템플릿 사본을 편집하세요. 카운트다운 타이머가 작동하지 않는 플레이스홀더로 대체된 것을 확인할 수 있습니다. 플레이스홀더를 클릭하여 작동하는 카운트다운 타이머를 선택하세요. 아직 생성하지 않았다면 새로 만들어야 할 수도 있습니다.
-
-![플레이스홀더가 된 카운트다운 타이머](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048493171/original/frtmWlkoIc1FybEeVPJfACtoypFkZ-EeoA.png?1750262946)
-
----
-*원문 최종 수정: Wed, 18 Jun, 2025 at 12:24 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### 퍼널과 웹사이트에서도 플레이스홀더가 생기나요?
+현재 문서에서는 공유한 이메일 템플릿에서만 이 플레이스홀더 작업 방식을 확인하고 있어요. 퍼널과 웹사이트는 해당 화면의 카운트다운 타이머 배치 안내를 따르세요.

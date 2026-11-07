@@ -1,155 +1,160 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 19-에이전시-뷰 > Prospecting Subscription
+원문: /support/solutions/articles/155000005459-how-to-share-agency-prospecting-premium-subscription-with-a-sub-account
+번역일: 2026-11-06
+카테고리: 19-에이전시-뷰
 ---
 
-# 에이전시 Prospecting Premium 구독을 하위 계정과 공유하는 방법
+# 에이전시 잠재고객 발굴 프리미엄 구독을 서브 계정과 공유하기
 
-에이전시 레벨에서 이미 Prospecting Premium 구독을 보유한 에이전시는 이제 기존 Prospecting 구독에 하나의 하위 계정을 연결하여 청구를 단순화하고 비용을 절감할 수 있습니다. 이 업데이트를 통해 두 계정 모두 프리미엄 기능에 공유 액세스할 수 있어 구독 관리를 간소화하면서 유연성을 유지할 수 있습니다.
+에이전시 계정에서 **잠재고객 발굴**(Prospecting) 프리미엄을 이미 구독 중이라면, 서브 계정 1개를 그 구독에 연결해 비용과 결제 관리를 줄일 수 있어요. 연결하면 에이전시와 서브 계정이 프리미엄 기능을 함께 쓸 수 있어요. 이 기능은 에이전시 관리자만 쓸 수 있어요.
 
-목차
+## 서브 계정과 공유하는 옵션이란?
 
-- [하위 계정과의 새로운 Prospecting 도구 공유 옵션이란?](#하위-계정과의-새로운-prospecting-도구-공유-옵션이란)
-- [새로운 Prospecting 도구 공유 옵션의 주요 이점](#새로운-prospecting-도구-공유-옵션의-주요-이점)
-- [에이전시 Prospecting Premium 구독을 하위 계정과 공유하는 방법](#에이전시-prospecting-premium-구독을-하위-계정과-공유하는-방법)
-- [에이전시 레벨에서 이미 Prospecting Premium을 구독한 경우](#에이전시-레벨에서-이미-prospecting-premium을-구독한-경우)
-- [처음으로 Prospecting Premium을 구독하는 경우](#처음으로-prospecting-premium을-구독하는-경우)
-- [자주 묻는 질문](#자주-묻는-질문)
+활성화된 프리미엄 구독이 있는 에이전시는 그 구독을 서브 계정 1개와 공유할 수 있어요. 구독을 따로 만들 필요가 없고, 결제와 접근 권한을 한곳에서 관리할 수 있어요.
 
-## 하위 계정과의 새로운 Prospecting 도구 공유 옵션이란?
+공유하고 싶지 않다면 에이전시 구독을 해지한 뒤, 원하는 서브 계정에서 새로 구독해 잠재고객 발굴을 처음부터 시작할 수도 있어요. 이렇게 하려면 **에이전시 보기**(Agency View)의 **재판매** 탭에서 해당 기능을 켜 두어야 해요.
 
-새로운 공유 옵션은 통합 구독 모델을 도입하여, 활성 프리미엄 prospecting 구독을 보유한 에이전시가 Premium 구독을 하나의 하위 계정과 공유할 수 있게 합니다. 이를 통해 중복 구독의 필요성을 없애고 청구 및 액세스에 대한 더 많은 제어를 한 곳에서 제공합니다.
+## 공유 옵션의 장점
 
-에이전시가 공유하고 싶지 않다면, 에이전시 레벨 구독을 취소하고 원하는 하위 계정에서 새 구독을 시작하여 해당 하위 계정에서 새로운 prospecting을 시작할 수도 있습니다(에이전시 뷰의 Reselling 탭에서 활성화 필요).
+- 비용 절감: 에이전시와 서브 계정에 구독을 각각 두지 않아도 돼요.
+- 간편한 구독 관리: 두 계정의 결제와 사용자 접근을 한곳에서 관리해요.
+- 모든 기능 사용: 에이전시와 연결된 서브 계정 모두 잠재고객 발굴 프리미엄 도구를 빠짐없이 쓸 수 있어요.
+- 유연한 운영: 비즈니스 상황에 따라 연결된 서브 계정을 조정하거나 바꿀 수 있어요.
 
-### 새로운 Prospecting 도구 공유 옵션의 주요 이점
+## 에이전시 프리미엄 구독을 서브 계정과 공유하기
 
-에이전시는 이 업데이트를 통해 비용 효율성 개선과 더 간단한 워크플로우의 혜택을 받을 수 있습니다:
+구독을 올바르게 설정하고 서브 계정을 연결하면, 하나의 결제 체계에서 모든 기능을 쓸 수 있어요.
 
-- **비용 절약**: 에이전시와 하위 계정을 위한 두 개의 별도 구독을 유지할 필요가 없습니다.
-- **간소화된 구독 관리**: 한 곳에서 두 계정의 청구 및 사용자 액세스를 관리합니다.
-- **완전한 기능 액세스**: 에이전시와 연결된 하위 계정 모두 Prospecting Premium 도구에 완전히 액세스할 수 있습니다.
-- **운영 유연성**: 비즈니스 요구 사항이 변화함에 따라 연결된 하위 계정을 조정하거나 변경할 수 있습니다.
+{% hint style="warning" %}
+한 번만 할 수 있는 작업이에요. 나중에 서브 계정을 바꿀 수 없어요.
+{% endhint %}
 
-## 에이전시 Prospecting Premium 구독을 하위 계정과 공유하는 방법
+### 에이전시에서 이미 잠재고객 발굴 프리미엄을 구독 중인 경우
 
-구독을 올바르게 설정하고 하위 계정을 연결하면 단일 청구 구조 하에서 모든 기능에 액세스할 수 있습니다.
+1. 에이전시 계정에서 **잠재고객 발굴**을 클릭하세요.
 
-**중요**: 이는 일회성 작업입니다. 나중에 하위 계정을 변경할 수 없습니다.
+   ![에이전시 계정의 잠재고객 발굴 메뉴](https://jumpshare.com/v/rvWEy11fSlpCCrhiL4MQ+/Screen+Shot+2025-06-20+at+7.39.38+PM.png)
+2. **설정** 탭을 클릭한 뒤 **Manage Subscription**(구독 관리)을 선택하세요.
+3. **Link your Sub-Account**(서브 계정 연결) 버튼을 클릭하세요.
 
-### 에이전시 레벨에서 이미 Prospecting Premium을 구독한 경우
+   ![구독 관리에서 서브 계정 연결 버튼 클릭](https://jumpshare.com/v/UMNh1LoVBsDQ9REOLsyq+/Screen+Shot+2025-06-20+at+7.43.48+PM.png)
+4. 목록에서 연결할 서브 계정을 선택하세요.
 
-- 에이전시 계정에서 Prospecting을 클릭합니다.
-![에이전시 Prospecting 메뉴](https://jumpshare.com/v/rvWEy11fSlpCCrhiL4MQ+/Screen+Shot+2025-06-20+at+7.39.38+PM.png)
+   ![연결할 서브 계정 선택](https://jumpshare.com/v/n4PXVRu1NVk9Vj5kkupG+/Screen+Shot+2025-06-20+at+7.45.49+PM.png)
+5. **지금 연결** 버튼을 클릭해 선택을 확정하세요.
 
-- Settings(설정) 탭을 클릭한 다음 Manage Subscription(구독 관리)를 클릭합니다. 이제 Link your Sub-Account(하위 계정 연결) 버튼을 클릭합니다.
-![구독 관리 및 하위 계정 연결](https://jumpshare.com/v/UMNh1LoVBsDQ9REOLsyq+/Screen+Shot+2025-06-20+at+7.43.48+PM.png)
-
-- 목록에서 연결하고자 하는 하위 계정을 선택합니다.
-![하위 계정 선택](https://jumpshare.com/v/n4PXVRu1NVk9Vj5kkupG+/Screen+Shot+2025-06-20+at+7.45.49+PM.png)
-
-- Link Now(지금 연결) 버튼을 클릭하여 선택을 확인합니다.
-![연결 확인](https://jumpshare.com/v/L51JDZNG7cNy2kNEggEU+/Screen+Shot+2025-06-20+at+8.04.09+PM.png)
+   ![지금 연결 버튼으로 선택 확정](https://jumpshare.com/v/L51JDZNG7cNy2kNEggEU+/Screen+Shot+2025-06-20+at+8.04.09+PM.png)
 
 ---
 
-## 에이전시 Prospecting 도구에서 연결된 하위 계정을 제거하거나 업데이트하는 방법:
+## 연결된 서브 계정 해제하거나 바꾸기
 
-각 에이전시 Prospecting 구독은 하나의 하위 계정에 연결될 수 있습니다. 연결된 하위 계정을 제거하거나 업데이트하려면 다음과 같이 하세요:
+에이전시 잠재고객 발굴 구독 하나에는 서브 계정을 1개만 연결할 수 있어요. 연결된 서브 계정을 해제하거나 바꾸려면 아래 방법을 따르세요.
 
-### 연결된 하위 계정을 제거하려면 (다른 계정을 추가하지 않고):
+### 연결된 서브 계정만 해제하기 (다른 계정은 연결하지 않을 때)
 
-- Settings(설정)로 이동하여 에이전시 레벨 또는 연결된 하위 계정 레벨에서 구독을 취소합니다.
-- 이렇게 하면 두 계정 모두의 프리미엄 액세스가 제거됩니다.
-- 하위 계정을 연결하지 않고 계속하려면, 아무 하위 계정도 연결하지 않은 상태로 새 구독을 시작하세요.
+1. **설정**으로 이동해 에이전시 계정이나 연결된 서브 계정 중 한 곳에서 구독을 해지하세요.
+2. 그러면 두 계정 모두 프리미엄 이용 권한이 사라져요.
+3. 서브 계정을 연결하지 않고 계속 쓰려면, 서브 계정을 연결하지 않은 채로 새 구독을 시작하세요.
 
-![구독 취소](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053442062/original/zfhsbed4B-7n7qVNBX_XEcgeZo1UhyAKYQ.png?1757491339)
+![설정에서 구독 해지 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053442062/original/zfhsbed4B-7n7qVNBX_XEcgeZo1UhyAKYQ.png?1757491339)
 
-### 연결된 하위 계정을 다른 계정으로 교체하려면:
+### 연결된 서브 계정을 다른 계정으로 바꾸기
 
-두 가지 옵션이 있습니다:
+방법은 두 가지예요.
 
-**옵션 1:**
-- Settings(설정)로 이동하여 에이전시 또는 현재 연결된 하위 계정에서 구독을 취소합니다.
-- 새 구독을 시작하고 연결할 새로운 하위 계정을 선택합니다.
+- **옵션 1**
 
-**옵션 2:**
-- 기존 구독을 취소합니다.
-- 원하는 하위 계정에서 직접 새 구독을 시작합니다 — Reselling을 통해서든 Direct Company Purchase(직접 회사 구매)를 통해서든 (아래 설명).
+  1. **설정**으로 이동해 에이전시 계정이나 현재 연결된 서브 계정에서 구독을 해지하세요.
+  2. 새 구독을 시작하고 연결할 새 서브 계정을 선택하세요.
+- **옵션 2**
+
+  1. 기존 구독을 취소하세요.
+  2. 원하는 서브 계정에서 직접 새 구독을 시작하세요. **재판매**를 통하거나 **Direct Company Purchase**(회사 직접 구매)로 할 수 있어요. 자세한 내용은 아래에서 설명해요.
 
 ---
 
-## 처음으로 Prospecting Premium으로 업그레이드하기:
+## 잠재고객 발굴 프리미엄을 처음 구독할 때
 
-Prospecting 도구를 Premium으로 업그레이드하는 방법은 두 가지입니다:
+**잠재고객 발굴**을 프리미엄으로 업그레이드하는 방법은 두 가지예요.
 
-### 1. 에이전시 레벨 Prospecting
+### 1. 에이전시에서 잠재고객 발굴 쓰기
 
-모든 Premium 혜택을 포함합니다:
-- 월간 무제한 리드
-- 웹사이트 위젯
-- 리드 POC 강화
-- 보고서 빌더
+- 아래 프리미엄 혜택을 모두 쓸 수 있어요.
 
-**중요**: 에이전시 레벨 Prospecting은 CRM 기능(예: 연락처에 추가, SMS 발송, 기회에 추가, 워크플로우 트리거)을 포함하지 않습니다.
-- CRM 기능을 원한다면 나중에 하위 계정으로 이동해야 합니다.
-- **권장사항**: Prospecting + CRM 기능을 바로 액세스하려면 하위 계정 내에서 Prospecting을 시작하세요.
+  - 월 리드 무제한
+  - 웹사이트 위젯
+  - 리드 담당자 정보 보강(Leads POC Enrichment)
+  - 리포트 빌더
 
-### 2. 하위 계정 레벨 Prospecting
+{% hint style="warning" %}
+에이전시 계정의 잠재고객 발굴에는 CRM 기능이 포함되지 않아요. 예를 들어 **연락처에 추가**, **Send SMS**(SMS 보내기), **Add to Opportunities**(기회에 추가), 워크플로우 트리거를 쓸 수 없어요.
+{% endhint %}
 
-모든 Premium 혜택과 CRM 기능을 포함합니다:
-- 잠재 고객을 연락처에 추가
-- SMS 발송
-- 기회에 추가
-- 워크플로우 트리거
+- CRM 기능이 필요하면 나중에 서브 계정으로 옮겨야 해요.
+- 추천: 서브 계정 안에서 잠재고객 발굴을 시작하면 잠재고객 발굴과 CRM 기능을 처음부터 함께 쓸 수 있어요.
 
-#### **하위 계정에서 Prospecting을 활성화하는 방법**
+### 2. 서브 계정에서 잠재고객 발굴 쓰기
 
-세 가지 방법으로 활성화할 수 있습니다:
+- 프리미엄 혜택을 모두 쓸 수 있고, CRM 기능도 함께 쓸 수 있어요.
 
-**Reselling 탭에서**
-- Agency View(에이전시 뷰) > Reselling Tab(Reselling 탭)으로 이동
-- Re-sell Prospecting 토글을 저장하고 활성화합니다
-![Reselling 탭 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053443359/original/bIIB6n4lo_MN4Pvecai6IVaCsnoPJOEbWg.png?1757492086)
+  - 발굴한 잠재고객을 연락처에 추가
+  - SMS 보내기
+  - 기회에 추가
+  - 워크플로우 실행
 
-**Direct Company Purchase(직접 회사 구매)**
-- 하위 계정 레벨에서 직접 Prospecting Premium을 구매합니다.
-![직접 구매](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053443374/original/tc9eB_VStl7xlp-ZRUWAs1yq_j2qAdobVA.jpeg?1757492104)
+### 서브 계정에서 잠재고객 발굴 켜기
 
-**에이전시 Prospecting 도구에서 업그레이드**
-- 에이전시 계정에서 Prospecting으로 이동하여 거기서 업그레이드합니다.
-- Premium Plan(프리미엄 플랜) 아래의 Upgrade Now(지금 업그레이드) 버튼을 클릭합니다.
-- 다음과 같은 메시지가 표시됩니다: "지금 하위 계정을 선택하거나 연결하지 않고 계속하기": 이름을 입력하여 하위 계정을 선택하세요
+방법은 세 가지예요.
 
-![업그레이드 프로세스 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053443556/original/nx4wK0qoJTovXSbybGkNbjmBcjtH2Y-Xsg.jpeg?1757492203)
+1. **재판매 탭에서 켜기**
 
-![업그레이드 프로세스 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053443577/original/fkxQDLFwY_Ose0gBbD2VX4wKLhEzx0-j9A.jpeg?1757492206)
+   - **에이전시 보기 > 재판매** 탭으로 이동하세요.
+   - **Re-sell Prospecting**(잠재고객 발굴 재판매) 토글을 켜고 저장하세요.
 
-![업그레이드 프로세스 3](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053443587/original/c5xIXY1c0HpiLLC6Kj0J5xkL_k8sly_8KQ.jpeg?1757492209)
+   ![Re-sell Prospecting 토글](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053443359/original/bIIB6n4lo_MN4Pvecai6IVaCsnoPJOEbWg.png?1757492086)
+2. **Direct Company Purchase**(회사 직접 구매)
 
-**모범 사례**: 완전한 기능과 CRM 통합을 위해서는 항상 하위 계정에서 구독을 시작하세요.
+   - 서브 계정에서 직접 잠재고객 발굴 프리미엄을 구매하세요.
+
+     ![서브 계정에서 직접 구매 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053443374/original/tc9eB_VStl7xlp-ZRUWAs1yq_j2qAdobVA.jpeg?1757492104)
+3. **에이전시 잠재고객 발굴에서 업그레이드**
+
+   - 에이전시 계정에서 **잠재고객 발굴**로 이동해 그 화면에서 업그레이드하세요.
+   - **Premium Plan**(프리미엄 플랜) 아래의 **지금 업그레이드** 버튼을 클릭하세요.
+   - 그러면 **서브 계정 선택** 화면이 나타나요. 서브 계정을 선택하거나, **Continue without linking**(연결하지 않고 계속)을 선택할 수 있어요. 서브 계정은 이름을 입력해 찾으세요.
+   - ![업그레이드 시 서브 계정 선택 화면 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053443556/original/nx4wK0qoJTovXSbybGkNbjmBcjtH2Y-Xsg.jpeg?1757492203)![업그레이드 시 서브 계정 선택 화면 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053443577/original/fkxQDLFwY_Ose0gBbD2VX4wKLhEzx0-j9A.jpeg?1757492206)![업그레이드 시 서브 계정 선택 화면 3](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053443587/original/c5xIXY1c0HpiLLC6Kj0J5xkL_k8sly_8KQ.jpeg?1757492209)
+
+---
+
+{% hint style="info" %}
+모든 기능과 CRM 연동을 제대로 쓰려면 항상 서브 계정에서 구독을 시작하세요.
+{% endhint %}
+
+---
 
 ## 자주 묻는 질문
 
-**Q: Premium 구독에 하위 계정을 연결할 수 있는 곳은 어디인가요?**
-이 작업은 에이전시 Prospecting 섹션 내에서만 수행할 수 있습니다.
+### 서브 계정은 어디에서 프리미엄 구독에 연결하나요?
 
-**Q: Prospecting Premium 구독에 하나 이상의 하위 계정을 연결할 수 있나요?**
-아니요, 에이전시 구독당 하나의 하위 계정만 연결할 수 있습니다.
+에이전시의 잠재고객 발굴 화면에서만 할 수 있어요.
 
-**Q: 연결된 하위 계정을 나중에 변경할 수 있나요?**
-아니요, 하위 계정 연결은 되돌릴 수 없습니다. 일단 연결되면 변경할 수 없습니다.
+### 잠재고객 발굴 프리미엄 구독에 서브 계정을 2개 이상 연결할 수 있나요?
 
-**Q: 에이전시와 하위 계정 모두 Prospecting Premium에 완전히 액세스할 수 있나요?**
-예, 두 계정 모두 단일 구독 하에서 완전한 액세스를 받습니다.
+아니요. 에이전시 구독 하나에 서브 계정 1개만 연결할 수 있어요.
 
-**Q: 하위 계정을 연결하지 않고 구독하고 싶다면 어떻게 하나요?**
-설정 중에 연결하지 않고 계속하기를 선택할 수 있으며, 나중에 구독 설정에서 연결할 수 있습니다.
+### 연결한 서브 계정을 나중에 바꿀 수 있나요?
 
-**Q: 선택한 하위 계정에 이미 활성 Premium 구독이 있으면 어떻게 되나요?**
-하위 계정에 이미 활성 Premium 구독이 있다면, 추가 요금을 방지하기 위해 자동으로 청구를 조정하고 중복 구독을 취소합니다.
+아니요. 서브 계정 연결은 되돌릴 수 없어요. 한 번 연결하면 바꿀 수 없어요.
 
----
-*원문 최종 수정: Wed, 10 Sep, 2025 at 3:17 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### 에이전시와 서브 계정 모두 잠재고객 발굴 프리미엄을 완전히 쓸 수 있나요?
+
+네. 구독 하나로 두 계정 모두 모든 기능을 쓸 수 있어요.
+
+### 서브 계정을 연결하지 않고 구독하려면 어떻게 하나요?
+
+설정 중에 연결하지 않고 계속 진행할 수 있어요. 나중에 구독 설정에서 연결할 수도 있어요.
+
+### 선택한 서브 계정에 이미 활성화된 프리미엄 구독이 있으면 어떻게 되나요?
+
+서브 계정에 이미 활성화된 프리미엄 구독이 있으면 결제 금액을 자동으로 조정하고, 중복된 구독은 취소해요. 추가 요금이 나가지 않도록 하기 위해서예요.

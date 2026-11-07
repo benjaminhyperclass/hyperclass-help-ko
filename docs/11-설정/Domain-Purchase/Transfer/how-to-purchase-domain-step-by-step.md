@@ -1,108 +1,164 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 11-설정 > Domain Purchase / Transfer
+원문: /support/solutions/articles/155000003610-how-to-purchase-domain-step-by-step
+번역일: 2026-11-06
+카테고리: 11-설정
 ---
 
-# 도메인 구매 단계별 가이드
+# 도메인 구매 단계별 안내
 
-Hyperclass의 도메인 구매 기능을 사용하면 에이전시가 하위 계정에서 플랫폼 내에서 직접 도메인을 구매하고 관리할 수 있습니다. 이 가이드에서는 도메인 구매를 활성화하고 관리하며 재청구하는 방법을 설명합니다.
+하이퍼클래스 안에서 도메인을 바로 검색하고 구매하는 방법을 안내해요. 에이전시가 도메인 구매를 켜는 방법과 서브 계정이 도메인을 구매하는 방법을 함께 다뤄요.
 
-**참고 - 구매한 도메인에는 자동으로 WHOIS 개인정보 보호가 제공되어 공개 조회에서 개인 정보가 노출되지 않습니다.**
+{% hint style="warning" %}
+도메인 구매는 최종 확정이며 환불이나 취소가 되지 않아요. 구매한 도메인 중 조건에 맞는 도메인은 나중에 하이퍼클래스가 지원하는 도메인 이전 절차로 다른 곳으로 옮길 수 있어요.
+{% endhint %}
 
-**중요**: 도메인을 구매하면 해당 계정에 영구적으로 연결되며 **환불, 취소, 삭제가 불가능**합니다.
+## 도메인 구매 개요
 
-## 도메인 구매 활성화하기
+에이전시와 서브 계정은 하이퍼클래스 안에서 새 도메인을 검색하고 바로 등록할 수 있어요. 다른 등록 업체에서 도메인을 사서 따로 연결할 필요가 없어요. 구매한 도메인은 그 도메인을 쓰는 상품, 사이트와 같은 곳에서 관리해요.
 
-- 전체 에이전시(모든 하위 계정 포함)에서 도메인 구매를 활성화하려면 에이전시 레벨 > Settings(설정) > Company(회사) > Domain Purchase(도메인 구매)로 이동하여 토글을 활성화하세요.
+그래서 도메인을 산 뒤 웹사이트, 퍼널, 스토어처럼 도메인 연결이 필요한 하이퍼클래스 상품에 바로 쓰기 쉬워요.
 
-![도메인 구매 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033541070/original/rlf1GivxYDuLqTxZN-iKpISj7opAYFhytw.jpeg?1727273986)
+결제할 때 일부 TLD(최상위 도메인)는 여러 해 단위로 등록할 수도 있어요. 처음에 긴 기간을 한 번에 등록하면 매년 갱신하지 않아도 돼요.
 
-- "도메인 구매 약관에 동의합니다" 체크박스를 선택하고 Enable(활성화)를 클릭하세요.
+{% hint style="info" %}
+도메인에는 WHOIS 개인정보 보호가 자동으로 적용돼요. 공개 조회에서 개인 정보가 보이지 않아요.
+{% endhint %}
 
-![약관 동의](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033541073/original/nFmF8N9-i0vAkjA6Q5rN2D-ZlN9p8reS_Q.png?1727273987)
+{% hint style="warning" %}
+계정이 해지된 상태에서 구매한 도메인의 해제나 이전을 요청해야 한다면 하이퍼클래스 고객지원에 문의하세요.
+{% endhint %}
 
-- Agency Settings(에이전시 설정) > Domain Purchase(도메인 구매)에서 각 하위 계정별로 도메인 구매 기능을 활성화/비활성화하거나 재청구를 설정할 수 있습니다. 하위 계정 설정은 에이전시 레벨에서 도메인 구매가 활성화된 경우에만 접근할 수 있습니다.
+## 하이퍼클래스에서 도메인을 구매하면 좋은 점
 
-![하위 계정 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033541086/original/-RgMZMACAaYN9IfyhBUVTCcb0QnqWBG0qQ.jpeg?1727273993)
+- 도메인을 한곳에서 관리해요: 같은 하이퍼클래스 계정에서 도메인을 구매하고 관리할 수 있어요.
+- 여러 해 등록이 가능해요: 대상 도메인은 결제할 때 매년 갱신하지 않고 여러 해로 등록할 수 있어요.
+- 가격을 미리 확인해요: 구매를 마치기 전에 선택한 도메인과 등록 기간의 가격을 확인할 수 있어요.
+- 설정이 간단해요: 구매 후 **구매한 도메인** 영역에서 도메인을 설정하거나 하이퍼클래스 상품에 연결할 수 있어요.
 
-**참고사항:**
+## 여러 해 도메인 등록
 
-모든 플랜($97, $970, $297, $2970, $497, $4970)의 에이전시에서 도메인 구매 기능을 이용할 수 있습니다.
+새 도메인을 1년이 아니라 최대 10년까지 등록할 수 있어요(TLD에 따라 달라요). 처음 결제할 때 여러 해를 선택하면 매년 갱신하지 않아도 돼요.
+
+브랜드를 꾸준히 유지하고 싶은 기업이나 개인이 도메인을 미리 챙길 수 있도록 만든 기능이에요.
+
+아래 내용을 참고하세요.
+
+- 대부분의 TLD(최상위 도메인)는 최대 10년까지 등록할 수 있어요.
+- .co 계열 TLD(.co, .com.co, .net.co, .nom.co)는 최대 5년까지 등록할 수 있어요.
+- TLD의 갱신 가격이 최초 등록 가격과 다르면, 구매할 때는 1년만 등록할 수 있어요.
+
+![여러 해 도메인 등록 옵션 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155078067785/original/h0OWL6Tb4t93WbUiB79iZ0A2l0gA8Sm-8A.png?1786389065)
+
+## 도메인 구매 켜기
+
+서브 계정이 하이퍼클래스에서 도메인을 등록하려면 먼저 도메인 구매를 켜야 해요. 에이전시가 에이전시 단위로 이 설정을 관리하며, 클라이언트가 도메인 구매 기능을 쓸 수 있는지 정해요. 에이전시 관리자만 쓸 수 있어요.
+
+도메인 구매를 켜는 방법은 다음과 같아요.
+
+1. **Agency View**(에이전시 보기)에서 **설정 > 회사**로 이동해 **도메인 구매 켜기** 옵션을 켜세요. 도메인 구매 약관을 확인하고 동의한 뒤 변경 내용을 확인하세요.
+
+   ![설정 > 회사에서 도메인 구매 켜기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155078065460/original/JdiLmKawD77YOTwH1_CWaKYsfIXk1PrbRg.png?1786385953)
+2. **에이전시 설정 > 도메인 구매**에서 서브 계정마다 도메인 구매 기능이나 재청구(rebill)를 켜거나 끌 수 있어요. **서브 계정 설정**은 에이전시 단위에서 도메인 구매가 켜져 있을 때만 열 수 있어요.
+
+   ![에이전시 설정 > 도메인 구매에서 서브 계정별 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155078065510/original/YiHJ-qZKi1VSf_jBM7r_nju8gCeEhwh0KQ.png?1786386044)
 
 ## 도메인 구매하기
 
-- 도메인 구매가 활성화되면 로케이션 설정으로 이동하여 Domains(도메인) 페이지로 가세요.
-- 검색창을 사용하여 도메인 사용 가능 여부를 확인하세요.
+사용할 수 있는 이름을 검색하고, 등록 옵션을 확인한 다음 구매를 확정해요. 구매가 끝나면 도메인 등록이 확정되므로 결제 전에 도메인 이름, 등록 기간, 총 비용을 꼼꼼히 확인하세요.
 
-![도메인 검색](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033542573/original/MWg6qgEK78BTuqePcFkoLEWwN7ek8UvwLQ.png?1727274920)
+{% hint style="warning" %}
+계정이 해지된 상태에서 하이퍼클래스로 구매한 도메인의 해제나 이전을 요청해야 한다면 하이퍼클래스 고객지원에 문의하세요.
+{% endhint %}
 
-- 해당 도메인과 추천 도메인 목록이 표시됩니다.
+#### **1단계:** 도메인 화면 열기
 
-![추천 도메인 목록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033542740/original/px2pUL6fsUvUIvrRTRPjIBhx6jaftHLqeg.png?1727275002)
+해당 서브 계정에서 **설정 > 도메인 & URL 리다이렉트**로 이동하세요. 그다음 **Purchase/Transfer Domain**(도메인 구매/이전)을 클릭하세요.
 
-- Buy(구매)를 클릭하여 플랫폼에서 직접 도메인을 구매하세요.
+![도메인 & URL 리다이렉트에서 도메인 구매/이전 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155078066197/original/GUWWaz7r8cfGsnQAUJCALhsTX0e72PQ18g.png?1786386934)
 
-![도메인 구매](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033542756/original/IbhVVB-7Yv4pIZ3mt8qSFTU55fMi52A2RQ.png?1727275016)
+#### **2단계:** 도메인 검색하기
 
-- 도메인 등록 과정은 약 1분 정도 소요됩니다.
+구매하려는 도메인 이름을 입력하세요. 입력한 도메인을 쓸 수 있는지 보여 주고, 다른 도메인을 추천해 주기도 해요.
 
-![등록 진행 중](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033542863/original/9Ki1TPaQeKvxTwWB3-2I-QwSY3dSax3Lzw.png?1727275081)
+원하는 도메인을 찾았으면 **구매**를 클릭하세요.
 
-![등록 완료](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033542870/original/ZfBt39VCgNJL08EoI0Y3vWOUnaX6fL2xqA.png?1727275094)
+![도메인 검색 결과에서 구매 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155078066526/original/O5O8bTmzfWBlNRA_wCVoWYI34AsQf372Hw.png?1786387289)
 
-### 퍼널, 웹사이트, 스토어, 웨비나에서 도메인 구매 시작하기
+#### **3단계:** 등록 기간 선택하기
 
-작업 중인 콘텐츠에서 직접 도메인 구매를 시작할 수도 있습니다.
+주 도메인의 **가격 옵션** 드롭다운을 여세요.
 
-- 퍼널, 웹사이트, 스토어, 웨비나 설정 화면에서 Domain(도메인) 드롭다운을 열어주세요.
-- 원하는 도메인이 보이지 않으면 "Can't find your domain? – Purchase Domain or Connect Domain(도메인을 찾을 수 없나요? – 도메인 구매 또는 도메인 연결)"을 클릭하세요.
-- Purchase Domain(도메인 구매)을 선택하면 도메인 구매 페이지가 열리고 도메인 검색을 시작할 수 있습니다.
+선택할 수 있는 옵션에서 도메인을 등록할 햇수를 고르세요. 등록 기간은 최대 10년까지 가능하며 TLD에 따라 달라요. 선택한 기간에 따라 표시되는 가격이 바뀌어요.
 
-![설정에서 도메인 구매](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155061424052/original/umPqqKA0sukqs5CfwL1SbBIz4syWkM7xmw.png?1766857998)
+![가격 옵션에서 등록 기간 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155078066629/original/WuWuG9NjBkJnrQ5rF1l7JRkk-DHQHdDKBg.png?1786387479)
 
-빌더 내에서도 비슷한 옵션을 볼 수 있습니다:
+#### **4단계:** 도메인 확장자 추가하기
 
-- 퍼널, 웹사이트, 스토어, 웨비나 빌더에서 Connect Domain(도메인 연결)을 클릭하세요.
-- 메시지가 나타나면 Purchase Domain(도메인 구매)을 선택하세요. 새 탭에서 같은 도메인 구매 페이지가 열리고 새 도메인을 검색하고 구매할 수 있습니다.
+주 도메인의 등록 기간을 선택하면 **Protect Your Brand From Competitors — Grab These Extensions Too!**(경쟁사로부터 브랜드를 지키세요 — 이 확장자도 함께 확보하세요!) 영역에 `.org`, `.net`, `.uk` 같은 추가 옵션이 보여요. 추가하려는 확장자를 선택하세요.
 
-도메인을 구매한 후에는 이 가이드의 구성 및 연결 단계를 따라 퍼널, 웹사이트, 스토어, 웨비나에서 사용하세요.
+추가한 도메인은 기본적으로 1년 등록으로 담겨요. 등록 기간을 바꾸려면 해당 도메인의 가격을 클릭해 원하는 햇수를 선택하세요. 도메인마다 등록 기간을 다르게 정할 수 있고, **삭제** 아이콘으로 추가한 도메인을 뺄 수도 있어요.
 
-![빌더에서 도메인 구매](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155061424050/original/jQgtLMA7NpCzBrbOuAJy3taSirDS_e3-5g.png?1766857965)
+![추가 도메인 확장자 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155078066957/original/JHUrhIhXx6-rF0kuArCoRpTTCwkemihgUA.png?1786387923)
 
-## 도메인 구성 및 관리
+#### **5단계:** 구매 완료하기
 
-- Domains(도메인) 페이지로 이동하세요. 구매한 도메인에서 Configure(구성)을 클릭하면 모든 옵션을 확인할 수 있습니다.
+준비가 되면 **이용약관**에 동의하고 **결제**를 클릭하세요. 도메인 등록이 끝나기까지 약 1분 걸려요.
 
-![도메인 구성](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033542947/original/WujLTAGU-QZqAAGPPAb47Mj_kSRZ6B90Lg.png?1727275141)
+![이용약관 동의 후 결제 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155078066988/original/OA1WqQ0WNErrkMCnrsa9QHj-xRYiJ0mKyA.png?1786387992)
 
-- 원클릭으로 DNS 레코드를 수정하여 빠른 업데이트와 구성이 가능합니다.
+## 퍼널, 웹사이트, 스토어, 웨비나에서 도메인 구매 시작하기
 
-![DNS 레코드 수정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033542957/original/btDQW57qwSorCTvPzHTT7pSXwqxY_JGa6w.png?1727275156)
+작업 중인 화면에서 바로 도메인 구매를 시작할 수도 있어요.
 
-현재 지원하는 레코드 유형:
-- A
-- CName
-- AAAA
-- MX
-- TXT
+퍼널, 웹사이트, 스토어, 웨비나의 **설정** 화면에서 **Purchase Domain**(도메인 구매)을 클릭하면 도메인 구매 페이지가 열리고, 도메인 검색을 시작할 수 있어요.
 
-Connect Domain(도메인 연결)에서 직접 사이트 제품에 이 도메인을 연결할 수도 있습니다.
+![퍼널·웹사이트·스토어·웨비나 설정 화면의 도메인 구매 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155061424052/original/umPqqKA0sukqs5CfwL1SbBIz4syWkM7xmw.png?1766857998)
 
-![도메인 연결 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033543159/original/ih7qRMiEjdof9NHSdVhA2rFe21OYSydJMg.png?1727275254)
+빌더 안에서도 비슷하게 진행할 수 있어요.
 
-![도메인 연결 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033543351/original/j2PPrRJ1mmDYB4Ew1FLE1pis7mPsSXVsDQ.png?1727275390)
+1. 퍼널, 웹사이트, 스토어, 웨비나 빌더에서 **Connect Domain**(도메인 연결)을 클릭하세요.
+2. 안내 창이 뜨면 **Purchase Domain**(도메인 구매)을 선택하세요. 새 탭에서 같은 도메인 구매 페이지가 열리고, 새 도메인을 검색하고 구매할 수 있어요.
 
-![도메인 연결 3](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033543406/original/u3Ox1z-T-VJbrFp_zwMxy1_XVbd4PYskaA.png?1727275409)
+도메인을 구매한 뒤에는 이 문서의 설정·연결 단계를 이어서 진행해 퍼널, 웹사이트, 스토어, 웨비나에 도메인을 쓰세요.
 
-![도메인 연결 4](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033543423/original/Z7GDdqrP1oybBifp5CUCGCOigSM72JrT7A.png?1727275424)
+![빌더에서 도메인 연결 후 도메인 구매 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155061424050/original/jQgtLMA7NpCzBrbOuAJy3taSirDS_e3-5g.png?1766857965)
 
-![도메인 연결 5](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033543469/original/EYI9vbNFPPbrGZJ5ZjMelmF8yGZaGc7VNQ.png?1727275444)
+## 도메인 등록 확인 이메일
 
-## 도메인 연결과의 통합
+도메인 등록이 완료되면 도메인 등록 확인(Domain Registration Confirmation) 이메일을 받아요. 이 이메일에는 등록 완료 사실과 아래 정보가 들어 있어요.
 
-하위 계정 레벨의 모든 제품에서 도메인 연결 과정 중에 Hyperclass를 통해 구매한 도메인은 자동으로 인증되고 레코드가 추가됩니다.
+- 도메인 이름
+- 등록일
+- 계정 이름
+- 구매에 사용한 이메일 주소
 
----
-*원문 최종 수정: Sat, 27 Dec, 2025 at 11:54 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+![도메인 등록 확인 이메일 예시](https://jumpshare.com/share/sRtx7woavlMuuRmzHN0s+/Screenshot+2026-09-24+at+2.39.40%E2%80%AFAM.png)
+
+## 도메인 구매 후에는
+
+도메인 등록이 끝나면 구매한 도메인이 **설정 > 도메인 > 구매한 도메인**에 표시돼요.
+
+DNS 레코드를 설정하거나 도메인을 퍼널, 웹사이트, 스토어, 블로그 등 지원되는 상품에 연결하려면 [구매한 도메인 설정 및 연결](configure-connect-purchased-domains.md)을 참고하세요.
+
+## 자주 묻는 질문
+
+### 계정이 해지됐는데, 여러 해 등록한 도메인을 계속 쓰려면 어떻게 하나요?
+계정이 해지된 상태에서 구매한 도메인의 해제나 이전을 요청해야 한다면 하이퍼클래스 고객지원에 문의하세요.
+
+### 왜 어떤 도메인은 1년만 등록할 수 있나요?
+일부 TLD는 처음부터 긴 기간으로 등록할 수 없어요. 갱신 가격이 등록 가격과 다르면 구매할 때는 1년만 등록할 수 있어요.
+
+### 나중에 도메인 등록 기간을 연장할 수 있나요?
+네. 갱신 시점에 해당 TLD에서 제공하는 옵션에 따라 도메인을 갱신하거나 연장할 수 있어요.
+
+### 여러 해 등록이 끝나기 전에 알림을 받을 수 있나요?
+네. 하이퍼클래스는 도메인 만료 67일 전에 도메인 소유자에게 갱신 알림을 자동으로 보내요. 도메인이 만료된 경우에는 만료일 10일 뒤에 마지막 만료 안내도 보내요. 자동 갱신이 켜져 있든 꺼져 있든 두 이메일은 모두 발송돼요. 따로 설정할 필요는 없어요.
+
+### 하이퍼클래스로 구매한 도메인에도 WHOIS 개인정보 보호가 포함되나요?
+네. WHOIS 개인정보 보호가 자동으로 포함되어, 공개 WHOIS 조회에서 개인 등록 정보가 보이지 않아요.
+
+### 여러 해로 구매하면 갱신 가격이 달라지나요?
+아니요. 처음 결제한 금액은 선택한 등록 기간 전체의 비용이에요. 이후 연도의 갱신 가격은 그때의 표준 요금을 따라요.
+
+### 하이퍼클래스에서 구매할 수 있는 도메인 확장자에는 어떤 것이 있나요?
+`.com`, `.net`, `.org`, `.co`, `.uk`, `.church` 등 널리 쓰이는 여러 TLD(최상위 도메인)를 구매할 수 있어요. 검색하는 도메인에 따라 구매할 수 있는 확장자가 달라져요.

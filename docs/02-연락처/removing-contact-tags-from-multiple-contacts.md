@@ -1,123 +1,93 @@
 ---
-
-번역일: 2026-04-06
+원문: /support/solutions/articles/155000004998-removing-contact-tags-from-multiple-contacts
+번역일: 2026-11-06
 카테고리: 02-연락처
 ---
 
-# 여러 연락처에서 태그 일괄 제거하기
+# 여러 연락처의 태그 한꺼번에 제거하기
 
-이 가이드에서는 "태그 제거" 일괄 작업을 사용하여 여러 연락처에서 태그를 한 번에 제거하는 방법을 알려드립니다. 오래된 세그먼트를 정리하거나, CRM을 재구성하거나, 연락처 메타데이터를 정리할 때 이 기능을 사용하면 정확한 기록을 빠르고 효율적으로 유지할 수 있습니다. 이 작업이 무엇인지, 왜 유용한지, 그리고 정확히 어떻게 수행하는지 단계별로 안내해드리겠습니다.
+**태그 제거** 일괄 작업으로 여러 연락처에서 태그를 한 번에 지울 수 있어요. 오래된 세그먼트를 정리하거나 CRM 구조를 바꿀 때 쓰면 편해요. 이 문서에서는 이 작업이 무엇인지, 어떤 점이 좋은지, 어떻게 진행하는지 차례대로 안내해요.
 
----
+## 여러 연락처의 태그를 한꺼번에 제거한다는 건
 
-**목차**
+태그를 일괄로 제거하면 연락처 데이터를 빠르게 정리하거나 다시 구성할 수 있어요. 연락처 세분화를 새로 해야 할 때, 캠페인이 끝났을 때, 필요 없는 태그가 CRM에 쌓였을 때 특히 유용해요. 연락처를 하나씩 편집하지 않아도 되고, 모든 연락처에 같은 내용이 빠르게 반영돼요.
 
-- [여러 연락처에서 태그 제거란 무엇인가요](#여러-연락처에서-태그-제거란-무엇인가요)
-- [여러 연락처에서 태그 제거의 주요 장점](#여러-연락처에서-태그-제거의-주요-장점)
-- [연락처 태그 일괄 제거 설정하기](#연락처-태그-일괄-제거-설정하기)
-- [자주 묻는 질문](#자주-묻는-질문)
----
+## 이렇게 활용할 수 있어요
 
-# **여러 연락처에서 태그 제거란 무엇인가요**
+일괄 태그 제거를 쓰면 CRM 관리가 쉬워지고 연락처 세분화도 깔끔하게 유지돼요.
 
-태그 일괄 제거는 연락처 데이터를 빠르게 정리하거나 재정리할 수 있는 기능입니다. 연락처 세그먼테이션을 업데이트해야 하거나, 캠페인이 종료되었거나, 관련 없는 태그가 CRM을 어지럽히고 있을 때 특히 유용합니다. 각 연락처를 개별적으로 편집하는 대신, 일괄 제거를 통해 신속하고 일관된 업데이트가 가능합니다.
+- 많은 연락처의 태그를 한 번에 지워서 시간을 아껴요.
+- 자동화에 영향을 주는 오래되거나 잘못된 태그를 없앨 수 있어요.
+- 연락처 태그 구조를 체계적으로 유지할 수 있어요.
+- 쓰지 않거나 겹치는 라벨을 정리해서 혼동을 줄여요.
+- 잘못된 그룹을 없애서 리포트가 정확해져요.
 
----
+## 태그 제거 일괄 작업 진행하기
 
-## **여러 연락처에서 태그 제거의 주요 장점**
+**연락처** 페이지에서 한 명 이상의 연락처에서 바로 태그를 제거하는 방법이에요.
 
-태그 일괄 제거는 CRM 관리를 간소화하고 깔끔하고 정확한 연락처 세그먼테이션을 보장합니다. 다음과 같은 이유로 유용합니다:
+1. 대시보드 왼쪽 메뉴에서 **연락처**를 클릭해 연락처 목록을 열어요.
 
-- 많은 연락처에서 태그를 한 번에 제거하여 시간 절약
-- 자동화에 영향을 주는 오래되거나 잘못된 태그 제거
-- 체계적인 연락처 태그 구조 유지
-- 사용하지 않거나 중복된 라벨을 정리하여 혼란 감소
-- 잘못된 그룹핑을 제거하여 정확한 리포팅 지원
+   ![왼쪽 메뉴에서 연락처 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044838975/original/W--eInChzuHCwzGDTL77BthWTwaI5eoPug.png?1744248886)
 
----
+2. 왼쪽 체크박스로 태그를 제거할 연락처를 선택해요. 연락처를 하나씩 선택해도 되고, 필터로 그룹을 좁혀서 선택해도 돼요.
 
-## **연락처 태그 일괄 제거 설정하기**
+   ![태그를 제거할 연락처 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044838997/original/kqmzUS5Smg8UWGfdHCUWwVLFhLDLB6jJPQ.png?1744248909)
 
-이 섹션에서는 연락처 페이지에서 직접 하나 이상의 연락처에서 태그를 제거하는 방법을 안내합니다.
+3. 연락처를 선택한 상태에서 상단 액션 바의 **태그 제거** 아이콘을 클릭해요. 태그 제거용 일괄 작업 창이 열려요.
 
-### **"연락처(Contacts)" 탭으로 이동**
+   ![상단 액션 바의 태그 제거 아이콘](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044839009/original/hg7lnS-KsOfS0VvXlK-HxIj5uNJH1d8R2w.png?1744248947)
 
-대시보드의 왼쪽 네비게이션 메뉴에서 연락처(Contacts)를 클릭하여 연락처 목록에 액세스합니다.
+4. 나타나는 팝업에서 **Action Name**(액션 이름)에 이 작업의 이름을 입력해요. 나중에 **일괄 작업** 화면에서 이 작업을 쉽게 찾을 수 있어요.
 
-![연락처 탭으로 이동](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044838975/original/W--eInChzuHCwzGDTL77BthWTwaI5eoPug.png?1744248886)
+   ![액션 이름 입력](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044839023/original/r-MBIG19VLPQLi0As5ps0jEeXplrV6vcjA.png?1744248980)
 
-### **여러 연락처 선택**
+5. 선택한 연락처의 태그를 모두 지우려면 **모든 태그 제거** 체크박스를 선택해요. 지울 태그를 따로 고르지 않아도 연락처에 붙은 태그가 전부 제거돼요. 정리 작업을 하거나 새 태그 구조로 처음부터 시작하고 싶을 때 알맞아요.
 
-왼쪽의 체크박스를 사용하여 태그를 제거하려는 연락처를 선택합니다. 개별 레코드를 선택하거나 필터를 사용해 그룹을 좁힐 수 있습니다.
+   {% hint style="warning" %}
+   이 옵션을 켜면 모든 태그가 한 번에 지워져요. 켜기 전에 정말 전부 지워도 되는지 확인하세요.
+   {% endhint %}
 
-![여러 연락처 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044838997/original/kqmzUS5Smg8UWGfdHCUWwVLFhLDLB6jJPQ.png?1744248909)
+   ![모든 태그 제거 체크박스](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044839049/original/fENFQfl45jB-Qun4-ONJCa_tGbiF8rnL8w.png?1744249012)
 
-### **"태그 제거" 아이콘 클릭**
+6. 특정 태그만 지우려면 **태그** 드롭다운에서 제거할 태그를 하나 이상 선택해요. 목록에는 기존 태그가 모두 나오고, 스크롤하거나 검색해서 찾을 수 있어요. 나머지 태그는 그대로 유지돼요.
 
-연락처를 선택한 후, 상단 작업 바에 있는 태그 제거 아이콘을 클릭합니다. 그러면 태그 제거를 위한 일괄 작업 패널이 열립니다.
+   {% hint style="info" %}
+   선택한 태그만 제거하려면 **모든 태그 제거** 체크박스는 선택하지 마세요.
+   {% endhint %}
 
-![태그 제거 아이콘 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044839009/original/hg7lnS-KsOfS0VvXlK-HxIj5uNJH1d8R2w.png?1744248947)
+   ![태그 드롭다운에서 제거할 태그 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044839063/original/9lBVXRoPAR1hd4iC78fLppDJq2iXgTIlgA.png?1744249071)
 
-### **작업 이름 추가**
+7. 제거할 태그나 옵션을 정했으면 **태그 제거** 버튼을 클릭해 작업을 시작해요. 작업이 시작됐다는 팝업 메시지가 나타나요.
 
-나타나는 팝업에서 이 작업에 대한 작업 이름을 입력합니다. 이를 통해 나중에 일괄 작업 대시보드에서 작업을 식별할 수 있습니다.
+   ![태그 제거 버튼과 작업 시작 확인 메시지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044839696/original/H07tEFcXHvBA4PBR2kXw9bhB13Zq-PzmIQ.png?1744251371)
 
-![작업 이름 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044839023/original/r-MBIG19VLPQLi0As5ps0jEeXplrV6vcjA.png?1744248980)
+8. 작업을 제출하면 확인 메시지가 나타나요. **진행 상황 확인**을 클릭하면 일괄 작업의 진행 상태를 실시간으로 볼 수 있어요.
 
-### **선택한 연락처에서 모든 태그 제거**
+   ![진행 상황 확인 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044839713/original/hYUOq88mJmnwI7R93gdbVsiSETCYlm-2ZQ.png?1744251411)
 
-선택한 연락처에서 모든 태그를 완전히 지우고 싶다면, **모든 태그 제거** 상자를 체크하세요. 이 옵션은 해당 연락처와 연관된 모든 태그를 제거합니다—어떤 태그인지 지정할 필요가 없습니다. 정리 작업이나 새로운 태그 구조로 새롭게 시작하고 싶을 때 이상적입니다. 모든 것을 한 번에 지우므로, 활성화하기 전에 정말로 모든 태그를 제거하고 싶은지 확인하세요.
+9. **일괄 작업** 화면에서 결과를 확인해요. 이 화면에는 태그 제거 작업이 모두 기록돼요. 작업 이름, 시작 시간, 완료 시간을 볼 수 있고, **Show Stats**(통계 보기) 링크를 클릭하면 연락처별 성공 여부 같은 자세한 결과를 확인할 수 있어요.
 
-![모든 태그 제거](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044839049/original/fENFQfl45jB-Qun4-ONJCa_tGbiF8rnL8w.png?1744249012)
-
-### **제거할 태그 선택**
-
-**태그** 드롭다운을 사용하여 선택한 연락처에서 제거하려는 하나 이상의 태그를 선택합니다. 목록에는 기존의 모든 태그가 표시되며, 스크롤하거나 검색하여 올바른 태그를 찾을 수 있습니다. 다른 태그는 그대로 두고 특정 태그만 제거하고 싶을 때 유용합니다. 선택한 태그만 제거하려면 **"모든 태그 제거"** 체크박스를 선택하지 마세요.
-
-![제거할 태그 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044839063/original/9lBVXRoPAR1hd4iC78fLppDJq2iXgTIlgA.png?1744249071)
-
-### **작업 확인**
-
-태그 또는 태그 제거 설정이 선택되면, 태그 제거 버튼을 클릭하여 프로세스를 시작합니다. 팝업 메시지가 작업이 시작되었음을 확인합니다.
-
-![작업 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044839696/original/H07tEFcXHvBA4PBR2kXw9bhB13Zq-PzmIQ.png?1744251371)
-
-### **일괄 작업 상태 모니터링**
-
-작업을 제출한 후, 시스템이 확인 메시지를 표시합니다. 진행 상황 확인을 클릭하여 일괄 작업의 실시간 상태를 추적하세요.
-
-![일괄 작업 상태 모니터링](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044839713/original/hYUOq88mJmnwI7R93gdbVsiSETCYlm-2ZQ.png?1744251411)
-
-### **일괄 작업 대시보드에서 결과 검토**
-
-일괄 작업 대시보드에는 모든 태그 제거 작업이 기록됩니다. 작업 이름, 시작 시간, 완료 시간, 그리고 연락처 수준의 성공 여부를 포함한 자세한 결과를 보여주는 통계 보기 링크를 확인할 수 있습니다.
-
-![일괄 작업 대시보드에서 결과 검토](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044839721/original/S_HodrrlGaM_6Bf0sFH5_IgbKUe5UIQ9Jg.png?1744251442)
-
----
+   ![일괄 작업 화면의 작업 기록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155044839721/original/S_HodrrlGaM_6Bf0sFH5_IgbKUe5UIQ9Jg.png?1744251442)
 
 ## 자주 묻는 질문
 
-**Q: 연락처에서 여러 태그를 한 번에 제거할 수 있나요?**
+### 여러 태그를 한 번에 제거할 수 있나요?
 
-네. 한 번의 일괄 작업으로 원하는 만큼 많은 태그를 선택해서 제거할 수 있습니다. 태그 필드의 드롭다운에서 선택하기만 하면 됩니다.
+네, 한 번의 일괄 작업에서 원하는 만큼 태그를 선택해 제거할 수 있어요. **태그** 필드의 드롭다운에서 태그를 고르면 돼요.
 
-**Q: 태그를 제거하면 연락처 데이터가 삭제되나요?**
+### 태그를 제거하면 연락처 데이터도 삭제되나요?
 
-아니요, 태그 제거는 연락처가 그룹화되거나 세그먼트되는 방식만 업데이트합니다. 연락처 정보는 삭제되지 않습니다.
+아니요. 태그를 제거하면 연락처가 그룹으로 묶이거나 세분화되는 방식만 바뀌어요. 연락처 정보는 삭제되지 않아요.
 
-**Q: 선택한 연락처에서 모든 태그를 한 번에 제거할 수 있나요?**
+### 선택한 연락처의 태그를 한 번에 전부 제거할 수 있나요?
 
-네, 작업 창에서 모든 태그 제거 옵션을 체크하기만 하면 선택한 레코드에서 모든 태그가 지워집니다.
+네, 작업 창에서 **모든 태그 제거** 옵션을 선택하면 선택한 연락처의 태그가 모두 제거돼요.
 
-**Q: 일괄 태그 제거를 취소할 수 있나요?**
+### 일괄 태그 제거를 되돌릴 수 있나요?
 
-태그 제거는 직접 취소할 수 없지만, 필요한 경우 태그 추가 일괄 작업을 사용해서 태그를 다시 적용할 수 있습니다.
+태그 제거는 직접 되돌릴 수 없어요. 필요하면 **Add Tags**(태그 추가) 일괄 작업으로 태그를 다시 붙일 수 있어요.
 
-**Q: 어떤 연락처에서 태그가 제거되었는지 어디서 확인할 수 있나요?**
+### 어떤 연락처에서 태그가 제거됐는지 어디서 볼 수 있나요?
 
-일괄 작업 탭으로 이동하여 해당 작업 옆의 통계 보기를 클릭하면 연락처의 자세한 목록과 성공 상태를 볼 수 있습니다.
-
----
-*원문 최종 수정: Wed, 9 Apr, 2025 at 9:28 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+**일괄 작업** 탭으로 이동해서 해당 작업 옆의 **Show Stats**(통계 보기)를 클릭하세요. 연락처 목록과 성공 여부를 자세히 볼 수 있어요.

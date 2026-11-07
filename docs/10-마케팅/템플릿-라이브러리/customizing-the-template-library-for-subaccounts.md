@@ -1,50 +1,38 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 10-마케팅 > 템플릿-라이브러리
+원문: /support/solutions/articles/155000003917-customizing-the-template-library-for-subaccounts
+번역일: 2026-11-07
+카테고리: 10-마케팅
 ---
 
-# 하위 계정용 템플릿 라이브러리 커스터마이징
+# 서브 계정별로 템플릿 라이브러리 설정하기
 
-에이전시 관리자는 이제 하위 계정(Subaccounts)의 템플릿 및 카테고리 접근 권한을 제어할 수 있어서, 하위 계정의 필요에 따라 템플릿 라이브러리를 맞춤화할 수 있습니다.
+서브 계정마다 쓸 수 있는 템플릿과 카테고리를 다르게 정하는 방법을 안내해요. 에이전시 관리자는 서브 계정의 필요에 맞게 **템플릿 라이브러리**를 조정할 수 있어요.
 
-## 목차
+{% hint style="info" %}
+에이전시 관리자만 쓸 수 있어요.
+{% endhint %}
 
-- [하위 계정 뷰란 무엇인가요?](#하위-계정-뷰란-무엇인가요)
-- [언제 사용하나요?](#언제-사용하나요)
-- [템플릿 접근 권한을 커스터마이징하는 방법](#템플릿-접근-권한을-커스터마이징하는-방법)
+## 서브 계정 보기란?
 
-### 하위 계정 뷰란 무엇인가요?
+서브 계정 보기(Subaccount View)는 서브 계정 사용자가 이메일, 퍼널, 폼 등을 만들 때 **템플릿 라이브러리**가 어떻게 보이는지를 말해요. 관리자는 서브 계정마다 보여 줄 템플릿과 카테고리를 정할 수 있어요. 그러면 사용자는 자신에게 필요한 템플릿과 요금제에 맞는 템플릿만 쓰게 돼요.
 
-**하위 계정 뷰(Subaccount View)**는 하위 계정 사용자가 이메일, 퍼널, 폼 등을 제작할 때 템플릿 라이브러리에서 보게 되는 화면을 의미합니다. 관리자는 사용 가능한 템플릿과 카테고리를 커스터마이징하여 각 하위 계정에 표시되는 콘텐츠를 제어할 수 있습니다. 이를 통해 사용자는 자신의 필요와 플랜에 맞는 템플릿에만 접근할 수 있습니다.
+## 이럴 때 쓰세요
 
-### 언제 사용하나요?
+1. 업종이 다를 때: 특정 업종의 서브 계정에는 관련 있는 템플릿만 켜 두세요.
+2. 필요 없는 카테고리가 있을 때: 일부 서브 계정에서 불필요한 카테고리를 숨기세요.
+3. 접근을 제한할 때: 선택한 서브 계정에서 특정 템플릿을 쓰지 못하게 막으세요.
+4. 프리미엄 템플릿을 제공할 때: 상위 요금제에만 전용 템플릿을 제공하세요.
+5. SaaS 요금제별로 나눌 때: SaaS 요금제 등급에 따라 카테고리를 다르게 설정하세요.
 
-- **다양한 업종**: 특정 업계의 하위 계정에게만 관련된 템플릿만 제공하고 싶을 때
-- **불필요한 카테고리**: 특정 하위 계정에게 불필요한 카테고리를 숨기고 싶을 때
-- **제한된 접근**: 선별된 하위 계정에서 특정 템플릿 접근을 차단하고 싶을 때
-- **프리미엄 템플릿**: 상위 플랜 사용자에게만 독점 템플릿을 제공하고 싶을 때
-- **SaaS 플랜**: 다양한 SaaS 플랜 레벨에 따라 카테고리를 커스터마이징하고 싶을 때
+## 템플릿 접근 설정하는 방법
 
-### 템플릿 접근 권한을 커스터마이징하는 방법
+1. **Template Library Admin**(템플릿 라이브러리 관리)으로 이동해 **설정**을 열어요.
+2. **Customize for Subaccounts**(서브 계정용 사용자 지정)를 선택해요.
+   ![Customize for Subaccounts 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034987049/original/_qMX-5bX4JEXJrL5r2lLSJvBo3DuqSGTnw.png?1729265339)
+3. 설정할 서브 계정을 찾아 **편집**을 클릭해요.
+   ![서브 계정 목록에서 편집 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034987118/original/W9Yv9glIIBeGM47Zla4GlLytwnXxSSXLKQ.png?1729265385)
+4. 필요에 따라 카테고리나 템플릿을 **숨기기** 또는 **표시**로 바꿔요.
+   ![카테고리와 템플릿 숨기기·표시 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034987103/original/V465CK40H6Xmy0HrqUYqcZm2rP3_1pjOJA.png?1729265371)
+5. **저장**을 클릭해 변경 내용을 적용해요.
 
-- Template Library Admin(템플릿 라이브러리 관리)으로 이동해서 Settings(설정)을 열어주세요.
-- Customize for Subaccounts(하위 계정용 커스터마이징)를 선택하세요.
-
-![템플릿 라이브러리 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034987049/original/_qMX-5bX4JEXJrL5r2lLSJvBo3DuqSGTnw.png?1729265339)
-
-- 하위 계정을 찾아서 Edit(편집) 버튼을 클릭하세요.
-
-![하위 계정 편집](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034987118/original/W9Yv9glIIBeGM47Zla4GlLytwnXxSSXLKQ.png?1729265385)
-
-- 필요에 따라 카테고리나 템플릿을 숨기거나 표시하세요.
-
-![카테고리 및 템플릿 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034987103/original/V465CK40H6Xmy0HrqUYqcZm2rP3_1pjOJA.png?1729265371)
-
-- Save(저장) 버튼을 클릭해서 변경사항을 적용하세요.
-
-이 기능을 사용하면 템플릿 접근 권한을 제어할 수 있고, 하위 계정이 자신의 필요와 플랜에 맞는 관련 리소스만 볼 수 있도록 보장할 수 있습니다.
-
----
-*원문 최종 수정: Tue, 22 Oct, 2024 at 10:47 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+이 기능으로 템플릿 접근을 직접 관리할 수 있어요. 서브 계정에는 필요와 요금제에 맞는 자료만 보여 줄 수 있어요.

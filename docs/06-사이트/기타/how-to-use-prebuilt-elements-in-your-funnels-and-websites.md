@@ -1,42 +1,32 @@
 ---
-
-번역일: 2026-04-09
-카테고리: 99-리커버리
+원문: /support/solutions/articles/155000002908-how-to-use-prebuilt-elements-in-your-funnels-and-websites
+번역일: 2026-11-07
+카테고리: 06-사이트
 ---
 
-# 퍼널과 웹사이트에서 미리 제작된 요소(Prebuilt Elements) 사용하는 방법
+# 사전 제작 요소로 퍼널과 웹사이트 빠르게 꾸미기
 
-좌측 사이드바에 멋진 새 기능을 출시했습니다 - 미리 제작된 요소(Prebuilt Elements)입니다. 디자인 과정을 효율화하고 웹사이트 기능을 강화하는 강력한 디자인 요소들이에요. 최신 업데이트에는 미리 제작된 버튼, 이미지, 소셜 미디어 아이콘, 그리고 진행률 바가 포함되어 있습니다.
+퍼널과 웹사이트 빌더의 왼쪽 사이드바에 **Prebuilt Elements**(사전 제작 요소)가 새로 생겼어요. 미리 만들어 둔 디자인 요소를 가져다 쓰면 디자인 작업이 빨라지고 웹사이트 기능도 보강할 수 있어요. 이번에는 사전 제작 버튼, 이미지, 소셜 미디어 아이콘, 진행률 표시줄이 추가됐어요.
 
-**1. 미리 제작된 버튼:** 다양한 종류의 아름답고 미리 디자인된 버튼 컬렉션으로, 처음부터 만드는 번거로움 없이 퍼널/웹사이트에 전문적인 느낌을 더할 수 있습니다.
+## 새로 추가된 요소
 
-**2. 미리 제작된 이미지:** 디자인 바에 완벽하게 통합된 고품질 무료 이미지 라이브러리로 웹사이트를 향상시키세요. 드래그 앤 드롭 기능을 활용해 이미지를 웹페이지에 쉽게 추가할 수 있어, 시간을 절약하고 창작 흐름을 유지할 수 있습니다.
+1. 사전 제작 버튼: 보기 좋게 디자인된 버튼을 다양하게 모아 두었어요. 처음부터 만들지 않아도 퍼널과 웹사이트가 전문적으로 보여요.
+2. 사전 제작 이미지: 품질 좋은 로열티 프리 이미지를 골라 디자인 바에 담아 두었어요. 이미지를 끌어다 놓기만 하면 웹 페이지에 넣을 수 있어서 시간을 아끼고 워크플로우도 끊기지 않아요.
+3. 소셜 미디어 아이콘: 미리 디자인된 소셜 미디어 아이콘 모음이에요. Facebook, Twitter, Instagram, LinkedIn 등 주요 플랫폼의 아이콘이 모두 있어서 웹사이트의 도달 범위를 넓히고 방문자 참여를 높이는 데 도움이 돼요.
+4. 진행률 표시줄: 단계별 목표 달성, 로딩 표시, 진행 정도를 보기 좋게 보여 주는 요소예요. 사용자 경험을 높일 수 있어요.
 
-**3. 소셜 미디어 아이콘:** 미리 디자인된 소셜 미디어 아이콘의 포괄적인 세트로 웹사이트의 도달 범위와 사용자 참여도를 확장하세요. 페이스북, 트위터, 인스타그램, 링크드인 등 모든 주요 소셜 미디어 플랫폼의 아이콘을 제공합니다.
+## 사용할 수 있는 위치
 
-**4. 진행률 바:** 마일스톤, 로딩 표시기, 진행률 지표를 보여주는 시각적으로 매력적인 진행률 바로 사용자 경험을 개선하세요.
+1. 웹사이트 빌더 화면에서 **Left Side Design Bar**(왼쪽 디자인 바)를 엽니다.
+2. 각 요소별로 새 섹션이 있어요. 살펴보고 필요한 요소를 골라 넣으세요.
 
-### **접근 방법**
+## 이럴 때 좋아요
 
-- 웹사이트 빌더 인터페이스에서 좌측 디자인 바를 여세요.
-- 각 기능에 대한 새로운 섹션들을 찾을 수 있으며, 바로 탐색하고 적용할 수 있습니다.
+- 생산성 향상: 처음부터 디자인하지 않아도 품질 좋은 웹 요소를 빠르게 만들고 수정할 수 있어요.
+- 사용자 참여 확대: 소셜 미디어 아이콘과 진행률 표시줄로 사이트에서의 상호작용과 참여를 높일 수 있어요.
+- 일관성: 쉽게 수정할 수 있는 요소로 웹사이트 전체의 디자인을 통일감 있게 유지할 수 있어요.
 
-### **장점**
-
-- **생산성 향상:** 처음부터 디자인할 필요 없이 고품질 웹 요소를 빠르게 구축하고 커스터마이징할 수 있습니다.
-
-- **사용자 참여도:** 소셜 미디어 아이콘과 진행률 바를 사용해 사이트의 상호작용과 참여도를 향상시킬 수 있습니다.
-
-- **일관성:** 쉽게 커스터마이징할 수 있는 요소들로 웹사이트 전반에 일관된 디자인 언어를 유지할 수 있습니다.
-
-![미리 제작된 요소 컬렉션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155029909647/original/5DBl1gG4sEH8OoSbGdNXoAdGnVl1z8Kr8A.jpeg?1721940940)
-
-![디자인 바 인터페이스](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155029909646/original/MDLdqukQqy-C4iK_z8O9AZbIdW-McjlwJQ.png?1721940939)
-
-![소셜 미디어 아이콘 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155029909649/original/JNJvxitczjoN5y095CFQcLH_SoCcfJMVQw.jpeg?1721940940)
-
-![진행률 바 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155029909648/original/1-C7VPdViIt5ffm2mQjofw4iH_ivv6DkvA.jpeg?1721940940)
-
----
-*원문 최종 수정: Thu, 25 Jul, 2024 at 3:59 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+![사전 제작 요소 화면 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155029909647/original/5DBl1gG4sEH8OoSbGdNXoAdGnVl1z8Kr8A.jpeg?1721940940)
+![사전 제작 요소 화면 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155029909646/original/MDLdqukQqy-C4iK_z8O9AZbIdW-McjlwJQ.png?1721940939)
+![사전 제작 요소 화면 3](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155029909649/original/JNJvxitczjoN5y095CFQcLH_SoCcfJMVQw.jpeg?1721940940)
+![사전 제작 요소 화면 4](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155029909648/original/1-C7VPdViIt5ffm2mQjofw4iH_ivv6DkvA.jpeg?1721940940)

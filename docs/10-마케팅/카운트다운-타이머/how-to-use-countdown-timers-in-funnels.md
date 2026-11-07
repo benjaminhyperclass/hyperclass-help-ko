@@ -1,132 +1,90 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 10-마케팅 > 카운트다운-타이머
+원문: /support/solutions/articles/155000003122-how-to-use-countdown-timers-in-funnels-
+번역일: 2026-11-06
+카테고리: 10-마케팅
 ---
 
-# 퍼널에서 카운트다운 타이머 사용하는 방법
+# 퍼널에서 카운트다운 타이머 사용하기
 
-카운트다운 타이머는 마감일까지 시각적으로 시간을 세어줌으로써 방문자가 행동을 취하도록 동기를 부여합니다. 번개 세일, 한정 시간 오퍼, 이벤트 등록 등에 완벽한 도구입니다. Hyperclass에서는 나만의 카운트다운 타이머를 디자인하고 퍼널이나 웹사이트에 쉽게 추가할 수 있습니다.
-
----
-
-**목차**
-
-- [카운트다운 타이머란?](#카운트다운-타이머란)
-- [카운트다운 타이머의 주요 장점](#카운트다운-타이머의-주요-장점)
-- [카운트다운 타이머 만드는 방법](#카운트다운-타이머-만드는-방법)
-- [퍼널에 카운트다운 타이머 추가하기](#퍼널에-카운트다운-타이머-추가하기)
-- [HTML 카운트다운 타이머 요소 사용하기](#html-카운트다운-타이머-요소-사용하기)
-- [코드 블록 카운트다운 타이머 요소 사용하기](#코드-블록-카운트다운-타이머-요소-사용하기)
-- [자주 묻는 질문](#자주-묻는-질문)
-- [관련 문서](#관련-문서)
-
----
+카운트다운 타이머는 마감 시각까지 남은 시간을 보여 주어 방문자가 행동하도록 유도해요. 플래시 세일, 기간 한정 오퍼, 이벤트 등록 페이지에 잘 어울려요. 하이퍼클래스에서 타이머를 직접 디자인해 퍼널이나 웹사이트에 쉽게 추가할 수 있어요.
 
 ## 카운트다운 타이머란?
 
-카운트다운 타이머는 특정 이벤트나 마감일까지 남은 시간을 시각적으로 추적합니다. Hyperclass에서는 이런 타이머를 여러 사이트에서 재사용하고, 브랜드에 맞게 스타일링하며, 목표에 따라 다르게 동작하도록 설정할 수 있습니다. 런칭 시 급박감을 조성하거나, 오퍼 만료 알림, 이벤트 등록 등에 활용할 수 있습니다.
+카운트다운 타이머는 특정 이벤트나 마감까지 남은 시간을 눈에 보이게 알려 주는 요소예요. 하이퍼클래스에서는 타이머를 여러 사이트에서 다시 쓸 수 있고, 브랜드에 맞게 꾸밀 수 있어요. 목표에 따라 동작 방식도 설정할 수 있어요. 출시 기간의 긴박감을 높이거나, 오퍼 만료를 알리거나, 이벤트 등록을 유도할 때 활용해 보세요.
 
----
+## 카운트다운 타이머의 장점
 
-## 카운트다운 타이머의 주요 장점
+- 긴박감과 희소성: 실시간으로 줄어드는 시간을 보여 주어 바로 행동하도록 유도해요.
+- 다양한 타이머 유형: **Fixed**(고정), **Recurring**(반복), **Dynamic**(동적) 타이머로 여러 캠페인 방식에 대응할 수 있어요.
+- 재사용 가능한 디자인: 한 번 만든 타이머를 다시 만들 필요 없이 여러 페이지와 퍼널에서 쓸 수 있어요.
+- 스타일 조정: 글꼴, 크기, 색상, 표시할 시간 단위를 브랜드에 맞게 바꿀 수 있어요.
 
-- **급박감과 희소성**: 실시간 카운트다운으로 즉각적인 행동을 유도합니다.
-- **다양한 타이머 유형**: 고정형, 반복형, 동적 타이머로 다양한 캠페인 스타일을 지원합니다.
-- **재사용 가능한 디자인**: 여러 페이지와 퍼널에서 다시 만들지 않고 타이머를 사용할 수 있습니다.
-- **스타일 제어**: 글꼴, 크기, 색상, 표시할 시간 단위를 브랜드에 맞게 조정할 수 있습니다.
+## 카운트다운 타이머 만들기
 
----
+퍼널에 넣기 전에 먼저 **마케팅** 메뉴에서 타이머를 만들어 두세요.
 
-## 카운트다운 타이머 만드는 방법
+1. **마케팅 > 카운트다운 타이머**로 이동해요. 파란색 **+ 신규** 버튼을 눌러 새 카운트다운 타이머를 만들어요.
 
-퍼널에 추가하기 전에 먼저 마케팅 섹션에서 카운트다운 타이머를 디자인하고 만들어야 합니다.
+   ![카운트다운 타이머 화면에서 새 타이머를 만드는 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047685542/original/uIc7oQLLEHuYh1gYwzW-iiHDwYTDmXBHiQ.jpeg?1748969391)
+2. 카운트다운 타이머 템플릿을 고르고 **Continue with Template**(템플릿으로 계속)을 눌러요.
 
-- `Marketing(마케팅) > Countdown Timers(카운트다운 타이머)`로 이동합니다. 파란색 + New 버튼을 클릭하여 새 카운트다운 타이머를 만듭니다.
+   ![카운트다운 타이머 템플릿 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047685558/original/tASA6958sBULL4WOCdoC7HjQawLZSnNNVQ.jpeg?1748969410)
+3. 왼쪽 위의 **일반** 탭에서 **Timer Type**(타이머 유형)을 골라요.
 
-![카운트다운 타이머 생성](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047685542/original/uIc7oQLLEHuYh1gYwzW-iiHDwYTDmXBHiQ.jpeg?1748969391)
+   - **Fixed**: 특정 날짜와 시간에 끝나요.
+   - **Recurring**: 정해진 간격(예: 매일, 매주)마다 다시 시작해요.
+   - **Dynamic**: 연락처의 반응에 따라 달라져요. 이메일에 쓰기 좋아요.
+4. **종료일**을 설정하고 **시간대**를 선택한 다음 **리다이렉트 URL**을 입력해요.
 
-- 카운트다운 타이머 템플릿을 선택하고 Continue with Template을 클릭합니다.
+   **Adapt to Contact Time Zone**(연락처 시간대에 맞추기)을 켜면 방문자의 시간대에 맞춰 시간대가 바뀌어요. 자세한 내용은 "Timezone Adaptation in Countdown Timers" 문서를 참고하세요.
 
-![템플릿 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047685558/original/tASA6958sBULL4WOCdoC7HjQawLZSnNNVQ.jpeg?1748969410)
+   ![일반 탭에서 종료일, 시간대, 리다이렉트 URL을 설정하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155071182220/original/uvqLAKay8kSgMmy2bV-dp0nEwLQuecIziA.png?1778615456)
+5. 왼쪽의 **스타일** 탭에서 표시할 시간 단위(예: 시간, 분, 초)를 켜거나 끄세요. 스타일 설정으로 타이머의 글꼴, 크기, 색상도 바꿀 수 있어요.
 
-- 왼쪽 상단의 General 탭에서 타이머 유형을 선택합니다:
-  - **Fixed(고정형)** – 특정 날짜와 시간에 끝납니다.
-  - **Recurring(반복형)** – 정기적인 간격으로 재설정됩니다(예: 매일, 매주).
-  - **Dynamic(동적)** – 연락처 상호작용에 따라 조정됩니다(이메일에 이상적).
-
-- Timer End Date(타이머 종료 날짜)를 설정하고, Time Zone(시간대)를 선택하며, Redirect URL을 정의합니다.
-
-![타이머 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047685616/original/gbs-h3v-4ULU4kxxQAyH1tCKIij6C2P99A.jpeg?1748969539)
-
-- 왼쪽의 Style 탭에서 표시할 시간 단위(예: 시간, 분, 초)를 토글하고, 스타일 컨트롤을 사용해 타이머의 글꼴, 크기, 색상을 커스터마이징합니다.
-
-![스타일 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047685687/original/6wdIaZzsKVgWQki4i9uFOTwrvx8Oi7kejA.jpeg?1748969612)
-
----
+   ![스타일 탭에서 시간 단위와 글꼴, 크기, 색상을 설정하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047685687/original/6wdIaZzsKVgWQki4i9uFOTwrvx8Oi7kejA.jpeg?1748969612)
 
 ## 퍼널에 카운트다운 타이머 추가하기
 
-퍼널에 카운트다운 타이머를 추가하는 방법은 두 가지입니다: HTML 카운트다운 타이머 요소를 사용하거나 코드 블록 요소를 사용하는 것입니다. 카운트다운 타이머 요소는 Hyperclass 내에서 빠른 드래그 앤 드롭 사용에 이상적이고, 코드 블록 방법은 써드파티 플랫폼에 더 적합합니다.
+퍼널에 타이머를 넣는 방법은 두 가지예요. 카운트다운 타이머 요소를 쓰는 방법과 코드 요소를 쓰는 방법이에요. 카운트다운 타이머 요소는 하이퍼클래스 안에서 드래그 앤 드롭으로 빠르게 넣기에 좋아요. 코드 요소를 쓰는 방법은 외부 플랫폼에 넣을 때 알맞아요.
 
-### HTML 카운트다운 타이머 요소 사용하기
+### 카운트다운 타이머 요소로 추가하기
 
-드래그 앤 드롭 퍼널 편집기를 사용해 Hyperclass에서 완전히 작업하는 사용자에게 최적입니다.
+하이퍼클래스의 드래그 앤 드롭 퍼널 편집기 안에서 모든 작업을 하는 경우에 알맞아요.
 
-- `Sites(사이트) > Funnels(퍼널)`로 이동합니다.
-- 원하는 사이트를 선택한 후, 업데이트하려는 퍼널 단계에서 Edit Page를 클릭합니다.
-- 빌더 왼쪽 상단의 플러스(+) 아이콘을 클릭해 Add Element 패널을 엽니다. Countdown Timers 요소를 선택합니다.
+1. **사이트 > 퍼널**로 이동해요.
+2. 원하는 사이트를 선택하고, 수정할 퍼널 단계에서 **Edit Page**(페이지 편집)를 눌러요.
+3. 빌더 왼쪽 위의 플러스(+) 아이콘을 눌러 **Add Element**(요소 추가) 패널을 열어요. 그다음 **카운트다운 타이머** 요소를 선택해요.
 
-![카운트다운 타이머 요소 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047685471/original/AJ-RilGvSf8lQG1y6IBEg5Yptca3mzdouA.jpeg?1748969293)
+   ![요소 추가 패널에서 카운트다운 타이머 요소를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047685471/original/AJ-RilGvSf8lQG1y6IBEg5Yptca3mzdouA.jpeg?1748969293)
+4. 이전에 만들어 둔 타이머 목록에서 하나를 골라요. 선택한 타이머를 페이지의 원하는 섹션으로 끌어다 놓아요.
 
-- 이전에 만든 타이머 목록에서 선택합니다. 선택한 타이머를 페이지의 적절한 섹션으로 드래그합니다.
+### 코드 요소로 추가하기
 
-### 코드 블록 요소 사용하기
+코드로 카운트다운 타이머를 삽입하는 방법이에요. 외부 플랫폼에 추가할 때 유용해요. 카운트다운 타이머의 코드를 복사하는 방법은 "How to Use the "Copy Code" Feature in Countdown Timers" 문서를 참고하세요.
 
-코드를 사용해 카운트다운 타이머를 삽입하는 방법으로, 써드파티 플랫폼에 추가할 때 유용합니다. 카운트다운 타이머에서 코드를 복사하는 방법에 대한 자세한 정보는 [여기를 클릭하세요.](how-to-use-the-copy-code-feature-in-countdown-timers.md)
+1. **마케팅 > 카운트다운 타이머**로 이동해 사용할 타이머를 눌러요.
+2. 오른쪽 위의 **코드 복사** 버튼을 눌러요. 팝업이 열리면 파란색 **복사** 버튼을 눌러요.
 
-- `Marketing(마케팅) > Countdown Timers(카운트다운 타이머)`로 이동하여 사용하려는 타이머를 클릭합니다.
-- 오른쪽 상단의 Copy Code 버튼을 클릭합니다. 그런 다음 팝업에서 파란색 Copy 버튼을 클릭합니다.
+   ![코드 복사 버튼과 팝업의 복사 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047685346/original/WDGurI-ibhc732v-8R5oKUYp4LM7AqDItg.jpeg?1748969187)
+3. **사이트 > 퍼널**에서 퍼널을 열어요.
+4. 왼쪽 위의 플러스(+) 아이콘을 눌러 요소 패널을 열어요.
+5. **코드** 요소를 선택하고, 타이머를 표시할 위치로 끌어다 놓아요.
 
-![코드 복사](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047685346/original/WDGurI-ibhc732v-8R5oKUYp4LM7AqDItg.jpeg?1748969187)
+   ![요소 패널에서 코드 요소를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047685405/original/Gx7OGkQSy3Z0a5fpEKOuNWEeGP-F6NLHxA.jpeg?1748969241)
+6. 코드 요소를 눌러 편집기를 열고, 앞에서 복사한 커스텀 코드를 붙여 넣어요.
 
-- `Sites(사이트) > Funnels(퍼널)`에서 퍼널을 엽니다.
-- 왼쪽 상단의 플러스(+) 아이콘을 클릭해 요소 패널을 엽니다.
-- Code 요소를 선택하고 타이머가 나타나길 원하는 곳으로 드래그합니다.
-
-![코드 요소 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047685405/original/Gx7OGkQSy3Z0a5fpEKOuNWEeGP-F6NLHxA.jpeg?1748969241)
-
-- 코드 블록을 클릭해 편집기를 열고, 앞서 복사한 커스텀 코드를 붙여넣습니다.
-
-![코드 편집](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047685437/original/xYGRJCDEJp6pfJoa5M7J_g2tYOkbWmrFVA.jpeg?1748969271)
-
----
+   ![코드 요소 편집기에 복사한 코드를 붙여 넣는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047685437/original/xYGRJCDEJp6pfJoa5M7J_g2tYOkbWmrFVA.jpeg?1748969271)
 
 ## 자주 묻는 질문
 
-**Q: 고정형, 반복형, 동적 타이머의 차이점은 무엇인가요?**
+### Fixed, Recurring, Dynamic 타이머는 어떻게 다른가요?
+Fixed 타이머는 전 세계 기준으로 정해진 특정 날짜와 시간에 끝나요. Recurring 타이머는 정해진 간격(예: 매일 오전 9시)마다 다시 시작해요. Dynamic 타이머는 연락처가 이메일을 열거나 페이지를 방문할 때 시작되는 개인별 카운트다운이에요.
 
-고정형 타이머는 특정한 전역 날짜/시간에 끝납니다. 반복형 타이머는 정의된 간격 후에 재설정됩니다(예: 매일 오전 9시). 동적 타이머는 연락처가 이메일을 열거나 페이지를 방문할 때 시작되는 개인화된 카운트다운입니다.
+### 한 타이머를 여러 퍼널에서 쓸 수 있나요?
+네, 타이머를 한 번 만들면 위의 두 방법 중 어느 쪽으로든 모든 퍼널이나 웹사이트에서 다시 쓸 수 있어요.
 
-**Q: 타이머를 여러 퍼널에서 사용할 수 있나요?**
+### 외부 웹사이트 빌더에서도 타이머를 쓸 수 있나요?
+네. **코드 복사** 기능으로 코드를 복사해 사용하는 플랫폼에 붙여 넣으면 돼요.
 
-네, 타이머를 한 번 만들면 어떤 방법을 사용하든 모든 퍼널이나 웹사이트에서 재사용할 수 있습니다.
-
-**Q: 써드파티 웹사이트 빌더에서 타이머를 사용할 수 있나요?**
-
-네. Copy Code 기능을 사용해서 선호하는 플랫폼에 코드 스니펫을 붙여넣으면 됩니다.
-
-**Q: 기존 퍼널에서 깨뜨리지 않고 타이머를 업데이트할 수 있나요?**
-
-네. 타이머에 대한 모든 업데이트는 배치된 모든 곳에 자동으로 반영됩니다. 카운트다운 타이머를 업데이트하려면 `Marketing(마케팅) > Countdown Timers(카운트다운 타이머)`로 이동하여 업데이트할 타이머에서 Edit을 클릭하세요.
-
-## 관련 문서
-
-- [이메일에서 카운트다운 타이머 사용하는 방법](how-to-use-countdown-timer-in-emails-.md)
-- [카운트다운 타이머 시작하기](getting-started-with-countdown-timer.md)
-- [이메일과 퍼널에서 카운트다운 타이머 동기화하기](sync-your-countdown-timer-in-email-and-funnels.md)
-- [카운트다운 타이머의 "코드 복사" 기능 사용하는 방법](https://help.gohlighlevel.com/en/support/solutions/articles/155000003103)
-
----
-*원문 최종 수정: Tue, 3 Jun, 2025 at 12:14 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### 이미 쓰고 있는 퍼널에 영향을 주지 않고 타이머를 수정할 수 있나요?
+네. 타이머를 수정하면 타이머가 놓인 모든 곳에 자동으로 반영돼요. 타이머를 수정하려면 **마케팅 > 카운트다운 타이머**로 이동해 수정할 타이머에서 **편집**을 누르세요.

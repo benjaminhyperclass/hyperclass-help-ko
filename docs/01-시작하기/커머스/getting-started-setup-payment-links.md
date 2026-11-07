@@ -1,56 +1,39 @@
 ---
-번역일: 2026-04-06T00:00:00.000Z
-카테고리: 01-시작하기 > 커머스
+원문: /support/solutions/articles/155000005074-getting-started-setup-payment-links
+번역일: 2026-11-07
+카테고리: 01-시작하기
 ---
 
-# 시작하기 - 결제 링크 설정하기
+# 결제 링크 설정하기
 
-결제를 간소화하고 매출을 늘릴 준비가 되셨나요? 고객이 좋아할 만한 쉽고 안전한 결제 링크를 설정하는 방법을 알아보겠습니다. 몇 번의 클릭만으로 고객이 간편하게 구매를 완료할 수 있는 간소화된 방법을 만들 수 있어요.
-
-***
+결제 링크를 만들어 고객에게 보내는 방법을 안내해요. 몇 번의 클릭만으로 고객이 간편하고 안전하게 결제를 마칠 수 있는 링크를 만들 수 있어요.
 
 ## 결제 링크 만들기
 
-결제 링크를 만드는 간단한 방법을 알려드릴게요:
+다음 순서로 결제 링크를 만들어요.
 
-* Payments(결제) → Payment Links(결제 링크)로 이동하세요.
-* Create New Payment Link(새 결제 링크 생성)를 클릭하세요.
+1. **결제 > 결제 링크**로 이동하세요.
+2. **새 결제 링크 만들기**를 클릭하세요.
 
-![새 결제 링크 생성 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047624719/original/_MM6j4vydZwd41nNO5O_bjSd9hQivj78tw.png?1748904864)
+   ![새 결제 링크 만들기 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047624719/original/_MM6j4vydZwd41nNO5O_bjSd9hQivj78tw.png?1748904864)
+3. 상품을 선택하세요.
 
-* 상품을 선택하세요.
+   ![상품 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047624723/original/Q4I2By-JHvAQxCXjd9grkULCyopY_j5hfg.png?1748904923)
+4. 수량, 옵션 등 원하는 설정으로 상품을 구성하세요.
+5. **저장**을 클릭하세요.
 
-![상품 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047624723/original/Q4I2By-JHvAQxCXjd9grkULCyopY_j5hfg.png?1748904923)
+   {% hint style="info" %}
+   호스팅 결제 화면은 **비즈니스 프로필**에 설정한 **플랫폼 언어**에 맞춰 표시돼요. 지원하는 언어는 영어, 덴마크어, 독일어, 스페인어, 핀란드어, 프랑스어(지역별 변형 포함), 이탈리아어, 네덜란드어, 노르웨이어, 포르투갈어(지역별 변형 포함), 스웨덴어예요.
+   {% endhint %}
 
-* 수량, 옵션 및 기타 설정을 조정하여 상품을 구성하세요.
-* Save(저장)를 클릭하세요.
+   ![저장 후 결제 링크 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047624730/original/GCUnKOREGY3HGzmeguEVz8IWcKeLbxTrwA.png?1748904958)
+6. **보내기**를 클릭해서 결제 링크를 공유하세요.
 
-**팁: 호스트 결제 페이지는 Business Profile(비즈니스 프로필)에서 설정한 플랫폼 언어에 맞춰 자동 적용됩니다. 지원 언어에는 영어, 덴마크어, 독일어, 스페인어, 핀란드어, 프랑스어(지역 변형), 이탈리아어, 네덜란드어, 노르웨이어, 포르투갈어(지역 변형), 스웨덴어가 있습니다.**
+   - **일반 링크:** **링크가 있는 모든 사람**이 접속할 수 있어요.
+   - **개인 맞춤 링크:** 지정한 받는 사람만 접속할 수 있어요.
+   - **연락처로 보내기:** 저장해 둔 연락처에 바로 공유할 수 있어서 편리해요.
 
-![결제 링크 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047624730/original/GCUnKOREGY3HGzmeguEVz8IWcKeLbxTrwA.png?1748904958)
+   ![결제 링크 보내기 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047624748/original/untNNkuIBOCpSBv68Ba4rryGPW6lb5VMJA.png?1748905069)
 
-* Send(전송)를 클릭하여 결제 링크를 공유하세요:
+결제 링크가 준비됐다면 고객이 보는 화면을 더 꾸며 보세요. 결제 링크에 **브랜드 색상**을 적용하는 방법은 관련 문서에서 확인할 수 있어요.
 
-**일반 링크:** 링크를 가진 누구나 접근할 수 있습니다.
-
-* **개인화 링크:** 지정된 수신자만 접근할 수 있습니다.
-* **연락처로 전송:** 저장된 연락처로 직접 전송하여 편의성을 높일 수 있습니다.
-
-![결제 링크 전송 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047624748/original/untNNkuIBOCpSBv68Ba4rryGPW6lb5VMJA.png?1748905069)
-
-이제 결제 링크가 준비되었으니, 고객 경험을 더욱 맞춤화해보는 건 어떨까요? [결제 링크를 브랜드 색상으로 커스터마이징하는 방법 자세히 보기](../../08-결제/how-to-customize-payment-links-with-your-brand-colors.md)
-
-***
-
-## 관련 가이드
-
-* [브랜드 색상으로 결제 링크 커스터마이징하는 방법](../../08-결제/how-to-customize-payment-links-with-your-brand-colors.md)
-* [상품 결제 링크 만드는 방법](../../08-결제/payment-links.md)
-* [여러 연락처에게 개인화된 결제 링크를 보내는 방법은?](../../08-결제/how-to-send-personalized-payment-links-to-multiple-contacts-.md)
-* [결제 링크에서 수량 편집 기능 활성화하는 방법](../../08-결제/시작하기/how-to-enable-editable-quantities-in-payment-links.md)
-* 빠른 결제 링크의 자동 세금 설정하는 방법
-
-***
-
-_원문 최종 수정: Sun, 1 Feb, 2026 at 6:52 AM_\
-_&#x48;yperclass 사용 가이드 — hyperclass.ai_

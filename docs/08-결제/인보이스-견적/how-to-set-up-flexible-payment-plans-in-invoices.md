@@ -1,53 +1,58 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 08-결제 > 인보이스-견적
+원문: /support/solutions/articles/155000002911-how-to-set-up-flexible-payment-plans-in-invoices
+번역일: 2026-11-07
+카테고리: 08-결제
 ---
 
-# 인보이스에서 유연한 분할 결제 계획 설정하기
+# 인보이스에 유연한 결제 일정 설정하기
 
-인보이스에 분할 결제 계획을 추가할 수 있는 새로운 기능을 발표하게 되어 기쁩니다.
+인보이스를 여러 번에 나눠 낼 수 있도록 결제 일정을 추가하는 방법을 안내해요. 금액이 큰 인보이스를 분할 결제로 받고 싶을 때 쓰세요.
 
-- 이제 사용자들이 인보이스를 분할 결제로 나눌 수 있습니다
-- 분할은 비율 기준과 금액 기준 모두로 설정할 수 있습니다
-- 각 분할에는 납기일과 해당 분할의 결제 상태가 포함됩니다. 분할의 납기일에 알림이 전송되어 (아직 결제하지 않은 경우) 할부금 결제를 안내합니다
-- 결제는 미리 정의된 분할로만 가능하며, 사용자는 한 번에 하나 이상의 할부를 결제하도록 선택할 수 있습니다. 모든 할부가 결제되면 인보이스가 완료됩니다.
+이제 인보이스에 결제 일정을 추가할 수 있어요.
+
+- 인보이스를 여러 회차로 나눠 분할 결제로 만들 수 있어요.
+- 분할은 비율 기준으로도, 금액 기준으로도 할 수 있어요.
+- 각 분할에는 납부 기한과 **결제 상태**가 있어요. 납부 기한이 되면 아직 내지 않은 회차에 대해 결제를 알리는 알림이 나가요.
+- 결제는 미리 정해 둔 분할 단위로만 할 수 있어요. 결제하는 사람은 한 번에 한 회차 이상을 선택해서 낼 수 있어요. 모든 회차가 결제되면 인보이스가 결제 완료 상태가 돼요.
 
 ---
 
 ## 사용 방법
 
-- 인보이스에서 결제 일정 추가를 클릭하세요
+1. 인보이스에서 **결제 일정**을 추가하는 버튼을 클릭하세요.
 
-![결제 일정 추가 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155029967055/original/aoxP_KwTddL0mCqUhjG7fNc_nvZWZ05uYQ.jpeg?1722009098)
+   ![인보이스에서 결제 일정 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155029967055/original/aoxP_KwTddL0mCqUhjG7fNc_nvZWZ05uYQ.jpeg?1722009098)
 
-- 비율 또는 고정 금액으로 결제 조건을 설정하고 전송하세요
+2. 비율이나 고정 금액으로 결제 조건을 설정한 다음 인보이스를 보내세요.
 
-![결제 조건 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155029967054/original/4yeIaZwUlcs2xDcz0ap3N_zdrFvVSF03mQ.jpeg?1722009098)
+   ![비율 또는 고정 금액으로 결제 조건 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155029967054/original/4yeIaZwUlcs2xDcz0ap3N_zdrFvVSF03mQ.jpeg?1722009098)
 
-- 사용자는 인보이스에서 분할 계획을 확인할 수 있습니다
+3. 받는 사람은 인보이스에서 결제 일정을 확인할 수 있어요.
 
-![분할 계획이 표시된 인보이스](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155029967053/original/0N7aokfiRpG9CKnNgEbLoZCAybTwTvkKXA.jpeg?1722009098)
+   ![인보이스에 표시된 결제 일정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155029967053/original/0N7aokfiRpG9CKnNgEbLoZCAybTwTvkKXA.jpeg?1722009098)
 
-- 그 후 사용자는 인보이스를 결제하며, 체크박스를 클릭하여 해당 결제 일정 금액을 선택하거나 다른 일정도 추가할 수 있는 옵션이 제공됩니다
+4. 받는 사람이 결제할 때는 해당 결제 일정 금액을 선택할 수 있어요. 체크박스를 클릭해서 다른 회차를 함께 선택해 낼 수도 있어요.
 
-![결제 옵션 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155029967056/original/2B7ecTZj66uH1euzsP8uK5FsGCJRtCP0Fw.jpeg?1722009098)
+   ![결제 일정 선택 후 결제하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155029967056/original/2B7ecTZj66uH1euzsP8uK5FsGCJRtCP0Fw.jpeg?1722009098)
 
-**이 기능이 필요한 이유는?**
+### 이 기능이 필요한 이유
 
-우리는 하나의 주요 사용 사례를 해결하고 있습니다: 중간에서 큰 규모의 인보이스의 경우, 사용자가 인보이스를 할부로 결제하고 싶다는 요구사항을 자주 받았습니다. 이미 부분 결제 기능이 있지만, 이는 인보이스 지불자가 언제 얼마를 결제할지 제어할 수 있게 해줍니다. 이 기능을 통해 인보이스 수취인이 인보이스가 결제되어야 하는 할부 크기를 제어할 수 있게 됩니다.
-
-## **자주 묻는 질문**
-
-**Q: 예정된 인보이스 할부에 대해 발송되는 알림 이메일을 커스터마이징할 수 있나요?**
-
-네. 이제 분할 결제 계획이 포함된 인보이스에 대한 결제 일정 수신 알림을 커스터마이징하거나, 활성화 또는 비활성화할 수 있습니다.
-Payments(결제) → Invoices & Estimates(인보이스 및 견적) → Settings(설정) → Notifications(알림) → Customer Notifications(고객 알림)으로 이동한 후, Payment Schedule Received를 찾아서 이메일/SMS 템플릿을 편집하거나 비활성화하세요.
-
-![결제 일정 알림 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064205108/original/t_RrzNWXuW9vmTwZKldqEeG3xjdI_9cUsw.png?1770223354)
-
-참고: 인보이스에 분할 결제 계획이 포함되지 않은 경우 결제 일정 병합 필드는 빈 값으로 표시됩니다.
+중간 규모 이상의 금액이 큰 인보이스는 나눠서 내고 싶다는 요청이 자주 있었어요. 기존의 **부분 결제**는 결제하는 사람이 언제 얼마를 낼지 정해요. 결제 일정은 반대로, 인보이스를 발행하는 쪽이 한 회차의 금액을 정해요.
 
 ---
-*원문 최종 수정: Wed, 4 Feb, 2026 at 10:42 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+
+## 자주 묻는 질문
+
+### 분할 결제 인보이스에 나가는 알림 이메일을 수정할 수 있나요?
+
+네. 결제 일정이 포함된 인보이스에 나가는 **Payment Schedule Received**(결제 일정 수신) 알림을 수정하거나 켜고 끌 수 있어요.
+
+1. **결제 > 인보이스 & 견적서 > 설정 > 알림 > 고객 알림**으로 이동하세요.
+2. **Payment Schedule Received**를 찾으세요.
+3. 이메일 템플릿과 **SMS 템플릿**을 편집하세요. 알림이 필요 없으면 토글을 끄세요.
+
+![고객 알림에서 Payment Schedule Received 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064205108/original/t_RrzNWXuW9vmTwZKldqEeG3xjdI_9cUsw.png?1770223354)
+
+{% hint style="info" %}
+인보이스에 결제 일정이 없으면 결제 일정 관련 병합 필드(merge field)는 빈 값으로 표시돼요.
+{% endhint %}

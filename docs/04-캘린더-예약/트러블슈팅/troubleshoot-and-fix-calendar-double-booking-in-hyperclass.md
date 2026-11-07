@@ -1,19 +1,16 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 04-캘린더-예약 > 트러블슈팅
+원문: /support/solutions/articles/48001183861-troubleshoot-and-fix-calendar-double-booking-in-highlevel
+번역일: 2026-11-07
+카테고리: 04-캘린더-예약
 ---
 
-# Hyperclass에서 캘린더 중복 예약 문제 해결하기
+# 캘린더 중복 예약 문제 해결하기
 
-여러 Google 캘린더에서 충돌을 확인하는 그룹 캘린더 설정 방법:
+캘린더에서 같은 시간대에 예약이 겹쳐 들어올 때 원인을 찾고 해결하는 방법을 영상으로 안내해요.
 
-[Hyperclass 팀 캘린더 개요](https://hyperclass.gitbook.io/hyperclass-docs)
+## 함께 확인하면 좋은 내용
 
-각 동기화 옵션의 의미:
+- 여러 Google 캘린더에서 일정 충돌을 확인하도록 그룹 캘린더를 설정하는 방법
+- 캘린더 동기화 옵션별 의미
 
-[캘린더 동기화 옵션](https://hyperclass.gitbook.io/hyperclass-docs)
-
----
-*원문 최종 수정: 2025년 5월 28일*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+위 내용이 더 필요하면 하이퍼클래스 고객지원에 문의하세요.

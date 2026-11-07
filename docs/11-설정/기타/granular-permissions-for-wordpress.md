@@ -1,34 +1,24 @@
 ---
-
-번역일: 2026-04-09
-카테고리: 99-리커버리
+원문: /support/solutions/articles/155000003699-granular-permissions-for-wordpress
+번역일: 2026-11-07
+카테고리: 11-설정
 ---
 
-# WordPress 세부 권한 관리
+# WordPress 세분화 권한 설정
 
-Hyperclass의 WordPress 팀에서 WordPress 세부 권한 관리 기능을 출시했습니다. 이제 에이전시 및 하위 계정 관리자가 어떤 팀원이 WordPress 탭에 접근할 수 있는지 제어하여 보안을 강화하고 관리를 효율화할 수 있습니다.
+팀원별로 **WordPress** 탭을 볼 수 있는지 정할 수 있어요. 에이전시 관리자와 서브 계정 관리자가 필요한 팀원에게만 WordPress 접근 권한을 줄 때 사용하세요.
 
-**목차**
+## 주요 이점
 
-- [주요 장점](#주요-장점)
-- [기능 사용 방법](#기능-사용-방법)
+- 접근 권한을 세밀하게 관리할 수 있어요. 에이전시 관리자와 서브 계정 관리자가 WordPress 접근 권한을 특정 팀원에게만 줄 수 있어요.
+- 보안이 강화돼요. WordPress 설정을 관리할 수 있는 사람을 제한해서 데이터를 더 안전하게 지킬 수 있어요.
 
-## **주요 장점:**
+## 권한 설정 위치
 
-- **향상된 제어**: 에이전시/하위 계정 관리자가 특정 팀원에게만 WordPress 접근 권한을 부여할 수 있습니다.
-- **보안 강화**: WordPress 설정을 관리할 수 있는 사용자를 제한하여 전반적인 데이터 보안을 개선합니다.
+1. 에이전시는 **설정**, 서브 계정은 **서브 계정 설정**으로 이동하세요.
+2. **스태프 관리** 또는 **팀** 탭을 선택하세요.
+3. 권한을 바꿀 사용자 옆의 **편집**을 클릭하세요.
+4. **Roles and Permissions**(역할 및 권한) 아래에서 **WordPress** 옵션을 확인하세요.
 
-## **기능 사용 방법:**
-
-- 에이전시/하위 계정 설정(Settings)으로 이동하세요.
-- My Staff/팀 관리 탭을 선택하세요.
-- 특정 사용자 옆의 편집(Edit) 버튼을 클릭하세요.
-- 역할 및 권한(Roles and Permissions) 섹션에서 WordPress 옵션을 찾을 수 있습니다.
-
-![WordPress 권한 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034060430/original/hSLSX0nnJ17Ds7lleOndeI5OIaDLpRu-0g.png?1727983148)
-
-![팀원별 WordPress 권한 관리](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034060429/original/e89PjwG52FHdWqLyeni-vp7psKKHaOiWsg.png?1727983148)
-
----
-*원문 최종 수정: 2024년 10월 3일*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+![사용자 편집 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034060430/original/hSLSX0nnJ17Ds7lleOndeI5OIaDLpRu-0g.png?1727983148)
+![역할 및 권한의 WordPress 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034060429/original/e89PjwG52FHdWqLyeni-vp7psKKHaOiWsg.png?1727983148)

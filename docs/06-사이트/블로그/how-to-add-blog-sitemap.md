@@ -1,30 +1,27 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 06-사이트 > 블로그
+원문: /support/solutions/articles/155000002453-how-to-add-blog-sitemap-
+번역일: 2026-11-07
+카테고리: 06-사이트
 ---
 
-# 블로그 사이트맵 추가 방법
+# 블로그 사이트맵 추가하기
 
-XML 사이트맵이 있으면 검색 엔진이 웹사이트를 충분히 크롤링하고 인덱싱할 수 있으며, robots.txt 파일에 사이트맵을 삽입하여 모든 검색 엔진에 알릴 수 있습니다. 간단히 말해, 사이트맵은 검색 엔진 결과에서 웹사이트의 순위를 향상시켜 SEO 효과를 높여줍니다.
+블로그 글이 검색 엔진에 잘 노출되도록 XML 사이트맵을 만드는 방법을 안내해요. 도메인을 추가한 뒤 사이트맵을 생성하면 돼요.
 
-새로운 블로그(Blog) 기능은 자동 사이트맵을 지원합니다. 즉, 게시물이 발행될 때마다 사이트맵이 자동으로 업데이트됩니다.
+XML 사이트맵이 있으면 검색 엔진이 웹사이트를 충분히 크롤링하고 색인할 수 있어요. 사이트맵을 robots.txt 파일에 넣으면 모든 검색 엔진이 사이트맵을 알 수 있어요. 한마디로 사이트맵은 검색 결과에서 웹사이트의 순위를 높이고, SEO 활동에 도움이 돼요.
 
-## 작동 방식
+새 블로그는 사이트맵을 자동으로 만들어 줘요. 글을 게시할 때마다 사이트맵이 자동으로 업데이트돼요.
 
-- Domain(도메인) 메뉴로 이동하세요
-- 도메인을 추가하세요 - 도메인 설정은 이 가이드를 참고하세요 [도메인 연결 기능 사용 방법](../../42-통합/기타/how-to-use-the-domain-connect-feature-.md)
-- 도메인 추가 후, 점 3개(⋯) 메뉴에서 XML 사이트맵을 방문하는 옵션을 찾을 수 있습니다
+## 어떻게 작동하나요?
 
-![도메인 설정에서 XML 사이트맵 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155062561811/original/2uYrsa5_5sPHrBfvwVLRqg1NQVyN1xGzxA.png?1768314182)
+1. **도메인**으로 이동해요.
+2. 도메인을 추가해요. 추가 방법은 [도메인 설정](../../42-통합/기타/how-to-use-the-domain-connect-feature.md) 문서를 참고하세요.
+3. 도메인을 추가한 뒤, 점 세 개(⋮) 메뉴에서 **XML Sitemap**(XML 사이트맵) 옵션을 선택해요.
 
-- XML 사이트맵에서 첫 번째 단계는 블로그 홈과 블로그 게시물 옵션을 선택하여 추가할 랜딩 페이지/퍼널을 선택하는 것입니다
-- 두 번째 단계에서 사이트맵 생성(Generate Sitemap)을 클릭하세요
+   ![도메인의 점 세 개 메뉴에서 XML Sitemap 옵션을 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155062561811/original/2uYrsa5_5sPHrBfvwVLRqg1NQVyN1xGzxA.png?1768314182)
+4. **XML Sitemap**에서 첫 번째 단계로, 추가할 랜딩 페이지/퍼널을 선택해요. **blog home**(블로그 홈)과 **blog post**(블로그 글) 옵션을 선택하면 돼요.
+5. 두 번째 단계에서 **Generate Sitemap**(사이트맵 생성)을 클릭해요.
 
-예시:
+예시
 
-![XML 사이트맵 생성 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155026313339/original/2tXQ9PFEiMAQjfj6COAroxswiGoOnTUSxw.png?1716233927)
-
----
-*원문 최종 수정: Tue, 13 Jan, 2026 at 8:23 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+![XML Sitemap 설정 화면 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155026313339/original/2tXQ9PFEiMAQjfj6COAroxswiGoOnTUSxw.png?1716233927)

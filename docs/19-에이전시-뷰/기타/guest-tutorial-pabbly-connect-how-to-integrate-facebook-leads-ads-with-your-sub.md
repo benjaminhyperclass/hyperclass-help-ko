@@ -1,16 +1,15 @@
 ---
-
-번역일: 2026-04-09
-카테고리: 99-리커버리
+원문: /support/solutions/articles/48001223700--guest-tutorial-pabbly-connect-how-to-integrate-facebook-leads-ads-with-your-sub-account
+번역일: 2026-11-07
+카테고리: 19-에이전시-뷰
 ---
 
-# (게스트 튜토리얼) Pabbly Connect - 페이스북 리드 광고를 하위 계정에 연동하는 방법
+# (게스트 튜토리얼) Pabbly Connect로 Facebook Lead Ads와 서브 계정 연동하기
 
-Hyperclass는 페이스북 리드 광고와 직접 연동할 수 있습니다 (가이드 보기). Pabbly Connect나 Zapier 같은 서드파티 서비스를 사용하여 연동하고 싶으시다면 아래 튜토리얼을 확인해보세요.
+Pabbly Connect 같은 외부 서비스를 이용해 Facebook Lead Ads를 서브 계정과 연동하는 방법을 다루는 게스트 튜토리얼이에요.
 
-### 참고사항:
-Pabbly Hyperclass 연동은 이제 LeadConnector라고 불립니다. [**자세한 정보는 여기를 클릭하세요**](https://www.pabbly.com/connect/integrations/highlevel/).
+하이퍼클래스는 Facebook Lead Ads와 직접 연동할 수 있어요. Pabbly Connect나 Zapier 같은 외부 서비스로 연동하고 싶다면 아래 튜토리얼을 참고하세요.
 
----
-*원문 최종 수정: Fri, 14 Oct, 2022 at 12:05 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+{% hint style="info" %}
+Pabbly에서 하이퍼클래스 연동의 이름이 바뀌었어요.
+{% endhint %}

@@ -1,137 +1,200 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 07-워크플로우 > Internal Tools Workflow Actions
+원문: /support/solutions/articles/155000002471-workflow-action-if-else
+번역일: 2026-11-06
+카테고리: 07-워크플로우
 ---
 
-# 워크플로우 액션 - 조건 분기(If/Else)
+# 워크플로우 액션 — If/Else(조건 분기)
 
-## 목차
+**If/Else**(조건 분기) 액션은 정해 둔 조건에 따라 연락처를 서로 다른 경로로 보내는 액션이에요. 이제 If/Else 조건에서 **Dynamic Custom Values**(동적 커스텀 값)를 쓸 수 있어요. 앞선 워크플로우 단계의 값이나 저장된 필드 값을 그때그때 가져와 비교하므로, 값을 직접 입력하지 않아도 되고 중복되는 로직도 줄어들어요.
 
-[포함/포함하지 않음을 조건으로 사용할 때:](#포함포함하지-않음을-조건으로-사용할-때)
+## If/Else 액션이란?
 
-[And 조건 만들기:](#and-조건-만들기)
+If/Else 액션은 연락처의 데이터를 확인해서 조건을 충족하는지에 따라 워크플로우를 여러 분기로 나눠요. 각 분기는 조건 확인 결과에 따라 연락처가 따라가는 경로예요.
 
-[Or 조건 만들기](#or-조건-만들기)
+이 액션으로 연락처의 행동, 속성, 계산된 값에 맞춰 달라지는 개인화된 워크플로우를 만들 수 있어요.
 
-[조건 분기 브랜치](#조건-분기-브랜치)
+## If/Else 액션의 장점
 
-[두 브랜치가 모두 참일 때는 어떻게 되나요? 리드가 두 경로 모두로 가나요?](#두-브랜치가-모두-참일-때는-어떻게-되나요-리드가-두-경로-모두로-가나요)
+- 조건부 로직: 실시간 데이터에 따라 연락처를 서로 다른 경로로 보내요.
+- 자동화 효율: 수작업 분류와 중복되는 워크플로우 단계를 줄여요.
+- 확장 가능한 세분화: 워크플로우가 커져도 복잡한 분기 로직을 처리할 수 있어요.
+- 한눈에 보이는 구조: 워크플로우 빌더에서 판단 지점을 분명하게 보고 관리할 수 있어요.
 
-[시간 비교 연산자](#시간-비교-연산자)
+## If/Else 액션 사용하기
 
-[Is(같음) 연산자](#is같음-연산자)
+### 1단계: If/Else 액션 추가
 
-[Is Not(다름) 연산자](#is-not다름-연산자)
+1. 워크플로우를 엽니다.
+2. **+** 아이콘을 클릭해 새 액션을 추가해요.
+3. 액션 목록에서 **If / Else**를 선택해요.
 
-[Is After(이후) 연산자](#is-after이후-연산자)
+![액션 목록에서 If / Else 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064138111/original/QHWzWp0cVu8mQcNsqQ1TRvlxEjAvSdSZVA.png?1770186397)
 
-[Is on or After(같거나 이후) 연산자](#is-on-or-after같거나-이후-연산자)
+### 2단계: 로직 설정 방법 선택
 
-[Is before(이전) 연산자](#is-before이전-연산자)
+다음 두 가지 중 하나를 고를 수 있어요.
 
-[Is on or before(같거나 이전) 연산자](#is-on-or-before같거나-이전-연산자)
+- **Build My Own**(직접 만들기)으로 로직을 직접 구성해요.
+- 자주 쓰는 조건이 담긴 레시피에서 시작해요.
 
-[Is not empty(비어있지 않음) 또는 Is empty(비어있음) 연산자](#is-not-empty비어있지-않음-또는-is-empty비어있음-연산자)
+### 3단계: 첫 번째 분기 설정
 
-[문제 해결](#문제-해결)
+1. 평가할 필드를 선택해요.
+2. 알맞은 연산자를 선택해요.
+3. 비교할 값을 설정해요.
+4. 조건을 더 추가하려면 **Add Segment**(세그먼트 추가)를 클릭해요.
+5. **AND**(그리고) / **OR**(또는)로 조건을 묶는 방식을 정해요.
 
-## 포함/포함하지 않음을 조건으로 사용할 때:
+#### If/Else 조건에서 필드 찾기
 
-참고사항:
+필드 선택기에서 If/Else 조건에 쓸 필드를 검색할 수 있어요. 검색 결과에는 사용 가능한 폴더와 하위 폴더 안에 있는 필드도 함께 나오므로, 폴더를 하나씩 열어 보지 않아도 돼요.
 
-워크플로우 빌더에는 "포함" 또는 "포함하지 않음"을 지정할 수 있는 여러 조건부 매개변수가 있습니다. 예를 들어 태그와 기타 다중 선택 커스텀 필드(체크박스 필드, 드롭다운 선택기 등)가 있습니다.
+필드 그룹을 둘러보면서, 경로 표시(breadcrumb)로 폴더와 하위 폴더 사이를 오갈 수도 있어요.
 
-## And 조건 만들기:
+긴 필드 이름이 잘려 보이면 마우스를 올려 툴팁에서 전체 이름을 확인하세요.
 
-아래 예시에서는 AND 조건을 사용하고 있습니다. 시스템은 연락처 태그가 'consultation_booked' 태그와 'consultation_confirmed' 태그를 모두 "포함하지 않음"인지 확인합니다.
+{% hint style="info" %}
+검색에는 현재 상황에서 사용할 수 있고 활성화된 필드와 폴더만 표시돼요.
+{% endhint %}
 
-![And 조건 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48250497669/original/FlAzFJDU1cdgpaFpt9G1g1I-LshYykcoIw.png?1662994820)
+![필드 선택기에서 필드 검색](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064138158/original/uBsuEu4NYpnkmlNxnWjDMlDv-IJU3EEDwg.png?1770186485)
 
-두 태그 중 하나라도 해당 연락처에 있다면 조건은 실패합니다.
+### 4단계: 분기 추가(선택)
 
-이 예시에서 연락처가 "예" 경로로 가려면, 두 태그가 모두 연락처 프로필/레코드에 없어야 합니다.
+- **Add Branch**(분기 추가)를 클릭해 조건 그룹을 더 만들어요.
+- 각 분기는 워크플로우 안에서 별도의 경로가 돼요.
 
-## Or 조건 만들기
+![분기 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064138205/original/VkxzPJfxHTDdkMNNRo9GLZ8bEIE7fBW4-g.png?1770186527)
 
-"OR" 시나리오를 만들고 싶다면, 두 태그를 별도의 조건으로 나누고 다음과 같이 OR 옵션을 선택해야 합니다:
+### 5단계: **None**(없음, Else) 분기 설정
 
-![Or 조건 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48250492624/original/PVEr200i5xqjrUmLV8Th7Z7N3w-UC0p-Hg.png?1662993828)
+- **None** 분기는 자동으로 만들어져요.
+- 정해 둔 조건에 하나도 맞지 않을 때 실행돼요.
+- 이 분기에는 조건을 설정할 수 없고, 삭제할 수도 없어요.
+- 이름을 바꾸고, 대체 액션을 추가할 수 있어요.
 
-이 경우, 연락처가 "Or 태그" 중 하나 또는 둘 다를 충족하면 조건이 참이 됩니다. 시스템은 연락처를 "예" 경로로 보내기 전에 하나 또는 두 조건이 모두 올바른지만 확인합니다.
+![None 분기 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064138232/original/npnbPACEOdDdptOOZHUT5SqhUnQ1wOtwXw.png?1770186570)
 
-더 자세한 정보: 조건 분기 조건 - AND 또는 OR 조건 문제 해결
+## If/Else 조건에서 동적 값 사용하기
 
-## 조건 분기 브랜치
+If/Else 조건의 오른쪽 값 자리에 **Dynamic Values**(동적 값)를 쓸 수 있어요. 앞선 워크플로우 단계의 결과나 저장된 필드처럼 그때그때 달라지는 값을 숫자나 텍스트를 직접 입력하지 않고 비교할 수 있어요.
 
-참고사항:
+그래서 앞 단계에서 계산했거나 받아 둔 값을 기준으로 바로 분기할 수 있어요.
 
-조건 분기 브랜치는 이벤트당 최대 10개의 서로 다른 결과를 지원합니다.
+연락처 기반 워크플로우를 만들 때는 If/Else 조건에서 회사 필드도 선택할 수 있어요. 회사 필드는 필드/변수 선택기에서 연락처 필드와 함께 표시돼요.
 
-### 두 브랜치가 모두 참일 때는 어떻게 되나요? 리드가 두 경로 모두로 가나요?
+{% hint style="warning" %}
+회사 필드는 연락처가 회사와 연결되어 있을 때만 값이 채워져요. 연결된 회사가 없는 연락처는 값이 비어 있어요.
+{% endhint %}
 
-아니요, 시스템은 설정에서 첫 번째로 올바른 경로/브랜치로 리드를 보냅니다. 즉, 조건/브랜치를 구축한 순서대로 위에서 아래로 진행됩니다.
+회사 필드 활용 예시:
 
----
+- **Company Address**(회사 주소)를 기준으로 주(州)나 지역별로 연락처를 나눠요.
+- **Company Name**(회사명)을 기준으로 특정 회사에만 다른 로직을 적용해요.
 
-## 시간 비교 연산자
+## 지원하는 필드 유형
 
-시간 비교 연산자는 현재 날짜 및 시간을 지정된 입력값과 비교하는 워크플로우에서 사용되는 필수 구성 요소입니다. 이러한 연산자를 통해 워크플로우 자동화 시스템이 시간 조건에 따라 정보에 기반한 결정을 내릴 수 있습니다. 이러한 연산자를 사용하여 비교할 수 있는 다양한 날짜 및 시간 단위에는 현재 요일, 현재 일(날짜), 현재 월, 현재 연도, 현재 시간이 포함됩니다.
+If/Else 액션에서 동적 값은 다음 조건 유형에서 쓸 수 있어요.
 
-![시간 매개변수 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48285767416/original/KoCQkLH9MoyKbTKOIcvnrgut3GGu561TCg.png?1678205389)
+- **Numeric**(숫자): 점수, 횟수, 합계
+- **Date**(날짜): 예약 날짜, 갱신 날짜
+- **Select / Dropdown**(선택/드롭다운): 고급 사용이며 옵션 ID가 필요해요
+- **Monetary**(금액): 인보이스 합계나 금액
 
-![시간 비교 연산자 드롭다운](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48285767549/original/dbRqTFVic08R06DsjrWJTBvu_oQTTHsuvA.png?1678205424)
+## 동적 값 사용 방법
 
-시간 비교 연산자를 사용할 특정 시간 매개변수를 선택한 후에는 연산자 선택 드롭다운에서 시간 비교 연산자를 선택해야 합니다:
+1. 워크플로우에 **If/Else** 액션을 추가해요.
+2. 왼쪽 필드는 평소처럼 설정해요.
+3. 오른쪽 입력란에서 값 유형을 **Dynamic Value**(동적 값)로 바꿔요.
+4. 다음 중에서 값을 선택해요.
 
-![연산자 선택 드롭다운](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48285768884/original/teNiXrftXKTqW1mha1KThd6BZnUd0INqGA.png?1678205723)
+   - 앞선 워크플로우 단계의 결과
+   - 저장된 필드
+5. 값 유형에 맞는 연산자(숫자, 날짜, 값)를 선택해요.
+6. 워크플로우를 저장하고 게시해요.
 
-### Is(같음) 연산자
+### **Select / Dropdown** 필드 사용 시 중요 사항
 
-![Is 연산자 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48285768774/original/ky0A4uISIeeisjKdlTEGXhxz--Q1Om2W7w.png?1678205699)
+{% hint style="warning" %}
+If/Else 조건에서 동적 값과 함께 **Select / Dropdown** 필드를 쓸 때는 표시 이름이 아니라 옵션 ID가 필요해요.
 
-"Is" 비교 연산자는 선택된 날짜 단위가 입력값과 같은지 확인합니다. 예를 들어, "현재 요일이 월요일임"은 오늘이 월요일일 때만 참을 반환합니다. 마찬가지로 "현재 월이 1월임"은 현재가 1월일 때만 참을 반환합니다. **현재 월의 날짜** 옵션의 경우 1일, 2일, 3일과 같이 현재 월의 날짜를 지정해야 합니다.
+이 ID는 설정에서 찾을 수 있는 경우가 많아요(예: 파이프라인 ID, 단계 ID).
+{% endhint %}
 
-![현재 월의 날짜 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48285770094/original/wIhZ5qcg5hVwFuc6UAXzWcxuFSZn2B49Uw.png?1678206019)
+### If/Else에서 새로 쓸 수 있는 워크플로우 필드
 
-### Is Not(다름) 연산자
+If/Else 조건에서 더 많은 워크플로우 필드를 쓸 수 있어서, 별도의 조회 단계를 추가하지 않고도 더 정밀하게 분기할 수 있어요. 이 필드들은 다른 지원 값처럼 필드 선택기에 표시되지만, 일부는 워크플로우에 해당 맥락이 있을 때만 나타나요.
 
-"Is not" 연산자는 선택된 날짜 단위가 제공된 입력과 다른지 확인합니다. 예를 들어, "현재 요일이 토요일이 아님"은 토요일을 제외한 모든 요일에 대해 참을 반환합니다.
+새로 사용할 수 있는 필드는 다음과 같아요.
 
-![Is Not 연산자 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48285772852/original/kCKx0qld3p_3b3nSPMEKESQphNrTsArYkg.png?1678206507)
+- **Contact Engagement Score**(연락처 참여 점수)
+- **Contact → Attribution Medium ID**(연락처 → 어트리뷰션 매체 ID)
+- **Note created by (Name)**(메모 작성자 이름)
+- **Task ID**(작업 ID)
 
-### Is After(이후) 연산자
+어트리뷰션, 참여도, 메모 작성자, 작업 관련 데이터를 기준으로 분기하고 싶을 때 If/Else에서 이 필드들을 쓰세요.
 
-"Is after" 연산자는 선택된 날짜 단위가 제공된 입력 이후인지 확인합니다. 하지만 시간의 경우, 이 연산자는 다음 시간에 시작되는 분만 고려합니다. 예를 들어, "현재 시간이 오후 6시 이후임"은 오후 6시 59분이 여전히 오후 6시 내로 간주되기 때문에 오후 7시 00분 이후에만 참을 반환합니다.
+필드 표시 조건은 다음과 같아요.
 
-![Is After 연산자 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48285773967/original/ctdTUP7-6TRTnlqG6bAo06Ops_t3tZrBKA.png?1678206767)
+1. **Contact Engagement Score**는 서브 계정에 참여 점수가 설정되어 있을 때 나타나요.
+2. **Contact → Attribution Medium ID**로는 첫 번째 또는 최근 어트리뷰션 정보를 기준으로 분기할 수 있어요.
+3. **Note created by (Name)**은 메모와 관련된 워크플로우에서 나타나요.
+4. **Task ID**는 작업 트리거나 **Add Task**(작업 추가) 단계 뒤처럼 작업과 관련된 워크플로우에서 나타나요.
 
-### Is on or After(같거나 이후) 연산자
+예시:
 
-"Is on or after" 연산자는 선택된 날짜 단위가 제공된 입력과 같거나 이후인지 확인합니다. **시간**의 경우, 이 연산자는 같은 시간의 분부터 이후를 고려합니다. 예를 들어, "현재 시간이 오후 6시와 같거나 이후임"은 오후 6시 59분에 대해 참을 반환합니다. 왜냐하면 이는 오후 6시 "와 같은" 것으로 간주되기 때문입니다. 또한 오후 6시 이후의 모든 시간에 대해서도 참이 됩니다.
+1. **Contact Engagement Score**가 20 이상이면 연락처를 우선순위가 높은 후속 조치 경로로 보내요.
+2. **Attribution Medium ID**가 유료 소셜 소스와 일치하면 연락처를 해당 리포팅 분기로 보내요.
+3. **Note created by (Name)**에 "Success"가 포함되면 Success 팀에 알려요.
+4. **Task ID**가 있으면 참고용으로 외부 트래킹 시스템에 보내요.
 
-![Is on or After 연산자 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48285774725/original/LbFSGZ2xAz7OwUALQtrjMyULCNhd4uguww.png?1678206957)
+{% hint style="info" %}
+현재 연락처나 워크플로우 맥락에서 값을 사용할 수 없으면 필드가 비어 있을 수 있어요. 이 경우에도 워크플로우는 계속 실행돼요.
+{% endhint %}
 
-### Is before(이전) 연산자
+## 활용 예시
 
-"Is before" 연산자는 선택된 날짜 단위가 제공된 입력 이전인지 확인합니다. 예를 들어, "현재 월이 6월 이전임"은 6월 이전의 모든 월에 대해 참을 반환합니다.
+워크플로우 앞부분에서 제안 금액을 받아 두었다면, 그 값을 동적으로 비교할 수 있어요.
 
-![Is before 연산자 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48285775110/original/Bkcc0xt6Pds6vD8yLtPApbAMaM6GcnUwlQ.png?1678207054)
+금액이 $25,000 이상이면 연락처를 우선순위 경로로 보내고, 그렇지 않으면 표준 절차를 이어 가요.
 
-### Is on or before(같거나 이전) 연산자
+![제안 금액에 따른 분기 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064138289/original/62n-GtQVJ-ot77skqfvb9KV8KVkYWqodmQ.png?1770186683)
 
-"Is on or before" 연산자는 선택된 날짜 단위가 제공된 입력과 같거나 이전인지 확인합니다. **시간**의 경우, 이 연산자도 같은 시간의 분을 고려합니다. 예를 들어, "현재 시간이 오후 6시와 같거나 이전임"은 오후 6시 59분에 대해 참을 반환합니다. 왜냐하면 이는 오후 6시 "와 같은" 것으로 간주되기 때문입니다.
+## 액션 상세 정보
 
-![Is on or before 연산자 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48285775589/original/2EYd4ky4Khaa70G3s6_cbNPSXs3-NMj_Wg.png?1678207145)
+| 필드 | 설명 | 필수 |
+| --- | --- | --- |
+| **Action Name**(액션 이름) | 워크플로우에서 액션을 구분하는 이름 | 예 |
+| **Condition**(조건) | 어느 분기로 갈지 판단하기 위해 확인하는 규칙 | 예 |
+| **Branches**(분기) | If/Else 액션이 만드는 워크플로우 경로 | 예 |
+| **Segments**(세그먼트) | **AND** / **OR** 로직으로 묶은 조건 그룹 | 아니요 |
 
-### Is not empty(비어있지 않음) 또는 Is empty(비어있음) 연산자
+## 예시: 이메일 참여도에 따른 후속 조치
 
-마지막으로, "Is not empty" 연산자는 필드에 값이 있는지 확인하고, "Is empty" 연산자는 필드에 값이 없는지 확인합니다. 이 두 연산자는 워크플로우 자동화 시스템이 유효한 입력값을 받도록 하는 데 사용됩니다.
+시나리오:
 
-## 문제 해결
+연락처가 이메일을 열었는지에 따라 후속 조치를 다르게 하려고 해요.
 
-조건 분기 조건 - AND 또는 OR 조건 문제 해결
+워크플로우 로직:
 
----
-*원문 최종 수정: 2024년 8월 23일*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+- 트리거: 프로모션 이메일 발송
+- If/Else 조건: **Email Event → Is Opened**
+- 예 분기: 혜택을 담은 감사 이메일 보내기
+- 아니요 분기: 제목을 바꿔 이메일 다시 보내기
+
+이렇게 하면 연락처의 참여도에 맞는 후속 조치를 보낼 수 있어요.
+
+## 자주 묻는 질문
+
+### If/Else 조건을 언제 평가할지 정하려면 어떻게 하나요?
+
+If/Else 단계 앞에 **Wait**(대기) 액션을 넣으세요. 조건을 평가하기 전에 이벤트가 일어나거나 제한 시간이 지날 때까지 기다릴 수 있어요. 예를 들면 "이메일을 열 때까지 또는 1일이 지날 때까지 대기"처럼 설정해요.
+
+### 분기를 만든 뒤에도 수정할 수 있나요?
+
+네. 워크플로우를 게시하기 전이든 후든 필드, 연산자, 값을 수정할 수 있어요.
+
+### **None** 분기는 꼭 있어야 하나요?
+
+네. **None** 분기는 자동으로 만들어지고 삭제할 수 없어요.

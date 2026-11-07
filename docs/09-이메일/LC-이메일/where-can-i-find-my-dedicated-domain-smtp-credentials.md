@@ -1,132 +1,124 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 09-이메일 > LC-이메일
+원문: /support/solutions/articles/155000002132-where-can-i-find-my-dedicated-domain-smtp-credentials-
+번역일: 2026-11-06
+카테고리: 09-이메일
 ---
 
-# 전용 도메인 SMTP 인증 정보는 어디에서 찾을 수 있나요?
+# 전용 도메인 SMTP 자격 증명 만들기와 관리
 
-LC 이메일 전용 도메인을 위한 SMTP 인증 정보를 생성하고 찾는 방법을 알아보세요. smtp.mailgun.org 설정과 포트, SMTP 인증 정보 재설정/삭제 단계, 제한사항, IMAP 참고사항을 포함합니다.
+전용 발신 도메인에서 SMTP 서버를 쓰려면 그 도메인에 연결된 SMTP 자격 증명이 필요해요. 이 문서에서는 자격 증명을 만들고, 비밀번호를 재설정하고, 삭제하는 방법을 안내해요. 지원하는 포트, 이메일·자격 증명 한도, 요금, 수신용 IMAP 설정을 어디서 찾는지도 함께 알려 드려요.
 
----
+SMTP 자격 증명은 도메인마다 따로 있어요. 도메인끼리 공유하지 않고, 에이전시 단위로도 공유하지 않아요.
 
-목차
+## SMTP 자격 증명 만들기
 
-- [SMTP 인증 정보 생성하는 방법](#smtp-인증-정보-생성하는-방법)
-- [Mailgun에서 지원하는 포트는?](#mailgun에서-지원하는-포트는)
-- [SMTP 비밀번호 재설정하는 방법](#smtp-비밀번호-재설정하는-방법)
-- [SMTP 인증 정보 삭제하는 방법](#smtp-인증-정보-삭제하는-방법)
-- [SMTP 및 이메일 제한사항](#smtp-및-이메일-제한사항)
-- [LC - 이메일 요금제](#lc-이메일-요금제)
-- [IMAP 설정은 어디에서 찾을 수 있나요?](#imap-설정은-어디에서-찾을-수-있나요)
-- [자주 묻는 질문](#자주-묻는-질문)
----
+SMTP 자격 증명은 전용 도메인 아래, **서브 계정 단위**에서 만들어요. 에이전시 단위나 에이전시가 할당한 도메인에서는 만들 수 없어요.
 
-### 커뮤니티 튜토리얼 더보기
+1. 서브 계정에서 전용 도메인의 설정 화면으로 이동해요. **이메일 서비스 > SMTP 서비스 > Dedicated Domain and IP**(전용 도메인 및 IP) **> SMTP 설정**으로 가세요.
 
-[https://youtu.be/B7KnqDLcxho](https://youtu.be/B7KnqDLcxho)
+   ![이메일 서비스의 Dedicated Domain and IP 아래 SMTP 설정 위치](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023337421/original/nMyZojgr2ZYUAZSkyYnJ6GXwk_Eyr_1HGw.png?1711087651)
 
-[https://youtu.be/m57kladVncA](https://youtu.be/m57kladVncA)
+2. **Create New SMTP User**(새 SMTP 사용자 만들기)를 클릭하고, 자격 증명에 쓸 사용자 이름과 비밀번호를 입력해요.
 
-[https://youtu.be/QIChDtF10ZA](https://youtu.be/QIChDtF10ZA)
+   ![Create New SMTP User 버튼과 입력 폼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023337477/original/3gfn3HeigPBnj1KhpAJrkIlpaoOzAJ0ONw.png?1711087786)
+   ![SMTP 사용자 생성 완료 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023337530/original/utUNsl_XodI8FsMRFgE8TrwwQdmfgvu_uA.png?1711087862)
 
-[https://youtu.be/E6OpiGGjcTs](https://youtu.be/E6OpiGGjcTs)
+{% hint style="info" %}
+**승인 필요**
 
-SMTP 서버를 사용하려면 도메인과 연결된 SMTP 인증 정보를 사용해야 합니다. SMTP 인증 정보는 추가하는 도메인마다 고유하다는 점을 참고하세요. 현재 추가된 사용자 목록을 확인하거나 사용자를 더 추가하려면 도메인 설정에서 쉽게 할 수 있습니다.
+하이퍼클래스는 SMTP 사용 권한을 자동 승인 시스템으로 관리해요. 조건에 맞는 서브 계정은 바로 자격 증명을 만들 수 있어요. 승인되지 않은 계정이라면 **Create New SMTP User** 버튼이 비활성화되거나 경고 메시지가 보일 수 있어요.
+{% endhint %}
 
-**참고**: 저희는 메일박스를 호스팅하지 않으므로 POP 또는 IMAP 프로토콜에 대한 지원을 제공하지 않습니다.
----
+### SMTP 연결 정보
 
-## **SMTP 인증 정보 생성하는 방법**
+메일 클라이언트나 SMTP 플러그인에는 아래 값을 입력해요.
 
-SMTP 인증 정보는 에이전시 레벨이 아닌 하위 계정 레벨(에이전시에서 할당한 도메인이 아님)에서 생성할 수 있습니다.
+|  |  |
+| --- | --- |
+| SMTP 서버 주소 | smtp.mailgun.org |
+| 보안 연결 | TLS/SSL (사용하는 메일 클라이언트나 SMTP 플러그인에 따라 선택) |
+| SMTP 사용자 이름 | YourGivenName@DomainName.com |
+| SMTP 비밀번호 | YourGivenPassword |
+| SMTP 포트 | 25, 465 (SSL/TLS), 587 (STARTTLS), 2525 |
 
-### 1단계: 하위 계정 설정으로 이동
+## Mailgun이 지원하는 포트
 
-Email Service(이메일 서비스) → SMTP Service(SMTP 서비스) → Dedicated Domain and IP(전용 도메인 및 IP) → 전용 도메인 하위의 SMTP Settings(SMTP 설정)으로 이동하세요.
+SMTP 서버(smtp.mailgun.org)는 아래 포트에서 연결을 받아요.
 
-![SMTP 설정 페이지로 이동](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023337421/original/nMyZojgr2ZYUAZSkyYnJ6GXwk_Eyr_1HGw.png?1711087651)
+| 포트 | 프로토콜 | 사용 시기 |
+| --- | --- | --- |
+| 25 | Standard SMTP | 서버 간 릴레이용이에요. 클라이언트 용도로는 인터넷 서비스 제공업체(ISP)가 막는 경우가 많아요. |
+| 465 | SSL/TLS | 연결 시작부터 암호화(implicit TLS)가 필요한 클라이언트에 사용해요. |
+| 587 | STARTTLS | 대부분의 메일 클라이언트와 SMTP 플러그인에 권장해요. |
+| 2525 | Alternative SMTP | 25, 465, 587 포트가 막혀 있을 때 대신 사용해요. |
 
-### **2단계:** "Create New SMTP User(새 SMTP 사용자 생성)"을 클릭하고 사용자명과 비밀번호를 추가하세요
+## SMTP 비밀번호 재설정하기
 
-참고: Hyperclass은 SMTP 액세스에 대한 자동화된 승인 시스템을 사용합니다. 자격을 갖춘 하위 계정은 즉시 SMTP 인증 정보를 생성할 수 있습니다. 계정이 승인되지 않은 경우 Create New SMTP User(새 SMTP 사용자 생성) 옵션이 비활성화되거나 경고 메시지가 표시될 수 있습니다.
+이미 만든 SMTP 자격 증명의 비밀번호를 바꾸려면, 도메인의 **SMTP 설정**에서 해당 자격 증명을 찾아 재설정 옵션을 클릭하세요. 확인 창이 열리면 **비밀번호 재설정**을 클릭해서 변경을 마무리해요.
 
-![새 SMTP 사용자 생성 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023337477/original/3gfn3HeigPBnj1KhpAJrkIlpaoOzAJ0ONw.png?1711087786)
+![SMTP 자격 증명 창의 비밀번호 재설정 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023337656/original/22ZqznlGSww3OYVk2ULdCYph_uhwvbBG9A.png?1711088188)
 
-![SMTP 사용자 생성 양식](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023337530/original/utUNsl_XodI8FsMRFgE8TrwwQdmfgvu_uA.png?1711087862)
+SMTP 자격 증명 행에서 비밀번호 재설정을 시작해요.
 
-**SMTP 설정:**
-- SMTP 서버 주소: smtp.mailgun.org
-- 보안 연결: 메일 클라이언트/웹사이트 SMTP 플러그인에 따른 TLS/SSL
-- SMTP 사용자명: [사용자명@도메인이름.com]
-- SMTP 비밀번호: [설정한 비밀번호]
-- SMTP 포트: 25, 465 (SSL/TLS), 587 (STARTTLS), 2525
+![확인 창에서 비밀번호 재설정 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023337668/original/NsTvuvM2YMJRI2xkQypolDdneD_Yn8-tJw.png?1711088202)
 
----
+팝업 창에서 재설정을 확인해요.
 
-## **Mailgun에서 지원하는 포트는?**
+## SMTP 자격 증명 삭제하기
 
-저희 서버는 포트 25, 465 (SSL/TLS), 587 (STARTTLS), 2525를 지원합니다.
+SMTP 자격 증명을 지우려면 도메인의 **SMTP 설정**에서 해당 자격 증명을 찾아 **삭제**를 클릭하세요. 팝업 창에서 삭제를 확인하면 돼요.
 
----
+![SMTP 자격 증명 삭제 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023337727/original/f7oeVWxByu7aA60MK7YoTBAA7c-citPWbg.png?1711088371)
 
-## **SMTP 비밀번호 재설정하는 방법**
+SMTP 자격 증명 행에서 **삭제**를 클릭해요.
 
-비밀번호 재설정을 완료하려면 팝업 모달에 있는 "Reset Password(비밀번호 재설정)" 버튼을 클릭하세요.
+![SMTP 자격 증명 삭제 확인 창](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023337732/original/-c2VpTSwanpwk3Nc_sLI3fi87590WKS2TA.png?1711088383)
 
-![비밀번호 재설정 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023337656/original/22ZqznlGSww3OYVk2ULdCYph_uhwvbBG9A.png?1711088188)
+팝업 창에서 삭제를 확인해요.
 
-![비밀번호 재설정 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023337668/original/NsTvuvM2YMJRI2xkQypolDdneD_Yn8-tJw.png?1711088202)
+## SMTP와 이메일 한도
 
----
+- SMTP 자격 증명 한도: 전용 도메인 하나당 최대 **5개**까지 만들 수 있어요.
+- 일일 이메일 한도: 계정당 하루 **1,500통**까지 보낼 수 있어요.
 
-## **SMTP 인증 정보 삭제하는 방법**
+{% hint style="warning" %}
+일일 이메일 한도를 넘으면 계정에 있는 모든 전용 도메인의 **SMTP 자격 증명이 자동으로 모두 삭제**돼요.
+{% endhint %}
 
-SMTP 인증 정보를 삭제하려면 팝업 모달에 있는 "Delete(삭제)" 버튼을 클릭하세요.
+## 하이퍼클래스 이메일 요금
 
-![SMTP 인증 정보 삭제 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023337727/original/f7oeVWxByu7aA60MK7YoTBAA7c-citPWbg.png?1711088371)
+하이퍼클래스 이메일은 **1,000통당 $0.675**예요. 대부분의 주요 SMTP 제공업체보다 낮은 가격이에요(Mailgun은 1,000통당 $0.80). 모든 요금제에 같은 건당 요금이 적용돼요.
 
-![SMTP 인증 정보 삭제 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023337732/original/-c2VpTSwanpwk3Nc_sLI3fi87590WKS2TA.png?1711088383)
+이메일 요금은 계정의 크레딧에서 차감돼요. **에이전시 보기 > 청구/결제 > 크레딧**에서 확인할 수 있어요.
 
----
+{% hint style="info" %}
+[받는 이메일과 보내는 이메일 모두, 받는 사람·참조·숨은참조 수신자까지 각각 따로 요금이 청구돼요.](../what-is-lc-email.md)
+{% endhint %}
 
-## SMTP 및 이메일 제한사항
+## IMAP 설정은 어디서 찾나요?
 
-1. SMTP 제한:
-   - 각 전용 도메인당 최대 **5개의 SMTP 인증 정보**를 생성할 수 있습니다.
+{% hint style="warning" %}
+**지원되지 않음**
 
-2. 일일 이메일 제한:
-   - 각 계정은 **하루 1,500개 이메일** 제한이 있습니다.
-   - 일일 제한을 초과하면 **모든 전용 도메인에서 SMTP 인증 정보가 자동으로 삭제**됩니다.
+하이퍼클래스에서는 메일함을 호스팅하지 않기 때문에 POP, IMAP 프로토콜을 지원하지 않아요. **SMTP 자격 증명은 IMAP 설정에 사용할 수 없어요.**
+{% endhint %}
 
----
+IMAP은 메일함에서 메시지를 *가져올* 때 쓰고, SMTP는 *보낼* 때 써요. 메일 클라이언트에서 이메일을 읽으려고 IMAP이 필요하다면, 하이퍼클래스가 아니라 사용 중인 이메일 호스팅 업체에서 설정값을 받아야 해요.
 
-## LC - 이메일 요금제
+**예시 — Google Workspace:** Google에서 앱 비밀번호를 만든 다음 아래 값을 사용하세요.
 
-저희는 모든 요금제에서 이메일 1,000개당 $0.675를 청구합니다. 이는 MailGun의 1,000개당 $0.80와 비교했을 때 대부분의 주요 SMTP 제공업체보다 저렴한 가격입니다.
+Google IMAP 설정
 
-Agency view(에이전시 보기) > Billing(결제) > Credits(크레딧): [모든 수신 및 발신 이메일(받는사람, 참조, 숨은참조)에 대해 요금이 청구됩니다.](../기타/what-is-lc-email-i-want-to-know-more.md)
+|  |  |
+| --- | --- |
+| 사용자 이름 | 전체 이메일 주소 |
+| 비밀번호 | Google 앱 비밀번호 |
+| IMAP 호스트 | imap.gmail.com |
+| IMAP 포트 | 993 |
 
----
+다른 업체는 해당 업체의 고객지원 문서에서 IMAP 설정을 찾을 수 있어요. 바로가기 링크는 아래와 같아요.
 
-## IMAP 설정은 어디에서 찾을 수 있나요?
-
-IMAP은 메시지를 가져오는 데 사용되고, SMTP는 데이터를 보내는 데 사용됩니다.
-
-**참고**: 저희는 메일박스를 호스팅하지 않으므로 POP 또는 IMAP 프로토콜에 대한 지원을 제공하지 않습니다. IMAP 설정에서는 SMTP 인증 정보를 사용할 수 없습니다.
-
-IMAP 설정은 이메일 제공업체 설정에서 찾을 수 있습니다.
-
-예시: Google을 사용하는 경우 Google에서 앱 비밀번호를 생성해야 합니다.
-
-**사용자명**: 이메일 주소
-**비밀번호**: 앱 비밀번호
-- IMAP 호스트: imap.gmail.com
-- IMAP 포트: 993
-
-다음은 IMAP 호스트명을 얻는 방법을 안내하는 일부 이메일 제공업체의 지원 페이지입니다:
-
-- [Amazon AWS](https://docs.aws.amazon.com/workmail/latest/userguide/using_IMAP.html)
+- [Amazon AWS WorkMail](https://docs.aws.amazon.com/workmail/latest/userguide/using_IMAP.html)
 - [Hostgator](https://www.hostgator.com/help/article/email-connection-settings)
 - [Ionos](https://www.ionos.com/help/email/general-topics/settings-for-your-email-programs-imap-pop3/)
 - [Kinghost](https://king.host/wiki/artigo/como-configurar-seu-e-mail-no-pipedrive/)
@@ -137,36 +129,46 @@ IMAP 설정은 이메일 제공업체 설정에서 찾을 수 있습니다.
 - [Dreamhost](https://help.dreamhost.com/hc/en-us/articles/215612887-Email-client-protocols-and-port-numbers)
 - [InMotion](https://www.inmotionhosting.com/support/email/getting-started-guide-email/)
 
-Verizon
-- IMAP 호스트: imap.verizon.net
-- IMAP 포트: 995
+사용하는 업체가 목록에 없다면 해당 업체에 직접 문의해서 IMAP 호스트 이름과 포트를 확인하세요.
 
-AOL
-- IMAP 호스트: imap.aol.com  
-- IMAP 포트: 993
+자주 쓰는 IMAP 설정 참고표
 
-사용하는 제공업체가 여기에 없다면 IMAP 설정에 대해 이메일 서비스 제공업체에 문의하시길 권합니다.
+| 업체 | IMAP 호스트 | IMAP 포트 |
+| --- | --- | --- |
+| Google / Gmail | imap.gmail.com | 993 |
+| Verizon | imap.verizon.net | 995 |
+| AOL | imap.aol.com | 993 |
 
----
+## 문제 해결
 
-## **문제 해결**
+**증상:** "Unable to Create SMTP User"(SMTP 사용자를 만들 수 없음) — 버튼이 비활성화되었거나 경고 배너가 보여요.
 
-SMTP 승인 및 "Unable to Create SMTP User(SMTP 사용자를 생성할 수 없습니다)"
+이 도메인에는 지금 SMTP 자격 증명을 만들 수 없다는 뜻이에요. 자동 승인 시스템이 이를 제어해요. 조건에 맞는 계정은 바로 사용할 수 있고, 그렇지 않은 계정은 수동 검토가 필요해요.
 
-**Unable to Create SMTP User(SMTP 사용자를 생성할 수 없습니다)** 배너가 표시되거나 Create New SMTP User(새 SMTP 사용자 생성) 버튼이 비활성화된 경우, 현재 해당 도메인에 대해 SMTP 인증 정보를 생성할 수 없습니다.
+**해결 방법:**
 
-해결 방법:
-- 하위 계정에서 SMTP 인증 정보를 활성화하는 도움을 받으려면 Hyperclass 고객지원팀에 문의하세요.
-- 하위 계정 ID, 발송 도메인/서브도메인, 경고 메시지 스크린샷을 포함해 주세요.
-
----
+- 하이퍼클래스 고객지원에 문의해서 서브 계정의 SMTP 사용 권한을 요청하세요.
+- 문의할 때 서브 계정 ID, 발신 도메인 또는 서브도메인, 경고 메시지 스크린샷을 함께 보내 주세요.
 
 ## 자주 묻는 질문
 
-**Q: "SMTP Credential creation is blocked. Please contact support…(SMTP 인증 정보 생성이 차단되었습니다. 고객지원팀에 문의하세요…)" 오류가 나타나는 이유는?**
+### "SMTP Credential creation is blocked. Please contact support"(SMTP 자격 증명 생성이 차단되었습니다. 고객지원에 문의하세요)라는 메시지가 떠요. 왜 그런가요?
+계정이 사용량 기준에 도달했거나, 남용을 막기 위한 내부 통제에 걸렸을 때 나타나요. 하루 1,500통 한도를 넘었을 때 자주 발생해요. 하이퍼클래스 고객지원에 서브 계정 ID와 함께 문의하면 차단 상태를 검토하고 해결해 드려요.
 
-이 메시지는 계정이 사용량 임계값에 도달했거나 SMTP 인증 정보 생성에 제한이 있을 때 나타납니다. 일일 이메일 제한(예: 하루 1,500개 이메일) 초과나 남용 방지를 위한 내부 통제 때문일 수 있습니다. 계정 상태를 검토하고 제한 증가를 요청하거나 규정 준수 플래그를 해결하려면 고객지원팀에 문의하세요.
+### 에이전시 단위에서 SMTP 자격 증명을 만들 수 있나요?
+아니요. SMTP 자격 증명은 서브 계정 단위에서만, 그리고 전용 도메인 아래에서만 만들 수 있어요. 에이전시가 할당한 도메인에서는 만들 수 없어요.
 
----
-*원문 최종 수정: Mon, 2 Feb, 2026 at 4:22 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### 일일 이메일 한도를 넘으면 SMTP 자격 증명은 어떻게 되나요?
+계정에 있는 모든 전용 도메인의 SMTP 자격 증명이 자동으로 삭제돼요. 계정이 한도 안으로 돌아오면 자격 증명을 다시 만들어야 해요.
+
+### 메일 클라이언트나 WordPress SMTP 플러그인에는 어떤 포트를 쓰면 되나요?
+대부분의 메일 클라이언트와 SMTP 플러그인에는 **STARTTLS를 사용하는 587 포트**를 권장해요. 클라이언트가 implicit TLS를 요구하면 **465** 포트를 쓰세요. 호스팅 업체나 ISP가 다른 포트를 막고 있다면 **2525** 포트가 안정적인 대안이에요.
+
+### SMTP 자격 증명으로 이메일을 받을 수 있나요(IMAP/POP)?
+아니요. SMTP 자격 증명은 *보내기* 전용이에요. 하이퍼클래스에서는 메일함을 호스팅하지 않기 때문에 POP과 IMAP을 지원하지 않아요. 이메일을 받으려면 Google Workspace, Outlook 같은 이메일 호스팅 업체가 제공하는 IMAP 설정을 사용하세요.
+
+### 도메인 하나에 SMTP 자격 증명을 몇 개까지 만들 수 있나요?
+전용 도메인 하나당 최대 **5개**까지 만들 수 있어요.
+
+### 숨은참조 수신자도 일일 이메일 한도에 포함되나요?
+네. 모든 수신자(받는 사람, 참조, 숨은참조)가 각각 집계되고 요금도 따로 청구돼요. 예를 들어 이메일 한 통을 3명(받는 사람 1명, 참조 1명, 숨은참조 1명)에게 보내면 일일 한도와 요금 모두 3통으로 계산돼요.

@@ -173,16 +173,6 @@
 
 **팁:** 많은 AI 제안이 예상될 때는 오른쪽 고정 패널을 사용하고, 다른 도구와의 일관성을 원한다면 왼쪽으로 전환하세요.
 
-### 커뮤니티 추가 튜토리얼
-
-[https://youtu.be/kH1UmxQd6HU](https://youtu.be/kH1UmxQd6HU)
-
-[https://youtu.be/_YeRw_m4NVo](https://youtu.be/_YeRw_m4NVo)
-
-[https://youtu.be/VQ_JUYr7haE](https://youtu.be/VQ_JUYr7haE)
-
-[https://youtu.be/pwc5pRlta-4](https://youtu.be/pwc5pRlta-4)
-
 #### 버튼(Button):
 
 버튼 요소로 사용자 상호작용을 향상시키세요. 웹페이지로 연결하거나, 다운로드를 시작하거나, 기타 클릭 기반 작업을 트리거할 수 있습니다.

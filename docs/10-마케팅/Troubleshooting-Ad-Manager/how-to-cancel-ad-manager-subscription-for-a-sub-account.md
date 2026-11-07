@@ -1,67 +1,121 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 10-마케팅 > 광고 관리자 문제 해결
+원문: /support/solutions/articles/155000004091-how-to-cancel-ad-manager-subscription-for-a-sub-account-
+번역일: 2026-11-06
+카테고리: 10-마케팅
 ---
 
-# 하위 계정의 광고 관리자 구독을 취소하는 방법
+# 서브 계정의 광고 관리자 구독 취소
 
-이 글에서는 더 이상 광고 관리자(Ad Manager) 구독을 계속하지 않으려는 하위 계정이 취해야 할 단계에 대해 설명합니다.
+서브 계정에서 유료 **광고 관리자**(Ad Manager) 구독이 더 필요하지 않다면, 광고 관리자 설정에서 바로 취소할 수 있어요. 이 문서에서는 구독 정보를 확인하는 위치, 취소 방법, 취소 후 달라지는 점, 취소가 안 될 때 할 일을 안내해요.
 
-## 목차
+## 서브 계정에서 광고 관리자 구독 정보는 어디서 확인하나요?
 
-- [하위 계정에서 광고 관리자 구독 세부 정보를 찾는 곳](#하위-계정에서-광고-관리자-구독-세부-정보를-찾는-곳)
-- [광고 관리자 구독을 취소하는 방법](#광고-관리자-구독을-취소하는-방법)
-- [로케이션 구독이 취소되지 않을 때 해결 방법](#로케이션-구독이-취소되지-않을-때-해결-방법)
+광고 관리자 설정에서 현재 구독과 결제 정보를 볼 수 있어요.
 
-## 하위 계정에서 광고 관리자 구독 세부 정보를 찾는 곳
+1. 서브 계정에서 **마케팅 > 광고 관리자**로 이동하세요.
+2. **설정** 톱니바퀴 아이콘을 클릭하세요.
+3. **글로벌 설정** 아래에서 **구독**을 선택하세요.
+4. 적용되는 월 요금과 **구독 ID** 등 이용 중인 구독 정보를 확인하세요.
 
-광고 관리자 구독 세부 정보는 광고 관리자 홈 화면 오른쪽 상단에 있는 톱니바퀴 아이콘을 클릭하여 Ad Manager Settings(광고 관리자 설정)에서 확인할 수 있습니다.
+{% hint style="info" %}
+광고 관리자는 현재 에이전시에 기본 비용 없이 제공돼요. 이 문서는 에이전시를 통해 유료 광고 관리자 구독을 이용 중인 서브 계정에 해당해요.
+{% endhint %}
 
-![광고 관리자 설정 접근](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035489818/original/WeT0igOnpqjf1w4K9f5z7AQixM04KRmXLA.png?1730030842)
+![광고 관리자 구독 정보 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081880639/original/RgWd32Q8Od1bkj2Ku_FgxjgBjFqEYCfLsQ.png?1790347961)
 
-광고 관리자 설정에서 다른 탭들과 함께 전용 "Subscription(구독)" 탭이 있습니다:
+**광고 관리자 설정**에는 다른 탭과 함께 **구독** 탭이 따로 있어요.
 
-![구독 탭 위치](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035490088/original/uy0Lp30JtBTbisRIHzgSCVIQNlyAYDgNAA.png?1730031624)
+![광고 관리자 설정의 구독 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081880769/original/Mq6d0SyZs7urCU78LLABuXow3MUPkU3zDw.png?1790348026)
 
-월 요금 및 구독 ID와 같은 광고 관리자 구독 관련 세부 정보가 구독 취소 옵션과 함께 표시됩니다.
-
-## 광고 관리자 구독을 취소하는 방법
-
-Ad Manager Settings(광고 관리자 설정) > Subscription(구독) 탭에서 구독 세부 정보가 행 끝에 점 세 개(ellipses)와 함께 표시됩니다. 점 세 개를 클릭하면 구독 취소 옵션을 볼 수 있습니다:
-
-![구독 취소 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035490093/original/fZ39FLBAbdFENJlhumTnnc-XhEV34PNuTA.png?1730031637)
-
-'Cancel Subscription(구독 취소)' 버튼을 클릭하면 진행 시 어떤 일이 일어나는지에 대한 중요한 정보를 보여주는 대화 상자가 열립니다:
-
-- 광고 관리자를 사용하여 발행된 모든 활성 광고 캠페인이 일시정지됩니다.
-- 광고 관리자에서 생성된 리드 생성 광고 캠페인의 리드 동기화가 중단됩니다.
-- 연결된 모든 광고 계정의 연결이 해제되며, 구독을 갱신할 때까지 광고 관리자에 액세스할 수 없습니다.
-
-![구독 취소 확인 대화상자](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035490435/original/CRVVo0hiqmdqBTf3WRoFD8M4XmwxPsGRmg.png?1730032265)
-
-위 대화 상자에서 제공된 옵션 중에서 구독을 취소하는 이유를 선택하거나 '기타(Other)'를 선택하고 구체적인 이유를 명시하세요.
-
-![취소 이유 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035490621/original/uQJ5WbWHkTXBOZlXvY3oSnChgmQaQ-UeYw.png?1730032570)
-
-이유 선택 후 'Cancel Subscription(구독 취소)' 버튼이 활성화되며, 이를 클릭하면 활성 광고 관리자 구독이 취소되고 확인 대화 상자가 표시됩니다.
-
-![구독 취소 완료](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035503329/original/vZh9BqqYivAT8ikTmYVaXA2OcsA0f3HO2Q.png?1730058863)
-
-![구독 취소 성공 메시지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035924259/original/mqc2kaY8F1HuXEC3KC2D22uAdOlQLPBMqA.png?1730709463)
-
-## 로케이션 구독이 취소되지 않을 때 해결 방법
-
-로케이션 구독이 취소되지 않고 아래와 같은 실패 메시지가 표시되는 경우:
-
-![구독 취소 실패 메시지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035924175/original/ulM3qpj9mP_LxA9zxGPWxgT6MF-j7oYMdQ.png?1730709420)
-
-드문 경우지만 이런 상황에서는 티켓을 생성하여 지원팀에 문의하고, 지원 담당자에게 필요한 조치를 취해달라고 요청하여 취소를 진행하세요.
-
-사용자가 캠페인을 발행했고 발행 플랫폼에서 검토 중인 경우, 구독을 해지하거나 취소할 수 없으며 동일한 메시지를 명시하는 오류 대화 상자가 표시됩니다.
-
-![검토 중인 캠페인으로 인한 취소 불가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035924070/original/4jAJ_m8JpOFIZkkVlqAvZEyvo_TkygvwRg.png?1730709356)
+이 탭에는 월 요금, **구독 ID** 같은 광고 관리자 구독 정보가 나오고, 구독을 취소하는 메뉴도 있어요.
 
 ---
-*원문 최종 수정: Mon, 4 Nov, 2024 at 2:41 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+
+## 광고 관리자 구독을 취소하려면 어떻게 하나요?
+
+**광고 관리자 설정 > 구독** 탭에서 구독 정보 행의 맨 끝에 점 세 개(…) 아이콘이 있어요. 이 아이콘을 클릭하면 구독을 취소하는 메뉴가 나타나요.
+
+![구독 행 끝의 점 세 개 메뉴에서 구독 취소 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081880830/original/V8PmXxcgehX6tWauxFaGrzdsMd2fWtUzpw.png?1790348064)
+
+**구독 취소** 버튼을 클릭하면 대화 상자가 열려요. 계속 진행하면 어떻게 되는지 중요한 내용을 먼저 보여 줘요.
+
+1. 광고 관리자로 게시한 진행 중인 광고 캠페인이 모두 일시중지돼요.
+2. 광고 관리자에서 만든 리드 생성 광고 캠페인의 리드 동기화가 중단돼요.
+3. 연결된 광고 계정의 연결이 모두 해제돼요. 구독을 다시 갱신하기 전까지는 광고 관리자를 사용할 수 없어요.
+
+![구독 취소 시 달라지는 점을 안내하는 대화 상자](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081880955/original/Tz9oK4XAwfRCPem2cJFV61oNHce73W-maw.png?1790348091)
+
+같은 대화 상자에서 구독을 취소하는 이유를 목록에서 선택하세요. 목록에 맞는 이유가 없으면 **기타**를 선택하고 직접 입력하세요.
+
+![구독 취소 이유 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035490621/original/uQJ5WbWHkTXBOZlXvY3oSnChgmQaQ-UeYw.png?1730032570)
+
+이유를 선택하면 **구독 취소** 버튼이 활성화돼요. 이 버튼을 클릭하면 이용 중인 광고 관리자 구독이 취소되고, 취소됐다는 내용의 대화 상자가 나타나요.
+
+![구독 취소 버튼이 활성화된 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081881040/original/xx7Ss-lvAOP_-HqchadEuWiPz8BU_KbZ_Q.png?1790348120)
+
+![구독 취소 완료 확인 대화 상자](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035924259/original/mqc2kaY8F1HuXEC3KC2D22uAdOlQLPBMqA.png?1730709463)
+
+---
+
+## 광고 관리자 구독을 취소하면 어떻게 되나요?
+
+취소를 확정하기 전에 광고 관리자 설정에 어떤 영향이 있는지 확인하세요.
+
+취소 후에는 다음과 같이 바뀌어요.
+
+- 광고 관리자로 게시한 진행 중인 캠페인이 일시중지돼요.
+- 광고 관리자로 만든 **리드 생성** 캠페인의 리드 동기화가 중단돼요.
+- 연결된 광고 계정의 연결이 해제돼요.
+- 다시 활성화하기 전까지 서브 계정에서 광고 관리자를 사용할 수 없어요.
+
+구독을 취소하기 전에 진행 중인 캠페인과, 광고 관리자에 의존하는 리드 수집 과정이 있는지 확인하세요.
+
+---
+
+## 구독이 취소되지 않는 이유
+
+최근에 게시한 캠페인을 광고 플랫폼에서 아직 검토 중이면 광고 관리자 구독을 취소하지 못할 수 있어요.
+
+캠페인이 검토 중이라면 검토가 끝날 때까지 기다렸다가 구독 취소를 다시 시도하세요.
+
+---
+
+## 구독 취소에 실패하면 어떻게 하나요?
+
+광고 관리자에 오류가 표시되고 구독이 그대로 활성 상태라면 다음 순서로 확인하세요.
+
+1. 최근에 게시한 캠페인 중 검토 중인 것이 없는지 확인하세요.
+2. 검토 중인 캠페인이 있었다면, 검토가 끝난 뒤에 취소를 다시 시도하세요.
+3. 계속 취소되지 않으면 하이퍼클래스 고객지원에 문의하세요.
+
+문의할 때 해당 서브 계정과 구독 정보를 함께 알려 주시면 원인을 확인하는 데 도움이 돼요.
+
+![구독 취소 실패 시 오류 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081881209/original/TrK4QaJk-JRbhpt_6K78UgVlQ9tIL_lShg.jpeg?1790348249)
+
+---
+
+## 자주 묻는 질문
+
+### 광고 관리자 구독을 취소하면 캠페인이 삭제되나요?
+
+구독을 취소하면 광고 관리자로 게시한 진행 중인 캠페인이 일시중지돼요. 취소하기 전에 캠페인을 확인해서 진행 중인 광고에 어떤 영향이 있는지 파악하세요.
+
+### 취소 후 리드 생성 캠페인은 어떻게 되나요?
+
+구독을 취소하면 광고 관리자로 만든 **리드 생성** 캠페인의 리드 동기화가 중단돼요.
+
+### 연결해 둔 광고 계정은 어떻게 되나요?
+
+구독을 취소하면 연결된 광고 계정의 연결이 해제돼요. 다시 활성화하기 전까지는 서브 계정에서 광고 관리자를 사용할 수 없어요.
+
+### 광고 관리자 구독이 취소되지 않아요. 왜 그런가요?
+
+최근에 게시한 캠페인을 광고 플랫폼에서 아직 검토 중이면 취소가 막힐 수 있어요. 검토가 끝날 때까지 기다린 뒤 다시 시도하세요.
+
+### 취소했는데도 구독이 계속 활성 상태로 나와요. 어떻게 하나요?
+
+취소에 실패하고 구독이 그대로 활성 상태라면 하이퍼클래스 고객지원에 문의하세요.
+
+### 서브 계정의 구독을 취소하면 에이전시의 광고 관리자 사용에도 영향이 있나요?
+
+아니요. 취소는 해당 서브 계정의 광고 관리자 구독에만 적용돼요. 에이전시 단위의 광고 관리자는 현재 기본 비용 없이 제공돼요.

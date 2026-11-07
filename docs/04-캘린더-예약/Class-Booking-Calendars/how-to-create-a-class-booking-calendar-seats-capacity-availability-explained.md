@@ -1,263 +1,230 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 04-캘린더-예약 > Class Booking Calendars
+원문: /support/solutions/articles/155000003554-how-to-create-a-class-booking-calendar-seats-capacity-availability-explained-
+번역일: 2026-11-06
+카테고리: 04-캘린더-예약
 ---
 
-# 수업 예약 캘린더 만들기 (좌석, 정원, 예약 가능 시간 자세히 알아보기)
+# 클래스 예약 캘린더 만들기 (좌석 수·가용성 설정)
 
-Hyperclass의 수업 예약(Class Booking) 캘린더는 한 명의 강사가 여러 참가자와 함께하는 이벤트, 워크숍, 그룹 세션을 예약할 수 있게 해주는 기능입니다. 피트니스 클래스, 웨비나, 워크숍 등을 운영하든, 이 기능은 일정 관리를 간소화하고 결제를 자동화하며 참가자를 원활하게 관리해줍니다.
+클래스 예약 캘린더는 호스트 한 명이 여러 참가자를 한 번에 만나는 수업, 워크숍, 그룹 세션의 예약을 받을 때 쓰는 캘린더예요. 피트니스 클래스, 웨비나, 워크숍을 운영한다면 일정 관리, 결제, 참석자 관리를 한곳에서 처리할 수 있어요.
 
-**목차**
+## 클래스 예약 캘린더란?
 
-- [수업 예약 캘린더란 무엇인가요?](#수업-예약-캘린더란-무엇인가요)
-- [수업 예약 캘린더의 핵심 장점](#수업-예약-캘린더의-핵심-장점)
-- [수업 예약 캘린더 만들기](#수업-예약-캘린더-만들기)
-- [자주 묻는 질문](#자주-묻는-질문)
+클래스 예약 캘린더는 한 명의 호스트가 같은 세션에서 여러 참석자를 만나는 상황을 위한 하이퍼클래스 캘린더 유형이에요. 요가 스튜디오, 온라인 강의, 교육 세션처럼 참가자가 특정 날짜와 시간의 좌석을 예약하는 경우에 잘 맞아요.
 
-# **수업 예약 캘린더란 무엇인가요?**
+좌석 수 제한, 반복 일정, 결제를 하이퍼클래스 안에서 모두 설정할 수 있어서 정기적으로 열리는 클래스를 관리하기 편해요. 수동으로 예약을 받는 수고도 줄고, 참가자 관리도 자동으로 처리돼요.
 
-수업 예약 캘린더는 한 명의 호스트가 같은 세션에서 여러 참가자와 만나는 상황을 위해 설계된 Hyperclass 캘린더 유형입니다. 요가 스튜디오, 온라인 강의, 또는 참가자들이 특정 날짜와 시간에 좌석을 예약할 수 있는 교육 세션에 이상적입니다.
+## 클래스 예약 캘린더의 주요 장점
 
-이 캘린더 유형은 좌석 제한, 반복 일정, 결제 연동을 모두 Hyperclass 내에서 정의할 수 있어 반복되는 수업 관리를 단순화합니다. 수동 예약 작업을 줄이고 참가자 관리를 자동화합니다.
+클래스 예약 캘린더는 그룹 행사를 정리하고, 참석 현황을 관리하고, 예약과 결제 과정을 자동화하도록 만들어졌어요. 호스트 한 명이 여러 참가자를 동시에 맡는 사업에 알맞아요.
 
-## 수업 예약 캘린더의 핵심 장점
+- 유연한 일정: 클래스 요일, 시간대, 예약 가능한 좌석 수를 쉽게 정할 수 있어요.
+- 내장 결제: Stripe 연동으로 바로 결제를 받을 수 있어요.
+- 자동 알림: 예약, 일정 변경, 취소 소식을 참석자에게 알려 줘요.
+- 참석자 관리: 하이퍼클래스 대시보드에서 참가자별 예약을 확인하고 관리할 수 있어요.
+- 맞춤 브랜딩: 색상, 로고, 예약 위젯을 브랜드에 맞게 꾸밀 수 있어요.
 
-수업 예약 캘린더는 비즈니스가 그룹 이벤트를 효율적으로 조직하고, 출석을 관리하며, 예약과 결제 프로세스를 자동화할 수 있도록 만들어졌습니다. 한 명의 호스트가 여러 참가자를 동시에 담당하는 모든 비즈니스 모델에 이상적입니다.
+## 클래스 예약 캘린더 만들기
 
-- **유연한 일정 관리:** 수업 요일, 시간대, 이용 가능한 좌석을 쉽게 정의할 수 있습니다.
+### 설정 열기
 
-- **내장 결제:** Stripe 연동을 통해 직접 결제를 받을 수 있습니다.
+하이퍼클래스 대시보드의 왼쪽 사이드바에서 빨간 상자로 표시된 **설정**을 클릭하세요. 새 클래스 예약 캘린더를 만들기 전에 캘린더, 팀, 연동 같은 계정 설정을 관리하는 화면이 열려요.
 
-- **자동 알림:** 예약, 일정 변경, 취소에 대해 참가자에게 자동으로 알림을 보냅니다.
+### 캘린더 설정 시작하기
 
-- **참가자 관리:** Hyperclass 대시보드에서 각 참가자의 예약을 추적하고 관리할 수 있습니다.
+1. **설정** 메뉴의 왼쪽 사이드바에서 **캘린더**를 클릭하세요.
+2. 화면 위쪽의 **미팅** 탭을 여세요.
+3. **+ New Calendar**(새 캘린더 추가)를 클릭하세요.
 
-- **맞춤 브랜딩:** 브랜드 아이덴티티에 맞게 색상, 로고, 예약 위젯을 커스터마이징할 수 있습니다.
+이 단계에서 클래스 예약 캘린더를 만드는 과정이 시작돼요. 올바른 캘린더 유형과 서브 계정에 캘린더가 만들어져요.
 
-## 수업 예약 캘린더 만들기
+![새 캘린더 추가 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059079405/original/_Qu5tTAg_DRsB8MbZeJKoWAYYEVZfi3X_w.png?1763986832)
 
-### **설정(Settings) 접속**
+### 클래스 예약 유형 선택하기
 
-Hyperclass 대시보드에서 왼쪽 사이드바의 **Settings(설정)**을 빨간 상자에 강조된 대로 클릭하세요. 이렇게 하면 새로운 수업 예약 캘린더를 만들기 전에 필요한 캘린더, 팀, 연동, 기타 계정 설정을 관리할 수 있는 설정 패널이 열립니다.
+캘린더 유형 선택 창에서 빨간 상자로 표시된 **Class Booking**(클래스 예약)을 클릭하세요. 그룹 수업, 웨비나, 워크숍처럼 한 명의 호스트가 여러 참가자를 만나는 경우에 쓰는 유형이에요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059079236/original/y0VHQzvfeGsgxRISNC2URSPjKdYbqVc-Jg.png?1763986729)
+이 유형을 선택하면 좌석 수 제한, 그룹 일정, 결제 옵션을 쓸 수 있어요.
 
-### **캘린더 설정 열기**
+![캘린더 유형에서 클래스 예약 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059079465/original/0EY58iv4EeQYkkqkg4fkmdFs_RCi1uKm-g.png?1763986876)
 
-설정 메뉴에서 왼쪽 사이드바의 **Calendars(캘린더)**를 클릭한 다음, 화면 상단의 **Meetings(미팅)** 탭을 여세요. **+ New Calendar(+ 새 캘린더)**를 클릭하여 새 캘린더 만들기를 시작하세요.
+### 캘린더 이름 정하기
 
-이 단계는 수업 예약 캘린더의 설정 프로세스를 시작하며, 올바른 캘린더 유형과 하위 계정 하에서 생성되도록 보장합니다.
+**캘린더 이름** 필드에 클래스 캘린더의 이름을 알기 쉽게 입력하세요. 캘린더가 여러 개여도 쉽게 구분할 수 있도록 클래스나 행사의 목적이 드러나는 이름이 좋아요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059079405/original/_Qu5tTAg_DRsB8MbZeJKoWAYYEVZfi3X_w.png?1763986832)
+이름이 분명하면 팀원과 참석자 모두 올바른 예약 링크를 쉽게 알아볼 수 있어요.
 
-### **수업 예약(Class Booking) 선택**
+![캘린더 이름 입력](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059079720/original/-AnwaSX23nEmFRtZuIK0xXmqqwoF09grmA.png?1763987028)
 
-캘린더 유형 선택 창에서 빨간 상자에 강조된 **Class Booking(수업 예약)**을 클릭하세요. 이 옵션은 그룹 클래스, 웨비나, 워크숍처럼 한 명의 호스트가 여러 참가자와 만나는 시나리오를 위한 것입니다.
+### 캘린더 설명 입력하기
 
-이 유형을 선택하면 캘린더가 좌석 제한, 그룹 일정, 결제 옵션을 지원하게 됩니다.
+**설명** 입력란에 클래스나 행사를 간단히 소개하는 글을 쓰세요. 이 설명은 예약 페이지에 표시돼요. 참석자가 예약하기 전에 어떤 내용의 세션인지 알 수 있어요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059079465/original/0EY58iv4EeQYkkqkg4fkmdFs_RCi1uKm-g.png?1763986876)
+짧고 흥미롭게 써서 참가자가 무엇을 기대하면 되는지 분명히 알려 주세요.
 
-### **캘린더 이름 지정**
+![캘린더 설명 입력](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059079745/original/U__TY-PSfHxl_WX_6k-A-a7jqqXH-Bl7uw.png?1763987050)
 
-**Calendar name(캘린더 이름)** 필드에 빨간 상자에 표시된 것처럼 수업 캘린더의 명확하고 설명적인 이름을 입력하세요. 이름은 수업이나 이벤트의 목적을 반영해야 하므로 여러 캘린더를 관리할 때 쉽게 식별할 수 있습니다.
+### 팀원 지정하기
 
-잘 라벨링된 캘린더는 팀과 참가자 모두가 올바른 예약 링크를 인식하는 데 도움이 됩니다.
+**팀원 선택** 필드에서 클래스를 진행할 강사나 호스트를 선택하세요. 캘린더가 해당 팀원의 일정과 연결되어, 모든 예약이 그 팀원의 가용 시간에 맞춰 자동으로 동기화돼요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059079720/original/-AnwaSX23nEmFRtZuIK0xXmqqwoF09grmA.png?1763987028)
+팀원을 지정해 두면 일정이 겹치는 일을 막고 호스트 캘린더를 항상 최신으로 유지할 수 있어요.
 
-### **캘린더 설명 추가**
+![팀원 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059079771/original/pL_Zsoxsm056qsqJxsykLiC1quXBlJ23-Q.png?1763987067)
 
-**Description(설명)** 박스에 수업이나 이벤트에 대한 간단한 요약을 입력하세요. 이 설명은 예약 페이지에 표시되며 참가자가 예약 전에 세션의 내용을 이해하는 데 도움이 됩니다.
+### 사용자 지정 URL 설정하기
 
-참가자에게 명확한 기대치를 설정하도록 간결하고 매력적으로 작성하세요.
+**사용자 지정 URL** 필드에 클래스 캘린더만의 URL 슬러그를 입력하세요. 참석자가 쉽게 접속해서 예약할 수 있는 나만의 링크가 만들어져요. 브랜드가 드러나는 깔끔한 URL은 전문적인 인상을 주고, 예약 페이지를 공유하기도 쉬워요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059079745/original/U__TY-PSfHxl_WX_6k-A-a7jqqXH-Bl7uw.png?1763987050)
+![사용자 지정 URL 입력](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059103136/original/mY18Mmt7K-Drjx3jYznMVcAQaxZqfFKwJg.png?1763998198)
 
-### 팀원 지정
+### 미팅 시간 설정하기
 
-**Select team member(팀원 선택)** 필드에서 수업을 진행할 강사나 호스트를 선택하세요. 이는 캘린더를 해당 팀원의 일정과 연결하여 모든 예약이 그들의 예약 가능 시간과 자동으로 동기화되도록 합니다.
+**미팅 시간** 필드에 클래스 한 번의 진행 시간을 입력하세요. 화면 예시에서는 1시간으로 설정했어요. 모든 예약이 같은 시간 단위로 잡히고, 시스템이 세션 간격을 정확하게 관리해요. 수업 일정을 지키고 클래스끼리 겹치지 않게 하려면 알맞은 시간으로 설정하세요.
 
-팀원을 지정하는 것은 일정 충돌을 방지하고 호스트 캘린더를 최신 상태로 유지하는 데 중요합니다.
+![미팅 시간 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059080047/original/Kz93kc0HWoGjulaoi3vSdT38nEHPGCRGwQ.jpeg?1763987191)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059079771/original/pL_Zsoxsm056qsqJxsykLiC1quXBlJ23-Q.png?1763987067)
+### 클래스당 좌석 수 설정하기
 
-### **커스텀 URL 설정**
+**클래스당 좌석 수** 필드에 세션마다 받을 수 있는 최대 참가자 수를 입력하세요. 좌석이 모두 차면 더 이상 예약을 받지 않아요. 클래스 규모를 관리할 수 있는 범위로 유지할 수 있어요.
 
-Custom URL 필드에 빨간 상자에 강조된 것처럼 수업 캘린더의 고유한 URL 슬러그를 입력하세요. 이는 참가자가 세션을 예약하기 위해 쉽게 접근할 수 있는 개인화된 링크를 만듭니다. 명확하고 브랜드화된 URL은 전문성을 향상시키고 예약 페이지 공유를 더 간단하게 만듭니다.
+정확한 좌석 수를 설정해 두면 등록 과정이 정돈되고 초과 예약을 막을 수 있어요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059103136/original/mY18Mmt7K-Drjx3jYznMVcAQaxZqfFKwJg.png?1763998198)
+![클래스당 좌석 수 입력](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059102665/original/Y7t8ZAMs7HJY7XjOR1x6kUadhXyQrDWihw.png?1763997942)
 
-### **미팅 지속 시간 설정**
+### 미팅 장소 추가하기
 
-**Meeting duration(미팅 지속 시간)** 필드에 표시된 것처럼 각 수업이 얼마나 지속될지 정의하세요(예: 1시간). 이는 모든 예약이 일관된 시간 틀을 따르도록 하고 시스템이 세션 간격을 정확하게 관리하는 데 도움이 됩니다. 올바른 지속 시간을 설정하는 것은 교육 일정을 유지하고 수업 간 겹침을 방지하는 데 중요합니다.
+**미팅 장소** 필드에 클래스가 열리는 링크나 주소를 입력하세요. Zoom이나 Google Meet URL 같은 링크를 넣으면 돼요. 참석자가 받는 예약 확인 안내에 올바른 접속 정보가 자동으로 들어가요. 미리 안내해 두면 헷갈리지 않고 참석자가 편하게 참여할 수 있어요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059080047/original/Kz93kc0HWoGjulaoi3vSdT38nEHPGCRGwQ.jpeg?1763987191)
+![미팅 장소 입력](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059102938/original/tCmdcD4V_Pz_l5xvNVbmrcwlXhMAfLUeFg.jpeg?1763998053)
 
-### **수업당 좌석 수 설정**
+### 결제 받기 켜기
 
-**Seats per class(수업당 좌석)** 필드에 빨간 상자에 강조된 것처럼 각 세션에 허용되는 최대 참가자 수를 입력하세요. 이 제한은 수업 규모를 관리 가능하게 유지하고 모든 자리가 찰 경우 추가 예약을 받지 않도록 합니다.
+1. **결제 받기**를 켜서 클래스 결제를 활성화하세요.
+2. 표시된 영역에서 **금액**과 **통화**를 입력하세요.
+3. **설명**에 결제 목적을 짧게 적으세요(예: 수강료, 등록비).
 
-정확한 좌석 수를 설정하면 조직적인 등록 프로세스를 유지하고 초과 예약을 방지하는 데 도움이 됩니다.
+참가자가 비용을 미리 알 수 있고, 연결된 Stripe 계정으로 결제가 매끄럽게 처리돼요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059102665/original/Y7t8ZAMs7HJY7XjOR1x6kUadhXyQrDWihw.png?1763997942)
+![결제 받기 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059103344/original/-73AlaXyNxRHRynRmSn_rv98Dnvsev82kQ.png?1763998350)
 
-### **미팅 위치 추가**
+### 고급 설정 열기
 
-**Meeting Location(미팅 위치)** 필드에 Zoom이나 Google Meet URL과 같이 수업이 진행될 링크나 주소를 입력하세요. 이는 참가자가 예약 확인 시 올바른 미팅 접근 세부 정보를 자동으로 받을 수 있도록 합니다. 이 정보를 미리 제공하면 혼란을 피하고 참가자 경험을 간소화하는 데 도움이 됩니다.
+캘린더 설정 창 아래쪽에서 빨간 상자로 표시된 **고급 설정**을 클릭하세요. 캘린더의 가용 시간, 알림, 사용자 지정 설정을 세부적으로 조정하는 옵션이 열려요. 이 섹션에서 원하는 일정과 브랜딩에 맞게 클래스 예약 캘린더를 맞출 수 있어요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059102938/original/tCmdcD4V_Pz_l5xvNVbmrcwlXhMAfLUeFg.jpeg?1763998053)
+### 미팅 상세 정보
 
-### **결제 수집 활성화**
+**Meeting Details**(미팅 상세 정보) 섹션에서는 클래스 예약 페이지에 표시할 핵심 정보를 정해요. 각 항목으로 캘린더를 정돈하고 전문적으로 보이게 만들 수 있어요.
 
-**Accept payments(결제 받기)**를 토글하여 수업에 대한 결제 수집을 활성화한 다음 강조된 섹션에서 **Amount(금액)**과 **Currency(통화)**를 입력하세요.
+- **Calendar Logo**(캘린더 로고): 이미지(PNG, JPEG, GIF)를 올려 캘린더에 로고를 넣어요. 고객이 내 사업체를 바로 알아볼 수 있어요.
+- **캘린더 이름**: 어떤 클래스나 서비스인지 알 수 있는 제목을 붙여요.
+- **설명**: 클래스 내용을 간단히 소개해요. 예약 페이지에 표시되어 참석자가 내용을 파악하기 쉬워요.
+- **그룹**: (선택 사항) 캘린더가 여러 개라면 그룹에 넣어 정리할 수 있어요.
+- **사용자 지정 URL**: 고객에게 공유해 클래스 예약 페이지로 바로 연결되는 간단한 링크를 만들어요.
 
-결제 목적을 설명하는 간단한 **Description(설명)**(예: 수업료 또는 등록비)을 추가하세요. 이는 참가자가 비용을 미리 알 수 있도록 하고 연결된 Stripe 계정을 통해 원활한 결제 처리를 가능하게 합니다.
+이렇게 하면 클래스 캘린더에 이름표가 분명히 붙고, 브랜드가 드러나며, 참석자가 이해하기 쉬워져요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059103344/original/-73AlaXyNxRHRynRmSn_rv98Dnvsev82kQ.png?1763998350)
+### 가용성과 예약 규칙
 
-### **고급 설정 접근**
+**Availability & Booking Rules**(가용성 및 예약 규칙) 섹션에서는 참석자가 언제, 어떻게 클래스를 예약할 수 있는지 정해요. 각 필드의 역할은 다음과 같아요.
 
-빨간 상자에 강조된 것처럼 캘린더 설정 창 하단의 **Advanced Settings(고급 설정)**을 클릭하세요. 이는 캘린더에 대한 추가 구성 옵션을 열어 예약 가능 시간, 알림, 커스터마이제이션 설정을 세밀하게 조정할 수 있게 해줍니다. 이 섹션에 접근하면 수업 예약 캘린더가 선호하는 일정과 브랜딩 요구사항에 맞도록 할 수 있습니다.
+- **Booking Availability**(예약 가능 시간): 지정한 팀원이 일정을 잡을 수 있는 시간을 보여 줘요.
+- **Recurring Meeting**(반복 미팅): 같은 클래스가 정기적으로 반복된다면 켜세요.
+- **Meeting Interval**(미팅 간격): 예약 가능한 시간대 사이의 간격을 정해요(예: 30분마다).
+- **미팅 시간**: 클래스 한 번의 진행 시간을 정해요(예: 1시간).
+- **최소 예약 안내 기간**: 참석자가 클래스 시작 얼마 전까지 예약해야 하는지 정해요.
+- **날짜 범위**: 앞으로 얼마나 먼 날짜까지 클래스 일정을 잡을 수 있는지 제한해요.
+- **클래스당 좌석 수**: 세션당 최대 참가자 수를 정해요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059105269/original/mv2fcILZQ4y9dT8Mksr0FtfhSn1-O_Qnog.png?1763999290)
+```
+클래스 예약 캘린더는 가용성 탭의 Recurring Availability(반복 가용성) 설정으로 반복 클래스를 지원합니다. 이 설정을 켜고 반복할 요일과 시간(예: 매주 화요일과 목요일 오후 6:00–7:00)을 지정하세요. 참석자는 같은 예약 링크에서 앞으로 있을 해당 날짜를 모두 볼 수 있고, 날짜마다 좌석 수가 따로 적용됩니다.
+```
 
-### **미팅 세부사항**
+### 한 클래스 캘린더에 여러 세션(날짜·시간) 추가하기
 
-**Meeting Details(미팅 세부사항)** 섹션에서는 수업 예약 페이지에서 사용자에게 표시되는 핵심 정보를 정의할 수 있습니다. 여기의 각 요소는 전문적인 외관을 위해 캘린더를 개인화하고 정리하는 데 도움이 됩니다.
+반복 가용성과 일회성 세션을 함께 설정하면 같은 클래스를 여러 날짜에 열 수 있어요. 참석자는 하나의 예약 링크에서 앞으로 있을 날짜를 모두 보고, 일정에 맞는 날짜를 고를 수 있어요.
 
-- **Calendar Logo(캘린더 로고):** 로고로 캘린더를 브랜딩하기 위해 이미지(PNG, JPEG 또는 GIF)를 업로드하세요. 이 시각적 요소는 고객이 비즈니스를 즉시 인식하는 데 도움이 됩니다.
+1. **설정 > 캘린더**로 이동해 클래스 예약 캘린더를 **편집**하세요.
 
-- **Calendar Name(캘린더 이름):** 어떤 수업이나 서비스를 나타내는지 식별할 수 있는 명확한 제목을 캘린더에 지정하세요.
+   ![캘린더 편집 화면 안내](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064773588/original/-t_PnGmPFGXg_wRGE_O8lzqmBCCWjiY4mw.gif?1770897447)
+2. **가용성** 탭을 여세요.
+3. **Recurring Availability**(반복 가용성)를 켜고, 클래스를 여는 요일과 시간을 추가하세요(예: 화요일 오후 6:00–7:00, 목요일 오후 6:00–7:00).
+4. **+ Add Date Override**(날짜 예외 추가)를 클릭해 일회성 세션을 추가하세요(예: 3월 7일 토요일 오전 10:00–11:30).
+5. **저장**을 클릭하세요.
+6. 예약 링크의 **미리보기**를 열어 날짜 선택기에 여러 날짜와 시간이 보이는지 확인하세요.
 
-- **Description(설명):** 수업의 내용에 대한 간단하고 유익한 개요를 추가하세요. 이는 예약 페이지에 나타나며 참가자에게 명확성을 제공합니다.
+### 좌석 수와 겹치는 예약의 처리 방식
 
-- **Group(그룹):** (선택사항) 여러 캘린더를 관리하는 경우 더 나은 조직을 위해 캘린더를 그룹에 할당하세요.
+클래스 예약 캘린더에서 세션마다 여러 참가자를 받을 수 있을 때는 **클래스당 좌석 수** 값으로 예약 가능 여부가 정해져요.
 
-- **Custom URL(커스텀 URL):** 수업 예약 페이지에 직접 접근할 수 있도록 고객과 공유할 수 있는 간단하고 브랜드화된 링크를 만드세요.
+예약이 확정될 때마다 해당 시간대의 남은 좌석이 1석씩 줄어들어요.
 
-이 섹션은 수업 캘린더가 명확하게 라벨링되고, 시각적으로 브랜딩되며, 참가자가 이해하기 쉽도록 보장합니다.
+예약이 여러 시간대에 걸쳐 있으면, 해당되는 각 시간대의 좌석이 1석씩 줄어들어요. 시간대의 좌석이 모두 찼을 때만 그 시간대가 막혀요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059163333/original/mjIfMCEkVmCC5oTw0pC24TSHohlGchxXWg.png?1764068404)
+이제 겹치는 예약 때문에 영향을 받는 모든 시간대가 미리 막히지 않아요. 각 시간대에 실제로 남은 좌석 수가 예약 가능 여부에 반영돼요.
 
----
+이 방식은 다음 모든 곳에 똑같이 적용돼요.
 
-### 예약 가능 시간 및 예약 규칙
-
-**Availability & Booking Rules(예약 가능 시간 및 예약 규칙)** 섹션에서는 참가자가 언제, 어떻게 수업을 예약할 수 있는지 제어할 수 있습니다. 각 필드의 기능은 다음과 같습니다:
-
-- **Booking Availability(예약 가능 시간):** 일정 예약을 위한 지정된 팀원의 사용 가능한 시간을 보여줍니다.
-
-- **Recurring Meeting(반복 미팅):** 같은 수업이 정기적으로 반복되는 경우 이를 토글하세요.
-
-- **Meeting Interval(미팅 간격):** 사용 가능한 예약 슬롯 간의 간격을 정의합니다(예: 30분마다).
-
-- **Meeting Duration(미팅 지속 시간):** 각 수업이 지속되는 시간을 지정합니다(예: 1시간).
-
-- **Minimum Scheduling Notice(최소 예약 통지):** 참가자가 수업을 얼마나 미리 예약해야 하는지 설정합니다.
-
-- **Date Range(날짜 범위):** 수업을 얼마나 미래까지 예약할 수 있는지 제한합니다.
-
-- **Seats per Class(수업당 좌석):** 세션당 최대 참가자 수를 결정합니다.
-
-수업 예약 캘린더는 예약 가능 시간(Availability) 탭의 반복 예약 가능 시간(Recurring Availability) 설정을 통해 반복 수업을 지원합니다. 이를 활성화하여 반복 요일과 시간을 정의하세요(예: 매주 화요일과 목요일 오후 6:00–7:00). 참가자는 같은 예약 링크에서 모든 예정된 일치 날짜를 보게 되며, 각 날짜는 고유한 좌석 용량을 가집니다.
-
----
-
-### 하나의 수업 캘린더에 여러 세션(날짜 및 시간) 추가
-
-반복 예약 가능 시간과 일회성 세션을 정의하여 여러 날짜에 걸쳐 같은 수업을 제공하세요. 참가자는 단일 예약 링크에서 모든 예정된 날짜를 보고 일정에 맞는 날짜를 선택할 수 있습니다.
-
-단계:
-
-- Settings(설정) → Calendars(캘린더) → 수업 예약 캘린더 편집으로 이동하세요.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064773588/original/-t_PnGmPFGXg_wRGE_O8lzqmBCCWjiY4mw.gif?1770897447)
-
-- Availability(예약 가능 시간) 탭을 여세요.
-
-- Recurring Availability(반복 예약 가능 시간)를 토글하고 이 수업을 운영하는 요일/시간을 추가하세요(예: 화 오후 6:00–7:00, 목 오후 6:00–7:00).
-
-- + Add Date Override(+ 날짜 오버라이드 추가)를 클릭하여 일회성 세션을 추가하세요(예: 토, 3월 7일, 오전 10–11:30).
-
-- Save(저장)를 클릭하세요.
-
-- 예약 링크의 Preview(미리보기)를 열어 날짜 선택기에 여러 날짜/시간이 나타나는지 확인하세요.
-
----
-
-### 좌석 용량과 겹치는 예약 작동 방식
-
-수업 예약 캘린더가 세션당 여러 참가자를 허용할 때, 예약 가능 시간은 **Seats per Class(수업당 좌석)** 값으로 제어됩니다.
-
-확인된 각 예약은 해당 시간 슬롯의 사용 가능한 좌석 수를 1만큼 감소시킵니다.
-
-약속이 여러 시간 슬롯과 겹치는 경우, 시스템은 영향을 받는 각 슬롯에서 좌석 용량을 1씩 감소시킵니다. 슬롯은 총 좌석 용량이 완전히 도달했을 때만 차단됩니다.
-
-겹치는 예약은 더 이상 영향을 받는 모든 슬롯을 조기에 완전히 차단하지 않습니다. 대신 예약 가능 시간은 각 슬롯의 실제 남은 용량을 반영합니다.
-
-이 업데이트된 로직은 다음 전반에 걸쳐 일관되게 적용됩니다:
-
-- 퍼블릭 예약 위젯
-- 인앱 약속 모달
+- 공개 예약 위젯
+- 앱 안의 예약 창
 - 개인 캘린더
 - 라운드 로빈 캘린더
 - 이벤트 캘린더
-- Pre/Post Buffer Time(전후 버퍼 시간): 겹치는 예약을 방지하기 위해 각 수업 전후에 시간을 추가합니다.
+- **Pre/Post Buffer Time**(앞뒤 여유 시간): 예약이 겹치지 않도록 클래스 전이나 후에 시간을 추가해요.
+이렇게 설정하면 내 가용 시간과 클래스 정원에 맞춰 예약 캘린더가 원활하게 운영돼요.
 
-이 구성은 예약 캘린더가 예약 가능 시간과 수업 용량에 맞춰 원활하게 실행되도록 보장합니다.
+![가용성과 예약 규칙 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059163776/original/PiBhTvrEwJ42CQGxpB0qSihpd3pK0lqghg.png?1764068702)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059163776/original/PiBhTvrEwJ42CQGxpB0qSihpd3pK0lqghg.png?1764068702)
+**Forms & Payment**(폼 및 결제) 섹션에서는 참가자가 등록하는 방식과 입력받을 정보를 설정해요.
 
-**Forms & Payment(폼 및 결제)** 섹션에서는 참가자가 등록하는 방식과 제공하는 정보를 커스터마이징할 수 있습니다.
+- **폼 선택**: 이름, 이메일, 전화번호 같은 정보를 받을 기본 폼이나 사용자 지정 폼을 선택해요.
+- **Widget Order**(위젯 순서): 참석자가 시간을 먼저 고를지, 폼을 먼저 작성할지 예약 흐름을 정해요.
+- **Pre-populate Fields**(필드 미리 채우기): **고정 연락처 활성화**를 켜면 다시 방문한 사용자의 정보가 자동으로 채워져요.
+- **Consent Checkbox**(동의 체크박스): 마케팅 규정 준수를 위한 동의 문구를 추가해요.
+- **Confirmation Page**(확인 페이지): 예약 후 기본 감사 메시지를 보여 줄지, 리디렉션 URL로 이동시킬지 선택해요.
 
-- **Select Form(폼 선택):** 이름, 이메일, 전화번호와 같은 세부 정보를 수집하기 위해 기본 또는 커스텀 폼을 선택하세요.
+이 섹션에서 참가자 정보를 빠짐없이 받고, 예약 과정을 규정 준수 및 워크플로우 방침에 맞게 운영할 수 있어요.
 
-- **Widget Order(위젯 순서):** 사용자가 시간을 먼저 선택하는지 아니면 폼을 먼저 작성하는지 결정하여 예약 흐름을 제어하세요.
+![폼 및 결제 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059164372/original/--6kt2mKMHa950pnnyIb7FumHRRNFkBPMA.png?1764068883)
 
-- **Pre-populate Fields(필드 미리 채우기):** 스티키 연락처를 활성화하여 재방문 사용자의 정보가 자동으로 채워지도록 하세요.
+### 알림과 추가 옵션
 
-- **Consent Checkbox(동의 체크박스):** 마케팅 컴플라이언스를 위한 동의 언어를 추가하세요.
+**Notifications & Additional Options**(알림 및 추가 옵션) 섹션에서는 클래스 예약과 관련한 안내를 자동화해요.
 
-- **Confirmation Page(확인 페이지):** 예약 후 기본 감사 메시지 또는 리다이렉트 URL 중에서 선택하세요.
+- **Appointment Notifications**(예약 알림): 예약이 생성, 확정, 일정 변경, 취소될 때 이메일, SMS, WhatsApp, 앱 내 알림으로 알려 주도록 설정해요.
+- **Reminders and Follow-Ups**(리마인더 및 후속 안내): 클래스 전에 리마인더를, 클래스 후에 후속 안내를 자동으로 보내 참석률과 참여도를 높여요.
+- **Status Labels**(상태 라벨): 예약의 상태 표시를 켜거나 꺼요.
+- **Calendar Sync**(캘린더 동기화): Google, Outlook, iCloud와 동기화해서 참석자에게 초대장을 바로 보내요.
 
-이 섹션은 모든 참가자 데이터가 적절히 수집되고 예약 프로세스가 컴플라이언스 및 워크플로우 선호도를 따르도록 보장합니다.
+이 설정으로 호스트와 참석자 모두 일정을 놓치지 않아서 결석이 줄고 일정 관리 효율이 높아져요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059164372/original/--6kt2mKMHa950pnnyIb7FumHRRNFkBPMA.png?1764068883)
+![알림 및 추가 옵션 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059164962/original/dvCp6zjhtYvLdxjcyOLMFjTGOIxYJUUH-w.png?1764069084)
 
----
+### 캘린더 모양 꾸미기
 
-### 알림 및 추가 옵션
+**사용자 지정** 섹션에서는 참석자에게 보이는 캘린더의 모양을 꾸밀 수 있어요.
 
-**Notifications & Additional Options(알림 및 추가 옵션)** 섹션에서는 수업 예약을 위한 커뮤니케이션을 자동화할 수 있습니다.
+- **Calendar Cover Image**(캘린더 커버 이미지): 배너나 이미지를 올려 예약 페이지를 돋보이게 해요.
+- **Calendar Widget Style**(캘린더 위젯 스타일): 예약 위젯을 모던한 **Neo** 레이아웃으로 할지 클래식 레이아웃으로 할지 선택해요.
+- **Primary Settings**(기본 설정): 위젯의 색상, 배경, 버튼 스타일을 브랜드에 맞게 조정해요.
 
-- **Appointment Notifications(예약 알림):** 이메일, SMS, 왓츠앱 또는 인앱을 통해 예약 생성, 확인, 일정 변경 또는 취소 시 알림을 구성하세요.
+이렇게 꾸미면 브랜드 일관성을 지키면서 참석자에게 깔끔하고 전문적인 예약 경험을 줄 수 있어요.
 
-- **Reminders and Follow-Ups(리마인더 및 후속 조치):** 수업 전 자동 리마인더와 수업 후 후속 조치를 보내 출석률과 참여도를 향상시키세요.
+![사용자 지정 섹션 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059165235/original/I0A444UhwqvY1ZQoMZmoSw2-9NVHLTSk_Q.png?1764069198)
 
-- **Status Labels(상태 라벨):** 약속에 대한 시각적 상태 표시기를 활성화하거나 비활성화하세요.
+## 자주 묻는 질문
 
-- **Calendar Sync(캘린더 동기화):** Google, Outlook 또는 iCloud와 동기화하여 참가자에게 직접 초대장을 보낼 수 있도록 허용하세요.
+### 한 클래스에 강사를 여러 명 지정할 수 있나요?
+아니요. 클래스 캘린더 하나에는 호스트 한 명만 지정할 수 있어요. 강사마다 캘린더를 따로 만들면 돼요.
 
-이러한 설정은 호스트와 참가자 모두에게 정보를 제공하여 수업 결석을 줄이고 전반적인 일정 관리 효율성을 향상시킵니다.
+### 참석자가 한 번에 여러 좌석을 예약할 수 있나요?
+아니요. 클래스 예약 캘린더에서는 **Add Guests**(게스트 추가) 옵션을 지원하지 않아요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059164962/original/dvCp6zjhtYvLdxjcyOLMFjTGOIxYJUUH-w.png?1764069084)
+### 다른 통화로 결제를 받을 수 있나요?
+하이퍼클래스는 Stripe의 설정에 따라 통화를 관리해요. 사용하려는 통화를 Stripe 계정이 지원하는지 확인하세요.
 
----
+### 결제한 참석자와 결제하지 않은 참석자는 어떻게 확인하나요?
+**예약** 대시보드에서 각 예약 기록을 열면 결제 정보를 확인할 수 있어요.
 
-### 캘린더 외관 커스터마이징
-
-**Customizations(커스터마이제이션)** 섹션에서는 참가자에게 보이는 캘린더의 모습을 개인화할 수 있습니다.
-
-- **Calendar Cover Image(캘린더 커버 이미지):** 예약 페이지를 시각적으로 향상시키기 위해 배너나 이미지를 업로드하세요.
-
-- **Calendar Widget Style(캘린더 위젯 스타일):** 예약 위젯을 위해 현대적인 **Neo** 또는 클래식 레이아웃 중에서 선택하세요.
-
-- **Primary Settings(기본 설정):** 브랜드에 맞게 위젯의 색상, 배경, 버튼 스타일을 조정하세요.
-
-이러한 시각적 커스터마이제이션은 브랜드 일관성을 유지하고 참가자를 위한 세련되고 전문적인 예약 경험을 만드는 데 도움이 됩니다.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155059165235/original/I0A444UhwqvY1ZQoMZmoSw2-9NVHLTSk_Q.png?1764069198)
-
-## 자주 묻는 
+### 참석자가 직접 일정을 변경할 수 있나요?
+**Reschedule Policy**(일정 변경 정책)에서 허용했다면 가능해요. 클래스 몇 시간 전까지 일정 변경을 허용할지도 정할 수 있어요.

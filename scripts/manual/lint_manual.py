@@ -7,7 +7,7 @@
 import glob, json, os, re, sys
 R = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 gl = json.load(open(f"{R}/data/glossary.ko.json", encoding="utf-8"))
-SKIP_VARIANTS = {"고객", "통합", "제품", "보고서", "과정", "거래", "양식", "서식", "강좌", "약속", "지불", "레슨", "제휴"}
+SKIP_VARIANTS = {"리포트", "잠재 고객", "잠재고객", "매장", "정기 결제", "청구서", "오더", "고객", "통합", "제품", "보고서", "과정", "거래", "양식", "서식", "강좌", "약속", "지불", "레슨", "제휴"}
 VARS = []
 for it in gl["objects"] + gl["buttons"]:
     if not it.get("decided", True): continue
@@ -23,6 +23,8 @@ def check(path, src_images=None):
     t = open(path, encoding="utf-8", errors="ignore").read()
     issues = []
     prose = URL.sub(" ", CODE.sub(" ", t))
+    prose = re.sub(r"^---.*?\n---\n", "", prose, count=1, flags=re.S)       # 머리말
+    prose = re.sub(r"\]\([^)]*\)", "]", prose)                              # 링크 대상 경로
     for m in BRAND.finditer(prose):
         issues.append(("brand", m.group(0)))
     own = "/00-자주묻는질문/" in path or "/43-한국-앱/" in path

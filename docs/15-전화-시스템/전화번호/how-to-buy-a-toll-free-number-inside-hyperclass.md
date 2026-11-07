@@ -1,74 +1,76 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 15-전화-시스템 > 전화번호
+원문: /support/solutions/articles/48001204834-how-to-buy-a-toll-free-number
+번역일: 2026-11-06
+카테고리: 15-전화-시스템
 ---
 
-# Hyperclass에서 무료 통화 전화번호를 구매하는 방법
+# 수신자 부담 번호 구매하기
 
-**개요**
+서브 계정에서 수신자 부담 번호를 구매하는 방법을 안내해요. 고객과 소통할 때 쓸 비즈니스 번호가 필요할 때 따라 해 보세요.
 
-무료 통화 전화번호 구매 방법을 이해하는 것은 비즈니스 운영에 매우 중요할 수 있습니다. 이 가이드는 하위 계정용 무료 통화 전화번호를 구매하는 방법을 단계별로 안내합니다. 이 지식을 활용하여 고객 커뮤니케이션 전략을 향상시키세요.
+{% hint style="info" %}
+서브 계정이 하이퍼클래스 전화를 쓰고 있다면, 앱에서 하이퍼클래스 전화용 수신자 부담 번호 등록(미국/캐나다)을 신청할 수 있어요. [미국/캐나다 수신자 부담 번호에만 해당돼요]
 
-하위 계정이 LC 전화를 사용 중인 경우, 애플리케이션에서 [LC - Phone 무료 통화 번호 등록(미국/캐나다)](toll-free-number-verification-guide-for-lc-phone-us-canada-.md)에 가입할 수 있습니다. [미국/캐나다 무료 통화 번호에만 적용]
+서브 계정이 직접 만든 Twilio 계정을 쓰고 있다면, 수신자 부담 번호 등록은 Twilio 고객지원에 문의해야 해요.
+{% endhint %}
 
-하위 계정이 자체 Twilio 계정을 사용하는 경우, 무료 통화 번호를 등록하려면 [Twilio 지원팀](https://support.twilio.com/hc/en-us)에 문의해야 합니다.
+## 수신자 부담 번호란?
 
-## 목차
+수신자 부담 번호는 800, 888, 877, 866, 855, 844, 833처럼 눈에 익은 앞자리를 쓰는 비즈니스 전화번호예요. 특정 지역에 얽매이지 않는 번호라서 더 넓은 지역의 고객에게 비즈니스를 알릴 수 있어요. 선택한 번호가 지원하면 음성, SMS, MMS 기능도 쓸 수 있어요. 사용 가능 여부는 국가, 번호 유형, 선택한 기능, 공급업체 재고, 관련 규정에 따라 달라져요.
 
-- [무료 통화 전화번호 구매 방법](#무료-통화-전화번호-구매-방법)
-- [FAQ](#faq)
+하이퍼클래스 전화로 관리되는 서브 계정에서 구매한 수신자 부담 번호는 그 서브 계정에 연결돼요. 구매한 뒤에는 통화, 라우팅, 워크플로우 등 지원되는 소통 기능에 맞게 설정할 수 있어요.
 
-# 무료 통화 전화번호 구매 방법
+## 수신자 부담 번호의 주요 장점
 
-### 1단계. 무료 통화 전화번호를 구매하려는 로케이션/하위 계정으로 이동합니다:
+- 전문적인 비즈니스 이미지: 특정 지역 번호에 묶이지 않은, 알아보기 쉬운 비즈니스 번호를 쓸 수 있어요.
+- 음성과 메시지 기능: 음성, SMS, MMS 기능을 지원하는 수신자 부담 번호를 찾아볼 수 있어요(지원되는 경우).
+- 유연한 번호 선택: 번호 유형, 지원 기능, 특정 숫자로 필터링해서 원하는 번호를 좁혀 찾을 수 있어요.
+- 하이퍼클래스 연동: 구매한 번호를 하이퍼클래스에서 지원하는 소통, 라우팅, 자동화, 워크플로우 기능과 함께 쓸 수 있어요.
 
-![하위 계정 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48173009595/original/3bfOIXkCzcCWpxRDannPReh96IJTA3MTrQ.png?1640117226)
+## 수신자 부담 번호 구매 절차
 
-### 2단계. 좌측 하단의 Settings(설정)를 클릭합니다:
+1. 서브 계정에서 왼쪽 아래의 **설정**을 클릭하세요.
+2. **전화 시스템**을 여세요.
 
-![설정 메뉴 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48173009499/original/FEVbbuCdBEVErG8ZWN6-0RXmJ3akjkefmQ.png?1640117195)
+   ![전화 시스템 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155079746449/original/LEmn9j-Dj7DP5dFDf7IlUyjvdEJ_vbMQvg.png?1788215766)
+3. **+ Add Number**(번호 추가)를 클릭하세요.
+4. 드롭다운 메뉴에서 **전화번호 추가**를 선택하세요.
 
-### 3단계. Phone Numbers(전화번호)를 클릭합니다:
+   ![드롭다운에서 전화번호 추가 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155079746462/original/UJpyyDvKOQajUcba00WiTAM5W2ktOv_qDg.png?1788215791)
+5. **필터**를 클릭해 번호 필터를 여세요.
 
-![전화번호 메뉴 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155005988206/original/Jdsi2BpEhfNvvDmRDAGOOinePUTzD6rK9w.png?1692905959)
+   ![번호 필터 열기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155079746493/original/qeFGkXIL_chHctKbGT_Q7CQT98CbwYvvIw.png?1788216019)
+6. **번호 유형**에서 **수신자 부담 번호**를 선택하세요.
+7. **적용**을 클릭해 검색 결과를 갱신하세요.
 
-### 4단계. Add Number(번호 추가)를 클릭합니다:
+   ![번호 유형 선택 후 적용](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155079746504/original/YVJeCW88ubR8SjUIM4Q6560urnztzrBLVQ.png?1788216085)
+8. 구매할 번호를 선택한 다음 **구매 진행**을 클릭하세요.
 
-![번호 추가 버튼 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155005988225/original/nho5mt17mWTDumlJdLJ8GWRPSf1LsHb7tQ.png?1692905981)
+   ![구매할 번호 선택 후 구매 진행](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155079746516/original/6SlZafzNwadniWPw7hqHGYA0tRt7eXe4iA.png?1788216139)
 
-### 5단계. 국가를 United States로 설정 > Filter(필터) 클릭:
+## 자주 묻는 질문
 
-![국가 선택 및 필터](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155005988235/original/0L3yTx9YsM9L2sPFqk8wNjVV7IhDPGn22Q.png?1692906003)
+### 수신자 부담 번호는 로컬 번호나 일반 전화번호와 비교해 어떤 점이 좋나요?
 
-### 6단계. Phone Number Type(전화번호 유형)에서 Local & Mobile 선택 해제:
+수신자 부담 번호는 요금이 높은 편이지만 다음과 같은 장점이 있어요.
 
-- Toll-Free만 선택된 상태로 유지
-- Apply(적용) 클릭
+- 초당 전송 처리량이 메시지 세그먼트 3개예요. 다른 10DLC 번호는 초당 1개예요.
+- [미국/캐나다에만 해당] 10DLC 번호의 A2P 등록과 달리, 수신자 부담 번호 등록은 진행 중에도 메시지를 몇 건 이상 보낼 수 있어요.
 
-![무료 통화 번호 유형 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155005988466/original/UOOuHNolmHFQX8G6vcHqfdbq4s4Ka4nTtQ.png?1692906212)
+### 수신자 부담 번호를 구매하면 SMS나 MMS 인증도 자동으로 되나요?
 
-### 7단계. 원하는 전화번호를 선택하고 Proceed to Buy!(구매 진행)를 클릭합니다!
+아니요. 번호 구매와 수신자 부담 번호 인증(Toll-Free Verification)은 별개의 절차예요. 미국이나 캐나다 수신자에게 메시지를 보내는 수신자 부담 번호는 수신자 부담 번호 인증을 마쳐야 SMS나 MMS를 보낼 수 있어요.
 
-무료 통화 번호는 다음 세 자리 코드로 시작하는 번호입니다: 800, 888, 877, 866, 855, 844 또는 833
+### 미국/캐나다 수신자 부담 번호는 어떻게 등록하나요?
 
-![전화번호 선택 및 구매](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155005988576/original/ICQXHuWnZo5XevsG3L6EZcCrMbA_yw_94w.png?1692906471)
+서브 계정이 하이퍼클래스 전화를 쓰고 있다면, 앱에서 하이퍼클래스 전화용 수신자 부담 번호 등록(미국/캐나다)을 신청할 수 있어요. [미국/캐나다 수신자 부담 번호에만 해당돼요]
 
-# FAQ
+서브 계정이 직접 만든 Twilio 계정을 쓰고 있다면, [Twilio 고객지원](https://support.twilio.com/hc/en-us)에 문의해서 수신자 부담 번호를 등록해야 해요.
 
-### 1. 무료 통화 번호가 로컬/일반 전화번호보다 좋은 점은 무엇인가요?
+### 수신자 부담 번호 인증이 진행 중일 때도 전화를 걸 수 있나요?
 
-무료 통화 번호는 가격이 높지만 다음과 같은 추가 장점이 있습니다:
+네. 수신자 부담 번호 인증은 메시지에만 적용돼요. 음성 통화는 인증 상태에 영향을 받지 않아요.
 
-- 다른 10DLC 번호의 경우 초당 1개 메시지 세그먼트와 비교하여 초당 3개 메시지 세그먼트로 처리량이 증가합니다.
-- [미국/캐나다만] 무료 통화 등록을 통해 10DLC 번호의 A2P 등록과 달리 등록 진행 중에도 최소한 몇 개의 메시지를 보낼 수 있습니다.
+### 수신자 부담 번호는 비용이 얼마인가요?
 
-### 2. 미국/캐나다 무료 통화 번호를 어떻게 등록하나요?
-
-하위 계정이 LC 전화를 사용 중인 경우, 애플리케이션에서 [LC - Phone 무료 통화 번호 등록(미국/캐나다)](toll-free-number-verification-guide-for-lc-phone-us-canada-.md)에 가입할 수 있습니다. [미국/캐나다 무료 통화 번호에만 적용]
-
-하위 계정이 자체 Twilio 계정을 사용하는 경우, 무료 통화 번호를 등록하려면 [Twilio 지원팀](https://support.twilio.com/hc/en-us)에 문의해야 합니다.
-
----
-*원문 최종 수정: 2025년 7월 22일 화요일 오전 2:03*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+전화번호에는 정기적으로 대여 비용이 들고, 요금은 번호 유형과 지역에 따라 달라요. 전화 시스템 요금은 바뀔 수 있으니 최신 요금은 전화 시스템 요금 및 청구 가이드를 확인하세요.

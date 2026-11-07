@@ -1,46 +1,48 @@
 ---
-
-번역일: 2026-04-09
-카테고리: 42-통합 > Zapier Integration
+원문: /support/solutions/articles/48001239665-connect-servicetitan-highlevel-zapier-
+번역일: 2026-11-07
+카테고리: 42-통합
 ---
 
-# ServiceTitan + Hyperclass 연결하기 (Zapier)
+# ServiceTitan과 하이퍼클래스 연결하기 (Zapier)
 
-ServiceTitan과 Hyperclass 간에 데이터를 수동으로 전송하느라 지치셨나요? 이 과정을 자동화하여 시간을 절약할 방법이 있다면 어떨까요?
+Zapier를 이용해 ServiceTitan과 하이퍼클래스를 연결하면 두 플랫폼 사이의 데이터 전송을 자동화할 수 있어요. 이 문서에서는 연결에 필요한 안내와 사용할 수 있는 트리거·액션 목록을 확인할 수 있어요.
 
-ServiceTitan은 서비스 비즈니스의 운영 관리를 돕는 강력한 플랫폼이고, Hyperclass는 비즈니스가 새로운 고객을 찾도록 돕는 리드 생성 도구입니다. 두 플랫폼 모두 성장과 확장을 원하는 서비스 기반 비즈니스에게 필수적입니다. 하지만 두 플랫폼 간에 데이터를 수동으로 전송하는 것은 시간이 많이 걸리고 오류가 발생하기 쉽습니다.
+ServiceTitan과 하이퍼클래스 사이에서 데이터를 일일이 옮기고 계신가요? 이 과정을 자동화하면 시간을 크게 아낄 수 있어요.
 
-다행히 이 문제에 대한 해결책이 있습니다: Zapier입니다. 이 강력한 자동화 도구는 ServiceTitan과 Hyperclass를 연결하여 두 플랫폼 간 데이터 전송을 자동화할 수 있게 해줍니다.
+ServiceTitan은 서비스 업체가 운영 전반을 관리하도록 돕는 플랫폼이에요. 하이퍼클래스는 신규 고객을 찾는 리드 생성에 도움을 주는 도구예요. 서비스 기반 비즈니스를 키우려면 두 플랫폼이 모두 필요해요. 하지만 두 플랫폼 사이에서 데이터를 직접 옮기면 시간이 오래 걸리고 오류가 생기기 쉬워요.
 
-이 가이드에서는 Zapier를 사용하여 ServiceTitan과 Hyperclass를 연결하는 단계를 안내해드리겠습니다. 이를 통해 시간을 절약하고 비즈니스 성장에 집중할 수 있습니다.
+이럴 때 Zapier를 쓸 수 있어요. Zapier는 ServiceTitan과 하이퍼클래스를 연결해 두 플랫폼 사이의 데이터 전송을 자동화해 주는 도구예요.
 
-참고: Hyperclass의 [공식 Zapier 연동](https://zapier.com/apps/leadconnector/integrations#how-it-works)은 화이트라벨로 제공됩니다.
+아래 안내를 참고해 Zapier로 ServiceTitan과 하이퍼클래스를 연결해 보세요.
 
-[![ServiceTitan과 LeadConnector 연동](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297059851/original/Ail6q_AgtUncNdgzfa6Jj8bbJu3-LCCIxQ.jpeg?1683816247)](https://zapier.com/apps/servicetitan/integrations/leadconnector#how-it-works)
+{% hint style="info" %}
+하이퍼클래스의 공식 Zapier 연동은 화이트라벨로 제공돼요.
 
-이미지를 클릭하거나 [여기를 클릭하여 시작하세요](https://zapier.com/apps/servicetitan/integrations/leadconnector#how-it-works).
+![Zapier 연동 시작 이미지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297059851/original/Ail6q_AgtUncNdgzfa6Jj8bbJu3-LCCIxQ.jpeg?1683816247)
 
-## 지원되는 트리거 및 액션 목록
+이미지를 클릭해 시작하세요.
+{% endhint %}
 
-![ServiceTitan 트리거 목록 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297072298/original/3xTtmzR7uUoOhVmwPb8L03_Bm3efnb40fg.png?1683819261)
+---
 
-![ServiceTitan 트리거 목록 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297072566/original/5agFRLGC6dXDDQ48CfBoCNLgPOVm6pXtKw.png?1683819332)
+## 지원되는 트리거와 액션 목록
 
-![ServiceTitan 트리거 목록 3](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297072823/original/VaRkcwYRHP8UtLw17_GYNfCnSQ8nVyhohw.png?1683819411)
+![지원되는 트리거와 액션 목록 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297072298/original/3xTtmzR7uUoOhVmwPb8L03_Bm3efnb40fg.png?1683819261)
 
-![ServiceTitan 액션 목록 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297073041/original/r-9QDhi23SlJ3etgEnnMh1sbC1o195UBCg.png?1683819485)
+![지원되는 트리거와 액션 목록 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297072566/original/5agFRLGC6dXDDQ48CfBoCNLgPOVm6pXtKw.png?1683819332)
 
-![ServiceTitan 액션 목록 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297073199/original/u0kP8nMoDI5ax1ZGKKSCOFzUaOT7oPZGvg.png?1683819521)
+![지원되는 트리거와 액션 목록 3](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297072823/original/VaRkcwYRHP8UtLw17_GYNfCnSQ8nVyhohw.png?1683819411)
 
-![ServiceTitan 액션 목록 3](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297073406/original/iWnrgSskI5kHOPvy5I3JXDoNMrCzEDEtIw.png?1683819567)
+![지원되는 트리거와 액션 목록 4](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297073041/original/r-9QDhi23SlJ3etgEnnMh1sbC1o195UBCg.png?1683819485)
 
-#### 관련 문서
+![지원되는 트리거와 액션 목록 5](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297073199/original/u0kP8nMoDI5ax1ZGKKSCOFzUaOT7oPZGvg.png?1683819521)
+
+![지원되는 트리거와 액션 목록 6](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297073406/original/iWnrgSskI5kHOPvy5I3JXDoNMrCzEDEtIw.png?1683819567)
+
+#### 함께 보면 좋은 문서
 
 - Zapier 계정 연결하기
-- 모든 API 문서 - [developers.Hyperclass.com](http://developers.hyperclass.ai)
-- 화이트라벨 Zapier 연동을 공개하는 방법
-- [커스텀 웹훅 LC Premium 워크플로우 액션 사용 방법](../../07-워크플로우/빌더/guide-to-custom-webhook-workflow-action.md)
-
----
-*원문 최종 수정: Thu, 11 May, 2023 at 11:47 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+- 전체 API 문서: 하이퍼클래스 고객지원에 문의하세요.
+- 화이트라벨 Zapier 연동 공개하기
+- 하이퍼클래스 프리미엄 워크플로우 액션 Custom Webhook 사용하기

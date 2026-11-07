@@ -1,132 +1,214 @@
 ---
-
-번역일: 2026-04-09
-카테고리: 99-리커버리
+원문: /support/solutions/articles/155000003094-how-to-use-site-and-funnel-analytics-in-highlevel
+번역일: 2026-11-06
+카테고리: 06-사이트
 ---
 
-# 하이레벨의 사이트 및 퍼널 분석 사용법
+# 사이트 및 퍼널 분석 사용하기
 
-사이트 및 퍼널 분석(Site and Funnel Analytics) 대시보드를 통해 퍼널, 웹사이트, 블로그, 웨비나, 폼, 설문, QR 코드의 성과를 빠르게 파악할 수 있습니다. 핵심 지표를 손쉽게 추적하고 분석하며, 온라인 존재감을 최적화하고 그래프 기반의 시각적 인사이트로 성과를 향상시킬 수 있습니다.
+사이트 및 퍼널 분석 대시보드에서는 퍼널, 웹사이트, 블로그, 웨비나, 폼, 설문, QR 코드의 성과를 한곳에서 확인할 수 있어요. 주요 지표를 그래프로 보면서 온라인 활동을 점검하고 개선할 때 사용하세요.
 
 ---
 
 ## 사이트 및 퍼널 분석 대시보드란?
 
-사이트 및 퍼널 분석은 웹 자산이 방문자를 어떻게 유치하고, 참여시키고, 전환시키는지 측정하는 중앙 작업 공간입니다. 개별 퍼널, 페이지, 도구를 오가지 않고도 KPI와 차트를 검토할 수 있는 단일하고 일관된 장소를 제공합니다.
+사이트 및 퍼널 분석은 웹 자산이 방문자를 모으고, 참여를 이끌고, 전환으로 이어지게 하는지 확인하는 공간이에요. 퍼널, 페이지, 도구를 하나씩 오가지 않아도 KPI와 차트를 한 화면에서 볼 수 있어요.
 
-분석할 자산 유형(예: 퍼널 또는 웹사이트)을 선택하고, 선택적으로 특정 자산으로 범위를 좁힌 다음, 날짜 범위를 설정합니다. 그러면 대시보드가 명확한 KPI 카드와 시각 자료로 결과를 요약해줍니다. KPI와 시각 자료가 선택한 자산 유형에 맞춤화되어 있기 때문에 가장 중요한 지표에 집중할 수 있으면서도 더 깊이 탐색할 수 있는 빠른 경로를 제공합니다.
+먼저 분석할 자산 유형을 하나 고르세요(예: 퍼널, 웹사이트). 원하면 특정 자산만 골라 범위를 좁히고, 날짜 범위도 정해요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155063812398/original/PwR6sv1S-lkGiAkwJrHTxMqcygx2NSNTkw.png?1769726971)
-
----
-
-## 사이트 및 퍼널 분석의 주요 장점
-
-이 기능은 시간과 노력을 절약하여 가장 중요한 비즈니스 성장에 집중할 수 있도록 도와줍니다.
-
-- **사용자 친화적 인터페이스:** 직관적인 디자인으로 데이터를 쉽게 탐색할 수 있습니다.
-
-- **실행 가능한 인사이트:** 퍼널과 웹사이트의 성능 향상을 위한 정보에 기반한 의사결정을 내릴 수 있습니다.
-
-- **효율성:** 수동 데이터 편집의 번거로움 없이 트렌드와 패턴을 빠르게 파악할 수 있습니다.
+그러면 대시보드가 결과를 KPI 카드와 차트로 보여 줘요. KPI와 차트는 선택한 자산 유형에 맞게 달라지기 때문에, 중요한 지표에 집중하면서 더 자세히 살펴볼 수도 있어요.
 
 ---
 
-## 사이트 및 퍼널 분석의 핵심 지표
+## 사이트 및 퍼널 분석의 장점
 
-- **페이지 뷰(Page Views):** 퍼널, 웹사이트 또는 기타 자산이 방문된 횟수와 순 페이지 뷰에 대한 인사이트를 확인할 수 있습니다.
+이 기능은 데이터를 정리하는 시간을 줄이고, 비즈니스를 키우는 일에 집중하도록 도와줘요.
 
-- **옵트인(Opt-in):** 퍼널/웹사이트에서의 전환 횟수(예: 상품 구매 또는 폼/설문 제출 또는 예약 완료).
-
-- **매출(Sales):** 퍼널/웹사이트에서 발생한 수익.
-
-- **옵트인 전환율(Opt-in Conversion Rate):** 옵트인 수를 순 페이지 뷰로 나눈 값.
-
-추가 지표 정의에 대한 자세한 내용은 퍼널 및 웹사이트 통계 정의를 참조하세요.
+- 사용하기 쉬운 화면: 직관적인 구성이라 데이터를 쉽게 살펴볼 수 있어요.
+- 활용할 수 있는 인사이트: 퍼널과 웹사이트 성과를 높이는 결정을 내리는 데 도움이 돼요.
+- 효율성: 데이터를 직접 모으지 않아도 추세와 패턴을 빠르게 찾을 수 있어요.
 
 ---
 
-## 자산 유형 선택
+## 주요 지표
 
-분석하고자 하는 자산 패밀리를 선택하는 것부터 시작합니다. 이 선택은 필수이며 한 번에 하나의 자산 유형만 활성화할 수 있습니다. 이 선택에 따라 대시보드에 표시되는 KPI 카드와 차트가 결정됩니다.
+- **페이지 조회수**: 퍼널, 웹사이트 등 자산이 몇 번 방문됐는지 보여 줘요. 고유 페이지 조회수도 함께 확인할 수 있어요.
+- **Page Views by Step**(단계별 페이지 조회수): **페이지 조회수** 차트에서 퍼널, 웹사이트, 웨비나를 클릭하면 단계별 성과를 자세히 볼 수 있어요.
+- **수신 동의**: 퍼널이나 웹사이트에서 일어난 전환 수예요(예: 상품 구매, 폼·설문 제출, 예약).
+- **Time on Page**(페이지 체류 시간): 사용자가 페이지에 머문 시간이에요.
+- **판매**: 퍼널이나 웹사이트에서 발생한 매출이에요.
+- **수신 동의 전환율**: 수신 동의 수를 고유 페이지 조회수로 나눈 값이에요.
 
-드롭다운을 사용하여 퍼널(Funnels), 웹사이트(Websites), 블로그(Blogs), 웨비나(Webinars), 폼(Forms), 설문(Surveys), QR 코드(QR Codes) 또는 외부 추적(External Tracking) 중 하나의 자산 유형을 선택합니다.
-
-**참고:** 대시보드에 표시되는 지표는 선택한 자산 유형에 따라 달라집니다.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155063812398/original/PwR6sv1S-lkGiAkwJrHTxMqcygx2NSNTkw.png?1769726971)
-
----
-
-## 날짜 범위 및 자산별 필터링
-
-두 가지 필터를 적용하여 분석에 집중하세요: 특정 자산 선택과 날짜 범위 설정.
-
-### 특정 자산별 필터링(선택사항)
-
-현재 선택된 자산 유형 내에서 단일 자산을 선택합니다(예: 특정 퍼널, 웹사이트, 블로그, 웨비나, 폼, 설문 또는 QR 코드). 이것을 **전체(All)**로 설정하면 해당 유형의 모든 자산에 대한 결과가 집계됩니다. 자산 유형을 변경하면 이 필터는 전체로 재설정됩니다.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155063875409/original/9Pi43-jTmYnlCyY5XNBYzcHRhC6p67btdg.png?1769786933)
-
-### 날짜 범위별 필터링
-
-우측 상단의 날짜 범위 선택기를 사용하여 데이터를 필터링할 기간을 선택합니다. 이를 통해 선택한 기간 동안의 페이지 뷰, 옵트인, 매출, 주문 전환율의 상세한 타임라인을 볼 수 있습니다. 대시보드는 이 기간의 데이터를 바로 이전의 동일한 길이 기간과 비교합니다.
-
-날짜 범위는 기본적으로 **최근 14일**로 설정됩니다.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155063720402/original/ffs939aFzOEC3qIJly-pJMY9CWifhlm54A.png?1769640563)
+{% hint style="info" %}
+다른 지표의 정의는 '퍼널 및 웹사이트 통계 정의' 문서를 참고하세요.
+{% endhint %}
 
 ---
 
-## 인터랙티브 KPI 카드
+## 자산 유형 선택하기
 
-KPI 카드는 탭처럼 작동합니다. KPI 카드를 선택하면 아래의 차트와 분석이 업데이트되어 해당 지표를 깊이 있게 탐색할 수 있습니다. 일부 자산 유형은 KPI 카드가 적거나 아예 없을 수 있습니다.
+먼저 분석할 자산 유형을 고르세요. 이 선택은 필수이고, 한 번에 한 가지 유형만 선택할 수 있어요. 선택한 유형에 따라 대시보드에 나타나는 KPI 카드와 차트가 달라져요.
 
-**참고:** 대시보드에 표시되는 지표는 선택한 KPI 카드에 따라 달라집니다.
+드롭다운에서 다음 중 하나를 고르세요: **퍼널**, **웹사이트**, **블로그**, **웨비나**, **폼**, **설문**, **QR 코드**, **외부 트래킹**.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155063811885/original/J0cUyiKprRdG8Ttw99euUSIxgLEShz8AcA.jpeg?1769725482)
+{% hint style="info" %}
+선택한 자산 유형에 따라 대시보드에 표시되는 지표가 달라져요.
+{% endhint %}
+
+![자산 유형 선택 드롭다운](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155063812398/original/PwR6sv1S-lkGiAkwJrHTxMqcygx2NSNTkw.png?1769726971)
 
 ---
 
-## 사이트 분석 사용 방법
+## 날짜 범위와 자산으로 필터링하기
 
-#### 1단계: 분석으로 이동
+특정 자산을 고르고 날짜 범위를 정하면 분석 범위를 좁힐 수 있어요.
 
-로케이션 대시보드에서 좌측 네비게이션 바를 사용하여 사이트(Sites)로 이동합니다. 상단 네비게이션 리본에서 **분석(Analytics)** 탭을 선택합니다.
+### 특정 자산으로 필터링하기 (선택 사항)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155063720257/original/Z9EarHA2C261BFLN856U9ki9oyk0iDUVBw.png?1769640197)
+선택한 자산 유형 안에서 자산 하나를 고르세요(예: 특정 퍼널, 웹사이트, 블로그, 웨비나, 폼, 설문, QR 코드). **전체**로 두면 해당 유형의 모든 자산 결과가 합산돼요. 자산 유형을 바꾸면 이 필터는 **전체**로 돌아가요.
 
-#### 2단계: 자산 유형 선택
+![특정 자산 선택 필터](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084305574/original/1vCdlr7FgnQauAbn6mTsgFmfnHWEHJt1Xw.png?1793103797)
 
-드롭다운을 사용하여 자산 유형(예: 퍼널)을 선택하고 선택적으로 특정 자산을 선택하여 초점을 좁힙니다.
+### 날짜 범위로 필터링하기
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155063876592/original/kSAYyhJ2QIA1FwpCVwjJctLCAeSB0R71vw.jpeg?1769787689)
+오른쪽 위의 날짜 범위 선택기에서 데이터를 볼 기간을 고르세요. 선택한 기간 동안의 페이지 조회수, 수신 동의, 판매, 주문 전환율을 시간 흐름에 따라 자세히 볼 수 있어요. 대시보드는 선택한 기간의 데이터를 바로 이전의 같은 길이 기간과 비교해서 보여 줘요.
 
-#### 3단계: 날짜 범위 설정
+날짜 범위의 기본값은 **최근 14일**이에요.
 
-목표에 맞는 **날짜 범위**를 선택합니다.
+![날짜 범위 선택기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084305685/original/QUZohNs6mt0hddP8ZDMKQhU1vQE8QniGKw.png?1793103853)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155063876707/original/FD3KBD7Iz1fOzvoWVWzSzI01vETcJzG_hQ.jpeg?1769787771)
+---
 
-#### 4단계: 데이터 탐색
+## KPI 카드 활용하기
 
-KPI 카드를 클릭하여 차트에 다시 집중하고, 트렌드와 분석을 스캔합니다. 다른 자산 유형, 자산 또는 시간대에 대해 필요에 따라 반복합니다.
+KPI 카드는 탭처럼 동작해요. KPI 카드를 선택하면 아래의 차트와 세부 분석이 그 지표에 맞게 바뀌어서 자세히 살펴볼 수 있어요. 자산 유형에 따라 KPI 카드가 적거나 아예 없을 수도 있어요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155063876889/original/uNvCzwLpQnJekaGgqfAGzGLTErAV1VJ-LQ.jpeg?1769787913)
+{% hint style="info" %}
+선택한 KPI 카드에 따라 대시보드에 표시되는 지표가 달라져요.
+{% endhint %}
+
+![KPI 카드](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155063811885/original/J0cUyiKprRdG8Ttw99euUSIxgLEShz8AcA.jpeg?1769725482)
+
+---
+
+## 사이트 분석 사용하기
+
+#### 1단계: 분석으로 이동하기
+
+로케이션 대시보드의 왼쪽 메뉴에서 **사이트**로 이동하세요. 위쪽 메뉴에서 **분석** 탭을 선택하세요.
+
+![사이트 메뉴의 분석 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155063720257/original/Z9EarHA2C261BFLN856U9ki9oyk0iDUVBw.png?1769640197)
+
+#### 2단계: 자산 유형 선택하기
+
+드롭다운에서 자산 유형을 고르세요(예: 퍼널). 원하면 특정 자산도 골라 범위를 좁힐 수 있어요.
+
+![자산 유형과 자산 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155063876592/original/kSAYyhJ2QIA1FwpCVwjJctLCAeSB0R71vw.jpeg?1769787689)
+
+#### 3단계: 날짜 범위 설정하기
+
+목적에 맞는 **날짜 범위**를 고르세요.
+
+![날짜 범위 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155063876707/original/FD3KBD7Iz1fOzvoWVWzSzI01vETcJzG_hQ.jpeg?1769787771)
+
+#### 4단계: 데이터 살펴보기
+
+KPI 카드를 클릭해 차트의 초점을 바꾸고, 추세와 세부 분석을 확인하세요. 다른 자산 유형, 자산, 기간에 대해서도 같은 방법으로 반복해서 확인할 수 있어요.
+
+![분석 데이터 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155063876889/original/uNvCzwLpQnJekaGgqfAGzGLTErAV1VJ-LQ.jpeg?1769787913)
+
+---
+
+## QR 코드 분석
+
+QR 코드 분석에서는 스캔 활동, 기기 유형, 브라우저, 지역을 보여 줘요. 이 정보로 참여 추세를 파악하고 QR 코드 캠페인을 개선할 수 있어요.
+
+### 1. QR 코드 분석 열기
+
+1. **사이트 > 분석**으로 이동하세요.
+2. 자산 유형 드롭다운에서 **QR 코드**를 선택하세요.
+3. 전체 분석을 함께 보려면 **전체**를 선택하세요. 특정 QR 코드만 보려면 해당 QR 코드를 고르세요.
+4. 날짜 범위 선택기에서 분석할 기간을 고르세요.
+5. 표시되는 스캔 지표와 리포팅 차트를 확인하세요.
+
+![QR 코드 분석 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084304500/original/khJvmmy649IOHNUJdHWayRYC9sUaMxdLCw.png?1793103373)
+
+### 2. QR 스캔과 고유 QR 스캔 확인하기
+
+대시보드에는 두 가지 스캔 지표가 나와요.
+
+- **QR 스캔**: 기록된 QR 코드 스캔의 전체 횟수예요.
+- **Unique QR scans**(고유 QR 스캔): 선택한 기간에 기록된 고유 스캔 수예요.
+
+스캔 차트는 시간에 따른 활동을 보여 줘서 QR 코드 참여도가 어떻게 달라지는지 파악할 수 있어요.
+
+### 3. 기기 유형별 스캔 분석하기
+
+**Scans by device type**(기기 유형별 스캔) 차트는 QR 코드 스캔이 기기 종류별로 어떻게 나뉘는지 보여 줘요.
+
+기기 유형은 다음과 같아요.
+
+- 데스크톱
+- 모바일
+- 태블릿
+- 알 수 없음
+
+이 정보로 사용자가 어떤 기기로 QR 코드를 스캔하는지 알 수 있어요.
+
+### 4. 상위 브라우저 분석하기
+
+**상위 브라우저** 섹션에는 QR 코드 스캔에 사용된 브라우저가 표시돼요.
+
+Chrome, Safari, Edge 같은 지원되는 브라우저의 사용 정보를 확인할 수 있어요.
+
+이 정보로 QR 코드 목적지에 접속할 때 주로 쓰는 브라우징 환경을 파악할 수 있어요.
+
+![상위 브라우저 섹션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084304587/original/ABKxxjL5d2zj9pQE6r0Usgw2EtPuOYWr-g.png?1793103410)
+
+### 5. QR 코드 지역별 분석 보기
+
+지역 분석 섹션에는 지도와 위치별 방문자 정보가 표시돼요.
+
+**방문 상위 기준** 드롭다운에서 지역 구분 기준을 고르세요.
+
+#### 1. 국가별 분석
+
+**국가**를 선택하면 국가별 방문자 분포를 볼 수 있어요. **국가** 패널에는 국가와 방문자 수가 함께 나와요.
+
+![국가별 방문자 분석](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084304861/original/4vNQfRNjmXEeMyENDWGpoAynsqy7NjWBrA.png?1793103533)
+
+#### 2. 주/도별 분석
+
+**주/도**를 선택하면 주(state)나 도(province)별 방문자 분포를 볼 수 있어요. **주(States)** 패널에는 지역별 방문자 수가 나와요.
+
+![주/도별 방문자 분석](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084304861/original/4vNQfRNjmXEeMyENDWGpoAynsqy7NjWBrA.png?1793103533)
+
+#### 3. 도시별 분석
+
+**도시**를 선택하면 도시별 방문자 분포를 볼 수 있어요. **도시** 패널에는 도시와 방문자 수가 함께 나와요.
+
+![도시별 방문자 분석](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084305055/original/kC1MVSUDgYjauxebUhJuV9n8EHdaZMKFeQ.png?1793103609)
+
+### 6. 과거 QR 코드 분석 보기
+
+고급 QR 코드 분석은 2024년 8월 28일 이후에 기록된 스캔 데이터를 지원해요.
+
+지원되는 과거 날짜 범위를 선택하면, 기존 QR 코드의 기기, 브라우저, 지역 분석을 확인할 수 있어요.
+
+그래서 새 QR 코드를 만들지 않고도 지원되는 과거 스캔 데이터를 분석할 수 있어요.
 
 ---
 
 ## 자주 묻는 질문
 
-**Q: QR 코드에 대한 KPI 토글이 보이지 않는 이유는 무엇인가요?**
-QR 코드는 단순화된 보기(총 스캔 수와 코드별 스캔 수)를 제공합니다. 이 자산 유형에서는 KPI 카드 토글을 사용할 수 없습니다.
+### QR 코드에는 KPI 토글이 왜 보이지 않나요?
+QR 코드는 일반 KPI 카드 토글 대신 전용 분석 화면을 사용해요. 이 화면에는 QR 스캔, 고유 QR 스캔, 기기 유형, 브라우저, 국가·주·도시별 지역 인사이트가 들어 있어요.
 
-**Q: 이전 기간 대비 %는 어떻게 계산되나요?**
-대시보드는 선택한 범위를 동일한 길이의 바로 이전 기간과 비교합니다(예: 최근 14일 vs. 그 이전 14일).
+### 이전 기간 대비 %는 어떻게 계산되나요?
+대시보드는 선택한 기간을 바로 앞의 같은 길이 기간과 비교해요(예: 최근 14일과 그 앞 14일).
 
-**Q: 외부 추적(External Tracking)의 데이터 가용성에 영향을 미치는 요소는 무엇인가요?**
-외부 추적 스크립트가 외부 사이트에 설치되어 제대로 작동해야 합니다. 누락되거나 차단된 경우 조회수/제출 내역이 나타나지 않습니다.
+### 외부 트래킹 데이터가 보이지 않는 이유는 무엇인가요?
+외부 사이트에 외부 트래킹 스크립트가 설치되어 있고 정상 작동해야 해요. 스크립트가 없거나 차단되면 조회수와 제출 수가 나타나지 않아요.
 
----
-*원문 최종 수정: Fri, 30 Jan, 2026 at 11:25 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### 퍼널의 특정 단계별 페이지 조회수를 볼 수 있나요?
+**페이지 조회수**에서 항목을 클릭하면 단계별 성과와 참여 지표를 볼 수 있어요.

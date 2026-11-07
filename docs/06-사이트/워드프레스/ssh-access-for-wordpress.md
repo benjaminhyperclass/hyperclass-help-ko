@@ -1,143 +1,82 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 06-사이트 > 워드프레스
+원문: /support/solutions/articles/155000005588-ssh-access-for-wordpress
+번역일: 2026-11-07
+카테고리: 06-사이트
 ---
 
-# 워드프레스 SSH 접속
+# WordPress SSH 접속하기
 
-이 가이드에서는 워드프레스 호스팅 환경에서 SSH 접속을 설정하는 방법을 안내합니다. SSH를 통해 WP-CLI 같은 명령줄 도구로 웹사이트를 안전하게 관리할 수 있습니다. SSH 키 생성부터 호스팅 대시보드에 추가, 그리고 각 운영체제별로 서버에 안전하게 연결하는 방법을 배워보세요.
+SSH(Secure Shell)를 쓰면 WordPress 서버 환경에 암호화된 보안 연결로 직접 접속할 수 있어요. 개발자나 고급 사용자가 명령어를 실행하거나 파일을 한꺼번에 관리할 때 쓰는 방법이에요. 이 문서에서는 SSH 접속 정보를 찾는 방법과 서버에 연결하는 방법, 자주 겪는 오류의 해결 방법을 안내해요.
 
-**목차**
+SSH로 접속하면 WordPress 관리자 화면이나 기본 FTP 프로그램 없이도 명령어를 실행하고, 파일을 대량으로 관리하고, WP-CLI 같은 도구를 쓸 수 있어요.
 
-- [SSH란 무엇이고 왜 사용하나요?](#ssh란-무엇이고-왜-사용하나요)
-- [SSH 접속의 주요 장점](#ssh-접속의-주요-장점)
-- [SSH 키 생성 방법](#ssh-키-생성-방법)
-  - [macOS에서](#macos에서)
-  - [Linux에서](#linux에서)
-  - [Windows에서](#windows에서)
-- [호스팅 대시보드에 SSH 키 추가하기](#호스팅-대시보드에-ssh-키-추가하기)
-- [SSH로 서버에 연결하기](#ssh로-서버에-연결하기)
-- [자주 사용하는 WP-CLI 명령어](#자주-사용하는-wp-cli-명령어)
-- [SSH 키 관리하기](#ssh-키-관리하기)
-- [자주 묻는 질문](#자주-묻는-질문)
+## SSH 접속을 쓰면 좋은 점
 
----
+- 고급 파일 관리: 많은 양의 파일을 바로 이동, 복사, 편집, 삭제할 수 있어요.
+- WP-CLI 지원: 서버에서 명령줄 도구로 플러그인, 테마, 사용자, 데이터베이스 작업을 관리할 수 있어요.
+- 효율적인 문제 해결: 서버 오류 로그를 확인하고 복잡한 문제를 실시간으로 진단할 수 있어요.
+- 강력한 보안: 일반 FTP와 달리 SSH로 전송하는 모든 데이터는 완전히 암호화돼요.
 
-# **SSH란 무엇이고 왜 사용하나요?**
+## 1단계: SSH 접속 정보 찾기
 
-SSH(Secure Shell)는 서버에 암호화된 연결을 제공하는 보안 프로토콜입니다. 서버 리소스에 직접 접근하고자 하는 고급 사용자에게 이상적이며, 워드프레스 관리에서 더 강력한 제어와 자동화 가능성을 제공합니다.
+서버에 연결하려면 먼저 하이퍼클래스 화면에서 나만의 접속 정보를 확인해야 해요.
 
-![SSH 개념 이미지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048810461/original/VtpVJotbnt8DU4zjBDiC30ZKLAKDbAKMkQ.png?1750786796)
+1. 계정에 로그인한 뒤 **사이트 > WordPress**로 이동하세요.
+2. WordPress 화면에서 **고급 설정** 탭을 여세요.
+3. **FTP/SSH Access**(FTP/SSH 접속) 섹션을 찾으세요.
 
-![SSH 연결 다이어그램](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048810470/original/2El18UwuiFIjXWaxfP07doVCTzUyG3G2kw.png?1750786804)
+이 섹션에서 연결에 필요한 정보 네 가지를 확인할 수 있어요.
 
-# **SSH 접속의 주요 장점**
+- **Host / Server Address**(호스트/서버 주소): 예) wp1.msgsndr.com 또는 특정 IP 주소
+- **Username**(사용자 이름): 나에게 부여된 서버 로그인 이름
+- **Password**(비밀번호): 생성된 서버 비밀번호예요. 눈 모양 아이콘을 누르거나 **생성**을 눌러야 보일 수 있어요.
+- **Port**(포트): 보통 SSH는 22번이에요. 다만 항상 화면에 표시된 포트 번호를 사용하세요.
 
-SSH 접속은 서버 관리와 사이트 보안을 향상시키는 여러 가지 주요 장점을 제공합니다:
+## 2단계: 서버에 연결하기
 
-- **WP-CLI** 사용으로 더 빠르고 스크립트화된 워드프레스 관리 가능
-- 안전하고 암호화된 서버 연결 제공
-- FTP 없이도 직접적인 파일 작업 가능
-- 자동화와 배포 워크플로우 지원
-- 팀을 위한 다중 사용자, 키 기반 인증 지원
-- 비밀번호 없는 키 기반 로그인으로 보안 강화
+접속 정보를 준비했다면 컴퓨터에 기본으로 있는 터미널이나 다른 SSH 프로그램으로 연결할 수 있어요.
 
-# **SSH 키 생성 방법**
+### Mac과 Linux에서 연결하기 (터미널 사용)
 
-SSH 키를 생성하면 승인된 장치만 서버에 연결할 수 있습니다. 사용하는 운영체제에 따라 아래 단계를 따라해보세요.
+1. 컴퓨터에서 터미널 앱을 여세요.
+2. 아래 명령어를 입력하세요. 자리 표시 문구는 실제 접속 정보로 바꿔 주세요.
 
-## **macOS에서**
+   ```
+   ssh username@hostname -p port
+   ```
 
-터미널을 사용해서 SSH 키를 빠르게 생성하고 복사할 수 있습니다.
+   예: `ssh wpuser_12345@wp1.msgsndr.com -p 22`
 
-- **터미널**을 열어주세요.
-- 다음 명령어를 실행하세요: `ssh-keygen -t rsa`
-- 모든 프롬프트에서 Enter를 눌러주세요 (비밀번호는 필요 없음).
-- 키를 복사하세요: `pbcopy < ~/.ssh/id_rsa.pub`
+3. Enter 키를 누르세요. 이 서버에 처음 접속하면 계속 연결할지 묻는 메시지가 나와요. `yes`를 입력하고 Enter 키를 누르세요.
+4. 비밀번호를 입력하라는 메시지가 나오면 비밀번호를 붙여 넣으세요.
 
-![macOS SSH 키 생성](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048810476/original/eMqljVaWPFzV23f73ONEj6KS6c2IWoklXA.png?1750786818)
+{% hint style="info" %}
+보안을 위해 비밀번호를 입력하거나 붙여 넣는 동안에는 커서가 움직이지 않고 글자도 보이지 않아요. 정상이니 걱정하지 마세요.
+{% endhint %}
 
-## **Linux에서**
+5. Enter 키를 누르세요. 이제 서버에 안전하게 연결됐어요!
 
-Linux에서 SSH 키 생성과 복사는 간단하고 안전합니다.
+### Windows에서 연결하기 (PowerShell 또는 PuTTY 사용)
 
-- **터미널**을 열어주세요.
-- 다음 명령어를 실행하세요: `ssh-keygen -t rsa`
-- Enter를 눌러 기본값을 수락하세요.
-- 필요시 xclip을 설치하세요:
-  - Ubuntu: `sudo apt install xclip`
-  - Arch: `sudo pacman -S xclip`
-  - Fedora/CentOS: `sudo yum -y install xclip`
-- 키를 복사하세요: `cat ~/.ssh/id_rsa.pub | xclip -sel clip`
+**방법 A: Windows PowerShell (권장)**
 
-## **Windows에서**
+Windows 10 이상에는 SSH 클라이언트가 기본으로 들어 있어요. PowerShell 앱을 열고, 위 Mac/Linux 안내와 똑같은 ssh 명령어를 입력하면 돼요.
 
-Windows 사용자는 PowerShell을 사용해서 SSH 키를 만들 수 있습니다.
+**방법 B: PuTTY (별도 프로그램)**
 
-- **PowerShell**을 열어주세요.
-- 다음 명령어를 실행하세요: `ssh-keygen.exe -t rsa`
-- 프롬프트에서 Enter를 눌러주세요.
-- 키를 복사하세요: `Get-Content .ssh\id_rsa.pub | Set-Clipboard`
+그래픽 화면이 편하거나 이전 버전의 Windows를 쓴다면 이 방법을 사용하세요.
 
-# **호스팅 대시보드에 SSH 키 추가하기**
+1. [PuTTY](https://www.putty.org/)를 내려받아 설치한 뒤 실행하세요.
+2. **Host Name (or IP address)** 입력란에 호스트 정보를 붙여 넣으세요.
+3. **Port** 입력란에 포트 번호를 입력하세요.
+4. **Connection Type**이 SSH로 선택되어 있는지 확인하고 **Open**을 클릭하세요.
+5. 검은색 터미널 창이 열리고 `login as:`라는 문구가 나오면 사용자 이름을 입력한 뒤 Enter 키를 누르세요.
+6. 비밀번호를 입력하고 Enter 키를 누르세요. 이번에도 입력하는 동안 글자가 보이지 않아요.
 
-SSH 키를 추가하면 해당 장치가 서버에 접근할 수 있도록 승인됩니다.
+## 자주 겪는 SSH 문제 해결
 
-- 호스팅 대시보드에 로그인하세요.
-- **Advanced Settings(고급 설정) > Server Settings(서버 설정)**으로 이동하세요.
-- SSH Access(SSH 접속)을 활성화하세요.
-- **SSH Keys Manager(SSH 키 관리자)**로 이동 → **Import New Key(새 키 가져오기)**를 클릭하세요.
-- 공개 키를 붙여넣으세요.
-- 키에 이름을 지정하세요 (예: "지은이의 맥북").
-- **Import(가져오기)**를 클릭하면 시스템이 키를 승인합니다.
+- "Connection Refused" 오류가 나요: 화면에 표시된 포트 번호를 정확히 사용했는지 확인하세요. 내 컴퓨터의 방화벽이나 사무실 네트워크가 외부로 나가는 SSH 통신을 막고 있지 않은지도 확인하세요.
+- "Permission Denied (publickey, password)" 오류가 나요: 사용자 이름이나 비밀번호가 맞지 않다는 뜻이에요. 접속 정보를 복사할 때 앞이나 뒤에 공백이 따라 들어가지 않았는지 확인하세요. 계속 오류가 나면 **고급 설정** 탭에서 새 비밀번호를 생성해 보세요.
+- 시간 초과(Timeout) 오류가 나요: 서버에 일시적으로 연결할 수 없는 상태일 수 있어요. 로그인에 여러 번 실패해서 서버 방화벽이 내 IP 주소를 일시적으로 차단했을 수도 있어요. 15분 정도 기다린 뒤 다시 시도하세요.
 
-![SSH 키 추가 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048810523/original/fW5WGEi_xKbTe0XP5NBYxIe-VaM-krrPoQ.png?1750786855)
-
-# **SSH로 서버에 연결하기**
-
-연결하면 서버에서 터미널 명령어를 사용할 수 있습니다.
-
-- 대시보드에서 **Host/IP**와 **Username**을 확인하세요.
-- 터미널을 열어주세요.
-- 다음 명령어를 실행하세요: `ssh yourusername@yourhostip`
-- 첫 연결 시 `yes`로 확인하세요.
-- 워드프레스 디렉토리로 이동하세요: `cd public_html`
-
-![SSH 연결 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048810528/original/I5rpgnCRvGK9MDHAzdRdlw9XyTBwQg8JGA.png?1750786866)
-
-# **자주 사용하는 WP-CLI 명령어**
-
-이 명령어들로 워드프레스 사이트를 효율적으로 관리할 수 있습니다:
-
-- 플러그인 목록 보기: `wp plugin list`
-- 캐시 정리: `wp cache flush`
-- CDN 캐시 삭제: `wp cdn purge`
-
-# **SSH 키 관리하기**
-
-더 나은 보안과 유연성을 위해 키를 관리할 수 있습니다:
-
-- SSH Keys Manager(SSH 키 관리자)를 통해 언제든 **사용하지 않는 키를 삭제**하세요.
-- 다른 장치나 팀원을 위한 키를 추가하세요.
-- 보안 강화를 위해 정기적으로 키를 교체하세요.
-
----
-
-# 자주 묻는 질문
-
-**개인 키를 잃어버리면 어떻게 하나요?**
-새 키 쌍을 생성하고 공개 키를 다시 추가해야 합니다.
-
-**키 대신 비밀번호를 사용할 수 있나요?**
-아니요, 이 호스팅 플랫폼의 SSH에서는 키 기반 인증이 필수입니다.
-
-**분실이나 도난당한 장치의 접근 권한은 어떻게 취소하나요?**
-SSH Keys Manager(SSH 키 관리자)에서 해당 키를 즉시 삭제하세요.
-
-**모든 요금제에서 SSH 접속을 사용할 수 있나요?**
-호스팅 요금제 세부 정보를 확인해주세요. 일부 요금제에는 SSH가 포함되지 않을 수 있습니다.
-
----
-*원문 최종 수정: Tue, 24 Jun, 2025 at 12:49 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+접속 정보를 확인한 뒤에도 SSH로 연결되지 않으면 24시간 운영하는 하이퍼클래스 고객지원에 문의하세요. 백엔드 점검을 도와드려요.

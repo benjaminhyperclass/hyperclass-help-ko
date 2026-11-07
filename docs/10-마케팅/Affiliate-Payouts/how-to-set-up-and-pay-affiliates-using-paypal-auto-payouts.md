@@ -1,101 +1,134 @@
 ---
-번역일: 2026-04-07T00:00:00.000Z
-카테고리: 10-마케팅 > 제휴 지급
+원문: /support/solutions/articles/155000003658-set-up-and-pay-affiliates-using-paypal-auto-payouts
+번역일: 2026-11-06
+카테고리: 10-마케팅
 ---
 
-# PayPal 자동 지급을 이용한 제휴 파트너 설정 및 지급 방법
+# PayPal 자동 지급으로 제휴 파트너에게 수익금 지급하기
 
-## **PayPal 자동 지급을 이용한 제휴 파트너 설정 및 지급 방법**
+하이퍼클래스에서 PayPal Payouts API를 설정하고, **제휴 관리자**(Affiliate Manager)에서 PayPal 자동 지급으로 제휴 파트너에게 바로 지급하는 방법을 안내해요. 자동 지급은 PayPal만 지원해요. 은행 등 다른 결제 수단은 직접 처리해야 해요.
 
-이 가이드는 PayPal Payouts API를 Hyperclass과 연동하여 플랫폼에서 직접 제휴 파트너에게 수수료를 지급하는 방법을 설명합니다. 현재 자동 지급에서는 PayPal만 지원되며, 이 문서에서는 설정 과정과 제휴 파트너 지급 방법을 단계별로 안내합니다.
+---
 
-***
+## 요구 사항
 
-## **필요 조건:**
+- PayPal **비즈니스 계정**(Business Account)
+- PayPal 계정에서 Payouts가 활성화되어 있어야 해요. 아래 단계에 따라 활성화하세요.
 
-* PayPal 비즈니스 계정
-* PayPal 계정에서 Payouts 기능이 활성화되어야 합니다. 아래 단계에 따라 활성화하세요.
+PayPal로 지급받는 제휴 파트너는 **제휴 관리자**에 올바른 PayPal 지급 방법이 설정되어 있어야 해요.
 
-***
+---
 
-## **1. 자동 지급을 위한 PayPal 설정**
+## 1. 자동 지급을 위한 PayPal 설정
 
-제휴 파트너에게 지급을 시작하기 전에, Hyperclass과 원활하게 연동할 수 있도록 PayPal Payouts을 설정해야 합니다.
+제휴 파트너에게 지급하려면 먼저 하이퍼클래스와 연동되도록 PayPal Payouts를 설정해야 해요.
 
-### **1단계: PayPal 개발자 페이지 접속**
+### 1단계: PayPal Developers 페이지 열기
 
-* PayPal Developers 페이지로 이동하세요.
-* 우측 상단의 **"Log into dashboard"** 링크를 클릭하여 개발자 대시보드에 로그인하세요.
+1. PayPal Developers 페이지로 이동하세요.
+2. 오른쪽 위의 **Log into dashboard**(대시보드 로그인) 링크를 클릭해 개발자 대시보드에 로그인하세요.
 
-### **2단계: Payouts 활성화**
+### 2단계: Payouts 활성화
 
-* 대시보드에서 우측 상단의 **My Account**를 클릭하세요.
-* **Permissions** 테이블로 스크롤을 내려서 Live 컬럼 아래 "Payouts"에 초록색 체크마크가 있는지 확인하세요.
-* 체크마크가 없다면 **Enable**을 클릭하고 안내를 따르세요. Payouts API 활성화를 위해 PayPal에 문의해야 할 수도 있습니다. ![PayPal Payouts 권한 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033810844/original/M0FUGYqV_uHTNxz7mYFUIx-WSXCl0HklOA.jpeg?1727706478)
+1. 대시보드 오른쪽 위에서 **My Account**(내 계정)를 클릭하세요.
+2. 아래로 스크롤해 **Permissions**(권한) 표에서 "Payouts"의 **Live**(라이브) 열에 초록색 체크 표시가 있는지 확인하세요.
+3. 체크 표시가 없으면 **Enable**(활성화)을 클릭하고 안내에 따라 진행하세요. Payouts API를 활성화하려면 PayPal에 문의해야 할 수도 있어요.
 
-### **3단계: PayPal에서 앱 생성**
+   ![PayPal 대시보드의 권한 표에서 Payouts 활성화 여부 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033810844/original/M0FUGYqV_uHTNxz7mYFUIx-WSXCl0HklOA.jpeg?1727706478)
 
-* 좌측 메뉴에서 **Apps and Credentials**를 클릭하세요.
-* **Live**를 클릭한 후 **Create App**으로 진행하세요. ![PayPal 앱 생성](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033810841/original/NSoegoc40tjXesKnIpetO1w650hVCA4n0A.jpeg?1727706478)
-* 앱 이름으로 "Hyperclass Payouts"을 입력하고 **Create App**을 클릭하세요.
-* 이미 앱이 생성되어 있다면 이 단계를 건너뛰셔도 됩니다. 참고: 앱 생성 후 우측 상단에 "Live/Sandbox"가 표시되면 "Live"가 선택되어 있는지 확인하세요.
+### 3단계: PayPal에서 앱 만들기
 
-### **4단계: 앱 정보 획득**
+1. 왼쪽 메뉴에서 **Apps and Credentials**(앱 및 자격 증명)를 클릭하세요.
+2. **Live**(라이브)를 클릭한 뒤 **Create App**(앱 만들기)을 클릭하세요.
 
-* 앱 생성 후 **Client ID**와 **Secret Key**가 제공됩니다. ![PayPal 클라이언트 ID와 시크릿 키](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033810831/original/iyCmqdpvQr0Po9cIE2PEy3XnYzAdeNfX7A.jpeg?1727706478)
-* Hyperclass과 PayPal 연동에 필요하므로 이 정보를 보관해두세요.
+   ![PayPal에서 Live를 선택하고 앱 만들기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033810841/original/NSoegoc40tjXesKnIpetO1w650hVCA4n0A.jpeg?1727706478)
+3. "하이퍼클래스 Payouts"처럼 알아보기 쉬운 앱 이름을 입력하고 **Create App**을 클릭하세요.
+4. 이미 만들어 둔 앱이 있다면 이 단계는 건너뛰어도 돼요.
 
-### **5단계: Hyperclass과 PayPal 연결**
+{% hint style="info" %}
+앱을 만든 뒤 오른쪽 위에 "Live/Sandbox"가 보이면 "Live"가 선택되어 있는지 확인하세요.
+{% endhint %}
 
-* Hyperclass의 **Payment Integration(결제 연동)** 페이지로 이동하세요. ![결제 연동 페이지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033810837/original/1cRVuJLXOqaIcSDV-kHzH4jJ16Jv90C-xA.jpeg?1727706478)
-* PayPal 섹션까지 스크롤을 내리고 \*\*Manage(관리)\*\*를 클릭하세요.
-* 4단계에서 얻은 Live **Client ID**와 **Secret Key**를 입력하세요. ![PayPal 크리덴셜 입력](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033810833/original/2w5UqQ6Z-a96ulgfVBx3i5xuOpQpIoC0Tw.jpeg?1727706478)
-* 샌드박스에서 테스트하는 경우, PayPal의 Apps and Credentials 페이지에서 "Sandbox"가 선택되었는지 확인하고 샌드박스 크리덴셜로 동일한 과정을 반복하세요.
+### 4단계: 앱 정보 확인
 
-## **2. 제휴 파트너 지급에 PayPal 사용하기**
+1. 앱을 만들면 **Client ID**(클라이언트 ID)와 **Secret Key**(시크릿 키)가 표시돼요.
 
-PayPal 설정이 완료되면 이제 Hyperclass의 자동 지급 기능을 사용하여 제휴 파트너에게 수수료를 지급할 수 있습니다.
+   ![PayPal 앱의 Client ID와 Secret Key 확인 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033810831/original/iyCmqdpvQr0Po9cIE2PEy3XnYzAdeNfX7A.jpeg?1727706478)
+2. 하이퍼클래스와 PayPal을 연결할 때 필요하니 두 값을 따로 잘 보관해 두세요.
 
-### **1단계: 지급 페이지로 이동**
+### 5단계: 하이퍼클래스와 PayPal 연결
 
-* Hyperclass 제휴 관리(Affiliate Manager)에서 **Payouts(지급)** 페이지로 이동하세요.
+1. 하이퍼클래스에서 **결제 > 연동**으로 이동해 **PayPal**을 선택하세요.
 
-### **2단계: 승인된 지급 확인**
+   ![결제 연동 화면에서 PayPal 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033810837/original/1cRVuJLXOqaIcSDV-kHzH4jJ16Jv90C-xA.jpeg?1727706478)
+2. 4단계에서 확인한 PayPal 개발자 계정의 라이브용 **클라이언트 ID**와 **Secret Key**를 입력하세요.
 
-* **Approved for Payouts(지급 승인됨)** 탭으로 전환하여 지급 대기 중인 승인된 결제 목록을 확인하세요. ![승인된 지급 목록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033810832/original/dVZ30ePq70b82bEEZmQdPLgqfQY5bo5SHQ.jpeg?1727706478)
+   ![PayPal 클라이언트 ID와 Secret Key 입력 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033810833/original/2w5UqQ6Z-a96ulgfVBx3i5xuOpQpIoC0Tw.jpeg?1727706478)
+3. 샌드박스에서 테스트하려면 같은 과정을 샌드박스 자격 증명으로 다시 진행하세요. 이때 PayPal의 **Apps and Credentials** 페이지에서 **Sandbox**(샌드박스)가 선택되어 있어야 해요.
 
-### **3단계: 지급할 제휴 파트너 선택**
+---
 
-* 지급하고자 하는 지급 건 또는 제휴 파트너 이름 옆의 체크박스를 선택하세요.
+## 2. PayPal로 제휴 파트너에게 지급하기
 
-### **4단계: 지급 실행**
+PayPal 설정을 마쳤다면 하이퍼클래스의 자동 지급 기능으로 제휴 파트너에게 지급할 수 있어요.
 
-* 제휴 파트너를 선택한 후 **Pay(지급)** 버튼을 클릭하여 여러 제휴 파트너에게 한 번에 지급하세요. ![일괄 지급 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033810834/original/oRxnWIS4e36B_hYucBxsEhnFj0mLn7CoNA.jpeg?1727706478)
-* 또는 제휴 파트너 이름 옆의 파란색 **Pay(지급)** 아이콘을 클릭하여 개별적으로 지급할 수도 있습니다. ![개별 지급 아이콘](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033810839/original/wfhn3fMEF1MCCfPHgG2P6G2sKQLD7J-2nw.jpeg?1727706478)
+### 1단계: 지급 페이지 열기
 
-### **5단계: 검토 및 확인**
+1. **제휴 관리자**에서 **지급** 페이지로 이동하세요.
 
-* 선택한 지급 건을 검토하고 세부 사항을 확인하세요. ![지급 세부사항 검토](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033810835/original/2evoYu3FtiYxTDnw0yGN41Gr34CZ9wzW2A.jpeg?1727706478)
-* \*\*Pay Now(지금 지급)\*\*를 클릭하여 송금을 실행하세요.**중요:** PayPal 비즈니스 계정이 연결되지 않은 경우, 계정 연결을 요구하는 오류 메시지가 표시됩니다. ![PayPal 계정 연결 필요](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033810843/original/NsDNIWym5yNCrCmJRCc0bJ8moQXIQb-W9A.jpeg?1727706478)
+### 2단계: 승인된 지급 확인
 
-### **지급 후 어떻게 될까요?**
+1. 제휴 파트너 지급 건은 먼저 **대기 중** 탭에 생성돼요. 지급 대상인 건을 검토하고 승인하면 **Approved for Payout**(지급 승인됨)으로 넘어가요.
+2. **Approved for Payout** 탭으로 이동하면 승인되어 지급을 기다리는 목록을 볼 수 있어요.
 
-* \*\*Pay Now(지금 지급)\*\*를 클릭한 후, 성공한 지급은 **Paid(지급 완료)** 탭에 나타납니다. ![지급 완료 상태](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033810836/original/z7D8OJHJo_IhkUFdoZeCwvkdBnA868XC7Q.jpeg?1727706478)
-* PayPal에서 결제 처리에 시간이 걸릴 수 있으며, 그 동안 상태가 "Pending(대기 중)"으로 표시될 수 있습니다. 페이지를 새로고침하여 업데이트를 확인하세요. ![지급 대기 상태](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033810840/original/8uZSr5yeQwokBZryI6uBibEOPzgwYlW1GA.jpeg?1727706478)
-* 지급이 성공적으로 완료되면 관리자(발송인)와 제휴 파트너(수신인) 모두에게 확인 이메일이 전송됩니다. ![지급 확인 이메일](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033810838/original/7I68WjZN_QiyXmlorBKoXKvXx7DyFZNuRQ.jpeg?1727706478)
+   ![지급 승인됨 탭의 승인된 지급 목록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033810832/original/dVZ30ePq70b82bEEZmQdPLgqfQY5bo5SHQ.jpeg?1727706478)
 
-## **3. 지급을 위한 제휴 파트너의 PayPal 계정 추가 방법**
+### 3단계: 지급할 제휴 파트너 선택
 
-제휴 파트너에게 지급하기 전에 PayPal 정보가 연결되어 있는지 확인하세요. 제휴 파트너의 PayPal 계정을 추가하거나 연결하는 방법을 알아보려면 [여기를 클릭하세요.](how-to-add-link-a-new-payout-method-for-affiliates.md) ![제휴 파트너 PayPal 계정 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033810842/original/Ie3iDrFMfWrXLJci_SE9_0LVg6wWPN-G_A.jpeg?1727706478)
+1. 지급할 건이나 제휴 파트너 이름 옆의 체크박스를 선택하세요.
 
-***
+### 4단계: 지급 시작
 
-## 다음 단계:
+{% hint style="warning" %}
+제휴 파트너 지급을 시작하려면 **Pay Affiliate Manager Payout**(제휴 매니저 지급 결제) 권한이 있어야 해요. 이 권한이 없으면 **결제** 동작이 숨겨져요.
+{% endhint %}
 
-* [제휴 관리에서 상품 판매에 지원되는 결제 게이트웨이는?](what-payment-gateways-supported-in-affiliate-manager-for-product-sales-.md)
-* [제휴 지급 FAQ](faqs-for-affiliate-payouts.md)
-* [지급을 위한 제휴 파트너의 PayPal 계정 추가/연결 방법](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/21-%EC%96%B4%ED%95%84%EB%A6%AC%EC%97%90%EC%9D%B4%ED%8A%B8/%EA%B8%B0%ED%83%80/how-to-add-link-affiliate-s-paypal-account-for-payouts.md)
+1. 제휴 파트너를 선택한 뒤 **결제** 버튼을 클릭하면 여러 명에게 한 번에 지급할 수 있어요.
 
-***
+   ![여러 제휴 파트너를 선택한 뒤 결제 버튼 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033810834/original/oRxnWIS4e36B_hYucBxsEhnFj0mLn7CoNA.jpeg?1727706478)
+2. 한 명에게만 지급하려면 제휴 파트너 이름 옆의 파란색 **결제** 아이콘을 클릭하세요.
 
-_원문 최종 수정: Tue, 1 Oct, 2024 at 5:32 AM_ _Hyperclass 사용 가이드 — hyperclass.ai_
+   ![제휴 파트너 이름 옆의 파란색 결제 아이콘](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033810839/original/wfhn3fMEF1MCCfPHgG2P6G2sKQLD7J-2nw.jpeg?1727706478)
+
+### 5단계: 내용 확인 후 지급
+
+1. 선택한 지급 내역을 검토하고 세부 정보를 확인하세요.
+
+   ![선택한 지급 내역 확인 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033810835/original/2evoYu3FtiYxTDnw0yGN41Gr34CZ9wzW2A.jpeg?1727706478)
+2. **지금 결제**를 클릭해 송금을 시작하세요.
+
+{% hint style="warning" %}
+PayPal 비즈니스 계정이 연결되어 있지 않으면 계정을 연결하라는 오류 메시지가 나타나요.
+
+![PayPal 비즈니스 계정 연결을 안내하는 오류 메시지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033810843/original/NsDNIWym5yNCrCmJRCc0bJ8moQXIQb-W9A.jpeg?1727706478)
+{% endhint %}
+
+### 지급 후에는 어떻게 되나요?
+
+1. **지금 결제**를 클릭하면 지급이 완료된 건이 **유료** 탭에 표시돼요.
+
+   ![유료 탭에 표시된 지급 완료 건](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033810836/original/z7D8OJHJo_IhkUFdoZeCwvkdBnA868XC7Q.jpeg?1727706478)
+2. 지급이 정상적으로 시작되면 해당 건은 **유료** 상태로 넘어가요. 송금이 끝나기 전까지 PayPal에서는 처리 중이거나 대기 중으로 보일 수 있어요.
+
+   ![PayPal에서 처리 중으로 표시된 지급 상태](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033810840/original/8uZSr5yeQwokBZryI6uBibEOPzgwYlW1GA.jpeg?1727706478)
+3. 지급이 완료되면 관리자(보내는 사람)와 제휴 파트너(받는 사람) 모두에게 확인 이메일이 발송돼요.
+
+   ![지급 완료 확인 이메일](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033810838/original/7I68WjZN_QiyXmlorBKoXKvXx7DyFZNuRQ.jpeg?1727706478)
+
+---
+
+## 3. 지급받을 제휴 파트너의 PayPal 계정 추가하기
+
+제휴 파트너의 PayPal 이메일 주소를 꼼꼼히 확인하세요. PayPal은 API를 통해 제휴 파트너의 이메일 주소가 맞는지 검증하지 않아요. 제휴 파트너의 PayPal 계정을 추가하거나 연결하는 방법은 "How to add/link Affiliate's Paypal Account for Payouts" 문서를 참고하세요.
+
+![제휴 파트너의 PayPal 계정 추가 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033810842/original/Ie3iDrFMfWrXLJci_SE9_0LVg6wWPN-G_A.jpeg?1727706478)

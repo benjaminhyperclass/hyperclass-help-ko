@@ -1,90 +1,76 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 10-마케팅 > 이메일 빌더 기능
+원문: /support/solutions/articles/48001202776-video-element-in-email-builder
+번역일: 2026-11-06
+카테고리: 10-마케팅
 ---
 
-# 이메일 빌더의 동영상 요소
+# 이메일 빌더에서 동영상 요소 추가하기
 
-이메일에 동영상을 삽입하는 것은 이메일 클라이언트의 지원 제한으로 인해 까다로울 수 있습니다. 하이퍼클래스의 동영상 요소(Video Element)는 동영상 콘텐츠로 연결되는 클릭 가능한 동영상 썸네일을 삽입할 수 있게 해서 이 문제를 해결합니다. 이 가이드에서는 이메일 빌더에서 동영상 요소를 사용하는 방법을 설명하며, 동영상 유형 선택, 썸네일 커스터마이징, 최적의 표현을 위한 레이아웃 설정 조정 방법을 포함합니다.
+이메일 안에 동영상을 직접 넣기는 어려워요. 이메일 앱마다 지원 범위가 달라서예요. 대신 **Video element**(동영상 요소)를 쓰면 동영상으로 연결되는 클릭형 썸네일을 넣을 수 있어요. 이 문서에서는 **이메일 빌더**(Email Builder)에서 동영상 요소를 찾는 방법과, 동영상 유형·썸네일·크기·여백을 설정하는 방법을 안내해요.
 
-## 목차
+## 이메일 빌더의 동영상 요소란?
 
-- [이메일 빌더의 동영상 요소란 무엇인가요?](#이메일-빌더의-동영상-요소란-무엇인가요)
-- [동영상 요소를 찾는 방법](#동영상-요소를-찾는-방법)
-- [동영상 편집기 설정](#동영상-편집기-설정)
-- [관련 문서](#관련-문서)
+**Video element**를 쓰면 이메일에 동영상 미리보기를 넣을 수 있어요. 이메일 앱에서는 동영상이 직접 재생되지 않아요. 그래서 재생 버튼이 붙은 썸네일을 만들고, 이 썸네일을 클릭하면 동영상으로 바로 이동하게 해 줘요.
 
-## 이메일 빌더의 동영상 요소란 무엇인가요? {#what-is-video-element}
+{% hint style="info" %}
+주요 이메일 앱의 기술적 한계 때문에 아직은 이메일에 동영상을 직접 넣을 수 없어요. **Video element**는 동영상의 썸네일 이미지로 미리보기 이미지를 만들고, 재생 버튼을 얹은 뒤, 그 이미지에 동영상 URL을 링크로 걸어 줘요. 받는 사람이 이미지를 클릭하면 동영상으로 이동해요.
+{% endhint %}
 
-하이퍼클래스 이메일 빌더(Email Builder)의 동영상 요소는 이메일 안에 동영상 미리보기를 추가할 수 있게 해줍니다. 실제 동영상 재생은 이메일 클라이언트에서 지원되지 않지만, 이 요소는 재생 버튼이 있는 클릭 가능한 썸네일을 만들어 동영상으로 직접 연결합니다.
+![이메일에 삽입된 동영상 썸네일 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155082240611/original/lhPgxggQoUcsYjW8nnFFrf7wo0PxdRAnXg.png?1790790020)
 
-**참고:** 모든 주요 이메일 클라이언트의 기술적 제약으로 인해 아직 이메일에 동영상을 직접 삽입할 수 없습니다. 동영상 블록은 단순히 (동영상의 썸네일 이미지를 사용해) 미리보기 이미지를 만들고, 재생 버튼을 추가한 다음, 이미지를 동영상 URL에 하이퍼링크로 연결합니다. 따라서 누군가 이미지를 클릭하면 해당 동영상으로 이동하게 됩니다.
+{% hint style="info" %}
+**Video element**는 **이메일 빌더**의 **디자인 에디터**와 **이메일 템플릿**에서만 쓸 수 있어요.
+{% endhint %}
 
-## 동영상 요소를 찾는 방법 {#how-to-find-video-element}
+1. 서브 계정에 로그인하세요.
+2. **마케팅 > 이메일**로 이동하세요.
+3. **캠페인 만들기**를 클릭하고 **비어 있음**을 선택한 다음 **디자인 에디터**를 선택하세요. 기존 **이메일 템플릿**을 열어도 돼요.
+4. 왼쪽에서 **Elements**(요소) 섹션의 **Video element**를 찾으세요.
+5. **Video element**를 이메일 레이아웃으로 끌어다 놓으세요.
 
-**참고:** 동영상 요소는 하이퍼클래스 이메일 빌더의 디자인 편집기(Design Editor)와 이메일 템플릿(Email Templates) 내에서만 사용할 수 있습니다.
+![동영상 요소를 이메일 레이아웃으로 끌어다 놓는 화면](https://jumpshare.com/v/bRaKnLTHrlbRQ7TOhiVS+/GIF+Recording+2025-07-24+at+12.22.48+AM.gif)
 
-동영상 요소를 찾아서 사용하려면:
+## 동영상 요소 설정
 
-- 하위 계정에 로그인합니다.
-- Marketing(마케팅) > Emails(이메일)로 이동합니다.
-- + Create Campaign(+ 캠페인 만들기)을 클릭하고 Blank(빈 템플릿)을 선택한 다음 Design Editor(디자인 편집기)를 선택합니다.
-- 또는 기존 이메일 템플릿을 엽니다.
-- 왼쪽에서 Elements(요소) 섹션 아래에 있는 Video(동영상) 요소를 찾습니다.
-- 동영상 요소를 드래그해서 이메일 레이아웃에 드롭합니다.
+동영상 편집 창에서 아래 항목을 설정할 수 있어요.
 
-![동영상 요소 사용 방법](https://jumpshare.com/v/bRaKnLTHrlbRQ7TOhiVS+/GIF+Recording+2025-07-24+at+12.22.48+AM.gif)
+**Video Type**(동영상 유형): YouTube, Vimeo, Wistia, HTML5 중에서 선택해요. 선택한 유형에 맞춰 시스템이 동영상 URL에서 썸네일을 가져오려고 시도해요. 재생 버튼도 해당 서비스의 테마에 맞게 바뀌어요. 예를 들어 YouTube는 빨간 배경에 흰색 재생 아이콘으로 표시돼요.
 
-## 동영상 편집기 설정 {#video-editor-configurations}
+가져온 썸네일 이미지의 링크는 **썸네일 URL** 필드에 자동으로 들어가요.
 
-동영상 편집기는 다음과 같은 동영상 설정을 제공합니다.
+![동영상 유형을 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034043053/original/pmIhldlfN5JzLwwEFnb5gejDVQt6RacdZw.png?1727965929)
 
-**동영상 유형(Video Type):** 현재 YouTube, Vimeo, Wistia, HTML5의 4가지 옵션 중 선택할 수 있습니다. 선택한 동영상 유형에 따라 시스템이 동영상 URL에서 동영상 썸네일을 가져오려고 시도하고, 제공업체 테마에 따라 재생 버튼 스타일을 변경합니다 (예: YouTube의 경우 빨간 배경과 흰색 재생 아이콘으로 버튼이 표시됩니다).
+**동영상 URL**: 동영상의 URL을 입력하는 곳이에요.
 
-썸네일 이미지 링크는 "Video Thumbnail URL(동영상 썸네일 URL)" 필드에 자동으로 나타납니다.
+![동영상 URL을 입력하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032578329/original/9Hu32ssUvaGPoirOD3rcNmOJRtGyfjSpyw.jpg?1725961230)
 
-![동영상 유형 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034043053/original/pmIhldlfN5JzLwwEFnb5gejDVQt6RacdZw.png?1727965929)
+동영상에서 썸네일 이미지를 가져오지 못하면 미리보기에 경고가 표시돼요. 예를 들어 YouTube 동영상 URL인데 동영상 유형을 Vimeo로 바꾸면, 에디터가 Vimeo 방식으로 썸네일을 가져오려고 해요. 이 방식으로는 가져올 수 없어서 경고가 나타나요.
 
-**동영상 URL(Video URL):** 여기에 동영상의 URL을 입력해야 합니다.
+![썸네일을 가져오지 못했을 때 나오는 경고](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032579468/original/izf8GtpyFyLuEI-ymahOnCNYxjMP8uMxJw.jpg?1725961804)
 
-![동영상 URL 입력](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032578329/original/9Hu32ssUvaGPoirOD3rcNmOJRtGyfjSpyw.jpg?1725961230)
+{% hint style="info" %}
+썸네일 이미지를 가져오지 못해도 에디터는 이전에 가져온 이미지를 지우지 않아요. 그래서 썸네일이 없는 동영상에 원하는 이미지를 쓰고 싶다면, 먼저 마음에 드는 썸네일이 있는 동영상을 추가하세요. 그다음 동영상 URL을 바꾸면 첫 번째 동영상의 썸네일이 그대로 남아 있어요.
+{% endhint %}
 
-미리보기에서 동영상의 썸네일 이미지를 가져오지 못하면 경고가 표시됩니다 (예: YouTube 동영상 URL에 대해 동영상 유형을 Vimeo로 변경하면, 편집기가 Vimeo 로직에 따라 썸네일을 가져오려고 시도하는데 이는 작동하지 않으므로 경고가 표시됩니다).
+**썸네일 URL**: 위에서 설명한 대로 에디터가 선택한 동영상 유형에 맞춰 동영상 URL에서 기본 썸네일 이미지를 가져와 이 필드를 자동으로 채워 줘요. 직접 준비한 썸네일 이미지의 URL을 입력해서 바꿀 수도 있어요.
 
-![썸네일 가져오기 실패 경고](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032579468/original/izf8GtpyFyLuEI-ymahOnCNYxjMP8uMxJw.jpg?1725961804)
+![썸네일 URL 필드](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034043990/original/4MdFN1U8MwQmUyaQjZCC47m_1tGVSBdpeQ.png?1727966486)
 
-**참고:** 썸네일 이미지 가져오기에 실패해도 편집기는 이전에 가져온 이미지를 지우지 않습니다. 따라서 썸네일 이미지가 없는 이미지를 추가하고 싶다면, 먼저 원하는 썸네일 이미지를 가진 동영상을 추가한 다음, 동영상 URL을 변경하면 첫 번째 동영상의 썸네일 이미지가 그대로 남아있습니다.
+- **교체** 버튼: 직접 만든 동영상 썸네일을 업로드해서 적용해요.
+- **제거** 버튼: 기본 썸네일을 지워요.
 
-**동영상 썸네일 URL(Video Thumbnail URL):** 위에서 언급했듯이, 편집기는 선택한 동영상 유형에 따라 동영상 URL에서 기본 썸네일 이미지를 가져와 이 필드를 자동으로 채우려고 시도하지만, URL을 추가해서 자신만의 썸네일 이미지를 제공할 수도 있습니다.
+**Width & Height**(너비와 높이): 동영상 크기를 정하는 입력란이에요. 크기를 입력하지 않으면 동영상이 전체 너비로 표시되고, 높이는 이미지 해상도에 맞춰 자동으로 정해져요.
 
-![썸네일 URL 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034043990/original/4MdFN1U8MwQmUyaQjZCC47m_1tGVSBdpeQ.png?1727966486)
+![너비와 높이 입력란](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034043755/original/p0eBTrPq5tm8uZFgcqffKsk8qc1sdSKOJA.png?1727966380)
 
-Replace(교체) 버튼을 사용해서 커스텀 동영상 썸네일을 업로드하고 제공하세요.
+{% hint style="info" %}
+높이와 너비를 직접 입력하면 동영상 요소는 기본적으로 항상 왼쪽에 정렬돼요. 이미지와 달리 **Align**(정렬) 속성으로는 위치를 맞출 수 없어요. 대신 여백을 조정하거나, 2열 또는 3열 레이아웃 안에 넣어서 위치를 맞출 수 있어요.
+{% endhint %}
 
-Remove(제거) 버튼을 사용해서 기본 썸네일을 제거하세요.
+![너비와 높이를 지정한 동영상 요소 예시 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034043297/original/HCCEaKCWkXgSbSOTNleAcQkNwSPXqppi7Q.png?1727966091)
 
-**너비 및 높이(Width & Height):** 이 입력 필드를 통해 동영상의 크기를 제어할 수 있습니다. 크기가 추가되지 않으면 동영상은 전체 너비와 이미지 해상도에 따른 자동 높이로 표시됩니다.
+![너비와 높이를 지정한 동영상 요소 예시 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034043506/original/3KjF8wBXW79JthmMYEKoZAZ4eAjeAZIG5g.png?1727966217)
 
-![크기 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034043755/original/p0eBTrPq5tm8uZFgcqffKsk8qc1sdSKOJA.png?1727966380)
+**여백**: 이 필드에서 동영상 요소의 여백을 정할 수 있어요. 적용된 모습은 아래 이미지에서 확인하세요.
 
-**참고:** 기본적으로 커스텀 높이와 너비를 제공하면 동영상 요소는 항상 왼쪽에 정렬됩니다. 이미지와 달리 Align 속성을 사용해서 정렬할 수 없지만, 패딩을 통하거나 2컬럼 또는 3컬럼 레이아웃 안에 감싸서 정렬할 수 있습니다.
-
-![동영상 정렬 예시 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034043297/original/HCCEaKCWkXgSbSOTNleAcQkNwSPXqppi7Q.png?1727966091)
-
-![동영상 정렬 예시 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034043506/original/3KjF8wBXW79JthmMYEKoZAZ4eAjeAZIG5g.png?1727966217)
-
-**패딩(Padding):** 이 필드를 통해 동영상 요소에 패딩을 제공할 수 있습니다. 아래 이미지에서 실제 작동 모습을 확인하세요.
-
-![패딩 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034044248/original/I-A7L_GPO82zQ0IAT5MaAnkIJ_Hafo-uUw.png?1727966649)
-
-## 관련 문서 {#related-articles}
-
-- [이메일 빌더와 인라인 에디터 사용 방법](how-to-use-the-email-builder-and-its-in-line-editor.md)
-- 이메일 빌더의 스페이서 요소
-- 테두리 커스터마이징: 색상, 모서리, 두께
-- [일반 이메일 캠페인을 보내는 방법 (바로 보내기 또는 예약)](../Campaign-Settings/Functionalities/how-to-send-or-schedule-a-regular-email-campaign.md)
-
----
-*원문 최종 수정: 2025년 10월 31일*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+![여백을 적용한 동영상 요소 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034044248/original/I-A7L_GPO82zQ0IAT5MaAnkIJ_Hafo-uUw.png?1727966649)

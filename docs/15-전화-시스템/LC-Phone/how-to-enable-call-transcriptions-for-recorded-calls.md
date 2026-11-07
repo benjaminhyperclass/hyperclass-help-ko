@@ -1,85 +1,78 @@
 ---
-번역일: 2024-04-08T00:00:00.000Z
-카테고리: 전화 시스템
+원문: /support/solutions/articles/155000002841-how-to-enable-call-transcriptions-for-recorded-calls
+번역일: 2026-11-07
+카테고리: 15-전화-시스템
 ---
 
-# 녹음된 통화의 통화 전사(Transcription) 활성화하는 방법
+# 녹음된 통화의 통화 전사 켜기
 
-통화 전사 기능을 사용하면 전체 통화를 다시 듣지 않고도 녹음된 대화를 쉽게 검토하고 이해할 수 있습니다. 이 가이드에서는 하이퍼클래스 계정에서 통화 전사 기능을 활성화하는 방법을 설명합니다.
+통화 전사를 켜면 녹음된 통화를 처음부터 끝까지 듣지 않고도 글로 읽고 이해할 수 있어요. 이 문서에서는 하이퍼클래스 계정에서 통화 전사 기능을 켜는 방법과 전사 내용을 확인하는 방법을 안내해요.
 
-## 목차
+## 통화 전사란?
 
-* [통화 전사란 무엇인가요?](how-to-enable-call-transcriptions-for-recorded-calls.md#통화-전사란-무엇인가요)
-* [통화 전사 기능의 주요 장점](how-to-enable-call-transcriptions-for-recorded-calls.md#통화-전사-기능의-주요-장점)
-* [통화 전사 활성화 방법](how-to-enable-call-transcriptions-for-recorded-calls.md#통화-전사-활성화-방법)
-* [통화 전사 확인하는 방법](how-to-enable-call-transcriptions-for-recorded-calls.md#통화-전사-확인하는-방법)
-* [자주 묻는 질문](how-to-enable-call-transcriptions-for-recorded-calls.md#자주-묻는-질문)
+통화 전사는 인바운드·아웃바운드 통화 녹음을 자동으로 글로 바꿔 주는 유료 음성 인텔리전스(Voice Intelligence) 애드온이에요. 요금은 녹음 1분당 $0.024이고, 기본 통화 녹음 요금에 더해서 청구돼요.
 
-***
+## 통화 전사 기능의 장점
 
-## 통화 전사란 무엇인가요?
+- 자동 전사: 녹음된 아웃바운드·인바운드 통화 모두 전사가 자동으로 만들어져서 시간과 수고를 줄일 수 있어요.
+- 더 쉬운 확인: 전사 내용이 대화 페이지에 바로 연결돼 있어서 통화 내용을 쉽게 찾아볼 수 있어요.
+- 빠른 대화 검토: 녹음을 다시 재생하지 않아도 통화 내용을 더 빠르게 읽을 수 있어요.
+- 팀 교육 개선: 전사 내용을 자료로 삼아 팀원에게 통화 응대와 의사소통을 코칭할 수 있어요.
+- 기록 보관: 참고, 규정 준수, 문서화를 위해 대화를 글로 남겨 둘 수 있어요.
 
-통화 전사는 인바운드 및 아웃바운드 통화 녹음을 자동으로 텍스트로 변환해주는 유료 음성 인텔리전스(Voice Intelligence) 애드온입니다. 이 서비스는 녹음된 분당 $0.024의 비용이 발생하며, 기본 통화 녹음 요금에 추가로 청구됩니다.
+## 통화 전사 켜기
 
-## 통화 전사 기능의 주요 장점
+1. 서브 계정에서 **설정**으로 이동하세요.
 
-* **자동 전사**: 모든 아웃바운드 및 인바운드 녹음 통화에 대해 전사가 자동으로 생성되어 시간과 노력을 절약할 수 있습니다.
-* **향상된 가시성**: 전사가 대화(Conversations) 페이지에 원활하게 통합되어 통화 내용에 쉽게 접근하고 참조할 수 있습니다.
-* **빠른 대화 검토**: 전체 녹음을 다시 재생하지 않고도 통화 내용을 더 빠르게 읽을 수 있습니다.
-* **팀 교육 개선**: 전사 내용을 팀원들의 통화 처리 및 커뮤니케이션 코칭 자료로 활용할 수 있습니다.
-* **더 나은 기록 관리**: 참조, 규정 준수 또는 문서화를 위한 대화의 서면 기록을 유지할 수 있습니다.
+   ![설정 메뉴로 이동](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064808117/original/QX2Wtm5kY_VO3r3KxpVxi3fuaVkinZxrcQ.png?1770914578)
+2. **전화 시스템**을 클릭하세요.
 
-## 통화 전사 활성화 방법
+   ![전화 시스템 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064808158/original/kgBKYSFEa8rBd6IhOkuf3rAsikHovZb9GQ.png?1770914593)
+3. **음성** 탭을 클릭한 다음, **통화 녹음 및 전사** 페이지에 있는 **통화 전사**를 클릭하세요.
 
-* 하위 계정에서 설정(Settings) 메뉴로 이동합니다.
+   ![음성 탭에서 통화 전사 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064808246/original/Zxv5FvP_5weBqCSrBqVLbDquRBHRZdsRuw.png?1770914618)
+4. **Voice Intelligence**(음성 인텔리전스) 아래에 있는 **통화 전사 켜기** 상자를 클릭해서 켜세요.
 
-![설정 메뉴 이동](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064808117/original/QX2Wtm5kY_VO3r3KxpVxi3fuaVkinZxrcQ.png?1770914578)
+   ![통화 전사 켜기 상자 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064808274/original/kZbpywOdktqKwBZYg93FPPijcoHePGaZ-A.png?1770914629)
 
-* 전화 시스템(Phone System)을 클릭합니다.
+{% hint style="info" %}
+유료 서비스예요. 전사를 만들 때마다 통화 녹음 요금에 더해 분당 $0.024가 청구돼요.
+{% endhint %}
 
-![전화 시스템 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064808158/original/kgBKYSFEa8rBd6IhOkuf3rAsikHovZb9GQ.png?1770914593)
+## 통화 전사 내용 확인하기
 
-* **음성(Voice)** 탭을 클릭한 다음 통화 전사(Call Transcription)를 클릭합니다.
+완료된 전사 내용은 **대화**의 해당 통화 항목에서 바로 볼 수 있어요. 통화 녹음, 연락처 기록과 함께 한곳에서 확인할 수 있어요.
 
-![음성 탭 및 통화 전사 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064808246/original/Zxv5FvP_5weBqCSrBqVLbDquRBHRZdsRuw.png?1770914618)
+1. 서브 계정에서 **대화** 탭을 클릭하세요.
+2. 전사 내용을 보려는 **연락처**를 찾으세요.
+3. 해당 통화의 재생 컨트롤 아래에 있는 **음성 인식 보기**를 클릭하세요.
 
-* 음성 인텔리전스(Voice Intelligence) 하위의 통화 전사 활성화(Enable Call Transcription) 박스를 클릭하여 기능을 켭니다.
+### 모바일에서 녹음이 여러 개인 통화의 전사 내용 보기
 
-![통화 전사 활성화](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064808274/original/kZbpywOdktqKwBZYg93FPPijcoHePGaZ-A.png?1770914629)
+하이퍼클래스 모바일 앱 4.27.x 버전 이상에서는 녹음이 여러 개인 통화가 녹음별로 따로 표시돼요. **대화**에서 녹음을 하나 선택하면, 전사 내용이 있는 경우 해당 전사 내용을 볼 수 있어요. 선택한 녹음의 순서는 "1 of 3"처럼 위치 표시로 알 수 있어요.
 
-**참고**: 이것은 유료 서비스이며, 전사 생성을 위해 통화 녹음 요금에 추가로 분당 $0.024가 청구됩니다.
-
-## 통화 전사 확인하는 방법
-
-* 하위 계정에서 대화(Conversations) 탭을 클릭합니다.
-* 전사를 확인하고 싶은 연락처를 찾습니다.
-* 해당 통화의 재생 컨트롤 하위에 있는 전사 보기(View Transcript) 옵션을 클릭합니다.
-
-![통화 전사 확인](https://jumpshare.com/v/k4ytRwpzniUM9dhn5p7e+/Screen+Shot+2025-07-18+at+3.08.00+PM.png)
+{% hint style="info" %}
+해당 녹음에 전사 내용이 있을 때만 전사 내용이 표시돼요.
+{% endhint %}
 
 ## 자주 묻는 질문
 
-**Q: 전사 기능을 사용하려면 통화 녹음이 활성화되어 있어야 하나요?**
+### 통화 전사를 쓰려면 통화 녹음도 켜 두어야 하나요?
 
-네, 그렇습니다. 전사 기능을 사용하려면 전화번호에 통화 녹음이 활성화되어 있어야 합니다. 녹음이 비활성화되어 있으면 통화가 전사되지 않습니다.
+네. 전사를 사용하려면 해당 전화번호의 통화 녹음이 켜져 있어야 해요. 녹음이 꺼져 있으면 통화가 전사되지 않아요.
 
-**Q: 통화 전사 비용은 얼마인가요?**
+### 통화 전사 요금은 얼마인가요?
 
-녹음된 분당 $0.024이며, 기본 통화 녹음 요금에 추가로 청구됩니다.
+녹음 1분당 $0.024이고, 기본 통화 녹음 요금에 더해서 청구돼요.
 
-**Q: 이전 녹음들도 소급해서 전사되나요?**
+### 이전에 녹음한 통화도 전사되나요?
 
-아니요. 전사는 기능을 활성화한 후 녹음된 통화부터만 시작됩니다.
+아니요. 기능을 켠 이후에 녹음된 통화부터 전사가 시작돼요.
 
-**Q: 전사 내용은 어디서 확인할 수 있나요?**
+### 전사 내용은 어디에서 볼 수 있나요?
 
-대화(Conversations) 페이지의 각 통화 항목에서 재생 컨트롤 옆에 표시됩니다.
+**대화** 페이지에서 각 통화 항목의 재생 컨트롤 옆에 표시돼요.
 
-**Q: 나중에 전사 기능을 비활성화할 수 있나요?**
+### 나중에 통화 전사를 끌 수 있나요?
 
-네, 가능합니다. 설정(Settings) → 전화 시스템(Phone System) → 음성(Voice) → 통화 전사(Call Transcription)로 이동하여 통화 전사 활성화(Enable Call Transcription) 토글을 끄면 됩니다.
-
-***
-
-_원문 최종 수정: Thu, 12 Feb, 2026 at 10:46 AM_\
-_&#x48;yperclass 사용 가이드 — hyperclass.ai_
+네.**설정 > 전화번호 > 음성 > 통화 녹음 및 전사 > 통화 전사**로 돌아가서 **통화 전사 켜기**를 끄세요.

@@ -1,240 +1,187 @@
 ---
-원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000007992-workflow-action-ai-extract-data
-번역일: 2026-08-11
-카테고리: 07-워크플로우 > Workflow AI Workflow Actions
+원문: /support/solutions/articles/155000007992-workflow-action-ai-extract-data
+번역일: 2026-11-06
+카테고리: 07-워크플로우
 ---
 
-# 워크플로우 액션 - AI 데이터 추출(AI Extract Data)
+# 워크플로우 액션 — AI Extract Data(AI 데이터 추출)
 
-이 아티클에서는 워크플로우에서 AI 데이터 추출(AI Extract Data) 액션을 사용해 비정형 텍스트에서 구조화된 데이터를 추출하는 방법을 설명해요. 단계별 설정 방법, 사용 가능한 템플릿과 데이터 유형, 실제 활용 사례, 그리고 자주 묻는 질문에 대한 답변을 확인할 수 있어요.
+**AI Extract Data**(AI 데이터 추출) 액션으로 줄글 같은 비정형 텍스트에서 필요한 정보만 뽑아 워크플로우 변수로 만드는 방법을 안내해요. 설정 절차, 템플릿과 데이터 유형, 활용 예시, 자주 묻는 질문을 함께 다뤄요.
 
----
+## AI Extract Data 액션이란?
 
-**목차**
+**AI Extract Data**는 하이퍼클래스 워크플로우의 AI 액션이에요. 비정형 텍스트를 같은 워크플로우 뒤쪽에서 쓸 수 있는 구조화된 필드로 바꿔 줘요. SMS 메시지, 이메일 본문, 웹훅 페이로드, AI 출력처럼 텍스트 안에 중요한 정보가 묻혀 있을 때 쓰면 좋아요.
 
-- [AI 데이터 추출 워크플로우 액션이란?](#What-is-the-AI-Extract-Data-Workflow-Action?)[AI 데이터 추출 워크플로우 액션의 주요 장점](#Key-Benefits-of-the-AI-Extract-Data-Workflow-Action)
-- [액션 세부 정보](#Action-Details)
-- [템플릿](#Templates)
-- [추출된 데이터를 이후 액션에서 사용하기](#Using-Extracted-Data-in-Downstream-Actions)
-- [AI 데이터 추출 워크플로우 액션 설정 방법](#How-to-Configure-the-AI-Extract-Data-Workflow-Action)
-- [일반적인 활용 사례](#Common-Use-Cases)
-- [자주 묻는 질문](#Frequently-Asked-Questions)
+추출할 필드(이름, 이메일, 전화번호, 주문 ID 등)를 정해 두면 AI가 선택한 입력을 분석해 그 값을 워크플로우 변수로 돌려줘요. 이 변수는 이후 액션에서 커스텀 값 선택기로 불러올 수 있어요. 후속 안내, 분기, 레코드 업데이트 같은 작업에 바로 쓸 수 있어요. 자유롭게 쓴 글에서 정보를 직접 뽑아 정리하거나, 복잡한 조건 로직을 만들 필요가 없어요.
 
----
+**예시:** 리드 소스에서 이메일이 오면 액션이 연락처 정보를 추출해요. 그 값으로 새 연락처와 기회를 만들 수 있어요.
 
-# AI 데이터 추출 워크플로우 액션이란?
+{% hint style="warning" %}
+이 액션은 프리미엄 액션이에요. 실행할 때마다 추가 요금이 발생해요. 프리미엄 워크플로우 액션의 사용량과 요금은 AI Product Pricing 문서를 참고하세요.
+{% endhint %}
 
-AI 데이터 추출(AI Extract Data) 워크플로우 액션은 하이퍼클래스의 Workflow AI 액션 중 하나로, 비정형 텍스트를 이후 같은 워크플로우 안에서 사용할 수 있는 구조화된 필드로 변환해줘요. SMS 메시지, 이메일 본문, 웹훅(Webhook) 페이로드, AI 출력값, 또는 기타 텍스트 형태의 데이터 안에 중요한 정보가 섞여 있는 상황을 위해 만들어졌어요.
+## AI Extract Data 액션의 장점
 
-이름, 이메일, 전화번호, 주문 ID처럼 추출하고 싶은 필드를 정의하면, AI가 선택된 입력값을 분석해서 해당 값들을 구조화된 워크플로우 변수로 반환해요. 이렇게 추출된 변수는 커스텀 값(Custom Value) 선택 도구를 통해 이후 액션에서 바로 사용할 수 있어서, 후속 조치, 라우팅, 레코드 업데이트 등의 워크플로우 결정을 더 쉽게 자동화할 수 있어요. 자유 형식의 텍스트에서 정보를 추출하기 위해 직접 비정형 데이터를 파싱하거나 복잡한 조건 로직을 만들 필요가 없어져요.
+- 비정형 입력을 구조화된 출력으로: 이메일, SMS 메시지, 웹훅 페이로드, 폼 응답 텍스트, AI/GPT 출력, 이전 워크플로우 값에서 깔끔한 필드를 뽑아요.
+- 외부 분석 도구가 필요 없어요: 직접 검토하거나, 코드를 짜거나, 외부 도구를 쓰는 대신 하이퍼클래스 워크플로우 안에서 추출을 끝낼 수 있어요.
+- 유연한 데이터 구조: 필요한 필드만 직접 정의해요. 여러 데이터 유형(Text, Email, Phone, Number, Date)을 쓸 수 있어요.
+- 정확도를 높이는 선택 입력: 배경 정보를 덧붙이면 AI가 입력이 무엇인지 이해하고 모호한 값도 더 잘 해석해요.
+- 미리 만들어 둔 템플릿: 연락처 정보, 기회 정보, 주문 정보, 예약 정보처럼 자주 쓰는 추출 패턴을 템플릿으로 쓸 수 있어요.
+- 이후 단계에서 쓰는 변수: 추출한 필드를 **Update Contact Field**(연락처 필드 업데이트), **If/Else**(조건 분기), 알림, 메시지, 기회, 아웃바운드 웹훅 같은 이후 액션에서 쓸 수 있어요.
 
-**예시:** 리드 소스로부터 이메일이 수신되면, 이 액션이 연락처 정보를 추출하고, 추출된 값을 사용해 새 연락처(Contacts)와 기회(Opportunity)를 생성할 수 있어요.
+## 액션 상세 정보
 
-**중요:** 이 액션은 프리미엄 액션이에요. 이 액션을 사용하면 실행 건당 추가 요금이 발생해요. 프리미엄 워크플로우 액션 사용 및 결제(Billing)에 대한 자세한 내용은 [AI 제품 가격 정책](https://hyperclass.gitbook.io/hyperclass-docs#Workflow-AI)을 참고해 주세요.
+액션의 각 항목이 어떤 역할을 하는지 알면 설정을 더 정확하게 하고 추출 결과의 품질도 높일 수 있어요.
 
----
-
-## AI 데이터 추출 워크플로우 액션의 주요 장점
-
-- **비정형 입력값을 구조화된 출력값으로:** 이메일, SMS 메시지, 웹훅 페이로드, 폼 응답 텍스트, AI/GPT 출력값, 이전 워크플로우 값에서 정제된 필드를 추출할 수 있어요.
-
-- **외부 파싱 도구 불필요:** 수동 검토, 커스텀 코드, 제3자 도구에 의존하는 대신 하이퍼클래스 워크플로우 안에서 추출 작업을 처리할 수 있어요.
-
-- **유연한 데이터 스키마:** 필요한 필드를 정확히 정의할 수 있고, 여러 데이터 유형(텍스트, 이메일, 전화번호, 숫자, 날짜)을 지원해요.
-
-- **정확도 향상을 위한 선택적 컨텍스트 제공:** 배경 정보를 추가해서 AI가 입력값이 무엇을 의미하는지, 모호한 값을 어떻게 해석해야 하는지 이해할 수 있도록 도울 수 있어요.
-
-- **사전 제작 템플릿:** 연락처 정보, 기회 정보, 주문 정보, 예약 정보 등 자주 사용되는 추출 패턴에 대한 템플릿을 사용할 수 있어요.
-
-- **후속 워크플로우 변수:** 연락처 필드 업데이트(Update Contact Field), 조건 분기(If/Else), 알림, 메시지, 기회 관리, 아웃바운드 웹훅 등 이후 액션에서 추출된 필드를 사용할 수 있어요.
-
----
-
-## 액션 세부 정보
-
-AI 데이터 추출 워크플로우 액션의 각 구성 요소를 이해하면 액션을 더 정확하게 설정하고 추출 결과의 품질을 높일 수 있어요.
-
-| 필드 | 설명 |
-|---|---|
-| Action Name(액션 이름) | 액션의 커스텀 이름이에요. 기본값은 "AI extract data"예요. |
-| Extract From(추출 대상) * | 데이터를 추출할 비정형 텍스트 입력값이에요. 커스텀 값(예: 이메일 본문, 웹훅 페이로드, SMS 내용, 또는 이전 액션의 출력값)을 선택하세요. 필수 입력 항목이에요. |
-| Additional Context(추가 컨텍스트) | AI가 데이터를 더 정확하게 추출하도록 도와주는 선택적 보조 정보예요. 예: "이 콘텐츠는 Zillow 리드 알림 이메일이에요. 전화번호가 다양한 형식으로 나타날 수 있어요." |
-| Templates(템플릿) | 자주 사용되는 사례를 위한 사전 제작 추출 템플릿이에요: 연락처 정보, 기회 정보, 주문 정보, 예약 정보. 템플릿을 선택하면 데이터 필드가 자동으로 채워져요. 적용 후 필드를 수정, 추가, 삭제할 수 있어요. |
-| Data Fields(데이터 필드) | 입력값에서 추출할 구조화된 필드예요. 각 필드에는 Name(변수 키), Type(텍스트, 이메일, 전화번호, 숫자, 날짜 중 하나), 그리고 AI를 안내하는 선택적 Description(설명)이 있어요. |
-
----
+| 항목 | 설명 |
+| --- | --- |
+| **Action Name**(액션 이름) | 액션에 붙일 이름이에요. 기본값은 “AI extract data”예요. |
+| **Extract From** \*(추출 대상) | 데이터를 뽑아낼 비정형 텍스트 입력이에요. 이메일 본문, 웹훅 페이로드, SMS 내용, 이전 액션의 출력 같은 커스텀 값을 선택해요. 필수 항목이에요. |
+| **Additional Context**(추가 컨텍스트) | AI가 더 정확하게 추출하도록 돕는 선택 입력이에요. 예: “Zillow 리드 알림 이메일이에요. 전화번호가 여러 형식으로 적혀 있을 수 있어요.” |
+| **Templates**(템플릿) | 자주 쓰는 경우를 위해 미리 만들어 둔 추출 템플릿이에요. **Contact info**(연락처 정보), **Opportunity info**(기회 정보), **Order info**(주문 정보), **Appointment info**(예약 정보)가 있어요. 템플릿을 고르면 데이터 필드가 자동으로 채워져요. 적용한 뒤에 필드를 수정, 추가, 삭제할 수 있어요. |
+| **Data Fields**(데이터 필드) | 입력에서 추출할 구조화된 필드예요. 필드마다 **Name**(이름, 변수 키), **Type**(유형: Text, Email, Phone, Number, Date), AI에게 힌트를 주는 선택 항목 **Description**(설명)이 있어요. |
 
 ## 템플릿
 
-템플릿은 자주 쓰이는 워크플로우 사례에 맞춰 일반적인 추출 필드를 미리 채워주기 때문에 더 빠르게 시작할 수 있도록 도와줘요. 설정 시간을 줄여주고, 특히 표준적인 연락처, 영업, 주문, 일정 정보를 추출하고 싶을 때 실용적인 출발점이 되어줘요.
+템플릿은 자주 쓰는 추출 필드를 미리 채워 줘서 설정을 빠르게 시작하게 도와줘요. 연락처, 영업, 주문, 일정처럼 흔한 정보를 뽑을 때 특히 편해요.
 
-템플릿을 그대로 사용하거나, 선택 후 필드를 수정하거나, 처음부터 나만의 커스텀 필드 세트를 만들 수도 있어요.
+템플릿을 그대로 써도 되고, 고른 뒤에 필드를 수정해도 돼요. 템플릿 없이 처음부터 직접 필드를 구성할 수도 있어요.
 
-사용 가능한 템플릿 예시는 다음과 같아요:
+사용할 수 있는 템플릿 예시는 다음과 같아요.
 
-- **연락처 정보(Contact info):** full_name(텍스트), email(이메일), phone(전화번호) 필드를 미리 채워줘요. 이 필드들은 이름, 이메일 주소, 전화번호 같은 표준 연락처 정보를 추출하도록 설계되었어요.
+- **Contact info**(연락처 정보): `full_name`(Text), `email`(Email), `phone`(Phone) 필드를 미리 채워 줘요. 이름, 이메일 주소, 전화번호 같은 기본 연락처 정보를 뽑는 용도예요.
+- **Opportunity info**(기회 정보): `company_name`, `job_title`, `budget`, `timeline` 필드를 미리 채워 줘요. 리드나 기회와 관련된 메시지에서 흔한 영업 정보를 뽑는 용도예요.
+- **Order info**(주문 정보): `order_id`(Text), `items`(Text), `total_amount`(Number), `order_date`(Date) 필드를 미리 채워 줘요. 주문 ID, 주문한 상품이나 서비스, 총액, 주문 날짜 같은 주문·거래 정보를 뽑는 용도예요.
+- **Appointment info**(예약 정보): 예약 날짜, 시간, 장소, 예약 유형 같은 일정 정보 필드를 미리 채워 줘요.
 
-- **기회 정보(Opportunity info):** company_name, job_title, budget, timeline 필드를 미리 채워줘요. 리드나 기회 관련 메시지에서 자주 나타나는 영업 정보를 캡처하도록 설계되었어요.
+![AI Extract Data 템플릿 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155075088724/original/oCguvLx66edBje48-VXLPnkBV8gPMIggBA.png?1783014199)
 
-- **주문 정보(Order info):** order_id(텍스트), items(텍스트), total_amount(숫자), order_date(날짜) 필드를 미리 채워줘요. 주문 ID, 주문한 상품/서비스, 총 금액, 주문 날짜 같은 주문 및 거래 정보를 추출하도록 설계되었어요.
+## 추출한 데이터를 이후 액션에서 쓰기
 
-- **예약 정보(Appointment info):** 예약 날짜, 시간, 장소, 예약 유형 같은 일반적인 일정 관련 정보를 미리 채워줘요.
+**AI Extract Data** 액션이 실행되면 추출한 필드가 이후 워크플로우 액션에서 커스텀 값으로 나타나요. 그래서 **Create/Update Contact**, 기회 관련 액션, **If/Else** 분기, 알림 같은 이후 단계에 추출한 데이터를 바로 넣을 수 있어요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155075088724/original/oCguvLx66edBje48-VXLPnkBV8gPMIggBA.png?1783014199)
+예를 들어 `full_name`이라는 이름과 Text 유형으로 필드를 정의했다면, 이후 **Update Contact** 액션에서 연락처 이름으로 쓸 수 있어요. **Send Email** 액션에서 메시지를 개인화하는 데도 쓸 수 있어요.
 
----
+이후 액션에서 추출한 값을 불러오는 방법은 다음과 같아요.
 
-## 추출된 데이터를 이후 액션에서 사용하기
+1. 추출한 데이터를 쓰려는 이후 액션을 열고, 값을 채울 필드를 클릭하세요. 커스텀 값 선택기를 열고 **AI extract data**를 선택하세요.
 
-AI 데이터 추출 워크플로우 액션이 실행되고 나면, 추출된 필드는 이후 워크플로우 액션에서 커스텀 값(Custom Value)으로 사용할 수 있게 돼요. 이를 통해 추출된 데이터를 연락처 생성/업데이트(Create/Update Contact), 기회 관련 액션, 조건 분기(If/Else), 알림, 그리고 그 외의 이후 단계로 직접 전달할 수 있어요.
+   ![커스텀 값 선택기에서 AI extract data 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155075090678/original/KmxNeGzMBx1u1Xh0cIHTZz_yZLTGERwTPw.jpeg?1783016102)
+2. 참조할 **AI Extract Data** 액션을 고르세요. 워크플로우에서 그 액션에 붙인 이름으로 표시돼요. 그다음 넣을 필드를 선택하세요. 선택할 수 있는 항목은 해당 **AI Extract Data** 액션에서 정의한 필드예요.
 
-예를 들어 Text 유형의 full_name이라는 필드를 정의했다면, 이후의 연락처 업데이트(Update Contact) 액션에서 연락처 이름을 설정하거나, 이메일 발송(Send Email) 액션에서 메시지를 개인화하는 데 사용할 수 있어요.
+   ![추출한 필드를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155075090679/original/c_8oDtSRg-mZKiJeEu3rGJzJjlV3ZS9ooA.jpeg?1783016110)
 
-이후 액션에서 추출된 값에 접근하는 방법:
+## AI Extract Data 액션 설정하기
 
-- 추출된 데이터를 사용하고 싶은 이후 액션을 열고, 채우고 싶은 필드를 클릭하세요. 커스텀 값 선택 도구를 열고 **AI extract data**를 선택하세요.
+아래 순서대로 설정하면 추출한 필드를 이후 워크플로우 액션에서 쓸 수 있어요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155075090678/original/KmxNeGzMBx1u1Xh0cIHTZz_yZLTGERwTPw.jpeg?1783016102)
+### 1단계. 액션 추가
 
-- 참조하고 싶은 특정 AI 데이터 추출 액션을 선택하세요. 해당 액션은 워크플로우에서 지정한 이름으로 표시돼요. 이후 삽입하고 싶은 필드를 선택하세요. 선택 가능한 옵션은 해당 AI 데이터 추출 액션에서 정의된 필드를 기준으로 표시돼요.
+워크플로우에서 **Plus (+)** 아이콘을 클릭해 새 액션을 추가해요. **AI extract data** 액션을 검색해서 선택하세요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155075090679/original/c_8oDtSRg-mZKiJeEu3rGJzJjlV3ZS9ooA.jpeg?1783016110)
+![워크플로우에서 AI extract data 액션 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155075088957/original/R8zq0ylIkwsXI_GIKTBUv6e3YSYVGPQUPA.png?1783014538)
 
----
+### 2단계. 입력 소스 설정
 
-## AI 데이터 추출 워크플로우 액션 설정 방법
+**Extract From** 필드에서 커스텀 값 선택기로 분석할 입력을 선택하세요.
 
-아래 단계를 따라 액션을 설정하고, 추출된 필드를 이후 워크플로우 액션에서 사용할 수 있게 만들어보세요.
+앞선 워크플로우 액션이나 트리거에서 나온 텍스트 값이면 무엇이든 선택할 수 있어요. 이메일 본문, 웹훅 페이로드 필드, SMS 메시지, 이전 AI 액션의 출력 등이 해당돼요.
 
-#### 1단계: 액션 추가하기
+![Extract From 필드에서 입력 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155075089145/original/b8XuQWZg28uSU50YUDtJt1IDfKA_6tib5Q.png?1783014678)
 
-워크플로우에서 **더하기(+)** 아이콘을 클릭해 새 액션을 추가한 다음, **AI extract data** 액션을 검색해서 선택하세요.
+### 3단계. 컨텍스트 추가(선택)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155075088957/original/R8zq0ylIkwsXI_GIKTBUv6e3YSYVGPQUPA.png?1783014538)
+**Additional Context** 필드에 AI가 더 정확하게 추출하는 데 도움이 될 정보를 입력하세요. 이 필드에는 커스텀 값도 쓸 수 있어요.
 
-#### 2단계: 입력 소스 설정하기
+예를 들어 원본이 어떤 형식인지 적어 줄 수 있어요. “새 리드 알림 이메일이에요. 전화번호가 여러 형식으로 적혀 있을 수 있어요.”처럼요.
 
-**Extract From(추출 대상)** 필드에서, 커스텀 값 선택 도구를 사용해 파싱하고 싶은 입력값을 선택하세요.
+![Additional Context 입력 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155075089316/original/pVJZJ0FRkDOEwJcW4vU5Ip-uQw0_mX_cDw.png?1783014860)
 
-이메일 본문, 웹훅 페이로드 필드, SMS 메시지, 또는 이전 AI 액션의 출력값처럼 이전 워크플로우 액션이나 트리거에서 나온 텍스트 형태의 값이면 무엇이든 사용할 수 있어요.
+### 4단계. 데이터 필드 정의
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155075089145/original/b8XuQWZg28uSU50YUDtJt1IDfKA_6tib5Q.png?1783014678)
+**Data** 섹션에서 AI가 추출할 필드를 정해요. 방법은 두 가지예요.
 
-#### 3단계: 컨텍스트 추가하기 (선택 사항)
+**방법 A – 템플릿 사용**
 
-**Additional Context(추가 컨텍스트)** 필드에, AI가 데이터를 더 정확하게 추출할 수 있도록 도와줄 보조 정보를 입력하세요. 이 필드는 커스텀 값을 지원해요.
+**Contact info**, **Opportunity info**, **Order info**, **Appointment info** 같은 템플릿 중 하나를 클릭하세요. 자주 쓰는 필드가 자동으로 채워져요. 이후 필요에 따라 필드를 수정, 추가, 삭제할 수 있어요.
 
-예를 들어, 소스의 형식을 지정할 수 있어요(예: "이것은 신규 리드 알림 이메일이에요. 전화번호가 다양한 형식으로 나타날 수 있어요.").
+**방법 B – 필드 직접 정의**
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155075089316/original/pVJZJ0FRkDOEwJcW4vU5Ip-uQw0_mX_cDw.png?1783014860)
+**+ Add data**(데이터 추가)를 클릭해 필드를 하나씩 직접 만드세요. 필드마다 다음 항목을 입력해요.
 
-#### 4단계: 데이터 필드 정의하기
+- **Name**(이름): 이 필드의 변수 키예요. `full_name`, `order_id`, `total_amount`처럼 써요. 이후 액션에서 이 이름이 변수 이름이 돼요.
+- **Type**(유형): Text(텍스트), Email(이메일), Phone(전화번호), Number(숫자), Date(날짜) 같은 데이터 유형이에요. AI가 추출한 값을 알맞게 인식하고 형식을 맞추는 데 도움이 돼요.
+- **Description**(설명, 선택): AI에게 무엇을 찾아야 하는지 알려 주는 힌트예요. 예: “지역번호가 포함된 전화번호. 예: +1 (555) 234-5678” 설명을 적어 두면 추출 정확도가 높아질 수 있어요.
 
-**Data(데이터)** 섹션에서, AI가 추출할 필드를 정의하세요. 두 가지 방법이 있어요:
+![Data 섹션에서 필드 정의](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155075089527/original/eyaw9OaqB7gN1r3GFjFDvvifcTwYkA6ZKQ.png?1783015032)
 
-**옵션 A – 템플릿 사용하기**
+### 5단계. 액션 저장
 
-연락처 정보, 기회 정보, 주문 정보, 예약 정보 등 사전 제작된 템플릿 중 하나를 클릭하면 자주 사용되는 필드 세트가 자동으로 채워져요. 이후 필요에 따라 필드를 수정, 추가, 삭제할 수 있어요.
+**Save action**(작업 저장)을 클릭해 설정을 저장하세요. 추출한 데이터 필드가 워크플로우의 이후 모든 액션에서 변수로 나타나요.
 
-**옵션 B – 커스텀 필드 정의하기**
+![Save action 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155075089646/original/v8tkRn_dvFvcDoT-b0afpfqTUqPkApgYGg.png?1783015156)
 
-**+ Add data(+ 데이터 추가)**를 클릭해서 각 필드를 직접 만드세요. 각 필드마다 다음을 입력하세요:
+### 6단계. 이후 액션 추가
 
-- **Name(이름):** 이 필드의 변수 키예요. 예: full_name, order_id, total_amount. 이후 액션에서 이 값이 변수 이름이 돼요.
+추출한 값을 쓸 이후 액션을 추가하세요. 연락처를 만들거나 업데이트하고, 기회를 만들고, **If/Else**로 워크플로우를 분기하고, 내부 알림을 보내는 식으로 쓸 수 있어요. 추출한 변수로 다른 액션의 입력을 채울 수도 있어요.
 
-- **Type(유형):** 텍스트, 이메일, 전화번호, 숫자, 날짜 중 데이터 유형이에요. AI가 추출한 값을 올바르게 식별하고 형식화하는 데 도움을 줘요.
+![추출한 값을 쓰는 이후 액션 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155075089951/original/50kLHMgVp-fKr6-zPA4GINqR7RCWcl2XNA.png?1783015520)
 
-- **Description(설명, 선택 사항):** AI가 무엇을 찾아야 하는지 안내하는 힌트예요. 예: "지역 번호가 포함된 전화번호, 예: +1 (555) 234-5678". 설명을 추가하면 추출 정확도를 높일 수 있어요.
+## 활용 예시
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155075089527/original/eyaw9OaqB7gN1r3GFjFDvvifcTwYkA6ZKQ.png?1783015032)
+**AI Extract Data**는 중요한 정보가 일반 텍스트로만 들어 있어서, 워크플로우가 처리하기 전에 구조화된 필드로 바꿔야 할 때 유용해요. 아래는 이 액션을 활용하는 방법 중 일부예요.
 
-#### 5단계: 액션 저장하기
+### 리드 알림 이메일 분석하기
 
-**Save action(액션 저장)**을 클릭해서 설정을 저장하세요. 추출된 데이터 필드는 워크플로우의 이후 모든 액션에서 변수로 사용할 수 있게 돼요.
+**시나리오:** 외부 플랫폼(예: Zillow, Realtor.com)에서 리드 알림 이메일이 받은편지함으로 들어와요. 이메일마다 리드의 이름, 전화번호, 관심 매물이 들어 있지만 비정형 텍스트예요. 이 정보를 자동으로 추출해서 연락처 레코드에 저장하려고 해요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155075089646/original/v8tkRn_dvFvcDoT-b0afpfqTUqPkApgYGg.png?1783015156)
+**설정:**
 
-#### 6단계: 이후 액션 추가하기
+- 트리거: **Inbound Email**(인바운드 이메일)
+- 액션 1: **AI Extract Data**
+  - **Extract From**: 이메일 본문
+  - **Additional Context**: “Zillow 리드 알림 이메일이에요. 전화번호가 여러 형식으로 적혀 있을 수 있어요.”
+  - 템플릿: **Contact info**
+- 액션 2: **Update Contact**
+  - 추출한 `full_name`, `email`, `phone`을 연락처 필드에 매핑해요.
 
-추출된 값을 사용할 이후 액션들을 추가하세요. 예를 들어, 연락처를 생성하거나 업데이트하고, 기회를 생성하고, 조건 분기(If/Else)로 워크플로우를 라우팅하고, 내부 알림을 보내거나, 추출된 변수를 사용해 다른 액션을 채울 수 있어요.
+![리드 알림 이메일 분석 워크플로우 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155075091659/original/Pu_Ykssik9gKpPRu8zz1YZqN7qLGfF-NBQ.png?1783017060)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155075089951/original/50kLHMgVp-fKr6-zPA4GINqR7RCWcl2XNA.png?1783015520)
+### 웹훅 페이로드에서 주문 데이터 추출하기
 
----
+**시나리오:** 외부 시스템이 웹훅으로 주문 확인 데이터를 보내는데, 페이로드가 구조화된 JSON이 아니라 일반 텍스트 덩어리예요. 주문 ID, 상품, 총액을 추출해서 기회를 만들거나 커스텀 필드를 업데이트하려고 해요.
 
-## 일반적인 활용 사례
+**설정:**
 
-AI 데이터 추출은 중요한 정보가 일반 텍스트에는 존재하지만, 워크플로우가 이를 처리하기 위해서는 구조화된 필드로 변환해야 하는 상황에서 유용해요. 아래 예시는 이 액션이 팀을 지원할 수 있는 몇 가지 방법을 보여줘요.
-
-#### 리드 알림 이메일 파싱하기
-
-**시나리오:** 제3자 플랫폼(예: Zillow, Realtor.com)으로부터 리드 알림 이메일을 인박스로 받고 있어요. 각 이메일에는 리드의 이름, 전화번호, 관심 매물 정보가 담겨있지만 비정형 텍스트 형태예요. 이 정보를 자동으로 추출해서 연락처 상세(Contact Record)에 저장하고 싶어요.
-
-**설정 방법:**
-
-- 트리거: 인바운드 이메일(Inbound Email)
-
-- 액션 1: AI Extract Data
-  - Extract From: 이메일 본문
-  - Context: "Zillow 리드 알림 이메일. 전화번호가 다양한 형식으로 나타날 수 있어요."
-  - Template: 연락처 정보
-
-- 액션 2: 연락처 업데이트(Update Contact)
-  - 추출된 full_name, email, phone을 연락처 필드에 매핑
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155075091659/original/Pu_Ykssik9gKpPRu8zz1YZqN7qLGfF-NBQ.png?1783017060)
-
-#### 웹훅 페이로드에서 주문 데이터 추출하기
-
-**시나리오:** 외부 시스템이 웹훅(Webhook)을 통해 주문 확인 데이터를 전송하는데, 페이로드가 구조화된 JSON이 아니라 원본 텍스트 블록이에요. 기회(Opportunity)를 생성하거나 커스텀 필드를 업데이트하기 위해 주문 ID, 상품, 총 금액을 추출해야 해요.
-
-**설정 방법:**
-
-- 트리거: 인바운드 웹훅(Inbound Webhook)
-
-- 액션 1: AI Extract Data
-  - Extract From: 웹훅 본문
-  - Template: 주문 정보
-
-- 액션 2: 기회 생성(Create Opportunity)
-  - 추출된 order_id를 이름으로, total_amount를 금액 값으로 사용
-
----
+- 트리거: **Inbound Webhook**(인바운드 웹훅)
+- 액션 1: **AI Extract Data**
+  - **Extract From**: 웹훅 본문
+  - 템플릿: **Order info**
+- 액션 2: **Create Opportunity**(기회 만들기)
+  - 추출한 `order_id`를 이름으로, `total_amount`를 금액으로 써요.
 
 ## 자주 묻는 질문
 
-**Q: 어떤 유형의 입력값에서 데이터를 추출할 수 있나요?**
+### 어떤 입력에서 데이터를 추출할 수 있나요?
+워크플로우에서 쓸 수 있는 텍스트 기반 입력이면 모두 가능해요. 이메일 본문, 웹훅 페이로드, SMS 메시지, GPT/AI 출력, 폼 응답 텍스트, 이전 액션의 커스텀 값 등이 해당돼요.
 
-워크플로우 안에서 사용 가능한 텍스트 형태의 입력값이면 모두 가능해요 – 이메일 본문, 웹훅 페이로드, SMS 메시지, GPT/AI 출력값, 폼 응답 텍스트, 또는 이전 액션의 커스텀 값 등이 있어요.
+### 꼭 템플릿을 써야 하나요, 필드를 직접 정의해도 되나요?
+템플릿은 선택 사항이에요. 템플릿을 시작점으로 쓰고 수정해도 되고, 템플릿 없이 **+ Add data** 버튼으로 필드를 처음부터 직접 정의해도 돼요.
 
-**Q: 반드시 템플릿을 사용해야 하나요, 아니면 직접 필드를 정의할 수 있나요?**
+### 어떤 데이터 유형을 쓸 수 있나요?
+Text(일반 문자열), Email(이메일 주소), Phone(전화번호), Number(숫자 값), Date(날짜 값) 다섯 가지를 쓸 수 있어요. 알맞은 유형을 고르면 AI가 추출한 값을 더 정확하게 인식하고 형식을 맞춰요.
 
-템플릿은 선택 사항이에요. 템플릿을 출발점으로 사용해서 수정할 수도 있고, 템플릿을 전혀 사용하지 않고 + Add data 버튼으로 처음부터 커스텀 필드를 직접 정의할 수도 있어요.
+### Description 필드는 어떤 역할을 하나요?
+**Description**은 AI에게 무엇을 찾아야 하는지 알려 주는 선택 힌트예요. 예를 들어 “지역번호가 포함된 전화번호. 예: +1 (555) 234-5678”이라고 적어 두면 AI가 전화번호를 정확하게 찾고 형식도 맞춰요. 설명이 구체적일수록 추출 결과가 더 정확해요.
 
-**Q: 어떤 데이터 유형을 지원하나요?**
+### 추출한 데이터를 다음 단계에서 쓰려면 어떻게 하나요?
+추출한 필드는 이후 모든 액션의 커스텀 값 선택기에서 변수로 나타나요. 예를 들어 `full_name`이라는 필드를 정의했다면 **Update Contact**, **Send Email** 같은 이후 액션 어디서든 불러올 수 있어요.
 
-다섯 가지 데이터 유형을 지원해요: Text(일반 문자열), Email(이메일 주소), Phone(전화번호), Number(숫자 값), Date(날짜 값). 올바른 유형을 선택하면 AI가 추출된 값을 정확하게 식별하고 형식화하는 데 도움이 돼요.
+### AI가 입력에서 필드를 찾지 못하면 어떻게 되나요?
+정의한 필드와 맞는 값을 AI가 찾지 못하면 그 필드의 변수는 비어 있어요. 중요한 액션에서 쓰기 전에 **If/Else** 분기를 쓰거나 값이 비었는지 확인하도록 워크플로우를 구성해야 해요.
 
-**Q: Description 필드는 어떤 역할을 하나요?**
+### Additional Context 필드를 쓰면 결과가 좋아지나요?
+네. “새 리드 알림 이메일이에요”나 “페이로드에 주문 데이터가 들어 있어요”처럼 입력 형식을 알려 주면 AI가 구조를 이해하고 더 정확하게 추출해요. 선택 사항이지만 형식이 일정하지 않거나 복잡한 입력에는 입력해 두기를 권해요.
 
-Description은 AI에게 무엇을 찾아야 하는지 안내하는 선택적 힌트예요. 예를 들어 "지역 번호가 포함된 전화번호, 예: +1 (555) 234-5678"을 추가하면 AI가 전화번호를 더 정확하게 식별하고 형식화할 수 있도록 도와줘요. 설명을 더 구체적으로 작성할수록 추출 정확도가 높아져요.
-
-**Q: 추출된 데이터를 다음 단계에서 어떻게 사용하나요?**
-
-추출된 각 필드는 이후 모든 액션의 커스텀 값 선택 도구에서 사용 가능한 변수가 돼요. 예를 들어 "full_name"이라는 필드를 정의했다면, 연락처 업데이트, 이메일 발송, 또는 그 외 이후 액션에서 이를 참조할 수 있어요.
-
-**Q: AI가 입력값에서 필드를 찾지 못하면 어떻게 되나요?**
-
-AI가 정의된 필드에 일치하는 값을 찾지 못하면, 해당 필드의 변수는 빈 값이 돼요. 워크플로우에서는 조건 분기(If/Else)를 사용하거나, 중요한 액션에서 사용하기 전에 빈 값 여부를 확인하는 방식으로 이를 처리해야 해요.
-
-**Q: Additional Context 필드가 결과 정확도를 높여주나요?**
-
-네. 입력값 형식에 대한 컨텍스트를 제공하면(예: "이것은 신규 리드 알림 이메일이에요" 또는 "이 페이로드에는 주문 데이터가 포함되어 있어요") AI가 구조를 더 잘 이해하고 더 정확하게 추출할 수 있어요. 선택 사항이지만, 비표준적이거나 복잡한 입력값의 경우 권장해요.
-
-**Q: 이 액션은 프리미엄 액션인가요?**
-
-네. AI 데이터 추출 액션은 실행 건당 추가 요금이 발생해요. 이 액션을 설정할 때 액션 패널 상단에 프리미엄 배지가 표시돼요.
-
----
-*원문 최종 수정: 2026-07-02*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### 이 액션은 프리미엄 액션인가요?
+네. **AI Extract Data** 액션은 실행할 때마다 추가 요금이 발생해요. 액션을 설정할 때 액션 패널 맨 위에 프리미엄 배지가 보여요.

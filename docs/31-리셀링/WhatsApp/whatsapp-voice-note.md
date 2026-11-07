@@ -1,63 +1,54 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 31-리셀링 > WhatsApp
+원문: /support/solutions/articles/155000003047-whatsapp-voice-note
+번역일: 2026-11-07
+카테고리: 31-리셀링
 ---
 
-# 왓츠앱 음성 메모
+# WhatsApp 음성 녹음 보내기
 
-고객의 많은 요청으로 새로 출시된 기능을 소개합니다: 왓츠앱 음성 메모. 이 강력한 기능을 통해 CRM에서 직접 고객에게 음성 메모를 보낼 수 있어, 소통을 개선하고 개인화된 상호작용이 가능합니다.
+하이퍼클래스에서 고객에게 바로 음성 녹음을 보낼 수 있어요. 글로 쓰는 것보다 빠르고, 더 친근하게 대화할 수 있어요.
 
-목차
+## WhatsApp 음성 녹음을 보내는 방법
 
-- [왓츠앱 음성 메모 보내는 방법](#왓츠앱-음성-메모-보내는-방법)
-- [실제 활용 사례](#실제-활용-사례)
-- [왓츠앱 음성 메모 자주 묻는 질문](#왓츠앱-음성-메모-자주-묻는-질문)
+1. 브라우저에서 마이크 권한을 묻는 창이 뜨면 허용해 주세요.
 
-## 왓츠앱 음성 메모 보내는 방법
+   ![마이크 권한 허용 안내 창](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155030621765/original/UmqG_KI40SDqJeHKWg5IKhEdUS0NtyytZg.png?1723048144)
 
-**1단계: 마이크 권한 허용**
+   {% hint style="info" %}
+   음성 녹음을 보내려면 마이크 권한을 허용해야 해요.
+   {% endhint %}
 
-![마이크 권한 허용 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155030621765/original/UmqG_KI40SDqJeHKWg5IKhEdUS0NtyytZg.png?1723048144)
+2. **대화 > WhatsApp > 음성 녹음**으로 이동해요.
 
-음성 메모를 보내려면 마이크 권한을 허용해 주세요.
+   ![대화에서 WhatsApp 음성 녹음을 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043816526/original/faeBNKIVPHNWfcMU0-RgAUF8-x_Y6wA2vg.png?1742803731)
 
-**2단계: 대화(Conversations) > 왓츠앱(WhatsApp) > 음성 메모(Voice Note)로 이동**
+3. 음성 메시지를 녹음해요.
 
-![왓츠앱 음성 메모 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043816526/original/faeBNKIVPHNWfcMU0-RgAUF8-x_Y6wA2vg.png?1742803731)
+   ![음성 메시지를 녹음하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043816632/original/DFj-R8lFE0AsddZwTY8I7NJCiY31v_U6tw.png?1742803761)
 
-**3단계: 음성 녹음**
+4. 녹음한 음성을 보내요.
 
-![음성 녹음 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043816632/original/DFj-R8lFE0AsddZwTY8I7NJCiY31v_U6tw.png?1742803761)
+   ![녹음한 음성을 보내는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043816682/original/QkuSJlybIyAB3vBqMZxzyps0tbWYCCtbAw.png?1742803782)
 
-**4단계: 음성 메모 전송**
+{% hint style="info" %}
+음성 녹음은 최대 10분까지 보낼 수 있어요.
+{% endhint %}
 
-![음성 메모 전송 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043816682/original/QkuSJlybIyAB3vBqMZxzyps0tbWYCCtbAw.png?1742803782)
+## 이럴 때 활용해 보세요
 
-음성 메모 최대 녹음 시간은 10분입니다.
+- 고객 지원: 고객 문의에 음성으로 자세히 설명해 주세요. 문자보다 친근하고 사람이 직접 답하는 느낌을 줄 수 있어요.
+- 주문 확인: 고객 주문을 음성으로 확인해 주세요. 신뢰를 높이고 고객에게 특별한 경험을 줄 수 있어요.
+- 예약 알림: 다가오는 예약을 음성으로 알려 주세요. 고객이 기억하고 참석할 가능성이 더 높아져요.
+- 특별 혜택·프로모션: 밝은 목소리로 단독 혜택이나 프로모션을 안내해 보세요. 고객의 관심을 끌고 참여를 이끌 수 있어요.
+- 피드백 요청: 직접 녹음한 메시지로 의견을 물어보세요. 고객이 소중하게 느끼고 답할 가능성이 높아져요.
 
-## 실제 활용 사례
+## 자주 묻는 질문
 
-- **고객 지원**: 고객 문의에 대해 자세한 설명을 음성 메모로 빠르게 답변하여, 텍스트 메시지보다 개인적이고 인간적인 터치를 제공할 수 있습니다.
-- **주문 확인**: 고객 주문에 대해 개인화된 음성 확인 메시지를 보내 신뢰도를 높이고 독특한 고객 경험을 제공할 수 있습니다.
-- **예약 리마인더**: 다가오는 예약에 대해 음성 메모로 알림을 보내면 고객이 기억하고 참석할 가능성이 높아집니다.
-- **특가 혜택 및 프로모션**: 독점 혜택이나 프로모션을 열정적인 음성 메모로 알려 고객의 관심을 끌고 참여를 유도할 수 있습니다.
-- **피드백 요청**: 개인화된 메시지로 고객 피드백을 요청하면 고객이 소중함을 느끼고 응답할 가능성이 높아집니다.
+### 음성 녹음은 최대 몇 분까지 보낼 수 있나요?
+최대 10분이에요. 한 번 녹음으로 자세한 내용을 고객에게 전달할 수 있어요.
 
-## 왓츠앱 음성 메모 자주 묻는 질문
+### 진행 중인 대화가 없는 고객에게도 음성 녹음을 보낼 수 있나요?
+아니요. 비즈니스와 고객 사이에 열려 있는 서비스 대화가 있을 때만 음성 녹음을 보낼 수 있어요. 그래서 음성 녹음은 상황에 맞고 적절한 때에 전달돼요.
 
-### 음성 메모의 최대 녹음 시간은 얼마나요?
-
-음성 메모의 최대 녹음 시간은 10분입니다. 이를 통해 하나의 녹음으로 자세한 메시지나 정보를 고객에게 전달할 수 있습니다.
-
-### 진행 중인 대화 없이도 고객에게 음성 메모를 보낼 수 있나요?
-
-아니요, 비즈니스와 고객 간에 열린 서비스 대화가 있을 때만 음성 메모를 보낼 수 있습니다. 이를 통해 음성 메모가 적절하고 시의성 있게 전달될 수 있습니다.
-
-### 개별 고객에게 음성 메모를 개인화하려면 어떻게 하나요?
-
-고객의 이름을 언급하고 고객의 특정 요구사항이나 문의에 맞춰 내용을 조정하여 음성 메모를 개인화할 수 있습니다. 이런 개인적인 터치가 고객 경험과 참여도를 향상시킬 수 있습니다.
-
----
-*원문 최종 수정: Mon, 24 Mar, 2025 at 3:09 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### 고객마다 음성 녹음을 맞춤으로 보내려면 어떻게 하나요?
+고객 이름을 부르고, 그 고객의 상황이나 문의에 맞춰 내용을 구성하세요. 이렇게 하면 고객 경험과 참여도를 높이는 데 도움이 돼요.

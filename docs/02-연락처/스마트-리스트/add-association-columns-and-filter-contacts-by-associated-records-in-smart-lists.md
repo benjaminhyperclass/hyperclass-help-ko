@@ -1,125 +1,107 @@
 ---
-원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000009404-add-association-columns-and-filter-contacts-by-associated-records-in-smart-lists
-번역일: 2026-11-02
-카테고리: 02-연락처 > 스마트-리스트
+원문: /support/solutions/articles/155000009404-add-association-columns-and-filter-contacts-by-associated-records-in-smart-lists
+번역일: 2026-11-06
+카테고리: 02-연락처
 ---
 
-# 스마트 리스트에서 연결 컬럼 추가하고 연결된 레코드로 연락처 필터링하기
+# 스마트 리스트에서 연결 열 추가하고 연결된 레코드로 연락처 필터링하기
 
-연결(Association) 컬럼은 각 연락처(Contacts)에 어떤 커스텀 오브젝트(Custom Object)와 회사(Company) 레코드가 연결되어 있는지 보여줘요. 연결 필터를 사용하면 이러한 관계를 세그먼트로 전환할 수 있어요. 예를 들어 특정 반려동물의 보호자, 또는 특정 회사와 연결된 연락처 같은 식이에요. 연결 조건을 다른 연락처 필터와 조합해서 스마트 리스트(Smart List)로 저장하면, 집중적이고 반복 가능한 후속 조치가 가능해져요.
+연결 열을 추가하면 각 연락처에 어떤 사용자 지정 객체와 회사 레코드가 연결되어 있는지 한눈에 볼 수 있어요. 연결 필터를 쓰면 이 관계를 세그먼트로 만들 수 있어요. 예를 들어 특정 반려동물의 보호자나 특정 회사에 연결된 연락처만 모을 수 있어요. 연결 조건에 다른 연락처 필터를 더하고 스마트 리스트로 저장해 두면, 같은 대상에게 반복해서 후속 연락을 보낼 수 있어요.
 
----
+## 시작하기 전에
 
-**목차**
-
-- [시작하기 전에](#시작하기-전에)
-- [연결 컬럼 추가하기](#연결-컬럼-추가하기)
-- [주 회사(Primary Company) 이해하기](#주-회사-이해하기)
-- [연결된 레코드로 연락처 필터링하기](#연결된-레코드로-연락처-필터링하기)
-- [필터 연산자 선택하기](#필터-연산자-선택하기)
-- [예시 세그먼트](#예시-세그먼트)
-- [컬럼 및 필터 문제 해결하기](#컬럼-및-필터-문제-해결하기)
+- **관계 설정하기:** 연락처에 필요한 연결 레이블이 정의되어 있고, 해당 레코드가 연결되어 있는지 확인하세요.
+- **레이블 정하기:** 레이블은 'Owned Pet', 'Additional Company'처럼 관계를 설명하는 이름이에요. 하나의 객체 유형에 여러 레이블로 연락처를 연결할 수도 있어요.
 
 ---
 
-# **시작하기 전에**
+## 연결 열 추가하기
 
-- **관계 설정 확인:** 필요한 연결 라벨이 연락처에 정의되어 있고, 관련 레코드가 서로 연결되어 있는지 확인하세요.
-- **라벨 선택:** 라벨은 관계를 설명하는 이름이에요. 예를 들어 '보유 반려동물(Owned Pet)'이나 '추가 회사(Additional Company)' 같은 것이죠. 여러 개의 라벨이 같은 오브젝트 유형을 가진 연락처를 연결할 수도 있어요.
+1. **연락처 > 스마트 리스트**로 이동해 확인할 리스트를 엽니다.
+2. 표 위의 열 설정 버튼을 누릅니다. 필드 선택 창에서 **Associations**(연결)를 찾습니다.
+3. 표시할 연결 레이블을 각각 선택합니다. 여러 레이블이 같은 객체를 가리켜도 레이블마다 열이 하나씩 추가돼요.
+4. 각 연락처 행에 표시된 연결 레코드 칩을 확인합니다. 칩을 클릭하면 연결된 레코드가 열려요.
 
----
+1단계: 리스트 위의 열 설정 버튼을 눌러 **필드 관리**를 엽니다.
 
-## **연결 컬럼 추가하기**
+![필드 관리 창을 여는 열 설정 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084196732/original/5vCkcA4YRMY5aq6th7_19x0Rj1td-k14ng.png?1793015077)
 
-- 연락처 메뉴 > 스마트 리스트로 이동한 후 확인하려는 리스트를 열어주세요.
-- 테이블 상단의 컬럼 설정 버튼을 클릭하세요. 필드 선택 창에서 Associations(연결) 항목을 찾아주세요.
-- 표시하고 싶은 각 연결 라벨을 선택하세요. 여러 라벨이 같은 오브젝트 유형을 가리키더라도, 라벨마다 별도의 컬럼이 추가돼요.
-- 각 연락처 행에 표시된 연결된 레코드 칩(chip)을 확인하세요. 칩을 클릭하면 연결된 레코드가 열려요.
+2단계: **Associations** 아래에서 표시할 레이블을 선택하고 **적용**을 클릭합니다.
 
-**1단계:** 리스트 상단의 컬럼 설정 버튼을 클릭해서 필드 관리(Manage fields) 화면을 열어주세요.
+![Associations 아래에서 표시할 레이블을 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084196743/original/wwZ5EGggrNXJfqer32HmOOG-izW3rAZuKQ.png?1793015087)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084196732/original/5vCkcA4YRMY5aq6th7_19x0Rj1td-k14ng.png?1793015077)
+3단계: 레이블마다 열이 하나씩 표시되고, 연결된 레코드는 칩으로 보여요.
 
-**2단계:** Associations(연결) 항목에서 표시할 라벨을 선택한 후 Apply(적용)를 클릭하세요.
+![레이블별 열과 연결 레코드 칩이 표시된 연락처 목록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084196759/original/HDkni--9YZVxesErqRgSWBQfqKJx_75YcQ.png?1793015104)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084196743/original/wwZ5EGggrNXJfqer32HmOOG-izW3rAZuKQ.png?1793015087)
+4단계: +N 표시에 마우스를 올리면 나머지 연결 레코드를 볼 수 있어요. **View all**(모두 보기)을 클릭해도 돼요.
 
-**3단계:** 각 라벨이 별도의 컬럼으로 표시되며, 연결된 레코드는 칩 형태로 나타나요.
+![+N 표시에 마우스를 올려 나머지 연결 레코드를 확인하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084196850/original/XC0lPdDNnshlJnnnOmjfb9GfslBKi8OiUQ.png?1793015131)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084196759/original/HDkni--9YZVxesErqRgSWBQfqKJx_75YcQ.png?1793015104)
-
-**4단계:** +N 표시 위에 마우스를 올리면 나머지 연결된 레코드를 확인할 수 있어요. 또는 View all(전체 보기)을 클릭하세요.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084196850/original/XC0lPdDNnshlJnnnOmjfb9GfslBKi8OiUQ.png?1793015131)
-
-+N 표시는 해당 라벨 아래에 현재 보이는 것보다 더 많은 레코드가 연결되어 있다는 뜻이에요. 셀이 비어 있다면 해당 관계에 표시할 연결된 레코드가 없다는 의미예요.
++N 표시는 해당 레이블에 연결된 레코드가 지금 보이는 것보다 더 많다는 뜻이에요. 셀이 비어 있으면 그 관계에서 표시할 연결 레코드가 없다는 뜻이에요.
 
 ---
 
-## **주 회사(Primary Company) 이해하기**
+## 주 회사 이해하기
 
-기존의 Company name(회사명) 컬럼은 Primary Company(주 회사)로 표시되며, 연락처의 주 회사를 나타내는 칩을 보여줘요. 추가 회사 관계는 각각의 연결 라벨 컬럼을 통해 표시돼요. 오브젝트 이름은 각 로케이션(Location)의 이름 설정에 따라 달라질 수 있어요.
-
----
-
-## **연결된 레코드로 연락처 필터링하기**
-
-- 연락처 목록 상단의 Filters(필터)를 열고 필터를 추가하세요.
-- 확인하고 싶은 관계의 연결 필드를 선택하세요. 예: 보유 반려동물(Owned Pet - Associated Pets).
-- Contains any(다음 중 하나를 포함), Does not contain any(다음 중 하나를 포함하지 않음), Is not empty(비어 있지 않음), Is empty(비어 있음) 중 하나를 선택하세요.
-- Contains any 또는 Does not contain any를 선택한 경우, 레코드 선택 창에서 비교할 연결된 레코드를 검색해서 선택하세요. 비어 있음 관련 연산자는 레코드 값을 따로 지정할 필요가 없어요.
-- 필요한 다른 조건을 추가한 후 Apply(적용)를 클릭하세요. 이 조건을 다시 사용하고 싶다면 스마트 리스트로 저장하세요.
-
-**5단계:** 리스트 상단의 Filters(필터)를 클릭하세요.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084196766/original/At_irAEB-avF0Mv04_MwpkZuDPJyj_lWUw.png?1793015109)
-
-**6단계:** 연결 필드를 검색하세요. 각 라벨은 Associations(연결) 항목 아래에 나열돼요.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084196774/original/188O2tGTSkt7YvfrchaCShoLcvDwMPtXzQ.png?1793015113)
-
-**7단계:** 연산자를 선택하세요: Contains any, Does not contain any, Is not empty, Is empty 중 하나예요.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084196854/original/EgS9H2Tisqj5MUZhvnVyfD_UGC-q0FaS8g.png?1793015136)
-
-**8단계:** 일치시킬 연결된 레코드를 선택한 후 Apply(적용)를 클릭하세요.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084196860/original/1rlMB8N9jmwxXrwhDM1Nn1fDCda7Y4ebDQ.png?1793015141)
-
-**9단계:** 선택한 레코드와 연결된 연락처만 목록에 표시돼요.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084196864/original/_B-_ZSb8G4k3W7EI3WRLfTkF03x6nPb74g.png?1793015146)
+기존 **회사명** 열은 **주 회사**라는 이름으로 표시되고, 연락처의 주 회사를 칩으로 보여 줘요. 그 밖의 회사 관계는 각 연결 레이블 열에 표시돼요. 객체 이름은 서브 계정의 이름 설정을 따라요.
 
 ---
 
-## **필터 연산자 선택하기**
+## 연결된 레코드로 연락처 필터링하기
 
-- **Contains any (다음 중 하나를 포함):** 선택한 라벨 아래 지정한 레코드 중 하나라도 연결된 연락처를 찾아요.
-- **Does not contain any (다음 중 하나를 포함하지 않음):** 선택한 라벨 아래 지정한 레코드와 연결된 연락처를 제외해요.
-- **Is not empty (비어 있지 않음):** 특정 레코드를 지정하지 않고, 선택한 라벨 아래 연결이 존재하는 연락처를 찾아요.
-- **Is empty (비어 있음):** 선택한 라벨 아래 연결이 없는 연락처를 찾아요.
+1. 연락처 목록 위의 **필터**를 열고 필터를 추가합니다.
+2. 확인할 관계의 연결 필드를 선택합니다. 예: 'Owned Pet (Associated Pets)'
+3. **다음 중 하나 포함**, **다음 중 어느 것도 포함하지 않음**, **비어있지 않음**, **비어 있음** 중에서 선택합니다.
+4. **다음 중 하나 포함** 또는 **다음 중 어느 것도 포함하지 않음**을 선택했다면, 레코드 선택기에서 비교할 연결 레코드를 검색해 선택합니다. **비어있지 않음**과 **비어 있음**은 레코드 값을 고르지 않아도 돼요.
+5. 필요하면 다른 조건을 더하고 **적용**을 클릭합니다. 나중에 다시 쓰려면 이 조건을 스마트 리스트로 저장하세요.
 
-관계가 존재하는지 여부만 확인하고 싶다면 비어 있음 관련 연산자를 선택하세요. 특정 연결된 레코드를 비교해야 한다면 Contains any 또는 Does not contain any를 선택하세요.
+5단계: 리스트 위의 **필터**를 클릭합니다.
+
+![리스트 위의 필터 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084196766/original/At_irAEB-avF0Mv04_MwpkZuDPJyj_lWUw.png?1793015109)
+
+6단계: 연결 필드를 검색합니다. 각 레이블은 **Associations** 아래에 나와요.
+
+![Associations 아래에서 연결 필드를 검색하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084196774/original/188O2tGTSkt7YvfrchaCShoLcvDwMPtXzQ.png?1793015113)
+
+7단계: 연산자를 선택합니다. **다음 중 하나 포함**, **다음 중 어느 것도 포함하지 않음**, **비어있지 않음**, **비어 있음** 중에서 고를 수 있어요.
+
+![필터 연산자를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084196854/original/EgS9H2Tisqj5MUZhvnVyfD_UGC-q0FaS8g.png?1793015136)
+
+8단계: 일치시킬 연결 레코드를 선택하고 **적용**을 클릭합니다.
+
+![연결 레코드를 선택하고 적용을 클릭하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084196860/original/1rlMB8N9jmwxXrwhDM1Nn1fDCda7Y4ebDQ.png?1793015141)
+
+9단계: 선택한 레코드에 연결된 연락처만 리스트에 표시돼요.
+
+![선택한 레코드에 연결된 연락처만 표시된 리스트](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084196864/original/_B-_ZSb8G4k3W7EI3WRLfTkF03x6nPb74g.png?1793015146)
 
 ---
 
-## **예시 세그먼트**
+## 필터 연산자 고르기
 
-- **특정 반려동물의 보호자:** 동물병원 팀이 Mango 또는 Jasper라는 반려동물의 보호자에게 후속 연락을 하고 싶다고 가정해볼게요. '보유 반려동물(Owned Pet)' 연결 필드를 선택하고, 매칭 레코드 필터에서 해당 반려동물 레코드를 선택하세요. 결과로 나온 연락처를 스마트 리스트로 저장하면 해당 반려동물에 관한 커뮤니케이션에 활용할 수 있어요.
-- **반려동물을 보유한 전체 연락처:** '보유 반려동물'과 Is not empty를 함께 사용하면, 해당 관계 아래 반려동물이 하나 이상 연결된 연락처 목록을 만들 수 있어요. 더 좁은 대상이 필요하다면 다른 연락처 조건과 조합하세요.
-- **특정 회사와 연결된 연락처:** 계정 담당 팀이 McKinsey와 EY에 대한 아웃리치를 정리하고 싶다고 가정해볼게요. '추가 회사(Additional Company)' 같은 관련 회사 관계를 선택하고 해당 회사 레코드를 선택하세요. 일치하는 연락처를 스마트 리스트로 저장하면 계정 후속 관리에 활용할 수 있어요.
-- **특정 정책과 연결된 연락처:** '정책(Policy)' 연결 필드를 선택하고 정책 레코드를 선택하면, 해당 정책과 연결된 연락처들을 그룹화해서 정책 관련 후속 조치를 진행할 수 있어요.
-- **추가 회사가 누락된 연락처:** '추가 회사'와 Is empty를 함께 사용하면 해당 관계가 없는 연락처를 찾을 수 있어요. 이 목록을 확인해서 회사 연결을 아직 완료해야 하는 레코드를 찾아보세요.
+- **다음 중 하나 포함:** 선택한 레이블 아래에서 선택한 레코드 중 하나라도 연결된 연락처를 찾아요.
+- **다음 중 어느 것도 포함하지 않음:** 선택한 레이블 아래에서 선택한 레코드 중 하나라도 연결된 연락처를 제외해요.
+- **비어있지 않음:** 특정 레코드를 선택하지 않고, 선택한 레이블 아래에 연결이 있는 연락처를 찾아요.
+- **비어 있음:** 선택한 레이블 아래에 연결이 없는 연락처를 찾아요.
+
+관계가 있는지 없는지만 확인하려면 **비어있지 않음**이나 **비어 있음**을 고르세요. 특정 연결 레코드를 기준으로 비교하려면 **다음 중 하나 포함**이나 **다음 중 어느 것도 포함하지 않음**을 고르세요.
+
+---
+
+## 세그먼트 예시
+
+- **특정 반려동물의 보호자:** 동물병원 팀이 Mango나 Jasper의 보호자에게 후속 연락을 하려는 경우예요. 'Owned Pet' 연결 필드를 고르고, 일치하는 레코드 필터에서 해당 반려동물 레코드를 선택하세요. 이렇게 모은 연락처를 스마트 리스트로 저장해 두면 해당 반려동물 관련 안내를 보낼 때 쓸 수 있어요.
+- **반려동물이 있는 모든 연락처:** 'Owned Pet'에 **비어있지 않음**을 적용하면 그 관계로 반려동물이 하나 이상 연결된 연락처 리스트를 만들 수 있어요. 대상을 더 좁히려면 다른 연락처 조건을 함께 쓰세요.
+- **특정 회사에 연결된 연락처:** 어카운트 팀이 McKinsey와 EY 대상 아웃리치를 정리하려는 경우예요. 'Additional Company'처럼 해당하는 회사 관계를 고르고 두 회사 레코드를 선택하세요. 일치하는 연락처를 스마트 리스트로 저장해 어카운트 후속 관리에 쓰세요.
+- **특정 보험 증권에 연결된 연락처:** 'Policy' 연결 필드를 고르고 증권 레코드를 선택하면, 그 증권에 연결된 연락처를 묶어 증권별로 후속 연락을 할 수 있어요.
+- **추가 회사가 없는 연락처:** 'Additional Company'에 **비어 있음**을 적용하면 그 관계가 없는 연락처를 찾을 수 있어요. 리스트를 살펴보면서 회사 연결을 아직 채워야 하는 레코드를 확인하세요.
 
 ---
 
-## **컬럼 및 필터 문제 해결하기**
+## 열과 필터 문제 해결
 
-- **라벨이 보이지 않아요:** 해당 연결이 연락처에 설정되어 있는지, 그리고 선택 창의 Associations(연결) 항목 아래에서 확인하고 있는지 점검하세요.
-- **행에 칩이 표시되지 않아요:** 해당 연락처가 그 특정 라벨 아래 연결을 가지고 있는지 확인하세요. 다른 라벨 아래 있는 관계는 다른 컬럼에 표시돼요.
-- **결과가 예상과 달라요:** 라벨, 연산자, 선택한 레코드, 그리고 목록에 적용된 다른 필터들을 다시 한번 확인하세요.
-- **이름이 가이드와 달라요:** 각 로케이션마다 오브젝트 이름을 변경하거나 자체 연결 라벨을 사용할 수 있어요.
-
----
-*원문 최종 수정: 2026-10-27*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+- **레이블이 보이지 않아요:** 연락처에 해당 연결이 설정되어 있는지 확인하세요. 선택기에서 **Associations** 아래를 보고 있는지도 확인하세요.
+- **행에 칩이 없어요:** 해당 레이블 아래에 있는 연락처의 연결을 확인하세요. 다른 레이블 아래의 관계는 다른 열에 표시돼요.
+- **결과가 예상과 달라요:** 레이블, 연산자, 선택한 레코드, 리스트에 적용된 다른 필터를 다시 확인하세요.
+- **이 문서와 이름이 달라요:** 서브 계정에서 객체 이름을 바꿔 쓰거나 자체 연결 레이블을 쓰고 있을 수 있어요.

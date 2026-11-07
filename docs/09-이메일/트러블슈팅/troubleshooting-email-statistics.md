@@ -1,68 +1,79 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 09-이메일 > 트러블슈팅
+원문: /support/solutions/articles/48001208601-troubleshooting-email-statistics
+번역일: 2026-11-07
+카테고리: 09-이메일
 ---
 
-# 이메일 통계 문제 해결
+# 이메일 통계가 표시되지 않을 때 확인할 것
 
-**목차**
-
-- [이메일 통계가 표시되지 않는 이유](#이메일-통계가-표시되지-않는-이유)
-  - [1. 사용자가 어떤 방식으로 이메일을 보내는지 확인하기](#1-사용자가-어떤-방식으로-이메일을-보내는지-확인하기)
-  - [2. SMTP 제공업체 사용 시 제한사항](#2-smtp-제공업체-사용-시-제한사항)
-- [Mailgun API 키 재설정 시도](#mailgun-api-키-재설정-시도)
-- [CNAME 레코드 재확인](#cname-레코드-재확인)
-- [Mailgun 웹훅 재확인](#mailgun-웹훅-재확인)
+열림, 클릭, 전달됨, 반송 통계가 보이지 않을 때 원인을 찾고 해결하는 방법을 안내해요. 보통은 이메일을 보낸 방식, 설정된 이메일 제공업체, CNAME 레코드, Mailgun 웹훅 중 하나가 원인이에요. 아래 항목을 차례로 확인해 보세요.
 
 ## 이메일 통계가 표시되지 않는 이유
 
-### 1. 사용자가 어떤 방식으로 이메일을 보내는지 확인하기
+### 확인 1. 이메일을 어떤 방식으로 보냈나요?
 
-이메일 빌더 일괄 작업(Bulk Action)으로 보내는지, 스마트 리스트(Smart List)에서 보내는지, 워크플로우(Workflow)나 캠페인(Campaigns)에서 보내는지 확인하세요.
+**이메일 빌더**의 **일괄 작업**으로 보냈는지, 아니면 스마트 리스트, 워크플로우, 캠페인에서 보냈는지 확인하세요. 발송 방식마다 이메일 통계를 보는 곳이 달라요. 자세한 내용은 [이메일 활동별로 통계가 어디에 표시되나요?](../../10-마케팅/Statistics/email-statistics.md)를 참고하세요.
 
-각 방식마다 이메일을 보내는 방법에 따라 통계가 표시되는 섹션이 다릅니다. 자세한 내용은 [모든 이메일 활동에 대해 이메일 통계가 어디에 표시되나요?](../../10-마케팅/Statistics/email-statistics.md)를 참고하세요.
+이메일 템플릿을 열었는데 통계가 보이지 않는다면 이런 화면일 수 있어요.
 
-이메일 템플릿을 클릭했을 때 이메일 통계가 누락되는 경우:
+![템플릿을 연 뒤 이메일 통계가 보이지 않는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48186969567/original/o7R9Zujq1hhYNwlXiBhBsGPczF6JdpTt5w.png?1644017728)
 
-![이메일 템플릿 통계 누락](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48186969567/original/o7R9Zujq1hhYNwlXiBhBsGPczF6JdpTt5w.png?1644017728)
+**이메일 빌더**에서는 아래처럼 **일괄 작업**으로 보낸 이메일의 통계만 표시돼요.
 
-여기에서 이메일을 보낼 때만 이메일 빌더에서 통계가 표시됩니다:
+![이메일 빌더의 일괄 작업으로 이메일을 보내는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48186969568/original/8Grr4aFjwLE_qLJVsbh9xC4OHu8gAFhbYw.jpeg?1644017728)
 
-![이메일 빌더 통계](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48186969568/original/8Grr4aFjwLE_qLJVsbh9xC4OHu8gAFhbYw.jpeg?1644017728)
+### 확인 2. 어떤 제공업체로 이메일을 보내고 있나요?
 
-### 2. SMTP 제공업체 사용 시 제한사항
+SMTP 제공업체를 쓰면 전달됨·반송 통계를 가져와 표시할 수 없어요. SMTP 연동에서는 열림과 클릭만 볼 수 있어요. 모든 통계를 표시할 수 있는 곳은 Mailgun뿐이에요.
 
-SMTP 제공업체를 사용하는 경우, 전송됨/반송됨 통계를 가져와서 표시할 수 없습니다. SMTP 연동(Integration)은 열림과 클릭만 표시됩니다. 전체 통계를 보려면 Mailgun만 사용할 수 있습니다.
+{% hint style="info" %}
+정확한 통계를 보려면 Mailgun이나 하이퍼클래스 이메일을 설정하는 것을 적극 권장해요.
+{% endhint %}
 
-정확한 통계를 위해 Mailgun이나 LC Email 설정을 적극 권장합니다.
+서브 계정에서 전에 SMTP 제공업체를 썼고 워크플로우에 SMTP를 쓰던 때의 통계가 남아 있으면, 그 통계는 제대로 표시되지 않아요. 워크플로우를 복제한 다음, 복제한 워크플로우에서 이메일을 다시 보내 보세요. 그러면 통계가 정상적으로 표시돼요.
 
-하위 계정(Sub-account)에서 이전에 SMTP 제공업체를 사용했고, 워크플로우에 SMTP 제공업체의 SMTP 통계가 포함되어 있다면, 통계가 제대로 표시되지 않을 수 있습니다. 워크플로우를 복제하고 새로 이메일을 보내서 통계가 제대로 표시되는지 확인해보세요.
+## Mailgun API 키 초기화하기
 
-## Mailgun API 키 재설정 시도
+에이전시 관리자만 쓸 수 있어요.
 
-에이전시(Agency) 뷰 > **Settings(설정)** > **Email Services(이메일 서비스)** > **Location Settings(로케이션 설정)** > 하위 계정의 Mailgun API 연동 편집 > **Delete** 입력
+1. 에이전시 화면에서 **설정 > 이메일 서비스 > Location Settings**(서브 계정 설정)로 이동하세요.
+2. 해당 서브 계정의 Mailgun API 연동을 편집하세요.
+3. 확인 문자로 DELETE를 입력하세요.
 
-그 다음 다시 연동하세요: [Mailgun API Key - Where to Find in Mailgun & Put in Hyperclass](../메일건/mailgun-private-api-key-setup.md)
+그런 다음 Mailgun API 키를 다시 연동하세요. Mailgun에서 API 키를 찾아 하이퍼클래스에 추가하는 방법을 참고하면 돼요.
 
-![Mailgun API 키 재설정](https://i.ibb.co/1TVG21t/2023-1-24-11-12-42.gif)
+![Mailgun API 키를 초기화하는 화면](https://i.ibb.co/1TVG21t/2023-1-24-11-12-42.gif)
 
-## CNAME 레코드 재확인
+## CNAME 레코드 다시 확인하기
 
-CNAME 레코드는 Mailgun이 열림 및 클릭 추적, 구독 해지를 추적하는 데 필수적입니다. 해결 방법은 링크가 열리지 않거나 추적되지 않는 문제와 동일합니다:
+Mailgun이 열림, 클릭, 수신거부를 추적하려면 CNAME 레코드가 꼭 필요해요. 해결 방법은 링크가 열리지 않을 때와 같아요. "이메일 링크가 왜 바뀌나요? 이메일 안의 링크가 열리지 않을 때는 어떻게 하나요?"라는 도움말을 참고하세요.
 
-[내 이메일 링크가 왜 바뀌며, 열리지 않는 이메일 링크를 어떻게 수정하나요?](../how-to-fix-links-in-the-email-that-do-not-open-.md)
+## Mailgun 웹훅 다시 확인하기
 
-## Mailgun 웹훅 재확인
+1. **전송 중**을 클릭하세요.
+2. **웹훅**을 클릭하세요.
+3. 서브 계정에 설정된 도메인(또는 서브도메인)에 맞는 도메인이 선택되어 있는지 확인하세요.
+4. 아래 스크린샷처럼 모든 웹훅이 설정되어 있어야 해요.
+5. 설정되지 않은 웹훅이 있으면 이벤트 유형마다 **Add Webhook**(웹훅 추가)을 클릭하세요.
 
-1. **Sending(발송)** 클릭
-2. **Webhooks(웹훅)** 클릭
-3. 하위 계정에 설정된 도메인/서브도메인을 기준으로 올바른 도메인이 선택되어 있는지 확인
-4. 아래 스크린샷의 모든 웹훅이 설정되어 있어야 합니다
-5. 설정되지 않았다면, 모든 Event type에 대해 **Add Webhook(웹훅 추가)** 클릭
+![Mailgun 웹훅 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48283724301/original/XuGLhQDfmu5CAwRdHREf2Ak9-qX5s6R9gg.png?1677265427)
 
-![Mailgun 웹훅 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48283724301/original/XuGLhQDfmu5CAwRdHREf2Ak9-qX5s6R9gg.png?1677265427)
+## 자주 묻는 질문
 
----
-*원문 최종 수정: Thu, 30 Jan, 2025 at 3:28 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### SMTP 제공업체로 보낸 이메일에 반송·전달됨 통계가 표시되지 않는 이유가 뭔가요?
+SMTP 연동에서는 열림과 클릭 이벤트만 가져올 수 있어요. 전달됨과 반송 데이터는 발송 시점의 이벤트에 더 깊이 접근해야 얻을 수 있고, Mailgun이나 하이퍼클래스 이메일에서만 가능해요.
+
+### SMTP에서 Mailgun으로 바꾸면 이전 통계도 채워지나요?
+아니요. 이미 SMTP로 보낸 이메일에는 나중에 전달됨·반송 데이터가 추가되지 않아요. 워크플로우를 복제한 다음 복제본에서 다시 보내면, 새로 보낸 이메일은 Mailgun에서 올바르게 추적돼요.
+
+### 이메일 빌더 일괄 작업 통계와 워크플로우 이메일 통계는 같은 곳에서 보나요?
+아니요. 발송 방식(이메일 빌더 일괄 작업, 스마트 리스트, 워크플로우, 캠페인)마다 통계를 보는 곳이 따로 있어요. 통계가 보이지 않으면 먼저 어떤 방식으로 보냈는지 확인하세요.
+
+### CNAME 레코드가 제대로 설정됐는지 어떻게 확인하나요?
+MX Toolbox의 CNAME 조회 같은 도구로 추적용 서브도메인의 레코드가 제대로 확인되는지 보세요. 레코드가 확인되지 않으면 다른 설정이 모두 맞아도 열림·클릭·수신거부가 추적되지 않아요.
+
+### Mailgun 웹훅 이벤트 유형 중 하나만 빠져 있으면 어떻게 되나요?
+빠진 이벤트와 관련된 데이터(예: 반송)만 표시되지 않아요. 설정된 다른 이벤트는 정상적으로 집계돼요. 빠진 이벤트 유형의 웹훅을 추가하면 돼요.
+
+### 하이퍼클래스 이메일도 통계 추적 면에서 Mailgun과 같은가요?
+네. 하이퍼클래스 이메일은 Mailgun과 마찬가지로 열림, 클릭, 전달됨, 반송 통계를 모두 제공해요. CNAME 레코드나 웹훅을 직접 관리하지 않아도 돼요.

@@ -1,51 +1,48 @@
 ---
-원문: https://help.leadconnectorhq.com/support/solutions/articles/155000007365-whatsapp-error-business-account-is-restricted-from-messaging-users-in-this-country
-번역일: 2026-04-23
-카테고리: 설정 > 
+원문: /support/solutions/articles/155000007285-error-business-account-is-restricted-from-messaging-users-in-this-country
+번역일: 2026-11-07
+카테고리: 31-리셀링
 ---
 
-# 왓츠앱 오류: "Business account is restricted from messaging users in this country"
+# WhatsApp 오류 "Business account is restricted from messaging users in this country" 해결 안내
 
-왓츠앱 메시지를 보내려고 할 때 다음과 같은 오류가 발생할 수 있습니다:
+WhatsApp 메시지를 보낼 때 이 오류가 나타나는 이유와, 이 오류가 나타났을 때 할 수 있는 일을 안내해요.
+
+WhatsApp 메시지를 보내려고 할 때 아래 오류가 나타날 수 있어요.
 
 "Business account is restricted from messaging users in this country."
 
-이 제한은 최근 왓츠앱의 국가 간 메시지 정책 변경과 관련된 것으로, 계정 설정이나 플랫폼 구성에 문제가 있어서 발생하는 것이 아닙니다.
+이 오류는 WhatsApp이 국가 간 메시지 정책을 최근 바꾸면서 생긴 제한 때문에 나타나요. 계정 설정이나 플랫폼 구성에 문제가 있어서 생기는 오류가 아니에요.
 
-![왓츠앱 국가 제한 오류 메시지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155062921159/original/WjI9kgO0LXe1uNvh0NH6EEJH0_NOzFI3OA.png?1768800286)
+![WhatsApp 국가 제한 오류 메시지 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155062921159/original/WjI9kgO0LXe1uNvh0NH6EEJH0_NOzFI3OA.png?1768800286)
 
-## **오류가 발생하는 이유**
+## 오류가 나타나는 이유
 
-9월 15일부터 왓츠앱이 브라질(BR)과 인도네시아(ID)와 관련된 국가 간 메시지에 일시적 제한을 시행했습니다.
+WhatsApp은 9월 15일부터 브라질(BR)과 인도네시아(ID)가 관련된 국가 간 메시지 발송을 임시로 제한하고 있어요.
 
-이 정책 업데이트로 인해:
+이 정책 변경에 따라 다음과 같이 적용돼요.
 
-- **브라질이나 인도네시아 외부에 위치한 비즈니스**
-  - 브라질이나 인도네시아에 있는 사용자에게 왓츠앱 메시지를 보낼 수 없습니다.
+- 브라질이나 인도네시아 밖에 있는 비즈니스
+  - 브라질이나 인도네시아에 있는 사용자에게 WhatsApp 메시지를 보낼 수 없어요.
+- 브라질이나 인도네시아 안에 있는 비즈니스
+  - 같은 나라 안에 있는 사용자에게만 메시지를 보낼 수 있어요.
+  - 다른 지역의 사용자에게는 메시지를 보낼 수 없어요.
 
-- **브라질이나 인도네시아 내에 위치한 비즈니스**
-  - 같은 국가 내 사용자에게만 메시지를 보낼 수 있습니다.
-  - 다른 지역의 사용자에게는 메시지를 보낼 수 없습니다.
+이 제한은 모든 WhatsApp Business 계정에 적용되며, WhatsApp(Meta)이 직접 적용하고 있어요.
 
-이 제한은 모든 왓츠앱 비즈니스 계정에 적용되며, 왓츠앱(Meta)에서 직접 시행하는 정책입니다.
+## 영향을 받지 않는 부분
 
-## **영향받지 않는 기능**
+- 같은 나라 안에서 보내는 메시지는 그대로 보낼 수 있어요(브라질 → 브라질, 인도네시아 → 인도네시아).
+- 사용자가 보낸 메시지를 받는 데는 영향이 없어요.
+- WhatsApp 계정 상태, 템플릿, 품질 등급, 잔액은 그대로예요.
 
-- 같은 국가 내 메시지(브라질 → 브라질, 인도네시아 → 인도네시아)는 정상적으로 작동합니다.
-- 사용자로부터 메시지를 받는 것은 이 제한의 영향을 받지 않습니다.
-- 왓츠앱 계정 상태, 템플릿, 품질 등급, 잔액은 변경되지 않습니다.
+## 이 제한을 풀 수 있나요?
 
-## **이 제한을 해제할 수 있나요?**
+지금은 WhatsApp이 정한 제한이라서, 하이퍼클래스 쪽에서 우회하거나 해제할 방법이 없어요. 정책이 바뀌는지 WhatsApp(Meta)의 공식 공지를 확인해 보세요.
 
-현재로서는 이것이 왓츠앱에서 부과한 제한이며, 저희 측에서 우회하거나 해제할 수 있는 방법이 없습니다. 이 정책의 업데이트나 변경 사항에 대해서는 공식 왓츠앱(Meta) 공지를 모니터링하시기 바랍니다.
+## 앞으로 할 수 있는 일
 
-## **다음 단계**
-
-- 메시지 사용 사례가 국가 기반 제한에 맞는지 확인하세요.
-- 글로벌로 사업을 운영하고 있다면 다음을 고려해보세요:
-  - 해당되는 경우, 지역별로 별도의 왓츠앱 비즈니스 계정을 사용하기
-  - 국가 간 연락을 위한 대안 커뮤니케이션 채널 활용하기
-
----
-*원문 최종 수정: Sun, 15 Feb, 2026 at 11:50 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+- 메시지 발송 용도가 국가별 제한에 맞는지 확인하세요.
+- 전 세계를 대상으로 사업한다면 다음 방법을 고려해 보세요.
+  - 가능한 경우 지역별로 WhatsApp Business 계정을 따로 사용하세요.
+  - 국가 간 연락에는 다른 소통 채널을 활용하세요.

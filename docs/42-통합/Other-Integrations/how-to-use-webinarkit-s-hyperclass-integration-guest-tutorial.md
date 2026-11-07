@@ -1,41 +1,46 @@
 ---
-
-번역일: 2026-04-09
-카테고리: 42-통합 > Other Integrations
+원문: /support/solutions/articles/48001225332-how-to-use-webinarkit-s-highlevel-integration-guest-tutorial-
+번역일: 2026-11-07
+카테고리: 42-통합
 ---
 
-# WebinarKit의 Hyperclass 연동 사용 방법 (게스트 튜토리얼)
+# WebinarKit과 하이퍼클래스 연동 사용하기 (게스트 가이드)
 
-웨비나는 청중과 정보를 공유하는 훌륭한 방법입니다. [WebinarKit](https://getwebinarkit.com/live/)은 몇 분 만에 전문적인 웨비나를 쉽게 제작할 수 있는 간단한 방법을 제공하여 웨비나를 그 어느 때보다 쉽게 만들어줍니다. WebinarKit은 고품질 웨비나를 빠르고 쉽게 제작할 수 있는 모든 것을 제공합니다.
+WebinarKit의 하이퍼클래스 연동을 켜면, 하이퍼클래스 계정에 새 연락처가 추가될 때 그 연락처를 웨비나에 자동으로 등록할 수 있어요. 이 문서에서는 연동 기능의 개요와 설정 방법을 안내해요.
 
-이 문서에서는 [WebinarKit](https://getwebinarkit.com/live/)을 Hyperclass와 함께 사용하는 방법을 다루겠습니다.
+웨비나는 고객에게 정보를 전달하기 좋은 방법이에요. [WebinarKit](https://getwebinarkit.com/live/)은 전문적으로 보이는 웨비나를 몇 분 만에 만들 수 있게 도와주는 서비스예요. 고품질 웨비나에 필요한 기능을 모두 갖추고 있어요.
 
-게스트 원문: [https://help.webinarkit.com/help/using-webinarkit-s-unique-highlevel-integration](https://help.webinarkit.com/help/using-webinarkit-s-unique-highlevel-integration)
+**게스트 문서:** <https://help.webinarkit.com/help/using-webinarkit-s-unique-highlevel-integration>
 
-WebinarKit은 Hyperclass와 내장 연동을 지원합니다. 이 연동은 다른 모든 연동에서 지원하는 표준 기능을 포함합니다.
+## WebinarKit의 하이퍼클래스 연동이란?
 
-예를 들어, 누군가 웨비나에 등록할 때 Hyperclass에 연락처를 추가하거나, 참석할 때 연락처에 태그를 붙이는 등의 기능입니다.
+WebinarKit은 하이퍼클래스와 연동되어 있어요. 이 연동은 WebinarKit이 다른 연동에서 지원하는 기본 기능을 똑같이 지원해요.
 
-이러한 기능과 Hyperclass와의 표준 연동 기능에 대해 더 자세히 알아보려면 여기를 확인하세요: [https://help.webinarkit.com/help/using-webinarkit-s-3rd-party-integrations](https://help.webinarkit.com/help/using-webinarkit-s-3rd-party-integrations)
+예를 들어 아래와 같은 작업을 할 수 있어요.
 
-WebinarKit의 Hyperclass 연동은 다른 연동에서는 사용할 수 없는 고유 기능도 지원합니다: Hyperclass 계정에 연락처가 추가될 때 해당 연락처를 웨비나에 자동 등록하는 기능입니다.
+- 누군가 웨비나에 등록하면 하이퍼클래스에 연락처로 추가해요.
+- 누군가 웨비나에 참석하면 연락처에 태그를 지정해요.
 
-## WebinarKit에서 Hyperclass 연동 기능 활성화하기
+이런 기본 기능과 하이퍼클래스 연동 기능은 아래 문서에서 더 자세히 볼 수 있어요: <https://help.webinarkit.com/help/using-webinarkit-s-3rd-party-integrations>
 
-시작하려면 WebinarKit 대시보드로 이동하세요. 그다음 새 Hyperclass 연락처가 등록되길 원하는 웨비나의 설정을 열어주세요.
+WebinarKit의 하이퍼클래스 연동에는 다른 연동에 없는 기능이 하나 더 있어요. 하이퍼클래스 계정에 연락처가 추가되면, 그 연락처를 웨비나에 자동으로 등록하는 기능이에요.
 
-웨비나의 "기타(Other)" 설정 페이지로 이동하여 연동(Integrations) 섹션 아래의 "Hyperclass"로 스크롤하세요. Hyperclass 아코디언 항목을 클릭하여 Hyperclass 설정을 열고, 맨 아래로 스크롤하세요.
+## WebinarKit에서 하이퍼클래스 연동 기능 켜기
 
-![WebinarKit Hyperclass 설정 화면](https://cdn.filestackcontent.com/JoofbixQSii5dijaYX3x)
+1. WebinarKit **대시보드**로 이동해요.
+2. 새 하이퍼클래스 연락처를 등록할 웨비나의 설정을 열어요.
+3. 웨비나 설정에서 **기타** 페이지로 이동해요.
+4. 아래로 스크롤해서 **연동** 섹션의 **하이퍼클래스**를 찾아요.
+5. **하이퍼클래스** 항목을 클릭해 하이퍼클래스 설정을 펼친 뒤, 맨 아래까지 스크롤해요.
 
-여기서 토글 버튼을 볼 수 있습니다. 토글 버튼을 클릭하여 이 기능을 활성화하세요. 기능이 활성화되면 웨비나 일정을 선택할 수 있는 선택 드롭다운도 표시됩니다. 이는 새 Hyperclass 연락처가 등록될 웨비나의 발표 시간을 결정하므로 중요합니다.
+![WebinarKit 웨비나 설정의 하이퍼클래스 연동 화면](https://cdn.filestackcontent.com/JoofbixQSii5dijaYX3x)
 
-드롭다운에는 웨비나 설정에서 이미 추가한 모든 사용 가능한 일정과 "**실시간(just-in-time)**" 세션이 표시됩니다.
+6. 토글 버튼을 클릭해 기능을 켜요.
+7. 기능을 켜면 웨비나 일정을 고르는 드롭다운이 나타나요. 새 하이퍼클래스 연락처가 등록될 웨비나의 진행 시간이 이 일정에 따라 정해지므로, 원하는 일정을 선택해요.
+8. 페이지 맨 아래로 스크롤해서 **저장** 버튼을 클릭해요.
 
-연락처가 등록될 일정을 선택했으면, 페이지 하단으로 스크롤하여 "**저장(Save)**" 버튼을 클릭하여 설정을 저장하세요.
+{% hint style="info" %}
+드롭다운에는 웨비나 설정에 이미 추가해 둔 일정이 모두 표시돼요. **just-in-time**(바로 시작하는 세션) 세션도 함께 표시돼요.
+{% endhint %}
 
-이제 완료되었습니다! Hyperclass 계정에 새 연락처가 추가되면 이 기능을 활성화한 웨비나에 자동으로 등록됩니다!
-
----
-*원문 최종 수정: Tue, 8 Nov, 2022 at 9:08 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+설정이 끝났어요. 이제 하이퍼클래스 계정에 새 연락처가 추가되면, 이 기능을 켜 둔 웨비나에 자동으로 등록돼요.

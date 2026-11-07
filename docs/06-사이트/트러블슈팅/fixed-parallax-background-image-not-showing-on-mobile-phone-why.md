@@ -1,32 +1,29 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 06-사이트 > 트러블슈팅
+원문: /support/solutions/articles/48001163062-fixed-parallax-background-image-not-showing-on-mobile-phone-why-
+번역일: 2026-11-07
+카테고리: 06-사이트
 ---
 
-# 모바일에서 고정/패럴랙스 배경 이미지가 표시되지 않는 이유
+# 모바일에서 고정(Parallax) 배경 이미지가 안 보일 때
 
-패럴랙스 이미지나 고정 배경 이미지는 iPhone과 iPad에서 제대로 작동하지 않습니다. 이는 iOS에서 이 애니메이션에 사용되는 Javascript를 차단하는 제한사항 때문입니다. 안드로이드 폰이나 태블릿, 크롬북, 윈도우 태블릿에서는 완벽하게 작동합니다.
+iPhone과 iPad에서는 고정 배경 이미지(패럴랙스 이미지)가 제대로 나오지 않을 수 있어요. 이 문서에서 원인과 해결 방법을 안내해요.
 
-iOS 모바일 Safari는 고정 배경 이미지 렌더링에 문제가 있습니다. 이는 iOS 브라우저의 한계입니다.
+패럴랙스 이미지는 고정 배경 이미지라고도 불러요. iOS는 이 애니메이션에 쓰이는 JavaScript를 막기 때문에, iPhone과 iPad에서는 제대로 작동하지 않아요. Android 폰과 태블릿, Chromebook, Windows 태블릿에서는 문제없이 작동해요.
 
-이 문제는 다른 많은 플랫폼에서도 발생하며, 각 플랫폼마다 이 문제를 해결하는 고유한 방법을 사용하고 있습니다.
+iOS의 모바일 Safari는 고정 배경 이미지를 제대로 표시하지 못해요. iOS 브라우저 자체의 제한이에요.
 
-![패럴랙스 배경 이미지 예시 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48066657290/original/CYD0whl8xRxJUGReYDkGqxgRQKjcPsLPFg.png?1603710070)
+이 문제는 다른 여러 플랫폼에서도 똑같이 나타나고, 플랫폼마다 나름의 해결 방법을 써요.
 
-![패럴랙스 배경 이미지 예시 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48066657407/original/rzHh_JZPLbhuE_rIpY8jTQuF8uA1aESX4A.png?1603710101)
+![iPhone에서 고정 배경 이미지가 표시되지 않는 화면 예시 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48066657290/original/CYD0whl8xRxJUGReYDkGqxgRQKjcPsLPFg.png?1603710070)
 
-**Hyperclass에서의 해결방법**
+![iPhone에서 고정 배경 이미지가 표시되지 않는 화면 예시 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48066657407/original/rzHh_JZPLbhuE_rIpY8jTQuF8uA1aESX4A.png?1603710101)
 
-패럴랙스 배경 이미지가 포함된 섹션을 모바일용으로 별도 제작하고, 모바일에서는 패럴랙스가 아닌 다른 옵션을 선택할 수 있습니다.
+## 하이퍼클래스에서의 해결 방법
 
-모바일용 별도 섹션 만드는 방법은 다음 가이드를 참고하세요:
+모바일 전용 섹션을 따로 만들어서 패럴랙스 배경 이미지를 넣을 수 있어요. 모바일 전용 섹션에서는 **배경 이미지** 옵션 중 **Parallax**(패럴랙스)가 아닌 다른 옵션을 선택하세요.
 
-[https://hyperclass.gitbook.io/hyperclass-docs](../기타/how-to-have-different-websites-for-desktop-and-phone.md)
+모바일용 섹션을 따로 만드는 방법은 [데스크톱과 모바일에서 서로 다른 웹사이트 보여 주기](../기타/how-to-have-different-websites-for-desktop-and-phone.md) 문서를 참고하세요.
 
-이 문제를 다루는 여러 포럼 스레드들도 도움이 될 수 있습니다:
-[https://www.google.com/search?source=hp&ei=n6eWX_GlOMjMaIu9nagH&q=parallax+image+not+showing+on+iphone&oq=parallax+image+iphon&gs_lcp=CgZwc3ktYWIQAxgAMgYIABAWEB4yBggAEBYQHjoICAAQsQMQgwE6AggAOgUILhCxAzoFCAAQsQM6DgguELEDEIMBEMcBEK8BOggILhCxAxCDAToCCC46CAguELEDEJMCOgoILhCxAxAKEJMCOgQIABAKOgQILhAKOgcIABCxAxAKOgoIABCxAxCDARAKOgcILhCxAxAKUKMNWPF0YJ2BAWgAcAB4AIABgQWIAeo4kgEKMi0xOC43LjAuMZgBAKABAaoBB2d3cy13aXo&sclient=psy-ab](https://www.google.com/search?source=hp&ei=n6eWX_GlOMjMaIu9nagH&q=parallax+image+not+showing+on+iphone&oq=parallax+image+iphon&gs_lcp=CgZwc3ktYWIQAxgAMgYIABAWEB4yBggAEBYQHjoICAAQsQMQgwE6AggAOgUILhCxAzoFCAAQsQM6DgguELEDEIMBEMcBEK8BOggILhCxAxCDAToCCC46CAguELEDEJMCOgoILhCxAxAKEJMCOgQIABAKOgQILhAKOgcIABCxAxAKOgoIABCxAxCDARAKOgcILhCxAxAKUKMNWPF0YJ2BAWgAcAB4AIABgQWIAeo4kgEKMi0xOC43LjAuMZgBAKABAaoBB2d3cy13aXo&sclient=psy-ab)
+이 문제를 다룬 글이 여러 포럼에 올라와 있어요. 아래 검색 결과에서 도움이 될 만한 글을 찾아볼 수 있어요.
 
----
-*원문 최종 수정: Mon, 26 Oct, 2020 at 6:04 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+https://www.google.com/search?source=hp&ei=n6eWX_GlOMjMaIu9nagH&q=parallax+image+not+showing+on+iphone&oq=parallax+image+iphon&gs_lcp=CgZwc3ktYWIQAxgAMgYIABAWEB4yBggAEBYQHjoICAAQsQMQgwE6AggAOgUILhCxAzoFCAAQsQM6DgguELEDEIMBEMcBEK8BOggILhCxAxCDAToCCC46CAguELEDEJMCOgoILhCxAxAKEJMCOgQIABAKOgQILhAKOgcIABCxAxAKOgoIABCxAxCDARAKOgcILhCxAxAKUKMNWPF0YJ2BAWgAcAB4AIABgQWIAeo4kgEKMi0xOC43LjAuMZgBAKABAaoBB2d3cy13aXo&sclient=psy-ab

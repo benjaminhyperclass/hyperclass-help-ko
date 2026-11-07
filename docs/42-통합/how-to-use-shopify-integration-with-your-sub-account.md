@@ -1,165 +1,226 @@
 ---
-원문: https://help.leadconnectorhq.com/support/solutions/articles/155000004061-how-to-use-shopify-integration-with-your-sub-account-
-번역일: 2026-04-23
-카테고리: 전자상거래
+원문: /support/solutions/articles/48001203620-how-to-use-the-shopify-integration-with-your-account
+번역일: 2026-11-06
+카테고리: 42-통합
 ---
 
-# 하위 계정에서 Shopify 연동 사용하는 방법
+# Shopify 연동 사용하기
 
-## Shopify를 하위 계정과 연동하는 과정은 2단계로 진행됩니다:
+Shopify 스토어를 하이퍼클래스에 연결하면 상품, 컬렉션, 연락처, 주문, 거래 같은 이커머스 데이터를 서브 계정에서 가져와 후속 관리와 자동화에 쓸 수 있어요. 이 문서에서는 Shopify를 연결하는 방법, 가져올 데이터와 계속 동기화할 데이터를 고르는 방법, 설정 전에 알아 둘 제한 사항을 안내해요.
 
-- Shopify 스토어에서 커스텀 앱 생성
-- Shopify를 계정에 연결
+## Shopify 연동이란?
 
+Shopify 연동은 Shopify 스토어를 하이퍼클래스 서브 계정에 연결해요. 지원되는 이커머스 데이터와 이벤트를 하이퍼클래스 안에서 쓸 수 있게 해 줘요. 연결하고 나면 Shopify 데이터를 이커머스 워크플로우, 고객 후속 관리, 상품 확인, 주문 관련 자동화에 활용할 수 있어요.
 
-# 1단계: Shopify 스토어에서 커스텀 앱 생성
+현재 Shopify 연결은 OAuth 앱 방식을 써요. Shopify에서 연결을 승인하기만 하면 되므로, Shopify 커스텀 앱을 직접 만들고 **관리자 API 액세스 토큰**을 복사할 필요가 없어요. 이전의 커스텀 앱 방식으로 연결한 기존 스토어는 연결을 끊지 않는 한 계속 동기화될 수 있어요.
 
-연동을 설정하기 전에 먼저 Shopify 스토어에서 커스텀 앱을 생성해야 합니다.
+## Shopify 연동의 주요 장점
 
+Shopify 연동을 쓰면 Shopify 활동을 하이퍼클래스 한곳에 모아 고객 소통, 자동화, 영업 후속 관리에 활용할 수 있어요.
 
-1.1 Shopify 스토어에 로그인하고 대시보드에서 "Apps"를 클릭하세요
+- 간편한 설정: 커스텀 앱과 API 토큰을 직접 만들 필요 없이 앱 기반 OAuth 방식으로 Shopify를 연결해요.
+- 과거 데이터 가져오기: 설정 중에 상품, 컬렉션, 연락처, 주문, 거래 등 지원되는 Shopify 데이터를 하이퍼클래스로 가져와요.
+- 지속적인 데이터 동기화: 처음 연결한 뒤에도 선택한 Shopify 데이터를 계속 동기화해요.
+- 이커머스 자동화 지원: 동기화된 Shopify 활동을 **결제 중단** 트리거나 주문 관련 자동화 같은 이커머스 워크플로우 트리거와 함께 쓸 수 있어요.
+- 더 나은 고객 후속 관리: Shopify의 고객·주문 활동을 바탕으로 더 알맞은 이메일, SMS, 워크플로우를 만들 수 있어요.
+- 이커머스 정보 한눈에 보기: 연결된 하이퍼클래스 서브 계정 안에서 지원되는 Shopify 정보를 확인하고 활용해요.
+- 연락처 자동 보강: 연결된 Shopify 스토어에서 동기화된 모든 연락처에 구매 이력 데이터가 채워져요. 누적 구매액, 주문 수, 첫 주문일과 마지막 주문일, 면세 여부가 해당돼요. 이 필드들은 연락처 레코드에서 바로 볼 수 있고, 따로 설정할 필요가 없어요.
 
+## Shopify 연결 방식
 
-![Shopify 대시보드의 Apps 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035274558/original/ZSJJrCQiG1mxMWdAognKbVtt7sLmlZO5Rg.png?1729693048)
+Shopify는 새로운 OAuth 앱 방식이나 이전의 커스텀 앱 방식으로 연결할 수 있어요. 두 방식의 차이를 알아 두면 알맞은 방법을 고르고 불필요한 중복 연결을 피할 수 있어요.
 
+| 연결 방식 | 알맞은 경우 | 설정 방법 | 참고 |
+| --- | --- | --- | --- |
+| OAuth 앱 방식 | 새로 Shopify를 연결할 때 | 앱 연결 과정에서 Shopify를 승인해요 | 직접 설정하는 단계가 줄어서 새 연결에 권장해요. |
+| 커스텀 앱 방식 | 이전 방식으로 연결한 기존 Shopify 스토어 | Shopify 커스텀 앱을 만들고 **관리자 API 액세스 토큰**을 사용해요 | 기존 Shopify 연동 안내에 나와 있던 이전 설정 방법이에요. |
 
-1.2 화면 상단에 강조표시된 "Develop apps"를 클릭하세요
+{% hint style="warning" %}
+이전 커스텀 앱 방식으로 연결한 기존 Shopify 스토어는 계속 작동할 수 있어요. 다만 이 방식을 쓰는 Shopify Basic 스토어는 지원되는 보호 고객 데이터와 새로 제공되는 고객·주문 동기화 기능을 쓰려면 OAuth로 다시 연결해야 해요.
 
+이미 OAuth로 연결한 스토어는 다시 연결하지 않아도 돼요.
+{% endhint %}
 
-![Develop apps 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035274557/original/WIhYzLcoelf6zT6fSg3xpF2MbizCAgcIdg.png?1729693048)
+## 요소 가져오기
 
+**요소 가져오기**는 처음 연결할 때 지원되는 Shopify 레코드 중 무엇을 하이퍼클래스로 가져올지 정하는 화면이에요. 주로 연동하기 전에 Shopify에 이미 쌓여 있던 과거 데이터를 가져올 때 써요.
 
-1.3 "Allow custom app development"를 클릭하세요 (이미 이 권한을 활성화했다면 Shopify는 1.5 단계로 바로 이동합니다)
+가져올 수 있는 항목은 다음과 같아요.
 
+- 상품
+- 컬렉션
+- 연락처
+- 주문
+- 거래
 
-![Allow custom app development 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035274554/original/c1efIzaYNwK6AMhTsaqHHPcWiflc3hwaXw.png?1729693048)
+하이퍼클래스 워크플로우와 고객 관리에 필요한 데이터 유형을 고르세요. 예를 들어 상품과 컬렉션을 가져오면 Shopify 카탈로그 정보를 하이퍼클래스에서 볼 수 있어요. 연락처와 주문을 가져오면 고객 후속 관리와 이커머스 리포팅 워크플로우에 활용할 수 있어요. 하이퍼클래스의 Shopify 마이그레이션 안내에서도 상품, 컬렉션, 연락처, 주문, 거래의 가져오기와 동기화를 지원한다고 확인해 줘요.
 
+## 동기화 설정
 
-1.4 다음 화면에서 "Allow custom app development"를 클릭하세요
+**동기화 설정**은 연결이 활성화된 이후에 어떤 Shopify 데이터를 계속 하이퍼클래스로 동기화할지 정하는 화면이에요. 설정을 마친 뒤의 활동에 적용된다는 점에서 처음 가져오기와 달라요.
 
+**동기화 설정**을 쓰면 선택한 Shopify 데이터를 하이퍼클래스에서 최신 상태로 유지할 수 있어요. 예를 들어 주문 동기화를 켜면 Shopify의 새 주문 활동을 지원되는 이커머스 워크플로우와 후속 작업에 쓸 수 있어요.
 
-![Allow custom app development 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035274555/original/c3C51155RfXJBhQ91P_M-mUb_IaR1UG_6Q.png?1729693048)
+동기화 옵션을 고르기 전에, 팀이 하이퍼클래스에서 어떤 Shopify 데이터를 써야 하는지 먼저 확인하세요. 나중에 동기화 옵션을 끄면 이후 동기화는 멈출 수 있지만, 이미 가져왔거나 동기화된 레코드는 지워지지 않을 수 있어요.
 
+## Shopify Basic 요금제의 고객·주문 동기화
 
-1.5 "Create an app"을 클릭하세요
+Basic 요금제를 쓰는 Shopify 스토어도 이제 지원되는 보호 고객 데이터에 접근할 수 있어요. 하이퍼클래스 Shopify 연동을 통해 고객 및 주문 정보도 동기화할 수 있어요.
 
+이 기능을 쓰려고 Shopify 요금제를 올릴 필요는 없어요.
 
-![Create an app 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035274560/original/kWDttIMq7bGHQ6X8hRxK6-YZRrOS2qhqsg.png?1729693050)
+### 기존 OAuth 연결을 쓰는 경우
 
+Shopify 스토어를 이미 OAuth로 연결했다면 다시 연결하지 않아도 돼요.
 
-1.6 앱 이름을 입력하고(예: "Marvel's App"), App developer 아래에서 이메일을 선택한 후 "Create app"을 클릭하세요
+Shopify 연동의 **동기화 설정**에서 다음 옵션을 활성화하세요.
 
+- **연락처 동기화**
+- **Order Sync**(주문 동기화)
 
-![앱 생성 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035274561/original/SnexU3bF6wv-D0lEC6Iv8cXaqQX-SA6lXA.png?1729693050)
+Shopify Basic 스토어에서도 지원되는 고객 및 주문 웹훅을 사용해 하이퍼클래스와 데이터를 동기화할 수 있어요.
 
+### 이전 커스텀 앱 연결을 쓰는 경우
 
-1.7 "Configure Admin API scopes"를 클릭하여 Admin API 연동을 설정하세요
+이전 커스텀 앱 방식으로 Shopify 스토어를 연결했다면, 지원되는 보호 고객 데이터를 쓰기 위해 OAuth로 다시 연결해야 해요.
 
+다시 연결한 뒤에 지원되는 연락처 및 주문 동기화 옵션을 활성화할 수 있어요.
 
-![Configure Admin API scopes 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035274559/original/Em7J9mPM5C9u_MSWaVd7Q1t7gdPU_jgsrg.png?1729693049)
+Shopify OAuth 연결 방법은 위의 "Shopify 연동 설정 방법" 섹션을 참고하세요.
 
+## Shopify에서 추가되는 연락처 필드
 
-1.8 "Orders" 섹션을 검색하거나 스크롤해서 찾고, 최소한 "read_orders" 권한을 활성화해야 합니다
+연결된 Shopify 스토어에서 연락처를 가져오거나 동기화하면, 연동이 해당 연락처 레코드에 필드를 자동으로 만들고 계속 최신 상태로 유지해요. 이 필드들은 처음 동기화한 뒤에 저절로 업데이트되고, 필드별로 따로 설정할 필요는 없어요.
 
+### 표준 연락처 필드
 
-![Orders 권한 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035274568/original/MBWg0uA8kYUDN-1WQnXphdBk0j_OohW3Bw.jpeg?1729693053)
+하이퍼클래스의 모든 연락처에 이미 있는 필드에 연결돼요. Shopify는 이 필드가 비어 있을 때만 값을 채워요. 회원님이나 다른 출처에서 이미 입력한 값을 덮어쓰지 않아요.
 
+| 필드 | Shopify에서 채워지는 값 |
+| --- | --- |
+| **First name** / **Last name**(이름 / 성) | Shopify에 등록된 고객 이름 |
+| **Email**(이메일) | 고객의 기본 이메일. Shopify 고객과 하이퍼클래스 연락처를 맞춰 볼 때 쓰며, 덮어쓰지 않아요 |
+| **Phone**(전화번호) | 고객의 기본 전화번호 |
+| **Address**(주소) | 고객의 기본 주소 |
 
-1.9 "read_customers" 범위를 추가하세요. 설정에서 "Admin API Integrations"을 편집합니다. 이 섹션의 고객 부분에서 "read_customers" 체크박스를 선택하세요.
+### 새로 생기는 Shopify 커스텀 필드
 
+| 필드 | 표시 내용 | 업데이트 시점 |
+| --- | --- | --- |
+| **Shopify Customer ID**(Shopify 고객 ID) | Shopify 내부 고객 참조 값 | 연락처가 처음 만들어질 때 한 번 |
+| **Shopify Store Name**(Shopify 스토어 이름) | 연락처가 어느 연결된 Shopify 스토어에서 왔는지 | 스토어를 연결할 때 한 번 |
+| **Shopify Lifetime Value**(Shopify 누적 구매액) | 고객이 해당 Shopify 스토어에서 지출한 총 금액 | 완료된(결제된) 주문이 생길 때마다 |
+| **Shopify Order Count**(Shopify 주문 수) | 완료된 주문의 총 개수 | 완료된(결제된) 주문이 생길 때마다 |
+| **Shopify Last Order Date**(Shopify 마지막 주문일) | 고객의 가장 최근 완료 주문 날짜 | 주문이 완료될 때마다 |
+| **Shopify Last Order Value**(Shopify 마지막 주문 금액) | 고객의 가장 최근 완료 주문 금액 | 주문이 완료될 때마다 |
+| **Shopify First Order Date**(Shopify 첫 주문일) | 고객의 첫 완료 주문 날짜 | 첫 주문이 완료된 뒤 한 번 |
+| **Shopify Tax Exempt**(Shopify 면세 여부) | Shopify에서 이 고객을 면세로 표시했는지 여부. 도매·B2B 구매자를 구분하는 흔한 신호예요 | Shopify의 고객 레코드가 업데이트될 때마다 |
+| **Shopify Email Consent**(Shopify 이메일 수신 동의) (출시 예정) | Shopify에 등록된 고객의 이메일 마케팅 수신 동의 상태 | Shopify에서 동의 상태가 바뀔 때마다 |
+| **Shopify SMS Consent**(Shopify SMS 수신 동의) (출시 예정) | Shopify에 등록된 고객의 SMS 마케팅 수신 동의 상태 | Shopify에서 동의 상태가 바뀔 때마다 |
 
-![고객 권한 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035278217/original/zbwoZ95ElWEao2flGsTzj1raSsFps7JUVQ.png?1729695165)
+Shopify 고객 태그는 연락처 레코드의 기존 태그 필드로 동기화돼요. 이 필드들을 스마트 리스트의 필터로 쓰거나(예: "90일 넘게 전에 주문한 고객") 워크플로우의 조건으로 쓰면 구매 행동에 따라 메시지를 나눠 보낼 수 있어요.
 
+## 알아 둘 점과 제한 사항
 
-![read_customers 체크박스](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035274552/original/P7Z8MGEHQOVtd8Eij3a-MM0bdhBlGpW90g.png?1729693048)
+Shopify 동기화 동작은 Shopify 요금제, 선택한 설정, 동기화하는 데이터 유형에 따라 다를 수 있어요. 설정하기 전에 아래 내용을 확인해 두면 연결 후 혼란을 줄일 수 있어요.
 
+- 이미 하이퍼클래스로 가져왔거나 동기화된 Shopify 데이터는, 나중에 해당 동기화 설정을 꺼도 하이퍼클래스에 남아 있을 수 있어요.
+- Shopify Basic 요금제 스토어는 OAuth 기반 Shopify 연동을 통해 지원되는 보호 고객 데이터에 접근하고, 고객·주문 정보를 동기화할 수 있어요. 이전 커스텀 앱 연결은 이 기능을 쓰려면 OAuth로 다시 연결해야 해요.
+- 설정 중에 입력을 요청받으면 정확한 Shopify 스토어 이름이나 스토어 URL을 입력하세요.
+- 기존 커스텀 앱 방식 연결은 현재 지원되는 연결 방식으로 다시 연결할 준비가 되기 전에는 끊지 않는 것이 좋아요.
+- Shopify 워크플로우 트리거는 시간이 지나며 바뀔 수 있어요. 현재 하이퍼클래스 워크플로우 트리거 목록에서는 **Shopify Abandoned Cart**(Shopify 장바구니 이탈), **Shopify Order Fulfilled**(Shopify 주문 처리 완료) 등 이전 Shopify 전용 트리거 일부를 곧 지원 중단될 트리거로 표시하고 있어요. 현재 스토어 연결에는 더 새로운 이커머스 스토어 트리거를 쓸 수 있어요.
+- 모든 Shopify 연락처 필드는 스토어를 연결하면 자동으로 동기화돼요. 개별 필드를 끄거나 제외하는 옵션은 현재 없어요. 이미 Shopify와 연동한 기존 고객은 연동 설정을 업데이트하면 이 필드들이 동기화돼요.
+- 환불이나 주문 취소가 생겨도 주문 자체는 접수됐으므로 **Shopify Order Count**는 줄어들지 않아요. **Shopify Lifetime Value**는 환불이 반영되도록 자동으로 업데이트돼요.
+- Shopify의 임시 주문(예: 수동 견적)은 어떤 연락처 필드에도 영향을 주지 않아요. 결제가 완료된 주문만 반영돼요.
+- **Shopify Lifetime Value**에는 Shopify 구매만 반영돼요.
 
-1.10 "Products" 섹션을 검색하거나 스크롤해서 찾고, 최소한 "read_products" 권한을 활성화해야 합니다
+## Shopify 연동 설정 방법
 
+Shopify를 올바르게 설정해야 하이퍼클래스가 알맞은 이커머스 데이터를 받고, 연결 후에도 필요한 레코드가 계속 동기화돼요. 설정을 마치기 전에 가져오기와 동기화 선택을 확인해서, 스토어 데이터가 팀의 워크플로우, 리포팅, 후속 관리에 필요한 형태로 들어오도록 하세요.
 
-![Products 권한 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035274571/original/Nqj0fAX2cPnqXad89vM16z7gPjzmXowFfA.png?1729693053)
+1. 서브 계정을 열고 **설정 > 연동 > Shopify**로 이동하세요.
+2. **연결**을 클릭하세요.
 
+   ![연결 버튼이 있는 Shopify 연동 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155072340981/original/MbVjKFRtjl7b9ZlQOS-wMcpKyXSTPWY2hg.jpeg?1779905353)
+3. Shopify 스토어 URL이나 스토어 이름을 입력하고 **다음**을 클릭하세요.
 
-1.11 "Inventory" 섹션을 검색하거나 스크롤해서 찾고, 최소한 "read_inventory" 권한을 활성화해야 합니다
+   ![Shopify 스토어 URL 입력 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155072340975/original/hEGVW6VHY8aiDUqXXGlRmJlYlHqdhbRUjA.png?1779905353)
+4. **요소 가져오기** 화면에서 한 번만 가져올 과거 Shopify 데이터를 선택하세요.
+   - **연락처 가져오기**
+   - **주문 가져오기**
+   - **거래 가져오기**
+   - **상품 가져오기**
+   - **컬렉션 가져오기**
 
+   ![요소 가져오기 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155072340977/original/h_26ENT8-_Cso8B04qrtluZNHNIc4JPFeA.png?1779905353)
+5. **다음**을 클릭해 **동기화 설정** 화면으로 이동하세요. 앞으로 계속 동기화할 데이터와 트리거를 선택하세요.
+   - **연락처 동기화**
+   - **Order Sync**
+   - **주문 접수 트리거**
+   - **거래 동기화**
+   - **결제 완료 트리거**
+   - **상품 동기화**
+   - **컬렉션 동기화**
 
-![Inventory 권한 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035278346/original/mR5D0owQUbz3NuMj87W8ZaKuxGFQscb_YA.png?1729695263)
+   ![동기화 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155072340985/original/Dxu_qZS7mMPyp9Vzq7ESWevFJy5pmULW4w.jpeg?1779905354)
+6. **저장**을 클릭하세요. OAuth 승인 과정이 시작되고 Shopify로 이동해요.
+7. Shopify의 **Install app**(앱 설치) 화면에서 요청된 권한을 확인하고 **설치**를 클릭하세요.
+8. 승인이 끝나면 하이퍼클래스로 돌아오고, Shopify 스토어 연결이 완료돼요.
 
+{% hint style="info" %}
+Shopify 스토어 전체를 옮기는 경우에는, 이전 계획상 특정 데이터 유형만 필요한 경우가 아니라면 가져오기와 동기화 옵션을 모두 선택하세요. 그러면 지원되는 과거 데이터를 모두 가져오고, 이후 Shopify 활동도 계속 동기화돼요.
+{% endhint %}
 
-1.12 "주문, 상품, 고객, 재고"에 대한 읽기 권한을 모두 활성화한 후, 오른쪽 상단의 "Save" 버튼을 클릭하여 앱을 저장하세요
+{% hint style="info" %}
+- 상품을 가져오거나 동기화할 때 세금은 상품에 연결되지 않아요.
+- 주문 하나당 서브 계정에는 거래가 한 건만 만들어져요.
+- Shopify와 동기화하면 주문 상태가 "완료" 또는 "취소됨"으로 표시돼요.
+- Shopify에서 병합된 연락처는 서브 계정에서 대표 연락처가 업데이트돼요.
+- Shopify의 SEO 정보에 변경이 없으면(기본 SEO 설정) 서브 계정에는 해당 데이터가 null로 들어와요.
+{% endhint %}
 
+## 자주 묻는 질문
 
-![Save 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035279308/original/pySvS_dv6-v1XgVd9IuTVwvZ8Eg3iSvw5Q.png?1729695846)
+### Shopify를 연결하려면 Shopify 커스텀 앱을 만들어야 하나요?
 
+새 Shopify 연결에는 가능하면 OAuth 앱 방식을 쓰세요. 이전의 커스텀 앱 방식은 Shopify 커스텀 앱을 만들고 **관리자 API 액세스 토큰**을 써야 해요. 특별히 필요한 경우가 아니라면 이 방식은 이전 설정 방법으로 보세요.
 
-1.13 저장 후 아래 이미지와 같이 "Install app"을 클릭하세요
+### 요소 가져오기와 동기화 설정은 무엇이 다른가요?
 
+**요소 가져오기**는 설정 중에 선택한 과거 Shopify 레코드를 하이퍼클래스로 가져와요. **동기화 설정**은 연결이 활성화된 이후에 선택한 Shopify 데이터를 계속 하이퍼클래스로 동기화할지 정해요.
 
-![Install app 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035279765/original/Jez2k-yblgx-Dfk1R5tXQVEeYTTMvAQ1WQ.png?1729696188)
+### 나중에 Shopify 동기화 설정을 바꿀 수 있나요?
 
+설정한 뒤에도 동기화 설정을 조정할 수 있어요. 다만 바꾸면 대체로 이후 동기화에만 영향을 줘요. 이미 가져왔거나 동기화된 데이터는 하이퍼클래스에 남아 있을 수 있어요.
 
-1.14 아래 이미지와 같이 팝업에서 "Install"을 클릭하세요
+### 어떤 Shopify 데이터를 가져오거나 동기화할 수 있나요?
 
+하이퍼클래스의 Shopify 마이그레이션 안내에는 상품, 컬렉션, 연락처, 주문, 거래 같은 지원 데이터가 나와 있어요. 사용 가능 여부는 연결 방식, Shopify 접근 권한, 선택한 설정에 따라 달라질 수 있어요.
 
-![Install 확인 팝업](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035274562/original/LQrins-fsfsZ5o6RdJTjTN31MyUG44KmPQ.png?1729693051)
+### Shopify 데이터를 워크플로우에서 쓸 수 있나요?
 
+네. 동기화된 Shopify 활동을 하이퍼클래스의 이커머스 관련 자동화에 쓸 수 있어요. 예를 들어 하이퍼클래스는 자체 이커머스 스토어와 Shopify 같은 연결된 외부 스토어를 위한 **결제 중단** 트리거를 지원해요.
 
-이제 앱이 연동할 준비가 완료되었습니다!
+### Shopify Abandoned Cart 트리거를 써도 되나요?
 
+새로 결제 중단 자동화를 만들 때는 더 새로운 이커머스 **결제 중단** 트리거를 쓰세요. 하이퍼클래스 워크플로우 트리거 안내에서는 **Shopify Abandoned Cart** 트리거를 곧 지원 중단될 트리거로 표시하고 있어요.
 
-1.15 설치 후, Shopify 연동에 필요한 "Admin API access token"은 API 자격 증명 섹션에서 찾을 수 있습니다. "Reveal token once"를 클릭하여 토큰에 접근하세요
+### 기존 커스텀 앱 Shopify 연결을 끊으면 어떻게 되나요?
 
+기존 커스텀 앱 연결은 연결되어 있는 동안 계속 작동할 수 있어요. 연결을 끊으면 현재의 OAuth 앱 방식으로 다시 연결해야 할 수 있어요.
 
-![API access token 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035274563/original/uaDkd9S1RtsNKm2vue958XKXpOqC4YuslQ.png?1729693052)
+### Shopify 스토어 이름은 어디서 확인하나요?
 
+연결하려는 Shopify 관리자 계정에 연결된 스토어 이름이나 Shopify 스토어 URL을 입력하세요. 연결을 승인하기 전에 Shopify에서 스토어 정보를 확인하세요.
 
-1.16 클립보드 아이콘을 클릭하여 "Admin API access token"을 복사하세요
+### Shopify를 연결하면 어떤 연락처 필드가 추가되나요?
 
+연동이 누적 구매액, 주문 수, 마지막·첫 주문일과 주문 금액, 고객 태그, 면세 여부, 이메일/SMS 마케팅 수신 동의(출시 예정) 필드를 자동으로 만들어요. 전체 목록은 위의 "Shopify에서 추가되는 연락처 필드"를 참고하세요.
 
-![토큰 복사](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035274567/original/lIbw63vCPHdPPpo5mvjDlfUBz9RrvaHc6g.png?1729693053)
+### 연락처 레코드에 동기화할 Shopify 필드를 고를 수 있나요?
 
+아니요. 연결된 스토어의 모든 필드가 자동으로 동기화되고, 현재 버전에서는 필드별로 선택하거나 제외하는 기능이 없어요.
 
-## 2단계: Shopify를 계정에 연결
+### Shopify 누적 구매액 필드에 다른 경로의 매출도 포함되나요?
 
-사용 방법:
-
-- **연동 접근**: 
-Shopify 연동은 하위 계정에서 다음 경로로 찾을 수 있습니다: 
-`Settings(설정) > Integration(연동) > Shopify`
-
-
-![Shopify 연동 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050249674/original/BNomncFhtx_t7mQa6Tq4se8AyFs5idiupQ.png?1753197002)
-
-- **Shopify 스토어 연결**: 
-사용자는 "connect" 버튼을 클릭하여 설정을 시작할 수 있습니다. 모달이 나타나면 첫 번째 단계로 Admin API 액세스 토큰과 유효한 Shopify 스토어 URL을 입력해야 합니다.
-
-
-![연결 설정 모달](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050250397/original/CTLVi2OkD2Q_pGZzxIdPBL3fieXKM1AVEQ.png?1753197556)
-
-- **가져올 데이터 선택**:
- 두 번째 단계에서는 Import Elements 화면으로 이동하여 Shopify 스토어에서 가져올 데이터를 선택할 수 있습니다. 가져오기 가능한 옵션은 다음과 같습니다: 
-**연락처, 주문, 거래, 상품, 컬렉션**.
-
-**데이터 재가져오기**: 데이터를 다시 가져오려면 연동을 해제한 후 다시 연결하면 초기 가져오기에서 누락된 데이터를 재가져올 수 있습니다.
-
-
-![데이터 가져오기 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050250152/original/xmcecQkcD97iu8O7AMzkc2Vv6fXIrQO1ZA.jpeg?1753197350)
-
-- **동기화 설정 구성**:
- 세 번째이자 마지막 단계에서는 Sync Settings 화면으로 이동하여 향후 Shopify에서 Hyperclass로 지속적으로 동기화할 데이터를 선택할 수 있습니다. 동기화 옵션에는 다음이 포함됩니다: 
-**연락처, 주문, 거래, 주문 제출 트리거, 결제 수신 트리거, 상품, 컬렉션**.
-
-![동기화 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050250254/original/W-aICI6xtxX_-E0kQYNmsVHvVlBYw30gNw.png?1753197429)
-
-
-- **설정 완료**:
- 가져올 요소와 동기화할 요소를 선택한 후 **저장**을 클릭하세요. 가져오기 및 동기화 프로세스가 완료되는 데 시간이 걸릴 수 있습니다.
-- **설정 관리**: 
-Shopify 연동이 성공적으로 연결되면 Shopify 스토어의 향후 주문에 대해 동기화하려는 요소를 활성화하거나 비활성화할 수 있습니다.
-
-
-![연동 관리 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035277243/original/WMC9UZReXPr_dzCylfjhn1dTsN-2ID1nTA.jpeg?1729694598)
-
----
-*원문 최종 수정: 2025년 7월 22일*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+아니요. **Shopify Lifetime Value**에는 연결된 Shopify 스토어에서 이루어진 구매만 반영돼요. 연락처의 다른 매출 수치와는 따로 관리돼요.

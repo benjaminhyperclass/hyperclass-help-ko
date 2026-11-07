@@ -1,24 +1,20 @@
 ---
-
-번역일: 2026-04-09
-카테고리: 99-리커버리
+원문: /support/solutions/articles/155000002652-how-to-use-email-template-builder-in-the-workflow-send-email-action
+번역일: 2026-11-07
+카테고리: 07-워크플로우
 ---
 
-# 워크플로우 이메일 발송 액션에서 이메일 템플릿 빌더 사용하는 방법
+# 워크플로우 Send Email(이메일 보내기) 액션에서 이메일 템플릿 빌더 사용하기
 
-[](https://youtu.be/Nrhg0vIQJKk)
+이제 워크플로우의 **Send Email**(이메일 보내기) 액션 안에서 이메일 템플릿 빌더를 바로 쓸 수 있어요. 워크플로우 화면을 벗어나지 않고 이메일 템플릿을 확인하고 편집할 수 있어요.
 
-이메일 템플릿 빌더가 이제 "이메일 발송(Send Email)" 워크플로우 액션에 통합되었습니다. 이제 워크플로우에서 직접 이메일 템플릿을 보고 편집할 수 있어요!
+]()
 
 ## 주요 장점
 
-- **간소화된 사용자 경험**: 탭을 오가며 작업하는 번거로움은 이제 안녕! 워크플로우 환경에서 바로 이메일 템플릿을 보고 편집할 수 있어 사용자 경험이 개선되고 생산성이 향상됩니다.
-- **불필요한 이동 최소화**: 여러 섹션을 오가느라 헷갈리는 일은 이제 그만! 다른 화면으로 전환할 필요가 없어져서 워크플로우 제작에만 집중할 수 있고, 빠르고 효율적인 실행이 보장됩니다.
+- **화면 이동 없이 작업해요.** 탭을 오가지 않아도 워크플로우 화면에서 이메일 템플릿을 확인하고 편집할 수 있어요. 작업이 한결 편해져요.
+- **왔다 갔다 하는 번거로움이 줄어요.** 여러 메뉴를 오가며 확인할 필요가 없어서, 워크플로우를 만드는 데 집중할 수 있어요.
 
-![워크플로우 이메일 템플릿 빌더 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155027485587/original/eUH9iKnRNZgOzHt6xe2nziHfZVfk0nvH2g.jpeg?1718120737)
+![워크플로우의 Send Email 액션 안에서 이메일 템플릿 빌더를 사용하는 화면 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155027485587/original/eUH9iKnRNZgOzHt6xe2nziHfZVfk0nvH2g.jpeg?1718120737)
 
-![이메일 템플릿 편집 인터페이스](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155027485588/original/4Dd3oLJ5dcDhnOImOBC8LmWVAwp0IiXoiQ.jpeg?1718120737)
-
----
-*원문 최종 수정: 2024년 6월 11일*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+![워크플로우의 Send Email 액션 안에서 이메일 템플릿 빌더를 사용하는 화면 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155027485588/original/4Dd3oLJ5dcDhnOImOBC8LmWVAwp0IiXoiQ.jpeg?1718120737)

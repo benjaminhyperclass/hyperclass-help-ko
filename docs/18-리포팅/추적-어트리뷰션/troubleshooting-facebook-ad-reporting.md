@@ -1,98 +1,86 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 리포팅 > 추적-어트리뷰션
+원문: /support/solutions/articles/48001220950-troubleshooting-facebook-ad-reporting
+번역일: 2026-11-06
+카테고리: 18-리포팅
 ---
 
-# 페이스북 광고 리포팅 문제 해결
+# Facebook 광고 리포팅 문제 해결
 
-페이스북 광고는 비즈니스를 홍보하는 훌륭한 방법이지만, 올바르게 설정되어 있는지 확인해야 합니다. 적절한 설정이 없다면 비용 손실과 시간 낭비로 이어질 수 있습니다.
+Facebook 광고는 사업을 알리기에 좋은 방법이지만, 설정이 맞지 않으면 비용과 시간이 낭비될 수 있어요. 이 문서에서는 Facebook 광고 설정을 점검하는 방법 5가지를 안내해요.
 
-이 가이드에서는 페이스북 광고 설정을 점검하여 최대한의 성과를 얻는 방법을 알려드립니다.
+## Facebook 광고 리포팅 설정 점검하기
 
-다루는 내용:
+### 1. Facebook 광고 계정 연동이 활성 상태여야 해요
 
-#### 페이스북 광고 리포팅 설정 문제 해결 방법:
+서브 계정의 **설정 > 연동**에 연결한 Facebook 광고 계정에 [관리자 권한](https://web.facebook.com/business/help/1588743581429919?id=735435806665862&_rdc=1&_rdr#:~:text=Note%20that%20you%20must%20be%20an%20admin%20of%20the%20Facebook%20Page%20and%20have%20leads%20access%20permissions%20in%20order%20to%20connect%20a%20CRM%20system.)이 있는지 확인하세요.
 
-1. 페이스북 광고 계정 연동이 활성화되어 있어야 함
-2. UTM 추적 템플릿은 대상(Destination)이 아닌 추적(Tracking)에 추가해야 함
-3. 페이스북 광고, 광고 세트, 캠페인 이름의 고유성이 필요함
-4. 페이스북 광고 캠페인, 광고 세트, 광고를 변경해도 UTM 매개변수 복사본에는 영향을 주지 않으며, 기존 매개변수로 어트리뷰션됨
-5. 페이스북 리드 폼 매핑(Facebook Lead Form Mapping) 연결 시 올바른 페이스북 페이지를 선택해야 함
+{% hint style="info" %}
+하이퍼클래스 **연동** 화면에 내 페이지가 보이지 않나요? 'CRM 접근 권한 지정 방법' 문서를 확인해 보세요.
 
-## 페이스북 광고 리포팅 설정 문제 해결 방법:
+본인이 Facebook 관리자가 맞다면, 아래 내용을 따라 **기본 제공 서비스**에 접근할 수 있는지, 그리고 내 페이지에 대한 접근을 허용할 수 있는지 확인해 보세요.
+{% endhint %}
 
-### 1. 페이스북 광고 계정 연동이 활성화되어 있어야 함
+Meta 광고 관리자에서 Facebook 페이지와 Instagram 계정으로 광고하려면 다음이 필요해요.
 
-하위 계정 > Settings(설정) > Integrations(연동)에서 연결된 페이스북 광고 계정이 [관리자 권한](https://web.facebook.com/business/help/1588743581429919?id=735435806665862&_rdc=1&_rdr#:~:text=Note%20that%20you%20must%20be%20an%20admin%20of%20the%20Facebook%20Page%20and%20have%20leads%20access%20permissions%20in%20order%20to%20connect%20a%20CRM%20system.)을 가지고 있는지 확인해야 합니다.
+광고 계정에는 계정을 관리하는 데 쓰는 관리자 권한이 3가지 있어요. 다른 사람에게 광고 계정 접근 권한을 줄 때는 역할을 지정해서 그 사람이 할 수 있는 일과 볼 수 있는 내용을 정해요. 아래 표는 광고 계정 역할 3가지(가로)와 각 역할이 할 수 있는 일(세로)을 정리한 거예요.
 
-참고사항:
+![광고 계정 역할별 권한 표](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48248640131/original/i4b0NyjU-xcO7XDQpNq_pAs_KhnqHRGR3Q.png?1662042909)
 
-CRM의 연동 섹션에서 페이지가 보이지 않는다면 [CRM 액세스 할당 방법](https://web.facebook.com/business/help/1588743581429919?id=735435806665862&_rdc=1&_rdr#:~:text=Note%20that%20you%20must%20be%20an%20admin%20of%20the%20Facebook%20Page%20and%20have%20leads%20access%20permissions%20in%20order%20to%20connect%20a%20CRM%20system.)을 확인하세요. [페이스북 관리자인데도 문제가 있다면, Lead Connector가 접근 가능하고 페이지 액세스를 허용할 수 있는지 확인해보세요.](../../05-기회-파이프라인/기타/facebook-lead-ad-integration.md)
+{% hint style="info" %}
+페이지 관리자여야 해요. 아니라면 페이지 관리자에게 페이지 관리자(권장), 편집자, 운영자, 광고주, 채용 관리자 중 하나의 역할을 지정해 달라고 요청하세요. 새로운 페이지 환경으로 전환했고 작업 접근 권한이 있다면 광고 관리자나 Meta Business Suite에서 광고를 관리할 수 있어요.
+{% endhint %}
 
-Meta 광고 관리자에서 페이스북 페이지와 인스타그램 계정에 광고하려면 다음이 필요합니다:
+### 2. UTM 추적 템플릿은 **Destination**(대상)이 아니라 **Tracking**(추적)에 추가하세요
 
-광고 계정에는 계정 관리를 돕는 3가지 유형의 관리자 권한이 있습니다. 누군가에게 광고 계정 액세스 권한을 부여할 때, 역할을 할당하여 그들이 할 수 있는 작업이나 볼 수 있는 내용을 선택합니다. 아래 표는 3가지 광고 계정 역할(가로)과 각각이 할 수 있는 작업(세로)을 보여줍니다:
+추가 자료: Facebook 광고 리포팅 설정 방법
 
-![페이스북 광고 계정 권한 표](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48248640131/original/i4b0NyjU-xcO7XDQpNq_pAs_KhnqHRGR3Q.png?1662042909)
+![UTM 추적 템플릿을 추가하는 위치](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48247908119/original/hfjpXumheRhCLWFfZsAOubs4t7ZjtSS_Lw.jpeg?1661784949)
 
-참고사항:
+### 3. Facebook 광고, 광고 세트, 캠페인의 이름은 고유해야 해요
 
-페이지 관리자이거나 페이지 관리자에게 [페이지 관리자(권장), 편집자, 조정자, 광고주 또는 채용 담당자 역할을 할당](https://www.facebook.com/help/187316341316631?helpref=faq_content)받아야 합니다.
+이름이 고유하지 않으면 Facebook 광고 리포트에서 서로 다른 광고 세트·광고에 같은 연락처가 중복으로 나타나요.
 
-참고: [새로운 페이지 경험으로 전환하고 작업 액세스 권한](https://www.facebook.com/business/help/1101781386943864)이 있다면, 광고 관리자나 Meta 비즈니스 스위트에서 광고를 관리할 수 있습니다.
+이렇게 설정하면 안 돼요:
 
-### 2. UTM 추적 템플릿은 대상(Destination)이 아닌 추적(Tracking)에 추가해야 함
+|  |  |  |
+| --- | --- | --- |
+| **캠페인 이름** | 마을에 새로 생긴 식당 |  |
+| **캠페인 ID** | 12345 |  |
+| **Ad Set**(광고 세트) | 요리 1 |  |
+| **광고** |  | 신선한 레드 파스타 |
+|  | 요리 2 |  |
+| **광고** |  | 신선한 레드 파스타 |
 
-추가 참고자료 - [페이스북 광고 리포팅 설정 방법](how-to-set-up-facebook-ad-reporting.md)
+이 예시에서 연락처 A는 유료 검색으로 생성돼요. 그러면 연락처 A는 Facebook 광고 리포팅의 **리드** 열에서 서로 다른 두 광고 세트의 Nike Sport Shoes 1이라는 광고에 모두 나타나요.
 
-![UTM 추적 설정 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48247908119/original/hfjpXumheRhCLWFfZsAOubs4t7ZjtSS_Lw.jpeg?1661784949)
-
-### 3. 페이스북 광고, 광고 세트, 캠페인 이름의 고유성이 필요함
-
-이름이 고유하지 않으면 페이스북 광고의 서로 다른 광고 세트/광고에서 연락처의 중복 항목이 표시됩니다.
-
-잘못된 설정 예시:
-
-| 캠페인 이름 | New Restaurant in Town |
-|------------|------------------------|
-| 캠페인 ID | 12345 |
-| 광고 세트 | Dish 1 |
-| 광고 | Fresh Red Pasta |
-| 광고 세트 | Dish 2 |
-| 광고 | Fresh Red Pasta |
-
-이 예시에서는 고객 A가 유료 검색으로 생성됩니다. 고객 A는 두 개의 서로 다른 광고 세트에서 Nike Sport Shoes 1이라는 이름의 광고의 페이스북 광고 리포팅 리드 열에 나타날 것입니다.
-
-https://example.com?utm_source=fb_ad&utm_medium={dish1}&utm_campaign={newrestaurantintown}&utm_content={freshredpasta}&campaign_id={12345}
+```
+https//example.com?utm_source=fb_ad&utm_medium={dish1}&utm_campaign={newrestaurantintown}&utm_content={freshredpasta}&campaign_id={12345}
+```
 
 올바른 설정:
 
-| 캠페인 이름 | New Restaurant in Town |
-|------------|------------------------|
-| 캠페인 ID | 12345 |
-| 광고 세트 | Dish 1 Starter |
-| 광고 | 1.1 Fresh Red Pasta with extra sauce |
-| 광고 세트 | Dish 2 Main Course |
-| 광고 | 2.1 Fresh Red Pasta with no sauce |
+|  |  |  |
+| --- | --- | --- |
+| **캠페인 이름** | 마을에 새로 생긴 식당 |  |
+| **캠페인 ID** | 12345 |  |
+| **Ad Set** | 요리 1 전채 |  |
+| **광고** |  | 1.1 추가 소스를 곁들인 신선한 레드 파스타 |
+|  | 요리 2 메인 코스 |  |
+| **광고** |  | 2.1 소스 없는 신선한 레드 파스타 |
 
-### 4. 페이스북 광고 캠페인, 광고 세트, 광고 이름을 변경해도 UTM 매개변수 복사본에는 영향을 주지 않으며, 기존 매개변수로 어트리뷰션됩니다
+### 4. Facebook 캠페인·광고 세트·광고 이름을 바꿔도 Facebook 광고 측 UTM에는 반영되지 않아요. 이전 파라미터로 집계돼요
 
-새로운 캠페인, 광고 세트, 광고를 생성하는 것을 권장합니다. CRM의 페이스북 광고 리포팅 목록 보기에서는 이름이 업데이트되지만, UTM이 여전히 이전 캠페인, 광고 세트, 광고와 연결되어 있어 판매, 리드, ROI 어트리뷰션이 중단됩니다.
+새 캠페인, 광고 세트, 광고를 만드는 것을 권장해요. 하이퍼클래스의 Facebook 광고 리포팅 **목록 보기**에는 바뀐 이름이 반영돼요. 하지만 UTM이 여전히 이전 캠페인, 광고 세트, 광고에 연결되어 있어서 매출, 리드, ROI가 더 이상 집계되지 않아요.
 
-- 캠페인/광고 세트/광고의 수명 기간 동안 이름 매개변수는 변경할 수 없습니다. 이름을 변경해야 한다면 다른 캠페인/광고 세트/광고를 생성하세요.
-- 캠페인/광고 세트/광고 이름을 변경하기로 결정했지만 새 캠페인을 생성하지 않는다면, CRM 시스템의 데이터는 계속해서 원래/첫 번째 캠페인을 참조합니다. [페이스북 광고는 매개변수에서 이전 이름을 제공합니다]
+- 캠페인/광고 세트/광고를 운영하는 동안에는 이름 파라미터를 바꿀 수 없어요. 이름을 바꿔야 한다면 다른 캠페인/광고 세트/광고를 새로 만드세요.
+- 캠페인/광고 세트/광고 이름을 바꾸고 새 캠페인은 만들지 않으면, 하이퍼클래스의 데이터는 계속 처음 만든 캠페인을 가리켜요. (Facebook 광고가 파라미터로 이전 이름을 전달하기 때문이에요.)
 
-### 5. 페이스북 리드 폼 매핑(Facebook Lead Form Mapping) 연결 시 올바른 페이스북 페이지를 선택해야 함
+### 5. [**Facebook Lead Form Mapping**(Facebook 리드 폼 매핑)](../../42-통합/Facebook-Integration/facebook-lead-ad-integration-troubleshooting-guide.md)을 연결할 때는 올바른 Facebook 페이지를 선택해야 해요
 
-페이스북 폼 리드를 수집하려면 활성화로 매핑해야 합니다.
+Facebook 폼에서 리드를 수집하려면 매핑을 활성 상태로 설정해야 해요.
 
-참고사항:
-
-- 텍스트 필드와 커스텀 필드는 쉽게 매핑할 수 있습니다
-- 라디오 버튼 커스텀 필드는 페이스북 리드 폼과 매핑할 수 없습니다
-- 시간대(Timezone) 필드는 매핑할 수 없습니다
-
----
-*원문 최종 수정: Mon, 19 Sep, 2022 at 9:56 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+{% hint style="info" %}
+- 텍스트 필드와 커스텀 필드는 쉽게 매핑할 수 있어요.
+- 라디오 커스텀 필드는 Facebook 리드 폼과 매핑할 수 없어요.
+- **Timezone**(시간대) 필드는 매핑할 수 없어요.
+{% endhint %}

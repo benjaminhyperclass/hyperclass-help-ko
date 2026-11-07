@@ -1,125 +1,156 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 16-SaaS-설정 > Saas Mode
+원문: /support/solutions/articles/48001237982-workflow-date-time-formatter-action
+번역일: 2026-11-06
+카테고리: 16-SaaS-설정
 ---
 
-# 워크플로우 - 날짜/시간 포맷터 액션
+# 워크플로우 액션 — Date/Time Formatter(날짜/시간 포맷터)
 
-날짜/시간 포맷터 액션을 사용하면 요구사항에 맞게 날짜 또는 날짜와 시간의 형식을 변경할 수 있습니다. 또한 이 액션을 통해 날짜를 비교할 수도 있습니다.
+**Date/Time Formatter**(날짜/시간 포맷터) 액션을 쓰면 날짜나 날짜·시간의 표시 형식을 원하는 대로 바꿀 수 있어요. 두 날짜를 비교하는 것도 이 액션으로 할 수 있어요.
 
-목차
-- 날짜 형식 변경
-- 날짜와 시간 형식 변경  
-- 날짜 비교
+이 액션에는 세 가지 유형이 있어요.
 
-![워크플로우 날짜/시간 포맷터 액션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48293485600/original/mQC3q6W5GkDW_Um06RXgC_HIQuOXyamprA.png?1681915820)
+- **Format Date**(날짜 형식 변환)
+- **Format Date and Time**(날짜·시간 형식 변환)
+- **Compare Dates**(날짜 비교)
 
-## 날짜 형식을 변경하는 방법
-
-### 한 날짜 형식에서 다른 형식으로 날짜 구조를 변환합니다.
-
-필드(Field):
-특정 날짜, 현재 날짜, 연락처의 날짜 필드나 날짜 타입 커스텀 필드, 예약 시작/종료 날짜, 커스텀 값, 또는 인바운드 웹훅 트리거 중 아무 날짜 필드나 선택할 수 있습니다.
-
-![날짜 필드 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48293499588/original/_1utIHUqHXOqAPs92BiTwpZww4BQsBrujQ.png?1681918643)
-
-원래 형식(From Format):
-특정 날짜, 현재 날짜, 연락처의 날짜 타입 표준 필드, 연락처의 날짜 타입 커스텀 필드, 또는 예약 시작/종료 날짜 같은 시스템 필드를 선택하면 형식이 자동으로 감지되어 미리 선택됩니다. 커스텀 값이나 인바운드 웹훅 트리거의 경우에는 정확히 일치하는 형식을 직접 선택해야 합니다.
-
-![원래 형식 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48293500391/original/1Kd6PUZXtT4AOQFWbBLkT2LOImgrmYP82g.png?1681918843)
-
-### 변경할 형식(To Format):
-목록에서 필요한 형식을 선택하세요
-
-![변경할 형식 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48293500697/original/Dlds7-wpcq09sncoJ5Yj3LJkGMkityYRNw.png?1681918918)
-
-### 출력 결과
-
-날짜 형식 변경을 설정한 후, 워크플로우의 다음 액션에서 결과를 사용할 수 있습니다: {{datetime_formatter.1.date}}
-
-커스텀 값
-
-![커스텀 값 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48293485199/original/i57GTs9YqhKeBH6jHV9SZ8b70o9BHxFqhA.png?1681915720)
-
-## 날짜와 시간 형식 변경
-
-날짜와 시간 구조를 한 형식에서 다른 형식으로 변환합니다.
-
-### 필드(Field):
-특정 날짜와 시간, 현재 날짜와 시간, 예약 시작 또는 종료 날짜 시간, 커스텀 값, 또는 인바운드 웹훅 트리거 중 아무 날짜-시간 필드나 선택할 수 있습니다.
-
-참고사항:
-현재 연락처 커스텀 필드는 날짜 시간 구조를 지원하지 않습니다.
-
-![날짜 시간 필드 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48293501865/original/vobWnYp1Evzld6XXk5ZHrhnEfHKOqONeag.png?1681919224)
-
-### 원래 형식(From Format):
-특정 날짜와 시간, 현재 날짜와 시간, 연락처 필드, 또는 예약 시작/종료 날짜 시간 같은 시스템 필드를 선택하면 형식이 자동으로 감지되어 미리 선택됩니다. 커스텀 값이나 인바운드 웹훅 트리거의 경우에는 정확히 일치하는 형식을 직접 선택해야 합니다.
-
-![원래 형식 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48293485200/original/ADCn7ZI9KM1XNRCewnqcX2MQFhLod3cGOA.png?1681915720)
-
-### 변경할 형식(To Format):
-목록에서 필요한 형식을 선택하세요
-
-![변경할 형식 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48293502392/original/Hx6KmKS9a_LsIT3YPR28n1I5snd_5T-VHQ.png?1681919362)
-
-### 출력 결과
-
-날짜와 시간 형식 변경을 설정한 후, 워크플로우의 다음 액션에서 결과를 사용할 수 있습니다.
-
-{{datetime_formatter.1.datetime}}
-
-커스텀 값
-
-![커스텀 값 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48293502719/original/RafxrtJSJwOrKgFMTiiXu_QDJ3l8oFEzQQ.png?1681919449)
-
-## 날짜 비교
-
-두 날짜를 비교하여 일 수 차이를 계산합니다.
-
-### 시작 날짜(Start Date):
-특정 날짜, 현재 날짜, 연락처의 날짜 필드나 날짜 타입 커스텀 필드, 예약 시작/종료 날짜, 커스텀 값, 또는 인바운드 웹훅 트리거 중 아무 날짜 필드나 선택할 수 있습니다.
-
-![시작 날짜 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48293485206/original/pu4iIap9Yhth5gOEcLZ9F3bCAtyj-bLduw.png?1681915721)
-
-### 시작 날짜 형식(Start Date Format):
-특정 날짜, 현재 날짜, 연락처의 날짜 타입 표준 필드, 연락처의 날짜 타입 커스텀 필드, 또는 예약 시작/종료 날짜 같은 시스템 필드를 선택하면 형식이 자동으로 감지되어 미리 선택됩니다. 커스텀 값이나 인바운드 웹훅 트리거의 경우에는 정확히 일치하는 형식을 직접 선택해야 합니다.
-
-![시작 날짜 형식 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48293485196/original/x1alZjEhaa3Bcvql1AKt9urx0eoKr9Iu1A.png?1681915720)
-
-### 종료 날짜(End Date):
-특정 날짜, 현재 날짜, 연락처의 날짜 필드나 날짜 타입 커스텀 필드, 예약 시작/종료 날짜, 커스텀 값, 또는 인바운드 웹훅 트리거 중 아무 날짜 필드나 선택할 수 있습니다.
-
-![종료 날짜 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48293485191/original/c1isR7MZKKuBytIQEFfAeVzdZHE0ST9idw.png?1681915720)
-
-#### 종료 날짜 형식(End Date Format):
-특정 날짜, 현재 날짜, 연락처의 날짜 타입 표준 필드, 연락처의 날짜 타입 커스텀 필드, 또는 예약 시작/종료 날짜 같은 시스템 필드를 선택하면 형식이 자동으로 감지되어 미리 선택됩니다. 커스텀 값이나 인바운드 웹훅 트리거의 경우에는 정확히 일치하는 형식을 직접 선택해야 합니다.
-
-![종료 날짜 형식 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48293485194/original/ms1zccoNhkzIk47RIxyB0Im3qaF2PHsP-w.png?1681915720)
-
-### 출력 결과
-
-날짜 비교를 설정한 후, 워크플로우의 다음 액션에서 결과를 사용할 수 있습니다: {{datetime_formatter.1.days}}
-
-차이는 종료 날짜 - 시작 날짜로 계산되므로, 시작 날짜가 종료 날짜보다 클 경우 음수 값을 얻게 됩니다.
-
-커스텀 값
-
-![커스텀 값 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48293485195/original/TQD4-jxcpOu4EmXENgwAN5WSqddc-uaBag.png?1681915720)
-
-## 사용 예시
-
-- 인바운드 웹훅 트리거 데이터의 형식을 변경하여 이벤트 시작 날짜를 설정하거나, 연락처 커스텀 필드를 업데이트하거나, If/Else 조건에서 비교하는 용도로 활용
-- 날짜 형식이 MM/DD/YYYY인데, 날짜를 DD/MM/YYYY 형식으로 받는 앱에 전송해야 하는 경우, 날짜/시간 포맷터로 날짜 형식을 변경한 후 커스텀 웹훅으로 전송 가능
-- 커스텀 형식의 날짜 시간 정보를 구글 시트에 저장
-- 커스텀 형식의 날짜 시간 정보를 이메일/SMS/Slack에 사용
-- 현재 날짜(시작 날짜)와 인보이스 마감일(종료 날짜)을 비교하여 이메일/SMS/Slack에서 동적 값 사용
-  예시: 인보이스 마감일이 {{datetime_formatter.1.days}}일 남았습니다.
-
-참고사항:
-연체된 경우, 즉 현재 날짜(시작 날짜)가 인보이스 마감일(종료 날짜)보다 클 때는 결과가 음수 값으로 나타납니다.
+![Date/Time Formatter 액션 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48293485600/original/mQC3q6W5GkDW_Um06RXgC_HIQuOXyamprA.png?1681915820)
 
 ---
-*원문 최종 수정: Tue, 16 Jan, 2024 at 4:49 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+
+## 날짜 형식 바꾸기 (Format Date)
+
+날짜의 형식을 다른 형식으로 바꿀 때 사용해요.
+
+### Field
+
+**Field**(필드)에서 형식을 바꿀 날짜 필드를 선택하세요. 선택할 수 있는 항목은 다음과 같아요.
+
+- **Specific Date**(특정 날짜)
+- **Current Date**(현재 날짜)
+- 연락처의 날짜 필드, 날짜 유형 커스텀 필드
+- 예약 시작·종료 날짜
+- 커스텀 값
+- **Inbound Webhook Trigger**(수신 웹훅 트리거)
+
+### From Format
+
+**From Format**(변경 전 형식)은 현재 날짜가 어떤 형식인지 알려 주는 항목이에요.
+
+**Specific Date**, **Current Date**, 연락처의 날짜 유형 기본 필드, 연락처의 날짜 유형 커스텀 필드, 예약 시작·종료 날짜를 선택하면 형식을 자동으로 인식해서 미리 선택해 줘요. 커스텀 값이나 **Inbound Webhook Trigger**의 값을 선택했다면 값과 정확히 일치하는 형식을 직접 골라야 해요.
+
+### To Format
+
+**To Format**(변경 후 형식)에서 원하는 형식을 목록에서 선택하세요.
+
+![To Format 목록에서 형식 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48293500697/original/Dlds7-wpcq09sncoJ5Yj3LJkGMkityYRNw.png?1681918918)
+
+### Output
+
+**Format Date** 설정을 마치면 결과를 워크플로우의 다음 액션에서 사용할 수 있어요. 결과 값은 `{{datetime_formatter.1.date}}` 로 불러와요.
+
+**Custom Values**(커스텀 값)
+
+---
+
+## 날짜와 시간 형식 바꾸기 (Format Date and Time)
+
+날짜와 시간의 형식을 다른 형식으로 바꿀 때 사용해요.
+
+### Field
+
+**Field**에서 형식을 바꿀 날짜·시간 필드를 선택하세요. 선택할 수 있는 항목은 다음과 같아요.
+
+- **Specific Date and Time**(특정 날짜 및 시간)
+- **Current Date and Time**(현재 날짜 및 시간)
+- 예약 시작·종료 날짜와 시간
+- 커스텀 값
+- **Inbound Webhook Trigger**
+
+{% hint style="info" %}
+현재 연락처 커스텀 필드는 날짜·시간 형식을 지원하지 않아요.
+{% endhint %}
+
+![Field에서 날짜·시간 필드 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48293501865/original/vobWnYp1Evzld6XXk5ZHrhnEfHKOqONeag.png?1681919224)
+
+### From Format
+
+**Specific Date and Time**, **Current Date and Time**, 연락처 필드, 예약 시작·종료 날짜와 시간을 선택하면 형식을 자동으로 인식해서 미리 선택해 줘요. 커스텀 값이나 **Inbound Webhook Trigger**의 값을 선택했다면 값과 정확히 일치하는 형식을 직접 골라야 해요.
+
+![From Format 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48293485200/original/ADCn7ZI9KM1XNRCewnqcX2MQFhLod3cGOA.png?1681915720)
+
+### To Format
+
+목록에서 원하는 형식을 선택하세요.
+
+![To Format 목록에서 형식 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48293502392/original/Hx6KmKS9a_LsIT3YPR28n1I5snd_5T-VHQ.png?1681919362)
+
+### Output
+
+**Format Date and Time** 설정을 마치면 결과를 워크플로우의 다음 액션에서 사용할 수 있어요. 결과 값은 `{{datetime_formatter.1.datetime}}` 로 불러와요.
+
+**Custom Values**
+
+![Output 결과 값 사용 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48293502719/original/RafxrtJSJwOrKgFMTiiXu_QDJ3l8oFEzQQ.png?1681919449)
+
+---
+
+## 날짜 비교하기 (Compare Dates)
+
+두 날짜를 비교해서 그 차이를 일 수로 구할 때 사용해요.
+
+### Start Date
+
+**Start Date**(시작일)에서 날짜 필드를 선택하세요. 선택할 수 있는 항목은 다음과 같아요.
+
+- **Specific Date**
+- **Current Date**
+- 연락처의 날짜 필드, 날짜 유형 커스텀 필드
+- 예약 시작·종료 날짜
+- 커스텀 값
+- **Inbound Webhook Trigger**
+
+![Start Date 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48293485206/original/pu4iIap9Yhth5gOEcLZ9F3bCAtyj-bLduw.png?1681915721)
+
+### Start Date Format
+
+**Specific Date**, **Current Date**, 연락처의 날짜 유형 기본 필드, 연락처의 날짜 유형 커스텀 필드, 예약 시작·종료 날짜를 선택하면 형식을 자동으로 인식해서 미리 선택해 줘요. 커스텀 값이나 **Inbound Webhook Trigger**의 값을 선택했다면 값과 정확히 일치하는 형식을 직접 골라야 해요.
+
+![Start Date Format 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48293485196/original/x1alZjEhaa3Bcvql1AKt9urx0eoKr9Iu1A.png?1681915720)
+
+### End Date
+
+**End Date**(종료일)에서 날짜 필드를 선택하세요. 선택할 수 있는 항목은 **Start Date**와 같아요.
+
+![End Date 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48293485191/original/c1isR7MZKKuBytIQEFfAeVzdZHE0ST9idw.png?1681915720)
+
+### End Date Format
+
+**Specific Date**, **Current Date**, 연락처의 날짜 유형 기본 필드, 연락처의 날짜 유형 커스텀 필드, 예약 시작·종료 날짜를 선택하면 형식을 자동으로 인식해서 미리 선택해 줘요. 커스텀 값이나 **Inbound Webhook Trigger**의 값을 선택했다면 값과 정확히 일치하는 형식을 직접 골라야 해요.
+
+![End Date Format 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48293485194/original/ms1zccoNhkzIk47RIxyB0Im3qaF2PHsP-w.png?1681915720)
+
+### Output
+
+**Compare Dates** 설정을 마치면 결과를 워크플로우의 다음 액션에서 사용할 수 있어요. 결과 값은 `{{datetime_formatter.1.days}}` 로 불러와요.
+
+차이는 **End Date** − **Start Date**로 계산해요. 그래서 **Start Date**가 **End Date**보다 늦은 날짜면 결과가 음수로 나와요.
+
+**Custom Values**
+
+![Output 결과 값 사용 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48293485195/original/TQD4-jxcpOu4EmXENgwAN5WSqddc-uaBag.png?1681915720)
+
+---
+
+## 활용 예시
+
+- **Inbound Webhook Trigger**로 들어온 데이터의 형식을 바꿔서 **Set Event Start Date**(이벤트 시작 날짜 설정)에 쓰거나, 연락처 커스텀 필드를 업데이트하거나, **If/Else** 조건에서 비교할 수 있어요.
+- 날짜 형식이 MM/DD/YYYY인데, 날짜를 DD/MM/YYYY 형식으로 받는 앱에 보내야 한다고 해 볼게요. 이때 **Date/Time Formatter**로 형식을 바꾼 뒤 **Custom Webhook**(커스텀 웹훅)으로 보내면 돼요.
+- 원하는 형식으로 바꾼 날짜·시간 정보를 Google Sheets에 저장할 수 있어요.
+- 원하는 형식으로 바꾼 날짜·시간 정보를 이메일, SMS, Slack 메시지에 쓸 수 있어요.
+- 현재 날짜(**Start Date**)와 인보이스 만기일(**End Date**)을 비교해서, 그 값을 이메일, SMS, Slack 메시지에 쓸 수 있어요.
+  예: `인보이스 만기까지 {{datetime_formatter.1.days}}일 남았습니다.`
+
+{% hint style="info" %}
+만기일이 지나서 현재 날짜(**Start Date**)가 인보이스 만기일(**End Date**)보다 늦으면 결과가 음수로 나와요.
+{% endhint %}

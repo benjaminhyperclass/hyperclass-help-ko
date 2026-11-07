@@ -1,62 +1,43 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 07-워크플로우 > Contact Workflow Actions
+원문: /support/solutions/articles/155000003425-workflow-actions-add-contact-follower
+번역일: 2026-11-07
+카테고리: 07-워크플로우
 ---
 
-# 워크플로우 액션 - 연락처 팔로워 추가
+# 워크플로우 액션 — Add Contact Follower(연락처 팔로워 추가)
 
-**목차**
+**Add Contact Follower**(연락처 팔로워 추가) 액션은 연락처에 팔로워를 자동으로 추가해 줘요. 이미 만들어 둔 워크플로우에 넣으면 팔로워를 더 쉽게 관리할 수 있어요.
 
-- [개요](#개요)
-- [액션명](#액션명)
-- [액션 설명](#액션-설명)
-- [설정 방법](#설정-방법)
-- [예시](#예시)
+## 액션 이름
 
-## 개요
-
-"연락처 팔로워 추가(Add Contact Followers)" 워크플로우 액션을 활용하여 연락처에 팔로워를 자동으로 추가할 수 있습니다. 이 액션을 기존 워크플로우에 추가하면 비즈니스의 팔로워 관리가 더욱 편리해집니다.
-
-## 액션명
-
-Add Contact Follower (연락처 팔로워 추가)
+**Add Contact Follower**
 
 ## 액션 설명
 
-연락처 팔로워 추가 액션을 통해 연락처 프로필에 한 명 또는 여러 명의 팔로워를 추가할 수 있습니다.
+**Add Contact Follower** 액션을 쓰면 연락처 프로필에 팔로워를 한 명 이상 추가할 수 있어요.
 
 ## 설정 방법
 
-### 1단계:
+1. **Contact**(연락처) 카테고리에서 **Add Contact Follower** 액션을 선택하세요.
 
-"Contact(연락처)" 카테고리에서 "Add Contact Follower(연락처 팔로워 추가)" 워크플로우 액션을 선택하세요.
+   ![액션 목록의 Contact 카테고리에서 Add Contact Follower 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032724839/original/GGSp1c2mkTQnM8wLBwxDDCi6MgickGoAHg.png?1726125546)
 
-![연락처 팔로워 추가 액션 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032724839/original/GGSp1c2mkTQnM8wLBwxDDCi6MgickGoAHg.png?1726125546)
+2. **Add Contact Follower** 액션으로 연락처에 팔로워를 한 명 이상 추가하세요.
 
-### 2단계:
-
-"Add contact Follower(연락처 팔로워 추가)" 액션을 사용하여 연락처에 한 명 또는 여러 명의 팔로워를 추가하세요.
-
-![연락처 팔로워 추가 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032724846/original/cKo1OaZnrPkGS4q-M0CpxB85WYqB_sINUQ.jpeg?1726125546)
+   ![Add Contact Follower 액션 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032724846/original/cKo1OaZnrPkGS4q-M0CpxB85WYqB_sINUQ.jpeg?1726125546)
 
 ## 예시
 
-**시나리오: 영업팀 협업**
+상황: 영업팀 협업
 
-**목표:** 연락처가 폼을 제출했을 때 팔로워가 자동으로 배정되도록 하려고 합니다.
+목표: 연락처가 폼을 제출할 때마다 팔로워가 지정되도록 하고 싶어요.
 
-**워크플로우 단계:**
+워크플로우 구성:
 
-**트리거:**
-- Form Submitted(폼 제출) - 시스템에 고가치 리드가 생성될 때 워크플로우가 시작됩니다.
+- 트리거
+  - **Form Submitted**(폼 제출): 시스템에서 가치가 높은 리드가 만들어지면 워크플로우가 시작돼요.- 액션
+  - **Add Contact Follower**: 워크플로우에 이 액션을 추가하고, 드롭다운에서 팔로워를 선택해요.
 
-**액션:**
-- **Add Contact Follower(연락처 팔로워 추가)** - 워크플로우에 연락처 팔로워 추가 액션을 추가하고 드롭다운에서 팔로워를 선택합니다.
+결과:
 
-**결과:**
-- 고가치 리드가 생성되면 영업 담당자와 계정 매니저가 자동으로 팔로워로 추가됩니다.
-
----
-*원문 최종 수정: 2024년 9월 12일*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+- 가치가 높은 리드가 만들어지면 영업 담당자와 어카운트 매니저가 팔로워로 자동 추가돼요.

@@ -1,484 +1,415 @@
 ---
-원문: >-
-  https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000006579-rentals-create-edit-listings
-번역일: 2026-08-11T00:00:00.000Z
-카테고리: 04-캘린더-예약 > 렌탈
+원문: /support/solutions/articles/155000006579-rentals-create-edit-listings
+번역일: 2026-11-06
+카테고리: 04-캘린더-예약
 ---
 
-# 렌탈 리스팅 생성 및 편집
+# 대여 리스팅 만들기와 편집
 
-## 렌탈 리스팅 생성 및 편집
+**대여**(Rentals)에서 리스팅을 만들고 편집하는 방법을 안내해요. 간단한 정보만 넣는 빠른 만들기 창부터 재고, 배리언트, 가격, 예약 옵션, 캘린더 동기화 같은 세부 설정까지 모두 다뤄요.
 
-이 아티클에서는 렌탈(Rentals)에서 **리스팅을 생성하고 편집하는 방법**을 안내해 드려요. 빠른 생성 모달에서 기본 정보를 추가하는 방법부터 재고, 변형(Variants), 가격, 예약 옵션, 캘린더 동기화 같은 고급 설정까지 모두 다룹니다.
+## 리스팅 만들기와 편집 개요
 
-***
+리스팅은 대여 설정의 기본 단위예요. 리스팅 하나가 자동차, 숙소, 장비처럼 빌려줄 수 있는 품목 하나를 나타내요. 가격, 대여 기간, 재고 같은 관련 정보도 모두 리스팅에 담겨요.
 
-**목차**
+**New Listing**(새 리스팅) 창에서 리스팅을 빠르게 만들 수 있어요. 이후 **Edit Listing**(리스팅 편집) 페이지의 여러 탭에서 더 세부적인 설정을 할 수 있어요.
 
-* [리스팅 생성 및 편집 개요](rentals-create-edit-listings.md#Overview-of-Creating-and-Editing-Listings)
-* [새 리스팅은 어떻게 만드나요?](rentals-create-edit-listings.md#How-to-Create-a-New-Listing?)
-* [리스팅 편집하기](rentals-create-edit-listings.md#Editing-a-Listing )
-* [일반 정보](rentals-create-edit-listings.md#General-Information)
-* [재고 및 가격](rentals-create-edit-listings.md#Inventory-&-Pricing)
-* [가격](rentals-create-edit-listings.md#Pricing)
-* [예약 설정](rentals-create-edit-listings.md#Booking-Settings)
-* [캘린더 동기화](rentals-create-edit-listings.md#Calendar-Sync)
-* [저장 및 발행](rentals-create-edit-listings.md#Save-and-Publish)
-* [자주 묻는 질문](rentals-create-edit-listings.md#Frequently-Asked-Questions)
-* [관련 아티클](rentals-create-edit-listings.md#Related-Articles)
+---
 
-***
+## 새 리스팅 만들기
 
-## 리스팅 생성 및 편집 개요
+새 리스팅은 다음 순서로 만들어요.
 
-리스팅은 렌탈 설정의 기초예요. 각 리스팅은 자동차, 부동산, 장비 등 대여 가능한 하나의 항목을 나타내며, 가격, 대여 기간, 재고 현황 등 관련된 모든 세부 정보를 포함해요.
+#### 1단계: 리스팅으로 이동
 
-\*\*새 리스팅 모달(New Listing modal)\*\*을 사용해 빠르게 리스팅을 생성한 후, **리스팅 편집(Edit Listing) 페이지**에서 여러 탭을 통해 더 상세한 설정을 할 수 있어요.
+**캘린더 > 캘린더 설정 > 대여 > 리스팅**으로 이동하세요.
 
-***
+![리스팅 목록 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056000388/original/GfMNnfAwFrHwL-KkzR5YEVKijP0lMR71GA.png?1760476565)
 
-### 새 리스팅은 어떻게 만드나요?
+#### 2단계: 새 리스팅 만들기
 
-새 리스팅을 만드는 방법은 다음과 같아요:
+오른쪽 위의 **+ New Listing**(+ 새 리스팅) 버튼을 클릭하세요. **New Listing** 창이 열려요.
 
-**1단계: 리스팅으로 이동**
+![새 리스팅 버튼과 창](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056000396/original/Jysyqib6tVXVXW0IFDZuWVdLYRqiwoop6Q.png?1760476605)
 
-\*\*Calendars(캘린더) → Calendar Settings(캘린더 설정) → Rentals(렌탈) → Listings(리스팅)\*\*로 이동하세요.
+#### 3단계: 기본 정보 입력
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056000388/original/GfMNnfAwFrHwL-KkzR5YEVKijP0lMR71GA.png?1760476565)
+**New Listing** 창에서 다음 항목을 입력하세요.
 
-**2단계: 새 리스팅 생성**
+- **Listing Image**(리스팅 이미지) — 리스팅을 보여 줄 사진을 올리거나 끌어다 놓으세요. 이 이미지는 예약 페이지에 표시돼요.
+- **Listing Name**(리스팅 이름, 필수) — 리스팅 제목을 입력하세요. 예: "럭셔리 빌라", "소형 SUV", "전문가용 카메라 세트"
+- **설명** — 리스팅의 특징과 포함된 구성, 제공 내용을 간단히 소개하세요.
+- **Base Price**(기본 가격)와 **Booking Unit**(예약 단위) — 선택한 시간 단위당 요금을 정하세요. 예: 시간당 $50
+- **카테고리** — 리스팅을 묶을 카테고리를 선택하세요.
+- **상태** — 예약 웹사이트에 리스팅을 보이게 하려면 **활성**, 숨기려면 **비활성**으로 설정하세요.
 
-오른쪽 상단의 **+ New Listing(새 리스팅)** 버튼을 클릭하세요. \*\*새 리스팅 모달(New Listing modal)\*\*이 나타납니다.
+{% hint style="info" %}
+팁: 설정을 마칠 때까지 리스팅을 **비활성** 상태로 두면 예약이 미리 들어오는 일을 막을 수 있어요.
+{% endhint %}
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056000396/original/Jysyqib6tVXVXW0IFDZuWVdLYRqiwoop6Q.png?1760476605)
+![새 리스팅 기본 정보 입력 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056000438/original/SAld3nRIO3ABHz-PoaXKIsBLEacDxCgc2Q.png?1760476735)
 
-**3단계: 기본 리스팅 정보 입력**
+#### 4단계: 고급 설정
 
-**새 리스팅 모달**에서 다음 필드를 입력하세요:
+입력을 마쳤으면 아래쪽의 **고급 설정**을 클릭해 세부 설정 화면을 여세요. 이곳에서 다음 항목을 편집할 수 있어요.
 
-*
+- **일반 정보**
+- **Inventory & Pricing**(재고 및 가격)
+- **Booking Settings**(예약 설정)
+- **Calendar Sync**(캘린더 동기화)
 
-**리스팅 이미지(Listing Image)** — 리스팅을 보여줄 사진을 업로드하거나 드래그 앤 드롭하세요. 이 이미지는 예약 페이지에 표시됩니다.
+각 항목은 아래에서 차례로 설명해요.
 
-*
+![고급 설정 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056000531/original/OuO7bkebnDlX7kFTI1Wzs396nA3IC4rzcA.png?1760477021)
 
-**리스팅 이름(Listing Name, 필수)** — 리스팅의 제목을 입력하세요 (예: "럭셔리 빌라", "소형 SUV", "전문가용 카메라 세트").
+---
 
-*
+## 리스팅 편집하기
 
-**설명(Description)** — 리스팅의 특징이나 포함/제공되는 내용을 간단히 안내하는 설명을 작성하세요.
+리스팅은 다음 순서로 편집해요.
 
-*
+#### 1단계: 리스팅으로 이동
 
-**기본 가격 및 예약 단위(Base Price & Booking Unit)** — 선택한 시간 단위당 비용을 설정하세요. 예: 시간당 50,000원
+**캘린더 > 캘린더 설정 > 대여 > 리스팅**으로 이동하세요.
 
-*
+![리스팅 목록 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056000388/original/GfMNnfAwFrHwL-KkzR5YEVKijP0lMR71GA.png?1760476565)
 
-**카테고리(Category)** — 리스팅을 그룹화할 카테고리를 선택하세요.
+#### 2단계: 리스팅 선택
 
-*
+편집할 리스팅 옆의 연필 모양 편집 아이콘을 클릭하세요.
 
-**상태(Status)** — 예약 웹사이트에서 리스팅을 **Active(활성)**(노출) 또는 **Inactive(비활성)**(숨김) 상태로 표시하세요.
+![리스팅 옆 편집 아이콘](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056000582/original/l5c-jGxKmU5ZLS29ZqarIJQE3gUe86pz9Q.png?1760477210)
 
-팁: 설정이 끝날 때까지는 리스팅을 비활성 상태로 두면 조기 예약을 방지할 수 있어요.
+#### 3단계: 내용 수정
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056000438/original/SAld3nRIO3ABHz-PoaXKIsBLEacDxCgc2Q.png?1760476735)
+**Edit Listing** 화면이 열려요. 이 화면에는 네 개의 주요 탭이 있어요.
 
-**4단계: 고급 설정**
+- **일반 정보**
+- **Inventory & Pricing**
+- **Booking Settings**
+- **Calendar Sync**
 
-입력을 마쳤다면 하단의 \*\*Advanced Settings(고급 설정)\*\*을 클릭해 세부 설정 화면을 여세요. 여기서 다음 항목을 편집할 수 있어요:
+탭마다 대여 설정의 한 부분을 맡고 있어요. 자세한 내용은 아래 각 섹션에서 확인하세요.
 
-*
+![리스팅 편집 화면의 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056000614/original/FVqg7klNqHbOFe8JXk5W7jfvrt3QbkwwQw.png?1760477304)
 
-**일반 정보(General Information)**
+---
 
-*
+## 일반 정보
 
-재고 및 가격(Inventory & Pricing)
+이 탭에서 리스팅의 기본 정보와 이미지를 수정할 수 있어요.
 
-*
+**사용할 수 있는 필드**
 
-**예약 설정(Booking Settings)**
+- **Listing Image** — 이미지를 여러 장 추가하거나 교체해서 갤러리를 만들 수 있어요.
+- **Listing Name** — 관리자 화면과 고객 화면에 표시되는 제목을 바꿀 수 있어요.
+- **설명** — 대여 상세 내용과 핵심 특징을 고치거나 보충할 수 있어요.
+- **카테고리** — 필요하면 다른 카테고리로 옮길 수 있어요.
+- **상태** — **활성**과 **비활성** 사이를 전환해요.
+- **Enable Listing Specific Form**(리스팅 전용 폼 활성화) — 이 리스팅을 예약할 때 고객에게 별도 정보를 받고 싶다면 켜세요.
 
-*
+{% hint style="info" %}
+참고: 리스팅 전용 커스텀 폼을 선택하면 인라인 배너가 표시돼요. 이 배너는 폼이 예약 후 화면 흐름을 제어할 수 있는지 알려 줘요.
 
-**캘린더 동기화(Calendar Sync)**
+커스텀 폼의 해당 제출 시 액션(On Submit)과 조건부 규칙으로 확인 화면을 제어하려면, 대여의 **글로벌 설정**에서 **Let a custom form override this with its own rules**(커스텀 폼이 자체 규칙으로 이 설정을 덮어쓰도록 허용)를 켜세요.
 
-각 항목에 대한 자세한 내용은 아티클 뒷부분에서 다룰게요.
+글로벌 덮어쓰기를 켜지 않으면 **글로벌 설정**에 있는 확인 설정이 계속 예약 후 화면을 제어해요.
+{% endhint %}
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056000531/original/OuO7bkebnDlX7kFTI1Wzs396nA3IC4rzcA.png?1760477021)
+{% hint style="info" %}
+참고: 장바구니에 리스팅이 여러 개 담기면 리스팅 전용 폼은 건너뛰어요.
+{% endhint %}
 
-***
+{% hint style="info" %}
+팁: 화질이 좋은 이미지와 구체적인 설명을 쓰면 고객 관심과 전환율을 높이는 데 도움이 돼요.
+{% endhint %}
 
-### 리스팅 편집하기
+![일반 정보 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056000633/original/8OG0Q09c8YXi0tpiP0A8gz21hVd0Fn9iTg.png?1760477405)
 
-리스팅을 편집하는 방법은 다음과 같아요:
+---
 
-**1단계: 리스팅으로 이동**
+## Inventory & Pricing(재고 및 가격)
 
-\*\*Calendars(캘린더) → Calendar Settings(캘린더 설정) → Rentals(렌탈) → Listings(리스팅)\*\*로 이동하세요.
+이 탭에서는 재고와 리스팅 변형(배리언트)을 관리하고, 고객이 내는 대여 요금과 세부 가격 규칙을 정해요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056000388/original/GfMNnfAwFrHwL-KkzR5YEVKijP0lMR71GA.png?1760476565)
+#### 재고
 
-**2단계: 리스팅 선택**
+- **재고** — 켜면 예약 가능한 재고를 관리해요. 끄면 리스팅 전체를 예약 가능한 한 개의 단위로 취급해요.
+- **재고**(Stock) — 예약할 수 있는 전체 수량이에요.
 
-편집하고 싶은 리스팅 옆의 \*\*편집 아이콘(연필)\*\*을 클릭하세요.
+#### 배리언트
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056000582/original/l5c-jGxKmU5ZLS29ZqarIJQE3gUe86pz9Q.png?1760477210)
+**배리언트**를 쓰면 같은 리스팅을 여러 버전으로 제공할 수 있어요. 예를 들어 차종이나 객실 유형이 여러 개일 때 써요.
 
-**3단계: 편집하기**
+배리언트를 켜면 **Booking Unit**을 시간, 일, 주, 월 중에서 고를 수 있어요. 선택한 단위는 모든 배리언트에 똑같이 적용돼요.
 
-**리스팅 편집(Edit Listings)** 화면이 열립니다. **리스팅 편집** 화면은 4개의 주요 탭으로 구성돼요:
+배리언트는 다음 순서로 추가해요.
 
-*
+1. **배리언트**를 켜세요.
 
-일반 정보(General Information)
+   ![배리언트 켜기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056000657/original/jhXIcsDJNH7Dn2m7ejrARF7TmRU44rGdQw.png?1760477522)
+2. **+ New**(+ 새로 만들기)를 클릭하세요.
 
-*
+   ![새 배리언트 추가 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056000673/original/4y9Os1DOUXBjLYses2cCa6YS3efCL62U4w.png?1760477546)
+3. 다음 항목을 입력하세요.
 
-재고 및 가격(Inventory & Pricing)
+   - **배리언트 이름** (예: 세단, 디럭스 룸)
+   - **재고** — 해당 배리언트의 재고예요. (재고를 켠 경우)
+   - **Base Price** — 해당 배리언트에만 적용되는 가격이에요.
+   - **보증금**(선택) — 환불 가능한 보증금이나 카드 보관(card-on-file) 보증금 금액을 정해요. (보증금을 켠 경우)
+4. **확인**을 클릭해 저장하세요.
 
-*
+{% hint style="info" %}
+참고: 재고와 가격을 켜 두면 배리언트마다 따로 관리돼요.
+{% endhint %}
 
-**예약 설정(Booking Settings)**
+**예시**
 
-*
+카메라 대여 업체라면 다음처럼 등록할 수 있어요.
 
-**캘린더 동기화(Calendar Sync)**
+- Canon EOS R5 – 바디만 (하루 $70, 수량 3)
+- Canon EOS R5 – 렌즈 포함 (하루 $90, 수량 2)
 
-각 탭은 렌탈 설정의 특정 부분을 다뤄요. 자세한 내용은 아래 섹션에서 확인하세요.
+---
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056000614/original/FVqg7klNqHbOFe8JXk5W7jfvrt3QbkwwQw.png?1760477304)
+## 가격
 
-***
+**Base Price**는 조정이 적용되기 전의 기본 대여 요금이에요.
 
-### 일반 정보
+**고급 가격 옵션**
 
-이 탭에서는 리스팅의 기본 정보와 이미지를 수정할 수 있어요.
+- **Seasonal Pricing**(시즌별 가격) — 특정 기간의 요금을 조정해요. 예: 휴일 기간에 20% 인상
+- **Day of Week Pricing**(요일별 가격) — 평일과 주말에 서로 다른 요금을 정해요.
+- **Hour of Day Pricing**(시간대별 가격) — 특정 시간대에 다른 요금을 정해요. **시간별** 리스팅에만 적용돼요.
+- **Duration Discounts**(기간 할인) — 장기 예약에 할인을 제공해요. 예: 7일 이후 10% 할인
+- **Quantity Discounts**(수량 할인) — 대량 예약에 할인을 적용해요. 예: 5개 이상 15% 할인
 
-**사용 가능한 필드:**
+{% hint style="info" %}
+가격 계산 방식은 "가격 및 할인 설정" 문서에서 더 자세히 볼 수 있어요.
+{% endhint %}
 
-*
+![가격 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056000704/original/fhop5fysLtLUOIN5d1Ncb7vo4POArJg-dQ.png?1760477678)
 
-**리스팅 이미지(Listing Image)** — 여러 이미지를 추가하거나 교체해서 갤러리를 구성하세요.
+---
 
-*
+## Booking Settings(예약 설정)
 
-**리스팅 이름(Listing Name)** — 관리자 및 고객에게 표시되는 제목을 업데이트하세요.
+#### 예약 기간
 
-*
+**예약 기간** 설정은 고객이 날짜와 시간을 고르는 방식과 대여 기간 및 가격을 계산하는 방식을 정해요.
 
-**설명(Description)** — 대여 관련 세부 정보와 특징을 수정하거나 추가하세요.
+세 가지 모드 중에서 고를 수 있어요.
 
-*
+**1. Date & Time Selector**(날짜 및 시간 선택)
 
-**카테고리(Category)** — 필요하면 다른 카테고리로 재할당하세요.
+고객이 시작과 종료의 날짜와 시간을 모두 선택해요.
 
-*
+시간별 대여처럼 정확한 시간 선택이 필요한 예약에 알맞아요. 대여 기간은 고객이 고른 시작과 종료 날짜·시간의 차이로 정확히 계산돼요.
 
-**상태(Status)** — Active(활성)와 Inactive(비활성)를 전환하세요.
+이 모드에서는 시간 선택이 항상 켜져 있어요.
 
-* 리스팅 전용 폼 활성화(Enable Listing Specific Form) — 이 리스팅을 예약할 때 별도 정보를 수집하고 싶다면 이 옵션을 켜세요(ON).
+**2. Date Selector**(날짜 선택, 날짜만 고르는 예약)
 
-참고: 장바구니에 여러 리스팅이 추가된 경우 리스팅 전용 폼은 건너뛰어져요.
+고객이 시작일과 종료일만 선택하고 시간은 고르지 않아요.
 
-프로 팁: 고화질 이미지와 상세한 설명을 사용하면 참여도와 전환율을 높일 수 있어요.
+이때는 설정해 둔 **대여 시작 시간**과 **대여 종료 시간**으로 대여 기간과 가격을 계산해요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056000633/original/8OG0Q09c8YXi0tpiP0A8gz21hVd0Fn9iTg.png?1760477405)
+**대여 시작 시간**과 **대여 종료 시간**
 
-***
+- **대여 시작 시간**: 고객이 선택한 시작일에 적용되는 예약 시작 시간이에요. 예: 체크인 시간
+- **대여 종료 시간**: 고객이 선택한 종료일에 적용되는 예약 종료 시간이에요. 예: 체크아웃 시간
 
-### 재고 및 가격
+이 두 시간에 따라 가격이 일 단위로 계산될지, 박 단위로 계산될지가 정해져요.
 
-이 섹션에서는 재고 현황, 리스팅 변형(Variants)을 관리하고, 고객이 대여 시 지불할 금액과 고급 가격 로직을 설정할 수 있어요.
+가격 계산 방식
 
-**재고(Inventory)**
+- **대여 종료 시간**이 **대여 시작 시간**보다 늦으면 일 단위 예약으로 봐요. 시작일과 종료일을 같은 날로 선택하면 1일로 계산해요. 예: 대여 시작 시간 오전 11시, 대여 종료 시간 오후 5시
+- **대여 종료 시간**이 **대여 시작 시간**보다 빠르면 박 단위 예약으로 봐요. 연속된 이틀을 선택하면 1박으로 계산해요. 예: 대여 시작 시간 오후 3시, 대여 종료 시간 오전 11시
 
-*
+{% hint style="info" %}
+참고: **Date Selector**에서는 시간별 가격을 지원하지 않아요.
+{% endhint %}
 
-재고(Inventory) — 사용 가능한 재고를 관리하려면 이 옵션을 켜세요. 비활성화하면 리스팅 전체가 하나의 예약 가능 단위로 취급돼요.
+**3. Fixed Durations**(고정 기간)
 
-*
+고객이 2시간, 1일, 1주, 1개월처럼 미리 정해 둔 기간 중에서 고르게 하고 싶을 때 쓰는 모드예요.
 
-재고 수량(Stock) — 예약 가능한 총 유닛 수예요.
+모든 단위(**시간별**, 일별, 주별, 월별)에는 다음 설정이 있어요.
 
-**변형(Variants)**
+**Customers can select start time while booking.**(예약할 때 고객이 시작 시간을 선택할 수 있어요.)
 
-변형(Variants)을 사용하면 같은 리스팅의 여러 버전을 제공할 수 있어요(예: 여러 차종이나 객실 카테고리).
+이 설정을 켜면:
 
-변형이 활성화되면 모든 변형에 공통으로 적용되는 예약 단위(Booking Unit)를 시간, 일, 주, 월 중에서 설정할 수 있어요.
+고객이 시작 시간을 고르고, 종료 시간은 선택한 기간에 맞춰 자동으로 계산돼요.
 
-변형을 추가하려면:
+이 설정을 끄면:
 
-*
+시간 처리 방식이 **Booking Unit**에 따라 달라져요.
 
-변형(Variants) 토글을 켜세요.
+- **시간별**: **대여 시작 시간**만 설정해요. 종료 시간은 다음과 같이 계산돼요.
+  `종료 시간 = 대여 시작 시간 + 기간`
+- 일별, 주별, 월별: **대여 시작 시간**과 **대여 종료 시간**을 모두 설정해요. 이 두 시간이 각 기간의 예약 구간이 돼요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056000657/original/jhXIcsDJNH7Dn2m7ejrARF7TmRU44rGdQw.png?1760477522)
+---
 
-*
+**월 단위 시간 규칙 (모든 모드 공통)**
 
-\*\*+ New(신규)\*\*를 클릭하세요.
+월 단위 대여에서는 **대여 종료 시간**이 **대여 시작 시간**보다 늦으면 안 돼요. 그래야 예약이 다음 청구 주기로 넘어가지 않고 깔끔한 한 달 기간이 돼요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056000673/original/4y9Os1DOUXBjLYses2cCa6YS3efCL62U4w.png?1760477546)
+월 단위 기간의 계산 방식은 다음과 같아요.
 
-*
+- 종료일은 다음 달의 같은 날짜예요.
+- 그 날짜가 없으면(예: 31일) 그달의 마지막 날로 조정돼요.
 
-다음 세부 정보를 입력하세요:
+**알맞은 모드 고르기**
 
-**변형 이름(Variant Name)** (예: 세단, 디럭스룸)
+- 특정 시간이나 시간별 예약에는 **Date & Time Selector**를 쓰세요.
+- 휴가용 숙소나 1박·여러 날 예약에는 **Date Selector**를 쓰세요.
+- 정해진 대여 패키지에는 **Fixed Durations**를 쓰세요.
 
-*
+---
 
-재고 수량(Stock) — 해당 변형에 대한 재고 수량(활성화된 경우).
+**추가 필드**
 
-*
+- **Minimum Duration**(최소 기간) — 허용되는 가장 짧은 예약 기간이에요.
+- **Maximum Duration**(최대 기간) — 허용되는 가장 긴 대여 기간이에요.
+- **Pre/Post Buffer Time**(전/후 버퍼 시간) — 예약 전후에 준비나 청소 시간을 추가해요.
+- **최소 예약 안내 기간** — 예약이 시작되기 전에 필요한 최소 사전 안내 시간이에요.
+- **Maximum Advance Booking Window**(최대 사전 예약 가능 기간) — 고객이 미리 예약할 수 있는 가장 먼 날짜예요.
+- **Count Available Days Only**(예약 가능한 날만 계산) — 켜면 **Maximum Advance Booking Window**를 계산할 때 리스팅을 예약할 수 있는 날만 세요.
 
-**기본 가격(Base Price)** — 해당 변형에 적용되는 가격이에요.
+**예시**
 
-*
+숙소 대여라면 다음처럼 설정할 수 있어요.
 
-**보증금(Security Deposit, 선택 사항)** — 환불 가능 보증금 또는 카드 등록형 보증금 값을 설정하세요(활성화된 경우).
+- 최소 기간: 1일
+- 최대 기간: 30일
+- 버퍼: 예약 전후 각 2시간
+- 사전 예약 가능 기간: 3개월 이내
 
-*
+{% hint style="info" %}
+참고: 예약은 영업시간 안에서 시작하고 끝나야 하지만, 대여 기간은 영업시간을 넘어 이어질 수 있어요.
+{% endhint %}
 
-\*\*Confirm(확인)\*\*을 클릭해서 저장하세요.
+![예약 설정 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056000741/original/K1CmD95tx-EzKBv2p0f5cf7yKoBuNK3IEA.png?1760477807)
 
-참고: 활성화한 경우, 재고와 가격은 각 변형별로 개별적으로 추적돼요. **예시:**
+---
 
-카메라 대여 업체는 다음과 같이 리스팅할 수 있어요:
+## Calendar Sync(캘린더 동기화)
 
-*
+**Calendar Sync** 탭에서는 대여 리스팅 예약을 외부 캘린더 플랫폼과 동기화할 수 있어요. 시스템 간 예약 가능 여부가 자동으로 동기화되므로 중복 예약을 막을 수 있어요.
 
-Canon EOS R5 – 바디만 (일 70,000원, 수량: 3)
+**기능**
 
-*
+- **Import Calendar (iCal URL)**(캘린더 가져오기): .ics 형식으로 끝나는 외부 iCal 링크를 추가해 다른 플랫폼의 예약을 가져와요. 가져온 예약은 대여 캘린더에 예약 불가 시간대로 표시돼요.
+- **Export Calendar**(캘린더 내보내기): 나만의 iCal 링크를 만들어 복사하면, 대여의 예약 가능 정보를 외부 플랫폼과 동기화할 수 있어요. 대여에서 바꾼 내용이 외부에도 반영돼요.
 
-Canon EOS R5 – 렌즈 포함 (일 90,000원, 수량: 2)
+**동기화 주기**
 
-***
+외부 플랫폼의 예약은 예약 가능 정보를 정확하게 유지하도록 1시간마다 자동으로 가져와요.
 
-### 가격
+중간에 직접 다시 동기화하고 싶으면, 가져온 캘린더 옆의 **새로고침**을 사용하세요.
 
-**기본 가격(Base Price):** 별도 조정이 없는 표준 대여 비용이에요.
+{% hint style="info" %}
+팁: 저장하기 전에 iCal 링크가 올바른지 꼭 확인하세요. 그래야 대여와 외부 플랫폼 간 동기화가 제대로 작동해요.
+{% endhint %}
 
-**고급 가격 옵션:**
+### 가져온 캘린더 예약을 대여가 해석하는 방식
 
-*
+가져온 캘린더 예약이 예약 가능 여부에 영향을 주는 방식은 리스팅의 예약 모드와 연결된 캘린더가 제공하는 정보에 따라 달라져요.
 
-**시즌별 가격(Seasonal Pricing)** — 특정 날짜 범위에 대해 요금을 조정하세요(예: 연휴 기간 20% 인상).
+#### 가져온 일정에 시작·종료 시간이 있는 경우
 
-*
+연결된 캘린더가 구체적인 시작·종료 시간을 제공하면, 대여는 그 시각 그대로 예약을 막아요.
 
-**요일별 가격(Day of Week Pricing)** — 평일 또는 주말에 대해 고유한 요금을 설정하세요.
+예를 들면 다음과 같아요.
 
-*
+- 가져온 일정: 4월 15일 오후 2:00 → 4월 15일 오후 5:00
+- 예약 불가 처리 시간: 4월 15일 오후 2:00 → 4월 15일 오후 5:00
 
-**시간대별 가격(Hour of Day Pricing)** — 특정 시간대에 다른 요금을 설정하세요(시간 단위 리스팅에만 적용).
+모든 예약 모드에 해당해요.
 
-*
+#### 가져온 일정이 날짜만 있는 경우
 
-**기간별 할인(Duration Discounts)** — 장기 예약 시 가격을 할인해 주세요(예: 7일 이상 10% 할인).
+일부 캘린더 제공업체나 OTA 플랫폼은 시작·종료 시간 없이 날짜만으로 예약 가능 여부를 동기화하기도 해요.
 
-*
+아래 예약 기간 설정에서는 대여가 자정부터 자정까지 막는 대신, 리스팅에 설정된 대여 시간 또는 대여 운영 시간을 기준으로 그 날짜를 해석해요.
 
-**수량별 할인(Quantity Discounts)** — 대량 예약에 할인을 적용하세요(예: 5개 이상 15% 할인).
+**해당하는 예약 기간 설정**
 
-가격 로직에 대한 자세한 내용은 다음 아티클을 참고하세요: [_가격 및 할인 설정_](rentals-configuring-pricing-discounts.md)
+- Date Selector
+- Fixed Durations · 일별/주별/월별
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056000704/original/fhop5fysLtLUOIN5d1Ncb7vo4POArJg-dQ.png?1760477678)
+#### 예시
 
-***
+리스팅의 대여 시간
 
-### **예약 설정**
+- **대여 시작 시간**: 오후 3:00
+- **대여 종료 시간**: 오전 11:00
 
-**예약 기간(Booking Period)**
+가져온 캘린더 일정
 
-예약 기간(Booking Period) 설정은 고객이 리스팅의 날짜와 시간을 선택하는 방식과, 대여 기간 및 가격이 계산되는 방식을 결정해요.
+- 4월 15일 – 4월 17일
 
-세 가지 모드 중에서 선택할 수 있어요:
+예약 불가 처리 시간
 
-1. 날짜 및 시간 선택기(Date & Time Selector)
+- 4월 15일 오후 3:00 → 4월 17일 오전 11:00
 
-고객이 시작 및 종료 날짜와 시간을 모두 선택해요.
+이렇게 하면 가져온 예약 가능 정보가 실제 대여 예약 방식과 맞아떨어져요.
 
-시간 단위 대여나 정확한 시간 선택이 필요한 예약에 적합한 모드예요. 선택한 시작/종료 날짜와 시간의 정확한 차이를 기준으로 기간이 계산돼요.
+**참고**
 
-이 모드에서는 항상 시간 선택이 활성화돼 있어요.
+1. 리스팅에서 배리언트를 켜 둔 경우, 가져온 캘린더는 첫 번째 배리언트에만 슬롯을 막아요.
+2. 리스팅에서 재고를 켜 둔 경우, 가져온 예약 시간 동안 전체 재고가 막혀요.
 
-2. 날짜 선택기(Date Selector, 날짜만 예약)
+![캘린더 동기화 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155073941874/original/fc5qd17whDwWVvKuDJ7khsSjNoDncmBtVA.png?1781768035)
 
-고객이 시작 및 종료 날짜만 선택해요. 시간은 선택하지 않아요.
+---
 
-시스템은 설정된 대여 시작 시간과 대여 종료 시간을 사용해서 기간과 가격을 계산해요.
+## 저장하고 게시하기
 
-**대여 시작 시간 및 대여 종료 시간**
+설정을 마쳤다면 다음 순서로 진행하세요.
 
-*
+1. 오른쪽 위의 **변경사항 저장**을 클릭하세요.
+2. **View Booking Page**(예약 페이지 보기)를 클릭해 고객에게 리스팅이 어떻게 보이는지 미리 확인하세요.
+3. 공개할 준비가 되면 리스팅을 **활성** 상태로 바꾸세요.
 
-대여 시작 시간 = 선택한 시작 날짜에 적용되는 예약 시작 시간이에요(예: 체크인 시간)
+{% hint style="info" %}
+팁: 예약 웹사이트에서 리스팅을 직접 테스트해 보세요. 가격, 대여 기간, 동기화 동작이 올바른지 확인할 수 있어요.
+{% endhint %}
 
-*
+---
 
-대여 종료 시간 = 선택한 종료 날짜에 적용되는 예약 종료 시간이에요(예: 체크아웃 시간)
+## 자주 묻는 질문
 
-이 두 값에 따라 가격이 일 단위 방식인지 야간 단위 방식인지가 결정돼요.
+### 이미지를 여러 장 올릴 수 있나요?
 
-**가격 계산 방식**
+네. 리스팅당 최대 30장까지 올릴 수 있어요.
 
-대여 종료 시간이 대여 시작 시간보다 늦으면 일 단위 예약으로 취급돼요. 같은 시작 날짜와 종료 날짜를 선택하면 1일로 청구돼요(예: 대여 시작 시간 오전 11시, 대여 종료 시간 오후 5시).
+### 재고를 끌 수 있나요?
 
-대여 종료 시간이 대여 시작 시간보다 이르면 야간 단위 예약으로 취급돼요. 연속된 두 날짜를 선택하면 1박으로 청구돼요(예: 대여 시작 시간 오후 3시, 대여 종료 시간 오전 11시).
+네. 예약 가능한 수량이 하나뿐이라면 재고를 끈 채로 두세요. 리스팅 전체가 한 개 단위로 예약돼요.
 
-참고: 날짜 선택기(Date Selector)에서는 시간 단위 가격을 지원하지 않아요.
+### 배리언트를 안 써도 되나요?
 
-**3. 고정 기간(Fixed Durations)**
+네. 배리언트는 선택 사항이에요. 구성이 여러 가지인 리스팅에만 필요해요.
 
-고객이 미리 정해진 기간(예: 2시간, 1일, 1주, 1개월)만 예약할 수 있도록 하려면 이 모드를 사용하세요.
+### 나중에 가격 단위를 바꿀 수 있나요?
 
-모든 단위(시간, 일, 주, 월)에는 다음 설정이 포함돼요:
+네. 다만 단위를 바꾸면(예: 일에서 시간으로) 가격과 대여 기간 계산 방식이 다시 계산돼요.
 
-"고객이 예약 시 시작 시간을 선택할 수 있음"
+### 버퍼 시간은 전체 예약에 적용되나요?
 
-활성화된 경우:
+네. 버퍼는 모든 예약의 앞뒤에 자동으로 적용돼요.
 
-고객이 시작 시간을 선택해요. 종료 시간은 선택된 기간을 기준으로 자동 계산돼요.
+### 캘린더 동기화는 얼마나 자주 업데이트되나요?
 
-비활성화된 경우:
+외부 예약은 1시간마다 가져와서 예약 가능 정보를 최신 상태로 유지해요.
 
-시간 동작은 예약 단위(Booking Unit)에 따라 달라져요:
+### 동기화한 캘린더 연결을 끊을 수 있나요?
 
-*
+네. **Calendar Sync** 탭에서 언제든 iCal 링크를 제거할 수 있어요.
 
-시간 단위: 대여 시작 시간만 설정돼요. 종료 시간은 다음과 같이 계산돼요: 종료 시간 = 대여 시작 시간 + 기간
+### 사전 예약 가능 기간의 Count Available Days Only 토글은 어떤 역할을 하나요?
 
-*
-
-일/주/월 단위: 대여 시작 시간과 대여 종료 시간이 모두 설정돼요. 이 값들이 각 기간의 예약 범위를 정의해요.
-
-**월 단위 시간 규칙(모든 모드 공통)**
-
-월 단위 대여의 경우, 대여 종료 시간은 대여 시작 시간보다 늦어서는 안 돼요. 이렇게 하면 예약이 추가 결제 주기로 넘어가지 않고 깔끔한 한 달 기간을 나타낼 수 있어요.
-
-월 단위 기간의 경우:
-
-*
-
-종료 날짜 = 다음 달의 같은 날짜
-
-*
-
-해당 날짜가 존재하지 않으면(예: 31일) 그 달의 마지막 유효한 날짜로 조정돼요
-
-올바른 모드 선택하기
-
-*
-
-시간이 특정하거나 시간 단위 예약에는 날짜 및 시간 선택기(Date & Time Selector)를 사용하세요.
-
-*
-
-휴가용 렌탈, 숙박 또는 여러 날 예약에는 날짜 선택기(Date Selector)를 사용하세요.
-
-*
-
-구조화된 대여 패키지에는 고정 기간(Fixed Durations)을 사용하세요.
-
-***
-
-**추가 필드:**
-
-*
-
-**최소 대여 기간(Minimum Duration)** — 허용되는 가장 짧은 예약 기간이에요.
-
-*
-
-**최대 대여 기간(Maximum Duration)** — 허용되는 가장 긴 대여 기간이에요.
-
-*
-
-**사전/사후 버퍼 시간(Pre/Post Buffer Time)** — 예약 전후에 준비 또는 청소 시간을 추가하세요.
-
-*
-
-**최소 예약 사전 통보 시간(Minimum Scheduling Notice)** — 예약이 시작되기 전에 필요한 최소 사전 통보 시간이에요.
-
-*
-
-**최대 사전 예약 가능 기간(Maximum Advance Booking Window)** — 고객이 미리 예약할 수 있는 가장 먼 날짜예요.
-
-예시:
-
-부동산 렌탈의 경우:
-
-* 최소 대여 기간: 1일
-* 최대 대여 기간: 30일
-* 버퍼: 전후 2시간
-* 사전 예약 범위: 3개월 전부터
-
-참고: 예약은 사업장 운영 시간 내에 시작 및 종료돼야 하지만, 대여 기간 자체는 운영 시간을 넘어설 수 있어요.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056000741/original/K1CmD95tx-EzKBv2p0f5cf7yKoBuNK3IEA.png?1760477807)
-
-***
-
-### **캘린더 동기화**
-
-**캘린더 동기화(Calendar Sync)** 탭에서는 렌탈 리스팅 예약을 외부 캘린더 플랫폼과 동기화할 수 있어요. 시스템 간 예약 가능 시간을 자동으로 동기화해 중복 예약을 방지해 줘요.
-
-**기능:**
-
-*
-
-**캘린더 가져오기(Import Calendar, iCal URL):** 외부 iCal 링크(.ics 형식으로 끝남)를 추가해 타사 플랫폼에서 예약 정보를 가져오세요. 가져온 예약은 렌탈 캘린더 안에서 차단된 시간대로 표시돼요.
-
-*
-
-**캘린더 내보내기(Export Calendar):** 렌탈의 예약 가능 시간을 외부 플랫폼과 동기화하려면 고유한 iCal 링크를 생성하고 복사하세요. 이렇게 하면 렌탈에서 변경한 내용이 외부에도 반영돼요.
-
-**동기화 주기:**
-
-외부 플랫폼의 예약은 예약 가능 시간의 정확성을 유지하기 위해 매시간 자동으로 가져와져요.
-
-필요하다면 가져온 캘린더 옆의 "새로고침(Refresh)" 작업을 통해 수동으로도 다시 동기화할 수 있어요.
-
-프로 팁: 렌탈과 외부 플랫폼 간 동기화가 제대로 작동하도록 저장 전에 항상 iCal 링크를 확인하세요.
-
-#### 렌탈이 가져온 캘린더 예약을 해석하는 방식
-
-가져온 캘린더 예약이 예약 가능 시간에 미치는 영향은 리스팅의 예약 모드와 연결된 캘린더가 제공하는 정보에 따라 달라져요.
-
-**가져온 이벤트에 시작/종료 시간이 포함된 경우**
-
-연결된 캘린더가 구체적인 시작 및 종료 시간을 제공하면, 렌탈은 해당 정확한 타임스탬프를 사용해 예약 가능 시간을 차단해요.
-
-예를 들어:
-
-* 가져온 이벤트: 4월 15일 오후 2시 → 4월 15일 오후 5시
-* 차단된 예약 가능 시간: 4월 15일 오후 2시 → 4월 15일 오후 5시 이는 모든 예약 모드에 적용돼요.
-
-
-
-**가져온 이벤트가 날짜만 있는 경우**
-
-일부 캘린더 제공업체와 OTA 플랫폼은 구체적인 시작/종료 시간 없이 날짜만 동기화할 수 있어요.
-
-아래의 예약 기간 설정에서는, 렌탈이 일반적인 자정-자정 차단 대신 리스팅에 설정된 대여 시간을 기준으로 해당 날짜를 해석해요.
-
-**예약 기간 설정:**
-
-* 날짜 선택기(Date Selector)
-* 고정 기간(Fixed Durations) · 일/주/월 단위
-
-
-
-예시:
-
-리스팅 대여 시간:
-
-* **대여 시작 시간**: 오후 3:00
-* **대여 종료 시간**: 오전 11:00 가져온 캘린더 이벤트:
-* 4월 15일 – 4월 17일 차단된 예약 가능 시간:
-* 4
+이 토글을 켜면 최소 예약 안내 기간이 지난 시점부터, 설정한 일정을 기준으로 리스팅을 예약할 수 있는 날만 사전 예약 가능 기간에 포함해서 세요. 중간에 예약할 수 없는 날이 있더라도, 예약하는 사람에게는 설정한 전체 일수가 그대로 보여요.

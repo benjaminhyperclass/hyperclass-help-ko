@@ -1,93 +1,75 @@
 ---
-번역일: 2026-04-06T00:00:00.000Z
+원문: /support/solutions/articles/155000004301-bank-only-transfers-for-invoice-payments-sepa-ach-
+번역일: 2026-11-07
 카테고리: 08-결제
 ---
 
-# 인보이스 결제를 위한 계좌이체 전용 옵션 (SEPA & ACH)
+# 인보이스 결제를 계좌 이체만으로 받기 (SEPA, ACH)
 
-이 문서는 Hyperclass에서 인보이스(Invoice)에 계좌이체 전용 결제를 설정하는 방법을 설명합니다. 이 새로운 기능을 통해 비즈니스는 직접 계좌이체만을 결제 옵션으로 제공할 수 있어, 카드 결제 대신 계좌이체를 선호하는 기업과 고객에게 더 간편한 인보이스 과정을 제공합니다.
+인보이스의 결제 수단을 계좌 이체 하나로 제한하는 방법을 안내해요. 카드 결제 대신 계좌 이체를 선호하는 고객에게 인보이스를 보낼 때 쓰면 편리해요.
 
-목차
+## 계좌 이체 전용 결제란?
 
-* [계좌이체 전용 결제란?](bank-only-transfers-for-invoice-payments-sepa-ach-.md#계좌이체-전용-결제란)
-* [계좌이체 전용 결제의 주요 장점](bank-only-transfers-for-invoice-payments-sepa-ach-.md#계좌이체-전용-결제의-주요-장점)
-* [인보이스에서 계좌이체 전용 설정하는 방법](bank-only-transfers-for-invoice-payments-sepa-ach-.md#인보이스에서-계좌이체-전용-설정하는-방법)
-  * [1단계: 인보이스 섹션 접속](bank-only-transfers-for-invoice-payments-sepa-ach-.md#1단계-인보이스-섹션-접속)
-  * [2단계: 인보이스 생성 또는 편집](bank-only-transfers-for-invoice-payments-sepa-ach-.md#2단계-인보이스-생성-또는-편집)
-  * [3단계: 계좌이체 결제 옵션 선택](bank-only-transfers-for-invoice-payments-sepa-ach-.md#3단계-계좌이체-결제-옵션-선택)
-  * [4단계: 인보이스 저장 및 발송](bank-only-transfers-for-invoice-payments-sepa-ach-.md#4단계-인보이스-저장-및-발송)
-* [계좌이체 전용 결제의 일반적인 활용 사례](bank-only-transfers-for-invoice-payments-sepa-ach-.md#계좌이체-전용-결제의-일반적인-활용-사례)
-* [자주 묻는 질문](bank-only-transfers-for-invoice-payments-sepa-ach-.md#자주-묻는-질문)
-* [관련 문서](bank-only-transfers-for-invoice-payments-sepa-ach-.md#관련-문서)
+계좌 이체 전용 결제는 인보이스에서 쓸 수 있는 결제 수단을 계좌 이체 하나로 제한하는 기능이에요. 이 옵션을 선택하면 고객은 계좌 이체로만 결제할 수 있고, 카드 결제는 쓸 수 없어요.
 
-## 계좌이체 전용 결제란?
+이 기능은 다음과 같은 목적으로 만들어졌어요.
 
-계좌이체 전용 결제 기능을 사용하면 비즈니스가 인보이스의 결제 옵션을 계좌이체만으로 제한할 수 있습니다. 이 옵션을 선택하면 고객이 오직 계좌이체로만 결제하도록 하여 신용카드 거래를 완전히 배제할 수 있습니다.
+- 결제 수단을 더 세밀하게 설정할 수 있어요.
+- 계좌 이체가 일반적인 지역이나 업종에서 일하는 비즈니스를 지원해요.
+- 카드 결제에 드는 거래 수수료를 줄일 수 있어요.
 
-이 기능의 목적:
+## 계좌 이체 전용 결제의 장점
 
-* 결제 방법의 맞춤화 강화
-* 계좌이체가 일반적인 지역이나 업종의 비즈니스 지원
-* 카드 결제와 관련된 거래 수수료 절감
+- 비용 절감: 카드 결제에 붙는 높은 처리 수수료를 피할 수 있어요.
+- 비즈니스 유연성: 계좌 간 직접 거래를 선호하거나 요구하는 고객과 업종에 맞출 수 있어요.
+- 간단한 결제 과정: 안전한 결제 수단 하나에 집중해 인보이스 발송 과정을 단순하게 만들 수 있어요.
 
-## 계좌이체 전용 결제의 주요 장점
+## 인보이스에 계좌 이체 전용 결제 설정하기
 
-* **비용 절감**: 신용카드 결제와 관련된 높은 처리 수수료 회피
-* **비즈니스 유연성**: 은행 간 직접 거래를 선호하거나 필요로 하는 고객과 업종에 대응
-* **간소화된 결제 과정**: 하나의 안전한 결제 옵션에 집중하여 인보이스 과정 간소화
+### 1단계: 인보이스 메뉴 열기
 
-## 인보이스에서 계좌이체 전용 설정하는 방법
+1. 하이퍼클래스 계정에 로그인하세요.
+2. 메인 대시보드에서 **인보이스** 메뉴로 이동하세요.
 
-### 1단계: 인보이스 섹션 접속
+![인보이스 메뉴 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037603535/original/XPMfntm2k94BKValxpsZ8wSDoIZG5shPYg.png?1733165400)
 
-* Hyperclass 계정에 로그인하세요.
-* 메인 대시보드에서 인보이스(Invoices) 섹션으로 이동하세요.
+### 2단계: 인보이스 만들기 또는 편집하기
 
-![인보이스 섹션 접속](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037603535/original/XPMfntm2k94BKValxpsZ8wSDoIZG5shPYg.png?1733165400)
+1. 새 인보이스를 만들려면 **인보이스 만들기**를 클릭하세요.
+2. 기존 인보이스를 수정하려면 목록에서 해당 인보이스를 찾아 **편집**을 클릭하세요.
 
-### 2단계: 인보이스 생성 또는 편집
+![인보이스 만들기와 편집 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037603633/original/C98b_ZsIgRf1-BRAk1K-fKJasYfkhC8zhw.gif?1733165630)
 
-* 새 인보이스를 생성하려면 `+ 인보이스 생성(Create Invoice)` 버튼을 클릭하세요.
-* 기존 인보이스를 편집하려면 목록에서 찾아 `편집(Edit)` 버튼을 클릭하세요.
+### 3단계: 계좌 이체 결제 옵션 선택하기
 
-![인보이스 생성 및 편집](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037603633/original/C98b_ZsIgRf1-BRAk1K-fKJasYfkhC8zhw.gif?1733165630)
+1. **결제 옵션** 섹션까지 스크롤하세요.
+2. 유일한 결제 수단으로 **계좌 이체**를 선택하세요.
 
-### 3단계: 계좌이체 결제 옵션 선택
+![결제 옵션에서 계좌 이체를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037603634/original/8FyACPCMoKSX9_kZV-b0B99kv-4xqeKPuQ.gif?1733165639)
 
-* `결제 옵션(Payment Options)` 섹션까지 스크롤하세요.
-* 독점적인 결제 방법으로 `계좌이체(Bank Transfer)`를 선택하세요.
+### 4단계: 저장하고 인보이스 보내기
 
-![계좌이체 옵션 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037603634/original/8FyACPCMoKSX9_kZV-b0B99kv-4xqeKPuQ.gif?1733165639)
+1. 결제 옵션 설정이 끝나면 **저장**을 클릭하세요.
+2. **인보이스 보내기** 버튼을 눌러 고객에게 인보이스를 이메일로 보내세요.
 
-### 4단계: 인보이스 저장 및 발송
+![인보이스를 저장하고 보내는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037603640/original/lSRMxXfvpMNGo5cjdoVBgpGrqchU0UByaQ.gif?1733165646)
 
-* 결제 옵션을 구성한 후 `저장(Save)` 버튼을 클릭하세요.
-* `인보이스 발송(Send Invoice)` 버튼을 사용해 고객에게 인보이스를 이메일로 보내세요.
+## 이럴 때 활용해 보세요
 
-![인보이스 저장 및 발송](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037603640/original/lSRMxXfvpMNGo5cjdoVBgpGrqchU0UByaQ.gif?1733165646)
-
-## 계좌이체 전용 결제의 일반적인 활용 사례
-
-* **지역적 필요성**: 신용카드 사용률이 낮은 지역의 비즈니스
-* **거래 수수료**: 카드 처리 수수료를 피해 거래 비용을 최소화하려는 회사
-* **안전한 결제**: 직접적이고 안전한 은행 간 거래를 요구하는 고객
+- 지역 사정: 신용카드 사용이 적은 지역에서 영업하는 비즈니스
+- 거래 수수료: 카드 처리 수수료를 피해 거래 비용을 최소화하려는 회사
+- 안전한 결제: 계좌 간 직접 거래로 안전하게 결제하길 원하는 고객
 
 ## 자주 묻는 질문
 
-**Q: 같은 인보이스에서 카드 결제와 계좌이체를 모두 활성화할 수 있나요?** 네와 아니요. "모든 유효한 결제 방법(All Valid Payment Methods)"을 활성화해야 하는데, 이는 카드 결제와 계좌이체뿐만 아니라 더 많은 결제 방법을 포함합니다. 이 특정 기능은 인보이스에서 계좌이체를 독점적인 결제 옵션으로 만들기 위해 설계되었습니다.
+### 같은 인보이스에서 카드 결제와 계좌 이체를 둘 다 켤 수 있나요?
+일부만 가능해요. **모든 유효한 결제 수단**을 켜면 카드 결제와 계좌 이체뿐 아니라 다른 결제 수단까지 함께 켜져요. 이 기능은 계좌 이체를 인보이스의 유일한 결제 수단으로 만들기 위한 기능이에요.
 
-**Q: 이 기능을 사용하려면 Stripe 연동이 필요한가요?** 네, 계좌이체를 활성화하려면 이러한 결제를 처리할 수 있도록 Stripe 계정을 구성해야 합니다. 계좌이체 기능 설정에 대한 자세한 정보는 이 도움말 문서를 확인하세요: [인보이스의 ACH 직불 결제 방법](인보이스-견적/ach-debit-payment-method-on-invoices.md)
+### 이 기능을 쓰려면 Stripe 연동이 필요한가요?
+네, 계좌 이체를 켜려면 Stripe 계정에서 이 결제를 처리하도록 설정해야 해요. 계좌 이체 설정에 대해 더 알고 싶다면 "인보이스의 ACH 자동이체 결제 수단" 도움말을 참고하세요.
 
-**Q: 이 기능은 모든 Hyperclass 요금제에서 사용할 수 있나요?** 네, 인보이스 기능이 포함된 요금제라면 사용 가능합니다.
+### 모든 요금제에서 쓸 수 있나요?
+네, 사용 중인 요금제에 인보이스가 포함되어 있으면 쓸 수 있어요.
 
-**Q: 계좌이체 전용으로 결제된 금액은 어떻게 추적하나요?** 결제는 다른 결제 방법과 마찬가지로 인보이스 섹션에서 기록됩니다.
-
-## 관련 문서
-
-* [Hyperclass에서 인보이스 생성하는 방법](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/08-%EA%B2%B0%EC%A0%9C/%EC%9D%B8%EB%B3%B4%EC%9D%B4%EC%8A%A4-%EA%B2%AC%EC%A0%81/how-to-create-invoices-in-highlevel.md)
-* [Stripe 연동으로 표시되는 결제 방법 관리](시작하기/manage-payment-methods-displayed-with-stripe-integration.md)
-* [인보이스의 ACH 직불 결제 방법](인보이스-견적/ach-debit-payment-method-on-invoices.md)
-
-***
-
-_원문 최종 수정: 2025년 2월 8일_ _Hyperclass 사용 가이드 — hyperclass.ai_
+### 계좌 이체로 들어온 결제는 어디서 확인하나요?
+다른 결제 수단과 마찬가지로 **인보이스** 섹션에 결제 내역이 기록돼요.

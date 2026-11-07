@@ -1,186 +1,161 @@
 ---
-원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000008013-how-to-bulk-edit-calendar-availability-for-multiple-team-members
-번역일: 2026-08-11
-카테고리: 04-캘린더-예약 > Calendar Availability Settings
+원문: /support/solutions/articles/155000008013-how-to-bulk-edit-calendar-availability-for-multiple-team-members
+번역일: 2026-11-06
+카테고리: 04-캘린더-예약
 ---
 
-# 여러 팀원의 캘린더 예약 가능 시간을 일괄 편집하는 방법
+# 여러 팀원의 캘린더 가용성 한 번에 수정하기
 
-하이퍼클래스의 일괄 편집 예약 가능 시간(Bulk Edit Availability) 기능을 사용하면 하나의 캘린더 설정 화면에서 여러 팀원의 예약 가능 시간(Availability)을 한 번에 업데이트할 수 있어요. 팀원 한 명씩 개별적으로 수정하지 않고도 주간 근무 시간(Weekly Working Hours)이나 날짜별 시간(Date-Specific Hours)을 조정해야 하는 팀을 위해 만들어졌습니다. 개선된 일괄 편집 기능은 더 명확한 경고 문구, 날짜 기반 예외 사항에 대한 향상된 가시성, 그리고 더 안전한 저장 방식을 제공하여 실수로 인한 일정 변경을 방지하는 데 도움을 줘요.
+가용성 대량 편집을 쓰면 캘린더 설정 한 곳에서 여러 팀원의 **Weekly Working Hours**(주간 근무 시간)와 **Date-Specific Hours**(날짜별 시간)를 함께 바꿀 수 있어요. 팀원을 한 명씩 열어 수정하지 않아도 돼요. 개선된 대량 편집 화면에서는 경고 안내가 더 분명해졌고, 날짜별 예외를 보기 쉬워졌으며, 저장 방식이 더 안전해져서 일정이 실수로 바뀌는 일을 줄여 줘요.
 
-일괄 편집 예약 가능 시간은 여러 사용자가 비슷한 일정을 공유하거나, 특정 날짜에 동일한 특별 예약 가능 시간이 필요하거나, 캘린더 전반에 걸쳐 조율된 업데이트가 필요할 때 특히 유용해요.
+여러 사용자의 일정이 비슷할 때, 특정 날짜에 같은 특별 가용 시간이 필요할 때, 캘린더 전체의 일정을 한꺼번에 맞춰야 할 때 특히 유용해요.
 
----
+## 가용성 대량 편집이란?
 
-**목차**
+가용성 대량 편집은 캘린더 안의 **가용성** 탭에서 선택한 여러 팀원의 캘린더 가용성을 한 번에 수정하는 기능이에요. 팀원마다 가용성 설정을 따로 열 필요 없이, 사용자를 선택하고 시간을 편집한 뒤 한 번에 저장할 수 있어요.
 
-- [일괄 편집 예약 가능 시간이란?](#what-is-bulk-edit-availability)
-- [일괄 편집 예약 가능 시간의 주요 이점](#key-benefits-of-bulk-edit-availability)
-- [일괄 편집 예약 가능 시간의 주간 근무 시간](#weekly-working-hours-in-bulk-edit-availability)
-- [일괄 편집 예약 가능 시간의 날짜별 시간](#date-specific-hours-in-bulk-edit-availability)
-- [날짜별 시간 일괄 추가하기](#adding-date-specific-hours-in-bulk)
-- [일괄 예약 가능 시간 편집을 위한 더 똑똑한 저장 로직](#smarter-save-logic-for-bulk-availability-edits)
-- [일괄 편집 예약 가능 시간 설정 방법](#how-to-setup-bulk-edit-availability)
-- [자주 묻는 질문](#frequently-asked-questions)
+이 기능은 두 가지 가용성 유형을 지원해요. **Weekly Working Hours**와 **Date-Specific Hours**예요. **Weekly Working Hours**는 매주 반복되는 기본 일정을 정하고, **Date-Specific Hours**는 공휴일, 행사, 휴가, 연장 근무, 일회성 휴무처럼 특정 날짜의 예외를 정해요.
 
----
+## 가용성 대량 편집의 장점
 
-# 일괄 편집 예약 가능 시간이란?
+캘린더 관리자와 매니저는 일정 변경을 더 빠르게 처리하면서 실수로 바뀔 위험도 줄일 수 있어요. 저장하기 전에 확인할 수 있는 정보가 늘었고, 가용성 변경이 어떻게 적용될지 더 세밀하게 조절할 수 있어요.
 
-일괄 편집 예약 가능 시간을 사용하면 캘린더 안의 **예약 가능 시간(Availability)** 탭에서 선택한 여러 팀원의 캘린더 예약 가능 시간을 한 번에 업데이트할 수 있어요. 각 팀원의 예약 가능 시간 설정을 하나씩 여는 대신, 사용자를 선택하고 시간을 편집한 뒤 하나의 작업 흐름에서 변경 사항을 저장할 수 있습니다.
+- **더 분명한 일정 변경 안내:** **Weekly Working Hours**를 편집할 때 안내 배너가 나타나요. 변경 내용이 선택한 모든 사용자에게 적용된다는 것을 미리 알 수 있어요.
+- **더 안전한 대량 편집:** 섹션별로 저장되기 때문에 **Weekly Working Hours**와 **Date-Specific Hours**가 서로 덮어쓰지 않아요.
+- **날짜별 예외를 한눈에:** **Date-Specific Hours**가 날짜별로 묶여 보여서, 선택한 사용자들의 예외를 쉽게 확인할 수 있어요.
+- **팀 가용성 관리 시간 단축:** **Date-Specific Hours**를 한 번 추가하면 선택한 모든 사용자에게 동시에 적용돼요.
+- **사용자별 세밀한 조정:** 대량으로 추가한 뒤에도 사용자 한 명씩 **Date-Specific Hours**를 편집하거나 삭제할 수 있어요.
+- **실수로 덮어쓰는 일 방지:** 개선된 저장 방식 덕분에 편집하지 않은 일정 데이터는 그대로 보호돼요.
 
-이 기능은 **주간 근무 시간(Weekly Working Hours)**과 **날짜별 시간(Date-Specific Hours)**이라는 두 가지 중요한 예약 가능 시간 유형을 지원해요. 주간 근무 시간은 정기적으로 반복되는 일정을 관리하고, 날짜별 시간은 공휴일, 이벤트, 휴가, 연장 근무, 일시적 휴무 등 특정 날짜의 예외 상황을 처리하는 데 사용됩니다.
+## Weekly Working Hours 대량 편집
 
----
+**Weekly Working Hours**는 선택한 팀원의 반복되는 기본 가용 시간을 정해요. 보통 평일 근무, 일반 영업시간, 반복되는 예약 가능 시간에 써요.
 
-## 일괄 편집 예약 가능 시간의 주요 이점
+대량 편집 모드에서 **Weekly Working Hours**를 편집하면 하이퍼클래스가 안내 배너를 보여 줘요. 변경한 내용은 저장할 때 선택한 모든 사용자에게 적용돼요. 적용 범위를 미리 알고 변경할 수 있도록 한 거예요.
 
-일괄 편집 예약 가능 시간은 캘린더 관리자와 매니저가 더 빠르게 일정을 업데이트하면서 실수로 인한 변경 위험을 줄이는 데 도움을 줘요. 개선된 기능은 저장하기 전에 더 많은 맥락 정보를 제공하고, 예약 가능 시간 업데이트가 어떻게 적용되는지에 대한 통제력을 높여줍니다.
+다음과 같이 반복 일정을 바꿔야 할 때 **Weekly Working Hours**를 사용하세요.
 
-- **더 명확한 일정 업데이트:** 주간 근무 시간을 편집할 때 안내 배너가 표시되어 변경 사항이 선택한 모든 사용자에게 적용된다는 것을 알 수 있어요.
+- 여러 팀원의 기본 근무 시간을 바꿀 때
+- 특정 요일의 정기 가용 시간을 추가하거나 없앨 때
+- 공유 캘린더에서 팀 일정을 맞출 때
+- 인력이나 영업시간이 바뀐 뒤 정기 예약 가능 시간을 갱신할 때
 
-- **더 안전한 일괄 편집:** 섹션별 저장 방식을 통해 주간 근무 시간과 날짜별 시간이 서로 덮어쓰지 않도록 방지해요.
+{% hint style="warning" %}
+**Weekly Working Hours**를 수정하면 주간 일정만 바뀌어요. **Date-Specific Hours**는 바뀌지 않아요.
+{% endhint %}
 
-- **날짜별 예외 사항의 향상된 가시성:** 날짜별 시간이 날짜별로 그룹화되어 선택한 사용자들의 예외 사항을 더 쉽게 검토할 수 있어요.
+## Date-Specific Hours 대량 편집
 
-- **더 빠른 팀 예약 가능 시간 관리:** 날짜별 시간을 한 번만 추가하면 선택한 모든 사용자에게 동시에 적용돼요.
+**Date-Specific Hours**는 특정 날짜의 가용성 예외를 관리해요. 어떤 날에 사용자나 팀의 가용 시간이 평소 **Weekly Working Hours**와 다를 때 유용해요.
 
-- **사용자 단위의 더 세밀한 제어:** 일괄로 추가한 후에도 개별 사용자의 날짜별 시간을 편집하거나 삭제할 수 있어요.
+개선된 대량 편집 화면에서는 선택한 모든 사용자의 **Date-Specific Hours**가 날짜별로 묶여 보여요. 변경하기 전에 날짜마다 어떤 사용자의 가용 시간이 설정되어 있는지 한눈에 볼 수 있어요.
 
-- **실수로 인한 덮어쓰기 위험 감소:** 더 똑똑해진 저장 로직이 편집하지 않은 일정 데이터를 보호해줘요.
+날짜마다 다음 작업을 할 수 있어요.
 
----
-
-## 일괄 편집 예약 가능 시간의 주간 근무 시간
-
-주간 근무 시간(Weekly Working Hours)은 선택한 팀원들의 정기적으로 반복되는 예약 가능 시간을 정의해요. 일반적으로 표준 근무일, 정상 영업시간, 반복되는 예약 가능 시간을 설정할 때 사용됩니다.
-
-일괄 편집 모드에서 주간 근무 시간을 편집하면 하이퍼클래스는 영향 범위를 명확히 알 수 있도록 안내 배너를 표시해요. 저장 시 주간 근무 시간에 대한 변경 사항은 선택한 모든 사용자에게 적용됩니다. 이를 통해 업데이트를 적용하기 전에 변경 범위를 정확히 이해할 수 있어요.
-
-다음과 같이 반복되는 일정을 업데이트해야 할 때 주간 근무 시간을 사용하세요:
-
-- 여러 팀원의 표준 근무 시간 변경
-- 특정 요일의 정기 예약 가능 시간 추가 또는 삭제
-- 공유 캘린더 전반에 걸친 팀 일정 정렬
-- 인력 구성이나 영업시간 변경 후 정기 예약 가능 시간 업데이트
-
-**중요:** 주간 근무 시간을 업데이트하면 주간 일정만 변경돼요. 날짜별 시간은 업데이트되지 않습니다.
-
----
-
-## 일괄 편집 예약 가능 시간의 날짜별 시간
-
-날짜별 시간(Date-Specific Hours)은 특정 캘린더 날짜에 대한 예약 가능 시간 예외를 관리하는 데 사용돼요. 특정 사용자나 팀이 특정 날짜에 평소 주간 근무 시간과 다른 예약 가능 시간을 가져야 할 때 유용합니다.
-
-개선된 일괄 편집 예약 가능 시간 기능은 선택한 모든 사용자의 날짜별 시간을 날짜별로 그룹화된 형식으로 보여줘요. 이를 통해 변경 작업을 하기 전에 각 날짜에 어떤 사용자들이 예약 가능 시간을 설정해뒀는지 더 명확하게 확인할 수 있습니다.
-
-각 날짜별로 다음과 같은 작업이 가능해요:
-
-- 선택한 사용자 중 몇 명이 예약 가능 시간을 설정했는지 확인
-- 해당 날짜에 대한 개별 사용자의 시간 블록 확인
+- 가용 시간이 설정된 선택 사용자가 몇 명인지 확인
+- 해당 날짜 아래에서 사용자별 시간대 확인
 - 특정 사용자의 항목 편집
 - 특정 사용자의 항목 삭제
 
-이런 구조 덕분에 공휴일, 특별 이벤트, 제한된 예약 가능 일자, 연장 근무, 일시적인 일정 변경 같은 예외 사항을 더 쉽게 관리할 수 있어요.
+공휴일, 특별 행사, 가용 시간이 제한된 날, 연장 근무, 임시 일정 변경 같은 예외를 관리하기 쉬워요.
 
-중요: 날짜별 시간을 업데이트하면 날짜 기반 예외 사항만 변경돼요. 주간 근무 시간은 업데이트되지 않습니다.
+{% hint style="warning" %}
+**Date-Specific Hours**를 수정하면 날짜별 예외만 바뀌어요. **Weekly Working Hours**는 바뀌지 않아요.
+{% endhint %}
 
----
+## Date-Specific Hours 한꺼번에 추가하기
 
-## 날짜별 시간 일괄 추가하기
+**Date-Specific Hours**를 대량으로 추가하면 같은 날짜별 가용 시간을 선택한 모든 사용자에게 한 번에 적용할 수 있어요. 여러 팀원이 특정 날짜에 같은 특별 가용 시간이나 불가 시간이 필요할 때 유용해요.
 
-날짜별 시간을 일괄로 추가하면 선택한 모든 사용자에게 동일한 날짜 기반 예약 가능 시간 블록을 한 번에 적용할 수 있어요. 여러 팀원이 특정 날짜에 동일한 특별 예약 가능 시간이나 예약 불가 시간이 필요할 때 유용합니다.
+대량 편집 모드에서 새 **Date-Specific Hours** 시간대를 추가하면 하이퍼클래스가 선택한 모든 사용자에게 그 시간대를 적용해요. 항목이 만들어진 뒤에도 필요하면 사용자별로 항목을 편집하거나 삭제할 수 있어요.
 
-일괄 편집 모드에서 새로운 날짜별 시간 블록을 추가하면 하이퍼클래스는 해당 시간 블록을 선택한 모든 사용자에게 적용해요. 항목이 생성된 후에도 필요에 따라 개별 사용자별로 항목을 편집하거나 삭제할 수 있습니다.
+이런 경우에 사용하세요.
 
-다음과 같은 경우에 활용해보세요:
+- 팀이 같은 날짜에 특별 행사 예약을 받을 때
+- 사업장의 공휴일 영업시간이 조정될 때
+- 여러 직원에게 같은 일회성 가용성 예외가 필요할 때
+- 선택한 사용자들이 특정 날짜에 임시로 일정을 바꿔야 할 때
 
-- 팀 전체가 같은 날짜에 특별 이벤트 예약을 받을 수 있을 때
-- 특정 사업장의 공휴일 영업시간이 조정되었을 때
-- 여러 직원이 동일한 일회성 예약 가능 시간 예외가 필요할 때
-- 선택한 사용자들이 특정 날짜에 일시적인 일정 변경이 필요할 때
+## 대량 편집의 저장 방식
 
----
+가용성 대량 편집은 이제 섹션별로 저장돼요. 하이퍼클래스는 내가 변경한 가용성 섹션만 업데이트해요. 여러 사용자를 편집하다가 일정이 실수로 사라지는 일을 막아 줘요.
 
-## 일괄 예약 가능 시간 편집을 위한 더 똑똑한 저장 로직
+예를 들어 **Weekly Working Hours**를 수정하면 주간 일정만 바뀌고, **Date-Specific Hours**를 수정하면 날짜별 예외만 바뀌어요.
 
-이제 일괄 예약 가능 시간 업데이트는 섹션별 저장 방식을 사용해요. 즉, 하이퍼클래스는 여러분이 변경한 예약 가능 시간 섹션만 업데이트하여, 여러 사용자를 편집할 때 실수로 일정이 사라지는 것을 방지해줍니다.
+**Weekly Working Hours**와 **Date-Specific Hours**는 쓰임새가 달라서 저장 방식도 분리했어요. 이번에 수정하지 않은 기존 가용성 정보는 그대로 보호돼요.
 
-예를 들어 주간 근무 시간을 업데이트하면 주간 일정만 변경돼요. 날짜별 시간을 업데이트하면 날짜 기반 예외 사항만 변경됩니다.
+섹션별 저장은 다음과 같이 동작해요.
 
-주간 근무 시간과 날짜별 시간은 각각 다른 목적으로 사용되기 때문에 이러한 저장 방식이 중요해요. 저장 로직을 분리해두면 여러분이 더 많은 통제력을 가질 수 있고, 이번 업데이트에 포함되지 않은 기존 예약 가능 시간 정보를 보호하는 데 도움이 됩니다.
+- **Weekly Working Hours**를 수정하면 주간 일정만 바뀌어요.
+- **Date-Specific Hours**를 수정하면 날짜별 예외만 바뀌어요.
+- 편집하지 않은 가용성 섹션은 저장해도 바뀌지 않아요.
 
-섹션별 저장 방식은 다음과 같이 작동해요:
+## 가용성 대량 편집 설정하기
 
-- **주간 근무 시간**을 업데이트하면 주간 일정만 변경돼요.
-- **날짜별 시간**을 업데이트하면 날짜 기반 예외 사항만 변경돼요.
-- 편집하지 않은 예약 가능 시간 섹션은 해당 저장 작업으로 인해 변경되지 않아요.
+저장하기 전에 선택한 사용자를 확인하고, 반복되는 **Weekly Working Hours**를 편집하는지 특정 날짜의 **Date-Specific Hours**를 편집하는지 다시 한번 확인하세요. 그래야 의도한 팀원에게만 일정 변경이 적용돼요.
 
----
+1. 하이퍼클래스에서 **캘린더**(Calendars)로 이동하세요.
+2. **캘린더 설정**을 여세요.
+3. 수정할 캘린더를 선택하세요.
 
-## 일괄 편집 예약 가능 시간 설정 방법
+   ![캘린더 설정에서 캘린더를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155072195956/original/lohvZQjUOJ4wq3s1c3puzrJ2fgmvKzAyLA.png?1779788876)
 
-일괄 편집 예약 가능 시간을 올바르게 설정하면 원하는 팀원에게 의도한 일정 업데이트가 정확히 적용되도록 할 수 있어요. 저장하기 전에 선택한 사용자 목록을 검토하고, 반복되는 주간 근무 시간을 편집하는 것인지 특정 날짜의 날짜별 시간을 편집하는 것인지 확인하세요.
+4. **Pencil Icon**(연필 아이콘)을 클릭해 원하는 캘린더를 **편집**하세요.
 
-- 하이퍼클래스에서 **캘린더(Calendars)** 메뉴로 이동하세요.
-- **캘린더 설정(Calendar Settings)**을 여세요.
-- 업데이트할 캘린더를 선택하세요.
+   ![캘린더 편집을 위한 연필 아이콘](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155072196504/original/gKbdFrbXYtJ_cjB97DugUB3klxiaRazMcw.png?1779788970)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155072195956/original/lohvZQjUOJ4wq3s1c3puzrJ2fgmvKzAyLA.png?1779788876)
+5. **가용성** 탭으로 이동하세요.
 
-- 원하는 캘린더를 편집하려면 **연필 아이콘(Pencil Icon)**을 클릭하세요.
+   ![캘린더의 가용성 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155072197104/original/cIJBOR_P5xmWu5tipgnJUwsHj9Js5zzojA.png?1779789083)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155072196504/original/gKbdFrbXYtJ_cjB97DugUB3klxiaRazMcw.png?1779788970)
+6. **대량 편집**을 클릭하세요.
+7. 수정할 팀원을 선택하세요.
+8. **Edit hours**(시간 편집)를 클릭하세요.
 
-- **예약 가능 시간(Availability)** 탭으로 이동하세요.
+   ![대량 편집에서 팀원을 선택하고 시간 편집을 누르는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155072197873/original/L0xec2T2DqITH51_ugklmxj1ZvZDfvuYzg.png?1779789321)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155072197104/original/cIJBOR_P5xmWu5tipgnJUwsHj9Js5zzojA.png?1779789083)
+9. **Weekly Working Hours** 또는 **Date-Specific Hours** 중 하나를 수정하세요.
 
-- **일괄 편집(Bulk edit)**을 클릭하세요.
-- 업데이트할 팀원을 선택하세요.
-- **시간 편집(Edit hours)**을 클릭하세요.
+   ![Weekly Working Hours 또는 Date-Specific Hours 수정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155072198125/original/tukiBWPfXpu67pnxQyiAN_NIXiiSYpCoRA.png?1779789489)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155072197873/original/L0xec2T2DqITH51_ugklmxj1ZvZDfvuYzg.png?1779789321)
+10. 선택한 사용자와 가용성 변경 내용을 확인하세요.
+11. **변경사항 저장**을 클릭하세요.
 
-- **주간 근무 시간(Weekly Working Hours)** 또는 **날짜별 시간(Date-Specific Hours)** 중 원하는 항목을 업데이트하세요.
+    ![변경사항 저장 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155072198358/original/V6MUrN3_eq0gqttMe7ouUHAfDG06xu2EMg.png?1779789635)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155072198125/original/tukiBWPfXpu67pnxQyiAN_NIXiiSYpCoRA.png?1779789489)
-
-- 선택한 사용자와 예약 가능 시간 변경 사항을 검토하세요.
-- **변경사항 저장(Save Changes)**을 클릭하세요.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155072198358/original/V6MUrN3_eq0gqttMe7ouUHAfDG06xu2EMg.png?1779789635)
-
-편집한 예약 가능 시간 섹션만 업데이트돼요. 예를 들어 주간 근무 시간을 저장해도 날짜별 시간은 삭제되지 않고, 날짜별 시간을 저장해도 주간 근무 시간은 변경되지 않습니다.
-
----
+편집한 가용성 섹션만 업데이트돼요. 예를 들어 **Weekly Working Hours**를 저장해도 **Date-Specific Hours**가 지워지지 않고, **Date-Specific Hours**를 저장해도 **Weekly Working Hours**는 바뀌지 않아요.
 
 ## 자주 묻는 질문
 
-Q: 주간 근무 시간 변경 사항이 선택한 모든 사용자에게 적용되나요?
-네. 일괄 편집 모드에서 주간 근무 시간을 편집하면 저장 후 선택한 모든 사용자에게 변경 사항이 적용돼요.
+### Weekly Working Hours를 바꾸면 선택한 모든 사용자에게 적용되나요?
+네. 대량 편집 모드에서 **Weekly Working Hours**를 편집하면 저장한 뒤 선택한 모든 사용자에게 변경 내용이 적용돼요.
 
-Q: 일괄 추가한 후 특정 사용자 한 명의 날짜별 시간만 따로 편집할 수 있나요?
-네. 새로 추가한 날짜별 시간은 선택한 모든 사용자에게 적용되지만, 이후 특정 사용자가 다른 일정이 필요하다면 개별 사용자의 시간 블록을 따로 편집할 수 있어요.
+### 대량으로 추가한 Date-Specific Hours를 사용자 한 명만 따로 편집할 수 있나요?
+네. 새 **Date-Specific Hours**는 선택한 모든 사용자에게 적용되지만, 나중에 일정이 달라야 하는 사용자가 있으면 그 사용자의 시간대만 따로 편집할 수 있어요.
 
-Q: 한 사용자의 날짜별 시간만 삭제할 수 있나요?
-네. 날짜별 시간은 날짜별로 개별 사용자의 시간 블록과 함께 표시되므로, 필요할 때 특정 사용자의 항목만 삭제할 수 있어요.
+### Date-Specific Hours를 사용자 한 명만 삭제할 수 있나요?
+네. **Date-Specific Hours**는 날짜별로 사용자 시간대가 나뉘어 보여서, 필요하면 특정 사용자의 항목만 삭제할 수 있어요.
 
-Q: 주간 근무 시간을 저장하면 날짜별 시간이 삭제되나요?
-아니요. 저장 방식은 섹션별로 독립적이에요. 주간 근무 시간을 업데이트하면 주간 일정만 변경됩니다.
+### Weekly Working Hours를 저장하면 Date-Specific Hours가 삭제되나요?
+아니요. 저장은 섹션별로 이뤄져요. **Weekly Working Hours**를 수정하면 주간 일정만 바뀌어요.
 
-Q: 날짜별 시간을 저장하면 주간 근무 시간이 변경되나요?
-아니요. 날짜별 시간을 업데이트하면 날짜 기반 예외 사항만 변경돼요.
+### Date-Specific Hours를 저장하면 Weekly Working Hours가 바뀌나요?
+아니요. **Date-Specific Hours**를 수정하면 날짜별 예외만 바뀌어요.
 
-Q: 예약 가능 시간을 업데이트했는데도 예약 슬롯이 계속 보이지 않아요. 왜 그런가요?
-예약 가능 시간은 예약 슬롯 표시 여부를 결정하는 요소 중 하나일 뿐이에요. 연결된 캘린더, 충돌 캘린더, 버퍼, 예약 건수 제한, 캘린더 설정 및 기타 제약 조건이 특정 슬롯의 표시를 막고 있을 수 있어요.
+### 가용성을 수정했는데도 예약 가능한 시간이 계속 안 보여요.
+가용성은 예약 가능 시간이 표시되는 여러 조건 중 하나예요. **연결된 캘린더**, 충돌 캘린더, 버퍼, 예약 한도, 캘린더 설정, 그 밖의 제한 때문에 일부 시간이 계속 보이지 않을 수 있어요. 자세한 내용은 [캘린더에 예약 가능 시간이 보이지 않는 이유](../why-appointment-time-slots-are-missing-on-your-calendar.md)를 참고하세요.
 
-Q: 주간 근무 시간과 날짜별 시간 중 어떤 것을 사용해야 하나요?
-정기적으로 반복되는 일정에는 주간 근무 시간을 사용하고, 특정 날짜의 일회성 변경 사항에는 날짜별 시간을 사용하세요.
+### Weekly Working Hours와 Date-Specific Hours 중 무엇을 써야 하나요?
+정기적으로 반복되는 일정에는 **Weekly Working Hours**를 쓰세요. 특정 날짜에만 필요한 일회성 변경에는 **Date-Specific Hours**를 쓰세요.
 
-Q: 일괄 편집 예약 가능 시간이 이미 예약된 약속에도 영향을 미치나요?
-이 기능 설명은 예약 가능 시간 설정에 대한 업데이트만 다루고 있으며, 이미 예약된 약속이 변경된다고 명시되어 있지는 않아요. 예약 가능 시간 변경이 향후 예약 옵션에 어떤 영향을 미치는지 확인하고 싶다면 저장 후 캘린더를 검토해보세요.
+### 가용성 대량 편집을 하면 이미 잡힌 예약도 바뀌나요?
+릴리스 노트에는 가용성 설정이 업데이트된다고만 나와 있어요. 이미 잡힌 예약이 바뀐다는 설명은 없어요. 가용성 변경이 앞으로의 예약 옵션에 어떤 영향을 주는지 확인하려면 저장한 뒤 캘린더를 직접 살펴보세요.
 
----
-*원문 최종 수정: 2026-05-26*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+## 함께 보면 좋은 문서
+
+- [하이퍼클래스 캘린더 가용성: Weekly Working Hours & Date-Specific Hours](../캘린더-만들기/calendar-availability-weekly-working-hours-date-specific-hours.md)
+- [일정(Schedules) - 가용성 통합 관리](schedules-centralized-availability-management.md)
+- [캘린더 가용성 설정 이해하기](adjusting-availability-settings-for-individual-calendars.md)
+- [서비스에서 직원 가용성과 근무 시간 설정하기](../configuring-staff-in-services.md)
+- [연결된 캘린더와 충돌 캘린더 설정하기](../setting-up-linked-calendars-conflict-calendars.md)
+- [캘린더에 예약 가능 시간이 보이지 않는 이유](../why-appointment-time-slots-are-missing-on-your-calendar.md)

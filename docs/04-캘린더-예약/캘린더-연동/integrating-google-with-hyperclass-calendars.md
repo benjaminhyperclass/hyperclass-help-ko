@@ -1,102 +1,95 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 04-캘린더-예약 > 캘린더-연동
+원문: /support/solutions/articles/155000002369-integrating-google-with-highlevel-calendars
+번역일: 2026-11-06
+카테고리: 04-캘린더-예약
 ---
 
-# 구글 캘린더와 Hyperclass 캘린더 연동하기
+# Google Calendar를 하이퍼클래스 캘린더에 연동하기
 
-이 가이드에서는 **구글 계정을 Hyperclass 캘린더에 연결하여** 원활한 일정 동기화와 효율적인 캘린더 관리를 하는 방법을 안내합니다.
+Google 계정을 하이퍼클래스 **캘린더**(Calendars)에 연결하면 일정이 서로 동기화되고, 캘린더를 한곳에서 관리할 수 있어요. 이 문서에서는 Google Calendar를 연결하는 순서를 안내해요.
 
-## 목차
+## Google Calendar 연동이란?
 
-- [구글 캘린더 연동이란?](#구글-캘린더-연동이란)
-- [구글 캘린더 연동의 주요 장점](#구글-캘린더-연동의-주요-장점)
-- [구글 캘린더 연동 사전 준비사항](#구글-캘린더-연동-사전-준비사항)
-- [구글 캘린더 연결 단계](#구글-캘린더-연결-단계)
-- [자주 묻는 질문](#자주-묻는-질문)
+Google Calendar를 하이퍼클래스와 연동하면 실시간 일정 관리, 간편한 가용 시간 관리, 플랫폼 간 동기화를 쓸 수 있어요. 통화 예약, 예약 자동화, 팀 일정 조율을 한곳에서 처리하기에 알맞아요.
 
-## 구글 캘린더 연동이란?
+## Google Calendar 연동의 주요 장점
 
-Hyperclass와 구글 캘린더 연동을 통해 **실시간 예약 관리**, 간편한 예약 가능 시간 관리, **플랫폼 간 원활한 동기화**가 가능합니다. 통화 예약, 예약 자동화, 팀 협업 등을 한 곳에서 처리할 수 있어 매우 유용합니다.
+- Google Calendar와 하이퍼클래스 사이에서 예약이 실시간으로 동기화돼요.
+- 양방향 동기화로 두 플랫폼의 일정이 서로 같게 유지돼요.
+- 충돌 캘린더를 활용해 중복 예약을 막을 수 있어요.
+- 프로필마다 캘린더를 선택할 수 있어서 여러 사용자가 함께 쓰는 환경도 지원해요.
+- 일정이 더 잘 보이고 관리하기 쉬워져요.
+- 연결이 끊긴 동안 만들어진 예약은 다시 연결하면 자동으로 동기화돼요. 새 캘린더를 연결하거나 선택한 캘린더를 바꾸면 앞으로의 예약이 자동으로 다시 동기화돼요.
 
-## 구글 캘린더 연동의 주요 장점
+## 연동 전에 준비할 것
 
-- 구글 캘린더와 Hyperclass 간 실시간 예약 동기화
-- 양방향 동기화로 두 플랫폼 모두 일치하는 일정 유지
-- 충돌 캘린더 기능으로 중복 예약 방지
-- 프로필별 캘린더 선택이 가능한 다중 사용자 설정 지원
-- 향상된 가시성과 제어로 간소화된 예약 관리
+1. 사용할 수 있는 Google 계정
+2. 하이퍼클래스 **캘린더 설정**에 대한 **관리자** 또는 사용자 수준 접근 권한
+3. 연결할 캘린더가 충돌하는 권한으로 공유되어 있지 않아야 해요.
 
-## 구글 캘린더 연동 사전 준비사항
+{% hint style="info" %}
+캘린더 연동은 회사 전체 설정이 아니라 사용자 프로필별로 연결돼요. 각 사용자가 자신의 Google Calendar를 직접 연결해야 해요.
+{% endhint %}
 
-- 유효한 구글 계정
-- Hyperclass 캘린더 설정(Calendar Settings)에 대한 관리자 또는 사용자 수준 접근 권한
-- 연결할 캘린더가 충돌하는 권한으로 공유되지 않은 상태
+## Google Calendar 연결 순서
 
-**참고**: 캘린더 연동은 개별 사용자 프로필에 연결되며, 전체 회사 설정이 아닙니다. 각 사용자는 자신의 구글 캘린더를 개별적으로 연결해야 합니다.
+### 1단계: 캘린더 연결 화면으로 이동하기
 
-## 구글 캘린더 연결 단계
+1. 서브 계정으로 이동해 왼쪽 메뉴에서 **캘린더**를 선택하고, 오른쪽 위의 **캘린더 설정**을 클릭하세요.
 
-### 1단계: 캘린더 연결 페이지로 이동
+   ![캘린더 화면 오른쪽 위의 캘린더 설정 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050180404/original/7DzuYUvJc0EGi-lSow3gnOwZyyqaovKwtg.png?1753112360)
+2. 위쪽 탭에서 **연결**을 클릭한 다음, **새로 추가 +** 버튼을 눌러 새 캘린더를 추가하세요.
 
-- 하위 계정으로 이동한 후 왼쪽 사이드바에서 캘린더(Calendars)를 선택하고, 우측 상단의 캘린더 설정(Calendar Settings)을 클릭합니다.
+   ![연결 탭에서 새로 추가 버튼을 누르는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050180701/original/dbjrV8gci36b1H-taFZVzuTRn4AEZ5PyMw.png?1753112644)
 
-![캘린더 설정 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050180404/original/7DzuYUvJc0EGi-lSow3gnOwZyyqaovKwtg.png?1753112360)
+### 2단계: Google 계정으로 인증하기
 
-- 상단 네비게이션에서 연결(Connections) 탭을 클릭한 후, + 새로 추가(Add New) 버튼을 클릭하여 새 캘린더를 추가합니다.
+1. **연결** 페이지에서 Google Calendar 옆의 **연결** 버튼을 클릭하세요.
 
-![연결 탭에서 새 캘린더 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050180701/original/dbjrV8gci36b1H-taFZVzuTRn4AEZ5PyMw.png?1753112644)
+   ![Google Calendar 옆의 연결 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050180794/original/_sWTEdQBEEhDnXoyRt-Ef4d2efTeCUjC1g.png?1753112712)
+2. 사용할 Google 계정을 선택하세요.
+3. 요청하는 권한을 모두 허용하세요. **캘린더**(읽기/쓰기), **프로필**, **이메일** 접근 권한이 포함돼요.
 
-### 2단계: 구글 계정 인증
+   ![Google 계정 권한 허용 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050180917/original/TsIcIfPiiMCzymf4Tg4IVsCb94ML43i2YQ.png?1753112811)
 
-- 연결(Connections) 페이지에서 구글 캘린더(Google Calendar) 옆의 연결(Connect) 버튼을 클릭합니다.
+{% hint style="warning" %}
+캘린더 전체 접근 권한을 허용해야 해요. "writer" 권한을 허용하지 않으면 동기화 문제가 생길 수 있어요.
+{% endhint %}
 
-![구글 캘린더 연결 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050180794/original/_sWTEdQBEEhDnXoyRt-Ef4d2efTeCUjC1g.png?1753112712)
-
-- 사용할 구글 계정을 선택합니다.
-- 다음을 포함한 모든 권한 요청을 수락합니다: 캘린더(읽기/쓰기), 프로필 및 이메일 접근
-
-![구글 계정 권한 승인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050180917/original/TsIcIfPiiMCzymf4Tg4IVsCb94ML43i2YQ.png?1753112811)
-
-**필수 권한**: 전체 캘린더 접근 권한을 허용해야 합니다. "쓰기" 권한을 부여하지 않으면 동기화 문제가 발생할 수 있습니다.
-
-**참고**: 구글에서는 연결 시 일부 권한만 부여하도록 허용할 수 있습니다. 필요한 모든 권한을 부여하지 않으면 동기화가 실패할 수 있습니다. `설정(Settings) → 연동(Integrations) → 구글(Google)`에서 권한 누락 경고를 확인하고, 재연결(Reconnect)을 사용하여 누락된 권한을 부여하세요.
+{% hint style="info" %}
+연결할 때 Google에서 권한을 일부만 허용할 수도 있어요. 필요한 권한을 모두 허용하지 않으면 동기화가 실패할 수 있어요. **설정 > 연동 > Google**에서 권한 누락 경고가 있는지 확인하고, **Reconnect**(다시 연결)로 빠진 권한을 허용하세요.
+{% endhint %}
 
 ## 자주 묻는 질문
 
-**Q: 캘린더가 동기화되지 않는 이유는 무엇인가요?**
+### 캘린더가 동기화되지 않아요. 왜 그런가요?
 
-`설정(Settings) → 연동(Integrations) → 구글(Google)`에서 권한 누락 경고를 확인하고, 필요한 권한이 없다면 재연결(Reconnect)을 클릭하세요.
+**설정 > 연동 > Google**에서 권한 누락 경고가 있는지도 확인하세요. 필수 권한이 빠져 있다면 **Reconnect**(다시 연결)를 클릭하세요.
 
-**Q: 내 구글 캘린더가 목록에 보이지 않아요. 어떻게 해야 하나요?**
+### Google Calendar가 목록에 보이지 않아요. 어떻게 하나요?
 
-올바른 구글 계정에 로그인했는지 확인하세요. 모든 구글 계정에서 로그아웃한 후 올바른 계정으로 다시 연결하세요.
+올바른 Google 계정으로 로그인했는지 확인하세요. 모든 Google 계정에서 로그아웃한 뒤, 올바른 계정으로 다시 연결하세요.
 
-**Q: 구글 캘린더 동기화가 중단되는 이유는 무엇인가요?**
+### Google Calendar 동기화가 끊기는 이유는 무엇인가요?
 
 - 토큰 만료
 - 캘린더 삭제
-- 연결 후 권한 취소
+- 연결한 뒤 권한 취소
 
-자세한 내용은 [구글 캘린더 연동이 중단되는 이유와 해결 방법](../트러블슈팅/why-google-calendar-integration-breaks.md)을 참고하세요.
+자세한 내용은 "Why Google Calendar Integration Breaks and How to Fix it" 문서를 참고하세요.
 
-**Q: 연결된 구글 캘린더가 삭제되어 오류 배너가 표시되면 어떻게 해야 하나요?**
+### 연결한 Google Calendar가 삭제되어 오류 배너가 보여요. 어떻게 하나요?
 
-배너의 문제 해결(Fix This) 옵션을 사용하여 삭제된 캘린더 인스턴스와 Hyperclass에서 연결된 위치를 보여주는 모달을 열어보세요. 삭제된 캘린더 제거(Remove Deleted Calendars)를 클릭하여 중단된 연결을 정리한 후, 필요에 따라 재연결하거나 활성 캘린더를 선택하세요.
+배너의 **Fix This**(해결하기)를 클릭하세요. 삭제된 캘린더 목록과, 그 캘린더가 하이퍼클래스 어디에 연결되어 있는지 보여 주는 창이 열려요. **Remove Deleted Calendars**(삭제된 캘린더 제거)를 클릭하면 끊어진 연결이 정리돼요. 이후 필요하면 다시 연결하거나 사용 중인 캘린더를 선택하세요.
 
-**Q: 여러 사용자가 하나의 캘린더를 사용할 수 있나요?**
+### 캘린더 하나를 여러 사용자가 함께 쓸 수 있나요?
 
-아니요, 캘린더 연동은 사용자별로 설정됩니다. 개인화된 예약과 동기화를 위해 각 사용자는 자신의 구글 캘린더를 연결해야 합니다.
+아니요. 캘린더 연동은 사용자별로 이루어져요. 개인별 일정 예약과 동기화를 쓰려면 각 사용자가 자신의 Google Calendar를 연결해야 해요.
 
-**Q: 여러 개의 구글 캘린더를 동기화할 수 있나요?**
+### Google Calendar를 여러 개 동기화할 수 있나요?
 
-네, 여러 구글 캘린더를 연결할 수 있습니다. 예약용으로 하나의 캘린더를 연결된 캘린더(Linked Calendar)로 설정하고, 나머지는 충돌 캘린더(Conflict Calendars)로 설정하여 중복 예약을 방지할 수 있습니다.
+네, Google Calendar를 여러 개 연결할 수 있어요. 예약에 쓸 캘린더 하나는 **Linked Calendar**(연결된 캘린더)로, 나머지는 **Conflict Calendars**(충돌 캘린더)로 설정하면 중복 예약을 막을 수 있어요.
 
-**Q: 특정 구글 계정 유형(예: Gmail, G Suite)이 필요한가요?**
+### 특정 종류의 Google 계정이 필요한가요? (Gmail, G Suite 등)
 
-아니요, 개인 Gmail 계정과 G Suite(Google Workspace) 계정 모두 이 연동과 호환됩니다.
-
----
-*원문 최종 수정: 2026-02-12*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+아니요. 개인 Gmail 계정과 G Suite(Google Workspace) 계정 모두 이 연동을 쓸 수 있어요.

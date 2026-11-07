@@ -1,107 +1,96 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 07-워크플로우 > CRM 워크플로우 액션
+원문: /support/solutions/articles/155000006701-custom-object-and-company-based-workflow-actions-triggers
+번역일: 2026-11-06
+카테고리: 07-워크플로우
 ---
 
-# 커스텀 객체 및 회사 기반 워크플로우 액션과 트리거
+# 사용자 지정 객체·회사 기반 워크플로우 액션과 트리거
 
-Hyperclass의 커스텀 객체 및 회사 기반 워크플로우 액션과 트리거를 사용하면 연락처, 회사, 커스텀 객체 간의 자동화가 가능해집니다. 이 도구들로 연관된 레코드를 다른 워크플로우에 등록하거나 제거하고, 웹훅 데이터나 필드 필터를 통해 정확한 레코드를 찾을 수 있어요.
+연락처, 회사, 사용자 지정 객체를 넘나들며 자동화할 때 쓰는 워크플로우 액션을 소개해요. 연결된 레코드를 다른 워크플로우에 넣거나 빼고, 웹훅 데이터나 필드 필터로 원하는 레코드를 정확히 찾을 수 있어요.
 
----
+## 사용자 지정 객체·회사 기반 워크플로우 액션과 트리거란?
 
-## 커스텀 객체 및 회사 기반 워크플로우 액션과 트리거란?
+하이퍼클래스 워크플로우에는 레코드 사이의 관계(연결)를 이해하는 액션이 있어요. 워크플로우를 시작시킨 레코드만 자동화하는 것이 아니라, 그 레코드와 연결된 연락처, 회사, 사용자 지정 객체를 대상으로 삼을 수 있어요. 레코드 ID, 외부 ID, 필드 조건으로 원하는 레코드를 정확히 찾을 수도 있어요. 이렇게 데이터와 관계를 바탕으로 자동화를 만들 수 있어요.
 
-Hyperclass 워크플로우는 레코드 간의 관계(연관성)를 이해하는 액션을 지원합니다. 워크플로우를 트리거한 레코드만 자동화하는 것이 아니라, 연관된 연락처, 회사 또는 커스텀 객체를 대상으로 하고 ID, 외부 ID, 또는 필드 조건을 사용해 정확한 레코드를 찾을 수 있어요. 이를 통해 데이터 인식 기반의 관계 중심 자동화가 가능합니다.
+이 문서에서 다루는 액션은 다음 세 가지예요.
 
-각 워크플로우 액션에 대한 자세한 정보는 다음 문서들을 참고하세요!
+- **Add Associated Records to Workflow**(연결된 레코드를 워크플로우에 추가)
+- **Remove Associated Records from Workflow**(연결된 레코드를 워크플로우에서 제거)
+- **Find Object Record**(객체 레코드 찾기) / **Find Company**(회사 찾기)
 
-- [워크플로우 액션 - 연관된 레코드를 워크플로우에 추가](workflow-action-add-associated-records-to-workflow.md)
-- [워크플로우 액션 - 워크플로우에서 연관된 레코드 제거](workflow-action-remove-associated-records-from-workflow.md)
-- [워크플로우 액션 - 객체 레코드 찾기 / 회사 찾기](workflow-action-find-object-record-find-company.md)
+## 이런 점이 좋아요
 
----
+- 더 깊은 자동화: 수동 작업 없이 연락처, 회사, 사용자 지정 객체에 걸쳐 동작하는 흐름을 만들 수 있어요.
+- 관계 기반 대상 지정: **Association Label**(연결 레이블)로 필터링해서 원하는 연결 레코드에만 도달할 수 있어요.
+- 정확한 레코드 조회: **Find** 액션에서 **Record ID**(레코드 ID), **External ID**(외부 ID), 필드 필터로 레코드를 찾아요. 인바운드 웹훅으로 들어온 동적 값도 쓸 수 있어요.
+- 분기 로직: **Record Found**(레코드 찾음)와 **Record Not Found**(레코드 못 찾음)에 따라 흐름을 나눌 수 있어요. 일치하는 레코드가 여러 개면 **Earliest**(가장 오래된 것), **Latest**(가장 최근 것), **All**(전체) 중에서 고를 수 있어요.
+- 세밀한 운영 제어: 연결된 레코드를 다른 워크플로우에 넣거나 빼서, 원하는 시점에 커뮤니케이션이나 프로세스를 시작하거나 멈출 수 있어요.
 
-## 커스텀 객체 및 회사 기반 워크플로우 액션과 트리거의 주요 장점
+## Add Associated Records to Workflow
 
-- **더 깊은 자동화**: 수동 단계 없이 연락처, 회사, 커스텀 객체 전반에 걸쳐 작동하는 플로우를 구축할 수 있어요.
+현재 레코드를 기준으로, 연결된 연락처·회사·사용자 지정 객체를 **다른** 워크플로우에 등록하고 싶을 때 쓰는 액션이에요. **Association Label**로 필터링하면 대상을 더 정확하게 고를 수 있어요.
 
-- **관계 타겟팅**: 연관성 라벨(Association Label)로 필터링하여 의도한 정확한 관련 레코드에 도달할 수 있습니다.
+이 액션에서 할 수 있는 일은 다음과 같아요.
 
-- **정밀한 레코드 조회**: 찾기(Find)를 사용해 레코드 ID, 외부 ID, 또는 동적 인바운드 웹훅 값을 포함한 필드 필터로 매칭할 수 있어요.
+- 연결된 **Object Type**(객체 유형)을 선택해요. **Contact**, **Company**, **Custom Object** 중에서 고를 수 있어요.
+- **Association Label**로 대상을 걸러내요. 예를 들어 Buyer, Account Owner, Assigned Dealer 같은 레이블이 있어요.
+- 연결된 레코드를 추가할 대상 워크플로우를 골라요.
 
-- **분기 로직**: 레코드 발견됨 vs 레코드 발견되지 않음으로 동작을 분기하고, 여러 매치가 있을 때 최초/최신/모두 중에서 선택할 수 있습니다.
+예시: 자동차(사용자 지정 객체) 레코드가 판매 준비 완료(Ready for Sale) 상태로 바뀌면, 연결된 딜러를 모두 "딜러 알림 워크플로우"에 자동으로 추가해요.
 
-- **운영 제어**: 연관된 레코드를 다른 워크플로우에 추가하거나 제거하여 완벽한 타이밍에 커뮤니케이션이나 프로세스를 시작/중지할 수 있어요.
+```
+자세한 내용은 Add Associated Records to Workflow 문서를 참고하세요.
+```
 
----
+![Add Associated Records to Workflow 액션 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055982231/original/AX6w1FMXLsFnp6FBnWQPXGfMGuHpHbj_Hw.png?1760455574)
 
-## 연관된 레코드를 워크플로우에 추가
+## Remove Associated Records from Workflow
 
-현재 레코드가 관련 레코드(연락처, 회사 또는 커스텀 객체)를 **다른** 워크플로우에 등록하도록 트리거해야 할 때 이 액션을 사용하세요. **연관성 라벨**로 필터링하면 타겟팅이 더욱 정확해집니다.
+조건이 바뀌었을 때(예: 판매 완료, 종료) 연결된 레코드를 다른 워크플로우에서 자동으로 제외하는 액션이에요. 더 이상 필요 없는 시퀀스에 연락처나 다른 레코드가 남아 있지 않게 해 줘요.
 
-이 액션으로 다음을 할 수 있어요:
+이 액션에서 할 수 있는 일은 다음과 같아요.
 
-- 연관된 **객체 타입**(연락처, 회사 또는 커스텀 객체) 선택
-- **연관성 라벨**(예: 구매자, 계정 소유자, 배정된 딜러)로 수신자 필터링
-- 해당 연관된 레코드들이 추가될 **대상 워크플로우** 선택
+- 연결 관계를 통해 연락처, 회사, 사용자 지정 객체를 대상으로 지정해요.
+- 특정 **Association Label**로 필터링해서, 원하는 관계의 레코드만 제거해요.
+- 제거할 워크플로우를 지정해요.
 
-예시: 자동차(커스텀 객체)가 "판매 준비"로 업데이트될 때, 연관된 모든 딜러를 "딜러 알림 워크플로우"에 자동으로 추가합니다.
+예시: 부동산(Property) 레코드가 판매 완료(Sold)로 바뀌면, 연결된 구매자(Buyer)를 "활성 매물 워크플로우"에서 제거해서 더 이상 알림이 가지 않게 해요.
 
-자세한 내용은 **[연관된 레코드를 워크플로우에 추가](workflow-action-add-associated-records-to-workflow.md)** 문서를 참고하세요.
+```
+자세한 내용은 Remove Associated Records from Workflow 문서를 참고하세요.
+```
 
-![연관된 레코드를 워크플로우에 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055982231/original/AX6w1FMXLsFnp6FBnWQPXGfMGuHpHbj_Hw.png?1760455574)
+![Remove Associated Records from Workflow 액션 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055982982/original/odUhBST3aSWV803cf8vyIOAIR8N02ITH0A.png?1760455950)
 
----
+## Find Object Record / Find Company
 
-## 워크플로우에서 연관된 레코드 제거
+**Find** 액션은 **Record ID**, **External ID**, 필드 필터 중 하나로 기존 레코드를 찾아요. **Inbound Webhook**(인바운드 웹훅)에서 받은 동적 값도 넘길 수 있어요. 일치하는 레코드가 여러 개일 때의 처리 방식을 고르고, **Record Found**와 **Record Not Found**에 따라 흐름을 나눌 수 있어요.
 
-조건이 변경될 때(예: 판매됨/마감됨) 연관된 레코드를 다른 워크플로우에서 자동으로 **등록 해제**하려면 이 액션을 사용하세요. 이를 통해 연락처와 다른 레코드들이 더 이상 필요하지 않은 시퀀스에서 제외되도록 할 수 있어요.
+이 액션에서 할 수 있는 일은 다음과 같아요.
 
-이 액션으로 다음을 할 수 있어요:
+- **Record ID**, **External ID**, **Field-Based Filters**(필드 기반 필터) 중 하나로 레코드를 찾아요.
+- 인바운드 웹훅 트리거로 들어온 동적 값을 쓸 수 있어요. 예: `{{inboundWebhookRequest.body.subscription_ref}}`
+- 일치하는 레코드가 여러 개일 때 **Earliest**, **Latest**, **All** 중에서 처리 방식을 골라요.
+- **Record Found**와 **Record Not Found** 상황에 맞게 흐름이 자동으로 나뉘어요.
 
-- **연관성을 통해** 연락처, 회사 또는 커스텀 객체를 타겟팅
-- 특정 **연관성 라벨**로 필터링하여 의도된 관계만 제거
-- 제거할 **워크플로우** 지정
+예시: 웹훅이 `{ "companyDomain": "acme.com" }` 값을 보내면, 일치하는 회사 레코드를 찾아서 워크플로우에 등록해요.
 
-예시: 부동산 레코드가 "판매됨"으로 표시될 때, 연관된 구매자들을 "활성 매물 워크플로우"에서 제거하여 추가 알림을 중단합니다.
+```
+자세한 내용은 Find Object Record / Find Company 문서를 참고하세요.
+```
 
-자세한 내용은 [워크플로우에서 연관된 레코드 제거](workflow-action-remove-associated-records-from-workflow.md) 문서를 참고하세요.
-
-![워크플로우에서 연관된 레코드 제거](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055982982/original/odUhBST3aSWV803cf8vyIOAIR8N02ITH0A.png?1760455950)
-
----
-
-## 객체 레코드 찾기 / 회사 찾기
-
-**찾기**를 사용하여 **레코드 ID, 외부 ID 또는 필드 필터**를 통해 기존 레코드를 찾으세요. **인바운드 웹훅**에서 동적 값을 전달할 수 있어요. 여러 매치를 처리하는 방법을 선택하고 **레코드 발견됨** vs **레코드 발견되지 않음**으로 분기할 수 있습니다.
-
-이 액션으로 다음을 할 수 있어요:
-
-- 레코드 ID, **외부 ID** 또는 **필드 기반 필터**로 매칭
-- 인바운드 웹훅 트리거의 동적 값 지원 (예: {{inboundWebhookRequest.body.subscription_ref}})
-- 여러 매치 처리 방법 선택 — 최초, 최신 또는 모두
-- 레코드 발견됨 vs 레코드 발견되지 않음 시나리오에 대한 자동 분기 로직
-
-예시: 웹훅이 { "companyDomain": "acme.com" }을 전송할 때, 매칭되는 회사 레코드를 찾아 워크플로우에 등록합니다.
-
-자세한 내용은 [객체 레코드 찾기 / 회사 찾기](workflow-action-find-object-record-find-company.md) 문서를 참고하세요.
-
-![객체 레코드 찾기 / 회사 찾기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055984482/original/cVSxwpd01NoZN1ZrY4zwoUzB5MrAjFo88Q.jpeg?1760456626)
-
----
+![Find Object Record / Find Company 액션 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055984482/original/cVSxwpd01NoZN1ZrY4zwoUzB5MrAjFo88Q.jpeg?1760456626)
 
 ## 자주 묻는 질문
 
-**Q: "워크플로우에 추가"와 "연관된 레코드를 워크플로우에 추가"의 차이점은 무엇인가요?**
-"워크플로우에 추가"는 현재 레코드 타입을 등록합니다. "연관된 레코드를 워크플로우에 추가"는 연관성을 통해 현재 레코드에 연결된 다른 레코드들을 선택된 라벨로 필터링하여 등록합니다.
+### **Add to Workflow**와 **Add Associated Records to Workflow**는 어떻게 다른가요?
 
-**Q: 한 번에 여러 연관성 라벨을 타겟팅할 수 있나요?**
-액션당 하나의 라벨을 사용하세요. 여러 라벨이 필요하다면 포함하려는 각 라벨에 대해 다른 연관된 레코드 추가/제거 액션을 추가하세요.
+**Add to Workflow**(워크플로우에 추가)는 현재 레코드 유형을 워크플로우에 등록해요. **Add Associated Records to Workflow**는 현재 레코드와 연결된 다른 레코드 중에서, 선택한 레이블에 맞는 레코드를 등록해요.
 
-**Q: 최초/최신/모두가 찾기 결과에 어떤 영향을 주나요?**
-최초 또는 최신은 단일 최적 매치로 진행합니다. 모두는 매칭되는 각 레코드에 다운스트림 경로를 적용합니다.
+### 한 번에 **Association Label**을 여러 개 지정할 수 있나요?
 
----
-*원문 최종 수정: Wed, 29 Oct, 2025 at 9:23 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+액션 하나에는 레이블을 하나만 쓸 수 있어요. 여러 레이블이 필요하면 포함하려는 레이블마다 **Add Associated Records to Workflow** 또는 **Remove Associated Records from Workflow** 액션을 따로 추가하세요.
+
+### **Earliest** / **Latest** / **All**을 고르면 **Find** 결과가 어떻게 달라지나요?
+
+**Earliest**나 **Latest**를 고르면 가장 알맞은 레코드 하나만 골라서 다음 단계로 넘어가요. **All**을 고르면 일치하는 레코드마다 이후 경로가 각각 실행돼요.

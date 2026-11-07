@@ -1,239 +1,224 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 31-리셀링 > WhatsApp
+원문: /support/solutions/articles/48001206216-whatsapp-full-setup-guide-for-agency
+번역일: 2026-11-06
+카테고리: 31-리셀링
 ---
 
-# 에이전시를 위한 WhatsApp 완전 설정 가이드
+# WhatsApp 자동 재판매 설정 가이드 (에이전시용)
 
-목차
+고객에게 WhatsApp을 재판매하고, 가격을 정하고, 결제를 관리하는 방법을 안내해요. Stripe를 쓰는 경우와 쓰지 않는 경우의 배포 방법도 함께 설명해요.
 
-- [자동 리셀링을 위한 사전 요구사항](#자동-리셀링을-위한-사전-요구사항)
-- [에이전시 Stripe 계정 연결](#에이전시-stripe-계정-연결)
-- [WhatsApp 가격 설정](#whatsapp-가격-설정)
-- [특정 클라이언트를 위한 WhatsApp 가격 개인화](#특정-클라이언트를-위한-whatsapp-가격-개인화)
-- [특정 클라이언트의 WhatsApp을 비활성화하려면?](#특정-클라이언트의-whatsapp을-비활성화하려면)
-- [Stripe/리셀링 없이 로케이션에 WhatsApp을 직접 배포하려면?](#stripe리셀링-없이-로케이션에-whatsapp을-직접-배포하려면)
-- [커뮤니티의 추가 튜토리얼](#커뮤니티의-추가-튜토리얼)
-- [1단계: 청구 정보 접속](#1단계-청구-정보-접속)
-- [2단계: 아래로 스크롤 > 하위 계정 보기](#2단계-아래로-스크롤-하위-계정-보기)
-- [클라이언트는 어떻게 WhatsApp 기능을 발견하나요?](#클라이언트는-어떻게-whatsapp-기능을-발견하나요)
-- [클라이언트는 어떻게 구매를 완료하나요?](#클라이언트는-어떻게-구매를-완료하나요)
-- [청구는 어떻게 작동하나요?](#청구는-어떻게-작동하나요)
-- [자주 묻는 질문](#자주-묻는-질문)
-
-## 자동 리셀링을 위한 사전 요구사항
+## 자동 재판매 사전 준비
 
 ### 에이전시 Stripe 계정 연결
 
-WhatsApp을 리셀링하려면 에이전시의 Stripe 계정을 연결해야 합니다. 이 계정은 클라이언트로부터 구독료를 수금하는 데 사용됩니다.
+WhatsApp을 재판매하려면 에이전시의 Stripe 계정을 연결해야 해요. 이 계정으로 고객에게 구독 요금을 받아요.
 
-다음 가이드를 따라 Stripe를 연결하세요: 에이전시 대시보드에 Stripe 연결 방법
+Stripe 연결 방법은 "How to Connect Stripe to Your Agency Dashboard" 문서를 참고하세요.
 
-Stripe가 없으신가요? 자동 리셀링 기능을 사용하지 않고도 WhatsApp을 배포할 수 있습니다. 다만 이 경우 클라이언트에게 요금을 청구하는 대신 에이전시가 직접 청구를 받게 됩니다.
+{% hint style="info" %}
+Stripe 계정이 없어도 자동 재판매 기능 없이 WhatsApp을 배포할 수 있어요. 다만 이 경우에는 고객이 아니라 에이전시에 직접 요금이 청구돼요.
+{% endhint %}
 
-### WhatsApp 가격 설정
+## WhatsApp 가격 설정
 
-에이전시 전체의 WhatsApp 가격을 설정하려면 에이전시 대시보드 > 왼쪽 메뉴의 리셀링(Reselling) 탭으로 이동하여 오퍼를 설정하세요.
+에이전시 전체에 적용할 WhatsApp 가격은 왼쪽 메뉴의 **에이전시 대시보드 > 재판매** 탭에서 설정해요.
 
-![WhatsApp 가격 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041689839/original/VF3Y5xZhIWYoY-g0v9UemlSHD7S4pEAyVw.png?1739768576)
+![에이전시 대시보드의 재판매 탭에서 WhatsApp 가격을 설정하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041689839/original/VF3Y5xZhIWYoY-g0v9UemlSHD7S4pEAyVw.png?1739768576)
 
-### 특정 클라이언트를 위한 WhatsApp 가격 개인화
+## 특정 고객에게 다른 가격 적용하기
 
-특정 클라이언트에게 다른 WhatsApp 요금을 제공하고 싶다면 다음 단계를 따르세요:
+특정 고객에게 다른 WhatsApp 요금을 적용하려면 아래 순서를 따라 하세요.
 
-1️⃣ 하위 계정 목록(Sub-Account List)으로 이동 → 클라이언트 검색 → 점 3개 클릭 → 클라이언트 관리(Manage Clients) 선택
+1. **서브 계정** 목록으로 이동해요.
+2. 고객을 검색한 뒤 점 세 개 아이콘을 클릭하고 **Manage Clients**(고객 관리)를 선택해요.
 
-![클라이언트 관리 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041689838/original/Ty4RPOlDcn8lTWg7vZen-3Ugphxfo91_2w.png?1739768575)
+   ![서브 계정 목록에서 Manage Clients를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041689838/original/Ty4RPOlDcn8lTWg7vZen-3Ugphxfo91_2w.png?1739768575)
 
-2️⃣ 리셀링 섹션(Reselling Section)을 탭하세요.
+3. **재판매** 섹션을 클릭해요.
 
-![리셀링 섹션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041689837/original/umM5_S24skrI0U8sNZkZ8YWvzV-noEQKiQ.png?1739768575)
+   ![재판매 섹션을 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041689837/original/umM5_S24skrI0U8sNZkZ8YWvzV-noEQKiQ.png?1739768575)
 
-3️⃣ WhatsApp 가격을 업데이트 → 저장(Save) 클릭
+4. 적용할 요금을 입력하고 **저장**을 클릭해요.
 
-![WhatsApp 가격 업데이트](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041689840/original/1XKg4_wYj2kzjYNyQ5iyoXK6h9pFH1IG6A.png?1739768577)
+   ![고객별 WhatsApp 요금을 입력하고 저장하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041689840/original/1XKg4_wYj2kzjYNyQ5iyoXK6h9pFH1IG6A.png?1739768577)
 
-맞춤 가격이 적용되었습니다!
+이제 이 고객에게는 설정한 가격이 적용돼요.
 
-## 특정 클라이언트의 WhatsApp을 비활성화하려면?
+## 특정 고객의 WhatsApp 비활성화
 
-WhatsApp을 제공하고 싶지 않은 특정 클라이언트가 있다면 다음 두 단계를 따르세요:
+WhatsApp을 제공하고 싶지 않은 고객이 있다면 아래 두 단계로 끌 수 있어요.
 
-1단계: 하위 계정 목록(Sub-Account List)으로 이동 → 클라이언트 검색 → 점 3개 클릭 → 클라이언트 관리(Manage Clients)
+1. **서브 계정** 목록으로 이동해요. 고객을 검색한 뒤 점 세 개 아이콘을 클릭하고 **Manage Clients**(고객 관리)를 선택해요.
 
-![클라이언트 관리](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155008617196/original/ESt8rJrKH8t72uVukevwtQGG4hbxPT2rtg.png?1695731785)
+   ![서브 계정 목록에서 Manage Clients를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155008617196/original/ESt8rJrKH8t72uVukevwtQGG4hbxPT2rtg.png?1695731785)
 
-2단계: 리셀링 섹션까지 아래로 스크롤 → 토글로 WhatsApp 비활성화 → 저장(Save) 누르기
+2. 아래로 스크롤해 **재판매** 섹션으로 이동해요. WhatsApp 토글을 끄고 **저장**을 클릭해요.
 
-![WhatsApp 비활성화](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155008615187/original/oHFFi5n-bo-zkZCOVpywKe_iXQJcwMPGPQ.png?1695730702)
+   ![재판매 섹션에서 WhatsApp 토글을 끄는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155008615187/original/oHFFi5n-bo-zkZCOVpywKe_iXQJcwMPGPQ.png?1695730702)
 
-참고사항:
+{% hint style="info" %}
+이 오퍼는 판매가 이루어지기 전에만 비활성화할 수 있어요. 서브 계정이 이미 WhatsApp을 구매했다면 여기서 비활성화할 수 없어요.
 
-이 오퍼는 판매가 일어나기 전에만 비활성화할 수 있습니다. 로케이션에서 이미 WhatsApp을 구매한 후에는 여기서 비활성화할 수 없습니다.
+구독이 시작된 뒤에 WhatsApp을 비활성화하면 구독 취소를 뜻해요. 구독을 취소하려면 하이퍼클래스 고객지원에 요청 티켓을 등록하세요.
+{% endhint %}
 
-구독이 시작된 후 WhatsApp을 비활성화하는 것은 취소를 의미합니다. 구독을 취소하려면 지원 티켓을 생성해 주세요.
+## Stripe 없이 WhatsApp 직접 배포하기
 
-## Stripe/리셀링 없이 로케이션에 WhatsApp을 직접 배포하려면?
+Stripe나 재판매 없이 서브 계정에 WhatsApp을 직접 배포할 수 있어요.
 
-### 커뮤니티의 추가 튜토리얼
+1. **서브 계정** 목록으로 이동해요. 고객을 검색한 뒤 점 세 개 아이콘을 클릭하고 **Manage Clients**(고객 관리)를 선택해요.
 
-[https://youtu.be/uHzyW7yamhA](https://youtu.be/uHzyW7yamhA)
+   ![서브 계정 목록에서 Manage Clients를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155008617196/original/ESt8rJrKH8t72uVukevwtQGG4hbxPT2rtg.png?1695731785)
 
-[https://youtu.be/w0TSujKqDl4](https://youtu.be/w0TSujKqDl4)
+2. 아래로 스크롤해 **재판매** 섹션으로 이동해요.
+3. WhatsApp 항목에서 **Deploy WA Directly T&C**(WhatsApp 직접 배포 약관)를 읽고 동의해요.
+4. **지금 결제**를 클릭해요.
 
-[https://youtu.be/dHcfecj9ojg](https://youtu.be/dHcfecj9ojg)
+   ![WhatsApp 직접 배포 약관에 동의하고 지금 결제를 클릭하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155013441617/original/d7Ykkj1D_RZSMn9j2Y94SDr6hK-GZozuYg.png?1700743180)
 
-1단계: 하위 계정 목록(Sub-Account List)으로 이동 → 클라이언트 검색 → 점 3개 클릭 → 클라이언트 관리(Manage Clients)
+{% hint style="info" %}
+에이전시에 Stripe 계정이 없는 경우, 이렇게 직접 배포하기 전까지는 해당 서브 계정에 **WhatsApp** 탭이 보이지 않아요. 직접 배포를 해도 서브 계정과 에이전시 사이에는 구독이 만들어지지 않아요. 하이퍼클래스와 에이전시 사이의 구독은 그대로 만들어져요.
+{% endhint %}
 
-![클라이언트 관리](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155008617196/original/ESt8rJrKH8t72uVukevwtQGG4hbxPT2rtg.png?1695731785)
+### 대화 요금
 
-2단계: 리셀링 섹션까지 아래로 스크롤 → WhatsApp 하위 → WA 직접 배포 약관 읽고 동의 → 지금 결제(Pay Now) 누르기
+{% hint style="info" %}
+WhatsApp을 직접 배포하면 WhatsApp 대화 요금이 에이전시 지갑에서 차감돼요. 서브 계정에는 WhatsApp 대화 요금이 청구되지 않아요.
+{% endhint %}
 
-![WhatsApp 직접 배포](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155013441617/original/d7Ykkj1D_RZSMn9j2Y94SDr6hK-GZozuYg.png?1700743180)
+## WhatsApp 청구·구독 내역 확인하기
 
-참고사항:
+어떤 계정에 대해 얼마를 내고 있는지 확인하려면 아래 순서를 따라 하세요.
 
-에이전시에 Stripe 계정이 없는 경우 이 수동 배포가 이루어질 때까지 로케이션에서 WhatsApp 탭이 보이지 않습니다. 수동 배포는 로케이션과 에이전시 간의 구독을 생성하지 않으며, Hyperclass과 에이전시 간의 구독만 생성됨을 강조하는 것이 중요합니다.
+1. **에이전시 설정 > 청구/결제 > 구독 > Reselling WhatsApp**(WhatsApp 재판매)으로 이동해요.
 
-**대화 요금**
+   ![에이전시 설정의 구독에서 WhatsApp 재판매 항목을 여는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041853129/original/AWwYkQMYxdhntRpfL-s_iaMV-J2G5dTipA.png?1739951834)
 
-에이전시가 WhatsApp 직접 배포를 선택하는 경우, [WhatsApp 대화 요금](../../08-결제/기타/whatsapp-pricing-and-billing-full-guide.md)은 에이전시의 지갑에서 차감되며 로케이션은 WhatsApp 대화에 대해 요금을 청구받지 않습니다.
+2. 아래로 스크롤해 **Show Sub-Accounts**(서브 계정 보기)를 클릭해요. WhatsApp과 연결된 모든 서브 계정의 상세 목록이 나와요.
 
-WhatsApp을 위한 Hyperclass 청구 및 구독 확인 방법
+   ![Show Sub-Accounts를 클릭하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041855618/original/eHQuRaeWMsluHtl_i457LVKQx3YM01WP-A.png?1739953374)
+   ![WhatsApp과 연결된 서브 계정 목록 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041855824/original/N-SqK566SKgrSSDMXPOr2TZc7tWh8itqKw.png?1739953523)
 
-Hyperclass에 얼마를 지불하고 있는지, 어떤 계정에 대해 지불하는지 확인하려면 다음 단계를 따르세요:
+## 고객이 WhatsApp을 찾는 방법
 
-### 1단계: 청구 정보 접속
+고객은 **서브 계정 > 설정 > WhatsApp**에서 WhatsApp 기능을 찾을 수 있어요.
 
-에이전시 설정(Agency Settings) → 청구(Billing) → 구독(Subscription) → WhatsApp 리셀링으로 이동하세요.
+![서브 계정 설정에서 WhatsApp 메뉴를 찾는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041725439/original/yiZU7gBbUybZfabyTzKOhOLZa6QIlFSikg.png?1739795425)
 
-![청구 정보 접속](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041853129/original/AWwYkQMYxdhntRpfL-s_iaMV-J2G5dTipA.png?1739951834)
+## 고객이 구매를 완료하는 과정
 
-### 2단계: 아래로 스크롤 > 하위 계정 보기
+고객이 WhatsApp 기능을 찾으면 결제 정보를 입력하고 **확인** 버튼을 클릭해 구매할 수 있어요. 확인을 클릭하면 시스템이 자동으로 결제를 처리하고 필요한 구독을 만들어요.
 
-- "하위 계정 보기(Show Sub-Accounts)"를 클릭하면 WhatsApp과 연결된 모든 하위 계정의 상세 목록이 표시됩니다.
+{% hint style="warning" %}
+구독은 두 개가 따로 만들어져요.
 
-![하위 계정 보기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041855618/original/eHQuRaeWMsluHtl_i457LVKQx3YM01WP-A.png?1739953374)
+1단계: 하이퍼클래스와 에이전시 사이
+2단계: 에이전시와 서브 계정 사이
+{% endhint %}
 
-![하위 계정 목록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041855824/original/N-SqK566SKgrSSDMXPOr2TZc7tWh8itqKw.png?1739953523)
+구매가 끝나면 고객은 WhatsApp 가입 페이지로 이동해요. 여기서 WhatsApp 계정을 연동할 수 있어요.
 
-### 클라이언트는 어떻게 WhatsApp 기능을 발견하나요?
+![구매 후 WhatsApp 가입 페이지로 이동한 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041724846/original/tIeJnSlD0BAnM7wV4ZeIB7MTdIZ69deiXg.png?1739795051)
 
-클라이언트는 하위 계정(Sub-Account) > 설정(Settings) > WhatsApp에서 WhatsApp을 찾을 수 있습니다.
+## 요금이 청구되는 방식
 
-![WhatsApp 기능 발견](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041725439/original/yiZU7gBbUybZfabyTzKOhOLZa6QIlFSikg.png?1739795425)
+고객이 WhatsApp을 구매하면 시스템에 구독이 두 개 만들어져요.
 
-## 클라이언트는 어떻게 구매를 완료하나요?
+- 고객의 카드와 에이전시의 Stripe 계정 사이: 에이전시가 고객에게 요금을 받기 위한 구독이에요.
+- 하이퍼클래스와 에이전시의 Stripe 계정 사이: 에이전시가 하이퍼클래스에 서브 계정당 월 $10를 내요.
 
-클라이언트가 WhatsApp 기능을 발견한 후, 결제 정보를 입력하고 확인(Confirm) 버튼을 클릭하여 쉽게 구매할 수 있습니다. 확인 시 시스템이 자동으로 결제를 처리하고 필요한 구독을 설정합니다.
+![WhatsApp 구독 두 개의 결제 흐름을 보여 주는 그림](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010213562/original/dN_oYi_aEBetlYHpguinC7YEVse4KZihaA.png?1697462471)
 
-중요 참고사항: 두 개의 별도 구독이 생성됩니다:
-1단계: Hyperclass과 에이전시 간
-2단계: 에이전시와 하위 계정 간
+- 월 요금을 내면 수신·발신 메시지가 무료예요. 리드가 문자를 보내면 24시간 동안 답장할 수 있어요. 메시지를 주고받을 때마다 이 시간이 연장돼요.
+- 먼저 연락해야 하거나 24시간이 지났다면 캠페인/템플릿 메시지를 보내야 해요. 이 메시지는 요금이 부과돼요. 템플릿 메시지를 보내면 대화가 다시 24시간 동안 열리고, 메시지를 주고받을 때마다 연장돼요.
+- 발신 템플릿 메시지는 모두 서브 계정과 에이전시에 요금이 부과돼요. 요금은 메시지를 보내는 국가와 사용한 템플릿 유형(Marketing, Utility, Authentication, Service)에 따라 달라요.
 
-구매 완료 후 클라이언트는 WhatsApp 가입 페이지로 리디렉션되어 WhatsApp 계정을 원활하게 연동할 수 있습니다.
+## 자주 묻는 질문
 
-![구매 완료](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041724846/original/tIeJnSlD0BAnM7wV4ZeIB7MTdIZ69deiXg.png?1739795051)
+### WhatsApp 자동 재판매를 하려면 무엇이 필요한가요?
 
-## 청구는 어떻게 작동하나요?
+자동 재판매를 켜려면 에이전시 Stripe 계정을 연결해야 해요. 이 계정으로 고객에게 구독 요금을 받아요.
 
-클라이언트가 WhatsApp을 구매하면 시스템에 2개의 구독이 생성됩니다:
+Stripe 계정이 없어도 WhatsApp을 수동으로 배포할 수 있어요. 다만 이 경우에는 고객이 아니라 에이전시에 직접 요금이 청구돼요.
 
-- 클라이언트의 카드와 당신의 Stripe 계정 간 - 클라이언트로부터 결제를 수금할 수 있습니다
-- Hyperclass과 당신의 Stripe 계정 간 - Hyperclass에 월 $10/로케이션을 지불합니다
+### 에이전시의 WhatsApp 가격은 어떻게 설정하나요?
 
-![청구 작동 방식](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010213562/original/dN_oYi_aEBetlYHpguinC7YEVse4KZihaA.png?1697462471)
+에이전시 전체의 WhatsApp 가격은 **에이전시 대시보드 > 재판매** 탭에서 가격 설정을 바꾸면 돼요.
 
-- 월 요금으로 무료 인바운드 및 아웃바운드 메시지를 받습니다. 리드가 인바운드 텍스트를 보내면 24시간 동안 답장할 수 있는 시간이 주어집니다. 이 시간은 메시지마다 계속 연장됩니다.
+### 특정 고객에게만 다른 WhatsApp 가격을 적용할 수 있나요?
 
-- 아웃리치를 하거나 24시간이 지난 경우에는 요금이 부과되는 캠페인/템플릿 메시지를 사용해야 합니다. 이로써 24시간 대화 창이 열리며 메시지마다 계속 연장됩니다.
+네, 할 수 있어요. 특정 고객에게 맞춤 가격을 적용하려면 아래 순서를 따라 하세요.
 
-- 모든 아웃바운드 템플릿 메시지는 메시지를 보내는 국가와 사용된 템플릿 유형 [마케팅, 유틸리티, 인증, 서비스]에 따라 로케이션과 에이전시에 요금이 부과됩니다. 참고용 목록이 첨부되어 있습니다.
+- **서브 계정** 목록에서 고객을 검색하고, 점 세 개 아이콘을 클릭한 뒤 **Manage Clients**(고객 관리)를 선택해요.
+- **재판매** 섹션으로 이동해요.
+- WhatsApp 가격을 바꾸고 **저장**을 클릭해요.
 
-# 자주 묻는 질문
+### 특정 고객의 WhatsApp을 비활성화하려면 어떻게 하나요?
 
-#### 1. WhatsApp 자동 리셀링의 사전 요구사항은 무엇인가요?
+WhatsApp을 제공하고 싶지 않은 고객이 있다면 아래 순서를 따라 하세요.
 
-자동 리셀링을 활성화하려면 에이전시 Stripe 계정을 연결해야 합니다. 이 계정은 클라이언트로부터 구독료를 수금하는 데 사용됩니다.
+- **서브 계정** 목록에서 고객을 검색하고, 점 세 개 아이콘을 클릭한 뒤 **Manage Clients**(고객 관리)를 선택해요.
+- 아래로 스크롤해 **재판매** 섹션에서 WhatsApp 토글을 끄고 **저장**을 클릭해요.
 
-Stripe 연결 방법은? 이 가이드에 따라 에이전시 대시보드와 Stripe를 연동하세요.
+{% hint style="info" %}
+이 옵션은 고객이 WhatsApp을 구매하기 전에만 쓸 수 있어요. 이미 구독이 활성화되어 있다면 취소하려면 하이퍼클래스 고객지원에 요청 티켓을 등록해야 해요.
+{% endhint %}
 
-Stripe 계정이 없다면 수동으로 WhatsApp을 배포할 수 있습니다. 다만 이 경우 클라이언트에게 요금을 청구하는 대신 에이전시가 직접 청구를 받게 됩니다.
+### Stripe나 자동 재판매 없이 WhatsApp을 배포할 수 있나요?
 
-#### 2. 에이전시의 WhatsApp 가격은 어떻게 설정하나요?
+네, Stripe 없이 수동으로 배포할 수 있어요.
 
-에이전시 전체의 WhatsApp 가격을 설정하려면 에이전시 대시보드 → 리셀링 탭으로 이동하여 가격 설정을 업데이트하세요.
+- **서브 계정** 목록에서 고객을 검색하고, 점 세 개 아이콘을 클릭한 뒤 **Manage Clients**(고객 관리)를 선택해요.
+- 아래로 스크롤해 **재판매** 섹션에서 **Deploy WA Directly T&C**(WhatsApp 직접 배포 약관)에 동의하고 **지금 결제**를 클릭해요.
 
-#### 3. 특정 클라이언트에게 다른 WhatsApp 가격을 설정할 수 있나요?
+{% hint style="warning" %}
+- 수동 배포를 완료하기 전에는 **WhatsApp** 탭이 보이지 않아요.
+- 에이전시와 서브 계정 사이에는 구독이 만들어지지 않아요. 다만 하이퍼클래스와 에이전시 사이의 구독은 그대로 있어요.
+{% endhint %}
 
-네, 특정 클라이언트에게 맞춤 WhatsApp 가격을 제공하려면 다음 단계를 따르세요:
+### WhatsApp을 수동으로 배포하면 대화 요금은 어떻게 되나요?
 
-- 하위 계정 목록으로 이동, 클라이언트 검색, 점 3개 클릭, 클라이언트 관리 선택
-- 리셀링 섹션으로 이동
-- WhatsApp 가격을 업데이트하고 저장 클릭
+Stripe 없이 WhatsApp을 수동으로 배포한 경우예요.
 
-맞춤 가격이 선택한 클라이언트에게 적용됩니다.
+- 대화 요금은 에이전시 지갑에서 차감돼요.
+- 서브 계정에는 WhatsApp 대화 요금이 청구되지 않아요.
 
-#### 4. 특정 클라이언트의 WhatsApp을 비활성화하려면 어떻게 하나요?
+### WhatsApp에 얼마를 내고 있는지 어떻게 확인하나요?
 
-특정 클라이언트에게 WhatsApp을 제공하고 싶지 않다면 다음 단계를 따르세요:
+결제 내역은 아래 순서로 확인해요.
 
-- 하위 계정 목록으로 이동, 클라이언트 검색, 점 3개 클릭, 클라이언트 관리 선택
-- 리셀링 섹션까지 스크롤, WhatsApp 토글을 끔으로 설정, 저장 클릭
+- **에이전시 설정 > 청구/결제 > 구독 > Reselling WhatsApp**(WhatsApp 재판매)으로 이동해요.
+- 아래로 스크롤해 **Show Sub-Accounts**(서브 계정 보기)를 클릭하면 연결된 모든 서브 계정과 청구 내역을 볼 수 있어요.
 
-참고: 이 옵션은 클라이언트가 WhatsApp을 구매하기 전에만 사용할 수 있습니다. 구독이 이미 활성화된 경우 취소를 위해 지원 티켓을 제출해야 합니다.
+### 고객은 WhatsApp 기능을 어디에서 찾나요?
 
-#### 5. Stripe나 자동 리셀링 없이 WhatsApp을 배포할 수 있나요?
+고객은 **서브 계정 > 설정 > WhatsApp**에서 찾을 수 있어요.
 
-네, Stripe를 사용하지 않고 수동으로 WhatsApp을 배포할 수 있습니다.
+### 고객은 WhatsApp을 어떻게 구매하나요?
 
-- 하위 계정 목록으로 이동, 클라이언트 검색, 점 3개 클릭, 클라이언트 관리 선택
-- 리셀링 섹션까지 스크롤, WA 직접 배포 약관 동의, 지금 결제 클릭
+1. 고객이 WhatsApp 기능을 찾아요.
+2. 결제 정보를 입력하고 **확인**을 클릭해요.
+3. 시스템이 자동으로 결제를 처리하고 필요한 구독을 만들어요.
+   - 하이퍼클래스와 에이전시 사이
+   - 에이전시와 서브 계정 사이
+4. 고객이 WhatsApp 가입 페이지로 이동해 계정을 연동해요.
 
-중요사항:
+### WhatsApp 요금은 어떻게 청구되나요?
 
-- 수동 배포가 완료될 때까지 WhatsApp 탭이 보이지 않습니다
-- 에이전시와 로케이션 간의 구독은 생성되지 않지만, Hyperclass과 에이전시 간의 구독은 여전히 존재합니다
+고객이 WhatsApp을 구매하면 구독이 두 개 만들어져요.
 
-#### 6. WhatsApp을 수동으로 배포하면 대화 요금은 어떻게 작동하나요?
+1. 고객의 카드와 에이전시의 Stripe 계정 사이: 에이전시가 고객에게 요금을 청구할 수 있어요.
+2. 하이퍼클래스와 에이전시의 Stripe 계정 사이: 에이전시가 서브 계정당 월 $10를 내요.
 
-Stripe 없이 수동으로 WhatsApp을 배포하는 경우:
+메시지 요금은 이렇게 적용돼요.
 
-- 대화 요금은 에이전시의 지갑에서 차감됩니다
-- 로케이션은 WhatsApp 대화에 대해 요금을 청구받지 않습니다
+- 24시간 안에는 수신·발신 메시지가 무료예요. 메시지를 주고받을 때마다 24시간이 새로 시작돼요.
+- 24시간 안에 메시지를 보내지 않았다면 발신 캠페인/템플릿 메시지를 보내야 해요. 이 메시지는 건당 요금이 부과돼요.
+- 요금은 아래 기준에 따라 달라요.
+  - 수신자의 국가
+  - 사용한 템플릿 유형(Marketing, Utility, Authentication, Service)
 
-#### 7. WhatsApp에 대해 Hyperclass에 얼마를 지불하고 있는지 어떻게 확인하나요?
+## 도움이 필요하신가요?
 
-청구 내역을 확인하려면:
-
-- 에이전시 설정 → 청구 → 구독 → WhatsApp 리셀링으로 이동
-- 아래로 스크롤하여 "하위 계정 보기"를 클릭하면 연결된 모든 하위 계정과 청구 내역을 볼 수 있습니다
-
-#### 8. 클라이언트는 어떻게 WhatsApp 기능을 발견하나요?
-
-클라이언트는 하위 계정 → 설정 → WhatsApp에서 WhatsApp 기능을 찾을 수 있습니다.
-
-#### 9. 클라이언트는 어떻게 WhatsApp을 구매하나요?
-
-- 클라이언트가 WhatsApp 기능을 발견합니다
-- 결제 정보를 입력하고 확인을 클릭합니다
-- 시스템이 자동으로 결제를 처리하고 필요한 구독을 설정합니다: Hyperclass과 에이전시 간, 에이전시와 하위 계정 간
-- 클라이언트는 WhatsApp 가입 페이지로 리디렉션되어 계정을 연동합니다
-
-#### 10. WhatsApp 청구는 어떻게 작동하나요?
-
-클라이언트가 WhatsApp을 구매하면 두 개의 구독이 생성됩니다:
-
-- 클라이언트의 카드와 당신의 Stripe 계정 간 - 에이전시가 클라이언트에게 요금을 청구할 수 있게 합니다
-- Hyperclass과 당신의 Stripe 계정 간 - 에이전시가 Hyperclass에 로케이션당 월 $10를 지불합니다
-
-메시지 요금:
-
-- 24시간 창 내에서 무료 인바운드 및 아웃바운드 메시지 (메시지마다 리셋)
-- 24시간 내에 메시지를 보내지 않으면 아웃바운드 캠페인/템플릿 메시지가 필요합니다 (메시지당 요금 부과)
-- 요금은 다음에 따라 달라집니다: 수신자의 국가, 사용된 템플릿 유형 (마케팅, 유틸리티, 인증 또는 서비스)
-
----
-*원문 최종 수정: Thu, 2 Apr, 2026 at 5:20 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+이미 구독이 활성화된 고객의 WhatsApp을 취소해야 한다면 하이퍼클래스 고객지원에 요청 티켓을 등록하세요. 판매가 완료된 뒤에는 재판매 토글로 취소할 수 없어요.

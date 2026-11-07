@@ -1,136 +1,130 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 16-SaaS-설정 > Saas Mode
+원문: /support/solutions/articles/48001216453-how-to-cancel-saas-sub-account-for-your-client
+번역일: 2026-11-06
+카테고리: 16-SaaS-설정
 ---
 
-# 고객의 SaaS 하위 계정 해지하는 방법
+# SaaS 서브 계정 취소하기: 에이전시가 직접 취소할 때와 고객이 직접 취소할 때
 
-이 아티클은 SaaS가 활성화된 하위 계정의 모든 해지 절차에 대한 완전한 가이드입니다. 고객의 SaaS 하위 계정을 해지하는 방법과 고객이 직접 에이전시의 SaaS 구독을 해지할 수 있도록 허용하는 방법을 포함하고 있습니다.
+SaaS가 켜진 서브 계정을 취소하는 모든 방법을 정리했어요. 에이전시가 고객의 SaaS 서브 계정을 직접 취소하는 방법과, 고객이 에이전시와 맺은 SaaS 구독을 직접 취소하도록 허용하는 방법을 다뤄요.
 
-**중요**: 하위 계정의 SaaS를 해지할 때 기억해야 할 핵심 사항:
+{% hint style="warning" %}
+**서브 계정의 SaaS를 취소할 때 꼭 기억하세요**
 
-1. 에이전시 레벨(관리자) 사용자로 로그인해야 합니다. 하위 계정은 에이전시 관리자만 해지할 수 있습니다.
-2. Settings(설정) → SaaS에서 "Cancel SaaS"가 보이지 않으면, Agency Dashboard(에이전시 대시보드) → Sub-accounts(하위 계정)으로 이동하여 해당 고객 타일의 점 3개 메뉴를 클릭하고 "Cancel Subscription"을 선택하세요.
-3. 버튼이 여전히 보이지 않으면, 해당 하위 계정에 활성 SaaS 플랜이 있는지 확인하세요. 비활성 계정이나 체험 계정에는 해지 옵션이 표시되지 않습니다.
+1. 에이전시 관리자 권한의 사용자로 로그인해야 해요. 서브 계정은 에이전시 관리자만 취소할 수 있어요.
+2. **설정 > SaaS**에 **Cancel SaaS**(SaaS 취소)가 보이지 않으면, **에이전시 대시보드 > 서브 계정**으로 이동하세요. 고객 타일의 점 세 개 메뉴를 클릭하고 **구독 취소**를 선택하면 돼요.
+3. 그래도 버튼이 보이지 않으면 해당 서브 계정에 활성 상태의 SaaS 플랜이 있는지 확인하세요. 비활성 계정이나 체험 계정에는 취소 옵션이 나타나지 않아요.
 
-위 사항을 확인해도 여전히 해지할 수 없다면, Hyperclass 지원팀에 문의해 주세요.
+위 내용을 모두 확인했는데도 취소할 수 없다면 하이퍼클래스 고객지원에 문의하세요.
+{% endhint %}
 
----
+## 에이전시가 SaaS 서브 계정을 직접 취소하기
 
-**목차**
+### [1단계: SaaS 지갑 잔액 정리하기](saas-wallet-credit-management-sub-account-level.md)
 
-- [직접 SaaS 활성화 하위 계정을 해지하는 방법](#직접-saas-활성화-하위-계정을-해지하는-방법)
-  - [1단계: SaaS 지갑 잔액 정리](#1단계-saas-지갑-잔액-정리)
-  - [2단계: 에이전시 뷰에서 하위 계정의 SaaS 비활성화](#2단계-에이전시-뷰에서-하위-계정의-saas-비활성화)
-  - [3단계: Twilio / Mailgun 하위 계정 종료 - 에이전시를 떠나는 고객용](#3단계-twilio-mailgun-하위-계정-종료-에이전시를-떠나는-고객용)
-  - [4단계: 팀 관리에서 사용자 제거 / 하위 계정 삭제 - 에이전시를 떠나는 고객용](#4단계-팀-관리에서-사용자-제거-하위-계정-삭제-에이전시를-떠나는-고객용)
-- [고객이 직접 구독을 해지할 수 있게 하는 방법](#고객이-직접-구독을-해지할-수-있게-하는-방법)
-- [FAQ](#faq)
+고객 지갑에 무상 제공이 아닌 크레딧이 남아 있다면 Stripe에서 환불해야 해요.
 
----
+지갑 크레딧이 무상 제공인지 아닌지는 서브 계정의 **설정 > 회사 청구 > 상세 보기**(거래 내역)에서 확인할 수 있어요.
 
-## 직접 SaaS 활성화 하위 계정을 해지하는 방법
+{% hint style="info" %}
+자세한 내용은 [SaaS 지갑 크레딧 관리](saas-wallet-credit-management-sub-account-level.md) 문서를 참고하세요.
+{% endhint %}
 
-### 1단계: SaaS 지갑 잔액 정리
-
-고객의 지갑에 무료가 아닌 크레딧이 있다면, 해당 크레딧을 Stripe에서 환불해야 합니다.
-
-지갑 크레딧이 무료인지 유료인지는 하위 계정 설정 > Company Billing(회사 청구) > See Details(세부 정보 보기) (Transaction History(거래 내역))에서 확인할 수 있습니다.
-
-자세한 내용은 이 아티클을 참고하세요: [SaaS 지갑 크레딧 관리](../../15-전화-시스템/기타/saas-wallet-credit-management.md)
-
-![SaaS 지갑 잔액 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048933937/original/xzJs8bQuXFcLRrINWXwPf49y7UohpaAqyg.png?1750947254)
-
-### 2단계: 에이전시 뷰에서 하위 계정의 SaaS 비활성화
-
-Agency view(에이전시 뷰) > Accounts(계정) 탭 > View Details(세부 정보 보기)로 이동하여 해당 하위 계정의 SaaS를 비활성화하세요:
-
-![하위 계정 SaaS 비활성화](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048932456/original/KsQf420juKKARMnRmEf2LjrBOwt9OSZLSw.png?1750946346)
-
-더 이상 고객에게 SaaS 플랜 요금을 청구하지 않으려면 Stripe 구독을 해지하세요:
-
-![Stripe 구독 해지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048934027/original/mYa8K1T3fvgB_AXmR-0r6W7eex-k19shKw.png?1750947323)
-
-참고: SaaS를 비활성화하기 전에 모든 거래 내역을 내보내기하는 것을 권장합니다. SaaS 모드가 비활성화되면 모든 거래/지갑 이력이 삭제되기 때문입니다.
-
-![거래 내역 내보내기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048934135/original/qhgKoztfS9gHywLjCb1XhDE-v-gYwhIIGA.png?1750947418)
-
-### 3단계: Twilio / Mailgun 하위 계정 종료 - 에이전시를 떠나는 고객용
-
-하위 계정에 Twilio나 이메일(Mailgun) 재청구가 활성화되어 있는 경우, SaaS를 비활성화한 후에도 해당 Twilio / Mailgun 하위 계정이 Agency Settings(에이전시 설정) > Twilio / Mailgun에서 여전히 연결되어 있습니다. 이러한 연결을 삭제하고 하위 계정을 종료했는지 확인하세요.
-
-### 4단계: 팀 관리에서 사용자 제거 / 하위 계정 삭제 - 에이전시를 떠나는 고객용
-
-이 단계는 선택에 따라 다릅니다.
-
-- 고객을 제거한 후에도 데이터를 보관하고 싶다면, Agency Settings(에이전시 설정) > Team(팀)으로 이동하여 고객의 사용자를 제거하세요.
-- 데이터를 보관하지 않으려면, Accounts(계정) > View Details(세부 정보 보기)로 이동하여 하위 계정을 삭제하세요.
-
-![하위 계정 삭제](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48231582189/original/UNt-o4efJOfgcS8C_GZxKH-ffa-PJV6YAQ.png?1654802197)
+![서브 계정의 회사 청구 화면에서 거래 내역을 확인하는 모습](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048933937/original/xzJs8bQuXFcLRrINWXwPf49y7UohpaAqyg.png?1750947254)
 
 ---
 
-## 고객이 직접 구독을 해지할 수 있게 하는 방법
+### 2단계: 에이전시 화면에서 서브 계정의 SaaS 비활성화하기
 
-SaaS 에이전시는 이제 SaaS 고객이 직접 구독을 해지할 수 있도록 허용할 수 있습니다. **이 기능은 기본적으로 비활성화되어 있습니다. 해지 요청을 받고 SaaS 고객을 붙잡을 수 있는 기회를 얻는 것이 이탈 방지에 필수적이라고 생각하기 때문입니다.** 하지만 그럼에도 불구하고 결정권은 이제 에이전시에 있습니다! 에이전시는 SaaS 설정도구로 이동하여 이 기능을 활성화할 수 있습니다.
+에이전시 보기의 **서브 계정** 탭에서 **상세 보기**를 클릭하고, 해당 서브 계정의 **SaaS 비활성화**를 진행하세요.
 
-![고객 해지 허용 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48283853058/original/EXydpUSYh0jRtPZZbCAuKJDLeV7gfPi9XQ.png?1677443608)
+![서브 계정 상세 보기에서 SaaS를 비활성화하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048932456/original/KsQf420juKKARMnRmEf2LjrBOwt9OSZLSw.png?1750946346)
 
-"Allow clients(sub-accounts) to cancel their subscriptions" 체크박스를 선택하고 Save Changes(변경사항 저장) 버튼을 클릭하세요.
+고객에게 SaaS 플랜 요금을 더 이상 청구하지 않으려면 Stripe 구독을 취소하세요.
 
-**참고:**
+![Stripe 구독을 취소하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048934027/original/mYa8K1T3fvgB_AXmR-0r6W7eex-k19shKw.png?1750947323)
 
-이 설정은 앞으로 SaaS 설정도구를 사용하여 생성될 모든 SAAS 계정에 적용됩니다.
+{% hint style="info" %}
+SaaS를 비활성화하기 전에 거래 내역을 모두 내보내 두는 것을 권장해요. SaaS 모드를 비활성화하면 거래 내역과 지갑 내역이 모두 삭제돼요.
+{% endhint %}
 
-이 기능은 **Agency Sidebar(에이전시 사이드바) > Sub-Accounts(하위 계정) > 특정 고객으로 스크롤 > 이름 클릭 또는 Manage Client(고객 관리) 클릭**을 통해 고객별로도 제어할 수 있습니다:
-
-![고객별 해지 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48283853129/original/9AoVO1tjSy3tZiO9T9Pdp86r-psvGgEm1w.png?1677443737)
-
-![고객별 해지 설정 상세](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48283853190/original/M-C0JVaU2t_c5FRe7gKQpklWP0fPeVMpvw.png?1677443880)
-
-"Allow client (sub-account) to cancel their subscription" 체크박스를 선택하면, 고객이 구독을 해지할 수 있게 됩니다. 이 설정은 해당 하위 계정에만 적용되며, 앞으로 SaaS 설정도구를 사용하여 생성되는 모든 SAAS 계정에는 적용되지 않습니다. 이 체크박스를 선택하면, 고객은 **Settings(설정) > Company Billing(회사 청구)**에서 구독 상세 정보 아래에 Modify Subscription(구독 수정) 버튼을 볼 수 있습니다:
-
-![구독 수정 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48283853315/original/XhaDmc3F2wJFinQXHzHkr0lUWg6QYkcc3A.png?1677444056)
-
-![구독 해지 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48283853362/original/YJmN1TCM39ZEymD3Akcdm7YOMPCg3iRQrg.png?1677444178)
-
-Cancel(해지)을 클릭하면, 고객에게 다음과 같은 확인 팝업이 표시됩니다:
-
-![해지 확인 팝업](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48283853420/original/opynSJ-8czUIdkHnfv9bGxrEInEgSnr9Mw.png?1677444302)
-
-Confirm Cancellation(해지 확인)을 클릭하면, 다음 메시지를 볼 수 있습니다:
-
-![해지 완료 메시지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48283853447/original/rIoJvvzOmyRrCwitB3eV11oDYl1Au0pxAA.png?1677444384)
-
-해지된 계정에 접속하려고 하면 재활성화할 때까지 다음 메시지가 표시됩니다:
-
-![계정 비활성화 메시지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48283853919/original/HKf8Gd1WlX6sp90-psZrQeHnPyevgbAcuw.png?1677445552)
-
-고객이 구독을 해지한 경우, 재활성화 버튼을 클릭하여 하위 계정을 재활성화할 수 있습니다. 또한 필요한 경우 결제 방법을 변경할 수 있는 옵션도 제공됩니다.
-
-고객이 실수로 계정에 접근할 수 없게 된 경우, 회사 설정의 에이전시 이메일을 통해 연락할 수도 있습니다.
+![거래 내역을 내보내는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048934135/original/qhgKoztfS9gHywLjCb1XhDE-v-gYwhIIGA.png?1750947418)
 
 ---
 
-## FAQ
+### 3단계: Twilio / Mailgun 서브 계정 닫기 (에이전시를 떠나는 고객만)
 
-### 고객이 해지하면 자동으로 하위 계정이 일시정지되나요?
+서브 계정에서 Twilio 또는 이메일(Mailgun)의 재청구(Rebilling)가 켜져 있는 상태로 SaaS를 비활성화하면, 해당 Twilio / Mailgun 서브 계정이 **에이전시 설정 > Twilio / Mailgun**에 계속 연결되어 있어요. 이 연결을 삭제하고 Twilio / Mailgun 서브 계정도 닫았는지 확인하세요.
 
-이 동작은 SaaS 설정도구의 다음 설정에 따라 달라집니다:
+---
 
-따라서 에이전시는 자신에게 맞는 동작을 결정할 수 있습니다.
+### 4단계: 팀 관리에서 사용자 제거하기 또는 서브 계정 삭제하기 (에이전시를 떠나는 고객만)
 
-![SaaS 설정도구 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48283853515/original/QQ9keW23Oy_rRKGHbuO_HpxhA9uwj1eguQ.png?1677444558)
+고객 데이터를 어떻게 할지에 따라 방법이 달라요.
 
-### 고객이 해지하면 Stripe에서 고객 구독은 어떻게 되나요?
+1. 고객을 제거한 뒤에도 데이터를 보관하려면, **에이전시 설정 > 팀**으로 이동해 해당 고객의 사용자를 제거하세요.
+2. 데이터를 보관하지 않으려면, **서브 계정 > 상세 보기**로 이동해 서브 계정을 삭제하세요.
 
-Stripe 측에서도 구독이 종료됩니다.
+   ![서브 계정을 삭제하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48231582189/original/UNt-o4efJOfgcS8C_GZxKH-ffa-PJV6YAQ.png?1654802197)
+
+---
+
+## 고객이 직접 구독을 취소하도록 허용하기
+
+SaaS 에이전시는 SaaS 고객이 직접 구독을 취소할 수 있게 허용할 수 있어요. 이 기능은 기본적으로 꺼져 있어요. 취소 요청을 직접 받아 보고 고객을 붙잡을 기회를 갖는 것이 이탈을 막는 데 중요하다고 보기 때문이에요. 다만 사용할지는 에이전시가 결정해요. 에이전시는 **SaaS 구성기**에서 이 기능을 켤 수 있어요.
+
+![SaaS 구성기에서 구독 취소 허용 설정을 켜는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48283853058/original/EXydpUSYh0jRtPZZbCAuKJDLeV7gfPi9XQ.png?1677443608)
+
+**Allow clients(sub-accounts) to cancel their subscriptions**(클라이언트(서브 계정)의 구독 취소 허용) 체크박스를 선택한 다음 **변경사항 저장** 버튼을 클릭하세요.
+
+{% hint style="info" %}
+이 설정은 앞으로 SaaS 구성기로 만드는 모든 SaaS 계정에 적용돼요.
+{% endhint %}
+
+고객별로도 이 기능을 설정할 수 있어요. 에이전시 사이드바에서 **서브 계정**으로 이동해 해당 고객을 찾은 뒤, 고객 이름이나 **고객 관리**를 클릭하세요.
+
+[![고객 목록에서 고객 관리로 이동하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48283853129/original/9AoVO1tjSy3tZiO9T9Pdp86r-psvGgEm1w.png?1677443737)](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48283851954/original/-B4BSvLsb6RMYvd1AhFHMdIAMamU3AE2sQ.png?1677441616)
+
+![고객별 구독 취소 허용 체크박스 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48283853190/original/M-C0JVaU2t_c5FRe7gKQpklWP0fPeVMpvw.png?1677443880)
+
+**Allow client (sub-account) to cancel their subscription**(클라이언트(서브 계정)의 구독 취소 허용) 체크박스를 선택하면 해당 고객이 구독을 취소할 수 있어요. 이 설정은 이 서브 계정에만 적용돼요. 앞으로 SaaS 구성기로 만드는 모든 SaaS 계정에는 적용되지 않아요.
+
+체크박스를 선택하면 고객의 **설정 > 회사 청구**에서 구독 상세 정보 아래에 **Modify Subscription**(구독 수정) 버튼이 나타나요.
+
+![고객의 회사 청구 화면에 나타난 구독 수정 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48283853315/original/XhaDmc3F2wJFinQXHzHkr0lUWg6QYkcc3A.png?1677444056)
+
+![구독 수정 화면의 취소 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48283853362/original/YJmN1TCM39ZEymD3Akcdm7YOMPCg3iRQrg.png?1677444178)
+
+고객이 **취소**를 클릭하면 다음과 같은 확인 팝업이 나타나요.
+
+![구독 취소 확인 팝업](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48283853420/original/opynSJ-8czUIdkHnfv9bGxrEInEgSnr9Mw.png?1677444302)
+
+고객이 **취소 확인**을 클릭하면 다음 메시지가 나타나요.
+
+![구독 취소 완료 메시지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48283853447/original/rIoJvvzOmyRrCwitB3eV11oDYl1Au0pxAA.png?1677444384)
+
+취소된 계정에 접속하려고 하면 계정을 다시 활성화할 때까지 다음 메시지가 나타나요.
+
+![취소된 계정에 접속할 때 나타나는 메시지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48283853919/original/HKf8Gd1WlX6sp90-psZrQeHnPyevgbAcuw.png?1677445552)
+
+구독을 취소한 고객은 **Reactivate**(재활성화) 버튼을 클릭해 서브 계정을 다시 활성화할 수 있어요. 필요하면 결제 수단도 바꿀 수 있어요.
+
+고객의 계정이 잘못 잠긴 경우에는 **회사 설정**에 등록된 에이전시 이메일로 에이전시에 문의할 수 있어요.
+
+---
+
+## 자주 묻는 질문
+
+### 고객이 구독을 취소하면 서브 계정이 자동으로 일시 중지되나요?
+
+SaaS 구성기의 다음 설정에 따라 달라요. 그래서 에이전시가 원하는 방식으로 정할 수 있어요.
+
+![SaaS 구성기에서 구독 취소 시 계정 동작을 정하는 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48283853515/original/QQ9keW23Oy_rRKGHbuO_HpxhA9uwj1eguQ.png?1677444558)
+
+### 고객이 취소하면 Stripe의 구독은 어떻게 되나요?
+
+Stripe 쪽 구독도 함께 종료돼요.
 
 ### 고객에게 남은 크레딧이 있으면 어떻게 되나요?
 
-고객 계정의 남은 잔액이나 크레딧은 모두 소멸됩니다.
-
----
-*원문 최종 수정: Fri, 27 Jun, 2025 at 3:52 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+고객 계정에 남은 잔액이나 크레딧은 소멸돼요.

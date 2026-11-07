@@ -1,112 +1,133 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 10-마케팅 > Facebook Conversion API (CAPI)
+원문: /support/solutions/articles/155000003691-how-to-send-a-meta-conversion-api-action-for-ad-manager-
+번역일: 2026-11-06
+카테고리: 10-마케팅
 ---
 
-# 광고 관리자용 Meta Conversion API 액션을 전송하는 방법
+# Meta Conversion API 액션으로 광고 관리자 전환 이벤트 보내기
 
-이 가이드에서는 Meta로 Conversion API 액션을 전송하는 워크플로우 생성 과정과, 워크플로우의 Meta Conversion API 액션에 새로 추가된 광고 관리자 라디오 버튼의 기능과 사용자에게 제공하는 가치에 대해 알아보겠습니다.
+워크플로우에서 Meta로 Conversion API(CAPI) 이벤트를 보내는 방법을 설명해요. 최근 **Meta Conversion API** 액션에 추가된 **Ad Manager**(광고 관리자) 라디오 버튼이 무엇이 편한지도 함께 알아봐요.
 
----
+{% hint style="info" %}
+워크플로우 빌더는 영어 화면으로 남아 있어요. 그래서 빌더 안의 트리거·액션·필드 이름은 영어 그대로 쓰고, 처음 나올 때 뜻을 괄호로 덧붙였어요.
+{% endhint %}
 
-## **목차**
+## 광고 캠페인과 전환 데이터셋을 만들었는데 왜 CAPI 액션 워크플로우가 또 필요한가요?
 
-- [광고 캠페인과 전환 데이터셋을 생성한 후 CAPI 액션 워크플로우를 만들어야 하는 이유는?](#광고-캠페인과-전환-데이터셋을-생성한-후-capi-액션-워크플로우를-만들어야-하는-이유는)
-- [Meta Conversion API 액션과 함께 사용할 수 있는 워크플로우 트리거는?](#meta-conversion-api-액션과-함께-사용할-수-있는-워크플로우-트리거는)
-- [Meta Conversion API 액션에서 광고 관리자 버튼과 연동 버튼의 차이점은?](#meta-conversion-api-액션에서-광고-관리자-버튼과-연동-버튼의-차이점은)
-- [전화, 기회 상태 변경, 태그 등과 같은 트리거 이름을 가진 오프라인 이벤트를 Meta Conversion API 액션과 함께 사용할 수 있나요?](#전화-기회-상태-변경-태그-등과-같은-트리거-이름을-가진-오프라인-이벤트를-meta-conversion-api-액션과-함께-사용할-수-있나요)
+광고와 데이터셋을 설정한 뒤 CAPI 이벤트까지 Meta로 보내면 Meta 광고의 정확도와 안정성, 효과를 높일 수 있어요. 기본 Meta 데이터셋만 쓸 때와 달리 CAPI를 함께 쓰면 좋은 점은 다음과 같아요.
 
----
+- 정확도 향상: CAPI는 서버에서 데이터를 직접 보내요. 그래서 브라우저 제한, 광고 차단기, 쿠키 제한에 영향을 받지 않고 사용자 행동을 더 믿을 수 있게 추적해요.
+- 어트리뷰션 개선: 기기와 플랫폼을 넘나드는 전환(쿠키를 차단한 사용자 포함)을 추적해요. 캠페인 최적화에 쓸 데이터가 더 완전해지고, 리포트도 더 정확해져요.
+- 픽셀 누락 보완: 로딩이 느리거나 개인정보 설정 때문에 픽셀 데이터가 차단되거나 빠져도, CAPI가 그 전환을 기록해요.
+- 최적화 강화: 서버 기준의 더 세밀한 데이터로 Meta가 광고 타기팅과 성과를 개선할 수 있어요.
+- 개인정보 규정 대응: 클라이언트 쿠키 의존도가 낮아서 개인정보 보호 규정에 더 잘 맞아요.
+- 광고비 효율: 데이터가 정확할수록 Meta가 광고비를 더 효율적으로 쓰고 투자 수익률(ROI)을 높일 수 있어요.
 
-## 광고 캠페인과 전환 데이터셋을 생성한 후 CAPI 액션 워크플로우를 만들어야 하는 이유는?
-
-광고와 데이터셋 설정 후 Meta에 CAPI(Conversions API) 이벤트를 생성하고 전송하는 것은 Meta 광고 캠페인의 정확성, 신뢰성, 효과를 향상시키는 데 중요합니다. 표준 Meta 데이터셋에 추가로 CAPI를 사용해야 하는 이유는 다음과 같습니다:
-
-- **정확성 향상**: CAPI는 서버에서 직접 데이터를 전송하여 브라우저 제한, 광고 차단기, 쿠키 제한 등의 문제를 우회하고, 사용자 행동을 더 안정적으로 추적합니다.
-- **더 나은 어트리뷰션**: 기기와 플랫폼 전반에 걸쳐(쿠키를 차단한 사용자 포함) 전환을 추적하여 캠페인 최적화를 위한 더 완전한 데이터를 제공하므로 정확한 보고가 가능합니다.
-- **픽셀 공백 해결**: 픽셀 데이터가 차단되거나 누락될 때(예: 느린 로딩 시간이나 개인정보 설정으로 인해) CAPI는 해당 전환이 여전히 기록되도록 보장합니다.
-- **최적화 향상**: 더 세분화된 서버 측 데이터는 Meta가 광고 타겟팅과 성능을 개선하는 데 도움을 줍니다.
-- **개인정보 규정 준수**: CAPI는 클라이언트 측 쿠키에 대한 의존도를 줄여 개인정보 규정에 더 적합합니다.
-- **효율적인 예산 사용**: 더 정확한 데이터를 통해 Meta가 광고 예산을 최적화하고 투자 수익률(ROI)을 향상시킬 수 있습니다.
-
-요약하자면, 픽셀 생성 후 Meta에 CAPI 이벤트를 전송하는 것은 추적 정확성을 향상시키고, 광고를 더 효과적으로 최적화하며, 기기와 브라우저 전반에서 어트리뷰션을 강화하는 데 필수적입니다. 브라우저 기반 픽셀 추적으로 남겨진 공백을 채우고, 개인정보 보호에 대한 우려가 증가하고 브라우저 제한이 강화되는 상황에서도 광고 캠페인이 가능한 한 효율적으로 작동하도록 보장합니다.
+정리하면, 픽셀을 만든 뒤 CAPI 이벤트를 Meta로 다시 보내면 추적 정확도와 광고 최적화, 기기·브라우저 간 어트리뷰션이 좋아져요. 브라우저 기반 픽셀 추적의 빈틈을 메워 주기 때문에, 개인정보 보호와 브라우저 제한이 강해져도 광고 캠페인이 효율적으로 돌아가요.
 
 ---
 
-## Meta Conversion API 액션과 함께 사용할 수 있는 워크플로우 트리거는?
+## Meta Conversion API 액션에는 어떤 워크플로우 트리거를 쓸 수 있나요?
 
-![Meta Conversion API 액션 트리거 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037638079/original/CL4W8FAhtV-LjEKe9VfqBVqFAUa_pIhS0A.png?1733217275)
+![Meta Conversion API 액션에서 사용할 수 있는 트리거](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037638079/original/CL4W8FAhtV-LjEKe9VfqBVqFAUa_pIhS0A.png?1733217275)
 
-워크플로우에서 액션이 Meta Conversion API인 경우, 사용할 수 있는 트리거는 FB CAPI 액션에서 사용할 이벤트 유형에 따라 달라집니다. 리드 이벤트와 퍼널 이벤트 모두에 대한 사용 가능한 트리거는 다음과 같습니다:
+워크플로우 액션이 **Meta Conversion API**인 경우, 쓸 수 있는 트리거는 FB CAPI 액션에서 고르는 **Event Type**(이벤트 유형)에 따라 달라요. 퍼널 이벤트와 리드 이벤트에서 쓸 수 있는 트리거는 다음과 같아요.
 
-- **퍼널 이벤트**에는 다음 트리거를 사용할 수 있습니다: 폼 제출(Form Submitted), 설문 제출(Survey Submitted), 고객 예약 완료(Customer Booked Appointment), 주문 폼 제출(Order Form Submission). (예약의 경우 일반적인 트리거인 "appointment"가 아닌 "Customer Booked appointment"만 작동합니다. 이는 위젯용 트리거입니다)
-- **리드 이벤트**에는 "Facebook Lead Form Submission(페이스북 리드 폼 제출)"과 "Pipeline Stage Change(파이프라인 단계 변경)" 트리거만 사용할 수 있습니다. (연락처가 Facebook 리드 폼에서 온 경우에만 작동합니다)
-- **Instagram DM 이벤트**에는 CRM에서 연락처 생성으로 이어지는 모든 트리거를 사용할 수 있습니다.
+1. **Funnel Event**(퍼널 이벤트)에는 **Form Submitted**(폼 제출), **Survey Submitted**(설문 제출), **Customer Booked Appointment**(고객이 예약함), **Order Form Submission**(주문 폼 제출) 트리거를 쓸 수 있어요.  
 
----
-
-## Meta Conversion API 액션에서 광고 관리자 버튼과 연동 버튼의 차이점은?
-
-워크플로우에서 conversion API 액션을 생성할 때 두 가지 연결 유형 옵션이 있습니다:
-
-- Integrations(연동)
-- Ad Manager(광고 관리자)
-
-![연결 유형 옵션 - 연동](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051770657/original/XpDYkAD5lt1XxfNmsbndb6Ais472qqwOuw.png?1755497368)
-
-![연결 유형 옵션 - 광고 관리자](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051770608/original/MsYr_VqK6pzvkMnj27jUWl_oLbHT_0pitw.png?1755497312)
-
-**참고:** 연동 연결 유형과 관련된 모든 정보 및 각 필드의 세부사항은 다음 두 가이드를 참조하여 자세히 이해할 수 있습니다:
-[Meta conversion leads walkthrough](../../42-통합/Facebook-Integration/facebook-conversion-leads-walkthrough.md)
-[Setup a funnel event for Meta conversion API](../../42-통합/Facebook-Integration/how-to-set-up-a-funnel-event-pixel-for-facebook-conversion-api-.md)
-
-연결 유형으로 광고 관리자 옵션을 추가한 주된 목적은 사용자 플로우를 간소화하고 Meta와 워크플로우 간의 지속적인 이동 번거로움을 줄이는 것입니다. 이 추가로 최소화되는 노력들은 다음과 같습니다:
-
-- CAPI를 Meta로 전송할 캠페인에 따라 이벤트 유형을 선택할 수 있습니다. 캠페인 목표가 '웹사이트 트래픽'이면 퍼널 이벤트를 전송하고, '리드 생성'이면 리드 이벤트를 전송하며, 클릭 투 다이렉트 광고의 경우 Instagram DM을 선택합니다.
-
-![이벤트 유형 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051770827/original/rHgIqdAq4nGMsHDtrRcIuYzZueL9DcnATw.png?1755497695)
-
-- 광고 관리자의 일부인 모든 픽셀이 드롭다운 항목으로 미리 채워져서 그 중 하나를 선택할 수 있는 옵션을 제공합니다. 이를 통해 Meta로 돌아가서 픽셀 ID를 복사/붙여넣기하는 번거로움이 줄어듭니다.
-
-![픽셀 선택 드롭다운](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037642910/original/r6PKw2USmYvjpzah_TJZiuYisNbIbeB78w.png?1733220060)
-
-- 광고 관리자 연결 유형에서는 액세스 토큰을 생성하고 CAPI 액션에 추가할 필요가 없습니다. 저희가 이를 처리하여 다시 한번 이동의 번거로움을 덜어드립니다.
-- 리드 이벤트의 단계 이름은 다음을 의미합니다: 더 나은 보고를 위해 파이프라인과 파이프라인 단계 이름을 정확하게 나타내야 합니다. 기회 파이프라인과 단계의 커스텀 값을 추가하려면 끝에 있는 태그 아이콘을 사용하여 선택하세요.
+   예약은 **Customer Booked Appointment**에서만 작동하고 **Appointment** 트리거에서는 작동하지 않아요. **Appointment**는 일반 트리거이고, **Customer Booked Appointment**는 위젯용 트리거이기 때문이에요.
+2. **Lead Event**(리드 이벤트)에는 **Facebook Lead Form Submission**(Facebook 리드 폼 제출)과 **Pipeline Stage Change**(파이프라인 단계 변경) 트리거만 쓸 수 있어요. 연락처가 Facebook 리드 폼에서 들어온 경우에 작동해요.
+3. **Instagram DM** 이벤트에는 CRM에 연락처가 생성되는 트리거라면 무엇이든 쓸 수 있어요.
 
 ---
 
-## 전화, 기회 상태 변경, 태그 등과 같은 트리거 이름을 가진 오프라인 이벤트를 Meta Conversion API 액션과 함께 사용할 수 있나요?
+## Meta Conversion API 액션에서 Ad Manager 라디오 버튼은 Integrations 라디오 버튼과 무엇이 다른가요?
 
-네, 가능하며 이 이벤트를 전송하기 위해 마지막으로 가능한 픽셀 데이터를 사용할 것입니다. 기본적으로 fbclid ID가 발견되면 데이터가 conversion API로 전송됩니다. 다음 예시로 가장 잘 설명할 수 있습니다:
+워크플로우에서 Conversion API 액션을 만들 때 연결 유형을 두 가지 중에서 골라요.
 
-**예시 1:**
+- **Integrations**(연동)
+- **Ad Manager**(광고 관리자)
 
-Facebook 폼 제출로 연락처가 생성되어 첫 번째 어트리뷰션 소스는 Paid Social(Facebook)이 됩니다. Facebook 폼 제출 트리거로 워크플로우를 사용하면 연락처에 fbclid가 있고 워크플로우가 conversion API(CAPI)로 데이터를 전송합니다.
+![연결 유형 선택 화면 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051770657/original/XpDYkAD5lt1XxfNmsbndb6Ais472qqwOuw.png?1755497368)
 
-추가 동작 - 일정 시간 후 해당 연락처가 기회 추가/업데이트 트리거 추가로 기회로 전환되면, Facebook 폼에서 제출된 연락처가 fbclid를 전달하므로 워크플로우에서 기회 상태 트리거를 사용하여 데이터를 conversion API로 전송할 수 있습니다.
+![연결 유형 선택 화면 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051770608/original/MsYr_VqK6pzvkMnj27jUWl_oLbHT_0pitw.png?1755497312)
 
-**예시 2:**
+{% hint style="info" %}
+**Integrations** 연결 유형에 대한 전체 정보와 각 필드의 의미는 아래 두 문서에서 자세히 볼 수 있어요.
 
-Google 광고, 유기적 Google 검색 또는 직접 트래픽으로 연락처가 생성되어 첫 번째 어트리뷰션 소스는 Paid Search(Google) 또는 Direct Traffic이 됩니다. 일정 시간 후 연락처가 Facebook 폼과 상호작용하여 폼을 작성하면, 최신 어트리뷰션은 fbclid가 있는 연락처와 함께 Paid Social(Facebook)이 됩니다. 이제 에이전시에서 Facebook 폼 제출 > Meta conversion API로 워크플로우를 실행하면 fbclid와 함께 데이터를 conversion API로 전송합니다.
+- Meta conversion leads walkthrough
+- Setup a funnel event for Meta conversion API
+{% endhint %}
 
-추가 동작 - 일정 시간 후 해당 연락처가 기회 추가/업데이트 트리거 추가로 기회로 전환되면, Facebook 폼에서 제출된 연락처가 fbclid를 전달하므로 워크플로우에서 기회 상태 트리거를 사용하여 데이터를 conversion API로 전송할 수 있습니다.
+**Ad Manager** 연결 유형은 Meta와 워크플로우를 계속 오가야 하는 번거로움을 줄이려고 추가됐어요. 줄어드는 작업은 다음과 같아요.
+
+1. CAPI를 Meta로 되돌려 보내려는 캠페인에 맞춰 이벤트 유형을 고를 수 있어요. 캠페인 목표가 **웹사이트 트래픽**이면 퍼널 이벤트를, **리드 생성**이면 리드 이벤트를 보내요. 다이렉트 메시지 광고(Click to direct ads)는 **Instagram DM**을 선택해요.  
+
+   ![캠페인에 맞는 이벤트 유형 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051770827/original/rHgIqdAq4nGMsHDtrRcIuYzZueL9DcnATw.png?1755497695)
+2. **Ad Manager**에 연결된 픽셀이 모두 드롭다운 항목으로 미리 채워져서, 그중 하나를 고르면 돼요. Meta로 돌아가 Pixel ID를 복사해서 붙여 넣을 필요가 없어요.  
+
+   ![드롭다운에서 픽셀 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037642910/original/r6PKw2USmYvjpzah_TJZiuYisNbIbeB78w.png?1733220060)
+3. **Ad Manager** 연결 유형에서는 액세스 토큰을 직접 만들어 CAPI 액션에 넣을 필요가 없어요. 하이퍼클래스가 처리해 줘서 왔다 갔다 하는 수고를 덜어요.
+4. 리드 이벤트의 **Stage Name**(단계 이름)에는 파이프라인과 파이프라인 단계 이름이 정확히 들어가야 리포트가 더 정확해져요. 입력란 끝에 있는 태그 아이콘을 눌러 기회 파이프라인과 단계의 커스텀 값을 추가해 선택하세요.
+
+### 리드 이벤트 + 단계 이름 = Purchase: 값과 통화
+
+워크플로우에서 Meta Conversion API를 아래처럼 설정하면 필드가 두 개 더 나타나요.
+
+- **Event Type**(이벤트 유형): Lead Event
+- **Stage Name**(단계 이름): Purchase
+
+추가로 나타나는 필드는 다음과 같아요.
+
+- **Value**(값): 고정 값이나 커스텀 필드를 쓸 수 있어요.
+- **Currency**(통화): 드롭다운이며 기본값은 USD예요. 퍼널 이벤트와 같은 통화 목록을 써요.
+
+이 필드들은 **Stage Name**이 Purchase일 때만 필수예요.
+
+**백엔드 동작**
+
+- **Value**와 **Currency**를 입력하면 하이퍼클래스가 CAPI 페이로드에 담아 보내요.
+- **Stage Name**이 Purchase가 아니면, 페이로드에 들어 있는 값과 통화는 무시해요.
 
 ---
 
-**참고사항:** 커스텀 값 추가 - Google Ads와 마찬가지로 이제 Facebook Ads 전환 추적 매개변수에 대한 커스텀 매핑을 허용합니다.
+## 통화, 기회 상태 변경, 태그 같은 트리거의 오프라인 이벤트를 Meta Conversion API 액션에 쓸 수 있나요?
 
-![커스텀 값 매핑](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043836459/original/gFVWuYxc77LoQwMEWkY0p_spdSoyA3QWZQ.jpeg?1742815441)
+네, 쓸 수 있어요. 이 경우 마지막으로 확보된 픽셀 데이터를 사용해 이벤트를 보내요. fbclid가 있으면 데이터가 Conversion API로 전송돼요. 아래 예시를 보면 이해하기 쉬워요.
 
-**작동 방식:**
-기본적으로 커스텀 매핑은 비활성화되어 있습니다.
-사용자는 이를 켜서 커스텀 매핑을 활성화할 수 있습니다.
-활성화되면 사용자는 다음을 매핑할 수 있습니다:
+**예시 1**
+
+연락처가 Facebook 폼 제출로 생성됐다면 첫 어트리뷰션 소스는 Paid Social(Facebook)이에요. Facebook 폼 제출 트리거로 워크플로우를 만들면 그 연락처는 fbclid를 가지고 있어서, 워크플로우가 데이터를 Conversion API(CAPI)로 보내요.
+
+추가 동작
+
+- 시간이 지나 그 연락처가 기회로 전환되면(기회 추가/업데이트 트리거를 추가한 경우), 워크플로우에서 기회 상태 트리거를 사용해 데이터를 Conversion API로 보낼 수 있어요. Facebook 폼을 제출한 연락처는 fbclid를 전달하기 때문이에요.
+
+**예시 2**
+
+연락처가 Google 광고, Google 자연 검색, 직접 유입으로 생성됐다면 첫 어트리뷰션 소스는 Paid Search(Google) 또는 Direct Traffic이에요. 이후 그 연락처가 Facebook 폼을 보고 제출하면, 최신 어트리뷰션은 Paid Social(Facebook)이 되고 연락처는 fbclid를 갖게 돼요. 이때 에이전시가 Facebook 폼 제출 > Meta Conversion API 워크플로우를 실행하면, fbclid와 함께 데이터를 Conversion API로 보내요.
+
+추가 동작
+
+- 시간이 지나 그 연락처가 기회로 전환되면(기회 추가/업데이트 트리거를 추가한 경우), 워크플로우에서 기회 상태 트리거를 사용해 데이터를 Conversion API로 보낼 수 있어요. Facebook 폼을 제출한 연락처는 fbclid를 전달하기 때문이에요.
+
+---
+
+{% hint style="info" %}
+**커스텀 값 추가**
+
+Google Ads와 마찬가지로, 이제 Facebook Ads 전환 추적 파라미터도 직접 매핑할 수 있어요.
+
+![Facebook Ads 전환 추적 파라미터 커스텀 매핑](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043836459/original/gFVWuYxc77LoQwMEWkY0p_spdSoyA3QWZQ.jpeg?1742815441)
+
+사용 방법
+
+커스텀 매핑은 기본적으로 꺼져 있어요. 토글을 켜면 커스텀 매핑을 사용할 수 있어요.
+
+켜면 다음 항목을 매핑할 수 있어요.
+
 1. 퍼널 이벤트용 FBCLID
 2. 리드 이벤트용 Facebook Lead ID
-3. 커스텀 매핑 필드가 제공되면 시스템 기본값보다 우선시됩니다.
-4. 비워두면 시스템이 기본 내부 값을 계속 사용합니다.
-
----
-*원문 최종 수정: Mon, 18 Aug, 2025 at 1:17 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+3. 커스텀 매핑 필드를 입력하면 시스템 기본값보다 우선 적용돼요.
+4. 비워 두면 시스템이 계속 기본 내부 값을 사용해요.
+{% endhint %}

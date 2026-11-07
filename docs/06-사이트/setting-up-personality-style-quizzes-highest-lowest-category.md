@@ -1,151 +1,121 @@
 ---
-
-번역일: 2026-04-06
+원문: /support/solutions/articles/155000006492-setting-up-personality-style-quizzes-highest-lowest-category-
+번역일: 2026-11-06
 카테고리: 06-사이트
 ---
 
-# 성격 유형 설문 설정하기 (최고점/최저점 카테고리)
+# 성향형 퀴즈 설정하기 (가장 높은/낮은 카테고리 보여 주기)
 
-이 가이드는 결과 페이지에서 가장 높은 점수 또는 가장 낮은 점수를 받은 카테고리를 표시하도록 설문(Survey)을 구성하는 방법을 보여드립니다. 이를 통해 성격 유형 진단이나 스킬 격차 분석을 결과에 바로 반영할 수 있습니다.
+결과 페이지에 가장 높은 점수를 받은 카테고리, 또는 가장 낮은 점수를 받은 카테고리를 보여 주도록 퀴즈를 설정하는 방법을 안내해요. 성향 진단형 퀴즈를 만들거나, 부족한 역량을 결과 화면에서 바로 짚어 줄 때 쓸 수 있어요.
 
----
+## 성향형 퀴즈란?
 
-**목차**
+성향형 퀴즈는 질문을 스타일, 유형, 역량 같은 카테고리별로 묶어 두는 퀴즈예요. 응답자가 고른 답변마다 하나 이상의 카테고리에 점수가 쌓여요.
 
-- [성격 유형 설문이란?](#성격-유형-설문이란)
-- [성격 유형 설문의 주요 장점](#성격-유형-설문의-주요-장점)
-- [성격 유형 설문 설정 방법](#성격-유형-설문-설정-방법)
-- [자주 묻는 질문](#자주-묻는-질문)
+퀴즈를 제출하면 하이퍼클래스가 점수를 합산해서 결과를 하나 골라요. 보통은 가장 높은 점수의 카테고리를 고르고, 부족한 부분을 보여 주고 싶다면 가장 낮은 점수의 카테고리를 골라요.
 
----
+이 결과는 결과 페이지의 **Individual Category**(개별 카테고리) 섹션에 나타나요. 이 섹션에서는 카테고리 이름과 점수를 보여 주고, 짧은 설명도 덧붙일 수 있어요.
 
-## 성격 유형 설문이란?
+## 성향형 퀴즈의 장점
 
-성격 유형 설문은 질문을 카테고리(스타일, 유형, 스킬 등)별로 그룹화합니다. 각 답변은 하나 이상의 카테고리에 점수를 추가합니다. 설문이 제출되면 Hyperclass가 점수를 합산하여 하나의 결과를 선택합니다. 보통 최고점 카테고리를 선택하며(격차를 강조하려면 최저점도 가능), 이 결과가 결과 페이지의 개별 카테고리 섹션에 표시됩니다. 여기서 카테고리 이름과 점수를 보여주고 간단한 설명을 추가할 수 있습니다.
+- 결과가 명확해요: 카테고리 하나가 응답자의 "유형"으로 강조되어 해석하기 쉬워요.
+- 개인화를 더 깊게 할 수 있어요: 커스텀 필드와 동적 값을 추가해 응답자별 여정을 개인화하고, 퀴즈 결과를 세분화하고, 결과 페이지에 맞춤 콘텐츠를 보여 줄 수 있어요.
+- 결과 설명을 풍부하게 쓸 수 있어요: 리치 텍스트 편집기에서 제목, 목록, 링크를 지원해서 결과 안내문을 깔끔하게 꾸밀 수 있어요.
+- 자동화와 연결하기 쉬워요: 결과를 워크플로우와 함께 쓰면(예: 카테고리별 분기) 맞춤 후속 조치를 보낼 수 있어요.
+- 참여도를 높일 수 있어요: 퀴즈의 어느 페이지에나 GIF, 설명 영상, 행동을 유도하는 CTA 버튼을 넣을 수 있어요.
 
----
+## 성향형 퀴즈 설정하기
 
-## 성격 유형 설문의 주요 장점
+아래 순서대로 설정하면 결과 페이지에 가장 높은 카테고리 또는 가장 낮은 카테고리만 보여 줄 수 있어요. 성향 진단형 결과나 역량 격차 진단에 활용해 보세요.
 
-- **명확한 결과**: 한 카테고리가 사용자의 "유형"으로 강조되어 해석이 쉽습니다.
+#### 1단계. 퀴즈 열기
 
-- **심화된 개인화**: 커스텀 필드(Custom Field)와 동적 값을 추가하여 사용자 여정을 개인화하고, 설문 결과를 세분화하거나 결과 페이지에서 맞춤 콘텐츠를 보여줄 수 있습니다.
+**사이트 > 퀴즈**로 이동해 **+ 퀴즈 추가**를 클릭하세요. 이미 만든 퀴즈를 선택해도 돼요.
 
-- **풍부한 스토리텔링**: 리치 텍스트 에디터가 제목, 목록, 링크를 지원하여 세련된 결과 내러티브를 만들 수 있습니다.
+![퀴즈 목록에서 퀴즈 추가 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055649009/original/Yf8J3EJdjBYKwd1FyH7Hz0l5phv183PprQ.png?1760030020)
 
-- **자동화 준비**: 결과를 워크플로우(Workflow)와 연결하여(예: 카테고리별 분기) 타겟팅된 후속 조치를 자동화할 수 있습니다.
+#### 2단계. 카테고리 만들기
 
-- **높은 참여도**: GIF, 설명 영상, 행동 유도 CTA 버튼을 설문 페이지에 직접 추가할 수 있습니다.
+왼쪽 위의 **Manage Categories**(카테고리 관리)를 클릭한 뒤 카테고리를 추가하세요.
 
----
+![카테고리 관리에서 카테고리 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055732948/original/lrrzA4DFdewj3pLiWmVGnj30wJIY9FVwcQ.png?1760107802)
 
-## 성격 유형 설문 설정 방법
+#### 3단계. 카테고리와 점수 지정하기
 
-다음 단계를 통해 결과 페이지에 최고점 또는 최저점 카테고리만 표시하도록 설문을 구성하여 성격 유형 결과나 스킬 격차 분석을 만들 수 있습니다.
+퀴즈 빌더에서 질문을 선택하고, 오른쪽의 **선택지** 패널을 보세요. 각 답변 아래에서 **카테고리**와 **점수**를 지정하세요.
 
-#### **1단계:** 설문 열기
+![선택지 패널에서 답변별 카테고리와 점수 지정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055733089/original/rap2IvXMJX3rYCHBhE1lOGzgybSOOgy5vg.png?1760107888)
 
-Sites(사이트) → **Surveys(설문)** → + **Add Survey(설문 추가)**로 이동하거나 기존 설문을 선택합니다.
+#### 4단계. 결과 페이지 만들기
 
-![설문 추가 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055649009/original/Yf8J3EJdjBYKwd1FyH7Hz0l5phv183PprQ.png?1760030020)
+카테고리와 점수를 설정했다면 **Result Page**(결과 페이지) 편집기로 이동하세요. 여기서 응답자가 퀴즈를 마친 뒤 보게 될 화면을 자유롭게 꾸밀 수 있어요.
 
-#### **2단계:** 카테고리 만들기
+사용할 수 있는 섹션은 다음과 같아요.
 
-왼쪽 상단의 'Manage Categories(카테고리 관리)' 옵션을 클릭한 후 카테고리를 추가합니다.
+- **머리글**: 제목, 로고, 비즈니스 이름 표시 토글을 설정해요.
+- **Overall Score**(전체 점수): 퀴즈 전체 결과를 보여 줘요. 백분율(낮음/보통/높음 구간을 선택적으로 설정 가능), 실제 점수, 10점 만점 점수 중에서 고를 수 있어요.
+- **Category Score**(카테고리별 점수): 모든 카테고리의 점수를 한눈에 보여 줘요. 전체 점수와 표시 방식을 맞추도록 카테고리별 점수도 백분율, 실제 점수, 10점 만점 중에서 고를 수 있어요.
+- **Individual Category**(개별 카테고리): 점수가 가장 높은 카테고리 또는 가장 낮은 카테고리만 보여 줘요.
+- **행동 유도**: 버튼을 추가해요(예: 구독하기, 상담 예약하기).
+- **푸터**: 면책 문구, 저작권 표시, 링크를 넣어요.
 
-![카테고리 관리 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055732948/original/lrrzA4DFdewj3pLiWmVGnj30wJIY9FVwcQ.png?1760107802)
+![결과 페이지 편집기의 섹션 구성](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055733516/original/4vOYotpwVWx0l3Potwy2ce6MK2LeRSfHsg.png?1760108093)
 
-#### **3단계:** 카테고리 및 점수 배정
+#### 5단계. 가장 높은/낮은 카테고리 보여 주기
 
-설문 빌더에서 질문으로 이동하고 오른쪽의 Options(옵션) 패널을 확인하세요. 각 답변 하위에서 **카테고리**와 **점수**를 배정합니다.
+성향형 결과를 설정하려면 다음 순서로 진행하세요.
 
-![카테고리 점수 배정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055733089/original/rap2IvXMJX3rYCHBhE1lOGzgybSOOgy5vg.png?1760107888)
+1. **Result Page**에서 **+ Add Section**(섹션 추가)을 클릭하세요.
 
-#### **4단계:** 결과 페이지 구성
+   ![결과 페이지에서 섹션 추가 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055733807/original/hQHzgaORK6dWt0as5rM4g0yVSSzhHvlZgA.png?1760108307)
+2. **Individual Category**를 선택하세요.
 
-카테고리와 점수를 설정한 후, 결과 페이지 에디터로 이동합니다.
+   ![개별 카테고리 섹션 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055733872/original/oScPaDp0oyJWXN5Sf8mye2vdfi_r-I0mFg.png?1760108342)
+3. 섹션 설정에서 아래 중 하나를 선택하세요.
 
-여기서 설문 응답자가 완료 후 보게 될 내용을 완전히 커스터마이징할 수 있습니다.
+   - **Highest Category**(가장 높은 카테고리): 점수가 가장 높은 카테고리를 보여 줘요.
+   - **Lowest Category**(가장 낮은 카테고리): 점수가 가장 낮은 카테고리를 보여 줘요.
+4. 편집기에서 텍스트를 입력하고, 이 섹션 안에서 쓸 수 있는 동적 태그를 넣으세요.
+`{{quiz_tags.highest_category_name}}``{{quiz_tags.highest_category_score}}``{{quiz_tags.lowest_category_name}}``{{quiz_tags.lowest_category_score}}`
 
-**사용 가능한 섹션**
+설정 예시는 다음과 같아요.
 
-- **Header(헤더)** → 제목, 로고, 비즈니스 이름 표시 여부 토글
-- **Overall Score(전체 점수)** → 전체 설문 결과를 표시. 퍼센트(선택적으로 낮음/보통/높음 범위 포함), 실제 점수, 또는 10점 만점 결과 중 선택 가능
-- **Category Score(카테고리 점수)** → 모든 카테고리별 점수 분석을 표시. 각 카테고리 점수 표시 방식도 선택 가능—퍼센트, 실제 점수, 10점 만점—전체 점수 스타일과 일치하도록 설정
-- **Individual Category(개별 카테고리)** → 최고점 또는 최저점 카테고리만 표시
-- **Call to Action(행동 유도)** → 버튼 추가(예: 구독, 상담 예약)
-- **Footer(푸터)** → 면책사항, 저작권, 링크 추가
+- 가장 높은 카테고리: `가장 강한 영역은 {{quiz_tags.highest_category_name}}({{quiz_tags.highest_category_score}}%)예요.`
+- 가장 낮은 카테고리: `가장 부족한 영역은 {{quiz_tags.lowest_category_name}}({{quiz_tags.lowest_category_score}}%)예요.`
 
-![결과 페이지 구성 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055733516/original/4vOYotpwVWx0l3Potwy2ce6MK2LeRSfHsg.png?1760108093)
+![개별 카테고리 섹션에 동적 태그를 넣은 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055734193/original/611qT2r7M7PSPYB-tv4yA8VlkkoUhPEBwA.png?1760108504)
 
-#### **5단계:** 최고점 또는 최저점 카테고리 표시
+#### 6단계. 점수 구간별 안내 추가하기 (선택)
 
-성격 유형 결과를 구성하려면:
+- **Overall Score** 또는 **Category Score** 섹션에서 점수 구간(낮음, 보통, 높음)을 설정할 수 있어요.
+- 예시:
 
-- 결과 페이지에서 + Add Section(섹션 추가)을 클릭합니다.
+  - 낮음 = 0~40%
+  - 보통 = 41~70%
+  - 높음 = 71~100%
+- 구간마다 응원 메시지나 추천 내용 같은 안내 문구를 추가하세요.
 
-![섹션 추가 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055733807/original/hQHzgaORK6dWt0as5rM4g0yVSSzhHvlZgA.png?1760108307)
+![점수 구간별 안내 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055734510/original/XtlfqPeEI3_JSXcyF1LDUmvXDHq6zA6sxQ.png?1760108734)
 
-- Individual Category(개별 카테고리)를 선택합니다.
+#### 7단계. 저장하고 미리보기
 
-![개별 카테고리 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055733872/original/oScPaDp0oyJWXN5Sf8mye2vdfi_r-I0mFg.png?1760108342)
+- 모든 섹션을 설정했으면 **저장**을 클릭하세요.
+- **미리보기**로 퀴즈를 직접 풀어 보면서 아래 내용을 확인하세요.
 
-- 섹션 설정에서 다음 중 선택:
-  - **Highest Category(최고점 카테고리)** → 가장 높은 점수를 받은 카테고리 표시
-  - **Lowest Category(최저점 카테고리)** → 가장 낮은 점수를 받은 카테고리 표시
-
-- 에디터를 사용해서 텍스트를 추가하고, 동적 태그를 포함시키세요(이 섹션에서 사용 가능):
-
-  - `{{quiz_tags.highest_category_name}}`
-  - `{{quiz_tags.highest_category_score}}`
-  - `{{quiz_tags.lowest_category_name}}`
-  - `{{quiz_tags.lowest_category_score}}`
-
-**설정 예시:**
-
-- 최고점 → "당신의 가장 강한 영역은 {{quiz_tags.highest_category_name}}입니다 ({{quiz_tags.highest_category_score}}%)."
-- 최저점 → "당신의 가장 약한 영역은 {{quiz_tags.lowest_category_name}}입니다 ({{quiz_tags.lowest_category_score}}%)."
-
-![동적 태그 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055734193/original/611qT2r7M7PSPYB-tv4yA8VlkkoUhPEBwA.png?1760108504)
-
-#### **6단계:** 동적 점수 범위 추가 (선택사항)
-
-- Overall Score(전체 점수) 또는 Category Score(카테고리 점수) 섹션에서 점수 단계(낮음, 보통, 높음)를 구성할 수 있습니다.
-
-- **예시:**
-  - 낮음 = 0–40%
-  - 보통 = 41–70%
-  - 높음 = 71–100%
-
-- 각 단계별로 메시지를 추가하세요(예: 격려, 추천사항).
-
-![점수 범위 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055734510/original/XtlfqPeEI3_JSXcyF1LDUmvXDHq6zA6sxQ.png?1760108734)
-
-#### **7단계:** 저장 및 미리보기
-
-- 모든 섹션을 구성한 후 Save(저장)을 클릭합니다.
-
-- Preview(미리보기) 옵션을 사용해서 설문을 완료하고 다음을 확인하세요:
   - 점수가 올바르게 계산되는지
-  - 최고점/최저점 카테고리가 예상대로 표시되는지
-  - 메시지와 CTA가 적절한 위치에 나타나는지
-
----
+  - 가장 높은/낮은 카테고리가 의도한 대로 표시되는지
+  - 메시지와 CTA가 알맞은 위치에 나타나는지
 
 ## 자주 묻는 질문
 
-**Q: 동적 태그는 어디에 삽입하나요?**
-리치 텍스트 에디터의 태그 피커를 사용해서 Quiz Tags(설문 태그), Contact(연락처) 필드, Custom Values(커스텀 값), 또는 타임스탬프 태그를 삽입하세요.
+### 동적 태그는 어디에서 넣나요?
+리치 텍스트 편집기의 태그 선택기에서 퀴즈 태그, 연락처 필드, **커스텀 값**, 타임스탬프 태그를 넣을 수 있어요.
 
-**Q: 성격 유형에 따라 다른 이메일을 보낼 수 있나요?**
-Quiz Submitted(설문 제출) 트리거(Trigger)를 사용한 워크플로우(Workflow)를 통해 맞춤형 메시지를 보낼 수 있습니다.
+### 성향별로 다른 이메일을 보내려면 어떻게 하나요?
+워크플로우에서 **Quiz Submitted**(퀴즈 제출) 트리거를 사용하면 성향에 맞는 메시지를 보낼 수 있어요.
 
-**Q: 최고점과 최저점 카테고리를 둘 다 표시할 수 있나요?**
-네. 개별 카테고리 섹션을 두 개 추가하세요—하나는 최고점으로, 다른 하나는 최저점으로 설정하거나, 최고점과 카테고리 점수 섹션을 함께 사용해서 전체 분석을 보여줄 수 있습니다.
+### 가장 높은 카테고리와 가장 낮은 카테고리를 둘 다 보여 줄 수 있나요?
+네, 가능해요. **Individual Category** 섹션을 두 개 추가해서 하나는 가장 높은 카테고리로, 다른 하나는 가장 낮은 카테고리로 설정하세요. 또는 가장 높은 카테고리를 **Category Score** 섹션과 함께 쓰면 전체 점수 구성을 보여 줄 수 있어요.
 
-**Q: 같은 설문에서 성격 점수와 전체 점수 퍼센트를 함께 사용할 수 있나요?**
-네. 성격 유형 결과에는 개별 카테고리 섹션을, 전체 퍼센트에는 전체 점수 섹션을 사용하세요—둘 다 결과 페이지에서 함께 사용할 수 있습니다.
-
----
-*원문 최종 수정: 2026년 1월 20일*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### 한 퀴즈에서 성향 점수와 전체 점수 백분율을 같이 쓸 수 있나요?
+네, 가능해요. 성향 결과는 **Individual Category** 섹션으로, 전체 백분율은 **Overall Score** 섹션으로 보여 주세요. 두 섹션을 결과 페이지에 함께 둘 수 있어요.

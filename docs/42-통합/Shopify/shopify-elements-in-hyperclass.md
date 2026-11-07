@@ -1,29 +1,45 @@
 ---
-
-번역일: 2026-04-09
-카테고리: 42-통합 > Shopify
+원문: /support/solutions/articles/48001203897-shopify-elements-in-highlevel
+번역일: 2026-11-07
+카테고리: 42-통합
 ---
 
-# 하이퍼클래스에서 Shopify 요소 사용하기
+# 하이퍼클래스에서 쓸 수 있는 Shopify 요소
 
-### 자동화 > 워크플로우(Workflow) > 트리거(Triggers)
+Shopify 연동을 하면 하이퍼클래스의 여러 화면에서 Shopify 요소를 쓸 수 있어요. 이 문서에서는 Shopify 요소가 어느 화면에 나오는지 위치별로 보여 드려요.
 
-![자동화 워크플로우의 Shopify 트리거 옵션들](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48226646624/original/7P3xeCLALUFwP2t-7ZL3EMpzEnIeJaMuKw.png?1652875054)
+## 트리거
 
-### 자동화 > 워크플로우(Workflow) > 액션(Actions) > 조건 분기(If/Else Condition)
+**자동화 > 워크플로우 > 트리거**에서 Shopify 관련 트리거를 쓸 수 있어요.
 
-![워크플로우에서 Shopify 관련 조건 분기 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48167181181/original/ulKNMO_9sUs4nwKTm0K1ihumf2XtwN38NQ.png?1638629947)
-
-![Shopify 조건 분기의 세부 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48167181178/original/V8nm3T0j2m99s1lGBbebbkci-Fa99Cv02A.png?1638629947)
-
-### 커스텀 값(Custom Values)
-
-![Shopify 관련 커스텀 값 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48167181182/original/mgvoOUwQMHQ7VajTIrJsGgVWUyCXo0WPqg.jpeg?1638629947)
-
-### 이메일 마케팅(Email Marketing) > 이메일 빌더(Email Builder)
-
-![이메일 빌더에서 사용할 수 있는 Shopify 변수](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48167181179/original/nOn7YNZcN3nwZUhfaWLz7FPA6YHz6zm1HQ.png?1638629947)
+![워크플로우 트리거 화면의 Shopify 요소](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48226646624/original/7P3xeCLALUFwP2t-7ZL3EMpzEnIeJaMuKw.png?1652875054)
 
 ---
-*원문 최종 수정: Wed, 18 May, 2022 at 6:57 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+
+## 만약 조건
+
+**자동화 > 워크플로우 > 작업**에서 If/Else Condition(조건 분기)을 추가하면 Shopify 요소를 조건에 쓸 수 있어요.
+
+![If/Else Condition에서 고를 수 있는 Shopify 요소 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48167181181/original/ulKNMO_9sUs4nwKTm0K1ihumf2XtwN38NQ.png?1638629947)
+
+---
+
+![If/Else Condition에서 고를 수 있는 Shopify 요소 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48167181178/original/V8nm3T0j2m99s1lGBbebbkci-Fa99Cv02A.png?1638629947)
+
+---
+
+## 커스텀 값
+
+**커스텀 값**에서도 Shopify 요소를 볼 수 있어요.
+
+![커스텀 값 화면의 Shopify 요소](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48167181182/original/mgvoOUwQMHQ7VajTIrJsGgVWUyCXo0WPqg.jpeg?1638629947)
+
+---
+
+## 이메일 빌더
+
+**이메일 마케팅 > 이메일 빌더**에서도 Shopify 요소를 쓸 수 있어요.
+
+![이메일 빌더 화면의 Shopify 요소](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48167181179/original/nOn7YNZcN3nwZUhfaWLz7FPA6YHz6zm1HQ.png?1638629947)
+
+---

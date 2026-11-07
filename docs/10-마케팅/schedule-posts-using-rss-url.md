@@ -1,161 +1,175 @@
 ---
-
-번역일: 2026-04-06
+원문: /support/solutions/articles/155000001052-schedule-posts-using-rss-url
+번역일: 2026-11-06
 카테고리: 10-마케팅
 ---
 
-# RSS URL로 게시물 예약하기
+# RSS 주소로 소셜 게시물 예약하기
 
-**소셜 플래너(Social Planner) → RSS 게시물(RSS Post)**을 사용해서 유효한 **RSS/Atom** 피드의 새 항목을 연결된 소셜 채널에 자동으로 게시할 수 있습니다. 최신 블로그 글, 팟캐스트 에피소드, 동영상, 뉴스를 수동 작업 없이 공유하는 데 완벽한 기능입니다.
+하이퍼클래스 **소셜 플래너**(Social Planner)에 RSS나 Atom 피드 주소를 등록하면, 새 콘텐츠가 올라올 때마다 연결된 소셜 미디어 계정에 자동으로 공유돼요. 피드를 확인하는 주기, 게시할 게시물 수, 게시물에 들어갈 내용을 직접 정할 수 있어요. 이 문서에서는 RSS 기반 소셜 게시물을 설정하고 관리하는 방법을 안내해요.
 
-**중요사항**: API 제한으로 인해 RSS를 통한 Twitter/X 게시는 지원되지 않습니다. 소셜 플래너에서 지원하는 다른 모든 네트워크는 RSS와 함께 사용할 수 있습니다.
+RSS 피드를 이메일로 보내고 싶다면 [RSS 이메일 캠페인 보내기](RSS-Guide/how-to-send-rss-email-campaign-s.md) 문서를 참고하세요.
 
----
-
-## RSS 피드를 통한 자동 소셜 게시의 장점
-
-RSS(Really Simple Syndication)는 소셜 미디어에서 콘텐츠를 관리하고 큐레이션하는 데 유용한 도구입니다. RSS가 소셜 미디어에 도움이 되는 몇 가지 방법을 알아보세요:
-
-- **콘텐츠 큐레이션**: 다양한 소스의 콘텐츠를 하나의 피드로 집계해서 공유할 관련 항목을 쉽게 발견할 수 있습니다.
-
-- **자동화된 콘텐츠 공유**: 콘텐츠를 소셜 계정에 자동으로 게시해서 시간을 절약하고 일관된 흐름을 유지할 수 있습니다.
-
-- **업계 트렌드 파악**: 업계 블로그/뉴스를 구독해서 시의적절하고 관련성 높은 게시물을 만들 수 있습니다.
-
-- **정보 과부하 줄이기**: 여러 사이트를 탐색하는 대신 콘텐츠를 한 곳에 통합할 수 있습니다.
-
-- **사용자 생성 콘텐츠 공유**: 커뮤니티/포럼 피드를 모니터링하고 뛰어난 기여를 공유할 수 있습니다.
-
-- **일관된 게시 일정 유지**: RSS와 함께 스케줄링 도구를 사용해서 꾸준한 페이스를 유지할 수 있습니다.
-
-## 필수 조건
-
-- **유효한 RSS/Atom 피드 URL** (예: 블로그나 YouTube 채널에서)
-
-- **마케팅(Marketing) → 소셜 플래너(Social Planner) → 설정(Settings)**에 연결된 소셜 계정 (예: Facebook 페이지, Instagram 비즈니스, LinkedIn 프로필/페이지, Google 비즈니스 프로필, Pinterest)
+{% hint style="warning" %}
+API 제한 때문에 RSS로 Twitter/X에 게시하는 기능은 지원하지 않아요. 소셜 플래너가 지원하는 나머지 네트워크에서는 모두 RSS를 사용할 수 있어요.
+{% endhint %}
 
 ---
 
-## RSS 피드 찾는 방법
+## 소셜 플래너의 RSS 예약이란
 
-RSS 피드는 여전히 활발하게 사용되고 있지만, 요즘에는 찾기가 좀 더 까다로울 수 있습니다. 과거와 달리 브라우저에서 더 이상 RSS를 강조 표시하지 않고, 웹사이트에서 항상 RSS 링크를 눈에 띄게 표시하지도 않습니다. 하지만 대부분의 사이트에서 RSS 피드를 제공합니다. 간단한 Google 검색으로 충분하지 않을 때 빠르게 찾는 몇 가지 방법을 살펴보겠습니다.
+RSS 예약을 쓰면 소셜 플래너가 RSS나 Atom 피드의 새 콘텐츠를 연결된 소셜 미디어 계정에 자동으로 게시해요. 블로그 글, 팟캐스트 에피소드, 뉴스처럼 자주 업데이트되는 콘텐츠를 소셜 게시물을 하나하나 만들지 않고도 공유할 수 있어요.
 
-예를 들어, 상당수의 웹사이트가 WordPress로 구축되어 웹의 40% 이상을 차지합니다. 이는 방문하는 웹사이트가 WordPress 사이트일 가능성이 높다는 뜻이며, 일반적으로 쉽게 찾을 수 있는 RSS 피드를 제공합니다.
+---
 
-WordPress RSS 피드를 찾으려면 URL 끝에 "/feed"를 추가하기만 하면 됩니다. 예를 들어, [https://justinpot.com/feed](https://justinpot.com/feed)와 같이 말이죠. 이 방법은 대부분의 경우 작동하며 RSS 피드를 찾는 제가 선호하는 접근법입니다.
+## RSS 예약의 장점
 
-이것이 효과가 없다면 다른 유형의 사이트에서 시도해볼 수 있는 몇 가지 추가적인 방법이 있습니다:
+RSS(Really Simple Syndication) 예약을 쓰면 직접 게시하는 수고를 줄이면서 소셜 미디어 활동을 꾸준히 이어 갈 수 있어요.
 
-- Tumblr에서 호스팅되는 사이트의 경우 URL에 "/rss"를 추가합니다. 예: [https://example.tumblr.com/rss](https://example.tumblr.com/rss)
+- 콘텐츠 큐레이션: 여러 출처의 콘텐츠를 한 피드로 모아 공유할 만한 글을 쉽게 찾을 수 있어요.
+- 자동 콘텐츠 공유: 소셜 계정에 자동으로 게시해 시간을 아끼고 게시 흐름을 꾸준히 유지할 수 있어요.
+- 업계 동향 파악: 업계 블로그나 뉴스를 구독해 시의성 있는 게시물을 만들 수 있어요.
+- 정보 과부하 줄이기: 여러 사이트를 돌아다니지 않고 한곳에서 콘텐츠를 모아 볼 수 있어요.
+- 사용자 제작 콘텐츠 공유: 커뮤니티나 포럼 피드를 살펴보고 눈에 띄는 글을 공유할 수 있어요.
+- 일정한 게시 주기 유지: RSS와 예약 기능을 함께 써서 꾸준한 간격으로 게시할 수 있어요.
 
-- Blogger에서 호스팅되는 사이트의 경우 URL 끝에 "feeds/posts/default"를 추가합니다. 예: [example.blogspot.com/feeds/posts/default](//example.blogspot.com/feeds/posts/default)
+---
 
-- Medium에 있는 출판물의 경우 출판물 이름 앞에 "/feed/"를 삽입합니다. 따라서 [medium.com/example-site](http://medium.com/example-site)는 [medium.com/feed/example-site](//medium.com/feed/example-site)가 됩니다.
+## 시작하기 전에
 
-- YouTube 채널 페이지는 RSS 피드 역할을 할 수 있습니다. 채널 URL을 복사해서 RSS 리더에 붙여넣기만 하면 됩니다.
+- 유효한 RSS/Atom 피드 주소가 필요해요(예: 내 블로그나 YouTube 채널의 피드).
+- **마케팅 > 소셜 플래너 > 설정**에서 소셜 계정을 연결해 두세요(예: Facebook 페이지, Instagram 비즈니스, LinkedIn 프로필/페이지, Google Business Profile, Pinterest). 연결 방법은 [시작하기 – 소셜 플래너 설정](../01-시작하기/마케팅-리드-생성/getting-started-setup-social-planner.md) 문서를 참고하세요.
 
-- 또한 모든 구독이 포함된 OPML 파일도 찾을 수 있습니다.
+---
 
-이러한 방법이 모두 성공하지 못한다면 웹 페이지의 소스 코드를 확인하는 방법을 사용할 수 있습니다. 걱정하지 마세요, 들리는 것보다 간단합니다.
+## RSS 피드 주소 찾기
 
-RSS 피드를 찾고자 하는 웹사이트의 빈 공간을 마우스 오른쪽 버튼으로 클릭한 다음 "페이지 소스 보기"를 선택합니다 (브라우저에 따라 문구가 약간 다를 수 있습니다).
+RSS 피드는 지금도 널리 쓰이지만, 예전과 달리 브라우저가 알려 주지 않고 웹사이트도 RSS 링크를 눈에 띄게 보여 주지 않는 경우가 많아서 찾기가 조금 까다로울 수 있어요. 그래도 대부분의 사이트는 RSS 피드를 제공해요. Google 검색만으로 찾기 어려울 때 쓸 수 있는 방법을 알려 드릴게요.
 
-![RSS 피드 찾기 - 페이지 소스 보기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155009129939/original/ljGpSDLcDdd-9knR7lMWqfVlfuhAjnKjLg.png?1696343867)
+웹사이트의 40% 이상이 WordPress로 만들어져 있어서, 방문한 사이트가 WordPress일 가능성이 높아요. WordPress 사이트는 대개 피드 주소를 쉽게 찾을 수 있어요.
 
-다음으로 Ctrl+F(Windows, Linux) 또는 Command+F(Mac)를 눌러서 코드를 검색합니다. 다음과 같이 "RSS"를 검색해 보세요:
+WordPress 피드 주소는 사이트 주소 끝에 "/feed"를 붙이면 돼요. 예: <https://justinpot.com/feed>. 대부분의 경우 이 방법으로 찾을 수 있어요.
 
-![RSS 피드 검색](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155009129927/original/E-aWIuKCArOaEVdeLiyQ6BYp4knhkShqBg.png?1696343865)
+이 방법으로 안 된다면 사이트 유형별로 아래 방법을 시도해 보세요.
 
-"rss"가 결과를 얻지 못한다면 "atom"을 대신 시도해 보세요. 위에 표시된 것처럼 RSS URL을 찾은 다음 복사해서 피드 리더에 붙여넣습니다. 즐거운 피드 찾기를 바랍니다!
+- Tumblr 사이트: 주소 끝에 "/rss"를 붙여요. 예: <https://example.tumblr.com/rss>
 
-## RSS 피드로 게시물 만드는 방법
+- Blogger 사이트: 주소 끝에 "feeds/posts/default"를 붙여요. 예: [example.blogspot.com/feeds/posts/default](//example.blogspot.com/feeds/posts/default)
+- Medium 게시판: 게시판 이름 앞에 "/feed/"를 넣어요. 예를 들어 [medium.com/example-site](http://medium.com/example-site)는 [medium.com/feed/example-site](//medium.com/feed/example-site)가 돼요.
+- YouTube 채널 페이지: 채널 주소를 RSS 리더에 그대로 붙여 넣으면 피드로 쓸 수 있어요.
+- 거기에서 구독 목록 전체가 담긴 OPML 파일도 찾을 수 있어요.
 
-소셜 플래너에서 RSS-to-소셜 흐름을 설정해서 피드의 새 항목이 일정에 따라 연결된 채널에 자동으로 게시되도록 할 수 있습니다.
+블로그용 피드는 [블로그용 RSS 피드](../06-사이트/블로그/rss-feed-for-blogs.md) 문서에서도 확인할 수 있어요.
 
-### 1단계: RSS 게시물로 이동
+위 방법으로도 찾지 못했다면 웹페이지 소스 코드를 확인해 보세요. 생각보다 간단해요.
 
-마케팅(Marketing) > 소셜 플래너(Social Planner)로 이동합니다. "새 게시물(New Post)"을 클릭하면 "RSS 게시물(RSS Post)"을 선택할 수 있는 옵션이 나타납니다.
+피드를 찾으려는 웹사이트의 빈 공간에서 마우스 오른쪽 버튼을 누르고 "페이지 소스 보기"(View Page Source)를 선택하세요. 브라우저에 따라 문구가 조금 다를 수 있어요.
 
-![RSS 게시물 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055530308/original/5VhD97g5_Szhterlz__FtrJ376EpFXCArQ.png?1759931805)
+![웹페이지에서 페이지 소스 보기를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155009129939/original/ljGpSDLcDdd-9knR7lMWqfVlfuhAjnKjLg.png?1696343867)
 
-### 2단계: URL 추가
+그다음 Ctrl+F(Windows, Linux) 또는 Command+F(Mac)를 눌러 코드를 검색해요. 먼저 "RSS"를 검색해 보세요.
 
-RSS 피드의 URL을 추가합니다. [위에서 RSS URL 찾는 방법을 확인하세요]
+![소스 코드에서 RSS를 검색하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155009129927/original/E-aWIuKCArOaEVdeLiyQ6BYp4knhkShqBg.png?1696343865)
 
-![RSS URL 입력](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055530397/original/r74SRDYcQY8YaRXdHxj0HqwzqehXk-eIaQ.png?1759931858)
+"rss"로 결과가 나오지 않으면 "atom"으로 검색해 보세요. 위 화면처럼 RSS 주소를 찾으면 복사해서 사용하면 돼요.
 
-### 3단계: 소셜 채널 선택
+---
 
-게시하고 싶은 소셜 채널을 선택합니다.
+## RSS 피드로 게시물 만들기
 
-![소셜 채널 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055530476/original/ydivUWdrc8GOie_nxrvH9YjPdWH1mr1-5g.png?1759931909)
+소셜 플래너에서 RSS 게시물을 설정하면, 피드에 올라온 새 항목이 정해진 주기에 따라 연결된 채널에 자동으로 게시돼요.
 
-### 4단계: 끝맺음 추가
+### 1단계: RSS 게시물 메뉴로 이동
 
-"끝맺음(End with)" 옵션을 사용해서 텍스트, 해시태그 또는 링크를 추가할 수 있습니다.
+1. **마케팅 > 소셜 플래너**로 이동하세요.
+2. **새 게시물**을 클릭하세요.
+3. 옵션 중에서 **RSS Post**(RSS 게시물)를 선택하세요.
 
-![끝맺음 텍스트 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155009129941/original/TCrkq5xczfBJj_Jd50Tnhre6DNXqHydE1w.png?1696343867)
+### 2단계: 주소 추가
 
-### 5단계: 업데이트 시간 설정
+RSS 피드 주소를 입력하세요. 주소를 찾는 방법은 위의 "RSS 피드 주소 찾기"를 참고하세요.
 
-피드 업데이트 옵션을 선택합니다 - 5분마다부터 하루에 한 번까지.
+### 3단계: 소셜 계정 선택
 
-![업데이트 주기 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055530694/original/xy91wt151AQcaqv7nD2aOHnGc_xna0F4oA.png?1759932027)
+게시할 소셜 계정을 선택하세요.
+
+### 4단계: 마무리 문구 추가
+
+**다음으로 끝남** 옵션에 텍스트, 해시태그, 링크를 입력하면 게시물 끝에 붙일 수 있어요.
+
+### 5단계: 업데이트 주기 선택
+
+피드를 확인하는 주기를 선택하세요. 5분마다부터 하루 한 번까지 고를 수 있어요.
+
+![피드 업데이트 주기를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055530694/original/xy91wt151AQcaqv7nD2aOHnGc_xna0F4oA.png?1759932027)
 
 ### 6단계: 최대 게시물 수 선택
 
-- 새 콘텐츠를 확인할 때마다 RSS 피드에서 가져올 고유 게시물 수를 선택합니다 (최소 1개부터 최대 5개까지).
+- 피드를 확인할 때마다 가져올 서로 다른 게시물의 수를 선택하세요(최소 1개, 최대 5개).
 
-- 예를 들어, '3'을 선택하면 시스템이 게시 시점에 RSS 피드에서 최대 3개의 최신 항목을 가져옵니다.
+- 예를 들어 '3'을 선택하면, 게시 시점에 RSS 피드에서 가장 최근 항목을 최대 3개까지 가져와요.
+- 같은 게시물이 여러 번 게시된다는 뜻은 아니에요. 가져온 항목은 각각 하나의 소셜 게시물로 한 번씩만 게시돼요.
 
-- 이는 같은 게시물이 여러 번 게시된다는 뜻이 아닙니다. 가져온 각 항목은 각각의 소셜 게시물로 한 번씩 게시됩니다.
+![가져올 최대 게시물 수를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155009129942/original/VcgRrCxOyet5lCDer97vLERGn02fRe6YtA.png?1696343867)
 
-![최대 게시물 수 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155009129942/original/VcgRrCxOyet5lCDer97vLERGn02fRe6YtA.png?1696343867)
+### 7단계: (선택) 게시물에 RSS 항목 설명 포함하기
 
-### 7단계: (선택사항) 게시물에 RSS 항목 설명 포함
+게시할 때 RSS **항목 설명**을 포함할지 선택할 수 있어요.
 
-이제 게시물을 발행할 때 RSS 항목 설명을 포함할지 선택할 수 있습니다.
+- **Include Description**(설명 포함)을 활성화하면 RSS 피드의 제목과 설명을 함께 게시해요.
+- 비활성화하면 지금처럼 제목만 게시해요.
+- 최대 5개 항목을 한 번에 보여 주는 미리보기로 서식, 콘텐츠 길이, 잘림 여부를 저장하기 전에 확인할 수 있어요.
 
-- 설명 포함(Include Description)을 활성화하면 RSS 피드의 제목과 설명을 모두 포함하는 게시물을 발행합니다.
+이 옵션을 쓰면 공유할 콘텐츠의 양을 더 세밀하게 조절하고, 소셜 플랫폼마다 알맞게 게시할 수 있어요.
 
-- 비활성화하면 제목만 포함하는 게시물을 계속 발행합니다.
+{% hint style="info" %}
+RSS 게시물을 여러 소셜 네트워크에 게시하면, 소셜 플래너가 네트워크별 글자 수 제한에 맞춰 플랫폼마다 게시글 텍스트를 따로 만들어요. 같은 RSS 항목이 여러 플랫폼에 올라갈 때 예상치 못하게 잘리는 일을 줄일 수 있어요.
 
-- 다중 항목 미리보기(최대 5개 항목)를 사용해서 저장하기 전에 형식, 콘텐츠 길이, 잘림을 검토할 수 있습니다.
+저장하기 전에 최대 5개 항목을 보여 주는 미리보기로 서식과 잘릴 수 있는 위치를 확인하세요.
+{% endhint %}
 
-이 옵션은 공유되는 콘텐츠 양을 더 잘 제어하고 게시물이 다양한 소셜 플랫폼에 최적화되도록 도와줍니다.
+![RSS 항목 설명 포함 옵션 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064040493/original/p6ikyhhQlCffVahc68PS6npSqGCVSqe6LA.png?1770098889)
 
-여러 소셜 네트워크에 RSS 게시물을 발행할 때, 소셜 플래너는 각 네트워크의 글자 수 제한에 따라 플랫폼별로 게시물 텍스트를 생성합니다. 이렇게 하면 동일한 RSS 항목이 다른 플랫폼에 게시될 때 예상치 못한 잘림을 줄일 수 있습니다.
+![여러 항목 미리보기 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064040473/original/Fbn8NP-Dgt3XoubbJCh0AF3F0KU0YWiC7Q.png?1770098865)
 
-저장하기 전에 다중 항목 미리보기(최대 5개 항목)를 사용해서 형식과 잘림이 발생할 수 있는 부분을 확인하세요.
+---
 
-![RSS 설명 포함 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064040493/original/p6ikyhhQlCffVahc68PS6npSqGCVSqe6LA.png?1770098889)
+## RSS 중복 게시 방지 방식
 
-![다중 항목 미리보기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064040473/original/Fbn8NP-Dgt3XoubbJCh0AF3F0KU0YWiC7Q.png?1770098865)
+소셜 플래너는 이미 처리한 RSS 항목을 기록해 두었다가, 같은 게시물이 중복으로 올라가지 않도록 하면서 새 콘텐츠는 게시해요.
+
+- 고유 항목 식별: 피드 항목은 RSS GUID로 구분해요. GUID가 없으면 링크와 제목으로 구분해요.
+- 90일 동안 기록: 소셜 플래너는 처리한 항목을 90일 동안 기록해 중복 게시를 막아요.
+- 새 콘텐츠만 게시: 피드를 확인했을 때 게시할 수 있는 새 항목이 없으면 새 게시물을 만들지 않아요.
+
+---
+
+## 알아 두면 좋은 점
+
+RSS 게시가 어떻게 동작하는지 알면 지원되는 소셜 플랫폼에 콘텐츠를 올바르게 공유하는 데 도움이 돼요.
+
+- 지원 플랫폼: RSS 게시는 소셜 플래너가 지원하는 네트워크에서 쓸 수 있어요. X(Twitter)는 제외돼요.
+- 최대 게시물 수: 1~5개 제한은 피드를 확인할 때마다 처리하는 고유 항목 수에 적용돼요.
+- 콘텐츠 서식: 소셜 플래너가 플랫폼별 글자 수 제한에 맞춰 RSS 게시글 텍스트를 조정해요.
+- 게시물 미리보기: 저장하기 전에 피드 항목을 확인해 서식이나 잘림 문제가 없는지 살펴보세요.
+- 이미지: 링크 미리보기는 소셜 플랫폼마다 달라요. 더 안정적인 미리보기를 원하면 원본 페이지에 대표 이미지와 Open Graph 메타데이터를 설정하세요.
+- 피드 접근성: 자동 게시를 하려면 원본 RSS 주소가 계속 유효하고 접근할 수 있어야 해요.
 
 ---
 
 ## 자주 묻는 질문
 
-**Q. 나중에 주기를 변경할 수 있나요?**
+### 설정한 뒤에 RSS 게시 주기를 바꿀 수 있나요?
+네, 가능해요. RSS 설정을 편집해서 피드 확인 주기나 **Maximum Posts**(최대 게시물 수) 설정을 바꿀 수 있어요.
 
-네. RSS 게시물을 편집해서 **업데이트 시간** 또는 **최대 게시물 수**를 조정할 수 있습니다.
+### 소셜 플래너가 예전 RSS 항목을 반복해서 게시하나요?
+소셜 플래너는 처리한 항목을 90일 동안 기록해 중복 게시를 막아요. 이 기록 기간 안에는 이미 처리한 항목을 건너뛰어요.
 
-**Q. 같은 글이 여러 번 게시되나요?**
+### RSS 피드에 새 콘텐츠가 없으면 어떻게 되나요?
+소셜 플래너가 게시할 수 있는 새 피드 항목을 찾을 때까지 새 게시물을 만들지 않아요.
 
-아니요. 각 항목은 한 번만 게시됩니다. 새로운 콘텐츠가 없으면 아무것도 게시되지 않습니다.
+### RSS 예약은 반복 게시물과 어떻게 다른가요?
+RSS 예약은 피드의 새 콘텐츠를 자동으로 공유해요. [반복 게시물](소셜-플래너/how-to-post-recurring-social-posts-through-the-social-planner.md)은 미리 설정해 둔 콘텐츠를 정해진 간격으로 다시 게시해요.
 
-**Q. 어떤 네트워크가 지원되나요?**
-
-소셜 플래너에서 지원하는 대부분의 네트워크를 선택할 수 있습니다. **X (이전의 Twitter)**는 지원되지 않습니다.
-
-**Q. 이미지가 자동으로 나타나나요?**
-
-링크 미리보기는 각 소셜 네트워크에서 제어됩니다. 가장 안정적인 시각적 요소를 위해서는 소스 페이지에 추천 이미지와 Open Graph 태그를 포함하세요.
-
-**Q. 같은 RSS 항목이 다른 소셜 네트워크에서 다르게 보이는 이유가 뭔가요?**
-
-소셜 네트워크마다 글자 수 제한이 다릅니다. 소셜 플래너가 플랫폼별로 RSS 게시물 텍스트를 생성하므로, 동일한 RSS 항목이 네트워크에 따라 다르게 잘릴 수 있습니다.
-
----
-*원문 최종 수정: 2026년 3월 24일*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### RSS 피드의 설명도 게시물에 넣을 수 있나요?
+네, 가능해요. **Include Description**(설명 포함)을 활성화하면 지원되는 RSS 항목의 제목과 설명을 함께 게시해요.

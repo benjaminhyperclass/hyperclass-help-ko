@@ -1,121 +1,200 @@
 ---
-
-번역일: 2026-04-06
+원문: /support/solutions/articles/155000005199-how-to-share-and-manage-documents-via-client-portal-and-crm-
+번역일: 2026-11-06
 카테고리: 02-연락처
 ---
 
-# 클라이언트 포털과 CRM을 통한 문서 공유 및 관리 방법
+# 클라이언트 포탈로 문서 공유하고 관리하기
 
-**목차**
+연락처 상세 화면의 문서를 **클라이언트 포탈**로 공유하고, 연락처가 포탈에서 올린 파일을 확인하는 방법을 안내해요. 문서를 공유하고, 업로드하고, 미리보기와 다운로드를 하고, 이용 권한을 관리할 때 참고하세요.
 
-- [개요](#개요)
-- [왜 중요한가요?](#왜-중요한가요)
-- [문서 공유 및 관리 방법](#문서-공유-및-관리-방법)
-- [관련 자료](#관련-자료)
+## 하이퍼클래스와 클라이언트 포탈 사이의 문서 공유란?
 
-## 개요
+하이퍼클래스 사용자는 연락처에 문서를 올리고, 그 문서를 **클라이언트 포탈**로 연락처와 공유할 수 있어요. 연락처도 포탈에서 지원되는 파일을 올릴 수 있고, 하이퍼클래스 사용자는 그 파일을 확인할 수 있어요.
 
-이 가이드는 CRM 사용자가 연락처와 문서를 공유하는 방법과 연락처가 클라이언트 포털(Client Portal)을 통해 파일을 업로드하는 방법을 설명합니다. 이러한 도구를 어디서 찾을 수 있는지, 공유된 파일과 받은 파일을 효율적으로 관리하는 방법을 알아보겠습니다.
+연락처 상세 화면의 **문서** 영역에 있는 파일은 해당 연락처에 연결돼요. 파일을 **클라이언트 포탈**로 공유하면 이메일 첨부파일로 따로 보내지 않아도 연락처가 파일을 볼 수 있어요.
 
-참고: 현재 문서(Documents)와 계약서(Contracts)는 공유/비공유 상태를 토글할 수 없습니다.
+{% hint style="warning" %}
+**중요:** 연락처 상세 화면의 **문서**는 하이퍼클래스의 **문서 & 계약**과 달라요. **문서 & 계약**은 제안서, 계약서, 견적서, 서명 등 관련 문서 워크플로우에 쓰는 별도 기능이에요.
+{% endhint %}
 
-**필수 조건**
+## 클라이언트 포탈로 문서를 공유하면 좋은 점
 
-이 기능은 클라이언트 포털 사용자인 연락처에게만 제공됩니다.
+클라이언트에게 보여 줄 파일이 해당 연락처에 연결된 채로 남고, 연락처는 한곳에서 파일을 확인하고 제출할 수 있어요. 파일을 주고받기가 쉬워지고, 내가 공유한 문서와 연락처에게서 받은 파일을 구분하기도 편해요.
 
----
+- 한곳에서 파일 주고받기: 공유한 파일과 받은 파일을 이메일 첨부파일에 의존하지 않고 연락처에 모아 둘 수 있어요.
+- 양방향 파일 공유: 연락처에게 문서를 공유하고, 연락처가 **클라이언트 포탈**에서 지원되는 파일을 올릴 수도 있어요.
+- 파일 상태 확인: 연락처와 공유한 파일과 **클라이언트 포탈**로 받은 파일을 쉽게 찾을 수 있어요.
+- 클라이언트 자동 알림: 지원되는 **클라이언트 포탈** 파일 공유에서는 알림이 만들어져서, 연락처가 새 파일이 공유된 것을 알 수 있어요.
+- 자동화 활용: 연락처가 파일을 제출한 뒤 후속 조치나 내부 처리를 시작해야 한다면, **클라이언트 포탈** 업로드를 워크플로우 트리거로 쓸 수 있어요.
 
-## 왜 중요한가요?
+## 문서를 공유하기 전에 확인할 것
 
-- **중앙집중식 파일 관리**: 모든 문서와 업로드가 한 곳에서 관리되어 명확한 가시성을 제공합니다.
+연락처가 **클라이언트 포탈**에 접근할 수 있어야 공유받은 파일을 보고 자기 문서를 올릴 수 있어요. 공유하기 전에 접근 권한을 확인하면 연락처가 포탈을 열고 파일을 이용할 수 있는지 미리 알 수 있어요.
 
-- **원활한 협업**: 외부 도구 없이 CRM 사용자와 고객 간의 파일 교환을 간소화합니다.
+문서를 공유하기 전에 아래를 확인하세요.
 
-- **향상된 제어**: 사용자와 연락처가 클릭 한 번으로 파일을 관리하고, 미리보고, 접근 권한을 취소할 수 있습니다.
+- 연락처가 **클라이언트 포탈**에 접근할 수 있는지 확인하세요.
+- 하이퍼클래스에서 올바른 연락처 상세 화면을 열었는지 확인하세요.
+- 파일이 연락처에 아직 없다면, 올릴 파일을 미리 준비하세요.
 
-## 문서 공유 및 관리 방법
+**클라이언트 포탈**을 아직 설정하지 않았다면, 파일을 공유하기 전에 해당 설정을 먼저 마치세요.
 
-- **문서 도구 접근하기**
+## 하이퍼클래스에서 문서 공유하기
 
-CRM에서 연락처(Contacts)를 선택하고, 연락처를 선택한 다음 왼쪽 메뉴에서 문서(Documents)를 클릭합니다.
+공유는 개별 연락처 상세 화면의 **문서** 영역에서 해요. 새로 올리는 파일을 **클라이언트 포탈**에서 볼 수 있게 하거나, 이미 올려 둔 연락처 문서를 공유할 수 있어요.
 
-![문서 접근하기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046128953/original/jkPKH2zPPTvMYWmsCCeHeIMRrPG0mPm3Pg.png?1746456223)
+### 새 문서 공유하기
 
-- **CRM에서 문서 공유하기**
+업로드할 때 공유하면 파일을 연락처에 추가하고 연락처가 볼 수 있게 하는 작업을 한 번에 할 수 있어요.
 
-문서(Documents) 탭에서 공유하려는 파일을 찾거나 새 파일을 추가합니다.
+1. 하이퍼클래스 서브 계정에서 **연락처**로 이동하세요.
+2. 문서를 공유할 연락처를 여세요.
+3. 연락처의 **문서** 영역을 여세요.
 
-- **새 문서 추가하기**
+   ![연락처의 문서 영역](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081003508/original/iDVQ6NCOTpD8KMJGNUobViP27tnTriu4hA.png?1789489750)
+4. **+ 추가**를 클릭하거나, 문서를 추가할 수 있는 다른 옵션을 클릭하세요.
 
-+ 추가 아이콘을 클릭하여 새 문서를 추가합니다.
+   ![문서 추가 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081003572/original/dYg709stAL7NfjmLJpBVbW97rZA0rb96rg.png?1789489800)
+5. 파일을 선택해 업로드하세요.
+6. 문서의 클라이언트 포탈 공유 옵션을 켜세요.
 
-![새 문서 추가하기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046128974/original/MiWKxRpHtgNotQHxCtlSPql--V3thLpv6Q.png?1746456245)
+   ![클라이언트 포탈 공유 옵션 켜기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081003592/original/LDysuzOgCyCChHDF5L5Wr1VIoJaNMBgXFg.png?1789489831)
+7. 업로드를 마치세요.
 
-문서를 클라이언트 포털에 직접 공유하고 싶다면 토글을 클릭하세요. 나중에 공유할 수도 있습니다.
+파일을 공유한 뒤에는 문서에 **공유됨** 상태나 클라이언트 포탈 공유 표시가 나타나는지 확인하세요.
 
-![문서 공유 토글](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046128379/original/Moal9O_gEfEBqD7P9xwHxe5jM6PK05snsA.png?1746455666)
+### 기존 문서 공유하기
 
-공유된 문서에는 공유 칩이 표시되어 클라이언트 포털에서 연락처와 공유되었음을 나타냅니다.
+연락처 상세 화면에 이미 있는 파일은 다시 올리지 않고도 연락처에게 공유할 수 있어요.
 
-![공유된 문서](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046128997/original/LSxaw5z6NQs4wACuhWI9qr3HG_5aGrB5QA.png?1746456269)
+1. 연락처 상세 화면에서 **문서**를 여세요.
+2. 공유할 기존 문서를 찾으세요.
+3. 파일의 점 세 개 작업 메뉴를 여세요.
+4. **Share to Client Portal**(클라이언트 포탈에 공유)을 선택하세요.
 
-- **기존 문서 공유하기**
+   ![클라이언트 포탈에 공유 메뉴 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081003668/original/StMaodMcv-X5QIztVKaQbecdsTjph4T0zw.png?1789489878)
+5. 확인 창이 나타나면 공유를 확인하세요.
 
-점 3개 버튼 > Share to Client Portal(클라이언트 포털에 공유) > Share(공유)를 클릭합니다.
+   ![공유 확인 창](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081003687/original/SEb3-LnIJ8BzyWvd44s_M71ok0YXkrRPAg.png?1789489905)
+6. 문서에 **공유됨** 상태가 표시되는지 확인하세요.
 
-이제 문서가 클라이언트 포털에서 연락처와 공유됩니다.
+{% hint style="info" %}
+지원되는 파일을 **클라이언트 포탈** 공유 흐름으로 공유하면, 하이퍼클래스가 연락처에게 클라이언트 포탈 알림을 만들어요. 연락처의 알림 설정과 지원되는 기기·앱 구성에 따라 푸시 알림이 추가로 갈 수도 있어요.
+{% endhint %}
 
-![기존 문서 공유](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046128383/original/_sXd3soMjDTx2eZDDhlqu64m89KJduZxYA.png?1746455666)
+자세한 내용은 [클라이언트 포탈 - 연락처를 위한 파일 공유 알림](../39-클라이언트-포털/client-portal-file-share-notifications-for-contacts.md)을 참고하세요.
 
-![공유 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046128385/original/Os0G0tv-6zMUbFiuKHmhHz6CLGuShbevig.png?1746455666)
+## 연락처가 클라이언트 포탈에서 문서 업로드하기
 
-Share(공유) 토글을 On(권한 부여) 또는 Off(권한 취소)로 사용하세요.
+**클라이언트 포탈** 업로드를 쓰면 연락처와 하이퍼클래스 사용자가 파일을 양방향으로 주고받을 수 있어요. 연락처가 제출한 파일은 해당 연락처에 연결되어, 팀원이 별도 이메일이나 외부 업로드 없이 클라이언트가 제출한 문서를 찾을 수 있어요.
 
-![공유 토글](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046129018/original/gvQwqhFrAd3fkuFVT5wXZ20PwcNn2Z-aPg.png?1746456300)
+연락처는 **클라이언트 포탈**에서 아래 순서로 올려요.
 
-공유된 파일은 연락처의 포털에서 Shared Documents(공유된 문서) 아래에 즉시 나타납니다.
+1. **클라이언트 포탈**에 로그인하세요.
+2. **문서** 또는 **공유된 파일** 영역을 여세요.
+3. **문서 업로드**를 선택하거나, 파일을 올릴 수 있는 다른 옵션을 선택하세요.
+4. 업로드할 파일을 선택하세요. 지원되는 파일이면 여러 개도 선택할 수 있어요.
+5. 업로드를 마치세요.
 
-![클라이언트 포털 공유 문서](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046129056/original/8Hau3fphhadJHJtz11laHz7i_js4nc4pcg.png?1746456327)
+업로드에 성공하면 하이퍼클래스 사용자는 연락처 상세 화면의 아래 위치에서 파일을 찾을 수 있어요.
 
-- **클라이언트의 CRM 업로드**
+**문서 > 수신됨 > 클라이언트 포탈**
 
-클라이언트 포털에서 연락처가 Upload Document(문서 업로드)를 클릭합니다.
+![클라이언트 포탈에서 문서를 업로드하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081003795/original/eFGCcBsDKS60MD2QU32qz0Uy44blKqk3wg.gif?1789489989)
 
-![문서 업로드](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046128797/original/lKPMGQEWQQQBk1Qn-OBsRd-_KAV-s35ZXQ.png?1746456063)
+**클라이언트 포탈**은 지원되는 문서와 이미지 파일 형식을 받아요. 현재 지원하는 형식과 자세한 업로드 조건은 [클라이언트 포탈에서 문서 업로드하기](../39-클라이언트-포털/upload-documents-through-the-client-portal.md)를 참고하세요.
 
-업로드 후, 파일이 CRM의 Documents(문서) > Received(받은 파일) > Client Portal(클라이언트 포털)에 나타납니다.
+### 클라이언트 업로드 후 후속 조치 자동화하기
 
-![받은 문서](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046129125/original/44g5VHni-UeozuWLu2O0LDkypexx3hmiag.png?1746456355)
+클라이언트가 올린 파일로 자동화를 시작할 수도 있어요. 연락처가 지원되는 **클라이언트 포탈** 업로드 흐름으로 파일을 올리는 데 성공하면, **Client Portal File Uploaded**(클라이언트 포탈 파일 업로드됨) 워크플로우 트리거로 워크플로우를 시작할 수 있어요.
 
-![받은 문서 목록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046128382/original/cA6wCAg-fKiMFVwLPJ1IclTTEUVIi6GKGA.png?1746455666)
+이런 경우에 유용해요.
 
-- **미리보기 및 다운로드**
+- 요청한 문서가 도착했다고 내부 팀에 알리고 싶을 때
+- 검토나 처리 워크플로우를 시작하고 싶을 때
+- 클라이언트가 파일을 제출한 뒤 후속 메시지를 보내고 싶을 때
+- 업로드가 끝난 것을 기준으로 내부 프로세스를 업데이트하고 싶을 때
 
-CRM 사용자와 연락처 모두 Preview(미리보기)를 클릭하여 브라우저에서 파일을 볼 수 있습니다.
+설정 방법은 [클라이언트 포탈 파일 업로드됨 워크플로우 트리거 사용하기](../07-워크플로우/트리거/how-to-use-the-client-portal-file-uploaded-workflow-trigger.md)를 참고하세요.
 
-CRM에서 미리보기 및 다운로드
+## 문서 미리보기와 다운로드
 
-![CRM 미리보기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046128389/original/2eNlILl7Q4-RrPq9WrFOarVjLh4uTp6m9w.png?1746455667)
+문서를 미리 보면 하이퍼클래스 사용자나 연락처가 시스템을 오가지 않고도 지원되는 파일을 확인할 수 있어요. 다운로드하면 로컬에서 원본 파일을 열 수 있어요. 사용할 수 있는 기능은 파일 형식과 해당 문서에 대한 사용자의 이용 권한에 따라 달라질 수 있어요.
 
-클라이언트 포털에서 미리보기 및 다운로드
+![문서 미리보기 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081003993/original/eP0ngBDZQe6sHLEc8FzVjIKyEjmiFPAIoQ.png?1789490112)
 
-![클라이언트 포털 미리보기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046128380/original/MI_8FtPTeJkEtTGHiAE79pwKhYbHY0kZqQ.png?1746455666)
+**문서** 또는 **공유된 파일** 영역에서 아래 순서로 진행하세요.
 
-- **삭제 및 접근 권한 취소**
+1. 확인할 문서를 찾으세요.
+2. 파일을 선택하거나 **미리보기**를 선택해 지원되는 내용을 확인하세요.
+3. 파일 사본이 필요하면 **다운로드**를 선택하세요.
 
-연락처: 클라이언트 포털에서 업로드한 파일 옆의 휴지통 아이콘을 클릭하여 제거하면, CRM의 클라이언트 포털에서 받은 파일에서도 삭제됩니다.
+브라우저에서 미리 볼 수 없는 파일이라면 **다운로드**로 내려받은 다음, 그 파일 형식을 지원하는 프로그램으로 여세요.
 
-![파일 삭제](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046128388/original/TWvhlB-BZF334chhnGbyEVZ2iZ5GiU5XiA.png?1746455667)
+## 문서에 대한 클라이언트 포탈 접근 해제하기
 
-- **CRM 사용자**: Share(공유) 토글을 Off로 바꾸거나 CRM Documents(문서)에서 삭제 아이콘을 클릭하여 파일을 취소하거나 영구적으로 제거합니다.
+접근 해제와 문서 삭제는 목적이 달라요. 파일은 연락처에 계속 연결해 두되, 연락처가 **클라이언트 포탈**에서는 더 이상 보지 못하게 하려면 접근을 해제하세요.
 
-![CRM 파일 관리](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046128386/original/XQfj7S9lNbrxFXGuvQAqn6UoUVYak066Hg.png?1746455666)
+현재 공유 중인 문서는 아래 순서로 해제해요.
 
-## 관련 자료
+1. 연락처 상세 화면을 여세요.
+2. **문서**로 이동하세요.
+3. 공유 중인 파일을 찾으세요.
+4. 문서의 공유 또는 작업 메뉴를 여세요.
+5. 클라이언트 포탈 공유 옵션으로 파일의 공유 접근을 해제하세요.
+6. 파일이 더 이상 **클라이언트 포탈**에 공유된 상태로 표시되지 않는지 확인하세요.
 
-- [고객이 클라이언트 포털을 사용하는 방법](https://hyperclass.gitbook.io/hyperclass-docs)
-- [CRM의 문서 개요](https://hyperclass.gitbook.io/hyperclass-docs)
+{% hint style="warning" %}
+**중요:** **클라이언트 포탈** 접근 해제와 문서 삭제를 혼동하지 마세요. 연락처의 **문서** 영역에서 파일을 없애야 할 때만 삭제하세요.
+{% endhint %}
 
----
-*원문 최종 수정: Mon, 5 May, 2025 at 9:49 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+## 문서 삭제하기
+
+문서를 삭제하면 파일 자체가 없어져요. 연락처가 **클라이언트 포탈**로 접근할 수 있는지만 바꾸는 것이 아니에요. 삭제하기 전에 공유만 해제하면 되는지, 파일 자체를 지워야 하는지 먼저 확인하세요.
+
+### 하이퍼클래스에서 문서 삭제하기
+
+1. 연락처 상세 화면을 열고 **문서**로 이동하세요.
+2. 삭제할 파일을 찾으세요.
+3. 문서의 작업 메뉴를 여세요.
+4. **삭제**를 선택하세요.
+5. 확인 창이 나타나면 삭제를 확인하세요.
+
+파일을 내부에서는 계속 쓰고 싶은데 **클라이언트 포탈** 접근만 해제하려는 경우에는, 삭제로 대신하지 마세요.
+
+### 클라이언트가 올린 문서
+
+연락처에게 주어진 **클라이언트 포탈** 권한과 사용 환경에 따라, 연락처가 이전에 올린 파일을 직접 관리하거나 삭제할 수도 있어요.
+
+파일 관리 권한은 다를 수 있으니, 모든 **클라이언트 포탈** 사용자가 올린 문서를 모두 삭제할 수 있다고 단정하지 마세요. 클라이언트 쪽 파일 관리에 문제가 생기면 현재 **클라이언트 포탈** 설정과 권한을 확인하세요.
+
+## 자주 묻는 질문
+
+### 문서를 공유하면 연락처에게 알림이 가나요?
+
+네. 지원되는 **클라이언트 포탈** 파일 공유 흐름에서는 파일이 공유될 때 연락처에게 클라이언트 포탈 알림이 만들어져요. 추가 푸시 알림은 알림 환경설정과 기기·앱 구성에 따라 달라질 수 있어요.
+
+### 연락처가 올린 문서는 하이퍼클래스 어디에서 볼 수 있나요?
+
+**클라이언트 포탈**로 올린 파일은 해당 연락처에 연결돼요. 연락처 상세 화면의 **문서 > 수신됨 > 클라이언트 포탈**에서 찾을 수 있어요.
+
+### 문서를 삭제하지 않고 공유만 중단하려면 어떻게 하나요?
+
+파일을 연락처 상세 화면에 남겨 두려면, 클라이언트 포탈 공유 옵션으로 문서의 공유 접근을 해제하세요. 문서 삭제는 별개의 작업이에요.
+
+### 클라이언트 포탈에 파일이 업로드되면 워크플로우를 시작할 수 있나요?
+
+네. 지원되는 파일이 **클라이언트 포탈**에 성공적으로 업로드되면 **Client Portal File Uploaded**(클라이언트 포탈 파일 업로드됨) 워크플로우 트리거로 워크플로우를 시작할 수 있어요.
+
+### 연락처가 자신이 올린 문서를 삭제할 수 있나요?
+
+클라이언트가 올린 문서를 관리하거나 삭제할 수 있는지는 연락처에게 주어진 **클라이언트 포탈** 권한과 사용 환경에 따라 달라질 수 있어요. 모든 사용자가 삭제할 수 있다고 단정하지 말고, 해당 포탈 설정을 확인하세요.
+
+### 연락처 문서를 공유하는 것과 문서나 계약을 보내는 것은 같은 건가요?
+
+아니요. 연락처의 **문서** 영역에 있는 파일은 연락처 상세 화면에 저장된 파일이에요. [**문서 & 계약**](../14-문서-계약/how-to-use-documents-contracts.md)은 제안서, 계약서, 견적서, 서명, 결제 등 관련 문서 워크플로우에 쓰는 하이퍼클래스의 별도 기능이에요.
+
+### 클라이언트 포탈 대신 보안이 적용된 외부 링크로 문서를 공유할 수 있나요?
+
+기능을 사용할 수 있는 계정에서는 하이퍼클래스의 문서 개인정보 보호 강화 및 이용 권한 설정 기능을 쓸 수 있어요. 이 기능으로 외부 링크 공유 옵션을 추가로 쓸 수 있고, **클라이언트 포탈**로 파일을 바로 공유하는 것과는 별개예요. 자세한 내용은 [문서 개인정보 보호 강화 및 이용 권한 설정](연락처-상세/enhanced-document-privacy-access-controls.md)을 참고하세요.

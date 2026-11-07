@@ -1,88 +1,179 @@
 ---
-
-번역일: 2026-04-06
-카테고리: 01-시작하기 > 웹사이트-콘텐츠
+원문: /support/solutions/articles/155000005069-getting-started-launch-a-website-from-template
+번역일: 2026-11-06
+카테고리: 01-시작하기
 ---
 
-# 시작하기 - 템플릿으로 웹사이트 런칭하기
+# 템플릿으로 웹사이트 만들고 내 도메인에 연결해 게시하기
 
-나만의 웹사이트를 만드는 것이 부담스럽게 느껴질 수 있지만 걱정하지 마세요! 웹사이트를 디지털 집이라고 생각해보세요. 인터넷 상에서 고객, 친구, 팬들이 여러분을 쉽게 찾을 수 있는 공간이죠. 저희가 제공하는 간단한 도구와 바로 사용할 수 있는 템플릿으로, 전문적인 웹사이트를 몇 분 안에 만들 수 있어요.
+하이퍼클래스에서 웹사이트를 공개하려면 웹사이트 만들기, 도메인 연결, 도메인 지정, 게시 순서로 진행해요. 이 순서를 지키면 URL 오류, 게시되지 않은 변경 내용, 도메인 오류를 줄일 수 있어요. 방문자에게 웹사이트를 공유하기 전에 마지막 점검 목록도 꼭 확인하세요.
 
-## 내 도메인으로 웹사이트 런칭하기
+## 웹사이트 공개란?
 
-시작할 준비가 되셨나요? 좋아요!
-
-- Sites(사이트) > Websites(웹사이트)로 이동: 먼저 웹사이트 섹션으로 가서 시작해봅시다.
-- New Website(새 웹사이트) 클릭: "새 웹사이트" 버튼을 찾아보세요. 쉽게 찾을 수 있을 거예요!
-- 시작 방법 선택:
-  - From Blank(빈 페이지부터): 창의적이고 모험을 즐기신다면? 완전한 자유를 드려요!
-  - From Templates(템플릿부터): 세련되고 빠르게 만들고 싶다면? 여기서 시작해봅시다.
-- From Templates(템플릿부터) 선택 후 Create(만들기) 클릭: 아름다운 템플릿들을 둘러보세요. 마음에 드는 것을 찾으면 "preview(미리보기)"를 클릭해서 실제 모습을 확인하고, Continue(계속)를 눌러주세요.
-
-![템플릿 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047027664/original/3BMWKGNMWDsAPNPNWVSRxMPxFgHrA6_lYw.png?1747858808)
-
-다음으로 사이트를 커스터마이즈해보세요:
-
-- Website Editor(웹사이트 편집기)에서 Website(웹사이트) 설정: 색상을 조정하고, 이미지를 추가하며, 정말로 나만의 사이트로 만들어보세요.
-- Save(저장) 클릭: 걸작을 저장하는 것을 잊지 마세요!
-- Publish(발행) 클릭: 전 세계에 공개해봅시다.
-- Back(뒤로) 클릭 (웹사이트 편집기 종료): 마무리하고 사이트를 온라인으로 만들 시간이에요.
-
-![웹사이트 편집기 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047027728/original/lcJ99sRNqVanMhlRKb94entAWtmhsnUfxg.png?1747859001)
-
-도메인을 연결해서 공식적으로 만들어봅시다:
-
-- Settings(설정) 탭 클릭: 설정으로 이동해서 고유한 웹 주소를 연결해보세요.
-- Domain(도메인) 아래에서 Connect Domain(도메인 연결) 클릭: 도메인 드롭다운을 찾고 그 아래의 **도메인 연결** 링크를 클릭하세요.
-
-![도메인 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047694751/original/5MsqqMucysJiz346jo-Kz3DaRw8pKBEp7Q.png?1748985779)
-
-Connect Domain(도메인 연결)을 클릭하면 바로 이 페이지로 이동할 수 있습니다. 그러면 도메인을 입력하고 **Continue(계속)**을 클릭하거나, **Back to Domains(도메인으로 돌아가기)**를 클릭해서 Settings(설정) > Domains(도메인) 목록으로 이동할 수 있어요.
-
-![도메인 입력 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047694725/original/HIZcSBbPGy3Qo8ca7G-er6-KrDTMbFubbg.png?1748985699)
-
-- Connect a Domain(도메인 연결) 클릭: 도메인 이름을 입력하고 "Continue(계속)"를 두 번 클릭하세요. 거의 다 끝났어요!
-
-![도메인 연결 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047027780/original/1And6P2wSO3emhikoJuwmhw9V1EBQcZSfA.png?1747859130)
-
-아직 도메인이 없다면 이 페이지가 표시될 거예요. 그냥 **Connect a Domain(도메인 연결)**을 클릭하세요.
-
-![도메인 없음 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047694670/original/AHXjBPAsM5OWi3ft5Za1O48bUycV4bbsfQ.jpeg?1748985597)
-
-- 웹사이트 연결 클릭: 블로그/퍼널/웹사이트 등의 옵션을 사용하세요.
-
-![웹사이트 연결 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047027805/original/BEOO6wwonOXBcApMRm1pP6ByvhdWyM64PA.png?1747859217)
-
-- 도메인을 입력하고 Continue(계속) 클릭: 웹사이트를 런칭할 도메인을 지정하는 단계입니다.
-
-![도메인 입력 단계](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047027850/original/pC01vugqGJpcbxDVPHJz6BpG6joMpUWTnw.png?1747859297)
-
-- Continue(계속)를 클릭하고 DNS 설정 (등록업체별로 다름): 제공된 지침을 따라주세요. 생각보다 간단해요!
-
-![DNS 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047027884/original/-2PNL8qpJhKF2wCgtsHhpNmV39IbwSnYyg.png?1747859367)
-
-- Verify Records(레코드 확인) 클릭: 모든 것이 제대로 되었는지 확인해봅시다.
-
-![레코드 확인 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047027903/original/aDQbcdUwFe7XCyb-zaftZQcLOkVxRi-3Hw.png?1747859446)
-
-- Website Settings(웹사이트 설정) 탭으로 다시 이동: 마지막으로 설정으로 돌아가세요.
-
-![웹사이트 설정으로 이동](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047027911/original/hme70Pp7-ch7604JItcWwVtY1ChEwrSAFQ.png?1747859497)
-
-- Domain(도메인) 선택 후 Save(저장) 클릭: 새로운 도메인을 선택하고 변경사항을 저장하세요. 축하합니다! 웹사이트가 공개되었어요!
-
-![최종 도메인 저장](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047027923/original/icLXWwV6Zjk1PMOKGSW6uAFx7XRqf4eSQA.png?1747859532)
-
-이제 새로운 웹사이트 링크를 고객들과 공유하거나, 애널리틱스를 살펴보거나, 더 많은 콘텐츠를 추가해서 온라인 존재감을 강화할 수 있어요. 성공적인 런칭을 축하해요!
-
-## 관련 문서
-
-- 화이트라벨 도메인, API 도메인, 이메일 발송 도메인, 사이트 도메인, 클라이언트 포털 도메인 등 설정하기
-- [도메인 구매 단계별 가이드](../../11-설정/Domain-Purchase-/-Transfer/how-to-purchase-domain-step-by-step.md)
-- [자주 묻는 질문, 기본 문제 해결 - 퍼널, 웹사이트, 웨비나](../../06-사이트/FAQs-and-Common-Troubleshooting-Steps/faqs-basic-troubleshooting-funnels-websites-webinars.md)
-- [웹사이트 사례 연구](../../25-애드온-세일즈/Sales-Trainings-and-Case-Studies/websites-case-study.md)
-- [도메인 추가 및 DNS 레코드 확인 방법](../../09-이메일/LC-이메일/how-to-add-a-domain-and-verify-dns-record.md)
+웹사이트를 공개하면 저장해 둔 초안이 라이브 버전이 되어, 지정한 도메인으로 방문자가 접속할 수 있어요. **저장**은 최신 변경 내용을 보관만 하고 공개 웹사이트는 바꾸지 않아요. **게시**를 눌러야 저장된 버전이 라이브로 반영돼요.
 
 ---
-*원문 최종 수정: Thu, 5 Jun, 2025 at 8:22 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+
+## 올바른 순서로 공개하면 좋은 점
+
+순서에 맞춰 공개하면 웹사이트가 완성된 상태로, 문제없이 방문자에게 열려요.
+
+- 설정이 명확해요: 공개 작업을 올바른 순서로 하나씩 끝낼 수 있어요.
+- 더 안전하게 게시해요: 변경 내용을 공개하기 전에 먼저 확인할 수 있어요.
+- 내 웹 주소를 쓸 수 있어요: 웹사이트를 내 도메인이나 서브도메인에 연결해요.
+- 공개 후 문제가 줄어요: 사이트를 공유하기 전에 도메인, 페이지, 폼, 모바일 레이아웃을 확인해요.
+
+---
+
+## 시작하기 전에
+
+웹사이트 콘텐츠와 도메인 접근 권한을 미리 준비하면 설정 중에 지체되지 않아요.
+
+다음을 확인하세요.
+
+- 웹사이트가 있는 하이퍼클래스 서브 계정에 접근할 수 있어요.
+- 로고, 이미지, 글 내용, 필요한 페이지가 준비되어 있어요.
+- 하이퍼클래스 또는 다른 도메인 업체에서 구매한 도메인이 있어요.
+- 수동으로 설정해야 할 때 도메인 업체의 DNS 설정에 접근할 수 있어요.
+- 루트 도메인(예: `example.com`)과 서브도메인(예: `www.example.com`) 중 무엇을 쓸지 정했어요.
+- 홈페이지로 쓸 페이지와 나머지 페이지의 URL 경로를 정했어요.
+
+{% hint style="warning" %}
+DNS 변경이 반영되는 데 최대 24시간이 걸릴 수 있어요. 도메인을 연결하고 필요한 DNS 레코드가 인증되면 하이퍼클래스가 SSL을 자동으로 설정해 줘요.
+{% endhint %}
+
+---
+
+## 내 도메인으로 웹사이트 설정하고 공개하기
+
+웹사이트 공개는 만들기, 꾸미기, 연결하기, 지정하기, 게시하기의 다섯 단계로 진행해요.
+
+### 1단계: 웹사이트 만들기
+
+웹사이트를 만들면 공개 전에 다듬을 디자인과 페이지 구조가 준비돼요.
+
+1. **사이트 > 웹사이트**로 이동하세요.
+2. **+ New Website**(+ 새 웹사이트)를 클릭하세요.
+3. 시작 방식을 고르세요.
+   - **From Blank**(빈 페이지에서 시작): 처음부터 직접 만들어요.
+   - **From Templates**(템플릿에서 시작): 미리 만들어진 디자인으로 시작해요.
+4. 웹사이트 이름을 입력하세요.
+5. **만들기**를 클릭하세요.
+6. 템플릿을 쓰는 경우, 사용할 수 있는 디자인을 미리 보고 원하는 것을 선택하세요.
+
+![웹사이트 만들기 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155078649524/original/EhQz8bYu6Sp3Rhy-kDlurVGEs00_2xTjkA.png?1787029601)
+
+### 2단계: 웹사이트 꾸미고 저장하기
+
+도메인을 연결하기 전에 내용과 반응형 레이아웃을 확인하면, 완성되지 않은 페이지가 방문자에게 보이는 일을 막을 수 있어요.
+
+1. **웹사이트 빌더**에서 각 페이지를 여세요.
+2. 텍스트, 이미지, 색상, 내비게이션, 버튼, 폼 등을 수정하세요.
+3. 내비게이션 링크가 올바른 페이지로 연결되는지 확인하세요.
+4. 데스크톱과 모바일 레이아웃을 각각 확인하세요.
+5. **미리보기**로 방문자 입장에서 페이지를 테스트하세요.
+6. 페이지의 SEO 설정에서 페이지 제목과 메타 설명을 입력하세요.
+7. **저장**을 클릭하세요.
+
+{% hint style="warning" %}
+저장해도 공개 웹사이트는 바뀌지 않아요. 저장된 버전은 **게시**를 클릭한 뒤에야 라이브로 반영돼요.
+{% endhint %}
+
+### 3단계: 도메인 연결하기
+
+도메인을 연결하면 하이퍼클래스가 웹사이트 주소가 올바른 위치를 가리키는지 확인할 수 있어요.
+
+1. **웹사이트 빌더**에서 나가세요.
+2. 웹사이트의 **설정** 탭을 여세요.
+3. **도메인** 아래에서 **Connect Domain**(도메인 연결)을 클릭하세요.
+
+   ![설정 탭의 도메인 연결 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155078649544/original/FhCMRXCITPmFoPd9N8dLypP4IJOdQ_QY4Q.png?1787029621)
+
+4. **도메인** 페이지가 열리면 **+ 도메인 연결**을 클릭하세요.
+5. **퍼널/웹사이트/스토어/블로그/웨비나** 옆의 **연결**을 선택하세요.
+6. 방문자가 사용할 루트 도메인이나 서브도메인을 입력하세요.
+7. **계속**을 클릭하세요.
+
+   ![도메인 입력 후 계속 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155078649857/original/xOEINqksB5se2dcUKMqWMoQ7S8kbwUltZg.png?1787030298)
+
+8. 하이퍼클래스가 안내하는 방식으로 연결을 마치세요.
+   - 자동 연결: 지원되는 도메인 업체에 로그인한 뒤, 하이퍼클래스가 필요한 레코드를 추가하도록 허용하세요.
+   - 수동 연결: 하이퍼클래스가 알려 주는 DNS 레코드를 복사해 도메인 업체에서 직접 추가하세요.
+9. 도메인이 연결됨 또는 인증됨으로 표시될 때까지 기다리세요.
+
+Cloudflare를 쓰는 경우, 웹사이트의 A 또는 CNAME 레코드를 **Proxied**가 아닌 **DNS only**로 설정하세요.
+
+도메인이 계속 대기 중이면 DNS 변경이 반영되도록 최대 24시간을 기다려 주세요. 그 뒤에도 같다면 모든 레코드를 하이퍼클래스가 알려 준 값과 비교하고, 충돌하는 레코드는 삭제하세요.
+
+### 4단계: 웹사이트에 도메인 지정하기
+
+연결한 도메인을 지정하면 인증된 주소가 올바른 웹사이트와 이어져요.
+
+1. **사이트 > 웹사이트**로 돌아가세요.
+2. 웹사이트를 여세요.
+3. **설정** 탭을 선택하세요.
+4. **도메인** 드롭다운을 여세요.
+5. 연결한 도메인을 선택하세요.
+
+   ![웹사이트에 도메인 지정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155078649085/original/ICwtwoDY6OYQXvFB31yT5SYBIJYfPx7ZkQ.png?1787028663)
+
+6. **경로**를 확인하세요.
+   - 웹사이트를 `example.com/services`로 열려면 `/services` 같은 경로를 그대로 두세요.
+   - 웹사이트를 `example.com`으로 바로 열려면, 홈페이지로 쓸 페이지를 도메인의 기본 페이지로 지정하세요.
+7. 맨 아래로 스크롤해서 **저장**을 클릭하세요.
+
+### 5단계: 웹사이트 게시하기
+
+게시하면 현재 저장된 버전이 지정한 도메인으로 공개돼요.
+
+1. **웹사이트 빌더**로 돌아가세요.
+2. 페이지를 마지막으로 한 번 더 **미리보기**로 확인하세요.
+3. **저장**을 클릭하세요.
+4. **게시**를 클릭하세요.
+5. 라이브 웹사이트에 공개할 페이지를 모두 게시하세요.
+
+---
+
+## 공개 후 사이트·도메인 최종 점검 목록
+
+시크릿(비공개) 브라우저 창에서 웹사이트를 열면 캐시 데이터나 하이퍼클래스 로그인 세션 없이 방문자가 보게 될 화면을 확인할 수 있어요.
+
+- 도메인이 하이퍼클래스에서 **연결됨**, **인증됨**, **활성** 중 하나로 표시돼요.
+- 공개 URL이 시크릿 또는 비공개 브라우저 창에서 열려요.
+- 사이트가 보안 경고 없이 `https://`로 열려요.
+- 404 페이지가 아니라 올바른 홈페이지가 보여요.
+- 루트 도메인과 `www` 주소가 의도한 대로 동작해요.
+- 내비게이션 링크와 버튼이 올바른 페이지를 열어요.
+- 폼, 캘린더, 팝업, 결제 요소가 있다면 제대로 동작해요.
+- 테스트로 폼을 제출하면 예상한 레코드나 알림이 생겨요.
+- 데스크톱과 모바일 레이아웃이 올바르게 보여요.
+- 게시한 최신 콘텐츠가 라이브 웹사이트에 보여요.
+- 임시 문구, 템플릿 이미지, 테스트용 가격, 깨진 링크가 남아 있지 않아요.
+
+---
+
+## 자주 묻는 질문
+
+### 라이브 웹사이트에 예전 내용이 계속 보여요. 왜 그런가요?
+
+최신 버전을 저장만 하고 게시하지 않았을 수 있어요. 해당 페이지를 열어 **게시**를 클릭한 뒤, 시크릿 창에서 URL을 다시 확인해 보세요.
+
+### 도메인이 계속 대기 중이에요. 왜 그런가요?
+
+DNS 변경이 아직 반영되는 중이거나, 레코드 값이 하이퍼클래스가 안내한 값과 다를 수 있어요. 최대 24시간을 기다린 뒤에도 같다면 레코드 유형, 호스트, 값을 다시 확인하세요.
+
+### 웹사이트에 SSL 또는 개인정보 보호 경고가 떠요. 왜 그런가요?
+
+DNS 레코드가 잘못됐거나 서로 충돌하는지 확인하세요. Cloudflare 레코드는 **DNS only**로 설정해야 해요. 레코드를 바로잡은 뒤에는 하이퍼클래스가 SSL 인증서를 발급할 때까지 시간을 두고 기다려 주세요.
+
+### 도메인으로 접속하면 404 페이지가 나와요. 왜 그런가요?
+
+도메인이 올바른 웹사이트에 지정되어 있는지, 열려는 페이지가 게시되어 있는지, 기본 페이지나 URL 경로가 제대로 설정되어 있는지 확인하세요.
+
+### 자동 도메인 연결을 쓸 수 없으면 어떻게 하나요?
+
+수동 연결을 선택하세요. 하이퍼클래스에 표시된 DNS 레코드를 그대로, 도메인을 관리하는 업체에서 추가하면 돼요.
+
+### 하이퍼클래스에서 구매한 도메인도 인증해야 하나요?
+
+아니요. 하이퍼클래스에서 구매한 도메인은 자동으로 인증돼요. **설정 > 도메인 > 구매한 도메인**에서 설정할 수 있어요.

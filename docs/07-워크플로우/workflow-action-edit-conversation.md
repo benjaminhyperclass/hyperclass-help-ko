@@ -1,110 +1,99 @@
 ---
-
-번역일: 2026-04-06
+원문: /support/solutions/articles/48001214153-workflow-action-edit-conversation
+번역일: 2026-11-07
 카테고리: 07-워크플로우
 ---
 
-# 워크플로우 액션 - 대화 편집 (Edit Conversation)
+# 워크플로우 액션 — Edit Conversation(대화 편집)
 
-고객과의 상호작용을 처리하는 모든 비즈니스에서 대화를 효율적으로 관리하는 것은 매우 중요합니다. Hyperclass의 대화 편집 워크플로우 액션(Edit Conversation Workflow Action)은 메시지를 읽음/읽지 않음으로 표시하고 보관/복원하여 대화 관리를 자동화합니다. 이를 통해 수동 작업을 없애고 워크플로우를 효율화하며 팀이 체계적으로 운영될 수 있도록 합니다. 이 가이드에서는 이 액션의 기능, 장점, 그리고 워크플로우 내에서 설정하는 방법을 다룹니다.
+**Edit Conversation**(대화 편집) 액션은 워크플로우 안에서 대화를 읽음/읽지 않음으로 바꾸거나 보관/보관 해제할 때 쓰는 액션이에요. 이 문서에서는 액션이 하는 일, 장점, 설정 방법을 안내해요.
 
----
+## Edit Conversation 액션이란?
 
-**목차**
+Edit Conversation 액션을 쓰면 워크플로우에서 특정 이벤트가 일어났을 때 대화 상태를 자동으로 바꿀 수 있어요. 대화를 읽음이나 읽지 않음으로 표시하거나 채팅을 보관하는 일을 직접 하지 않아도 돼요. 고객 지원팀이 받은 편지함을 정돈하고, 중요한 대화에 제때 집중하는 데 도움이 돼요.
 
-- [대화 편집 워크플로우 액션이란?](#대화-편집-워크플로우-액션이란)
-- [대화 편집 워크플로우 액션의 주요 장점](#대화-편집-워크플로우-액션의-주요-장점)
-- [대화 편집 워크플로우 액션 설정하기](#대화-편집-워크플로우-액션-설정하기)
-- [자주 묻는 질문](#자주-묻는-질문)
+대화를 읽음으로 표시하면 **대화** 받은 편지함에서 읽지 않음 상태가 해제돼요. 지원되는 받은 편지함 보기에서는 대화 내용 안의 읽지 않음 구분선도 함께 사라져요.
 
 ---
 
-# 대화 편집 워크플로우 액션이란?
+## Edit Conversation 액션의 장점
 
-대화 편집 워크플로우 액션(Edit Conversation Workflow Action)을 사용하면 워크플로우의 특정 이벤트를 기반으로 대화 상태를 자동으로 업데이트할 수 있습니다. 대화를 읽음이나 읽지 않음으로 수동 표시하거나 채팅을 보관하는 대신, 이 액션이 해당 프로세스를 자동화하여 조직화와 효율성을 향상시킵니다. 고객 지원팀이 인박스를 효과적으로 관리하고 중요한 대화가 적절한 주의를 받을 수 있도록 도와줍니다.
-
----
-
-## **대화 편집 워크플로우 액션의 주요 장점**
-
-- **인박스 관리 자동화:** 대화 상태를 자동으로 업데이트하여 수동 작업을 줄입니다.
-
-- **응답 우선순위 개선:** 주의가 필요한 읽지 않은 메시지를 쉽게 식별할 수 있도록 합니다.
-
-- **워크플로우 효율성 향상:** 미리 정의된 트리거를 기반으로 대화를 정리하여 커뮤니케이션을 효율화합니다.
-
-- **대화 정리 유지:** 완료되거나 비활성 대화를 보관함으로 이동시키면서 활성 대화는 접근 가능하게 유지합니다.
+- 받은 편지함 관리를 자동화해요: 대화 상태를 자동으로 바꿔서 수작업을 줄여 줘요.
+- 답변 우선순위를 정하기 쉬워요: 확인이 필요한 읽지 않은 메시지를 한눈에 알아볼 수 있어요.
+- 워크플로우 효율이 높아져요: 미리 정해 둔 트리거에 따라 대화를 정리해서 소통 과정을 간소화해요.
+- 대화를 깔끔하게 유지해요: 끝났거나 활동이 없는 대화는 보관함으로 옮기고, 진행 중인 대화는 바로 볼 수 있게 둬요.
 
 ---
 
-## **대화 편집 워크플로우 액션 설정하기**
+## Edit Conversation 액션 설정하기
 
-Hyperclass에서 대화 편집 워크플로우 액션을 설정하는 것은 간단합니다. 아래 단계를 따라 워크플로우에 통합해보세요.
+Edit Conversation 액션은 간단하게 설정할 수 있어요. 아래 순서대로 워크플로우에 추가해 보세요.
 
-### **워크플로우 빌더 접근**
+### 워크플로우 빌더 열기
 
-Hyperclass 대시보드의 **Automation(자동화)** 섹션으로 이동합니다. + Create Workflow(워크플로우 생성)를 클릭한 다음 +Start from scratch(처음부터 시작)를 선택하거나 대화 관리를 자동화하고 싶은 기존 워크플로우를 엽니다.
+1. 하이퍼클래스 왼쪽 메뉴에서 **자동화**를 클릭하세요.
+2. **+ Create Workflow**(워크플로우 만들기)를 클릭한 뒤 **처음부터 시작**을 선택하세요. 대화 관리를 자동화할 기존 워크플로우를 열어도 돼요.
 
-![워크플로우 빌더 접근](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042097512/original/l7pW37l8ky1qh-GVGAUcexXiapYmMAzfWg.png?1740382232)
+![자동화 메뉴에서 워크플로우를 새로 만드는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042097512/original/l7pW37l8ky1qh-GVGAUcexXiapYmMAzfWg.png?1740382232)
 
-### **대화 편집 액션 추가**
+### Edit Conversation 액션 추가하기
 
-워크플로우 편집기 내에서 **+ Add Action(액션 추가)** 버튼을 클릭합니다. 액션 목록에서 **Edit Conversation(대화 편집)**을 검색하고 선택합니다.
+1. 워크플로우 편집 화면에서 **+ Add Action**(액션 추가) 버튼을 클릭하세요.
+2. 액션 목록에서 **Edit Conversation**을 검색해 선택하세요.
 
-![대화 편집 액션 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042097795/original/sR7rukIGhwCymshCMPzsosj3_Z2EaiWRqg.png?1740382442)
+![액션 목록에서 Edit Conversation을 검색하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042097795/original/sR7rukIGhwCymshCMPzsosj3_Z2EaiWRqg.png?1740382442)
 
-### 액션 이름 지정
+### 액션 이름 정하기
 
-워크플로우 내에서 기능을 쉽게 식별할 수 있도록 "읽음 표시 및 보관"과 같은 설명적인 이름을 제공합니다.
+워크플로우에서 어떤 일을 하는 액션인지 알아볼 수 있도록 이름을 입력하세요. 예를 들어 "읽음 처리 & 보관"처럼 쓰면 돼요.
 
-![액션 이름 지정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042097876/original/88lJG3glI5afW52CTO34bdl96SCm_3fFhQ.png?1740382508)
+![액션 이름을 입력하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042097876/original/88lJG3glI5afW52CTO34bdl96SCm_3fFhQ.png?1740382508)
 
-### 액션 설정 구성
+### 액션 설정하기
 
-대화 편집 액션이 추가되면 사용 가능한 설정을 구성합니다:
+Edit Conversation 액션을 추가하면 다음 설정을 고를 수 있어요.
 
-#### **읽음 또는 읽지 않음으로 표시**
+#### 읽음/읽지 않음 표시
 
-- **읽음으로 표시(Mark as Read):** 대화를 열지 않고 읽음으로 표시합니다.
-- **읽지 않음으로 표시(Mark as Unread):** 대화 상태를 읽지 않음으로 재설정하여 계속 보이도록 합니다.
-- **없음(None):** 현재 읽음/읽지 않음 상태를 변경하지 않고 유지합니다.
+- **Mark as Read**(읽음으로 표시): 대화를 열지 않아도 읽음으로 표시해요.
+- **Mark as Unread**(읽지 않음으로 표시): 대화를 읽지 않음 상태로 되돌려서 계속 눈에 띄게 해요.
+- **None**(없음): 현재 읽음/읽지 않음 상태를 그대로 둬요.
 
-![읽음/읽지 않음 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042097944/original/XYVv6xFYIv6xPsB9kcDz0DcvCs4u5yX6QA.png?1740382563)
+![읽음/읽지 않음 옵션을 고르는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042097944/original/XYVv6xFYIv6xPsB9kcDz0DcvCs4u5yX6QA.png?1740382563)
 
-#### **보관 또는 보관 해제**
+#### 보관/보관 해제
 
-- **보관(Archive):** 인박스를 깔끔하게 유지하기 위해 대화를 활성 뷰에서 이동시킵니다.
-- **보관 해제(Unarchive):** 대화를 최근 대화(Recents) 탭으로 복원하여 쉽게 접근할 수 있게 합니다.
-- **없음(None):** 대화를 현재 상태로 유지합니다.
+- **Archive**(보관): 대화를 활성 목록에서 치워서 받은 편지함을 깔끔하게 유지해요.
+- **Unarchive**(보관 해제): 보관한 대화를 **최근 대화** 탭으로 되돌려서 쉽게 찾을 수 있게 해요.
+- **None**(없음): 대화의 현재 상태를 그대로 둬요.
 
-![보관/보관 해제 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042097976/original/zBWZPp26VgVtcE70JAMfRnPazwuR9tGzwA.png?1740382590)
+![보관/보관 해제 옵션을 고르는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042097976/original/zBWZPp26VgVtcE70JAMfRnPazwuR9tGzwA.png?1740382590)
 
-### 워크플로우 저장 및 발행
+### 저장하고 게시하기
 
-설정이 완료되면 Save Action(액션 저장)을 클릭한 다음 Publish Workflow(워크플로우 발행)를 클릭하여 자동화를 활성화합니다. 이제 시스템이 정의된 워크플로우 트리거를 기반으로 자동으로 대화를 업데이트합니다.
+1. 설정을 마쳤으면 **Save Action**(액션 저장)을 클릭하세요.
+2. **Publish Workflow**(워크플로우 게시)를 클릭해 자동화를 켜세요.
 
-![워크플로우 저장 및 발행](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042098013/original/9EwV8wa1w6MYOOuQXDkvbGJ8zZYPYTf5dg.png?1740382613)
+이제 정해 둔 워크플로우 트리거에 따라 대화 상태가 자동으로 바뀌어요.
 
----
-
-## **자주 묻는 질문**
-
-**Q: 이 액션을 사용해서 완료된 모든 대화를 자동으로 보관할 수 있나요?**
-
-네! Contact Replied(연락처 답변) 또는 Appointment Status Changed(예약 상태 변경)와 같은 트리거를 설정하여 상호작용이 완료되면 자동으로 대화를 보관할 수 있습니다.
-
-**Q: 읽음/읽지 않음 표시와 보관/보관 해제 모두에 대해 "없음"을 선택하면 어떻게 되나요?**
-
-두 옵션 모두 없음으로 설정되면 액션은 대화에 어떤 변경도 가하지 않으며 현재 상태를 유지합니다.
-
-**Q: 이 액션이 대화가 보관되거나 보관 해제될 때 사용자에게 알림을 보내나요?**
-
-아니오, 이 액션은 대화의 상태만 업데이트합니다. 알림이 필요한 경우 Send Notification(알림 발송) 액션을 별도로 추가할 수 있습니다.
-
-**Q: 이 액션을 사용해서 대화를 일괄 업데이트할 수 있나요?**
-
-아니오, 이 액션은 워크플로우 내에서 트리거된 개별 대화에만 적용됩니다. 하지만 시간이 지나면서 여러 대화에 적용되는 워크플로우를 만들 수 있습니다.
+![액션을 저장하고 워크플로우를 게시하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042098013/original/9EwV8wa1w6MYOOuQXDkvbGJ8zZYPYTf5dg.png?1740382613)
 
 ---
-*원문 최종 수정: Tue, 8 Apr, 2025 at 12:14 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+
+## 자주 묻는 질문
+
+### 완료된 대화를 모두 자동으로 보관할 수 있나요?
+
+네, 할 수 있어요. **Contact Replied**(연락처 답장)나 **Appointment Status Changed**(예약 상태 변경됨) 같은 트리거를 설정하면, 상호작용이 끝났을 때 대화를 자동으로 보관할 수 있어요.
+
+### 읽음/읽지 않음 표시와 보관/보관 해제를 모두 None으로 선택하면 어떻게 되나요?
+
+두 옵션을 모두 **None**(없음)으로 두면 액션이 대화를 전혀 바꾸지 않아요. 대화는 현재 상태 그대로 남아요.
+
+### 대화를 보관하거나 보관 해제하면 사용자에게 알림이 가나요?
+
+아니요, 이 액션은 대화 상태만 바꿔요. 알림이 필요하면 **Send Notification**(알림 보내기) 액션을 따로 추가하세요.
+
+### 이 액션으로 여러 대화를 한꺼번에 업데이트할 수 있나요?
+
+아니요, 이 액션은 워크플로우에서 실행된 개별 대화에만 적용돼요. 다만 시간이 지나면서 여러 대화에 적용되는 워크플로우를 만들 수는 있어요.

@@ -1,185 +1,244 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 17-멤버십-커뮤니티 > 멤버십-코스
+원문: /support/solutions/articles/48001207635-how-to-use-membership-themes
+번역일: 2026-11-06
+카테고리: 17-멤버십-커뮤니티
 ---
 
-# 멤버십 테마 사용법
+# 멤버십 테마 사용하기
+
+멤버십 상품 페이지의 분위기를 테마로 바꾸는 방법을 안내해요. 테마를 고르고, 세부 설정을 바꾸고, 상품에 적용하거나 저장할 때 참고하세요.
 
 ## 개요
 
-이제 엄선된 테마를 사용하여 상품 페이지의 느낌을 맞춤화할 수 있습니다. 테마는 맞춤 브랜드 정체성과 경험을 구축하는 데 도움이 됩니다.
+미리 만들어 둔 테마로 상품 페이지의 분위기를 바꿀 수 있어요. 테마를 쓰면 브랜드만의 정체성과 경험을 만들 수 있어요.
 
-맞춤화 옵션을 통해 상품에 다양한 스타일을 추가할 수 있습니다. 멤버십 맞춤화에 대한 자세한 정보는 아래 도움말 문서를 확인하세요.
+테마를 커스터마이징하면 상품에 다양한 스타일을 더할 수 있어요. 멤버십을 꾸미는 자세한 방법은 아래 내용을 참고하세요.
 
-## 1단계: 상품 테마 선택
+## 1단계: 상품 테마 고르기
 
-상품을 생성하면 기본적으로 클래식 테마가 선택되지만, 디지털 상품을 개인 브랜드와 가장 잘 맞도록 선택할 수 있는 다양한 시스템 테마를 제공합니다! 각 테마는 회원들에게 서로 다른 모양, 느낌, 전체적인 경험을 제공한다는 점을 기억하세요.
+상품을 만들면 기본으로 클래식 테마가 선택돼요. 디지털 상품을 내 브랜드와 잘 어울리게 하려면 여러 시스템 테마 중에서 고를 수 있어요. 테마마다 멤버가 보는 모습과 느낌, 전체적인 경험이 달라져요.
 
-### 테마를 선택하는 방법
+### 테마 선택하기
 
-- 테마를 적용할 상품을 선택합니다
-- 커스터마이징(Customize)을 클릭합니다
+1. 테마를 적용할 상품을 선택하세요.
+2. **커스터마이징**을 클릭하세요.
 
-![테마 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48191005712/original/e9uAdV5JSWNAnovGfRQJdxV32xGiYtckdA.png?1645031012)
+[![커스터마이징 버튼 위치](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48191005712/original/e9uAdV5JSWNAnovGfRQJdxV32xGiYtckdA.png?1645031012)](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48188471292/original/GMC5baHrqCQj9pqR_TqqD34yp1WB-mKVCQ.jpeg?1644413785)
 
-![테마 갤러리](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48191005790/original/75hPFK2cz-g23Uxz8bJuiEudySAtnwDe_Q.png?1645031031)
+[![테마 갤러리 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48191005790/original/75hPFK2cz-g23Uxz8bJuiEudySAtnwDe_Q.png?1645031031)](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48188471320/original/lPVFsn8Nl2PkRQ8KV6Ombx0SOojGK1QjUQ.jpeg?1644413789)
 
-- 테마 갤러리는 이번 릴리스에 포함된 시스템 테마의 공간이며, 사용자가 생성한 테마(내 테마)는 후속 릴리스에서 제공될 예정입니다. 테마 갤러리를 통해 사용자는 테마를 적용하거나 기존 테마를 맞춤화할 수 있습니다.
+**Theme gallery**(테마 갤러리)에는 이번 출시에 포함된 시스템 테마가 있어요. 사용자가 직접 만든 테마(**My Themes**, 내 테마)는 이후 출시에서 추가될 예정이에요. 테마 갤러리에서 테마를 적용하거나 기존 테마를 커스터마이징할 수 있어요.
 
-## 2단계: 테마 맞춤화
+## 2단계: 테마 커스터마이징하기
 
-테마의 상품 페이지를 맞춤화합니다
+테마의 상품 페이지를 내 취향에 맞게 꾸며요.
 
-- 테마 갤러리에서 커스터마이징을 클릭하여 맞춤화 빌더를 엽니다
-- 테마 설정을 맞춤화합니다
-- 페이지 섹션을 맞춤화하려면 왼쪽 사이드바 편집기에서 편집하고자 하는 섹션을 클릭하기만 하면 됩니다. 섹션 안을 클릭하면 모든 다양한 맞춤화 옵션들이 나타납니다.
+1. 테마 갤러리에서 **커스터마이징**을 클릭해 커스터마이징 빌더를 열어요.
+2. 테마 설정을 바꿔요.
+3. 페이지의 일부분을 꾸미려면 왼쪽 사이드바 편집기에서 수정할 **섹션**을 클릭하세요. 섹션 안으로 들어가면 바꿀 수 있는 옵션이 모두 나타나요.
 
-### 테마 설정(Theme Settings)에서 변경할 수 있는 속성들
+### 테마 설정에서 바꿀 수 있는 속성
 
-1. 기본 색상 - 버튼, 상단 아이콘, 레슨 진행률, 강의 제목, 카테고리 제목, 레슨 제목, 강사 제목에 적용됩니다
-2. 보조 색상 - 강사명, 강사 설명, 레슨 설명, 카테고리 설명, 버튼 텍스트에 적용됩니다
-3. 기본 폰트 - 버튼, 상단 아이콘, 레슨 진행률, 강의 제목, 카테고리 제목, 레슨 제목, 강사 제목에 적용됩니다
-4. 보조 폰트 - 강사명, 강사 소개, 레슨 설명, 카테고리 설명, 버튼 텍스트에 적용됩니다
-5. 로고 배치 - 로고를 헤더에 배치할지 히어로 섹션에 배치할지 결정합니다
+1. **기본 색상**: 버튼, 상단 아이콘, **강의 진행률**, **코스 제목**, **카테고리 제목**, 강의 제목, **강사 직책**에 적용돼요.
+2. **보조 색상**: **강사 이름**, **Instructor Description**(강사 설명), **강의 설명**, **카테고리 설명**, 버튼 텍스트에 적용돼요.
+3. **기본 글꼴**: 버튼, 상단 아이콘, **강의 진행률**, **코스 제목**, **카테고리 제목**, 강의 제목, **강사 직책**에 적용돼요.
+4. **보조 글꼴**: **강사 이름**, **강사 소개**, **강의 설명**, **카테고리 설명**, 버튼 텍스트에 적용돼요.
+5. **Logo placement**(로고 위치): 로고를 **머리글**에 둘지 **히어로** 섹션에 둘지 정해요.
 
-![테마 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48191006243/original/wR9k1SGeptyjeLxxDn_norNQvVW52WoAwA.png?1645031098)
+[![테마 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48191006243/original/wR9k1SGeptyjeLxxDn_norNQvVW52WoAwA.png?1645031098)](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48188471406/original/cbZfodBRGhNiiVchaRteUZmqRNaxz5Pt7Q.jpeg?1644413795)
 
-![커스터마이징 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48189521763/original/VnOdZw_1Oms4ZeX6olQzg_ZPHbIeqvCunA.jpeg?1644600511)
+[![섹션 편집 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48189521763/original/VnOdZw_1Oms4ZeX6olQzg_ZPHbIeqvCunA.jpeg?1644600511)](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48188471370/original/tWFsddzjOdWeqlvQ4e-KDuGWmUvVaeQIcw.jpeg?1644413790)
 
-### 상품 페이지의 섹션에서 변경할 수 있는 속성들
+### 상품 페이지의 섹션에서 바꿀 수 있는 속성
 
-**헤더(Header):**
-경로: Sites(사이트) → Membership(멤버십) → Products(상품) → Customize(커스터마이징) → Gallery → Customize → Sections → Header
+1. **머리글**
+   - 경로: **사이트 > 멤버십 > 상품 > 커스터마이징 > Gallery**(갤러리) **> 커스터마이징 > 섹션 > 머리글**
+   - **배경**: 배경 색상 선택기
+   - **Alignment**(정렬): 왼쪽, 오른쪽, 가운데 중에서 고를 수 있어요.
+2. **히어로**
+   - 경로: **사이트 > 멤버십 > 상품 > 커스터마이징 > Gallery > 커스터마이징 > 섹션 > 히어로**
+   - **Size**(크기): 아주 작게, 작게, 중간, 크게
+   - **코스 제목**
+     - **글꼴**
+     - **Alignment**
+   - **코스 설명**
+     - **글꼴**
+     - **Alignment**
+   - **배경**
+     - **이미지** 크기     - **Transparency**(투명도)
+     - 색상 선택기
+   - **Button**(버튼)
+     - **Content**(내용)
+     - **글꼴**
+     - **배경 색상**
+     - **Alignment**
+3. **강의 진행률**
+   - 경로: **사이트 > 멤버십 > 상품 > 커스터마이징 > Gallery > 커스터마이징 > 섹션 > 강의 진행률**
+   - **배경**
+     - **색상**
+     - **글꼴**
+   - **진행률 색상**
+     - **색상**
+4. **코스 본문**
+   - 경로: **사이트 > 멤버십 > 상품 > 커스터마이징 > Gallery > 커스터마이징 > 섹션 > 코스 본문**
+   - **Category Font**(카테고리 글꼴)
+     - **Type**(종류)
+     - **Size**
+     - **색상**
+   - **Sub Category Font**(하위 카테고리 글꼴)
+     - **Type**
+     - **색상**
+     - **Size**
+   - **Category Description Font**(카테고리 설명 글꼴)
+     - **Type**
+     - **색상**
+     - **Size**
+   - **Lesson Font**(강의 글꼴)
+     - **Type**
+     - **색상**
+     - **Size**
+   - **Lesson Description Font**(강의 설명 글꼴)
+     - **Type**
+     - **색상**
+     - **Size**
+   - **배경**
+     - **이미지**
+     - **색상**
+     - **Transparency**
+5. **강사**
+   - 경로: **사이트 > 멤버십 > 상품 > 커스터마이징 > Gallery > 커스터마이징 > 섹션 > 강사**
+   - **배경**
+     - **색상**
+   - **Heading Font**(제목 글꼴)
+     - **색상**
+     - **Type**
+     - **Size**
+   - **Name Font**(이름 글꼴)
+     - **색상**
+     - **Type**
+     - **Size**
+   - **Title Font**(직책 글꼴)
+     - **색상**
+     - **Type**
+     - **Size**
+   - **Bio Font**(소개 글꼴)
+     - **색상**
+     - **Type**
+     - **Size**
 
-- 배경: 배경 색상 선택기
-- 정렬: 왼쪽, 오른쪽 또는 중앙
+### 강의 페이지의 섹션에서 바꿀 수 있는 속성
 
-**히어로(Hero):**
-경로: Sites(사이트) → Membership(멤버십) → Products(상품) → Customize(커스터마이징) → Gallery → Customize → Sections → Hero
+![강의 페이지 섹션 편집 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48199325855/original/vboCa3UuBuwhwg0d1KFSQ9pJZ7mYoEYkTA.png?1646839987)
 
-- 크기: 매우 작음, 작음, 중간, 큼
-- 강의 제목: 폰트, 정렬
-- 강의 설명: 폰트, 정렬
-- 배경: 이미지 크기, 투명도, 색상 선택기
-- 버튼: 내용, 폰트, 배경 색상, 정렬
+1. **강의 본문**
+   - 경로: **사이트 > 멤버십 > 상품 > 커스터마이징 > Gallery > 커스터마이징 > 강의 > 섹션 > 강의 본문**
+   - **배경**
+     - **배경 색상**
+   - **Title**(제목)
+     - **글꼴 종류**
+     - **글꼴 색상**
+   - **Description**(설명)
+     - **글꼴 종류**
+     - **글꼴 색상**
+   - **Button**(버튼)
+     - **Content**(내용)
+     - **색상**
+     - **글꼴 종류**
+     - **글꼴 색상**
+   - **Next Lesson**(다음 강의)
+     - **배경 색상**
+     - **Title**: **글꼴**, **색상**
+     - **Next Lesson Button**(다음 강의 버튼): **색상**, **글꼴 종류**, **글꼴 색상**
+     - **Lesson title**(강의 제목): **글꼴 색상**
+2. **코스 탐색**
+   - **배경 색상**
+   - **카테고리**: **글꼴 종류**, **글꼴 색상**
+   - **강의**: **글꼴 종류**, **글꼴 색상**
+   - **Highlight**(강조): **색상**, **글꼴 색상**
+   - **Bread Crumb**(브레드크럼): **글꼴 종류**, **글꼴 색상**
+   - **다음 카테고리**: **배경 색상**, **글꼴 종류**, **글꼴 색상**
+3. **강사**
+   - 경로: **사이트 > 멤버십 > 상품 > 커스터마이징 > Gallery > 커스터마이징 > 섹션 > 강사**
+   - **배경**
+     - **색상**
+   - **Heading Font**
+     - **색상**
+     - **Type**
+     - **Size**
+   - **Name Font**
+     - **색상**
+     - **Type**
+     - **Size**
+   - **Title Font**
+     - **색상**
+     - **Type**
+     - **Size**
+   - **Bio Font**
+     - **색상**
+     - **Type**
+     - **Size**
 
-**레슨 진행률(Lesson Progress):**
-경로: Sites(사이트) → Membership(멤버십) → Products(상품) → Customize(커스터마이징) → Gallery → Customize → Sections → Lesson Progress
+{% hint style="info" %}
+- 테마 설정에서 무언가를 바꾼 뒤 **변경사항 저장**을 클릭하면 미리보기에 반영돼요.
+- **기본값으로 초기화**를 클릭하면 모든 설정이 테마의 기본값으로 돌아가요.
+- 테마 설정을 바꾼 뒤에 섹션을 커스터마이징하면, 섹션 설정이 테마 설정보다 우선해요.
+{% endhint %}
 
-- 배경: 색상
-- 폰트
-- 진행률 색상: 색상
+## 3단계: 테마 적용하거나 저장하기
 
-**강의 본문(Course Body):**
-경로: Sites(사이트) → Membership(멤버십) → Products(상품) → Customize(커스터마이징) → Gallery → Customize → Sections → Course Body
+상품에 테마를 고르고 상품 페이지를 꾸몄다면 마지막으로 적용해요. 테마를 적용하면 멤버가 보고 사용하는 최종 화면이 돼요.
 
-- 카테고리 폰트: 유형, 크기, 색상
-- 하위 카테고리 폰트: 유형, 색상, 크기
-- 카테고리 설명 폰트: 유형, 색상, 크기
-- 레슨 폰트: 유형, 색상, 크기
-- 레슨 설명 폰트: 유형, 색상, 크기
-- 배경: 이미지, 색상, 투명도
+1. 상품을 선택하세요.
+2. **커스터마이징**을 클릭하세요.
+3. 테마 갤러리에서 원하는 테마를 찾아 **적용**을 클릭하세요.
 
-**강사(Instructor):**
-경로: Sites(사이트) → Membership(멤버십) → Products(상품) → Customize(커스터마이징) → Gallery → Customize → Sections → Instructor
-
-- 배경: 색상
-- 제목 폰트: 색상, 유형, 크기
-- 이름 폰트: 색상, 유형, 크기
-- 직책 폰트: 색상, 유형, 크기
-- 소개 폰트: 색상, 유형, 크기
-
-### 레슨 페이지의 섹션에서 변경할 수 있는 속성들
-
-![레슨 페이지 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48199325855/original/vboCa3UuBuwhwg0d1KFSQ9pJZ7mYoEYkTA.png?1646839987)
-
-**1. 레슨 본문(Lesson Body):**
-경로: Sites(사이트) → Membership(멤버십) → Products(상품) → Customize(커스터마이징) → Gallery → Customize → Lesson → Sections → Lesson Body
-
-- 배경: 배경 색상
-- 제목: 폰트 유형, 폰트 색상
-- 설명: 폰트 유형, 폰트 색상
-- 버튼: 내용, 색상, 폰트 유형, 폰트 색상
-- 다음 레슨: 배경 색상, 제목(폰트, 색상), 다음 레슨 버튼(색상, 폰트 유형, 폰트 색상), 레슨 제목(폰트 색상)
-
-**2. 강의 네비게이션(Course Navigation):**
-- 배경 색상
-- 카테고리: 폰트 유형, 폰트 색상
-- 레슨: 폰트 유형, 폰트 색상
-- 하이라이트: 색상, 폰트 색상
-- 브레드크럼: 폰트 유형, 폰트 색상
-- 다음 카테고리: 배경 색상, 폰트 유형, 폰트 색상
-
-**3. 강사(Instructor):**
-경로: Sites(사이트) → Membership(멤버십) → Products(상품) → Customize(커스터마이징) → Gallery → Customize → Sections → Instructor
-
-- 배경: 색상
-- 제목 폰트: 색상, 유형, 크기
-- 이름 폰트: 색상, 유형, 크기
-- 직책 폰트: 색상, 유형, 크기
-- 소개 폰트: 색상, 유형, 크기
-
-**참고사항:**
-테마 설정에서 무언가를 맞춤화한 후 "변경 사항 저장" 버튼을 클릭하면 미리보기에 반영됩니다. "기본값으로 재설정"을 선택하면 모든 설정이 테마의 기본값으로 변경됩니다. 테마 설정이 변경된 후 섹션이 맞춤화되면, 섹션 맞춤화가 테마 설정 맞춤화보다 우선적용됩니다.
-
-## 3단계: 테마 적용 또는 저장
-
-상품에 테마를 선택하고 상품 페이지를 맞춤화했다면, 마지막 단계는 이를 적용하는 것입니다.
-
-테마가 적용되면 회원들이 보고 상호작용할 최종 미리보기가 됩니다!
-
-- 상품을 선택합니다
-- 커스터마이징(Customize)을 클릭합니다
-- 테마 갤러리를 둘러보고 적용하고 싶은 테마의 적용(Apply)을 클릭합니다
-- 또는 테마를 맞춤화한 후 오른쪽 상단의 적용(Apply)을 클릭하여 적용할 수도 있습니다
+테마를 먼저 커스터마이징한 뒤, 오른쪽 위의 **적용**을 클릭해 적용해도 돼요.
 
 ### 테마 저장 버튼
-"테마 저장" 버튼을 사용하여 로케이션에서 전역으로 사용할 수 있도록 테마를 저장하세요. "변경 사항 저장"을 클릭하면 변경 사항이 해당 테마에만 저장되고 전역 사용은 불가능합니다.
 
-사용자가 "테마 저장" 버튼을 클릭하면 해당 테마를 로케이션에서 전역으로 사용할 수 있습니다.
+**테마 저장**을 클릭하면 이 테마를 현재 서브 계정 전체에서 쓸 수 있게 저장해요. **변경사항 저장**을 클릭하면 변경 내용이 그 테마에만 저장되고, 서브 계정 전체에서는 쓸 수 없어요.
 
-![테마 저장 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48189521761/original/twN4pepJLbV4zVRbZgiwrAkt30o-zMUcGQ.jpeg?1644600511)
+[![테마 저장 버튼 위치](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48189521761/original/twN4pepJLbV4zVRbZgiwrAkt30o-zMUcGQ.jpeg?1644600511)](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48188471381/original/Wsrrj5bvG2Rl4f63SmSlYNH-yE4T7_1AzQ.jpeg?1644413791)
 
-**참고사항:**
-"테마 저장"은 변경 사항 저장을 클릭한 후 저장된 최신 변경 사항만 저장합니다. 모든 "저장되지 않은 변경 사항"은 반영되지 않습니다. 템플릿이 맞춤화되고 전역 사용을 위해 저장되어도 이미 동일한 테마를 사용하고 있는 다른 모든 상품에는 영향을 미치지 않습니다. 사용자가 상품에 테마를 다시 적용하면 새로운 변경 사항이 반영되기 시작합니다.
+{% hint style="info" %}
+- **테마 저장**은 **변경사항 저장**을 클릭해 저장된 최신 변경 내용만 저장해요. 저장하지 않은 변경 내용은 반영되지 않아요.
+- 테마를 커스터마이징해 서브 계정 전체에서 쓸 수 있게 저장해도, 같은 테마를 이미 쓰는 다른 상품에는 영향이 없어요.
+- 상품에 그 테마를 다시 적용하면 새 변경 내용이 반영되기 시작해요.
+{% endhint %}
 
 ### 테마 적용하기
 
-특정 상품에 테마 적용
+특정 상품에 테마를 적용해요.
 
-![테마 적용 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48189521748/original/SJJlGJSJmMXVEoK-XqmUyJ9BVPCy3evUWQ.jpeg?1644600507)
+[![상품에 테마를 적용하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48189521748/original/SJJlGJSJmMXVEoK-XqmUyJ9BVPCy3evUWQ.jpeg?1644600507)](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48188471323/original/YTNVI1Y1QdLojnbIwWVPiche0ZKg0z1BWA.jpeg?1644413789)
 
-테마 갤러리에서 "적용(Apply)"을 클릭하면 테마가 상품에 직접 적용됩니다.
+테마 갤러리에서 **적용**을 클릭하면 테마가 해당 상품에 바로 적용돼요.
 
-![테마 적용 완료](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48189521757/original/vNNY5B5GSGrHn2tVGbiQOLqIJnjPeKEsyA.jpeg?1644600511)
+[![적용 버튼이 적용됨으로 바뀐 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48189521757/original/vNNY5B5GSGrHn2tVGbiQOLqIJnjPeKEsyA.jpeg?1644600511)](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48188471383/original/bOeOyX1k0nvskjbvO47uY6TZBmAwQszKRg.jpeg?1644413792)
 
-테마를 맞춤화한 후 변경 사항 저장을 클릭하고 적용 버튼을 클릭하여 특정 상품에 테마를 적용할 수 있습니다. 적용 버튼은 적용됨으로 변경됩니다.
+테마를 커스터마이징하고 **변경사항 저장**을 클릭한 뒤 **적용**을 클릭하면 해당 상품에 테마가 적용돼요. 그러면 **적용** 버튼이 **적용됨**으로 바뀌어요.
 
-**참고사항:**
-적용 버튼을 사용하여 테마를 적용하면 선택된 상품에만 적용되며, 맞춤화 설정은 로케이션에서 전역적으로 사용할 수 없습니다.
+{% hint style="info" %}
+**적용** 버튼으로 테마를 적용하면 선택한 상품에만 적용돼요. 설정한 커스터마이징은 서브 계정 전체의 테마에는 반영되지 않아요.{% endhint %}
 
-### 변경 사항 저장
+## 변경사항 저장
 
-상품 수준에서 테마의 초안을 맞춤화하고 저장합니다. 시스템에서 생성된 테마를 맞춤화하고 어떤 상품에도 적용하지 않은 채 초안으로 저장할 수 있습니다.
+상품 단위로 테마의 초안을 커스터마이징하고 저장해요. 시스템에서 제공한 테마를 꾸민 뒤, 어떤 상품에도 적용하지 않고 초안으로 저장할 수 있어요.
 
-"변경 사항 저장"을 클릭하면 변경 사항이 테마의 초안으로 저장됩니다.
+**변경사항 저장**을 클릭하면 변경 내용이 그 테마의 초안으로 저장돼요.
 
-초안 테마(변경 사항 포함)는 나중에 상품에 적용할 수 있습니다. 초안 테마는 전역적이지 않으며 모든 로케이션에서 사용할 수 없습니다.
+변경 내용이 담긴 초안 테마는 나중에 상품에 적용할 수 있어요. 초안 테마는 서브 계정 전체에서 쓸 수 있는 테마가 아니어서, 모든 서브 계정에서 쓸 수는 없어요.
 
-![변경사항 저장](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48189521759/original/20ndfHek6SAKB1HkrK1bsjYoNg9zA-5h-A.jpeg?1644600511)
+[![변경사항 저장 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48189521759/original/20ndfHek6SAKB1HkrK1bsjYoNg9zA-5h-A.jpeg?1644600511)](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48188471391/original/cD38dP29VnBWpw_gf-vO-wHCI2qFnylOvg.jpeg?1644413793)
 
-**참고사항:**
-상품에 적용되지 않은 테마에서 "변경 사항 저장"을 클릭하면, 해당 테마가 변경 사항으로 업데이트되고 나중에 동일한 상품에서 사용할 수 있습니다. 테마 속성을 전역적으로 변경하지는 않습니다.
+{% hint style="info" %}
+상품에 적용하지 않은 테마에서 **변경사항 저장**을 클릭하면 그 테마가 변경 내용으로 업데이트돼요. 나중에 같은 상품에서 그 테마를 쓸 수 있어요. 서브 계정 전체의 테마 속성은 바뀌지 않아요.
+{% endhint %}
 
-## 강사 세부사항, 파비콘, 로고
+## 강사 정보, 파비콘, 로고
 
-- 상품 세부사항으로 이동합니다
-- 커스터마이징(Customizations)을 클릭합니다  
-- 강사 세부사항, 파비콘, 로고를 업데이트합니다
+1. **상품 상세**로 이동하세요.
+2. **커스터마이징**을 클릭하세요.
+3. **강사 정보**, **Favicon**(파비콘), **로고**를 수정하세요.
 
-![강사 정보 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48189521764/original/qYMBN-r32zSmQyBEWQ7zGvbK2Vk9rXyRng.jpeg?1644600511)
-
----
-*원문 최종 수정: Wed, 9 Mar, 2022 at 10:06 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+[![강사 정보, 파비콘, 로고 수정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48189521764/original/qYMBN-r32zSmQyBEWQ7zGvbK2Vk9rXyRng.jpeg?1644600511)](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48188471409/original/pFP11wJjegZytAZXIlUvLkReL_r5fRQACA.jpeg?1644413796)

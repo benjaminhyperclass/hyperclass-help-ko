@@ -1,189 +1,153 @@
 ---
-
-번역일: 2026-04-06
+원문: /support/solutions/articles/48001188796-how-to-sync-highlevel-calendars-with-outlook
+번역일: 2026-11-06
 카테고리: 04-캘린더-예약
 ---
 
-# 하이퍼클래스 캘린더를 아웃룩과 동기화하는 방법
+# Outlook 캘린더와 하이퍼클래스 캘린더 동기화하기
 
-CRM과 아웃룩 캘린더 연동 기능을 통해 사용자는 아웃룩 캘린더를 CRM과 동기화하고, 모든 일정을 한 곳에서 관리할 수 있습니다. 아웃룩 계정을 연결하고 설정을 구성한 후, 새로운 예약을 생성하면 아웃룩 캘린더에도 자동으로 반영됩니다.
+Outlook 계정을 하이퍼클래스에 연결하면 Outlook 일정을 하이퍼클래스에서 확인하고 관리할 수 있어요. 하이퍼클래스에서 만든 새 예약도 Outlook 캘린더에 반영돼요.
 
-**좋은 소식입니다!** 아웃룩 연동은 모든 하이퍼클래스 요금제에서 지원됩니다! (월 $97, $297, $497)
+{% hint style="info" %}
+Outlook 연동은 하이퍼클래스의 모든 요금제($97/월, $297/월, $497/월)에서 지원돼요.
+{% endhint %}
 
-#### 이 가이드에서 다루는 내용
+## Outlook 캘린더 연동이란?
 
-#### [아웃룩 캘린더 연동이란 무엇인가요?](#아웃룩-캘린더-연동이란-무엇인가요)
+Outlook 캘린더 연동은 Outlook 캘린더를 하이퍼클래스와 동기화하는 기능이에요. 연동하면 Outlook 일정을 하이퍼클래스 안에서 확인하고 직접 관리할 수 있어요. 약속과 미팅을 한곳에서 볼 수 있어요. 하이퍼클래스에서 새 예약을 만들면 Outlook 캘린더에도 표시돼요.
 
-#### [이 연동의 장점은 무엇인가요?](#이-연동의-장점은-무엇인가요)
+### 이 연동의 장점
 
-#### [누가 이 연동을 가장 많이 활용할 수 있나요?](#누가-이-연동을-가장-많이-활용할-수-있나요)
+- Outlook 일정과 하이퍼클래스 예약을 한곳에서 볼 수 있어서, 여러 앱을 오가며 확인하지 않아도 돼요.
+- Outlook 일정을 하이퍼클래스에서 바로 관리할 수 있어서 시간과 수고를 줄일 수 있어요.
+- 하이퍼클래스에서 캘린더 설정을 맞춰 두면 캘린더 데이터가 매끄럽게 동기화돼요. 일정을 한눈에 파악하고 중요한 예약을 놓치지 않을 수 있어요.
+- 하이퍼클래스에서 만든 예약이 Outlook 캘린더에 반영되므로, 두 곳의 일정이 항상 최신 상태로 유지돼요.
 
-#### [아웃룩 연동을 연결하는 방법](#아웃룩-연동을-연결하는-방법)
+### 이런 분들께 특히 도움이 돼요
 
-#### [캘린더에서 아웃룩 연동을 설정하는 방법](#캘린더에서-아웃룩-연동을-설정하는-방법)
+예약과 일정 관리 비중이 큰 사용자와 비즈니스에 잘 맞아요. 영업·마케팅 팀, 프로젝트 매니저, 소규모 사업자, 여러 플랫폼에서 일정을 관리하는 전문가가 여기에 해당해요. Outlook 캘린더로 약속과 미팅을 관리하고 있다면 특히 유용해요.
 
-#### [기본 캘린더 설정:](#기본-캘린더-설정)
+{% hint style="info" %}
+- 이 연동은 Office 365, Outlook.com, live.com, Hotmail 캘린더만 지원해요.
+- 한 서브 계정에서 사용자 한 명에게는 Outlook 계정을 하나만 연결할 수 있어요. 같은 에이전시의 다른 서브 계정에 같은 이메일 주소의 사용자가 있다면, 그 서브 계정에서도 같은 Outlook 캘린더를 연결할 수 있어요.
+- Outlook 연동은 그룹 캘린더에서만 작동해요.
+{% endhint %}
 
-#### [충돌 확인 설정:](#충돌-확인-설정)
+## Outlook 연동 연결하기
 
-#### [자주 묻는 질문:](#자주-묻는-질문)
+1. **설정 > 프로필**로 이동해요.
+2. **연동** 섹션에서 Outlook 계정을 연결해요.
 
-- #### [이벤트 캘린더에서 아웃룩 연동이 작동하나요?](#이벤트-캘린더에서-아웃룩-연동이-작동하나요)
+![Outlook 계정 연결 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48291426307/original/VnoZKjxY-xULf616CLZ4KBYRYNtL9XQgsA.gif?1680778268)
 
-- #### [하나의 로케이션에서 한 사용자가 두 개의 다른 아웃룩 계정을 연결할 수 있나요?](#하나의-로케이션에서-한-사용자가-두-개의-다른-아웃룩-계정을-연결할-수-있나요)
+{% hint style="info" %}
+연동하려는 사용자가 로그인한 상태에서 그 서브 계정의 구성원이어야 해요. 그래야 **설정** 메뉴에서 **프로필**이 보여요.
+{% endhint %}
 
-- #### [다른 사용자가 이미 연결한 아웃룩 계정을 다른 사용자에게 연결하려고 하면 시스템이 허용하지 않습니다. 해결 방법이 있나요?](#다른-사용자가-이미-연결한-아웃룩-계정을-다른-사용자에게-연결하려고-하면-시스템이-허용하지-않습니다-해결-방법이-있나요)
+3. 하이퍼클래스가 Outlook 캘린더에 접근하도록 허용하라는 안내가 나오면 허용하고 계속 진행해요.
 
-- #### [관리자인데, 팀 관리에서 에이전트들의 아웃룩 연동을 설정할 수 있나요?](#관리자인데-팀-관리에서-에이전트들의-아웃룩-연동을-설정할-수-있나요)
+![Outlook 캘린더 접근 권한 허용 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48291410667/original/TTFy8mtr0E_OgHTEf6x-G2SLkKW6wnwDYg.png?1680774256)
 
-- #### [구글 캘린더와 아웃룩 캘린더를 동시에 사용할 수 있나요?](#구글-캘린더와-아웃룩-캘린더를-동시에-사용할-수-있나요)
+## Outlook 연동을 쓰도록 캘린더 구성하기
 
-- #### [한 사용자의 예약을 구글과 아웃룩에 동시에 기록할 수 있나요?](#한-사용자의-예약을-구글과-아웃룩에-동시에-기록할-수-있나요)
+**설정 > 프로필**로 이동한 뒤 화면을 아래로 내려 오른쪽 아래에서 **캘린더 구성**을 찾아요. **캘린더 구성**에는 두 가지 항목이 있어요.
 
-- #### [제 요금제에서 이 기능을 사용할 수 있나요?](#제-요금제에서-이-기능을-사용할-수-있나요)
+1. **기본 캘린더**: Google/Outlook의 모든 캘린더 일정을 읽어 오고, 모든 예약을 Outlook/Google에 기록해요.
+2. **Check for Conflicts**(충돌 확인): Google/Outlook의 캘린더 일정을 읽기만 해요.
 
-## **아웃룩 캘린더 연동이란 무엇인가요?**
+### 기본 캘린더 구성하기
 
-CRM과 아웃룩 캘린더 연동은 사용자가 아웃룩 캘린더를 플랫폼과 동기화할 수 있는 강력한 기능입니다. 이 연동을 통해 사용자는 CRM에서 아웃룩 캘린더 일정에 접근할 수 있어, 모든 예약과 미팅을 한 곳에서 관리할 수 있습니다. 이 연동으로 사용자는 아웃룩 계정을 CRM에 연결하고 캘린더 설정을 구성하여 캘린더 데이터를 원활하게 동기화할 수 있습니다. 사용자는 계정 내에서 아웃룩 캘린더 일정에 접근하고 직접 관리할 수 있으며, 새로운 예약을 생성하면 아웃룩 캘린더에도 반영됩니다.
+1. **기본 캘린더** 아래의 **편집** 버튼을 클릭해 Outlook 계정을 선택해요.
+2. 드롭다운에 Outlook 캘린더가 모두 나와요. 일정을 읽고 쓸 캘린더를 하나 선택해요.
 
-### 이 연동의 장점은 무엇인가요?
+![기본 캘린더 편집 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48119526201/original/Bn05XKrfGuNL7sO47Tc5_tyZoGrswwfJnA.png?1625848064)
 
-- 아웃룩 캘린더를 CRM과 동기화하면 예약과 미팅을 한 곳에서 관리할 수 있어, 여러 애플리케이션을 오가며 확인할 필요가 없습니다.
-- 사용자는 CRM에서 직접 아웃룩 캘린더 일정을 관리할 수 있어 시간과 노력을 절약하고 생산성을 높일 수 있습니다.
-- CRM에서 캘린더 설정을 구성하면 캘린더 데이터가 원활하게 동기화되어 일정을 놓치지 않고 관리할 수 있습니다.
-- 사용자는 CRM에서 새로운 예약을 생성하면 아웃룩 캘린더에도 반영되어, 두 플랫폼의 모든 데이터가 최신 상태로 유지됩니다.
+![기본 캘린더로 사용할 Outlook 캘린더 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48291427998/original/ZZZDD7PuYGroqbHdQBpiTwfqNtuMYW50hw.png?1680778788)
 
-### 누가 이 연동을 가장 많이 활용할 수 있나요?
+{% hint style="info" %}
+Outlook에서 일정이 넘어오지 않거나 Outlook으로 일정이 넘어가지 않는다면 다음 순서로 해 보세요. 이렇게 하면 동기화 문제가 해결돼요.
 
-CRM과 아웃룩 캘린더 연동은 예약 일정 관리와 캘린더 관리에 크게 의존하는 사용자와 비즈니스에게 유용합니다. 여기에는 영업 및 마케팅 팀, 프로젝트 매니저, 소규모 사업자, 그리고 여러 플랫폼에서 일정을 관리하는 전문가들이 포함됩니다. 특히 아웃룩 캘린더를 사용하여 예약과 미팅을 관리하는 사용자에게 이 연동이 매우 유용합니다.
+1. **기본 캘린더**를 편집해요.
+2. **Do not sync events to the primary calendar**(기본 캘린더에 일정 동기화 안 함)를 선택해요.
+3. **저장**을 클릭해요.
+4. 같은 캘린더를 다시 선택해요.
+{% endhint %}
 
-참고사항:
+### Check for Conflicts(충돌 확인) 구성하기
 
-- 이 연동은 Office 365, Outlook.com, live.com, 또는 Hotmail 캘린더만 지원합니다.
-- 하나의 로케이션에서 한 사용자당 하나의 아웃룩 계정만 연결할 수 있습니다. 같은 사용자가 동일한 에이전시 내의 다른 하위 계정에 같은 이메일 주소로 존재하는 경우, 해당 하위 계정에서도 같은 아웃룩 캘린더를 연결할 수 있습니다.
-- 아웃룩 연동은 그룹 캘린더에서만 작동합니다.
+1. **Check for Conflicts** 아래의 **편집** 버튼을 클릭하면 Outlook 계정의 모든 캘린더가 나와요.
+2. 충돌 여부를 확인할 캘린더를 선택해요.
 
-## 아웃룩 연동을 연결하는 방법
+![Check for Conflicts 편집 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48119526200/original/NlMYF7uvE_SOJaxO9QBJLf76S-sBxOEc9Q.png?1625848064)
 
-Settings(설정) >> Profile(프로필)로 이동하면 Integrations(연동) 섹션을 찾을 수 있고, 여기서 아웃룩 계정을 연결할 수 있습니다.
+![충돌 확인할 Outlook 캘린더 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48291428292/original/BHJxhlomI1Ha9HOVYH6iP-4M6EReCiWNDg.png?1680778857)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48291426307/original/VnoZKjxY-xULf616CLZ4KBYRYNtL9XQgsA.gif?1680778268)
+## 자주 묻는 질문
 
-참고사항:
+### 이벤트 캘린더에서도 Outlook 연동을 쓸 수 있나요?
 
-로그인한 사용자가 연동을 원하는 경우, 해당 하위 계정의 일부여야 하며, 그래야만 Settings(설정) 메뉴에서 Profile(프로필)을 찾을 수 있습니다.
+아니요, 이벤트 캘린더에서는 Outlook 연동이 작동하지 않아요. 라운드 로빈, 컬렉티브, 서비스 캘린더에서는 쓸 수 있어요.
 
-그 다음 LeadConnector가 아웃룩 캘린더에 접근할 수 있도록 권한을 허용해야 합니다. 계속 진행하려면 허용하세요.
+### 한 서브 계정에서 한 사용자에게 서로 다른 Outlook 계정 두 개를 연결할 수 있나요?
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48291410667/original/TTFy8mtr0E_OgHTEf6x-G2SLkKW6wnwDYg.png?1680774256)
+아니요, 한 서브 계정에서는 사용자 한 명에게 Outlook 계정 하나만 연결할 수 있어요.
 
----
+### 다른 사용자가 이미 연결한 Outlook 계정이 연결되지 않아요. 같은 사람이 다른 이메일로 만든 다른 사용자 계정인데도 안 돼요. 원래 이런가요? 우회 방법이 있나요?
 
-## **캘린더에서 아웃룩 연동을 설정하는 방법**
+네, Outlook 계정 하나는 사용자 한 명에게만 연결할 수 있어요. 서브 계정 수에는 제한이 없어서 여러 서브 계정에 같은 사용자로 연결할 수 있지만, 다른 사용자에게는 같은 Outlook 계정을 연결할 수 없어요. 이럴 때는 자세한 안내 메시지가 화면에 표시돼요.
 
-Settings(설정) >> Profile(프로필)로 이동한 후, 아래쪽 우측으로 스크롤하면 Calendar Configuration(캘린더 설정)을 찾을 수 있습니다. 캘린더 설정에는 두 가지 부분이 있습니다.
+![다른 사용자가 이미 연결한 Outlook 계정일 때 표시되는 안내 메시지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48291429182/original/eoUAT_fHGArywyR_MOHdDDiX_8EiauWn5Q.png?1680779128)
 
-- **기본 캘린더(Primary Calendar)**: Google/아웃룩에서 모든 캘린더 일정을 읽어오고 모든 예약을 아웃룩/Google에 기록합니다.
-- **충돌 확인(Check for Conflicts)**: Google/아웃룩에서 캘린더 일정만 읽어옵니다.
+우회 방법은 이래요.
 
-### 기본 캘린더 설정:
+1. 사용자 B에게 새 Outlook 계정을 연결해요.
+2. 사용자 A가 이미 연결해 둔 Outlook 계정에서 해당 Outlook 캘린더를 사용자 B의 새 Outlook 계정과 공유해요. [자세한 방법 보기](https://support.microsoft.com/en-us/office/share-an-outlook-calendar-with-other-people-353ed2c1-3ec5-449d-8c73-6931a0adab88)
 
-기본 캘린더 하단의 편집 버튼을 클릭하여 아웃룩 계정을 선택하세요. 드롭다운에서 모든 아웃룩 캘린더를 확인할 수 있고, 읽기와 쓰기를 원하는 캘린더 중 하나를 선택할 수 있습니다.
+![Outlook 캘린더 공유 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48119526208/original/imm7fX_5v5e2AmCEDb3Q-yqA4mj528Ii6g.png?1625848064)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48119526201/original/Bn05XKrfGuNL7sO47Tc5_tyZoGrswwfJnA.png?1625848064)
+### 관리자인데, **팀 관리**에서 직원에게 Outlook 연동을 연결해 줄 수 있나요?
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48291427998/original/ZZZDD7PuYGroqbHdQBpiTwfqNtuMYW50hw.png?1680778788)
+아니요, 현재는 직원 계정으로 직접 로그인해서 Outlook을 연결해야 해요. 연결한 뒤에 **팀 관리**에서 기본 캘린더와 캘린더 구성을 설정할 수 있어요.
 
-참고사항:
+### Google 캘린더와 Outlook 캘린더를 함께 쓸 수 있나요?
 
-예약이 아웃룩에서 동기화되지 않거나 아웃룩으로 동기화되지 않는 경우, 기본 캘린더를 편집하고 "기본 캘린더에 일정 동기화 안 함"을 선택 > 저장 > 그다음 동일한 캘린더를 다시 선택하세요. 이렇게 하면 동기화 문제가 해결됩니다.
+네, 함께 쓸 수 있어요. 기본 캘린더를 Outlook으로 설정하고 **Check for Conflicts**는 Google이나 Outlook으로 설정할 수 있어요. 반대로 설정해도 돼요.
 
----
+### 한 서브 계정에서 한 사용자의 예약을 Google과 Outlook에 동시에 기록할 수 있나요?
 
-### 충돌 확인 설정:
+아니요, 예약은 한 번에 캘린더 하나에만 기록할 수 있어요.
 
-충돌 확인 하단의 편집 버튼을 클릭하면 아웃룩 계정의 모든 캘린더를 찾을 수 있습니다. 충돌을 확인하고자 하는 캘린더를 선택하세요.
+### 내 요금제에서도 이 기능을 쓸 수 있나요?
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48119526200/original/NlMYF7uvE_SOJaxO9QBJLf76S-sBxOEc9Q.png?1625848064)
+Outlook 연동은 Freelancer 297과 Agency Pro 497 요금제 전용이에요.그래서 역할에 따라 아래와 같은 메시지가 보여요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48291428292/original/BHJxhlomI1Ha9HOVYH6iP-4M6EReCiWNDg.png?1680778857)
+에이전시 역할 메시지: "이 기능은 Freelancer 및 Agency Pro 요금제에서 지원됩니다."
 
----
+![에이전시 역할에 표시되는 요금제 안내 메시지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48183892715/original/pAE874Z8AflkQkaeJjkRgLjVRudrbb76OQ.png?1643295330)
 
-## 자주 묻는 질문:
+계정 역할 메시지: "계정에서 Outlook 연동이 활성화되어 있지 않습니다. 관리자에게 문의하세요."
 
-### 이벤트 캘린더에서 아웃룩 연동이 작동하나요?
+![계정 역할에 표시되는 Outlook 연동 비활성화 안내 메시지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48183894520/original/HI7eIbW6abIlNltdwWS_Cw2plGo2rr91WQ.png?1643295546)
 
-아니요, 아웃룩 연동은 이벤트 캘린더에서 작동하지 않습니다. 하지만 라운드 로빈, 공동 예약, 서비스 캘린더에서는 작동합니다.
+{% hint style="info" %}
+Outlook 연동을 해제하면 **기본 캘린더**와 **Check for Conflicts**에 연결된 Outlook 캘린더가 자동으로 제거돼요.
+{% endhint %}
 
-### **하나의 로케이션에서 한 사용자가 두 개의 다른 아웃룩 계정을 연결할 수 있나요?**
+## Outlook 연동의 제한 사항
 
-아니요, 하나의 로케이션에서 한 사용자당 하나의 아웃룩 계정만 연결할 수 있습니다.
+사용자 한 명은 서브 계정마다 Outlook 연동을 하나만 연결할 수 있어요. 같은 Outlook 연동을 여러 서브 계정에 연결할 수는 없어요. 예를 들어 사용자 A가 서브 계정 A에 Outlook 연동을 이미 연결했다면, 서브 계정 B에는 같은 Outlook 연동을 연결할 수 없어요.
+### 지원하는 Outlook 계정
 
-### 다른 사용자가 이미 연결한 아웃룩 계정을 다른 사용자에게 연결하려고 하면 시스템이 허용하지 않습니다 (같은 사람이 다른 CRM 사용자 계정에서 다른 이메일 주소를 사용하는 경우에도). 이것이 기능상 제한이라면 해결 방법이 있나요?
+Outlook 동기화 연동은 Office 365와 Outlook.com 계정만 지원해요. Outlook 데스크톱(온프레미스) 연동은 지원하지 않아요.
 
-네, 하나의 아웃룩 계정은 여러 로케이션에서 한 명의 사용자에게만 연결할 수 있지만, 같은 아웃룩 계정을 다른 사용자에게는 연결할 수 없습니다. 이에 대한 자세한 메시지를 표시하고 있습니다.
+### Outlook 일정이 동기화되는지 확인하는 방법
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48291429182/original/eoUAT_fHGArywyR_MOHdDDiX_8EiauWn5Q.png?1680779128)
+✅ 온라인에서 Outlook 캘린더 확인하기
 
-**해결 방법:**
+1. [Outlook 캘린더](https://outlook.office.com/calendar/)에 접속해 로그인해요.
+2. 여기서 캘린더 일정이 보이면, 계정을 연결한 뒤 정상적으로 동기화돼요.
 
-사용자 B에게 새로운 아웃룩 계정을 연결하고, 사용자 A의 이미 연결된 아웃룩 계정에서 해당 아웃룩 캘린더를 사용자 B의 새 아웃룩 계정과 공유하세요. [자세한 내용은 여기를 클릭하세요](https://support.microsoft.com/en-us/office/share-an-outlook-calendar-with-other-people-353ed2c1-3ec5-449d-8c73-6931a0adab88).
+❌ 지원하지 않는 경우
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48119526208/original/imm7fX_5v5e2AmCEDb3Q-yqA4mj528Ii6g.png?1625848064)
-
-### **관리자인데, 팀 관리에서 에이전트들의 아웃룩 연동을 설정할 수 있나요?**
-
-아니요, 현재로서는 에이전트 계정으로 시스템에 로그인하여 아웃룩에 연결해야 하며, 그 후 팀 관리에서 기본 캘린더 및 캘린더 설정을 구성할 수 있습니다.
-
-### **구글 캘린더와 아웃룩 캘린더를 동시에 사용할 수 있나요?**
-
-네, 구글과 아웃룩을 동시에 사용할 수 있습니다. 기본 캘린더는 아웃룩으로, 충돌 확인은 구글로 설정하거나 그 반대로도 설정할 수 있습니다.
-
-### 한 사용자의 예약을 구글과 아웃룩에 동시에 기록할 수 있나요?
-
-아니요, 한 번에 하나의 캘린더에만 예약을 기록할 수 있습니다.
-
-### **제 요금제에서 이 기능을 사용할 수 있나요?**
-
-아웃룩 연동은 Freelancer 297 및 Agency Pro 497 요금제에서만 사용할 수 있습니다. 그래서 다른 역할에서는 다음과 같은 메시지가 표시됩니다.
-
-에이전시 역할 메시지: 죄송합니다. 이 기능은 Freelancer 및 Agency Pro 요금제에서 지원됩니다.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48183892715/original/pAE874Z8AflkQkaeJjkRgLjVRudrbb76OQ.png?1643295330)
-
-계정 역할 메시지: 계정에 아웃룩 연동이 활성화되어 있지 않습니다. 관리자에게 문의하세요.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48183894520/original/HI7eIbW6abIlNltdwWS_Cw2plGo2rr91WQ.png?1643295546)
-
-**참고사항:**
-
-아웃룩 연동을 연결 해제하면, 기본 캘린더와 충돌 확인 캘린더에 연결된 아웃룩 캘린더가 자동으로 제거됩니다.
-
----
-
-### 아웃룩 연동의 제한사항
-
-각 사용자는 하위 계정당 하나의 아웃룩 연동만 연결할 수 있으며, 같은 아웃룩 연동을 여러 하위 계정에 연결할 수 없습니다. 예를 들어, 사용자 A가 하위 계정 A에서 이미 아웃룩 연동을 연결한 경우, 하위 계정 B에서 같은 아웃룩 연동을 연결할 수 없습니다.
-
-### 지원되는 아웃룩 계정
-
-아웃룩 동기화 연동은 Office 365와 Outlook.com 계정만 지원합니다. 아웃룩 데스크톱(온프레미스) 연동은 지원하지 않습니다.
-
-### 아웃룩 일정이 동기화되는지 확인하는 방법
-
-아웃룩 일정이 동기화되는지 확인하려면:
-
-✅ 온라인에서 아웃룩 캘린더 확인
-
-- [아웃룩 캘린더](https://outlook.office.com/calendar/)로 이동하여 계정 정보로 로그인하세요.
-- 여기서 캘린더 일정을 확인할 수 있다면, 계정 연결 후 성공적으로 동기화됩니다.
-
-❌ 지원되지 않는 경우
-
-- 아웃룩 데스크톱을 사용하고 일정이 클라우드에 동기화되지 않는 경우, 저희 연동으로는 해당 일정을 동기화할 수 없습니다.
-- 온프레미스 Exchange 서버에 호스팅된 아웃룩 계정은 지원하지 않습니다.
-
----
-*원문 최종 수정: Wed, 5 Feb, 2025 at 5:28 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+- Outlook 데스크톱을 사용하고 일정이 클라우드에 동기화되어 있지 않으면, 그 일정은 동기화할 수 없어요.
+- 온프레미스 Exchange 서버에서 호스팅하는 Outlook 계정은 지원하지 않아요.

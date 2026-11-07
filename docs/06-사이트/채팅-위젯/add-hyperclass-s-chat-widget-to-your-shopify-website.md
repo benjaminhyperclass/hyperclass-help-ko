@@ -1,52 +1,45 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 06-사이트 > 채팅-위젯
+원문: /support/solutions/articles/48001239778-add-highlevel-s-chat-widget-to-your-shopify-website
+번역일: 2026-11-07
+카테고리: 06-사이트
 ---
 
-# Shopify 웹사이트에 Hyperclass 채팅 위젯 추가하기
+# Shopify 웹사이트에 채팅 위젯 추가하기
 
-웹사이트 방문자와 쉽게 소통하고 고객으로 전환시키는 방법을 찾고 계신가요? Shopify용 Hyperclass 웹챗이 완벽한 솔루션입니다! 이 가이드에서는 Shopify용 Hyperclass 웹챗을 시작하는 단계를 안내해드립니다.
+하이퍼클래스 채팅 위젯의 임베드 코드를 Shopify 웹사이트에 붙여 넣는 방법을 안내해요. 웹사이트 방문자와 바로 대화하고, 방문자를 고객으로 이어 가고 싶을 때 따라 해 보세요.
 
----
+## 채팅 위젯 임베드 코드 복사하기
 
-# 웹사이트용 웹챗 임베드 코드 가져오기:
-Sites(사이트) > Chat Widget(채팅 위젯) > Get Code(코드 가져오기)에서 임베드 코드를 복사하세요.
+**사이트 > 채팅 위젯 > 코드 가져오기**에서 임베드 코드를 복사하세요.
 
-![채팅 위젯 코드 가져오기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297297829/original/oKtzhm7Qaeia1e1Pzl-q2_GbFteEF8ZoBw.gif?1683912268)
+![채팅 위젯의 코드 가져오기에서 임베드 코드를 복사하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297297829/original/oKtzhm7Qaeia1e1Pzl-q2_GbFteEF8ZoBw.gif?1683912268)
 
-## 
+## Shopify 웹사이트에 채팅 위젯 붙여 넣기
 
----
+1. Shopify 계정에 로그인하세요.
+2. Shopify 관리자 화면에서 **Online Store**(온라인 스토어) 메뉴로 이동하세요.
 
-## 다양한 방법으로 Shopify 웹사이트에 커스텀 채팅 위젯을 추가하는 자세한 단계:
+   ![Shopify의 Online Store 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297324784/original/4ixY62gc7EwglJ9F0a4bwMoxpQXHH_Xtyw.jpeg?1683924952)
 
-- Shopify 계정에 로그인: Shopify 계정으로 이동하여 로그인합니다.
-- "Online Store" 섹션으로 이동: Shopify 대시보드에서 "Online Store" 섹션으로 이동합니다.
+3. 편집할 테마를 고르고 **작업** 버튼을 클릭하세요.
+4. 드롭다운 메뉴에서 **Edit code**(코드 편집)를 선택하세요.
 
-![Shopify Online Store 섹션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297324784/original/4ixY62gc7EwglJ9F0a4bwMoxpQXHH_Xtyw.jpeg?1683924952)
+   ![테마의 작업 버튼과 Edit code 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297324783/original/7OOpzX5r1cGs_hKuMlyK7PFupzLej25itg.jpeg?1683924952)
 
-- 웹사이트 테마 편집: 편집하려는 테마를 선택하고 "**Actions**" 버튼을 클릭합니다. 드롭다운 메뉴에서 "**Edit code**"를 선택합니다.
+   ![코드 편집 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297324778/original/xDoNGM25Xom69HxzbfsPJM2bIG4oT58Mpw.png?1683924952)
 
-![테마 Actions 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297324783/original/7OOpzX5r1cGs_hKuMlyK7PFupzLej25itg.jpeg?1683924952)
+5. 파일 목록에서 **레이아웃** 폴더를 선택한 다음 `theme.liquid` 파일을 선택하세요.
 
-![Edit code 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297324778/original/xDoNGM25Xom69HxzbfsPJM2bIG4oT58Mpw.png?1683924952)
+   ![레이아웃 폴더에서 theme.liquid 파일을 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297324780/original/WpuHKCkk_K3rGrEMk0fx8m0xINkUuO1K4Q.jpeg?1683924952)
 
-- 테마의 theme.liquid 파일 열기: 파일 목록에서 "**Layout**" 폴더를 선택한 다음 "**theme.liquid**" 파일을 선택합니다.
+6. `theme.liquid` 안에서 `</body>` 태그를 찾으세요.
+7. `</body>` 태그 바로 위에 복사한 임베드 코드를 붙여 넣으세요.
 
-![theme.liquid 파일 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297324780/original/WpuHKCkk_K3rGrEMk0fx8m0xINkUuO1K4Q.jpeg?1683924952)
+   ![body 태그 위에 임베드 코드를 붙여 넣은 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297324781/original/bYge5b1X9AAUYrVTDgNZfgmSkr3XM-tnqw.jpeg?1683924952)
 
-- 임베드 코드 붙여넣기: **theme.liquid** 파일에서 </body> 태그를 찾아 그 위에 임베드 코드를 추가합니다.
+8. 저장 버튼을 클릭해 변경 사항을 저장하세요.
 
-![임베드 코드 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297324781/original/bYge5b1X9AAUYrVTDgNZfgmSkr3XM-tnqw.jpeg?1683924952)
+   ![변경 사항을 저장하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297324782/original/TLDL_HdeWPkxcNvDgXCxByiyh7ZTzjIqLg.jpeg?1683924952)
 
-- 변경사항 저장: 임베드 코드를 추가한 후 저장 버튼을 클릭합니다.
-
-![저장 버튼 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48297324782/original/TLDL_HdeWPkxcNvDgXCxByiyh7ZTzjIqLg.jpeg?1683924952)
-
-- 채팅 위젯 확인: 웹사이트로 이동하여 페이지를 새로고침하세요. 이제 채팅 위젯이 웹사이트에 표시됩니다.
-- 올바르게 작동하는지 테스트해보시기 바랍니다.
-
----
-*원문 최종 수정: Fri, 2 May, 2025 at 11:15 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+9. 웹사이트로 이동해 페이지를 새로 고치세요. 채팅 위젯이 화면에 보여야 해요.
+10. 채팅 위젯이 제대로 작동하는지 테스트해 보세요.

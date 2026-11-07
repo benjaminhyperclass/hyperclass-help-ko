@@ -1,21 +1,17 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 10-마케팅 > 제휴 캠페인
+원문: /support/solutions/articles/155000003640-prerequisite-to-launch-your-first-affiliate-campaign
+번역일: 2026-11-07
+카테고리: 10-마케팅
 ---
 
-# 첫 번째 제휴 캠페인 실행 전 필수 준비사항
+# 첫 제휴 캠페인을 시작하기 전 준비 사항
 
-첫 번째 제휴 캠페인을 실행하기 전에 다음 단계들을 완료해야 합니다:
+첫 제휴 캠페인을 시작하기 전에 꼭 마쳐야 할 준비 단계를 안내해요. 아래 네 가지를 먼저 확인하세요.
 
-- **Stripe Connect 활성화:** 결제 처리를 위해 Stripe Connect를 설정하세요 (*설정(Settings) > 연동(Integrations) > Stripe Connect* 이동). [자세히 알아보기](../../08-결제/기타/stripe-integration.md)
-- **상품 등록:** 다음 영역에서 상품을 등록할 수 있습니다:
-  - **퍼널(Funnels)**: 퍼널에 상품을 추가하는 방법
-  - **웹사이트(Website)**: 웹사이트에 상품을 추가하는 방법
-  - **온라인 스토어(Online Stores)**: [온라인 스토어 설정하기](../../37-이커머스-스토어/E-Commerce-Store/how-to-set-up-an-e-commerce-online-store-websites-.md)
-- **리드 추적:** 제휴 마케터가 생성하는 리드를 추적하기 위해 폼(Forms), 설문(Surveys), 또는 캘린더(Calendars)를 사용하세요.
-- **PayPal Business 연결:** 빠르고 간편한 제휴 수수료 지급을 위해 PayPal Business 계정을 연결하세요. 자세히 알아보기
-
----
-*원문 최종 수정: Tue, 1 Oct, 2024 at 2:08 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+1. Stripe Connect를 켜세요. 결제를 받으려면 Stripe Connect를 설정해야 해요. **설정 > 연동 > Stripe Connect**로 이동하세요. 자세한 방법은 [Stripe 연동 안내](../../42-통합/Stripe-Integration/how-to-connect-stripe-to-your-sub-account.md)를 참고하세요.
+2. 상품을 등록하세요. 상품은 다음 위치에 등록할 수 있어요.
+   - **퍼널**: [퍼널에 상품 추가하기](../../06-사이트/기타/how-to-create-and-add-products-to-a-funnel-website-payments.md)
+   - **웹사이트**: [웹사이트에 상품 추가하기](../../06-사이트/기타/how-to-create-and-add-products-to-a-funnel-website-payments.md)
+   - 온라인 스토어: [온라인 스토어 설정하기](../../37-이커머스-스토어/E-Commerce-Store/how-to-set-up-an-e-commerce-online-store-websites.md)
+3. 리드를 추적할 수 있게 하세요. 제휴 파트너가 만들어 낸 리드는 **폼**, **설문**, **캘린더**로 추적할 수 있어요.
+4. PayPal Business 계정을 연결하세요. 제휴 파트너에게 빠르고 간편하게 지급하려면 PayPal Business 계정을 연결해 두세요.

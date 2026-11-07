@@ -1,86 +1,75 @@
 ---
-
-번역일: 2026-04-09
-카테고리: 42-통합 > Zapier Integration
+원문: /support/solutions/articles/155000005109-how-to-connect-a-highlevel-sub-account-with-zapier
+번역일: 2026-11-07
+카테고리: 42-통합
 ---
 
-# Hyperclass 하위 계정을 Zapier와 연결하는 방법
+# Zapier에 서브 계정 연결하기
 
-Hyperclass 하위 계정(Sub-account)을 Zapier와 연결해서(LeadConnector Zapier 앱 사용) 리드 수집, 연락처 업데이트, 인수인계를 코드 없이 자동화하세요. 이 가이드에서는 통합의 개념, 필수 조건, 하위 계정 연결/해제 방법을 설명합니다.
+Zapier의 하이퍼클래스 앱으로 서브 계정을 연결하면 코드 없이 리드 수집, 연락처 업데이트, 담당자 전달을 자동화할 수 있어요. 이 문서에서는 연동이 무엇인지, 필요한 준비물은 무엇인지, 서브 계정을 연결하고 해제하는 방법을 안내해요.
 
-목차
+## Zapier와 서브 계정 연결이란?
 
-- [하위 계정을 Zapier와 연결한다는 것은?](#하위-계정을-zapier와-연결한다는-것은)
-- [Zapier 연결의 주요 장점](#zapier-연결의-주요-장점)
-- [하위 계정을 Zapier에 연결하는 방법](#하위-계정을-zapier에-연결하는-방법)
-- [Zapier에서 LeadConnector 연결 해제하기](#zapier에서-leadconnector-연결-해제하기)
-- [자주 묻는 질문](#자주-묻는-질문)
+Zapier를 쓰면 하이퍼클래스와 수천 개의 앱이 데이터를 주고받을 수 있어요. Zapier의 하이퍼클래스 앱에서 하이퍼클래스 로그인 정보로 인증한 뒤 연결할 서브 계정을 고르면, Zaps가 연락처를 만들거나 업데이트하고, 데이터를 옮기고, 액션을 실행해요.
 
-## 하위 계정을 Zapier와 연결한다는 것은?
+## 연결하면 좋은 점
 
-Zapier를 통해 Hyperclass가 수천 개의 앱과 데이터를 주고받을 수 있습니다. LeadConnector Zapier 앱을 사용하여 Hyperclass CRM 로그인 정보로 인증한 후, 연결할 하위 계정을 선택하면 Zap에서 연락처 생성/업데이트, 데이터 이동, 액션 트리거가 가능합니다.
+Zapier를 연결해 업무를 자동화할지 정할 때 참고하세요.
 
-### Zapier 연결의 주요 장점
+- 빠른 자동화: 별도 코드 없이 수천 개의 앱에서 액션을 실행할 수 있어요.
+- 서브 계정 단위 연결: 서브 계정을 직접 선택하므로 데이터를 깔끔하게 분리해 둘 수 있어요.
+- 간단한 인증: 하이퍼클래스 로그인 정보로 연결해요. 이 연결에는 API 키가 필요 없어요.
+- 쉬운 관리: Zapier의 App Connections 페이지에서 하이퍼클래스 연결을 관리하거나 해제할 수 있어요.
 
-다음 장점들을 통해 프로세스 자동화를 위한 Zapier 연결 시점을 결정할 수 있습니다.
+## Zapier에 서브 계정 연결하기
 
-- **빠른 자동화**: 커스텀 코드 없이 수천 개 앱에서 액션을 트리거할 수 있습니다.
+아래 단계는 Zapier에서 진행해요.
 
-- **하위 계정 범위 지정**: 특정 하위 계정을 선택하여 데이터를 깔끔하고 분리된 상태로 유지합니다.
+1. **Zapier** 계정에 로그인하세요.
+2. 홈 화면에서 **만들기 > Zaps**를 클릭하세요.
 
-- **간단한 인증**: Hyperclass CRM 로그인만 사용하면 되므로 API 키가 필요하지 않습니다.
+   ![Zapier 홈 화면에서 Zaps 만들기를 선택하는 화면](https://jumpshare.com/share/xDVyCpgR1s9xTAmLFqi9+/GIF+Recording+2025-09-18+at+5.36.42+PM.gif)
+3. Zap 편집 화면에서 **트리거** 블록을 클릭하고, 앱 목록에서 **하이퍼클래스**를 선택하세요.
 
-- **쉬운 관리**: Zapier의 App Connections 페이지에서 LeadConnector 연결을 관리하거나 해제할 수 있습니다.
+   ![트리거 블록에서 하이퍼클래스 앱을 선택하는 화면](https://jumpshare.com/share/uPqO8dR3APk57YMPMLDP+/GIF+Recording+2025-09-18+at+5.40.48+PM.gif)
+4. **트리거** **이벤트**를 선택하세요. 예를 들어 **파이프라인 단계 변경됨**을 고를 수 있어요.
+5. 트리거 설정의 **계정** 섹션에서 **Sign In**(로그인) 버튼을 클릭하세요.
+6. 하이퍼클래스 로그인 화면으로 이동해요. 이메일과 비밀번호를 입력하고 계속 진행하세요.
 
-## 하위 계정을 Zapier에 연결하는 방법
+   ![하이퍼클래스 로그인 화면에서 이메일과 비밀번호를 입력하는 모습](https://jumpshare.com/share/6whWjcEY4IgmCZSPx4Bt+/GIF+Recording+2025-09-18+at+5.48.01+PM.gif)
+7. 로그인하면 Zapier와 연결할 서브 계정을 선택하라는 안내가 나와요. 서브 계정을 선택하세요.
 
-LeadConnector를 통해 올바른 하위 계정을 연결하려면 Zapier에서 다음 단계를 따르세요.
+   ![Zapier와 연결할 서브 계정을 선택하는 화면](https://jumpshare.com/share/vtNYLQ3hqAOl7DyUJvIw+/zapier.png)
+8. 선택을 마치면 Zapier 계정과 서브 계정이 연결돼요. Zap 설정의 **계정**에 **하이퍼클래스**가 표시되면 연동이 활성화된 거예요.
 
-- Zapier 계정에 로그인합니다.
-- 홈 화면에서 Create > Zaps를 클릭합니다.
-![Zap 생성하기](https://jumpshare.com/share/xDVyCpgR1s9xTAmLFqi9+/GIF+Recording+2025-09-18+at+5.36.42+PM.gif)
+   ![Zap 설정의 계정에 하이퍼클래스가 표시된 화면](https://jumpshare.com/share/hm2brQrt0wbFCxoJMCW7+/ZIQj0GLvuaBPyQ69KAvi4HSuCOKq-eUcJQ.png)
 
-- Zap 편집기에서 **Trigger** 블록을 클릭하고 앱 목록에서 **LeadConnector**를 선택합니다.
+## Zapier에서 하이퍼클래스 연결 해제하기
 
-![LeadConnector 선택](https://jumpshare.com/share/uPqO8dR3APk57YMPMLDP+/GIF+Recording+2025-09-18+at+5.40.48+PM.gif)
+1. Zapier 홈 페이지의 왼쪽 메뉴에서 **App Connections**(앱 연결)를 클릭하세요.
+2. 하이퍼클래스 옆의 점 세 개 메뉴(**•••**)를 클릭하세요.
+3. **삭제**를 선택하면 연결이 제거돼요.
 
-- **Pipeline Stage Changed**와 같은 **Trigger Event**를 선택합니다.
-
-- 트리거 설정의 **Account** 섹션에서 **Sign In** 버튼을 클릭합니다.
-
-- LeadConnector 로그인 화면으로 리다이렉트됩니다. 이메일과 비밀번호를 입력하여 진행하세요.
-![LeadConnector 로그인](https://jumpshare.com/share/6whWjcEY4IgmCZSPx4Bt+/GIF+Recording+2025-09-18+at+5.48.01+PM.gif)
-
-- 로그인 후 Zapier와 연결할 하위 계정을 선택하라는 메시지가 표시됩니다.
-
-![하위 계정 선택](https://jumpshare.com/share/vtNYLQ3hqAOl7DyUJvIw+/zapier.png)
-
-- 완료되면 Zapier 계정이 하위 계정과 성공적으로 연결됩니다. Zap 설정의 "Accounts" 아래에 LeadConnector가 표시되어 통합이 활성화되었음을 확인할 수 있습니다.
-![연결 완료 확인](https://jumpshare.com/share/hm2brQrt0wbFCxoJMCW7+/ZIQj0GLvuaBPyQ69KAvi4HSuCOKq-eUcJQ.png)
-
-## Zapier에서 LeadConnector 연결 해제하기
-
-- Zapier 홈 페이지에서 왼쪽 메뉴의 App Connections를 클릭합니다.
-
-- LeadConnector 옆의 점 세 개 메뉴(•••)를 클릭합니다.
-
-- Delete를 선택하여 연결을 삭제합니다.
-![연결 해제하기](https://jumpshare.com/share/rotqSlJ5S1zFQjUDpY7Q+/ZxwSlCb1GkvF_su1AZ8UqEs5LSkMsd4bCg.png)
+   ![App Connections에서 하이퍼클래스 연결을 삭제하는 화면](https://jumpshare.com/share/rotqSlJ5S1zFQjUDpY7Q+/ZxwSlCb1GkvF_su1AZ8UqEs5LSkMsd4bCg.png)
 
 ## 자주 묻는 질문
 
-**Q: Zapier 앱 이름이 "Hyperclass"인가요?**
-Zapier에서는 LeadConnector를 사용하세요. 이것이 공식 화이트라벨 Hyperclass 연결입니다.
+### Zapier에서 앱 이름이 "하이퍼클래스"인가요?
 
-**Q: 나중에 연결된 하위 계정을 변경할 수 있나요?**
-네. Zapier에서 새 LeadConnector 계정 연결을 추가하고 다른 하위 계정을 선택한 다음, Zap에서 사용하는 계정을 전환하면 됩니다.
+네. Zapier에서는 **하이퍼클래스** 앱을 선택하세요. 하이퍼클래스와 연결되는 공식 앱이에요.
 
-**Q: 완전히 연결을 해제하려면 어떻게 해야 하나요?**
-Zapier → Apps → App Connections에서 LeadConnector를 찾고, ••• 메뉴를 열어 Delete로 연결을 삭제하세요.
+### 연결한 서브 계정을 나중에 바꿀 수 있나요?
 
-**Q: API 키가 필요한가요?**
-표준 LeadConnector 연결 플로우에서는 필요하지 않습니다. CRM 로그인 정보로 로그인하면 됩니다.
+네. Zapier에서 하이퍼클래스 계정 연결을 새로 추가하고 다른 서브 계정을 선택하세요. 그다음 Zaps에서 사용하는 계정을 새 연결로 바꾸면 돼요.
 
----
-*원문 최종 수정: Thu, 18 Sep, 2025 at 8:08 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### 연결을 완전히 해제하려면 어떻게 하나요?
+
+Zapier에서 **앱 > App Connections**로 이동해 **하이퍼클래스**를 찾으세요. **•••** 메뉴를 열고 **삭제**를 선택하면 연결이 해제돼요.
+
+### 이 연결에 API 키가 필요한가요?
+
+기본 하이퍼클래스 연결 방식에서는 필요하지 않아요. 하이퍼클래스 로그인 정보로 로그인하면 돼요.
+
+### Zapier에 연결할 때 내 서브 계정이 전부 보이지 않아요
+
+하이퍼클래스 연결은 인증 과정에서 서브 계정을 선택하는 방식이에요. 원하는 서브 계정이 보이지 않으면 올바른 하이퍼클래스 계정으로 로그인했는지, 그 서브 계정에 접근 권한이 있는지 확인하세요. 그래도 보이지 않으면 하이퍼클래스 고객지원에 문의하세요.

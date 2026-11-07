@@ -1,59 +1,66 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 19-에이전시-뷰 > Reselling
+원문: /support/solutions/articles/155000005136-how-to-cancel-location-subscriptions-from-the-agency-billing-page
+번역일: 2026-11-07
+카테고리: 19-에이전시-뷰
 ---
 
-# 에이전시 결제 페이지에서 로케이션 구독 취소하는 방법
+# 에이전시 청구 페이지에서 서브 계정 구독 취소하기
 
-에이전시 사용자는 이제 결제(Billing) 페이지에서 3단계 안내형 구독 해지 플로우를 통해 로케이션 레벨 구독을 직접 취소할 수 있습니다. 이 문서에서는 취소 옵션, 각 단계에서 무엇을 기대할 수 있는지, 그리고 앞으로의 계획에 대해 안내합니다. 지원팀의 개입 없이 구독을 빠르게 관리하고 싶다면 이 가이드를 참고하세요.
+에이전시 관리자는 **에이전시 청구** 페이지에서 서브 계정 단위의 재판매 구독을 안내 화면에 따라 직접 취소할 수 있어요. 구독은 즉시 취소하거나 현재 청구 주기가 끝날 때 취소할 수 있어요. 이 문서에서는 취소 단계와 함께 청구와 이용이 언제 끝나는지 설명해요.
 
-# 로케이션 구독 취소 단계
+## 서브 계정 구독 취소 단계
 
-### 1단계: 결제 페이지로 이동
+### 1단계: 청구/결제 페이지로 이동하기
 
-- 에이전시 계정에서 Settings(설정)을 클릭하세요.
-![](https://jumpshare.com/v/tLocrx634NVbP5uK9Imq+/Screen+Shot+2025-07-02+at+11.33.05+PM.png)
+1. 에이전시 계정에서 **설정**을 클릭하세요.
 
-- Billing(결제) 탭을 클릭하세요.
-- Subscriptions(구독) 아래에서 Reselling(리셀링)을 찾으세요.
-![](https://jumpshare.com/v/OvPn2dE0yaAndMpHE8Vt+/Screen+Shot+2025-07-02+at+11.37.08+PM.png)
+   ![에이전시 계정의 설정 메뉴](https://jumpshare.com/v/tLocrx634NVbP5uK9Imq+/Screen+Shot+2025-07-02+at+11.33.05+PM.png)
+2. **청구/결제** 탭을 클릭하세요.
+3. 구독 항목 아래에서 **재판매**를 찾으세요.
 
-- 해당 리셀링 상품에서 Show sub-accounts(하위 계정 보기) 버튼을 클릭하세요.
-![](https://jumpshare.com/v/McBhTcrKvKpeVXOR9OUW+/Screen+Shot+2025-07-02+at+11.40.41+PM.png)
+   ![구독 항목 아래의 재판매](https://jumpshare.com/v/OvPn2dE0yaAndMpHE8Vt+/Screen+Shot+2025-07-02+at+11.37.08+PM.png)
+4. 취소하려는 재판매 상품에서 **서브 계정 표시** 버튼을 클릭하세요.
 
-### 2단계: 로케이션 선택
+   ![서브 계정 표시 버튼](https://jumpshare.com/v/McBhTcrKvKpeVXOR9OUW+/Screen+Shot+2025-07-02+at+11.40.41+PM.png)
 
-- 구독을 취소하려는 로케이션의 Actions(작업) 열 아래에 있는 점 세 개를 클릭하세요.
-- x Cancel Subscription(구독 취소) 버튼을 클릭하세요.
+### 2단계: 서브 계정 선택하기
 
-![](https://jumpshare.com/v/7BU9tu1Wzc3w30F13HEE+/Screen+Shot+2025-07-02+at+11.47.13+PM.png)
+1. 구독을 취소할 서브 계정의 **작업** 열에서 세 점 아이콘을 클릭하세요.
+2. **구독 취소** 버튼을 클릭하세요.
 
-### 3단계: 취소 시점 선택
+![작업 열의 구독 취소 버튼](https://jumpshare.com/v/7BU9tu1Wzc3w30F13HEE+/Screen+Shot+2025-07-02+at+11.47.13+PM.png)
 
-- 다음 취소 옵션 중 하나를 선택하라는 메시지가 표시됩니다:
-  - Cancel at End of Billing Cycle(결제 주기 종료 시 취소) – 현재 결제 기간 후에 구독이 종료됩니다 (환불 없음).
-  - Cancel Immediately(즉시 취소) – 구독이 바로 종료됩니다 (환불이나 일할 계산 없음).
-- 원하는 옵션을 선택하고 Proceed to cancellation(취소 진행) 버튼을 클릭하세요.
+### 3단계: 취소 시점 선택하기
 
-![](https://jumpshare.com/v/ZFT7jvbTjx7f8MwPGFfQ+/Screen+Shot+2025-07-02+at+11.50.24+PM.png)
+구독을 언제 끝낼지 고르는 화면이 나와요. 아래 옵션을 잘 확인한 뒤 진행하세요.
 
-### 4단계: 로케이션 및 중요 안내사항 검토
+| 취소 옵션 | 청구가 끝나는 시점 | 이용이 끝나는 시점 |
+| --- | --- | --- |
+| **Cancel at End of Billing Cycle**(청구 주기 종료 시 취소) | 현재 청구 주기가 끝난 뒤에는 구독이 갱신되지 않아요. 청구는 실제 취소 적용일에 끝나요. | 취소한 상품은 현재 청구 주기가 끝날 때까지 이용할 수 있고, 실제 취소 적용일에 이용이 끝나요. |
+| **즉시 취소** | 구독이 바로 끝나요. 사용하지 않은 기간에 대한 환불이나 일할 계산은 없어요. | 취소한 상품을 바로 이용할 수 없게 돼요. |
 
-- Location Name(로케이션 이름)과 ID를 확인하세요.
-- Important Disclaimer(중요 안내사항)를 검토하세요.
-- Next(다음) 버튼을 클릭하세요.
+원하는 옵션을 선택한 다음 **취소 진행**을 클릭하세요.
 
-![](https://jumpshare.com/v/AmXLfvbqebYP9LdLJera+/Screen+Shot+2025-07-03+at+12.09.17+AM.png)
+{% hint style="warning" %}
+재판매 구독을 취소해도 서브 계정 전체가 취소되지는 않아요. 선택한 상품의 구독만 끝나요.
+{% endhint %}
 
-### 5단계: 취소 사유 입력 및 취소
+![취소 시점 선택 화면](https://jumpshare.com/v/ZFT7jvbTjx7f8MwPGFfQ+/Screen+Shot+2025-07-02+at+11.50.24+PM.png)
 
-- 취소 사유를 선택하세요.
-- 상자에 DELETE를 입력하여 취소를 확인하세요.
-- Cancel Subscription(구독 취소) 버튼을 클릭하세요.
+### 4단계: 서브 계정 정보와 안내 사항 확인하기
 
-![](https://jumpshare.com/v/0lToBNqHomn6D7gJSLQr+/Screen+Shot+2025-07-03+at+12.12.15+AM.png)
+1. **위치 이름**과 **ID**를 확인하세요.
+2. **Important Disclaimer**(중요 면책 조항)를 읽어 보세요.
+3. **다음** 버튼을 클릭하세요.
 
----
-*원문 최종 수정: Wed, 2 Jul, 2025 at 1:53 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+![서브 계정 정보와 면책 조항 확인 화면](https://jumpshare.com/v/AmXLfvbqebYP9LdLJera+/Screen+Shot+2025-07-03+at+12.09.17+AM.png)
+
+### 5단계: 취소 이유 선택하고 취소하기
+
+1. **이유를 선택하세요**에서 취소 이유를 선택하세요.
+2. 입력란에 **DELETE**를 입력해 취소를 확인하세요.
+3. **구독 취소** 버튼을 클릭하세요.
+
+![취소 이유 선택과 DELETE 입력 화면](https://jumpshare.com/v/0lToBNqHomn6D7gJSLQr+/Screen+Shot+2025-07-03+at+12.12.15+AM.png)
+
+## 핵심 화면 이름 (왼쪽 메뉴·공통 버튼 — 모든 문서에 적용)

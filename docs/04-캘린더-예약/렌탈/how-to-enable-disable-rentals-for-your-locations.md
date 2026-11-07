@@ -1,161 +1,104 @@
 ---
-원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000006740-how-to-enable-disable-rentals-for-your-locations
-번역일: 2026-08-11
-카테고리: 04-캘린더-예약 > 렌탈
+원문: /support/solutions/articles/155000006740-how-to-enable-disable-rentals-for-your-locations
+번역일: 2026-11-06
+카테고리: 04-캘린더-예약
 ---
 
-# 로케이션별 렌탈(Rentals) 활성화/비활성화 방법
+# 서브 계정에서 대여 켜고 끄기
 
-#### 개요
+**대여**(Rentals)를 서브 계정별로 켜거나 끄는 방법을 안내해요. 서브 계정 하나에서 켜는 방법과 여러 개에서 한꺼번에 켜는 방법을 설명하며, 에이전시 관리자만 쓸 수 있어요.
 
-렌탈(Rentals)은 자동차, 장비, 부동산, 기타 예약 가능한 자산을 관리하는 비즈니스를 위해 설계된 새로운 스케줄링 및 예약 시스템입니다. 렌탈을 사용하면 예약 가능 여부, 재고, 가격, 다일(multi-day) 예약을 하나의 플랫폼에서 효율적으로 관리할 수 있어요.
+## 개요
 
-## 렌탈(Rentals)의 새로운 기능
+**대여**는 자동차, 장비, 부동산처럼 예약할 수 있는 자산을 빌려주는 비즈니스를 위한 새 일정·예약 시스템이에요. 한 곳에서 가용 일정, 재고, 가격, 여러 날에 걸친 예약을 관리할 수 있어요.
 
-렌탈은 렌탈 기반 스케줄링의 독특한 복잡성을 처리할 수 있도록 만들어졌습니다. 다음은 렌탈이 제공하는 주요 기능이에요:
+## 대여에서 할 수 있는 일
 
-- 
-#### 다일(Multi-Day) 예약 지원: 여러 시간, 일, 주, 월 단위로 자산을 예약할 수 있으며, 유연한 기간 및 예약 제어가 가능합니다.
+대여는 대여 업종의 일정 관리에 맞춰 만들어졌어요. 할 수 있는 일은 다음과 같아요.
 
-- 
-#### 리스팅(Listings) 및 카테고리: [(도움말 가이드)](rentals-listings-categories.md) 상세 정보, 정리된 카테고리, 상태 관리를 포함한 렌탈 리스팅을 생성합니다.
+- 여러 날에 걸친 예약: 시간, 일, 주, 월 단위로 자산을 예약받을 수 있어요. 이용 기간과 예약 조건도 유연하게 정할 수 있어요.
+- 리스팅과 카테고리: 대여 상품의 상세 정보를 담은 리스팅을 만들고, 카테고리와 상태로 정리할 수 있어요.
+- 재고와 변형: 수량 추적을 켜서 여러 개의 재고를 관리하고, 같은 리스팅의 다른 버전을 변형으로 정의할 수 있어요.
+- 고급 가격 및 할인: 시즌, 요일, 시간대, 이용 기간, 수량별로 가격 규칙을 정할 수 있어요. 장기 예약이나 대량 예약에는 할인이 자동으로 적용돼요.
+- **캘린더 보기**: 필터를 쓸 수 있는 캘린더에서 모든 예약을 일·주·월 단위로 볼 수 있어요. 겹치는 예약, 막아 둔 시간, 실시간 가용 일정도 확인할 수 있어요.
+- 외부 캘린더 동기화: 캘린더 동기화로 외부 플랫폼과 예약을 연결해 가용 일정이 플랫폼마다 같게 유지돼요.
+- 통합 **글로벌 설정**: 영업시간, 예약 기본값, 결제 환경설정, 안내 메시지 템플릿을 한 곳에서 관리해요.
+- 기본 제공 결제와 인보이스: 예약 과정에서 바로 결제를 받을 수 있고, 확정된 예약마다 인보이스가 자동으로 만들어져요. 비즈니스에 맞게 보증금도 설정할 수 있어요.
+- 고객 예약 페이지: 리스팅, 카테고리, 가격, 가용 일정을 실시간으로 보여 주는 공개 예약 페이지를 고객에게 제공할 수 있어요.
 
-- 
-#### 재고 및 옵션(Variants): [(도움말 가이드)](rentals-create-edit-listings.md) 여러 단위에 대한 수량 추적을 활성화하고, 동일 리스팅의 다양한 버전에 대한 옵션(Variant)을 정의합니다.
+## 서브 계정 하나에서 대여 켜고 끄기
 
-- 
-#### 고급 가격 및 할인: [(도움말 가이드)](rentals-configuring-pricing-discounts.md) 시즌, 요일, 시간대, 기간, 수량에 따른 가격 규칙을 사용하세요. 장기 예약이나 대량 예약에 자동으로 할인을 적용할 수 있습니다.
+새로 만드는 서브 계정에는 대여가 기본으로 켜져 있어요. 기존 서브 계정은 아래 단계로 켜거나 끌 수 있어요.
 
-- 
-#### 캘린더 보기: [(도움말 가이드)](rentals-calendar-view.md) 일간, 주간, 월간 보기를 지원하는 최신 필터형 캘린더로 모든 예약을 시각적으로 확인하세요. 중복, 차단된 시간대, 실시간 예약 가능 여부를 파악할 수 있습니다.
+**에이전시 설정**에서 서브 계정별로 대여를 켜고 끌 수 있어요.
 
-- 
-#### 외부 캘린더 동기화: 캘린더 동기화(Calendar Sync)를 사용하여 서드파티 플랫폼과 예약 정보를 연결하고 동기화함으로써, 모든 플랫폼에서 예약 가능 여부를 일관되게 유지할 수 있습니다.
+### 1단계. 서브 계정으로 이동하기
 
-- 
-#### 중앙 집중식 전역 설정: [(도움말 가이드)](rentals-global-settings.md) 영업 시간, 예약 기본값, 결제 환경설정, 커뮤니케이션 템플릿을 한 곳에서 관리하세요.
+1. **에이전시 대시보드** 왼쪽 메뉴에서 **서브 계정** 탭을 선택하세요.
 
-- 
-#### 내장 결제 및 인보이스(청구서) 기능: 예약 과정에서 바로 결제를 수집하고, 확정된 예약마다 자동으로 인보이스(청구서)를 생성합니다. 비즈니스에 맞게 보증금도 설정할 수 있어요.
+![에이전시 대시보드 왼쪽 메뉴의 서브 계정 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066059135/original/LIF6t_S9WvKgWm9z4B7onsUBwU6DQg6CGw.jpeg?1772524420)
 
-- 
-#### 고객 예약 페이지: 리스팅, 카테고리, 가격, 실시간 예약 가능 여부를 표시하는 전용 고객 대면 예약 페이지로 매끄러운 예약 경험을 제공하세요.
+### 2단계. 고객 관리 열기
 
-## 단일 하위 계정(Sub-Account)에서 렌탈을 활성화/비활성화하는 방법은?
+1. 검색창을 쓰거나 스크롤해서 대여를 켜려는 서브 계정을 찾으세요.
+2. 서브 계정 카드 오른쪽 아래에 있는 점 세 개(⋮) 아이콘을 클릭하세요.
+3. **고객 관리**를 선택하세요.
 
-렌탈은 모든 신규 로케이션(Location)에 기본적으로 활성화되어 있습니다. 하지만 특정 로케이션에서 활성화/비활성화하려면 아래 단계를 따라주세요.
+### 3단계. 대여 켜기 (서브 계정 하나)
 
-에이전시 설정(Agency Settings)에서 직접 하위 계정의 렌탈을 활성화/비활성화할 수 있습니다. 단일 하위 계정에서 렌탈을 활성화/비활성화하려면 다음 단계를 따라주세요!
+1. 상단 메뉴에서 **캘린더 설정**을 선택하세요.
+2. **대여** 토글을 켜세요.
+3. 파란색 **저장** 버튼을 클릭해 변경 사항을 저장하세요.
 
-#### 1단계: 하위 계정(Sub-Accounts)으로 이동
+![캘린더 설정에서 대여 토글을 켜는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155073934447/original/4dRLXK1IOp4P9nwUOtN8soqPZxqjQUnndw.png?1781762999)
 
-- 에이전시 대시보드에서 좌측 네비게이션 바의 하위 계정(Sub-Accounts) 탭을 선택하세요
+## 여러 서브 계정에서 대여 관리하기
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066059135/original/LIF6t_S9WvKgWm9z4B7onsUBwU6DQg6CGw.jpeg?1772524420)
+**에이전시 설정**에서 여러 서브 계정의 대여를 한 번에 켤 수 있어요.
 
-#### 
+### 1단계. 서브 계정으로 이동하기
 
-#### 2단계: 클라이언트 관리(Manage Client)로 이동
+1. **에이전시 대시보드** 왼쪽 메뉴에서 **서브 계정** 탭을 선택하세요.
 
-- 검색창을 사용하거나 스크롤하여 렌탈을 활성화할 하위 계정을 찾으세요
+![에이전시 대시보드 왼쪽 메뉴의 서브 계정 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066059136/original/eQrOEdhRotlj_Qh9JEUVUKZWxWl_cU62Lg.jpeg?1772524420)
 
-- 하위 계정 패널 우측 하단의 점 세 개(⋮) 아이콘을 클릭하세요
+### 2단계. 캘린더 설정 열기
 
-- 클라이언트 관리(Manage Client) 옵션을 선택하세요
+1. 대여를 켜려는 서브 계정을 체크박스로 선택하세요.
+2. 서브 계정을 선택하면 오른쪽 위에 나타나는 **일괄 작업**을 클릭하세요.
+3. 드롭다운 메뉴에서 **캘린더 설정**을 선택하세요.
 
-#### 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066059137/original/3yPnvna8hxOV2RJsGLA9odPGiHq7_K6yvw.jpeg?1772524420)
+![일괄 작업 드롭다운에서 캘린더 설정을 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066059139/original/DtaDFABwNTB99jODyi3on53c21Jqin-Z1g.jpeg?1772524422)
 
-#### 3단계: 렌탈 활성화(단일 하위 계정)
+### 3단계. 대여 켜기 (여러 서브 계정)
 
-- 상단 네비게이션 바에서 캘린더 설정(Calendar Settings)을 선택하세요
+1. **대여** 토글을 켜세요.
+2. 입력란에 CONFIRM을 입력하고, 파란색 **저장** 버튼을 클릭해 변경 사항을 저장하세요.
 
-- 토글을 사용해서 렌탈을 켜세요(Turn On Rentals)
+![대여 토글을 켜고 CONFIRM을 입력하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155073934849/original/25FX3swjZQMGa_U5xWaE_w3D9qf-iWFY5g.png?1781763257)
 
-- 파란색 저장(Save) 버튼을 클릭해서 변경 사항을 저장하세요
+## 출시 예정 기능
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155073934447/original/4dRLXK1IOp4P9nwUOtN8soqPZxqjQUnndw.png?1781762999)
+대여는 계속 개선되고 있어요. 앞으로 추가될 기능은 다음과 같아요.
 
----
-
-## 여러 하위 계정(Sub-Accounts)에서 렌탈을 관리하는 방법은?
-
-에이전시 설정(Agency Settings)에서 직접 하위 계정의 렌탈을 활성화/비활성화할 수 있습니다. 여러 하위 계정에서 한 번에 렌탈을 활성화하려면 다음 단계를 따라주세요!
-
-#### 1단계: 하위 계정(Sub-Accounts)으로 이동
-
-- 에이전시 대시보드에서 좌측 네비게이션 바의 하위 계정(Sub-Accounts) 탭을 선택하세요
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066059136/original/eQrOEdhRotlj_Qh9JEUVUKZWxWl_cU62Lg.jpeg?1772524420)
-
-#### 2단계: 캘린더 설정(Setup Calendars) 열기
-
-- 체크박스를 사용하여 렌탈을 활성화할 하위 계정을 선택하세요
-
-- 하위 계정을 선택한 후, 우측 상단의 일괄 작업(Bulk Actions)을 클릭하세요
-
-- 드롭다운 메뉴에서 캘린더 설정(Setup Calendars)을 선택하세요
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066059139/original/DtaDFABwNTB99jODyi3on53c21Jqin-Z1g.jpeg?1772524422)
-
-#### 3단계: 렌탈 활성화(여러 하위 계정)
-
-- 토글을 사용해서 렌탈을 켜세요(Turn On Rentals)
-
-- CONFIRM을 입력한 후 파란색 저장(Save) 버튼을 클릭해서 변경 사항을 저장하세요
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155073934849/original/25FX3swjZQMGa_U5xWaE_w3D9qf-iWFY5g.png?1781763257)
-
----
-
-## 다음 문서: [렌탈 캘린더 - 개요 및 시작 방법](rentals-overview-how-to-get-started.md)
-
-## **출시 예정 기능**
-
-렌탈을 지속적으로 개선하고 있어요. 앞으로 추가될 기능을 미리 살짝 보여드릴게요:
-
-- 모바일 앱 지원(모바일 앱에서 렌탈 예약 생성 및 조회)
-- **대화 AI(Conversation AI)** 및 **음성 AI(Voice AI)** 지원
+- **모바일 앱** 지원: 모바일 앱에서 대여 예약을 만들고 확인
+- **대화 AI**와 **음성 AI** 지원
 - 애드온 및 추가 요금
-- **취소 링크(Cancellation links)**
-- 예약 관련 감사 로그(Audit logs)
+- 취소 링크
+- 예약 감사 로그
 
-## **피드백 제공 방법**
+## 피드백 보내기
 
-정식 출시 전에 렌탈을 개선하는 데 있어 여러분의 피드백이 매우 중요합니다. 다음 방법으로 의견을 공유해주세요:
+정식 출시 전에 대여를 개선하는 데 여러분의 피드백이 꼭 필요해요. 의견이나 제안, 아이디어가 있으면 하이퍼클래스 고객지원에 문의하세요.
 
-- 
-#### [Canny 게시판](https://highlevel.canny.io/scheduling-calendar)에 피드백/제안/아이디어를 남겨주세요
+## 자주 묻는 질문
 
+### 서브 계정에서 대여가 켜져 있는지 어떻게 확인하나요?
 
-- 
-#### 피드백 콜 예약: [이 예약 링크](http://speakwith.us/mayankjain)를 사용하여 원하는 시간을 예약하세요.
+**캘린더 > 캘린더 설정**으로 이동하세요. **대여** 탭이 보이면 켜져 있는 거예요.
 
-- 
-**이메일로 문의하기** — 아래 이메일로 직접 연락 주세요:
+### 베타 기간에 쓰던 데이터는 정식 출시 후에도 그대로 유지되나요?
 
-[mayank.jain@gohighlevel.com](mailto:mayank.jain@gohighlevel.com)
+네. 베타 기간에 만든 데이터는 대여가 베타를 벗어난 뒤에도 그대로 쓸 수 있어요.
 
-- 
-[swadha.bhoj@gohighlevel.com](mailto:swadha.bhoj@gohighlevel.com)
-
-- 
-#### 페이스북으로 연락하기 소셜 미디어로 대화하는 걸 선호하신다면, 페이스북 프로필로 연락 주세요:
-[Mayank Jain](https://www.facebook.com/mayank2511) – PM, Calendars
-
-- 
-[Swadha Bhoj](https://www.facebook.com/swadha.highlevel) – PM, Calendars
-
-## 자주 묻는 질문(FAQ)
-
-**Q: 특정 로케이션에 렌탈이 활성화되어 있는지 확인하려면 어떻게 하나요?**
-A: 캘린더(Calendars) → 캘린더 설정(Calendar Settings)으로 이동해서 **렌탈(Rentals)** 탭이 보이는지 확인하세요.
-
-**Q: 베타에 참여했었는데, 데이터가 정식 출시 버전으로 이전되나요?**
-A: 네. 베타 기간 중 생성된 모든 데이터는 렌탈이 베타에서 벗어난 후에도 계속 사용할 수 있어요.
-
-렌탈의 미래를 함께 만들어가는 데 참여해주셔서 정말 기쁩니다! 정식 출시 전 경험을 다듬는 데 있어 여러분의 참여와 피드백은 매우 소중합니다.
-
----
-*원문 최종 수정: 2026-06-30*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+대여의 앞으로를 함께 만들어 주셔서 감사해요. 정식 출시 전에 더 나은 경험을 만들 수 있도록 여러분의 참여와 피드백이 큰 도움이 돼요.

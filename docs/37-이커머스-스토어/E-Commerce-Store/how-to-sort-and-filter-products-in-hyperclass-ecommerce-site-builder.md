@@ -1,150 +1,70 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 이커머스 스토어
+원문: /support/solutions/articles/155000003046-how-to-sort-and-filter-products-in-ecommerce-stores
+번역일: 2026-11-07
+카테고리: 37-이커머스-스토어
 ---
 
-# 하이퍼클래스 이커머스 사이트 빌더에서 상품 정렬 및 필터링하는 방법
+# 이커머스 스토어에서 상품 정렬과 필터 설정하기
 
-상품 목록 페이지에서 상품을 정렬하는 것은 항상 문제였습니다. 구매자들은 원하는 상품을 찾기 어려웠고, 스토어 운영자에게는 이것이 걸림돌이었죠. 이런 문제를 해결하기 위해 이제 스토어 운영자가 상품 목록 페이지에 정렬과 필터 옵션을 추가할 수 있게 되었습니다.
+고객은 상품 목록 페이지에서 상품을 정렬하고, 조건에 맞는 상품만 좁혀 볼 수 있어요. 데스크톱에서는 정렬·필터가 보이는 방식을 직접 고르고, 작은 화면에서는 모바일에 맞춘 화면이 자동으로 보여요. 하이퍼클래스에서 설정하는 방법을 알려 드려요.
 
----
+## 상품 목록의 정렬과 필터 설정
 
-## 모바일 상품 목록 페이지(PLP)
+이커머스 스토어에서 고객이 상품을 정렬하고 필터링하는 방식은 상품 목록 설정으로 정해요. 정렬과 필터는 **Product List**(상품 목록) 요소에서 쓸 수 있어요.
 
-모바일 쇼핑객들은 작은 화면에서 방대한 상품 카탈로그를 빠르게 검색할 방법이 필요합니다. 상품 목록 페이지(PLP)에 이제 터치에 최적화된 정렬 및 필터 컨트롤과 동적 상품 수 표시, 그리고 빌더에서 직접 스타일링할 수 있는 기능이 추가되어 브랜드에 맞게 꾸밀 수 있습니다.
-
-### 모바일 정렬 (하단 시트)
-
-모바일에서 PLP 상단 바에 전용 정렬(Sort) 버튼이 나타납니다. 이를 탭하면 일반적인 정렬 옵션들이 담긴 하단 시트 모달이 열립니다.
-
-**사용 가능한 옵션**
-
-- 날짜 (오래된 순 → 최신순, 최신순 → 오래된 순)
-- 가나다순 (ㄱ–ㅎ, ㅎ–ㄱ)
-- 가격 (낮은 가격 → 높은 가격, 높은 가격 → 낮은 가격)
-
-**팁**
-
-- 정렬 시트 바깥쪽을 탭하거나 아래로 스와이프하면 닫힙니다.
-- 위젯에서 기본 정렬 옵션을 설정하여 첫 로딩 시 정렬 순서를 지정할 수 있습니다.
-
-상품 목록 페이지(PLP)의 상품 제목은 기존의 말줄임표(...) 동작을 계속 따릅니다. 전체 제목 줄바꿈은 다른 대부분의 스토어 페이지에 적용되지만 PLP에는 적용되지 않습니다.
-
-![정렬 옵션 UI](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064233342/original/VdKH24p4aox0vHMDZa6bdbbwAf3D3rFD3g.png?1770278659)
+1. **Store Builder**(스토어 빌더)에서 **Product List Page**(상품 목록 페이지)를 엽니다.
+2. **Product List** 요소를 선택합니다.
+3. **Sort & filter options**(정렬 및 필터 옵션)를 엽니다.
+4. 필요에 따라 정렬이나 필터를 켭니다.
+5. 레이아웃을 고르고 세부 설정을 바꿉니다.
+6. 변경한 내용을 **저장**한 다음 **게시**합니다.
 
 ---
 
-## 모바일 필터 (전체 화면 모달)
+## 레이아웃 옵션
 
-필터링은 쇼핑객이 관련 상품만 볼 수 있게 도와줍니다. 모바일에서는 필터가 **전체 화면** 모달로 열리며, 쉬운 조작을 위해 하단에 고정 버튼이 있습니다.
+정렬이나 필터를 켜면 데스크톱에서 **Horizontal**(가로)과 **Vertical**(세로) 중 원하는 레이아웃을 고를 수 있어요.
 
-**필터 유형**
+- **Horizontal** 레이아웃은 상품 목록 페이지 가로로 정렬·필터 컨트롤을 보여 줘요. 기존 상품 목록의 기본 레이아웃이라서, 이미 만든 스토어는 자동으로 바뀌지 않아요.
+- **Vertical** 레이아웃은 상품 목록 옆에 필터를 보여 줘요. 고객이 상품을 둘러보면서 필터를 함께 볼 수 있어요. **적용된 필터**도 표시되어 현재 선택한 조건을 쉽게 확인할 수 있어요.
 
-- 재고 상태: 재고 있음 / 품절
+이 레이아웃 옵션은 **데스크톱 전용**이에요. 태블릿과 모바일에서는 전체 화면 필터 창이 열려요.
 
-![재고 필터 UI](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064233595/original/49CXWnYA0OkSjj4uSentVrR-INxyiE2gcA.jpeg?1770278874)
+{% hint style="info" %}
+**Horizontal**과 **Vertical**을 전환해도 기존 필터 설정은 지워지지 않아요.
+{% endhint %}
 
-- 가격 범위: 최소 가격과 최대 가격 숫자 입력
-
-![가격 범위 필터 UI](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064233666/original/0pBW_fLvRxGyLH_RAggT4WytZsjlfttujA.jpeg?1770278937)
-
-**동작 방식**
-
-- 적용(Apply) 버튼은 결과를 즉시 업데이트하고, 필터 초기화(Clear Filters) 버튼은 선택 사항을 리셋합니다.
-- 필터(Filters) 버튼에는 활성 필터 개수가 뱃지로 표시됩니다.
-
-![필터 뱃지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064233677/original/WXtTLxx5J6ZU_UZBVSHo6xNiNPhAketTwQ.png?1770278960)
-
-재고 상태 기본값(둘 다 선택됨)과 가격 유효성 검사 동작은 스토어 설정을 따릅니다. 재고 규칙을 커스터마이징한 경우, 조건에 맞는 상품만 표시됩니다.
+![레이아웃 전환 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155082232341/original/iLQpojkD3aoQzE1LsBOzmqJVFH06ALcoRw.gif?1790784050)
 
 ---
 
-## 상품 수 및 결과 업데이트
+## 정렬 옵션
 
-PLP 상단에 현재 상품 수가 표시되며, 필터를 적용하거나 초기화할 때마다 동적으로 업데이트되어 쇼핑객이 탐색하는 동안 맥락을 파악할 수 있습니다.
+정렬을 켜면 고객이 상품이 보이는 순서를 바꿀 수 있어요.
 
-![상품 수 표시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064233814/original/3OTXRPPjV_rWUi97IVGke1VfiEWVWniFAw.png?1770279039)
+정렬 기준은 추천 날짜, 알파벳순, 가격이고, 각각 오름차순과 내림차순을 고를 수 있어요. 드롭다운에서 기본 정렬 옵션을 정하세요.
 
----
+모바일에서는 고객이 **정렬**을 눌러 정렬 옵션을 확인해요. 옵션은 화면 아래에서 올라오는 창에 표시돼요.
 
-## 빌더 미리보기 및 스타일링
-
-빌더의 모바일 디바이스 프레임에서 정확한 모바일 인터랙션을 미리보고, 위젯 패널에서 컨트롤을 스타일링할 수 있습니다.
-
-**커스터마이징 가능한 항목**
-
-- 정렬/필터 바 배경 색상
-- 정렬 및 필터 버튼의 텍스트 색상
-- 적용 및 필터 초기화 버튼 스타일
-
-![스타일링 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064234051/original/K2nzR6I0Yt1zGIZWx_nknqehKZiXybYrlA.png?1770279159)
+![정렬 옵션 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155082232139/original/hV3vLGnricz8iHTmx8_5sJxenGTI14slPg.png?1790783927)
 
 ---
 
-## 사용 방법
+## 필터 옵션
 
-- 상품 목록 페이지로 이동하여 상품 목록 요소를 선택합니다. 이제 정렬과 필터링을 활성화하는 2개의 토글이 있습니다. 이를 활성화하면 상품 목록 페이지에 정렬 및 필터 요소가 추가됩니다. 스토어에 방대한 카탈로그가 있다면, 상품 목록 페이지에서 페이지당 표시할 상품 수를 늘려 페이지네이션을 줄일 수 있습니다.
+필터를 켜면 고객이 상품 목록 페이지에 보이는 상품을 조건에 맞게 좁혀 볼 수 있어요.
 
-![정렬 및 필터 토글](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064993331/original/4QSoYtZjvSndKsHjIcTuRe7Xcj-N0GfqUw.png?1771240152)
+- **가용성**: 고객이 **In stock**(재고 있음) 또는 **품절** 상품만 골라 볼 수 있어요. 기본값은 두 옵션이 모두 선택된 상태라서, 고객이 더 구체적인 필터를 적용하기 전까지는 모든 상품이 보여요.
+- **가격**: 가격 범위로 상품을 좁혀요. 최솟값과 최댓값은 목록에 있는 상품을 기준으로 정해지고, 상품이 바뀌면 함께 업데이트돼요.
 
-- 정렬과 필터의 속성을 설정합니다. 설정할 수 있는 속성은 다음과 같습니다:
-  - 정렬 및 필터 텍스트 색상
-  - 정렬 및 필터 필(pill) 색상
-  - 리셋 버튼 색상
+모바일에서는 필터가 전체 화면 필터 창으로 열려요. 고객은 여기서 조건을 바꾸고 필터를 적용하거나 해제할 수 있어요.
 
-3. 저장/발행을 클릭하여 사이트에서 변경사항을 확인하세요!
-
-**주요 특징:**
-
-- 정렬 및 필터 옵션은 상품 목록 페이지에서만 사용 가능합니다
-- 기본 정렬 순서는 날짜 - 오래된 순부터 입니다
-- 기본적으로 필터 없이 모든 상품이 표시됩니다
-
-**이미지:**
-
-**스토어에 정렬 및 필터 추가하기**
-
-![정렬 및 필터 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155030617789/original/6TvXnM5zwPcecGebZeNh6QPuyphMBopHig.jpeg?1723045208)
-
-**정렬 및 필터 속성 설정**
-
-![속성 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155030617787/original/TtaI8t89Sxi5WO0djkiQgXU3QcOhxP4jjw.jpeg?1723045208)
-
-**상품 목록 페이지의 필터 옵션 미리보기**
-
-![필터 미리보기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155030617788/original/fuZR-olgtxgAH8o1XylW50CNAY9mB4Lv4Q.jpeg?1723045208)
-
-**상품에 필터 적용하기**
-
-![필터 적용](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155030617786/original/gt8RM08fQXs3WNsaM_Qb38WNcS8G23yW9A.jpeg?1723045208)
-
-**상품 목록 페이지의 정렬 옵션 미리보기**
-
-![정렬 미리보기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064232974/original/WI9WEkqtfzQE2BrpUC6Mm9P4qul__axeNg.jpeg?1770278415)
+![필터 옵션 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155082234129/original/Hv-5-OL-trXtrjVx0r9LOIpNuaz3Ar3vgg.png?1790785105)
 
 ---
 
-## 자주 묻는 질문
+## 색상과 텍스트 꾸미기
 
-**Q1: 모바일 정렬 및 필터링은 어디서 활성화하나요?**
-상품 목록 위젯 → 일반 탭 → "정렬 활성화" 및 "필터링 활성화" 토글을 켜면 됩니다.
+정렬·필터 컨트롤의 모양을 스토어 분위기에 맞게 바꿀 수 있어요. 스타일은 **Horizontal**과 **Vertical** 레이아웃마다 따로 저장돼요. 한 레이아웃에서 바꾼 내용이 다른 레이아웃에 자동으로 적용되지는 않아요.
 
-**Q2: 쇼핑객이 모바일에서 정렬 순서를 변경할 수 있나요?**
-네. 정렬을 탭하면 날짜, 가나다순, 가격 옵션(각각 두 가지 방향)이 있는 하단 시트가 열립니다.
-
-**Q3: 모바일에서 어떤 필터를 사용할 수 있나요?**
-재고 상태(재고 있음 / 품절)와 가격 범위(최소/최대)를 사용할 수 있습니다. 필터 모달은 전체 화면으로 열리며 하단에 적용/초기화 버튼이 고정됩니다.
-
-**Q4: 재고 상태 옵션이 기본적으로 선택되어 있나요?**
-기본적으로 둘 다 선택되어 있어서 쇼핑객이 세부 조건을 설정하기 전까지는 모든 상품을 볼 수 있습니다. (스토어 테마에서 기본값을 오버라이드한 경우 스토어 설정을 따릅니다.)
-
-**Q5: PLP에서 조건에 맞는 상품이 몇 개인지 표시하나요?**
-네. 상단에 상품 수가 표시되며 필터가 변경될 때마다 동적으로 업데이트됩니다.
-
-**Q6: 필터 버튼의 뱃지는 무엇을 의미하나요?**
-현재 활성화된 필터 기준이 몇 개인지를 보여줍니다.
-
----
-*원문 최종 수정: 2026년 3월 19일*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+![색상과 텍스트 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155082234708/original/sVlGBmFX_n8eP26BSocFh_PRSZ2pYx06fQ.png?1790785458)

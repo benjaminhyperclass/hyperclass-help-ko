@@ -1,235 +1,221 @@
 ---
-번역일: 2026-04-08T00:00:00.000Z
-카테고리: 13-AI-Employee > Agent-Studio
+원문: /support/solutions/articles/155000007432-how-to-use-custom-values-and-variables-in-agent-studio
+번역일: 2026-11-06
+카테고리: 13-AI-Employee
 ---
 
 # 에이전트 스튜디오에서 커스텀 값과 변수 사용하기
 
-## 에이전트 스튜디오에서 커스텀 값과 변수 사용하기
+**에이전트 스튜디오**(Agent Studio)에서 커스텀 값과 기본 제공 변수를 쓰면 워크플로우를 상황에 맞게 바뀌고, 다시 쓰고, 넓혀 갈 수 있어요. 회사 정보나 연락처 정보를 노드마다 직접 입력하는 대신 자리표시자를 넣어 두면, 에이전트가 실행될 때 실제 데이터로 채워져요.
 
-커스텀 값(Custom Values)과 내장 변수 소스를 사용하여 에이전트 스튜디오 워크플로우를 동적이고 재사용 가능하며 확장 가능하게 만드세요. 모든 노드에 비즈니스 세부사항이나 연락처 정보를 수동으로 입력하는 대신, 에이전트가 실행될 때 실제 데이터를 자동으로 가져오는 스마트 플레이스홀더를 삽입할 수 있습니다.
-
-이 가이드는 계정 세부정보, 연락처 데이터, 실시간 날짜와 시간, 폼 제출 데이터, 커스텀 값을 중복이나 수동 업데이트 없이 에이전트 내에서 사용하는 방법을 설명합니다.
-
-***
-
-**목차**
-
-* [커스텀 값과 변수란?](how-to-use-custom-values-and-variables-in-agent-studio.md#커스텀-값과-변수란)
-* [에이전트 스튜디오에서 변수 사용의 주요 이점](how-to-use-custom-values-and-variables-in-agent-studio.md#에이전트-스튜디오에서-변수-사용의-주요-이점)
-* [커스텀 값](how-to-use-custom-values-and-variables-in-agent-studio.md#커스텀-값)
-* [계정 변수](how-to-use-custom-values-and-variables-in-agent-studio.md#계정-변수)
-* [실시간 변수](how-to-use-custom-values-and-variables-in-agent-studio.md#실시간-변수)
-* [폼 데이터 변수](how-to-use-custom-values-and-variables-in-agent-studio.md#폼-데이터-변수)
-* [연락처 변수](how-to-use-custom-values-and-variables-in-agent-studio.md#연락처-변수)
-* [연락처 vs 런타임 변수](how-to-use-custom-values-and-variables-in-agent-studio.md#연락처-vs-런타임-변수)
-* [커스텀 값과 변수 설정 방법](how-to-use-custom-values-and-variables-in-agent-studio.md#커스텀-값과-변수-설정-방법)
-* [자주 묻는 질문](how-to-use-custom-values-and-variables-in-agent-studio.md#자주-묻는-질문)
-
-***
+이 문서에서는 계정 정보, 연락처 데이터, 실시간 날짜와 시간, 폼 제출 내용, 커스텀 값을 에이전트에서 쓰는 방법을 안내해요. 같은 내용을 반복해 입력하거나 일일이 고칠 필요가 없어요.
 
 ## 커스텀 값과 변수란?
 
-커스텀 값과 변수를 사용하면 에이전트에 실제 정보를 자동으로 삽입할 수 있습니다. 변수는 \{{contact.first\_name\}}처럼 이중 중괄호 안에 작성된 플레이스홀더로, 에이전트가 실행될 때 실제 데이터로 교체됩니다.
+커스텀 값과 변수를 쓰면 실제 정보를 에이전트에 자동으로 넣을 수 있어요. 변수는 `{{contact.first_name}}`처럼 이중 중괄호 안에 쓴 자리표시자예요. 에이전트가 실행되면 실제 데이터로 바뀌어요.
+
+예를 들어 이렇게 쓰면:
+
+Hi {{contact.first_name}}
+
+연락처 이름이 John일 때 메시지는 "Hi John"이 돼요.
+
+에이전트 스튜디오에서 텍스트를 입력하는 곳이라면 어디서든 변수를 쓸 수 있어요. AI 에이전트 프롬프트, **텍스트 생성** 노드, 도구 입력란, 메시지 카드, 조건 로직 필드가 모두 해당돼요. 텍스트 필드의 드롭다운 화살표를 눌러 변수를 넣거나, `{{ }}`를 직접 입력하면 돼요.
+
+에이전트 스튜디오에는 기본 변수 범주가 다섯 가지 있어요.
+
+- **Account**(계정)
+- **커스텀 값**
+- **Right Now**(현재 시점)
+- **Form Data**(폼 데이터)
+- **연락처**
+
+범주마다 시스템의 서로 다른 곳에서 정보를 가져와요.
+
+---
+
+## 에이전트 스튜디오에서 변수를 쓰면 좋은 점
+
+변수를 쓰면 상황에 맞게 바뀌고 다시 쓸 수 있는 에이전트를 만들 수 있어요.
+
+- 한 번 만들어 어디서나 사용: 에이전트 템플릿 하나로 여러 로케이션에서 자동으로 쓸 수 있어요.
+- 수동 업데이트 불필요: 전화번호나 주소가 바뀌면 쓰고 있는 모든 곳에 바로 반영돼요.
+- 자동 개인화: 연락처 이름과 CRM 데이터를 별도 작업 없이 대화에 넣을 수 있어요.
+- 실시간 인식: 오늘 날짜나 현재 시간을 자동으로 넣을 수 있어요.
+- 안전한 실행: 변수에 값이 없으면 에이전트가 멈추지 않고 빈 값을 돌려줘요.
+
+---
+
+## 커스텀 값
+
+커스텀 값은 직접 정의해 두고 다시 쓰는 키-값 쌍이에요. 아래 메뉴에서 만들어요.
+
+**설정 > 커스텀 값**
+
+한 번 만들어 두면 어디서든 쓸 수 있어요.
 
 예시:
 
-**안녕하세요 \{{contact.first\_name\}}님**
+- **키**: `support_email`
+- **값**: `support@yourcompany.com`
 
-연락처의 이름이 김철수라면 메시지는 다음과 같이 됩니다: **안녕하세요 김철수님**.
+에이전트 안에서는 이렇게 써요.
 
-에이전트 스튜디오 내에서 텍스트를 입력하는 모든 곳에서 변수를 사용할 수 있습니다. AI 에이전트 프롬프트, 텍스트 생성 노드, 도구 입력, 메시지 카드, 조건부 로직 필드 등이 포함됩니다. 텍스트 필드의 드롭다운 화살표를 클릭하여 변수를 삽입하거나 \{{ \}}를 사용하여 수동으로 입력할 수 있습니다.
+For help, email {{custom_values.support_email}}
 
-에이전트 스튜디오에는 5가지 내장 변수 카테고리가 있습니다:
+나중에 값을 바꾸면 이 변수를 쓰는 모든 곳에 자동으로 반영돼요.
 
-* Account(계정)
-* Custom Values(커스텀 값)
-* Right Now(실시간)
-* Form Data(폼 데이터)
-* Contact(연락처)
+---
 
-각 카테고리는 시스템의 다른 부분에서 정보를 가져옵니다.
+### AI Agent 액션에서 커스텀 값 업데이트하기
 
-***
+워크플로우에서 **AI Agent**(AI 에이전트) 액션을 쓰면 **Update Custom Value**(커스텀 값 업데이트) 도구로 커스텀 값을 바로 바꿀 수 있어요. 정해진 워크플로우 분기에만 의존하지 않고, 에이전트가 실행 중에 상황에 맞는 값을 기록할 수 있어요.
 
-### **에이전트 스튜디오에서 변수 사용의 주요 이점**
+자세한 설정 방법은 AI Agent 워크플로우 액션 문서를 참고하세요.
 
-변수를 사용하면 동적이고 재사용 가능한 에이전트를 구축할 수 있습니다.
+---
 
-* 한 번 구축하여 어디서나 사용: 하나의 에이전트 템플릿이 여러 로케이션에서 자동으로 작동합니다.
-* 수동 업데이트 불필요: 전화번호나 주소가 변경되면 모든 곳에서 즉시 업데이트됩니다.
-* 자동 개인화: 추가 작업 없이 대화에 연락처 이름과 CRM 데이터를 가져옵니다.
-* 실시간 인식: 오늘 날짜나 현재 시간을 자동으로 삽입합니다.
-* 안전한 실행: 변수에 값이 없으면 에이전트를 중단하는 대신 공백으로 반환됩니다.
+## Account 변수
 
-***
+Account 변수는 서브 계정 설정에 있는 회사 정보를 가져와요.
 
-### **커스텀 값**
+에이전트가 아래 정보를 말해야 할 때 써요.
 
-커스텀 값은 다음에서 정의하는 재사용 가능한 키-값 쌍입니다:
+- 회사명
+- 전화번호
+- 주소
+- 웹사이트
+- 로고 URL
 
-**Settings(설정) → Custom Values(커스텀 값)**
+예시: Welcome to {{account.name}}. Call us at {{account.primary_phone}}.
 
-한 번 생성하면 어디서나 사용할 수 있습니다.
+이 값은 서브 계정 설정에서 바로 가져와요.
 
-**예시:**
+---
 
-**키:** support\_email **값:** support@yourcompany.com
+## Right Now 변수
 
-**에이전트 내에서:** 도움이 필요하시면 \{{custom\_values.support\_email\}}로 이메일을 보내주세요
+Right Now 변수는 실시간 날짜와 시간 정보를 넣어 줘요.
 
-나중에 값을 업데이트하면 변수가 사용된 모든 곳에서 자동으로 업데이트됩니다.
+예를 들면 이런 값이 있어요.
 
-***
+- 오늘 날짜(전체)
+- 현재 시간
+- 요일
+- 월 또는 연도
 
-### 계정 변수
+예시: Today is {{right_now.date}}.
 
-계정 변수는 로케이션 설정에서 비즈니스 정보를 가져옵니다.
+서브 계정의 시간대에 맞는 날짜가 자동으로 들어가요.
 
-에이전트가 다음을 참조해야 할 때 사용하세요:
+---
 
-* 비즈니스 이름
-* 전화번호
-* 주소
-* 웹사이트
-* 로고 URL
+## Form Data 변수
 
-**예시:** \{{account.name\}}에 오신 것을 환영합니다. \{{account.primary\_phone\}}로 연락주세요.
+Form Data 변수는 **폼 제출** 이벤트로 에이전트가 시작될 때 쓸 수 있어요.
 
-이 값들은 로케이션 설정에서 직접 가져옵니다.
+폼의 각 필드가 변수가 돼요.
 
-***
+예시: 폼에 "service_type"이라는 필드가 있으면 이렇게 쓸 수 있어요.
 
-### **실시간 변수**
+You selected {{form.service_type}}
 
-실시간 변수는 실시간 날짜와 시간 정보를 삽입합니다.
+{% hint style="warning" %}
+중요: 폼 변수는 폼 제출로 에이전트가 시작됐을 때만 값이 채워져요.
+{% endhint %}
+
+---
+
+## 연락처 변수
+
+연락처 변수는 CRM 레코드에서 정보를 바로 가져와요. 기본 필드와 커스텀 필드를 모두 쓸 수 있어서 세밀한 개인화가 가능해요.
 
 예시:
+`{{contact.first_name}}``{{contact.last_name}}``{{contact.email}}`
+- 연락처 커스텀 필드
 
-* 오늘의 전체 날짜
-* 현재 시간
-* 요일
-* 월 또는 년
+연락처 레코드가 바뀌면 에이전트가 다음에 실행될 때 바뀐 정보를 써요.
 
-**예시:** 오늘은 \{{right\_now.date\}}입니다.
+---
 
-시스템은 로케이션의 시간대를 기반으로 올바른 날짜를 자동으로 삽입합니다.
+## 연락처 변수와 런타임 변수의 차이
 
-***
+- 연락처 변수는 CRM에 저장된 데이터를 가져와요.
+- **런타임 변수**는 현재 대화 중에 수집한 임시 정보를 저장해요.
+- 대화가 시작되기 전에 연락처 레코드에 이미 있는 정보라면 연락처 변수를 쓰세요.
+- 대화 중에 수집하는 값이라면 런타임 변수를 쓰세요.
 
-### **폼 데이터 변수**
+---
 
-폼 데이터 변수는 에이전트가 **Form Submitted(폼 제출)** 이벤트로 트리거될 때 사용할 수 있습니다.
+## 커스텀 값과 변수 설정하기
 
-각 폼 필드는 변수로 사용할 수 있습니다.
+다음 단계를 따라 변수를 쓰기 시작해 보세요.
 
-**예시:** 폼에 "service\_type"이라는 필드가 있다면 다음과 같이 사용할 수 있습니다: \{{form.service\_type\}}를 선택하셨습니다
+### 1단계: 커스텀 값 만들기
 
-**중요:** 폼 변수는 에이전트가 폼 제출로 트리거될 때만 채워집니다.
+1. **설정 > 커스텀 값**으로 이동한 뒤 **커스텀 값 추가**를 선택하세요.
+2. **Name**(이름)과 **값**을 입력하고 **만들기**를 선택하세요.
+![커스텀 값을 만드는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066195846/original/UcquCJLbh_kjtNn829WXLxBUD765leQiTA.gif?1772634838)
 
-***
+### 2단계: 에이전트 스튜디오 열기
 
-### **연락처 변수**
+**AI 에이전트 > 에이전트 스튜디오**로 이동해서 기존 에이전트를 열거나 새 에이전트를 만드세요.
 
-연락처 변수는 CRM 레코드에서 직접 정보를 가져옵니다. 표준 필드와 커스텀 필드 모두 지원하여 깊이 있는 개인화가 가능합니다.
+![에이전트 스튜디오 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155074615036/original/0R71MpiOCz7VLaOAuNOBP1jMdWsI_KVKkQ.png?1782488945)
 
-**예시:**
+### 3단계: 변수 넣기
 
-* \{{contact.first\_name\}}
-* \{{contact.last\_name\}}
-* \{{contact.email\}}
-* 커스텀 연락처 필드
+1. 프롬프트나 메시지 필드 안을 클릭하세요.
+2. 필드의 드롭다운 화살표를 누르거나 `{{`를 직접 입력하세요.
+3. 범주를 고르세요.
+   - **Account**
+   - **커스텀 값**
+   - **Right Now**
+   - **Form Data**
+   - **연락처**
+4. 넣을 변수를 클릭하세요.
 
-연락처 레코드가 업데이트되면 다음에 에이전트가 실행될 때 업데이트된 정보를 사용합니다.
+{% hint style="info" %}
+참고: API Call 단계 같은 일부 노드는 출력 결과를 바탕으로 런타임 변수를 만들어요. 이 변수는 변수 선택기에서 골라 이후 단계에서 다시 쓸 수 있어요.
+{% endhint %}
 
-***
+![변수 범주를 고르는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066197202/original/VQqhp9eIAz5W_LF314FtD0LW78jD23JeBw.png?1772635503)
 
-### 연락처 vs 런타임 변수
+### 4단계: 저장하고 테스트하기
 
-* 연락처 변수는 저장된 CRM 데이터를 가져옵니다.
-* 런타임 변수는 현재 대화 중에 수집된 임시 정보를 저장합니다.
-* 대화가 시작되기 전에 연락처 레코드에 이미 정보가 존재한다면 연락처 변수를 사용하세요.
-* 대화 중에 수집되는 값이라면 런타임 변수를 사용하세요.
+1. **저장**을 선택하세요.
+2. **테스트**를 선택하세요.
+3. 샘플 대화를 실행하세요.
+4. 변수가 제대로 채워지는지 확인하세요.
 
-***
+값이 비어 있으면 해당 데이터가 CRM이나 서브 계정 설정에 있는지 확인하세요.
 
-### **커스텀 값과 변수 설정 방법**
+![저장하고 테스트하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155074615546/original/6A9eTQdsXH4xl_J1PAmcQZwR_Sv6MLnxUA.png?1782489324)
 
-다음 단계를 따라 변수 사용을 시작하세요.
+### 5단계: 게시
 
-#### 1단계: 커스텀 값 생성
+모두 제대로 동작하면 에이전트를 Production(운영 환경)으로 올리세요.
 
-* \*\*Settings(설정) → Custom Values(커스텀 값)\*\*로 이동
-* **Add Custom Value(커스텀 값 추가)** 클릭
-* 키와 값 입력
-* **Save(저장)** 클릭
+![에이전트를 게시하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155074615652/original/_xaRKs-PSMkGjmOep9rWlMG0G58-dgIQnA.png?1782489421)
 
-![커스텀 값 생성 과정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066195846/original/UcquCJLbh_kjtNn829WXLxBUD765leQiTA.gif?1772634838)
+---
 
-#### **2단계: 에이전트 스튜디오 열기**
+## 자주 묻는 질문
 
-* \*\*AI Agents(AI 에이전트) → Agent Studio(에이전트 스튜디오)\*\*로 이동
-* 기존 에이전트를 열거나 새로 생성
+### 커스텀 값을 삭제하면 어떻게 되나요?
+오류가 나지 않고 빈 값이 돌아와요.
 
-![에이전트 스튜디오 열기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066195961/original/6Q9_iM4uoiCl-xbPRENoIWMs6iBGa9F6pQ.png?1772634894)
+### 기회나 작업 필드도 참조할 수 있나요?
+현재 지원하는 소스는 Account, 커스텀 값, Right Now, Form Data, 연락처예요.
 
-#### **3단계: 변수 삽입**
+### 변수에 값이 없으면 어떻게 되나요?
+변수가 없거나 비어 있으면 시스템이 빈 값을 돌려줘요. 오류가 나거나 에이전트 실행이 멈추지 않아요. 그래서 안전하고 안정적으로 실행돼요.
 
-* 프롬프트나 메시지 필드 안을 클릭
-* 필드의 드롭다운 화살표 클릭 또는 \{{를 수동으로 입력
-* 카테고리 선택:
-  * Account(계정)
-  * Custom Values(커스텀 값)
-  * Right Now(실시간)
-  * Form Data(폼 데이터)
-  * Contact(연락처)
-* 변수를 클릭하여 삽입
+### Right Now 변수는 시간대를 반영하나요?
+네. 서브 계정의 시간대를 사용해요.
 
-![변수 삽입 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066196827/original/ArejnkNFCsmPfC-hrhaWzg9fZJRtn2kK6g.png?1772635327)
+### Form Data 변수는 어디서나 쓸 수 있나요?
+**폼 제출** 이벤트로 시작됐을 때만 값이 채워져요.
 
-![변수 삽입 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066197202/original/VQqhp9eIAz5W_LF314FtD0LW78jD23JeBw.png?1772635503)
-
-#### **4단계: 저장 및 테스트**
-
-* **Save(저장)** 클릭
-* **Test(테스트)** 클릭
-* 샘플 대화 실행
-* 변수가 올바르게 해결되는지 확인
-
-값이 공백으로 나타나면 CRM이나 로케이션 설정에 해당 데이터가 존재하는지 확인하세요.
-
-![저장 및 테스트](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066197432/original/KdPrTrYGBxPWiMmIep4m85sHuAzBW4q0OA.png?1772635632)
-
-#### **5단계: 발행**
-
-모든 것이 올바르게 작동하면 에이전트를 프로덕션으로 승급시키세요.
-
-![에이전트 발행](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066197575/original/8nM_gF_XQQU9MzeYYeu--GbY4pUsxGqYtg.png?1772635693)
-
-***
-
-### 자주 묻는 질문
-
-**Q: 커스텀 값이 삭제되면 어떻게 되나요?** A: 오류를 일으키는 대신 빈 값을 반환합니다.
-
-**Q: 기회 관리나 할 일 필드를 참조할 수 있나요?** A: 현재 지원되는 소스는 Account(계정), Custom Values(커스텀 값), Right Now(실시간), Form Data(폼 데이터), Contact(연락처)입니다.
-
-**Q: 변수에 값이 없으면 어떻게 되나요?** A: 변수가 누락되었거나 비어있으면 시스템은 공백 값을 반환합니다. 오류를 발생시키거나 에이전트 실행을 중단하지 않습니다. 이렇게 하여 안전하고 신뢰할 수 있는 실행을 보장합니다.
-
-**Q: 실시간 변수는 시간대를 고려하나요?** A: 네. 하위 계정의 시간대를 사용합니다.
-
-**Q: 폼 데이터 변수는 어디서나 사용할 수 있나요?** A: Form Submitted(폼 제출) 이벤트로 트리거될 때만 채워집니다.
-
-**Q: 변수 플레이스홀더는 대소문자를 구분하나요?** A: 네. 변수 선택기에 표시된 정확한 키 이름을 사용해야 합니다.
-
-***
-
-**관련 도움말:**
-
-* [하이레벨의 AI 에이전트 스튜디오 사용 방법](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/13-AI-Employee/how-to-use-the-ai-agent-studio-in-highlevel.md)
-* [커스텀 값 사용 방법](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/23-%EB%A0%88%EA%B1%B0%EC%8B%9C-%EC%9E%90%EB%8F%99%ED%99%94/Logic-&-Fulfillment/how-to-use-custom-values.md)
-* [실시간 시작을 위한 에이전트 스튜디오 트리거 설정](../how-to-set-up-agent-studio-triggers-for-real-time-starts.md)
-
-***
-
-_원문 최종 수정: Wed, 4 Mar, 2026 at 8:54 AM_ _Hyperclass 사용 가이드 — hyperclass.ai_
+### 변수 자리표시자는 대소문자를 구분하나요?
+네. 변수 선택기에 표시된 키 이름을 그대로 쓰세요.

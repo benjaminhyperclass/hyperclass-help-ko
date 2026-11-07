@@ -1,41 +1,41 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 07-워크플로우 > Communities Workflow Triggers
+원문: /support/solutions/articles/155000003539-workflow-trigger-group-access-revoked
+번역일: 2026-11-07
+카테고리: 07-워크플로우
 ---
 
-# 워크플로우 트리거 - 그룹 액세스 취소됨
+# 워크플로우 트리거 — Group Access Revoked(그룹 접근 권한 회수)
+
+**Group Access Revoked**(그룹 접근 권한 회수) 트리거는 커뮤니티 안에서 사용자의 그룹 접근 권한이 회수될 때 워크플로우를 시작해요. 그룹 접근 권한을 관리하고 커뮤니티 운영을 자동화할 때 쓰세요.
 
 ## 개요
 
-Hyperclass 워크플로우의 그룹 액세스 취소됨(Group Access Revoked) 트리거는 커뮤니티 내 그룹 접근 권한 관리 프로세스를 자동화하여, 필요 시 접근 권한을 취소하고 커뮤니티 상호작용을 원활하게 관리할 수 있게 해줍니다.
+커뮤니티의 그룹 접근 권한을 관리하는 과정을 자동화하는 트리거예요. 필요할 때 접근 권한을 회수하고, 커뮤니티 운영을 간편하게 이어갈 수 있어요.
 
 ## 트리거 이름
 
-Group Access Revoked (그룹 액세스 취소됨)
+**Group Access Revoked**
 
 ## 트리거 설명
 
-"그룹 액세스 취소됨" 트리거는 커뮤니티 내 특정 그룹에 대한 사용자의 접근 권한이 취소될 때 활성화됩니다. 이를 통해 그룹 접근 권한 변경 사항을 사용자에게 알리는 자동 알림과 액션을 설정할 수 있습니다.
+커뮤니티 안의 특정 그룹에서 사용자의 접근 권한이 회수되면 이 트리거가 실행돼요. 접근 권한이 바뀐 사실을 사용자에게 알리는 알림이나 후속 작업을 자동으로 처리할 수 있어요.
 
 ## 설정 방법
 
-- **워크플로우 빌더(Workflow Builder)로 이동**: Hyperclass 계정에서 워크플로우 빌더에 접근합니다.
-- **새 워크플로우 생성**: "Create a Workflow(워크플로우 생성)"을 클릭합니다.
-- 관련 트리거 유형을 선택합니다: "Group Access Revoked(그룹 액세스 취소됨)"
-- **트리거 세부사항 설정**: 어떤 그룹의 접근 권한이 취소되는지 지정합니다.
-- 자동화하고자 하는 후속 액션을 추가합니다 (예: 알림 발송 또는 사용자 기록 업데이트).
-- **워크플로우 테스트**: 통제된 환경에서 테스트하여 워크플로우가 예상대로 작동하는지 확인합니다.
-- **저장 및 활성화**: 확인 후 워크플로우를 저장하고 사용을 위해 활성화합니다.
+1. **워크플로우 빌더**를 엽니다.
+2. 새 워크플로우를 만듭니다.
+   - **Create a Workflow**(워크플로우 만들기)를 클릭합니다.
+   - 트리거 유형으로 **Group Access Revoked**를 선택합니다.
+3. 트리거 세부 설정을 합니다.
+   - 어느 그룹의 접근 권한이 회수될 때 실행할지 지정합니다.
+   - 이어서 자동화할 액션을 추가합니다. 예를 들어 알림을 보내거나 사용자 정보를 업데이트할 수 있어요.
+4. 워크플로우를 테스트합니다. 제한된 환경에서 의도한 대로 동작하는지 확인하세요.
+5. 확인이 끝나면 워크플로우를 저장하고 활성화합니다.
 
-![그룹 액세스 취소됨 트리거 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033167058/original/K0ldwpuRU45kj1nHn-OQaQksYlMa20hFzA.jpeg?1726745659)
+![트리거 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033167058/original/K0ldwpuRU45kj1nHn-OQaQksYlMa20hFzA.jpeg?1726745659)
 
-![워크플로우 트리거 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033167050/original/nVzwkbWI3G7KoA2FIpppr4HzGVdFyrepwA.png?1726745650)
+![트리거 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033167050/original/nVzwkbWI3G7KoA2FIpppr4HzGVdFyrepwA.png?1726745650)
 
 ## 예시
 
-예를 들어, 전문 네트워킹 그룹에서 사용자가 커뮤니티 가이드라인을 위반한 경우, "구인 게시판" 그룹에 대한 접근 권한을 자동으로 취소하는 워크플로우를 설정할 수 있습니다. 이를 통해 해당 사용자는 더 이상 구인 정보 업데이트를 받지 못하고, 자신의 구인 게시물도 올릴 수 없게 됩니다.
-
----
-*원문 최종 수정: Tue, 8 Apr, 2025 at 3:13 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+전문가 네트워킹 그룹에서 사용자가 커뮤니티 가이드라인을 어겼다고 해볼게요. 이때 그 사용자의 "채용 공고" 그룹 접근 권한을 자동으로 회수하는 워크플로우를 만들 수 있어요. 그러면 해당 사용자는 채용 소식을 더 받지 못하고, 자신의 채용 공고도 더 올릴 수 없어요.

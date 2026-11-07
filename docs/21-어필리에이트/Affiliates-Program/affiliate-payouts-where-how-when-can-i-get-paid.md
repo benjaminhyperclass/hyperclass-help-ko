@@ -1,202 +1,145 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 21-어필리에이트 > Affiliates Program
+원문: /support/solutions/articles/48001208136-affiliate-payouts-where-how-when-can-i-get-paid-
+번역일: 2026-11-06
+카테고리: 21-어필리에이트
 ---
 
-# 제휴 수수료 지급: 언제, 어떻게, 어디서 수수료를 받을 수 있나요?
+# 제휴 수수료 지급 안내: 언제, 어디서, 어떻게 받나요?
 
-#### 이 문서에서 다루는 내용:
+제휴 수수료를 받는 방법과 지급일, 결제 방법을 설정하는 절차, 지급이 안 될 때 확인할 내용을 정리했어요. 이 글을 읽고도 해결되지 않으면 하이퍼클래스 고객지원에 문의하세요.
 
-#### [Tipalti는 더욱 강력한 지급 시스템입니다!](#tipalti는-더욱-강력한-지급-시스템입니다)
+## Tipalti는 더 탄탄한 결제 시스템이에요
 
-#### [새로운 지급 방법:](#새로운-지급-방법)
+Tipalti는 전 세계에서 쓰는 결제 자동화 서비스예요. 이제 하이퍼클래스 제휴 수수료는 Tipalti로만 지급해요. 새 결제 플랫폼으로 매끄럽게 옮겨 갈 수 있도록 아래 내용을 알아 두세요.
 
-#### [빠른 온보딩 경험:](#빠른-온보딩-경험)
+### 새로운 결제 방법
 
-#### [지급을 위한 "원스톱 서비스":](#지급을-위한-원스톱-서비스)
+- 미국 거주 제휴 파트너: 직불 입금(Direct Deposit), PayPal, 체크카드
+- 해외 제휴 파트너: ACH 이체, PayPal, 체크카드
 
-#### [다음에 해야 할 일](#다음에-해야-할-일)
+### 빠른 가입 절차
 
-#### **[Tipalti를 어떻게 설정하나요?](#tipalti를-어떻게-설정하나요)**
+- 몇 분이면 계정을 만들 수 있어요.
+- 가입하면서 원하는 결제 방법을 고르고 설정할 수 있어요.
+- 필요한 세금 서류를 앱 안에서 바로 작성할 수 있어요.
 
-#### **[아직 수수료를 받지 못했나요?](#아직-수수료를-받지-못했나요)**
+### 결제를 한곳에서 관리해요
 
-#### [자주 묻는 질문](#자주-묻는-질문)
+- 결제 상태와 내역을 바로 확인할 수 있어요.
+- 결제 방법을 직접 바꿀 수 있어요.
 
-#### [Q: Tipalti 외에 다른 지급 처리업체나 방법을 사용할 수 있나요?](#q-tipalti-외에-다른-지급-처리업체나-방법을-사용할-수-있나요)
+## 앞으로 해야 할 일
 
-#### [Q: Tipalti에 대해 더 자세히 알아볼 수 있는 곳이 있나요?](#q-tipalti에-대해-더-자세히-알아볼-수-있는-곳이-있나요)
+- 모든 제휴 파트너에게 Tipalti 계정 등록 초대 이메일을 이미 보냈어요. 3단계로 진행되는 등록 과정을 따라 하면 제휴 수수료를 받는 데 필요한 준비를 모두 마칠 수 있어요.
+- 현재 가진 링크가 만료되었거나 궁금한 점이 있으면 하이퍼클래스 고객지원에 문의하세요.
+- 1월 수수료를 받으려면 1월 14일까지 간단한 계정 설정을 마쳐야 해요.
+- 등록 절차와 세금 서류에 관해서는 [Tipalti FAQ](https://payees.tipalti.com/Content/FAQs.htm)를 참고하세요.
+- 모든 제휴 파트너는 Tipalti 결제 플랫폼으로 완전히 옮겨 가야 해요.
 
-#### [Q: Tipalti 로그인 포털이 있나요?](#q-tipalti-로그인-포털이-있나요)
+## Tipalti는 어떻게 설정하나요?
 
-#### [Q: 수수료 지급일은 언제인가요?](#q-수수료-지급일은-언제인가요)
+Tipalti는 두 가지 방법으로 설정할 수 있어요.
 
-#### [Q: Tipalti에서 설정 완료 이메일을 받았는데, 확인해주실 수 있나요?](#q-tipalti에서-설정-완료-이메일을-받았는데-확인해주실-수-있나요)
+**A. 활성 상태인 하이퍼클래스 계정이 없는 경우**
 
-#### [Q: $30 수수료를 받았는데 지급 목록에 보이지 않아요?](#q-$30-수수료를-받았는데-지급-목록에-보이지-않아요)
+하이퍼클래스 고객지원에 문의해서 Tipalti 설정 링크를 요청하세요.
 
-#### [Tipalti/세무 양식/제휴 포털 설정 시 발생할 수 있는 오류](#tipalti세무-양식제휴-포털-설정-시-발생할-수-있는-오류)
+**B. 하이퍼클래스 구독이 활성 상태인 경우**
 
-#### [대시보드에 멈춰있는 것처럼 보이는 보류 중인 지급이 있어요.](#대시보드에-멈춰있는-것처럼-보이는-보류-중인-지급이-있어요)
+**제휴 포털**에서 Tipalti를 설정할 수 있어요.
 
+1. **제휴 포털**을 클릭하세요.
 
-[미국 내 활동 없음 증명서](#미국-내-활동-없음-증명서)
+   ![제휴 포털 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48184754830/original/hfy5xtbk4aRiCiAGrbewVjWD6dctX1m3mg.png?1643562341)
 
+2. **결제 정보**를 클릭하세요.
 
----
+   [![결제 정보 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48184754868/original/RZbsbCFTNrjnaSWG_93XWsw2whNsUtW34g.png?1643562364)](https://app.tango.us/app/workflow/7d9fbfc2-8183-4458-a4f3-323d25e1021f)
 
-## Tipalti는 더욱 강력한 지급 시스템입니다!
+3. Tipalti 설정 정보를 입력하세요.
 
-Tipalti는 선도적인 글로벌 지급 자동화 서비스로, 현재 저희의 새로운 유일한 지급 시스템입니다. 새로운 지급 플랫폼으로의 원활한 전환을 위해 다음과 같은 내용을 기대하실 수 있습니다:
+   ![Tipalti 설정 정보 입력 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48184755726/original/cXVxprE4aCCu3fqxzctqNjqNIsic_txEpA.png?1643562764)
 
-### **새로운 지급 방법:**
+{% hint style="info" %}
+**참고**
 
-미국 기반 제휴사: 계좌 이체, PayPal, 직불카드
+이 정보는 에이전시 관리자 권한이 있는 사람이면 누구나 볼 수 있어요. 다른 에이전시 사용자에게 보여 주고 싶지 않다면 그 사용자를 에이전시 사용자 역할로 바꾸세요.
 
-해외 제휴사: ACH 송금, PayPal, 직불카드
+**에이전시 설정 > 팀 관리 > 사용자 편집 > User roles**(사용자 역할)
+{% endhint %}
 
-### **빠른 온보딩 경험:**
+## 아직 결제를 받지 못했나요?
 
-몇 분 내에 계정 설정 가능
+원인은 대개 아래 셋 중 하나예요.
 
-등록 과정에서 선호하는 지급 방법 선택 및 설정 가능
+1. 지급 방법이 최신 상태가 아니에요.
+2. 지급일이 아직 되지 않았어요.
+3. 저희 쪽에서 실수가 있었어요.
 
-앱 내에서 필요한 세무 양식 작성 가능
+제휴 계정이 결제를 받을 수 있는 상태인지 확인하는 방법은 아래 자주 묻는 질문에서 볼 수 있어요.
 
-### **지급을 위한 "원스톱 서비스":**
+## 자주 묻는 질문
 
-지급 상태 및 기록에 즉시 접근
+### Tipalti 말고 다른 결제 에이전시나 결제 방법을 쓸 수 있나요?
+현재는 모든 지급이 Tipalti로만 이루어져요. 결제 방법을 고르고 제휴 수수료를 받으려면 반드시 Tipalti를 설정해야 해요.
 
-지급 방법 변경 가능
+### Tipalti에 대해 더 알아보려면 어떻게 하나요?
+[tipalti.com](http://tipalti.com)에서 확인하거나, 하이퍼클래스 도움말의 짧은 Tipalti 소개 FAQ를 참고하세요.
 
----
+### Tipalti 로그인 페이지가 따로 있나요?
+네, 있어요. [Tipalti 로그인 페이지](https://suppliers.tipalti.com/highlevel/Account/Login)에서 로그인하세요.
 
-## 다음에 해야 할 일
+### 지급일은 언제인가요?
+매월 15일에 전달에 발생한 모든 수수료를 승인하고 보내요.
 
-- 모든 제휴사는 이미 Tipalti 계정 등록을 위한 이메일 초대장을 받았습니다. 3단계 등록 과정이 제휴사로서 수수료를 받기 위한 모든 필수 절차를 안내해드립니다!
-- **현재 링크가 만료되었거나 질문이 있으시면 affiliatepayments@Hyperclass.com으로 문의해주세요**
-- 1월 수수료를 받으려면 1월 14일까지 빠른 계정 설정 과정을 완료해야 합니다.
-- 등록 과정과 세무 양식에 관한 "**[자주 묻는 질문](https://payees.tipalti.com/Content/FAQs.htm)**"을 참조하세요.
-- 모든 제휴사는 Tipalti 지급 플랫폼으로의 전면 전환이 필수입니다.
+이미 Tipalti를 설정했고 결제 상태가 "submitted"(제출됨)라면 지급이 진행 중이에요. 지급 방법에 따라 1~3일 안에 입금돼요.
 
-더욱 강력한 지급 시스템을 제공하게 되어 기쁩니다! 항상 그래왔듯이, 저희는 이 전환을 최대한 원활하게 만들기 위해 최고 수준의 서비스를 제공하는 데 전념하고 있습니다.
+### Tipalti에서 설정이 완료되었다는 이메일을 받았어요. 확인해 줄 수 있나요?
+네, 확인해 드릴 수 있어요. 하이퍼클래스 고객지원에 문의하거나 지원 티켓을 열어 주세요.
 
----
+### 수수료가 30달러 생겼는데 지급 예정 금액에 안 보여요.
+지급은 최소 50달러부터 가능해요. 누적 수수료가 50달러를 넘으면 바로 지급돼요.
 
-## Tipalti를 어떻게 설정하나요?
+## Tipalti, 세금 서류, 제휴 포털을 설정할 때 생길 수 있는 오류
 
-Tipalti를 설정하는 방법은 몇 가지가 있습니다.
+### 1. EIN 오류 / 유효하지 않은 EIN
 
-**A.)** 활성화된 하이레벨(Hyperclass) 계정이 없는 경우, affiliatepayments@Hyperclass.com으로 이메일을 보내서 Tipalti 설정 링크를 요청하세요!
+![EIN 오류 화면 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48184759451/original/1y6rtj2LQTkkek8bpSVaO_6M8DF6TSFVsw.png?1643567205)
 
-**B.)** 활성화된 하이레벨 구독이 있는 경우 [**제휴 포털**](how-to-use-affiliate-portal.md) 내에서 Tipalti를 설정할 수 있습니다!
+![EIN 오류 화면 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48184759992/original/dHq32H2QWDCdQHSrNevFgqWQF8s9JtJvGg.png?1643567258)
 
-1. Affiliate Portal(제휴 포털) 클릭
-![Tipalti 설정을 위한 제휴 포털 접근](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48184754830/original/hfy5xtbk4aRiCiAGrbewVjWD6dctX1m3mg.png?1643562341)
+이메일을 받았거나 제휴 포털에 오류가 표시되면 EIN이 유효하지 않다는 뜻이에요. 아래 순서로 해결해 보세요.
 
-2. Payment Details(지급 세부사항) 클릭
-![지급 세부사항 페이지 접근](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48184754868/original/RZbsbCFTNrjnaSWG_93XWsw2whNsUtW34g.png?1643562364)
+1. [Tipalti 로그인 페이지](https://suppliers.tipalti.com/highlevel/Account/Login)에 로그인해서 EIN과 세금 서류를 수정하고, 등록된 정보를 다시 검증하세요.
+2. 하이퍼클래스 계정으로 제휴 포털에 로그인해서 **결제 정보 > Tax Forms**(세금 폼)에서 EIN을 다시 입력해도 돼요.
+3. 그래도 EIN 검증이 실패하면 하이퍼클래스 고객지원에 문의하거나 지원 티켓을 만드세요. 티켓에는 제휴 이메일과 추천 링크를 꼭 적어 주세요.
 
-3. Tipalti 설정 정보 입력!
-![Tipalti 설정 정보 입력 양식](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48184755726/original/cXVxprE4aCCu3fqxzctqNjqNIsic_txEpA.png?1643562764)
+### 2. 상태 코드 400과 함께 **요청 실패**(Request Failed)가 표시돼요
 
-참고사항:
+![요청 실패 오류 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48184758809/original/_GIYQ_0ZvCFWwUiYpOwwcICQ8ERsiosTzw.png?1643566500)
 
-이 세부 정보는 에이전시 관리자 권한이 있는 모든 사람이 볼 수 있습니다. 다른 에이전시 사용자가 이 정보를 보는 것을 원하지 않으면 해당 사용자를 일반 사용자 역할로 변경하세요.
+{% hint style="info" %}
+**참고**
 
-**Agency Settings(에이전시 설정) > Agency Team management(Team)(에이전시 팀 관리) > Edit user(사용자 편집) > User roles(사용자 역할)**
+지원 포털에서 지원 티켓을 만드세요. 티켓에 제휴 이메일과 추천 링크를 꼭 적고, 제목에 제휴 포털 문제라고 밝혀 주세요. 그러면 저희가 빠르게 확인할 수 있어요.
+{% endhint %}
 
----
+## 대시보드에서 대기 중인 결제가 계속 그대로예요
 
-## 아직 수수료를 받지 못했나요?
+결제가 "pending"(대기 중) 상태로 계속 남아 있다면 해당 제휴 고객의 지급 건이 "자기 추천(self-referral)"으로 표시되었을 수 있어요.
 
-이런 일이 발생하는 몇 가지 이유가 있습니다.
+자기 추천 표시는 FirstPromoter가 자동으로 만들어요. 같은 IP 주소로 가입했거나, 이름과 이메일 주소가 같거나, 전화번호가 같을 때 주로 표시돼요.
 
-(1) 지급 방법이 최신 상태가 아님
-(2) 저희 지급일이 아님  
-(3) 저희가 실수를 했음!
+컨설턴트나 지인이 고객이나 친구의 가입을 도와주는 것은 허용해요. 올바른 링크를 클릭했는지 확인하려고 나란히 앉아 가입하는 경우도 있기 때문이에요. 하지만 예를 들어 John Doe 마케팅 에이전시가 John Doe 본인의 링크로 가입하는 것은 허용하지 않아요.
 
-제휴 계정이 설정되어 있고 수수료를 받을 준비가 되었는지 확인하는 방법에 대한 팁은 자주 묻는 질문을 참조하세요.
+해당 사례가 아니라고 생각하면 지원 티켓을 열어 주세요. 티켓에 제휴 이메일과 추천 링크를 꼭 적고, 제목에 제휴 포털 문제라고 밝혀 주세요. 그러면 저희가 빠르게 확인할 수 있어요.
 
----
+제휴 결제 정책에 대해 더 궁금한 점은 하이퍼클래스 고객지원에 문의하세요.
 
-# 자주 묻는 질문
+## 미국 내 활동 없음 증명서(Certificate of No US Activities)
 
-### Q: Tipalti 외에 다른 지급 처리업체나 방법을 사용할 수 있나요?
+드물게 미국 내 활동 없음 증명서 때문에 결제에 영향이 생길 수 있어요. 이 경우 하이퍼클래스 팀에서 "Certificate of No US Activities - Unpayable Affiliates"라는 제목의 이메일을 보냈을 거예요.
 
-**A:** 현재 모든 수수료 지급은 Tipalti를 통해 이루어집니다. 지급 방법을 선택하고 제휴 수수료를 받기 시작하려면 Tipalti를 설정해야 합니다.
+해결하려면 하이퍼클래스 계정에 로그인해서 **제휴 포털**을 클릭해 대시보드를 여세요. 포털 안에서 정보를 업데이트해야 할 수 있어요.
 
-### Q: Tipalti에 대해 더 자세히 알아볼 수 있는 곳이 있나요?
-
-**A:** [tipalti.com](http://tipalti.com)에서 공식 웹사이트를 확인하거나 저희 Tipalti 간단 소개 FAQ를 확인하실 수 있습니다.
-
-### Q: Tipalti 로그인 포털이 있나요?
-
-**A:** 네, [https://suppliers.tipalti.com/highlevel/Account/Login](https://suppliers.tipalti.com/highlevel/Account/Login)에서 로그인할 수 있습니다.
-
-### Q: 수수료 지급일은 언제인가요?
-
-**A:** 저희는 전월에 획득한 모든 수수료에 대해 매월 15일에 모든 지급을 승인하고 전송합니다. 이미 Tipalti를 설정했고 지급 상태가 "제출됨"이면 지급이 진행 중입니다. 지급 방법에 따라 1-3일 내에 지급을 확인할 수 있습니다.
-
-### Q: Tipalti에서 설정 완료 이메일을 받았는데, 확인해주실 수 있나요?
-
-**A:** 확인해드릴 수 있습니다! [affiliatepayments@Hyperclass.com](mailto:affiliatepayments@gohighlevel.com)으로 이메일을 보내거나 지원 티켓을 열면 저희가 확인해드리겠습니다.
-
-### Q: $30 수수료를 받았는데 지급 목록에 보이지 않아요?
-
-**A:** 지급을 위한 최소 금액은 $50입니다. 총 누적 수수료가 $50를 초과하면 수수료를 받으실 수 있습니다!
-
----
-
-## Tipalti/세무 양식/제휴 포털 설정 시 발생할 수 있는 오류
-
-1. EIN 오류/ 잘못된 EIN.
-
-![EIN 오류 메시지 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48184759451/original/1y6rtj2LQTkkek8bpSVaO_6M8DF6TSFVsw.png?1643567205)
-
-![EIN 오류 메시지 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48184759992/original/dHq32H2QWDCdQHSrNevFgqWQF8s9JtJvGg.png?1643567258)
-
-제휴 포털에서 EIN이 유효하지 않다는 이메일이나 오류가 발생하는 경우:
-
-- 1.) Tipalti [https://suppliers.tipalti.com/highlevel/Account/Login](https://suppliers.tipalti.com/highlevel/Account/Login)에 로그인을 시도하여 EIN/세무 양식을 업데이트하고 등록된 정보를 다시 검증할 수 있는지 확인해보세요.
-
-- 2.) 하이레벨 계정의 제휴 포털에 로그인하여 Payment Details(지급 세부사항) > Tax Forms(세무 양식)에서 EIN을 다시 입력할 수도 있습니다.
-
-- 3.) EIN 검증이 계속 실패하는 경우, [affiliatepayments@Hyperclass.com](mailto:affiliatepayments@gohighlevel.com)으로 이메일을 보내거나 지원 티켓을 생성하면 저희가 확인해드리겠습니다. 티켓에 제휴 이메일/추천 링크를 반드시 포함해주세요.
-
-**2. Request Failed with Status code 400 오류**
-
-![상태 코드 400 오류](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48184758809/original/_GIYQ_0ZvCFWwUiYpOwwcICQ8ERsiosTzw.png?1643566500)
-
-참고사항:
-
-저희 포털을 통해 지원 티켓을 생성해주세요. 제휴 이메일과 추천 링크를 포함하고 이 제휴 포털 문제와 관련된 제목을 적어주시면 저희가 빠르게 확인하고 조사할 수 있습니다!
-
----
-
-## 대시보드에 멈춰있는 것처럼 보이는 보류 중인 지급이 있어요.
-
-지급이 "보류 중"에 멈춰있는 것처럼 보인다면, 보류 중인 제휴 고객 지급이 "자가 추천"으로 플래그가 지정되었을 가능성이 있습니다.
-
-자가 추천 플래그는 FirstPromoter에 의해 자동 생성되며, 일반적으로 같은 IP 주소에서 가입하거나, 같은 이름 및 이메일 주소를 갖거나, 같은 전화번호를 갖는 경우에 발생합니다.
-
-저희는 컨설턴트/친구가 고객/친구의 가입을 도와주는 것을 허용합니다(때로는 올바른 링크를 클릭했는지 확인하기 위해 나란히 앉아서 가입하는 경우가 있습니다). 하지만 John Doe의 마케팅 에이전시가 John Doe의 링크를 사용해서 가입하는 것은 허용하지 않습니다(이는 예시입니다).
-
-이것이 해당 사항이 아니라고 생각하시면 저희에게 지원 티켓을 열어주세요! 제휴 이메일과 추천 링크를 포함하고 이 제휴 포털 문제와 관련된 제목을 적어주시면 저희가 빠르게 확인하고 조사할 수 있습니다!
-
-제휴 지급 정책에 대한 더 많은 질문은 저희 제휴 정책을 확인해주세요! [Hyperclass.com/affiliate-policy](https://hyperclass.ai/affiliate-policy)
-
----
-
-## 미국 내 활동 없음 증명서
-
-드문 경우이지만, 미국 내 활동 없음 증명서로 인해 지급이 영향을 받을 수 있습니다. 이 경우 하이레벨 팀으로부터 "Certificate of No US Activities - Unpayable Affiliates"라는 제목의 관련 이메일을 받으셨을 것입니다.
-
-이를 해결하려면 하이레벨 계정에 로그인하고 제휴 포털을 클릭하여 대시보드에 접근하세요. 포털 내에서 정보를 업데이트해야 할 수 있습니다.
-
-하이레벨 계정이 없으시면 Tipalti에 로그인하여 세무 양식 페이지로 이동해 정보를 업데이트하세요.
-
----
-*원문 최종 수정: Mon, 9 Mar, 2026 at 4:06 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+하이퍼클래스 계정이 없다면 Tipalti에 로그인해서 세금 서류 페이지로 이동한 뒤 정보를 업데이트하세요.

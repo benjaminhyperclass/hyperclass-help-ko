@@ -1,134 +1,91 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 07-워크플로우 > Facebook/Instagram Events Workflow Triggers
+원문: /support/solutions/articles/155000004645-workflow-trigger-facebook-comment-s-on-a-post
+번역일: 2026-11-07
+카테고리: 07-워크플로우
 ---
 
-# 워크플로우 트리거 - Facebook 게시물 댓글
+# 워크플로우 트리거 — Facebook Comment(s) On A Post(Facebook 게시물 댓글)
 
-이 트리거는 Facebook 게시물에 댓글이 달렸을 때 실행됩니다.
+**Facebook Comment(s) On A Post**(Facebook 게시물에 댓글이 달렸을 때) 트리거를 쓰면 누군가 Facebook 게시물에 댓글을 달 때 워크플로우를 시작할 수 있어요. 특정 단어나 문구가 들어간 댓글만 골라서 워크플로우 액션으로 자동 응답할 수도 있어요.
 
----
+## Facebook Comment(s) On A Post 트리거란?
 
-**목차**
+**Facebook Comment(s) On A Post** 트리거는 선택한 Facebook 게시물에 누군가 댓글을 달고, 그 댓글이 설정한 조건에 맞으면 워크플로우를 시작해요.
 
-- [Facebook 게시물 댓글 트리거란?](#facebook-게시물-댓글-트리거란)
-- [트리거 위치](#트리거-위치)
-- [구성 요소](#구성-요소)
-- [필터](#필터)
-  - [페이지 선택 + 게시물 유형 + 게시물 선택](#페이지-선택-게시물-유형-게시물-선택)
-  - [문구 포함 또는 정확히 일치](#문구-포함-또는-정확히-일치)
-  - [첫 번째 레벨 댓글만 추적](#첫-번째-레벨-댓글만-추적)
-- [자주 묻는 질문](#자주-묻는-질문)
+예를 들어 누군가 게시물에 "INFO"라고 댓글을 달면, 그 댓글에 자동으로 답글을 달거나 Messenger 비공개 메시지를 보낼 수 있어요.
 
----
+## 이 트리거로 할 수 있는 일
 
-# **Facebook 게시물 댓글 트리거란?**
+Facebook 댓글에 일일이 답하지 않아도 팔로워와 소통할 수 있어요.
 
-이 트리거는 Facebook 게시물의 댓글이 설정한 필터 조건에 맞을 때 실행됩니다.
+- 자동 응답: Facebook 게시물에 댓글이 달리면 워크플로우를 시작해요.
+- 맞춤 대응: 특정 단어나 문구가 들어간 댓글에만 워크플로우를 실행해요.
+- 유연한 댓글 추적: 댓글에 달린 답글까지 포함할지 선택할 수 있어요.
+- 업무 효율 향상: 공개 답글과 Messenger 응대를 자동화해서 시간을 아껴요.
 
----
+## 트리거 설정하기
 
-## **트리거 위치**
+1. **자동화 > 워크플로우**로 이동해서 기존 워크플로우를 열거나 새 워크플로우를 만드세요. **Add Trigger**(트리거 추가)를 클릭하고 **Facebook Comment(s) On A Post**를 선택하세요.
 
-`Automations(자동화) → Workflows(워크플로우) → Workflow Builder(워크플로우 빌더) → Triggers(트리거) → Facebook/Instagram Events`로 이동하세요.
+   ![워크플로우에서 트리거 추가 후 Facebook Comment(s) On A Post 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083393683/original/D634XFqCSgIEd5s61ASgir8ohArG9K3tww.png?1792059744)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041668231/original/EGFep0c8ybfPPWMFJ9nneG_dBwkJzT0oyQ.png?1739667596)
+2. **Page Is**(페이지 지정)에서 연결된 Facebook 페이지를 선택하세요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041668220/original/KFpwLiyj-FH1QcbnCbVhvE4tzZR6CfwqEA.png?1739667519)
+   ![Page Is에서 연결된 Facebook 페이지 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083389733/original/-8qqAJiSL2jmbdtE_3rkzd-XjBpY9qNR9g.png?1792057892)
 
----
+3. **Post Type**(게시물 유형)에서 **Published Post**(게시된 게시물) 또는 **Custom Post**(사용자 지정 게시물)를 고르세요. 그다음 **Post Is**(게시물 지정)에서 게시물을 선택하거나 게시물의 URL 또는 ID를 입력하세요.
 
-## 구성 요소
+   ![Post Type과 Post Is 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083393760/original/P2yTKDwJ69NZiZG7WR3xN7lm9W2LSQcDQg.png?1792059799)
 
-Facebook 게시물 댓글 워크플로우 트리거의 주요 구성 요소는 4가지입니다:
+4. 필요하면 **Contains Phrase**(문구 포함), **Exact Match**(정확히 일치), **Track First Level Comments Only**(첫 단계 댓글만 추적)를 설정해서 워크플로우를 시작할 댓글을 정하세요.
 
-- **워크플로우 트리거 선택:** 기본적으로 이 트리거로 설정되어 있습니다. 원한다면 다른 트리거로 변경할 수 있습니다.
+   ![Contains Phrase, Exact Match, Track First Level Comments Only 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083393861/original/8MhTcqVHsXO8FQ_yGW3RKqkf1Hs-gLEM_Q.png?1792059900)
 
-- **워크플로우 트리거 이름:** 기본적으로는 트리거의 이름입니다. 워크플로우에서 보이는 더 명확한 이름으로 편집할 수 있습니다.
+5. 트리거를 저장하고 **Reply In Comments**(댓글에 답글) 또는 **Facebook Interactive Messenger**(Facebook 인터랙티브 메신저) 같은 액션을 추가하세요.
+6. 워크플로우를 저장하고 게시하세요.
 
-- **필터:** 올바른 상황에서 트리거를 실행하기 위한 조건을 선택하는 곳입니다. 자세한 내용은 다음 섹션에서 확인하세요.
+## Facebook 댓글 트리거 필터
 
-- **첫 번째 레벨 댓글만 추적:** 이 토글을 끄면 모든 중첩된 댓글에 대해 트리거가 실행됩니다. 켜면 최상위(첫 번째) 댓글에 대해서만 트리거가 실행되고, 댓글에 달린 대댓글은 무시됩니다.
+| 필터 | 설명 |
+| --- | --- |
+| **Page Is** | 모니터링할 Facebook 페이지를 선택해요. 먼저 페이지가 연결되어 있어야 해요. |
+| **Post Type** | Published Post 또는 Custom Post를 선택해요. |
+| **Post Is** | 게시된 게시물을 선택하거나 Facebook 게시물 URL 또는 ID를 입력해요. |
+| **Contains Phrase** | 댓글에 지정한 문구가 들어 있으면 시작해요. 다른 글이 함께 있어도 돼요. |
+| **Exact Match** | 댓글 전체가 지정한 텍스트와 똑같을 때만 시작해요. |
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041688828/original/IhmBZnSU94SJED3xa79ed1jOh0INU8YA0g.png?1739765072)
+예시: 설정한 문구가 "INFO"일 때
 
----
+- **Contains Phrase**: "INFO"와 "Send me INFO" 모두 해당돼요.
+- **Exact Match**: "INFO"만 해당돼요.
 
-## **필터**
+### Track First Level Comments Only
 
-필터의 자세한 설명:
+Facebook 게시물에는 게시물에 바로 단 댓글과, 그 댓글에 달린 답글이 있어요. 이 설정은 어떤 댓글로 워크플로우를 시작할지 정해요.
 
-| 필터 레벨 1 | 옵션 |
-|-------------|------|
-| Page Is | 계정의 페이지 목록 |
-| Post Type | Published Post (비즈니스 페이지의 모든 게시물)<br>Custom Post (URL 직접 입력) |
-| Post Is | Page Is + Post Type 설정과 일치하는 게시물 목록 |
-| Contains Phrase | 문구 = "구매했습니다"<br>댓글 = "어제 구매했습니다" → 통과<br>댓글 = "하나 구매했습니다" → 실패<br>댓글 = "얼마인가요" → 실패 |
-| Exact Match | 문구 = "구매했습니다"<br>댓글 = "구매했습니다" → 통과<br>댓글 = "어제 구매했습니다" → 실패<br>댓글 = "하나 구매했습니다" → 실패 |
+- **Enabled**(활성화됨): 게시물에 바로 단 댓글만 워크플로우를 시작해요.
+- **Disabled**(비활성화됨): 게시물에 바로 단 댓글과 댓글에 달린 답글 모두 워크플로우를 시작해요.
 
-### 페이지 선택 + 게시물 유형 + 게시물 선택
+![Track First Level Comments Only 설정에 따른 동작](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083346332/original/MxvGGnb884MR6yhblJxTg6CMlRG09oFCWQ.png?1791998845)
 
-먼저 Page Is에서 페이지를 선택하고, Post Type에서 게시물 유형을 선택한 다음, Post Is에서 게시물 자체를 선택합니다.
+## 자주 묻는 질문
 
-**1단계: 페이지 선택.** Standard Fields > Page Is를 선택하고 목록에서 페이지를 선택합니다.
+### Instagram 댓글에도 이 트리거를 쓸 수 있나요?
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041688928/original/fVGsoa6qB32gLVsMVOQDLvW7L0I28YlTIA.png?1739765463)
+아니요. Instagram 댓글에는 [Instagram Comment(s) On A Post](workflow-trigger-instagram-comment-s-on-a-post.md) 트리거를 사용하세요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041755544/original/Rq7D3x-JiGHUxzJPDaKdWuWNM8dXrMaUxw.png?1739820126)
+### 같은 사람이 워크플로우를 여러 번 시작할 수 있나요?
 
-**2단계: 게시물 유형 선택.** 목록에서 선택하려면 Published Post를, URL을 직접 입력하려면 Custom Post를 선택합니다.
+네, 워크플로우의 재진입 설정에 따라 달라요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041755561/original/SLtqhXUr6GBSZLTFkCg6LanQQJEMxcctFA.png?1739820175)
+### 댓글을 달면 자동으로 비공개 메시지를 보낼 수 있나요?
 
-**3단계: 정확한 게시물 지정.** Published Post를 사용했다면 목록에서 선택하고, Custom Post를 사용했다면 직접 URL을 입력합니다.
+네. **Facebook Interactive Messenger** 액션을 추가하고 **Reply to Comment via DM**(DM으로 댓글에 답장)을 선택하세요. Meta의 메시지 제한 정책이 적용돼요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041755719/original/k5AfU-4hul8xJw6cEFROiWghaV3wlW65og.png?1739820561)
+### Facebook 댓글을 달았는데 워크플로우가 시작되지 않아요
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041755745/original/r1LMLr98lAK6UOQLhFMnkHgXwB3dgldhXg.png?1739820626)
+Facebook 페이지가 연결되어 있는지, 워크플로우가 게시되어 있는지, 댓글이 설정한 필터와 맞는지 확인하세요. **Track First Level Comments Only**가 켜져 있는지도 살펴보세요.
 
----
+### 자동 답글이 워크플로우를 다시 시작하나요?
 
-### 문구 포함 또는 정확히 일치
-
-정확한 게시물을 지정한 후 Contains Phrase 필터나 Exact Match 필터를 사용할 수 있습니다.
-
-- **Contains Phrase(문구 포함):** 댓글 본문에 제공한 정확한 텍스트 문자열 중 하나가 포함되어 있으면 트리거가 실행됩니다.
-
-- **Exact Match(정확히 일치):** 댓글 본문 전체가 제공한 텍스트 문자열 중 하나와 정확히 일치하면 트리거가 실행됩니다.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041755798/original/-NndoueovinDRkAX7q4i8UaKA3NOZ7ka1w.png?1739820723)
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041756144/original/1bAyDZB0wLCzdtdwva5i555A8VQ_-FTIpg.png?1739821546)
-
----
-
-### **첫 번째 레벨 댓글만 추적**
-
-토글을 사용하여 1단계 댓글만 추적하는 기능을 켜거나 끌 수 있습니다.
-
-- **토글 켜기:** 댓글 체인의 첫 번째 댓글에 대해서만 트리거가 실행되고, 댓글에 달린 대댓글은 무시됩니다.
-
-- **토글 끄기:** 다른 댓글 아래에 중첩된 댓글이라도 모든 댓글에 대해 트리거가 실행됩니다.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041755855/original/XzuMdyjfcnCHdxDMlvoFxcoVs963Nt6PhA.png?1739820822)
-
----
-
-## **자주 묻는 질문**
-
-**Q: Facebook 게시물 댓글 트리거가 Instagram에서도 작동하나요?**
-
-A: 아니요, 이 트리거는 Facebook에서만 작동합니다. Instagram의 경우 동일한 [Instagram 게시물 댓글](https://help.gohlighlevel.com/en/support/solutions/articles/155000004646) 트리거를 사용하세요.
-
-**Q: Facebook 게시물 댓글 트리거와 함께 어떤 액션을 사용해야 하나요?**
-
-A: Facebook Comment Automation 레시피를 사용하여 워크플로우에서 이 트리거를 사용하는 예시를 확인하세요. Facebook & Instagram Comment Automation 문서와 [Reply In Comment](../../Communication-Workflow-Actions/workflow-action-reply-in-comments.md), Facebook Interactive Messenger 액션을 검토해보세요.
-
-**Q: 게시물 댓글 트리거가 무한 루프를 만들 수 있나요?**
-
-A: 아니요, 자동 댓글은 무한 루프를 만들지 않습니다. 워크플로우 트리거는 워크플로우 액션으로 게시된 댓글을 자동으로 무시합니다.
-
----
-*원문 최종 수정: Wed, 19 Feb, 2025 at 12:52 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+아니요. 워크플로우 액션이 만든 댓글은 무시돼서 자동화가 반복되는 일이 없어요.

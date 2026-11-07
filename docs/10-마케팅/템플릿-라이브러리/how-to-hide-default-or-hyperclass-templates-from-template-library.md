@@ -1,45 +1,49 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 10-마케팅 > 템플릿-라이브러리
+원문: /support/solutions/articles/155000003330-how-to-hide-default-or-ghl-templates-from-template-library-
+번역일: 2026-11-07
+카테고리: 10-마케팅
 ---
 
-# 템플릿 라이브러리에서 기본 템플릿 숨기는 방법
+# 템플릿 라이브러리에서 기본 템플릿 숨기기
 
-에이전시 관리자를 위한 새로운 기능을 소개합니다. 바로 Hyperclass 팀에서 추가한 기본 템플릿을 숨길 수 있는 기능입니다! 이 기능을 통해 템플릿 라이브러리를 맞춤 설정하여 하위 계정에게 더 깔끔하고 맞춤화된 경험을 제공할 수 있습니다. 이제 필요에 가장 적합한 템플릿에 집중하고, 고객에게 더 매끄럽고 체계적인 워크플로우를 제공할 수 있습니다.
+하이퍼클래스 팀이 추가한 기본 템플릿을 **템플릿 라이브러리**에서 숨기는 방법을 안내해요. 에이전시 관리자만 쓸 수 있어요. 서브 계정에 꼭 필요한 템플릿만 보이도록 라이브러리를 정리할 때 활용하세요.
 
-장점:
+이 기능을 쓰면 하이퍼클래스 팀이 추가한 기본 템플릿을 숨겨서 서브 계정에 보이는 라이브러리를 원하는 대로 꾸밀 수 있어요. 고객이 필요한 템플릿에 집중할 수 있어서 작업도 더 수월해져요.
 
-- **시간 절약**: 여러 템플릿을 한 번에 숨겨서 수동 작업을 줄입니다.
-- **향상된 구성**: 사용하지 않는 카테고리를 숨겨서 템플릿 라이브러리를 깔끔하고 집중적으로 유지합니다.
-- **강화된 제어**: 관리자가 숨겨진 템플릿을 쉽게 관리하고 검토할 수 있습니다.
+## 이럴 때 좋아요
+
+1. 시간이 절약돼요.
+
+    여러 템플릿을 한 번에 숨길 수 있어서 일일이 처리하지 않아도 돼요.
+2. 라이브러리가 깔끔해져요.
+
+    쓰지 않는 카테고리를 숨겨서 **템플릿 라이브러리**를 간결하게 유지할 수 있어요.
+3. 관리하기 쉬워요.
+
+    관리자는 숨긴 템플릿을 쉽게 관리하고 확인할 수 있어요.
 
 ## 사용 방법
 
-- Template Library(템플릿 라이브러리)로 이동합니다.
-- Settings(설정)를 클릭합니다.
+1. **템플릿 라이브러리**로 이동하세요.
+2. **설정**을 클릭하세요.
 
-![템플릿 라이브러리 설정 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032410603/original/q1Cc4blVxqa2NFrE_h6jwbHH4k8g9sljvA.jpeg?1725629144)
+![템플릿 라이브러리 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032410603/original/q1Cc4blVxqa2NFrE_h6jwbHH4k8g9sljvA.jpeg?1725629144)
 
-- 숨길 카테고리를 선택하고 토글을 활성화해서 숨깁니다.
+3. 숨길 카테고리를 찾아 토글을 켜세요.
 
-![카테고리 숨기기 토글](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032410746/original/l885OOQiLNboqV7wlkNM-FlWKLd-v-P3kw.jpeg?1725629244)
+![숨길 카테고리의 토글을 켜는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032410746/original/l885OOQiLNboqV7wlkNM-FlWKLd-v-P3kw.jpeg?1725629244)
 
-- 숨김을 해제하려면 토글을 다시 끄면 됩니다.
-- 숨겨진 템플릿은 관리자에게 하이라이트로 표시됩니다.
+4. 다시 보이게 하려면 같은 토글을 끄세요.
+5. 숨긴 템플릿은 관리자 화면에서 강조되어 표시돼요.
 
-![숨겨진 템플릿 하이라이트 표시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032410741/original/MXnpuqgeZv7THZ441wGwV9yzS3Z1iw4_8A.jpeg?1725629238)
+![관리자 화면에서 강조 표시된 숨긴 템플릿](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032410741/original/MXnpuqgeZv7THZ441wGwV9yzS3Z1iw4_8A.jpeg?1725629238)
 
-- 관리자는 Hidden Templates(숨겨진 템플릿) 필터를 사용해서 숨겨진 모든 템플릿의 요약을 볼 수 있습니다.
+6. **Hidden Templates**(숨긴 템플릿) 필터를 사용하면 숨긴 템플릿을 한눈에 모아 볼 수 있어요.
 
 ## 자주 묻는 질문
 
-**1. 사용자가 Hyperclass 템플릿을 삭제할 수 있나요?**
-→ 아니요. Hyperclass 템플릿은 삭제할 수 없고 숨길 수만 있으며, 숨겨진 템플릿은 Hidden Templates(숨겨진 템플릿)에서 확인할 수 있습니다.
+### 사용자가 기본 템플릿을 삭제할 수 있나요?
+아니요, 삭제할 수는 없어요. 대신 숨길 수 있고, 숨긴 템플릿은 **Hidden Templates**(숨긴 템플릿)에서 확인할 수 있어요.
 
-**2. 사용자가 모든 Hyperclass 템플릿을 한 번에 볼 수 있나요?**
-→ 네. 관리자는 Default Template(기본 템플릿) 필터를 클릭하면 모든 Hyperclass 템플릿을 볼 수 있습니다. 하지만 계정 뷰의 일반 사용자는 Hyperclass 템플릿과 에이전시 템플릿을 구분할 수 없습니다.
-
----
-*원문 최종 수정: Tue, 10 Dec, 2024 at 9:58 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### 기본 템플릿을 한꺼번에 볼 수 있나요?
+네, 관리자는 **기본 템플릿** 필터를 클릭하면 하이퍼클래스 팀이 추가한 템플릿을 모두 볼 수 있어요. 하지만 계정 화면에서 보는 사용자는 하이퍼클래스 기본 템플릿과 에이전시 템플릿을 구분할 수 없어요.

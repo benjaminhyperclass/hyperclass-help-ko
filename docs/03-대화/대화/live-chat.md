@@ -1,144 +1,122 @@
 ---
-
-번역일: 2026-04-06
-카테고리: 03-대화 > 대화
+원문: /support/solutions/articles/155000001320-live-chat
+번역일: 2026-11-06
+카테고리: 03-대화
 ---
 
-# 실시간 채팅 (Live Chat)
+# 대화에서 라이브 채팅 사용하기
 
-대화(Conversations) 섹션의 실시간 채팅은 Hyperclass 플랫폼 내에서 비즈니스와 웹사이트 방문자 간의 실시간 소통을 가능하게 합니다. 이 가이드에서는 실시간 채팅 사용의 주요 장점, 필요한 설정 단계, 그리고 메시지를 효율적으로 관리하고 응답하는 방법을 설명합니다.
+**대화**에서 라이브 채팅을 쓰면 웹사이트 방문자와 하이퍼클래스 안에서 바로 실시간으로 이야기할 수 있어요. 이 문서에서는 라이브 채팅의 장점, 사용 전에 필요한 설정, 메시지를 확인하고 답하는 방법을 안내해요.
 
-목차
-
-- [실시간 채팅이란?](#실시간-채팅이란)
-- [대화에서 실시간 채팅의 주요 장점](#대화에서-실시간-채팅의-주요-장점)
-- [대화에서 실시간 채팅 사용을 위한 사전 요구사항](#대화에서-실시간-채팅-사용을-위한-사전-요구사항)
-- [대화에서 실시간 채팅 사용하기](#대화에서-실시간-채팅-사용하기)
-- [자주 묻는 질문](#자주-묻는-질문)
+### 
 
 ---
 
-### 커뮤니티 더 많은 튜토리얼
+---
 
-[https://www.youtube.com/watch?v=tOLGWNevaOM](https://www.youtube.com/watch?v=tOLGWNevaOM)
+## 라이브 채팅이란?
 
-[https://www.youtube.com/watch?v=kx5ZKZPOPyQ](https://www.youtube.com/watch?v=kx5ZKZPOPyQ)
+**대화**의 라이브 채팅은 웹사이트 방문자와 실시간으로 소통할 수 있는 기능이에요. 즉시 도움을 주고 고객과 더 가까운 관계를 만들 수 있어요.
 
-[https://www.youtube.com/watch?v=UzeMp6nCVFA&feature=youtu.be](https://www.youtube.com/watch?v=UzeMp6nCVFA&feature=youtu.be)
+이메일이나 SMS와 달리 바로 답할 수 있어서 대기 시간이 줄고 고객 만족도도 높아져요. 웹사이트 채팅 위젯으로 들어온 메시지는 **대화**로 바로 전달돼요. 그래서 SMS, 이메일 같은 다른 채널의 대화와 한곳에서 관리할 수 있고, 여러 플랫폼을 오갈 필요가 없어요.
 
-[https://www.youtube.com/watch?v=BWNvaWU6LUA](https://www.youtube.com/watch?v=BWNvaWU6LUA)
+채팅을 특정 팀원에게 배정하거나, 자동화를 쓰거나, 아무도 응대하지 못한 문의를 위한 대체 메시지를 설정할 수도 있어요. 이렇게 방문자가 대화에 계속 참여하게 하면 전환율을 높이는 데 도움이 돼요.
 
-# 실시간 채팅이란?
+---
 
-대화(Conversations)의 실시간 채팅은 비즈니스가 웹사이트 방문자와 실시간으로 소통할 수 있게 해주는 강력한 도구로, 즉석 지원을 제공하고 더 강한 고객 관계를 구축할 수 있게 합니다. 전통적인 이메일이나 SMS 기반 소통과 달리, 실시간 채팅은 즉각적인 응답을 보장하여 대기 시간을 줄이고 고객 만족도를 향상시킵니다. 웹사이트 채팅 위젯(Chat Widget)에서 오는 메시지는 대화(Conversations) 섹션으로 직접 전달되어, 사용자가 SMS와 이메일 같은 다른 소통 채널과 함께 상호작용을 관리할 수 있습니다. 이러한 중앙화는 워크플로우를 간소화하여 여러 플랫폼 간 전환의 필요성을 없앱니다. 또한, 비즈니스는 채팅을 특정 팀원에게 할당하고, 자동화를 사용해 효율성을 높이며, 응답하지 못한 문의에 대한 대체 메시지를 설정할 수 있습니다. 실시간 채팅을 통해 비즈니스는 방문자의 참여를 유지하고 전환율을 높이는 원활하고 상호작용적인 경험을 제공할 수 있습니다.
+## 대화에서 라이브 채팅을 쓰면 좋은 점
 
-## 대화에서 실시간 채팅의 주요 장점
+- 즉각적인 소통: 이메일이나 늦은 SMS 답장에 기대지 않고 방문자에게 실시간으로 답해요.
+- 매끄러운 업무 흐름: 모든 채팅이 이메일, SMS 등 다른 채널과 함께 **대화**에 표시돼요.
+- 더 나은 고객 경험: 응답이 빨라지면 참여도와 고객 만족도가 높아져요.
+- 통합 메시지 관리: 여러 도구를 오가지 않고 모든 고객 대화를 한곳에서 관리해요.
 
-대화(Conversations)의 실시간 채팅은 여러 가지 장점을 제공합니다:
+---
 
-- 즉석 소통: 이메일이나 지연된 SMS 답변에 의존하지 않고 웹사이트 방문자에게 실시간으로 응답할 수 있습니다.
+## 사용하기 전에 준비할 것
 
-- 원활한 워크플로우: 모든 채팅이 이메일, SMS 및 기타 소통 채널과 함께 대화(Conversations) 섹션에 나타납니다.
+**대화**에서 방문자와 채팅하려면 먼저 채팅 위젯을 설치하고 올바르게 설정해야 해요. 아래 순서대로 진행하세요.
 
-- 향상된 고객 경험: 빠른 응답 시간으로 더 높은 참여도와 고객 만족도를 달성할 수 있습니다.
+### 채팅 위젯 메뉴 열기
 
-- 중앙화된 메시징: 도구 간 전환 없이 모든 고객 상호작용을 한 곳에서 관리할 수 있습니다.
+**사이트 > 채팅 위젯**으로 이동해요. **+ 신규**를 클릭해서 새 채팅 위젯을 만드세요.
 
-## 대화에서 실시간 채팅 사용을 위한 사전 요구사항
+![사이트 > 채팅 위젯 메뉴에서 신규 버튼을 누르는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043644551/original/1ubnlRtyXOmP2DIF03H3-Q5ELdrSkSBf_g.png?1742461023)
 
-대화(Conversations)에서 방문자와 채팅을 시작하기 전에, 채팅 위젯(Chat Widget)이 올바르게 설치되고 구성되어야 합니다. 다음 필수 설정 단계를 따라하세요:
+### 채팅 유형 설정
 
-#### **채팅 위젯 메뉴 접근**
+**대화**에서 실시간 메시지를 주고받으려면 채팅 유형을 **라이브 채팅**으로 설정해야 해요.
 
-`Sites(사이트) → Chat Widget(채팅 위젯)`으로 이동합니다. `+ New(새로 만들기)`를 클릭하여 새 채팅 위젯을 생성합니다.
+![채팅 유형을 라이브 채팅으로 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043644766/original/Cgs5hFZ3geICCdapFsSFqFCMWrmFIkXZmg.png?1742461179)
 
-![채팅 위젯 생성](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043644551/original/1ubnlRtyXOmP2DIF03H3-Q5ELdrSkSBf_g.png?1742461023)
+### 위젯 모양 설정
 
-#### 채팅 유형 설정
+채팅이 매끄럽게 진행되도록 **채팅 위젯**에서 다음 항목을 설정하세요.
 
-대화(Conversations)에서 실시간 메시징을 활성화하려면, 채팅 유형을 Live Chat(실시간 채팅)으로 설정해야 합니다.
+- **인트로 메시지**: 채팅이 시작되기 전에 보이는 짧은 인사말이에요. 설정 방법은 [인트로 메시지 설정에 대한 자세한 정보](../../06-사이트/채팅-위젯/collect-visitor-details-before-live-chat-starts.md)를 참고하세요.
+- **Agent Avatar & Branding**(에이전트 아바타 및 브랜딩): 채팅 창을 우리 브랜드에 맞게 꾸며요.
+- **Inactivity Fallback Message**(비활성 대체 메시지): 정해진 시간 안에 응대하는 에이전트가 없으면, 자동 메시지로 방문자의 연락처 정보를 받아요.
+- **Chat Timeout Message**(채팅 타임아웃 메시지): 방문자가 응답하지 않으면 시스템이 채팅을 종료하고 방문자에게 알려요.
 
-![채팅 유형 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043644766/original/Cgs5hFZ3geICCdapFsSFqFCMWrmFIkXZmg.png?1742461179)
+![채팅 위젯 모양을 설정하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043645940/original/pigYXAfkgMA98nT3Vrw2VWZE17dkY-u6fg.gif?1742461907)
 
-#### 위젯 모양 커스터마이징
+### 위젯 설치
 
-원활한 채팅 경험을 보장하기 위해 채팅 위젯(Chat Widget) 내에서 다음 필수 설정을 구성하세요:
+설치 코드를 복사해서 웹사이트의 푸터나 바디 영역에 붙여넣으세요.
 
-인트로 메시지: 채팅이 시작되기 전에 나타나는 짧은 인사말입니다. [인트로 메시지 커스터마이징에 대한 자세한 정보를 보려면 여기를 클릭하세요.](../../06-사이트/채팅-위젯/collect-visitor-details-before-live-chat-starts.md)
+WordPress를 쓴다면 하이퍼클래스 플러그인을 설치해서 위젯을 사용하세요.
 
-에이전트 아바타 & 브랜딩: 브랜드에 맞게 채팅 창을 개인화합니다.
+![위젯 설치 코드를 복사해 붙여넣는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043646494/original/r68ESJNZSMTH62pAVAlM6K3BVyv4wg0rXQ.gif?1742462207)
 
-비활성 시 대체 메시지: 설정된 시간 내에 상담원이 응답하지 않으면, 자동화된 메시지가 방문자의 연락처 정보를 수집합니다.
+---
 
-채팅 타임아웃 메시지: 방문자가 응답을 중단하면, 시스템이 채팅을 종료하고 알림을 보냅니다.
+## 대화에서 라이브 채팅 사용하기
 
-![위젯 커스터마이징](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043645940/original/pigYXAfkgMA98nT3Vrw2VWZE17dkY-u6fg.gif?1742461907)
+라이브 채팅을 켜면 방문자가 채팅 위젯으로 메시지를 보낼 수 있고, 여러분은 **대화**에서 바로 답할 수 있어요.
 
-#### 위젯 설치
+### 라이브 채팅 메시지 확인하고 답하기
 
-설치 코드를 복사하여 웹사이트의 푸터나 본문 섹션에 붙여넣습니다.
+**대화**를 열어요. 라이브 채팅 메시지는 받은 편지함에 실시간으로 표시돼요. 채팅 아이콘으로 라이브 채팅 메시지를 구분할 수 있어요. 채팅을 클릭하면 내용을 확인하고 바로 답장할 수 있어요.
 
-워드프레스를 사용하는 경우, LeadConnector 플러그인을 설치하여 위젯을 활성화하세요.
+![대화에서 라이브 채팅 메시지를 확인하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043648537/original/YS-j5rmY-yQHnKrlr07wRTRwZToHZecRFQ.png?1742463473)
 
-![위젯 설치](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043646494/original/r68ESJNZSMTH62pAVAlM6K3BVyv4wg0rXQ.gif?1742462207)
+### 라이브 채팅만 모아 보기
 
-## 대화에서 실시간 채팅 사용하기
+**필터**를 사용하면 라이브 채팅 메시지만 볼 수 있어요.
 
-실시간 채팅이 활성화되면, 웹사이트 방문자가 채팅 위젯을 통해 메시지를 보낼 수 있고, 대화(Conversations) 섹션에서 직접 응답할 수 있습니다.
+![필터로 라이브 채팅 메시지만 보는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043648626/original/CDgZNcuNK5ZHAAvnOlfgBx39oVGTVDlo5g.png?1742463531)
 
-#### 실시간 채팅 메시지 확인 및 응답
+### 대화 배정하고 관리하기
 
-대화(Conversations) 섹션을 열면 실시간 채팅 메시지가 인박스(수신함)에 실시간으로 나타납니다. 채팅 아이콘을 보고 실시간 채팅 메시지를 식별할 수 있습니다. 채팅을 클릭하면 즉시 확인하고 응답을 보낼 수 있습니다.
+채팅은 팀원에게 직접 배정하거나 자동으로 배정할 수 있어요. 아래는 라이브 채팅을 특정 사용자에게 자동으로 배정하는 워크플로우 예시예요. 선택한 채팅 위젯에서 들어온 채팅을 지정한 팀원에게 바로 보내는 간단한 설정이에요.
 
-![실시간 채팅 메시지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043648537/original/YS-j5rmY-yQHnKrlr07wRTRwZToHZecRFQ.png?1742463473)
+워크플로우 빌더 화면은 영어로 표시돼요. 그래서 아래 단계의 빌더 안 이름은 영어 그대로 적었어요.
 
-#### 실시간 채팅 필터 보기
+1. **자동화 > 워크플로우**로 이동한 다음 **+ New Workflow**(새 워크플로우)를 클릭해요.
+2. **Add New Trigger**(새 트리거 추가)를 클릭하고 **Customer Replied**(고객 답장) 또는 **New Chat Message**(새 채팅 메시지)를 선택해요.
+3. 트리거 필터에서 **Channel = Live Chat**으로 설정해요. 그런 다음 필터를 하나 더 추가하고 **Chat Widget is**(채팅 위젯이 다음과 같음)에서 원하는 위젯을 드롭다운으로 선택해요.
+4. 트리거 아래의 **+**를 클릭하고 **Assign to User**(사용자에게 배정)를 선택해요.
+5. 액션 설정의 **Select User**(사용자 선택)에서 채팅을 배정할 사용자를 선택해요.
+6. **Save**(저장)를 클릭한 다음 **Draft**(임시 저장)에서 **Publish**(게시)로 전환해요.
 
-필터링 옵션을 사용하여 실시간 채팅 메시지만 볼 수 있습니다.
+![라이브 채팅을 특정 사용자에게 배정하는 워크플로우를 만드는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058670834/original/VuhoQ67sjZZjeZ9z1u5bcvupUpdZChh8qQ.gif?1763479581)
 
-![실시간 채팅 필터](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043648626/original/CDgZNcuNK5ZHAAvnOlfgBx39oVGTVDlo5g.png?1742463531)
+### 채팅 종료하기
 
-#### 대화 할당 및 관리
+대화가 끝나면 **End Chat**(채팅 종료) 옵션을 사용하세요. 라이브 채팅 설정에서 비활성 시간을 정해 두면, 방문자가 그 시간 동안 아무 반응이 없을 때 채팅이 자동으로 종료돼요.
 
-채팅은 팀원에게 수동으로 또는 자동으로 할당할 수 있습니다. 아래는 실시간 채팅을 특정 사용자에게 자동으로 할당하기 위해 따를 수 있는 제안 워크플로우입니다.
-선택한 채팅 위젯에서 지정된 팀원에게 직접 채팅을 라우팅하는 간단한 설정입니다.
-
-- 새 워크플로우 생성 → `Automations(자동화) → Workflows(워크플로우) → + New Workflow(새 워크플로우)` 클릭
-
-- 트리거 추가 → `Add New Trigger(새 트리거 추가)` 클릭 → `Customer Replied(고객 답변)` 또는 `New Chat Message(새 채팅 메시지)` 선택
-
-- 필터 추가 → 트리거 필터에서 `Channel = Live Chat(채널 = 실시간 채팅)`으로 설정한 다음, `Chat Widget is(채팅 위젯이)` 필터를 추가하여 드롭다운에서 원하는 위젯을 선택
-
-- 액션 추가 → 트리거 아래 `+` 클릭 → `Assign to User(사용자에게 할당)` 선택
-
-- 사용자 선택 → 액션 설정에서 채팅을 할당하고자 하는 특정 사용자를 선택
-
-- 저장 및 발행 → `Save(저장)` 클릭한 다음, `Draft(초안) → Publish(발행)`으로 토글
-
-![워크플로우 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058670834/original/VuhoQ67sjZZjeZ9z1u5bcvupUpdZChh8qQ.gif?1763479581)
-
-#### 채팅 종료 및 닫기
-
-대화가 완료되었을 때 "End Chat(채팅 종료)" 옵션을 사용하세요. 또한 실시간 채팅 설정에서 비활성 시간 기간을 설정하여 방문자가 일정 시간 동안 비활성 상태일 때 채팅이 자동으로 종료되도록 할 수 있습니다.
+---
 
 ## 자주 묻는 질문
 
-**Q. 실시간 채팅 메시지가 대화(Conversations) 섹션에 나타나도록 하려면 어떻게 해야 하나요?**
+### 라이브 채팅 메시지가 대화에 표시되게 하려면 어떻게 하나요?
+먼저 웹사이트에 채팅 위젯을 설치하고 활성화해야 해요. 그리고 **사이트 > 채팅 위젯**에서 **Chat Type**(채팅 유형)이 **SMS/Email Chat**(SMS/이메일 채팅)이 아니라 **라이브 채팅**으로 설정되어 있는지 확인하세요. 이렇게 설정하지 않으면 메시지가 **대화**로 전달되지 않아요.
 
-대화(Conversations)에서 실시간 채팅 메시지를 받으려면 먼저 웹사이트에 채팅 위젯(Chat Widget)을 설치하고 활성화해야 합니다. 또한 `Sites(사이트) → Chat Widget(채팅 위젯)` 하에서 채팅 유형(Chat Type)이 실시간 채팅(Live Chat)으로 설정되어 있는지 확인하세요(SMS/이메일 채팅 대신). 이 설정 없이는 메시지가 대화(Conversations)로 라우팅되지 않습니다.
+### 라이브 채팅 메시지에 실시간으로 답하는 사람이 없으면 어떻게 되나요?
+채팅 위젯 설정의 **Fallback Inactivity Time**(대체 비활성 시간) 안에 응대하는 에이전트가 없으면, 자동 메시지가 방문자에게 연락처 정보를 남겨 달라고 안내해요. 그 시점에 실시간 응대가 어려워도 이후에 이메일이나 SMS로 대화를 이어 갈 수 있어요.
 
-**Q. 실시간 채팅 메시지에 실시간으로 아무도 응답하지 않으면 어떻게 되나요?**
+### 라이브 채팅 대화를 특정 팀원에게 배정할 수 있나요?
+네, 라이브 채팅 메시지는 직접 배정하거나 워크플로우 설정에 따라 팀원에게 자동으로 배정할 수 있어요. 들어오는 채팅을 효율적으로 나누고, 각 대화를 알맞은 담당자가 맡도록 할 수 있어요.
 
-채팅 위젯(Chat Widget) 설정에서 구성된 대체 비활성 시간(Fallback Inactivity Time) 내에 상담원이 응답하지 않으면, 자동화된 메시지가 방문자에게 연락처 정보를 남기도록 안내합니다. 이를 통해 실시간 지원을 받을 수 없는 경우에도 나중에 이메일이나 SMS를 통해 대화를 계속할 수 있습니다.
-
-**Q. 실시간 채팅 대화를 특정 팀원에게 할당할 수 있나요?**
-
-네, 실시간 채팅 메시지는 워크플로우 설정에 따라 팀원에게 수동으로 할당하거나 자동으로 라우팅할 수 있습니다. 이를 통해 비즈니스는 들어오는 채팅을 효율적으로 분배하고 적절한 사람이 각 대화를 처리하도록 할 수 있습니다.
-
-**Q. 대화(Conversations) 섹션에서 실시간 채팅 대화만 필터링하여 볼 수 있나요?**
-
-네, 대화(Conversations) 섹션 내의 필터링 옵션을 사용하여 실시간 채팅 메시지만 볼 수 있습니다. 이를 통해 SMS, 이메일 및 기타 소통 채널과 별도로 실시간 상호작용을 더 쉽게 관리할 수 있습니다.
-
----
-*원문 최종 수정: Wed, 21 Jan, 2026 at 1:35 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### 대화에서 라이브 채팅 대화만 필터링해서 볼 수 있나요?
+네, **대화**에서 필터 옵션을 사용하면 라이브 채팅 메시지만 볼 수 있어요. 실시간 대화를 SMS, 이메일 등 다른 채널과 따로 관리하기 쉬워져요.

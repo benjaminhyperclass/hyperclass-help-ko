@@ -1,60 +1,48 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 18-리포팅 > 추적-어트리뷰션
+원문: /support/solutions/articles/48001219725-how-to-record-pageviews-into-google-analytics-for-funnels-websites-ga4-
+번역일: 2026-11-07
+카테고리: 18-리포팅
 ---
 
-# 퍼널/웹사이트의 페이지뷰를 Google Analytics(GA4)에 기록하는 방법
+# 퍼널/웹사이트 페이지뷰를 Google Analytics(GA4)에 기록하기
 
-이 문서는 퍼널/웹사이트의 페이지뷰를 Google Analytics로 기록하기 위해 GA4를 설정하는 단계별 가이드입니다. 여기서는 GA4에서 페이지뷰를 기록하도록 퍼널/웹사이트를 설정하는 과정을 안내해드리겠습니다.
+Google Analytics 4(GA4)를 설정해서 퍼널과 웹사이트의 페이지뷰를 기록하는 방법을 단계별로 안내해요. 이 글을 따라 하면 퍼널/웹사이트가 GA4에 페이지뷰를 보내도록 설정할 수 있어요.
 
-이 가이드는 Google Analytics에 대한 기본 지식이 있다고 가정합니다. 만약 처음이시라면 [GA4 - Google Analytics 초보자 가이드](https://support.google.com/analytics/answer/10089681?hl=en)를 먼저 확인해보시기 바랍니다.
+Google Analytics를 어느 정도 안다고 가정하고 설명해요. 처음이라면 먼저 [GA4 - Beginner's Guide to Google Analytics](https://support.google.com/analytics/answer/10089681?hl=en)를 읽어 보세요.
 
----
+## 1단계: Google Analytics에 로그인하세요
 
-#### 이 문서에서 다루는 내용:
+Google Analytics에 로그인해요.
 
-#### [1단계: Google Analytics에 로그인](#1단계-google-analytics에-로그인)
+## 2단계: Admin Settings로 이동하세요
 
-#### [2단계: 관리자 설정으로 이동](#2단계-관리자-설정으로-이동)
+Google Analytics에서 **Admin Settings**(관리 설정)로 이동해요.
 
-#### [3단계: 속성 만들기를 클릭하고 속성 이름 추가](#3단계-속성-만들기를-클릭하고-속성-이름-추가)
+## 3단계: Create Property를 클릭하고 속성 이름을 입력하세요
 
-#### [4단계: 왼쪽 메뉴에서 데이터 스트림으로 이동](#4단계-왼쪽-메뉴에서-데이터-스트림으로-이동)
+**Create Property**(속성 만들기)를 클릭한 다음 속성 이름을 입력해요.
 
-#### [5단계: 웹 옵션을 선택하고 추적할 퍼널/웹사이트 URL 추가](#5단계-웹-옵션을-선택하고-추적할-퍼널웹사이트-url-추가)
+![Create Property 화면에서 속성 이름 입력](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48248414481/original/_crNYwqPZLPsbFhR_wtE2RGPpUVpWU7lUA.png?1661963925)
 
-#### [6단계: Google에서 제공하는 스크립트(gtag.js)를 퍼널/웹사이트 추적 코드에 추가하거나 아래의 Google Tag Manager 지침 따르기](#6단계-google에서-제공하는-스크립트gtagjs를-퍼널웹사이트-추적-코드에-추가하거나-아래의-google-tag-manager-지침-따르기)
+## 4단계: 왼쪽 메뉴에서 Data Stream으로 이동하세요
 
-- 
-#### [퍼널/웹사이트에 Google Site Tag(gtag.js) 추가하는 방법](#퍼널웹사이트에-google-site-taggtagjs-추가하는-방법)
+왼쪽 메뉴에 있는 **Data Stream**(데이터 스트림)으로 이동해요.
 
-## 1단계: Google Analytics에 로그인
+![왼쪽 메뉴의 Data Stream](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48242970421/original/JT7f2wFLJddyal3mPq52134ub2eucYhgsg.png?1659563635)
 
-## 2단계: 관리자 설정으로 이동
+## 5단계: Web을 선택하고 추적할 퍼널/웹사이트 URL을 입력하세요
 
-## 3단계: 속성 만들기를 클릭하고 속성 이름 추가
+**Web**(웹) 옵션을 선택하고, 추적하려는 퍼널/웹사이트의 URL을 입력해요.
 
-![속성 만들기 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48248414481/original/_crNYwqPZLPsbFhR_wtE2RGPpUVpWU7lUA.png?1661963925)
+스트림 URL과 스트림 이름을 입력했으면 **Create Stream**(스트림 만들기) 버튼을 클릭하세요.
 
-## 4단계: 왼쪽 메뉴에서 데이터 스트림으로 이동
+![Web 선택 후 스트림 URL과 이름 입력](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48248397407/original/pdNNp3rYDDYl3DFcfJtnTLXZSLMd7b2Nng.png?1661959750)
 
-![데이터 스트림 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48242970421/original/JT7f2wFLJddyal3mPq52134ub2eucYhgsg.png?1659563635)
+## 6단계: gtag.js 스크립트를 추가하거나 Google Tag Manager를 설정하세요
 
-## 5단계: 웹 옵션을 선택하고 추적할 퍼널/웹사이트 URL 추가
+Google에서 제공하는 스크립트(gtag.js)를 퍼널/웹사이트 추적 코드에 추가해요. 또는 아래 Google Tag Manager 안내를 따르세요.
 
-스트림 URL을 추가하고 스트림 이름을 지정한 후 "**스트림 만들기**" 버튼을 클릭하세요.
+![Google에서 제공하는 gtag.js 스크립트](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48248415171/original/7AN42XqQ5QG7nrNKJWJ6Loppu0-UclOw6g.png?1661964159)
 
-![웹 스트림 만들기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48248397407/original/pdNNp3rYDDYl3DFcfJtnTLXZSLMd7b2Nng.png?1661959750)
+### 퍼널/웹사이트 `<head>`에 Google Site Tag(gtag.js) 추가하기
 
-## 6단계: Google에서 제공하는 스크립트(gtag.js)를 퍼널/웹사이트 추적 코드에 추가하거나 아래의 Google Tag Manager 지침 따르기
-
-![추적 코드 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48248415171/original/7AN42XqQ5QG7nrNKJWJ6Loppu0-UclOw6g.png?1661964159)
-
-### 퍼널/웹사이트 **<head>**에 **Google Site Tag(gtag.js)** 추가하는 방법
-
-![Google Site Tag 추가 과정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48248407178/original/YzmIbN-8is5aDbsPeVGWMaxEJeNebtQKJw.gif?1661961887)
-
----
-*원문 최종 수정: Mon, 5 Sep, 2022 at 9:04 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*

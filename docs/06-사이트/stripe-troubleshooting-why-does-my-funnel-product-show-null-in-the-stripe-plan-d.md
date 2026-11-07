@@ -1,13 +1,12 @@
 ---
-
-번역일: 2026-04-06
+원문: /support/solutions/articles/48001158591-stripe-troubleshooting-why-does-my-funnel-product-show-null-in-the-stripe-plan-dropdown-
+번역일: 2026-11-07
 카테고리: 06-사이트
 ---
 
-# Stripe 문제 해결 | 퍼널 상품이 Stripe 플랜 드롭다운에서 'null'로 표시되는 이유는?
+# Stripe 문제 해결: 퍼널 상품 이름 앞에 'null'이 보일 때
 
-Stripe 상품 이름 앞에 (null)이 표시되더라도 문제가 아닙니다. 다음 동영상의 단계를 따라하면 변경할 수 있어요:
+Stripe 플랜 드롭다운에서 퍼널 상품 이름 앞에 `(null)`이 붙어 보일 때 확인하는 문서예요.
 
----
-*원문 최종 수정: Wed, 16 Sep, 2020 at 3:58 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+Stripe 상품 이름 앞에 `(null)`이 표시돼도 문제는 아니에요. 아래 영상에 나온 순서대로 따라 하면 이름을 바꿀 수 있어요.
+

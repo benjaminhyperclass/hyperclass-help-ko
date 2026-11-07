@@ -1,176 +1,150 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 07-워크플로우 > 빌더
+원문: /support/solutions/articles/155000003534-workflow-trigger-payment-received
+번역일: 2026-11-06
+카테고리: 07-워크플로우
 ---
 
-# 워크플로우 트리거 - 결제 수신됨
+# 워크플로우 트리거 — Payment Received(결제 완료)
 
-결제 수신됨(Payment Received) 트리거는 CRM 전반에서 들어오는 모든 결제를 포착하는 중앙 집중식 메커니즘으로 설계되었습니다. 특정 사용 사례에 맞게 필터로 커스터마이징할 수 있습니다. 이 트리거는 비즈니스가 작업을 자동화하고, 프로세스를 간소화하며, 실시간 고객 거래에 효율적으로 대응하는 데 도움을 줍니다.
+**Payment Received**(결제 완료) 트리거를 쓰면 결제가 성공할 때마다 후속 작업을 자동으로 실행할 수 있어요. 일회성 결제, 구독 갱신, 인보이스 결제 모두 해당돼요. 확인 메시지 발송, 정보 업데이트, 팀 알림을 자동화해 시간을 아끼고 고객 경험도 높여 보세요.
 
-**목차**
+## Payment Received 트리거란?
 
-- [결제 수신됨 워크플로우 트리거란?](#결제-수신됨-워크플로우-트리거란)
-- [결제 수신됨 워크플로우 트리거의 주요 이점](#결제-수신됨-워크플로우-트리거의-주요-이점)
-- [결제 수신됨 트리거 사용법](#결제-수신됨-트리거-사용법)
-- [필터](#필터)
-- [조건 분기](#조건-분기)
-- [커스텀 값](#커스텀-값)
-- [자주 묻는 질문](#자주-묻는-질문)
-- [추가 이점](#추가-이점)
+**Payment Received** 트리거는 하이퍼클래스 계정에서 결제가 성공하면 자동화된 워크플로우를 시작해요. 퍼널, 인보이스, 캘린더, 멤버십, 폼에서 들어온 결제는 물론 수동으로 입력한 결제도 포함돼요. 일회성 결제든 반복되는 구독 결제든, 결제가 이루어지는 즉시 자동으로 대응할 수 있어요.
 
-# 결제 수신됨 워크플로우 트리거란?
+수동 후속 작업을 줄이고, 결제를 확인하고, 고객과 내부 팀에 일관되게 안내하는 데 꼭 필요한 자동화 도구예요.
 
-결제 수신됨 트리거는 워크플로우에서 사용될 때 들어오는 결제를 기반으로 프로세스와 액션을 자동화합니다. CRM 전반의 모든 결제 이벤트(예: 일회성 구매, 구독 결제, 인보이스 등)에 대응하도록 구성할 수 있으며, 성공하거나 실패한 거래, 특정 상품 및 결제 소스에 반응합니다.
+## Payment Received 트리거의 주요 장점
 
-트리거는 일치하는 결제가 수신될 때마다 즉시 워크플로우를 시작하여 확인 이메일 발송, 인보이스 생성, 고객 기록 업데이트 등의 액션을 자동화할 수 있습니다. 사용자는 거래 유형, 결제 소스 또는 상품과 같은 다양한 필터를 트리거에 적용할 수 있습니다. 이를 통해 구독 갱신이나 결제 실패와 같은 특정 시나리오에 맞는 타겟 워크플로우를 생성할 수 있습니다.
+결제 후속 작업을 자동화하면 응답 시간이 짧아지고, CRM과 팀이 바로 최신 상태를 유지할 수 있어요. 사업자와 고객 모두 결제 이후 과정이 매끄러워져요.
 
-워크플로우에서 조건 분기(If/Else)를 사용하면 금액, 소스, 거래 상태 등 결제 특성에 따라 매우 구체적인 상황에서 다른 액션을 실행할 수 있습니다. 워크플로우 액션은 분석 및 보고 목적으로 결제 데이터를 캡처할 수도 있습니다. 들어오는 결제와 그 속성을 모니터링하여 비즈니스는 매출 성과, 고객 행동 및 잠재적 개선 영역에 대한 인사이트를 얻을 수 있습니다.
+- 즉시 확인 메시지 보내기: 결제가 처리되는 즉시 확인 이메일이나 SMS를 자동으로 보내, 고객이 안심할 수 있어요.
+- 연락처 정보 업데이트: 태그를 추가하거나 커스텀 필드를 업데이트하거나 내부 메모를 남겨, 고객 프로필에 결제 상태를 직접 입력하지 않고도 반영할 수 있어요.
+- 팀에 바로 알리기: 영업, 지원, 배송 담당 팀에 실시간으로 알려 결제 성공 직후 바로 대응하게 할 수 있어요.
+- 업셀 또는 멤버십 액세스 실행: 구매 유형에 따라 업셀 제안, 보너스 콘텐츠 전달, 멤버십 액세스 부여 같은 시퀀스를 시작할 수 있어요.
+- 결제 실패 후속 조치 자동화: 결제 실패 시 재시도, 알림, 맞춤 메시지를 보내는 워크플로우를 만들어 놓친 매출을 되찾을 수 있어요.
+- 구독·인보이스 추적 간소화: 반복 결제나 인보이스 완료를 추적하고, 특정 후속 작업이나 CRM 업데이트와 쉽게 연결할 수 있어요.
 
-## 결제 수신됨 워크플로우 트리거의 주요 이점
+## Payment Received 트리거 설정 방법
 
-결제 수신됨 트리거는 수많은 사용 사례와 이점을 제공하여 비즈니스가 프로세스를 자동화하고, 고객 경험을 개선하며, 결제 데이터에서 인사이트를 얻을 수 있도록 도와줍니다. 일반적인 사용 사례와 그 이점은 다음과 같습니다:
+이 트리거를 설정하면 결제가 일어나는 즉시 시스템이 대응해요. 아래 순서대로 따라 하세요.
 
-- 자동 결제 확인: 결제가 처리될 때 고객에게 자동 확인 이메일이나 메시지를 발송하여 고객 만족도를 높입니다.
-- 구독 관리: 구독 결제가 성공하거나 실패할 때 시스템의 구독 상태를 자동으로 업데이트하여 구독 관리를 간소화함으로써 비즈니스 효율성을 높입니다.
-- 결제 실패 해결: 결제 실패가 발생할 때 고객 지원 또는 영업팀에 자동으로 알려 고객을 지원하고 결제 문제를 신속하게 해결합니다.
+### 새 워크플로우 시작하기
 
-# 결제 수신됨 트리거 사용법
+1. 왼쪽 메뉴에서 **자동화 > 워크플로우**로 이동해요.
+2. 오른쪽 위의 **+ Create Workflow**(워크플로우 만들기)를 클릭해요.
+3. 드롭다운에서 **처음부터 시작**을 선택하면 빈 상태에서 워크플로우를 직접 만들 수 있어요.
 
-1단계: 워크플로우 내에서 결제 수신됨(Payment Received)이라는 워크플로우 트리거를 추가합니다.
+![새 워크플로우를 처음부터 시작하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050116574/original/x0cORXcHZjSdiS0SL9JQA2p3uJPySbhr7w.png?1753000724)
 
-![워크플로우 트리거 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041535027/original/LuaYlXLD0wUPr6GAtd8O9TKuYMunxgXfEA.png?1739444985)
+### 트리거 유형 선택하기
 
-"필터 추가"를 클릭하여 필터를 선택합니다. 그런 다음 "필터 추가"를 다시 클릭하여 하위 필터를 추가합니다.
+1. **+ Add New Trigger**(새 트리거 추가)를 클릭해 트리거 목록을 열어요.
+2. **Payments**(결제) 섹션까지 스크롤해요.
+3. **Payment Received**를 선택해 결제 자동화를 만들기 시작해요.
 
-## 필터
+![Payments 섹션에서 Payment Received 트리거를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050116687/original/2PSjzaoe7Yf22PPaoo-SbRwR2fxQY9YeKg.png?1753001737)
 
-필터를 사용하여 워크플로우 트리거를 더 구체적으로 만들 수 있습니다. 다음은 사용 가능한 모든 필터와 하위 필터의 표입니다.
+### 트리거 이름 정하기
 
-| 트리거 | 필터 | 필터 레벨 옵션 | 하위 필터 레벨 1 | 하위 필터 레벨 1 옵션 | 연산자 |
-|--------|------|---------------|----------------|-------------------|--------|
-| 결제 수신됨 | 결제 소스(Payment Source) | 인보이스(Invoice) | 하위 소스(Sub-Source) | Text2Pay 링크 | is, is not |
-| | | 일회성 인보이스(One-time invoice) | | |
-| | | 반복 템플릿(Recurring template) | | |
-| | | 퍼널/웹사이트(Funnel/Website) | 하위 소스(Sub-Source) | 원스텝 주문 폼(One-step order form) |
-| | | | | 투스텝 주문 폼(Two-step order form) |
-| | | | | 업셀(Upsell) |
-| | | | 거래 유형(Transaction type) | 고객 참여/첫 거래(Customer present/first transaction) |
-| | | | | 고객 비참여/구독 거래(Customer not present/subscription transaction) |
-| | | 캘린더(Calendar) | 캘린더(Calendar) | 캘린더 이름들 |
-| | 글로벌 상품(Global Product) | 글로벌 상품 이름들 | | |
-| | | 가격(Price) | | 선택된 글로벌 상품에 따른 가격 이름들 |
-| | 결제 상태(Payment status) | 성공(Success) | | |
-| | | 실패(Failed) | --- | |
+트리거를 알아보기 쉬운 이름으로 지어 주세요(예: "코스 액세스 결제"). 결제 트리거를 여러 개 쓸 때 이름을 잘 지어 두면 워크플로우를 정리하고 구분하기 쉬워요.
 
-예를 들어, 투스텝 주문 폼이 제출될 때 워크플로우가 트리거되기를 원한다면, (1) 결제 소스 > (2) is > (3) 퍼널을 선택한 다음 필터 추가 > (4) 하위 소스 > (5) is > (6) 투스텝 주문 폼을 선택합니다.
+![트리거 이름을 입력하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050116690/original/Ihz0uZ2QTFKDXT_-LyMOfRE_llUzGCkeBg.png?1753001757)
 
-![필터 설정 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038871990/original/jIbyU9wy4QW1uUfU59g0Oe0Lj9gvorYF8g.png?1735067718)
+### 필터 추가하기
 
-## 조건 분기
+**+ Add filters**(필터 추가)를 클릭하면 워크플로우를 시작할 결제 이벤트를 좁힐 수 있어요. 필터로 특정 거래 유형, 결제 경로, 상품, 상태만 골라 낼 수 있어요.
 
-워크플로우 트리거에 원하는 필터 및 하위 필터 세트를 추가한 후, 특정 조건에 따라 워크플로우를 분기해야 하는 경우 결제에 대한 조건 분기(If/Else)를 추가할 수 있습니다.
+- **Source**(결제 경로) 필터: 결제가 어디에서 발생했는지 지정해요. 사용한 결제 채널에 맞게 자동화를 조정할 수 있어요.
+- **Calendar**(캘린더): 캘린더 예약 중에 이루어진 결제예요.
+- **External**(외부): Stripe, PayPal 같은 외부 서비스나 외부 API 연동으로 이루어진 결제예요.
+- **Form**(폼): 결제 요소가 들어 있는 폼으로 제출된 결제예요.
+- **Funnel**(퍼널): 원스텝, 투스텝 주문 폼 같은 퍼널 페이지에서 이루어진 결제예요.
+- **Invoice**(인보이스): 하이퍼클래스의 인보이스 기능으로 보낸 인보이스를 통해 완료된 결제예요.
+- **Manual Payment**(수동 결제): CRM 안에서 수동으로 기록한 결제예요.
+- **Memberships**(멤버십): 멤버십 상품이나 코스 이용 권한과 관련해 발생한 결제예요.
+- **Website**(웹사이트): 이커머스 스토어프론트(상품 또는 구독)에서 이루어진 결제예요.
 
-![조건 분기 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041545885/original/t7AzOXeC_h2Ny9inaeFgWD2IvemRTkKBPw.gif?1739451375)
+![필터 추가 후 Source 필터 항목을 고르는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050116698/original/RPFEGNqmD673018pMhM3KDxyqsJalScwXw.png?1753001776)
 
-이 표는 가능한 조건 분기 옵션과 그 분기를 설명합니다.
+### 필터 조건 고르기
 
-| If/Else 옵션 | 액션 | 연산자 | 옵션 |
-|--------------|------|--------|------|
-| 결제(Payment) | 상품(Product) | is, is not | 글로벌 상품 이름들 |
-| | 퍼널/웹사이트(Funnel/Website) | | 퍼널/웹사이트 이름들 |
-| | 캘린더(Calendar) | | 캘린더 이름들 |
-| | 소스(Source) | | 인보이스, 퍼널, 웹사이트, 캘린더 |
-| | 결제 상태(Payment status) | | 성공/실패 |
-| | 금액(Amount) | 같음, 같지 않음, 초과, 이상, 미만, 이하, 비어있지 않음, 비어있음 | |
-| | 지불 금액(Amount paid) | | |
+**Global Product**(전체 상품), **Payment Status**(결제 상태), **Source** 같은 기본 필드 중에서 선택해요. 이 필터로 원하는 거래 유형만 정확하게 골라 워크플로우를 제어할 수 있어요.
 
-## 커스텀 값
+![필터 기준 필드를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050116708/original/_cbjeR-U2qXh0JHoyh_Sq6b3EuN30yinHQ.png?1753001796)
 
-결제 수신됨 워크플로우 트리거를 추가하고 구성한 후, 워크플로우 액션은 SMS, 이메일, 내부 알림 등에서 채울 수 있는 커스텀 값(Custom Values) 세트에 접근할 수 있습니다. 이 표는 커스텀 값에 대해 자세히 설명합니다.
+### 상품으로 필터링하기
 
-| 커스텀 값 카테고리 | 커스텀 값 이름 (커스텀 값 그룹명) | 그룹 내 커스텀 값 | 값 |
-|------------------|--------------------------|-----------------|-----|
-| 결제(Payment) | 소스(Source) | | {{payment.source}} |
-| | 통화 기호(Currency Symbol) | | {{payment.currency_symbol}} |
-| | 통화 코드(Currency Code) | | {{payment.currency_code}} |
-| 고객(Customer) (커스텀 값 그룹) | ID | | {{payment.customer.id}} |
-| | 이름(First Name) | | {{payment.customer.first_name}} |
-| | 성(Last Name) | | {{payment.customer.last_name}} |
-| | 전체 이름(Name) | | {{payment.customer.name}} |
-| | 이메일(Email) | | {{payment.customer.email}} |
-| | 전화번호(Phone) | | {{payment.customer.phone}} |
-| | 전체 주소(Full Address) | | {{payment.customer.address}} |
-| | 도시(City) | | {{payment.customer.city}} |
-| | 주(State) | | {{payment.customer.state}} |
-| | 국가(Country) | | {{payment.customer.country}} |
-| | 우편번호(Postal Code) | | {{payment.customer.postal_code}} |
-| 인보이스(Invoice) (커스텀 값 그룹) | 이름(Name) | | {{payment.invoice.name}} |
-| | 번호(Number) | | {{payment.invoice.number}} |
-| | 발행일(Issue Date) | | {{payment.invoice.issue_date}} |
-| | 만료일(Due Date) | | {{payment.invoice.due_date}} |
-| | URL | | {{payment.invoice.url}} |
-| | 기록자(Recorded By) | | {{payment.invoice.recorded_by}} |
-| | 소계(Sub-Total) | | {{payment.sub_total_amount}} |
-| | 할인 금액(Discount Amount) | | {{payment.discount_amount}} |
-| | 쿠폰 코드(Coupon Code) | | {{payment.coupon_code}} |
-| | 세금 금액(Tax Amount) | | {{payment.tax_amount}} |
-| | 생성일(Created On) | | {{payment.created_on}} |
-| | 총 금액(Total Amount) | | {{payment.total_amount}} |
-| | 거래 ID(Transaction ID) | | {{payment.transaction_id}} |
-| | 상태(Status) | | {{payment.payment_status}} |
-| | 게이트웨이(Gateway) | | {{payment.gateway}} |
-| | 카드 마지막 4자리(Card Last 4 Digits) | | {{payment.card.last4}} |
-| | 카드 브랜드(Card Brand) | | {{payment.card.brand}} |
-| | 방법(Method) | | {{payment.method}} |
+필터 유형으로 **Global Product**를 고르고 특정 상품 이름을 선택해요. 그러면 해당 상품의 결제가 들어올 때만 워크플로우가 실행돼요.
+
+![Global Product 필터로 상품을 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050116721/original/k3O79ZWXOElOzn3KRmTG2ltFQMRlI06IAg.png?1753001844)
+
+### 결제 상태로 필터링하기
+
+**Payment Status** 필터를 추가하고 **Success**(성공)로 설정해요. 그러면 결제가 성공적으로 완료됐을 때만 워크플로우가 실행돼요.
+
+![Payment Status 필터를 Success로 설정하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050116737/original/nXTuhHc7FuFv_OsJqyE1vEd2OqbdDg6ybQ.png?1753001909)
+
+### 결제 경로로 필터링하기
+
+**Source** 필터를 추가하고 **Calendar**로 설정해요. 그러면 캘린더 예약으로 이루어진 결제에만 트리거가 작동해요.
+
+![Source 필터를 Calendar로 설정하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050116748/original/teTGp3tGLqp0NBgrPnNFjYtWEhBnuROuQg.png?1753001979)
+
+### 캘린더 지정하기
+
+**Calendar** 필터에서 정확한 캘린더를 선택해요(예: "Pat의 캘린더"). 특정 예약 캘린더에만 워크플로우를 연결해 더 정밀하게 조정할 수 있어요.
+
+![특정 캘린더를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050116755/original/N4UdU1ssmlcz17Zwyia1CNItBvxZSq_aVQ.png?1753002008)
+
+### 트리거 저장하기
+
+필터를 모두 적용했다면 **Save Trigger**(트리거 저장)를 클릭해 설정을 마무리해요. 이렇게 저장하면 정해 둔 조건에서만 워크플로우가 실행돼요.
+
+![Save Trigger 버튼으로 트리거를 저장하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050116763/original/k_IEYOaW9JUfgXxUb0TOhFznxYWHIt_sog.png?1753002034)
 
 ## 자주 묻는 질문
 
-**하위 소스 필터란 무엇인가요?**
+### 상품이나 멤버십 플랜으로 필터링할 수 있나요?
 
-퍼널/웹사이트/인보이스 같은 소스를 선택하면 하위 소스가 있을 수 있습니다. 예를 들어 퍼널에서 오는 결제는 원스텝 주문 폼, 투스텝 주문 폼 또는 업셀을 통해 올 수 있습니다. 이러한 하위 소스 필터를 사용하여 결제의 출처를 정의할 수 있습니다.
+네. **Source**와 **Sub-Source** 필터를 쓰면 특정 퍼널, 캘린더, 멤버십에서 발생한 결제만 골라 낼 수 있어요.
 
-**이 트리거에 초기 구독 결제와 후속 구독 결제가 모두 포함되나요?**
+### 결제 실패에도 이 트리거를 쓸 수 있나요?
 
-네, 트리거는 최종 고객이 주문 폼 제출을 통해 직접 결제할 때와 백그라운드에서 구독이 청구될 때마다 실행됩니다.
+네, 쓸 수 있어요. "Payment Status = Failed"(실패) 필터를 사용하면 재시도나 미납 안내 이메일을 위한 후속 워크플로우를 만들 수 있어요.
 
-**고객 참여/첫 거래와 고객 비참여/구독 거래는 무엇을 의미하나요?**
+### 결제 금액 같은 커스텀 값을 쓸 수 있나요?
 
-거래 유형을 두 가지 카테고리로 분류합니다:
+네. `{{Payment Amount}}`, `{{Transaction ID}}` 같은 동적 필드를 이메일이나 내부 알림에 사용할 수 있어요.
 
-- 고객 참여/첫 거래 - 최종 고객이 세션에 있고 결제를 하는 거래를 포함합니다. 모든 일회성 구매와 구독 상품의 첫 번째 주문이 포함됩니다.
-- 고객 비참여/구독 거래 - 구독이 이미 생성된 후 백그라운드에서 실행되는 거래 유형을 포함합니다. 예를 들어, 고객이 14일 체험 기간이 있는 반복 상품을 구매하는 경우, 반복 상품 구매 시의 거래(이 경우 $0 거래)는 고객 참여/첫 거래에 해당합니다. 14일 후 체험 기간이 끝나고 반복 상품에 대해 $100을 청구할 때, 이 $100 거래는 고객 비참여/구독 거래 카테고리에 해당합니다.
+### 트리거를 테스트하려면 어떻게 하나요?
 
-**성공적인 후속 구독 거래에 대한 트리거를 어떻게 구성하나요?**
+샌드박스 결제 환경을 쓰거나, 테스트 상품으로 실제 결제를 진행해 보세요. 테스트하기 전에 워크플로우가 활성화되어 있는지 꼭 확인하세요.
 
-구독은 퍼널이나 웹사이트에서 생성될 수 있으므로, 결제 수신됨 트리거를 생성하고 사용 사례를 달성하기 위해 다음 필터를 적용할 수 있습니다. 소스 유형은 퍼널/웹사이트입니다. 거래 유형은 "고객 비참여/구독 거래"입니다. 결제 상태 필터는 사용 사례에 따라 성공하거나 실패한 결제를 필터링할 수 있습니다.
+### 다른 트리거와 함께 쓸 수 있나요?
 
-![후속 구독 거래 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041546117/original/7l-LgbEmh0f0FKJXnSMQQaI9SLxv8aWYFw.png?1739451471)
+네. 한 워크플로우에 트리거를 여러 개 넣을 수 있어요. 또는 If/Else 분기를 써서 결제 경로나 결과에 따라 흐름을 나눌 수도 있어요.
 
-**실패한 결제도 이 트리거에서 캡처되나요?**
+### Stripe 반복 결제용 트리거가 따로 있나요?
 
-네, 기본적으로 필터 없이는 성공한 결제 시도와 실패한 결제 시도 모두에서 트리거가 실행됩니다. 성공/실패 결제에 대한 특정 사용 사례의 경우 "거래 상태" 필터를 적용하여 사용 사례에 따라 성공/실패로 설정할 수 있습니다.
+Stripe 전용 트리거는 없어요. 결제 게이트웨이에 관계없이 동작하도록 설계되었기 때문이에요. 대신 Stripe 반복 결제는 세 가지 트리거로 잡을 수 있고, 트리거마다 잘 맞는 용도가 달라요.
 
-![거래 상태 필터](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041546210/original/xyXYNTCf_UL6-vTxallLYkcJpPrgJmeFpg.png?1739451511)
+| 트리거 | 반복 결제 시 실행되나요? | 이럴 때 좋아요 |
+| --- | --- | --- |
+| **Payment Received** | 네 — "Customer not present/subscription transaction"으로 필터링해요 | 가장 세밀하게 제어할 수 있고 게이트웨이와 상관없이 쓸 수 있어요. Payment Status 필터로 결제 실패도 처리할 수 있어요. 카드 끝 4자리, 브랜드, 거래 ID, 게이트웨이 같은 `{{payment.*}}` 커스텀 값을 풍부하게 쓸 수 있어요 |
+| **Order Submitted**(주문 제출) | 네 — 반복 결제가 성공할 때 실행돼요 | 구매 후 업셀, Shopping Cart 이메일 템플릿 자동 채우기, 주문 단위 커스텀 값(장바구니 합계, 상품, 쿠폰, 게이트웨이)에 좋아요. V2 퍼널에서만 쓸 수 있어요 |
+| **Subscription**(구독) | 네 — 구독 수명 주기 이벤트(생성, 업데이트, 일시중지, 재개, 취소)에서만 실행돼요 | 개별 결제가 아니라 구독 상태 변화에 대응할 때 좋아요 |
 
-**트리거를 구성하고 필터에서 특정 상품을 선택했습니다. 이것은 해당 상품이 어디서든 판매될 때 트리거가 실행된다는 의미인가요?**
+#### 어떤 트리거를 고를까요?
 
-트리거를 구성하고 특정 상품에 대한 필터를 설정했다면, 해당 상품이 퍼널/웹사이트/인보이스에서 판매될 때만 실행됩니다. 거래 상태 필터를 사용하여 구매가 성공했을 때 또는 구매가 실패했을 때 트리거가 작동해야 하는지 정의할 수 있습니다.
+- 실패를 포함해 모든 반복 결제에 대응해야 한다면 → **Payment Received** + "Customer not present/subscription transaction" 필터 + Payment Status 필터
+- 반복 결제가 성공한 뒤 상품 정보가 담긴 확인 이메일을 보내려면 → **Order Submitted** (Shopping Cart 이메일 요소가 항목을 자동으로 채워 줘요)
+- 구독 생성·일시중지·취소에 대응하려면 → **Subscription** 트리거
 
-## 추가 이점
+{% hint style="warning" %}
+**알아 두세요**
 
-- **연체 관리**: 구독 결제에 실패한 고객을 위해 자동으로 연체 이메일 시퀀스를 트리거합니다. 결제 실패를 신속하게 처리하여 수익 회복을 개선하고, 이탈을 줄이며, 고객 유지율을 향상시킵니다.
-
-- **고객 세그먼테이션**: 결제 데이터를 사용하여 고가치 고객이나 단골 구매자와 같은 구매 행동을 기반으로 고객 세그먼트를 생성합니다. 타겟 마케팅 캠페인을 가능하게 하고, 업셀이나 교차 판매 기회를 식별하는 데 도움을 주며, 개인화된 고객 경험을 촉진합니다.
-
-- **매출 성과 추적**: 결제 데이터를 모니터링하여 매출 성과를 추적하고 베스트셀러 상품, 계절적 변동 또는 고객 선호도와 같은 트렌드를 파악합니다. 전략적 의사결정을 위한 귀중한 인사이트를 제공하고, 매출 전략을 최적화하며, 수익 성장을 촉진합니다.
-
-- **회계 시스템과의 연동**: 아웃바운드 웹훅을 사용하여 인보이스 발행, 수익 인식 또는 세금 계산과 같은 결제 정보로 회계 기록을 자동으로 업데이트합니다. 정확한 재무 보고를 보장하고, 회계 프로세스를 간소화하며, 수동 데이터 입력을 줄입니다.
-
-- **체험 기간 거래 처리**: 결제 수신됨 트리거는 14일 체험과 같은 구독 상품의 체험 기간과 관련된 거래를 효과적으로 관리합니다. 이 예에서 고객이 체험에 가입하고 선불로 $0을 지불할 때, 트리거는 이를 고객이 세션에 있고 결제 정보를 입력하고 있으므로 고객 참여 거래로 분류합니다. 14일 체험이 끝나면 고객은 결제 세부 정보를 다시 입력하지 않고 자동으로 $100이 청구됩니다. 이 후속 거래는 백그라운드에서 발생하므로 고객 비참여 거래로 간주됩니다. 결제 수신됨 트리거를 통해 비즈니스는 체험 기간 거래를 정확하게 추적하고 자동화 워크플로우를 구성할 수 있습니다. 체험 기간 거래를 효율적으로 처리함으로써 비즈니스는 고객 경험을 향상시키고, 구독 관리를 개선하며, 수동 개입을 줄여 고객 만족도와 유지율을 높일 수 있습니다.
-
-- **Text2Pay 링크 통합**: 결제 수신됨 트리거는 Text2Pay 링크를 결제 소스로 지원하여 비즈니스가 텍스트 메시지 기반 방법을 통해 받은 결제에 대한 워크플로우를 자동화할 수 있게 합니다. 트리거 구성에서 Text2Pay 링크를 포함시킴으로써 비즈니스는 이러한 거래를 효과적으로 관리하고 대응하여 전반적인 고객 경험을 개선하고 결제 처리를 간소화할 수 있습니다. 결제 수신됨 트리거와 함께 Text2Pay 링크를 활용하면 비즈니스가 더 넓은 고객층에 도달하고, 결제 처리를 가속화하며, 고객 커뮤니케이션을 단순화하여 궁극적으로 수익 증가와 고객 충성도로 이어집니다.
-
----
-*원문 최종 수정: Thu, 13 Feb, 2025 at 7:32 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+- Stripe 반복 결제를 만드는 기본 제공 액션은 없어요. **Stripe One-Time Charge**(Stripe 일회성 결제) 액션은 일회성 결제 전용이에요. Stripe에서 반복 결제를 하려면 Stripe에서 직접 설정한 뒤, 위 트리거 중 하나로 결제에 대응하세요.
+- **Order Submitted**는 V2 퍼널이 필요해요. V1을 쓰고 있다면 **Payment Received**를 사용하세요.
+- 세 트리거 모두 Stripe, PayPal 등 연결된 모든 게이트웨이에서 작동해요. 결제 이벤트를 하나의 형식으로 통일해 처리하기 때문이에요.
+{% endhint %}

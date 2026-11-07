@@ -1,17 +1,19 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 09-이메일 > SMTP
+원문: /support/solutions/articles/48001188211-creating-your-saas-affiliate-program-using-firstpromoter-
+번역일: 2026-11-07
+카테고리: 09-이메일
 ---
 
-# FirstPromoter를 사용한 SaaS 제휴 프로그램 만들기
+# FirstPromoter로 SaaS 제휴 프로그램 만들기
 
-이 영상에서는 FirstPromoter를 사용하여 Hyperclass와 연동된 나만의 제휴 추천 프로그램(Affiliate Referral Program)을 설정하는 방법을 보여드립니다.
+FirstPromoter를 이용해 하이퍼클래스와 연동되는 나만의 제휴 추천 프로그램을 만드는 방법을 안내하는 문서예요. SaaS 서비스에 제휴 추천 프로그램을 도입하려고 할 때 참고하세요.
 
-나만의 리워드 플랜을 만드는 데 도움이 필요하시면 [https://help.firstpromoter.com/en/](https://help.firstpromoter.com/en/) 에서 더 자세히 알아보세요.
+<!-- 원문의 안내 영상(YouTube)은 하이퍼클래스 외 브랜드가 노출될 수 있어 링크를 뺐어요. -->
 
-Hyperclass 개발 파트너인 Nathan Shearer가 Hyperclass와 FirstPromoter 간의 연동 방법에 대한 영상도 제작했으니 참고해보세요: [https://www.youtube.com/watch?v=akTbNB5aqtk](https://www.youtube.com/watch?v=akTbNB5aqtk)
+## 보상 플랜 만들기
 
----
-*원문 최종 수정: Tue, 27 Jul, 2021 at 9:31 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+나만의 보상 플랜을 만드는 방법은 [FirstPromoter 도움말](https://help.firstpromoter.com/en/)에서 자세히 볼 수 있어요.
+
+## 참고 자료
+
+하이퍼클래스 개발 파트너인 Nathan Shearer 님도 하이퍼클래스와 FirstPromoter를 연동하는 영상을 만들었어요.

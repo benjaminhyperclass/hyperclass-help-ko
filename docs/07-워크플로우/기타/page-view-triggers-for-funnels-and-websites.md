@@ -1,80 +1,65 @@
 ---
-
-번역일: 2026-04-09
-카테고리: 99-리커버리
+원문: /support/solutions/articles/155000002027-page-view-triggers-for-funnels-and-websites
+번역일: 2026-11-07
+카테고리: 07-워크플로우
 ---
 
-# 퍼널과 웹사이트의 페이지뷰 트리거
+# 워크플로우 트리거 — Funnel/Website Pageview(퍼널/웹사이트 페이지 조회)
 
-페이지 방문 트리거(Page Visited Trigger) 기능을 사용하면 워크플로우에서 고객의 페이지 방문을 기반으로 자동화를 설정할 수 있습니다. 이 문서는 이 기능을 효과적으로 활용하는 방법을 단계별로 안내합니다. 다음 단계를 따라하면 고객의 페이지 방문을 기반으로 워크플로우를 자동화하여 고객 참여도와 추적 기능을 향상시킬 수 있습니다.
+**Page Visited**(페이지 방문) 트리거를 쓰면 방문자가 퍼널이나 웹사이트의 페이지를 열 때 워크플로우를 자동으로 시작할 수 있어요. 이 문서에서는 트리거를 만드는 순서를 설명해요. 고객이 어떤 페이지를 방문했는지에 따라 자동화를 실행하면 고객과 소통하고 방문 기록을 추적하는 데 도움이 돼요.
 
-**목차**
+## 워크플로우에서 페이지 조회 트리거 만들기
 
-- [워크플로우에서 페이지뷰 트리거 만드는 단계](#워크플로우에서-페이지뷰-트리거-만드는-단계)
-- [1단계: 워크플로우로 이동](#1단계-워크플로우로-이동)
-- [2단계: 트리거 추가 - 퍼널/웹사이트 페이지뷰 트리거](#2단계-트리거-추가-퍼널웹사이트-페이지뷰-트리거)
-- [3단계: 필터 추가](#3단계-필터-추가)
-- [4단계: 특정 페이지/페이지 경로 추가](#4단계-특정-페이지페이지-경로-추가)
-- [5단계: UTM 파라미터 추가](#5단계-utm-파라미터-추가)
-- [이 트리거의 주요 활용 사례](#이-트리거의-주요-활용-사례)
-- [자주 묻는 질문 (FAQ)](#자주-묻는-질문-faq)
+아래 순서대로 퍼널/웹사이트 페이지 조회 트리거를 만들 수 있어요.
 
----
+### 1단계: 워크플로우 열기
 
-### 워크플로우에서 페이지뷰 트리거 만드는 단계
+1. 왼쪽 메뉴에서 **자동화**를 열고 새 워크플로우를 만들어요.
 
-다음 단계에 따라 퍼널/웹사이트 페이지뷰 트리거를 만들 수 있습니다.
+   ![자동화 메뉴에서 새 워크플로우를 만드는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155020973553/original/nXTnGMWJdS-pdIAns26j9v7UiC2othNEXg.png?1708417538)
 
-### 1단계: 워크플로우로 이동
+### 2단계: 트리거 추가 — Funnel/Website Pageview
 
-- Automation(자동화) 탭을 열고 새 워크플로우를 만드세요.
+1. 워크플로우 트리거 목록에서 **Funnel/Website Pageview**(퍼널/웹사이트 페이지 조회)를 선택해요.
 
-![워크플로우 생성](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155020973553/original/nXTnGMWJdS-pdIAns26j9v7UiC2othNEXg.png?1708417538)
+   ![워크플로우 트리거 목록에서 Funnel/Website Pageview를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155020973786/original/fVNObjli6e958eljQVGICfbxBAT9l8YYsg.png?1708417652)
 
-### 2단계: 트리거 추가 - 퍼널/웹사이트 페이지뷰 트리거
-
-- 워크플로우 트리거로 퍼널/웹사이트 페이지뷰를 선택하세요.
-
-![페이지뷰 트리거 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155020973786/original/fVNObjli6e958eljQVGICfbxBAT9l8YYsg.png?1708417652)
-
-이 트리거는 연락처가 퍼널/웹사이트를 방문했을 때 작동합니다.
+{% hint style="info" %}
+이 트리거는 연락처가 퍼널이나 웹사이트를 조회했을 때 작동해요.
+{% endhint %}
 
 ### 3단계: 필터 추가
 
-- 페이지뷰를 트리거할 퍼널/웹사이트를 선택하세요.
+1. 페이지 조회를 감지할 퍼널이나 웹사이트를 선택해요.
 
-![퍼널/웹사이트 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155020975079/original/Cxt50Fs_Ae2Cem0UuZuC6Pf8LkuG3AMffg.png?1708418376)
+   ![트리거 필터에서 퍼널 또는 웹사이트를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155020975079/original/Cxt50Fs_Ae2Cem0UuZuC6Pf8LkuG3AMffg.png?1708418376)
 
-### 4단계: 특정 페이지/페이지 경로 추가
+### 4단계: 특정 페이지 또는 Page path 지정
 
-- 전체 퍼널/웹사이트 대신 특정 페이지에서만 페이지뷰를 트리거할 수 있습니다.
+- 퍼널이나 웹사이트 전체가 아니라 특정 페이지에서만 트리거가 작동하게 할 수 있어요.
 
-![특정 페이지 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155020975227/original/FZQNkI7DaPtWdIBvMuTIJsiT7pMMakNzWA.png?1708418509)
+  ![특정 페이지를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155020975227/original/FZQNkI7DaPtWdIBvMuTIJsiT7pMMakNzWA.png?1708418509)
 
-- 특정 페이지 URL에서도 페이지뷰를 트리거할 수 있습니다.
+- 특정 페이지 URL을 지정해서 트리거가 작동하게 할 수도 있어요. 이때는 **Page path**(페이지 경로)를 사용해요.
 
-![페이지 URL 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155020975610/original/YIGdMKO8Kq9t_BDDBlA5mvesQPOReO2o_A.png?1708418716)
+  ![특정 페이지 URL을 입력하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155020975610/original/YIGdMKO8Kq9t_BDDBlA5mvesQPOReO2o_A.png?1708418716)
 
 ### 5단계: UTM 파라미터 추가
 
-- 캠페인용 특정 UTM 파라미터를 지정할 수도 있습니다.
+- 캠페인에 맞는 UTM 파라미터를 지정할 수도 있어요.
 
-![UTM 파라미터 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155020975721/original/EafP-1Lypzgt9XpKpHVsDoOqya70G6oulQ.png?1708418793)
+  ![UTM 파라미터를 지정하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155020975721/original/EafP-1Lypzgt9XpKpHVsDoOqya70G6oulQ.png?1708418793)
 
-## 자주 묻는 질문 (FAQ)
+## 자주 묻는 질문
 
-### Q: 이 기능으로 여러 웹사이트나 퍼널을 동시에 추적할 수 있나요?
+### 여러 웹사이트나 퍼널을 한꺼번에 추적할 수 있나요?
 
-A: 네, 여러 웹사이트나 퍼널의 페이지 방문을 선택해서 추적할 수 있어 포괄적인 참여도 추적이 가능합니다.
+네. 여러 웹사이트나 퍼널을 선택해서 페이지 방문을 함께 추적할 수 있어요. 고객의 참여 현황을 폭넓게 확인하는 데 도움이 돼요.
 
-### Q: 특정 페이지나 페이지 URL 방문을 기반으로 워크플로우를 트리거할 수 있나요?
+### 특정 페이지나 페이지 URL을 방문했을 때만 워크플로우를 시작할 수 있나요?
 
-A: 물론입니다. 특정 페이지나 페이지 URL을 지정하여 자동화를 트리거할 수 있어서, 참여 프로세스를 더 세밀하게 제어할 수 있습니다.
+네. 특정 페이지나 페이지 URL을 지정해서 자동화를 시작할 수 있어요. 고객 참여 과정을 더 세밀하게 관리할 수 있어요.
 
-### Q: 페이지뷰 트리거에 UTM 파라미터를 포함할 수 있나요?
+### 페이지 조회 트리거에 UTM 파라미터를 넣을 수 있나요?
 
-A: 네, UTM 파라미터를 포함하여 트리거 조건을 더 세밀하게 설정할 수 있습니다. 특정 마케팅 캠페인 속성을 기반으로 한 타겟 자동화가 가능합니다.
-
----
-*원문 최종 수정: Wed, 31 Dec, 2025 at 10:35 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+네. UTM 파라미터를 추가하면 트리거 조건을 더 좁힐 수 있어요. 특정 마케팅 캠페인 조건에 맞춰 자동화를 실행할 수 있어요.

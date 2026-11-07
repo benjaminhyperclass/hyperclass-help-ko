@@ -1,58 +1,86 @@
 ---
-
-번역일: 2026-04-06
+원문: /support/solutions/articles/155000002679--mention-or-tag-profile-in-posts-from-social-planner
+번역일: 2026-11-07
 카테고리: 10-마케팅
 ---
 
-# 소셜 플래너 게시물에서 프로필 @멘션 또는 태그하기
+# 소셜 플래너 게시글에서 @멘션·태그하기
 
-소셜 플래너(Social Planner)에서 게시물에 @멘션을 추가할 수 있습니다! @멘션은 Facebook, LinkedIn(회사 페이지만)에서 작동하며, Instagram, TikTok, GMB(구글 마이 비즈니스)에서는 일반 텍스트로 표시됩니다. @멘션은 공개 프로필이나 페이지를 검색합니다.
+**소셜 플래너**(Social Planner)에서 게시글을 만들 때 다른 소셜 계정이나 페이지를 @멘션하는 방법을 안내해요. 플랫폼마다 멘션 방식이 달라서, 어떤 플랫폼에서 되고 안 되는지도 함께 알려 드려요.
 
-여러 소셜 채널을 사용하는 경우, 각 채널별로 게시물을 맞춤 설정하여 이름, 팔로워, 소셜 채널별로 검색할 수 있도록 활성화할지 물어봅니다.
+## @멘션·태그 기능이란?
 
-## 프로필 태그 및 멘션의 주요 이점
+**소셜 플래너**의 @멘션 기능을 쓰면 게시글을 만들면서 지원되는 소셜 프로필이나 페이지를 언급할 수 있어요.
 
-- 고객의 게시물 참여도 향상
-- 브랜드와 인플루언서들이 서로의 콘텐츠를 교차 홍보하기 위해 @멘션을 전략적으로 활용
-- 일부 플랫폼에서는 @멘션이 콘텐츠의 검색 가능성에 기여
+Facebook, LinkedIn처럼 멘션을 지원하는 플랫폼에서는 멘션을 입력할 때 일치하는 페이지가 자동으로 표시돼요. Instagram, TikTok에서는 게시글 내용에 계정의 `@username`을 직접 입력하면 돼요.
 
-## 주요 정보
+멘션 방식은 소셜 네트워크마다 달라요. 그래서 검색, 태그, 표시 옵션도 게시글에 선택한 플랫폼에 따라 달라져요.
 
-- 이 기능은 CSV 및 기타 옵션(리뷰 게시, RSS 게시)에서는 작동하지 않습니다.
-- 태그는 미리보기에서 강조 표시(파란색)로 나타납니다. 이 시각적 강조는 시스템에서 태그가 성공적으로 인식되었음을 확인해 줍니다.
-- **Instagram에서는 멘션 자동 제안이 제공되지 않습니다**. @사용자명을 수동으로 입력해야 하며, 태그되는 사람이 멘션을 허용하도록 설정되어 있어야 합니다.
+## 프로필 태그·멘션의 장점
 
-## 게시물에 멘션 또는 태그 추가하는 방법
+- 고객의 게시글 참여도를 높여 줘요.
+- 브랜드와 인플루언서는 서로의 콘텐츠를 교차 홍보할 때 @멘션을 전략적으로 자주 활용해요.
+- 일부 플랫폼에서는 @멘션이 콘텐츠 검색 노출에 도움이 돼요.
 
-#### **1단계: 소셜 플래너로 이동**
+## 알아 두세요
 
-- 좌측 사이드바에서 마케팅(Marketing)을 선택합니다
-- 상단 네비게이션에서 **소셜 플래너(Social Planner)** 탭을 클릭합니다
+- CSV 업로드, **Review Posting**(리뷰 게시), **RSS Posting**(RSS 게시) 같은 다른 게시 방식에서는 멘션이 동작하지 않아요.
+- 태그가 인식되면 미리보기에서 파란색으로 강조돼요. 이 강조 표시가 보이면 시스템이 태그를 제대로 인식했다는 뜻이에요.
+- **Instagram은 멘션 자동 추천을 지원하지 않아요.** @username을 직접 입력해야 하고, 태그되는 상대방이 멘션을 허용하도록 설정해 두어야 해요.
 
-![소셜 플래너 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155027869759/original/kNAVB-O3oN1JyRvEzTpqrSBzqvM1E-y94Q.png?1718798547)
+## 게시글에 멘션·태그 추가하기
 
-#### **2단계: 새 게시물 작성**
+### 1단계: 소셜 플래너로 이동하기
 
-- 파란색 **+ 새 게시물(+ New Post)** 버튼을 클릭합니다
-- 드롭다운에서 + 새 게시물 작성을 선택합니다
+1. 왼쪽 메뉴에서 **마케팅**(Marketing)을 선택하세요.
+2. 상단 메뉴에서 **소셜 플래너** 탭을 클릭하세요.
 
-![새 게시물 작성](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155027869771/original/1mK26J4E9CRvcWBh-MC1NUCpOxpomSYXgg.png?1718798571)
+![마케팅 메뉴에서 소셜 플래너 탭 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155027869759/original/kNAVB-O3oN1JyRvEzTpqrSBzqvM1E-y94Q.png?1718798547)
 
-#### **3단계: 소셜 채널 선택**
+### 2단계: 새 게시글 만들기
 
-- 새 게시물을 작성하면서 소셜 채널을 선택합니다
-- 여러 소셜 채널을 선택한 경우, 각 채널별 맞춤 설정 옵션을 활성화할지 묻는 창이 나타납니다
+1. 파란색 **+ New Post**(새 게시글) 버튼을 클릭하세요.
+2. 드롭다운에서 **+ 새 게시물 만들기**를 선택하세요.
 
-![소셜 채널 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053996336/original/wtE-OeO4GtUJa0vOtni3srboFp7grC2ayQ.png?1758136843)
+![새 게시글 버튼의 드롭다운에서 새 게시물 만들기 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155085139448/original/XzA9z9hnM1Zddz_SOMWU0E5rh15X38rvTA.png?1793971880)
 
-#### **4단계: 게시물 작성**
+### 3단계: 소셜 채널 선택하기
 
-- 각 소셜 채널별로 게시물을 작성합니다
-- 프로필을 멘션하려면 @ 기호 뒤에 태그하고 싶은 프로필의 사용자명을 입력합니다
-- 처음 몇 글자를 입력하면 추천 옵션이 나타납니다
+1. 게시글을 만들 때 게시할 소셜 채널을 선택하세요.
+2. 소셜 채널을 둘 이상 선택하면 **Customize for Each Channel**(채널별 맞춤 설정) 옵션을 켜라는 안내가 나와요.
 
-![게시물 작성 및 멘션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053996294/original/AwTuGwN8yfM6U2S6gLG5IGkYv-3fvYy2sQ.png?1758136758)
+![게시할 소셜 채널 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155085141556/original/8eNrAMcXckYHBMqjqzn6uOdd8aLlLZHYUw.png?1793973001)
 
----
-*원문 최종 수정: 2025년 10월 24일*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### 4단계: 게시글 작성하기
+
+1. 소셜 채널별로 게시글을 작성하세요.
+2. 프로필을 멘션하려면 `@`를 입력한 뒤 태그할 프로필의 사용자 이름을 이어서 입력하세요.
+3. 처음 몇 글자를 입력하면 추천 항목이 나타나요.
+
+![게시글 작성 중 멘션 추천 항목이 표시된 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053996294/original/AwTuGwN8yfM6U2S6gLG5IGkYv-3fvYy2sQ.png?1758136758)
+
+## 자주 묻는 질문
+
+### Instagram에서 멘션 추천이 안 보여요.
+Instagram은 **소셜 플래너**에서 `@`를 입력해도 프로필 추천을 제공하지 않아요. 게시글 내용에 Instagram 계정의 정확한 `@username`을 직접 입력하세요.
+
+### @멘션이 일반 텍스트로만 표시돼요.
+멘션 방식은 소셜 플랫폼마다 달라요. 어떤 네트워크는 **소셜 플래너** 안에서 검색해서 멘션할 수 있고, 어떤 네트워크는 계정의 `@username`을 직접 입력하는 방식만 지원해요.
+
+### 소셜 플래너에서 Facebook 페이지를 멘션할 수 있나요?
+네, 할 수 있어요. Facebook이 멘션을 지원하는 페이지라면 `@` 다음에 페이지 이름을 입력하고, 표시되는 결과에서 해당 페이지를 선택하세요.
+
+### LinkedIn 프로필이나 페이지도 멘션할 수 있나요?
+**소셜 플래너**는 LinkedIn 회사 페이지(Company Page) 멘션을 지원해요. `@` 다음에 회사 이름을 입력하고, 결과에 나타나는 올바른 페이지를 선택하세요.
+
+### 여러 소셜 플랫폼에 한꺼번에 게시할 때도 멘션을 쓸 수 있나요?
+네, 쓸 수 있어요. 다만 플랫폼마다 멘션 방식이 다를 수 있어요. 선택한 소셜 네트워크마다 멘션 텍스트나 내용을 다르게 하고 싶다면 **Customize for Each Channel**(채널별 맞춤 설정)을 사용하세요.
+
+### 소셜 플래너가 멘션을 인식했는지 어떻게 알 수 있나요?
+인식된 멘션은 **소셜 플래너** 미리보기에서 강조돼 보여요. 게시하기 전에 미리보기에서 의도한 프로필이나 페이지가 선택됐는지 확인하세요.
+
+### CSV, RSS, 리뷰 게시글에서도 @멘션이 되나요?
+아니요. CSV, **RSS Posting**, **Review Posting**으로 만든 게시글에서는 멘션 기능을 지원하지 않아요.
+
+### 멘션하려는 Facebook이나 LinkedIn 페이지가 검색되지 않아요.
+검색 결과는 소셜 플랫폼과, 그 플랫폼 연동으로 확인할 수 있는 프로필·페이지에 따라 달라져요. 페이지 이름을 정확하게 입력해 보고, 지원되는 페이지 유형을 검색하고 있는지도 확인하세요.

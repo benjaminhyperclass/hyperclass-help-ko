@@ -1,41 +1,38 @@
 ---
-
-번역일: 2026-04-06
+원문: /support/solutions/articles/155000004154-wordpress-single-sign-on-admin
+번역일: 2026-11-07
 카테고리: 06-사이트
 ---
 
-# WordPress: 단일 로그인 관리자
+# WordPress 관리자 화면에 한 번에 로그인하기 (SSO)
 
-## SSO: 간편한 WP 관리자 접근
-
-"WP Admin" 버튼을 사용하면 WordPress 대시보드에서 단 한 번의 클릭으로 WordPress 관리자 패널에 쉽게 로그인할 수 있습니다. Single Sign-On(SSO) 덕분에 사용자명이나 비밀번호를 입력할 필요가 없어 빠르고 안전합니다!
+WordPress 대시보드에서 **WP Admin**(WordPress 관리자 화면) 버튼을 클릭하면 WordPress 관리자 화면에 바로 로그인할 수 있어요. 싱글 사인온(SSO)을 쓰기 때문에 아이디와 비밀번호를 입력하지 않아도 돼요.
 
 ## 주요 기능
 
-• **원클릭 로그인**: WordPress 대시보드에서 버튼 클릭만으로 WP 관리자 패널에 즉시 접속
-• **Single Sign-On (SSO)**: 비밀번호 노출 없이 안전하게 로그인할 수 있는 SSO 기능
-• **원활한 통합**: WordPress와 원활하게 작동하며 별도 플러그인이 필요 없음
+- **한 번의 클릭으로 로그인**: WordPress 대시보드에서 버튼 하나만 클릭하면 관리자 화면이 바로 열려요.
+- **싱글 사인온(SSO)**: 비밀번호를 노출하지 않고 안전하게 로그인할 수 있어요.
+- **간편한 연동**: WordPress와 매끄럽게 작동하며, 별도 플러그인이 필요 없어요.
 
-## 이 기능의 장점
+## 이런 점이 편해요
 
-이 기능은 WordPress 사이트 관리를 쉽게 만들어주며, 특히 여러 웹사이트를 관리하는 경우 매우 유용합니다.
+여러 웹사이트를 운영한다면 WordPress 사이트를 더 쉽게 관리할 수 있어요.
 
-• **에이전시에게 유용**: 여러 고객의 웹사이트를 관리하는 에이전시라면, 수많은 비밀번호를 기억할 필요 없이 각 WP 관리자에 빠르게 접근할 수 있습니다.
-• **사이트 소유자에게 도움**: 자신의 사이트를 관리한다면, 별도 로그인 없이 한 번의 클릭으로 WP 관리자에 접속할 수 있습니다.
+- **에이전시**: 여러 고객사의 웹사이트를 맡고 있다면, 비밀번호를 일일이 기억하지 않아도 각 사이트의 관리자 화면을 빠르게 열 수 있어요.
+- **사이트 운영자**: 내 사이트를 직접 관리한다면, 로그인 과정 없이 클릭 한 번으로 관리자 화면에 들어갈 수 있어요.
 
 ## 사용 방법
 
-1. **대시보드로 이동**: Hyperclass에 로그인하고 WordPress 대시보드를 엽니다.
-![대시보드 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155036344521/original/ElAzZg_lJq6zOxBf3_9nSBAlXhNcF2u3VA.png?1731329783)
+1. **대시보드로 이동**: 하이퍼클래스에 로그인하고 WordPress 대시보드를 열어요.
 
-2. **버튼 찾기**: 각 사이트 옆에 "WP Admin" 버튼이 보입니다.
-![WP Admin 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155036344537/original/eH98xg4l8ybOKn_6W_mU1nmIkBXZTtAqFg.png?1731329799)
+   ![WordPress 대시보드 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155036344521/original/ElAzZg_lJq6zOxBf3_9nSBAlXhNcF2u3VA.png?1731329783)
 
-3. **클릭하여 로그인**: 버튼을 누르면 바로 WP 관리자로 이동합니다.
-![WP 관리자 패널](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155036345893/original/HNoDROTwXv9oyHABA8LCsLGaxNVHXTg.png?1731330733)
+2. 버튼 찾기: 각 사이트 옆에 있는 **WP Admin** 버튼을 찾아요.
 
-이제 간단하고 안전한 클릭만으로 관리자 패널에서 WordPress 사이트를 쉽게 관리할 수 있습니다! Single Sign On이 비밀번호 없이도 안전하게 로그인을 보장합니다.
+   ![사이트 옆에 표시된 WP Admin 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155036344537/original/eH98xg4l8ybOKn_6W_mU1nmIkBXZTtAqFg.png?1731329799)
 
----
-*원문 최종 수정: Thu, 12 Dec, 2024 at 2:53 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+3. 클릭해서 로그인: **WP Admin** 버튼을 클릭하면 WordPress 관리자 화면으로 바로 이동해요.
+
+   ![WP Admin 버튼을 클릭해 관리자 화면으로 이동하는 모습](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155036345893/original/HNoDROTwXv9oyHABA8LCsLgzLGaxNVHXTg.png?1731330733)
+
+이제 클릭 한 번으로 WordPress 관리자 화면에서 사이트를 관리할 수 있어요. 싱글 사인온을 쓰면 비밀번호 없이도 로그인 정보를 안전하게 지킬 수 있어요.

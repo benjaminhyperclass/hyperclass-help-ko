@@ -1,190 +1,185 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 11-설정 > Domain Connect
+원문: /support/solutions/articles/155000005132-connecting-your-domain-on-ghl-a-guide
+번역일: 2026-11-06
+카테고리: 11-설정
 ---
 
-# Hyperclass에서 도메인 연결하기 - 완전 가이드
+# 도메인 연결 가이드
 
-도메인을 하이퍼클래스에 연결하면 웹사이트, 퍼널, 이메일, 클라이언트 도구 전반에서 일관된 브랜드 경험을 제공할 수 있습니다. 이 가이드에서는 도메인 연결 과정과 각 제품에서 연결된 도메인을 어떻게 활용하는지 자세히 설명합니다.
+도메인을 하이퍼클래스에 연결하면 웹사이트, 퍼널, 이메일, 고객용 도구에서 브랜드를 일관되게 보여 줄 수 있어요. 이 문서에서는 도메인을 연결하는 방법과, 연결한 도메인을 제품별로 어떻게 쓰는지 안내해요.
 
----
+## 도메인 연결 단계별 안내
 
-목차
+도메인을 하이퍼클래스에 연결하는 방법은 크게 두 가지예요.
 
-- [도메인 연결 단계별 가이드](#도메인-연결-단계별-가이드)
-- [도메인 연결 문제해결](#도메인-연결-문제해결)
-- [도메인을 연결할 수 있는 제품들](#도메인을-연결할-수-있는-제품들)
-- [전문가 팁](#전문가-팁)
-- [유용한 링크](#유용한-링크)
+### 1. 자동으로 연결하기 (지원하는 도메인 업체)
 
-# 도메인 연결 단계별 가이드
+도메인을 **지원하는 업체**(예: GoDaddy, Google Domains, Cloudflare)에서 등록했다면 API 인증으로 자동 연결할 수 있어요.
 
-하이퍼클래스에 도메인을 연결하는 방법은 두 가지입니다:
+```
+하이퍼클래스와 연동된 업체에서 도메인을 관리한다면 이 방법을 권장해요.
+```
 
-### 1. 자동 연결 방법 (지원 도메인 업체 이용 시)
+1. 하이퍼클래스 계정에서 **사이트 > 설정 > 도메인**으로 이동하세요.
+2. **도메인 연결**을 선택하세요.
+3. 연결할 제품을 선택하세요(예: **퍼널**, **웹사이트**, **이메일**).
 
-도메인이 지원 업체(GoDaddy, Google Domains, Cloudflare 등)에 등록되어 있다면 API 기반 인증을 통해 자동으로 연결할 수 있습니다.
-
-연동 지원 업체에서 도메인을 관리하고 있다면 추천하는 방법입니다.
-
-- Sites(사이트) → Settings(설정) → Domains(도메인)로 이동합니다.
-- "Connect a Domain(도메인 연결)"을 선택합니다.
-- 연결하려는 제품(퍼널, 웹사이트, 이메일 등)을 선택합니다.
-
-![도메인 연결 인터페이스](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045491132/original/mGa9aDaXW4Ytb7xL12a6RFqhz1BiTtLGPw.png?1745385425)
-
-- 제공된 필드에 루트 도메인 또는 서브도메인을 입력합니다. "www" 서브도메인을 추가하는 경우 루트 도메인을 추가하는 옵션도 나타납니다.
-- 도메인이 Google Domains, GoDaddy, Cloudflare에 등록되어 있다면 "Authorize(인증)" 버튼이 표시됩니다. 클릭하여 Domain Connect가 DNS 설정에 접근할 수 있도록 허용합니다.
-- 도메인 업체 인터페이스에서 화면 안내에 따라 인증 과정을 완료합니다. 이 과정에서 필요한 DNS 레코드가 자동으로 추가됩니다.
-- 인증이 완료되면 해당 탭을 닫고 Domain Connect 인터페이스로 돌아옵니다.
+   ![도메인에 연결할 제품 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045491132/original/mGa9aDaXW4Ytb7xL12a6RFqhz1BiTtLGPw.png?1745385425)
+4. 입력란에 루트 도메인이나 서브도메인을 입력하세요. "www" 서브도메인을 추가하는 경우에는 루트 도메인도 추가할 수 있는 옵션이 나타나요.
+5. 도메인이 Google Domains, GoDaddy, Cloudflare에 있으면 **승인** 버튼이 보여요. 이 버튼을 눌러 Domain Connect가 DNS 설정에 접근하도록 허용하세요.
+6. 도메인 업체 화면의 안내에 따라 승인 과정을 마치세요. 필요한 DNS 레코드가 자동으로 추가되거나 연결돼요.
+7. 승인이 끝나면 해당 탭을 닫고 Domain Connect 화면으로 돌아오세요.
 
 ---
 
-### 2. 수동 도메인 추가
+### 2. 수동으로 도메인 추가하기
 
-도메인이 Namecheap, Bluehost 또는 목록에 없는 업체에서 호스팅되는 경우 DNS 레코드를 직접 추가해야 합니다.
+도메인이 **Namecheap, Bluehost** 또는 목록에 없는 업체에 있다면 DNS 레코드를 직접 추가해야 해요.
 
-직접 지원되지 않는 업체를 사용하는 경우 이 방법을 사용하세요.
+```
+도메인 업체를 직접 지원하지 않을 때 이 방법을 사용하세요.
+```
 
-- **Sites(사이트)** → Settings(설정) → Domains(도메인)로 이동합니다.
-- "Connect a Domain(도메인 연결)"을 선택합니다.
-- 연결하려는 제품(퍼널, 웹사이트, 이메일 등)을 선택합니다.
+1. **사이트 > 설정 > 도메인**으로 이동하세요.
+2. **도메인 연결**을 선택하세요.
+3. 연결할 제품을 선택하세요(예: **퍼널**, **웹사이트**, **이메일**).
 
-![도메인 연결 제품 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045491132/original/mGa9aDaXW4Ytb7xL12a6RFqhz1BiTtLGPw.png?1745385425)
+   ![도메인에 연결할 제품 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045491132/original/mGa9aDaXW4Ytb7xL12a6RFqhz1BiTtLGPw.png?1745385425)
+4. **퍼널**, **웹사이트**, **블로그**, **웨비나**에 도메인을 연결하려면 안내에 따라 도메인 이름을 입력하세요.
+5. **Add records manually**(레코드 직접 추가) 옵션을 클릭하세요.
 
-- 퍼널, 웹사이트, 블로그, 웨비나에 도메인을 연결하려면 안내에 따라 도메인 이름을 입력합니다.
-- "add records manually(수동으로 레코드 추가)" 옵션을 클릭합니다.
+   ![레코드 직접 추가 옵션 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045491766/original/Z5xJ2bdqGdqayjfdHK7wGVVP5Vs5lKUqiQ.png?1745385962)
+6. 도메인 등록 업체에 추가해야 할 DNS 레코드(A 레코드, CNAME, TXT)가 표시돼요.
 
-![수동 레코드 추가 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045491766/original/Z5xJ2bdqGdqayjfdHK7wGVVP5Vs5lKUqiQ.png?1745385962)
-
-- 도메인 등록업체에 추가해야 할 특정 DNS 레코드(A Records, CNAME, TXT)가 표시됩니다.
-
-![DNS 레코드 정보](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045491792/original/YCI8-DHpBnHtPNr9frNnfoVS4BElSM4SkQ.png?1745385993)
-
-- 도메인 업체(예: Namecheap)에 로그인하고 DNS 설정으로 이동합니다.
-- 표시된 대로 정확히 레코드를 추가합니다.
-- 변경사항을 저장하고 DNS 전파를 기다립니다(최대 24시간 소요 가능).
+   ![추가해야 할 DNS 레코드 목록 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045491792/original/YCI8-DHpBnHtPNr9frNnfoVS4BElSM4SkQ.png?1745385993)
+7. 도메인 업체(예: Namecheap)에 로그인한 뒤 DNS 설정 화면으로 이동하세요.
+8. 표시된 레코드를 그대로 추가하세요.
+9. 변경사항을 저장하고 DNS 전파를 기다리세요. 최대 24시간이 걸릴 수 있어요.
 
 ---
 
-## 업체별 수동 DNS 설정
+## 도메인 업체별 수동 DNS 설정
+
+{% hint style="info" %}
+아래 화면은 각 도메인 업체의 화면이에요. 업체의 화면 표기에 맞춰 영어 메뉴 이름을 그대로 적었어요.
+{% endhint %}
 
 #### Cloudflare
 
-- Cloudflare 대시보드에 로그인합니다.
-- 도메인을 선택하고 DNS 탭을 클릭합니다.
-- Add Record(레코드 추가)를 클릭합니다.
-- 하이퍼클래스에서 제공한 각 레코드에 대해:
-  - 유형 선택: A, CNAME, 또는 TXT
-  - @ (루트 도메인)에 대한 A 레코드 → IP 주소로 지정
-  - www 또는 서브도메인에 대한 CNAME (해당하는 경우)
-  - 이메일 인증을 위한 TXT (예: SPF/DKIM)
-- 중요: A 및 CNAME 레코드의 Proxy 상태를 "DNS Only"(회색 구름)로 설정합니다.
-- 각각에 대해 Save(저장)를 클릭합니다.
-- 전파를 기다립니다(몇 분에서 24시간).
+1. Cloudflare 대시보드에 로그인하세요.
+2. 도메인을 선택하고 **DNS** 탭을 클릭하세요.
+3. **Add Record**(레코드 추가)를 클릭하세요.
+4. 하이퍼클래스에서 안내한 레코드를 하나씩 추가하세요.
+
+   - 유형은 A, CNAME, TXT 중에서 선택하세요.`@`(루트 도메인)에는 **A Record**를 추가하고 IP 주소를 지정하세요.`www`나 서브도메인에는 **CNAME**을 추가하세요(해당하는 경우).
+   - 이메일 인증(예: SPF/DKIM)에는 **TXT**를 추가하세요.
+5. A 레코드와 CNAME 레코드는 **Proxy status**를 **DNS Only**(회색 구름)로 바꾸세요.
+
+   {% hint style="warning" %}
+   A 레코드와 CNAME 레코드의 **Proxy status**를 반드시 **DNS Only**(회색 구름)로 바꿔야 해요.
+   {% endhint %}
+6. 레코드를 추가할 때마다 **Save**(저장)를 클릭하세요.
+7. 전파될 때까지 기다리세요(몇 분에서 24시간).
 
 #### GoDaddy
 
-- GoDaddy 계정에 로그인합니다.
-- My Products > Domains로 이동한 후 도메인 옆의 Manage DNS를 클릭합니다.
-- Records 섹션에서 Add를 클릭합니다:
-  - 유형 선택: A, CNAME, 또는 TXT
-  - 루트 도메인은 @, 서브도메인은 www 사용
-  - 하이퍼클래스에서 제공한 레코드 값을 정확히 입력
-- 각 레코드 추가 후 Save(저장)를 클릭합니다.
-- 변경사항 전파 시간을 기다립니다.
+1. GoDaddy 계정에 로그인하세요.
+2. **My Products > Domains**로 이동한 뒤 해당 도메인 옆의 **Manage DNS**를 클릭하세요.
+3. **Records**(레코드) 섹션에서 **Add**(추가)를 클릭하세요.
+
+   - 유형은 A, CNAME, TXT 중에서 선택하세요.
+   - 루트 도메인에는 `@`, 서브도메인에는 `www`를 사용하세요.
+4. 하이퍼클래스에서 안내한 **레코드 값을 그대로** 입력하세요.
+5. 레코드를 추가할 때마다 **Save**(저장)를 클릭하세요.
+6. 변경사항이 전파될 때까지 기다리세요.
 
 #### Namecheap
 
-- Namecheap 대시보드에 로그인합니다.
-- Domain List > 도메인 옆의 Manage로 이동합니다.
-- Advanced DNS 탭으로 이동합니다.
-- Host Records에서 Add New Record를 클릭합니다:
-  - @에 대한 A 레코드
-  - www에 대한 CNAME 레코드
-  - 인증 또는 이메일용 TXT 레코드 (예: SPF/DKIM)
-- 하이퍼클래스 안내의 정확한 값을 붙여넣습니다.
-- Save All Changes(모든 변경사항 저장)를 클릭합니다.
-- DNS 전파를 위해 최대 24시간 기다립니다.
+1. Namecheap 대시보드에 로그인하세요.
+2. **Domain List**에서 해당 도메인 옆의 **Manage**를 클릭하세요.
+3. **Advanced DNS** 탭으로 이동하세요.
+4. **Host Records**에서 **Add New Record**를 클릭하고 다음을 추가하세요.
+`@`에는 **A Record**`www`에는 **CNAME Record**
+   - 인증이나 이메일(예: SPF/DKIM)에는 **TXT Record**
+5. 하이퍼클래스 안내에 나온 값을 그대로 붙여 넣으세요.
+6. **Save All Changes**를 클릭하세요.
+7. DNS 전파까지 최대 24시간 기다리세요.
 
 #### Squarespace
 
-- Squarespace 계정에 로그인합니다.
-- Settings > Domains로 이동하여 도메인을 선택합니다.
-- DNS Settings (Advanced)를 클릭합니다.
-- 다음을 추가합니다:
-  - @에 대한 A 레코드 (제공된 IP 사용)
-  - www에 대한 CNAME (필요한 경우)
-  - 이메일 인증용 TXT
-- 각 레코드 후 Save(저장)를 클릭합니다.
-- 변경사항 저장 완료 후 하이퍼클래스로 돌아가서 도메인을 다시 연결합니다.
+1. Squarespace 계정에 로그인하세요.
+2. **Settings > Domains**로 이동해서 도메인을 선택하세요.
+3. **DNS Settings**(Advanced)를 클릭하세요.
+4. 다음을 추가하세요.
+`@`에는 **A Record**(안내받은 IP 사용)`www`에는 **CNAME**(필요한 경우)
+   - 이메일 인증에는 **TXT**
+5. 레코드를 추가할 때마다 **Save**(저장)를 클릭하세요.
+6. 변경사항을 저장했으면 하이퍼클래스로 돌아와 도메인을 다시 연결하세요.
 
 ---
 
-## 도메인 연결 문제해결
+## 도메인 연결 문제 해결
 
-수동 또는 자동 도메인 연결 시 다음과 같은 일반적인 문제가 발생할 수 있습니다:
+도메인을 수동이나 자동으로 연결하다 보면 다음과 같은 문제가 생길 수 있어요.
 
-- 레코드 충돌: 여러 A 레코드: [문제해결 링크](https://help.leadconnectorhq.com/support/solutions/articles/155000004862-troubleshooting-guide-connecting-your-domain#1.-Record-Conflicts%3A-Multiple-A-Records)
+- **Record Conflicts: Multiple A Records**(A 레코드 여러 개 충돌)
 
-![레코드 충돌 오류](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045492883/original/-TX2PyjOHmMMB7Tjw2-PgGtYgaORdXTxLA.png?1745387571)
+  ![A 레코드 충돌 오류 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045492883/original/-TX2PyjOHmMMB7Tjw2-PgGtYgaORdXTxLA.png?1745387571)
+- **AAAA Record Conflict**(AAAA 레코드 충돌)
 
-- AAAA 레코드 충돌: [문제해결 링크](https://help.leadconnectorhq.com/support/solutions/articles/155000004862-troubleshooting-guide-connecting-your-domain#2.-AAAA-Record-Conflict)
+  ![AAAA 레코드 충돌 오류 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045492907/original/663d7TxsvhXmjTPV-eUbvLzzFDUxDkED0A.png?1745387595)
+- **CAA Record Conflict**(CAA 레코드 충돌)
 
-![AAAA 레코드 충돌](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045492907/original/663d7TxsvhXmjTPV-eUbvLzzFDUxDkED0A.png?1745387595)
+  ![CAA 레코드 충돌 오류 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045493186/original/m9rQevRuymmHX63WTCZRYzPPI0PNYhbqdw.png?1745388089)
+- **DNS Records Do Not Match**(DNS 레코드 불일치)
 
-- CAA 레코드 충돌: [문제해결 링크](https://help.leadconnectorhq.com/support/solutions/articles/155000004862-troubleshooting-guide-connecting-your-domain#3.-CAA-Record-Conflict)
+  ![DNS 레코드 불일치 오류 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045492971/original/ISi4IULI6PfftWfr-bcq7IBDkZSB9XqFJQ.png?1745387718)
+- **Domain is Connected Elsewhere**(다른 곳에 이미 연결된 도메인)
 
-![CAA 레코드 충돌](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045493186/original/m9rQevRuymmHX63WTCZRYzPPI0PNYhbqdw.png?1745388089)
+---
 
-- DNS 레코드 불일치: [문제해결 링크](https://help.leadconnectorhq.com/support/solutions/articles/155000004862-troubleshooting-guide-connecting-your-domain#4.-DNS-Records-Do-Not-Match)
-
-![DNS 레코드 불일치](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045492971/original/ISi4IULI6PfftWfr-bcq7IBDkZSB9XqFJQ.png?1745387718)
-
-- 다른 곳에서 사용 중인 도메인: [문제해결 링크](https://help.leadconnectorhq.com/support/solutions/articles/155000004862-troubleshooting-guide-connecting-your-domain#5.-Domain-is-Connected-Elsewhere)
-
-## 도메인을 연결할 수 있는 제품들
+## 도메인을 연결할 수 있는 제품
 
 **퍼널 / 웹사이트 / 스토어 / 웨비나 / 블로그**
 
-- 퍼널, 이커머스 스토어, 웨비나, 블로그 등 고객 대면 페이지를 호스팅하는 데 도메인을 사용합니다.
+- 도메인을 사용해 퍼널, 이커머스 스토어, 웨비나, 블로그처럼 고객에게 보여 주는 페이지를 호스팅할 수 있어요.
 
 #### WordPress
 
-- 하이퍼클래스의 WordPress 호스팅을 사용하는 경우, 제공된 DNS 레코드를 사용하여 도메인을 WordPress 사이트로 연결합니다.
-- DNS 설정 완료 후 시스템이 자동으로 감지하고 유효성을 검사합니다.
-- 자세한 내용: [WordPress: Domain Connect Integration](../../06-사이트/wordpress-domain-connect-integration.md)
+- 하이퍼클래스의 WordPress 호스팅을 쓴다면, 안내받은 DNS 레코드로 도메인을 WordPress 사이트에 연결하세요.
+- DNS 설정이 끝나면 시스템이 자동으로 감지하고 확인해요.
+- 자세한 내용은 "WordPress: Domain Connect Integration" 문서를 참고하세요.
 
 #### 이메일
 
-- 이메일 발송 인증(SPF, DKIM, DMARC 등)에 도메인이 필요합니다.
-- 연결하면 이메일 전달율이 향상되고 메시지가 스팸으로 분류되는 것을 방지할 수 있습니다.
-- 자세한 내용: [전용 이메일 발송 도메인 개요 및 설정](../../09-이메일/LC-Email-Dedicated-Domain-and-IP/dedicated-email-sending-domains-overview-setup.md)
+- 이메일 발송을 인증하려면(예: SPF, DKIM, DMARC) 도메인이 필요해요.
+- 도메인을 연결하면 이메일 전달률이 좋아지고, 메시지가 스팸으로 분류되는 것을 줄일 수 있어요.
+- 자세한 내용은 [전용 이메일 발송 도메인 개요 및 설정](../../09-이메일/LC-Email-Dedicated-Domain-and-IP/dedicated-email-sending-domains-overview-setup.md)을 참고하세요.
 
-**브랜드 도메인 (화이트라벨링용)**
+**브랜드 도메인**(화이트라벨용)
 
-- 하위 계정이나 SaaS 기능을 화이트라벨링하기 위해 도메인을 연결합니다.
-- 기본 .hlpages.co URL을 자체 브랜딩으로 대체합니다.
-- 자세한 내용: [브랜드 시스템 생성 링크 (API 도메인)](../../19-에이전시-뷰/기타/how-to-configure-brand-system-generated-links-api-domain-.md) 및 [브랜드 도메인 설정 이유 및 방법](https://www.youtube.com/watch?v=y8-_fWUqiG8)
+- 도메인을 연결하면 하이퍼클래스 서브 계정이나 SaaS 기능을 화이트라벨로 쓸 수 있어요.
+- 기본 `.hlpages.co` 주소가 내 브랜드 주소로 바뀌어요.
+- 자세한 내용은 [시스템 생성 링크 브랜딩하기(API 도메인)](../branding-system-generated-links-api-domain.md)를 참고하세요.
 
-**클라이언트 포털**
+**클라이언트 포탈**
 
-- 클라이언트 대면 대시보드를 호스팅하기 위해 커스텀 도메인을 사용합니다.
-- 고객이 자산, 캠페인, 보고서에 접근할 때 브랜드 경험을 제공합니다.
-- 자세한 내용: [클라이언트 포털 설정 방법](../../39-클라이언트-포털/Client-Portal/how-to-set-up-the-client-portal-.md)
-
-## 전문가 팁
-
-- DNS 전파: 변경사항은 몇 분에서 최대 24시간까지 완전히 전파됩니다.
-- SSL은 도메인이 연결되고 레코드가 정확하면 자동으로 발급됩니다.
-- 연결된 모든 도메인은 Settings(설정) → Domains(도메인)에서 관리할 수 있습니다.
-- 도메인이 24시간 이상 "Pending(대기 중)"으로 표시되면 DNS 값을 다시 확인하거나 지원팀에 문의하세요.
-
-## 유용한 링크
-
-- [도메인 연결 문제해결 가이드](https://help.leadconnectorhq.com/support/solutions/articles/155000004862-troubleshooting-guide-connecting-your-domain)
+- 내 도메인으로 고객용 대시보드를 호스팅할 수 있어요.
+- 고객이 자산, 캠페인, 리포트를 볼 때 브랜드가 적용된 화면을 경험할 수 있어요.
+- 자세한 내용은 [클라이언트 포탈 설정하기](../../39-클라이언트-포털/Client-Portal/how-to-set-up-the-client-portal.md)를 참고하세요.
 
 ---
-*원문 최종 수정: Wed, 25 Mar, 2026 at 4:47 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+
+## 알아 두면 좋은 팁
+
+- **DNS 전파**: 변경사항이 완전히 전파되기까지 몇 분에서 최대 24시간이 걸릴 수 있어요.
+- 도메인이 연결되고 레코드가 올바르면 **SSL**이 자동으로 발급돼요.
+- 연결된 도메인은 모두 **설정 > 도메인**에서 관리할 수 있어요.
+- 도메인이 24시간 넘게 **Pending**(대기 중)으로 표시되면 DNS 값을 다시 확인하거나 하이퍼클래스 고객지원에 문의하세요.
+
+---
+
+## 도움이 되는 자료
+
+- 도메인 연결 문제 해결 가이드(Troubleshooting Guide - Connecting Your Domain)
+
