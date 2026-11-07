@@ -1,11 +1,11 @@
 {
   "date": "2026-11-07",
-  "generated": "2026-11-07T15:51:49Z",
-  "koRatio": 0.894,
+  "generated": "2026-11-07T16:17:34Z",
+  "koRatio": 0.898,
   "edge": {
-    "n": 35,
-    "p50": 1538,
-    "p90": 1961,
+    "n": 49,
+    "p50": 1547,
+    "p90": 1887,
     "gate": 0
   },
   "top": [
@@ -25,6 +25,24 @@
         "workflow.grid.assistant.history.planDetails",
         "workflow.grid.assistant.history.stepDetails",
         "workflow.grid.onboarding.walkthroughs.firstWorkflow.precheck"
+      ]
+    },
+    {
+      "ns": "APP~crmSettingsIfr",
+      "exposures": 38,
+      "en": 5609,
+      "total": 5609,
+      "samples": [
+        "common.show",
+        "common.newPost",
+        "common.active",
+        "common.sidebar.company",
+        "common.sidebar.manageSmartLists",
+        "common.sidebar.leads",
+        "common.sidebar.triggers",
+        "common.sidebar.marketingTooltip",
+        "common.sidebar.companyBillingTooltip",
+        "user.callAndVoicemailSettings.forwardCalls"
       ]
     },
     {
@@ -65,7 +83,7 @@
     },
     {
       "ns": "ghlEmailBuilderCommon",
-      "exposures": 103,
+      "exposures": 117,
       "en": 63,
       "total": 4155,
       "samples": [
@@ -77,7 +95,7 @@
     },
     {
       "ns": "common",
-      "exposures": 103,
+      "exposures": 117,
       "en": 62,
       "total": 2442,
       "samples": [
@@ -88,7 +106,7 @@
     },
     {
       "ns": "agency",
-      "exposures": 103,
+      "exposures": 117,
       "en": 60,
       "total": 643,
       "samples": [
@@ -99,7 +117,7 @@
     },
     {
       "ns": "aiEmployeesApp",
-      "exposures": 103,
+      "exposures": 117,
       "en": 54,
       "total": 2657,
       "samples": [
@@ -112,7 +130,7 @@
     },
     {
       "ns": "integrationsApp",
-      "exposures": 103,
+      "exposures": 117,
       "en": 51,
       "total": 842,
       "samples": [
@@ -123,7 +141,7 @@
     },
     {
       "ns": "copilotApp",
-      "exposures": 103,
+      "exposures": 117,
       "en": 47,
       "total": 3232,
       "samples": [
@@ -135,13 +153,38 @@
     },
     {
       "ns": "reportingApp",
-      "exposures": 100,
+      "exposures": 114,
       "en": 46,
       "total": 2840,
       "samples": [
         "attributionReporting.opportunities",
         "attributionReporting.contact",
         "attributionReporting.contactId"
+      ]
+    },
+    {
+      "ns": "adPublishingApp",
+      "exposures": 117,
+      "en": 33,
+      "total": 3031,
+      "samples": [
+        "common.by10",
+        "common.by4",
+        "common.exampleUrl"
+      ]
+    },
+    {
+      "ns": "socialPlannerApp",
+      "exposures": 117,
+      "en": 33,
+      "total": 3263,
+      "samples": [
+        "common.linkedin",
+        "common.youtube",
+        "common.csv",
+        "common.delete",
+        "common.facebook",
+        "common.instagram"
       ]
     },
     {
@@ -163,33 +206,8 @@
       ]
     },
     {
-      "ns": "adPublishingApp",
-      "exposures": 103,
-      "en": 33,
-      "total": 3031,
-      "samples": [
-        "common.by10",
-        "common.by4",
-        "common.exampleUrl"
-      ]
-    },
-    {
-      "ns": "socialPlannerApp",
-      "exposures": 103,
-      "en": 33,
-      "total": 3263,
-      "samples": [
-        "common.linkedin",
-        "common.youtube",
-        "common.csv",
-        "common.delete",
-        "common.facebook",
-        "common.instagram"
-      ]
-    },
-    {
       "ns": "crmObjectsSettingsApp",
-      "exposures": 101,
+      "exposures": 115,
       "en": 24,
       "total": 1820,
       "samples": [
@@ -200,7 +218,7 @@
     },
     {
       "ns": "campaign",
-      "exposures": 103,
+      "exposures": 117,
       "en": 23,
       "total": 803,
       "samples": [
@@ -211,7 +229,7 @@
     },
     {
       "ns": "copilot",
-      "exposures": 103,
+      "exposures": 117,
       "en": 19,
       "total": 807,
       "samples": [
@@ -223,7 +241,7 @@
     },
     {
       "ns": "agentStudioApp",
-      "exposures": 103,
+      "exposures": 117,
       "en": 19,
       "total": 2164,
       "samples": [
@@ -234,7 +252,7 @@
     },
     {
       "ns": "conversationsUtilitiesApp",
-      "exposures": 103,
+      "exposures": 117,
       "en": 19,
       "total": 935,
       "samples": [
@@ -247,7 +265,7 @@
     },
     {
       "ns": "productsApp",
-      "exposures": 103,
+      "exposures": 117,
       "en": 19,
       "total": 988,
       "samples": [
@@ -262,7 +280,7 @@
     },
     {
       "ns": "clientPortalBuilder",
-      "exposures": 103,
+      "exposures": 117,
       "en": 16,
       "total": 912,
       "samples": [
@@ -273,7 +291,7 @@
     },
     {
       "ns": "contactsApp",
-      "exposures": 102,
+      "exposures": 116,
       "en": 16,
       "total": 913,
       "samples": [
@@ -286,7 +304,7 @@
     },
     {
       "ns": "usersMicroApp",
-      "exposures": 103,
+      "exposures": 117,
       "en": 14,
       "total": 962,
       "samples": [
@@ -295,6 +313,18 @@
         "notifications.list.filters.emailPlaceholder",
         "common.delete",
         "teams.delete"
+      ]
+    },
+    {
+      "ns": "agentLogsApp",
+      "exposures": 117,
+      "en": 12,
+      "total": 1340,
+      "samples": [
+        "agentLogs.spanLabels.stepTypes.llm_node",
+        "agentLogs.logDetail.inspect.latencyValue",
+        "agentLogs.logDetail.units.milliseconds",
+        "agentLogs.metrics.layout.delete"
       ]
     },
     {
@@ -315,20 +345,8 @@
       ]
     },
     {
-      "ns": "agentLogsApp",
-      "exposures": 103,
-      "en": 12,
-      "total": 1340,
-      "samples": [
-        "agentLogs.spanLabels.stepTypes.llm_node",
-        "agentLogs.logDetail.inspect.latencyValue",
-        "agentLogs.logDetail.units.milliseconds",
-        "agentLogs.metrics.layout.delete"
-      ]
-    },
-    {
       "ns": "conversations",
-      "exposures": 103,
+      "exposures": 117,
       "en": 11,
       "total": 549,
       "samples": [
@@ -339,7 +357,7 @@
     },
     {
       "ns": "mediaCenterApp",
-      "exposures": 103,
+      "exposures": 117,
       "en": 11,
       "total": 578,
       "samples": [
@@ -367,13 +385,24 @@
     },
     {
       "ns": "fpDebugger",
-      "exposures": 103,
+      "exposures": 117,
       "en": 8,
       "total": 115,
       "samples": [
         "checks.locationAll",
         "checks.locationAny",
         "checks.scopesAll"
+      ]
+    },
+    {
+      "ns": "reselling",
+      "exposures": 117,
+      "en": 7,
+      "total": 613,
+      "samples": [
+        "agencyResellingPage.common.coreServicesIframeTitle",
+        "paymentPage.cvv",
+        "paymentPage.alt.visacard"
       ]
     },
     {
@@ -388,19 +417,8 @@
       ]
     },
     {
-      "ns": "reselling",
-      "exposures": 103,
-      "en": 7,
-      "total": 613,
-      "samples": [
-        "agencyResellingPage.common.coreServicesIframeTitle",
-        "paymentPage.cvv",
-        "paymentPage.alt.visacard"
-      ]
-    },
-    {
       "ns": "brandBoardsApp",
-      "exposures": 83,
+      "exposures": 97,
       "en": 7,
       "total": 4448,
       "samples": [
@@ -412,7 +430,7 @@
     },
     {
       "ns": "smartList",
-      "exposures": 91,
+      "exposures": 104,
       "en": 6,
       "total": 668,
       "samples": [
@@ -458,6 +476,19 @@
       ]
     },
     {
+      "ns": "countdownTimerApp",
+      "exposures": 12,
+      "en": 8,
+      "total": 498,
+      "samples": [
+        "customVariables.pdfLink",
+        "customVariables.otp",
+        "customVariables.pdfUrl",
+        "common.confirmationModalDeleteOkButtonText",
+        "list.delete"
+      ]
+    },
+    {
       "ns": "blogsApp",
       "exposures": 3,
       "en": 32,
@@ -478,19 +509,6 @@
         "common.clickFunnelsUrl",
         "common.seoAndAeo",
         "common.delete"
-      ]
-    },
-    {
-      "ns": "countdownTimerApp",
-      "exposures": 11,
-      "en": 8,
-      "total": 498,
-      "samples": [
-        "customVariables.pdfLink",
-        "customVariables.otp",
-        "customVariables.pdfUrl",
-        "common.confirmationModalDeleteOkButtonText",
-        "list.delete"
       ]
     },
     {
