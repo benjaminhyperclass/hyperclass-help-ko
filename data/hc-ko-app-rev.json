@@ -1,8 +1,8 @@
 {
-  "rev": "8ee1a03b2ac6bde86b2a77fd353ffddb2e5dfedd",
+  "rev": "51bda475600d2b9e3cd9a6c7fedf11da97ca5092",
   "off": false,
-  "version": "4.2.65",
-  "updated": "2026-11-07T04:21:06Z",
+  "version": "4.2.66",
+  "updated": "2026-11-07T04:27:44Z",
   "by": "ko-app-pointer.yml",
   "_comment": "메인 앱 한글팩 v4 사전 REV 포인터. 로더(js/hc-ko-app-loader.js)가 raw@main 에서 읽어 @rev/data/ 를 fetch 한다. 2026-11-06 부터 rev·loader 는 cdn 브랜치 커밋(런타임 파일만, scripts/publish-cdn.sh — jsDelivr 50MB 한도)이고 원본 main 커밋은 src 에 둔다. core/apps 가 바뀐 push 마다 .github/workflows/ko-app-pointer.yml 봇이 jsDelivr 대조 후 전진시킨다. 롤백 = rev 를 직전 SHA 로 되돌린 커밋. 원격 킬스위치(로더 v4.11+): \"off\": true 를 커밋하면 다음 로드부터 전 고객에서 v4 가 서지 않는다(레거시 레이어는 무관). false 로 되돌리면 재개. loader/excludeLocations 블록은 부트스트랩(js/hc-bootstrap.js)이 읽는다 — ko-app-pointer.yml 은 rev/version/by/updated 만 바꾸고 나머지 키는 보존한다.",
   "loader": {
@@ -24,5 +24,5 @@
     "url": "https://hc-ko-telemetry.red-boat-3cb2.workers.dev/r",
     "_comment": "로더 v4.14+ 가 라우트별 미번역 집계를 sendBeacon 하는 곳. 이 키를 지우면 다음 로드부터 전송 중단."
   },
-  "src": "140cd40318c51026fc46ca2789ed27386cc56a94"
+  "src": "5b97744549c2cb7292301af1d79eec6d7741e506"
 }
