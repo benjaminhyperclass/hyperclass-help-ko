@@ -1,0 +1,12 @@
+{
+ "common.delete": "Delete",
+ "common.estimatePrefix": "EST",
+ "common.the": "the",
+ "editor.prefill.invalid": "We couldn't read the prefilled details. Starting with a blank estimate.",
+ "editor.prefill.locationMismatch": "The prefilled details belong to another location. Starting with a blank estimate.",
+ "editor.prefill.notFound": "The prefilled details are no longer available. Please start again from where you came from.",
+ "editor.prefill.partial": "Some prefilled details could not be added: {details}",
+ "editor.prefill.skippedContact": "contact not found",
+ "editor.prefill.skippedItems": "{count} item(s) could not be added",
+ "imageCarousel.counter": "{current}/{total}"
+}
