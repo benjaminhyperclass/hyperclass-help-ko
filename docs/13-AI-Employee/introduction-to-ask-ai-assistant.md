@@ -25,7 +25,7 @@
 ![AI에게 문의 작업 공간 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155080106314/original/peHeTC2bAjx4cg-i066ztY44F74ZrjE2LQ.png?1788524173)
 
 {% hint style="info" %}
-개인화된 콘텐츠나 브랜드에 맞는 콘텐츠를 만들려면, **AI에게 문의**로 콘텐츠 작업을 하기 전에 **마케팅 > Branded Content(브랜드 콘텐츠) > Brand Voice(브랜드 보이스)**에서 브랜드 보이스를 설정하세요.
+개인화된 콘텐츠나 브랜드에 맞는 콘텐츠를 만들려면, **AI에게 문의**로 콘텐츠 작업을 하기 전에 **마케팅 > Branded Content(브랜드 콘텐츠) > Brand Voice**(브랜드 보이스)에서 브랜드 보이스를 설정하세요.
 {% endhint %}
 
 ---

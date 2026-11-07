@@ -36,7 +36,7 @@
 
 1. **마케팅 > 이메일 > 캠페인**으로 이동하세요.
 2. 관리할 예약된 캠페인을 찾으세요.
-3. 캠페인 옆의 **점 세 개 메뉴(⋮)**를 클릭하세요.
+3. 캠페인 옆의 **점 세 개 메뉴**(⋮)를 클릭하세요.
    ![예약된 캠페인과 점 세 개 작업 메뉴가 보이는 이메일 캠페인 페이지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058743022/original/Srw-TLXKqrWiUfSJPi2_SmEEnYStHF_vIA.png?1763554622)
 4. 캠페인의 현재 상태와 하려는 작업에 맞게 **일시정지**, **다시 시작**, **취소** 중 하나를 선택하세요.
    ![일시정지, 다시 시작, 취소 옵션이 보이는 캠페인 작업 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058743335/original/c_rmhYzTXlJLOC2V5-NWgd-F9_JiWDlYRw.png?1763554739)

@@ -157,11 +157,11 @@ Delete Spreadsheet Row 액션은 선택한 행의 내용을 비워요. Google �
 
 ## Create Multiple Spreadsheet Row(s)
 
-한 번의 워크플로우 실행에 기록이 여러 개 있고, 이를 각각 별도의 스프레드시트 행으로 추가해야 할 때 **Create Multiple Spreadsheet Row(s)**를 사용하세요.
+한 번의 워크플로우 실행에 기록이 여러 개 있고, 이를 각각 별도의 스프레드시트 행으로 추가해야 할 때 **Create Multiple Spreadsheet Row**(s)를 사용하세요.
 
 ### Create Multiple Spreadsheet Row(s)의 동작 방식
 
-이 액션은 워크플로우 실행이 데이터를 **행 객체의 배열(목록)**로 받았을 때만 여러 행을 만들어요.
+이 액션은 워크플로우 실행이 데이터를 **행 객체의 배열**(목록)로 받았을 때만 여러 행을 만들어요.
 
 배열 안의 객체 하나가 스프레드시트 행 하나가 돼요. 예를 들어 행 객체 3개가 든 배열은 스프레드시트 행 3개를 만들어요.
 
@@ -174,7 +174,7 @@ Delete Spreadsheet Row 액션은 선택한 행의 내용을 비워요. Google �
 ### Create Multiple Spreadsheet Row(s) 설정하기
 
 1. **Google Sheets** 액션을 추가하세요.
-2. **Create Multiple Spreadsheet Row(s)**를 선택하세요.
+2. **Create Multiple Spreadsheet Row**(s)를 선택하세요.
 
    ![Create Multiple Spreadsheet Row(s) 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155082076450/original/NFsRp9p54Uma6HrgkadKXBrvHqB36BkMWQ.png?1790672104)
 3. 연결된 **Google Account**를 선택하세요.
@@ -252,14 +252,14 @@ Create Spreadsheet Row 실행은 기록과 요금 부과가 별도의 프리미�
 
 ## Lookup Multiple Spreadsheet Row(s)
 
-**Lookup Multiple Spreadsheet Row(s)**는 기본 Lookup 액션을 확장해, 워크플로우가 스프레드시트 행을 여러 개 반환할 수 있게 해 줘요.
+**Lookup Multiple Spreadsheet Row**(s)는 기본 Lookup 액션을 확장해, 워크플로우가 스프레드시트 행을 여러 개 반환할 수 있게 해 줘요.
 
 설정 방법은 Lookup Spreadsheet Row와 비슷하고, **Row Count**(행 수) 필드가 하나 더 있어요.
 
 ### Lookup Multiple Spreadsheet Row(s) 설정하기
 
 1. **Google Sheets** 액션을 추가하세요.
-2. **Lookup Multiple Spreadsheet Row(s)**를 선택하세요.
+2. **Lookup Multiple Spreadsheet Row**(s)를 선택하세요.
 
    ![Lookup Multiple Spreadsheet Row(s) 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155082076876/original/7ygyiYICThkJqmg5mjtlYfavxmzJ32Tl1Q.png?1790672239)
 3. Google Account, Drive, Spreadsheet, Worksheet를 선택하세요.
@@ -292,14 +292,14 @@ Create Spreadsheet Row 실행은 기록과 요금 부과가 별도의 프리미�
 
 ## Update Multiple Spreadsheet Row(s)
 
-스프레드시트 행이 이미 있고, 워크플로우에서 여러 행의 값을 수정해야 할 때 **Update Multiple Spreadsheet Row(s)**를 사용하세요.
+스프레드시트 행이 이미 있고, 워크플로우에서 여러 행의 값을 수정해야 할 때 **Update Multiple Spreadsheet Row**(s)를 사용하세요.
 
 중복 기록을 만들지 않고 기존 스프레드시트 데이터를 최신으로 유지해야 할 때 유용해요.
 
 ### Update Multiple Spreadsheet Row(s) 설정하기
 
 1. **Google Sheets** 액션을 추가하세요.
-2. **Update Multiple Spreadsheet Row(s)**를 선택하세요.
+2. **Update Multiple Spreadsheet Row**(s)를 선택하세요.
 3. 연결된 **Google Account**를 선택하세요.
 4. **Drive**를 선택하세요.
 5. **Spreadsheet**를 선택하세요.
@@ -509,7 +509,7 @@ Create Multiple Spreadsheet Row(s)가 한 번의 워크플로우 실행에서 �
 
 **Create Spreadsheet Row**는 워크플로우를 한 번 실행할 때 새 행을 하나 만들어요.
 
-**Create Multiple Spreadsheet Row(s)**는 워크플로우가 행 객체 여러 개가 든 배열을 받으면, 한 번의 워크플로우 실행에서 여러 행을 만들 수 있어요.
+**Create Multiple Spreadsheet Row**(s)는 워크플로우가 행 객체 여러 개가 든 배열을 받으면, 한 번의 워크플로우 실행에서 여러 행을 만들 수 있어요.
 
 ### Create Multiple Spreadsheet Row(s)는 워크플로우에 들어오는 연락처를 자동으로 묶어서 처리하나요?
 
@@ -521,15 +521,15 @@ Create Multiple Spreadsheet Row(s)가 한 번의 워크플로우 실행에서 �
 
 ### Create Multiple Spreadsheet Row(s)와 Update Multiple Spreadsheet Row(s)는 무엇이 다른가요?
 
-**Create Multiple Spreadsheet Row(s)**는 새 스프레드시트 항목을 추가해요.
+**Create Multiple Spreadsheet Row**(s)는 새 스프레드시트 항목을 추가해요.
 
-**Update Multiple Spreadsheet Row(s)**는 이미 있는 스프레드시트 행의 값을 바꿔요.
+**Update Multiple Spreadsheet Row**(s)는 이미 있는 스프레드시트 행의 값을 바꿔요.
 
 ### Lookup Multiple Spreadsheet Row(s)가 반환한 행을 전부 업데이트하거나 삭제할 수 있나요?
 
 Lookup Multiple Spreadsheet Row(s)는 여러 행을 반환할 수 있지만, **Update Spreadsheet Row Using Lookup**이나 **Delete Spreadsheet Row Using Lookup** 같은 단일 행 액션은 반환된 결과를 하나씩 자동으로 모두 처리하지 않아요.
 
-일괄 업데이트가 지원되는 경우에는 **Update Multiple Spreadsheet Row(s)**를 사용하세요.
+일괄 업데이트가 지원되는 경우에는 **Update Multiple Spreadsheet Row**(s)를 사용하세요.
 
 Lookup Multiple 결과를 하나씩 따로 처리하거나 반환된 각 행에 맞춤 로직을 적용해야 한다면 워크플로우 로직을 추가로 구성해야 할 수 있어요.
 

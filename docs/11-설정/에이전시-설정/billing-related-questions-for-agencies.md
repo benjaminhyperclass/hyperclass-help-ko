@@ -61,7 +61,7 @@
 다운그레이드하기 전에, 낮은 플랜에 포함된 기능과 서브 계정 한도를 먼저 확인하세요.
 
 1. **에이전시 설정 > 청구/결제**로 이동하세요.
-2. **Want to Modify/Cancel Your Subscription?**을 클릭하세요.
+2. **Want to Modify/Cancel Your Subscription**?을 클릭하세요.
 3. 선택할 수 있는 낮은 등급의 플랜을 고르세요.
 4. 새 요금, 적용일, 일할 계산 조정 내역을 확인하세요.
 5. 변경을 확정하세요.
@@ -79,7 +79,7 @@
 ### 구독 취소하기
 
 1. **에이전시 설정**으로 이동해 **청구/결제**를 클릭하세요.
-2. **Want to modify/cancel your subscription?**을 클릭하세요.
+2. **Want to modify/cancel your subscription**?을 클릭하세요.
 3. 팝업에서 **더 보기**를 클릭하세요.
 4. **플랜 취소**를 선택하세요.
 5. **Reason for Cancellation**(취소 사유)을 고른 뒤 **다음**을 클릭하세요.

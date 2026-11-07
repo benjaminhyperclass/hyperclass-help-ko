@@ -40,7 +40,7 @@
 
 편집 중인 캘린더에서 바로 진단을 시작하면 클릭 수가 줄고 더 빨리 고칠 수 있어요.
 
-1. **설정 > 캘린더 > [내 캘린더]**를 열어요. 오른쪽 상단 헤더에서 **Troubleshoot Calendar**(캘린더 문제 해결)를 클릭하세요.
+1. **설정 > 캘린더 > [내 캘린더**]를 열어요. 오른쪽 상단 헤더에서 **Troubleshoot Calendar**(캘린더 문제 해결)를 클릭하세요.
 
    ![오른쪽 상단 헤더의 캘린더 문제 해결 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064114658/original/x0y8DwUOBUMa422acn4u3rLWTnsF-8LU9w.png?1770137263)
 

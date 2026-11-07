@@ -125,7 +125,7 @@ Google Maps에서 지역 업체를 한꺼번에 찾아 평가하고, 여러 곳�
 ![여러 잠재고객 추가 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055132568/original/eneWFZnqLxnmnZFPl2nZ9s8FOZz_NFNJ5g.png?1759438749)
 
 {% hint style="warning" %}
-중요: **상태** 열에서 **Generating Prospect (xx%)**가 표시되다가 **추가됨**으로 바뀌는지 확인하세요. **보기**를 클릭하면 해당 기록과 Marketing Audit Report를 열 수 있어요. 또 Prospecting Premium을 서브 계정에 연결해서 쓰고 있다면 **연락처**를 열어 동기화가 되었는지 확인하고 영업 워크플로우를 시작하세요.
+중요: **상태** 열에서 **Generating Prospect** (xx%)가 표시되다가 **추가됨**으로 바뀌는지 확인하세요. **보기**를 클릭하면 해당 기록과 Marketing Audit Report를 열 수 있어요. 또 Prospecting Premium을 서브 계정에 연결해서 쓰고 있다면 **연락처**를 열어 동기화가 되었는지 확인하고 영업 워크플로우를 시작하세요.
 {% endhint %}
 
 {% hint style="info" %}

@@ -114,6 +114,29 @@ def add_price_notice(path, t):
     if not m: return t
     return t[:m.end()] + "\n" + hint + t[m.end():]
 
+BOLD = re.compile(r"\*\*([^*\n]+?)\*\*")
+CLOSE_P = set(')"\'”’]」.,!?:;')
+QUOTES = {'"': '"', "“": "”", "'": "'", "‘": "’", "「": "」"}
+
+def fix_bold(seg):
+    """CommonMark 에서 '**…)**을'처럼 닫는 ** 앞이 문장부호이고 뒤가 글자면 굵게가 안 먹는다 → 문장부호를 밖으로 뺀다."""
+    def rep(m):
+        inner = m.group(1); a = seg[m.start() - 1] if m.start() else " "; b = seg[m.end()] if m.end() < len(seg) else " "
+        close_bad = inner[-1] in CLOSE_P and b.isalnum()
+        open_bad = inner[0] in "(\"'“‘[「" and a.isalnum()
+        if not (close_bad or open_bad): return m.group(0)
+        if inner[0] in QUOTES and inner[-1] == QUOTES[inner[0]] and len(inner) > 2:
+            return f"{inner[0]}**{inner[1:-1]}**{inner[-1]}"
+        if inner.endswith(")") and "(" in inner[1:]:
+            k = inner.rfind("(")
+            head = inner[:k].rstrip()
+            if head: return f"**{head}**{inner[k - (len(inner[:k]) - len(head)):]}"
+        lead = re.match(r"^[(\"'“‘\[「]*", inner).group(0) if open_bad else ""
+        trail = re.search(r"[)\"'”’\]」.,!?:;]*$", inner).group(0) if close_bad else ""
+        core = inner[len(lead):len(inner) - len(trail)] if trail else inner[len(lead):]
+        return f"{lead}**{core}**{trail}" if core.strip() else m.group(0)
+    return BOLD.sub(rep, seg)
+
 BLOCK_START = re.compile(r"^\s*(?:[-*+]\s|\d+[.)]\s|#|\||>|!\[|\{%|<)")
 
 def split_labels(seg):
@@ -150,6 +173,7 @@ def process(path, notes):
     masked = fix_register(masked)
     body = re.sub(r"\x00(\d+)\x00", lambda m: keep[int(m.group(1))], masked)
     body = protect(body, split_labels)
+    body = protect(body, fix_bold)
     body = re.sub(r"\n{3,}", "\n\n", body)
     t = (head + "\n---\n" + body) if head else body
     # 7) 달러 요금이 나오는 문서에는 하이퍼클래스 요금 안내로 가는 알림을 한 번 붙인다

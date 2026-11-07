@@ -110,7 +110,7 @@ Google Organic Booking은 **캘린더 설정**의 **연결** 영역에서 관리
 
 Primary Action Feed는 Google Business Profile에 표시되는 대표 예약 위치를 정해요.
 
-1. **Primary Action Feed (Service Menu/Group)**를 찾아요.
+1. **Primary Action Feed** (Service Menu/Group)를 찾아요.
 2. 드롭다운을 열어요.
 3. 알맞은 **Service Menu** 또는 **Calendar Group**을 선택해요.
 4. 선택한 위치에 올바른 서비스와 예약 링크가 들어 있는지 확인해요.
@@ -121,7 +121,7 @@ Primary Action Feed는 Google Business Profile에 표시되는 대표 예약 위
 
 Services Feed를 설정하면 Google이 개별 캘린더를 각각 예약 가능한 서비스로 표시할 수 있어요.
 
-1. **Services Feed (Calendars)**를 찾아요.
+1. **Services Feed** (Calendars)를 찾아요.
 2. 드롭다운을 열어요.
 3. 게시할 캘린더를 선택해요.
 4. 선택한 캘린더마다 이름과 설명을 검토해요.

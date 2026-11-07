@@ -168,7 +168,7 @@
 
 {% hint style="info" %}
 **팁**
-같은 대시보드에 서비스 위젯을 여러 개 함께 두면 전체 성과를 한눈에 볼 수 있어요. 예를 들어 **총 수익** 위젯에 **Top Grossing Staff (Services)**와 **Revenue by Service**를 함께 두면 경영진용 종합 개요가 돼요.
+같은 대시보드에 서비스 위젯을 여러 개 함께 두면 전체 성과를 한눈에 볼 수 있어요. 예를 들어 **총 수익** 위젯에 **Top Grossing Staff** (Services)와 **Revenue by Service**를 함께 두면 경영진용 종합 개요가 돼요.
 {% endhint %}
 
 ## 대여 위젯 설정하기

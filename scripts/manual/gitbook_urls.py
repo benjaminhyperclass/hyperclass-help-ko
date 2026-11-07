@@ -16,21 +16,25 @@ def slug(s, cut_pct=False):
 
 def page_urls(summary_text):
     """{파일 경로: 공개 주소} — SUMMARY 순서대로 중복 번호를 붙인다."""
-    out, group, used, gused = {}, "", {}, {}
+    out, group, used, gused, parents = {}, "", {}, {}, {}
     for line in summary_text.split("\n"):
         h = re.match(r"^##\s+(.*)", line)
         if h:
             g = slug(h.group(1).strip()); n = gused.get(g, 0); gused[g] = n + 1
             group = f"{g}-{n}" if n else g; continue
-        m = re.match(r"^\s*\*\s+\[.*\]\(([^)]+)\)", line)
+        m = re.match(r"^(\s*)\*\s+\[.*\]\(([^)]+)\)", line)
         if not m: continue
-        raw = m.group(1)
+        depth = len(m.group(1)) // 2
+        raw = m.group(2)
         path = urllib.parse.unquote(raw)
         base = raw.rsplit("/", 1)[-1]
         if "/" not in raw: name = base[:-3]
         else: name = urllib.parse.unquote(raw.rsplit("/", 2)[-2]) if base.lower() == "readme.md" else base[:-3]
         s = slug(name, cut_pct=True)
-        key = (group, s); n = used.get(key, 0); used[key] = n + 1
+        prefix = parents.get(depth - 1, group) if depth else group
+        key = (prefix, s); n = used.get(key, 0); used[key] = n + 1
         if n: s = f"{s}-{n}"
-        out[path] = f"{group}/{s}" if group else s
+        url = f"{prefix}/{s}" if prefix else s
+        parents[depth] = url   # 들여 쓴 하위 문서는 부모 주소 아래
+        out[path] = url
     return out

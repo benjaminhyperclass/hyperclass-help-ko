@@ -38,7 +38,7 @@
 1. 트리거 카드의 점 세 개 메뉴를 클릭하세요.
 2. **Copy**(복사)를 선택하세요.
    ![트리거 카드의 점 세 개 메뉴에서 Copy를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047382614/original/c0oIeCXRZh79HNaMnwzh4N5iC6ylO7161g.png?1748447921)
-3. **Copy of "[Trigger Name]"**이라는 이름의 새 트리거가 나타나요.
+3. **Copy of "[Trigger Name**]"이라는 이름의 새 트리거가 나타나요.
 4. 필요하면 트리거의 필터나 조건을 수정하세요.
    ![복사된 트리거의 필터와 조건을 수정하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047382627/original/vBlbEL7IPcknxYPIHp-agur8zn50flO2PQ.png?1748447943)
 5. **Save**(저장)를 클릭하세요.

@@ -98,7 +98,7 @@
 {% hint style="warning" %}
 **중요**
 
-일부 필드는 워크플로우에 해당 맥락이 있을 때만 나타나요. 예를 들어 **Task ID**는 작업과 관련된 워크플로우에서, **Note created by (Name)**은 메모와 관련된 워크플로우에서 나타나요. **Contact Engagement Score**는 서브 계정에서 참여 점수 기능(Engagement Scoring)을 켰을 때 쓸 수 있어요.
+일부 필드는 워크플로우에 해당 맥락이 있을 때만 나타나요. 예를 들어 **Task ID**는 작업과 관련된 워크플로우에서, **Note created by** (Name)은 메모와 관련된 워크플로우에서 나타나요. **Contact Engagement Score**는 서브 계정에서 참여 점수 기능(Engagement Scoring)을 켰을 때 쓸 수 있어요.
 {% endhint %}
 
 ---

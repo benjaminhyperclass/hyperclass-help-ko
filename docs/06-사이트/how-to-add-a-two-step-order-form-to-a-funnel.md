@@ -63,7 +63,7 @@
 
 ### 2. 2단계 주문 폼 요소 추가하기
 
-왼쪽 위의 **요소 추가** **(+)**를 누르고, **Order elements**(주문 요소)에서 **2단계 주문 폼** 요소를 선택하세요. 이 요소를 디자인 영역으로 끌어다 놓으세요.
+왼쪽 위의 **요소 추가** **(+**)를 누르고, **Order elements**(주문 요소)에서 **2단계 주문 폼** 요소를 선택하세요. 이 요소를 디자인 영역으로 끌어다 놓으세요.
 
 ![요소 추가에서 2단계 주문 폼 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155061955313/original/G22r2IveUsFhdBWOVPBo6j_m6T0csqkSoQ.png?1767650986)
 

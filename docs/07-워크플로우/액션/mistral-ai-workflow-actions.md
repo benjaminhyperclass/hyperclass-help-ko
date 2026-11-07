@@ -83,7 +83,7 @@ Mistral AI 액션은 하이퍼클래스 트리거로 자동화가 시작된 뒤 
 
 ### Analyze Image (Vision)
 
-**Analyze Image (Vision)**은 Mistral의 비전 지원 모델로 이미지를 하나 이상 분석하는 액션이에요. 영수증, 신분증, 스크린샷, 명함, 업로드한 문서, 폼 첨부파일처럼 중요한 정보가 이미지에 들어 있을 때 쓰기 좋아요.
+**Analyze Image** (Vision)은 Mistral의 비전 지원 모델로 이미지를 하나 이상 분석하는 액션이에요. 영수증, 신분증, 스크린샷, 명함, 업로드한 문서, 폼 첨부파일처럼 중요한 정보가 이미지에 들어 있을 때 쓰기 좋아요.
 
 지원하는 모델 예시는 다음과 같아요.
 
@@ -131,7 +131,7 @@ Mistral AI 액션이 실행되면 그 출력이 워크플로우 변수가 돼요
 3. 하이퍼클래스 워크플로우에서 **Mistral AI** 액션으로 작업을 실행해요. 사용할 액션을 선택하세요.
    - 텍스트를 생성하려면 **Create Chat Completion**을 선택하세요.
    - 의미 매칭이나 벡터 출력이 필요하면 **Create Embeddings**를 선택하세요.
-   - 이미지를 분석하려면 **Analyze Image (Vision)**을 선택하세요.
+   - 이미지를 분석하려면 **Analyze Image** (Vision)을 선택하세요.
 
    ![Mistral AI 액션 목록에서 액션을 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155071337765/original/1cB6wnkrfxLA-LOxBNM0nmFj0ydYbARTAQ.png?1778767097)
 4. 프롬프트, 텍스트 입력, 이미지 URL, 모델, 선택 튜닝 설정 같은 액션 필드를 설정하세요. 필요한 곳에는 워크플로우 변수를 넣어 액션을 맞춤 설정하세요.

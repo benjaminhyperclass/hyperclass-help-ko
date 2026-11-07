@@ -92,7 +92,7 @@
 기회 관리에서 쓰는 보기예요.
 
 1. **기회 관리 > 필드 관리**로 이동하세요.
-2. 카드에 **Association Label (Object Type)**을 추가하세요.
+2. 카드에 **Association Label** (Object Type)을 추가하세요.
 3. 카드에서 연결된 회사나 사용자 지정 객체를 바로 확인하세요.
 
 ![칸반 카드에 연관 레이블이 표시된 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055812605/original/p2-PEiWc-OGfiznohmbrNGhLJrTAsFX2VQ.png?1760331692)

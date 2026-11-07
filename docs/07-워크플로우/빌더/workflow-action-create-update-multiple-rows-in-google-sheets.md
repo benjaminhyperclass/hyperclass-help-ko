@@ -63,7 +63,7 @@
 6. **Connect your location's Google Account**(로케이션의 Google 계정을 연결하세요)를 눌러 Google 계정을 연결하세요.
 
    ![로케이션의 Google 계정 연결](https://jumpshare.com/share/FZLxmIbexGB6cmaB4lRS+/GIF+Recording+2026-04-08+at+20.16.38.gif)
-7. Google 계정을 연결한 뒤 **Action** 드롭다운에서 **Create Multiple Spreadsheet Row(s)**를 선택하세요.
+7. Google 계정을 연결한 뒤 **Action** 드롭다운에서 **Create Multiple Spreadsheet Row**(s)를 선택하세요.
 
    ![Action 드롭다운에서 Create Multiple Spreadsheet Row(s) 선택](https://jumpshare.com/share/VKJM23utsNxLgvLCF5lt+/Screen+Shot+2026-04-08+at+20.24.33.png)
 8. 서브 계정에 연동된 Google 계정이 모두 드롭다운에 표시돼요. 그중 하나를 선택하세요.
@@ -158,7 +158,7 @@ Create Multiple Spreadsheet Row(s)는 워크플로우 실행에서 데이터를 
 6. **Connect your location's Google Account**를 눌러 Google 계정을 연결하세요.
 
    ![로케이션의 Google 계정 연결](https://jumpshare.com/share/FZLxmIbexGB6cmaB4lRS+/GIF+Recording+2026-04-08+at+20.16.38.gif)
-7. Google 계정을 연결한 뒤 **Action** 드롭다운에서 **Update Multiple Spreadsheet Row(s)**를 선택하세요.
+7. Google 계정을 연결한 뒤 **Action** 드롭다운에서 **Update Multiple Spreadsheet Row**(s)를 선택하세요.
 
    ![Action 드롭다운에서 Update Multiple Spreadsheet Row(s) 선택](https://jumpshare.com/share/AiPRH2CBOeXcZIS7MMZQ+/Screen+Shot+2026-04-08+at+20.59.28.png)
 8. 서브 계정에 연동된 Google 계정이 모두 드롭다운에 표시돼요. 그중 하나를 선택하세요.

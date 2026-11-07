@@ -42,7 +42,7 @@
 
 ### 액션 이름 정하기
 
-나중에 알아보기 쉽도록 액션 이름을 지어 주세요. 이 예시에서는 **“Add to AI Appointment Booking Workflow”**라고 이름 붙였어요.
+나중에 알아보기 쉽도록 액션 이름을 지어 주세요. 이 예시에서는 “**Add to AI Appointment Booking Workflow**”라고 이름 붙였어요.
 
 ![액션 이름 입력 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038115198/original/gr39JSt3FZrwEd59VtOK2D52GLTqCrh7cw.png?1733903483)
 

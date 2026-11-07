@@ -65,7 +65,7 @@
 
 ### 6단계: 콘텐츠의 맥락 정하기
 
-- 프로모션, 소개, 후기, **콜드 아웃리치** 등 **콘텐츠 유형(맥락)**을 선택하세요.
+- 프로모션, 소개, 후기, **콜드 아웃리치** 등 **콘텐츠 유형**(맥락)을 선택하세요.
 
   ![콘텐츠 유형을 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046937895/original/CL3Ea2_SogLw9ndbMBeMpA4kzQDwcW6V6w.png?1747749544)
 

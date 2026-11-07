@@ -75,7 +75,7 @@
 ### 방법 2: Write skill instructions(스킬 지침 작성)
 
 1. **Name**을 입력하세요.
-2. **When should the agent use this?**에 스킬을 불러와야 하는 상황을 적으세요.
+2. **When should the agent use this**?에 스킬을 불러와야 하는 상황을 적으세요.
 3. **Instructions**를 작성하세요. 툴바로 목록과 제목을 넣을 수 있어요. **Enhance prompt**(프롬프트 개선)를 클릭하면 AI가 문장을 다듬어 줘요.
 4. **Create & attach**를 클릭하세요. 스킬이 라이브러리에 저장되고, 이 액션에 붙어요.
 

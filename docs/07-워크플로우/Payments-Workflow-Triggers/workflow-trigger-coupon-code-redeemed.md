@@ -119,7 +119,7 @@
 완료된 모든 거래에서 쿠폰이 사용될 때마다 워크플로우가 실행돼요. 특정 프로모션만 대상으로 하려면 **Coupon Code** Is나 **Coupon Type** Is 같은 필터를 쓰는 것이 좋아요.
 
 ### 주문 금액이나 쿠폰 값에 따라 액션을 실행할 수 있나요?
-네. **Order Value (Before Discount)**와 **Coupon Value** 필터에 **Greater Than**, **Less Than** 같은 연산자를 조합하면 워크플로우가 실행되는 시점을 조절할 수 있어요.
+네. **Order Value** (Before Discount)와 **Coupon Value** 필터에 **Greater Than**, **Less Than** 같은 연산자를 조합하면 워크플로우가 실행되는 시점을 조절할 수 있어요.
 
 ### 이 트리거로 쿠폰 사용 한도를 자동으로 확인할 수 있나요?
 네. **Redemption Count (per coupon)** 필터를 사용하면 쿠폰 사용 횟수가 특정 숫자에 도달했을 때 액션을 실행할 수 있어요.

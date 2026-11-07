@@ -31,7 +31,7 @@
 | Veo 3.1 Quality | 완성도 높고 세밀한 동영상을 만들어요. |
 | Veo 3.1 Fast | 더 빠르게 동영상을 만드는 데 중점을 둬요. |
 
-화질은 **Standard (720p)**와 **High (1080p)** 중에서 고를 수 있어요. 기본값은 Veo 3.1 Quality와 Standard 해상도예요.
+화질은 **Standard** (720p)와 **High (1080p)** 중에서 고를 수 있어요. 기본값은 Veo 3.1 Quality와 Standard 해상도예요.
 
 ---
 

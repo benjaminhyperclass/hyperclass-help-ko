@@ -91,7 +91,7 @@
 ## 자주 묻는 질문
 
 ### 기프트 카드를 보낼 수 없게 하면서 기프트 카드 주문만 볼 수 있게 할 수 있나요?
-네, 가능해요. **View Gift Card Orders**와 **Send Gift Card (Issue Directly)**는 서로 별개의 권한이에요.
+네, 가능해요. **View Gift Card Orders**와 **Send Gift Card** (Issue Directly)는 서로 별개의 권한이에요.
 
 ### 전체 기프트 카드 코드는 못 보게 하고 기프트 카드 상세 페이지만 열 수 있게 할 수 있나요?
 네, 가능해요. **View Full Gift Card Code**는 기프트 카드 상세 페이지 접근 권한과 따로 제어해요.

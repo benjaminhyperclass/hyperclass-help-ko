@@ -256,4 +256,4 @@ lead_id={{contact.id}} email={{contact.email}} source=workflow
 
 ### Custom Webhook과 Webhook (Outbound) 중 무엇을 써야 하나요?
 
-고급 인증과 유연한 요청 구성이 필요하면 **Custom Webhook**을 쓰세요. 미리 정해진 단순한 패턴이면 **Webhook (Outbound)**를 쓰세요.
+고급 인증과 유연한 요청 구성이 필요하면 **Custom Webhook**을 쓰세요. 미리 정해진 단순한 패턴이면 **Webhook** (Outbound)를 쓰세요.

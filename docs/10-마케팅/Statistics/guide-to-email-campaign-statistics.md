@@ -174,7 +174,7 @@
 
 1. **마케팅 > 이메일 > 캠페인**으로 이동하세요.
 2. 확인할 발송 완료 캠페인을 찾으세요.
-3. 캠페인 옆의 **점 세 개 메뉴(⋮)**를 클릭하세요.
+3. 캠페인 옆의 **점 세 개 메뉴**(⋮)를 클릭하세요.
 
    ![캠페인 옆 점 세 개 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083197064/original/GrtHPzLbHfcSkyjBLu9-WpyqmSuMhuTYQg.png?1791894200)
 4. **통계**를 선택하세요.

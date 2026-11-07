@@ -139,14 +139,14 @@ If/Else 조건에서 더 많은 워크플로우 필드를 쓸 수 있어서, 별
 
 1. **Contact Engagement Score**는 서브 계정에 참여 점수가 설정되어 있을 때 나타나요.
 2. **Contact → Attribution Medium ID**로는 첫 번째 또는 최근 어트리뷰션 정보를 기준으로 분기할 수 있어요.
-3. **Note created by (Name)**은 메모와 관련된 워크플로우에서 나타나요.
+3. **Note created by** (Name)은 메모와 관련된 워크플로우에서 나타나요.
 4. **Task ID**는 작업 트리거나 **Add Task**(작업 추가) 단계 뒤처럼 작업과 관련된 워크플로우에서 나타나요.
 
 예시:
 
 1. **Contact Engagement Score**가 20 이상이면 연락처를 우선순위가 높은 후속 조치 경로로 보내요.
 2. **Attribution Medium ID**가 유료 소셜 소스와 일치하면 연락처를 해당 리포팅 분기로 보내요.
-3. **Note created by (Name)**에 "Success"가 포함되면 Success 팀에 알려요.
+3. **Note created by** (Name)에 "Success"가 포함되면 Success 팀에 알려요.
 4. **Task ID**가 있으면 참고용으로 외부 트래킹 시스템에 보내요.
 
 {% hint style="info" %}

@@ -58,7 +58,7 @@
 알림을 받으려면 해당 서브 계정에 접근할 수 있어야 해요. **할당된 데이터만**이 켜져 있는 사용자는 할당되지 않은 리드에 대해 지원되는 알림을 받지 못해요.
 {% endhint %}
 
-관리자는 **서브 계정 > 설정 > [감사 로그](../11-설정/audit-logs.md)**에서 모듈을 **알림 설정**으로 필터링하면 알림 설정 변경 내역을 확인할 수 있어요.
+관리자는 **서브 계정 > 설정 > [감사 로그]**(../11-설정/audit-logs.md)에서 모듈을 **알림 설정**으로 필터링하면 알림 설정 변경 내역을 확인할 수 있어요.
 
 ![감사 로그에서 알림 설정 변경 내역 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155082697486/original/-rmfqT9l5fdaBms_P4vJXdpDhvifxjjtaA.png?1791350923)
 
