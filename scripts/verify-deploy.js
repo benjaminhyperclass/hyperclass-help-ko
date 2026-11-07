@@ -24,8 +24,8 @@
 (() => {
   const EXPECT = {
     version: '4.21.13',     // 포인터 loader.stable cdn 3fe299e (= main 76f4013, 2026-11-06 — 입력칸 자리표시자 단어 1개)
-    revPrefix: '3fe299e',   // 사전 v4.2.59 — cdn 브랜치 커밋(원본 main e28eaed, 2026-11-06 cdn 전환)
-    textEntries: 9279,      // _text (별도로 _textScoped 1,387 — status().scopedEntries)
+    revPrefix: '4b54903',   // 사전 v4.2.61 — cdn 커밋(원본 main 68ae07e, 2026-11-07)
+    textEntries: 9289,      // _text (별도로 _textScoped 1,388 — status().scopedEntries)
   };
   const A = window.__hcKoApp;
   if (!A) {
