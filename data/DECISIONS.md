@@ -265,3 +265,10 @@ superagentsApp(Managed Agents 빌더·목록·채팅 레이어)의 제품명 표
 - 벤자민 결정: **무료(Free)**, 구독·사용료 없음. `marketplace/README.md` 체크리스트와 `LISTING.md` 에 반영.
 - 함께 고침: 소개문의 지원 범위에서 '자동화(automation)'를 뺐다. 워크플로우 빌더는 다른 도메인 iframe 이라 다른 에이전시에 설치되는 번들로는 번역되지 않는다(같은 출처 중계는 app.hyperclass.ai 엣지 전용). '포함되지 않음'에 iframe 화면을 명시.
 - 남은 제출 절차(벤자민 직접 로그인): 개발자 계정·앱 생성 → Custom JS 모듈에 `dist/hc-ko-marketplace.html` → 가격 Free → 개인정보처리방침 URL(레포 PRIVACY.md) → 심사 제출(11일까지).
+
+## [확정] 추가 요금 없이 플랜 안에서만 — API 키 자동 호출 중단, 월간 분할 처리 — 2026-11-07
+- 벤자민 지침(모든 프로젝트 공통): 번역·검수는 Claude 플랜(구독) 안에서만 한다. 별도 과금되는 API 키 호출은 쓰지 않는다. 한 번에 다 하지 말고 매달 조금씩 진행한다.
+- 배경: 11-06~07 매뉴얼 전면 재번역(3,134건)을 Actions + ANTHROPIC_API_KEY 로 돌려 API 과금(약 $240–250 추정)이 발생 — 사전 고지 부족.
+- 조치: 모든 워크플로우의 API 키 주입을 저장소 변수 `ALLOW_PAID_API=true` 일 때만 켜지게 바꿈(기본 꺼짐 — 켜지 말 것). `ko-translate-round` 정기 실행 해제, `ui-updater` 신규 키 번역 단계 끔, `ko-round-review` 는 규칙 검사만, `manual-monthly` 는 변동 감지·대기열(`data/manual/queue.json`)만.
+- 번역은 월간 예약 작업(Claude 세션, 매월 3일)이 `scripts/manual/MONTHLY-RUNBOOK.md` 대로 처리: 화면 미번역 키 월 300개, 매뉴얼 문서 월 40건 상한, 남은 건 다음 달로. 첫 달 결과를 보고 상한 조정.
+- 2026-11 기준 대기: 화면 미번역 744키(23개 묶음, `scripts/round-prep.py`), 매뉴얼은 다음 감지(12-02)부터.

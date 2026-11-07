@@ -1,3 +1,4 @@
+# 2026-11-07 벤자민 지침: 추가 요금 없이 Claude 플랜(구독) 안에서만 번역·검수한다. API 키 호출은 저장소 변수 ALLOW_PAID_API=true 일 때만 켜진다(기본 꺼짐).
 name: 메인 앱 한글팩 — 번역 라운드 PR 자동 리뷰
 
 # round/* 브랜치 PR(또는 참조본이 바뀐 PR)이 열리거나 갱신되면, base↔head 참조본 차이를 뽑아
@@ -36,7 +37,7 @@ jobs:
 
       - name: 리뷰 실행
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ vars.ALLOW_PAID_API == 'true' && secrets.ANTHROPIC_API_KEY || '' }}
         run: |
           python3 scripts/round-review.py --base /tmp/ref.base.json --head /tmp/ref.head.json --out /tmp/review.md --max 600
           cat /tmp/review.md >> $GITHUB_STEP_SUMMARY

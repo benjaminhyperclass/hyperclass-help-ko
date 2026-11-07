@@ -1,3 +1,4 @@
+# 2026-11-07 벤자민 지침: 추가 요금 없이 Claude 플랜(구독) 안에서만 번역·검수한다. API 키 호출은 저장소 변수 ALLOW_PAID_API=true 일 때만 켜진다(기본 꺼짐).
 name: GHL UI 한글화 자동 업데이트
 
 on:
@@ -195,14 +196,15 @@ jobs:
           VAULT_PATH: ${{ github.workspace }}
 
       # ── [Step 2] 신규 키 번역 ────────────────────────────────────
-      - name: 신규 키 번역 (Anthropic API)
+      - name: 신규 키 번역 (Anthropic API — ALLOW_PAID_API 일 때만)
         if: >
+          vars.ALLOW_PAID_API == 'true' &&
           (github.event_name == 'schedule' ||
            github.event_name == 'push' ||
            inputs.mode == 'translate')
         run: bash scripts/update-translations.sh --yes --no-build
         env:
-          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ vars.ALLOW_PAID_API == 'true' && secrets.ANTHROPIC_API_KEY || '' }}
           REPO_PATH:         ${{ github.workspace }}
           VAULT_PATH:        ${{ github.workspace }}
 
