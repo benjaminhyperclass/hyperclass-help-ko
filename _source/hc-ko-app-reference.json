@@ -218485,7 +218485,7 @@
  },
  "list.dashboard.received": {
   "en": "Invoice(s) received",
-  "ko": "인보이스 수신됨"
+  "ko": "결제 완료 인보이스"
  },
  "list.dashboard.overdue": {
   "en": "Invoice(s) Overdue",
