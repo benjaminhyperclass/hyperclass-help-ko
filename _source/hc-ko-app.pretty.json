@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "version": "4.2.60",
+  "version": "4.2.61",
   "built": "2026-11-07",
-  "source": "productsApp 4 + round conversationsUtilitiesApp 0 + round copilotApp 1 + round agentStudioApp 0 + round usersMicroApp 1 + round common 0 + round ghlEmailBuilderCommon 6 + 사이트 스키마 마크업 schemaMarkupApp 147 · 전 메뉴 스윕 잔여 137(AI 직원·평판·superagents·퍼널 등 29개 앱) — 번역 2갈래 + 독립 검수 교정 2 + round aiEmployeesApp 7 + round blogsApp 1 + round bulkActionsApp 2 + round calendarComponentsApp 2 + round certificatesApp 0 + round chatWidgetApp 4 + round clientPortalBuilder 3 + round cnam 0 + round contactsApp 2 + round conversations 1 + round copilotApp 1 + round crmCommon 7 + round externalTrackingApp 5 + round formSurveyApp 3 + round funnelWebsiteApp 0 + round ghlEmailBuilderCommon 6 + round launchpadApp 1 + round mediaCenterApp 2 + round onboardingApp 1 + round opportunitiesApp 1 + round powerDialerApp 3 + round productsApp 4 + round proposalCommon 1 + round reputationApp 18 + round schemaMarkupApp 146 + round storeCatalogApp 1 + round superagentsApp 2 + round usersMicroApp 1 + round voiceAiApp 0 + 외부 트래킹 문제 해결 'Do’s' 1 — GHL main 2194 스윕 잔여(나머지는 사전에 있거나 영어 그대로) + round agentLogs|common 1319 + round abandonedCheckout|accessibility|additionalCharges|collection|common 81 + round accessibility|app|automaticTaxConfig|common|contactPayments 50 + round accessibility|autoPayment|common|customization|editor 56 + round actionModal|addAssociation|addCustomFields|addCustomObj|addNew 170 + round activity_log|addContact|addGuests|app|appointmentModal 721 + round aiTemplates|app|common|error|gettingStarted 399 + 별도 앱 카탈로그 보강: 에이전트 로그 agentLogs|common 1,319(연락처 상세·대화 화면, 새 지문 — host.agentLogsApp 이관) · 캘린더 화면 721 · 앱 마켓플레이스 399 · 오브젝트 설정 170 · 주문 81 · 인보이스 56 · 결제 50(신규 1,063 + 같은 원문 이관 518, 독립 검수 교정 74) · 기존 값 정정 28(수금 통일·리스팅·애드온·플랜·견적서·ghl 예시)",
+  "source": "productsApp 4 + round conversationsUtilitiesApp 0 + round copilotApp 1 + round agentStudioApp 0 + round usersMicroApp 1 + round common 0 + round ghlEmailBuilderCommon 6 + 사이트 스키마 마크업 schemaMarkupApp 147 · 전 메뉴 스윕 잔여 137(AI 직원·평판·superagents·퍼널 등 29개 앱) — 번역 2갈래 + 독립 검수 교정 2 + round aiEmployeesApp 7 + round blogsApp 1 + round bulkActionsApp 2 + round calendarComponentsApp 2 + round certificatesApp 0 + round chatWidgetApp 4 + round clientPortalBuilder 3 + round cnam 0 + round contactsApp 2 + round conversations 1 + round copilotApp 1 + round crmCommon 7 + round externalTrackingApp 5 + round formSurveyApp 3 + round funnelWebsiteApp 0 + round ghlEmailBuilderCommon 6 + round launchpadApp 1 + round mediaCenterApp 2 + round onboardingApp 1 + round opportunitiesApp 1 + round powerDialerApp 3 + round productsApp 4 + round proposalCommon 1 + round reputationApp 18 + round schemaMarkupApp 146 + round storeCatalogApp 1 + round superagentsApp 2 + round usersMicroApp 1 + round voiceAiApp 0 + 외부 트래킹 문제 해결 'Do’s' 1 — GHL main 2194 스윕 잔여(나머지는 사전에 있거나 영어 그대로) + round agentLogs|common 1319 + round abandonedCheckout|accessibility|additionalCharges|collection|common 81 + round accessibility|app|automaticTaxConfig|common|contactPayments 50 + round accessibility|autoPayment|common|customization|editor 56 + round actionModal|addAssociation|addCustomFields|addCustomObj|addNew 170 + round activity_log|addContact|addGuests|app|appointmentModal 721 + round aiTemplates|app|common|error|gettingStarted 399 + 별도 앱 카탈로그 보강: 에이전트 로그 agentLogs|common 1,319(연락처 상세·대화 화면, 새 지문 — host.agentLogsApp 이관) · 캘린더 화면 721 · 앱 마켓플레이스 399 · 오브젝트 설정 170 · 주문 81 · 인보이스 56 · 결제 50(신규 1,063 + 같은 원문 이관 518, 독립 검수 교정 74) · 기존 값 정정 28(수금 통일·리스팅·애드온·플랜·견적서·ghl 예시) + 마켓플레이스 카드 개발자 표기 '{name} 제공' 통일 · 개발자명 LeadConnector → 하이퍼클래스(_text 3)",
   "strings": 102718
  },
  "host": {
@@ -100501,7 +100501,7 @@
      "viewAllCta": "모든 앱 보기"
     },
     "authorPrefix": "강사",
-    "author": "{name}님이 작성",
+    "author": "{name} 제공",
     "subAccountApps": {
      "title": "서브 계정 앱 관리",
      "description": "앱 권한을 효율적으로 관리하고 서브 계정에 마켓플레이스 앱을 원활하게 설치할 수 있도록 승인 권한을 부여하세요",
@@ -168083,7 +168083,10 @@
   "Enter fullscreen": "전체 화면",
   "Exit fullscreen": "전체 화면 종료",
   "Current time": "현재 시간",
-  "Go back to previous menu": "이전 메뉴로"
+  "Go back to previous menu": "이전 메뉴로",
+  "LeadConnector 제공": "하이퍼클래스 제공",
+  "LeadConnector님이 작성": "하이퍼클래스 제공",
+  "Slack For LeadConnector": "Slack For 하이퍼클래스"
  },
  "_textScoped": {
   "AM": "오전",

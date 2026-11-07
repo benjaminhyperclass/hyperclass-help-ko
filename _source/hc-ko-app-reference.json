@@ -198757,7 +198757,7 @@
  },
  "marketplace.author": {
   "en": "By {name}",
-  "ko": "{name}님이 작성"
+  "ko": "{name} 제공"
  },
  "marketplace.subAccountApps.title": {
   "en": "Manage Sub-Account Apps",
