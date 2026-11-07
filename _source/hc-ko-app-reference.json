@@ -119053,7 +119053,7 @@
  },
  "countdownTimerApp.customVariables.estimate": {
   "en": "Estimate",
-  "ko": "예상 수익"
+  "ko": "견적서"
  },
  "countdownTimerApp.customVariables.expiryDate": {
   "en": "Expiry Date",
@@ -151793,7 +151793,7 @@
  },
  "estimatesApp.common.estimate": {
   "en": "Estimate",
-  "ko": "예상 수익"
+  "ko": "견적서"
  },
  "estimatesApp.common.confirm": {
   "en": "Confirm",
