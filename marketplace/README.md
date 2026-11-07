@@ -34,12 +34,12 @@
 3. **Profile**: 로고(`assets/logo-512.png`), 카테고리, 회사명(근하 / Hyperclass), 설명·스크린샷(`LISTING.md`).
 4. **Modules → Custom JS**: `dist/hc-ko-marketplace.html` 내용을 그대로 붙여 넣는다(맨 앞 `<script>`, 맨 끝 `</script>` 포함).
 5. **Advanced**: Scopes 는 최소(필요 없으면 비움 — 이 앱은 API 를 쓰지 않는다). Redirect URL 이 필수면 `https://hyperclass.ai/marketplace/installed`(안내 페이지) 같은 정적 페이지 하나.
-6. **Pricing**: 무료 / 유료(월 구독) — **벤자민 결정**.
+6. **Pricing**: **무료(Free)** — 벤자민 결정(2026-11-07).
 7. **Submit for review** — 심사 메모는 `LISTING.md` 의 *Notes for reviewers* 를 붙여 넣는다.
 
 ## 4. 남은 결정·자료
 
-- [ ] 가격(무료·유료, 금액)
+- [x] 가격 — **무료(Free)**, 벤자민 결정 2026-11-07
 - [x] 개인정보처리방침 URL — **벤자민 승인(2026-11-06): 레포 파일 주소를 그대로 쓴다.** 초안 `marketplace/PRIVACY.md`(영/한). URL: `https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/marketplace/PRIVACY.md`(공개 레포라 지금 열린다 — 심사관이 내용을 읽을 수 있으면 충분). 하이퍼클래스 도메인 페이지가 생기면 바꾼다. 이용약관 URL 이 필수면 같은 방식으로
 - [ ] 지원 이메일: benjamin@hyperclass.ai (DECISIONS 2026-08-13)
 - [ ] 스크린샷 3~5장(한국어 대시보드·연락처 상세·대화·캘린더·멤버십) — 브라우저 연결 시 캡처
