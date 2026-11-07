@@ -1,177 +1,159 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 07-워크플로우 > Opportunity Workflow Actions
+원문: /support/solutions/articles/155000004753-workflow-action-update-opportunity
+번역일: 2026-11-06
+카테고리: 07-워크플로우
 ---
 
-# 워크플로우 액션 - 기회 업데이트
+# 워크플로우 액션 — Update Opportunity(기회 업데이트)
 
-이 아티클에서는 하이퍼클래스 워크플로우의 **기회 업데이트(Update Opportunity)** 액션 사용법을 설명합니다. 워크플로우 로직이나 연락처 행동에 따라 파이프라인 단계, 기회명, 금액 등 기회 레코드를 동적으로 업데이트하는 방법을 배워보세요.
+워크플로우 안에서 **Update Opportunity**(기회 업데이트) 액션을 써서 기존 기회의 파이프라인 단계, 기회 이름, 금액 등을 자동으로 바꾸는 방법을 알려 드려요. 워크플로우 흐름이나 연락처의 행동에 따라 기회 정보를 바꾸고 싶을 때 쓰세요.
 
----
+## Update Opportunity 액션이란?
 
-**목차**
+**Update Opportunity** 액션은 CRM 파이프라인에 있는 기존 기회를 워크플로우에서 자동으로 수정하는 액션이에요. 기회의 이름, 금액(값), 파이프라인, 단계를 바꿀 수 있어요. 입력값은 직접 정하거나 **Find Opportunity**(기회 찾기) 같은 다른 액션의 결과를 가져와 쓸 수 있어요.
 
-- [기회 업데이트 액션이란?](#기회-업데이트-액션이란)
-- [기회 업데이트 액션의 주요 장점](#기회-업데이트-액션의-주요-장점)
-- [기회 업데이트 액션 사용법](#기회-업데이트-액션-사용법)
-- [자주 묻는 질문](#자주-묻는-질문)
+## Update Opportunity 액션의 장점
 
----
+워크플로우에서 기회 정보를 자동으로 수정하면 영업 과정이 더 효율적이고 상황에 맞게 운영돼요. 이 액션을 쓰면 좋은 점은 다음과 같아요.
 
-# 기회 업데이트 액션이란?
+- 트리거나 연락처 활동에 따라 기회(딜)를 알맞은 파이프라인 단계로 자동 이동해요.
+- 병합 필드로 기회 이름을 만들어, 한눈에 맥락을 알 수 있게 해요.
+- 리드의 참여도가 높아질 때 기회 금액을 자동으로 조정해요.
+- 파이프라인 단계나 금액을 손으로 고치는 일이 없어져요.
+- 리드 팔로우업을 자동으로 진행하는 중에도 CRM 기록을 정확하게 유지해요.
+- 명시적으로 허용하지 않으면 파이프라인에서 기회가 이전 단계로 돌아가지 않아요.
 
-**기회 업데이트** 워크플로우 액션을 사용하면 CRM 파이프라인의 기존 기회를 프로그래밍 방식으로 수정할 수 있습니다. 동적 입력이나 **기회 찾기** 같은 다른 워크플로우 액션을 기반으로 기회의 이름, 금액, 파이프라인, 단계를 변경할 수 있습니다.
+## Update Opportunity 액션 사용 방법
 
----
+액션을 올바르게 설정하고 워크플로우 흐름에 연결하는 방법이에요. 이렇게 설정하면 업데이트가 안정적으로 적용돼요.
 
-## **기회 업데이트 액션의 주요 장점**
+### 워크플로우 목록으로 이동하기
 
-워크플로우 내에서 기회 레코드를 자동으로 수정하면 영업 프로세스가 더 효율적이고 맞춤화됩니다.
+1. 왼쪽 메뉴에서 **자동화**를 클릭해요.
+2. 위쪽의 **워크플로우** 탭을 클릭해요. (**자동화 > 워크플로우**)
 
-이 액션이 자동화 툴킷에 가치있는 추가 기능인 이유는 다음과 같습니다:
+워크플로우 목록이 열려요. 여기에서 기존 워크플로우를 보고, 새로 만들고, 관리할 수 있어요. 이 화면이 앞으로 설정할 **Update Opportunity** 액션 같은 자동화를 만드는 출발점이에요.
 
-- 트리거나 연락처 활동에 따라 거래를 올바른 파이프라인 단계로 자동 이동
-- 더 나은 맥락을 위해 병합 필드를 사용한 기회명 맞춤화
-- 리드 참여도 증가에 따른 기회 금액 동적 조정
-- 파이프라인 단계나 금액의 수동 업데이트 제거
-- 자동화된 리드 후속 조치 중 정확한 CRM 레코드 유지
-- 명시적으로 허용하지 않는 한 파이프라인에서 역행 방지
+### 워크플로우 만들기 또는 기존 워크플로우 선택하기
 
----
+오른쪽 위의 **+ Create Workflow**(워크플로우 만들기) 버튼을 클릭하면 처음부터 또는 템플릿으로 새 자동화를 시작할 수 있어요. 기회 업데이트용 워크플로우를 새로 만들 때 알맞아요.
 
-## **기회 업데이트 액션 사용법**
+{% hint style="info" %}
+팁: 리드 팔로우업처럼 이미 만들어 둔 워크플로우가 있다면 새로 만들지 않고 **목록에서 선택**해도 돼요. 그런 다음 그 워크플로우에 **Update Opportunity** 액션을 추가하세요.
+{% endhint %}
 
-일관되고 안정적인 업데이트를 위해 기회 업데이트 액션을 올바르게 구성하고 워크플로우 로직에 연결하는 방법을 배워보세요.
+![워크플로우 만들기 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051102591/original/DJTyqNLE3JHkU7AiCXYzusDFImDMJPZmZw.png?1754561288)
 
-### 워크플로우 빌더로 이동
+### 워크플로우 트리거 선택하기
 
-왼쪽 메뉴의 자동화(Automation) 섹션으로 이동한 후, 상단의 워크플로우(Workflows) 탭을 클릭합니다. 워크플로우 목록이 열리며, 여기서 기존 자동화 워크플로우를 확인하거나 생성, 관리할 수 있습니다.
+1. **Add New Trigger**(새 트리거 추가)를 클릭해요.
+2. 목록에서 알맞은 트리거를 선택해요.
 
-이곳은 곧 설정할 "기회 업데이트" 액션과 같은 자동화를 구축하는 중심 허브입니다.
+이 문서에서는 예시로 **Opportunity Status Changed**(기회 상태 변경) 트리거를 사용했어요. 이 트리거는 기존 기회(딜)의 상태가 바뀔 때마다 워크플로우를 시작해요.
 
-![워크플로우 빌더 네비게이션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051109144/original/-Az8iPkEdOk_d0IvhozSs6ode7plLBWhWQ.png?1754564929)
+{% hint style="info" %}
+이 트리거를 예시로 쓴 이유: 워크플로우가 시작될 때 이미 기회가 정해져 있어서 **Update Opportunity** 액션과 바로 연결할 수 있어요. 워크플로우를 시작시킨 기회를 이미 알고 있으니 따로 찾는 단계가 필요 없어요.
+{% endhint %}
 
-### 새 워크플로우 생성 또는 기존 워크플로우 사용
+{% hint style="info" %}
+팁: 이 트리거만 써야 하는 것은 아니에요. 태그 추가, 폼 제출 등 원하는 트리거를 쓸 수 있어요. 다만 기회를 기준으로 시작하는 트리거가 아니라면, 워크플로우 앞부분에 **Find Opportunity** 단계를 넣어 업데이트할 기회를 먼저 찾아야 해요.
+{% endhint %}
 
-우측 상단의 **+ 워크플로우 생성** 버튼을 클릭하여 새로운 자동화를 처음부터 시작하거나 템플릿을 사용합니다. 기회 업데이트 전용 워크플로우를 새로 구축하는 경우에 이상적입니다.
+![트리거 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051102631/original/x_q9oBU9KEV2q5n3326Ar7Em0zEasextTw.png?1754561311)
 
-💡 **팁:** 이미 설정된 워크플로우(예: 리드 후속 조치용)가 있다면, 새로 생성하는 대신 **목록에서 선택**하여 기존 워크플로우에 **기회 업데이트** 액션을 추가할 수 있습니다.
+### Update Opportunity 액션 추가하기
 
-![워크플로우 생성](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051102591/original/DJTyqNLE3JHkU7AiCXYzusDFImDMJPZmZw.png?1754561288)
+1. 트리거를 선택한 뒤, 트리거 아래의 **+ 아이콘**을 클릭해요.
+2. 액션 목록의 **Opportunity**(기회) 섹션에서 **Update Opportunity**를 찾아 선택해요. 검색해도 돼요.
 
-### 워크플로우 트리거 선택
+이 액션은 워크플로우를 시작시킨 기회(또는 **Find Opportunity** 단계에서 찾은 기회)의 파이프라인, 단계, 금액, 이름 같은 주요 정보를 자동으로 바꿔 줘요.
 
-**새 트리거 추가**를 클릭한 후 목록에서 적절한 트리거를 선택합니다. 이 예제에서는 "기회 상태 변경" 트리거를 사용했습니다. 이 트리거는 기존 기회(거래)의 상태가 업데이트될 때마다 워크플로우를 활성화합니다.
+![Update Opportunity 액션 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051102657/original/Ugkl_Hxs6OhpWD8czzju_gsErkCEOA7kRA.png?1754561325)
 
-**이 트리거를 사용하는 이유는?** 이미 기회가 컨텍스트에 있는 상태로 워크플로우가 시작되도록 보장하여 기회 업데이트 액션과 직접 호환되기 때문입니다. 워크플로우를 트리거한 기회를 알고 있어서 추가 조회가 필요없습니다.
+### 액션 이름 정하기
 
-**팁:** 이 트리거에만 제한되지 않습니다. 태그 추가나 폼 제출 등 원하는 트리거를 사용할 수 있습니다. 단, 트리거가 기회 기반이 아니라면 워크플로우 초반에 기회 찾기 단계를 추가하여 업데이트할 올바른 거래를 찾아야 합니다.
+**Action Name**(액션 이름) 필드에 이 액션이 무엇을 하는지 알 수 있는 이름을 입력해요. 예를 들면 "Move to Proposal Stage"나 "Update Deal Info" 같은 이름이에요.
 
-![트리거 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051102631/original/x_q9oBU9KEV2q5n3326Ar7Em0zEasextTw.png?1754561311)
+이 이름은 워크플로우 빌더에 표시돼요. 단계가 많은 워크플로우에서 구분하기 쉬워요. 내부용 이름이라서 연락처에게는 보이지 않아요.
 
-### **기회 업데이트 액션 추가**
+![액션 이름 입력](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051102667/original/vu8zX9ydjp5jGvJ5lPH-3jigC8ylLyI8ZQ.png?1754561338)
 
-트리거를 선택한 후, 그 아래의 **+ 아이콘**을 클릭하고 액션 목록의 기회(Opportunity) 섹션에서 **기회 업데이트**를 검색하거나 스크롤하여 찾습니다.
+### 이전 단계로 이동 허용 켜기/끄기
 
-이 액션을 사용하면 워크플로우를 트리거한 기회(또는 기회 찾기 단계에서 찾은 기회)의 파이프라인, 단계, 금액, 이름 등 주요 세부사항을 자동으로 변경할 수 있습니다.
+기회를 파이프라인의 앞선 단계로 되돌리고 싶다면 **Allow Opportunity to Move to Any Previous Stage**(기회를 이전 단계로 이동 허용) 토글을 ON으로 켜세요.
 
-![기회 업데이트 액션 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051102657/original/Ugkl_Hxs6OhpWD8czzju_gsErkCEOA7kRA.png?1754561325)
+기본적으로 기회는 앞으로 이동하거나 같은 단계에 머물기만 할 수 있어요. 이 옵션을 켜면 너무 일찍 다음 단계로 옮겨진 기회를 되돌리는 등 더 유연하게 운영할 수 있어요.
 
-### **액션 단계 이름 지정**
+![이전 단계로 이동 허용 토글](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051102693/original/DIWtuiHXDv-vsDQd3D3uZT7nImoLBWgOpg.png?1754561352)
 
-**액션 이름** 필드에 이 액션이 수행하는 작업을 명확히 설명하는 라벨을 입력합니다(예: "제안서 단계로 이동" 또는 "거래 정보 업데이트").
+### Duplicate Opportunity 설정
 
-이 이름은 워크플로우 빌더에 표시되며 체계적으로 관리하는 데 도움이 됩니다. 특히 여러 단계가 있는 워크플로우에서 유용합니다. 내부 사용 목적이며 연락처에게는 보이지 않습니다.
+**Update Opportunity** 액션 안에는 **Duplicate Opportunity**(기회 복제) 토글이 있어요. 하지만 이 액션은 새 기회를 만들지 않아요. 기존 기회만 업데이트하기 때문에, 이 토글을 켜도 새로 만들어지는 기회는 없어요.
 
-![액션 이름 지정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051102667/original/vu8zX9ydjp5jGvJ5lPH-3jigC8ylLyI8ZQ.png?1754561338)
+토글 옆의 미리보기 아이콘을 클릭하면 **설정 > 비즈니스 프로필**로 이동해요. 여기에서 기회 중복 규칙을 관리하라는 안내가 나와요. **Go to Opportunity Settings**(기회 설정으로 이동)를 클릭하면 설정 화면이 열리고, 여기서 **Allow Multiple Opportunities per Contact**(연락처당 여러 기회 허용)를 켤 수 있어요. 갱신이나 재구매처럼 같은 연락처가 파이프라인을 여러 번 거칠 수 있을 때 유용해요. 단, 이 설정은 **Update Opportunity** 액션의 동작에는 영향을 주지 않아요. 이 액션은 중복 기회를 만들지 않아요.
 
-### 역단계 이동 허용/비허용
+![기회 중복 설정 안내](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051108804/original/rrxt6QxcspIBdiyM6-KlSoGFwiUZzs4BLA.gif?1754564749)
 
-**기회가 이전 단계로 이동하도록 허용**을 ON으로 토글하면 파이프라인에서 기회를 더 이른 단계로 이동시킬 수 있습니다.
+### 업데이트할 필드 추가하기
 
-기본적으로 기회는 앞으로만 이동하거나 같은 단계에 머물 수 있습니다. 이 옵션을 활성화하면 더 많은 유연성을 얻을 수 있습니다. 특히 성급하게 진행된 거래를 되돌릴 때 유용합니다.
+**Add field**(필드 추가) 버튼을 클릭해 바꿀 기회 정보를 선택해요. 파이프라인, 단계, 이름, 금액 등을 업데이트할 수 있어요.
 
-![역단계 이동 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051102693/original/DIWtuiHXDv-vsDQd3D3uZT7nImoLBWgOpg.png?1754561352)
+이곳에서 **Update Opportunity** 액션이 어떤 내용을 바꿀지 정해요. 병합 필드를 쓰면 연락처 정보에 따라 값을 개인별로 다르게 넣을 수도 있어요.
 
-### 중복 기회 설정
+![필드 추가 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051102738/original/zT8MIoCJ5vxZZGGTqaWAatfVsM9s16bgpg.png?1754561371)
 
-기회 업데이트 액션 안에 **중복 기회** 토글이 있지만, 핵심은 실제로 새로운 기회를 생성하지 않는다는 점입니다. 이 액션은 기존 기회만 업데이트하므로, 이 토글이 활성화되어 있어도 새로운 것이 생성되지 않습니다.
+### Pipeline Filter(파이프라인 필터)
 
-토글 옆의 미리보기 아이콘을 클릭하면 **설정(Settings) > 비즈니스 프로필(Business Profile)**로 이동하며, 중복 기회 규칙을 관리하라는 안내가 표시됩니다. **"기회 설정으로 이동"**을 클릭하면 **"연락처당 여러 기회 허용"**을 켤 수 있는 구성 화면으로 이동합니다. 이 설정은 같은 연락처가 파이프라인을 여러 번 거쳐야 할 때(갱신이나 재구매 등) 유용합니다. 단, 이 설정은 기회 업데이트 액션 자체의 동작에는 영향을 주지 않습니다. 중복을 생성하지 않기 때문입니다.
+기회를 옮길 파이프라인을 선택해요. 갱신이나 추가 판매 기회를 전용 파이프라인으로 보내는 것처럼, 기회를 다른 영업 과정으로 옮길 때 유용해요.
 
-![중복 기회 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051108804/original/rrxt6QxcspIBdiyM6-KlSoGFwiUZzs4BLA.gif?1754564749)
+이 필드를 업데이트하면 손으로 파이프라인을 바꾸지 않아도 영업 흐름을 자동으로 재배치할 수 있어요.
 
-### 업데이트할 필드 추가
+![파이프라인 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051102801/original/pjdq6rQQMtRdUWNbuAGt33g2S1bRqNcsMg.png?1754561412)
 
-**필드 추가** 버튼을 클릭하여 수정하려는 기회 세부사항을 선택합니다. 파이프라인, 단계, 이름, 금액 등의 필드를 업데이트할 수 있습니다.
+### Pipeline Stage(파이프라인 단계)
 
-여기서 기회 업데이트 액션이 적용할 정확한 변경사항을 정의합니다. 연락처 데이터를 기반으로 값을 개인화하기 위해 동적 병합 필드도 사용할 수 있습니다.
+선택한 파이프라인 안에서 기회를 보낼 단계를 선택해요. 영업 진행 상황에 맞게 기회를 앞으로 옮길 수 있어요. 이전 단계로 이동하는 옵션을 켰다면 뒤로도 옮길 수 있어요.
 
-![필드 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051102738/original/zT8MIoCJ5vxZZGGTqaWAatfVsM9s16bgpg.png?1754561371)
+![파이프라인 단계 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051102853/original/tmPABHBvFl86S08WEZD3y3UWrwRBPjJ5Lw.png?1754561435)
 
-### 파이프라인 필터
+### Status(상태)
 
-기회를 이동시키려는 파이프라인을 선택합니다. 거래를 다른 프로세스로 전환할 때 유용합니다. 갱신이나 업셀을 전용 파이프라인으로 라우팅하는 경우 등에 활용됩니다.
+기회의 현재 상태를 **Open**(진행 중), **Won**(고객전환성공), **Lost**(고객전환실패) 중에서 정해요. 이 필드를 업데이트하면 기회의 진행 상황을 실시간 변화에 맞출 수 있어요. 워크플로우를 시작하거나 이어 갈 때 특히 도움이 돼요.
 
-이 필드를 업데이트하면 수동으로 파이프라인을 변경하지 않고도 영업 흐름을 동적으로 재구성할 수 있습니다.
+![상태 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051102894/original/m6Nv95kUl7dbIiPOyXOpd0sNbsO6Tc7mcQ.png?1754561454)
 
-![파이프라인 필터](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051102801/original/pjdq6rQQMtRdUWNbuAGt33g2S1bRqNcsMg.png?1754561412)
+### Opportunity Source(기회 소스)
 
-### **파이프라인 단계**
+기회가 어디서 들어왔는지 업데이트하거나 기록하는 필드예요. 리드 폼, 광고 캠페인, 특정 랜딩 페이지 등이 해당돼요.
 
-선택한 파이프라인 내에서 기회가 이동할 단계를 선택합니다. 이를 통해 거래를 앞으로 진행시키거나(해당 옵션을 활성화한 경우 뒤로도) 영업 사이클의 현재 진행 상황을 반영할 수 있습니다.
+직접 입력하거나, {{contact.source}} 같은 커스텀 값을 써서 연락처 정보를 가져올 수도 있어요. 입력란 옆의 **태그 아이콘**을 클릭하면 커스텀 값을 찾아 넣을 수 있어요. 연락처가 여러 채널로 파이프라인에 들어올 때 소스 정보를 정확하게 유지하는 데 도움이 돼요.
 
-![파이프라인 단계](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051102853/original/tmPABHBvFl86S08WEZD3y3UWrwRBPjJ5Lw.png?1754561435)
+![기회 소스 입력](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051103460/original/wNEAErRrLfk4EmqFebiUMnqckyeQST4DzA.png?1754561787)
 
-### **상태**
+### Opportunity Value(기회 값)
 
-**진행중(Open)**, **성사(Won)**, **실패(Lost)** 등 기회의 현재 상태를 설정합니다. 이 필드를 업데이트하면 거래 진행 상황을 실시간 변경사항과 일치시킬 수 있으며, 워크플로우를 트리거하거나 진행할 때 특히 유용합니다.
+파이프라인에 있는 기회의 금액을 지정하거나 업데이트하는 필드예요. 500처럼 고정 금액을 입력할 수도 있고, 연락처 정보나 워크플로우 흐름에 따라 달라지는 커스텀 값(예: {{contact.quoted\_price}})을 쓸 수도 있어요.
 
-![상태 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051102894/original/m6Nv95kUl7dbIiPOyXOpd0sNbsO6Tc7mcQ.png?1754561454)
+이 필드를 활용하면 예상 매출을 더 정확하게 파악하고, 기회가 영업 과정의 어느 위치에 있는지에 맞춰 파이프라인 예측을 자동화할 수 있어요.
 
-### **기회 소스**
+![기회 금액 입력](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051103944/original/FoCFRBcDPCudz-Ff3qvvXSj4HxqPrBWbSw.png?1754562087)
 
-이 필드를 사용하여 기회가 어디에서 왔는지(리드 폼, 광고 캠페인, 특정 랜딩 페이지 등) 업데이트하거나 추적합니다.
+### 액션 저장하기
 
-수동으로 설정하거나 {{contact.source}} 같은 **커스텀 값**을 사용하여 연락처 레코드에서 동적 데이터를 가져올 수 있습니다. 입력 필드 옆의 **태그 아이콘**을 클릭하여 커스텀 값을 찾아 삽입하면 됩니다. 연락처가 서로 다른 채널에서 파이프라인에 유입될 때 소스 데이터를 정확하게 유지하는 데 특히 도움이 됩니다.
+파이프라인, 단계, 상태 등 업데이트할 기회 필드를 모두 채웠다면 **Save Action**(액션 저장)을 클릭해 저장해요. 그러면 트리거 조건이 충족될 때 워크플로우가 설정한 업데이트를 적용해요.
 
-![기회 소스](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051103460/original/wNEAErRrLfk4EmqFebiUMnqckyeQST4DzA.png?1754561787)
-
-### 기회 금액
-
-이 필드를 사용하여 파이프라인의 거래 금전적 가치를 할당하거나 업데이트합니다. 고정 금액(예: 500)을 입력하거나 연락처 레코드나 기타 워크플로우 로직을 기반으로 한 **커스텀 값**(예: {{contact.quoted_price}})을 사용할 수 있습니다.
-
-이를 사용하여 잠재 수익을 더 정확하게 추적하고 기회가 영업 사이클의 어디에 있는지에 따라 파이프라인 예측을 자동화하세요.
-
-![기회 금액](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051103944/original/FoCFRBcDPCudz-Ff3qvvXSj4HxqPrBWbSw.png?1754562087)
-
-### 액션 저장
-
-파이프라인, 단계, 상태 등 업데이트하려는 모든 기회 필드를 입력했다면 **액션 저장**을 클릭하여 고정합니다. 이렇게 하면 트리거 조건이 충족될 때 워크플로우가 업데이트를 적용하도록 지시합니다.
-
-![액션 저장](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051104023/original/waKilXqwzRk6ykBf4fqivWoRM-MEGg9pig.png?1754562143)
-
----
+![액션 저장 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051104023/original/waKilXqwzRk6ykBf4fqivWoRM-MEGg9pig.png?1754562143)
 
 ## 자주 묻는 질문
 
-**Q: 워크플로우에 기회가 존재하지 않으면 어떻게 되나요?**
+### 워크플로우에 기회가 없으면 어떻게 되나요?
+액션이 건너뛰어져요. 워크플로우가 기회를 기준으로 시작하거나, 워크플로우 안에 **Find Opportunity** 단계가 포함되어 있는지 확인하세요.
 
-액션이 건너뛰어집니다. 워크플로우가 기회에 의해 트리거되거나 기회 찾기 단계가 포함되어 있는지 확인하세요.
+### 기회를 파이프라인에서 이전 단계로 되돌릴 수 있나요?
+네, 가능해요. 단, **Allow Opportunity to Move to Any Previous Stage** 토글이 켜져 있을 때만 돼요.
 
-**Q: 파이프라인에서 기회를 역순으로 이동시킬 수 있나요?**
+### 워크플로우 앞부분에서 **Create Opportunity**(기회 만들기) 액션으로 기회를 만들었다면, 그 기회가 업데이트되나요?
+아니요. 워크플로우 앞에서 기회를 만들었다고 해서 **Update Opportunity** 단계가 그 기회를 자동으로 알지는 못해요. 워크플로우 뒤쪽에서 기회를 업데이트하려면 **Find Opportunity** 액션으로 해당 기회를 찾거나, 기회를 만들 때 커스텀 값으로 올바른 참조 정보를 넘겨야 해요. 그래야 업데이트가 알맞은 기회에 적용돼요.
 
-네, 하지만 "기회가 이전 단계로 이동하도록 허용" 토글이 활성화된 경우에만 가능합니다.
-
-**Q: 워크플로우 초반에 기회 생성 액션을 사용했다면, 그 기회가 업데이트되나요?**
-
-아니요. 워크플로우 초반에 기회를 생성하는 것만으로는 기회 업데이트 단계에 대한 컨텍스트가 자동으로 제공되지 않습니다. 나중에 워크플로우에서 기회를 업데이트하려면 기회 찾기 액션을 사용하여 특정 레코드를 찾거나, 기회 생성 시 커스텀 값을 통해 올바른 참조를 전달해야 합니다. 이렇게 해야 적절한 컨텍스트로 올바른 레코드를 타겟으로 업데이트할 수 있습니다.
-
-**Q: 기회의 담당자를 업데이트할 수 있나요?**
-
-이 액션으로는 불가능합니다. 담당자를 변경하려면 **사용자 배정(Assign User)** 또는 **연락처 업데이트(Update Contact)** 액션을 사용하세요.
-
----
-*원문 최종 수정: Thu, 7 Aug, 2025 at 6:13 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### 기회의 담당자를 업데이트할 수 있나요?
+이 액션으로는 할 수 없어요. 담당자를 바꾸려면 **Assign User**(사용자 배정) 또는 **Update Contact**(연락처 업데이트) 액션을 사용하세요.

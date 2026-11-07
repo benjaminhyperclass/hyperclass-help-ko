@@ -1,67 +1,47 @@
 ---
-
-번역일: 2026-04-06
-카테고리: 04-캘린더-예약 > 캘린더-만들기
+원문: /support/solutions/articles/155000001711-workflow-action-for-generating-one-time-link
+번역일: 2026-11-07
+카테고리: 04-캘린더-예약
 ---
 
-# 원타임 링크 생성 워크플로우 액션
+# 워크플로우 액션 — Generate One-Time Booking Link(일회용 예약 링크 생성)
 
-**목차**
+워크플로우 안에서 일회용 예약 링크를 자동으로 만들어 연락처에게 보내는 방법을 안내해요. 링크를 하나씩 직접 만들 필요가 없어서, 예약 안내를 자동화할 때 쓰면 편해요.
 
-- [원타임 링크 이해하기](#원타임-링크-이해하기)
-- [워크플로우에 원타임 링크를 통합하는 주요 장점](#워크플로우에-원타임-링크를-통합하는-주요-장점)
-- [동적 원타임 링크 생성하는 방법](#동적-원타임-링크-생성하는-방법)
+## 일회용 링크란?
 
-#### 관련 문서
+일회용 링크는 예약이 끝나면 자동으로 만료되는 고유한 예약 링크예요. **Generate One-Time Booking Link**(일회용 예약 링크 생성) 액션을 쓰면 워크플로우 안에서 이 링크를 바로 만들 수 있어요.
 
-**[원타임 링크](one-time-link.md)**
+## 워크플로우에 일회용 링크를 넣으면 좋은 점
 
----
+- **예약 과정 간소화:** 링크를 직접 만드는 수고가 없어서, 실수 없이 매끄럽게 예약을 진행할 수 있어요.
+- **다양한 워크플로우에 활용:** 여러 예약 상황에 맞춰 만든 워크플로우에 두루 넣어 쓸 수 있어요.
+- **예약 관리 강화:** 예약을 유연하고 효과적으로 관리할 수 있어서, 더 세밀하게 조정할 수 있어요.
 
-#### 원타임 링크 이해하기
+## 동적 일회용 링크 만들기
 
-원타임 링크는 예약이 완료되면 자동으로 만료되는 고유한 예약 링크입니다. '원타임 예약 링크 생성' 액션을 통해 사용자는 워크플로우 내에서 직접 이런 링크를 쉽게 만들 수 있습니다.
+아래 순서대로 따라 하면 워크플로우 안에서 일회용 링크를 만들 수 있어요.
 
----
+1. 계정에서 워크플로우를 만드세요. 필요에 맞게 워크플로우를 시작할 트리거를 정해요.
 
-#### **워크플로우에 원타임 링크를 통합하는 주요 장점**
+   ![워크플로우를 만들고 트리거를 정하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155018179878/original/9PH-4QaDl1YRM4CRiWB2XUQGAMQ-z3B54w.png?1705662313)
 
-- **간편한 예약 프로세스:** 링크 생성의 수동 작업을 없애서 원활하고 오류 없는 예약 과정을 보장합니다.
-- **워크플로우 통합의 다양성:** 맞춤형 워크플로우에 매끄럽게 연결되어 다양한 사용 사례에 적응하므로, 여러 예약 시나리오에서 활용도 높은 도구입니다.
-- **향상된 예약 관리:** 예약 관리에 동적이고 효과적이며 유연한 접근 방식을 제공하여 사용자에게 더 큰 제어력과 적응성을 줍니다.
+2. 워크플로우에 액션을 추가하세요. **Appointments**(예약) 카테고리에서 **Generate One Time Booking Link**(일회용 예약 링크 생성)를 선택해요.
 
----
+   ![Appointments 카테고리에서 Generate One Time Booking Link 액션을 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155018179038/original/YCkyI2w8TIZMetLj9EHdbrWc3tthBnU8FQ.png?1705662119)
 
-#### **동적 원타임 링크 생성하는 방법**
+3. 일회용 링크를 만들 캘린더를 선택하세요.
 
-워크플로우 내에서 동적 원타임 링크를 생성하려면 다음의 간단한 단계를 따르세요:
+   ![일회용 링크를 만들 캘린더를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155018180332/original/lDOQfOfeezXDE2rv93kRi7tuZRnssl3r0g.png?1705662475)
 
-#### 1. 워크플로우 만들기: 먼저 계정에서 워크플로우를 만듭니다. 특정 요구사항에 따라 워크플로우를 시작하는 트리거를 정의하세요.
+4. 만든 링크를 연락처에게 보내려면 워크플로우에 이메일 같은 커뮤니케이션 액션을 추가하세요.
 
-![워크플로우 만들기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155018179878/original/9PH-4QaDl1YRM4CRiWB2XUQGAMQ-z3B54w.png?1705662313)
+   ![링크를 보내기 위해 이메일 액션을 추가하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155018181091/original/RKQiBow9CoDlsPKjvyEGvC-0QiqzQ_JTHw.png?1705662726)
 
-#### **2. '원타임 예약 링크 생성' 액션 추가하기:** 워크플로우에서 액션을 추가합니다. 'Appointments(예약)' 카테고리로 이동해서 'Generate One Time Booking Link(원타임 예약 링크 생성)'를 선택하세요.
+5. **Custom Value**(커스텀 값)로 이메일 본문에 일회용 링크를 넣으세요. 트리거가 실행될 때마다 고유한 일회용 링크가 새로 만들어져요. **Generate One Time Booking Link**를 선택한 다음 **One Time Link**를 고르세요.
 
-![원타임 예약 링크 생성 액션 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155018179038/original/YCkyI2w8TIZMetLj9EHdbrWc3tthBnU8FQ.png?1705662119)
+   ![Custom Value에서 One Time Link를 선택해 이메일 본문에 넣는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155018180795/original/lGXO4iv2tvapxRKiIFiXIeulY_6LFexvVg.png?1705662663)
 
-#### 3. 원타임 링크를 생성할 캘린더를 선택하세요.
+6. 이메일 본문을 필요에 맞게 수정하고 **Save**(저장)를 클릭하세요.
 
-![캘린더 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155018180332/original/lDOQfOfeezXDE2rv93kRi7tuZRnssl3r0g.png?1705662475)
-
-#### **4. 생성된 링크 공유하기:** 링크를 연락처와 공유하려면 워크플로우에 커뮤니케이션 액션(예: 이메일)을 추가하세요.
-
-![생성된 링크 공유](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155018181091/original/RKQiBow9CoDlsPKjvyEGvC-0QiqzQ_JTHw.png?1705662726)
-
-#### **5. 커스텀 값 추가하기:** 트리거가 활성화될 때마다 생성되는 고유한 원타임 링크를 커스텀 값을 사용해서 이메일 본문에 삽입합니다. 'Generate One Time Booking Link(원타임 예약 링크 생성)'를 선택하고 'One Time Link(원타임 링크)'를 선택하세요.
-
-![커스텀 값 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155018180795/original/lGXO4iv2tvapxRKiIFiXIeulY_6LFexvVg.png?1705662663)
-
-#### **6. 이메일 본문 커스터마이징:** 필요에 따라 이메일 본문을 커스터마이징하고 '저장'을 클릭하세요.
-
-#### **7. 워크플로우 발행:** 워크플로우 설정이 완료되면 발행하세요. 이제 정의된 조건에 의해 트리거된 워크플로우에 연락처가 진입할 때마다 고유한 원타임 링크가 생성되어 이메일로 전송됩니다.
-
----
-
----
-*원문 최종 수정: Fri, 19 Jan, 2024 at 5:32 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+7. 워크플로우 설정이 끝나면 게시하세요. 이제 정해 둔 조건으로 연락처가 워크플로우에 들어올 때마다 고유한 일회용 링크가 만들어져 이메일로 전달돼요.

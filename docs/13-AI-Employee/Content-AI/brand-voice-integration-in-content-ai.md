@@ -1,143 +1,128 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 13-AI-Employee > Content-AI
+원문: /support/solutions/articles/155000005308-brand-voice-integration-in-content-ai
+번역일: 2026-11-06
+카테고리: 13-AI-Employee
 ---
 
-# 콘텐츠 AI의 브랜드 보이스 연동
+# 콘텐츠 AI에서 브랜드 보이스 연동 사용하기
 
-하이퍼클래스의 향상된 콘텐츠 AI 경험에 오신 것을 환영합니다! 새로운 브랜드 보이스 연동(Brand Voice Integration)으로 이제 브랜드의 고유한 정체성에 깊이 맞춘 콘텐츠를 생성할 수 있으며, 소셜 플래너(Social Planner), 블로그(Blogs), 이메일 빌더(Email Builder), 퍼널 및 웹사이트(Funnels & Websites) 전반에서 모든 콘텐츠가 진정성 있고 일관되게 느껴지도록 보장합니다.
+저장해 둔 브랜드 보이스를 콘텐츠 AI에 연결하면, 우리 브랜드에 맞는 콘텐츠를 만들 수 있어요. 이 문서에서는 **소셜 플래너**, **블로그**, **이메일 빌더**, **퍼널**, **웹사이트**에서 브랜드 보이스를 적용해 콘텐츠를 생성하는 방법을 안내해요.
 
-**목차**
+## 콘텐츠 AI의 브랜드 보이스 연동이란?
 
-- [콘텐츠 AI의 브랜드 보이스 연동이란?](#콘텐츠-ai의-브랜드-보이스-연동이란)
-- [콘텐츠 AI 브랜드 보이스 연동의 주요 이점](#콘텐츠-ai-브랜드-보이스-연동의-주요-이점)
-- [콘텐츠 AI에서 브랜드 보이스 연동 설정하기](#콘텐츠-ai에서-브랜드-보이스-연동-설정하기)
-- [자주 묻는 질문](#자주-묻는-질문)
+콘텐츠 AI의 브랜드 보이스 연동은 브랜드의 톤, 타깃 고객, 브랜드 목적, 고유 판매 제안(USP), 고객의 불편 사항 같은 정보를 활용해 AI가 콘텐츠를 만들게 하는 기능이에요. 저장해 둔 브랜드 보이스 설정을 콘텐츠 AI에 연결하면, 여러 도구에서 우리 브랜드에 맞는 맞춤 콘텐츠를 쉽게 만들 수 있어요.
 
-## 콘텐츠 AI의 브랜드 보이스 연동이란? {#what-is-brand-voice-integration}
+## 브랜드 보이스 연동의 장점
 
-콘텐츠 AI의 브랜드 보이스 연동은 톤, 타겟 고객, 브랜드 목적, 고유 판매 포인트(USP), 고객 고충점 등 브랜드의 특정 매개변수를 활용하여 비즈니스 정체성을 진정으로 반영하는 AI 기반 콘텐츠를 생성하는 강력한 기능입니다. 저장된 브랜드 보이스 설정을 콘텐츠 AI에 직접 연결하여, 여러 모듈에서 개인화되고 브랜드에 맞는 콘텐츠를 손쉽게 제작할 수 있습니다.
+브랜드 보이스를 연동하면 브랜드 이미지를 일관되게 유지하는 데 도움이 돼요.
 
-## 콘텐츠 AI 브랜드 보이스 연동의 주요 이점 {#key-benefits}
+- AI가 만든 모든 콘텐츠가 브랜드의 톤과 메시지에 맞춰져요.
+- 브랜드의 타깃 고객, 목적, 가치가 내부적으로 자동 적용되어 더 알맞은 콘텐츠가 나와요.
+- 브랜드 보이스를 바탕으로 자동 입력과 기본 선택이 이루어져 시간이 절약돼요.
+- 필요하면 톤 등 다른 항목을 직접 바꿀 수 있어요.
+- 소셜 게시물, 블로그, 이메일, 웹 페이지 전반에서 브랜드를 일관되게 유지할 수 있어요.
+- 도움말 툴팁과 미리보기로 브랜드 항목이 결과물에 어떤 영향을 주는지 확인할 수 있어요.
+- **브랜드 보드**와 매끄럽게 연동되어 브랜드 보이스를 쉽게 설정하고 수정할 수 있어요.
 
-브랜드 보이스 연동은 일관되고 매력적인 브랜드 존재감을 유지하는 데 도움이 되는 여러 이점을 제공합니다:
+## 브랜드 보이스 연동 설정하기
 
-- AI가 생성하는 모든 콘텐츠가 브랜드의 톤과 메시징에 일치하도록 보장합니다.
-- 브랜드의 타겟 고객, 목적, 가치를 백그라운드에서 자동으로 적용하여 더 관련성 높은 콘텐츠를 생성합니다.
-- 브랜드 보이스를 기반으로 한 스마트 자동완성과 기본 선택으로 시간을 절약합니다.
-- 필요에 따라 톤이나 다른 매개변수를 재정의하고 커스터마이징할 수 있는 유연성을 제공합니다.
-- 소셜 게시물, 블로그, 이메일, 웹 페이지 전반에 걸쳐 브랜드 일관성을 장려합니다.
-- 선택을 안내하고 브랜드 매개변수가 결과물에 어떤 영향을 미치는지 보여주는 유용한 툴팁과 미리보기를 제공합니다.
-- 브랜드 보드(Brand Boards)와 원활하게 연동되어 브랜드 보이스 설정이나 업데이트가 쉬워집니다.
+브랜드 보이스 연동을 설정하면 콘텐츠 AI가 브랜드 고유의 정보를 바탕으로 콘텐츠를 만들어요.
 
-## 콘텐츠 AI에서 브랜드 보이스 연동 설정하기 {#how-to-setup}
+{% hint style="warning" %}
+중요: 아직 브랜드 보이스를 설정하지 않았다면, 먼저 브랜드 보이스 설정 방법 문서를 참고해 브랜드 보이스를 만든 뒤 진행하세요.
+{% endhint %}
 
-브랜드 보이스 연동을 설정하면 콘텐츠가 항상 브랜드에 맞고 고객에게 맞춤화되도록 보장합니다. 올바른 설정을 통해 콘텐츠 AI가 생성하는 모든 콘텐츠에 브랜드의 고유한 매개변수를 사용할 수 있습니다.
+### 1단계: 콘텐츠 AI를 지원하는 도구 열기
 
-**중요**: 아직 브랜드 보이스를 설정하지 않았다면, 계속하기 전에 [브랜드 보이스 설정 방법](../../10-마케팅/브랜드-보드/brand-voice-in-brand-boards.md)을 참조하여 브랜드 보이스를 생성하세요.
+- 콘텐츠 AI를 지원하는 도구로 이동하세요. 이메일, **블로그**, **퍼널**, **웹사이트**, **소셜 플래너** 등이 있어요.
+- 이 문서에서는 이메일을 예로 설명해요.
 
-### 1단계: 콘텐츠 AI 지원 도구 열기
+### 2단계: AI 생성 화면 열기
 
-- 콘텐츠 AI를 지원하는 도구로 이동하세요: 이메일(Email), 블로그(Blogs), 퍼널(Funnels), 웹사이트(Websites), 소셜 플래너(Social Planner) 등
-- 이 글에서는 이메일을 예시로 사용합니다.
+- **이메일 빌더** 또는 콘텐츠 편집 화면을 여세요.
+- **AI** 버튼을 클릭한 다음 **AI로 생성**을 선택하세요.
 
-### 2단계: AI 생성기 실행
+  ![AI 버튼에서 AI로 생성을 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046930278/original/oN-u--3QzLi0xwJAmoIpVzTbqmTwGoyWVg.gif?1747745047)
 
-- 이메일 빌더나 콘텐츠 인터페이스를 엽니다.
-- AI 버튼을 클릭하고 AI로 생성하기(Generate with AI)를 선택합니다.
+### 3단계: 브랜드 보이스 사용 토글 켜기
 
-![브랜드 보이스 AI 생성 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046930278/original/oN-u--3QzLi0xwJAmoIpVzTbqmTwGoyWVg.gif?1747745047)
+- **브랜드 보이스 사용** 토글이 켜져 있는지 확인하세요.
+- 토글이 켜져 있으면 AI가 저장된 브랜드 항목을 자동으로 적용해요.
 
-### 3단계: "브랜드 보이스 사용" 토글 활성화
+  ![브랜드 보이스 사용 토글을 켠 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046934355/original/eeNMGrDEFeESdSaaSx4S3MCKiiPwhrF8lg.png?1747747353)
 
-- 브랜드 보이스 사용(Use Brand Voice) 토글이 켜져 있는지 확인합니다.
-- 활성화하면 AI가 자동으로 저장된 브랜드 매개변수를 적용합니다.
+### 4단계: 브랜드 보이스 선택하기
 
-![브랜드 보이스 토글](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046934355/original/eeNMGrDEFeESdSaaSx4S3MCKiiPwhrF8lg.png?1747747353)
+- 드롭다운에서 미리 저장해 둔 브랜드 보이스를 선택하세요.
 
-### 4단계: 브랜드 보이스 선택
+  ![드롭다운에서 저장된 브랜드 보이스를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046937182/original/su3n9k49R6Ygfr8OGUn1GfUCrK5q0jEO8Q.png?1747749038)
 
-- 드롭다운에서 이전에 저장한 브랜드 보이스를 선택합니다.
+### 5단계: 브랜드 보이스 상세 내용 미리 보기
 
-![브랜드 보이스 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046937182/original/su3n9k49R6Ygfr8OGUn1GfUCrK5q0jEO8Q.png?1747749038)
+- **브랜드 보이스 미리보기**를 클릭하면 콘텐츠 생성에 쓰이는 메타데이터를 확인할 수 있어요.
 
-### 5단계: 브랜드 보이스 세부사항 미리보기
+  ![브랜드 보이스 미리보기를 클릭하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046937535/original/jPOBQIkPcyqOlNaLLwAAaJEo1h6JBGEtRw.gif?1747749297)
 
-- 브랜드 보이스 미리보기(Preview Brand Voice)를 클릭하여 콘텐츠 생성에 사용되는 메타데이터를 확인합니다.
+### 6단계: 콘텐츠의 맥락 정하기
 
-![브랜드 보이스 미리보기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046937535/original/jPOBQIkPcyqOlNaLLwAAaJEo1h6JBGEtRw.gif?1747749297)
+- 프로모션, 소개, 후기, **콜드 아웃리치** 등 **콘텐츠 유형(맥락)**을 선택하세요.
 
-### 6단계: 콘텐츠 맥락 정의
+  ![콘텐츠 유형을 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046937895/original/CL3Ea2_SogLw9ndbMBeMpA4kzQDwcW6V6w.png?1747749544)
 
-- 프로모션(Promotional), 소개(Introduction), 추천사(Testimonial), 콜드 아웃리치(Cold Outreach) 등과 같은 콘텐츠 유형(맥락)을 선택합니다.
+### 7단계: 콘텐츠 제목과 설명 입력하기
 
-![콘텐츠 맥락 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046937895/original/CL3Ea2_SogLw9ndbMBeMpA4kzQDwcW6V6w.png?1747749544)
+- **제목**: 주제나 캠페인 이름을 짧게 입력하세요. 예: "피자 프로모션"
+- **설명**: 콘텐츠의 목표나 핵심 메시지를 2~3줄로 요약해 입력하세요.
 
-### 7단계: 콘텐츠 제목과 설명 추가
+  ![제목과 설명을 입력하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046938191/original/HbUHokjWsJbpnUul9kdRdxfdKX0zljRnww.png?1747749763)
 
-- 제목: 짧은 주제나 캠페인 이름을 추가합니다(예: "피자 프로모션").
-- 설명: 목표나 핵심 메시지를 2-3줄로 요약합니다.
+### 8단계: 관련 키워드 추가하기
 
-![콘텐츠 제목과 설명](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046938191/original/HbUHokjWsJbpnUul9kdRdxfdKX0zljRnww.png?1747749763)
+- AI가 만드는 콘텐츠에 반영할 **타깃 키워드**를 입력하세요.
 
-### 8단계: 관련 키워드 추가
+  ![타깃 키워드를 입력하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046938601/original/5HiG0ajNj9pRKGUr35qp5FAIEmcVsbGcZQ.png?1747750082)
 
-- AI가 생성할 콘텐츠에 영향을 주어야 할 타겟 키워드를 입력합니다.
+### 9단계: 톤과 콘텐츠 설정 조정하기
 
-![키워드 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046938601/original/5HiG0ajNj9pRKGUr35qp5FAIEmcVsbGcZQ.png?1747750082)
+- 필요하면 브랜드 톤 대신 유머러스, 캐주얼, 신나는 분위기 등 다른 스타일로 **바꿀 수 있어요**.
+- **Number of Variations**(변형 수)에서 1개부터 5개까지 선택하세요.
+- **Length of Content**(콘텐츠 길이)에서 **작게**, **미디엄**, **길게**, **사용자 지정**(단어 수 기준) 중에서 선택하세요.
 
-### 9단계: 톤과 콘텐츠 설정 커스터마이징
+  ![톤과 변형 수, 콘텐츠 길이를 설정하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046939080/original/jf1EUSjzcux_qQMW1BNMC92pzWJ5-RrMDQ.gif?1747750410)
 
-- 필요하다면 브랜드 톤을 재미있는(Funny), 캐주얼한(Casual), 흥분한(Excited) 등의 다른 스타일로 재정의할 수 있습니다.
-- 변형 개수(Number of Variations)(1~5개)를 선택합니다.
-- 콘텐츠 길이(Length of Content)(작게, 중간, 크게, 또는 단어 수로 커스텀)를 선택합니다.
+### 10단계: 콘텐츠 생성하기
 
-![톤과 콘텐츠 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046939080/original/jf1EUSjzcux_qQMW1BNMC92pzWJ5-RrMDQ.gif?1747750410)
+- **생성**을 클릭하세요.
+- AI가 브랜드 보이스 정보와 선택한 설정을 바탕으로 **맞춤 콘텐츠를 만들어 줘요**.
 
-### 10단계: 콘텐츠 생성
+  ![생성을 클릭해 콘텐츠를 만드는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046939722/original/Vm8DGasFwKaQKII4oItI6-HuUz_8twUpQA.png?1747750770)
 
-- 생성(Generate)을 클릭합니다.
-- 이제 AI가 브랜드 보이스 입력값과 선택한 설정을 사용하여 개인화된 콘텐츠를 생성합니다.
+{% hint style="info" %}
+참고: 브랜드 보이스를 자세하고 정확하게 설정할수록 AI가 만드는 콘텐츠가 더 알맞고 품질도 높아져요.
+{% endhint %}
 
-![콘텐츠 생성](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046939722/original/Vm8DGasFwKaQKII4oItI6-HuUz_8twUpQA.png?1747750770)
+## 자주 묻는 질문
 
-**참고**: 브랜드 보이스 설정이 더 상세하고 정확할수록, AI가 생성하는 콘텐츠의 관련성과 품질이 더욱 높아집니다.
+### 여러 브랜드를 운영하는 경우에도 브랜드 보이스 연동을 쓸 수 있나요?
+네, 쓸 수 있어요. 브랜드 보이스를 여러 개 저장해 두고, 콘텐츠를 만들 때마다 **Brand Voice Selector**(브랜드 보이스 선택기) 드롭다운에서 알맞은 것을 고르면 돼요.
 
-## 자주 묻는 질문 {#faq}
+### 브랜드 보이스를 설정하지 않았다면 어떻게 되나요?
+브랜드 보이스가 없으면 **브랜드 보드**에서 설정하라는 안내 버튼이 나타나요. 연동을 쓰기 전에 먼저 설정하세요.
 
-**Q: 여러 브랜드를 관리하는 경우에도 브랜드 보이스 연동을 사용할 수 있나요?**
+### 자동으로 채워진 톤이나 다른 항목을 바꿀 수 있나요?
+네, 바꿀 수 있어요. 직접 수정한 내용이 자동으로 채워진 값보다 우선 적용돼요.
 
-네! 여러 브랜드 보이스를 저장하고 브랜드 보이스 선택 드롭다운을 사용하여 각 콘텐츠 세션에 적합한 것을 선택할 수 있습니다.
+### 브랜드 보이스 연동이 콘텐츠 AI의 모든 모듈에서 작동하나요?
+네, **소셜 플래너**, **블로그**, **이메일 빌더**, **퍼널**, **웹사이트**에서 사용할 수 있어요.
 
-**Q: 브랜드 보이스를 설정하지 않았으면 어떻게 되나요?**
+### 브랜드 보이스 설정이 모든 콘텐츠에 적용되나요?
+브랜드 보이스가 있으면 기본으로 켜져 있어요. 브랜드와 상관없는 일반적인 콘텐츠를 원하면 콘텐츠를 만들 때마다 토글을 끌 수 있어요.
 
-브랜드 보이스가 존재하지 않으면, 연동을 사용하기 전에 브랜드 보드를 통해 브랜드 보이스를 설정하라는 안내 메시지가 표시됩니다.
+### AI가 만든 콘텐츠가 우리 브랜드와 항상 똑같이 맞나요?
+브랜드 보이스 연동으로 브랜드와 맞는 정도는 크게 높아지지만, 게시하기 전에 항상 내용이 정확한지, 브랜드에 어울리는지 검토하세요.
 
-**Q: 자동완성된 톤이나 다른 매개변수를 재정의할 수 있나요?**
+### 브랜드 보이스 항목을 수정하려면 어떻게 하나요?
+**브랜드 보드**에서 언제든 브랜드 보이스를 수정할 수 있어요. 수정한 내용은 콘텐츠 AI에도 반영돼요.
 
-물론입니다. 수동으로 변경한 사항은 자동완성된 값보다 우선됩니다.
-
-**Q: 브랜드 보이스 연동이 모든 콘텐츠 AI 모듈에서 작동하나요?**
-
-네, 소셜 플래너, 블로그, 이메일 빌더, 퍼널 및 웹사이트에서 사용할 수 있습니다.
-
-**Q: 브랜드 보이스 설정이 모든 콘텐츠에 적용되나요?**
-
-브랜드 보이스가 존재하면 기본적으로 켜져 있지만, 일반적인 콘텐츠를 원하는 경우 언제든 세션별로 끌 수 있습니다.
-
-**Q: AI가 생성한 콘텐츠가 항상 내 브랜드와 정확히 일치하나요?**
-
-브랜드 보이스 연동이 일치도를 크게 향상시키지만, 게시하기 전에 항상 콘텐츠의 정확성과 브랜드 적합성을 검토하시기 바랍니다.
-
-**Q: 브랜드 보이스 매개변수는 어떻게 업데이트하나요?**
-
-브랜드 보드를 통해 언제든 브랜드 보이스를 업데이트할 수 있으며, 변경사항이 콘텐츠 AI에 반영됩니다.
-
-**Q: 저장할 수 있는 브랜드 보이스 개수에 제한이 있나요?**
-
-공식적인 제한은 없으며, 다양한 브랜드나 캠페인을 위해 여러 브랜드 보이스를 관리할 수 있습니다.
-
----
-*원문 최종 수정: Tue, 26 Aug, 2025 at 10:35 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### 저장할 수 있는 브랜드 보이스 개수에 제한이 있나요?
+공개된 제한은 없어요. 브랜드나 캠페인별로 여러 개의 브랜드 보이스를 관리할 수 있어요.

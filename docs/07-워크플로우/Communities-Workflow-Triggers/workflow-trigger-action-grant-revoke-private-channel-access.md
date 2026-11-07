@@ -1,59 +1,48 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 07-워크플로우 > Communities Workflow Triggers
+원문: /support/solutions/articles/155000003681-workflow-trigger-action-grant-revoke-private-channel-access
+번역일: 2026-11-07
+카테고리: 07-워크플로우
 ---
 
-# 워크플로우 트리거 & 액션 - 비공개 채널 접근 권한 부여/취소
+# 워크플로우 트리거·액션 — Private Channel Access Granted/Revoked, Grant/Revoke Private Channel Access(비공개 채널 접근 권한 부여/해제)
 
-**목차**
-
-- [개요](#개요)
-- [액션 이름](#액션-이름)
-- [액션 설명](#액션-설명)
-- [설정 방법](#설정-방법)
-- [예시](#예시)
----
+커뮤니티 멤버의 비공개 채널 접근 권한을 워크플로우로 자동으로 주거나 거두는 방법을 설명해요. 멤버가 비공개 채널에 들어오거나 나갈 때마다 직접 처리하지 않아도 돼요.
 
 ## 개요
 
-비공개 채널 접근 권한 부여/취소 워크플로우 액션을 사용하면 비공개 채널 접근 권한을 자동으로 관리할 수 있어, 커뮤니티 상호작용과 사용자 경험을 향상시킬 수 있습니다.
+**Grant Private Channel Access**(비공개 채널 접근 권한 부여)와 **Revoke Private Channel Access**(비공개 채널 접근 권한 해제) 액션을 쓰면 비공개 채널 접근 권한을 자동으로 관리할 수 있어요. 커뮤니티 활동과 멤버 경험을 더 매끄럽게 만들어 줘요.
 
-## 트리거 이름 
+## 트리거 이름
 
-- Private Channel Access Granted(비공개 채널 접근 권한 부여됨)
-- Private Channel Access Revoked(비공개 채널 접근 권한 취소됨)
+- **Private Channel Access Granted**(비공개 채널 접근 권한 부여됨)
+- **Private Channel Access Revoked**(비공개 채널 접근 권한 해제됨)
 
 ## 액션 이름
 
-- Grant Private Channel Access(비공개 채널 접근 권한 부여)
-- Revoke Private Channel Access(비공개 채널 접근 권한 취소)
+- **Grant Private Channel Access**
+- **Revoke Private Channel Access**
 
 ## 액션 설명
 
-- "비공개 채널 접근 권한 부여" 액션은 커뮤니티 그룹 내의 특정 채널(비공개 채널)에 대한 접근 권한을 멤버에게 부여하고 싶을 때 사용합니다. **동시에 커뮤니티 그룹에도 추가됩니다.** 이 자동화를 통해 사용자가 적시에 업데이트를 받고 관련 채널 콘텐츠 및 멤버와 소통할 수 있습니다.
-- "비공개 채널 접근 권한 취소" 액션은 커뮤니티 그룹 내의 특정 채널(예: 비공개 채널)에 대한 멤버의 접근 권한을 취소하고 싶을 때 사용하되, **그룹에는 계속 남아있게** 합니다.
+- **Grant Private Channel Access** 액션은 커뮤니티 그룹 안의 특정 채널(비공개 채널)에 멤버가 접근할 수 있게 해 줘요. 동시에 그 멤버를 커뮤니티 그룹에도 추가해요. 이 자동화로 멤버는 해당 채널의 소식을 제때 받고, 채널 콘텐츠와 다른 멤버들과 바로 소통할 수 있어요.
+- **Revoke Private Channel Access** 액션은 커뮤니티 그룹 안의 특정 채널(예: 비공개 채널)에 대한 멤버의 접근 권한을 거둬요. 멤버는 그룹에는 그대로 남아 있어요.
 
 ## 설정 방법
 
-- 워크플로우 빌더로 이동: Hyperclass 계정에서 워크플로우 빌더에 접근합니다.
-- 새 워크플로우 생성: "Create a Workflow(워크플로우 생성)"를 클릭합니다.
-- 관련 액션 유형 선택: "Grant Private Channel Access(비공개 채널 접근 권한 부여)" 또는 "Revoke Private Channel Access(비공개 채널 접근 권한 취소)"를 선택합니다.
-- 트리거 세부사항 설정: 접근 권한을 부여/취소할 그룹과 비공개 채널을 지정합니다. 비공개 채널 옵션만 표시되고 선택할 수 있으니, 관련 비공개 채널이 있는지 확인하세요.
-- **멤버가 아직 그룹에 속해있지 않다면, 그룹에 추가된 후 선택한 채널에 추가됩니다.**
-- 자동화하고 싶은 후속 액션을 추가합니다.
+1. 하이퍼클래스 계정에서 **워크플로우 빌더**를 여세요.
+2. 새 워크플로우를 만드세요.
+   1. **Create a Workflow**(워크플로우 만들기)를 클릭하세요.
+   2. 알맞은 액션 유형인 **Grant Private Channel Access** 또는 **Revoke Private Channel Access**를 선택하세요.
+3. 접근 권한을 줄(또는 거둘) 그룹과 비공개 채널을 지정하세요.
+   - 먼저 그룹을 고르고, 이어서 비공개 채널을 고르세요. 선택 목록에는 비공개 채널만 나타나요. 대상 비공개 채널이 미리 만들어져 있는지 확인하세요.
+   - 멤버가 아직 그룹에 속해 있지 않으면 그룹에 먼저 추가되고, 이어서 선택한 채널에도 추가돼요.
+   - 이어서 자동화하고 싶은 액션이 있으면 추가해요.
 
-![비공개 채널 접근 권한 워크플로우 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034017891/original/fIFFeFv2jyenVn4oV3a9ZTThOcFGqjLvKQ.png?1727951539)
-
-![비공개 채널 접근 권한 액션 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034018460/original/BnAM80CYzX_JkpqTvvDkTGKquYI8Rjr1WQ.png?1727951833)
-
-- 워크플로우 테스트: 제한된 환경에서 테스트하여 워크플로우가 예상대로 작동하는지 확인합니다.
-- 저장 및 활성화: 확인이 완료되면 워크플로우를 저장하고 사용을 위해 활성화합니다.
+     ![비공개 채널 접근 권한 액션 설정 화면 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034017891/original/fIFFeFv2jyenVn4oV3a9ZTThOcFGqjLvKQ.png?1727951539)
+     ![비공개 채널 접근 권한 액션 설정 화면 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034018460/original/BnAM80CYzX_JkpqTvvDkTGKquYI8Rjr1WQ.png?1727951833)
+4. 테스트 환경에서 워크플로우가 의도대로 동작하는지 확인하세요.
+5. 문제가 없으면 워크플로우를 저장하고 활성화하세요.
 
 ## 예시
 
-예를 들어, 새로운 멤버가 북클럽 커뮤니티에 가입할 때, "Book Upgrades" 비공개 채널에 자동으로 접근 권한을 부여하는 워크플로우를 설정할 수 있습니다. 이를 통해 새 멤버가 예정된 토론에 대한 즉시 업데이트를 받고 다른 멤버들과 바로 소통할 수 있습니다.
-
----
-*원문 최종 수정: Mon, 5 May, 2025 at 2:46 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+독서 모임 커뮤니티에 새 멤버가 가입하면 "도서 업그레이드" 비공개 채널 접근 권한을 자동으로 주는 워크플로우를 만들 수 있어요. 그러면 새 멤버는 앞으로 열릴 토론 소식을 바로 받고, 다른 멤버들과도 곧바로 이야기를 나눌 수 있어요.

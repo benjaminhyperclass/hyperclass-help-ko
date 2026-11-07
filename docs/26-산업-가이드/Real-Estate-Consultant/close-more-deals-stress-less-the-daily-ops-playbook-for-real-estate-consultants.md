@@ -1,238 +1,287 @@
 ---
-번역일: 2026-04-08T00:00:00.000Z
-카테고리: 26-산업-가이드 > Real Estate Consultant
+원문: /support/solutions/articles/155000005285-close-more-deals-stress-less-the-daily-ops-playbook-for-real-estate-consultants
+번역일: 2026-11-06
+카테고리: 26-산업-가이드
 ---
 
-# 더 많은 계약 성사, 적은 스트레스: 부동산 컨설턴트를 위한 일일 운영 플레이북
+# 부동산 컨설턴트를 위한 일일 운영 플레이북: 계약은 더 많이, 스트레스는 더 적게
 
-## 더 많은 계약 성사, 적은 스트레스: 부동산 컨설턴트를 위한 일일 운영 플레이북
+예약, 후속 연락, 파이프라인 관리, 결제 수금, 성과 분석까지 부동산 컨설턴트의 하루 업무를 하이퍼클래스로 자동화하는 5단계 가이드예요. 반복되는 관리 업무를 줄이고 계약에 집중하고 싶을 때 참고하세요.
 
-목차
+## 매물 안내, 고객 응대, 후속 연락을 한꺼번에 챙기느라 힘드신가요?
 
-* [1단계: 매수자 및 매도자를 위한 예약 자동화](close-more-deals-stress-less-the-daily-ops-playbook-for-real-estate-consultants.md#1단계-매수자-및-매도자를-위한-예약-자동화)
-  * [왜 중요한가요](close-more-deals-stress-less-the-daily-ops-playbook-for-real-estate-consultants.md#왜-중요한가요)
-  * [1.1 자동 예약 링크 설정](close-more-deals-stress-less-the-daily-ops-playbook-for-real-estate-consultants.md#11-자동-예약-링크-설정)
-  * [1.2 자동 알림 전송](close-more-deals-stress-less-the-daily-ops-playbook-for-real-estate-consultants.md#12-자동-알림-전송)
-  * [1.3 스마트 예약 배정](close-more-deals-stress-less-the-daily-ops-playbook-for-real-estate-consultants.md#13-스마트-예약-배정)
-* [2단계: 리드 후속 조치 자동화](close-more-deals-stress-less-the-daily-ops-playbook-for-real-estate-consultants.md#2단계-리드-후속-조치-자동화)
-  * [왜 중요한가요](close-more-deals-stress-less-the-daily-ops-playbook-for-real-estate-consultants.md#왜-중요한가요)
-  * [2.1 자동 육성 시퀀스 설정](close-more-deals-stress-less-the-daily-ops-playbook-for-real-estate-consultants.md#21-자동-육성-시퀀스-설정)
-  * [2.2 즉각적인 리드 참여를 위한 AI 활용](close-more-deals-stress-less-the-daily-ops-playbook-for-real-estate-consultants.md#22-즉각적인-리드-참여를-위한-ai-활용)
-  * [2.3 후속 조치를 위한 스마트 리스트 구축](close-more-deals-stress-less-the-daily-ops-playbook-for-real-estate-consultants.md#23-후속-조치를-위한-스마트-리스트-구축)
-* [3단계: 파이프라인, 매물 및 거래 간소화](close-more-deals-stress-less-the-daily-ops-playbook-for-real-estate-consultants.md#3단계-파이프라인-매물-및-거래-간소화)
-  * [왜 중요한가요](close-more-deals-stress-less-the-daily-ops-playbook-for-real-estate-consultants.md#왜-중요한가요)
-  * [3.1 부동산 영업 파이프라인 사용](close-more-deals-stress-less-the-daily-ops-playbook-for-real-estate-consultants.md#31-부동산-영업-파이프라인-사용)
-  * [3.2 문서 워크플로우 자동화](close-more-deals-stress-less-the-daily-ops-playbook-for-real-estate-consultants.md#32-문서-워크플로우-자동화)
-  * [3.3 피드백 수집 자동화](close-more-deals-stress-less-the-daily-ops-playbook-for-real-estate-consultants.md#33-피드백-수집-자동화)
-* [4단계: 인보이스 및 보증금 수금 자동화 (선택사항)](close-more-deals-stress-less-the-daily-ops-playbook-for-real-estate-consultants.md#4단계-인보이스-및-보증금-수금-자동화-선택사항)
-  * [왜 중요한가요](close-more-deals-stress-less-the-daily-ops-playbook-for-real-estate-consultants.md#왜-중요한가요)
-  * [4.1 일회성 인보이스 전송](close-more-deals-stress-less-the-daily-ops-playbook-for-real-estate-consultants.md#41-일회성-인보이스-전송)
-  * [4.2 구독 서비스 제공 (선택사항)](close-more-deals-stress-less-the-daily-ops-playbook-for-real-estate-consultants.md#42-구독-서비스-제공-선택사항)
-  * [4.3 서비스 유형별 수익 추적](close-more-deals-stress-less-the-daily-ops-playbook-for-real-estate-consultants.md#43-서비스-유형별-수익-추적)
-* [5단계: 성과 추적 및 최적화](close-more-deals-stress-less-the-daily-ops-playbook-for-real-estate-consultants.md#5단계-성과-추적-및-최적화)
-  * [왜 중요한가요](close-more-deals-stress-less-the-daily-ops-playbook-for-real-estate-consultants.md#왜-중요한가요)
-  * [5.1 대시보드를 통한 진행상황 추적](close-more-deals-stress-less-the-daily-ops-playbook-for-real-estate-consultants.md#51-대시보드를-통한-진행상황-추적)
-  * [5.2 캠페인마다 더 똑똑해지기](close-more-deals-stress-less-the-daily-ops-playbook-for-real-estate-consultants.md#52-캠페인마다-더-똑똑해지기)
+고객이 집을 사고파는 일을 돕는 데는 자신 있지만, 끝없는 행정 업무까지 맡으려고 시작한 일은 아니죠.
 
-### 매물 보여주기, 고객 관리, 후속 조치를 동시에 처리하느라 힘드세요?
+혹시 이런 일이 익숙한가요?
 
-고객의 주택 매매를 도와주는 일은 잘하시지만, 끝없는 관리 업무까지 떠맡게 될 줄은 몰랐을 거예요.
+❌ 구매자 상담과 판매자 현장 방문 일정이 겹쳐요  
+❌ 후속 연락이 늦어서 관심이 높은 리드를 놓쳐요  
+❌ 서류, 매물 안내, 알림 관리가 여기저기 흩어져 있어요  
+❌ 시세 평가를 요청한 고객이 갑자기 연락이 끊겨요  
+❌ 어떤 리드가 진짜 고객이고 어떤 리드가 시간 낭비인지 알기 어려워요
 
-이런 상황이 익숙하신가요?
+이런 어려움은 혼자만의 문제가 아니에요. 대부분의 부동산 컨설턴트는 일상 업무를 전부 수작업으로 처리하느라 지쳐 있어요.
 
-❌ 매수 상담과 매도 현장 답사 사이에서 일정이 겹쳐버렸어요 ❌ 빠른 후속 조치를 하지 못해서 뜨거운 리드를 놓쳤어요 ❌ 문서 관리, 매물 보여주기, 알림이 모두 제각각이에요 ❌ 매물 평가 요청 후 고객이 잠적해버려요 ❌ 어떤 리드가 진짜이고 어떤 리드가 시간 낭비인지 구분할 수 없어요
+---
 
-혼자만의 고민이 아닙니다. 대부분의 부동산 컨설턴트가 모든 것을 수동으로 처리하고 있어서 일상 업무에 압도당하고 있어요.
+## 컨설팅 업무가 알아서 굴러간다면 어떨까요?
 
-### 부동산 컨설팅 업무가 자동으로 돌아간다면 어떨까요?
+하이퍼클래스를 쓰면 이렇게 할 수 있어요.
 
-Hyperclass를 통해 다음을 할 수 있습니다:
+✅ 고객이 상담, 매물 안내, 시세 평가를 알아서 예약해요  
+✅ 즉시 후속 연락을 보내서 놓치는 리드가 없어요  
+✅ 서류 요청, 매물 업데이트, 알림을 자동화해요  
+✅ 구매자, 판매자, 계약을 첫 접점부터 계약 체결까지 추적해요  
+✅ 무엇이 잘 되고 무엇이 안 되는지 실시간으로 확인해요
 
-✅ 고객이 상담, 매물 보기, 평가를 자동으로 예약하도록 설정 ✅ 즉시 후속 조치를 보내서 리드가 빠지지 않도록 관리 ✅ 문서 요청, 매물 업데이트, 알림을 자동화 ✅ 첫 접촉부터 계약 완료까지 모든 매수자, 매도자, 거래를 추적 ✅ 무엇이 효과적인지, 무엇이 그렇지 않은지 실시간으로 파악
+```
+하나의 솔루션으로 비즈니스를 손쉽게 관리하세요 - 지금 하이퍼클래스에 가입하세요
+```
 
-올인원 솔루션으로 비즈니스를 손쉽게 관리하세요 - [지금 Hyperclass 시작하기](https://hyperclass.ai/freetrial16?utm_source=SEO\&utm_medium=Organic\&utm_campaign=Home+Services+HVAC\&utm_term=HVAC\&utm_content=Playbook)
+---
 
-### 이 플레이북에서 배울 내용
+## 이 플레이북에서 배우는 내용
 
-✅ 매수자/매도자 미팅의 일정 예약 및 확인을 자동화하는 방법 ✅ 잠재 고객과 문의에 즉시 후속 조치하는 방법 ✅ 파이프라인, 고객, 거래를 효율적으로 관리하는 방법 ✅ 결제 수금을 자동화하는 방법 (보증금이나 상담비를 받는 경우) ✅ 하나의 대시보드에서 수익과 리드 소스를 추적하는 방법
+✅ 구매자·판매자 미팅의 일정 잡기와 확인 메시지를 자동화하는 방법  
+✅ 잠재 고객과 문의에 즉시 후속 연락하는 방법  
+✅ 파이프라인, 고객, 계약을 효율적으로 관리하는 방법  
+✅ 착수금이나 상담료를 받는 경우 결제 수금을 자동화하는 방법  
+✅ 수익과 리드 유입 경로를 하나의 대시보드에서 추적하는 방법
 
-## 1단계: 매수자 및 매도자를 위한 예약 자동화
+---
 
-### 왜 중요한가요
+# 1단계: 구매자·판매자 예약 자동화
 
-부동산 고객의 72%가 가장 먼저 응답하는 컨설턴트를 선택합니다. 온라인 스케줄링은 예약 전환율을 25-30% 향상시킵니다.
+## 왜 중요한가요?
 
-#### 1.1 자동 예약 링크 설정
+부동산 고객의 72%는 가장 먼저 답장한 컨설턴트를 선택해요.  
+온라인 예약을 도입하면 예약 전환율이 25~30% 올라가요.
 
-✅ 다음 항목별로 별도의 예약 링크를 만드세요:
+---
 
-* 매수 상담
-* 매물 현장 답사
-* 부동산 평가
-* 화상 통화
+### 1.1 자동 예약 링크 설정하기
 
-✅ 예약 링크를 다음 위치에 삽입하세요:
+✅ 다음 항목별로 예약 링크를 따로 만드세요.
 
-* 웹사이트
-* Google 비즈니스 프로필
-* 인스타그램 링크인바이오
-* 이메일/문자 캠페인 내
+- 구매자 상담
+- 매물 현장 방문
+- 부동산 시세 평가
+- 화상 통화
 
-활용 예시: 처음 집을 사는 고객이 매물 광고를 클릭하고, 퍼널에 도착한 후, 당신과 직접 대화하지 않고도 즉시 통화를 예약합니다—시간을 절약하고 이탈률을 줄이죠.
+✅ 예약 링크를 이런 곳에 넣어 두세요.
 
-[**예약 링크 설정 방법**](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/26-%EC%82%B0%EC%97%85-%EA%B0%80%EC%9D%B4%EB%93%9C/Real-Estate-Consultant/http:/how%20to%20set%20up%20booking%20link/README.md)
+- 내 웹사이트
+- Google Business Profile
+- Instagram 프로필 링크
+- 이메일·문자 캠페인 안
 
-#### 1.2 자동 알림 전송
+활용 사례: 처음 집을 구하는 구매자가 매물 광고를 클릭해 퍼널에 들어온 뒤, 컨설턴트와 직접 이야기하지 않고도 바로 통화를 예약해요. 시간을 아끼고 중간에 이탈하는 고객도 줄일 수 있어요.
 
-✅ 예약된 통화에 대한 SMS(문자), 이메일, 왓츠앱 알림 ✅ 잠적이나 늦은 일정 변경 감소 ✅ 캘린더 링크 및 미팅/매물 보기 장소 안내 포함
+#### 예약 링크 설정 방법
 
-[예약 알림 자동화 방법](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/24-%EB%8C%80%ED%95%99/HighLevel-How-To's/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
+---
 
-#### 1.3 스마트 예약 배정
+### 1.2 자동 알림 보내기
 
-✅ 다양한 서비스별 시간대 할당 (예: "가상 투어" 또는 "현장 답사") ✅ 개인 일정과 겹치지 않도록 캘린더 동기화
+✅ 예약된 통화에 대해 SMS, 이메일, WhatsApp 알림을 보내요  
+✅ 연락 두절이나 늦은 일정 변경을 줄여요  
+✅ 캘린더 링크와 미팅·매물 안내 장소 찾아오는 길을 함께 넣어요
 
-**배정 권한 설정 방법**
+예약 알림 자동화 방법
 
-## 2단계: 리드 후속 조치 자동화
+---
 
-### 왜 중요한가요
+### 1.3 예약 똑똑하게 배정하기
 
-리드는 빨리 식어버립니다—5분 내 응답하면 전환율이 9배 향상됩니다. \*\*컨설턴트의 60%\*\*는 한 번 이상 후속 조치를 하지 않습니다.
+✅ 서비스별로 시간대를 나눠 두세요(예: '화상 투어', '현장 방문')  
+✅ 캘린더를 동기화해서 개인 일정과 겹치지 않게 하세요
 
-#### 2.1 자동 육성 시퀀스 설정
+#### 배정 권한 설정 방법
 
-✅ 다음 항목에 대한 후속 조치:
+---
 
-* 신규 리드 문의
-* 매물 평가 요청
-* 매수 상담 폼
-* Facebook/Google 광고 리드
+# 2단계: 리드 후속 연락 자동화
 
-✅ 이메일 + SMS(문자) 조합 = 최고의 응답률
+## 왜 중요한가요?
 
-예시 문자: "안녕하세요 Julie님, 주택 매도 문의해 주셔서 감사합니다. 이번 주에 간단히 현장 답사 해보실까요? 제 캘린더입니다: \[링크]"
+리드는 금방 식어요. 5분 안에 답하면 전환율이 9배 올라가요.  
+컨설턴트의 60%는 후속 연락을 한 번밖에 하지 않아요.
 
-[**견적 후속 조치 자동화 방법**](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/24-%EB%8C%80%ED%95%99/HighLevel-How-To's/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
+---
 
-#### 2.2 즉각적인 리드 참여를 위한 AI 활용
+### 2.1 자동 육성 시퀀스 설정하기
 
-✅ 대화 AI(Conversation AI)로 FAQ에 답변하고 잠재 고객 자격을 검증 (예: 가격대, 위치, 급박성) ✅ 업무 시간 외 문의를 자동 응답으로 처리
+✅ 다음 대상에게 후속 연락을 보내세요.
 
-[**AI 기반 고객 지원 설정 방법**](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/13-AI-Employee/Getting-Started-w/-Conversation-AI/conversation-ai-bot-explained.md)
+- 신규 리드 문의
+- 시세 평가 요청
+- 구매자 상담 폼 제출
+- Facebook/Google 광고로 들어온 리드
 
-#### 2.3 후속 조치를 위한 스마트 리스트 구축
+✅ 이메일과 SMS를 함께 쓰면 응답률이 가장 높아요
 
-✅ 다음 항목별로 세분화:
+예시 문자:  
+"안녕하세요 줄리 님, 댁 매도 관련해서 문의해 주셔서 감사합니다. 이번 주에 간단히 현장 방문 일정을 잡아 볼까요? 제 캘린더는 여기 있어요: [링크]"
 
-* 예산
-* 의도 (곧 매수/매도 예정)
-* 위치
-* 부동산 유형
+#### 견적 후속 연락 자동화 방법
 
-✅ 각 리스트별로 타겟팅된 드립 캠페인 실행
+---
 
-[**스마트 리스트 설정 방법**](../../02-연락처/기타/getting-started-with-smart-lists.md)
+### 2.2 AI로 리드에게 즉시 응대하기
 
-## 3단계: 파이프라인, 매물 및 거래 간소화
+✅ 대화 AI가 자주 묻는 질문에 답하고 잠재 고객을 가려내게 하세요(예: 가격대, 지역, 시급성)  
+✅ 영업시간 외 문의는 자동 답장으로 처리하세요
 
-### 왜 중요한가요
+#### [AI 기반 고객 응대 설정 방법](../../13-AI-Employee/Getting-Started-w/Conversation-AI/conversation-ai-bot-explained.md)
 
-대부분의 부동산 컨설턴트는 고객이 프로세스의 어느 단계에 있는지 추적하지 않아서 거래를 놓칩니다.
+---
 
-#### 3.1 부동산 영업 파이프라인 사용
+### 2.3 후속 연락용 스마트 리스트 만들기
 
-✅ 다음과 같은 단계 구축:
+✅ 다음 기준으로 나누세요.
 
-* 신규 문의
-* 상담 예약됨
-* 사전 승인 완료
-* 매물 보기 예약됨
-* 제안서 전송
-* 거래 완료
+- 예산
+- 의도(곧 사거나 팔 계획인지)
+- 지역
+- 부동산 유형
 
-✅ 한눈에 거래 및 고객 상태 추적
+✅ 리스트마다 맞춤 드립 캠페인을 실행하세요
 
-[**인보이스 전송 및 생성 방법**](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/08-%EA%B2%B0%EC%A0%9C/%EC%9D%B8%EB%B3%B4%EC%9D%B4%EC%8A%A4-%EA%B2%AC%EC%A0%81/how-to-create-invoices-in-highlevel.md)
+#### [스마트 리스트 설정 방법](../../02-연락처/스마트-리스트/how-to-create-manage-smart-lists.md)
 
-#### 3.2 문서 워크플로우 자동화
+---
 
-✅ 공시 양식, 사전 승인 문서, 매물 체크리스트를 자동으로 전송 ✅ 고객이 문서를 제출하지 않으면 알림 트리거 ✅ DocuSign 같은 도구와 연동하여 전자 서명 활용
+# 3단계: 파이프라인, 매물, 계약 간소화
 
-[**결제 수신 설정 방법**](../../07-워크플로우/기타/trigger-payment-received.md)
+## 왜 중요한가요?
 
-#### 3.3 피드백 수집 자동화
+대부분의 부동산 컨설턴트가 계약을 놓치는 이유는 고객이 지금 어느 단계에 있는지 추적하지 않기 때문이에요.
 
-✅ 매물 보기 후, 매수자 피드백을 묻는 자동 SMS(문자)/이메일 전송 ✅ 매물 매력도 개선을 위해 매도자와 인사이트 공유
+---
 
-[**정기 결제 자동화 방법**](../../08-결제/기타/auto-payments-in-recurring-templates.md)
+### 3.1 부동산 영업 파이프라인 사용하기
 
-## 4단계: 인보이스 및 보증금 수금 자동화 (선택사항)
+✅ 이런 단계를 만들어 보세요.
 
-### 왜 중요한가요
+- 신규 문의
+- 상담 예약 완료
+- 사전 승인 완료
+- 매물 안내 예약 완료
+- 오퍼 전달
+- 계약 체결
 
-일부 부동산 컨설턴트는 선불 수수료, 보증금, 상담료를 받습니다—이 단계는 이 모든 것을 자동화하는 데 도움이 됩니다.
+✅ 계약과 고객 상태를 한눈에 확인하세요
 
-#### 4.1 일회성 인보이스 전송
+#### [인보이스를 만들고 보내는 방법](../../08-결제/인보이스-견적/how-to-create-invoices-in-hyperclass.md)
 
-✅ 다음 항목에 브랜딩된 인보이스 템플릿 사용:
+---
 
-* 상담 수수료
-* 시장 분석 보고서
-* 매물 준비 서비스
+### 3.2 서류 워크플로우 자동화하기
 
-✅ Stripe, PayPal, Apple Pay, Google Pay를 통한 결제 수금
+✅ 고지 서류, 사전 승인 서류, 매물 체크리스트를 자동으로 보내세요  
+✅ 고객이 서류를 제출하지 않으면 알림이 가도록 설정하세요  
+✅ DocuSign 같은 도구와 연동해 전자 서명을 사용하세요
 
-[**기회 관리 생성 설정 방법**](../../07-워크플로우/Opportunity-Workflow-Triggers/workflow-trigger-opportunity-created.md)
+#### [결제 완료 설정 방법](../../07-워크플로우/빌더/workflow-trigger-payment-received.md)
 
-#### 4.2 구독 서비스 제공 (선택사항)
+---
 
-✅ 투자자 대상 월간 코칭이나 매도자 보증금을 운영한다면 구독 청구 설정
+### 3.3 피드백 수집 자동화하기
 
-#### 4.3 서비스 유형별 수익 추적
+✅ 매물 안내가 끝나면 구매자에게 피드백을 요청하는 SMS·이메일을 자동으로 보내세요  
+✅ 피드백을 판매자와 공유해서 매물의 매력도를 높이세요
 
-✅ Hyperclass의 내장 리포팅을 사용하여 추적:
+#### [반복 결제 자동화 방법](../../08-결제/기타/auto-payments-in-recurring-templates.md)
 
-* 어떤 서비스가 가장 많은 수익을 창출하는지
-* 어떤 고객이 반복 매수자/매도자인지
-* 완료된 거래의 총 가치
+---
 
-[**정기 예약 모니터링 방법**](../../04-캘린더-예약/캘린더-설정/configure-recurring-calendar-appointments.md)
+# 4단계: 인보이스 발행과 착수금 수금 자동화 (선택)
 
-## 5단계: 성과 추적 및 최적화
+## 왜 중요한가요?
 
-### 왜 중요한가요
+일부 부동산 컨설턴트는 선수금, 착수금, 상담료를 받아요. 이 단계에서는 그 과정을 모두 자동화할 수 있어요.
 
-무엇이 효과적인지 아는 것 = 더 많은 수익과 적은 시간 낭비
+---
 
-#### 5.1 대시보드를 통한 진행상황 추적
+### 4.1 일회성 인보이스 보내기
 
-✅ 소스별 리드 확인: Facebook, Google, 추천, 웹사이트 ✅ 퍼널 각 단계의 전환율 측정 ✅ 주간/월간 매물 보기, 제안, 완료된 거래 추적
+✅ 브랜드가 적용된 인보이스 템플릿을 다음 항목에 사용하세요.
 
-[**리드 추적 및 관리 방법**](../../05-기회-파이프라인/step-by-step-guide-creating-pipelines.md)
+- 상담료
+- 시장 분석 리포트
+- 매물 준비 서비스
 
-#### 5.2 캠페인마다 더 똑똑해지기
+✅ Stripe, PayPal, Apple Pay, Google Pay로 결제를 받으세요
 
-✅ 어떤 리드 마그넷 페이지나 후속 조치 시퀀스가 가장 잘 전환되는지 테스트 ✅ 자격을 갖춘 고객을 끌어오는 광고나 퍼널에 더 집중
+#### [기회 생성 설정 방법](../../07-워크플로우/Opportunity-Workflow-Triggers/workflow-trigger-opportunity-created.md)
 
-[**대시보드 생성 및 모니터링 방법**](../../12-대시보드/how-to-create-add-dashboard-widgets.md)
+---
 
-## 마무리: 운영이 계약 성사를 이끕니다
+### 4.2 구독 서비스 제공하기 (선택)
 
-하루에 더 많은 시간이 필요한 게 아니라—더 나은 시스템이 필요합니다.
+✅ 투자자를 위한 월간 코칭이나 판매자 대상 착수금 서비스를 운영한다면 구독 결제를 설정하세요
 
-Hyperclass를 통해 전체 부동산 컨설턴트 워크플로우가 다음과 같이 됩니다:
+---
 
-✅ 자동화됨 ✅ 고객 친화적임 ✅ 확장 가능함 ✅ 통찰력이 있음
+### 4.3 서비스 유형별 수익 추적하기
 
-### 다음 단계
+✅ 하이퍼클래스 기본 리포팅으로 다음을 확인하세요.
 
-✅ 자동 상담 및 매물 보기 예약 설정 ✅ 리드 육성 워크플로우 런칭 (SMS + 이메일) ✅ 모든 거래를 하나의 CRM 파이프라인에서 추적 ✅ 리드 소스 모니터링 및 효과적인 부분에 집중 ✅ 관리 업무가 아닌 거래에 집중
+- 수익이 가장 많은 서비스
+- 재방문 구매자·판매자
+- 체결된 계약의 총액
+- 반복 예약 모니터링 방법
 
-컨설팅 업무를 간소화하고 더 많은 계약을 성사시킬 준비가 되셨나요?
+---
 
-[지금 Hyperclass에 가입하세요.](https://hyperclass.ai/324876a3?utm_source=SEO\&utm_medium=Organic\&utm_campaign=Real+Estate\&utm_term=Real+Estate+Consultant\&utm_content=Playbook)
+# 5단계: 성과 추적과 최적화
 
-***
+## 왜 중요한가요?
 
-_원문 최종 수정: Tue, 27 May, 2025 at 9:33 AM_ _Hyperclass 사용 가이드 — hyperclass.ai_
+무엇이 효과적인지 알면 수익은 늘고 낭비되는 시간은 줄어요.
+
+---
+
+### 5.1 대시보드로 진행 상황 확인하기
+
+✅ 유입 경로별로 리드를 확인하세요: Facebook, Google, 소개, 웹사이트  
+✅ 퍼널 단계마다 전환율을 측정하세요  
+✅ 주별·월별 매물 안내, 오퍼, 체결된 계약 수를 추적하세요
+
+#### [리드 추적과 관리 방법](../../05-기회-파이프라인/step-by-step-guide-creating-pipelines.md)
+
+---
+
+### 5.2 캠페인마다 더 똑똑해지기
+
+✅ 어떤 리드 마그넷 페이지나 후속 연락 시퀀스의 전환율이 높은지 테스트하세요  
+✅ 조건에 맞는 고객을 데려오는 광고나 퍼널에 더 집중하세요
+
+#### [대시보드 만들고 모니터링하는 방법](../../12-대시보드/how-to-create-add-dashboard-widgets.md)
+
+---
+
+# 마무리: 운영이 계약을 만들어요
+
+하루에 시간이 더 필요한 게 아니라, 더 나은 시스템이 필요해요.
+
+하이퍼클래스를 쓰면 부동산 컨설턴트의 전체 업무 흐름이 이렇게 바뀌어요.
+
+✅ 자동화돼요  
+
+✅ 고객이 이용하기 편해요  
+
+✅ 확장하기 쉬워요  
+✅ 인사이트를 얻을 수 있어요
+
+---
+
+## 다음 단계
+
+✅ 상담·매물 안내 예약 자동화를 설정하세요  
+✅ 리드 육성 워크플로우(SMS + 이메일)를 시작하세요  
+✅ 모든 계약을 하나의 CRM 파이프라인에서 추적하세요  
+✅ 리드 유입 경로를 살펴보고 효과가 좋은 곳에 집중하세요  
+✅ 행정 업무가 아니라 계약에 집중하세요
+
+컨설팅 업무를 간소화하고 더 많은 계약을 체결할 준비가 되셨나요? 하이퍼클래스로 시작해 보세요.

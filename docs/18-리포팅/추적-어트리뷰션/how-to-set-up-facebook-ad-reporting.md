@@ -1,170 +1,145 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 18-리포팅 > 추적-어트리뷰션
+원문: /support/solutions/articles/48001204042-how-to-set-up-facebook-ad-reporting
+번역일: 2026-11-06
+카테고리: 18-리포팅
 ---
 
-# 페이스북 광고 리포팅 설정 방법
+# Facebook 광고 리포팅 설정하기
 
-페이스북 광고를 운영할 때, 시스템은 리드가 어떤 광고나 광고 세트에서 유입되었는지 최선을 다해 추적합니다. 더 나은 리포팅과 성공 캠페인 식별을 위해 페이스북 UTM 매개변수, 페이스북 픽셀, 그리고 워크플로우(Workflows)의 전환 API 사용을 권장합니다.
+Facebook 광고를 운영하면 하이퍼클래스가 리드가 어느 광고와 광고 세트에서 왔는지 최대한 찾아서 연결해 줘요. 성과가 좋은 캠페인을 더 정확히 가려내려면 Facebook UTM 매개변수, Facebook 픽셀, 워크플로우의 Conversion API를 함께 쓰는 것을 권장해요.
 
-**이 문서에서 다루는 내용:**
+## 시작하기 전에 확인하세요
 
-[시작하기 전에 아래 참고사항을 확인해주세요:](#시작하기-전에-아래-참고사항을-확인해주세요)
+- 랜딩 페이지로 트래픽을 보낸다면 워크플로우에서 Facebook 픽셀과 Facebook Conversion API를 설정하세요.
+- 광고를 미리보기로 볼 때는 Facebook이 링크에 UTM 매개변수를 붙이지 않아요.
+- UTM 매개변수나 추적이 필요한 다른 매개변수에는 특수 문자와 이모지를 쓰지 마세요.
+- 첫 광고 어트리뷰션 데이터는 아래 "유입 경로"로 들어온 연락처에만 기록돼요. 그 외의 경우에는 첫 어트리뷰션 데이터가 비어 있어요.
 
-[진입점(Entry Points):](#진입점entry-points)
+### 유입 경로
 
-[시스템 내 연락처 수준에서 사용 가능한 UTM 추적 매개변수:](#시스템-내-연락처-수준에서-사용-가능한-utm-추적-매개변수)
+- **폼 제출**
+- 설문 제출
+- **캘린더**
+- Facebook 리드 폼에서 바로 유입
+- **2단계 주문 폼**
+- **채팅 위젯**
+- 인바운드 통화 (리드가 번호 풀로 직접 전화하면 적용되지 않고, 클릭투콜 상황에서만 작동해요)
 
-[정확한 리포팅을 위한 페이스북 캠페인 라벨링 방법](#정확한-리포팅을-위한-페이스북-캠페인-라벨링-방법)
+### 연락처 단위로 쓸 수 있는 UTM 추적 매개변수
 
-[페이스북 광고 관리자에서 UTM 매개변수 추가하는 방법](#페이스북-광고-관리자에서-utm-매개변수-추가하는-방법)
+- **출처**: 연락처에 출처가 어떻게 지정되는지는 ["How are sources classified" 표](https://docs.google.com/spreadsheets/d/1XwGUuc_YhW4Qd-acn64XV_fPfgQuhf10DcF1OWFj5A0/edit?usp=sharing)에서 확인하세요.
+- **캠페인 이름**: `{{contact.attributionSource.utmCampaign}}`
+- **Adset Name**(광고 세트 이름): `{{contact.attributionSource.utmMedium}}`
+- **Ad Name**(광고 이름): `{{contact.attributionSource.utmContent}}`
+- **Campaign Id**(캠페인 ID): `{{contact.attributionSource.campaignId}}`
+- **fbclid**: `{{contact.attributionSource.fbclid}}`
+- **gclid**: `{{contact.attributionSource.gclid}}`
+- **리퍼러**: `{{contact.attributionSource.referrer}}`
 
-[어트리뷰션 리포팅](#어트리뷰션-리포팅)
+## 정확한 리포팅을 위해 Facebook에서 캠페인 이름 짓는 방법
 
-[문제 해결](#문제-해결)
+{% hint style="info" %}
+캠페인 이름, 광고 이름, 광고 세트 이름은 각각 고유해야 해요. 아래 "올바른 설정 예시"를 참고하세요.
 
-- [Q1: 페이스북에서 광고를 미리보기 할 때 UTM 매개변수가 보이지 않는데요?](#q1-페이스북에서-광고를-미리보기-할-때-utm-매개변수가-보이지-않는데요)
-- [Q2: 연락처의 첫 어트리뷰션 데이터가 보이지 않아요?](#q2-연락처의-첫-어트리뷰션-데이터가-보이지-않아요)
-- [Q3: 광고, 광고 세트, 캠페인을 변경했는데 리포팅이 맞지 않아요?](#q3-광고-광고-세트-캠페인을-변경했는데-리포팅이-맞지-않아요)
-- [Q4: 페이스북 비즈니스 계정이나 광고 관리자가 없는데요?](#q4-페이스북-비즈니스-계정이나-광고-관리자가-없는데요)
-- [Q5: 페이스북 리드 제너레이션 광고를 사용하는데도 UTM 매개변수가 필요한가요?](#q5-페이스북-리드-제너레이션-광고를-사용하는데도-utm-매개변수가-필요한가요)
-- [Q6: UTM 매개변수를 추적용 URL에 추가해야 하나요, 목적지 URL에 추가해야 하나요?](#q6-utm-매개변수를-추적용-url에-추가해야-하나요-목적지-url에-추가해야-하나요)
-- [Q7: 목표 드롭다운은 무엇을 위한 것인가요?](#q7-목표-드롭다운은-무엇을-위한-것인가요)
+캠페인, 광고 세트, 광고가 운영되는 동안에는 이름 매개변수를 바꿀 수 없어요. 이름을 바꿔야 한다면 캠페인, 광고 세트, 광고를 새로 만드세요.
 
-## 시작하기 전에 아래 참고사항을 확인해주세요:
+캠페인, 광고 세트, 광고를 바꾸면서 새 캠페인을 만들지 않으면, 하이퍼클래스의 데이터는 계속 처음 캠페인을 기준으로 표시돼요.
+{% endhint %}
 
-- 랜딩 페이지로 트래픽을 보내는 경우, 페이스북 픽셀과 워크플로우의 페이스북 전환 API를 설정했는지 확인하세요
-- 페이스북은 광고를 미리보기로 볼 때 링크에 UTM 매개변수를 추가하지 않습니다
-- UTM 매개변수나 추적이 필요한 매개변수에 특수문자나 이모지를 사용하지 마세요
-- 아래 나열된 "진입점"에서 유입되는 연락처에 대해서만 첫 광고 어트리뷰션 데이터가 기록되며, 다른 경우에는 첫 어트리뷰션 데이터가 비어있을 수 있습니다
-
-### 진입점(Entry Points):
-
-- 폼(Form) 제출
-- 설문(Survey) 제출  
-- 캘린더(Calendar)
-- 페이스북 리드 폼에서 직접 유입
-- 2단계 주문 폼
-- 채팅 위젯(Chat Widget)
-- 인바운드 전화 (리드가 번호 풀로 직접 전화하는 경우는 작동하지 않고, 클릭투콜 시나리오에서만 작동)
-
-### 시스템 내 연락처 수준에서 사용 가능한 UTM 추적 매개변수:
-
-- Source [소스가 어떻게 분류되는지에 대한 로직은 이 표를 확인하세요 - "소스 분류 방법"](https://docs.google.com/spreadsheets/d/1XwGUuc_YhW4Qd-acn64XV_fPfgQuhf10DcF1OWFj5A0/edit?usp=sharing)
-- 캠페인 이름: {{contact.attributionSource.utmCampaign}}
-- 광고 세트 이름: {{contact.attributionSource.utmMedium}}
-- 광고 이름: {{contact.attributionSource.utmContent}}
-- 캠페인 ID: {{contact.attributionSource.campaignId}}
-- fbclid: {{contact.attributionSource.fbclid}}
-- gclid: {{contact.attributionSource.gclid}}
-- 리퍼러: {{contact.attributionSource.referrer}}
-
-# 정확한 리포팅을 위한 페이스북 캠페인 라벨링 방법
-
-**참고사항:**
-
-- 캠페인 이름, 광고, 광고 세트는 고유해야 합니다(아래 "올바른 설정 예시" 참조)
-- 이름 매개변수는 캠페인/광고 세트/광고의 생명주기 동안 변경할 수 없습니다. 이름을 변경해야 하는 경우, 새로운 캠페인/광고 세트/광고를 만드세요
-- 캠페인/광고 세트/광고를 변경하면서 새 캠페인을 만들지 않기로 결정하면, CRM 시스템의 데이터는 계속 원래/첫 번째 캠페인을 참조합니다
-
-**올바른 설정 예시:**
+**올바른 설정 예시**
 
 캠페인 이름:
-Campaign - Happy Teeth
+
+캠페인 - Happy Teeth
 
 광고 세트:
-Campaign#1 - Happy Teeth - Audience #1 (San Rafael, Ca 20 mile radius - M&F)
 
-광고: (고유)
-- Ad#1: Happy teeth - Carousel Ad - Audience #1  
-- Ad#2: Happy teeth - Video Ad - Audience #1 
-- Ad#3: Happy teeth - Image Ad - Audience #1
+캠페인#1 - Happy Teeth - 오디언스 #1 (캘리포니아 샌라파엘 반경 20마일 - 남녀)
 
-![페이스북 광고 설정 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48174032213/original/hVPHGvoqrEy9CYuqFgMbYs6P-yeUmZfrkQ.png?1640630395)
+광고 (각각 고유한 이름):
 
-# 페이스북 광고 관리자에서 UTM 매개변수 추가하는 방법
+- 광고#1: Happy Teeth - 캐러셀 광고 - 오디언스 #1
+- 광고#2: Happy Teeth - 동영상 광고 - 오디언스 #1
+- 광고#3: Happy Teeth - 이미지 광고 - 오디언스 #1
 
-1. [광고 관리자로 이동하려면 여기를 클릭하세요](https://business.facebook.com/adsmanager/manage/ads/)
+## Facebook 광고 관리자에서 UTM 매개변수 추가하기
 
-광고 관리자에 접속하면 UTM 매개변수를 추가하고 싶은 캠페인을 선택한 다음 관리 광고(Manage ads) → 광고(Ads) → 편집(Edit)으로 이동하세요.
+1. [Facebook 광고 관리자(Ads Manager)](https://business.facebook.com/adsmanager/manage/ads/)로 이동하세요.
+2. UTM 매개변수를 추가할 캠페인을 선택한 다음 **Manage ads**(광고 관리) > **Ads**(광고) > **편집**을 차례로 클릭하세요.
+3. 아래로 스크롤해 **추적** 섹션을 찾으세요.
 
-2. "추적(Tracking)" 섹션까지 스크롤하세요
+   ![Facebook 광고 편집 화면의 추적 섹션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48173301734/original/RKnA2Zuqw5UV4fyM_U3CSt4L6gkkNmCJHw.png?1640200443)
 
-![추적 섹션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48173301734/original/RKnA2Zuqw5UV4fyM_U3CSt4L6gkkNmCJHw.png?1640200443)
+4. **Build a URL parameter**(URL 매개변수 만들기)를 클릭하세요.
 
-3. "URL 매개변수 구성(Build a URL parameter)"을 클릭하세요
+   ![URL 매개변수 만들기 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48173302000/original/8k3ZCXCI4EFBApZuGGjGeuZJELLj7tpjoQ.png?1640200552)
 
-![URL 매개변수 구성](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48173302000/original/8k3ZCXCI4EFBApZuGGjGeuZJELLj7tpjoQ.png?1640200552)
+5. **URL 파라미터** 아래에서 다음 7단계를 차례로 진행하세요.
+   1. **Campaign Source**(캠페인 소스)를 클릭하고 입력란에 `fb_ad`를 입력하세요.
+   2. **Campaign Medium**(캠페인 매체)을 클릭하고 드롭다운에서 `{{adset.name}}`을 선택하세요.
+   3. **캠페인 이름**을 클릭하고 드롭다운에서 `{{campaign.name}}`을 선택하세요.
+   4. **Campaign Content**(캠페인 콘텐츠)를 클릭하고 드롭다운에서 `{{ad.name}}`을 선택하세요.
+   5. **매개변수 추가** 버튼을 클릭하세요.
+   6. **Parameter name**(매개변수 이름)에 `campaign_id`를 입력하고, **값** 드롭다운에서 `{{campaign.id}}`를 선택하세요.
+   7. **적용**을 클릭해 변경 사항을 저장하세요.
 
-4. URL 매개변수 아래 7단계를 완료하세요
+   ![URL 파라미터 입력을 마친 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48261752780/original/KL8jbKqo5KzHh_3uSbiTvx0kcQ6nTuYmrQ.png?1667831557)
 
-- "Campaign Source"를 클릭하고 필드에 "fb_ad"를 입력하세요
-- "Campaign Medium"을 클릭하고 드롭다운에서 {{adset.name}}을 선택하세요
-- "Campaign Name"을 클릭하고 드롭다운에서 {{campaign.name}}을 선택하세요
-- "Campaign Content"를 클릭하고 드롭다운에서 {{ad.name}}을 선택하세요
-- "Add Parameter" 버튼을 클릭하세요
-- "Parameter name"에 "campaign_id"를 입력하고 "Value"에는 드롭다운 메뉴에서 "{{campaign.id}}"를 선택하세요
-- 변경사항을 저장하려면 "Apply"를 누르세요
+{% hint style="info" %}
+Facebook이 광고를 검토하고 승인하는 데 시간이 걸려요. 승인되면 광고가 게재되기 시작하고, 하이퍼클래스에서 UTM 매개변수로 추적돼요.
 
-![UTM 매개변수 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48261752780/original/KL8jbKqo5KzHh_3uSbiTvx0kcQ6nTuYmrQ.png?1667831557)
+UTM 매개변수나 추적이 필요한 다른 매개변수에는 특수 문자와 이모지를 쓰지 마세요.
 
-**참고사항:**
+테스트할 때 광고를 미리보기로 보면 Facebook이 링크에 UTM 매개변수를 붙이지 않아요.
+{% endhint %}
 
-- 페이스북은 광고를 검토하고 승인하는 데 시간이 걸립니다. 승인되면 시스템 내에서 UTM 매개변수를 통해 광고가 실행되고 추적됩니다
-- UTM 매개변수나 추적이 필요한 매개변수에 특수문자나 이모지를 사용하지 마세요
-- 테스트 시 페이스북은 광고를 미리보기로 볼 때 링크에 UTM 매개변수를 추가하지 않습니다
+## 어트리뷰션 리포팅
 
-# 어트리뷰션 리포팅
+캠페인과 출처·어트리뷰션 리포팅에 대한 자세한 내용은 어트리뷰션 문서를 참고하세요.
 
-캠페인 및 소스/어트리뷰션 리포팅에 대한 자세한 정보는 여기를 클릭하세요: 어트리뷰션
+## 문제 해결
 
-# 문제 해결
+### Facebook에서 광고를 미리 볼 때 UTM 매개변수가 안 보여요
 
-### Q1: 페이스북에서 광고를 미리보기 할 때 UTM 매개변수가 보이지 않는데요?
+광고를 미리보기로 볼 때는 Facebook이 링크에 UTM 매개변수를 붙이지 않아요.
 
-페이스북은 광고를 미리보기로 볼 때 링크에 UTM 매개변수를 추가하지 않습니다.
+### 연락처의 첫 어트리뷰션 데이터가 안 보여요
 
-### Q2: 연락처의 첫 어트리뷰션 데이터가 보이지 않아요?
+첫 광고 어트리뷰션 데이터는 아래 유입 경로로 들어온 연락처에만 기록돼요. 그 외의 경우에는 첫 어트리뷰션 데이터가 비어 있어요.
 
-아래 나열된 진입점에서 유입되는 연락처에 대해서만 첫 광고 어트리뷰션 데이터가 기록되며, 다른 경우에는 첫 어트리뷰션 데이터가 비어있을 수 있습니다.
+유입 경로:
 
-진입점:
-- 폼 제출
+- **폼 제출**
 - 설문 제출
-- 캘린더
-- 페이스북 리드 폼에서 직접 유입
-- 2단계 주문 폼
-- 채팅 위젯
-- 인바운드 전화 (리드가 번호 풀로 직접 전화하는 경우는 작동하지 않고, 클릭투콜 시나리오에서만 작동)
+- **캘린더**
+- Facebook 리드 폼에서 바로 유입
+- **2단계 주문 폼**
+- **채팅 위젯**
+- 인바운드 통화 (리드가 번호 풀로 직접 전화하면 적용되지 않고, 클릭투콜 상황에서만 작동해요)
 
-### Q3: 광고, 광고 세트, 캠페인을 변경했는데 리포팅이 맞지 않아요?
+### 광고, 광고 세트, 캠페인을 바꿨더니 리포트가 맞지 않아요
 
-- 캠페인 이름, 광고, 광고 세트는 고유해야 합니다(위의 "[올바른 설정 예시](#정확한-리포팅을-위한-페이스북-캠페인-라벨링-방법)" 참조)
-- 이름 매개변수는 캠페인/광고 세트/광고의 생명주기 동안 변경할 수 없습니다. 이름을 변경해야 하는 경우, 새로운 캠페인/광고 세트/광고를 만드세요
-- 캠페인/광고 세트/광고를 변경하면서 새 캠페인을 만들지 않기로 결정하면, CRM 시스템의 데이터는 계속 원래/첫 번째 캠페인을 참조합니다
+- 캠페인 이름, 광고 이름, 광고 세트 이름은 각각 고유해야 해요. 위의 "올바른 설정 예시"를 참고하세요.
+- 캠페인, 광고 세트, 광고가 운영되는 동안에는 이름 매개변수를 바꿀 수 없어요. 이름을 바꿔야 한다면 캠페인, 광고 세트, 광고를 새로 만드세요.
+- 캠페인, 광고 세트, 광고를 바꾸면서 새 캠페인을 만들지 않으면, 하이퍼클래스의 데이터는 계속 처음 캠페인을 기준으로 표시돼요.
 
-### Q4: 페이스북 비즈니스 계정이나 광고 관리자가 없는데요?
+### Facebook **비즈니스 계정**이나 광고 관리자가 없어요
 
-[페이스북 광고 관리자](https://www.facebook.com/business/learn/facebook-ads-reporting-performance/)는 모든 유료 캠페인에 대한 개요를 제공하는 정교한 대시보드입니다. 비즈니스 및 광고 계정을 만들지 않았다면 아래 리소스를 확인하세요:
+[Facebook 광고 관리자](https://www.facebook.com/business/learn/facebook-ads-reporting-performance/)는 유료 캠페인 전체를 한눈에 볼 수 있는 대시보드예요. 비즈니스 계정과 광고 계정을 아직 만들지 않았다면 아래 안내를 참고하세요.
 
-- [페이스북 비즈니스 관리자 만드는 방법](https://www.facebook.com/business/help/1710077379203657?id=180505742745347)
-- [페이스북 광고 계정 만드는 방법](https://www.facebook.com/business/help/407323696966570?id=649869995454285)
+- [Facebook Business Manager 만들기](https://www.facebook.com/business/help/1710077379203657?id=180505742745347)
+- [Facebook 광고 계정 만들기](https://www.facebook.com/business/help/407323696966570?id=649869995454285)
 
-### Q5: 페이스북 리드 제너레이션 광고를 사용하는데도 UTM 매개변수가 필요한가요?
+### Facebook 리드 광고를 쓰는데도 UTM 매개변수를 써야 하나요?
 
-네, 페이스북 리드 제너레이션 광고를 실행할 때도 향상된 리포팅을 위해 UTM 매개변수 사용을 권장합니다. [이 문서에서 언급한](#페이스북-광고-관리자에서-utm-매개변수-추가하는-방법) 방법으로 UTM 매개변수를 추가할 수 있습니다.
+네, Facebook 리드 광고를 운영할 때도 더 정확한 리포팅을 위해 UTM 매개변수를 쓰기를 권장해요. 위의 "Facebook 광고 관리자에서 UTM 매개변수 추가하기" 절차대로 추가하세요.
 
-### Q6: UTM 매개변수를 추적용 URL에 추가해야 하나요, 목적지 URL에 추가해야 하나요?
+### UTM 매개변수는 **추적**과 도착 URL 중 어디에 추가해야 하나요?
 
-고유한 fbclick으로 구성된 각 링크 클릭이나 페이지 방문을 추적하려면 추적(tracking)에 UTM 매개변수를 추가해야 합니다.
+고유한 fbclick이 붙은 링크 클릭이나 페이지 방문을 각각 추적하려면 **추적**에 UTM 매개변수를 추가해야 해요.
 
-### Q7: 목표 드롭다운은 무엇을 위한 것인가요?
+### **Objectives** 드롭다운은 어떤 용도인가요?
 
-광고 보고서의 왼쪽 상단에 목표(Objectives) 드롭다운이 있습니다. 이는 광고 캠페인을 만들 때 회사가 해당 캠페인에 대해 가졌던 목표를 정의하는 데 도움을 줍니다.
+**Ad Report**(광고 리포트) 왼쪽 위에 **Objectives**(목표) 드롭다운이 있어요. 광고 캠페인을 만들 때 회사가 어떤 목표를 세웠는지 정의하는 데 쓰여요.
 
-![목표 드롭다운](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48249254559/original/cJ-u1hcrxPrPlaVnZk6ukVNXKqTEeySGaA.png?1662397101)
-
----
-*원문 최종 수정: Mon, 7 Nov, 2022 at 8:32 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+![광고 리포트의 Objectives 드롭다운](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48249254559/original/cJ-u1hcrxPrPlaVnZk6ukVNXKqTEeySGaA.png?1662397101)

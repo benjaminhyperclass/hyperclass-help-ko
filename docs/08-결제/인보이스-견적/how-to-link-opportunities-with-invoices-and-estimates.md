@@ -1,134 +1,88 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 08-결제 > 인보이스-견적
+원문: /support/solutions/articles/155000005621-how-to-link-opportunities-with-invoices-and-estimates
+번역일: 2026-11-07
+카테고리: 08-결제
 ---
 
-# 기회와 인보이스 및 견적서 연결하는 방법
+# 기회에 인보이스와 견적서 연결하기
 
-이 문서에서는 Hyperclass에서 인보이스(Invoice)와 견적서(Estimate)를 기회 관리(Opportunities)와 자동 또는 수동으로 연결하는 방법을 설명합니다. 이러한 기록들을 연결해두면 거래 추적, 청구, 보고서 작성이 훨씬 간편해집니다.
+하이퍼클래스에서 인보이스와 견적서를 기회에 자동 또는 수동으로 연결하는 방법을 안내해요. 기록을 서로 연결해 두면 딜 추적, 청구, 리포팅이 간단해져요.
 
----
+## 기회에 인보이스와 견적서를 연결하면 어떤 점이 좋나요?
 
-**목차**
+인보이스와 견적서를 기회에 연결하면 영업 데이터와 청구 데이터를 한곳에서 볼 수 있어요. 인보이스를 직접 만들든 자동화로 보내든, 모든 문서가 해당 딜에 연결된 채로 남아요.
 
-- [기회와 인보이스 및 견적서 연결이란?](#기회와-인보이스-및-견적서-연결이란)
-- [기회와 인보이스 및 견적서 연결의 주요 장점](#기회와-인보이스-및-견적서-연결의-주요-장점)
-- [기회에서 인보이스 및 견적서 연결하는 방법](#기회에서-인보이스-및-견적서-연결하는-방법)
-- [결제 탭을 통해 연결하는 방법](#결제-탭을-통해-연결하는-방법)
-- [워크플로우를 통해 자동으로 연결하는 방법](#워크플로우를-통해-자동으로-연결하는-방법)
-- [자주 묻는 질문](#자주-묻는-질문)
-- [다음 단계](#다음-단계)
+청구 문서를 딜에 바로 연결해 두면 영업 파이프라인에서 빠지는 내용이 없어요.
 
----
+- 모든 인보이스와 견적서가 관련 기회에 자동으로 연결돼요.
+- 딜별로 전체 금전 내역을 한눈에 볼 수 있어요.
+- 직접 입력하는 일이 줄어 실수도 줄어요.
+- 워크플로우로 자동화를 매끄럽게 구성할 수 있어요.
+- 기회 레코드에서 바로 청구 내용을 확인할 수 있어요.
+- 딜과 결제 현황을 한곳에서 공유해 팀원 간 정보를 맞출 수 있어요.
 
-# **기회와 인보이스 및 견적서 연결이란?**
+## 기회에서 인보이스와 견적서 연결하기
 
-인보이스와 견적서를 기회와 연결하면 영업과 청구 데이터를 한 곳에서 통합 관리할 수 있습니다. 인보이스를 수동으로 생성하든 자동화로 발송하든, 각 문서가 관련 거래와 계속 연결된 상태를 유지합니다.
+CRM에서 개별 딜을 관리하다가 바로 인보이스나 견적서를 연결하는 방법이에요.
 
----
+1. **기회 관리**(Opportunities)로 이동해 딜을 여세요.
 
-## **기회와 인보이스 및 견적서 연결의 주요 장점**
+   ![기회 관리에서 딜을 연 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066177432/original/Wv1wZm5RtDA7jLWtEDBIwkSSOW1JebrygQ.png?1772625132)
+2. **결제** 탭을 클릭하세요. **Actions**(작업 메뉴)에서 **인보이스 만들기** 또는 **견적서 만들기**를 선택하세요.
 
-청구 문서를 거래와 직접 연결하면 영업 파이프라인에서 중요한 정보를 놓치지 않을 수 있습니다.
+   ![결제 탭의 작업 메뉴에서 인보이스 만들기 또는 견적서 만들기를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066177546/original/t2H3pW63cpvWfOsWHNYGVT82kQDbI_WqBA.png?1772625205)
+3. 기회가 이미 연결된 상태로 인보이스/견적서 편집 화면이 열려요.
 
-- 모든 인보이스나 견적서를 관련 기회와 자동으로 연결
-- 각 거래의 완전한 재무 이력 확인 가능
-- 수동 입력과 오류 가능성 감소
-- 워크플로우를 활용한 원활한 자동화 구현
-- 기회 관리 레코드에서 청구 세부사항을 바로 확인
-- 중앙화된 거래 및 결제 가시성으로 팀 업무 일치
+   ![기회가 연결된 상태로 열린 인보이스 편집 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066177574/original/X0wLq_Fx0LVi8gZUjwHX3f4PbVVrj8Qisg.png?1772625228)
+4. 폼을 작성하고, 준비되면 보내세요.
 
----
+## 결제 메뉴에서 연결하기
 
-## **기회에서 인보이스 및 견적서 연결하는 방법**
+메인 메뉴의 **결제**에서 인보이스와 견적서를 딜에 직접 연결하는 방법이에요.
 
-CRM에서 개별 거래를 관리하면서 인보이스나 견적서를 빠르게 연결할 수 있습니다.
+1. 왼쪽 메뉴에서 **결제**로 이동하세요. 드롭다운에서 **인보이스** 또는 **견적서**로 전환하세요.
 
-- **기회 관리(Opportunities)**로 이동해서 거래를 엽니다.
+   ![결제 메뉴에서 인보이스와 견적서를 전환하는 드롭다운](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066177873/original/ZsvZkcnuetJytVVgt5o6O_33PqFX8RVZtg.png?1772625397)
+2. **인보이스 만들기** 또는 **견적서 만들기**를 클릭하세요.
 
-![기회 관리에서 거래 열기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066177432/original/Wv1wZm5RtDA7jLWtEDBIwkSSOW1JebrygQ.png?1772625132)
+   ![인보이스 만들기 또는 견적서 만들기 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066178194/original/slrho-qOS9WxPuF45IbGpSwHIHEAjiY3CA.png?1772625609)
+3. **연락처**를 선택하세요.
+4. 문서 편집 화면의 **Link Opportunity**(기회 연결)에서 관련 **기회**를 선택하세요.
 
-- **결제(Payments)** 탭을 클릭합니다. **액션(Actions) 메뉴**에서 **인보이스 생성(Create Invoice)** 또는 **견적서 생성(Create Estimate)**을 선택합니다.
+   ![편집 화면의 Link Opportunity에서 기회를 선택하는 모습](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066178213/original/QEBG5dd3vIAjWbe4MH0tK_cdgO7hW8UFYQ.png?1772625631)
 
-![결제 탭에서 인보이스 생성](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066177546/original/t2H3pW63cpvWfOsWHNYGVT82kQDbI_WqBA.png?1772625205)
+## 워크플로우로 자동 연결하기
 
-- 기회가 이미 연결된 상태로 인보이스/견적서 편집기로 이동됩니다.
+인보이스와 견적서가 직접 작업하지 않아도 만들어지고 연결되도록 전체 과정을 자동화할 수 있어요.
 
-![인보이스 편집기에서 기회 연결 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066177574/original/X0wLq_Fx0LVi8gZUjwHX3f4PbVVrj8Qisg.png?1772625228)
+1. **워크플로우**로 이동해 새 워크플로우를 만들거나 기존 워크플로우를 여세요.
 
-- 양식을 완성하고 준비되면 발송합니다.
+   ![워크플로우 목록 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066178794/original/ftYkSKniQvKAvKS-AAvyKSxyo3o8XdQrYA.png?1772625995)
+2. 기회와 관련된 트리거를 사용하세요. 예를 들어 기회의 단계가 바뀌거나 상태가 업데이트될 때 실행되는 트리거예요.
+3. **Send Invoice**(인보이스 보내기) 또는 **Send Estimate**(견적서 보내기) 액션을 추가하세요.
 
----
+   ![워크플로우에 Send Invoice 액션을 추가하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066179514/original/XtlGF_lOSQzgzDEpN80OByJD-amMS9yEgQ.png?1772626353)
+4. 워크플로우가 실행되면 문서를 만들어 보내고, 해당 기회에 자동으로 연결해 줘요.
 
-## **결제 탭을 통해 연결하는 방법**
+## 자주 묻는 질문
 
-메인 결제(Payments) 영역을 사용하여 인보이스와 견적서를 거래와 수동으로 연결합니다.
+### 기회 하나에 인보이스나 견적서를 여러 개 연결할 수 있나요?
+네, 한 기회에 청구 문서를 여러 개 연결할 수 있어요. 여러 번에 나눠 결제하거나 제안서가 여러 건인 경우에도 각각 반영할 수 있어요.
 
-- 메인 메뉴의 **결제(Payments)** 탭으로 이동합니다. 드롭다운을 사용해 **인보이스(Invoices)** 또는 **견적서(Estimates)**로 전환합니다.
+### 인보이스를 연결하는 걸 깜빡하면 어떻게 하나요?
+나중에 인보이스를 편집해서 올바른 기회에 연결하면 돼요. **결제**에서 할 수 있어요.
 
-![결제 탭에서 인보이스 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066177873/original/ZsvZkcnuetJytVVgt5o6O_33PqFX8RVZtg.png?1772625397)
+### 기회에 연결한 인보이스나 견적서의 연결을 해제할 수 있나요?
+현재는 문서가 확정된 후에는 연결을 해제할 수 없어요. 필요하면 문서를 복제한 뒤 다시 지정해 보세요.
 
-- **인보이스 생성(Create Invoice)** 또는 **견적서 생성(Create Estimate)**을 클릭합니다.
+### 워크플로우로 연결한 인보이스도 기회 화면에 표시되나요?
+네, 워크플로우로 만들어져 기회에 연결된 인보이스와 견적서는 해당 기회의 **결제** 탭에서 볼 수 있어요.
 
-![인보이스 생성 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066178194/original/slrho-qOS9WxPuF45IbGpSwHIHEAjiY3CA.png?1772625609)
+### "Find Opportunity" 워크플로우 액션을 쓰면 인보이스/견적서가 자동으로 연결되나요?
+아니요. [Find Opportunity](../../07-워크플로우/Opportunity-Workflow-Actions/workflow-action-find-opportunity.md)(기회 찾기) 액션은 이후 단계에서 쓸 기회를 선택하기만 해요. 이 액션만으로는 인보이스/견적서가 연결되지 않아요.
 
-- **연락처(Contact)**를 선택합니다.
+## 다음 단계
 
-- 문서 편집기에서 "Link Opportunity" 아래에서 관련 **기회(Opportunity)**를 선택합니다.
-
-![문서 편집기에서 기회 연결](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066178213/original/QEBG5dd3vIAjWbe4MH0tK_cdgO7hW8UFYQ.png?1772625631)
-
----
-
-## **워크플로우를 통해 자동으로 연결하는 방법**
-
-전체 프로세스를 자동화하여 인보이스와 견적서가 수동 작업 없이 생성되고 연결되도록 설정할 수 있습니다.
-
-- **워크플로우(Workflows)**로 이동해서 새로 만들거나 기존 워크플로우를 엽니다.
-
-![워크플로우에서 새 워크플로우 생성](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066178794/original/ftYkSKniQvKAvKS-AAvyKSxyo3o8XdQrYA.png?1772625995)
-
-- **기회 기반 트리거(Opportunity-based trigger)**(예: 단계 변경이나 상태 업데이트)를 사용합니다.
-
-- **인보이스 발송(Send Invoice)** 또는 **견적서 발송(Send Estimate)** 액션을 추가합니다.
-
-![워크플로우에 인보이스 발송 액션 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066179514/original/XtlGF_lOSQzgzDEpN80OByJD-amMS9yEgQ.png?1772626353)
-
-- 시스템이 자동으로 문서를 생성하고 발송하며 기회와 연결합니다.
-
----
-
-## **자주 묻는 질문**
-
-**Q: 하나의 기회에 여러 인보이스나 견적서를 연결할 수 있나요?**
-
-네, 여러 결제 단계나 제안서를 반영하기 위해 하나의 기회에 여러 청구 문서를 연결할 수 있습니다.
-
-**Q: 인보이스를 연결하는 것을 깜빡했다면 어떻게 하나요?**
-
-나중에 수동으로 인보이스를 편집하여 결제(Payments) 탭에서 올바른 기회와 연결할 수 있습니다.
-
-**Q: 인보이스나 견적서를 기회에서 연결 해제할 수 있나요?**
-
-현재 문서가 확정된 후에는 연결 해제가 지원되지 않습니다. 필요하다면 복제하고 재할당하는 것을 고려해보세요.
-
-**Q: 워크플로우로 연결된 인보이스가 기회 보기에 나타나나요?**
-
-네, 워크플로우를 통해 생성되고 기회와 연결된 인보이스나 견적서는 해당 기회의 결제(Payments) 탭에서 확인할 수 있습니다.
-
-**Q: "Find Opportunity" 워크플로우 액션이 자동으로 인보이스/견적서를 연결해주나요?**
-
-아니요. "[Find Opportunity](../../07-워크플로우/Opportunity-Workflow-Actions/workflow-action-find-opportunity.md)"는 이후 단계에서 사용할 기회를 선택하기만 할 뿐, 그 자체로는 인보이스/견적서를 연결하지 않습니다.
-
----
-
-### **다음 단계**
-
-- **워크플로우 빌더(Workflow Builder)**를 활용해 더 많은 영업 액션을 자동화해보세요.
-- 청구 단계에 맞춰 **기회 단계(Opportunity stages)**를 커스터마이징하세요.
-- **리포팅(Reporting)** 기능으로 거래별 매출을 모니터링해보세요.
-
----
-*원문 최종 수정: Wed, 4 Mar, 2026 at 6:21 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+- **워크플로우 빌더**에서 영업 관련 작업을 더 자동화해 보세요.
+- 기회 단계를 청구 단계에 맞게 사용자 지정해 보세요.
+- **리포팅**에서 딜별 매출을 확인해 보세요.

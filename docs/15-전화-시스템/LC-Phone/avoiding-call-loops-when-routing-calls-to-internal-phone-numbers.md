@@ -1,79 +1,72 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 전화 시스템 > 전화
+원문: /support/solutions/articles/155000007297-avoid-call-loops-when-routing-calls-to-internal-phone-numbers
+번역일: 2026-11-07
+카테고리: 15-전화-시스템
 ---
 
-# 내부 전화번호로 통화 전달 시 통화 루프 방지하기
+# 내부 전화번호로 통화를 연결할 때 통화 루프 피하기
 
-## **개요**
+통화 루프가 왜 생기는지, 하이퍼클래스 어디에서 경고가 표시되는지, 통화 연결을 어떻게 설정해야 통화 실패나 끊김을 줄일 수 있는지 알려 드려요.
 
-좋은 소식이 있어요! Hyperclass는 계정의 여러 부분에서 Hyperclass(Hyperclass) 전화번호를 유연하게 사용할 수 있도록 해드립니다. 비즈니스 전화번호로 사용하거나 고급 통화 라우팅 설정에서도 활용할 수 있죠. 이를 통해 숙련된 사용자는 특정 상황에 맞는 맞춤형 통화 흐름을 설계할 수 있습니다.
+## 통화 루프는 어떻게 생기나요?
 
-그렇지만 Hyperclass 전화번호를 통화 전달 대상으로 사용하는 등의 특정 구성은 올바르게 설정하지 않으면 의도치 않게 통화 루프를 만들 수 있어요. 이러한 루프는 일부 통화가 실패하거나 연결이 끊어지는 원인이 될 수 있습니다.
+하이퍼클래스 전화번호는 계정 곳곳에서 자유롭게 쓸 수 있어요. **비즈니스 전화번호**로 쓸 수 있고, 고급 통화 연결 설정에도 쓸 수 있어요. 덕분에 숙련된 사용자는 상황에 맞게 통화 흐름을 직접 설계할 수 있어요.
 
-유연성을 제한하지 않으면서도 정보를 제공하기 위해, Hyperclass는 이제 Hyperclass 전화번호 사용 시 통화 문제가 발생할 수 있는 곳에 경고 메시지를 표시합니다. 이를 통해 설정의 잠재적 영향을 이해하면서 자신 있게 진행할 수 있어요.
+다만 하이퍼클래스 전화번호를 착신 전환 대상으로 지정하는 것처럼 일부 설정은 제대로 구성하지 않으면 의도치 않게 통화 루프를 만들 수 있어요. 루프가 생기면 일부 통화가 실패하거나 끊길 수 있어요.
 
-## **왜 중요한가요?**
+하이퍼클래스는 사용자의 선택권을 제한하지 않으면서 미리 알려 드리려고, 하이퍼클래스 전화번호가 통화 문제로 이어질 수 있는 곳에 경고 메시지를 표시해요. 설정이 미칠 수 있는 영향을 알고 안심하고 진행할 수 있어요.
 
-Hyperclass 전화번호를 통화 전달 번호나 라우팅 대상으로 사용하면 때때로 통화 루프가 생성될 수 있습니다.
+## 통화 루프가 왜 문제가 되나요?
 
-통화 루프는 통화가 시스템 내에서 반복적으로 전달될 때 발생할 수 있으며, 다음과 같은 결과를 초래합니다:
+통화 루프는 통화가 원래 가야 할 목적지에 닿지 못하고, 같은 전화 시스템 안으로 계속 되돌아오는 현상이에요. 이 동작을 알아 두면 수신 통화를 방해할 수 있는 연결 설정을 피할 수 있어요.
 
-- 통화 연결 실패
-- 예상치 못한 통화 끊김
-- 인바운드 통화가 의도한 수신자에게 도달하지 못함
+통화 루프가 생기면 다음과 같은 일이 일어날 수 있어요.
 
-일부 고급 사용자는 이러한 설정을 의도적으로 올바르게 구성할 수 있지만, 잘못 설정하면 쉽게 문제가 발생할 수 있습니다.
+- 통화가 연결되지 않아요.
+- 통화가 갑자기 끊겨요.
+- 수신 통화가 받아야 할 사람에게 전달되지 않아요.
 
-## **경고 동작**
+고급 통화 연결 설정에도 하이퍼클래스 전화번호를 쓸 수 있어요. 대신 통화가 같은 번호로 다시 돌아오지 않도록 통화 흐름을 꼼꼼하게 구성해야 해요.
 
-이러한 설정을 차단하는 대신, Hyperclass는 정보에 입각한 결정을 내릴 수 있도록 경고 메시지를 표시합니다.
+## 경고는 어떻게 표시되나요?
+
+하이퍼클래스는 설정을 아예 막지 않고, 안내용 경고만 보여 줘요. 고급 통화 연결 설정은 그대로 쓸 수 있어요. 변경 내용을 저장하기 전에 위험 가능성을 미리 알 수 있어요.
 
 ### 경고 메시지
 
-여기에 CRM 전화번호를 사용하면 통화 루프가 생성되어 일부 통화가 실패할 수 있습니다. 더 알아보기
+통화 루프가 생길 수 있는 설정이 감지되면 다음 경고가 표시돼요.
 
-![Hyperclass 통화 루프 경고 메시지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155063655402/original/MzNef-iZi8FVagb9RHSjU1O16NK2o0eRWg.png?1769593232)
+여기에 CRM 전화번호를 사용하면 통화 루프가 생겨 일부 통화가 실패할 수 있어요. 자세히 알아보기
 
-***참고 - 이 경고는 정보 제공 목적이며 설정 저장을 막지는 않습니다.***
+{% hint style="info" %}
+이 경고는 안내용이에요. 경고가 표시되어도 설정을 저장할 수 있어요.
+{% endhint %}
 
-## **경고가 나타나는 위치**
+![통화 루프 경고 메시지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155063655402/original/MzNef-iZi8FVagb9RHSjU1O16NK2o0eRWg.png?1769593232)
 
-다음 영역에서 Hyperclass 전화번호를 사용하려고 할 때 경고가 나타납니다:
+## 경고가 표시되는 위치
 
-- 전화번호 설정(Phone Number Settings) (통화 전달)
+다음 위치에서 하이퍼클래스 전화번호를 사용하려고 하면 경고가 표시돼요.
 
-![전화번호 설정에서의 경고](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064142083/original/I32GuMvd7eNfYys2LwnYmsxbJ0fr0yKN0A.png?1770190760)
+- **Phone Number Settings**(전화번호 설정)의 착신 전환
 
-- 비즈니스 프로필(Business Profile) (비즈니스 전화번호)
+  ![전화번호 설정의 착신 전환 경고](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064142083/original/I32GuMvd7eNfYys2LwnYmsxbJ0fr0yKN0A.png?1770190760)
+- **비즈니스 프로필**의 **비즈니스 전화번호**
 
-![비즈니스 프로필에서의 경고](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064145873/original/wla5TqCjgtzBd1pKHWjPlpXC0-owI63K_Q.png?1770193469)
+  ![비즈니스 프로필의 비즈니스 전화번호 경고](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064145873/original/wla5TqCjgtzBd1pKHWjPlpXC0-owI63K_Q.png?1770193469)
+- **Staff Profile**(스태프 프로필)의 **User Phone Number**(사용자 전화번호)
 
-- 스태프 프로필(Staff Profile) (사용자 전화번호)
+  ![스태프 프로필의 사용자 전화번호 경고](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064145024/original/nAEqLwqJlyIvy4CYaFAe7wwuCKdf0EsJUw.png?1770192956)
+- **번호 풀**
 
-![스태프 프로필에서의 경고](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064145024/original/nAEqLwqJlyIvy4CYaFAe7wwuCKdf0EsJUw.png?1770192956)
+  ![번호 풀 경고](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064145329/original/FyDxbZqA_oMgojVAo1e_bStPVe2y1aop4Q.png?1770193144)
 
-- 번호 풀(Number Pool)
+## 통화 문제를 피하는 방법
 
-![번호 풀에서의 경고](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064145329/original/FyDxbZqA_oMgojVAo1e_bStPVe2y1aop4Q.png?1770193144)
+통화 문제를 피하려면 다음을 권장해요.
 
-- 워크플로우(Workflows) (통화 라우팅 또는 전달 액션)
-
-## **권장 모범 사례**
-
-통화 문제를 방지하려면:
-
-- 가능한 한 통화 전달에는 외부 전화번호(휴대폰, 유선전화 또는 VoIP)를 사용하세요.
-- Hyperclass 전화번호를 사용하기로 선택한 경우:
-  - 통화 흐름이 같은 번호로 다시 라우팅되지 않도록 하세요
-  - 변경사항 저장 후 설정을 철저히 테스트하세요
-  - 실패하거나 끊어진 통화에 대해 통화 로그를 모니터링하세요
-
-## **핵심 포인트**
-
-Hyperclass는 고급 통화 라우팅 설정에 대한 유연성을 제공하지만, CRM 전화번호를 전달이나 라우팅 대상으로 사용하려면 신중한 구성이 필요합니다. 이 경고는 위험을 이해한다면 계속 진행할 수 있도록 하면서도 통화 루프와 잠재적인 통화 실패를 방지하는 데 도움을 주기 위해 설계되었습니다.
-
----
-*원문 최종 수정: Wed, 4 Feb, 2026 at 2:24 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+- 착신 전환에는 가능하면 외부 전화번호(휴대전화, 유선전화, VoIP)를 쓰세요.
+- 하이퍼클래스 전화번호를 쓰기로 했다면 다음을 지키세요.
+  - 통화가 같은 번호로 다시 돌아가지 않도록 통화 흐름을 구성하세요.
+  - 변경 내용을 저장한 뒤 설정을 꼼꼼히 테스트하세요.
+  - 통화 기록에서 실패하거나 끊긴 통화가 없는지 확인하세요.

@@ -1,100 +1,205 @@
 ---
-
-번역일: 2026-04-06
-카테고리: 01-시작하기 > 커머스
+원문: /support/solutions/articles/155000005072-getting-started-launch-a-course
+번역일: 2026-11-06
+카테고리: 01-시작하기
 ---
 
-# 시작하기 - 온라인 강의 출시하기
+# 시작하기 - 코스 만들고 공개하기
 
-온라인 강의를 설정하고 런칭하는 것이 처음에는 어려워 보일 수 있지만, 걱정하지 마세요. 생각보다 훨씬 간단합니다! 몇 번의 클릭만으로 여러분의 전문 지식을 공유하고, 오디언스를 구축하며, 수익을 창출할 수 있어요. 단계별로 차근차근 알아보겠습니다.
+이 문서는 온라인 코스를 만들고, 오퍼를 설정해 판매 링크를 공유하기까지의 전체 과정을 안내해요. 처음 코스를 열어 보는 분이 그대로 따라 할 수 있어요.
+
+처음엔 어려워 보여도 클릭 몇 번이면 충분해요. 이 문서에서 다루는 내용은 다음과 같아요.
+
+- 코스 만들기
+- 코스 콘텐츠 구성하고 정리하기
+- 오퍼 만들기
+- 가격 설정하기
+- 코스 게시하고 테스트하기
+- 수강생에게 코스 공유하기
+
+## 개요
+
+하이퍼클래스 코스는 온라인 학습 콘텐츠를 만들고, 정리하고, 판매할 수 있게 도와줘요. 무료 강의든 유료 프로그램이든, 코스를 열려면 콘텐츠만 만들어서는 안 돼요. 오퍼를 만들고 가격을 설정한 뒤, 고객에게 공유하기 전에 수강생 화면도 테스트해야 해요.
+
+## 시작하기 전에
+
+코스를 열기 전에 다음을 준비하세요.
+
+- **멤버십 > 코스** 메뉴에 접근할 수 있는 권한
+- 코스 콘텐츠(동영상, 강의, PDF, 퀴즈 등)
+- 코스 썸네일 이미지(필수는 아니지만 있으면 좋아요)
+- 유료 코스를 판매한다면 연결된 결제 서비스
+- 정해 둔 가격 방식(**무료**, **일회성**, **반복** 중 하나)
+
+{% hint style="info" %}
+유료 코스를 만든다면 오퍼를 만들기 전에 결제 서비스가 연결되어 있는지 먼저 확인하세요.
+{% endhint %}
 
 ---
 
-**목차**
+## 코스 만들기
 
-- [강의 만들기](#강의-만들기)
-- [오퍼 만들기](#오퍼-만들기)
-- [오퍼 판매하기](#오퍼-판매하기)
+첫 코스를 만드는 일은 강의의 토대를 세우는 단계예요. 어렵지 않으니 차근차근 따라 해 보세요.
+
+1. **멤버십 > 코스 > 상품**으로 이동하세요.
+
+   ![멤버십 코스 상품 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155067626946/original/xC3XQuB72es3s71pE5_EkekhCU_5B8GUBA.png?1774365062)
+2. **상품 만들기 > 처음부터 시작**을 클릭하세요.
+
+   ![상품 만들기에서 처음부터 시작 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155067627035/original/0m0VAHfAtZ1yOMkn-G-ryxllZWGO3pkRTg.png?1774365119)
+3. **코스 제목**과 **코스 설명**을 입력하고, 코스 썸네일 이미지를 올리세요.
+4. 가격 방식을 **무료**, **반복**, **일회성** 중에서 선택한 뒤 **코스 생성**을 클릭하세요.
+
+   ![코스 정보 입력과 가격 방식 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155067627958/original/ney-1Jg2J9jHWNLg4TvbRYC4p9mSNgh7qg.gif?1774365612)
+5. 코스 콘텐츠를 처음부터 만들거나, 제공된 템플릿을 편집하세요.
+
+   ![코스 콘텐츠 구성 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155067628139/original/F5AQ6NHbZOYBHs2Q5-38Z9QBNHb1yAr6SA.png?1774365669)
+
+### 코스 편집기 사용하기 (새 레이아웃)
+
+코스를 만들면 하이퍼클래스가 **Course Editor**(코스 편집기)를 넓은 작업 화면으로 열어 줘요. 덕분에 콘텐츠를 더 빠르게 만들 수 있어요.
+
+**화면 구성**
+
+- 왼쪽 패널: 코스 구조(모듈, 강의, 퀴즈, 과제)를 보여 줘요.
+- 가운데 편집 영역: 선택한 항목을 편집하는 곳이에요.
+- 맨 위 이동 경로(브레드크럼): 코스 안에서 지금 어디에 있는지 알려 줘요.
+
+**자주 쓰는 동작**
+
+- 왼쪽 패널에서 강의나 퀴즈를 선택하면 편집 영역에서 열려요.
+- 왼쪽 패널의 항목을 끌어다 놓아 콘텐츠 순서를 바꿀 수 있어요.
+- 모듈을 펼치거나 접어서 한 번에 한 섹션에 집중할 수 있어요.
+
+{% hint style="info" %}
+계정에 기능이 적용되는 시기에 따라 화면 문구와 버튼 이름이 다를 수 있어요.
+{% endhint %}
+
+**다음 단계:** 코스를 더 좋게 만드는 방법을 살펴보세요.
+
+- [코스·멤버십 사이트 만드는 방법](../../17-멤버십-커뮤니티/멤버십-코스/how-to-build-courses-membership-sites.md)
+- [커뮤니티 안에서 유료 코스 운영하기](../../17-멤버십-커뮤니티/커뮤니티/paid-courses-inside-communities.md)
+- [커뮤니티의 고급 코스 잠금 해제 옵션](../../17-멤버십-커뮤니티/기타/advanced-course-unlock-options-in-communities.md)
+
 ---
 
-## 강의 만들기
+## 코스 콘텐츠 만들기
 
-첫 강의를 만드는 것은 여러분의 교육 제국을 위한 기초를 다지는 것과 같아요. 흥미롭고 쉬운 과정이니, 함께 해보겠습니다.
+코스를 만들었다면 이제 학습 콘텐츠를 채우세요.
 
-- `Memberships(멤버십) > Courses(강의) > Products(상품)`으로 이동하세요.
+**Course Editor**에서 다음 작업을 할 수 있어요.
 
-![강의 상품 페이지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155067626946/original/xC3XQuB72es3s71pE5_EkekhCU_5B8GUBA.png?1774365062)
+- 모듈이나 섹션 만들기
+- 강의 추가하기
+- 동영상이나 다운로드 파일 올리기
+- 원하는 순서로 콘텐츠 정리하기
+- **변경사항 저장**
 
-- **Create Product(상품 만들기) > Start from Scratch(처음부터 시작)**를 클릭하세요.
-
-![상품 만들기 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155067627035/original/0m0VAHfAtZ1yOMkn-G-ryxllZWGO3pkRTg.png?1774365119)
-
-- 강의 제목과 강의 설명을 포함한 강의 세부사항을 입력하세요. 강의용 썸네일 이미지를 업로드하고, 무료(Free), 정기 결제(Recurring), 일회성(One Time) 중 하나를 선택해서 강의 가격을 설정한 다음, Create Course(강의 만들기)를 클릭하세요.
-
-![강의 생성 과정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155067627958/original/ney-1Jg2J9jHWNLg4TvbRYC4p9mSNgh7qg.gif?1774365612)
-
-- 처음부터 강의 콘텐츠를 구성하거나 템플릿을 편집하세요.
-
-![강의 콘텐츠 편집](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155067628139/original/F5AQ6NHbZOYBHs2Q5-38Z9QBNHb1yAr6SA.png?1774365669)
-
-**다음 단계:** 강의를 더욱 향상시킬 수 있는 방법들을 살펴보세요:
-
-- [강의/멤버십 사이트 구축하는 방법](../../17-멤버십-커뮤니티/멤버십-코스/how-to-build-courses-membership-sites.md)
-- [커뮤니티 안의 유료 강의](../../17-멤버십-커뮤니티/커뮤니티/paid-courses-inside-communities.md)
-- [커뮤니티의 고급 강의 잠금해제 옵션](../../17-멤버십-커뮤니티/기타/advanced-course-unlock-options-in-communities.md)
+{% hint style="info" %}
+코스에는 수강생이 등록한 뒤에 볼 학습 콘텐츠가 들어가요.
+{% endhint %}
 
 ---
 
 ## 오퍼 만들기
 
-멋진 강의가 준비되었다면, 오퍼를 만드는 것은 아름다운 선물을 포장하는 것과 같아요. 매력적이고 명확한 가치를 전달해야 합니다. 거부할 수 없는 오퍼를 만드는 방법을 알아보겠습니다:
+코스가 준비되면 오퍼를 만들어요. 오퍼는 코스를 선물 상자처럼 포장해서, 가치가 한눈에 보이게 해 주는 단계예요.
 
-- **Memberships(멤버십) > Courses(강의) > Offers(오퍼)**로 이동하세요.
+1. **멤버십 > 코스 > 오퍼**로 이동하세요.
+2. **오퍼 만들기**를 클릭하세요.
 
-- **Create Offer(오퍼 만들기)**를 클릭하세요.
+   ![오퍼 만들기 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155067628519/original/Kx1BZHkYB3OqEJDLuLu8u13Kq8eZ9j0WtQ.png?1774365815)
+3. 오퍼의 가치가 잘 전달되도록 오퍼 정보를 입력하세요.
+4. 방금 만든 코스 상품을 오퍼에 연결하세요.
+5. 원하는 가격을 설정하세요.
+6. **만들기**를 클릭하세요.
 
-![오퍼 만들기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155067628519/original/Kx1BZHkYB3OqEJDLuLu8u13Kq8eZ9j0WtQ.png?1774365815)
+   ![오퍼 정보 입력 후 만들기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155067628657/original/T-DMPbjLV2AYbk5t1MpW5Jw_Lu7REW2A-w.png?1774365873)
+7. 오퍼 상태를 **Draft**(초안)에서 **Published**(게시됨)로 바꾸고 **저장**을 클릭하세요.
 
-- 가치를 명확하게 전달할 수 있도록 오퍼 세부사항을 입력하세요.
+   ![오퍼 상태를 게시됨으로 변경](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155067628755/original/m6DDCoJacz7MrnvPcWolZK5RpmFFuljIFg.png?1774365931)
+8. 오퍼 목록에서 바로 초안과 게시됨 상태를 전환할 수도 있어요.
 
-- 방금 만든 강의 상품을 오퍼에 할당하세요.
+   ![오퍼 목록에서 상태 전환](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155067628836/original/xFFnpkpY7jgpQllHmDVWs_wGpTwyRybWIQ.png?1774365968)
 
-- 원하는 가격을 설정하세요.
-
-- **Create(만들기)**를 클릭하세요.
-
-![오퍼 상세 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155067628657/original/T-DMPbjLV2AYbk5t1MpW5Jw_Lu7REW2A-w.png?1774365873)
-
-- 오퍼를 초안(Draft)에서 발행됨(Published)으로 변경하고 Save(저장)를 클릭하세요.
-
-![오퍼 발행하기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155067628755/original/m6DDCoJacz7MrnvPcWolZK5RpmFFuljIFg.png?1774365931)
-
-- 또는 오퍼 목록에서 직접 초안과 발행됨 상태를 전환할 수도 있어요.
-
-![오퍼 상태 전환](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155067628836/original/xFFnpkpY7jgpQllHmDVWs_wGpTwyRybWIQ.png?1774365968)
-
-**다음으로 할 수 있는 것:** 더 많은 학습자를 유치하기 위해 오퍼를 묶어서 판매하거나 할인 코드를 만드는 것을 고려해보세요.
+**다음으로 할 수 있는 일:** 오퍼를 묶음으로 구성하거나 할인 코드를 만들어 더 많은 수강생을 모아 보세요.
 
 ---
 
 ## 오퍼 판매하기
 
-축하합니다! 이제 오퍼를 전 세계와 공유할 준비가 되었어요! 마지막 단계는 여러분의 오디언스와 연결하는 것입니다. 오퍼를 빠르게 생성하고 공유해보겠습니다:
+오퍼가 준비되었어요. 마지막 단계는 고객에게 오퍼를 알리는 일이에요. 오퍼 링크를 만들어 공유해 보세요.
 
-- **Memberships(멤버십) > Courses(강의) > Offers(오퍼)**로 다시 이동하세요.
+1. **멤버십 > 코스 > 오퍼**로 다시 이동하세요.
 
-![오퍼 목록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155067629244/original/EuqFUSfzAvN1Oafi3BMQcIIpiTHWqqeKpA.png?1774366145)
+   ![오퍼 목록 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155067629244/original/EuqFUSfzAvN1Oafi3BMQcIIpiTHWqqeKpA.png?1774366145)
+2. 링크를 가져올 오퍼에서 **링크** 아이콘을 클릭하세요.
+3. **복사**를 클릭하세요.
 
-- 오퍼 링크를 가져오려면 **링크** 아이콘을 클릭하세요.
+   ![오퍼 링크 복사](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155067629363/original/IMZnc01t0Hj7BS4bB5u_Q0wlIMLNW6Jwyg.png?1774366186)
+4. 소셜 미디어, 이메일, 웹사이트 등 여러 채널에 공유하세요.
 
-- Copy(복사)를 클릭하세요.
-
-![오퍼 링크 복사](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155067629363/original/IMZnc01t0Hj7BS4bB5u_Q0wlIMLNW6Jwyg.png?1774366186)
-
-- 소셜 미디어, 이메일, 또는 웹사이트 등 여러분의 채널을 통해 공유하세요.
-
-**다음으로 할 수 있는 것:** 마케팅 전략을 살펴보거나 강의 판매를 늘리기 위한 캠페인을 시작해보세요.
+**다음으로 할 수 있는 일:** 마케팅 전략을 살펴보거나 캠페인을 시작해서 코스 판매를 늘려 보세요.
 
 ---
-*원문 최종 수정: Tue, 24 Mar, 2026 at 10:30 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+
+## 오퍼 게시하고 공유하기
+
+오퍼 설정을 마쳤다면 다음 순서로 마무리하세요.
+
+- 가격 정보를 확인하세요.
+- 올바른 코스가 연결되어 있는지 확인하세요.
+- 오퍼를 게시하세요.
+- 오퍼 링크를 복사하세요.
+
+오퍼 링크는 다음 채널로 공유할 수 있어요.
+
+- 이메일 캠페인
+- 랜딩 페이지
+- 웹사이트
+- 소셜 미디어
+- 다이렉트 메시지
+
+---
+
+## 자주 묻는 질문
+
+### 코스가 보이지 않아요.
+
+코스를 찾을 수 없다면 다음을 확인하세요.
+
+- 코스가 정상적으로 만들어졌는지 확인하세요.
+- 올바른 서브 계정에서 작업하고 있는지 확인하세요.
+- **코스** 페이지를 새로고침해서 최신 변경 사항을 불러오세요.
+
+### 오퍼가 보이지 않아요.
+
+오퍼가 나타나지 않는다면 다음을 확인하세요.
+
+- 오퍼가 게시되었는지 확인하세요.
+- 오퍼에 올바른 코스가 연결되어 있는지 확인하세요.
+- 오퍼 설정이 정상적으로 저장되었는지 확인하세요.
+
+### 고객이 코스를 구매하지 못해요.
+
+수강생이 결제를 완료하지 못한다면 다음을 확인하세요.
+
+- 지원되는 결제 서비스가 계정에 연결되어 있는지 확인하세요.
+- 오퍼 가격과 결제 설정을 확인하세요.
+- 오퍼가 게시되어 구매할 수 있는 상태인지 확인하세요.
+
+### 수강생이 코스에 들어가지 못해요.
+
+수강생이 구매했거나 등록했는데도 코스에 들어가지 못한다면 다음을 확인하세요.
+
+- 수강생이 등록을 정상적으로 마쳤는지 확인하세요.
+- 오퍼에 올바른 코스가 연결되어 있는지 확인하세요.
+- 워크플로우로 접근 권한을 부여하고 있다면, 워크플로우가 활성 상태이고 설정대로 동작하는지 확인하세요.
+
+### 동영상이나 파일이 불러와지지 않아요.
+
+코스 미디어가 제대로 불러와지지 않는다면 다음을 확인하세요.
+
+- 페이지를 새로고침하고 업로드가 정상적으로 끝났는지 확인하세요.
+- 강의에 올바른 미디어 파일이 들어 있는지 확인하세요.
+- 문제가 계속되면 파일을 다시 올려 보세요. 이때 **Course Editor**에서 지원하는 파일인지도 확인하세요.

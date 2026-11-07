@@ -1,101 +1,61 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 13-AI-Employee > Voice-AI
+원문: /support/solutions/articles/155000005267-separate-during-call-and-post-call-actions-in-voice-ai
+번역일: 2026-11-07
+카테고리: 13-AI-Employee
 ---
 
-# 통화 중/통화 후 액션 분리
+# 음성 AI 통화 중 액션과 통화 후 액션 나누기
 
-**목차**
+음성 AI 에이전트의 액션은 통화 중에 실행할 액션과 통화가 끝난 뒤에 실행할 액션으로 나뉘어 있어요. 에이전트가 통화 중에 무엇을 하고 통화 후에 무엇이 실행되는지 구분해서 관리할 수 있어요. 액션은 카드, 탭, 설정 창으로 보여 주기 때문에 만들고 확인하고 수정하고 관리하기가 쉬워요.
 
-- [개요](#개요)
-- [새로운 기능](#새로운-기능)
-- [핵심 개선사항](#핵심-개선사항)
-- [사용 방법](#사용-방법)
-- [지원되는 액션 유형](#지원되는-액션-유형)
-  - [통화 중](#통화-중)
-  - [통화 후](#통화-후)
+## 통화 중 액션과 통화 후 액션을 나누면 좋은 점
 
-## 개요
+- 실행 시점이 분명해요: 어떤 액션이 대화 중에 실행되고 어떤 액션이 통화 후에 실행되는지 한눈에 볼 수 있어요.
+- 대화가 더 자연스러워져요: 꼭 통화 중에 하지 않아도 되는 연락처 업데이트를 통화 후로 옮기면, 에이전트가 불필요한 확인 질문으로 대화를 끊지 않아요.
+- 액션 관리가 빨라져요: 각 액션 카드에서 바로 확인, 편집, 삭제할 수 있어요.
+- 자동화를 유연하게 구성할 수 있어요: 통화 전환이나 예약 같은 실시간 액션과 통화 후 데이터 업데이트 등 지원되는 자동화를 함께 쓸 수 있어요.
+- 설정을 안내해 줘요: 카운터, 제한, 설정 안내가 화면에 표시되어 지원하지 않는 액션 구성을 막아 줘요.
 
-음성 AI(Voice AI)의 **액션 빌더(Action Builder)**가 완전히 새롭게 디자인되어 더욱 깔끔하고 빠르며 직관적인 경험을 제공합니다. 이번 업데이트는 카드 기반 레이아웃, 탭 구조, 간소화된 워크플로우를 도입하여 AI 직원이 통화 중과 통화 후에 수행할 작업을 생성, 관리, 검토하는 것을 훨씬 쉽게 만듭니다.
+## 새 액션 추가하기
 
-이 기능을 활성화하려면: Settings(설정) → Labs → "Voice AI - Separate During and Post Call Actions" 활성화
+1. 편집할 음성 AI 에이전트를 열고 **+ New Action**(새 액션 추가)을 클릭하세요.
 
----
+   ![음성 AI 에이전트에서 새 액션 추가 버튼 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155077220323/original/ns8m1CxbVAAXfej1HZHnhh_736yQhwgRWQ.png?1785405521)
+2. 설정할 액션 유형을 선택하세요. 예를 들어 **연락처 필드 업데이트**를 선택해요.
 
-## 새로운 기능
+   ![액션 유형 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155077220495/original/NsICyRQRyrpFBgI_E3dpYbfXDGRUtgSCLw.png?1785405579)
+3. 설정 창이 열리면 필요한 내용을 입력하세요.
 
-- **카드 기반 인터페이스**
-액션이 이제 개별 카드로 표시됩니다. 개선된 시각적 명확성으로 액션을 쉽게 스캔하고 정렬하며 정리할 수 있습니다.
+   ![액션 설정 창](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155077220612/original/OJ8VH1BbdMUKbDH7-G5w4Y0Ajuk4eMW86w.png?1785405617)
+4. **저장**을 클릭하세요. 새 액션이 해당하는 탭 아래에 카드로 나타나요.
 
-![카드 기반 인터페이스](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046578046/original/3RvCiXMNSA2LtzG8exuGG0j1BJw0PbHxmA.png?1747168856)
+## 지원하는 액션 유형
 
-- **탭 레이아웃**
-액션이 이제 **통화 중(During the Call)**과 **통화 후(After the Call)** 섹션으로 분리되었습니다. 각 탭에는 설정된 액션의 총 개수가 표시됩니다.
+### 통화 중 액션
 
-- **간소화된 생성 흐름**
-굵게 표시되고 쉽게 접근할 수 있는 **"New Action(새 액션)"** 버튼으로 빠르고 구조화된 액션 생성을 유도합니다.
+- **통화 전환**
+- **워크플로우 트리거**
+- **Send SMS**(SMS 보내기)
+- **예약하기**
+- **사용자 지정 액션**(**베타**)
+- **연락처 필드 업데이트**
 
-![새 액션 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046578089/original/3Njbttz4ii9VZ92LIuRU7Y2X5V-Rt_NZAw.jpeg?1747168934)
+### 통화 후 액션
 
-- **개별 액션 모달**
-모든 액션 유형이 전용 모달에서 열리므로 탭을 전환하거나 긴 양식을 스크롤할 필요가 없습니다.
+- **연락처 필드 업데이트**: 통화가 끝난 뒤, 통화 상대의 말을 끊거나 추가 확인을 요청하지 않고 조용히 연락처를 업데이트해요.
 
-- **빠른 삭제 옵션**
-액션 카드 메뉴에서 직접 액션을 삭제할 수 있어 편집기를 열 필요가 없습니다.
+![통화 후 액션 탭 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081225242/original/YjhrRgFOTe8LwjHGV84xk93kV7cnVHEo-g.png?1789669669)
 
-![빠른 삭제 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046578104/original/vgrUiUJ44ABEyIWPDFmNZo4UTNYOadf1Nw.png?1747168957)
+## 연락처 필드 업데이트 실행 시점 선택하기
 
-## 핵심 개선사항
+**연락처 필드 업데이트** 액션을 설정할 때 음성 AI가 연락처를 업데이트할 시점을 고를 수 있어요.
 
-- **개선된 시각적 계층 구조**
-더 나은 라벨과 그룹화된 레이아웃 덕분에 액션 유형을 더 쉽게 구분할 수 있습니다.
+**During the Call**(통화 중)
 
-- **간소화된 편집 및 삭제**
-액션 카드에서 바로 더 적은 클릭으로 액션을 편집하거나 제거할 수 있습니다.
+음성 AI가 대화 중에 바로 업데이트하고 확인 멘트를 함께 말해요. 에이전트가 업데이트한 정보를 통화 상대에게 알리거나 확인받아야 할 때 이 옵션을 쓰세요.
 
-- **내장된 제약 조건 및 스마트 가이던스**
-  - **시각적 카운터**가 사용 중인 각 액션 유형의 개수를 보여줍니다.
-  - **툴팁과 인라인 가이던스**가 잘못된 설정을 방지합니다:
-    - 통화 중 최대 **15개 총 액션**
-    - **예약 액션은 1개**만 허용
-    - 통화 후 최대 **25개 연락처 필드 업데이트 액션**
+**After the Call**(통화 후)
 
-## 사용 방법
+음성 AI가 대화가 끝난 뒤에 조용히 업데이트해요. 통화 상대의 말을 끊지 않아야 하거나 대화에 확인 질문을 더하고 싶지 않을 때 이 옵션을 쓰세요. 도시, 주소, 선호 사항 같은 연락처 정보를 업데이트할 때 쓰면 대화가 자연스럽게 이어져요.
 
-- 편집하려는 **음성 AI 직원**을 열고 에이전트 목표를 클릭합니다.
-
-![에이전트 목표 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046578309/original/LnlppK9UioCFblywgVW74xqac-R4-U82DA.png?1747169559)
-
-- **"New Action(새 액션)"** 버튼을 사용하여 시작합니다.
-
-- 설정하려는 액션 유형을 선택합니다. 예: 통화 전환
-
-![액션 유형 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046578145/original/SPCvamI8apQzIMDBQ5UUxk-wYrHglXGwIg.png?1747169092)
-
-- 전용 모달이 나타나면 필수 세부 정보를 입력합니다.
-
-![액션 설정 모달](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046578199/original/YTKC_vkUNW-LdoHEXEkoqx10OqlDHPPDGA.png?1747169227)
-
-- 저장합니다. 새 액션이 해당 탭 아래에 카드로 표시됩니다.
-
-## 지원되는 액션 유형
-
-### 통화 중
-
-- 통화 전환(Call Transfer)
-- 워크플로우 트리거(Trigger Workflow)
-- SMS 발송(Send SMS)
-- 예약하기(Book Appointment)
-- 커스텀 액션(Custom Actions) (베타)
-
-### 통화 후
-
-- 연락처 필드 업데이트(Update Contact Fields)
-
-![통화 후 액션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046578263/original/3HRS6002J0G6csS-Q6MWpGPDkXd5v8-rHg.jpeg?1747169446)
-
----
-*원문 최종 수정: Tue, 13 May, 2025 at 3:53 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+![연락처 필드 업데이트 실행 시점 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155077219883/original/1wSlhaTRz4I_1j4B3Sm-suahqhJfbPOqMg.png?1785405307)

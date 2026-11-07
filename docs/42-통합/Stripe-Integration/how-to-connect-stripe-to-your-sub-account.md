@@ -1,60 +1,55 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 42-통합 > Stripe Integration
+원문: /support/solutions/articles/48000981400-how-to-connect-stripe-to-your-sub-account
+번역일: 2026-11-07
+카테고리: 42-통합
 ---
 
-# 하위 계정에 Stripe 연결하는 방법
+# Stripe를 서브 계정에 연결하기
 
-하위 계정에 Stripe를 연동하는 방법을 알아보세요.
+서브 계정에 Stripe를 연결하는 방법을 안내해요. 연결하면 Stripe로 결제를 받을 수 있어요.
 
-**중요**: Stripe는 현재 다음 국가들에서 지원됩니다([https://stripe.com/in/global](https://stripe.com/in/global)). 더 많은 국가에서 지원될 예정입니다. 귀하의 국가에서 Stripe가 지원되면, 전 세계 어디든 고객에게 판매할 수 있습니다.
+{% hint style="warning" %}
+현재 Stripe를 지원하는 국가는 [Stripe 지원 국가 목록](https://stripe.com/in/global)에서 확인할 수 있고, 앞으로 더 늘어날 예정이에요. 사용 중인 국가에서 Stripe가 지원되면 전 세계 어디에 있는 고객에게든 판매할 수 있어요.
+{% endhint %}
 
-**목차**
+## Stripe 연결 단계
 
-- [하위 계정에 Stripe 연결하는 단계](#하위-계정에-stripe-연결하는-단계)
-- [1단계: 하위 계정 Stripe 연동 페이지로 가는 3가지 방법](#1단계-하위-계정-stripe-연동-페이지로-가는-3가지-방법)
-- [2단계: Stripe 인증 안내를 따라주세요](#2단계-stripe-인증-안내를-따라주세요)
-- [3단계: Stripe가 활성화되었는지 확인하세요](#3단계-stripe가-활성화되었는지-확인하세요)
+### 1단계: 서브 계정에서 Stripe 연동 화면으로 가기
 
-# 하위 계정에 Stripe 연결하는 단계
+Stripe 연동 화면으로 가는 방법은 세 가지예요. 편한 방법을 하나 고르세요.
 
-### **1단계:** 하위 계정 Stripe 연동 페이지로 가는 3가지 방법이 있습니다.
+#### 옵션 1: 런치패드에서 가기
 
-### 방법 1: 하위 계정 런치패드에서
+1. 서브 계정에서 **런치패드**를 클릭하세요.
+2. **Setup Guide**(설정 가이드)에서 **이커머스**를 선택하세요.
+3. **Start Collecting Payments with Stripe**(Stripe로 결제 받기 시작) 옵션을 클릭하세요.
 
-- 하위 계정에서 **런치패드(Launchpad)**를 클릭하세요.
+![런치패드의 이커머스에서 Stripe로 결제 받기 시작 옵션 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045972657/original/88tgWJHJ1Rka94qCwnPGkv7ukzVztapi9Q.png?1746109303)
 
-- 설정 가이드에서 **전자상거래(Ecommerce)**를 선택하세요.
+#### 옵션 2: 연동에서 가기
 
-- **Stripe로 결제 수집 시작하기(Start Collecting Payments with Stripe)** 옵션을 클릭하세요.
+1. 서브 계정에서 **설정**을 클릭하세요.
+2. **연동**을 클릭하세요.
+3. **Stripe**의 **계속** 버튼을 클릭하세요.
 
-![Stripe 연결 - 런치패드](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045972657/original/88tgWJHJ1Rka94qCwnPGkv7ukzVztapi9Q.png?1746109303)
+![설정의 연동 화면에서 Stripe의 계속 버튼 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045973259/original/Utea--uC2ramY6-0oezXYZz6FZPPt1OuUw.png?1746110066)
 
-### 방법 2: 연동(Integrations)에서
+#### 옵션 3: 결제에서 가기
 
-- 하위 계정에서 설정(Settings)을 클릭하세요.
-- 연동(Integrations)을 클릭하세요.
-- Stripe의 계속(Continue) 버튼을 클릭하세요.
+1. 서브 계정에서 **결제**를 클릭하세요.
+2. **연동** 탭을 클릭하세요.
+3. **Stripe**의 **연결** 버튼을 클릭하세요.
 
-![Stripe 연결 - 연동 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045973259/original/Utea--uC2ramY6-0oezXYZz6FZPPt1OuUw.png?1746110066)
+![결제의 연동 탭에서 Stripe의 연결 버튼 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045973618/original/7I08JEmlM0CLlaUIp6peXDIet7YUfx_slA.png?1746110475)
 
-### 방법 3: 결제(Payments)에서
+### 2단계: Stripe의 승인 안내에 따라 진행하기
 
-- 하위 계정에서 결제(Payments)를 클릭하세요.
-- 연동(Integrations) 탭을 클릭하세요.
-- Stripe의 연결(Connect) 버튼을 클릭하세요.
+화면에 나오는 Stripe의 승인 안내를 따라 진행하세요.
 
-![Stripe 연결 - 결제 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045973618/original/7I08JEmlM0CLlaUIp6peXDIet7YUfx_slA.png?1746110475)
+![Stripe 승인 안내 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042044602/original/8ecwKCG1kxiRy25kLh7HArylC07xdLGx7w.png?1740158772)
 
-### 2단계: Stripe 인증 안내를 따라주세요.
+### 3단계: Stripe가 활성화되었는지 확인하기
 
-![Stripe 인증 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042044602/original/8ecwKCG1kxiRy25kLh7HArylC07xdLGx7w.png?1740158772)
+Stripe가 활성화되었는지 확인하세요.
 
-### 3단계: Stripe가 활성화되었는지 확인하세요.
-
-![Stripe 연결 완료 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042044554/original/hZdxT9M7_TEx_BnwZyQnh-kAQn-n4Pet0A.png?1740158691)
-
----
-*원문 최종 수정: Thu, 3 Jul, 2025 at 9:58 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+![Stripe 활성화 확인 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042044554/original/hZdxT9M7_TEx_BnwZyQnh-kAQn-n4Pet0A.png?1740158691)

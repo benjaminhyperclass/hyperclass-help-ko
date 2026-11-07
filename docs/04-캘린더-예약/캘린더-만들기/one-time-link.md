@@ -1,88 +1,61 @@
 ---
-
-번역일: 2026-04-06
-카테고리: 04-캘린더-예약 > 캘린더-만들기
+원문: /support/solutions/articles/155000001692-one-time-link
+번역일: 2026-11-07
+카테고리: 04-캘린더-예약
 ---
 
-# 일회용 링크 (One Time Link)
+# 일회용 링크
 
-커뮤니티 튜토리얼
-
-[https://youtu.be/mC2nQZ1oH5c](https://youtu.be/mC2nQZ1oH5c)
-
-[https://youtu.be/zSpu_5q566Q](https://youtu.be/zSpu_5q566Q)
-
-[https://youtu.be/9n-jJgJYwps?si=3mb22zUyMqGuLM8u%EF%BF%BCdotcomquest1@gmail.com](https://youtu.be/9n-jJgJYwps?si=3mb22zUyMqGuLM8u%EF%BF%BCdotcomquest1@gmail.com)
-
-[https://youtu.be/LfjRdGikkL0](https://youtu.be/LfjRdGikkL0)
-
-이 문서에서 다루는 내용
-
-- [일회용 링크란 무엇인가요?](#일회용-링크란-무엇인가요)
-- [일회용 링크가 왜 중요한가요?](#일회용-링크가-왜-중요한가요)
-- [일회용 링크를 공유하는 방법](#일회용-링크를-공유하는-방법)
-- [예약 후에는 어떻게 되나요?](#예약-후에는-어떻게-되나요)
-
-관련 문서
-
-[일회용 링크 생성을 위한 워크플로우 액션](workflow-action-for-generating-one-time-link.md)
+일회용 링크는 예약이 한 번 잡히면 자동으로 만료되는 캘린더 예약 링크예요. 캘린더 전체를 공개하지 않고 특정 연락처에게만 예약을 받고 싶을 때 쓰세요.
 
 ---
 
-#### 일회용 링크란 무엇인가요?
+## 일회용 링크란?
 
-일회용 링크(One Time Link)는 캘린더에 대한 고유한 예약 링크로, 예약이 완료되면 자동으로 만료되도록 설계되었습니다. 영구 링크나 일반 예약 링크와 달리, 일회용 링크는 캘린더에 단 한 번만 접근할 수 있습니다.
-
----
-
-#### 일회용 링크가 왜 중요한가요?
-
-- 일회용 링크는 모든 비즈니스에서 유용하며, 특히 전체 캘린더를 공유하고 싶지 않은 분들에게 좋습니다.
-- 이 링크는 예약이 완료되면 자동으로 만료되므로, 예약 가능 시간을 더 잘 통제할 수 있고 원치 않는 예약을 방지할 수 있습니다.
-- 누군가 링크를 사용해서 예약을 하면, 새로운 링크를 주지 않는 한 다시 예약할 수 없습니다.
-- 또한 참석자가 모르는 사람들에게 예약 가능 시간을 공유하는 것을 방지할 수 있습니다.
+일회용 링크는 내 캘린더로 연결되는 고유한 예약 링크예요. 예약이 잡히면 자동으로 만료돼요. **영구 링크**나 **Scheduling Link**(예약 링크)와 달리, 캘린더에 딱 한 번만 접속할 수 있어요.
 
 ---
 
-#### 일회용 링크를 공유하는 방법
+## 일회용 링크를 쓰면 좋은 이유
 
-일회용 링크는 캘린더 헤더에서 바로 접근하는 것이 가장 쉽습니다. 캘린더 화면의 Share(공유) 옵션을 사용하면 설정에서 이동하지 않고도 일회용 예약 링크를 만들 수 있습니다.
-
-1. 하위 계정(Sub-account)을 열어주세요.
-
-2. Settings(설정)으로 이동하세요.
-
-3. Calendars(캘린더)를 클릭하세요.
-
-4. 사용하고자 하는 캘린더를 열어주세요.
-
-5. 오른쪽 상단의 Share(공유)를 클릭하세요.
-
-6. One-Time Link(일회용 링크)를 선택하세요.
-
-7. 생성된 링크를 복사해서 연락처에게 보내주세요.
-
-일회용 링크는 예약이 완료되면 만료되므로, 캘린더 접근을 통제하는 데 도움이 됩니다.
-
-참고: 이제 캘린더 설정(Calendar Settings)의 "Share(공유)" 옵션에서 예약 링크(Scheduling Link), 영구 링크(Permanent Link), 일회용 링크(One Time Link), 임베드 코드(Embed Code)에 모두 접근할 수 있습니다.
-
-![캘린더 공유 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155014409460/original/tJYXyaOQZmJNdHJzXRq97if3mpqCUwBGYg.png?1701779399)
-
-- 공유 옵션에서 "One Time Link(일회용 링크)" 탭을 찾아주세요.
-
-![일회용 링크 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155014410379/original/gMZzOPcD61-89Nzbv1-uHpAvA9b4vROLGg.png?1701779522)
-
-- "Copy(복사)"를 클릭하면 일회용 링크를 쉽게 복사해서 필요한 곳에 붙여넣을 수 있습니다.
-- 새 링크를 만들려면 "Generate New Link(새 링크 생성)" 옵션을 클릭하여 새로운 URL을 받으세요.
+- 캘린더 전체를 공유하고 싶지 않은 분께 특히 유용해요. 업종에 상관없이 쓸 수 있어요.
+- 예약이 한 번 완료될 때마다 링크가 자동으로 만료돼요. 내 가능한 시간을 직접 관리하고, 원하지 않는 예약을 막을 수 있어요.
+- 링크로 예약을 마친 사람은 새 링크를 받기 전에는 다시 예약할 수 없어요.
+- 예약한 사람이 내 가능한 시간을 모르는 사람에게 공유하는 일도 막을 수 있어요.
 
 ---
 
-#### 예약 후에는 어떻게 되나요?
+## 일회용 링크 공유하기
 
-예약이 완료되어 링크가 만료된 후, 누군가 같은 링크로 다른 예약을 하려고 시도하면 링크가 이미 만료되었으므로 소유자에게 연락하라는 안내가 표시됩니다. 이를 통해 예약 목적으로는 유효하고 현재 사용 가능한 링크만 사용되도록 보장합니다.
+캘린더 화면 위쪽에서 일회용 링크를 바로 만들 수 있어요. **공유**를 쓰면 설정 화면을 벗어나지 않고 한 번만 쓸 수 있는 예약 링크를 만들 수 있어요.
 
-![만료된 링크 메시지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155017921861/original/SpF26wehi_72V7aOQakJQO4ciBFaAeplXg.png?1705483286)
+1. 서브 계정을 여세요.
+2. **설정**으로 이동하세요.
+3. **캘린더**를 클릭하세요.
+4. 사용할 캘린더를 여세요.
+5. 오른쪽 위에서 **공유**를 클릭하세요.
+6. **One-Time Link**(일회용 링크)를 선택하세요.
+7. 만들어진 링크를 복사해서 연락처에게 보내세요.
+
+일회용 링크는 예약이 완료되면 만료돼요. 그래서 캘린더에 접근하는 범위를 직접 관리할 수 있어요.
+
+{% hint style="info" %}
+이제 **캘린더 설정**의 **공유**에서 **Scheduling Link**(예약 링크), **영구 링크**, **One Time Link**(일회용 링크), **Embed Code**(임베드 코드)를 모두 열 수 있어요.
+{% endhint %}
+
+![캘린더 설정의 공유 옵션 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155014409460/original/tJYXyaOQZmJNdHJzXRq97if3mpqCUwBGYg.png?1701779399)
+
+- 공유 옵션에서 **One Time Link** 탭을 찾으세요.
+
+![One Time Link 탭 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155014410379/original/gMZzOPcD61-89Nzbv1-uHpAvA9b4vROLGg.png?1701779522)
+
+- **복사**를 클릭하면 일회용 링크를 복사해 필요한 곳에 붙여 넣을 수 있어요.
+- 새 링크가 필요하면 **새 링크 생성**을 클릭하세요. 새 URL이 만들어져요.
 
 ---
-*원문 최종 수정: 2026년 3월 17일*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+
+## 예약이 끝난 뒤에는 어떻게 되나요?
+
+예약이 잡히면 링크가 만료돼요. 이후 같은 링크로 다시 예약하려는 사람에게는 링크가 이미 만료되었으니 캘린더 소유자에게 문의하라는 안내가 나와요. 그래서 유효한 최신 링크로만 예약을 받을 수 있어요.
+
+![만료된 일회용 링크로 접속했을 때 나오는 안내 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155017921861/original/SpF26wehi_72V7aOQakJQO4ciBFaAeplXg.png?1705483286)

@@ -1,284 +1,239 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 07-워크플로우 > 시작하기
+원문: /support/solutions/articles/155000005671-clickup-actions-triggers-in-workflows
+번역일: 2026-11-06
+카테고리: 07-워크플로우
 ---
 
-# ClickUp - 워크플로우의 액션과 트리거
+# ClickUp 연동 — 워크플로우 트리거와 액션(ClickUp Actions & Triggers)
 
-Hyperclass 워크플로우를 ClickUp과 연결하여 작업 생성, 공간/폴더/목록 구성, AI 생성 문서 저장을 서드파티 도구 없이 처리할 수 있습니다. 이 가이드에서는 연동의 개념, 주요 장점, 설정 방법, 모범 사례를 설명하여 CRM과 프로젝트 관리가 완벽하게 동기화되도록 도와드립니다.
-
----
-
-**목차**
-
-- [ClickUp 액션과 트리거란?](#clickup-액션과-트리거란)
-- [ClickUp 액션과 트리거의 주요 장점](#clickup-액션과-트리거의-주요-장점)
-- [사전 요구사항 및 권한](#사전-요구사항-및-권한)
-- [ClickUp 계정 연결하기](#clickup-계정-연결하기)
-- [사용 가능한 트리거 (ClickUp → Hyperclass)](#사용-가능한-트리거-clickup-→-hyperclass)
-- [사용 가능한 액션 (Hyperclass → ClickUp)](#사용-가능한-액션-hyperclass-→-clickup)
-- [ClickUp 액션과 트리거 설정 방법](#clickup-액션과-트리거-설정-방법)
-- [일반적인 활용 사례](#일반적인-활용-사례)
-- [자주 묻는 질문](#자주-묻는-질문)
+하이퍼클래스 워크플로우를 ClickUp과 연결하면 별도 외부 도구 없이 태스크를 만들고, 스페이스·폴더·리스트를 구성하고, AI가 쓴 문서를 저장할 수 있어요. 이 문서에서는 연동이 무엇인지, 어떤 점이 좋은지, 어떻게 설정하는지 알려 드려요. CRM과 프로젝트 진행 상황을 같은 상태로 맞추는 데 도움이 돼요.
 
 ---
 
-# **ClickUp 액션과 트리거란?**
+## ClickUp 트리거와 액션이란?
 
-ClickUp 액션과 트리거는 Hyperclass 자동화를 ClickUp의 작업 및 문서 플랫폼과 연결합니다. 트리거는 ClickUp의 이벤트(새 작업 생성, 상태 변경 등)를 감지하여 Hyperclass 워크플로우를 시작할 수 있고, 액션은 Hyperclass에서 ClickUp으로 데이터를 전송(작업, 공간, 문서 생성 등)합니다. 이 양방향 연결은 수동 작업을 줄이고 고객 프로젝트를 실시간으로 업데이트합니다.
+ClickUp 트리거와 액션은 하이퍼클래스 자동화를 ClickUp의 태스크·문서 플랫폼과 이어 주는 기능이에요.
 
----
+- 트리거는 ClickUp에서 일어난 일(새 태스크 생성, 상태 변경 등)을 감지해서 하이퍼클래스 워크플로우를 시작해요.
+- 액션은 하이퍼클래스의 데이터를 ClickUp으로 보내요. 태스크, 스페이스, 문서를 만드는 식이에요.
 
-## **ClickUp 액션과 트리거의 주요 장점**
-
-결과를 이해하면 연동을 어디에 먼저 적용할지 결정하는 데 도움이 됩니다. 아래 장점들은 프로젝트 진행이 CRM 단계와 일치해야 하는 일반적인 에이전시 및 서비스 워크플로우에 초점을 맞춥니다.
-
-- **중복 입력 없음:** 고객 및 프로젝트 세부사항이 Hyperclass과 ClickUp 간에 자동으로 흐르므로 수동 업데이트가 줄어듭니다.
-
-- **빠른 온보딩:** 거래가 핵심 단계에 도달하는 순간 공간, 폴더, 목록, 작업이 자동으로 생성됩니다.
-
-- **AI to 문서:** Hyperclass의 AI 단계로 콘텐츠를 생성하고 검토를 위해 바로 ClickUp 문서에 저장합니다.
-
-- **깔끔한 인수인계:** 댓글과 상태 업데이트가 팀이 작업을 수행하는 곳에 있어 소통 오류가 줄어듭니다.
-
-- **관리할 도구 감소:** 많은 웹훅/Zap 자동화를 네이티브하고 감사 가능한 워크플로우 단계로 대체합니다.
-
-- **비용 제어 (프리미엄):** 프리미엄 실행은 사용량 기반이며 활성화 시 고객에게 재청구할 수 있습니다.
+양방향으로 연결되기 때문에 수작업이 줄고, 고객 프로젝트 정보가 실시간으로 최신 상태를 유지해요.
 
 ---
 
-## **사전 요구사항 및 권한**
+## ClickUp 연동의 주요 장점
 
-몇 가지 계정 수준 설정이 ClickUp 단계를 추가할 수 있는지 여부와 청구 방식에 영향을 미칩니다. 구축하기 전에 이를 확인하세요.
+어떤 효과가 있는지 알면 어디부터 적용할지 정하기 쉬워요. 아래는 프로젝트 진행이 CRM 단계와 맞아야 하는 에이전시·서비스 업무에서 자주 얻는 장점이에요.
 
-- 자동화가 실행될 하위 계정에서 **워크플로우** 및 **연동**에 대한 Hyperclass 접근 권한.
-
-- 대상 워크스페이스에서 항목을 생성/업데이트할 권한이 있는 ClickUp 사용자(액션은 ClickUp 권한을 존중합니다).
-
-- **워크플로우용 프리미엄 기능**은 프리미엄 액션/트리거를 실행하고 선택적으로 고객에게 사용량을 재청구하기 위해 에이전시에서 활성화해야 할 수 있습니다.
-
----
-
-## **ClickUp 계정 연결하기**
-
-인증은 ClickUp의 공식 OAuth를 사용하므로 웹훅을 통해 이벤트를 수신하고 액션이 귀하의 권한으로 읽기/쓰기를 할 수 있습니다.
-
-- Hyperclass에서 **자동화(Automation) → 워크플로우(Workflows)**를 열고 아무 **ClickUp** 액션이나 트리거를 추가하세요.
-→ 연결되지 않은 경우 **지금 연결(Connect Now)**을 클릭하고 ClickUp에 로그인하여 접근을 승인하세요.
-→ 이미 연결된 경우 단계에서 필드가 즉시 로드됩니다.
-
-![ClickUp 연결 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056698223/original/zC74oAXM3UU1j02ABVYQmiu5Va6coh8_iQ.png?1761228082)
-
-- 다른 경로: 하위 계정 설정(Sub-Account settings) → 연동(Integrations) → ClickUp → 연결(Connect).
-
-![연동 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056698333/original/9bQTwz8IfjsgKQ6Fr4kGiMr3T9njChVYOw.png?1761228154)
+- 이중 입력 없음: 고객·프로젝트 정보가 하이퍼클래스와 ClickUp 사이를 자동으로 오가서 수동 업데이트가 줄어요.
+- 빠른 온보딩: 딜이 주요 단계에 도달하는 즉시 스페이스, 폴더, 리스트, 태스크가 만들어져요.
+- AI로 문서 작성: 하이퍼클래스의 AI 기능으로 콘텐츠를 만들고 바로 ClickUp Docs에 저장해 검토할 수 있어요.
+- 깔끔한 인수인계: 댓글과 상태 업데이트가 팀이 실제로 일하는 곳에 남아서 소통 오류가 줄어요.
+- 관리할 도구 감소: 웹훅이나 Zapier로 만든 여러 자동화를 워크플로우 기본 스텝으로 대체할 수 있어요. 실행 내역도 확인할 수 있어요.
+- 비용 관리(프리미엄): 프리미엄 실행은 사용량 기준으로 과금되고, 설정을 켜면 고객에게 재청구할 수 있어요.
 
 ---
 
-## **사용 가능한 트리거 (ClickUp → Hyperclass)**
+## 사용 전 준비 사항과 권한
 
-트리거는 ClickUp이 웹훅 이벤트를 보낼 때마다 발생합니다. 워크스페이스/목록별로 필터를 사용하여 범위를 제한하고 노이즈를 방지하세요.
+계정 수준의 몇 가지 설정에 따라 ClickUp 스텝을 추가할 수 있는지, 비용이 어떻게 청구되는지가 달라져요. 워크플로우를 만들기 전에 아래 내용을 확인하세요.
 
-| 트리거 | 작동 방식 |
-|--------|-----------|
-| New Task | 새 작업이 생성될 때 발생합니다. |
-| Task Changes | 작업이 업데이트될 때(상태, 마감일 등) 발생합니다. |
-| New List | 새 목록이 생성될 때 발생합니다. |
-| New Folder | 새 폴더가 생성될 때 발생합니다. |
-| New Comment on a Task | 누군가 작업에 댓글을 달 때 발생합니다. |
-| New Attachment Added to Task | 작업에 첨부파일이 추가될 때 발생합니다. |
-| New Reaction on Chat Message | 누군가 공개 채널 메시지에 반응할 때 발생합니다. |
-| New Reaction on Task Comment | 누군가 작업 댓글에 반응할 때 발생합니다. |
-| New Time Entry | 작업에 시간이 기록될 때 발생합니다. |
-
-## **사용 가능한 액션 (Hyperclass → ClickUp)**
-
-액션은 워크플로우 내에서 실행되어 ClickUp에서 항목을 생성하거나 업데이트합니다. 아래 이름은 일관성을 위해 빌더와 일치합니다.
-
-| 액션 | 목적 |
-|------|------|
-| Create Task | 이름, 마감일, 담당자 등이 포함된 작업을 생성합니다. |
-| Update Task | 기존 작업 세부사항(상태, 마감일, 우선순위)을 수정합니다. |
-| Archive or Delete Task | 항목을 보관하거나 영구적으로 삭제합니다. |
-| Create Space | 워크스페이스/팀 공간을 생성합니다. |
-| Create Folder | 목록을 구성하기 위한 폴더를 추가합니다. |
-| Create List | 새로운 작업 목록을 생성합니다. |
-| Post Task Comment | 작업에 댓글을 추가합니다. |
-| Post Attachment | 작업에 파일을 업로드합니다. |
-| Create New Document | ClickUp에서 문서를 생성합니다. |
-| Edit Document Page | 기존 문서 페이지를 업데이트합니다. |
-| Create New Document Page | 기존 문서에 새 페이지를 추가합니다. |
-| Create Custom Field [곧 출시] | 공간/폴더/작업에 커스텀 필드를 추가합니다. |
-| Update Custom Field Value [곧 출시] | 기존 커스텀 필드의 값을 설정합니다. |
-| Find Task by ID | ID로 작업을 찾습니다. |
-| Find Documents | 문서를 검색합니다. |
-| Find Custom Fields | 커스텀 필드를 찾습니다. |
-| Find a List of All Tasks | 워크스페이스/목록의 모든 작업을 반환합니다. |
-| Find User by Name or Email | 사용자를 찾습니다. |
+- 자동화를 실행할 서브 계정에서 **워크플로우**와 **연동**을 쓸 수 있어야 해요.
+- 대상 워크스페이스에서 항목을 만들거나 수정할 권한이 있는 ClickUp 사용자가 필요해요. 액션은 ClickUp 권한을 그대로 따라요.
+- 프리미엄 액션·트리거를 실행하려면, 그리고 사용량을 고객에게 재청구하려면 에이전시에서 **워크플로우 - 프리미엄 기능**을 켜야 할 수 있어요. 자세한 내용은 [워크플로우 프리미엄 기능 켜기와 재청구](how-to-enable-and-rebill-workflow-premium-features.md)를 참고하세요.
 
 ---
 
-## **ClickUp 액션과 트리거 설정 방법**
+## ClickUp 계정 연결하기
 
-이 일반적인 설정을 사용하여 계정을 연결하고, 올바른 방향(트리거 vs 액션)을 선택하고, 필드를 안전하게 매핑하고, 게시하기 전에 모든 것을 검증하세요. 이 단계를 모든 파이프라인 단계나 프로젝트 템플릿에 맞게 조정하세요.
+ClickUp의 공식 OAuth 방식으로 승인해요. 이렇게 하면 웹훅으로 이벤트를 받을 수 있고, 액션이 사용자 권한으로 ClickUp 데이터를 읽고 쓸 수 있어요.
 
-- **워크플로우 열기**
+1. 하이퍼클래스에서 **자동화 > 워크플로우**를 열고 **ClickUp** 액션이나 트리거를 아무거나 추가해요.
+   - 아직 연결하지 않았다면 **Connect Now**(지금 연결)를 클릭하고 ClickUp에 로그인해 접근을 승인하세요.
+   - 이미 연결했다면 스텝 안의 필드가 바로 불러와져요.
 
-**자동화(Automation) → 워크플로우(Workflows)**로 이동하고 **+ 새 워크플로우(New Workflow)**를 클릭하거나 기존 워크플로우를 여세요.
+   ![ClickUp 스텝에서 지금 연결 버튼을 누르는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056698223/original/zC74oAXM3UU1j02ABVYQmiu5Va6coh8_iQ.png?1761228082)
+2. 다른 방법으로는 서브 계정의 **설정 > 연동 > ClickUp > 연결**로 들어가도 돼요.
 
-![워크플로우 생성 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056563322/original/oBVlC-MdURl-P7G_AeqopEAluiVDfg5qkQ.png?1761129355)
-
-- **ClickUp 연결**
-
-워크플로우에서 아무 **ClickUp** 단계를 추가하고 **지금 연결(Connect Now)**을 클릭하거나, **설정(Settings) → 연동(Integrations) → ClickUp → 연결(Connect)**로 이동하여 OAuth를 통해 인증하세요.
-
-![ClickUp 연결](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056563354/original/6Y2pFx9ZsNJ_09OJdf-zGUM1YNSl6j9bGg.png?1761129378)
-
-- **방향 선택**
-
-ClickUp → Hyperclass (트리거): ClickUp에서 무언가가 발생했을 때 Hyperclass 워크플로우를 시작하려면 **ClickUp** 트리거를 추가하세요(예: *New Task*, *Task Changes*)
-
-![ClickUp 트리거 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056563404/original/9AQMRWvJwFGSWV8i1JKIC62ohsgfdbYYoA.png?1761129398)
-
-- Hyperclass → ClickUp (액션): Hyperclass 워크플로우에서 ClickUp에서 작업을 수행합니다.
-
-**ClickUp** 액션을 추가하세요(예: *Create Task*, *Create List*, *Create New Document*). 대상 **워크스페이스/목록**을 선택하고(해당하는 경우) Hyperclass의 **필드를 매핑**하세요(연락처, 기회, 또는 폼 값).
-
-![ClickUp 액션 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056563502/original/9vHaGkI0_Mk8JdAy766UxzHSU9Qk4V2lIw.png?1761129440)
-
-- **순서, 조건, 안전성**
-
-파이프라인 단계, 서비스 유형, 태그별로 분할하려면 **조건 분기(If/Else)** 필터를 사용하세요.
-
-- 다음 액션 전에 ClickUp 객체가 존재해야 하는 곳에 **대기(Wait)** 단계를 삽입하세요(예: *Create List* 후 작업 생성 전 대기).
-
-- 대량 생성의 경우 속도 제한 버스트를 피하기 위해 액션 간격을 두세요.
-
-- **테스트 및 검증**
-
-트리거 경로: 범위가 지정된 ClickUp 영역에서 작은 테스트 이벤트를 생성하세요.
-
-- 액션 경로: 테스트 레코드에서 워크플로우를 실행하세요.
-
-- 입력, 출력, 반환된 ID에 대해 **실행 로그 / 등록 기록(Run Logs / Enrollment History)**을 검토하고 매핑/권한 문제를 수정하세요.
-
-- **게시 및 모니터링**
-
-워크플로우에서 **게시(Publish)**를 클릭하세요.
+   ![서브 계정 설정의 연동에서 ClickUp 연결 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056698333/original/9bQTwz8IfjsgKQ6Fr4kGiMr3T9njChVYOw.png?1761228154)
 
 ---
 
-## **일반적인 활용 사례**
+## 사용할 수 있는 트리거 (ClickUp → 하이퍼클래스)
 
-### **활용 사례 1: Hyperclass 폼 제출에서 ClickUp 작업 생성**
+ClickUp이 웹훅 이벤트를 보낼 때마다 트리거가 작동해요. 필터로 워크스페이스나 리스트를 지정하면 불필요한 실행을 막을 수 있어요.
 
-**목표:** Hyperclass 폼 제출을 실행 가능한 ClickUp 작업으로 변환합니다.
-**워크플로우 설정:**
+| 트리거 | 하는 일 |
+| --- | --- |
+| **New Task**(새 태스크) | 새 태스크가 만들어지면 작동해요. |
+| **Task Changes**(태스크 변경) | 태스크가 수정되면(상태, 마감일 등) 작동해요. |
+| **New List**(새 리스트) | 새 리스트가 만들어지면 작동해요. |
+| **New Folder**(새 폴더) | 새 폴더가 만들어지면 작동해요. |
+| **New Comment on a Task**(태스크 새 댓글) | 누군가 태스크에 댓글을 달면 작동해요. |
+| **New Attachment Added to Task**(태스크 첨부파일 추가) | 태스크에 첨부파일이 추가되면 작동해요. |
+| **New Reaction on Chat Message**(채팅 메시지 새 반응) | 공개 채널 메시지에 누군가 반응하면 작동해요. |
+| **New Reaction on Task Comment**(태스크 댓글 새 반응) | 누군가 태스크 댓글에 반응하면 작동해요. |
+| **New Time Entry**(새 시간 기록) | 태스크에 시간이 기록되면 작동해요. |
 
-- 트리거: 폼 제출됨(Form Submitted)
+---
 
-- 필터: 폼 이름 = "고객 온보딩 폼"
+## 사용할 수 있는 액션 (하이퍼클래스 → ClickUp)
 
-- 액션: 작업 생성(Create Task) (ClickUp), 작업 댓글 추가(Add Task Comment) (ClickUp)
+액션은 워크플로우 안에서 실행되어 ClickUp의 항목을 만들거나 수정해요. 아래 이름은 워크플로우 빌더 화면과 같아요.
 
-**예시:** 고객이 요구사항 세부사항과 함께 온보딩 폼을 제출 → ClickUp의 "고객 설정" 목록에서 작업이 생성됨 → 고객의 기대사항이 포함된 댓글이 추가됨.
+| 액션 | 용도 |
+| --- | --- |
+| **Create Task**(태스크 만들기) | 이름, 마감일, 담당자 등을 지정해 태스크를 만들어요. |
+| **Update Task**(태스크 수정) | 기존 태스크의 상태, 마감일, 우선순위 등을 바꿔요. |
+| **Archive or Delete Task**(태스크 보관 또는 삭제) | 항목을 보관하거나 완전히 삭제해요. |
+| **Create Space**(스페이스 만들기) | 워크스페이스/팀 스페이스를 만들어요. |
+| **Create Folder**(폴더 만들기) | 리스트를 정리할 폴더를 추가해요. |
+| **Create List**(리스트 만들기) | 태스크를 담을 새 리스트를 만들어요. |
+| **Post Task Comment**(태스크 댓글 등록) | 태스크에 댓글을 달아요. |
+| **Post Attachment**(첨부파일 등록) | 태스크에 파일을 업로드해요. |
+| **Create New Document**(새 문서 만들기) | ClickUp에 문서를 만들어요. |
+| **Edit Document Page**(문서 페이지 편집) | 기존 문서의 페이지를 수정해요. |
+| **Create New Document Page**(새 문서 페이지 만들기) | 기존 문서에 새 페이지를 추가해요. |
+| **Create Custom Field**(커스텀 필드 만들기) [출시 예정] | 스페이스/폴더/태스크에 커스텀 필드를 추가해요. |
+| **Update Custom Field Value**(커스텀 필드 값 수정) [출시 예정] | 기존 커스텀 필드의 값을 설정해요. |
+| **Find Task by ID**(ID로 태스크 찾기) | ID로 태스크를 찾아요. |
+| **Find Documents**(문서 찾기) | 문서를 검색해요. |
+| **Find Custom Fields**(커스텀 필드 찾기) | 커스텀 필드를 찾아요. |
+| **Find a List of All Tasks**(전체 태스크 목록 찾기) | 워크스페이스/리스트의 모든 태스크를 가져와요. |
+| **Find User by Name or Email**(이름 또는 이메일로 사용자 찾기) | 사용자를 찾아요. |
 
-![폼 제출 워크플로우](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155052402986/original/E4p7Hl7VD6cOsKB7GsViphdXRj0ObqsxgA.png?1756216324)
+---
 
-### **활용 사례 2: AI 기반 제안서 문서 자동 생성**
+## ClickUp 트리거·액션 설정하기
 
-**목표:** 기회 단계가 변경될 때 AI를 사용하여 콘텐츠를 작성하고 ClickUp에 문서를 저장하여 개인화된 제안서, 브리프 또는 요약을 자동으로 생성합니다.
+아래 순서는 계정 연결부터 방향 선택, 필드 매핑, 테스트, 게시까지 이어지는 기본 절차예요. 어떤 파이프라인 단계나 프로젝트 템플릿에도 맞춰 쓸 수 있어요.
 
-**워크플로우 설정:**
+1. 워크플로우를 열어요.
 
-- 트리거: 기회 상태 변경됨(Opportunity Status Changed)
+   **자동화 > 워크플로우**로 이동해 **+ New Workflow**(새 워크플로우)를 클릭하거나 기존 워크플로우를 열어요.
 
-- 필터: 단계 = "제안서 요청" (또는 관련 파이프라인 단계)
+   ![워크플로우 목록에서 새 워크플로우를 만드는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056563322/original/oBVlC-MdURl-P7G_AeqopEAluiVDfg5qkQ.png?1761129355)
+2. ClickUp을 연결해요.
 
+   워크플로우에 **ClickUp** 스텝을 추가하고 **Connect Now**를 클릭하거나, **설정 > 연동 > ClickUp > 연결**로 이동해 OAuth로 승인하세요.
+
+   ![ClickUp 연결을 승인하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056563354/original/6Y2pFx9ZsNJ_09OJdf-zGUM1YNSl6j9bGg.png?1761129378)
+3. 데이터가 흐를 방향을 선택해요.
+
+   ClickUp → 하이퍼클래스(트리거): ClickUp에서 일이 생길 때 하이퍼클래스 워크플로우를 시작하려면 **ClickUp** 트리거를 추가하세요(예: **New Task**, **Task Changes**).
+
+   ![ClickUp 트리거를 추가하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056563404/original/9AQMRWvJwFGSWV8i1JKIC62ohsgfdbYYoA.png?1761129398)
+4. 하이퍼클래스 → ClickUp(액션): 하이퍼클래스 워크플로우에서 ClickUp의 작업을 실행해요.
+
+   **ClickUp** 액션을 추가하세요(예: **Create Task**, **Create List**, **Create New Document**). 해당하는 경우 대상 **Workspace**(워크스페이스)와 **List**(리스트)를 고르고, 하이퍼클래스의 연락처·기회·폼 값을 필드에 연결(매핑)하세요.
+
+   ![ClickUp 액션에서 필드를 매핑하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155056563502/original/9vHaGkI0_Mk8JdAy766UxzHSU9Qk4V2lIw.png?1761129440)
+5. 순서, 조건, 안전장치를 설정해요.
+
+   - **If/Else**(조건 분기) 필터로 파이프라인 단계, 서비스 유형, 태그에 따라 흐름을 나눠요.
+   - 다음 액션 전에 ClickUp 항목이 먼저 만들어져 있어야 하면 **Wait**(대기) 스텝을 넣어요. 예를 들어 **Create List** 뒤에 대기를 넣고 나서 태스크를 만들어요.
+   - 한꺼번에 많이 만들 때는 액션 사이에 간격을 두어 요청이 몰려 한도(rate limit)에 걸리지 않게 하세요.
+6. 테스트하고 확인해요.
+
+   - 트리거: 지정한 ClickUp 영역에서 작은 테스트 이벤트를 만들어 보세요.
+   - 액션: 테스트용 데이터로 워크플로우를 실행해 보세요.
+   - **Run Logs**(실행 로그) / **Enrollment History**(등록 기록)에서 입력값, 출력값, 반환된 ID를 확인하고 매핑이나 권한 문제를 고치세요. 자세한 내용은 [워크플로우 실행 로그·등록 기록 개선](workflows-improved-execution-logs-enrollment-history.md)을 참고하세요.
+7. 게시해요.
+
+   - 워크플로우에서 **Publish**(게시)를 클릭하세요.
+
+---
+
+## 활용 사례
+
+### 사례 1: 하이퍼클래스 폼 제출로 ClickUp 태스크 만들기
+
+목표: 하이퍼클래스 폼 제출 내용을 바로 처리할 수 있는 ClickUp 태스크로 바꿔요.
+
+워크플로우 구성:
+
+- 트리거: **Form Submitted**(폼 제출)
+- 필터: **Form Name** = “고객 온보딩 폼”
+- 액션: **Create Task**(ClickUp), **Add Task Comment**(ClickUp)
+예시:
+고객이 요구 사항을 적어 온보딩 폼을 제출해요. → ClickUp의 “고객 셋업” 리스트에 태스크가 만들어져요. → 고객이 기대하는 내용이 댓글로 추가돼요.
+
+![폼 제출로 ClickUp 태스크를 만드는 워크플로우](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155052402986/original/E4p7Hl7VD6cOsKB7GsViphdXRj0ObqsxgA.png?1756216324)
+
+### 사례 2: AI로 제안서 문서 자동 생성하기
+
+목표: 기회의 단계가 바뀌면 AI로 맞춤 제안서, 브리프, 요약본 초안을 쓰고 ClickUp에 문서로 저장해요.
+
+워크플로우 구성:
+
+- 트리거: **Opportunity Status Changed**(기회 상태 변경)
+- 필터: **Stage** = “제안 요청”(또는 해당하는 다른 파이프라인 단계)
 - 액션:
 
-GPT powered by OpenAI → 제안서 콘텐츠 생성(예: 고객별 요약, 성과물, 가격 개요).
+  1. **GPT powered by OpenAI**(OpenAI 기반 GPT) → 제안서 내용을 생성해요(예: 고객별 요약, 산출물, 가격 개요).
+  2. **Create New Document**(새 문서 만들기, ClickUp) → AI가 만든 제안서를 ClickUp의 “영업 문서” 폴더에 저장해요.
 
-- 새 문서 생성(Create New Document) (ClickUp) → AI 생성 제안서를 ClickUp의 "영업 문서" 폴더에 저장.
+예시:
+딜이 “제안서 발송” 단계로 넘어가요.→ GPT가 범위, 산출물, 가격을 담은 “{{contact.name}} 제안서”를 만들어요. → ClickUp에 새 문서가 자동으로 만들어지고 영업팀과 공유되어 검토를 받아요.
 
-**예시:** 거래가 "제안서 발송" 단계로 진행됨 → GPT가 범위, 성과물, 가격이 포함된 "{{contact.name}}를 위한 제안서"라는 맞춤형 제안서를 생성 → 새 ClickUp 문서가 자동으로 생성되고 검토를 위해 영업팀과 공유됨.
+![AI로 제안서 문서를 만드는 워크플로우](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155052403321/original/COVIdrRjx24oDSB-8bSkbeJ1V0M23NxuDg.png?1756216503)
 
-![AI 제안서 워크플로우](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155052403321/original/COVIdrRjx24oDSB-8bSkbeJ1V0M23NxuDg.png?1756216503)
+### 사례 3: 기회 유형에 따라 프로젝트 스페이스 자동 구성하기
 
-### **활용 사례 3: 기회 유형에 따른 프로젝트 공간 자동 구축**
+목표: 딜이 새 단계로 넘어갈 때마다 ClickUp에 프로젝트 공간을 자동으로 만들고, 서비스 유형(랜딩 페이지, SEO, Google Ads)에 맞는 태스크와 알림을 설정해요.
 
-**목표:** 거래가 새 단계로 이동할 때마다 ClickUp에서 구조화된 프로젝트 워크스페이스를 자동으로 설정하고, 서비스 유형(랜딩 페이지, SEO, Google 광고)에 맞춘 작업과 알림을 제공합니다.
+워크플로우 구성:
 
-**워크플로우 설정:**
-
-- 트리거: 파이프라인 단계 변경됨(Pipeline Stage Changed)
-
-- 액션: ClickUp에서 공간 생성(고객/기회 이름으로)
-
+- 트리거: **Pipeline Stage Changed**(파이프라인 단계 변경)
+- 액션: ClickUp에 **Create Space**(스페이스 만들기)를 실행해요. 이름은 고객/기회 이름으로 지정해요.
 - 조건 분기:
 
-랜딩 페이지 분기 → 기회 이름 = "랜딩 페이지"인 경우
+  - 랜딩 페이지 분기 → **Opportunity Name** = “Landing Page”인 경우
 
-목록 생성: 랜딩 페이지 프로젝트
+    - **Create List**: “랜딩 페이지 프로젝트”
+    - **Create Task**: “랜딩 페이지 디자인”
+    - 담당 팀에 **Internal Notification**(내부 알림)
+  - SEO 분기 → **Opportunity Name** = “SEO”인 경우
 
-- 작업 생성: "랜딩 페이지 디자인"
+    - **Create List**: “SEO 셋업”
+    - **Create Task**: “키워드 조사 및 사이트 점검”
+    - SEO 팀에 **Internal Notification**
+  - Google Ads 분기 → **Opportunity Name** = “Google\_Ads”인 경우
 
-- 배정된 팀에게 내부 알림
+    - **Create List**: “Google Ads 캠페인”
+    - **Create Task**: “캠페인 셋업 및 트래킹”
+    - Ads 팀에 **Internal Notification**
+  - **None** 분기 → 조건에 맞지 않으면 워크플로우를 끝내요.
 
-- SEO 분기 → 기회 이름 = "SEO"인 경우
-
-목록 생성: SEO 설정
-
-- 작업 생성: "키워드 연구 및 사이트 감사"
-
-- SEO 팀에게 내부 알림
-
-- Google 광고 분기 → 기회 이름 = "Google_Ads"인 경우
-
-목록 생성: Google 광고 캠페인
-
-- 작업 생성: "캠페인 설정 및 추적"
-
-- 광고팀에게 내부 알림
-
-- None 분기 → 조건이 충족되지 않으면 워크플로우 종료
-
-**예시:** 거래가 "계약 체결" 단계로 이동합니다. 기회가 SEO인 경우, "[고객명] - SEO 프로젝트"라는 새 ClickUp 공간이 생성됩니다. 그 안에서 첫 번째 작업인 키워드 연구 및 사이트 감사가 포함된 SEO 설정 목록이 생성됩니다. SEO 관리자에게 내부 알림이 전송되어 즉시 프로젝트가 시작됩니다.
-
-![프로젝트 공간 자동 구축](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155052404119/original/t81EClMvtzIA_B51zQXyXM0U5qjPXnjdqA.png?1756216912)
+예시:
+딜이 “계약 체결” 단계로 이동해요. 기회가 SEO 건이면 “[고객명] - SEO 프로젝트”라는 ClickUp 스페이스가 새로 만들어져요. 그 안에 “SEO 셋업” 리스트가 생기고, 첫 태스크로 “키워드 조사 및 사이트 점검”이 추가돼요. SEO 매니저에게 내부 알림이 가서 프로젝트를 바로 시작할 수 있어요.
 
 ---
 
-## **자주 묻는 질문**
+## 자주 묻는 질문
 
-**Q: 어떤 ClickUp 플랜이 필요한가요?**
-연동은 무료 및 유료 플랜에서 작동합니다. 특정 기능(시간 추적이나 일부 커스텀 필드 기능)은 유료 ClickUp 플랜이 필요할 수 있습니다.
+### 어떤 ClickUp 요금제가 필요한가요?
+무료 요금제와 유료 요금제 모두에서 연동할 수 있어요. 시간 추적이나 일부 커스텀 필드 기능처럼 유료 ClickUp 요금제가 필요한 기능도 있어요.
 
-**Q: 몇 개의 ClickUp 워크스페이스를 연결할 수 있나요?**
-하위 계정과 관련된 ClickUp 워크스페이스를 연결하세요. 액션/권한은 해당 워크스페이스의 인증을 따릅니다.
+### 연결할 수 있는 ClickUp 워크스페이스는 몇 개인가요?
+서브 계정에 맞는 ClickUp 워크스페이스를 연결하세요. 액션과 권한은 연결한 워크스페이스의 승인을 따라요.
 
-**Q: 동적 마감일을 사용할 수 있나요?**
-네. 마감일 입력에서 **+7 days**와 같은 상대적 계산을 사용할 수 있습니다.
+### 마감일을 동적으로 지정할 수 있나요?
+네. **Due Date**(마감일) 입력란에 **+7 days**처럼 상대 날짜 계산을 쓰면 돼요.
 
-**Q: 오류는 어디서 찾을 수 있나요?**
-각 실행의 입력/출력 및 오류 메시지에 대해 **실행 로그 및 등록 기록(Execution Logs & Enrollment History)**을 확인하세요.
+### 오류는 어디에서 확인하나요?
+**Execution Logs**(실행 로그)와 **Enrollment History**(등록 기록)에서 실행마다 입력값, 출력값, 오류 메시지를 확인할 수 있어요. 자세한 내용은 [워크플로우 실행 로그·등록 기록 개선](workflows-improved-execution-logs-enrollment-history.md)을 참고하세요.
 
-**Q: 이 연동은 모든 Hyperclass 사용자가 사용할 수 있나요?**
-네, 워크플로우 및 연동에 접근할 수 있는 모든 계정에서 사용할 수 있습니다.
+### 하이퍼클래스 사용자라면 누구나 이 연동을 쓸 수 있나요?
+네. 워크플로우와 연동을 쓸 수 있는 모든 계정에서 사용할 수 있어요.
 
-**Q: ClickUp으로 몇 개의 워크플로우를 구축할 수 있나요?**
-Hyperclass에서 워크플로우 제한은 없으며 ClickUp 연동 자체도 ClickUp의 API 속도 제한 외에는 제한을 두지 않습니다.
+### ClickUp으로 만들 수 있는 워크플로우 수에 제한이 있나요?
+하이퍼클래스에서는 워크플로우 수를 제한하지 않아요. ClickUp 연동 자체도 ClickUp의 API 요청 한도 외에는 제한을 두지 않아요.
 
-**Q: 이러한 액션과 트리거는 유료인가요?**
-네. 이는 프리미엄 액션이며 표준 요금으로 청구됩니다. Pro 플랜을 사용하는 경우 사용량은 플랜의 기본 요금으로 청구됩니다.
+### 이 액션과 트리거는 유료인가요?
+네. 프리미엄 액션이라서 표준 요금으로 청구돼요. Pro 요금제를 쓰고 있다면 해당 요금제의 기본 요금으로 청구돼요. 자세한 내용은 [워크플로우 프리미엄 기능 켜기와 재청구](how-to-enable-and-rebill-workflow-premium-features.md)를 참고하세요.
 
-**Q: 트리거를 사용할 때 워크플로우를 연락처와 어떻게 연결하나요?**
+### 트리거를 쓸 때 워크플로우를 연락처와 연결하려면 어떻게 하나요?
+트리거는 기본적으로 연락처가 없는(contactless) 상태라서 워크플로우가 특정 연락처와 자동으로 연결되지 않아요.
 
-트리거는 기본적으로 연락처가 없으므로 워크플로우를 특정 연락처와 자동으로 연결하지 않습니다.
-
-워크플로우를 연락처와 연결해야 하는 경우 워크플로우 내에서 연락처 찾기(Find Contact) 액션을 사용할 수 있습니다. 트리거 응답에서 이메일 주소(이메일이 있는 경우)를 연락처 찾기 액션에 전달하여 올바른 연락처를 찾고 연결합니다. 또는 새 연락처를 생성해야 하는 경우 연락처 생성을 사용합니다.
-
----
-*원문 최종 수정: Wed, 11 Mar, 2026 at 2:23 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+워크플로우를 연락처와 연결해야 한다면 **Find Contact**(연락처 찾기) 액션을 쓰세요. 트리거 응답에 이메일 주소가 있으면 그 주소를 **Find Contact** 액션에 넣어서 맞는 연락처를 찾아 연결해요. 새 연락처를 만들어야 한다면 **Create Contact**(연락처 만들기)를 쓰면 돼요.

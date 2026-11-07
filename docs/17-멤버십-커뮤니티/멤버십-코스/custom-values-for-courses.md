@@ -1,37 +1,36 @@
 ---
-번역일: 2026-04-08T00:00:00.000Z
-카테고리: 17-멤버십-커뮤니티 > 멤버십-코스
+원문: /support/solutions/articles/155000004383-custom-values-for-courses
+번역일: 2026-11-07
+카테고리: 17-멤버십-커뮤니티
 ---
 
-# 강의용 커스텀 값
+# 코스에서 커스텀 값 사용하기
 
-### **새로운 기능**
+코스 콘텐츠에 커스텀 값을 넣으면 수강생마다 다른 내용을 보여 줄 수 있어요. 이 문서에서는 코스에서 쓸 수 있는 커스텀 값의 종류와 사용할 수 있는 위치를 안내해요.
 
-이제 강의 콘텐츠를 그 어느 때보다 개인화할 수 있습니다! 커스텀 값(Custom Values)을 사용하면 각 수강생에게 맞춤형 경험을 제공할 수 있어요.
+## 새로 추가된 기능
 
-커스텀 값: [커스텀 값 사용 방법](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/23-%EB%A0%88%EA%B1%B0%EC%8B%9C-%EC%9E%90%EB%8F%99%ED%99%94/Logic-&-Fulfillment/how-to-use-custom-values.md)
+이제 코스 콘텐츠를 수강생에 맞게 바꿔 보여 줄 수 있어요. **커스텀 값**을 쓰면 수강생마다 다른 경험을 줄 수 있어요.
 
-### **커스텀 값의 유형:**
+커스텀 값에 대한 자세한 내용은 [커스텀 값 사용 방법](../../23-레거시-자동화/how-to-use-custom-values.md)을 참고하세요.
 
-* **연락처 기반:** 수강생의 이름으로 호명하거나 개인 정보를 활용할 수 있습니다.
-* **시간 기반:** 수강생의 시간대나 일정에 맞게 콘텐츠를 조정할 수 있습니다.
-* **강의 기반:** 카테고리 제목이나 게시물 제목과 같은 세부 정보를 포함하여 동적 콘텐츠를 만들 수 있습니다.
-* **위치 기반:** 수강생의 지역에 따라 콘텐츠를 공유할 수 있습니다.
+## 커스텀 값의 종류
 
-### **어디에 사용되나요?**
+- 연락처 관련: 수강생의 이름을 부르거나 개인 정보를 활용할 수 있어요.
+- 시간 관련: 수강생의 시간대나 일정에 맞게 콘텐츠를 바꿀 수 있어요.
+- 코스 관련: 카테고리 제목이나 게시글 제목 같은 정보를 넣어 콘텐츠가 상황에 따라 바뀌게 할 수 있어요.
+- 위치 관련: 수강생이 있는 지역에 맞춰 콘텐츠를 보여 줄 수 있어요.
 
-커스텀 값은 다음 위치에 적용할 수 있습니다:
+## 사용할 수 있는 위치
 
-* 게시물 설명
-* 오퍼(Offers) (설명 및 기타 영역)
-* 퀴즈 질문
+커스텀 값은 다음 위치에 넣을 수 있어요.
 
-![강의용 커스텀 값 적용 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037998876/original/zP02L0qtkXddZFid0NaKRhwfAXBFqG75nA.png?1733752748)
+- 게시글 설명
+- 오퍼(설명 등)
+- 퀴즈 문항
 
-![오퍼에서 커스텀 값 사용](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037998850/original/VwWMBtPE13Pg682Aoh5UnUKOrzqiavYyAQ.png?1733752729)
+![게시글 설명에 커스텀 값을 넣은 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037998876/original/zP02L0qtkXddZFid0NaKRhwfAXBFqG75nA.png?1733752748)
 
-![퀴즈에서 커스텀 값 활용](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037998926/original/2zDlOaklECIsbXk9pnb8NkzsmyupBpTERA.png?1733752773)
+![오퍼 설명에 커스텀 값을 넣은 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037998850/original/VwWMBtPE13Pg682Aoh5UnUKOrzqiavYyAQ.png?1733752729)
 
-***
-
-_원문 최종 수정: 2024년 12월 10일_ _Hyperclass 사용 가이드 — hyperclass.ai_
+![퀴즈 문항에 커스텀 값을 넣은 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037998926/original/2zDlOaklECIsbXk9pnb8NkzsmyupBpTERA.png?1733752773)

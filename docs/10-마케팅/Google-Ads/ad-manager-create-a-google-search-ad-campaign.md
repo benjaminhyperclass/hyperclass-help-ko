@@ -1,272 +1,259 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 10-마케팅 > Google Ads
+원문: /support/solutions/articles/155000004543-ad-manager-create-a-google-search-ad-campaign
+번역일: 2026-11-06
+카테고리: 10-마케팅
 ---
 
-# 광고 관리자 - Google 검색 광고 캠페인 만들기
+# 광고 관리자에서 Google 검색 광고 캠페인 만들기
 
-하이퍼클래스 광고 관리자(Ad Manager)를 사용하면 Google에서 광고 캠페인을 실행할 수 있습니다. Google 광고 캠페인은 완전히 당신의 통제하에 있습니다: 광고 콘텐츠를 디자인하고, 일일 예산을 선택하며, 지역과 언어로 구체적인 타겟 오디언스를 설정할 수 있습니다.
+**광고 관리자**(Ad Manager)에서 Google 검색 광고 캠페인을 만들고 관리할 수 있어요. 광고 문구를 쓰고, 일일 예산을 정하고, 지역과 언어로 타겟을 설정해요.
 
-## 목차
+---
 
-- [개요](#개요)
-- [광고 관리자 사전 요구사항](#광고-관리자-사전-요구사항)
-- [ 캠페인 생성](#1단계-)
-- [ 광고 캠페인 설정](#2단계-)
-  - [A. 캠페인 레벨 설정](#a-캠페인-레벨-설정)
-  - [B. 광고 그룹 레벨 설정](#b-광고-그룹-레벨-설정)
-  - [C. 광고 레벨 설정](#c-광고-레벨-설정)
-- [ 검토 및 발행](#3단계-)
-- [중요 사항](#중요-사항)
+## Google 검색 광고 캠페인 만들기
 
-# 하이퍼클래스 광고 관리자에서 Google 검색 광고 캠페인 만들기란?
+이 문서는 하이퍼클래스에서 Google 검색 광고 캠페인을 설정하고 게시하는 과정을 안내해요. 순서는 다음과 같아요.
 
-이 가이드는 다중 광고 그룹(Multiple Ad Group) 기능을 활용하여 하이퍼클래스에서 Google 검색 광고 캠페인을 만드는 과정을 안내합니다. 다음과 같은 내용을 다룹니다:
+- Google 검색 캠페인을 만들고 설정을 구성해요.
+- 검색 키워드를 넣어 광고 그룹을 설정해요.
+- 광고에 제목, 설명, 랜딩 페이지 URL을 추가해요.
+- 캠페인을 검토하고 게시해요.
 
-- 최대 10개의 광고 그룹을 사용하여 캠페인 구조화
-- A/B 테스트를 위해 광고 그룹당 최대 3개의 광고 추가
-- 캠페인 레벨, 광고 그룹 레벨, 광고 레벨 설정을 독립적으로 구성
-- 모든 레벨에서 성과 모니터링
+캠페인을 만든 뒤 광고 그룹과 광고를 여러 개 관리하는 방법은 [Google Ads 캠페인에서 여러 광고 그룹과 광고 관리하기](multiple-ad-groups-in-google-ads-campaigns.md)를 참고하세요.
 
-이를 통해 캠페인 생성이 더욱 모듈화되고, 테스트 가능하며, 확장 가능해져 하이퍼클래스 내에서 네이티브 Google Ads 경험에 가까워집니다.
+---
 
-## 광고 관리자 사전 요구사항
+## 시작하기 전에 확인할 것
 
-**광고 관리자 사전 요구사항은 다음과 같습니다:**
+Google 검색 캠페인을 만들기 전에 아래 조건을 확인하세요.
 
-1. 에이전시 뷰(Agency view) > 리셀링(Reselling)에서 가격 모델 선택이 광고 관리자 여정의 첫 번째 단계입니다. 더 진행하기 전에 하위 계정에 대한 광고 관리자의 리셀링 오퍼를 설정하는 것이 가장 좋습니다.
-2. 하위 계정에 대한 광고 관리자 토글 ON/OFF는 하위 계정 > 마케팅(Marketing) 하위에 광고 관리자 탭의 가시성을 보장합니다.
-3. 광고 관리자는 에이전시가 하위 계정에 대해 활성화할 수 있으며, 모든 사용자에 대해서는 직원(Staff) > 광고 관리자 권한에서 활성화할 수 있습니다.
-4. 광고 관리자에서 첫 번째 단계는 LeadConnector 앱을 통해 Google 계정에 로그인하여 Google 계정과 관련 광고 계정을 연결하는 것입니다. 광고 관리자는 하나의 Google 광고 계정 연결을 허용합니다.
+1. 에이전시가 서브 계정에서 **광고 관리자**를 켜 두었고, 해당하는 경우 재판매 설정도 마쳤어야 해요.
+2. 서브 계정의 **마케팅 > 광고 관리자** 메뉴가 보여야 해요.
+3. 사용자에게 광고 관리자 권한이 있어야 해요. 권한은 **설정 > 스태프 관리/팀 > 권한**에서 관리해요.
+4. 하이퍼클래스의 승인 절차를 통해 Google 계정과 사용 가능한 Google Ads 계정이 연결되어 있어야 해요. 광고 관리자에는 Google Ads 계정을 하나만 선택해 쓸 수 있어요. 연결 방법은 [Google Ads를 광고 관리자에 연결하는 방법](connect-google-with-ad-manager.md)을 참고하세요.
 
-![광고 관리자 Google 계정 연결](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041348541/original/4RHAfDniOZcrCt-wxU4EO7F_Wx1S8fwUfA.png?1739251413)
+![Google 계정 연결 확인 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041348541/original/4RHfDniOZcrCt-wxU4EO7F_Wx1S8fwUfA.png?1739251413)
 
-## 1단계 | 캠페인 생성
+---
 
-광고 관리자 홈 화면에서 '캠페인 생성(Create Campaign)' 버튼을 클릭하고, 다음 화면에서 광고 캠페인을 발행할 플랫폼(예: Google)을 선택합니다.
+## 1단계 | 캠페인 만들기
 
-![캠페인 생성 플랫폼 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041421602/original/ijP66lW38kCV_9Q64YyU4KhKmVBYOVM-xQ.png?1739325616)
+**마케팅 > 광고 관리자**로 이동해서 **캠페인 만들기**를 클릭하고, 광고 플랫폼으로 **Google**을 선택하세요.
 
-'다음(Next)'을 클릭하면 처음부터 시작하거나 광고 관리자 템플릿을 사용하여 Google 광고 캠페인을 만들 수 있습니다.
+![광고 플랫폼으로 Google 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041421602/original/ijP66lW38kCV_9Q64YyU4KhKmVBYOVM-xQ.png?1739325616)
 
-![템플릿 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045732573/original/g7SMcZDTLLgQW0mMFqcnATHZnpxXwuGqQQ.png?1745816290)
+**다음**을 클릭하세요. 그런 다음 **처음부터 시작**을 선택하거나, 사용할 수 있는 광고 관리자 템플릿 중 하나를 골라 Google 검색 캠페인을 만드세요.
 
-'다음(Next)'을 클릭하여 광고 캠페인 정의를 시작합니다.
+![처음부터 시작 또는 템플릿 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045732573/original/g7SMcZDTLLgQW0mMFqcnATHZnpxXwuGqQQ.png?1745816290)
 
-## 2단계 | 광고 캠페인 설정
+**다음**을 클릭하면 캠페인 구성 화면으로 넘어가요.
 
-![광고 캠페인 설정 화면 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046884397/original/ktr8sBxl3PN5-yUIsDfsXDaJ7LKqRXnzwg.png?1747688028)
+## 2단계 | 캠페인 구성
 
-![광고 캠페인 설정 화면 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046884401/original/f0HNyTuvj3dH4G-JpzpInrNcGibzo9ZHdA.png?1747688043)
+![캠페인 구성 화면 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046884397/original/ktr8sBxl3PN5-yUIsDfsXDaJ7LKqRXnzwg.png?1747688028)
 
-광고 콘텐츠 생성은 이제 3단계 구조로 구성됩니다:
+![캠페인 구성 화면 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046884401/original/f0HNyTuvj3dH4G-JpzpInrNcGibzo9ZHdA.png?1747688043)
 
-- 캠페인 레벨
-- 광고 그룹 레벨
-- 광고 레벨
+광고 내용은 이제 세 가지 수준으로 나누어 만들어요.
 
-각 레벨은 고유한 설정 프로세스를 가집니다:
+- 캠페인 수준
+- 광고 그룹 수준
+- 광고 수준
 
-### A. 캠페인 레벨 설정
+수준마다 설정 방법이 달라요.
 
-- 캠페인 이름을 정의합니다.
+### A. 캠페인 수준 설정
 
-- 입찰 전략을 선택합니다(예: 클릭 수 최대화).
-**입찰 전략 - 클릭 수 최대화**
-최대 CPC 입찰 한도는 클릭 수 최대화 입찰 전략을 더 세밀하게 제어하고 싶은 사용자를 위한 고급 옵션입니다. 입찰 한도를 설정하면 각 클릭에 대해 지불할 최대 금액을 제어할 수 있습니다. 지출을 제어하기 위한 최대 클릭당 비용(CPC) 한도 설정의 선택적 토글입니다.
+1. 캠페인 이름을 정하세요.
+2. 입찰 전략을 고르세요(예: **Maximize Clicks**(클릭수 최대화)).
 
-![입찰 전략 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045734442/original/V7gvp2qxe3VYKvEuCfoWsaO94Hj4lcj4Kw.png?1745819708)
+   Maximize Clicks 입찰 전략에서는 최대 CPC(클릭당 비용) 입찰 한도를 선택적으로 정할 수 있어요. 클릭당 입찰 금액의 상한을 관리하는 데 도움이 돼요.
 
-참고: 이 입찰 전략은 웹사이트 트래픽 - 검색 캠페인에 기본적으로 추가되며, 리드 목표 캠페인이 도입되면 다른 입찰 전략도 함께 포함될 예정입니다.
+   지출을 관리하려면 **set a maximum cost-per-click (CPC)**(최대 클릭당 비용 한도 설정) 토글을 켜세요. 이 설정은 선택 사항이에요.
 
-- 일일 예산을 설정합니다:
-캠페인 관리자는 캠페인의 일일 예산을 설정할 수 있으며, 이는 구독으로 작동하고 연결된 Google 광고 계정과 연관된 카드에서 청구됩니다. 예산은 시작 및 종료 날짜와 함께 각 일별 지출 분할을 표시합니다. 예산 금액은 캠페인을 편집하여 증가하거나 감소시킬 수 있습니다.
+   ![최대 클릭당 비용 설정 토글](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045734442/original/V7gvp2qxe3VYKvEuCfoWsaO94Hj4lcj4Kw.png?1745819708)
 
-참고: 표시되는 통화는 연결된 광고 계정에 설정된 것이며, 시작-종료 날짜 시간대는 캠페인을 생성할 때의 시간대입니다.
+   {% hint style="info" %}
+   웹사이트 트래픽(Website Traffic) 검색 캠페인에는 Maximize Clicks가 기본 입찰 전략으로 표시돼요. 선택할 수 있는 입찰 전략은 광고 관리자가 지원하는 캠페인 옵션에 따라 달라요.
+   {% endhint %}
+3. 일일 예산을 정하세요.
 
-**오디언스 제어 구성:**
-오디언스 제어 섹션에는 두 부분이 있으며, 이는 필수 입력 필드로 광고 캠페인 발행에 필요합니다.
+   캠페인의 평균 일일 예산과 시작일·종료일을 정해요. 이 예산은 Google 광고 지출을 조절하는 값이에요. 광고 관리자 구독 요금과는 달라요. 광고비는 연결된 Google Ads 계정에 등록된 결제 수단으로 Google Ads가 청구해요. 실제 일일 지출은 달라질 수 있고, 예산은 나중에 수정할 수 있어요.
 
-**A: 지리적 위치** - 캠페인은 특정 위치에서 실행되도록 조정하거나 특정 국가/주의 특정 위치를 제외할 수 있습니다.
-지리적 위치는 라디오 버튼을 선택하고 원하는 국가, 도시, 장소 이름, 주소 또는 좌표를 검색-선택하여 위치 또는 반경 레벨에서 모두 정의할 수 있습니다.
+   {% hint style="info" %}
+   통화는 연결된 Google Ads 계정을 기준으로 정해져요. 캠페인 일정을 정할 때 화면에 표시되는 시간대를 확인하세요.
+   {% endhint %}
 
-![지리적 위치 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041498506/original/JK3ncmb19RnypHhGd13QouM_W3lgOV4BgA.png?1739395256)
+타겟(오디언스) 설정도 구성하세요.
 
-참고: 반경별로 선택된 지리적 위치를 포함/제외하는 옵션은 Google에서 지원되지 않습니다. 반경으로 지리적 위치를 정의할 때, 지정된 주소 주변의 반경을 오디언스 도달 범위에 포함되도록 수정할 수 있습니다.
+**Geographic Location**(지역)과 **EU 정치 광고** 선언은 반드시 설정해야 해요. 캠페인에 따라 다른 타겟 설정이 더 나올 수 있어요.
 
-**B: EU 정치 광고**
+**가. Geographic Location** - 선택한 지역 타겟팅 방식에서 지원하면 특정 지역을 타겟으로 정하거나 제외할 수 있어요.
 
-Google 광고 캠페인을 생성할 때 해당 캠페인에 유럽연합(EU) 정치 광고가 포함되는지 확인해야 합니다.
+**Location**(위치) 또는 **Radius**(반경) 타겟팅을 고른 뒤, 원하는 국가, 도시, 장소, 주소, 좌표를 검색하세요.
 
-참고: 캠페인을 계속 진행하고 발행하려면 **반드시 선택해야 합니다**. Google의 정치 콘텐츠 정책을 검토하려면 이 [**문서**](https://support.google.com/adspolicy/answer/6014595?hl=en)를 사용하세요.
+![지역 타겟팅 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155041498506/original/JK3ncmb19RnypHhGd13QouM_W3lgOV4BgA.png?1739395256)
 
-다음 중 하나를 선택하세요:
+{% hint style="info" %}
+Google 검색 캠페인은 반경 모드에서 포함/제외를 따로 정하는 기능을 지원하지 않아요. 선택한 주소나 좌표를 중심으로 반경을 설정해서 포함할 지역 범위를 정하세요.
+{% endhint %}
 
-- 예: 캠페인에 EU 정치 광고가 포함됩니다.
-- 아니오: 캠페인에 EU 정치 광고가 포함되지 않습니다.
+**나. EU 정치 광고**
 
-![EU 정치 광고 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064111745/original/ZacTti9cpKyzje2tJ2GCCGYFtKr3Cg_vmw.jpeg?1770135226)
+Google Ads 캠페인을 만들 때는 캠페인에 유럽연합(EU) 정치 광고가 포함되어 있는지 반드시 답해야 해요.
 
-**C: 언어** - 타겟팅하려는 사용자가 사용하는 언어를 입력합니다. 캠페인에 대해 여러 언어를 검색하고 선택할 수 있습니다.
+{% hint style="info" %}
+계속 진행하고 캠페인을 게시하려면 둘 중 하나를 꼭 선택해야 해요. Google의 정치 콘텐츠 정책은 이 문서에서 확인할 수 있어요.
+{% endhint %}
 
-**곧 출시:** 기존 오디언스를 사용하거나 연락처 목록 또는 웹사이트 방문자를 소스로 하는 사용자 정의 오디언스를 생성하여 리타겟팅을 추가하는 선택적 설정이 곧 제공될 예정입니다.
+둘 중 하나를 선택하세요.
 
-**D: 성별 및 연령 타겟팅**
-사용자는 이제 정확한 오디언스 타겟팅을 위해 성별(남성, 여성, 알 수 없음)과 연령대(18-24세부터 65세+ 및 알 수 없음)를 선택할 수 있습니다. "알 수 없음" 선택에 대한 툴팁 지원: 지정되지 않은 연령/성별의 사용자에게 광고가 도달할 것임을 설명합니다.
+1. **예**: 캠페인에 EU 정치 광고가 포함되어 있어요.
+2. **아니오**: 캠페인에 EU 정치 광고가 포함되어 있지 않아요.
 
-![성별 및 연령 타겟팅](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045734634/original/XB9T9fHfxvcRHLuj6e4q3NtTt_iJydcjXA.png?1745819982)
+![EU 정치 광고 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064111745/original/ZacTti9cpKyzje2tJ2GCCGYFtKr3Cg_vmw.jpeg?1770135226)
 
-- 다음과 같은 **추가 애셋**을 추가합니다:
+**다. 언어** - 광고를 보여 주고 싶은 타겟이 사용하는 언어를 선택하세요. 여러 개를 선택할 수 있어요.
 
-비즈니스 로고
+**Audience Segments**(오디언스 세그먼트, 선택 사항): 캠페인 유형에 따라 Google 오디언스 옵션이 더 나올 수 있어요. 자세한 내용은 [Google Ads 오디언스 세그먼트](ads-manager-audience-segments-for-google-ads.md)를 참고하세요.
 
-- **이미지 애셋**
+**라. Gender and Age Targeting**(성별 및 연령 타겟팅) - 사용할 수 있을 때 성별(남성, 여성, 알 수 없음)과 연령대(18–24세부터 65세 이상, 알 수 없음)를 선택하세요. '알 수 없음'에는 연령이나 성별이 지정되지 않은 사용자가 포함돼요.
 
-- **전화 확장**
+![성별 및 연령 타겟팅 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045734634/original/XB9T9fHfxvcRHLuj6e4q3NtTt_iJydcjXA.png?1745819982)
 
-- 사이트링크
+필요하면 **Additional Assets**(추가 애셋)도 넣을 수 있어요.
 
-**참고:** [캠페인 레벨에서 Google 광고 추가 애셋 구성 방법](ad-manager-configure-google-ads-additional-assets-at-campaign-level.md)에 대한 자세한 문서를 확인하세요.
+- **Business Logos**(비즈니스 로고)
+- **Image Assets**(이미지 애셋)
+- **Call Extensions**(전화 확장)
+- **사이트링크**
 
-**캠페인 레벨에서 더보기 메뉴 옵션:**
+{% hint style="info" %}
+자세한 내용은 [캠페인 수준에서 Google Ads 추가 애셋 설정하기](ad-manager-configure-google-ads-additional-assets-at-campaign-level.md)를 참고하세요.
+{% endhint %}
 
-캠페인 목록 페이지에서 할 수 있는 변경사항:
+**캠페인 수준의 더보기(점 세 개) 메뉴**
 
-- 캠페인 삭제
-- 캠페인 복제
-- 캠페인 설정 편집
-- 템플릿 라이브러리에 업로드
+캠페인 목록 페이지에서 할 수 있는 작업은 다음과 같아요.
 
-캠페인 빌더 플로우의 캠페인 레벨에서 더보기 옵션:
+- **캠페인 삭제**
+- **Clone campaign**(캠페인 복제)
+- **Edit campaign settings**(캠페인 설정 편집)
+- **템플릿 라이브러리에 업로드**
 
-- 광고 그룹 생성
+캠페인 빌더 화면의 캠페인 수준 더보기 메뉴에서는 아래 작업을 할 수 있어요.
 
-![캠페인 레벨 더보기 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046884821/original/AraIP9Wmk21PH-sXi3-RSfOnTaDVMw420w.png?1747688990)
+- **Create Ad Group**(광고 그룹 만들기)
 
-![캠페인 레벨 메뉴 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046884849/original/oOS1Ypj8YlscH0x--PpB5tHkyPWv1EOb6w.png?1747689058)
+### B. 광고 그룹 수준 설정
 
-### B. 광고 그룹 레벨 설정
+- 광고 그룹을 만들고 이름을 정하세요. 캠페인 하나에 광고 그룹을 최대 10개까지 만들 수 있어요.
+- 광고 그룹마다 아래를 설정하세요.
 
-- 최대 10개의 광고 그룹을 생성하고 이름을 지정합니다.
+  - 기본 웹사이트 URL을 입력하세요. 이 URL은 다음과 같이 쓰여요.
 
-- 각 광고 그룹에 대해:
+    - 키워드 추천을 만들어 줘요.
+    - 그룹에 있는 모든 광고에 적용돼요.
+  - 키워드를 직접 추가하거나 자동 추천에서 선택하세요.
+  - 매치 유형(**넓게**, **문구**, **정확히**)을 정하세요.
+  - 포함 키워드와 제외 키워드는 하나씩 또는 한꺼번에 추가할 수 있어요. 이전에 있던 유형별 40개 제한은 없어졌어요.
 
-기본 웹사이트 URL을 입력합니다. 이 URL은 다음을 수행합니다:
+![광고 그룹 키워드 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083334167/original/aKVX5awVPvvyjub5KGp2132AMHPoFFKkEQ.png?1791991584)
 
-키워드 제안을 생성합니다.
+포함 키워드와 제외 키워드는 광고 그룹의 **키워드** 섹션에서 관리해요. 키워드를 하나씩 입력해도 되고, 여러 개를 한꺼번에 붙여 넣어도 돼요.
 
-- 그룹의 모든 광고에 적용됩니다.
+1. **Positive Keywords**(포함 키워드) 또는 **제외 키워드** 섹션으로 이동하세요.
+2. 키워드 입력란에 키워드를 입력하거나 붙여 넣으세요. 여러 개일 때는 쉼표나 줄바꿈으로 구분하세요.
+3. 알맞은 매치 유형(**넓게**, **문구**, **정확히**)을 선택하세요.
+4. **추가**를 클릭해 키워드를 한꺼번에 추가하세요.
+5. 키워드를 더 추가하거나 다른 매치 유형을 쓰려면 위 단계를 반복하세요.
 
-- 키워드를 수동으로 추가하거나 자동 제안에서 선택합니다.
+키워드를 한꺼번에 입력하면 중복된 키워드, 불필요한 공백, 빈 항목이 자동으로 제거돼요.
 
-- 매치 타입을 정의합니다: 광범위, 구문, 정확.
+포함 키워드는 관련 있는 검색에 광고가 노출되도록 돕고, 제외 키워드는 원하지 않는 검색에 광고가 노출되지 않도록 도와요.
 
-- 최대 40개의 긍정 키워드와 40개의 부정 키워드를 입력합니다.
+{% hint style="info" %}
+- 광고 그룹당 포함 키워드 40개, 제외 키워드 40개라는 이전 제한은 더 이상 적용되지 않아요.
+- 개별 키워드는 계속 Google Ads의 적합성 요건을 따라야 해요.
+- 키워드 하나는 최대 80자까지 입력할 수 있어요.- 광고 그룹에 입력한 웹사이트 URL은 키워드 추천을 만드는 데 쓰여요.
+{% endhint %}
 
-![광고 그룹 키워드 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046884476/original/aIdkVCYDz_1oYGlfUZTw4uixyZGWGUdVKw.png?1747688301)
+제외 키워드를 추가하려면 **Add Negative Keywords**(제외 키워드 추가) 버튼을 클릭하세요. 이 설정은 선택 사항이에요.
 
-광고 그룹 섹션에서 검색 광고 키워드를 관리하세요. 키워드 섹션에는 2개의 하위 섹션이 있습니다: 긍정 키워드와 '부정 키워드' 입력 섹션으로 변환되는 버튼:
+**제외 키워드**에는 광고와 매칭되지 않았으면 하는 단어나 문구를 넣을 수 있어요.
 
-- 키워드 아래에서 사용자가 Google에서 검색하여 비즈니스와 연결할 수 있는 관련 단어나 구문을 입력합니다:
+제외 키워드를 넣으면 Google의 제외 키워드 매칭 규칙에 따라, 그 단어와 일치하는 검색에는 광고가 노출되지 않아요.
 
-- 각 키워드에 대해 단어나 구문을 입력한 후, 키워드 섹션에서 구문이나 단어를 입력한 후 엔터를 누르거나 키워드 매치 타입 선택 후 '추가'를 눌러 해당 키워드를 저장합니다. 각 키워드에는 이제 매치 타입 드롭다운이 있습니다:
+제외 키워드마다 단어나 문구를 입력한 뒤 Enter를 누르거나 **추가** 버튼을 클릭하면 제외 키워드로 선택돼요.
 
-- 광범위 (keyword)
-- 구문 (기본값: "keyword")
-- 정확 ([keyword])
+키워드 입력란에 다른 단어나 문구를 입력해 제외 키워드를 더 만들 수 있어요. 선택한 키워드의 X 아이콘을 클릭하면 삭제돼요.
 
-- 긍정 및 부정 키워드에 적용됩니다(한도: 각각 40개, 키워드당 80자)
+**광고 그룹 수준의 더보기(점 세 개) 메뉴**
 
-- 키워드 상자에 다른 구문이나 단어를 추가하여 추가 키워드를 생성하거나, 선택된 키워드의 X 아이콘을 클릭하여 삭제합니다.
-
-**참고:**
-1. 각 단어나 구문 키워드는 최대 80자까지 가능합니다.
-2. 캠페인당 최대 40개의 긍정 키워드와 부정 키워드를 각각 추가할 수 있습니다.
-3. 제안 키워드는 광고에 입력된 웹사이트를 기반으로 표시됩니다.
-
-'부정 키워드 추가(Add Negative Keywords)' 버튼을 클릭하여 선택적으로 부정 키워드를 추가합니다.
-
-부정 키워드 아래에서는 광고와 매치되지 않기를 원하는 단어나 구문을 선택적으로 추가할 수 있습니다.
-
-이러한 부정 키워드 중 하나로 Google에서 검색하는 사람은 광고를 볼 수 없습니다.
-
-각 부정 키워드에 대해 단어나 구문을 입력한 다음, 엔터 또는 '추가' 버튼을 클릭하여 해당 키워드를 부정 키워드로 선택합니다.
-
-키워드 상자에 다른 구문이나 단어를 추가하여 추가 키워드를 생성하거나, 선택된 키워드의 X 아이콘을 클릭하여 삭제합니다.
-
-**광고 그룹 레벨에서 더보기 메뉴 옵션:**
-
-- 새 광고 생성
-- 광고 그룹 복제
-- 광고 그룹 삭제 (하나만 있을 때는 삭제할 수 없음)
+- **Create new ad**(새 광고 만들기)
+- **Duplicate ad group**(광고 그룹 복제)
+- **광고 그룹 삭제** (광고 그룹이 하나뿐이면 삭제할 수 없어요)
 
 ![광고 그룹 더보기 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046884883/original/WX5APl6Ggma9br_OvgSbbDFCVF0FQkUYdA.png?1747689159)
 
-### C. 광고 레벨 설정
+---
 
-![광고 레벨 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046885057/original/GswIhR95X0deRdengHMpznOTAqG275JoLg.png?1747689586)
+### C. 광고 수준 설정
 
-각 광고 그룹은 최대 3개의 광고를 가질 수 있으며, 각 광고에 대해:
+![광고 수준 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046885057/original/GswIhR95X0deRdengHMpznOTAqG275JoLg.png?1747689586)
 
-- 최대 15개의 헤드라인을 추가합니다(각각 30자 한도).
+광고 그룹마다 광고를 최대 3개까지 만들 수 있어요. 광고마다 아래를 설정하세요.
 
-광고 헤드라인은 3부분으로 나누어질 수 있으며, 각 부분은 "|" 문자로 구분됩니다. 헤드라인 1 아래에 헤드라인의 첫 번째 부분을 입력합니다.
+- 제목(헤드라인)을 최대 15개 추가하세요. 제목은 하나당 30자까지 입력할 수 있어요.
 
-- 전체 헤드라인이 30자를 초과하는 경우, 헤드라인 2와 헤드라인 3 옵션 아래에 각각 최대 30자를 더 추가할 수 있습니다.
+  - 입력란마다 서로 다른 제목을 입력하세요. Google은 제목을 최대 3개까지 여러 조합과 순서로 보여 줄 수 있어요.
+  - 제목은 각각 30자 이내여야 해요. 입력란을 더 추가해서 다양한 메시지나 변형을 넣으세요.
+  - **Add New Headline**(새 헤드라인 추가)을 클릭하면 제목을 최대 15개(각 30자)까지 추가할 수 있어요. 제목은 최소 3개가 필요해요.
+- 설명을 최대 4개 추가하세요. 설명은 하나당 90자까지 입력할 수 있어요.
 
-- "새 헤드라인 추가" 버튼을 사용하여 최대 15개의 헤드라인을 동적으로 추가합니다(30자 한도 각각). 기본값 및 필수: 3개의 헤드라인.
+  - **설명 1**에 광고 설명을 입력하세요. 설명은 각각 90자 이내여야 해요. 설명을 하나 더 넣으려면 **설명 2**를 사용하세요.
+  - **Add New Description**(새 설명 추가)을 클릭하면 설명을 최대 4개(각 90자)까지 추가할 수 있어요. 설명은 최소 2개가 필요해요.
+- **Final URL**(최종 URL)을 입력하고, 필요하면 표시 경로를 추가하세요(각 15자까지).
 
-- 최대 4개의 설명을 추가합니다(각각 90자 한도).
+  - 광고가 연결될 웹사이트 URL을 직접 입력하세요.
+  - 선택 입력인 **Display Path**(표시 경로) 필드를 쓰면 실제 랜딩 페이지 URL은 그대로 두고, 광고에는 보기 쉬운 경로를 보여 줄 수 있어요. 경로는 최대 2개 구간까지, 구간마다 15자까지 추가할 수 있어요.
 
-설명 1 아래에 광고에 대한 설명을 입력합니다. 설명이 90자를 초과하는 경우, 설명 2 아래에 추가로 90자를 입력할 수 있습니다.
+{% hint style="info" %}
+한 광고 그룹 안의 모든 광고는 같은 기본 URL을 써야 해요. 표시 경로는 광고마다 달라도 돼요.
+{% endhint %}
 
-- "새 설명 추가" 버튼을 사용하여 최대 4개의 설명을 동적으로 추가합니다(90자 한도 각각). 기본값 및 필수: 2개의 설명.
+광고 메시지를 테스트하려면 광고 2와 광고 3을 추가로 만들 수 있어요. 광고를 여러 개 관리하는 방법은 [여러 광고 그룹과 광고 안내](multiple-ad-groups-in-google-ads-campaigns.md)를 참고하세요.
 
-- 최종 URL과 선택적 표시 경로를 제공합니다(각각 최대 15자).
+**광고 작업**
 
-광고가 연결될 URL을 지정하고, 웹사이트 URL을 수동으로 입력합니다.
+더보기(점 세 개) 메뉴에서 다음 작업을 할 수 있어요.
 
-- 웹사이트 URL 섹션 아래의 표시 경로 필드는 최종 URL의 일부인 '경로' 필드를 참조합니다. 광고에서 깔끔하고 사용자 친화적인 URL 경로를 만드는 데 사용되는 선택적 필드입니다. 두 개의 세그먼트를 지원합니다(각각 최대 15자).
+- **Duplicate ad**(광고 복제)
+- **광고 삭제** (그룹에 광고가 하나 이상 남아 있어야 해요)
 
-**참고:** 단일 광고 그룹 내의 모든 광고는 동일한 기본 URL을 공유해야 하지만, 표시 경로는 다를 수 있습니다.
+---
 
-마찬가지로 선택사항이지만 Google이 캠페인을 더 잘 최적화할 수 있도록 도와주는 광고 2와 광고 3에도 동일하게 적용할 수 있습니다.
+## 3단계 | 검토 및 게시
 
-![광고 액션 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046885064/original/pbDxrbf_mxpXIvv1nC6jF7Vm87lPMKtF2g.png?1747689635)
+오른쪽 위의 **리뷰** 버튼을 클릭하면 캠페인 구성 내용을 볼 수 있어요. 검토 단계에서는 광고를 실제로 시작하기 전에 디자인, 내용, 예산 등 입력한 항목을 모두 확인할 수 있어요.
 
-**광고 액션:**
+**검토 화면**에서는 다음을 할 수 있어요.
 
-더보기 메뉴를 사용하여:
+- 광고 그룹을 오가며 각 그룹에 있는 광고를 볼 수 있어요.
+- 필요한 항목이 모두 갖춰졌는지 확인할 수 있어요.
 
-- 광고 복제
-- 광고 삭제 (그룹에 최소 하나의 광고는 남아있어야 함)
-
-## 3단계 | 검토 및 발행
-
-우측 상단의 "검토(Review)" 버튼을 클릭하여 캠페인 설정 세부사항을 확인합니다. 캠페인이 검토 단계에 있으면, 캠페인을 실제 운영하기 전에 모든 미학, 콘텐츠, 예산 및 기타 항목의 세부사항을 확인할 수 있습니다.
-
-새로운 검토 화면에서는 다음을 수행할 수 있습니다:
-
-- 광고 그룹 간 토글하고 각 그룹 내의 광고를 봅니다.
-- 모든 필요한 요소가 있는지 확인합니다:
-
-최소 1개의 광고 그룹.
-
-- 광고 그룹당 최소 1개의 광고.
-
-- 발행 전에 캠페인의 계층 구조를 쉽게 시각화합니다.
+  - 광고 그룹이 1개 이상 있어야 해요.
+  - 광고 그룹마다 광고가 1개 이상 있어야 해요.
+- 게시하기 전에 캠페인의 계층 구조를 한눈에 확인할 수 있어요.
 
 ![캠페인 검토 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046885159/original/Bx-pHDOJY54D7xXFEh7hLMJ4zRdiLm5VzA.png?1747689977)
 
-2단계와 3단계 완료 후, 발행 옵션을 클릭하면 연결된 광고 계정의 Google에 추가된 카드에서 광고 캠페인이 청구됩니다.
-
-## 중요 사항
-
-1. 광고 캠페인을 생성할 때, 광고 거부를 방지하기 위해 Google 광고 정책을 엄격히 준수하세요. 아래는 진실의 안내 소스 역할을 할 Google 광고 정책 링크입니다.
-
-[https://support.google.com/adspolicy/answer/6008942?visit_id=638814115746281060-874345944&rd=1](https://support.google.com/adspolicy/answer/6008942?visit_id=638814115746281060-874345944&rd=1)
+캠페인 내용을 확인한 뒤 **게시**를 클릭하면 캠페인이 Google에 제출돼요. Google은 광고를 검토한 뒤에야 광고를 노출할 수 있게 해요. 광고비는 캠페인이 노출되는 동안 연결된 Google Ads 계정으로 청구돼요. **게시**를 클릭한다고 해서 바로 카드에서 결제되지는 않아요.
 
 ---
-*원문 최종 수정: Tue, 3 Feb, 2026 at 10:20 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+
+## 중요 안내
+
+1. 캠페인을 만들 때는 Google Ads 정책을 지켜서 광고가 거부될 위험을 줄이세요. 아래의 Google Ads 정책 안내를 참고하세요.
+
+<https://support.google.com/adspolicy/answer/6008942>

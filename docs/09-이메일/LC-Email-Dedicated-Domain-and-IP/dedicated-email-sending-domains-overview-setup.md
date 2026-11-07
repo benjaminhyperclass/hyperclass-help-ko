@@ -1,228 +1,218 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 09-이메일 > LC Email 전용 도메인 및 IP
+원문: /support/solutions/articles/48001226115-dedicated-email-sending-domains-overview-setup
+번역일: 2026-11-06
+카테고리: 09-이메일
 ---
 
-# 전용 이메일 발송 도메인 개요 및 설정
+# 전용 발송 도메인 개요와 설정
 
-이메일 마케팅은 고객에게 다가가고 매출을 늘리는 훌륭한 방법입니다. 하지만 주의하지 않으면 문제가 생길 수 있어요. 전용 발송 도메인을 사용하면 비즈니스에서 보내는 것처럼 보이는 이메일을 제어할 수 있습니다. 즉, 스팸 필터와 원하지 않는 메일 서버에서 메시지가 차단되는 문제를 피할 수 있어요.
+전용 발송 도메인을 쓰면 내 브랜드 도메인으로 이메일을 보낼 수 있어요. 스팸 필터를 피하고, 브랜드 평판을 지키고, 전달률을 높이고 싶을 때 설정하세요.
 
-이메일 마케팅 노력이 묻히지 않도록 하세요! 전용 발송 도메인으로 바로 시작해보세요.
+{% hint style="warning" %}
+**하이퍼클래스 이메일 사용자 전용**
 
-**중요**: 전용 발송 도메인은 [LC Email 시스템](../how-to-migrate-my-agency-over-to-lc-email.md) 사용자에게만 적용됩니다.
+전용 발송 도메인은 하이퍼클래스 이메일 시스템을 쓰는 계정에만 적용돼요. 새로 만든 도메인으로 많은 연락처에 한꺼번에 보내기 전에는 먼저 워밍업을 해 주세요. 그래야 전달률이 떨어지지 않아요.
+{% endhint %}
 
-이메일 발송에 사용한 적 없는 새 도메인을 사용하는 경우, 대량 리스트로 이메일을 보내기 전에 반드시 도메인 워밍업을 진행하세요. 이를 하지 않으면 전달률이 떨어집니다.
+{% hint style="info" %}
+**외부 SMTP를 쓰고 싶다면**
 
-**중요**: 다른 SMTP 제공업체를 설정하려면 [SMTP 제공업체 설정](../setting-up-smtp-providers.md)을 참조하세요.
+외부 제공업체를 연결하려면 [SMTP 제공업체 설정하기](../setting-up-smtp-providers.md)를 참고하세요.
+{% endhint %}
 
-목차
+## 전용 발송 도메인이란?
 
-- [전용 발송 도메인이란?](#전용-발송-도메인이란)
-- [전용 발송 도메인 설정](#전용-발송-도메인-설정)
-- [공유 도메인 이메일 리팩토링](#공유-도메인-이메일-리팩토링)
-- [전용 발송 도메인 문제 해결](#전용-발송-도메인-문제-해결)
-- [자주 묻는 질문](#자주-묻는-질문)
+전용 발송 도메인을 쓰면 이메일이 하이퍼클래스의 공유 서버가 아니라 내 브랜드에서 직접 보낸 것처럼 표시돼요. 발신자 평판을 지킬 수 있고, 받는 사람도 일관되고 믿을 수 있는 메일로 느끼게 돼요. 서브 계정이든 에이전시든 빠르게 설정할 수 있어요.
 
-# 전용 발송 도메인이란?
+기본값에서는 플랫폼으로 보내는 모든 이메일의 "sent on behalf of" 또는 "sent via" 헤더에 하이퍼클래스의 발송 서버가 표시돼요. 아래 화면처럼 보여요.
 
-전용 발송 도메인을 사용하면 브랜드에서 보내는 것처럼 보이는 이메일을 발송할 수 있어, 이메일 서비스에서 더 나은 평판을 유지하는 데 도움이 됩니다. 모든 하위 계정(Sub-account)이나 에이전시에서 전용 발송 도메인을 만들 수 있으며, 빠르고 쉽게 설정할 수 있어요.
+![기본 대리 발송 헤더 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48265938968/original/spw7PyvCIf6DlxRXiukwE1KRAbxsW5nK9w.png?1669638686)
 
-기본적으로 플랫폼에서 발송되는 모든 이메일은 이메일 헤더의 "대신 발송됨" 또는 "경유하여 발송됨"에 이메일 발송 서버 이름이 표시됩니다:
+## 전용 발송 도메인 설정하기
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48265938968/original/spw7PyvCIf6DlxRXiukwE1KRAbxsW5nK9w.png?1669638686)
+발송 도메인은 여러 개 만들 수 있어요. 1:1 이메일, 워크플로우 이메일, 마케팅 캠페인, 결제·인보이스 이메일마다 다른 도메인을 지정할 수도 있어요.
 
-## 전용 발송 도메인 설정
+### 이메일 서비스 열기
 
-계정에서 여러 발송 도메인을 만들 수 있으며, 1:1 이메일, 워크플로우에서 발송되는 이메일, 마케팅 캠페인 이메일, 결제 및 인보이스 이메일 등 다양한 이메일 발송 작업에 서로 다른 도메인을 사용할 수 있어요.
+1. **설정 > 이메일 서비스**로 이동해요.
+2. **Dedicated Domain and IP**(전용 도메인 및 IP) 탭을 클릭해요.
 
-### 1단계: 이메일 서비스로 이동
+![설정 > 이메일 서비스 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155039358860/original/SDAmMz_uAVt2ybizJ-_9H4TdvCGO9uG8bw.png?1736193889)
+![Dedicated Domain and IP 탭 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155039359007/original/fPkMuNjtNulufDsHraKqi_RhiT7kVj6i7g.png?1736194222)
 
-- `Settings(설정) → Email Services(이메일 서비스)`로 이동
-- "Dedicated Domain and IP(전용 도메인 및 IP)" 버튼을 클릭하세요.
+---
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155039358860/original/SDAmMz_uAVt2ybizJ-_9H4TdvCGO9uG8bw.png?1736193889)
+### 도메인 정보 추가하기
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155039359007/original/fPkMuNjtNulufDsHraKqi_RhiT7kVj6i7g.png?1736194222)
+1. **도메인 추가**를 클릭해요.
+2. 발송에 사용할 서브도메인을 입력해요.
 
-### 2단계: 도메인 정보 추가
+![도메인 추가 과정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155039359484/original/eF1kHVNdn9F8E4LQc47YnPLKxFqETCQFag.gif?1736195532)
 
-- "Add Domain(도메인 추가)" 버튼을 클릭하여 발송 도메인 설정을 시작하세요.
-- 전용 발송 도메인에 사용할 서브도메인을 입력하세요.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155039359484/original/eF1kHVNdn9F8E4LQc47YnPLKxFqETCQFag.gif?1736195532)
-
+{% hint style="info" %}
 **서브도메인이란?**
-서브도메인은 루트 도메인의 변형입니다.
-예를 들어: "agency123.com"이라는 루트 도메인을 사용해 이메일을 보내고 싶다면, "emails.agency123.com"이나 "no-reply.agency123.com" 같은 서브도메인을 만들어 다양한 커뮤니케이션이나 마케팅 캠페인에 사용할 수 있어요.
-루트 도메인 앞에 고유한 단어를 추가하고 호스팅 제공업체 설정에서 DNS 레코드를 구성하면 원하는 만큼 서브도메인을 만들 수 있습니다.
 
-### 3단계: DNS 레코드 확인
+서브도메인은 루트 도메인에서 갈라져 나온 주소예요. 예를 들어 루트 도메인이 agency123.com이면 emails.agency123.com, no-reply.agency123.com 같은 서브도메인을 만들 수 있어요.
 
-서브도메인을 추가한 후 DNS 레코드를 확인해야 합니다. Hyperclass가 DNS 레코드를 자동으로 구성하도록 하거나 직접 수동으로 입력할 수 있어요.
+서브도메인은 개수 제한 없이 만들 수 있고, 캠페인이나 메일 종류에 따라 다르게 쓸 수 있어요.
+{% endhint %}
 
-Hyperclass가 DNS 레코드를 자동으로 구성할 수 없는 경우 수동으로 추가해야 합니다.
+---
 
-**기억하세요**: 전파 과정은 최대 24시간까지 걸릴 수 있습니다. 24시간이 넘었다면 위 과정을 따라 DNS 설정을 다시 확인해주세요.
+### DNS 레코드 확인
 
-**참고**: 하나의 도메인에 대해 여러 DKIM을 지원하지 않습니다.
+서브도메인을 추가한 뒤에는 **DNS 레코드 확인**을 진행해야 해요. 하이퍼클래스가 레코드를 자동으로 설정해 줄 수 있어요. 자동 설정을 쓸 수 없다면 직접 추가하세요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155039360349/original/P-zGHtE40RWBS1c78K9-QxTVmAZcGYspOA.gif?1736198292)
+{% hint style="info" %}
+DNS 반영에는 최대 24시간이 걸릴 수 있어요. 그보다 오래 걸리면 DNS 설정을 다시 확인해 보세요. 같은 도메인에 DKIM 레코드를 여러 개 두는 것은 지원하지 않아요.
+{% endhint %}
 
-### 4단계: 캘린더 이메일용 전용 발송 도메인 (하위 계정)
+![DNS 레코드 확인 과정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155039360349/original/P-zGHtE40RWBS1c78K9-QxTVmAZcGYspOA.gif?1736198292)
 
-예약 확인, 리마인더, 일정 변경 등 예약 관련 이메일에 캘린더 전용 발송 도메인을 사용하세요. 이렇게 하면 예약 트래픽을 다른 이메일 카테고리와 분리할 수 있어, 시간에 민감한 캘린더 커뮤니케이션의 전달률과 평판 관리에 도움이 됩니다.
+#### DNS 레코드 직접 추가하기
 
-#### DNS 레코드 수동 추가
+DNS 레코드를 직접 추가하려면 하이퍼클래스가 알려 주는 값(아래 화면 참고)으로 사용 중인 호스팅 업체의 관리 화면에서 레코드를 만들어요. 그런 다음 하이퍼클래스 설정 화면에서 확인하세요.
 
-DNS 레코드를 수동으로 추가하려면, 도메인을 관리하는 호스팅 제공업체의 대시보드에서 DNS 레코드를 만들어야 합니다. 아래 스크린샷과 같이 Hyperclass에서 제공하는 특정 정보를 사용하여 DNS 레코드를 생성하게 됩니다.
+![DNS 레코드 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155039360663/original/HzBGtABLJsce2UkbD9t9VMG5rxqjnhBPfg.png?1736199195)
 
-DNS 레코드 수동 추가에 대해 더 자세히 알아보려면 여기를 클릭하여 더 상세한 도움말을 읽어보세요.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155039360663/original/HzBGtABLJsce2UkbD9t9VMG5rxqjnhBPfg.png?1736199195)
-
-일반적인 DNS 제공업체 설정 안내는 아래 링크를 클릭하세요:
+주요 DNS 업체별 안내 문서예요.
 
 - [GoDaddy](https://www.godaddy.com/help/manage-dns-zone-files-680)
 - [Google Domains](https://support.google.com/a/answer/48090?hl=en)
 - [Hostgator](https://www.hostgator.com/help/article/manage-dns-records-with-hostgatorenom)
-- [Hover](https://help.hover.com/hc/en-us/articles/217282457-How-to-Edit-DNS-records-A-CNAME-MX-TXT-and-SRV-Updated-Aug-2015-)
+- [Hover](https://help.hover.com/hc/en-us/articles/217282457)
 - [Namecheap](https://www.namecheap.com/support/knowledgebase/article.aspx/9214/31/cpanel-email-deliverability-tool--spf-and-dkim-records/)
-- [Squarespace](https://support.squarespace.com/hc/en-us/articles/205812348-Opening-Advanced-DNS-settings)
-- [AWS](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-editing.html)
+
+- [AWS Route 53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-editing.html)
 - [Cloudflare](https://developers.cloudflare.com/dns/manage-dns-records/how-to/create-dns-records/)
 - [Bluehost](https://www.bluehost.com/help/article/dns-management-add-edit-or-delete-dns-entries)
 - [Hostinger](https://www.hostinger.com/tutorials/how-to-use-hostinger-dns-zone-editor)
 - [InMotion](https://www.inmotionhosting.com/support/domain-names/create-cname-record/)
-- [Hostwinds](https://www.hostwinds.com/guide/how-to-change-cname-record/)
 
-#### 캘린더 이메일용 전용 발송 도메인 (하위 계정)
+---
 
-예약 커뮤니케이션의 전달률을 보호하기 위해 캘린더 이메일 전용 발송 도메인을 지정할 수 있어요.
+### 캘린더 이메일용 전용 발송 도메인
 
-1. `Settings(설정) → Email Service(이메일 서비스) → SMTP Service(SMTP 서비스)`를 선택하고 2단계로 진행하세요.
+**캘린더** 이메일(예약 확정, 리마인더, 일정 변경)에만 쓸 전용 발송 도메인을 따로 지정할 수 있어요. 시간이 중요한 예약 안내 메일의 전달률을 지키는 데 도움이 돼요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064125555/original/Dy-QEZM3XvMs3u8XmtdQ29qdiEk6YH7vMw.png?1770150834)
+1. **설정 > 이메일 서비스 > SMTP 서비스**로 이동해요.
 
-2. `Dedicated Domain and IP(전용 도메인 및 IP)`를 선택하고 3단계로 진행하세요.
+   ![SMTP 서비스 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064125555/original/Dy-QEZM3XvMs3u8XmtdQ29qdiEk6YH7vMw.png?1770150834)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064125509/original/617xc1HLrTXNE-33RpoYWkoBCPkU6T-nZw.png?1770150765)
+2. **Dedicated Domain and IP**(전용 도메인 및 IP)를 선택해요.
 
-3. 도메인 구성을 선택하세요:
+   ![Dedicated Domain and IP 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064125509/original/617xc1HLrTXNE-33RpoYWkoBCPkU6T-nZw.png?1770150765)
 
-- Calendar(캘린더) 카테고리에서 드롭다운을 선택하고 최대 5개까지 도메인을 추가하세요.
+3. **Domain Configuration**(도메인 설정) > **캘린더**에서 도메인을 최대 5개까지 추가해요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064125759/original/T6e4IJkNkOpE5WWg4LVsxbIJt0zqHwPX-w.png?1770151371)
+   ![캘린더 도메인 드롭다운](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064125759/original/T6e4IJkNkOpE5WWg4LVsxbIJt0zqHwPX-w.png?1770151371)
 
-4. 캘린더 도메인을 선택하면, 캘린더 도메인 간 백분율 기반 분산을 설정하세요. (여러 도메인이 있는 경우 적용)
+4. 캘린더 도메인을 여러 개 추가했다면 도메인별 발송 비율(%)을 설정해요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064125862/original/PJo--R5OwIcyYgi5iiKypuhjotEyGck1PA.png?1770151576)
+   ![발송 비율 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064125862/original/PJo--R5OwIcyYgi5iiKypuhjotEyGck1PA.png?1770151576)
 
-하위 계정에서 생성한 도메인만 선택할 수 있습니다.
+선택할 수 있는 도메인은 서브 계정에서 만든 도메인뿐이에요. 이 기능은 하이퍼클래스 이메일 사용자만 쓸 수 있어요.
 
-이 기능은 LC Email 사용자에게 제공됩니다.
+## Google Postmaster Tools 설정하기
 
-## 전용 도메인용 Google Postmaster Tools 설정
+Google Postmaster Tools(GPT)를 쓰면 하이퍼클래스 전용 발송 도메인의 Gmail 전달률을 확인할 수 있어요. 도메인·IP 평판, 스팸 비율, 인증 정렬 상태, 전달 오류를 살펴보고 메일이 받은편지함에 들어가지 않는 원인을 찾아 개선하세요.
 
-Google Postmaster Tools(GPT)는 Hyperclass 전용 발송 도메인의 Gmail 전용 전달률을 모니터링하는 데 도움이 됩니다. GPT에서 도메인을 인증하면 도메인/IP 평판, 스팸율, 인증 정렬, 전송 오류를 추적할 수 있어, 인박스 도달 문제를 진단하고 시간이 지남에 따라 성능을 향상시킬 수 있어요.
+1. Google 계정으로 [gmail.com/postmaster](https://gmail.com/postmaster/)에 로그인해요.
+2. 도메인을 추가해요(예: `yourbrand.com` 또는 `mail.yourbrand.com`).
 
-단계별 안내:
+   ![GPT 도메인 추가 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064881962/original/qmIt0mt7eOEjspzPldDL1WuWoDHfmqav5Q.jpeg?1770994245)
 
-- [Google Postmaster Tools](https://gmail.com/postmaster/)에 Google 계정으로 로그인하세요.
+3. **Verify**를 선택하고 TXT 레코드를 복사해요.
 
-- 도메인을 포함하세요(예: yourbrand.com 또는 mail.yourbrand.com).
+   ![GPT TXT 레코드 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064882021/original/0t5JorwG7N5BNjfTtJP0EcRwEQaQvrCT8g.png?1770994314)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064881962/original/qmIt0mt7eOEjspzPldDL1WuWoDHfmqav5Q.jpeg?1770994245)
+4. 복사한 TXT 레코드를 화면에 나온 그대로 DNS 호스트에 추가하고 저장해요.
 
-- Verify(인증)를 선택하고 Google에서 제공한 TXT 레코드 값을 복사하세요.
+   ![DNS에 TXT 레코드 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064888368/original/zt-XcQXZF4ZbVfVswWouRQGDDnWwyqCQZQ.png?1770996887)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064882021/original/0t5JorwG7N5BNjfTtJP0EcRwEQaQvrCT8g.png?1770994314)
+5. GPT로 돌아가 인증을 마쳐요. Google이 레코드를 인식하는 데 시간이 걸릴 수 있어요.
+6. 하이퍼클래스에서 인증된 전용 도메인으로 이메일을 보내요.
+7. Google이 충분한 발송량을 수집하면 **Domain Reputation**, **IP Reputation**, **Spam Rate**, **Authentication**, **Delivery Errors** 대시보드를 확인해요.
 
-- DNS 호스트에서 표시된 대로 정확히 TXT 레코드를 추가한 후 저장/적용하세요.
+## 공유 도메인 이메일 발신 주소 변환
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064888368/original/zt-XcQXZF4ZbVfVswWouRQGDDnWwyqCQZQ.png?1770996887)
-
-- GPT로 돌아가서 인증을 완료하세요 (Google이 레코드를 감지하는 데 시간이 걸릴 수 있습니다).
-
-- 인증된 전용 도메인을 사용하여 Hyperclass에서 이메일을 발송하세요.
-
-- Google이 충분한 양을 받은 후 도메인 평판, IP 평판, 스팸율, 인증, 전송 오류 대시보드를 검토하세요.
-
-## 공유 도메인 이메일 리팩토링
-
-공유 발송 도메인(Hyperclass 소유 또는 에이전시 공유 도메인)을 사용하면, Hyperclass가 공유 도메인 인프라와 일치하도록 실제 발송 주소를 자동으로 리팩토링합니다.
+하이퍼클래스 소유 도메인이나 에이전시 공유 도메인 같은 공유 발송 도메인을 쓰면, 실제로 발송되는 주소가 공유 도메인 구조에 맞게 자동으로 바뀌어요.
 
 ### 작동 방식
 
-Hyperclass는 설정한 From 주소를 유지하지만, "플러스" 형식을 사용하여 백엔드에서 발송 주소를 재작성합니다:
+설정한 **발신자 주소**는 그대로 두고, 실제 발송 주소만 내부에서 "plus" 형식으로 바꿔요.
 
-**From 주소 (설정된 것):** `test@Hyperclass.com`
+```
+# 발신자 주소 (설정한 값)
+test@yourbrand.com
 
-**공유 도메인 (계정 레벨):** `mg.msgsndr.com`
+# 공유 도메인 (계정 단위)
+mg.msgsndr.com
 
-**실제 발송 주소:** `test+Hyperclass.com@mg.msgsndr.com`
+# 실제 발송 주소
+test+yourbrand.com@mg.msgsndr.com
+```
 
-### 기존 에이전시는 아직 영향을 받지 않습니다. 동일한 기능이 기존 에이전시의 테스트 및 점진적 롤아웃을 위해 **Labs**에서 제공될 예정입니다.
+적용 대상은 다음과 같아요.
 
-적용 대상:
+- 8월 26일 이후에 만든 모든 에이전시 서브 계정
+- 이 에이전시들 아래에서 공유 도메인을 쓰는 모든 위치
+- 기존 에이전시에는 앞으로 2주 안에 자동으로 적용될 예정이에요.
 
-- 8월 26일 이후 생성된 모든 에이전시 하위 계정
-- 공유 도메인을 사용하는 해당 에이전시 하위의 모든 로케이션
-- 리팩토링은 향후 2주 내에 모든 기존 에이전시에 자동 적용됩니다.
+기존 에이전시는 **아직 영향을 받지 않아요.** 기존 에이전시도 **실험실**에서 같은 기능을 테스트해 보고 점진적으로 적용할 수 있게 할 계획이에요.
 
-이메일 리팩토링을 피하고 브랜드 아이덴티티를 유지하려면,
-
-이 문서의 지침에 따라 전용 발송 도메인을 설정하세요. 전용 도메인을 사용하면 주소 수정 없이 설정한 그대로 이메일이 발송됩니다.
+{% hint style="info" %}
+주소 변환을 피하고 브랜드 이미지를 지키려면 이 문서의 절차대로 전용 발송 도메인을 설정하세요. 전용 도메인을 쓰면 이메일이 설정한 주소 그대로, 변경 없이 발송돼요.
+{% endhint %}
 
 ## 전용 발송 도메인 문제 해결
 
-전용 발송 도메인을 설정하는 동안 Hyperclass 지원 팀에 문의하지 않고도 해결할 수 있는 몇 가지 문제가 발생할 수 있어요. 전용 발송 도메인 설정 시 겪을 수 있는 일반적인 문제들을 아래에 소개합니다.
+전용 발송 도메인을 설정할 때 자주 생기는 문제와 고객지원 문의 없이 해결하는 방법이에요.
 
-- **'Domain already pointing to email server!' 오류 메시지**
-도메인이 이미 이메일 서버를 가리키고 있다는 오류 메시지가 나타날 수 있어요. 이는 이메일 도메인에 이미 다른 서비스에 연결된 DNS 레코드가 있다는 뜻이며, Hyperclass 계정에 연결하기 전에 도메인을 연결 해제해야 합니다.
-Hyperclass 레코드라도 MX나 SPF 레코드가 있으면 시스템에서 도메인을 거부하므로 제거해야 합니다.
-인터넷의 다양한 도구를 사용해 도메인 MX와 SPF 레코드를 조회할 수 있어요. 다음 링크는 MX와 SPF 조회에 도움이 되는 무료 도구입니다: [https://mxtoolbox.com/SuperTool.aspx](https://mxtoolbox.com/SuperTool.aspx)
+### "Domain already pointing to email server!" 오류가 나요
+
+이미 도메인에 다른 서비스와 연결된 DNS 레코드가 있다는 뜻이에요. 여기에 연결하기 전에 기존 **MX** 또는 **SPF 레코드**를 모두 삭제해야 해요. 하이퍼클래스 레코드여도 마찬가지예요.
+
+현재 레코드는 무료 조회 도구로 확인할 수 있어요: [mxtoolbox.com/SuperTool.aspx →](https://mxtoolbox.com/SuperTool.aspx)
 
 ## 자주 묻는 질문
 
-**Q: 계정의 발송 도메인 이름은 어떻게 선택하나요?**
+### 발송 도메인 이름은 어떻게 정하나요?
 
-다른 용도로 사용되지 않는 고유한 서브도메인을 사용하는 것이 좋아요. 서브도메인은 루트 도메인의 보조 부분입니다. 예를 들어, 전용 발송 도메인이 hello@mg.yourbrand.com이라면, 서브도메인은 해당 도메인의 "mg" 부분이 됩니다.
+다른 용도로 쓰지 않는 고유한 서브도메인을 사용하세요. 예를 들어 루트 도메인이 **yourbrand.com**이면 `mg.yourbrand.com`처럼 서브도메인을 만들어요. 여기서 **mg**가 서브도메인 부분이에요.
 
-**Q: 전용 IP 주소는 어떻게 설정하나요?**
+### 전용 IP 주소는 어떻게 설정하나요?
 
-전용 IP 주소 설정은 완전히 다른 과정입니다. [전용 IP 주소 설정에 대해 자세히 알아보려면 여기를 클릭하세요.](lc-email-complete-guide-to-dedicated-ip.md)
+전용 IP 주소 설정은 별도 절차예요. 자세한 내용은 하이퍼클래스 고객지원에 문의하세요.
 
-**Q: 도메인의 일부 DNS 레코드가 아직 인증되지 않았다면 어떻게 하나요?**
+### 일부 DNS 레코드가 아직 인증되지 않았어요. 어떻게 하나요?
 
-수동으로 인증 과정을 강제로 실행해야 합니다. 이렇게 해도 DNS 레코드가 여전히 인증되지 않으면 호스팅 제공업체에 문의하여 문제를 해결해야 할 수 있어요.
+인증 절차를 수동으로 강제 실행해 보세요. 그래도 인증되지 않으면 호스팅 업체에 문의하세요. 업체 쪽에서 해결할 수 있는 문제일 수 있어요.
 
-**Q: 전용 발송 도메인용 SSL 인증서는 어떻게 생성하나요?**
+### 전용 발송 도메인의 SSL 인증서는 어떻게 만드나요?
 
-도메인이 인증되면 SSL 인증서가 자동으로 생성됩니다.
+도메인이 인증되면 SSL 인증서가 자동으로 만들어져요. 인증됨으로 표시되는데 SSL 인증서가 없다면, 전체 인증 절차를 처음부터 다시 진행해 보세요. 그래도 해결되지 않으면 호스팅 업체에 문의하세요.
 
-도메인이 인증된 것으로 표시되지만 SSL 인증서가 없다면, 전체 인증 과정을 다시 거쳐 재인증해야 할 수 있어요. 그래도 작동하지 않으면 호스팅 제공업체에 문의하여 도메인에 문제가 있는지 확인하거나 SSL 인증서 생성을 도와달라고 요청하세요.
+### 도메인에 와일드카드 DNS 레코드가 있으면 어떻게 하나요?
 
-**Q: 도메인에 와일드카드 DNS 레코드가 있다면 어떻게 하나요?**
+와일드카드 레코드(예: `*.yourdomain.com`)는 모든 서브도메인을 한꺼번에 받는 레코드예요. 그래서 모든 서브도메인이 이미 있는 것으로 처리되어 "pre-existing record" 오류가 나요.
 
-도메인에 와일드카드 레코드(예: *.yourdomain.com)가 있으면, mail.yourdomain.com 같은 서브도메인을 설정하려 할 때 "기존 레코드" 오류가 나타날 거예요.
+해결 방법: 와일드카드 레코드를 잠시 삭제하고 전용 도메인을 인증한 뒤 와일드카드 레코드를 다시 추가하세요. 아니면 서브도메인마다 DNS 레코드를 직접 추가해서 와일드카드를 덮어쓸 수도 있어요.
 
-와일드카드 레코드는 catch-all 역할을 하므로 모든 서브도메인이 기본적으로 이미 "존재"하기 때문입니다.
+### 받는 사람에게도 변환된 발신 주소가 보이나요?
 
-이를 해결하려면 와일드카드 레코드를 일시적으로 제거하고 전용 도메인이 인증된 후 다시 추가할 수 있어요. 또는 각 서브도메인에 대해 DNS 레코드를 수동으로 추가하여 와일드카드를 재정의할 수도 있습니다.
+네. 받는 사람의 이메일 프로그램에 변환된 발송 주소(예: `support+yourbusiness.com@mg.msgsndr.com`)가 보여요.
 
-**Q: 수신자가 리팩토링된 이메일 주소를 보게 되나요?**
+### 이메일 주소가 변환되지 않게 하려면 어떻게 하나요?
 
-네, 수신자는 이메일 클라이언트에서 리팩토링된 발송 주소(예: support+yourbusiness.com@mg.msgsndr.com)를 보게 됩니다.
+전용 발송 도메인을 설정하세요. 전용 도메인을 쓰면 설정한 **발신자 주소** 그대로 발송되고, 변경은 적용되지 않아요.
 
-**Q: 이메일 주소가 리팩토링되는 것을 어떻게 방지할 수 있나요?**
+### 주소 변환이 회신 주소에도 영향을 주나요?
 
-전용 발송 도메인을 설정하세요. 전용 도메인을 사용하면 수정 없이 정확한 from 주소로 이메일이 발송됩니다.
+아니요. 변환은 발송 주소에만 적용돼요. 회신 주소는 설정한 그대로 유지돼요.
 
-**Q: 이것이 reply-to 주소에 영향을 주나요?**
+### 발송 이메일 주소와 회신 이메일 주소는 무엇이 다른가요? 서브도메인 대신 루트 도메인을 써도 되나요?
 
-리팩토링은 발송 주소에만 영향을 줍니다. reply-to 주소는 설정한 그대로 유지됩니다.
+발송 이메일 주소(**발신자 주소**)는 이메일을 보낼 때 쓰는 주소예요. 전용 발송 도메인으로 인증해야 하고, 보통 서브도메인으로 설정해요. 회신 이메일 주소는 받는 사람이 답장하면 도착하는 주소예요. 도메인 인증 없이 따로 설정할 수 있어요.
 
----
-*원문 최종 수정: Tue, 7 Apr, 2026 at 3:51 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+**발신자 주소**를 루트 도메인 이메일로 표시할 수도 있어요. 하지만 도메인 평판을 지키고 전달률을 높이려면 발송에는 서브도메인을 쓰는 것이 좋아요. 회신 주소를 루트 도메인 이메일로 설정하면 답장은 평소 쓰는 받은편지함으로 받을 수 있어요.

@@ -1,169 +1,259 @@
 ---
-
-번역일: 2026-04-08
-카테고리: SaaS 설정
+원문: /support/solutions/articles/48001207110-how-to-upgrade-saas-plan-for-a-location
+번역일: 2026-11-06
+카테고리: 16-SaaS-설정
 ---
 
-# 로케이션의 SaaS 요금제를 업그레이드하는 방법
+# 서브 계정의 SaaS 플랜 업그레이드·다운그레이드
 
-Pro 요금제를 사용하고 있고 SaaS 모드의 하위 계정을 보유하고 있다면, 3가지 SaaS 요금제 중 어느 것이든 활성화할 수 있습니다. 시스템에서 SaaS 요금제에 추가되면, 구독은 Stripe 레벨에서 관리됩니다. 고객이 직접 구독을 업그레이드(업그레이드만 가능)할 수 있도록 하는 설정을 활성화할 수 있습니다. 에이전시 측에서 계정을 업그레이드/다운그레이드해야 하는 경우, Stripe에서 직접 진행해야 합니다.
+SaaS 플랜을 업그레이드하거나 다운그레이드하면 고객의 구독 등급, 청구, 사용할 수 있는 기능이 바뀌어요. 판매 서브 계정을 통해 판매한 SaaS V1 구독 중 조건에 맞는 구독은, 지원되는 플랜 변경 후에도 Stripe 구독과 서브 계정 구독이 서로 맞춰져요. 이 덕분에 이후 업그레이드나 다운그레이드를 해도 상품, 가격, 인보이스, 세금 정보가 최신 상태로 유지돼요.
 
-## 로케이션의 SaaS 요금제 업그레이드/다운그레이드란 무엇인가요?
+이 문서에서는 다음 내용을 설명해요.
 
-SaaS 요금제를 업그레이드하거나 다운그레이드하면 에이전시나 클라이언트가 Hyperclass 로케이션(하위 계정)을 다른 구독 등급으로 이동할 수 있습니다. 이는 청구, 기능 접근, 그리고 사용량 제한에 영향을 줍니다. 누가 요금제를 변경할 수 있는지, 언제 요금이 부과되는지, 그리고 특정 요금제가 표시되는(또는 표시되지 않는) 이유를 이해하면 에이전시와 클라이언트 모두에게 예상치 못한 상황을 방지할 수 있습니다.
+- SaaS V1과 V2의 플랜 변경 방식
+- 고객이 직접 업그레이드·다운그레이드하도록 설정하는 방법
+- 플랜 변경 후 조건에 맞는 V1 구독이 동기화되는 방식
+- 청구, 인보이스, 세금, 과거 구독 불일치와 관련해 알아 둘 점
 
-## SaaS 요금제 업그레이드/다운그레이드의 주요 장점
+{% hint style="warning" %}
+SaaS V1과 SaaS V2는 청구 구조가 달라요. SaaS V1은 계속 Stripe를 기준 시스템으로 써요. 새로 생긴 V1 구독 브리지가 V1 구독을 V2 구독으로 바꾸지는 않아요. 지원되는 업그레이드나 다운그레이드가 일어나면 V1 판매 서브 계정에 있는 해당 구독을 맞춰 줄 뿐이에요.
+{% endhint %}
 
-- **매출 성장:** Company Billing(회사 청구) 내에서 셀프 서비스 업그레이드를 활성화하면 클라이언트가 필요한 순간 더 많은 기능에 접근할 수 있습니다.
+## 서브 계정의 SaaS 플랜 업그레이드·다운그레이드란?
 
-- **청구 정확성:** 비례 배분 규칙으로 요금제 간 이동 시 클라이언트에게 공정한 요금 부과 또는 크레딧을 제공합니다.
+SaaS 플랜을 업그레이드하거나 다운그레이드하면 고객 서브 계정이 설정된 SaaS 구독 등급 중 하나에서 다른 등급으로 옮겨 가요. 플랜을 바꾸면 청구, 상품·가격 정보, 사용할 수 있는 기능, 사용량 한도가 달라질 수 있어요. 해당하는 경우에는 고객의 청구 주기도 달라져요.
 
-- **기능 제어:** 요금제 기반 권한으로 변경이 적용되는 즉시 기능을 추가하거나 제거합니다.
+**SaaS 구성기** 설정이 알맞게 켜져 있으면 고객이 지원되는 범위에서 직접 플랜을 바꿀 수 있어요. 에이전시도 구독의 청구 구조에 맞춰 플랜 변경을 관리할 수 있어요.
 
-- **이탈 감소:** 다운그레이드 이유와 선택적 할인 제안으로 해지 위험이 있는 고객을 유지할 수 있습니다.
+판매 서브 계정을 통해 판매한 SaaS V1 구독 중 조건에 맞는 구독은, 지원되는 업그레이드·다운그레이드가 일어나면 Stripe 구독과 해당 판매 서브 계정에 저장된 구독이 함께 동기화돼요.
 
-- **운영 명확성:** 명확한 카테고리/레벨 설정과 Stripe 상품 정렬로 누락되거나 잘못된 요금제 옵션을 방지합니다.
+## SaaS 플랜 변경의 장점
 
-## 모든 클라이언트/로케이션이 직접 요금제를 변경할 수 있도록 허용하는 방법
+업그레이드·다운그레이드 흐름을 잘 설정하면 고객은 유연하게 플랜을 바꿀 수 있고, 에이전시는 플랜별 기능 접근과 청구 데이터를 일관되게 관리할 수 있어요. 새 V1 구독 브리지는 지원되는 플랜 변경 후 상품, 가격, 인보이스, 세금 정보가 예전 상태로 남을 가능성도 줄여 줘요.
 
-에이전시는 이제 SaaS 클라이언트가 회사 청구 페이지에서 직접 SaaS 구독을 업그레이드할 수 있도록 허용할 수 있습니다. 이 설정은 Agency SaaS Configurator(에이전시 SaaS 설정)에서 제어됩니다.
+- 매출 성장: 고객이 셀프서비스로 업그레이드해서 더 많은 기능이 필요할 때 상위 플랜으로 옮길 수 있어요.
+- 청구 정확도: 조건에 맞는 SaaS V1 플랜 변경이 일어나면 Stripe 구독과 해당 판매 서브 계정 구독이 서로 맞춰져요.
+- 인보이스 정확도: 지원되는 V1 업그레이드·다운그레이드 후 서브 계정 인보이스에 현재 상품과 가격이 반영될 수 있어요.
+- 세금 정확도: 조건에 맞는 플랜 변경 후에는 예전 구독 데이터 대신 현재 플랜 정보로 세금을 다시 계산할 수 있어요.
+- 기능 제어: 플랜별 설정에 따라 변경이 적용될 때 어떤 기능과 앱을 쓸 수 있는지 정해져요.
+- 이탈 방지: 다운그레이드 사유와 선택형 유도 혜택을 설정해 두면 낮은 플랜으로 옮기려는 고객을 붙잡는 데 도움이 돼요.
 
-참고: 이 설정은 앞으로 SaaS 설정을 사용해서 생성되는 **모든 SaaS 계정**에 적용됩니다.
+## SaaS V1과 SaaS V2의 플랜 변경 방식 비교
 
-- **에이전시** 계정에 로그인합니다.
+SaaS V1과 V2는 함께 쓸 수 있지만, 청구의 기준 시스템이 달라요. 청구 정보를 바꾸거나 플랜 변경 문제를 해결하기 전에, 해당 구독이 어느 구조에 속하는지 먼저 확인하세요.
 
-- **SaaS Configurator**를 클릭합니다.
+| 항목 | SaaS V1 | SaaS V2 |
+| --- | --- | --- |
+| 청구 기준 시스템 | Stripe | 선택한 에이전시 서브 계정을 통한 하이퍼클래스 |
+| 새 구독 브리지 | 지원되는 판매 서브 계정 방식으로 판매한 조건에 맞는 V1 구독에 적용돼요. | V2는 이미 에이전시 서브 계정 구조를 쓰기 때문에 이 V1 브리지의 대상이 아니에요. |
+| 청구 주기 변경 | Stripe/V1 구독 설정에 따라 관리돼요. | 지원되는 플랜 변경과 함께 월간·연간 주기를 바꿀 수 있어요. |
+| 일할 계산 | V1/Stripe 청구 흐름에서 처리될 수 있어요. | 등급 변경, 청구 주기 변경, 등급과 주기를 함께 바꾸는 경우 모두 일할 계산이 없어요. |
 
-- **Advanced Settings(고급 설정)** 탭을 클릭합니다.
+### SaaS V2 청구 주기 변경
 
-![에이전시 SaaS 설정 화면](https://jumpshare.com/share/xv1OPqX0ZwCnrfFityhe+/Screen+Shot+2025-12-09+at+7.29.16+PM.png)
+SaaS V2 고객은 다른 SaaS 플랜으로 바꾸면서 월간 결제와 연간 결제 사이를 옮길 수 있어요. 한 번의 플랜 변경 화면에서 등급과 청구 주기를 함께 고를 수 있어요.
 
-- **Allow sub-account admins to upgrade their subscription(하위 계정 관리자가 구독을 업그레이드할 수 있도록 허용)** 옵션을 활성화합니다.
+{% hint style="warning" %}
+SaaS V2는 플랜 등급 변경, 청구 주기 변경, 두 가지를 함께 바꾸는 변경 모두 일할 계산을 지원하지 않아요.
+{% endhint %}
 
-- 업그레이드 즉시 클라이언트에게 새로운 기능과 앱에 대한 접근 권한을 부여하려면, Add New Plans Features and Apps Upon Upgrading(업그레이드 시 새 요금제 기능과 앱 추가) 옵션을 활성화합니다.
+## 플랜 변경 후 SaaS V1 구독 동기화
 
-![업그레이드 옵션 설정](https://jumpshare.com/share/XM23h8d2Cq8inOMAS2Hr+/Screen+Shot+2025-12-09+at+8.00.58+PM.png)
+조건에 맞는 SaaS V1 구독은 Stripe와, SaaS 플랜을 판매한 서브 계정 두 곳에 모두 있을 수 있어요. 지원되는 SaaS 업그레이드나 다운그레이드가 일어나면 구독 브리지가 이 두 기록을 서로 맞춰서 시스템 간 청구 차이를 줄여 줘요.
 
-## 특정 클라이언트/로케이션이 직접 요금제를 변경할 수 있도록 허용하는 방법
+| 구독 브리지 도입 전 | 구독 브리지 사용 시 |
+| --- | --- |
+| SaaS 플랜을 바꾸면 Stripe 구독만 업데이트됐어요. | 지원되는 SaaS 플랜 변경이 일어나면 Stripe 구독과 해당 판매 서브 계정 구독이 모두 업데이트돼요. |
+| 판매 서브 계정 구독이 예전 상품이나 가격을 계속 참조할 수 있었어요. | 판매 서브 계정 구독에 현재 상품과 가격 정보가 반영돼요. |
+| 예전 서브 계정 구독 데이터로 만든 인보이스에 잘못된 플랜 정보가 들어갈 수 있었어요. | 판매 서브 계정에서 만든 인보이스에 플랜 변경 후의 현재 상품과 가격이 반영될 수 있어요. |
+| 예전 플랜 정보로 세금이 계산될 수 있었어요. | 지원되는 플랜 변경이 일어나면 현재 플랜 정보로 세금이 다시 계산돼요. |
 
-이 설정은 클라이언트별로 개별 설정할 수도 있습니다:
+### 어떤 SaaS V1 구독이 적용 대상인가요?
 
-- 에이전시 계정에 로그인합니다.
+이 브리지는 다음과 같은 SaaS V1 판매 방식을 위한 거예요. SaaS 상품을 Stripe에서 만들고, 에이전시 소유의 판매 서브 계정으로 가져온 뒤, 그 서브 계정에서 지원되는 결제 링크나 퍼널로 판매하는 방식이에요.
 
-- **Sub-accounts(하위 계정)**를 클릭합니다.
+지원되는 방식: SaaS 플랜 → Stripe 상품 → 판매 서브 계정으로 상품 가져오기 → 판매 서브 계정을 통해 구독 판매 → 지원되는 SaaS 업그레이드 또는 다운그레이드
 
-- 셀프 서비스 요금제 업그레이드를 활성화하려는 하위 계정에서 **점 3개** > **Manage Client(클라이언트 관리)**를 클릭합니다.
+### 과거 구독 불일치
 
-![하위 계정 관리 메뉴](https://jumpshare.com/share/rVRGLPVrZWBJ1eZiMlXw+/Screen+Shot+2025-12-09+at+8.12.08+PM.png)
+구독 브리지는 과거 데이터를 소급해서 채워 넣지 않아요. 이 기능이 생기기 전에 Stripe 구독과 판매 서브 계정 구독이 이미 어긋나 있었다면, 브리지가 생겼다고 해서 그 불일치가 자동으로 고쳐지지는 않아요.
 
-- **Allow sub-account admins to upgrade their subscription(하위 계정 관리자가 구독을 업그레이드할 수 있도록 허용)** 옵션을 활성화합니다.
+기존 불일치: 이후에 지원되는 업그레이드나 다운그레이드가 일어나면 새 흐름을 통해 두 기록이 모두 업데이트될 수 있어요. 조건에 맞는 플랜 변경이 일어나기 전까지는 예전 불일치가 남아 있을 수 있어요.
 
-- 업그레이드 즉시 클라이언트에게 새로운 기능과 앱에 대한 접근 권한을 부여하려면, Add New Plans Features and Apps Upon Upgrading(업그레이드 시 새 요금제 기능과 앱 추가) 옵션을 활성화합니다.
+### 새 동기화가 보장하지 않는 것
 
-![클라이언트별 업그레이드 설정](https://jumpshare.com/share/tFgldzrcAp6bsYEORmyr+/Screenshot+2025-12-09+at+8.08.11%E2%80%AFPM.png)
+구독 브리지는 지원되는 SaaS 업그레이드·다운그레이드 이벤트에만 연결돼 있어요. 같은 동기화를 명시적으로 지원하는 흐름이 아니라면, 관련 없는 구독 변경에까지 이 동작이 적용된다고 가정하지 마세요.
 
-## 클라이언트/로케이션이 구독을 업그레이드하는 방법
+- Stripe에서 직접 한 임의의 수동 수정이 같은 브리지를 작동시킨다고 가정하지 마세요.
+- 별도로 안내하지 않은 한, 구독 취소, 일시중지, 재개, 결제 실패 상태에는 이 업그레이드·다운그레이드 동기화가 적용된다고 가정하지 마세요.
+- V1 브리지는 SaaS V2 구조를 바꾸지 않아요.
+- SaaS V1의 청구 기준 시스템은 계속 Stripe예요.
 
-- 하위 계정에 로그인합니다.
+## 고객 플랜 변경 설정하기
 
-- Settings(설정) > Company Billing(회사 청구)로 이동합니다.
+플랜 변경 권한에 따라 고객이 에이전시에 문의하지 않고 직접 업그레이드나 다운그레이드를 할 수 있는지가 정해져요. 고객에게 **회사 청구**로 들어가라고 안내하기 전에, 의도한 플랜과 작업이 보이도록 이 설정을 먼저 해 두세요.
 
-![회사 청구 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155060236383/original/Y9q2Uq2hSKlLAnk2V2fnBESOlVoeW1IxWA.png?1765292095)
+### 앞으로 생길 모든 SaaS 고객에게 업그레이드 허용하기
 
-- **Upgrade(업그레이드)**를 클릭합니다.
+에이전시 단위 업그레이드 설정은 앞으로 **SaaS 구성기**로 만드는 SaaS 계정에 원하는 셀프서비스 방식을 적용해요.
 
-![업그레이드 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155060236426/original/kNndbG7aeuo39PgK2NDdrM2htx9BaHwRhg.png?1765292134)
+1. 에이전시 계정으로 로그인하세요.
+2. **SaaS 구성기**를 여세요.
+3. **고급 설정**을 여세요.
+4. **Allow sub-account admins to upgrade their subscription**(서브 계정 관리자의 구독 업그레이드 허용)을 켜세요.
+5. 고객이 업그레이드 직후 새 플랜의 기능과 앱을 바로 받게 하려면 **Add New Plans Features and Apps Upon Upgrading**(업그레이드 시 새 플랜 기능과 앱 추가)을 켜세요.
 
-- 원하는 요금제를 선택합니다.
+![SaaS 구성기 고급 설정에서 업그레이드 허용 옵션을 켜는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155080791576/original/kJoICfb8Cd9YhngyWP0xAimdoBt_-bKLmQ.png?1789247807)
+![업그레이드 시 새 플랜 기능과 앱 추가 옵션 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155080791578/original/1Nblpes9hZRTFImH5wleyKYlkuBpHh3uGA.png?1789247863)
 
-![요금제 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155060236668/original/PA1QyQasuchZqKo6CZqlMkTHULfeNbvy4A.png?1765292284)
+### 특정 고객에게만 업그레이드 허용하기
 
-- 원하는 요금제를 선택하면 확인 메시지가 표시되며, 생성한 요금제의 월간 및 연간 옵션 중 선택할 수 있습니다:
+고객별 설정을 쓰면 다른 고객에게 적용되는 에이전시 전체 기본값은 그대로 두고, 특정 서브 계정에만 셀프서비스 업그레이드를 켤 수 있어요.
 
-![요금제 확인 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48283852490/original/kFYGhwqxIrVkK_C_8uqXFaTt6SBcEmhZZQ.png?1677442334)
+1. 에이전시 계정으로 로그인하세요.
+2. **서브 계정**으로 이동하세요.
+3. 해당 고객의 서브 계정을 찾아 **⋯ > 고객 관리**를 선택하세요.
+4. **Allow sub-account admins to upgrade their subscription**을 켜세요.
+5. 업그레이드한 기능을 바로 쓸 수 있게 하려면 **Add New Plans Features and Apps Upon Upgrading**을 켜세요.
 
-- Confirm & Pay(확인 및 결제)를 클릭하면 요금이 청구되며, 그 후 해당 계정에서 요금제와 관련된 기능을 잠금 해제할 수 있습니다.
+![고객 관리 화면에서 업그레이드 설정을 켜는 모습](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155080791588/original/GrykPcD4gLGceumsyE25X0tFT6butC-B9A.png?1789247910)
+![고객별 SaaS 업그레이드 권한 설정](https://jumpshare.com/share/tFgldzrcAp6bsYEORmyr+/Screenshot+2025-12-09+at+8.08.11%E2%80%AFPM.png)
 
-![결제 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48283852530/original/RMElQ7DTY-E66queGSyUWLBgJ01MOLS23A.png?1677442426)
+### 고객이 직접 하는 다운그레이드 설정하기
 
-## 에이전시 측에서 SaaS 요금제를 변경하는 방법:
+다운그레이드는 업그레이드 권한과 별도의 설정을 써요. 고객이 직접 다운그레이드할 수 있는지, 다운그레이드 사유를 받을지, 낮은 등급 플랜이 예약되기 전에 유지 혜택을 보여 줄지 정할 수 있어요.
 
-이 예시에서는 Standard, Professional, Premium 3가지 SaaS 요금제가 있습니다. 상위 요금제일수록 더 많은 기능을 제공합니다.
+**SaaS 구성기 > Downgrade Settings**(다운그레이드 설정)에서 다운그레이드 동작을 설정하세요. 조건에 맞는 다운그레이드는 설정한 다운그레이드 흐름에 따라 적용되고, 보통 다음 청구 주기가 시작될 때 적용돼요. 자세한 내용은 [SaaS 고객 다운그레이드 설정 방법](../how-to-configure-downgrade-settings-for-saas-clients.md)을 참고하세요.
 
-![SaaS 요금제 구성](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48179188952/original/xg82nBBNc8zEEx0Q6jvtLt240q4mCO6EIg.png?1642180292)
+## 고객이 SaaS 플랜을 변경하는 방법
 
-기본 기능만 있는 Standard 요금제를 사용하는 로케이션이 있습니다.
+에이전시가 관련 셀프서비스 권한을 켜 두면, 고객은 자신의 청구 화면에서 가능한 플랜 변경을 할 수 있어요. 화면에 보이는 옵션은 고객의 현재 플랜, 플랜 카테고리와 레벨, 통화, 구조, 에이전시가 설정한 업그레이드·다운그레이드 규칙에 따라 달라져요.
 
-![Standard 요금제 로케이션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48179189995/original/MTfPSGTUV_DzOktBCvriVc4ymTDBR-Oc6Q.png?1642180555)
+### 고객 업그레이드 절차
 
-이 로케이션을 Professional 요금제로 업그레이드하려면, Stripe 계정으로 이동해서 해당 로케이션과 연관된 고객을 열어야 합니다.
+조건에 맞는 고객은 **회사 청구**에서 상위 플랜을 고르고 청구 변경을 마칠 수 있어요.
 
-### Stripe 고객 찾기
+#### 1단계: 회사 청구 열기
 
-클라이언트의 이메일을 사용해서 Stripe에서 고객을 검색할 수 있습니다. 하지만 권장하는 방법은 해당 로케이션의 인보이스 ID를 검색해서 고객 ID를 가져오는 것입니다.
+고객 서브 계정에 로그인한 뒤 **설정 > 회사 청구**로 이동하세요.
 
-1. Subaccount Settings(하위 계정 설정) > Company Billing(회사 청구)로 이동해서 Billing History(청구 내역)에 표시된 인보이스의 "View(보기)"를 클릭합니다.
+![고객 서브 계정의 회사 청구 페이지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155060236383/original/Y9q2Uq2hSKlLAnk2V2fnBESOlVoeW1IxWA.png?1765292095)
 
-![인보이스 보기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48179191623/original/YgHpXmm6kMJ-ZXFtH_ampYMSw6Qq10CdJQ.png?1642180932)
+#### 2단계: 업그레이드 선택
 
-2. 인보이스 번호를 복사합니다.
+**업그레이드**를 클릭하면 고객이 선택할 수 있는 플랜이 보여요.
 
-![인보이스 번호 복사](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48179191948/original/28_J0a_IQe8l30wGT2UWHt0iDyTkxAwCqQ.png?1642181036)
+![회사 청구의 업그레이드 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155060236426/original/kNndbG7aeuo39PgK2NDdrM2htx9BaHwRhg.png?1765292134)
 
-3. Stripe에서 인보이스 번호를 검색하고 인보이스를 클릭해서 세부 정보를 엽니다.
+#### 3단계: 새 플랜 선택
 
-![Stripe 인보이스 검색](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48179192675/original/IxhpfGaIOK5uxgGt3WgUba37jlPIW6ybQg.png?1642181198)
+옮겨 갈 SaaS 플랜을 선택하세요. 선택할 수 있는 플랜은 설정된 플랜 카테고리, 레벨, 가격, 통화, 고객의 자격 조건에 따라 달라져요.
 
-4. 인보이스의 'Billed to' 칸에 표시된 고객 이메일을 클릭하면 Stripe의 고객 프로필로 이동합니다.
+![업그레이드 과정에서 보이는 선택 가능한 SaaS 플랜](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155060236668/original/PA1QyQasuchZqKo6CZqlMkTHULfeNbvy4A.png?1765292284)
 
-![고객 이메일 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48179193172/original/jJl6AoSWYy6CzP-DRhLJOuy9aCe_S1tF0Q.png?1642181316)
+#### 4단계: 청구 옵션 확인
 
-### 구독 요금제 변경
+플랜 가격과 선택할 수 있는 청구 주기를 확인하세요. SaaS V2 구독은 지원되는 플랜 변경과 함께 월간·연간 결제를 바꿀 수 있어요.
 
-이제 Stripe의 고객 프로필에서 클라이언트의 구독 요금제를 업데이트합니다.
+![청구 주기 옵션이 보이는 플랜 변경 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48283852490/original/kFYGhwqxIrVkK_C_8uqXFaTt6SBcEmhZZQ.png?1677442334)
 
-1. 연필 아이콘을 클릭해서 구독 요금제를 업데이트합니다.
+#### 5단계: 플랜 변경 확정
 
-![구독 요금제 편집](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48179204701/original/tW6N-xWl8eQg9Slvwr0PISwUriI_BCJgzg.png?1642183950)
+최종 청구 정보를 확인하고 **확인 및 결제**를 선택하세요. 에이전시가 즉시 기능 사용을 켜 두었다면, 업그레이드가 끝났을 때 고객이 새 플랜에 설정된 기능과 앱을 바로 받을 수 있어요.
 
-2. 현재 가격을 제거하고 새 요금제의 가격을 추가합니다.
+![SaaS 플랜 업그레이드의 확인 및 결제 단계](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48283852530/original/RMElQ7DTY-E66queGSyUWLBgJ01MOLS23A.png?1677442426)
 
-![가격 변경](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48179205217/original/qgQsQVyZBOJFYg9daBCfeUTldUzQNuxs2A.png?1642184088)
+조건에 맞는 SaaS V1 구독: 지원되는 업그레이드가 끝나면 구독 브리지가 Stripe 구독과 판매 서브 계정의 해당 구독을 모두 업데이트해요.
 
-3. 변경 사항을 검토하고, 다음 인보이스에서 요금 차이를 조정하려면 비례 배분 변경을 선택한 후 업데이트 버튼을 클릭합니다.
+### 고객 다운그레이드 절차
 
-![변경 사항 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48179205549/original/YHLzV6ZB7SuwdPZgJPqUR47CJ458GKHFgQ.png?1642184206)
+셀프서비스 다운그레이드가 켜져 있으면 고객이 청구 설정에서 낮은 플랜으로 옮기겠다고 직접 요청할 수 있어요. 다운그레이드에는 필수 사유 입력과 선택형 유지 혜택이 포함될 수 있고, 조건에 맞는 변경은 에이전시가 설정한 다운그레이드 구성에 따라 예약돼요.
 
-4. 에이전시 계정에서 Accounts(계정) 탭 > 해당 로케이션의 View details(세부 정보 보기)로 이동합니다. 요금제는 이제 업그레이드되었지만, 새 요금제에 따른 접근 가능한 기능을 업데이트해야 합니다:
+일반적인 고객 경로: **계정 설정 > 청구/결제 > Modify Subscription**(구독 수정) **> 다운그레이드**
 
-![업그레이드된 요금제 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48179200049/original/j2uNrKdUuGRToQ7uQSxL_inhtBd_CYkXlw.png?1642183048)
+다운그레이드 적용 시점: 다운그레이드가 다음 청구 주기 시작일로 예약된 경우, V1 구독 동기화는 고객이 처음 요청한 때가 아니라 해당 다운그레이드가 실제로 적용되는 때 일어난다고 이해하세요.
 
-5. 이 로케이션의 업데이트된 기능 세트를 저장하면 완료됩니다!
+## 에이전시에서 SaaS V1 플랜 변경하기
 
-![기능 세트 저장](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48179200337/original/oun45XOJp3E2WWwfY5NH_zIyebPvLT-YOQ.png?1642183137)
+SaaS V1은 계속 Stripe를 청구 기준 시스템으로 쓰기 때문에, 예전 방식이나 수동 처리가 필요한 경우 에이전시가 고객의 Stripe 구독을 직접 다뤄야 할 수 있어요. Stripe에서 직접 수정하는 것은, 새 구독 브리지를 작동시키는 지원되는 SaaS 업그레이드·다운그레이드 이벤트와 별개로 생각하세요.
+
+{% hint style="warning" %}
+Stripe에서 임의로 수동 수정하면 판매 서브 계정의 해당 구독이 자동으로 업데이트된다고 가정하지 마세요. 새 브리지는 지원되는 SaaS 업그레이드·다운그레이드 이벤트에 대해서만 안내된 기능이에요. Stripe에서 직접 수정한 뒤에는 구독 상태와 고객의 기능 접근 권한을 확인하세요.
+{% endhint %}
+
+### Stripe에서 SaaS V1 고객 찾기
+
+V1 구독을 수동으로 바꾸기 전에 고객의 인보이스 정보로 올바른 Stripe 고객을 확인하세요. 엉뚱한 고객 기록을 수정하는 실수를 막을 수 있어요.
+
+1. 고객 서브 계정을 열고 **설정 > 회사 청구**로 이동하세요.
+2. **청구 내역**에서 인보이스 하나의 **보기**를 선택하세요.
+3. **인보이스 번호**를 복사하세요.
+4. Stripe에서 그 인보이스를 검색해서 여세요.
+5. 인보이스 청구 상세 정보에 표시된 고객을 선택해서 해당 Stripe 고객 프로필을 여세요.
+
+![회사 청구의 인보이스 내역](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48179191623/original/YgHpXmm6kMJ-ZXFtH_ampYMSw6Qq10CdJQ.png?1642180932)
+![Stripe 고객을 찾는 데 쓰는 인보이스 번호](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48179191948/original/28_J0a_IQe8l30wGT2UWHt0iDyTkxAwCqQ.png?1642181036)
+![SaaS 고객을 확인하는 Stripe 인보이스 상세 정보](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48179192675/original/IxhpfGaIOK5uxgGt3WgUba37jlPIW6ybQg.png?1642181198)
+
+### Stripe에서 SaaS V1 구독 변경하기
+
+V1 구독을 수동으로 바꿀 때는 고객의 기존 Stripe 구독을 신중하게 수정하세요. 저장하기 전에 의도한 가격과 청구 방식이 맞는지 확인하세요.
+
+1. Stripe에서 고객의 활성 구독을 여세요.
+2. 구독의 편집 버튼을 선택하세요.
+3. 현재 가격을 제거하고 옮겨 갈 SaaS 플랜의 올바른 가격을 추가하세요.
+4. V1 변경에 적용되는 Stripe 일할 계산이나 청구 조정을 확인하세요.
+5. 구독 업데이트를 저장하세요.
+
+![Stripe 구독 편집 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48179204701/original/tW6N-xWl8eQg9Slvwr0PISwUriI_BCJgzg.png?1642183950)
+![Stripe 구독 가격 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48179205217/original/qgQsQVyZBOJFYg9daBCfeUTldUzQNuxs2A.png?1642184088)
+![Stripe 구독 업데이트와 일할 계산 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48179205549/original/YHLzV6ZB7SuwdPZgJPqUR47CJ458GKHFgQ.png?1642184206)
+
+### 기능 접근과 구독 일치 여부 확인하기
+
+Stripe에서 직접 변경한 뒤에는 에이전시에서 고객의 플랜 접근 권한을 확인하고, 해당하는 판매 서브 계정 구독이 의도한 상태인지 확인하세요. Stripe에서 수동으로 수정하는 것은 지원되는 SaaS 플랜 변경 이벤트와 같지 않아요.
+
+1. 에이전시 보기로 돌아가 고객의 계정 상세 정보를 여세요.
+2. 고객이 쓸 수 있는 기능이 옮겨 간 플랜과 일치하는지 확인하세요.
+3. 필요한 기능 접근 변경이 있으면 저장하세요.
+4. 구독을 처음에 V1 판매 서브 계정으로 판매했다면, 그 서브 계정 구독에 예전 상품이나 가격 정보가 남아 있지 않은지 확인하세요.
+
+![SaaS 플랜 기능 접근을 확인하는 에이전시 계정 상세 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155080791562/original/8YyjlynWu_RqI0QbCorzn3HBRX9lME5YWA.png?1789247677)
 
 ## 자주 묻는 질문
 
-**Q: 클라이언트가 즉시 업그레이드하고 바로 기능을 사용할 수 있나요?**
+### 지원되는 SaaS V1 업그레이드를 하면 Stripe와 판매 서브 계정 구독이 모두 업데이트되나요?
 
-네, Add New Plans Features and Apps Upon Upgrading(업그레이드 시 새 요금제 기능과 앱 추가) 옵션을 활성화하면 가능합니다.
+네, 지원되는 판매 서브 계정 방식으로 만든 조건에 맞는 V1 구독이라면 그래요. 지원되는 업그레이드 흐름에서는 Stripe 구독과 판매 서브 계정 안의 해당 구독이 함께 업데이트돼요.
 
-**Q: 클라이언트에게 대상 요금제가 표시되지 않는 이유는 무엇인가요?**
+### 다운그레이드에도 같은 동기화가 적용되나요?
 
-**Category/Level(카테고리/레벨)** 정렬, **통화** 일치, 셀프 서비스 권한, 그리고 **Stripe 가격**이 Hyperclass로 가져와졌는지 확인해보세요.
+네, 조건에 맞는 SaaS V1 다운그레이드가 지원되는 플랜 변경 흐름으로 진행되면 적용돼요. 다운그레이드가 이후 청구일로 예약된 경우에는 다운그레이드가 실제로 적용되는 때 동기화된 플랜 변경이 일어나요.
 
-**Q: 클라이언트가 직접 다운그레이드하는 것을 차단할 수 있나요?**
+### 예전 V1 구독 불일치는 자동으로 고쳐지나요?
 
-네. 셀프 다운그레이드를 비활성화하고 에이전시 지원을 통해 요금제 변경을 처리할 수 있습니다.
+아니요. 기존 불일치는 자동으로 소급해서 채워지지 않아요. 이후에 지원되는 업그레이드나 다운그레이드가 일어나면 새 브리지를 통해 두 구독 기록이 모두 업데이트될 수 있어요.
 
-**Q: Stripe에서 가격을 변경했는데 새 가격이 표시되지 않으면 어떻게 하나요?**
+### 조건에 맞는 V1 플랜 변경 후 인보이스에 새 상품과 가격이 반영되나요?
 
-업데이트된 가격을 Hyperclass로 **가져오고** 요금제에 올바른 **통화**와 **가격 ID**가 선택되었는지 확인하세요.
+네. 판매 서브 계정 구독이 맞춰져 있으면, 그 구독으로 만든 인보이스에 지원되는 플랜 변경 후의 현재 상품과 가격이 반영돼요.
 
-**Q: 요금제 변경 후 결제가 실패하면 어떻게 되나요?**
+### 조건에 맞는 V1 업그레이드나 다운그레이드 후 세금이 다시 계산되나요?
 
-계정이 **자동으로 일시정지**될 수 있습니다. 결제 수단을 업데이트하고, 결제를 다시 시도하고, 계정을 재개하세요.
+네. 동기화된 구독이 현재 플랜 정보를 쓰기 때문에, 예전 상품이나 가격 데이터 대신 변경된 플랜 기준으로 세금을 다시 계산할 수 있어요.
 
----
-*원문 최종 수정: Tue, 9 Dec, 2025 at 9:07 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### Stripe 구독을 수동으로 수정해도 같은 V1 동기화가 되나요?
+
+Stripe에서 직접 한 임의의 수정은 자동으로 동기화된다고 가정하면 안 돼요. 브리지는 지원되는 SaaS 업그레이드·다운그레이드 이벤트에 대해서만 안내된 기능이에요. Stripe에서 수동으로 변경한 뒤에는 해당 판매 서브 계정 구독을 확인하세요.
+
+### 고객에게 옮겨 갈 플랜이 보이지 않아요.
+
+플랜 카테고리와 레벨이 맞는지, 통화, 고객 셀프서비스 권한, 옮겨 갈 플랜에 연결된 가격 설정을 확인하세요.
+
+### 고객이 업그레이드한 기능을 바로 받을 수 있나요?
+
+네, 해당 고객이나 SaaS 설정에서 **Add New Plans Features and Apps Upon Upgrading**이 켜져 있으면 가능해요.
+
+### SaaS V2 고객도 월간 결제와 연간 결제를 바꿀 수 있나요?
+
+네. SaaS V2 구독은 지원되는 플랜 업그레이드나 다운그레이드와 함께 월간·연간 결제를 바꿀 수 있어요. 다만 SaaS V2는 등급 변경, 청구 주기 변경, 등급과 주기를 함께 바꾸는 변경 모두 일할 계산을 지원하지 않아요.

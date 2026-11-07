@@ -1,90 +1,68 @@
 ---
-
-번역일: 2026-04-06
-카테고리: 04-캘린더-예약 > 캘린더-만들기
+원문: /support/solutions/articles/155000001202-in-app-calendar-view
+번역일: 2026-11-07
+카테고리: 04-캘린더-예약
 ---
 
-# 앱 내 캘린더 뷰
+# 앱 내 캘린더 보기
 
-저희는 예약 관리를 쉽고 효율적으로 만들기 위해 최선을 다하고 있습니다. 캘린더 모듈에서 액세스할 수 있는 새롭게 업그레이드된 앱 내 캘린더 뷰를 통해 예약된 모든 약속과 동기화된 서드파티 이벤트를 하나의 종합적인 화면에서 확인할 수 있으며, 일정 관리 프로세스를 간소화하기 위해 설계된 다양한 기능을 제공합니다.
+**캘린더** 메뉴에서 열 수 있는 앱 내 캘린더 보기를 쓰면 예약과 연동된 외부 캘린더 일정을 한 화면에서 모두 확인할 수 있어요. 새로 개선된 이 화면은 일정 관리를 더 쉽게 해 주는 여러 기능을 제공해요.
 
-이 글에서 다룰 내용
+## 일간 보기로 빠르게 비교하기
 
-- [빠른 일간 보기](#빠른-일간-보기)
-- [빠른 월간 보기](#빠른-월간-보기)
-- [다중 사용자 선택](#다중-사용자-선택)
-- [다중 캘린더 뷰](#다중-캘린더-뷰)
-- [다중 그룹 뷰](#다중-그룹-뷰)
-- [명확한 색상 코딩](#명확한-색상-코딩)
-- [주석 키 추가](#주석-키-추가)
-- [직관적인 아이콘](#직관적인-아이콘)
-- [지속적인 다중 선택](#지속적인-다중-선택)
-- [호버 시 추가 정보](#호버-시-추가-정보)
+사용자, 캘린더, 그룹을 나란히 놓고 볼 수 있어요. **Day**(일간) 보기를 선택하면 선택한 항목이 가로로 나열돼요.
 
-## 빠른 일간 보기
+예를 들어 사용자의 일간 보기에서는 사용자 이름이 가로로 나열되고, 각 이름 아래에 그 사용자의 하루 일정이 표시돼요. 비는 시간대를 빠르게 찾고, 사용자별 하루 일정을 한눈에 비교할 수 있어요.
 
-이제 **사용자, 캘린더, 그룹**을 편리한 나란히 형식으로 볼 수 있습니다. 일간 보기를 선택하기만 하면 선택된 모든 항목을 보여주는 수평 목록이 나타납니다.
+## 월간 보기로 빠르게 확인하기
 
-예를 들어, 사용자의 일간 보기에서는 사용자들의 수평 목록이 표시되며, 각자의 이름 아래에 개별 일간 캘린더가 나타납니다. 이를 통해 사용자들은 가능한 시간대를 효율적으로 파악하고 일일 일정을 원활하게 비교할 수 있습니다.
+월간 보기에서는 앞으로의 날짜를 쉽게 넘겨 볼 수 있어서 중요한 예약을 놓치지 않아요.
 
-![빠른 일간 보기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155013883993/original/vhp60EwB8MGqkYmJuaGp8yeuASzceQOnZw.png?1701239419)
+![월간 보기 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155012369251/original/fZhhBroBy_wKaGkOTPj9VAh-C1Hwx66kmQ.png?1699547138)
 
-## 빠른 월간 보기
+### 여러 사용자 한꺼번에 선택하기
 
-직관적인 월간 보기로 미래 날짜를 원활하게 탐색하여 중요한 약속을 놓치지 않도록 하세요.
+사용자를 하나씩 바꿔 가며 볼 필요가 없어요. 여러 사용자를 한 번에 선택하면 그 사용자들의 예약을 한 화면에서 볼 수 있어요.
 
-![빠른 월간 보기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155012369251/original/fZhhBroBy_wKaGkOTPj9VAh-C1Hwx66kmQ.png?1699547138)
+## 여러 캘린더 함께 보기
 
-## 다중 사용자 선택
+원하는 캘린더를 여러 개 선택하면 모든 예약이 하나의 화면에 합쳐져 표시돼요. 캘린더를 오가며 전환하지 않아도 필요한 일정을 한곳에서 확인할 수 있어요.
 
-사용자를 하나씩 관리하는 번거로움은 이제 그만. 여러 사용자를 한 번에 선택하고 한눈에 그들의 예약을 확인하세요.
+![여러 캘린더를 선택한 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155012369472/original/HcWu0vOituvDaH35ataDRxkZm6ZhduA5lg.png?1699547277)
 
-![다중 사용자 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155012369372/original/vcb87TzAGE3KsPz4UWg9HuGHaN-LEU2rAQ.png?1699547229)
+## 여러 그룹 함께 보기
 
-## 다중 캘린더 뷰
+그룹도 여러 개 선택할 수 있어요. 선택한 그룹의 모든 예약이 캘린더 위에 겹쳐 표시되어 하루 일정을 한눈에 파악할 수 있어요.
 
-서로 다른 캘린더를 선택하고 모든 예약을 하나의 통합된 화면에 통합하여 일정을 간소화하세요. 더 이상 캘린더 간 전환이 필요 없이, 필요한 모든 것이 한 곳에 있습니다.
+![여러 그룹을 선택한 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155012369528/original/XlvlSb_KCu0Fs-M_jKpKWeFART6jcWFcTQ.png?1699547315)
 
-![다중 캘린더 뷰](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155012369472/original/HcWu0vOituvDaH35ataDRxkZm6ZhduA5lg.png?1699547277)
+## 색상으로 쉽게 구분하기
 
-## 다중 그룹 뷰
+- 사용자: 사용자마다 예약 색상이 달라서 누구의 일정인지 바로 알아볼 수 있어요.
+- 그룹과 캘린더: 설정에서 지정한 색상으로 예약이 표시돼서 쉽게 구분할 수 있어요.
 
-여러 그룹을 쉽게 선택하세요. 이러한 그룹 내의 모든 예약이 캘린더에 오버레이되어 하루 일정의 포괄적인 개요를 제공합니다.
+### 범례 추가
 
-![다중 그룹 뷰](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155012369528/original/XlvlSb_KCu0Fs-M_jKpKWeFART6jcWFcTQ.png?1699547315)
+일정에 쓰이는 아이콘과 패턴의 의미를 알려 주는 범례가 새로 추가됐어요. 범례를 보면 각 아이콘과 패턴이 무엇을 뜻하는지 쉽게 알 수 있어요.
 
-## 명확한 색상 코딩
+![범례 화면 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155012369710/original/RW1NYsxI0fKLeuLxNGWPGQDS_ZXFGUWk2w.png?1699547443)
 
-**사용자**: 각 사용자의 예약은 색상으로 코딩되어 한눈에 일정을 구분할 수 있습니다.
-
-그룹과 캘린더: 예약은 사용자가 커스터마이징한 설정에 따라 색상으로 표시되어 쉽게 식별할 수 있습니다.
-
-## 주석 키 추가
-
-사용자가 이벤트에 사용된 다양한 아이콘과 패턴을 쉽게 이해할 수 있도록 정의가 포함된 새로운 주석 키를 추가했습니다.
-
-![주석 키 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155012369710/original/RW1NYsxI0fKLeuLxNGWPGQDS_ZXFGUWk2w.png?1699547443)
-
-![주석 키 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155012369724/original/FeQktYroSU7P1kH_pHBnEaMK4WjWC_VA5Q.png?1699547472)
+![범례 화면 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155012369724/original/FeQktYroSU7P1kH_pHBnEaMK4WjWC_VA5Q.png?1699547472)
 
 ## 직관적인 아이콘
 
-새로운 아이콘으로 이벤트를 즉시 인식하세요:
+새 아이콘으로 일정의 종류를 바로 알아볼 수 있어요.
 
-![직관적인 아이콘](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010265971/original/ttRnO-6k_NPuv1UUeNJiGxHGqNtrv5rk7A.png?1697525883)
+![일정 종류별 아이콘](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010265971/original/ttRnO-6k_NPuv1UUeNJiGxHGqNtrv5rk7A.png?1697525883)
 
-## 지속적인 다중 선택
+## 선택 항목 기억하기
 
-선택한 캘린더와 사용자가 기억되어, 다시 돌아왔을 때 선호하는 뷰를 클릭 한 번으로 바로 볼 수 있습니다.
+선택한 캘린더와 사용자를 기억해 두기 때문에, 다시 들어오면 자주 보던 화면을 바로 볼 수 있어요.
 
-## 호버 시 추가 정보
+## 마우스를 올려 추가 정보 보기
 
-예약 위에 마우스를 올리면 이벤트 유형, 제목, 시작 및 종료 시간을 포함한 상세한 정보를 확인할 수 있습니다. 클릭할 필요 없이 간단한 호버만으로 정보를 확인하세요.
+예약 위에 마우스를 올리면 일정 유형, 제목, 시작 시간, 종료 시간 같은 **추가 정보**를 볼 수 있어요. 클릭하지 않아도 간단히 확인할 수 있어요.
 
-![호버 시 추가 정보](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010273763/original/OLOPMJjhYfydQdrlwLQgBDVhvpGZzcSp_w.png?1697530272)
+![예약에 마우스를 올렸을 때 나오는 추가 정보](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010273763/original/OLOPMJjhYfydQdrlwLQgBDVhvpGZzcSp_w.png?1697530272)
 
-향상된 캘린더 기능은 시간을 절약하고 예약 관리와 관련된 번거로움을 줄이기 위해 세심하게 설계되었습니다. 일정 탐색에 소요하는 시간을 줄이고 정말 중요한 것, 즉 고객에게 뛰어난 서비스를 제공하는 데 더 많은 시간을 집중하세요.
-
----
-*원문 최종 수정: Fri, 14 Jun, 2024 at 10:29 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+개선된 캘린더 기능은 예약 관리에 드는 시간과 수고를 줄이도록 만들었어요. 일정을 찾는 시간은 줄이고, 고객에게 좋은 서비스를 제공하는 데 더 집중해 보세요.

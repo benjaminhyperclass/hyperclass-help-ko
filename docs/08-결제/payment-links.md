@@ -1,74 +1,71 @@
 ---
-
-번역일: 2026-04-06
+원문: /support/solutions/articles/155000002177-payment-links
+번역일: 2026-11-07
 카테고리: 08-결제
 ---
 
-# 결제 링크(Payment Links)
+# 결제 링크로 상품 판매하기
 
-결제 링크(Payment Links)는 웹사이트 없이도 상품이나 서비스를 판매할 수 있는 훌륭한 방법입니다. 몇 번의 클릭만으로 완전한 결제 페이지를 만들고 고객에게 링크를 공유하세요—코딩 필요 없이!
+**결제 링크**를 만들면 웹사이트 없이도 상품이나 서비스를 판매할 수 있어요. 클릭 몇 번으로 결제 페이지를 완성하고, 링크를 고객에게 공유하면 돼요. 코드는 필요 없어요.
 
-![결제 링크 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023729137/original/ys4Fglfuo4X4dxUuWP7Ur-U6KugdictfkA.png?1711747942)
+![결제 링크 결제 페이지 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023729137/original/ys4Fglfuo4X4dxUuWP7Ur-U6KugdictfkA.png?1711747942)
 
-**참고:** 결제 링크를 만들기 전에 먼저 상품(Product)을 생성해야 합니다. 상품을 만들려면 `Payments(결제) → Products(상품) → Create Product(상품 생성)`로 이동하세요. 상품에 저장된 이미지는 결제 링크에 자동으로 표시됩니다.
+{% hint style="info" %}
+결제 링크를 만들기 전에 먼저 상품을 만들어야 해요. **결제 > 상품 > 상품 만들기**로 이동해 상품을 만드세요. 상품에 저장한 이미지는 결제 링크에 자동으로 표시돼요.
+{% endhint %}
 
-## 결제 링크 만드는 방법
+## 결제 링크 만드는 순서
 
-1. `Payments(결제) → Payment Links(결제 링크) → Create Link(링크 생성)`로 이동합니다
+1. **결제 > 결제 링크 > 링크 만들기**로 이동해요.
+2. 화면 맨 위에 결제 링크 이름을 입력해요.
 
-2. 화면 상단에서 결제 링크의 이름을 입력합니다
+   ![결제 링크 이름 입력](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023729270/original/I4W43f5onxCXZf15F8Ro25APuPphyP8LYA.png?1711748423)
 
-![결제 링크 이름 입력](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023729270/original/I4W43f5onxCXZf15F8Ro25APuPphyP8LYA.png?1711748423)
+3. **상품을 선택하세요**에서 상품을 고른 뒤 가격을 선택해요.
 
-3. 상품을 선택한 후 가격을 선택합니다
+   ![상품과 가격 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023729273/original/7pzPllY98jtNQicJVvhvN4NTsKoTvmgTGg.png?1711748445)
 
-![상품 및 가격 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023729273/original/7pzPllY98jtNQicJVvhvN4NTsKoTvmgTGg.png?1711748445)
+4. 필요한 선택 설정을 구성한 뒤 **저장**을 클릭해요.
 
-4. 선택 사항을 설정하고 저장(Save)을 클릭합니다
+   ![선택 설정 구성 후 저장](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023729283/original/fpRcMZb7FzeEFl-QUcCFRvMjUSySQ098rg.png?1711748466)
 
-![선택 사항 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023729283/original/fpRcMZb7FzeEFl-QUcCFRvMjUSySQ098rg.png?1711748466)
+5. **미리보기**를 클릭해요. 브라우저 주소창에서 링크를 복사해 받는 사람에게 보내세요.
 
-5. 미리보기(Preview)를 클릭한 후 브라우저에서 링크를 복사해서 고객에게 보냅니다
-
-![링크 복사 및 전송](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023729348/original/_2Ht3LQLofoyylBWu9P7GgcRyzZWOG3D9g.png?1711748770)
+   ![미리보기 후 링크 복사](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023729348/original/_2Ht3LQLofoyylBWu9P7GgcRyzZWOG3D9g.png?1711748770)
 
 ### 언어 및 현지화
 
-호스팅된 체크아웃은 비즈니스 프로필(Business Profile)에서 설정한 플랫폼 언어에 따라 필드 라벨, 버튼, 검증 메시지, 오류 메시지를 현지화합니다.
+호스팅 결제 페이지는 **비즈니스 프로필**에 설정된 **플랫폼 언어**에 맞춰 필드 이름, 버튼, 유효성 검사 및 오류 메시지를 해당 언어로 보여 줘요.
 
-현지화되는 요소:
-- 필드 라벨
+현지화되는 요소는 다음과 같아요.
+
+- 필드 이름
 - 버튼
-- 검증 및 오류 메시지
+- 유효성 검사 및 오류 메시지
 
-**팁:** 기본 체크아웃 언어를 변경하려면 비즈니스 프로필에서 플랫폼 언어를 업데이트하세요.
+{% hint style="info" %}
+결제 페이지의 기본 언어를 바꾸려면 **비즈니스 프로필**에서 **플랫폼 언어**를 변경하세요.
+{% endhint %}
 
 ## 추가 정보
 
-- 다음 URL 매개변수를 사용하여 이름, 성, 이메일, 전화번호 필드를 미리 채울 수 있습니다:
-  - firstName=
-  - lastName=
-  - email=
-  - phone=
+- 다음 URL 파라미터를 쓰면 이름, 성, 이메일, 전화번호 입력란을 미리 채울 수 있어요.`firstName=``lastName=``email=``phone=`
+- 다음 URL 파라미터를 쓰면 결제 후 고객을 자동으로 다른 페이지로 이동시킬 수 있어요. 이동 전 카운트다운 타이머도 함께 표시할 수 있어요.`redirectIn=``redirectUrl=`
 
-- 다음 URL 매개변수를 사용하여 구매 후 사용자를 자동으로 리디렉션할 수 있습니다(리디렉션 카운트다운 타이머 포함):
-  - redirectIn=
-  - redirectUrl=
+예시 URL:
 
-URL 예시: [links.fastpayments.co/payment-link/asfkhwel93/firstName=Bob&lastName=Smith&email=bobsmith@gmail.com&phone=2155554545&redirectIn=8&redirectUrl=mysite](mailto:links.fastpayments.co/payment-link/asfkhwel93/firstName=Bob&lastName=Smith&email=bobsmith@gmail.com&phone=2155554545&redirectIn=8&redirectUrl=mysite).com/thank-you
+```
+links.fastpayments.co/payment-link/asfkhwel93/firstName=Bob&lastName=Smith&email=bobsmith@gmail.com&phone=2155554545&redirectIn=8&redirectUrl=mysite.com/thank-you
+```
 
 ## 자주 묻는 질문
 
-**Q: 은행 이체 같은 수동 결제 옵션이 결제 링크 체크아웃 페이지에 표시되지 않는 이유는 무엇인가요?**
+### 수동 결제 수단(예: 계좌 이체)이 결제 링크 결제 페이지에 보이지 않아요. 왜 그런가요?
 
-수동 결제 방법은 현재 단일 결제 링크 체크아웃 페이지에서 지원되지 않습니다.
+수동 결제 수단은 현재 단일 결제 링크 결제 페이지에서 지원하지 않아요.
 
-Stripe, PayPal 같은 자동화된 방법만 표시됩니다.
+Stripe, PayPal처럼 자동으로 처리되는 결제 수단만 표시돼요.
 
-수동 결제를 받으려면 직접 결제 링크 대신 기존의 인보이스(Invoice)나 주문 양식(Order Form)을 사용해야 합니다.
+**계좌 이체** 같은 수동 결제를 받아야 한다면, 결제 링크 대신 일반 인보이스나 주문 폼을 사용해야 해요.
 
-참고: [제품 영역별 지원되는 결제 제공업체 및 방법 (어디서 무엇이 작동하는지)](https://hyperclass.gitbook.io/hyperclass-docs)
-
----
-*원문 최종 수정: Sun, 1 Feb, 2026 at 6:47 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+참고: 지원되는 결제 제공업체와 결제 수단(기능 영역별 지원 현황)

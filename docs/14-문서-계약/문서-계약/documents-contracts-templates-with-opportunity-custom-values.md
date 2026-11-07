@@ -1,96 +1,124 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 14-문서-계약 > 문서-계약
+원문: /support/solutions/articles/155000004039-documents-contracts-templates-with-opportunity-custom-values
+번역일: 2026-11-06
+카테고리: 14-문서-계약
 ---
 
-# 기회 커스텀 값이 포함된 문서 및 계약 템플릿
+# 문서 & 계약 템플릿에 기회 커스텀 값 넣기
 
-문서 및 계약 템플릿에서 병합 필드를 사용해 기회 커스텀 값을 포함할 수 있습니다.
+기회 커스텀 값을 쓰면 **문서 & 계약**(Documents & Contracts) 템플릿에 프로젝트 예산, 서비스 유형, 계약 체결일 같은 딜별 정보를 넣을 수 있어요. 워크플로우가 문서를 만들 때 하이퍼클래스가 각 병합 필드를 해당 기회의 정보로 바꿔 줘요. 직접 고치는 일이 줄고, 문서 내용도 정확하고 일관되게 유지돼요.
 
----
+## 문서 & 계약 템플릿의 기회 커스텀 값이란?
 
-**목차**
+기회 커스텀 필드에는 특정 딜의 정보가 저장돼요. 병합 필드는 템플릿 안에서 자리표시자 역할을 해요. 워크플로우가 문서를 만들 때, 그 자리에 기회에 저장된 값이 표시돼요. 연락처 필드와 달리 기회 값은 같은 연락처에 연결된 딜마다 다를 수 있어요.
 
-- [문서 및 계약 템플릿의 기회 커스텀 값이란?](#문서-및-계약-템플릿의-기회-커스텀-값이란)
-- [문서 및 계약 템플릿에서 기회 커스텀 값 사용하기](#문서-및-계약-템플릿에서-기회-커스텀-값-사용하기)
-- [워크플로우에서 기회 커스텀 값이 포함된 문서 및 계약 템플릿 사용하기](#워크플로우에서-기회-커스텀-값이-포함된-문서-및-계약-템플릿-사용하기)
-- [기회 파이프라인에서 문서 및 계약 자동 발송](#기회-파이프라인에서-문서-및-계약-자동-발송)
+{% hint style="warning" %}
+이 안내는 개별 문서가 아니라 재사용하는 템플릿에 적용돼요. **결제 > 문서 & 계약 > 템플릿**으로 이동해서 **템플릿** 탭이 선택되어 있는지 확인하세요.
+{% endhint %}
 
----
+![템플릿 탭이 선택된 문서 & 계약 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155078647668/original/K5RJ3twUj85Avyh94q_yIsJeRLN1Ethjsg.png?1787024665)
 
-## 문서 및 계약 템플릿의 기회 커스텀 값이란?
+템플릿을 편집할 때는 브라우저 주소에도 `/templates/`가 들어 있어요.
 
-문서 및 계약은 이메일이나 웹사이트와 비슷하지만, 거래의 세부 사항을 명시하고 서명을 통해 계약을 확정할 수 있는 문서/계약서를 생성합니다.
+![주소에 /templates/가 포함된 템플릿 편집 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155078647671/original/qcZg8-1VjKXiTbazub2Q7eTA50BJ51VIvQ.png?1787024682)
 
-문서 및 계약 템플릿은 "빈칸 채우기" 섹션이 있는 재사용 가능한 파일로, 워크플로우에서 자동으로 채워질 수도 있습니다.
+## 기회 커스텀 값의 장점
 
-참고: 이 문서는 개별 문서 및 계약이 아닌 *템플릿*에 관한 내용입니다. **템플릿**을 보고 편집하려면 Payments(결제) > Documents & Contracts(문서 및 계약) 드롭다운에서 Templates(템플릿)를 선택하세요. 페이지 제목에 Templates가 포함되어 있고 Templates 탭에 있는지 확인하세요.
+기회 병합 필드를 쓰면 템플릿 하나로 여러 딜에 맞는 문서를 자동으로 만들 수 있어요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050551741/original/2us6irbQsjrlEFwLOkwPKxtRoLy42pA4lQ.png?1753726809)
+- 문서를 더 빠르게 만들어요: 제안서나 계약서를 보내기 전에 직접 고치는 일이 줄어요.
+- 딜 정보가 정확해요: 기회 레코드의 값을 그대로 가져와요.
+- 자동화를 재사용해요: 같은 템플릿을 여러 기회와 파이프라인에서 쓸 수 있어요.
+- 문서가 일관돼요: 팀 전체가 같은 서식과 딜 정보를 유지할 수 있어요.
 
-문서 및 계약 편집기에서 URL 표시줄에 "templates"라는 단어를 확인하세요. 이는 개별 문서/계약이 아닌 **템플릿을 편집하고 있다**는 것을 확인해줍니다.
+## 시작하기 전에
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050551819/original/6Svu2dkQ5Pe3wLuRFnGJls1S-8kt-5WFsw.png?1753727000)
+필요한 필드와 값, 템플릿, 워크플로우 조건이 갖춰져 있어야 기회 값이 채워져요.
 
----
+다음을 확인하세요.
 
-## 문서 및 계약 템플릿에서 기회 커스텀 값 사용하기
+- 필요한 필드를 **기회** 커스텀 필드로 만들었어요.
+- 기회에 해당 필드의 값이 들어 있어요.
+- 기회가 올바른 연락처에 연결되어 있어요.
+- 워크플로우에서 템플릿을 선택하기 전에 템플릿을 저장했어요.
+- 딜 정보가 채워져야 한다면 워크플로우가 기회와 관련된 트리거를 사용해요.
+- 문서를 보낼 경우 연락처에 유효한 이메일 주소가 있어요.
 
-- Payments(결제) → Documents & Contracts Templates(문서 및 계약 템플릿) → New template(새 템플릿)으로 이동합니다.
+여러 역할이 있는 템플릿은 워크플로우에서 쓰기 전에 입력 가능한 요소를 하나 이상 **연락처**에 지정하세요. 워크플로우에서 입력한 역할 정보는 템플릿의 해당 기본값보다 우선해요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040198849/original/kEJEEXCPOJiuSNCC7lr_K3BZRbbq5Di4TQ.png?1737467636)
+## 템플릿에 기회 커스텀 값 설정하기
 
-- 기회 커스텀 값/필드를 입력하려는 위치에 텍스트 박스나 테이블을 드래그합니다. 텍스트 영역에 직접 정확한 병합 필드(예: {{opportunity.xyz}})를 입력하거나 병합 필드 메뉴를 사용하세요.
+병합 필드 메뉴를 쓰면 올바른 필드 토큰이 삽입되어 서식이나 구문 오류를 막을 수 있어요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040198929/original/6HozCmIyeocMbl1ahr4ZMlIMm1gjpbtDSg.png?1737467697)
+1. **결제 > 문서 & 계약 > 템플릿**으로 이동하세요.
+2. **+ 신규**를 클릭하거나 기존 템플릿을 여세요.
+3. **+** 아이콘을 클릭하고, 기회 정보를 넣을 위치에 **문자** 블록이나 **Table**(표)을 추가하세요.
+4. 값을 넣을 위치에 커서를 두고 **병합 필드** 아이콘을 클릭하세요.
 
-- **병합 필드 메뉴에서**: Contact(연락처) → Custom fields(커스텀 필드) → Opportunity Details(기회 세부정보)로 이동하여 동적인 필드명을 선택합니다.
+![병합 필드 아이콘을 클릭하는 모습](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155078647682/original/24P4yjrkzpI_b2IZAvd7OvtkQ89npjFEFw.png?1787024721)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040199078/original/V0wYrL-eUekZf_gQ_NHvQPwyNwup_W50tg.png?1737467786)
+5. 다음 순서로 선택하세요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040199106/original/-aCciUWXyiHx3XnbJlcYt9f-r-T_751YZw.png?1737467799)
+   **연락처 > 커스텀 필드 > 기회 상세 > 필드명**
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040199134/original/KEGOo2JKmEq9vr6fiaOQANLre5WWNaIkgA.png?1737467810)
+![병합 필드 메뉴에서 기회 상세의 필드를 선택하는 모습](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155078647578/original/BSMYpKnRcoGJX0FIUVkEGeM84F6jaCX6Fw.png?1787024398)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040199153/original/5E4j-Mir_ZMv1Yml3wKsyzY3pmP-nd5vzA.png?1737467824)
+6. 병합 필드 토큰이 원하는 위치에 표시되는지 확인하세요.
+7. **저장**을 클릭하세요.
 
-- **검토**: 텍스트 영역에서 병합 필드가 올바른 위치에 표시되는지 다시 확인하세요. 자동화가 실행될 때 병합 필드는 개인화된 데이터로 자동 교체됩니다. 반드시 **저장**하세요.
+![템플릿을 저장하는 모습](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155078647569/original/MqJGtC5dR-z4i7miIuErmapxWI_2hQ4OhA.png?1787024345)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040199289/original/RITNDKTg1I2uEd3OVJQaeDqYIy6s-oNgwQ.png?1737467923)
+{% hint style="info" %}
+`{{opportunity.xyz}}` 같은 일반 토큰을 직접 입력하지 말고 **병합 필드** 메뉴에서 필드를 선택하세요. 메뉴에서 선택하면 해당 필드에 맞는 정확한 토큰이 삽입돼요.
+{% endhint %}
 
----
+## 워크플로우에서 템플릿 사용하기
 
-## 워크플로우에서 기회 커스텀 값이 포함된 문서 및 계약 템플릿 사용하기
+기회와 관련된 워크플로우 트리거가 있어야 하이퍼클래스가 딜 정보를 알고 템플릿의 기회 병합 필드를 채울 수 있어요.
 
-- **Automation(자동화) > Workflows(워크플로우) > 워크플로우 생성 또는 편집**으로 이동합니다. 워크플로우 편집기에서 **Send Documents & Contracts Action(문서 및 계약 발송 액션)**을 사용합니다. 액션 내에서 입력하려는 템플릿을 선택하고 초안으로 저장하거나 발송합니다.
+1. **자동화 > 워크플로우**로 이동하세요.
+2. 워크플로우를 새로 만들거나 기존 워크플로우를 여세요.
+3. 업무 방식에 맞는 트리거를 추가하세요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040199882/original/5sa4KEqttINY-2v28dLzboXFdd4TdiJVfg.png?1737468347)
+   - **Pipeline Stage Changed**(파이프라인 단계 변경됨): 기회가 선택한 단계에 들어올 때 워크플로우가 시작돼요.
+   - **Opportunity Status Changed**(기회 상태 변경됨): 기회가 고객전환성공이나 고객전환실패 같은 상태로 바뀔 때 워크플로우가 시작돼요.
 
----
+   두 이벤트 중 어느 쪽이든 워크플로우를 시작해야 할 때만 트리거를 둘 다 추가하면 돼요.
 
-## 기회 파이프라인에서 문서 및 계약 자동 발송
+![워크플로우에 트리거를 추가하는 모습](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155078647697/original/nOEtTsfMyPCT_InLa9A8nT-WYw72lX0v5w.png?1787024775)
 
-특정 기회 파이프라인 단계에서 템플릿 문서/계약을 자동으로 발송하려면, 워크플로우에서 몇 개의 트리거와 액션을 사용하여 설정할 수 있습니다.
+4. 파이프라인, 단계, 상태 같은 트리거 필터를 설정하세요.
 
-**1단계: 워크플로우 생성**
+![트리거 필터를 설정하는 모습](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155078647558/original/HvrPOe_pxZztzWDhVUrYYuyRz2v4FXnCNg.png?1787024302)
 
-Automation(자동화) > Workflow(워크플로우) > 워크플로우 생성 또는 편집으로 이동합니다.
+5. **+ Add Action**(액션 추가)을 클릭하고 **Send Documents & Contracts**(문서 & 계약 보내기)를 선택하세요.
+6. 액션을 설정하세요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040199677/original/OfyRxM02UTuWPY2uxxqdwvrNpW-dUPKGDQ.png?1737468195)
+   - **From User**(보내는 사용자)를 선택하세요.
+   - 저장해 둔 템플릿을 선택하세요.
+   - **Create as Draft**(초안으로 만들기) 또는 **Send Directly**(바로 보내기)를 선택하세요.
+   - 발송 채널을 선택하세요.
+   - 필요한 수신자나 서명자 정보를 모두 입력하세요.
+7. **Save Action**(액션 저장)을 클릭한 다음 워크플로우를 게시하세요.
 
-**2단계: 트리거 추가**
+테스트할 때는 **Create as Draft**를 쓰세요. 만들어진 초안을 열어 모든 기회 필드에 예상한 값이 들어 있는지 확인한 뒤, 액션을 **Send Directly**로 바꾸세요.
 
-기회/파이프라인 트리거의 좋은 옵션으로는 Pipeline Stage Changed(파이프라인 단계 변경됨) 또는 Opportunity Status Changed(기회 상태 변경됨)가 있습니다. 트리거의 필터를 관련 파이프라인, 단계, 기회 등으로 설정하세요.
+## 자주 묻는 질문
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040199505/original/Orf2J4JrEQskwivAp85qZj342ciV81msNw.png?1737468099)
+### 만들어진 문서에서 기회 값이 비어 있어요.
+워크플로우를 시작시킨 기회에 해당 필드의 값이 들어 있는지 확인하세요. 또한 **기회 상세** 아래에서 필드를 선택했는지, 워크플로우가 실행되기 전에 템플릿을 저장했는지도 확인하세요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040199807/original/y30822cRiC0OU_xRZixkGgLs4iZ9aL7S2A.png?1737468289)
+### 병합 필드 토큰이 그대로 보여요.
+템플릿을 편집하는 동안에는 토큰이 그대로 보이는 게 정상이에요. 워크플로우가 문서를 만들 때 값으로 바뀌어야 해요. 만들어진 문서에도 토큰이 남아 있다면 **병합 필드** 메뉴에서 필드를 다시 삽입한 뒤 다시 테스트하세요.
 
-**3단계: 액션 추가**
+### 기회 병합 필드를 직접 입력해도 되나요?
+네, 직접 입력할 수 있어요. 다만 토큰이 필드의 병합 키와 정확히 일치해야 해요. 입력 실수와 서식 오류를 줄이려면 **병합 필드** 메뉴를 쓰는 것이 좋아요.
 
-워크플로우에 Send Documents & Contracts Action(문서 및 계약 발송 액션)을 추가하고 적절한 템플릿을 선택합니다(이전 지침에 따라). 템플릿의 병합 필드가 파일을 발송하기 전에 기회 커스텀 값을 자동으로 가져와 채웁니다. 반드시 **저장**하세요.
+### 어떤 워크플로우 트리거를 써야 하나요?
+특정 파이프라인 단계에서 문서를 만들어야 하면 **Pipeline Stage Changed**를 쓰세요. 딜이 고객전환성공으로 바뀐 경우처럼 상태가 바뀐 뒤에 문서를 만들어야 하면 **Opportunity Status Changed**를 쓰세요.
 
----
-*원문 최종 수정: 2025년 7월 28일*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### 워크플로우 액션에 내 템플릿이 보이지 않아요.
+개별 문서가 아니라 템플릿으로 만들었는지, 그리고 **저장**을 클릭했는지 확인하세요. 저장한 템플릿만 **Send Documents & Contracts** 액션에서 선택할 수 있어요.
+
+### 문서가 발송되지 않고 **Drafts**(초안)에 남아 있어요.
+액션에 **Create as Draft**를 선택했는지 확인하세요. 또한 연락처에 유효한 이메일 주소가 있는지도 확인하세요. SMS 발송을 선택한 경우에도 이메일 주소는 필요해요.

@@ -1,48 +1,37 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 07-워크플로우 > 액션
+원문: /support/solutions/articles/155000003421-conversation-ai-post-appointment-booking-actions
+번역일: 2026-11-07
+카테고리: 07-워크플로우
 ---
 
-# 대화 AI 예약 완료 후 액션
+# 대화 AI 예약 완료 후 동작 설정
 
-대화 AI(Conversation AI) 플랫폼의 중요한 개선 사항인 **하위 계정 예약 예약 의도** 기능을 소개합니다. 이 강력한 기능을 통해 예약 완료 후 액션을 손쉽게 설정하여 전반적인 사용자 경험을 향상시킬 수 있습니다.
+**대화 AI**(Conversation AI)의 서브 계정 예약 부킹 인텐트에서 예약이 끝난 뒤 실행할 동작을 정하는 방법을 안내해요. 예약 직후 봇을 잠시 멈추거나, 워크플로우를 자동으로 시작하고 싶을 때 쓰세요.
 
-**목차**
+## 목표
 
-- [목적](#목적)
-- [해결 방법](#해결-방법)
-- [참고사항](#참고사항)
+지금까지는 연락처가 예약을 마치면 인텐트가 이후 대화를 이어 가는 상태로 바뀌었어요. 그런데 고객 요청이 이어지면서 두 가지 기능이 필요해졌어요.
 
-## 목적
-
-현재는 연락처가 예약을 성공적으로 완료하면 대화 의도가 추가 대화를 지원하는 상태로 전환됩니다. 하지만 고객들이 다음 두 가지 핵심 기능에 대한 필요성을 표현해왔습니다:
-
-- **봇 절전 모드**: 예약이 이미 완료된 경우 봇 응답을 자동으로 비활성화
-- **워크플로우 트리거**: 예약 완료 직후 특정 워크플로우를 실행
+1. **Put the Bot to Sleep**(봇 휴면 전환): 이미 예약이 완료된 경우 봇의 응답을 자동으로 끄세요.
+2. **워크플로우 트리거**: 예약이 완료된 직후 지정한 워크플로우를 시작하세요.
 
 ## 해결 방법
 
-이러한 요청을 해결하기 위해 예약 예약 설정 내에 두 가지 새로운 설정을 추가했습니다.
+이 요청을 반영해 **예약 부킹** 설정 안에 새 설정 두 가지를 추가했어요.
 
-**주요 기능:**
+주요 기능은 다음과 같아요.
 
-- **봇 절전 모드**: 이제 예약 완료 후 봇을 절전 모드로 전환할 수 있습니다. 이 기능을 통해 봇이 비활성 상태로 유지될 기간을 지정할 수 있어, 해당 기간 동안 자동 응답이 전송되지 않도록 보장합니다.
+1. **Put the Bot to Sleep**: 예약이 완료된 뒤 봇을 휴면 상태로 둘 수 있어요. 봇이 응답하지 않을 기간을 직접 정할 수 있고, 이 기간에는 자동 응답이 더 이상 전송되지 않아요.
+2. **워크플로우 트리거**: 휴면 설정과 별개로, 예약이 완료되면 워크플로우를 하나 이상 시작하도록 정할 수 있어요. 드롭다운 메뉴에서 워크플로우를 여러 개 선택해 설정하면, 예약 직후 자동으로 시작돼요.
 
-- **워크플로우 트리거**: 절전 기능 외에도 예약 완료 후 하나 이상의 워크플로우를 트리거하도록 선택할 수 있습니다. 드롭다운 메뉴를 통해 예약 완료 후 자동으로 시작될 여러 워크플로우를 선택하고 설정할 수 있는 유연성을 제공합니다.
+{% hint style="info" %}
+두 설정은 동시에 켤 수 있어요. 필요에 맞게 조합해서 쓰세요.
+{% endhint %}
 
-## 참고사항
+![예약 부킹 설정 화면 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032710713/original/aZxW5-HETyd8ZEgGIGHelhflDbNZGZorZw.png?1726088868)
 
-두 설정 모두 동시에 활성화할 수 있어, 각 사용자의 특별한 요구에 맞춘 매우 맞춤화 가능한 경험을 제공합니다.
+![예약 부킹 설정 화면 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032710755/original/1LAkfk_-djOsrQA2C53x-8_nralrCYEc_w.png?1726088940)
 
-![예약 완료 후 액션 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032710713/original/aZxW5-HETyd8ZEgGIGHelhflDbNZGZorZw.png?1726088868)
+![예약 부킹 설정 화면 3](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032710765/original/_LgTfhRiZIUinYmZhmcnKuotWO0iPuuCUg.png?1726088976)
 
-![봇 절전 모드 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032710755/original/1LAkfk_-djOsrQA2C53x-8_nralrCYEc_w.png?1726088940)
-
-![워크플로우 트리거 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032710765/original/_LgTfhRiZIUinYmZhmcnKuotWO0iPuuCUg.png?1726088976)
-
-![설정 완료 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032710775/original/ylLaVPqdyp80QJaO4t5n4BMo2occzV5efQ.png?1726088999)
-
----
-*원문 최종 수정: 2024년 10월 3일*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+![예약 부킹 설정 화면 4](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032710775/original/ylLaVPqdyp80QJaO4t5n4BMo2occzV5efQ.png?1726088999)

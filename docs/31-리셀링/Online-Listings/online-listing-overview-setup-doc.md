@@ -1,272 +1,252 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 31-리셀링 > Online Listings
+원문: /support/solutions/articles/48001196389-online-listing-overview-setup-doc
+번역일: 2026-11-06
+카테고리: 31-리셀링
 ---
 
-# 온라인 리스팅 개요 및 설정 가이드
+# 온라인 리스팅 개요와 설정
 
-이 글에서는 Hyperclass의 리스팅 기능을 사용하여 디렉터리 리스팅 관리를 통해 고객의 로컬 SEO를 개선하는 방법을 설명합니다. 리스팅을 리셀링하고, 가격을 설정하고, 청구를 관리하고, SaaS 플랜 전반에 걸쳐 기능을 배포하는 방법을 알아보세요.
-
----
-
-### 커뮤니티 튜토리얼
-
-[https://youtu.be/PmvgilQIDs4](https://youtu.be/PmvgilQIDs4)
-
-[https://youtu.be/_DPcMxaM4Mo](https://youtu.be/_DPcMxaM4Mo)
-
-[https://www.youtube.com/watch?v=0tHGCX3b-mE](https://www.youtube.com/watch?v=0tHGCX3b-mE)
+하이퍼클래스의 **리스팅**(Listings) 기능으로 디렉터리 등록 정보를 관리해 고객의 로컬 SEO를 높이는 방법을 안내해요. 리스팅을 재판매하고, 가격과 청구를 설정하고, SaaS 플랜에 넣어 배포하는 방법까지 다뤄요. 재판매와 가격 설정은 에이전시 관리자만 쓸 수 있어요.
 
 ---
 
-# **리스팅 기능이란?**
+## 리스팅 기능이란?
 
-리스팅은 백링크를 생성하고 고객의 핵심 비즈니스 정보(주소, 운영시간, 전화번호 등)가 세계에서 가장 평판이 좋은 70개 이상의 웹사이트에서 일관되게 유지되도록 하는 매우 강력한 SEO 도구입니다.
+리스팅은 백링크를 만들어 주고, 고객 업체의 핵심 정보(주소, 영업시간, 전화번호 등)를 세계적으로 신뢰받는 70곳 이상의 웹사이트에 똑같이 유지해 주는 SEO 도구예요.
 
-리스팅은 여러분의 서비스와 함께 배포할 수 있는 훌륭한 보완 서비스이며, 원하는 마크업 가격으로 Hyperclass를 통해 재판매할 수 있습니다... 돈이 됩니다!
+리스팅은 기존 서비스와 함께 제공하기 좋은 부가 서비스예요. 하이퍼클래스를 통해 원하는 마진을 붙여 재판매할 수도 있어요.
 
-Hyperclass의 리스팅은 최소한의 약정으로 절대적으로 저렴한 가격에 제공됩니다. [가격에 대한 자세한 정보는 여기를 클릭하세요](../../20-고객지원/Billing-Support/highlevel-pricing-guide.md)
+하이퍼클래스의 리스팅은 아주 낮은 가격에 약정 부담도 최소로 시작할 수 있어요. 가격에 대한 자세한 정보는 별도 가격 안내 문서를 참고하세요.
 
-빠르게 더 많은 유기적 인바운드 메시지를 받고 싶다면, 리스팅을 Google 마이 비즈니스 채팅 위젯과 결합해보세요. 빠르게 설정할 수 있고 모든 비즈니스가 혜택을 받을 수 있는 방법입니다.
+자연 유입 문의를 빠르게 늘리고 싶다면 리스팅과 Google My Business 채팅 위젯을 함께 써 보세요. 설정이 빠르고, 어떤 업체든 도움을 받을 수 있어요.
 
 ---
 
 ## 리스팅의 주요 장점
 
-리스팅은 에이전시와 고객에게 강력한 SEO 및 재판매 이점을 제공합니다.
+리스팅은 에이전시와 고객 모두에게 SEO와 재판매 면에서 이점이 있어요.
 
-- 평판이 좋은 디렉터리의 구조화된 백링크로 SEO 강화
-- 주요 리스팅 플랫폼 전반에서 일관된 비즈니스 정보 보장
-- 최소 약정 (1개월 최소)
-- 하위 계정에 재판매하기 위한 커스텀 마크업
-- 패키지와 함께 배포할 수 있는 부가 가치 서비스
-
----
-
-## SaaS 오퍼에 리스팅을 추가하는 방법
-
-리스팅을 SaaS 플랜에 번들로 포함하면 고객에게 원활하고 확장 가능한 로컬 SEO 솔루션을 제공할 수 있습니다. [SaaS 오퍼에 리스팅을 추가하는 방법에 대한 자세한 내용은 여기를 클릭하세요.](how-to-sell-listings-as-part-of-a-saas-offer.md)
-
-- 에이전시 대시보드에서 "SaaS Configurator(SaaS 구성기)"로 이동하세요
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319774/original/OL-lXHl00ScuRkAVe8ENw3HnNG21uDMhSA.png?1751576984)
-
-- 편집하려는 플랜을 찾아 **Edit Details(세부사항 편집)**를 클릭하세요
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319787/original/Q0Mv61GeXxq0IPQ0kg4YA0hAx26h5tQw7Q.png?1751577032)
-
-- **Addons(애드온)** 섹션으로 이동하세요
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319798/original/bPYVpDagwXxPEqQt2ZGEwsVFCtIyhV3W2g.png?1751577098)
-
-- 리스팅(Listings) 박스를 체크하여 플랜에 포함시킨 다음 **Save Changes(변경사항 저장)**를 클릭하여 확인하세요
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319802/original/fizIgah2TOMCM4Ull5nYpf6-MR8kVE9Tmw.png?1751577133)
+- 신뢰도 높은 디렉터리의 구조화된 백링크로 SEO를 높여요.
+- 주요 리스팅 플랫폼 전반에서 업체 정보를 일관되게 유지해요.
+- 약정 부담이 적어요(최소 1개월).
+- 서브 계정에 재판매할 때 마진을 직접 정할 수 있어요.
+- 기존 패키지와 함께 제공할 수 있는 부가가치 서비스예요.
 
 ---
 
-## 리스팅을 재판매하는 방법
+## SaaS 상품에 리스팅 추가하기
 
-에이전시를 위한 새로운 수익원을 창출하기 위해 리스팅을 재판매 항목으로 설정하세요. [SaaS 오퍼에 리스팅을 추가하는 방법에 대한 자세한 내용은 여기를 클릭하세요.](how-to-resell-listings-to-your-clients.md)
+리스팅을 SaaS 플랜에 묶으면 고객에게 로컬 SEO 솔루션을 한 번에 제공할 수 있어요. 자세한 내용은 별도 안내 문서를 참고하세요.
 
-### 에이전시 전체 리스팅 기본 가격 설정 방법
+1. 에이전시 대시보드에서 **SaaS 구성기**(SaaS Configurator)로 이동하세요.
 
-에이전시 레벨 가격은 고객이 리스팅을 활성화할 때 보게 될 기본 비용을 정의합니다. 가격 슬라이더를 사용하여 요금을 설정하고 플랜별 월간 수익을 미리 볼 수 있습니다. 가격을 설정하려면 다음 단계를 따르세요:
+   ![에이전시 대시보드에서 SaaS 구성기 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319774/original/OL-lXHl00ScuRkAVe8ENw3HnNG21uDMhSA.png?1751576984)
+2. 수정할 플랜을 찾아 **세부 정보 수정**을 클릭하세요.
 
-- 에이전시 뷰(Agency View)에서 왼쪽 네비게이션 바의 리셀링(Reselling)을 클릭하세요
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319859/original/e9_c4-V4YwxNbA1xiwetyQpm_CV62GysXg.jpeg?1751577319)
+   ![플랜의 세부 정보 수정 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319787/original/Q0Mv61GeXxq0IPQ0kg4YA0hAx26h5tQw7Q.png?1751577032)
+3. **애드온** 섹션으로 이동하세요.
 
-- 리스팅(Listings)까지 스크롤하여 슬라이더를 조정해 가격을 설정하세요
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319861/original/WntnatqgQfnIGUxpapdXXKZvHpkOqsVgYA.jpeg?1751577319)
+   ![애드온 섹션으로 이동](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319798/original/bPYVpDagwXxPEqQt2ZGEwsVFCtIyhV3W2g.png?1751577098)
+4. **리스팅** 체크박스를 선택해 플랜에 포함하고, **변경사항 저장**을 클릭해 확정하세요.
 
-- 선택한 가격에 기반한 고객 가격(Client Pricing), 비용(Your Cost), 수익(Your Profit)을 미리 보세요. 파란색 저장(Save) 버튼을 클릭하여 변경사항을 적용하세요
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319860/original/eH0XA_PsXqhynwmKfY6me2Xq09IS8dzPPw.jpeg?1751577319)
-
----
-
-### 하위 계정별 리스팅 가격 커스터마이징 방법
-
-고유한 고객 요구사항에 맞춰 개별 하위 계정의 기본 가격을 재정의할 수 있습니다. 가격을 설정하려면 다음 단계를 따르세요:
-
-- 에이전시 뷰에서 왼쪽 네비게이션 바를 사용하여 Sub-Accounts(하위 계정)로 이동하세요
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319881/original/4ROn5nymwce2Ghd3nhMD7uT8xIebb5qLTA.jpeg?1751577353)
-
-- 원하는 하위 계정에서 3점 아이콘을 클릭하고 Manage Client(클라이언트 관리)를 선택하세요
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319879/original/0VMtDAFVksd30XaYbVrOdIiqbhG4z6cp-A.jpeg?1751577352)
-
-- Reselling(리셀링) → Listings(리스팅)으로 이동하세요
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319882/original/XINDwRBvUS5xNyoZWyZM5HLEBkLWSOQSqA.jpeg?1751577353)
-
-- 필요에 따라 가격 슬라이더를 조정하세요
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319880/original/JLNphAKHkgAEWhfzF3nqrvvClfMzL9-gtQ.jpeg?1751577353)
+   ![리스팅 체크박스 선택 후 변경사항 저장](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319802/original/fizIgah2TOMCM4Ull5nYpf6-MR8kVE9Tmw.png?1751577133)
 
 ---
 
-### 고객이 리스팅 오퍼를 구매하는 방법
+## 리스팅 재판매하기
 
-기능을 활성화한 경우 고객은 하위 계정에서 직접 리스팅을 활성화할 수 있습니다. 하위 계정 내에서 리스팅을 활성화하려면 다음 단계를 따르세요:
+리스팅을 재판매 상품으로 설정하면 에이전시의 새로운 수익원을 만들 수 있어요. 자세한 내용은 별도 안내 문서를 참고하세요.
 
-- 하위 계정에서 왼쪽 네비게이션 바를 사용하여 Reputation(평판 관리)으로 이동하세요
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319900/original/A5nAeJ7OnNcO6dvJd9duzMejIUzPex34sA.jpeg?1751577449)
+### 에이전시 전체 리스팅 기본 가격 설정하기
 
-- 상단의 Listings(리스팅) 탭을 클릭하세요
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319894/original/mRLwp8B9LsILyL17k2YM2f4puw9GOaiZnw.jpeg?1751577448)
+에이전시 단위 가격은 고객이 리스팅을 활성화할 때 기본으로 보게 되는 비용이에요. 가격 슬라이더로 요금을 정하고, 플랜별 월 수익을 미리 볼 수 있어요. 다음 순서로 가격을 설정하세요.
 
-- Activate Listings(리스팅 활성화) 버튼을 누르세요
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319897/original/oSBdpiEn70O_WStKj5vssMbHiJQREiu0fg.jpeg?1751577449)
+1. **에이전시 보기**에서 왼쪽 메뉴의 **재판매**를 클릭하세요.
 
-- 플랜을 선택하고 결제를 확인하세요
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319893/original/hBqPcRNPqM6GS8B9fPO3Nl7bMuS3_3pGGg.jpeg?1751577448)
+   ![왼쪽 메뉴에서 재판매 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319859/original/e9_c4-V4YwxNbA1xiwetyQpm_CV62GysXg.jpeg?1751577319)
+2. 아래로 스크롤해 **리스팅**을 찾고, 슬라이더를 움직여 가격을 정하세요.
 
-- 리스팅 정보를 입력하세요
+   ![슬라이더로 리스팅 가격 조정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319861/original/WntnatqgQfnIGUxpapdXXKZvHpkOqsVgYA.jpeg?1751577319)
+3. 선택한 가격 기준의 **Client Pricing**(고객 가격), **비용**, **수익**을 확인하세요. 파란색 **저장** 버튼을 클릭하면 변경 내용이 적용돼요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049480467/original/evMOxM3kY_HDcnYfNYpGjPnD8fhh03rx5g.png?1751923737)
+   ![가격 미리보기 후 저장 버튼 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319860/original/eH0XA_PsXqhynwmKfY6me2Xq09IS8dzPPw.jpeg?1751577319)
 
 ---
 
-## 고객에게 직접 요금을 청구하지 않고 리스팅을 배포하는 방법
+### 서브 계정별 리스팅 가격 따로 설정하기
 
-별도 청구 없이 서비스의 일부로 리스팅을 포함하려면 다음 단계를 따르세요. [SaaS 오퍼에 리스팅을 추가하는 방법에 대한 자세한 내용은 여기를 클릭하세요.](deploy-listings-without-directly-charging-the-client.md)
+고객 상황에 맞게 개별 서브 계정의 가격을 기본 가격과 다르게 정할 수 있어요. 다음 순서로 설정하세요.
 
-#### 1단계: 하위 계정 관리로 이동
+1. **에이전시 보기**에서 왼쪽 메뉴의 **서브 계정**으로 이동하세요.
 
-- 에이전시 뷰에서 왼쪽 네비게이션 바를 사용하여 Sub-Accounts(하위 계정)로 이동하세요
-- 원하는 하위 계정을 찾으세요
-- 오른쪽 하단의 3점(⋮) 아이콘을 클릭하고 Manage Client(클라이언트 관리)를 선택하세요
+   ![왼쪽 메뉴에서 서브 계정 이동](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319881/original/4ROn5nymwce2Ghd3nhMD7uT8xIebb5qLTA.jpeg?1751577353)
+2. 해당 서브 계정의 점 3개 아이콘을 클릭하고 **고객 관리**를 선택하세요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319934/original/vUMtxmoEiT__oAIiu6P80TOQS2YZiRFspQ.jpeg?1751577590)
+   ![점 3개 아이콘에서 고객 관리 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319879/original/0VMtDAFVksd30XaYbVrOdIiqbhG4z6cp-A.jpeg?1751577352)
+3. **재판매 > 리스팅**으로 이동하세요.
 
-#### 2단계: 리셀링 탭에서 리스팅 접근
+   ![재판매 아래 리스팅으로 이동](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319882/original/XINDwRBvUS5xNyoZWyZM5HLEBkLWSOQSqA.jpeg?1751577353)
+4. 가격 슬라이더를 필요한 만큼 조정하세요.
 
-- 상단 네비게이션 리본에서 Reselling(리셀링)을 선택하세요
-- 좌측 보조 네비게이션 바에서 Listings(리스팅)를 선택하세요
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319935/original/fv8cQ2nRWBPyfjdcUzJo_3A14MhHjl03wQ.jpeg?1751577590)
-
-#### 3단계: "Deploy Listings Directly(리스팅 직접 배포)" 활성화
-
-- Deploy Listings Directly(리스팅 직접 배포) 섹션까지 스크롤하세요
-- 배포 약관을 검토하고 동의 박스를 체크하세요
-- 파란색 Pay Now!(지금 결제!) 버튼을 클릭하세요
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319933/original/CxHicg18rBkQ1EDCYUV_ZKe982GDFsprnA.jpeg?1751577589)
+   ![가격 슬라이더 조정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319880/original/JLNphAKHkgAEWhfzF3nqrvvClfMzL9-gtQ.jpeg?1751577353)
 
 ---
 
-## 리스팅 청구 이해하기
+### 고객이 리스팅 상품을 구매하는 방법
 
-리스팅 재판매는 2계층 청구 구조를 사용합니다:
+이 기능을 켜 두면 고객이 자신의 서브 계정에서 직접 리스팅을 활성화할 수 있어요. 서브 계정 안에서 리스팅을 활성화하는 순서예요.
 
-- 에이전시 → Hyperclass: 에이전시 지갑을 통해 월별 요금이 청구됩니다
-- 고객 → 에이전시: 고객은 여러분의 Stripe 연동을 통해 청구됩니다
+1. 서브 계정의 왼쪽 메뉴에서 **평판 관리**로 이동하세요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319941/original/CSlJPRbXcZ1QiuxFZgs_-nAGSB7FkRZisg.png?1751577642)
+   ![왼쪽 메뉴에서 평판 관리 이동](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319900/original/A5nAeJ7OnNcO6dvJd9duzMejIUzPex34sA.jpeg?1751577449)
+2. 상단의 **리스팅** 탭을 클릭하세요.
+
+   ![상단의 리스팅 탭 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319894/original/mRLwp8B9LsILyL17k2YM2f4puw9GOaiZnw.jpeg?1751577448)
+3. **등록 정보 활성화** 버튼을 클릭하세요.
+
+   ![등록 정보 활성화 버튼 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319897/original/oSBdpiEn70O_WStKj5vssMbHiJQREiu0fg.jpeg?1751577449)
+4. 플랜을 선택하고 결제를 확인하세요.
+
+   ![플랜 선택과 결제 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319893/original/hBqPcRNPqM6GS8B9fPO3Nl7bMuS3_3pGGg.jpeg?1751577448)
+5. 리스팅 정보를 입력하세요.
+
+   ![리스팅 정보 입력 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049480467/original/evMOxM3kY_HDcnYfNYpGjPnD8fhh03rx5g.png?1751923737)
 
 ---
 
-## **Hyperclass 인보이스 이해하기**
+## 고객에게 직접 청구하지 않고 리스팅 배포하기
 
-에이전시가 청구 기간 중 다른 날짜에 판매를 진행하면, 다음 청구 사이클에서 요금이 비례 배분됩니다.
+별도 청구 없이 리스팅을 서비스에 포함하고 싶다면 다음 순서를 따르세요. 자세한 내용은 별도 안내 문서를 참고하세요.
 
-월 중 다른 날짜에 판매가 이루어지더라도 같은 청구 기간에 단일 인보이스를 받으실 수 있도록 비례 청구를 진행합니다.
+#### 1단계: 서브 계정 관리로 이동하기
 
-각 인보이스는 이전 청구 사이클에서 이루어진 판매에 대해 조정하고 다음 청구 사이클에 대해 선불로 결제합니다.
+- **에이전시 보기**의 왼쪽 메뉴에서 **서브 계정**으로 이동하세요.
+- 원하는 서브 계정을 찾으세요.
+- 오른쪽 아래의 점 3개(⋮) 아이콘을 클릭하고 **고객 관리**를 선택하세요.
 
-**인보이스 예시:**
+![서브 계정에서 고객 관리 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319934/original/vUMtxmoEiT__oAIiu6P80TOQS2YZiRFspQ.jpeg?1751577590)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319946/original/4RmDKy2J5JocL_tjwhAk1hjgeDcpPwl-gg.png?1751577685)
+#### 2단계: 재판매 탭에서 리스팅 열기
+
+- 상단 메뉴에서 **재판매**를 선택하세요.
+- 두 번째 왼쪽 메뉴에서 **리스팅**을 선택하세요.
+
+![재판매 탭에서 리스팅 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319935/original/fv8cQ2nRWBPyfjdcUzJo_3A14MhHjl03wQ.jpeg?1751577590)
+
+#### 3단계: 리스팅 직접 배포 활성화하기
+
+- **리스팅 직접 배포** 섹션까지 스크롤하세요.
+- 배포 약관을 확인하고 동의 체크박스를 선택하세요.
+- 파란색 **지금 결제!** 버튼을 클릭하세요.
+
+![리스팅 직접 배포 섹션에서 지금 결제 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319933/original/CxHicg18rBkQ1EDCYUV_ZKe982GDFsprnA.jpeg?1751577589)
+
+---
+
+## 리스팅 청구 방식 이해하기
+
+리스팅 재판매는 두 단계로 청구돼요.
+
+- 에이전시 → 하이퍼클래스: 에이전시 지갑에서 매월 청구돼요.
+- 고객 → 에이전시: 에이전시의 Stripe 연동을 통해 고객에게 청구돼요.
+
+![리스팅 두 단계 청구 구조 도식](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319941/original/CSlJPRbXcZ1QiuxFZgs_-nAGSB7FkRZisg.png?1751577642)
+
+---
+
+## 하이퍼클래스 인보이스 이해하기
+
+에이전시가 청구 기간 중 서로 다른 날에 판매하면, 요금은 다음 청구 주기에 일할 계산돼요.
+
+일할 계산을 쓰는 이유는 한 달 안에서 판매한 날이 달라도 같은 청구 기간에 인보이스를 한 장만 받도록 하기 위해서예요.
+
+인보이스는 지난 청구 주기에 판매한 금액을 정산하고, 다음 청구 주기 요금을 선결제하는 방식으로 조정돼요.
+
+인보이스 예시:
+
+![인보이스 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049319946/original/4RmDKy2J5JocL_tjwhAk1hjgeDcpPwl-gg.png?1751577685)
 
 ---
 
 ## 문제 해결
 
-드물게 온라인 리스팅이 예상대로 작동하지 않을 수 있습니다. 몇 가지 가능한 시나리오는 다음과 같습니다:
+드물게 온라인 리스팅이 예상대로 동작하지 않을 수 있어요. 가능한 상황을 아래에 정리했어요.
 
-### **내 리스팅이 잘못 보여요 / 리스팅이 고객을 기다리고 있어요 / 리스팅이 파트너를 기다리고 있어요 / 모든 리스팅이 여전히 처리 중이에요**
+### 리스팅이 이상하게 보여요 / 고객 대기 중이에요 / 파트너 대기 중이에요 / 모든 리스팅이 계속 처리 중이에요
 
-이러한 모든 경우의 공통 원인은 여러분이나 고객이 제출한 양식 데이터에 실수가 있기 때문입니다. 오류는 다음과 같을 수 있습니다:
+이런 경우 대부분 에이전시나 고객이 제출한 폼 데이터에 오류가 있어서예요. 오류는 다음 항목에서 생길 수 있어요.
 
-- 주소 필드: 주소 라인 필드에 우편번호가 적혀 있음
-- 실제 주소 대신 사서함 사용
-- 거리 주소만 사용 (층/호수, 상점 번호 누락)
-- 사업명이 부적절함
-- 전화번호가 유효하지 않음
-- 이메일 ID가 유효한 이메일이 아님
+- 주소 항목
+  - 우편번호를 주소 입력란에 적은 경우
+  - 실제 주소 대신 사서함(PO Box)을 쓴 경우
+  - **상세 주소**만 입력하고 호수나 매장 번호를 빠뜨린 경우
+- **사업자명**이 올바르지 않은 경우
+- 전화번호가 유효하지 않은 경우
+- 이메일 주소가 유효하지 않은 경우
 
-에이전시 사용자로서 리스팅 계정에 로그인하여 오류를 쉽게 수정할 수 있습니다.
+에이전시 사용자라면 리스팅 계정에 로그인해 오류를 수정하면 돼요.
 
-### **내 리스팅이 라이브되지 않아요. 검토 중(In-review) 메시지가 보여요**
+### 리스팅이 게시되지 않고 검토 중(In-review) 메시지가 보여요
 
-이는 리스팅이 같은 주소, 전화번호 또는 이메일 ID에 대한 중복 리스팅을 발견했을 때 발생합니다.
+같은 주소, 전화번호, 이메일로 등록된 중복 리스팅이 발견되면 이런 메시지가 나타나요.
 
-"검토 중" 메시지가 보이면 이 문서의 단계를 따르세요: [리스팅 취소 또는 중복 상태 해결 – 단계별 가이드](resolving-yext-canceled-or-duplicate-states-step-by-step-guide.md)
+"검토 중" 메시지가 보이면 「리스팅 취소·중복 상태 해결 단계별 가이드」 문서의 절차를 따르세요.
 
-### 리스팅에 가입된 로케이션을 어떻게 확인하나요?
+### 어떤 위치가 리스팅에 가입했는지 어떻게 확인하나요?
 
-리스팅 오퍼를 활성화한 하위 계정을 확인하려면:
+리스팅 상품을 활성화한 서브 계정을 확인하는 방법이에요.
 
-- 에이전시 대시보드로 이동하세요
-- **Sub-Accounts(하위 계정)**로 이동하세요
-- **Advanced Filter(고급 필터)** 옵션을 여세요
-- **Listings(리스팅)** 필터를 선택하여 리스팅이 활성화된 하위 계정을 확인하세요
+1. **에이전시 대시보드**로 이동하세요.
+2. **서브 계정**으로 이동하세요.
+3. **Advanced Filter**(고급 필터) 옵션을 여세요.
+4. **리스팅** 필터를 선택하면 리스팅이 활성화된 서브 계정을 볼 수 있어요.
 
-### 고객의 소셜 미디어를 온라인 리스팅에 연결하는 방법은?
+### 고객의 소셜 미디어를 온라인 리스팅에 연결하려면 어떻게 하나요?
 
-소셜 미디어 프로필(Facebook, Instagram, LinkedIn 등)을 연결하려면 다음 단계를 따르세요:
+소셜 미디어 프로필(Facebook, Instagram, LinkedIn 등)을 연결하는 방법이에요.
 
-- 고객의 하위 계정에서 Reputation(평판 관리) > Listings(리스팅)으로 이동하세요
-- 메시지가 나타나면 리스팅 대시보드에서 Complete Required Information(필수 정보 완료)를 클릭하여 Social Profiles(소셜 프로필) 탭으로 이동하세요
+1. 고객의 서브 계정에서 **평판 관리 > 리스팅**으로 이동하세요.
+2. 안내가 나오면 리스팅 대시보드에서 **필수 정보 입력 완료**를 클릭하세요. **소셜 프로필** 탭으로 이동해요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049479729/original/KdKOXkN4kLqDKPIyvd2O3c3_4tPaBRVhYA.jpeg?1751921237)
+   ![필수 정보 입력 완료 클릭 후 소셜 프로필 탭 이동](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049479729/original/KdKOXkN4kLqDKPIyvd2O3c3_4tPaBRVhYA.jpeg?1751921237)
+3. 해당 링크나 사용자 이름을 입력하고 저장하세요.
 
-- 관련 링크나 사용자명을 입력하고 변경사항을 저장하세요
+   ![소셜 프로필 링크 입력 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049479704/original/jOP6C4sjcqPl867hKhlvzsZzrLfFU-mvaw.png?1751921138)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049479704/original/jOP6C4sjcqPl867hKhlvzsZzrLfFU-mvaw.png?1751921138)
+### 리스팅이 게시되지 않고 취소됨(Cancelled) 메시지가 보여요
 
-### **내 리스팅이 라이브되지 않아요. 화면에 취소됨(Cancelled) 메시지가 보여요**
+고객이 이전 업체와 계약 중인 것으로 확인되면 이런 메시지가 나타나요. 법적인 이유로 리스팅이 이전 업체에서 새 업체로 등록 정보를 옮길 수 없어요.
 
-이는 리스팅이 고객이 이전 제공업체와 계약 중이라는 것을 확인했고, 법적 이유로 리스팅을 기존 제공업체에서 새 제공업체로 이동할 수 없을 때 발생합니다.
-
-이런 경우 Hyperclass 지원팀에 문의해 주세요.
+이 경우 하이퍼클래스 고객지원에 문의하세요.
 
 ---
 
 ## 자주 묻는 질문
 
-**Q: 리스팅이 동기화되는 데 얼마나 걸리나요?**
-일반적으로 24-48시간이지만, 일부 플랫폼은 최대 일주일이 걸릴 수 있습니다.
+### 리스팅이 동기화되는 데 얼마나 걸리나요?
 
-**Q: 중간에 리스팅을 취소할 수 있나요?**
-네, 하지만 현재 청구 사이클에 대한 요금은 환불되지 않습니다.
+보통 24~48시간 걸려요. 플랫폼에 따라 최대 일주일까지 걸릴 수 있어요.
 
-**Q: 리스팅 구독을 취소하는 방법은?**
-하위 계정의 리스팅을 취소하려면 이 가이드의 단계를 따르세요: [Hyperclass에서 하위 계정의 리스팅 취소하기.](cancelling-listings-for-your-sub-account-in-highlevel.md)
+### 계약 기간 중간에 리스팅을 해지할 수 있나요?
 
-**Q: 리스팅이 수동으로 생성된 프로필과 충돌하나요?**
-수동 입력을 덮어쓸 수 있으므로 가능한 한 리스팅이 프로필을 관리하도록 하세요.
+해지할 수 있어요. 다만 현재 청구 주기의 요금은 환불되지 않아요.
 
-**Q: 비즈니스 정보가 변경되면 어떻게 되나요?**
-리스팅 내에서 업데이트되면 리스팅이 모든 디렉터리에서 자동으로 업데이트합니다.
+### 리스팅 구독을 해지하려면 어떻게 하나요?
 
-**Q: 고객이 Google 비즈니스 프로필(GMB)과 페이스북 페이지를 연결하는 방법은?**
-리스팅이 Google 비즈니스 프로필과 페이스북과 동기화되도록 하려면 고객이 리스팅 설정 과정에서 각각의 계정을 연결해야 합니다. 자세한 내용은 이 문서를 참조하세요: [리스팅과 Google 비즈니스 프로필 및 페이스북 연동](google-business-profile-and-facebook-integration-with-listings.md).
+서브 계정의 리스팅을 해지하려면 「하이퍼클래스에서 서브 계정의 리스팅 해지하기」 가이드의 절차를 따르세요.
 
-**Q: 리스팅 제안 기능을 어떻게 사용하나요?**
-리스팅 제안은 모범 사례를 기반으로 한 프로필 개선 팁을 제공합니다. Reputation(평판 관리) > Listings(리스팅) > Suggestions(제안)으로 이동하여 보고 적용하세요. 자세한 내용은 [리스팅 제안 기능 사용법](how-to-use-the-listings-suggestions-feature.md)을 참조하세요.
+### 직접 만든 프로필과 리스팅이 충돌하나요?
 
----
+수동으로 입력한 정보를 덮어쓸 수 있어요. 가능하면 리스팅이 프로필을 관리하도록 맡기세요.
 
-## 관련 문서
+### 업체 정보가 바뀌면 어떻게 되나요?
 
-- [리스팅 시작하기](getting-started-with-listings.md)
-- [고객에게 리스팅을 재판매하는 방법](how-to-resell-listings-to-your-clients.md)
-- [재청구, 재판매, 지갑 설명](../../36-기타/Miscellaneous/rebilling-reselling-and-wallets-explained.md)
-- [리스팅과 Google 비즈니스 프로필 및 페이스북 연동](google-business-profile-and-facebook-integration-with-listings.md)
-- [리스팅 제안 기능 사용법](how-to-use-the-listings-suggestions-feature.md)
-- [고객에게 직접 청구하지 않고 리스팅 배포하기](deploy-listings-without-directly-charging-the-client.md)
-- [Hyperclass에서 하위 계정의 리스팅 취소하기](cancelling-listings-for-your-sub-account-in-highlevel.md)
+리스팅 안에서 정보를 수정하면 모든 디렉터리에 자동으로 반영돼요.
 
----
-*원문 최종 수정: Mon, 7 Jul, 2025 at 4:36 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### 고객이 Google 비즈니스 프로필(GMB)과 Facebook 페이지를 연결하려면 어떻게 하나요?
+
+리스팅이 Google 비즈니스 프로필, Facebook과 동기화되려면 고객이 리스팅 설정 과정에서 각 계정을 연결해야 해요. 자세한 내용은 「Google 비즈니스 프로필 및 Facebook과 리스팅 연동」 문서를 참고하세요.
+
+### 리스팅 **제안** 기능은 어떻게 사용하나요?
+
+리스팅 제안은 모범 사례를 바탕으로 프로필을 개선할 수 있는 팁을 알려 줘요. **평판 관리 > 리스팅 > 제안**에서 확인하고 적용할 수 있어요. 자세한 내용은 「리스팅 제안 기능 사용하기」 문서를 참고하세요.

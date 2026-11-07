@@ -1,63 +1,83 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 10-마케팅 > Campaign Settings/Functionalities
+원문: /support/solutions/articles/155000003104-how-to-use-the-plain-text-editor-for-emails
+번역일: 2026-11-07
+카테고리: 10-마케팅
 ---
 
-# 이메일용 플레인 텍스트 에디터 사용법
+# 이메일 일반 텍스트 에디터 사용하기
 
-이메일 편집기 옵션을 3가지로 확장하여 플레인 텍스트 에디터를 추가하게 되어 기쁘게 알려드립니다.
+일반 텍스트 에디터를 쓰면 시각적인 레이아웃을 만들지 않고도 글 중심의 간단한 이메일을 작성할 수 있어요. 디자인 요소보다 글로 전하는 내용이 더 중요한 메시지에 알맞아요. 이 문서에서는 일반 텍스트 에디터가 무엇인지, 언제 쓰는지, 일반 텍스트 이메일 템플릿을 어떻게 만드는지, 다른 이메일 에디터와 무엇이 다른지 알아봐요.
 
-**목차**
+## 일반 텍스트 에디터란?
 
-- [플레인 텍스트를 사용하는 이유](#플레인-텍스트를-사용하는-이유)
-- [지표가 말하는 것은?](#지표가-말하는-것은)
-- [장점](#장점)
-- [사용 방법](#사용-방법)
+일반 텍스트 에디터는 하이퍼클래스의 이메일 편집 방식 중 하나로, 글 중심의 간단한 메시지를 만들 때 써요. 이메일이 직접 보낸 메시지처럼 느껴지길 바라고, **디자인 에디터**에 있는 시각적인 레이아웃은 필요 없을 때 유용해요.
 
-## **플레인 텍스트를 사용하는 이유**
+## 일반 텍스트 에디터를 쓰면 좋은 경우
 
-플레인 텍스트 이메일은 개인 메일함에서 받는 메시지와 비슷한 단순하고 개인적인 접근 방식을 제공합니다. 최소한의 브랜딩과 디자인으로 메시지 자체에 집중합니다.
+디자인된 레이아웃보다 글 내용이 중심이 되는 메시지에 알맞아요.
 
-다양한 용도로 사용할 수 있는데, 그 중 몇 가지는 다음과 같습니다:
+대표적인 예는 다음과 같아요.
 
-- 텍스트가 많은 커뮤니케이션에서는 큰 텍스트 블록을 사용합니다. 이 에디터는 모든 기기에서 일관된 가독성을 보장합니다.
-- 환영 이메일이나 사과 이메일과 같은 개인화된 이메일은 여전히 직접적이고 디자인이 복잡하지 않은 것을 선호합니다.
+- 1:1 메시지나 대화체 메시지
+- 환영 이메일이나 후속 이메일
+- 글이 많은 안내 메일
+- 복잡한 레이아웃이나 시각 디자인이 필요 없는 이메일
 
-## **지표가 말하는 것은?**
+## 일반 텍스트 이메일 템플릿 만들기
 
-다양한 연구에 따르면 고객이 플레인 텍스트 이메일과 상호작용할 확률이 디자인 집약적인 이메일보다 거의 두 배 높다고 합니다.
+드래그 앤 드롭 디자인이나 사용자 지정 HTML 대신 글 중심의 이메일을 만들고 싶다면, 새 템플릿을 만들 때 일반 텍스트 에디터를 선택하세요.
 
-## **장점**
+1. **마케팅 > 이메일 > 템플릿**으로 이동하세요.
+2. **+ 신규**를 클릭하세요.
+   ![신규 버튼을 클릭하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155082344619/original/ohFFJjc34NvOYOakWvCvQDJMyghtWbJgCw.png?1790924171)
+3. **새 템플릿 만들기**를 선택해 처음부터 새 이메일 템플릿을 만드세요.
+4. 에디터 옵션이 나오면 **일반 텍스트**를 선택하세요.
+   ![에디터 옵션에서 일반 텍스트를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155082345273/original/vhuNKgYwYPYz-Y0rEtllpYa2tYk7iIX_kA.png?1790924754)
+5. 이메일 내용을 입력하세요.
+6. 캠페인이나 자동화에서 쓰기 전에 이메일을 한 번 검토하세요.
+7. **Save Template**(템플릿 저장)을 클릭하세요.
+   ![템플릿 저장 버튼을 클릭하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155082344819/original/9WhXViRnyoH3gCuTA2gDp9wzwTDgzCorWw.png?1790924423)
 
-- **단순성**: 이해하고 사용하기 쉽습니다.
-- **개인화**: 직접적인 커뮤니케이션처럼 느껴집니다.
-- **호환성**: 이메일 클라이언트 간 렌더링 문제가 적습니다. 어떤 기기에서도 멋지게 보입니다.
+## 일반 텍스트와 다른 이메일 에디터 비교
 
-## **사용 방법**
+하이퍼클래스는 이메일을 만드는 방식에 따라 여러 편집 옵션을 제공해요.
 
-- `Marketing(마케팅) → Email Marketing(이메일 마케팅) → Templates(템플릿)`으로 이동하세요.
+### 일반 텍스트
 
-![이메일 마케팅 템플릿으로 이동](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034304133/original/uPLkcfjzglsP_6XVvj48E3yaD0bIgRO2wA.png?1728385588)
+디자인된 레이아웃이 필요 없는 간단한 글 중심 메시지에 쓰세요.
 
-- "New(새로 만들기)"를 클릭하고 "Blank Template(빈 템플릿)"을 선택하세요.
+### 디자인 에디터
 
-![새 템플릿 만들기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034304574/original/P_zluz0SNoEhSgL0489drfwck_1mNyvg5g.png?1728385772)
+드래그 앤 드롭 요소와 디자인된 레이아웃으로 시각적인 이메일을 만들 때 쓰세요.
 
-![빈 템플릿 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034304612/original/JrMidqYl8-dMYcfgXs3jihbkt0Wcm6A87g.png?1728385794)
+### Code Editor(코드 에디터)
 
-- "Plain Text editor(플레인 텍스트 에디터)"를 선택하세요.
+이메일의 HTML을 직접 다뤄야 할 때 쓰세요.
 
-![플레인 텍스트 에디터 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033866404/original/KNLJqJHHsLmWDI6MF1UY-i_Oe6zQyUlqCA.png?1727778684)
+{% hint style="info" %}
+일반 텍스트는 **Quick Compose**(빠른 작성)와 달라요. Quick Compose는 가볍게 이메일을 만드는 별도 옵션이고, 일반 텍스트는 **Smart Builder**(스마트 빌더)에서 고를 수 있는 에디터 옵션이에요.
+{% endhint %}
 
-- 이메일을 작성하고 필요에 따라 이미지를 첨부하세요.
+## 이메일 미리보기와 테스트
 
-![이메일 작성 및 이미지 첨부](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032251848/original/OuoEQaB1cFm2eTykwKiFGS2s52kkB-7RKg.jpg?1725461005)
+실제 캠페인에 템플릿을 쓰기 전에 이메일을 꼭 확인해 보세요. 하이퍼클래스는 이메일 캠페인과 템플릿에 미리보기와 **Test Email**(테스트 이메일) 도구를 제공해요. 이 도구로 보내기 전에 내용, 개인화 항목, 받은편지함에서 보이는 모습을 확인할 수 있어요.
 
-- 점 세 개 버튼을 클릭하여 설정 관리, 테스트 이메일 발송 또는 미리보기를 할 수 있습니다. "Save template(템플릿 저장)"을 클릭하여 완료하세요.
+테스트 방법은 [이메일 캠페인/템플릿 미리보기 및 테스트](../../../09-이메일/기타/preview-and-test-your-email-campaign-templates.md)에서 자세히 볼 수 있어요.
 
-![설정 및 템플릿 저장](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034305183/original/TqelgLUfYcBAW0YYKg0X_b9a8ZEhDrSE-w.png?1728386140)
+## 자주 묻는 질문
 
----
-*원문 최종 수정: Thu, 10 Oct, 2024 at 1:12 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### 하이퍼클래스에서 일반 텍스트 에디터를 아직 쓸 수 있나요?
+
+네, 쓸 수 있어요. 일반 텍스트는 하이퍼클래스의 Smart Builder에서 고를 수 있는 에디터 옵션으로 계속 제공돼요.
+
+### 일반 텍스트와 Quick Compose는 같은 건가요?
+
+아니요. Quick Compose는 가볍게 이메일을 만드는 별도 옵션이에요. 일반 텍스트는 Smart Builder에서 고를 수 있는 에디터 옵션이에요.
+
+### 워크플로우에서도 일반 텍스트 에디터를 쓸 수 있나요?
+
+네, 쓸 수 있어요. 워크플로우의 **Send Email**(이메일 보내기) 액션에서 **Smart Builder > 일반 텍스트**를 지원해요.
+
+### 디자인 에디터는 언제 쓰나요?
+
+이미지, 버튼, 열처럼 시각적인 레이아웃이나 드래그 앤 드롭 요소가 필요한 이메일이라면 디자인 에디터를 쓰세요.

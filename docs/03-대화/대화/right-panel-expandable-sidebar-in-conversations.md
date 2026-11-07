@@ -1,41 +1,31 @@
 ---
-
-번역일: 2026-04-06
-카테고리: 03-대화 > 대화
+원문: /support/solutions/articles/155000001321-right-panel-expandable-sidebar-in-conversations
+번역일: 2026-11-07
+카테고리: 03-대화
 ---
 
-# 대화 화면의 우측 패널 & 확장 가능한 사이드바
+# 대화 화면의 오른쪽 패널과 확장형 사이드바
 
-대화(Conversations) 내의 슬림 패널을 소개합니다. 화면 우측에 위치한 이 세련되고 간결한 패널은 직관적인 네비게이션과 통합된 정보 접근의 미래를 보여줍니다. 필요에 따라 확장하거나 축소할 수 있어, 필요한 데이터와 기능에 손쉽게 접근할 수 있습니다. 슬림 패널에서는 사용자에게 선택권이 주어집니다. 클릭 한 번으로 "연락처(Contact)", "예약(Appointments)", "기회 관리(Opportunity)" 뷰를 자유롭게 전환할 수 있습니다.
+**대화**(Conversations) 화면 오른쪽에 있는 **Slim Panel**(슬림 패널, 오른쪽 패널)에서 연락처, 예약, 기회 정보를 바로 확인하고 관리하는 방법을 안내해요. 이 패널은 필요에 따라 펼치거나 접을 수 있어요.
 
-이 문서의 내용
+**Slim Panel**에서는 **연락처**, **예약**, **기회** 보기를 클릭 한 번으로 오갈 수 있어요.
 
-- [기능 1 - 연락처](#기능-1-연락처)
-- [기능 2 - 예약](#기능-2-예약)
-- [기능 3 - 기회 관리](#기능-3-기회-관리)
-
----
-
-이러한 개선 사항을 통해 대화 화면에서 필요한 모든 핵심 데이터와 기능에 접근할 수 있습니다. 다른 모듈로 이동할 필요가 없어졌습니다. 사용자 경험이 매끄럽고 자연스러워지도록 개선되었습니다. 정보를 더 쉽게 접근할 수 있도록 하고, 상호작용을 간소화하며, 효율성을 향상시켜 더욱 직관적이고 생산적인 경험을 제공하도록 설계했습니다.
+이제 **대화** 화면을 벗어나지 않고도 필요한 데이터와 기능을 모두 쓸 수 있어요. 다른 메뉴로 이동할 필요가 없어요. 정보를 더 쉽게 찾고, 작업을 더 빠르고 편하게 끝낼 수 있도록 만들었어요.
 
 ## 기능 1 - 연락처
 
-이제 이름, 전화번호, 이메일부터 담당자 정보, 태그, 캠페인 연결, 그리고 중요한 DnD(수신 거부) 설정까지 모든 연락처 세부 정보를 매끄럽게 추가, 편집, 관리할 수 있습니다. 진행 중인 대화를 놓치지 않으면서도 연락처 데이터베이스를 최신 상태로 유지할 수 있는 원스톱 솔루션입니다.
+**연락처** 보기에서는 연락처 정보를 추가하고, 편집하고, 관리할 수 있어요. 이름, 전화번호, 이메일은 물론 담당자 정보, 태그, 캠페인 연결, 수신거부 설정까지 한 곳에서 다룰 수 있어요. 진행 중인 대화에서 벗어나지 않고 연락처 데이터를 최신 상태로 유지할 수 있어요.
 
-![연락처 패널](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010869904/original/aIHn63Jxv4D_6NFEHxYK5mode5KBGQnwPQ.png?1698123624)
+![연락처 보기가 열린 오른쪽 패널](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010869904/original/aIHn63Jxv4D_6NFEHxYK5mode5KBGQnwPQ.png?1698123624)
 
 ## 기능 2 - 예약
 
-이제 우측 패널에서 바로 새로운 예약을 생성하고, 예정된 예약과 과거 예약을 모두 확인하며, 일정을 변경할 수도 있습니다. 더 이상 여러 화면을 번거롭게 오가지 않아도 됩니다. 이 기능으로 일정을 체계적으로 관리할 수 있습니다.
+**예약** 보기에서는 오른쪽 패널을 벗어나지 않고 새 예약을 잡을 수 있어요. 앞으로 있을 예약과 지난 예약을 모두 확인하고, 일정도 다시 잡을 수 있어요. 여러 화면을 거쳐 이동하지 않아도 일정을 한눈에 챙길 수 있어요.
 
-![예약 패널](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010869921/original/CMmLIDReFx1GoI5v5lJQeEs04uZU_KdHJw.png?1698123677)
+![예약 보기가 열린 오른쪽 패널](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010869921/original/CMmLIDReFx1GoI5v5lJQeEs04uZU_KdHJw.png?1698123677)
 
-## 기능 3 - 기회 관리
+## 기능 3 - 기회
 
-단일 중앙 집중식 위치에서 새로운 기회를 생성하고, 연락처와 관련된 모든 기존 기회를 확인하며, 기회 세부 정보를 매끄럽게 편집할 수 있습니다.
+**기회** 보기에서는 새 기회를 만들 수 있어요. 연락처와 연결된 기존 기회를 모두 확인하고, 기회 상세 정보도 편집할 수 있어요. 이 모든 작업을 한 곳에서 할 수 있어요.
 
-![기회 관리 패널](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010869938/original/PNGqYtFVC5tg9RnIXRdB8RbOPyJrK4H-pA.png?1698123721)
-
----
-*원문 최종 수정: Tue, 24 Oct, 2023 at 12:04 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+![기회 보기가 열린 오른쪽 패널](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010869938/original/PNGqYtFVC5tg9RnIXRdB8RbOPyJrK4H-pA.png?1698123721)

@@ -1,85 +1,89 @@
 ---
-번역일: 2026-04-06T00:00:00.000Z
+원문: /support/solutions/articles/48001181302-how-to-re-integrate-google-calendar-for-a-user
+번역일: 2026-11-07
 카테고리: 04-캘린더-예약
 ---
 
-# 사용자의 구글 캘린더 재연동하기
+# 사용자의 Google 캘린더 다시 연동하기
 
-이 가이드에서는 구글 캘린더와 Hyperclass를 재연동하여 동기화 문제를 해결하고 캘린더 기능을 복원하는 방법을 안내합니다.
+Google 캘린더를 하이퍼클래스에 다시 연동해서 동기화 문제를 해결하고 캘린더 기능을 복구하는 방법을 안내해요.
 
-**중요사항**: 구글 계정 연결은 해당 구글 계정의 실제 소유자가 직접 해야 하므로 "대신 로그인" 기능을 사용할 수 없습니다.
+{% hint style="warning" %}
+"로그인해서 보기(login as)" 기능은 쓸 수 없어요. Google 계정 연결은 그 계정을 소유한 사용자가 직접 해야 해요.
+{% endhint %}
 
-## 목차
+## Google 캘린더 재연동이란?
 
-* [구글 캘린더 재연동이란?](how-to-re-integrate-google-calendar-for-a-user.md#구글-캘린더-재연동이란)
-* [구글 캘린더 재연동 단계](how-to-re-integrate-google-calendar-for-a-user.md#구글-캘린더-재연동-단계)
-  * [1단계: 구글 캘린더 삭제](how-to-re-integrate-google-calendar-for-a-user.md#1단계-구글-캘린더-삭제)
-  * [2단계: 구글 캘린더 재연동](how-to-re-integrate-google-calendar-for-a-user.md#2단계-구글-캘린더-재연동)
-* [자주 묻는 질문](how-to-re-integrate-google-calendar-for-a-user.md#자주-묻는-질문)
+Google 계정이 연결되어 있는데도 동기화가 계속 실패한다면, **설정 > 연동 > Google**에서 권한이 부족하다는 경고가 있는지 확인하세요. 경고가 있으면 **Reconnect**(다시 연결)를 클릭해서 Google OAuth 인증을 다시 진행하고, 빠진 권한을 허용하세요.
 
-***
+{% hint style="info" %}
+다시 연결하면, 연동이 끊긴 동안 만들어졌는데 아직 동기화되지 않은 예정 예약이 하이퍼클래스에서 자동으로 동기화돼요. 동기화하려고 예약을 일일이 수정할 필요는 없어요.
+{% endhint %}
 
-## 구글 캘린더 재연동이란?
+다음과 같은 경우에 재연동을 권장해요.
 
-구글 계정은 연결되어 있지만 동기화가 여전히 실패한다면, Settings(설정) → Integrations(연동) → Google에서 권한 누락 경고를 확인하세요. Reconnect(재연결)를 사용해서 구글 OAuth를 다시 실행하고 누락된 권한을 부여할 수 있습니다.
+- 캘린더 일정이 동기화되지 않을 때
+- Google 계정의 권한이 변경되었거나 취소되었을 때
+- 캘린더 연결이 끊겨서 다시 연결해야 할 때
+- 계정에 인증 오류나 동기화 문제가 계속 나타날 때
 
-다음과 같은 경우에 재연동이 필요합니다:
+## Google 캘린더 재연동 절차
 
-* 캘린더 이벤트 동기화가 중단된 경우
-* 구글 계정 권한이 변경되거나 취소된 경우
-* 캘린더가 연결 해제되어 다시 연결이 필요한 경우
-* 계정에서 Open Authorization 오류나 동기화 문제가 나타나는 경우
+### 1단계: Google 캘린더 삭제
 
-## 구글 캘린더 재연동 단계
+연결된 Google 캘린더는 두 곳에서 삭제할 수 있어요.
 
-### 1단계: 구글 캘린더 삭제
+**1. 내 프로필에서 삭제하기**
 
-연결된 구글 캘린더는 두 곳에서 삭제할 수 있습니다.
+1. 서브 계정에서 **설정**을 클릭하세요.
+2. **내 프로필**을 선택하세요.
+3. **캘린더 설정**으로 이동하세요.
+4. 연결된 Google 계정의 **삭제**(휴지통) 아이콘을 클릭하세요.
 
-**1. My Profile(내 프로필) 섹션에서:**
+![내 프로필의 캘린더 설정에서 연결된 Google 계정 삭제 아이콘](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155052594133/original/ALs3W46u-TZyhIJvjaJe_-U-4OpyhB-Lsw.png?1756387386)
 
-하위 계정의 \*\*Settings(설정)\*\*을 클릭합니다. **My Profile(내 프로필)** 옵션을 선택하고 Calendar Settings(캘린더 설정)으로 이동한 후, 연결된 구글 계정의 **Bin/Delete(휴지통/삭제)** 아이콘을 클릭하세요.
+**2. 캘린더 연결 화면에서 삭제하기**
 
-![구글 캘린더 삭제 - My Profile](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155052594133/original/ALs3W46u-TZyhIJvjaJe_-U-4OpyhB-Lsw.png?1756387386)
+1. **설정 > 캘린더**로 이동하세요.
+2. **연결** 탭을 선택하세요.
+3. **Connected Calendars**(연결된 캘린더) 아래에서 연결된 Google 계정의 **삭제**(휴지통) 아이콘을 클릭하세요.
 
-**2. Calendar Connections(캘린더 연결) 섹션에서:**
+![연결 탭의 연결된 캘린더에서 Google 계정 삭제 아이콘](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155052594415/original/4dcbvs0OqHramXOF8ldYzXb0LilpKBHapA.png?1756387570)
 
-Settings(설정) → Calendars(캘린더)로 이동하고 Connections(연결) 탭을 선택합니다. Connected Calendars(연결된 캘린더) 아래에서 연결된 구글 계정의 Bin/Delete(휴지통/삭제) 아이콘을 클릭하세요.
+팝업이 나타나면 확인 체크박스를 선택하고 **확인**을 클릭하세요.
 
-![구글 캘린더 삭제 - Calendar Connections](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155052594415/original/4dcbvs0OqHramXOF8ldYzXb0LilpKBHapA.png?1756387570)
+![삭제 확인 팝업](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155052594468/original/I-xNSIBPMDKX70NFowQF08pK6BkZYlJSIw.png?1756387626)
 
-팝업에서 확인 체크박스를 선택하고 Confirm(확인)을 클릭합니다.
+### 2단계: Google 캘린더 다시 연동
 
-![삭제 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155052594468/original/I-xNSIBPMDKX70NFowQF08pK6BkZYlJSIw.png?1756387626)
+위와 같은 두 곳(내 프로필, 캘린더 연결 화면)에서 Google 캘린더를 다시 연결할 수 있어요.
 
-### 2단계: 구글 캘린더 재연동
+1. 서브 계정에서 **설정**을 클릭하고 **내 프로필**을 선택하세요. **캘린더 설정**에서 **새로 추가 +** 버튼을 클릭하세요. Google 계정을 연결하는 자세한 과정은 "Google 캘린더를 하이퍼클래스와 연동하는 방법" 가이드를 참고하세요.
 
-위에서 설명한 것과 동일한 두 섹션(My Profile(내 프로필) 섹션과 Calendar Connections(캘린더 연결) 섹션)에서 구글 캘린더를 다시 연결할 수 있습니다.
+![새로 추가 버튼을 눌러 Google 캘린더를 연결하는 과정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155052596409/original/cblnkrM4D_FEvrGVr-tvceSs5C4yAYGeOg.gif?1756388248)
 
-1. 하위 계정 Settings(설정)을 클릭하고 My Profile(내 프로필) 옵션을 선택한 후, Calendar Settings(캘린더 설정) 아래에서 **+ Add New(새로 추가)** 버튼을 클릭하세요. [Hyperclass와 구글 캘린더 연동하기](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/04-%EC%BA%98%EB%A6%B0%EB%8D%94-%EC%98%88%EC%95%BD/%EC%BA%98%EB%A6%B0%EB%8D%94-%EC%97%B0%EB%8F%99/integrating-google-with-highlevel-calendars.md) 가이드를 참고하여 구글 계정을 성공적으로 연결할 수도 있습니다.
-
-![구글 캘린더 재연동](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155052596409/original/cblnkrM4D_FEvrGVr-tvceSs5C4yAYGeOg.gif?1756388248)
-
-**참고사항**: 재연동 과정을 완료한 후, 구글 캘린더를 테스트하여 동기화 과정이 예상대로 작동하는지 확인하세요. 테스트 후에도 문제가 계속된다면 추가 지원을 위해 고객 지원팀에 문의해 주세요.
+{% hint style="info" %}
+재연동을 마친 뒤에는 Google 캘린더를 테스트해서 동기화가 제대로 되는지 확인하세요. 테스트 후에도 문제가 계속되면 하이퍼클래스 고객지원에 문의하세요.
+{% endhint %}
 
 ## 자주 묻는 질문
 
-**Q: 재연결하기 전에 기존 연동을 삭제해야 하나요?**\
-A: 네, 동기화 충돌을 피하기 위해 현재의 구글 캘린더 연동을 연결 해제한 후 재연결하는 것이 좋습니다.
+### 다시 연결하기 전에 기존 연동을 먼저 삭제해야 하나요?
 
-**Q: 캘린더 연결을 해제하면 예약이 사라지나요?**\
-A: 아니요, 연결 해제와 재연결은 시스템에 이미 동기화된 과거나 향후 예약을 삭제하지 않습니다.
+네, 동기화 충돌을 피하려면 다시 연결하기 전에 현재 Google 캘린더 연동을 먼저 해제하는 것을 권장해요.
 
-**Q: 캘린더가 성공적으로 재연동되었는지 어떻게 알 수 있나요?**\
-A: 재연결 후에는 활성 동기화 상태로 캘린더가 목록에 표시됩니다. 테스트 예약을 생성하여 양쪽에 모두 나타나는지 확인하여 테스트할 수 있습니다.
+### 캘린더 연결을 해제하면 예약이 사라지나요?
 
-**Q: 다른 구글 계정으로 재연동할 수 있나요?**\
-A: 네, 기존 계정을 연결 해제한 후 재연동 시 다른 구글 로그인을 사용할 수 있습니다. 캘린더 이벤트에 맞는 올바른 계정인지 확인하세요.
+아니요. 연결을 해제했다가 다시 연결해도, 이미 시스템에 동기화된 지난 예약과 예정 예약은 삭제되지 않아요.
 
-**Q: 같은 사용자에게 여러 캘린더를 연결할 수 있나요?**\
-A: 네, 여러 캘린더를 추가할 수 있지만 기본 캘린더는 하나만 가질 수 있습니다.
+### 캘린더가 제대로 다시 연동되었는지 어떻게 알 수 있나요?
 
-***
+다시 연결하면 캘린더가 동기화 상태가 활성인 채로 목록에 표시돼요. 테스트 예약을 만들어서 하이퍼클래스와 Google 캘린더 양쪽에 모두 나타나는지 확인해 보세요.
 
-_원문 최종 수정: Thu, 12 Feb, 2026 at 3:34 AM_\
-_&#x48;yperclass 사용 가이드 — hyperclass.ai_
+### 다른 Google 계정으로 다시 연동할 수 있나요?
+
+네. 기존 계정의 연결을 해제한 뒤, 재연동할 때 다른 Google 계정으로 로그인하면 돼요. 캘린더 일정이 들어 있는 계정이 맞는지만 확인하세요.
+
+### 한 사용자에게 캘린더를 여러 개 연결할 수 있나요?
+
+네, 캘린더를 여러 개 추가할 수 있어요. 다만 주 캘린더는 하나만 지정할 수 있어요.

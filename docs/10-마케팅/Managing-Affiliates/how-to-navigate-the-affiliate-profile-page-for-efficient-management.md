@@ -1,110 +1,280 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 10-마케팅 > Managing Affiliates
+원문: /support/solutions/articles/155000003649-how-to-navigate-the-affiliate-profile-page-for-efficient-management
+번역일: 2026-11-06
+카테고리: 10-마케팅
 ---
 
-# 효율적인 관리를 위한 제휴 프로필 페이지 탐색 방법
+# 제휴사 프로필 페이지 살펴보기
 
-**제휴 프로필 페이지(Affiliate Profile Page)**는 제휴사 성과를 종합적으로 볼 수 있는 화면으로, 사용자가 한 곳에서 제휴사 활동을 관리하고 추적할 수 있게 해줍니다. 이 페이지는 핵심 세부사항, 통계, 도구에 대한 접근을 제공하여 제휴사 관리를 간소화합니다.
+제휴사 프로필 페이지에서는 제휴사 한 곳의 정보, 캠페인 활동, 추천 링크, 커미션, 리드, 고객, 지급 내역, 서브 제휴사 관계를 한곳에서 볼 수 있어요. 추천 링크 커스터마이징이나 캠페인 지정 같은 캠페인별 관리도 이 페이지에서 할 수 있어요.
 
-![제휴 프로필 페이지 개요](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033803390/original/qQeNoQp8XTXKIwy_7IM0vU41nv4G3UzuYA.jpeg?1727702664)
+보이는 정보는 제휴사의 캠페인 활동과 설정에 따라 달라져요. 이 문서에서는 프로필의 각 영역을 설명하고, 더 자세한 관리 방법은 관련 문서로 안내해요.
 
-**목차**
+## 제휴사 프로필 페이지란?
 
-- [제휴 프로필 페이지의 주요 구성 요소:](#제휴-프로필-페이지의-주요-구성-요소)
-- [1. 제휴사 세부정보:](#1-제휴사-세부정보)
-- [2. 제휴사 통계:](#2-제휴사-통계)
-- [3. 캠페인 인사이트:](#3-캠페인-인사이트)
-- [4. 직접 캠페인 할당:](#4-직접-캠페인-할당)
-- [5. 활성 추천 링크:](#5-활성-추천-링크)
-- [6. 커미션 탭:](#6-커미션-탭)
-- [7. 리드 탭:](#7-리드-탭)
-- [8. 고객 탭:](#8-고객-탭)
-- [9. 지급금:](#9-지급금)
-- [10. 하위 제휴사 목록:](#10-하위-제휴사-목록)
+제휴사 프로필 페이지는 **제휴 관리자**(Affiliate Manager)에서 제휴사 한 곳의 정보를 관리자 입장에서 보는 화면이에요.
 
----
+제휴사 정보, 캠페인 활동, 추천 링크, 커미션 내역, 리드, 고객, 지급 내역, 서브 제휴사 정보가 프로필 하나에 모여 있어요.
 
-## **제휴 프로필 페이지의 주요 구성 요소:**
+이 페이지는 제휴사가 직접 보는 화면인 **제휴 포털**과는 달라요.
 
-### **1. 제휴사 세부정보:**
+## 제휴사 프로필 페이지의 장점
 
-- 제휴사의 **이메일**, **가입일**, 그리고 **상위 제휴사**(해당하는 경우)와 같은 중요한 정보를 표시합니다.
-- 제휴사의 포털에 빠르게 접근할 수 있는 **매직 링크**가 포함되어 있습니다.
+제휴사의 현재 활동과 관리 기능을 한 화면에서 볼 수 있어요.
 
-![제휴사 세부정보](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033803388/original/6an_GM7lKf4F8ik-5g8Er5K8QqTK7NEPVg.jpeg?1727702664)
+- 제휴사 정보 한눈에 보기: 제휴사 신원, 가입일, 해당하는 경우 상위 제휴사 정보를 확인해요.
+- 캠페인 현황 확인: 전체 요약과 캠페인별 요약을 확인해요.
+- 추천 링크 관리: 캠페인별 추천 링크를 복사하거나 커스터마이징해요.
+- 커미션 관리: 지원되는 커미션 내역을 확인하고 처리해요.
+- 리드·고객 관리: 이 제휴사를 통해 들어온 리드와 고객을 확인해요.
+- 지급 내역 확인: 지급 기록과 현재 지급 정보를 확인해요.
+- 서브 제휴사 확인: 다단계 캠페인에서 지원되는 계층 정보를 확인해요.
 
-### **2. 제휴사 통계:**
+## 제휴사 프로필 열기
 
-- 다음과 같은 지표를 통해 제휴사의 성과 스냅샷을 확인하세요:
-  - **생성된 수익**
-  - **미지급 금액**
-  - **리드 수**
-  - **신규 고객**
+프로필 단위의 정보를 보거나 관리하려면 먼저 제휴사 목록에서 제휴사를 열어야 해요.
 
-### **3. 캠페인 인사이트:**
+1. 하이퍼클래스 **서브 계정**에서 **마케팅**을 선택하세요.
+2. **제휴 관리자**를 선택하세요.
+3. **제휴**를 여세요.
+4. 목록에서 원하는 제휴사를 찾으세요.
+5. 제휴사 프로필을 여세요.
 
-- 다양한 캠페인에서 제휴사의 참여 현황을 확인하세요.
-- 커미션 획득 및 지급 수령과 같은 **요약 지표**를 볼 수 있습니다.
-- 필터를 사용하여:
-  - 개별 캠페인별로 데이터를 보거나 **통합 요약**을 확인하세요.
-  - **활성, 삭제된, 비활성 캠페인** 간을 전환하세요.
+## 제휴사 상세 정보와 통계
 
-![캠페인 인사이트](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033803383/original/270Y4lQTpK823pt8S1cPQawgKMHyeiakIQ.jpeg?1727702664)
+프로필 맨 위에는 제휴사가 누구인지, 선택한 기간의 성과가 어떤지 나와요.
 
-### **4. 직접 캠페인 할당:**
+### 제휴사 상세 정보
 
-- 프로필 페이지에서 직접 제휴사를 새 캠페인에 할당하여 캠페인 관리를 간소화하세요.
+**Affiliate Details**(제휴사 상세 정보) 영역에는 다음 항목이 나올 수 있어요.
 
-![직접 캠페인 할당](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033803382/original/NzW-rJtf6y1ZeM3dXCEBd4aSWit3fd9tuA.jpeg?1727702664)
+- 제휴사 이름
+- 이메일
+- **Joined**(가입일)
+- **Parent Affiliate**(상위 제휴사): 해당하는 경우에만 나와요.
+- **로그인 정보**
+- **Edit Affiliate Details**(제휴사 상세 정보 편집)
 
-### **5. 활성 추천 링크:**
+![제휴사 프로필 상단의 상세 정보 영역](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155082835406/original/tESbdI7vl6vthgAHGW0sfUrLUJq8vW-CBQ.png?1791455965)
 
-- 다양한 캠페인에서 제휴사의 모든 추천 링크를 확인하세요.
+### 로그인 정보
 
-![활성 추천 링크](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033803384/original/YbWnHxtMhoaHecZtKusCwl19ZBkv0kjspw.jpeg?1727702664)
+**로그인 정보**를 선택하면 제휴사의 로그인 정보를 확인할 수 있어요.
 
-- 필요에 따라 특정 캠페인의 **추천 ID**를 커스터마이징하세요.
+### 제휴사 통계
 
-![추천 ID 커스터마이징](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033803386/original/6zKKzs6inpUlJYnBLZxyIZZAyCcnWD6uwQ.jpeg?1727702664)
+**통계** 영역에는 현재 다음 항목이 나와요.
 
-### **6. 커미션 탭:**
+- **매출**
+- **Owed**(지급해야 할 금액)
+- **리드**
+- **신규 고객**
 
-- 제휴사 커미션을 관리하며, 다음 기능에 빠르게 접근하세요:
-  - 커미션을 **승인** 또는 **거부**하세요.
-  - 필요할 때 제휴사에게 수동으로 커미션을 추가하세요.
+날짜 범위 선택기를 사용하면 선택한 기간의 통계를 볼 수 있어요.
 
-![커미션 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033803387/original/DEde5jFc4uOxWxNAgsbw7gZefwhUQePM7A.jpeg?1727702664)
+## 캠페인 인사이트
 
-### **7. 리드 탭:**
+캠페인 인사이트에서는 제휴사의 커미션과 지급 요약을 전체 기준 또는 캠페인별로 볼 수 있어요.
 
-- 제휴사의 리드를 검토하고, 필요에 따라 **리드를 삭제**할 수 있는 옵션을 제공합니다.
-- 더 세밀한 제어를 위해 제휴사의 목록에 수동으로 리드를 추가하세요.
+다음 항목을 활용하세요.
 
-![리드 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033803380/original/rEGdlScA5rxvkuGSdAcGQd199Jolu7XudA.jpeg?1727702663)
+- **All Campaign**(전체 캠페인): 전체를 합산해서 볼 때 사용해요.
+- 캠페인별 탭: 캠페인 하나의 데이터를 볼 때 사용해요.
+- **Show Deleted Campaign**(삭제된 캠페인 표시): 삭제된 캠페인 정보가 필요할 때 사용해요.
 
-### **8. 고객 탭:**
+### 커미션 요약
 
-- 제휴사가 추천한 고객 목록과 그들의 **커미션 기록**에 접근하세요.
+커미션 요약에는 현재 다음 항목이 나와요.
 
-![고객 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033803389/original/Ib4vk_R-axunCNc8bhwZiajYWbHKVwGZEQ.jpeg?1727702664)
+- **Total unpaid**(미지급 합계)
+- **대기 중**
+- **거부됨**
+- **승인됨**
 
-### **9. 지급금:**
+선택한 캠페인 보기 기준으로 커미션 활동을 요약해서 보여 줘요.
 
-- 제휴사 지급금을 추적하고, **지급 상태**(예: 대기 중, 완료)별로 필터링하여 쉽게 추적하고 책임을 관리하세요.
+### 지급 요약
 
-![지급금](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033803385/original/1mmpSprSrHKoqFjdCNl8JUU17MabUc1u3w.jpeg?1727702664)
+지급 요약에는 선택한 캠페인 보기 기준의 지급 관련 합계와 상태별 건수가 나와요.
 
-### **10. 하위 제휴사 목록:**
+지급이 진행되는 과정과 처리 방식은 [제휴 지급 및 커미션 관리 문서](../Affiliate-Payouts/how-to-manage-affiliate-payouts-and-commissions.md)에서 자세히 확인하세요.
 
-- 선택한 제휴사와 연결된 모든 **하위 제휴사**를 표시하여 제휴사의 네트워크 구조에 대한 인사이트를 제공합니다.
+### 삭제된 캠페인 표시
 
----
+프로필에 삭제된 캠페인 정보까지 포함해서 보고 싶다면 **Show Deleted Campaign**을 켜세요.
 
-**제휴 프로필 페이지**는 필수 정보에 쉽게 접근할 수 있도록 설계되어 제휴사 성과를 관리, 추적 및 최적화하는 것을 더 간단하게 만들어줍니다.
+이 옵션이 비활성 캠페인을 걸러 주는 필터라고 생각하면 안 돼요.
 
----
+![캠페인 인사이트와 삭제된 캠페인 표시 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155082836125/original/mrQNoMPeagoR3rIf5kMXcMUsaBCJPPlR4w.png?1791456322)
 
-*원문 최종 수정: Tue, 1 Oct, 2024 at 4:30 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+## 제휴사를 캠페인에 지정하기
+
+제휴사를 다른 제휴 캠페인에 연결해야 하면 **+ Add to a Campaign**(캠페인에 추가)을 사용하세요.
+
+1. 제휴사 프로필을 여세요.
+2. 점 세 개 아이콘을 클릭하세요.
+3. **Campaign Actions**(캠페인 작업)를 클릭하세요.
+4. **+ Add to a Campaign**을 클릭하세요.
+5. 연결할 캠페인을 검색하세요.
+6. 제휴사에 연결할 캠페인을 선택하세요.
+
+## 활성 추천 링크
+
+**Active referral links**(활성 추천 링크) 영역에는 제휴사에 지정된 캠페인별 추천 URL이 나와요.
+
+목록에 나온 캠페인마다 프로필에서 다음을 볼 수 있어요.
+
+- 캠페인 이름
+- 추천 URL
+- 복사 버튼
+- **커스터마이징**
+
+![활성 추천 링크 목록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155082837759/original/EJbNUVfZNqgZT5PMM55O8S-mGZmZ_jz8lQ.png?1791457076)
+
+### 추천 ID 커스터마이징
+
+**커스터마이징**을 사용하면 제휴사의 캠페인별 **Referral ID**(추천 ID)를 바꿀 수 있어요.
+
+1. **Active referral links**에서 캠페인을 찾으세요.
+2. **커스터마이징**을 클릭하세요.
+3. **Referral link**(추천 링크) 탭을 선택하세요.
+4. **Referral ID**를 수정하세요.
+5. **Link preview**(링크 미리보기)를 확인하세요.
+6. 변경 내용을 저장하세요.
+
+## 커미션
+
+**Commissions**(커미션) 탭에서는 관리자가 커미션 내역을 확인하고, 지원되는 커미션 작업을 할 수 있어요.
+
+현재 탭에는 다음 필터가 있어요.
+
+- **전체**
+- **대기 중**
+- **승인됨**
+- **거부됨**
+
+커미션 내역에는 다음 항목이 나와요.
+
+- **금액**
+- **매출**
+- **Created At**(생성일)
+- **고객**
+- **Product**(상품)
+- **캠페인**
+
+### 커미션 승인과 거부
+
+현재 제휴 관리자에서는 해당 조건에 맞는 커미션 내역을 승인하거나 거부할 수 있어요.
+
+거부된 커미션은 지원되는 경우 삭제할 수도 있어요.
+
+여러 건을 한 번에 승인·거부·삭제하는 방법은 [제휴 관리자의 일괄 작업: 승인, 거부, 삭제](../Affiliate-Payouts/sub-account-affiliate-manager-bulk-actions-for-affiliate-commissions.md) 문서를 참고하세요.
+
+## 리드
+
+**리드** 탭에는 이 제휴사를 통해 들어온 리드가 나오고, 검색과 지원되는 리드 관리 작업을 할 수 있어요.
+
+현재 표에는 다음 항목이 나와요.
+
+- 이름
+- 이메일
+- **Created At**(생성일)
+- **캠페인**
+
+사용할 수 있는 기능은 다음과 같아요.
+
+- 검색
+- **Add Lead**(리드 추가)
+- 행별 작업
+
+## 고객
+
+**고객** 탭에는 이 제휴사를 통해 들어온 고객이 나오고, 고객과 관련된 작업을 할 수 있어요.
+
+현재 표에는 다음 항목이 나와요.
+
+- 이름
+- 이메일
+- **Created At**(생성일)
+- **캠페인**
+- **매출**
+
+검색과 행별 작업도 할 수 있어요.
+
+## 지급
+
+**지급** 탭에는 이 제휴사와 관련된 지급 내역이 나와요.
+
+현재 표에는 다음 항목이 나와요.
+
+- **상태**
+- **마감**
+- **금액**
+- **Payout month**(지급 월)
+- **캠페인**
+
+현재 보이는 필터는 다음과 같아요.
+
+- **전체**
+- **대기 중**
+- **승인됨**
+- **거부됨**
+
+지급 내역에는 **유료**, **대기 중** 같은 상태가 나올 수 있어요.
+
+현재 제휴 관리자 문서에서는 지급 상태를 다음과 같이 구분해요.
+
+- **대기 중**
+- **Approved for Payout**(지급 승인됨)
+- **유료**
+- **거부됨**
+
+지급 처리 방법은 [제휴 지급 및 커미션 관리 문서](../Affiliate-Payouts/how-to-manage-affiliate-payouts-and-commissions.md)를 참고하세요.
+
+## 서브 제휴사
+
+**Sub-Affiliate**(서브 제휴사) 탭에서는 제휴사가 다단계 캠페인에 참여하는 경우 계층 정보를 볼 수 있어요.
+
+이 영역에서 지원되는 상위·서브 제휴사 관계를 확인하고 관리할 수 있어요.
+
+하이퍼클래스는 현재 캠페인 단위로 최대 7단계까지 지원해요.
+
+![서브 제휴사 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155082838908/original/VxWJ-Pl4qwZFXEKpLd2je3U8H4CfuLTivg.png?1791457619)
+
+## 자주 묻는 질문
+
+### 제휴사 프로필은 어디에서 찾나요?
+하이퍼클래스 서브 계정에서 **마케팅 > 제휴 관리자 > 제휴**로 이동한 뒤, 확인하려는 제휴사를 여세요.
+
+### 제휴사 프로필 페이지에서 어떤 정보를 볼 수 있나요?
+제휴사 상세 정보, 통계, 캠페인 요약, 추천 링크, 커미션, 리드, 고객, 지급 내역, 서브 제휴사 정보를 볼 수 있어요.
+
+### 프로필에서 제휴사를 다른 캠페인에 추가할 수 있나요?
+네. **+ Add to a Campaign**을 사용해 다른 제휴 캠페인을 선택하세요.
+
+### 제휴사의 추천 ID를 커스터마이징할 수 있나요?
+네. **Active referral links**에서 **커스터마이징**을 선택하고 **Referral link** 탭을 연 다음, 추천 ID를 수정하세요.
+
+### 프로필에서 커미션을 승인하거나 거부할 수 있나요?
+네. 조건에 맞는 커미션 내역은 **Commissions** 영역에서 승인하거나 거부할 수 있어요.
+
+### 제휴사의 리드를 직접 추가할 수 있나요?
+네. **리드** 탭에서 **Add Lead**를 사용하고, 나오는 연락처 가져오기 과정을 따라 하세요.
+
+### 고객별로 연결된 커미션을 확인할 수 있나요?
+현재 **고객** 탭에는 고객 내역마다 **View Commissions**(커미션 보기) 작업이 있어요.
+
+### 제휴사의 지급 내역은 어디에서 확인하나요?
+**지급** 탭을 열면 지급 상태, 마감 정보, 금액, 지급 월, 캠페인을 확인할 수 있어요.
+
+### 서브 제휴사 탭은 언제 쓰나요?
+제휴사가 조건에 맞는 다단계 제휴 캠페인에 참여할 때 사용해요.
+
+## 관련 문서
+
+- [제휴 관리자의 일괄 작업: 승인, 거부, 삭제](../Affiliate-Payouts/sub-account-affiliate-manager-bulk-actions-for-affiliate-commissions.md)
+- [수동 매출 추가하기](how-to-add-manual-sales.md)
+- [제휴사별 고객 관리하기](managing-customers-under-affiliates.md)
+- [제휴 지급 및 커미션 관리](../Affiliate-Payouts/how-to-manage-affiliate-payouts-and-commissions.md)
+- [제휴 관리자에서 서브 제휴사 추가하기](how-to-add-sub-affiliates-in-the-affiliate-manager.md)
+- [쿠폰으로 제휴 판매 추적하기](how-to-track-affiliate-sales-using-coupons.md)

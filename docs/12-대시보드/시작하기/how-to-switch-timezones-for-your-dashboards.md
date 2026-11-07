@@ -1,43 +1,25 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 12-대시보드 > 시작하기
+원문: /support/solutions/articles/155000001628-how-to-switch-timezones-for-your-dashboards
+번역일: 2026-11-07
+카테고리: 12-대시보드
 ---
 
-# 대시보드 시간대를 변경하는 방법
+# 대시보드 시간대 변경하기
 
-다양한 시간대에 있는 팀원들이 있는 경우, 시간대 전환 기능으로 대시보드 경험을 개인화할 수 있어요. 사용자는 자신의 선호도에 따라 보고 있는 대시보드의 시간대를 관리하고 업데이트할 수 있습니다.
+팀원이 서로 다른 시간대에 있다면 시간대 전환 기능으로 대시보드를 내 시간대에 맞춰 볼 수 있어요. 대시보드마다 원하는 시간대를 직접 정하고 바꿀 수 있어요.
 
-**목차**
+1. 개인용 대시보드나 공유 대시보드 중 아무 대시보드나 열어요.
+2. 화면의 점 3개 메뉴(⋮)를 클릭해요.
 
-- [1단계: 대시보드 열기 (개인 또는 공유 대시보드)](#1단계-대시보드-열기-개인-또는-공유-대시보드)
-- [2단계: 3점 메뉴 클릭](#2단계-3점-메뉴-클릭)
-- [3단계: "대시보드 시간대 관리" 선택](#3단계-대시보드-시간대-관리-선택)
-- [4단계: 원하는 시간대 선택](#4단계-원하는-시간대-선택)
-- [5단계: 변경사항 저장](#5단계-변경사항-저장)
-- [참고사항:](#참고사항)
+   ![점 3개 메뉴를 클릭하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155016225004/original/-5ibg55m9ROyjcpWIl_TogJG1bmqLnwuvg.png?1703746250)
 
----
+3. **Manage Dashboard Timezone**(대시보드 시간대 관리)을 선택해요.
+4. 원하는 시간대를 선택해요.
 
-### 1단계: 대시보드 열기 (개인 또는 공유 대시보드)
+   ![원하는 시간대를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155016225039/original/O3nTUSaXOVNQO87VC1EU0PsPuHU7lmBXWQ.png?1703746277)
 
-### 2단계: 3점 메뉴 클릭
+5. **변경사항 저장**을 클릭해요.
 
-![3점 메뉴 위치](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155016225004/original/-5ibg55m9ROyjcpWIl_TogJG1bmqLnwuvg.png?1703746250)
-
-### 3단계: "Manage Dashboard Timezone(대시보드 시간대 관리)" 선택
-
-### 4단계: 원하는 시간대 선택
-
-![시간대 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155016225039/original/O3nTUSaXOVNQO87VC1EU0PsPuHU7lmBXWQ.png?1703746277)
-
-### 5단계: 변경사항 저장
-
----
-
-## 참고사항:
-선택한 시간대는 당신이 보는 모든 대시보드에 적용됩니다. 이 기능은 모든 요금제와 역할에서 사용 가능하며, 대시보드에 접근할 수 있는 모든 사용자가 자신의 화면에 맞는 시간대를 설정할 수 있어요. 대시보드 경험을 개선하고 효율적으로 작업하세요!
-
----
-*원문 최종 수정: 2024년 4월 23일*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+{% hint style="info" %}
+선택한 시간대는 내가 보는 모든 대시보드에 적용돼요. 이 기능은 모든 요금제와 모든 역할에서 쓸 수 있어요. 대시보드를 볼 수 있는 사용자라면 누구나 자기 화면의 시간대를 바꿀 수 있어요.
+{% endhint %}

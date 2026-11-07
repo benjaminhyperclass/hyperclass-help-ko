@@ -1,198 +1,154 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 10-마케팅 > RSS Guide
+원문: /support/solutions/articles/48001201780-how-to-use-rss-blocks-in-the-email-builder
+번역일: 2026-11-06
+카테고리: 10-마케팅
 ---
 
-# 이메일 빌더의 RSS 블록
+# 이메일 빌더에서 RSS 블록 사용하기
 
-**목차**
+RSS 블록을 쓰면 블로그 글이나 피드 업데이트를 하이퍼클래스 이메일 빌더로 만든 이메일에 자동으로 넣을 수 있어요. 피드 정보는 **RSS Header**(RSS 헤더) 블록으로, 개별 글은 **RSS Items**(RSS 항목) 블록으로 보여 줘요. 준비된 레이아웃을 고르거나, 지원되는 RSS 변수로 직접 꾸밀 수도 있어요. 이 문서에서는 설정, 테스트, 그리고 RSS 내용이 채워지려면 꼭 필요한 발송 옵션을 안내해요.
 
-- [개요](#개요)
-- [사용법](#사용법)
-  - [RSS 헤더](#rss-헤더)
-  - [RSS 헤더의 기본 vs 커스텀](#rss-헤더의-기본-vs-커스텀)
-- [RSS 아이템](#rss-아이템)
-  - [RSS 아이템의 기본 vs 커스텀](#rss-아이템의-기본-vs-커스텀)
-- [HTML 기반 RSS 피드](#html-기반-rss-피드)
-- [예약 설정](#예약-설정)
-  - [발송 옵션](#발송-옵션)
-- [RSS 이메일 테스트](#rss-이메일-테스트)
-- [RSS 캠페인 보기 및 편집](#rss-캠페인-보기-및-편집)
+## RSS 블록이란?
 
-## 개요
+**RSS(Really Simple Syndication)** 는 웹사이트가 새 소식을 공유할 때 쓰는 형식이에요. 하이퍼클래스에는 RSS 피드 데이터를 캠페인에 넣어 주는 이메일 블록이 두 가지 있어요.
 
-Hyperclass 이메일 빌더의 RSS 요소(Elements)를 사용하면 새로운 RSS(Real Simple Syndication) 아이템이 게시될 때 동적으로 콘텐츠가 삽입된 이메일을 자동으로 발송할 수 있습니다.
+- **RSS Header:** 피드의 제목, 설명 같은 피드 전체 정보를 보여 줘요.
+- **RSS Items:** 개별 글의 제목, 발췌문, 링크 등 사용할 수 있는 항목을 보여 줘요.
 
-## 사용법
+블록은 하나만 써도 되고 둘 다 써도 돼요. 블록은 내용을 채워 주는 역할만 하고, 캠페인이 언제 발송될지는 **RSS Schedule**(RSS 발송 일정)이 정해요. 블록을 추가했다고 해서 글이 게시되는 순간 이메일이 바로 나가지는 않아요.
 
-### RSS 헤더
+## RSS 블록의 장점
 
-![RSS 헤더 블록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48155855351/original/vkt1WTZi4swPcywq_8ebw7FWUejefs3UTQ.png?1636131879)
+RSS 블록을 쓰면 정기적으로 올라오는 콘텐츠를 뉴스레터마다 새로 만들지 않고, 이메일 레이아웃 하나를 계속 재사용할 수 있어요.
 
-RSS Header(RSS 헤더) 블록
+- 동적 콘텐츠: 예약된 이메일에 피드 업데이트를 넣을 수 있어요.
+- 유연한 레이아웃: 제목, 발췌문, 이미지, 전체 콘텐츠 또는 사용자 지정 레이아웃 중에서 고를 수 있어요.
+- 일관된 디자인: 피드 내용을 이메일 템플릿의 디자인에 맞춰 보여 줘요.
+- 수작업 감소: 정기 글 모음 이메일에 같은 디자인을 다시 쓸 수 있어요.
 
-RSS 피드의 `<channel>` 태그를 동적으로 가져옵니다([`<channel>` 태그에 대해 자세히 알아보기](http://www.landofcode.com/rss-tutorials/rss-channels.php)). RSS Header(RSS 헤더) 요소는 다음 RSS 채널 태그를 지원하며, 각각의 커스텀 값(Custom Value)을 사용해 이메일에 해당 태그 값을 표시할 수 있습니다:
+## RSS Header 블록과 피드 변수
 
-| RSS 태그 | Hyperclass 커스텀 값 |
-|----------|---------------------|
-| `<title>` | `{{rss_feed.title}}` |
-| `<description>` | `{{rss_feed.description}}` |
-| `<link>` | `{{rss_feed.url}}` |
-| `<lastBuildDate>` | `{{rss_feed.date}}` |
+RSS Header는 피드 자체의 정보를 보여 줘요. 글 목록 위에 출처 이름이나 설명을 넣고 싶을 때 사용하세요.
 
-#### RSS 헤더의 기본 vs 커스텀
+| 피드 정보 | RSS 변수 |
+| --- | --- |
+| 피드 제목 | `{{rss_feed.title}}` |
+| 피드 설명 | `{{rss_feed.description}}` |
+| 피드 링크 | `{{rss_feed.url}}` |
+| 마지막 빌드 날짜 | `{{rss_feed.date}}` |
 
-RSS Header(RSS 헤더) 블록을 사용할 때 "RSS Editing Options(RSS 편집 옵션)" 드롭다운에서 Basic(기본)과 Custom(커스텀) 두 가지 옵션을 볼 수 있습니다.
+**RSS Editing Options**(RSS 편집 옵션)에서 **기본**을 고르면 미리 만들어진 헤더가 나와요. **사용자 지정**을 고르면 헤더 내용을 직접 편집하고 위 값을 원하는 대로 배치할 수 있어요. 여기에 소개한 RSS Header 변수는 RSS 캠페인의 제목(subject)에도 쓸 수 있어요.
 
-![RSS 편집 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48155855348/original/TXhqhCn_ybN6lz8F_4U1No7-vaLkA_Sj1w.png?1636131878)
+![RSS Header 블록의 편집 옵션 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083453149/original/dHTJrdxVExSbMJnsKASCf3GRTFgrRF_LWA.png?1792091928)
 
-- **Basic(기본)**: 텍스트 편집기에 다음과 같은 편집 불가능한 텍스트를 추가합니다:
-  ```html
-  <h1 class="h1">{{rss_feed.title}}</h1>
-  {{rss_feed.description}}<br />
-  <br />
-  ```
+## RSS Items 블록과 표시 옵션
 
-- **Custom(커스텀)**: 텍스트 편집기에 다음과 같은 편집 가능한 텍스트를 추가합니다:
-  ```html
-  Updates from {{rss_feed.url}}
-  <h1>{{rss_feed.title}}</h1>
-  <strong>{{rss_feed.description}}</strong><br />
-  <br />
-  <strong>In the {{rss_feed.date}} edition:</strong><br />
-  ```
+RSS Items 블록은 피드에서 선택된 글마다 정보를 반복해서 보여 줘요. 받는 사람에게 얼마나 많은 내용을 보여 줄지에 맞춰 표시 옵션을 고르세요.
 
-**참고**: 4개의 커스텀 RSS `<channel>` 변수는 제목 필드에서도 사용할 수 있습니다:
+- **발췌문:** 각 글의 짧은 미리보기예요.
+- **Excerpts with Image**(이미지가 있는 발췌문): 사용할 수 있는 이미지 데이터가 있으면 이미지와 함께 미리보기를 보여 줘요.
+- **제목:** 글 제목만 간단한 목록으로 보여 줘요.
+- **전체 콘텐츠:** 피드가 제공하는 글 전체 내용을 보여 줘요.
+- **사용자 지정:** 지원되는 글 항목을 원하는 대로 배치해요.
 
-![제목 필드의 RSS 변수](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48155855344/original/c2Vi4rUtLOvx56OiuS-hfAmtJXBuLF2hng.png?1636131877)
+사용자 지정 레이아웃에서는 다음 값을 쓸 수 있어요.
 
-### RSS 아이템
+| 글 정보 | RSS 변수 |
+| --- | --- |
+| 제목 | `{{rss_item.title}}` |
+| 요약/설명 | `{{rss_item.content}}` |
+| 전체 콘텐츠 | `{{rss_item.content_full}}` |
+| 글 링크 | `{{rss_item.url}}` |
+| 게시일 | `{{rss_item.date}}` |
+| 작성자 | `{{rss_item.author}}` |
+| 이미지 URL | `{{rss_item.imageUrl}}` |
 
-RSS Items(RSS 아이템) 블록
+값은 원본 피드가 해당 정보를 제공할 때만 나타나요. `{{rss_item.imageUrl}}` 은 이미지 자체가 아니라 이미지 URL을 돌려줘요. 이미지가 들어간 프리셋을 쓰려면 **Excerpts with Image**를 고르세요. 사용자 지정 RSS 콘텐츠에서 이미지를 넣을 때는 `rss_img` 도우미도 쓸 수 있어요.
 
-RSS Items(RSS 아이템) 블록은 다음 커스텀 값들을 사용할 수 있으며, 해당하는 RSS 태그를 동적으로 삽입합니다:
+## 사용자 지정 RSS 레이아웃과 HTML 콘텐츠
 
-| RSS 태그 | 커스텀 값 | 설명 |
-|----------|-----------|------|
-| `<title/>` | `{{rss_item.title}}` | RSS 아이템의 제목 (보통 블로그 포스트 제목) |
-| `<description/>` | `{{rss_item.content}}` | HTML 형식의 RSS 아이템 요약. `<description>` 태그 내용을 표시하며, 태그가 없으면 `<content:encoded>` 태그 내용을 표시 |
-| `<link/>` | `{{rss_item.url}}` | 온라인 RSS 아이템으로의 텍스트 링크. 텍스트로 표시하거나 하이퍼링크로 사용 가능 |
-| `<content:encoded/>` | `{{rss_item.content_full}}` | HTML 형식의 `<content:encoded>` 태그 전체 내용. 태그가 없으면 `<description>` 태그 내용을 표시 |
-| `pubDate` | `{{rss_item.date}}` | RSS 아이템 게시 날짜. `MMM DD, YYYY hh:mm A` 형식. 향후 커스텀 형식 지원 예정 |
-| `<dc:creator>` | `{{rss_item.author}}` | RSS 아이템 작성자 |
-| `<media:content>` | `{{rss_item.imageUrl}}` | 이미지의 src URL을 텍스트로 제공. 이미지로 렌더링하려면 `{{rss_img}}` 사용 |
-|  | `{{rss_img alt="alt_text" src=rss_item.imageUrl height="200" width="200"}}` | 이미지 렌더링을 위한 태그 |
-| `<item>` | `{{#rss_items rss_items}}` | 개별 RSS 아이템의 커스텀 형식을 여는 태그 (내용 표시 안 함) |
-| `</item>` | `{{/rss_items}}` | 개별 RSS 아이템의 커스텀 형식을 닫는 태그 (내용 표시 안 함) |
+어떤 피드 항목을 어떤 순서로 보여 줄지 직접 정하려면 **사용자 지정**을 사용하세요. 반복해서 나타나는 글 내용은 RSS Items의 여는 태그와 닫는 태그 사이에 들어가요.
 
-#### RSS 아이템의 기본 vs 커스텀
+```
+{{#rss_items rss_items}}
+<a href="{{rss_item.url}}">{{rss_item.title}}</a>
+<p>{{rss_item.content}}</p>
+{{/rss_items}}
+```
 
-RSS Items(RSS 아이템) 블록을 사용할 때 "RSS Editing Options(RSS 편집 옵션)" 드롭다운에서 Basic(기본)과 Custom(커스텀) 두 가지 옵션을 볼 수 있습니다.
+위는 사용자 지정 RSS Items 레이아웃의 예시예요. 편집기가 반복 태그를 이미 넣어 두었다면 한 쌍을 더 추가하지 말고 그대로 두세요.
 
-![RSS 아이템 편집 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48155855347/original/L0LyUj9IorHU0sZYjFppVorh01rAx3ll6A.png?1636131878)
+RSS 텍스트에 `<p>` 같은 HTML 태그가 글자 그대로 보일 때가 있어요. 이럴 때는 **사용자 지정** RSS Items 블록에서 `{{{rss_item.content}}}` 처럼 중괄호 세 개를 쓰면 HTML을 변환 없이 그대로 표시할 수 있어요.
 
-- **Basic(기본)**: 텍스트 편집기에 다음과 같은 편집 불가능한 형식 텍스트를 추가합니다:
-  ```html
-  {{#rss_items rss_items}}
-  <h2 class="mc-toc-title"><a href="{{rss_item.url}}" target="_blank">
-  {{rss_item.title}}
-  </a> </h2>
-  {{rss_item.content}}
-  <br />
-  <a href="{{rss_item.url}}" target="_blank">Read on &raquo;</a><br />
-  <br />
-  {{/rss_items}}
-  ```
+{% hint style="warning" %}
+**중요:** 변환 없는 HTML은 믿을 수 있는 피드에서만 쓰고, 결과를 꼭 테스트하세요. 중괄호 세 개를 써도 잘못되었거나 없는 **RSS 피드 URL** 문제는 해결되지 않아요.
+{% endhint %}
 
-- **Custom(커스텀)**: 다음과 같은 편집 가능한 형식 텍스트를 추가합니다:
-  ```html
-  {{#rss_items rss_items}}
-  <h2 class="mc-toc-title"><a href="{{rss_item.url}}" target="_blank">{{rss_item.title}}</a></h2>
-  <em>By {{rss_item.author}} on {{rss_item.date}}</em><br />
-  {{rss_item.content_full}}<br />
-  <a href="{{rss_item.url}}" target="_blank">Read in browser &raquo;</a><br />
-  <br />
-  {{/rss_items}}<br />
-  <br />
-  <br />
-  <h3 class="h3">Recent Articles:</h3>
-  {{#rss_items rss_items}}
-  ```
+## 이메일 빌더에서 RSS 블록 설정하기
 
-## HTML 기반 RSS 피드
+먼저 접근할 수 있는 RSS 피드 URL을 준비하세요. 그다음 **디자인 에디터**에서 두 블록을 설정해 피드 정보와 개별 글이 원하는 순서로 나오게 해요.
 
-RSS 기반 커스텀 변수 `{{rss_item.title}}`에서 반환되는 값은 HTML 이스케이프 처리됩니다. 예를 들어, 표현식에 `&`가 포함되어 있으면 HTML 이스케이프된 출력이 `&amp;`로 생성되거나, RSS 피드에 일반 텍스트 대신 HTML 기반 텍스트가 있으면 일반 텍스트로 렌더링됩니다.
+1. **마케팅 > 이메일 > 템플릿**으로 이동한 뒤, 기존 템플릿을 열거나 **디자인 에디터**에서 새 템플릿을 만드세요.
+2. 피드 전체 정보를 보여 주려면 **요소 추가(+)** 를 열고 **RSS Header**를 디자인으로 끌어다 놓으세요.
+3. 헤더 블록을 선택하고 **RSS Editing Options**에서 **기본** 또는 **사용자 지정**을 고르세요.
 
-값의 이스케이프 처리를 원하지 않는다면 "triple-stash" `{{{`를 사용하세요:
+![RSS Header 편집 옵션과 헤더 미리보기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083453360/original/4di7CYr0erbvO8QytOzmxp0BGA0zr6-ZCA.png?1792092394)
 
-예: RSS 피드 소스가 다음과 같다면
+*RSS Header 편집 옵션과 헤더 미리보기*
 
-![HTML 기반 RSS 피드 소스](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48155855360/original/uPxMn189zEmr7WCh_6qYv6DAQ_WrxdccDA.png?1636131880)
+4. **요소 추가(+)** 에서 **RSS Items**를 헤더 아래로 끌어다 놓으세요. 글만 보여 주고 싶다면 RSS Items만 써도 돼요.
+5. **RSS Items**를 선택하고 **발췌문**, **제목**, **사용자 지정** 같은 표시 옵션을 고르세요.
 
-"triple-stash" 없이는 다음과 같이 렌더링됩니다:
+![RSS Items 표시 옵션 선택과 발췌문 미리보기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083453542/original/nFK7gmqICjWkHK7dOb_eZCJEWg1vqT1JxQ.png?1792092602)
 
-![이스케이프 처리된 렌더링](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48155855357/original/78KNj092LUO9cZRouzUlv84qXhEsZtHv3g.png?1636131879)
+*RSS Items 표시 옵션 선택과 발췌문 형태 미리보기*
 
-"triple-stash" `{{{rss_item.content}}}`를 사용하면 다음과 같이 렌더링됩니다:
+6. **사용자 지정** 레이아웃을 쓴다면 지원되는 RSS 항목을 원하는 대로 배치하세요. 기존 RSS Items 반복 태그는 그대로 두세요.
+7. 사용할 수 있는 서식과 여백을 조정한 뒤 템플릿을 저장하세요.
 
-![정상 렌더링](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48155855364/original/BojThSBQRv2EsNKXzmCAgxdVL1HDID98HA.png?1636131880)
+## RSS 블록이 들어간 이메일 테스트하고 보내기
 
-## 예약 설정
+**미리보기**로는 디자인을 확인하고, **테스트 이메일**로는 RSS 변수가 실제 피드 내용으로 바뀌는지 확인해요. 실제 RSS 캠페인을 보낼 때는 **RSS Schedule**을 사용하세요.
 
-RSS 피드 기반 이메일을 예약하려면:
+![이메일 편집 화면에서 미리보기와 테스트 이메일을 여는 모습](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083452873/original/b3vrYGAZGGbbjyHHl8MWzrOjUIemVfpknA.png?1792091318)
 
-- "Send or Schedule(발송 또는 예약)" 탭으로 이동합니다
-- "RSS Email Campaign(RSS 이메일 캠페인)" 발송 옵션을 선택합니다
-- "Campaign Name(캠페인 이름)" 필드에 캠페인 이름을 입력합니다
-- "RSS Feed URL(RSS 피드 URL)" 필드에 RSS 피드 URL을 붙여넣습니다
+1. 편집기에서 **미리보기**를 선택해 데스크톱, 태블릿, 모바일 레이아웃을 확인하세요.
+2. **미리보기** 옆의 점 3개 메뉴를 열고 **테스트 이메일**을 선택하세요.
+3. 필요한 이메일 정보를 입력하고, 테스트 이메일의 **RSS 피드 URL** 필드에 올바른 URL을 붙여 넣으세요.
+4. 테스트 이메일을 보내세요. 받은편지함에서 글 제목, 날짜, 이미지, 링크, 서식이 제대로 나오는지 확인하세요.
+5. 수신자에게 보내려면 RSS 블록이 들어간 디자인으로 **이메일 캠페인**을 만든 뒤 **Send or Schedule**(보내기 또는 예약) **> RSS Schedule**로 이동하세요.
+6. **RSS 피드 URL**을 입력하고, 선택할 수 있는 발송 주기, 발송 시간, 최대 항목 수를 정하세요. 수신자를 확인한 뒤 예약하세요.
 
-![RSS 이메일 캠페인 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48155855359/original/SpMiwm3Uo4icKGEWl86NUztsGxQIVOojtg.png?1636131880)
+![RSS Schedule 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083454505/original/N0J5IuJmj5ucqZ_0GQpiS2QECT8TCp2X3w.png?1792093922)
 
-### 발송 옵션
+{% hint style="warning" %}
+**중요:** RSS 테스트에서 피드 URL을 넣지 않으면 RSS 변수가 비어 있을 수 있어요. 실제 RSS 이메일은 **Send Now**(지금 보내기), 일반 **일정**, **배치 일정**이 아니라 **RSS Schedule**로 보내세요. 안내된 대로라면 이런 일반 발송 방식에서는 RSS 변수가 채워지지 않아요.
 
-- **"When we should send(언제 발송할지)"**: RSS 이메일을 매일, 매주 또는 매월 발송할지와 몇 시에 발송할지 결정할 수 있습니다
-- **Send on(발송 요일)**: 캠페인을 발송할 요일을 선택할 수 있습니다
+캠페인 전체 설정과 관리 방법은 [RSS 이메일 캠페인 보내기](how-to-send-rss-email-campaign-s.md)를 참고하세요.
+{% endhint %}
 
-모든 입력 필드와 수신자를 입력하면, Review and Send(검토 및 발송) 사이드 패널에서 다음과 같은 새로운 정보를 볼 수 있습니다:
+## RSS 블록 문제 해결
 
-- Email type(이메일 유형)
-- RSS Feed URL(RSS 피드 URL)
-- Repeat After(반복 주기)
+RSS 내용이 이상하게 보이면 피드, 선택한 블록 레이아웃, 발송 방식 중 어디가 원인인지 확인해 보세요.
 
-![검토 및 발송 패널](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48155855354/original/MU4iPH7O-wwTKti8UnJOm1i-OjBLL0oviw.png?1636131879)
+- **RSS 필드가 비어 있어요:** 테스트 이메일이나 실제 RSS Schedule에 피드 URL이 들어 있는지 확인하세요.
+- **글 이미지가 안 보여요:** 피드의 이미지 데이터와 선택한 RSS Items 레이아웃을 확인하세요.
+- **HTML 태그가 글자로 보여요:** 중괄호 세 개를 쓰기 전에 피드 형식을 확인하고, RSS 이메일 본문에 HTML 태그가 보일 때의 문제 해결 안내를 살펴보세요.
+- **어떤 주기에는 이메일이 발송되지 않았어요:** 새 피드 항목이 없으면 하이퍼클래스가 RSS 발송을 건너뛸 수 있어요. 캠페인의 감사 로그를 확인하세요.
 
-## RSS 이메일 테스트
+## 자주 묻는 질문
 
-RSS 요소가 포함된 이메일에서 "Send Test Email(테스트 이메일 발송)" 기능을 사용하면, 콘텐츠를 가져올 RSS 피드 URL을 입력해야 하는 새로운 "RSS Feed URL(RSS 피드 URL)" 필드가 나타납니다. 이 필드 없이는 모든 RSS 태그 기반 커스텀 변수가 빈 텍스트로 대체됩니다.
+### RSS Header와 RSS Items를 둘 다 추가해야 하나요?
+아니요. RSS Header는 선택 사항이에요. 개별 글만 보여 주고 싶다면 RSS Items만 쓰세요.
 
-![RSS 이메일 테스트](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48155855353/original/ngePuhb-X4mSVnHZA5POqiWBBo9VYF65NQ.png?1636131879)
+### 하이퍼클래스 밖의 웹사이트 RSS 피드도 쓸 수 있나요?
+네. 올바르고 접근할 수 있는 RSS 피드 URL을 사용하고, 보여 주고 싶은 글 정보가 피드에 들어 있는지 확인하세요.
 
-**참고**: RSS 요소 기반 이메일 템플릿을 일반 예약 옵션(지금 발송, 나중에 예약, 드립 모드로 발송)을 통해 예약하려고 하면, 모든 RSS 태그 기반 커스텀 변수가 빈 텍스트로 대체됩니다.
+### RSS 글에 작성자나 날짜가 없으면 어떻게 되나요?
+원본 피드에 해당 항목이 없으면 그 값은 채워지지 않을 수 있어요. 피드를 확인하고 테스트 이메일을 보내 보세요.
 
-## RSS 캠페인 보기 및 편집
+### 최대 항목 수 설정은 이메일에 어떤 영향을 주나요?
+RSS 캠페인에는 예약할 때 정한 최대 항목 수만큼, 사용할 수 있는 최신 글이 포함돼요.
 
-예약된 RSS 캠페인은 Scheduled(예약됨) 탭에서 확인할 수 있으며, 유형이 RSS로 표시됩니다. 다른 예약 이메일(지금 발송, 나중에 예약, 드립 모드로 발송)의 경우 유형이 Normal(일반)로 표시됩니다.
-
-![예약된 RSS 캠페인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48155855356/original/8LsOBEXvUvsrD9m6DAUbFnIGnga6WRbVDQ.png?1636131879)
-
-위 예시는 매일 발송되도록 설정된 RSS 이메일이며, Next Execution(다음 실행) 시간이 오후 2시임을 볼 수 있습니다. 오후 2시 이메일이 발송되면 완료로 표시되고, 동일한 구성(RSS 피드 URL, 매일 발송)으로 다음 날 새로운 예약/실행이 스케줄링됩니다.
-
-### 액션
-
-RSS 유형 예약에서는 다음 작업을 수행할 수 있습니다:
-
-- **Edit(편집)**: 연필 아이콘을 클릭해 편집하면, 현재 예약된 이메일을 취소하고 새로 예약하겠다는 확인 모달이 나타납니다.
-
-![편집 확인 모달](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48155855352/original/o--HIRT2KbBv-OrhGrqfaPrTLEZw1T2Wsw.png?1636131879)
-
-- Confirm(확인)을 클릭하면 현재 예약이 취소되고, 현재 취소된 예약 정보가 미리 채워진 RSS 예약 옵션과 함께 이메일 빌더가 열립니다.
-
-![편집 모드 이메일 빌더](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48155855361/original/-VqGcwC_5HX3QI-gngmW-H9NmIDY_i7yWg.png?1636131880)
-
-- **Pause/Resume(일시정지/재개)**: Pause/Resume(일시정지/재개) 액션을 통해 실행을 일시정지하고 재개할 수 있습니다
-- **Delete(삭제)**: RSS 예약을 삭제할 수 있습니다. 삭제하면 먼저 예약이 취소되고 시스템에서 영구적으로 삭제됩니다
-
----
-*원문 최종 수정: Wed, 25 May, 2022 at 2:33 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### RSS 캠페인을 예약한 뒤에도 이메일 내용을 수정할 수 있나요?
+네. 예약된 캠페인의 **작업 > 이메일 콘텐츠 업데이트** 옵션을 열고 내용을 수정한 뒤 저장하세요. 다음 발송 시간에 가까운 시점에 수정하면 제때 반영되지 않을 수 있어요.

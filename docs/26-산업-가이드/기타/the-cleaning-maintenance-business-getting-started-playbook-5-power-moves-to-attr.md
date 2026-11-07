@@ -1,225 +1,175 @@
 ---
-번역일: 2026-04-09T00:00:00.000Z
-카테고리: 99-리커버리
+원문: /support/solutions/articles/155000004639-the-cleaning-maintenance-business-getting-started-playbook-5-power-moves-to-attract-clients-acce
+번역일: 2026-11-06
+카테고리: 26-산업-가이드
 ---
 
-# 청소 및 유지관리 사업 시작하기 플레이북: 고객 유치 및 수익 가속화를 위한 5가지 핵심 전략
+# 청소·관리 업종 시작 플레이북: 고객을 모으고 결제를 앞당기는 5가지 핵심 전략
 
-## 자동화, 간소화 및 성장을 쉽게!
+청소·관리 업체가 하이퍼클래스를 처음 설정할 때 가장 먼저 해야 할 5가지를 정리한 가이드예요. Google 검색 노출, 후속 연락 자동화, 리뷰, 광고, 소셜 미디어 순서로 따라가 보세요.
 
-**목차**
+## 이 플레이북이 필요한 이유
 
-* [자동화, 간소화 및 성장을 쉽게!](the-cleaning-maintenance-business-getting-started-playbook-5-power-moves-to-attr.md#자동화-간소화-및-성장을-쉽게)
-* [무엇을 배우게 될까요?](the-cleaning-maintenance-business-getting-started-playbook-5-power-moves-to-attr.md#무엇을-배우게-될까요)
-* [1단계: 구글에서 찾아지기 & 지역 검색 장악하기](the-cleaning-maintenance-business-getting-started-playbook-5-power-moves-to-attr.md#1단계-구글에서-찾아지기-지역-검색-장악하기)
-* [2단계: 후속 관리 자동화 & 리드 손실 방지](the-cleaning-maintenance-business-getting-started-playbook-5-power-moves-to-attr.md#2단계-후속-관리-자동화-리드-손실-방지)
-* [3단계: 리뷰 자동화 & 당신을 대신 판매하는 평판 구축](the-cleaning-maintenance-business-getting-started-playbook-5-power-moves-to-attr.md#3단계-리뷰-자동화-당신을-대신-판매하는-평판-구축)
-* [4단계: 소규모 고ROI 광고 캠페인 런칭 (추측 불필요)](the-cleaning-maintenance-business-getting-started-playbook-5-power-moves-to-attr.md#4단계-소규모-고roi-광고-캠페인-런칭-추측-불필요)
-* [5단계: 주간 게시 & 소셜 미디어로 가시성 유지](the-cleaning-maintenance-business-getting-started-playbook-5-power-moves-to-attr.md#5단계-주간-게시-소셜-미디어로-가시성-유지)
-* [마무리: 더 많은 고객, 더 많은 수익, 더 많은 자유 시간을 위한 빠른 길](the-cleaning-maintenance-business-getting-started-playbook-5-power-moves-to-attr.md#마무리-더-많은-고객-더-많은-수익-더-많은-자유-시간을-위한-빠른-길)
+공간을 깨끗하게 만들고, 집과 사무실을 말끔하게 유지하고, 건물을 잘 관리하는 일은 이미 전문가이실 거예요. 그런데 꾸준히 예약이 들어오게 하려면 어떻게 해야 할까요?
 
-### **이 플레이북이 중요한 이유는?**
+많은 청소·관리 업체가 소개나 입소문에만 의존해요. 하지만 실제로는 이렇습니다.
 
-#### 당신은 공간을 깨끗하게 만들고, 집과 사무실을 완벽하게 유지하며, 부동산을 잘 관리하는 전문가입니다. 하지만 고객들이 지속적으로 당신의 서비스를 예약하도록 하려면 어떻게 해야 할까요?
+- 고객의 89%는 청소 서비스를 예약하기 전에 온라인에서 검색해요.
+- 리드의 70%는 가장 먼저 연락한 업체로 가요.
+- 반복 예약과 단골 고객이 안정적인 매출의 열쇠예요.
 
-#### 많은 청소 및 유지관리 업체들은 **추천에만 의존**하거나 입소문이 고객을 데려다 줄 것이라고 기대하지만, 사실은 다음과 같습니다:
+❌ 검색 순위, 응답, 광고 중 하나라도 제대로 하지 않으면 매출을 놓치게 돼요.
 
-#### 89%의 고객이 청소 서비스를 예약하기 전에 온라인으로 검색합니다.
+이 플레이북은 하이퍼클래스를 올바르게 설정하기 위한 5가지 핵심 단계를 안내해요. 이 단계를 따르면 고객을 더 많이 모으고, 재방문을 확보하고, 브랜드를 키울 수 있어요.
 
-**70%의 리드는 가장 먼저 후속 관리하는 회사로 갑니다.** **반복 예약 & 충성 고객**이 안정적인 수익의 핵심입니다.
+```
+지금 비즈니스를 키워 보세요 - 하이퍼클래스로 시작하기
+```
 
-#### ❌ **제대로 된 순위, 응답, 광고를 하지 않으면 돈을 잃는 것입니다.**
+---
 
-#### 이 **시작하기 플레이북**은 **Hyperclass**을 올바른 방식으로 설정하는 **5가지 가장 중요한 단계**를 보여줍니다. 이를 통해 **더 많은 고객을 확보하고, 반복 비즈니스를 보장하며, 브랜드를 수월하게 성장시킬** 수 있습니다.
+## 이 문서에서 배울 내용
 
-지금 비즈니스를 성장시키세요 - [**Hyperclass에 가입하기**](https://hyperclass.ai/?utm_source=SEO\&utm_medium=Organic\&utm_campaign=Home+Services+Cleaning\&utm_term=Cleaning\&utm_content=Playbook)
+- ✅ 고객을 모으고 반복 고객으로 만드는 가장 빠른 5가지 방법
+- ✅ Google에서 상위에 노출되고, 리뷰를 더 많이 모으고, 검색 결과 맨 위에 나타나는 방법
+- ✅ 후속 연락, 예약, 인보이스를 자동화해서 놓치는 매출을 줄이는 방법
+- ✅ 하이퍼클래스 한 곳에서 이 모든 것을 처리하고, 청소 서비스 품질에 집중하는 방법
 
-***
+---
 
-### **무엇을 배우게 될까요?**
+## 1단계: Google에서 검색되고 지역 검색 상위에 오르기
 
-#### ✅ 고객을 확보하고 반복 고객으로 전환하는 **5가지 가장 빠른 방법**.
+### 왜 중요할까요?
 
-✅ **구글에서 순위를 올리고**, 더 많은 리뷰를 수집하며, 사람들이 검색할 때 상위에 나타나는 방법. ✅ **후속 관리, 예약 및 인보이스를 자동화**하여 돈을 잃지 않는 방법. ✅ **Hyperclass을 사용해 모든 것을 한 곳에서 처리**하면서 고품질 청소 서비스 제공에 집중하는 방법.
+- 청소 서비스 고객의 76%는 Google 첫 페이지에서 업체를 골라요.
+- Google 리뷰가 100개 이상인 업체는 예약이 3배 많아요.
 
-***
+Google에 나타나지 않으면 경쟁 업체가 그 일을 가져가요.
 
-### **1단계: 구글에서 찾아지기 & 지역 검색 장악하기**
+### 먼저 할 일
 
-#### **왜 중요한가요?**
+- ✅ Google Business Profile(GMB)을 등록하고 인증하세요. 아직 하지 않았다면 고객 눈에 보이지 않아요.
+  - [Google Business Profile 설정하는 방법](https://support.google.com/business/answer/3038177?hl=en)
+- ✅ **서비스 지역**을 설정하세요. 서비스하는 우편번호와 동네를 모두 적어 두면 Google이 지역 검색에서 순위를 매겨요.
+- ✅ 통화 추적용 **추적 번호**를 추가하세요. Google 등록 정보의 전화번호를 하이퍼클래스 추적 번호로 바꾸면 리드가 어디서 오는지 확인할 수 있어요.
+  - [통화 추적 번호 설정하는 방법](../../41-평판-리뷰/Review-Requests/call-tracking-and-missed-call-text-back-through-google-business-profile.md)
+- ✅ Google 리뷰를 자동화하세요. 별 5개 리뷰가 많을수록 순위가 오르고 전화가 늘어요.
+  - [Google 리뷰 자동화하는 방법](../../41-평판-리뷰/Review-Requests/how-to-setup-workflow-triggers-for-google-and-facebook-reviews.md)
+- ✅ 매주 소식을 올리세요. Google은 활동이 많은 업체를 더 높게 평가해요. 하이퍼클래스로 게시물을 자동으로 예약하세요.
+  - [Google Business Profile 최적화하는 방법](../../42-통합/Google-Integrations/how-to-integrate-google-business-profile-gbp-with-hyperclass.md)
 
-#### **76%의 청소 서비스 고객이** 구글 첫 페이지에서 업체를 고용합니다.
+예시: "이번 달에 250가구가 상쾌함을 되찾았어요! 반짝이는 집이 필요하신가요? 지금 청소를 예약하세요!" (매주 Google Business Profile에 올려 보세요.)
 
-**100개 이상의 구글 리뷰를 보유한 업체는 3배 더 많은 예약**을 받습니다.
+---
 
-#### **구글에 나타나지 않으면**, 경쟁업체가 대신 일자리를 가져갑니다.
+## 2단계: 후속 연락을 자동화하고 리드 놓치지 않기
 
-#### **먼저 해야 할 일:**
+### 왜 중요할까요?
 
-#### ✅ **구글 비즈니스 프로필(GMB) 소유권 확인 및 인증** – 아직 하지 않았다면 **고객에게 보이지 않습니다**.
+- 리드는 5분 안에 식어요. 답하지 않으면 다른 업체를 고용해요.
+- 후속 연락을 자동화하면 전환율이 40% 올라가요.
 
-#### [구글 비즈니스 프로필 설정 방법](https://support.google.com/business/answer/3038177?hl=en)
+### 먼저 할 일
 
-✅ **서비스 지역 설정** – 서비스 제공하는 모든 우편번호와 동네를 나열하여 구글이 지역 검색에서 순위를 매기도록 합니다. ✅ **통화 추적 번호 추가** – 구글 리스팅 번호를 **Hyperclass 추적 번호**로 교체하여 리드가 어디서 오는지 확인하세요.
+- ✅ 웹사이트에 채팅 위젯을 설치하세요. 고객이 전화하지 않고도 문자로 문의할 수 있어요.
+  - [채팅 위젯 설정하는 방법](../../06-사이트/getting-started-with-chat-widget.md)
+- ✅ **부재중 전화 문자 회신**을 켜세요. 전화를 놓치면 하이퍼클래스가 리드에게 자동으로 문자를 보내 줘서 일감을 잃지 않아요.
+  - [부재중 전화 문자 회신 설정하기](../../11-설정/서브어카운트-설정/where-and-how-to-configure-the-missed-call-text-back-feature.md)
+- ✅ 즉시 후속 연락을 보내세요. SMS, 이메일, WhatsApp 알림을 자동화해서 예약을 유도해요.
+  - [반복 후속 연락 설정하기](../../04-캘린더-예약/기타/recurring-appointments.md)
+- ✅ 예약 링크를 추가하세요. 고객이 회신 전화를 기다리지 않고 온라인에서 직접 청소 일정을 잡을 수 있어요.
+- ✅ AI로 문의를 처리하세요. 대화 AI와 Voice AI가 자주 묻는 질문에 답하고 작업 일정도 자동으로 잡아 줘요.
+  - AI 기반 청소 작업 후속 연락 설정하는 방법
+  - [Voice AI 에이전트 설정하는 방법](../../13-AI-Employee/how-to-create-voice-ai-agents.md)
+  - [대화 AI 에이전트 설정하는 방법](../../10-마케팅/appointment-booking-conversation-ai-workflow-action.md)
 
-#### [통화 추적 번호 설정 방법](../../41-평판-리뷰/Review-Requests/call-tracking-and-missed-call-text-back-through-google-business-profile.md)
+예시: "안녕하세요 [이름]님, 청소 서비스에 문의해 주셔서 감사해요! 이번 주에 가능한 시간이 몇 개 있어요. 여기에서 예약하세요: [예약 링크]"
 
-✅ **구글 리뷰 자동화** – 더 많은 5점 리뷰 = **더 높은 순위 & 더 많은 전화**.
+---
 
-#### [구글 리뷰 자동화 방법](../../41-평판-리뷰/Review-Requests/how-to-setup-workflow-triggers-for-google-and-facebook-reviews.md)
+## 3단계: 리뷰를 자동화하고 대신 영업해 주는 평판 쌓기
 
-✅ **주간 업데이트 게시** – 구글은 **활발한 비즈니스를 더 높게 순위**를 매깁니다—Hyperclass을 사용해 **자동으로 게시물을 예약**하세요.
+### 왜 중요할까요?
 
-#### [구글 비즈니스 프로필 최적화 방법](../../11-설정/기타/how-to-integrate-your-google-business-profile-formerly-gmb-into-the-crm.md)
+- 리뷰가 50개 이상인 업체는 Google 검색에서 270% 더 높게 노출돼요.
+- 고객의 90%는 온라인 리뷰를 지인 추천만큼 신뢰해요.
 
-#### **예시:** "이번 달에 250개 이상의 집을 깔끔하게 유지했습니다! 완벽한 집이 필요하신가요? 오늘 청소를 예약하세요!" (구글 비즈니스 프로필에 매주 게시하세요.)
+### 먼저 할 일
 
-***
+- ✅ 하이퍼클래스에서 **요청 검토**를 켜세요. 청소 작업이 끝날 때마다 리뷰를 요청하는 SMS와 이메일이 자동으로 나가요.
+- ✅ 고객을 Google과 Facebook으로 안내하세요. 별 5개 리뷰가 많을수록 Google이 더 많은 리드를 보내 줘요.
+- ✅ 리뷰를 확인하고 답글을 남기세요. Google은 좋은 리뷰든 나쁜 리뷰든 모든 리뷰에 답하는 업체를 더 높게 평가해요.
+- ✅ 부정 리뷰 알림을 설정하고, 부당한 리뷰는 이의를 제기하세요. 나쁜 리뷰를 바로 알아채고 평판에 영향을 주기 전에 문제를 해결할 수 있어요.
+- ✅ 웹사이트와 소셜 미디어에 리뷰를 보여 주세요. 만족한 고객이 대신 영업하게 하세요.
 
-### **2단계: 후속 관리 자동화 & 리드 손실 방지**
+[리뷰와 **평판 관리** 자동화하는 방법](../../13-AI-Employee/기타/maximizing-customer-engagement-with-reviews-ai-a-guide-to-suggestive-and-auto-pi.md)
 
-#### **왜 중요한가요?**
+예시: "의견을 듣고 싶어요! 집이 반짝반짝해졌다면 간단한 리뷰를 남겨 주세요: [리뷰 링크]"
 
-#### **리드는 5분 내에 차가워집니다**—응답하지 않으면 다른 사람을 고용할 것입니다.
+---
 
-후속 관리 자동화는 전환율을 40% 증가시킵니다.
+## 4단계: 소규모 고수익 광고 캠페인 시작하기
 
-#### **먼저 해야 할 일:**
+### 왜 중요할까요?
 
-#### ✅ **웹사이트에 채팅 위젯 설정** – 고객이 **전화하지 않고 문자할 수 있도록**.
+- 집주인의 60%는 청소 서비스를 검색할 때 광고를 클릭해요.
+- 하루 10달러의 광고만으로도 꾸준히 고객을 모을 수 있어요.
 
-#### [채팅 위젯 설정 방법](../../06-사이트/getting-started-with-chat-widget.md)
+### 먼저 할 일
 
-✅ **부재중 전화 문자 답장 활성화** – 전화를 놓치면 **Hyperclass이 자동으로 리드에게 문자를 보내** 일자리를 잃지 않습니다.
+- ✅ Google 지역 서비스 광고(LSA)를 설정하세요. 클릭이 아니라 유효한 리드에만 비용을 내요.
+  - [Google LSA 운영하는 방법](https://ads.google.com/intl/en_us/home/local-services-ads/)
+  - [LSA를 하이퍼클래스와 연동하는 방법](../../04-캘린더-예약/캘린더-연동/setting-up-reserve-with-google-for-local-services-ads.md)
+- ✅ Facebook 리드 광고를 운영하세요. 전문 청소 서비스가 필요한 지역 집주인과 사무실 관리자를 타깃으로 해요.
+  - [하이퍼클래스에서 Facebook 광고 운영하는 방법](../../10-마케팅/Ad-Campaign-Creation-and-Management/ad-manager-create-new-facebook-ad-campaigns.md)
+- ✅ 리타기팅 광고를 켜세요. 웹사이트를 방문했지만 아직 예약하지 않은 사람에게 계속 광고를 보여 줘요.
+  - [통화 추적 번호 풀 설정하기](../../15-전화-시스템/통화/how-to-set-up-call-tracking-number-pool.md)- ✅ 광고에 통화 추적을 쓰세요. 어떤 광고에서 일감이 가장 많이 들어오는지 정확히 알 수 있어요.
+  - [전환이 잘 되는 청소·관리 광고 운영하는 방법](../../10-마케팅/Getting-Started-w/Ad-Manager/overview-of-ad-manager.md)
 
-#### [부재중 전화 문자 답장 설정](../../11-설정/서브어카운트-설정/where-and-how-to-configure-the-missed-call-text-back-feature.md)
+예시: "이웃분들이 우리 청소 서비스를 좋아해요! 오늘 예약하면 첫 청소 20% 할인. 지금 전화하세요: [전화번호]"
 
-✅ **즉시 후속 관리 전송** – **SMS, 이메일, WhatsApp 리마인더**를 자동화하여 예약을 잡으세요.
+---
 
-#### [반복 후속 관리 설정](../../04-캘린더-예약/기타/recurring-appointments.md)
+## 5단계: 매주 게시하고 소셜 미디어에서 계속 노출되기
 
-✅ **예약 링크 추가** – 고객이 **전화 회신을 기다리지 않고** 온라인으로 **자신의 청소 서비스를 직접 예약**할 수 있도록 하세요. ✅ **AI를 사용해 문의 처리** – Conversation AI(대화 AI)와 Voice AI(음성 AI)가 **일반적인 질문에 답하고 자동으로 일정을 잡습니다**.
+### 왜 중요할까요?
 
-#### [AI 기반 청소 작업 후속 관리 설정 방법](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/24-%EB%8C%80%ED%95%99/HighLevel-How-To's/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
+- 집주인의 77%는 청소 업체를 고용하기 전에 소셜 미디어를 확인해요.
+- 꾸준히 게시하면 예약과 소개가 늘어요.
 
-[Voice AI 에이전트 설정 방법](../../13-AI-Employee/기타/creating-voice-ai-agents.md) [Conversation AI 에이전트 설정 방법](../../13-AI-Employee/Conversation-AI---Goals,-Prompts,-&-Actions/how-to-use-conversation-ai-to-book-appointments.md)
+### 먼저 할 일
 
-#### **예시:**
+- ✅ Google Business Profile에 매주 게시하세요. Google은 활동이 많은 업체를 더 높게 평가해요.
+- ✅ Facebook과 Instagram에 시공 전후 사진을 올리세요. 가장 잘한 작업을 보여 주세요.
+  - [소셜 미디어에 리뷰 공유하는 방법](../../10-마케팅/소셜-플래너/how-to-automate-review-posts-in-social-planner.md)
+- ✅ 블로그와 이메일 뉴스레터를 시작하세요. 청소 팁과 집 관리 노하우를 공유해요.
+  - HVAC용 블로그 만드는 방법
+  - [블로그용 RSS 피드 설정하는 방법](../../06-사이트/블로그/rss-feed-for-blogs.md)
+  - [RSS 이메일 캠페인 설정하는 방법](../../10-마케팅/RSS-Guide/how-to-send-rss-email-campaign-s.md)
+- ✅ 소셜 미디어 예약 게시를 쓰세요. 하이퍼클래스가 자동으로 게시해 주니 직접 올리지 않아도 돼요.
+  - 효과가 있는 소셜 미디어·콘텐츠 전략 분석하는 방법
 
-_"안녕하세요 \[이름]님, 저희 청소 서비스에 문의해 주셔서 감사합니다! 이번 주에 몇 개의 시간대가 있습니다. 여기서 예약하세요: \[예약 링크]"_
+예시: "먼지와 어수선함에 지치셨나요? 우리가 집을 반짝반짝하게 만들어 드려요! 오늘 예약하고 상쾌한 공간을 누리세요. [예약 링크]"
 
-***
+---
 
-### **3단계: 리뷰 자동화 & 당신을 대신 판매하는 평판 구축**
+## 마무리: 더 많은 고객, 더 많은 매출, 더 많은 여유 시간으로 가는 지름길
 
-#### **왜 중요한가요?**
+이 5가지 핵심 전략을 따르면 하이퍼클래스를 성공적으로 쓸 준비가 끝나요.
 
-#### **50개 이상의 리뷰를 보유한 비즈니스는** 구글 검색에서 **270% 더 높게 순위**를 매깁니다.
+- ✅ Google Business Profile과 추적 설정 최적화
+- ✅ 리드 확보와 후속 연락 자동화
+- ✅ 리뷰 수집과 답글 시작
+- ✅ 즉시 리드를 얻을 수 있는 소규모 타깃 광고 운영
+- ✅ 유용한 콘텐츠를 게시하고, 자동화로 온라인 활동 유지
 
-90%의 고객이 개인 추천만큼 온라인 리뷰를 신뢰합니다.
+### 더 자세히 알아보기
 
-#### **먼저 해야 할 일:**
+- [Spotless Rankings: Google 검색을 장악하는 청소·관리 업체 가이드](spotless-rankings-the-cleaning-maintenance-business-guide-to-dominating-google-s.md)
+- [Spotless Success: 청소·관리 업체의 재방문·소개로 폭발적으로 성장하는 방법](spotless-success-mastering-retention-referrals-for-explosive-growth-in-cleaning.md)
+- [Sparkling Ads: 청소·관리 업체가 더 많은 고객을 모으는 광고 청사진](sparkling-ads-the-blueprint-to-sweep-up-more-clients-for-your-cleaning-maintenan.md)
+- [Sparkle & Scale: 청소·관리 업체의 소셜 미디어 공략 플레이북](../Cleaning-And-Maintenance/sparkle-scale-the-cleaning-maintenance-social-media-domination-playbook.md)
+- [Spotless Content Strategy: 청소·관리 업체 플레이북](../Cleaning-And-Maintenance/spotless-content-strategy-the-cleaning-maintenance-playbook.md)
+- [Polished Performance: 청소·관리 업체를 위한 일일 운영 플레이북](polished-performance-the-ultimate-daily-operations-playbook-for-cleaning-mainten.md)
 
-#### ✅ **Hyperclass에서 리뷰 요청 활성화** – 모든 청소 작업은 **리뷰를 요청하는 자동 SMS 및 이메일을 트리거**해야 합니다.
-
-✅ **고객을 구글 및 페이스북으로 유도** – **5점 리뷰가 많을수록 구글이 더 많은 리드를 보내줍니다**. ✅ **리뷰 모니터링 및 응답** – 구글은 **모든 리뷰(좋든 나쁘든)에 응답하는 비즈니스를 더 높게 순위**를 매깁니다. ✅ **부정적인 리뷰 알림 설정 및 나쁜 리뷰 이의제기** – **나쁜 리뷰를 즉시 포착**하고 평판에 영향을 주기 전에 **문제를 해결**하세요. ✅ **웹사이트 및 소셜 미디어에 리뷰 표시** – **만족한 고객이 당신을 대신 판매**하도록 하세요.
-
-리뷰 자동화 및 평판 관리 방법
-
-#### **예시:**
-
-_"귀하의 피드백을 듣고 싶습니다! 저희가 귀하의 집을 반짝이게 만들었다면, 간단한 리뷰를 남겨주세요: \[리뷰 링크]"_
-
-***
-
-### **4단계: 소규모 고ROI 광고 캠페인 런칭 (추측 불필요)**
-
-#### **왜 중요한가요?**
-
-#### **60%의 주택 소유자가** 청소 서비스를 검색할 때 광고를 클릭합니다.
-
-**하루 $10의 광고비**만으로도 **꾸준한 고객 유입**을 만들 수 있습니다.
-
-#### **먼저 해야 할 일:**
-
-#### ✅ **구글 로컬 서비스 광고(LSA) 설정** – 클릭이 아닌 **유효한 리드에만 결제**합니다.
-
-#### [구글 LSA 실행 방법](https://ads.google.com/intl/en_us/home/local-services-ads/)
-
-[LSA를 Hyperclass과 연동하는 방법](../../04-캘린더-예약/캘린더-연동/reserve-with-google-integration-local-services-ads-lsa-.md) ✅ **페이스북 리드 광고 실행** – 전문 청소 서비스가 필요한 **지역 주택 소유자 및 사무실 관리자를 타겟팅**하세요.
-
-#### [Hyperclass에서 페이스북 광고 실행 방법](../../10-마케팅/기타/create-new-ad-campaign-in-ad-manager.md)
-
-✅ **리타겟팅 광고 활성화** – **웹사이트를 방문했지만 아직 예약하지 않은 사람들**에게 계속 광고를 표시하세요.
-
-#### [통화 추적 번호 풀 설정](../../15-전화-시스템/통화/how-to-set-up-call-tracking-number-pool-.md)
-
-✅ **광고에서 통화 추적 사용** – **어떤 광고가 가장 많은 일자리를 가져오는지** 정확히 알아보세요.
-
-[전환되는 청소 및 유지관리 광고 실행 방법](../../10-마케팅/Getting-Started-w/-Ad-Manager/overview-of-ad-manager.md)
-
-#### **예시:**
-
-_"이웃들이 저희 청소 서비스를 사랑합니다! 오늘 예약하고 첫 청소에서 20% 할인 받으세요. 지금 전화: \[전화번호]"_
-
-***
-
-### **5단계: 주간 게시 & 소셜 미디어로 가시성 유지**
-
-#### **왜 중요한가요?**
-
-#### **77%의 주택 소유자가** 청소업체를 고용하기 전에 소셜 미디어를 확인합니다.
-
-일관된 게시 = **더 많은 예약 및 추천**.
-
-#### **먼저 해야 할 일:**
-
-#### ✅ **구글 비즈니스에 주간 게시** – 구글은 **활발한 비즈니스를 더 높게 순위**를 매깁니다.
-
-✅ **페이스북 및 인스타그램을 사용해 전후 사진 공유** – 최고의 작업을 자랑하세요!
-
-#### [소셜 미디어에서 리뷰를 게시물로 공유하는 방법](../../10-마케팅/기타/share-your-reviews-as-posts-on-social-media-using-social-planner.md)
-
-✅ **블로그 및 이메일 뉴스레터 시작** – **청소 팁 및 홈케어 노하우**를 공유하세요.
-
-#### [블로그 만들기 방법](../../06-사이트/how-to-create-a-blog-.md)
-
-[블로그용 RSS 피드 설정 방법](../../06-사이트/기타/how-to-set-up-an-rss-feed-for-blogs.md) [RSS 이메일 캠페인 설정 방법](../../10-마케팅/RSS-Guide/how-to-send-rss-email-campaign-s-.md) ✅ **소셜 미디어 예약 사용** – Hyperclass이 **자동으로 게시**하므로 수동으로 할 필요가 없습니다.
-
-효과적인 소셜 미디어 및 콘텐츠 전략 분석 방법
-
-#### **예시:**
-
-_"먼지와 어수선함에 지치셨나요? 저희가 귀하의 집을 완벽하게 만들어드립니다! 오늘 예약하고 신선하고 깨끗한 공간을 즐기세요. \[예약 링크]"_
-
-***
-
-### **마무리: 더 많은 고객, 더 많은 수익, 더 많은 자유 시간을 위한 빠른 길**
-
-#### 이 **5가지 핵심 전략**은 **Hyperclass에서 성공을 위한 기반을 마련**해줍니다.
-
-#### ✅ **구글 비즈니스 프로필 및 추적** 최적화
-
-✅ **리드 캡처 및 후속 관리** 자동화 ✅ **리뷰 수집 및 응답** 시작 ✅ 즉시 리드를 위한 **소규모 타겟 광고** 실행 ✅ **가치 있는 콘텐츠** 게시 및 자동화를 사용해 온라인에서 활발하게 유지
-
-**더 자세히 알아보겠습니다 -**
-
-#### 완벽한 순위: 구글 검색 장악을 위한 청소 및 유지관리 비즈니스 가이드
-
-완벽한 성공: 청소 및 유지관리에서 폭발적 성장을 위한 고객 유지 및 추천 마스터하기
-
-반짝이는 광고: 청소 및 유지관리 비즈니스를 위한 더 많은 고객 확보 청사진
-
-[반짝임과 확장: 청소 및 유지관리 소셜 미디어 지배 플레이북](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/26-%EC%82%B0%EC%97%85-%EA%B0%80%EC%9D%B4%EB%93%9C/Cleaning-And-Maintenance/sparkle-scale-the-cleaning-maintenance-social-media-domination-playbook.md)
-
-[완벽한 콘텐츠 전략: 청소 및 유지관리 플레이북](../Cleaning-And-Maintenance/spotless-content-strategy-the-cleaning-maintenance-playbook.md)
-
-세련된 성과: 청소 및 유지관리를 위한 궁극의 일일 운영 플레이북
-
-### **더 빠르게 성장하고 싶으신가요?**
-
-[오늘 Hyperclass에 가입](https://hyperclass.ai/?utm_source=SEO\&utm_medium=Organic\&utm_campaign=Home+Services+Cleaning\&utm_term=Cleaning\&utm_content=Playbook)하고 즉시 더 많은 청소 일자리를 예약하세요!
-
-***
-
-_원문 최종 수정: Fri, 14 Feb, 2025 at 6:03 AM_ _Hyperclass 사용 가이드 — hyperclass.ai_
+더 빠르게 성장하고 싶으신가요? 지금 하이퍼클래스를 시작하고 청소 예약을 바로 늘려 보세요!

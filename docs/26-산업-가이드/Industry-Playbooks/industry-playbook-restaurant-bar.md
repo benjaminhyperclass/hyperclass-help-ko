@@ -1,35 +1,34 @@
 ---
-번역일: 2026-04-08T00:00:00.000Z
-카테고리: 26-산업-가이드 > Industry Playbooks
+원문: /support/solutions/articles/155000000967-industry-playbook-restaurant-bar
+번역일: 2026-11-07
+카테고리: 26-산업-가이드
 ---
 
-# 산업 플레이북 - 레스토랑/바
+# 산업별 플레이북 — 레스토랑/바
 
-지역 레스토랑/바의 온라인 성장을 위한 로드맵은 간단합니다: 새로운 리드를 확보하고, 대화를 통해 리드를 매출로 전환하며, 고객을 긍정적인 리뷰로 이어지게 하고, 재구매 고객으로 재활성화하는 것입니다. 다음은 플레이북입니다:
+동네 레스토랑이나 바의 온라인 매출을 키우는 방법을 단계별로 정리한 플레이북이에요. 새 리드를 모으고, 대화로 매출까지 이어 가고, 고객에게 긍정적인 리뷰를 받은 뒤, 다시 찾아오게 만드는 순서로 진행해요.
 
-**더 많은 리드 확보**
+로드맵은 간단해요. 새 리드를 모으고, 그 리드를 대화로 매출에 연결하고, 고객을 긍정적인 리뷰로 이어 주고, 다시 단골로 만드는 거예요. 순서대로 살펴볼게요.
 
-* 레스토랑/바 웹사이트에 [SMS 웹채팅 위젯](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/03-%EB%8C%80%ED%99%94/%EA%B8%B0%ED%83%80/highlevel-chat-widget-how-to-add-it-to-your-pages-in-minutes.md)을 설치하세요.
-* 레스토랑/바의 [Google 비즈니스 프로필](../../41-평판-리뷰/기타/how-to-integrate-your-gmb-into-the-crm.md)을 연동하여 Google 채팅을 활성화하세요.
-* [부재중 전화 자동 문자 답변](../../11-설정/서브어카운트-설정/where-and-how-to-configure-the-missed-call-text-back-feature.md) 기능을 활성화하여, 레스토랑/바에 대한 모든 미수신 전화에 "전화를 놓쳐서 죄송합니다. 어떻게 도와드릴까요?"라는 문자 메시지가 즉시 전송되도록 하세요.
+### 리드 더 많이 모으기
 
-**리드를 예약으로 전환**
+- 레스토랑/바 웹사이트에 [SMS 채팅 위젯](../../06-사이트/how-to-install-hyperclass-s-chat-widget.md)을 설치하세요.
+- 레스토랑/바의 [Google Business Profile](../../42-통합/Google-Integrations/how-to-integrate-google-business-profile-gbp-with-hyperclass.md)을 연동해 Google 채팅을 켜세요.
+- [부재중 전화 문자 자동 응답(Missed-Call Text-Back)](../../11-설정/서브어카운트-설정/where-and-how-to-configure-the-missed-call-text-back-feature.md)을 켜세요. 받지 못한 전화에는 "전화를 못 받아 죄송해요. 무엇을 도와드릴까요?" 같은 문자가 바로 발송돼요.
 
-* 레스토랑/바가 고객에게 자주 보내는 문구와 링크에 대한 유용한 [텍스트 스니펫](../../36-기타/리커버리/message-templates-snippets-.md)을 설정하세요.
-* [대화 AI 활성화](../../04-캘린더-예약/기타/how-to-use-conversation-ai-in-your-appointment-bookings-.md)를 통해 레스토랑/바가 완전히 훈련된 24시간 어시스턴트를 보유하여 대화를 통해 리드를 예약으로 전환할 수 있도록 하세요.
+### 리드를 예약으로 이어 주기
 
-**리드를 매출로 전환**
+- 레스토랑/바가 자주 보내는 문구와 링크는 [문자 스니펫](../../10-마케팅/SMS-이메일-템플릿/create-and-use-text-and-email-snippets-in-hyperclass.md)으로 만들어 두세요.
+- [대화 AI를 켜세요](../../10-마케팅/appointment-booking-conversation-ai-workflow-action.md). 학습을 마친 AI 어시스턴트가 항상 대기하면서 대화로 리드를 예약까지 안내해 줘요.
 
-* [결제 폼](../../08-결제/기타/selling-products-on-order-forms-with-available-payment-providers-faqs.md), [유료 예약 캘린더](../../04-캘린더-예약/기타/calendar-payments.md), [문자 결제](../../08-결제/text-to-pay-links.md), [터치 결제](../../08-결제/tap-to-pay.md)를 위한 결제 연동을 설정하세요.
+### 리드를 매출로 바꾸기
 
-**매출을 긍정적인 리뷰로 전환**
+- [결제 폼](../../08-결제/시작하기/selling-products-on-order-forms-with-available-payment-providers.md), [유료 예약 캘린더](../../04-캘린더-예약/캘린더-설정/collecting-payments-in-calendars.md), [Text-2-Pay](../../08-결제/text-to-pay-links.md), [Tap-2-Pay](../../08-결제/tap-to-pay.md)에서 쓸 결제 연동을 설정하세요.
 
-* 레스토랑/바가 버튼 터치만으로 빠르고 쉽게 리뷰를 요청할 수 있도록 이메일 및 SMS 리뷰 요청 템플릿을 설정하세요.
+### 매출을 긍정적인 리뷰로 이어 주기
 
-**매출을 재구매 고객으로 전환**
+- 이메일 및 SMS 리뷰 요청 템플릿을 설정하세요. 버튼 한 번으로 빠르고 쉽게 리뷰를 요청할 수 있어요.
 
-* 레스토랑/바가 연락처에 뉴스, 업데이트, 프로모션을 쉽게 발송할 수 있도록 뉴스레터 [이메일 템플릿](../../10-마케팅/Templates/email-templates-vs-email-campaigns.md)을 설정하세요.
+### 매출을 단골로 이어 주기
 
-***
-
-_원문 최종 수정: 2023년 10월 3일_ _Hyperclass 사용 가이드 — hyperclass.ai_
+- 뉴스레터용 [이메일 템플릿](../../10-마케팅/Templates/email-templates-vs-email-campaigns.md)을 설정하세요. 소식, 업데이트, 프로모션을 연락처에 쉽게 보낼 수 있어요.

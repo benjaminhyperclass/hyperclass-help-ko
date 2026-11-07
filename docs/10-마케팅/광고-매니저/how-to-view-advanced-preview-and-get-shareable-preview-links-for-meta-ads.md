@@ -1,92 +1,82 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 10-마케팅 > 광고-매니저
+원문: /support/solutions/articles/155000007519-how-to-view-advanced-preview-and-get-shareable-preview-links-for-meta-ads
+번역일: 2026-11-07
+카테고리: 10-마케팅
 ---
 
-# 메타 광고 고급 미리보기 및 공유 가능한 미리보기 링크 사용법
+# Meta 광고 Advanced Preview(고급 미리보기)와 공유용 미리보기 링크 사용하기
 
-이 가이드는 메타 캠페인용 광고 매니저에서 고급 미리보기(Advanced Preview)와 공유 가능한 미리보기 링크(Shareable Preview Links)를 사용하는 방법을 설명합니다. 이 기능을 통해 다양한 게재 위치에서 광고가 어떻게 표시되는지 확인하고, 발행된 광고의 미리보기를 팀원이나 이해관계자와 공유할 수 있습니다.
+**광고 관리자**에서 Meta 광고가 여러 게재 위치에서 어떻게 보이는지 **Advanced Preview**(고급 미리보기)로 확인할 수 있어요. 조건을 충족하는 광고라면 Meta의 미리보기 화면으로 바로 열리는 공유용 미리보기 링크도 만들 수 있어요. 이 문서에서는 두 가지 미리보기를 여는 방법, 게재 위치별 표시 방식, 미리보기 링크를 복사하는 방법을 안내해요.
 
----
+## Advanced Preview와 공유용 미리보기 링크란?
 
-## 목차
+하이퍼클래스 **광고 관리자**에서 Meta 광고를 확인하는 방법은 두 가지예요. **Advanced Preview**로는 선택한 광고가 사용할 수 있는 Meta 게재 위치마다 어떻게 보이는지 살펴볼 수 있어요. 공유용 미리보기 링크는 해당 기능을 쓸 수 있을 때, Meta의 미리보기 화면으로 광고를 여는 URL이에요.
 
-- [고급 미리보기 사용하기](#고급-미리보기-사용하기)
-  - [고급 미리보기 접근 단계](#고급-미리보기-접근-단계)
-- [미리보기에서 게재 위치 렌더링](#미리보기에서-게재-위치-렌더링)
-- [공유 가능한 미리보기 링크 생성하기](#공유-가능한-미리보기-링크-생성하기)
-  - [공유 가능한 링크의 사용 가능성](#공유-가능한-링크의-사용-가능성)
-- [공유 가능한 미리보기 링크 복사 단계](#공유-가능한-미리보기-링크-복사-단계)
-- [공유된 미리보기 보기](#공유된-미리보기-보기)
-- [접근 권한](#접근-권한)
+### 이럴 때 유용해요
 
----
+캠페인 빌더를 벗어나기 전에 **광고** 수준에서 광고가 어떻게 보이는지 확인할 수 있어요.
 
-## 고급 미리보기 사용하기
+- 게재 위치별 표시 확인: 선택한 소재가 사용할 수 있는 Meta 게재 위치에서 어떻게 보이는지 확인해요.
+- 미리보기 URL 공유: 공유 링크 버튼이 표시되는 Meta 광고라면 미리보기 링크를 복사해 전달할 수 있어요.
+- 하이퍼클래스에서 바로 확인: Meta 캠페인을 관리하는 캠페인 → **Ad Set**(광고 세트) → **광고** 구조 안에서 미리보기를 열 수 있어요. 하이퍼클래스의 Meta 캠페인 문서도 이 구조를 그대로 따라요.
 
-고급 미리보기를 통해 광고 소재가 다양한 메타 게재 위치에서 어떻게 렌더링되는지 확인할 수 있습니다. 이를 통해 다른 사람과 공유하거나 캠페인 성과를 검토하기 전에 광고가 올바르게 표시되는지 확인할 수 있습니다.
+## 사용 방법
 
-### 고급 미리보기 접근 단계
+**Advanced Preview**와 공유용 미리보기 링크는 Meta 캠페인의 **광고** 수준에서 열어요. 올바른 캠페인과 광고를 찾아갈 수 있도록 **서브 계정**에서 시작하세요.
 
-1. 하위 계정에서 Marketing(마케팅) > Ad Manager(광고 매니저)로 이동합니다.
-2. 검토하려는 메타 캠페인을 엽니다.
-3. 광고 세트(Ad Set)로 이동하여 미리보기할 광고(Ad)를 선택합니다.
-4. 캠페인 빌더 우측의 미리보기 패널을 찾습니다.
-5. 미리보기 패널에서 고급 미리보기(Advanced Preview) 아이콘을 클릭합니다.
+### Advanced Preview 열기
 
-![고급 미리보기 아이콘 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066972660/original/3vuXkdQIgNdL-xoPB3ilijoXuUgtXnOUfQ.png?1773609483)
+1. **서브 계정**의 왼쪽 메뉴에서 **마케팅**을 선택해요.
+2. **광고 관리자**를 선택해요.
 
-미리보기가 새 탭에서 열리고 메타의 미리보기 인터페이스가 로드됩니다. 이 인터페이스는 캠페인에 구성된 게재 위치에서 광고가 어떻게 표시되는지 보여줍니다.
+   ![마케팅 메뉴에서 광고 관리자를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081564377/original/P8K7-XrMCSh4drCqCTvP5bzIdcLBpPa-0w.png?1790083581)
 
-![메타 미리보기 인터페이스](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066972675/original/EvnFwXKXQZru__fIMGkbHj48tI6397fplg.png?1773609549)
+3. 확인하려는 Meta 캠페인을 열어요.
+4. 해당 **Ad Set**(광고 세트)을 열어요.
+5. 미리볼 **광고**를 선택해요.
+6. 캠페인 빌더 오른쪽의 미리보기 영역을 찾아요.
+7. **Advanced Preview**를 선택해요.
 
-![미리보기 인터페이스 세부사항](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066972678/original/l7Ps96SPxhYlawWZGBWTKiFar7EaXKargA.png?1773609575)
+   ![캠페인 빌더 오른쪽 미리보기 영역의 Advanced Preview 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081564789/original/eUQFgo8Qqp8oTxIeS5hJUky9zV0A8AgNAQ.png?1790083710)
 
-미리보기 내에서 게재 위치를 스크롤하여 메타 생태계 전반에서 광고 소재가 어떻게 표시되는지 확인하세요.
+### 공유용 미리보기 링크 복사하기
 
-## 미리보기에서 게재 위치 렌더링
+공유용 미리보기 링크를 쓰면 게시된 광고를 캠페인 빌더 밖에서 Meta의 미리보기 화면으로 열 수 있어요.
 
-고급 미리보기는 캠페인에 구성된 모든 게재 위치에서 광고를 표시하려고 시도합니다. 하지만 일부 게재 위치는 특정 소재 형식을 지원하지 않을 수 있습니다.
+1. **서브 계정**의 왼쪽 메뉴에서 **마케팅**을 선택해요.
+2. **광고 관리자**를 선택해요.
+3. 미리볼 광고가 들어 있는 Meta 캠페인을 열어요. 광고 캠페인이 이미 게시된 상태인지 확인하세요.
+4. 해당 **Ad Set**을 열어요.
+5. **광고**를 선택해요.
+6. 캠페인 빌더 오른쪽의 미리보기 영역을 찾아요.
+7. **Advanced Preview** 옆의 **link control**(링크 버튼)을 선택해 미리보기 링크를 복사해요.
+8. 복사한 미리보기 URL을 사용할 곳에 붙여넣어요.
 
-게재 위치에서 업로드된 소재 형식을 지원하지 않는 경우, 미리보기에는 메타에서 반환하는 오류 메시지가 표시되어 해당 게재 위치에서 광고를 렌더링할 수 없는 이유를 설명합니다. 이를 통해 메타 광고 매니저로 이동하지 않고도 호환성 문제를 파악할 수 있습니다.
+   ![Advanced Preview 옆의 링크 버튼으로 미리보기 링크를 복사하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081614764/original/YZ4VZmiz8TtmO1asnZnMMnu2UAGefU2iXQ.png?1790145127)
 
-## 공유 가능한 미리보기 링크 생성하기
+## Advanced Preview의 게재 위치별 표시
 
-광고 매니저에서는 메타의 미리보기 환경에서 광고를 여는 공유 가능한 미리보기 링크를 생성할 수 있습니다. 이 링크를 팀원이나 이해관계자와 공유하여 광고 렌더링을 확인할 수 있습니다.
+**Advanced Preview**에서는 캠페인에서 사용할 수 있는 Meta 게재 위치마다 선택한 소재가 어떻게 보이는지 확인할 수 있어요. 소재 형식과 Meta가 현재 지원하는 게재 위치에 따라 사용할 수 있는 위치는 달라질 수 있어요.
 
-![공유 가능한 미리보기 링크](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066972699/original/w4PJnPIEgpVK9eOmXAlmU7QqsywW-Cq5Ow.png?1773609763)
-
-### 공유 가능한 링크의 사용 가능성
-
-- 공유 가능한 미리보기 링크는 발행된 캠페인에서만 사용할 수 있습니다.
-- 초안(Draft) 또는 일시정지(Paused) 상태의 광고에서는 링크 옵션이 표시되지 않습니다.
-
-## 공유 가능한 미리보기 링크 복사 단계
-
-1. 광고 매니저에서 발행된 메타 캠페인을 엽니다.
-2. 광고(Ad) 레벨로 이동합니다.
-3. 미리보기 패널을 찾습니다.
-4. 고급 미리보기(Advanced Preview) 버튼 옆에 있는 링크 아이콘을 클릭합니다.
-5. 미리보기 링크가 자동으로 클립보드에 복사됩니다.
-
-![링크 복사 과정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066972718/original/pk0lEOXFqUZ8j6XqhO2dhvYu_2qDbOSP0w.png?1773609864)
-
-그런 다음 필요한 곳에 링크를 붙여넣어 광고 미리보기를 공유할 수 있습니다.
+```
+소재 형식이 특정 게재 위치를 지원하지 않으면, Advanced Preview에 Meta가 보내 준 안내 메시지가 표시돼요. 그 게재 위치에서 광고를 표시할 수 없는 이유를 알려 주는 메시지예요.
+```
 
 ## 공유된 미리보기 보기
 
-공유 가능한 미리보기 링크를 열면 메타가 호스팅하는 광고 미리보기 인터페이스가 로드되며, 새 브라우저 탭에서 열리는 것이 좋습니다. 미리보기는 광고 소재를 표시하고 구성된 게재 위치에서 광고가 어떻게 표시되는지 확인할 수 있게 해줍니다.
+복사한 미리보기 링크를 열면 Meta의 미리보기 화면에서 광고가 열려요. 링크를 받은 사람은 Meta가 해당 광고에 제공하는 게재 위치 화면으로 광고 소재를 확인할 수 있어요.
 
-이 미리보기는 메타 플랫폼에서 사용자에게 광고가 어떻게 보일지를 나타냅니다.
+## 자주 묻는 질문
 
-![공유된 미리보기 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066972728/original/2i9THDQpPwfSznhwHhsd8BoPcebEquMr2A.png?1773609977)
+### Meta 광고의 Advanced Preview는 어디에서 찾을 수 있나요?
+**서브 계정**에서 **마케팅 > 광고 관리자**로 이동해 Meta 캠페인을 열고, 해당 **Ad Set**을 연 다음 **광고**를 선택하세요. **Advanced Preview**는 광고의 미리보기 영역에서 열 수 있어요.
 
-## 접근 권한
+### Advanced Preview로 Meta 게재 위치별 모습을 각각 확인할 수 있나요?
+네. **Advanced Preview**는 선택한 Meta 광고에서 사용할 수 있는 게재 위치별 미리보기를 보여 주도록 만들어졌어요.
 
-- 미리보기 접근은 메타의 광고 계정 권한 모델을 따릅니다. 연결된 광고 계정에 대한 적절한 접근 권한이 있는 사용자만 미리보기 환경을 볼 수 있습니다.
-- 이를 통해 광고 미리보기는 승인된 사용자만 접근할 수 있도록 하면서도, 팀이 공유 가능한 링크를 통해 쉽게 광고를 검토할 수 있습니다.
+## 함께 보면 좋은 문서
 
----
-*원문 최종 수정: 2026년 3월 15일 오후 4시 28분*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+- [광고 관리자 - 새 Facebook 광고 캠페인 만들기](../Ad-Campaign-Creation-and-Management/ad-manager-create-new-facebook-ad-campaigns.md)
+- [Facebook 비즈니스 계정을 광고 관리자에 연결하기](../Ad-Manager-Setup-and-Configuration/connecting-facebook-business-account-to-ad-manager.md)
+- [광고 관리자에서 Meta 캠페인 시작하기](../how-to-get-started-with-meta-campaigns-in-ad-manager.md)
+- [게시됨 또는 검토 중인 Meta 광고 캠페인 편집하기](../Ad-Campaign-Creation-and-Management/editing-a-published-or-in-review-meta-ad-campaigns.md)

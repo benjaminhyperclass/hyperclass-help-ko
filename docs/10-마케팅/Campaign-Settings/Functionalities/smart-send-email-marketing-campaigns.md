@@ -1,140 +1,120 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 10-마케팅 > Campaign Settings/Functionalities
+원문: /support/solutions/articles/155000006628-smart-send-email-marketing-campaigns
+번역일: 2026-11-06
+카테고리: 10-마케팅
 ---
 
-# 스마트 전송: 이메일 마케팅 캠페인
+# Smart Send로 이메일 캠페인 발송 시간 최적화하기
 
-스마트 전송(Smart Send)은 "언제 전송 버튼을 눌러야 할까?"라는 고민을 없애고, 모든 일반 이메일 캠페인에 대해 최적의 발송 시간을 자동으로 추천해드립니다. 그 결과 별도 설정 없이도 더 높은 열람률과 클릭률을 얻을 수 있어, 데이터 기반의 성과를 원하는 바쁜 마케터에게 완벽한 솔루션입니다.
-
----
-
-**목차**
-
-- [스마트 전송이란?](#스마트-전송이란)
-- [스마트 전송의 주요 장점](#스마트-전송의-주요-장점)
-- [이용 조건](#이용-조건)
-- [최적 시간 추천 로직](#최적-시간-추천-로직)
-- [분석 대시보드 개선사항](#분석-대시보드-개선사항)
-- [스마트 전송 설정 방법](#스마트-전송-설정-방법)
-- [자주 묻는 질문](#자주-묻는-질문)
----
-
-## **스마트 전송이란?**
-
-스마트 전송은 Hyperclass의 발송 및 예약 화면에 새로 추가된 발송 옵션으로, 지난 60일간의 수신자 참여도(열람, 클릭 및 기타 이벤트)를 분석하여 캠페인에 가장 적합한 단일 발송 시간을 찾아줍니다. 추천의 통계적 신뢰성을 보장하기 위해 해당 로케이션에서 지난 60일간 최소 1,000건의 이메일을 발송해야 합니다. 추천을 요청하면 스마트 전송이 즉시 데이터를 분석하여 가장 높은 참여도가 예상되는 시간대에 이메일을 예약합니다.
+**Smart Send**(스마트 발송)는 일반 이메일 캠페인마다 가장 반응이 좋을 발송 시간을 자동으로 추천해 주는 기능이에요. 따로 설정하지 않아도 오픈율과 클릭률을 높일 수 있어요. 데이터를 근거로 발송 시간을 정하고 싶은 마케터에게 알맞아요.
 
 ---
 
-## **스마트 전송의 주요 장점**
+## Smart Send란?
 
-- 수동 분석 없이도 열람률과 클릭률 자동 향상
+Smart Send는 하이퍼클래스의 **Send & Schedule**(보내기 및 예약) 화면에 추가된 발송 옵션이에요. 최근 60일 동안 수신자가 보인 반응(오픈, 클릭 등)을 분석해서 캠페인을 보내기에 가장 좋은 시간 한 곳을 찾아 줘요.
 
-- 원활한 워크플로우 — 기존의 발송 및 예약 과정에서 지금 전송(Send Now), 간단 예약(Simple Schedule), 일괄 발송(Batch), RSS 예약(RSS Schedule)과 함께 옵션으로 표시
-
-- 유연성 — 추천을 받아들이거나 원하는 날짜와 시간으로 직접 설정 가능
-
-- 투명한 ROI — 발송 후 분석에서 해당 로케이션의 과거 평균 대비 참여도 향상 비율 표시
+추천 결과가 통계적으로 믿을 만하려면 서브 계정에서 최근 60일 동안 이메일을 1,000통 이상 발송해야 해요. 추천을 요청하면 Smart Send가 바로 데이터를 계산해서, 예상 반응이 가장 높은 시간대로 이메일을 예약해 줘요.
 
 ---
 
-## **이용 조건**
+## Smart Send의 장점
 
-스마트 전송은 Hyperclass에 정확한 예측을 위한 충분한 최근 데이터가 있을 때만 작동합니다.
-
-- 동일 로케이션에서 지난 60일간 최소 1,000건의 이메일 발송
-
-- 이메일 빌더(Email Builder) → 캠페인(Campaigns)에서 생성된 캠페인
-
-- 현재 일반 이메일 캠페인만 지원 (A/B 테스트 및 일괄 발송 지원 예정)
+- 오픈율과 클릭률이 자동으로 올라가요. 직접 분석할 필요가 없어요.
+- 기존 **Send & Schedule** 흐름 안에서 그대로 쓸 수 있어요. **Send Now**(즉시 발송), **Simple Schedule**(간단 예약), **Batch**(배치 발송), **RSS Schedule**(RSS 예약) 옵션과 나란히 표시돼요.
+- 추천 시간을 그대로 쓰거나, 원하는 날짜와 시간으로 직접 바꿀 수 있어요.
+- 발송 후 분석 화면에서 서브 계정의 과거 평균과 비교한 참여도 상승률(%)을 확인할 수 있어요.
 
 ---
 
-## **최적 시간 추천 로직**
+## 사용 조건
 
-스마트 전송은 다음 요소들을 고려한 60일 참여도 모델을 구축합니다:
+하이퍼클래스에 최근 데이터가 충분해야 정확하게 예측할 수 있어요. 아래 조건을 모두 충족해야 해요.
 
-- 시간대별 열람 이벤트 (하위 계정의 현지 시간 기준)
-
-- 클릭 이벤트 및 기타 상호작용을 통한 매출 증대 참여도 예측 정밀화
-
-- 과거 성과가 낮았던 시간대 추천을 피하기 위한 로케이션 평균 대비 상대적 성과
-
-![스마트 전송 추천 로직 차트](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055728760/original/0lEyq3ktSKx2taYt-z0Qb6z4hX1_CT71nw.png?1760105895)
-
-특정 시간에 대한 데이터가 부족한 경우, 스마트 전송은 모델이 신뢰도 기준을 충족할 때까지 자동으로 시간 범위를 확대합니다.
+- 같은 서브 계정에서 최근 60일 동안 이메일을 1,000통 이상 발송했어야 해요.
+- **이메일 빌더 > 캠페인**에서 캠페인을 만들어야 해요.
+- 지금은 일반 이메일 캠페인에서만 쓸 수 있어요. A/B 테스트와 배치 발송 지원은 곧 추가될 예정이에요.
 
 ---
 
-## **분석 대시보드 개선사항**
+## 추천 시간은 어떻게 정해지나요?
 
-스마트 전송 캠페인 발송 후, 이메일 통계(Email Statistics) 대시보드에서 다음을 확인할 수 있습니다:
+Smart Send는 최근 60일 동안의 반응 데이터로 모델을 만들고, 아래 항목을 함께 따져서 추천 시간을 정해요.
 
-- 로케이션의 60일 기준선 대비 참여도 향상률(%)
+- 시간대별 오픈 이벤트 (서브 계정 기준 현지 시간)
+- 클릭 이벤트와 그 밖의 상호작용: 매출로 이어지는 반응까지 반영해 예측을 다듬어요.
+- 서브 계정 평균과 비교한 상대적인 성과: 과거에 성과가 낮았던 시간대는 추천하지 않도록 해요.
 
-- 추천 시간대별 열람 및 클릭 세부 내역
+![Smart Send 추천 시간 예시 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055728760/original/0lEyq3ktSKx2taYt-z0Qb6z4hX1_CT71nw.png?1760105895)
 
-- 스마트 전송 vs 수동 예약 캠페인 비교 차트로 기능의 효과 정량화
-
-![스마트 전송 분석 대시보드](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055728695/original/TtJ08zhPpQvow9YHa2Bne8pcILhUCODc4Q.png?1760105836)
-
----
-
-## 스마트 전송 설정 방법
-
-스마트 전송으로 캠페인을 시작하는 것은 템플릿을 선택하는 것만큼 간단합니다:
-
-1. 마케팅(Marketing) → 이메일(Emails)로 이동하세요.
-
-![마케팅 이메일 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055729100/original/NDepPiX80L8Yqfl6DnhhYMJNi7Q2ZGA59w.png?1760106038)
-
-2. 캠페인(Campaigns) → 새 캠페인 만들기(Create New Campaign)를 클릭하세요.
-
-![새 캠페인 만들기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055729212/original/qZh1TIvr0aynC6TjYxpxyOR70M1CIgWEcw.png?1760106080)
-
-3. 이메일을 디자인한 후 전송 또는 예약(Send or Schedule)을 클릭하세요.
-
-![이메일 디자인 완료](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055729304/original/s5t7KdwxY_PmaHcNEyxQfrF81JlAWcC27w.png?1760106152)
-
-4. 스마트 전송(Smart Send, 다섯 번째 발송 옵션)을 선택하세요.
-
-![스마트 전송 옵션 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055729345/original/KRdhrRarp_D3PYjbhjmWvZWEGFj1H0ao7w.png?1760106176)
-
-5. 필수 항목을 완료하고 추천 받기(Get Recommendation)를 클릭하세요. Hyperclass가 최적 발송 시간을 표시합니다.
-
-![스마트 전송 추천 받기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055730199/original/UttAfKi8QbBOrAQij5x5FcqPwL7hcIYvRw.png?1760106484)
-
-**팁**: 이제 캠페인을 예약할 수 있습니다. 발송 후 마케팅(Marketing) → 이메일(Emails) → 통계(Statistics)에서 참여도 향상을 확인해보세요.
+특정 시간대의 데이터가 부족하면 Smart Send가 모델의 신뢰 기준을 맞출 때까지 시간 범위를 자동으로 넓혀요.
 
 ---
 
-## **자주 묻는 질문**
+## 분석 대시보드에서 확인할 수 있는 내용
 
-**Q: 우리 로케이션에서 지난 60일간 1,000건의 이메일을 보내지 않았다면 어떻게 되나요?**
+Smart Send 캠페인을 발송하고 나면 **Email Statistics**(이메일 통계) 대시보드에 아래 내용이 표시돼요.
 
-스마트 전송 옵션이 회색으로 비활성화됩니다. 기준을 충족할 때까지 간단 예약을 사용하시면, 충분한 데이터가 확보되면 Hyperclass가 자동으로 스마트 전송을 활성화합니다.
+- **Engagement Lift (%)**(참여도 상승률): 서브 계정의 최근 60일 기준값과 비교한 수치예요.
+- 추천 시간대의 오픈 수와 클릭 수 분석
+- Smart Send와 직접 예약한 캠페인을 비교하는 차트: 기능의 효과를 수치로 확인할 수 있어요.
 
-**Q: 어떤 연락처가 언제 이메일을 받았는지 확인할 수 있나요?**
-
-네, 가능합니다. 캠페인의 수신자(Recipient) 탭에서 각 발송의 예약된 타임스탬프를 확인할 수 있어, 발송 시간을 검토하거나 데이터를 내보내서 더 자세한 분석을 할 수 있습니다.
-
-**Q: 스마트 전송이 개별 연락처의 시간대를 고려하나요?**
-
-스마트 전송은 현재 로케이션 수준에서 최적화됩니다. 연락처별 시간대 발송을 원하신다면 워크플로우에서 대기(Wait) → 날짜/시간(Date/Time) 액션을 사용하세요.
-
-**Q: 예약(Schedule)을 클릭한 후에도 추천을 변경할 수 있나요?**
-
-물론입니다. 예약된 시간 전에 캠페인 내에서 일정 변경(Reschedule)을 클릭하여 새 시간을 선택하고 저장하시면 됩니다.
-
-**Q: 스마트 전송이 A/B 테스트와 함께 작동하나요?**
-
-A/B 캠페인 지원은 개발 계획에 있으며, 현재는 A/B 테스트에 간단 예약을 사용해주세요.
-
-**Q: API를 통해 스마트 전송을 사용할 수 있나요?**
-
-아직은 불가능합니다. API 접근은 향후 릴리스에서 발표될 예정입니다.
+![이메일 통계 대시보드의 Smart Send 성과 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055728695/original/TtJ08zhPpQvow9YHa2Bne8pcILhUCODc4Q.png?1760105836)
 
 ---
-*원문 최종 수정: 2025년 10월 14일*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+
+## Smart Send 설정하기
+
+Smart Send는 발송 옵션만 고르면 바로 쓸 수 있어요.
+
+1. **마케팅 > 이메일**로 이동하세요.
+
+   ![마케팅 메뉴에서 이메일로 이동하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055729100/original/NDepPiX80L8Yqfl6DnhhYMJNi7Q2ZGA59w.png?1760106038)
+
+2. **캠페인**을 클릭한 다음 **새 캠페인 만들기**를 클릭하세요.
+
+   ![캠페인에서 새 캠페인 만들기를 클릭하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055729212/original/qZh1TIvr0aynC6TjYxpxyOR70M1CIgWEcw.png?1760106080)
+
+3. 이메일을 디자인한 다음 **캠페인 보내기**를 클릭하세요.
+
+   ![이메일 디자인 후 캠페인 보내기를 클릭하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055729304/original/s5t7KdwxY_PmaHcNEyxQfrF81JlAWcC27w.png?1760106152)
+
+4. 발송 옵션에서 **Smart Send**를 선택하세요. 다섯 번째 옵션이에요.
+
+   ![발송 옵션에서 Smart Send를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055729345/original/KRdhrRarp_D3PYjbhjmWvZWEGFj1H0ao7w.png?1760106176)
+
+5. 필수 항목을 입력하고 **Get Recommendation**(추천 받기)을 클릭하세요. 하이퍼클래스가 가장 좋은 발송 시간을 보여 줘요.
+
+   ![추천 받기를 클릭해 최적 발송 시간을 확인하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055730199/original/UttAfKi8QbBOrAQij5x5FcqPwL7hcIYvRw.png?1760106484)
+
+{% hint style="info" %}
+이제 캠페인을 예약할 수 있어요. 발송한 뒤에는 **마케팅 > 이메일 > Statistics**(통계)에서 성과를 확인하고 참여도 상승률을 볼 수 있어요.
+{% endhint %}
+
+---
+
+## 자주 묻는 질문
+
+### 서브 계정에서 최근 60일 동안 이메일을 1,000통 보내지 못했다면 어떻게 하나요?
+
+**Smart Send** 옵션이 회색으로 표시돼요. 기준을 채울 때까지는 **Simple Schedule**을 사용하세요. 데이터가 충분해지면 하이퍼클래스가 Smart Send를 자동으로 켜 줘요.
+
+### 어떤 연락처가 몇 시에 이메일을 받았는지 볼 수 있나요?
+
+네, 볼 수 있어요. 캠페인의 **Recipient**(수신자) 탭에 발송별 예약 시각이 표시돼요. 발송 시간을 확인하거나, 데이터를 내보내서 더 자세히 분석할 수 있어요.
+
+### Smart Send는 연락처마다 다른 시간대를 반영하나요?
+
+아니요. 현재 Smart Send는 서브 계정 단위로 최적화해요. 연락처별 시간대에 맞춰 보내려면 워크플로우에서 **Wait**(대기) > **Date/Time**(날짜/시간) 액션을 사용하세요.
+
+### 예약을 누른 뒤에도 추천 시간을 바꿀 수 있나요?
+
+네, 바꿀 수 있어요. 예약된 시간이 되기 전에 캠페인에서 **Reschedule**(다시 예약)을 클릭하고 새 시간을 고른 다음 저장하세요.
+
+### Smart Send를 A/B 테스트에서도 쓸 수 있나요?
+
+A/B 캠페인 지원은 개발 계획에 들어 있어요. 지금은 A/B 테스트에 **Simple Schedule**을 사용하세요.
+
+### API로도 Smart Send를 쓸 수 있나요?
+
+아직은 쓸 수 없어요. API 지원은 이후 업데이트에서 안내할 예정이에요.

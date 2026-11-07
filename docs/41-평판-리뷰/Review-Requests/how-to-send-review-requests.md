@@ -1,118 +1,102 @@
 ---
-번역일: 2026-04-08T00:00:00.000Z
-카테고리: 평판 관리 > 리뷰 요청
+원문: /support/solutions/articles/48001222668-how-to-send-review-requests
+번역일: 2026-11-06
+카테고리: 41-평판-리뷰
 ---
 
-# 리뷰 요청 보내는 방법
+# 리뷰 요청 보내기
 
-## 리뷰 요청 보내는 방법
+하이퍼클래스 안에서 고객에게 리뷰 요청을 수동 또는 자동으로 보내는 방법을 설명해요. 고객이 Google My Business 페이지에 리뷰를 남기도록 요청하면 여러 가지 이점이 있어요. 자세한 내용은 아래에서 확인하세요.
 
-이 가이드에서는 CRM 내에서 고객에게 리뷰 요청을 수동 및 자동으로 보내는 여러 가지 방법을 다룹니다. 고객에게 Google My Business 페이지에 리뷰를 남기도록 요청하면 아래에서 설명할 여러 가지 이점을 얻을 수 있습니다.
+## 시작하기 전에 확인할 것
 
-**이 가이드에서 다루는 내용:**
+- Google 리뷰 링크를 보내려면 먼저 GMB를 연동하세요(안내 문서 참고). 타사 리뷰 링크를 쓰려면 [여기를 확인하세요](how-to-customize-the-review-request-messages-sms-email.md).
+- 서브 계정 **설정**에서 **리뷰 요청**을 켜야 해요(안내 문서 참고).
+- (선택) 발송되는 리뷰 요청 메시지(SMS/이메일)를 원하는 문구로 바꿀 수 있어요(안내 문서 참고).
+- Google Business Profile이 올바른 위치에 연동되어 있는지 확인하세요(안내 문서 참고).
 
-[**리뷰 요청을 시작하기 전 필수 준비사항**](how-to-send-review-requests.md#리뷰-요청을-시작하기-전-필수-준비사항)
+---
 
-[**리뷰 요청 보내는 방법:**](how-to-send-review-requests.md#리뷰-요청-보내는-방법)
+## 리뷰를 최대한 많이 받아야 하는 이유
 
-*
+사업을 운영하고 있다면 이미 알고 있을 거예요. 리뷰가 필요한 이유는 "사람들이 내 비즈니스를 더 잘 알 수 있게 해 주기 때문"이에요. 이유는 그뿐만이 아니에요.
 
-[**1. 빠른 작업: (수동)**](how-to-send-review-requests.md#1-빠른-작업-수동)
+1. 매출과 전환율을 높일 수 있어요.
 
-*
+   상품이나 서비스를 판매한다면 만족한 고객의 긍정적인 리뷰가 큰 도움이 돼요. 잠재 구매자에게 이 상품이나 서비스가 자신에게 잘 맞을 거라는 확신을 줄 수 있어요.
 
-[**2. 워크플로우 액션: (자동)**](how-to-send-review-requests.md#2-워크플로우-액션-자동)
+2. SEO를 개선할 수 있어요.
 
-*
+   SEO(검색 엔진 최적화)는 온라인 비즈니스를 운영할 때 가장 중요한 요소 중 하나예요. 좋은 콘텐츠도 중요하지만, Google이나 Bing 같은 검색 엔진에 맞게 최적화되어 있지 않으면 검색 결과에서 높은 순위를 받기 어려워요.
 
-[**3. 평판 관리 탭: (수동)**](how-to-send-review-requests.md#3-평판-관리-탭-수동)
+3. 방문자에게 신뢰를 줄 수 있어요.
 
-[**리뷰 요청 상태별 의미**](how-to-send-review-requests.md#리뷰-요청-상태별-의미)
+   방문자는 웹사이트를 둘러보면서 믿을 수 있는 곳인지 확인하고 싶어 해요. 부정적인 후기가 많으면 평판이 나빠지고, 고객이 다음에 구매할 가능성도 낮아질 수 있어요.
 
-[**문제 해결**](how-to-send-review-requests.md#문제-해결)
+4. 더 나은 고객 경험을 줄 수 있어요.
 
-*
+   상품에 리뷰나 평점이 없으면 구매자가 원하는 상품을 찾기 어려워요. 온라인에서 가장 좋은 조건으로 구매하기도 힘들어질 수 있어요.
 
-[**구글 리뷰 이의제기 및 신고하는 방법**](how-to-send-review-requests.md#구글-리뷰-이의제기-및-신고하는-방법)
+---
 
-### 리뷰 요청을 시작하기 전 필수 준비사항
+## 리뷰 요청을 보내는 방법
 
-* Google 리뷰 링크를 보내려면 먼저 GMB를 연동해야 합니다 ([가이드 보기](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/42-%ED%86%B5%ED%95%A9/Google-Integrations/how-to-integrate-google-business-profile-gbp-with-highlevel.md). 또는 타사 리뷰 링크를 사용하고 싶다면 [여기를 클릭하세요](../../03-대화/기타/reputation-management-how-to-customize-the-review-request-messages-sms-email-.md)
-* %20the%20review%20request%20feature%20throughout%20the%20system,-Please%20toggle%20the)%20the%20review%20request%20feature%20throughout%20the%20system,-Please%20toggle%20the)하위 계정 설정에서 리뷰 요청 기능을 활성화(토글 켜기)해야 합니다 (가이드 보기%20the%20review%20request%20feature%20throughout%20the%20system,-Please%20toggle%20the))
-* (선택사항) 발신 리뷰 요청 메시지(SMS/이메일) 커스터마이징 ([**가이드 보기**](how-to-customize-the-review-request-messages-sms-email-.md)
-* Google 비즈니스 프로필이 완전히 연동되고 올바른 로케이션에 연결되었는지 확인하세요. ([가이드 보기](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/42-%ED%86%B5%ED%95%A9/Google-Integrations/how-to-integrate-google-business-profile-gbp-with-highlevel.md)
+하이퍼클래스에서 리뷰 요청을 보내는 방법은 세 가지예요.
 
-### 최대한 많은 리뷰를 받아야 하는 이유:
+1. **빠른 액션**: 사용자가 직접 보내는 수동 방식이에요.
+2. **Workflow Action**(워크플로우 액션): 워크플로우 안에서 리뷰 요청을 자동으로 보내요. 연락처에 담당 사용자가 지정되어 있으면 그 담당 사용자의 이름으로 리뷰 요청이 나가요.
+3. **평판 관리** 탭: 사용자가 직접 보내는 수동 방식이에요.
 
-사업을 운영하고 있다면, 왜 비즈니스나 서비스에 리뷰가 필요한지에 대한 답이 "사람들이 당신의 비즈니스에 대해 더 알 수 있도록 도와주기 때문"이라는 것을 이미 알고 계실 것입니다.
+---
 
-그리고 더 많은 이유가 있습니다...
+## 1. 빠른 액션으로 보내기 (수동)
 
-1. 매출과 전환율 증가
+**빠른 액션**은 사이드바 위 왼쪽 상단에 있는 바로 가기예요. 몇 번의 클릭만으로 여러 작업을 실행할 수 있고, 그중 하나가 리뷰 요청 보내기예요.
 
-제품이나 서비스를 판매하고 있다면, 만족한 고객들로부터 긍정적인 리뷰를 받는 것이 합리적입니다. 이러한 리뷰는 잠재 구매자들에게 해당 제품/서비스가 그들에게 좋을 것이라고 확신시켜 줄 수 있습니다.
+![빠른 액션에서 리뷰 요청을 보내는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48253460777/original/fGCUySpsIIEoMcXrn4-AysrfJErzo2EQXw.gif?1664294199)
 
-2. SEO 개선
+{% hint style="info" %}
+리뷰 요청을 보내면 현재 로그인한 사용자가 메시지의 발신자로 표시돼요.
 
-SEO(검색 엔진 최적화)는 온라인 비즈니스 운영에서 가장 중요한 측면 중 하나입니다. 고품질 콘텐츠를 갖추는 것도 좋지만, Google과 Bing 같은 검색 엔진에 최적화되지 않았다면 검색 결과에서 좋은 순위를 얻기 어렵습니다.
+![리뷰 요청 발신자 표시 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48252671465/original/7OpayQ_kGN6ZhW10WyXVlOL0owImRWHEMg.png?1663879131)
 
-3. 방문자와의 신뢰 구축
+연락처의 담당 사용자 이름으로 리뷰 요청을 보내려면 워크플로우 액션 **Send Review Request**(리뷰 요청 보내기)를 사용하세요. 담당 사용자를 대신해 요청을 보낼 수 있어요(아래 참고).
+{% endhint %}
 
-사람들이 웹사이트를 방문할 때, 신뢰할 수 있는 사람과 거래하고 있다는 것을 알고 싶어합니다. 사이트에 부정적인 댓글이 많다면, 이는 평판을 손상시키고 향후 고객들이 구매할 가능성을 낮출 수 있습니다.
+---
 
-4. 더 나은 고객 경험 제공
+## 2. 워크플로우 액션으로 보내기 (자동)
 
-제품에 대한 리뷰나 평점을 제공하지 않는다면, 잠재 구매자들이 필요한 것을 찾기 어려울 수 있습니다. 이는 또한 온라인 구매 시 최적의 거래를 얻지 못할 수도 있다는 의미입니다.
+워크플로우에서 리뷰 요청을 자동으로 보내려면 **Send Review Request**(리뷰 요청 보내기) 액션을 추가하세요. 그다음 채널을 **Email**(이메일) 또는 **SMS**(문자)로 선택해요.
 
-## 리뷰 요청 보내는 방법:
+![워크플로우에서 리뷰 요청 액션을 추가하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48253748374/original/4621flFaFbUydDSpldVPj_E6iAbxWiz79A.gif?1664393276)
 
-CRM 내에서 리뷰 요청을 보내는 방법은 세 가지가 있습니다:
+---
 
-1. 빠른 작업(Quick Actions) - 사용자가 직접 수행하는 수동 액션2. 워크플로우 액션(Workflow Action) - 워크플로우 내에서 리뷰 요청을 자동으로 보내는 자동 액션. 연락처에 **배정된 사용자**가 있으면 배정된 사용자로부터 리뷰 요청이 발송됩니다.3. 평판 관리 탭(Reputation Tab) - 사용자가 직접 수행하는 수동 액션
+## 3. 평판 관리 탭에서 보내기 (수동)
 
-### 1. 빠른 작업: (수동)
+왼쪽 사이드바에서 **평판 관리 > 요청**으로 이동하세요. 이 화면에서 리뷰 요청을 한 건씩 직접 보내고, 지금까지 보낸 모든 리뷰 요청을 확인할 수 있어요.
 
-빠른 작업(Quick Actions)은 사이드바 위 왼쪽 상단에 있는 바로 가기로, 몇 번의 클릭으로 일련의 작업을 수행할 수 있습니다. 그 중 하나가 리뷰 요청 보내기입니다:
+![평판 관리의 요청 화면에서 리뷰 요청을 보내는 모습](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48253477990/original/6gSuJKY30kCZ4mrTc74yqp6MLv2zeHniCg.gif?1664299510)
 
-![빠른 작업으로 리뷰 요청 보내기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48253460777/original/fGCUySpsIIEoMcXrn4-AysrfJErzo2EQXw.gif?1664294199)
+---
 
-주의사항:
+## 리뷰 요청 상태는 무슨 뜻인가요?
 
-리뷰 요청을 보낼 때, 현재 로그인한 사람이 해당 메시지의 발신자로 표시됩니다. ![리뷰 요청 발신자](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48252671465/original/7OpayQ_kGN6ZhW10WyXVlOL0owImRWHEMg.png?1663879131) 연락처의 배정된 사용자로부터 리뷰 요청을 보내고 싶다면, 워크플로우 액션 "리뷰 요청 보내기"를 사용하여 배정된 사용자 대신 요청을 보내세요 (아래 참조)).
+**대기 중**: 사용자가 리뷰 요청을 만들면 시스템이 바로 발송을 시도해요. 앞에 대기 중인 다른 리뷰 요청이 있으면 발송이 조금 늦어질 수 있어요.
 
-###
+이메일/SMS 요청이 하루 뒤에 발송되도록 설정되어 있는 경우에도 대기 중으로 표시될 수 있어요.
 
-### 2. 워크플로우 액션: (자동)
+- **발송됨**: 시스템이 리뷰 요청을 보냈어요.
+- **전달됨**: 시스템이 리뷰 요청을 보낸 뒤, 전달 여부는 SMS의 경우 Twilio만 확인해 줘요. Mailgun은 전달됨 상태를 제공하지 않아요.
+- **실패**: 리뷰 요청이 전달되지 못했어요. 전화번호가 올바르지 않은 경우 등 여러 이유로 생길 수 있어요.
 
-워크플로우 내에서 리뷰 요청 프로세스를 자동화하려면 "리뷰 요청 보내기(Send Review Request)" 액션을 추가하고 > 채널 이메일/SMS를 선택하세요
+다른 SMTP 연동을 사용 중이라면, SMTP로 연동한 이메일과 같은 이메일의 사용자로 로그인해서 리뷰 요청을 보내세요. 리뷰 요청 이메일을 보낼 때 시스템은 로그인한 사용자의 이메일을 발신자 이메일로 사용해요.
 
-![워크플로우에서 자동 리뷰 요청](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48253748374/original/4621flFaFbUydDSpldVPj_E6iAbxWiz79A.gif?1664393276)
-
-###
-
-### 3. 평판 관리 탭: (수동)
-
--Requests>-To-send-an-individual-Review-Request-Manually-and-to-keep-a-track-of-all-the-review-requests-that-are-being-sent:​​" style="margin-left: 20px;">사이드바에서 평판 관리(Reputation) 탭 > 요청(Requests)으로 이동하여 > 개별 리뷰 요청을 수동으로 보내고 발송된 모든 리뷰 요청을 추적할 수 있습니다: ![평판 관리 탭에서 수동 리뷰 요청](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48253477990/original/6gSuJKY30kCZ4mrTc74yqp6MLv2zeHniCg.gif?1664299510)
-
-### 리뷰 요청 상태별 의미
-
-대기 중(Queued): 사용자가 리뷰 요청을 생성하면, 시스템이 즉시 요청을 보내려고 시도합니다. 요청 앞에 다른 리뷰 요청들이 대기열에 있다면, 요청이 발송되기까지 약간의 지연이 있을 수 있습니다.
-
-또 다른 가능한 이유는 이메일/SMS 요청이 하루 후에 발송되도록 설정된 경우입니다:
-
-* 발송됨(Sent): 시스템이 리뷰 요청을 발송했습니다.
-* 전달됨(Delivered): 시스템이 리뷰 요청을 발송한 후, Twilio만이 발송된 SMS의 전달을 확인합니다. Mailgun은 전달 상태를 제공하지 않습니다.
-*
-* 실패(Failed): 리뷰 요청 전달이 실패한 경우입니다. 전화번호가 유효하지 않는 등 다양한 이유로 발생할 수 있습니다.
-
-다른 SMTP 연동을 사용하고 있다면, SMTP 연동 이메일과 일치하는 사용자 이메일로 로그인하여 리뷰 요청을 보내야 합니다. 시스템은 리뷰 요청 이메일을 보낼 때 사용자 로그인 이메일을 발신자 이메일로 사용합니다.
+---
 
 ## 문제 해결
 
-#### 구글 리뷰 이의제기 및 신고하는 방법
+### Google 리뷰를 신고하거나 이의를 제기하려면 어떻게 하나요?
 
-잘못되었거나 스팸이라고 생각되는 Google 리뷰를 이의제기하거나 신고하려면 이 가이드의 지침을 따르세요:\[]\([report-a-google-review-and-check-on-report-status](../../07-워크플로우/기타/report-a-google-review-and-check-on-report-status.md)[Google 리뷰 이의제기 및 이의제기 상태 확인 방법](how-to-dispute-a-google-review-and-check-on-the-dispute-status.md)
-
-***
-
-_원문 최종 수정: Tue, 29 Apr, 2025 at 2:45 PM_ _Hyperclass 사용 가이드 — hyperclass.ai_
+잘못되었거나 스팸이라고 생각되는 Google 리뷰에 이의를 제기하거나 신고하려면 "How to Dispute a Google Review and Check on the Dispute Status" 문서의 안내를 따르세요.

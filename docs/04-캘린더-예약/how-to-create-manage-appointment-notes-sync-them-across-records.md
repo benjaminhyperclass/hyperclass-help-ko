@@ -1,173 +1,147 @@
 ---
-
-번역일: 2026-04-06
+원문: /support/solutions/articles/155000003444-how-to-create-manage-appointment-notes-sync-them-across-records
+번역일: 2026-11-06
 카테고리: 04-캘린더-예약
 ---
 
-# 예약 노트 작성, 관리 및 레코드 간 동기화하는 방법
+# 예약 메모 작성·관리하고 연락처·기회·대화에 동기화하기
 
-핵심 내용을 한 번만 기록하고 어디서든 함께 활용하세요. Hyperclass에서는 예약(Appointment) 노트가 관련된 연락처(Contact), 기회(Opportunity), 대화(Conversation) 레코드에 자동으로 표시되어 모든 팀원이 같은 정보를 볼 수 있습니다. 이 가이드에서는 노트를 작성, 관리, 필터링하는 방법과 구글/아웃룩과 동기화되는 항목과 내부 전용 항목을 구분하여 설명합니다. 업무 인수인계를 원활하게 하고 중복 입력을 줄이며 모든 상호작용을 실행 가능하게 만드세요.
+예약 메모를 한 번만 작성하면 같은 예약과 연결된 연락처, 기회, 대화에서 똑같이 볼 수 있어요. 이 문서에서는 메모를 만들고, 관리하고, 필터링하는 방법을 안내해요. Google/Outlook과 동기화되는 내용과 하이퍼클래스 안에만 남는 내용도 구분해서 설명해요.
 
----
+## 예약 메모란?
 
-**목차**
+예약 메모는 캘린더 일정 하나에 연결된 내부용 메모예요. 메모를 추가하면 그 예약과 연결된 연락처, 기회, 대화에서도 자동으로 볼 수 있어요.
 
-- [Hyperclass의 예약 노트란?](#hyperclass의-예약-노트란)
-- [예약 노트의 주요 장점](#예약-노트의-주요-장점)
-- [다양한 모듈 간 노트 흐름](#다양한-모듈-간-노트-흐름)
-- [예약 노트 추가, 확인 및 관리 방법](#예약-노트-추가-확인-및-관리-방법)
-- [예약 노트 관리](#예약-노트-관리)
-- [자주 묻는 질문](#자주-묻는-질문)
+예약 메모를 수정하거나 삭제하면 메모가 표시되는 모든 곳에 반영돼요. 같은 내용을 다시 입력하거나 버전을 맞출 필요가 없어요. 메모마다 작성자와 작성 시각이 기록되므로 담당자가 바뀔 때도 확인하기 쉬워요. 예약 메모는 하이퍼클래스 안에서만 쓰는 내부 메모예요. 외부 캘린더의 설명란은 따로 관리되며 예약 메모를 대신하지 않아요.
 
----
+예약의 메모 영역에는 세 가지 내용이 보여요.
 
-# Hyperclass의 예약 노트란?
+- 사용자가 추가한 메모: 연락처, 기회, 대화로 함께 표시돼요.
+- 예약한 사람이 예약 폼에 입력한 **추가 정보**: **Appointment Modal**(예약 창)에서만 보여요.
+- Google/Outlook 일정 설명: 양방향 동기화를 켠 경우에만 보이며, 예약 창에서만 보여요.
 
-예약 노트는 Hyperclass의 단일 캘린더 이벤트에 연결된 내부 컨텍스트를 기록합니다. 노트를 추가하면 관련된 연락처(Contact), 기회(Opportunity), 대화(Conversation) 레코드에서 자동으로 확인할 수 있습니다.
+내부 메모는 외부 캘린더로 절대 동기화되지 않아요. 양방향 동기화를 켜면 Google/Outlook의 일정 설명이 참고용으로 예약 안에 들어와요.
 
-예약 노트를 수정하거나 삭제하면 해당 노트가 표시되는 모든 곳에 반영되므로 다시 입력하거나 버전을 맞출 필요가 없습니다. 각 노트에는 작성자와 작성 시간이 기록되어 책임 소재와 업무 인수인계를 지원합니다. 노트는 Hyperclass 내부 전용이며, 외부 캘린더 설명과는 별도로 관리됩니다.
+## 예약 메모의 장점
 
-예약의 노트 영역에서는 세 가지 유형의 콘텐츠를 확인할 수 있습니다: **사용자가 추가한 노트**(연락처/기회/대화로 전파됨), 예약 폼의 **예약자 추가 정보**(**예약 모달에만** 표시), 양방향 동기화가 활성화된 경우 **구글/아웃룩 이벤트 설명**(**예약 모달에만** 표시). 내부 노트는 외부 캘린더와 **절대 동기화되지 않습니다**. 양방향 동기화 시 구글/아웃룩 설명만 예약으로 **동기화되어** 참고용으로 사용됩니다.
+예약 메모를 팀이 함께 보는 기준 정보로 쓰면 이런 점이 좋아요.
 
----
+- 일관성: 예약에 연결된 메모 하나가 연락처, 기회, 대화에 똑같이 표시돼요.
+- 실시간 반영: 한 곳에서 수정하면 메모가 보이는 모든 곳에 바로 반영돼요.
+- 찾기 쉬움: 출처(사용자, 워크플로우, API)별로 필터링해서 필요한 메모만 볼 수 있어요.
+- 책임 소재 명확: 메모마다 작성자와 작성 시각이 남아요.
 
-## 예약 노트의 주요 장점
+## 메모가 각 화면에 표시되는 방식
 
-이러한 장점을 이해하면 팀이 노트를 예약 컨텍스트의 공유 정보 소스로 활용할 수 있습니다.
+예약 메모는 연락처를 따라다녀요. 그래서 캘린더로 돌아가지 않아도 같은 내용을 볼 수 있어요. 예약에서 만든 메모와 다른 화면에서 보는 메모는 같은 메모예요. 어느 화면에서 열어도 내용, 작성자, 작성 시각이 같아요.
 
-- **일관성**: 예약에 연결된 하나의 노트가 연락처, 기회, 대화에 표시됩니다.
+- **연락처**: **연락처**를 열고 사람을 선택하세요. 오른쪽 **메모** 패널과 **예약** 카드에서 예약의 내부 메모를 보거나 편집할 수 있어요.
+- **대화**: **대화**를 열고 대화를 선택하세요. 오른쪽 **메모** 패널에서 해당 연락처와 연결된 예약 메모를 보거나 편집할 수 있어요.
+- **기회 관리**(Opportunities): **기회 관리**를 열고 해당 기회를 클릭하세요. 오른쪽에 열리는 창에서 **메모**를 선택하면 그 기회의 연락처와 연결된 예약 메모를 보거나 편집할 수 있어요.
 
-- **실시간 업데이트**: 한 번 편집하면 노트가 표시되는 모든 곳에 변경사항이 반영됩니다.
+```
+메모는 지원되는 기록 간에 실시간으로 동기화돼요. 팀은 화면마다 내용을 새로 확인하지 않아도 항상 최신 버전을 볼 수 있어요.
+```
 
-- **검색 가능성**: 소스별(사용자, 워크플로우, API) 필터링으로 중요한 항목에 집중할 수 있습니다.
+아래 표에서 어떤 내용이 어디에 표시되는지 확인하세요.
 
-- **책임 소재**: 각 노트에 작성자와 타임스탬프가 기록되어 명확한 소유권을 제공합니다.
+| 입력 유형 | 예약 창 | 연락처 | 기회 | 대화 |
+| --- | --- | --- | --- | --- |
+| 내부 예약 메모(사용자/워크플로우/API) | ✔ | ✔ | ✔ | ✔ |
+| 연락처 메모(연락처에서 추가) | — | ✔ | — | — |
+| 예약한 사람의 추가 정보 | ✔ | — | — | — |
+| Google/Outlook 일정 설명 | ✔ | — | — | — |
 
----
+## 예약 메모 추가·확인·관리하기
 
-## 다양한 모듈 간 노트 흐름
+어디서 작업하든 맥락을 남길 수 있도록 자주 쓰는 경로를 정리했어요.
 
-예약 노트는 연락처와 함께 이동하여 캘린더로 다시 돌아가지 않고도 같은 컨텍스트를 볼 수 있습니다. 예약에서 생성한 노트는 다른 곳에서 보는 것과 *동일한* 노트이며, 어떤 모듈에서 보거나 편집해도 같은 내용, 작성자, 타임스탬프가 표시됩니다.
+### 캘린더 보기에서 추가하기(예약이 잡힌 경우)
 
-- **연락처(Contacts):** **연락처(Contacts)** → 사람 선택 → 오른쪽 **노트(Notes)** 패널(및 **예약(Appointments)** 카드)에서 예약의 내부 노트를 확인하거나 편집할 수 있습니다.
+1. **캘린더 > 캘린더 보기**로 이동하세요.
+2. 예약을 클릭해 연 다음 **메모** 탭을 선택하세요.
+3. **내부 메모 추가**를 클릭하고 메모를 입력한 뒤 **저장**을 클릭하세요.
 
-- **대화(Conversations):** **대화(Conversations)** → 대화 선택 → 오른쪽 **노트(Notes)** 패널을 사용하여 해당 연락처에 연결된 예약 노트를 확인하거나 편집할 수 있습니다.
+![캘린더 보기에서 예약 열기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058316247/original/gK20-NRn1D44NPPU22r7Hx9Mcp4-OSEung.jpeg?1763046062)
 
-- **기회(Opportunities):** **기회(Opportunities)** → 관련 기회 클릭 → 드로어에서 **노트(Notes)**를 선택하여 해당 기회의 연락처에 연결된 예약 노트를 확인하거나 편집할 수 있습니다.
+![메모 탭에서 내부 메모 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058318997/original/FssWJHbNruJmGMvPzoxmk7WjdSnHUzc2bQ.png?1763047372)
 
-노트는 지원되는 레코드 간에 실시간으로 동기화되므로 팀은 모듈 간 컨텍스트를 수동으로 새로고침하지 않고도 항상 최신 버전을 확인할 수 있습니다.
+### 예약 목록 보기에서 추가하기(예약이 잡힌 경우)
 
-다음 표를 사용하여 어디에 무엇이 표시되는지 확인하세요:
+1. **캘린더 > 예약 목록 보기**로 이동하세요.
 
-| **입력 유형** | **예약 모달** | **연락처** | **기회** | **대화** |
-|---|---|---|---|---|
-| **내부 예약 노트 (사용자/워크플로우/API)** | ✔ | ✔ | ✔ | ✔ |
-| **연락처 노트 (연락처에서 추가)** | — | ✔ | — | — |
-| **예약자 추가 정보** | ✔ | — | — | — |
-| **구글/아웃룩 이벤트 설명** | ✔ | — | — | — |
+   ![예약 목록 보기 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058316455/original/Ahg24nQWy2bV_KXGUFhilpH1ib0OiwcjqQ.png?1763046159)
 
----
+2. 예약을 찾아 **⋮** 메뉴를 클릭하고 **편집**을 선택하세요.
+3. **세부 정보 수정 > 내부 메모**에서 **내부 메모 추가**를 클릭하고 메모를 입력한 뒤 **저장**을 클릭하세요.
 
-## 예약 노트 추가, 확인 및 관리 방법
+   ![세부 정보 수정에서 내부 메모 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058316532/original/-sjvkPVFOUQXruLDkETuXj94f2TqOKm61g.png?1763046185)
 
-팀이 어디서 작업하든 컨텍스트를 기록할 수 있는 가장 일반적인 경로를 다룹니다.
+### 고객이 예약할 때 입력하는 내용(추가 정보 필드)
 
-### **캘린더 보기(예약된 예약)에서**
+캘린더 폼에 **추가 정보** 필드가 있으면, 고객이 입력한 내용이 예약과 함께 예약 맥락으로 표시돼요.
 
-- **캘린더(Calendars) → 캘린더 보기(Calendar View)**로 이동합니다.
+![예약 폼의 추가 정보 필드](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058317107/original/b6vjMEETmkR5AdDzaLC4VoGSUQ0CmkptFg.jpeg?1763046480)
 
-![캘린더 보기 스크린샷](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058316171/original/3lABRxMABz2GdAjmNgSJrUWeqjx1ZhtJyQ.jpeg?1763046016)
+### 내부 메모 작성하기(편집기와 상태)
 
-- 예약을 클릭하여 열고 **노트(Notes)** 탭을 선택합니다. **내부 노트 추가(Add Internal Note)**를 클릭하고 노트를 입력한 후 **저장(Save)**합니다.
+메모를 작성하면서, 필요하면 같은 패널에서 예약 **상태**도 바꿀 수 있어요. 그러면 메모 내용과 미팅 진행 상황을 함께 맞춰 둘 수 있어요.
 
-![노트 추가 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058316247/original/gK20-NRn1D44NPPU22r7Hx9Mcp4-OSEung.jpeg?1763046062)
+1. **캘린더 보기** 또는 **예약 목록 보기**에서 예약을 열고 **내부 메모 추가**를 클릭하세요.
 
-![노트 작성 에디터](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058318997/original/FssWJHbNruJmGMvPzoxmk7WjdSnHUzc2bQ.png?1763047372)
+   ![내부 메모 추가 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058317586/original/hAS0EHyJB_x-jVcqsek-QYQjPOTD8ddWeA.png?1763046756)
 
-### **예약 목록 보기(예약된 예약)에서**
+2. 메모를 입력하세요. 굵게, 기울임, 밑줄, 목록, 링크 같은 서식을 쓸 수 있어요. 편집기에는 최대 65,000자까지 입력할 수 있어요.
 
-- **캘린더(Calendars) → 예약 목록 보기(Appointment List View)**로 이동합니다.
+   ![메모 편집기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058317741/original/gGG2xKDR3gP1pX-BaIWuJm1rm4UtpznYVg.png?1763046809)
 
-![예약 목록 보기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058316455/original/Ahg24nQWy2bV_KXGUFhilpH1ib0OiwcjqQ.png?1763046159)
+## 예약 메모 관리하기
 
-- 예약을 찾아 **⋮** 메뉴를 클릭한 후 **편집(Edit)**을 선택합니다. **세부사항 편집(Edit Details) → 내부 노트(Internal Note(s))**에서 **내부 노트 추가(Add Internal Note)**를 클릭하고 입력한 후 **저장(Save)**합니다.
+메모가 많아도 쉽게 찾고 관리할 수 있어요.
 
-![편집 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058316532/original/-sjvkPVFOUQXruLDkETuXj94f2TqOKm61g.png?1763046185)
+### 출처별로 필터링하기
 
-### **고객 예약 시(추가 정보 필드)**
+**내부 메모**의 필터 아이콘을 클릭하고 **사용자**, **API**, **워크플로우** 중에서 선택하세요. 여러 개를 함께 선택할 수 있어요.
 
-- 캘린더 폼에 **추가 정보(Additional Information)** 항목이 포함되어 있으며, 고객이 입력한 내용이 예약 컨텍스트로 표시됩니다.
+![출처별 필터](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058318111/original/np4IdFXlnFbldmr_bIUU_DtoDxL5wxxG4w.png?1763046975)
 
-![추가 정보 필드](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058317107/original/b6vjMEETmkR5AdDzaLC4VoGSUQ0CmkptFg.jpeg?1763046480)
+### 메모 정렬하기
 
-### **내부 노트 추가(에디터 및 상태)**
+정렬 아이콘을 클릭하면 **생성일** 기준으로 오름차순 또는 내림차순으로 정렬할 수 있어요.
 
-노트를 작성하고 필요한 경우 같은 패널에서 예약 상태를 업데이트하여 컨텍스트와 미팅 라이프사이클을 동기화합니다.
+![생성일 기준 정렬](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058318173/original/CawJEeY8WmDd3ZSj7ZrUK5H-pL2j4772JA.png?1763047007)
 
-- **캘린더 보기(Calendar View)** 또는 **예약 목록 보기(Appointment List View)**에서 예약을 열고 **내부 노트 추가(Add Internal Note)**를 클릭합니다.
+### 메모 검색하기
 
-![내부 노트 추가 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058317586/original/hAS0EHyJB_x-jVcqsek-QYQjPOTD8ddWeA.png?1763046756)
+**내부 메모**의 **메모 검색** 입력란에 키워드를 입력하면 이 예약의 메모 중에서 해당 키워드가 들어간 메모를 찾을 수 있어요.
 
-- 노트를 입력합니다. 서식(굵게, 기울임꼴, 밑줄, 목록, 링크)을 사용할 수 있습니다. 에디터는 최대 65,000자까지 지원합니다.
+![메모 검색](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058318272/original/ZuQ1fWx1SJGu5hobm34NuT_cR9oM750kTw.png?1763047034)
 
-![노트 에디터](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058317741/original/gGG2xKDR3gP1pX-BaIWuJm1rm4UtpznYVg.png?1763046809)
+### 상태
 
----
+**예약 목록 보기**의 탭(**Upcoming**(예정), **Cancelled**(취소됨), **All**(전체))이나 **세부 정보 수정** 패널의 **상태** 필드로 예약을 찾아볼 수 있어요. 예약 상태와 관계없이 메모는 계속 볼 수 있어요. 상태를 바꿔도 메모는 삭제되지 않아요.
 
-## 예약 노트 관리
+![예약 상태 탭과 상태 필드](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058318438/original/2afYjsqtHL4cpdhJCEAtiqOPWc4DyIj5ZQ.png?1763047136)
 
-바쁜 일정에서 노트를 쉽게 찾고 제어할 수 있게 합니다.
+### 메모 편집·삭제하기(⋮ 메뉴)
 
-### **소스별 필터링**
+1. 예약을 열고 **내부 메모**로 이동하세요.
+2. 메모 카드의 **⋮**(점 세 개) 메뉴를 클릭하고 **편집** 또는 **삭제**를 선택하세요.
 
-- **내부 노트(Internal Note(s))**에서 **필터(filter)** 아이콘을 클릭하고 **사용자(User)**, **API**, **워크플로우(Workflow)** 중에서 선택합니다. 여러 항목을 동시에 선택할 수 있습니다.
+메모를 삭제하면 그 메모가 표시되던 연락처, 기회, 대화에서도 사라져요. 삭제한 메모는 30일 이내에 복원할 수 있어요.
 
-![필터 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058318111/original/np4IdFXlnFbldmr_bIUU_DtoDxL5wxxG4w.png?1763046975)
-
-### **노트 정렬**
-
-- **정렬(sort)** 아이콘을 클릭하여 **생성일(Date created)**(오름차순/내림차순)로 정렬합니다.
-
-![정렬 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058318173/original/CawJEeY8WmDd3ZSj7ZrUK5H-pL2j4772JA.png?1763047007)
-
-### **노트 검색**
-
-- **내부 노트(Internal Note(s))**의 **검색(Search)** 필드를 사용하여 해당 예약의 노트에서 키워드를 찾을 수 있습니다.
-
-![검색 필드](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058318272/original/ZuQ1fWx1SJGu5hobm34NuT_cR9oM750kTw.png?1763047034)
-
-### **상태**
-
-- **예약 목록 보기(Appointment List View)** 탭(**예정(Upcoming), 취소됨(Cancelled), 전체(All)**)이나 편집 세부사항 패널의 **상태(Status)** 필드를 사용하여 예약을 탐색합니다. 노트는 예약 상태에 관계없이 접근 가능하며, 상태 변경 시에도 노트가 삭제되지 않습니다.
-
-![상태 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058318438/original/2afYjsqtHL4cpdhJCEAtiqOPWc4DyIj5ZQ.png?1763047136)
-
-### **노트 삭제 또는 편집(⋮ 메뉴)**
-
-- 예약 열기 → **내부 노트(Internal Note(s))**. 노트 카드에서 **⋮**(점 세 개) 메뉴를 클릭하여 노트를 **편집(Edit)** 또는 **삭제(Delete)**합니다. 노트를 삭제하면 해당 노트가 표시되던 연락처, 기회, 대화에서 제거되며, **30일 이내에 복원**할 수 있습니다.
-
-![노트 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058318524/original/cGyWQHPrCfbLbkHPuJfJlwKqXWxZA6luzw.png?1763047179)
-
----
+![메모 카드의 편집·삭제 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155058318524/original/cGyWQHPrCfbLbkHPuJfJlwKqXWxZA6luzw.png?1763047179)
 
 ## 자주 묻는 질문
 
-**Q: 내부 예약 노트, 예약자 추가 정보, 구글/아웃룩 이벤트 설명 간의 실질적인 차이점은 무엇인가요?**
+### 내부 예약 메모, 예약한 사람의 추가 정보, Google/Outlook 일정 설명은 실제로 어떻게 다른가요?
+내부 예약 메모는 하이퍼클래스에서 사용자, 워크플로우, API가 만드는 메모예요. 연결된 연락처, 기회, 대화로 함께 표시돼요. 예약한 사람의 **추가 정보**는 고객이 예약할 때 입력한 내용이며, 해당 예약에만 남아요. Google/Outlook 일정 설명은 양방향 동기화를 켰을 때 예약에 외부 맥락으로 표시돼요. 다른 화면으로 전달되지 않고 내부 메모를 대신하지도 않아요.
 
-**내부 예약 노트**는 Hyperclass에서 사용자/워크플로우/API로 생성되며 관련된 연락처, 기회, 대화로 **전파**됩니다. **예약자 추가 정보**는 고객이 예약 시 제공하며 **해당 예약에만** 남습니다. **구글/아웃룩 이벤트 설명**(양방향 동기화 시)은 **예약에** 외부 컨텍스트로 나타나며 다른 모듈로 푸시되거나 내부 노트를 대체하지 않습니다.
+### 연락처·기회·대화 화면에서 예약 메모를 수정하면 예약에도 반영되나요?
+네, 반영돼요. 여러 곳에서 참조하는 같은 메모이기 때문이에요. 어느 화면에서 수정하거나 삭제하든 예약을 포함해 메모가 표시되는 모든 곳에 반영돼요.
 
-**Q: 연락처/기회/대화 보기에서 예약 노트를 편집하면 예약도 업데이트되나요?**
+### 예약을 변경하거나 취소하면 메모는 어떻게 되나요?
+메모는 예약 기록에 그대로 남고, 이 문서에서 설명한 규칙에 따라 계속 보여요. **상태**(**Confirmed**(확정됨), **Cancelled**(취소됨), **Showed**(참석), **No Show**(노쇼), **Invalid**(유효하지 않음), **Unconfirmed**(미확정))를 바꿔도 메모는 삭제되지 않아요.
 
-네. 여러 곳에서 참조되는 같은 노트입니다. 어떤 화면에서든 편집하거나 삭제하면 예약을 포함하여 해당 노트가 나타나는 모든 곳에서 업데이트됩니다.
-
-**Q: 예약을 재조정하거나 취소하면 노트는 어떻게 되나요?**
-
-노트는 예약 레코드에 첨부된 상태로 유지되며 이 문서의 규칙에 따라 표시됩니다. **상태**(확인됨(Confirmed), 취소됨(Cancelled), 참석(Showed), 불참(No Show), 유효하지 않음(Invalid), 미확인(Unconfirmed)) 변경은 노트를 제거하지 **않습니다**.
-
-**Q: 반복 예약이나 복제된 예약에서 노트는 어떻게 작동하나요?**
-
-노트는 특정 예약 인스턴스에 연결됩니다. 각각 고유한 컨텍스트가 필요한 인스턴스에 노트를 작성하세요. 노트는 새 이벤트나 복제된 이벤트로 자동 복사되지 않습니다.
-
----
-*원문 최종 수정: Tue, 17 Mar, 2026 at 12:47 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### 반복 예약이나 복제한 예약에서는 메모가 어떻게 되나요?
+메모는 특정 예약 하나에 연결돼요. 따로 맥락이 필요한 예약마다 메모를 작성하세요. 새로 만들거나 복제한 일정으로 메모가 자동으로 복사되지는 않아요.

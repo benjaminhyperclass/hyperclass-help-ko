@@ -1,73 +1,106 @@
 ---
-번역일: 2026-04-07T00:00:00.000Z
-카테고리: 10-마케팅 > 이메일 빌더 기능
+원문: /support/solutions/articles/155000007399-attach-files-to-email-campaigns-in-the-email-builder
+번역일: 2026-11-06
+카테고리: 10-마케팅
 ---
 
 # 이메일 빌더에서 이메일 캠페인에 파일 첨부하기
 
-Hyperclass 이메일 빌더에서 바로 파일을 첨부하여 한 번에 완전한 이메일 패키지를 보내세요. 이 가이드에서는 파일을 첨부하는 위치와 수신자에게 전달되는 방식을 안내합니다.
+**이메일 빌더**(Email Builder)에서는 이메일 캠페인에 파일을 바로 첨부할 수 있어요. 캠페인을 보내거나 예약할 때 PDF, 이미지 같은 파일을 여러 개 함께 보낼 수 있어요.
 
-**목차**
+첨부파일은 이메일과 함께 전달돼서, 받는 사람이 받은 편지함에서 바로 열어 볼 수 있어요. 이 문서에서는 첨부파일을 추가하는 방법, 파일 크기 제한, 파일을 포함해 캠페인을 보내는 방법을 설명해요.
 
-* [첨부 파일 추가의 주요 장점](attach-files-to-email-campaigns-in-the-email-builder.md#첨부-파일-추가의-주요-장점)
-* [파일 첨부 방법](attach-files-to-email-campaigns-in-the-email-builder.md#파일-첨부-방법)
-* [자주 묻는 질문](attach-files-to-email-campaigns-in-the-email-builder.md#자주-묻는-질문)
+## 이메일 첨부파일이란
 
-## 이메일 빌더에서 이메일에 첨부 파일 추가의 주요 장점
+이메일 첨부파일을 쓰면 받는 사람이 외부 링크로 문서를 열지 않아도, 이메일과 함께 파일을 받을 수 있어요. 브로슈어, 제안서, 가격표, 온보딩 문서 같은 자료를 공유할 때 편해요.
 
-* **간단한 워크플로우**: 이메일 빌더를 떠나지 않고 전송 또는 예약 직전에 파일을 첨부할 수 있습니다.
-* **수신자의 클릭 횟수 감소**: 첨부 파일을 인박스에서 바로 확인할 수 있습니다.
-* **한 메시지로 모든 것 전송**: 이메일과 지원 문서(PDF, 이미지 등)를 함께 전달합니다.
-* **일반적인 사용 사례에 완벽**: 브로슈어, 제안서, 메뉴, 가격표, 온보딩 문서, 양식에 이상적입니다.
-* **수신자가 받는 내용에 대한 더 많은 제어**: 모든 사람이 의도한 정확한 파일 버전을 받도록 보장합니다(오래된 링크 대신).
+하이퍼클래스에서는 **Send or Schedule**(보내기 또는 예약) 과정에서 파일을 여러 개 첨부할 수 있어요. 첨부파일 전체 크기는 합쳐서 10MB까지예요.
 
-## 파일 첨부 방법
+첨부파일은 일반 이메일 첨부파일로 전달되며, 이메일 본문에는 표시되지 않아요.
 
-아래 단계를 따라 파일 첨부 버튼을 찾고 이메일 빌더에서 첨부 파일을 추가하세요.
+---
 
-* `Marketing(마케팅) → Emails(이메일) → Campaigns(캠페인) → + New(새로 만들기)`로 이동하거나 편집 중인 이메일 캠페인을 열어주세요.
+## 이메일 빌더에서 첨부파일을 쓰면 좋은 점
 
-![이메일 캠페인 생성](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155065585687/original/_W0hStdqIEdCD8eKrcAi8WS5A3pZHwmIzA.png?1771936742)
+이메일 캠페인에 첨부파일을 넣으면 문서와 자료를 더 간단하게 공유할 수 있어요. 연락처에게 파일 공유 링크를 따로 안내하지 않고, 자료를 이메일과 함께 바로 보낼 수 있어요.
 
-* 이메일 빌더에서 이메일을 열고 이메일 콘텐츠 디자인을 완성하세요.
+- 간편한 작업: **이메일 빌더**에서 나가지 않고, 이메일 캠페인을 보내거나 예약하는 중에 바로 파일을 첨부할 수 있어요.
+- 편리한 파일 열람: 받는 사람이 받은 편지함에서 바로 자료를 열 수 있어요.
+- 여러 파일 첨부: 전체 크기가 10MB를 넘지 않으면, 이메일 캠페인 하나에 파일을 여러 개 넣을 수 있어요.
+- 다양한 활용: 브로슈어, 제안서, 가격표, 메뉴판, 온보딩 문서, 폼 등 필요한 자료를 공유할 수 있어요.
+- 일관된 파일 전달: 바뀔 수 있는 외부 파일 링크에 의존하지 않고, 보내려던 버전의 문서를 이메일과 함께 보낼 수 있어요.
 
-![이메일 빌더에서 이메일 편집](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155065585890/original/3rjfhB08Q9pa6sRpEz4PlY1_2Pg-y0E2mg.png?1771936855)
+---
 
-* `Send(전송)` 또는 `Schedule(예약)` 버튼을 클릭하세요.
+## 이메일 첨부파일 제한과 전달 방식
 
-![전송 또는 예약 버튼 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155065585984/original/tf_gufN5PWZskJXarqDf39PiAZBRtaHIZw.png?1771936908)
+첨부파일 제한을 미리 알아 두면 캠페인을 준비하다가 문제가 생기는 일을 줄일 수 있어요. 하이퍼클래스에서는 합산 크기 제한 안에서 파일을 여러 개 첨부할 수 있고, 파일은 이메일 본문과 별도로 전달돼요.
 
-* 전송 또는 예약 화면에서 화면 상단의 `Attach Files(파일 첨부)` 버튼을 클릭하세요.
+- 여러 개 첨부: 이메일 캠페인 하나에 파일을 두 개 이상 첨부할 수 있어요.
+- 합산 크기 제한: 모든 첨부파일의 총 크기가 10MB를 넘으면 안 돼요.
+- 이메일 전달: 받는 사람은 자신의 이메일 프로그램에서 파일을 첨부파일로 받아요.
+- 본문 미리보기: 첨부파일은 캠페인 이메일 본문 안에 표시되지 않아요.
 
-![파일 첨부 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155065586256/original/v1x3KbQAiKj9JbZdHpTpcmo2E5lkEYIsLA.png?1771937039)
+{% hint style="warning" %}
+첨부파일 제한은 하이퍼클래스 기능마다 달라요. 합산 10MB 제한은 **이메일 빌더**의 캠페인 작업에서 추가하는 첨부파일에 적용돼요. **대화**, **Documents & Templates**(문서 및 템플릿) 같은 다른 기능은 첨부파일 제한이 따로 있어요.
+{% endhint %}
 
-* 첨부할 파일을 업로드하거나 선택하세요.
+파일이 너무 커서 캠페인 첨부파일 제한 안에 들어가지 않으면, 파일을 외부에 올려 두고 이메일에 링크로 넣는 방법을 고려해 보세요.
 
-![파일 업로드 과정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155065586405/original/JJrHg_CbCjwKrvFPrBZ-CYTYWEiLioRDig.gif?1771937148)
+---
 
-* 첨부 파일이 추가되었는지 확인한 후, 다음 전송 옵션 중 하나를 선택하세요:
-  * Send Now(지금 전송)
-  * Schedule(예약)
-  * Batch Schedule(배치 예약)
-  * RSS Schedule(RSS 예약)
-  * Smart Send(스마트 전송)
+## 파일 첨부하는 방법
 
-![전송 옵션 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155065586692/original/yeo95Um3nwaQdroh876cNGL6TUsY7Mw6Hw.png?1771937229)
+캠페인을 보내는 과정에서 파일을 첨부하면 이메일 내용과 함께 자료를 전달할 수 있어요. 보내기 전에 올바른 파일이 추가됐는지 꼭 확인하면, 받는 사람에게 의도한 자료가 전달돼요.
 
-참고: 이메일 빌더는 총 10MB까지 여러 첨부 파일을 지원합니다.
+1. **마케팅 > 이메일 > 캠페인 > + 신규**로 이동하세요. 이미 편집 중인 이메일 캠페인이 있으면 그 캠페인을 열어도 돼요.
+
+   ![이메일 캠페인 페이지에서 캠페인을 만드는 버튼이 보이는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083242299/original/EUFWm95YRhTYUtDtIZFQ_byPR9NRW33TXw.png?1791919271)
+2. **이메일 빌더**에서 이메일을 열고 내용 디자인을 마무리하세요.
+
+   ![캠페인 편집 화면이 보이는 이메일 빌더](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155065585890/original/3rjfhB08Q9pa6sRpEz4PlY1_2Pg-y0E2mg.png?1771936855)
+3. **Send or Schedule**을 클릭하세요.
+
+   ![이메일 빌더에서 Send or Schedule 버튼이 보이는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155065585984/original/tf_gufN5PWZskJXarqDf39PiAZBRtaHIZw.png?1771936908)
+4. **Send or Schedule** 화면에서 화면 맨 위에 있는 **파일 첨부**를 클릭하세요.
+
+   ![Send or Schedule 화면에서 파일 첨부 버튼이 보이는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155065586256/original/v1x3KbQAiKj9JbZdHpTpcmo2E5lkEYIsLA.png?1771937039)
+5. 캠페인에 첨부할 파일을 업로드하거나 선택하세요. 전체 크기가 합쳐서 10MB를 넘지 않으면 파일을 여러 개 추가할 수 있어요.
+
+   ![이메일 캠페인에 파일을 첨부하는 과정을 보여 주는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155065586405/original/JJrHg_CbCjwKrvFPrBZ-CYTYWEiLioRDig.gif?1771937148)
+6. 선택한 첨부파일이 제대로 추가됐는지 확인한 뒤 캠페인을 보내거나 예약하세요.
+
+   첨부파일을 확인한 다음에는 아래 전송 방식 중 하나를 선택해요.
+
+   - **지금 전송**: 캠페인을 바로 보내요.
+   - **일정**: 앞으로의 날짜와 시간을 정해요.
+   - **배치 일정**: 이메일을 여러 번에 나누어 조금씩 보내요.
+   - **RSS Schedule**(RSS 일정): RSS 피드를 사용해 캠페인을 예약해요.
+   - **스마트 발송**: 하이퍼클래스가 참여도를 바탕으로 추천하는 시간에 보내요. 조건을 충족하는 경우에만 쓸 수 있어요.
+   - 필요한 캠페인 정보를 입력하고, 선택한 전송 방식을 확인하세요.
+
+   ![첨부파일을 추가한 뒤 이메일 캠페인 전송 방식을 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155065586692/original/yeo95Um3nwaQdroh876cNGL6TUsY7Mw6Hw.png?1771937229)
+
+---
 
 ## 자주 묻는 질문
 
-**Q: 여러 파일을 첨부할 수 있나요?**\
-네, 이메일 첨부 파일 제한 용량 내에서 여러 파일을 첨부할 수 있습니다.
+### 이메일 캠페인에 파일을 여러 개 첨부할 수 있나요?
 
-**Q: 첨부 파일이 전달률에 영향을 미치나요?**\
-그럴 수 있습니다. 큰 첨부 파일이나 일반적이지 않은 파일 형식은 스팸 필터링이나 전달 문제가 발생할 가능성을 높일 수 있습니다. 전달률이 중요하다면, 큰 파일은 호스팅하고 링크를 포함하는 것을 고려해보세요.
+네. 전체 크기가 합쳐서 10MB를 넘지 않으면 여러 개 첨부할 수 있어요.
 
-**Q: 이메일 본문 미리보기에서 첨부 파일이 보이지 않는 이유는 무엇인가요?**\
-첨부 파일은 이메일 본문 내에 표시되지 않습니다. 수신자의 이메일 클라이언트에서 첨부 파일로 표시됩니다. 테스트 이메일 전송 기능을 사용하여 인박스에서 첨부 파일이 올바르게 표시되는지 확인하세요.
+### 첨부파일이 이메일 전달률에 영향을 주나요?
 
-***
+영향을 줄 수 있어요. 용량이 큰 첨부파일이나 흔하지 않은 파일 형식은 스팸 필터에 걸리거나 전달에 문제가 생길 가능성을 높일 수 있어요. 큰 문서를 공유할 때는 외부에 올린 파일 링크를 쓰는 것도 방법이에요.
 
-_원문 최종 수정: 2026년 2월 24일 오전 7:05_\
-_&#x48;yperclass 사용 가이드 — hyperclass.ai_
+### 첨부파일이 이메일 본문 미리보기에 보이지 않는 이유가 뭔가요?
+
+첨부파일은 디자인한 이메일 내용과 별개이기 때문이에요. 이메일 본문 안에 표시되는 것이 아니라, 받는 사람이 이메일 프로그램에서 열 수 있는 파일로 전달돼요.
+
+### 캠페인에 파일이 추가됐는지 어떻게 확인하나요?
+
+캠페인을 보내거나 예약하기 전에 **파일 첨부** 영역을 확인하세요. 선택한 파일이 목록에 있으면 추가된 거예요.
+
+### 나중에 보내도록 이메일 캠페인을 예약할 때도 파일을 첨부할 수 있나요?
+
+네. 캠페인을 예약하기 전에 **Send or Schedule** 과정에서 첨부파일을 추가할 수 있어요.

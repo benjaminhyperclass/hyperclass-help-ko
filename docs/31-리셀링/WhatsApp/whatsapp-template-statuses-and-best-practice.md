@@ -1,120 +1,163 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 31-리셀링 > WhatsApp
+원문: /support/solutions/articles/155000001623-whatsapp-template-statuses-and-best-practice
+번역일: 2026-11-06
+카테고리: 31-리셀링
 ---
 
-# WhatsApp 템플릿 상태 및 모범 사례
+# WhatsApp 템플릿 상태와 작성 요령
 
-템플릿은 고객과 마케팅, 유틸리티, 인증 [대화](https://developers.facebook.com/docs/whatsapp/pricing#conversations)를 시작하기 위해 템플릿 메시지에서 사용됩니다.
+WhatsApp 템플릿이 어떤 과정으로 심사되는지, 저장 전에 어떤 변수 오류가 걸러지는지, 어떤 경우에 Meta에서 거절되는지 알아봐요. 템플릿 상태를 보는 방법과 발송 전에 확인할 점도 함께 안내해요.
 
-자유형 메시지와 달리, 템플릿 메시지는 아직 메시지를 보내지 않은 고객이나 최근 24시간 내에 메시지를 보내지 않은 고객에게 보낼 수 있는 유일한 메시지 유형입니다.
+## WhatsApp 메시지 템플릿이란?
 
-템플릿은 템플릿 메시지로 발송되기 전에 승인을 받아야 합니다. 또한 고객 피드백과 참여도에 따라 자동으로 비활성화될 수 있습니다. 비활성화된 템플릿은 품질 등급이 개선되거나 더 이상 [비즈니스](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.whatsapp.com%2Flegal%2Fbusiness-policy%2F%3Ffbclid%3DIwZXh0bgNhZW0CMTEAAR0vK3h7u6QlT54uJUzZbyHruXrkfJLBnhMLRa5WplWUoYr5dwT-Y4iPY9Q_aem_AfMSb44oNDIjQTO-1phjCttgBtPalnDVSqM5tzT4buoDJy3H1WoVu9r1fZVidoEEkBYBT6mof1t3qOn2BeeCiYQU&h=AT2vT4Ysb9LGBntXmlR-R0xz-UboFIswubjGJT-1xbrVtxjcj3u8zwIzBMnLTnzoWtF8Pn1pzzzm_lqOJxb9Jn0-yVmo79oVqFVbHTJLYnNUXfCZXuLKJ8PnYfQCDkell-9LTevLOhDPJu2KBrylNQO5tvc) 또는 [커머스](https://www.whatsapp.com/legal/commerce-policy/?fbclid=IwZXh0bgNhZW0CMTEAAR152f6sNEjMf8JyB54RhhhQ2hIgSTMHji2V1aJ9wMbsr0CwOyNRm4tmSDs_aem_AfPpn-sCUKuAFawk0oah0VWOc-tM_-U6BHMiGxprpeZMTLOaLVrAP7Ek9qQ-UJxEKpTtaHaQM0Tio9E1WAWiBPUM) 정책을 위반하지 않을 때까지 템플릿 메시지로 발송할 수 없습니다.
+WhatsApp 메시지 템플릿은 미리 승인받은 메시지 양식이에요. 비즈니스가 먼저 고객에게 마케팅·유틸리티·인증 메시지를 보낼 때 써요. 승인된 템플릿을 쓰면 WhatsApp 규정을 지키면서 24시간 고객 서비스 창 밖에서도 먼저 메시지를 보낼 수 있어요.
 
----
+템플릿은 Meta의 승인을 받아야 쓸 수 있어요. 승인된 뒤에도 고객 피드백과 여러 품질 신호에 따라 품질 상태가 바뀔 수 있어요.
 
-**목차**
+## 템플릿 작성 요령을 지키면 좋은 점
 
-- [승인 프로세스](#승인-프로세스)
-- [일반적인 템플릿 거부 사유](#일반적인-템플릿-거부-사유)
-- [WhatsApp 템플릿 발송](#whatsapp-템플릿-발송)
-- [WhatsApp 템플릿 상태](#whatsapp-템플릿-상태)
-- [FAQ](#faq)
----
+서식과 품질 요령을 지키면 피할 수 있는 제출 오류가 줄어들어요. 승인 후에도 WhatsApp 메시지를 안정적으로 보내기 쉬워요.
 
-# 승인 프로세스
+- 오류를 더 일찍 발견해요: 지원되는 변수 형식에 문제가 있으면 저장하기 전에 템플릿 빌더에서 바로 표시해 줘요.
+- 불필요한 제출이 줄어요: 잘못 쓴 변수를 Meta 심사 전에 고칠 수 있어요.
+- 승인 문제를 더 쉽게 파악해요: 빌더의 검증 오류와 Meta의 거절 사유가 따로 구분돼요.
+- 템플릿 상태를 관리하기 쉬워요: 품질과 상태 변화를 살피면 손봐야 할 템플릿을 빨리 찾을 수 있어요.
 
-템플릿을 생성한 후에는 고객에게 발송되기 전에 승인 프로세스를 거쳐야 합니다. 이 프로세스는 일반적으로 최대 24시간이 소요됩니다. 승인되면 템플릿 상태가 "활성 - 품질 대기"로 설정되고 사용을 시작할 수 있습니다. 거부되면 편집 후 재제출하거나 결정에 이의를 제기할 수 있습니다.
+## 템플릿 가져오기 — 중요 공지
 
-메시지 템플릿이 승인되면 상태가 "활성 - 품질 대기"로 설정되고 고객에게 발송을 시작할 수 있습니다. 거부된 경우 [편집](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/#editing)해서 재제출하거나 결정에 [이의를 제기](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/#appeals)할 수 있습니다.
+Meta에는 있는데 서브 계정에서는 보이지 않는 템플릿이 있다면, 템플릿이 하이퍼클래스로 들어오는 방식을 알아 두면 헷갈리지 않아요.
 
-## 템플릿 생성 방법
+WhatsApp 비즈니스 계정을 하이퍼클래스에 처음 연결하면, Meta에 있던 기존 템플릿이 온보딩 과정에서 가져와져요.
 
-[](%3Cdiv%20style=%22position%3A%20relative;%20padding-bottom%3A%2064.5933014354067%;%20height%3A%200;%22%3E%3Ciframe%20src=%22https%3A//www.loom.com/embed/564745b6c51946afb1d4a52b4738c164?sid=ffc1ff56-2e0e-4659-9b8a-078608d26b32%22%20frameborder=%220%22%20webkitallowfullscreen%20mozallowfullscreen%20allowfullscreen%20style=%22position%3A%20absolute;%20top%3A%200;%20left%3A%200;%20width%3A%20100%;%20height%3A%20100%;%22%3E%3C/iframe%3E%3C/div%3E)
+처음 가져온 이후에는 하이퍼클래스 안에서 템플릿을 만들고 관리해야 CRM에서 일관되게 쓸 수 있어요.
 
-## 샘플
+권장 방법: 새 WhatsApp 템플릿은 **설정 > WhatsApp > 템플릿**에서 만드세요. 그러면 쓰려는 워크플로우와 메시지 화면에서 바로 사용할 수 있어요.
 
-템플릿을 제출할 때는 템플릿이 고객에게 어떻게 보일지 시각화하기 위해 샘플 변수 값을 포함하는 것이 중요합니다. 템플릿 생성 시 샘플을 추가할 수 있습니다.
+## 변수 샘플 값
 
-![샘플 변수 값 추가 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155024924194/original/pom_P9j4uQOeludQsVMRpySTTfFyQYWwGQ.png?1713872158)
+**샘플 값**은 템플릿이 실제로 발송될 때 동적 내용이 어떻게 보일지 Meta에 알려 주는 값이에요. 템플릿을 만들 때 사용한 변수마다 실제와 비슷한 샘플 값을 넣어야 해요.
 
----
+![WhatsApp 템플릿 변수 샘플 값](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155024924194/original/pom_P9j4uQOeludQsVMRpySTTfFyQYWwGQ.png?1713872158)
 
-# 일반적인 템플릿 거부 사유
+템플릿에 쓴 변수에는 실제와 비슷한 샘플 값을 입력하세요.
 
-다음과 같은 이유로 제출이 거부되는 경우가 많으므로 이러한 실수를 피해야 합니다.
+## 저장 전 변수 검증
 
-- 변수 매개변수가 누락되었거나 중괄호가 일치하지 않음. 올바른 형식은 {{1}}입니다.
-- 변수 매개변수에 #, $, % 등의 특수 문자가 포함됨.
-- 변수 매개변수가 순차적이지 않음. 예를 들어 {{1}}, {{2}}, {{4}}, {{5}}는 정의되었지만 {{3}}이 없는 경우.
-- 메시지 템플릿에 WhatsApp 커머스 정책을 위반하는 내용이 포함됨: 상품이나 서비스를 판매할 때 해당 상품이나 서비스와 관련된 모든 메시지와 미디어(설명, 가격, 수수료, 세금 및/또는 필요한 법적 공시 포함)는 거래로 간주됩니다. 거래는 [WhatsApp 커머스 정책](https://www.whatsapp.com/legal/commerce-policy/?fbclid=IwZXh0bgNhZW0CMTEAAR14Q9zNjCik9FK8Edd7eKLhWn20O_UzLPr8iFHGIYutiJU3FG96aH-zCTE_aem_AfM8oWr6KYbOfBTlkCqT38tK5s8cF3tXMl132fhZZWEnx4xgOM_ZuoRfx3DmvqiB91FdT2J4nRKEmfxDcPw77Vw9)을 준수해야 합니다.
-- 메시지 템플릿에 [WhatsApp 비즈니스 정책](https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.whatsapp.com%2Flegal%2Fbusiness-policy%2F%3Ffbclid%3DIwZXh0bgNhZW0CMTEAAR3jeX0zE3tpYTKAlsZBvyV67GmR6K3E7ZNmXvNWB-NfEkm37-lQ6QuOC90_aem_AfNuhVsot9h1IQve1TpPmOWXJcwaRYQqUAi4NjAg4t4XEpSzd5EbScKQycdVm3kq_kKeHT3teYNvDXFw2Z5lYjWV&h=AT2fFZg1ZKLftoy1BU4MG8oSs3nC4Rgf8q1C9xJ3RnUzk0EsmeN8Tf9p0v2bMni4pMOjf877czVrjq9yQOR8yL35VMIpI3qbvPamIYfkZlTVfs3O6xWQ9udmqmErUqib3hnSBMaqeDPdseMaiTr5_rIPwPXbRJjisiEkkmqe)을 위반하는 내용이 포함됨: 사용자에게 민감한 식별자를 요청하지 마세요. 예를 들어, 전체 개인 결제 카드 번호, 금융 계좌 번호, 주민등록번호 또는 기타 민감한 식별자를 공유하도록 요청하지 마세요. 민감한 식별자가 포함될 수 있는 문서를 사용자에게 요청하는 것도 포함됩니다. 부분 식별자(예: 주민등록번호 뒤 4자리) 요청은 괜찮습니다.
-- 고객에게 법적 조치로 위협하거나 공개적으로 모욕하겠다고 위협하는 등 잠재적으로 남용적이거나 위협적인 내용이 포함됨.
-- 메시지 템플릿이 기존 템플릿과 중복됨. 기존 템플릿의 본문과 바닥글과 동일한 문구로 템플릿이 제출되면 중복 템플릿은 거부됩니다.
+WhatsApp 템플릿 빌더는 입력하는 동안 지원되는 변수 형식을 검사해요. 잘못된 변수가 저장된 뒤 심사 단계에서야 발견되는 일이 없도록, 문제가 있는 **머리글**이나 **본문** 입력란에 바로 오류가 표시돼요. 오류를 고치기 전에는 저장할 수 없어요.
 
-![템플릿 거부 사유 예시 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155024924765/original/bANeo0nAPgu7BC2MFPs18SXmyeDD8Nrz7Q.png?1713872446)
+| 검증 규칙 | 올바른 예 | 잘못된 예 |
+| --- | --- | --- |
+| 번호 변수 사용 | `{{1}}`, `{{2}}` | `{{1$}}` |
+| 중괄호 짝 맞추기 | `{{1}}` | `{{1` 또는 `{{1}}}` |
+| 본문 변수 앞뒤에 텍스트 넣기 | `안녕하세요 {{1}}님, 주문이 준비되었어요.` | `{{1}}님, 주문이 준비되었어요.` |
 
----
+{% hint style="info" %}
+**본문**은 변수로 시작하거나 끝날 수 없어요. 변수 앞뒤에 일반 텍스트를 넣으세요. 이 배치 규칙은 **본문**에만 적용돼요.
+{% endhint %}
 
-# WhatsApp 템플릿 발송
+{% hint style="info" %}
+변수를 쓸 수 있는 **머리글**과 **본문** 모두에서, 지원하지 않는 문자나 빠진 중괄호, 중복된 중괄호 같은 잘못된 변수가 표시돼요.
+{% endhint %}
 
-템플릿이 승인되면(상태가 ACTIVE로 설정됨) 고객에게 발송을 시작할 수 있습니다.
+### 평판 리뷰 요청 프리셋
 
-메시지 템플릿의 상태는 고객 피드백과 참여도에 따라 자동으로 ACTIVE에서 PAUSED 또는 DISABLED로 변경될 수 있습니다. 따라서 [상태 변경을 모니터링](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/#monitoring-status-changes)하고 의존하는 메시지 템플릿이 일시정지되거나 비활성화되거나 그럴 위험이 있을 때 적절한 조치를 취하는 것을 권장합니다.
+평판의 기본 리뷰 요청 프리셋도 새로 바뀌었어요. 이 프리셋으로 만드는 새 템플릿은 **본문**이 변수로 끝나지 않아서, 직접 고치지 않아도 새 본문 배치 규칙을 통과해요.
 
----
+## 승인 과정
 
-# WhatsApp 템플릿 상태
+빌더의 입력 중 검사를 통과하면 지원되는 변수 검증 규칙을 만족했다는 뜻이에요. Meta는 이와 별개로 카테고리, 내용, 서식, 정책 준수 여부를 포함해 템플릿 전체를 심사해요.
 
-템플릿은 다음과 같은 상태를 가질 수 있습니다.
+- **승인됨**: 템플릿을 발송할 수 있어요. 처음에는 **활성 - Quality Pending**(품질 확인 대기)으로 표시될 수 있어요.
+- **거절됨**: Meta가 알려 준 사유를 확인하세요. 가능하면 템플릿을 고친 뒤, 제공되는 편집·재제출·이의 신청 방법을 따르세요.
 
-- **검토 중**: 템플릿이 아직 검토 중임을 나타냅니다. 검토는 최대 24시간이 소요될 수 있습니다.
-- **거부됨**: 검토 과정에서 템플릿이 거부되었거나 정책 중 하나 이상을 위반했습니다. [이의제기](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/#appeals)를 참조하세요.
-- **활성 - 품질 대기**: 메시지 템플릿이 아직 고객으로부터 품질 피드백이나 읽기율 정보를 받지 못했습니다. 이 상태의 메시지 템플릿은 고객에게 발송할 수 있습니다. [품질 등급](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/#quality-rating)을 참조하세요.
-- **활성 - 고품질**: 템플릿이 고객으로부터 거의 또는 전혀 부정적인 피드백을 받지 않았습니다. 이 상태의 메시지 템플릿은 고객에게 발송할 수 있습니다. [품질 등급](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/#quality-rating)을 참조하세요.
-- **활성 - 보통 품질**: 템플릿이 여러 고객으로부터 부정적인 피드백이나 낮은 읽기율을 받았으나, 곧 일시정지되거나 비활성화될 수 있습니다. 이 상태의 메시지 템플릿은 고객에게 발송할 수 있습니다. [품질 등급](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/#quality-rating)을 참조하세요.
-- **활성 - 저품질**: 템플릿이 여러 고객으로부터 부정적인 피드백이나 낮은 읽기율을 받았습니다. 이 상태의 메시지 템플릿은 고객에게 발송할 수 있지만 곧 일시정지되거나 비활성화될 위험이 있으므로 고객이 보고하는 문제를 해결하는 것을 권장합니다. [품질 등급](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/#quality-rating)을 참조하세요.
-- **일시정지됨**: 고객으로부터의 반복적인 부정적 피드백이나 낮은 읽기율로 인해 템플릿이 일시정지되었습니다. 이 상태의 메시지 템플릿은 고객에게 발송할 수 없습니다. [템플릿 일시정지](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/#template-pausing)를 참조하세요.
-- **비활성화됨**: 고객으로부터의 반복적인 부정적 피드백으로 인해 템플릿이 비활성화되었습니다. 이 상태의 메시지 템플릿은 고객에게 발송할 수 없습니다.
-- **이의제기 요청됨**: 이의제기가 요청되었음을 나타냅니다. [이의제기](https://developers.facebook.com/docs/whatsapp/message-templates/guidelines/#appeals)를 참조하세요.
+{% hint style="warning" %}
+입력 중 변수 검증은 서식 실수를 줄여 줄 뿐, 템플릿 승인을 보장하지 않아요.
+{% endhint %}
 
-**WhatsApp(왓츠앱) > Templates(템플릿) > Status(상태)**로 이동해서 템플릿 상태를 확인할 수 있습니다.
+## 템플릿이 거절되는 흔한 이유
 
-![WhatsApp 템플릿 상태 확인 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155024925270/original/MeSdtU1yIn3tBYgblzakubUS9tTBMZi0OA.jpeg?1713872747)
+일부 변수 형식 문제는 저장하기 전에 막히지만, 그 밖의 서식·내용·정책 문제는 Meta 심사에서 발견될 수 있어요. 둘을 구분하면 알맞은 단계에서 문제를 해결할 수 있어요.
 
----
+### 저장 전에 걸러지는 문제
+`{{1` 또는 `{{1}}}`처럼 중괄호 짝이 맞지 않거나 잘못된 변수`{{1$}}`처럼 지원하지 않는 변수 형태나 문자
+- 변수로 시작하거나 끝나는 **본문**
 
-# FAQ
+### 제출 또는 Meta 심사에서 발견될 수 있는 문제
+`{{3}}`이 없는데 `{{1}}`, `{{2}}`, `{{4}}`를 쓰는 것처럼 번호가 이어지지 않는 변수
+- 메시지 내용에 비해 변수가 너무 많은 경우
+- WhatsApp Business 또는 Commerce 요건에 맞지 않는 내용
+- 금지된 정보나 민감한 정보를 요구하는 내용
+- 위협적이거나 욕설이 담겼거나 그 밖에 금지된 내용
+- 지원하지 않는 문자, 길이, 서식
+- **본문**과 **Footer**(바닥글) 내용이 거의 같은 중복 템플릿
 
-## Q: WhatsApp 메시지 템플릿이란 무엇이고 왜 필요한가요?
+![WhatsApp 템플릿 거절 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155024924765/original/bANeo0nAPgu7BC2MFPs18SXmyeDD8Nrz7Q.png?1713872446)
 
-WhatsApp 메시지 템플릿은 최근에 메시지를 보내지 않은 고객이나 이전에 비즈니스와 상호작용하지 않은 고객과 대화를 시작할 수 있게 해주는 미리 작성된 메시지 형식입니다. 능동적인 커뮤니케이션, 마케팅, 고객 지원에 필수적입니다.
+## WhatsApp 템플릿 보내기
 
-## Q: 메시지 템플릿은 일반 WhatsApp 메시지와 어떻게 다른가요?
+승인된 템플릿을 쓰면 24시간 고객 서비스 창 밖을 포함해, 지원되는 WhatsApp 대화를 비즈니스가 먼저 시작할 수 있어요.
 
-일반 WhatsApp 메시지는 지난 24시간 내에 메시지를 보낸 고객에게 자유롭게 보낼 수 있습니다. 템플릿은 승인이 필요하며 새로운 연락처나 지난 24시간 내에 활동하지 않은 사람들에게 연락할 수 있는 유일한 방법입니다.
+템플릿이 **활성** 상태가 되면 지원되는 메시지 화면에서 선택해 쓸 수 있어요. 이전에 활성이던 템플릿도 나중에 **일시 중지**나 **비활성화됨**이 될 수 있으니, 템플릿 품질을 계속 살펴보세요.
 
-## Q: 템플릿 승인 과정은 얼마나 걸리나요?
+권장 방법: 비즈니스의 연락을 기대하는 연락처에게 관련 있는 메시지를 보내세요. 부정적인 피드백이 쌓이면 템플릿 품질과 사용 가능 여부에 영향을 줄 수 있어요.
 
-승인은 일반적으로 최대 24시간이 소요됩니다. 결정이 내려지면 알림을 받게 됩니다.
+## WhatsApp 템플릿 상태
 
-## Q: 템플릿이 거부되는 일반적인 이유는 무엇인가요?
+템플릿 상태를 보면 지금 심사 중인지, 바로 보낼 수 있는지, 품질에 문제가 있는지, 사용할 수 없는지 알 수 있어요. 사용할 수 없는 템플릿이 있으면 문제를 찾기 전에 먼저 현재 상태를 확인하세요.
 
-변수 포맷 오류, WhatsApp 정책 위반 콘텐츠, 기존 템플릿과 너무 유사한 경우입니다. 정책을 신중히 검토하고 템플릿 형식을 확인하세요.
+| 상태 | 의미 |
+| --- | --- |
+| **검토 중** | Meta가 템플릿을 심사하고 있어요. |
+| **거절됨** | 템플릿이 승인되지 않았어요. 편집, 재제출, 이의 신청을 하기 전에 거절 사유를 확인하세요. |
+| **활성 - Quality Pending** | 승인되어 바로 보낼 수 있지만, 아직 품질 피드백이 충분히 모이지 않았어요. |
+| **활성 - 고품질** | 템플릿이 활성 상태이고 품질 신호가 좋아요. |
+| **활성 - 중간 품질** | 템플릿은 활성 상태이지만 부정적인 품질 신호가 일부 들어오고 있어요. 주의 깊게 살펴보세요. |
+| **활성 - Low Quality**(낮은 품질) | 템플릿은 활성 상태로 남아 있지만 일시 중지될 위험이 더 커요. |
+| **일시 중지** | 품질 관련 제한 때문에 지금은 템플릿을 보낼 수 없어요. |
+| **비활성화됨** | 템플릿을 보낼 수 없어요. |
+| **Appeal Requested**(이의 신청됨) | 이의 신청을 제출했고 결과를 기다리고 있어요. |
 
-## Q: 템플릿 상태가 변경되었습니다. 이것은 무엇을 의미하나요?
+![WhatsApp 템플릿 상태 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155024925270/original/MeSdtU1yIn3tBYgblzakubUS9tTBMZi0OA.jpeg?1713872747)
 
-템플릿 상태("활성 - 저품질" 또는 "일시정지됨" 등)는 고객 피드백을 반영합니다. 고품질이고 좋은 반응을 받는 템플릿만 발송할 수 있도록 이러한 상태를 모니터링하세요.
+## WhatsApp 템플릿 확인하고 관리하기
 
-## Q: 템플릿이 부정적인 피드백이나 낮은 참여도를 받으면 어떻게 되나요?
+상태와 검증 오류를 한곳에서 확인하면, 템플릿을 고쳐야 하는지, 심사를 더 기다려야 하는지, 품질을 개선해야 하는지 쉽게 판단할 수 있어요.
 
-템플릿이 부정적인 피드백이나 낮은 참여도를 받으면 전화번호의 품질 등급을 보호하기 위해 자동으로 일시정지될 수 있습니다. 일시정지 기간은 템플릿의 품질 등급에 따라 다르며, 템플릿이 일시정지되면 알림을 받게 됩니다.
+1. **설정 > WhatsApp > 템플릿**으로 이동하세요.
+2. 확인하려는 템플릿을 찾으세요.
+3. 수정하기 전에 현재 상태를 확인하세요.
+4. 템플릿을 만들거나 편집하는 중이라면, 저장하기 전에 **머리글**과 **본문**에 표시된 변수 오류를 먼저 고치세요.
+5. Meta가 템플릿을 거절했다면 거절 사유를 확인하고, 해당하는 내용이나 서식을 고치세요.
+6. 승인된 뒤에도 템플릿을 사용하면서 품질 상태를 계속 확인하세요.
 
-## Q: 일시정지된 템플릿을 편집할 수 있나요?
+템플릿을 만드는 전체 과정은 [WhatsApp 템플릿 만들기](how-to-create-a-whatsapp-template.md)를 참고하세요.
 
-네, 일시정지된 템플릿을 편집하여 내용을 개선하고 부정적인 피드백이나 낮은 참여도를 야기하는 문제를 해결할 수 있습니다. 편집 후 재제출하면 승인될 때까지 상태가 "검토 중"으로 변경됩니다.
+## 자주 묻는 질문
 
----
-*원문 최종 수정: Thu, 26 Mar, 2026 at  6:40 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### WhatsApp 템플릿이 저장되지 않아요. 왜 그런가요?
+
+**머리글**과 **본문**에 변수 오류가 표시되어 있는지 확인하세요. 지원하지 않는 변수 형태, 빠졌거나 많은 중괄호, 변수로 시작하거나 끝나는 **본문**은 저장하기 전에 고쳐야 해요.
+
+### 변수는 어떤 형식으로 써야 하나요?
+
+`{{1}}`, `{{2}}`, `{{3}}`처럼 번호를 붙인 변수를 쓰세요. 중괄호는 짝을 맞추고, 변수 안에 지원하지 않는 문자는 넣지 마세요.
+
+### 템플릿 본문을 변수로 시작하거나 끝낼 수 있나요?
+
+아니요. 변수 앞뒤에 일반 텍스트를 넣으세요. 빌더가 이 배치 문제를 입력 중에 표시하고, 고치기 전에는 저장하지 못하게 막아요.
+
+### 빌더에서 변수가 통과되면 Meta 승인도 보장되나요?
+
+아니요. 입력 중 검증은 빌더가 확인하는 변수 형식과 배치 규칙만 확인해요. 그 밖의 서식, 내용, 카테고리, 중복, 정책 문제로 Meta가 템플릿을 거절할 수 있어요.
+
+### 변수 오류가 없었는데 템플릿이 거절됐어요. 왜 그런가요?
+
+Meta의 다른 요건을 충족하지 못했을 수 있어요. 예를 들면 카테고리가 맞지 않거나, 내용이나 정책 규칙에 어긋나거나, 지원하지 않는 서식이거나, 내용이 중복되거나, 다른 매개변수 요건에 맞지 않는 경우예요.
+
+### 평판의 리뷰 요청 프리셋은 직접 고쳐야 하나요?
+
+아니요. 새로 만드는 리뷰 요청 템플릿은 **본문**이 변수로 끝나지 않도록 바뀐 프리셋을 써요. 이 검증 규칙 때문에 직접 고칠 필요는 없어요.
+
+### 활성 템플릿이 Low Quality나 일시 중지로 바뀌면 어떻게 하나요?
+
+메시지 내용과 수신 대상이 알맞은지 살펴보세요. 부정적인 피드백을 부를 만한 발송 방식을 줄이고, 대량 발송을 이어 가기 전에 템플릿의 품질 상태를 계속 확인하세요.

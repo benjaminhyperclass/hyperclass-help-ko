@@ -1,126 +1,229 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 에이전시 뷰 > Prospecting Tool
+원문: /support/solutions/articles/155000005777-prospecting-at-sub-accounts
+번역일: 2026-11-06
+카테고리: 19-에이전시-뷰
 ---
 
-# 하위 계정에서의 프로스펙팅: 완벽 가이드 및 설정
+# 서브 계정에서 잠재고객 발굴 사용하기
 
-하위 계정 레벨에서의 프로스펙팅은 신규 리드 발굴부터 육성 및 아웃리치까지 한 곳에서 원활하게 진행할 수 있는 고급 프로스펙팅 기능을 제공합니다. 이제 프로스펙팅은 두 가지 영역에서 사용할 수 있습니다:
+**잠재고객 발굴**(Prospecting)은 비즈니스를 찾고, 마케팅 감사 리포트를 만들고, 찾은 잠재고객을 CRM으로 옮기는 기능이에요. 서브 계정 안에서 쓰면 연락처, 기회, 워크플로우, 이메일, SMS, 파이프라인 자동화까지 함께 쓸 수 있어요. 이 문서에서는 서브 계정에서 이 기능을 켜는 방법과 잠재고객이 연락처가 되는 과정, 후속 조치 자동화, Prospect AI 리드의 파이프라인 연결, 에이전시 잠재고객 마이그레이션 방법을 안내해요.
 
-- **에이전시에서** – 리드 발굴 및 기본 프로스펙팅
-- **하위 계정에서** – 고급 인게이지먼트 및 자동화 (리드를 연락처에 추가, 아웃리치용 워크플로우 자동화 설정, 영업 기회로 가져오기 등)
+{% hint style="info" %}
+문서에 나온 금액(달러)과 요금제 이름은 참고용이에요. 하이퍼클래스에서 실제로 적용되는 요금은 [요금제 안내](../../00-자주묻는질문/pricing-plans.md)와 [AI·SMS·음성 사용료](../../00-자주묻는질문/usage-costs.md)를 확인하세요.
+{% endhint %}
 
-이메일 발송, SMS 전송, 워크플로우 실행은 하위 계정에서만 가능합니다. 그래서 프로스펙팅 작업은 하위 계정 내에서 진행(또는 이전)할 때 가장 강력한 효과를 발휘합니다.
+에이전시가 소유한 서브 계정 중 조건을 충족하는 계정은 잠재고객 발굴 무료 티어를 쓸 수 있어요. 잠재고객 발굴 프리미엄은 더 많은 발굴, 정보 보강, 리포트 기능을 제공해요.
 
-![프로스펙팅 하위 계정 개요](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050140635/original/m5Ofa6sMXvr247LN5NX2g-c9gkLdI5C4AQ.jpeg?1753086132)
+{% hint style="warning" %}
+에이전시 수준의 잠재고객 발굴은 리드 발굴과 리포트에 초점을 둬요. 연락처, 기회, 이메일, SMS, 워크플로우 자동화 같은 CRM 기능은 조건을 충족하는 서브 계정 안에서 잠재고객 발굴을 쓸 때 사용할 수 있어요.
+{% endhint %}
 
----
+## 서브 계정에서 쓰는 잠재고객 발굴이란?
 
-목차
+서브 계정 안에서 잠재고객 발굴을 쓰면 비즈니스 발굴과 마케팅 감사 리포트에 하이퍼클래스의 CRM·자동화 도구를 더할 수 있어요. 서브 계정을 벗어나지 않고도 비즈니스를 찾고, 연락처를 만들고, 후속 조치를 시작하고, 영업 과정을 관리할 수 있어요.
 
-- [하위 계정에서 프로스펙팅을 해야 하는 주요 장점](#하위-계정에서-프로스펙팅을-해야-하는-주요-장점)
-- [에이전시 하위 계정에서 프로스펙팅 활성화하는 방법](#에이전시-하위-계정에서-프로스펙팅-활성화하는-방법)
----
+잠재고객 발굴 사용 권한에 따라 서브 계정에서 다음 기능과 함께 쓸 수 있어요.
 
-# 하위 계정에서 프로스펙팅 도구를 사용하는 주요 장점
+- 연락처
+- 기회와 파이프라인
+- 워크플로우
+- 이메일·SMS 아웃리치
+- 마케팅 감사 리포트
+- Prospect AI 등 프리미엄 기능 (사용 권한에 포함된 경우)
 
-# 1. 프로스펙트를 CRM 연락처에 추가
+에이전시 수준의 잠재고객 발굴은 리드 발굴과 리포트에 알맞아요. 팀이 CRM 후속 조치, 영업 파이프라인, 자동화까지 함께 써야 한다면 서브 계정에서 쓰는 쪽이 더 잘 맞아요.
 
-![프로스펙트 CRM 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050139909/original/zp-A3iptf9jrz5KlKOWUJx8zZQzcx38lSw.jpeg?1753085617)
+## 서브 계정에서 쓰면 좋은 점
 
-- 하위 계정에서 생성된 프로스펙트는 자동으로 **연락처 목록**에 추가되어 육성할 수 있습니다 (에이전시 레벨 프로스펙팅에서는 불가능)
-- **수동으로 생성된 프로스펙트, 프로스펙팅 위젯을 통해 생성된 프로스펙트, Prospect AI를 통해 생성된 프로스펙트 모두에 적용됩니다 - 프로스펙트가 생성되는 즉시 연락처에 자동으로 추가됩니다**
+CRM이 있는 곳에서 잠재고객 발굴을 쓰면 리드 발굴과 영업 후속 조치 사이에서 사람이 직접 넘겨야 하는 일이 줄어요. 새로 생긴 잠재고객에 더 빨리 대응할 수 있어요.
 
-![프로스펙트 자동 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050136345/original/2NWLusP3Iq_GLHYlAKATtNhK7BMYjxRNYQ.png?1753083257)
+- CRM에 잠재고객 동기화: 발굴한 잠재고객을 같은 서브 계정 안에서 CRM 연락처로 저장해요.
+- 후속 조치 자동화: 새 잠재고객이 생길 때 워크플로우를 실행해요.
+- 리드를 파이프라인으로 전달: 워크플로우나 지원되는 Prospect AI 파이프라인 연동으로 기회를 만들거나 업데이트해요.
+- Prospect AI 활용: 잠재고객을 자동으로 찾고, 기능을 쓸 수 있는 경우 조건에 맞는 앞으로의 리드를 선택한 CRM 파이프라인에 넣어요.
+- 잠재고객에게 바로 연락: 서브 계정에서 이메일, SMS, 담당자 지정, 태그 등 CRM 도구를 써요.
+- 화면 전환 줄이기: 발굴, CRM 관리, 후속 조치를 한 곳에서 해요.
 
-# 2. 신규 프로스펙트 생성 시 워크플로우 설정
+## 사용 조건과 제한 사항
 
-- **프로스펙팅 도구를 통해 하위 계정에서 생성되는 모든 프로스펙트에 대해 여러 [워크플로우](../Premium-Prospecting/workflow-trigger-for-new-prospects-in-the-prospecting-tool.md)를 트리거할 수 있습니다 (환영 이메일, 프로스펙트를 영업 기회 및 파이프라인에 자동 추가 등)**
-- **AI, 인앱, 프로스펙팅 위젯 등 다양한 프로스펙트 생성 소스에 대해 워크플로우를 트리거할 수 있습니다**
+잠재고객 발굴을 쓸 수 있는지는 서브 계정이 무료 티어 대상인지, 프리미엄을 쓰고 있는지에 따라 달라요. 기능이 보이지 않을 때는 문제를 찾기 전에 계정 유형과 구독 상태부터 확인하세요.
 
-![워크플로우 트리거](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050437465/original/t3kTex3CJbbsK74nmXfylJkernmeuCBGjg.png?1753445112)
+### 에이전시 서브 계정의 잠재고객 발굴 무료 티어
 
-# 3. 고객에게 프로스펙팅 감사 보고서 전송
+무료 티어는 주로 에이전시가 내부용으로 쓰는 서브 계정을 위해 만들어졌어요. 에이전시가 CRM과 자동화 워크플로우를 관리하는 곳에서 기본 잠재고객 발굴 기능을 쓸 수 있어요.
 
-- 이메일의 커스텀 오브젝트를 사용하여 프로스펙트에게 프로스펙팅 감사 보고서를 이메일로 전송
+- 해당 로케이션이 **Agency Sub-Account**(에이전시 서브 계정)로 지정되어 있어야 해요.
+- **Agency Labs**(에이전시 실험실)에서 잠재고객 발굴 무료 티어 토글이 켜져 있어야 해요.
+- 하이퍼클래스의 현재 잠재고객 발굴 무료 티어 안내에 따르면, 로케이션을 Agency Sub-Account로 지정하려면 $497 에이전시 요금제가 필요해요.
+- 무료 티어는 주로 에이전시 내부 잠재고객 발굴용이에요. 고객사를 위한 고급 사용 사례에는 맞지 않아요.
 
-![감사 보고서 이메일](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050139022/original/xA2Y0R8S2ZCRkX2-edgK2x7CSgMCyxcMqQ.jpeg?1753085128)
+### 잠재고객 발굴 프리미엄
 
-- 공유 옵션을 통해 프로스펙팅 감사 보고서를 수동으로 전송할 수도 있습니다
+프리미엄은 더 넓은 범위의 발굴, 리포트, 정보 보강, 고객사 대상 사용을 위한 플랜이에요. 서브 계정에 직접 켤 수 있어요.
 
-![감사 보고서 공유](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050140392/original/TfzZQkI-1Jua_kySw5Cpyb__s2gKiUfHDw.png?1753085929)
+프리미엄은 다음 방법으로 활성화할 수 있어요.
 
-# 에이전시 하위 계정에서 프로스펙팅 활성화하는 방법
+- **에이전시 보기 > 재판매**에서 잠재고객 발굴을 켜고 재판매
+- 서브 계정 안에서 잠재고객 발굴 프리미엄을 직접 구매
+- 조건을 충족하는 에이전시 잠재고객 발굴 프리미엄 구독을 서브 계정 1개에 연결
 
-세 가지 방법으로 활성화할 수 있습니다:
+## 서브 계정에서 잠재고객 발굴 켜기
 
-**1. 재판매(Reselling) 탭에서**
+서브 계정의 사용 목적에 맞는 방법을 고르세요. 에이전시가 소유한 내부 로케이션은 조건이 맞으면 무료 티어를 쓸 수 있고, 고객사 대상이나 고급 사용 사례에는 보통 프리미엄을 써요. 이 설정은 에이전시 관리자만 할 수 있어요.
 
-Agency View > Reselling 탭으로 이동
+### 방법 1: 무료 티어 켜기
 
-- Re-sell Prospecting 토글을 저장 및 활성화합니다
+로케이션을 Agency Sub-Account로 지정하면 에이전시 소유 로케이션으로 인식되어, 조건에 맞을 때 무료 티어를 쓸 수 있어요.
 
-![재판매 탭 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053444345/original/aexrLrWLJCf0cpM3f-vc_AJ0aNFoOzM-sQ.png?1757492600)
+1. **에이전시 보기**에서 **서브 계정**으로 이동해요.
+2. 해당 서브 계정을 찾아요.
+3. **점 세 개 메뉴**를 열어요.
+4. **Add as Agency Sub-Account**(에이전시 서브 계정으로 추가)를 선택해요.
+5. **Agency Labs**에서 잠재고객 발굴 무료 티어 기능이 켜져 있는지 확인해요.
+6. 서브 계정을 열어요.
+7. **마케팅 > 잠재고객 발굴**로 이동해요.
 
-**2. 직접 회사 구매**
+![서브 계정 점 세 개 메뉴에서 에이전시 서브 계정으로 추가하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081376385/original/O29M1z8HmcANnosYaxhtf0n18jT04Xq5mw.png?1789883221)
+![마케팅 메뉴의 잠재고객 발굴 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081376391/original/pWQzqWEZHwP1gtRxfgCBfzsrFldnWARQrg.png?1789883236)
 
-각 하위 계정 레벨에서 Prospecting Premium을 직접 구매합니다.
+### 방법 2: 프리미엄 켜기
 
-![직접 구매](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053444288/original/O96vKST4jGql62Gpm_JLpNVMJCWXGEfwcg.png?1757492555)
+프리미엄은 에이전시 재판매, 서브 계정에서 직접 구매, 조건을 충족하는 에이전시 프리미엄 구독 연결 중 하나로 켤 수 있어요.
 
-**3. 하위 계정 연결을 통해 에이전시 프로스펙팅 도구에서 업그레이드**
+재판매로 켜는 방법이에요. 에이전시 관리자만 할 수 있어요.
 
-에이전시 계정에서 프로스펙팅으로 이동하여 거기서 업그레이드합니다.
+1. **에이전시 보기**에서 **재판매**를 열어요.
+2. 잠재고객 발굴을 재판매하는 옵션을 켜요.
+3. 필요에 맞게 오퍼를 설정해요.
+4. 해당 서브 계정을 열어요.
+5. **마케팅 > 잠재고객 발굴**로 이동해요.
+6. 잠재고객 발굴 프리미엄 활성화 또는 구매 절차를 마쳐요.
 
-- Upgrade를 클릭한 후 하위 계정 이름을 검색하고 Continue to Pay를 클릭합니다
-- 'continue without linking sub account' 옵션은 클릭하지 마세요
+프리미엄은 서브 계정에서 직접 구매할 수도 있어요. 조건을 충족하는 에이전시 잠재고객 발굴 프리미엄 구독이 이미 있다면, 에이전시 잠재고객 발굴 구독 설정에서 서브 계정 1개를 그 구독에 연결할 수 있어요.
 
-![에이전시 업그레이드](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053444218/original/kRYt7_jFGjAKe5frDvKUTtEWWkh92-EI6w.png?1757492513)
+![재판매 설정에서 잠재고객 발굴을 켜는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081376382/original/FylOEr7a90cqjRF6iUbDd-EmMXy529wFsw.png?1789883206)
 
-![하위 계정 연결](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155053444254/original/A2rG8Qp6ptXDkaXFwztGTTJQ3kk4QXXLfA.png?1757492540)
+## 잠재고객이 CRM에 들어오는 방식
 
-### **에이전시에서 활성 프로스펙팅 구독이 이미 있는 경우**
-- [하위 계정을 연결](../../08-결제/기타/how-to-link-a-sub-account-with-your-agency-prospecting-premium-subscription.md)하여 하위 계정에서 접근할 수 있습니다.
-- 그 다음 [프로스펙트를 이전](../기타/how-to-migrate-prospects-from-agency-to-sub-account.md)시켜 해당 하위 계정으로 보냅니다 (연락처에 자동으로 복사되고 워크플로우가 있다면 트리거됩니다)
-- 그 후 해당 하위 계정으로 가서 Marketing 탭을 클릭하고 Prospecting 탭을 선택합니다
+잠재고객 발굴은 저장한 비즈니스를 서브 계정의 CRM 연락처로 자동 변환할 수 있어요. **Contact Creation**(연락처 생성) 설정이 이 동작을 정해요. 저장한 잠재고객을 연락처 기록으로도 만들지 결정해요.
 
----
+### 연락처 생성
 
-**활성화 후 하위 계정의 Marketing 탭에서 찾을 수 있습니다**
+**Contact Creation**은 기본으로 켜져 있고, 잠재고객 발굴 설정에서 관리할 수 있어요. 켜져 있으면 잠재고객을 저장할 때 그 시점에 있는 잠재고객 정보로 비즈니스 연락처가 만들어져요.
 
-**하위 계정 내의 Marketing 탭으로 이동한 다음 상단 네비게이션 바에서 Prospecting 탭을 찾으세요**
+1. **마케팅 > 잠재고객 발굴**로 이동해요.
+2. **설정**을 열어요.
+3. **연락처**를 열어요.
+4. **Contact Creation** 설정을 확인해요.
 
-![마케팅 탭 위치](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050140119/original/b2N56MMwbUgHNQmf7S6nVw2O9q_T3WsqVQ.png?1753085730)
+![잠재고객 발굴 설정의 연락처 생성 항목](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081376400/original/guk6mFRryQFr-9C9cj9cyeBWQv9CyRsU5w.png?1789883289)
 
-### **두 개 이상의 하위 계정에서 프로스펙팅을 원하는 경우**
+**Contact Creation**이 켜져 있을 때는 이렇게 동작해요.
 
-- Agency View 내의 [재판매 탭](how-to-resell-and-use-prospecting-tool-for-sub-accounts.md)으로 이동
-- Prospecting 탭을 ON으로 토글
-- 해당 하위 계정으로 이동: Marketing 탭에서 Prospecting 탭 선택
+- 잠재고객을 저장하면 CRM에 비즈니스 연락처가 1개 만들어져요.
+- 확인된 전화번호, 이메일, 웹사이트 정보, 위치 정보는 표준 연락처 필드에 매핑될 수 있어요.
+- 이름이 없는 추가 전화번호와 이메일은 비즈니스 연락처에 그대로 연결돼요.
+- **연락처 출처**가 **Prospecting Tool**로 표시돼요.
 
----
+프리미엄 정보 보강: **Contact Enrichment**(연락처 정보 보강)는 프리미엄 기능이고 기본으로 꺼져 있어요. 켜면 추가 전화번호, 이메일, 이름이 확인된 담당자를 찾을 수 있어요. 이름이 확인된 담당자는 잠재고객 발굴의 연락처 설정에 따라 별도의 CRM 연락처로 저장될 수 있어요.
 
-## **에이전시에서 하위 계정으로 기존 프로스펙트를 이전(복사)하는 방법**
+## 잠재고객 후속 조치 자동화하기
 
-- 에이전시의 Prospecting 탭으로 가서 Settings로 이동
-- 'Migrate'를 클릭한 후 'Migrate Prospect' 버튼을 클릭
-- 이전할 하위 계정을 선택 (Prospecting Premium이 활성화된 하위 계정만 표시되므로 구매하거나 기존 에이전시 구독과 연결해야 함)
-- 선택한 하위 계정에서 사용 가능한 모든 프로스펙트를 선택하거나 수동으로 선택
-- 'Migrate'를 클릭하여 선택한 프로스펙트를 선택한 하위 계정에 성공적으로 복사
-- 해당 하위 계정으로 이동 - Marketing 탭을 클릭한 후 Prospecting: 이제 프로스펙트가 여기에 있습니다 (향후를 위해 에이전시 계정에도 그대로 유지됩니다)
+**Prospect Generated**(잠재고객 생성됨) 워크플로우 트리거를 쓰면 새 잠재고객이 생기는 즉시 자동화를 시작할 수 있어요. 필터를 쓰면 잠재고객이 들어온 경로나 전환 가능성에 따라 나눠서 처리할 수 있어요.
 
-**자세한 아티클: [여기](prospecting-tool-migrate-prospects-from-agency-to-sub-account.md)**
+1. **자동화 > 워크플로우**로 이동해요.
+2. 워크플로우를 새로 만들거나 기존 워크플로우를 열어요.
+3. **Prospect Generated** 트리거를 추가해요.
+4. 필요하면 필터를 추가해요.
 
----
+사용할 수 있는 **Prospect Source**(잠재고객 출처) 필터는 다음과 같아요.
 
-## **관련 아티클**
+- In-App
+- Widget
+- Prospect AI
 
-- [프로스펙팅 도구로 생성된 프로스펙트 리드에게 연락하는 방법](how-to-reach-out-to-prospect-leads-generated-via-the-prospecting-tool.md)
-- [에이전시 프로스펙팅 프리미엄 구독을 하위 계정과 공유하는 방법](../../08-결제/기타/how-to-link-a-sub-account-with-your-agency-prospecting-premium-subscription.md)
-- [Hyperclass의 무료 vs 프리미엄 프로스펙팅 – 에이전시 완벽 가이드](../Premium-Prospecting/free-vs-premium-prospecting-in-gohighlevel-complete-guide-for-agencies.md)
-- [두 개 이상의 하위 계정에 프로스펙팅 도구를 재판매하고 사용하는 방법](how-to-resell-and-use-prospecting-tool-for-sub-accounts.md)
+**전환율**(Conversion Rate) 같은 지원되는 필터도 쓸 수 있어요. 우선순위가 높은 잠재고객과 낮은 잠재고객의 후속 경로를 다르게 만들 수 있어요.
 
----
-*원문 최종 수정: 2025년 9월 10일*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+5. 워크플로우가 실행할 액션을 추가해요.
+6. 트리거와 액션을 저장해요.
+7. 워크플로우를 게시하고 테스트해요.
+
+자주 쓰는 후속 액션은 다음과 같아요.
+
+- 이메일 보내기
+- SMS 보내기
+- 태그 추가
+- 팀원에게 알림
+- 기회 만들기 또는 업데이트
+- 너처링 시퀀스 시작
+
+![Prospect Generated 트리거를 쓴 워크플로우 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081376270/original/uTKir1Sxihh9dtZDAfSV2IIF2VRn1P0jdg.png?1789882641)
+
+## Prospect AI 리드를 파이프라인으로 보내기
+
+서브 계정 안에서 설정한 **Prospect AI**(AI가 잠재고객을 자동으로 찾아 주는 기능) 에이전트는 새로 찾은 잠재고객을 선택한 CRM 파이프라인과 단계로 자동 전달할 수 있어요. 에이전시 수준의 Prospect AI 에이전트는 파이프라인 연동을 지원하지 않아요.
+
+1. 해당 서브 계정을 열어요.
+2. **마케팅 > 잠재고객 발굴**로 이동해요.
+3. **Prospect AI**를 열어요.
+4. 기존 AI 에이전트를 열거나 새로 만들어요.
+5. **편집**을 클릭해요.
+6. 에이전트 설정에서 **Lead Enrichment**(리드 정보 보강) 부분을 찾아요.
+7. **Save new prospects to Contacts**(새 잠재고객을 연락처에 저장)를 켜요.
+8. **Also add to a pipeline stage**(파이프라인 단계에도 추가)를 켜요.
+9. **파이프라인**을 선택해요.
+10. 보낼 **단계**를 선택해요.
+11. 에이전트를 저장해요.
+
+![Prospect AI 에이전트 편집 화면의 파이프라인 단계 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081376354/original/y0rdYNhkfX1LZgdgt4cAfFVkaVmhSrXBJw.png?1789883081)
+
+{% hint style="warning" %}
+파이프라인 설정은 설정을 저장한 뒤에 찾은 잠재고객에게만 적용돼요. 이미 있는 잠재고객은 선택한 파이프라인이나 단계로 소급해서 옮겨지지 않아요.
+{% endhint %}
+
+## 에이전시 잠재고객을 서브 계정으로 마이그레이션하기
+
+잠재고객 마이그레이션은 에이전시 수준에 있는 잠재고객을 프리미엄이 켜진 서브 계정으로 복사해요. 대상 서브 계정의 팀이 CRM, 워크플로우, 파이프라인, 소통 도구로 후속 조치를 할 수 있어요. 에이전시 관리자만 할 수 있어요.
+
+{% hint style="info" %}
+요구 사항: 대상 서브 계정에 활성 상태의 잠재고객 발굴 프리미엄 구독이 있어야 해요. 프리미엄이 켜진 서브 계정만 마이그레이션 대상으로 표시돼요.
+{% endhint %}
+
+1. **에이전시 보기**에서 **잠재고객 발굴**을 열어요.
+2. **설정**으로 이동해요.
+3. **마이그레이션**을 열어요.
+4. **Migrate Prospects**(잠재고객 마이그레이션)를 클릭해요.
+5. **대상 서브 계정 선택**에서 대상 서브 계정을 선택해요.
+6. **Select Prospects**(잠재고객 선택)를 클릭해요.
+7. 마이그레이션할 수 있는 잠재고객을 1명, 여러 명, 또는 전체 선택해요.
+8. **마이그레이션**을 클릭해요.
+
+![에이전시 잠재고객 마이그레이션 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081376500/original/PskKCF08JiUZ9Nbokqe_o-yC4_pUROp-oA.png?1789883745)
+
+마이그레이션이 끝나면 선택한 잠재고객이 대상 서브 계정의 연락처에 추가되고, 관련 데이터, 메모, 기록도 그대로 유지돼요. 원래 잠재고객은 에이전시 수준에 그대로 남아 있어서 이후에도 쓸 수 있어요.
+
+## 자주 묻는 질문
+
+### 서브 계정 안에서 잠재고객 발굴을 쓰면 뭐가 좋은가요?
+서브 계정에서 쓰면 리드 발굴이 연락처, 기회, 워크플로우, 이메일, SMS 같은 CRM 도구와 연결돼요. 팀이 잠재고객을 찾은 뒤 바로 후속 조치로 넘어갈 수 있어요.
+
+### 잠재고객 발굴 무료 티어를 모든 서브 계정에서 쓸 수 있나요?
+아니요. 무료 티어는 **Agency Sub-Account**로 지정된 조건 충족 서브 계정에서만 쓸 수 있고, 해당 실험실 기능이 켜져 있어야 해요.
+
+### 잠재고객 발굴로 찾은 리드가 왜 연락처에 자동으로 생겼나요?
+서브 계정의 잠재고객 발굴에서는 **Contact Creation**이 기본으로 켜져 있어요. 켜져 있으면 잠재고객을 저장할 때 CRM 비즈니스 연락처가 자동으로 만들어져요.
+
+### 연락처를 자동으로 만들지 않고 잠재고객만 저장할 수 있나요?
+네, 할 수 있어요. **마케팅 > 잠재고객 발굴 > 설정 > 연락처**로 이동해서 **Contact Creation**을 끄세요. 그러면 CRM 연락처를 자동으로 만들지 않고 잠재고객만 저장해요.
+
+### 잠재고객 발굴로 워크플로우를 실행할 수 있나요?
+네, 할 수 있어요. **Prospect Generated** 워크플로우 트리거를 쓰세요. 지원되는 Prospect Source 필터는 In-App, Widget, Prospect AI예요.
+
+### Prospect AI가 잠재고객을 기회로 자동 추가할 수 있나요?
+네, 할 수 있어요. 서브 계정 수준에서 조건을 충족하는 Prospect AI 에이전트는 새로 찾은 잠재고객을 연락처에 저장하고, 선택한 파이프라인과 단계에 추가할 수 있어요. 이 설정은 해당 에이전트가 앞으로 찾는 잠재고객에게만 적용돼요.
+
+### 같은 에이전시 잠재고객을 서브 계정 여러 곳으로 마이그레이션할 수 있나요?
+네, 할 수 있어요. 에이전시 잠재고객은 마이그레이션한 뒤에도 남아 있어서, 나중에 프리미엄이 켜진 다른 서브 계정으로도 복사할 수 있어요.
+
+### 에이전시 잠재고객 발굴 프리미엄 구독을 서브 계정과 공유할 수 있나요?
+네, 할 수 있어요. 조건을 충족하는 에이전시 잠재고객 발굴 프리미엄 구독은 서브 계정 1개에 연결할 수 있어요. 서브 계정을 고르기 전에 현재 구독 연결 요건을 확인하세요.

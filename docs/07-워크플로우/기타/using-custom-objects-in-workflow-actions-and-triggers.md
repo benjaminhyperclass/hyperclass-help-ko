@@ -1,153 +1,96 @@
 ---
-
-번역일: 2026-04-09
-카테고리: 99-리커버리
+원문: /support/solutions/articles/155000004389-using-custom-objects-in-workflow-actions-and-triggers
+번역일: 2026-11-07
+카테고리: 07-워크플로우
 ---
 
-# 워크플로우 액션과 트리거에서 커스텀 오브젝트 활용하기
+# 워크플로우에서 사용자 지정 객체 트리거·액션 사용하기
 
-커스텀 오브젝트가 이제 워크플로우에서 사용할 수 있습니다! 이 새로운 기능을 통해 오브젝트별 맞춤 워크플로우를 만들 수 있어요. 커스텀 오브젝트 관련 트리거를 기반으로 워크플로우를 실행하고, 일련의 액션을 정의해서 프로세스를 자동화하세요.
-
----
-
-목차
-
-- [새로운 기능](#새로운-기능)
-- [작동 원리](#작동-원리)
-- [액션과 트리거](#액션과-트리거)
-  - [트리거](#트리거)
-  - [액션](#액션)
-- [활용 사례](#활용-사례)
-
----
+이제 워크플로우에서 사용자 지정 객체를 쓸 수 있어요. 객체별 워크플로우를 만들고, 사용자 지정 객체와 관련된 트리거로 워크플로우를 시작해서 일련의 액션으로 업무를 자동화할 수 있어요.
 
 ## 새로운 기능
 
-- **커스텀 오브젝트 워크플로우**: 커스텀 오브젝트(예: 매물, 자동차, 펜트샵 등)별 전용 워크플로우를 만들 수 있어요.
+- 사용자 지정 객체 워크플로우: 내가 만든 사용자 지정 객체(예: 주택, 자동차, 반려동물)에 맞는 워크플로우를 만들 수 있어요.
+- 사용자 지정 객체 이벤트로 워크플로우 시작: 사용자 지정 객체 전용 트리거로 업무를 자동화할 수 있어요.
+- 객체에 맞는 액션 실행: 사용자 지정 객체 레코드를 만들거나 업데이트하거나 비우는 등 객체 전용 액션을 설정하고, 다른 도구와 연결할 수 있어요.
 
-- **커스텀 오브젝트 이벤트로 워크플로우 실행**: 커스텀 오브젝트별 강력한 트리거로 프로세스를 자동화할 수 있어요.
+## 사용 방법
 
-- **타겟팅된 액션 실행**: 커스텀 오브젝트 레코드 생성, 업데이트, 필드 초기화 등 오브젝트별 액션을 정의하고 다른 도구와 연동하세요.
+1. **워크플로우** 랜딩 페이지로 이동한 뒤 **Create Workflow**(워크플로우 만들기)를 클릭하세요.
+2. 설정하려는 객체 기반 워크플로우(Object-based Workflow)를 선택하세요.
+3. 아래 트리거와 액션으로 워크플로우를 구성하세요.
 
----
+## 트리거와 액션
 
-## 작동 원리
+사용자 지정 객체 워크플로우에서는 아래 트리거와 액션을 쓸 수 있어요.
 
-- 워크플로우(Workflow) 메인 페이지로 가서 워크플로우 생성(Create Workflow)을 클릭하세요.
+### 트리거(Triggers)
 
-- 설정하려는 오브젝트 기반 워크플로우(Object-based Workflow)를 선택하세요.
+#### **Custom Object**(사용자 지정 객체)
 
-- 아래 트리거와 액션으로 워크플로우를 커스터마이징하세요.
+- **Home Created**(주택 생성됨)
+- **Home Changed**(주택 변경됨)
 
----
+#### **Events**(이벤트)
 
-## 액션과 트리거
+- **Inbound Webhook**(인바운드 웹훅)
 
-커스텀 오브젝트 워크플로우에서 사용할 수 있는 액션과 트리거는 다음과 같아요:
+### 액션(Actions)
 
-### 트리거
+#### **Custom Objects**(사용자 지정 객체)
 
-#### 커스텀 오브젝트(Custom Object)
+- **Create Home or Associated Record**(주택 또는 연결된 레코드 생성)
+- **Update Home or Associated Record**(주택 또는 연결된 레코드 업데이트)
+- **Clear fields of Home or Associated Record**(주택 또는 연결된 레코드의 필드 비우기)
+- **Add to Note (Notes)**(메모에 추가): 워크플로우에 등록된 사용자 지정 객체 레코드에 메모를 추가해요.
 
-- 매물 생성됨(Home Created)
+#### **Send Data**(데이터 전송)
 
-- 매물 변경됨(Home Changed)
+- **Custom Webhook**(커스텀 웹훅)
+- **Google Sheets**
 
-#### 이벤트(Events)
+#### **Internal**(내부)
 
-- 인바운드 웹훅(Inbound Webhook)
+- **If / Else**(조건 분기)
+- **Wait**(대기)
+- **Update Custom Value**(커스텀 값 업데이트)
+- **Go To**(이동)
+- **Date/Time Formatter**(날짜/시간 형식 변환)
+- **Number Formatter**(숫자 형식 변환)
+- **Add To Workflow**(워크플로우에 추가)
+- **Remove From Workflow**(워크플로우에서 제거)
+- **Array Functions**(배열 함수)
+- **Drip**(드립)
+- **Text Formatter**(텍스트 형식 변환)
+- **Custom Code**(커스텀 코드)
 
-### 액션
+#### **Workflow AI**(워크플로우 AI)
 
-#### 커스텀 오브젝트(Custom Objects)
+- **GPT powered by OpenAI**(OpenAI 기반 GPT)
 
-- 매물 또는 관련 레코드 생성(Create Home or Associated Record)
+## 사용 사례
 
-- 매물 또는 관련 레코드 업데이트(Update Home or Associated Record)
+한 부동산 에이전시가 주택 매물을 관리하려고 "주택"이라는 사용자 지정 객체를 쓰고 있어요. 주택 상태 필드가 "종료됨"(매물이 팔렸다는 뜻)으로 바뀌면 레코드 업데이트와 판매 데이터 기록 같은 다음 작업을 자동으로 처리하려고 해요.
 
-- 매물 또는 관련 레코드 필드 초기화(Clear fields of Home or Associated Record)
+트리거:
 
-#### 데이터 전송(Send Data)
+- **Object Changed**(오브젝트 변경됨): "주택" 객체의 주택 상태 필드가 "종료됨"으로 바뀌면 워크플로우를 시작해요.
+워크플로우 액션:
 
-- 커스텀 웹훅(Custom Webhook)
+- **Update Associated Object**(연결된 오브젝트 업데이트): 판매된 매물에 연결된 오브젝트(예: "에이전트")를 업데이트해요.
+- **Add a Row to Google Sheets**(Google Sheets에 행 추가): Google Sheets 연동을 사용해, 추적과 보고용 공용 문서에 판매 내역을 기록해요.
+- **Clear a Field in the Object or Associated Object**(오브젝트 또는 연결된 오브젝트의 필드 비우기): 더 이상 필요 없는 임시 메모와 내부 댓글 커스텀 필드를 비워요.
 
-- 구글 시트(Google Sheets)
-
-#### 내부(Internal)
-
-- 조건 분기(If / Else)
-
-- 대기(Wait)
-
-- 커스텀 값 업데이트(Update Custom Value)
-
-- 이동(Go To)
-
-- 날짜/시간 포맷터(Date/Time Formatter)
-
-- 숫자 포맷터(Number Formatter)
-
-- 워크플로우 추가(Add To Workflow)
-
-- 워크플로우 제거(Remove From Workflow)
-
-- 배열 함수(Array Functions)
-
-- 드립(Drip)
-
-- 텍스트 포맷터(Text Formatter)
-
-- 커스텀 코드(Custom Code)
-
-#### 워크플로우 AI(Workflow AI)
-
-- OpenAI 기반 GPT
-
----
-
-## 활용 사례
-
-부동산 중개소에서 "매물(Home)"이라는 커스텀 오브젝트로 매물 정보를 관리하고 있습니다. 매물 상태 필드가 "완료(Closed)"로 표시되면(매물이 팔렸다는 의미), 레코드 업데이트와 영업 데이터 기록을 자동화하고 싶어해요.
-
-**트리거:**
-
-- 오브젝트 변경됨(Object Changed): "매물" 오브젝트의 매물 상태 필드가 "완료"로 변경될 때 워크플로우를 실행합니다.
-
-**워크플로우 액션:**
-
-- 관련 오브젝트 업데이트(Update Associated Object): 팔린 매물과 연결된 관련 오브젝트(예: "담당자")를 업데이트합니다.
-
-- 구글 시트에 행 추가(Add a Row to Google Sheets): 구글 시트 연동을 사용해서 중앙 집중식 문서에 영업 내역을 기록하여 추적과 보고를 합니다.
-
-- 오브젝트 또는 관련 오브젝트 필드 초기화(Clear a Field in the Object or Associated Object): 더 이상 필요하지 않은 임시 메모와 내부 코멘트 커스텀 필드를 초기화합니다.
-
-![커스텀 오브젝트 워크플로우 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038143416/original/FYosh0xBXvwWJa4Rm8jPBWM8rW6xLW7bFw.jpeg?1733919867)
-
-![워크플로우 액션 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038143418/original/jc9sYbxjs6FjOh5oowlIJ3ZY5MKslMQDbA.jpeg?1733919867)
-
-![커스텀 오브젝트 필드 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038143417/original/2vxYX2GNKd0aEHop-1NDAAxpafbrLklkmg.jpeg?1733919867)
-
----
+![워크플로우 설정 화면 예시 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038143416/original/FYosh0xBXvwWJa4Rm8jPBWM8rW6xLW7bFw.jpeg?1733919867)
+![워크플로우 설정 화면 예시 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038143418/original/jc9sYbxjs6FjOh5oowlIJ3ZY5MKslMQDbA.jpeg?1733919867)
+![워크플로우 설정 화면 예시 3](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038143417/original/2vxYX2GNKd0aEHop-1NDAAxpafbrLklkmg.jpeg?1733919867)
 
 ## 자주 묻는 질문
 
-**커스텀 오브젝트 워크플로우로 다른 플랫폼에 데이터를 전송할 수 있나요?**
+### 사용자 지정 객체 워크플로우로 다른 플랫폼에 데이터를 보낼 수 있나요?
 
-네. 웹훅 같은 액션을 사용해서 커스텀 오브젝트 레코드 데이터를 서드파티 도구로 전송할 수 있어요. 보고서 작성, 재고 시스템과 동기화, 커스텀 오브젝트 이벤트 기반으로 외부 서비스를 실행하는 데 특히 유용해요.
+네, 보낼 수 있어요. 웹훅 같은 액션을 쓰면 사용자 지정 객체 레코드의 데이터를 외부 도구로 보낼 수 있어요. 리포트 작성, 재고 시스템과의 동기화, 사용자 지정 객체 이벤트에 따른 외부 서비스 실행에 특히 유용해요.
 
-**워크플로우에서 사용하기 전에 커스텀 오브젝트를 먼저 만들어야 하나요?**
+### 워크플로우에서 쓰기 전에 사용자 지정 객체를 먼저 만들어야 하나요?
 
-네. 워크플로우 트리거나 액션에서 사용하려면 먼저 커스텀 오브젝트를 만들고 필드를 정의해야 해요.
-
----
-
-## 관련 문서
-
-- 커스텀 오브젝트 시작하기
-- 커스텀 오브젝트 레코드 생성 및 업데이트
-- 커스텀 오브젝트 연관관계
-- 커스텀 오브젝트 생성 및 편집
-
----
-*원문 최종 수정: Wed, 29 Oct, 2025 at 11:52 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+네, 먼저 만들어야 해요. 사용자 지정 객체를 만들고 필드를 정의해야 워크플로우의 트리거나 액션에서 쓸 수 있어요.

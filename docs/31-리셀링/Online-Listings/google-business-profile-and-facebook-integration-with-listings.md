@@ -1,88 +1,69 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 31-리셀링 > Online Listings
+원문: /support/solutions/articles/155000004144-google-business-profile-and-facebook-integration-with-listings
+번역일: 2026-11-07
+카테고리: 31-리셀링
 ---
 
-# 리스팅과 구글 비즈니스 프로필 및 페이스북 연동
+# 리스팅에서 Google 비즈니스 프로필과 Facebook 페이지 연결하기
 
-리스팅(Listings) 플랫폼에서 바로 구글 비즈니스 프로필(Google Business Profile)과 페이스북 페이지를 연결하세요. 더 이상 외부 대시보드를 오갈 필요가 없습니다. 이러한 퍼블리셔를 하이퍼클래스 내에서 연결하면, 모든 로케이션의 운영시간, 주소 데이터, 사진, 리뷰를 완벽하게 동기화하고 로컬 SEO를 개선하며, 클라이언트를 위한 매끄러운 화이트라벨 경험을 유지할 수 있습니다.
+**리스팅** 화면에서 Google 비즈니스 프로필과 Facebook 페이지를 바로 연결할 수 있어요. 외부 대시보드를 오갈 필요가 없어요. 하이퍼클래스 안에서 연결해 두면 각 위치의 영업시간, 주소, 사진, 리뷰가 같은 내용으로 유지돼요. 로컬 SEO에도 도움이 되고, 고객에게는 화이트라벨 환경을 그대로 보여 줄 수 있어요.
 
----
+## GBP와 Facebook 연결 설정하기
 
-**목차**
+하이퍼클래스의 **리스팅**(Listings) 대시보드에서 Google 비즈니스 프로필(GBP)과 Facebook 페이지를 바로 연결할 수 있어요. 외부 서비스에 따로 로그인하지 않아도 돼요. 두 계정을 한곳에서 관리하면서 비즈니스 정보, 리뷰, 업데이트 내용을 같게 유지할 수 있어요.
 
-- [GBP 및 페이스북 연동 설정하기](#gbp-및-페이스북-연동-설정하기)
-- [1단계: 사전 요구사항 및 권한](#1단계-사전-요구사항-및-권한)
-- [2단계: 리스팅으로 이동](#2단계-리스팅으로-이동)
-- [3단계: 구글 비즈니스 프로필 연결](#3단계-구글-비즈니스-프로필-연결)
-- [4단계: 페이스북 페이지 연결](#4단계-페이스북-페이지-연결)
-- [자주 묻는 질문](#자주-묻는-질문)
+### 1단계: 사전 준비와 권한 확인
 
----
+연결하기 전에 아래 조건을 확인하세요.
 
-# GBP 및 페이스북 연동 설정하기
+- 연결하려는 Google 비즈니스 프로필의 관리자(Admin) 또는 소유자(Owner) 권한
+- 연결하려는 Facebook 페이지의 관리자 권한
+- 연결하는 동안 브라우저의 팝업 차단 해제
+- **소셜 플래너**에서 GBP나 Facebook을 이미 연결했다면, **리스팅**이 같은 토큰을 자동으로 다시 사용해요. 다시 인증하지 않아도 돼요.
 
-하이퍼클래스의 리스팅 대시보드에서 바로 구글 비즈니스 프로필(GBP)과 페이스북 페이지를 연결하는 것이 그 어느 때보다 쉬워졌습니다. 이 간소화된 과정은 외부 로그인의 필요성을 없애고, 한 곳에서 두 계정을 모두 관리하며 비즈니스 세부 정보, 리뷰, 업데이트가 완벽하게 동기화되도록 보장합니다.
+### 2단계: 리스팅으로 이동하기
 
-#### 1단계: 사전 요구사항 및 권한 확인
+1. 하이퍼클래스 대시보드의 왼쪽 메뉴에서 **평판 관리**(Reputation)를 클릭하세요.
+2. **리스팅**을 클릭해 리스팅 대시보드를 여세요.
+3. **내 계정** 아래에서 **Your Entities are not set up on Google and Facebook yet. Link Now**(Google과 Facebook에 아직 비즈니스가 설정되지 않았어요. 지금 연결하기) 링크를 클릭하세요.
 
-연결하기 전에 다음 요구사항을 충족하는지 확인하세요:
+![내 계정 아래의 연결 안내 링크](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049096682/original/n26IvYgwDCpVunHOBEp25kXD2JIJag1XTw.png?1751294294)
 
-- 연결하려는 구글 비즈니스 프로필에 대한 관리자(Admin) 또는 소유자(Owner) 역할
-- 연결하려는 페이지에 대한 페이스북 페이지 관리자 권한
-- 세션 중 브라우저 팝업 차단기 비활성화
-- 이미 소셜 플래너(Social Planner)에서 GBP나 페이스북을 연결했다면, 리스팅에서 같은 토큰을 자동으로 재사용합니다—다시 인증할 필요 없음
+### 3단계: Google 비즈니스 프로필 연결하기
 
-#### 2단계: 리스팅으로 이동
+1. **Google 비즈니스 프로필 연결** 옆의 **연결** 버튼을 클릭하세요.
+2. Google 인증 팝업이 나타나요.
+3. GBP를 관리하는 Google 계정으로 로그인하고, 안내에 따라 접근 권한을 허용하세요.
 
-- 하이퍼클래스 대시보드에서 좌측 메뉴의 평판 관리(Reputation)로 이동
-- 리스팅(Listings)을 클릭하여 리스팅 대시보드를 엽니다
-- Your Account 아래에서 **"Your Entities are not set up on Google and Facebook yet. Link Now"**라고 적힌 링크를 클릭
+![Google 비즈니스 프로필 연결 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049096892/original/zakByHXszDwLYO-aq6IsNItrS0PVEvBUFg.png?1751294463)
 
-![리스팅 연동 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049096682/original/n26IvYgwDCpVunHOBEp25kXD2JIJag1XTw.png?1751294294)
+### 4단계: Facebook 페이지 연결하기
 
-#### 3단계: 구글 비즈니스 프로필 연결
+1. **Facebook 페이지 연결** 옆의 **연결** 버튼을 클릭하세요.
+2. Facebook 권한 팝업이 열려요. 연결할 Facebook 페이지를 정확히 선택하세요.
+3. 권한 요청을 모두 수락하고 **계속**을 클릭하면 설정이 끝나요.
 
-- Connect Google Business Profile 옆의 Connect 버튼을 클릭
-- 구글 인증 팝업이 나타납니다
-- GBP를 관리하는 구글 계정으로 로그인하고 액세스 권한 부여 안내를 따라하세요
+![Facebook 페이지 연결 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049097288/original/Xfm_e-z8hv2NPmCPkwUCY-3uCfo14PTvqw.png?1751294771)
 
-![구글 비즈니스 프로필 연결 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049096892/original/zakByHXszDwLYO-aq6IsNItrS0PVEvBUFg.png?1751294463)
+### 5단계: 연결 상태 확인하기
 
-#### 4단계: 페이스북 페이지 연결
+Google 비즈니스 프로필과 Facebook 페이지를 모두 연결한 뒤 **리스팅** 대시보드로 돌아오세요. 두 게시처 옆에 초록색 **연결됨** 배지가 보이면 연동이 잘 된 거예요.
 
-- Connect Facebook Page 옆의 Connect 버튼을 클릭
-- 페이스북 권한 팝업이 열립니다. 연결하려는 올바른 페이스북 페이지를 선택하세요
-- 모든 권한 요청을 승인하고 Continue를 클릭하여 설정을 완료하세요
-
-![페이스북 페이지 연결 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049097288/original/Xfm_e-z8hv2NPmCPkwUCY-3uCfo14PTvqw.png?1751294771)
-
-#### 5단계: 연결 상태 확인
-
-구글 비즈니스 프로필과 페이스북 페이지를 모두 연결한 후, 리스팅 대시보드로 돌아가세요. 이제 두 퍼블리셔 옆에 녹색 "Connected" 배지가 표시되어 성공적인 연동을 확인할 수 있습니다.
-
-![연결 완료 상태 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049097633/original/ArJreuEEujJjJYcScswm0mAe7hMH0uJSAA.png?1751294986)
-
----
+![두 게시처 옆에 표시된 연결됨 배지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049097633/original/ArJreuEEujJjJYcScswm0mAe7hMH0uJSAA.png?1751294986)
 
 ## 자주 묻는 질문
 
-**Q: 소셜 플래너도 함께 연결되나요?**  
-네. 하이퍼클래스는 하나의 OAuth 토큰을 공유하므로, 리스팅에서 연결하면 소셜 플래너도 자동으로 인증됩니다.
+### 이렇게 연결하면 소셜 플래너도 같이 연결되나요?
+네. 하이퍼클래스는 OAuth 토큰 하나를 함께 쓰기 때문에, **리스팅**에서 연결하면 **소셜 플래너**도 자동으로 승인돼요.
 
-**Q: 여러 페이스북 페이지를 연결할 수 있나요?**  
-각 로케이션은 하나의 페이스북 페이지와 하나의 GBP를 지원합니다.
+### Facebook 페이지를 여러 개 연결할 수 있나요?
+각 위치마다 Facebook 페이지 1개와 GBP 1개만 연결할 수 있어요.
 
-**Q: 소셜 플래너 게시물이 내 GBP에도 나타나나요?**  
-각 게시물을 예약할 때 GBP를 대상으로 포함한 경우에만 나타납니다.
+### 소셜 플래너에서 올린 게시글이 GBP에도 올라가나요?
+게시글을 예약할 때 게시 대상에 GBP를 포함한 경우에만 올라가요.
 
-**Q: 연결을 제거하면 어떻게 되나요?**  
-리스팅이 즉시 동기화를 중단하고 다시 연결할 때까지 해당 퍼블리셔를 "Action Required"로 표시합니다.
+### 연결을 제거하면 어떻게 되나요?
+**리스팅**이 바로 동기화를 멈추고, 다시 연결할 때까지 해당 게시처를 **조치 필요**로 표시해요.
 
-**Q: 에이전시 사용자가 클라이언트의 페이스북에 액세스해야 하나요?**  
-아니요. 관리자 권한을 가진 로케이션 레벨 사용자가 직접 연결을 완료할 수 있습니다.
-
----
-*원문 최종 수정: Mon, 29 Dec, 2025 at 1:58 PM*  
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### 에이전시 사용자도 고객의 Facebook에 접근할 수 있어야 하나요?
+아니요. 관리자 권한이 있는 서브 계정 사용자가 직접 연결을 마칠 수 있어요.

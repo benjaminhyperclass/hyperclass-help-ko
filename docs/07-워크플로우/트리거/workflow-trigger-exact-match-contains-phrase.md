@@ -1,21 +1,20 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 07-워크플로우 > 트리거
+원문: /support/solutions/articles/48001142886-workflow-trigger-exact-match-contains-phrase
+번역일: 2026-11-07
+카테고리: 07-워크플로우
 ---
 
-# 워크플로우 트리거 - 정확히 일치 및 문구 포함
+# 워크플로우 트리거 — Exact Match & Contains Phrase(정확히 일치 및 문구 포함)
 
-참고: 이제 워크플로우(Workflows)가 모든 계정에서 사용 가능하므로, 트리거(Triggers)와 캠페인(Campaigns)에서 할 수 있는 모든 작업(그리고 더 많은 기능!)을 하나의 빌더에서 처리할 수 있습니다! 워크플로우에 대해 자세히 알아보기
+워크플로우 트리거에서 **Exact Match**(정확히 일치)와 **Contains Phrase**(문구 포함)를 어떻게 쓰는지 영상으로 보여 주는 문서예요.
 
-### 
+{% hint style="info" %}
+이제 모든 계정에서 워크플로우를 쓸 수 있어요. 트리거와 캠페인으로 하던 일을 하나의 빌더에서 모두 할 수 있고, 그 밖의 기능도 더 쓸 수 있어요.
+{% endhint %}
 
-### 대화 플로우가 긍정적 의도와 부정적 의도를 어떻게 판단하는지 궁금하신가요?
+## 대화 흐름이 긍정·부정 의도로 보는 항목이 궁금하다면
 
-### [부정적 의도 목록](https://doc.clickup.com/8631005/d/h/87cpx-65704/dc89ea9523e4b5a)
+대화 흐름(dialogue flow)이 긍정 의도와 부정 의도로 보는 항목은 아래 목록에서 볼 수 있어요.
 
-### [긍정적 의도 목록](https://doc.clickup.com/8631005/d/h/87cpx-65684/cb09b848cb001ac)
-
----
-*원문 최종 수정: 2025년 4월 8일 화요일 오후 3:24*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+- [부정 의도 목록](https://doc.clickup.com/8631005/d/h/87cpx-65704/dc89ea9523e4b5a)
+- [긍정 의도 목록](https://doc.clickup.com/8631005/d/h/87cpx-65684/cb09b848cb001ac)

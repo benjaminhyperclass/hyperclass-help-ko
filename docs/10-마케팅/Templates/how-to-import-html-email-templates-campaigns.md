@@ -1,74 +1,229 @@
 ---
-번역일: 2026-04-07T00:00:00.000Z
-카테고리: 10-마케팅 > Templates
+원문: /support/solutions/articles/48001215400-how-to-import-html-email-templates-campaigns
+번역일: 2026-11-06
+카테고리: 10-마케팅
 ---
 
-# HTML 이메일 템플릿/캠페인 가져오기
+# HTML 이메일 템플릿·캠페인 가져오기
 
-## HTML 이메일 템플릿/캠페인 가져오기
+이미 만들어 둔 HTML 이메일을 하이퍼클래스로 가져와 템플릿이나 캠페인으로 쓰는 방법을 안내해요. **코드 편집기**에 HTML 코드를 붙여 넣고 미리보기로 확인한 뒤 저장하고 테스트하면 돼요.
 
-다른 플랫폼에서 이메일 템플릿(Email Templates)을 수동으로 만드는 것에 지치셨나요? 아니면 자주 사용하는 검증된 템플릿들이 있으신가요?
+기존 이메일 디자인을 처음부터 다시 만들지 않고 그대로 쓸 수 있어요. 브랜딩을 일관되게 유지하고, 이메일 제작 시간을 줄이고, 이메일 마케팅을 한 곳에서 관리할 수 있어요.
 
-HTML 이메일 빌더(Email Builder)를 사용하면 다양한 시스템에서 기존 이메일 템플릿을 손쉽게 가져올 수 있습니다. 이 편리한 기능을 통해 시간과 노력을 절약하고, 성과가 좋은 이메일을 활용하면서 모든 이메일 캠페인(Email Campaign)을 하나의 통합 플랫폼에서 관리할 수 있습니다.
+---
 
-***
+## HTML 이메일 가져오기란?
 
-**이 가이드에서 다루는 내용:**
+HTML 이메일 가져오기는 이미 가지고 있는 HTML 이메일 코드를 하이퍼클래스의 **이메일 빌더**로 가져오는 일이에요. 디자인 요소를 하나씩 배치해 이메일을 다시 만드는 대신, **코드 편집기**에서 HTML 구조와 스타일을 직접 다루게 돼요.
 
-[**HTML 이메일 템플릿/캠페인 사용법**](how-to-import-html-email-templates-campaigns.md#html-이메일-템플릿캠페인-사용법)
+다른 플랫폼에서 이메일 콘텐츠를 옮겨 올 때, 직접 코딩한 디자인을 다시 쓸 때, 캠페인 전반에서 브랜딩을 일관되게 유지할 때 특히 유용해요.
 
-[**템플릿용**](how-to-import-html-email-templates-campaigns.md#템플릿용)
+HTML 이메일은 두 곳으로 가져올 수 있어요.
 
-[**캠페인용**](how-to-import-html-email-templates-campaigns.md#캠페인용)
+- **이메일 템플릿**: 앞으로 만들 캠페인의 시작점으로 쓸 수 있는, 재사용 가능한 이메일 디자인을 만들어요.
+- **이메일 캠페인**: 특정 수신자에게 보내거나 예약할 이메일 메시지를 만들고 내용을 수정해요.
 
-**관련 도움말 문서**
+이미 이메일의 소스 코드가 있다면 **코드 편집기**로 HTML 내용을 직접 다룰 수 있어서 가장 알맞아요.
 
-## HTML 이메일 템플릿/캠페인 사용법
+---
 
-`Marketing(마케팅) > Email Builder(이메일 빌더)` 메뉴로 이동해야 합니다.
+## HTML 이메일을 가져오면 좋은 점
 
-## 템플릿용
+기존 HTML 이메일을 가져오면 이메일 마케팅 작업이 간단해지고, 이미 만들어 둔 디자인의 구조와 모양을 최대한 그대로 가져갈 수 있어요.
 
-* Create New Template(새 템플릿 만들기)을 클릭하세요.
-* 드롭다운에서 3가지 옵션이 나타납니다. 그 중 Blank Template(빈 템플릿) 옵션을 선택하세요.
+- 시간 절약: 기존 HTML 이메일 디자인을 요소 하나하나 다시 만들지 않고 그대로 써요.
+- 브랜드 일관성 유지: 이메일 클라이언트가 지원하는 범위 안에서 의도한 색상, 레이아웃, 이미지, 글꼴을 유지해요.
+- 이메일 이전 간소화: 다른 플랫폼의 이메일 디자인을 HTML 소스 코드로 하이퍼클래스에 가져와요.
+- HTML 직접 수정: **코드 편집기**에서 이메일 구조와 스타일을 바로 고쳐요.
+- 재사용 가능한 템플릿 만들기: 가져온 HTML을 템플릿으로 저장해 이후 이메일 마케팅 캠페인에 써요.
+- 캠페인 제작 간소화: 빈 디자인에서 시작하지 않고 기존 HTML 콘텐츠로 캠페인을 만들어요.
 
-![빈 템플릿 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48226657108/original/DUIoTUflyX8ClopHJFi0_IQ8t9RxxYcVXw.png?1652877167)
+---
 
-3. 팝업 창이 열리면서 Design Editor(디자인 에디터, 드래그 앤 드롭 빌더)와 Code Editor(코드 에디터, HTML 빌더) 옵션이 표시됩니다. Code Editor(코드 에디터)를 선택하세요.
+## HTML 코드 편집기
 
-![코드 에디터 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48226657101/original/VpAO0BKOrkhZl8C-a-sCEGa3Lb-iiX7_xA.png?1652877165)
+**코드 편집기**에서는 끌어다 놓는 요소에만 의존하지 않고 HTML로 이메일 콘텐츠를 만들고 수정할 수 있어요. 어떤 편집 방식이 있는지 알아 두면 이메일 디자인에 맞는 방법을 골라 불필요한 재작업을 피할 수 있어요.
 
-4. 코드 에디터가 열리면 에디터 영역에 HTML 코드를 붙여넣어서 미리보기를 확인하세요.
+하이퍼클래스에서는 이메일 콘텐츠를 만들고 수정하는 방법이 여러 가지예요.
 
-![HTML 코드 입력](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48227946898/original/QRTq9HNC8dC7uBoDDCRRwCHk_7ZkPSZUZg.png?1653391383)
+- **코드 편집기**: 완성된 HTML 이메일 코드가 있고 이메일의 소스를 직접 고쳐야 할 때 가장 알맞아요.
+- **디자인 에디터**: 텍스트, 이미지, 버튼, 레이아웃 같은 요소를 끌어다 놓으며 눈으로 보면서 편집하고 싶을 때 알맞아요.
+- **Code Element**(코드 요소): **디자인 에디터**로 만든 이메일의 특정 부분에 사용자 지정 HTML이나 CSS를 넣을 수 있어요.
+- **Plain Text Editor**(일반 텍스트 편집기): 복잡한 시각 레이아웃이 필요 없는 텍스트 중심 이메일에 알맞아요.
 
-## 캠페인용
+예를 들어 다른 플랫폼에서 만든 HTML 뉴스레터 전체가 있다면 **코드 편집기**를 쓰세요. 시각적으로 만든 이메일에 작은 HTML 구성 요소만 추가하고 싶다면 **Code Element**를 쓰는 편이 좋아요.
 
-* Create Campaign(캠페인 만들기)을 클릭하세요.
+{% hint style="info" %}
+이메일 클라이언트마다 HTML과 CSS를 지원하는 범위가 달라요. HTML 디자인을 가져왔다고 해서 모든 요소가 모든 받은 편지함에서 똑같이 보인다는 보장은 없어요.
+{% endhint %}
 
-![캠페인 만들기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48226654455/original/iDskEJ1bkj0FdIh4SmY9ZG1Ivb0IdOdZnA.png?1652876655)
+이메일에 작은 HTML 구성 요소를 추가하는 방법은 [이메일 빌더의 코드 요소](../Email-Builder-Capabilities/code-element-in-email-builder.md) 문서를 참고하세요.
 
-2. 모든 템플릿과 빈 캠페인 목록이 표시되는 화면이 나타납니다. Blank Campaign(빈 캠페인) 옵션을 선택해서 진행하세요.
+---
 
-![빈 캠페인 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48226654461/original/9P2s-_tBazYpefmFw8LrZ0SbG3uJH0ZXyg.jpeg?1652876655)
+## 이메일 템플릿과 이메일 캠페인의 차이
 
-3. 팝업 창이 열리면서 Design Editor(디자인 에디터, 드래그 앤 드롭 빌더)와 Code Editor(코드 에디터, HTML 빌더) 옵션이 표시됩니다. Code Editor(코드 에디터)를 선택하세요.
+하이퍼클래스에서 템플릿과 캠페인은 쓰임새가 달라요. HTML을 가져오기 전에 알맞은 쪽을 고르면, 이메일을 재사용할 디자인으로 저장할지 특정 마케팅 캠페인용으로 준비할지 정할 수 있어요.
 
-![코드 에디터 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48226654460/original/OYRrV9pbP7ORBuRdGG6Rs3M-NYu74VyiOQ.png?1652876655)
+**이메일 템플릿**
 
-4. 코드 에디터가 열리면 에디터 영역에 HTML 코드를 붙여넣어서 미리보기를 확인하세요.
+템플릿은 브랜딩, 콘텐츠, 서식, 디자인 요소를 담아 재사용할 수 있는 이메일 레이아웃이에요.
 
-![HTML 코드 입력](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48227946582/original/TMhl4OdGO7r9304UB9AYpEHOMSdAUQ1e-A.png?1653391333)
+다음과 같을 때 템플릿을 쓰세요.
 
-#### 도움말 문서
+- 비슷한 레이아웃의 이메일을 자주 보낼 때
+- 뉴스레터나 프로모션 이메일 디자인을 다시 쓰고 싶을 때
+- 앞으로 만들 캠페인의 일관된 시작점이 필요할 때
+- 브랜드가 반영된 이메일 레이아웃을 유지하고 싶을 때
 
-* 이메일 캠페인/템플릿 미리보기 및 테스트하기
-* 이메일 템플릿 vs. 이메일 캠페인
-* 이메일 빌더 개요
-* 이메일 빌더에서 RSS 블록 사용하기
-* [Mailchimp에서 이메일 템플릿 가져오기](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/10-%EB%A7%88%EC%BC%80%ED%8C%85/Templates/importing-and-editing-mailchimp-email-templates-in-the-highlevel-design-editor.md)
-* [ActiveCampaign에서 이메일 템플릿 가져오기](how-to-import-email-template-s-from-activecampaign.md)
+**이메일 캠페인**
 
-***
+캠페인은 특정 수신자에게 보내거나 예약할 이메일 메시지예요.
 
-_원문 최종 수정: Wed, 14 Jun, 2023 at 1:45 PM_ _Hyperclass 사용 가이드 — hyperclass.ai_
+다음과 같을 때 캠페인을 쓰세요.
+
+- 일회성 마케팅 공지를 준비할 때
+- 선택한 연락처에게 프로모션 이메일을 보내고 싶을 때
+- 특정 캠페인에 쓸 기존 HTML 이메일이 준비되어 있을 때
+- 수신자와 발송 설정을 지정해야 할 때
+
+예시: 매달 다시 쓸 사용자 지정 HTML 뉴스레터 레이아웃이 있다면 템플릿으로 가져오세요. 곧 있을 프로모션 공지용 HTML 이메일이 있다면 캠페인으로 바로 가져올 수 있어요.
+
+자세한 내용은 [이메일 템플릿과 이메일 캠페인의 차이](email-templates-vs-email-campaigns.md) 문서를 참고하세요.
+
+---
+
+## HTML 이메일 템플릿 가져오기
+
+HTML 이메일을 템플릿으로 가져오면 재사용 가능한 디자인을 하이퍼클래스에 저장할 수 있어요. 한 번 만들어 두면 이후 캠페인의 바탕이 되어, 자주 쓰는 이메일 레이아웃을 다시 만드는 시간을 줄여 줘요.
+
+다음 단계를 따라 HTML 이메일 템플릿을 가져오세요.
+
+1. 하이퍼클래스 서브 계정에 로그인하세요.
+2. **마케팅 > 이메일 > 템플릿**으로 이동하세요.
+3. **+ 신규**를 클릭해 이메일 템플릿 만들기를 시작하세요.
+
+   ![신규 버튼 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083317655/original/unYNeQsXhPS26rPJpsH7JLrKVuYVKwi7Sw.png?1791985260)
+4. 처음부터 새 이메일 템플릿을 만드는 옵션을 선택하세요. 템플릿 선택 화면이 나오면 빈 템플릿 옵션을 선택하세요.
+
+   ![빈 템플릿 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083317850/original/8xOc55q9LKTLZcqQTtryMVx7uCv_JqqUlQ.png?1791985356)
+5. 편집기를 선택하는 창이 나오면 **Edit with Vibe Editor**(Vibe 에디터로 편집)를 선택해 HTML을 직접 다루세요.
+
+   ![편집기 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083318769/original/otzLeWvYW_KxSS-2x9vSGaCT4M6_G6n-ZA.png?1791985716)
+6. **코드 편집기**가 열리면 가지고 있는 HTML 코드를 HTML 편집 영역에 붙여 넣으세요.
+
+   ![HTML 코드 붙여 넣기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083318996/original/LJZ6m76qmyuDOYMXNQiyJ60Rv3yZ64YAdw.png?1791985809)
+7. 렌더링된 이메일 미리보기에서 레이아웃, 텍스트, 이미지, 스타일이 의도한 대로 보이는지 확인하세요.
+
+   ![렌더링된 이메일 미리보기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083319093/original/8gsGdc16fZ5D9FTiZhOam2RIGeZe62T1AQ.png?1791985859)
+8. 필요하면 HTML 코드를 수정하고, 수정한 뒤에는 미리보기를 다시 확인하세요.
+9. **Save Template**(템플릿 저장)을 클릭하거나 화면에 보이는 저장 버튼을 눌러 가져온 이메일을 저장하세요.
+
+   ![템플릿 저장](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083319209/original/nKeZ3QGpdzD2jaaeZyymz-i2viTp1WbljQ.png?1791985922)
+
+이제 가져온 HTML 템플릿을 확인하고 테스트할 수 있고, 앞으로 이메일 캠페인을 만들 때 쓸 수 있어요.
+
+---
+
+## HTML 이메일 캠페인 가져오기
+
+HTML을 이메일 캠페인으로 바로 가져오면 기존 이메일 디자인을 특정 대상이나 마케팅 이벤트에 맞게 준비할 수 있어요. 완성된 HTML 콘텐츠가 이미 있고, 재사용 템플릿을 따로 만들지 않고 바로 발송 준비를 하고 싶을 때 편해요.
+
+다음 단계를 따라 HTML 이메일 캠페인을 가져오세요.
+
+1. 하이퍼클래스 서브 계정에 로그인하세요.
+2. **마케팅 > 이메일 > 캠페인**으로 이동하세요.
+3. **+ 신규**를 클릭해 캠페인 만들기를 시작하세요.
+4. 저장된 템플릿에서 시작하지 않고 빈 캠페인을 만드는 옵션을 선택하세요.
+5. 편집기를 선택하는 창이 나오면 **코드 편집기**를 선택하세요.
+6. 가지고 있는 HTML 콘텐츠를 **코드 편집기**에 붙여 넣으세요.
+
+   ![코드 편집기에 HTML 붙여 넣기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083319402/original/gcE75eqyZ94Dpt21S4tj6cPQT7lu04I9MQ.png?1791986029)
+7. 렌더링된 미리보기에서 이메일이 의도한 대로 보이는지 확인하세요.
+8. 텍스트, 링크, 이미지, 스타일 등 필요한 부분을 HTML에서 수정하세요.
+9. 화면에 보이는 저장 버튼으로 캠페인을 저장하세요.
+10. **Send or Schedule**(보내기 또는 예약)로 넘어가기 전에, 가져온 이메일을 미리보기와 테스트로 확인하세요.
+
+    ![발송 전 미리보기와 테스트](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083319834/original/Oe7YDHeeRfbsrACwITruAm22zgdW9FmHnA.png?1791986251)
+11. 캠페인 준비가 끝나면 발신자 정보, 수신자, 발송 설정을 지정하고, 보내기 전에 캠페인을 한 번 더 검토하세요.
+
+    ![발신자·수신자·발송 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083320029/original/4FknAw9p8GAl2TeSpLkcAnqakb3ZzcAFYQ.png?1791986325)
+
+{% hint style="info" %}
+캠페인에 HTML을 가져온다고 해서 이메일이 자동으로 발송되지는 않아요. 캠페인의 발송 또는 예약 과정은 따로 완료해야 해요.
+{% endhint %}
+
+발송 방법은 [시작하기 – 이메일 캠페인 시작하기](../../01-시작하기/기본-설정/getting-started-launch-an-email-campaign.md) 문서에서 자세히 볼 수 있어요.
+
+---
+
+## 가져온 HTML 이메일 미리보기와 테스트
+
+가져온 HTML 이메일을 미리 보면, 수신자가 받기 전에 레이아웃이나 서식 문제를 찾을 수 있어요. 직접 코딩한 이메일은 이메일 클라이언트마다 HTML, CSS, 이미지 등을 다르게 해석할 수 있어서 테스트가 특히 중요해요.
+
+1. **이메일 빌더** 오른쪽 위에서 **미리보기**를 클릭하세요.
+2. **데스크톱**, **태블릿**, **모바일** 보기를 오가며 레이아웃을 확인하세요.
+3. 서식, 이미지, 버튼, 텍스트 정렬, 여백을 확인하세요.
+
+   ![데스크톱·태블릿·모바일 미리보기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083322464/original/Ogb5AATaZrQANcBSRBLbDpLMU8H2MkChVg.png?1791987170)
+
+### 테스트 이메일 보내기
+
+1. **미리보기** 옆의 점 세 개 메뉴를 클릭하세요.
+2. **테스트 이메일**을 선택하세요.
+3. 테스트 이메일에 필요한 정보를 입력하세요.
+
+   - **발신자 이메일**
+   - **Sender Name**(발신자 이름)
+   - **Receiver Email**(수신자 이메일)
+   - **Preview Text**(미리보기 텍스트)
+   - **이메일 제목**
+4. **테스트 이메일 전송**을 클릭하세요.
+
+   ![테스트 이메일 전송](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083322591/original/nArdFlu7T7tahxMr3OwwnQJStReYsoia0A.png?1791987215)
+5. 받은 편지함에서 테스트 이메일을 열어 내용을 확인하세요.
+
+---
+
+## 가져온 HTML 이메일 문제 해결
+
+이메일 클라이언트마다 HTML과 CSS 기능을 해석하는 방식이 달라서, 가져온 HTML 이메일은 손볼 부분이 생길 수 있어요. 흔한 표시 문제의 원인을 알면 수신자에게 가기 전에 디자인을 고칠 수 있어요.
+
+- 이미지가 표시되지 않아요: 이미지 URL이 올바르고 누구나 접근할 수 있는지 확인하세요. HTTPS 이미지 URL을 쓰세요.
+- 이메일 레이아웃이 깨져 보여요: HTML 구조에서 빠졌거나 잘못 중첩된 태그가 없는지 살펴보세요. 주요 이메일 클라이언트에서 CSS가 호환되는지도 확인하세요.
+- 글꼴이나 스타일이 다르게 보여요: 받는 쪽 이메일 클라이언트가 해당 CSS를 지원하는지 확인하세요. 대체 글꼴을 알맞게 지정하세요.
+- 링크나 버튼이 작동하지 않아요: 각 하이퍼링크에 올바른 이동 주소가 들어 있는지 확인하세요. `https://`를 포함한 전체 URL을 쓰세요.
+- 개인화 필드가 제대로 표시되지 않아요: HTML에 이전 이메일 서비스의 머지 태그가 남아 있는지 확인하세요. 지원되지 않는 플랫폼 전용 변수는 알맞은 하이퍼클래스 커스텀 값으로 바꾸세요.
+- HTML 미리보기와 실제 발송된 이메일이 달라요: 여러 메일 서비스에서 이메일을 확인하세요. 지원되지 않는 CSS나 HTML 요소가 무시되고 있는지도 살펴보세요.
+
+---
+
+## 자주 묻는 질문
+
+### 어떤 이메일 마케팅 플랫폼의 HTML이든 가져올 수 있나요?
+
+이메일의 HTML 소스 코드를 구할 수 있다면 가능해요. 플랫폼 전용 HTML은 하이퍼클래스에서 제대로 표시되도록 수정이 필요할 수 있어요.
+
+### 원본 디자인이 바뀌면 가져온 이메일도 자동으로 업데이트되나요?
+
+수동 HTML 가져오기에는 자동 동기화가 제공된다고 안내된 바가 없어요. 원본 HTML이 바뀌면 하이퍼클래스에서 해당 콘텐츠를 직접 업데이트하세요.
+
+### 가져온 HTML 이메일을 자동화 워크플로우에서 쓸 수 있나요?
+
+저장한 이메일 템플릿은 지원되는 하이퍼클래스 자동화 워크플로우에서 쓸 수 있어요. 해당 워크플로우의 이메일 액션을 확인하고, 자동화를 활성화하기 전에 개인화 항목을 테스트하세요.
+
+### HTML 이메일을 가져오려면 코딩 경험이 필요한가요?
+
+올바른 소스 코드가 이미 있다면 HTML을 처음부터 작성할 필요는 없어요. 다만 HTML과 CSS 기본 지식이 있으면 서식 문제를 해결하거나 가져온 디자인을 수정하는 데 도움이 돼요.
+
+### 이메일이 Gmail과 Outlook에서 다르게 보여요. 왜 그런가요?
+
+이메일 클라이언트마다 렌더링 방식이 다르고 지원하는 HTML·CSS 기능도 달라요. 이메일에 맞는 방식으로 코딩하고, 수신자가 쓰는 메일 서비스로 테스트 이메일을 보내 확인하세요.
+
+### **Code Element**로 HTML 이메일 전체를 가져올 수 있나요?
+
+**Code Element**는 **디자인 에디터** 레이아웃에 사용자 지정 HTML이나 CSS 조각을 넣는 용도예요. 직접 코딩한 이메일 전체를 가져올 때는 **코드 편집기**를 쓰는 편이 더 알맞아요.
+
+### 예전에 쓰던 이메일의 개인화 태그가 깨져 보이면 어떻게 하나요?
+
+가져온 HTML에서 원래 이메일 플랫폼의 머지 필드나 동적 변수가 있는지 확인하세요. 알맞은 하이퍼클래스 커스텀 값으로 바꾸고, 발송 전에 결과를 테스트하세요.

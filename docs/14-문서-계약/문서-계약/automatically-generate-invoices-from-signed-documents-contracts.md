@@ -1,170 +1,133 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 14-문서-계약 > 문서-계약
+원문: /support/solutions/articles/155000004063-automatically-generate-invoices-from-signed-documents-contracts
+번역일: 2026-11-06
+카테고리: 14-문서-계약
 ---
 
-# 서명된 문서 및 계약에서 자동으로 인보이스 생성하기
+# 서명한 문서·계약에서 인보이스 자동으로 만들기
 
-[](https://ideas.hyperclass.ai/changelog/2-in-1-documents-direct-invoice-payments-after-signing)
+문서나 계약에 서명이 끝나면 인보이스가 자동으로 만들어지고, 서명자는 바로 결제 화면으로 이동할 수 있어요. 이 문서에서는 새 문서와 템플릿에서 이 기능을 설정하는 방법을 설명해요.
 
-# 문서 서명과 동시에 결제를 받는 방법
+## 새 문서에서 인보이스 보내기
 
-고객이 문서 서명과 결제를 한 번의 흐름으로 완료할 수 있도록 만드세요.
+1. **결제 > 문서 & 계약 > 새 문서**로 이동하세요.
 
-1. 상품 목록 추가 → 직접 결제(Direct Payments) 활성화 → 문서 발송 → 사용자가 서명하면 인보이스로 즉시 리다이렉트
+   ![새 문서 만들기 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051365192/original/Vc1wvMN6oETE-ZfL0WmBUl5YOBBL-lyvyw.png?1754927243)
+2. **Primary signer**(기본 서명자)를 추가하세요.
 
-## **새 문서에서 발송하기**
+   ![기본 서명자 추가 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051366150/original/yOa2RSTtVxoTgsulKr-slgKZelwoZszJ2g.png?1754927718)
+3. **Add Product List**(상품 목록 추가)로 문서에 상품 목록을 넣으세요. 상품 유형에 따라 만들어지는 인보이스가 일회성인지 반복인지 정해져요.
 
-- **결제(Payments) › 문서 및 계약(Documents & Contracts) › 새 문서(New Document)**로 이동하세요.
+   - 선택한 상품이 모두 일회성이면 일회성 인보이스가 만들어져요.
+   - 반복 상품이 하나라도 있으면 반복 인보이스가 만들어져요.
+   - 상품 목록에 선택 가능한 일회성 상품과 반복 상품이 함께 있으면, 받는 사람이 고른 상품에 따라 인보이스 유형이 정해져요. 일회성 상품만 고르면 일회성 인보이스가 만들어져요.
+   - 문서 하나에는 반복 주기를 하나만 쓸 수 있어요. 반복 주기는 인보이스 설정에서 정하세요.
 
-![새 문서 생성 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051365192/original/Vc1wvMN6oETE-ZfL0WmBUl5YOBBL-lyvyw.png?1754927243)
+     ![상품 목록과 인보이스 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051366166/original/JCxJUNJo-GPfNfUveyySJsp7N7q-NHoV3A.png?1754927734)
+4. **목록에 이미지 표시**로 상품 이미지를 보이거나 숨길 수 있어요. 문서 편집기에서 새 상품을 추가할 때는 상품을 목록에 넣기 전에 이미지를 올릴 수 있어요.
 
-- **주 서명자(Primary signer)**를 추가하세요.
+   ![목록에 이미지 표시 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155078276159/original/adVtdg-UjKEX9YHIMENTsfOKyYG319kiyA.png?1786559933)
+5. 일회성 상품을 추가하면 인보이스 유형이 일회성으로 정해져요.
 
-![주 서명자 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051366150/original/yOa2RSTtVxoTgsulKr-slgKZelwoZszJ2g.png?1754927718)
+   - 상품을 선택한 뒤 오른쪽 속성 섹션에서 선택 항목으로 바꾸거나 수량을 수정할 수 있게 설정할 수 있어요.
+   - 왼쪽의 **결제** 섹션에서 필요한 설정을 고르세요.
 
-- 상품 목록을 추가하세요. 항목 유형에 따라 목록이 **일회성(One‑time)** 또는 **정기결제(Recurring)**로 결정되며, **태그**는 자동으로 표시됩니다.
+   ![일회성 상품 속성 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051366432/original/bhM_qquIzDeGHIaeNvYDXLWPjyCP0u23cQ.png?1754927827)
 
-![상품 목록 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051366166/original/JCxJUNJo-GPfNfUveyySJsp7N7q-NHoV3A.png?1754927734)
+   ![결제 섹션 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051366606/original/jTxRkj0ltdrXRljZlzTpKmYOovynXZ20xA.png?1754927890)
+6. 상품 목록에 반복 상품을 하나 이상 추가하면 인보이스 유형이 반복으로 바뀌어요. 문서 하나에는 반복 주기를 하나만 쓸 수 있고, 왼쪽의 인보이스 반복 주기 설정에서 고르세요.
 
-일회성 상품이 추가되면 인보이스 유형이 일회성으로 설정됩니다.
+   ![반복 상품 추가 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051366786/original/3I3qx7U4b4K_DFgdFusKaZgxiZVMbtJN8A.png?1754928032)
+   ![인보이스 반복 주기 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051366803/original/kYuN_Ssu2furPuvhpj6ug9l1pn1EcDxEtw.png?1754928047)
+7. 필요한 설정을 고르세요. 아래는 간단한 안내이고, 자세한 내용은 뒤의 **설정 항목**에서 확인할 수 있어요.
 
-- 상품을 선택하고 필요에 따라 선택 항목으로 변경하거나 우측 속성 섹션에서 수량을 편집 가능하게 만들 수 있습니다.
+   - **직접 결제 — 켜짐:** 서명 시점에 인보이스가 있으면 기본 서명자가 서명한 뒤 바로 결제 화면으로 이동해요.
+   - **인보이스 보내기 — 켜짐:** 인보이스가 만들어질 때(서명 시점 또는 예약된 일정) 이메일로 보내요.
+   - **Auto‑Payment**(자동 결제) **— 켜짐:** 앞으로 만들어질 반복 인보이스를 자동으로 결제해요.
+   - 테스트 결제와 라이브 결제는 결제 설정에 따라 정해져요. 문서 & 계약 템플릿에서 정하는 설정이 아니에요.
+8. 문서를 **보내기**로 보내세요.
+9. 서명 시점에는 이렇게 진행돼요.
 
-- 좌측의 결제(Payments) 섹션에서 필요에 따라 설정을 구성할 수 있습니다.
+   - 일회성: 기본 서명자가 바로 결제할 수 있도록 인보이스 페이지로 이동해요.
+   - 반복(시작 시점 = 서명 시): 기본 서명자가 첫 번째 인보이스를 바로 결제할 수 있도록 인보이스 페이지로 이동해요.
+   - 반복(시작 시점 = 나중): 서명할 때는 이동하지 않아요. 첫 번째 인보이스는 예약된 일정에 맞춰 만들어지고 발송돼요.
+   - 기본 서명자만 결제 화면으로 이동해요. 다른 서명자는 서명만 하면 돼요. 설정을 켜 두었다면 인보이스 이메일도 함께 발송돼요.
 
-![결제 설정 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051366432/original/bhM_qquIzDeGHIaeNvYDXLWPjyCP0u23cQ.png?1754927827)
+   ![서명 후 인보이스 이동 화면 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051377741/original/FhMDhzp-cjaHCYGpgeMe2J7kWShDM-7Kfw.png?1754936621)
+   ![서명 후 인보이스 이동 화면 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051377746/original/DMsUuq7mMmekdg22i3kkmQ0eY48hKef_cg.png?1754936635)
+   ![서명 후 인보이스 이동 화면 3](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051377750/original/sB6OGo-MXbkH1NKMODO-DsO_q2rRCSntPQ.png?1754936646)
 
-![추가 결제 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051366606/original/jTxRkj0ltdrXRljZlzTpKmYOovynXZ20xA.png?1754927890)
+## 설정 항목
 
-- 상품 목록에 하나 이상의 정기결제 상품이 추가되면 인보이스 유형이 정기결제로 변경됩니다. 하나의 문서는 하나의 정기결제 주기만 가질 수 있으며, 좌측의 인보이스 빈도 설정에서 선택할 수 있습니다.
+#### 직접 결제
 
-![정기결제 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051366786/original/3I3qx7U4b4K_DFgdFusKaZgxiZVMbtJN8A.png?1754928032)
+- **켜짐:** 서명 시점에 인보이스가 있으면 기본 서명자가 서명한 직후 인보이스 페이지로 이동해요. 인보이스 이메일도 함께 발송돼요.
+- **끄기:** 인보이스 페이지로 이동하지 않아요. 결제하는 사람은 이메일로 받은 인보이스를 이용하고, 보내는 쪽은 임시 저장된 인보이스를 나중에 보낼 수 있어요.
 
-![인보이스 빈도 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051366803/original/kYuN_Ssu2furPuvhpj6ug9l1pn1EcDxEtw.png?1754928047)
+#### 인보이스 보내기
 
-- 필요한 설정을 선택하세요 (아래 **설정** 섹션에서 자세한 내용 확인):
+- **켜짐:** 인보이스가 만들어질 때(서명 시점 또는 예약된 일정) 자동으로 이메일을 보내요.
+- **끄기:** 인보이스를 임시 저장 상태로 두어, 직접 확인한 뒤 수동으로 보낼 수 있어요.
 
-**직접 결제(Direct Payment)** — 켜기: 서명 시 인보이스가 존재하면 주 서명자를 **서명 후** 결제 페이지로 리다이렉트합니다.
+#### Auto‑Payment(자동 결제)
 
-- **인보이스 발송(Send Invoice)** — 켜기: 인보이스 생성 시(서명 시 또는 일정에 따라) 이메일로 발송합니다.
+- **켜짐:** 카드 정보를 저장하고(지원되는 결제 에이전시만 해당), 반복 일정의 다음 인보이스나 결제 일정이 있는 인보이스를 자동으로 결제해요.
+- **끄기:** 결제하는 사람이 발행된 인보이스를 하나씩 직접 결제해요.
+- 자동 결제는 반복 일정에만 적용돼요. 일회성 인보이스는 바로 이어지는 결제 화면에서 결제해요.
 
-- **자동 결제(Auto‑Payment)** — 켜기: 향후 정기 인보이스를 자동으로 결제합니다.
+#### 라이브 모드 (true/false)
 
-- 테스트 vs 실제 결제는 결제 설정에 의해 제어됩니다(문서 및 계약 템플릿 설정이 아님).
+- 문서 & 계약 템플릿에는 **라이브 모드** 토글이 없어요. 테스트가 필요하면 테스트/라이브 모드를 지원하는 결제 방식(예: 인보이스, 결제 링크)이나 결제 에이전시의 테스트 설정을 이용하세요.
 
-- 문서를 발송하세요.
+## 템플릿으로 문서와 인보이스 한 번에 자동화하기
 
-- **서명 시 일어나는 일**
+1. **결제 > 문서 & 계약 > 템플릿 > 새 템플릿**으로 이동하세요.
+2. **서명** 필드를 넣고 **Add Product List**(상품 목록 추가)로 상품 목록을 추가하세요. 상품 유형 태그는 자동으로 붙어요.
+3. 반복 상품이라면 일정이 시작되는 시점을 서명 시 또는 앞으로의 특정 날짜·요일 중에서 고르세요.
+4. 필요에 따라 **직접 결제**, **인보이스 보내기**, **Auto-Payment**(자동 결제)를 설정하세요.
+5. 템플릿을 **저장**하세요.
 
-**일회성**: 주 서명자가 **인보이스로 리다이렉트**되어 즉시 결제합니다.
+   ![템플릿 설정 저장 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051377851/original/8YcFgpdyieAbTCU_6H9pvaF3n-Ltf8qtmA.jpeg?1754936733)
+6. **워크플로우**를 열고 **Action: Send Documents & Contracts**(문서 & 계약 보내기 액션)를 추가한 뒤 만든 템플릿을 선택하세요. 워크플로우가 실행되면 서명자가 문서를 받아요. 직접 결제를 켜 두었다면 기본 서명자가 서명한 뒤 인보이스 페이지로 이동해요.
 
-- **정기결제(시작 = 서명 시)**: 주 서명자가 첫 번째 인보이스로 **리다이렉트**되어 즉시 결제합니다.
+   ![워크플로우에서 문서 & 계약 보내기 액션 추가 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051377889/original/d5kwC0KoHoruWVoaZv12ywCt9yS0UcPzIQ.jpeg?1754936745)
 
-- **정기결제(시작 = 나중에)**: 서명 시 리다이렉트 없음. 첫 번째 인보이스는 일정에 따라 생성/발송됩니다.
+   ![액션에서 템플릿 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051377931/original/IfaA7MfDcYDTmeQN6G5ejMZOkqkCUNNXVg.jpeg?1754936845)
+7. 서명 시점에는 위와 같은 규칙이 적용돼요.
 
-- **주 서명자**만 리다이렉트됩니다. 다른 서명자는 단순히 서명만 합니다. 활성화된 경우 인보이스 이메일도 발송됩니다.
-
-![서명 완료 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051377741/original/FhMDhzp-cjaHCYGpgeMe2J7kWShDM-7Kfw.png?1754936621)
-
-![결제 리다이렉트 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051377746/original/DMsUuq7mMmekdg22i3kkmQ0eY48hKef_cg.png?1754936635)
-
-![결제 완료 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051377750/original/sB6OGo-MXbkH1NKMODO-DsO_q2rRCSntPQ.png?1754936646)
-
----
-
-## **설정**
-
-### 직접 결제(Direct Payment)
-
-- **켜기**: 서명 시 인보이스가 존재하면 **주 서명자**가 서명 즉시 인보이스 페이지로 리다이렉트되며, 인보이스 이메일도 발송됩니다.
-
-- **끄기**: 리다이렉트 없음. 결제자는 이메일로 받은 인보이스를 사용하거나, 나중에 초안에서 발송하세요.
-
-### 인보이스 발송(Send Invoice)
-
-- **켜기**: 인보이스 생성 시(서명 시 또는 일정에 따라) 자동으로 이메일을 발송합니다.
-
-- **끄기**: 인보이스를 **초안**으로 유지하여 검토 후 수동으로 발송할 수 있습니다.
-
-### 자동 결제(Auto‑Payment)
-
-- **켜기**: 카드를 저장하고(지원하는 게이트웨이) 정기 일정 또는 결제 일정이 있는 후속 인보이스를 **자동으로 결제**합니다.
-
-- **끄기**: 결제자가 발행된 각 인보이스를 수동으로 결제합니다.
-
-자동 결제는 정기 일정에 영향을 미칩니다. 일회성은 즉시 결제 중에 결제됩니다.
-
-### 실제 모드(Live Mode) (참/거짓)
-
-- 문서 및 계약 템플릿에는 실제 모드 토글이 포함되어 있지 않습니다. 테스트가 필요한 경우 테스트/실제 모드를 지원하는 결제 경험(예: 인보이스 또는 결제 링크)이나 게이트웨이의 테스트 설정을 사용하세요.
-
----
-
-## 2 in 1 문서 자동화 방법: 템플릿으로 저장하고 '문서 및 계약 발송' 액션으로 자동화하기
-
-- **결제(Payments) › 문서 및 계약(Documents & Contracts) › 템플릿(Templates) › 새 템플릿(New Template)**으로 이동하세요.
-
-- **서명(Signature)** 필드를 삽입하고 **상품 목록 추가(Add Product List)**(유형 + 태그 자동)하세요.
-
-- 정기결제의 경우 일정이 시작되는 **시점**을 선택하세요: **서명 시** 또는 **미래 날짜/요일**.
-
-- 필요에 따라 직접 결제, 인보이스 발송, 자동 결제를 설정하세요.
-
-- 템플릿을 저장하세요.
-
-![템플릿 저장](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051377851/original/8YcFgpdyieAbTCU_6H9pvaF3n-Ltf8qtmA.jpeg?1754936733)
-
-- **워크플로우(Workflows)** → 액션 추가: 문서 및 계약 발송 → 템플릿 선택을 열어주세요. 워크플로우가 트리거되면 서명자가 문서를 받습니다. 주 사용자가 문서에 서명하면 직접 결제가 활성화된 경우 인보이스로 리다이렉트됩니다.
-
-![워크플로우 액션 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051377889/original/d5kwC0KoHoruWVoaZv12ywCt9yS0UcPzIQ.jpeg?1754936745)
-
-![워크플로우 템플릿 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051377931/original/IfaA7MfDcYDTmeQN6G5ejMZOkqkCUNNXVg.jpeg?1754936845)
-
-- **서명 시 일어나는 일** (동일한 규칙):
-
-**일회성** 또는 **정기결제(시작 = 서명 시)** → 주 서명자를 결제로 **리다이렉트**합니다.
-
-- **정기결제(시작 = 나중에)** → **리다이렉트 없음**. 첫 번째 인보이스는 일정에 따라 도착합니다.
-
----
+   - 일회성이거나 반복(시작 시점 = 서명 시)이면 기본 서명자가 결제 화면으로 이동해요.
+   - 반복(시작 시점 = 나중)이면 이동하지 않아요. 첫 번째 인보이스는 일정에 맞춰 도착해요.
 
 ## 추적
 
-- **결제(Payments) › 문서 및 계약(Documents & Contracts)**: 문서 + 서명 + 결제 상태를 한 곳에서 확인할 수 있습니다.
+- **결제 > 문서 & 계약:** 문서, 서명, 결제 상태를 한곳에서 볼 수 있어요.
+- **결제 > 인보이스:** 인보이스별 기록과 결제 상태를 볼 수 있어요. 반복 일정의 진행 상황과 자동 결제 결과도 확인할 수 있어요.
 
-- **결제(Payments) › 인보이스(Invoices)**: 각 인보이스 기록과 결제 상태(정기 일정 진행 상황 및 자동 결제 결과 포함)를 확인할 수 있습니다.
+## 알아 두면 좋은 점
 
----
-
-## **팁 & 특수 상황**
-
-- **주간 예시**: 일정이 **매주 목요일**이고 서명이 목요일에 완료되면 첫 번째 인보이스가 **즉시** 생성되어 리다이렉트가 적용됩니다. 그렇지 않으면 첫 번째 인보이스는 **다음 목요일**에 발송됩니다.
-
-- **여러 수신자**: **주 서명자**만 결제로 리다이렉트됩니다.
-
-- **설정 수수료**: 첫 번째 인보이스에 **일회성** 항목으로 표시되며, 정기 항목만 계속됩니다.
-
-- **항목 혼합**: 일회성 항목은 첫 번째 인보이스에 청구되고, 정기 항목은 일정을 따릅니다.
+- 매주 반복 예시: 일정이 매주 목요일이고 서명이 목요일에 끝나면 첫 번째 인보이스가 바로 만들어지고 결제 화면으로 이동해요. 그렇지 않으면 첫 번째 인보이스는 다음 목요일에 발송돼요.
+- 받는 사람이 여러 명인 경우: 기본 서명자만 결제 화면으로 이동해요.
+- 반복 상품과 일회성 상품이 선택 가능하게 들어 있으면, 받는 사람이 고른 상품에 따라 인보이스 유형이 정해져요. 일회성 상품만 고르면 일회성 인보이스가 만들어져요.
+- 상품을 섞어 쓰는 경우: 일회성 상품은 첫 번째 인보이스에 청구되고, 반복 상품은 일정에 따라 청구돼요.
 
 ## 자주 묻는 질문
 
-- **고객이 서명 후 리다이렉트되지 않은 이유는?**
-**직접 결제**가 꺼져 있거나, **서명 시** 인보이스가 없었기 때문입니다(예: 정기결제가 나중에 시작). 직접 결제를 활성화하고, 정기결제의 경우 시작을 **서명 시**로 설정하세요.
+### 서명했는데 고객이 결제 화면으로 이동하지 않았어요. 왜 그런가요?
 
-- **진행 상황은 어디서 추적하나요?**
-**문서 및 계약**(문서 수준 상태)과 **인보이스**(인보이스/결제 상태, 일정, 자동 결제 결과)에서 확인할 수 있습니다.
+**직접 결제**가 **끄기** 상태이거나, 서명 시점에 인보이스가 없었기 때문일 수 있어요(예: 반복 결제가 나중에 시작되는 경우). **직접 결제 켜기**를 켜고, 반복 결제라면 시작 시점을 서명 시로 설정하세요.
 
-- **일회성과 정기결제 항목을 섞을 수 있나요?**
-네. 상품 목록 태그가 유형을 표시합니다. 일회성은 먼저 청구되고, 정기결제는 일정에 따라 계속됩니다.
+### 진행 상황은 어디에서 확인하나요?
 
-- **문서에 결제 일정이 있었는데 인보이스가 생성되지 않았어요**
-이는 보통 결제 일정 날짜 중 하나가 인보이스 만료일을 넘어갔을 때 발생합니다. 첫 번째 결제를 커스텀 날짜로 설정했을 때 자주 발생합니다. 이를 방지하려면 첫 번째 결제를 "주 서명 시"로 설정하여 일정이 올바르게 맞춰지고 인보이스가 생성될 수 있도록 하세요.
+문서별 상태는 **문서 & 계약**에서, 인보이스와 결제 상태·일정·자동 결제 결과는 **인보이스**에서 확인할 수 있어요.
 
-- **문서 및 계약 템플릿에서 "테스트 모드"로 인보이스를 보낼 수 있나요?**
-문서 및 계약 템플릿에는 "실제 모드" 토글이 포함되어 있지 않습니다. 테스트 결제를 실행하려면 테스트/실제 모드를 지원하는 결제 흐름(결제 링크나 인보이스 발송 옵션 등)이나 게이트웨이의 테스트 설정을 사용하세요.
+### 일회성 상품과 반복 상품을 함께 쓸 수 있나요?
 
----
-*원문 최종 수정: Wed, 4 Mar, 2026 at 3:11 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+네, 할 수 있어요. 상품 목록의 태그로 상품 유형을 확인할 수 있어요. 일회성 상품이 먼저 청구되고, 반복 상품은 일정에 따라 이어서 청구돼요.
+
+### 문서에 결제 일정을 넣었는데 인보이스가 만들어지지 않았어요.
+
+결제 일정의 날짜 중 하나가 인보이스 마감일보다 늦어지면 이런 일이 생겨요. 첫 번째 결제를 사용자 지정 날짜로 설정했을 때 자주 일어나요. 이를 피하려면 첫 번째 결제를 **기본 서명 시**로 설정하세요. 그러면 일정이 맞게 정렬되어 인보이스를 만들 수 있어요.
+
+### 문서 & 계약 템플릿에서 테스트 모드로 인보이스를 보낼 수 있나요?
+
+문서 & 계약 템플릿에는 **라이브 모드** 토글이 없어요. 테스트 결제를 하려면 테스트/라이브 모드를 지원하는 결제 방식(예: **결제 링크**나 인보이스 발송 옵션)이나 결제 에이전시의 테스트 설정을 이용하세요.

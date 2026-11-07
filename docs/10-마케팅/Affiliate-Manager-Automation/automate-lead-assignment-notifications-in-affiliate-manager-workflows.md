@@ -1,101 +1,97 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 10-마케팅 > Affiliate Manager Automation
+원문: /support/solutions/articles/155000003665-automate-lead-assignment-notifications-in-affiliate-manager-workflows
+번역일: 2026-11-07
+카테고리: 10-마케팅
 ---
 
-# 제휴 관리 워크플로우에서 리드 배정 및 알림 자동화하기
+# 제휴 관리자 워크플로우로 리드 배정과 알림 자동화하기
 
-제휴 관련 액션을 워크플로우로 자동화해서 더 스마트하게 일하고 제휴 마케터의 동기를 유지하세요. "Lead Created(리드 생성)" 트리거와 "Add Leads under an Affiliate(제휴사에 리드 추가)" 액션을 함께 사용하면 제휴 마케터가 생성한 리드를 추적하고, 배정하고, 대응하는 모든 과정을 손 하나 까딱하지 않고 자동화할 수 있습니다.
+**제휴 관리자**(Affiliate Manager) 워크플로우를 쓰면 제휴 파트너가 리드를 만들었을 때 일어날 일을 자동화할 수 있어요. **Lead Created**(리드 생성됨) 트리거로 제휴 파트너를 통해 생성된 리드의 워크플로우를 시작하고, **Add Leads under an Affiliate**(제휴 파트너 아래에 리드 추가) 액션으로 연락처를 제휴 파트너와 캠페인에 배정해요.
 
 ---
 
-## 트리거: Lead Created(리드 생성)
+## 트리거: Lead Created(리드 생성됨)
 
-### 기능 설명
+### 어떤 기능인가요?
 
-"Lead Created(리드 생성)" 트리거는 제휴 마케터를 통해 새 리드가 추천됐을 때 워크플로우를 시작합니다. 즉시 자동화할 수 있는 기회를 제공하죠.
+**Lead Created** 트리거는 제휴 파트너에게 귀속된 새 리드가 만들어질 때 워크플로우를 시작해요.
 
-모든 캠페인에 적용하거나 특정 캠페인에만 트리거되도록 필터링할 수 있습니다.
+모든 캠페인에 적용할 수도 있고, 특정 캠페인에서만 실행되도록 필터를 걸 수도 있어요.
 
 ### 사용 방법
 
-- Workflows(워크플로우)로 가서 + Create Workflow(워크플로우 생성)를 클릭하세요
-- 트리거를 Lead Created(리드 생성)으로 설정하세요
-- (**선택사항**) Campaign Filter(캠페인 필터)를 사용해서 특정 캠페인으로만 범위를 제한하세요
-![리드 생성 트리거 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046919716/original/9rsHc5Z5_Sx71eszGZk8KJbQiXGFuci22Q.png?1747737828)
+1. 서브 계정 화면에서 **자동화 > 워크플로우**로 이동한 다음 **+ Create Workflow**(워크플로우 만들기)를 클릭해요.
+2. 트리거를 **Lead Created**로 설정해요.
+3. 특정 캠페인에만 적용하려면 **Add filters**(필터 추가) > **Campaign**(캠페인) > **Is**(다음과 같음)에서 캠페인을 선택하고 **Save Trigger**(트리거 저장)를 클릭해요. 캠페인 필터를 비워 두면 모든 캠페인에 트리거가 적용돼요.
+   ![트리거에 캠페인 필터를 추가하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155081573599/original/XjizIzCTeWk82a2rxw6wRaSLqDO8ygs6fg.png?1790087531)
+4. 다음과 같은 액션을 추가해요.
+   1. 제휴 파트너에게 이메일 보내기
+   2. 내부 팀에 알림 보내기
+5. 이메일이나 메시지에는 **Lead Created** 섹션의 커스텀 값을 넣어 쓸 수 있어요.
+   ![Lead Created 섹션의 커스텀 값 목록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046919760/original/XaZPVUfJB0b4WuoOJkd_o9uYMyuMWuZ-Fg.png?1747737844)
+6. 워크플로우를 저장하고 게시해요.
 
-- 다음과 같은 액션을 추가하세요:
-  - 제휴 마케터에게 이메일 발송
-  - 내부 팀에 알림
-  - 이메일/메시지에서 Lead Created(리드 생성) 섹션의 커스텀 값 활용
-![커스텀 값 활용 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046919760/original/XaZPVUfJB0b4WuoOJkd_o9uYMyuMWuZ-Fg.png?1747737844)
+### 활용 사례
 
-- 워크플로우를 저장하고 발행하세요
-
-### 사용 사례
-
-- 제휴 마케터가 리드를 생성했을 때 "축하합니다!" 이메일 발송
-- 새로운 제휴 리드에 대해 영업팀이나 지원팀에 알림
-- 제휴 리드를 자동으로 추적하고 육성을 위한 태그 부여
+1. 제휴 파트너가 리드를 만들면 "축하합니다!" 이메일을 보내요.
+2. 제휴 파트너를 통해 새 리드가 들어오면 영업팀이나 지원팀에 알려요.
+3. 제휴 리드를 자동으로 추적하고 태그를 붙여 육성해요.
 
 ---
 
-## 액션: Add Leads under an Affiliate(제휴사에 리드 추가)
+## 액션: Add Leads under an Affiliate(제휴 파트너 아래에 리드 추가)
 
-### 기능 설명
+### 어떤 기능인가요?
 
-"Add Leads under an Affiliate(제휴사에 리드 추가)" 액션은 연락처(리드)를 제휴 마케터와 해당 캠페인에 배정해서 제휴 마케터가 올바르게 크레딧을 받을 수 있도록 합니다.
+**Add Leads under an Affiliate** 액션은 연락처(리드)를 제휴 파트너와 해당 파트너의 캠페인에 배정해요. 그러면 제휴 파트너의 실적이 정확하게 인정돼요.
 
-이제 완전한 유연성을 위해 세 가지 배정 방법 중에서 선택할 수 있습니다.
+배정 방식은 세 가지 중에서 골라 상황에 맞게 쓸 수 있어요.
 
 ### 사용 방법
 
-- 워크플로우에서 **Add Leads under an Affiliate(제휴사에 리드 추가)** 액션을 추가하세요
-- 배정 방법을 선택하세요:
-  - Manual(수동)
-  - Auto (Attribution)(자동 어트리뷰션)
-  - Custom Mapping(커스텀 매핑)
-- 선택한 방법에 따라 추가 필드를 구성하세요
-- 워크플로우를 저장하고 발행하세요
+1. 워크플로우에 `Add Leads under an Affiliate` 액션을 추가해요.
+2. 배정 방식을 선택해요.
 
-### 배정 방법
+   - **Manual**(수동)
+   - **Auto (Attribution)**(자동, 어트리뷰션)
+   - **Custom Mapping**(사용자 지정 매핑)
+3. 선택한 방식에 따라 나오는 추가 필드를 설정해요.
+4. 워크플로우를 저장하고 게시해요.
 
-1. **Manual(수동)**: 특정 캠페인에서 알려진 제휴 마케터에게 리드를 수동으로 배정합니다.  
-   **적합한 경우**: 폼 제출, 내부 라우팅, 관리자 결정
+### 배정 방식
 
-   단계:
-   - 캠페인 선택
-   - 제휴 마케터 선택 (해당 캠페인의 제휴 마케터 중에서)
-![수동 배정 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046514809/original/CcKuxYwq4yOIQ_cx6E4yJDvAb3NnJEwUdA.png?1747119576)
+1. **Manual**: 이미 알고 있는 제휴 파트너를 특정 캠페인에서 직접 지정해 리드를 배정해요.
+   이럴 때 좋아요: 폼 제출, 내부 라우팅, 관리자가 직접 판단할 때
 
-2. **Auto (Attribution via URL)(URL을 통한 자동 어트리뷰션)**: URL 파라미터로 전달된 am_id를 사용해서 리드를 자동 배정합니다. 첫 클릭 또는 마지막 클릭 어트리뷰션을 지원합니다.
+   설정 순서:
 
-   단계:
-   - Attribution Method(어트리뷰션 방법) 선택: First(첫 클릭) / Last(마지막 클릭)
-   - 퍼널 초기에 am_id가 전달되도록 확인 (예: 폼/페이지 URL)
-![자동 어트리뷰션 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046514824/original/COmOzfhsvwzF7jK5RHBib1SjxVAI-szQpA.png?1747119591)
+   - **Select campaign**(캠페인 선택)에서 캠페인을 골라요.
+   - 해당 캠페인에 속한 제휴 파트너 중에서 한 명을 선택해요.
+   ![Manual 방식 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046514809/original/CcKuxYwq4yOIQ_cx6E4yJDvAb3NnJEwUdA.png?1747119576)
 
-3. **Custom Mapping(커스텀 매핑)**: am_id가 커스텀 필드에 저장되거나 워크플로우 값으로 전달되는 경우에 사용합니다.  
-   **적합한 경우**: API 푸시, 서드파티 시스템, 폼의 숨겨진 필드
+2. **Auto (Attribution)**(URL 기반 어트리뷰션): URL 파라미터로 전달된 `am_id`를 이용해 리드를 자동으로 배정해요.
+   첫 번째 클릭(first click)이나 마지막 클릭(last click) 기준을 지원해요.
 
-   단계:
-   - 매핑 소스 선택: 커스텀 필드 또는 워크플로우 값
-   - 시스템이 값을 읽어서 매칭되는 제휴 마케터에게 리드를 배정
-![커스텀 매핑 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046514851/original/cYBBMy6l6rRl8DKAaM8P4WCbLdraHVPOFw.png?1747119602)
+   설정 순서:
 
-### 사용 사례
+   - 어트리뷰션 방식(**Attribution Method**)을 First 또는 Last 중에서 선택해요.
+   - 퍼널 앞 단계(예: 폼이나 페이지 URL)에서 `am_id`가 전달되고 있는지 확인해요.
+   ![Auto (Attribution) 방식 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046514824/original/COmOzfhsvwzF7jK5RHBib1SjxVAI-szQpA.png?1747119591)
 
-- **리드 생성 보상**  
-  예시: 리드가 폼을 작성 → 시스템이 링크를 공유한 제휴 마케터에게 배정 → "축하합니다!" 이메일 발송
+3. **Custom Mapping**: `am_id`가 커스텀 필드에 저장되어 있거나 워크플로우 값으로 전달될 때 사용해요.
+   이럴 때 좋아요: API 전송, 외부 시스템 연동, 폼의 숨김 필드
 
-- **커스텀 리드 육성**  
-  예시: 퍼널에서 온 리드를 특정 제휴 마케터에게 배정해서 1:1 후속 관리 — 전환율 향상
+   설정 순서:
 
-- **관리 업무 간소화**  
-  예시: 수동 리드 배정을 자동화로 대체 — 많은 제휴 마케터를 관리하는 바쁜 팀에게 완벽
+   - 매핑 소스를 커스텀 필드 또는 워크플로우 값 중에서 선택해요.
+   - 시스템이 그 값을 읽어 일치하는 제휴 파트너에게 리드를 배정해요.
+   ![Custom Mapping 방식 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046514851/original/cYBBMy6l6rRl8DKAaM8P4WCbLdraHVPOFw.png?1747119602)
 
----
+### 활용 사례
 
-*원문 최종 수정: Tue, 20 May, 2025 at 5:49 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+- 리드 생성에 보상하기
+  예: 리드가 폼을 작성하면 시스템이 링크를 공유한 제휴 파트너에게 리드를 배정하고, "축하합니다!" 이메일을 보내요.
+- 맞춤형 리드 육성
+  예: 퍼널로 들어온 리드를 특정 제휴 파트너에게 배정해 1:1로 후속 관리를 하면 전환율을 높이는 데 도움이 돼요.
+- 관리 업무 간소화
+  예: 리드를 직접 배정하던 일을 자동화로 바꿔요. 제휴 파트너가 많아 바쁜 팀에 잘 맞아요.

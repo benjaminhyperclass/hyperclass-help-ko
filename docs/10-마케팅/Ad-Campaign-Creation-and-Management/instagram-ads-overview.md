@@ -1,135 +1,149 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 10-마케팅 > Ad Campaign Creation and Management
+원문: /support/solutions/articles/155000004550-instagram-ads-overview
+번역일: 2026-11-06
+카테고리: 10-마케팅
 ---
 
-# 인스타그램 광고: 개요
+# Instagram 광고 개요
 
-사용자들이 인스타그램에서도 광고 캠페인을 게시할 수 있도록 하기 위해, 자신의 인스타그램 전문 계정을 추가하거나 연결된 페이스북 페이지를 사용해서 인스타그램에도 광고 캠페인을 게시할 수 있는 옵션을 추가했습니다.
+하이퍼클래스 **광고 관리자**에서는 Meta 캠페인을 Facebook과 Instagram의 지원되는 게재 위치에 게시할 수 있어요. 연결된 Instagram 계정을 광고에 쓰거나, 연결된 계정이 없으면 선택한 Facebook 페이지 정보를 쓸 수 있어요. Instagram 계정과 게재 위치 설정은 Meta 캠페인 빌더에서 해요.
 
----
-
-## **목차**
-
-- [페이스북 광고와 함께 인스타그램 광고를 사용하면 어떤 장점이 있나요?](#페이스북-광고와-함께-인스타그램-광고를-사용하면-어떤-장점이-있나요)
-- [인스타그램 계정을 페이스북 페이지와 어떻게 연결하나요?](#인스타그램-계정을-페이스북-페이지와-어떻게-연결하나요)
-  - [1단계: 인스타그램 비즈니스 또는 크리에이터 계정으로 전환](#1단계-인스타그램-비즈니스-또는-크리에이터-계정으로-전환)
-  - [2단계: 인스타그램을 페이스북 페이지에 연결](#2단계-인스타그램을-페이스북-페이지에-연결)
-  - [3단계: Meta Business Suite에서 연결 확인](#3단계-meta-business-suite에서-연결-확인)
-  - [최종 확인](#최종-확인)
-- [인스타그램에 광고를 어떻게 게시하나요?](#인스타그램에-광고를-어떻게-게시하나요)
-- [인스타그램 광고 보고서](#인스타그램-광고-보고서)
-- [페이스북 페이지에서 인스타그램 계정을 어떻게 연결 해제하나요?](#페이스북-페이지에서-인스타그램-계정을-어떻게-연결-해제하나요)
+이 문서에서는 Instagram 광고의 준비 사항, 계정 선택 방법, 게재 위치, 미리보기, 리포팅, 계정 연결 시 알아둘 점을 안내해요.
 
 ---
 
-## **페이스북 광고와 함께 인스타그램 광고를 사용하면 어떤 장점이 있나요?**
+---
 
-페이스북 광고와 함께 인스타그램 광고를 사용하면 각 플랫폼의 고유한 강점을 활용하여 더 넓고 다양한 잠재고객에게 도달할 수 있습니다. 인스타그램은 더 젊고 시각적인 콘텐츠를 선호하는 잠재고객을 타겟팅하는 반면, 페이스북은 더 넓은 연령대를 포괄합니다. 두 플랫폼을 결합하면 인스타그램의 스토리 광고와 페이스북의 캐러셀 광고 같은 서로 다른 광고 형식을 통해 가시성과 참여도를 극대화할 수 있습니다.
+## Facebook 광고와 Instagram 광고를 함께 쓰면 어떤 점이 좋은가요?
 
-크로스 플랫폼 타겟팅을 통해 리타겟팅이 가능하고 전환 기회가 증가하며, 통합된 광고 관리자를 통해 캠페인 관리와 분석이 더 효율적으로 이루어집니다. 전반적으로 두 플랫폼을 모두 사용하면 잠재고객 도달 범위, 참여도, 광고 성과가 향상됩니다.
+Instagram 광고와 Facebook 광고를 함께 쓰면 두 플랫폼의 강점을 살려 더 넓고 다양한 오디언스에게 도달할 수 있어요. Instagram은 비교적 젊고 시각 콘텐츠를 즐기는 오디언스가 많고, Facebook은 연령대가 더 넓어요. 두 플랫폼을 함께 쓰면 Instagram의 스토리, Facebook의 캐러셀 광고처럼 서로 다른 광고 형식으로 노출과 참여를 높일 수 있어요.
+
+플랫폼을 넘나드는 타기팅으로 리타기팅도 할 수 있어서 전환 기회가 늘어나요. **광고 관리자** 한 곳에서 캠페인 관리와 분석을 할 수 있어서 운영도 더 수월해요. 결과적으로 오디언스 도달, 참여, 광고 성과를 함께 높일 수 있어요.
 
 ---
 
-## 인스타그램 계정을 페이스북 페이지와 어떻게 연결하나요?
+## Instagram 계정을 Facebook 페이지에 연결하려면 어떻게 하나요?
 
-다음은 광고 캠페인을 실행하기 위해 인스타그램 계정을 페이스북 페이지에 연결하는 단계별 가이드입니다. 광고 관리자를 통해 인스타그램에 광고를 게시하려면 인스타그램 비즈니스 계정을 페이스북 페이지에 연결해야 합니다. 인스타그램 계정이 페이스북 페이지에 연결되면, 페이스북 페이지가 선택될 때마다 자동으로 함께 선택됩니다. **이 설정은 Meta 플랫폼에서 진행해야 합니다.**
+**광고 관리자**에서 Instagram 광고를 게시하려면 Instagram 비즈니스 계정을 Facebook 페이지에 연결해야 해요. 연결해 두면 광고를 게시할 때 해당 Facebook 페이지를 고르는 순간 Instagram 계정이 자동으로 선택돼요. 이 설정은 Meta 플랫폼에서 해요.
 
-### 1단계: 인스타그램 비즈니스 또는 크리에이터 계정으로 전환
+### 1단계: Instagram 비즈니스 또는 크리에이터 계정으로 전환하기
 
-**참고**: 인스타그램이 이미 비즈니스 계정인 경우 이 단계는 건너뛰세요.
-- 인스타그램 앱을 열고 프로필로 이동합니다.
-- ☰ 메뉴(우상단)를 눌러 설정 및 활동으로 이동합니다.
-- 아래로 스크롤하여 계정 유형 및 도구 → 전문 계정으로 전환을 탭합니다.
-- 비즈니스(광고에 권장) 또는 크리에이터를 선택합니다.
-- 비즈니스 카테고리(예: 전자상거래, 건강 및 웰빙)를 선택합니다.
-- 다음을 누르고 안내에 따라 설정을 완료합니다.
+{% hint style="info" %}
+이미 Instagram 계정이 **비즈니스 계정**이라면 이 단계는 건너뛰세요.
+{% endhint %}
 
-### **2단계:** 인스타그램을 페이스북 페이지에 연결
+1. Instagram 앱을 열고 내 프로필로 이동해요.
+2. 오른쪽 위의 ☰ 메뉴를 눌러 **Settings and activity**(설정 및 활동) 화면으로 이동해요.
+3. 아래로 스크롤해서 **계정 유형 및 도구**를 누른 다음 **Switch to professional account**(프로페셔널 계정으로 전환)를 눌러요.
+4. **비즈니스**(광고용으로 권장) 또는 **크리에이터**를 선택해요.
+5. **비즈니스 카테고리**를 선택해요(예: 이커머스, 건강 및 웰니스).
+6. **다음**을 누르고 안내에 따라 설정을 마쳐요.
 
-**A: 페이스북 페이지 설정(권장)**
+### 2단계: Instagram을 Facebook 페이지에 연결하기
 
-- 페이스북으로 이동하여 비즈니스 페이지를 엽니다.
-- 설정(Settings, 왼쪽 사이드바)을 클릭합니다.
-- 연결된 계정(Linked Accounts) → 인스타그램(Instagram)을 선택합니다.
-- 계정 연결(Connect Account)을 클릭하고 인스타그램 계정에 로그인합니다.
-- 메시지 및 연결된 경험에 액세스 허용(Allow Access to Messages & Connected Experiences) 옵션이 활성화되어 있는지 확인합니다.
-- 확인(Confirm)을 클릭하여 연결을 완료합니다.
+**방법 A: Facebook의 **페이지 설정**에서 연결하기 (권장)**
 
-![인스타그램 계정 연결](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040691108/original/5FsVpOHXG7Qp9p33IE3cU-DgXWWJ1sLJzg.png?1738217049)
+1. Facebook에서 내 비즈니스 페이지를 열어요.
+2. 왼쪽 사이드바에서 **설정**을 클릭해요.
+3. **Linked Accounts**(연결된 계정) → **Instagram**을 선택해요.
+4. **Connect Account**(계정 연결)를 클릭하고 Instagram 계정에 로그인해요.
+5. **Allow Access to Messages & Connected Experiences**(메시지 및 연결된 환경 접근 허용) 옵션이 켜져 있는지 확인해요.
+6. **확인**을 클릭해 연결을 마쳐요.
 
-**B: 인스타그램 앱 사용(전문 계정이 있는 경우에만 이 옵션 사용 가능)**
+![Facebook 페이지 설정에서 Instagram 계정을 연결하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040691108/original/5FsVpOHXG7Qp9p33IE3cU-DgXWWJ1sLJzg.png?1738217049)
 
-- 인스타그램 프로필로 이동합니다.
-- 프로필 편집(Edit Profile) → 공개 비즈니스 정보(Public Business Information)로 스크롤합니다.
-- 페이지(Page) → 페이스북 페이지 연결 또는 생성(Connect or Create a Facebook Page)을 탭합니다.
-- 기존 페이스북 페이지를 선택하거나 새로 만듭니다.
-- 완료(Done)를 탭하여 변경사항을 저장합니다.
+**방법 B: Instagram 앱에서 연결하기** (프로페셔널 계정일 때만 가능해요)
 
-### **3단계:** Meta Business Suite에서 연결 확인
+1. Instagram 프로필로 이동해요.
+2. **프로필 편집**을 누르고 **Public Business Information**(공개 비즈니스 정보)까지 스크롤해요.
+3. **Page**(페이지) → **Connect or Create a Facebook Page**(Facebook 페이지 연결 또는 만들기)를 눌러요.
+4. 기존 Facebook 페이지를 선택하거나 새 페이지를 만들어요.
+5. **완료**를 눌러 변경 내용을 저장해요.
 
-- Meta Business Suite(business.facebook.com)를 엽니다.
-- 설정(Settings) → 인스타그램 계정(Instagram Accounts)을 클릭합니다.
-- 인스타그램 계정이 목록에 표시되어야 합니다.
-- 표시되지 않으면 인스타그램 계정 추가(Add Instagram Account)를 클릭하고 로그인 단계를 따라 진행합니다.
+### 3단계: Meta Business Suite에서 연결 확인하기
 
-![Meta Business Suite 연결 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040691856/original/eUpki8wBwS8Abjl4X3ULQDJ-3fvzzIbcmA.png?1738218247)
+1. Meta Business Suite(business.facebook.com)를 열어요.
+2. **설정** → **Instagram Accounts**(Instagram 계정)를 클릭해요.
+3. 내 Instagram 계정이 목록에 있어야 해요.
+4. 목록에 없으면 **Add Instagram Account**(Instagram 계정 추가)를 클릭하고 로그인 안내에 따라 진행해요.
 
-### 최종 확인:
+![Meta Business Suite의 Instagram 계정 목록 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040691856/original/eUpki8wBwS8Abjl4X3ULQDJ-3fvzzIbcmA.png?1738218247)
 
-✔ 인스타그램이 전문 계정으로 설정되었습니다.
+### 최종 확인
 
-✔ 올바른 페이스북 페이지에 연결되었습니다.
+✔ Instagram이 프로페셔널 계정으로 설정되어 있어요.
 
-✔ Meta Business Suite에서 확인되었습니다.
+✔ 올바른 Facebook 페이지에 연결되어 있어요.
 
-이제 광고를 게시할 준비가 완료되었습니다!
+✔ Meta Business Suite에서 연결을 확인했어요.
 
-참고: 하나의 페이스북 페이지에는 하나의 인스타그램 계정만 연결할 수 있습니다.
+이제 광고를 게시할 준비가 끝났어요!
 
----
-
-## **인스타그램에 광고를 어떻게 게시하나요?**
-
-광고 관리자 홈 페이지에서 '캠페인 만들기(Create Campaign)'를 클릭하고 Meta 광고 캠페인을 생성합니다. 다음은 인스타그램을 배치로 사용하여 광고 캠페인을 만드는 단계입니다:
-
-- 원하는 페이스북 페이지를 선택합니다(기본 페이스북 페이지가 선택되며 변경 가능).
-- 광고를 게시하는 데 사용할 인스타그램 계정을 선택합니다. 인스타그램 계정 선택 시 두 가지 경우가 있습니다:
-
-**A: 선택한 페이스북 페이지에 연결된 인스타그램 계정이 없는 경우**, 인스타그램 계정 드롭다운에서 "페이스북 페이지 사용(Use Facebook page)"을 선택할 수 있으며, 인스타그램 광고는 페이스북 페이지의 이름, 프로필 사진 및 기타 세부 정보를 사용합니다.
-
-![페이스북 페이지 사용](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040696394/original/3qcLBIswBMTflJktZkhmS7StIevD6bJ9wQ.png?1738223106)
-
-**B: 사용자가 이미 선택한 페이스북 페이지에 연결된 인스타그램 계정을 가지고 있는 경우**, 해당 계정이 자동으로 선택되며 인스타그램에서 광고 캠페인을 게시하는 데 사용됩니다.
-
-![연결된 인스타그램 계정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040696681/original/TlSl65t7YUsZe5_vgZut8k349qUfkNwLyg.png?1738223330)
-
-- 인스타그램의 모든 배치는 수동 배치 섹션에 표시되며, 사용자는 광고 배치로 원하는 것들을 선택할 수 있습니다. 배치가 자동으로 설정되면 인스타그램의 모든 배치가 선택됩니다.
-
-![인스타그램 배치 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040697046/original/VdVbdtyZV5Zxc5UbsRYK4WurM9o5KtnWuQ.png?1738223651)
-
-- 광고 텍스트 및 미디어, 예산, 잠재고객 및 광고 캠페인의 기타 세부 정보를 추가한 후 게시를 클릭하여 페이스북과 인스타그램 모두에서 잠재고객에게 도달합니다.
-- 인스타그램에서 광고가 어떻게 보일지 미리보기를 확인하려면 미리보기 창에서 인스타그램 탭을 선택하면 됩니다.
-
-![인스타그램 광고 미리보기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040953988/original/e1Ux8VDmjNV5yQ5lKIhfo1FLwf8J4cqTSg.png?1738652690)
+{% hint style="info" %}
+Facebook 페이지 하나에는 Instagram 계정을 하나만 연결할 수 있어요.
+{% endhint %}
 
 ---
 
-## **인스타그램 광고 보고서**
+## Instagram에 광고를 게시하려면 어떻게 하나요?
 
-페이스북 광고와 마찬가지로, 인스타그램 광고의 성과 지표는 인스타그램 광고 실행 시작 직후 HL 광고 관리자에서 확인할 수 있습니다. 인스타그램 광고는 페이스북 광고가 사용하는 것과 동일한 보고 도구, 즉 통계 섹션을 사용하며 통합된 지표가 표시됩니다. 전체 수준과 개별 캠페인 수준에서 지표를 확인할 수 있습니다.
+**광고 관리자** 홈에서 **캠페인 만들기**를 클릭하고 Meta 광고 캠페인을 만들어요. 게재 위치로 Instagram을 선택해 광고 캠페인을 만드는 순서는 다음과 같아요.
 
-광고 관리자 통계에 대한 자세한 내용은 이 [도움말 문서](../기타/statistics-of-ad-campaigns-in-ad-manager.md)를 참고하세요.
+1. 사용할 Facebook 페이지를 선택해요. 기본 Facebook 페이지가 미리 선택되어 있고, 바꿀 수 있어요.
+2. 광고를 게시할 Instagram 계정을 선택해요. 선택한 Facebook 페이지에 따라 두 가지 경우가 있어요.
+
+   **A: 선택한 Facebook 페이지에 연결된 Instagram 계정이 없는 경우**
+   Instagram 계정 드롭다운에서 **Use Facebook page**(Facebook 페이지 사용)를 선택할 수 있어요. 그러면 Instagram 광고에 Facebook 페이지의 이름, 프로필 사진 등 정보가 쓰여요.
+
+   ![Instagram 계정 드롭다운에서 Facebook 페이지 사용을 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040696394/original/3qcLBIswBMTflJktZkhmS7StIevD6bJ9wQ.png?1738223106)
+
+   **B: 선택한 Facebook 페이지에 이미 Instagram 계정이 연결된 경우**
+   해당 계정이 자동으로 선택되고, 그 계정으로 Instagram 광고 캠페인이 게시돼요.
+
+   ![연결된 Instagram 계정이 자동으로 선택된 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040696681/original/TlSl65t7YUsZe5_vgZut8k349qUfkNwLyg.png?1738223330)
+3. 사용할 수 있는 Instagram 게재 위치는 **Manual Placements**(수동 게재 위치) 섹션에 나와요. 광고에 쓸 게재 위치를 선택하세요. **Instagram Explore Feed**(Instagram 탐색 피드)는 더 이상 선택할 수 있는 게재 위치가 아니에요.
+
+   ![Manual Placements 섹션에서 Instagram 게재 위치를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040697046/original/VdVbdtyZV5Zxc5UbsRYK4WurM9o5KtnWuQ.png?1738223651)
+4. 광고 문구와 미디어, 예산, 오디언스 등 나머지 항목을 입력하고 **게시**를 클릭하세요. 그러면 Facebook과 Instagram 양쪽에서 오디언스에게 광고가 노출돼요.
+5. **미리보기** 창에서 Instagram 탭을 선택하면 Instagram에서 광고가 어떻게 보일지 확인할 수 있어요.
+
+   ![미리보기 창의 Instagram 탭 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155040953988/original/e1Ux8VDmjNV5yQ5lKIhfo1FLwf8J4cqTSg.png?1738652690)
 
 ---
 
-## **페이스북 페이지에서 인스타그램 계정을 어떻게 연결 해제하나요?**
+## Instagram 광고 리포팅
 
-사용자가 인스타그램 비즈니스 계정을 연결하면, 해당 인스타그램 계정은 페이스북 페이지에 연결되고 페이스북 페이지가 광고 게시에 사용될 때마다 인스타그램 계정이 자동으로 선택됩니다. 사용자가 연결된 페이스북 페이지에서 이 인스타그램 계정을 연결 해제하고 다른 페이지에 연결하고 싶어하는 경우를 고려해보겠습니다.
+Facebook 광고와 마찬가지로, Instagram 광고를 시작하고 얼마 지나면 하이퍼클래스 **광고 관리자**에서 성과 지표를 볼 수 있어요. Instagram 광고는 Facebook 광고와 같은 리포팅 도구인 **통계** 섹션을 쓰고, 두 광고의 지표를 합쳐서 보여 줘요. 전체 기준으로도, 캠페인 하나하나 기준으로도 지표를 확인할 수 있어요.
 
-이는 Meta의 다음 도움말 문서를 참고하여 수행할 수 있습니다: [Connect or disconnect an Instagram account and your Page](https://www.facebook.com/business/help/898752960195806)
+**광고 관리자** 통계에 대한 자세한 내용은 [이 도움말](ad-manager-statistics-of-ad-campaigns.md)을 참고하세요.
 
 ---
-*원문 최종 수정: 2025-06-26*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+
+## Instagram 계정을 Facebook 페이지에서 연결 해제하려면 어떻게 하나요?
+
+Instagram 비즈니스 계정을 연결하면 그 계정이 Facebook 페이지에 연결돼요. 이후 그 Facebook 페이지로 광고를 게시할 때마다 Instagram 계정이 자동으로 선택돼요. 이 Instagram 계정을 연결된 Facebook 페이지에서 해제하고 다른 페이지에 연결하고 싶다면, Meta의 도움말을 참고하세요: [Connect or disconnect an Instagram account and your Page](https://www.facebook.com/business/help/898752960195806)
+
+---
+
+## 자주 묻는 질문
+
+### 하이퍼클래스에서 Instagram 광고를 하려면 Instagram 계정이 꼭 있어야 하나요?
+아니요. 연결된 Instagram 계정이 없으면 선택한 Facebook 페이지 정보를 Instagram 광고에 쓸 수 있어요.
+
+### 연결된 Instagram 계정이 없으면 어떻게 되나요?
+Instagram 광고에 Facebook 페이지의 이름, 프로필 사진, 설명, 팔로워 수가 쓰여요.
+
+### Instagram 계정은 어디에서 선택하나요?
+현재 Meta 캠페인 흐름에서는 Facebook 페이지와 Instagram 계정 선택 항목이 **Ad Set**(광고 세트) 단계에 있어요.
+
+### Instagram 게재 위치는 어디에서 선택하나요?
+광고 세트 단계의 **게재 위치** 영역에서 지원되는 Instagram 게재 위치를 설정해요. 특정 게재 위치를 직접 고르고 싶다면 **Manual Placements**를 켜세요.
+
+### Instagram Explore Feed를 게재 위치로 선택할 수 있나요?
+아니요. **Instagram Explore Feed**는 더 이상 선택할 수 있는 게재 위치가 아니에요.
+
+### Instagram에서 광고가 어떻게 보일지 미리 볼 수 있나요?
+네. 캠페인 빌더에서 Instagram 미리보기를 확인할 수 있어요.
+
+### Instagram 광고 성과는 어디에서 확인하나요?
+**마케팅 > 광고 관리자 > 통계**에서 확인해요. Meta 리포팅은 캠페인, 광고 세트, 광고 단위로 분석할 수 있어요.

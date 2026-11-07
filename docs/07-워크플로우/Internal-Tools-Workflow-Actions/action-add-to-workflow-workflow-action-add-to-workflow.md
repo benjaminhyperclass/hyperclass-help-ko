@@ -1,127 +1,119 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 07-워크플로우 > Internal Tools Workflow Actions
+원문: /support/solutions/articles/155000002554-action-add-to-workflow-workflow-action-add-to-workflow
+번역일: 2026-11-06
+카테고리: 07-워크플로우
 ---
 
-# 액션 - 워크플로우 추가 → 워크플로우 액션 - 워크플로우 추가
+# 워크플로우 액션 — Add to Workflow(워크플로우에 추가)
 
-"워크플로우 추가(Add to Workflow)" 액션을 사용하면 연락처를 특정 워크플로우로 자동 이동시켜 고객 참여 단계 간의 원활한 전환을 보장할 수 있습니다. 이 글에서는 "워크플로우 추가" 액션이 무엇인지, 주요 장점, 단계별 설정 가이드, 실제 사용 사례를 알아보겠습니다. FAQ 섹션에서는 자주 묻는 질문들도 다루겠습니다.
+**Add to Workflow**(워크플로우에 추가) 액션은 연락처를 다른 워크플로우로 자동으로 보내 줘요. 이 문서에서는 액션의 개념과 장점, 설정 방법, 활용 예시를 알아보고, 자주 묻는 질문에도 답해요.
 
-목차
+## Add to Workflow 액션이란?
 
-- [워크플로우 추가 액션이란?](#워크플로우-추가-액션이란)
-- [워크플로우 추가 액션의 주요 장점](#워크플로우-추가-액션의-주요-장점)
-- [워크플로우 액션 사용 단계별 프로세스](#워크플로우-액션-사용-단계별-프로세스)
-- [사용 사례](#사용-사례)
-- [자주 묻는 질문](#자주-묻는-질문)
+**Add to Workflow** 액션은 연락처를 지정한 다른 워크플로우에 자동으로 추가하는 자동화 도구예요. 고객 여정이나 업무 과정에서 연락처를 다음 단계로 넘기고, 알맞은 때에 알맞은 절차를 거치게 하려고 자주 써요. **Pass Input Trigger Parameters**(입력 트리거 파라미터 전달) 옵션을 켜면 원래 워크플로우의 트리거 데이터를 새 워크플로우로 가져갈 수 있어서, 더 개인화된 자동화를 만들 수 있어요.
 
-# 워크플로우 추가 액션이란?
+예를 들어 고객이 예약을 마치면 "Appointment Follow-Up" 워크플로우에 자동으로 추가해서, 예약 확인 정보와 사전 알림을 보낼 수 있어요.
 
-"워크플로우 추가" 액션은 연락처를 지정된 다른 워크플로우에 자동으로 추가할 수 있는 자동화 도구입니다. 이 액션은 주로 고객 여정이나 프로세스의 여러 단계 간에 연락처를 이동시키는 데 사용되어, 적절한 시점에 올바른 단계를 거치도록 안내합니다. 또한 입력 트리거 매개변수 전달(Pass Input Trigger Parameters) 옵션을 사용하면 원래 워크플로우 트리거의 데이터를 새 워크플로우로 전달하여 더욱 개인화된 자동화를 구현할 수 있습니다.
+## Add to Workflow 액션의 장점
 
-예를 들어, 고객이 예약을 완료한 후 자동으로 "예약 후속 조치" 워크플로우에 추가하여 확인 세부사항과 예약 전 알림을 제공할 수 있습니다.
+- **연락처 이동이 매끄러워요:** 연락처를 워크플로우 사이에서 자동으로 옮겨서 한 단계에서 다음 단계로 자연스럽게 이어 줘요.
+- **데이터가 그대로 유지돼요:** 중요한 트리거 데이터를 다른 워크플로우로 가져가서 핵심 정보가 사라지지 않아요.
+- **시간을 아껴요:** 고객을 다음 단계로 옮기는 작업을 직접 하지 않아도 되니 시간과 인력을 줄일 수 있어요.
+- **고객 경험이 좋아져요:** 후속 안내, 확인, 알림을 제때 보내 고객이 계속 관심을 갖고 정보를 받을 수 있어요.
+- **확장하기 쉬워요:** 비즈니스가 커져도 수동으로 고치지 않고 자동화 규모를 키울 수 있어요.
 
-## 워크플로우 추가 액션의 주요 장점
+## 설정 방법
 
-- **원활한 연락처 전환**: 워크플로우 간에 연락처를 자동으로 이동시켜 한 단계에서 다음 단계로의 원활한 전환을 보장합니다.
+**Add to Workflow** 액션은 다음 순서로 설정하세요.
 
-- **데이터 일관성**: 중요한 트리거 데이터를 한 워크플로우에서 다른 워크플로우로 전달하여 핵심 정보가 손실되지 않도록 합니다.
+1. **자동화 > 워크플로우**로 이동하세요.
 
-- **시간 절약 자동화**: 고객 전환 관리에서 수동 개입의 필요성을 제거하여 시간과 자원을 절약합니다.
+   ![자동화 메뉴의 워크플로우 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038114650/original/tRXiDgUdX_4fI8YqkdCz_A9hIUQ6EHf2ow.png?1733903018)
 
-- **향상된 고객 경험**: 고객에게 시기적절한 후속 조치, 확인 및 알림을 제공하여 지속적인 참여와 정보 제공을 보장합니다.
+2. 오른쪽 위의 **+ Create Workflow**(워크플로우 만들기) 버튼을 클릭하세요.
+3. 드롭다운 메뉴에서 **처음부터 시작**을 선택하세요. 워크플로우 빌더 화면이 열려요.
 
-- **확장성**: 수동 조정 없이도 비즈니스 요구가 증가함에 따라 자동화 프로세스를 쉽게 확장할 수 있습니다.
+   ![처음부터 시작 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038132428/original/zWd3p4FdFP0hYyIRAO5JVwCDYvDvw66MLQ.png?1733913709)
 
-## 워크플로우 액션 사용 단계별 프로세스
+4. **+** 버튼을 클릭해 워크플로우 액션 목록을 열어요.
+5. 아래로 스크롤해서 **Add to Workflow**를 찾아 클릭하세요. 설정 창이 열려요.
 
-"워크플로우 추가" 액션을 구성하고 설정하는 방법입니다:
+   ![액션 목록에서 Add to Workflow 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038115145/original/pNuCen1d6iXBNwiSLuY9sEKNrGIvKsuklA.png?1733903456)
 
-**자동화(Automation)** 섹션 내의 **"워크플로우(Workflows)"** 메뉴로 이동하세요.
+### 액션 이름 정하기
 
-![워크플로우 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038114650/original/tRXiDgUdX_4fI8YqkdCz_A9hIUQ6EHf2ow.png?1733903018)
+나중에 알아보기 쉽도록 액션 이름을 지어 주세요. 이 예시에서는 **“Add to AI Appointment Booking Workflow”**라고 이름 붙였어요.
 
-우상단의 **"+ 워크플로우 생성(+ Create Workflow)"** 버튼을 클릭하세요. 드롭다운 메뉴에서 "+ 처음부터 시작(+ Start from Scratch)" 옵션을 선택하면 워크플로우 빌더로 이동합니다.
+![액션 이름 입력 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038115198/original/gr39JSt3FZrwEd59VtOK2D52GLTqCrh7cw.png?1733903483)
 
-![워크플로우 생성](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038132428/original/zWd3p4FdFP0hYyIRAO5JVwCDYvDvw66MLQ.png?1733913709)
+### 대상 워크플로우 선택하기
 
-"+" 버튼을 클릭하여 모든 워크플로우 액션 목록을 확인하세요. 아래로 스크롤하여 "워크플로우 추가(Add to Workflow)" 옵션을 찾고 클릭하여 설정을 구성하세요.
+연락처를 추가할 워크플로우를 고르세요. 이 예시에서는 이미 만들어 둔 “AI Appointment Booking” 워크플로우를 선택했어요.
 
-![워크플로우 추가 액션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038115145/original/pNuCen1d6iXBNwiSLuY9sEKNrGIvKsuklA.png?1733903456)
+![대상 워크플로우 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038115668/original/Kc_sYyQmb_EfASQ6ZlIb2lJqVNHBSFY1Cw.png?1733903724)
 
-**액션 이름 지정**
+### Pass Input Trigger Parameters 켜기 (선택)
 
-액션을 쉽게 식별할 수 있도록 설명적인 이름을 제공하세요. 이 예시에서는 액션 이름을 "AI 예약 워크플로우 추가"로 지정했습니다.
+처음 워크플로우의 트리거 데이터를 새 워크플로우로 가져가려면 이 옵션을 켜세요. 예를 들어 연락처 정보나 예약 날짜 같은 핵심 정보를 넘길 수 있어요.
 
-![액션 이름](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038115198/original/gr39JSt3FZrwEd59VtOK2D52GLTqCrh7cw.png?1733903483)
+{% hint style="info" %}
+이 옵션은 원래 트리거 이벤트의 데이터만 받는 워크플로우로 전달해요. 워크플로우 중간에 만들어진 결과는 전달하지 않아요. 예를 들어 **Custom Code**(커스텀 코드) 액션의 API 호출로 받은 데이터는 전달되지 않아요.
+{% endhint %}
 
-**대상 워크플로우 선택**
+![Pass Input Trigger Parameters 옵션 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038115803/original/9xzDXbG9XT_zf8sIhDxRhaxJZINMpnQgyA.png?1733903816)
 
-연락처가 추가될 워크플로우를 선택하세요. 이 예시에서는 "AI 예약"이라는 기존 워크플로우를 선택했습니다.
+### 액션 저장하기
 
-![대상 워크플로우](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038115668/original/Kc_sYyQmb_EfASQ6ZlIb2lJqVNHBSFY1Cw.png?1733903724)
+워크플로우 빌더로 돌아가기 전에 아래쪽의 **Save Action**(액션 저장) 버튼을 꼭 클릭하세요.
 
-**"입력 트리거 매개변수 전달" 활성화 (선택사항)**
+![Save Action 버튼 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038115871/original/aTc1vxLiW5WhluFw4lWVhcCtVRetLnc5WA.png?1733903843)
 
-초기 트리거의 데이터를 새 워크플로우로 전달하려면 이 옵션을 활성화하세요. 예를 들어, 연락처 세부사항, 예약 날짜 또는 기타 핵심 정보를 전달할 수 있습니다.
+### 테스트하고 저장하기
 
-이 옵션은 원래 트리거 이벤트 데이터만 수신 워크플로우로 전달합니다. 워크플로우에서 나중에 생성된 출력(예: 커스텀 코드 API 호출에서 반환된 데이터)은 전달하지 않습니다.
+테스트를 실행해서 액션이 의도대로 동작하는지 확인하세요.
 
-![트리거 매개변수 전달](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038115803/original/9xzDXbG9XT_zf8sIhDxRhaxJZINMpnQgyA.png?1733903816)
+{% hint style="info" %}
+워크플로우 빌더를 나갈 때는 초안(Draft)을 꼭 **Save**(저장)하세요. 그러면 나중에 다시 들어왔을 때 작업하던 곳에서 이어서 만들 수 있어요.
+{% endhint %}
 
-워크플로우 빌더로 돌아가기 전에 하단의 **"액션 저장(Save Action)"** 버튼을 클릭해야 합니다.
+![워크플로우 테스트와 저장 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038116576/original/WdUuFt-1pM9V-4cUMjnWvbW9v_brVnvozQ.png?1733904323)
 
-![액션 저장](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038115871/original/aTc1vxLiW5WhluFw4lWVhcCtVRetLnc5WA.png?1733903843)
+### 워크플로우 게시하기
 
-**테스트 및 저장**
+모두 확인했다면 토글을 켜서 워크플로우를 활성화하세요.
 
-액션이 예상대로 작동하는지 확인하기 위해 테스트를 실행하세요.
-
-참고: 워크플로우 빌더를 떠날 때마다 초안을 **"저장(Save)"**해야 다시 돌아왔을 때 중단한 지점부터 워크플로우 구축을 계속할 수 있습니다.
-
-![워크플로우 저장](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038116576/original/WdUuFt-1pM9V-4cUMjnWvbW9v_brVnvozQ.png?1733904323)
-
-**워크플로우 발행**
-
-모든 것이 확인되면 토글 옵션을 사용하여 워크플로우를 활성화하세요.
-
-![워크플로우 발행](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038132785/original/oxz5feoW5CHFb-2FwvvHMiNYhF52uDGl1Q.png?1733913938)
+![워크플로우 활성화 토글 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155038132785/original/oxz5feoW5CHFb-2FwvvHMiNYhF52uDGl1Q.png?1733913938)
 
 ## 자주 묻는 질문
 
-**Q: 연락처를 여러 워크플로우에 동시에 추가할 수 있나요?**
+### 연락처를 여러 워크플로우에 한꺼번에 추가할 수 있나요?
 
-아니요, "워크플로우 추가" 액션은 한 번에 하나의 워크플로우에만 연락처를 추가합니다. 하지만 자동화에서 여러 "워크플로우 추가" 액션을 구성하여 이를 구현할 수 있습니다.
+아니요. **Add to Workflow** 액션은 한 번에 하나의 워크플로우에만 연락처를 추가해요. 대신 자동화 안에 **Add to Workflow** 액션을 여러 개 넣으면 같은 효과를 낼 수 있어요.
 
-**Q: "입력 트리거 매개변수 전달"을 활성화하면 어떻게 되나요?**
+### Pass Input Trigger Parameters를 켜면 어떻게 되나요?
 
-활성화하면 초기 트리거의 데이터(연락처 세부사항, 예약 날짜 등)를 새 워크플로우로 전달합니다. 이를 통해 새 워크플로우의 후속 액션을 개인화할 수 있습니다.
+이 옵션을 켜면 처음 트리거의 데이터(연락처 정보, 예약 날짜 등)가 새 워크플로우로 넘어가요. 그래서 새 워크플로우의 이후 액션을 개인화할 수 있어요.
 
-**Q: "입력 트리거 매개변수 전달"을 활성화했을 때 어떤 필드를 사용할 수 있나요?**
+### Pass Input Trigger Parameters를 켜면 어떤 필드를 쓸 수 있나요?
 
-이 옵션을 활성화하면 시스템이 **원래 워크플로우 트리거 이벤트**의 모든 데이터를 새 워크플로우로 전달합니다. 정확한 필드는 트리거 유형에 따라 다릅니다:
+이 옵션을 켜면 **원래 워크플로우의 트리거 이벤트** 데이터가 모두 새 워크플로우로 넘어가요. 정확한 필드는 트리거 종류에 따라 달라요.
 
-- **예약 트리거**: 연락처 이름, 이메일, 전화번호, 예약 날짜/시간, 배정된 캘린더, 상태(예약됨/취소됨), 예약 ID
-- **폼 제출 트리거**: 폼 이름, 제출 날짜/시간, 제출된 필드(모든 매핑된 값), 연락처 세부사항
-- **설문 트리거**: 설문 이름, 제출된 답변, 연락처 세부사항
-- **인바운드 전화/대화 트리거**: 연락처 세부사항, 소스(전화/채팅), 타임스탬프, 배정된 사용자(있는 경우)
-- **커스텀 이벤트 트리거**: 해당 이벤트에 정의된 모든 커스텀 필드나 값
+- 예약 트리거: **Contact Name**(연락처 이름), 이메일, 전화번호, 예약 날짜/시간, 배정된 캘린더, 상태(예약됨/취소됨), 예약 ID
+- 폼 제출 트리거: 폼 이름, 제출 날짜/시간, 제출된 필드(매핑된 모든 값), **Contact Details**(연락처 세부정보)
+- 설문 트리거: 설문 이름, 제출된 답변, **Contact Details**
+- **Inbound Call**(인바운드 통화)/대화 트리거: **Contact Details**, 출처(통화/채팅), 타임스탬프, **Assigned User**(할당된 사용자, 있는 경우)
+- 커스텀 이벤트 트리거: 해당 이벤트에 정의한 모든 커스텀 필드와 값
 
-수신 워크플로우 액션(예: "이메일 발송" 또는 "커스텀 값 업데이트") 내에서 이러한 필드를 보고 매핑할 수 있습니다. 이를 통해 개인화가 올바르게 전달되도록 할 수 있습니다.
+이 필드는 새 워크플로우의 액션(예: **Send Email**(이메일 보내기), **Update Custom Value**(커스텀 값 업데이트))에서 확인하고 매핑할 수 있어요. 덕분에 개인화 정보가 제대로 이어져요.
 
-**Q: "입력 트리거 매개변수 전달"이 올바르게 작동하는지 어떻게 알 수 있나요?**
+### Pass Input Trigger Parameters가 제대로 동작하는지 어떻게 확인하나요?
 
-워크플로우를 활성화하기 전에 테스트할 수 있습니다. 테스트를 실행하여 데이터가 예상대로 전달되는지 확인하세요.
+워크플로우를 활성화하기 전에 테스트를 실행해 보세요. 데이터가 의도대로 전달되는지 확인할 수 있어요.
 
-**Q: "워크플로우 추가" 액션을 사용할 때, 다음 워크플로우를 시작하려면 어떤 트리거를 사용해야 하나요?**
+### Add to Workflow 액션을 쓸 때 다음 워크플로우의 트리거는 무엇으로 설정하나요?
 
-"워크플로우 추가" 액션을 통해 연락처를 받는 워크플로우에는 수동으로 트리거를 설정할 필요가 없습니다. 시스템이 자동으로 연락처를 워크플로우가 시작하는 지점에 등록합니다. 추가 트리거는 필요하지 않습니다. 연락처가 자동화를 통해 추가될 것이라는 전제하에 새 워크플로우를 설계하고, 원하는 첫 번째 액션(예: 이메일 발송, 대기, 기회 생성/업데이트 등)으로 워크플로우를 시작하면 됩니다. "입력 트리거 매개변수 전달"을 활성화하면 원래 워크플로우의 데이터를 사용하여 다음 단계를 개인화할 수도 있습니다.
+**Add to Workflow** 액션으로 연락처를 받는 워크플로우에는 트리거를 따로 설정하지 않아도 돼요. 워크플로우가 시작되는 지점에서 시스템이 연락처를 자동으로 등록해 주기 때문에 추가 트리거가 필요 없어요. 자동화로 연락처가 추가된다고 생각하고 새 워크플로우를 설계한 다음, 원하는 첫 액션(예: **Send Email**, **Wait**(대기), **Create/Update Opportunity**(기회 생성/업데이트))으로 시작하세요. **Pass Input Trigger Parameters**를 켜면 원래 워크플로우의 데이터로 이후 단계를 개인화할 수도 있어요.
 
-**Q: 커스텀 코드 액션에서 반환된 데이터(예: API 응답)를 '입력 트리거 매개변수 전달'을 사용하여 다음 워크플로우로 전달할 수 있나요?**
+### Custom Code 액션의 결과(예: API 응답)를 Pass Input Trigger Parameters로 다음 워크플로우에 넘길 수 있나요?
 
-아니요. "입력 트리거 매개변수 전달"은 워크플로우 시작 시점의 트리거 이벤트 페이로드만 전달합니다. 나중에 실행되는 액션(커스텀 코드 응답 포함)의 출력은 전달하지 않습니다. API 응답 데이터를 다른 워크플로우에서 사용하려면, 먼저 응답을 다음 워크플로우가 읽을 수 있는 곳(연락처 필드나 커스텀 값)에 저장한 다음 연락처를 다음 워크플로우에 추가하세요.
-
----
-*원문 최종 수정: Tue, 3 Mar, 2026 at 6:48 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+아니요. **Pass Input Trigger Parameters**는 워크플로우가 시작될 때의 트리거 이벤트 데이터만 전달해요. 이후에 실행되는 액션의 결과(**Custom Code** 응답 포함)는 전달하지 않아요. API 응답 데이터를 다른 워크플로우에서 쓰려면, 먼저 응답을 다음 워크플로우가 읽을 수 있는 곳에 저장하세요. 예를 들어 연락처 필드나 **Custom Value**(커스텀 값)에 저장한 뒤, 연락처를 다음 워크플로우에 추가하면 돼요.

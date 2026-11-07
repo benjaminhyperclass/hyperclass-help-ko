@@ -1,154 +1,137 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 04-캘린더-예약 > Round Robin Calendars
+원문: /support/solutions/articles/155000002711-managing-team-member-assignments-in-round-robin-calendars
+번역일: 2026-11-06
+카테고리: 04-캘린더-예약
 ---
 
-# 라운드 로빈 캘린더에서 팀원 배정 관리하기
+# 라운드 로빈 캘린더에서 팀원 배정 관리
 
-라운드 로빈 캘린더(Round Robin Calendars)에서 팀원을 올바르게 배정하면 공평하고 효율적인 예약 분배가 가능합니다. 이 기능을 통해 비즈니스는 일정을 자동화하면서도 특정 선호도에 따라 예약을 배정할 수 있는 유연성을 유지할 수 있습니다.
-
----
-
-목차
-
-- [주요 용어 이해하기](#주요-용어-이해하기)
-- [일정 변경 설정 구성하기](#일정-변경-설정-구성하기)
-- [신규 예약 설정하기](#신규-예약-설정하기)
-- [추가 설정](#추가-설정)
-- [모범 사례](#모범-사례)
-- [자주 묻는 질문](#자주-묻는-질문)
+라운드 로빈 캘린더에서 팀원을 알맞게 배정하면 예약이 공평하고 효율적으로 나뉘어요. 예약 배정을 자동화하면서도, 필요할 때는 특정 팀원에게 배정하도록 조정할 수 있어요.
 
 ---
 
-## **주요 용어 이해하기**
+## 주요 용어
 
-라운드 로빈 캘린더를 효과적으로 관리하려면 팀원 배정에 영향을 주는 주요 용어를 이해해야 합니다. 이 정의들을 통해 설정을 올바르게 구성하고 원활한 예약 분배를 보장할 수 있습니다.
+라운드 로빈 캘린더를 관리하려면 팀원 배정에 영향을 주는 용어를 먼저 알아 두세요. 용어를 알면 설정을 정확히 하고 예약을 매끄럽게 나눌 수 있어요.
 
-- **예약 담당자(Appointment Owner):** 예약이 접수될 때 해당 예약에 배정되는 사용자입니다.
-
-- **배정된 사용자(Assigned User):** 시스템 내에서 연락처에게 지정된 사용자로, 지속적인 상호작용 관리에 주로 사용됩니다.
-
----
-
-## **일정 변경 설정 구성하기**
-
-일정 변경 설정은 고객이 예약을 수정할 때 예약이 어떻게 재배정될지를 결정합니다. 이 설정을 통해 예약 배정의 효율성을 유지하면서도 유연성을 보장할 수 있습니다.
-
-### 1단계: 고급 설정 접근하기
-
-- `Settings(설정) → Calendars(캘린더)`로 이동하여 **라운드 로빈 캘린더**를 선택합니다.
-
-![라운드 로빈 캘린더 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042366100/original/3SMpQ7qa4lD6BLaFi9L_J3Rs8Ms2OQT8-Q.gif?1740665818)
-
-- **Meeting Details(미팅 세부사항)**을 클릭하고 **Team Members(팀원)**를 선택합니다.
-
-![팀원 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042366339/original/4yDNu0cbLY-LpL3SA30kzN7xs7eBgkDZ3Q.png?1740665973)
-
-### 2단계: 일정 변경 옵션 선택하기
-
-- **Advanced Settings(고급 설정)**에서 일정 변경 설정을 구성합니다.
-
-![고급 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042366610/original/i7gb-VZvA9RcbHWUT7iYA78uRTJf_FbDFQ.png?1740666133)
-
-- **라운드 로빈으로 재배정:** 라운드 로빈 스케줄링을 통해 재배정하도록 선택하면, 일정이 변경된 예약은 라운드 로빈 알고리즘에 따라 어떤 팀원에게든 배정됩니다.
-
-- **동일한 예약 담당자 유지:** 동일한 예약 담당자를 유지하도록 설정하면, 연락처가 일정 변경 링크를 통해 예약을 변경할 때 예약 위젯(Booking Widget)에서 기존 예약 담당자의 시간대만 표시됩니다.
-
-**예시:** 사용자 A가 기존 예약 담당자였다면, 연락처가 예약을 변경할 때 사용자 A의 예약 가능 시간만 일정 변경에 표시됩니다.
-
-참고: 'Allow Staff Selection(직원 선택 허용)'을 끄면 예약자가 예약 위젯에서 직원을 변경하는 것을 방지할 수 있습니다. 자세한 내용은 [라운드 로빈 캘린더에서 직원 선택을 구성하는 방법](../기타/how-to-configure-staff-member-selection-in-round-robin-calendars-.md)을 참조하세요.
+- 예약 담당자(Appointment Owner): 예약이 잡힐 때 그 예약에 배정된 사용자예요.
+- 할당된 사용자(Assigned User): 시스템에서 연락처에 지정된 담당 사용자예요. 보통 이후 소통을 관리할 때 써요.
 
 ---
 
-## 신규 예약 설정하기
+## 일정 변경 설정
 
-신규 예약 설정을 통해 비즈니스는 미리 정의된 조건에 따라 직원 배정을 자동화할 수 있으며, 필요할 때 고객이 적절한 팀원과 예약할 수 있도록 보장합니다.
+일정 변경 설정은 고객이 예약을 바꿀 때 예약을 어떻게 다시 배정할지 정해요. 유연하게 대응하면서도 예약 배정을 효율적으로 유지할 수 있어요.
 
-### 1단계: "배정된 사용자와 항상 예약" 활성화하기
+### 1단계: 고급 설정 열기
 
-- 이 기능을 통해 신규 예약이 항상 연락처의 배정된 사용자와 예약되어야 하는지 선택할 수 있습니다. 연락처에 배정된 사용자가 있으면 해당 사용자에게 우선권이 주어지고, 그렇지 않으면 라운드 로빈 배정이 됩니다.
+1. **설정 > 캘린더**로 이동해 라운드 로빈 캘린더를 선택하세요.
 
-![배정된 사용자와 항상 예약](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042369995/original/iZGxloCNkMhUwJkv9iYa-uRrYyDN8gBKfg.gif?1740668410)
+   ![캘린더 설정에서 라운드 로빈 캘린더 선택하기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042366100/original/3SMpQ7qa4lD6BLaFi9L_J3Rs8Ms2OQT8-Q.gif?1740665818)
+2. **Meeting Details**(미팅 상세 정보)를 클릭한 다음 **팀원**을 선택하세요.
 
-**팁**: 예약자가 예약 위젯에서 직원을 변경하지 못하도록 'Allow Staff Selection(직원 선택 허용)'을 끄세요.
+   ![Meeting Details에서 팀원 선택하기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042366339/original/4yDNu0cbLY-LpL3SA30kzN7xs7eBgkDZ3Q.png?1740665973)
 
-#### **사전 요구사항:**
+### 2단계: 일정 변경 옵션 선택
 
-- 리드나 고객이 시스템에 이미 배정된 사용자가 있어야 합니다.
-- 이 기능을 사용하려면 **폼(Form)**이 예약 위젯 순서에서 첫 번째여야 합니다. **Forms & Payments(폼 및 결제)** 탭에서 위젯 순서를 재배열할 수 있습니다.
+1. **고급 설정**에서 일정 변경 방식을 설정하세요.
 
-![위젯 순서 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042369584/original/V3BjcEKK8wTx6pFMirs-IQkV-4yFj2ld7w.png?1740668166)
+   ![고급 설정의 일정 변경 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042366610/original/i7gb-VZvA9RcbHWUT7iYA78uRTJf_FbDFQ.png?1740666133)
+2. 아래 두 옵션 중 하나를 선택하세요.
+   - **Reassign Through Round Robin**(라운드 로빈으로 재배정): 일정을 변경한 예약이 라운드 로빈 방식에 따라 아무 팀원에게나 배정돼요.
+   - **Keep Same Appointment Owner**(같은 예약 담당자 유지): 연락처가 일정 변경 링크로 예약을 바꾸면, 예약 위젯에 원래 예약 담당자의 시간대만 표시돼요.
 
-### 2단계: 구성 단계
+예를 들어 사용자 A가 원래 예약 담당자였고 연락처가 일정을 변경하면, 사용자 A의 예약 가능한 시간대만 표시돼요.
 
-- `Meeting Details(미팅 세부사항) → Team Members(팀원) → Advanced Settings(고급 설정)`으로 이동하여 **Always Book with Assigned User(배정된 사용자와 항상 예약)**을 활성화합니다.
-
-![배정된 사용자와 항상 예약 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042370312/original/AuuwGLM0GxC-YFZLIHj7rciymRCDL5LLcg.gif?1740668656)
-
-#### **신규 예약 설정 작동 방식**
-
-폼이 첫 번째일 때, 연락처가 정보를 입력합니다. 연락처의 이메일이나 전화번호를 기반으로 시스템이 연락처의 배정된 사용자를 확인합니다. 세 가지 시나리오가 가능합니다:
-
-- **배정된 사용자 없음**: 연락처에 배정된 사용자가 없으면, 예약이 라운드 로빈 스케줄링을 통해 배정됩니다.
-
-- **배정된 사용자가 캘린더에 포함되지 않음**: 연락처에 배정된 사용자(예: 사용자 A)가 있지만 해당 사용자가 캘린더에 포함되지 않으면, 캘린더 팀원들 중에서 라운드 로빈 스케줄링으로 예약이 배정됩니다.
-
-- **배정된 사용자가 캘린더에 포함됨**: 연락처에 배정된 사용자(예: 사용자 A)가 캘린더에 포함되면, 사용자 A의 시간대가 예약 위젯에 표시되고 사용자 A와 예약이 잡힙니다.
-
-**참고:** 이 설정을 끄면 모든 신규 예약은 라운드 로빈 스케줄링으로 진행됩니다.
+{% hint style="info" %}
+**Allow Staff Selection**(직원 선택 허용)을 끄면 예약하는 사람이 예약 위젯에서 담당 직원을 바꾸지 못해요. 자세한 내용은 [라운드 로빈 캘린더 직원 선택](round-robin-calendar-staff-selection.md) 문서를 참고하세요.
+{% endhint %}
 
 ---
 
-## **추가 설정**
+## 새 예약 설정
 
-예약 경험을 더욱 세밀하게 조정하기 위해 라운드 로빈 캘린더 내에서 연락처가 팀원에게 배정되는 방식에 영향을 주는 특정 설정을 활성화할 수 있습니다. 이 설정들은 **Notifications and Additional Options(알림 및 추가 옵션)** 탭에서 찾을 수 있습니다.
+새 예약 설정을 쓰면 미리 정한 조건에 따라 직원 배정을 자동화할 수 있어요. 필요한 경우 고객이 알맞은 팀원과 예약하도록 할 수 있어요.
 
-![추가 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042368798/original/LwPz6aAPrBUuXQxheGHIvsNOiQF2Qg6KFw.png?1740667622)
+### 1단계: Always Book with Assigned User 켜기
 
-#### **설정 1: 연락처를 해당하는 캘린더 팀원에게 배정**
+**Always Book with Assigned User**(항상 할당된 사용자로 예약)를 켜면 새 예약을 항상 연락처의 할당된 사용자와 잡을지 정할 수 있어요. 연락처에 할당된 사용자가 있으면 그 사용자가 우선 배정되고, 없으면 라운드 로빈으로 배정돼요.
 
-- 이 설정을 통해 예약이 접수될 때 연락처가 예약한 팀원에게 자동으로 배정됩니다.
+![Always Book with Assigned User 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042369995/original/iZGxloCNkMhUwJkv9iYa-uRrYyDN8gBKfg.gif?1740668410)
 
-- 예약과 커뮤니케이션을 단일 팀원과 일관성 있게 유지하여 고객 관리를 간소화하는 데 도움됩니다.
+{% hint style="info" %}
+**Allow Staff Selection**을 끄면 예약하는 사람이 예약 위젯에서 담당 직원을 바꾸지 못해요.
+{% endhint %}
 
-#### **설정 2: 연락처의 향후 예약을 동일한 팀원에게 자동 배정**
+#### 사전 조건
 
-- 이 설정을 활성화하면 연락처가 특정 팀원과 예약을 한 후, 해당 연락처의 모든 향후 예약이 자동으로 동일한 팀원에게 배정됩니다.
+- 리드나 고객에게 이미 할당된 사용자가 있어야 해요.
+- 예약 위젯 순서에서 **폼**이 맨 처음에 있어야 해요. 이 기능을 쓰려면 **Forms & Payments**(폼 및 결제) 탭에서 위젯 순서를 바꾸세요.
 
-- 이를 통해 연속성을 유지하고 고객이 시간이 지나도 동일한 직원과 작업할 수 있게 하여 고객 관계를 개선합니다.
+  ![Forms & Payments 탭에서 위젯 순서 바꾸기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042369584/original/V3BjcEKK8wTx6pFMirs-IQkV-4yFj2ld7w.png?1740668166)
+
+### 2단계: 설정하기
+
+**Meeting Details > 팀원 > 고급 설정**으로 이동해 **Always Book with Assigned User**를 켜세요.
+
+![Always Book with Assigned User 켜기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042370312/original/AuuwGLM0GxC-YFZLIHj7rciymRCDL5LLcg.gif?1740668656)
+
+#### 새 예약 설정이 작동하는 방식
+
+폼이 맨 처음에 있으면 연락처가 먼저 자기 정보를 입력해요. 시스템은 연락처의 이메일이나 전화번호로 할당된 사용자가 누구인지 확인해요. 경우는 세 가지예요.
+
+- **할당된 사용자가 없는 경우**: 라운드 로빈 방식으로 예약이 배정돼요.
+- **할당된 사용자가 캘린더에 속하지 않은 경우**: 연락처에 할당된 사용자(예: 사용자 A)가 캘린더 팀원이 아니면, 캘린더 팀원 사이에서 라운드 로빈 방식으로 예약이 배정돼요.
+- **할당된 사용자가 캘린더에 속한 경우**: 연락처에 할당된 사용자(예: 사용자 A)가 캘린더 팀원이면, 예약 위젯에 사용자 A의 시간대가 표시되고 사용자 A와 예약이 잡혀요.
+
+{% hint style="info" %}
+이 설정을 끄면 모든 새 예약이 라운드 로빈 방식으로 배정돼요.
+{% endhint %}
+
+라운드 로빈으로 배정되는 기준이 궁금하다면 [라운드 로빈 캘린더의 예약 배정 로직](appointment-distribution-logic-for-round-robin-calendars.md) 문서를 참고하세요.
 
 ---
 
-## **모범 사례**
+## 추가 설정
 
-모범 사례를 따르면 라운드 로빈 캘린더가 효과적이고 효율적으로 유지됩니다. 일정 충돌을 방지하고 운영 흐름을 개선하기 위해 다음 권장사항을 구현하세요.
+예약 과정을 더 세밀하게 조정하려면, 라운드 로빈 캘린더에서 연락처를 팀원에게 배정하는 방식에 영향을 주는 설정을 켜세요. 이 설정은 **Notifications and Additional Options**(알림 및 추가 옵션) 탭에서 찾을 수 있어요.
 
-- 정확한 예약 분배를 위해 팀원의 가용 시간을 최신으로 유지하세요.
+![알림 및 추가 옵션 탭의 추가 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042368798/original/LwPz6aAPrBUuXQxheGHIvsNOiQF2Qg6KFw.png?1740667622)
 
-- 비즈니스 요구사항에 맞게 **고급 설정**을 정기적으로 확인하세요.
+#### 설정 1: Assign Contacts to Their Respective Calendar Team Members(연락처를 해당 캘린더 팀원에게 할당)
 
-- 충돌을 방지하기 위해 모든 캘린더에서 일관된 설정을 유지하세요.
+- 예약이 잡히면 연락처가 예약한 팀원에게 자동으로 할당돼요.
+- 예약과 소통을 한 팀원이 일관되게 맡게 되어 고객 관리가 편해져요.
+
+#### 설정 2: Automatically Assign a Contact's Future Appointments to the Same Team Member(연락처의 이후 예약을 같은 팀원에게 자동 할당)
+
+- 이 설정을 켜면 연락처가 특정 팀원과 예약한 뒤의 모든 예약이 같은 팀원에게 자동으로 배정돼요.
+- 같은 직원과 계속 일할 수 있어 연속성이 유지되고 고객 관계가 좋아져요.
+
+---
+
+## 모범 사례
+
+모범 사례를 따르면 라운드 로빈 캘린더를 효과적이고 효율적으로 운영할 수 있어요. 아래 내용을 지켜 일정 충돌을 줄이고 업무 흐름을 개선하세요.
+
+- 팀원의 가용 시간을 최신 상태로 유지해야 예약이 정확하게 배정돼요.
+- **고급 설정**을 주기적으로 확인해 비즈니스 상황에 맞게 조정하세요.
+- 모든 캘린더의 설정을 일관되게 유지해 충돌을 막으세요.
 
 ---
 
 ## 자주 묻는 질문
 
-**Q: 고객에게 배정된 사용자가 없으면 어떻게 되나요?**
-라운드 로빈 로직이 자동으로 가용한 팀원을 배정합니다.
+### 고객에게 할당된 사용자가 없으면 어떻게 되나요?
+라운드 로빈 로직에 따라 예약 가능한 팀원이 자동으로 배정돼요.
 
-**Q: 특정 팀원에게 예약을 수동으로 배정할 수 있나요?**
-네, 캘린더 설정 내에서 예약을 수동으로 재배정할 수 있습니다.
+### 예약을 특정 팀원에게 직접 배정할 수 있나요?
+네, 캘린더 설정에서 예약을 직접 다시 배정할 수 있어요.
 
-**Q: 이 기능에서 일정 변경은 어떻게 작동하나요?**
-선택한 설정에 따라 예약이 기존 담당자와 유지되거나 라운드 로빈 로직을 통해 재배정될 수 있습니다.
+### 이 기능을 쓰면 일정 변경은 어떻게 처리되나요?
+선택한 설정에 따라 예약이 원래 담당자에게 그대로 남거나, 라운드 로빈 로직으로 다시 배정돼요.
 
-**Q: 연락처 레코드에서 예약을 잡을 때 드롭다운에서 모든 팀원이 보이지 않는 이유는 무엇인가요?**
+### 연락처에서 예약을 잡을 때 팀원 드롭다운에 모든 팀원이 보이지 않아요
+연락처 상세 화면(**CRM > 연락처** > 연락처 선택 > **예약** 탭)에서 예약을 잡으면, **팀원** 드롭다운에는 해당 예약의 캘린더에 배정된 사용자만 표시돼요.
 
-연락처 상세 화면(`CRM > Contacts(연락처) > Contact(연락처) > Appointments(예약)` 탭)에서 예약을 잡을 때, "Team Member(팀원)" 드롭다운에는 **해당 예약과 연결된 캘린더에 배정된 사용자**만 표시됩니다.
-
-드롭다운에 여러 팀원이 나타나도록 하려면 `Calendars(캘린더) > Select the Calendar(캘린더 선택) > Team Members(팀원)` 탭으로 이동하여 **관련된 모든 사용자를 해당 캘린더에 추가**하세요. 여기에 추가된 사용자만 수동 예약 시 드롭다운 목록에 나타납니다.
-
----
-*원문 최종 수정: Mon, 26 May, 2025 at 8:36 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+여러 팀원이 드롭다운에 나타나게 하려면 **캘린더 >** 해당 캘린더 선택 **> 팀원** 탭으로 이동해 필요한 사용자를 모두 추가하세요. 여기에 추가된 사용자만 직접 예약할 때 드롭다운 목록에 나타나요.

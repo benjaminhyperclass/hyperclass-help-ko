@@ -1,51 +1,124 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 31-리셀링 > Online Listings
+원문: /support/solutions/articles/155000005667-listings-analytics-dashboard
+번역일: 2026-11-07
+카테고리: 31-리셀링
 ---
 
-# 온라인 리스팅 분석 대시보드
+# 리스팅 분석 대시보드
 
-온라인 리스팅의 성과와 위치 지표에 대한 강력한 인사이트를 제공하는 온라인 리스팅 분석 대시보드(Online Listings Analytics Dashboard)를 출시했습니다! 이 새로운 대시보드를 통해 데이터 기반 의사결정을 내리고 온라인 가시성을 그 어느 때보다 효과적으로 향상시킬 수 있습니다.
+리스팅 분석 대시보드에서는 여러 디렉터리에 등록한 비즈니스 리스팅이 어떤 성과를 내고 있는지 한곳에서 볼 수 있어요. 노출, 사용자 행동, 프로필 활동을 확인하고 지역 검색에서의 존재감을 높이는 데 활용하세요.
 
-**목차**
+노출 수, 작업 수, 프로필 활동을 실시간으로 확인할 수 있어서 성과를 측정하고 리스팅 전략을 개선하기 좋아요.
 
-- [주요 기능](#주요-기능)
-- [시작하는 방법](#시작하는-방법)
-- [이 기능의 장점](#이-기능의-장점)
+{% hint style="warning" %}
+리스팅 분석은 현재 Yext 엔진으로 운영되는 리스팅에서만 쓸 수 있어요. Uberall 엔진의 분석은 아직 지원하지 않아요.
+{% endhint %}
 
-## 주요 기능
+## 리스팅 분석 대시보드란?
 
-- 총 리스팅 노출수: 검색 결과에서 리스팅이 나타난 횟수를 추적합니다.
-- 총 리스팅 액션 수: 클릭, 전화, 길 찾기 요청과 같은 사용자 상호작용을 측정합니다.
-- 프로필 조회수: 비즈니스 리스팅을 조회한 사람 수를 모니터링합니다.
-- 시간별 기기 사용량: 사용자가 어떤 기기(모바일, 데스크톱, 태블릿)로 리스팅에 접근하는지 확인합니다.
-- 플랫폼 인사이트: 사이트별로 프로필 조회수를 분석하여 더 깊은 트렌드를 발견합니다.
+고객이 온라인에서 내 비즈니스를 어떻게 찾고 이용하는지 아는 것은 성장에 꼭 필요해요. 리스팅 분석 대시보드는 여러 플랫폼에 등록한 비즈니스 리스팅의 성과를 한 화면에 모아서 보여 줘요. 이 대시보드로 할 수 있는 일은 다음과 같아요.
 
-![온라인 리스팅 분석 지표](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049323645/original/08wAxnkSmpu-Y-dYz8zSYtrsg0oBK2BgCw.png?1751595028)
+- 리스팅 노출 현황 확인
+- 사용자 참여(통화, 클릭, 길찾기) 추적
+- 시간에 따른 추세 분석
+- 개선할 부분 찾기
 
-![기기별 사용량 그래프](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049323651/original/sL6zOJMeq98uSP5qfYFTeu5zVEMBi1T8Vg.png?1751595049)
+디렉터리를 하나씩 직접 확인하지 않아도 되니, 온라인 리스팅을 꾸준히 좋은 상태로 관리할 수 있어요.
 
-![플랫폼별 프로필 조회수](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049323653/original/BWzK5KEvYGeGj5l2uIHAk-Na6fnq3voljA.png?1751595065)
+## 이럴 때 도움이 돼요
 
-## 시작하는 방법
+리스팅 성과를 추적하면 온라인 입지를 개선하고 고객 참여를 높이는 데 도움이 돼요. 분석 대시보드는 더 나은 결정을 내리고 성장을 확인할 수 있는 정보를 보여 줘요.
 
-**Listings** 탭으로 이동 → **Analytics**를 클릭하여 대시보드에 접근 → **날짜 필터**를 사용하여 특정 기간의 데이터를 확인합니다.
+- 성과를 한곳에서 확인해요: 여러 도구를 쓰지 않고도 모든 리스팅 성과 지표를 한 화면에서 볼 수 있어요.
+- 노출 현황을 추적해요: 디렉터리별 검색 결과에 내 비즈니스가 얼마나 자주 나타나는지 확인할 수 있어요.
+- 고객 행동을 파악해요: 클릭, 통화, 길찾기 요청으로 고객이 리스팅을 어떻게 이용하는지 알 수 있어요.
+- 추세를 분석해요: 시간에 따른 패턴을 보고 마케팅 활동의 효과를 판단할 수 있어요.
+- 데이터를 보고 결정해요: 실시간 정보를 바탕으로 리스팅을 다듬고 전환율을 높일 수 있어요.
 
-선택한 기간에 해당하는 관련 지표가 대시보드에 자동으로 업데이트됩니다.
+## 주요 지표와 기능
 
-![리스팅 분석 탭 위치](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049323654/original/KmcjbYBjbCB3U2hZJsM9tg7VBeoRBtyx_w.png?1751595079)
+대시보드에서 볼 수 있는 핵심 지표는 다음과 같아요.
 
-![분석 대시보드 인터페이스](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049323658/original/18QtkZZuozXCMp8Tps2I6abTpLVD9N32XA.png?1751595095)
+### 1. 전체 등록 정보 노출 수
 
-## 이 기능의 장점
+리스팅이 검색 결과에 얼마나 자주 나타나는지 보여 줘요. 플랫폼 전체에서 내 비즈니스가 얼마나 노출되는지 파악할 수 있어요.
 
-- 종합적인 인사이트: 강점과 개선이 필요한 영역을 쉽게 파악할 수 있습니다.
-- 데이터 기반 의사결정: 트렌드 분석을 활용하여 비즈니스 성과를 높이는 전략을 조정할 수 있습니다.
-- 향상된 사용자 경험: 실행 가능한 데이터를 통해 온라인 존재감을 효과적으로 최적화할 수 있습니다.
+![전체 등록 정보 노출 수 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155069703226/original/fGFNYxrmLHoNk_rdhGgjB1eMGeKGB-lolQ.png?1776860644)
 
-온라인 존재감에 대한 더 깊은 인사이트로 경쟁에서 앞서 나가세요. 새로운 리스팅 분석 대시보드를 지금 탐색하고 새로운 성장 기회를 발견해보세요!
+### 2. 전체 등록 정보 작업
 
----
-*원문 최종 수정: 2025년 7월 3일*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+사용자가 리스팅에서 한 행동을 측정해요. 다음과 같은 행동이 포함돼요.
+
+- 클릭
+- 통화
+- 길찾기 요청
+
+![전체 등록 정보 작업 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155069703294/original/2KMJnfUu-C3ga1ZnEr2kqU4QzZgjWNiS8w.png?1776860676)
+
+이 작업 수를 보면 사용자가 리스팅에 얼마나 반응하는지 알 수 있어요.
+
+### 3. 프로필 조회수
+
+내 비즈니스 프로필을 본 사용자 수를 확인해요. 비즈니스에 대한 관심도를 보여 주는 지표예요.
+
+![프로필 조회수 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155069703401/original/c8yDIXtdLl66TzCJ7m9wwfyiNUrAckk8MA.png?1776860715)
+
+### 4. Device Usage Over Time(시간에 따른 기기 사용)
+
+사용자가 어떤 기기로 리스팅에 접속하는지 보여 줘요.
+
+- 모바일
+- 데스크톱
+- 태블릿
+
+![기기별 사용 현황 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155069703471/original/y0sP7_A253NfNjxUpBdHz3UbahSk4dubVQ.png?1776860761)
+
+가장 많이 쓰이는 기기에 맞게 리스팅을 개선할 수 있어요.
+
+### 5. Platform Insights(플랫폼별 인사이트)
+
+리스팅 플랫폼별로 성과를 나누어 보고 다음을 찾을 수 있어요.
+
+- 성과가 좋은 디렉터리
+- 성과가 낮은 채널
+
+![플랫폼별 성과 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155069703779/original/c2yzvLiNnIECJKNLbAUgT7kai7m7bgaM9Q.png?1776860991)
+
+## 대시보드 열기
+
+다음 단계를 따라 리스팅 분석 대시보드를 열어요.
+
+1. 왼쪽 메뉴에서 **리스팅**을 클릭하세요.
+2. **분석** 탭을 클릭하세요.
+3. 날짜 필터에서 확인하고 싶은 기간을 선택하세요.
+
+![리스팅 분석 대시보드 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155069703949/original/dkNCl-jOyI92h6kYscEJfSemugVcByQ_LQ.jpeg?1776861102)
+
+선택한 기간에 맞춰 대시보드가 자동으로 업데이트돼요.
+
+## 대시보드 활용 팁
+
+### 추세 파악하기
+
+날짜 필터로 기간별 성과를 비교해 보세요. 다음을 확인할 수 있어요.
+
+- 성장 패턴
+- 계절에 따른 변화
+- 참여가 줄어든 시점
+
+### 참여도 측정하기
+
+사용자가 리스팅을 어떻게 이용하는지 알고 싶다면 **전체 등록 정보 작업**과 **프로필 조회수**를 중점적으로 보세요.
+
+### 리스팅 전략 개선하기
+
+- 성과가 낮은 플랫폼의 리스팅을 개선하세요.
+- 성과가 좋은 디렉터리에 더 집중하세요.
+- 참여가 낮으면 비즈니스 정보를 조정해 보세요.
+
+### 기기별 행동 살펴보기
+
+대부분의 사용자가 모바일로 접속한다면 다음을 확인하세요.
+
+- 비즈니스 정보가 간결한지
+- 바로 전화 걸기 기능이 잘 작동하는지

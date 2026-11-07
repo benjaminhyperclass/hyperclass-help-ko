@@ -1,104 +1,48 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 10-마케팅 > 제휴 캠페인
+원문: /support/solutions/articles/155000003643-how-to-track-leads-from-an-affiliate-campaign
+번역일: 2026-11-06
+카테고리: 10-마케팅
 ---
 
-# 제휴 캠페인에서 리드를 추적하는 방법
+# 제휴 캠페인에서 리드 추적 설정
 
-리드 추적은 성공적인 제휴 마케팅 캠페인의 핵심 요소입니다. 폼, 설문, 캘린더에서 발생하는 리드 추적을 자동화하면 제휴 파트너를 효율적으로 관리하고 그들의 노력에 대해 적절히 보상할 수 있습니다. 이 가이드는 폼, 설문, 캘린더를 사용하여 제휴 캠페인 내에서 리드 추적을 시작하는 간단한 단계를 안내합니다.
+제휴 캠페인에서 폼, 설문, 캘린더로 들어오는 리드를 자동으로 추적하는 방법을 안내해요. 추적을 설정해 두면 제휴 파트너별 성과를 관리하고, 파트너가 만든 리드에 맞춰 보상을 줄 수 있어요.
 
----
+## 제휴 캠페인에서 리드 추적하기
 
-**목차**
+1. **마케팅** 메뉴에서 **제휴 관리자**(Affiliate Manager)로 이동해요.
+2. **Campaign Page**(캠페인 페이지)를 클릭해 캠페인을 관리하는 화면을 열어요.
+3. **추가**를 클릭해 리드 추적용 새 캠페인을 만들어요.
+   ![추가 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033783420/original/OJJxADubEl5Wm2ZheJMKTdXQhASzjw7X2g.jpeg?1727691963)
+4. **소스 선택**에서 **폼**, **설문**, **캘린더** 중 캠페인의 소스로 쓸 항목을 선택해요. 이 소스들을 통해 제휴 파트너가 만든 리드를 추적할 수 있어요.
+   ![소스 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033783421/original/HGm1Q1kW6UY5XM4U6AnVuaDetBVjsne1qg.jpeg?1727691963)
+5. 드롭다운 메뉴에서 추적할 폼, 설문, 캘린더를 구체적으로 선택해요.
+   ![소스 세부 항목 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033783419/original/xYJCHZRkvozpHlWIWkBRlcnYP18hSsC5Dg.jpeg?1727691963)
+6. 캠페인에 자동으로 만들어진 기본 제휴 캠페인 URL을 확인해요.
 
-- [단계별 가이드: 제휴 캠페인에서 리드 추적하기](#단계별-가이드-제휴-캠페인에서-리드-추적하기)
-  - [1단계: 제휴 캠페인 페이지로 이동](#1단계-제휴-캠페인-페이지로-이동)
-  - [2단계: 추가 클릭](#2단계-추가-클릭)
-  - [3단계: 소스 선택](#3단계-소스-선택)
-  - [4단계: 소스 세부사항 선택](#4단계-소스-세부사항-선택)
-  - [5단계: 기본 제휴 캠페인 URL 검토](#5단계-기본-제휴-캠페인-url-검토)
-  - [6단계: 리드당 지급 활성화 (선택사항)](#6단계-리드당-지급-활성화-선택사항)
-  - [7단계: 추가 옵션 단계](#7단계-추가-옵션-단계)
-  - [8단계: 캠페인 발행](#8단계-캠페인-발행)
-  - [9단계: 리드 추적](#9단계-리드-추적)
-- [효과적인 리드 추적을 위한 중요 사항](#효과적인-리드-추적을-위한-중요-사항)
-- [결론: 더 나은 캠페인 결과를 위한 리드 추적 최적화](#결론-더-나은-캠페인-결과를-위한-리드-추적-최적화)
+   {% hint style="info" %}
+   계정에 브랜드 도메인을 추가하지 않았다면 제휴 캠페인 URL은 시스템 도메인으로 만들어져요. 직접 쓰는 브랜드 도메인을 추가하려면 **설정 > 비즈니스 프로필 > 브랜드 도메인**으로 이동하세요. 브랜드 도메인을 추가하면 모든 제휴 캠페인 URL이 자동으로 바뀌어요.
+   {% endhint %}
 
----
+7. (선택) 제휴 파트너가 만든 리드마다 보상을 주려면 **Commissions**(커미션) 탭에서 **Pay Per Lead**(리드당 결제) 옵션을 켜요. 자세한 설정 방법은 "How to Set Up and Pay Affiliates for Generating Leads" 문서를 참고하세요.
+8. (선택) 캠페인 설명을 추가하고, 제휴 파트너를 지정하고, 필요한 다른 설정을 조정해 캠페인을 더 세부적으로 꾸밀 수 있어요.
+   ![캠페인 선택 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033783417/original/ZTRR-lA0FNUA2GYiIXqj6gCJkqdx2A-T2w.jpeg?1727691962)
+9. 설정을 모두 확인했다면 **게시**를 클릭해 캠페인을 시작해요.
+10. 캠페인이 시작되면 리드가 각 제휴 파트너의 프로필 페이지에 자동으로 기록돼요. **리드** 탭에서 폼, 설문, 캘린더를 통해 들어온 리드를 확인할 수 있어요. 각 리드가 어디에서 왔는지는 **Source**(소스) 필드로 알 수 있어요.
+    ![리드 탭의 리드 목록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033783418/original/tScA8p17VPCMhgpVjAROIzSw3l8eKJaxBw.jpeg?1727691963)
 
-## **단계별 가이드: 제휴 캠페인에서 리드 추적하기**
+## 리드를 정확히 추적하기 위한 참고 사항
 
-### **1단계: 제휴 캠페인 페이지로 이동**
+- 커스텀 임베드/iframe은 지원되지 않아요. 폼, 설문, 캘린더가 퍼널이나 웹페이지 안에 구성 요소로 추가되어 있을 때만 리드 추적이 작동해요. 제휴 캠페인의 소스로 쓰기 전에 해당 구성 요소가 퍼널에 제대로 들어가 있는지 확인하세요.
+- 제휴 URL에 브랜드 도메인을 쓰려면 **설정 > 비즈니스 프로필 > 브랜드 도메인**에서 브랜드 도메인을 추가해야 해요.
 
-시작하려면 마케팅(Marketing) 탭 아래의 **제휴 관리(Affiliate Manager)**로 이동하세요. 그곳에서 **캠페인 페이지(Campaign Page)**를 클릭하여 캠페인을 관리합니다.
+## 마무리
 
-### **2단계: 추가 클릭**
+이 단계를 따라 하면 제휴 캠페인에서 폼, 설문, 캘린더로 들어오는 리드를 자동으로 추적할 수 있어요. 리드 추적을 자동화하면 시간을 아끼고, 제휴 파트너가 만든 리드에 맞춰 정확하게 보상할 수 있어요. 다음 캠페인부터 적용해 보세요.
 
-캠페인 페이지에서 **'추가(Add)'** 버튼을 클릭하여 리드 추적을 위한 새 캠페인을 생성합니다.
-![새 캠페인 추가 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033783420/original/OJJxADubEl5Wm2ZheJMKTdXQhASzjw7X2g.jpeg?1727691963)
+## 다음 단계
 
-### **3단계: 소스 선택**
-
-캠페인의 소스로 **폼(Forms)**, **설문(Surveys)**, 또는 **캘린더(Calendars)**를 선택하세요. 이러한 소스를 통해 제휴 파트너의 노력으로 생성된 리드를 원활하게 추적할 수 있습니다.
-![소스 선택 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033783421/original/HGm1Q1kW6UY5XM4U6AnVuaDetBVjsne1qg.jpeg?1727691963)
-
-### **4단계: 소스 세부사항 선택**
-
-드롭다운 메뉴를 사용하여 추적하고자 하는 특정 폼, 설문, 또는 캘린더 등 선택한 소스의 세부사항을 지정하세요.
-![소스 세부사항 선택 드롭다운](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033783419/original/xYJCHZRkvozpHlWIWkBRlcnYP18hSsC5Dg.jpeg?1727691963)
-
-### **5단계: 기본 제휴 캠페인 URL 검토**
-
-캠페인을 위해 생성된 **기본 제휴 캠페인 URL**을 잠시 검토해보세요.
-
-***참고:*** 
-계정에 브랜드 도메인이 추가되지 않은 경우, 제휴 캠페인 URL은 기본적으로 시스템 도메인으로 설정됩니다. 사용자는 **설정(Settings) > 비즈니스 프로필(Business Profile) > 브랜드 도메인(Branded Domain)**으로 이동하여 자신만의 **브랜드 도메인**을 추가할 수 있습니다. 브랜드 도메인이 추가되면 모든 제휴 캠페인 URL이 자동으로 업데이트됩니다.
-
-### **6단계: 리드당 지급 활성화 (선택사항)**
-
-제휴 파트너가 생성하는 각 리드에 대해 보상하고 싶다면, 수수료(Commissions) 탭에서 **리드당 지급(Pay Per Lead)** 옵션을 활성화하세요. 리드당 지급을 활성화하는 방법에 대한 자세한 내용은 [여기에서 확인하세요](how-to-set-up-and-pay-affiliates-for-generating-leads.md).
-
-### **7단계: 추가 옵션 단계**
-
-캠페인 설명 추가, 제휴 파트너 할당, 기타 필요한 설정 조정 등을 통해 캠페인을 추가로 사용자 정의할 수 있습니다.
-![캠페인 사용자 정의 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033783417/original/ZTRR-lA0FNUA2GYiIXqj6gCJkqdx2A-T2w.jpeg?1727691962)
-
-### **8단계: 캠페인 발행**
-
-모든 설정을 검토하고 완료한 후 **'발행(Publish)'** 버튼을 눌러 캠페인을 활성화하세요.
-
-### **9단계: 리드 추적**
-
-캠페인이 활성화되면 각 제휴 파트너의 프로필 페이지에서 리드가 자동으로 추적됩니다. **리드 탭(Leads tab)**으로 이동하여 폼, 설문, 또는 캘린더에서 유입되는 리드를 확인하세요. **소스 필드(Source field)**를 사용하여 각 리드의 출처를 식별할 수 있습니다.
-![리드 추적 결과](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033783418/original/tScA8p17VPCMhgpVjAROIzSw3l8eKJaxBw.jpeg?1727691963)
-
----
-
-## **효과적인 리드 추적을 위한 중요 사항**
-
-- **커스텀 임베드/아이프레임은 지원되지 않음:** 리드 추적은 폼, 설문, 또는 캘린더가 퍼널이나 웹페이지 내부에 구성 요소로 추가된 경우에만 작동합니다. 제휴 캠페인의 소스로 사용하기 전에 이러한 구성 요소가 퍼널에 적절히 통합되어 있는지 확인하세요.
-- **브랜드 도메인 요구사항:** 제휴 URL이 브랜드 도메인을 반영하려면 **설정(Settings) > 비즈니스 프로필(Business Profile) > 브랜드 도메인(Branded Domain)**에서 브랜드 도메인을 추가해야 합니다.
-
----
-
-## **결론: 더 나은 캠페인 결과를 위한 리드 추적 최적화**
-
-이러한 단계를 따르면 제휴 캠페인에서 폼, 설문, 캘린더를 통한 리드를 원활하게 추적할 수 있습니다. 이 과정을 자동화하면 시간을 절약할 뿐만 아니라 제휴 파트너의 리드 생성 노력에 대해 정확히 보상할 수 있습니다. 적절한 리드 추적 시스템을 갖추면 제휴 캠페인을 더 잘 관리할 수 있어 더 나은 성과와 결과를 얻을 수 있습니다.
-
-다음 캠페인에서 이러한 모범 사례를 구현하고 리드 추적 자동화가 제휴 노력을 효율적으로 확장하는 데 어떻게 도움이 되는지 확인해보세요!
-
----
-
-## 다음 단계:
-
-- [제휴 캠페인 생성 방법](how-to-create-an-affiliate-campaign.md)
-- [다단계 수수료 설정 방법](how-to-set-up-multi-tier-commissions.md)
-- [리드 생성에 대한 제휴 파트너 설정 및 지급 방법](how-to-set-up-and-pay-affiliates-for-generating-leads.md)
-- [제휴 캠페인 FAQ](faqs-for-affiliate-campaigns.md)
-
----
-
----
-*원문 최종 수정: 2024년 10월 1일*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+- How to create an Affiliate Campaign
+- [How to Set Up Multi-Tier Commissions](how-to-set-up-multi-tier-commissions.md)
+- How to Set Up and Pay Affiliates for Generating Leads
+- FAQs for Affiliate Campaigns

@@ -1,117 +1,122 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 07-워크플로우 > Payments Workflow Triggers
+원문: /support/solutions/articles/155000005641-workflow-trigger-coupon-code-applied
+번역일: 2026-11-06
+카테고리: 07-워크플로우
 ---
 
-# 워크플로우 트리거 - 쿠폰 코드 적용됨
+# 워크플로우 트리거 — Coupon Code Applied(쿠폰 코드 적용)
 
-결제 시 쿠폰 코드가 적용될 때 자동으로 작업을 실행할 수 있습니다. 이 가이드에서는 설정 방법부터 주요 장점까지 모든 것을 설명합니다. 고객이 구매를 완료했는지 여부에 관계없이 쿠폰 코드를 적용하는 순간 워크플로우를 트리거할 수 있어, 보상 후속 조치, 내부 알림, 매출 최적화에 완벽합니다.
+고객이 결제 단계에서 쿠폰 코드를 적용하는 순간 워크플로우를 시작하는 트리거예요. 고객이 구매를 끝내지 않아도 작동하므로 보상 안내, 내부 알림, 판매 촉진에 활용할 수 있어요. 이 문서에서는 트리거의 설정 방법과 장점, 사용할 수 있는 필터를 안내해요.
 
-**목차**
+## Coupon Code Applied 트리거란
 
-- [쿠폰 코드 적용됨 워크플로우 트리거란](#쿠폰-코드-적용됨-워크플로우-트리거란)
-- [쿠폰 코드 적용됨 워크플로우 트리거의 주요 장점](#쿠폰-코드-적용됨-워크플로우-트리거의-주요-장점)
-- [쿠폰 코드 적용됨 워크플로우 트리거 설정하기](#쿠폰-코드-적용됨-워크플로우-트리거-설정하기)
-- [사용 가능한 필터](#사용-가능한-필터)
-- [쿠폰 코드 사용에 권장되는 워크플로우 액션](#쿠폰-코드-사용에-권장되는-워크플로우-액션)
-- [자주 묻는 질문](#자주-묻는-질문)
+**Coupon Code Applied**(쿠폰 코드 적용) 트리거는 결제 중 주문에 쿠폰 코드가 적용되는 순간 워크플로우를 시작해요. 주문 완료 여부와 관계없이 작동해요. 그래서 할인 코드가 쓰이는 즉시 후속 안내, 태그 지정, 내부 알림, 맞춤 판매 제안을 자동으로 실행할 수 있어요.
 
-## 쿠폰 코드 적용됨 워크플로우 트리거란
+주문 처리가 끝날 때까지 기다리지 않고 쿠폰 사용 현황을 확인해 바로 대응하고 싶은 영업·마케팅 팀에 특히 유용해요.
 
-쿠폰 코드 적용됨 트리거는 결제 과정에서 주문에 쿠폰 코드가 적용되는 순간 워크플로우를 시작하는 데 사용됩니다. 주문이 완료되지 않아도 워크플로우가 실행되므로, 할인 코드가 사용될 때 실시간으로 후속 조치, 태깅, 내부 알림 또는 타겟팅된 세일즈 오퍼를 자동화할 수 있습니다.
+## 주요 장점
 
-쿠폰 코드 사용을 모니터링하고 주문 처리 완료를 기다리지 않고 즉시 행동하고자 하는 영업팀과 마케터에게 필수적인 도구입니다.
+- 쿠폰 사용에 즉시 대응: 결제 중 쿠폰이 적용되는 즉시 자동화를 실행해요.
+- 장바구니 이탈 회복: 쿠폰을 적용하고도 결제를 끝내지 않은 고객에게 알림을 보내, 돌아와서 구매를 마치도록 유도해요.
+- 맞춤 업셀: 쿠폰 유형이나 값을 확인해 고객에게 도움이 될 만한 업셀 제안을 보여 줘요.
+- 상세 필터로 정확한 대상 지정: 쿠폰 코드, 유형, 주문 금액, 상품 등을 기준으로 액션을 실행해요.
+- 운영 효율: 특정 할인 코드가 쓰이면 팀에 알리거나 연락처에 태그를 지정해 성과를 파악해요.
 
-## 쿠폰 코드 적용됨 워크플로우 트리거의 주요 장점
+## 설정 방법
 
-- **쿠폰 코드 사용에 즉시 반응**: 결제 시 쿠폰이 적용되는 순간 자동화 트리거
-- **장바구니 이탈 복구**: 쿠폰을 적용했지만 결제를 완료하지 않은 쇼핑객에게 리마인드를 보내 돌아와서 구매를 완료하도록 유도
-- **개인화된 업셀링**: 쿠폰 유형이나 가치를 감지하여 관련성 있고 도움이 되는 맞춤형 업셀 오퍼 제시
-- **고급 필터로 정확한 타겟팅**: 쿠폰 코드, 유형, 주문 가격, 상품 등을 기반으로 액션 실행
-- **운영 효율성**: 특정 할인 코드가 적용될 때 팀에 알림을 보내거나 연락처에 태그를 달아 성과 모니터링
+워크플로우 빌더에서 아래 순서로 트리거를 설정하세요.
 
-## 쿠폰 코드 적용됨 워크플로우 트리거 설정하기
+### 1단계: 워크플로우에 트리거 추가하기
 
-이 트리거를 설정하려면 워크플로우 빌더로 이동하여 다음 단계를 따르세요:
+1. **자동화 > 워크플로우**로 이동하세요.
+2. 새 워크플로우를 만들거나 기존 워크플로우를 열어요.
+3. 워크플로우 빌더에서 **+ Add New Trigger**(새 트리거 추가)를 클릭하세요.
 
-#### **1단계: 워크플로우에 트리거 추가**
+![워크플로우 빌더에서 새 트리거 추가 버튼을 클릭하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050382194/original/F9qxCGgkR-XZ5jtwTc9S9hWkflT9XX_HwQ.png?1753365840)
 
-- `Automation(자동화) → Workflows(워크플로우)`로 이동
-- 새 워크플로우를 만들거나 기존 워크플로우를 편집
-- 워크플로우 빌더에서 `+ Add New Trigger(새 트리거 추가)`를 클릭
+### 2단계: 트리거 유형 선택하기
 
-![쿠폰 코드 적용됨 트리거 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050382194/original/F9qxCGgkR-XZ5jtwTc9S9hWkflT9XX_HwQ.png?1753365840)
+사용할 수 있는 트리거 목록에서 **Payments**(결제) 섹션까지 스크롤한 다음 **Coupon Code Applied**를 선택하세요.
 
-#### **2단계: 트리거 유형 선택**
+![트리거 목록의 Payments 섹션에서 Coupon Code Applied를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050382304/original/QA74NLhgPeH9Qd5PPf8TA7dXIl5KJ_XHcg.png?1753365909)
 
-사용 가능한 트리거 목록에서 `Payments(결제)` 섹션으로 스크롤하여 `Coupon Code Applied(쿠폰 코드 적용됨)`를 선택합니다.
+### 3단계: 트리거 이름 정하기
 
-![쿠폰 코드 적용됨 트리거 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050382304/original/QA74NLhgPeH9Qd5PPf8TA7dXIl5KJ_XHcg.png?1753365909)
+1. **Workflow Trigger Name**(워크플로우 트리거 이름) 필드에 알아보기 쉬운 이름을 입력하세요. 워크플로우를 정리하는 데 도움이 돼요.
+2. 예시: *"상품 1에 15% 할인 쿠폰 코드 적용"*
 
-#### **3단계: 트리거 이름 지정**
+![워크플로우 트리거 이름을 입력하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050382386/original/-YcR2-lw0tkrVI_cuCbmWTxdhzATBG4GfA.png?1753365945)
 
-- `Workflow Trigger Name(워크플로우 트리거 이름)` 필드에 설명적인 이름을 입력하여 워크플로우를 체계적으로 관리하세요.
-- 예시: "상품 1에 15% 할인 쿠폰 코드 적용됨"
+### 4단계: 필터로 대상 상황 좁히기
 
-![트리거 이름 지정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050382386/original/-YcR2-lw0tkrVI_cuCbmWTxdhzATBG4GfA.png?1753365945)
+1. 트리거 이름을 입력한 뒤에는 필터를 적용해 워크플로우가 실행될 상황을 좁힐 수 있어요.
+2. 필터를 추가하려면 **+ Add Filters**(필터 추가)를 클릭하세요.
+3. 필터마다 쓸 수 있는 연산자가 달라요. 예를 들면 *Is*(같음), *Contains*(포함), *Greater Than*(보다 큼), *Before/After*(이전/이후) 같은 연산자로 원하는 조건을 정확하게 지정해요. 필터 목록은 [사용 가능한 필터](#사용-가능한-필터)에서 확인하세요.
 
-#### **4단계: 특정 시나리오를 타겟팅하는 필터 적용**
+![필터를 추가해 트리거 조건을 설정하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050382758/original/fAA2RXLA9XQtmfmX7dzdf1Oo2QvMndMwww.png?1753366194)
 
-- 트리거 이름을 지정한 후, 필터를 적용하여 이 워크플로우가 실행되어야 하는 정확한 조건을 좁혀보세요
-- 필터를 추가하려면 `+ Add Filters(필터 추가)`를 클릭
-- 각 필터는 특정 연산자(Is, Contains, Greater Than, Before/After 등)와 함께 제공되어 관심 있는 조건을 정확히 타겟팅할 수 있습니다. [사용 가능한 필터 목록 보기](#사용-가능한-필터)
+### 5단계: 저장하고 워크플로우 완성하기
 
-![필터 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155050382758/original/fAA2RXLA9XQtmfmX7dzdf1Oo2QvMndMwww.png?1753366194)
+1. 트리거와 필터 설정이 끝나면 **Save Trigger**(트리거 저장)를 클릭하고, 필요한 액션을 워크플로우에 추가하세요.
+2. 모두 마쳤다면 **Test Workflow**(워크플로우 테스트)로 제대로 작동하는지 확인하세요.
+3. **Publish**(게시)를 클릭해 워크플로우를 활성화하세요.
 
-#### **5단계: 저장하고 워크플로우 구축**
-
-- 트리거와 필터가 설정되면 `Save Trigger(트리거 저장)`를 클릭하고 원하는 액션을 워크플로우에 추가하기 시작하세요.
-- 완료되면 `Test Workflow(워크플로우 테스트)`를 사용하여 모든 것이 예상대로 작동하는지 확인한 다음 `Publish(발행)`하여 워크플로우를 활성화하세요.
-
-![워크플로우 저장 및 발행](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049297661/original/PtVRE6cOM4E2TbgTZG2g_JvxWNFrchlcZw.png?1751548691)
+![트리거 저장 후 워크플로우를 테스트하고 게시하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155049297661/original/PtVRE6cOM4E2TbgTZG2g_JvxWNFrchlcZw.png?1751548691)
 
 ## 사용 가능한 필터
 
 | 필터 | 연산자 | 입력 유형 |
-|------|--------|-----------|
-| Coupon Code(쿠폰 코드) | Is Any Of / Is Empty / Is None Of / Is Not Empty | 쿠폰 코드 다중 선택 드롭다운 |
-| Coupon Name(쿠폰 이름) | Is Any Of / Is Empty / Is None Of / Is Not Empty | 쿠폰 이름 다중 선택 드롭다운 |
-| Coupon Type(쿠폰 유형) | Is / Is Empty / Is Not / Is Not Empty | Amount / Percentage |
-| Coupon Value(쿠폰 값) | Equals To / Greater Than / Greater Than or Equal To / Is Empty / Is Not Empty / Is Not Equal To / Less Than / Less Than or Equal To | 숫자 입력 상자 |
-| Order Value (Before Discount)(주문 가격 - 할인 전) | Equals To / Greater Than / Greater Than or Equal To / Is Empty / Is Not Empty / Is Not Equal To / Less Than / Less Than or Equal To | 숫자 입력 상자 |
-| Product Collection(상품 컬렉션) | Contain Any / Is Empty / Is None Of / Is Not Empty | 상품 컬렉션 다중 선택 드롭다운 |
-| Product Type(상품 유형) | Contain Any / Is Empty / Is None Of / Is Not Empty | 상품 유형 다중 선택 드롭다운 (일회성 vs 반복) |
-| Product(s) In Order(주문 상품) | Contain Any / Is Empty / Is None Of / Is Not Empty | 상품 다중 선택 드롭다운 |
-| Source(소스) | Is / Is Empty / Is Not / Is Not Empty | 단일 선택 드롭다운 |
+| --- | --- | --- |
+| **Coupon Code**(쿠폰 코드) | Is Any Of / Is Empty / Is None Of / Is Not Empty | 쿠폰 코드 다중 선택 드롭다운 |
+| **Coupon Name**(쿠폰 이름) | Is Any Of / Is Empty / Is None Of / Is Not Empty | 쿠폰 이름 다중 선택 드롭다운 |
+| **Coupon Type**(쿠폰 유형) | Is / Is Empty / Is Not / Is Not Empty | 금액 / 퍼센트 |
+| **Coupon Value**(쿠폰 값) | Equals To / Greater Than / Greater Than or Equal To / Is Empty / Is Not Empty / Is Not Equal To / Less Than / Less Than or Equal To | 숫자 입력란 |
+| **Order Value (Before Discount)**(주문 금액, 할인 전) | Equals To / Greater Than / Greater Than or Equal To / Is Empty / Is Not Empty / Is Not Equal To / Less Than / Less Than or Equal To | 숫자 입력란 |
+| **Product Collection**(상품 컬렉션) | Contain Any / Is Empty / Is None Of / Is Not Empty | 상품 컬렉션 다중 선택 드롭다운 |
+| **Product Type**(상품 유형) | Contain Any / Is Empty / Is None Of / Is Not Empty | 상품 유형 다중 선택 드롭다운 (일회성 / 반복) |
+| **Product(s) In Order**(주문에 포함된 상품) | Contain Any / Is Empty / Is None Of / Is Not Empty | 상품 다중 선택 드롭다운 |
+| **Source**(출처) | Is / Is Empty / Is Not / Is Not Empty | 단일 선택 드롭다운 |
 
-## 쿠폰 코드 사용에 권장되는 워크플로우 액션
+연산자는 영어 그대로 표시돼요. 뜻은 아래와 같아요.
 
-쿠폰 코드 적용됨 트리거가 설정되면, 매출과 고객 경험을 최적화하기 위해 다음 액션들을 추가해보세요:
+| 연산자 | 뜻 |
+| --- | --- |
+| Is | 같음 |
+| Is Not | 같지 않음 |
+| Is Any Of | 선택한 값 중 하나와 같음 |
+| Is None Of | 선택한 값 중 어느 것과도 같지 않음 |
+| Is Empty | 비어 있음 |
+| Is Not Empty | 비어 있지 않음 |
+| Contain Any | 선택한 값 중 하나라도 포함 |
+| Equals To | 같음 |
+| Is Not Equal To | 같지 않음 |
+| Greater Than | 보다 큼 |
+| Greater Than or Equal To | 이상 |
+| Less Than | 미만 |
+| Less Than or Equal To | 이하 |
 
-- **이메일 발송**: 쿠폰 코드 사용을 확인하는 개인화된 메시지를 고객에게 발송
-- **사용자에 배정**: 후속 조치를 위해 연락처를 영업 또는 지원 사용자에게 자동 배정
-- **태그 추가**: 적용한 쿠폰 코드를 기반으로 연락처에 태그 적용
-- **내부 알림**: 고가치 또는 특별 쿠폰이 사용될 때 팀에 알림
-- **기회 생성/업데이트**: 해당하는 경우 리드를 영업 파이프라인으로 연결
+## 쿠폰 코드 사용 시 추천 액션
+
+**Coupon Code Applied** 트리거를 설정했다면 아래 액션을 함께 추가해 보세요. 매출과 고객 경험을 높이는 데 도움이 돼요.
+
+- **Send Email**(이메일 보내기): 쿠폰 코드를 사용한 고객에게 맞춤 메시지를 보내요.
+- **Assign to User**(사용자에게 배정): 영업 또는 지원 담당 사용자에게 연락처를 자동으로 배정해 후속 대응을 맡겨요.
+- **Add Tag**(태그 추가): 고객이 적용한 쿠폰 코드에 따라 연락처에 태그를 지정해요.
+- **Internal Notification**(내부 알림): 고액 쿠폰이나 특별 쿠폰이 쓰이면 팀에 알려요.
+- **Create/Update Opportunity**(기회 만들기/업데이트): 해당되는 경우 리드를 영업 파이프라인으로 보내요.
 
 ## 자주 묻는 질문
 
-**Q: 고객이 결제를 완료하지 않아도 트리거가 작동하나요?**
-네, 이 트리거는 고객이 주문을 완료했는지 여부에 관계없이 쿠폰이 적용되는 순간 실행됩니다.
+### 고객이 결제를 끝내지 않아도 트리거가 작동하나요?
+네, 이 트리거는 쿠폰이 적용되는 순간 실행돼요. 고객이 주문을 완료했는지와는 관계가 없어요.
 
-**Q: 쿠폰이 어떤 상품에 적용되었는지 추적할 수 있나요?**
-네, `Product(s) in Order(주문 상품)`와 `Product Collection(상품 컬렉션)` 필터를 사용하여 쿠폰이 적용될 때의 상품 선택을 기반으로 범위를 좁힐 수 있습니다.
+### 쿠폰이 적용된 상품을 확인할 수 있나요?
+네, **Product(s) In Order** 필터와 **Product Collection** 필터를 쓰면 쿠폰이 적용된 시점에 선택된 상품을 기준으로 대상을 좁힐 수 있어요.
 
-**Q: 필터를 추가하지 않으면 어떻게 되나요?**
-필터가 적용되지 않으면, 결제 시 적용되는 모든 쿠폰 코드에 대해 워크플로우가 트리거됩니다. 특정 캠페인을 타겟팅하려면 `Coupon Code Is` 또는 `Coupon Type Is` 같은 필터를 사용하는 것이 모범 사례입니다.
+### 필터를 추가하지 않으면 어떻게 되나요?
+필터를 적용하지 않으면 결제 중 적용되는 모든 쿠폰 코드에 워크플로우가 실행돼요. 특정 캠페인만 대상으로 하려면 **Coupon Code**의 *Is Any Of*나 **Coupon Type**의 *Is* 같은 필터를 쓰는 것이 좋아요.
 
-**Q: 할인 전후 주문 가격을 기반으로 액션을 트리거할 수 있나요?**
-네, `Order Value (Before Discount)(주문 가격 - 할인 전)`와 `Order Value (After Discount)(주문 가격 - 할인 후)` 필터를 `Greater Than`, `Less Than` 등의 연산자와 함께 사용하여 워크플로우가 실행되는 조건을 제어할 수 있습니다.
-
-**Q: 예약 주문도 이 트리거에서 지원되나요?**
-아니요, 이 트리거는 결제 시 쿠폰이 적극적으로 적용될 때만 실행됩니다.
-
----
-*원문 최종 수정: Mon, 28 Jul, 2025 at 1:21 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### 할인 전후 주문 금액을 기준으로 액션을 실행할 수 있나요?
+네, **Order Value (Before Discount)** 필터와 **Order Value (After Discount)** 필터에 *Greater Than*, *Less Than* 같은 연산자를 사용해 워크플로우가 실행되는 조건을 조절할 수 있어요.
+### 이 트리거는 예약 주문도 지원하나요?
+아니요, 이 트리거는 결제 중에 쿠폰이 직접 적용될 때만 실행돼요.

@@ -1,233 +1,188 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 10-마케팅 > 소셜-플래너
+원문: /support/solutions/articles/48001213003-connect-instagram-facebook-linked-vs-direct-instagram-integration
+번역일: 2026-11-06
+카테고리: 10-마케팅
 ---
 
-# 인스타그램 연결: 페이스북 연동 방식 vs 직접 인스타그램 연동
+# Instagram 연결하기: Facebook 연결 방식과 다이렉트 Instagram 연동 비교
 
-Hyperclass의 소셜 플래너(Social Planner)에서 페이스북 페이지 연결 없이도 인스타그램에 직접 연결하고 게시물을 예약할 수 있습니다! 이 업데이트로 인스타그램 관리가 간소화되고, 크리에이터 계정을 지원하며, 소셜 미디어 워크플로우가 단순해집니다.
+하이퍼클래스 **소셜 플래너**(Social Planner)에서 Facebook 페이지 없이도 Instagram을 연결하고 게시물을 예약할 수 있어요. 이 문서에서는 Instagram을 연결하는 두 가지 방법과 차이점을 설명해요.
 
-**목차**
+## 새로운 기능
 
-- [새로운 기능](#새로운-기능)
-- [소셜 플래너의 직접 인스타그램 연동이란?](#소셜-플래너의-직접-인스타그램-연동이란)
-- [직접 인스타그램 연동의 주요 장점](#직접-인스타그램-연동의-주요-장점)
-- [시작하기 전에](#시작하기-전에)
-- [방법 1: 페이스북 연동 방식 (기존)](#방법-1-페이스북-연동-방식-기존)
-- [방법 2: 직접 인스타그램 연동 (권장)](#방법-2-직접-인스타그램-연동-권장)
-- [기능 비교](#기능-비교)
-- [인스타그램 비즈니스 프로필을 페이스북 계정에 연결하기](#인스타그램-비즈니스-프로필을-페이스북-계정에-연결하기)
-- [자주 묻는 질문](#자주-묻는-질문)
+- **다이렉트 Instagram 연동**: Facebook 페이지 없이 Instagram을 바로 연결하고 게시물을 예약할 수 있어요.
+- 크리에이터 계정 지원: 크리에이터 계정의 스토리를 자동으로 게시할 수 있어요.
+- 간소해진 작업 과정: Facebook 권한을 추가로 받지 않아도 하이퍼클래스에서 게시물, 스토리, 릴스를 관리할 수 있어요.
 
 ---
 
-## **새로운 기능**
+## 소셜 플래너의 다이렉트 Instagram 연동이란?
 
-- **직접 인스타그램 연동**: 페이스북 페이지 연결 없이도 인스타그램에 직접 연결하고 게시물을 예약할 수 있습니다.
+다이렉트 Instagram 연동은 **소셜 플래너**에서 Facebook 페이지를 연결하지 않고도 Instagram 비즈니스 계정이나 크리에이터 계정을 연결해 콘텐츠를 예약하는 기능이에요. Facebook 연결이라는 큰 부담이 사라지고, Instagram 관리를 한 화면에서 할 수 있어요.
 
-- **크리에이터 계정 지원**: 크리에이터 계정에서 스토리 자동 게시가 가능합니다.
-
-- **단순화된 워크플로우**: 추가적인 페이스북 권한 없이 Hyperclass에서 게시물, 스토리, 릴을 관리할 수 있습니다.
-
----
-
-## **소셜 플래너의 직접 인스타그램 연동이란?**
-
-직접 인스타그램 연동은 Hyperclass 소셜 플래너의 새로운 기능으로, 페이스북 페이지 연결 없이도 인스타그램 비즈니스 또는 크리에이터 계정을 연결하고 콘텐츠를 예약할 수 있습니다. 이는 주요 장벽을 제거하고 프로세스를 간소화하여 인스타그램 관리를 위한 통합 대시보드를 제공합니다.
-
-이 개선사항으로 다음이 가능합니다:
+이 기능을 쓰면 다음 작업을 할 수 있어요.
 
 - 스토리 자동 게시 (크리에이터 계정 포함)
-- 게시물, 스토리, 릴 예약
-- 소셜 플래너에서 직접 참여 지표 확인
+- 게시물, 스토리, 릴스 예약
+- **소셜 플래너**에서 바로 참여도 지표 확인
 
 ---
 
-## **직접 인스타그램 연동의 주요 장점**
+## 다이렉트 Instagram 연동의 장점
 
-- **페이스북 페이지 불필요**: 페이스북 연결 단계를 생략하고 인스타그램 권한만 부여하면 됩니다.
-
-- **크리에이터 & 비즈니스 계정 지원**: 두 계정 유형 모두에서 스토리와 게시물 예약이 완전히 지원됩니다.
-
-- **단순화된 워크플로우**: 모든 인스타그램 콘텐츠를 위한 하나의 인터페이스로, 추가 앱이나 대시보드가 필요하지 않습니다.
-
-- **빠른 설정**: 몇 분 안에 가이드에 따라 연결할 수 있습니다.
-
-- **통계 접근**: 참여 데이터(좋아요, 댓글)를 확인할 수 있으며, 인스타그램 API 제한으로 이미지/비디오 조회 수는 제외됩니다.
-
-- **콘텐츠 유연성**: 인스타그램 가이드라인에 따라 게시물, 스토리, 릴을 예약할 수 있습니다.
-
-- **시간 절약**: 단계 수 감소, 권한 수 감소로 콘텐츠 제작에 집중할 수 있습니다.
+- Facebook 페이지가 필요 없어요. Facebook 연결 단계를 건너뛰고 Instagram 권한만 허용하면 돼요.
+- 크리에이터 계정과 비즈니스 계정을 모두 지원해요. 두 계정 유형 모두 스토리와 게시물을 예약할 수 있어요.
+- 한 화면에서 Instagram 콘텐츠를 모두 관리해요. 별도의 앱이나 대시보드가 필요 없어요.
+- 안내에 따라 몇 분 안에 연결할 수 있어요.
+- 참여도 지표(좋아요, 댓글)를 볼 수 있어요. 단, Instagram API 제한 때문에 이미지·영상 조회수는 볼 수 없어요.
+- Instagram 가이드라인에 맞춰 게시물, 스토리, 릴스를 예약할 수 있어요.
+- 단계와 권한이 줄어서 콘텐츠 제작에 더 집중할 수 있어요.
 
 ---
 
 ## 시작하기 전에
 
-선택 옵션 간의 주요 차이점은 다음과 같습니다:
+두 방식의 가장 큰 차이는 다음과 같아요.
 
-- **직접 인스타그램 연동 (신규)**: 소셜 플래너 설정 시 페이스북 페이지 연결이 필요하지 않습니다. 인스타그램으로만 인증합니다. 이를 통해 기존의 "페이스북 페이지 연결 후 인스타그램 비즈니스 페이지 연결" 플로우를 건너뛸 수 있습니다. 하지만 인스타그램/페이스북(Hyperclass가 아닌)에서는 여전히 기본 프로필이 다음 중 하나여야 합니다:
-  - 페이스북 페이지에 연결된 비즈니스 프로필
-  - 크리에이터 프로필 (페이스북 페이지 필요 없음)
+1. **다이렉트 Instagram 연동**(신규): **소셜 플래너**에서 설정할 때 Facebook 페이지를 연결하지 않아도 돼요. Instagram으로만 인증해요. 기존의 "Facebook 페이지를 연결한 다음 Instagram 비즈니스 페이지를 연결"하는 과정을 건너뛸 수 있어요. 다만 하이퍼클래스가 아니라 Instagram/Facebook의 정책상, 연결하려는 프로필은 다음 중 하나여야 해요.
+   1. Facebook 페이지에 연결된 비즈니스 프로필
+   2. 크리에이터 프로필 (Facebook 페이지가 필요 없어요)
+2. **Facebook 연결 방식**: **소셜 플래너** 안에서 Facebook 페이지를 직접 연결해야 해요. 기존 Facebook 권한이 필요하거나 조회수 분석이 필요할 때만 이 방식을 쓰세요.
 
-- **페이스북 연동 방식**: 소셜 플래너 내에서 명시적으로 페이스북 페이지를 연결해야 합니다. 기존 페이스북 권한이나 조회 수 분석이 필요한 경우에만 필요합니다.
+연결하기 전에 다음 내용을 확인하세요.
 
-#### 1) 인스타그램 프로필이 비즈니스 또는 크리에이터 프로필인지 확인하세요.
-- 인스타그램 비즈니스 또는 크리에이터 프로필이 없다면, 인스타그램 개인 프로필을 비즈니스 또는 크리에이터 프로필로 변환하기를 참조하세요.
-
-2) 클래식 페이지 유형의 경우 페이스북 페이지에 대한 관리자(Admin) 또는 편집자(Editor) 페이지 역할을, 새 페이지 유형의 경우 전체 또는 부분 제어 권한이 있는 페이스북 액세스 권한이 있는지 확인하세요. 페이스북 도움말 문서를 참조하세요. [페이스북 페이지에서 내 역할은 어떻게 확인하나요](https://www.facebook.com/help/510247025775149)?
-- 페이지가 페이스북 비즈니스 매니저의 자산인 경우, 비즈니스 매니저 계정에서 페이지에 대한 관리 액세스 권한도 필요합니다. 페이스북 도움말 문서 [비즈니스 매니저에 사람 추가하기](https://www.facebook.com/business/help/2169003770027706?id=2190812977867143)를 참조하세요.
+1. Instagram 프로필이 비즈니스 프로필 또는 크리에이터 프로필인지 확인하세요.
+   - 비즈니스 프로필이나 크리에이터 프로필이 없다면, 개인 프로필을 비즈니스 프로필 또는 크리에이터 프로필로 전환하는 방법을 Instagram 도움말에서 확인하세요.
+2. Facebook 페이지가 클래식 페이지 유형이면 관리자(Admin) 또는 편집자(Editor) 역할이 있는지 확인하세요. 새 페이지 유형이면 전체 또는 일부 제어 권한이 있는 Facebook 액세스가 있는지 확인하세요. Facebook 도움말 문서 "Facebook 페이지에서 내 역할은 어떻게 확인하나요?"를 참고하세요.
+   - 페이지가 Facebook Business Manager의 자산이라면, Business Manager 계정에서도 해당 페이지에 대한 관리 권한이 있어야 해요. Facebook 도움말 문서 "Business Manager에 사람 추가하기"를 참고하세요.
 
 ---
 
-## 방법 1: 페이스북 연동 방식 (기존)
+## 방법 1: Facebook 연결 방식 (기존)
 
-**중요**: 이 방법은 여전히 페이스북 권한에 의존하는 기존 기능이 필요한 경우 필수입니다.
+{% hint style="warning" %}
+Facebook 권한에 의존하는 기존 기능이 필요하다면 이 방법을 써야 해요.
+{% endhint %}
 
-이 방법은 페이스북을 통해 인스타그램 계정을 연결하여 다음을 가능하게 합니다:
+이 방법은 **Facebook을 통해 Instagram 계정을 연결**해요. 이렇게 연결하면 다음 기능을 쓸 수 있어요.
 
-- 향상된 지표 (비디오/이미지 조회 수 포함)
-- Meta 비즈니스 기능에 대한 액세스
+- 영상·이미지 조회수를 포함한 상세 지표
+- Meta 비즈니스 기능 이용
 
-### **단계**:
+### 단계
 
-- 페이스북에 로그인한 후 오른쪽 상단의 프로필 사진을 클릭하세요.
+1. Facebook에 로그인한 다음, 오른쪽 위의 프로필 사진을 클릭하세요.
+2. **See all profiles**(모든 프로필 보기)를 클릭하고, 전환할 페이지를 선택하세요.
+3. Facebook 오른쪽 위의 페이지 프로필 사진을 클릭하세요.
+4. **Settings & privacy**(설정 및 개인정보)를 클릭하세요.
 
-- 모든 프로필 보기를 클릭한 후 전환할 페이지를 선택하세요.
+   ![Facebook 설정 및 개인정보 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047067929/original/ir8FH0rSyc8yfTcKAtWmLTD8YbHx_VxBEQ.png?1747915613)
+5. 이어서 **설정**을 클릭하세요.
 
-- 페이스북 오른쪽 상단의 페이지 프로필 사진을 클릭하세요.
+   ![Facebook 설정 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047067910/original/Y7DU7H2rgpJPXpEGD_hDvQYdUVqM_Q0EHA.png?1747915597)
+6. **Permissions**(권한) 아래에서 **Linked accounts**(연결된 계정)를 클릭하세요.
 
-- 설정 및 개인정보 보호를 클릭하세요.
+   ![Facebook 연결된 계정 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047067896/original/LqYoIsViSLK4t_89n1K36IOsYG09ZepMOg.jpeg?1747915565)
+7. Instagram 옆의 ![Instagram 옆 아이콘](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047066949/original/Gh1sa9kEcIcQk8FxU2Uwf-SQ_XoxjSWkJQ.png?1747914894) **View**(보기)를 클릭하세요.
+8. **계정 연결**을 클릭하고, 안내에 따라 Facebook 페이지와 Instagram 계정을 연결하세요.
+9. 이제 Instagram 비즈니스 프로필이 Facebook 계정에 연결돼요.
+10. **마케팅 > 소셜 플래너**로 이동하세요.
+11. **새 게시물** 옆의 **설정**(톱니바퀴 아이콘)을 클릭하세요.
+12. **Add Socials**(소셜 계정 추가)를 선택하세요.
+13. **Instagram**을 선택하세요.
+14. **Instagram with Facebook**(Facebook으로 연결하는 Instagram)을 선택하세요.
+15. 안내에 따라 Facebook 페이지와 Instagram 계정을 연결하세요.
 
-![페이스북 설정 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047067929/original/ir8FH0rSyc8yfTcKAtWmLTD8YbHx_VxBEQ.png?1747915613)
+{% hint style="info" %}
+자세한 내용은 Meta의 공식 설정 가이드를 참고하세요.
+{% endhint %}
 
-5. 그다음 설정을 클릭하세요.
+---
 
-![페이스북 설정 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047067910/original/Y7DU7H2rgpJPXpEGD_hDvQYdUVqM_Q0EHA.png?1747915597)
+## 방법 2: 다이렉트 Instagram 연동 (권장)
 
-6. 권한 하위에서 연결된 계정을 클릭하세요.
+빠르게 설정하고 스토리를 예약하려는 분께 알맞은 방법이에요. Facebook이 필요 없어요.
 
-![연결된 계정 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047067896/original/LqYoIsViSLK4t_89n1K36IOsYG09ZepMOg.jpeg?1747915565)
+### 단계
 
-7. 인스타그램 옆에 있는 ![보기 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047066949/original/Gh1sa9kEcIcQk8FxU2Uwf-SQ_XoxjSWkJQ.png?1747914894) 보기를 클릭하세요.
+1. **마케팅 > 소셜 플래너**로 이동하세요.
+2. **새 게시물** 옆의 **설정**(톱니바퀴 아이콘)을 클릭하세요.
+3. **Add Socials**(소셜 계정 추가)를 선택하세요.
+4. **Instagram**을 선택하세요.
+5. **다이렉트 Instagram 연동**을 선택하세요.
 
-8. 계정 연결을 클릭한 후 안내에 따라 페이스북 페이지와 인스타그램 계정을 연결하세요.
+   ![다이렉트 Instagram 연동 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048316055/original/RYGaSbqo4Vd4GHZngEsrLCaiBmPfAvcURA.gif?1750075121)
+6. 팝업에서 **다이렉트 Instagram 연동**을 선택하세요.
+7. 권한을 허용하고 Instagram 비즈니스 계정 또는 크리에이터 계정을 선택하세요.
 
-9. 이제 인스타그램 비즈니스 프로필이 페이스북 계정에 연결되었습니다.
-
-10. Marketing(마케팅) > Social Planner(소셜 플래너)로 이동하세요.
-
-11. New Post(새 게시물) 옆의 Settings(설정) 아이콘(톱니바퀴)을 클릭하세요.
-
-12. Add Socials(소셜 추가)를 선택하세요.
-
-13. Instagram을 선택하세요.
-
-14. Instagram with Facebook을 선택하세요.
-
-15. 안내에 따라 페이스북 페이지와 인스타그램 계정을 연결하세요.
-
-**참고**: 자세한 내용은 [Meta 공식 설정 가이드](https://www.facebook.com/business/help/898752960195806)를 참조하세요.
-
-## **방법 2: 직접 인스타그램 연동 (권장)**
-
-빠른 설정과 스토리 예약에 적합한 이 방법은 페이스북을 필요로 하지 않습니다.
-
-### **단계**:
-
-- Marketing(마케팅) > Social Planner(소셜 플래너)로 이동하세요.
-
-- New Post(새 게시물) 옆의 **Settings(설정)** 아이콘(톱니바퀴)을 클릭하세요.
-
-- **Add Socials(소셜 추가)**를 선택하세요.
-
-- **Instagram**을 선택하세요.
-
-- **Direct** Instagram Integration을 선택하세요.
-
-![직접 인스타그램 연동 설정 과정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048316055/original/RYGaSbqo4Vd4GHZngEsrLCaiBmPfAvcURA.gif?1750075121)
-
-- 팝업에서 Direct Instagram Integration을 선택하세요.
-
-- 권한을 부여하고 인스타그램 비즈니스 또는 크리에이터 계정을 선택하세요.
+---
 
 ## 기능 비교
 
-| 기능 | 페이스북 연동 방식 | 직접 연동 (신규) |
-|------|-------------------|------------------|
-| **페이스북 페이지 필요** | 예 | 아니오 |
-| **크리에이터 계정 지원** | 제한적 | 예 |
-| **스토리 자동 게시** | 아니오 | 예 |
-| **릴 예약** | 예 | 예 |
-| **참여 지표 확인** | 예 | 예 (조회 수 제외) |
-| **설정 복잡성** | 높음 (다중 로그인) | 낮음 (단일 로그인) |
+| 기능 | Facebook 연결 | 다이렉트 연동 (신규) |
+| --- | --- | --- |
+| Facebook 페이지 필요 | 예 | 아니요 |
+| 크리에이터 계정 지원 | 제한적 | 예 |
+| 스토리 자동 게시 | 아니요 | 예 |
+| 릴스 예약 | 예 | 예 |
+| 참여도 지표 확인 | 예 | 예 (조회수 제외) |
+| 설정 난이도 | 높음 (여러 번 로그인) | 낮음 (한 번 로그인) |
 
-인스타그램 비즈니스 프로필에 직접 게시하는 것을 포함하여 성공적으로 게시하려면, 인스타그램 비즈니스 프로필이 페이스북 페이지나 크리에이터 프로필에 연결되어 있어야 합니다. 인스타그램을 사용할 때 페이스북 페이지에 게시할 필요는 없지만, 인스타그램 프로필을 관리할 수 있는 권한은 페이스북을 통해 LeadConnector에게 부여됩니다. 이는 페이스북(인스타그램의 소유자)의 요구사항입니다.
+Instagram 비즈니스 프로필에 직접 게시하는 것을 포함해 게시가 잘 되려면, Instagram 비즈니스 프로필이 Facebook 페이지 또는 크리에이터 프로필에 연결되어 있어야 해요. Instagram을 쓸 때 Facebook 페이지에 게시할 필요는 없어요. 하지만 Instagram 프로필을 관리할 권한은 Facebook을 통해 하이퍼클래스에 부여돼요. 이는 Instagram을 소유한 Facebook의 요구 사항이에요.
 
-완료되면 인스타그램 비즈니스 프로필을 소셜 플래너에 연결할 수 있습니다.
-
----
-
-## 인스타그램 비즈니스 프로필을 페이스북 계정에 연결하기
-
-참조 문서 - [https://www.facebook.com/business/help/connect-instagram-to-page](https://www.facebook.com/business/help/connect-instagram-to-page)
-
-- 페이스북에 로그인한 후 오른쪽 상단의 프로필 사진을 클릭하세요.
-
-- 모든 프로필 보기를 클릭한 후 전환할 페이지를 선택하세요.
-
-- 페이스북 오른쪽 상단의 페이지 프로필 사진을 클릭하세요.
-
-- 설정 및 개인정보 보호를 클릭하세요.
-
-![페이스북 설정 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047067929/original/ir8FH0rSyc8yfTcKAtWmLTD8YbHx_VxBEQ.png?1747915613)
-
-- 그다음 설정을 클릭하세요.
-
-![페이스북 설정 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047067910/original/Y7DU7H2rgpJPXpEGD_hDvQYdUVqM_Q0EHA.png?1747915597)
-
-- 권한 하위에서 연결된 계정을 클릭하세요.
-
-![연결된 계정 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047067896/original/LqYoIsViSLK4t_89n1K36IOsYG09ZepMOg.jpeg?1747915565)
-
-- 인스타그램 옆에 있는 ![보기 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047066949/original/Gh1sa9kEcIcQk8FxU2Uwf-SQ_XoxjSWkJQ.png?1747914894) 보기를 클릭하세요.
-
-- 계정 연결을 클릭한 후 안내에 따라 페이스북 페이지와 인스타그램 계정을 연결하세요.
-
-- 이제 인스타그램 비즈니스 프로필이 페이스북 계정에 연결되었습니다.
-
-- 소셜 플래너에 인스타그램 비즈니스 프로필 연동하기
-
-**참고**: 인스타그램의 기본 앱과 Graph API는 게시물 캡션에 클릭 가능한 링크를 허용하지 않습니다. 이 제한은 사용자를 플랫폼 내에 머물게 하고 스팸을 줄이며 광고 참여를 장려하기 위한 것입니다. 따라서 게시물 캡션에 포함된 링크는 인스타그램에 게시될 때 일반 텍스트로 표시됩니다.
+Instagram 비즈니스 프로필 연결을 마쳤다면 소셜 플래너에 Instagram 비즈니스 프로필을 연결할 수 있어요.
 
 ---
 
-## **자주 묻는 질문**
+## Instagram 비즈니스 프로필을 Facebook 계정에 연결하기
 
-**Q: 개인 계정으로 직접 인스타그램 연동을 사용할 수 있나요?**
-아니요, 비즈니스 및 크리에이터 계정만 지원됩니다.
+참고 문서: <https://www.facebook.com/business/help/connect-instagram-to-page>
 
-**Q: 페이스북 페이지를 먼저 연결 해제해야 하나요?**
-아니요, 설정 중에 연동 유형을 선택하세요. 직접 연동을 선택하기만 하면 됩니다.
+1. Facebook에 로그인한 다음, 오른쪽 위의 프로필 사진을 클릭하세요.
+2. **See all profiles**(모든 프로필 보기)를 클릭하고, 전환할 페이지를 선택하세요.
+3. Facebook 오른쪽 위의 페이지 프로필 사진을 클릭하세요.
+4. **Settings & privacy**(설정 및 개인정보)를 클릭하세요.
 
-**Q: 어떤 게시물 유형을 예약할 수 있나요?**
-게시물, 스토리, 릴(인스타그램 가이드라인에 따라)을 예약할 수 있습니다.
+   ![Facebook 설정 및 개인정보 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047067929/original/ir8FH0rSyc8yfTcKAtWmLTD8YbHx_VxBEQ.png?1747915613)
+5. 이어서 **설정**을 클릭하세요.
 
-**Q: 모든 분석 데이터를 확인할 수 있나요?**
-참여 지표는 가능하지만, 이미지/비디오 조회 수는 제공되지 않습니다.
+   ![Facebook 설정 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047067910/original/Y7DU7H2rgpJPXpEGD_hDvQYdUVqM_Q0EHA.png?1747915597)
+6. **Permissions**(권한) 아래에서 **Linked accounts**(연결된 계정)를 클릭하세요.
 
-**Q: 크리에이터 계정에서 스토리를 자동 게시할 수 있나요?**
-예—크리에이터 계정에서 스토리 자동 게시가 지원됩니다.
+   ![Facebook 연결된 계정 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047067896/original/LqYoIsViSLK4t_89n1K36IOsYG09ZepMOg.jpeg?1747915565)
+7. Instagram 옆의 ![Instagram 옆 아이콘](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047066949/original/Gh1sa9kEcIcQk8FxU2Uwf-SQ_XoxjSWkJQ.png?1747914894) **View**(보기)를 클릭하세요.
+8. **계정 연결**을 클릭하고, 안내에 따라 Facebook 페이지와 Instagram 계정을 연결하세요.
+9. 이제 Instagram 비즈니스 프로필이 Facebook 계정에 연결돼요.
+10. Instagram 비즈니스 프로필을 소셜 플래너에 연동하세요.
 
-**Q: 게시물 게시에 실패하면 어떻게 하나요?**
-콘텐츠가 인스타그램 사양을 충족하고 계정이 올바르게 연결되었는지 확인하세요.
-
-**Q: 연결할 수 있는 계정 수에 제한이 있나요?**
-Hyperclass 플랜 한도까지 여러 계정을 연결할 수 있습니다.
-
-**Q: 최신 인스타그램 사양은 어디서 찾을 수 있나요?**
-위의 콘텐츠 가이드라인 참조 섹션을 확인하세요.
+{% hint style="info" %}
+Instagram 앱과 Instagram Graph API는 게시물 캡션에 클릭할 수 있는 링크를 넣을 수 없게 해요. 사용자가 플랫폼 안에 머물게 하고, 스팸을 줄이며, 광고 참여를 높이려는 제한이에요. 그래서 캡션에 링크를 넣어도 Instagram에 게시되면 일반 텍스트로만 보여요.
+{% endhint %}
 
 ---
-*원문 최종 수정: Tue, 9 Dec, 2025 at 1:20 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+
+## 자주 묻는 질문
+
+### 개인 계정에서도 다이렉트 Instagram 연동을 쓸 수 있나요?
+아니요. 비즈니스 계정과 크리에이터 계정만 지원해요.
+
+### 다이렉트 Instagram 연동을 쓰려면 Facebook 페이지 연결을 먼저 해제해야 하나요?
+아니요. 설정할 때 연동 방식을 고르면 돼요. **다이렉트 Instagram 연동**을 선택하세요.
+
+### 어떤 유형의 게시물을 예약할 수 있나요?
+게시물, 스토리, 릴스를 예약할 수 있어요. Instagram 가이드라인을 따라야 해요.
+
+### 모든 분석 지표를 볼 수 있나요?
+참여도 지표는 볼 수 있어요. 이미지·영상 조회수는 볼 수 없어요.
+
+### 크리에이터 계정에서도 스토리를 자동으로 게시할 수 있나요?
+네. 크리에이터 계정의 스토리 자동 게시를 지원해요.
+
+### 게시물이 게시되지 않아요. 어떻게 해야 하나요?
+콘텐츠가 Instagram 사양에 맞는지, 계정이 제대로 연결되어 있는지 확인하세요.
+
+### 연결할 수 있는 계정 수에 제한이 있나요?
+하이퍼클래스 요금제 한도 안에서 여러 계정을 연결할 수 있어요.
+
+### 최신 Instagram 사양은 어디서 확인하나요?
+[게시 콘텐츠: 이미지·영상·텍스트 가이드라인](../../26-산업-가이드/기타/posting-content-image-video-and-text-guidelines.md) 문서를 참고하세요.

@@ -1,157 +1,215 @@
 ---
-
-번역일: 2026-04-06
+원문: /support/solutions/articles/155000001206-how-to-create-add-dashboard-widgets
+번역일: 2026-11-06
 카테고리: 12-대시보드
 ---
 
-# 대시보드 위젯 생성 및 추가하는 방법
+# 대시보드 위젯 만들기와 추가하기
 
-대시보드에 위젯을 추가하면 중요한 데이터와 지표를 한 곳에서 쉽게 확인할 수 있습니다. 리드, 예약, 매출 성과를 추적하든지 상관없이 대시보드를 맞춤 설정하면 비즈니스의 고유한 요구사항을 반영할 수 있습니다.
+대시보드 위젯을 쓰면 중요한 비즈니스 지표를 한곳에서 볼 수 있어요. 하이퍼클래스의 위젯 갤러리는 위젯을 추가하기 전에 차트 미리보기와 설명을 보여 줘서 필요한 위젯을 쉽게 찾게 해 줘요. 목적으로 검색하거나, 추천 위젯을 둘러보거나, 리포팅 모듈별로 필터링하거나, **갤러리 보기**와 **목록 보기**를 바꿔 가며 원하는 지표를 찾아보세요. 이 문서에서는 위젯 갤러리로 대시보드 위젯을 찾고, 추가하고, 사용자 지정하고, 정리하는 방법을 안내해요.
 
-## 커뮤니티 튜토리얼
+## 위젯 갤러리란?
 
-[https://youtu.be/N1fb6vsJCQc](https://youtu.be/N1fb6vsJCQc)
+**Widget Gallery**(위젯 갤러리)는 하이퍼클래스 대시보드나 사용자 지정 리포트를 만들거나 편집할 때 쓸 수 있는 기본 제공 리포팅 위젯 라이브러리예요.
 
-[https://youtu.be/4a54CmvXt8w%EF%BF%BCdotcomquest1@gmail.com](https://youtu.be/4a54CmvXt8w%EF%BF%BCdotcomquest1@gmail.com)
+각 위젯에는 차트 모양 미리보기와 무엇을 측정하는지 설명이 있어요. 위젯을 추가하기 전에 어떤 선택지가 있는지 확인할 수 있어요.
 
-[https://youtu.be/xz8fNKZ62MY](https://youtu.be/xz8fNKZ62MY)
+추천 위젯을 둘러보거나, 리포팅 목적으로 검색하거나, 모듈별로 필터링할 수 있어요. **갤러리 보기**와 **목록 보기**도 바꿔 가며 볼 수 있어요.
 
-[https://youtu.be/vEa6FSnVDWQ](https://youtu.be/vEa6FSnVDWQ)
+## 위젯 갤러리의 주요 장점
 
-[대시보드에 위젯 추가하기](https://www.loom.com/share/7a82edfe80fc4e43961577bc77d0fc32)
+위젯 갤러리를 쓰면 시행착오 없이 알맞은 리포팅 위젯을 찾을 수 있어요.
 
-[
-![대시보드 위젯 추가 영상](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155010321373/original/eJ2WfON1T6jvIxFgPZmsJ_jQNZrRvB9VNg.png?1697548032)
-](https://www.loom.com/share/7a82edfe80fc4e43961577bc77d0fc32)
+- **시각적 미리보기:** 위젯이 숫자, 도넛 차트, 막대 차트, 선 차트 등 어떤 형태로 보여 주는지 미리 확인해요.
+- **위젯 설명:** 정보 아이콘을 눌러 위젯이 무엇을 측정하는지 확인해요.
+- **목적 기반 검색:** 리포팅 목표와 관련된 단어로 검색해요.
+- **추천 위젯:** 계정 활동을 바탕으로 한 추천을 볼 수 있어요. 새 계정에는 시작용 위젯도 보여요.
+- **유연한 탐색:** **갤러리 보기**와 **목록 보기**를 바꾸거나 리포팅 카테고리별로 둘러봐요.
+- **모듈 필터:** 지원하는 리포팅 모듈 안에서 위젯 결과를 좁혀요.
+- **빠른 추가:** 갤러리에서 위젯을 선택하면 대시보드에 바로 추가돼요.
+- **신규 위젯 표시:** 최근에 나온 위젯에는 **신규** 태그가 붙어요.
 
-## 단계 1: 대시보드로 이동하기
+## 사전 확인 사항과 제한
 
-계정에 로그인한 후 메뉴에서 Dashboard(대시보드) 탭을 선택하세요. 하위 계정의 기본 대시보드가 표시됩니다.
+위젯을 추가하기 전에 사용자 지정하려는 대시보드를 열고 편집할 수 있는지 확인하세요.
 
-![대시보드 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037156233/original/49H7Uo6ip-rGc9-v7X1-LZXwQrAjg_QwwQ.png?1732540410)
+- **서브 계정**에서 작업해야 해요.
+- 대시보드를 수정하려면 **편집** 또는 **전체** 권한이 필요해요. **보기** 권한은 읽기 전용이에요.
+- 기존 대시보드에 위젯을 추가하거나 새 대시보드를 만들 수 있어요.
+- 쓸 수 있는 설정 옵션은 선택한 위젯에 따라 달라요.
+- 위젯 갤러리는 대시보드와 사용자 지정 리포트에서 쓸 수 있어요.
 
-## 단계 2: 새 대시보드 추가하기 (선택사항)
+## 대시보드 위젯 추가하기
 
-기본 대시보드를 수정하지 않고 새 대시보드를 만들고 싶다면, 파란색 Add Dashboard(대시보드 추가) 버튼을 클릭하세요.
+아래 순서대로 위젯 갤러리를 열고, 필요한 리포팅 위젯을 찾아 대시보드에 추가해 보세요.
 
-![대시보드 추가 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037156234/original/w0YQyyr9nRlALzr90fICnD4yRzwiMjUk4g.png?1732540410)
+### 1단계. 대시보드 열기
 
-**"Select a Blank Dashboard(빈 대시보드 선택)"** 옵션을 선택하세요.
+1. 하이퍼클래스 **서브 계정**의 왼쪽 메뉴에서 **대시보드**를 선택해요.
+2. **Dashboard Selection**(대시보드 선택) 메뉴를 열어요.
+3. 사용자 지정할 대시보드를 선택해요.
+4. **Edit Dashboard**(대시보드 편집)를 클릭해 편집 모드로 들어가요.
+5. 대시보드 편집 화면에서 위젯 갤러리를 열어요.
 
-![빈 대시보드 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037158083/original/u1YZCCrvvuERafdeUj2_K-m0G_xHwOTGaw.png?1732541445)
+새 대시보드를 만들려면 **Dashboard Selection**을 열고 **+ Add Dashboard**(대시보드 추가)를 선택하세요. 그런 다음 빈 대시보드를 고르고, 대시보드 정보를 입력하고, 공개 범위를 설정한 뒤 새 대시보드를 확인해요.
 
-대시보드 이름을 입력하세요(예: "영업 대시보드").
+![대시보드 편집 화면에서 위젯 갤러리 열기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084152613/original/3c46eQvawKkHSTCfVTcPE820ZkGtiTfOJQ.png?1792975861)
 
-![대시보드 이름 입력](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037159247/original/KE13mXOL9cjwyFQDs2Tcf8vy6vpfQRS8Qw.png?1732542169)
+### 2단계. 추천 위젯 둘러보기
 
-다음으로 대시보드를 Private(비공개, 본인만 볼 수 있음) 또는 For Everyone(모든 사람, 하위 계정의 모든 사용자가 볼 수 있음) 중 선택하세요.
+**비즈니스에 추천하는 항목** 섹션에는 계정 활동을 바탕으로 한 위젯이 표시돼요. 새 계정에는 인기 있는 시작용 위젯도 보여요.
 
-![대시보드 공개 범위 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037156236/original/o4LANj3VsaQhYPM8gJ6QfRwWn1RT6TEpSQ.png?1732540411)
+추천 위젯의 예는 다음과 같아요.
 
-공유 대시보드로 설정하는 경우, 팀 멤버들이 대시보드 데이터에 어떻게 접근할지 제어할 수 있습니다. 에이전시 사용자, 에이전시 관리자, 하위 계정 관리자에게 Full access(전체 접근), Edit access(편집 접근), View access(보기만), No access(접근 불가) 중 하나를 선택할 수 있습니다.
+- **Contacts count**(연락처 수): 전체 연락처 수를 확인해요.
+- **Opened Opportunities**(열린 기회): 현재 진행 중인 기회 수를 확인해요.
+- **Contacts by source**(소스별 연락처): 유입 경로(소스)에 따라 연락처를 비교해요.
+- **Won Opportunities**(고객전환성공 기회): 고객전환성공으로 표시된 기회 수를 확인해요.
 
-![권한 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037156237/original/A67IrfdPN8xYTiNB9CGPiL4BLWXzZLjlkA.png?1732540412)
+추천 항목 아래의 **카테고리별 찾아보기**에서는 위젯이 펼쳐 볼 수 있는 리포팅 카테고리로 나뉘어 있어요.
 
-설정을 선택한 후 Confirm(확인)을 클릭하세요. 이제 맞춤 설정이 가능한 빈 화면이 준비됩니다.
+![비즈니스에 추천하는 항목과 카테고리별 찾아보기 섹션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084152515/original/6QDOQeYT1Cc1BxggMEh0S5GaF9Jl6XIazw.png?1792975420)
 
-![빈 대시보드](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037156238/original/TwYB_Np2JuodE_xjeDcUrdl3k-pLpzBxpw.png?1732540412)
+### 3단계. 갤러리 보기로 위젯 미리 보기
 
-### 위젯 설정의 차트 타입 선택기
+**갤러리 보기**에서는 위젯이 시각적인 카드로 표시돼요. 대시보드에 추가하기 전에 모양을 비교할 수 있어요.
 
-올바른 시각화를 선택하면 트렌드를 더 쉽게 파악하고 분석 속도를 높일 수 있습니다. 편집 작업을 중단하지 않고 Configure(구성)에서 차트 타입을 직접 선택할 수 있습니다.
+1. 위젯 갤러리에서 검색창 옆의 **갤러리 보기** 아이콘을 선택해요.
+2. 위젯 카드를 둘러봐요.
+3. 각 위젯의 차트 미리보기와 이름을 확인해요.
+4. 정보 아이콘을 눌러 위젯이 무엇을 보여 주는지 확인해요.
+5. **신규** 태그가 붙은 위젯은 최근에 나온 위젯이에요.
 
-**단계:**
-- 위젯 편집기를 열고 Configure(구성)으로 이동합니다.
-- **Chart Type(차트 타입)**을 사용하여 시각화 방식(막대, 선, 파이 등)을 선택합니다.
+![갤러리 보기에서 위젯 카드 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084152679/original/gVtSdneQDDgZxQGxKb9hnr9GRmxqs_2Zbw.png?1792976247)
 
-![차트 타입 선택기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064230676/original/gRwnqr0_ndcKaPpRTmyVj-exXVsnr91jyg.png?1770276704)
+### 4단계. 위젯 검색하고 필터링하기
 
-- 실시간 미리보기를 확인하고 필요에 따라 조정한 후, Conditions(조건) 또는 Save(저장)로 진행합니다.
+검색과 모듈 필터를 쓰면 위젯 갤러리에서 필요한 리포팅 지표만 골라 볼 수 있어요.
 
----
+**위젯 검색하기**
 
-## 단계 3: 위젯 메뉴 열기
+1. **Search widgets**(위젯 검색)를 선택해요.
+2. 지표, 키워드 또는 리포팅 목표를 입력해요.
+3. 검색된 위젯을 확인해요.
 
-위젯을 추가하려면 Add Widget(위젯 추가) 버튼을 클릭하세요. 기존 대시보드 내에 위젯을 생성하는 경우 오른쪽 상단의 연필 아이콘을 클릭할 수 있습니다. 화면 오른쪽에 위젯 메뉴가 열립니다.
+예를 들어 "no show"(노쇼)를 검색하면 노쇼 횟수와 시간별 추이를 보여 주는 예약 관련 위젯을 찾을 수 있어요.
 
-![위젯 메뉴 열기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037156239/original/tGk2ywMM1PlOZgekOcHW9JHIPnX9ZRNESQ.png?1732540412)
+![위젯 검색 결과 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084152830/original/vBVkWlkq6TGdhs539jvA-ghU2TlFDgN_rg.png?1792976800)
 
-## 단계 4: 차트 타입과 위젯 카테고리 선택
+**모듈별로 필터링하기**
 
-카테고리를 둘러보거나 검색창을 사용하여 원하는 위젯 타입을 선택하세요.
+1. **갤러리 보기**, **목록 보기** 옵션 옆의 **필터**를 선택해요.
+2. 필요하면 **모듈 검색**으로 리포팅 카테고리를 찾아요.
+3. 포함할 모듈을 선택해요.
+4. **전체 선택** 또는 **전체 해제**로 선택 항목을 빠르게 바꿔요.
 
-1. 표시할 데이터의 차트 타입을 선택합니다. Numeric(숫자형), Donut Chart(도넛 차트), Line Chart(선 차트), Bar Chart(막대 차트), Horizontal Bar Chart(가로 막대 차트), Table chart(표 차트) 등 다양한 차트 타입 중 선택할 수 있습니다.
+위젯 갤러리에는 다음 리포팅 모듈이 있어요.
 
-![차트 타입 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037166302/original/0YAutxpv80rqRGel7ORUlBkQsS_lapln_g.png?1732546276)
+| **모듈** | **모듈** | **모듈** |
+| --- | --- | --- |
+| **General**(일반) | **연락처** | **예약** |
+| **기회 관리** | **Visitor Data**(방문자 데이터) | **이메일** |
+| **SMS** | **통화** | **대화** |
+| **결제** | **Meta Ads** | **Google Ads** |
+| **소셜 플래너** | **평판 관리** | **Google Analytics** |
 
-2. 대시보드에 표시하고자 하는 데이터에 따라 위젯 카테고리를 선택합니다. 선택할 수 있는 다양한 위젯 카테고리는 아래와 같습니다.
+모듈 필터에는 각 리포팅 영역에 속한 위젯 수도 함께 표시돼요.
 
-![위젯 카테고리 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037208157/original/wUUh6_LJ-7ADuHwdNp9VuY_2Lntl_UrlLA.gif?1732610200)
+![모듈 필터 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084152917/original/lx3rrDDWP3WV9yFGbCQ8l9BnvwWWJnYZKA.png?1792977066)
 
-## 단계 5: 위젯 맞춤 설정
+### 5단계. 목록 보기로 전환하기
 
-Widget Settings(위젯 설정) 패널에서:
+**목록 보기**에서는 위젯이 더 작은 미리보기와 설명과 함께 간결하게 표시돼요.
 
-- Chart Type Selection(차트 타입 선택): 데이터를 시각화할 방식을 선택합니다. 차트 타입 선택기가 위젯 설정에 내장되어 더 빠르게 접근할 수 있습니다.
-- Title and Description(제목과 설명): 선택적으로 위젯의 이름과 간단한 설명을 추가할 수 있습니다.
+1. **갤러리 보기** 아이콘 옆의 **목록 보기** 아이콘을 선택해요.
+2. 리포팅 카테고리별 위젯을 둘러봐요.
+3. 카테고리를 펼치거나 접어서 목록을 좁혀요.
+4. 위젯을 선택하기 전에 이름과 설명을 확인해요.
 
-![위젯 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047729821/original/x5azwM8ezPpKcXcQD6pFebnDz0EusTzd_w.png?1749034674)
+큰 미리보기가 필요할 때는 언제든 **갤러리 보기**로 다시 돌아갈 수 있어요.
 
-## 단계 6: 필터 적용
+![목록 보기에서 위젯 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084152998/original/oOIr2DcmFafjSjef9rlWnHsMvnzvPtsaMA.png?1792977511)
 
-Conditions(조건) 탭으로 전환하여 위젯 데이터에 필터를 적용하세요:
+### 6단계. 대시보드에 위젯 추가하기
 
-- "Add Filter(필터 추가)"를 클릭하여 첫 번째 필터 그룹을 생성합니다.
-- "+AND"를 사용하여 같은 그룹 내에 더 많은 필터를 추가할 수 있습니다.
-- "+Add Filter(필터 추가)"를 다시 클릭하면 새 그룹이 시작됩니다. 이렇게 하면 그룹 간에 OR 조건이 생성됩니다.
-- 이제 동일한 필터(예: "Session Source(세션 소스)")를 다른 그룹에서 재사용할 수 있습니다.
+알맞은 위젯을 찾았다면 위젯 갤러리에서 바로 추가해요.
 
-![필터 조건 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155047729973/original/V-CDHtwTPsHW63h56qEhlcqdxxeykW2Dxw.png?1749034792)
+1. **갤러리 보기** 또는 **목록 보기**에서 위젯을 찾아요.
+2. 미리보기와 설명을 확인해요.
+3. 위젯 카드에 마우스를 올려 추가 컨트롤을 확인해요.
+4. 위젯을 선택해 대시보드 캔버스에 추가해요.
+5. 같은 방법으로 위젯을 더 추가해요.
 
-**중요 참고사항 (어트리뷰션 필드)**
+위젯이 대시보드에 나타나면 필요에 맞게 배치하거나 사용자 지정할 수 있어요.
 
-Group By(그룹별) 또는 View By(보기별) 드롭다운에서 Session Source(세션 소스)나 Session Medium(세션 매체)과 같은 어트리뷰션 필드를 사용하는 경우(예: 도넛이나 선 차트):
+![대시보드에 추가된 위젯](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084152971/original/CMCP9-cTUTMjAhEXUYocCmb0bSlaks7lPQ.png?1792977424)
 
-* 복합 필터 그룹은 하나만 허용됩니다
-* 그 단일 필터 그룹에는 Attribution Type(First Touch 또는 Last Touch)이 필터로 포함되어야 합니다
-* 여러 필터 그룹이 추가되면 드롭다운에서 어트리뷰션 기반 필드(Session Source / Medium)가 비활성화됩니다
+### 7단계. 사용자 지정하고 대시보드 저장하기
 
-이 제한은 어트리뷰션 지표로 작업할 때 데이터 일관성을 보장하기 위한 것입니다.
+위젯을 추가한 뒤에는 설정을 조정하고 대시보드를 정리해서 보기 좋은 리포팅 레이아웃을 만들어 보세요.
 
-![어트리뷰션 필터 제한](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155048128120/original/mWxpKprItbrJ9rVD3KRH2VMQv9aRh-N0xg.png?1749715080)
+**위젯 사용자 지정하기**
 
-## 단계 7: 저장
+1. **Edit Dashboard** 모드에서 사용자 지정할 위젯을 찾아요.
+2. 위젯의 편집 컨트롤을 열어요.
+3. 설정 옵션으로 위젯을 조정해요.
+4. 위젯에 따라 다음 설정을 쓸 수 있어요.
 
-모든 설정이 완료되면 Save(저장)를 클릭하여 위젯을 대시보드에 추가하세요.
+   - **제목**
+   - **지표**
+   - **Chart settings**(차트 설정)
+   - **기간**
+   - **조건**
+5. 설정을 마치면 위젯 설정을 저장해요.
 
-## 단계 8: 더 많은 위젯 추가
+![위젯 사용자 지정 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084153090/original/9yZsnjVUIAEXyoCN9td6aLvADzqbX3OrOw.png?1792978169)
 
-데이터의 완전한 그림을 만들려면 이 과정을 반복하여 더 많은 위젯을 추가하세요.
+**대시보드 정리하기**
 
-## 단계 9: 위젯 정리
+1. 위젯을 끌어서 위치를 옮겨요.
+2. 필요에 따라 위젯 크기를 조절해요.
+3. 레이아웃 정리를 마치면 대시보드 변경 사항을 저장해요.
 
-위젯이 추가되면 필요에 따라 크기를 조정하고 위치를 변경할 수 있습니다. 위젯을 드래그 앤 드롭으로 원하는 위치에 배치하고 더 나은 가시성을 위해 크기를 조정하세요.
+![위젯을 끌어서 배치하고 크기 조절하기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084153149/original/XQpg8LGRaDqgMQkU2CHWq0GWKvzfBRN2jg.png?1792978467)
 
-![위젯 정리](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155037158878/original/dUXE-zHF914t7C1bpLKazHtOOwmwSZIiYA.gif?1732541889)
+{% hint style="info" %}
+위젯 설정과 저장 컨트롤은 위젯과 대시보드 편집 화면에 따라 다를 수 있어요.
+{% endhint %}
 
-## 단계 10: 변경사항 저장
+## 사용자 지정 리포트에서 위젯 갤러리 사용하기
 
-위젯을 정리한 후 대시보드 상단의 Save Changes(변경사항 저장)를 클릭하세요. 이렇게 하면 새 설정이 저장되어 사용할 준비가 됩니다.
+위젯 갤러리는 사용자 지정 리포트를 만들거나 편집할 때도 쓸 수 있어요. 같은 검색 도구, 위젯 미리보기, 추천, 리포팅 카테고리로 위젯을 찾아보세요.
 
-## 추가 팁
+1. 하이퍼클래스 **서브 계정**에서 **리포팅**을 선택해요.
+2. **사용자 지정 리포트**를 열어요.
+3. **새 리포트 만들기**를 선택하거나 기존 사용자 지정 리포트를 열어요.
+4. **Report Builder**(리포트 빌더)로 들어가요.
+5. **위젯** 영역을 열어요.
+6. 추천 위젯을 둘러보거나, 목적으로 검색하거나, 모듈별로 필터링해요.
+7. 위젯 미리보기와 설명을 확인해요.
+8. **Report Builder**의 컨트롤로 선택한 위젯을 추가해요.
+9. 필요하면 위젯을 설정한 뒤 리포트를 저장해요.
 
-• 다양한 위젯 타입을 실험해보고 데이터를 시각화하는 최적의 방법을 찾아보세요.
-• 필터와 조건을 사용하여 위젯을 더 정확하게 만들고 관련성을 높이세요.
-• 비즈니스 요구사항이 변화함에 따라 대시보드를 다시 방문하여 업데이트하세요.
+위젯 라이브러리 옆에는 **테마**, **사용자 지정 지표**, **요소** 탭도 그대로 있어요.
 
-이 단계를 따르면 비즈니스를 효과적으로 운영하는 데 필요한 인사이트에 빠르게 접근할 수 있는 완전히 맞춤화된 대시보드를 만들 수 있습니다.
+![사용자 지정 리포트의 위젯 갤러리](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155084153236/original/0a2Fw63i-Ts8oEjC1scciuOl3DvUX8K9WQ.png?1792978778)
 
-## 다음 단계:
+## 자주 묻는 질문
 
-- [위젯 맞춤 설정하기](customizing-dashboard-widgets.md)
-- [대시보드에서 위젯 편집하기](edit-widgets-on-the-dashboard.md)
-- [위젯 제거하기](위젯/removing-a-widget.md)
+### 위젯을 추가하기 전에 미리 볼 수 있나요?
+네. **갤러리 보기**에서는 기본 제공 위젯마다 시각적인 미리보기가 표시돼요. 정보 아이콘을 누르면 위젯이 무엇을 보여 주는지도 확인할 수 있어요.
 
----
-*원문 최종 수정: Thu, 5 Feb, 2026 at 1:31 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### 위젯 이름을 정확히 몰라도 검색할 수 있나요?
+네. "no show"(노쇼)처럼 리포팅 목표나 관련 키워드로 검색하면 관련 위젯을 찾을 수 있어요.
+
+### 갤러리 보기와 목록 보기는 어떻게 달라요?
+**갤러리 보기**는 위젯 미리보기를 크게 보여 줘요. **목록 보기**는 위젯 이름과 설명을 함께 간결하게 보여 줘요.
+
+### 추천 위젯은 계정마다 같은가요?
+아니요. 추천은 계정 활동을 바탕으로 할 수 있어요. 새 계정에는 인기 있는 시작용 위젯도 표시돼요.
+
+### 모듈 필터를 쓰면 이미 있는 대시보드 위젯의 데이터가 바뀌나요?
+아니요. 모듈 필터는 위젯 갤러리 안에서 위젯을 찾는 데 쓰는 기능이에요. 이미 추가한 위젯에 표시되는 데이터를 좁히려면 위젯에서 지원하는 설정이나 **조건** 설정을 쓰세요.
+
+### 사용자 지정 리포트에서도 위젯 갤러리를 쓸 수 있나요?
+네. 사용자 지정 리포트를 만들거나 편집할 때도 위젯 갤러리를 쓸 수 있어요.

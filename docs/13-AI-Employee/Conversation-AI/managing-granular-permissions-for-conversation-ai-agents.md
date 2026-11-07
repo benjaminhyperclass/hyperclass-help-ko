@@ -1,185 +1,158 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 13-AI-Employee > Conversation-AI
+원문: /support/solutions/articles/155000006054-managing-granular-permissions-for-conversation-ai-agents
+번역일: 2026-11-06
+카테고리: 13-AI-Employee
 ---
 
-# 대화 AI 에이전트의 세분화된 권한 관리
+# 대화 AI 에이전트 세부 권한 설정
 
-대화 AI 에이전트(Conversation AI Agents)의 **세분화된 권한**을 통해 봇 관리, 목표, 트레이닝에 대한 팀 액세스를 정밀하게 제어할 수 있습니다. 이 기능은 보안을 강화하고 역할 기반 협업을 지원하며 무단 변경 위험을 최소화하여 AI 기반 워크플로우를 보호하면서 운영 효율성을 유지하는 데 도움이 됩니다.
+**대화 AI 에이전트**(Conversation AI Agents)의 세부 권한을 쓰면 팀원이 봇 관리, 봇 목표, 봇 학습에 접근하는 범위를 세밀하게 정할 수 있어요. 역할에 맞게 권한을 나눠서 허가받지 않은 변경을 막고 싶을 때 사용하세요.
 
----
+## 대화 AI 에이전트 세부 권한이란?
 
-**목차**
+관리자가 팀원이 **Conversation AI 봇**에서 무엇을 보고, 관리하고, 설정할 수 있는지 정하는 하이퍼클래스 기능이에요. 권한을 지정하면 허가된 역할만 봇 생성, 봇 목표, 봇 학습을 다룰 수 있어요. 팀원의 업무 범위에 맞게 접근 권한을 유연하게 관리할 수 있어요.
 
-- [대화 AI 에이전트의 세분화된 권한이란?](#대화-ai-에이전트의-세분화된-권한이란)
-- [대화 AI 에이전트 세분화된 권한의 주요 이점](#대화-ai-에이전트-세분화된-권한의-주요-이점)
-- [대화 AI 에이전트의 세분화된 권한 설정 방법](#대화-ai-에이전트의-세분화된-권한-설정-방법)
-- [권한 유형 설명](#권한-유형-설명)
-- [1. 대화 AI 에이전트 보기 및 관리](#1-대화-ai-에이전트-보기-및-관리)
-- [2. 대화 AI 에이전트 목표 보기 및 관리](#2-대화-ai-에이전트-목표-보기-및-관리)
-- [3. 대화 AI 에이전트 목표 보기](#3-대화-ai-에이전트-목표-보기)
-- [4. 대화 AI 에이전트 트레이닝 보기 및 관리](#4-대화-ai-에이전트-트레이닝-보기-및-관리)
-- [자주 묻는 질문](#자주-묻는-질문)
+## 대화 AI 에이전트 세부 권한의 장점
 
----
+- 보안: 봇 설정, 목표, 학습 내용이 허가 없이 바뀌지 않도록 지켜요.
+- 역할 기반 접근: 역할과 책임에 맞춰 팀원마다 다른 접근 권한을 줄 수 있어요.
+- 효율성: 필요 없거나 제한된 옵션을 숨겨서 워크플로우을 간단하게 만들어요.
+- 위험 감소: 접근을 제어해서 실수나 허가 없는 수정을 줄여요.
 
-## 대화 AI 에이전트의 세분화된 권한이란?
+## 대화 AI 에이전트 세부 권한 설정하기
 
-대화 AI 에이전트의 세분화된 권한은 관리자가 팀 구성원이 대화 AI 봇 내에서 보기, 관리 또는 구성할 수 있는 항목을 정확히 정의할 수 있게 해주는 Hyperclass 기능입니다. 이러한 권한을 할당하면 승인된 역할만 봇 생성, 목표 및 트레이닝을 제어할 수 있어 시스템 무결성을 강화하고 팀 책임과 일치하는 유연한 액세스 관리를 제공합니다.
+1. **내 직원**으로 이동해요.
 
----
+   - 서브 계정에서 왼쪽 아래의 **설정**을 클릭하세요.
+   - 왼쪽 메뉴에서 **스태프 관리**를 선택하세요.
+   - 권한을 바꿀 직원을 찾아 **편집**(연필) 아이콘을 클릭하세요.
 
-## 대화 AI 에이전트 세분화된 권한의 주요 이점
+   ![직원 편집 아이콘 위치](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051822542/original/voWtZqf_b3R6VwV0-AgODankVinuD-Yo0Q.png?1755525394)
 
-- **보안:** 무단 변경으로부터 봇 구성, 목표 및 트레이닝을 보호합니다.
-- **역할 기반 액세스:** 역할과 책임에 따라 맞춤형 팀 액세스를 제공합니다.
-- **효율성:** 불필요하거나 제한된 옵션을 숨겨 워크플로우를 간소화합니다.
-- **위험 감소:** 제어된 액세스를 통해 실수나 무단 수정을 최소화합니다.
+2. **AI 에이전트** 권한 설정을 찾아요.
 
----
+   - 왼쪽의 보조 메뉴에서 **Roles and Permissions**(역할 및 권한)를 클릭하세요.
+   - 아래로 스크롤해서 **AI 에이전트**를 찾으세요.
 
-## 대화 AI 에이전트의 세분화된 권한 설정 방법
+   ![역할 및 권한의 AI 에이전트 섹션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155052015397/original/RhV7Uhx86lxx6RunreUccMXJY5uQBaPlyQ.png?1755701873)
 
-1. **내 스태프(My Staff)**로 이동
+3. 직원의 역할에 맞게 권한 토글을 켜거나 꺼요. 토글은 다음과 같아요.
 
-- 하위 계정에서 왼쪽 하단의 설정(Settings)을 클릭
-- 좌측 내비게이션 바에서 내 스태프(My Staff) 선택
-- 업데이트할 스태프 구성원을 찾아 편집(연필) 아이콘 클릭
+   - **AI Agents**(AI 에이전트, 상위 제어)
+   - **View & Manage Conversation AI agents**(대화 AI 에이전트 보기 및 관리)
+   - **View Conversation AI agent Goals**(대화 AI 에이전트 목표 보기)
+   - **View & Manage Conversation AI agent Goals**(대화 AI 에이전트 목표 보기 및 관리)
+   - **View & Manage Conversation AI agent training**(대화 AI 에이전트 학습 보기 및 관리)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051822542/original/voWtZqf_b3R6VwV0-AgODankVinuD-Yo0Q.png?1755525394)
+   ![권한 토글 목록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155052015155/original/YnK2Ssi4guom6ioV-JBxi1QLMXPR7RVpNg.png?1755701760)
 
-2. AI 에이전트 설정 찾기
+4. 변경 사항을 저장해요.
 
-- 좌측 보조 내비게이션 바에서 **역할 및 권한(Roles and Permissions)** 클릭
-- 아래로 스크롤하여 AI 에이전트(AI Agents) 섹션 찾기
+   - 파란색 **저장** 버튼을 클릭하세요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155052015397/original/RhV7Uhx86lxx6RunreUccMXJY5uQBaPlyQ.png?1755701873)
+   ![저장 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051822991/original/TpaYhrQgwhjAwnSwevoOCNxUfQONTVM62w.png?1755525644)
 
-3. 사용자 역할에 따라 권한 토글을 켜거나 끄기. 토글에는 다음이 포함됩니다:
+## 권한 종류별 설명
 
-- AI 에이전트(AI Agents) (상위 컨트롤)
-- 대화 AI 에이전트 보기 및 관리(View & Manage Conversation AI agents)
-- 대화 AI 에이전트 목표 보기(View Conversation AI agent Goals)
-- 대화 AI 에이전트 목표 보기 및 관리(View & Manage Conversation AI agent Goals)
-- 대화 AI 에이전트 트레이닝 보기 및 관리(View & Manage Conversation AI agent training)
+### 1. View & Manage Conversation AI Agents
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155052015155/original/YnK2Ssi4guom6ioV-JBxi1QLMXPR7RVpNg.png?1755701760)
+봇을 만들고, 편집하고, 삭제하는 것까지 **Conversation AI 봇** 전체 관리를 제어하는 권한이에요.
 
-4. 변경사항 저장
+켜면:
 
-파란색 저장(Save) 버튼을 클릭하여 변경사항을 확인합니다.
+- **Conversation AI 봇**을 만들기, 편집, 삭제할 수 있는 전체 권한이 생겨요.
+- 하위 권한인 **View & Manage Conversation AI agent Goals**, **View Conversation AI agent Goals**, **View & Manage Conversation AI agent Training**이 함께 활성화돼요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051822991/original/TpaYhrQgwhjAwnSwevoOCNxUfQONTVM62w.png?1755525644)
+  ![권한을 켠 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051899123/original/t9_uzbIDr7ud4DWI3JmJZKXRcSsdCgM_MA.png?1755605006)
 
----
+끄면:
 
-## **권한 유형 설명**
+- **Conversation AI 봇** 메뉴 항목이 모두 숨겨져요.
+- 목록 보기에 접근할 수 없고, 새 봇도 만들 수 없어요.
+- 하위 권한이 자동으로 꺼지고, **AI 에이전트** 메뉴에서 대화 AI가 보이지 않아요.
 
-## 1. 대화 AI 에이전트 보기 및 관리
+  ![권한을 끈 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051899169/original/BbkO7qSSJxhr0cGxMo1lgrrx7SM1Nj5MiA.png?1755605052)
 
-이 권한은 생성, 편집, 삭제를 포함한 대화 AI 봇의 전반적인 관리를 제어합니다.
+### 2. View & Manage Conversation AI agent Goals
 
-활성화된 경우:
+**봇 목표**를 편집할 수 있는 권한이에요. 봇의 로직과 목적을 설정하는 숙련 사용자에게 알맞아요.
 
-- 대화 AI 봇을 **생성, 편집 및 삭제**할 수 있는 **전체 액세스** 권한을 부여합니다.
-- 대화 AI 에이전트 목표 보기 및 관리, 대화 AI 에이전트 보기, 대화 AI 에이전트 트레이닝 보기 및 관리 등 종속 권한을 활성화합니다.
+켜면:
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051899123/original/t9_uzbIDr7ud4DWI3JmJZKXRcSsdCgM_MA.png?1755605006)
+- 기존 봇을 편집할 때 **봇 목표**를 편집할 수 있어요.
+- 봇의 목적과 응답 로직을 설정하는 숙련 사용자에게 적합해요.
 
-비활성화된 경우:
+  ![목표 권한을 켠 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051899247/original/UPtGJaTHP_DyOyxCDTORthNGvu7tnLEfBA.png?1755605090)
 
-- 전체 **대화 AI(Conversation AI)** 봇 메뉴 항목이 숨겨집니다.
-- 목록 보기에 대한 액세스를 제거하고 새 봇 생성을 방지합니다.
-- 종속 권한을 자동으로 비활성화하고 AI 에이전트 메뉴에서 대화 AI를 숨깁니다.
+끄면:
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051899169/original/BbkO7qSSJxhr0cGxMo1lgrrx7SM1Nj5MiA.png?1755605052)
+- 편집할 때 **봇 목표** 탭이 숨겨져요.
+- 폼 기반 봇을 만드는 과정에서는 여전히 목표를 정의할 수 있어요.
+- **Bot Trial**(봇 체험)은 계속 사용할 수 있어요.
 
-## 2. 대화 AI 에이전트 목표 보기 및 관리
+  ![목표 권한을 끈 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051899967/original/EaTiawj6WXLGlilFBbyFZbXttE4dEUKNhQ.png?1755605501)
 
-이 권한은 **봇 목표 편집**에 대한 제어를 제공합니다. 봇 로직과 목표를 구성하는 고급 사용자에게 이상적입니다.
+### 3. View Conversation AI Agent Goals
 
-활성화된 경우:
+설정된 **봇 목표**를 보기만 하고 편집은 하지 않는 사용자를 위한 권한이에요.
 
-- 기존 봇을 편집하는 동안 사용자가 **봇 목표를 편집**할 수 있습니다.
-- 봇 목표와 응답 로직을 구성하는 파워 사용자에게 적합합니다.
+켜면:
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051899247/original/UPtGJaTHP_DyOyxCDTORthNGvu7tnLEfBA.png?1755605090)
+- 지침과 액션 같은 설정된 **봇 목표**를 볼 수 있어요.
+- **AI 응답 정보** 창에서 프롬프트 상세 내용도 볼 수 있어요.
 
-비활성화된 경우:
+  ![목표 보기 권한을 켠 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051900252/original/EmzWofTJ7JvSC24-bDD2Z0ToFSzW1mHYiQ.png?1755605642)
 
-- 편집 중 **봇 목표(Bot Goals)** 탭이 숨겨집니다.
-- 폼 기반 봇의 생성 프로세스 중에는 여전히 목표를 정의할 수 있습니다.
-- 봇 트라이얼 액세스는 계속 사용할 수 있습니다.
+끄면:
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051899967/original/EaTiawj6WXLGlilFBbyFZbXttE4dEUKNhQ.png?1755605501)
+- 편집할 때 **봇 목표** 탭이 숨겨져요.
+- 목표는 폼 기반 봇을 만들 때만 볼 수 있어요.
+- 이 경우 추가 지침도 숨겨져요.
 
-## 3. 대화 AI 에이전트 목표 보기
+### 4. View & Manage Conversation AI agent Training
 
-이 설정은 구성된 **봇 목표**를 **보기만** 하고 편집하지는 않는 사용자를 위한 것입니다.
+봇에 지식 베이스를 연결하거나 해제할 수 있는 사람을 정해서 **봇 학습** 설정 접근을 제어하는 권한이에요.
 
-활성화된 경우:
+켜면:
 
-- 지시사항 및 액션과 같은 구성된 **봇 목표**를 **볼 수** 있습니다.
-- AI 응답 정보 드로어 내의 프롬프트 세부사항에 대한 가시성을 확장합니다.
+- 봇에 지식 베이스를 연결하거나 해제할 수 있어요.
+- **AI 응답 정보** 창에서 응답에 어떤 지식 베이스를 썼는지 볼 수 있어요.
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051900252/original/EmzWofTJ7JvSC24-bDD2Z0ToFSzW1mHYiQ.png?1755605642)
+  ![학습 권한을 켠 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051900290/original/-uywLXbF4GGroDJt4w0KsOCos9AsykCbzg.png?1755605695)
 
-비활성화된 경우:
+끄면:
 
-- 편집 중 **봇 목표(Bot Goals)** 탭이 숨겨집니다.
-- 목표는 폼 기반 봇 생성 중에만 보입니다.
-- 해당 컨텍스트에서 추가 지시사항이 숨겨집니다.
+- **봇 학습** 탭이 숨겨지고 수정할 수 없어요.
+- 대화의 **AI 응답 정보** 창에서 지식 베이스 참조가 사라져요.
 
-## 4. 대화 AI 에이전트 트레이닝 보기 및 관리
+  ![학습 권한을 끈 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051900302/original/DbPT5hj9ftGmI9elDyHy1OTJPZ161D2-cA.png?1755605711)
 
-이 권한은 봇에서 지식 베이스를 연결하거나 분리할 수 있는 사람을 결정하여 **봇 트레이닝** 구성에 대한 액세스를 제어합니다.
-
-활성화된 경우:
-
-- 사용자가 봇에서 **지식 베이스(Knowledge Base)**를 연결/분리할 수 있습니다.
-- AI 응답 드로어 내에서 응답에 어떤 지식 베이스가 사용되었는지 볼 수 있습니다.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051900290/original/-uywLXbF4GGroDJt4w0KsOCos9AsykCbzg.png?1755605695)
-
-비활성화된 경우:
-
-- **봇 트레이닝(Bot Training) 탭**이 숨겨지고 수정이 방지됩니다.
-- 대화의 AI 응답 드로어에서 지식 베이스 참조가 제거됩니다.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155051900302/original/DbPT5hj9ftGmI9elDyHy1OTJPZ161D2-cA.png?1755605711)
-
-**참고:** 대화 AI 트레이닝 보기 및 관리와 대화 AI 에이전트 목표 보기 및 관리가 모두 비활성화된 경우 봇 트라이얼 기능에 액세스할 수 없게 됩니다.
-
----
+{% hint style="info" %}
+**View & Manage Conversation AI agent Training**과 **View & Manage Conversation AI agent Goals**를 둘 다 끄면 **Bot Trial**을 사용할 수 없어요.
+{% endhint %}
 
 ## 자주 묻는 질문
 
-**Q: "대화 AI 에이전트 보기 및 관리"를 비활성화하면 어떻게 되나요?**
-전체 대화 AI 봇 메뉴가 사라져 생성이나 편집을 방지합니다. 모든 종속 권한도 비활성화됩니다.
+### "View & Manage Conversation AI Agents"를 끄면 어떻게 되나요?
 
-**Q: 사용자에게 봇 목표에 대한 읽기 전용 액세스를 제공하면서 트레이닝은 제한할 수 있나요?**
-예, 대화 AI 에이전트 목표 보기는 활성화하고 대화 AI 에이전트 트레이닝 보기 및 관리는 비활성화하여 트레이닝 액세스 없이 가시성을 제공할 수 있습니다.
+**Conversation AI 봇** 메뉴가 모두 사라져서 봇을 만들거나 편집할 수 없어요. 하위 권한도 모두 꺼져요.
 
-**Q: "대화 AI 에이전트 목표 보기 및 관리"를 비활성화해도 사용자가 목표를 설정할 수 있나요?**
-예, 폼 기반 봇 생성 중에는 여전히 목표를 정의할 수 있지만 기존 봇을 편집할 때는 불가능합니다.
+### 봇 목표는 보기만 하고 학습은 못 하게 할 수 있나요?
 
-**Q: "대화 AI 에이전트 트레이닝 보기 및 관리"를 비활성화하면 봇에 어떤 영향을 미치나요?**
-봇 트레이닝 탭에 대한 액세스를 제거하고, 지식 베이스 연결/분리를 방지하며, AI 응답 드로어에서 트레이닝 세부사항을 숨깁니다.
+네, 할 수 있어요. **View Conversation AI Agent Goals**는 켜고 **View & Manage Conversation AI Agent Training**은 끄면 목표는 볼 수 있지만 학습에는 접근할 수 없어요.
 
-**Q: 목표와 트레이닝 권한이 모두 비활성화된 경우 봇 트라이얼은 어떻게 되나요?**
-대화 AI 에이전트 트레이닝 보기 및 관리와 대화 AI 에이전트 목표 보기 및 관리가 모두 비활성화된 경우 봇 트라이얼 기능에 액세스할 수 없습니다.
+### "View & Manage Conversation AI Agent Goals"를 끄면 목표를 아예 설정할 수 없나요?
 
----
+아니요. 폼 기반 봇을 만드는 과정에서는 목표를 정의할 수 있어요. 다만 기존 봇을 편집할 때는 설정할 수 없어요.
 
-### **관련 문서**
+### "View & Manage Conversation AI Agent Training"을 끄면 봇에 어떤 영향이 있나요?
 
-- [음성 AI 에이전트의 세분화된 권한 관리](../Voice-AI/managing-granular-permissions-for-voice-ai-agents.md)
-- [대화 AI 설정하기](../Getting-Started-w/-Conversation-AI/setting-up-conversation-ai.md)
-- [에이전시 – 사용자 역할 및 권한 관리](../../11-설정/사용자-설정/agency-managing-user-roles-permissions.md)
-- [고급 설정 개요 - 대화 AI](../Getting-Started-w/-Conversation-AI/advanced-settings-overview-conversation-ai.md)
-- [대화에서 AI 응답 정보 보기 및 편집](../../03-대화/view-edit-ai-response-info-in-conversations.md)
+**봇 학습** 탭에 접근할 수 없고, 지식 베이스를 연결하거나 해제할 수 없어요. **AI 응답 정보** 창에서도 학습 관련 내용이 숨겨져요.
 
----
-*원문 최종 수정: Fri, 22 Aug, 2025 at 6:51 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### 목표와 학습 권한을 둘 다 끄면 Bot Trial은 어떻게 되나요?
+
+**View & Manage Conversation AI Agent Training**과 **View & Manage Conversation AI Agent Goals**를 둘 다 끄면 **Bot Trial**을 사용할 수 없어요.
+
+### 대화 AI 대시보드가 안 보여요.
+
+**Roles & Permissions** > **AI 에이전트**에서 **View Conversation AI Dashboard**(대화 AI 대시보드 보기) 권한이 활성화되어 있는지 확인하세요. 이 권한을 끄면 대화 AI 홈 페이지와 에이전트별 페이지에서 대시보드가 보이지 않아요.

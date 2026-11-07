@@ -1,64 +1,30 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 17-멤버십-커뮤니티 > 커뮤니티
+원문: /support/solutions/articles/155000001638-members-approval-questions
+번역일: 2026-11-07
+카테고리: 17-멤버십-커뮤니티
 ---
 
-# 멤버 승인 질문
+# 멤버 승인 질문 설정하기
 
-커뮤니티(Community)에서 더 많은 튜토리얼 보기
+멤버 승인 질문(Member Approval Questions)은 그룹에 가입을 요청한 사람에게 질문을 보내고, 답변을 보고 승인할지 정하는 기능이에요. 새 멤버가 커뮤니티의 목적과 맞는지 확인하면서 가입 과정을 깔끔하게 관리할 수 있어요.
 
-[https://youtu.be/8hJBZsaTrPg](https://youtu.be/8hJBZsaTrPg)
-
-[https://youtu.be/HQDyFGA94FA](https://youtu.be/HQDyFGA94FA)
-
-[https://youtu.be/Di1sTrDCmNs](https://youtu.be/Di1sTrDCmNs)
-
-[https://youtu.be/_9T7OIrMwhU](https://youtu.be/_9T7OIrMwhU)
-
-Hyperclass 커뮤니티의 최신 기능인 멤버 승인 질문에 오신 것을 환영합니다! 이 강력한 도구를 통해 커뮤니티 멤버십 가입 과정을 간소화하고 새로운 멤버들이 커뮤니티의 목표와 일치하는지 확인할 수 있습니다. 아래에서 멤버 승인 질문을 효과적으로 사용하는 방법을 안내해 드리겠습니다.
-
-그룹의 관리자(Admin)/소유자(Owner)로서, 그룹 가입을 요청하는 멤버들에게 질문을 할 수 있습니다.
-
-이 글에서 다룰 내용
-
-- [시작하기](#시작하기)
-- [승인 질문 만들기](#승인-질문-만들기)
-- [멤버 응답 관리하기](#멤버-응답-관리하기)
-
----
+그룹의 관리자나 소유자는 가입을 요청한 멤버에게 질문을 할 수 있어요.
 
 ## 시작하기
 
-### 멤버 승인 질문 접근하기:
-멤버 질문에 접근하려면 `Settings(설정) > Member Questions(멤버 질문)`로 이동하세요.
-
-### 멤버 승인 질문 활성화하기:
-멤버 질문을 활성화하려면 Enable Member Questions(멤버 질문 활성화) 버튼에서 토글을 켜기만 하면 됩니다. 활성화하면 멤버는 여기에 추가된 질문들에 답변해야 합니다.
+1. **설정 > Member Questions**(멤버 질문)로 이동해 멤버 질문 화면을 열어요.
+2. **Enable Member Questions**(멤버 질문 활성화) 버튼을 켜세요. 켜면 가입을 요청한 멤버에게 여기에 추가한 질문이 표시되고, 멤버는 질문에 답해야 해요.
 
 ## 승인 질문 만들기
 
-### 질문 추가하기:
-멤버 질문을 추가하려면 Add Questions(질문 추가)를 클릭하세요. 최대 3개의 질문을 추가할 수 있습니다.
-추가되는 모든 옵션은 고유해야 합니다.
+1. **Add Questions**(질문 추가)를 클릭해 질문을 추가해요. 질문은 최대 3개까지 추가할 수 있어요. 선택지를 추가할 때는 각 선택지가 서로 달라야 해요.
+2. 질문 유형을 선택해요. **Text Box**(텍스트 상자), **Single Select**(단일 선택), **다중 선택** 중에서 고를 수 있어요.
 
-### 질문 유형 선택하기:
-적절한 질문 유형을 선택하세요 - Text Box(텍스트 상자), Single Select(단일 선택), Multi Select(다중 선택)
+## 멤버 답변 관리하기
 
-![멤버 승인 질문 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155016654574/original/kMkIZG2w_vdWpp9_wGUQyxfXzHb9-OAX3g.png?1704285699)
-
-![질문 유형 선택 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155016654423/original/X0MFwQ14AxiarcvZryc1mXnfDCpBpIz2hw.png?1704285615)
-
-## 멤버 응답 관리하기
-
-### 응답 확인하기:
-그룹의 관리자/소유자는 `People Tab(사람 탭) > Requested Filter(요청됨 필터)`에서 정기적으로 응답을 확인하고 관리해야 합니다.
-
-### 멤버십 승인/거절하기:
-멤버십을 승인하거나 거절하려면, 관리자/소유자는 Requested filter(요청됨 필터)로 이동하여 가입을 요청한 모든 멤버를 확인합니다. 3점 메뉴 > Membership Answers(멤버십 답변) > 관련 답변에 따라 Approve(승인) 또는 Decline(거절)을 클릭하세요.
-
-![멤버십 승인 관리 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155016656314/original/I-_PeG5Wlv1epCutQkNh09QSfXSCRi-a7Q.png?1704286300)
-
----
-*원문 최종 수정: 2024년 2월 1일 오전 10시 27분*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+1. 그룹의 관리자나 소유자는 **People**(멤버) 탭 > **Requested**(요청됨) 필터에서 답변을 정기적으로 확인하고 관리하세요.
+2. 가입을 승인하거나 거절하려면 다음 순서로 진행해요.
+   1. **Requested** 필터를 선택하면 가입을 요청한 멤버가 모두 표시돼요.
+   2. 멤버 옆의 점 3개를 클릭해요.
+   3. **Membership Answers**(멤버십 답변)를 클릭해요.
+   4. 답변 내용을 보고 **Approve**(승인) 또는 **Decline**(거절)을 선택해요.

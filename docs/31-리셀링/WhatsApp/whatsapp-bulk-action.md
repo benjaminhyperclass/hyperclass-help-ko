@@ -1,173 +1,159 @@
 ---
-
-번역일: 2026-04-08
-카테고리: WhatsApp
+원문: /support/solutions/articles/155000001790-whatsapp-bulk-action
+번역일: 2026-11-07
+카테고리: 31-리셀링
 ---
 
-# 왓츠앱 일괄 작업
+# WhatsApp 템플릿 메시지 일괄 보내기
 
-Hyperclass의 왓츠앱 일괄 작업(WhatsApp Bulk Action) 기능을 사용하면 승인된 왓츠앱 템플릿 메시지를 여러 연락처에게 한 번에 발송하면서 전송률, 읽음률, 오류, 건너뛰기 등을 추적할 수 있습니다. 최근 업데이트를 통해 발송 전 템플릿 미리보기, 카테고리 및 언어 정보 표시, 원클릭 미디어 교체 기능이 추가되어 대량 캠페인을 더 쉽게 검토하고 관리할 수 있습니다.
-
----
+승인된 WhatsApp 템플릿 메시지를 여러 연락처에 한 번에 보내고, 전달·읽음·오류·건너뜀 현황까지 확인할 수 있어요. 이 문서에서는 일괄 발송 방법과 캠페인 통계를 보는 방법을 안내해요.
 
 ## 개요
 
-왓츠앱 일괄 작업은 연락처(Contacts)나 스마트 리스트(Smart Lists)에서 직접 대규모 왓츠앱 캠페인을 실행할 수 있게 해주는 기능입니다. 메시지는 즉시 발송하거나, 나중에 예약하거나, 드립 모드로 순차 전송할 수 있습니다. 성과 모니터링과 문제 해결을 위한 상세한 캠페인 통계도 제공됩니다.
+**연락처**나 **스마트 리스트**에서 바로 대량 WhatsApp 캠페인을 실행할 수 있어요. 메시지는 바로 보내거나, 나중으로 예약하거나, 드립 모드로 보낼 수 있어요. 캠페인 통계를 보면 성과를 확인하고 문제를 찾아볼 수 있어요.
 
-최근 추가된 기능:
+최근에 다음 기능이 개선됐어요.
 
-- **발송 전 실시간 템플릿 미리보기**
-- **템플릿 카테고리 및 언어 표시**
-- **로컬 파일에서 원클릭 미디어 교체**
-- 일괄 작업과 대화(Conversations) 간 일관성 개선
+- 보내기 전에 템플릿을 실행 화면 그대로 미리 볼 수 있어요.
+- 템플릿 카테고리와 언어를 확인할 수 있어요.
+- 내 기기의 파일로 미디어를 한 번에 교체할 수 있어요.
+- **일괄 작업**과 **대화**에서 같은 방식으로 쓸 수 있어요.
 
-**중요:** 일괄 작업에는 **승인된 왓츠앱 템플릿**만 사용할 수 있습니다. Meta 메시징 한도 및 왓츠앱 정책이 적용됩니다.
+{% hint style="warning" %}
+일괄 작업에서는 승인된 WhatsApp 템플릿만 쓸 수 있어요. Meta의 메시지 한도와 WhatsApp 정책도 그대로 적용돼요.
+{% endhint %}
 
----
+## WhatsApp 일괄 메시지 보내기
 
-## 왓츠앱 일괄 메시지 발송 방법
+### 연락처 선택
 
-### 1단계: 연락처 선택
+- **연락처**로 이동하세요.
+- **필터**나 **스마트 리스트**로 메시지를 보낼 연락처를 찾으세요.
+- 연락처를 하나씩 선택하거나, **Select all records**(전체 레코드 선택)를 클릭해 목록의 모든 연락처를 선택하세요.
 
-- **연락처(Contacts)** 메뉴로 이동합니다.
-- 필터나 **스마트 리스트(Smart Lists)**를 사용하여 메시지를 보낼 연락처를 찾습니다.
-- 연락처를 개별 선택하거나 **모든 레코드 선택(Select all records)**을 클릭하여 목록의 모든 연락처를 포함합니다.
+![연락처를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064134574/original/oxSamFYjTbiyXOmY9PoRcyarq5lRr3Gtgg.png?1770179619)
 
-![연락처 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064134574/original/oxSamFYjTbiyXOmY9PoRcyarq5lRr3Gtgg.png?1770179619)
+### 일괄 WhatsApp 작업 시작
 
-### 2단계: 왓츠앱 일괄 작업 시작
+1. 연락처를 선택한 상태에서 **일괄 작업** 도구 모음의 WhatsApp 아이콘을 클릭하세요.
+2. **WhatsApp 보내기**를 선택하면 **대량 WhatsApp** 캠페인이 시작돼요.
 
-- 연락처를 선택한 상태에서 일괄 작업(Bulk Actions) 도구모음의 **왓츠앱 아이콘**을 클릭합니다.
-- **왓츠앱 보내기(Send WhatsApp)**를 선택하여 왓츠앱 일괄 캠페인을 시작합니다.
+![일괄 작업 도구 모음에서 WhatsApp 보내기를 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064134609/original/lqPIsPyKABNANq6HcRIDH-IiCUZpfOUIHg.png?1770179730)
 
-![왓츠앱 일괄 작업 시작](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064134609/original/lqPIsPyKABNANq6HcRIDH-IiCUZpfOUIHg.png?1770179730)
+### WhatsApp 템플릿 선택과 미리보기
 
-### 3단계: 왓츠앱 템플릿 선택 및 미리보기
+1. 템플릿 목록에서 WhatsApp 템플릿을 선택하세요.
+2. 선택한 템플릿의 미리보기가 바로 표시돼요. 미리보기에는 템플릿 메시지 내용, 템플릿 카테고리(예: 마케팅, 유틸리티), 템플릿 언어가 나와요.
+3. **액션 이름**을 입력하세요. 나중에 이 캠페인을 찾을 때 쓰는 이름이에요.
+4. 발송 방식을 선택하세요. 바로 보내기, 나중으로 예약하기, 드립 모드로 보내기 중에서 고를 수 있어요.
 
-- 템플릿 목록에서 **왓츠앱 템플릿**을 선택합니다.
-- 선택한 템플릿의 **실시간 미리보기**가 즉시 표시됩니다.
-- 미리보기에서 확인할 수 있는 정보:
-  - 템플릿 메시지 내용
-  - **템플릿 카테고리** (예: 마케팅, 유틸리티)
-  - **템플릿 언어**
-- **액션 이름(Action Name)**을 입력하여 나중에 캠페인을 참조할 수 있도록 합니다.
-- 캠페인 발송 방식을 선택합니다:
-  - 즉시 발송
-  - 나중 시간 예약
-  - 드립 모드로 발송
+{% hint style="info" %}
+템플릿을 고를 때는 승인된 템플릿만 보여요.
+{% endhint %}
 
-**참고:** 선택 시에는 승인된 템플릿만 표시됩니다.
+![WhatsApp 템플릿을 선택하고 미리보기를 확인하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064134665/original/fqcj_yhp2vT2KyXEyEJSkwAdJCVwTVpQQg.png?1770179860)
 
-![템플릿 선택 및 미리보기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064134665/original/fqcj_yhp2vT2KyXEyEJSkwAdJCVwTVpQQg.png?1770179860)
+### 템플릿 미디어 교체 (선택)
 
-### 4단계: 템플릿 미디어 교체 (선택사항)
+선택한 템플릿에 미디어가 들어 있을 때 쓸 수 있어요.
 
-선택한 템플릿에 미디어가 포함된 경우:
+1. 템플릿 미리보기에서 **미디어 교체**를 클릭하세요.
+2. **파일 선택**을 눌러 내 기기에서 파일을 고르세요.
+3. 미리보기의 미디어가 바로 바뀌어요.
 
-- 템플릿 미리보기에서 **미디어 교체(Replace media)**를 클릭합니다.
-- 로컬 기기에서 파일을 선택합니다.
-- 미리보기에서 미디어가 즉시 업데이트됩니다.
+이 캠페인에서만 미디어가 바뀌고, 승인된 템플릿 자체는 수정되지 않아요.
 
-이 기능은 **이 캠페인에만** 미디어를 교체하며, 승인된 템플릿 자체는 수정하지 않습니다.
+![템플릿 미리보기에서 미디어를 교체하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064134700/original/YwxEnWIxUqNdQdbrNhpFbYa5O2QIIqHvKA.png?1770179970)
 
-![미디어 교체](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064134700/original/YwxEnWIxUqNdQdbrNhpFbYa5O2QIIqHvKA.png?1770179970)
+### 캠페인 실행
 
-### 5단계: 캠페인 실행
+1. 캠페인 내용을 확인하세요.
+2. 작업을 확정하세요.
+3. 대량 WhatsApp 캠페인 처리가 시작돼요.
 
-- 캠페인 세부사항을 검토합니다.
-- 작업을 확인합니다.
-- 왓츠앱 일괄 캠페인 처리가 시작됩니다.
+![캠페인 내용을 확인하고 실행하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064134726/original/slLEbnlptzXBuA7XuPINT8r-a0sA4K6y3A.png?1770180058)
 
-![캠페인 실행](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064134726/original/slLEbnlptzXBuA7XuPINT8r-a0sA4K6y3A.png?1770180058)
+### 캠페인 진행 상황 확인
 
-### 6단계: 캠페인 진행상황 모니터링
+1. **연락처 > 일괄 작업**으로 이동하세요.
+2. WhatsApp 캠페인을 찾으세요.
+3. **상세 보기** 또는 **통계 보기**를 클릭해 진행 상황을 확인하세요.
 
-- **연락처(Contacts) → 일괄 작업(Bulk Actions)**으로 이동합니다.
-- 왓츠앱 캠페인을 찾습니다.
-- **세부사항 보기(View Details)** 또는 **통계 보기(Show Stats)**를 클릭하여 진행상황을 모니터링합니다.
+![일괄 작업 목록에서 캠페인 진행 상황을 확인하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064134737/original/Km_2sjWtwVlYKsH_v2IsaxIWyo_317p5JQ.png?1770180148)
 
-![캠페인 진행상황 모니터링](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064134737/original/Km_2sjWtwVlYKsH_v2IsaxIWyo_317p5JQ.png?1770180148)
+### 캠페인 상세 통계 보기
 
-### 7단계: 상세 캠페인 통계 보기
+캠페인 통계를 클릭하면 상세 화면이 열려요. 이 화면에는 **Total**(전체), **Pending**(대기 중), **Sent**(발송됨), **Delivered**(전달됨), **Read**(읽음), **오류**, **Skipped**(건너뜀) 탭이 있어요.
 
-캠페인 통계를 클릭하면 다음 탭이 있는 상세 보기가 열립니다:
+보고용으로 캠페인 통계를 내보낼 수도 있어요.
 
-- 전체(Total)
-- 대기 중(Pending)
-- 발송됨(Sent)
-- 전달됨(Delivered)
-- 읽음(Read)
-- 오류(Error)
-- 건너뛰기(Skipped)
+![캠페인 상세 통계 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064134749/original/QHzO3z4K9ee4VZ7uhUUnqlhpGgabO3idAA.png?1770180249)
 
-보고서 작성을 위해 캠페인 통계를 내보낼 수도 있습니다.
+## 캠페인 통계 항목 설명
 
-![상세 캠페인 통계](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064134749/original/QHzO3z4K9ee4VZ7uhUUnqlhpGgabO3idAA.png?1770180249)
+**Total**(전체)
 
----
+일괄 작업에 포함된 전체 연락처 수예요.
 
-## 캠페인 통계 설명
+**Pending**(대기 중)
 
-**전체(Total)**
-일괄 작업에 포함된 총 연락처 수
+아직 WhatsApp 메시지 발송이 시작되지 않은 연락처예요.
 
-**대기 중(Pending)**
-왓츠앱 메시지가 아직 트리거되지 않은 연락처
+**Sent**(발송됨)
 
-**발송됨(Sent)**
-왓츠앱 메시지가 발송된 연락처
+WhatsApp 메시지를 보낸 연락처예요.
 
-**전달됨(Delivered)**
-왓츠앱 메시지를 성공적으로 수신한 연락처
+**Delivered**(전달됨)
 
-**읽음(Read)**
-왓츠앱 메시지를 열어서 읽은 연락처
+WhatsApp 메시지를 정상적으로 받은 연락처예요.
 
-**오류(Error)**
-메시지 전송이 실패한 연락처. 원인:
-- 연락처가 왓츠앱을 사용하지 않음
-- 템플릿 문제
-- Meta 메시징 한도 초과
-- 왓츠앱 계정 제한
+**Read**(읽음)
 
-**건너뛰기(Skipped)**
-다음 이유로 캠페인에서 제외된 연락처:
-- DND(수신거부) 설정
-- 전화번호 누락
-- 메시징 제한
+WhatsApp 메시지를 열어서 읽은 연락처예요.
 
----
+**오류**
+
+메시지 전달에 실패한 연락처예요. 다음과 같은 이유가 있을 수 있어요.
+
+- 연락처가 WhatsApp을 사용하지 않는 경우
+- 템플릿에 문제가 있는 경우
+- Meta 메시지 한도를 초과한 경우
+- WhatsApp 계정에 제한이 걸린 경우
+
+**Skipped**(건너뜀)
+
+다음 이유로 캠페인에서 제외된 연락처예요.
+
+- 수신거부 설정
+- **전화번호가 없습니다**
+- 메시지 전송 제한
 
 ## 자주 묻는 질문
 
-**Q: 왓츠앱 일괄 작업 진행 중에 Meta 메시징 한도를 초과하면 어떻게 되나요?**
+### WhatsApp 일괄 작업을 하는 도중 Meta 메시지 한도를 넘으면 어떻게 되나요?
 
-한도를 초과한 연락처의 메시지는 실패하며 캠페인 통계의 **오류(Error)** 항목에 표시됩니다.
+한도를 넘은 연락처에는 메시지가 전송되지 않고, 캠페인 통계의 **오류**에 표시돼요.
 
-**Q: Hyperclass에서 왓츠앱 일괄 메시지 발송 속도 제한은 얼마인가요?**
+### WhatsApp 일괄 메시지는 얼마나 빠르게 보내지나요?
 
-왓츠앱 메시지는 Meta 한도에 따라 **시간당 최대 1,000개 메시지** 속도로 발송됩니다.
+WhatsApp 메시지는 시간당 최대 1,000건씩 보내져요. 이 속도에도 Meta의 한도가 적용돼요.
 
-**Q: Meta 메시징 한도란 무엇인가요?**
+### Meta 메시지 한도가 무엇인가요?
 
-Meta 메시징 한도는 24시간 단위로 시작할 수 있는 새로운 비즈니스 주도 대화의 수를 제한하는 정책입니다.
+Meta 메시지 한도는 24시간 롤링 기간 안에 비즈니스가 먼저 시작할 수 있는 새 대화의 수를 정해 둔 제한이에요.
 
-**Q: 티어 할당량이 완료되면 어떻게 되나요?**
+### 등급별 할당량을 모두 사용하면 어떻게 되나요?
 
-할당량이 재설정될 때까지 추가 비즈니스 대화를 시작할 수 없습니다.
+할당량이 초기화될 때까지는 비즈니스 대화를 추가로 시작할 수 없어요.
 
-**Q: 현재 메시징 한도를 어떻게 확인할 수 있나요?**
+### 현재 메시지 한도는 어디서 확인하나요?
 
-Meta의 **왓츠앱 매니저(WhatsApp Manager) → 개요 대시보드(Overview Dashboard) → 인사이트(Insights)**에서 확인할 수 있습니다.
+Meta의 **WhatsApp Manager > Overview Dashboard**(개요 대시보드) **> 인사이트**에서 확인할 수 있어요.
 
-**Q: 품질 등급이란 무엇이며 메시징 한도에 어떤 영향을 주나요?**
+### 품질 등급이 무엇이고, 메시지 한도에 어떤 영향을 주나요?
 
-품질 등급은 7일 동안의 고객 피드백을 반영합니다. 낮은 등급은 메시징 한도를 감소시킬 수 있습니다.
+품질 등급은 최근 7일 동안의 고객 피드백을 반영한 등급이에요. 등급이 낮으면 메시지 한도가 줄어들 수 있어요.
 
-**Q: 높은 품질 등급을 유지하려면 어떻게 해야 하나요?**
+### 품질 등급을 높게 유지하려면 어떻게 해야 하나요?
 
-왓츠앱 비즈니스 및 커머스 정책을 준수하고, 수신 동의한 사용자에게만 메시지를 보내며, 개인화된 메시지를 작성하고, 과도한 메시징 빈도를 피해야 합니다.
-
----
-*원문 최종 수정: Tue, 3 Feb, 2026 at 11:02 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+WhatsApp Business 및 Commerce 정책을 지키고, 수신에 동의한 사용자에게만 메시지를 보내세요. 메시지를 개인에게 맞게 작성하고, 너무 자주 보내지 않도록 주의하세요.

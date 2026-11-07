@@ -1,49 +1,44 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 이커머스 스토어
+원문: /support/solutions/articles/155000002825-how-to-add-product-weights-dimension-and-sku-information-in-your-ecom-store
+번역일: 2026-11-07
+카테고리: 37-이커머스-스토어
 ---
 
-# 이커머스 스토어에서 상품 무게, 크기, SKU 정보 추가하는 방법
+# 상품에 무게·크기·SKU 정보 추가하기
 
-스토어 운영자는 상품에 무게, 크기, SKU(Stock Keeping Unit, 재고 관리 코드) 등 추가 정보를 입력할 수 있습니다. 이런 정보는 향후 배송 연동에 꼭 필요한 항목들입니다. 변형/가격을 위한 새로운 페이지가 추가되어, 사용자는 상품 무게, 크기, SKU 세부 정보를 정의할 수 있으며, 특정 변형의 재고 추적 기능도 사용할 수 있습니다.
+스토어 운영자는 상품마다 무게, 크기, SKU(재고 관리 코드, Stock Keeping Unit)를 입력할 수 있어요. 이 항목은 앞으로 배송 연동을 쓸 때 꼭 필요한 정보예요. 가격과 배리언트 전용 페이지가 새로 생겼고, 이 페이지에서 무게·크기·SKU를 입력하고 배리언트별 재고도 추적할 수 있어요.
 
-## 사용 방법:
+## 사용 방법
 
-- 이러한 세부 정보를 추가하려면 다음 경로로 접근하세요:
+1. 다음 경로로 이동해요.
 
-Payments(결제) > Products(상품) > Create Product(상품 생성) > Add Pricing/ Variants(가격/변형 추가) > Pricing/ Variant page(가격/변형 페이지).
+   **결제 > 상품 > 상품 만들기 > Add Pricing/Variants**(가격/배리언트 추가) > 가격/배리언트 페이지
+2. 먼저 가격 또는 배리언트를 만들어야 해요. 만든 뒤에는 **상품명**에 걸린 링크를 눌러 해당 페이지로 들어갈 수 있어요.
+3. 새로 추가했지만 아직 저장하지 않은 가격에는 **신규** 태그가 표시돼요. 변경 내용을 저장한 뒤에야 가격/배리언트 페이지를 열 수 있어요.
+4. 가격/배리언트 페이지에서는 재고 추적과 함께 상품의 무게, 크기, SKU를 입력할 수 있어요.
 
-- 먼저 가격이나 변형을 생성해야 상품명의 하이퍼링크를 통해 해당 페이지에 접근할 수 있습니다.
+```
+이제 가격/배리언트 목록에서 가격과 배리언트를 더 쉽게 찾고 관리할 수 있어요.
 
-- 새로 추가된 저장되지 않은 가격에는 "New" 태그가 표시되며, 가격/변형 페이지는 변경 사항을 저장한 후에만 사용할 수 있습니다.
+마우스를 올리면 강조 표시: 가격/배리언트 타일에 마우스를 올리면 강조 표시돼요. 클릭하면 상세 가격/배리언트 페이지가 열린다는 뜻이에요. 이 페이지에서 무게, 크기, SKU, 재고, 디지털 파일을 추가할 수 있어요.
 
-- 재고 추적 외에도 사용자는 변형이나 가격 페이지에서 상품 무게, 크기, SKU를 추가할 수 있습니다.
+빠른 액션: 각 타일에 편집과 삭제 옵션이 있어서, 상세 페이지를 열지 않고도 바로 관리할 수 있어요.
+```
 
-가격/변형은 이제 가격/변형 목록에서 더 쉽게 찾고 관리할 수 있습니다:
+**새로 만든 가격**
 
-호버 하이라이트: 가격/변형 타일 위에 마우스를 올리면 하이라이트되어 클릭 가능하다는 것을 명확히 알 수 있으며, 상세 가격/변형 페이지(무게, 크기, SKU, 재고, 디지털 파일을 추가할 수 있는 곳)로 이동됩니다.
+![새로 만든 가격 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155029297643/original/YUFuCVr46Ncu6XHGu8Oldx7eE_LzSSKAwA.jpeg?1721078104)
 
-**빠른 작업:** 각 타일에는 편집과 삭제 옵션이 포함되어 있어 전체 상세 페이지를 열지 않고도 더 빠르게 관리할 수 있습니다.
+**가격 페이지 화면**
 
-새로 생성된 가격:
+![가격 페이지 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155029297645/original/jFpSt29ziDYdoHLpJHQY0mI1otD1LGAdoA.jpeg?1721078104)
 
-![새로 생성된 가격 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155029297643/original/YUFuCVr46Ncu6XHGu8Oldx7eE_LzSSKAwA.jpeg?1721078104)
+**새 가격 만들기**
 
-**가격 페이지 뷰:**
+![새 가격 만들기 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155029297640/original/SZ9Ry-ZH8XQsVJXZtJCiIotoe15Y3ta1GQ.png?1721078103)
 
-![가격 페이지 뷰](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155029297645/original/jFpSt29ziDYdoHLpJHQY0mI1otD1LGAdoA.jpeg?1721078104)
+**배리언트 페이지**
 
-**새 가격 생성:**
+![배리언트 페이지 화면 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155029297641/original/nhv7A_B4ZvWTCBThA3GIIqqsrkc3BlKeug.jpeg?1721078104)
 
-![새 가격 생성](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155029297640/original/SZ9Ry-ZH8XQsVJXZtJCiIotoe15Y3ta1GQ.png?1721078103)
-
-**변형 페이지:**
-
-![변형 페이지 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155029297641/original/nhv7A_B4ZvWTCBThA3GIIqqsrkc3BlKeug.jpeg?1721078104)
-
-![변형 페이지 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155029297642/original/EckfrASPP2647pvFGflmu5rYnT1JzZCXRw.jpeg?1721078104)
-
----
-*원문 최종 수정: Mon, 23 Feb, 2026 at 6:58 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+![배리언트 페이지 화면 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155029297642/original/EckfrASPP2647pvFGflmu5rYnT1JzZCXRw.jpeg?1721078104)

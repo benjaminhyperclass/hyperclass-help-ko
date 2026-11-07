@@ -1,68 +1,52 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 11-설정 > 에이전시-설정
+원문: /support/solutions/articles/48001191827-optimize-experience-features
+번역일: 2026-11-07
+카테고리: 11-설정
 ---
 
-# 최적화 경험 기능
+# 에이전시 설정의 Optimize Experience 기능 켜고 끄기
 
-에이전시 설정(Agency Settings)의 최적화 경험(Optimize Experience) 섹션에서는 피드백 수집, 신규 사용자 교육, 사용자 알림에 사용되는 기능들을 제어할 수 있습니다.
+**에이전시 설정**의 **Optimize Experience**(경험 최적화) 섹션에서는 피드백 수집, 신규 사용자 안내, 사용자 알림에 쓰이는 기능을 관리해요. 이 기능들은 기본으로 모두 켜져 있어요. 사용하고 싶지 않다면 직접 꺼야 해요.
 
-기본적으로 이 기능들은 활성화되어 있으므로, 끄고 싶으시다면 직접 비활성화해야 합니다.
+{% hint style="info" %}
+에이전시 관리자만 쓸 수 있는 설정이에요.
+{% endhint %}
 
----
+## Optimized Experience 켜고 끄는 위치
 
-이 글에서 다루는 내용:
+1. **에이전시 설정**으로 이동해요.
+2. **회사**를 클릭해요.
+3. 아래로 스크롤해요.
+4. 켜거나 끄고 싶은 항목의 토글을 눌러요.
 
-[최적화 경험 기능을 활성화하거나 비활성화하는 방법](#최적화-경험-기능을-활성화하거나-비활성화하는-방법)
+![에이전시 설정에서 Optimize Experience 항목을 켜고 끄는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48248421220/original/UUtFo_ec721rLnz9h65p63sOnOALy-SVzQ.gif?1661966007)
 
-[각 최적화 경험 기능의 상세 내용](#각-최적화-경험-기능의-상세-내용)
+## Optimized Experience에 포함된 기능
 
-- [NPS 설문](#nps-설문)
-- [제품 가이드](#제품-가이드)
-- [일일 업데이트](#일일-업데이트)
-- [베타 기능](#베타-기능)
+### NPS Surveys
 
----
+**NPS Surveys**(NPS 설문)는 팝업으로 나타나는 설문이에요. 새 기능에 대한 피드백을 모아 앱의 UI/UX를 계속 개선하려고 가끔 사용해요. 이 설문은 항상 화이트라벨로 제공되어, 원래 플랫폼 제공사의 이름이나 브랜드가 나오지 않아요.
 
-## 최적화 경험 기능을 활성화하거나 비활성화하는 방법
+![팝업으로 표시되는 NPS 설문 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48129982544/original/xoxqXHv8_e0ZE1EVHUzlkFOr820_a6HwvA.png?1628799157)
 
-Agency settings(에이전시 설정) > Company(회사) 클릭 > 아래로 스크롤 > 원하는 설정의 토글을 활성화 또는 비활성화
+### Product Guides
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48248421220/original/UUtFo_ec721rLnz9h65p63sOnOALy-SVzQ.gif?1661966007)
+**Product Guides**(플랫폼 안내 가이드)는 플랫폼에 새 기능이 추가되면 팝업으로 알려 주는 가이드예요. 고객이 새 기능을 쉽게 발견하고 더 활발히 사용하도록 도와, 플랫폼 사용 경험을 높여 줘요.
 
----
+![새 기능을 알려 주는 Product Guides 팝업](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48129982545/original/Uart_CYrGtWT_QHS_93Gcgps4z-_QT0HTw.png?1628799157)
 
-# 각 최적화 경험 기능의 상세 내용
+팝업 안을 클릭하면 새 기능을 설정하거나 사용하는 방법을 단계별로 안내해 줘요.
 
-## NPS 설문
+![새 기능의 단계별 안내가 열린 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48129982546/original/RWNyNXjQ8wIbMIayWYoNOTEiAtBmtKm9HQ.png?1628799157)
 
-NPS 설문은 새로운 기능에 대한 피드백을 수집하여 앱의 UI/UX를 지속적으로 개선하기 위해 가끔씩 나타나는 팝업 설문입니다. 이 설문은 항상 화이트라벨(white-labeled)로 제공되며 Hyperclass이나 관련 브랜딩은 전혀 노출되지 않습니다.
+### Daily Updates
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48129982544/original/xoxqXHv8_e0ZE1EVHUzlkFOr820_a6HwvA.png?1628799157)
+**Daily Updates**(일일 업데이트)는 최종 사용자에게 보내는 화이트라벨 이메일 알림이에요. 새 리뷰처럼 중요한 소식을 알려 줘서, 사용자가 최대한 빨리 답할 수 있도록 도와요.
 
-## 제품 가이드
+앞으로 이 알림은 "daily snapshot report"(일일 스냅샷 요약)로 발전할 예정이에요. 새 리뷰, 평균 응답 시간 등의 정보가 담겨요.
 
-플랫폼에 새로운 기능이 추가될 때 나타나는 팝업 가이드입니다. 고객들이 새로운 기능을 발견하고 참여도를 높이는 데 도움을 주어 플랫폼 내에서의 경험을 향상시킵니다.
+![Daily Updates 이메일 알림 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48130002447/original/_WicQ4k5RoBOjLAdgi34loxHBEJQ5eHWdg.png?1628801394)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48129982545/original/Uart_CYrGtWT_QHS_93Gcgps4z-_QT0HTw.png?1628799157)
+### Beta Features
 
-팝업 내부를 클릭하면 새로운 기능을 설정하거나 사용하는 방법에 대한 단계별 안내를 확인할 수 있습니다!
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48129982546/original/RWNyNXjQ8wIbMIayWYoNOTEiAtBmtKm9HQ.png?1628799157)
-
-## 일일 업데이트
-
-일일 업데이트는 최종 사용자에게 발송되는 화이트라벨 이메일 알림으로, 새로운 리뷰 등의 중요한 사항을 알려주어 가능한 한 빠르게 응답할 수 있도록 도와줍니다.
-
-이 업데이트는 향후 "일일 스냅샷 보고서"로 발전하여 새로운 리뷰, 평균 응답 시간 등의 정보를 포함하게 됩니다.
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48130002447/original/_WicQ4k5RoBOjLAdgi34loxHBEJQ5eHWdg.png?1628801394)
-
-## 베타 기능
-
-모든 계정에서 주요 기능 업그레이드에 조기 액세스할 수 있습니다. 모든 사용자에게 공개되기 전에 저희의 최신 기능들을 먼저 체험해볼 수 있습니다.
-
----
-*원문 최종 수정: Wed, 31 Aug, 2022 at 12:48 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+**Beta Features**(베타 기능)를 켜면 모든 계정에서 주요 기능 업데이트를 먼저 사용해 볼 수 있어요. 모두에게 공개되기 전에 최신 기능을 미리 써 보세요.

@@ -1,235 +1,229 @@
 ---
-
-번역일: 2026-04-06
+원문: /support/solutions/articles/48000981680-mailgun-setup-namecheap-domain-setup
+번역일: 2026-11-06
 카테고리: 09-이메일
 ---
 
-# Mailgun 설정 - Namecheap 도메인 설정
+# Mailgun 설정하기: Namecheap 도메인 설정
 
-## 단계별 Mailgun 설정 - Namecheap 도메인 설정
+Mailgun에 가입하고 도메인을 추가한 뒤, Namecheap에 TXT·MX·CNAME 레코드를 등록해 이메일 인증과 발송이 되도록 설정하는 방법이에요. 이 문서에서는 Mailgun 계정 만들기, 발송 도메인 추가, 메인 도메인과 서브도메인 중 선택하기, 그리고 Namecheap의 Advanced DNS 설정에서 필수 DNS 레코드 5개(TXT 2개, MX 2개, CNAME 1개)를 등록하는 과정을 안내해요.
 
-1. [Mailgun.com](https://signup.mailgun.com/new/signup)에 회원가입합니다.
+{% hint style="info" %}
+Mailgun과 Namecheap 화면은 하이퍼클래스 화면이 아니므로 메뉴와 버튼 이름을 영어 그대로 쓰고, 처음 나올 때 뜻을 괄호로 덧붙였어요.
+{% endhint %}
 
-2. 이메일 인박스를 확인하여 이메일 주소를 인증합니다.
+## Mailgun 가입하기
 
-[
-![이메일 인증 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284378416/original/VewuZVN3oFOFIvBdf4XqMAOX4vtVGv_jNg.png?1677630998)
-](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48243535009/original/7tQRdPUgguqaYEpnIV2uS3kIQpMd7jZBZw.png?1659724083)
+[Mailgun.com](https://signup.mailgun.com/new/signup)에서 계정을 만드세요.
 
-[
-![이메일 인증 완료](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284378421/original/GU6IL6Y3N81qm6KMH9aTz7l5FV5IEv7ySA.png?1677630999)
-](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48243535045/original/kRGmwZtbq3-zkULjp6-Pg0J-7sTNMNHymQ.png?1659724108)
+## 이메일 주소 인증하기
 
-3. Mailgun에 로그인한 후, **Sending** > **Add New Domain**을 클릭합니다.
+가입할 때 입력한 이메일 주소로 인증 메일이 와요. 받은편지함에서 인증을 완료하세요.
 
-[
-![Mailgun 도메인 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284378418/original/kxsnymCeuFAsBWkXaOes6QaaWED2_bfASA.png?1677630999)
-](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48243535197/original/doBfy9jAqoxcOqD5LiuyQO9rnyVWfkkAeg.png?1659724186)
+![Mailgun 가입 완료 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284378416/original/VewuZVN3oFOFIvBdf4XqMAOX4vtVGv_jNg.png?1677630998)
+![이메일 인증 완료 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284378421/original/GU6IL6Y3N81qm6KMH9aTz7l5FV5IEv7ySA.png?1677630999)
 
-4. 도메인이 companyname.com인 경우, Mailgun에서 메인 도메인 또는 서브도메인을 설정할 수 있습니다.
+## Mailgun에서 새 도메인 추가하기
 
-A. 메인 도메인:
-- 메인 도메인을 추가하는 경우, [해당 도메인은 Google Workspace나 다른 이메일 제공업체와 함께 사용할 수 없습니다](https://help.mailgun.com/hc/en-us/articles/203357040-Can-I-Use-the-Same-Domain-Name-for-Mailgun-and-for-Google-Apps-Or-Another-Email-Server-)
+Mailgun에 로그인한 뒤 **Sending**(전송) **> Add New Domain**(새 도메인 추가)을 클릭하세요.
 
-서브도메인:
-- Mailgun으로 서브도메인을 설정하려면, **원하는_텍스트**.companyname.com 형태로 입력하세요
-예시:
+![Mailgun의 Sending 메뉴와 Add New Domain 항목](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284378418/original/kxsnymCeuFAsBWkXaOes6QaaWED2_bfASA.png?1677630999)
+
+## 메인 도메인과 서브도메인 중 선택하기
+
+도메인이 companyname.com이라면 Mailgun에 메인 도메인이나 서브도메인 중 하나를 설정할 수 있어요.
+
+### 옵션 A: 메인 도메인
+
+메인 도메인을 추가하면 [Google Workspace나 다른 이메일 서비스와 함께 쓸 수 없어요](https://help.mailgun.com/hc/en-us/articles/203357040-Can-I-Use-the-Same-Domain-Name-for-Mailgun-and-for-Google-Apps-Or-Another-Email-Server-).
+
+### 옵션 B: 서브도메인
+
+서브도메인으로 설정하려면 `anything_here.companyname.com` 형태로 입력하세요. 예를 들면 다음과 같아요.
+
 - mg.companyname.com
 - replies.companyname.com
 - support.companyname.com
 
-B. 도메인이나 서브도메인을 **US**로 설정하세요. **EU가 아닌 US로 설정해야 합니다.**
+{% hint style="info" %}
+도메인이나 서브도메인은 EU가 아니라 **US** 리전으로 설정하세요. 그런 다음 **Add domain**(도메인 추가)을 클릭하세요.
+{% endhint %}
 
-C. **Add domain**을 클릭합니다.
+![US 리전을 선택한 Mailgun 도메인 추가 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284382652/original/woVjMqNw3YY_Zjs20LoBHUb4KrThVvj_Rw.png?1677635102)
 
-[
-![도메인 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284382652/original/woVjMqNw3YY_Zjs20LoBHUb4KrThVvj_Rw.png?1677635102)
-](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48243536037/original/B5DZocdO2h64MlEDtfuFjER-U_0AO_NOEg.png?1659724559)
+## Namecheap에서 DNS 레코드 추가하기
 
-5. 이제 도메인을 구매한 곳의 DNS 레코드에 로그인하여 5개의 DNS 레코드를 추가합니다.
+이제 Namecheap에 DNS 레코드 5개를 등록해요. TXT 레코드 2개, MX 레코드 2개, CNAME 레코드 1개이고, 하위 단계를 하나씩 차근차근 따라 하세요.
 
-[Namecheap.com](https://www.namecheap.com/myaccount/login/)에 로그인하세요.
+먼저 [Namecheap.com](https://www.namecheap.com/myaccount/login/)에 로그인한 뒤 **Domain List**(도메인 목록) **> Manage**(관리)를 클릭하세요.
 
-**Domain List** > **Manage**를 클릭합니다.
+![Manage 버튼이 있는 Namecheap 도메인 목록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284379162/original/ZFfDWZRqEj2vF1mZu2LLamthayVacfWNdQ.png?1677631852)
 
-![Namecheap 도메인 관리](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284379162/original/ZFfDWZRqEj2vF1mZu2LLamthayVacfWNdQ.png?1677631852)
+**Advanced DNS**를 클릭하세요. 여기에서 DNS 레코드 5개를 모두 추가해요.
 
-**Advanced DNS**를 클릭합니다. 5개의 DNS 레코드를 추가할 예정입니다.
+![Namecheap Advanced DNS 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284379194/original/lbM_9qwxdQuZYJgoO8k_Bbs6207ECEULCA.png?1677631892)
 
-![고급 DNS 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284379194/original/lbM_9qwxdQuZYJgoO8k_Bbs6207ECEULCA.png?1677631892)
+### DNS 레코드 1/5: 첫 번째 TXT 레코드 추가
 
-## 첫 번째 TXT 레코드 추가
+1. **Add New Record**(새 레코드 추가)를 클릭하세요.
 
-**Add New Record**를 클릭합니다.
+   ![Namecheap Advanced DNS의 Add New Record 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284379255/original/z9t88DrLLsk_x-5McqcmUoQay6Rtpl-3JA.png?1677631962)
 
-![새 레코드 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284379255/original/z9t88DrLLsk_x-5McqcmUoQay6Rtpl-3JA.png?1677631962)
+2. 드롭다운에서 **TXT Record**를 선택하세요.
 
-드롭다운에서 **TXT Record**를 선택합니다.
+   ![레코드 유형 드롭다운에서 선택한 TXT Record](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284379274/original/XZhGADHABEyG3gpE2kfSb4glLSsGZ7X29g.png?1677631986)
+   ![Namecheap DNS 표의 TXT 레코드 행](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284379750/original/afOhZ_mYDjiPnMtdsXB_BaUvpK7-fBAbEg.png?1677632454)
 
-![TXT 레코드 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284379274/original/XZhGADHABEyG3gpE2kfSb4glLSsGZ7X29g.png?1677631986)
+3. **Host**(호스트)에는 설정하는 도메인에 따라 다음 값을 입력하세요.
+   - mg.companyname.com이면 호스트 이름은 `mg`예요.
+   - replies.companyname.com이면 호스트 이름은 `replies`예요.
+   - 메인 도메인(companyname.com)이면 호스트 이름은 `@`예요.
 
-![TXT 레코드 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284379750/original/afOhZ_mYDjiPnMtdsXB_BaUvpK7-fBAbEg.png?1677632454)
+4. **Value**(값)에는 Mailgun으로 돌아가 첫 번째 TXT 레코드를 복사해 붙여넣으세요. `v=spf1 include:mailgun.org ~all` 같은 형태예요.
 
-A. Host:
+   ![SPF 레코드를 붙여넣은 TXT 레코드 값 입력란](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284379641/original/OtndbakIxEwGec0uzyy6VhrQ9ahdwqWR4g.png?1677632355)
 
-설정하려는 서브도메인에 따라,
+5. 초록색 체크 표시를 클릭해 저장하세요.
 
-[mg.companyname.com](//mg.companyname.com)을 설정하는 경우: 호스트명은 **mg**
-[replies.companyname.com](//replies.companyname.com)을 설정하는 경우: 호스트명은 **replies**
+### DNS 레코드 2/5: 두 번째 TXT 레코드 추가
 
-companyname.com과 같은 **메인** 도메인을 설정하는 경우: 호스트명은 @
+1. **Add New Record**를 다시 클릭하고, 드롭다운에서 **TXT Record**를 선택하세요.
 
-B. Mailgun으로 돌아가서 첫 번째 TXT 레코드를 복사합니다: v=spf1 include:mailgun.org ~all
+   ![두 번째 TXT 레코드를 위한 Add New Record 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284380045/original/p3EI2E6cXdPA44wNy1dlbvL9SeMlPsN_pg.png?1677632706)
+   ![두 번째 레코드에서 선택한 TXT Record 유형](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284380093/original/ymsCp1tf0vOpw8jh_ELv1eyAHoFR08klKA.png?1677632745)
+   ![Namecheap DNS 표의 두 번째 TXT 레코드 행](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284380135/original/h15o-HQi5ZlCUWfi23NsIp_ULoUljPMbDw.png?1677632789)
 
-Value: 복사한 첫 번째 TXT 레코드를 붙여넣습니다: v=spf1 include:mailgun.org ~all
+2. **Host**에는 Mailgun 화면에 보이는 값에서 맨 앞부터 서브도메인 부분까지만 복사해 붙여넣으세요. 이 부분이 조금 헷갈려요. 메인 도메인은 복사하지 마세요.
 
-![TXT 값 입력](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284379641/original/OtndbakIxEwGec0uzyy6VhrQ9ahdwqWR4g.png?1677632355)
+   ![서브도메인 부분까지 강조 표시한 Mailgun 호스트 값](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284379962/original/S6JIQJ-twEQMWBwUw7Do7908kLEMK8w9gg.png?1677632628)
 
-C. 녹색 체크 버튼을 클릭합니다.
+   강조 표시된 부분을 복사하는 예시예요.
 
-## 두 번째 TXT 레코드 추가
+   | 상황 | 스크린샷 |
+   | --- | --- |
+   | 서브도메인을 사용하는 경우 | 서브도메인을 사용할 때의 호스트 값 예시 |
+   | 메인 도메인을 사용하는 경우 | 메인 도메인을 사용할 때의 호스트 값 예시 |
 
-**Add New Record**를 클릭합니다.
+3. **Value**에는 Mailgun의 두 번째 TXT 레코드를 붙여넣으세요. 첫 번째보다 긴 값이에요.
 
-![두 번째 레코드 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284380045/original/p3EI2E6cXdPA44wNy1dlbvL9SeMlPsN_pg.png?1677632706)
+   ![Namecheap에 붙여넣은 두 번째 TXT 레코드 값](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284380189/original/a5LTwyG6FV_Hp-L232_fAj2g1VUUDlSyPw.png?1677632888)
 
-드롭다운에서 **TXT Record**를 선택합니다.
+4. 초록색 체크 표시를 클릭해 저장하세요.
 
-![두 번째 TXT 레코드](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284380093/original/ymsCp1tf0vOpw8jh_ELv1eyAHoFR08klKA.png?1677632745)
+### DNS 레코드 3/5: 첫 번째 MX 레코드 추가
 
-![TXT 레코드 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284380135/original/h15o-HQi5ZlCUWfi23NsIp_ULoUljPMbDw.png?1677632789)
+1. 아래로 스크롤해 **Mail Settings**(메일 설정)로 이동한 뒤, 드롭다운을 **Custom MX**로 바꾸세요.
 
-A. Host:
+   ![Custom MX로 바꾼 Mail Settings 드롭다운](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284380651/original/s-vIse48Y60uv4ODRMU02N4qsPS5I5uYeg.png?1677633315)
 
-여기가 조금 까다로운 부분입니다. 처음부터 서브도메인 부분까지만 복사하고, 메인 도메인은 복사하지 마세요.
+{% hint style="warning" %}
+원래 Gmail을 선택해 두었다면, Custom MX로 바꾸는 순간 메인 도메인으로 들어오는 메일에 기존 Google Workspace 계정이 영향을 받아요. Mailgun에는 서브도메인을 사용하고 있는지 꼭 확인하세요. 자세한 내용은 [Can I Use the Same Domain Name for Mailgun and for Google Apps (Or Another Email Server)?](https://help.mailgun.com/hc/en-us/articles/203357040-Can-I-Use-the-Same-Domain-Name-for-Mailgun-and-for-Google-Apps-Or-Another-Email-Server-)를 참고하세요.
 
-![호스트명 복사 방법](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284379962/original/S6JIQJ-twEQMWBwUw7Do7908kLEMK8w9gg.png?1677632628)
+[Google Gmail용 MX 레코드](https://support.google.com/a/answer/140034?hl=en) 5개를 다시 추가해야 해요.
 
-예시: **강조표시된 부분을 복사하세요**
-
-예시 1 - 서브도메인 사용:
-
-![서브도메인 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284380215/original/t6MGY8Bw9AK1Vv01kUxtJAkNwp_4UfYjHw.png?1677632945)
-
-예시 2 - 메인 도메인 사용:
-
-![메인 도메인 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284380223/original/JSERXQQhYNvzVp7YoXhIji_yeomZNLXUKA.png?1677632951)
-
-B. Value: 두 번째 긴 TXT 레코드를 여기에 붙여넣습니다.
-
-![두 번째 TXT 값](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284380189/original/a5LTwyG6FV_Hp-L232_fAj2g1VUUDlSyPw.png?1677632888)
-
-C. 녹색 체크 버튼을 클릭합니다.
-
-## 첫 번째 MX 레코드 추가
-
-**MAIL SETTINGS**까지 스크롤 다운합니다.
-
-드롭다운을 **Custom MX**로 변경합니다.
-
-![Custom MX 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284380651/original/s-vIse48Y60uv4ODRMU02N4qsPS5I5uYeg.png?1677633315)
-
-⚠️ **중요:** 메인 도메인에 대해 원래 **Gmail**이 선택되어 있었다면, 이 설정은 기존 Google Workspace 계정의 수신 이메일 수신에 영향을 줍니다. Mailgun에는 서브도메인을 사용하는 것을 권장합니다. [Mailgun과 Google Apps(또는 다른 이메일 서버)에 같은 도메인명을 사용할 수 있나요?](https://help.mailgun.com/hc/en-us/articles/203357040-Can-I-Use-the-Same-Domain-Name-for-Mailgun-and-for-Google-Apps-Or-Another-Email-Server-) 문서를 참조하세요.
-
-Google Gmail용 **5개** [MX 레코드](https://support.google.com/a/answer/140034?hl=en)를 다시 추가해야 합니다:
-
-| Host | Time to Live (TTL) | Priority | Value |
-|------|-------------------|----------|-------|
+| Host | TTL | Priority | Value |
+| --- | --- | --- | --- |
 | @ | 3600 | 1 | ASPMX.L.GOOGLE.COM |
 | @ | 3600 | 5 | ALT1.ASPMX.L.GOOGLE.COM |
 | @ | 3600 | 5 | ALT2.ASPMX.L.GOOGLE.COM |
 | @ | 3600 | 10 | ALT3.ASPMX.L.GOOGLE.COM |
 | @ | 3600 | 10 | ALT4.ASPMX.L.GOOGLE.COM |
+{% endhint %}
 
-위의 **5개** MX 레코드를 모두 추가한 후, Mailgun용 MX 레코드를 추가할 수 있습니다.
+2. 위 MX 레코드 5개를 모두 다시 추가한 뒤에 Mailgun MX 레코드를 추가해요. **Add New Record**를 클릭하세요.
 
-**Add New Record**를 클릭합니다.
+   ![첫 번째 MX 레코드를 위한 Add New Record 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284381008/original/Hvcyh4kYnFgfuL6SKPnyDNBFReckD-0qqg.png?1677633693)
+   ![Namecheap에서 설정 중인 MX 레코드 행](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284380997/original/nSuGvsypPVy3uastd0-zS4Dpu71FC2figA.png?1677633659)
 
-![MX 레코드 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284381008/original/Hvcyh4kYnFgfuL6SKPnyDNBFReckD-0qqg.png?1677633693)
+3. **Host**에는 설정하는 도메인에 따라 다음 값을 입력하세요.
+   - mg.companyname.com이면 호스트 이름은 `mg`예요.
+   - replies.companyname.com이면 호스트 이름은 `replies`예요.
+   - 메인 도메인(companyname.com)이면 호스트 이름은 `@`예요.
 
-![MX 레코드 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284380997/original/nSuGvsypPVy3uastd0-zS4Dpu71FC2figA.png?1677633659)
+4. **Value**에는 `mxa.mailgun.org`를 입력하세요.
 
-A. Host:
+5. **Priority**(우선순위)에는 `10`을 입력하세요.
 
-설정하려는 서브도메인에 따라,
+6. 초록색 체크 표시를 클릭해 저장하세요.
 
-[mg.companyname.com](//mg.companyname.com)을 설정하는 경우: 호스트명은 **mg**
-[replies.companyname.com](//replies.companyname.com)을 설정하는 경우: 호스트명은 **replies**
+   ![Namecheap에 저장된 첫 번째 MX 레코드](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284381240/original/2nrnlf9BwTPbv5cKXKZS8QStDqfFbqz-7w.png?1677633916)
 
-companyname.com과 같은 **메인** 도메인을 설정하는 경우: 호스트명은 @
+### DNS 레코드 4/5: 두 번째 MX 레코드 추가
 
-B. Value: 다음 데이터를 붙여넣습니다: mxa.mailgun.org
+1. **Host**에는 설정하는 도메인에 따라 다음 값을 입력하세요.
+   - mg.companyname.com이면 호스트 이름은 `mg`예요.
+   - replies.companyname.com이면 호스트 이름은 `replies`예요.
+   - 메인 도메인(companyname.com)이면 호스트 이름은 `@`예요.
 
-C. Priority는 10입니다.
+2. **Value**에는 `mxb.mailgun.org`를 입력하세요.
 
-D. 녹색 체크 버튼을 클릭합니다.
+3. **Priority**에는 `10`을 입력하세요.
 
-![첫 번째 MX 완료](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284381240/original/2nrnlf9BwTPbv5cKXKZS8QStDqfFbqz-7w.png?1677633916)
+4. 초록색 체크 표시를 클릭해 저장하세요.
 
-## 두 번째 MX 레코드 추가
+   ![Namecheap에 저장된 두 번째 MX 레코드](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284381184/original/wao3EJjnKT5qAO1wn_ZxZqBdEusgs_E8Qw.png?1677633856)
 
-A. Host:
+### DNS 레코드 5/5: CNAME 레코드 추가
 
-설정하려는 서브도메인에 따라,
+1. 위로 스크롤해 **Host Records**(호스트 레코드) 섹션으로 돌아간 뒤 **Add New Record**를 클릭하세요.
 
-[mg.companyname.com](//mg.companyname.com)을 설정하는 경우: 호스트명은 **mg**
-[replies.companyname.com](//replies.companyname.com)을 설정하는 경우: 호스트명은 **replies**
+   ![CNAME 레코드를 위한 Add New Record 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284381639/original/UJxPcf-rUHX7AwbK1pwp4kMH-N9VjEx62w.png?1677634175)
 
-companyname.com과 같은 **메인** 도메인을 설정하는 경우: 호스트명은 @
+2. 드롭다운에서 **CNAME Record**를 선택하세요.
 
-B. Value: 다음 데이터를 붙여넣습니다: mxb.mailgun.org
+   ![레코드 유형 드롭다운에서 선택한 CNAME Record](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284381737/original/kaXoDz-tFmwEhnhJ-NOwZcvVlkk_b8I-bg.png?1677634268)
 
-C. Priority는 **10**입니다.
+3. Mailgun으로 돌아가 호스트 이름을 복사하세요. 맨 앞부터 서브도메인 부분까지만 복사하고, 메인 도메인은 복사하지 마세요.
 
-D. 녹색 체크 버튼을 클릭합니다.
+   ![복사할 Mailgun CNAME 호스트 값](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284382024/original/SKui5c_vVTAOKtN714Bl9mx8OdjgxebDSA.png?1677634552)
 
-![두 번째 MX 완료](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284381184/original/wao3EJjnKT5qAO1wn_ZxZqBdEusgs_E8Qw.png?1677633856)
+4. 다시 Namecheap으로 돌아오세요.
 
-## CNAME 레코드 추가
+   ![Namecheap의 CNAME 레코드 행](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284381724/original/zDKUjwzlyWytyho6PuhbQEvKuqGiKzYypQ.png?1677634245)
 
-HOST RECORDS라는 이름의 상단 섹션으로 다시 스크롤 업합니다.
+5. **Host**에는 설정하는 도메인에 따라 다음 값을 입력하세요.
+   - mg.companyname.com이면 호스트 이름은 `email.mg`예요.
+   - replies.companyname.com이면 호스트 이름은 `email.replies`예요.
+   - 메인 도메인(companyname.com)이면 호스트 이름은 `email`이에요.
 
-**Add New Record**를 클릭합니다.
+6. **Value**에는 `mailgun.org`를 입력하세요.
 
-![CNAME 레코드 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284381639/original/UJxPcf-rUHX7AwbK1pwp4kMH-N9VjEx62w.png?1677634175)
+7. 초록색 체크 표시를 클릭해 저장하세요.
 
-드롭다운에서 **CNAME Record**를 선택합니다.
+### DNS 설정 확인하기
 
-![CNAME 레코드 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284381737/original/kaXoDz-tFmwEhnhJ-NOwZcvVlkk_b8I-bg.png?1677634268)
+레코드 5개를 모두 추가했다면 Mailgun으로 돌아가 **Verify DNS Settings**(DNS 설정 확인)를 클릭하세요. 초록색 체크 표시가 나오지 않은 레코드가 있으면 같은 버튼을 한 번 더 클릭하세요.
 
-Mailgun으로 돌아가서 호스트명을 복사합니다. 여기가 조금 까다로운 부분인데, 처음부터 서브도메인 부분까지만 복사하고, 메인 도메인은 복사하지 마세요.
+![Mailgun의 Verify DNS Settings 결과 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284382101/original/PQecmA9d0ihGiF3VchOhZL1VKMrOZmUvDQ.png?1677634628)
 
-![CNAME 호스트명 복사](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284382024/original/SKui5c_vVTAOKtN714Bl9mx8OdjgxebDSA.png?1677634552)
+## API 키 가져오기와 테스트 이메일 보내기
 
-Namecheap으로 돌아가세요:
+DNS 레코드를 모두 추가하고 인증까지 마쳤다면 Mailgun에서 API 키를 확인하세요. 방법은 'Mailgun API 키: Mailgun에서 찾아 플랫폼에 추가하기' 문서를 참고하세요.
 
-![CNAME 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284381724/original/zDKUjwzlyWytyho6PuhbQEvKuqGiKzYypQ.png?1677634245)
+거의 다 됐어요. 마지막으로 테스트 이메일을 보내 모든 설정이 제대로 되었는지 확인하세요. 방법은 '대화에서 테스트 이메일 보내기' 문서를 참고하세요.
 
-A. Host:
+## 자주 묻는 질문
 
-설정하려는 서브도메인에 따라,
+### Custom MX로 바꾸면 기존 Gmail이나 Google Workspace 이메일이 안 되나요?
 
-mg.companyname.com을 설정하는 경우: 호스트명은 **email.mg**
-replies.companyname.com을 설정하는 경우: 호스트명은 **email.replies**
+그럴 수 있어요. 이미 Google Workspace를 쓰는 메인 도메인에 MX 레코드를 추가하는 경우에 해당해요. Mailgun MX 레코드와 함께 Google MX 레코드 5개를 모두 다시 추가하세요. 위험을 아예 피하려면 서브도메인을 사용하는 것도 좋아요.
 
-companyname.com과 같은 **메인** 도메인을 설정하는 경우: 호스트명은 **email**
+### TXT·MX 레코드의 Host 값과 CNAME 레코드의 Host 값은 무엇이 다른가요?
 
-B. Value: 다음 데이터를 붙여넣습니다: [mailgun.org](https://mxa.mailgun.org/)
+TXT와 MX 레코드의 호스트는 서브도메인만 입력해요(예: `mg`). CNAME 레코드는 Namecheap에서 `email.mg`처럼 입력해야 해요. 이 값은 Mailgun이 클릭·오픈 추적에 쓰는 추적용 서브도메인이에요.
 
-C. 녹색 체크 버튼을 클릭합니다.
+### 인증했는데도 초록색 체크 표시가 나오지 않아요. 어떻게 해야 하나요?
 
-5개의 레코드를 모두 추가했으므로, Mailgun으로 돌아가서 **Verify DNS Settings**을 클릭하세요.
+DNS 변경 내용이 반영되는 데 시간이 걸릴 수 있어요. 각 호스트와 값이 Mailgun에 표시된 내용과 같은지 다시 확인하세요. 그런 다음 몇 분 뒤에 **Verify DNS Settings**를 다시 클릭하세요.
 
-일부 레코드가 여전히 녹색 체크 표시를 보여주지 않는다면, **Verify DNS Settings** 버튼을 다시 클릭하세요.
+### TXT 레코드가 왜 두 개나 필요한가요?
 
-![DNS 설정 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48284382101/original/PQecmA9d0ihGiF3VchOhZL1VKMrOZmUvDQ.png?1677634628)
+첫 번째 TXT 레코드는 SPF 레코드예요. Mailgun이 내 도메인으로 메일을 보내도 된다는 것을 허가해 줘요. 두 번째로 더 긴 TXT 레코드는 DKIM 키예요. 보내는 메일에 암호화 서명을 붙여 줘요.
 
-모든 DNS 레코드를 추가하고 확인했으면, [Mailgun API Key - Mailgun에서 찾아서 하이퍼클래스에 넣는 방법](메일건/mailgun-private-api-key-setup.md)을 참조하여 API 키를 가져올 수 있습니다.
+### 이 문서에 나온 값을 그대로 입력하나요, 아니면 내 Mailgun 계정에 표시된 값을 입력하나요?
 
-그런 다음 테스트 이메일을 보내서 모든 것이 작동하는지 확인할 수 있습니다! [대화에서 테스트 이메일을 보내는 방법](트러블슈팅/how-to-send-a-test-email-in-the-conversation.md)을 참조하세요.
+항상 내 Mailgun 대시보드에 표시된 호스트와 값을 그대로 복사하세요. `mxa.mailgun.org`와 `mxb.mailgun.org`는 모든 계정에 같은 표준 값이지만, TXT 레코드 값은 도메인마다 달라요.
 
-## 요약 영상:
+### Namecheap이 아닌 다른 도메인 제공업체에서도 같은 방법으로 설정할 수 있나요?
 
----
-*원문 최종 수정: 2023년 2월 28일*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+레코드 유형과 값은 어디서나 같아요. 다만 레코드를 추가하는 화면은 제공업체마다 달라요. 사용하는 제공업체에 맞는 설정 가이드를 확인하세요.

@@ -1,35 +1,63 @@
 ---
-
-번역일: 2026-04-09
-카테고리: 99-리커버리
+원문: /support/solutions/articles/48001155002-send-test-email-error-in-campaign-s-email-step-an-error-occurred-please-try-again
+번역일: 2026-11-07
+카테고리: 09-이메일
 ---
 
-# 캠페인의 이메일 단계에서 테스트 이메일 발송 오류: 오류가 발생했습니다. 다시 시도해주세요
+# 테스트 이메일 오류, 이메일 보내기 액션이 실행되지 않을 때 확인할 것
 
-## 이 오류 메시지가 표시되거나 이메일 발송 트리거 액션이 작동하지 않을 때
+워크플로우의 **Send Email**(이메일 보내기) 액션이 아무 알림 없이 실행되지 않는 흔한 원인을 차례로 점검하는 체크리스트예요. 아래 오류 메시지가 보이거나 **Send Email** 액션이 아예 실행되지 않으면 이 순서대로 확인해 보세요.
 
-![이메일 발송 오류 메시지 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48283729294/original/3bUMFoidpu7Vm4OpR7NqHHyKGtvS9em_bA.png?1677268053)
+## 오류 메시지
 
-## 다음 사항들을 확인해주세요
+아래 오류 메시지가 보이거나 **Send Email** 액션이 전혀 실행되지 않으면 다음 체크리스트를 확인하세요.
 
-1. **이메일/SMS 내용에서 누락된 }이나 {{{ 과다 사용**이 있는지 확인하세요
+![Send Email 액션 오류 메시지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48283729294/original/3bUMFoidpu7Vm4OpR7NqHHyKGtvS9em_bA.png?1677268053)
 
-2. **커스텀 값(Custom Values)이 유효한지** 확인하세요:
-   
-   특히 링크 부분: [유효한 커스텀 값 목록](https://hyperclass.gitbook.io/hyperclass-docs)
+## 문제 해결 체크리스트
 
-![커스텀 값 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48054130934/original/du8IHP5qTYEaAkFDIyC-2fTUe9xhjhdOTg.png?1597456147)
+### 확인 1. 이메일/SMS 내용의 머지 필드 문법
 
-3. **이메일 주소**가 유효한지 확인하세요:
-   
-   예시: test@gmail,com처럼 점(.)이 쉼표(,)로 잘못 입력된 경우
+이메일 또는 SMS 내용에 **닫는 중괄호 `}` 가 빠졌는지**, **여는 중괄호 `{{{` 를 너무 많이 썼는지** 확인하세요.
 
-4. **From 필드**가 이메일 주소 형식으로 되어 있는지 확인하세요:
-   
-   예시: "ABC company"를 [info@abccompany.com](mailto:info@abccompany.com)과 같은 이메일 주소로 변경
+### 확인 2. 커스텀 값이 올바른지
 
-![발신자 이메일 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48054130847/original/neWcoOfxnrs8lrS3TBPg6Jokou4hu4qoCg.png?1597455849)
+특히 링크에 쓴 커스텀 값을 꼼꼼히 확인하세요. 사용할 수 있는 커스텀 값은 '커스텀 값 머지 필드' 목록 문서에서 볼 수 있어요.
 
----
-*원문 최종 수정: 2023년 2월 24일*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+![커스텀 값 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48054130934/original/du8IHP5qTYEaAkFDIyC-2fTUe9xhjhdOTg.png?1597456147)
+
+### 확인 3. 이메일 주소가 올바른지
+
+예를 들어 `test@gmail,com` 처럼 점(.) 대신 쉼표(,)가 들어가 있으면 액션이 실행되지 않아요.
+
+### 확인 4. **From**(보내는 사람) 필드가 이메일 주소 형식인지
+
+예를 들어 `ABC company` 를 `info@abccompany.com` 처럼 실제 이메일 주소로 바꿔 주세요.
+
+![이메일 주소 형식으로 입력한 From 필드](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48054130847/original/neWcoOfxnrs8lrS3TBPg6Jokou4hu4qoCg.png?1597455849)
+
+## 자주 묻는 질문
+
+### "닫는 중괄호가 빠졌다"거나 "{{{ 를 너무 많이 썼다"는 게 무슨 뜻인가요?
+
+머지 필드는 `{{contact.first_name}}` 처럼 중괄호 두 개로 감싸서 써요. 닫는 중괄호가 빠졌거나 여는 중괄호가 두 개가 아니라 세 개이면 머지 필드를 해석하지 못해서 액션이 실행되지 않아요.
+
+### 사용할 수 있는 커스텀 값 목록은 어디서 보나요?
+
+위 확인 2에서 안내한 커스텀 값 목록 문서를 보세요. 지원하는 문법과 이름이 정리되어 있어요.
+
+### 커스텀 값 하나가 잘못되면 이메일 전체가 안 가나요, 해당 줄만 문제가 되나요?
+
+잘못되었거나 형식이 틀린 커스텀 값이 하나만 있어도, 그 줄만이 아니라 액션 전체가 실행되지 않을 수 있어요. 그래서 의심 가는 부분만 보지 말고 이메일 안의 머지 필드와 커스텀 값을 모두 확인하는 게 좋아요.
+
+### **From Name**(보낸 사람 이름)이 **From Email**(보낸 사람 이메일)과 똑같아야 하나요?
+
+아니요, 똑같을 필요는 없어요. 다만 **From** 필드에는 올바른 형식의 이메일 주소가 들어 있어야 해요. 회사 이름이나 일반 텍스트만 넣으면 안 돼요. 표시 이름과 올바른 이메일 주소를 함께 쓰는 건 괜찮지만, 이메일 주소 없이 이름만 있으면 안 돼요.
+
+### 네 가지를 모두 확인했는데도 이메일이 안 가요. 어떻게 하나요?
+
+워크플로우의 트리거 조건과, 연락처가 이 액션에 도달하지 못하게 막는 앞 단계가 있는지 다시 확인해 보세요. 그래도 해결되지 않으면 워크플로우 이름과 오류 화면 스크린샷을 준비해서 하이퍼클래스 고객지원에 문의하세요.
+
+### 이 체크리스트는 **Send SMS**(SMS 보내기) 액션에도 적용되나요?
+
+네, 머지 필드 문법과 커스텀 값이 올바른지 확인하는 것(확인 1, 2)은 **Send SMS** 액션에도 똑같이 적용돼요. 확인 3, 4는 이메일 주소 형식에 관한 내용이라 이메일에만 해당해요.

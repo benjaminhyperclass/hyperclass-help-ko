@@ -1,48 +1,40 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 07-워크플로우 > 시작하기
+원문: /support/solutions/articles/155000003976-workflow-oauth2-in-custom-webhook
+번역일: 2026-11-07
+카테고리: 07-워크플로우
 ---
 
-# 워크플로우 - 커스텀 웹훅에서 OAuth2 사용하기
+# 워크플로우 액션 — Custom Webhook(커스텀 웹훅)에서 OAuth2 사용하기
 
-커스텀 웹훅에서 OAuth2 지원 기능을 알아보세요.
+워크플로우의 **Custom Webhook** 액션에서 OAuth2 인증을 쓰는 방법과, 저장된 토큰을 관리하는 방법을 안내해요.
 
-**목차**
+## 개요
 
-- [개요](#개요)
-- [작동 방식](#작동-방식)
+OAuth2는 가장 널리 쓰이는 인증 방식 중 하나예요. 보안이 매우 높아서 주로 대형 API에 쓰여요. OAuth2 인증을 쓰면 Google, Facebook, LinkedIn 등 다양한 API와 연동할 수 있어요.
 
-### 개요
+## 작동 방식
 
-OAuth2는 가장 중요하고 널리 사용되는 인증 방법 중 하나입니다. 매우 안전하기 때문에 일반적으로 대규모 API에서 사용됩니다.
+- **Custom Webhook** 액션에서 인증 방식으로 **OAuth2**를 선택할 수 있어요.
 
-OAuth2 인증을 통해 사용자는 Google, Facebook, LinkedIn 등 다양한 API와 연동할 수 있습니다. 이러한 연동은 제품의 무한한 가능성을 열어줍니다.
+![Custom Webhook 액션에서 OAuth2 인증 방식을 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035073264/original/YhYeFi9f4AwclACkdSx8WokjgKoASmuqZg.png?1729500305)
 
-### 작동 방식
+![OAuth2를 선택한 Custom Webhook 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035073305/original/eAcmJLiCqIbhKiFqqZfffGEpbjhRBJnrjw.png?1729500317)
 
-- 사용자는 커스텀 웹훅 액션에서 OAuth2를 인증 옵션으로 선택할 수 있습니다.
+- **OAuth2**를 선택하면 기존 토큰을 고르거나 새 토큰을 요청할 수 있어요.
 
-![OAuth2 인증 옵션 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035073264/original/YhYeFi9f4AwclACkdSx8WokjgKoASmuqZg.png?1729500305)
+![기존 토큰을 선택하거나 새 토큰을 요청하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035073369/original/1GgP-1Ama_X24tw5WquXk4wIJm4auWGxwg.png?1729500359)
 
-![OAuth2 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035073305/original/eAcmJLiCqIbhKiFqqZfffGEpbjhRBJnrjw.png?1729500317)
+![토큰 선택 옵션 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035073389/original/Z9tiHtKhIuLzCgStjD3cEDVzD55IlPlFiQ.png?1729500370)
 
-- 이 옵션을 선택하면 기존 토큰을 선택하거나 새 토큰을 요청할 수 있습니다.
+## 토큰 관리하기
 
-![기존 토큰 선택 또는 새 토큰 요청](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035073369/original/1GgP-1Ama_X24tw5WquXk4wIJm4auWGxwg.png?1729500359)
+1. **글로벌 워크플로우 설정**으로 이동하세요.
+2. **Manage Tokens**(토큰 관리) 섹션을 찾으세요.
+3. **Manage Token**을 클릭하세요. 전체 토큰 목록이 담긴 팝업 창이 열려요.
+4. 이 목록에서 토큰을 **업데이트**하거나 **삭제**할 수 있어요.
 
-![토큰 관리 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035073389/original/Z9tiHtKhIuLzCgStjD3cEDVzD55IlPlFiQ.png?1729500370)
+![글로벌 워크플로우 설정의 토큰 관리 섹션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035074937/original/w9LfBMaxzxciDV72NjCUS4_o_1HR7b35lw.png?1729501178)
 
-- 토큰을 관리하려면 "전역 워크플로우 설정(Global Workflow Settings)"으로 이동하세요. "토큰 관리(Manage Tokens)" 섹션에서 토큰을 관리할 수 있습니다.
-- "토큰 관리(Manage Token)"를 클릭하면 새 팝업 화면이 열리며 모든 토큰 목록이 표시됩니다.
-- 여기서 토큰을 "업데이트(Update)"하거나 "삭제(Delete)"할 수 있습니다.
+![토큰 목록이 표시된 팝업 창](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035074954/original/FbFXiTe3_sLfu4njnJ0-BvlzD-R4H2FLbw.png?1729501188)
 
-![전역 워크플로우 설정에서 토큰 관리](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035074937/original/w9LfBMaxzxciDV72NjCUS4_o_1HR7b35lw.png?1729501178)
-
-![토큰 관리 팝업 창](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035074954/original/FbFXiTe3_sLfu4njnJ0-BvlzD-R4H2FLbw.png?1729501188)
-
-![토큰 업데이트 및 삭제 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035074962/original/EVnue3m73srUk5Y1bnCbPee9p9ws5Eqt4Q.png?1729501194)
-
----
-*원문 최종 수정: Wed, 23 Oct, 2024 at 12:32 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+![토큰을 업데이트하거나 삭제하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035074962/original/EVnue3m73srUk5Y1bnCbPee9p9ws5Eqt4Q.png?1729501194)

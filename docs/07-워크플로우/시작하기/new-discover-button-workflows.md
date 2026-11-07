@@ -1,73 +1,68 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 07-워크플로우 > 시작하기
+원문: /support/solutions/articles/155000004025-new-discover-button-workflows
+번역일: 2026-11-07
+카테고리: 07-워크플로우
 ---
 
-# 새로운 발견(Discover) 버튼 - 워크플로우
+# 워크플로우 빌더에서 마켓플레이스 앱 찾고 설치하기 — Discover(발견) 버튼
 
-워크플로우 빌더에서 바로 마켓플레이스 앱을 발견하고 설치할 수 있도록 더욱 쉽게 만들었습니다. 이제 앱 설치를 위해 마켓플레이스를 따로 방문할 필요가 없습니다.
+**워크플로우 빌더**에서 바로 마켓플레이스 앱을 찾아 설치할 수 있어요. 앱을 설치하려고 마켓플레이스에 따로 들어갈 필요가 없어요.
 
----
+## Discover(발견) 버튼
 
-**목차**
+**워크플로우 빌더**에서 **Discover**(발견) 버튼을 누르면 마켓플레이스 앱 목록을 한곳에서 볼 수 있어요. 워크플로우에 필요한 도구를 편하게 찾아보세요.
 
-- [새로운 "발견(Discover)" 버튼](#새로운-발견discover-버튼)
-- [앱 카테고리 분류](#앱-카테고리-분류)
-- [전역 검색 바](#전역-검색-바)
-- [설치된 앱의 업데이트 태그](#설치된-앱의-업데이트-태그)
-- [설치 CTA와 앱 상세 정보](#설치-cta와-앱-상세-정보)
-- ["모든 액션"의 설치된 앱](#모든-액션의-설치된-앱)
+![워크플로우 빌더의 Discover 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035099065/original/WjrOXKIvVshsJn1PwRBFlSZ5MJG_a2LcRQ.png?1729514597)
 
----
+## 앱 카테고리
 
-## **새로운 "발견(Discover)" 버튼**
+앱을 카테고리별로 둘러볼 수 있어요.
 
-워크플로우 빌더에서 바로 마켓플레이스 앱의 전체 목록에 쉽게 접근하세요. "발견(Discover)" 버튼을 통해 사용 가능한 모든 앱을 확인할 수 있어, 워크플로우에 적합한 도구를 편리하게 찾을 수 있습니다.
+- **Top Installed**(설치 많은 순): 사용자가 가장 많이 설치한 인기 앱을 보여 줘요.
+- **Top Free**(무료 인기 앱): 마켓플레이스에서 인기 있는 무료 앱을 보여 줘요.
+- **Top Paid**(유료 인기 앱): 워크플로우를 더 풍부하게 만들어 주는 인기 유료 앱을 보여 줘요.
+- **Newly Added**(신규 추가): 마켓플레이스에 새로 올라온 앱을 보여 줘요.
 
-![발견 버튼 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035099065/original/WjrOXKIvVshsJn1PwRBFlSZ5MJG_a2LcRQ.png?1729514597)
+![앱 카테고리 목록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035099088/original/Sp27X8Z0etAFB38xRgBjaxP1ojGsdXPHkw.png?1729514610)
 
----
+## 전체 검색
 
-## **앱 카테고리 분류**
+**Global Search**(전체 검색)에서는 액션, 마켓플레이스 액션, 트리거를 한 번에 검색할 수 있어요. 필요한 앱이나 액션을 빠르게 찾을 수 있어요.
 
-다양한 카테고리별로 앱을 탐색하세요:
+**워크플로우 빌더**의 통합 검색을 쓰면 하이퍼클래스에서 만든 도구와 마켓플레이스 앱의 액션·트리거를 함께 찾을 수 있어요. 검색에서 할 수 있는 일은 다음과 같아요.
 
-- **가장 많이 설치(Top Installed):** 사용자 설치 수를 기준으로 가장 인기 있는 앱을 찾아보세요.
-- **무료 인기(Top Free):** 마켓플레이스에서 이용 가능한 인기 무료 앱을 둘러보세요.
-- **유료 인기(Top Paid):** 워크플로우를 향상시키는 최고의 프리미엄 앱을 발견하세요.
-- **새로 추가됨(Newly Added):** 마켓플레이스에 새로 추가된 최신 앱을 확인하세요.
+- **Built-in**(기본 제공), **Marketplace**(마켓플레이스), **AI** 카테고리를 가로질러 검색해요.
+- 카테고리와 필터로 결과를 좁혀요.
+- 하이퍼클래스에서 만든 앱과 액션이 먼저 나오고, 그다음에 마켓플레이스 결과가 나와요. 검색 결과에는 비교를 돕는 정보가 함께 표시돼요.
+  - 가격 표시: **Free**(무료)/**Paid**(유료), 해당하는 경우 실행당 가격
+  - 평점과 설치 수(있는 경우)
+  - **Native**(기본 제공), **Beta**(베타) 같은 배지(해당하는 경우)
+  - 한눈에 비교할 수 있는 짧은 설명
 
-![앱 카테고리 분류 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035099088/original/Sp27X8Z0etAFB38xRgBjaxP1ojGsdXPHkw.png?1729514610)
+### Tools, Apps, Discover 탐색
 
----
+**워크플로우 빌더**는 기본 도구와 연동 앱을 나눠서 보여 줘요. 그래서 필요한 단계를 더 빨리 찾을 수 있어요.
 
-## **전역 검색 바**
+- **Tools**(도구): 하이퍼클래스에서 만든 도구와 로직 블록이에요. 예를 들어 **Webhooks**(웹훅), **If/Else**(조건 분기), **Wait**(대기), AI 액션이 있어요.
+- **Apps**(앱): 내 계정에서 쓸 수 있는, 이미 설치한 연동 앱이에요.
+- **Discover**(발견): 아직 설치하지 않은 마켓플레이스 앱이에요. 가격과 설치 정보를 보면서 비교해 볼 수 있어요.
 
-새로운 전역 검색 바를 사용하여 액션, 마켓플레이스 액션, 트리거를 원활하게 검색하세요. 필요한 앱이나 액션을 빠르게 찾을 수 있습니다.
+{% hint style="info" %}
+화면에 보이는 이름과 사용 가능 여부는 계정과 빌더 화면에 따라 다를 수 있어요.
+{% endhint %}
 
----
+## 설치한 앱의 업데이트 태그
 
-## **설치된 앱의 업데이트 태그**
+이미 설치한 앱에 새 액션이 생기면 **Update Tag**(업데이트 태그)가 표시돼요. 이 태그는 앱에 기능이 추가됐다는 뜻이에요.
 
-새로운 기능에 대한 최신 정보를 확인하세요. 이전에 설치된 앱에 새로운 액션이 추가된 경우 **업데이트 태그(Update Tag)**가 표시되어 추가 기능이 있음을 알려줍니다.
+![설치한 앱에 표시된 업데이트 태그](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035099153/original/BiNuD9JofqvDUMdrefhag4Uy1fMLmrOyJw.png?1729514634)
 
-![업데이트 태그 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035099153/original/BiNuD9JofqvDUMdrefhag4Uy1fMLmrOyJw.png?1729514634)
+## 설치 버튼과 앱 상세 정보
 
----
+**워크플로우 빌더**에서 설치 옵션을 확인하고, **Details**(상세 정보) 탭에서 앱의 자세한 정보를 볼 수 있어요. 앱을 설치하기 전에 충분히 살펴보고 결정하세요.
 
-## **설치 CTA와 앱 상세 정보**
+![앱 상세 정보 탭과 설치 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035099108/original/KxdhMv1SzOQXCSePJraoAX4ea2nAmg5uIA.png?1729514625)
 
-워크플로우 빌더 내에서 "상세 정보(Details)" 탭을 통해 각 앱의 설치 옵션과 자세한 정보를 확인할 수 있습니다. 이를 통해 앱을 설치하기 전에 충분한 정보를 바탕으로 결정을 내릴 수 있습니다.
+## All Actions에 표시되는 설치한 앱
 
-![설치 CTA와 상세 정보 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155035099108/original/KxdhMv1SzOQXCSePJraoAX4ea2nAmg5uIA.png?1729514625)
-
----
-
-## **"모든 액션"의 설치된 앱**
-
-이미 설치된 앱의 액션은 기존 워크플로우 환경과 마찬가지로 "모든 액션(All actions)" 섹션에 나타나므로 빠르게 접근할 수 있습니다.
-
----
-*원문 최종 수정: Wed, 9 Jul, 2025 at 11:58 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+이미 설치한 앱의 액션은 지금까지처럼 **All actions**(모든 액션) 영역에 표시돼요. 그래서 바로 찾아 쓸 수 있어요.

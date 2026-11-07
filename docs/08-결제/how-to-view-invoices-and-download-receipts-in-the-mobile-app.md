@@ -1,21 +1,10 @@
 ---
-
-번역일: 2026-04-06
+원문: /support/solutions/articles/155000002354-how-to-view-invoices-and-download-receipts-in-the-mobile-app
+번역일: 2026-11-07
 카테고리: 08-결제
 ---
 
-# 모바일 앱에서 인보이스 확인 및 영수증 다운로드하는 방법
+# 모바일 앱에서 인보이스 확인하고 영수증 다운로드하기
 
-### **커뮤니티 튜토리얼**
+하이퍼클래스 모바일 앱에서 인보이스를 확인하고 영수증을 내려받는 과정을 영상으로 안내해요. 아래 영상을 보면서 따라 해 보세요.
 
-[https://youtu.be/lMv5YjmBoNQ](https://youtu.be/lMv5YjmBoNQ)
-
-[https://youtu.be/uZ9Am63DHe0](https://youtu.be/uZ9Am63DHe0)
-
-[https://youtu.be/7VaJo57KBFw](https://youtu.be/7VaJo57KBFw)
-
-[https://youtu.be/Linp_vh9HTY](https://youtu.be/Linp_vh9HTY)
-
----
-*원문 최종 수정: Wed, 1 May, 2024 at 2:14 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*

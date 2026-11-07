@@ -240,3 +240,14 @@ superagentsApp(Managed Agents 빌더·목록·채팅 레이어)의 제품명 표
 - 구현: 로더 v4.21.14 IFR 블록(IFR_LOCS 로케이션에서 부팅했을 때만 프로토타입 교체 — stable 로 올라가도 다른 고객 무변화) + `workers/hc-ifr-proxy`(v0.2.0). 안전장치: Worker 헬스(`x-hc-ifr`) 확인 전·실패 시 원래 주소(라우트가 fail-open 이라 Worker 가 없으면 iframe 에 메인 앱이 뜨는 함정).
 - 전체로 넓히기 전 조건: 캐너리 기간 자동화 저장·트리거 편집 이상 없음 · iframe 사전 보강 · **Workers 플랜 한도 판단**(현재 Free — 계정 전체 10만 요청/일·CPU 10ms, 워크플로우 첫 방문당 프록시 요청 약 250).
 - 근거·실측: `docs/research/iframe-proxy-2026-11-06.md`(research 브랜치) · STATE '교차 출처 iframe (2026-11-07)' 행.
+
+## [확정] GitBook 매뉴얼 개편 — 화면 이름과 일치·자연스러운 한국어·자체 앱 정리 — 2026-11-07
+- 요청(벤자민 2026-11-06): 화면 한글화된 메뉴·버튼 이름과 매뉴얼 단어를 맞추고, 어색한 번역을 알기 쉬운 한국어로 다시 쓰고, 신규 고객에게 주는 자체 앱은 KAKA·토스페이먼츠만 남긴다(Hyperaxis 등 삭제). "특별한 경우 아니면 스스로 검증·검토·개선해 끝까지 진행".
+- 원문: GHL 도움말 전체를 Actions 에서 수집(`scripts/manual/fetch_ghl_help.py` → `manual-src` 브랜치, 3,134건). 기존 문서는 `원문:` id → 파일 이름 → 단어 겹침 순으로 원문과 다시 연결(2,062건).
+- 번역기 v2(`scripts/manual/`): 화면 이름표 `data/manual/screen-labels.json`(v4 사전 reference en→현재 ko, 사이드바 우선 → 확정 용어집 → 최빈값; 브랜드·안내 머리말 제외) 중 그 문서에 나오는 것만 + 핵심 화면 이름 550개를 프롬프트에 넣는다. 해요체, 화면 이름은 굵게 한국어 그대로, 외부 브랜드는 영어(WhatsApp·Google…), 워크플로우 빌더 안 트리거·액션은 영어 + 첫 등장 괄호 뜻(2026-11-06 '빌더는 영어' 결정 기준. 11-07 iframe 중계로 한국어화 캐너리가 시작됐으므로, 전체 고객에게 한국어 빌더가 열리면 워크플로우 문서 383건을 iframe 사전 이름으로 다시 돌린다 — `build_jobs.py` 의 workflow_builder 표시를 끄고 해당 문서만 재번역).
+- 원문에 충실 규칙: 사실 추가·강화 금지, 원문 모순은 `<!-- 검토 필요: 원문 내용이 서로 다름 -->` 주석, 목록 구조 유지, 링크표에 있는 링크는 반드시 연결.
+- 파일럿 32건 → 독립 검수(문서당 실질 결함 약 1.4건: 이름표 남용·WhatsApp 한글 표기·설명으로 대신한 버튼 이름·링크 누락) → 프롬프트 보강 → 파일럿 2에서 해소 확인 → 전체 실행.
+- 구조: 영문 폴더 64개 → 번호 카테고리로 통합, 중복 80건 삭제, 파일 이름의 highlevel/leadconnector → hyperclass, 원문이 사라진 문서 713건은 `archive/manual-retired/`(목차 제외), 옛 주소 1,295건은 `.gitbook.yaml` redirects. GHL 신규 카테고리: LevelUp 2026 → `44-신기능-2026`, Custom Objects·Companies·CRM → 02-연락처 등.
+- 자체 앱: Hyperaxis 문서(법적 고지·개인정보처리방침·이용약관·데이터 삭제)·`undefined/hyperaxis` 삭제. Meta 앱 심사 등에 이 GitBook 주소를 등록해 두었다면 그쪽 주소를 바꿔야 한다(벤자민 확인 필요). KAKA AI 설치 가이드 10쪽 신규(`docs/43-한국-앱/kaka/`, 노션 'KAKA ai 설치가이드_20260925' 기준; 노션 스크린샷은 서명 URL이라 옮기지 않음 — 필요하면 `docs/43-한국-앱/assets/`에 올려 연결). 노션 원본에 본문이 없던 '3-8 REST API 키' 절은 짧게 새로 썼으므로 실제 설정 화면 문구와 맞는지 확인 필요.
+- 반영 기준(`publish_results.py`): 정상 완료 + 브랜드 노출·원문 링크·머리말·제목·이미지 누락·영어 과다 검사 통과분만 docs/ 에 쓴다. 용어 지적은 보고만.
+- 정기 업데이트: `manual-monthly.yml`(매월 1일 KST 2일 06:00) — 원문 재수집 → 본문 해시(`data/manual/src-state.json`)로 새 글·바뀐 글만 v2 번역 → 검수 통과분 반영 → 목차 재생성. 옛 `help-updater.yml` 은 수동 실행만 남김.

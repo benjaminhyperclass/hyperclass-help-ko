@@ -1,129 +1,83 @@
 ---
-
-번역일: 2024-04-06
-카테고리: 04-캘린더-예약 > Simple Calendars
+원문: /support/solutions/articles/155000007517-how-to-create-event-calendars
+번역일: 2026-11-06
+카테고리: 04-캘린더-예약
 ---
 
-# 이벤트 캘린더 만드는 방법
+# 이벤트 캘린더 만들기
 
-특정 사용자에게 예약을 배정하지 않고 예약 가능한 이벤트 일정을 만드세요. 이벤트 캘린더는 컨퍼런스, 세미나, 박람회 및 호스트가 예약에 연결되지 않아도 되는 기타 공유 이벤트 경험에 이상적입니다.
+특정 사용자에게 예약을 배정하지 않고도 예약 가능한 이벤트 일정을 만들 수 있어요. 이벤트 캘린더는 콘퍼런스, 세미나, 박람회처럼 진행자를 예약에 연결할 필요가 없는 공동 이벤트에 알맞아요.
 
----
+## 이벤트 캘린더란?
 
-**목차**
+이벤트 캘린더는 진행자나 사용자와 연결하지 않는 이벤트를 위한 캘린더 유형이에요. 미팅을 특정 팀원에게 배정하지 않고, 캘린더 단위로 예약을 관리해요. 그래서 누구나 참여하는 공개 이벤트나 공동 이벤트 일정에 잘 맞아요.
 
-- [이벤트 캘린더란?](#이벤트-캘린더란)
-- [이벤트 캘린더의 주요 장점](#이벤트-캘린더의-주요-장점)
-- [이벤트 캘린더의 중요한 차이점](#이벤트-캘린더의-중요한-차이점)
-- [이벤트 캘린더를 사용해야 하는 경우](#이벤트-캘린더를-사용해야-하는-경우)
-- [이벤트 캘린더 설정 방법](#이벤트-캘린더-설정-방법)
-- [자주 묻는 질문](#자주-묻는-질문)
+개인 사용자가 연결한 캘린더가 아니라 이벤트 자체를 기준으로 예약 가능 시간을 정할 때 특히 편리해요. 하이퍼클래스에서 가장 간단하게 설정할 수 있는 캘린더 유형 중 하나이기도 해요.
 
----
+## 이벤트 캘린더의 장점
 
-# **이벤트 캘린더란?**
+- 진행자 없이 사용: 미팅을 특정 사용자에게 배정하지 않고도 예약 가능한 일정을 만들 수 있어요.
+- 빠른 시작: 사용자를 지정하거나 직원의 가용 시간에 맞춰 캘린더를 짜지 않아도 이벤트 기반 예약 캘린더를 만들 수 있어요.
+- 간단한 예약 과정: 예약 링크나 임베드 코드를 공유하면 참석자가 전용 예약 페이지에서 등록할 수 있어요.
+- 유연한 미팅 장소: 실제 장소를 입력하거나, 고정된 온라인 미팅 링크를 **미팅 장소** 필드에 붙여 넣을 수 있어요.
+- 외부 캘린더 동기화: 해당 이벤트 캘린더에 선택한 외부 캘린더와만 예약을 동기화해요.
 
-Hyperclass의 이벤트 캘린더는 호스트나 사용자 연결이 필요하지 않은 이벤트 예약을 위해 설계된 캘린더 유형입니다. 특정 팀원에게 미팅을 배정하는 대신, 이 캘린더 유형은 예약을 캘린더 수준에서 관리할 수 있게 하여 공개 또는 공유 이벤트 예약에 적합합니다. 이는 개별 사용자의 연결된 캘린더가 아닌 이벤트 자체를 기준으로 가용성이 결정될 때 특히 유용하며, Hyperclass에서 가장 간단하게 설정할 수 있는 캘린더 유형 중 하나입니다.
+## 이벤트 캘린더가 다른 점
 
----
+이벤트 캘린더는 하이퍼클래스의 개인 캘린더, 팀 캘린더 같은 다른 유형과 동작 방식이 달라요. 설정하기 전에 차이를 알아 두면 동기화 문제, 미팅 링크에 대한 오해, 캘린더 충돌 혼선을 줄일 수 있어요.
 
-## **이벤트 캘린더의 주요 장점**
+- 이벤트 캘린더에는 사용자가 없어서 미팅을 사용자에게 배정할 수 없어요.
+- 배정된 사용자가 없으므로 Zoom, Google Meet, Microsoft Teams 같은 동적 미팅 링크 도구는 지원되지 않아요.
+- 온라인 미팅을 하려면 미팅 플랫폼에서 고정 회의 링크를 복사해 미팅 장소에 붙여 넣으세요.
+- 배정된 사용자가 없으므로 미팅이 **캘린더 설정 > 연결**의 사용자 캘린더로 동기화되지 않아요.
+- **캘린더 설정 > 연결**에서 추가한 **충돌 캘린더**는 이벤트 캘린더에서 고려하지 않아요.
+- 미팅은 해당 이벤트 캘린더의 **External Sync**(외부 동기화)에서 선택한 캘린더로만 동기화돼요.
+- 이벤트는 선택한 외부 캘린더에서만 가져오고, 그 캘린더로만 내보내요.
+- **External Sync**로는 Google Calendar를 하나만 연결할 수 있어요.
 
-- **호스트 불필요**: 특정 사용자에게 미팅을 배정하지 않고 예약 가능한 일정을 만들 수 있습니다.
+## 이벤트 캘린더를 쓰면 좋은 경우
 
-- **간단한 런칭**: 사용자를 배정하거나 직원의 가용성을 기반으로 캘린더를 구축하지 않고도 이벤트 기반 예약 캘린더를 설정할 수 있습니다.
+캘린더 유형을 알맞게 고르면 원하는 예약 경험을 제공할 수 있어요. 이벤트 캘린더는 이벤트 자체가 중심이고, 예약을 특정 직원에게 연결할 필요가 없을 때 가장 좋아요.
 
-- **간단한 예약 경험**: 예약 링크나 임베드 코드를 공유하여 참석자들이 전용 예약 페이지를 통해 등록할 수 있습니다.
+- 콘퍼런스, 박람회, 세미나, 워크숍, 공개 세션처럼 여럿이 함께하는 이벤트 예약에 쓰세요.
+- 미팅을 사용자에게 배정하고 싶지 않을 때 쓰세요.
+- 팀원의 가용 시간 설정에 의존하지 않는 더 빠르고 간단한 설정을 원할 때 쓰세요.
+- 예약을 여러 사용자에게 돌아가며 배정해야 하거나, 여러 직원의 캘린더나 직원의 가용 시간에 따라 예약이 달라질 때는 이벤트 캘린더를 쓰지 마세요.
 
-- **유연한 미팅 장소 옵션**: 물리적 위치를 추가하거나 고정 가상 미팅 링크를 미팅 장소 필드에 붙여넣을 수 있습니다.
+## 이벤트 캘린더 설정하기
 
-- **집중된 외부 동기화**: 해당 이벤트 캘린더에 선택된 외부 캘린더와만 예약을 동기화합니다.
+1. 서브 계정에서 왼쪽 메뉴의 **캘린더**로 이동해요. 상단 메뉴에서 **캘린더 설정**을 클릭하세요.
 
----
+   ![캘린더 메뉴와 상단 캘린더 설정 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066923565/original/Lq8oVLYqaGvbtciBIephSghs2sfYhxPjMg.png?1773433724)
+2. **캘린더 설정** 페이지 오른쪽 위에서 **+ New Calendar**(새 캘린더)를 클릭하세요.
 
-## **이벤트 캘린더의 중요한 차이점**
+   ![캘린더 설정 페이지의 새 캘린더 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066923572/original/CEI2JkUFGjfYfFON7YMni8e6sNDP-6YtFA.png?1773433756)
+3. 캘린더 유형 팝업에서 다른 캘린더 유형을 보여 주는 드롭다운을 열고 **Event Calendar**(이벤트 캘린더)를 선택하세요.
 
-이벤트 캘린더는 Hyperclass의 개인, 팀 및 기타 캘린더 유형과 다르게 작동합니다. 설정 전에 이러한 차이점을 이해하면 동기화 문제, 지원되지 않는 미팅 링크 기대, 캘린더 충돌 관련 혼란을 방지할 수 있습니다.
+   ![캘린더 유형 팝업에서 이벤트 캘린더 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066923583/original/4obFphkm_39dIwqPteQPwAOqEtDuPApvHA.png?1773433785)
+4. **캘린더 이름**을 입력하세요. 필요하면 캘린더의 **설명**도 적어요. 예약 위젯 링크를 바꾸려면 **사용자 지정 URL**을 수정하세요.
 
-- 이벤트 캘린더에는 사용자가 없으므로 미팅을 사용자에게 배정할 수 없습니다.
+   ![캘린더 이름, 설명, 사용자 지정 URL 입력 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066923696/original/mSXrFnm34GO7Unpz5jLkuO0uilg03YaXoQ.png?1773433965)
+5. **Meeting Duration**(미팅 시간)을 정하고, **가용성**에서 이벤트를 예약할 수 있는 요일과 시간을 선택하세요.
 
-- 사용자가 배정되지 않기 때문에 동적 미팅 링크 도구(Zoom, Google Meet, Microsoft Teams 등)는 지원되지 않습니다.
+   ![미팅 시간과 가용성 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066923702/original/_oIFKQOmT3m7HvpAU9C7rn78tUhPavWXnQ.png?1773434000)
+6. **미팅 장소**를 입력하세요. 오프라인 이벤트라면 실제 장소를 입력해요. 온라인 이벤트라면 고정 회의 링크를 붙여 넣으세요.
 
-- 온라인 미팅을 사용하려면 미팅 플랫폼에서 고정 컨퍼런싱 링크를 복사하여 미팅 장소에 붙여넣으세요.
+   ![미팅 장소 입력 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066923724/original/tpu--2kWhI-01Mk6rc4kfIlGnBSTswTwFA.png?1773434031)
+7. 추가 옵션을 설정해야 하면 **고급 설정**을 클릭하세요.
 
-- 사용자가 배정되지 않기 때문에 미팅은 캘린더 설정(Calendar Settings) > 연결(Connections)에서 사용자의 캘린더로 동기화되지 않습니다.
+   ![고급 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066923663/original/9REZNu6BgyLGqZe1KyBoQjHBt0X-LlliUg.png?1773433913)
+8. **확인**을 클릭해 이벤트 캘린더를 만드세요. 성공 메시지가 나타나면 필요에 따라 예약 링크나 임베드 코드를 복사하세요.
 
-- **캘린더 설정(Calendar Settings) > 연결(Connections)** 아래에 추가된 충돌 캘린더는 이벤트 캘린더에서 고려되지 않습니다.
+   ![이벤트 캘린더 생성 완료 후 예약 링크와 임베드 코드](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066923746/original/vikux9-ODk8fteIRLR9SZpmL0sBukuQ-yw.png?1773434074)
 
-- 미팅은 해당 이벤트 캘린더의 **외부 동기화(External Sync)** 아래에서 선택된 캘린더와만 동기화됩니다.
+## 자주 묻는 질문
 
-- 이벤트는 선택된 외부 캘린더에서만 가져오고 푸시됩니다.
+### 이벤트 캘린더에서 Zoom, Google Meet, Microsoft Teams 같은 온라인 미팅 장소를 자동으로 만들 수 있나요?
+네. 이벤트 캘린더에는 배정된 사용자가 없어서 동적 미팅 링크는 지원되지 않지만, 고정 링크는 사용할 수 있어요.
 
-- 외부 동기화를 사용하여 하나의 Google 캘린더만 연결할 수 있습니다.
+### 이벤트 캘린더 예약은 어디로 동기화되나요?
+해당 이벤트 캘린더에 선택한 외부 캘린더로만 동기화돼요.
 
----
-
-## 이벤트 캘린더를 사용해야 하는 경우
-
-올바른 캘린더 유형을 선택하면 예약 플로우가 제공하고자 하는 경험과 일치하도록 할 수 있습니다. 이벤트 캘린더는 이벤트 자체가 중심이고 예약이 특정 직원과 연결될 필요가 없을 때 가장 적합합니다.
-
-- 컨퍼런스, 박람회, 세미나, 워크숍, 공개 세션 및 기타 공유 이벤트 예약에 이벤트 캘린더를 사용하세요.
-
-- 미팅을 사용자에게 배정하고 싶지 않을 때 이벤트 캘린더를 사용하세요.
-
-- 팀원의 가용성 설정에 의존하지 않는 더 빠르고 간단한 설정을 원할 때 이벤트 캘린더를 사용하세요.
-
-- 예약이 사용자 간에 순환되어야 하거나, 여러 직원 캘린더에 의존하거나, 직원 캘린더 가용성에 의존해야 하는 경우에는 이벤트 캘린더를 사용하지 마세요.
-
----
-
-## 이벤트 캘린더 설정 방법
-
-- 하위 계정에서 왼쪽 네비게이션 메뉴의 **캘린더(Calendars)**로 이동하세요. 상단 네비게이션 바에서 **캘린더 설정(Calendar Settings)**을 클릭하세요.
-
-![이벤트 캘린더 설정 페이지 이동](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066923565/original/Lq8oVLYqaGvbtciBIephSghs2sfYhxPjMg.png?1773433724)
-
-- 캘린더 설정 페이지에서 우측 상단의 **+ 새 캘린더(+ New Calendar)**를 클릭하세요.
-
-![새 캘린더 생성 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066923572/original/CEI2JkUFGjfYfFON7YMni8e6sNDP-6YtFA.png?1773433756)
-
-- 캘린더 유형 팝업에서 더 많은 캘린더 유형을 위한 드롭다운을 열고 이벤트 캘린더(Event Calendar)를 선택하세요.
-
-![이벤트 캘린더 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066923583/original/4obFphkm_39dIwqPteQPwAOqEtDuPApvHA.png?1773433785)
-
-- 캘린더 이름을 입력하고, 선택적으로 캘린더에 대한 **설명(Description)**을 추가하며, 예약 위젯 링크를 변경하고 싶다면 **커스텀 URL(Custom URL)**을 사용자 정의하세요.
-
-![캘린더 기본 정보 입력](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066923696/original/mSXrFnm34GO7Unpz5jLkuO0uilg03YaXoQ.png?1773433965)
-
-- 미팅 지속 시간을 설정하고 이벤트를 예약할 수 있는 요일과 시간을 선택하여 **예약 가능 시간(Availability)**을 구성하세요.
-
-![미팅 시간 및 가용성 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066923702/original/_oIFKQOmT3m7HvpAU9C7rn78tUhPavWXnQ.png?1773434000)
-
-- **미팅 장소(Meeting Location)**를 추가하세요. 대면 이벤트의 경우 물리적 위치를 입력하세요. 가상 이벤트의 경우 고정 컨퍼런싱 링크를 붙여넣으세요.
-
-![미팅 장소 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066923724/original/tpu--2kWhI-01Mk6rc4kfIlGnBSTswTwFA.png?1773434031)
-
-- 추가 옵션을 구성해야 하는 경우 **고급 설정(Advanced Settings)**을 클릭하세요.
-
-![고급 설정 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066923663/original/9REZNu6BgyLGqZe1KyBoQjHBt0X-LlliUg.png?1773433913)
-
-- **확인(Confirm)**을 클릭하여 이벤트 캘린더를 생성하세요. 성공 메시지가 나타나면 필요에 따라 예약 링크나 임베드 코드를 복사하세요.
-
-![캘린더 생성 완료](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155066923746/original/vikux9-ODk8fteIRLR9SZpmL0sBukuQ-yw.png?1773434074)
-
----
-
-## **자주 묻는 질문**
-
-**Q: 이벤트 캘린더에서 Zoom, Google Meet, Microsoft Teams와 같은 가상 장소를 자동으로 사용할 수 있나요?**
-아니요. 이벤트 캘린더에는 배정된 사용자가 없기 때문에 동적 미팅 링크는 지원되지 않지만, 고정 링크는 사용할 수 있습니다.
-
-**Q: 이벤트 캘린더 예약은 어디에 동기화되나요?**
-예약은 해당 이벤트 캘린더에 선택된 외부 캘린더에만 동기화됩니다.
-
-**Q: 이벤트 캘린더를 둘 이상의 Google 캘린더와 동기화할 수 있나요?**
-아니요. 외부 동기화를 사용하여 하나의 Google 캘린더만 연결할 수 있습니다.
-
----
-*원문 최종 수정: Mon, 16 Mar, 2026 at 11:12 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### 이벤트 캘린더를 Google Calendar 여러 개와 동기화할 수 있나요?
+아니요. **External Sync**로는 Google Calendar를 하나만 연결할 수 있어요.

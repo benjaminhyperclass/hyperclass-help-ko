@@ -1,141 +1,125 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 16-SaaS-설정 > Saas Mode
+원문: /support/solutions/articles/48001230403-pause-resume-sub-accounts
+번역일: 2026-11-06
+카테고리: 16-SaaS-설정
 ---
 
-# 하위 계정 일시정지/재개하기
+# 서브 계정 일시중지와 재개
 
-에이전시는 이제 SAAS 하위 계정(Sub-Account)을 "일시정지"하고 "재개"할 수 있습니다. SaaS(Software as a Service) 고객이 결제를 하지 않을 경우, 해당 계정을 일시정지(비활성화)할 수 있어요.
+에이전시는 SaaS 서브 계정을 일시중지하고 다시 재개할 수 있어요. SaaS(Software as a Service) 고객이 결제를 하지 않으면 해당 계정을 일시중지(사용 중지)할 수 있어요.
 
-이는 결제가 완료될 때까지 소프트웨어의 서비스나 기능에 접근할 수 없다는 의미입니다. SAAS 고객이 일시정지된 계정을 재개하는 방법은 미납 요금을 결제하는 것입니다. 일반 고객의 경우, 수동으로 계정을 재개해야 해요.
+일시중지된 계정은 결제가 끝날 때까지 소프트웨어의 서비스와 기능을 쓸 수 없어요. SaaS 고객은 요금을 결제하면 일시중지된 계정을 직접 재개할 수 있어요. 일반 고객은 에이전시가 직접 계정을 재개해야 해요.
 
-#### 이 글에서 다루는 내용:
+## SaaS·일반 서브 계정 일시중지하기
 
-#### [SAAS/일반 하위 계정 일시정지하는 방법](#saas일반-하위-계정-일시정지하는-방법)
+{% hint style="info" %}
+이 기능은 **에이전시 관리자**만 쓸 수 있어요.
+{% endhint %}
 
-#### [자동으로 (SAAS 하위 계정만 적용)](#자동으로-saas-하위-계정만-적용)
+### 자동으로 일시중지하기 (SaaS 서브 계정만 가능)
 
-#### [구독 실패란 무엇인가요?](#구독-실패란-무엇인가요)
+SaaS 구독료가 결제되지 않으면 서브 계정이 자동으로 일시중지되도록 설정할 수 있어요.
 
-#### [수동으로 (SAAS와 일반 하위 계정 모두 적용)](#수동으로-saas와-일반-하위-계정-모두-적용)
+SaaS 고객의 구독 결제가 실패했을 때, 에이전시는 다음 중 하나를 선택할 수 있어요.
 
-#### [하위 계정이 일시정지되면 고객의 관리자와 사용자는 무엇을 보나요?](#하위-계정이-일시정지되면-고객의-관리자와-사용자는-무엇을-보나요)
+1. 해당 서브 계정을 일시중지한다.
+2. 서브 계정을 그대로 운영한다.
 
-#### [구독 실패가 있는 SaaS 고객의 경우](#구독-실패가-있는-saas-고객의-경우)
+이 설정은 에이전시 왼쪽 메뉴의 **SaaS 구성기 > Suspend Sub-Accounts when their SAAS subscription fails**(SaaS 구독이 실패하면 서브 계정 정지)에서 바꿀 수 있어요.
 
-#### [일반(non-SaaS) 고객이거나 SaaS 고객에게 구독 실패가 없는 경우](#일반non-saas-고객이거나-saas-고객에게-구독-실패가-없는-경우)
+![SaaS 구독 실패 시 서브 계정 정지 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48279495262/original/bn9yS0-FSwItHURYBLLu8i6ZNaUA73K8vg.png?1675418944)
 
-#### [하위 계정 재개하기](#하위-계정-재개하기)
+이 설정을 켜면 SaaS 구독 결제가 실패한 고객의 서브 계정이 일시중지돼요.
 
-#### [자주 묻는 질문](#자주-묻는-질문)
+#### 구독 결제 실패는 어떤 경우를 말하나요?
 
-#### ['일시정지된' 하위 계정의 자동화, 캘린더, 메시징 등은 어떻게 되나요? 모든 것이 정지되나요?](#일시정지된-하위-계정의-자동화-캘린더-메시징-등은-어떻게-되나요-모든-것이-정지되나요)
+고객이 요금을 내지 않아서 Stripe에서 구독 상태가 `canceled`, `past_due`, `incomplete_expired`, `incomplete` 중 하나로 바뀌면 구독 결제가 실패한 것으로 봐요. Stripe 구독 상태가 어떻게 동작하는지는 [Stripe 도움말](https://stripe.com/docs/billing/subscriptions/overview)을 참고하세요.
 
-## SAAS/일반 하위 계정 일시정지하는 방법
+### 직접 일시중지하기 (SaaS·일반 서브 계정 모두 가능)
 
-참고사항
+1. 에이전시 왼쪽 메뉴에서 **서브 계정**을 선택해요.
+2. 일시중지할 서브 계정을 찾아 스크롤해요.
+3. 서브 계정 이름을 클릭하거나, 맨 오른쪽의 점 세 개 > **고객 관리**를 클릭해요.
 
-이 기능은 에이전시 관리자(Agency Admin)만 사용할 수 있습니다.
+   ![서브 계정 목록에서 고객 관리 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48276497543/original/ff3bifD55IwfokW2doROhVdNqRdIXcem6A.png?1674141558)
 
-### 자동으로 (SAAS 하위 계정만 적용)
+4. 오른쪽의 **작업** 드롭다운에서 **서브 계정 일시중지**를 선택해요.
 
-에이전시는 SaaS 구독료가 미납된 경우 하위 계정을 자동으로 일시정지할 수 있어요.
+   ![작업 드롭다운에서 서브 계정 일시중지 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48276513268/original/8pwu5w0kSGoJg-T4l38kVdXTMOdT8Rsd3g.png?1674143962)
 
-SaaS 고객의 구독이 실패했을 때, 에이전시는 다음 중 하나를 선택할 수 있습니다:
+5. 확인 창이 나타나면 체크박스를 선택하고 **서브 계정 일시중지**를 클릭해요.
 
-- 하위 계정 일시정지하기
-- 계속 운영하기
+   ![일시중지 확인 창](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48276513790/original/VLSuzvGuzH7P0xLe_uG1jRrSi2N3WaZdfw.png?1674144047)
 
-이 설정은 에이전시 사이드바(Agency Sidebar) > SAAS Configurator > Suspend Sub-Accounts when their SAAS subscription fails(SAAS 구독 실패 시 하위 계정 정지)에서 제어할 수 있습니다.
+몇 초 안에 서브 계정이 일시중지되고, 이 화면에 일시중지되었다는 배너가 표시돼요.
 
-![SAAS 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48279495262/original/bn9yS0-FSwItHURYBLLu8i6ZNaUA73K8vg.png?1675418944)
+![일시중지 배너가 표시된 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48276514041/original/sgg75asyWZnxZQ9ni6CQdE_u2P3rgFV11A.png?1674144112)
 
-이 설정을 활성화하면 SaaS 구독이 실패했을 때 고객 하위 계정이 일시정지됩니다.
+**에이전시 관리자**는 일시중지된 계정에도 평소처럼 로그인할 수 있어요. 배너는 그대로 표시되지만, 에이전시 관리자는 계정을 문제없이 쓸 수 있어요.
 
-#### 구독 실패란 무엇인가요?
+![에이전시 관리자가 로그인한 일시중지 계정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48276514288/original/eM02iMNC7vO9bPNcplkpKrOAp1QuhVS5SQ.png?1674144188)
 
-구독이 실패했다는 것은 고객이 결제하지 않아서 Stripe에서 구독 상태가 canceled, past_due, incomplete_expired, incomplete로 변경된 경우를 말합니다. Stripe 구독 상태가 어떻게 작동하는지 알아보려면 이 [Stripe 도움말 문서](https://stripe.com/docs/billing/subscriptions/overview)를 참고하세요.
-
-### 수동으로 (SAAS와 일반 하위 계정 모두 적용)
-
-에이전시 사이드바의 하위 계정(Sub-Accounts) 탭으로 이동하세요. 일시정지하고 싶은 하위 계정까지 스크롤합니다.
-
-계정 이름을 클릭하거나 오른쪽 끝의 점 세 개 > Manage Client(클라이언트 관리)를 클릭하세요.
-
-![하위 계정 관리 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48276497543/original/ff3bifD55IwfokW2doROhVdNqRdIXcem6A.png?1674141558)
-
-오른쪽의 Actions(작업) 드롭다운 > Pause Sub-Account(하위 계정 일시정지)로 이동하세요.
-
-![작업 드롭다운 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48276513268/original/8pwu5w0kSGoJg-T4l38kVdXTMOdT8Rsd3g.png?1674143962)
-
-확인을 요청하는 창이 나타납니다. 체크박스를 선택하고 Pause Sub Account(하위 계정 일시정지)를 클릭하여 진행하세요.
-
-![일시정지 확인 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48276513790/original/VLSuzvGuzH7P0xLe_uG1jRrSi2N3WaZdfw.png?1674144047)
-
-몇 초 안에 하위 계정이 일시정지됩니다. 이 창에 일시정지됨을 나타내는 배너가 추가돼요:
-
-![일시정지 배너](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48276514041/original/sgg75asyWZnxZQ9ni6CQdE_u2P3rgFV11A.png?1674144112)
-
-에이전시 관리자는 여전히 해당 계정에 평소처럼 로그인할 수 있어요. 배너는 표시되지만, 에이전시 관리자로서 계정 사용에는 문제가 없습니다.
-
-![관리자 로그인 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48276514288/original/eM02iMNC7vO9bPNcplkpKrOAp1QuhVS5SQ.png?1674144188)
-
-고객이 하위 계정에 접근하려고 하면, SAAS 고객인지 여부에 따라 두 가지 메시지 중 하나를 화면에서 보게 됩니다(자세한 내용은 아래 참고).
-
-## 하위 계정이 일시정지되면 고객의 관리자와 사용자는 무엇을 보나요?
-
-하위 계정이 일시정지되면 해당 하위 계정에 연결된 클라이언트 포털(Client Portal)**이 열리지 않습니다**.
-
-하위 계정을 재개하면 추가 설정 없이 클라이언트 포털 접근이 복구됩니다.
-
-### 구독 실패가 있는 SaaS 고객의 경우
-
-고객은 SaaS 구독을 재활성화하는 화면을 보게 됩니다.
-
-1. 하위 계정 **사용자**는 결제 방법을 추가하거나 관리할 수 없습니다. 결제 업데이트를 완료하려면 하위 계정 **관리자**(또는 에이전시)에게 연락해야 합니다.
-
-![사용자 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064708290/original/A69ZaVfOTFcxxpBz22ghIGYe0aESe9tOKA.png?1770824679)
-
-2. 하위 계정 **관리자**는 계속 사용하기 위해 결제 방법이 필요한 경우 결제 방법을 업데이트할 수 있습니다.
-
-SaaS 구독을 재활성화하면 하위 계정이 자동으로 재개됩니다.
-
-![관리자 재활성화 화면 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48276515744/original/T5dI3-7fqGDbDc0Es_c1RTmFDufc9dmAdw.png?1674144478)
-
-![관리자 재활성화 화면 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48276518659/original/__75gO2Ql-vBJqfS8DZsGeul04QzMl5IhA.png?1674145008)
-
-![관리자 재활성화 화면 3](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48276517935/original/wEXEwiSr14NPPdyGdJKOadGCjRxCllvjzQ.png?1674144867)
-
-### 일반(non-SaaS) 고객이거나 SaaS 고객에게 구독 실패가 없는 경우
-
-고객은 상황을 해결하기 위해 에이전시에 연락하라는 화면을 보게 됩니다. 에이전시 > Settings(설정) > Company(회사) 페이지의 전화번호와 이메일을 사용합니다.
-
-![일반 고객 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48276522592/original/wCL7YdwDAZlIqZE-pRXmBnxeL6BESB-cQg.png?1674145778)
-
-## 하위 계정 재개하기
-
-에이전시 관리자는 언제든지 에이전시 사이드바(Agency Sidebar) > Sub-Accounts(하위 계정) > 일시정지된 계정으로 이동하여 하위 계정을 재개할 수 있습니다.
-
-그 다음 계정 이름을 클릭하거나 오른쪽 끝의 점 세 개를 클릭한 후 Manage Client(클라이언트 관리)를 클릭하세요:
-
-![하위 계정 재개 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48276524523/original/VL9IfVISchwMDUoPuiU0ZYMRjPtOXwCYYA.png?1674146167)
-
-그 다음 Actions(작업) 드롭다운으로 이동하여 Resume Sub-account(하위 계정 재개)를 클릭하세요:
-
-![하위 계정 재개 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48276525747/original/mpu5hvMPCSZKd0UBuQrtHzlwrEPy_ojTFw.png?1674146407)
-
-확인을 요청하는 창이 나타납니다. 필수 체크박스를 선택한 후 Resume Sub Account(하위 계정 재개)를 클릭하세요:
-
-![재개 확인 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48276526043/original/b3Gbt1hyxteCr8eBinkjFDEwixZ9T6Kx2A.png?1674146461)
-
-# 자주 묻는 질문
-
-### '일시정지된' 하위 계정의 자동화, 캘린더, 메시징 등은 어떻게 되나요? 모든 것이 정지되나요?
-
-- 하위 계정이 일시정지되면 해당 계정의 모든 워크플로우(Workflow)가 초안(Draft) 상태가 됩니다. 계정이 재개된 후 고객이 다시 발행(Publish)해야 할 수 있어요.
-- 하위 계정의 나머지 모든 것은 평상시처럼 계속 작동합니다. 유일한 변화는 고객들이 이제 구독을 업데이트하거나 등록된 에이전시에 연락하라는 안내를 받게 된다는 것입니다.
+고객이 서브 계정에 접속하면 SaaS 고객인지 아닌지에 따라 두 가지 중 한 가지 안내 화면이 표시돼요. 자세한 내용은 아래에서 확인하세요.
 
 ---
-*원문 최종 수정: Wed, 11 Feb, 2026 at 9:46 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+
+## 서브 계정이 일시중지되면 고객의 관리자와 사용자에게 무엇이 보이나요?
+
+서브 계정이 일시중지되면 그 서브 계정에 연결된 **클라이언트 포탈**이 열리지 않아요.
+
+서브 계정을 재개하면 별도 설정 없이 **클라이언트 포탈**에 다시 접속할 수 있어요.
+
+### SaaS 고객의 구독 결제가 실패한 경우
+
+고객에게 SaaS 구독을 다시 활성화하는 화면이 표시돼요.
+
+1. 서브 계정 사용자는 결제 수단을 추가하거나 관리할 수 없어요. 결제 정보 업데이트는 서브 계정 관리자(또는 에이전시)에게 요청해야 해요.
+
+   ![사용자에게 표시되는 결제 안내 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064708290/original/A69ZaVfOTFcxxpBz22ghIGYe0aESe9tOKA.png?1770824679)
+
+2. 서브 계정 관리자는 계속 이용하는 데 결제 수단이 필요하면 결제 수단을 업데이트할 수 있어요.
+
+SaaS 구독을 다시 활성화하면 서브 계정이 자동으로 재개돼요.
+
+![SaaS 구독 재활성화 화면 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48276515744/original/T5dI3-7fqGDbDc0Es_c1RTmFDufc9dmAdw.png?1674144478)
+
+![SaaS 구독 재활성화 화면 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48276518659/original/__75gO2Ql-vBJqfS8DZsGeul04QzMl5IhA.png?1674145008)
+
+![SaaS 구독 재활성화 화면 3](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48276517935/original/wEXEwiSr14NPPdyGdJKOadGCjRxCllvjzQ.png?1674144867)
+
+### 일반(비 SaaS) 고객이거나, SaaS 고객이지만 구독 결제가 실패하지 않은 경우
+
+고객에게 에이전시에 연락해 상황을 해결하라는 화면이 표시돼요. 이 화면에는 에이전시 **설정 > 회사** 페이지에 등록된 전화번호와 이메일이 사용돼요.
+
+![에이전시에 문의하라는 안내 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48276522592/original/wCL7YdwDAZlIqZE-pRXmBnxeL6BESB-cQg.png?1674145778)
+
+---
+
+## 서브 계정 재개하기
+
+에이전시 관리자는 언제든 서브 계정을 재개할 수 있어요.
+
+1. 에이전시 왼쪽 메뉴에서 **서브 계정**을 선택해요.
+2. **일시 중지** 상태인 서브 계정을 찾아요.
+3. 서브 계정 이름을 클릭하거나, 맨 오른쪽의 점 세 개를 클릭한 다음 **고객 관리**를 선택해요.
+
+   ![일시중지된 서브 계정의 고객 관리 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48276524523/original/VL9IfVISchwMDUoPuiU0ZYMRjPtOXwCYYA.png?1674146167)
+
+4. **작업** 드롭다운에서 **Resume Sub-account**(서브 계정 재개)를 클릭해요.
+
+   ![작업 드롭다운에서 서브 계정 재개 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48276525747/original/mpu5hvMPCSZKd0UBuQrtHzlwrEPy_ojTFw.png?1674146407)
+
+5. 확인 창이 나타나면 필수 체크박스를 선택하고 **Resume Sub Account**를 클릭해요.
+
+   ![재개 확인 창](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48276526043/original/b3Gbt1hyxteCr8eBinkjFDEwixZ9T6Kx2A.png?1674146461)
+
+---
+
+## 자주 묻는 질문
+
+### 서브 계정이 일시중지되면 자동화, 캘린더, 메시지 등은 어떻게 되나요? 전부 멈추나요?
+
+- 서브 계정이 일시중지되면 그 안의 워크플로우가 모두 초안 상태로 바뀌어요. 계정을 재개한 뒤 고객이 워크플로우를 다시 게시해야 할 수 있어요.
+- 나머지 기능은 평소처럼 계속 작동해요. 달라지는 점은 고객에게 구독을 업데이트하거나 등록된 에이전시에 문의하라는 안내가 표시된다는 것뿐이에요.
+  - [SaaS 고객의 구독 결제가 실패한 경우](pause-resume-sub-accounts.md)
+  - [일반(비 SaaS) 고객이거나, SaaS 고객이지만 구독 결제가 실패하지 않은 경우](pause-resume-sub-accounts.md)

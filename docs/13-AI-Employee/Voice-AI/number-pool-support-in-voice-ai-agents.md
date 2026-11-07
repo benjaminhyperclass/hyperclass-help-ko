@@ -1,65 +1,59 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 13-AI-Employee > Voice-AI
+원문: /support/solutions/articles/155000005221-number-pool-support-in-voice-ai-agents
+번역일: 2026-11-07
+카테고리: 13-AI-Employee
 ---
 
-# 음성 AI 에이전트의 번호 풀 지원
+# Voice AI 에이전트에 번호 풀 지정하기
 
-이제 여러 전화번호를 모은 번호 풀을 음성 AI 에이전트에 할당할 수 있습니다. 풀 안의 어떤 번호로 걸려온 통화든 에이전트 설정에 따라 동적으로 라우팅됩니다.
+여러 전화번호를 묶은 번호 풀을 AI 에이전트에 지정할 수 있어요. 번호 풀에 속한 번호 중 어느 번호로 전화가 걸려 와도, 에이전트 설정에 따라 알맞게 연결돼요.
 
-중요: 이 기능을 사용하려면 먼저 번호 풀이 최소 하나 이상 생성되어 있어야 합니다.
+{% hint style="warning" %}
+이 기능을 쓰려면 번호 풀이 하나 이상 만들어져 있어야 해요.
+{% endhint %}
 
-## 번호 풀 지원의 주요 장점
+## 번호 풀 지원의 장점
 
-- **단일 에이전트 효율성**: 하나의 에이전트로 여러 번호로 오는 통화를 처리하여 별도 에이전트를 만들고 관리할 필요를 줄입니다.
-- **간소화된 워크플로우**: 통화 라우팅을 중앙화하여 운영을 단순화하고 중복을 최소화합니다.
+- 에이전트 하나로 여러 번호의 전화를 받을 수 있어요. 번호마다 에이전트를 따로 만들고 관리하지 않아도 돼요.
+- 전화 연결을 한곳에서 관리해서 운영이 간단해지고 중복 작업이 줄어요.
 
-## 음성 AI 에이전트에 번호 풀 할당하는 방법
+## Voice AI 에이전트에 번호 풀 지정하기
 
-### 1단계: 음성 AI 에이전트 설정 접근
+### 1단계: 음성 AI 에이전트 설정 열기
 
-- Hyperclass 계정에 로그인합니다.
-- 좌측 메뉴에서 **AI Agents(AI 에이전트)**를 클릭합니다.
-- 상단 네비게이션 바에서 **Voice AI(음성 AI)**를 선택합니다.
+1. 하이퍼클래스에 로그인해요.
+2. 왼쪽 메뉴에서 **AI 에이전트**를 클릭해요.
+3. 상단 메뉴에서 **음성 AI**를 선택해요.
 
-![음성 AI 메뉴 선택](https://jumpshare.com/v/JXmWpgEMlruiyBquN5o0+/Screen+Shot+2025-06-12+at+6.18.48+PM.png)
+![AI 에이전트 메뉴에서 음성 AI를 선택한 화면](https://jumpshare.com/v/JXmWpgEMlruiyBquN5o0+/Screen+Shot+2025-06-12+at+6.18.48+PM.png)
 
-### 2단계: 음성 AI 에이전트 선택 또는 생성
+### 2단계: Voice AI 에이전트 선택하거나 만들기
 
-- **+ Create Agent(에이전트 생성)**을 클릭하여 새 에이전트를 만들거나
+1. 새 에이전트를 만들려면 **+ 에이전트 만들기**를 클릭해요.
 
-![에이전트 생성 버튼](https://jumpshare.com/v/NSqKYwVAM07R4ULbN4xR+/Screen+Shot+2025-06-12+at+6.23.11+PM.png)
+   ![에이전트 만들기 버튼](https://jumpshare.com/v/NSqKYwVAM07R4ULbN4xR+/Screen+Shot+2025-06-12+at+6.23.11+PM.png)
+2. 이미 만든 에이전트를 쓰려면 **에이전트 목록**에서 고르세요.
 
-- 에이전트 목록에서 기존 에이전트를 선택합니다:
-  - 에이전트 이름을 직접 클릭하거나
-  - 에이전트 옆의 점 세 개 메뉴를 클릭하고 **Edit(편집)**을 선택합니다.
+   - 에이전트 이름을 바로 클릭하거나,
+   - 에이전트 옆의 점 세 개 메뉴를 클릭한 뒤 **편집**을 선택해요.
 
-![에이전트 편집 메뉴](https://jumpshare.com/v/aMnBZ8mRiRLne65utxHQ+/Screen+Shot+2025-06-12+at+6.24.30+PM.png)
+![에이전트 목록에서 에이전트를 선택하는 화면](https://jumpshare.com/v/aMnBZ8mRiRLne65utxHQ+/Screen+Shot+2025-06-12+at+6.24.30+PM.png)
 
-### 3단계: Phone & Availability 탭 열기
+### 3단계: 배포 탭에서 번호 풀 지정하기
 
-- 에이전트 편집기에서 **Phone & Availability(전화 및 가용성)** 탭을 클릭합니다.
-- **Phone Number / Number Pool(전화번호 / 번호 풀)** 섹션을 찾습니다.
+1. Voice AI 에이전트 편집 화면에서 **배포** 탭을 클릭해요.
+2. **전화번호** 섹션에서 **번호 및 번호 풀**을 찾아요.
+3. **번호 및 번호 풀** 드롭다운을 클릭해요.
+4. Voice AI 에이전트에 지정할 번호 풀을 선택해요.
+5. 올바른 번호 풀을 골랐는지 확인한 뒤 다음으로 넘어가요.
 
-![Phone & Availability 탭](https://jumpshare.com/v/KuHOHqf16Zr7wncQN4E4+/Screen+Shot+2025-06-12+at+6.30.52+PM.png)
+   이미 만들어진 번호 풀만 지정할 수 있어요. 번호 풀이 없다면 먼저 만든 다음 에이전트에 지정하세요.
 
-### 4단계: 번호 풀 할당
+![배포 탭에서 번호 및 번호 풀을 선택하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155079359971/original/iZR-zypmRkrjuTkCMt3CaNufqXXAGckT7g.png?1787753875)
 
-- **Phone Number / Number Pool(전화번호 / 번호 풀)** 드롭다운을 클릭합니다.
-- 이 음성 AI 에이전트에 할당할 번호 풀을 선택합니다.
+### 4단계: 설정 저장하기
 
-미리 생성된 번호 풀만 목록에 나타납니다. 번호 풀이 없다면 이 단계 전에 먼저 생성해야 합니다.
+1. 원하는 번호 풀을 선택했으면 **저장** 버튼을 클릭해요.
+2. 선택한 번호 풀이 에이전트에 지정돼요.
 
-![번호 풀 선택](https://jumpshare.com/v/nLc57hei0bH6ThTiHZMs+/Screenshot+2025-06-12+at+6.34.00%E2%80%AFPM.png)
-
-### 5단계: 설정 저장
-
-- 원하는 번호 풀을 선택한 후 **Save(저장)** 버튼을 클릭합니다.
-- 선택한 번호 풀이 에이전트에 성공적으로 할당되었습니다.
-
-![설정 저장](https://jumpshare.com/v/9EguSK1qB7f2QMzH4YY6+/Screen+Shot+2025-06-12+at+6.40.07+PM.png)
-
----
-*원문 최종 수정: Thu, 12 Jun, 2025 at 8:27 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+![저장 버튼을 클릭하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155079360291/original/kQtUCmXmB9Q0rbvC-lkfw5GHaSF7vrmW8Q.png?1787754005)

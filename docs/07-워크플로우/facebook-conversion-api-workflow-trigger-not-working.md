@@ -1,28 +1,34 @@
 ---
-
-번역일: 2026-04-06
+원문: /support/solutions/articles/48001185898-facebook-conversion-api-workflow-trigger-not-working
+번역일: 2026-11-07
 카테고리: 07-워크플로우
 ---
 
-# 페이스북 전환 API 워크플로우 트리거가 작동하지 않을 때
+# Facebook Conversion API 워크플로우 트리거가 작동하지 않을 때
 
-워크플로우에서 페이스북 전환 API를 테스트할 때는 테스트 워크플로우 버튼을 사용하지 마세요.
+워크플로우에서 Facebook Conversion API를 테스트했는데 트리거가 작동하지 않는다면 이 문서를 확인하세요. 테스트할 때 주의할 점과 사용할 수 있는 트리거를 안내해요.
 
-항상 저장하고 발행한 후, 다음 트리거 중 하나를 사용해서 전환을 테스트하세요.
+## 테스트할 때 주의할 점
 
-트리거는 다음과 같은 입력 트리거여야 합니다:
+워크플로우에서 Facebook Conversion API를 테스트할 때는 **Test Workflow**(워크플로우 테스트) 버튼을 쓰지 마세요.
 
-- 폼 제출(Form Submission)
-- 설문 제출(Survey submission)  
-- 예약 제출(Appointment Submission) - 예약 위젯에서
-- 2단계 주문 폼(2 step order form)
+전환을 테스트하려면 항상 워크플로우를 **Save**(저장)하고 **Publish**(게시)한 뒤, 아래 트리거 중 하나를 사용하세요.
 
-예약의 경우 다음 트리거만 작동합니다:
+## 사용할 수 있는 트리거
 
-"고객이 예약함(Customer Booked appointment)" 트리거를 사용해야 하며, "예약(appointment)" 트리거는 사용할 수 없습니다. "예약"은 일반적인 트리거이고, "고객이 예약함"은 예약 위젯 전용 트리거입니다.
+트리거는 입력 트리거여야 해요. 예를 들면 다음과 같아요.
 
-구매 이벤트(Purchase event)를 사용할 경우 리드 값(Lead value)이 필수이며, 그렇지 않으면 빈 값으로 둘 수 있습니다.
+1. **Form Submission**(폼 제출)
+2. **Survey submission**(설문 제출)
+3. **Appointment Submission**(예약 제출, 예약 위젯에서 예약할 때)
+4. **2 step order form**(2단계 주문 폼)
 
----
-*원문 최종 수정: 2024년 8월 23일*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+## 예약 트리거는 이렇게 선택하세요
+
+예약으로 테스트할 때는 **Customer Booked appointment**(고객이 예약을 등록함) 트리거만 작동해요. **Appointment**(예약) 트리거는 작동하지 않아요.
+
+**Appointment** 트리거는 일반 트리거이고, **Customer Booked appointment** 트리거가 예약 위젯용 트리거이기 때문이에요.
+
+## Lead value 입력
+
+**Purchase**(구매) 이벤트를 사용한다면 **Lead value**(리드 값)를 꼭 입력해야 해요. Purchase 이벤트를 쓰지 않으면 비워 두어도 돼요.

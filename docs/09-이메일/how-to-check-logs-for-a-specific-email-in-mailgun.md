@@ -1,95 +1,98 @@
 ---
-
-번역일: 2026-04-06
+원문: /support/solutions/articles/48001188059-how-to-check-logs-for-a-specific-email-in-mailgun
+번역일: 2026-11-07
 카테고리: 09-이메일
 ---
 
-# Mailgun에서 특정 이메일 로그 확인하는 방법
+# Mailgun에서 특정 이메일의 전송 로그 확인하기
 
-목차
+Mailgun으로 보낸 이메일의 전달 상태를 확인하고, 자주 생기는 전달 오류를 해결하는 방법을 안내해요. 이전에 반송된 주소, 실수로 구독을 취소한 경우, 인증되지 않은 이메일(DMARC 문제)을 다뤄요.
 
-- [Mailgun 발송 로그](#mailgun-발송-로그)
-- [결과 분석](#결과-분석)
-- [일반적인 오류](#일반적인-오류)
-  - [이전 반송 주소로 배송되지 않음](#이전-반송-주소로-배송되지-않음)
-  - [수신자가 실수로 구독 취소한 경우](#수신자가-실수로-구독-취소한-경우)
-  - [xxxxxxxxxxxx.com에서 인증되지 않은 이메일](#xxxxxxxxxxxxcom에서-인증되지-않은-이메일)
-  - [yahoo.com / hotmail.com / aol.com / outlook.com에서 인증되지 않은 이메일](#yahoocom-hotmailcom-aolcom-outlookcom에서-인증되지-않은-이메일)
+## Mailgun 전송 로그 확인하기
 
-# Mailgun 발송 로그
+1. [app.mailgun.com/app/dashboard](https://app.mailgun.com/app/dashboard)에 로그인하세요.
+2. **전송 중**을 클릭하세요.
 
-1. [https://app.mailgun.com/app/dashboard](https://app.mailgun.com/app/dashboard)에 로그인합니다.
+   ![Mailgun 전송 중 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48116160535/original/JVr72sqsbd8goiu1yWyP9X8LxzQIFiymnA.png?1625007552)
 
-2. Sending(발송)을 클릭합니다.
+3. **로그**를 클릭하세요.
 
-![Mailgun 대시보드에서 Sending 메뉴 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48116160535/original/JVr72sqsbd8goiu1yWyP9X8LxzQIFiymnA.png?1625007552)
+   ![Mailgun 로그 메뉴 항목](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48116160533/original/jMWfS1lnuChsOsRrZdbYVxkKEj_FwXl5Ww.png?1625007551)
 
-3. Logs(로그)를 클릭합니다.
+4. 올바른 도메인이 선택되어 있는지 확인하세요.
 
-![Sending 메뉴에서 Logs 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48116160533/original/jMWfS1lnuChsOsRrZdbYVxkKEj_FwXl5Ww.png?1625007551)
+   ![Mailgun 로그의 도메인 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48116160536/original/4gc_ywO8KMIJ2gmt_r41V-pqblZouLsulA.png?1625007552)
 
-4. 올바른 도메인이 선택되었는지 확인합니다.
+5. **필터 추가**를 클릭하세요.
 
-![도메인 선택 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48116160536/original/4gc_ywO8KMIJ2gmt_r41V-pqblZouLsulA.png?1625007552)
+   ![필터 추가 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48188695181/original/_cN2JqLI_-4mgq52yjw5XkN8wD6j70j-fw.png?1644453931)
 
-5. Add Filter(필터 추가)를 클릭합니다.
+6. 드롭다운 목록에서 **수신자**를 선택하고, 전달 상태를 확인할 이메일 주소를 붙여 넣으세요.
 
-![Add Filter 버튼 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48188695181/original/_cN2JqLI_-4mgq52yjw5XkN8wD6j70j-fw.png?1644453931)
+   ![수신자 필터 드롭다운](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48188695195/original/4e5JP7AlzSsBZYZOUHSn2mk7YQ0gtx0EAA.png?1644453944)
 
-6. 드롭다운 목록에서 Recipient(수신자)를 선택하고 배송 상태를 확인하고자 하는 이메일을 붙여넣습니다.
+7. **필터**를 클릭하세요.
 
-![Recipient 선택 및 이메일 입력](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48188695195/original/4e5JP7AlzSsBZYZOUHSn2mk7YQ0gtx0EAA.png?1644453944)
+   ![필터 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48188695270/original/5B1sUhnEpr9-WLqcHMifkVuz0WUuxtyCsQ.png?1644454025)
 
-7. Filter(필터)를 클릭합니다.
+## 결과 확인하기
 
-![Filter 버튼 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48188695270/original/5B1sUhnEpr9-WLqcHMifkVuz0WUuxtyCsQ.png?1644454025)
+1. 해당 이메일을 찾았으면 오른쪽의 톱니바퀴(⚙) 아이콘을 클릭하고 **Quick view**(빠른 보기)를 선택하세요.
+2. 이메일 미리보기와 전달 상태가 표시돼요.
 
-## 결과 분석
+   ![Mailgun 로그 항목의 Quick view](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48188695369/original/C19SliRpd7Pl_5q67zgT2hTAWFXDSR3jrg.png?1644454139)
 
-이메일을 찾았으면 오른쪽의 톱니바퀴 ⚙️ 아이콘을 클릭합니다.
+{% hint style="info" %}
+상태가 **delivered**(전달 완료)로 나오는데 받는 사람이 이메일을 받지 못했다고 하면, 스팸 폴더를 확인해 보세요. 받는 쪽 이메일 서비스가 조용히 차단하고 있는지는 Mailgun 지원팀에 문의해 확인할 수 있어요.
+{% endhint %}
 
-Quick view(빠른 보기)를 선택합니다.
+## 자주 발생하는 오류
 
-이메일의 미리보기가 표시됩니다.
+### 이전에 반송된 주소로 전달되지 않아요
 
-![이메일 미리보기 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48188695369/original/C19SliRpd7Pl_5q67zgT2hTAWFXDSR3jrg.png?1644454139)
+**해결 방법:**
 
-"delivered(배송됨)"라고 표시된다면, 스팸 폴더를 확인하거나 Mailgun 고객지원팀에 문의하여 이메일 제공업체에서 해당 이메일을 차단하고 있는지 확인해보세요.
+1. **전송 중 > Suppressions**(차단 목록)를 클릭하세요.
+2. 맨 위에서 도메인을 선택하세요.
+3. 수신자의 이메일 주소를 검색하세요.
+4. 수신자를 선택한 뒤 오른쪽의 휴지통 아이콘을 클릭해 **반송** 탭에서 제거하세요.
 
-## 일반적인 오류
+### 수신자가 실수로 구독을 취소했어요
 
-### 이전 반송 주소로 배송되지 않음
+**해결 방법:** **Unsubscribes**(구독 취소) 탭으로 이동해 그곳에서 해당 이메일을 제거하세요.
 
-해결 방법:
+![Mailgun의 Unsubscribes 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48188695886/original/EgH5LxHkk9DeQiKIUhWyFYFOyklyac8D7Q.png?1644454582)
 
-1. Sending(발송) → Suppressions(억제 목록)을 클릭합니다.
+### 사용자 지정 도메인에서 보낸 이메일이 인증되지 않았어요
 
-2. 상단에서 도메인을 선택합니다.
+**해결 방법:** 해당 사용자 지정 도메인의 DMARC를 none으로 설정하세요.
 
-3. 수신자의 이메일을 검색합니다.
+G Suite 이메일을 사용한다면 [여기에서 DMARC를 none으로 설정하는 방법](https://support.google.com/a/answer/10032169?hl=en)을 확인할 수 있어요.
 
-4. 해당 수신자를 선택하고 오른쪽의 휴지통 아이콘을 클릭하여 Bounces(반송) 탭에서 연락처 이메일을 제거합니다.
+### yahoo.com / hotmail.com / aol.com / outlook.com에서 보낸 이메일이 인증되지 않았어요
 
-### 수신자가 실수로 구독 취소한 경우
+**임시 해결 방법:** 발신자 이메일을 yahoo.com, aol.com 같은 무료 이메일 도메인에서 본인 도메인이나 gmail.com으로 바꾸세요.
 
-Unsubscribes(구독 취소) 탭으로 전환하여 해당 이메일을 제거합니다.
+예를 들어 `name@yahoo.com`을 `name@gmail.com` 또는 `name@your_domain.com`으로 바꾸세요.
 
-![구독 취소 목록에서 이메일 제거](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48188695886/original/EgH5LxHkk9DeQiKIUhWyFYFOyklyac8D7Q.png?1644454582)
+발신자 이메일 주소를 설정하는 위치는 캠페인 이메일의 발신자 이름·주소 설정 문서를 참고하세요.
 
-### xxxxxxxxxxxx.com에서 인증되지 않은 이메일
+## 자주 묻는 질문
 
-해결 방법: 커스텀 도메인에서 DMARC를 none으로 설정합니다.
+### Mailgun 로그에서 이메일이 전혀 보이지 않아요. 왜 그런가요?
+로그 화면에서 올바른 도메인이 선택되어 있는지, 필터와 날짜 범위에 실제 발송 시점이 포함되는지 다시 확인하세요. 로그는 한 번에 도메인 하나씩만 보여 줘요.
 
-Google Workspace 이메일을 사용하고 있다면, [여기에서 DMARC를 none으로 설정할 수 있습니다](https://support.google.com/a/answer/10032169?hl=en).
+### 반송과 구독 취소는 어떻게 다른가요?
+반송은 받는 쪽 메일 서비스가 메시지를 거부한 경우예요(없는 주소, 가득 찬 편지함 등). 구독 취소는 수신자가 직접 수신을 거부한 경우예요. 둘 다 이후 발송이 제한되지만, 제거하는 탭이 달라요. 반송은 **반송** 탭에서, 구독 취소는 **Unsubscribes** 탭에서 제거해요.
 
-### yahoo.com / hotmail.com / aol.com / outlook.com에서 인증되지 않은 이메일
+### Mailgun은 전송 로그를 얼마나 오래 보관하나요?
+보관 기간은 Mailgun 요금제에 따라 달라요. 오래된 전달 내역을 확인해야 한다면 사용 중인 Mailgun 요금제의 로그 보관 기간을 확인하거나 Mailgun 지원팀에 직접 문의하세요.
 
-빠른 해결 방법: 발신자 이메일을 yahoo.com / aol.com 등에서 자신의 도메인이나 gmail.com으로 변경합니다.
+### 여러 도메인의 로그를 한꺼번에 검색할 수 있나요?
+아니요. **로그** 화면은 한 번에 도메인 하나씩만 필터링해요. 수신자 필터를 추가하기 전에 올바른 도메인이 선택되어 있는지 확인하세요(4단계).
 
-예: name@yahoo.com을 name@gmail.com 또는 name@your_domain.com으로 변경
+### DMARC 때문에 "인증되지 않음" 오류가 생기는 이유가 뭔가요?
+도메인에 엄격한 DMARC 정책(quarantine 또는 reject)이 있는데 발송 설정이 SPF/DKIM과 완전히 맞지 않으면, 메일 서비스가 해당 메시지를 인증되지 않은 것으로 표시해요. DMARC를 none으로 설정하면 인증 문제를 정리하는 동안 적용 강도가 느슨해져요.
 
-[발신자 이메일 주소 설정 방법은 여기에서 확인하세요](https://hyperclass.gitbook.io/hyperclass-docs).
-
----
-*원문 최종 수정: Mon, 6 Mar, 2023 at 2:27 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### 이 내용을 확인하려면 제 Mailgun 계정이 꼭 있어야 하나요?
+네. 로그를 보고 차단 목록을 직접 관리하려면, 발송 도메인에 연결된 Mailgun 계정과 대시보드에 접근할 수 있어야 해요.

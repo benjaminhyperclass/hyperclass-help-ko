@@ -1,56 +1,51 @@
 ---
-원문: https://hyperclass.gitbook.io/hyperclass-docs/support/solutions/articles/155000004423-revamped-forms-and-surveys-submissions-page
-번역일: 2026-11-02
-카테고리: 06-사이트 > 폼
+원문: /support/solutions/articles/155000004423-revamped-forms-and-surveys-submissions-page
+번역일: 2026-11-07
+카테고리: 06-사이트
 ---
 
-# 새롭게 개편된 폼 및 설문 제출 내역 페이지
+# 개편된 폼·설문 제출 페이지
 
-## 무엇이 달라졌나요?
+폼과 설문의 제출 내역을 한 화면에서 확인하는 **제출** 페이지가 새롭게 바뀌었어요. 이제 제출 데이터의 모든 열을 볼 수 있고, 열을 직접 고르고 순서도 바꿀 수 있어요.
 
-### 확장된 컬럼 보기
+## 달라진 점
 
-이전에는 이름, 이메일과 같은 3개의 컬럼만 표시됐어요. 이제는 폼 제출 내역의 모든 컬럼을 확인할 수 있어요.
+### 열 전체 보기
 
-**동적 컬럼**
+이전에는 이름, 이메일 같은 3개 열만 보였어요. 이제는 폼 제출 데이터의 모든 열이 표시돼요.
 
-사용자가 원하는 순서대로 컬럼을 선택, 선택 해제, 재정렬해서 데이터를 볼 수 있어요.
+### 열 직접 설정
 
-**복사 기능**
+열을 선택하거나 해제할 수 있고, 원하는 순서로 바꿔서 볼 수도 있어요.
 
-이제 표에서 바로 전화번호, 이메일을 복사하거나 URL로 바로 이동할 수 있어요.
+### 복사 기능
 
-**사용 방법**
+표에서 바로 전화번호와 이메일을 복사할 수 있어요. URL로 바로 이동하는 것도 가능해요.
 
-- Sites(사이트) > Forms(폼) > Submissions(제출 내역) 메뉴로 이동하세요
+## 사용 방법
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155039253144/original/BSP_vsT5VBD51g9Gb0LX9btC-P0KXKG_DQ.png?1735924804)
+1. **사이트 > 폼 > 제출**로 이동해요.
 
-- 확장 아이콘을 클릭해서 개별 제출 내역을 확인하세요. 그런 다음 PDF 다운로드 드롭다운에서 아래 중 선택할 수 있어요:
+   ![제출 페이지 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155039253144/original/BSP_vsT5VBD51g9Gb0LX9btC-P0KXKG_DQ.png?1735924804)
 
-새로운 PDF 레이아웃 (더 깔끔하고 화면 보기 및 공유에 최적화됨)
+2. 제출 건 하나를 자세히 보려면 확장 아이콘을 클릭해요. 그다음 **PDF 다운로드 드롭다운**에서 레이아웃을 선택해요.
+   - **새 PDF 레이아웃**: 화면으로 보거나 공유하기 좋게 더 깔끔하게 정리된 형식이에요.
+   - **이전 PDF 레이아웃**: 이전 형식과 같아요.
 
-- 
-기존 PDF 레이아웃 (이전 형식과 동일)
+   ![PDF 레이아웃 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064678571/original/iekahSME3-YEzNgR_jYQPfE4SyPdfqLcSQ.png?1770811252)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064678571/original/iekahSME3-YEzNgR_jYQPfE4SyPdfqLcSQ.png?1770811252)
+3. 다운로드하거나 삭제할 폼 제출 건을 선택해요. 다운로드는 CSV 형식으로 받아져요.
 
-- 다운로드(CSV 형식)하거나 삭제할 폼 제출 내역을 선택하세요
+   ![제출 건 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155039253140/original/7eCSUln6arN9Gs_aPatgI_6CZIDglVcKMA.png?1735924804)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155039253140/original/7eCSUln6arN9Gs_aPatgI_6CZIDglVcKMA.png?1735924804)
+4. 표 보기를 바꾸려면 열 관리를 클릭한 다음, 열로 표시할 필드를 선택하거나 해제해요.
 
-- 컬럼 관리를 클릭하고 컬럼으로 표시할 필드를 선택/선택 해제해서 표 보기를 관리하세요
+   ![열 관리 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155039253142/original/AeglOjvVqtgTICMe7bVbriKCxaOkrwVeeA.png?1735924804)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155039253142/original/AeglOjvVqtgTICMe7bVbriKCxaOkrwVeeA.png?1735924804)
+5. 폼 제출 건 전체를 CSV 형식으로 내보내려면 **내보내기** 버튼을 클릭해요.
 
-- 'Export(내보내기)' 버튼을 눌러 모든 폼 제출 내역을 CSV 형식으로 내보내세요
+   ![내보내기 버튼 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155039253145/original/vh5kZIhjDAZLZbEhXUG3LQ-vHZ3FzQIkJQ.png?1735924805)
 
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155039253145/original/vh5kZIhjDAZLZbEhXUG3LQ-vHZ3FzQIkJQ.png?1735924805)
+6. 표에서 열 너비를 바꾸려면 열 가장자리를 끌어서 늘리거나 줄여요.
 
-- 표 보기에서 모서리를 드래그해서 컬럼 너비를 조절하세요
-
-![](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155039253143/original/g9B6_OGYdCmWjIDKUZanlO8vv6iyGZxTFw.png?1735924804)
-
----
-*원문 최종 수정: 2026-02-11*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+   ![열 너비 조절 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155039253143/original/g9B6_OGYdCmWjIDKUZanlO8vv6iyGZxTFw.png?1735924804)

@@ -1,180 +1,185 @@
 ---
-
-번역일: 2026-04-06
-카테고리: 01-시작하기 > 마케팅-리드-생성
+원문: /support/solutions/articles/155000005063-getting-started-setup-social-planner
+번역일: 2026-11-06
+카테고리: 01-시작하기
 ---
 
-# 시작하기 - 소셜 플래너 설정
+# 소셜 플래너 시작하기 — 계정 연결부터 예약까지
 
-소셜 미디어 관리를 간소화할 준비가 되셨나요? 좋습니다! 소셜 플래너(Social Planner)를 사용하면 게시물을 쉽게 예약하고 관리하여 Facebook, Instagram 등 인기 플랫폼에서 브랜드의 일관된 온라인 존재감을 유지할 수 있습니다. 시작해볼까요!
+소셜 플래너(Social Planner)는 소셜 계정을 연결하고, 콘텐츠를 만들고, 게시물을 한 캘린더에서 예약하는 도구예요. 이 문서에서는 계정 연결, 템플릿, 맞춤 게시물, 미디어, 예약, 성과 확인까지 처음 설정할 때 필요한 내용을 안내해요.
 
----
+## 소셜 플래너란?
 
-목차
+소셜 플래너는 소셜 콘텐츠를 작성하고, 예약하고, 게시하고, 성과를 확인하는 하이퍼클래스의 통합 도구예요. Facebook, Instagram, Threads, Google Business Profile, LinkedIn, TikTok, YouTube, Pinterest, 하이퍼클래스 커뮤니티, Bluesky를 한곳에서 관리할 수 있어요. 사용할 수 있는 게시물 유형, 미디어 옵션, 분석 항목은 플랫폼마다 달라요.
 
-- [소셜 플래너 둘러보기](#소셜-플래너-둘러보기)
-- [소셜 계정 설정 및 연결하기 (게시를 위해 필수)](#소셜-계정-설정-및-연결하기-게시를-위해-필수)
-- [템플릿으로 게시물 만들기](#템플릿으로-게시물-만들기)
-- [커스텀 게시물 만들기](#커스텀-게시물-만들기)
-- [미디어 추가, 미리보기, 썸네일 편집](#미디어-추가-미리보기-썸네일-편집)
-- [더 많은 소셜 계정 연결하기](#더-많은-소셜-계정-연결하기)
+## 소셜 플래너의 주요 장점
 
----
+한 캘린더에서 소셜 콘텐츠를 관리하면 수작업이 줄고 일정한 게시 일정을 유지하기 쉬워요.
+
+- 한곳에서 게시: 여러 소셜 플랫폼을 앱을 오가지 않고 관리해요.
+- 유연한 예약: 바로 게시하거나, 나중으로 예약하거나, 초안으로 저장하거나, 승인을 요청하거나, 반복 콘텐츠를 만들 수 있어요.
+- 재사용할 수 있는 콘텐츠: 템플릿, 대량 업로드, RSS 피드, 반복 게시물, 카테고리 큐로 시작할 수 있어요.
+- 플랫폼별 게시물: 선택한 소셜 채널마다 캡션과 미디어를 다르게 설정해요.
+- 성과 확인: 게시 활동과 확인 가능한 참여 지표를 살펴볼 수 있어요.
+
+## 시작하기 전에
+
+소셜 플랫폼에서 올바른 권한을 부여해야 하이퍼클래스가 대신 게시할 수 있어요. 접근 권한과 콘텐츠를 미리 준비해 두면 계정이 보이지 않거나 게시에 실패하는 일을 줄일 수 있어요.
+
+- 연결하려는 각 소셜 플랫폼에 로그인할 수 있는지 확인하세요.
+- 필요한 페이지, 프로필, 채널, 보드, 위치에 대한 관리자 또는 게시 권한이 있는지 확인하세요.
+- 게시할 캡션, 링크, 이미지, 동영상을 준비하세요.
+- 미디어가 선택한 플랫폼의 요건을 충족하는지 확인하세요.
+- 게시물을 예약하기 전에 계정의 시간대를 확인하세요.
+
+{% hint style="warning" %}
+계정을 연결하지 않아도 소셜 플래너를 둘러보고 콘텐츠를 준비할 수 있어요. 하지만 해당 채널에 게시하거나 예약하려면 활성화된 소셜 연결이 필요해요.
+{% endhint %}
 
 ## 소셜 플래너 둘러보기
 
-아직 소셜 계정을 연결하지 않았더라도 소셜 플래너를 먼저 둘러볼 수 있습니다. 이를 통해 주요 워크플로우를 미리 확인하고 게시 채널을 연결하기 전에 콘텐츠를 준비할 수 있어요.
+소셜 플래너 환영 화면에서는 자주 쓰는 콘텐츠 계획 도구를 바로 열 수 있어요.
 
-![소셜 플래너 메인 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155065399888/original/8vketQGOfOn0mmxEhrjt0nBymS7uF-uwaQ.png?1771640321)
+- **지금 예약**: 맞춤 게시물 하나를 만들어요.
+- **Bulk Scheduling**(대량 예약): 지원되는 CSV 또는 XLSX 파일로 게시물을 최대 90개까지 업로드해요.
+- **상시 큐 게시물**: 재사용할 수 있는 카테고리 큐를 만들어요. 나중에 큐를 편집하거나, 순서를 바꾸거나, 확인하거나, 다시 예약할 수 있어요.
+- **반복 게시물**: 선택한 일정에 맞춰 게시물을 반복해요.
+- **RSS Post**(RSS 게시물): RSS 피드의 새 항목을 소셜 게시물로 바꿔요.
 
-**소셜 계정 연결 전에 할 수 있는 작업들**
+![소셜 플랫폼과 콘텐츠 계획 옵션이 보이는 소셜 플래너 환영 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155065399888/original/8vketQGOfOn0mmxEhrjt0nBymS7uF-uwaQ.png?1771640321=)
 
-`Marketing(마케팅) → Social Planner(소셜 플래너)`에서 연결 없이도 다음 기능들을 사용할 수 있습니다:
+## 소셜 플래너 설정하고 사용하기
 
-**게시물 예약**
+소셜 플래너는 다섯 단계로 사용해요. 계정을 연결하고, 게시물 만드는 방법을 고르고, 내용을 검토하고, 예약하거나 게시하고, 연결 상태를 확인하면 돼요.
 
-**Schedule Now(지금 예약하기)**를 클릭하면 게시물 작성기와 예약 흐름이 열립니다. 콘텐츠 초안을 작성하고, 예약 옵션을 검토하며, 다중 채널 게시가 어떻게 작동하는지 확인할 수 있어요.
+### 1. 첫 번째 소셜 계정 연결하기
 
-**CSV로 대량 예약**
+계정을 연결하면 하이퍼클래스가 선택한 페이지, 프로필, 채널, 보드, 위치에 게시할 수 있도록 승인돼요.
 
-**Upload A CSV(CSV 업로드)**를 클릭하여 대량 업로드 과정을 시작합니다. 게시물을 대량으로 가져오고, 파일을 검증하며, 예약 전에 게시물 목록을 검토할 수 있습니다.
+1. **마케팅 > 소셜 플래너**로 이동하세요.
+2. 연결할 소셜 플랫폼을 선택하세요.
+3. 로그인한 뒤 요청된 권한을 승인하세요.
+4. 관리할 페이지, 프로필, 채널, 보드, 위치를 선택하세요.
+5. 승인 절차를 마치세요.
+6. 소셜 플래너에 계정이 표시되는지 확인하세요.
 
-**에버그린 큐 게시물**
+Facebook 페이지를 연결할 때는 연결하려는 모든 페이지에 관리자 권한이 있는 Facebook 프로필로 로그인하세요.
 
-**Create Evergreen Post(에버그린 게시물 만들기)**를 클릭하여 에버그린 콘텐츠 계획을 살펴보세요. 재사용 가능한 게시물을 정리하고 지속적인 게시를 위한 큐를 구축하는 데 도움이 됩니다.
+![소셜 플래너에 표시된 연결된 Facebook 페이지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046650149/original/-elmob_B-i2n4m1uEXIc827ngW-BesLKIw.png?1747265065=)
 
-**반복 게시물**
+### 2. 소셜 플래너 템플릿으로 게시물 만들기
 
-**Create Recurring Post(반복 게시물 만들기)**를 클릭하여 반복되는 콘텐츠를 설정합니다. 일정에 따라 자동으로 반복되는 게시물을 계획하여 일관된 참여를 유도할 수 있어요.
+템플릿은 바로 쓸 수 있는 콘텐츠예요. 내용을 고친 뒤 연결된 소셜 계정에 예약할 수 있어요.
 
-**RSS 피드에서 게시물 생성**
+1. **마케팅 > 소셜 플래너**로 이동하세요.
+2. **+ New Post**(새 게시물)를 클릭하세요.
+3. **소셜 플래너 템플릿**을 선택하세요.
+4. 사용할 수 있는 템플릿을 검색하거나, 둘러보거나, 필터로 좁혀 보세요.
+5. 템플릿을 선택하고 **계속**을 클릭하세요.
 
-**Create RSS Post(RSS 게시물 만들기)**를 클릭하여 RSS 피드를 추가하고 자동화 설정을 검토합니다. 새로운 RSS 항목을 소셜 게시물로 변환하여 채널을 활성 상태로 유지하는 데 도움이 됩니다.
+![소셜 플래너 템플릿이 강조된 새 게시물 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046650170/original/OtRuWjuR_imzb--UrEpilgcEAMIMXLNtpA.png?1747265181=)
 
----
+6. 안내가 나오면 **콘텐츠 > 템플릿 라이브러리**를 여세요.
+7. 선택한 템플릿을 찾아 플러스 아이콘으로 표시된 **Select Socials**(소셜 선택)를 클릭하세요.
 
-## 소셜 계정 설정 및 연결하기 (게시를 위해 필수)
+![Select Socials 아이콘이 보이는 템플릿 라이브러리](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046650180/original/7K9J0uIJYti3PrZAVCt3k5WW63fgNMfeuQ.png?1747265353=)
 
-이제 계정을 연결하여 쉽게 게시를 시작해봅시다. 방법은 다음과 같습니다:
+8. 게시물을 보낼 소셜 계정을 선택하세요.
+9. 게시 요일, 게시물 수, 시간대 범위를 선택하세요.
+10. 예약 창에 표시된 시간대를 확인하세요.
+11. **게시물 예약**을 클릭하세요.
 
-- 연결하려는 소셜 계정의 버튼을 클릭하여 선택하세요. 여기서는 Facebook을 예시로 사용하겠습니다.
+![소셜 계정, 게시 요일, 게시물 수, 시간 범위, 게시물 예약 버튼이 보이는 게시물 예약 창](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046650190/original/8YYuTzgpdEz0ojRfwue_VbAYbh2yIDxSBw.png?1747265422=)
 
-![소셜 계정 연결 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155065399910/original/1WkyMRGNei1nBrYG8Amnev9RPhj7zbbaeg.png?1771640559)
+12. 템플릿 처리가 끝나면 **검토 및 예약**을 여세요.
+13. 캡션, 미디어, 계정, 예약 시간을 검토하세요.
+14. 오류로 표시된 항목을 수정하세요.
+15. **가져오기**를 클릭해 승인한 게시물을 플래너에 추가하세요.
 
-- Facebook 계정에 로그인합니다.
+템플릿 게시물은 **검토 및 예약** 단계를 마치고 **가져오기**를 클릭해야 게시 캘린더에 추가돼요.
 
-![Facebook 로그인 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046650140/original/8K6sDMqEEOVKCICLTOMuUgycTvkeLSCG1A.png?1747265006)
+### 3. 맞춤 게시물 만들기
 
-- 관리하고 싶은 Facebook 페이지를 최소 하나 이상 선택합니다.
+맞춤 게시물에서는 캡션, 미디어, 대상 계정, 게시 방법을 직접 정할 수 있어요.
 
-![Facebook 페이지 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046650144/original/9vsrOb0HIAertfbuO9YUJ0dnQc15HxAkWw.png?1747265021)
+1. **마케팅 > 소셜 플래너**로 이동하세요.
+2. **+ New Post**(새 게시물) > **새 게시물 만들기**를 클릭하세요.
+3. 게시물을 보낼 소셜 계정을 선택하세요.
+4. 캡션, 링크, 해시태그 등 내용을 입력하세요.
+5. 여러 플랫폼에 게시할 때 플랫폼마다 캡션이나 미디어를 다르게 쓰려면 **Customize for Each Channel**(채널별 맞춤 설정)을 켜세요.
+6. **게시물 미리보기** 패널에서 각 플랫폼의 모습을 확인하세요.
+7. 바로 게시, 나중으로 예약, 초안으로 저장, 승인 요청, 반복 게시물 만들기 중 원하는 방법을 선택하세요.
 
-- 연결을 확인합니다.
+### 4. 미디어 추가하고 동영상 썸네일 편집하기
 
-![연결 확인 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046650149/original/-elmob_B-i2n4m1uEXIc827ngW-BesLKIw.png?1747265065)
+예약하기 전에 미디어를 확인하면 잘림, 형식, 호환성 문제를 막을 수 있어요.
 
-이제 연결이 완료되었으니 매력적인 게시물을 만들어봅시다!
+1. **게시물 작성기**에서 **이미지** 또는 **동영상** 아이콘을 사용해 미디어를 추가하세요.
+2. 계정을 바꾸거나 채널별 맞춤 설정을 켜기 전에 업로드가 끝날 때까지 기다리세요.
+3. **게시물 미리보기** 패널에서 미디어를 확인하세요.
+4. 플랫폼 요건에 맞게 지원되는 미디어를 하이퍼클래스가 자동으로 조정하게 하려면 **Media Optimization**(미디어 최적화)을 켜 둔 채로 두세요.
 
----
+![업로드한 동영상과 게시물 미리보기 패널이 보이는 게시물 작성기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064535499/original/3U-FILqZwZsOLe9Vdkn9t-Z_UNcY3QR09A.png?1770689786=)
 
-## 템플릿으로 게시물 만들기
+지원되는 동영상의 썸네일을 편집하려면 다음과 같이 하세요.
 
-템플릿이 있으면 작업이 쉬워집니다. 미리 만들어진 디자인을 빠르게 커스터마이징하여 임팩트 있는 게시물을 만들어보세요:
+1. 업로드한 동영상 위에 마우스를 올리세요.
+2. 연필 아이콘을 클릭하세요.
+3. **Edit Video Thumbnail**(동영상 썸네일 편집)을 선택하세요.
+4. 썸네일을 업로드하거나 선택하세요.
+5. 바뀐 미리보기를 확인하세요.
 
-- `Marketing(마케팅) → Social Planner(소셜 플래너) → New Post(새 게시물) → Social Planner Templates(소셜 플래너 템플릿)`으로 이동합니다.
+![동영상 썸네일 편집이 강조된 동영상 편집 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064535505/original/l4R1nEIUhKq2EJ5dSIsMfekX_WTUfV1wVQ.png?1770689802=)
 
-![템플릿 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046650170/original/OtRuWjuR_imzb--UrEpilgcEAMIMXLNtpA.png?1747265181)
+{% hint style="info" %}
+썸네일 지원 여부는 선택한 플랫폼과 게시물 유형에 따라 달라요. 옵션이 보이지 않으면 최신 소셜 플래너 미디어 가이드라인을 확인하세요.
+{% endhint %}
 
-- 사용 가능한 템플릿을 검색하고, 탐색하며, 필터링합니다.
+### 5. 소셜 계정 추가로 연결하기
 
-![템플릿 검색 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046650175/original/ZU2MMXR8hAVntjZ-WJKXPvKNTL8DzXVtqg.png?1747265243)
+계정을 더 연결하면 여러 브랜드, 위치, 프로필, 플랫폼을 같은 소셜 플래너에서 관리할 수 있어요.
 
-- 마음에 드는 템플릿을 미리 본 후 **Continue(계속)**를 클릭합니다.
+1. 소셜 플래너에서 **설정** 톱니바퀴를 클릭하세요.
+2. **소셜 계정**을 여세요.
+3. **+ 소셜 연결**을 클릭하세요.
+4. 추가할 플랫폼을 선택하세요.
+5. 로그인하고 권한을 승인한 뒤 계정을 선택하세요.
+6. 계정이 연결됨으로 표시되는지 확인하세요.
 
-![템플릿 미리보기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046650177/original/MBStQBt6FeZc5kW4T2UIXNGagbTfuix9GQ.png?1747265287)
+![사용할 수 있는 소셜 연동이 보이는 소셜 계정 연결 창](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046650269/original/xzyt01nDaVJmMNWSUdduYmpA95dddsf4Dg.png?1747266021=)
 
-- **Select Socials(소셜 선택)** (오른쪽 플러스 아이콘)를 클릭하여 선택한 템플릿을 예약합니다.
+연결된 계정의 승인이 풀리면 하이퍼클래스가 앱 안 알림과 이메일로 알려 줘요. 계정 연결이 끊긴 동안에는 예약된 게시물을 게시할 수 없으니 바로 다시 연결하세요.
 
-![소셜 계정 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046650180/original/7K9J0uIJYti3PrZAVCt3k5WW63fgNMfeuQ.png?1747265353)
+## 게시물과 소셜 성과 확인하기
 
-- Schedule Post(게시물 예약) 모달에서 Facebook 계정과 시간을 포함한 필요한 세부사항을 입력합니다.
+게시 상태와 분석을 살펴보면 실패한 게시물을 찾고, 연결을 유지하고, 성과가 좋은 콘텐츠를 파악할 수 있어요.
 
-- **Schedule Posts(게시물 예약)**를 클릭합니다.
+- **플래너** 탭에서 초안, 예약된 게시물, 게시된 게시물, 실패한 게시물을 확인하세요.
+- **마케팅 > 소셜 플래너 > 통계**로 이동해 연결된 플랫폼별로 확인할 수 있는 지표를 살펴보세요.
+- 지원되는 플랫폼이나 소셜 계정별로 결과를 필터링하세요.
+- 하이퍼클래스에 권한 또는 인증 알림이 표시되면 계정을 다시 연결하세요.
 
-![게시물 예약 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046650190/original/8YYuTzgpdEz0ojRfwue_VbAYbh2yIDxSBw.png?1747265422)
+계정에서 소셜 플래너 대시보드 위젯을 사용할 수 있다면 게시물, 좋아요, 댓글, 공유, 노출, 도달, 팔로워 같은 지표를 합산해 표시할 수도 있어요. 이 위젯은 플랫폼, 소셜 계정, 기간 필터를 지원해요. 다만 게시물 단위의 이름, 이미지, 설명은 표시하지 않아요.
 
-게시물이 예약되어 준비 완료되었습니다! 이제 나만의 독특한 게시물 만들기를 살펴보는 것은 어떨까요?
+## 자주 묻는 질문
 
----
+### 초안은 만들 수 있는데 게시가 안 돼요.
+게시하거나 예약하려면 활성화된 소셜 계정을 하나 이상 선택해야 해요. **소셜 플래너 설정**을 열어 계정이 연결되어 있는지 확인하세요.
 
-## 커스텀 게시물 만들기
+### 설정 중에 Facebook 페이지가 보이지 않아요.
+승인에 쓴 Facebook 프로필에 해당 페이지의 관리자 권한이 있는지 확인하세요. 그래도 페이지가 보이지 않으면 Facebook을 다시 연결하고 요청된 권한을 모두 승인하세요.
 
-창의력을 발휘하고 싶으신가요? 몇 번의 클릭만으로 나만의 커스텀 게시물을 만들어보세요:
+### 소셜 계정 연결이 끊기면 어떻게 되나요?
+계정을 다시 연결하기 전까지는 해당 계정으로 예약된 게시물을 게시할 수 없어요. 하이퍼클래스가 앱 안 알림을 표시하고, 이메일 알림도 보낼 수 있어요.
 
-- `Marketing(마케팅) → Social Planner(소셜 플래너)`에서 **New Post(새 게시물) → Create New Post(새 게시물 만들기)**를 클릭합니다.
+### 소셜 플랫폼마다 캡션이나 미디어를 다르게 쓸 수 있나요?
+네, 쓸 수 있어요. 소셜 계정을 여러 개 선택하고 **Customize for Each Channel**을 켜세요. 그러면 플랫폼별로 캡션과 미디어를 따로 편집할 수 있어요.
 
-![새 게시물 만들기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046650249/original/kegwloD2OgemqgZ9pFoAysRvdg9mbjQixQ.png?1747265821)
+### 게시물을 대량으로 예약할 수 있나요?
+네, 할 수 있어요. 소셜 플래너는 파일 하나에 게시물 최대 90개까지 CSV와 XLSX 업로드를 지원해요. 가져오기 전에 오류로 표시된 항목을 모두 확인하고 수정하세요.
 
-- 소셜 계정, 콘텐츠 등을 선택하여 게시물 세부사항을 입력합니다.
+### Edit Video Thumbnail이 보이지 않아요.
+맞춤 썸네일은 지원되는 플랫폼과 게시물 유형에서만 쓸 수 있어요. 옵션이 보이지 않으면 최신 소셜 플래너 미디어 가이드라인을 확인하세요.
 
-- **나중에 저장**, **지금 게시**, **나중에 예약**, **승인 요청**, 또는 **반복 예약** 중에서 선택합니다.
-
-![게시물 옵션 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046650260/original/Ot5C35oxWg0AmzQncsA5Dfc9w3jjD0Rj-Q.png?1747265921)
-
-훌륭합니다! 콘텐츠가 모두 준비되었네요. 이제 더 많은 소셜 계정을 연결하여 경험을 더욱 향상시켜봅시다.
-
----
-
-## 미디어 추가, 미리보기, 썸네일 편집
-
-패널의 비디오 및 이미지 아이콘을 사용하여 미디어 라이브러리(Media Library)에서 이미지나 동영상을 추가할 수 있습니다. 동영상을 추가하면 왼쪽에 있는 작성기에서 미디어를 미리 볼 수 있어요.
-
-**팁:** 미디어를 교체하거나 편집하면서도 게시물의 미디어 순서에서 같은 위치를 유지할 수 있습니다. 이를 통해 레이아웃을 변경하지 않고도 파일을 바꿀 수 있어요.
-
-![미디어 추가 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064535499/original/3U-FILqZwZsOLe9Vdkn9t-Z_UNcY3QR09A.png?1770689786)
-
-동영상 썸네일을 편집하려면 동영상 썸네일의 연필 아이콘을 클릭하세요. (미디어 위에 마우스를 올려야 편집 옵션이 나타납니다.)
-
-![썸네일 편집 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064535505/original/l4R1nEIUhKq2EJ5dSIsMfekX_WTUfV1wVQ.png?1770689802)
-
-커스텀 썸네일 탭을 클릭하여 이미지를 업로드합니다.
-
-현재 커스텀 동영상 썸네일을 지원하는 플랫폼:
-
-1. Facebook 페이지
-2. Instagram 비즈니스 계정
-3. LinkedIn 프로필 및 페이지
-4. YouTube 동영상 및 쇼츠
-
-![커스텀 썸네일 업로드](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155064535684/original/K69dRSIOlKbJQPcdrQna2-R3EVCJatSeyQ.png?1770690314)
-
----
-
-## 더 많은 소셜 계정 연결하기
-
-소셜 존재감을 확장하고 싶으신가요? 한 곳에서 관리할 수 있도록 더 많은 소셜 미디어 계정을 쉽게 추가하세요:
-
-- **Settings(설정)** (톱니바퀴 아이콘)을 클릭합니다.
-
-- 연결하려는 추가 소셜 계정을 선택합니다.
-
-- **Connect Social(소셜 연결)**을 클릭하고 안내를 따릅니다.
-
-![추가 계정 연결](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155046650269/original/xzyt01nDaVJmMNWSUdduYmpA95dddsf4Dg.png?1747266021)
-
-완료되었습니다! 이제 여러 플랫폼을 손쉽게 관리하고 있어요.
-
----
-
-더 알아보기
-
-- [Facebook 페이지 연결하는 방법](../../10-마케팅/소셜-플래너/how-to-connect-to-your-facebook-page-s-.md)
-- [Facebook 게시 문제 해결 가이드](../../10-마케팅/소셜-플래너/facebook-publishing-troubleshooting-guide.md)
-- 소셜 플래너에서 Facebook 스토리 예약하는 방법
-- 소셜 플래너에서 Facebook 릴 게시하기
-
-즐거운 게시 되세요!
-
----
-*원문 최종 수정: Fri, 20 Feb, 2026 at 8:27 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### 일부 분석 데이터가 보이지 않아요.
+확인할 수 있는 지표와 리포팅 지연은 플랫폼, 계정 유형, 권한, 선택한 기간에 따라 달라요. 하이퍼클래스가 분석 권한을 새로 요청하면 계정을 다시 연결하세요.

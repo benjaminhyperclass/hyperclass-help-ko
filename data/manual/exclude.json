@@ -1,0 +1,25 @@
+{
+ "_why": "하이퍼클래스 고객에게 맞지 않는 원 플랫폼 회사 자체의 안내(제휴 프로그램·고객지원 요금제·가격표·법적 고지). 매뉴얼에 싣지 않고 월간 업데이트도 다시 만들지 않는다.",
+ "categories": [
+  "HighLevel Affiliates Program"
+ ],
+ "folders": [
+  "Billing Support",
+  "General Support Info",
+  "Legal",
+  "Premium Support Upgrade",
+  "Affiliates Program"
+ ],
+ "keep_slugs": [
+  "accessibility-enhancements-topbar-help-drawer",
+  "texas-sms-safeguard-one-toggle-block-for-sb-140",
+  "unified-reselling-experience-in-highlevel-wallet",
+  "wallet-auto-recharge",
+  "wallet-auto-recharge-smart-adjustment-and-cancellation"
+ ],
+ "extra_slugs": [
+  "highlevel-support-journey-what-to-expect-at-every-stage",
+  "how-to-enable-support-access-for-your-highlevel-account",
+  "how-to-set-up-affiliate-program-postbacks-to-run-automations-firstpromoter-webho"
+ ]
+}

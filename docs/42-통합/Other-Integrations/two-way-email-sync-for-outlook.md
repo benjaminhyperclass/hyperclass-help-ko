@@ -1,103 +1,147 @@
 ---
-
-번역일: 2026-04-09
-카테고리: 42-통합 > Other Integrations
+원문: /support/solutions/articles/48001229663-two-way-email-sync-for-outlook
+번역일: 2026-11-06
+카테고리: 42-통합
 ---
 
 # Outlook 양방향 이메일 동기화
 
-이메일 양방향 동기화는 CRM과 이메일 클라이언트 간에 이메일을 양방향으로 동기화하는 기능입니다. 한쪽 플랫폼에서 이메일을 보내거나 받거나 업데이트하면 자동으로 다른 쪽과 동기화되어, 관련된 모든 데이터가 양쪽에서 사용할 수 있도록 합니다. Outlook 양방향 동기화를 사용하면 사용자가 Outlook 계정을 CRM과 연결하여 양쪽 플랫폼 간에 이메일을 동기화할 수 있습니다.
+개인 Outlook 받은편지함과 하이퍼클래스를 양방향으로 연결하는 기능이에요. 지원되는 1:1 이메일 대화가 두 곳에서 똑같이 보여요. 하이퍼클래스에서 보낸 메시지는 Outlook에 나타나고, 기존 연락처의 답장과 이메일은 하이퍼클래스 **대화**에 동기화돼요. 시스템을 오가지 않아도 연락처와 주고받은 내역을 한곳에서 볼 수 있어요.
 
-#### 이 글에서 다루는 내용:
+## Outlook 양방향 이메일 동기화의 장점
 
-#### [Outlook 양방향 이메일 동기화 연결 방법](#outlook-양방향-이메일-동기화-연결-방법)
-
-#### [연결 단계](#연결-단계)
-
-#### [CRM과 이메일 계정 간 양방향 동기화 작동 원리](#crm과-이메일-계정-간-양방향-동기화-작동-원리)
-
-#### [기타 기능](#기타-기능)
-
-#### [양방향 동기화는 개별 이메일에만 작동하나요, 대량 이메일과 워크플로우에도 작동하나요?](#양방향-동기화는-개별-이메일에만-작동하나요-대량-이메일과-워크플로우에도-작동하나요)
-
-## Outlook 양방향 이메일 동기화 연결 방법
-
-# 연결 단계
-
-하위 계정에서 `Settings(설정) > My Profile(내 프로필)` 탭으로 가서 "Email (2-way sync)" 섹션으로 스크롤하세요.
-![Outlook 양방향 이메일 동기화 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48274395767/original/Rby05oCkzbYHyRC0wVO5O4aOWB8Qxw08AQ.png?1673362633)
-
-Outlook을 선택하고 이메일 제공업체를 선택한 후 Connect(연결)을 클릭하세요.
-![Outlook 연결 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48274396289/original/mBVWnL8bflbaxM8Djfy_UHCxlhpa9aYGtQ.png?1673362734)
-
-Outlook 이메일 ID 자격 증명을 입력하여 인증을 완료하세요.
-![Outlook 로그인 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48274396813/original/LD4N2tgQLSC-NRdaiZGUrm6eEE72i3r2YA.png?1673362821)
-
-![Microsoft 인증 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48286150045/original/2395BAOyhwzzqcDX-7ZUQXdm9mKz6fHR7w.png?1678347896)
-
-LeadConnector에 대해 요청된 권한을 승인하세요:
-
-![권한 승인 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48286150199/original/kGgkCc6_lLVmhqnQD4rLEctTCF9xVtGiQQ.png?1678347934)
-
-![권한 승인 완료](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48274401676/original/DNRjHYfFf17fEXfeXb-ypPjxirSlR7P5ZA.png?1673363630)
-
-`Settings(설정) > My Profile(내 프로필)`에서 "Email (2-way sync)" 섹션으로 스크롤하여 연결 상태에서 이메일을 확인하세요.
-
-![연결 완료 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48274407469/original/36-6kdo8xbItgNvL7sH3sbtwUlOAnuTfbQ.png?1673364584)
-
-## CRM과 이메일 계정 간 양방향 동기화 작동 원리
-
-양방향 동기화가 연결되면(Gmail 또는 Outlook):
-
-- CRM에서 이메일을 시작하면, 해당 이메일 스레드와 후속 메시지가 양쪽 플랫폼(CRM & Outlook) 간에 동기화됩니다.
-
-- 받은 편지함(Outlook)에서 CRM의 기존 연락처로부터 새 이메일을 받으면, 해당 이메일과 스레드의 후속 메시지가 자동으로 CRM에 동기화됩니다.
-- 받은 편지함에서 CRM에 존재하지 않는 연락처에게 새 이메일을 보내고 해당 이메일을 CRM과 동기화하고 싶다면, 작성 창의 Cc 또는 Bcc 필드에 BCC 주소를 사용하여 이메일을 보내세요. 이렇게 하면 CRM에 새 연락처가 생성되고 이메일이 양쪽 플랫폼 간에 동기화됩니다.
-
-참고사항:
-
-- 하위 계정 사용자이기도 한 연락처의 이메일은 동기화되지 않습니다. 종종 하위 계정 사용자가 다양한 목적으로 연락처로 추가되는데, 이러한 이메일은 기밀 정보를 포함할 수 있으므로 동기화되지 않습니다. 이메일 주소가 사용자에게 속하지 않는 경우, 위에서 언급한 대로 이메일이 동기화됩니다.
-
-- 위에서 언급한 기능이 원활히 작동하도록 Labs에서 'Outlook 2-way Sync'를 활성화했는지 확인하세요. LABS가 꺼져 있으면 CRM에서 시작된 이메일만 동기화되고 Auto BCC는 연락처를 동기화하지 않습니다.
-
-![Labs 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48274409947/original/nfYhNJX6kd_mnmRKWkhoz3S44-iW8-pTiA.png?1673365013)
-
-![Outlook 2-way Sync 활성화](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48274410786/original/O95R2YOy0ICNsr69vc64B2WeyxEaBLfNwQ.png?1673365182)
-
-이메일 스레드의 모든 후속 메시지(CRM에서 시작된)가 동기화됩니다. 이메일에서 보낸 발신 이메일이 CRM에 반영되기 시작하고 그 반대도 마찬가지입니다.
-![CRM 이메일 동기화](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48274411519/original/Qcf30hK4rYTieaYlqtiX7wPtH3YSk14exw.png?1673365274)
-
-![Outlook 이메일 동기화](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48274411984/original/iRhDXxDWcE5l-Tq60A1ApVfKpQYbnuowfw.png?1673365374)
-
-주의사항
-
-최대 3MB 크기의 첨부 파일이 이 동기화에서 작동하며, 이 크기보다 큰 첨부 파일은 메시지가 동기화되지 않게 합니다.
-**지원되는 파일 형식:** JPG,JPEG,PNG,MP4,MPEG,ZIP,RAR,PDF,DOC,DOCX,TXT
-
-## 기타 기능
-
-이메일 업데이트: 사용자가 이전 연결을 끊지 않고 연결된 이메일 ID를 다른 것으로 변경할 수 있게 해줍니다.
-
-![이메일 업데이트 기능](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48274412595/original/K7lc8soEvt0eZrmsM_N1Bi4SkEDNDfhIsA.png?1673365506)
-
-CRM에서 새로운 발신 이메일이 새로 추가된 이메일 주소와 동기화를 시작합니다. 이전에 연결된 이메일 ID의 향후 메시지(같은 스레드)는 CRM과 개인 이메일 간 동기화가 중단됩니다.
-
-이메일 연결 해제: 연결을 해제하고 CRM과의 동기화를 중단합니다. 연결이 해제되면 이메일이나 메시지가 양쪽 플랫폼 간에 동기화되지 않습니다.
-
-![이메일 연결 해제](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48274412884/original/-1hFYB1PHiPT0S6vhujtn2BPxSBXrHPIAA.png?1673365574)
-
-## 양방향 동기화는 개별 이메일에만 작동하나요, 대량 이메일과 워크플로우에도 작동하나요?
-
-다양한 유형의 이메일에 대한 발신자 도메인 매핑 작동 방식:
-
-개별 이메일: 개인 이메일 계정(Outlook)을 연결하면, 개별 이메일의 경우 사용자가 보내는 이메일의 발신자 도메인으로 Outlook 이메일 ID가 고려됩니다.
-
-대량 이메일: 사용자가 (양방향 동기화 설정 후) "From Field"에 자신의 이메일 ID를 입력하면, 대량 이메일의 발신자 도메인으로 사용자 이메일 ID가 고려됩니다. 필드가 비어있으면 하위 계정 수준 제공업체가 발신자 도메인으로 고려됩니다.
-
-대량 이메일: 사용자가 연결된 이메일 ID(Outlook)와 다른 이메일 ID를 입력하면, 하위 계정 수준 제공업체가 발신자 도메인으로 고려됩니다.
-
-워크플로우 & 자동화: 이메일은 계속해서 하위 계정 수준 제공업체에서 발송됩니다. 이는 받은 편지함과 동기화되지 않습니다.
+- 대화 한곳에서 보기: 지원되는 Outlook 이메일 대화를 다른 연락처 활동과 함께 하이퍼클래스에서 볼 수 있어요.
+- 양방향 소통: 하이퍼클래스에서 개별 이메일을 보내고, 지원되는 답장을 Outlook과 동기화할 수 있어요.
+- 기존 연락처 동기화: 하이퍼클래스에 이미 있는 연락처가 Outlook으로 보낸 이메일이 **대화**에 자동으로 나타날 수 있어요.
+- BCC로 연락처 만들기: 아직 연락처가 아닌 사람에게 Outlook에서 이메일을 보낼 때 BCC를 쓰면, 하이퍼클래스에 새 연락처와 대화가 만들어져요.
+- 내 계정으로 발송: 지원되는 1:1 이메일은 서브 계정의 이메일 제공업체 대신 연결한 Outlook 계정으로 보내요.
 
 ---
-*원문 최종 수정: Mon, 26 Aug, 2024 at 11:19 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+
+## Outlook 양방향 이메일 동기화 연결하기
+
+1. 하이퍼클래스에서 해당 서브 계정을 열고 **설정 > 내 프로필**로 이동하세요.
+2. **이메일 (양방향 동기화)** 섹션까지 스크롤한 다음 **Outlook**을 선택하고 **연결**을 클릭하세요.
+
+   ![설정 > 내 프로필에서 Outlook 연결하는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155079018246/original/UF8TDp8T6iMMbyzlsrNttM4Z7RiKf3nNAA.gif?1787321044)
+
+3. 연결할 Outlook 또는 Microsoft 365 계정으로 로그인하고, 하이퍼클래스가 요청하는 권한을 확인한 뒤 승인하세요.
+
+   ![Outlook 계정 로그인 및 권한 승인 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155079026807/original/iduvTs9ZPGNj5NxZg21qkobvDTumG9TE-g.png?1787325751)
+
+4. **설정 > 내 프로필 > 이메일 (양방향 동기화)** 로 돌아와서 Outlook 이메일 주소가 연결된 상태로 표시되는지 확인하세요.
+
+**설정 > 내 프로필**에서 **이메일 (양방향 동기화)** 섹션까지 스크롤하면 연결 상태를 확인할 수 있어요.
+
+![이메일 (양방향 동기화) 섹션의 연결 상태](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155079027358/original/jwODgjOBbOIbGeeUY6bjdPvr6qIjm2ix4g.png?1787325925)
+
+---
+
+## Outlook 양방향 이메일 동기화가 작동하는 방식
+
+메시지가 대화에 어떤 경로로 들어왔는지에 따라 자동 동기화 여부가 달라져요. 아래 경우를 알아 두면 Outlook에는 메시지가 보이는데 하이퍼클래스에는 바로 나타나지 않을 때 당황하지 않아도 돼요.
+
+### 하이퍼클래스에서 시작한 이메일
+
+연결한 Outlook 계정으로 하이퍼클래스에서 개별 이메일을 보내면, 그 이메일 스레드가 하이퍼클래스와 Outlook 사이에서 계속 동기화될 수 있어요. 같은 스레드에서 이어지는 지원 가능한 답장도 양쪽에 계속 나타날 수 있어요.
+
+![하이퍼클래스에서 보낸 이메일 스레드](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155079028052/original/9jKWVxztSXpqPYq39PZArS1ggHZ7A1of3Q.png?1787326168)
+
+### 기존 하이퍼클래스 연락처에게서 받은 이메일
+
+하이퍼클래스에 이미 있는 연락처가 연결된 Outlook 받은편지함으로 이메일을 보내면, 그 메시지가 하이퍼클래스에 있는 해당 연락처의 대화로 동기화될 수 있어요. 지원되는 스레드의 답장도 두 플랫폼 사이에서 계속 동기화될 수 있어요.
+
+같은 서브 계정의 사용자이기도 한 연락처가 보낸 이메일은 동기화되지 않아요. 하이퍼클래스 사용자끼리 주고받는, 기밀일 수 있는 내용을 보호하기 위해서예요.
+
+### Outlook에서 새 연락처에게 보낸 이메일
+
+하이퍼클래스 연락처가 아닌 사람과 주고받는 콜드 수신·발신 이메일은 Outlook 양방향 동기화로 모두 안정적으로 가져오지는 못해요. 아직 연락처가 아닌 사람에게 Outlook에서 새 이메일을 보낼 때는 Cc 또는 Bcc 입력란에 하이퍼클래스 BCC 주소를 넣으세요. 그러면 하이퍼클래스에 연락처와 대화가 만들어지고, 이후 지원되는 소통이 동기화될 수 있어요.
+
+1. 연락처를 동기화하세요.
+
+![연락처 동기화 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48274410786/original/O95R2YOy0ICNsr69vc64B2WeyxEaBLfNwQ.png?1673365182)
+
+이후 하이퍼클래스에서 시작한 이메일 스레드의 모든 메시지가 동기화돼요. 내 이메일에서 보낸 발신 이메일은 하이퍼클래스에도 나타나고, 반대 방향도 마찬가지예요.
+
+![동기화된 이메일 스레드 화면 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48274411519/original/Qcf30hK4rYTieaYlqtiX7wPtH3YSk14exw.png?1673365274)
+![동기화된 이메일 스레드 화면 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48274411984/original/iRhDXxDWcE5l-Tq60A1ApVfKpQYbnuowfw.png?1673365374)
+
+{% hint style="info" %}
+3MB 이하의 첨부파일은 동기화되지만, 이보다 큰 첨부파일이 있으면 그 메시지는 동기화되지 않아요.
+
+지원되는 파일 형식: JPG, JPEG, PNG, MP4, MPEG, ZIP, RAR, PDF, DOC, DOCX, TXT
+{% endhint %}
+
+---
+
+## 그 밖의 기능
+
+**Update Email**(이메일 업데이트): 기존 연결을 끊지 않고 연결된 이메일 주소를 다른 주소로 바꿀 수 있어요.
+
+![Update Email 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48274412595/original/K7lc8soEvt0eZrmsM_N1Bi4SkEDNDfhIsA.png?1673365506)
+
+하이퍼클래스에서 새로 보내는 발신 이메일은 새로 추가한 이메일 주소로 동기화돼요. 이전에 연결했던 이메일 주소에서 같은 스레드로 오는 이후 메시지는 하이퍼클래스와 개인 이메일 사이에서 더 이상 동기화되지 않아요.
+
+**Disconnect Email**(이메일 연결 해제): 연결을 끊고 하이퍼클래스와의 동기화를 멈춰요. 연결을 해제하면 두 플랫폼 사이에서 이메일과 메시지가 동기화되지 않아요.
+
+![Disconnect Email 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48274412884/original/-1hFYB1PHiPT0S6vhujtn2BPxSBXrHPIAA.png?1673365574)
+
+---
+
+## 이메일 유형과 발송 방식
+
+Outlook 양방향 이메일 동기화는 주로 직접 주고받는 1:1 대화를 위한 기능이에요. 대량 이메일과 자동 이메일은 발송 방식이 달라서, 개인 Outlook 대화처럼 동작하지 않아요.
+
+- 개별 이메일: 지원되는 1:1 이메일은 연결한 Outlook 계정으로 보내고, 개인 받은편지함과 동기화할 수 있어요.
+- 대량 이메일: 대량 이메일 발송은 개인 양방향 동기화와 별도로 처리돼요. 설정된 서브 계정 이메일 제공업체를 사용할 수 있어요.
+- 워크플로우·자동화 이메일: 자동 이메일은 사용자의 개인 Outlook 양방향 동기화가 아니라, 설정된 서브 계정 수준의 제공업체로 보내요. 이런 메시지는 개별 이메일처럼 Outlook 받은편지함과 동기화되지 않아요.
+
+---
+
+## 문제 해결
+
+### 내 프로필이 보이지 않아요
+
+**내 프로필** 탭은 지금 보고 있는 서브 계정에 사용자가 추가되어 있을 때 나타나요. **내 프로필**이 보이지 않으면 아래를 확인해 보세요.
+
+1. 에이전시 보기가 아니라 원하는 서브 계정 안에 있는지 확인하세요.
+2. 내 사용자가 그 서브 계정에 추가되어 있는지 확인하세요.
+3. 내 접근 권한 수준에서 가능하다면, 그 서브 계정 사용자로 **로그인**을 사용해 보세요.
+4. **설정**으로 돌아가 **내 프로필**이 보이는지 다시 확인하세요.
+
+---
+
+## Outlook 양방향 동기화의 제한 사항
+
+- 서브 계정 사용자이기도 한 연락처의 이메일은 사용자끼리 주고받는 기밀 내용일 수 있어서 동기화되지 않아요.
+- Gmail/Outlook 양방향 동기화는 모르는 발신자가 처음 보낸 콜드 수신 이메일을 안정적으로 가져오지 못해요. 이 구성에서는 기존 연락처에게서 온 수신 이메일이 지원 대상이에요.
+- 워크플로우·자동화 이메일은 개인 Outlook 연결이 아니라 설정된 서브 계정 이메일 제공업체로 보내요.
+- 동기화된 계정을 제거하거나 연결을 해제하면 새 동기화는 멈추지만, 이미 동기화된 이메일은 그대로 남아요.
+- 개인 받은편지함을 연결하기 전의 이전 메시지는 양방향 동기화로 가져오지 않아요.
+
+---
+
+## 자주 묻는 질문
+
+### Outlook을 연결하면 예전 이메일도 가져오나요?
+
+아니요. 연동하기 전에 주고받은 메시지는 소급해서 동기화되지 않아요. 연결한 이후의 지원되는 대화만 동기화돼요.
+
+### 내 프로필이 안 보여요
+
+**내 프로필** 탭은 지금 보고 있는 서브 계정에 사용자가 추가되어 있을 때 나타나요. Microsoft 권한 문제를 살펴보기 전에, 올바른 서브 계정에 들어와 있는지, 내 사용자에게 그 서브 계정의 접근 권한이 있는지 먼저 확인하세요.
+
+### **Reconnect**(다시 연결)가 보이지 않으면 어떻게 하나요?
+
+올바른 서브 계정에 들어와 있는지, 그리고 **설정 > 이메일 서비스**에 Outlook 메일함이 보이는지 확인하세요. 메일함은 있는데도 다시 연결하거나 계정을 관리하는 버튼이 보이지 않는다면, Microsoft 권한을 계속 다시 승인하지 말고 하이퍼클래스 고객지원에 문의하세요.
+
+### 하이퍼클래스 고객지원에는 언제 문의하나요?
+
+다시 연결해도 동기화가 복구되지 않거나, 올바른 Microsoft 계정과 권한을 확인한 뒤에도 같은 권한 오류가 계속되거나, 필요한 하이퍼클래스 화면 요소가 보이지 않을 때 하이퍼클래스 고객지원에 문의하세요. 문의할 때는 아래 내용을 함께 알려 주세요.
+
+- 문제가 생긴 이메일 주소
+- 오류 내용
+- 스크린샷
+- 이메일 제공업체
+- 문제가 시작된 대략적인 시간
+- 이미 해 본 문제 해결 방법

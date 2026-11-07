@@ -1,90 +1,74 @@
 ---
-번역일: 2026-04-07T00:00:00.000Z
-카테고리: 07-워크플로우 > Communication Workflow Actions
+원문: /support/solutions/articles/155000004661-workflow-action-facebook-interactive-messenger
+번역일: 2026-11-07
+카테고리: 07-워크플로우
 ---
 
-# 워크플로우 액션 - 페이스북 인터랙티브 메신저
+# 워크플로우 액션 — Facebook Interactive Messenger(Facebook 인터랙티브 메신저)
 
-워크플로우의 페이스북 인터랙티브 메신저 액션을 통해 페이스북 메신저로 자동 응답을 보낼 수 있습니다.
+**Facebook Interactive Messenger**(Facebook 인터랙티브 메신저) 액션을 쓰면 워크플로우에서 Facebook Messenger로 자동 답장을 보낼 수 있어요. 버튼과 빠른 답장을 넣어서 대화를 원하는 방향으로 이끌 수도 있어요.
 
-***
+## Facebook Interactive Messenger란?
 
-**목차**
+**Facebook Interactive Messenger** 액션은 Messenger 대화를 자동화하는 워크플로우 액션이에요. 버튼, 빠른 답장 같은 인터랙티브 요소도 함께 넣을 수 있어요. Facebook 댓글 트리거나 메시지 트리거와 함께 사용하세요.
 
-* [페이스북 인터랙티브 메신저란?](workflow-action-facebook-interactive-messenger.md#페이스북-인터랙티브-메신저란)
-* [페이스북 인터랙티브 메신저 찾는 방법](workflow-action-facebook-interactive-messenger.md#페이스북-인터랙티브-메신저-찾는-방법)
-* [구성 요소](workflow-action-facebook-interactive-messenger.md#구성-요소)
-* [구성 요소 - 버튼과 빠른 답장](workflow-action-facebook-interactive-messenger.md#구성-요소-버튼과-빠른-답장)
+{% hint style="info" %}
+**Facebook Interactive Messenger** 액션은 Meta의 24시간 메시지 정책을 따라요. 발신 메시지는 연락처가 내 Facebook 페이지와 마지막으로 상호작용한 때부터 24시간 안에만 전달할 수 있어요. 그 시간 안에 연락처가 다시 상호작용하지 않으면 Facebook 플랫폼의 제한 때문에 워크플로우 메시지가 전달되지 않을 수 있어요.
+{% endhint %}
 
-***
+## Facebook Interactive Messenger 위치
 
-## **페이스북 인터랙티브 메신저란?**
+**자동화 > 워크플로우**로 이동해 워크플로우를 열어요. 워크플로우 빌더에서 **Actions**(액션) > **Communication**(커뮤니케이션) > **Facebook Interactive Messenger**를 선택하세요.
 
-워크플로우 액션인 페이스북 인터랙티브 메신저를 사용하면 메신저 대화를 자동화하고 버튼이나 빠른 답장 같은 인터랙티브 요소를 포함할 수 있습니다. 이 기능은 페이스북 댓글 및/또는 메시지 트리거와 함께 사용하세요.
+![워크플로우 빌더의 액션 목록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042049966/original/ForSlQcQLfG3nqjQ56LOm8xKoQzkkEu8YA.png?1740171969)
 
-**참고**: 페이스북 인터랙티브 메신저 워크플로우 액션은 메타의 24시간 메시징 정책을 따릅니다. 아웃바운드 메시지는 연락처가 페이스북 페이지와 마지막으로 상호작용한 후 24시간 이내에만 전달됩니다. 해당 시간 내에 연락처가 다시 상호작용하지 않으면 페이스북 플랫폼 제한으로 인해 워크플로우 메시지가 전달되지 않을 수 있습니다.
+![Facebook Interactive Messenger 액션 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042049998/original/0X2-Um9xjynf-LTDcSkU0iC3L2c9dkanXg.png?1740172057)
 
-***
+## 구성 요소
 
-## 페이스북 인터랙티브 메신저 찾는 방법
+**Facebook Interactive Messenger** 액션은 다음 요소로 구성돼요.
 
-Automation(자동화) > Workflows(워크플로우) > Workflow Builder(워크플로우 빌더) > Actions(액션) > Communication(커뮤니케이션) > Facebook Interactive Messenger(페이스북 인터랙티브 메신저)로 이동하세요.
+1. **Reply Type**(답장 유형)
+   1. **Reply to Comment via DM**(DM으로 댓글에 답장): 트리거가 새 댓글이고, 그 댓글을 계기로 DM 대화를 시작하고 싶을 때 선택해요.
+   2. **Reply to DM**(DM에 답장): 받은 DM에 답장할 때 선택해요.
+2. **Templates**(템플릿): **마케팅 > 스니펫**에 만들어 둔 스니펫이에요.
+3. **Message**(메시지)
+   1. **Body**(본문): 메시지를 작성하는 입력 영역이에요.
+   2. **Custom Values**(커스텀 값): **설정 > 커스텀 값**에서 만든 커스텀 값을 메시지에 넣을 수 있어요.
+   3. **Trigger Links**(트리거 링크): **마케팅 > 트리거 링크**에서 만든 트리거 링크를 메시지에 넣을 수 있어요.
+4. **Add Attachment**(첨부파일 추가): 내 컴퓨터에서 파일을 올려 메시지에 첨부해요.
+5. **Add file through URL**(URL을 통해 파일 추가): 파일의 URL을 입력해 메시지에 첨부해요.
+6. **Add New Button**(새 버튼 추가): 대화를 이끌어 갈 인터랙티브 버튼을 추가해요.
+7. **Add Quick Reply**(빠른 답장 추가): 대화를 이끌어 갈 인터랙티브 빠른 답장을 추가해요.
+8. **Wait Step**(대기 단계): 메시지, 버튼, 파일, 빠른 답장 조합을 보낸 뒤 기본 분기(default branch)로 넘어가기까지의 시간을 설정해요.
 
-![워크플로우 액션에서 페이스북 인터랙티브 메신저 찾기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042049966/original/ForSlQcQLfG3nqjQ56LOm8xKoQzkkEu8YA.png?1740171969)
+![Facebook Interactive Messenger 액션의 구성 요소 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042050059/original/WDUSNTgmom1svtAY3mjyX-MavOIC4GQZcw.png?1740172170)
 
-![페이스북 인터랙티브 메신저 액션 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042049998/original/0X2-Um9xjynf-LTDcSkU0iC3L2c9dkanXg.png?1740172057)
+![Facebook Interactive Messenger 액션의 구성 요소 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042050085/original/pY4KEZFyyT1n31Vzhz2EINhDW5HnEtcqFg.png?1740172256)
 
-***
+## 구성 요소 — 버튼과 빠른 답장
 
-## **구성 요소**
+버튼(**Buttons**)과 빠른 답장(**Quick Replies**)은 이 액션을 "인터랙티브"하게 만드는 핵심 요소예요. 둘을 쓰면 대화를 미리 정해 둔 경로로 안내할 수 있어요. 버튼과 빠른 답장은 워크플로우에 같은 분기를 만들어요. 다만 쓰임새가 조금 달라요.
 
-페이스북 인터랙티브 메신저의 여러 구성 요소가 있습니다:
+**Buttons**는 보통 계속 남아 있어야 하는 동작에 써요. 링크로 이동하기, 전화 걸기 화면 열기, 특정 워크플로우 분기 실행하기 같은 동작을 할 수 있어요. 사용자가 눌러도 버튼은 계속 보여요. 버튼은 3개까지 추가할 수 있어요.
 
-* Reply Type(응답 유형): Reply to Comment via DM(댓글에 DM으로 답장): 트리거가 새 댓글이고 DM 대화를 만들고 싶을 때 이 옵션을 사용하세요.
-* Reply to DM(DM으로 답장): DM에 응답할 때 이 옵션을 사용하세요.
-* Templates(템플릿): Marketing(마케팅) > Snippets(스니펫)의 [스니펫](../../10-마케팅/text-snippets-templates-.md)입니다.
-* Message(메시지): Body(본문): 메시지 작성 도구입니다.
-* Custom Values(커스텀 값): Settings(설정) > Custom Values(커스텀 값)에서 만든 [커스텀 값](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/23-%EB%A0%88%EA%B1%B0%EC%8B%9C-%EC%9E%90%EB%8F%99%ED%99%94/Logic-&-Fulfillment/how-to-use-custom-values.md)을 삽입할 수 있습니다.
-* Trigger Links(트리거 링크): Marketing(마케팅) > Trigger Links(트리거 링크)에서 만든 [트리거 링크](../../10-마케팅/trigger-links-overview.md)를 삽입할 수 있습니다.
-* Add Attachment(첨부 파일 추가): 컴퓨터에서 파일을 업로드하여 메시지에 첨부합니다.
-* Add file through URL(URL로 파일 추가): 파일 URL을 입력하여 메시지에 첨부합니다.
-* Add New Button(새 버튼 추가): 대화를 가이드하는 인터랙티브 버튼을 추가합니다.
-* Add Quick Reply(빠른 답장 추가): 대화를 가이드하는 인터랙티브 빠른 답장을 추가합니다.
-* Wait Step(대기 단계): 메시지-버튼-파일-빠른 답장 조합을 보낸 후 기본 브랜치로 이동하기까지의 시간을 설정합니다.
+**Quick Replies**는 한 번 탭으로 답할 수 있는 선택지를 보여 주며 대화를 안내해요. 사용자가 하나를 선택하면 사라져서 대화가 간결하게 이어져요. 빠른 답장은 최대 13개까지 추가할 수 있어요.
 
-![페이스북 인터랙티브 메신저 구성 요소 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042050059/original/WDUSNTgmom1svtAY3mjyX-MavOIC4GQZcw.png?1740172170)
+{% hint style="info" %}
+**Facebook Interactive Messenger** 액션에서는 한 액션 안에 Buttons, Quick Replies, 파일을 함께 넣을 수 있어요. Instagram Interactive Messenger에서는 메시지 하나에 버튼과 빠른 답장 중 하나만 넣을 수 있어요. 빠른 답장은 같은 메시지에 첨부파일이 없을 때만 추가할 수 있어요.
+{% endhint %}
 
-![페이스북 인터랙티브 메신저 설정 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042050085/original/pY4KEZFyyT1n31Vzhz2EINhDW5HnEtcqFg.png?1740172256)
+구성 요소는 다음과 같아요.
 
-***
+1. **Button**의 텍스트: 대화에 표시되는 텍스트이자 워크플로우에 표시되는 레이블이에요.
+2. **Button**의 동작(action)
+   1. **Open Website**(웹사이트 열기): URL을 추가하면 사용자가 버튼을 눌렀을 때 새 탭에서 그 URL이 열려요. 대화에는 영향이 없고, 사용자가 대화를 다시 스크롤해 올라가도 버튼은 계속 쓸 수 있어요.
+   2. **Call Number**(전화 걸기): 전화번호를 추가하면 사용자가 버튼을 눌렀을 때 전화 걸기 화면이 열려요. 대화에는 영향이 없고, 사용자가 대화를 다시 스크롤해 올라가도 버튼은 계속 쓸 수 있어요.
+   3. **Perform Action**(액션 실행): 특정 이벤트는 없어요. 워크플로우 분기만 만들고, 그 분기의 다음 액션으로 넘어가요.
+3. **Quick Reply**의 레이블: 워크플로우에 표시되는 레이블이에요.
+4. **Quick Reply**의 텍스트: 대화에 표시되는 텍스트예요.
+5. **Button** 분기 예시예요.
+6. 체크리스트를 보내려고 또 다른 **Interactive Messenger** 액션을 넣은 **Button** 분기 예시예요.
+7. 체크리스트를 보내는 또 다른 **Interactive Messenger** 액션이에요.
 
-## 구성 요소 - 버튼과 빠른 답장
-
-버튼과 빠른 답장은 이 액션을 "인터랙티브"하게 만드는 핵심 요소입니다. 미리 정의된 경로로 대화를 유도할 수 있습니다. 버튼과 빠른 답장 모두 워크플로우에서 동일한 브랜치를 생성하지만, 용도가 약간 다릅니다.
-
-**버튼**은 일반적으로 **지속적인** 액션에 사용되며 링크 리디렉션, 다이얼러 열기, 특정 워크플로우 브랜치 트리거 등의 작업을 수행할 수 있습니다. 사용자가 상호작용한 후에도 **계속 표시됩니다**. 최대 3개의 버튼을 추가할 수 있습니다.
-
-반면 **빠른 답장**은 원터치 응답 옵션을 제공하여 대화를 **가이드**하도록 설계되었습니다. 사용자가 하나를 선택하면 **사라져서** 대화를 집중되고 간소하게 유지합니다. 최대 13개의 빠른 답장을 추가할 수 있습니다.
-
-이 페이스북 인터랙티브 메신저 액션에서는 하나의 액션에 버튼, 빠른 답장, 파일을 함께 추가할 수 있습니다. 인스타그램 인터랙티브 메신저에서는 메시지에 버튼 또는 빠른 답장 중 하나만 추가할 수 있습니다. 빠른 답장은 같은 메시지에 첨부 파일이 없을 때만 추가할 수 있습니다.
-
-구성 요소:
-
-* Button(버튼): 대화에 표시되는 텍스트와 워크플로우의 라벨입니다.
-* Button(버튼): 액션.
-
-Open Website(웹사이트 열기): URL을 추가하면 사용자가 클릭할 때 새 탭에서 URL이 열리고, 대화에는 영향을 주지 않으며, 사용자가 다시 스크롤해서 돌아와도 버튼이 활성 상태로 유지됩니다.
-
-* Call Number(전화번호 호출): 전화번호를 추가하면 사용자가 클릭할 때 다이얼러가 열리고, 대화에는 영향을 주지 않으며, 사용자가 다시 스크롤해서 돌아와도 버튼이 활성 상태로 유지됩니다.
-* Perform Action(액션 수행): 특별한 이벤트 없이 워크플로우 브랜치만 생성하고 해당 브랜치의 다음 워크플로우 액션으로 이동합니다.
-* Quick Reply(빠른 답장): 워크플로우의 라벨입니다.
-* Quick Reply(빠른 답장): 대화에 표시되는 텍스트입니다.
-* 버튼 브랜치 예시.
-* 체크리스트를 전달하기 위한 다른 인터랙티브 메신저 액션이 있는 버튼 브랜치 예시.
-* 체크리스트를 전달하는 다른 인터랙티브 메신저 액션.
-
-![버튼과 빠른 답장 설정 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042050446/original/cy30U_AmVK8i8NErz_IXGLxisClF59X_sw.png?1740173446)
-
-***
-
-_원문 최종 수정: 2026-03-05_ _Hyperclass 사용 가이드 — hyperclass.ai_
+![버튼과 빠른 답장 설정 및 분기 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042050446/original/cy30U_AmVK8i8NErz_IXGLxisClF59X_sw.png?1740173446)

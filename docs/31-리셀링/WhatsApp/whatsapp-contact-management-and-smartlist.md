@@ -1,145 +1,135 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 31-리셀링 > WhatsApp
+원문: /support/solutions/articles/155000002066-whatsapp-contact-management-and-smartlist
+번역일: 2026-11-06
+카테고리: 31-리셀링
 ---
 
-# 왓츠앱 연락처 관리 및 스마트 리스트
+# 유효한 WhatsApp 필드로 연락처 관리하고 스마트 리스트 만들기
 
-새로운 기능을 통해 특정 연락처가 왓츠앱을 사용하는지 확인할 수 있습니다. 이 필드를 활용하여 유효한 왓츠앱 번호를 가진 연락처의 스마트 리스트를 만들어 전체적인 메시지 전달률을 높일 수 있어요.
+**유효한 WhatsApp** 연락처 필드를 쓰면 연락처가 WhatsApp을 쓰는지 확인할 수 있어요. 이 필드로 WhatsApp 번호가 유효한 연락처만 모아 스마트 리스트를 만들면 메시지 전달률을 높일 수 있어요.
 
----
+## 연락처 수준의 유효한 WhatsApp 필드
 
-## 연락처 레벨의 "유효한 왓츠앱" 필드 소개
+연락처 수준에 **유효한 WhatsApp** 필드가 새로 생겼어요. 이 필드로 연락처의 WhatsApp 상태를 더 쉽게 확인할 수 있어요. 연락처의 전화번호가 WhatsApp에서 활성 상태인지 알 수 있어서, 더 정확하게 대상을 정해 소통할 수 있어요.
 
-연락처의 왓츠앱 상태를 더욱 효율적으로 파악할 수 있도록 연락처 레벨에 "유효한 왓츠앱(Valid WhatsApp)" 필드를 새롭게 추가했습니다. 이 기능은 연락처의 전화번호가 왓츠앱에서 활성화되어 있는지 명확한 인사이트를 제공하여, 더욱 원활하고 타겟팅된 커뮤니케이션을 가능하게 합니다.
+## 유효한 WhatsApp 필드의 상태
 
-## "유효한 왓츠앱" 필드 이해하기
+**유효한 WhatsApp** 필드는 연락처 전화번호의 WhatsApp 사용 여부를 보여 줘요. 상태는 세 가지예요.
 
-"유효한 왓츠앱" 필드는 연락처 전화번호의 왓츠앱 사용 가능 여부를 판단하는 데 도움을 줍니다. 세 가지 상태로 구분됩니다:
+- **유효함**: 전화번호가 WhatsApp에서 활성 상태예요. 이 연락처에 메시지를 보낼 수 있어요.
+- **무효**: 전화번호가 WhatsApp에 없어요. 이 연락처는 WhatsApp 메시지를 받을 수 없어요.
+- **검증되지 않음**: 전화번호가 WhatsApp에서 활성 상태인지 아직 확인되지 않았어요. 메시지를 보내기 전에 추가 확인이 필요할 수 있어요.
 
-1. **유효함(Is Valid)** – 전화번호가 왓츠앱에서 활성화되어 있어, 해당 연락처에게 성공적으로 메시지를 보낼 수 있습니다.
+## 이 기능으로 할 수 있는 일
 
-2. **무효함(Is Invalid)** – 전화번호가 왓츠앱에서 사용 불가능한 상태로, 연락처가 왓츠앱 메시지를 받을 수 없습니다.
+**유효한 WhatsApp** 필터를 쓰면 다음을 할 수 있어요.
 
-3. **검증되지 않음(Is Not Validated)** – 시스템이 아직 전화번호의 왓츠앱 활성화 여부를 확인하지 못한 상태입니다. 메시지를 보내기 전에 추가 검증이 필요할 수 있습니다.
+- 활성 WhatsApp 사용자에게만 메시지를 보내요.
+- 비활성 번호나 WhatsApp을 쓰지 않는 번호로 보내지 않아서 전송 실패를 줄여요.
+- 메시지를 보내기 전에 추가 확인이 필요한 번호를 찾아내요.
 
-## 이 기능 사용하는 방법
+이 기능은 작업 효율, 메시지 전달률, 연락처와의 전반적인 소통을 높이는 데 도움이 돼요.
 
-"유효한 왓츠앱" 필터를 통해 비즈니스는 다음과 같은 작업을 할 수 있습니다:
+## 유효한 WhatsApp 필드는 어떻게 업데이트되나요?
 
-✔ 활성 왓츠앱 사용자에게만 메시지를 보내도록 보장  
-✔ 비활성화되었거나 왓츠앱을 사용하지 않는 번호로의 메시지 발송을 방지하여 전달 실패 시도 감소  
-✔ 메시지 발송 전 추가 검증이 필요한 번호 식별  
+### WhatsApp에서 메시지가 정상적으로 전달됐을 때
 
-이 기능은 효율성, 메시지 전달률, 연락처와의 전반적인 참여도를 향상시키는 데 도움을 줍니다.
+메시지가 정상적으로 전달되면 시스템이 해당 연락처를 자동으로 **유효함**으로 표시해요.
 
----
+### 메시지 전달에 실패했거나 Meta 쪽 문제가 생겼을 때
 
-## 유효한 왓츠앱 필드 업데이트 방법
+메시지 전달에 실패하거나 Meta 쪽에 문제가 생기면 해당 연락처는 **무효**로 표시돼요.
 
-### 1. 왓츠앱에서 메시지가 성공적으로 전달된 경우
+### 연락처가 먼저 WhatsApp 메시지를 보냈을 때
 
-메시지가 성공적으로 전달되면, 시스템이 자동으로 연락처를 "**유효함**"으로 표시합니다.
+연락처가 먼저 WhatsApp 메시지를 보내면 상태가 **유효함**으로 바뀌어요. 실시간으로 확인되는 거예요. 연락처가 WhatsApp으로 직접 연락했으니 그 번호가 유효하다는 뜻이에요.
 
-### 2. 메시지 전달이 실패하거나 Meta 이슈가 발생한 경우:
+### WhatsApp으로 나눈 대화가 없을 때
 
-메시지 전달이 실패하거나 Meta 관련 문제가 발생한 경우, 연락처는 "무효함"으로 표시됩니다.
+해당 연락처와 WhatsApp으로 나눈 대화가 없으면 상태는 **검증되지 않음**으로 유지돼요. 이후에 상호작용이 생기면 바뀌어요.
 
-### 3. 연락처가 왓츠앱 메시지를 먼저 보낸 경우:
+## 유효한 WhatsApp 필드 활용하기
 
-연락처가 왓츠앱 메시지를 먼저 보내면, 실시간 검증을 통해 상태가 "유효함"으로 업데이트됩니다. 이는 연락처가 왓츠앱을 통해 적극적으로 참여했음을 나타내며, 해당 번호의 유효성을 확인해 줍니다.
+### 연락처를 효율적으로 필터링하기
 
-### 4. 왓츠앱으로 대화가 없는 경우:
+필터 옵션으로 WhatsApp 상태에 따라 연락처를 나눠 볼 수 있어요. 활성 WhatsApp 사용자에게 연락하고 싶다면 **유효함**으로 필터링하세요.
 
-특정 연락처와 왓츠앱으로 대화가 없다면, 추가 상호작용이 있을 때까지 "검증되지 않음" 상태로 유지됩니다.
+### 스마트 리스트 최적화하기
 
----
+스마트 리스트에 **유효한 WhatsApp** 필드를 넣으면 대상에 맞는 소통 전략을 세울 수 있어요.
 
-## 유효한 왓츠앱 필드 활용 방법:
+### 더 깊은 인사이트 얻기
 
-**연락처 효율적으로 필터링:**
+WhatsApp 연락처의 반응 정도와 참여 수준을 파악할 수 있어요.
 
-필터 옵션을 활용하여 왓츠앱 상태를 기준으로 연락처를 분류하세요. 타겟팅된 아웃리치를 위해서는 "유효함" 상태의 연락처를 필터링하여 활성 왓츠앱 사용자에게 접근하세요.
+## 연락처 페이지에 유효한 WhatsApp 열 추가하기
 
-**스마트리스트 최적화:**
+1. **연락처** 탭으로 이동하세요.
 
-맞춤형 커뮤니케이션 전략을 위해 "유효한 왓츠앱" 필드를 통합하여 스마트리스트를 최적화하세요.
+   ![연락처 탭 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023274480/original/UPFW41wUhPttWj5Fq5fkdZLvGy1UbV9bug.png?1711007073)
 
-**향상된 인사이트:**
+2. **Columns**(열)를 클릭하고 **유효한 WhatsApp**을 선택하세요.
 
-왓츠앱 연락처의 반응성과 참여 수준에 대한 귀중한 인사이트를 얻으세요.
+   ![열 목록에서 유효한 WhatsApp 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023274764/original/hbwGJwU9BPdyEDltBNgWk_LXYfx_ZCSsHg.png?1711007328)
 
----
+## 무효 연락처를 제외한 스마트 리스트 만들기
 
-## 연락처 페이지에 유효한 왓츠앱 컬럼 추가하는 방법
+1. **연락처** 페이지에서 **더 많은 필터**를 클릭하세요.
 
-**Step 1:** Contacts(연락처) 탭으로 이동합니다
+   ![더 많은 필터 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023275294/original/J59WILOZHgSeHUauKqq1rTvgK4ZG_aE82Q.png?1711007696)
 
-![연락처 탭 이동](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023274480/original/UPFW41wUhPttWj5Fq5fkdZLvGy1UbV9bug.png?1711007073)
+2. **유효한 WhatsApp**을 검색하세요.
 
-**Step 2:** Columns(컬럼)을 클릭하고 **Valid WhatsApp(유효한 왓츠앱)**을 선택합니다
+   ![유효한 WhatsApp 필터 검색](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023275546/original/JMGojRXSSboClOC5ekm6g6q7hXWz2C_fug.png?1711007988)
 
-![컬럼에서 유효한 왓츠앱 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023274764/original/hbwGJwU9BPdyEDltBNgWk_LXYfx_ZCSsHg.png?1711007328)
+3. **유효함**을 선택하고 **적용**을 클릭하세요.
 
-## 무효한 왓츠앱 연락처를 제외하는 스마트리스트 만들기
+   ![유효함 선택 후 적용](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023275915/original/cLsMJ1Mser6zmrQvck7Pmcb-p3lhvi4X_A.png?1711008342)
 
-**Step 1:** Contacts(연락처) 페이지로 이동하여 More Filters(더 많은 필터)를 클릭합니다
+4. **OR** 조건을 선택한 다음 **검증되지 않음**을 선택하세요.
 
-![더 많은 필터 클릭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023275294/original/J59WILOZHgSeHUauKqq1rTvgK4ZG_aE82Q.png?1711007696)
+   ![OR 조건으로 검증되지 않음 추가](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023276106/original/CeZHBthWsl0Mde0xxUFba5BMeeZi6V1tKw.png?1711008515)
 
-**Step 2:** **Valid WhatsApp(유효한 왓츠앱)**을 검색합니다
+5. **Save as Smart List**(스마트 리스트로 저장)를 클릭하고 스마트 리스트 이름을 입력하세요.
 
-![유효한 왓츠앱 검색](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023275546/original/JMGojRXSSboClOC5ekm6g6q7hXWz2C_fug.png?1711007988)
+   ![스마트 리스트로 저장하고 이름 입력](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023296917/original/FPfajJdIA5SKgTI8ykKKxWOcs050LrD4BQ.png?1711022014)
 
-**Step 3:** **Valid(유효함)**을 선택하고 **Apply(적용)**을 선택합니다
+{% hint style="info" %}
+이 스마트 리스트는 연락처가 WhatsApp에서 활성 또는 비활성 상태가 되는 즉시 자동으로 업데이트돼요. 위에서 만든 스마트 리스트로 WhatsApp 캠페인을 보낼 수 있어요.
+{% endhint %}
 
-![유효함 선택 및 적용](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023275915/original/cLsMJ1Mser6zmrQvck7Pmcb-p3lhvi4X_A.png?1711008342)
+{% hint style="info" %}
+**검증되지 않음** 연락처를 포함하는 이유: WhatsApp 대화 기록이 없어서 시스템이 아직 WhatsApp 사용 여부를 판단하지 못한 연락처에도 WhatsApp 메시지를 보내기 위해서예요.
+{% endhint %}
 
-**Step 4:** OR 조건을 선택하고 Is not validated(검증되지 않음)를 선택합니다
+## 자주 묻는 질문
 
-![OR 조건 및 검증되지 않음 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023276106/original/CeZHBthWsl0Mde0xxUFba5BMeeZi6V1tKw.png?1711008515)
+### 이 필드는 얼마나 자주 업데이트되나요?
 
-**Step 5:** Save as smart list(스마트리스트로 저장)를 클릭하고 스마트리스트 이름을 추가합니다
+앞에서 설명한 상황에 따라 실시간으로 업데이트돼요.
 
-![스마트리스트로 저장](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023296917/original/FPfajJdIA5SKgTI8ykKKxWOcs050LrD4BQ.png?1711022014)
+### 연락처의 WhatsApp 상태를 직접 바꿀 수 있나요?
 
-**이 스마트리스트는 연락처가 왓츠앱에서 활성화되거나 비활성화되는 즉시 동적으로 업데이트됩니다. 위에서 생성한 스마트리스트를 사용하여 왓츠앱 캠페인을 보낼 수 있습니다.**
+아니요. 시스템이 사용자 상호작용과 메시지 전달 결과를 바탕으로 상태를 자동으로 업데이트해요.
 
-"검증되지 않음" 연락처를 추가하는 이유는 왓츠앱 대화 기록이 없어서 시스템이 아직 연락처의 왓츠앱 사용 여부를 판단하지 못한 연락처에게도 왓츠앱 메시지가 전송되도록 하기 위함입니다.
+### 유효한 WhatsApp 필드는 무엇인가요?
 
-## FAQ: 자주 묻는 질문
+**유효한 WhatsApp** 필드는 연락처의 전화번호가 WhatsApp에 등록되어 있고 활성 상태인지 바로 알려 주는 새 기능이에요.
 
-### Q: 이러한 필드는 얼마나 자주 업데이트되나요?
+### 유효한 WhatsApp 값은 각각 무슨 뜻인가요?
 
-필드는 지정된 시나리오에 따라 실시간으로 업데이트됩니다.
+- **유효함**: 연락처가 활성 WhatsApp 계정을 가지고 있어요.
+- **무효**: 연락처의 번호가 현재 WhatsApp에 없어요.
+- **검증되지 않음**: 시스템이 이 번호가 WhatsApp에 있는지 아직 확인하지 못했어요.
 
-### Q: 연락처의 왓츠앱 상태를 수동으로 업데이트할 수 있나요?
+### 유효한 WhatsApp 상태는 어떻게 업데이트되나요?
 
-아니요, 시스템이 사용자 상호작용과 메시지 전달 결과를 바탕으로 자동으로 상태를 업데이트합니다.
+자동으로 업데이트돼요. 방식은 다음과 같아요.
 
-### Q: "Valid_WhatsApp" 필드가 뭔가요?
+- 메시지를 정상적으로 보냈을 때: 상태가 **유효함**으로 바뀌어요.
+- 메시지 전달에 실패했을 때: 상태가 **무효**로 바뀌어요.
+- 연락처가 WhatsApp으로 메시지를 보냈을 때: 상태가 바로 **유효함**으로 바뀌어요.
 
-"Valid_WhatsApp" 필드는 연락처의 전화번호가 왓츠앱에 등록되어 활성화되어 있는지를 직접적으로 알려주는 새로운 기능입니다.
+### WhatsApp 상태로 연락처를 필터링할 수 있나요?
 
-### Q: 다른 "Valid_WhatsApp" 값들이 무엇을 의미하나요?
-
-- **Valid(유효함)**: 연락처가 활성화된 왓츠앱 계정을 보유하고 있습니다.
-- **Invalid(무효함)**: 연락처의 번호가 현재 왓츠앱에 등록되어 있지 않습니다.
-- **Not Validated(검증되지 않음)**: 시스템이 아직 해당 번호의 왓츠앱 등록 여부를 확인하지 못했습니다.
-
-### Q: "Valid_WhatsApp" 상태는 어떻게 업데이트되나요?
-
-자동으로 이루어집니다! 작동 방식은 다음과 같습니다:
-
-- **메시지를 성공적으로 보낸 경우**: 상태가 "Valid(유효함)"로 변경됩니다.
-- **메시지 전달이 실패한 경우**: 상태가 "Invalid(무효함)"로 변경됩니다.
-- **연락처가 왓츠앱으로 메시지를 보낸 경우**: 상태가 즉시 "Valid(유효함)"로 변경됩니다.
-
-### Q: 왓츠앱 상태를 기준으로 연락처를 필터링할 수 있나요?
-
-네! "Valid WhatsApp(유효한 왓츠앱)"을 위한 전용 필터가 있습니다. 이를 사용하여 왓츠앱으로 연락할 수 있는 연락처만 확인하세요.
-
----
-*원문 최종 수정: Thu, 27 Feb, 2025 at 12:04 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+네. **유효한 WhatsApp** 전용 필터가 있어요. 이 필터를 쓰면 WhatsApp으로 연락할 수 있는 연락처만 볼 수 있어요.

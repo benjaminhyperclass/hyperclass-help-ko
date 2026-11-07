@@ -1,139 +1,126 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 07-워크플로우 > Company Workflow Actions
+원문: /support/solutions/articles/155000006574-workflow-action-create-company-or-associated-contact
+번역일: 2026-11-07
+카테고리: 07-워크플로우
 ---
 
-# 워크플로우 액션 – 회사 또는 연결된 연락처 생성
+# 워크플로우 액션 — Create Company or Associated Contact(회사 또는 연결된 연락처 생성)
 
-**목차**
+**Create Company or Associated Contact**(회사 또는 연결된 연락처 생성) 액션은 워크플로우 안에서 새 회사 레코드를 만들거나, 이미 있는 회사에 연결된 연락처를 만들어요. 폼, 연동, 웹훅으로 새 데이터가 들어올 때 회사와 연락처를 직접 만들고 연결하는 수고를 줄일 수 있어요.
 
-- [개요](#개요)
-- [액션 이름](#액션-이름)
-- [액션 설명](#액션-설명)
-- [액션 세부사항](#액션-세부사항)
-- [사용 예시](#사용-예시)
+## 이 액션으로 할 수 있는 일
 
-## 개요
+- 워크플로우 안에서 새 회사 레코드를 바로 만들어요.
+- 이미 있는 회사 레코드에 연결된 연락처를 만들어요.
+- 인바운드 웹훅이나 폼 제출 같은 트리거의 데이터를 필드에 동적으로 매핑해요.
+- 레코드를 직접 만들지 않아도 회사와 연락처의 연결 상태를 깔끔하게 유지해요.
 
-회사 또는 연결된 연락처 생성(Create Company or Associated Contact) 액션을 사용하면 워크플로우 안에서 자동으로 새 회사(Company) 레코드를 생성하거나, 기존 회사 아래에 연결된 연락처를 생성할 수 있습니다.
+중복 항목을 줄이고, 회사 기반 자동화에서도 CRM 구조를 정돈된 상태로 유지하는 데 도움이 돼요.
 
-이 액션은 폼, 연동, 웹훅을 통해 새 데이터가 들어올 때 관련된 회사와 연락처 레코드를 수동 작업 없이 자동으로 생성하고 연결하여 CRM 정보를 풍부하게 만들어줍니다.
+## 액션 설정 항목
 
-## 액션 이름
+![액션 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055485023/original/UJpZsTPA4UENuK2PODOvXmPr9SzRxdV04w.png?1759909866)
 
-회사 또는 연결된 연락처 생성(Create Company or Associated Contact)
+### 1. 만들 레코드 유형 선택
 
-## 액션 설명
+**Object Record to Create**(생성할 객체 레코드)에서 만들 레코드 유형을 선택해요.
 
-이 액션으로 다음과 같은 작업을 할 수 있습니다:
+- **Company**(회사): 새 회사 레코드를 만들어요.
+- **Associated Contact**(연결된 연락처): 워크플로우에서 현재 처리 중인 회사에 연결된 새 연락처를 만들어요.
 
-- 워크플로우 안에서 직접 새 회사 레코드를 자동 생성
-- 기존 회사 레코드에 연결된 연락처를 생성
-- 인바운드 웹훅이나 폼 제출 같은 워크플로우 트리거의 데이터를 활용해 동적으로 입력 필드 매핑
-- 수동 레코드 생성 없이 깔끔한 회사-연락처 연결 관계 유지
+### 2. 필드 매핑
 
-이 액션은 중복 항목을 줄이고 회사 기반 자동화를 처리할 때 CRM 구조를 체계적으로 유지하는 데 도움이 됩니다.
+워크플로우 데이터나 고정 값을 회사 또는 연락처의 각 필드에 연결해요. 매핑 예시는 다음과 같아요.
 
-## 액션 세부사항
+- **Company Name**(회사명) → `{{inboundWebhookRequest.body.company}}`
+- **Contact Email**(연락처 이메일) → `{{inboundWebhookRequest.body.email}}`
+- **First Name**(이름) → `{{inboundWebhookRequest.body.first_name}}`
 
-![워크플로우 액션 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055485023/original/UJpZsTPA4UENuK2PODOvXmPr9SzRxdV04w.png?1759909866)
+### 3. 값을 가져올 수 있는 곳
 
-**I. 생성할 객체 레코드(Object Record to Create)**
+다음 값을 필드에 매핑할 수 있어요.
 
-생성하려는 레코드 유형을 선택합니다:
+- **Inbound Webhook**(인바운드 웹훅) 페이로드: 예) `{{inboundWebhookRequest.body.companyName}}`
+- 회사 필드: 워크플로우 트리거가 회사 이벤트일 때 쓸 수 있어요.
+- 고정 텍스트 값: 예) "하이퍼클래스 파트너스"
+- **Custom Values**(커스텀 값)
 
-- **회사(Company)** – 새 회사 레코드를 생성합니다
-- **연결된 연락처(Associated Contact)** – 워크플로우의 현재 회사에 연결된 새 연락처를 생성합니다
+### 4. 연결 방식
 
-**II. 필드 매핑(Field Mapping)**
+- **Associated Contact**를 선택하면 새 연락처가 워크플로우를 시작시킨 회사 레코드에 자동으로 연결돼요.
+- 이 관계는 CRM에서 해당 회사의 **Associated Contacts**(연결된 연락처) 섹션에 표시돼요.
 
-워크플로우 데이터나 고정 값을 채우려는 회사 또는 연락처 필드에 매핑합니다.
+### 5. 필드 추가
 
-매핑 예시:
-- 회사명 → {{inboundWebhookRequest.body.company}}
-- 연락처 이메일 → {{inboundWebhookRequest.body.email}}
-- 이름 → {{inboundWebhookRequest.body.first_name}}
+1. **+ Add Field**(필드 추가)를 클릭해 매핑할 필드를 더해요.
+2. 각 행은 필드 하나와 값 하나를 연결해요.
 
-**III. 동적 값 소스**
+### 6. 액션 저장
 
-다음 소스에서 값을 매핑할 수 있습니다:
+1. 매핑을 모두 설정한 뒤 **Save Action**(액션 저장)을 클릭해요.
+2. 워크플로우가 실행되면 선택한 유형(**Company** 또는 **Associated Contact**)의 레코드가 자동으로 만들어지고, 매핑한 필드가 모두 채워져요.
 
-- 인바운드 웹훅 페이로드 (예: {{inboundWebhookRequest.body.companyName}})
-- 회사 필드 (워크플로우 트리거가 회사 이벤트 기반일 때)
-- 고정 텍스트 값 (예: "Hyperclass 파트너")
-- 커스텀 값
+## 예시
 
-**IV. 연결 동작(Association Behavior)**
+### 예시 1: 웹훅으로 새 회사 만들기
 
-- **연결된 연락처(Associated Contact)**를 선택하면, 새 연락처가 워크플로우를 트리거한 회사 레코드에 자동으로 연결됩니다
-- 이 관계는 CRM의 해당 회사의 "연결된 연락처(Associated Contacts)" 섹션에 표시됩니다
+목표: 새 비즈니스 리드가 들어오면 회사 레코드를 자동으로 만들어요.
 
-**V. 필드 추가(Add Field)**
+구성
 
-- **+ 필드 추가(Add Field)**를 사용해 추가 필드 매핑을 포함할 수 있습니다
-- 각 행은 하나의 필드-값 매핑을 나타냅니다
-
-**VI. 액션 저장(Save Action)**
-
-- 매핑 설정이 완료되면 **액션 저장(Save Action)**을 클릭합니다
-- 워크플로우가 실행되면 정의된 레코드 유형(회사 또는 연결된 연락처)을 자동으로 생성하고 모든 매핑된 필드를 채웁니다
-
-## 사용 예시
-
-#### **예시 1: 웹훅으로 새 회사 생성**
-
-**목표:** 새 비즈니스 리드를 받았을 때 회사 레코드를 자동 생성
-
-**설정**
-- 워크플로우 유형: 회사 기반
-- 트리거: 인바운드 웹훅
-- 생성할 객체 레코드: 회사
+- 워크플로우 유형: **Company-based**(회사 기반)
+- 트리거: **Inbound Webhook**(인바운드 웹훅)
+- **Object Record to Create**: **Company**
 - 필드 매핑:
-  - 회사명 → {{inboundWebhookRequest.body.companyName}}
-  - 도메인 → {{inboundWebhookRequest.body.domain}}
-  - 업종 → {{inboundWebhookRequest.body.industry}}
+  - **Company Name** → `{{inboundWebhookRequest.body.companyName}}`
+  - **Domain**(도메인) → `{{inboundWebhookRequest.body.domain}}`
+  - **Industry**(업종) → `{{inboundWebhookRequest.body.industry}}`
 
-**흐름**
-1. 웹훅을 통해 새 회사 리드가 수집됩니다
-2. 워크플로우가 이 액션을 트리거합니다
-3. 매핑된 모든 세부 정보와 함께 새 회사 레코드가 생성되어 CRM에 추가됩니다
+진행 순서
 
-#### **예시 2: 기존 회사에 연결된 연락처 생성**
-
-**목표:** 기존 회사 레코드 아래에 새 직원 연락처를 자동 추가
-
-**설정**
-- 워크플로우 유형: 회사 기반
-- 트리거: 회사 업데이트 또는 웹훅 → 직원 추가 이벤트
-- 생성할 객체 레코드: 연결된 연락처
-- 필드 매핑:
-  - 이름 → {{inboundWebhookRequest.body.firstName}}
-  - 성 → {{inboundWebhookRequest.body.lastName}}
-  - 이메일 → {{inboundWebhookRequest.body.email}}
-
-**흐름**
-1. 웹훅이나 연동을 통해 직원 데이터가 수신됩니다
-2. 해당 회사에서 워크플로우가 트리거됩니다
-3. 새 연락처가 생성되고 해당 회사에 자동으로 연결됩니다
-
-#### **예시 3: 회사 데이터 풍부화 및 새 연락처 자동 추가**
-
-**목표:** 새 회사가 생성될 때마다 연락처를 자동으로 추가
-
-**설정**
-- 1단계: 이 액션 사용 → 생성할 객체 = 회사
-  - 회사명 → {{inboundWebhookRequest.body.company}}
-  - 도메인 → {{inboundWebhookRequest.body.domain}}
-- 2단계: 다른 액션 사용 → 생성할 객체 = 연결된 연락처
-  - 연락처 이름 → {{inboundWebhookRequest.body.contactName}}
-  - 이메일 → {{inboundWebhookRequest.body.email}}
-
-**흐름**
-1. 먼저 새 회사 레코드가 생성됩니다
-2. 두 번째 액션이 바로 뒤에 실행되어 연결된 연락처를 추가합니다
-3. 연락처가 새 회사의 연결된 연락처 목록에 자동으로 나타납니다
+1. 웹훅으로 새 회사 리드가 들어와요.
+2. 워크플로우가 시작되어 이 액션이 실행돼요.
+3. 매핑한 정보가 모두 담긴 새 회사 레코드가 CRM에 만들어져요.
 
 ---
-*원문 최종 수정: Mon, 13 Oct, 2025 at 3:26 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+
+### 예시 2: 기존 회사에 연결된 연락처 만들기
+
+목표: 기존 회사 레코드 아래에 새 직원 연락처를 자동으로 추가해요.
+
+구성
+
+- 워크플로우 유형: **Company-based**(회사 기반)
+- 트리거: **Company Updated**(회사 업데이트됨) 또는 웹훅의 직원 추가 이벤트
+- **Object Record to Create**: **Associated Contact**
+- 필드 매핑:
+  - **First Name**(이름) → `{{inboundWebhookRequest.body.firstName}}`
+  - **Last Name**(성) → `{{inboundWebhookRequest.body.lastName}}`
+  - **Email**(이메일) → `{{inboundWebhookRequest.body.email}}`
+
+진행 순서
+
+1. 웹훅이나 연동으로 직원 데이터가 들어와요.
+2. 해당 회사를 기준으로 워크플로우가 시작돼요.
+3. 새 연락처가 만들어지고, 그 회사에 자동으로 연결돼요.
+
+---
+
+### 예시 3: 회사 정보를 채우고 연락처도 함께 추가하기
+
+목표: 새 회사가 만들어질 때마다 연락처를 자동으로 추가해요.
+
+구성
+
+1. 1단계: 이 액션을 사용하고 **Object Record to Create**를 **Company**로 선택해요.
+   - **Company Name** → `{{inboundWebhookRequest.body.company}}`
+   - **Domain** → `{{inboundWebhookRequest.body.domain}}`
+2. 2단계: 이 액션을 하나 더 추가하고 **Object Record to Create**를 **Associated Contact**로 선택해요.
+   - **Contact Name**(연락처 이름) → `{{inboundWebhookRequest.body.contactName}}`
+   - **Email** → `{{inboundWebhookRequest.body.email}}`
+
+진행 순서
+
+1. 새 회사 레코드가 먼저 만들어져요.
+2. 바로 이어서 두 번째 액션이 실행되어 연결된 연락처를 추가해요.
+3. 연락처가 새 회사의 연결된 연락처 목록에 자동으로 나타나요.

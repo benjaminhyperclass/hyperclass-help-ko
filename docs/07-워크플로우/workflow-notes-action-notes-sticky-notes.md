@@ -1,149 +1,121 @@
 ---
-
-번역일: 2026-04-06
+원문: /support/solutions/articles/155000003914-workflow-notes-action-notes-sticky-notes
+번역일: 2026-11-06
 카테고리: 07-워크플로우
 ---
 
-# 워크플로우 노트, 액션 노트, 스티키 노트
+# 워크플로우 노트·액션 노트·스티커 메모 — Workflow Notes, Action Notes, Sticky Notes
 
-**목차**
+워크플로우 안에 설명, 의견, 중요한 정보를 바로 남기는 방법을 안내해요. 노트는 워크플로우 전체, 개별 액션, 빌더 화면 위 스티커 메모의 세 가지 형태로 남길 수 있어요.
 
-- [개요](#개요)
-- [새로운 사이드바](#새로운-사이드바)
-- [워크플로우 레벨 노트](#워크플로우-레벨-노트)
-  - [개요](#개요)
-  - [노트를 추가할 수 있는 사람](#노트를-추가할-수-있는-사람)
-  - [사용 방법](#사용-방법)
-  - [노트 저장](#노트-저장)
-  - [추적](#추적)
-- [액션 레벨 노트 (기존 댓글 기능)](#액션-레벨-노트-기존-댓글-기능)
-  - [개요](#개요)
-  - [노트를 추가할 수 있는 사람](#노트를-추가할-수-있는-사람)
-  - [사용 방법](#사용-방법)
-  - [표시 상태](#표시-상태)
-  - [기록 추적](#기록-추적)
-  - [중앙 집중식 노트 보기](#중앙-집중식-노트-보기)
-- [스티키 노트](#스티키-노트)
-  - [개요](#개요)
-  - [사용 방법](#사용-방법)
-  - [커스터마이징 옵션](#커스터마이징-옵션)
-  - [리치 텍스트 에디터](#리치-텍스트-에디터)
-  - [이미지 첨부](#이미지-첨부)
-  - [표시 설정](#표시-설정)
-- [활용 사례](#활용-사례)
+## 개요
 
-## **개요**
+하이퍼클래스의 **Workflow Notes**(워크플로우 노트), **Action Notes**(액션 노트), **Sticky Notes**(스티커 메모)를 쓰면 워크플로우 안에 맥락이나 의견, 핵심 정보를 바로 적어 둘 수 있어요. 팀원과 협업하기 쉽고, 워크플로우를 관리하다가 중요한 내용을 바로 찾아볼 수 있어요.
 
-Hyperclass의 워크플로우 노트, 액션 노트, 스티키 노트 기능은 워크플로우 내에서 직접 맥락, 댓글, 핵심 정보를 추가할 수 있는 편리한 방법을 제공합니다. 이러한 도구들은 협업을 향상시키고 커뮤니케이션을 간소화하며, 워크플로우를 관리할 때 중요한 세부사항을 쉽게 참조할 수 있도록 해줍니다.
+## 새로워진 사이드바
 
-## 새로운 사이드바
+- **더 쉬운 이동**: **Stats View**(통계 보기)가 사이드바로 옮겨졌어요. 새로 생긴 **Notes**(노트), **Sticky Notes** 메뉴와 함께 한곳에서 이동할 수 있어요.
+- **켜고 끄기**: **Stats View** 아이콘을 클릭하면 이 보기를 켜거나 끌 수 있어요. 켜져 있을 때는 아이콘이 강조 표시돼요.
 
-- **더 쉬운 탐색**: 통계 보기(Stats View)가 사이드바로 이동하여 새로운 노트와 스티키 노트 옵션과 함께 더 쉽게 탐색할 수 있습니다.
-- **토글 기능**: 통계 보기 아이콘을 클릭하여 이 보기를 활성화하거나 비활성화할 수 있습니다. 활성화되면 아이콘이 강조 표시되어 켜져 있다는 시각적 신호를 제공합니다.
+![사이드바에 있는 Stats View, Notes, Sticky Notes 아이콘](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034982401/original/YusPGcWJE1TzMV8aWQ_2FzcaUXDybQ0AMQ.png?1729261885)
 
-![새로운 사이드바 인터페이스](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034982401/original/YusPGcWJE1TzMV8aWQ_2FzcaUXDybQ0AMQ.png?1729261885)
-
-![사이드바 토글 기능](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034982443/original/cdqcd1CeINxZEkmEHNryp3125blFcv1GZQ.png?1729261899)
-
-## 워크플로우 레벨 노트
+## 워크플로우 단위 노트 (Workflow-Level Notes)
 
 ### 개요
 
-이 노트들은 모든 사용자에게 표시되어 워크플로우에 관련된 모든 사람이 동일한 이해를 가질 수 있도록 보장합니다. 워크플로우 노트는 사용자가 워크플로우 레벨에서 댓글이나 설명을 추가할 수 있게 해주며, 팀원들에게 맥락이나 추가 지침을 제공합니다. 이는 팀 간에 워크플로우를 공유하거나 명확성이 중요한 복잡한 프로세스를 자동화할 때 특히 유용합니다.
+워크플로우 노트는 모든 사용자에게 보여요. 그래서 워크플로우에 참여하는 모두가 같은 내용을 이해할 수 있어요. 워크플로우 단위로 설명이나 추가 안내를 남길 수 있어서, 여러 팀이 워크플로우를 함께 쓰거나 복잡한 프로세스를 자동화할 때 특히 유용해요.
 
 ### 노트를 추가할 수 있는 사람
 
-- 관리자(Admin)는 이제 각 워크플로우에 특정한 노트를 추가할 수 있습니다.
+관리자(Admin)가 워크플로우별로 노트를 추가할 수 있어요.
 
 ### 사용 방법
 
-- 워크플로우 내에서 사이드바의 "노트(Notes)" 아이콘을 클릭하여 노트 패널을 엽니다.
-- 전체 워크플로우와 관련된 설명, 맥락, 지침을 제공하는 노트를 추가합니다.
+1. 워크플로우 안에서 사이드바의 **Notes** 아이콘을 클릭해 노트 패널을 열어요.
+2. 워크플로우 전체와 관련된 설명, 맥락, 안내 내용을 적어요.
 
 ### 노트 저장
 
-- 워크플로우가 저장될 때 노트도 자동으로 저장되어 정보가 손실되지 않도록 보장합니다.
+워크플로우를 저장하면 노트도 자동으로 저장돼요. 그래서 적어 둔 내용이 사라지지 않아요.
 
 ### 추적
 
-- 각 노트에는 작성자, 편집자, 작성일, 편집일 정보가 표시되어 누가 노트를 추가하거나 변경했는지, 언제 했는지에 대한 완전한 투명성을 제공합니다.
+노트마다 **Created by**(만든 사람), **Edited by**(수정한 사람), **Created on**(생성일), **Edited on**(수정일) 정보가 표시돼요. 누가 언제 노트를 쓰고 고쳤는지 투명하게 확인할 수 있어요.
 
-![워크플로우 노트 인터페이스](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034982467/original/BPi-tlZdQgahUXDccnzFRN-iyNDzEYRrbA.png?1729261916)
+![워크플로우 노트 패널과 작성자·날짜 정보](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034982467/original/BPi-tlZdQgahUXDccnzFRN-iyNDzEYRrbA.png?1729261916)
 
-## 액션 레벨 노트 (기존 댓글 기능)
+## 액션 단위 노트 (Action-Level Notes, 예전 이름: 댓글)
 
 ### 개요
 
-액션 노트는 사용자가 워크플로우 내의 개별 액션에 노트를 첨부할 수 있게 해주며, 특정 단계에 대한 더 자세한 댓글을 제공합니다. 이는 액션의 목적이나 특별한 조건을 설명해야 할 때 유용하며, 팀의 모든 사람이 그 의도를 이해할 수 있도록 보장합니다.
+액션 노트는 워크플로우 안의 개별 액션에 붙이는 노트예요. 특정 단계를 더 자세히 설명할 수 있어요. 액션의 목적이나 특별한 조건을 설명해 두면 팀원 모두가 그 액션의 의도를 이해하는 데 도움이 돼요.
 
 ### 노트를 추가할 수 있는 사람
 
-- 모든 사용자가 "액션 노트"를 추가할 수 있는 기능을 가지고 있습니다.
+모든 사용자가 액션 노트(**Action Notes**)를 추가할 수 있어요.
 
 ### 사용 방법
 
-- 워크플로우에서 액션 위에 마우스를 올리면 액션 오른쪽 상단에 노트 아이콘이 표시됩니다. 이를 클릭하면 해당 액션에 특정한 노트를 추가할 수 있습니다.
+1. 워크플로우에서 노트를 남기려는 액션 위에 마우스를 올려요.
+2. 액션 오른쪽 위 모서리에 나타나는 노트 아이콘을 클릭해요.
+3. 그 액션에 대한 노트를 입력해요.
 
-### 표시 상태
+### 아이콘 표시
 
-- 액션에 노트가 추가되면 노트 아이콘이 항상 표시되어 해당 액션과 관련된 추가 맥락이나 지침이 있음을 알려줍니다.
+액션에 노트를 추가하면 노트 아이콘이 계속 표시돼요. 이 액션에 참고할 맥락이나 안내가 있다는 표시예요.
 
 ### 기록 추적
 
-- 각 노트는 추가 기록을 보관하여 팀이 해당 액션에 특정한 토론, 업데이트, 피드백을 추적할 수 있게 해줍니다.
+노트에는 추가된 내용의 기록이 남아요. 그 액션에 대한 논의, 변경 사항, 의견을 팀이 함께 따라갈 수 있어요.
 
-### 중앙 집중식 노트 보기
+### 노트 한곳에서 보기
 
-- 모든 액션 레벨 노트는 메인 노트 섹션에서도 보고 검색할 수 있습니다. 이는 워크플로우와 관련된 모든 노트를 추적할 수 있는 중앙 위치를 만들어 검토하고 관리하기 쉽게 만듭니다.
+모든 액션 노트는 메인 **Notes** 섹션에서도 보고 검색할 수 있어요. 워크플로우에 달린 노트를 한곳에서 확인하고 관리할 수 있어요.
 
-![액션 노트 아이콘](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034982480/original/UxqmhstihhnJLSgDhgV48INceW0a-rUsmg.png?1729261935)
+![액션 위에 마우스를 올렸을 때 나타나는 노트 아이콘](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034982480/original/UxqmhstihhnJLSgDhgV48INceW0a-rUsmg.png?1729261935)
 
-![액션 노트 편집 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034982488/original/2a1LFeJAD8itsCTbPnttDTPThdNzAABOJw.png?1729261952)
+![액션 노트 입력 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034982488/original/2a1LFeJAD8itsCTbPnttDTPThdNzAABOJw.png?1729261952)![액션 노트가 추가된 모습](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034982515/original/IHjzM4hDdE74G4E4s-4qnI63DDyYLodjdQ.png?1729261974)
 
-![액션 노트 상세 보기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034982515/original/IHjzM4hDdE74G4E4s-4qnI63DDyYLodjdQ.png?1729261974)
+![Notes 섹션에서 모아 보는 액션 노트](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034982529/original/NK65tEi3Bc7NnhTBhCGq6YLNSig7bsh7Ng.png?1729261991)
 
-![액션 노트 목록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034982529/original/NK65tEi3Bc7NnhTBhCGq6YLNSig7bsh7Ng.png?1729261991)
+![액션 노트 검색 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034982546/original/27W6wUqszo1mctMaFuJg1Azn1_ljROGQag.png?1729262006)
 
-![액션 노트 통합 보기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034982546/original/27W6wUqszo1mctMaFuJg1Azn1_ljROGQag.png?1729262006)
-
-## 스티키 노트
+## 스티커 메모 (Sticky Notes)
 
 ### 개요
 
-스티키 노트는 사용자가 워크플로우 빌더에 눈에 잘 띄는 노트를 추가할 수 있게 해주어 중요한 정보에 빠르게 접근할 수 있습니다. 이러한 노트들은 빌더에 고정되어 있어 같은 연락처로 작업하는 팀 간에 중요한 정보나 알림을 전달하는 데 유용합니다.
+**Sticky Notes**는 워크플로우 빌더 화면에 눈에 잘 띄는 메모를 붙여 두는 기능이에요. 메모는 빌더 위에 고정돼서 중요한 정보나 알림을 바로 볼 수 있어요. 같은 연락처를 다루는 여러 팀에 중요한 내용을 전달할 때 유용해요.
 
 ### 사용 방법
 
-- 사이드바의 "스티키 노트(Sticky Notes)" 아이콘을 클릭하고 노트의 색상을 선택합니다. 스티키 노트가 빌더에 나타납니다.
+1. 사이드바에서 **Sticky Notes** 아이콘을 클릭해요.
+2. 메모 색상을 선택해요.
+3. 빌더 화면에 스티커 메모가 나타나요.
 
-### 커스터마이징 옵션
+### 사용자 지정
 
-- 스티키 노트는 높은 수준의 커스터마이징이 가능합니다. 사용자는 스티키 노트 아이콘을 클릭하여 다양한 색상의 노트를 만들 수 있어 다양한 카테고리나 작업 유형을 구분하는 데 도움이 됩니다.
+스티커 메모는 여러 가지로 꾸밀 수 있어요. **Sticky Notes** 아이콘을 클릭해 색상이 다른 메모를 만들 수 있고, 색상으로 작업 종류나 분류를 구분할 수 있어요.
 
-### 리치 텍스트 에디터
+### 서식 편집기
 
-- 텍스트 서식을 위한 리치 텍스트 에디터를 사용할 수 있어 핵심 포인트를 강조하거나 노트를 구조화하기 쉽습니다.
+서식 편집기(Rich Text Editor)로 글자 서식을 지정할 수 있어요. 핵심 내용을 강조하거나 메모를 구조적으로 정리하기 쉬워요.
 
 ### 이미지 첨부
 
-- 스티키 노트에 이미지를 첨부할 수도 있어 더 시각적이고 상세한 정보를 제공할 수 있습니다.
+스티커 메모에 이미지를 첨부할 수도 있어요. 메모가 더 알기 쉽고 자세해져요.
 
-### 표시 설정
+### 표시 여부 조절
 
-- "노트 숨기기(Hide Notes)" 버튼을 클릭하여 스티키 노트의 표시 여부를 토글할 수 있습니다. 이를 통해 사용자는 노트가 항상 표시되도록 할지 필요할 때만 표시되도록 할지 결정할 수 있습니다.
+**Hide Notes**(노트 숨기기) 버튼을 클릭하면 스티커 메모를 숨기거나 다시 표시할 수 있어요. 메모를 항상 보이게 할지, 필요할 때만 보이게 할지 직접 정할 수 있어요.
 
-![스티키 노트 생성](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034982559/original/RyyNgtuEpN48ber7e3Dz5g3aeUvP9HhJFg.png?1729262029)
+![사이드바에서 스티커 메모 색상 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034982559/original/RyyNgtuEpN48ber7e3Dz5g3aeUvP9HhJFg.png?1729262029)
 
-![스티키 노트 색상 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034982569/original/KVf6-TzqkjkZE5yT76GVgn6w1ft9BwV_uQ.png?1729262039)
+![빌더 화면에 붙은 스티커 메모](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034982569/original/KVf6-TzqkjkZE5yT76GVgn6w1ft9BwV_uQ.png?1729262039)
 
-![스티키 노트 편집](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034982598/original/On7rfCR8MwH7w55tQizU9dBALDHfh1Einw.png?1729262049)
+![서식 편집기와 이미지가 들어간 스티커 메모](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155034982598/original/On7rfCR8MwH7w55tQizU9dBALDHfh1Einw.png?1729262049)
 
-## 활용 사례
+## 사용 사례
 
-- **워크플로우 레벨 노트**: 모든 사람이 워크플로우의 전반적인 목적을 이해할 수 있도록 높은 수준의 설명, 목표, 맥락을 추가하는 데 이상적입니다.
-- **스티키 노트**: 색상별로 구분된 스티키 노트를 사용하여 작업 목록과 시각적 알림을 생성하여 팀이 진행 상황을 쉽게 추적할 수 있습니다. 또한 신규 사용자 온보딩이나 하위 계정 사용자를 각 액션 단계별로 안내하는 데 완벽합니다.
-- **액션 레벨 노트**: 액션에 직접 노트를 첨부하여 구체적인 지침, 피드백, 배경 정보를 제공합니다. 이는 워크플로우 관리에 여러 팀원이 참여할 때 명확성을 보장하고 협업을 지원합니다.
-
----
-*원문 최종 수정: Fri, 16 May, 2025 at 2:55 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+- **Workflow-Level Notes**: 워크플로우의 전체 목적을 모두가 이해하도록 큰 틀의 설명, 목표, 맥락을 적어 둘 때 좋아요.
+- **Sticky Notes**: 색상별로 구분한 스티커 메모로 팀의 할 일 목록이나 시각적인 알림을 만들어 진행 상황을 쉽게 확인할 수 있어요. 새 사용자를 온보딩하거나 서브 계정 사용자에게 각 액션을 단계별로 안내할 때도 알맞아요.
+- **Action-Level Notes**: 액션에 구체적인 지침, 의견, 배경 정보를 직접 남길 때 써요. 여러 팀원이 워크플로우를 함께 관리할 때 내용이 분명해지고 협업하기 쉬워져요.

@@ -1,60 +1,48 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 07-워크플로우 > 기회 관리 워크플로우 액션
+원문: /support/solutions/articles/155000003365-workflow-action-remove-opportunity
+번역일: 2026-11-07
+카테고리: 07-워크플로우
 ---
 
-# 워크플로우 액션 - 기회 삭제
+# 워크플로우 액션 — Remove Opportunity(기회 제거)
 
-이 가이드에서는 Hyperclass 워크플로우에서 "기회 삭제(Remove Opportunity)" 액션을 사용하여 오래되거나 불필요한 기회를 제거해서 파이프라인을 깔끔하게 유지하는 방법을 설명합니다.
+워크플로우에서 **Remove Opportunity**(기회 제거) 액션을 사용해 더 이상 필요 없는 기회를 정리하는 방법을 안내해요. 이 액션으로 파이프라인을 깔끔하게 유지할 수 있어요.
 
-**목차**
+## Remove Opportunity 액션이란?
 
-- [워크플로우의 기회 삭제 액션이란?](#워크플로우의-기회-삭제-액션이란)
-- [워크플로우에서 기회 삭제 액션 사용하기](#워크플로우에서-기회-삭제-액션-사용하기)
-  - [1단계: 새 워크플로우 만들기 또는 기존 워크플로우 편집하기](#1단계-새-워크플로우-만들기-또는-기존-워크플로우-편집하기)
-  - [2단계: 기회 삭제 액션 추가하기](#2단계-기회-삭제-액션-추가하기)
+**Remove Opportunity** 액션은 연락처에 연결된 기회를 삭제해요. 더 이상 관련 없는 기회를 없애서 파이프라인을 정리할 때 쓰면 좋아요. 삭제할 기회는 아래 두 가지 중에서 고를 수 있어요.
 
-## 워크플로우의 기회 삭제 액션이란?
+- **All contact opportunities in the selected pipeline**(선택한 파이프라인에 있는 연락처의 모든 기회)
+- **Opportunity found or triggered in this workflow**(이 워크플로우에서 찾았거나 트리거된 기회)
 
-"기회 삭제(Remove Opportunity)" 액션을 사용하면 연락처와 연결된 기회를 삭제할 수 있습니다. 이 액션은 더 이상 관련이 없는 기회를 제거해서 파이프라인을 깔끔하게 유지하는 데 도움이 됩니다. 최신 개선사항을 통해 삭제할 기회를 선택할 때 더욱 유연하게 설정할 수 있습니다:
+이렇게 하면 영업 워크플로우에서 기회를 더 세밀하게 관리할 수 있어요.
 
-- 선택한 파이프라인에서 해당 연락처의 모든 기회 삭제
-- 현재 워크플로우에서 발견되거나 트리거된 기회만 삭제
+## Remove Opportunity 액션 사용하기
 
-이를 통해 영업 워크플로우에서 기회 관리를 더욱 정밀하게 제어할 수 있습니다.
+### 1단계: 워크플로우 만들기 또는 기존 워크플로우 편집하기
 
-## 워크플로우에서 기회 삭제 액션 사용하기
+1. 계정에서 **자동화**를 클릭하세요.
+2. **워크플로우**를 클릭하세요.
 
-### 1단계: 새 워크플로우 만들기 또는 기존 워크플로우 편집하기
+   ![워크플로우 목록 화면](https://jumpshare.com/v/Wxb1Etp807fhM5urjh1y+/Screen+Shot+2025-06-05+at+7.49.49+PM.png)
+3. 새 워크플로우를 만들려면 **+ Create Workflow**(워크플로우 만들기) 버튼을 클릭하세요.
+4. 기존 워크플로우를 편집하려면 해당 워크플로우 옆의 세 개의 점을 클릭한 뒤 **Edit Workflow**(워크플로우 편집)를 클릭하세요.
 
-- 계정에서 Automations(자동화)를 클릭합니다.
-- Workflows(워크플로우)를 클릭합니다.
+   ![기존 워크플로우 옆 세 개의 점 메뉴에서 편집 선택](https://jumpshare.com/v/nDg3GOLDVnrh4xKSySKh+/Screen+Shot+2025-06-05+at+7.55.56+PM.png)
 
-![워크플로우 메뉴](https://jumpshare.com/v/Wxb1Etp807fhM5urjh1y+/Screen+Shot+2025-06-05+at+7.49.49+PM.png)
+### 2단계: Remove Opportunity 액션 추가하기
 
-- **+ Create Workflow(+ 워크플로우 만들기)** 버튼을 클릭해서 새 워크플로우를 만들거나,
-- 기존 워크플로우 옆의 **점 3개 버튼**을 클릭하고 **Edit Workflow(워크플로우 편집)**를 클릭해서 편집합니다.
+1. 워크플로우에 액션을 추가하세요.
+2. 액션 선택 창에서 **Remove Opportunity**를 선택하세요.
 
-![워크플로우 편집](https://jumpshare.com/v/nDg3GOLDVnrh4xKSySKh+/Screen+Shot+2025-06-05+at+7.55.56+PM.png)
+   ![액션 선택 창에서 Remove Opportunity 선택](https://jumpshare.com/v/6i6ArGhJ2NEgwNpzjpJi+/Screen+Shot+2025-06-05+at+8.04.10+PM.png)
+3. 삭제할 기회를 고르세요.
+   - 파이프라인에 있는 연락처의 기회를 모두 삭제하려면 **All contact opportunities in the selected pipeline**을 선택하세요.
+   - 워크플로우를 시작시킨 기회나 이전 액션에서 찾은 기회만 삭제하려면 **Opportunity found or triggered in this workflow**를 선택하세요.
+4. **Save Action**(액션 저장) 버튼을 클릭하세요.
 
-### 2단계: 기회 삭제 액션 추가하기
+   ![Save Action 버튼을 눌러 액션을 저장하는 모습](https://jumpshare.com/v/ljzMc3zC67DQjdFN2keu+/GIF+Recording+2025-06-05+at+8.09.21+PM.gif)
 
-- 워크플로우에서 **액션을 추가**합니다.
-
-- 액션 선택 창에서 **Remove Opportunity(기회 삭제)**를 선택합니다.
-
-![기회 삭제 액션 선택](https://jumpshare.com/v/6i6ArGhJ2NEgwNpzjpJi+/Screen+Shot+2025-06-05+at+8.04.10+PM.png)
-
-- 다음 중 하나를 선택합니다:
-  - 파이프라인에서 해당 연락처의 모든 기회 삭제
-  - 워크플로우를 트리거했거나 이전 액션에서 발견된 기회만 삭제
-- **Save Action(액션 저장)** 버튼을 클릭합니다.
-
-![기회 삭제 액션 설정](https://jumpshare.com/v/ljzMc3zC67DQjdFN2keu+/GIF+Recording+2025-06-05+at+8.09.21+PM.gif)
-
-**참고:** 한 번 삭제된 기회는 2개월 이내에 복구할 수 있지만, 개별적으로만 가능하고 일괄 복구는 불가능합니다. 이 액션을 사용할 때는 신중하게 결정하세요.
-
----
-*원문 최종 수정: 2025년 6월 5일*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+{% hint style="warning" %}
+삭제한 기회는 2개월 안에 복구할 수 있어요. 다만 하나씩만 복구할 수 있고, 한꺼번에 복구할 수는 없어요. 이 액션은 신중하게 사용하세요.
+{% endhint %}

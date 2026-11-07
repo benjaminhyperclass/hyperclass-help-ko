@@ -1,43 +1,35 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 11-설정 > Business Profile Settings
+원문: /support/solutions/articles/155000006219-business-profile-settings-authorized-representative
+번역일: 2026-11-07
+카테고리: 11-설정
 ---
 
-# 비즈니스 프로필 설정 - 공인 대리인
+# 비즈니스 프로필 설정 — 공식 대표자
 
-공인 대리인(Authorized Representative)은 규정 준수 검토(예: A2P 10DLC 브랜드/캠페인 승인) 시 사업을 대표하여 확인하고 증명할 수 있는 실제 인물을 의미합니다. 연락 가능한 대리인을 추가하면 승인 지연을 방지하고 승인 과정을 빠르게 진행할 수 있어요.
+**공식 대표자**는 규정 준수 심사(예: A2P 10DLC 브랜드·캠페인 승인) 때 비즈니스를 확인하고 대변할 수 있는 실제 사람이에요. 연락이 닿는 대표자를 등록해 두면 인증이 중간에 멈추는 일을 줄이고 승인도 더 빨라질 수 있어요.
 
-비즈니스 프로필 설정(Business Profile Settings) 전반과 설정 패널 접근 방법은 다음을 참고하세요: [비즈니스 프로필 설정 개요](business-profile-settings.md)
+비즈니스 프로필 설정 화면으로 가는 방법 등 전체 내용은 [비즈니스 프로필 설정 개요](business-profile-settings.md)에서 확인하세요.
 
----
+## 공식 대표자란
 
-## 공인 대리인
+공식 대표자는 비즈니스의 신원이나 규정 준수 정보를 확인해야 할 때 비즈니스를 대표할 권한이 있는 실제 사람이에요. 하이퍼클래스는 대표자의 연락처와 직책 정보를 비즈니스 프로필에 저장해요. 그래서 심사가 필요할 때 알맞은 담당자를 비즈니스와 연결할 수 있어요.
 
-회사에 공인 대리인이 있다면 해당 정보를 여기에 추가해 주세요. 본인이 공인 대리인인 경우 본인의 정보를 입력하시면 됩니다.
+비즈니스를 대표할 권한이 본인에게 있다면 본인 정보를 입력하세요. 다른 사람이 그 역할을 맡고 있다면 그 사람의 정보를 입력하세요.
 
-![공인 대리인 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155052696050/original/znO5nZz3EJQxgy5Vd8n9iPYiFYK4NlIxxg.jpg?1756476600)
+## 공식 대표자 설정하기
 
-### 대리인 이름(Representative Name)
+1. 서브 계정에서 **설정**으로 이동하세요.
 
-내부 인사기록이나 법인 문서에 표시된 대리인의 법적 이름을 입력하세요. 별명이나 가명 대신 성명을 전체로 입력해 주세요.
+   ![설정 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155078174053/original/7-2N551w2Rll2npPoTShu0ahRGOqCuj4Vw.png?1786480603)
 
-### 이메일(Email)
+2. **비즈니스 프로필** 탭을 선택하세요.
 
-대리인이 확인하는 이메일 주소를 제공하세요. 이 주소로 인증 질문이 발송됩니다.
+   ![비즈니스 프로필 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155078174088/original/KTbvo7fjYZWhCmobdm8HRbsBsoVIuKVgtQ.png?1786480687)
 
-### 직책(Job Position)
+3. **공식 대표자** 섹션을 찾아 아래 정보를 입력하세요.
+   - **Representative Name**(대표자 이름): 사내 인사 기록이나 법인 기록에 있는 법적 이름을 입력하세요. 이름과 성을 모두 쓰고, 별명이나 가명은 쓰지 마세요.
+   - **Email**(이메일): 대표자가 확인하는 이메일 주소를 입력하세요. 인증 관련 질문이 이 주소로 전달돼요.
+   - **직책**: 비즈니스를 대표할 권한이 있음을 보여 주는 직함이나 역할을 입력하세요(예: Owner, CEO, Marketing Director, Compliance Officer).
+   - **전화번호**: 급하게 인증 전화나 SMS가 올 때 연락이 닿는 번호를 입력하세요. 국가 번호도 함께 입력하세요(예: +1).
 
-해당 인물이 사업을 대표할 권한이 있음을 보여주는 직함이나 역할을 명시하세요(예: 대표, CEO, 마케팅 디렉터, 컴플라이언스 담당자).
-
-### 전화번호(Phone Number)
-
-긴급한 인증 전화나 SMS를 위해 연결 가능한 전화번호를 입력하세요. 반드시 국가번호를 포함해 주세요(예: +1).
-
-### 정보 업데이트(Update Information)
-
-모든 정보 입력이 끝나면 파란색 'Update Information' 버튼을 클릭해서 변경사항을 적용하세요. 대리인의 직책이 바뀌거나 회사를 떠나게 되면 즉시 이 페이지를 업데이트해 주세요.
-
----
-*원문 최종 수정: Fri, 29 Aug, 2025 at 3:57 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+   ![공식 대표자 섹션 입력 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155052696050/original/znO5nZz3EJQxgy5Vd8n9iPYiFYK4NlIxxg.jpg?1756476600)

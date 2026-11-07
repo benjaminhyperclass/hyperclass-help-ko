@@ -1,114 +1,151 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 클라이언트 포털
+원문: /support/solutions/articles/155000001719-notifications-inside-client-portal
+번역일: 2026-11-06
+카테고리: 39-클라이언트-포털
 ---
 
-# 클라이언트 포털 내 알림 기능
+# 클라이언트 포탈 알림 확인하고 관리하기
 
-클라이언트 포털 알림(Notifications) 기능은 클라이언트 포털과 연결된 모든 하위 앱의 알림을 중앙 집중식 위치인 알림 탭에 통합합니다. 사용자는 애플리케이션 내에서 모든 알림에 편리하게 접근하고 관리할 수 있습니다.
+클라이언트 포탈과 그 안의 하위 앱에서 오는 알림은 모두 **알림** 탭 한곳에 모여요. 이 문서에서는 알림을 확인하는 방법, 이메일·푸시 알림을 설정하는 방법, 특정 커뮤니티 이메일의 구독을 취소하는 방법을 안내해요.
 
-**목차**
+## 알림 확인하기
 
-- [알림에 접근하는 방법](#알림에-접근하는-방법)
-- [어떤 알림을 받게 되나요?](#어떤-알림을-받게-되나요)
-- [알림 기본 설정 관리](#알림-기본-설정-관리)
-- [개별 사용자를 위한 알림 옵션](#개별-사용자를-위한-알림-옵션)
-- [포털 소유자를 위한 알림 제어](#포털-소유자를-위한-알림-제어)
-- [알림 기본 설정 관리 방법](#알림-기본-설정-관리-방법)
-- [알림 맞춤 설정의 장점](#알림-맞춤-설정의-장점)
+**알림** 탭에서는 클라이언트 포탈과 하위 앱의 알림을 한곳에서 확인할 수 있어요.
 
----
+- 앱 안의 **Bell icon**(종 아이콘)을 누르세요.
+- **코스**, **커뮤니티** 같은 하위 앱의 알림도 같은 곳에 함께 표시돼요.
+- 알림을 누르면 자세한 내용을 보거나 해당 작업을 바로 할 수 있어요.
 
-# **알림에 접근하는 방법**
+커뮤니티 활동은 멤버의 알림 설정에 따라 앱 내 알림과 이메일 알림으로 전달될 수 있어요.
 
-- 애플리케이션 내의 벨 아이콘으로 이동하세요.
-- 하위 앱(강의, 커뮤니티)의 알림을 포함한 모든 알림이 같은 곳에 나열됩니다.
-- 각 알림을 클릭하여 세부 사항을 보거나 관련 작업을 수행하세요.
+{% hint style="info" %}
+**커뮤니티**를 포함해 클라이언트 포탈로 보내는 모든 알림에는 요금이 부과돼요. 알림이 커뮤니티 게시글로 연결되면, 웹에서는 읽기 편하도록 게시글이 전용 전체 화면으로 열릴 수 있어요.
+{% endhint %}
 
-모든 커뮤니티 그룹의 모든 알림이 같은 곳에서 찾을 수 있습니다. 모든 앱 내 알림에 대해 사용자는 이메일 알림도 받게 됩니다.
+![알림 탭에 모인 클라이언트 포탈 알림 목록](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155082894526/original/IwOgUmmgCVXDNwWFJCwjKE6mRg11bBRxcg.png?1791492319)
 
-**참고: 클라이언트 포털(커뮤니티 포함)을 통해 전송되는 모든 알림은 과금됩니다.**
+## 받을 수 있는 알림 종류
 
-알림이 커뮤니티 게시물과 연결되어 있을 때, 게시물은 웹에서 쉽게 읽을 수 있도록 전용 전체 페이지 뷰로 열릴 수 있습니다.
+{% hint style="info" %}
+알림 종류별로 받을 수 있는 알림은 표에 정리되어 있어요. 세부 구독 취소 기능은 커뮤니티 이메일 알림 종류에 따라 지원 여부가 다를 수 있어요.
+{% endhint %}
 
-![클라이언트 포털 알림 접근](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155018494278/original/Qe4-RTcXgyFKdrRc9JzMQ7fqm62uNF2GcA.png?1706023715)
+## 알림 설정 알아보기
 
-## **어떤 알림을 받게 되나요?**
+클라이언트 포탈에서는 개별 사용자와 포탈 소유자가 알림을 받는 방식과 시점을 직접 조정할 수 있어요. 꼭 필요한 알림은 놓치지 않으면서 불필요한 알림은 줄일 수 있어요.
 
-알림 탭에서 접하게 될 알림 목록입니다:
+알림은 이메일로 받을 수 있고, 모바일 앱 사용자는 푸시 알림으로도 받을 수 있어요. 이벤트 종류별로 따로 설정할 수 있어요.
 
-| 앱 내 알림 유형 | 하위 앱 | 앱 내 알림 | 이메일 알림 |
-|---|---|---|---|
-| 댓글에서 태그됨 | 커뮤니티 | ![댓글 태그 앱내 알림](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023253272/original/lOc-Kp8cwObd4MgD_bBi_29enhjuTEkCwA.png?1710953413) | ![댓글 태그 이메일 알림](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155018502214/original/d4MMc_eBjN2Bgny-V3KASojeoySRanBveQ.png?1706026480) |
-| 게시물에서 태그됨 | 커뮤니티 | ![게시물 태그 앱내 알림](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023253274/original/ESBFQdGzvBlmc9zwB0ChsPHK8YZ3q7yBVQ.png?1710953416) | ![게시물 태그 이메일 알림](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155018502219/original/_W1rUb0tDktqOAd-UuZcpl34QoY1LXgSpA.png?1706026484) |
-| 댓글에서 @everyone | 커뮤니티 | ![댓글 @everyone 앱내 알림](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023253276/original/vZw-OBLnmyBi5BWxA-rxqE6P8xMFNQmdpw.png?1710953420) | ![댓글 @everyone 이메일 알림](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155018502098/original/XFksGeN0EURC08u0XSG0ftbjVGoIyqrDQw.png?1706026452) |
-| 게시물에서 @everyone | 커뮤니티 | ![게시물 @everyone 앱내 알림](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023253285/original/ly9Dit1Gkw4tY-zIKuZ8mnx6d77bNdRIng.png?1710953424) | ![게시물 @everyone 이메일 알림](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155018502220/original/Wbz1UinlOs0TWJf_HqdmKiDGriMJ3W50fQ.png?1706026487) |
-| 가입 요청 (사용자) | 커뮤니티 | ![가입 요청 사용자 앱내 알림](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023253290/original/FtlztiIe6L2pqGn_3Puv17qit1CUAWprQg.png?1710953427) | ![가입 요청 사용자 이메일 알림](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155018502248/original/qu_8aN8JznSmC_nXcRYG3m2-ucle6YlpdA.png?1706026493) |
-| 가입 요청 (관리자) | 커뮤니티 | ![가입 요청 관리자 앱내 알림](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023253297/original/qqxsCHYipptpVMKHjrNcbIg2Sz95pQ1xxQ.png?1710953429) | ![가입 요청 관리자 이메일 알림](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155018502235/original/nD_ABERtc1uOUBlL8M8PFZZcu9KPZHAhFg.png?1706026491) |
-| 멤버십 승인됨 | 커뮤니티 | ![멤버십 승인 앱내 알림](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023253298/original/Vt6-nboEgX1XH394gjHyHW6uhWDsgoGgJQ.png?1710953431) | ![멤버십 승인 이메일 알림](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155018502269/original/-jv8RYrBte3Fao-Lc0LGdS3L5piEtnNO0w.png?1706026497) |
-| 멤버십 거절됨 | 커뮤니티 | ![멤버십 거절 앱내 알림](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023253303/original/2Cu_uCnZxdOaEv1Ju3dznioexO0EPzHuMg.png?1710953438) | ![멤버십 거절 이메일 알림](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155018502271/original/hsxzOFMU55BHFiANq98aYOZfF8q0i2JFag.png?1706026500) |
-| 학습 탭에 새 강의 추가됨 (사용자) | 커뮤니티 | ![새 강의 추가 앱내 알림](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023253304/original/8Vi4Wfsbt4ZsxLo46rDQxAm5jFh5oT26Xg.png?1710953441) | ![새 강의 추가 이메일 알림](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155018502281/original/8SdgkFD_IBNiFGVlpV6PnYe8H5B_3aPHiA.png?1706026503) |
-| 새로운 좋아요 | 커뮤니티 | ![새 좋아요 앱내 알림](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023253307/original/Wi31UPHdfOaz3xJu8b5iqbRU2xF_IhMpGA.png?1710953443) | N/a |
-| 새로운 댓글 | 커뮤니티 | ![새 댓글 앱내 알림](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023253314/original/tOKdIb9Vohz-bsZL7M3QPQrWvIk9Ar2ubw.png?1710953446) | ![새 댓글 이메일 알림](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023253321/original/UtBQnKCJpJVerTtK4AfRWnkOxllKJHGmLg.png?1710953450) |
-| 댓글에 새로운 답글 | 커뮤니티 | ![댓글 답글 앱내 알림](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023253418/original/cLbHTWzBPbF7Yjh-74hd5l5hwbOLiHEw6w.png?1710953533) | ![댓글 답글 이메일 알림](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023253421/original/XzRdoEzGfCktA2dMEuyqtBV1n5p8kZn3cw.png?1710953542) |
+대상이 되는 커뮤니티 이메일은 다른 커뮤니티 이메일이나 플랫폼 이메일을 끄지 않고도, 특정 커뮤니티의 특정 알림 종류만 구독을 취소할 수 있어요.
 
-## 알림 기본 설정 관리
+## 개별 사용자가 설정할 수 있는 알림
 
-클라이언트 포털에는 개별 사용자와 포털 소유자 모두가 알림이 어떻게 그리고 언제 전달될지 관리할 수 있는 강력한 알림 제어 기능이 포함되어 있습니다. 이러한 설정을 통해 사용자는 불필요한 알림을 최소화하면서도 중요한 정보를 놓치지 않을 수 있습니다. 알림은 이메일 또는 푸시(모바일 앱 사용자용)로 전달될 수 있으며, 이벤트 유형별로 기본 설정을 맞춤 설정할 수 있습니다.
+이벤트 종류별로 이메일 알림과 푸시 알림을 받을지 정할 수 있어요. 나에게 맞게 알림을 조정하면서도 중요한 소식은 계속 받을 수 있어요.
 
-## **개별 사용자를 위한 알림 옵션**
+다음 이벤트 종류에서 이메일 알림과 푸시 알림을 각각 켜거나 끌 수 있어요.
 
-사용자는 이제 특정 유형의 이벤트에 대해 이메일 또는 푸시 알림을 받을지 완전히 제어할 수 있습니다. 이는 여전히 중요한 업데이트가 확인되도록 하면서 알림 피로를 피하는 개인화된 경험을 만드는 데 도움이 됩니다.
+- 커뮤니티 업데이트
+- 코스 수료증
+- 게시글 좋아요
+- 댓글 좋아요
 
-사용자는 다음 이벤트 유형에 대해 이메일과 푸시 알림을 독립적으로 활성화하거나 비활성화할 수 있습니다:
+알림 설정은 클라이언트 포탈의 **내 계정**에서 확인할 수 있어요.
 
-• 커뮤니티 업데이트
-• 강의 수료증
-• 게시물 좋아요
-• 댓글 좋아요
+![클라이언트 포탈의 내 계정에서 알림 설정을 여는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155082895462/original/daqZxxapNmHt_DQGjgftM2TYnK6reteebw.png?1791493697)
 
-모든 기본 설정은 클라이언트 포털의 **계정 관리** 섹션을 통해 접근할 수 있습니다.
+### 특정 커뮤니티 이메일 구독 취소하기
 
-## **포털 소유자를 위한 알림 제어**
+세부 구독 취소를 쓰면 관련 없는 다른 커뮤니티 이메일이나 플랫폼 이메일은 그대로 두고, 해당 커뮤니티 이메일 알림만 받지 않을 수 있어요. 이 설정은 이메일을 보낸 커뮤니티와 구독 취소 페이지에 표시된 알림 종류에만 적용돼요.
 
-포털 소유자는 특히 좋아요와 같은 참여 신호와 관련된 특정 알림 기본값을 구성할 수도 있습니다. 이러한 설정은 전체 포털에 적용되며 경우에 따라 개별 기본 설정을 재정의할 수 있습니다.
+대상 커뮤니티 이메일에서 **구독 취소**를 누르면 다음과 같이 진행돼요.
 
-소유자가 제어할 수 있는 설정은 다음과 같습니다:
+1. 확인 페이지에 표시된 커뮤니티 이름과 알림 종류를 확인하세요.
+2. 구독 취소 설정을 확인하세요.
+3. 해당 커뮤니티와 알림 종류에 맞는 이메일은 앞으로 오지 않아요.
+4. 그 커뮤니티의 다른 알림 종류는 그대로 와요.
+5. 다른 커뮤니티의 같은 알림 종류도 그대로 와요.
+6. 관련 없는 플랫폼 이메일도 계속 켜진 상태로 유지돼요.
 
-• 게시물 좋아요에 대한 이메일 알림 활성화 또는 비활성화
-• 댓글 좋아요에 대한 이메일 알림 활성화 또는 비활성화
+![커뮤니티 이메일 구독 취소 확인 페이지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155082895145/original/39vSP_1T9TfvpB-pq360dSvzJPFy64kZkA.png?1791493000)
 
-알림 설정이 포털 소유자에 의해 잠긴 경우, 사용자는 해당 옵션이 관리자에 의해 관리되고 있다는 툴팁을 보게 됩니다.
+{% hint style="info" %}
+구독 취소 링크가 올바르지 않거나, 이미 사용했거나, 만료되었다면 알림 설정은 바뀌지 않아요.
+{% endhint %}
 
-## **알림 기본 설정 관리 방법**
+## 포탈 소유자가 설정할 수 있는 알림
 
-사용자는 다음 단계를 따라 자신의 알림 기본 설정을 관리할 수 있습니다:
+포탈 소유자는 좋아요 같은 참여 알림의 기본값을 설정할 수 있어요. 이 설정은 포탈 전체에 적용되며, 경우에 따라 개별 사용자의 설정보다 우선할 수 있어요.
 
-1. **클라이언트 포털**, **커뮤니티**, 또는 **강의** 영역으로 이동합니다.
-2. 오른쪽 상단의 **프로필 아이콘**을 클릭합니다.
-3. 드롭다운 메뉴에서 **계정 관리**를 선택합니다.
-4. 왼쪽 메뉴에서 **알림**을 선택합니다.
-5. 토글 스위치를 사용하여 각 이벤트 유형에 대한 **이메일** 또는 **푸시** 알림을 켜거나 끕니다.
+소유자가 설정할 수 있는 항목은 다음과 같아요.
 
-## **알림 맞춤 설정의 장점**
+- 게시글 좋아요 이메일 알림 켜기/끄기
+- 댓글 좋아요 이메일 알림 켜기/끄기
 
-**더 큰 개인화**
+포탈 소유자가 알림 설정을 잠가 두면, 사용자 화면에 관리자가 관리하는 옵션이라는 안내 툴팁이 표시돼요.
 
-사용자는 받은편지함 혼잡을 줄이고 불필요한 알림을 피하기 위해 알림 기본 설정을 맞춤 설정할 수 있습니다.
+## 내 알림 설정 바꾸기
 
-**푸시 알림 지원**
+계정 설정에서 알림 설정을 직접 바꿀 수 있어요.
 
-푸시 알림은 이제 이메일과 별도로 독립적으로 관리될 수 있어 모바일 사용자에게 더 많은 유연성을 제공합니다.
+1. **클라이언트 포탈**, **커뮤니티**, **코스** 영역으로 이동하세요.
+2. 오른쪽 위의 **profile icon**(프로필 아이콘)을 누르세요.
+3. 드롭다운 메뉴에서 **내 계정**을 선택하세요.
+4. 왼쪽 메뉴에서 **알림**을 선택하세요.
+5. 이벤트 종류별로 토글 스위치를 눌러 이메일 알림과 푸시 알림을 켜거나 끄세요.
 
-**참여도 인식**
+구독 취소 링크로 꺼 둔 커뮤니티 이메일 알림은 **알림 설정**에서 언제든 다시 켤 수 있어요.
 
-사용자는 자신의 콘텐츠가 좋아요를 받을 때 알림을 받을 수 있어 커뮤니티와의 연결을 유지하는 데 도움이 됩니다.
+![내 계정의 알림 화면에서 이메일·푸시 알림 토글을 조정하는 모습](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155082894739/original/owZB2WWVPVFWca6u5By6VMN-AfXTCDLfJA.png?1791492532)
 
-**간소화된 사용자 경험**
+## 알림 설정을 사용자에 맞게 바꾸면 좋은 점
 
-명확한 툴팁은 알림 설정이 포털 소유자에 의해 제어되고 있을 때를 나타내어 혼란과 지원 문제를 줄입니다.
+알림 설정을 쓰면 중요한 소식은 놓치지 않고, 나에게 필요한 알림만 골라 받을 수 있어요.
 
----
-*원문 최종 수정: Wed, 4 Feb, 2026 at 4:31 AM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+### 나에게 맞는 알림
+
+받은편지함이 어수선해지지 않도록, 불필요한 알림은 줄이고 필요한 알림만 받도록 조정할 수 있어요.
+
+### 푸시 알림 지원
+
+이메일과 별도로 푸시 알림도 따로 관리할 수 있어서 모바일 사용자가 더 유연하게 쓸 수 있어요.
+
+### 참여 알림
+
+내가 올린 콘텐츠에 좋아요가 달리면 알림을 받아 커뮤니티와 계속 연결될 수 있어요.
+
+### 더 쉬운 사용 환경
+
+알림 설정을 포탈 소유자가 관리하고 있으면 툴팁으로 알려 줘요. 그래서 헷갈리거나 문의할 일이 줄어들어요.
+
+## 자주 묻는 질문
+
+### 커뮤니티 이메일 전체를 끄지 않고 이메일 하나만 구독 취소할 수 있나요?
+
+네, 가능해요. 대상이 되는 커뮤니티 이메일은 이메일을 보낸 커뮤니티의 특정 알림 종류만 구독을 취소할 수 있어요. 다른 커뮤니티 이메일과 플랫폼 이메일은 그대로 유지돼요.
+
+### 구독을 취소하면 같은 커뮤니티의 다른 알림도 오지 않나요?
+
+아니요. 그 커뮤니티의 다른 알림 종류는 기존 알림 설정에 따라 계속 와요.
+
+### 다른 커뮤니티의 같은 알림 종류도 꺼지나요?
+
+아니요. 구독 취소 설정은 구독 취소 확인 페이지에 표시된 커뮤니티에만 적용돼요.
+
+### 구독 취소 링크가 올바르지 않거나 만료됐거나 이미 사용했다면 어떻게 되나요?
+
+알림 설정은 바뀌지 않아요. 대신 **알림 설정**에서 직접 확인하고 바꾸세요.
+
+### 구독을 취소한 커뮤니티 이메일 알림을 다시 켜려면 어떻게 하나요?
+
+**클라이언트 포탈**, **커뮤니티**, **코스** 영역에서 **profile icon**(프로필 아이콘)을 누르고 **내 계정**을 선택하세요. 그다음 **알림**을 열어 해당 알림을 다시 켜면 돼요.
+
+### 알림 설정 중 하나를 바꿀 수 없어요.
+
+일부 알림 설정은 포탈 소유자가 관리할 수 있어요. 설정이 잠겨 있으면 관리자가 관리하는 옵션이라는 툴팁이 표시돼요.
+
+## 관련 문서
+
+- [커뮤니티 설정, 사용자 지정, 관리 방법](../../17-멤버십-커뮤니티/how-to-setup-customize-and-manage-your-communities.md)
+- [클라이언트 포탈의 코스 알림 설정](notification-preferences-for-courses-in-the-client-portal.md)
+- [클라이언트 포탈 - 연락처 대상 파일 공유 알림](../client-portal-file-share-notifications-for-contacts.md)
+- [클라이언트 포털 앱 - 사용자 지정 모바일 앱 알림](client-portal-app-custom-mobile-app-notifications.md)

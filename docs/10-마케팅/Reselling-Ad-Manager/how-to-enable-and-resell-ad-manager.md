@@ -1,203 +1,204 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 10-마케팅 > Reselling Ad Manager
+원문: /support/solutions/articles/155000004261-enable-and-resell-ad-manager
+번역일: 2026-11-06
+카테고리: 10-마케팅
 ---
 
-# 광고 관리자(Ad Manager) 활성화 및 재판매 방법
+# 광고 관리자 켜기와 재판매 설정
 
-이 글에서는 에이전시가 하위 계정에 광고 관리자를 활성화하고 재판매하는 방법을 설명합니다. 설정 단계, 재판매 가격 옵션, 클라이언트 온보딩 프로세스, 청구 세부 사항을 다루어 Hyperclass 플랫폼을 통한 광고 서비스 수익화를 효율적으로 도와드립니다.
+에이전시 관리자가 서브 계정에 **광고 관리자**(Ad Manager)를 켜고 재판매하는 방법을 안내해요. 설정 단계, 재판매 가격 옵션, 고객이 처음 사용하는 흐름, 결제 내용을 다뤄요.
 
-## 목차
+{% hint style="info" %}
+문서에 나온 금액(달러)과 요금제 이름은 참고용이에요. 하이퍼클래스에서 실제로 적용되는 요금은 [요금제 안내](../../00-자주묻는질문/pricing-plans.md)와 [AI·SMS·음성 사용료](../../00-자주묻는질문/usage-costs.md)를 확인하세요.
+{% endhint %}
 
-- [광고 관리자란?](#광고-관리자란)
-- [사전 요구사항](#사전-요구사항)
-- [SaaS 구성 도구를 사용하여 하위 계정에 광고 관리자 활성화하기](#saas-구성-도구를-사용하여-하위-계정에-광고-관리자-활성화하기)
-- [광고 관리자 재판매 설정](#광고-관리자-재판매-설정)
-  - [에이전시 레벨에서](#에이전시-레벨에서)
-- [특정 클라이언트/하위 계정을 위한 맞춤형 제안](#특정-클라이언트하위-계정을-위한-맞춤형-제안)
-- [광고 관리자 무료 제공](#광고-관리자-무료-제공)
-- [특정 클라이언트의 광고 관리자 비활성화](#특정-클라이언트의-광고-관리자-비활성화)
-- [클라이언트가 광고 관리자를 발견하고 구매하는 방법](#클라이언트가-광고-관리자를-발견하고-구매하는-방법)
-- [청구 및 구독 이해하기](#청구-및-구독-이해하기)
-  - [에이전시의 경우](#에이전시의-경우)
-  - [하위 계정의 경우](#하위-계정의-경우)
-- [마지막 참고사항](#마지막-참고사항)
+{% hint style="info" %}
+광고 관리자는 현재 에이전시에 기본 비용 $0으로 제공돼요. SaaS 플랜에 광고 관리자를 넣을 때는 **SaaS 구성기**에 표시되는 현재 비용을 확인하세요. 해당되는 애드온 비용도 SaaS 플랜 가격에 반영하세요.
+{% endhint %}
+
+---
 
 ## 광고 관리자란?
 
-광고 관리자(Ad Manager)는 에이전시가 플랫폼 내에서 클라이언트(하위 계정)를 위한 광고 서비스를 직접 제공하고 관리할 수 있게 해주는 Hyperclass 기능입니다.
+광고 관리자는 에이전시가 하이퍼클래스 안에서 고객에게 광고 서비스를 만들어 주고, 관리하고, 재판매할 수 있는 기능이에요.
 
-에이전시는 다음을 할 수 있습니다:
+에이전시와 서브 계정은 Meta(Facebook, Instagram), Google, LinkedIn 같은 지원 광고 플랫폼의 캠페인을 관리할 수 있어요.
 
-- 클라이언트를 위한 광고 캠페인을 생성, 모니터링 및 최적화
-- 자체 가격을 설정하고 하위 계정에 서비스 재판매
-- Meta, Google, LinkedIn 광고 등의 플랫폼에서 캠페인 관리 간소화
+에이전시는 광고 관리자로 다음을 할 수 있어요.
 
-기존 광고 관리자 플랫폼과 달리, 이 도구는 에이전시가 Hyperclass 내에서 광고 서비스를 효율적으로 패키지화하고 수익화하도록 설계되었습니다.
+- 고객을 위한 광고 캠페인을 만들고, 모니터링하고, 관리해요.
+- 광고 관리자 이용에 대한 재판매 가격을 직접 정해요.
+- 선택한 서브 계정에는 광고 관리자를 무료로 제공해요.
+- 해당되는 SaaS 플랜에 광고 관리자를 포함해요.
+- 지원되는 플랫폼의 광고 활동을 한곳에서 관리해요.
 
-**참고:** 광고 관리자는 광고 서비스를 재판매하고 관리할 수 있는 도구를 제공하는 SaaS 기능입니다. 광고 카피라이팅이나 크리에이티브 디자인은 포함되지 않으며, 이는 에이전시가 도구와 함께 제공하기로 선택할 수 있는 서비스의 일부로 남아있습니다.
-
-## 사전 요구사항
-
-클라이언트를 위한 광고 관리자 설정 전에 다음을 확인하세요:
-
-- **에이전시 Stripe 계정이 연결되어 있어야 합니다.**
-
-클라이언트로부터 월간 구독 결제를 수집하는 데 필요합니다.
-
-- 에이전시 대시보드에 Stripe 연결 방법 알아보기
-
-Stripe가 연결되면 에이전시 설정의 Reselling 탭을 통해 재판매 가격 및 구독을 관리할 수 있습니다.
+{% hint style="info" %}
+광고 관리자는 광고 캠페인을 만들고 관리하는 도구를 제공해요. 광고 문구 작성, 크리에이티브 디자인, 캠페인 전략 같은 서비스는 자동으로 포함되지 않아요. 에이전시가 따로 제공할 수 있어요.
+{% endhint %}
 
 ---
 
-## SaaS 구성 도구를 사용하여 하위 계정에 광고 관리자 활성화하기
+## 시작하기 전에
 
-- SaaS 서비스를 제공하는 경우, Agency view(에이전시 보기) > SaaS Configurator(SaaS 구성 도구)로 이동하세요.
-- 활성 SaaS 플랜을 선택하고 Edit Details(세부사항 편집)를 클릭하세요.
-- Addons Tab(애드온 탭)을 열고 Ad Manager(광고 관리자) 타일이 체크되어 있는지 확인하세요.
-- Save(저장)를 클릭하여 변경사항을 적용하세요.
+고객에게 광고 관리자를 설정하기 전에 다음을 확인하세요.
 
-![SaaS 구성 도구에서 광고 관리자 활성화](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055975863/original/wx3QoYLQlwrtF9voCsyMgMviQAIRwzIUoA.png?1760452667)
+에이전시의 Stripe 계정이 연결되어 있어야 해요.
 
-참고: 모든 에이전시는 무료로 광고 관리자에 접근할 수 있습니다. "You Pay(에이전시 비용)"는 $0로 고정됩니다.
+- 고객에게 월 구독료를 받으려면 꼭 필요해요.
+- 연결 방법은 '에이전시 대시보드에 Stripe 연결하기' 문서를 참고하세요.
+
+Stripe를 연결하면 **에이전시 설정**의 **재판매** 탭에서 재판매 가격과 구독을 관리할 수 있어요.
+
+---
+
+## SaaS 구성기로 서브 계정에 광고 관리자 켜기
+
+1. SaaS 서비스를 제공한다면 **에이전시 보기 > SaaS 구성기**로 이동하세요.
+2. 사용 중인 SaaS 플랜을 선택하고 **세부 정보 수정**을 클릭하세요.
+3. **애드온** 탭을 열고 **광고 관리자** 타일이 체크되어 있는지 확인하세요.
+4. **저장**을 클릭해 변경사항을 적용하세요.
+
+   ![SaaS 구성기의 애드온 탭에서 광고 관리자 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055975863/original/wx3QoYLQlwrtF9voCsyMgMviQAIRwzIUoA.png?1760452667)
+
+{% hint style="info" %}
+모든 에이전시는 광고 관리자를 무료로 쓸 수 있어요. **귀하 지불 금액**은 $0으로 고정돼 있어요.
+{% endhint %}
 
 ---
 
 ## 광고 관리자 재판매 설정
 
-하위 계정에 광고 관리자를 무료로 제공하거나 자체 가격으로 재판매할 수 있습니다.
+서브 계정에 광고 관리자를 무료로 제공하거나, 원하는 가격에 재판매할 수 있어요.
 
-### 에이전시 레벨에서
+### 에이전시 전체에 설정하기
 
-- Agency view(에이전시 보기) > Reselling(재판매) 탭으로 이동하세요.
-- Ad Manager(광고 관리자) 섹션/카드를 찾으세요.
-- 엄지 아이콘을 사용하여 재판매 선호도를 선택하세요:
-  - ？ Yes(예): 광고 관리자를 재판매할 계획입니다.
-  - ？ No(아니오): 재판매하지 않습니다.
-- Your Price(고객 가격) 필드에 하위 계정이 지불할 재판매 가격을 입력하세요.
-  기본값은 $0입니다(하위 계정에 무료).
-- Save(저장)를 클릭하세요.
+1. **에이전시 보기 > 재판매** 탭으로 이동하세요.
+2. **광고 관리자** 카드를 찾으세요.
+3. 엄지 아이콘으로 재판매 여부를 선택하세요.
 
-![광고 관리자 재판매 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055979027/original/g8MMUNpdt5rDwPtW-snEps8foFAQsMkWPQ.png?1760453940)
+   - 예: 광고 관리자를 재판매할 계획이에요.
+   - 아니요: 재판매할 계획이 없어요.
+4. **설정 가격** 필드에 서브 계정이 지불할 재판매 가격을 입력하세요.
 
-이 가격은 하위 계정 레벨에서 맞춤 설정하지 않는 한 모든 하위 계정에 자동으로 적용됩니다.
+   - 기본값은 **$0**이에요(서브 계정은 무료).
+5. **저장**을 클릭하세요.
 
----
+   ![재판매 탭의 광고 관리자 카드와 설정 가격 입력](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055979027/original/g8MMUNpdt5rDwPtW-snEps8foFAQsMkWPQ.png?1760453940)
 
-## 특정 클라이언트/하위 계정을 위한 맞춤형 제안
-
-특정 클라이언트의 플랜이나 패키지에 맞춰 광고 관리자 가격을 개인화할 수 있습니다.
-
-- Agency view(에이전시 보기) > Sub-Accounts(하위 계정)로 이동하세요.
-- 맞춤 설정할 클라이언트(하위 계정)를 선택하세요.
-- Manage Client(클라이언트 관리) > Reselling Tab(재판매 탭)을 클릭하세요.
-
-![클라이언트 관리 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055980026/original/NkI94A95EP0xg-Jsl7nxDVOoy3nv3SPJdw.png?1760454419)
-
-- Ad Manager(광고 관리자) 섹션으로 스크롤하세요.
-
-![광고 관리자 개별 가격 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055980502/original/Lgrf-159DdBPWmlMCvj9sYt4Qztu8NKXnw.png?1760454638)
-
-- 이 클라이언트를 위한 맞춤형 Your Customers Pay(고객 지불 금액)을 설정하세요.
-- 변경사항을 저장하세요.
-
-참고:
-
-- 클라이언트가 이미 광고 관리자를 활성화한 경우, 가격 변경은 새 구독에만 적용되며 기존 구독은 현재 요율을 유지합니다.
-- 가격이 설정되고 고객이 해당 가격으로 구독하면, 구독을 취소하고 새 가격으로 재구독하지 않는 한 재판매 금액을 변경할 수 없습니다.
+이 가격은 서브 계정 단위로 따로 바꾸지 않는 한 모든 서브 계정에 자동으로 적용돼요.
 
 ---
 
-## 광고 관리자 무료 제공
+## 특정 고객(서브 계정)에게 맞춤 가격 적용하기
 
-일부 클라이언트에게 광고 관리자를 무료 애드온으로 포함하려면:
+고객의 플랜이나 패키지에 맞게 광고 관리자 가격을 따로 정할 수 있어요.
 
-- Agency view(에이전시 보기) > Sub-Accounts(하위 계정)로 이동하세요.
-- 광고 관리자를 제공할 클라이언트를 선택하세요.
-- Manage Client(클라이언트 관리) > Reselling Tab(재판매 탭)을 클릭하세요.
+1. **에이전시 보기 > 서브 계정**으로 이동하세요.
+2. 가격을 따로 정할 고객(서브 계정)을 선택하세요.
+3. **고객 관리 > 재판매** 탭을 클릭하세요.
 
-![무료 광고 관리자 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055981229/original/aFCRivQJgQ3iIw_jv_KoGeM1KH-DYobADA.png?1760455075)
+   ![고객 관리의 재판매 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055980026/original/NkI94A95EP0xg-Jsl7nxDVOoy3nv3SPJdw.png?1760454419)
+4. **광고 관리자** 섹션까지 스크롤하세요.
 
-- Ad Manager(광고 관리자) 하위에서 Deploy Ad Manager Directly(광고 관리자 직접 배포) 체크박스를 선택하면 Your Customers Pay(고객 지불 금액)이 자동으로 $0으로 설정됩니다.
+   ![재판매 탭의 광고 관리자 섹션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055980502/original/Lgrf-159DdBPWmlMCvj9sYt4Qztu8NKXnw.png?1760454638)
+5. 이 고객에게 적용할 **고객이 지불하는 금액**을 입력하세요.
+6. 변경사항을 저장하세요.
 
-![직접 배포 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055981745/original/4ckpmK8yNdNgKNyj5451bWWl6JpYEozoeQ.png?1760455383)
-
-- Save(저장)를 클릭하세요.
-
-해당 하위 계정은 결제 없이 바로 광고 관리자에 접근할 수 있습니다.
-
----
-
-## 특정 클라이언트의 광고 관리자 비활성화
-
-특정 하위 계정의 광고 관리자 접근을 제거하거나 방지하려면:
-
-- Agency View(에이전시 보기) > Sub-Accounts(하위 계정)로 이동하세요.
-- Manage Client(클라이언트 관리) > Reselling Tab(재판매 탭)을 열어주세요.
-- Ad Manager(광고 관리자) 하위에서 토글을 OFF로 설정하세요.
-- Save(저장)를 클릭하세요.
-
-![광고 관리자 비활성화](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055982306/original/V9gNvQLa07v3FJ0sdJ9eEAgokc532onLog.png?1760455613)
-
-참고: 클라이언트가 이미 광고 관리자를 구매하거나 활성화한 경우, 해당 계정에서 기능을 소급적으로 비활성화할 수 없습니다.
+{% hint style="info" %}
+- 고객이 이미 광고 관리자를 쓰고 있다면 가격 변경은 새 구독에만 적용돼요. 기존 구독은 현재 요금 그대로 유지돼요.
+- 가격을 정하고 고객이 그 가격으로 구독하면, 구독을 취소하고 고객이 새 가격으로 다시 구독하지 않는 한 재판매 금액을 바꿀 수 없어요.
+{% endhint %}
 
 ---
 
-## 클라이언트가 광고 관리자를 발견하고 구매하는 방법
+## 광고 관리자를 무료로 제공하기
 
-클라이언트는 자신의 계정에서 직접 광고 관리자를 찾고 활성화할 수 있습니다:
+일부 고객에게 광고 관리자를 무료 애드온으로 제공하려면 다음과 같이 하세요.
 
-- 하위 계정에 로그인합니다.
-- 좌측 메뉴에서 Marketing(마케팅) > Ad Manager(광고 관리자)로 이동합니다.
-- 재판매 구성에 따라 다음 중 하나의 CTA가 표시됩니다:
+1. **에이전시 보기 > 서브 계정**으로 이동하세요.
+2. 광고 관리자를 제공할 고객을 선택하세요.
+3. **고객 관리 > 재판매** 탭을 클릭하세요.
 
-**"Activate Ad Manager for $X/month"(월 $X에 광고 관리자 활성화)**: 재판매 가격 > $0인 경우
+   ![고객 관리의 재판매 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055981229/original/aFCRivQJgQ3iIw_jv_KoGeM1KH-DYobADA.png?1760455075)
+4. **광고 관리자** 아래에서 **Deploy Ad Manager Directly**(광고 관리자 바로 배포) 체크박스를 선택하세요. **고객이 지불하는 금액**이 자동으로 $0이 돼요.
 
-![유료 광고 관리자 활성화](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055982902/original/UUHlWmnhE-mv0FYweGOECUTV6Hpj6PorVg.png?1760455887)
+   ![Deploy Ad Manager Directly 체크박스 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055981745/original/4ckpmK8yNdNgKNyj5451bWWl6JpYEozoeQ.png?1760455383)
+5. **저장**을 클릭하세요.
 
-**"Get Started"(시작하기)**: 재판매 가격 = $0인 경우. 고객이 보게 될 일회성 온보딩 화면으로 직접 연결됩니다.
-
-![무료 광고 관리자 시작](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055983124/original/Ax8xp0PSFoc-6Fw3dQEaob9ujuVtQeER_A.png?1760456059)
-
-클라이언트가 광고 관리자를 활성화하면:
-
-- 클라이언트의 결제 수단과 에이전시의 Stripe 계정 간에 구독이 자동으로 생성됩니다.
-- 그런 다음 클라이언트는 광고 관리자 온보딩 프로세스를 안내받습니다.
-
-## 청구 및 구독 이해하기
-
-### 에이전시의 경우
-
-- 에이전시는 더 이상 Hyperclass에 광고 관리자 비용을 지불하지 않습니다 — 에이전시 비용은 $0입니다.
-- 에이전시는 하위 계정에 대한 재판매 가격을 자유롭게 정의할 수 있습니다.
-- Utility 또는 Founder's 플랜 하에 이미 광고 관리자를 사용하는 하위 계정이 있는 기존 에이전시는 계속해서 해당 플랜 카드를 보게 됩니다 — 취소나 청구 변경은 없습니다.
-
-![기존 플랜 유지](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055983592/original/9y_GH7kv2sBx1b9Z7yY40CSkIgM8jB48kQ.png?1760456233)
-
-![플랜 세부사항](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055983957/original/kTCvG1HbZD7YkmdvmW8bAQnAidmtdMtpTQ.png?1760456361)
-
-### 하위 계정의 경우
-
-- 에이전시에 광고 관리자 비용을 지불하는 하위 계정은 현재 요율을 그대로 유지합니다.
-- 새로운 하위 계정은 에이전시의 재판매 가격 설정($0 또는 맞춤형)을 따릅니다.
-
-청구 세부사항을 보려면:
-
-- Agency Settings(에이전시 설정) > Billing(청구)로 이동하세요.
-- Ad Manager(광고 관리자) 카드를 찾으세요.
-- 재판매 설정 하에 각 하위 계정이 현재 지불하고 있는 금액을 확인하세요.
+이 서브 계정은 결제 화면 없이 바로 광고 관리자를 쓸 수 있어요.
 
 ---
 
-## 마지막 참고사항
+## 특정 고객에게 광고 관리자 제공 중단하기
 
-- 광고 관리자는 에이전시에게 항상 무료입니다 — "You Pay = $0."
-- 에이전시는 선택한 요율로 재판매를 통해 수익을 낼 수 있습니다.
-- 기존 구독은 그대로 유지됩니다 — 연속성과 안정성이 보장됩니다.
-- ？ / ？ 아이콘을 사용하여 에이전시가 광고 관리자를 재판매할 계획인지 표시하세요.
+아직 광고 관리자를 활성화하거나 구매하지 않은 서브 계정에는 광고 관리자 제공을 막을 수 있어요.
+
+서브 계정에 광고 관리자 제공을 중단하려면 다음과 같이 하세요.
+
+1. **에이전시 보기 > 서브 계정**으로 이동하세요.
+2. **고객 관리 > 재판매**를 여세요.
+3. **광고 관리자** 항목에서 기능을 끄세요.
+4. **저장**을 클릭하세요.
+
+{% hint style="info" %}
+고객이 이미 광고 관리자를 구매했거나 활성화했다면, 제공을 중단해도 그 고객의 기존 광고 관리자 이용 권한이나 구독은 없어지지 않아요.
+{% endhint %}
+
+![광고 관리자 제공 중단 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055982306/original/V9gNvQLa07v3FJ0sdJ9eEAgokc532onLog.png?1760455613)
+
+{% hint style="info" %}
+고객이 광고 관리자를 구매했거나 활성화한 뒤에는 해당 계정에서 이 기능을 소급해서 끌 수 없어요.
+{% endhint %}
 
 ---
-*원문 최종 수정: 2025년 10월 14일 화요일 오전 10시 45분*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+
+## 고객이 광고 관리자를 찾고 구매하는 방법
+
+고객은 자기 계정에서 바로 광고 관리자를 찾아 활성화할 수 있어요.
+
+1. 자신의 서브 계정에 로그인해요.
+2. 왼쪽 메뉴에서 **마케팅 > 광고 관리자**로 이동해요.
+3. 에이전시의 재판매 설정에 따라 다음 중 하나가 표시돼요.
+
+   - **Activate Ad Manager for $X/month**(광고 관리자를 월 $X에 활성화): 재판매 가격이 $0보다 클 때 표시돼요.
+
+     ![재판매 가격이 있을 때 표시되는 활성화 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055982902/original/UUHlWmnhE-mv0FYweGOECUTV6Hpj6PorVg.png?1760455887)
+   - **시작하기**: 재판매 가격이 $0일 때 표시돼요. 고객이 처음 한 번 보게 되는 시작 화면이에요.
+
+     ![재판매 가격이 $0일 때 표시되는 시작하기 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055983124/original/Ax8xp0PSFoc-6Fw3dQEaob9ujuVtQeER_A.png?1760456059)
+
+고객이 광고 관리자를 활성화하면 다음과 같이 진행돼요.
+
+- 고객의 결제 수단과 에이전시의 Stripe 계정 사이에 구독이 자동으로 만들어져요.
+- 이어서 고객이 광고 관리자 시작 안내를 따라 진행해요.
+
+---
+
+## 결제와 구독 이해하기
+
+### 에이전시
+
+- 에이전시는 더 이상 광고 관리자 비용을 하이퍼클래스에 내지 않아요. **에이전시 비용은 $0**이에요.
+- 서브 계정에 적용할 재판매 가격은 자유롭게 정할 수 있어요.
+- **유틸리티** 또는 **Founder’s** 플랜으로 이미 광고 관리자를 쓰는 서브 계정이 있는 기존 에이전시에는 해당 플랜 카드가 계속 표시돼요. **취소나 결제 변경은 없어요.**
+
+  ![기존 플랜 카드 화면 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055983592/original/9y_GH7kv2sBx1b9Z7yY40CSkIgM8jB48kQ.png?1760456233)![기존 플랜 카드 화면 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155055983957/original/kTCvG1HbZD7YkmdvmW8bAQnAidmtdMtpTQ.png?1760456361)
+
+### 서브 계정
+
+- 에이전시에 광고 관리자 요금을 내고 있는 서브 계정은 현재 요금으로 계속 이용해요.
+- 새 서브 계정은 에이전시의 재판매 가격 설정($0 또는 직접 정한 가격)을 따라요.
+
+결제 내용을 확인하려면 다음과 같이 하세요.
+
+1. **에이전시 설정 > 청구/결제**로 이동하세요.
+2. **광고 관리자** 카드를 찾으세요.
+3. 재판매 설정에 따라 각 서브 계정이 지금 얼마를 내고 있는지 확인하세요.
+
+---
+
+## 마지막으로 알아 둘 점
+
+- 광고 관리자는 **에이전시에 항상 무료**예요. **귀하 지불 금액**은 $0이에요.- 에이전시는 원하는 가격으로 **재판매해서 수익을 낼 수 있어요.**
+- **기존 구독은 그대로 유지돼요.**
+- 엄지 아이콘으로 에이전시가 광고 관리자를 재판매할 계획인지 표시하세요.

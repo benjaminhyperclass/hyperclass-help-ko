@@ -1,193 +1,213 @@
 ---
-번역일: 2026-04-09T00:00:00.000Z
-카테고리: 99-리커버리
+원문: /support/solutions/articles/155000005284-run-a-high-converting-mortgage-brokerage-with-smart-scheduling-communication-and-deal-flow-manageme
+번역일: 2026-11-06
+카테고리: 04-캘린더-예약
 ---
 
-# 스마트 예약, 커뮤니케이션, 거래 흐름 관리로 고수익 모기지 중개업 운영하기
+# 모기지 중개업 운영 플레이북: 스마트 예약, 고객 소통, 딜 흐름 관리
 
-## 스마트 예약, 커뮤니케이션, 거래 흐름 관리로 고수익 모기지 중개업 운영하기
+모기지 중개업에서 예약, 리드 후속 관리, 서류 수집, 결제, 리포팅을 하이퍼클래스로 자동화하는 5단계 가이드예요. 반복 업무는 시스템에 맡기고 대출 실행에 집중하고 싶을 때 참고하세요.
 
-목차
+## 고객 소통, 파이프라인, 서류 업무를 따라가기가 버거우신가요?
 
-* [1단계: 예약 스케줄링 자동화](run-a-high-converting-mortgage-brokerage-with-smart-scheduling-communication-and.md#1단계-예약-스케줄링-자동화)
-  * [왜 중요한가요?](run-a-high-converting-mortgage-brokerage-with-smart-scheduling-communication-and.md#왜-중요한가요)
-  * [1.1 차용자가 직접 예약하도록 하기](run-a-high-converting-mortgage-brokerage-with-smart-scheduling-communication-and.md#11-차용자가-직접-예약하도록-하기)
-  * [1.2 스마트 예약 리마인더 전송](run-a-high-converting-mortgage-brokerage-with-smart-scheduling-communication-and.md#12-스마트-예약-리마인더-전송)
-  * [1.3 적절한 LO 또는 팀에 예약 배정](run-a-high-converting-mortgage-brokerage-with-smart-scheduling-communication-and.md#13-적절한-lo-또는-팀에-예약-배정)
-* [2단계: 리드 및 고객 후속 관리 자동화](run-a-high-converting-mortgage-brokerage-with-smart-scheduling-communication-and.md#2단계-리드-및-고객-후속-관리-자동화)
-  * [왜 중요한가요?](run-a-high-converting-mortgage-brokerage-with-smart-scheduling-communication-and.md#왜-중요한가요)
-  * [2.1 콜드 리드 자동 후속 관리](run-a-high-converting-mortgage-brokerage-with-smart-scheduling-communication-and.md#21-콜드-리드-자동-후속-관리)
-  * [2.2 기존 고객 및 추천 파트너 관리](run-a-high-converting-mortgage-brokerage-with-smart-scheduling-communication-and.md#22-기존-고객-및-추천-파트너-관리)
-  * [2.3 AI로 FAQ 응답 및 잠재고객 사전 자격 심사](run-a-high-converting-mortgage-brokerage-with-smart-scheduling-communication-and.md#23-ai로-faq-응답-및-잠재고객-사전-자격-심사)
-* [3단계: 문서, 할 일, 거래 흐름 간소화](run-a-high-converting-mortgage-brokerage-with-smart-scheduling-communication-and.md#3단계-문서-할-일-거래-흐름-간소화)
-  * [왜 중요한가요?](run-a-high-converting-mortgage-brokerage-with-smart-scheduling-communication-and.md#왜-중요한가요)
-  * [3.1 모든 대출을 한 곳에서 추적](run-a-high-converting-mortgage-brokerage-with-smart-scheduling-communication-and.md#31-모든-대출을-한-곳에서-추적)
-  * [3.2 문서 요청 자동화](run-a-high-converting-mortgage-brokerage-with-smart-scheduling-communication-and.md#32-문서-요청-자동화)
-  * [3.3 상태 업데이트 자동화](run-a-high-converting-mortgage-brokerage-with-smart-scheduling-communication-and.md#33-상태-업데이트-자동화)
-* [4단계: 결제 및 수수료 추적 자동화 (해당되는 경우)](run-a-high-converting-mortgage-brokerage-with-smart-scheduling-communication-and.md#4단계-결제-및-수수료-추적-자동화-해당되는-경우)
-  * [4.1 결제 요청 생성 및 전송](run-a-high-converting-mortgage-brokerage-with-smart-scheduling-communication-and.md#41-결제-요청-생성-및-전송)
-  * [4.2 지급 완료 vs 미지급 상태 추적](run-a-high-converting-mortgage-brokerage-with-smart-scheduling-communication-and.md#42-지급-완료-vs-미지급-상태-추적)
-* [5단계: 리포팅 및 비즈니스 인텔리전스 최적화](run-a-high-converting-mortgage-brokerage-with-smart-scheduling-communication-and.md#5단계-리포팅-및-비즈니스-인텔리전스-최적화)
-  * [왜 중요한가요?](run-a-high-converting-mortgage-brokerage-with-smart-scheduling-communication-and.md#왜-중요한가요)
-  * [5.1 클로징이 어디서 오는지 파악](run-a-high-converting-mortgage-brokerage-with-smart-scheduling-communication-and.md#51-클로징이-어디서-오는지-파악)
-  * [5.2 성사율 및 대출 파이프라인 건전성 추적](run-a-high-converting-mortgage-brokerage-with-smart-scheduling-communication-and.md#52-성사율-및-대출-파이프라인-건전성-추적)
+대출을 설계하고, 사전 승인을 안내하고, 가족이 내 집을 마련하도록 돕는 일은 전문가답게 잘하고 계실 거예요. 하지만 사업을 운영하는 일은 또 다른 문제예요.
 
-### 고객 커뮤니케이션, 파이프라인, 서류 업무를 제대로 관리하지 못하고 계신가요?
+이런 상황이 낯설지 않나요?
 
-당신은 대출 구조화, 고객의 사전승인 절차 안내, 가족의 내 집 마련 지원에는 전문가이지만, 비즈니스 운영은 전혀 다른 차원의 문제입니다.
+- 제때 후속 연락을 못 해서 유망한 리드를 놓쳐요.
+- 서류를 받으러 다니느라 매주 몇 시간씩 써요.
+- 대출, 리드, 이메일, 예약을 관리하려고 시스템 5개 이상을 오가요.
+- 작업 관리가 허술하거나 다음 단계가 불분명해서 딜이 늦어져요.
 
-다음 중 익숙한 상황이 있나요?
+혼자만 겪는 일이 아니에요. 많은 모기지 전문가가 일이 터질 때마다 대응하는 상태에 갇혀 있어요. 필요한 건 백그라운드에서 돌아가는 **시스템**이에요. 그러면 서류를 쫓는 대신 **대출 실행**에 집중할 수 있어요.
 
-* 적시에 후속 관리를 하지 못해 자격을 갖춘 리드가 놓쳐버림
-* 문서와 서류를 쫓아다니느라 매주 몇 시간씩 낭비
-* 대출, 리드, 이메일, 예약을 추적하기 위해 5개 이상의 시스템을 동시에 사용
-* 부실한 할 일 추적이나 불분명한 다음 단계로 인해 거래가 지연됨
+---
 
-당신만의 문제가 아닙니다. 대부분의 모기지 전문가들이 반응형 모드에 갇혀 있는데, 정말 필요한 것은 백그라운드에서 돌아가면서 행정 업무가 아닌 대출 성사에 집중할 수 있게 해주는 시스템입니다.
+## 중개업 운영이 처음부터 끝까지 매끄럽다면?
 
-#### 만약 당신의 중개업이 처음부터 끝까지 원활하게 운영된다면?
+이런 백오피스를 상상해 보세요.
 
-다음과 같은 기능을 갖춘 간소화된 백오피스를 상상해보세요:
+✅ 고객이 온라인으로 상담을 예약하고, 예약이 내 캘린더에 동기화돼요.  
+✅ 식은 리드와 뜨거운 잠재고객 모두에게 자동으로 후속 연락을 보내요.  
+✅ 서류 요청, 알림, 파이프라인 진행 상황을 자동으로 보내요.  
+✅ 사전 승인부터 클로징까지 모든 딜의 단계를 추적해요.  
+✅ 클로징 비율, 리드 유입 경로, 매출을 실시간으로 분석해요.
 
-✅ 고객이 온라인으로 상담을 예약하고 캘린더와 자동 동기화 ✅ 콜드 리드와 핫 잠재고객을 자동으로 후속 관리 ✅ 문서 요청, 리마인더, 파이프라인 업데이트를 자동으로 전송 ✅ 사전승인부터 성사까지 모든 거래의 모든 단계 추적 ✅ 성사율, 리드 소스, 수익을 실시간으로 분석
+---
 
-올인원 솔루션으로 모기지 비즈니스를 손쉽게 관리하세요 - [**지금 Hyperclass에 가입하기**](https://hyperclass.ai/324876a3?utm_source=SEO\&utm_medium=Organic\&utm_campaign=Real+Estate\&utm_term=Mortgage+Broker\&utm_content=Playbook)
+## 이 플레이북에서 배울 내용
 
-#### 이 플레이북에서 배울 내용
+✅ 예약을 자동화하고 노쇼를 줄이는 방법  
+✅ 리드와 소개 파트너에게 손대지 않고 후속 연락을 하는 방법  
+✅ 서류 수집, 고객 소통, 알림을 간소화하는 방법  
+✅ 문의부터 클리어 투 클로즈까지 전체 파이프라인을 추적하는 방법  
+✅ 사업 성과를 분석해서 무엇이 효과가 있는지 파악하는 방법
 
-✅ 예약 예약을 자동화하고 노쇼를 줄이는 방법 ✅ 손가락 하나 까딱하지 않고 리드와 추천 파트너를 후속 관리하는 방법 ✅ 문서 수집, 고객 커뮤니케이션, 리마인더를 간소화하는 방법 ✅ 문의부터 클리어투클로즈까지 전체 파이프라인을 추적하는 방법 ✅ 무엇이 효과적인지 알 수 있도록 비즈니스 성과를 분석하는 방법
+---
 
-## 1단계: 예약 스케줄링 자동화
+## 1단계: 예약 자동화
 
-### 왜 중요한가요?
+### 왜 중요할까요?
 
-밀레니얼 세대 주택 구매자의 73%가 온라인 상담 예약을 선호합니다. 스케줄링을 자동화한 대출 담당자는 27% 더 많은 예약을 받습니다.
+밀레니얼 세대 주택 구매자의 73%는 온라인으로 상담을 예약하는 쪽을 선호해요.  
+예약을 자동화한 대출 담당자(LO)는 예약을 **27% 더** 받아요.
 
-#### 1.1 차용자가 직접 예약하도록 하기
+---
 
-* Hyperclass 예약 링크를 사용하여 구매자, 에이전트, 추천 파트너가 즉시 시간을 예약할 수 있게 하기
-* 이메일, 인스타그램 바이오, 웹사이트에 링크 삽입
-* "첫 주택 구매자 전략 상담" 또는 "재융자 검토 세션"과 같은 상담 유형 제공
+### 1.1 대출 신청자가 직접 예약하게 하기
 
-[예약 링크 설정하는 방법](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/04-%EC%BA%98%EB%A6%B0%EB%8D%94-%EC%98%88%EC%95%BD/%EA%B8%B0%ED%83%80/http:/how%20to%20set%20up%20booking%20link/README.md)
+- 하이퍼클래스 예약 링크를 쓰면 구매자, 중개인, 소개 파트너가 바로 시간을 예약할 수 있어요.
+- 이메일, Instagram 프로필, 웹사이트에 링크를 삽입하세요.
+- “첫 주택 구매자 전략 상담”, “리파이낸싱 검토 세션”처럼 상담 유형을 나눠 제공해 보세요.
+- 예약 링크 설정 방법
 
-#### 1.2 스마트 예약 리마인더 전송
+---
 
-* SMS와 이메일을 통한 자동 리마인더로 노쇼 줄이기
-* 모든 통화에 준비할 수 있도록 사전 양식 포함
+### 1.2 스마트 예약 알림 보내기
 
-[예약 리마인더 자동화하는 방법](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/24-%EB%8C%80%ED%95%99/HighLevel-How-To's/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
+- SMS와 이메일로 자동 알림을 보내 노쇼를 줄이세요.
+- 사전 질문 폼을 함께 보내면 상담 전에 미리 준비할 수 있어요.
+- 예약 알림 자동화 방법
 
-#### 1.3 적절한 LO 또는 팀에 예약 배정
+---
 
-* 대규모 팀을 위한 라운드 로빈 또는 규칙 기반 라우팅 사용
-* 우편번호, 언어, 대출 유형(FHA/VA/일반)에 따라 배정
+### 1.3 예약을 알맞은 LO 또는 팀에 배정하기
 
-배정 권한 설정하는 방법
+- 팀 규모가 크면 라운드 로빈이나 규칙 기반으로 배정하세요.
+- 우편번호, 언어, 대출 유형(FHA/VA/일반)에 따라 담당자를 지정할 수 있어요.
+- 배정 권한 설정 방법
 
-## 2단계: 리드 및 고객 후속 관리 자동화
+---
 
-### 왜 중요한가요?
+## 2단계: 리드·고객 후속 관리 자동화
 
-리드는 빨리 식어버립니다: 차용자의 78%가 첫 번째로 후속 관리하는 대출업체를 선택합니다. 5분 이내에 응답하는 브로커는 9배 높은 전환율을 보입니다.
+### 왜 중요할까요?
 
-#### 2.1 콜드 리드 자동 후속 관리
+리드는 빠르게 식어요. 대출 신청자의 78%는 가장 먼저 연락한 대출 기관을 선택해요.  
+5분 안에 응답하는 중개인은 전환율이 **9배 높아요.**
 
-* SMS + 이메일을 통한 3\~5일 후속 관리 시퀀스 전송
-* FAQ, 추천사, 퍼널의 다음 단계 공유
+---
 
-[견적 후속 관리 자동화하는 방법](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/24-%EB%8C%80%ED%95%99/HighLevel-How-To's/how-to-build-automated-appointment-follow-up-surveys-in-workflow-builder.md)
+### 2.1 식은 리드에게 자동으로 후속 연락하기
 
-#### 2.2 기존 고객 및 추천 파트너 관리
+- SMS와 이메일로 3~5일짜리 후속 연락 시퀀스를 보내세요.
+- 퍼널 안에서 자주 묻는 질문, 후기, 다음 단계를 안내하세요.
+- 견적 후속 연락 자동화 방법
 
-* 월간 시장 업데이트 또는 금리 알림 전송
-* 재융자 관심을 유발하기 위한 "모기지 헬스 체크" 제공
+---
 
-[AI 기반 고객 지원 설정하는 방법](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/13-AI-Employee/Getting-Started-w/-Conversation-AI/conversation-ai-bot-explained.md)
+### 2.2 기존 고객·소개 파트너와 관계 이어 가기
 
-#### 2.3 AI로 FAQ 응답 및 잠재고객 사전 자격 심사
+- 매월 시장 동향이나 금리 알림을 보내세요.
+- “모기지 건강 점검”을 제안하면 리파이낸싱에 관심을 보일 수 있어요.
+- [AI 기반 고객 지원 설정 방법](../../13-AI-Employee/Getting-Started-w/Conversation-AI/conversation-ai-bot-explained.md)
 
-* Conversation AI가 다음과 같은 인바운드 질문에 응답하도록 하기: "오늘 금리가 어떻게 되나요?" "어떤 서류가 필요한가요?" "10% 다운으로 자격을 받을 수 있나요?"
+---
 
-[스마트 리스트 설정하는 방법](../../02-연락처/기타/getting-started-with-smart-lists.md)
+### 2.3 AI로 자주 묻는 질문에 답하고 잠재고객 사전 심사하기
 
-## 3단계: 문서, 할 일, 거래 흐름 간소화
+- 대화 AI가 아래와 같은 문의에 응답하게 할 수 있어요.  
+  “오늘 금리가 어떻게 되나요?”  
+  “어떤 서류가 필요한가요?”  
+  “계약금 10%로도 대출 자격이 되나요?”
+- [스마트 리스트 설정 방법](../../02-연락처/스마트-리스트/how-to-create-manage-smart-lists.md)
 
-### 왜 중요한가요?
+---
 
-대부분의 브로커가 느린 후속 관리나 비체계적인 파이프라인으로 인해 4건 중 1건의 거래를 놓칩니다. 운영 디지털화는 성사율을 높이고 놓친 단계를 줄입니다.
+## 3단계: 서류, 작업, 딜 흐름 간소화
 
-#### 3.1 모든 대출을 한 곳에서 추적
+### 왜 중요할까요?
 
-* "신청 접수 → 서류 제출 → 사전승인 → CTC → 완료"를 위한 시각적 파이프라인
-* 마감일과 함께 팀원에게 할 일 배정
+대부분의 중개인은 느린 후속 조치나 정리되지 않은 파이프라인 때문에 **4건 중 1건**의 딜을 놓쳐요.  
+업무를 디지털화하면 클로징 비율이 올라가고 놓치는 단계가 줄어요.
 
-[인보이스 전송 및 생성하는 방법](https://github.com/benjaminhyperclass/hyperclass-help-ko/blob/main/docs/08-%EA%B2%B0%EC%A0%9C/%EC%9D%B8%EB%B3%B4%EC%9D%B4%EC%8A%A4-%EA%B2%AC%EC%A0%81/how-to-create-invoices-in-highlevel.md)
+---
 
-#### 3.2 문서 요청 자동화
+### 3.1 모든 대출을 한곳에서 추적하기
 
-* W2, 급여명세서, 신용조회를 업로드할 보안 링크 전송
-* 파이프라인 단계에 따라 요청 트리거
+- “신청 접수 → 서류 접수 → 사전 승인 → 클리어 투 클로즈(CTC) → 종결”처럼 파이프라인을 시각적으로 구성하세요.
+- 팀원에게 마감일이 있는 작업을 배정하세요.
+- [인보이스 만들고 보내기](../../08-결제/인보이스-견적/how-to-create-invoices-in-hyperclass.md)
 
-[결제 수신 설정하는 방법](../../07-워크플로우/기타/trigger-payment-received.md)
+---
 
-#### 3.3 상태 업데이트 자동화
+### 3.2 서류 자동 요청하기
 
-* 차용자에게 지속적으로 업데이트 제공("감정평가 주문됨", "클리어투클로즈" 등)
-* 프로세스 설명에 소요되는 시간을 줄이기 위해 템플릿화된 이메일/SMS 사용
+- W-2, 급여명세서, 신용 조회 서류를 올릴 수 있는 보안 링크를 보내세요.
+- 파이프라인 단계에 따라 요청이 자동으로 나가도록 설정할 수 있어요.
+- [Payment Received 트리거 설정하기](../../07-워크플로우/빌더/workflow-trigger-payment-received.md)
 
-[정기 결제 자동화하는 방법](../../08-결제/기타/auto-payments-in-recurring-templates.md)
+---
 
-## 4단계: 결제 및 수수료 추적 자동화 (해당되는 경우)
+### 3.3 진행 상태 업데이트 자동화하기
 
-참고: 감정평가 조정 수수료, 락 수수료 등을 청구하는 브로커에게 적용됩니다.
+- “감정평가 의뢰됨”, “클리어 투 클로즈” 등 진행 상황을 대출 신청자에게 계속 알려 주세요.
+- 이메일/SMS 템플릿을 쓰면 절차를 일일이 설명하는 시간을 줄일 수 있어요.
+- [정기 결제 자동화 방법](../../08-결제/기타/auto-payments-in-recurring-templates.md)
 
-#### 4.1 결제 요청 생성 및 전송
+---
 
-* 이메일이나 문자를 통해 고객에게 인보이스 발송
-* 신용카드, ACH, Apple Pay, Google Pay 결제 수락
+## 4단계: 결제·수수료 추적 자동화 (해당하는 경우)
 
-[기회 생성 설정하는 방법](../../07-워크플로우/Opportunity-Workflow-Triggers/workflow-trigger-opportunity-created.md)
+{% hint style="info" %}
+감정평가 조율 수수료, 금리 고정 수수료 등을 받는 중개인에게 해당해요.
+{% endhint %}
 
-#### 4.2 지급 완료 vs 미지급 상태 추적
+---
 
-* 수수료가 미지급인 경우 리마인더 트리거
-* CRM 파이프라인에 추적 기능 추가
+### 4.1 결제 요청 만들고 보내기
 
-[정기 예약 모니터링하는 방법](../캘린더-설정/configure-recurring-calendar-appointments.md)
+- 이메일이나 문자로 고객에게 인보이스를 보내세요.
+- 신용카드, ACH, Apple Pay, Google Pay로 결제받을 수 있어요.
+- [기회 생성 설정 방법](../../07-워크플로우/Opportunity-Workflow-Triggers/workflow-trigger-opportunity-created.md)
 
-## 5단계: 리포팅 및 비즈니스 인텔리전스 최적화
+---
 
-### 왜 중요한가요?
+### 4.2 결제·미결제 상태 추적하기
 
-대출이 어디서 오는지 모르면 효과적인 것을 확장할 수 없습니다. 톱 프로듀서들은 리드 소스 → 퍼널 단계 → 수익을 추적합니다.
+- 수수료가 미결제 상태이면 알림이 나가도록 설정하세요.
+- CRM 파이프라인에 결제 추적을 추가하세요.
+- 반복 예약 모니터링 방법
 
-#### 5.1 클로징이 어디서 오는지 파악
+---
 
-* 광고, 에이전트, 이메일, 소셜, SEO로부터의 ROI 추적
-* 추천 vs 인바운드 vs 기존 고객 소스 비교
+## 5단계: 리포팅과 비즈니스 분석 최적화
 
-[리드 추적 및 관리하는 방법](../../05-기회-파이프라인/step-by-step-guide-creating-pipelines.md)
+### 왜 중요할까요?
 
-#### 5.2 성사율 및 대출 파이프라인 건전성 추적
+대출이 어디서 들어오는지 모르면 잘되는 방식을 키울 수 없어요.  
+실적이 높은 중개인은 리드 유입 경로 → 퍼널 단계 → 매출을 추적해요.
 
-* 대출 유형별 목표 설정: 구매 vs 재융자 vs HELOC
-* 제출된 신청 건수, 발급된 사전승인 건수, 평균 거래 규모 추적
+---
 
-[대시보드 생성 및 모니터링하는 방법](../../12-대시보드/how-to-create-add-dashboard-widgets.md)
+### 5.1 클로징이 어디서 오는지 파악하기
 
-## 최종 정리: 중개업을 운영하는 시스템 구축하기
+- 광고, 중개인, 이메일, 소셜, SEO별 ROI를 추적하세요.
+- 소개, 직접 문의, 기존 고객 유입 경로를 비교해 보세요.
+- [리드 추적 및 관리 방법](../../05-기회-파이프라인/step-by-step-guide-creating-pipelines.md)
 
-이 플레이북을 따라하면 리드 누출을 막고, 더 빨리 성사시키며, 최고 수준의 차용자 경험을 제공할 수 있습니다.
+---
 
-✅ 더 이상 놓치는 거래 없음 ✅ 더 이상 서류를 쫓아다니거나 에이전트를 수동으로 업데이트할 필요 없음 ✅ 관계, 파트너, 수익에 집중할 더 많은 시간 확보
+### 5.2 클로징 비율과 대출 파이프라인 상태 추적하기
 
-Hyperclass이 번거로운 업무를 자동화하도록 하여 당신은 확장하고, 판매하고, 정신 건강을 유지할 수 있습니다.
+- 구매 대출, 리파이낸싱, HELOC 등 대출 유형별로 목표를 설정하세요.
+- 접수된 신청 건수, 발급된 사전 승인 건수, 평균 딜 규모를 추적하세요.
+- [대시보드 만들고 모니터링하는 방법](../../12-대시보드/how-to-create-add-dashboard-widgets.md)
 
-#### 모기지 비즈니스를 자동화할 준비가 되셨나요?
+---
 
-[지금 Hyperclass에 가입](https://hyperclass.ai/324876a3?utm_source=SEO\&utm_medium=Organic\&utm_campaign=Real+Estate\&utm_term=Mortgage+Broker\&utm_content=Playbook)하여 일상 업무를 자동 조종 모드로 전환하세요.
+## 마무리: 중개업을 대신 굴려 주는 시스템 만들기
 
-***
+이 플레이북대로 하면 리드를 놓치는 일이 줄고, 더 빨리 클로징하고, 대출 신청자에게 훌륭한 경험을 줄 수 있어요.
 
-_원문 최종 수정: Tue, 27 May, 2025 at 9:33 AM_ _Hyperclass 사용 가이드 — hyperclass.ai_
+✅ 놓치는 딜이 없어져요.  
+✅ 서류를 쫓거나 중개인에게 일일이 업데이트를 알리지 않아도 돼요.  
+✅ 고객 관계, 파트너, 매출에 쓸 시간이 늘어요.
+
+하이퍼클래스가 반복 업무를 자동화해 주면 사업을 키우고, 영업하고, 여유도 지킬 수 있어요.
+
+---
+
+### 모기지 사업을 자동화할 준비가 되셨나요?
+
+지금 하이퍼클래스로 일상 업무를 자동 운영해 보세요.

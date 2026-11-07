@@ -1,78 +1,128 @@
 ---
-
-번역일: 2026-04-09
-카테고리: 마케팅 > 소셜 플래너
+원문: /support/solutions/articles/155000007623-external-link-approval-flow-in-social-planner
+번역일: 2026-11-07
+카테고리: 10-마케팅
 ---
 
-# 소셜 플래너 게시물 승인 플로우
+# 소셜 플래너에서 외부 링크로 게시물 승인받기
 
-소셜 플래너에 이제 게시물 승인 플로우가 추가되어, 사용자가 소셜 게시물의 내용을 다른 팀원에게 검토 및 승인받을 수 있습니다.
+고객이나 이해관계자에게 보안 링크(Magic Link)를 보내 소셜 미디어 게시물을 승인받는 방법을 안내해요. 승인자는 로그인하지 않아도 되고, 승인 과정은 모두 **소셜 플래너** 안에서 관리할 수 있어요.
 
-#### 이 가이드에서 다루는 내용:
+## 개요
 
-#### [게시물 승인 플로우 시작하기 -](#게시물-승인-플로우-시작하기)
+외부 승인 기능을 쓰면 승인자가 로그인하지 않아도 보안 링크(Magic Link)로 게시물을 확인하고 승인할 수 있어요. 주고받는 연락이 줄고, 협업도 **소셜 플래너** 안에서 바로 처리할 수 있어요.
 
-#### [게시물 승인 이메일용 이메일 템플릿 편집 및 적용하기:](#게시물-승인-이메일용-이메일-템플릿-편집-및-적용하기)
+## 이 기능으로 할 수 있는 일
 
-#### [대량 게시물 승인을 위한 CSV 예약은 어떻게 하나요?](#대량-게시물-승인을-위한-csv-예약은-어떻게-하나요)
+- 보안 승인 링크로 게시물을 공유해요.
+- 외부 사용자가 게시물을 승인, 거절하거나 일정을 변경하도록 해요.
+- 승인 메모를 남기고 확인해요.
+- 모든 승인 링크를 한곳에서 확인해요.
+- 계정에 사용자를 추가하지 않고도 승인을 관리해요.
 
-## 게시물 승인 플로우 시작하기 - 
+## 1단계: 승인 링크 만들기
 
-1. Marketing(마케팅) > Social Planner(소셜 플래너)로 이동합니다.
+1. **마케팅 > 소셜 플래너**로 이동해요.
+2. **승인자 선택** 드롭다운에서 승인자를 선택해요.
 
-![소셜 플래너 메뉴](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032895038/original/t168dZ75kjX3etxqCjccsiAB5WwUwR4zug.jpg?1726398056)
+   ![승인자 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155068661941/original/TUog4KktB6tYCz4hz-rfg6FwXLL5uXFzIg.png?1775631581)
 
-2. 콘텐츠, 리치 미디어, 해시태그 등으로 게시물을 작성한 후 "승인 예약하기(Scheduled for Approval)"를 선택할 수 있습니다.
+   ![승인자를 선택한 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155068661875/original/SrQMryVn78NLl_xb_kjAxQfDogOvEwYuiQ.png?1775631527)
 
-- 예약할 날짜와 시간을 추가합니다
-- 소셜 캘린더에 게시물을 예약할지 승인할 사용자를 선택합니다
-- 더 자세한 정보를 위해 승인용 내부 메모를 추가합니다
+3. **Generate Approval Link**(승인 링크 생성)를 클릭해요.
+4. 비밀번호를 설정해요. 자동 생성하거나 원하는 비밀번호를 직접 입력할 수 있어요.
 
-![게시물 승인 예약 설정](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033445182/original/MDAszTsw5BqQoS0zWc9n9PWcJp5cfDuYCA.png?1727178294)
+   ![비밀번호 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155068661952/original/Kun9b56B80md0EJr8HPIGPekwZBsKdU9kA.png?1775631597)
 
-![게시물 승인 예약 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155033445340/original/TYpWyed2MunOMGN0GTtmq2yGnllvCTXtJg.png?1727178383)
+5. 링크를 복사해서 고객이나 이해관계자에게 전달해요.
 
-3. 게시물이 검토를 위해 전송되면, 예약된 게시물에 대한 이메일이 발송됩니다.
+## 2단계: 링크 공유하기
 
-4. 검토자는 Content(콘텐츠) > Approval(승인) 탭에서 게시물을 보고, 승인하거나 거절할 수 있는 옵션을 확인할 수 있습니다. 보기(View) 옵션을 통해 사용자는 게시물의 세부 내용을 확인한 후 승인하거나 거절할 수 있습니다. 검토자인 팀원은 보기 옵션에서 보기 화면의 "Edit(편집)"을 클릭하여 승인 플로우용 콘텐츠를 편집할 수도 있습니다.
+승인 링크는 아래 방법으로 보낼 수 있어요.
 
-![승인 탭에서 게시물 확인](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032895058/original/7BjlESfMjkWj7QlUAOTNfCz6FiaLtYkkuw.jpg?1726398116)
+- 이메일
+- WhatsApp
+- Slack
+- 그 밖의 메신저
 
-![게시물 상세보기 및 편집](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155032895064/original/YUP4umcrSzPqxqWxVsINR49Hyay7th2SGg.jpg?1726398130)
+![승인 링크 공유 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155068662005/original/sUzj665VL-5UMW_SJbFaVYLH-iKlPaMMKQ.png?1775631631)
 
-5. 게시물이 승인되면 소셜 캘린더에 예약됩니다. 게시물이 거절되면, 사용자는 검토자가 보낸 댓글을 확인할 수 있습니다.
+## 3단계: 승인자가 게시물 확인하기
 
-6. 승인자는 승인 플로우 내에서 직접 게시물을 다시 예약할 수 있습니다. 승인 검토 화면에서 예약된 날짜와 시간을 클릭하고, 새로운 게시 날짜와 시간을 선택한 다음 **Approve(승인)**을 클릭하면 승인과 업데이트된 일정을 모두 확정할 수 있습니다. 승인 후 소셜 플래너 캘린더가 즉시 업데이트되어 새로운 예약 시간을 표시합니다.
+승인자가 링크를 열면 아래 내용을 볼 수 있어요.
 
-![승인 플로우에서 재예약하기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155052734157/original/4CcITaGP7xFpdRXbWofGN2FWxvmo51mivA.png?1756556332)
+- **게시물 내용**(캡션과 미디어)
+- **예정 날짜** 및 시간
+- 플랫폼 정보
+- 작성자가 남긴 메모
 
-## 게시물 승인 이메일용 이메일 템플릿 편집 및 적용하기:
+승인자가 전체 내용을 파악한 뒤에 판단할 수 있어요.
 
-사용자는 소셜 플래너 설정(Social Planner Settings)에서 승인용 이메일을 설정할 수 있습니다. 이메일 템플릿은 Marketing(마케팅) > Emails(이메일) > Templates(템플릿) > New(새로 만들기) > Email Marketing Templates(이메일 마케팅 템플릿)을 방문하여 브랜딩할 수 있습니다.
+![승인자가 보는 게시물 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155068662044/original/w_b2_ok4rr8lD13OkkdISxtCiDH75hxkRQ.png?1775631652)
 
-![이메일 마케팅 템플릿 새로 만들기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48275003974/original/JbZqtJEP21bG7zSQEBIcw8lBCo-EpKoAbQ.png?1673541277)
+## 4단계: 승인자가 조치하기
 
-그러면 템플릿 라이브러리로 이동하게 되며, System Templates(시스템 템플릿) > Social Planner : Post Approval(소셜 플래너: 게시물 승인)으로 이동하여 해당 템플릿을 사용해야 합니다. 필요에 따라 편집할 수 있습니다.
+승인자는 아래 작업을 할 수 있어요.
 
-![소셜 플래너 게시물 승인 시스템 템플릿](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48275004276/original/H3HxcY2vYP0ctLVJWNR34FHNE9Jpp6A3Bg.png?1673541333)
+- 게시물을 승인해요. 메모는 선택 사항이에요.
+- 피드백과 함께 게시물을 거절해요.
+- 게시물 일정을 변경해요.
+- 여러 게시물을 한 번에 승인하거나 거절해요(일괄 작업).
 
-그런 다음 해당 템플릿을 Social Planner Settings(소셜 플래너 설정) > Notifications(알림)의 게시물 승인 이메일 플로우에 적용할 수 있습니다:
+![승인자의 조치 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155068662056/original/Y7ci0UHoJ-SAZiF2FPzeesQfh0jzR0Xo7g.png?1775631674)
 
-![소셜 플래너 설정의 알림 탭](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48275003279/original/tZg4MDksmtgmJqElCq8JhKJN18Ih6MRr3Q.png?1673541093)
+![승인 또는 거절 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155068662117/original/6gud2Rl5jUjb77uCZDMNelEtpOplAw10lQ.png?1775631723)
 
-Setup Email template for Social Post Approval(소셜 게시물 승인용 이메일 템플릿 설정)에서 이메일 템플릿을 선택합니다.
+## 5단계: 승인 상태와 메모 확인하기
 
-![소셜 게시물 승인용 이메일 템플릿 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48275003362/original/SuRrc78gn4HDJcewt5urj4Z61F4UAjOZzQ.png?1673541115)
+승인자가 조치하면 아래와 같이 반영돼요.
 
-## 대량 게시물 승인을 위한 CSV 예약은 어떻게 하나요?
+- **소셜 플래너**에서 게시물의 **승인 상태**가 바뀌어요.
+- 승인 메모와 거절 메모를 확인할 수 있어요.
+- 수정이 필요하면 게시물을 편집해서 다시 보낼 수 있어요.
 
-- "New Post(새 게시물)" 버튼을 클릭할 때 새 CSV를 생성합니다
-- 사용자가 CSV 파일을 추가하고 소셜을 선택하면, 승인자를 선택할 수 있는 옵션이 나타납니다.
+승인된 게시물은 예정된 일정에 따라 게시돼요.
 
-![CSV 업로드 시 승인자 선택](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48274895622/original/llrQ2L893aD17J19tI91bIQ277mjhZXgUA.png?1673523102)
+![승인 상태와 메모 확인 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155068662129/original/AseJb9xzsasFjb8KIKioO4dgsPHtW7h7Wg.png?1775631744)
 
-- 게시물이 가져오기되면, 선택한 승인자의 검토를 위해 전송됩니다. 승인되면 소셜 캘린더에 예약됩니다.
+## 승인 링크 관리하기
 
----
-*원문 최종 수정: Mon, 9 Feb, 2026 at 8:53 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+만든 승인 링크는 한곳에서 관리할 수 있어요.
+
+### 이동 방법
+
+1. **설정 > Manage Links**(링크 관리)로 이동해요.
+
+### 할 수 있는 작업
+
+- 모든 승인 링크를 확인해요.
+- 링크 상태를 확인해요.
+  - **Active**(활성)
+  - **Expired**(만료됨)
+  - **Revoked**(취소됨)
+- **Regenerate links**(링크 재생성)
+- **액세스 취소**
+- **유효기간 연장**
+
+## 링크 만료와 복구
+
+- 링크는 **30일** 동안 유효해요.
+- 링크가 만료되면 아래와 같이 할 수 있어요.
+  - 승인자가 새 링크를 요청할 수 있어요.
+  - 링크를 바로 다시 생성할 수 있어요.
+
+## 중요 사항
+
+- 승인 링크는 비밀번호로 보호돼요.
+- 링크는 **30일** 뒤에 만료돼요.
+- 링크는 언제든 다시 생성하거나 취소할 수 있어요.
+- 게시물이 게시된 뒤에는 조치가 제한돼요.
+- 링크를 만들려면 필요한 권한이 있어야 해요.
+- 승인자는 현재 데스크톱/웹 화면에서만 승인 링크를 열 수 있어요. 모바일 화면은 개발 중이며 곧 출시될 예정이에요.
+
+## 활용 팁
+
+- 승인자가 헷갈리지 않도록 승인자용 메모를 분명하게 남겨요.
+- 링크는 꼭 필요한 이해관계자에게만 공유해요.
+- 승인이 늦어지지 않도록 승인 상태를 주기적으로 확인해요.
+- 고객이 접속에 문제가 있다고 하면 링크를 다시 생성해요.

@@ -1,69 +1,52 @@
 ---
-
-번역일: 2026-04-07
-카테고리: 08-결제 > 시작하기
+원문: /support/solutions/articles/155000003198-how-to-use-the-manual-payment-method-in-your-ecommerce-store
+번역일: 2026-11-07
+카테고리: 08-결제
 ---
 
-# 이커머스 스토어에서 수동 결제 방법 사용하기
+# 이커머스 스토어에서 수동 결제 사용하기
 
-스토어 운영자는 이제 모든 주문에 대해 구매자로부터 수동으로 결제를 수집할 수 있습니다. 구매자는 수동 결제 방법을 선택하여 체크아웃을 완료한 후, 픽업 또는 배송 시점에 원하는 결제 수단으로 스토어 운영자에게 결제할 수 있습니다.
+스토어 운영자는 모든 주문에서 구매자에게 직접 결제를 받을 수 있어요. 구매자는 체크아웃에서 수동 결제 방법을 선택하고, 상품을 수령하거나 배송받을 때 원하는 결제 방식으로 스토어 운영자에게 결제하면 돼요. 이 문서에서는 수동 결제 방법을 설정하는 방법과 받은 결제를 기록하는 방법을 안내해요.
 
-**목차**
+## 사용 방법
 
-- [사용 방법](#사용-방법)
-- [수동 결제 방법 설정](#수동-결제-방법-설정)
-- [결제 수집 프로세스(수동 결제 방법 주문)](#결제-수집-프로세스수동-결제-방법-주문)
-- [참고사항](#참고사항)
-- [이미지](#이미지)
+### 수동 결제 방법 설정
 
-## **사용 방법**
+1. **결제 > 연동 > 수동 결제**로 이동해요. 이곳에서 이커머스 스토어의 수동 결제 방법을 설정할 수 있어요.
+2. 처음에는 **Cash on Delivery**(배송 시 현금 결제)를 고르거나 **Custom Payment Method**(사용자 지정 결제 수단)를 직접 만들 수 있어요.
+3. 결제 방법을 추가한 뒤에는 **결제 안내**와 **Messages**(메시지)를 입력할 수 있어요. 두 항목은 입력하지 않아도 돼요.
+4. 수동 결제 방법을 사용할 위치를 **Order Form**(주문 폼) 또는 **이커머스 스토어**에서 선택해요. 이 단계에서 켠 위치에서만 체크아웃에 수동 결제 방법이 나타나요.
+5. **저장**을 클릭해 변경 사항을 적용해요.
 
-### **수동 결제 방법 설정:**
+### 결제 수집 과정 (수동 결제 방법으로 들어온 주문)
 
-- 스토어 운영자는 다음 경로에서 이커머스 스토어에 수동 결제 방법을 설정할 수 있습니다: Payment(결제) > Integrations(연동) > Manual Payment Methods(수동 결제 방법)
-- 처음에는 Cash on Delivery(착불)를 선택하거나 Custom Payment Method(커스텀 결제 방법)를 직접 만들 수 있습니다.
-- 결제 방법을 추가한 후, Payment Instructions(결제 안내)와 Messages(메시지)는 설정 시 선택사항입니다.
-- 스토어 운영자는 Order Form(주문 폼) 또는 E-commerce Stores(이커머스 스토어) 중 하나 또는 둘 다에서 수동 결제 방법을 활성화할 수 있습니다. 이 옵션들은 이 단계에서 활성화한 경우에만 체크아웃 시 나타납니다.
-- 스토어 운영자는 변경사항을 적용하려면 반드시 Save(저장)를 클릭해야 합니다.
+1. 주문을 받은 뒤 **결제 > 주문**에서 해당 주문을 선택하고 **결제 수집** 버튼을 클릭해 받은 결제를 기록해요.
+2. 결제를 수집하면서 **결제 모드**를 드롭다운에서 선택해요. 필요하면 **Notes**(메모)도 입력할 수 있어요. 메모는 입력하지 않아도 돼요.
+3. 결제 완료로 표시하면 거래 상태가 업데이트되고, 선택한 결제 방식도 함께 기록돼요.
 
-### **결제 수집 프로세스(수동 결제 방법 주문):**
+## 참고 사항
 
-- 주문을 받은 후, 스토어 운영자는 다음 경로에서 수집한 결제를 기록할 수 있습니다: Payment(결제) > Orders(주문) > 주문 선택 > "Collect Payment(결제 수집)" 버튼
-- 스토어 운영자는 결제를 수집하고 드롭다운에서 Payment Mode(결제 방식)를 정의할 수 있습니다. Notes(메모)(선택사항)도 추가할 수 있습니다.
-- 결제 완료로 표시하면, 거래 상태가 결제 방식과 함께 업데이트됩니다.
+- 현재 버전에서는 결제 연동이 이미 연결되어 있을 때 수동 결제 방법을 설정할 수 있어요.
+- 주문에 반복 결제 상품이 포함되어 있으면 체크아웃에 수동 결제 방법이 나타나지 않아요.
+- 결제 수집 과정은 수동 결제 방법으로 들어온 주문에만 적용돼요. 결제 완료로 표시한 뒤에는 되돌릴 수 없어요.
+- 결제 방법을 **이커머스 스토어**와 **Order Form** 어느 쪽에서도 켜지 않으면 체크아웃 페이지에 나타나지 않아요.
+- **Cash on Delivery**와 **Custom Payment Method**를 동시에 설정할 수 있어요.
 
-## **참고사항:**
+## 화면 예시
 
-- 현재 버전에서는 결제 연동이 이미 연결된 상태에서 수동 결제 방법을 설정할 수 있습니다.
-- 정기 상품이 주문에 포함되어 있으면, 수동 결제 방법은 체크아웃 시 표시되지 않습니다.
-- 결제 수집 흐름은 수동 결제 방법 주문에만 적용됩니다. 결제 완료로 표시한 후에는 되돌릴 수 없습니다.
-- 결제 방법이 E-commerce stores(이커머스 스토어)와 Order Forms(주문 폼) 둘 다에서 활성화되지 않았다면, 체크아웃 페이지에 나타나지 않습니다.
-- 스토어 운영자는 Cash on Delivery(착불)와 Custom Payment Method(커스텀 결제 방법)를 동시에 설정할 수 있습니다.
+### 수동 결제 방법 설정
 
-## **이미지:**
-
-### 수동 결제 방법 설정:
-
-![수동 결제 방법 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155031699582/original/uVFzT5UM5AJ0iMuQvP_-8YNzy5g5cWf-Xg.jpeg?1724730223)
-
-![수동 결제 방법 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155031699588/original/P9UMQ7xAn-ytVn082ErVf3FFPtp_3IuV7Q.jpeg?1724730223)
-
-![결제 방법 설정 세부사항](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155031699587/original/0qhNCNXNlstwmkQYy0X24tj310TmKzoc3A.jpeg?1724730223)
-
-![결제 방법 활성화 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155031699583/original/FK0BBt5syO6ejyzSHZPwNMF2Zmy_dxLhWw.jpeg?1724730223)
+![수동 결제 방법 설정 화면 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155031699582/original/uVFzT5UM5AJ0iMuQvP_-8YNzy5g5cWf-Xg.jpeg?1724730223)
+![수동 결제 방법 설정 화면 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155031699588/original/P9UMQ7xAn-ytVn082ErVf3FFPtp_3IuV7Q.jpeg?1724730223)
+![수동 결제 방법 설정 화면 3](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155031699587/original/0qhNCNXNlstwmkQYy0X24tj310TmKzoc3A.jpeg?1724730223)
+![수동 결제 방법 설정 화면 4](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155031699583/original/FK0BBt5syO6ejyzSHZPwNMF2Zmy_dxLhWw.jpeg?1724730223)
 
 체크아웃 페이지 미리보기:
 
-![체크아웃 페이지에서 수동 결제 방법 표시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155031699586/original/5ZLtQKTKoQj4ucKONr6KcJ36JsowBhkzVg.jpeg?1724730223)
+![체크아웃 페이지 미리보기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155031699586/original/5ZLtQKTKoQj4ucKONr6KcJ36JsowBhkzVg.jpeg?1724730223)
 
-주문 세부사항 페이지의 결제 수집 프로세스:
+주문 상세 페이지의 결제 수집 과정:
 
-![주문 페이지에서 결제 수집 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155031699585/original/4KZP06cL68V_YoCaFT-hWp1tuSytNx5RZQ.jpeg?1724730223)
-
-![결제 수집 팝업](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155031699589/original/9RIUoQ5OmY4rJEugLZuvkJ1YJA26m3vpdQ.jpeg?1724730223)
-
-![결제 완료 후 주문 상태](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155031699584/original/Lq1myS1vFvVgTekeCGT1MBCP91hxHVKv5w.jpeg?1724730223)
-
----
-*원문 최종 수정: Mon, 26 Aug, 2024 at 10:51 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+![주문 상세 페이지의 결제 수집 화면 1](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155031699585/original/4KZP06cL68V_YoCaFT-hWp1tuSytNx5RZQ.jpeg?1724730223)
+![주문 상세 페이지의 결제 수집 화면 2](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155031699589/original/9RIUoQ5OmY4rJEugLZuvkJ1YJA26m3vpdQ.jpeg?1724730223)
+![주문 상세 페이지의 결제 수집 화면 3](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155031699584/original/Lq1myS1vFvVgTekeCGT1MBCP91hxHVKv5w.jpeg?1724730223)

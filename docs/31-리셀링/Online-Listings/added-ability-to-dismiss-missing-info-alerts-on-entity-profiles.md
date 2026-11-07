@@ -1,55 +1,54 @@
 ---
-
-번역일: 2026-04-08
-카테고리: 31-리셀링 > Online Listings
+원문: /support/solutions/articles/155000006387-added-ability-to-dismiss-missing-info-alerts-on-entity-profiles
+번역일: 2026-11-07
+카테고리: 31-리셀링
 ---
 
-# 엔티티 프로필에서 "누락된 정보" 알림 해제 기능 추가
+# 엔티티 프로필의 Missing Info 알림 숨기기
 
-이제 비즈니스에 해당하지 않는 필드(예: 틱톡 URL, 유튜브 페이지 등)에 대한 누락된 정보 알림을 엔티티 상세 화면에서 해제할 수 있습니다.
+비즈니스에 해당하지 않는 항목(예: TikTok URL, YouTube 페이지)은 엔티티 상세 화면의 **Missing Info**(누락된 정보) 알림에서 숨길 수 있어요. 숨긴 항목은 프로필 점수 계산에서도 빠져요.
 
-✅ **주요 혜택**
+## 주요 장점
 
-- **더 깔끔한 사용자 경험**: 관련 없는 누락 필드로 인한 알림 혼잡이 사라집니다.
-- **개인화된 제어**: 에이전시와 비즈니스가 관련성을 직접 결정할 수 있어, 획일적인 템플릿에서 벗어납니다.
-- **정확한 프로필 점수**: 해제된 필드는 완성도 점수에서 제외되어, 실제 완성도를 더 정확하게 반영합니다.
-- **되돌리기 가능**: 실수로 해제했나요? 언제든지 해제된 필드를 다시 활성화할 수 있습니다.
+- 화면이 깔끔해져요. 해당 없는 항목이 알림에 계속 쌓이지 않아요.
+- 직접 정할 수 있어요. 모든 비즈니스에 같은 템플릿을 쓰지 않고, 에이전시와 비즈니스가 어떤 항목이 필요한지 정해요.
+- 프로필 점수가 실제 작성 상태에 더 가까워져요. 숨긴 항목은 완성도 점수에서 제외돼요.
+- 되돌릴 수 있어요. 실수로 숨겼다면 언제든 다시 켤 수 있어요.
 
-🔧 **사용 방법**
+## 사용 방법
 
-- 원하는 **로케이션/엔티티 프로필**로 이동합니다.
-- **"Missing Info(누락된 정보)"** 섹션에서 프로필 상태 카드의 **"Configure(설정)"**를 클릭합니다.
+1. 아무 로케이션/엔티티 프로필로 이동하세요.
+2. **Missing Info** 섹션에서 **Profile Health Card**(프로필 상태 카드)의 **Configure**(설정)를 클릭하세요.
 
-![프로필 상태 카드의 설정 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155054438065/original/w8NXIbvsKwe5nw37FbNhd06lv0vklp-ckg.png?1758686273)
+   ![Profile Health Card의 Configure 버튼](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155054438065/original/w8NXIbvsKwe5nw37FbNhd06lv0vklp-ckg.png?1758686273)
 
-- 모달이 나타나면 해당하지 않는 모든 필드를 선택할 수 있습니다.
+3. 팝업 창이 열리면 해당하지 않는 항목을 모두 선택하세요.
 
-![누락된 정보 필드 선택 모달](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155054438066/original/YwCwKS-TzSD-_-f5HkAF-M0CU6bTZQMrqA.png?1758686292)
+   ![해당하지 않는 항목을 선택하는 팝업 창](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155054438066/original/YwCwKS-TzSD-_-f5HkAF-M0CU6bTZQMrqA.png?1758686292)
 
-- 확인하면 **알림이 사라지고** **프로필 점수가 그에 맞게 업데이트**됩니다.
+4. 선택을 확인하면 알림이 사라지고 프로필 점수가 바뀐 기준으로 다시 계산돼요.
 
-![업데이트된 프로필 점수](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155054438070/original/EUFHfq-jfSSYZahw-ESOjNo_eanMVoWNrA.png?1758686303)
+   ![알림이 사라지고 프로필 점수가 갱신된 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155054438070/original/EUFHfq-jfSSYZahw-ESOjNo_eanMVoWNrA.png?1758686303)
 
-🔄 **다시 되돌리고 싶다면?**
+## 숨긴 항목을 다시 켜려면
 
-- **"Configure(설정)"** 버튼을 사용해서 해제된 필드를 확인하고 **"Re-enable(재활성화)"**할 수 있습니다.
-- 재활성화하면 해당 필드가 다시 알림과 프로필 점수에 반영됩니다.
+1. **Configure**(설정) 버튼을 클릭해 숨긴 항목을 확인하세요.
+2. 다시 켤 항목에서 **Re-enable**(다시 켜기)을 클릭하세요.
 
-![필드 재활성화 옵션](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155054438081/original/mOT2t0TSUb0zsxEfzOpy8g3f3-ZjPBlIQA.png?1758686313)
+다시 켠 항목은 알림과 프로필 점수 계산에 다시 포함돼요.
 
-![재활성화된 필드가 반영된 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155054438088/original/7muEoqOqJfrfin63XDDDJG6PJkZuJVDaXQ.png?1758686362)
+![숨긴 항목 목록 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155054438081/original/mOT2t0TSUb0zsxEfzOpy8g3f3-ZjPBlIQA.png?1758686313)
 
-⚡ **프로필 점수 계산 방식**
+![항목을 다시 켜는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155054438088/original/7muEoqOqJfrfin63XDDDJG6PJkZuJVDaXQ.png?1758686362)
 
-- 해제된 필드는 프로필 완성도의 분자와 분모 모두에서 제외됩니다.
-- 예시: 10개 필드 프로필에서 2개 필드를 해제한 경우, 점수는 "완성된 필드 / 8"로 계산됩니다.
+## 프로필 점수 계산 방식
 
-![프로필 점수 계산 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155054438084/original/Cjeoq2fU1bKkTjtCjZXEBeB4aiHGguX06A.png?1758686332)
+숨긴 항목은 프로필 완성도의 분자와 분모에서 모두 제외돼요.
 
-온라인 리스팅과 고객에게 이를 재판매하는 방법에 대해 더 자세히 알아보려면 [여기를 클릭하세요](../../16-SaaS-설정/기타/how-to-sell-yext-as-part-of-a-saas-offer.md).
+예를 들어 항목이 10개인 프로필에서 2개를 숨기면, 점수는 완료한 항목 수 ÷ 8로 계산해요.
 
-💡 리스팅 기능에 대한 제안사항이 있으신가요? [아이디어 게시판](https://ideas.hyperclass.ai/yext)에 의견을 남겨주시면 우선순위를 두고 검토하겠습니다!
+![숨긴 항목을 제외한 프로필 점수 계산 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155054438084/original/Cjeoq2fU1bKkTjtCjZXEBeB4aiHGguX06A.png?1758686332)
 
----
-*원문 최종 수정: Tue, 23 Sep, 2025 at 11:15 PM*
-*Hyperclass 사용 가이드 — hyperclass.ai*
+온라인 리스팅과 고객에게 재판매하는 방법이 궁금하다면 [리스팅을 SaaS 상품으로 판매하는 방법](how-to-sell-listings-as-part-of-a-saas-offer.md)을 참고하세요.
+
+리스팅에 대한 제안이 있다면 하이퍼클래스 고객지원에 문의하세요. 보내 주신 제안은 우선순위를 정해 반영할게요.
