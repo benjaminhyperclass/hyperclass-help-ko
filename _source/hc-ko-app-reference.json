@@ -203373,11 +203373,11 @@
  },
  "privateIntegration.scopes.paymentstransactionsreadonly": {
   "en": "View Payment Transactions",
-  "ko": "결제 트랜잭션 보기"
+  "ko": "결제 거래 내역 보기"
  },
  "privateIntegration.scopes.paymentssubscriptionsreadonly": {
   "en": "Edit Payment Transactions",
-  "ko": "결제 트랜잭션 수정"
+  "ko": "결제 거래 내역 수정"
  },
  "privateIntegration.scopes.productsreadonly": {
   "en": "View Products",
@@ -210805,7 +210805,7 @@
  },
  "common.viewTransaction": {
   "en": "View Transaction",
-  "ko": "트랜잭션 보기"
+  "ko": "거래 보기"
  },
  "common.viewSubscription": {
   "en": "View Subscription",
@@ -397685,7 +397685,7 @@
  },
  "productsApp.common.viewTransaction": {
   "en": "View Transaction",
-  "ko": "트랜잭션 보기"
+  "ko": "거래 보기"
  },
  "productsApp.common.yesCancel": {
   "en": "Yes, Cancel",
@@ -462494,5 +462494,1269 @@
  "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.zero_errors_count": {
   "en": "0 Errors",
   "ko": "오류 0개"
+ },
+ "analytics.analytics.courseAnalytics.filters.courses.allCourses": {
+  "en": "All courses",
+  "ko": "전체 코스"
+ },
+ "analytics.analytics.courseAnalytics.filters.courses.clearAriaLabel": {
+  "en": "Clear courses filter",
+  "ko": "코스 필터 지우기"
+ },
+ "analytics.analytics.courseAnalytics.filters.courses.label": {
+  "en": "Courses",
+  "ko": "코스"
+ },
+ "analytics.analytics.courseAnalytics.filters.courses.loadError": {
+  "en": "Could not load courses",
+  "ko": "코스를 불러오지 못했습니다"
+ },
+ "analytics.analytics.courseAnalytics.filters.courses.loading": {
+  "en": "Loading courses",
+  "ko": "코스 불러오는 중"
+ },
+ "analytics.analytics.courseAnalytics.filters.courses.noProductsAvailable": {
+  "en": "No course available",
+  "ko": "사용 가능한 코스가 없습니다"
+ },
+ "analytics.analytics.courseAnalytics.filters.courses.searchPlaceholder": {
+  "en": "Search courses",
+  "ko": "코스 검색"
+ },
+ "analytics.analytics.courseAnalytics.filters.enrollmentDate.clearAriaLabel": {
+  "en": "Clear enrollment date filter",
+  "ko": "등록일 필터 지우기"
+ },
+ "analytics.analytics.courseAnalytics.filters.enrollmentDate.label": {
+  "en": "Enrollment date",
+  "ko": "등록일"
+ },
+ "analytics.analytics.courseAnalytics.filters.enrollmentDate.presets.allTime": {
+  "en": "All time",
+  "ko": "전체 기간"
+ },
+ "analytics.analytics.courseAnalytics.filters.enrollmentDate.presets.custom": {
+  "en": "Custom",
+  "ko": "사용자 지정"
+ },
+ "analytics.analytics.courseAnalytics.filters.enrollmentDate.presets.last30Days": {
+  "en": "Last 30 days",
+  "ko": "최근 30일"
+ },
+ "analytics.analytics.courseAnalytics.filters.enrollmentDate.presets.last6Months": {
+  "en": "Last 6 months",
+  "ko": "최근 6개월"
+ },
+ "analytics.analytics.courseAnalytics.filters.enrollmentDate.presets.last90Days": {
+  "en": "Last 90 days",
+  "ko": "최근 90일"
+ },
+ "analytics.analytics.courseAnalytics.filters.enrollmentDate.presets.thisMonth": {
+  "en": "This month",
+  "ko": "이번 달"
+ },
+ "analytics.analytics.courseAnalytics.funnel.ariaLabel": {
+  "en": "User conversion funnel",
+  "ko": "사용자 전환 퍼널"
+ },
+ "analytics.analytics.courseAnalytics.funnel.collapseAriaLabel": {
+  "en": "Collapse user conversion funnel",
+  "ko": "사용자 전환 퍼널 접기"
+ },
+ "analytics.analytics.courseAnalytics.funnel.completedTooltip": {
+  "en": "Users who have finished 100% of the course content.",
+  "ko": "코스 콘텐츠를 100% 완료한 사용자입니다."
+ },
+ "analytics.analytics.courseAnalytics.funnel.error": {
+  "en": "Could not load metric",
+  "ko": "지표를 불러오지 못했습니다"
+ },
+ "analytics.analytics.courseAnalytics.funnel.expandAriaLabel": {
+  "en": "Expand user conversion funnel",
+  "ko": "사용자 전환 퍼널 펼치기"
+ },
+ "analytics.analytics.courseAnalytics.funnel.fallout.notCompleted": {
+  "en": "Haven't completed course ({count})",
+  "ko": "코스 미완료({count})"
+ },
+ "analytics.analytics.courseAnalytics.funnel.fallout.notStarted": {
+  "en": "Not started learning ({count})",
+  "ko": "학습 미시작({count})"
+ },
+ "analytics.analytics.courseAnalytics.funnel.loading": {
+  "en": "Loading",
+  "ko": "불러오는 중"
+ },
+ "analytics.analytics.courseAnalytics.funnel.notCompletedCourseLabel": {
+  "en": "Haven't completed course",
+  "ko": "코스 미완료"
+ },
+ "analytics.analytics.courseAnalytics.funnel.notCompletedFilterAriaLabel": {
+  "en": "Filter course progress members by haven't completed course",
+  "ko": "코스 진행률 회원을 코스 미완료로 필터링"
+ },
+ "analytics.analytics.courseAnalytics.funnel.notStartedFilterAriaLabel": {
+  "en": "Filter course progress members by not started learning",
+  "ko": "코스 진행률 회원을 학습 미시작으로 필터링"
+ },
+ "analytics.analytics.courseAnalytics.funnel.notStartedLearningLabel": {
+  "en": "Not started learning",
+  "ko": "학습 미시작"
+ },
+ "analytics.analytics.courseAnalytics.funnel.stages.completedCourse": {
+  "en": "Completed course",
+  "ko": "코스 완료"
+ },
+ "analytics.analytics.courseAnalytics.funnel.stages.newUsers": {
+  "en": "New users",
+  "ko": "신규 사용자"
+ },
+ "analytics.analytics.courseAnalytics.funnel.stages.startedLearning": {
+  "en": "Started learning",
+  "ko": "학습 시작"
+ },
+ "analytics.analytics.courseAnalytics.funnel.startedTooltip": {
+  "en": "Users who have accessed at least one lesson or piece of course content after enrolling.",
+  "ko": "등록 후 강의나 코스 콘텐츠를 하나 이상 열람한 사용자입니다."
+ },
+ "analytics.analytics.courseAnalytics.funnel.subtitle": {
+  "en": "Track how users progress through their learning journey",
+  "ko": "사용자가 학습 과정을 어떻게 진행하는지 추적합니다"
+ },
+ "analytics.analytics.courseAnalytics.funnel.title": {
+  "en": "User conversion funnel",
+  "ko": "사용자 전환 퍼널"
+ },
+ "analytics.analytics.courseAnalytics.funnel.tooltip": {
+  "en": "Tracks how enrolled users move from signup to course completion within the selected date range.",
+  "ko": "선택한 기간에 등록한 사용자가 가입부터 코스 완료까지 어떻게 진행하는지 추적합니다."
+ },
+ "analytics.analytics.courseAnalytics.header.lastUpdated": {
+  "en": "Last updated: {value}",
+  "ko": "마지막 업데이트: {value}"
+ },
+ "analytics.analytics.courseAnalytics.header.refreshAriaLabel": {
+  "en": "Refresh course progress",
+  "ko": "코스 진행률 새로고침"
+ },
+ "analytics.analytics.courseAnalytics.header.refreshError": {
+  "en": "Couldn't refresh course progress. Please try again.",
+  "ko": "코스 진행률을 새로고침하지 못했습니다. 다시 시도해 주세요."
+ },
+ "analytics.analytics.courseAnalytics.header.refreshLabel": {
+  "en": "Refresh",
+  "ko": "새로고침"
+ },
+ "analytics.analytics.courseAnalytics.header.refreshRateLimited": {
+  "en": "Please wait 1 minute before refreshing again.",
+  "ko": "1분 후에 다시 새로고침해 주세요."
+ },
+ "analytics.analytics.courseAnalytics.header.refreshSuccess": {
+  "en": "Course progress refreshed",
+  "ko": "코스 진행률을 새로고침했습니다"
+ },
+ "analytics.analytics.courseAnalytics.header.subtitle": {
+  "en": "Track your course engagement and learner progress",
+  "ko": "코스 참여도와 학습자 진행 상황을 추적합니다"
+ },
+ "analytics.analytics.courseAnalytics.header.title": {
+  "en": "Course progress",
+  "ko": "코스 진행률"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.columns.courseCompletion": {
+  "en": "Course completion",
+  "ko": "코스 완료"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.columns.courseCompletionTooltip": {
+  "en": "Number of completed courses out of total enrolled courses",
+  "ko": "등록한 전체 코스 중 완료한 코스 수"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.columns.enrolmentDate": {
+  "en": "Enrolment date",
+  "ko": "등록일"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.columns.lastAccessed": {
+  "en": "Last accessed",
+  "ko": "마지막 접속"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.columns.members": {
+  "en": "Members",
+  "ko": "회원"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.columns.progress": {
+  "en": "Progress",
+  "ko": "진행률"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.columns.sessionCount": {
+  "en": "Session count",
+  "ko": "접속 횟수"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.columns.startDate": {
+  "en": "Start date",
+  "ko": "시작일"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.copy.ariaLabel": {
+  "en": "Copy {email}",
+  "ko": "{email} 복사"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.copy.copied": {
+  "en": "Copied",
+  "ko": "복사됨"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.description": {
+  "en": "Review member-level course progress and activity.",
+  "ko": "회원별 코스 진행률과 활동을 확인합니다."
+ },
+ "analytics.analytics.courseAnalytics.membersTable.empty": {
+  "en": "No members found",
+  "ko": "회원이 없습니다"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.emptyState.createCourse": {
+  "en": "Create course",
+  "ko": "코스 만들기"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.emptyState.description": {
+  "en": "Create course and onboard members to see their progress and other details",
+  "ko": "코스를 만들고 회원을 등록하면 진행률 등 세부 정보를 확인할 수 있습니다"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.emptyState.filteredDescription": {
+  "en": "Try adjusting your search or filters to find members.",
+  "ko": "회원을 찾으려면 검색어나 필터를 조정해 보세요."
+ },
+ "analytics.analytics.courseAnalytics.membersTable.emptyState.title": {
+  "en": "No members found",
+  "ko": "회원이 없습니다"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.error": {
+  "en": "Could not load members",
+  "ko": "회원을 불러오지 못했습니다"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.export": {
+  "en": "Export",
+  "ko": "내보내기"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.exportAriaLabel": {
+  "en": "Export course progress members",
+  "ko": "코스 진행률 회원 내보내기"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.exportError.description": {
+  "en": "We couldn't export your course progress members. Please try again.",
+  "ko": "코스 진행률 회원을 내보내지 못했습니다. 다시 시도해 주세요."
+ },
+ "analytics.analytics.courseAnalytics.membersTable.exportError.title": {
+  "en": "Export failed",
+  "ko": "내보내기 실패"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.exportModal.asyncDescription": {
+  "en": "An email with your report download link will be sent to you shortly.",
+  "ko": "보고서 다운로드 링크가 담긴 이메일이 곧 발송됩니다."
+ },
+ "analytics.analytics.courseAnalytics.membersTable.exportModal.inProgressTitle": {
+  "en": "Export in progress!",
+  "ko": "내보내기 진행 중!"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.exportModal.okay": {
+  "en": "Okay",
+  "ko": "확인"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.exportModal.syncDescription": {
+  "en": "Your course analytics sheet is being exported.",
+  "ko": "코스 분석 시트를 내보내는 중입니다."
+ },
+ "analytics.analytics.courseAnalytics.membersTable.filters.apply": {
+  "en": "Apply",
+  "ko": "적용"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.filters.clear": {
+  "en": "Clear",
+  "ko": "지우기"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.filters.dateConditions.exactly": {
+  "en": "Exactly",
+  "ko": "특정 날짜"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.filters.dateConditions.none": {
+  "en": "None",
+  "ko": "없음"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.filters.dateConditions.pastMonth": {
+  "en": "In the past month",
+  "ko": "지난 1개월 이내"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.filters.dateConditions.pastWeek": {
+  "en": "In the past week",
+  "ko": "지난 1주 이내"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.filters.dateConditions.pastYear": {
+  "en": "In the past year",
+  "ko": "지난 1년 이내"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.filters.dateConditions.today": {
+  "en": "Today",
+  "ko": "오늘"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.filters.dateConditions.yesterday": {
+  "en": "Yesterday",
+  "ko": "어제"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.filters.displaying": {
+  "en": "Displaying {count}",
+  "ko": "{count}개 표시 중"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.filters.filterByCondition": {
+  "en": "Filter by condition",
+  "ko": "조건으로 필터링"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.filters.openFilterAriaLabel": {
+  "en": "Open column filter",
+  "ko": "열 필터 열기"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.filters.searchPlaceholder": {
+  "en": "Filter values",
+  "ko": "값 검색"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.filters.selectAll": {
+  "en": "Select all {count}",
+  "ko": "{count}개 모두 선택"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.filters.sortAscending": {
+  "en": "Sort ascending",
+  "ko": "오름차순 정렬"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.filters.sortDescending": {
+  "en": "Sort descending",
+  "ko": "내림차순 정렬"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.filters.toggleSortAriaLabel": {
+  "en": "Toggle sort direction",
+  "ko": "정렬 방향 전환"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.loading": {
+  "en": "Loading members",
+  "ko": "회원 불러오는 중"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.pagination.currentPageAriaLabel": {
+  "en": "Current page {page}",
+  "ko": "현재 페이지 {page}"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.pagination.next": {
+  "en": "Next",
+  "ko": "다음"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.pagination.pageResults": {
+  "en": "{count} members on this page",
+  "ko": "이 페이지의 회원 {count}명"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.pagination.perPageText": {
+  "en": "Rows per page",
+  "ko": "페이지당 행 수"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.pagination.previous": {
+  "en": "Previous",
+  "ko": "이전"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.pagination.totalResults": {
+  "en": "{count} total members",
+  "ko": "전체 회원 {count}명"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.searchLabel": {
+  "en": "Search members",
+  "ko": "회원 검색"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.searchPlaceholder": {
+  "en": "Search name or email",
+  "ko": "이름 또는 이메일 검색"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.tableFilters.customProgress": {
+  "en": "Custom",
+  "ko": "사용자 지정"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.tableFilters.selectedFunnelStageChipAriaLabel": {
+  "en": "Selected funnel stage filter: {name}",
+  "ko": "선택한 퍼널 단계 필터: {name}"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.tableFilters.selectedProgressChipAriaLabel": {
+  "en": "Selected progress filter: {name}",
+  "ko": "선택한 진행률 필터: {name}"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.tableFilters.selectedProgressChipLabel": {
+  "en": "Progress: {name}",
+  "ko": "진행률: {name}"
+ },
+ "analytics.analytics.courseAnalytics.membersTable.title": {
+  "en": "Course progress",
+  "ko": "코스 진행률"
+ },
+ "analytics.analytics.courseAnalytics.sampleDataBanner.ariaLabel": {
+  "en": "Sample data notice",
+  "ko": "샘플 데이터 안내"
+ },
+ "analytics.analytics.courseAnalytics.sampleDataBanner.clearSampleData": {
+  "en": "Clear Sample Data",
+  "ko": "샘플 데이터 지우기"
+ },
+ "analytics.analytics.courseAnalytics.sampleDataBanner.createCourse": {
+  "en": "Create Course",
+  "ko": "코스 만들기"
+ },
+ "analytics.analytics.courseAnalytics.sampleDataBanner.title": {
+  "en": "You’re viewing sample data. Create your own courses to see real data",
+  "ko": "샘플 데이터를 보고 있습니다. 실제 데이터를 보려면 직접 코스를 만드세요"
+ },
+ "analytics.analytics.courseAnalytics.summaryCards.ariaLabel": {
+  "en": "Course progress summary",
+  "ko": "코스 진행률 요약"
+ },
+ "analytics.analytics.courseAnalytics.summaryCards.averageCourseProgress.title": {
+  "en": "Average course progress",
+  "ko": "평균 코스 진행률"
+ },
+ "analytics.analytics.courseAnalytics.summaryCards.averageCourseProgress.tooltip": {
+  "en": "Average content completion percentage across all enrolled users. A user who has finished 3 of 10 lessons counts as 30% progress.",
+  "ko": "등록한 전체 사용자의 평균 콘텐츠 완료율입니다. 강의 10개 중 3개를 완료한 사용자는 진행률 30%로 계산됩니다."
+ },
+ "analytics.analytics.courseAnalytics.summaryCards.averageTimeToComplete.title": {
+  "en": "Average time to complete",
+  "ko": "평균 완료 소요 시간"
+ },
+ "analytics.analytics.courseAnalytics.summaryCards.averageTimeToComplete.tooltip": {
+  "en": "Average time taken from first lesson access to course completion, for users who have completed the course.",
+  "ko": "코스를 완료한 사용자를 기준으로, 첫 강의 접속부터 코스 완료까지 걸린 평균 시간입니다."
+ },
+ "analytics.analytics.courseAnalytics.summaryCards.dayAbbreviation": {
+  "en": "Day",
+  "ko": "일"
+ },
+ "analytics.analytics.courseAnalytics.summaryCards.daysAbbreviation": {
+  "en": "Days",
+  "ko": "일"
+ },
+ "analytics.analytics.courseAnalytics.summaryCards.error": {
+  "en": "Could not load metric",
+  "ko": "지표를 불러오지 못했습니다"
+ },
+ "analytics.analytics.courseAnalytics.summaryCards.hoursAbbreviation": {
+  "en": "Hrs",
+  "ko": "시간"
+ },
+ "analytics.analytics.courseAnalytics.summaryCards.loading": {
+  "en": "Loading",
+  "ko": "불러오는 중"
+ },
+ "analytics.analytics.courseAnalytics.summaryCards.noComparisonAvailable": {
+  "en": "No comparison available",
+  "ko": "비교할 데이터가 없습니다"
+ },
+ "analytics.analytics.courseAnalytics.summaryCards.noPriorPeriodToCompare": {
+  "en": "No prior period to compare",
+  "ko": "비교할 이전 기간이 없습니다"
+ },
+ "analytics.analytics.courseAnalytics.summaryCards.overallCompletionRate.title": {
+  "en": "Overall completion rate",
+  "ko": "전체 완료율"
+ },
+ "analytics.analytics.courseAnalytics.summaryCards.overallCompletionRate.tooltip": {
+  "en": "Percentage of enrolled users who have completed all course content. Only includes users matching the selected enrollment date range.",
+  "ko": "등록한 사용자 중 코스 콘텐츠를 모두 완료한 사용자의 비율입니다. 선택한 등록일 범위에 해당하는 사용자만 포함됩니다."
+ },
+ "analytics.analytics.courseAnalytics.summaryCards.trendDecreaseAriaLabel": {
+  "en": "Decreased by {value}",
+  "ko": "{value} 감소"
+ },
+ "analytics.analytics.courseAnalytics.summaryCards.trendIncreaseAriaLabel": {
+  "en": "Increased by {value}",
+  "ko": "{value} 증가"
+ },
+ "analytics.analytics.courseAnalytics.summaryCards.trendNoChangeAriaLabel": {
+  "en": "No change, {value}",
+  "ko": "변화 없음, {value}"
+ },
+ "analytics.analytics.courseAnalytics.summaryCards.vsCustomDateRange": {
+  "en": "vs {range}",
+  "ko": "{range} 대비"
+ },
+ "analytics.analytics.courseAnalytics.summaryCards.vsPrevious30Days": {
+  "en": "vs previous 30 days",
+  "ko": "이전 30일 대비"
+ },
+ "analytics.analytics.courseAnalytics.summaryCards.vsPrevious6Months": {
+  "en": "vs previous 6 months",
+  "ko": "이전 6개월 대비"
+ },
+ "analytics.analytics.courseAnalytics.summaryCards.vsPrevious90Days": {
+  "en": "vs previous 90 days",
+  "ko": "이전 90일 대비"
+ },
+ "analytics.analytics.courseAnalytics.summaryCards.vsPreviousPeriod": {
+  "en": "vs previous period",
+  "ko": "이전 기간 대비"
+ },
+ "analytics.analytics.courseAnalytics.summaryCards.vsPreviousThisMonth": {
+  "en": "vs previous this month",
+  "ko": "지난달 대비"
+ },
+ "analytics.analytics.fallback.backToCourseProgress": {
+  "en": "Back to Course Progress",
+  "ko": "코스 진행률로 돌아가기"
+ },
+ "analytics.analytics.fallback.description": {
+  "en": "The link may be outdated or the page may have moved. Go back to Course Progress to continue.",
+  "ko": "링크가 오래되었거나 페이지가 이동되었을 수 있습니다. 코스 진행률로 돌아가 계속 진행하세요."
+ },
+ "analytics.analytics.fallback.header": {
+  "en": "Page not found",
+  "ko": "페이지를 찾을 수 없습니다"
+ },
+ "analytics.analytics.fallback.navigationError": {
+  "en": "Could not open Course Progress. Please try again.",
+  "ko": "코스 진행률을 열지 못했습니다. 다시 시도해 주세요."
+ },
+ "analytics.analytics.fallback.subheader": {
+  "en": "This analytics page doesn't exist",
+  "ko": "존재하지 않는 분석 페이지입니다"
+ },
+ "analytics.analytics.fallback.title": {
+  "en": "We couldn't find this analytics page",
+  "ko": "이 분석 페이지를 찾을 수 없습니다"
+ },
+ "analytics.analytics.legacy.assessmentTitle": {
+  "en": "Assessment",
+  "ko": "평가"
+ },
+ "analytics.analytics.legacy.handshakeFailed": {
+  "en": "Failed to load this view. Please refresh the page and try again.",
+  "ko": "이 화면을 불러오지 못했습니다. 페이지를 새로고침한 후 다시 시도해 주세요."
+ },
+ "analytics.analytics.legacy.loading": {
+  "en": "Loading...",
+  "ko": "불러오는 중..."
+ },
+ "analytics.analytics.legacy.missingAuthToken": {
+  "en": "Could not retrieve an authentication token to load this view.",
+  "ko": "이 화면을 불러오는 데 필요한 인증 토큰을 가져오지 못했습니다."
+ },
+ "analytics.analytics.legacy.missingHostBridge": {
+  "en": "This view can't be opened because the host application didn't supply the required context.",
+  "ko": "호스트 애플리케이션이 필요한 컨텍스트를 제공하지 않아 이 화면을 열 수 없습니다."
+ },
+ "analytics.analytics.legacy.missingLocation": {
+  "en": "Cannot load this view because no location is selected.",
+  "ko": "선택된 서브 계정이 없어 이 화면을 불러올 수 없습니다."
+ },
+ "analytics.analytics.memberAnalytics.deprecationBanner.ariaLabel": {
+  "en": "Member analytics deprecation notice",
+  "ko": "회원 분석 지원 종료 안내"
+ },
+ "analytics.analytics.memberAnalytics.deprecationBanner.dismissAriaLabel": {
+  "en": "Dismiss notice",
+  "ko": "안내 닫기"
+ },
+ "analytics.analytics.memberAnalytics.deprecationBanner.message": {
+  "en": "All of this & more is now in Course progress analytics.",
+  "ko": "이 모든 기능과 그 이상을 이제 코스 진행률 분석에서 확인할 수 있습니다."
+ },
+ "analytics.analytics.memberAnalytics.deprecationBanner.tryItOut": {
+  "en": "Try it out",
+  "ko": "사용해 보기"
+ },
+ "analytics.analytics.sidebar.assessment": {
+  "en": "Assessment",
+  "ko": "평가"
+ },
+ "analytics.analytics.sidebar.courseAnalytics": {
+  "en": "Course progress",
+  "ko": "코스 진행률"
+ },
+ "analytics.analytics.sidebar.memberAnalytics": {
+  "en": "Member analytics",
+  "ko": "회원 분석"
+ },
+ "analytics.analytics.sidebar.revenueAnalytics": {
+  "en": "Revenue analytics",
+  "ko": "매출 분석"
+ },
+ "analytics.analytics.sidebar.toggleCollapse": {
+  "en": "Collapse sidebar",
+  "ko": "사이드바 접기"
+ },
+ "analytics.analytics.sidebar.toggleExpand": {
+  "en": "Expand sidebar",
+  "ko": "사이드바 펼치기"
+ },
+ "analytics.analytics.sidebar.videoAnalytics": {
+  "en": "Video analytics",
+  "ko": "동영상 분석"
+ },
+ "analytics.analytics.title": {
+  "en": "Analytics",
+  "ko": "분석"
+ },
+ "analytics.analytics.videoAnalytics.courseTable.columns.avg": {
+  "en": "Avg",
+  "ko": "평균"
+ },
+ "analytics.analytics.videoAnalytics.courseTable.columns.avgCompletion": {
+  "en": "Finish rate",
+  "ko": "완주율"
+ },
+ "analytics.analytics.videoAnalytics.courseTable.columns.avgEngagement": {
+  "en": "Avg engagement",
+  "ko": "평균 참여도"
+ },
+ "analytics.analytics.videoAnalytics.courseTable.columns.completion": {
+  "en": "completion",
+  "ko": "완료율"
+ },
+ "analytics.analytics.videoAnalytics.courseTable.columns.course": {
+  "en": "Course",
+  "ko": "코스"
+ },
+ "analytics.analytics.videoAnalytics.courseTable.columns.duration": {
+  "en": "Duration",
+  "ko": "재생 시간"
+ },
+ "analytics.analytics.videoAnalytics.courseTable.columns.engagement": {
+  "en": "engagement",
+  "ko": "참여도"
+ },
+ "analytics.analytics.videoAnalytics.courseTable.columns.video": {
+  "en": "Video",
+  "ko": "동영상"
+ },
+ "analytics.analytics.videoAnalytics.courseTable.columns.videos": {
+  "en": "Videos",
+  "ko": "동영상"
+ },
+ "analytics.analytics.videoAnalytics.courseTable.columns.views": {
+  "en": "Views",
+  "ko": "조회수"
+ },
+ "analytics.analytics.videoAnalytics.courseTable.columns.watchTime": {
+  "en": "Watch time",
+  "ko": "시청 시간"
+ },
+ "analytics.analytics.videoAnalytics.courseTable.details": {
+  "en": "Details",
+  "ko": "상세 정보"
+ },
+ "analytics.analytics.videoAnalytics.courseTable.detailsAriaLabel": {
+  "en": "View {video} details",
+  "ko": "{video} 상세 정보 보기"
+ },
+ "analytics.analytics.videoAnalytics.courseTable.emptyState": {
+  "en": "No videos found",
+  "ko": "동영상이 없습니다"
+ },
+ "analytics.analytics.videoAnalytics.courseTable.emptyStateDescription": {
+  "en": "Try adjusting your search or filters to find videos.",
+  "ko": "동영상을 찾으려면 검색어나 필터를 조정해 보세요."
+ },
+ "analytics.analytics.videoAnalytics.courseTable.export": {
+  "en": "Export CSV",
+  "ko": "CSV 내보내기"
+ },
+ "analytics.analytics.videoAnalytics.courseTable.exportAriaLabel": {
+  "en": "Export video analytics CSV",
+  "ko": "동영상 분석 CSV 내보내기"
+ },
+ "analytics.analytics.videoAnalytics.courseTable.filters.openFilter": {
+  "en": "Filter column",
+  "ko": "열 필터"
+ },
+ "analytics.analytics.videoAnalytics.courseTable.filters.sortAscending": {
+  "en": "Sort Ascending A-Z",
+  "ko": "오름차순 정렬 A-Z"
+ },
+ "analytics.analytics.videoAnalytics.courseTable.filters.sortDescending": {
+  "en": "Sort Descending Z-A",
+  "ko": "내림차순 정렬 Z-A"
+ },
+ "analytics.analytics.videoAnalytics.courseTable.filters.toggleSort": {
+  "en": "Toggle sort direction",
+  "ko": "정렬 방향 전환"
+ },
+ "analytics.analytics.videoAnalytics.courseTable.open": {
+  "en": "Details",
+  "ko": "상세 정보"
+ },
+ "analytics.analytics.videoAnalytics.courseTable.openAriaLabel": {
+  "en": "View {video} details",
+  "ko": "{video} 상세 정보 보기"
+ },
+ "analytics.analytics.videoAnalytics.courseTable.pagination.currentPageAriaLabel": {
+  "en": "Current page {page}",
+  "ko": "현재 페이지 {page}"
+ },
+ "analytics.analytics.videoAnalytics.courseTable.pagination.next": {
+  "en": "Next",
+  "ko": "다음"
+ },
+ "analytics.analytics.videoAnalytics.courseTable.pagination.previous": {
+  "en": "Previous",
+  "ko": "이전"
+ },
+ "analytics.analytics.videoAnalytics.courseTable.pagination.rowsPerPage": {
+  "en": "Rows per page",
+  "ko": "페이지당 행 수"
+ },
+ "analytics.analytics.videoAnalytics.courseTable.pagination.totalResults": {
+  "en": "{count} total videos",
+  "ko": "전체 동영상 {count}개"
+ },
+ "analytics.analytics.videoAnalytics.courseTable.rangeIndicatorWithTotal": {
+  "en": "{start}-{end} of {total}",
+  "ko": "{total} 중 {start}-{end}"
+ },
+ "analytics.analytics.videoAnalytics.courseTable.searchPlaceholder": {
+  "en": "Search by video name",
+  "ko": "동영상 이름으로 검색"
+ },
+ "analytics.analytics.videoAnalytics.courseTable.title": {
+  "en": "Videos",
+  "ko": "동영상"
+ },
+ "analytics.analytics.videoAnalytics.detail.devices.disclaimer": {
+  "en": "Desktop views start Jul 4, 2026. Mobile views start Sep 18, 2026. Detected from the browser. Some tablets are counted as desktop.",
+  "ko": "데스크톱 조회수는 2026년 7월 4일부터, 모바일 조회수는 2026년 9월 18일부터 집계됩니다. 기기는 브라우저 정보로 판별하며, 일부 태블릿은 데스크톱으로 집계됩니다."
+ },
+ "analytics.analytics.videoAnalytics.detail.devices.title": {
+  "en": "Device split",
+  "ko": "기기별 분포"
+ },
+ "analytics.analytics.videoAnalytics.detail.devices.views": {
+  "en": "{count} views",
+  "ko": "조회수 {count}회"
+ },
+ "analytics.analytics.videoAnalytics.detail.funnel.biggestDrop": {
+  "en": "Biggest drop",
+  "ko": "최대 이탈 구간"
+ },
+ "analytics.analytics.videoAnalytics.detail.funnel.dropIndicator": {
+  "en": "Drop-off: {count}",
+  "ko": "이탈: {count}"
+ },
+ "analytics.analytics.videoAnalytics.detail.funnel.subtitle": {
+  "en": "Of everyone who pressed play",
+  "ko": "재생을 누른 전체 시청자 기준"
+ },
+ "analytics.analytics.videoAnalytics.detail.funnel.title": {
+  "en": "Completion funnel",
+  "ko": "시청 완료 퍼널"
+ },
+ "analytics.analytics.videoAnalytics.detail.funnel.tooltip": {
+  "en": "Viewers who reach each checkpoint after pressing play.",
+  "ko": "재생을 누른 후 각 체크포인트에 도달한 시청자입니다."
+ },
+ "analytics.analytics.videoAnalytics.detail.funnel.viewersLeft": {
+  "en": "{count} viewers left here",
+  "ko": "시청자 {count}명이 여기서 이탈했습니다"
+ },
+ "analytics.analytics.videoAnalytics.detail.geo.columnCountry": {
+  "en": "Country",
+  "ko": "국가"
+ },
+ "analytics.analytics.videoAnalytics.detail.geo.columnViews": {
+  "en": "Views",
+  "ko": "조회수"
+ },
+ "analytics.analytics.videoAnalytics.detail.geo.otherCountries": {
+  "en": "Other countries",
+  "ko": "기타 국가"
+ },
+ "analytics.analytics.videoAnalytics.detail.geo.otherRegions": {
+  "en": "Other regions",
+  "ko": "기타 지역"
+ },
+ "analytics.analytics.videoAnalytics.detail.geo.showCountriesOnly": {
+  "en": "Hide regions",
+  "ko": "지역 숨기기"
+ },
+ "analytics.analytics.videoAnalytics.detail.geo.subtitle": {
+  "en": "Unknown places stay in the list so the total still adds up.",
+  "ko": "위치를 알 수 없는 항목도 목록에 남겨 두므로 합계가 그대로 맞습니다."
+ },
+ "analytics.analytics.videoAnalytics.detail.geo.subtitleRegions": {
+  "en": "Top regions in each country. Unknown places stay in the list.",
+  "ko": "국가별 상위 지역입니다. 위치를 알 수 없는 항목도 목록에 남겨 둡니다."
+ },
+ "analytics.analytics.videoAnalytics.detail.geo.title": {
+  "en": "Views by country",
+  "ko": "국가별 조회수"
+ },
+ "analytics.analytics.videoAnalytics.detail.geo.viewAllRegions": {
+  "en": "View regions",
+  "ko": "지역 보기"
+ },
+ "analytics.analytics.videoAnalytics.detail.geo.views": {
+  "en": "{count} views",
+  "ko": "조회수 {count}회"
+ },
+ "analytics.analytics.videoAnalytics.detail.header.allVideosAriaLabel": {
+  "en": "Go back to all videos in this course",
+  "ko": "이 코스의 전체 동영상으로 돌아가기"
+ },
+ "analytics.analytics.videoAnalytics.detail.header.allVideosInCourse": {
+  "en": "All videos in this course",
+  "ko": "이 코스의 전체 동영상"
+ },
+ "analytics.analytics.videoAnalytics.detail.header.nextVideo": {
+  "en": "Next video",
+  "ko": "다음 동영상"
+ },
+ "analytics.analytics.videoAnalytics.detail.header.pagination": {
+  "en": "{current} of {total}",
+  "ko": "{total} 중 {current}"
+ },
+ "analytics.analytics.videoAnalytics.detail.header.prevVideo": {
+  "en": "Previous video",
+  "ko": "이전 동영상"
+ },
+ "analytics.analytics.videoAnalytics.detail.insights.aiHint": {
+  "en": "AI can misread patterns. Check the charts below before making a cut.",
+  "ko": "AI가 패턴을 잘못 해석할 수 있습니다. 영상을 잘라내기 전에 아래 차트를 확인하세요."
+ },
+ "analytics.analytics.videoAnalytics.detail.insights.feedback.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "analytics.analytics.videoAnalytics.detail.insights.feedback.conflict": {
+  "en": "This was changed elsewhere. Refresh and try again.",
+  "ko": "다른 곳에서 변경되었습니다. 새로고침한 후 다시 시도하세요."
+ },
+ "analytics.analytics.videoAnalytics.detail.insights.feedback.detailsPlaceholder": {
+  "en": "What was unsatisfying about this response?",
+  "ko": "이 응답에서 불만족스러웠던 점은 무엇인가요?"
+ },
+ "analytics.analytics.videoAnalytics.detail.insights.feedback.didNotFollowRequest": {
+  "en": "Did not fully follow my request",
+  "ko": "요청을 제대로 따르지 않음"
+ },
+ "analytics.analytics.videoAnalytics.detail.insights.feedback.failed": {
+  "en": "Could not submit feedback. Try again.",
+  "ko": "피드백을 제출하지 못했습니다. 다시 시도해 주세요."
+ },
+ "analytics.analytics.videoAnalytics.detail.insights.feedback.forbidden": {
+  "en": "You don't have access to do this.",
+  "ko": "이 작업을 수행할 권한이 없습니다."
+ },
+ "analytics.analytics.videoAnalytics.detail.insights.feedback.harmfulContent": {
+  "en": "Harmful content",
+  "ko": "유해 콘텐츠"
+ },
+ "analytics.analytics.videoAnalytics.detail.insights.feedback.incompleteResponse": {
+  "en": "Incomplete Response",
+  "ko": "불완전한 응답"
+ },
+ "analytics.analytics.videoAnalytics.detail.insights.feedback.noInsights": {
+  "en": "No insights for this video yet.",
+  "ko": "이 동영상에 대한 인사이트가 아직 없습니다."
+ },
+ "analytics.analytics.videoAnalytics.detail.insights.feedback.notFactuallyCorrect": {
+  "en": "Not factually correct",
+  "ko": "사실과 다름"
+ },
+ "analytics.analytics.videoAnalytics.detail.insights.feedback.other": {
+  "en": "Other",
+  "ko": "기타"
+ },
+ "analytics.analytics.videoAnalytics.detail.insights.feedback.provideDetails": {
+  "en": "Please provide details",
+  "ko": "세부 정보를 입력해 주세요"
+ },
+ "analytics.analytics.videoAnalytics.detail.insights.feedback.recorded": {
+  "en": "Feedback recorded",
+  "ko": "피드백이 기록되었습니다"
+ },
+ "analytics.analytics.videoAnalytics.detail.insights.feedback.selectIssue": {
+  "en": "Select Issue",
+  "ko": "문제 선택"
+ },
+ "analytics.analytics.videoAnalytics.detail.insights.feedback.submit": {
+  "en": "Submit Feedback",
+  "ko": "피드백 제출"
+ },
+ "analytics.analytics.videoAnalytics.detail.insights.feedback.thanks": {
+  "en": "Thanks for your feedback.",
+  "ko": "피드백을 보내 주셔서 감사합니다."
+ },
+ "analytics.analytics.videoAnalytics.detail.insights.feedback.title": {
+  "en": "Feedback",
+  "ko": "피드백"
+ },
+ "analytics.analytics.videoAnalytics.detail.insights.helpful": {
+  "en": "This was useful",
+  "ko": "도움이 됨"
+ },
+ "analytics.analytics.videoAnalytics.detail.insights.hideSteps": {
+  "en": "Hide suggested next steps",
+  "ko": "추천 다음 단계 숨기기"
+ },
+ "analytics.analytics.videoAnalytics.detail.insights.loading": {
+  "en": "Looking at how this video is watched",
+  "ko": "이 동영상의 시청 패턴을 분석하는 중"
+ },
+ "analytics.analytics.videoAnalytics.detail.insights.loadingHint": {
+  "en": "This usually takes a few seconds.",
+  "ko": "보통 몇 초 정도 걸립니다."
+ },
+ "analytics.analytics.videoAnalytics.detail.insights.notHelpful": {
+  "en": "This missed the point",
+  "ko": "요점을 벗어남"
+ },
+ "analytics.analytics.videoAnalytics.detail.insights.rateLimited": {
+  "en": "Too many requests",
+  "ko": "요청이 너무 많습니다"
+ },
+ "analytics.analytics.videoAnalytics.detail.insights.rateLimitedHint": {
+  "en": "Wait a moment and try again.",
+  "ko": "잠시 후 다시 시도하세요."
+ },
+ "analytics.analytics.videoAnalytics.detail.insights.retry": {
+  "en": "Try again",
+  "ko": "다시 시도"
+ },
+ "analytics.analytics.videoAnalytics.detail.insights.showSteps": {
+  "en": "Show suggested next steps",
+  "ko": "추천 다음 단계 보기"
+ },
+ "analytics.analytics.videoAnalytics.detail.insights.unavailable": {
+  "en": "Insights are unavailable right now",
+  "ko": "지금은 인사이트를 사용할 수 없습니다"
+ },
+ "analytics.analytics.videoAnalytics.detail.insights.unavailableHint": {
+  "en": "The summary could not be generated. The charts below are still up to date.",
+  "ko": "요약을 생성하지 못했습니다. 아래 차트는 여전히 최신 상태입니다."
+ },
+ "analytics.analytics.videoAnalytics.detail.kpi.avgEngagement": {
+  "en": "Average engagement",
+  "ko": "평균 참여도"
+ },
+ "analytics.analytics.videoAnalytics.detail.kpi.avgEngagementShort": {
+  "en": "Avg engagement",
+  "ko": "평균 참여도"
+ },
+ "analytics.analytics.videoAnalytics.detail.kpi.avgEngagementTooltip": {
+  "en": "Average share of this video that viewers watch.",
+  "ko": "시청자가 이 동영상을 평균적으로 얼마나 시청하는지 나타내는 비율입니다."
+ },
+ "analytics.analytics.videoAnalytics.detail.kpi.reviewerRate": {
+  "en": "Rewatch rate",
+  "ko": "재시청률"
+ },
+ "analytics.analytics.videoAnalytics.detail.kpi.reviewerRateShort": {
+  "en": "Re-viewer rate",
+  "ko": "재시청자 비율"
+ },
+ "analytics.analytics.videoAnalytics.detail.kpi.reviewerRateTooltip": {
+  "en": "Share of viewers who watched more than once.",
+  "ko": "두 번 이상 시청한 시청자의 비율입니다."
+ },
+ "analytics.analytics.videoAnalytics.detail.kpi.sinceJul8": {
+  "en": "Desktop from Jul 4. Mobile from Sep 18.",
+  "ko": "데스크톱은 7월 4일부터, 모바일은 9월 18일부터 집계됩니다."
+ },
+ "analytics.analytics.videoAnalytics.detail.kpi.totalViews": {
+  "en": "Total views",
+  "ko": "총 조회수"
+ },
+ "analytics.analytics.videoAnalytics.detail.kpi.totalViewsTooltip": {
+  "en": "Plays that pass the view threshold.",
+  "ko": "조회로 인정되는 기준을 넘긴 재생 횟수입니다."
+ },
+ "analytics.analytics.videoAnalytics.detail.kpi.uniqueViewers": {
+  "en": "Unique viewers",
+  "ko": "순 시청자 수"
+ },
+ "analytics.analytics.videoAnalytics.detail.kpi.uniqueViewersTooltip": {
+  "en": "Distinct people who watched this video.",
+  "ko": "이 동영상을 시청한 서로 다른 사람의 수입니다."
+ },
+ "analytics.analytics.videoAnalytics.detail.kpi.vsPrev30Days": {
+  "en": "vs prev 30 days",
+  "ko": "이전 30일 대비"
+ },
+ "analytics.analytics.videoAnalytics.detail.kpi.vsPrev90Days": {
+  "en": "vs prev 90 days",
+  "ko": "이전 90일 대비"
+ },
+ "analytics.analytics.videoAnalytics.detail.kpi.watchTime": {
+  "en": "Watch time",
+  "ko": "시청 시간"
+ },
+ "analytics.analytics.videoAnalytics.detail.kpi.watchTimeTooltip": {
+  "en": "Total time spent watching this video.",
+  "ko": "이 동영상을 시청하는 데 쓴 총 시간입니다."
+ },
+ "analytics.analytics.videoAnalytics.detail.retention.rewatchDensity": {
+  "en": "Re-watch density",
+  "ko": "재시청 밀도"
+ },
+ "analytics.analytics.videoAnalytics.detail.retention.stillWatching": {
+  "en": "Still watching",
+  "ko": "계속 시청 중"
+ },
+ "analytics.analytics.videoAnalytics.detail.retention.subtitle": {
+  "en": "Hover for the value at any point · click to move the marker.",
+  "ko": "아무 지점에나 마우스를 올리면 값을 볼 수 있고, 클릭하면 마커를 옮길 수 있습니다."
+ },
+ "analytics.analytics.videoAnalytics.detail.retention.title": {
+  "en": "Audience retention",
+  "ko": "시청자 유지율"
+ },
+ "analytics.analytics.videoAnalytics.detail.sessions.disclaimer": {
+  "en": "Session rows come from the raw event stream, so they expire on the retention window. The charts above do not.",
+  "ko": "세션 행은 원시 이벤트 스트림에서 가져오므로 보존 기간이 지나면 만료됩니다. 위 차트는 만료되지 않습니다."
+ },
+ "analytics.analytics.videoAnalytics.detail.sessions.loadMore": {
+  "en": "Load more",
+  "ko": "더 보기"
+ },
+ "analytics.analytics.videoAnalytics.detail.sessions.showingText": {
+  "en": "Showing {count} of {total} sessions",
+  "ko": "세션 {total}개 중 {count}개 표시 중"
+ },
+ "analytics.analytics.videoAnalytics.detail.sessions.subtitle": {
+  "en": "One row per viewing session. The bar shows which parts that person actually watched.",
+  "ko": "시청 세션마다 한 행씩 표시됩니다. 막대는 해당 시청자가 실제로 시청한 구간을 보여 줍니다."
+ },
+ "analytics.analytics.videoAnalytics.detail.sessions.title": {
+  "en": "Recent sessions",
+  "ko": "최근 세션"
+ },
+ "analytics.analytics.videoAnalytics.filters.courses.allCourses": {
+  "en": "All courses",
+  "ko": "전체 코스"
+ },
+ "analytics.analytics.videoAnalytics.filters.courses.clearAriaLabel": {
+  "en": "Clear courses filter",
+  "ko": "코스 필터 지우기"
+ },
+ "analytics.analytics.videoAnalytics.filters.courses.label": {
+  "en": "Courses",
+  "ko": "코스"
+ },
+ "analytics.analytics.videoAnalytics.filters.courses.loadError": {
+  "en": "Could not load courses",
+  "ko": "코스를 불러오지 못했습니다"
+ },
+ "analytics.analytics.videoAnalytics.filters.courses.loading": {
+  "en": "Loading courses",
+  "ko": "코스 불러오는 중"
+ },
+ "analytics.analytics.videoAnalytics.filters.courses.noProductsAvailable": {
+  "en": "No course available",
+  "ko": "사용 가능한 코스가 없습니다"
+ },
+ "analytics.analytics.videoAnalytics.filters.courses.searchPlaceholder": {
+  "en": "Search courses",
+  "ko": "코스 검색"
+ },
+ "analytics.analytics.videoAnalytics.filters.viewedDate.allTime": {
+  "en": "All time",
+  "ko": "전체 기간"
+ },
+ "analytics.analytics.videoAnalytics.filters.viewedDate.custom": {
+  "en": "Custom",
+  "ko": "사용자 지정"
+ },
+ "analytics.analytics.videoAnalytics.filters.viewedDate.label": {
+  "en": "Viewed",
+  "ko": "조회 기간"
+ },
+ "analytics.analytics.videoAnalytics.filters.viewedDate.last30Days": {
+  "en": "Last 30 days",
+  "ko": "최근 30일"
+ },
+ "analytics.analytics.videoAnalytics.filters.viewedDate.last6Months": {
+  "en": "Last 6 months",
+  "ko": "최근 6개월"
+ },
+ "analytics.analytics.videoAnalytics.filters.viewedDate.last90Days": {
+  "en": "Last 90 days",
+  "ko": "최근 90일"
+ },
+ "analytics.analytics.videoAnalytics.header.exportAriaLabel": {
+  "en": "Export video analytics CSV",
+  "ko": "동영상 분석 CSV 내보내기"
+ },
+ "analytics.analytics.videoAnalytics.header.exportCsv": {
+  "en": "Export CSV",
+  "ko": "CSV 내보내기"
+ },
+ "analytics.analytics.videoAnalytics.header.exportModal.asyncDescription": {
+  "en": "An email with your report download link will be sent to you shortly.",
+  "ko": "보고서 다운로드 링크가 담긴 이메일이 곧 발송됩니다."
+ },
+ "analytics.analytics.videoAnalytics.header.exportModal.errorDescription": {
+  "en": "Could not export video analytics. Please try again.",
+  "ko": "동영상 분석을 내보내지 못했습니다. 다시 시도해 주세요."
+ },
+ "analytics.analytics.videoAnalytics.header.exportModal.errorTitle": {
+  "en": "Export failed",
+  "ko": "내보내기 실패"
+ },
+ "analytics.analytics.videoAnalytics.header.exportModal.syncDescription": {
+  "en": "Your video analytics sheet is being exported.",
+  "ko": "동영상 분석 시트를 내보내는 중입니다."
+ },
+ "analytics.analytics.videoAnalytics.header.lastUpdated": {
+  "en": "Last updated: {value}",
+  "ko": "마지막 업데이트: {value}"
+ },
+ "analytics.analytics.videoAnalytics.header.refreshAriaLabel": {
+  "en": "Refresh video analytics",
+  "ko": "동영상 분석 새로고침"
+ },
+ "analytics.analytics.videoAnalytics.header.refreshLabel": {
+  "en": "Refresh",
+  "ko": "새로고침"
+ },
+ "analytics.analytics.videoAnalytics.header.refreshSuccess": {
+  "en": "Video analytics refreshed",
+  "ko": "동영상 분석을 새로고침했습니다"
+ },
+ "analytics.analytics.videoAnalytics.header.subtitle": {
+  "en": "See how each video holds attention, and where viewers leave",
+  "ko": "각 동영상이 시청자의 관심을 얼마나 붙잡는지, 시청자가 어디서 이탈하는지 확인하세요"
+ },
+ "analytics.analytics.videoAnalytics.header.title": {
+  "en": "Video analytics",
+  "ko": "동영상 분석"
+ },
+ "analytics.analytics.videoAnalytics.infoBanner.description": {
+  "en": "A view is matched to its lesson from the moment the video is next played, so earlier views aren't attributed here. Nothing is backfilled.",
+  "ko": "조회는 동영상이 다음에 재생되는 시점부터 해당 강의와 연결되므로, 그 이전 조회는 여기에 집계되지 않습니다. 이전 데이터는 소급 반영되지 않습니다."
+ },
+ "analytics.analytics.videoAnalytics.infoBanner.dismissAriaLabel": {
+  "en": "Dismiss notice",
+  "ko": "안내 닫기"
+ },
+ "analytics.analytics.videoAnalytics.infoBanner.title": {
+  "en": "Desktop views from Jul 4, 2026. Mobile views from Sep 18, 2026.",
+  "ko": "데스크톱 조회수는 2026년 7월 4일부터, 모바일 조회수는 2026년 9월 18일부터 집계됩니다."
+ },
+ "analytics.analytics.videoAnalytics.modal.close": {
+  "en": "Close",
+  "ko": "닫기"
+ },
+ "analytics.analytics.videoAnalytics.modal.disclaimer": {
+  "en": "Near real-time. Desktop views start Jul 4, 2026. Mobile views start Sep 18, 2026.",
+  "ko": "거의 실시간으로 반영됩니다. 데스크톱 조회수는 2026년 7월 4일부터, 모바일 조회수는 2026년 9월 18일부터 집계됩니다."
+ },
+ "analytics.analytics.videoAnalytics.modal.hoverToScrub": {
+  "en": "Hover to scrub",
+  "ko": "마우스를 올려 구간 탐색"
+ },
+ "analytics.analytics.videoAnalytics.modal.last30Days": {
+  "en": "last 30 days",
+  "ko": "최근 30일"
+ },
+ "analytics.analytics.videoAnalytics.modal.playhead": {
+  "en": "PLAYHEAD {time}",
+  "ko": "재생 위치 {time}"
+ },
+ "analytics.analytics.videoAnalytics.modal.retentionTitle": {
+  "en": "Retention against the timeline",
+  "ko": "타임라인별 시청 유지율"
+ },
+ "analytics.analytics.videoAnalytics.modal.title": {
+  "en": "Video stats",
+  "ko": "동영상 통계"
+ },
+ "analytics.analytics.videoAnalytics.modal.viewInAnalytics": {
+  "en": "View in analytics",
+  "ko": "분석에서 보기"
+ },
+ "analytics.analytics.videoAnalytics.summaryCards.ariaLabel": {
+  "en": "Video analytics summary metrics",
+  "ko": "동영상 분석 요약 지표"
+ },
+ "analytics.analytics.videoAnalytics.summaryCards.avgCompletion.title": {
+  "en": "Average finish rate",
+  "ko": "평균 완주율"
+ },
+ "analytics.analytics.videoAnalytics.summaryCards.avgCompletion.tooltip": {
+  "en": "Share of viewers who reached the end, averaged across this course.",
+  "ko": "끝까지 시청한 시청자의 비율을 이 코스 전체에서 평균한 값입니다."
+ },
+ "analytics.analytics.videoAnalytics.summaryCards.avgCompletion.tooltipComparisonDown": {
+  "en": "Share of viewers who reached the end, averaged across this course. It went down from {prev} to {curr} versus the {period}.",
+  "ko": "끝까지 시청한 시청자의 비율을 이 코스 전체에서 평균한 값입니다. {period} 대비 {prev}에서 {curr}(으)로 낮아졌습니다."
+ },
+ "analytics.analytics.videoAnalytics.summaryCards.avgCompletion.tooltipComparisonSteady": {
+  "en": "Share of viewers who reached the end, averaged across this course. It remained steady at {curr} versus the {period}.",
+  "ko": "끝까지 시청한 시청자의 비율을 이 코스 전체에서 평균한 값입니다. {period} 대비 {curr}(으)로 변동 없이 유지되었습니다."
+ },
+ "analytics.analytics.videoAnalytics.summaryCards.avgCompletion.tooltipComparisonUp": {
+  "en": "Share of viewers who reached the end, averaged across this course. It went up from {prev} to {curr} versus the {period}.",
+  "ko": "끝까지 시청한 시청자의 비율을 이 코스 전체에서 평균한 값입니다. {period} 대비 {prev}에서 {curr}(으)로 높아졌습니다."
+ },
+ "analytics.analytics.videoAnalytics.summaryCards.avgEngagement.title": {
+  "en": "Average engagement",
+  "ko": "평균 참여도"
+ },
+ "analytics.analytics.videoAnalytics.summaryCards.avgEngagement.tooltip": {
+  "en": "How much of a video the average viewer gets through, across this course. Can exceed 100% on re-watch.",
+  "ko": "이 코스 전체에서 시청자가 동영상을 평균적으로 얼마나 시청하는지 나타냅니다. 재시청하면 100%를 넘을 수 있습니다."
+ },
+ "analytics.analytics.videoAnalytics.summaryCards.avgEngagement.tooltipComparisonDown": {
+  "en": "How much of a video the average viewer gets through, across this course. Can exceed 100% on re-watch. It went down from {prev} to {curr} versus the {period}.",
+  "ko": "이 코스 전체에서 시청자가 동영상을 평균적으로 얼마나 시청하는지 나타냅니다. 재시청하면 100%를 넘을 수 있습니다. {period} 대비 {prev}에서 {curr}(으)로 낮아졌습니다."
+ },
+ "analytics.analytics.videoAnalytics.summaryCards.avgEngagement.tooltipComparisonSteady": {
+  "en": "How much of a video the average viewer gets through, across this course. Can exceed 100% on re-watch. It remained steady at {curr} versus the {period}.",
+  "ko": "이 코스 전체에서 시청자가 동영상을 평균적으로 얼마나 시청하는지 나타냅니다. 재시청하면 100%를 넘을 수 있습니다. {period} 대비 {curr}(으)로 변동 없이 유지되었습니다."
+ },
+ "analytics.analytics.videoAnalytics.summaryCards.avgEngagement.tooltipComparisonUp": {
+  "en": "How much of a video the average viewer gets through, across this course. Can exceed 100% on re-watch. It went up from {prev} to {curr} versus the {period}.",
+  "ko": "이 코스 전체에서 시청자가 동영상을 평균적으로 얼마나 시청하는지 나타냅니다. 재시청하면 100%를 넘을 수 있습니다. {period} 대비 {prev}에서 {curr}(으)로 높아졌습니다."
+ },
+ "analytics.analytics.videoAnalytics.summaryCards.noComparisonAvailable": {
+  "en": "No comparison available",
+  "ko": "비교할 데이터가 없습니다"
+ },
+ "analytics.analytics.videoAnalytics.summaryCards.totalVideoViews.title": {
+  "en": "Total video views",
+  "ko": "총 동영상 조회수"
+ },
+ "analytics.analytics.videoAnalytics.summaryCards.totalVideoViews.tooltip": {
+  "en": "Plays, not people. One person watching twice counts twice. Across {count} videos in this course.",
+  "ko": "사람 수가 아닌 재생 횟수입니다. 한 사람이 두 번 시청하면 두 번으로 집계됩니다. 이 코스의 동영상 {count}개 기준입니다."
+ },
+ "analytics.analytics.videoAnalytics.summaryCards.totalVideoViews.tooltipAll": {
+  "en": "Plays, not people. One person watching twice counts twice. Across {count} videos.",
+  "ko": "사람 수가 아닌 재생 횟수입니다. 한 사람이 두 번 시청하면 두 번으로 집계됩니다. 동영상 {count}개 기준입니다."
+ },
+ "analytics.analytics.videoAnalytics.summaryCards.totalVideoViews.tooltipDefault": {
+  "en": "Plays, not people. One person watching twice counts twice. Across all videos in this course.",
+  "ko": "사람 수가 아닌 재생 횟수입니다. 한 사람이 두 번 시청하면 두 번으로 집계됩니다. 이 코스의 전체 동영상 기준입니다."
+ },
+ "analytics.analytics.videoAnalytics.summaryCards.vsPrevious30Days": {
+  "en": "vs previous 30 days",
+  "ko": "이전 30일 대비"
+ },
+ "analytics.analytics.videoAnalytics.summaryCards.vsPrevious6Months": {
+  "en": "vs previous 6 months",
+  "ko": "이전 6개월 대비"
+ },
+ "analytics.analytics.videoAnalytics.summaryCards.vsPrevious7Days": {
+  "en": "vs previous 7 days",
+  "ko": "이전 7일 대비"
+ },
+ "analytics.analytics.videoAnalytics.summaryCards.vsPrevious90Days": {
+  "en": "vs previous 90 days",
+  "ko": "이전 90일 대비"
+ },
+ "analytics.analytics.videoAnalytics.summaryCards.watchTime.title": {
+  "en": "Watch time",
+  "ko": "시청 시간"
+ },
+ "analytics.analytics.videoAnalytics.summaryCards.watchTime.tooltip": {
+  "en": "Time actually spent watching, summed across every session in this course.",
+  "ko": "이 코스의 모든 세션에서 실제로 시청한 시간을 합산한 값입니다."
+ },
+ "analytics.analytics.videoAnalytics.summaryCards.watchTime.tooltipAll": {
+  "en": "Time actually spent watching, summed across every session.",
+  "ko": "모든 세션에서 실제로 시청한 시간을 합산한 값입니다."
  }
 }
