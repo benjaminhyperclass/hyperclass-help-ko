@@ -3,6 +3,7 @@
  *          ② 한국어 라벨 + 영어 날짜('기한 September 30, 2026' → '기한 2026년 9월 30일', 인보이스 결제 일정)
  *          ③ 상대 시각 '2 months ago'·'an hour ago'·'in 3 days' → '2개월 전'·'1시간 전'·'3일 후'(코스 댓글 등, 노드 전체 일치)
  *          ④ 상태 칩 허용 목록에 소문자 paid·pending(인보이스 미리보기 결제 일정) · Tailwind 알약(.rounded-full) 안의 상태어(커뮤니티 그룹 'Active').
+ *          ⑤ '라벨 (숫자)' — 라벨이 사전 단어일 때('Companies (0)' → '회사 (0)', 연락처 상세 연관 패널) · 'N items' → 'N개 항목'.
  * v4.21.14: 교차 출처 iframe(자동화 워크플로우·비즈니스 프로필) 같은 출처 중계 — IFR_LOCS 로케이션에서 부팅했을 때만.
  *          iframe 주소를 app.hyperclass.ai/__ifr/{wf|crm}/… (엣지 Worker hc-ifr-proxy)로 바꾸고, 같은 출처가 된 iframe 문서에
  *          기존 DOM 번역(pass·mo)을 건다. Worker 헬스(x-hc-ifr) 확인 전·실패 시엔 원래 주소. 끄기: localStorage.hcKoIfr='0'.
@@ -690,6 +691,17 @@
     if (q === 'a few') return u === 'second' ? (m[1] ? '잠시 후' : '방금 전') : null;
     return (/^\d/.test(q) ? q : '1') + KD_AGO_KO[u] + (m[1] ? ' 후' : ' 전');
   }
+  // v4.21.15: '라벨 (숫자)' — 라벨이 _text 이거나 범위 안의 _textScoped 단어일 때(오브젝트 복수형 이름 'Companies (0)' 등) · 'N items'
+  var KD_CNT = /^(\S.{0,39}?) \((\d[\d,]*)\)$/, KD_ITEMS = /^(\d[\d,]*) items?$/;
+  function kdCount(p, t) {
+    var m = t.match(KD_CNT), x = null;
+    if (m) {
+      if (T && typeof T[m[1]] === 'string') x = T[m[1]];
+      else if (TS && typeof TS[m[1]] === 'string' && (inScope(p) || inEnumMenu(p))) x = TS[m[1]];
+      return x ? x + ' (' + m[2] + ')' : null;
+    }
+    return (m = t.match(KD_ITEMS)) ? m[1] + '개 항목' : null;
+  }
   // v4.21.15: 한국어 라벨 + 영어 날짜 — i18n 값('기한 {date}')에 앱이 영어로 찍은 날짜를 넣는 경우(인보이스 결제 일정 실측).
   // 라벨은 한글·공백·가운뎃점·쌍점만, 나머지가 통째로 날짜(kdCore)일 때만 바꾼다.
   var KD_KOLAB = /^[\uAC00-\uD7A3][\uAC00-\uD7A3\s·]*:?\s+$/;
@@ -762,6 +774,7 @@
         else if ((v = kdDur(t)) !== null) dated = true;
         else if ((v = kdAgo(t)) !== null) dated = true;              // v4.21.15
         else if ((v = kdKoLabel(t)) !== null) dated = true;          // v4.21.15
+        else if ((v = kdCount(n.parentElement, t)) !== null) dated = true;   // v4.21.15
         else return;
       }
     }
