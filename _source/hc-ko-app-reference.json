@@ -188757,15 +188757,15 @@
  },
  "opportunities.forecastDashboard.slippageHighLabel": {
   "en": "High risk",
-  "ko": "높은 위험"
+  "ko": "위험도 높음"
  },
  "opportunities.forecastDashboard.slippageMediumLabel": {
   "en": "Medium risk",
-  "ko": "중간 위험"
+  "ko": "위험도 보통"
  },
  "opportunities.forecastDashboard.slippageLowLabel": {
   "en": "Low risk",
-  "ko": "낮은 위험"
+  "ko": "위험도 낮음"
  },
  "opportunities.forecastDashboard.allCloseDates": {
   "en": "All close dates",
@@ -218477,19 +218477,19 @@
  },
  "list.dashboard.draft": {
   "en": "Invoice(s) in Draft",
-  "ko": "임시 저장 인보이스"
+  "ko": "건 임시 저장"
  },
  "list.dashboard.due": {
   "en": "Invoice(s) in Due",
-  "ko": "지급 예정 인보이스"
+  "ko": "건 지급 예정"
  },
  "list.dashboard.received": {
   "en": "Invoice(s) received",
-  "ko": "결제 완료 인보이스"
+  "ko": "건 결제 완료"
  },
  "list.dashboard.overdue": {
   "en": "Invoice(s) Overdue",
-  "ko": "기한 초과 인보이스"
+  "ko": "건 기한 초과"
  },
  "list.title": {
   "en": "Invoices",
@@ -301717,7 +301717,7 @@
  },
  "opportunitiesApp.opportunities.forecastDashboard.slippageHighLabel": {
   "en": "High risk",
-  "ko": "높은 위험"
+  "ko": "위험도 높음"
  },
  "opportunitiesApp.opportunities.forecastDashboard.slippageHighRule": {
   "en": "Slipped 10+ times or 14+ days.",
@@ -301729,7 +301729,7 @@
  },
  "opportunitiesApp.opportunities.forecastDashboard.slippageLowLabel": {
   "en": "Low risk",
-  "ko": "낮은 위험"
+  "ko": "위험도 낮음"
  },
  "opportunitiesApp.opportunities.forecastDashboard.slippageLowRule": {
   "en": "Slipped 1+ times or 2+ days (excluding high/medium).",
@@ -301741,7 +301741,7 @@
  },
  "opportunitiesApp.opportunities.forecastDashboard.slippageMediumLabel": {
   "en": "Medium risk",
-  "ko": "중간 위험"
+  "ko": "위험도 보통"
  },
  "opportunitiesApp.opportunities.forecastDashboard.slippageMediumRule": {
   "en": "Slipped 1+ times or 7+ days (excluding high).",
@@ -362537,7 +362537,7 @@
  },
  "opportunitiesApp.common.noResultFound": {
   "en": "No {objectNamePlural} found",
-  "ko": "{objectNamePlural}에서 검색 결과가 없습니다"
+  "ko": "표시할 {objectNamePlural} 항목이 없습니다"
  },
  "opportunitiesApp.common.permissionDeniedDesc": {
   "en": "You currently have view-only access to this smartlist and cannot make any changes. If you need edit permissions, please contact the smartlist owner for access.",
