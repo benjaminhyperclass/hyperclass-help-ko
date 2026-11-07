@@ -2,7 +2,7 @@
 
 * [하이퍼클래스 도움말](README.md)
 
-## 자주 묻는 질문
+## 자주 묻는 질문 (FAQ)
 
 * [자주 묻는 질문 모아보기](docs/00-자주묻는질문/README.md)
 * [AI·SMS·음성 부가 서비스 사용료는 얼마예요?](docs/00-자주묻는질문/usage-costs.md)
@@ -33,7 +33,7 @@
 * [하이퍼클래스는 어떤 서비스인가요?](docs/00-자주묻는질문/what-is-hyperclass.md)
 * [해지하면 그동안 쌓인 고객 데이터는 어떻게 되나요?](docs/00-자주묻는질문/data-on-cancel.md)
 
-## 시작하기
+## 시작하기 (Getting Started)
 
 * [기존 연락처 가져오기](docs/01-시작하기/기본-설정/getting-started-import-existing-contacts.md)
 * [런치패드 상황별 인앱 안내](docs/01-시작하기/기본-설정/launchpad-contextual-in-app-nudges.md)
@@ -64,7 +64,7 @@
 * [시작하기: Stripe 연결](docs/01-시작하기/커머스/getting-started-connect-stripe.md)
 * [인보이스 만들고 보내기](docs/01-시작하기/커머스/getting-started-create-and-send-invoices.md)
 
-## 한국 전용 앱 (토스페이먼츠 · KAKA)
+## 한국 전용 앱 (Korea Apps) — 토스페이먼츠 · 카카오톡
 
 * [한국 전용 앱](docs/43-한국-앱/README.md)
 * [토스페이먼츠 셀프 신청 매뉴얼 v5](docs/43-한국-앱/tosspayments-getting-started.md)
@@ -90,7 +90,7 @@
   * [선택 D · AI 챗봇 연결](docs/43-한국-앱/kaka/08-ai-chatbot.md)
   * [체크리스트 · 자주 막히는 곳 · FAQ](docs/43-한국-앱/kaka/09-checklist-faq.md)
 
-## 연락처
+## 연락처 (Contacts)
 
 * [CRM 레코드를 목록 보기로 확인하기: 정렬과 필터](docs/02-연락처/viewing-your-crm-records-list-views-sorting-and-filters.md)
 * [CRM 자주 묻는 질문](docs/02-연락처/crm-faqs.md)
@@ -179,7 +179,7 @@
 * [연락처를 CSV 파일로 내보내기](docs/02-연락처/일괄-작업/contacts-export-as-csv-upgrade.md)
 * [연락처를 워크플로우에 한꺼번에 추가하기](docs/02-연락처/일괄-작업/how-to-add-contacts-in-bulk-to-a-workflow.md)
 
-## 대화
+## 대화 (Conversations)
 
 * [대화 필터 알아보기](docs/03-대화/overview-of-conversation-filters.md)
 * [대화에서 AI 응답 정보 확인하고 수정하기](docs/03-대화/view-edit-ai-response-info-in-conversations.md)
@@ -217,7 +217,7 @@
 * [워크플로우 액션 — Log External Call(외부 통화 기록)](docs/03-대화/대화/workflow-action-log-external-call.md)
 * [트리거 링크 HiRise 디자인 살펴보기](docs/03-대화/대화/understanding-trigger-links-in-hirise-design.md)
 
-## 캘린더 · 예약
+## 캘린더 & 예약 (Calendars & Appointments)
 
 * [Calendly와 하이퍼클래스 캘린더 동기화 방식](docs/04-캘린더-예약/how-calendly-syncs-with-hyperclass-calendars.md)
 * [Google 캘린더 쓰기 권한 오류 해결](docs/04-캘린더-예약/google-calendar-writer-access-error.md)
@@ -398,7 +398,7 @@
 * [캘린더 중복 예약 문제 해결하기](docs/04-캘린더-예약/트러블슈팅/troubleshoot-and-fix-calendar-double-booking-in-hyperclass.md)
 * [하이퍼클래스에서 Google Calendar 계정이 보이지 않을 때 해결하기](docs/04-캘린더-예약/트러블슈팅/troubleshoot-a-missing-google-calendar-account-in-hyperclass.md)
 
-## 기회 관리 · 파이프라인
+## 기회 관리 & 파이프라인 (Opportunities & Pipelines)
 
 * [기회 검색하기](docs/05-기회-파이프라인/searching-for-opportunities.md)
 * [기회 관리의 목록 보기](docs/05-기회-파이프라인/list-view-for-opportunities.md)
@@ -440,7 +440,7 @@
 * [연락처와 기회의 담당자를 따로 지정하기](docs/05-기회-파이프라인/시작하기/how-to-decouple-owners-for-contacts-and-opportunities.md)
 * [확장된 커스텀 필드 유형과 설정 옵션](docs/05-기회-파이프라인/시작하기/expanded-custom-field-types-and-configuration-options-in-hyperclass.md)
 
-## 사이트 (퍼널 · 웹사이트 · 폼)
+## 사이트 · 퍼널 · 폼 (Sites)
 
 * [CSV로 사용자 지정 객체 레코드 한꺼번에 가져오기와 일괄 작업](docs/06-사이트/bulk-import-custom-object-records-csv-with-bulk-actions.md)
 * [QR 코드 기능 소개 페이지](docs/06-사이트/qr-code-features-landing-page.md)
@@ -746,7 +746,7 @@
 * [폼의 조건부 로직 V2](docs/06-사이트/폼/conditional-logic-v2-in-forms-and-surveys.md)
 * [하이퍼클래스 폼을 외부 웹사이트에 임베드하기](docs/06-사이트/폼/embedding-hyperclass-forms-on-non-hyperclass-websites.md)
 
-## 자동화 · 워크플로우
+## 자동화 · 워크플로우 (Workflows)
 
 * [Facebook Conversion API 워크플로우 트리거가 작동하지 않을 때](docs/07-워크플로우/facebook-conversion-api-workflow-trigger-not-working.md)
 * [IVR(자동 응답) 설정 가이드 — Start IVR 트리거와 IVR 액션](docs/07-워크플로우/interactive-voice-response-ivr-guide-triggers-actions.md)
@@ -1101,7 +1101,7 @@
 * [트리거 개요 — Triggers](docs/07-워크플로우/트리거/triggers-overview.md)
 * [트리거별 시작 액션 연결 — Go-To Connections for Triggers(Advanced Builder)](docs/07-워크플로우/트리거/go-to-connections-for-triggers-advanced-builder-workflow.md)
 
-## 결제
+## 결제 (Payments)
 
 * [Authorize.Net 연동으로 결제 처리하기](docs/08-결제/authorize-net-integration-for-processing-payments.md)
 * [CRM에서 환불 처리 관리하기](docs/08-결제/how-to-manage-refunds-within-the-crm.md)
@@ -1227,7 +1227,7 @@
 * [실패한 구독 결제 수동으로 재시도하기](docs/08-결제/주문-구독/how-to-manually-retry-failed-subscription-payments.md)
 * [주문을 CSV 파일로 내보내기](docs/08-결제/주문-구독/export-or-download-orders-as-csv.md)
 
-## 이메일
+## 이메일 (Email)
 
 * [Mailgun 개요 — 요금과 도메인 설정 방법 비교](docs/09-이메일/mailgun-overview.md)
 * [Mailgun 설정 — GoDaddy 도메인 설정](docs/09-이메일/mailgun-setup-godaddy-domain-setup.md)
@@ -1335,7 +1335,7 @@
 * [대화에서 테스트 이메일 보내기](docs/09-이메일/트러블슈팅/how-to-send-a-test-email-in-the-conversation.md)
 * [이메일 통계가 표시되지 않을 때 확인할 것](docs/09-이메일/트러블슈팅/troubleshooting-email-statistics.md)
 
-## 마케팅
+## 마케팅 (Marketing)
 
 * [Email AI로 다른 플랫폼의 이메일 가져오기](docs/10-마케팅/how-to-import-emails-from-any-platform-using-email-ai.md)
 * [Meta 참여도 광고 만들기 — 메시지 앱 연결](docs/10-마케팅/how-to-create-a-meta-engagement-ad-with-messaging-apps.md)
@@ -1637,7 +1637,7 @@
 * [템플릿 라이브러리에서 유형과 태그 숨기기](docs/10-마케팅/템플릿-라이브러리/simplify-your-template-library-by-hiding-types-and-tags.md)
 * [확장된 템플릿 라이브러리 권한 (스타터·무제한 플랜 관리자용)](docs/10-마케팅/템플릿-라이브러리/extended-access-template-library-for-admins-on-97-297-plans.md)
 
-## 평판 관리 · 리뷰
+## 평판 관리 & 리뷰 (Reputation)
 
 * [리뷰 설정 마법사로 평판 관리 시작하기](docs/41-평판-리뷰/guided-review-setup-wizard-reputation-management.md)
 * [리뷰 요청에 사진 첨부하기](docs/41-평판-리뷰/attaching-images-to-review-requests.md)
@@ -1674,7 +1674,7 @@
 * [카이로프랙틱 의원을 위한 5성 평판 쌓기와 휴면 환자 되살리기](docs/41-평판-리뷰/기타/build-a-5-star-reputation-and-bring-back-lapsed-patients-without-manual-follow-u.md)
 * [평판 관리 서비스 비교: 하이퍼클래스로 온라인 평판을 관리해야 하는 이유](docs/41-평판-리뷰/기타/reputation-management-market-comparison-why-you-should-choose-hyperclass-to-boost-your.md)
 
-## 멤버십 · 커뮤니티
+## 멤버십 & 커뮤니티 (Memberships & Communities)
 
 * [GoKollab 구매 내역 한곳에서 확인하기 — Manage Purchases](docs/17-멤버십-커뮤니티/manage-purchases-on-gokollab.md)
 * [GoKollab 스마트 카테고리 사용하기](docs/17-멤버십-커뮤니티/how-to-use-smart-categories-on-gokollab.md)
@@ -1790,7 +1790,7 @@
 * [통합 클라이언트 포탈과 GoKollab의 새 커뮤니티 화면](docs/17-멤버십-커뮤니티/커뮤니티/communities-new-experience-in-unified-client-portal-and-gokollab.md)
 * [화이트라벨 커뮤니티 만들기](docs/17-멤버십-커뮤니티/커뮤니티/how-to-create-your-whitelabel-community-inside-a-subaccount.md)
 
-## 클라이언트 포털
+## 클라이언트 포털 (Client Portal)
 
 * [Client App Builder 시작하기: AI로 맞춤형 웹·모바일 앱 만들기](docs/39-클라이언트-포털/getting-started-with-client-app-builder-build-custom-web-and-mobile-apps-with-ai-009532.md)
 * [Client App Builder 시작하기: AI로 웹 앱과 모바일 앱 만들기](docs/39-클라이언트-포털/getting-started-with-client-app-builder-build-custom-web-and-mobile-apps-with-ai-009531.md)
@@ -1817,7 +1817,7 @@
 * [클라이언트 포털 코스 알림 설정](docs/39-클라이언트-포털/Client-Portal/notification-preferences-for-courses-in-the-client-portal.md)
 * [클라이언트 포털의 앱 권한 설정: 하위 앱과 로그인 방식 켜고 끄기](docs/39-클라이언트-포털/Client-Portal/app-permissions-in-client-portal-enabling-disabling-a-child-app.md)
 
-## 온라인 스토어
+## 온라인 스토어 (E-commerce Store)
 
 * [Facebook·Instagram 샵에서 상품 판매하기](docs/37-이커머스-스토어/how-to-sell-products-on-facebook-and-instagram-shops.md)
 * [Shopify 스토어를 하이퍼클래스로 옮기기](docs/37-이커머스-스토어/how-to-migrate-shopify-stores-to-hyperclass.md)
@@ -1864,7 +1864,7 @@
 * [WooCommerce 상품·컬렉션 가져오기 및 동기화](docs/37-이커머스-스토어/기타/woocommerce-import-and-sync-products-and-collections-for-e-commerce-stores.md)
 * [스토어별로 상품 선택하고 필터링하기](docs/37-이커머스-스토어/기타/how-to-select-or-filter-products-per-ecommerce-store.md)
 
-## 문서 · 계약
+## 문서 & 계약 (Documents & Contracts)
 
 * [문서 & 계약 사용 가이드](docs/14-문서-계약/how-to-use-documents-contracts.md)
 * [문서 & 계약: 이메일 템플릿과 팀 알림 설정](docs/14-문서-계약/documents-contracts-email-templates-and-team-notifications-setup.md)
@@ -1898,7 +1898,7 @@
 * [예약 날짜가 들어간 계약서를 자동으로 보내기](docs/14-문서-계약/문서-계약/how-to-automatically-add-an-appointment-date-to-a-contract.md)
 * [인보이스에서 팁 설정하고 받기](docs/14-문서-계약/문서-계약/how-to-configure-and-accept-tips-on-invoices.md)
 
-## 전화 시스템
+## 전화 시스템 (Phone System)
 
 * [2026년 전화번호 A2P 승인받기](docs/15-전화-시스템/how-to-get-your-phone-number-a2p-approved-in-2026.md)
 * [SMS 발송 실패 문제 해결 가이드](docs/15-전화-시스템/troubleshooting-sms-delivery.md)
@@ -2030,7 +2030,7 @@
 * [하이퍼클래스 전화 시스템의 지역 번호 발신(Local Presence Dialing)](docs/15-전화-시스템/통화/local-presence-dialing-with-the-hyperclass-phone-system.md)
 * [하이퍼클래스 통화 품질 문제 해결하기](docs/15-전화-시스템/통화/how-to-fix-bad-call-quality.md)
 
-## AI 직원
+## AI 직원 (AI Employee)
 
 * [AI Builder·AI Assistant에서 음성 받아쓰기 사용하기](docs/13-AI-Employee/voice-dictation-in-ai-builder-assistant.md)
 * [AI 상품 요금 안내](docs/13-AI-Employee/ai-product-pricing-update.md)
@@ -2272,7 +2272,7 @@
 * [Eliza 에이전트 플랫폼의 대화 화면](docs/22-Eliza/Eliza-Agent-Platform-Onboarding/eliza-agent-platform-conversations.md)
 * [하이퍼클래스에서 Eliza 에이전트 플랫폼 설정하기](docs/22-Eliza/Eliza-Agent-Platform-Onboarding/eliza-agent-platform-settings-within-the-crm.md)
 
-## 2026 신기능 소개
+## 2026 신기능 (What's New 2026)
 
 * [AI App Builder로 브랜드 클라이언트 포탈 앱 만들기 (웹·모바일)](docs/44-신기능-2026/ai-app-builder-build-branded-client-portal-apps-for-web-and-mobile.md)
 * [AI 앱 스튜디오로 브랜드 모바일 앱 만들기](docs/44-신기능-2026/how-to-build-branded-mobile-apps-with-ai-app-studio.md)
@@ -2393,7 +2393,7 @@
 * [향상된 대시보드 편집 기능 사용하기](docs/44-신기능-2026/how-to-use-the-enhanced-dashboard-builder.md)
 * [회사 추가할 때 중복 회사 미리 확인하기](docs/44-신기능-2026/duplicate-detection-for-companies-hyperclass.md)
 
-## 대시보드
+## 대시보드 (Dashboards)
 
 * [대시보드 권한 관리](docs/12-대시보드/how-to-manage-dashboard-permissions.md)
 * [대시보드 위젯 만들기와 추가하기](docs/12-대시보드/how-to-create-add-dashboard-widgets.md)
@@ -2451,7 +2451,7 @@
 * [커스텀 위젯에 어트리뷰션·UTM 파라미터 필터 추가하기](docs/12-대시보드/위젯/how-to-add-attribution-and-utm-parameters-as-filters-on-custom-widgets.md)
 * [퍼널 위젯과 Stages Distribution 위젯의 차이와 사용법](docs/12-대시보드/위젯/how-funnels-and-stage-distribution-widgets-work.md)
 
-## 리포팅
+## 리포팅 (Reporting)
 
 * [Google Ads 리포팅 문제 해결 가이드](docs/18-리포팅/troubleshoot-guide-for-google-ad-reporting.md)
 * [Google Ads 리포팅 설정](docs/18-리포팅/how-to-set-up-google-ad-reporting.md)
@@ -2476,7 +2476,7 @@
 * [퍼널/웹사이트 페이지뷰를 Google Analytics(GA4)에 기록하기](docs/18-리포팅/추적-어트리뷰션/how-to-record-pageviews-into-google-analytics-for-funnels-websites-ga4.md)
 * [사용자 지정 리포트 만들기, 일정 설정, PDF로 내보내기](docs/18-리포팅/커스텀-리포트/how-to-create-a-custom-report-schedule-and-export-report-as-pdf.md)
 
-## 설정
+## 설정 (Settings)
 
 * [감사 로그](docs/11-설정/audit-logs.md)
 * [관리자와 사용자 역할별 권한 범위](docs/11-설정/admin-vs-user-roles-and-permission-scopes.md)
@@ -2554,7 +2554,7 @@
 * [인앱 배너 관리](docs/11-설정/에이전시-설정/in-app-banner-management.md)
 * [하이퍼클래스 Founder Plan 소개](docs/11-설정/에이전시-설정/introducing-the-hyperclass-founder-plan.md)
 
-## 병합 필드 · 변수
+## 병합 필드 & 변수 (Merge Fields)
 
 * [병합 필드와 이메일 기본 텍스트 사용하기](docs/40-병합필드-변수/how-to-use-merge-fields-and-email-fallback-values.md)
 * [사용자 지정 객체 템플릿으로 CRM 한 번에 설정하기](docs/40-병합필드-변수/custom-object-templates-pre-built-crm-setup-in-one-click.md)
@@ -2563,7 +2563,7 @@
 * [병합 필드 목록](docs/40-병합필드-변수/Merge-Fields-and-Custom-Variables/list-of-merge-fields.md)
 * [병합 필드와 커스텀 변수 한눈에 보기](docs/40-병합필드-변수/Merge-Fields-and-Custom-Variables/overview-of-merge-fields-custom-variables.md)
 
-## 연동
+## 연동 (Integrations)
 
 * [Facebook 계정 연결이 의도치 않게 끊어졌을 때 문제 해결](docs/42-통합/facebook-troubleshooting-unintentionally-disconnecting-your-accounts.md)
 * [Facebook 리드 광고 문제 해결 — 리드 광고 디버깅](docs/42-통합/facebook-troubleshooting-lead-ad-debugging.md)
@@ -2613,7 +2613,7 @@
 * [Facebook 멀티 페이지 연동 문제 해결](docs/42-통합/기타/facebook-multi-page-troubleshoot.md)
 * [Facebook 연동 시 페이지 관리에 Facebook 페이지가 보이지 않을 때](docs/42-통합/기타/facebook-pages-missing-in-manage-pages-during-integration.md)
 
-## 앱 마켓플레이스
+## 앱 마켓플레이스 (App Marketplace)
 
 * [마켓플레이스 앱 리뷰 남기기](docs/27-앱-마켓/how-to-leave-a-review-for-an-app-in-the-marketplace.md)
 * [마켓플레이스 앱 제거 피드백](docs/27-앱-마켓/app-marketplace-uninstall-feedback.md)
@@ -2639,7 +2639,7 @@
 * [마켓플레이스 워크플로우 액션(Marketplace Workflow Actions) 만들기와 관리](docs/27-앱-마켓/Workflow-Triggers-and-Actions/marketplace-workflow-actions.md)
 * [마켓플레이스 워크플로우 트리거 만들기](docs/27-앱-마켓/Workflow-Triggers-and-Actions/marketplace-workflow-triggers.md)
 
-## 모바일 · 데스크톱 앱
+## 모바일 & 데스크톱 앱 (Mobile & Desktop)
 
 * [개인 전화번호가 없는 직원에게 통화 전환하기](docs/30-모바일-데스크톱/how-to-transfer-calls-to-staff-without-a-personal-phone-number.md)
 * [모바일 앱 알림이 오지 않을 때: 알림 진단으로 원인 찾기](docs/30-모바일-데스크톱/diagnose-mobile-app-notification-issues.md)
@@ -2689,14 +2689,14 @@
 * [화이트라벨 모바일 앱을 위한 Apple 개발자 계정 만들기](docs/30-모바일-데스크톱/Whitelabel-Mobile-App/setting-up-an-apple-developer-account-for-your-whitelabel-mobile-app.md)
 * [화이트라벨 모바일 앱을 위한 Google 개발자 계정 만들기](docs/30-모바일-데스크톱/Whitelabel-Mobile-App/setting-up-a-google-developer-account-for-your-whitelabel-mobile-app.md)
 
-## 알림
+## 알림 (Notifications)
 
 * [서브 계정에서 알림 설정 관리하기](docs/32-알림/manage-notification-settings-in-a-sub-account.md)
 * [라이브 채팅 알림 켜고 설정하기](docs/32-알림/Notifications/how-to-enable-and-customize-live-chat-notifications.md)
 * [알림 켜기](docs/32-알림/Notifications/activate-notifications.md)
 * [판매세·사용세(Sales & Use Tax) FAQ](docs/32-알림/Notifications/sales-use-tax-faq.md)
 
-## 규정 준수
+## 규정 준수 (Compliance)
 
 * [데이터·개인정보·컴플라이언스 FAQ (호주)](docs/33-컴플라이언스/data-privacy-compliance-faqs-australia.md)
 * [하이퍼클래스, SaaS 결제 부문 PCI DSS v4.0.1 인증 획득](docs/33-컴플라이언스/hyperclass-achieves-pci-dss-v4-0-1-validation-for-saas-payments.md)
@@ -2705,14 +2705,14 @@
 * [하이퍼클래스 보안 및 컴플라이언스 개요](docs/33-컴플라이언스/Compliance/hyperclass-security-and-compliance-overview.md)
 * [하이퍼클래스, SOC 2 Type II 인증 획득](docs/33-컴플라이언스/Compliance/hyperclass-achieves-soc-2-type-ii-certification.md)
 
-## 다국어 · 국제화
+## 다국어 · 국제화 (Internationalization)
 
 * [하이퍼클래스 화면에서 번역 문제 신고하기](docs/34-국제화/report-translation-feedback-from-the-hyperclass-interface.md)
 * [앱 안에서 번역 피드백 보내기](docs/34-국제화/The-Internationalization-of-hyperclass/how-to-submit-in-app-translation-feedback.md)
 * [클라이언트 포탈·차일드 앱 표시 언어 바꾸기](docs/34-국제화/The-Internationalization-of-hyperclass/internationalization-for-client-portal-child-apps.md)
 * [플랫폼 언어 설정과 다국어 지원 범위](docs/34-국제화/The-Internationalization-of-hyperclass/the-internationalization-of-hyperclass-has-begun.md)
 
-## 수료증
+## 수료증 (Certificates)
 
 * [Canva 디자인을 자격 증명(수료증·배지)에 가져오기](docs/38-인증서/how-to-import-a-canva-project-into-credentials-certificates-badges.md)
 * [수료증 AI로 수료증 디자인 만들기](docs/38-인증서/certificate-ai.md)
@@ -2734,7 +2734,7 @@
 * [수료증 수동 발급하기](docs/38-인증서/Templates/manually-issue-certificates.md)
 * [수료증 템플릿 만들기](docs/38-인증서/Templates/create-a-template.md)
 
-## SaaS 설정 (에이전시)
+## SaaS 설정 · 에이전시 (SaaS Configurator)
 
 * [새 SaaS 서브 계정에 2단계 인증(2FA) 적용하기](docs/16-SaaS-설정/2fa-for-new-saas-sub-accounts.md)
 * [SaaS V1과 SaaS V2의 차이](docs/16-SaaS-설정/saas-v1-vs-saas-v2-what-s-the-difference.md)
@@ -2786,7 +2786,7 @@
 * [워크플로우 액션 — Date/Time Formatter(날짜/시간 포맷터)](docs/16-SaaS-설정/Saas-Mode/workflow-date-time-formatter-action.md)
 * [화이트라벨 데스크톱 앱 설정 가이드](docs/16-SaaS-설정/기타/white-label-the-desktop-app.md)
 
-## 에이전시 보기 (에이전시)
+## 에이전시 보기 (Agency View)
 
 * [AI 에이전트를 위한 스킬 플랫폼](docs/19-에이전시-뷰/skills-platform-for-ai-agents.md)
 * [AI의 여름 에이전시 랜딩 페이지와 액세스 관리](docs/19-에이전시-뷰/summer-of-ai-agency-landing-access-control.md)
@@ -2877,13 +2877,13 @@
 * [자산 보호 스냅샷 (예전 이름: IP Protected)](docs/19-에이전시-뷰/Snapshots/assets-protected-snapshots-called-ip-protected-earlier.md)
 * [(게스트 튜토리얼) Pabbly Connect로 Facebook Lead Ads와 서브 계정 연동하기](docs/19-에이전시-뷰/기타/guest-tutorial-pabbly-connect-how-to-integrate-facebook-leads-ads-with-your-sub.md)
 
-## 에이전시 리포팅 (에이전시)
+## 에이전시 리포팅 (Agency Reporting)
 
 * [서브 계정 목록 CSV로 내보내기](docs/28-에이전시-리포팅/Rolled-Up-Reporting/how-to-export-a-list-of-sub-accounts.md)
 * [서브 계정에 리포트 이메일 자동 발송하기 — Report Scheduler(리포트 스케줄러)](docs/28-에이전시-리포팅/Rolled-Up-Reporting/setting-up-automated-email-reports-for-sub-accounts-with-the-report-scheduler.md)
 * [에이전시 통합 리포팅](docs/28-에이전시-리포팅/Rolled-Up-Reporting/agency-rolled-up-reporting.md)
 
-## 스냅샷 (에이전시)
+## 스냅샷 · 에이전시 (Snapshots)
 
 * [가사법 스냅샷](docs/29-스냅샷/family-law-snapshot.md)
 * [가져온 스냅샷을 기존 서브 계정에 불러오고 히스토리 확인하기](docs/29-스냅샷/imported-snapshots-load-modal-and-history-tracking.md)
@@ -2916,7 +2916,7 @@
 * [헤어 살롱 스냅샷 설정 및 설치 가이드](docs/29-스냅샷/hair-salon-snapshot.md)
 * [헬스장 스냅샷(Gym Snapshot)](docs/29-스냅샷/gym-snapshot.md)
 
-## 리셀링 (에이전시)
+## 리셀링 · 에이전시 (Reselling)
 
 * ['사용자당 마케팅 템플릿 메시지 한도' 오류가 나올 때](docs/31-리셀링/the-message-was-not-delivered-due-to-per-user-marketing-template-message-limits.md)
 * [2025년 4월 1일부터 미국 번호로 보내는 WhatsApp 마케팅 메시지 일시 중단](docs/31-리셀링/important-update-whatsapp-marketing-messages-to-u-s-numbers-paused-starting-april-1-2025.md)
@@ -3060,14 +3060,14 @@
 * [유효한 WhatsApp 필드로 연락처 관리하고 스마트 리스트 만들기](docs/31-리셀링/WhatsApp/whatsapp-contact-management-and-smartlist.md)
 * [하이퍼클래스/Twilio 전화번호로 WhatsApp 비즈니스 계정 등록하기](docs/31-리셀링/WhatsApp/how-to-use-hyperclass-twilio-phone-number-for-whatsapp-business-account.md)
 
-## 애드온 · 세일즈
+## 애드온 & 세일즈 (Add-ons & Sales)
 
 * [GDPR 준수와 데이터 개인정보 보호](docs/25-애드온-세일즈/Compliance/gdpr-compliance-and-data-privacy.md)
 * [SaaS 감사로 신규 고객 발굴하기](docs/25-애드온-세일즈/Sales-Trainings-and-Case-Studies/prospect-new-clients-with-saas-audits.md)
 * [애드온(구 마켓플레이스) 빠른 참조 가이드](docs/25-애드온-세일즈/Sales-Trainings-and-Case-Studies/add-ons-formally-marketplace-quick-reference-guide.md)
 * [데스크톱 웹 앱용 화이트라벨 도메인 설정](docs/25-애드온-세일즈/Whitelabel-Desktop-App/how-to-set-up-a-whitelabel-domain-for-the-desktop-web-app.md)
 
-## 업종별 가이드
+## 업종별 가이드 (Industry Guides)
 
 * [고객 업종에 맞는 서브 계정 만들기](docs/26-산업-가이드/hyperclass-industries-create-sub-accounts-built-for-your-client-s-industry.md)
 * [레스토랑 메뉴 관리 및 사용자 지정](docs/26-산업-가이드/how-to-manage-and-customize-a-restaurant-menu-in-hyperclass.md)
@@ -3162,7 +3162,7 @@
 * [카이로프랙틱 병원 운영을 하이퍼클래스로 매끄럽게 정리하기](docs/26-산업-가이드/기타/smooth-like-an-adjustment-how-to-streamline-your-chiropractic-practice-ops-with.md)
 * [행복한 고객이 더 많은 계약으로: 부동산 컨설턴트를 위한 추천·재거래 가이드](docs/26-산업-가이드/기타/happy-clients-more-closings-the-real-estate-consultant-s-guide-to-referrals-repe.md)
 
-## 하이퍼클래스 아카데미
+## 하이퍼클래스 아카데미 (University)
 
 * [대량 SMS 가이드: 받는 사람이 반기는 메시지 보내기](docs/24-대학/Prospecting-and-Sales/guide-to-bulk-sms-send-messages-people-actually-want-to-receive.md)
 * [지역 상공회의소·BNI 모임에서 리드 확보하기](docs/24-대학/Prospecting-and-Sales/how-to-generate-leads-from-local-chamber-bni-meetups.md)
@@ -3170,7 +3170,7 @@
 * [신규 고객 가입용 결제 페이지 만들기](docs/24-대학/hyperclass-How-Tos/hyperclass-how-to-s-build-a-payment-page-to-sign-up-new-clients.md)
 * [퍼널과 웹사이트 이미지에 커스텀 값 사용하기](docs/24-대학/hyperclass-How-Tos/how-to-use-custom-values-for-images-in-funnels-and-websites.md)
 
-## 레거시 자동화
+## 레거시 자동화 (Legacy)
 
 * ["ZIP Code Check Failed for Your Card" 배너 해결하기](docs/23-레거시-자동화/how-to-resolve-the-zip-code-check-failed-for-your-card-banner.md)
 * [계정 일시중지 기능 안내](docs/23-레거시-자동화/pause-account-feature-everything-you-need-to-know.md)
@@ -3187,7 +3187,7 @@
 * [커스텀 값 사용하기](docs/23-레거시-자동화/Logic-and-Fulfillment/how-to-use-custom-values.md)
 * [커스텀 필드 사용하기](docs/23-레거시-자동화/Logic-and-Fulfillment/how-to-use-custom-fields.md)
 
-## 고객지원
+## 고객지원 (Customer Support)
 
 * [통합 재판매 화면에서 구독·사용량·마켓플레이스 상품 한곳에서 관리하기](docs/20-고객지원/unified-reselling-experience-in-hyperclass-wallet.md)
 * [하이퍼클래스 코스 드립 설정 관리](docs/20-고객지원/managing-course-drip-settings-in-hyperclass.md)
@@ -3212,7 +3212,7 @@
 * [Wix에서 하이퍼클래스로 이전하기 (마이그레이션 가이드)](docs/20-고객지원/Software-Migration-Guides/wix-to-hyperclass-migration-guide.md)
 * [Zoho에서 하이퍼클래스로 옮기기 — 마이그레이션 가이드](docs/20-고객지원/Software-Migration-Guides/zoho-to-hyperclass-migration-guide.md)
 
-## 개발자 리소스
+## 개발자 리소스 (Developer Resources)
 
 * [API 키에서 비공개 연동으로 옮기기: API 마이그레이션 가이드](docs/35-개발자/hyperclass-api-migration-guide-how-to-move-to-private-integrations.md)
 * [개발자 사용자 및 권한 관리](docs/35-개발자/how-to-manage-developer-users-and-permissions.md)
@@ -3247,7 +3247,7 @@
 * [하이퍼클래스 API 문서](docs/35-개발자/Developer-Resources/hyperclass-api-documentation.md)
 * [하이퍼클래스에서 초안·비공개 마켓플레이스 앱 테스트하기](docs/35-개발자/Developer-Resources/how-do-i-test-my-draft-private-marketplace-app-on-hyperclass.md)
 
-## 기타
+## 기타 (Miscellaneous)
 
 * [반복 작업 설정하기](docs/36-기타/recurring-tasks.md)
 * [보드(칸반 보기)와 목록 보기](docs/36-기타/board-kanban-and-list-views.md)
