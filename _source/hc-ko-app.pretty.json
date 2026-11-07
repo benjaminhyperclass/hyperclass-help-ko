@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "version": "4.2.68",
+  "version": "4.2.69",
   "built": "2026-11-07",
-  "source": " 제공' 통일 · 개발자명 LeadConnector → 하이퍼클래스(_text 3) + SaaS 상품 편집 saasApp 1,317(상품 편집 화면에서만 로드돼 스윕에 안 잡히던 네임스페이스 — 같은 앱 카탈로그에서 경로 이관 1,267 + 신규 50, 독립 검수 교정 106) · 상품 편집 메뉴 'Search Engine Listing' _text + 상세 화면 점검: 인보이스 요약 카드 '결제 완료 인보이스'(표기 통일) · 상품 편집 SaaS 'Usage limits' · 인보이스/견적서 편집기 'Opportunity 연결' 등 6(_text, 개체 이름 매개변수) · 코스 편집기(Live Sessions·Community Groups·코스 태그·난이도·주제·언어 — _text 6·_textScoped 21) · _textScoped 표기 정정 9(수신자들→수신자·결과들→결과·받은함→받은 편지함·옵트인→수신 동의·구독취소→구독 취소됨·대기중→대기 중·통화 종료→종료·고급 설정→고급) + 연락처 상세 오른쪽 패널 빈 상태(새 UI record-details-new-ui 의 하드코딩 문자열 — 활동·메모·예약·작업·AI 에이전트 안내) _text 10(참조본의 같은 원문 번역 재사용) + 기회 예측 화면(위험 단계 제목·마감일 없음 열 _text 4, '위험도 높음'→'높은 위험' 통일) · 연락처 AI 성장 배너 _text 2 · '{objectNamePlural}을(를)' 어색한 조사 2(→ '…에서 검색 결과가 없습니다'·'… 목록을 불러오지 못했습니다') + 독립 검수 반영(오늘 추가분 9건): 위험 단계 '위험도 높음·보통·낮음' · 인보이스 요약 카드 '0 건 임시 저장' 꼴 · Queued 대기열 · 고객→연락처 · 기회 지우기→기회 연결 해제 · 빈 상태·AI 안내 문구 다듬기 · 사용자 유형 'Account - user/admin'·'Agency - user' · 설정 → 사용자 → 역할 및 권한 목록 영어 37(서버 권한 목록 — 기존 '… 보기 및 관리' 꼴, WhatsApp·GBP 원문 유지) · 권한 목록 기존 값 용어 통일 7(제품→상품·인증서→수료증·프로스펙팅→잠재 고객 발굴·대량→일괄·adwords→Google Ads) + 워크플로우 앱(자동화 — 중계 iframe, 로케일 en) 카탈로그 5,309: 이관 2,398(독립 검수 2갈래 교정 165) + 1~3단어 라벨 신규 3,023(번역 4갈래 + 독립 검수 2갈래 교정 32). 4단어 이상 문장 약 3,970은 다음 라운드. 로더 v4.21.15 ⑩(iframe 카탈로그 병합) 뒤 캐너리에서 적용 + 멤버십 → 코스 → 분석(membership-analytics 별도 앱, 지문 analytics, 로케일 en_US) 318 전부 영어였음 — 번역 1갈래(기존 같은 원문 108 제안 반영) + 독립 검수 교정 1 · 거래 상세 'Two/One Step Order Form' _text · 거래 보기·권한 범위 용어(트랜잭션→거래 내역, 제품→상품) 정정 9",
+  "source": " 제공' 통일 · 개발자명 LeadConnector → 하이퍼클래스(_text 3) + SaaS 상품 편집 saasApp 1,317(상품 편집 화면에서만 로드돼 스윕에 안 잡히던 네임스페이스 — 같은 앱 카탈로그에서 경로 이관 1,267 + 신규 50, 독립 검수 교정 106) · 상품 편집 메뉴 'Search Engine Listing' _text + 상세 화면 점검: 인보이스 요약 카드 '결제 완료 인보이스'(표기 통일) · 상품 편집 SaaS 'Usage limits' · 인보이스/견적서 편집기 'Opportunity 연결' 등 6(_text, 개체 이름 매개변수) · 코스 편집기(Live Sessions·Community Groups·코스 태그·난이도·주제·언어 — _text 6·_textScoped 21) · _textScoped 표기 정정 9(수신자들→수신자·결과들→결과·받은함→받은 편지함·옵트인→수신 동의·구독취소→구독 취소됨·대기중→대기 중·통화 종료→종료·고급 설정→고급) + 연락처 상세 오른쪽 패널 빈 상태(새 UI record-details-new-ui 의 하드코딩 문자열 — 활동·메모·예약·작업·AI 에이전트 안내) _text 10(참조본의 같은 원문 번역 재사용) + 기회 예측 화면(위험 단계 제목·마감일 없음 열 _text 4, '위험도 높음'→'높은 위험' 통일) · 연락처 AI 성장 배너 _text 2 · '{objectNamePlural}을(를)' 어색한 조사 2(→ '…에서 검색 결과가 없습니다'·'… 목록을 불러오지 못했습니다') + 독립 검수 반영(오늘 추가분 9건): 위험 단계 '위험도 높음·보통·낮음' · 인보이스 요약 카드 '0 건 임시 저장' 꼴 · Queued 대기열 · 고객→연락처 · 기회 지우기→기회 연결 해제 · 빈 상태·AI 안내 문구 다듬기 · 사용자 유형 'Account - user/admin'·'Agency - user' · 설정 → 사용자 → 역할 및 권한 목록 영어 37(서버 권한 목록 — 기존 '… 보기 및 관리' 꼴, WhatsApp·GBP 원문 유지) · 권한 목록 기존 값 용어 통일 7(제품→상품·인증서→수료증·프로스펙팅→잠재 고객 발굴·대량→일괄·adwords→Google Ads) + 워크플로우 앱(자동화 — 중계 iframe, 로케일 en) 카탈로그 5,309: 이관 2,398(독립 검수 2갈래 교정 165) + 1~3단어 라벨 신규 3,023(번역 4갈래 + 독립 검수 2갈래 교정 32). 4단어 이상 문장 약 3,970은 다음 라운드. 로더 v4.21.15 ⑩(iframe 카탈로그 병합) 뒤 캐너리에서 적용 + 멤버십 → 코스 → 분석(membership-analytics 별도 앱, 지문 analytics, 로케일 en_US) 318 전부 영어였음 — 번역 1갈래(기존 같은 원문 108 제안 반영) + 독립 검수 교정 1 · 거래 상세 'Two/One Step Order Form' _text · 거래 보기·권한 범위 용어(트랜잭션→거래 내역, 제품→상품) 정정 9 + 코스 분석 회원 표 머리글 _text 7(별도 앱 카탈로그보다 표 열 정의가 먼저 만들어져 영어로 굳는 경합 — 라이브 실측)",
   "strings": 102718
  },
  "host": {
@@ -176907,7 +176907,14 @@
   "Add & manage WhatsApp phone numbers": "WhatsApp 전화번호 추가 및 관리",
   "Disconnect WhatsApp integration": "WhatsApp 연동 해제",
   "Two Step Order Form": "2단계 주문 폼",
-  "One Step Order Form": "1단계 주문 폼"
+  "One Step Order Form": "1단계 주문 폼",
+  "Course completion": "코스 완료",
+  "Start date": "시작일",
+  "Last accessed": "마지막 접속",
+  "Enrolment date": "등록일",
+  "Session count": "접속 횟수",
+  "Member Since": "가입일",
+  "Last Accessed": "마지막 접속"
  },
  "_textScoped": {
   "AM": "오전",
