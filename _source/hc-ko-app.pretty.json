@@ -27069,7 +27069,7 @@
      "errorRate": "실패율",
      "avgTokensPerConversation": "대화당 평균 토큰 수",
      "avgTokensPerInteraction": "상호작용당 평균 토큰",
-     "avgConversationDuration": "대화당 평균 AI 처리",
+     "avgConversationDuration": "대화당 평균 AI 처리 시간",
      "totalDuration": "총 AI 처리 시간",
      "agentTransfers": "에이전트 전환",
      "inCallAgentSwaps": "통화 중 AI 인계",
@@ -27117,7 +27117,7 @@
      "businessAction": {
       "appointment_book": "예약 완료",
       "appointment_slots_fetch": "가져온 슬롯",
-      "appointment_cancel": "예약이 취소되었습니다",
+      "appointment_cancel": "예약 취소됨",
       "appointment_reschedule": "예약 일정 변경됨",
       "reschedule_slots_fetch": "일정 변경 시간대를 가져왔습니다",
       "workflow_trigger": "워크플로우 실행됨",
@@ -27433,7 +27433,7 @@
        "negative": "부정적",
        "neutral": "중립",
        "noAnswer": "응답 없음",
-       "positive": "긍정적",
+       "positive": "긍정",
        "productName": "상품",
        "rejected": "거절됨",
        "spanCount": "개수",
@@ -27460,7 +27460,7 @@
        "totalDurationSeconds": "총 소요 시간(s)",
        "uniqueContacts": "고유 연락처",
        "actionType": "액션",
-       "callCount": "호출 수",
+       "callCount": "통화 수",
        "callOutcome": "결과",
        "name": "이름",
        "traceCount": "메시지",
@@ -27740,14 +27740,14 @@
      "recording": {
       "title": "통화 녹음",
       "play": "녹음 재생",
-      "pause": "녹화 일시중지",
+      "pause": "녹음 일시중지",
       "loadError": "녹음을 불러올 수 없습니다",
       "seekToRecording": "녹음 탐색"
      },
      "sessionEnded": {
       "reason": {
        "MAX_MESSAGES_REACHED": "세션 종료됨 — 봇이 메시지 한도에 도달하여 비활성 상태가 되었습니다.",
-       "MANUAL_REACTIVATION": "세션이 종료되었습니다 — 사용자가 봇을 다시 활성화했습니다.",
+       "MANUAL_REACTIVATION": "세션 종료됨 — 사용자가 봇을 다시 활성화했습니다.",
        "BOT_AUTO_WAKE": "세션 종료됨 — 대기 시간 후 봇이 재개되었습니다.",
        "DEFAULT": "세션이 종료되었습니다."
       }
@@ -27778,7 +27778,7 @@
       "voiceName": "음성 이름",
       "timestamp": "타임스탬프",
       "start": "시작",
-      "end": "통화 종료",
+      "end": "종료",
       "raw": "원본",
       "parsed": "파싱됨",
       "latencyValue": "{value}ms"
@@ -28119,7 +28119,7 @@
       "failed": "실패",
       "hint": "응답 중에 실행된 작업입니다. 실행되지 말았어야 할 항목을 표시하세요.",
       "hintUp": "응답 중에 실행된 작업입니다. 실행이 적절했던 항목을 표시하세요.",
-      "itemsMany": "{count}개 작업",
+      "itemsMany": "작업 {count}개",
       "itemsOne": "작업 1개",
       "shouldHaveRun": "실행되었어야 할 작업이 있습니까?",
       "shouldHaveRunPlaceholder": "예: 예약 잡기",
@@ -152811,7 +152811,7 @@
       "failed": "실패",
       "hint": "응답 중에 실행된 작업입니다. 실행되지 말았어야 할 항목을 표시하세요.",
       "hintUp": "응답 중에 실행된 작업입니다. 실행이 적절했던 항목을 표시하세요.",
-      "itemsMany": "{count}개 작업",
+      "itemsMany": "작업 {count}개",
       "itemsOne": "작업 1개",
       "shouldHaveRun": "실행되었어야 할 작업이 있습니까?",
       "shouldHaveRunPlaceholder": "예: 예약 잡기",
@@ -152948,7 +152948,7 @@
       "attachmentsLabel": "첨부파일",
       "cacheRead": "캐시 (읽기)",
       "cacheWrite": "캐시(쓰기)",
-      "end": "통화 종료",
+      "end": "종료",
       "flowBuilderStep": "워크플로우 단계",
       "input": "입력",
       "inputLabel": "입력",
@@ -152979,7 +152979,7 @@
      "productHeading": "AI 상품",
      "recording": {
       "loadError": "녹음을 불러올 수 없습니다",
-      "pause": "녹화 일시중지",
+      "pause": "녹음 일시중지",
       "play": "녹음 재생",
       "seekToRecording": "녹음 탐색",
       "title": "통화 녹음"
@@ -153041,7 +153041,7 @@
       "reason": {
        "BOT_AUTO_WAKE": "세션 종료됨 — 대기 시간 후 봇이 재개되었습니다.",
        "DEFAULT": "세션이 종료되었습니다.",
-       "MANUAL_REACTIVATION": "세션이 종료되었습니다 — 사용자가 봇을 다시 활성화했습니다.",
+       "MANUAL_REACTIVATION": "세션 종료됨 — 사용자가 봇을 다시 활성화했습니다.",
        "MAX_MESSAGES_REACHED": "세션 종료됨 — 봇이 메시지 한도에 도달하여 비활성 상태가 되었습니다."
       }
      },
@@ -153071,7 +153071,7 @@
      "appointmentLinkShared": "예약 링크 공유됨",
      "appointmentReschedule": "예약 일정 변경됨",
      "avgCallDuration": "평균 통화 시간",
-     "avgConversationDuration": "대화당 평균 AI 처리",
+     "avgConversationDuration": "대화당 평균 AI 처리 시간",
      "avgLatency": "평균 응답 시간",
      "avgMessagesPerContact": "연락처당 평균 메시지",
      "avgTokensPerConversation": "대화당 평균 토큰 수",
@@ -153082,7 +153082,7 @@
      "botTransfer": "봇 전환",
      "businessAction": {
       "appointment_book": "예약 완료",
-      "appointment_cancel": "예약이 취소되었습니다",
+      "appointment_cancel": "예약 취소됨",
       "appointment_reschedule": "예약 일정 변경됨",
       "appointment_slots_fetch": "가져온 슬롯",
       "bot_transfer": "봇 전환",
@@ -153198,7 +153198,7 @@
        "bucket": "버킷",
        "cacheReadTokens": "캐시 읽기",
        "cacheWriteTokens": "캐시 쓰기",
-       "callCount": "호출 수",
+       "callCount": "통화 수",
        "callOutcome": "결과",
        "channel": "채널",
        "completed": "완료",
@@ -153222,7 +153222,7 @@
        "p90LatencyMs": "P90 지연 시간(ms)",
        "p95LatencyMs": "P95 지연 시간(ms)",
        "p99LatencyMs": "P99 지연 시간(ms)",
-       "positive": "긍정적",
+       "positive": "긍정",
        "productName": "상품",
        "rejected": "거절됨",
        "smsSent": "SMS 발송",

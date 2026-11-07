@@ -63205,7 +63205,7 @@
  },
  "agentLogsApp.agentLogs.metrics.avgConversationDuration": {
   "en": "Average AI Processing per Conversation",
-  "ko": "대화당 평균 AI 처리"
+  "ko": "대화당 평균 AI 처리 시간"
  },
  "agentLogsApp.agentLogs.metrics.totalDuration": {
   "en": "Total AI Processing Time",
@@ -63385,7 +63385,7 @@
  },
  "agentLogsApp.agentLogs.metrics.businessAction.appointment_cancel": {
   "en": "Appointment Cancelled",
-  "ko": "예약이 취소되었습니다"
+  "ko": "예약 취소됨"
  },
  "agentLogsApp.agentLogs.metrics.businessAction.appointment_reschedule": {
   "en": "Appointment Rescheduled",
@@ -64597,7 +64597,7 @@
  },
  "agentLogsApp.agentLogs.logDetail.recording.pause": {
   "en": "Pause recording",
-  "ko": "녹화 일시중지"
+  "ko": "녹음 일시중지"
  },
  "agentLogsApp.agentLogs.logDetail.recording.loadError": {
   "en": "Unable to load recording",
@@ -64613,7 +64613,7 @@
  },
  "agentLogsApp.agentLogs.logDetail.sessionEnded.reason.MANUAL_REACTIVATION": {
   "en": "Session ended — bot was reactivated by user.",
-  "ko": "세션이 종료되었습니다 — 사용자가 봇을 다시 활성화했습니다."
+  "ko": "세션 종료됨 — 사용자가 봇을 다시 활성화했습니다."
  },
  "agentLogsApp.agentLogs.logDetail.sessionEnded.reason.BOT_AUTO_WAKE": {
   "en": "Session ended — bot resumed after a sleep period.",
@@ -64725,7 +64725,7 @@
  },
  "agentLogsApp.agentLogs.logDetail.inspect.end": {
   "en": "End",
-  "ko": "통화 종료"
+  "ko": "종료"
  },
  "agentLogsApp.agentLogs.logDetail.inspect.raw": {
   "en": "Raw",
@@ -284949,7 +284949,7 @@
  },
  "agentLogsApp.agentLogs.metrics.export.columns.positive": {
   "en": "Positive",
-  "ko": "긍정적"
+  "ko": "긍정"
  },
  "agentLogsApp.agentLogs.metrics.export.columns.productName": {
   "en": "Product",
@@ -347205,7 +347205,7 @@
  },
  "agentLogsApp.agentLogs.feedback.actionReview.itemsMany": {
   "en": "{count} actions",
-  "ko": "{count}개 작업"
+  "ko": "작업 {count}개"
  },
  "agentLogsApp.agentLogs.feedback.actionReview.itemsOne": {
   "en": "1 action",
@@ -349069,7 +349069,7 @@
  },
  "agentLogsApp.agentLogs.metrics.export.columns.callCount": {
   "en": "Calls",
-  "ko": "호출 수"
+  "ko": "통화 수"
  },
  "agentLogsApp.agentLogs.metrics.export.columns.callOutcome": {
   "en": "Outcome",
@@ -425261,7 +425261,7 @@
  },
  "agentLogs|common.agentLogs.feedback.actionReview.itemsMany": {
   "en": "{count} actions",
-  "ko": "{count}개 작업"
+  "ko": "작업 {count}개"
  },
  "agentLogs|common.agentLogs.feedback.actionReview.itemsOne": {
   "en": "1 action",
@@ -425713,7 +425713,7 @@
  },
  "agentLogs|common.agentLogs.logDetail.inspect.end": {
   "en": "End",
-  "ko": "통화 종료"
+  "ko": "종료"
  },
  "agentLogs|common.agentLogs.logDetail.inspect.flowBuilderStep": {
   "en": "Workflow step",
@@ -425829,7 +425829,7 @@
  },
  "agentLogs|common.agentLogs.logDetail.recording.pause": {
   "en": "Pause recording",
-  "ko": "녹화 일시중지"
+  "ko": "녹음 일시중지"
  },
  "agentLogs|common.agentLogs.logDetail.recording.play": {
   "en": "Play recording",
@@ -426041,7 +426041,7 @@
  },
  "agentLogs|common.agentLogs.logDetail.sessionEnded.reason.MANUAL_REACTIVATION": {
   "en": "Session ended — bot was reactivated by user.",
-  "ko": "세션이 종료되었습니다 — 사용자가 봇을 다시 활성화했습니다."
+  "ko": "세션 종료됨 — 사용자가 봇을 다시 활성화했습니다."
  },
  "agentLogs|common.agentLogs.logDetail.sessionEnded.reason.MAX_MESSAGES_REACHED": {
   "en": "Session ended — bot reached its message limit and went inactive.",
@@ -426121,7 +426121,7 @@
  },
  "agentLogs|common.agentLogs.metrics.avgConversationDuration": {
   "en": "Average AI Processing per Conversation",
-  "ko": "대화당 평균 AI 처리"
+  "ko": "대화당 평균 AI 처리 시간"
  },
  "agentLogs|common.agentLogs.metrics.avgLatency": {
   "en": "Average Response Time",
@@ -426161,7 +426161,7 @@
  },
  "agentLogs|common.agentLogs.metrics.businessAction.appointment_cancel": {
   "en": "Appointment Cancelled",
-  "ko": "예약이 취소되었습니다"
+  "ko": "예약 취소됨"
  },
  "agentLogs|common.agentLogs.metrics.businessAction.appointment_reschedule": {
   "en": "Appointment Rescheduled",
@@ -426581,7 +426581,7 @@
  },
  "agentLogs|common.agentLogs.metrics.export.columns.callCount": {
   "en": "Calls",
-  "ko": "호출 수"
+  "ko": "통화 수"
  },
  "agentLogs|common.agentLogs.metrics.export.columns.callOutcome": {
   "en": "Outcome",
@@ -426677,7 +426677,7 @@
  },
  "agentLogs|common.agentLogs.metrics.export.columns.positive": {
   "en": "Positive",
-  "ko": "긍정적"
+  "ko": "긍정"
  },
  "agentLogs|common.agentLogs.metrics.export.columns.productName": {
   "en": "Product",
