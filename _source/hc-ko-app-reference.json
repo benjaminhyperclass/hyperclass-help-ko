@@ -436034,5 +436034,5229 @@
  "aiTemplates|app|common|error|gettingStarted.marketplace.supportPortal.developers.tabs.beta": {
   "en": "Beta",
   "ko": "베타"
+ },
+ "saasApp.accountVerification.clickToResend": {
+  "en": "Click to resend",
+  "ko": "다시 보내기"
+ },
+ "saasApp.accountVerification.confirmEmail": {
+  "en": "Please confirm your email address",
+  "ko": "이메일 주소를 확인해 주세요"
+ },
+ "saasApp.accountVerification.didntGetCode": {
+  "en": "Didn't get a code?",
+  "ko": "코드를 받지 못하셨나요?"
+ },
+ "saasApp.accountVerification.emailAddress": {
+  "en": "Email address",
+  "ko": "이메일 주소"
+ },
+ "saasApp.accountVerification.emailCodeInfo": {
+  "en": "We will send 6 digit code to your email to verify",
+  "ko": "확인을 위해 6자리 코드를 이메일로 보내드립니다"
+ },
+ "saasApp.accountVerification.emailSentTo": {
+  "en": "Email sent to",
+  "ko": "이메일 전송 대상"
+ },
+ "saasApp.accountVerification.enterOtp": {
+  "en": "Please enter the OTP received so that we can validate.",
+  "ko": "확인할 수 있도록 받은 OTP를 입력해 주세요."
+ },
+ "saasApp.accountVerification.enterOtpShort": {
+  "en": "Please enter OTP received so that we can validate.",
+  "ko": "확인할 수 있도록 수신한 OTP를 입력해 주세요."
+ },
+ "saasApp.accountVerification.enterPhone": {
+  "en": "Please enter an SMS enabled phone number so that we can validate.",
+  "ko": "확인할 수 있도록 SMS 사용이 가능한 전화번호를 입력해 주세요."
+ },
+ "saasApp.accountVerification.enterPhoneNumber": {
+  "en": "Enter your phone number",
+  "ko": "전화번호를 입력하세요"
+ },
+ "saasApp.accountVerification.enterVerificationCode": {
+  "en": "Enter verification code",
+  "ko": "인증 코드 입력"
+ },
+ "saasApp.accountVerification.enterVerificationCodePlaceholder": {
+  "en": "Please enter the verification code",
+  "ko": "인증 코드를 입력해 주세요"
+ },
+ "saasApp.accountVerification.havingTrouble": {
+  "en": "Having trouble verifying your email?",
+  "ko": "이메일 인증에 문제가 있으신가요?"
+ },
+ "saasApp.accountVerification.invalidEmail": {
+  "en": "Please enter valid email address",
+  "ko": "유효한 이메일 주소를 입력해 주세요"
+ },
+ "saasApp.accountVerification.phoneCodeInfo": {
+  "en": "We will send 6 digit code to your phone to verify",
+  "ko": "확인을 위해 6자리 코드를 휴대폰으로 보내드립니다"
+ },
+ "saasApp.accountVerification.reachOut": {
+  "en": "Reach out to us at:",
+  "ko": "문의처:"
+ },
+ "saasApp.accountVerification.sendCode": {
+  "en": "Send code",
+  "ko": "코드 보내기"
+ },
+ "saasApp.accountVerification.smsSentTo": {
+  "en": "SMS sent to",
+  "ko": "SMS 전송 대상"
+ },
+ "saasApp.accountVerification.stepProgress": {
+  "en": "Step {current} of {total} steps",
+  "ko": "{total} 단계 중 {current} 단계"
+ },
+ "saasApp.accountVerification.success.comeBackIn": {
+  "en": "Please come back to this page in 5 minutes to purchase a phone number",
+  "ko": "전화번호를 구매하려면 5분 후에 이 페이지로 다시 돌아와 주세요"
+ },
+ "saasApp.accountVerification.success.workingOnIt": {
+  "en": "We are working on getting this turned on for you",
+  "ko": "사용하실 수 있도록 활성화 작업을 진행하고 있습니다"
+ },
+ "saasApp.accountVerification.twoFactorSetup": {
+  "en": "Set up 2-factor authentication",
+  "ko": "2단계 인증 설정"
+ },
+ "saasApp.accountVerification.unexpectedError": {
+  "en": "Unexpected error! Please try again...",
+  "ko": "예기치 않은 오류입니다. 다시 시도해 주세요..."
+ },
+ "saasApp.advanced.description": {
+  "en": "Controls for how sub-account admins can manage their subscription.",
+  "ko": "서브 계정 관리자가 구독을 관리하는 방식을 제어합니다."
+ },
+ "saasApp.advanced.secondaryTitle": {
+  "en": "Advanced settings",
+  "ko": "고급 설정"
+ },
+ "saasApp.advanced.subaccountNaming.funnelCheckoutsOnly": {
+  "en": "Only applicable to Funnel checkouts",
+  "ko": "퍼널 결제에만 적용됩니다"
+ },
+ "saasApp.advanced.subaccountNaming.title": {
+  "en": "Choose naming convention for new SaaS sub-accounts",
+  "ko": "새 SaaS 서브 계정의 이름 규칙 선택"
+ },
+ "saasApp.advanced.subaccountNaming.useCompanyName": {
+  "en": "Use company name",
+  "ko": "회사 이름 사용"
+ },
+ "saasApp.advanced.subaccountNaming.useCustomerName": {
+  "en": "Use customer name",
+  "ko": "고객 이름 사용"
+ },
+ "saasApp.advanced.subscriptionSettings.description": {
+  "en": "Manage upgrades, downgrades and suspensions.",
+  "ko": "업그레이드, 다운그레이드 및 정지를 관리합니다."
+ },
+ "saasApp.advanced.subscriptionSettings.howUpgradesWork": {
+  "en": "How do upgrades work?",
+  "ko": "업그레이드는 어떻게 진행되나요?"
+ },
+ "saasApp.advanced.subscriptionSettings.secondaryTitle": {
+  "en": "Subscription settings",
+  "ko": "구독 설정"
+ },
+ "saasApp.advanced.subscriptionSettings.suspendLabel": {
+  "en": "Suspend sub-account when their SaaS subscription payment fails",
+  "ko": "SaaS 구독 결제 실패 시 서브 계정 정지"
+ },
+ "saasApp.advanced.subscriptionSettings.upgradeAppsLabel": {
+  "en": "Add new plan's features and apps upon upgrading.",
+  "ko": "업그레이드 시 새 플랜의 기능과 앱을 추가합니다."
+ },
+ "saasApp.advanced.subscriptionSettings.upgradeLabel": {
+  "en": "Allow sub-account admins to upgrade their subscription.",
+  "ko": "서브 계정 관리자가 구독을 업그레이드할 수 있도록 허용합니다."
+ },
+ "saasApp.advanced.subscriptionSettings.upgradePopover": {
+  "en": "Upon upgrading to a higher plan, the sub-accounts will get\naccess to the additional features and marketplace apps in\nthe new plan.",
+  "ko": "상위 플랜으로 업그레이드하면 서브 계정은\n새 플랜의 추가 기능과 마켓플레이스 앱에\n접근할 수 있습니다."
+ },
+ "saasApp.advanced.subscriptionSettings.upgradeProvidersWarning": {
+  "en": "Available for Stripe, NMI, Square and Authorize.net only.",
+  "ko": "Stripe, NMI, Square, Authorize.net에서만 사용할 수 있습니다."
+ },
+ "saasApp.advanced.subscriptionSettings.v2UpgradeNotAvailable": {
+  "en": "Upgrading is not available for V2 SaaS configurator at this time",
+  "ko": "현재 V2 SaaS 구성 도구에서는 업그레이드를 사용할 수 없습니다"
+ },
+ "saasApp.bundle.actionsRequired": {
+  "en": "Actions required",
+  "ko": "필요한 작업"
+ },
+ "saasApp.bundle.agencyProPlan": {
+  "en": "Founder plan",
+  "ko": "창립자 플랜"
+ },
+ "saasApp.bundle.back": {
+  "en": "Back",
+  "ko": "뒤로"
+ },
+ "saasApp.bundle.breadcrumbBilling": {
+  "en": "Billing",
+  "ko": "청구/결제"
+ },
+ "saasApp.bundle.breadcrumbBundle": {
+  "en": "Bundle pricing",
+  "ko": "번들 가격"
+ },
+ "saasApp.bundle.breadcrumbOverage": {
+  "en": "Overage policy",
+  "ko": "초과 사용 정책"
+ },
+ "saasApp.bundle.breadcrumbPayPerUse": {
+  "en": "Pay per use",
+  "ko": "사용량 기반 결제"
+ },
+ "saasApp.bundle.changeBillingModel": {
+  "en": "Change Billing Model",
+  "ko": "청구 모델 변경"
+ },
+ "saasApp.bundle.chargeUnits.agentStudio": {
+  "en": "Agent Studio usage",
+  "ko": "Agent Studio 사용량"
+ },
+ "saasApp.bundle.chargeUnits.contacts": {
+  "en": "contacts",
+  "ko": "연락처"
+ },
+ "saasApp.bundle.chargeUnits.conversations": {
+  "en": "conversations",
+  "ko": "대화"
+ },
+ "saasApp.bundle.chargeUnits.domains": {
+  "en": "domains",
+  "ko": "도메인"
+ },
+ "saasApp.bundle.chargeUnits.emails": {
+  "en": "emails",
+  "ko": "이메일"
+ },
+ "saasApp.bundle.chargeUnits.externalAiExecutions": {
+  "en": "AI workflow executions",
+  "ko": "AI 워크플로우 실행"
+ },
+ "saasApp.bundle.chargeUnits.funnels": {
+  "en": "funnels",
+  "ko": "퍼널"
+ },
+ "saasApp.bundle.chargeUnits.genericUsage": {
+  "en": "usage",
+  "ko": "사용량"
+ },
+ "saasApp.bundle.chargeUnits.lookups": {
+  "en": "lookups",
+  "ko": "조회"
+ },
+ "saasApp.bundle.chargeUnits.messages": {
+  "en": "messages",
+  "ko": "메시지"
+ },
+ "saasApp.bundle.chargeUnits.messagesAndMinutes": {
+  "en": "messages and minutes",
+  "ko": "메시지 및 통화 시간"
+ },
+ "saasApp.bundle.chargeUnits.minutes": {
+  "en": "minutes",
+  "ko": "분"
+ },
+ "saasApp.bundle.chargeUnits.phoneUsage": {
+  "en": "phone usage",
+  "ko": "전화 사용량"
+ },
+ "saasApp.bundle.chargeUnits.queries": {
+  "en": "queries",
+  "ko": "쿼리"
+ },
+ "saasApp.bundle.chargeUnits.reviews": {
+  "en": "reviews",
+  "ko": "리뷰"
+ },
+ "saasApp.bundle.chargeUnits.textsAndImages": {
+  "en": "texts and images",
+  "ko": "텍스트 및 이미지"
+ },
+ "saasApp.bundle.chargeUnits.users": {
+  "en": "users",
+  "ko": "사용자"
+ },
+ "saasApp.bundle.chargeUnits.verifications": {
+  "en": "verifications",
+  "ko": "인증"
+ },
+ "saasApp.bundle.chargeUnits.workflowActions": {
+  "en": "workflow actions",
+  "ko": "워크플로우 작업"
+ },
+ "saasApp.bundle.columnFreeUnitsIncluded": {
+  "en": "Included usage / month",
+  "ko": "월 포함 사용량"
+ },
+ "saasApp.bundle.columnMonthlyLimit": {
+  "en": "Included limit",
+  "ko": "포함된 한도"
+ },
+ "saasApp.bundle.columnOveragePolicy": {
+  "en": "Overage rule",
+  "ko": "초과 사용 규칙"
+ },
+ "saasApp.bundle.columnProduct": {
+  "en": "Product",
+  "ko": "상품"
+ },
+ "saasApp.bundle.columnRates": {
+  "en": "Rates",
+  "ko": "요금"
+ },
+ "saasApp.bundle.columnRebilling": {
+  "en": "Usage charges (markup)",
+  "ko": "사용 요금 (마크업)"
+ },
+ "saasApp.bundle.continue": {
+  "en": "Continue",
+  "ko": "계속"
+ },
+ "saasApp.bundle.discard": {
+  "en": "Discard",
+  "ko": "삭제"
+ },
+ "saasApp.bundle.enable": {
+  "en": "Enable",
+  "ko": "활성화"
+ },
+ "saasApp.bundle.enableNow": {
+  "en": "Enable now",
+  "ko": "지금 활성화"
+ },
+ "saasApp.bundle.enableProduct.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "saasApp.bundle.enableProduct.description": {
+  "en": "You need to enable this feature from agency settings to set usage billing",
+  "ko": "사용량 청구를 설정하려면 에이전시 설정에서 이 기능을 켜야 합니다"
+ },
+ "saasApp.bundle.enableProduct.goToSettings": {
+  "en": "Go to settings",
+  "ko": "설정으로 이동"
+ },
+ "saasApp.bundle.enableProduct.step1": {
+  "en": "Open agency settings",
+  "ko": "에이전시 설정 열기"
+ },
+ "saasApp.bundle.enableProduct.step2": {
+  "en": "Turn on {product}",
+  "ko": "{product} 켜기"
+ },
+ "saasApp.bundle.enableProduct.step3": {
+  "en": "Save your changes and refresh this page",
+  "ko": "변경사항을 저장하고 이 페이지를 새로고침하세요"
+ },
+ "saasApp.bundle.enableProduct.stepsTitle": {
+  "en": "What you'll need to do",
+  "ko": "해야 할 일"
+ },
+ "saasApp.bundle.enableProduct.title": {
+  "en": "Enable {product}",
+  "ko": "{product} 활성화"
+ },
+ "saasApp.bundle.freeUnitsNote": {
+  "en": "Free units will only be available to the sub-account after their trial period ends. Until then, usage will be rebilled according to this markup.",
+  "ko": "무료 제공량은 체험 기간이 끝난 후에만 서브 계정에 제공됩니다. 그때까지는 이 마크업에 따라 사용량이 재청구됩니다."
+ },
+ "saasApp.bundle.freelancerPlanError": {
+  "en": "Sorry! you cannot rebill at the markup on the Freelancer plan, please upgrade to Founder plan to set margins",
+  "ko": "죄송합니다! 프리랜서 플랜에서는 마크업으로 재청구할 수 없습니다. 마진을 설정하려면 창립자 플랜으로 업그레이드해 주세요."
+ },
+ "saasApp.bundle.markupLabel": {
+  "en": "Markup",
+  "ko": "마크업"
+ },
+ "saasApp.bundle.needsSetup": {
+  "en": "Needs setup",
+  "ko": "설정 필요"
+ },
+ "saasApp.bundle.noRateDataAvailable": {
+  "en": "No rate data available",
+  "ko": "요율 데이터가 없습니다"
+ },
+ "saasApp.bundle.nonBillable": {
+  "en": "Non-billable",
+  "ko": "비청구"
+ },
+ "saasApp.bundle.notApplicable": {
+  "en": "Not applicable",
+  "ko": "해당 없음"
+ },
+ "saasApp.bundle.notePrefix": {
+  "en": "Note:",
+  "ko": "참고:"
+ },
+ "saasApp.bundle.optionBundledPricing": {
+  "en": "Bundled pricing",
+  "ko": "번들 가격"
+ },
+ "saasApp.bundle.optionBundledPricingBadge": {
+  "en": "Recommended",
+  "ko": "추천"
+ },
+ "saasApp.bundle.optionBundledPricingBullet1": {
+  "en": "Charge overages with higher markup.",
+  "ko": "초과 사용량에 더 높은 마크업을 적용합니다."
+ },
+ "saasApp.bundle.optionBundledPricingBullet2": {
+  "en": "Offer upgrade path to clients.",
+  "ko": "클라이언트에게 업그레이드 경로를 제공합니다."
+ },
+ "saasApp.bundle.optionBundledPricingBullet3": {
+  "en": "Ideal for predictable usage.",
+  "ko": "예측 가능한 사용량에 적합합니다."
+ },
+ "saasApp.bundle.optionBundledPricingDesc": {
+  "en": "Include limited executions (minutes, SMS, etc.) with the plan.",
+  "ko": "플랜에 제한된 실행량(분, SMS 등)을 포함합니다."
+ },
+ "saasApp.bundle.optionHandleSeparately": {
+  "en": "Handle billing separately",
+  "ko": "청구 별도 처리"
+ },
+ "saasApp.bundle.optionHandleSeparatelyBullet1": {
+  "en": "You cover cost for clients' usage.",
+  "ko": "고객의 사용 비용을 귀하가 부담합니다."
+ },
+ "saasApp.bundle.optionHandleSeparatelyBullet2": {
+  "en": "Works for low usage accounts.",
+  "ko": "사용량이 적은 계정에 적합합니다."
+ },
+ "saasApp.bundle.optionHandleSeparatelyBullet3": {
+  "en": "No markups or limits applied.",
+  "ko": "마크업이나 한도가 적용되지 않습니다."
+ },
+ "saasApp.bundle.optionHandleSeparatelyDesc": {
+  "en": "Manage billing outside HighLevel. No markups, no limits.",
+  "ko": "하이퍼클래스 외부에서 청구를 관리하세요. 마크업도, 제한도 없습니다."
+ },
+ "saasApp.bundle.optionPayPerUse": {
+  "en": "Pay per use",
+  "ko": "사용량 기반 결제"
+ },
+ "saasApp.bundle.optionPayPerUseBullet1": {
+  "en": "Pricing scales linearly with usage.",
+  "ko": "가격은 사용량에 비례하여 증가합니다."
+ },
+ "saasApp.bundle.optionPayPerUseBullet2": {
+  "en": "Stable margins.",
+  "ko": "마진이 안정적입니다."
+ },
+ "saasApp.bundle.optionPayPerUseBullet3": {
+  "en": "Ideal for unpredictable usage.",
+  "ko": "예측하기 어려운 사용량에 적합합니다."
+ },
+ "saasApp.bundle.optionPayPerUseDesc": {
+  "en": "Charge per execution of calls, SMS, emails, AI usage, automations etc.",
+  "ko": "통화, SMS, 이메일, AI 사용, 자동화 등 실행 건당 요금"
+ },
+ "saasApp.bundle.overageAutoUpgrade": {
+  "en": "Auto-upgrade",
+  "ko": "자동 업그레이드"
+ },
+ "saasApp.bundle.overageAutoUpgradeDesc": {
+  "en": "Sub-accounts will be auto-upgraded to the next plan after configured limit is exhausted.",
+  "ko": "설정한 한도를 모두 사용하면 서브 계정이 다음 플랜으로 자동 업그레이드됩니다."
+ },
+ "saasApp.bundle.overageBill": {
+  "en": "Bill",
+  "ko": "청구"
+ },
+ "saasApp.bundle.overageChargesNote": {
+  "en": "Charges apply at the markup rate once the included limit is exceeded.",
+  "ko": "포함된 한도를 초과하면 마크업 요율로 요금이 부과됩니다."
+ },
+ "saasApp.bundle.overagePolicyDescription": {
+  "en": "Choose what happens when clients have exhausted the free units.",
+  "ko": "클라이언트가 무료 사용량을 모두 소진했을 때의 동작을 선택하세요."
+ },
+ "saasApp.bundle.overagePolicySubtext": {
+  "en": "You can configure limits for some features, while applying markups to others. Products with markups will be billed on pay-per-use basis.",
+  "ko": "일부 기능에는 한도를 설정하고 다른 기능에는 마크업을 적용할 수 있습니다. 마크업이 적용된 상품은 사용량 기준으로 청구됩니다."
+ },
+ "saasApp.bundle.overagePolicyTitle": {
+  "en": "Overage policy",
+  "ko": "초과 사용 정책"
+ },
+ "saasApp.bundle.overageStartBilling": {
+  "en": "Start billing",
+  "ko": "청구 시작"
+ },
+ "saasApp.bundle.overageStartBillingDesc": {
+  "en": "Sub-accounts will start getting billed on a pay-per-use basis once the configured limit is exhausted.",
+  "ko": "설정한 한도가 소진되면 서브 계정에 사용량 기반으로 청구되기 시작합니다."
+ },
+ "saasApp.bundle.overageStop": {
+  "en": "Block",
+  "ko": "차단"
+ },
+ "saasApp.bundle.overageStopActions": {
+  "en": "Stop actions",
+  "ko": "작업 중지"
+ },
+ "saasApp.bundle.overageStopActionsDesc": {
+  "en": "Sub-account actions will be stopped once the configured limit is exhausted.",
+  "ko": "설정된 한도가 소진되면 서브 계정 작업이 중지됩니다."
+ },
+ "saasApp.bundle.phoneSystem.baseCost": {
+  "en": "Base cost for the respective service",
+  "ko": "해당 서비스의 기본 비용"
+ },
+ "saasApp.bundle.phoneSystem.callsDescription": {
+  "en": "Total calling minutes (inbound + outbound)",
+  "ko": "전체 통화 시간(분) (수신 + 발신)"
+ },
+ "saasApp.bundle.phoneSystem.description": {
+  "en": "Charge rate for phone-related usage, including A2P, phone numbers, caller ID, calls, and SMS.",
+  "ko": "A2P, 전화번호, 발신자 ID, 통화, SMS 등 전화 관련 사용량에 대한 청구 요율입니다."
+ },
+ "saasApp.bundle.phoneSystem.markupWithBaseCost": {
+  "en": "x Base cost for the respective service",
+  "ko": "x 해당 서비스의 기본 비용"
+ },
+ "saasApp.bundle.phoneSystem.otherPhoneProductsLink": {
+  "en": "other phone products",
+  "ko": "기타 전화 상품"
+ },
+ "saasApp.bundle.phoneSystem.otherPhoneProductsTitle": {
+  "en": "Usage-based phone products. These can't include usage in a plan.",
+  "ko": "사용량 기반 전화 상품입니다. 이 상품은 플랜에 사용량을 포함할 수 없습니다."
+ },
+ "saasApp.bundle.phoneSystem.parentConfig": {
+  "en": "Parent configuration",
+  "ko": "상위 구성"
+ },
+ "saasApp.bundle.phoneSystem.productDescription": {
+  "en": "Calls, SMS, SMS notifications and other phone products.",
+  "ko": "통화, SMS, SMS 알림 및 기타 전화 상품입니다."
+ },
+ "saasApp.bundle.phoneSystem.rebillingNoteBill": {
+  "en": "Applies to overage on calls, SMS and SMS notifications, and to {link}.",
+  "ko": "통화, SMS, SMS 알림의 초과 사용량과 {link}에 적용됩니다."
+ },
+ "saasApp.bundle.phoneSystem.rebillingNoteBlock": {
+  "en": "Applies to {link}. Calls, SMS and SMS notifications are blocked at their limit.",
+  "ko": "{link}에 적용됩니다. 통화, SMS, SMS 알림은 한도에 도달하면 차단됩니다."
+ },
+ "saasApp.bundle.phoneSystem.rebillingNoteOff": {
+  "en": "Off. Your agency covers usage on {link}.",
+  "ko": "꺼짐. {link} 사용량은 에이전시가 부담합니다."
+ },
+ "saasApp.bundle.phoneSystem.smsDescription": {
+  "en": "Outbound Messages",
+  "ko": "발신 메시지"
+ },
+ "saasApp.bundle.phoneSystem.smsNotificationsDescription": {
+  "en": "System & verification messages",
+  "ko": "시스템 및 인증 메시지"
+ },
+ "saasApp.bundle.phoneSystem.title": {
+  "en": "Phone system markup",
+  "ko": "전화 시스템 마크업"
+ },
+ "saasApp.bundle.productDisabledForAgency": {
+  "en": "Feature disabled.",
+  "ko": "기능이 비활성화되었습니다."
+ },
+ "saasApp.bundle.productTooltips.Agentstudio": {
+  "en": "Agent studio usage",
+  "ko": "Agent Studio 사용량"
+ },
+ "saasApp.bundle.productTooltips.AutoCompleteAddress": {
+  "en": "Address autocomplete lookups",
+  "ko": "주소 자동 완성 조회"
+ },
+ "saasApp.bundle.productTooltips.Contacts": {
+  "en": "Contact records",
+  "ko": "연락처 레코드"
+ },
+ "saasApp.bundle.productTooltips.ContentAI": {
+  "en": "Content AI texts and images",
+  "ko": "Content AI 텍스트 및 이미지"
+ },
+ "saasApp.bundle.productTooltips.ConversationAndVoiceAI": {
+  "en": "Conversation and voice AI usage",
+  "ko": "대화 및 음성 AI 사용량"
+ },
+ "saasApp.bundle.productTooltips.DomainPurchase": {
+  "en": "Domains purchased",
+  "ko": "구매한 도메인"
+ },
+ "saasApp.bundle.productTooltips.Email": {
+  "en": "Outbound emails",
+  "ko": "발신 이메일"
+ },
+ "saasApp.bundle.productTooltips.LCEmailVerification": {
+  "en": "Email verification checks",
+  "ko": "이메일 인증 확인"
+ },
+ "saasApp.bundle.productTooltips.PhoneSystem": {
+  "en": "Phone system usage including SMS and calls",
+  "ko": "SMS 및 통화를 포함한 전화 시스템 사용량"
+ },
+ "saasApp.bundle.productTooltips.ReviewsAI": {
+  "en": "Reviews AI usage",
+  "ko": "Reviews AI 사용량"
+ },
+ "saasApp.bundle.productTooltips.Users": {
+  "en": "Number of users",
+  "ko": "사용자 수"
+ },
+ "saasApp.bundle.productTooltips.WhatsAppUsage": {
+  "en": "WhatsApp conversations",
+  "ko": "WhatsApp 대화"
+ },
+ "saasApp.bundle.productTooltips.WorkflowExternalAIModels": {
+  "en": "Workflow executions using external AI models",
+  "ko": "외부 AI 모델을 사용하는 워크플로우 실행"
+ },
+ "saasApp.bundle.productTooltips.WorkflowPremiumFeatures": {
+  "en": "Premium workflow triggers and actions",
+  "ko": "프리미엄 워크플로우 트리거 및 작업"
+ },
+ "saasApp.bundle.rebillingColumnTooltip": {
+  "en": "Sub-accounts are charged your service cost multiplied by the markup you set.",
+  "ko": "서브 계정에는 서비스 비용에 설정한 마크업을 곱한 금액이 청구됩니다."
+ },
+ "saasApp.bundle.required": {
+  "en": "Required",
+  "ko": "필수"
+ },
+ "saasApp.bundle.review.absorbedDescription": {
+  "en": "Agency absorbs the cost. Sub-account is not billed.",
+  "ko": "에이전시가 비용을 부담합니다. 서브 계정에는 청구되지 않습니다."
+ },
+ "saasApp.bundle.review.agencyBearHint": {
+  "en": "Estimated base cost for included usage. Charges after limits are passed to sub-accounts at your configured rate.",
+  "ko": "포함된 사용량에 대한 예상 기본 비용입니다. 한도 초과 후 요금은 설정한 요율로 서브 계정에 전가됩니다."
+ },
+ "saasApp.bundle.review.agencyBearLabel": {
+  "en": "Estimated agency cost",
+  "ko": "예상 에이전시 비용"
+ },
+ "saasApp.bundle.review.billingModelHandleSeparately": {
+  "en": "Handle billing separately",
+  "ko": "청구 별도 처리"
+ },
+ "saasApp.bundle.review.billingModelLabel": {
+  "en": "Billing model",
+  "ko": "청구 모델"
+ },
+ "saasApp.bundle.review.billingModelPayPerUse": {
+  "en": "Pay per use",
+  "ko": "사용량 기반 결제"
+ },
+ "saasApp.bundle.review.confirmSave": {
+  "en": "Confirm & save",
+  "ko": "확인 및 저장"
+ },
+ "saasApp.bundle.review.costPolicySubtitle": {
+  "en": "Estimated monthly agency cost per sub-account",
+  "ko": "서브 계정당 예상 월간 에이전시 비용"
+ },
+ "saasApp.bundle.review.costPolicySubtitleManageClient": {
+  "en": "Estimated monthly agency cost",
+  "ko": "예상 월간 에이전시 비용"
+ },
+ "saasApp.bundle.review.costPolicyTitle": {
+  "en": "Cost & billing rules",
+  "ko": "비용 & 청구 규칙"
+ },
+ "saasApp.bundle.review.coverageAbsorbedHint": {
+  "en": "Your agency pays the cost.",
+  "ko": "에이전시가 비용을 부담합니다."
+ },
+ "saasApp.bundle.review.coverageAbsorbedLabel": {
+  "en": "Covered",
+  "ko": "에이전시 부담"
+ },
+ "saasApp.bundle.review.coverageProductsLabel": {
+  "en": "products",
+  "ko": "상품"
+ },
+ "saasApp.bundle.review.coverageRebilledHint": {
+  "en": "Sub-accounts pay your configured rate.",
+  "ko": "서브 계정은 설정한 요금을 지불합니다."
+ },
+ "saasApp.bundle.review.coverageRebilledLabel": {
+  "en": "Charged",
+  "ko": "청구됨"
+ },
+ "saasApp.bundle.review.edit": {
+  "en": "Edit",
+  "ko": "편집"
+ },
+ "saasApp.bundle.review.emptyAbsorbed": {
+  "en": "No products covered by agency.",
+  "ko": "에이전시가 부담하는 상품이 없습니다."
+ },
+ "saasApp.bundle.review.emptyRebilled": {
+  "en": "No products charged from first use.",
+  "ko": "첫 사용부터 청구되는 상품이 없습니다."
+ },
+ "saasApp.bundle.review.emptyStartBilling": {
+  "en": "No products will start billing on overage.",
+  "ko": "초과 사용 시 청구가 시작되는 상품이 없습니다."
+ },
+ "saasApp.bundle.review.emptyStopServices": {
+  "en": "No products will stop services on overage.",
+  "ko": "초과 사용 시 서비스가 중단되는 상품이 없습니다."
+ },
+ "saasApp.bundle.review.fixPriceLabel": {
+  "en": "${price}/request",
+  "ko": "요청당 ${price}"
+ },
+ "saasApp.bundle.review.limitPerMonth": {
+  "en": "{value} {unit}/month",
+  "ko": "{value} {unit}/월"
+ },
+ "saasApp.bundle.review.loadFailure": {
+  "en": "Failed to load usage billing limits",
+  "ko": "사용량 청구 한도를 불러오지 못했습니다"
+ },
+ "saasApp.bundle.review.markupMultiplier": {
+  "en": "{markup}× cost",
+  "ko": "비용의 {markup}배"
+ },
+ "saasApp.bundle.review.notePayPerUseItemized": {
+  "en": "Each usage event appears as a separate line item in sub-account settings > Billing > Wallet & transactions.",
+  "ko": "각 사용 이벤트는 서브 계정 설정 > 청구 > 지갑 및 거래에 별도 항목으로 표시됩니다."
+ },
+ "saasApp.bundle.review.notePayPerUseTwilio": {
+  "en": "For accounts using Twilio, A2P registration and call transcription charges are not passed to sub-accounts.",
+  "ko": "Twilio를 사용하는 계정의 경우 A2P 등록 및 통화 전사 요금은 서브 계정에 부과되지 않습니다."
+ },
+ "saasApp.bundle.review.overagePolicyLabel": {
+  "en": "Overage rule",
+  "ko": "초과 사용 규칙"
+ },
+ "saasApp.bundle.review.perMonthPerSubscriber": {
+  "en": "/ mo / subscriber",
+  "ko": "/ 월 / 구독자"
+ },
+ "saasApp.bundle.review.productsSubtitle": {
+  "en": "{free} with included usage · {rebilled} charged from first use · {absorbed} covered by agency",
+  "ko": "포함 사용량 제공 {free} · 첫 사용부터 과금 {rebilled} · 에이전시 부담 {absorbed}"
+ },
+ "saasApp.bundle.review.productsSubtitleNoLimits": {
+  "en": "{rebilled} charged to sub-accounts · {absorbed} covered by agency",
+  "ko": "{rebilled} 서브 계정에 청구됨 · {absorbed} 에이전시 부담"
+ },
+ "saasApp.bundle.review.productsTitle": {
+  "en": "Usage-based products",
+  "ko": "사용량 기반 상품"
+ },
+ "saasApp.bundle.review.rebilledOnlyDescription": {
+  "en": "Pay-per-use — no free units. Sub-account billed at this rate.",
+  "ko": "사용량 기반 과금 — 무료 제공량 없음. 서브 계정에 이 요율로 청구됩니다."
+ },
+ "saasApp.bundle.review.rebilledPayPerUseDescription": {
+  "en": "Every action billed to sub-account at this markup.",
+  "ko": "모든 작업이 이 마크업으로 서브 계정에 청구됩니다."
+ },
+ "saasApp.bundle.review.rebillingCoverageLabel": {
+  "en": "Usage charges",
+  "ko": "사용 요금"
+ },
+ "saasApp.bundle.review.rebillingSubtitle": {
+  "en": "Markup applied to each selected usage event",
+  "ko": "선택한 각 사용 이벤트에 적용되는 마크업"
+ },
+ "saasApp.bundle.review.rebillingTitle": {
+  "en": "Usage charges",
+  "ko": "사용 요금"
+ },
+ "saasApp.bundle.review.saveSuccess": {
+  "en": "Saved changes",
+  "ko": "변경사항이 저장되었습니다"
+ },
+ "saasApp.bundle.review.sectionAbsorbed": {
+  "en": "Covered by agency · {count}",
+  "ko": "에이전시 부담 · {count}"
+ },
+ "saasApp.bundle.review.sectionAbsorbedSubtitle": {
+  "en": "Your agency covers this cost. The sub-account is not charged.",
+  "ko": "이 비용은 에이전시가 부담합니다. 서브 계정에는 청구되지 않습니다."
+ },
+ "saasApp.bundle.review.sectionRebilled": {
+  "en": "Charged from first use · {count}",
+  "ko": "첫 사용부터 과금 · {count}"
+ },
+ "saasApp.bundle.review.sectionRebilledPayPerUse": {
+  "en": "Charged to sub-accounts · {count}",
+  "ko": "서브 계정에 청구됨 · {count}"
+ },
+ "saasApp.bundle.review.sectionRebilledPayPerUseSubtitle": {
+  "en": "Each usage event is charged to the sub-account using the respective markup.",
+  "ko": "각 사용 이벤트는 해당 마크업을 적용하여 서브 계정에 청구됩니다."
+ },
+ "saasApp.bundle.review.sectionRebilledSubtitle": {
+  "en": "No included usage. The sub-account is charged from the first usage event at the configured rate.",
+  "ko": "포함된 사용량이 없습니다. 서브 계정은 첫 사용 이벤트부터 구성된 요율로 청구됩니다."
+ },
+ "saasApp.bundle.review.sectionStartBilling": {
+  "en": "Included usage + charge after limit · {count}",
+  "ko": "포함된 사용량 + 한도 초과 후 과금 · {count}"
+ },
+ "saasApp.bundle.review.sectionStartBillingSubtitle": {
+  "en": "Usage continues after the included limit, and the sub-account is charged at your configured rate.",
+  "ko": "포함된 한도 이후에도 사용이 계속되며, 서브 계정에는 설정한 요율로 과금됩니다."
+ },
+ "saasApp.bundle.review.sectionStopServices": {
+  "en": "Included usage, then block · {count}",
+  "ko": "포함된 사용량 이후 차단 · {count}"
+ },
+ "saasApp.bundle.review.sectionStopServicesSubtitle": {
+  "en": "Usage stops when the included limit is reached. The sub-account must upgrade to continue.",
+  "ko": "포함된 한도에 도달하면 사용이 중지됩니다. 계속하려면 서브 계정을 업그레이드해야 합니다."
+ },
+ "saasApp.bundle.review.startBillingCountPlural": {
+  "en": "products will start billing",
+  "ko": "상품 청구가 시작됩니다"
+ },
+ "saasApp.bundle.review.startBillingCountSingular": {
+  "en": "product will start billing",
+  "ko": "상품 청구가 시작됩니다"
+ },
+ "saasApp.bundle.review.startBillingHint": {
+  "en": "Usage continues after the included limit. Sub-accounts are charged at your configured rate.",
+  "ko": "포함된 한도 이후에도 사용이 계속됩니다. 서브 계정에는 설정한 요율로 과금됩니다."
+ },
+ "saasApp.bundle.review.startBillingPillLabel": {
+  "en": "Charge after limit",
+  "ko": "한도 초과 시 청구"
+ },
+ "saasApp.bundle.review.startBillingProductDescription": {
+  "en": "Sub-account keeps running past the limit and is rebilled at your markup.",
+  "ko": "서브 계정은 한도를 초과해도 계속 실행되며 설정한 마크업으로 재청구됩니다."
+ },
+ "saasApp.bundle.review.stepLabel": {
+  "en": "Review & save",
+  "ko": "검토 및 저장"
+ },
+ "saasApp.bundle.review.stopServicesCountPlural": {
+  "en": "products will stop services",
+  "ko": "상품의 서비스가 중단됩니다"
+ },
+ "saasApp.bundle.review.stopServicesCountSingular": {
+  "en": "product will stop services",
+  "ko": "상품의 서비스가 중단됩니다"
+ },
+ "saasApp.bundle.review.stopServicesDescription": {
+  "en": "Sub-account is blocked at the limit. They must upgrade to continue.",
+  "ko": "서브 계정은 한도에 도달하면 차단됩니다. 계속하려면 업그레이드해야 합니다."
+ },
+ "saasApp.bundle.review.stopServicesHint": {
+  "en": "Usage stops when the included limit is reached. The sub-account must upgrade to continue.",
+  "ko": "포함된 한도에 도달하면 사용이 중지됩니다. 계속하려면 서브 계정을 업그레이드해야 합니다."
+ },
+ "saasApp.bundle.review.stopServicesPillLabel": {
+  "en": "Block at limit",
+  "ko": "한도 도달 시 차단"
+ },
+ "saasApp.bundle.review.subtitle": {
+  "en": "Review what's included, what happens after limits are used, and which charges apply before saving.",
+  "ko": "저장하기 전에 포함된 항목, 한도 소진 후의 처리 방식, 적용되는 요금을 검토하세요."
+ },
+ "saasApp.bundle.review.subtitleHandleSeparately": {
+  "en": "Sub-account usage will not be rebilled by your agency. Review the configuration before saving.",
+  "ko": "서브 계정 사용량은 에이전시에서 재청구되지 않습니다. 저장하기 전에 구성을 검토하세요."
+ },
+ "saasApp.bundle.review.subtitlePayPerUse": {
+  "en": "Pay-per-use charges will apply to selected products based on your configured markup. Review the details before saving.",
+  "ko": "선택한 상품에는 설정한 마크업에 따라 사용량 기반 요금이 부과됩니다. 저장하기 전에 세부 정보를 검토하세요."
+ },
+ "saasApp.bundle.review.title": {
+  "en": "Review your usage billing setup",
+  "ko": "사용량 청구 설정 검토"
+ },
+ "saasApp.bundle.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "saasApp.bundle.saveConfiguration": {
+  "en": "Save Configuration",
+  "ko": "설정 저장"
+ },
+ "saasApp.bundle.searchProductPlaceholder": {
+  "en": "Search product",
+  "ko": "상품 검색"
+ },
+ "saasApp.bundle.selectBillingModelSubtitle": {
+  "en": "Choose how you want to handle product usage and billing for your SaaS sub-accounts.",
+  "ko": "SaaS 서브 계정의 상품 사용량과 청구를 처리할 방법을 선택하세요."
+ },
+ "saasApp.bundle.selectBillingModelTitle": {
+  "en": "Select billing model",
+  "ko": "청구 모델 선택"
+ },
+ "saasApp.bundle.step3.allOtherProducts": {
+  "en": "All other products",
+  "ko": "기타 모든 상품"
+ },
+ "saasApp.bundle.step3.chooseIncludedProductsLink": {
+  "en": "Choose included products",
+  "ko": "포함할 상품 선택"
+ },
+ "saasApp.bundle.step3.freeUnitsDescription": {
+  "en": "Usage included in the plan at no extra charge to the sub-account. Your agency covers the base cost within this limit.",
+  "ko": "서브 계정에 추가 요금 없이 플랜에 포함된 사용량입니다. 이 한도 내에서는 에이전시가 기본 비용을 부담합니다."
+ },
+ "saasApp.bundle.step3.freeUnitsTitle": {
+  "en": "Included usage",
+  "ko": "포함된 사용량"
+ },
+ "saasApp.bundle.step3.overageDescription": {
+  "en": "Choose what happens when included usage is used up: continue and bill per use, or block usage until they upgrade.",
+  "ko": "포함된 사용량이 소진되었을 때의 동작을 선택하세요: 계속 사용하고 사용량별로 청구하거나, 업그레이드할 때까지 사용을 차단합니다."
+ },
+ "saasApp.bundle.step3.overageTitle": {
+  "en": "Overage rule",
+  "ko": "초과 사용 규칙"
+ },
+ "saasApp.bundle.step3.productsCount": {
+  "en": "{count} products",
+  "ko": "상품 {count}개"
+ },
+ "saasApp.bundle.step3.productsWithIncludedUsage": {
+  "en": "Products with included usage",
+  "ko": "포함 사용량이 있는 상품"
+ },
+ "saasApp.bundle.step3.productsWithIncludedUsageHint": {
+  "en": "These products include usage in the plan. To add or remove products, go back to",
+  "ko": "이 상품은 플랜에 사용량이 포함되어 있습니다. 상품을 추가하거나 제거하려면 이전 단계로 돌아가세요:"
+ },
+ "saasApp.bundle.step3.rebillingDescription": {
+  "en": "Rate charged to sub-accounts when usage is not included in the plan, or after included usage is consumed.",
+  "ko": "사용량이 플랜에 포함되지 않았거나 포함된 사용량을 모두 소진한 후 서브 계정에 청구되는 요율입니다."
+ },
+ "saasApp.bundle.step3.rebillingTitle": {
+  "en": "Usage charges",
+  "ko": "사용 요금"
+ },
+ "saasApp.bundle.step3.searchProducts": {
+  "en": "Search products",
+  "ko": "상품 검색"
+ },
+ "saasApp.bundle.step3.setOverageForAll": {
+  "en": "Set overage rule for all",
+  "ko": "모두에 초과 사용 규칙 설정"
+ },
+ "saasApp.bundle.step3.subtitle": {
+  "en": "For each product, set what's included in the plan, and what happens when the limit is reached.",
+  "ko": "각 상품에 대해 플랜에 포함된 내용과 한도 도달 시 처리 방식을 설정하세요."
+ },
+ "saasApp.bundle.step3.title": {
+  "en": "Set included usage and overage rules",
+  "ko": "포함 사용량 및 초과 사용 규칙 설정"
+ },
+ "saasApp.bundle.step3.usageBasedProducts": {
+  "en": "Usage-based products",
+  "ko": "사용량 기반 상품"
+ },
+ "saasApp.bundle.step3.usageBasedProductsHint": {
+  "en": "These products do not include free usage in this plan. Sub-accounts are charged from the first usage event using the rate below.",
+  "ko": "이 상품에는 이 플랜의 무료 사용량이 포함되지 않습니다. 서브 계정은 첫 사용 이벤트부터 아래 요율로 청구됩니다."
+ },
+ "saasApp.bundle.stepProgress": {
+  "en": "Step {current} of {total} · {label}",
+  "ko": "{total} 중 {current}단계 · {label}"
+ },
+ "saasApp.bundle.stoppedAtLimit": {
+  "en": "Stopped at limit",
+  "ko": "한도에서 중지됨"
+ },
+ "saasApp.bundle.summary.billingModel": {
+  "en": "Billing model",
+  "ko": "청구 모델"
+ },
+ "saasApp.bundle.summary.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "saasApp.bundle.summary.confirmSave": {
+  "en": "Confirm & Save",
+  "ko": "확인 및 저장"
+ },
+ "saasApp.bundle.summary.costWarning": {
+  "en": "Sub-accounts will not be charged for usage within the bundle. Be sure to charge enough to cover these costs plus profit.",
+  "ko": "번들 내 사용량에 대해서는 서브 계정에 요금이 부과되지 않습니다. 이 비용과 이익을 충당할 만큼 충분히 청구하세요."
+ },
+ "saasApp.bundle.summary.importantNotes": {
+  "en": "Important notes",
+  "ko": "중요 참고 사항"
+ },
+ "saasApp.bundle.summary.includedLimits": {
+  "en": "Included usage limits",
+  "ko": "포함된 사용량 한도"
+ },
+ "saasApp.bundle.summary.noteApplyImmediately": {
+  "en": "This setup applies to new sub-accounts immediately.",
+  "ko": "이 설정은 새 서브 계정에 즉시 적용됩니다."
+ },
+ "saasApp.bundle.summary.noteCompliancePrecedence": {
+  "en": "Compliance-based limits always take precedence for Emails and SMS.",
+  "ko": "이메일과 SMS에는 규정 준수 기반 한도가 항상 우선 적용됩니다."
+ },
+ "saasApp.bundle.summary.noteExistingRetain": {
+  "en": "Existing sub-accounts keep their current settings unless updated.",
+  "ko": "기존 서브 계정은 업데이트하지 않는 한 현재 설정을 유지합니다."
+ },
+ "saasApp.bundle.summary.noteNotifications": {
+  "en": "Notifications will be sent to clients at 50%, 80%, and 95% limit utilization.",
+  "ko": "한도 사용률이 50%, 80%, 95% 에 도달하면 클라이언트에게 알림이 전송됩니다."
+ },
+ "saasApp.bundle.summary.perMonth": {
+  "en": "month per subscriber - billed to your agency.",
+  "ko": "구독자당 월 - 에이전시에 청구됩니다."
+ },
+ "saasApp.bundle.summary.subtitle": {
+  "en": "Review your configurations before saving.",
+  "ko": "저장하기 전에 설정을 검토하세요."
+ },
+ "saasApp.bundle.summary.title": {
+  "en": "Configuration summary",
+  "ko": "구성 요약"
+ },
+ "saasApp.bundle.summary.totalCostLabel": {
+  "en": "Total cost to your agency (assuming 100% limit utilization)",
+  "ko": "에이전시 총 비용 (한도 100% 사용 기준)"
+ },
+ "saasApp.bundle.switchModel.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "saasApp.bundle.switchModel.confirm": {
+  "en": "Continue",
+  "ko": "계속"
+ },
+ "saasApp.bundle.switchModel.footerManageClient": {
+  "en": "This action cannot be undone. This sub-account will switch to metered billing immediately.",
+  "ko": "이 작업은 되돌릴 수 없습니다. 이 서브 계정은 즉시 사용량 기반 청구로 전환됩니다."
+ },
+ "saasApp.bundle.switchModel.footerPlan": {
+  "en": "This cannot be undone. Do you want to continue?",
+  "ko": "이 작업은 되돌릴 수 없습니다. 계속하시겠습니까?"
+ },
+ "saasApp.bundle.switchModel.itemLimitsPlan": {
+  "en": "Bundle usage limits",
+  "ko": "번들 사용 한도"
+ },
+ "saasApp.bundle.switchModel.itemLimitsSubAccount": {
+  "en": "Bundle limits for this sub-account",
+  "ko": "이 서브 계정의 번들 한도"
+ },
+ "saasApp.bundle.switchModel.itemOverageRules": {
+  "en": "Overage rules",
+  "ko": "초과 사용 규칙"
+ },
+ "saasApp.bundle.switchModel.itemOveragesAndRules": {
+  "en": "Overage rules and markups",
+  "ko": "초과 사용 규칙 및 마크업"
+ },
+ "saasApp.bundle.switchModel.subtitle": {
+  "en": "Switching billing models will remove your current bundle configuration. You'll choose a new model on the next screen.",
+  "ko": "청구 모델을 전환하면 현재 번들 구성이 삭제됩니다. 다음 화면에서 새 모델을 선택하게 됩니다."
+ },
+ "saasApp.bundle.switchModel.title": {
+  "en": "Change billing model?",
+  "ko": "청구 모델을 변경하시겠습니까?"
+ },
+ "saasApp.bundle.switchModel.warningTitleManageClient": {
+  "en": "What will be permanently erased",
+  "ko": "영구적으로 삭제되는 항목"
+ },
+ "saasApp.bundle.switchModel.warningTitlePlan": {
+  "en": "What will be removed:",
+  "ko": "제거될 항목:"
+ },
+ "saasApp.bundle.switchRebillingMode.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "saasApp.bundle.switchRebillingMode.confirm": {
+  "en": "Confirm switch",
+  "ko": "전환 확인"
+ },
+ "saasApp.bundle.switchRebillingMode.descriptionFrom": {
+  "en": "from",
+  "ko": "기존"
+ },
+ "saasApp.bundle.switchRebillingMode.descriptionPrefix": {
+  "en": "You are switching",
+  "ko": "다음과 같이 전환합니다:"
+ },
+ "saasApp.bundle.switchRebillingMode.descriptionTo": {
+  "en": "to",
+  "ko": "→"
+ },
+ "saasApp.bundle.switchRebillingMode.fixedRate": {
+  "en": "Fixed Rate",
+  "ko": "고정 요율"
+ },
+ "saasApp.bundle.switchRebillingMode.markup": {
+  "en": "Markup",
+  "ko": "마크업"
+ },
+ "saasApp.bundle.switchRebillingMode.title": {
+  "en": "Switch rebilling mode?",
+  "ko": "재청구 모드를 전환하시겠습니까?"
+ },
+ "saasApp.bundle.switchRebillingMode.warningToFixedRate": {
+  "en": "Sub-accounts will be billed at the configured fixed price per unit, independent of Highlevel cost changes.",
+  "ko": "서브 계정에는 하이퍼클래스 비용 변동과 관계없이 설정한 단위당 고정 가격이 청구됩니다."
+ },
+ "saasApp.bundle.switchRebillingMode.warningToMarkup": {
+  "en": "Sub-accounts will be billed at the configured markup multiplier applied to the base service cost.",
+  "ko": "서브 계정에는 기본 서비스 비용에 마크업 배수를 적용한 금액이 청구됩니다."
+ },
+ "saasApp.bundle.switchToFixedRate": {
+  "en": "Switch to fixed rate",
+  "ko": "고정 요율로 전환"
+ },
+ "saasApp.bundle.switchToMarkup": {
+  "en": "Switch to markup",
+  "ko": "마크업으로 전환"
+ },
+ "saasApp.bundle.unlimited": {
+  "en": "Unlimited",
+  "ko": "무제한"
+ },
+ "saasApp.bundle.unlimitedChargePerMonth": {
+  "en": "Not included in plan",
+  "ko": "플랜에 포함되지 않음"
+ },
+ "saasApp.bundle.userBilling.chip": {
+  "en": "Sub-account users only",
+  "ko": "서브 계정 사용자만"
+ },
+ "saasApp.bundle.userBilling.tooltip.allUsersTitle": {
+  "en": "Billed to sub-account: all users",
+  "ko": "서브 계정에 청구: 모든 사용자"
+ },
+ "saasApp.bundle.userBilling.tooltip.bundleAllUsersBody": {
+  "en": "Once included usage runs out, all usage is billed to the sub-account wallet, whether it comes from agency or sub-account users.",
+  "ko": "포함된 사용량이 소진되면 에이전시 사용자와 서브 계정 사용자 중 누구의 사용량이든 모두 서브 계정 지갑에 청구됩니다."
+ },
+ "saasApp.bundle.userBilling.tooltip.bundleSubAccountUsersOnlyBody": {
+  "en": "Once included usage runs out, only usage by sub-account users is billed to the sub-account wallet. Usage by agency users is billed to your agency wallet, so setup work isn’t passed on.",
+  "ko": "포함된 사용량이 소진되면 서브 계정 사용자의 사용량만 서브 계정 지갑에 청구됩니다. 에이전시 사용자의 사용량은 에이전시 지갑에 청구되므로 설정 작업 비용이 서브 계정에 전가되지 않습니다."
+ },
+ "saasApp.bundle.userBilling.tooltip.payPerUseAllUsersBody": {
+  "en": "All usage is billed to the sub-account wallet, whether it comes from agency or sub-account users.",
+  "ko": "에이전시 사용자와 서브 계정 사용자 중 누구의 사용량이든 모두 서브 계정 지갑에 청구됩니다."
+ },
+ "saasApp.bundle.userBilling.tooltip.payPerUseSubAccountUsersOnlyBody": {
+  "en": "Only usage by sub-account users is billed to the sub-account wallet. Usage by agency users is billed to your agency wallet, so setup work isn’t passed on.",
+  "ko": "서브 계정 사용자의 사용량만 서브 계정 지갑에 청구됩니다. 에이전시 사용자의 사용량은 에이전시 지갑에 청구되므로 설정 작업 비용이 서브 계정에 전가되지 않습니다."
+ },
+ "saasApp.bundle.userBilling.tooltip.subAccountUsersOnlyTitle": {
+  "en": "Billed to sub-account: sub-account users only",
+  "ko": "서브 계정에 청구: 서브 계정 사용자만"
+ },
+ "saasApp.cancellation.logs.activityLogsExported": {
+  "en": "activity logs exported",
+  "ko": "활동 로그를 내보냈습니다"
+ },
+ "saasApp.cancellation.logs.columns.accountCreation": {
+  "en": "Account creation date",
+  "ko": "계정 생성일"
+ },
+ "saasApp.cancellation.logs.columns.cancellationReason": {
+  "en": "Cancellation reason",
+  "ko": "취소 사유"
+ },
+ "saasApp.cancellation.logs.columns.deflectionType": {
+  "en": "Deflection type",
+  "ko": "이탈 방지 유형"
+ },
+ "saasApp.cancellation.logs.columns.outcome": {
+  "en": "Outcome",
+  "ko": "결과"
+ },
+ "saasApp.cancellation.logs.columns.plan": {
+  "en": "Plan",
+  "ko": "플랜"
+ },
+ "saasApp.cancellation.logs.columns.planStatus": {
+  "en": "Plan status",
+  "ko": "플랜 상태"
+ },
+ "saasApp.cancellation.logs.columns.subAccount": {
+  "en": "Sub-Account",
+  "ko": "서브 계정"
+ },
+ "saasApp.cancellation.logs.columns.timestamp": {
+  "en": "Timestamp",
+  "ko": "타임스탬프"
+ },
+ "saasApp.cancellation.logs.columns.user": {
+  "en": "User",
+  "ko": "사용자"
+ },
+ "saasApp.cancellation.logs.description": {
+  "en": "Track cancellation attempts from sub-accounts",
+  "ko": "서브 계정의 취소 시도 추적"
+ },
+ "saasApp.cancellation.logs.empty": {
+  "en": "No activity logs found",
+  "ko": "발견된 활동 로그가 없습니다"
+ },
+ "saasApp.cancellation.logs.headerTitle": {
+  "en": "Activity logs",
+  "ko": "활동 로그"
+ },
+ "saasApp.cancellation.logs.preparingReport": {
+  "en": "Preparing report",
+  "ko": "리포트 준비 중"
+ },
+ "saasApp.cancellation.logs.preparingReportDescription": {
+  "en": "This may take a few minutes",
+  "ko": "몇 분 정도 걸릴 수 있습니다"
+ },
+ "saasApp.cancellation.preview.activityLastMonth": {
+  "en": "Your activity last month",
+  "ko": "지난달 활동"
+ },
+ "saasApp.cancellation.preview.backToAccount": {
+  "en": "Back to account",
+  "ko": "계정으로 돌아가기"
+ },
+ "saasApp.cancellation.preview.cancelSubscription": {
+  "en": "Cancel subscription",
+  "ko": "구독 취소"
+ },
+ "saasApp.cancellation.preview.claimNow": {
+  "en": "Claim now!",
+  "ko": "지금 받기"
+ },
+ "saasApp.cancellation.preview.confirmDescription": {
+  "en": "This will schedule your account to be cancelled at the end of the current billing cycle i.e. {nextInvoiceDate}. You can resume the subscription by aborting the scheduled cancellation anytime.",
+  "ko": "현재 청구 주기 종료일인 {nextInvoiceDate} 에 계정이 취소되도록 예약됩니다. 예약된 취소를 언제든지 중단하여 구독을 재개할 수 있습니다."
+ },
+ "saasApp.cancellation.preview.confirmTitle": {
+  "en": "Confirm account cancellation",
+  "ko": "계정 해지 확인"
+ },
+ "saasApp.cancellation.preview.continueToCancel": {
+  "en": "Continue to cancel",
+  "ko": "취소 계속 진행"
+ },
+ "saasApp.cancellation.preview.couponAppliedBody": {
+  "en": "This coupon has been applied to your subscription, and will take effect on your next subscription charge.",
+  "ko": "이 쿠폰이 구독에 적용되었으며, 다음 구독 결제 시 적용됩니다."
+ },
+ "saasApp.cancellation.preview.couponAppliedTitle": {
+  "en": "Congratulations! Discount coupon has been applied to your account.",
+  "ko": "축하합니다! 할인 쿠폰이 계정에 적용되었습니다."
+ },
+ "saasApp.cancellation.preview.couponAutoApplied": {
+  "en": "This coupon will automatically be applied to your subscription in the next billing cycle.",
+  "ko": "이 쿠폰은 다음 청구 주기에 구독에 자동으로 적용됩니다."
+ },
+ "saasApp.cancellation.preview.discountDescription": {
+  "en": "We would like to offer you a limited time and exclusive discount while you navigate your way to making money!",
+  "ko": "수익을 만들어가는 여정에 함께할 수 있도록 한정된 기간 동안 특별 할인을 제공해 드리고자 합니다!"
+ },
+ "saasApp.cancellation.preview.discountTitle": {
+  "en": "How about a discount?",
+  "ko": "할인은 어떠세요?"
+ },
+ "saasApp.cancellation.preview.feedbackLabel": {
+  "en": "Feedback",
+  "ko": "피드백"
+ },
+ "saasApp.cancellation.preview.feedbackPlaceholder": {
+  "en": "Your feedback is critical to our growth. Let us know where we can improve!",
+  "ko": "여러분의 피드백은 저희의 성장에 매우 중요합니다. 개선할 점을 알려주세요!"
+ },
+ "saasApp.cancellation.preview.limitedTime": {
+  "en": "Limited time offer — act now!",
+  "ko": "기간 한정 오퍼 — 지금 바로 확인하세요"
+ },
+ "saasApp.cancellation.preview.nextInvoiceDateLabel": {
+  "en": "Next invoice date:",
+  "ko": "다음 인보이스 날짜:"
+ },
+ "saasApp.cancellation.preview.offFor": {
+  "en": "Off for",
+  "ko": "할인, 적용 기간"
+ },
+ "saasApp.cancellation.preview.previewBadge": {
+  "en": "Preview mode",
+  "ko": "미리보기 모드"
+ },
+ "saasApp.cancellation.preview.returnToAccount": {
+  "en": "Return to account",
+  "ko": "계정으로 돌아가기"
+ },
+ "saasApp.cancellation.preview.sorryDescription": {
+  "en": "You will be losing out on all features if you proceed to cancel.",
+  "ko": "취소를 진행하면 모든 기능을 잃게 됩니다."
+ },
+ "saasApp.cancellation.preview.sorryTitle": {
+  "en": "We're sorry to see you go!",
+  "ko": "떠나신다니 아쉽습니다!"
+ },
+ "saasApp.cancellation.preview.stats.appointments": {
+  "en": "Booked appointments",
+  "ko": "예약 건수"
+ },
+ "saasApp.cancellation.preview.stats.contacts": {
+  "en": "Contacts",
+  "ko": "연락처"
+ },
+ "saasApp.cancellation.preview.stats.emails": {
+  "en": "Emails sent",
+  "ko": "발송된 이메일"
+ },
+ "saasApp.cancellation.preview.stats.form": {
+  "en": "Form",
+  "ko": "폼"
+ },
+ "saasApp.cancellation.preview.stats.reviews": {
+  "en": "Reviews",
+  "ko": "리뷰"
+ },
+ "saasApp.cancellation.preview.stats.sites": {
+  "en": "Sites",
+  "ko": "사이트"
+ },
+ "saasApp.cancellation.preview.stats.sms": {
+  "en": "SMS sent",
+  "ko": "SMS 발송"
+ },
+ "saasApp.cancellation.preview.stats.talktime": {
+  "en": "Talktime",
+  "ko": "통화 시간"
+ },
+ "saasApp.cancellation.preview.stayOnCurrentPlan": {
+  "en": "Stay on current plan",
+  "ko": "현재 플랜 유지"
+ },
+ "saasApp.cancellation.preview.successBody": {
+  "en": "All your account and sub-account users no longer have access to the platform. All your data will be permanently deleted.",
+  "ko": "계정 및 서브 계정의 모든 사용자가 더 이상 플랫폼에 접근할 수 없습니다. 모든 데이터가 영구적으로 삭제됩니다."
+ },
+ "saasApp.cancellation.preview.successTitle": {
+  "en": "Your subscription has been successfully cancelled.",
+  "ko": "구독이 성공적으로 취소되었습니다."
+ },
+ "saasApp.cancellation.preview.thanksTitle": {
+  "en": "Thanks for being a subscriber",
+  "ko": "구독자가 되어주셔서 감사합니다"
+ },
+ "saasApp.cancellation.preview.toConfirm": {
+  "en": "to confirm",
+  "ko": "을 입력하세요"
+ },
+ "saasApp.cancellation.preview.typeCancelToConfirm": {
+  "en": "Type",
+  "ko": "확인하려면"
+ },
+ "saasApp.cancellation.preview.warningText": {
+  "en": "Are you sure you want to cancel? You'll lose your {planName} benefits, and we can't guarantee the same price when you return.",
+  "ko": "취소하시겠습니까? {planName} 혜택을 잃게 되며, 다시 돌아오실 때 같은 가격을 보장할 수 없습니다."
+ },
+ "saasApp.cancellation.preview.whyTitle": {
+  "en": "Why are you cancelling?",
+  "ko": "취소하시는 이유가 무엇인가요?"
+ },
+ "saasApp.cancellation.settings.addNewReasonPlaceholder": {
+  "en": "Add new reason",
+  "ko": "새 사유 추가"
+ },
+ "saasApp.cancellation.settings.allowCancelDescription": {
+  "en": "Allow clients (account admins) to cancel their subscription.",
+  "ko": "클라이언트(계정 관리자)가 구독을 취소할 수 있도록 허용합니다."
+ },
+ "saasApp.cancellation.settings.allowMultipleDiscounts": {
+  "en": "Allow sub-accounts to receive the discount offer more than once",
+  "ko": "서브 계정이 할인 오퍼를 두 번 이상 받을 수 있도록 허용"
+ },
+ "saasApp.cancellation.settings.discountApplicableHint": {
+  "en": "Discounts applicable starting the next billing cycle of subscribers.",
+  "ko": "할인은 구독자의 다음 청구 주기부터 적용됩니다."
+ },
+ "saasApp.cancellation.settings.discountDisabledDescription": {
+  "en": "You can either enable discount offer or redirect to external page, not both at once.",
+  "ko": "할인 오퍼 활성화 또는 외부 페이지로 리디렉션 중 하나만 선택할 수 있습니다."
+ },
+ "saasApp.cancellation.settings.discountDisabledTitle": {
+  "en": "Discount coupon will be disabled.",
+  "ko": "할인 쿠폰이 비활성화됩니다."
+ },
+ "saasApp.cancellation.settings.discountDurationMonthly": {
+  "en": "Discount duration (monthly plans)",
+  "ko": "할인 기간 (월간 플랜)"
+ },
+ "saasApp.cancellation.settings.discountDurationNote": {
+  "en": "Ex: Discount duration for annual plans will be 1 year by default.",
+  "ko": "예: 연간 플랜의 할인 기간은 기본적으로 1년입니다."
+ },
+ "saasApp.cancellation.settings.discountDurationRange": {
+  "en": "Discount duration must be between 1 and 12 months",
+  "ko": "할인 기간은 1개월에서 12개월 사이여야 합니다"
+ },
+ "saasApp.cancellation.settings.discountPercentage": {
+  "en": "Discount (percentage)",
+  "ko": "할인 (비율)"
+ },
+ "saasApp.cancellation.settings.discountPercentageRange": {
+  "en": "Discount percentage must be between 1 and 100",
+  "ko": "할인율은 1에서 100 사이여야 합니다"
+ },
+ "saasApp.cancellation.settings.enableDiscountOffer": {
+  "en": "Enable discount offer",
+  "ko": "할인 오퍼 활성화"
+ },
+ "saasApp.cancellation.settings.externalRedirectDisabledDescription": {
+  "en": "You can either enable discount offer or redirect to external page, not both at once.",
+  "ko": "할인 오퍼 활성화 또는 외부 페이지로 리디렉션 중 하나만 선택할 수 있습니다."
+ },
+ "saasApp.cancellation.settings.externalRedirectDisabledTitle": {
+  "en": "External redirection will be disabled.",
+  "ko": "외부 리디렉션이 비활성화됩니다."
+ },
+ "saasApp.cancellation.settings.externalUrl": {
+  "en": "External URL",
+  "ko": "외부 URL"
+ },
+ "saasApp.cancellation.settings.headerDescription": {
+  "en": "Configure how customers can cancel their subscriptions and what offers they receive",
+  "ko": "고객이 구독을 취소하는 방법과 고객에게 제공되는 오퍼를 구성하세요"
+ },
+ "saasApp.cancellation.settings.headerTitle": {
+  "en": "Cancellation settings",
+  "ko": "취소 설정"
+ },
+ "saasApp.cancellation.settings.invalidUrl": {
+  "en": "Invalid URL",
+  "ko": "잘못된 URL입니다"
+ },
+ "saasApp.cancellation.settings.manageReason": {
+  "en": "Manage cancellation reasons",
+  "ko": "취소 사유 관리"
+ },
+ "saasApp.cancellation.settings.maxReasonsReached": {
+  "en": "You've reached the maximum of 10 cancellation reasons",
+  "ko": "취소 사유는 최대 10개까지 추가할 수 있습니다"
+ },
+ "saasApp.cancellation.settings.notSupportedV2": {
+  "en": "Not supported for V2 plan subscribers yet.",
+  "ko": "V2 플랜 구독자는 아직 지원되지 않습니다."
+ },
+ "saasApp.cancellation.settings.offerDiscountHint": {
+  "en": "Offer users a discount when they attempt to cancel",
+  "ko": "사용자가 취소하려 할 때 할인 제공"
+ },
+ "saasApp.cancellation.settings.otherAlwaysIncluded": {
+  "en": "\"Other\" is always included for open-ended input.",
+  "ko": "\"기타\" 항목은 자유 입력용으로 항상 포함됩니다."
+ },
+ "saasApp.cancellation.settings.redirectExternalDesc": {
+  "en": "Use your own custom cancellation page instead of the default flow.",
+  "ko": "기본 흐름 대신 직접 만든 커스텀 취소 페이지를 사용합니다."
+ },
+ "saasApp.cancellation.settings.redirectExternalTitle": {
+  "en": "Redirect to external page",
+  "ko": "외부 페이지로 리디렉션"
+ },
+ "saasApp.categories.addNew": {
+  "en": "Add new category",
+  "ko": "새 카테고리 추가"
+ },
+ "saasApp.categories.cannotDeleteTitle": {
+  "en": "You cannot delete this category",
+  "ko": "이 카테고리는 삭제할 수 없습니다"
+ },
+ "saasApp.categories.category": {
+  "en": "Category",
+  "ko": "카테고리"
+ },
+ "saasApp.categories.countLabel": {
+  "en": "Categories",
+  "ko": "카테고리"
+ },
+ "saasApp.categories.createDescription": {
+  "en": "Users can upgrade/downgrade to plans within the same category as their current plan.",
+  "ko": "사용자는 현재 플랜과 같은 카테고리 내의 플랜으로 업그레이드/다운그레이드할 수 있습니다."
+ },
+ "saasApp.categories.createFailed": {
+  "en": "Failed to create category.",
+  "ko": "카테고리를 만들지 못했습니다."
+ },
+ "saasApp.categories.createTitle": {
+  "en": "Create category",
+  "ko": "카테고리 만들기"
+ },
+ "saasApp.categories.currency": {
+  "en": "Currency",
+  "ko": "통화"
+ },
+ "saasApp.categories.currencyChangedInStripe": {
+  "en": "Price currency changed in Stripe",
+  "ko": "Stripe 에서 가격 통화가 변경되었습니다"
+ },
+ "saasApp.categories.currencyImmutable": {
+  "en": "Currency can’t be changed after the category has been created.",
+  "ko": "카테고리를 만든 후에는 통화를 변경할 수 없습니다."
+ },
+ "saasApp.categories.currencyLabel": {
+  "en": "Category currency",
+  "ko": "카테고리 통화"
+ },
+ "saasApp.categories.currencyMismatchMessage": {
+  "en": "The currency for this price was changed in Stripe and does not match the expected currency for this plan category. Kindly revert it to {currency} to avoid any issues.",
+  "ko": "이 가격의 통화가 Stripe에서 변경되어 이 플랜 카테고리에 필요한 통화와 일치하지 않습니다. 문제가 발생하지 않도록 {currency} 통화로 되돌려 주세요."
+ },
+ "saasApp.categories.deleteConfirm": {
+  "en": "Are you sure you want to delete this category? This action cannot be undone.",
+  "ko": "이 카테고리를 삭제하시겠습니까? 이 작업은 되돌릴 수 없습니다."
+ },
+ "saasApp.categories.deleteFailed": {
+  "en": "Failed to delete category.",
+  "ko": "카테고리를 삭제하지 못했습니다."
+ },
+ "saasApp.categories.deleteTitle": {
+  "en": "Delete category",
+  "ko": "카테고리 삭제"
+ },
+ "saasApp.categories.edit": {
+  "en": "Edit",
+  "ko": "편집"
+ },
+ "saasApp.categories.editFailed": {
+  "en": "Failed to edit category.",
+  "ko": "카테고리를 편집하지 못했습니다."
+ },
+ "saasApp.categories.editTitle": {
+  "en": "Edit category",
+  "ko": "카테고리 편집"
+ },
+ "saasApp.categories.enterName": {
+  "en": "Enter category name",
+  "ko": "카테고리 이름 입력"
+ },
+ "saasApp.categories.goBack": {
+  "en": "Go back",
+  "ko": "뒤로 가기"
+ },
+ "saasApp.categories.hasActivePlans": {
+  "en": "You have active plans under this category.",
+  "ko": "이 카테고리에 활성 플랜이 있습니다."
+ },
+ "saasApp.categories.headerDescription": {
+  "en": "Manage plan categories",
+  "ko": "플랜 카테고리 관리"
+ },
+ "saasApp.categories.headerTitle": {
+  "en": "Category",
+  "ko": "카테고리"
+ },
+ "saasApp.categories.invalidCurrency": {
+  "en": "Invalid currency",
+  "ko": "잘못된 통화"
+ },
+ "saasApp.categories.learnMoreAboutBrands": {
+  "en": "Learn more about brands",
+  "ko": "브랜드에 대해 자세히 알아보기"
+ },
+ "saasApp.categories.limitReachedDescription": {
+  "en": "You've reached the limit of 20 categories.",
+  "ko": "카테고리 한도 20개에 도달했습니다."
+ },
+ "saasApp.categories.limitReachedTitle": {
+  "en": "Categories limit reached",
+  "ko": "카테고리 한도에 도달했습니다"
+ },
+ "saasApp.categories.name": {
+  "en": "Category name",
+  "ko": "카테고리 이름"
+ },
+ "saasApp.categories.planCategoryHelper": {
+  "en": "Categories help you organize your plans in a hierarchy to provide an upgrade path to your clients.",
+  "ko": "카테고리를 사용하면 플랜을 계층 구조로 정리하여 클라이언트에게 업그레이드 경로를 제공할 수 있습니다."
+ },
+ "saasApp.categories.searchOtherCurrencies": {
+  "en": "Search to get other currencies",
+  "ko": "검색하여 다른 통화 찾기"
+ },
+ "saasApp.categories.selectBrand": {
+  "en": "Select brand",
+  "ko": "브랜드 선택"
+ },
+ "saasApp.categories.selectBrandTooltip": {
+  "en": "Sub-accounts that subscribe to plans in this category will be associated with the selected brand",
+  "ko": "이 카테고리의 플랜을 구독하는 서브 계정은 선택한 브랜드에 연결됩니다"
+ },
+ "saasApp.categories.selectCategories": {
+  "en": "Select categories",
+  "ko": "카테고리 선택"
+ },
+ "saasApp.categories.selectMultiple": {
+  "en": "You can select multiple",
+  "ko": "여러 개를 선택할 수 있습니다"
+ },
+ "saasApp.categories.selectSubaccount": {
+  "en": "Select sub-account",
+  "ko": "서브 계정 선택"
+ },
+ "saasApp.categories.title": {
+  "en": "Categories",
+  "ko": "카테고리"
+ },
+ "saasApp.common.actions.add": {
+  "en": "Add",
+  "ko": "추가"
+ },
+ "saasApp.common.actions.addCard": {
+  "en": "Add card",
+  "ko": "카드 추가"
+ },
+ "saasApp.common.actions.addYourPlan": {
+  "en": "Add your plan",
+  "ko": "플랜 추가"
+ },
+ "saasApp.common.actions.and": {
+  "en": "and",
+  "ko": "및"
+ },
+ "saasApp.common.actions.apply": {
+  "en": "Apply",
+  "ko": "적용"
+ },
+ "saasApp.common.actions.approve": {
+  "en": "Approve",
+  "ko": "승인"
+ },
+ "saasApp.common.actions.back": {
+  "en": "Back",
+  "ko": "뒤로"
+ },
+ "saasApp.common.actions.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "saasApp.common.actions.change": {
+  "en": "Change",
+  "ko": "변경"
+ },
+ "saasApp.common.actions.clearFilter": {
+  "en": "Clear filter",
+  "ko": "필터 지우기"
+ },
+ "saasApp.common.actions.close": {
+  "en": "Close",
+  "ko": "닫기"
+ },
+ "saasApp.common.actions.confirm": {
+  "en": "Confirm",
+  "ko": "확인"
+ },
+ "saasApp.common.actions.contactSupport": {
+  "en": "Contact support",
+  "ko": "고객 지원 문의"
+ },
+ "saasApp.common.actions.continue": {
+  "en": "Continue",
+  "ko": "계속"
+ },
+ "saasApp.common.actions.decline": {
+  "en": "Decline",
+  "ko": "거부"
+ },
+ "saasApp.common.actions.deleteNow": {
+  "en": "Delete now",
+  "ko": "지금 삭제"
+ },
+ "saasApp.common.actions.deletePlan": {
+  "en": "Delete plan",
+  "ko": "플랜 삭제"
+ },
+ "saasApp.common.actions.discard": {
+  "en": "Discard",
+  "ko": "삭제"
+ },
+ "saasApp.common.actions.download": {
+  "en": "Download",
+  "ko": "다운로드"
+ },
+ "saasApp.common.actions.editDetails": {
+  "en": "Edit details",
+  "ko": "세부 정보 편집"
+ },
+ "saasApp.common.actions.finish": {
+  "en": "Finish",
+  "ko": "완료"
+ },
+ "saasApp.common.actions.for": {
+  "en": "for",
+  "ko": "·"
+ },
+ "saasApp.common.actions.getStarted": {
+  "en": "Get started",
+  "ko": "시작"
+ },
+ "saasApp.common.actions.goBack": {
+  "en": "Go back",
+  "ko": "뒤로 가기"
+ },
+ "saasApp.common.actions.howItWorks": {
+  "en": "How does it work?",
+  "ko": "어떻게 작동하나요?"
+ },
+ "saasApp.common.actions.keepEditing": {
+  "en": "Keep editing",
+  "ko": "계속 편집"
+ },
+ "saasApp.common.actions.learnMore": {
+  "en": "Learn more",
+  "ko": "자세히 보기"
+ },
+ "saasApp.common.actions.next": {
+  "en": "Next",
+  "ko": "다음"
+ },
+ "saasApp.common.actions.notNow": {
+  "en": "Not now",
+  "ko": "나중에"
+ },
+ "saasApp.common.actions.or": {
+  "en": "or",
+  "ko": "또는"
+ },
+ "saasApp.common.actions.payAndSubscribe": {
+  "en": "Pay {amount} & subscribe",
+  "ko": "{amount} 결제 후 구독"
+ },
+ "saasApp.common.actions.payAndSubscribePlain": {
+  "en": "Pay & subscribe",
+  "ko": "결제 후 구독"
+ },
+ "saasApp.common.actions.preview": {
+  "en": "Preview",
+  "ko": "미리보기"
+ },
+ "saasApp.common.actions.previous": {
+  "en": "Previous",
+  "ko": "이전"
+ },
+ "saasApp.common.actions.proceed": {
+  "en": "Proceed",
+  "ko": "진행"
+ },
+ "saasApp.common.actions.referHere": {
+  "en": "refer here",
+  "ko": "여기를 참고하세요"
+ },
+ "saasApp.common.actions.refresh": {
+  "en": "Refresh",
+  "ko": "새로고침"
+ },
+ "saasApp.common.actions.review": {
+  "en": "Review",
+  "ko": "검토"
+ },
+ "saasApp.common.actions.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "saasApp.common.actions.saveChanges": {
+  "en": "Save changes",
+  "ko": "변경사항 저장"
+ },
+ "saasApp.common.actions.search": {
+  "en": "Search",
+  "ko": "검색"
+ },
+ "saasApp.common.actions.selectOne": {
+  "en": "Select one",
+  "ko": "하나만 선택"
+ },
+ "saasApp.common.actions.showLess": {
+  "en": "Show less",
+  "ko": "접기"
+ },
+ "saasApp.common.actions.showMore": {
+  "en": "Show more",
+  "ko": "더 보기"
+ },
+ "saasApp.common.actions.startFreeTrial": {
+  "en": "Start free trial",
+  "ko": "무료 체험 시작"
+ },
+ "saasApp.common.actions.submit": {
+  "en": "Submit",
+  "ko": "제출"
+ },
+ "saasApp.common.actions.subscribe": {
+  "en": "Subscribe",
+  "ko": "구독"
+ },
+ "saasApp.common.actions.update": {
+  "en": "Update",
+  "ko": "업데이트"
+ },
+ "saasApp.common.actions.view": {
+  "en": "View",
+  "ko": "보기"
+ },
+ "saasApp.common.labels.advancedSettings": {
+  "en": "Advanced settings",
+  "ko": "고급 설정"
+ },
+ "saasApp.common.labels.button": {
+  "en": "Button",
+  "ko": "버튼"
+ },
+ "saasApp.common.labels.cancellationSettings": {
+  "en": "Cancellation settings",
+  "ko": "취소 설정"
+ },
+ "saasApp.common.labels.configure": {
+  "en": "Configure",
+  "ko": "구성"
+ },
+ "saasApp.common.labels.downgradeSettings": {
+  "en": "Downgrade settings",
+  "ko": "다운그레이드 설정"
+ },
+ "saasApp.common.labels.here": {
+  "en": "here",
+  "ko": "여기"
+ },
+ "saasApp.common.labels.more": {
+  "en": "more",
+  "ko": "더 보기"
+ },
+ "saasApp.common.labels.needHelp": {
+  "en": "Need help?",
+  "ko": "도움이 필요하신가요?"
+ },
+ "saasApp.common.labels.note": {
+  "en": "Note",
+  "ko": "메모"
+ },
+ "saasApp.common.labels.outOf": {
+  "en": "out of",
+  "ko": "/"
+ },
+ "saasApp.common.labels.plansPricing": {
+  "en": "Plans & pricing",
+  "ko": "플랜 & 가격"
+ },
+ "saasApp.common.labels.security": {
+  "en": "Security",
+  "ko": "보안"
+ },
+ "saasApp.common.labels.testBuild": {
+  "en": "Test build",
+  "ko": "테스트 빌드"
+ },
+ "saasApp.common.loading": {
+  "en": "Loading more...",
+  "ko": "더 불러오는 중..."
+ },
+ "saasApp.common.notifications.acceptLocationRequest": {
+  "en": "Request approved successfully",
+  "ko": "요청이 승인되었습니다"
+ },
+ "saasApp.common.notifications.declineLocationRequest": {
+  "en": "Request declined successfully",
+  "ko": "요청이 거절되었습니다"
+ },
+ "saasApp.common.notifications.deleteStripeProducts.description": {
+  "en": "These changes will update pricing for new clients. Review carefully before saving.",
+  "ko": "이 변경사항은 신규 고객의 가격에 적용됩니다. 저장하기 전에 신중히 검토하세요."
+ },
+ "saasApp.common.notifications.deleteStripeProducts.title": {
+  "en": "Don't delete these products from your Stripe account",
+  "ko": "Stripe 계정에서 이 상품들을 삭제하지 마세요"
+ },
+ "saasApp.common.notifications.error.acceptLocationRequest": {
+  "en": "Something went wrong while accepting the location request",
+  "ko": "서브 계정 요청을 수락하는 중 오류가 발생했습니다"
+ },
+ "saasApp.common.notifications.error.contactLimit.digitValidation": {
+  "en": "The minimum value for the contact limit is 1",
+  "ko": "연락처 한도의 최소값은 1입니다"
+ },
+ "saasApp.common.notifications.error.contactLimit.maxLimitDescription": {
+  "en": "Disable the contact limit to allow unlimited contacts for this plan.",
+  "ko": "이 플랜에서 연락처를 무제한 허용하려면 연락처 한도를 끄세요."
+ },
+ "saasApp.common.notifications.error.contactLimit.maxLimitTitle": {
+  "en": "Please enter a value less than 10 million for the contact limit",
+  "ko": "연락처 한도에 1천만 미만의 값을 입력해 주세요"
+ },
+ "saasApp.common.notifications.error.declineLocationRequest": {
+  "en": "Something went wrong while declining the location request",
+  "ko": "서브 계정 요청을 거절하는 중 오류가 발생했습니다"
+ },
+ "saasApp.common.notifications.error.digitValidation": {
+  "en": "The minimum value is {amount}.",
+  "ko": "최소값은 {amount} 입니다."
+ },
+ "saasApp.common.notifications.error.general": {
+  "en": "Something went wrong. Please try again.",
+  "ko": "문제가 발생했습니다. 다시 시도해 주세요."
+ },
+ "saasApp.common.notifications.error.maximumValueYouCanEnter": {
+  "en": "The maximum value is {amount}.",
+  "ko": "최대값은 {amount} 입니다."
+ },
+ "saasApp.common.notifications.error.minimumValueYouCanEnter": {
+  "en": "The minimum value is {amount}.",
+  "ko": "최소값은 {amount} 입니다."
+ },
+ "saasApp.common.notifications.error.noOfContactsAllowed.description": {
+  "en": "Disable the contact limit to allow unlimited contacts for this plan.",
+  "ko": "이 플랜에서 연락처를 무제한 허용하려면 연락처 한도를 끄세요."
+ },
+ "saasApp.common.notifications.error.noOfContactsAllowed.title": {
+  "en": "Please enter a value less than {amount} for the contact limit",
+  "ko": "연락처 한도에 {amount} 보다 작은 값을 입력해 주세요"
+ },
+ "saasApp.common.notifications.error.noOfUsersAllowed.description": {
+  "en": "Disable the user limit to allow unlimited users for this plan.",
+  "ko": "이 플랜에서 사용자를 무제한으로 허용하려면 사용자 한도를 끄세요."
+ },
+ "saasApp.common.notifications.error.noOfUsersAllowed.title": {
+  "en": "Please enter a value less than {amount} for the user limit",
+  "ko": "사용자 한도에 {amount} 보다 작은 값을 입력해 주세요"
+ },
+ "saasApp.common.notifications.error.paymentMethodNotConnected": {
+  "en": "Payment method not connected. Please connect a payment method.",
+  "ko": "결제 수단이 연결되지 않았습니다. 결제 수단을 연결해 주세요."
+ },
+ "saasApp.common.notifications.error.pleaseChooseCategory": {
+  "en": "Please choose a category.",
+  "ko": "카테고리를 선택해 주세요."
+ },
+ "saasApp.common.notifications.error.pleaseEnterDetails": {
+  "en": "Please enter the required details.",
+  "ko": "필수 정보를 입력해 주세요."
+ },
+ "saasApp.common.notifications.error.pleaseEnterTitleAndDescription": {
+  "en": "Please enter a title and description.",
+  "ko": "제목과 설명을 입력해 주세요."
+ },
+ "saasApp.common.notifications.error.snapshotAttachFailed": {
+  "en": "Failed to attach snapshot.",
+  "ko": "스냅샷을 첨부하지 못했습니다."
+ },
+ "saasApp.common.notifications.error.stripeConnect.description": {
+  "en": "Please connect your Stripe account to use SaaS configurator",
+  "ko": "SaaS 구성 도구를 사용하려면 Stripe 계정을 연결해 주세요"
+ },
+ "saasApp.common.notifications.error.stripeConnect.title": {
+  "en": "Connect Stripe to get started",
+  "ko": "시작하려면 Stripe 연결"
+ },
+ "saasApp.common.notifications.error.userLimit.digitValidation": {
+  "en": "The minimum value for the user limit is 1",
+  "ko": "사용자 한도의 최소값은 1입니다"
+ },
+ "saasApp.common.notifications.error.userLimit.maxLimitDescription": {
+  "en": "Disable the user limit to allow unlimited users for this plan.",
+  "ko": "이 플랜에서 사용자를 무제한으로 허용하려면 사용자 한도를 끄세요."
+ },
+ "saasApp.common.notifications.error.userLimit.maxLimitTitle": {
+  "en": "Please enter a value less than 10 million for the user limit",
+  "ko": "사용자 한도에 1천만 미만의 값을 입력해 주세요"
+ },
+ "saasApp.common.notifications.failedToUpdateComplimentaryCredits": {
+  "en": "Couldn't update complimentary credits. Please try again.",
+  "ko": "무료 크레딧을 업데이트하지 못했습니다. 다시 시도해 주세요."
+ },
+ "saasApp.common.notifications.failedToUpdateFeatures": {
+  "en": "Couldn't update features. Please try again.",
+  "ko": "기능을 업데이트하지 못했습니다. 다시 시도해 주세요."
+ },
+ "saasApp.common.notifications.failedToUpdateMarkup": {
+  "en": "Couldn't update the markup. Please try again.",
+  "ko": "마크업을 업데이트하지 못했습니다. 다시 시도해 주세요."
+ },
+ "saasApp.common.notifications.failedToUpdateTrialPeriod": {
+  "en": "Couldn't update the trial period. Please try again.",
+  "ko": "체험 기간을 업데이트하지 못했습니다. 다시 시도해 주세요."
+ },
+ "saasApp.common.notifications.pleaseEnterValidComplimentaryCredits": {
+  "en": "Please enter a value between {min} and {max}.",
+  "ko": "{min} 에서 {max} 사이의 값을 입력해 주세요."
+ },
+ "saasApp.common.notifications.pleaseEnterValidTrialPeriod": {
+  "en": "Please enter a value between 0 and 365 days.",
+  "ko": "0에서 365일 사이의 값을 입력해 주세요."
+ },
+ "saasApp.common.notifications.snapshotAttachFail": {
+  "en": "Failed to attach snapshot.",
+  "ko": "스냅샷을 첨부하지 못했습니다."
+ },
+ "saasApp.common.notifications.snapshotAttachSuccess": {
+  "en": "Snapshot attached successfully.",
+  "ko": "스냅샷이 첨부되었습니다."
+ },
+ "saasApp.common.notifications.success.general": {
+  "en": "Changes saved successfully.",
+  "ko": "변경사항이 저장되었습니다."
+ },
+ "saasApp.common.notifications.success.linkCopiedToClipboard": {
+  "en": "Link copied to clipboard.",
+  "ko": "링크가 클립보드에 복사되었습니다."
+ },
+ "saasApp.common.notifications.success.locationRequestApproved": {
+  "en": "Request approved successfully",
+  "ko": "요청이 승인되었습니다"
+ },
+ "saasApp.common.notifications.success.locationRequestDeclined": {
+  "en": "Request declined successfully",
+  "ko": "요청이 거절되었습니다"
+ },
+ "saasApp.common.notifications.success.snapshotAttached": {
+  "en": "Snapshot attached successfully.",
+  "ko": "스냅샷이 첨부되었습니다."
+ },
+ "saasApp.common.notifications.success.stripeProductImported": {
+  "en": "Product imported successfully.",
+  "ko": "상품을 가져왔습니다."
+ },
+ "saasApp.common.notifications.success.stripeProductRemoved": {
+  "en": "Product removed successfully.",
+  "ko": "상품이 제거되었습니다."
+ },
+ "saasApp.common.notifications.warning.deleteStripeProducts.description": {
+  "en": "These changes will update pricing for new clients. Review carefully before saving.",
+  "ko": "이 변경사항은 신규 고객의 가격에 적용됩니다. 저장하기 전에 신중히 검토하세요."
+ },
+ "saasApp.common.notifications.warning.deleteStripeProducts.title": {
+  "en": "Don't delete these products from your Stripe account",
+  "ko": "Stripe 계정에서 이 상품들을 삭제하지 마세요"
+ },
+ "saasApp.common.products.2WayTextMessaging.description": {
+  "en": "Provide ability to send and receive sms/calls",
+  "ko": "SMS/통화 송수신 기능 제공"
+ },
+ "saasApp.common.products.2WayTextMessaging.title": {
+  "en": "2 Way Text & Email Conversation",
+  "ko": "양방향 문자 및 이메일 대화"
+ },
+ "saasApp.common.products.adPublishing.description": {
+  "en": "Ad Publishing",
+  "ko": "광고 게시"
+ },
+ "saasApp.common.products.adPublishing.title": {
+  "en": "Ad Publishing",
+  "ko": "광고 게시"
+ },
+ "saasApp.common.products.affiliateManager.description": {
+  "en": "Affiliate Manager",
+  "ko": "제휴 관리자"
+ },
+ "saasApp.common.products.affiliateManager.title": {
+  "en": "Affiliate Manager",
+  "ko": "제휴 관리자"
+ },
+ "saasApp.common.products.allReports.description": {
+  "en": "All Reporting",
+  "ko": "모든 리포팅"
+ },
+ "saasApp.common.products.allReports.title": {
+  "en": "All Reporting",
+  "ko": "모든 리포팅"
+ },
+ "saasApp.common.products.blogs.description": {
+  "en": "Blogs",
+  "ko": "블로그"
+ },
+ "saasApp.common.products.blogs.title": {
+  "en": "Blogs",
+  "ko": "블로그"
+ },
+ "saasApp.common.products.calendar.description": {
+  "en": "Integrate Calendar and Book appointments",
+  "ko": "캘린더를 연동하고 예약을 잡으세요"
+ },
+ "saasApp.common.products.calendar.title": {
+  "en": "Calendar",
+  "ko": "캘린더"
+ },
+ "saasApp.common.products.campaigns.description": {
+  "en": "Campaigns",
+  "ko": "캠페인"
+ },
+ "saasApp.common.products.campaigns.title": {
+  "en": "Campaigns",
+  "ko": "캠페인"
+ },
+ "saasApp.common.products.certificates.description": {
+  "en": "Certificates",
+  "ko": "수료증"
+ },
+ "saasApp.common.products.certificates.title": {
+  "en": "Certificates",
+  "ko": "수료증"
+ },
+ "saasApp.common.products.communities.description": {
+  "en": "Communities",
+  "ko": "커뮤니티"
+ },
+ "saasApp.common.products.communities.title": {
+  "en": "Communities",
+  "ko": "커뮤니티"
+ },
+ "saasApp.common.products.crm.description": {
+  "en": "CRM includes contacts, smartlists and bulk actions",
+  "ko": "CRM에는 연락처, 스마트 리스트, 일괄 작업이 포함됩니다"
+ },
+ "saasApp.common.products.emailMarketing.description": {
+  "en": "Email Marketing",
+  "ko": "이메일 마케팅"
+ },
+ "saasApp.common.products.emailMarketing.title": {
+  "en": "Email Marketing",
+  "ko": "이메일 마케팅"
+ },
+ "saasApp.common.products.facebookMessenger.description": {
+  "en": "Integrate Facebook messenger",
+  "ko": "Facebook Messenger 연동"
+ },
+ "saasApp.common.products.formBuilder.description": {
+  "en": "Form Builder",
+  "ko": "폼 빌더"
+ },
+ "saasApp.common.products.formBuilder.title": {
+  "en": "Form Builder",
+  "ko": "폼 빌더"
+ },
+ "saasApp.common.products.funnels.description": {
+  "en": "Funnels",
+  "ko": "퍼널"
+ },
+ "saasApp.common.products.funnels.title": {
+  "en": "Funnels",
+  "ko": "퍼널"
+ },
+ "saasApp.common.products.gmbCallTracking.title": {
+  "en": "GMB Call Tracking",
+  "ko": "GMB 통화 추적"
+ },
+ "saasApp.common.products.gmbMessaging.description": {
+  "en": "Google My Business Messaging",
+  "ko": "Google My Business 메시징"
+ },
+ "saasApp.common.products.gmbMessaging.title": {
+  "en": "GMB Messaging",
+  "ko": "GMB 메시징"
+ },
+ "saasApp.common.products.invoice.description": {
+  "en": "Invoice",
+  "ko": "인보이스"
+ },
+ "saasApp.common.products.invoice.title": {
+  "en": "Invoice",
+  "ko": "인보이스"
+ },
+ "saasApp.common.products.launchpad.description": {
+  "en": "Launchpad",
+  "ko": "런치패드"
+ },
+ "saasApp.common.products.launchpad.title": {
+  "en": "Launchpad",
+  "ko": "런치패드"
+ },
+ "saasApp.common.products.membership.description": {
+  "en": "Memberships",
+  "ko": "멤버십"
+ },
+ "saasApp.common.products.membership.title": {
+  "en": "Memberships",
+  "ko": "멤버십"
+ },
+ "saasApp.common.products.missedCallTextBack.title": {
+  "en": "Missed Call Text Back",
+  "ko": "부재중 전화 문자 회신"
+ },
+ "saasApp.common.products.opportunities.description": {
+  "en": "Track your customers progress with pipelines",
+  "ko": "파이프라인으로 고객 진행 상황 추적"
+ },
+ "saasApp.common.products.opportunities.title": {
+  "en": "Opportunities",
+  "ko": "기회 관리"
+ },
+ "saasApp.common.products.proposalsEstimates.description": {
+  "en": "Documents & Contracts",
+  "ko": "문서 & 계약"
+ },
+ "saasApp.common.products.proposalsEstimates.title": {
+  "en": "Documents & Contracts",
+  "ko": "문서 & 계약"
+ },
+ "saasApp.common.products.qrCodes.description": {
+  "en": "QR Codes",
+  "ko": "QR 코드"
+ },
+ "saasApp.common.products.qrCodes.title": {
+  "en": "QR Codes",
+  "ko": "QR 코드"
+ },
+ "saasApp.common.products.quizzes.description": {
+  "en": "Quizzes",
+  "ko": "퀴즈"
+ },
+ "saasApp.common.products.quizzes.title": {
+  "en": "Quizzes",
+  "ko": "퀴즈"
+ },
+ "saasApp.common.products.reputationManagement.description": {
+  "en": "Manage reviews",
+  "ko": "리뷰 관리"
+ },
+ "saasApp.common.products.reputationManagement.title": {
+  "en": "Reputation Management",
+  "ko": "평판 관리"
+ },
+ "saasApp.common.products.smsEmailTemplates.description": {
+  "en": "SMS & Email Templates",
+  "ko": "SMS 및 이메일 템플릿"
+ },
+ "saasApp.common.products.smsEmailTemplates.title": {
+  "en": "SMS & Email Templates",
+  "ko": "SMS 및 이메일 템플릿"
+ },
+ "saasApp.common.products.socialPlanner.description": {
+  "en": "Social Planner",
+  "ko": "소셜 플래너"
+ },
+ "saasApp.common.products.socialPlanner.title": {
+  "en": "Social Planner",
+  "ko": "소셜 플래너"
+ },
+ "saasApp.common.products.surveyBuilder.description": {
+  "en": "Survey Builder",
+  "ko": "설문 빌더"
+ },
+ "saasApp.common.products.surveyBuilder.title": {
+  "en": "Survey Builder",
+  "ko": "설문 빌더"
+ },
+ "saasApp.common.products.textToPay.description": {
+  "en": "Send simple text for payments",
+  "ko": "결제용 간단한 문자 보내기"
+ },
+ "saasApp.common.products.textToPay.title": {
+  "en": "Text To Pay",
+  "ko": "결제 문자 보내기"
+ },
+ "saasApp.common.products.triggerLinks.description": {
+  "en": "Trigger Links",
+  "ko": "트리거 링크"
+ },
+ "saasApp.common.products.triggerLinks.title": {
+  "en": "Trigger Links",
+  "ko": "트리거 링크"
+ },
+ "saasApp.common.products.triggers.description": {
+  "en": "Triggers",
+  "ko": "트리거"
+ },
+ "saasApp.common.products.triggers.title": {
+  "en": "Triggers",
+  "ko": "트리거"
+ },
+ "saasApp.common.products.webChat.description": {
+  "en": "Chat Plugin for Support",
+  "ko": "지원용 채팅 플러그인"
+ },
+ "saasApp.common.products.webChat.title": {
+  "en": "Web Chat",
+  "ko": "웹 채팅"
+ },
+ "saasApp.common.products.websites.description": {
+  "en": "Websites",
+  "ko": "웹사이트"
+ },
+ "saasApp.common.products.websites.title": {
+  "en": "Websites",
+  "ko": "웹사이트"
+ },
+ "saasApp.common.products.workflow.description": {
+  "en": "Workflows",
+  "ko": "워크플로우"
+ },
+ "saasApp.common.products.workflow.title": {
+  "en": "Workflows",
+  "ko": "워크플로우"
+ },
+ "saasApp.common.status.comingSoon": {
+  "en": "Coming soon",
+  "ko": "출시 예정"
+ },
+ "saasApp.common.status.connected": {
+  "en": "Connected",
+  "ko": "연결됨"
+ },
+ "saasApp.common.status.copied": {
+  "en": "Copied!",
+  "ko": "복사되었습니다!"
+ },
+ "saasApp.common.status.disconnected": {
+  "en": "Disconnected",
+  "ko": "연결 해제됨"
+ },
+ "saasApp.common.status.error": {
+  "en": "Error",
+  "ko": "오류"
+ },
+ "saasApp.common.status.loading": {
+  "en": "Loading...",
+  "ko": "불러오는 중..."
+ },
+ "saasApp.common.status.notConnected": {
+  "en": "Not connected",
+  "ko": "연결되지 않음"
+ },
+ "saasApp.common.status.verified": {
+  "en": "Verified",
+  "ko": "인증됨"
+ },
+ "saasApp.common.time.months": {
+  "en": "months",
+  "ko": "개월"
+ },
+ "saasApp.common.time.times": {
+  "en": "Times",
+  "ko": "횟수"
+ },
+ "saasApp.createPlan.activateTrial": {
+  "en": "Activate trial period",
+  "ko": "체험 기간 활성화"
+ },
+ "saasApp.createPlan.addCreditHelper": {
+  "en": "When a user signs up, you can offer them free credits to use email & telephony services.",
+  "ko": "사용자가 가입할 때 이메일 및 전화 서비스에 사용할 수 있는 무료 크레딧을 제공할 수 있습니다."
+ },
+ "saasApp.createPlan.addCreditMonthly": {
+  "en": "Add credit on sign-up (monthly)",
+  "ko": "가입 시 크레딧 추가(월간)"
+ },
+ "saasApp.createPlan.attachSelected": {
+  "en": "Attach selected",
+  "ko": "선택 항목 첨부"
+ },
+ "saasApp.createPlan.attachSnapshot": {
+  "en": "Attach snapshot",
+  "ko": "스냅샷 첨부"
+ },
+ "saasApp.createPlan.attachSnapshotDescription": {
+  "en": "Selected snapshot will be automatically added to the newly created sub-account",
+  "ko": "선택한 스냅샷이 새로 생성된 서브 계정에 자동으로 추가됩니다"
+ },
+ "saasApp.createPlan.clickAndDrag": {
+  "en": "Click and drag to reorder",
+  "ko": "클릭하고 드래그하여 순서 변경"
+ },
+ "saasApp.createPlan.contactLimitDescription": {
+  "en": "Maximum contacts allowed in the sub-account",
+  "ko": "서브 계정에서 허용되는 최대 연락처 수"
+ },
+ "saasApp.createPlan.contactLimitTitle": {
+  "en": "Contact limit",
+  "ko": "연락처 한도"
+ },
+ "saasApp.createPlan.customMenuDescription": {
+  "en": "Selected custom menu links will be automatically added for new SaaS clients on this plan.",
+  "ko": "선택한 커스텀 메뉴 링크가 이 플랜의 새 SaaS 클라이언트에 자동으로 추가됩니다."
+ },
+ "saasApp.createPlan.customMenuLinks": {
+  "en": "Custom menu links",
+  "ko": "커스텀 메뉴 링크"
+ },
+ "saasApp.createPlan.days": {
+  "en": "Days",
+  "ko": "일"
+ },
+ "saasApp.createPlan.errors.chooseCategory": {
+  "en": "Choose a category to proceed.",
+  "ko": "계속하려면 카테고리를 선택하세요."
+ },
+ "saasApp.createPlan.errors.enterTitleDescription": {
+  "en": "Enter title and description.",
+  "ko": "제목과 설명을 입력하세요."
+ },
+ "saasApp.createPlan.errors.minimumValue": {
+  "en": "Minimum value you can enter is {value}.",
+  "ko": "입력할 수 있는 최소값은 {value} 입니다."
+ },
+ "saasApp.createPlan.errors.pleaseEnterDetails": {
+  "en": "Please enter details.",
+  "ko": "세부 정보를 입력해 주세요."
+ },
+ "saasApp.createPlan.featuresDescription": {
+  "en": "Choose the features you want to enable for this plan",
+  "ko": "이 플랜에서 활성화할 기능을 선택하세요"
+ },
+ "saasApp.createPlan.featuresStillLoading": {
+  "en": "Features are still loading. Please wait.",
+  "ko": "기능을 불러오는 중입니다. 잠시 기다려 주세요."
+ },
+ "saasApp.createPlan.learnSetupFee": {
+  "en": "Learn how to add one-time setup fee to these plans",
+  "ko": "이 플랜에 일회성 설정 수수료를 추가하는 방법 알아보기"
+ },
+ "saasApp.createPlan.oneTimeCredit": {
+  "en": "One-time credit",
+  "ko": "일회성 크레딧"
+ },
+ "saasApp.createPlan.placePlanQuestion": {
+  "en": "Where do you want to place the plan?",
+  "ko": "플랜을 어디에 배치하시겠습니까?"
+ },
+ "saasApp.createPlan.recurringCreditsMonthly": {
+  "en": "Recurring credits - monthly",
+  "ko": "반복 크레딧 - 월간"
+ },
+ "saasApp.createPlan.rolloverCredits": {
+  "en": "Rollover unused complimentary credits to next month",
+  "ko": "사용하지 않은 무료 크레딧을 다음 달로 이월"
+ },
+ "saasApp.createPlan.selectAtLeastOneFeature": {
+  "en": "Please select at least one feature.",
+  "ko": "기능을 하나 이상 선택해 주세요."
+ },
+ "saasApp.createPlan.selectAtLeastOneFeatureToProceed": {
+  "en": "Please select at least one feature to proceed.",
+  "ko": "계속하려면 기능을 하나 이상 선택해 주세요."
+ },
+ "saasApp.createPlan.selectCategoryToViewPlans": {
+  "en": "Select a category to view plans",
+  "ko": "플랜을 보려면 카테고리를 선택하세요"
+ },
+ "saasApp.createPlan.setUpgradePath": {
+  "en": "Set the upgrade path for plans in this category",
+  "ko": "이 카테고리에 속한 플랜의 업그레이드 경로 설정"
+ },
+ "saasApp.createPlan.steps.addMonthlyAndYearlyPlans": {
+  "en": "Add monthly & yearly plans",
+  "ko": "월간 및 연간 플랜 추가"
+ },
+ "saasApp.createPlan.steps.addons": {
+  "en": "Addons",
+  "ko": "애드온"
+ },
+ "saasApp.createPlan.steps.category": {
+  "en": "Category",
+  "ko": "카테고리"
+ },
+ "saasApp.createPlan.steps.customizeYourPlan": {
+  "en": "Customize your plan",
+  "ko": "플랜 맞춤 설정"
+ },
+ "saasApp.createPlan.steps.featuresAndSnapshot": {
+  "en": "Features and snapshot",
+  "ko": "기능 및 스냅샷"
+ },
+ "saasApp.createPlan.steps.installAppsFromMarketplace": {
+  "en": "Install apps from the marketplace",
+  "ko": "마켓플레이스에서 앱 설치"
+ },
+ "saasApp.createPlan.steps.marketplaceApps": {
+  "en": "Marketplace apps",
+  "ko": "마켓플레이스 앱"
+ },
+ "saasApp.createPlan.steps.nameAndDescription": {
+  "en": "Name and description",
+  "ko": "이름 및 설명"
+ },
+ "saasApp.createPlan.steps.planDetails": {
+  "en": "Plan details",
+  "ko": "플랜 세부 정보"
+ },
+ "saasApp.createPlan.steps.pricingDetails": {
+  "en": "Pricing details",
+  "ko": "가격 상세 정보"
+ },
+ "saasApp.createPlan.steps.rebilling": {
+  "en": "Rebilling",
+  "ko": "재청구"
+ },
+ "saasApp.createPlan.steps.setRebillingMarkups": {
+  "en": "Set rebilling markups",
+  "ko": "재청구 마크업 설정"
+ },
+ "saasApp.createPlan.steps.setTrialDaysAndCredits": {
+  "en": "Set trial days and credits",
+  "ko": "체험 일수 및 크레딧 설정"
+ },
+ "saasApp.createPlan.steps.setUpgradePath": {
+  "en": "Set the upgrade path for plans in this category",
+  "ko": "이 카테고리에 속한 플랜의 업그레이드 경로 설정"
+ },
+ "saasApp.createPlan.steps.trialAndCredits": {
+  "en": "Trial and credits",
+  "ko": "체험 및 크레딧"
+ },
+ "saasApp.createPlan.trialHelper": {
+  "en": "Offer free trial period on this plan.",
+  "ko": "이 플랜에 무료 체험 기간을 제공합니다."
+ },
+ "saasApp.createPlan.userLimitDescription": {
+  "en": "Maximum users allowed in the sub-account",
+  "ko": "서브 계정에서 허용되는 최대 사용자 수"
+ },
+ "saasApp.createPlan.userLimitTitle": {
+  "en": "User limit",
+  "ko": "사용자 한도"
+ },
+ "saasApp.customMenuLinks.title": {
+  "en": "Title",
+  "ko": "제목"
+ },
+ "saasApp.dashboard.description": {
+  "en": "Manage your SaaS plans",
+  "ko": "SaaS 플랜 관리"
+ },
+ "saasApp.dashboard.title": {
+  "en": "SaaS dashboard",
+  "ko": "SaaS 대시보드"
+ },
+ "saasApp.downgrade.logs.activityLogsExported": {
+  "en": "activity logs exported",
+  "ko": "활동 로그를 내보냈습니다"
+ },
+ "saasApp.downgrade.logs.columns.downgradeReason": {
+  "en": "Downgrade reason",
+  "ko": "다운그레이드 사유"
+ },
+ "saasApp.downgrade.logs.columns.fromPlan": {
+  "en": "From plan",
+  "ko": "기존 플랜"
+ },
+ "saasApp.downgrade.logs.columns.nextBillingDate": {
+  "en": "Next billing date",
+  "ko": "다음 청구일"
+ },
+ "saasApp.downgrade.logs.columns.outcome": {
+  "en": "Outcome",
+  "ko": "결과"
+ },
+ "saasApp.downgrade.logs.columns.subAccount": {
+  "en": "Sub-Account",
+  "ko": "서브 계정"
+ },
+ "saasApp.downgrade.logs.columns.timestamp": {
+  "en": "Timestamp",
+  "ko": "타임스탬프"
+ },
+ "saasApp.downgrade.logs.columns.toPlan": {
+  "en": "To plan",
+  "ko": "대상 플랜"
+ },
+ "saasApp.downgrade.logs.columns.user": {
+  "en": "User",
+  "ko": "사용자"
+ },
+ "saasApp.downgrade.logs.description": {
+  "en": "Track downgrade attempts from sub-accounts",
+  "ko": "서브 계정의 다운그레이드 시도 추적"
+ },
+ "saasApp.downgrade.logs.empty": {
+  "en": "No activity logs found",
+  "ko": "발견된 활동 로그가 없습니다"
+ },
+ "saasApp.downgrade.logs.headerTitle": {
+  "en": "Activity logs",
+  "ko": "활동 로그"
+ },
+ "saasApp.downgrade.logs.preparingReport": {
+  "en": "Preparing report",
+  "ko": "리포트 준비 중"
+ },
+ "saasApp.downgrade.logs.preparingReportDescription": {
+  "en": "This may take a few minutes",
+  "ko": "몇 분 정도 걸릴 수 있습니다"
+ },
+ "saasApp.downgrade.settings.addNewReasonPlaceholder": {
+  "en": "Add new reason",
+  "ko": "새 사유 추가"
+ },
+ "saasApp.downgrade.settings.allowDowngradeDescription": {
+  "en": "Allow clients (account admins) to downgrade their subscription.",
+  "ko": "클라이언트(계정 관리자)가 구독을 다운그레이드할 수 있도록 허용합니다."
+ },
+ "saasApp.downgrade.settings.allowMultipleDiscounts": {
+  "en": "Allow sub-accounts to receive the discount offer more than once",
+  "ko": "서브 계정이 할인 오퍼를 두 번 이상 받을 수 있도록 허용"
+ },
+ "saasApp.downgrade.settings.discountApplicableHint": {
+  "en": "Discounts applicable starting the next billing cycle of subscribers.",
+  "ko": "할인은 구독자의 다음 청구 주기부터 적용됩니다."
+ },
+ "saasApp.downgrade.settings.discountDurationMonthly": {
+  "en": "Discount duration (monthly plans)",
+  "ko": "할인 기간 (월간 플랜)"
+ },
+ "saasApp.downgrade.settings.discountDurationNote": {
+  "en": "Ex: Discount duration for annual plans will be 1 year by default.",
+  "ko": "예: 연간 플랜의 할인 기간은 기본적으로 1년입니다."
+ },
+ "saasApp.downgrade.settings.discountDurationRange": {
+  "en": "Discount duration must be between 1 and 12 months",
+  "ko": "할인 기간은 1개월에서 12개월 사이여야 합니다"
+ },
+ "saasApp.downgrade.settings.discountPercentage": {
+  "en": "Discount (percentage)",
+  "ko": "할인 (비율)"
+ },
+ "saasApp.downgrade.settings.discountPercentageRange": {
+  "en": "Discount percentage must be between 1 and 100",
+  "ko": "할인율은 1에서 100 사이여야 합니다"
+ },
+ "saasApp.downgrade.settings.enableDiscountOffer": {
+  "en": "Enable discount offer",
+  "ko": "할인 오퍼 활성화"
+ },
+ "saasApp.downgrade.settings.headerDescription": {
+  "en": "Configure how customers can downgrade their plan and what offers they receive",
+  "ko": "고객이 플랜을 다운그레이드하는 방법과 받을 오퍼를 설정합니다"
+ },
+ "saasApp.downgrade.settings.headerTitle": {
+  "en": "Downgrade plan settings",
+  "ko": "플랜 다운그레이드 설정"
+ },
+ "saasApp.downgrade.settings.manageReason": {
+  "en": "Manage downgrade reasons",
+  "ko": "다운그레이드 사유 관리"
+ },
+ "saasApp.downgrade.settings.notSupportedV2": {
+  "en": "Not supported for V2 plan subscribers yet.",
+  "ko": "V2 플랜 구독자는 아직 지원되지 않습니다."
+ },
+ "saasApp.downgrade.settings.offerDiscountHint": {
+  "en": "Offer users a discount when they attempt to downgrade",
+  "ko": "다운그레이드를 시도하는 사용자에게 할인 제공"
+ },
+ "saasApp.emailTemplates.customizeNow": {
+  "en": "Customize now",
+  "ko": "지금 커스터마이즈"
+ },
+ "saasApp.emailTemplates.customizeWelcomeDescription": {
+  "en": "Customize the email that is sent to all newly added account users, with their login credentials.",
+  "ko": "새로 추가된 모든 계정 사용자에게 로그인 정보와 함께 전송되는 이메일을 맞춤 설정하세요."
+ },
+ "saasApp.emailTemplates.customizeWelcomeTitle": {
+  "en": "Customize your welcome email.",
+  "ko": "환영 이메일을 맞춤 설정하세요."
+ },
+ "saasApp.emailTemplates.description": {
+  "en": "Customize naming convention and welcome email for new sub-accounts",
+  "ko": "새 서브 계정의 이름 규칙과 환영 이메일을 설정하세요"
+ },
+ "saasApp.emailTemplates.locationSelector.customizeEmail": {
+  "en": "Customize email",
+  "ko": "이메일 맞춤 설정"
+ },
+ "saasApp.emailTemplates.locationSelector.description": {
+  "en": "The email template will be saved in a folder under this sub-account.",
+  "ko": "이메일 템플릿은 이 서브 계정 아래 폴더에 저장됩니다."
+ },
+ "saasApp.emailTemplates.locationSelector.folderName": {
+  "en": "Folder name",
+  "ko": "폴더 이름"
+ },
+ "saasApp.emailTemplates.locationSelector.folderValue": {
+  "en": "[Do Not Delete] SaaS Configurations",
+  "ko": "[삭제 금지] SaaS 구성"
+ },
+ "saasApp.emailTemplates.locationSelector.selectSubAccount": {
+  "en": "Select sub-account",
+  "ko": "서브 계정 선택"
+ },
+ "saasApp.emailTemplates.locationSelector.sourceSubAccount": {
+  "en": "Source sub-account",
+  "ko": "원본 서브 계정"
+ },
+ "saasApp.emailTemplates.locationSelector.title": {
+  "en": "Select a sub-account",
+  "ko": "서브 계정 선택"
+ },
+ "saasApp.emailTemplates.locationSelector.warning": {
+  "en": "Please do not delete this email template at its source Sub-Account. Default settings will be restored if you delete it.",
+  "ko": "원본 서브 계정에서 이 이메일 템플릿을 삭제하지 마세요. 삭제하면 기본 설정이 복원됩니다."
+ },
+ "saasApp.emailTemplates.onboardingEmail.description": {
+  "en": "This email will be sent to new SaaS locations",
+  "ko": "이 이메일은 새 SaaS 서브 계정에 전송됩니다"
+ },
+ "saasApp.emailTemplates.onboardingEmail.noTemplateFound": {
+  "en": "No template found",
+  "ko": "템플릿을 찾을 수 없습니다"
+ },
+ "saasApp.emailTemplates.onboardingEmail.title": {
+  "en": "Onboarding email",
+  "ko": "온보딩 이메일"
+ },
+ "saasApp.emailTemplates.secondaryTitle": {
+  "en": "Sub-account onboarding",
+  "ko": "서브 계정 온보딩"
+ },
+ "saasApp.featureListTable.categories": {
+  "en": "categories",
+  "ko": "카테고리"
+ },
+ "saasApp.featureListTable.category": {
+  "en": "category",
+  "ko": "카테고리"
+ },
+ "saasApp.featureListTable.closeFeatureModal": {
+  "en": "Close feature list",
+  "ko": "기능 목록 닫기"
+ },
+ "saasApp.featureListTable.depDomainsCantDisable": {
+  "en": "Can't disable Domains. Other enabled features depend on it.",
+  "ko": "도메인을 끌 수 없습니다. 활성화된 다른 기능이 이 기능에 의존합니다."
+ },
+ "saasApp.featureListTable.depRequiresCoursesCommunitiesAffiliate": {
+  "en": "Requires Courses, Communities, or Affiliate Manager to be enabled.",
+  "ko": "코스, 커뮤니티 또는 제휴 관리자가 활성화되어 있어야 합니다."
+ },
+ "saasApp.featureListTable.depRequiresEmailSystem": {
+  "en": "Requires Email System to be enabled.",
+  "ko": "이메일 시스템이 활성화되어 있어야 합니다."
+ },
+ "saasApp.featureListTable.depRequiresInvoices": {
+  "en": "Requires Invoices to be enabled.",
+  "ko": "인보이스가 활성화되어 있어야 합니다."
+ },
+ "saasApp.featureListTable.depRequiresPaymentsCore": {
+  "en": "Requires Payments Core to be enabled.",
+  "ko": "Payments Core가 활성화되어 있어야 합니다."
+ },
+ "saasApp.featureListTable.description": {
+  "en": "Description",
+  "ko": "설명"
+ },
+ "saasApp.featureListTable.enableAll": {
+  "en": "Enable all",
+  "ko": "모두 활성화"
+ },
+ "saasApp.featureListTable.featureCountSummary": {
+  "en": "{count} features across {categoryCount} {categoryLabel}",
+  "ko": "{categoryCount}개 {categoryLabel} 에 걸친 {count}개 기능"
+ },
+ "saasApp.featureListTable.features": {
+  "en": "Features",
+  "ko": "기능"
+ },
+ "saasApp.featureListTable.loadError": {
+  "en": "Failed to load features. Please try again.",
+  "ko": "기능을 불러오지 못했습니다. 다시 시도해 주세요."
+ },
+ "saasApp.featureListTable.loading": {
+  "en": "Loading features...",
+  "ko": "기능 불러오는 중..."
+ },
+ "saasApp.featureListTable.lockedByPlan": {
+  "en": "This feature can't be disabled because it's included in the {planName} plan.",
+  "ko": "이 기능은 {planName} 플랜에 포함되어 있어 끌 수 없습니다."
+ },
+ "saasApp.featureListTable.lockedGeneric": {
+  "en": "This feature can't be disabled because it's included in a lower plan.",
+  "ko": "이 기능은 하위 플랜에 포함되어 있으므로 끌 수 없습니다."
+ },
+ "saasApp.featureListTable.noFeatures": {
+  "en": "No features available",
+  "ko": "사용 가능한 기능이 없습니다"
+ },
+ "saasApp.featureListTable.noFeaturesFound": {
+  "en": "No features found",
+  "ko": "기능을 찾을 수 없습니다"
+ },
+ "saasApp.featureListTable.noSearchResults": {
+  "en": "No features match your search",
+  "ko": "검색과 일치하는 기능이 없습니다"
+ },
+ "saasApp.featureListTable.retry": {
+  "en": "Retry",
+  "ko": "다시 시도"
+ },
+ "saasApp.featureListTable.searchPlaceholder": {
+  "en": "Search features",
+  "ko": "기능 검색"
+ },
+ "saasApp.featureListTable.selectedCount": {
+  "en": "{count}/{total} selected",
+  "ko": "{count}/{total} 선택됨"
+ },
+ "saasApp.featureListTable.status": {
+  "en": "Status",
+  "ko": "상태"
+ },
+ "saasApp.featureListTable.viewAllFeatures": {
+  "en": "View all features",
+  "ko": "모든 기능 보기"
+ },
+ "saasApp.features.everythingFrom": {
+  "en": "Everything from {planName}",
+  "ko": "{planName} 의 모든 기능"
+ },
+ "saasApp.features.selectToAddMore": {
+  "en": "Select to add more",
+  "ko": "선택하여 더 추가"
+ },
+ "saasApp.lockout.adminAlert": {
+  "en": "You do not have permission to add a payment method. Please reach out to your account admin to add a payment method and resume account.",
+  "ko": "결제 수단을 추가할 권한이 없습니다. 결제 수단을 추가하고 계정을 재개하려면 계정 관리자에게 문의하세요."
+ },
+ "saasApp.lockout.billingPolicy.paragraph1": {
+  "en": "Starting January 1, 2025, all Entresoft members must provide payment information for features that incur charges within the platform. These billable features include, but are not limited to, the Phone System, Email System, Yext, WordPress, and Premium/AI Features. Charges are applied on a per-use basis, with the exception of recurring monthly fees for phone number selection and registration.",
+  "ko": "2025년 1월 1일부터 모든 하이퍼클래스 회원은 플랫폼 내에서 요금이 발생하는 기능에 대해 결제 정보를 제공해야 합니다. 이러한 유료 기능에는 전화 시스템, 이메일 시스템, Yext, WordPress, 프리미엄/AI 기능 등이 포함되며 이에 국한되지 않습니다. 전화번호 선택 및 등록에 대한 월별 반복 요금을 제외하고 요금은 사용량 기준으로 적용됩니다."
+ },
+ "saasApp.lockout.billingPolicy.paragraph2": {
+  "en": "Members are responsible for staying informed about these features and monitoring their charges through the Settings > Billing section in Entresoft.",
+  "ko": "멤버는 이러한 기능에 대해 숙지하고 하이퍼클래스의 설정 > 청구 섹션에서 요금을 확인할 책임이 있습니다."
+ },
+ "saasApp.lockout.billingPolicy.paragraph3": {
+  "en": "If you have a current Credit Balance in your Wallet, this will carry over. Rest assured you will not lose anything.",
+  "ko": "지갑에 현재 크레딧 잔액이 있으면 이월됩니다. 아무것도 잃지 않으니 안심하세요."
+ },
+ "saasApp.lockout.billingPolicy.paragraph4": {
+  "en": "If you have any questions or need assistance, please contact our Support Team at",
+  "ko": "질문이 있거나 도움이 필요하시면 다음으로 지원팀에 문의해 주세요:"
+ },
+ "saasApp.lockout.billingPolicy.paragraph5": {
+  "en": ". A support ticket will be created, and we aim to respond within 48 hours.",
+  "ko": ". 지원 티켓이 생성되며 48시간 이내에 응답해 드리도록 하겠습니다."
+ },
+ "saasApp.lockout.billingPolicy.paragraph6": {
+  "en": "Thank you for your understanding and for choosing Entresoft. Have a great day.",
+  "ko": "양해해 주셔서 감사합니다. 하이퍼클래스를 선택해 주셔서 감사합니다. 좋은 하루 보내세요."
+ },
+ "saasApp.lockout.billingPolicy.title": {
+  "en": "Important Update to Billing Policy – Effective January 1, 2025",
+  "ko": "청구 정책 중요 업데이트 – 2025년 1월 1일부터 적용"
+ },
+ "saasApp.lockout.descRebilling": {
+  "en": "A payment method is required for usage-based billing",
+  "ko": "사용량 기반 청구에는 결제 수단이 필요합니다"
+ },
+ "saasApp.lockout.descSubscribe": {
+  "en": "Add a payment method to subscribe",
+  "ko": "구독하려면 결제 수단을 추가하세요"
+ },
+ "saasApp.lockout.rebillingBanner": {
+  "en": "Get started: simply add your card details to proceed!",
+  "ko": "시작하기: 카드 정보를 추가하면 계속 진행할 수 있습니다"
+ },
+ "saasApp.lockout.settingUp": {
+  "en": "Setting up your account. This might take a few seconds...",
+  "ko": "계정을 설정하고 있습니다. 몇 초 정도 걸릴 수 있습니다..."
+ },
+ "saasApp.lockout.subscribeBanner": {
+  "en": "Get started with your subscription plan: simply add your card details to proceed!",
+  "ko": "구독 플랜을 시작하세요: 카드 정보만 추가하면 진행할 수 있습니다"
+ },
+ "saasApp.lockout.titleAddPayment": {
+  "en": "Add a payment method to continue",
+  "ko": "계속하려면 결제 수단을 추가하세요"
+ },
+ "saasApp.lockout.titleSubscribe": {
+  "en": "Subscribe to continue",
+  "ko": "계속하려면 구독하세요"
+ },
+ "saasApp.lockout.trialBanner": {
+  "en": "Start your {days} day free trial now!",
+  "ko": "지금 {days}일 무료 체험을 시작하세요"
+ },
+ "saasApp.marketplace.appsCount": {
+  "en": "{count} Apps",
+  "ko": "앱 {count}개"
+ },
+ "saasApp.marketplace.autoInstallDisabled.description": {
+  "en": "The app will now only auto-install on new sub-accounts created under this SaaS plan, and not on all sub-accounts.",
+  "ko": "이제 앱은 모든 서브 계정이 아니라 이 SaaS 플랜으로 생성된 새 서브 계정에만 자동 설치됩니다."
+ },
+ "saasApp.marketplace.autoInstallDisabled.title": {
+  "en": "Automatic future installation disabled",
+  "ko": "향후 자동 설치 비활성화됨"
+ },
+ "saasApp.marketplace.columns.actions": {
+  "en": "Actions",
+  "ko": "작업"
+ },
+ "saasApp.marketplace.columns.app": {
+  "en": "App",
+  "ko": "앱"
+ },
+ "saasApp.marketplace.columns.developer": {
+  "en": "Developer",
+  "ko": "개발자"
+ },
+ "saasApp.marketplace.columns.inclusion": {
+  "en": "App inclusion status",
+  "ko": "앱 포함 상태"
+ },
+ "saasApp.marketplace.columns.selectedPlan": {
+  "en": "Selected plan",
+  "ko": "선택한 플랜"
+ },
+ "saasApp.marketplace.columns.tagline": {
+  "en": "App tagline",
+  "ko": "앱 태그라인"
+ },
+ "saasApp.marketplace.deleteApp.description": {
+  "en": "This will not impact existing clients that have this app installed. You will still be charged for their ongoing subscriptions.",
+  "ko": "이 앱이 설치된 기존 고객에는 영향을 주지 않습니다. 해당 고객의 진행 중인 구독료는 계속 청구됩니다."
+ },
+ "saasApp.marketplace.deleteApp.title": {
+  "en": "Are you sure you want to delete this app?",
+  "ko": "이 앱을 삭제하시겠습니까?"
+ },
+ "saasApp.marketplace.discountBadge": {
+  "en": "{percentage}% discount",
+  "ko": "{percentage}% 할인"
+ },
+ "saasApp.marketplace.explore": {
+  "en": "Explore marketplace",
+  "ko": "마켓플레이스 둘러보기"
+ },
+ "saasApp.marketplace.free": {
+  "en": "Free",
+  "ko": "무료"
+ },
+ "saasApp.marketplace.included": {
+  "en": "Included",
+  "ko": "포함됨"
+ },
+ "saasApp.marketplace.installedApps": {
+  "en": "Installed apps",
+  "ko": "설치된 앱"
+ },
+ "saasApp.marketplace.limitTooltip": {
+  "en": "You can only add up to 10 apps.",
+  "ko": "앱은 최대 10개까지만 추가할 수 있습니다."
+ },
+ "saasApp.marketplace.noIntegrations": {
+  "en": "No app integrations",
+  "ko": "앱 연동 없음"
+ },
+ "saasApp.marketplace.noIntegrationsDesc": {
+  "en": "You don't have any app integrations yet. Install apps to sell them as part of SaaS plans.",
+  "ko": "아직 앱 연동이 없습니다. 앱을 설치하여 SaaS 플랜의 일부로 판매하세요."
+ },
+ "saasApp.marketplace.notIncluded": {
+  "en": "Not included",
+  "ko": "포함되지 않음"
+ },
+ "saasApp.marketplace.paid": {
+  "en": "Paid",
+  "ko": "유료"
+ },
+ "saasApp.marketplace.planSelected": {
+  "en": "Plan selected",
+  "ko": "플랜 선택됨"
+ },
+ "saasApp.marketplace.plans.currentPlan": {
+  "en": "Current plan",
+  "ko": "현재 플랜"
+ },
+ "saasApp.marketplace.plans.monthly": {
+  "en": "Monthly",
+  "ko": "월간"
+ },
+ "saasApp.marketplace.plans.noPlans": {
+  "en": "No payment plans available for this app.",
+  "ko": "이 앱에 사용 가능한 결제 플랜이 없습니다."
+ },
+ "saasApp.marketplace.plans.note": {
+  "en": "Note: App subscription fees will be charged to your agency's card. Sub-accounts' cards will not be charged. Please make sure to price your SaaS plan accordingly.",
+  "ko": "참고: 앱 구독 요금은 에이전시 카드로 청구됩니다. 서브 계정 카드에는 청구되지 않습니다. 이에 맞게 SaaS 플랜 가격을 책정하세요."
+ },
+ "saasApp.marketplace.plans.oneTime": {
+  "en": "One time",
+  "ko": "1회"
+ },
+ "saasApp.marketplace.plans.yearly": {
+  "en": "Yearly",
+  "ko": "연간"
+ },
+ "saasApp.marketplace.saveChanges": {
+  "en": "Save changes",
+  "ko": "변경사항 저장"
+ },
+ "saasApp.marketplace.selectPlan": {
+  "en": "Select plan",
+  "ko": "플랜 선택"
+ },
+ "saasApp.marketplace.updateFailed": {
+  "en": "Failed to update marketplace apps.",
+  "ko": "마켓플레이스 앱을 업데이트하지 못했습니다."
+ },
+ "saasApp.marketplace.updated": {
+  "en": "Marketplace apps updated successfully",
+  "ko": "마켓플레이스 앱이 업데이트되었습니다"
+ },
+ "saasApp.modals.unsavedChangesDescription": {
+  "en": "Do you want to discard the changes or keep editing?",
+  "ko": "변경사항을 버리시겠습니까, 아니면 계속 편집하시겠습니까?"
+ },
+ "saasApp.modals.unsavedChangesTitle": {
+  "en": "You have unsaved changes!",
+  "ko": "저장하지 않은 변경사항이 있습니다"
+ },
+ "saasApp.onboarding.choosePath.customCta": {
+  "en": "I will do it myself",
+  "ko": "직접 하겠습니다"
+ },
+ "saasApp.onboarding.choosePath.pricingPlansAlt": {
+  "en": "Pricing plans",
+  "ko": "가격 플랜"
+ },
+ "saasApp.onboarding.choosePath.recommendedCta": {
+  "en": "Create recommended plans",
+  "ko": "추천 플랜 만들기"
+ },
+ "saasApp.onboarding.connectStripe.cta": {
+  "en": "Connect with Stripe",
+  "ko": "Stripe 로 연결"
+ },
+ "saasApp.onboarding.connectStripe.descriptionLine1": {
+  "en": "Millions of businesses of all sizes—from startups to large enterprises—use Stripe's software and",
+  "ko": "스타트업부터 대기업까지 모든 규모의 수백만 비즈니스가 Stripe의 소프트웨어와"
+ },
+ "saasApp.onboarding.connectStripe.descriptionLine2": {
+  "en": "APIs to accept payments, send payouts, and manage their businesses online.",
+  "ko": "API를 사용하여 결제를 받고, 정산을 보내고, 온라인으로 비즈니스를 관리합니다."
+ },
+ "saasApp.onboarding.connectStripe.error": {
+  "en": "Failed to connect to Stripe. Please try again.",
+  "ko": "Stripe 연결에 실패했습니다. 다시 시도해 주세요."
+ },
+ "saasApp.onboarding.connectStripe.title": {
+  "en": "Connect your account to",
+  "ko": "계정 연결 대상"
+ },
+ "saasApp.onboarding.paymentProvider.benefitsTitle": {
+  "en": "Unlock your business potential with SaaS mode",
+  "ko": "SaaS 모드로 비즈니스 잠재력을 열어 보세요"
+ },
+ "saasApp.onboarding.paymentProvider.billingAlt": {
+  "en": "Billing icon",
+  "ko": "청구 아이콘"
+ },
+ "saasApp.onboarding.paymentProvider.billingDescription": {
+  "en": "SaaS Mode automatically handles invoicing and account management for you.",
+  "ko": "SaaS 모드는 인보이스 발행과 계정 관리를 자동으로 처리합니다."
+ },
+ "saasApp.onboarding.paymentProvider.billingTitle": {
+  "en": "Automate your RevOps",
+  "ko": "RevOps 자동화"
+ },
+ "saasApp.onboarding.paymentProvider.getStarted": {
+  "en": "Get started",
+  "ko": "시작"
+ },
+ "saasApp.onboarding.paymentProvider.heroTitle": {
+  "en": "Over 10K agencies are earning $300 million annually through SaaS mode",
+  "ko": "1만 개 이상의 에이전시가 SaaS 모드로 연간 3억 달러를 벌고 있습니다"
+ },
+ "saasApp.onboarding.paymentProvider.illustrationAlt": {
+  "en": "SaaS illustration",
+  "ko": "SaaS 일러스트"
+ },
+ "saasApp.onboarding.paymentProvider.noAccess": {
+  "en": "You do not have the access to perform this action",
+  "ko": "이 작업을 수행할 권한이 없습니다"
+ },
+ "saasApp.onboarding.paymentProvider.resellAlt": {
+  "en": "Resell icon",
+  "ko": "재판매 아이콘"
+ },
+ "saasApp.onboarding.paymentProvider.resellDescription": {
+  "en": "Wallet enables billing on 12+ products including Phone, Email, Automations, AI etc. with up to 10x markup.",
+  "ko": "지갑을 사용하면 전화, 이메일, 자동화, AI 등 12개 이상의 상품에 최대 10배 마크업으로 청구할 수 있습니다."
+ },
+ "saasApp.onboarding.paymentProvider.resellTitle": {
+  "en": "Increase your margins",
+  "ko": "마진을 높이세요"
+ },
+ "saasApp.onboarding.paymentProvider.scaleAlt": {
+  "en": "Scale icon",
+  "ko": "확장 아이콘"
+ },
+ "saasApp.onboarding.paymentProvider.scaleDescription": {
+  "en": "SaaS Mode increases client retention and provides a predictable revenue stream.",
+  "ko": "SaaS 모드는 고객 유지율을 높이고 예측 가능한 수익원을 제공합니다."
+ },
+ "saasApp.onboarding.paymentProvider.scaleTitle": {
+  "en": "Scale your revenue",
+  "ko": "매출을 확장하세요"
+ },
+ "saasApp.onboarding.paymentProviderList.connect": {
+  "en": "Connect",
+  "ko": "연결"
+ },
+ "saasApp.onboarding.paymentProviderList.description": {
+  "en": "Select a payment processor to add a subscription and manage transactions",
+  "ko": "구독을 추가하고 거래를 관리할 결제 처리업체를 선택하세요"
+ },
+ "saasApp.onboarding.paymentProviderList.providers.authorize.description": {
+  "en": "With your business account, you get access to diverse tools to help run your business and help it grow.",
+  "ko": "비즈니스 계정으로 비즈니스 운영과 성장에 도움이 되는 다양한 도구를 이용할 수 있습니다."
+ },
+ "saasApp.onboarding.paymentProviderList.providers.nmi.description": {
+  "en": "With your business account, you get access to diverse tools to help run your business and help it grow.",
+  "ko": "비즈니스 계정으로 비즈니스 운영과 성장에 도움이 되는 다양한 도구를 이용할 수 있습니다."
+ },
+ "saasApp.onboarding.paymentProviderList.providers.square.description": {
+  "en": "From small business to large enterprises, Square provides all the tools you need to start, run, and grow your business.",
+  "ko": "소규모 비즈니스부터 대기업까지, Square는 비즈니스를 시작하고 운영하고 성장시키는 데 필요한 모든 도구를 제공합니다."
+ },
+ "saasApp.onboarding.paymentProviderList.providers.stripe.description": {
+  "en": "Millions of businesses of all sizes—from startups to large enterprises—use Stripe's software and APIs to accept payments, send payouts, and manage their businesses online.",
+  "ko": "스타트업부터 대기업까지 모든 규모의 수백만 비즈니스가 Stripe의 소프트웨어와 API를 사용하여 결제를 받고, 정산을 보내고, 온라인으로 비즈니스를 관리합니다."
+ },
+ "saasApp.onboarding.paymentProviderList.title": {
+  "en": "Choose your payment provider",
+  "ko": "결제 제공업체 선택"
+ },
+ "saasApp.onboarding.planDetailCard.monthly": {
+  "en": "Monthly",
+  "ko": "월간"
+ },
+ "saasApp.onboarding.planDetailCard.perMonth": {
+  "en": "/month",
+  "ko": "/월"
+ },
+ "saasApp.onboarding.planDetailCard.perYear": {
+  "en": "/year",
+  "ko": "/년"
+ },
+ "saasApp.onboarding.planDetailCard.yearly": {
+  "en": "Yearly",
+  "ko": "연간"
+ },
+ "saasApp.onboarding.planSaleLinkCopyCard.clickToGenerate": {
+  "en": "Click to generate",
+  "ko": "클릭하여 생성"
+ },
+ "saasApp.onboarding.planSaleLinkCopyCard.monthly": {
+  "en": "Monthly",
+  "ko": "월간"
+ },
+ "saasApp.onboarding.planSaleLinkCopyCard.yearly": {
+  "en": "Yearly",
+  "ko": "연간"
+ },
+ "saasApp.onboarding.recommendedPlanDetailCard.complimentaryCredits": {
+  "en": "Complimentary credits",
+  "ko": "무료 크레딧"
+ },
+ "saasApp.onboarding.recommendedPlanDetailCard.daysFreePeriod": {
+  "en": "Days free period",
+  "ko": "무료 기간(일)"
+ },
+ "saasApp.onboarding.recommendedPlanDetailCard.featuresSubtitle": {
+  "en": "Everything we provide in this plan",
+  "ko": "이 플랜에서 제공하는 모든 것"
+ },
+ "saasApp.onboarding.recommendedPlanDetailCard.month": {
+  "en": "month",
+  "ko": "월"
+ },
+ "saasApp.onboarding.recommendedPlanDetailCard.year": {
+  "en": "year",
+  "ko": "년"
+ },
+ "saasApp.onboarding.recommendedPlans.back": {
+  "en": "Back",
+  "ko": "뒤로"
+ },
+ "saasApp.onboarding.recommendedPlans.continue": {
+  "en": "Continue",
+  "ko": "계속"
+ },
+ "saasApp.onboarding.recommendedPlans.defaults.premium.features.0": {
+  "en": "Everything in Professional",
+  "ko": "프로페셔널의 모든 기능"
+ },
+ "saasApp.onboarding.recommendedPlans.defaults.premium.features.1": {
+  "en": "Funnels",
+  "ko": "퍼널"
+ },
+ "saasApp.onboarding.recommendedPlans.defaults.premium.features.10": {
+  "en": "Triggers",
+  "ko": "트리거"
+ },
+ "saasApp.onboarding.recommendedPlans.defaults.premium.features.11": {
+  "en": "Campaigns",
+  "ko": "캠페인"
+ },
+ "saasApp.onboarding.recommendedPlans.defaults.premium.features.12": {
+  "en": "Social Planner",
+  "ko": "소셜 플래너"
+ },
+ "saasApp.onboarding.recommendedPlans.defaults.premium.features.13": {
+  "en": "Invoice",
+  "ko": "인보이스"
+ },
+ "saasApp.onboarding.recommendedPlans.defaults.premium.features.14": {
+  "en": "Blogs",
+  "ko": "블로그"
+ },
+ "saasApp.onboarding.recommendedPlans.defaults.premium.features.15": {
+  "en": "Affiliate Manager",
+  "ko": "제휴 관리자"
+ },
+ "saasApp.onboarding.recommendedPlans.defaults.premium.features.2": {
+  "en": "Membership",
+  "ko": "멤버십"
+ },
+ "saasApp.onboarding.recommendedPlans.defaults.premium.features.3": {
+  "en": "Websites",
+  "ko": "웹사이트"
+ },
+ "saasApp.onboarding.recommendedPlans.defaults.premium.features.4": {
+  "en": "Workflow",
+  "ko": "워크플로우"
+ },
+ "saasApp.onboarding.recommendedPlans.defaults.premium.features.5": {
+  "en": "Form Builder",
+  "ko": "폼 빌더"
+ },
+ "saasApp.onboarding.recommendedPlans.defaults.premium.features.6": {
+  "en": "Survey Builder",
+  "ko": "설문 빌더"
+ },
+ "saasApp.onboarding.recommendedPlans.defaults.premium.features.7": {
+  "en": "Trigger Links",
+  "ko": "트리거 링크"
+ },
+ "saasApp.onboarding.recommendedPlans.defaults.premium.features.8": {
+  "en": "SMS Email Templates",
+  "ko": "SMS 이메일 템플릿"
+ },
+ "saasApp.onboarding.recommendedPlans.defaults.premium.features.9": {
+  "en": "All Reports",
+  "ko": "모든 리포트"
+ },
+ "saasApp.onboarding.recommendedPlans.defaults.premium.name": {
+  "en": "Premium",
+  "ko": "프리미엄"
+ },
+ "saasApp.onboarding.recommendedPlans.defaults.professional.features.0": {
+  "en": "Everything in Standard",
+  "ko": "스탠다드의 모든 기능"
+ },
+ "saasApp.onboarding.recommendedPlans.defaults.professional.features.1": {
+  "en": "Calendar",
+  "ko": "캘린더"
+ },
+ "saasApp.onboarding.recommendedPlans.defaults.professional.features.3": {
+  "en": "Opportunities",
+  "ko": "기회 관리"
+ },
+ "saasApp.onboarding.recommendedPlans.defaults.professional.features.4": {
+  "en": "Email Marketing",
+  "ko": "이메일 마케팅"
+ },
+ "saasApp.onboarding.recommendedPlans.defaults.professional.name": {
+  "en": "Professional",
+  "ko": "프로페셔널"
+ },
+ "saasApp.onboarding.recommendedPlans.defaults.standard.features.0": {
+  "en": "2 Way Text Messaging",
+  "ko": "양방향 문자 메시지"
+ },
+ "saasApp.onboarding.recommendedPlans.defaults.standard.features.1": {
+  "en": "GMB Messaging",
+  "ko": "GMB 메시징"
+ },
+ "saasApp.onboarding.recommendedPlans.defaults.standard.features.2": {
+  "en": "Web Chat",
+  "ko": "웹 채팅"
+ },
+ "saasApp.onboarding.recommendedPlans.defaults.standard.features.3": {
+  "en": "Reputation Management",
+  "ko": "평판 관리"
+ },
+ "saasApp.onboarding.recommendedPlans.defaults.standard.features.4": {
+  "en": "Facebook Messenger",
+  "ko": "Facebook 메신저"
+ },
+ "saasApp.onboarding.recommendedPlans.defaults.standard.features.5": {
+  "en": "GMB Call Tracking",
+  "ko": "GMB 통화 추적"
+ },
+ "saasApp.onboarding.recommendedPlans.defaults.standard.features.6": {
+  "en": "Missed Call Text Back",
+  "ko": "부재중 전화 문자 회신"
+ },
+ "saasApp.onboarding.recommendedPlans.defaults.standard.features.7": {
+  "en": "Text to Pay",
+  "ko": "결제 문자 보내기"
+ },
+ "saasApp.onboarding.recommendedPlans.defaults.standard.features.8": {
+  "en": "Launchpad",
+  "ko": "런치패드"
+ },
+ "saasApp.onboarding.recommendedPlans.defaults.standard.name": {
+  "en": "Standard",
+  "ko": "스탠다드"
+ },
+ "saasApp.onboarding.recommendedPlans.title": {
+  "en": "Recommended plans",
+  "ko": "추천 플랜"
+ },
+ "saasApp.onboarding.selectCategoryModal.description": {
+  "en": "Choose from the list of currencies",
+  "ko": "통화 목록에서 선택"
+ },
+ "saasApp.onboarding.selectCategoryModal.errorCreateCategory": {
+  "en": "Failed to create category",
+  "ko": "카테고리를 만들지 못했습니다"
+ },
+ "saasApp.onboarding.selectCategoryModal.fieldLabel": {
+  "en": "Select currency",
+  "ko": "통화 선택"
+ },
+ "saasApp.onboarding.selectCategoryModal.placeholder": {
+  "en": "Select currency",
+  "ko": "통화 선택"
+ },
+ "saasApp.onboarding.selectCategoryModal.searchHint": {
+  "en": "Search to get other currencies",
+  "ko": "검색하여 다른 통화 찾기"
+ },
+ "saasApp.onboarding.selectCategoryModal.title": {
+  "en": "Select currency",
+  "ko": "통화 선택"
+ },
+ "saasApp.onboarding.selectSubaccount.alertContent": {
+  "en": "All your SaaS products and subscriptions going forward will be created and managed inside the Payments module of the sub-account you select here. Please make sure that only those who need to manage SaaS have access to this sub-account.",
+  "ko": "앞으로 모든 SaaS 상품과 구독은 여기서 선택한 서브 계정의 결제 모듈 안에서 생성되고 관리됩니다. SaaS 를 관리해야 하는 사람만 이 서브 계정에 접근할 수 있도록 해 주세요."
+ },
+ "saasApp.onboarding.selectSubaccount.alertTitle": {
+  "en": "Please select your agency sub-account, and not your client's sub-account.",
+  "ko": "클라이언트의 서브 계정이 아닌 에이전시 서브 계정을 선택해 주세요."
+ },
+ "saasApp.onboarding.selectSubaccount.badge": {
+  "en": "Agency Sub-account",
+  "ko": "에이전시 서브 계정"
+ },
+ "saasApp.onboarding.selectSubaccount.checkboxLabel": {
+  "en": "Mark selected sub-account as an agency sub-account",
+  "ko": "선택한 서브 계정을 에이전시 서브 계정으로 표시"
+ },
+ "saasApp.onboarding.selectSubaccount.description": {
+  "en": "This sub-account will be used to create SaaS products and manage subscriptions",
+  "ko": "이 서브 계정은 SaaS 상품을 만들고 구독을 관리하는 데 사용됩니다"
+ },
+ "saasApp.onboarding.selectSubaccount.illustrationAlt": {
+  "en": "Select sub-account",
+  "ko": "서브 계정 선택"
+ },
+ "saasApp.onboarding.selectSubaccount.next": {
+  "en": "Next",
+  "ko": "다음"
+ },
+ "saasApp.onboarding.selectSubaccount.noName": {
+  "en": "No name provided",
+  "ko": "이름이 제공되지 않음"
+ },
+ "saasApp.onboarding.selectSubaccount.placeholder": {
+  "en": "Search a sub-account",
+  "ko": "서브 계정 검색"
+ },
+ "saasApp.onboarding.selectSubaccount.selectLabel": {
+  "en": "Select sub-account",
+  "ko": "서브 계정 선택"
+ },
+ "saasApp.onboarding.selectSubaccount.title": {
+  "en": "Select your agency sub-account",
+  "ko": "에이전시 서브 계정 선택"
+ },
+ "saasApp.onboarding.steps.buildPricingPage": {
+  "en": "Build pricing page",
+  "ko": "가격 페이지 만들기"
+ },
+ "saasApp.onboarding.steps.configurePlanCta": {
+  "en": "Configure plan",
+  "ko": "플랜 구성"
+ },
+ "saasApp.onboarding.steps.configureSaasPlan": {
+  "en": "Configure SaaS plan",
+  "ko": "SaaS 플랜 구성"
+ },
+ "saasApp.onboarding.steps.configureSaasPlanDescription": {
+  "en": "Set up your pricing tiers and service levels",
+  "ko": "가격 등급과 서비스 수준 설정"
+ },
+ "saasApp.onboarding.steps.connectPaymentProvider": {
+  "en": "Connect payment provider",
+  "ko": "결제 제공업체 연결"
+ },
+ "saasApp.onboarding.steps.generateLinkCta": {
+  "en": "Generate link",
+  "ko": "링크 생성"
+ },
+ "saasApp.onboarding.steps.generateLinkDescription": {
+  "en": "Create a direct payment link",
+  "ko": "직접 결제 링크 만들기"
+ },
+ "saasApp.onboarding.steps.goToConfigurator": {
+  "en": "Go to SaaS configurator",
+  "ko": "SaaS 구성 도구로 이동"
+ },
+ "saasApp.onboarding.steps.noAccess": {
+  "en": "You do not have the access to perform this action",
+  "ko": "이 작업을 수행할 권한이 없습니다"
+ },
+ "saasApp.onboarding.steps.plansEmptyWarning": {
+  "en": "⚠️ Plans array is empty! Cannot generate links.",
+  "ko": "⚠️ 플랜 배열이 비어 있습니다. 링크를 생성할 수 없습니다."
+ },
+ "saasApp.onboarding.steps.selectCurrency": {
+  "en": "Select currency",
+  "ko": "통화 선택"
+ },
+ "saasApp.onboarding.steps.selectCurrencyCta": {
+  "en": "Select currency",
+  "ko": "통화 선택"
+ },
+ "saasApp.onboarding.steps.title": {
+  "en": "Let's get you started!",
+  "ko": "시작해 볼까요?"
+ },
+ "saasApp.payment.addNewCard": {
+  "en": "Add new card",
+  "ko": "새 카드 추가"
+ },
+ "saasApp.payment.addPaymentMethod": {
+  "en": "Add a payment method",
+  "ko": "결제 수단 추가"
+ },
+ "saasApp.payment.confirmDeleteCard": {
+  "en": "Do you really want to delete this card?",
+  "ko": "이 카드를 정말 삭제하시겠습니까?"
+ },
+ "saasApp.payment.deleteCard": {
+  "en": "Delete card",
+  "ko": "카드 삭제"
+ },
+ "saasApp.payment.expires": {
+  "en": "Expires {month}/{year}",
+  "ko": "만료 {month}/{year}"
+ },
+ "saasApp.payment.manageMethodsSubtitle": {
+  "en": "Set primary card or add/delete cards",
+  "ko": "기본 카드 설정 또는 카드 추가/삭제"
+ },
+ "saasApp.payment.manageMethodsTitle": {
+  "en": "Manage your payment methods",
+  "ko": "결제 수단 관리"
+ },
+ "saasApp.payment.noCardSelected": {
+  "en": "Please select a card to continue",
+  "ko": "계속하려면 카드를 선택해 주세요"
+ },
+ "saasApp.payment.primaryCard": {
+  "en": "Primary card",
+  "ko": "기본 카드"
+ },
+ "saasApp.payment.providePaymentDetails": {
+  "en": "Provide your payment details",
+  "ko": "결제 정보를 입력해 주세요"
+ },
+ "saasApp.payment.rateLimitReached": {
+  "en": "It seems like you've reached the maximum number of attempts allowed for adding cards today. Please try again after 24 hours.",
+  "ko": "오늘 카드 추가를 위해 허용된 최대 시도 횟수에 도달한 것 같습니다. 24시간 후에 다시 시도해 주세요."
+ },
+ "saasApp.payment.selectPaymentMethod": {
+  "en": "Select a payment method",
+  "ko": "결제 수단을 선택하세요"
+ },
+ "saasApp.payment.setAsPrimary": {
+  "en": "Set as primary",
+  "ko": "기본으로 설정"
+ },
+ "saasApp.payment.stripe3DSDescription": {
+  "en": "Add new card: 3DS verification",
+  "ko": "새 카드 추가: 3DS 인증"
+ },
+ "saasApp.payment.verifyAndPay": {
+  "en": "Verify and pay",
+  "ko": "확인 후 결제"
+ },
+ "saasApp.plan.addonsTab": {
+  "en": "Addons",
+  "ko": "애드온"
+ },
+ "saasApp.plan.backToAllPlans": {
+  "en": "Back to all plans",
+  "ko": "모든 플랜으로 돌아가기"
+ },
+ "saasApp.plan.below": {
+  "en": "below",
+  "ko": "아래"
+ },
+ "saasApp.plan.billedAnnually": {
+  "en": "Billed annually",
+  "ko": "연간 결제"
+ },
+ "saasApp.plan.billedMonthly": {
+  "en": "Billed monthly",
+  "ko": "월별 결제"
+ },
+ "saasApp.plan.cannotDeleteBody": {
+  "en": "One or more sub-accounts have active subscriptions on this plan. Please cancel or modify their plan before proceeding.",
+  "ko": "하나 이상의 서브 계정이 이 플랜을 활성 구독 중입니다. 진행하기 전에 해당 플랜을 취소하거나 변경해 주세요."
+ },
+ "saasApp.plan.cannotDeleteTitle": {
+  "en": "You cannot delete this plan",
+  "ko": "이 플랜은 삭제할 수 없습니다"
+ },
+ "saasApp.plan.complimentaryCredits": {
+  "en": "Complimentary credits",
+  "ko": "무료 크레딧"
+ },
+ "saasApp.plan.confirmByTyping": {
+  "en": "Confirm by typing",
+  "ko": "입력하여 확인"
+ },
+ "saasApp.plan.contacts": {
+  "en": "Contacts",
+  "ko": "연락처"
+ },
+ "saasApp.plan.createDescription": {
+  "en": "Manage your SaaS plan and preferences here.",
+  "ko": "여기에서 SaaS 플랜과 환경설정을 관리하세요."
+ },
+ "saasApp.plan.createTitle": {
+  "en": "Create your plan",
+  "ko": "플랜 만들기"
+ },
+ "saasApp.plan.deleteConfirm": {
+  "en": "Are you sure you want to delete this plan?",
+  "ko": "이 플랜을 삭제하시겠습니까?"
+ },
+ "saasApp.plan.deleteSaasPlanTitle": {
+  "en": "Delete SaaS Plan “{planTitle}”",
+  "ko": "SaaS 플랜 “{planTitle}” 삭제"
+ },
+ "saasApp.plan.deleteWarning.content": {
+  "en": "Stripe subscriptions can be checked",
+  "ko": "Stripe 구독을 확인할 수 있습니다"
+ },
+ "saasApp.plan.deleteWarning.title": {
+  "en": "This will not cancel active subscriptions of this plan (if any) on Stripe and your customers will keep getting charged.",
+  "ko": "이 작업은 Stripe 에서 이 플랜의 활성 구독 (있는 경우) 을 취소하지 않으며 고객에게 계속 청구됩니다."
+ },
+ "saasApp.plan.detailsTab": {
+  "en": "Plan details",
+  "ko": "플랜 세부 정보"
+ },
+ "saasApp.plan.everythingInPlan": {
+  "en": "Everything we provide in this plan",
+  "ko": "이 플랜에서 제공하는 모든 것"
+ },
+ "saasApp.plan.features": {
+  "en": "Features",
+  "ko": "기능"
+ },
+ "saasApp.plan.featuresTab": {
+  "en": "Features",
+  "ko": "기능"
+ },
+ "saasApp.plan.form.descriptionHelp": {
+  "en": "This description will not be visible to your clients.",
+  "ko": "이 설명은 고객사에게 표시되지 않습니다."
+ },
+ "saasApp.plan.form.descriptionLabel": {
+  "en": "Description",
+  "ko": "설명"
+ },
+ "saasApp.plan.form.nameLabel": {
+  "en": "Plan name",
+  "ko": "플랜 이름"
+ },
+ "saasApp.plan.freeTrial": {
+  "en": "Free trial",
+  "ko": "무료 체험"
+ },
+ "saasApp.plan.imported": {
+  "en": "Imported: {name}",
+  "ko": "가져옴: {name}"
+ },
+ "saasApp.plan.marketplaceAppsTab": {
+  "en": "Marketplace apps",
+  "ko": "마켓플레이스 앱"
+ },
+ "saasApp.plan.moreDetailsBelow": {
+  "en": "Check more details below",
+  "ko": "아래에서 자세한 내용을 확인하세요"
+ },
+ "saasApp.plan.noSnapshotAttached": {
+  "en": "No snapshot attached",
+  "ko": "첨부된 스냅샷 없음"
+ },
+ "saasApp.plan.perMonth": {
+  "en": "per month",
+  "ko": "월"
+ },
+ "saasApp.plan.perYear": {
+  "en": "per year",
+  "ko": "연"
+ },
+ "saasApp.plan.pricingTab": {
+  "en": "Pricing",
+  "ko": "가격"
+ },
+ "saasApp.plan.rebillingTab": {
+  "en": "Rebilling",
+  "ko": "재청구"
+ },
+ "saasApp.plan.subAccountsPageLink": {
+  "en": "Go to sub-accounts page.",
+  "ko": "서브 계정 페이지로 이동합니다."
+ },
+ "saasApp.plan.trialAndCreditsTab": {
+  "en": "Trial and credits",
+  "ko": "체험 및 크레딧"
+ },
+ "saasApp.plan.trialDaysPeriod": {
+  "en": "Days trial period",
+  "ko": "일 체험 기간"
+ },
+ "saasApp.plan.unlimited": {
+  "en": "Unlimited",
+  "ko": "무제한"
+ },
+ "saasApp.plan.updateTitle": {
+  "en": "Update {planName} plan",
+  "ko": "{planName} 플랜 업데이트"
+ },
+ "saasApp.plan.usageBillingTab": {
+  "en": "Usage billing",
+  "ko": "사용량 청구"
+ },
+ "saasApp.plan.users": {
+  "en": "Users",
+  "ko": "사용자"
+ },
+ "saasApp.price.annualLabel": {
+  "en": "Annual",
+  "ko": "연간"
+ },
+ "saasApp.price.chargedEvery": {
+  "en": "will be charged every {interval} to customer",
+  "ko": "{interval} 마다 고객에게 청구됩니다"
+ },
+ "saasApp.price.copiedDirectSaleLink": {
+  "en": "Copied direct sale link",
+  "ko": "직접 판매 링크가 복사되었습니다"
+ },
+ "saasApp.price.copySaleLink": {
+  "en": "Sale link",
+  "ko": "판매 링크"
+ },
+ "saasApp.price.failedCopyDirectSaleLink": {
+  "en": "Couldn't copy the direct sale link.",
+  "ko": "직접 판매 링크를 복사하지 못했습니다."
+ },
+ "saasApp.price.generatingDirectSaleLink": {
+  "en": "Generating direct sale link",
+  "ko": "직접 판매 링크 생성 중"
+ },
+ "saasApp.price.maxValue": {
+  "en": "Maximum value you can enter is {max}.",
+  "ko": "입력할 수 있는 최대값은 {max} 입니다."
+ },
+ "saasApp.price.minValue": {
+  "en": "Minimum value you can enter is {min}.",
+  "ko": "입력할 수 있는 최소값은 {min} 입니다."
+ },
+ "saasApp.price.monthlyLabel": {
+  "en": "Monthly",
+  "ko": "월간"
+ },
+ "saasApp.price.price": {
+  "en": "Price",
+  "ko": "가격"
+ },
+ "saasApp.price.priceId": {
+  "en": "Price ID",
+  "ko": "가격 ID"
+ },
+ "saasApp.price.productId": {
+  "en": "Product ID",
+  "ko": "상품 ID"
+ },
+ "saasApp.price.setPlanDetails": {
+  "en": "Set your {type} plan details",
+  "ko": "{type} 플랜 세부 정보 설정"
+ },
+ "saasApp.price.stripePriceId": {
+  "en": "Stripe price ID",
+  "ko": "Stripe 가격 ID"
+ },
+ "saasApp.pricing.empty.addPlansDescription": {
+  "en": "Create SaaS plans to start onboarding clients.",
+  "ko": "SaaS 플랜을 만들어 클라이언트 온보딩을 시작하세요."
+ },
+ "saasApp.pricing.empty.addPlansTitle": {
+  "en": "Add plans to get started",
+  "ko": "플랜을 추가하여 시작하세요"
+ },
+ "saasApp.pricing.failedToDeletePlan": {
+  "en": "Couldn't delete the plan. Please try again.",
+  "ko": "플랜을 삭제하지 못했습니다. 다시 시도해 주세요."
+ },
+ "saasApp.pricing.failedToUpdatePrice": {
+  "en": "Couldn't update the price. Please try again.",
+  "ko": "가격을 업데이트하지 못했습니다. 다시 시도해 주세요."
+ },
+ "saasApp.pricing.headerDescription": {
+  "en": "You can either offer our recommended plans or build your own packages.",
+  "ko": "추천 플랜을 제공하거나 직접 패키지를 구성할 수 있습니다."
+ },
+ "saasApp.pricing.limitReachedDescription": {
+  "en": "You've reached the limit of 20 plans.",
+  "ko": "플랜 한도 20개에 도달했습니다."
+ },
+ "saasApp.pricing.limitReachedTitle": {
+  "en": "Plans limit reached",
+  "ko": "플랜 한도에 도달했습니다"
+ },
+ "saasApp.pricing.noPlansMatchSearch": {
+  "en": "No plans match your search",
+  "ko": "검색과 일치하는 플랜이 없습니다"
+ },
+ "saasApp.pricing.searchPlansPlaceholder": {
+  "en": "Search plans by name",
+  "ko": "이름으로 플랜 검색"
+ },
+ "saasApp.pricing.tryDifferentSearch": {
+  "en": "Try a different keyword or clear the search field.",
+  "ko": "다른 키워드를 사용하거나 검색 필드를 지워 보세요."
+ },
+ "saasApp.rebilling.baseCostForAllServices": {
+  "en": "Base cost for all services",
+  "ko": "모든 서비스의 기본 비용"
+ },
+ "saasApp.rebilling.cautionContent": {
+  "en": "These changes will update pricing for new clients. Review carefully before saving.",
+  "ko": "이 변경사항은 신규 고객의 가격에 적용됩니다. 저장하기 전에 신중히 검토하세요."
+ },
+ "saasApp.rebilling.cautionTitle": {
+  "en": "Changes here will affect your clients",
+  "ko": "여기서 변경하면 클라이언트에게 영향을 줍니다"
+ },
+ "saasApp.rebilling.conversationAi.disclaimerContent": {
+  "en": "Markup will be same across all AI models. For more information on pricing by LLM models based on tokens consumed, please refer to the respective provider documentation, ",
+  "ko": "마크업은 모든 AI 모델에 동일하게 적용됩니다. 토큰 사용량 기반 LLM 모델별 가격에 대한 자세한 내용은 각 제공업체 문서를 참조하세요, "
+ },
+ "saasApp.rebilling.conversationAi.disclaimerTitle": {
+  "en": "Rates may differ as per the LLM selected & tokens consumed. Calculations shown as per Open AI GPT-4.1 rates for 6,500 tokens consumed.",
+  "ko": "선택한 LLM과 소비한 토큰에 따라 요율이 달라질 수 있습니다. 표시된 계산은 6,500 토큰 소비 기준 Open AI GPT-4.1 요율을 적용한 것입니다."
+ },
+ "saasApp.rebilling.email": {
+  "en": "Email",
+  "ko": "이메일"
+ },
+ "saasApp.rebilling.emailResellSettings": {
+  "en": "Email resell settings",
+  "ko": "이메일 재판매 설정"
+ },
+ "saasApp.rebilling.enableNow": {
+  "en": "Enable now",
+  "ko": "지금 활성화"
+ },
+ "saasApp.rebilling.enableRebillingDescription": {
+  "en": "Apply a common markup for all services. You can later modify markups for individual services.",
+  "ko": "모든 서비스에 공통 마크업을 적용합니다. 나중에 개별 서비스의 마크업을 수정할 수 있습니다."
+ },
+ "saasApp.rebilling.enableRebillingOnAllServices": {
+  "en": "Enable usage charges on all services",
+  "ko": "모든 서비스에 사용량 요금 활성화"
+ },
+ "saasApp.rebilling.failedToUpdateMarkup": {
+  "en": "Couldn't update the markup. Please try again.",
+  "ko": "마크업을 업데이트하지 못했습니다. 다시 시도해 주세요."
+ },
+ "saasApp.rebilling.fixedRate": {
+  "en": "Fixed rate",
+  "ko": "고정 요율"
+ },
+ "saasApp.rebilling.fixedRateDescription": {
+  "en": "This is a flat rate billed to your clients for each unit, regardless of the {product} cost borne by you.",
+  "ko": "귀하가 부담하는 {product} 비용과 관계없이 단위당 고객에게 청구되는 정액 요금입니다."
+ },
+ "saasApp.rebilling.markupDescription": {
+  "en": "These are margins that are billed to your clients over the {product} cost borne by you",
+  "ko": "귀하가 부담하는 {product} 비용에 더해 클라이언트에게 청구되는 마진입니다"
+ },
+ "saasApp.rebilling.markupMargin": {
+  "en": "Markup margin",
+  "ko": "마크업 마진"
+ },
+ "saasApp.rebilling.markupTable.ai.alertContent": {
+  "en": "Example Pricing - GPT-4o Mini",
+  "ko": "요금 예시 - GPT-4o Mini"
+ },
+ "saasApp.rebilling.markupTable.ai.alertTitle": {
+  "en": "Charges are based on tokens. Word counts shown below are estimates to help you understand usage. Actual charges may vary.",
+  "ko": "요금은 토큰 기반입니다. 아래 표시된 단어 수는 사용량 이해를 돕는 추정치입니다. 실제 요금은 다를 수 있습니다."
+ },
+ "saasApp.rebilling.markupTable.calls": {
+  "en": "calls",
+  "ko": "통화"
+ },
+ "saasApp.rebilling.markupTable.charge": {
+  "en": "Charge",
+  "ko": "청구"
+ },
+ "saasApp.rebilling.markupTable.chargedToCustomer": {
+  "en": "Charged to customer",
+  "ko": "고객에게 청구됨"
+ },
+ "saasApp.rebilling.markupTable.email": {
+  "en": "email",
+  "ko": "이메일"
+ },
+ "saasApp.rebilling.markupTable.emails": {
+  "en": "emails",
+  "ko": "이메일"
+ },
+ "saasApp.rebilling.markupTable.input": {
+  "en": "Input",
+  "ko": "입력"
+ },
+ "saasApp.rebilling.markupTable.leadConnector": {
+  "en": "Lead Connector",
+  "ko": "하이퍼클래스"
+ },
+ "saasApp.rebilling.markupTable.makingCalls": {
+  "en": "Making calls",
+  "ko": "통화 발신"
+ },
+ "saasApp.rebilling.markupTable.min": {
+  "en": "min",
+  "ko": "분"
+ },
+ "saasApp.rebilling.markupTable.minutes": {
+  "en": "minutes",
+  "ko": "분"
+ },
+ "saasApp.rebilling.markupTable.output": {
+  "en": "Output",
+  "ko": "출력"
+ },
+ "saasApp.rebilling.markupTable.phoneSystem.alertContent": {
+  "en": "Outbound SMS for US / Canada to be charged at $0.0083 / segment, please check Twilio for more details.",
+  "ko": "미국/캐나다 발신 SMS는 세그먼트당 $0.0083 이 청구됩니다. 자세한 내용은 Twilio 를 확인하세요."
+ },
+ "saasApp.rebilling.markupTable.phoneSystem.alertTitle": {
+  "en": "Rates may differ as per region. Calculations shown as per twilio rates for US,",
+  "ko": "요금은 지역에 따라 다를 수 있습니다. 표시된 계산은 미국 기준 Twilio 요금입니다,"
+ },
+ "saasApp.rebilling.markupTable.phoneSystem.note": {
+  "en": "For accounts using Twilio, A2P registration and call transcription charges are not billed to sub-accounts.",
+  "ko": "Twilio를 사용하는 계정의 경우 A2P 등록 및 통화 전사 요금은 서브 계정에 청구되지 않습니다."
+ },
+ "saasApp.rebilling.markupTable.profit": {
+  "en": "Profit",
+  "ko": "수익"
+ },
+ "saasApp.rebilling.markupTable.receivingCalls": {
+  "en": "Receiving calls",
+  "ko": "통화 수신"
+ },
+ "saasApp.rebilling.markupTable.segment": {
+  "en": "segment",
+  "ko": "세그먼트"
+ },
+ "saasApp.rebilling.markupTable.segments": {
+  "en": "segments",
+  "ko": "세그먼트"
+ },
+ "saasApp.rebilling.markupTable.service": {
+  "en": "Service",
+  "ko": "서비스"
+ },
+ "saasApp.rebilling.markupTable.tenDollarValue": {
+  "en": "$10 will give you about",
+  "ko": "$10으로 약"
+ },
+ "saasApp.rebilling.markupTable.textMessages": {
+  "en": "Text messages",
+  "ko": "문자 메시지"
+ },
+ "saasApp.rebilling.markupTable.whatsapp.alertContent": {
+  "en": "Outbound Marketing Template for US to be charged at $0.0263, please check our",
+  "ko": "미국 대상 아웃바운드 마케팅 템플릿은 $0.0263에 청구됩니다. 자세한 내용은"
+ },
+ "saasApp.rebilling.markupTable.whatsapp.alertTitle": {
+  "en": "Rates may differ as per region. The calculations shown are as per rates for UK",
+  "ko": "요금은 지역에 따라 다를 수 있습니다. 표시된 계산은 영국 요금 기준입니다"
+ },
+ "saasApp.rebilling.markupTable.whatsapp.forMoreDetails": {
+  "en": "for more details.",
+  "ko": "참조하세요."
+ },
+ "saasApp.rebilling.markupTable.whatsapp.supportDoc": {
+  "en": "support doc",
+  "ko": "지원 문서를"
+ },
+ "saasApp.rebilling.markupTable.whatsappConversation": {
+  "en": "WhatsApp Conversation",
+  "ko": "WhatsApp 대화"
+ },
+ "saasApp.rebilling.markupTable.words": {
+  "en": "words",
+  "ko": "단어"
+ },
+ "saasApp.rebilling.phoneSystem": {
+  "en": "Phone System",
+  "ko": "전화 시스템"
+ },
+ "saasApp.rebilling.phoneSystemResellSettings": {
+  "en": "Phone system resell settings",
+  "ko": "전화 시스템 재판매 설정"
+ },
+ "saasApp.rebilling.pleaseEnableForLocations": {
+  "en": "Please enable {product} for your agency for locations to use it and to enable rebilling.",
+  "ko": "서브 계정에서 사용하고 재청구를 켜려면 에이전시에서 {product} 을(를) 활성화해 주세요."
+ },
+ "saasApp.rebilling.pleaseEnableProduct": {
+  "en": "Please enable {product} for your agency to enable rebilling.",
+  "ko": "재청구를 사용하려면 에이전시에서 {product} 을(를) 활성화해 주세요."
+ },
+ "saasApp.rebilling.productDisabled": {
+  "en": "{product} is disabled for your agency",
+  "ko": "{product} 은(는) 귀하의 에이전시에서 비활성화되어 있습니다"
+ },
+ "saasApp.rebilling.rebillSubAccountUsersOnly": {
+  "en": "Rebill usage from sub-account users only",
+  "ko": "서브 계정 사용자 사용량만 재청구"
+ },
+ "saasApp.rebilling.rebillSubAccountUsersOnlyDisabledInfo": {
+  "en": "All usage is charged to the sub-account wallet, regardless of whether it is generated by an agency user or a sub-account user.",
+  "ko": "에이전시 사용자와 서브 계정 사용자 중 누가 발생시켰는지와 관계없이 모든 사용량이 서브 계정 지갑에 청구됩니다."
+ },
+ "saasApp.rebilling.rebillSubAccountUsersOnlyEnabledInfoAgencyUsers": {
+  "en": "agency users",
+  "ko": "에이전시 사용자"
+ },
+ "saasApp.rebilling.rebillSubAccountUsersOnlyEnabledInfoPart1": {
+  "en": "Only usage generated by ",
+  "ko": "사용량 중 "
+ },
+ "saasApp.rebilling.rebillSubAccountUsersOnlyEnabledInfoPart2": {
+  "en": " is charged to the sub-account wallet. Usage generated by ",
+  "ko": " 발생분만 서브 계정 지갑에 청구됩니다. "
+ },
+ "saasApp.rebilling.rebillSubAccountUsersOnlyEnabledInfoPart3": {
+  "en": " is not charged.",
+  "ko": " 발생분은 청구되지 않습니다."
+ },
+ "saasApp.rebilling.rebillSubAccountUsersOnlyEnabledInfoSubAccountUsers": {
+  "en": "sub-account users",
+  "ko": "서브 계정 사용자"
+ },
+ "saasApp.rebilling.savePricingModelChange.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "saasApp.rebilling.savePricingModelChange.confirm": {
+  "en": "Save changes",
+  "ko": "변경사항 저장"
+ },
+ "saasApp.rebilling.savePricingModelChange.plan.toFixedRate": {
+  "en": "You're switching from Markup margin to Fixed rate. Once saved, this change will apply only to sub-accounts that subscribe to this plan going forward. Existing sub-accounts won't be impacted for now.",
+  "ko": "마크업 마진에서 고정 요율로 전환합니다. 저장하면 이 변경사항은 앞으로 이 플랜을 구독하는 서브 계정에만 적용됩니다. 기존 서브 계정은 당분간 영향을 받지 않습니다."
+ },
+ "saasApp.rebilling.savePricingModelChange.plan.toMarkup": {
+  "en": "You're switching from Fixed rate to Markup margin. Once saved, this change will apply only to sub-accounts that subscribe to this plan going forward. Existing sub-accounts won't be impacted for now.",
+  "ko": "고정 요율에서 마크업 마진으로 전환합니다. 저장하면 이 변경 사항은 앞으로 이 플랜을 구독하는 서브 계정에만 적용됩니다. 기존 서브 계정은 당분간 영향을 받지 않습니다."
+ },
+ "saasApp.rebilling.savePricingModelChange.subAccount.toFixedRate": {
+  "en": "You're switching from Markup margin to Fixed rate. Once saved, this sub-account will immediately be billed a flat rate per unit, regardless of your base service cost.",
+  "ko": "마크업 마진에서 고정 요율로 전환하고 있습니다. 저장하면 기본 서비스 비용과 관계없이 이 서브 계정에 단위당 고정 요율이 즉시 청구됩니다."
+ },
+ "saasApp.rebilling.savePricingModelChange.subAccount.toMarkup": {
+  "en": "You're switching from Fixed rate to Markup margin. Once saved, this sub-account will immediately be billed using your markup multiplier applied to the base service cost.",
+  "ko": "고정 요율에서 마크업 마진으로 전환합니다. 저장하면 이 서브 계정에는 기본 서비스 비용에 마크업 배수를 적용한 금액이 즉시 청구됩니다."
+ },
+ "saasApp.rebilling.savePricingModelChange.title": {
+  "en": "Save pricing model change?",
+  "ko": "가격 모델 변경을 저장하시겠습니까?"
+ },
+ "saasApp.rebilling.showRates": {
+  "en": "Show rates",
+  "ko": "요금 보기"
+ },
+ "saasApp.rebilling.switchToFixedRate": {
+  "en": "Switch to fixed rate",
+  "ko": "고정 요율로 전환"
+ },
+ "saasApp.rebilling.switchToMarkup": {
+  "en": "Switch to markup",
+  "ko": "마크업으로 전환"
+ },
+ "saasApp.rebilling.unsavedChanges": {
+  "en": "Unsaved changes",
+  "ko": "저장되지 않은 변경사항"
+ },
+ "saasApp.rebilling.workflowPremiumTooltip": {
+  "en": "Enable to add a profit margin for your agency when your sub-accounts use Premium Workflow Triggers & Actions",
+  "ko": "서브 계정이 프리미엄 워크플로우 트리거 및 작업을 사용할 때 에이전시의 이익 마진을 추가하려면 켜세요"
+ },
+ "saasApp.reselling.addonsBillingNote": {
+  "en": "per subscriber - billed to your agency.",
+  "ko": "구독자당 - 에이전시에 청구됩니다."
+ },
+ "saasApp.reselling.addonsTotalAmount": {
+  "en": "{amount}/month",
+  "ko": "{amount}/월"
+ },
+ "saasApp.reselling.chargedForDeploying": {
+  "en": "The sub-accounts won’t be billed for deploying these services.",
+  "ko": "이 서비스를 배포해도 서브 계정에 청구되지 않습니다."
+ },
+ "saasApp.reselling.includePaidApps": {
+  "en": "Include paid apps as part of the SaaS plan",
+  "ko": "SaaS 플랜에 유료 앱 포함"
+ },
+ "saasApp.reselling.month": {
+  "en": "month",
+  "ko": "월"
+ },
+ "saasApp.reselling.noExtraCharge": {
+  "en": "Sub-accounts subscribing to this plan won't be charged extra for the services selected below. Please make sure to add your margins to the price of the SaaS product itself.",
+  "ko": "이 플랜을 구독하는 서브 계정에는 아래 선택한 서비스에 대해 추가 요금이 청구되지 않습니다. SaaS 상품 가격 자체에 마진을 반영했는지 확인하세요."
+ },
+ "saasApp.reselling.totalAddonsCost": {
+  "en": "Total add-ons cost",
+  "ko": "총 애드온 비용"
+ },
+ "saasApp.reselling.whatsapp.freeTrialBadge": {
+  "en": "Free trial",
+  "ko": "무료 체험"
+ },
+ "saasApp.reselling.whatsapp.freeTrialDescription": {
+  "en": "Free 30-Day WhatsApp Subscription Trial on all new WhatsApp activations made between June 12 and September 1, 2025",
+  "ko": "2025년 6월 12일부터 9월 1일 사이에 새로 활성화한 모든 WhatsApp 에 30일 무료 WhatsApp 구독 체험 제공"
+ },
+ "saasApp.reselling.youCanResell": {
+  "en": "You can resell the plans",
+  "ko": "플랜을 재판매할 수 있습니다"
+ },
+ "saasApp.saasV2.addExistingSubAccount": {
+  "en": "Add existing sub-account",
+  "ko": "기존 서브 계정 추가"
+ },
+ "saasApp.saasV2.addSubAccount.addSubAccount": {
+  "en": "Add sub-account",
+  "ko": "서브 계정 추가"
+ },
+ "saasApp.saasV2.addSubAccount.description": {
+  "en": "This sub-account will be used to create SaaS products and manage subscriptions.",
+  "ko": "이 서브 계정은 SaaS 상품을 만들고 구독을 관리하는 데 사용됩니다."
+ },
+ "saasApp.saasV2.addSubAccount.searchOtherSubAccounts": {
+  "en": "Search to get other sub-accounts",
+  "ko": "검색하여 다른 서브 계정 찾기"
+ },
+ "saasApp.saasV2.addSubAccount.selectSubAccount": {
+  "en": "Select sub-account",
+  "ko": "서브 계정 선택"
+ },
+ "saasApp.saasV2.addSubAccount.sourceSubAccount": {
+  "en": "Source sub-account",
+  "ko": "원본 서브 계정"
+ },
+ "saasApp.saasV2.addSubAccount.title": {
+  "en": "Select your agency sub-account",
+  "ko": "에이전시 서브 계정 선택"
+ },
+ "saasApp.saasV2.addSubAccount.warningContent": {
+  "en": "SaaS products and subscriptions will be created and managed inside the Payments module of the sub-account you select here.",
+  "ko": "SaaS 상품과 구독은 여기서 선택한 서브 계정의 결제 모듈에서 생성되고 관리됩니다."
+ },
+ "saasApp.saasV2.addSubAccount.warningTitle": {
+  "en": "Please select your agency sub-account, and not your client's sub-account.",
+  "ko": "클라이언트의 서브 계정이 아닌 에이전시 서브 계정을 선택해 주세요."
+ },
+ "saasApp.saasV2.banner.headline": {
+  "en": "SaaS Mode now works with Stripe, NMI, Authorize.net and Square.",
+  "ko": "SaaS 모드가 이제 Stripe, NMI, Authorize.net, Square 와 함께 작동합니다."
+ },
+ "saasApp.saasV2.banner.pointManageSaas": {
+  "en": "Use Payments app in your agency sub-account to manage SaaS products and subscriptions.",
+  "ko": "에이전시 서브 계정의 결제 앱에서 SaaS 상품과 구독을 관리하세요."
+ },
+ "saasApp.saasV2.banner.pointMultipleInstances": {
+  "en": "Run multiple instances of SaaS mode from different sub-accounts.",
+  "ko": "여러 서브 계정에서 SaaS 모드 인스턴스를 여러 개 실행합니다."
+ },
+ "saasApp.saasV2.choose.connectedProcessors": {
+  "en": "Connected payment providers",
+  "ko": "연결된 결제 제공업체"
+ },
+ "saasApp.saasV2.choose.continueToCreatePlan": {
+  "en": "Continue to create plan",
+  "ko": "계속해서 플랜 만들기"
+ },
+ "saasApp.saasV2.choose.dataInHighLevel": {
+  "en": "Data managed in HighLevel",
+  "ko": "하이퍼클래스에서 관리되는 데이터"
+ },
+ "saasApp.saasV2.choose.dataInPrefix": {
+  "en": "Data managed in",
+  "ko": "데이터 관리 위치"
+ },
+ "saasApp.saasV2.choose.dataInStripeDashboard": {
+  "en": "Data managed in Stripe dashboard",
+  "ko": "Stripe 대시보드에서 관리되는 데이터"
+ },
+ "saasApp.saasV2.choose.description": {
+  "en": "You have multiple SaaS systems set up. Choose where you need to create the plan.",
+  "ko": "여러 SaaS 시스템이 설정되어 있습니다. 플랜을 만들 위치를 선택하세요."
+ },
+ "saasApp.saasV2.choose.descriptionMultiple": {
+  "en": "You have multiple payment providers connected. Select one to create the new plan.",
+  "ko": "여러 결제 제공업체가 연결되어 있습니다. 새 플랜을 만들 제공업체를 하나 선택하세요."
+ },
+ "saasApp.saasV2.choose.descriptionSingle": {
+  "en": "Select a processor for your new plan.",
+  "ko": "새 플랜의 결제 처리업체를 선택하세요."
+ },
+ "saasApp.saasV2.choose.fetchErrorTitle": {
+  "en": "Problem fetching sub-accounts for the agency",
+  "ko": "에이전시의 서브 계정을 가져오는 중 문제가 발생했습니다"
+ },
+ "saasApp.saasV2.choose.highLevel": {
+  "en": "HighLevel",
+  "ko": "하이퍼클래스"
+ },
+ "saasApp.saasV2.choose.noNameProvided": {
+  "en": "No name provided",
+  "ko": "이름이 제공되지 않음"
+ },
+ "saasApp.saasV2.choose.noProvidersContent": {
+  "en": "No payment processors are connected to your agency or agency sub-accounts. To sell plans, manage customer payments, and handle subscriptions, you must first connect a payment provider.",
+  "ko": "에이전시 또는 에이전시 서브 계정에 연결된 결제 처리업체가 없습니다. 플랜을 판매하고, 고객 결제를 관리하고, 구독을 처리하려면 먼저 결제 제공업체를 연결해야 합니다."
+ },
+ "saasApp.saasV2.choose.noProvidersTitle": {
+  "en": "Action required: Connect a payment provider",
+  "ko": "조치 필요: 결제 제공업체를 연결하세요"
+ },
+ "saasApp.saasV2.choose.notSupported": {
+  "en": "Not supported",
+  "ko": "지원되지 않음"
+ },
+ "saasApp.saasV2.choose.notSupportedSubtitle": {
+  "en": "Connected, but not available for subscription billing",
+  "ko": "연결되었지만 구독 청구에는 사용할 수 없습니다"
+ },
+ "saasApp.saasV2.choose.redirectWarnContent": {
+  "en": "If you choose an agency sub-account, then you will be redirected to the payments module in that sub-account. You may then continue to add the plans there.",
+  "ko": "에이전시 서브 계정을 선택하면 해당 서브 계정의 결제 모듈로 이동합니다. 거기서 계속해서 플랜을 추가할 수 있습니다."
+ },
+ "saasApp.saasV2.choose.redirectWarnTitle": {
+  "en": "You may be redirected.",
+  "ko": "리디렉션될 수 있습니다."
+ },
+ "saasApp.saasV2.choose.searchLocations": {
+  "en": "Search locations",
+  "ko": "서브 계정 검색"
+ },
+ "saasApp.saasV2.choose.setupProviderLink": {
+  "en": "How to setup payment provider?",
+  "ko": "결제 제공업체를 설정하는 방법은?"
+ },
+ "saasApp.saasV2.choose.stripeDashboard": {
+  "en": "Stripe dashboard",
+  "ko": "Stripe 대시보드"
+ },
+ "saasApp.saasV2.choose.title": {
+  "en": "Choose payment provider",
+  "ko": "결제 제공업체 선택"
+ },
+ "saasApp.saasV2.choose.v1Agency": {
+  "en": "V1 (Agency)",
+  "ko": "V1 (에이전시)"
+ },
+ "saasApp.saasV2.choose.v2SubAccount": {
+  "en": "V2 (Sub-account)",
+  "ko": "V2 (서브 계정)"
+ },
+ "saasApp.saasV2.choose.whyContent": {
+  "en": "Your payment processing setup determines how you sell the plans, and manage the customer payments and subscriptions.",
+  "ko": "결제 처리 설정에 따라 플랜 판매 방식과 고객 결제 및 구독 관리 방식이 결정됩니다."
+ },
+ "saasApp.saasV2.choose.whyTitle": {
+  "en": "Why do we need this?",
+  "ko": "왜 필요한가요?"
+ },
+ "saasApp.saasV2.configureSubAccounts": {
+  "en": "Configure agency sub-accounts",
+  "ko": "에이전시 서브 계정 구성"
+ },
+ "saasApp.saasV2.createNewSubAccount": {
+  "en": "Create new sub-account",
+  "ko": "새 서브 계정 만들기"
+ },
+ "saasApp.saasV2.createPlans.later": {
+  "en": "I will do it later",
+  "ko": "나중에 하겠습니다"
+ },
+ "saasApp.saasV2.createPlans.now": {
+  "en": "Create plans now",
+  "ko": "지금 플랜 만들기"
+ },
+ "saasApp.saasV2.createPlans.prompt": {
+  "en": "How you want to proceed with creating SaaS plans?",
+  "ko": "SaaS 플랜 생성을 어떻게 진행하시겠습니까?"
+ },
+ "saasApp.saasV2.createPlans.title": {
+  "en": "Create SaaS plans",
+  "ko": "SaaS 플랜 만들기"
+ },
+ "saasApp.saasV2.dashboardDescription": {
+  "en": "Use the payment provider of your choice and take your SaaS business to the next level.",
+  "ko": "원하는 결제 제공업체를 사용해 SaaS 비즈니스를 한 단계 발전시키세요."
+ },
+ "saasApp.saasV2.description": {
+  "en": "Use the payment provider of your choice and take your SaaS business to the next level.",
+  "ko": "원하는 결제 제공업체를 사용해 SaaS 비즈니스를 한 단계 발전시키세요."
+ },
+ "saasApp.saasV2.getStarted.stepsDescription": {
+  "en": "Steps to get started with the new SaaS system",
+  "ko": "새 SaaS 시스템 시작하기 단계"
+ },
+ "saasApp.saasV2.integrate.provider": {
+  "en": "Integrate your payment provider",
+  "ko": "결제 제공업체 연동"
+ },
+ "saasApp.saasV2.integrate.supported": {
+  "en": "We support Stripe, NMI, Authorize & Square",
+  "ko": "Stripe, NMI, Authorize, Square를 지원합니다"
+ },
+ "saasApp.saasV2.moreInfoPrefix": {
+  "en": "For more information, check the",
+  "ko": "자세한 내용은"
+ },
+ "saasApp.saasV2.products": {
+  "en": "Products",
+  "ko": "상품"
+ },
+ "saasApp.saasV2.redirectMessage": {
+  "en": "You will be redirected to the agency sub-account.",
+  "ko": "에이전시 서브 계정으로 이동합니다."
+ },
+ "saasApp.saasV2.sell.autoOnboard": {
+  "en": "Client sub-accounts will automatically be onboarded when a sale happens on any of your SaaS plans",
+  "ko": "SaaS 플랜 중 하나에서 판매가 발생하면 고객사 서브 계정이 자동으로 온보딩됩니다"
+ },
+ "saasApp.saasV2.sell.subscriptionsCreated": {
+  "en": "Subscriptions will be created in the Payments module of the respective agency sub-account.",
+  "ko": "구독은 해당 에이전시 서브 계정의 결제 모듈에 생성됩니다."
+ },
+ "saasApp.saasV2.setup.createPlans": {
+  "en": "Use your agency sub-account to create SaaS plans.",
+  "ko": "에이전시 서브 계정으로 SaaS 플랜을 만드세요."
+ },
+ "saasApp.saasV2.setup.useToggle": {
+  "en": "Turn on the 'Use as SaaS plan' toggle when creating the product.",
+  "ko": "상품을 만들 때 'SaaS 플랜으로 사용' 토글을 켜세요."
+ },
+ "saasApp.saasV2.steps.integrate": {
+  "en": "Step 2: Integrate",
+  "ko": "2단계: 연동"
+ },
+ "saasApp.saasV2.steps.sell": {
+  "en": "Step 3: Sell",
+  "ko": "3단계: 판매"
+ },
+ "saasApp.saasV2.steps.setup": {
+  "en": "Step 1: Setup",
+  "ko": "1단계: 설정"
+ },
+ "saasApp.saasV2.subAccountName": {
+  "en": "Sub-account name",
+  "ko": "서브 계정 이름"
+ },
+ "saasApp.saasV2.subAccountsList.addExistingSubAccount": {
+  "en": "Add existing sub-account",
+  "ko": "기존 서브 계정 추가"
+ },
+ "saasApp.saasV2.subAccountsList.addNew": {
+  "en": "+ Add new",
+  "ko": "+ 새로 추가"
+ },
+ "saasApp.saasV2.subAccountsList.count": {
+  "en": "{count} Sub-Accounts",
+  "ko": "{count}개 서브 계정"
+ },
+ "saasApp.saasV2.subAccountsList.createNewSubAccount": {
+  "en": "Create new sub-account",
+  "ko": "새 서브 계정 만들기"
+ },
+ "saasApp.saasV2.subAccountsList.emptyAction": {
+  "en": "+ Add existing sub-account",
+  "ko": "+ 기존 서브 계정 추가"
+ },
+ "saasApp.saasV2.subAccountsList.emptyTitle": {
+  "en": "Configure sub-accounts to manage SaaS",
+  "ko": "SaaS 관리를 위한 서브 계정 구성"
+ },
+ "saasApp.saasV2.subAccountsList.products": {
+  "en": "Products",
+  "ko": "상품"
+ },
+ "saasApp.saasV2.subAccountsList.subAccountName": {
+  "en": "Sub-account name",
+  "ko": "서브 계정 이름"
+ },
+ "saasApp.saasV2.subAccountsList.switchToSubAccount": {
+  "en": "Switch to sub-account",
+  "ko": "서브 계정으로 전환"
+ },
+ "saasApp.saasV2.subAccountsList.title": {
+  "en": "Sub-Accounts",
+  "ko": "서브 계정"
+ },
+ "saasApp.saasV2.supportArticle": {
+  "en": "support article.",
+  "ko": "지원 문서를 확인하세요."
+ },
+ "saasApp.saasV2.switchToSubAccount": {
+  "en": "Switch to sub-account",
+  "ko": "서브 계정으로 전환"
+ },
+ "saasApp.security.acceptModal.headerDescription": {
+  "en": "The sub-account will be resumed, and the sub-account admins will be able to access and use it.",
+  "ko": "서브 계정이 재개되며 서브 계정 관리자가 액세스하여 사용할 수 있습니다."
+ },
+ "saasApp.security.acceptModal.title": {
+  "en": "Approve the sub-account: {name}",
+  "ko": "서브 계정 승인: {name}"
+ },
+ "saasApp.security.declineModal.cancelAndDelete": {
+  "en": "Cancel subscription and delete sub-account",
+  "ko": "구독 취소 및 서브 계정 삭제"
+ },
+ "saasApp.security.declineModal.headerDescription": {
+  "en": "If you believe that this sub-account was created by a bad actor, we recommend deleting this sub-account and canceling the corresponding subscription.",
+  "ko": "이 서브 계정이 악의적인 사용자에 의해 생성되었다고 판단되면 서브 계정을 삭제하고 해당 구독을 취소하는 것을 권장합니다."
+ },
+ "saasApp.security.declineModal.title": {
+  "en": "Decline the sub-account: {name}",
+  "ko": "서브 계정 거절: {name}"
+ },
+ "saasApp.security.declineModal.warning": {
+  "en": "It is recommended to delete this sub-account. Or else you can do that later from Sub-Accounts > Manage Client page.",
+  "ko": "이 서브 계정을 삭제하는 것을 권장합니다. 또는 나중에 서브 계정 > 클라이언트 관리 페이지에서 삭제할 수 있습니다."
+ },
+ "saasApp.security.headerDescription": {
+  "en": "Set rules to prevent scammers from creating and using SaaS sub-accounts.",
+  "ko": "사기꾼이 SaaS 서브 계정을 만들고 사용하지 못하도록 규칙을 설정하세요."
+ },
+ "saasApp.security.headerTitle": {
+  "en": "Security settings",
+  "ko": "보안 설정"
+ },
+ "saasApp.security.help.learnMoreText": {
+  "en": "Did you know that you can do a lot more than what you see on this page to secure your business against threats? Learn how you can improve the security of your SaaS Checkout process by clicking below.",
+  "ko": "이 페이지에 표시된 것보다 훨씬 더 많은 방법으로 비즈니스를 위협으로부터 보호할 수 있다는 사실을 알고 계셨나요? 아래를 클릭하여 SaaS 결제 프로세스의 보안을 강화하는 방법을 알아보세요."
+ },
+ "saasApp.security.pause.description": {
+  "en": "Restrict new clients from using their account until reviewed",
+  "ko": "검토 전까지 신규 클라이언트의 계정 사용 제한"
+ },
+ "saasApp.security.pause.headerTitle": {
+  "en": "Pause new sub-accounts",
+  "ko": "새 서브 계정 일시정지"
+ },
+ "saasApp.security.pause.helper1": {
+  "en": "Put new sub-accounts on hold until reviewed and approved by an agency admin.",
+  "ko": "에이전시 관리자가 검토하고 승인할 때까지 새 서브 계정을 보류합니다."
+ },
+ "saasApp.security.pause.helper2": {
+  "en": "Sub-accounts will be created, but can't be accessed by sub-account admins until approved. You would still be able to access them.",
+  "ko": "서브 계정이 생성되지만 승인되기 전까지 서브 계정 관리자는 접근할 수 없습니다. 회원님은 계속 접근할 수 있습니다."
+ },
+ "saasApp.security.requests.actions": {
+  "en": "Actions",
+  "ko": "작업"
+ },
+ "saasApp.security.requests.countLabel": {
+  "en": "Request(s)",
+  "ko": "요청"
+ },
+ "saasApp.security.requests.headerDescription": {
+  "en": "New sub-account approval requests",
+  "ko": "새 서브 계정 승인 요청"
+ },
+ "saasApp.security.requests.headerTitle": {
+  "en": "Requests",
+  "ko": "요청"
+ },
+ "saasApp.security.requests.newRequests": {
+  "en": "New requests",
+  "ko": "새 요청"
+ },
+ "saasApp.security.requests.subAccountNames": {
+  "en": "Sub-account name(s)",
+  "ko": "서브 계정 이름"
+ },
+ "saasApp.security.twofa.description": {
+  "en": "Set up 2FA to prevent fraud & chargebacks",
+  "ko": "사기 및 지불 거절을 방지하려면 2FA를 설정하세요"
+ },
+ "saasApp.security.twofa.headerTitle": {
+  "en": "2-factor authentication",
+  "ko": "2단계 인증"
+ },
+ "saasApp.security.twofa.helper1": {
+  "en": "Verify Phone Number using a security code during sign-up",
+  "ko": "가입 시 보안 코드로 전화번호 인증"
+ },
+ "saasApp.selectFreeUnits.askAi.description": {
+  "en": "In-product AI assistant",
+  "ko": "상품 내 AI 어시스턴트"
+ },
+ "saasApp.selectFreeUnits.askAi.label": {
+  "en": "Ask AI",
+  "ko": "AI에게 문의"
+ },
+ "saasApp.selectFreeUnits.autoCompleteAddress.description": {
+  "en": "Address lookups",
+  "ko": "주소 조회"
+ },
+ "saasApp.selectFreeUnits.autoCompleteAddress.label": {
+  "en": "Auto Complete Address",
+  "ko": "주소 자동 완성"
+ },
+ "saasApp.selectFreeUnits.calls.description": {
+  "en": "Total calling minutes",
+  "ko": "총 통화 시간(분)"
+ },
+ "saasApp.selectFreeUnits.calls.label": {
+  "en": "Calls",
+  "ko": "전화"
+ },
+ "saasApp.selectFreeUnits.clearAll": {
+  "en": "Clear all",
+  "ko": "전체 해제"
+ },
+ "saasApp.selectFreeUnits.contentAi.description": {
+  "en": "Text & image generation",
+  "ko": "텍스트 및 이미지 생성"
+ },
+ "saasApp.selectFreeUnits.contentAi.label": {
+  "en": "Content AI",
+  "ko": "콘텐츠 AI"
+ },
+ "saasApp.selectFreeUnits.conversationAi.description": {
+  "en": "AI chat message handling",
+  "ko": "AI 채팅 메시지 처리"
+ },
+ "saasApp.selectFreeUnits.conversationAi.label": {
+  "en": "Conversation AI",
+  "ko": "대화 AI"
+ },
+ "saasApp.selectFreeUnits.conversationsAi.description": {
+  "en": "AI calls & chat handling",
+  "ko": "AI 통화 및 채팅 처리"
+ },
+ "saasApp.selectFreeUnits.conversationsAi.label": {
+  "en": "Conversation & Voice AI",
+  "ko": "대화 AI 및 음성 AI"
+ },
+ "saasApp.selectFreeUnits.defaultLimitHint": {
+  "en": "default limit",
+  "ko": "기본 한도"
+ },
+ "saasApp.selectFreeUnits.domainPurchase.description": {
+  "en": "Domains purchased through the platform",
+  "ko": "플랫폼을 통해 구매한 도메인"
+ },
+ "saasApp.selectFreeUnits.domainPurchase.label": {
+  "en": "Domain Purchase",
+  "ko": "도메인 구매"
+ },
+ "saasApp.selectFreeUnits.email.description": {
+  "en": "Marketing & transactional sends",
+  "ko": "마케팅 및 거래 발송"
+ },
+ "saasApp.selectFreeUnits.email.label": {
+  "en": "Email",
+  "ko": "이메일"
+ },
+ "saasApp.selectFreeUnits.emailInbox.description": {
+  "en": "Unified inbox storage",
+  "ko": "통합 받은편지함 저장 공간"
+ },
+ "saasApp.selectFreeUnits.emailInbox.label": {
+  "en": "Email Inbox",
+  "ko": "이메일 받은편지함"
+ },
+ "saasApp.selectFreeUnits.featureDisabled": {
+  "en": "Feature disabled for your agency",
+  "ko": "에이전시에서 비활성화된 기능입니다"
+ },
+ "saasApp.selectFreeUnits.funnelAi.description": {
+  "en": "AI-generated funnels",
+  "ko": "AI 생성 퍼널"
+ },
+ "saasApp.selectFreeUnits.funnelAi.label": {
+  "en": "Funnel AI",
+  "ko": "퍼널 AI"
+ },
+ "saasApp.selectFreeUnits.lcEmailVerification.description": {
+  "en": "Email address verification",
+  "ko": "이메일 주소 인증"
+ },
+ "saasApp.selectFreeUnits.lcEmailVerification.disabled": {
+  "en": "Feature disabled for your agency",
+  "ko": "에이전시에서 비활성화된 기능입니다"
+ },
+ "saasApp.selectFreeUnits.lcEmailVerification.label": {
+  "en": "LC Email Verification",
+  "ko": "하이퍼클래스 이메일 인증"
+ },
+ "saasApp.selectFreeUnits.limitsComingSoon": {
+  "en": "Limits coming soon",
+  "ko": "한도 기능 곧 제공 예정"
+ },
+ "saasApp.selectFreeUnits.noLimit": {
+  "en": "No limit",
+  "ko": "제한 없음"
+ },
+ "saasApp.selectFreeUnits.perMonth": {
+  "en": "{value}/month",
+  "ko": "{value}/월"
+ },
+ "saasApp.selectFreeUnits.phone.description": {
+  "en": "SMS and calling minutes",
+  "ko": "SMS 및 통화 시간(분)"
+ },
+ "saasApp.selectFreeUnits.phone.label": {
+  "en": "Phone System",
+  "ko": "전화 시스템"
+ },
+ "saasApp.selectFreeUnits.quickPicks.ai": {
+  "en": "AI features",
+  "ko": "AI 기능"
+ },
+ "saasApp.selectFreeUnits.quickPicks.all": {
+  "en": "All products",
+  "ko": "모든 상품"
+ },
+ "saasApp.selectFreeUnits.quickPicks.communications": {
+  "en": "Communications",
+  "ko": "커뮤니케이션"
+ },
+ "saasApp.selectFreeUnits.quickPicks.smsEmail": {
+  "en": "SMS + Email",
+  "ko": "SMS + 이메일"
+ },
+ "saasApp.selectFreeUnits.quickPicksLabel": {
+  "en": "Quick picks",
+  "ko": "빠른 선택"
+ },
+ "saasApp.selectFreeUnits.reviewsAi.description": {
+  "en": "AI review responses",
+  "ko": "AI 리뷰 답변"
+ },
+ "saasApp.selectFreeUnits.reviewsAi.label": {
+  "en": "Reviews AI",
+  "ko": "리뷰 AI"
+ },
+ "saasApp.selectFreeUnits.sections.automations": {
+  "en": "Automations",
+  "ko": "자동화"
+ },
+ "saasApp.selectFreeUnits.sections.limitsNotSupported": {
+  "en": "Limits not supported",
+  "ko": "한도가 지원되지 않습니다"
+ },
+ "saasApp.selectFreeUnits.sections.messaging": {
+  "en": "Messaging & Communication",
+  "ko": "메시징 및 커뮤니케이션"
+ },
+ "saasApp.selectFreeUnits.sections.others": {
+  "en": "Others",
+  "ko": "기타"
+ },
+ "saasApp.selectFreeUnits.sections.phone": {
+  "en": "Phone system",
+  "ko": "전화 시스템"
+ },
+ "saasApp.selectFreeUnits.selectAll": {
+  "en": "Select all",
+  "ko": "전체 선택"
+ },
+ "saasApp.selectFreeUnits.selectedCount": {
+  "en": "{selected}/{total} selected",
+  "ko": "{selected}/{total} 선택됨"
+ },
+ "saasApp.selectFreeUnits.sms.description": {
+  "en": "Outbound messages",
+  "ko": "발신 메시지"
+ },
+ "saasApp.selectFreeUnits.subtitle": {
+  "en": "Choose the products that should come with included usage. We'll add default limits now, and you can adjust each limit in the next step.",
+  "ko": "포함 사용량이 제공될 상품을 선택하세요. 지금 기본 한도를 추가하며, 다음 단계에서 각 한도를 조정할 수 있습니다."
+ },
+ "saasApp.selectFreeUnits.title": {
+  "en": "Choose the products that should include free usage limits",
+  "ko": "무료 사용량 한도를 포함할 상품 선택"
+ },
+ "saasApp.selectFreeUnits.voiceAi.description": {
+  "en": "AI voice call minutes",
+  "ko": "AI 음성 통화 시간(분)"
+ },
+ "saasApp.selectFreeUnits.voiceAi.label": {
+  "en": "Voice AI",
+  "ko": "음성 AI"
+ },
+ "saasApp.selectFreeUnits.whatsapp.description": {
+  "en": "Conversations via WhatsApp Business",
+  "ko": "WhatsApp Business 를 통한 대화"
+ },
+ "saasApp.selectFreeUnits.workflowExternalAi.description": {
+  "en": "OpenAI / Claude in workflows",
+  "ko": "워크플로우의 OpenAI / Claude"
+ },
+ "saasApp.selectFreeUnits.workflowExternalAi.label": {
+  "en": "Workflow — External AI",
+  "ko": "워크플로우 — 외부 AI"
+ },
+ "saasApp.selectFreeUnits.workflowPremium.description": {
+  "en": "Premium workflow actions",
+  "ko": "프리미엄 워크플로우 작업"
+ },
+ "saasApp.selectFreeUnits.workflowPremium.label": {
+  "en": "Workflow Premium Features",
+  "ko": "워크플로우 프리미엄 기능"
+ },
+ "saasApp.snapshot.attach": {
+  "en": "Attach",
+  "ko": "첨부"
+ },
+ "saasApp.snapshot.attaching": {
+  "en": "Attaching...",
+  "ko": "첨부 중..."
+ },
+ "saasApp.snapshot.emptyMarketplaceDescription": {
+  "en": "Only 'Agency' type snapshot apps installed from the App Marketplace can be added here.",
+  "ko": "앱 마켓플레이스에서 설치한 'Agency' 유형 스냅샷 앱만 여기에 추가할 수 있습니다."
+ },
+ "saasApp.snapshot.emptyMarketplaceTitle": {
+  "en": "You do not have any snapshot apps installed.",
+  "ko": "설치된 스냅샷 앱이 없습니다."
+ },
+ "saasApp.snapshot.emptyOwnDescription": {
+  "en": "Add/Manage snapshots on the Account Snapshots page",
+  "ko": "계정 스냅샷 페이지에서 스냅샷 추가/관리"
+ },
+ "saasApp.snapshot.emptyOwnTitle": {
+  "en": "You do not have any snapshots",
+  "ko": "아직 스냅샷이 없습니다"
+ },
+ "saasApp.snapshot.failedAdd": {
+  "en": "Failed to add snapshot.",
+  "ko": "스냅샷을 추가하지 못했습니다."
+ },
+ "saasApp.snapshot.imported": {
+  "en": "Imported snapshots",
+  "ko": "가져온 스냅샷"
+ },
+ "saasApp.snapshot.importedCount": {
+  "en": "Imported snapshots ({count})",
+  "ko": "가져온 스냅샷 ({count})"
+ },
+ "saasApp.snapshot.marketplace": {
+  "en": "Marketplace",
+  "ko": "마켓플레이스"
+ },
+ "saasApp.snapshot.marketplaceCount": {
+  "en": "Marketplace ({count})",
+  "ko": "마켓플레이스 ({count})"
+ },
+ "saasApp.snapshot.own": {
+  "en": "Own snapshots",
+  "ko": "내 스냅샷"
+ },
+ "saasApp.snapshot.ownCount": {
+  "en": "Own snapshots ({count})",
+  "ko": "내 스냅샷 ({count})"
+ },
+ "saasApp.specialist.avatarAlt": {
+  "en": "SaaS setup specialist",
+  "ko": "SaaS 설정 전문가"
+ },
+ "saasApp.specialist.emptyState.cta": {
+  "en": "Claim my setup call",
+  "ko": "설정 상담 신청"
+ },
+ "saasApp.specialist.emptyState.description": {
+  "en": "Connect with a specialist on a 1:1 call to set up your SaaS offer, tailored to your business.",
+  "ko": "전문가와 1:1 상담으로 비즈니스에 맞춘 SaaS 오퍼를 설정하세요."
+ },
+ "saasApp.specialist.emptyState.title": {
+  "en": "Let's turn your next deal into recurring revenue.",
+  "ko": "다음 계약을 반복 매출로 바꿔 보세요."
+ },
+ "saasApp.specialist.pricing.cta": {
+  "en": "Connect with a specialist",
+  "ko": "전문가와 상담"
+ },
+ "saasApp.specialist.pricing.description": {
+  "en": "Connect with a specialist on a 1:1 call to build your SaaS offer and pitch, tailored to your business.",
+  "ko": "전문가와 1:1 상담으로 비즈니스에 맞춘 SaaS 오퍼와 세일즈 피치를 만드세요."
+ },
+ "saasApp.specialist.pricing.title": {
+  "en": "Your plans are live. Let's land your first client.",
+  "ko": "플랜이 게시되었습니다. 이제 첫 고객을 확보해 보세요."
+ },
+ "saasApp.specialist.steps.cta": {
+  "en": "Finish setup with a specialist",
+  "ko": "전문가와 설정 마무리"
+ },
+ "saasApp.specialist.steps.description": {
+  "en": "Connect with a specialist on a 1:1 call to wrap up your SaaS setup, tailored to your business.",
+  "ko": "전문가와 1:1 상담으로 비즈니스에 맞춰 SaaS 설정을 마무리하세요."
+ },
+ "saasApp.specialist.steps.title": {
+  "en": "A few steps left. Let's finish together.",
+  "ko": "몇 단계만 남았습니다. 함께 마무리해 보세요."
+ },
+ "saasApp.stripe.agencyDashboardVisibleTo": {
+  "en": "Agency dashboard visible to",
+  "ko": "에이전시 대시보드 표시 대상"
+ },
+ "saasApp.stripe.allAdmins": {
+  "en": "All agency admins",
+  "ko": "모든 에이전시 관리자"
+ },
+ "saasApp.stripe.allSaasFeatures": {
+  "en": "All SaaS features",
+  "ko": "모든 SaaS 기능"
+ },
+ "saasApp.stripe.beta": {
+  "en": "Beta",
+  "ko": "베타"
+ },
+ "saasApp.stripe.cannotDisconnect.descBoth": {
+  "en": "Client accounts are linked to active Stripe payments and reselling subscriptions. Please cancel subscriptions and disconnect their Stripe profiles (disable SaaS mode) before proceeding.",
+  "ko": "클라이언트 계정이 활성 Stripe 결제 및 재판매 구독에 연결되어 있습니다. 계속하기 전에 구독을 취소하고 Stripe 프로필 연결을 해제(SaaS 모드 비활성화)해 주세요."
+ },
+ "saasApp.stripe.cannotDisconnect.descReselling": {
+  "en": "Client accounts are linked to active reselling subscriptions. Please cancel subscriptions and disconnect their Stripe profiles (disable SaaS mode) before proceeding.",
+  "ko": "클라이언트 계정이 활성 재판매 구독에 연결되어 있습니다. 진행하기 전에 구독을 취소하고 Stripe 프로필 연결을 해제(SaaS 모드 비활성화)해 주세요."
+ },
+ "saasApp.stripe.cannotDisconnect.descSaas": {
+  "en": "Client accounts are linked to active Stripe payments. Please disconnect their Stripe profiles (disable SaaS mode) before proceeding.",
+  "ko": "클라이언트 계정이 활성 Stripe 결제에 연결되어 있습니다. 계속하기 전에 해당 Stripe 프로필 연결을 해제(SaaS 모드 비활성화)해 주세요."
+ },
+ "saasApp.stripe.cannotDisconnectTitle": {
+  "en": "Cannot disconnect Stripe",
+  "ko": "Stripe 연결을 해제할 수 없습니다"
+ },
+ "saasApp.stripe.changeAnytime": {
+  "en": "You can change this later, or even use both the systems in parallel.",
+  "ko": "나중에 변경하거나 두 시스템을 병행하여 사용할 수도 있습니다."
+ },
+ "saasApp.stripe.choosePreference": {
+  "en": "Choose your preference",
+  "ko": "선호 옵션 선택"
+ },
+ "saasApp.stripe.connectButton": {
+  "en": "Connect your Stripe account",
+  "ko": "Stripe 계정 연결"
+ },
+ "saasApp.stripe.connectStripe": {
+  "en": "Connect stripe",
+  "ko": "Stripe 연결"
+ },
+ "saasApp.stripe.connected": {
+  "en": "Connected",
+  "ko": "연결됨"
+ },
+ "saasApp.stripe.connectedAccountDefault": {
+  "en": "Connected account",
+  "ko": "연결된 계정"
+ },
+ "saasApp.stripe.connectionLost.body": {
+  "en": "Your Stripe account is no longer connected. This can happen if Stripe access was removed or permissions changed. As a result, some features such as SaaS plans and payments may not work correctly. Please reconnect your Stripe account to restore full functionality.",
+  "ko": "Stripe 계정 연결이 해제되었습니다. Stripe 접근 권한이 제거되었거나 권한이 변경된 경우 발생할 수 있습니다. 이로 인해 SaaS 플랜 및 결제 등 일부 기능이 제대로 작동하지 않을 수 있습니다. 모든 기능을 복원하려면 Stripe 계정을 다시 연결해 주세요."
+ },
+ "saasApp.stripe.connectionLost.description": {
+  "en": "Please connect a stripe account to continue",
+  "ko": "계속하려면 Stripe 계정을 연결해 주세요"
+ },
+ "saasApp.stripe.connectionLost.title": {
+  "en": "Stripe connection lost",
+  "ko": "Stripe 연결이 끊어졌습니다"
+ },
+ "saasApp.stripe.copyAccountId": {
+  "en": "Copy account ID",
+  "ko": "계정 ID 복사"
+ },
+ "saasApp.stripe.crmIntegration": {
+  "en": "CRM integration",
+  "ko": "CRM 연동"
+ },
+ "saasApp.stripe.disconnect": {
+  "en": "Disconnect",
+  "ko": "연결 해제"
+ },
+ "saasApp.stripe.disconnected": {
+  "en": "Disconnected",
+  "ko": "연결 해제됨"
+ },
+ "saasApp.stripe.errors.failedToFetchAccount": {
+  "en": "Failed to fetch Stripe account information",
+  "ko": "Stripe 계정 정보를 가져오지 못했습니다"
+ },
+ "saasApp.stripe.import.confirmNow": {
+  "en": "Yes, import now",
+  "ko": "예, 지금 가져오기"
+ },
+ "saasApp.stripe.import.confirmWarning": {
+  "en": "Are you sure you want to import the selected product and details?",
+  "ko": "선택한 상품과 세부 정보를 가져오시겠습니까?"
+ },
+ "saasApp.stripe.import.description": {
+  "en": "Select the product you'd like to import from Stripe.",
+  "ko": "Stripe에서 가져올 상품을 선택하세요."
+ },
+ "saasApp.stripe.import.duplicateBody": {
+  "en": "The product you are importing already exists in your system. Please select another product to import from Stripe.",
+  "ko": "가져오려는 상품이 이미 시스템에 있습니다. Stripe 에서 가져올 다른 상품을 선택해 주세요."
+ },
+ "saasApp.stripe.import.duplicateTitle": {
+  "en": "Duplicate product detected",
+  "ko": "중복 상품이 감지되었습니다"
+ },
+ "saasApp.stripe.import.enterProductPlaceholder": {
+  "en": "Enter product name to import",
+  "ko": "가져올 상품 이름 입력"
+ },
+ "saasApp.stripe.import.importSelected": {
+  "en": "Import selected product",
+  "ko": "선택한 상품 가져오기"
+ },
+ "saasApp.stripe.import.searchLabel": {
+  "en": "Search using product name:",
+  "ko": "상품 이름으로 검색:"
+ },
+ "saasApp.stripe.import.title": {
+  "en": "Import Stripe product",
+  "ko": "Stripe 상품 가져오기"
+ },
+ "saasApp.stripe.importFromStripe": {
+  "en": "Import from Stripe",
+  "ko": "Stripe에서 가져오기"
+ },
+ "saasApp.stripe.integration": {
+  "en": "Stripe integration",
+  "ko": "Stripe 연동"
+ },
+ "saasApp.stripe.loadingAccountInfo": {
+  "en": "Loading Stripe account information…",
+  "ko": "Stripe 계정 정보 불러오는 중…"
+ },
+ "saasApp.stripe.loginToStripe": {
+  "en": "Log in to Stripe",
+  "ko": "Stripe 로그인"
+ },
+ "saasApp.stripe.manageSaasV1.columns.linked": {
+  "en": "Linked subscription",
+  "ko": "연결된 구독"
+ },
+ "saasApp.stripe.manageSaasV1.columns.manage": {
+  "en": "Manage",
+  "ko": "관리"
+ },
+ "saasApp.stripe.manageSaasV1.columns.subAccount": {
+  "en": "Sub-account ({count})",
+  "ko": "서브 계정 ({count})"
+ },
+ "saasApp.stripe.manageSaasV1.columns.subAccountId": {
+  "en": "Sub-account ID",
+  "ko": "서브 계정 ID"
+ },
+ "saasApp.stripe.manageSaasV1.goToManageClient": {
+  "en": "Go to manage client",
+  "ko": "클라이언트 관리로 이동"
+ },
+ "saasApp.stripe.manageSaasV1.header": {
+  "en": "Sub-accounts linked to Stripe",
+  "ko": "Stripe에 연결된 서브 계정"
+ },
+ "saasApp.stripe.more": {
+  "en": "more",
+  "ko": "더 보기"
+ },
+ "saasApp.stripe.multiProviderIntegration": {
+  "en": "Integration with Stripe, NMI, Authorize.net, Square & more",
+  "ko": "Stripe, NMI, Authorize.net, Square 등과 연동"
+ },
+ "saasApp.stripe.notConnected.alert": {
+  "en": "Once connected, the Stripe account cannot be changed later. We recommend using a new Stripe account dedicated to Highlevel earnings.",
+  "ko": "한번 연결하면 Stripe 계정을 나중에 변경할 수 없습니다. 하이퍼클래스 수익 전용의 새 Stripe 계정을 사용하는 것을 권장합니다."
+ },
+ "saasApp.stripe.notConnected.allUnlocked": {
+  "en": "All features unlocked. Infinite growth ahead!",
+  "ko": "모든 기능이 잠금 해제되었습니다. 무한한 성장이 기다립니다"
+ },
+ "saasApp.stripe.notConnected.description297": {
+  "en": "With Rebilling, Reselling, and Reporting, you have the most powerful setup we offer. Now is the time to optimize your earnings and efficiency with advanced strategies.",
+  "ko": "재청구, 재판매, 리포팅을 갖추면 저희가 제공하는 가장 강력한 구성을 갖게 됩니다. 이제 고급 전략으로 수익과 효율을 최적화할 때입니다."
+ },
+ "saasApp.stripe.notConnected.description97": {
+  "en": "Connect your stripe account, to unlock benefits of Rebilling, Reselling and Reporting. You're just getting started — but there's so much more you can do. Upgrade to unlock powerful features that help agencies grow faster, keep clients longer, and boost recurring revenue.",
+  "ko": "Stripe 계정을 연결하여 재청구, 재판매, 리포팅 혜택을 이용하세요. 이제 막 시작하셨지만 할 수 있는 일이 훨씬 더 많습니다. 업그레이드하여 에이전시가 더 빠르게 성장하고, 고객을 더 오래 유지하며, 반복 매출을 늘리는 데 도움이 되는 강력한 기능을 이용하세요."
+ },
+ "saasApp.stripe.notConnected.descriptionFull": {
+  "en": "Connect your Stripe account to access world-class payments, subscriptions, and fraud protection. With powerful tools like Rebilling, Reselling, Reporting, and SaaS Mode, you'll have the most complete setup we offer—built to scale your business with confidence.",
+  "ko": "Stripe 계정을 연결하여 세계 최고 수준의 결제, 구독, 사기 방지 기능을 이용하세요. 재청구, 재판매, 리포팅, SaaS 모드와 같은 강력한 도구로 당사가 제공하는 가장 완벽한 설정을 갖추고 자신 있게 비즈니스를 확장할 수 있습니다."
+ },
+ "saasApp.stripe.notConnected.proPlan": {
+  "en": "Founder Plan ($497/month) gives benefits of the Unlimited Plan plus SaaS mode",
+  "ko": "Founder 플랜($497/월)은 Unlimited 플랜의 혜택에 SaaS 모드를 더해 제공합니다"
+ },
+ "saasApp.stripe.notConnected.supercharge": {
+  "en": "Supercharge your earnings with SaaS mode",
+  "ko": "SaaS 모드로 수익을 극대화하세요"
+ },
+ "saasApp.stripe.notConnected.unlimitedPlan": {
+  "en": "Unlimited Plan ($297/month) gives you Rebilling, Reselling and Reporting",
+  "ko": "Unlimited 플랜($297/월)은 재청구, 재판매 및 리포팅 기능을 제공합니다"
+ },
+ "saasApp.stripe.notConnected.unlockTools": {
+  "en": "Unlock the tools top agencies use to scale",
+  "ko": "최고의 에이전시가 성장에 사용하는 도구를 이용하세요"
+ },
+ "saasApp.stripe.notConnected.upgradeNow": {
+  "en": "Upgrade now",
+  "ko": "지금 업그레이드"
+ },
+ "saasApp.stripe.notConnected2": {
+  "en": "Not connected",
+  "ko": "연결되지 않음"
+ },
+ "saasApp.stripe.onlyMe": {
+  "en": "Only me",
+  "ko": "나만"
+ },
+ "saasApp.stripe.otherProviders": {
+  "en": "Other providers",
+  "ko": "기타 제공업체"
+ },
+ "saasApp.stripe.payouts": {
+  "en": "Payouts",
+  "ko": "지급"
+ },
+ "saasApp.stripe.rebilling": {
+  "en": "Rebilling",
+  "ko": "재청구"
+ },
+ "saasApp.stripe.reconnect": {
+  "en": "Reconnect stripe",
+  "ko": "Stripe 다시 연결"
+ },
+ "saasApp.stripe.removeAllPlans.acknowledgeText": {
+  "en": "I acknowledge that all my SaaS plans will be lost and I will need to build those again.",
+  "ko": "모든 SaaS 플랜이 사라지며 다시 만들어야 한다는 점에 동의합니다."
+ },
+ "saasApp.stripe.removeAllPlans.alertContent": {
+  "en": "If you disconnect it, all SaaS plans will be lost and you will need to create those again.",
+  "ko": "연결을 해제하면 모든 SaaS 플랜이 손실되며 다시 생성해야 합니다."
+ },
+ "saasApp.stripe.removeAllPlans.alertTitle": {
+  "en": "You have SaaS plans created in this Stripe account",
+  "ko": "이 Stripe 계정에 생성된 SaaS 플랜이 있습니다"
+ },
+ "saasApp.stripe.removeAllPlans.header": {
+  "en": "Remove all SaaS plan configurations?",
+  "ko": "모든 SaaS 플랜 설정을 제거하시겠습니까?"
+ },
+ "saasApp.stripe.stable": {
+  "en": "Stable",
+  "ko": "안정 버전"
+ },
+ "saasApp.stripe.stripeIntegrationOnly": {
+  "en": "Stripe integration only",
+  "ko": "Stripe 연동 전용"
+ },
+ "saasApp.stripe.taxSettings.comingSoon": {
+  "en": "Tax settings will be available soon.",
+  "ko": "세금 설정은 곧 제공될 예정입니다."
+ },
+ "saasApp.stripe.taxSettings.taxCompliance": {
+  "en": "Tax compliance",
+  "ko": "세금 규정 준수"
+ },
+ "saasApp.stripe.totalPendingBalance": {
+  "en": "Total pending balance",
+  "ko": "총 대기 중인 잔액"
+ },
+ "saasApp.stripe.unverifiedAlert": {
+  "en": "The stripe account connected to this agency is unverified and cannot collect payments. Please complete verification by logging in to your stripe account",
+  "ko": "이 에이전시에 연결된 Stripe 계정이 인증되지 않아 결제를 받을 수 없습니다. Stripe 계정에 로그인하여 인증을 완료해 주세요"
+ },
+ "saasApp.stripe.verified": {
+  "en": "Verified",
+  "ko": "인증됨"
+ },
+ "saasApp.stripe.viewAllLinkedSubAccounts": {
+  "en": "View all sub-accounts linked to Stripe profiles",
+  "ko": "Stripe 프로필에 연결된 모든 서브 계정 보기"
+ },
+ "saasApp.suspendedLocation.inactiveSubscription.addPaymentMethod": {
+  "en": "Add a payment method",
+  "ko": "결제 수단 추가"
+ },
+ "saasApp.suspendedLocation.inactiveSubscription.changePaymentMethod": {
+  "en": "Change payment method",
+  "ko": "결제 수단 변경"
+ },
+ "saasApp.suspendedLocation.inactiveSubscription.contactPrefix": {
+  "en": "If you think this is a mistake, please contact",
+  "ko": "잘못되었다고 생각되면 해결을 위해"
+ },
+ "saasApp.suspendedLocation.inactiveSubscription.contactSuffix": {
+  "en": "for resolution.",
+  "ko": "에 문의해 주세요."
+ },
+ "saasApp.suspendedLocation.inactiveSubscription.description": {
+  "en": "Your payment failed. All your data is safe, and all automations, webpages, and services will resume once payment is completed.",
+  "ko": "결제에 실패했습니다. 모든 데이터는 안전하며, 결제가 완료되면 모든 자동화, 웹페이지, 서비스가 재개됩니다."
+ },
+ "saasApp.suspendedLocation.inactiveSubscription.moveToDashboard": {
+  "en": "Move to dashboard",
+  "ko": "대시보드로 이동"
+ },
+ "saasApp.suspendedLocation.inactiveSubscription.retryPayment": {
+  "en": "Retry payment",
+  "ko": "결제 재시도"
+ },
+ "saasApp.suspendedLocation.inactiveSubscription.title": {
+  "en": "This account has been paused",
+  "ko": "이 계정은 일시중지되었습니다"
+ },
+ "saasApp.suspendedLocation.manualPaused.callUs": {
+  "en": "Call us:",
+  "ko": "전화 문의:"
+ },
+ "saasApp.suspendedLocation.manualPaused.description": {
+  "en": "All your account activity has been temporarily suspended. Please reach out to us for support.",
+  "ko": "모든 계정 활동이 일시적으로 정지되었습니다. 지원이 필요하면 문의해 주세요."
+ },
+ "saasApp.suspendedLocation.manualPaused.emailUs": {
+  "en": "Email us:",
+  "ko": "이메일 문의:"
+ },
+ "saasApp.suspendedLocation.manualPaused.needHelp": {
+  "en": "Need help restoring access?",
+  "ko": "액세스 복구에 도움이 필요하신가요?"
+ },
+ "saasApp.suspendedLocation.manualPaused.reachOutMessage": {
+  "en": "Reach out to us via email or phone, and we'll assist you in resolving this issue.",
+  "ko": "이메일 또는 전화로 문의해 주시면 문제 해결을 도와드리겠습니다."
+ },
+ "saasApp.suspendedLocation.manualPaused.title": {
+  "en": "This sub-account has been paused.",
+  "ko": "이 서브 계정이 일시 중지되었습니다."
+ },
+ "saasApp.suspendedLocation.paymentMethods.addNewCard": {
+  "en": "+ Add new card",
+  "ko": "+ 새 카드 추가"
+ },
+ "saasApp.suspendedLocation.paymentMethods.description": {
+  "en": "Set primary card or add/delete cards",
+  "ko": "기본 카드 설정 또는 카드 추가/삭제"
+ },
+ "saasApp.suspendedLocation.paymentMethods.title": {
+  "en": "Manage your payment methods",
+  "ko": "결제 수단 관리"
+ },
+ "saasApp.suspendedLocation.reactivateModal.confirmAndPay": {
+  "en": "Confirm & pay",
+  "ko": "확인 및 결제"
+ },
+ "saasApp.suspendedLocation.reactivateModal.month": {
+  "en": "month",
+  "ko": "월"
+ },
+ "saasApp.suspendedLocation.reactivateModal.monthly": {
+  "en": "Monthly",
+  "ko": "월간"
+ },
+ "saasApp.suspendedLocation.reactivateModal.note.fallback": {
+  "en": "We’ll reactivate using your current plan price.",
+  "ko": "현재 플랜 가격으로 다시 활성화됩니다."
+ },
+ "saasApp.suspendedLocation.reactivateModal.note.latestConfigured": {
+  "en": "We’ll reactivate using the latest configured price for this plan (updated due to tax or pricing changes).",
+  "ko": "이 플랜에 대해 최근 구성된 가격(세금 또는 가격 변경으로 업데이트됨)으로 재활성화합니다."
+ },
+ "saasApp.suspendedLocation.reactivateModal.note.subscription": {
+  "en": "We’ll reactivate your current subscription using the same price.",
+  "ko": "현재 구독을 동일한 가격으로 다시 활성화합니다."
+ },
+ "saasApp.suspendedLocation.reactivateModal.reactivateTitle": {
+  "en": "Reactivate billing for {locationName}",
+  "ko": "{locationName} 청구 재활성화"
+ },
+ "saasApp.suspendedLocation.reactivateModal.subscriptionPlan": {
+  "en": "Subscription plan",
+  "ko": "구독 플랜"
+ },
+ "saasApp.suspendedLocation.reactivateModal.title": {
+  "en": "Purchase summary",
+  "ko": "구매 요약"
+ },
+ "saasApp.suspendedLocation.reactivateModal.yearly": {
+  "en": "Yearly",
+  "ko": "연간"
+ },
+ "saasApp.trial.addCreditsAftertrial": {
+  "en": "Add credits after trial period ends",
+  "ko": "체험 기간 종료 후 크레딧 추가"
+ },
+ "saasApp.trial.addCreditsHelper": {
+  "en": "You can add One time or Recurring credits for your clients.",
+  "ko": "고객사에게 일회성 또는 반복 크레딧을 추가할 수 있습니다."
+ },
+ "saasApp.trial.addCreditsOnSignup": {
+  "en": "Add credits upon sign-up",
+  "ko": "가입 시 크레딧 추가"
+ },
+ "saasApp.trial.complimentaryDesc": {
+  "en": "Give free credits upon purchase of this subscription plan.",
+  "ko": "이 구독 플랜 구매 시 무료 크레딧을 제공합니다."
+ },
+ "saasApp.trial.complimentaryTitle": {
+  "en": "Complimentary credit",
+  "ko": "무료 크레딧"
+ },
+ "saasApp.updatePlan.categoryUpdated": {
+  "en": "Plan category updated successfully",
+  "ko": "플랜 카테고리가 업데이트되었습니다"
+ },
+ "saasApp.updatePlan.changeCategory.currentCurrency": {
+  "en": "Current currency",
+  "ko": "현재 통화"
+ },
+ "saasApp.updatePlan.changeCategory.selectionHeader": {
+  "en": "Category selection",
+  "ko": "카테고리 선택"
+ },
+ "saasApp.updatePlan.changeCategory.title": {
+  "en": "Change category of {planName} plan",
+  "ko": "{planName} 플랜의 카테고리 변경"
+ },
+ "saasApp.updatePlan.changeCategoryConfirm.confirm1": {
+  "en": "I understand this change will affect the upgrade path for Sub Accounts in multiple categories, and I have reviewed the updates.",
+  "ko": "이 변경이 여러 카테고리의 서브 계정 업그레이드 경로에 영향을 미친다는 것을 이해하며, 업데이트 내용을 검토했습니다."
+ },
+ "saasApp.updatePlan.changeCategoryConfirm.confirm2": {
+  "en": "I understand adjustments to plan hierarchy may change available features, and I have confirmed all updated plans have the correct features enabled.",
+  "ko": "플랜 계층 조정으로 사용 가능한 기능이 변경될 수 있음을 이해하며, 업데이트된 모든 플랜에 올바른 기능이 활성화되어 있음을 확인했습니다."
+ },
+ "saasApp.updatePlan.changeCategoryConfirm.confirmAndSave": {
+  "en": "Confirm & save",
+  "ko": "확인 후 저장"
+ },
+ "saasApp.updatePlan.changeCategoryConfirm.headerTitle": {
+  "en": "Please confirm before continuing",
+  "ko": "계속하기 전에 확인해 주세요"
+ },
+ "saasApp.updatePlan.description": {
+  "en": "Manage your SaaS plan and preferences here.",
+  "ko": "여기에서 SaaS 플랜과 환경설정을 관리하세요."
+ },
+ "saasApp.updatePlan.failedDetails": {
+  "en": "Couldn't update plan details. Please try again.",
+  "ko": "플랜 세부 정보를 업데이트하지 못했습니다. 다시 시도해 주세요."
+ },
+ "saasApp.updatePlan.planDetails.description": {
+  "en": "Add plan name and description",
+  "ko": "플랜 이름과 설명 추가"
+ },
+ "saasApp.updatePlan.planDetails.title": {
+  "en": "Plan details",
+  "ko": "플랜 세부 정보"
+ },
+ "saasApp.updatePlan.planHeadText": {
+  "en": "Update your plan",
+  "ko": "플랜 업데이트"
+ },
+ "saasApp.updatePlan.planHierarchy.high": {
+  "en": "High",
+  "ko": "높음"
+ },
+ "saasApp.updatePlan.planHierarchy.low": {
+  "en": "Low",
+  "ko": "낮음"
+ },
+ "saasApp.updatePlan.planHierarchy.subtext": {
+  "en": "Drag and drop to reorder plans within the upgrade path",
+  "ko": "드래그 앤 드롭으로 업그레이드 경로 내 플랜 순서 변경"
+ },
+ "saasApp.updatePlan.planHierarchy.title": {
+  "en": "Plan hierarchy",
+  "ko": "플랜 계층"
+ },
+ "saasApp.updatePlan.planLevelLabel": {
+  "en": "Plan level → {level}",
+  "ko": "플랜 레벨 → {level}"
+ },
+ "saasApp.updatePlan.pricingDescription": {
+  "en": "Update plan prices",
+  "ko": "플랜 가격 업데이트"
+ },
+ "saasApp.usageLimit.contactInfo": {
+  "en": "When the contact limit is reached, new contacts can still be created but you'll be notified and the sub-account will see a prompt to upgrade.",
+  "ko": "연락처 한도에 도달해도 새 연락처를 계속 만들 수 있지만, 알림을 받게 되며 서브 계정에는 업그레이드 안내가 표시됩니다."
+ },
+ "saasApp.usageLimit.failedToUpdateFeatures": {
+  "en": "Couldn't update features. Please try again.",
+  "ko": "기능을 업데이트하지 못했습니다. 다시 시도해 주세요."
+ },
+ "saasApp.usageLimit.headerTitle": {
+  "en": "Usage limits",
+  "ko": "사용 한도"
+ },
+ "saasApp.usageLimit.info": {
+  "en": "Only sub-account level users count towards this limit. You can still add as many agency users to the sub-accounts as you require.",
+  "ko": "서브 계정 수준 사용자만 이 한도에 포함됩니다. 에이전시 사용자는 필요한 만큼 서브 계정에 추가할 수 있습니다."
+ },
+ "saasApp.usageLimit.note": {
+  "en": "Enabling contacts limit will not stop creation of new contacts after the limit is reached. When the limit is reached for a sub-account, you will be notified of it and a prompt to upgrade will be shown on that sub-account.\nUsers limit on the other hand are enforced, and no new users can be added to a sub-account once it has reached the limit.",
+  "ko": "연락처 한도를 켜도 한도 도달 후 새 연락처 생성이 중단되지는 않습니다. 서브 계정이 한도에 도달하면 알림을 받게 되며 해당 서브 계정에 업그레이드 안내가 표시됩니다.\n반면 사용자 한도는 강제 적용되어, 서브 계정이 한도에 도달하면 새 사용자를 추가할 수 없습니다."
  }
 }
