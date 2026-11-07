@@ -3,7 +3,8 @@
  *          ② 한국어 라벨 + 영어 날짜('기한 September 30, 2026' → '기한 2026년 9월 30일', 인보이스 결제 일정)
  *          ③ 상대 시각 '2 months ago'·'an hour ago'·'in 3 days' → '2개월 전'·'1시간 전'·'3일 후'(코스 댓글 등, 노드 전체 일치)
  *          ④ 상태 칩 허용 목록에 소문자 paid·pending(인보이스 미리보기 결제 일정) · Tailwind 알약(.rounded-full) 안의 상태어(커뮤니티 그룹 'Active').
- *          ⑤ '라벨 (숫자)' — 라벨이 사전 단어일 때('Companies (0)' → '회사 (0)', 연락처 상세 연관 패널) · 'N items' → 'N개 항목'.
+ *          ⑤ '라벨 (숫자)' — 라벨이 사전 단어일 때('Companies (0)' → '회사 (0)', 연락처 상세 연관 패널) · 'N items' → 'N개 항목'
+ *             · 페이지 표시 '1 - 3 of 3' → '3개 중 1–3'.
  *          ⑥ 월 이름 단독(전체 이름)·"January '27" → '10월'·'2027년 1월'(기회 예측 타임라인 열 머리).
  *          ⑦ 앱이 조각을 이어 붙인 문장 패턴 — 기회 예측 위험 규칙 'Slipped 2+ times 또는 14+ days (excluding high)'.
  *          ⑧ 대화 타임라인 시스템 이벤트 줄 — 'Appointment X'·'updated'·' → marked as cancelled for Oct 31, 2026 04:45PM'
@@ -702,6 +703,7 @@
   }
   // v4.21.15: '라벨 (숫자)' — 라벨이 _text 이거나 범위 안의 _textScoped 단어일 때(오브젝트 복수형 이름 'Companies (0)' 등) · 'N items'
   var KD_CNT = /^(\S.{0,39}?) \((\d[\d,]*)\)$/, KD_ITEMS = /^(\d[\d,]*) items?$/;
+  var KD_RANGE = /^(\d[\d,]*)\s*[-–]\s*(\d[\d,]*) of (\d[\d,]*)$/;   // 페이지 표시 '1 - 3 of 3' → '3개 중 1–3'
   function kdCount(p, t) {
     var m = t.match(KD_CNT), x = null;
     if (m) {
@@ -709,6 +711,7 @@
       else if (TS && typeof TS[m[1]] === 'string' && (inScope(p) || inEnumMenu(p))) x = TS[m[1]];
       return x ? x + ' (' + m[2] + ')' : null;
     }
+    if ((m = t.match(KD_RANGE))) return m[3] + '개 중 ' + m[1] + '–' + m[2];
     return (m = t.match(KD_ITEMS)) ? m[1] + '개 항목' : null;
   }
   // v4.21.15 ⑦: 앱이 숫자·조각을 이어 붙여 사전 키와 일치하지 않는 문장(노드 전체 일치). 첫 글자로 먼저 거른다.
