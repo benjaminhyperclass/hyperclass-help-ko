@@ -309,3 +309,9 @@ superagentsApp(Managed Agents 빌더·목록·채팅 레이어)의 제품명 표
 - 로컬 클론의 fetch refspec 이 main 만이면 `publish-cdn.sh` 의 `git fetch origin cdn` 이 원격 추적 브랜치를 갱신하지 않아 non-fast-forward 로 3회 실패한다 → `git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'` 후 실행.
 - **계정별 점검(서브계정 28, 제외 1r0p)**: 메인 앱 로더 v4.21.15·사전 rev 01a7675 가 27곳(회원 소유 1곳은 화면을 열지 않음 — 같은 전역 경로)에서 동작, 대시보드 남은 영어는 약어(SMS·CPC)·사용자 데이터뿐. 포털 한글팩 17/18(TP LAB 은 기존 JS 꺾쇠 — 결정 대기) · 포털 없는 계정 10. 알림 이메일(포털 59·인보이스 17·영수증·캘린더)은 기존 27곳 전부 한국어 유지, **신규 '스냅샷 마스터' 계정만 미적용**(드라이런: 포털 59·인보이스 17·영수증 제목·캘린더 동의 문구 1).
 - 점검에서 찾은 영어: 소셜 계정 연결이 만료된 고객 2곳의 모든 화면 상단 배너('The connection for the following Social Planner Instagram account(s) has expired: …' + 'Re-integrate') — 서버 문장이라 로더 v4.21.16 고정 패턴으로 처리.
+
+## [기록] GHL 네임스페이스 이동 — AI 에이전트 빌더(agentBuilderApp) — 2026-11-08
+- 벤자민 제보: 대화 AI 에이전트 편집 화면(`/ai-agents/conversation-ai/agent/:id`)이 영어. 원인 = GHL 이 `aiEmployeesApp`·`voiceAiApp` 의 문자열을 새 네임스페이스 `agentBuilderApp`(5,398)으로 옮겼다(키 경로는 대부분 그대로 — 4,170 이 같은 경로·같은 원문). 사전에 없는 네임스페이스라 통째로 영어였고, 텔레메트리 en-missing 에도 아직 없었다(이동 직후).
+- 처리(v4.2.73): 같은 경로 이관 4,166 + 신규 1,192. 옮겨 오는 김에 기존 번역도 독립 검수(578 교정 — '예약 부킹'·'마구간'(stable)·'환자'(patient)·'강조 색상'(accent) 같은 오역 포함).
+- **교훈**: GHL 은 기능을 개편할 때 네임스페이스를 통째로 옮긴다 — 키 경로가 같으면 기존 번역을 그대로 쓸 수 있다. 계정 점검·화면 스윕 때 `#app` 카탈로그에서 '사전에 없는 네임스페이스 + 영어 비율 높음'을 함께 본다(텔레메트리는 그 화면을 누군가 열어야 들어온다).
+- 원문의 '600자 초과' 값(프롬프트 템플릿 9·약관 1)은 텔레메트리 Worker 가 받지 않는다 → 550자 조각(`key#n`)으로 올려 다시 잇는다.
