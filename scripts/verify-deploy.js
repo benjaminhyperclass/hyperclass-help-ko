@@ -23,9 +23,9 @@
    ───────────────────────────────────────────────────────────────────── */
 (() => {
   const EXPECT = {
-    version: '4.21.16',     // 포인터 loader.stable cdn ecc672e (= main e836453, 2026-11-08 — 벤자민 '다 반영')
-    revPrefix: '40e951e',   // 사전 v4.2.74 — cdn 커밋(원본 main f94cbec, 2026-11-08 AI 에이전트 빌더)
-    textEntries: 9361,      // _text — 배포된 core 건수(pretty 보다 C7 미배포분만큼 적다) (별도로 _textScoped 1,404 — status().scopedEntries)
+    version: '4.21.18',     // 포인터 loader.stable cdn 1796413 (= main 5212e6b, 2026-11-08 — iframe 중계 전 계정)
+    revPrefix: 'd26bb31',   // 사전 v4.2.76 — cdn 커밋(원본 main 9faae3f, 2026-11-08 AI 스튜디오)
+    textEntries: 9382,      // _text — 배포된 core 건수(pretty 보다 C7 미배포분만큼 적다) (별도로 _textScoped 1,404 — status().scopedEntries)
   };
   const A = window.__hcKoApp;
   if (!A) {
