@@ -1,4 +1,5 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.15
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.16
+ * v4.21.16: 상단 알림 배너 '소셜 플래너 계정 연결 만료' 문장·'Re-integrate' 버튼(서버가 영어로 내려주는 문장, 고객 2곳 실측) — 고정 패턴 ⑦에 추가.
  * v4.21.15: ① 선택 목록 옵션의 단어 1개 — 같은 메뉴 옵션이 전부 사전 단어일 때만(앱이 정한 열거값: 코스 난이도·주제·언어)
  *          ② 한국어 라벨 + 영어 날짜('기한 September 30, 2026' → '기한 2026년 9월 30일', 인보이스 결제 일정)
  *          ③ 상대 시각 '2 months ago'·'an hour ago'·'in 3 days' → '2개월 전'·'1시간 전'·'3일 후'(코스 댓글 등, 노드 전체 일치)
@@ -225,7 +226,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.21.15',
+    version: '4.21.16',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -757,10 +758,15 @@
     // 데이터가 먼저 오면 영어 문자열이 그대로 남는다(2026-11-07 같은 계정에서 두 경우 모두 실측) → 사전 값과 같은 꼴로 맞춘다.
     ['', /^(\d[\d,]*) Invoice\(s\) (in Draft|in Due|received|Overdue)$/, function (m) {
       return m[1] + ' 건 ' + ({ 'in Draft': '임시 저장', 'in Due': '지급 예정', received: '결제 완료', Overdue: '기한 초과' })[m[2]];
-    }]
+    }],
+    // v4.21.16: 상단 알림 배너 — 서버가 영어 문장으로 내려준다(i18n 키 없음). 소셜 계정 연결이 만료된 고객 2곳에서 매 화면 노출(2026-11-08 실측).
+    ['T', /^The connection for the following Social Planner (\S+(?: \S+)?) account\(s\) has expired: (.+?)\.?$/, function (m) {
+      return '다음 소셜 플래너 ' + m[1] + ' 계정의 연결이 만료되었습니다: ' + m[2];
+    }],
+    ['R', /^Re-integrate$/, function () { return '다시 연결'; }]
   ];
   function kdPat(t) {
-    if (t.length > 120) return null;
+    if (t.length > 300) return null;   // v4.21.16: 120 → 300(배너 문장에 계정 이름이 여럿 붙는 경우)
     for (var i = 0; i < FIX_PATS.length; i++) {
       if (FIX_PATS[i][0] && t.charAt(0) !== FIX_PATS[i][0]) continue;
       var m = t.match(FIX_PATS[i][1]); if (m) return FIX_PATS[i][2](m);
