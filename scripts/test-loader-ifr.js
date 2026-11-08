@@ -22,7 +22,12 @@ ${delay < 0 ? 'mk();' : 'setTimeout(mk, ' + delay + ');'}
 }
 const CHILD = `<!doctype html><html><head><script>window.__hcIfr={app:'wf',prefix:'/__ifr/wf'}</script></head><body><h1>Workflows list</h1><button>Create workflow</button>
 <script>window.addEventListener('message',function(e){ if(e.data&&e.data.ping) parent.postMessage({pong:1}, e.origin); });
-setTimeout(function(){ var b=document.createElement('span'); b.id='late'; b.textContent='Create folder'; document.body.appendChild(b); }, 1500);</script></body></html>`;
+setTimeout(function(){ var b=document.createElement('span'); b.id='late'; b.textContent='Create folder'; document.body.appendChild(b); }, 1500);</script>
+<div id="app"></div><script>(function(){ /* v4.21.15 ⑩: iframe 안 Vue 앱(가짜 composer) — 지문 'agentLogs|common' 은 실제 apps 사전에 있다. 늦게 마운트 */
+var msgs={en:{agentLogs:{x:'Agent logs'},common:{y:'Common'}}};
+var g={messages:{value:msgs},locale:{value:'en_US'},mergeLocaleMessage:function(l,m){(window.__merged=window.__merged||[]).push(l);msgs[l]=Object.assign({},msgs[l]||{},m);},t:function(){return '';}};
+var sy=Symbol('i18n'),pv={};pv[sy]={global:g,mode:'composition'};
+window.__msgs=msgs; setTimeout(function(){ document.getElementById('app').__vue_app__={_context:{provides:pv}}; },2500); })();</script></body></html>`;
 
 async function run(name, { loc, health = true, off = false, delay = 300 }) {
   const browser = await chromium.launch();
@@ -54,7 +59,8 @@ async function run(name, { loc, health = true, off = false, delay = 300 }) {
     let inner = null, late = null; try { inner = f.contentDocument.body.innerText.replace(/\s+/g, ' ').trim(); late = f.contentDocument.getElementById('late') && f.contentDocument.getElementById('late').textContent; } catch (e) { inner = 'xorigin'; }
     const st = window.__hcKoApp && window.__hcKoApp.status();
     const native = /\[native code\]/.test(String(Object.getOwnPropertyDescriptor(HTMLIFrameElement.prototype, 'src').set));
-    return { src: f.getAttribute('src'), inner, late, res: window.__res, ifr: st && st.ifr, version: window.__hcKoApp && window.__hcKoApp.version, booted: st && st.booted, coreLoaded: st && st.coreLoaded, native };
+    let merged = null, koCat = null; try { merged = f.contentWindow.__merged || []; const m = f.contentWindow.__msgs; koCat = !!(m && m.en_US && m.en_US.agentLogs && /[가-힣]/.test(JSON.stringify(m.en_US.agentLogs))); } catch (e) {}
+    return { src: f.getAttribute('src'), inner, late, merged, koCat, res: window.__res, ifr: st && st.ifr, version: window.__hcKoApp && window.__hcKoApp.version, booted: st && st.booted, coreLoaded: st && st.coreLoaded, native };
   });
   await browser.close();
   out.external = [...new Set(external)];
@@ -70,11 +76,13 @@ async function run(name, { loc, health = true, off = false, delay = 300 }) {
   chk(/워크플로우 목록/.test(A.inner) && /워크플로우 만들기/.test(A.inner), 'A iframe translated');
   chk(A.late === '폴더 만들기', 'A late node translated by mo');
   chk(A.ifr && A.ifr.on && A.ifr.ok === true && A.ifr.frames === 1 && A.ifr.rewrites >= 2, 'A status.ifr');
-  chk(A.version === '4.21.14', 'A version');
+  chk(A.version === '4.21.15', 'A version');
+  chk(A.merged && A.merged.indexOf('en_US') >= 0 && A.merged.indexOf('en') >= 0 && A.koCat === true, 'A iframe Vue catalog merged (⑩)');
   const B = await run('B 다른 계정', { loc: OTHER });
   chk(B.src.startsWith('https://client-app-automation-workflows'), 'B not rewritten');
   chk(B.native === true && B.ifr && B.ifr.on === false, 'B prototypes untouched');
   chk(B.res.handshake === true, 'B handshake (original)');
+  chk(B.merged === null || B.merged.length === 0, 'B no iframe catalog merge (cross-origin)');
   const C = await run('C 헬스 실패', { loc: CANARY, health: false });
   chk(C.src.startsWith('https://client-app-automation-workflows') && C.ifr.ok === false, 'C fallback original');
   chk(C.res.handshake === true, 'C handshake (original)');
