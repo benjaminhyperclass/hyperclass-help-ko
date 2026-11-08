@@ -23,8 +23,8 @@
    ───────────────────────────────────────────────────────────────────── */
 (() => {
   const EXPECT = {
-    version: '4.21.13',     // 포인터 loader.stable cdn 3fe299e (= main 76f4013, 2026-11-06 — 입력칸 자리표시자 단어 1개)
-    revPrefix: '0927dc1',   // 사전 v4.2.72 — cdn 커밋(원본 main 3b07d15, 2026-11-08 새벽)
+    version: '4.21.16',     // 포인터 loader.stable cdn ecc672e (= main e836453, 2026-11-08 — 벤자민 '다 반영')
+    revPrefix: '01a7675',   // 사전 v4.2.72 + iframe 사전 파일 — cdn 커밋(원본 main f165c59, 2026-11-08)
     textEntries: 9361,      // _text — 배포된 core 건수(pretty 보다 C7 미배포분만큼 적다) (별도로 _textScoped 1,404 — status().scopedEntries)
   };
   const A = window.__hcKoApp;
