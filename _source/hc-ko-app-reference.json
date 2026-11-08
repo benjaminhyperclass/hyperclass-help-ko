@@ -506969,7 +506969,7 @@
  },
  "agentBuilderApp.deploy.summary.editInBuild": {
   "en": "Edit in Build",
-  "ko": "빌드에서 편집"
+  "ko": "구성에서 편집"
  },
  "agentBuilderApp.deploy.summary.knowledgeBase": {
   "en": "Knowledge base",
