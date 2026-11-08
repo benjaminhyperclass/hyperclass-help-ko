@@ -2,7 +2,7 @@
 import worker from '../src/index.js';
 let ok = 0, bad = 0; const chk = (c, m) => { if (c) ok++; else { bad++; console.log('  ✗ ' + m); } };
 const calls = [];
-const have = { wf: new Set(['/assets/wf-a.js', '/v2/x']), crm: new Set(['/assets/crm-b.css']) };
+const have = { wf: new Set(['/assets/wf-a.js', '/v2/x', '/assets/index-V8vU7Pxn.js', '/assets/index.976028e2.js', '/assets/automation-workflows.js']), crm: new Set(['/assets/crm-b.css']) };
 globalThis.fetch = async (input, init) => {
   const u = new URL(typeof input === 'string' ? input : input.url);
   calls.push(u.host + u.pathname);
@@ -10,7 +10,7 @@ globalThis.fetch = async (input, init) => {
   const k = u.host.startsWith('client-app-automation-workflows') ? 'wf' : u.host.startsWith('client-app-crm-settings') ? 'crm' : null;
   if (!k) throw new Error('unexpected host ' + u.host);
   if (u.pathname === '/v2/x') return new Response('<html><head><title>t</title></head><body><script src="/assets/wf-a.js"></script><a href="//cdn.example/x">x</a></body></html>', { status: 200, headers: { 'content-type': 'text/html', 'set-cookie': 'a=1', 'content-security-policy': "default-src 'self'", 'x-frame-options': 'DENY' } });
-  if (have[k].has(u.pathname)) return new Response('asset:' + k, { status: 200, headers: { 'content-type': 'text/javascript' } });
+  if (have[k].has(u.pathname)) return new Response('asset:' + k, { status: 200, headers: { 'content-type': 'text/javascript', 'cache-control': u.pathname.includes('976028e2') ? 'no-store, max-age=0' : 'public, max-age=14400', pragma: 'no-cache' } });
   return new Response('<h1>404</h1>', { status: 404, headers: { 'content-type': 'text/html' } });
 };
 const R = (p, h = {}, m = 'GET') => new Request('https://app.hyperclass.ai' + p, { method: m, headers: h });
@@ -32,5 +32,15 @@ calls.length = 0; r = await worker.fetch(R('/assets/x.js', {}, 'POST'));
 chk((await r.text()) === 'origin' && calls.length === 1, 'assets: non-GET → origin');
 r = await worker.fetch(R('/__ifr/zzz/v2/x'));
 chk(r.status === 404, 'unknown app key → 404');
-console.log(`케이스 9 · ok 단언 ${ok} · 실패 ${bad}`);
+r = await worker.fetch(R('/__ifr/wf/assets/index-V8vU7Pxn.js'));
+chk(r.headers.get('cache-control') === 'public, max-age=31536000, immutable' && !r.headers.get('pragma'), 'hashed (base64url) → immutable');
+r = await worker.fetch(R('/__ifr/wf/assets/index.976028e2.js'));
+chk(r.headers.get('cache-control') === 'public, max-age=31536000, immutable', 'hashed (hex, origin no-store) → immutable');
+r = await worker.fetch(R('/__ifr/wf/assets/automation-workflows.js'));
+chk(r.headers.get('cache-control') === 'public, max-age=14400', 'plain word name → original header');
+r = await worker.fetch(R('/__ifr/wf/assets/missing-AbCd1234.js'));
+chk(r.status === 404 && r.headers.get('cache-control') !== 'public, max-age=31536000, immutable', '404 never immutable');
+r = await worker.fetch(R('/__ifr/wf/v2/x'));
+chk(r.headers.get('cache-control') === 'no-store', 'html stays no-store');
+console.log(`케이스 14 · ok 단언 ${ok} · 실패 ${bad}`);
 process.exit(bad ? 1 : 0);
