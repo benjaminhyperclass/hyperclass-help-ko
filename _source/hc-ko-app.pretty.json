@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "version": "4.2.75",
+  "version": "4.2.76",
   "built": "2026-11-08",
-  "source": "~3단어 라벨 신규 3,023(번역 4갈래 + 독립 검수 2갈래 교정 32). 4단어 이상 문장 약 3,970은 다음 라운드. 로더 v4.21.15 ⑩(iframe 카탈로그 병합) 뒤 캐너리에서 적용 + 멤버십 → 코스 → 분석(membership-analytics 별도 앱, 지문 analytics, 로케일 en_US) 318 전부 영어였음 — 번역 1갈래(기존 같은 원문 108 제안 반영) + 독립 검수 교정 1 · 거래 상세 'Two/One Step Order Form' _text · 거래 보기·권한 범위 용어(트랜잭션→거래 내역, 제품→상품) 정정 9 + 코스 분석 회원 표 머리글 _text 7(별도 앱 카탈로그보다 표 열 정의가 먼저 만들어져 영어로 굳는 경합 — 라이브 실측) + _textScoped 문맥 검수(독립 검수 1,407 전수) 정정 64: 한 화면 문맥이 묻은 값(Estimate 예상 수익→견적서·Items 상품→항목·Bold 대담한→굵게·Closed 휴무→종료됨·Stable 마구간→안정·Library 도서관→라이브러리·Large 길게→크게 등)·참조본 다수 표기로 통일(Create 만들기·Draft 임시 저장·Custom 사용자 지정·Retry 다시 시도·Inbox 인박스 등)·대소문자 짝 맞춤·띄어쓰기·브랜드 항목 삭제(Instagram·Tiktok 은 원문 그대로) · estimate 견적서 2 + 설정 앱(crm settings — 중계 iframe, 비즈니스 프로필 등, 메시지가 컴파일된 함수라 함수 소스에서 원문 복원) 카탈로그: 같은 원문 이관 5,009(독립 검수 2갈래 교정 100) + 신규 600(번역 1갈래 + 검수 교정 6) + 복수형 34(한국어는 단일형). 적용은 로더 v4.21.15 ⑩ 뒤 캐너리 · 중계 iframe 앱 카탈로그 2개(워크플로우 5,309·설정 5,569)는 편집 정본의 ifrApps 로 옮겨 런타임 apps 에서 뺐다 — 캐너리 1계정만 쓰는데 전 고객이 받는 무게(gzip +140KB)라서. 분리 파일 data/hc-ko-app-ifr.json(IFR 붙을 때만 로드)은 split·publish-cdn 변경이라 벤자민 승인 뒤 + 견적서 편집기 미리 채우기 안내 6 (텔레메트리 11-07 잔여) + AI 직원 소개 통화 연출 'calling...' + AI 에이전트 빌더(agentBuilderApp) 5,358 — GHL 이 AI 직원·음성 AI 네임스페이스를 새 묶음으로 옮김: 같은 키 이관 4,166(독립 검수 3갈래 교정 578) + 신규 1,192(번역 3갈래 + 검수 2갈래 교정 11) · 용어 통일(액션·예약 접수·봇 전환·고지 문구·운영 시간) + 에이전트 배포 탭 '빌드에서 편집' → '구성에서 편집'(탭 이름 '구성'과 맞춤) + AI 스튜디오(iframe 중계 vibe 앱) 2,309 — 번역 4갈래 + 독립 검수 2갈래 교정 41 + 표기 통일 12(변경사항·게시) · LeadConnector/HighLevel/Vibe → 하이퍼클래스/AI 스튜디오",
+  "source": "~3단어 라벨 신규 3,023(번역 4갈래 + 독립 검수 2갈래 교정 32). 4단어 이상 문장 약 3,970은 다음 라운드. 로더 v4.21.15 ⑩(iframe 카탈로그 병합) 뒤 캐너리에서 적용 + 멤버십 → 코스 → 분석(membership-analytics 별도 앱, 지문 analytics, 로케일 en_US) 318 전부 영어였음 — 번역 1갈래(기존 같은 원문 108 제안 반영) + 독립 검수 교정 1 · 거래 상세 'Two/One Step Order Form' _text · 거래 보기·권한 범위 용어(트랜잭션→거래 내역, 제품→상품) 정정 9 + 코스 분석 회원 표 머리글 _text 7(별도 앱 카탈로그보다 표 열 정의가 먼저 만들어져 영어로 굳는 경합 — 라이브 실측) + _textScoped 문맥 검수(독립 검수 1,407 전수) 정정 64: 한 화면 문맥이 묻은 값(Estimate 예상 수익→견적서·Items 상품→항목·Bold 대담한→굵게·Closed 휴무→종료됨·Stable 마구간→안정·Library 도서관→라이브러리·Large 길게→크게 등)·참조본 다수 표기로 통일(Create 만들기·Draft 임시 저장·Custom 사용자 지정·Retry 다시 시도·Inbox 인박스 등)·대소문자 짝 맞춤·띄어쓰기·브랜드 항목 삭제(Instagram·Tiktok 은 원문 그대로) · estimate 견적서 2 + 설정 앱(crm settings — 중계 iframe, 비즈니스 프로필 등, 메시지가 컴파일된 함수라 함수 소스에서 원문 복원) 카탈로그: 같은 원문 이관 5,009(독립 검수 2갈래 교정 100) + 신규 600(번역 1갈래 + 검수 교정 6) + 복수형 34(한국어는 단일형). 적용은 로더 v4.21.15 ⑩ 뒤 캐너리 · 중계 iframe 앱 카탈로그 2개(워크플로우 5,309·설정 5,569)는 편집 정본의 ifrApps 로 옮겨 런타임 apps 에서 뺐다 — 캐너리 1계정만 쓰는데 전 고객이 받는 무게(gzip +140KB)라서. 분리 파일 data/hc-ko-app-ifr.json(IFR 붙을 때만 로드)은 split·publish-cdn 변경이라 벤자민 승인 뒤 + 견적서 편집기 미리 채우기 안내 6 (텔레메트리 11-07 잔여) + AI 직원 소개 통화 연출 'calling...' + AI 에이전트 빌더(agentBuilderApp) 5,358 — GHL 이 AI 직원·음성 AI 네임스페이스를 새 묶음으로 옮김: 같은 키 이관 4,166(독립 검수 3갈래 교정 578) + 신규 1,192(번역 3갈래 + 검수 2갈래 교정 11) · 용어 통일(액션·예약 접수·봇 전환·고지 문구·운영 시간) + 에이전트 배포 탭 '빌드에서 편집' → '구성에서 편집'(탭 이름 '구성'과 맞춤) + AI 스튜디오(iframe 중계 vibe 앱) 2,309 — 번역 4갈래 + 독립 검수 2갈래 교정 41 + 표기 통일 12(변경사항·게시) · LeadConnector/HighLevel/Vibe → 하이퍼클래스/AI 스튜디오 · v4.2.76: AI 스튜디오 홈 템플릿 카드 _text 21(서버 데이터 — 단어 1개 이름 E-commerce·Portfolio 는 원문 유지)",
   "strings": 102718
  },
  "host": {
@@ -177784,7 +177784,28 @@
   "Enrolment date": "등록일",
   "Session count": "접속 횟수",
   "Member Since": "가입일",
-  "Last Accessed": "마지막 접속"
+  "Last Accessed": "마지막 접속",
+  "Landing page": "랜딩 페이지",
+  "Create a modern SaaS landing page with hero, features, and pricing sections.": "히어로·기능 소개·요금제 섹션을 갖춘 모던한 SaaS 랜딩 페이지를 만듭니다.",
+  "Build an admin dashboard with sidebar navigation, charts, and data tables.": "사이드바 메뉴·차트·데이터 표가 있는 관리자 대시보드를 만듭니다.",
+  "Create an e-commerce storefront with product grid, cart, and checkout flow.": "상품 목록·장바구니·결제 흐름을 갖춘 온라인 쇼핑몰을 만듭니다.",
+  "Build a minimal developer portfolio with project gallery and about section.": "프로젝트 갤러리와 소개 섹션이 있는 깔끔한 개발자 포트폴리오를 만듭니다.",
+  "Blog / CMS": "블로그 / CMS",
+  "Build a blog platform with article listing, individual post pages, and a markdown content editor.": "글 목록·개별 글 페이지·마크다운 편집기를 갖춘 블로그 플랫폼을 만듭니다.",
+  "Todo / Task Manager": "할 일 / 작업 관리",
+  "Create a task management app with drag-and-drop kanban board, task creation, and status tracking.": "끌어서 옮기는 칸반 보드·작업 만들기·상태 추적이 있는 작업 관리 앱을 만듭니다.",
+  "Chat Application": "채팅 앱",
+  "Build a real-time chat interface with conversation list, message bubbles, and a message input area.": "대화 목록·말풍선·메시지 입력창이 있는 실시간 채팅 화면을 만듭니다.",
+  "Restaurant / Food Ordering": "레스토랑 / 음식 주문",
+  "Create a restaurant website with a menu, dish details, and an order cart with checkout.": "메뉴·요리 상세·주문 장바구니와 결제를 갖춘 레스토랑 웹사이트를 만듭니다.",
+  "Fitness Tracker": "피트니스 트래커",
+  "Build a fitness tracker app with workout logging, exercise library, and progress charts.": "운동 기록·운동 라이브러리·진행 차트가 있는 피트니스 트래커 앱을 만듭니다.",
+  "Social Media Feed": "소셜 미디어 피드",
+  "Create a social media feed with posts, likes, comments, and a profile sidebar.": "게시물·좋아요·댓글·프로필 사이드바가 있는 소셜 미디어 피드를 만듭니다.",
+  "Calendar / Scheduling": "캘린더 / 일정 관리",
+  "Build a calendar app with monthly/weekly views, event creation, and time slot scheduling.": "월간·주간 보기·일정 만들기·시간대 예약 기능이 있는 캘린더 앱을 만듭니다.",
+  "Weather App": "날씨 앱",
+  "Create a weather dashboard with current conditions, 7-day forecast, and location search.": "현재 날씨·7일 예보·지역 검색이 있는 날씨 대시보드를 만듭니다."
  },
  "_textScoped": {
   "AM": "오전",
