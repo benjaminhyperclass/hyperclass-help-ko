@@ -302,3 +302,10 @@ superagentsApp(Managed Agents 빌더·목록·채팅 레이어)의 제품명 표
 - **_textScoped 는 문맥 없이 적용**되므로 '어느 화면에 나와도 무난한 값'이 기준(v4.2.70 전수 검수). 확정: Inbox 인박스(결정 기록) · Estimate 견적서 · Create 만들기 · Draft 임시 저장 · Year 년 · On/Off 켜짐/꺼짐.
 - 비즈니스 프로필 iframe 앱(crm settings)은 메시지가 컴파일된 함수(원문 문자열 없음)라 이번 추출 방식이 안 통한다 — 함수 소스 파싱 또는 g.t() 렌더 결과로 따로 뽑아야 한다(다음).
 
+
+## [기록] '다 반영' 배포와 계정별 점검 — 2026-11-08
+- 벤자민 지시(2026-11-08 아침 "다 반영하고 오늘은 계정마다 상태가 어떤지 검토해줘")로 대기 중이던 것을 모두 내보냈다: #123(iframe 사전 별도 파일) · 로더 v4.21.15(#109, 캐너리 r6JD 실측 뒤 stable) · hc-ifr-proxy v0.3.0(#116, 대시보드 편집기로 배포 — 버전 e9ca76f8, 해시 자산 `immutable` 확인).
+- **포인터 봇 결함 2건(#129로 수정)**: ① 대상 커밋을 core/apps 만으로 골라 ifr 파일만 바뀐 커밋이 발행되지 않았다. ② 사전과 무관한 커밋으로 수동 전진(workflow_dispatch target)한 직후, 다음 검증 실행이 *더 오래된* 사전 커밋으로 포인터를 되돌렸다(rev 가 ifr 파일 없는 cdn 을 가리킴 — 캐너리만 영향, 404 로 조용히 꺼짐). 수정: `DICT_PATHS`(core·apps·ifr)로 대상·최신 판단·jsDelivr 대조, 포인터 원본이 대상의 후손이고 사전 파일이 같으면 건너뜀. **교훈: 포인터 수동 전진에 사전과 무관한 target 을 주지 않는다.**
+- 로컬 클론의 fetch refspec 이 main 만이면 `publish-cdn.sh` 의 `git fetch origin cdn` 이 원격 추적 브랜치를 갱신하지 않아 non-fast-forward 로 3회 실패한다 → `git config remote.origin.fetch '+refs/heads/*:refs/remotes/origin/*'` 후 실행.
+- **계정별 점검(서브계정 28, 제외 1r0p)**: 메인 앱 로더 v4.21.15·사전 rev 01a7675 가 27곳(회원 소유 1곳은 화면을 열지 않음 — 같은 전역 경로)에서 동작, 대시보드 남은 영어는 약어(SMS·CPC)·사용자 데이터뿐. 포털 한글팩 17/18(TP LAB 은 기존 JS 꺾쇠 — 결정 대기) · 포털 없는 계정 10. 알림 이메일(포털 59·인보이스 17·영수증·캘린더)은 기존 27곳 전부 한국어 유지, **신규 '스냅샷 마스터' 계정만 미적용**(드라이런: 포털 59·인보이스 17·영수증 제목·캘린더 동의 문구 1).
+- 점검에서 찾은 영어: 소셜 계정 연결이 만료된 고객 2곳의 모든 화면 상단 배너('The connection for the following Social Planner Instagram account(s) has expired: …' + 'Re-integrate') — 서버 문장이라 로더 v4.21.16 고정 패턴으로 처리.
