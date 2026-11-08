@@ -24,7 +24,7 @@
 (() => {
   const EXPECT = {
     version: '4.21.16',     // 포인터 loader.stable cdn ecc672e (= main e836453, 2026-11-08 — 벤자민 '다 반영')
-    revPrefix: '62f1d2f',   // 사전 v4.2.73 — cdn 커밋(원본 main 0c50bc3, 2026-11-08 AI 에이전트 빌더)
+    revPrefix: '40e951e',   // 사전 v4.2.74 — cdn 커밋(원본 main f94cbec, 2026-11-08 AI 에이전트 빌더)
     textEntries: 9361,      // _text — 배포된 core 건수(pretty 보다 C7 미배포분만큼 적다) (별도로 _textScoped 1,404 — status().scopedEntries)
   };
   const A = window.__hcKoApp;
