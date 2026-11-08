@@ -26,6 +26,7 @@ from exclusions import (  # noqa: E402
 SRC = os.path.join(ROOT, '_source/hc-ko-app.pretty.json')
 CORE = os.path.join(ROOT, 'data/hc-ko-app-core.json')
 APPS = os.path.join(ROOT, 'data/hc-ko-app-apps.json')
+IFR = os.path.join(ROOT, 'data/hc-ko-app-ifr.json')   # 중계 iframe 앱 카탈로그(편집 정본 ifrApps) — 로더가 IFR 이 붙을 때만 받는다
 
 MIN = (',', ':')
 
@@ -45,6 +46,7 @@ def main():
             '_textScoped': dict(o.get('_textScoped') or {})}
     apps = {'_meta': dict(meta, part='apps'),
             'apps': copy.deepcopy(o['apps']), 'appsMeta': o['appsMeta']}
+    ifr = {'_meta': dict(meta, part='ifr'), 'apps': copy.deepcopy(o.get('ifrApps') or {})}
 
     if prefixes:
         en = english_originals(prefixes)
@@ -54,6 +56,7 @@ def main():
         n_text = len(prune_by_english(core['_text'], en))
         n_text += len(prune_by_english(core['_textScoped'], en))
         n_apps = sum(len(prune_nested(cat, prefixes)) for cat in apps['apps'].values())
+        n_apps += sum(len(prune_nested(cat, prefixes)) for cat in ifr['apps'].values())
         print(f'제외 적용 — 네임스페이스 {len(prefixes)}개 / 영어 원문 {len(en)}종')
         print(f'  host {n_host} / apps {n_apps} / flat {n_flat} / _text {n_text} 제거')
 
@@ -64,6 +67,8 @@ def main():
         e_host = sum(len(prune_nested_by_english(sub, en_of, en_ci, base=ns))
                      for ns, sub in core['host'].items() if isinstance(sub, dict))
         e_apps = sum(len(prune_nested_by_english(cat, en_of, en_ci)) for cat in apps['apps'].values())
+        # ifrApps 참조본 키는 '<지문>.<경로>' 꼴이다
+        e_apps += sum(len(prune_nested_by_english(cat, en_of, en_ci, base=fp)) for fp, cat in ifr['apps'].items())
         e_flat = [k for k in list(core['flat']) if isinstance(en_of.get(k), str) and en_of[k].strip().lower() in en_ci]
         for k in e_flat:
             del core['flat'][k]
@@ -71,7 +76,7 @@ def main():
         print(f'영어 원문 제외 {sorted(en_ci)} — host {e_host} / apps {e_apps} / flat {len(e_flat)} / _text {e_text} 제거')
 
     os.makedirs(os.path.dirname(CORE), exist_ok=True)
-    for path, obj in ((CORE, core), (APPS, apps)):
+    for path, obj in ((CORE, core), (APPS, apps), (IFR, ifr)):
         with open(path, 'w', encoding='utf-8') as f:
             json.dump(obj, f, ensure_ascii=False, separators=MIN)
         print(f'  {os.path.relpath(path, ROOT):<32} {os.path.getsize(path):>10,} bytes')
