@@ -39,6 +39,10 @@ on:
 permissions:
   contents: write
 
+# 사전 런타임 파일(2026-11-08: iframe 앱 사전 hc-ko-app-ifr.json 추가 — 이 파일만 바뀐 커밋도 발행되게).
+env:
+  DICT_PATHS: data/hc-ko-app-core.json data/hc-ko-app-apps.json data/hc-ko-app-ifr.json
+
 concurrency:
   group: ko-app-pointer
   cancel-in-progress: false
@@ -65,7 +69,7 @@ jobs:
           set -e
           git fetch -q origin main && git checkout -q -B main origin/main
           if [ -n "$INPUT_TARGET" ]; then TARGET="$INPUT_TARGET"; else
-            TARGET=$(git log -1 --format=%H -- data/hc-ko-app-core.json data/hc-ko-app-apps.json); fi
+            TARGET=$(git log -1 --format=%H -- $DICT_PATHS); fi
           CUR=$(python3 -c "import json;d=json.load(open('data/hc-ko-app-rev.json'));print(d.get('src') or d['rev'])")
           BY=$(python3 -c "import json;print(json.load(open('data/hc-ko-app-rev.json')).get('by',''))")
           VER=$(git show "$TARGET:data/hc-ko-app-core.json" | python3 -c "import json,sys;print(json.load(sys.stdin)['_meta'].get('version','?'))")
@@ -73,6 +77,12 @@ jobs:
           skip() { echo "skip=true" >> $GITHUB_OUTPUT; echo "## REV 포인터: 건너뜀 — $1" | tee -a $GITHUB_STEP_SUMMARY; }
           if ! git cat-file -e "$TARGET^{commit}" 2>/dev/null; then echo "❌ 대상 커밋 없음: $TARGET"; exit 1; fi
           if [ "$TARGET" = "$CUR" ]; then skip "이미 최신 (\`${CUR:0:7}\`, 사전 v$VER)"; exit 0; fi
+          # 뒤로 가기 방지(2026-11-08): 포인터가 이미 대상의 후손 커밋을 가리키고 사전 파일이 모두 같으면 그대로 둔다.
+          # (사전과 무관한 커밋으로 수동 전진한 뒤 다음 검증 실행이 더 오래된 사전 커밋으로 되돌리던 문제)
+          if git merge-base --is-ancestor "$TARGET" "$CUR" 2>/dev/null; then
+            same=1; for f in $DICT_PATHS; do [ "$(git rev-parse -q --verify "$TARGET:$f" || true)" = "$(git rev-parse -q --verify "$CUR:$f" || true)" ] || same=0; done
+            if [ $same = 1 ]; then skip "포인터 원본(\`${CUR:0:7}\`)이 대상(\`${TARGET:0:7}\`)의 후손이고 사전 파일이 같음"; exit 0; fi
+          fi
           # 검증 통과 확인: workflow_run 이면 검증된 커밋의 사전 blob 과 대상의 blob 이 같아야 한다.
           # (대상이 검증된 커밋의 조상이고 그 사이 사전이 안 바뀌었으면 같은 내용이 검증된 것)
           if [ -n "$VALIDATED_SHA" ]; then
@@ -107,7 +117,8 @@ jobs:
           C: ${{ steps.cdn.outputs.sha }}
         run: |
           set -e
-          for f in data/hc-ko-app-core.json data/hc-ko-app-apps.json; do
+          for f in $DICT_PATHS; do
+            git cat-file -e "$T:$f" 2>/dev/null || { echo "  · $f — 대상 커밋에 없음(건너뜀)"; continue; }
             want=$(git show "$T:$f" | sha256sum | cut -c1-64)
             url="https://cdn.jsdelivr.net/gh/benjaminhyperclass/hyperclass-help-ko@$C/$f"
             ok=0
@@ -134,7 +145,7 @@ jobs:
           for i in 1 2 3; do
             git fetch -q origin main && git checkout -q -B main origin/main
             # 그 사이 더 새 사전 커밋이 왔으면 이 실행은 물러난다 (그 커밋의 검증 실행이 처리)
-            LATEST=$(git log -1 --format=%H -- data/hc-ko-app-core.json data/hc-ko-app-apps.json)
+            LATEST=$(git log -1 --format=%H -- $DICT_PATHS)
             if [ -z "$INPUT_TARGET" ] && [ "$LATEST" != "$T" ]; then
               echo "## REV 포인터: 건너뜀 — 더 새 사전 커밋(\`${LATEST:0:7}\`)이 있어 그쪽 실행에 맡김" | tee -a $GITHUB_STEP_SUMMARY; exit 0; fi
             python3 - <<'PY'
