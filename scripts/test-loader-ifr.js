@@ -76,13 +76,14 @@ async function run(name, { loc, health = true, off = false, delay = 300 }) {
   chk(/워크플로우 목록/.test(A.inner) && /워크플로우 만들기/.test(A.inner), 'A iframe translated');
   chk(A.late === '폴더 만들기', 'A late node translated by mo');
   chk(A.ifr && A.ifr.on && A.ifr.ok === true && A.ifr.frames === 1 && A.ifr.rewrites >= 2, 'A status.ifr');
-  chk(A.version === '4.21.17', 'A version');
+  chk(A.version === '4.21.18', 'A version');
   chk(A.merged && A.merged.indexOf('en_US') >= 0 && A.merged.indexOf('en') >= 0 && A.koCat === true, 'A iframe Vue catalog merged (⑩)');
-  const B = await run('B 다른 계정', { loc: OTHER });
-  chk(B.src.startsWith('https://client-app-automation-workflows'), 'B not rewritten');
-  chk(B.native === true && B.ifr && B.ifr.on === false, 'B prototypes untouched');
-  chk(B.res.handshake === true, 'B handshake (original)');
-  chk(B.merged === null || B.merged.length === 0, 'B no iframe catalog merge (cross-origin)');
+  // v4.21.18: 전 계정 — 다른 계정도 캐너리와 똑같이 중계·번역된다
+  const B = await run('B 다른 계정(v4.21.18 전 계정)', { loc: OTHER });
+  chk(B.src === A.src.replace(CANARY, OTHER) || B.src.indexOf('/__ifr/wf/') >= 0, 'B rewritten (all accounts)');
+  chk(B.ifr && B.ifr.on === true && B.ifr.ok === true, 'B status.ifr on');
+  chk(B.res.handshake === true && B.res.childOrigin === 'https://app.hyperclass.ai', 'B handshake origin');
+  chk(/워크플로우 목록/.test(B.inner), 'B iframe translated');
   const C = await run('C 헬스 실패', { loc: CANARY, health: false });
   chk(C.src.startsWith('https://client-app-automation-workflows') && C.ifr.ok === false, 'C fallback original');
   chk(C.res.handshake === true, 'C handshake (original)');

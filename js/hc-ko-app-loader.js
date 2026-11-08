@@ -1,4 +1,5 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.17
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.18
+ * v4.21.18: iframe 중계(자동화·비즈니스 프로필·AI 스튜디오)를 전 계정으로(벤자민 승인 2026-11-08) — IFR_LOCS null.
  * v4.21.17: iframe 중계 대상에 AI 스튜디오(leadgen-vibe-ai-builder → /__ifr/vibe/, Worker v0.4.0) 추가 — 범위는 그대로 IFR_LOCS.
  * v4.21.16: 상단 알림 배너 '소셜 플래너 계정 연결 만료' 문장·'Re-integrate' 버튼(서버가 영어로 내려주는 문장, 고객 2곳 실측) — 고정 패턴 ⑦에 추가.
  * v4.21.15: ① 선택 목록 옵션의 단어 1개 — 같은 메뉴 옵션이 전부 사전 단어일 때만(앱이 정한 열거값: 코스 난이도·주제·언어)
@@ -227,7 +228,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.21.17',
+    version: '4.21.18',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -975,9 +976,10 @@
   // 끄기: localStorage.hcKoIfr='0'(이 브라우저) · Worker 라우트 삭제(전체 — 헬스 실패로 원래 주소) · 포인터 loader.next 되돌리기.
   var IFR_HOSTS = { 'client-app-automation-workflows.leadconnectorhq.com': 'wf', 'client-app-crm-settings.leadconnectorhq.com': 'crm',
     'leadgen-vibe-ai-builder.leadconnectorhq.com': 'vibe' };   // v4.21.17: AI 스튜디오(Worker v0.4.0)
-  var IFR_LOCS = ['r6JD1nsqtk6Oln28fgrj'];
+  // v4.21.18: 전 계정(벤자민 승인 2026-11-08). null = 로더가 허용된 모든 로케이션. 끄기 = Worker OFF(헬스 실패 → 원래 주소) 또는 이 값을 캐너리 목록으로.
+  var IFR_LOCS = null;
   var ifr = { on: false, ok: null, rewrites: 0, frames: 0, fail: null };
-  function ifrWanted() { var l = locOf(); return !!l && IFR_LOCS.indexOf(l) >= 0 && allowed(); }
+  function ifrWanted() { var l = locOf(); return !!l && (!IFR_LOCS || IFR_LOCS.indexOf(l) >= 0) && allowed(); }
   function ifrRw(u) {
     if (ifr.ok !== true || !ifrWanted()) return u;
     try {
