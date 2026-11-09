@@ -1,4 +1,4 @@
-/* hc-portal-ko-runner v1.2.0 — 클라이언트 포털 한글팩(슬롯 JS + 베일 CSS)을 서브계정 포털 설정 맨 위에 덧붙인다.
+/* hc-portal-ko-runner v1.2.1 — 클라이언트 포털 한글팩(슬롯 JS + 베일 CSS)을 서브계정 포털 설정 맨 위에 덧붙인다.
    app.hyperclass.ai 의 /v2/location/... 화면에서 실행. 덮어쓰지 않는다(맨 위 덧붙임), 이미 있으면 건너뜀,
    고객 기존 JS 에 꺾쇠가 있으면 건너뛰고 보고, 저장 뒤 전 필드 비교(바뀐 다른 필드가 있으면 즉시 원복 시도·보고).
    HCPK.inventory(ids) · HCPK.run(L,{dry}) · HCPK.runAll(ids,{dry}) · HCPK.log() */
@@ -48,7 +48,7 @@
     const hasJs = js0.includes(MARK_JS), hasCss = css0.includes(MARK_CSS);
     const lt = !hasJs && js0.includes('<');
     return { hasJs, hasCss, lt, js: hasJs || lt ? js0 : (js0.trim() ? SLOT + '\n\n' + js0 : SLOT), css: hasCss || lt ? css0 : (css0.trim() ? CSS + '\n\n' + css0 : CSS),
-      host: s.customDomain || (s.subDomain ? s.subDomain + '.clientclub.net' : null) };
+      host: s.customDomain || (s.subDomain ? s.subDomain + '.app.clientclub.net' : null) }; // v1.2.1: 기본 포털 주소는 <subDomain>.app.clientclub.net (2026-11-09 실측 — '.clientclub.net' 은 NXDOMAIN)
   }
   async function inventory(ids) {
     const rows = [];
@@ -105,5 +105,5 @@
     return { L, result: 'ok' };
   }
   async function runAll(ids, opt) { const out = []; for (const L of ids) { try { out.push(await run(L, opt)); } catch (e) { out.push({ L, error: String(e) }); } } return out; }
-  window.HCPK = { inventory, run, runAll, updateVeil, log: () => LOG, SLOT, CSS, version: '1.2.0' };
+  window.HCPK = { inventory, run, runAll, updateVeil, log: () => LOG, SLOT, CSS, version: '1.2.1' };
 })();
