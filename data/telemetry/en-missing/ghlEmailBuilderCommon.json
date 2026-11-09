@@ -1016,6 +1016,7 @@
  "common.versionRestoreFailed": "Could not restore this version. Please try again.",
  "common.versionRestored": "Version restored",
  "common.versionRestoredDescription": "The email now shows the version you picked.",
+ "common.versionRestoredReloadFailed": "The version was restored, but the editor could not load it. Refresh the page to see it.",
  "common.view": "View",
  "common.viewAllVariations": "View All variations",
  "common.viewContactDetails": "View {Contact} Details",
