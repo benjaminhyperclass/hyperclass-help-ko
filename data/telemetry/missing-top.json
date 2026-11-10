@@ -1,78 +1,17 @@
 {
-  "date": "2026-11-08",
-  "generated": "2026-11-09T06:20:14Z",
-  "koRatio": 0.917,
+  "date": "2026-11-09",
+  "generated": "2026-11-10T07:13:26Z",
+  "koRatio": 0.91,
   "edge": {
-    "n": 54,
-    "p50": 1735,
-    "p90": 2508,
+    "n": 3,
+    "p50": 2114,
+    "p90": 2379,
     "gate": 0
   },
   "top": [
     {
-      "ns": "agentBuilderApp",
-      "exposures": 38,
-      "en": 5398,
-      "total": 5398,
-      "samples": [
-        "accessDenied.title",
-        "accessDenied.message",
-        "actionButton.maxActionsAllowed",
-        "agentDetails.advanced.transcriptionSettings.boostedKeywords.tooltip",
-        "agentDetails.advanced.transcriptionSettings.boostedKeywords.placeholder",
-        "agentDetails.advanced.transcriptionSettings.boostedKeywords.help",
-        "agentDetails.fields.greetingMessage.outbound.aiDisclaimer.preview",
-        "agentDetails.fields.greetingMessage.outbound.aiDisclaimer.verify.checkButton",
-        "agentDetails.fields.greetingMessage.outbound.aiDisclaimer.verify.checking",
-        "agentGoals.addSummaryNoteWithoutContact"
-      ]
-    },
-    {
-      "ns": "mediaCenterApp",
-      "exposures": 89,
-      "en": 571,
-      "total": 578,
-      "samples": [
-        "common.canva",
-        "common.canvaConnected",
-        "common.googleDrive",
-        "common.files",
-        "common.getLink",
-        "common.moveToFolder"
-      ]
-    },
-    {
-      "ns": "APP~vibeIfr",
-      "exposures": 16,
-      "en": 2314,
-      "total": 2314,
-      "samples": [
-        "banner.dismiss",
-        "common.edit",
-        "common.retry",
-        "dashboard.subaccount_access.no_search_results",
-        "dashboard.subaccount_access.access_line",
-        "dashboard.subaccount_access.rows_per_page",
-        "code.keep_editing",
-        "code.leave",
-        "code.discard_confirm",
-        "domainConnect.also_add_label"
-      ]
-    },
-    {
-      "ns": "agencyDashboardApp",
-      "exposures": 31,
-      "en": 188,
-      "total": 188,
-      "samples": [
-        "agencyDashboard.common.agencyTitle",
-        "agencyDashboard.common.apply",
-        "agencyDashboard.common.cancel"
-      ]
-    },
-    {
       "ns": "common",
-      "exposures": 89,
+      "exposures": 20,
       "en": 62,
       "total": 2442,
       "samples": [
@@ -83,7 +22,7 @@
     },
     {
       "ns": "agency",
-      "exposures": 89,
+      "exposures": 20,
       "en": 60,
       "total": 643,
       "samples": [
@@ -93,23 +32,8 @@
       ]
     },
     {
-      "ns": "ghlEmailBuilderCommon",
-      "exposures": 68,
-      "en": 64,
-      "total": 4156,
-      "samples": [
-        "campaignSchedule.contactsRecipientLabel",
-        "campaignSchedule.datePlaceholder",
-        "chatBot.heroDeviceGallery.browserChromeUrl",
-        "campaignSchedule.nContacts",
-        "common.delete",
-        "common.url",
-        "common.versionRestoredReloadFailed"
-      ]
-    },
-    {
       "ns": "integrationsApp",
-      "exposures": 89,
+      "exposures": 20,
       "en": 48,
       "total": 837,
       "samples": [
@@ -119,23 +43,19 @@
       ]
     },
     {
-      "ns": "aiEmployeesApp",
-      "exposures": 76,
-      "en": 53,
-      "total": 2657,
+      "ns": "agencyDashboardApp",
+      "exposures": 4,
+      "en": 188,
+      "total": 188,
       "samples": [
-        "aiValueLandingPage.call.contactName",
-        "composables.useProvider.models.openaiGpt41",
-        "conversationAI.dashboard.channel.facebook",
-        "aiEmployee.modal.paymentWall.tosPromo",
-        "aiEmployee.modal.paymentWall.productCost",
-        "common.delete",
-        "composables.useProvider.models.openaiGpt41Mini"
+        "agencyDashboard.common.agencyTitle",
+        "agencyDashboard.common.apply",
+        "agencyDashboard.common.cancel"
       ]
     },
     {
       "ns": "reportingApp",
-      "exposures": 85,
+      "exposures": 15,
       "en": 46,
       "total": 2840,
       "samples": [
@@ -146,7 +66,7 @@
     },
     {
       "ns": "adPublishingApp",
-      "exposures": 89,
+      "exposures": 20,
       "en": 32,
       "total": 3017,
       "samples": [
@@ -156,19 +76,19 @@
       ]
     },
     {
-      "ns": "schemaMarkupApp",
-      "exposures": 1,
-      "en": 2798,
-      "total": 3260,
+      "ns": "socialPlannerApp",
+      "exposures": 20,
+      "en": 28,
+      "total": 3248,
       "samples": [
-        "schemaMarkup.categories.searchFunctionality",
-        "schemaMarkup.categories.publishingInformation",
-        "schemaMarkup.categories.additionalInformation"
+        "common.linkedin",
+        "common.youtube",
+        "common.csv"
       ]
     },
     {
       "ns": "campaign",
-      "exposures": 89,
+      "exposures": 20,
       "en": 23,
       "total": 803,
       "samples": [
@@ -178,8 +98,19 @@
       ]
     },
     {
+      "ns": "ghlEmailBuilderCommon",
+      "exposures": 20,
+      "en": 23,
+      "total": 4087,
+      "samples": [
+        "campaignSchedule.contactsRecipientLabel",
+        "campaignSchedule.datePlaceholder",
+        "chatBot.heroDeviceGallery.browserChromeUrl"
+      ]
+    },
+    {
       "ns": "copilotApp",
-      "exposures": 89,
+      "exposures": 20,
       "en": 20,
       "total": 3201,
       "samples": [
@@ -190,7 +121,7 @@
     },
     {
       "ns": "copilot",
-      "exposures": 89,
+      "exposures": 20,
       "en": 19,
       "total": 807,
       "samples": [
@@ -201,33 +132,8 @@
       ]
     },
     {
-      "ns": "socialPlannerApp",
-      "exposures": 51,
-      "en": 33,
-      "total": 3263,
-      "samples": [
-        "common.linkedin",
-        "common.youtube",
-        "common.csv"
-      ]
-    },
-    {
-      "ns": "productsApp",
-      "exposures": 86,
-      "en": 19,
-      "total": 988,
-      "samples": [
-        "bulkEdit.fieldManagement.groups.seo",
-        "common.square",
-        "common.americanExpress",
-        "common.delete",
-        "common.visa",
-        "common.mastercard"
-      ]
-    },
-    {
       "ns": "agentStudioApp",
-      "exposures": 80,
+      "exposures": 20,
       "en": 19,
       "total": 2164,
       "samples": [
@@ -237,43 +143,20 @@
       ]
     },
     {
-      "ns": "conversationsUtilitiesApp",
-      "exposures": 89,
-      "en": 16,
-      "total": 921,
+      "ns": "productsApp",
+      "exposures": 20,
+      "en": 19,
+      "total": 988,
       "samples": [
-        "manualActions.sms",
-        "snippets.enterCtaUrl",
-        "snippets.rcs"
-      ]
-    },
-    {
-      "ns": "contactsApp",
-      "exposures": 80,
-      "en": 16,
-      "total": 913,
-      "samples": [
-        "filters.attributionMediumOptions.api",
-        "filters.attributionMediumOptions.facebook",
-        "filters.attributionMediumOptions.google",
-        "common.delete",
-        "deleteContactModal.delete"
-      ]
-    },
-    {
-      "ns": "crmObjectsSettingsApp",
-      "exposures": 89,
-      "en": 14,
-      "total": 1802,
-      "samples": [
-        "manageTags.tagDescriptionCount",
-        "restoreContacts.typeDeletePlaceholder",
-        "customFields.fieldTypes.url"
+        "bulkEdit.fieldManagement.groups.seo",
+        "common.square",
+        "common.americanExpress",
+        "collection.seo.handlePrefix"
       ]
     },
     {
       "ns": "clientPortalBuilder",
-      "exposures": 64,
+      "exposures": 20,
       "en": 17,
       "total": 917,
       "samples": [
@@ -286,26 +169,43 @@
       ]
     },
     {
-      "ns": "usersMicroApp",
-      "exposures": 77,
-      "en": 14,
-      "total": 962,
+      "ns": "conversationsUtilitiesApp",
+      "exposures": 20,
+      "en": 16,
+      "total": 921,
       "samples": [
-        "auditLogs.saas",
-        "auditLogs.stripe",
-        "notifications.list.filters.emailPlaceholder",
-        "common.delete",
-        "teams.delete",
-        "profile.emailSync.gmail",
-        "profile.emailSync.outlook",
-        "profile.notifications.channelSms"
+        "manualActions.sms",
+        "snippets.enterCtaUrl",
+        "snippets.rcs"
+      ]
+    },
+    {
+      "ns": "crmObjectsSettingsApp",
+      "exposures": 20,
+      "en": 14,
+      "total": 1802,
+      "samples": [
+        "manageTags.tagDescriptionCount",
+        "restoreContacts.typeDeletePlaceholder",
+        "customFields.fieldTypes.url"
+      ]
+    },
+    {
+      "ns": "contactsApp",
+      "exposures": 20,
+      "en": 13,
+      "total": 907,
+      "samples": [
+        "filters.attributionMediumOptions.api",
+        "filters.attributionMediumOptions.facebook",
+        "filters.attributionMediumOptions.google"
       ]
     },
     {
       "ns": "conversations",
-      "exposures": 89,
-      "en": 11,
-      "total": 549,
+      "exposures": 20,
+      "en": 10,
+      "total": 548,
       "samples": [
         "send.sms.errors.genericError",
         "send.email.errors.genericError",
@@ -313,31 +213,19 @@
       ]
     },
     {
-      "ns": "agentLogsApp",
-      "exposures": 79,
-      "en": 12,
-      "total": 1340,
+      "ns": "mediaCenterApp",
+      "exposures": 20,
+      "en": 10,
+      "total": 577,
       "samples": [
-        "agentLogs.spanLabels.stepTypes.llm_node",
-        "agentLogs.logDetail.inspect.latencyValue",
-        "agentLogs.logDetail.units.milliseconds",
-        "agentLogs.metrics.layout.delete"
-      ]
-    },
-    {
-      "ns": "funnelWebsiteApp",
-      "exposures": 49,
-      "en": 18,
-      "total": 976,
-      "samples": [
-        "common.delete",
-        "common.clickFunnelsUrl",
-        "common.seoAndAeo"
+        "common.canva",
+        "common.canvaConnected",
+        "common.googleDrive"
       ]
     },
     {
       "ns": "fpDebugger",
-      "exposures": 89,
+      "exposures": 20,
       "en": 8,
       "total": 115,
       "samples": [
@@ -347,8 +235,41 @@
       ]
     },
     {
+      "ns": "agentLogsApp",
+      "exposures": 20,
+      "en": 8,
+      "total": 1327,
+      "samples": [
+        "agentLogs.spanLabels.stepTypes.llm_node",
+        "agentLogs.logDetail.inspect.latencyValue",
+        "agentLogs.logDetail.units.milliseconds"
+      ]
+    },
+    {
+      "ns": "usersMicroApp",
+      "exposures": 20,
+      "en": 8,
+      "total": 955,
+      "samples": [
+        "auditLogs.saas",
+        "auditLogs.stripe",
+        "notifications.list.filters.emailPlaceholder"
+      ]
+    },
+    {
+      "ns": "aiEmployeesApp",
+      "exposures": 20,
+      "en": 8,
+      "total": 2571,
+      "samples": [
+        "aiValueLandingPage.call.contactName",
+        "composables.useProvider.models.openaiGpt41",
+        "conversationAI.dashboard.channel.facebook"
+      ]
+    },
+    {
       "ns": "reselling",
-      "exposures": 89,
+      "exposures": 20,
       "en": 7,
       "total": 613,
       "samples": [
@@ -359,7 +280,7 @@
     },
     {
       "ns": "smartList",
-      "exposures": 78,
+      "exposures": 18,
       "en": 6,
       "total": 668,
       "samples": [
@@ -370,7 +291,7 @@
     },
     {
       "ns": "brandBoardsApp",
-      "exposures": 63,
+      "exposures": 16,
       "en": 6,
       "total": 4442,
       "samples": [
@@ -380,93 +301,14 @@
       ]
     },
     {
-      "ns": "superagentsApp",
-      "exposures": 18,
-      "en": 21,
-      "total": 1593,
-      "samples": [
-        "testPanel.subStatus",
-        "chatLayer.browserKeyEscape",
-        "chatLayer.browserKeyPageDown"
-      ]
-    },
-    {
       "ns": "countdownTimerApp",
-      "exposures": 34,
+      "exposures": 7,
       "en": 6,
       "total": 491,
       "samples": [
         "customVariables.pdfLink",
         "customVariables.otp",
         "customVariables.pdfUrl"
-      ]
-    },
-    {
-      "ns": "opportunitiesApp",
-      "exposures": 16,
-      "en": 11,
-      "total": 1912,
-      "samples": [
-        "appointments.google",
-        "appointments.teams",
-        "opportunities.quickActionSource.actionWithSource",
-        "appointments.delete"
-      ]
-    },
-    {
-      "ns": "customField",
-      "exposures": 19,
-      "en": 9,
-      "total": 155,
-      "samples": [
-        "createFieldModal.fileTypes.csv",
-        "createFieldModal.fileTypes.doc",
-        "createFieldModal.fileTypes.gif",
-        "allFieldsTab.bulkAction.delete"
-      ]
-    },
-    {
-      "ns": "contentAIApp",
-      "exposures": 7,
-      "en": 7,
-      "total": 395,
-      "samples": [
-        "showVariationsModal.ctaLabel",
-        "socialPlatformSelector.platformNames.facebook",
-        "socialPlatformSelector.platformNames.instagram"
-      ]
-    },
-    {
-      "ns": "communitiesApp",
-      "exposures": 2,
-      "en": 13,
-      "total": 132,
-      "samples": [
-        "common.communitiesDomain",
-        "common.httpsPrefix",
-        "common.delete"
-      ]
-    },
-    {
-      "ns": "APP~agentBuilderLong",
-      "exposures": 1,
-      "en": 23,
-      "total": 23,
-      "samples": [
-        "aiEmployee.modal.paymentWall.tosPromo#0",
-        "aiEmployee.modal.paymentWall.tosPromo#1",
-        "conversationAI.chatBuilder.templates.frontDesk.prompt#0"
-      ]
-    },
-    {
-      "ns": "proposalCommon",
-      "exposures": 2,
-      "en": 7,
-      "total": 1189,
-      "samples": [
-        "common.redirectUrlPlaceholder",
-        "common.sms",
-        "common.timezoneLabel"
       ]
     }
   ],
