@@ -1,4 +1,7 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.18
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.19
+ * v4.21.19: 에이전시 화면(로그인한 에이전시 관리자 메뉴 — 대시보드·하위 계정·스냅샷·리셀링·설정 등)을 연다(벤자민 2026-11-10 '진행해줘').
+ *          명시 목록 AGENCY(첫 경로 조각, 라우터 getRoutes·사이드바 실측). 사전은 이미 97% 를 덮는다(에이전시 화면 카탈로그 9,885 중 9,562 한국어 실측).
+ *          통과·리다이렉트 경로(/logout·/eject·/idp·/login/*·/desktop 등)와 공개 경로는 넣지 않는다. 결정 ⑤(10월, 에이전시 화면 범위 밖)를 대체.
  * v4.21.18: iframe 중계(자동화·비즈니스 프로필·AI 스튜디오)를 전 계정으로(벤자민 승인 2026-11-08) — IFR_LOCS null.
  * v4.21.17: iframe 중계 대상에 AI 스튜디오(leadgen-vibe-ai-builder → /__ifr/vibe/, Worker v0.4.0) 추가 — 범위는 그대로 IFR_LOCS.
  * v4.21.16: 상단 알림 배너 '소셜 플래너 계정 연결 만료' 문장·'Re-integrate' 버튼(서버가 영어로 내려주는 문장, 고객 2곳 실측) — 고정 패턴 ⑦에 추가.
@@ -138,7 +141,7 @@
   // ▼▼▼ 단계적 배포 ▼▼▼
   // 비어 있으면 전 서브계정(/v2/location/<id>/…)에 적용된다 — 2026-10-08 전체 개방(벤자민 지시).
   // 값을 넣으면 그 로케이션 ID 에서만 동작한다(다시 좁혀야 할 때).
-  // 어느 쪽이든 에이전시 화면(/agency_dashboard 등)은 범위 밖 — 레거시 레이어가 맡는다.
+  // 에이전시 화면은 v4.21.19 부터 아래 AGENCY 목록으로 연다(ALLOW 로 좁혀 둔 상태에서는 열지 않는다).
   var ALLOW = [];
   // ▲▲▲ 단계적 배포 ▲▲▲
   var gate = ALLOW.length > 0;
@@ -152,6 +155,17 @@
   function preauth() {
     var p = location.pathname.replace(/\/+$/, '').toLowerCase() || '/';
     return PREAUTH.indexOf(p) >= 0;
+  }
+  // 에이전시 화면 (v4.21.19) — 로그인한 에이전시 관리자의 메뉴 화면. 첫 경로 조각 정확 일치(대소문자 무시).
+  // 2026-11-10 라우터 getRoutes()·에이전시 사이드바 링크 실측으로 고른 **화면이 있는 메뉴 경로만**. 로그아웃·eject·idp·데스크톱·다운로드·
+  // 외부 연동 리다이렉트(jobber·shopify·tiktok)·공개 템플릿·잠김/정지 화면·맞춤 메뉴 링크(고객 페이지 iframe)는 넣지 않는다.
+  var AGENCY = ['agency_dashboard', 'agency_launchpad', 'ai-suite', 'ask-ai-agency', 'ai-usage', 'saas_dashboard', 'saas_education',
+    'saas_fasttrack', 'prospecting', 'sub-accounts', 'sub-accounts-v2', 'accounts', 'transfer-locations', 'snapshots', 'reselling',
+    'marketplace', 'integration', 'affiliate_portal', 'template-library-admin', 'partners', 'partner-network', 'university',
+    'ghl-swag', 'ideas', 'mobile-app-customiser', 'desktop-whitelabel-app', 'settings'];
+  function agencyRoute() {
+    var seg = (location.pathname.split('/')[1] || '').toLowerCase();
+    return !!seg && AGENCY.indexOf(seg) >= 0;
   }
   // 제외 계정 새로고침 차단기 — reloadIfExcluded() 가 sessionStorage 에 시각을 남긴다.
   // 30초 안에 남긴 기록이 있으면 ① 이 로드는 PREAUTH 에서 부팅하지 않고 ② 다시 새로고침하지 않는다(루프 주기는 수 초).
@@ -181,8 +195,11 @@
     var l = locOf();
     // 빈 ALLOW 도 서브계정 라우트로 한정한다. 종전 코드는 빈 배열이면 무조건 true 라
     // 개방하는 순간 검증한 적 없는 에이전시 화면까지 v4 가 붙었다(DEPLOY-v4 표의 설명과 어긋남).
-    // 로케이션 없는 화면은 PREAUTH 목록만(v4.19). 에이전시 화면은 여기서 false.
-    if (!l) return !gate && !afterExclReload && preauth();
+    // 로케이션 없는 화면은 PREAUTH 목록(v4.19)과 AGENCY 목록(v4.21.19)만.
+    // afterExclReload(제외 계정 새로고침 직후)는 PREAUTH 에만 건다 — 그 값은 페이지 수명 내내 남으므로 에이전시에 걸면
+    // 제외 계정 → 에이전시로 돌아온 뒤 그 탭에선 영어로 남는다. 에이전시 화면 자체는 새로고침 루프를 만들지 않는다
+    // (제외 계정으로 가면 reloadIfExcluded 가 30초 차단기를 본다).
+    if (!l) return !gate && (preauth() ? !afterExclReload : agencyRoute());
     return !ALLOW.length || ALLOW.indexOf(l) >= 0;
   }
 
@@ -228,7 +245,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.21.18',
+    version: '4.21.19',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -240,6 +257,7 @@
       s.allow = ALLOW.slice();
       s.location = locOf();       // 지금 보고 있는 로케이션 (/v2/location/ 기준)
       s.preauth = preauth();      // 비로그인 화면(PREAUTH 목록)인가 — v4.19
+      s.agency = agencyRoute();   // 에이전시 화면(AGENCY 목록)인가 — v4.21.19
       s.afterExclReload = afterExclReload; // 제외 계정 새로고침 직후 로드(PREAUTH 부팅 안 함)
       s.excluded = excluded();    // 서브계정 옵트아웃 — 레거시 hcEx() 와 같은 판정
       s.remoteOff = remoteOff();  // 포인터 파일의 "off": true (원격 킬스위치)
