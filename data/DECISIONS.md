@@ -330,3 +330,12 @@ superagentsApp(Managed Agents 빌더·목록·채팅 레이어)의 제품명 표
 - 러너가 띄운 '인보이스 다른 설정 변화 reminderSettings,_id,altId,altType,createdAt,customFields,deleted' 는 **신규 계정의 인보이스 설정 문서가 첫 저장으로 만들어지면서 생긴 차이**였다(createdAt = 러너 저장 시각). 저장 뒤 리마인더는 GHL 기본 3개 켜짐 — 다른 계정 7곳과 같다. 러너 v1.2.2(프로젝트 문서)는 가상 기본값(_id 없음)이었던 경우 문서 생성 필드·reminderId·customFields(없음→[])만 빼고 비교한다(리마인더 켜짐·간격 등 실제 값 변화는 계속 보고).
 - 기본 포털 주소는 `<subDomain>.app.clientclub.net` 이다(`.clientclub.net` 은 DNS 없음) — 포털 러너 inventory 표시 수정(v1.2.1).
 
+## [결정] 에이전시 화면 한국어(로더 v4.21.19) — 2026-11-10
+- 계기: 텔레메트리 2026-11-09 집계에 `agencyDashboardApp` 영문 188/188. 벤자민에게 '에이전시 대시보드 번역'을 제안 → "진행해줘".
+- 원인: 사전에는 v4.2.22 부터 188개 모두 한국어로 있었다. 로더가 로케이션 없는 화면을 PREAUTH 목록만 열어(v4.19) 에이전시 화면에서 `suspended` — 결정 ⑤(작업지시서 v1, 2026-10 '에이전시 화면은 고객 비노출이라 범위 밖')와 레거시 은퇴(10-29)가 겹쳐 에이전시 화면 전체가 영어였다. 사이드바에 원래 브랜드 메뉴명(굿즈 스토어)도 그대로 노출.
+- 실측: 에이전시 화면의 호스트 카탈로그 103 ns · 9,885 리프 중 9,562 가 사전(core host)에 한국어로 있다(없는 것 323: agency 43·common 36·campaign 21…).
+- 처리: 로더 v4.21.19 — `AGENCY` 명시 목록(첫 경로 조각 27개: agency_dashboard·sub-accounts·snapshots·reselling·settings·marketplace·integration 등, 라우터 getRoutes·사이드바 링크 실측). 통과·리다이렉트(/logout·/eject·/idp·/desktop·/download·외부 연동)·맞춤 메뉴 링크·공개 템플릿·잠김/정지 화면은 제외. `afterExclReload` 는 PREAUTH 에만. `ALLOW` 로 좁혀 둔 상태에서는 열지 않는다.
+- 결정 ⑤를 대체한다. 에이전시 화면은 에이전시 관리자(벤자민 팀)만 보므로 고객 화면 영향 없음. 되돌리기 = 포인터 loader.stable 을 v4.21.18 cdn `1796413` 로.
+- 라이브(2026-11-10, `?hcch=next`): 엣지 포인터 반영까지 머지 뒤 약 5분(raw 캐시 300초 → 엣지 60초). 에이전시 대시보드 한국어(남은 영어 'AI Suite' 1 — 제품명), 사이드바 '하이퍼클래스 굿즈'. 화면별 보이는 텍스트 한국어/전체: 잠재고객 발굴 37/38 · SaaS 구성기 86/99 · 스냅샷 83/90 · 팀 126/182(나머지는 이름·이메일) · 회사 설정 44/86 · 애드온 37/94 · 리셀링 171/268. 고객 화면(r6JD 대시보드) 회귀 없음 → stable.
+- 남은 일: 에이전시 화면 안의 별도 마이크로앱(예: `reselling-dashboard-app` 지문 `common|reselling` 924 — 583 이 호스트 사전과 같은 키 경로)·하위 계정 목록·회사 설정·애드온 카탈로그 추출 → 같은 경로 이관 + 신규 번역(정기 라운드). 회사 설정에 원래 브랜드명이 든 문장('What do you primarily use HighLevel for?')도 그때 정리.
+
