@@ -23,7 +23,7 @@
    ───────────────────────────────────────────────────────────────────── */
 (() => {
   const EXPECT = {
-    version: '4.21.18',     // 포인터 loader.stable cdn 1796413 (= main 5212e6b, 2026-11-08 — iframe 중계 전 계정)
+    version: '4.21.19',     // 포인터 loader.stable cdn 0f27a12 (= main 94d128d, 2026-11-10 — 에이전시 화면 허용)
     revPrefix: 'd26bb31',   // 사전 v4.2.76 — cdn 커밋(원본 main 9faae3f, 2026-11-08 AI 스튜디오)
     textEntries: 9382,      // _text — 배포된 core 건수(pretty 보다 C7 미배포분만큼 적다) (별도로 _textScoped 1,404 — status().scopedEntries)
   };
