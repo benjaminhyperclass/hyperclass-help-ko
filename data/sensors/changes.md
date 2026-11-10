@@ -238,3 +238,25 @@
 - `opportunitiesApp` 2992 → 3002
 - `voiceAiApp` 939 → 944
 
+## 2026-11-10 19:53 UTC — main 2203 → 2206 · manifest 2203.7832 → 2206.7857
+- `adPublishingApp` 129 → 130
+- `affiliateDashboardApp` 2208 → 2279
+- `agentStudioApp` 909 → 949
+- `aiGrowthApp` 938 → 951
+- `appointmentModalApp` 633 → 637
+- `contactsHighriseApp` 3010 → 3033
+- `conversationsV2App` 2992 → 3018
+- `customObjectsApp` 3013 → 3032
+- `emailBuilderMfaApp` 419 → 420
+- `emailHomeV2App` 418 → 420
+- `eventsManagementApp` 3021 → 3029
+- `formSurveyApp` 342 → 348
+- `mediaCenterApp` 190 → 191
+- `membershipApp` 2260 → 2278
+- `opportunitiesApp` 3002 → 3033
+- `phoneIntegrationApp` 2274 → 2277
+- `restaurantsApp` 3015 → 3030
+- `superagentsApp` 909 → 949
+- `ticketingApp` 2931 → 3031
+- `voiceAiApp` 944 → 950
+

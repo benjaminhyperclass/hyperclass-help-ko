@@ -46,19 +46,25 @@
   "AutoDM & new member onboarding in Communities": "2026-11-09",
   "Workflow AI Analytics: Query Every Workflow, Trace Every Contact": "2026-11-09",
   "WhatsApp workflows now send your latest templates and snippets": "2026-11-10",
-  "Introducing the Events Attendee App: Beyond Registration, Into the Experience": "2026-11-10"
+  "Introducing the Events Attendee App: Beyond Registration, Into the Experience": "2026-11-10",
+  "Workflow Maps: Clean up workflows and empty folders": "2026-11-10",
+  "🛡️ Fewer SMS Restrictions, More Confidence in Messaging": "2026-11-10",
+  "Custom Objects: Rename the Primary Field, Copy Internal Names, Open Documents from the List, and More": "2026-11-10",
+  "WhatsApp button and list replies now follow the right workflow branch": "2026-11-10",
+  "Association Labels: See Each Label's Pair and Create a New Label from the Picker": "2026-11-10",
+  "WhatsApp typing indicator action for workflows": "2026-11-10"
  },
  "updated": "2026-11-10",
  "slugs": [
-  "ai-studio-connect-conversation-ai-to-your-live-chat-widget-from-settings",
-  "autodm-new-member-onboarding-in-communities",
-  "canada-morocco-time-zone-updates",
+  "association-labels-see-each-labels-pair-and-create-a-new-label-from-the-picker",
   "custom-levels-point-sources-in-communities",
+  "custom-objects-rename-the-primary-field-copy-internal-names-open-documents-from",
+  "fewer-sms-restrictions-more-confidence-in-messaging",
   "gokollab-app-banner-on-mobile-web",
-  "introducing-new-templates-116",
   "introducing-the-events-attendee-app-beyond-registration-into-the-experience",
-  "payments-sell-more-than-100-products-from-your-ai-studio-site",
+  "whatsapp-button-and-list-replies-now-follow-the-right-workflow-branch",
+  "whatsapp-typing-indicator-action-for-workflows",
   "whatsapp-workflows-now-send-your-latest-templates-and-snippets",
-  "workflow-ai-analytics-query-every-workflow-trace-every-contact"
+  "workflow-maps-clean-up-workflows-and-empty-folders"
  ]
 }
