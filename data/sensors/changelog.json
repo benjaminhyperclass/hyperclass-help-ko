@@ -44,19 +44,21 @@
   "Custom levels & point sources in Communities": "2026-11-09",
   "📲 GoKollab - App Banner on Mobile Web": "2026-11-09",
   "AutoDM & new member onboarding in Communities": "2026-11-09",
-  "Workflow AI Analytics: Query Every Workflow, Trace Every Contact": "2026-11-09"
+  "Workflow AI Analytics: Query Every Workflow, Trace Every Contact": "2026-11-09",
+  "WhatsApp workflows now send your latest templates and snippets": "2026-11-10",
+  "Introducing the Events Attendee App: Beyond Registration, Into the Experience": "2026-11-10"
  },
- "updated": "2026-11-09",
+ "updated": "2026-11-10",
  "slugs": [
   "ai-studio-connect-conversation-ai-to-your-live-chat-widget-from-settings",
   "autodm-new-member-onboarding-in-communities",
   "canada-morocco-time-zone-updates",
   "custom-levels-point-sources-in-communities",
-  "facebook-integration-marketplace-migration-and-multiple-facebook-account-support",
   "gokollab-app-banner-on-mobile-web",
-  "gpt-6-sol-is-now-the-recommended-model-in-conversation-ai",
   "introducing-new-templates-116",
+  "introducing-the-events-attendee-app-beyond-registration-into-the-experience",
   "payments-sell-more-than-100-products-from-your-ai-studio-site",
+  "whatsapp-workflows-now-send-your-latest-templates-and-snippets",
   "workflow-ai-analytics-query-every-workflow-trace-every-contact"
  ]
 }

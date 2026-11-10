@@ -231,3 +231,10 @@
 - `switchyardApp` 15 → 17
 - `voiceAiApp` 925 → 939
 
+## 2026-11-10 07:31 UTC — main 2199 → 2203 · manifest 2199.7823 → 2203.7832
+- `adPublishingApp` 128 → 129
+- `emailBuilderMfaApp` 417 → 419
+- `eventsManagementApp` 2989 → 3021
+- `opportunitiesApp` 2992 → 3002
+- `voiceAiApp` 939 → 944
+
