@@ -8,6 +8,14 @@
 
 LinkedIn에서 받은 리드를 하이퍼클래스로 바로 가져오는 연동 기능이에요. LinkedIn 계정을 연결하고 폼 필드를 매핑하면 리드가 자동으로 들어와요.
 
+{% hint style="success" %}
+🎬 **영상으로 배우기** — 창업 챌린지 강의에서 이 내용을 화면으로 직접 보여 드려요.
+
+* [8강 2부 · LinkedIn 연동 (04:50)](https://www.youtube.com/watch?v=TNUzXx1UteQ&t=290s)
+
+전체 강의 목차: [창업 챌린지 강의 영상으로 배우기](../../01-시작하기/creator-challenge-videos.md)
+{% endhint %}
+
 ## 작동 방식
 
 ### LinkedIn 연동 시작하기

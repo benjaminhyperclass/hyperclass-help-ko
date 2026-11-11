@@ -2,6 +2,14 @@
 
 카드사 심사의 실제 제출물입니다. **여기서 v4와 가장 크게 달라집니다:**
 
+{% hint style="success" %}
+🎬 **영상으로 배우기** — 창업 챌린지 강의에서 이 내용을 화면으로 직접 보여 드려요.
+
+* [9강 3부 · 심사 제출용 스크린샷 실제 사례 (57:15)](https://www.youtube.com/watch?v=mNj3LJI6oTY&t=3435s)
+
+전체 강의 목차: [창업 챌린지 강의 영상으로 배우기](../01-시작하기/creator-challenge-videos.md)
+{% endhint %}
+
 > 📥 **템플릿 다운로드**
 > 아래 두 파일을 내려받아 캡처만 붙여넣으면 됩니다. 슬라이드마다 무엇을 캡처할지 안내가 적혀 있습니다.
 > - [결제경로_일반결제_템플릿.pptx](https://raw.githubusercontent.com/benjaminhyperclass/hyperclass-help-ko/main/docs/43-%ED%95%9C%EA%B5%AD-%EC%95%B1/assets/toss-payment-path-general.pptx)

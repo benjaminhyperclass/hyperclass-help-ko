@@ -34,11 +34,18 @@
    python3 scripts/manual/lint_manual.py /tmp/mq-out/docs --json /tmp/mq-lint.json
    python3 scripts/manual/publish_results.py /tmp/mq-out /tmp/mq-lint.json --report /tmp/mq-report.json   # 검수 통과분만 docs/ 로
    python3 scripts/manual/apply_plan.py links
+   python3 scripts/manual/video_links.py apply             # 새로 써진 문서에 '영상으로 배우기' 박스를 다시 넣는다
    python3 scripts/manual/gen_summary.py
    python3 scripts/manual/lint_manual.py docs --links      # 브랜드 0 · 링크 0 확인
    python3 scripts/manual/queue.py done <반영한 id ...>
    ```
 4. 브랜치 → PR → 머지(GitBook 자동 동기화). SUMMARY `## 제목`의 영문 부분은 바꾸지 않는다(공개 주소가 바뀜).
+
+## C. 창업 챌린지 강의 영상 연결
+- 연결표 `data/manual/video-map.json`(챕터 시각 → 문서), 챕터 목록 `data/manual/video-chapters.json`(유튜브 설명란 챕터 그대로).
+- 새 강의가 올라오면: 영상 id·챕터를 `video-chapters.json` 에, 기능 시연 챕터만 골라 `video-map.json` 의 `lectures`·`links` 에 더한 뒤 `python3 scripts/manual/video_links.py apply` → `gen_summary.py` → `lint_manual.py docs --links`.
+- 이론 강의 챕터(마인드셋·오퍼 이론 등)와 자체 개발 앱(Hyperaxis 등) 챕터는 연결하지 않는다.
+- `postprocess.py` 는 위 영상 id 링크는 남긴다(남의 영상 링크만 지움).
 
 ## 하지 말 것
 - `ALLOW_PAID_API` 켜기, `translate_batch.py`·`i18n-batch-translator.py`·`ghl-help-updater.py` 실행(모두 API 키 과금)

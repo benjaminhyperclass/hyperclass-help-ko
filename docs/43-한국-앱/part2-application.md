@@ -1,5 +1,13 @@
 # Part 2. 토스페이먼츠 신청 🟡
 
+{% hint style="success" %}
+🎬 **영상으로 배우기** — 창업 챌린지 강의에서 이 내용을 화면으로 직접 보여 드려요.
+
+* [9강 3부 · 결제 방식 3종과 신청 순서 (05:04)](https://www.youtube.com/watch?v=mNj3LJI6oTY&t=304s)
+
+전체 강의 목차: [창업 챌린지 강의 영상으로 배우기](../01-시작하기/creator-challenge-videos.md)
+{% endhint %}
+
 ## 2-1. 전자계약 신청 (MID마다 반복)
 
 1. **tosspayments.com** 접속 → 우측 상단 **[이용 신청하기]** (또는 [전자결제 신청하기])

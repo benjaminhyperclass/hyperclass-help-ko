@@ -8,6 +8,14 @@
 
 **소셜 플래너**에서 소셜 미디어 게시물에 달린 댓글을 바로 확인하고 관리할 수 있어요. Facebook, Instagram, LinkedIn, TikTok, 커뮤니티, Bluesky, Threads의 댓글 관리를 지원해요. 이 문서에서는 댓글 관리 사용법과 이 기능으로 할 수 있는 일, 제한 사항을 안내해요.
 
+{% hint style="success" %}
+🎬 **영상으로 배우기** — 창업 챌린지 강의에서 이 내용을 화면으로 직접 보여 드려요.
+
+* [8강 2부 · 댓글 통합 관리 — 다섯 플랫폼, 한 화면 (10:26)](https://www.youtube.com/watch?v=TNUzXx1UteQ&t=626s)
+
+전체 강의 목차: [창업 챌린지 강의 영상으로 배우기](../../01-시작하기/creator-challenge-videos.md)
+{% endhint %}
+
 ---
 
 ## 댓글 관리란?

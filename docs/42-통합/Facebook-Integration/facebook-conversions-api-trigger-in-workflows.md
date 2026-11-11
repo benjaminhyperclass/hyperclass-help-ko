@@ -8,6 +8,15 @@
 
 워크플로우에 **Facebook Conversions API**(Facebook 전환 API) 액션을 추가하면 전환 데이터를 Facebook으로 다시 보낼 수 있어요. Facebook 픽셀로 방문자에게 쿠키를 남기지 않아도 돼요. 이 문서에서는 이 액션과 함께 쓸 수 있는 트리거, 입력할 매개변수, 자주 겪는 문제를 안내해요.
 
+{% hint style="success" %}
+🎬 **영상으로 배우기** — 창업 챌린지 강의에서 이 내용을 화면으로 직접 보여 드려요.
+
+* [10강 2부 · Conversion API — 깨진 픽셀 데이터 해결 (13:18)](https://www.youtube.com/watch?v=-eAdd6izkHU&t=798s)
+* [10강 2부 · 워크플로우로 Lead·Purchase 이벤트 보내기 (18:13)](https://www.youtube.com/watch?v=-eAdd6izkHU&t=1093s)
+
+전체 강의 목차: [창업 챌린지 강의 영상으로 배우기](../../01-시작하기/creator-challenge-videos.md)
+{% endhint %}
+
 ## 자주 묻는 질문
 
 ### Facebook 전환 이벤트는 어떤 트리거와 함께 쓸 수 있나요?
