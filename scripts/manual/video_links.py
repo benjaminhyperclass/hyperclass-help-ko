@@ -1,22 +1,28 @@
 #!/usr/bin/env python3
-"""창업 챌린지 강의 영상 ↔ 매뉴얼 문서 크로스레퍼런스.
+"""창업 챌린지 강의 영상 ↔ 매뉴얼 본문 크로스레퍼런스.
 
-  python3 scripts/manual/video_links.py apply     # 문서마다 '영상으로 배우기' 박스를 넣고, 강의 목차 페이지를 다시 만든다
-  python3 scripts/manual/video_links.py remove    # 박스를 모두 지운다(목차 페이지는 그대로)
+  python3 scripts/manual/video_links.py apply     # 연결표대로 본문 곳곳에 '▶ 영상' 링크를 넣는다
+  python3 scripts/manual/video_links.py remove    # 넣은 링크를 모두 지운다
 
-- 연결표: data/manual/video-map.json (강의 챕터 → 문서 경로). 영상 챕터 정보: data/manual/video-chapters.json
-- 몇 번을 돌려도 결과가 같다(기존 박스를 지우고 다시 넣는다). 월간 번역으로 문서가 새로 써지면 이 스크립트를 다시 돌린다.
+- 연결표: data/manual/video-map.json 의 placements — {page, at, refs:[[영상 id, 시각], ...]}
+  · at = "@H1"        → 문서 제목 다음 첫 문단 끝에
+  · at = "#제목"      → 그 소제목(##~######) 다음 첫 문단 끝에 (첫 내용이 목록·표·상자면 소제목 바로 아래 한 줄로)
+  · at = 그 밖의 글자 → 그 글자가 든 줄(문장·목록 항목)의 끝에
+- 링크 모양: ▶ 영상 [4강 2부 2:19](https://www.youtube.com/watch?v=...&t=139s) · [4강 4부 0:38](...) — 누르면 그 장면부터 재생된다.
+- 유튜브 '공개' 강의만 쓴다: _meta.public_ids 에 없는 영상이 있으면 실행을 멈춘다.
+- 몇 번을 돌려도 결과가 같다(먼저 기존 링크를 지우고 다시 넣는다). 월간 번역으로 문서가 새로 써지면 다시 돌린다.
 - 외부 호출·API 사용 없음.
 """
 import glob, json, os, re, sys
 
 R = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 MAP = os.path.join(R, "data/manual/video-map.json")
-CHAPTERS = os.path.join(R, "data/manual/video-chapters.json")
-INDEX = "docs/01-시작하기/creator-challenge-videos.md"
-INDEX_TITLE = "창업 챌린지 강의 영상으로 배우기"
-MARK = "🎬 **영상으로 배우기**"
-BLOCK_RE = re.compile(r'\{% hint style="success" %\}\n' + re.escape(MARK) + r'.*?\{% endhint %\}\n\n?', re.S)
+DOCS = os.path.join(R, "docs")
+TAG = "▶ 영상"
+_YT = r"\[[^\]]+\]\(https://www\.youtube\.com/watch\?v=[^)\s]+\)"
+LINK_RE = re.compile(r" ?" + re.escape(TAG) + r" " + _YT + r"(?: · " + _YT + r")*")
+OLD_BOX = re.compile(r'\{% hint style="success" %\}\n🎬 \*\*영상으로 배우기\*\*.*?\{% endhint %\}\n\n?', re.S)
+NOT_PARA = re.compile(r"\s*(#|\{%|\||```|!\[|<|[-*+] |\d+\.\s|>)")
 
 
 def secs(t):
@@ -26,144 +32,107 @@ def secs(t):
     return s
 
 
-def url(v, t):
+def clock(t):
     n = secs(t)
-    return f"https://www.youtube.com/watch?v={v}" + (f"&t={n}s" if n else "")
+    h, m, s = n // 3600, n % 3600 // 60, n % 60
+    return f"{h}:{m:02d}:{s:02d}" if h else f"{m}:{s:02d}"
 
 
-def short(lecture):
-    return lecture.split(" · ")[0]
+def link(lectures, v, t):
+    n = secs(t)
+    url = f"https://www.youtube.com/watch?v={v}" + (f"&t={n}s" if n else "")
+    return f"[{lectures[v]} {clock(t)}]({url})"
 
 
-def strip_block(text):
-    return BLOCK_RE.sub("", text)
+def strip(text):
+    text = OLD_BOX.sub("", text)
+    lines = []
+    for l in text.split("\n"):
+        new = LINK_RE.sub("", l)
+        if new != l and not new.strip():
+            continue   # 링크만 있던 줄
+        lines.append(new)
+    out = "\n".join(lines)
+    return re.sub(r"\n{3,}", "\n\n", out)
 
 
-def insert_at(lines):
-    """제목(# ) 다음 첫 문단 뒤. 첫 문단이 없으면 제목 바로 뒤."""
-    i = next((k for k, l in enumerate(lines) if l.startswith("# ")), None)
-    if i is None:
-        fm = 0
-        if lines and lines[0].strip() == "---":
-            fm = next((k for k in range(1, len(lines)) if lines[k].strip() == "---"), 0) + 1
-        return fm
+def find(lines, at):
+    if at == "@H1":
+        hits = [i for i, l in enumerate(lines) if l.startswith("# ")]
+        return (hits[0], True) if hits else (None, True)
+    if at.startswith("#"):
+        pat = re.compile(r"#{2,6}\s+" + re.escape(at[1:].strip()) + r"\s*")
+        hits = [i for i, l in enumerate(lines) if pat.fullmatch(l)]
+        return (hits[0], True) if hits else (None, True)
+    hits = [i for i, l in enumerate(lines) if at in l]
+    return (hits[0], False) if hits else (None, False)
+
+
+def place(lines, i, is_heading, html):
+    """i 줄(제목이면 그 아래 첫 문단의 끝 줄) 끝에 링크를 붙인다. 붙일 문단이 없으면 제목 아래 한 줄을 만든다."""
+    if not is_heading:
+        lines[i] = lines[i].rstrip() + " " + html
+        return
     j = i + 1
     while j < len(lines) and not lines[j].strip():
         j += 1
-    if j < len(lines) and not re.match(r"\s*(#|\{%|>|[-*+] |\||!\[|\d+\.\s|```|<)", lines[j]):
-        while j < len(lines) and lines[j].strip():
+    if j < len(lines) and not NOT_PARA.match(lines[j]):
+        while j + 1 < len(lines) and lines[j + 1].strip() and not NOT_PARA.match(lines[j + 1]):
             j += 1
-        if re.search(r"[:：]\**\s*$", lines[j - 1]):
-            return i + 1   # 첫 문단이 뒤 내용을 소개하는 문장(':' 로 끝남)이면 흐름을 끊지 않게 제목 바로 뒤
-        return j
-    return i + 1
-
-
-def block(doc, items, lectures):
-    rel = os.path.relpath(os.path.join(R, INDEX), os.path.dirname(os.path.join(R, doc)))
-    out = ['{% hint style="success" %}', f"{MARK} — 창업 챌린지 강의에서 이 내용을 화면으로 직접 보여 드려요.", ""]
-    for it in items:
-        out.append(f"* [{short(lectures[it['v']])} · {it['label']} ({it['t']})]({url(it['v'], it['t'])})")
-    out += ["", f"전체 강의 목차: [{INDEX_TITLE}]({rel.replace(' ', '%20')})", "{% endhint %}"]
-    return out
+        if not re.search(r"[:：]\**\s*$", lines[j]):
+            lines[j] = lines[j].rstrip() + " " + html
+            return
+    lines[i + 1:i + 1] = ["", html]
 
 
 def load():
     m = json.load(open(MAP, encoding="utf-8"))
     pub = set(m["_meta"].get("public_ids", []))
-    bad = [v for v in m["lectures"] if v not in pub]
+    used = {v for p in m["placements"] for v, _ in p["refs"]}
+    bad = sorted(v for v in used | set(m["lectures"]) if v not in pub)
     if bad:
         sys.exit(f"공개 확인되지 않은 영상: {bad} — 유튜브 '공개' 강의만 연결할 수 있습니다. 채널 공개 목록에서 확인 후 _meta.public_ids 에 더하세요.")
-    order = list(m["lectures"])
-    per = {}
-    for it in m["links"]:
-        for p in it["pages"]:
-            per.setdefault(p, [])
-            if not any(x["v"] == it["v"] and x["t"] == it["t"] for x in per[p]):
-                per[p].append(it)
-    for p in per:
-        per[p].sort(key=lambda x: (order.index(x["v"]), secs(x["t"])))
-    return m, order, per
-
-
-def apply_docs(per, lectures):
-    # 연결표에서 빠진 문서에 남은 박스는 지운다
-    for f in glob.glob(os.path.join(R, "docs/**/*.md"), recursive=True):
-        rel = os.path.relpath(f, os.path.join(R, "docs"))
-        if rel not in per:
-            t = open(f, encoding="utf-8").read()
-            if MARK in t:
-                open(f, "w", encoding="utf-8").write(strip_block(t)); print("박스 제거:", rel)
-    n = 0
-    for p, items in sorted(per.items()):
-        f = os.path.join(R, "docs", p)
-        if not os.path.exists(f):
-            print("없는 문서(건너뜀):", p)
-            continue
-        text = strip_block(open(f, encoding="utf-8").read())
-        lines = text.split("\n")
-        k = insert_at(lines)
-        b = block("docs/" + p, items, lectures)
-        head, tail = lines[:k], lines[k:]
-        while head and not head[-1].strip() and len(head) > 1:
-            head.pop()
-        while tail and not tail[0].strip():
-            tail.pop(0)
-        new = head + ([""] if head and head[-1].strip() != "---" or k else []) + b + [""] + tail
-        open(f, "w", encoding="utf-8").write("\n".join(new))
-        n += 1
-    return n
-
-
-def build_index(m, order, per):
-    ch = json.load(open(CHAPTERS, encoding="utf-8"))
-    by_ts = {}
-    for it in m["links"]:
-        by_ts.setdefault((it["v"], it["t"]), []).extend(it["pages"])
-    titles = {}
-    for p in {p for v in by_ts.values() for p in v}:
-        f = os.path.join(R, "docs", p)
-        t = next((l[2:].strip() for l in open(f, encoding="utf-8") if l.startswith("# ")), p)
-        titles[p] = t.replace("|", "·").replace("[", "(").replace("]", ")")
-    here = os.path.dirname(os.path.join(R, INDEX))
-    L = ["---", "카테고리: 01-시작하기", "종류: 강의 영상 목차 (video_links.py 가 만든다 — 직접 고치지 말 것)", "---", "", f"# {INDEX_TITLE}", "",
-         "벤자민의 유튜브 **무료 창업 챌린지** 강의에서 하이퍼클래스 기능을 실제 화면으로 시연한 부분을 모았어요. "
-         "시간을 누르면 해당 장면부터 재생되고, 오른쪽 매뉴얼 문서에서 같은 내용을 글로 자세히 볼 수 있어요.", "",
-         '{% hint style="info" %}',
-         "매뉴얼 문서 안의 초록색 **🎬 영상으로 배우기** 상자도 이 목차와 연결되어 있어요. 글로 읽다가 화면이 궁금하면 상자 안 링크를 누르세요.",
-         "{% endhint %}", ""]
-    for v in order:
-        if v not in ch:
-            continue
-        lec = m["lectures"][v]
-        L += [f"## {lec}", "", f"{{% embed url=\"https://www.youtube.com/watch?v={v}\" %}}", "",
-              "| 시간 | 내용 | 관련 매뉴얼 |", "| --- | --- | --- |"]
-        for t, title in ch[v]:
-            pages = by_ts.get((v, t), [])
-            docs = " · ".join(f"[{titles[p]}]({os.path.relpath(os.path.join(R, 'docs', p), here).replace(' ', '%20')})"
-                              for p in dict.fromkeys(pages))
-            title = title.replace("|", "·")
-            L.append(f"| [{t}]({url(v, t)}) | {title} | {docs} |")
-        L.append("")
-    open(os.path.join(R, INDEX), "w", encoding="utf-8").write("\n".join(L))
+    return m
 
 
 def main():
     cmd = sys.argv[1] if len(sys.argv) > 1 else "apply"
-    m, order, per = load()
+    m = load()
+    # 1) 모든 문서에서 기존 링크·예전 상자를 지운다
+    cleaned = 0
+    for f in glob.glob(os.path.join(DOCS, "**/*.md"), recursive=True):
+        t = open(f, encoding="utf-8").read()
+        if TAG in t or "🎬 **영상으로 배우기**" in t:
+            s = strip(t)
+            if s != t:
+                open(f, "w", encoding="utf-8").write(s); cleaned += 1
     if cmd == "remove":
-        n = 0
-        for p in per:
-            f = os.path.join(R, "docs", p)
-            if os.path.exists(f):
-                t = open(f, encoding="utf-8").read(); s = strip_block(t)
-                if s != t:
-                    open(f, "w", encoding="utf-8").write(s); n += 1
-        print("박스 제거", n)
+        print("링크 제거", cleaned, "문서")
         return
-    n = apply_docs(per, m["lectures"])
-    build_index(m, order, per)
-    print(f"영상 박스 {n}개 문서 · 연결 {sum(len(v) for v in per.values())}건 · 목차 {INDEX}")
+    # 2) 연결표대로 넣는다
+    by_page = {}
+    for p in m["placements"]:
+        by_page.setdefault(p["page"], []).append(p)
+    missing, n_links = [], 0
+    for page, items in sorted(by_page.items()):
+        f = os.path.join(DOCS, page)
+        if not os.path.exists(f):
+            missing.append((page, "(문서 없음)")); continue
+        lines = open(f, encoding="utf-8").read().split("\n")
+        # 아래쪽부터 넣어야 앞쪽 줄 번호가 밀리지 않는다
+        spots = []
+        for p in items:
+            i, is_h = find(lines, p["at"])
+            if i is None:
+                missing.append((page, p["at"])); continue
+            spots.append((i, is_h, TAG + " " + " · ".join(link(m["lectures"], v, t) for v, t in p["refs"])))
+            n_links += len(p["refs"])
+        for i, is_h, html in sorted(spots, reverse=True):
+            place(lines, i, is_h, html)
+        open(f, "w", encoding="utf-8").write("\n".join(lines))
+    print(f"영상 링크 {n_links}개 · 문서 {len(by_page)}개 · 위치 {len(m['placements'])}곳")
+    for pg, at in missing:
+        print("  위치를 못 찾음(건너뜀):", pg, "|", at)
 
 
 if __name__ == "__main__":

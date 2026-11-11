@@ -8,19 +8,11 @@
 
 연락처에 태그가 추가되거나 제거될 때 워크플로우를 시작하는 **Contact Tag** 트리거를 설명해요. 태그가 추가·제거되는 경로도 함께 안내해요.
 
-{% hint style="success" %}
-🎬 **영상으로 배우기** — 창업 챌린지 강의에서 이 내용을 화면으로 직접 보여 드려요.
-
-* [6강 · 태그 — 고객에게 이름표 붙이기 (09:53)](https://www.youtube.com/watch?v=yyvk6kgvbXw&t=593s)
-
-전체 강의 목차: [창업 챌린지 강의 영상으로 배우기](../../01-시작하기/creator-challenge-videos.md)
-{% endhint %}
-
 태그는 연락처를 분류하는 방법이에요. 연락처 목록의 연락처에 태그를 하나 이상 붙여 두면 나중에 쉽게 찾을 수 있어요. 태그는 검색, 탐색, 정렬, 콘텐츠 정리에 쓰이고, 자동화나 이메일·SMS 대량 발송을 시작하는 기준으로도 쓸 수 있어요.
 
 ## Contact Tag 트리거는 어떤 일을 하나요?
 
-**Contact Tag**(연락처 태그) 트리거는 연락처에 태그가 추가되거나 제거되었는지 확인해요.
+**Contact Tag**(연락처 태그) 트리거는 연락처에 태그가 추가되거나 제거되었는지 확인해요. ▶ 영상 [6강 9:53](https://www.youtube.com/watch?v=yyvk6kgvbXw&t=593s)
 
 ![Contact Tag 트리거 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48215643927/original/NxWCYmWtbjepAgd2ROUG-Rvoomj2nwA94g.png?1649877321)
 

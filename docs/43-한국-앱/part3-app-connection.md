@@ -2,16 +2,9 @@
 
 토스페이먼츠 개발자센터에서 키를 발급받아 하이퍼클래스 결제 앱에 연결합니다.
 
-{% hint style="success" %}
-🎬 **영상으로 배우기** — 창업 챌린지 강의에서 이 내용을 화면으로 직접 보여 드려요.
-
-* [9강 3부 · 테스트키 ck·sk — 연동의 열쇠 (11:44)](https://www.youtube.com/watch?v=mNj3LJI6oTY&t=704s)
-* [9강 3부 · 테스트키·라이브키·상점 아이디 찾는 법 (52:33)](https://www.youtube.com/watch?v=mNj3LJI6oTY&t=3153s)
-
-전체 강의 목차: [창업 챌린지 강의 영상으로 배우기](../01-시작하기/creator-challenge-videos.md)
-{% endhint %}
-
 ## 3-1. API 키 확인
+
+▶ 영상 [9강 3부 11:44](https://www.youtube.com/watch?v=mNj3LJI6oTY&t=704s) · [9강 3부 52:33](https://www.youtube.com/watch?v=mNj3LJI6oTY&t=3153s)
 
 1. tosspayments.com 로그인 → 내 상점 선택 → **개발자센터 → API 키**
 2. MID마다 키가 2쌍 있습니다:
@@ -27,6 +20,8 @@
 | 빌링 | ____________ | ____________ |
 
 ## 3-2. 하이퍼클래스 앱 설치 + 키 입력
+
+▶ 영상 [9강 3부 50:19](https://www.youtube.com/watch?v=mNj3LJI6oTY&t=3019s) · [9강 3부 54:11](https://www.youtube.com/watch?v=mNj3LJI6oTY&t=3251s)
 
 1. 하이퍼클래스에서 안내한 **토스페이먼츠 앱 설치 링크**로 본인 계정에 앱을 설치합니다 (설치 시 자동 인증)
 2. 설치 후 열리는 **결제 설정** 페이지에서 MID별로 키를 입력합니다:

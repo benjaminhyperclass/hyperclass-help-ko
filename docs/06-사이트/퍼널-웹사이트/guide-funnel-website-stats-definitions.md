@@ -6,15 +6,7 @@
 
 # 퍼널 및 웹사이트 통계 지표 정의
 
-**Funnel & Website Stats**(퍼널 및 웹사이트 통계)에 나오는 각 지표의 뜻을 설명해요. 성과를 이해하고 마케팅을 개선할 때 참고하세요.
-
-{% hint style="success" %}
-🎬 **영상으로 배우기** — 창업 챌린지 강의에서 이 내용을 화면으로 직접 보여 드려요.
-
-* [4강 2부 · 퍼널 단계별 통계 보는 법 (03:29)](https://www.youtube.com/watch?v=AVOIIs3fMSg&t=209s)
-
-전체 강의 목차: [창업 챌린지 강의 영상으로 배우기](../../01-시작하기/creator-challenge-videos.md)
-{% endhint %}
+**Funnel & Website Stats**(퍼널 및 웹사이트 통계)에 나오는 각 지표의 뜻을 설명해요. 성과를 이해하고 마케팅을 개선할 때 참고하세요. ▶ 영상 [4강 2부 3:43](https://www.youtube.com/watch?v=AVOIIs3fMSg&t=223s)
 
 ---
 
