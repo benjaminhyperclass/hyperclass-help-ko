@@ -1,7 +1,10 @@
 {
  "_meta": {
   "about": "벤자민 유튜브 '무료 창업 챌린지' 강의 챕터 → 매뉴얼 문서 연결표. scripts/manual/video_links.py 가 문서에 '영상으로 배우기' 박스를 넣고, 강의별 목차 페이지를 만든다.",
-  "channel": "https://www.youtube.com/@benjamin_hyperclass"
+  "channel": "https://www.youtube.com/@benjamin_hyperclass",
+  "rule": "유튜브에 '공개'로 올라간 강의만 연결한다. 일부 공개(unlisted)·비공개·멤버십 전용·유료 강의는 넣지 않는다. 새 강의는 채널 공개 목록에서 보이는지 확인한 뒤 public_ids 에 더한다.",
+  "public_verified": "2026-11-11 (채널 공개 업로드 목록에서 19편 모두 확인)",
+  "public_ids": ["lLDBRKFbeJk", "-eAdd6izkHU", "c4QmTGpfdCc", "cwEP0OFhed0", "zE96JKeoI20", "mNj3LJI6oTY", "TNUzXx1UteQ", "qcH04ZceGBM", "hWlM12jhiGA", "RDCg5RT6CNE", "yyvk6kgvbXw", "g2fcpLnUI8M", "m_DTx9U1C1g", "oEDq8IGJ3-c", "AVOIIs3fMSg", "8qnMh3KJmrY", "cDyPG4a-OEs", "woau-D9kDKE", "yok-ipmJoDI"]
  },
  "lectures": {
   "yok-ipmJoDI": "1강 · 하이퍼클래스 AI 해부하기",

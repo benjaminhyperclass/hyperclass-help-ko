@@ -43,6 +43,7 @@
 
 ## C. 창업 챌린지 강의 영상 연결
 - 연결표 `data/manual/video-map.json`(챕터 시각 → 문서), 챕터 목록 `data/manual/video-chapters.json`(유튜브 설명란 챕터 그대로).
+- **유튜브에 '공개'로 올라간 강의만 연결한다.** 일부 공개(unlisted)·비공개·멤버십 전용·유료 강의는 절대 넣지 않는다. 채널 공개 목록(@benjamin_hyperclass)에서 보이는지 확인하고 `video-map.json` 의 `_meta.public_ids` 에 더해야 `video_links.py` 가 돈다.
 - 새 강의가 올라오면: 영상 id·챕터를 `video-chapters.json` 에, 기능 시연 챕터만 골라 `video-map.json` 의 `lectures`·`links` 에 더한 뒤 `python3 scripts/manual/video_links.py apply` → `gen_summary.py` → `lint_manual.py docs --links`.
 - 이론 강의 챕터(마인드셋·오퍼 이론 등)와 자체 개발 앱(Hyperaxis 등) 챕터는 연결하지 않는다.
 - `postprocess.py` 는 위 영상 id 링크는 남긴다(남의 영상 링크만 지움).
