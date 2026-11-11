@@ -53,6 +53,8 @@ def insert_at(lines):
     if j < len(lines) and not re.match(r"\s*(#|\{%|>|[-*+] |\||!\[|\d+\.\s|```|<)", lines[j]):
         while j < len(lines) and lines[j].strip():
             j += 1
+        if re.search(r"[:：]\**\s*$", lines[j - 1]):
+            return i + 1   # 첫 문단이 뒤 내용을 소개하는 문장(':' 로 끝남)이면 흐름을 끊지 않게 제목 바로 뒤
         return j
     return i + 1
 
