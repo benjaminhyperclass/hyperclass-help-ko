@@ -347,3 +347,4 @@ superagentsApp(Managed Agents 빌더·목록·채팅 레이어)의 제품명 표
 - `scripts/manual/video_links.py apply` 로 다시 만든다(멱등, 연결표에서 빠진 문서의 상자는 지움). 월간 번역으로 문서가 새로 써지면 런북 B-3 단계에서 다시 실행.
 - `postprocess.py` 의 영상 링크 제거는 벤자민 본인 영상 id(`data/manual/video-chapters.json`)를 남기도록 예외 추가 — 화이트라벨 원칙(남의 영상 제거)은 그대로.
 - 외부 API·유료 호출 없음(챕터는 유튜브 공개 설명란에서 수집).
+- 벤자민 추가 지침(2026-11-11): **링크는 유튜브에 공개된 강의만.** 연결한 19편은 채널 공개 업로드 목록에서 모두 확인했다. `video-map.json` `_meta.public_ids` 에 없는 영상은 `video_links.py` 가 거부한다(일부 공개·비공개·멤버십·유료 강의 금지).

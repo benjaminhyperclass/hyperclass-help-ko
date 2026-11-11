@@ -70,6 +70,10 @@ def block(doc, items, lectures):
 
 def load():
     m = json.load(open(MAP, encoding="utf-8"))
+    pub = set(m["_meta"].get("public_ids", []))
+    bad = [v for v in m["lectures"] if v not in pub]
+    if bad:
+        sys.exit(f"공개 확인되지 않은 영상: {bad} — 유튜브 '공개' 강의만 연결할 수 있습니다. 채널 공개 목록에서 확인 후 _meta.public_ids 에 더하세요.")
     order = list(m["lectures"])
     per = {}
     for it in m["links"]:
