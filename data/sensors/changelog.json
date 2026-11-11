@@ -53,16 +53,18 @@
   "WhatsApp button and list replies now follow the right workflow branch": "2026-11-10",
   "Association Labels: See Each Label's Pair and Create a New Label from the Picker": "2026-11-10",
   "WhatsApp typing indicator action for workflows": "2026-11-10",
-  "🎬 Introducing Multi-Shot Film Generation in Managed Agents!": "2026-11-11"
+  "🎬 Introducing Multi-Shot Film Generation in Managed Agents!": "2026-11-11",
+  "Connect Your Custom Domain Before You Publish": "2026-11-11",
+  "See Look-Alike Companies Before You Add a New One": "2026-11-11"
  },
  "updated": "2026-11-11",
  "slugs": [
   "association-labels-see-each-labels-pair-and-create-a-new-label-from-the-picker",
-  "custom-levels-point-sources-in-communities",
+  "connect-your-custom-domain-before-you-publish",
   "custom-objects-rename-the-primary-field-copy-internal-names-open-documents-from",
   "fewer-sms-restrictions-more-confidence-in-messaging",
   "introducing-multi-shot-film-generation-in-managed-agents",
-  "introducing-the-events-attendee-app-beyond-registration-into-the-experience",
+  "see-look-alike-companies-before-you-add-a-new-one",
   "whatsapp-button-and-list-replies-now-follow-the-right-workflow-branch",
   "whatsapp-typing-indicator-action-for-workflows",
   "whatsapp-workflows-now-send-your-latest-templates-and-snippets",

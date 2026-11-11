@@ -269,3 +269,18 @@
 - `proposalsEstimateTemplateApp` 122 → 123
 - `proposalsEstimatesApp` 122 → 123
 
+## 2026-11-11 19:44 UTC — main 2206 → 2212 · manifest 2206.7862 → 2212.7882
+- `agentLogsApp` 942 → 956
+- `agentStudioApp` 949 → 956
+- `companyApp` 2222 → 2280
+- `conversationsV2App` 3018 → 3045
+- `customObjectsApp` 3032 → 3048
+- `fieldServicesApp` 626 → 638
+- `locationsApp` 2269 → 2282
+- `marketplaceApp` 194 → 198
+- `restaurantsApp` 3030 → 3051
+- `socialPlannerApp` 381 → 383
+- `superagentsApp` 949 → 956
+- `switchyardApp` 17 → 20
+- `voiceAiApp` 950 → 954
+
