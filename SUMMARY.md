@@ -33,6 +33,7 @@
 
 ## 시작하기 (Getting Started)
 
+* [창업 챌린지 강의 영상으로 배우기](docs/01-시작하기/creator-challenge-videos.md)
 * [기존 연락처 가져오기](docs/01-시작하기/기본-설정/getting-started-import-existing-contacts.md)
 * [런치패드 상황별 인앱 안내](docs/01-시작하기/기본-설정/launchpad-contextual-in-app-nudges.md)
 * [시작하기 - 연락처 만들기와 관리하기](docs/01-시작하기/기본-설정/getting-started-create-and-manage-contacts.md)

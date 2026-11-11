@@ -8,6 +8,16 @@
 
 도메인을 하이퍼클래스에 연결하면 웹사이트, 퍼널, 이메일, 고객용 도구에서 브랜드를 일관되게 보여 줄 수 있어요. 이 문서에서는 도메인을 연결하는 방법과, 연결한 도메인을 제품별로 어떻게 쓰는지 안내해요.
 
+{% hint style="success" %}
+🎬 **영상으로 배우기** — 창업 챌린지 강의에서 이 내용을 화면으로 직접 보여 드려요.
+
+* [3강 · 도메인을 Cloudflare로 옮기고 연결하기 (38:10)](https://www.youtube.com/watch?v=cDyPG4a-OEs&t=2290s)
+* [3강 · 서브도메인 나누기 (42:41)](https://www.youtube.com/watch?v=cDyPG4a-OEs&t=2561s)
+* [3강 · 퍼널에 메인 도메인 연결 (45:57)](https://www.youtube.com/watch?v=cDyPG4a-OEs&t=2757s)
+
+전체 강의 목차: [창업 챌린지 강의 영상으로 배우기](../../01-시작하기/creator-challenge-videos.md)
+{% endhint %}
+
 ## 도메인 연결 단계별 안내
 
 도메인을 하이퍼클래스에 연결하는 방법은 크게 두 가지예요.

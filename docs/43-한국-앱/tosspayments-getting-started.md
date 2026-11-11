@@ -6,6 +6,15 @@ description: 토스페이먼츠 가맹 신청부터 MID 발급, 앱 연동, 카�
 
 **하이퍼클래스 고객사용 — PG 계약부터 결제 오픈까지 스스로 완주하는 가이드**
 
+{% hint style="success" %}
+🎬 **영상으로 배우기** — 창업 챌린지 강의에서 이 내용을 화면으로 직접 보여 드려요.
+
+* [9강 1부 · 시나리오별 결제 설계 — 예약·상담·구독 (17:54)](https://www.youtube.com/watch?v=zE96JKeoI20&t=1074s)
+* [9강 2부 · 토스페이먼츠 신청 7단계 지도 (13:36)](https://www.youtube.com/watch?v=cwEP0OFhed0&t=816s)
+
+전체 강의 목차: [창업 챌린지 강의 영상으로 배우기](../01-시작하기/creator-challenge-videos.md)
+{% endhint %}
+
 > 이 매뉴얼 하나로 토스페이먼츠 신청 → 서류 제출 → 앱 연동 → 결제 테스트 → 카드사 심사 통과까지 전 과정을 직접 진행할 수 있습니다.
 > 막히는 단계가 있을 때만 benjamin@hyperclass.ai 로 문의해 주세요.
 

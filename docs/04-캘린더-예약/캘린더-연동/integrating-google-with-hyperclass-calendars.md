@@ -8,6 +8,14 @@
 
 Google 계정을 하이퍼클래스 **캘린더**(Calendars)에 연결하면 일정이 서로 동기화되고, 캘린더를 한곳에서 관리할 수 있어요. 이 문서에서는 Google Calendar를 연결하는 순서를 안내해요.
 
+{% hint style="success" %}
+🎬 **영상으로 배우기** — 창업 챌린지 강의에서 이 내용을 화면으로 직접 보여 드려요.
+
+* [4강 3부 · Google 캘린더 연동 (57:45)](https://www.youtube.com/watch?v=oEDq8IGJ3-c&t=3465s)
+
+전체 강의 목차: [창업 챌린지 강의 영상으로 배우기](../../01-시작하기/creator-challenge-videos.md)
+{% endhint %}
+
 ## Google Calendar 연동이란?
 
 Google Calendar를 하이퍼클래스와 연동하면 실시간 일정 관리, 간편한 가용 시간 관리, 플랫폼 간 동기화를 쓸 수 있어요. 통화 예약, 예약 자동화, 팀 일정 조율을 한곳에서 처리하기에 알맞아요.

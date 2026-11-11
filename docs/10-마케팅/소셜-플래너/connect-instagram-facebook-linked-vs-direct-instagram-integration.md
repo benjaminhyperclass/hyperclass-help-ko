@@ -8,6 +8,14 @@
 
 하이퍼클래스 **소셜 플래너**(Social Planner)에서 Facebook 페이지 없이도 Instagram을 연결하고 게시물을 예약할 수 있어요. 이 문서에서는 Instagram을 연결하는 두 가지 방법과 차이점을 설명해요.
 
+{% hint style="success" %}
+🎬 **영상으로 배우기** — 창업 챌린지 강의에서 이 내용을 화면으로 직접 보여 드려요.
+
+* [8강 2부 · Instagram은 별도 연동이 필요합니다 (06:45)](https://www.youtube.com/watch?v=TNUzXx1UteQ&t=405s)
+
+전체 강의 목차: [창업 챌린지 강의 영상으로 배우기](../../01-시작하기/creator-challenge-videos.md)
+{% endhint %}
+
 ## 새로운 기능
 
 - **다이렉트 Instagram 연동**: Facebook 페이지 없이 Instagram을 바로 연결하고 게시물을 예약할 수 있어요.

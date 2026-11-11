@@ -8,6 +8,14 @@
 
 1:1 예약을 받을 때 쓰는 **Personal Booking**(개인 예약) 캘린더 유형을 소개해요. 여러 사용자 없이 나 혼자 예약을 받고 싶을 때 이 유형으로 캘린더를 만들면 돼요.
 
+{% hint style="success" %}
+🎬 **영상으로 배우기** — 창업 챌린지 강의에서 이 내용을 화면으로 직접 보여 드려요.
+
+* [4강 3부 · 예약 캘린더 만들기 (Personal Booking) (48:42)](https://www.youtube.com/watch?v=oEDq8IGJ3-c&t=2922s)
+
+전체 강의 목차: [창업 챌린지 강의 영상으로 배우기](../../01-시작하기/creator-challenge-videos.md)
+{% endhint %}
+
 ## 새로 추가된 기능
 
 1:1 예약을 받으려는 사용자 중에는 **Round Robin**(라운드 로빈) 유형이 여러 사용자용처럼 보여서 선택을 망설이는 분이 많았어요. 그래서 **Event Calendar**(이벤트 캘린더)를 쓰는 경우도 많았는데, 이 유형은 오프라인 행사용이라 Zoom이나 Google Meet를 지원하지 않아요.

@@ -8,6 +8,15 @@
 
 Facebook Lead Ads로 들어온 리드를 하이퍼클래스 서브 계정으로 바로 가져오는 방법을 안내해요. 연동하고 나면 새 리드가 들어올 때마다 워크플로우가 자동으로 실행되고, 파이프라인에 리드가 채워지고, 육성 캠페인이 시작돼요. 파일로 따로 가져올 필요가 없어요.
 
+{% hint style="success" %}
+🎬 **영상으로 배우기** — 창업 챌린지 강의에서 이 내용을 화면으로 직접 보여 드려요.
+
+* [8강 2부 · Meta 연동 — 페이지·Instagram·광고 (02:04)](https://www.youtube.com/watch?v=TNUzXx1UteQ&t=124s)
+* [10강 2부 · Instagram 비즈니스 계정 연동 (05:49)](https://www.youtube.com/watch?v=-eAdd6izkHU&t=349s)
+
+전체 강의 목차: [창업 챌린지 강의 영상으로 배우기](../01-시작하기/creator-challenge-videos.md)
+{% endhint %}
+
 ## Facebook 연동 개요
 
 Facebook 비즈니스 페이지를 연결하면 리드가 하이퍼클래스 서브 계정으로 바로 들어와요. Facebook 인스턴트 폼으로 만든 Lead Ads를 지원하고, 하이퍼클래스 워크플로우로 자동화도 만들 수 있어요. Facebook 페이지에 Instagram 비즈니스 계정이 연결되어 있다면, 연동 후 Instagram 비즈니스 계정에 대한 접근도 켤 수 있어요.

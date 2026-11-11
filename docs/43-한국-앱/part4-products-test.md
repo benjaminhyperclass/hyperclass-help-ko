@@ -2,6 +2,15 @@
 
 결제경로 문서(Part 5)의 재료가 되는 단계입니다. **일반결제용과 빌링용 상품을 각각 만들어 각각 테스트**해야 두 벌의 결제경로를 캡처할 수 있습니다.
 
+{% hint style="success" %}
+🎬 **영상으로 배우기** — 창업 챌린지 강의에서 이 내용을 화면으로 직접 보여 드려요.
+
+* [9강 3부 · 상품 만들기 — 일회성과 반복 결제 (21:55)](https://www.youtube.com/watch?v=mNj3LJI6oTY&t=1315s)
+* [9강 3부 · 세 가지 상품 결제·환불 테스트 (55:55)](https://www.youtube.com/watch?v=mNj3LJI6oTY&t=3355s)
+
+전체 강의 목차: [창업 챌린지 강의 영상으로 배우기](../01-시작하기/creator-challenge-videos.md)
+{% endhint %}
+
 ## 4-1. 상품 만들기 — 최소 2종 (권장 4종)
 
 본인 계정 → **Payments → Products → [+ Create Product]**

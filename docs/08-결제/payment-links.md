@@ -8,6 +8,14 @@
 
 **결제 링크**를 만들면 웹사이트 없이도 상품이나 서비스를 판매할 수 있어요. 클릭 몇 번으로 결제 페이지를 완성하고, 링크를 고객에게 공유하면 돼요. 코드는 필요 없어요.
 
+{% hint style="success" %}
+🎬 **영상으로 배우기** — 창업 챌린지 강의에서 이 내용을 화면으로 직접 보여 드려요.
+
+* [9강 2부 · 결제 링크 — 가장 빠른 결제 경로 (02:35)](https://www.youtube.com/watch?v=cwEP0OFhed0&t=155s)
+
+전체 강의 목차: [창업 챌린지 강의 영상으로 배우기](../01-시작하기/creator-challenge-videos.md)
+{% endhint %}
+
 ![결제 링크 결제 페이지 예시](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155023729137/original/ys4Fglfuo4X4dxUuWP7Ur-U6KugdictfkA.png?1711747942)
 
 {% hint style="info" %}

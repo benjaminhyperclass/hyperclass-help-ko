@@ -4,6 +4,7 @@
 1. 머리말 `원문:` 에서 도메인을 뺀다(브랜드 도메인 비노출, 추적용 경로·id 는 유지).
 2. `<!-- 검토 필요: ... -->` 주석을 문서에서 빼서 검토 목록(JSON)으로 모은다.
 3. HighLevel 채널 영상 링크(YouTube·Loom·Vimeo·Wistia·Vidyard)를 뺀다 — 화이트라벨 원칙.
+   단, 벤자민 본인 강의 영상(data/manual/video-chapters.json 의 영상 id)은 남긴다.
 4. 확정 용어집의 띄어쓰기·표기 변형을 화면 표기로 맞춘다(코드·URL 제외).
 5. 기술 URL 의 대문자 브랜드 표기(LeadConnectorhq)를 소문자로.
 6. 합니다체로 끝난 문장을 해요체로(단계 목록의 동작은 '~하세요').
@@ -36,7 +37,20 @@ def protect(text, fn):
 AUTOLINK = re.compile(r"<(https?://[^>\s]+)>")
 VIDEO_WORD = re.compile(r"영상|동영상|튜토리얼|비디오|Video|웨비나 녹화")
 
+_OWN_IDS = list(json.load(open(os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))),
+                                            "data/manual/video-chapters.json"), encoding="utf-8")))
+OWN_URL = re.compile(r"https?://(?:www\.)?(?:youtube\.com/(?:watch\?v=|embed/)|youtu\.be/)(?:"
+                     + "|".join(map(re.escape, _OWN_IDS)) + r")[^\s)>\"]*")
+
 def strip_videos(seg):
+    """남의 영상 링크만 지운다. 벤자민 강의 영상은 자리표시로 감췄다가 되돌린다."""
+    stash = []
+    def hide(m):
+        stash.append(m.group(0)); return f"OWNVIDEO{len(stash) - 1}X"
+    seg = _strip_videos(OWN_URL.sub(hide, seg))
+    return re.sub(r"OWNVIDEO(\d+)X", lambda m: stash[int(m.group(1))], seg)
+
+def _strip_videos(seg):
     def rep(m):
         label = m.group(1).strip()
         if m.group(0).startswith("!") and not re.search(r"\.(?:mp4|mov|webm)(?:\?|$)", m.group(2), re.I):
