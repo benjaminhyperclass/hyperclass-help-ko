@@ -1417,6 +1417,7 @@
  "copilot.askAi.dispatch.pinSetupHint": "You'll say this 6-digit PIN out loud the first time you call — it proves it's really you, since caller ID alone can be faked. Choose one you'll remember; it can't be recovered later.",
  "copilot.askAi.dispatch.pinSetupSubmit": "Set PIN",
  "copilot.askAi.dispatch.pinSetupTitle": "Create your call PIN",
+ "copilot.askAi.dispatch.qrUnavailable": "WhatsApp connection isn't available in your region yet.",
  "copilot.askAi.dispatch.sidebar.laneCall": "Call",
  "copilot.askAi.dispatch.sidebar.laneSms": "Text",
  "copilot.askAi.dispatch.toasts.phoneConnected": "Phone connected",
