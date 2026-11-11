@@ -1036,3 +1036,8 @@ redirects:
   "workflows/workflow-trigger-order-submitted-2": "docs/07-워크플로우/빌더/workflow-trigger-order-submitted.md"
   "workflows/workflow-trigger-payment-received-1": "docs/07-워크플로우/빌더/workflow-trigger-payment-received.md"
   "undefined": "README.md"
+  "korea-apps/kaka/05-inquiry-automation": "docs/43-한국-앱/kaka/09-inquiry-automation.md"
+  "korea-apps/kaka/06-booking-alimtalk": "docs/43-한국-앱/kaka/10-booking-alimtalk.md"
+  "korea-apps/kaka/07-website-button": "docs/43-한국-앱/kaka/11-website-button.md"
+  "korea-apps/kaka/08-ai-chatbot": "docs/43-한국-앱/kaka/12-ai-chatbot.md"
+  "korea-apps/kaka/09-checklist-faq": "docs/43-한국-앱/kaka/14-checklist-faq.md"
