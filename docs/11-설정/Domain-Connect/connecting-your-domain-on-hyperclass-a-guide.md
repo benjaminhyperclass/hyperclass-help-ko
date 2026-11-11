@@ -8,16 +8,6 @@
 
 도메인을 하이퍼클래스에 연결하면 웹사이트, 퍼널, 이메일, 고객용 도구에서 브랜드를 일관되게 보여 줄 수 있어요. 이 문서에서는 도메인을 연결하는 방법과, 연결한 도메인을 제품별로 어떻게 쓰는지 안내해요.
 
-{% hint style="success" %}
-🎬 **영상으로 배우기** — 창업 챌린지 강의에서 이 내용을 화면으로 직접 보여 드려요.
-
-* [3강 · 도메인을 Cloudflare로 옮기고 연결하기 (38:10)](https://www.youtube.com/watch?v=cDyPG4a-OEs&t=2290s)
-* [3강 · 서브도메인 나누기 (42:41)](https://www.youtube.com/watch?v=cDyPG4a-OEs&t=2561s)
-* [3강 · 퍼널에 메인 도메인 연결 (45:57)](https://www.youtube.com/watch?v=cDyPG4a-OEs&t=2757s)
-
-전체 강의 목차: [창업 챌린지 강의 영상으로 배우기](../../01-시작하기/creator-challenge-videos.md)
-{% endhint %}
-
 ## 도메인 연결 단계별 안내
 
 도메인을 하이퍼클래스에 연결하는 방법은 크게 두 가지예요.
@@ -35,7 +25,7 @@
 3. 연결할 제품을 선택하세요(예: **퍼널**, **웹사이트**, **이메일**).
 
    ![도메인에 연결할 제품 선택 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155045491132/original/mGa9aDaXW4Ytb7xL12a6RFqhz1BiTtLGPw.png?1745385425)
-4. 입력란에 루트 도메인이나 서브도메인을 입력하세요. "www" 서브도메인을 추가하는 경우에는 루트 도메인도 추가할 수 있는 옵션이 나타나요.
+4. 입력란에 루트 도메인이나 서브도메인을 입력하세요. "www" 서브도메인을 추가하는 경우에는 루트 도메인도 추가할 수 있는 옵션이 나타나요. ▶ 영상 [3강 42:41](https://www.youtube.com/watch?v=cDyPG4a-OEs&t=2561s)
 5. 도메인이 Google Domains, GoDaddy, Cloudflare에 있으면 **승인** 버튼이 보여요. 이 버튼을 눌러 Domain Connect가 DNS 설정에 접근하도록 허용하세요.
 6. 도메인 업체 화면의 안내에 따라 승인 과정을 마치세요. 필요한 DNS 레코드가 자동으로 추가되거나 연결돼요.
 7. 승인이 끝나면 해당 탭을 닫고 Domain Connect 화면으로 돌아오세요.
@@ -75,6 +65,8 @@
 {% endhint %}
 
 #### Cloudflare
+
+▶ 영상 [3강 38:10](https://www.youtube.com/watch?v=cDyPG4a-OEs&t=2290s) · [3강 39:47](https://www.youtube.com/watch?v=cDyPG4a-OEs&t=2387s)
 
 1. Cloudflare 대시보드에 로그인하세요.
 2. 도메인을 선택하고 **DNS** 탭을 클릭하세요.
@@ -150,7 +142,7 @@
 
 ## 도메인을 연결할 수 있는 제품
 
-**퍼널 / 웹사이트 / 스토어 / 웨비나 / 블로그**
+**퍼널 / 웹사이트 / 스토어 / 웨비나 / 블로그** ▶ 영상 [3강 45:57](https://www.youtube.com/watch?v=cDyPG4a-OEs&t=2757s)
 
 - 도메인을 사용해 퍼널, 이커머스 스토어, 웨비나, 블로그처럼 고객에게 보여 주는 페이지를 호스팅할 수 있어요.
 

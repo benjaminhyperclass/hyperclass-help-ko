@@ -6,15 +6,7 @@
 
 # 평판 관리 개요 대시보드 살펴보기
 
-평판 관리 개요 대시보드의 각 섹션이 무엇을 보여 주는지 설명해요. 서브 계정의 **평판 관리 > 개요** 탭에서 볼 수 있어요.
-
-{% hint style="success" %}
-🎬 **영상으로 배우기** — 창업 챌린지 강의에서 이 내용을 화면으로 직접 보여 드려요.
-
-* [1강 · 평판 관리 — 리뷰를 시스템으로 받는 법 (1:00:54)](https://www.youtube.com/watch?v=yok-ipmJoDI&t=3654s)
-
-전체 강의 목차: [창업 챌린지 강의 영상으로 배우기](../../01-시작하기/creator-challenge-videos.md)
-{% endhint %}
+평판 관리 개요 대시보드의 각 섹션이 무엇을 보여 주는지 설명해요. 서브 계정의 **평판 관리 > 개요** 탭에서 볼 수 있어요. ▶ 영상 [1강 1:00:54](https://www.youtube.com/watch?v=yok-ipmJoDI&t=3654s)
 
 ![평판 관리 개요 대시보드 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/48253416166/original/rDjZx_HPxxQ4-dgJfa2zjALHki7yVAaUgQ.png?1664285895)
 

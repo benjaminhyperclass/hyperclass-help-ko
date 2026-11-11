@@ -6,16 +6,7 @@
 
 # 워크플로우의 Facebook Conversions API 액션과 트리거
 
-워크플로우에 **Facebook Conversions API**(Facebook 전환 API) 액션을 추가하면 전환 데이터를 Facebook으로 다시 보낼 수 있어요. Facebook 픽셀로 방문자에게 쿠키를 남기지 않아도 돼요. 이 문서에서는 이 액션과 함께 쓸 수 있는 트리거, 입력할 매개변수, 자주 겪는 문제를 안내해요.
-
-{% hint style="success" %}
-🎬 **영상으로 배우기** — 창업 챌린지 강의에서 이 내용을 화면으로 직접 보여 드려요.
-
-* [10강 2부 · Conversion API — 깨진 픽셀 데이터 해결 (13:18)](https://www.youtube.com/watch?v=-eAdd6izkHU&t=798s)
-* [10강 2부 · 워크플로우로 Lead·Purchase 이벤트 보내기 (18:13)](https://www.youtube.com/watch?v=-eAdd6izkHU&t=1093s)
-
-전체 강의 목차: [창업 챌린지 강의 영상으로 배우기](../../01-시작하기/creator-challenge-videos.md)
-{% endhint %}
+워크플로우에 **Facebook Conversions API**(Facebook 전환 API) 액션을 추가하면 전환 데이터를 Facebook으로 다시 보낼 수 있어요. Facebook 픽셀로 방문자에게 쿠키를 남기지 않아도 돼요. 이 문서에서는 이 액션과 함께 쓸 수 있는 트리거, 입력할 매개변수, 자주 겪는 문제를 안내해요. ▶ 영상 [10강 2부 13:18](https://www.youtube.com/watch?v=-eAdd6izkHU&t=798s) · [10강 2부 18:13](https://www.youtube.com/watch?v=-eAdd6izkHU&t=1093s)
 
 ## 자주 묻는 질문
 
@@ -57,7 +48,7 @@
 
 ### 액세스 토큰과 Pixel Id 필드에 커스텀 값을 쓸 수 있나요?
 
-예, 두 필드 모두 **커스텀 값**을 쓸 수 있어요. **액세스 토큰**과 **Pixel Id**(픽셀 ID) 필드에 입력해 보세요.
+예, 두 필드 모두 **커스텀 값**을 쓸 수 있어요. **액세스 토큰**과 **Pixel Id**(픽셀 ID) 필드에 입력해 보세요. ▶ 영상 [10강 2부 17:24](https://www.youtube.com/watch?v=-eAdd6izkHU&t=1044s)
 
 ### Order Form Submission 트리거에서 {{Order.Amount}} 커스텀 값이 작동하지 않아요.
 

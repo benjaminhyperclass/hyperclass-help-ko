@@ -2,18 +2,9 @@
 
 결제경로 문서(Part 5)의 재료가 되는 단계입니다. **일반결제용과 빌링용 상품을 각각 만들어 각각 테스트**해야 두 벌의 결제경로를 캡처할 수 있습니다.
 
-{% hint style="success" %}
-🎬 **영상으로 배우기** — 창업 챌린지 강의에서 이 내용을 화면으로 직접 보여 드려요.
-
-* [9강 3부 · 상품 만들기 — 일회성과 반복 결제 (21:55)](https://www.youtube.com/watch?v=mNj3LJI6oTY&t=1315s)
-* [9강 3부 · 세 가지 상품 결제·환불 테스트 (55:55)](https://www.youtube.com/watch?v=mNj3LJI6oTY&t=3355s)
-
-전체 강의 목차: [창업 챌린지 강의 영상으로 배우기](../01-시작하기/creator-challenge-videos.md)
-{% endhint %}
-
 ## 4-1. 상품 만들기 — 최소 2종 (권장 4종)
 
-본인 계정 → **Payments → Products → [+ Create Product]**
+본인 계정 → **Payments → Products → [+ Create Product]** ▶ 영상 [9강 3부 21:55](https://www.youtube.com/watch?v=mNj3LJI6oTY&t=1315s)
 
 **A. 일반결제(단건) 상품 — 일반결제 MID 심사용 (필수)**
 
@@ -35,12 +26,16 @@
 
 ## 4-2. 결제 링크 만들기
 
+▶ 영상 [9강 3부 28:01](https://www.youtube.com/watch?v=mNj3LJI6oTY&t=1681s)
+
 1. Payments → **Payment Links** (또는 Order Forms) → [+ New]
 2. 상품 A 선택 → 저장 → URL 복사
 3. 상품 B(구독)도 동일하게 별도 링크 생성
 4. 이 URL들이 결제 테스트와 캡처의 출발점입니다
 
 ## 4-3. 결제 테스트 ① — 일반결제 (상품 A)
+
+▶ 영상 [9강 3부 31:05](https://www.youtube.com/watch?v=mNj3LJI6oTY&t=1865s) · [9강 3부 55:55](https://www.youtube.com/watch?v=mNj3LJI6oTY&t=3355s)
 
 1. 일반결제 링크 열기 → 주문서 작성 (이름·이메일·연락처)
 2. 결제수단: 신용/체크카드 → **토스페이먼츠 결제창**이 뜨는지 확인

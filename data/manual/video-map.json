@@ -1,130 +1,1210 @@
 {
  "_meta": {
-  "about": "벤자민 유튜브 '무료 창업 챌린지' 강의 챕터 → 매뉴얼 문서 연결표. scripts/manual/video_links.py 가 문서에 '영상으로 배우기' 박스를 넣고, 강의별 목차 페이지를 만든다.",
+  "about": "벤자민 유튜브 '무료 창업 챌린지' 강의 장면 → 매뉴얼 본문 위치 연결표. scripts/manual/video_links.py 가 해당 문장·소제목 옆에 '▶ 영상' 타임스탬프 링크를 넣는다(상자·목차 페이지 없이 텍스트 링크만).",
   "channel": "https://www.youtube.com/@benjamin_hyperclass",
   "rule": "유튜브에 '공개'로 올라간 강의만 연결한다. 일부 공개(unlisted)·비공개·멤버십 전용·유료 강의는 넣지 않는다. 새 강의는 채널 공개 목록에서 보이는지 확인한 뒤 public_ids 에 더한다.",
   "public_verified": "2026-11-11 (채널 공개 업로드 목록에서 19편 모두 확인)",
-  "public_ids": ["lLDBRKFbeJk", "-eAdd6izkHU", "c4QmTGpfdCc", "cwEP0OFhed0", "zE96JKeoI20", "mNj3LJI6oTY", "TNUzXx1UteQ", "qcH04ZceGBM", "hWlM12jhiGA", "RDCg5RT6CNE", "yyvk6kgvbXw", "g2fcpLnUI8M", "m_DTx9U1C1g", "oEDq8IGJ3-c", "AVOIIs3fMSg", "8qnMh3KJmrY", "cDyPG4a-OEs", "woau-D9kDKE", "yok-ipmJoDI"]
+  "public_ids": [
+   "lLDBRKFbeJk",
+   "-eAdd6izkHU",
+   "c4QmTGpfdCc",
+   "cwEP0OFhed0",
+   "zE96JKeoI20",
+   "mNj3LJI6oTY",
+   "TNUzXx1UteQ",
+   "qcH04ZceGBM",
+   "hWlM12jhiGA",
+   "RDCg5RT6CNE",
+   "yyvk6kgvbXw",
+   "g2fcpLnUI8M",
+   "m_DTx9U1C1g",
+   "oEDq8IGJ3-c",
+   "AVOIIs3fMSg",
+   "8qnMh3KJmrY",
+   "cDyPG4a-OEs",
+   "woau-D9kDKE",
+   "yok-ipmJoDI"
+  ]
  },
  "lectures": {
-  "yok-ipmJoDI": "1강 · 하이퍼클래스 AI 해부하기",
-  "woau-D9kDKE": "2강 · 비즈니스 엔진 이식과 셀프 브랜딩",
-  "cDyPG4a-OEs": "3강 · 내 소유의 시스템 (화이트라벨링)",
-  "8qnMh3KJmrY": "4강 1부 · 24시간 영업사원",
-  "AVOIIs3fMSg": "4강 2부 · 퍼널 빌더 완전 정복",
-  "oEDq8IGJ3-c": "4강 3부 · AI로 랜딩페이지 완성 & 캘린더 연결",
-  "m_DTx9U1C1g": "4강 4부 · SEO·새 로고·퍼널 완성",
-  "g2fcpLnUI8M": "5강 · 가치가 사는 집 — 커뮤니티와 클래스룸",
-  "yyvk6kgvbXw": "6강 · 잠들지 않는 직원, 자동화",
-  "RDCg5RT6CNE": "7강 1부 · 위대한 오퍼와 베타 테스트",
-  "hWlM12jhiGA": "7강 2부 · 가치를 폭발시키는 오퍼 설계",
-  "qcH04ZceGBM": "8강 1부 · 트래픽 너바나, 신뢰를 쌓는 법",
-  "TNUzXx1UteQ": "8강 2부 · 소셜 연동과 마케팅 자동화",
-  "zE96JKeoI20": "9강 1부 · 결제 마찰 줄이는 설계법",
-  "cwEP0OFhed0": "9강 2부 · 토스페이먼츠 결제 4가지 설계법",
-  "mNj3LJI6oTY": "9강 3부 · 토스페이먼츠 결제심사 신청과 연동 실습",
-  "c4QmTGpfdCc": "10강 1부 · AI 챗봇과 채팅 위젯 설정",
-  "-eAdd6izkHU": "10강 2부 · 메타광고 측정과 CAC·LTV 운영",
-  "lLDBRKFbeJk": "10강 3부 · VSL 제작·검증·개선"
+  "yok-ipmJoDI": "1강",
+  "woau-D9kDKE": "2강",
+  "cDyPG4a-OEs": "3강",
+  "8qnMh3KJmrY": "4강 1부",
+  "AVOIIs3fMSg": "4강 2부",
+  "oEDq8IGJ3-c": "4강 3부",
+  "m_DTx9U1C1g": "4강 4부",
+  "g2fcpLnUI8M": "5강",
+  "yyvk6kgvbXw": "6강",
+  "RDCg5RT6CNE": "7강 1부",
+  "hWlM12jhiGA": "7강 2부",
+  "qcH04ZceGBM": "8강 1부",
+  "TNUzXx1UteQ": "8강 2부",
+  "zE96JKeoI20": "9강 1부",
+  "cwEP0OFhed0": "9강 2부",
+  "mNj3LJI6oTY": "9강 3부",
+  "c4QmTGpfdCc": "10강 1부",
+  "-eAdd6izkHU": "10강 2부",
+  "lLDBRKFbeJk": "10강 3부"
  },
- "links": [
-  {"v":"yok-ipmJoDI","t":"32:23","label":"하이퍼클래스 전 기능 투어","pages":["00-자주묻는질문/what-is-hyperclass.md"]},
-  {"v":"yok-ipmJoDI","t":"38:49","label":"통합 대화창 & 예약","pages":["03-대화/대화/getting-started-with-the-conversations-tab.md"]},
-  {"v":"yok-ipmJoDI","t":"42:37","label":"칸반식 고객 관리 & 자동화 이메일","pages":["05-기회-파이프라인/understanding-pipelines.md"]},
-  {"v":"yok-ipmJoDI","t":"1:00:54","label":"평판 관리 — 리뷰를 시스템으로 받는 법","pages":["41-평판-리뷰/Review-Requests/reputation-breaking-down-the-reputation-overview-dashboard.md"]},
-  {"v":"yok-ipmJoDI","t":"1:08:09","label":"스타터 vs 그로스, 어떤 플랜이 맞을까","pages":["00-자주묻는질문/pricing-plans.md"]},
-
-  {"v":"woau-D9kDKE","t":"10:57","label":"스냅샷 — 검증된 시스템 통째로 받기","pages":["00-자주묻는질문/first-setup.md"]},
-  {"v":"woau-D9kDKE","t":"45:45","label":"하이퍼클래스 가입 & 스냅샷 확인","pages":["00-자주묻는질문/first-setup.md"]},
-  {"v":"woau-D9kDKE","t":"58:31","label":"계정 설정 투어 (로고, 커스텀 필드, 태그)","pages":["11-설정/Business-Profile-Settings/business-profile-settings.md","40-병합필드-변수/creating-and-managing-custom-fields-for-better-data-organization-008466.md"]},
-
-  {"v":"cDyPG4a-OEs","t":"38:10","label":"도메인을 Cloudflare로 옮기고 연결하기","pages":["11-설정/Domain-Connect/connecting-your-domain-on-hyperclass-a-guide.md"]},
-  {"v":"cDyPG4a-OEs","t":"42:41","label":"서브도메인 나누기","pages":["11-설정/Domain-Connect/connecting-your-domain-on-hyperclass-a-guide.md"]},
-  {"v":"cDyPG4a-OEs","t":"45:57","label":"퍼널에 메인 도메인 연결","pages":["11-설정/Domain-Connect/connecting-your-domain-on-hyperclass-a-guide.md"]},
-  {"v":"cDyPG4a-OEs","t":"50:10","label":"블로그 만들기 & 도메인 연결","pages":["06-사이트/create-blog-posts.md"]},
-  {"v":"cDyPG4a-OEs","t":"51:51","label":"웹사이트 템플릿 고르기 & 연결","pages":["01-시작하기/웹사이트-콘텐츠/getting-started-launch-a-website-from-template.md"]},
-  {"v":"cDyPG4a-OEs","t":"1:02:27","label":"Gmail 보안 마무리 (DKIM 인증)","pages":["09-이메일/Authentication-and-Security/email-authentication-errors-fix-spf-dkim-and-dmarc-issues.md"]},
-
-  {"v":"8qnMh3KJmrY","t":"21:43","label":"오퍼 9블록 — 팔리는 랜딩페이지의 순서","pages":["00-자주묻는질문/funnels.md"]},
-  {"v":"AVOIIs3fMSg","t":"02:02","label":"A/B 테스트 — 하나만 바꿔서 비교하기","pages":["06-사이트/기타/split-testing-in-funnels.md"]},
-  {"v":"AVOIIs3fMSg","t":"03:29","label":"퍼널 단계별 통계 보는 법","pages":["06-사이트/기타/funnel-statistics.md","06-사이트/퍼널-웹사이트/guide-funnel-website-stats-definitions.md"]},
-  {"v":"AVOIIs3fMSg","t":"06:43","label":"섹션·로우·엘리먼트 — 빌더의 3단계 구조","pages":["06-사이트/퍼널-웹사이트/entrance-animations-for-sections-rows-columns.md"]},
-  {"v":"AVOIIs3fMSg","t":"19:21","label":"팝업 만들기","pages":["06-사이트/퍼널-웹사이트/how-to-create-multiple-popups-per-page-for-funnels-and-websites.md","06-사이트/기타/show-popup-on-entering-funnel-website.md"]},
-  {"v":"AVOIIs3fMSg","t":"23:34","label":"SEO · AI 검색 설정","pages":["06-사이트/퍼널-웹사이트/seo-meta-data.md"]},
-  {"v":"AVOIIs3fMSg","t":"26:00","label":"쿠키 동의 — 켤까 말까","pages":["06-사이트/퍼널-웹사이트/how-to-use-the-cookie-consent-banner-in-funnels-websites.md"]},
-  {"v":"oEDq8IGJ3-c","t":"00:57","label":"커스텀 값 — 로고 링크를 한 곳에서 관리하기","pages":["11-설정/서브어카운트-설정/custom-values-settings.md"]},
-  {"v":"oEDq8IGJ3-c","t":"04:22","label":"미디어 저장소에 로고 올리고 링크 복사하기","pages":["11-설정/media-storage-file-upload-limits.md"]},
-  {"v":"oEDq8IGJ3-c","t":"48:42","label":"예약 캘린더 만들기 (Personal Booking)","pages":["04-캘린더-예약/기타/how-to-set-up-a-personal-booking-calendar-with-hyperclass.md","00-자주묻는질문/booking.md"]},
-  {"v":"oEDq8IGJ3-c","t":"53:03","label":"부킹 룰 — 미팅 길이·간격·버퍼 설계","pages":["04-캘린더-예약/캘린더-만들기/pre-and-post-buffers.md"]},
-  {"v":"oEDq8IGJ3-c","t":"57:45","label":"Google 캘린더 연동","pages":["04-캘린더-예약/캘린더-연동/integrating-google-with-hyperclass-calendars.md","00-자주묻는질문/calendar-sync.md"]},
-  {"v":"oEDq8IGJ3-c","t":"1:04:24","label":"예약 폼에 사전 질문 만들기","pages":["04-캘린더-예약/Customizing-Calendars/adding-custom-forms-to-calendars.md"]},
-  {"v":"oEDq8IGJ3-c","t":"1:07:44","label":"커스텀 필드 — 답변이 CRM에 쌓이는 구조","pages":["40-병합필드-변수/creating-and-managing-custom-fields-for-better-data-organization-008466.md"]},
-  {"v":"m_DTx9U1C1g","t":"00:38","label":"SEO 세팅 — 타이틀·설명·키워드","pages":["06-사이트/퍼널-웹사이트/seo-meta-data.md"]},
-  {"v":"m_DTx9U1C1g","t":"30:47","label":"커스텀 값으로 로고 한 번에 교체","pages":["11-설정/서브어카운트-설정/custom-values-settings.md"]},
-  {"v":"m_DTx9U1C1g","t":"44:28","label":"캘린더 로고·색상·버튼 텍스트 꾸미기","pages":["04-캘린더-예약/캘린더-만들기/calendar-widget-customization.md"]},
-
-  {"v":"g2fcpLnUI8M","t":"13:40","label":"클라이언트 포털이란 무엇인가","pages":["39-클라이언트-포털/unified-client-portal-experience.md"]},
-  {"v":"g2fcpLnUI8M","t":"18:52","label":"리더보드 — 레벨 보상 설계","pages":["17-멤버십-커뮤니티/커뮤니티/gamification-in-communities-points-badges-and-leaderboards.md"]},
-  {"v":"g2fcpLnUI8M","t":"27:44","label":"앱 권한 — 고객에게 무엇을 보여줄까","pages":["39-클라이언트-포털/Client-Portal/app-permissions-in-client-portal-enabling-disabling-a-child-app.md"]},
-  {"v":"g2fcpLnUI8M","t":"28:54","label":"채팅 위젯 만들기","pages":["06-사이트/getting-started-with-chat-widget.md"]},
-  {"v":"g2fcpLnUI8M","t":"43:34","label":"커뮤니티 퍼블릭 vs 프라이빗","pages":["17-멤버십-커뮤니티/how-to-make-groups-private-in-communities.md"]},
-  {"v":"g2fcpLnUI8M","t":"45:39","label":"유료 전환 스위치 & 무료 체험","pages":["17-멤버십-커뮤니티/커뮤니티/paid-groups.md"]},
-  {"v":"g2fcpLnUI8M","t":"52:25","label":"코스(LMS) — 강의 올리는 전 과정","pages":["01-시작하기/커머스/getting-started-launch-a-course.md","17-멤버십-커뮤니티/멤버십-코스/how-to-build-courses-membership-sites.md"]},
-  {"v":"g2fcpLnUI8M","t":"1:00:58","label":"수강 분석 — 완주율 보기","pages":["17-멤버십-커뮤니티/멤버십-코스/progress-analytics-in-courses.md"]},
-
-  {"v":"yyvk6kgvbXw","t":"09:53","label":"태그 — 고객에게 이름표 붙이기","pages":["07-워크플로우/빌더/workflow-trigger-contact-tag.md"]},
-  {"v":"yyvk6kgvbXw","t":"15:04","label":"자동화의 문법: 트리거·액션·대기·조건","pages":["00-자주묻는질문/automation.md","07-워크플로우/기타/workflow-builder-walkthrough.md"]},
-  {"v":"yyvk6kgvbXw","t":"18:55","label":"워크플로우 빌더 인터페이스 투어","pages":["07-워크플로우/기타/workflow-builder-walkthrough.md"]},
-  {"v":"yyvk6kgvbXw","t":"28:42","label":"기회 관리(파이프라인) 세팅","pages":["05-기회-파이프라인/step-by-step-guide-creating-pipelines.md"]},
-  {"v":"yyvk6kgvbXw","t":"44:55","label":"대기(Wait) 설계 — 메시지 간격의 원칙","pages":["07-워크플로우/Internal-Tools-Workflow-Actions/workflow-action-wait.md"]},
-  {"v":"yyvk6kgvbXw","t":"48:41","label":"설문 폼 직접 만들기","pages":["07-워크플로우/Forms-and-Surveys-Workflow-Triggers/workflow-trigger-survey-submitted.md"]},
-  {"v":"yyvk6kgvbXw","t":"53:15","label":"부분 제출도 연락처 만들기 — 꼭 켜야 할 스위치","pages":["06-사이트/survey-create-contact-on-partial-completion.md"]},
-  {"v":"yyvk6kgvbXw","t":"55:41","label":"워크플로우 테스트","pages":["07-워크플로우/시작하기/test-workflow.md"]},
-  {"v":"yyvk6kgvbXw","t":"57:26","label":"예약 손님 안내 — 리마인드 자동화","pages":["07-워크플로우/Appointments-Workflow-Triggers/workflow-trigger-appointment-status.md","00-자주묻는질문/reminders.md"]},
-  {"v":"yyvk6kgvbXw","t":"1:11:52","label":"수신거부 버튼이 꼭 있어야 하는 이유","pages":["09-이메일/managing-default-unsubscribe-links-in-lc-email.md"]},
-  {"v":"yyvk6kgvbXw","t":"1:13:59","label":"AI로 워크플로우 만들기 & 템플릿 라이브러리","pages":["07-워크플로우/기타/workflow-ai-builder.md"]},
-  {"v":"yyvk6kgvbXw","t":"1:18:00","label":"트리거·액션·조건 전체 지형도","pages":["07-워크플로우/기타/what-are-workflow-actions-complete-list.md"]},
-
-  {"v":"TNUzXx1UteQ","t":"02:04","label":"Meta 연동 — 페이지·Instagram·광고","pages":["42-통합/step-by-step-guide-to-facebook-integration-in-hyperclass.md"]},
-  {"v":"TNUzXx1UteQ","t":"04:50","label":"LinkedIn 연동","pages":["42-통합/Other-Integrations/linkedin-lead-ads-integration.md"]},
-  {"v":"TNUzXx1UteQ","t":"06:45","label":"Instagram은 별도 연동이 필요합니다","pages":["10-마케팅/소셜-플래너/connect-instagram-facebook-linked-vs-direct-instagram-integration.md"]},
-  {"v":"TNUzXx1UteQ","t":"10:26","label":"댓글 통합 관리 — 다섯 플랫폼, 한 화면","pages":["10-마케팅/소셜-플래너/social-planner-manage-comments.md"]},
-  {"v":"TNUzXx1UteQ","t":"13:23","label":"소셜 리스닝 — 유행 키워드 시장조사","pages":["10-마케팅/소셜-플래너/social-planner-social-listening.md"]},
-  {"v":"TNUzXx1UteQ","t":"13:59","label":"카테고리로 게시물 나누기","pages":["10-마케팅/소셜-플래너/social-planner-category-queue.md"]},
-  {"v":"TNUzXx1UteQ","t":"24:45","label":"링크 추적 — UTM 매개변수 넣기","pages":["10-마케팅/소셜-플래너/social-planner-link-shortener.md"]},
-
-  {"v":"zE96JKeoI20","t":"17:54","label":"시나리오별 결제 설계 — 예약·상담·구독","pages":["00-자주묻는질문/payment-methods.md","43-한국-앱/tosspayments-getting-started.md"]},
-  {"v":"cwEP0OFhed0","t":"02:35","label":"결제 링크 — 가장 빠른 결제 경로","pages":["08-결제/payment-links.md","01-시작하기/커머스/getting-started-setup-payment-links.md"]},
-  {"v":"cwEP0OFhed0","t":"04:46","label":"투스텝 주문 — 떠나도 연락처는 남는다","pages":["06-사이트/how-to-add-a-two-step-order-form-to-a-funnel.md"]},
-  {"v":"cwEP0OFhed0","t":"08:26","label":"범프(끼워팔기)는 투스텝에서","pages":["06-사이트/폼/forms-how-to-setup-and-use-order-bumps.md"]},
-  {"v":"cwEP0OFhed0","t":"09:15","label":"예약금 — 예약을 약속으로 바꾸는 장치","pages":["04-캘린더-예약/캘린더-만들기/partial-payment-collect-deposit-amount.md"]},
-  {"v":"cwEP0OFhed0","t":"13:36","label":"토스페이먼츠 신청 7단계 지도","pages":["43-한국-앱/tosspayments-getting-started.md"]},
-  {"v":"cwEP0OFhed0","t":"20:48","label":"환불 규정 — 업종별로 다릅니다","pages":["43-한국-앱/faq-cancel-refund.md"]},
-  {"v":"mNj3LJI6oTY","t":"00:48","label":"홈페이지 사전 점검 — 심사관이 먼저 보는 것","pages":["43-한국-앱/part0-website-check.md"]},
-  {"v":"mNj3LJI6oTY","t":"04:17","label":"서류 준비물 — 개인 vs 법인","pages":["43-한국-앱/part1-preparation.md"]},
-  {"v":"mNj3LJI6oTY","t":"05:04","label":"결제 방식 3종과 신청 순서","pages":["43-한국-앱/part2-application.md"]},
-  {"v":"mNj3LJI6oTY","t":"11:44","label":"테스트키 ck·sk — 연동의 열쇠","pages":["43-한국-앱/part3-app-connection.md"]},
-  {"v":"mNj3LJI6oTY","t":"21:55","label":"상품 만들기 — 일회성과 반복 결제","pages":["43-한국-앱/part4-products-test.md","01-시작하기/커머스/getting-started-create-sell-products.md"]},
-  {"v":"mNj3LJI6oTY","t":"26:22","label":"셋업피 — 착수금 설정","pages":["08-결제/인보이스-견적/how-to-add-setup-fees-to-your-recurring-invoices.md"]},
-  {"v":"mNj3LJI6oTY","t":"32:42","label":"결제 경로 ② 인보이스","pages":["01-시작하기/커머스/getting-started-create-and-send-invoices.md","08-결제/인보이스-견적/how-to-create-invoices-in-hyperclass.md"]},
-  {"v":"mNj3LJI6oTY","t":"34:45","label":"결제 경로 ③ 투스텝 주문 — 퍼널에 상품 등록","pages":["06-사이트/how-to-add-a-two-step-order-form-to-a-funnel.md"]},
-  {"v":"mNj3LJI6oTY","t":"45:49","label":"결제 경로 ④ 유료 커뮤니티","pages":["17-멤버십-커뮤니티/커뮤니티/paid-groups.md"]},
-  {"v":"mNj3LJI6oTY","t":"50:19","label":"토스페이먼츠 앱 설치 — 앱 마켓플레이스","pages":["43-한국-앱/tosspayments-installation.md"]},
-  {"v":"mNj3LJI6oTY","t":"52:33","label":"테스트키·라이브키·상점 아이디 찾는 법","pages":["43-한국-앱/part3-app-connection.md"]},
-  {"v":"mNj3LJI6oTY","t":"55:55","label":"세 가지 상품 결제·환불 테스트","pages":["43-한국-앱/part4-products-test.md"]},
-  {"v":"mNj3LJI6oTY","t":"57:15","label":"심사 제출용 스크린샷 실제 사례","pages":["43-한국-앱/part5-payment-path-docs.md"]},
-
-  {"v":"c4QmTGpfdCc","t":"19:40","label":"AI 에이전트 메뉴 투어와 봇 만들기","pages":["00-자주묻는질문/ai-chatbot.md","13-AI-Employee/bot-goals-overview-conversation-ai.md"]},
-  {"v":"c4QmTGpfdCc","t":"24:46","label":"봇 학습 — 지식 베이스 연결","pages":["13-AI-Employee/knowledge-base-overview.md"]},
-  {"v":"c4QmTGpfdCc","t":"33:02","label":"지식 베이스 종류 — 웹 크롤러·FAQ·테이블","pages":["13-AI-Employee/knowledge-base-web-crawler.md","13-AI-Employee/ai-employee-knowledge-base-tables.md"]},
-  {"v":"c4QmTGpfdCc","t":"25:47","label":"봇 목표 — 보이스·성격·목표","pages":["13-AI-Employee/bot-goals-overview-conversation-ai.md"]},
-  {"v":"c4QmTGpfdCc","t":"28:49","label":"상담원 전환 — 반드시 켜세요","pages":["13-AI-Employee/Conversation-AI-Goals-Prompts-and-Actions/conversation-ai-human-handover-action.md","00-자주묻는질문/chatbot-handover.md"]},
-  {"v":"c4QmTGpfdCc","t":"37:34","label":"에이전트 로그 — 지표로 관리하기","pages":["13-AI-Employee/Conversation-AI/conversation-ai-agent-logs.md","44-신기능-2026/agent-logs-overview.md"]},
-  {"v":"c4QmTGpfdCc","t":"40:19","label":"채팅 위젯 설치·브랜딩·코드 삽입","pages":["06-사이트/how-to-install-hyperclass-s-chat-widget.md","06-사이트/getting-started-with-chat-widget.md"]},
-  {"v":"c4QmTGpfdCc","t":"47:04","label":"커뮤니티에 채팅 위젯 넣기","pages":["39-클라이언트-포털/unified-client-portal-experience.md"]},
-  {"v":"-eAdd6izkHU","t":"05:49","label":"Instagram 비즈니스 계정 연동","pages":["42-통합/step-by-step-guide-to-facebook-integration-in-hyperclass.md"]},
-  {"v":"-eAdd6izkHU","t":"13:18","label":"Conversion API — 깨진 픽셀 데이터 해결","pages":["42-통합/Facebook-Integration/facebook-conversions-api-trigger-in-workflows.md"]},
-  {"v":"-eAdd6izkHU","t":"18:13","label":"워크플로우로 Lead·Purchase 이벤트 보내기","pages":["42-통합/Facebook-Integration/facebook-conversions-api-trigger-in-workflows.md"]},
-  {"v":"-eAdd6izkHU","t":"23:20","label":"광고별 CAC — 어트리뷰션","pages":["18-리포팅/understanding-attribution-source.md"]}
+ "placements": [
+  {
+   "page": "00-자주묻는질문/what-is-hyperclass.md",
+   "at": "핵심은, 보통 따로 써야 하는 도구들이",
+   "refs": [
+    ["yok-ipmJoDI", "32:23"]
+   ]
+  },
+  {
+   "page": "00-자주묻는질문/what-is-hyperclass.md",
+   "at": "- 웹사이트·랜딩페이지·세일즈 퍼널 빌더",
+   "refs": [
+    ["yok-ipmJoDI", "54:10"]
+   ]
+  },
+  {
+   "page": "00-자주묻는질문/what-is-hyperclass.md",
+   "at": "- 고객관리(CRM) + 모든 채널 대화를 모으는",
+   "refs": [
+    ["yok-ipmJoDI", "38:49"]
+   ]
+  },
+  {
+   "page": "00-자주묻는질문/what-is-hyperclass.md",
+   "at": "- **예약 캘린더** (결제 연동)",
+   "refs": [
+    ["oEDq8IGJ3-c", "48:42"]
+   ]
+  },
+  {
+   "page": "00-자주묻는질문/what-is-hyperclass.md",
+   "at": "- 이메일·문자·자동화 워크플로우",
+   "refs": [
+    ["yok-ipmJoDI", "51:21"]
+   ]
+  },
+  {
+   "page": "00-자주묻는질문/what-is-hyperclass.md",
+   "at": "- **토스페이먼츠 원화 결제**·영수증",
+   "refs": [
+    ["cwEP0OFhed0", "13:36"]
+   ]
+  },
+  {
+   "page": "00-자주묻는질문/what-is-hyperclass.md",
+   "at": "- 후기 요청·평판 관리",
+   "refs": [
+    ["yok-ipmJoDI", "1:00:54"]
+   ]
+  },
+  {
+   "page": "03-대화/대화/getting-started-with-the-conversations-tab.md",
+   "at": "#새로워진 대화 화면이란?",
+   "refs": [
+    ["yok-ipmJoDI", "38:49"]
+   ]
+  },
+  {
+   "page": "05-기회-파이프라인/understanding-pipelines.md",
+   "at": "#개요",
+   "refs": [
+    ["yok-ipmJoDI", "42:37"]
+   ]
+  },
+  {
+   "page": "05-기회-파이프라인/step-by-step-guide-creating-pipelines.md",
+   "at": "#2단계: 새 파이프라인 만들기",
+   "refs": [
+    ["yyvk6kgvbXw", "28:42"]
+   ]
+  },
+  {
+   "page": "41-평판-리뷰/Review-Requests/reputation-breaking-down-the-reputation-overview-dashboard.md",
+   "at": "@H1",
+   "refs": [
+    ["yok-ipmJoDI", "1:00:54"]
+   ]
+  },
+  {
+   "page": "41-평판-리뷰/multi-channel-review-requests.md",
+   "at": "#멀티채널 리뷰 요청이란?",
+   "refs": [
+    ["yok-ipmJoDI", "1:01:08"]
+   ]
+  },
+  {
+   "page": "41-평판-리뷰/Review-Requests/customizing-review-widgets-in-reputation.md",
+   "at": "#리뷰 위젯이란?",
+   "refs": [
+    ["yok-ipmJoDI", "1:01:39"]
+   ]
+  },
+  {
+   "page": "00-자주묻는질문/first-setup.md",
+   "at": "처음 가입하시면 아래 순서대로",
+   "refs": [
+    ["woau-D9kDKE", "45:45"]
+   ]
+  },
+  {
+   "page": "00-자주묻는질문/first-setup.md",
+   "at": "1. **기본 정보 등록**",
+   "refs": [
+    ["woau-D9kDKE", "58:31"]
+   ]
+  },
+  {
+   "page": "00-자주묻는질문/first-setup.md",
+   "at": "2. **비즈니스 페이지 주소 만들기**",
+   "refs": [
+    ["cDyPG4a-OEs", "51:51"],
+    ["cDyPG4a-OEs", "45:57"]
+   ]
+  },
+  {
+   "page": "00-자주묻는질문/first-setup.md",
+   "at": "3. **예약 캘린더 설정**",
+   "refs": [
+    ["oEDq8IGJ3-c", "48:42"]
+   ]
+  },
+  {
+   "page": "00-자주묻는질문/first-setup.md",
+   "at": "4. **설문조사·폼 등록**",
+   "refs": [
+    ["yyvk6kgvbXw", "48:41"]
+   ]
+  },
+  {
+   "page": "00-자주묻는질문/first-setup.md",
+   "at": "5. **첫 자동화/퍼널 만들기**",
+   "refs": [
+    ["yyvk6kgvbXw", "35:55"]
+   ]
+  },
+  {
+   "page": "11-설정/Business-Profile-Settings/business-profile-settings.md",
+   "at": "#비즈니스 프로필은 어디에 있나요?",
+   "refs": [
+    ["woau-D9kDKE", "58:31"]
+   ]
+  },
+  {
+   "page": "40-병합필드-변수/creating-and-managing-custom-fields-for-better-data-organization-008466.md",
+   "at": "#커스텀 필드 만들기",
+   "refs": [
+    ["oEDq8IGJ3-c", "1:07:44"]
+   ]
+  },
+  {
+   "page": "06-사이트/폼/how-to-quickly-add-and-edit-custom-fields-in-forms-and-surveys.md",
+   "at": "@H1",
+   "refs": [
+    ["oEDq8IGJ3-c", "1:07:44"]
+   ]
+  },
+  {
+   "page": "11-설정/Domain-Connect/connecting-your-domain-on-hyperclass-a-guide.md",
+   "at": "#Cloudflare",
+   "refs": [
+    ["cDyPG4a-OEs", "38:10"],
+    ["cDyPG4a-OEs", "39:47"]
+   ]
+  },
+  {
+   "page": "11-설정/Domain-Connect/connecting-your-domain-on-hyperclass-a-guide.md",
+   "at": "4. 입력란에 루트 도메인이나 서브도메인을",
+   "refs": [
+    ["cDyPG4a-OEs", "42:41"]
+   ]
+  },
+  {
+   "page": "11-설정/Domain-Connect/connecting-your-domain-on-hyperclass-a-guide.md",
+   "at": "#도메인을 연결할 수 있는 제품",
+   "refs": [
+    ["cDyPG4a-OEs", "45:57"]
+   ]
+  },
+  {
+   "page": "06-사이트/create-blog-posts.md",
+   "at": "#블로그 게시물 만들기",
+   "refs": [
+    ["cDyPG4a-OEs", "50:10"]
+   ]
+  },
+  {
+   "page": "01-시작하기/웹사이트-콘텐츠/getting-started-launch-a-website-from-template.md",
+   "at": "#1단계: 웹사이트 만들기",
+   "refs": [
+    ["cDyPG4a-OEs", "51:51"]
+   ]
+  },
+  {
+   "page": "09-이메일/Authentication-and-Security/email-authentication-errors-fix-spf-dkim-and-dmarc-issues.md",
+   "at": "#단계별 인증 설정",
+   "refs": [
+    ["cDyPG4a-OEs", "1:02:27"]
+   ]
+  },
+  {
+   "page": "17-멤버십-커뮤니티/how-to-setup-customize-and-manage-your-communities.md",
+   "at": "#새 커뮤니티 만들기",
+   "refs": [
+    ["g2fcpLnUI8M", "40:13"]
+   ]
+  },
+  {
+   "page": "17-멤버십-커뮤니티/how-to-setup-customize-and-manage-your-communities.md",
+   "at": "#사용자 지정 도메인 설정하기",
+   "refs": [
+    ["cDyPG4a-OEs", "57:43"]
+   ]
+  },
+  {
+   "page": "17-멤버십-커뮤니티/how-to-setup-customize-and-manage-your-communities.md",
+   "at": "#하이퍼클래스 커뮤니티 이메일 알림 설정",
+   "refs": [
+    ["g2fcpLnUI8M", "39:13"]
+   ]
+  },
+  {
+   "page": "17-멤버십-커뮤니티/커뮤니티/how-to-create-your-whitelabel-community-inside-a-subaccount.md",
+   "at": "#2. 사용자 지정 도메인 설정하기",
+   "refs": [
+    ["cDyPG4a-OEs", "57:43"]
+   ]
+  },
+  {
+   "page": "00-자주묻는질문/funnels.md",
+   "at": "1. **랜딩 페이지**",
+   "refs": [
+    ["8qnMh3KJmrY", "21:43"],
+    ["AVOIIs3fMSg", "00:00"]
+   ]
+  },
+  {
+   "page": "00-자주묻는질문/funnels.md",
+   "at": "2. **신청·예약**",
+   "refs": [
+    ["oEDq8IGJ3-c", "48:42"]
+   ]
+  },
+  {
+   "page": "00-자주묻는질문/funnels.md",
+   "at": "3. **자동 알림**",
+   "refs": [
+    ["yyvk6kgvbXw", "57:26"]
+   ]
+  },
+  {
+   "page": "06-사이트/기타/split-testing-in-funnels.md",
+   "at": "#스플릿 테스트란?",
+   "refs": [
+    ["AVOIIs3fMSg", "2:40"]
+   ]
+  },
+  {
+   "page": "06-사이트/기타/split-testing-in-funnels.md",
+   "at": "#퍼널에서 스플릿 테스트 만들기",
+   "refs": [
+    ["AVOIIs3fMSg", "2:19"]
+   ]
+  },
+  {
+   "page": "06-사이트/기타/funnel-statistics.md",
+   "at": "#퍼널 통계 여는 방법",
+   "refs": [
+    ["AVOIIs3fMSg", "3:35"]
+   ]
+  },
+  {
+   "page": "06-사이트/기타/funnel-statistics.md",
+   "at": "#지표 설명",
+   "refs": [
+    ["AVOIIs3fMSg", "3:53"]
+   ]
+  },
+  {
+   "page": "06-사이트/퍼널-웹사이트/guide-funnel-website-stats-definitions.md",
+   "at": "@H1",
+   "refs": [
+    ["AVOIIs3fMSg", "3:43"]
+   ]
+  },
+  {
+   "page": "06-사이트/퍼널-웹사이트/drag-and-drop-with-auto-hierarchical-layout-in-funnel-website-builder.md",
+   "at": "@H1",
+   "refs": [
+    ["AVOIIs3fMSg", "6:43"]
+   ]
+  },
+  {
+   "page": "06-사이트/퍼널-웹사이트/saved-sections-funnels-websites-webinars-and-e-commerce-store.md",
+   "at": "#저장된 섹션 템플릿이란?",
+   "refs": [
+    ["AVOIIs3fMSg", "13:34"],
+    ["AVOIIs3fMSg", "14:38"]
+   ]
+  },
+  {
+   "page": "06-사이트/퍼널-웹사이트/universal-elements-in-the-hyperclass-page-builder.md",
+   "at": "#유니버설 요소의 장점",
+   "refs": [
+    ["AVOIIs3fMSg", "14:38"]
+   ]
+  },
+  {
+   "page": "06-사이트/퍼널-웹사이트/device-width-preview-in-funnel-website-builder.md",
+   "at": "#기기 너비 미리보기 사용 방법",
+   "refs": [
+    ["AVOIIs3fMSg", "27:53"]
+   ]
+  },
+  {
+   "page": "06-사이트/퍼널-웹사이트/how-to-create-multiple-popups-per-page-for-funnels-and-websites.md",
+   "at": "#새 팝업 만들기",
+   "refs": [
+    ["AVOIIs3fMSg", "19:21"]
+   ]
+  },
+  {
+   "page": "06-사이트/기타/show-popup-on-entering-funnel-website.md",
+   "at": "#1단계: 팝업 설정 열기",
+   "refs": [
+    ["AVOIIs3fMSg", "19:24"]
+   ]
+  },
+  {
+   "page": "06-사이트/퍼널-웹사이트/seo-meta-data.md",
+   "at": "@H1",
+   "refs": [
+    ["AVOIIs3fMSg", "23:34"],
+    ["m_DTx9U1C1g", "00:38"]
+   ]
+  },
+  {
+   "page": "06-사이트/퍼널-웹사이트/how-to-use-the-cookie-consent-banner-in-funnels-websites.md",
+   "at": "#1. 배너 켜기",
+   "refs": [
+    ["AVOIIs3fMSg", "26:00"]
+   ]
+  },
+  {
+   "page": "11-설정/서브어카운트-설정/custom-values-settings.md",
+   "at": "#커스텀 값이란?",
+   "refs": [
+    ["oEDq8IGJ3-c", "00:57"],
+    ["yyvk6kgvbXw", "40:07"]
+   ]
+  },
+  {
+   "page": "11-설정/서브어카운트-설정/custom-values-settings.md",
+   "at": "#항목 편집",
+   "refs": [
+    ["m_DTx9U1C1g", "30:47"]
+   ]
+  },
+  {
+   "page": "11-설정/media-storage-file-upload-limits.md",
+   "at": "#미디어 저장소의 파일 상세 정보",
+   "refs": [
+    ["oEDq8IGJ3-c", "04:22"]
+   ]
+  },
+  {
+   "page": "04-캘린더-예약/기타/how-to-set-up-a-personal-booking-calendar-with-hyperclass.md",
+   "at": "#사용 방법",
+   "refs": [
+    ["oEDq8IGJ3-c", "48:42"]
+   ]
+  },
+  {
+   "page": "00-자주묻는질문/booking.md",
+   "at": "#1) 예약 캘린더 만들기",
+   "refs": [
+    ["oEDq8IGJ3-c", "48:42"]
+   ]
+  },
+  {
+   "page": "00-자주묻는질문/booking.md",
+   "at": "#2) 고객이 예약",
+   "refs": [
+    ["oEDq8IGJ3-c", "1:23:13"]
+   ]
+  },
+  {
+   "page": "00-자주묻는질문/booking.md",
+   "at": "#5) 노쇼 방지·결제 옵션",
+   "refs": [
+    ["cwEP0OFhed0", "09:15"]
+   ]
+  },
+  {
+   "page": "04-캘린더-예약/캘린더-만들기/pre-and-post-buffers.md",
+   "at": "#사전·사후 버퍼 시간 설정하기",
+   "refs": [
+    ["oEDq8IGJ3-c", "53:03"]
+   ]
+  },
+  {
+   "page": "04-캘린더-예약/캘린더-연동/integrating-google-with-hyperclass-calendars.md",
+   "at": "#Google Calendar 연결 순서",
+   "refs": [
+    ["oEDq8IGJ3-c", "57:45"]
+   ]
+  },
+  {
+   "page": "00-자주묻는질문/calendar-sync.md",
+   "at": "- **구글 캘린더**, **애플/아웃룩",
+   "refs": [
+    ["oEDq8IGJ3-c", "57:45"]
+   ]
+  },
+  {
+   "page": "04-캘린더-예약/Customizing-Calendars/adding-custom-forms-to-calendars.md",
+   "at": "#캘린더에 커스텀 폼 연결하는 순서",
+   "refs": [
+    ["oEDq8IGJ3-c", "1:04:24"]
+   ]
+  },
+  {
+   "page": "04-캘린더-예약/캘린더-만들기/calendar-widget-customization.md",
+   "at": "#위젯 사용자 지정 방법",
+   "refs": [
+    ["m_DTx9U1C1g", "44:28"]
+   ]
+  },
+  {
+   "page": "39-클라이언트-포털/unified-client-portal-experience.md",
+   "at": "#개요",
+   "refs": [
+    ["g2fcpLnUI8M", "13:40"]
+   ]
+  },
+  {
+   "page": "39-클라이언트-포털/Client-Portal/how-to-set-up-the-client-portal.md",
+   "at": "#클라이언트 포탈이란?",
+   "refs": [
+    ["g2fcpLnUI8M", "13:40"]
+   ]
+  },
+  {
+   "page": "39-클라이언트-포털/Client-Portal/how-to-set-up-the-client-portal.md",
+   "at": "#클라이언트 포탈 브랜딩",
+   "refs": [
+    ["g2fcpLnUI8M", "24:34"]
+   ]
+  },
+  {
+   "page": "39-클라이언트-포털/Client-Portal/how-to-set-up-the-client-portal.md",
+   "at": "#사용자 지정 도메인 설정",
+   "refs": [
+    ["cDyPG4a-OEs", "57:43"]
+   ]
+  },
+  {
+   "page": "17-멤버십-커뮤니티/커뮤니티/gamification-in-communities-points-badges-and-leaderboards.md",
+   "at": "#레벨과 포인트는 어떻게 동작하나요?",
+   "refs": [
+    ["g2fcpLnUI8M", "18:52"]
+   ]
+  },
+  {
+   "page": "39-클라이언트-포털/Client-Portal/app-permissions-in-client-portal-enabling-disabling-a-child-app.md",
+   "at": "#하위 앱 켜고 끄기",
+   "refs": [
+    ["g2fcpLnUI8M", "27:44"]
+   ]
+  },
+  {
+   "page": "06-사이트/getting-started-with-chat-widget.md",
+   "at": "#채팅 유형 종류",
+   "refs": [
+    ["g2fcpLnUI8M", "28:54"]
+   ]
+  },
+  {
+   "page": "06-사이트/getting-started-with-chat-widget.md",
+   "at": "#채팅 위젯 설치하기",
+   "refs": [
+    ["c4QmTGpfdCc", "40:19"],
+    ["c4QmTGpfdCc", "45:11"]
+   ]
+  },
+  {
+   "page": "17-멤버십-커뮤니티/how-to-make-groups-private-in-communities.md",
+   "at": "#비공개·공개 그룹 전환이란?",
+   "refs": [
+    ["g2fcpLnUI8M", "43:34"]
+   ]
+  },
+  {
+   "page": "17-멤버십-커뮤니티/커뮤니티/paid-groups.md",
+   "at": "#일회성 결제",
+   "refs": [
+    ["g2fcpLnUI8M", "45:39"],
+    ["mNj3LJI6oTY", "45:49"]
+   ]
+  },
+  {
+   "page": "17-멤버십-커뮤니티/커뮤니티/paid-groups.md",
+   "at": "#정기 구독",
+   "refs": [
+    ["mNj3LJI6oTY", "47:12"]
+   ]
+  },
+  {
+   "page": "01-시작하기/커머스/getting-started-launch-a-course.md",
+   "at": "#코스 만들기",
+   "refs": [
+    ["g2fcpLnUI8M", "52:25"]
+   ]
+  },
+  {
+   "page": "01-시작하기/커머스/getting-started-launch-a-course.md",
+   "at": "#오퍼 만들기",
+   "refs": [
+    ["g2fcpLnUI8M", "56:52"]
+   ]
+  },
+  {
+   "page": "17-멤버십-커뮤니티/멤버십-코스/how-to-build-courses-membership-sites.md",
+   "at": "#코스 만들고 출시하기",
+   "refs": [
+    ["g2fcpLnUI8M", "52:25"]
+   ]
+  },
+  {
+   "page": "17-멤버십-커뮤니티/멤버십-코스/how-to-build-courses-membership-sites.md",
+   "at": "#코스 오퍼 만들고 게시하기",
+   "refs": [
+    ["g2fcpLnUI8M", "56:52"]
+   ]
+  },
+  {
+   "page": "17-멤버십-커뮤니티/멤버십-코스/progress-analytics-in-courses.md",
+   "at": "#코스 진행률 분석이란?",
+   "refs": [
+    ["g2fcpLnUI8M", "1:00:58"]
+   ]
+  },
+  {
+   "page": "07-워크플로우/빌더/workflow-trigger-contact-tag.md",
+   "at": "#Contact Tag 트리거는 어떤 일을 하나요?",
+   "refs": [
+    ["yyvk6kgvbXw", "09:53"]
+   ]
+  },
+  {
+   "page": "00-자주묻는질문/automation.md",
+   "at": "는 규칙을 만들어 두면 시스템이 알아서 실행합니다",
+   "refs": [
+    ["yyvk6kgvbXw", "15:04"]
+   ]
+  },
+  {
+   "page": "00-자주묻는질문/automation.md",
+   "at": "- 예약이 확정되면 → 확정 안내",
+   "refs": [
+    ["yyvk6kgvbXw", "57:26"]
+   ]
+  },
+  {
+   "page": "00-자주묻는질문/automation.md",
+   "at": "> **따라 하기:** 처음에는",
+   "refs": [
+    ["yyvk6kgvbXw", "35:55"]
+   ]
+  },
+  {
+   "page": "07-워크플로우/기타/workflow-builder-walkthrough.md",
+   "at": "#이 문서에서 다루는 내용",
+   "refs": [
+    ["yyvk6kgvbXw", "15:04"]
+   ]
+  },
+  {
+   "page": "07-워크플로우/기타/workflow-builder-walkthrough.md",
+   "at": "#무한 캔버스 레이아웃",
+   "refs": [
+    ["yyvk6kgvbXw", "18:55"]
+   ]
+  },
+  {
+   "page": "07-워크플로우/기타/workflow-builder-walkthrough.md",
+   "at": "#워크플로우 테스트하기",
+   "refs": [
+    ["yyvk6kgvbXw", "55:41"]
+   ]
+  },
+  {
+   "page": "07-워크플로우/Internal-Tools-Workflow-Actions/workflow-action-wait.md",
+   "at": "#Wait 액션이란?",
+   "refs": [
+    ["yyvk6kgvbXw", "17:17"]
+   ]
+  },
+  {
+   "page": "07-워크플로우/Internal-Tools-Workflow-Actions/workflow-action-wait.md",
+   "at": "#언제 Wait 액션을 쓰나요?",
+   "refs": [
+    ["yyvk6kgvbXw", "44:55"]
+   ]
+  },
+  {
+   "page": "07-워크플로우/Forms-and-Surveys-Workflow-Triggers/workflow-trigger-survey-submitted.md",
+   "at": "#Survey Submitted 트리거란?",
+   "refs": [
+    ["yyvk6kgvbXw", "36:45"]
+   ]
+  },
+  {
+   "page": "06-사이트/폼/forms-surveys-quizzes-inline-editing.md",
+   "at": "@H1",
+   "refs": [
+    ["yyvk6kgvbXw", "48:41"]
+   ]
+  },
+  {
+   "page": "06-사이트/폼/forms-surveys-quizzes-on-submit-message-customisation.md",
+   "at": "@H1",
+   "refs": [
+    ["yyvk6kgvbXw", "51:56"]
+   ]
+  },
+  {
+   "page": "06-사이트/survey-create-contact-on-partial-completion.md",
+   "at": "#부분 제출 시 연락처 생성 사용하기",
+   "refs": [
+    ["yyvk6kgvbXw", "53:15"]
+   ]
+  },
+  {
+   "page": "07-워크플로우/시작하기/test-workflow.md",
+   "at": "#워크플로우 전체 테스트하기",
+   "refs": [
+    ["yyvk6kgvbXw", "55:41"]
+   ]
+  },
+  {
+   "page": "07-워크플로우/Appointments-Workflow-Triggers/workflow-trigger-appointment-status.md",
+   "at": "#Appointment Status 트리거 설정하기",
+   "refs": [
+    ["yyvk6kgvbXw", "57:26"]
+   ]
+  },
+  {
+   "page": "00-자주묻는질문/reminders.md",
+   "at": "- 미팅 전 정해둔 시점에 자동으로 리마인드가",
+   "refs": [
+    ["yyvk6kgvbXw", "59:29"]
+   ]
+  },
+  {
+   "page": "00-자주묻는질문/reminders.md",
+   "at": "- 캘린더의 리마인드 설정에서 시점·문구를",
+   "refs": [
+    ["yyvk6kgvbXw", "57:26"]
+   ]
+  },
+  {
+   "page": "09-이메일/managing-default-unsubscribe-links-in-lc-email.md",
+   "at": "#수신거부 링크를 넣어야 하는 이유 (법적 준수)",
+   "refs": [
+    ["yyvk6kgvbXw", "1:11:52"]
+   ]
+  },
+  {
+   "page": "07-워크플로우/기타/workflow-ai-builder.md",
+   "at": "#워크플로우 AI 빌더 여는 방법",
+   "refs": [
+    ["yyvk6kgvbXw", "1:13:59"]
+   ]
+  },
+  {
+   "page": "07-워크플로우/기타/what-are-workflow-actions-complete-list.md",
+   "at": "#트리거와 액션 이해하기",
+   "refs": [
+    ["yyvk6kgvbXw", "1:18:00"]
+   ]
+  },
+  {
+   "page": "42-통합/step-by-step-guide-to-facebook-integration-in-hyperclass.md",
+   "at": "#서브 계정에 Facebook 연결하기",
+   "refs": [
+    ["TNUzXx1UteQ", "02:04"],
+    ["-eAdd6izkHU", "05:49"]
+   ]
+  },
+  {
+   "page": "42-통합/Other-Integrations/linkedin-lead-ads-integration.md",
+   "at": "#LinkedIn 연동 시작하기",
+   "refs": [
+    ["TNUzXx1UteQ", "04:50"]
+   ]
+  },
+  {
+   "page": "10-마케팅/소셜-플래너/connect-instagram-facebook-linked-vs-direct-instagram-integration.md",
+   "at": "#방법 2: 다이렉트 Instagram 연동 (권장)",
+   "refs": [
+    ["TNUzXx1UteQ", "06:45"]
+   ]
+  },
+  {
+   "page": "10-마케팅/소셜-플래너/social-planner-manage-comments.md",
+   "at": "#댓글 관리란?",
+   "refs": [
+    ["TNUzXx1UteQ", "10:26"]
+   ]
+  },
+  {
+   "page": "10-마케팅/소셜-플래너/social-planner-social-listening.md",
+   "at": "#소셜 리스닝이란?",
+   "refs": [
+    ["TNUzXx1UteQ", "13:23"]
+   ]
+  },
+  {
+   "page": "10-마케팅/소셜-플래너/social-planner-category-queue.md",
+   "at": "#카테고리 대기열이란?",
+   "refs": [
+    ["TNUzXx1UteQ", "13:59"]
+   ]
+  },
+  {
+   "page": "10-마케팅/소셜-플래너/social-planner-link-shortener.md",
+   "at": "#소셜 플래너에서 링크 축약기 사용하기",
+   "refs": [
+    ["TNUzXx1UteQ", "24:45"]
+   ]
+  },
+  {
+   "page": "10-마케팅/소셜-플래너/how-to-manage-social-planner-email-notifications.md",
+   "at": "#알림 설정하기",
+   "refs": [
+    ["TNUzXx1UteQ", "14:32"]
+   ]
+  },
+  {
+   "page": "10-마케팅/소셜-플래너/how-to-customize-posts-for-each-social.md",
+   "at": "#채널별로 게시물 맞춤 설정하기",
+   "refs": [
+    ["TNUzXx1UteQ", "23:35"]
+   ]
+  },
+  {
+   "page": "00-자주묻는질문/payment-methods.md",
+   "at": "**② 내 고객에게 받는 결제 (고객",
+   "refs": [
+    ["zE96JKeoI20", "17:54"]
+   ]
+  },
+  {
+   "page": "00-자주묻는질문/payment-methods.md",
+   "at": "**사장님 본인 명의 토스페이먼츠**를 연동하기",
+   "refs": [
+    ["cwEP0OFhed0", "13:36"]
+   ]
+  },
+  {
+   "page": "43-한국-앱/tosspayments-getting-started.md",
+   "at": "#전체 진행 지도",
+   "refs": [
+    ["cwEP0OFhed0", "13:36"]
+   ]
+  },
+  {
+   "page": "08-결제/payment-links.md",
+   "at": "#결제 링크 만드는 순서",
+   "refs": [
+    ["cwEP0OFhed0", "02:35"],
+    ["mNj3LJI6oTY", "28:01"]
+   ]
+  },
+  {
+   "page": "01-시작하기/커머스/getting-started-setup-payment-links.md",
+   "at": "#결제 링크 만들기",
+   "refs": [
+    ["cwEP0OFhed0", "02:35"]
+   ]
+  },
+  {
+   "page": "06-사이트/how-to-add-a-two-step-order-form-to-a-funnel.md",
+   "at": "#2단계 주문 폼의 장점",
+   "refs": [
+    ["cwEP0OFhed0", "04:46"],
+    ["cwEP0OFhed0", "10:10"]
+   ]
+  },
+  {
+   "page": "06-사이트/how-to-add-a-two-step-order-form-to-a-funnel.md",
+   "at": "#퍼널에 2단계 주문 폼 추가하기",
+   "refs": [
+    ["mNj3LJI6oTY", "34:45"]
+   ]
+  },
+  {
+   "page": "06-사이트/폼/forms-how-to-setup-and-use-order-bumps.md",
+   "at": "#폼의 주문 범프란?",
+   "refs": [
+    ["cwEP0OFhed0", "08:26"]
+   ]
+  },
+  {
+   "page": "04-캘린더-예약/캘린더-만들기/partial-payment-collect-deposit-amount.md",
+   "at": "#부분 결제란?",
+   "refs": [
+    ["cwEP0OFhed0", "09:15"]
+   ]
+  },
+  {
+   "page": "43-한국-앱/faq-cancel-refund.md",
+   "at": "#판매자(운영) 측에서 알아둘 것",
+   "refs": [
+    ["cwEP0OFhed0", "20:48"]
+   ]
+  },
+  {
+   "page": "43-한국-앱/part0-website-check.md",
+   "at": "@H1",
+   "refs": [
+    ["mNj3LJI6oTY", "00:48"]
+   ]
+  },
+  {
+   "page": "43-한국-앱/part0-website-check.md",
+   "at": "#0-1. 판매 상품이 홈페이지에 보이는가",
+   "refs": [
+    ["mNj3LJI6oTY", "02:20"]
+   ]
+  },
+  {
+   "page": "43-한국-앱/part0-website-check.md",
+   "at": "#0-4. 결제까지의 경로가 실제로 동작하는가",
+   "refs": [
+    ["mNj3LJI6oTY", "17:25"],
+    ["mNj3LJI6oTY", "18:44"]
+   ]
+  },
+  {
+   "page": "43-한국-앱/part1-preparation.md",
+   "at": "#1-3. 서류 준비 (모두 3개월 이내 발급본)",
+   "refs": [
+    ["mNj3LJI6oTY", "04:17"]
+   ]
+  },
+  {
+   "page": "43-한국-앱/part1-preparation.md",
+   "at": "#1-4. 어떤 상점(MID)을 신청할지 결정",
+   "refs": [
+    ["mNj3LJI6oTY", "05:04"],
+    ["mNj3LJI6oTY", "06:44"]
+   ]
+  },
+  {
+   "page": "43-한국-앱/part2-application.md",
+   "at": "#2-1. 전자계약 신청 (MID마다 반복)",
+   "refs": [
+    ["mNj3LJI6oTY", "08:57"]
+   ]
+  },
+  {
+   "page": "43-한국-앱/part2-application.md",
+   "at": "#2-2. ★ 온라인 강의 협약서 (강의·구독 업종 필수)",
+   "refs": [
+    ["mNj3LJI6oTY", "10:02"]
+   ]
+  },
+  {
+   "page": "43-한국-앱/part2-application.md",
+   "at": "#2-3. 보증보험 (해당 시)",
+   "refs": [
+    ["mNj3LJI6oTY", "11:07"]
+   ]
+  },
+  {
+   "page": "43-한국-앱/part3-app-connection.md",
+   "at": "#3-1. API 키 확인",
+   "refs": [
+    ["mNj3LJI6oTY", "11:44"],
+    ["mNj3LJI6oTY", "52:33"]
+   ]
+  },
+  {
+   "page": "43-한국-앱/part3-app-connection.md",
+   "at": "#3-2. 하이퍼클래스 앱 설치 + 키 입력",
+   "refs": [
+    ["mNj3LJI6oTY", "50:19"],
+    ["mNj3LJI6oTY", "54:11"]
+   ]
+  },
+  {
+   "page": "43-한국-앱/part4-products-test.md",
+   "at": "#4-1. 상품 만들기 — 최소 2종 (권장 4종)",
+   "refs": [
+    ["mNj3LJI6oTY", "21:55"]
+   ]
+  },
+  {
+   "page": "43-한국-앱/part4-products-test.md",
+   "at": "#4-2. 결제 링크 만들기",
+   "refs": [
+    ["mNj3LJI6oTY", "28:01"]
+   ]
+  },
+  {
+   "page": "43-한국-앱/part4-products-test.md",
+   "at": "#4-3. 결제 테스트 ① — 일반결제 (상품 A)",
+   "refs": [
+    ["mNj3LJI6oTY", "31:05"],
+    ["mNj3LJI6oTY", "55:55"]
+   ]
+  },
+  {
+   "page": "43-한국-앱/part5-payment-path-docs.md",
+   "at": "#5-0. 캡처 공통 규칙 (두 파일 모두 적용)",
+   "refs": [
+    ["mNj3LJI6oTY", "14:42"],
+    ["mNj3LJI6oTY", "57:15"]
+   ]
+  },
+  {
+   "page": "43-한국-앱/tosspayments-installation.md",
+   "at": "#1부. 서브 계정에 앱 설치하기",
+   "refs": [
+    ["mNj3LJI6oTY", "50:19"]
+   ]
+  },
+  {
+   "page": "43-한국-앱/tosspayments-installation.md",
+   "at": "#6부. 환불 테스트",
+   "refs": [
+    ["mNj3LJI6oTY", "55:55"]
+   ]
+  },
+  {
+   "page": "01-시작하기/커머스/getting-started-create-sell-products.md",
+   "at": "#4단계: 가격 설정하기",
+   "refs": [
+    ["mNj3LJI6oTY", "21:55"],
+    ["mNj3LJI6oTY", "24:28"]
+   ]
+  },
+  {
+   "page": "08-결제/인보이스-견적/how-to-add-setup-fees-to-your-recurring-invoices.md",
+   "at": "#사용 방법",
+   "refs": [
+    ["mNj3LJI6oTY", "26:22"]
+   ]
+  },
+  {
+   "page": "01-시작하기/커머스/getting-started-create-and-send-invoices.md",
+   "at": "#인보이스 만들기",
+   "refs": [
+    ["mNj3LJI6oTY", "32:42"]
+   ]
+  },
+  {
+   "page": "08-결제/인보이스-견적/how-to-create-invoices-in-hyperclass.md",
+   "at": "#새 인보이스 만들기",
+   "refs": [
+    ["mNj3LJI6oTY", "32:42"]
+   ]
+  },
+  {
+   "page": "00-자주묻는질문/ai-chatbot.md",
+   "at": "- **웹사이트 채팅 위젯** — 바로 사용 가능",
+   "refs": [
+    ["c4QmTGpfdCc", "40:19"]
+   ]
+  },
+  {
+   "page": "00-자주묻는질문/ai-chatbot.md",
+   "at": "- **페이스북 메신저 · 인스타그램 DM**",
+   "refs": [
+    ["c4QmTGpfdCc", "21:32"]
+   ]
+  },
+  {
+   "page": "00-자주묻는질문/ai-chatbot.md",
+   "at": "- 챗봇에게 **웹사이트 URL·FAQ·구글 문서",
+   "refs": [
+    ["c4QmTGpfdCc", "24:46"],
+    ["c4QmTGpfdCc", "33:02"]
+   ]
+  },
+  {
+   "page": "00-자주묻는질문/ai-chatbot.md",
+   "at": "- **자동 응답(Auto-Pilot)**",
+   "refs": [
+    ["c4QmTGpfdCc", "20:39"]
+   ]
+  },
+  {
+   "page": "00-자주묻는질문/ai-chatbot.md",
+   "at": "> **따라 하기:** 설정에서 챗봇을 켜고",
+   "refs": [
+    ["c4QmTGpfdCc", "49:45"]
+   ]
+  },
+  {
+   "page": "13-AI-Employee/bot-goals-overview-conversation-ai.md",
+   "at": "#봇 목표 열기",
+   "refs": [
+    ["c4QmTGpfdCc", "19:40"]
+   ]
+  },
+  {
+   "page": "13-AI-Employee/bot-goals-overview-conversation-ai.md",
+   "at": "#성격",
+   "refs": [
+    ["c4QmTGpfdCc", "25:47"]
+   ]
+  },
+  {
+   "page": "13-AI-Employee/bot-goals-overview-conversation-ai.md",
+   "at": "#모델 선택",
+   "refs": [
+    ["c4QmTGpfdCc", "49:03"]
+   ]
+  },
+  {
+   "page": "13-AI-Employee/bot-goals-overview-conversation-ai.md",
+   "at": "#예약 부킹 액션",
+   "refs": [
+    ["c4QmTGpfdCc", "27:14"],
+    ["c4QmTGpfdCc", "50:55"]
+   ]
+  },
+  {
+   "page": "13-AI-Employee/bot-goals-overview-conversation-ai.md",
+   "at": "#봇 테스트하기",
+   "refs": [
+    ["c4QmTGpfdCc", "49:45"]
+   ]
+  },
+  {
+   "page": "13-AI-Employee/knowledge-base-overview.md",
+   "at": "#지식 베이스란?",
+   "refs": [
+    ["c4QmTGpfdCc", "24:46"],
+    ["c4QmTGpfdCc", "25:22"]
+   ]
+  },
+  {
+   "page": "13-AI-Employee/knowledge-base-web-crawler.md",
+   "at": "#향상된 웹 크롤러 사용하기",
+   "refs": [
+    ["c4QmTGpfdCc", "33:02"],
+    ["c4QmTGpfdCc", "33:27"]
+   ]
+  },
+  {
+   "page": "13-AI-Employee/ai-employee-knowledge-base-tables.md",
+   "at": "#지식 베이스의 테이블 검색이란?",
+   "refs": [
+    ["c4QmTGpfdCc", "33:02"]
+   ]
+  },
+  {
+   "page": "13-AI-Employee/Conversation-AI-Goals-Prompts-and-Actions/conversation-ai-human-handover-action.md",
+   "at": "#상담원 전환 액션 설정",
+   "refs": [
+    ["c4QmTGpfdCc", "28:49"]
+   ]
+  },
+  {
+   "page": "00-자주묻는질문/chatbot-handover.md",
+   "at": "챗봇은 모르는 걸 지어내지 않고",
+   "refs": [
+    ["c4QmTGpfdCc", "28:49"]
+   ]
+  },
+  {
+   "page": "00-자주묻는질문/chatbot-handover.md",
+   "at": "또한 챗봇이 답하지 못한 질문은",
+   "refs": [
+    ["c4QmTGpfdCc", "38:22"]
+   ]
+  },
+  {
+   "page": "13-AI-Employee/Conversation-AI/conversation-ai-agent-logs.md",
+   "at": "#대화 AI 에이전트 로그란?",
+   "refs": [
+    ["c4QmTGpfdCc", "37:34"]
+   ]
+  },
+  {
+   "page": "44-신기능-2026/agent-logs-overview.md",
+   "at": "#에이전트 로그란?",
+   "refs": [
+    ["c4QmTGpfdCc", "37:34"]
+   ]
+  },
+  {
+   "page": "06-사이트/how-to-install-hyperclass-s-chat-widget.md",
+   "at": "#퍼널 또는 웹사이트에 채팅 위젯 설치하기",
+   "refs": [
+    ["c4QmTGpfdCc", "45:11"],
+    ["c4QmTGpfdCc", "46:00"]
+   ]
+  },
+  {
+   "page": "06-사이트/how-to-install-hyperclass-s-chat-widget.md",
+   "at": "#채팅 위젯 설정하고 테스트하기",
+   "refs": [
+    ["c4QmTGpfdCc", "41:22"]
+   ]
+  },
+  {
+   "page": "13-AI-Employee/Getting-Started-w/Conversation-AI/advanced-settings-overview-conversation-ai.md",
+   "at": "#최대 메시지 수 제한 (1~100)",
+   "refs": [
+    ["c4QmTGpfdCc", "23:32"]
+   ]
+  },
+  {
+   "page": "13-AI-Employee/Getting-Started-w/Conversation-AI/advanced-settings-overview-conversation-ai.md",
+   "at": "#응답 지연 설정",
+   "refs": [
+    ["c4QmTGpfdCc", "22:59"]
+   ]
+  },
+  {
+   "page": "13-AI-Employee/Conversation-AI-Goals-Prompts-and-Actions/conversation-ai-auto-follow-up-action.md",
+   "at": "#자동 후속 조치란?",
+   "refs": [
+    ["c4QmTGpfdCc", "30:33"]
+   ]
+  },
+  {
+   "page": "13-AI-Employee/Conversation-AI-Goals-Prompts-and-Actions/conversation-ai-transfer-bot-action.md",
+   "at": "#전달 봇 액션이란?",
+   "refs": [
+    ["c4QmTGpfdCc", "29:49"]
+   ]
+  },
+  {
+   "page": "42-통합/Facebook-Integration/facebook-conversions-api-trigger-in-workflows.md",
+   "at": "@H1",
+   "refs": [
+    ["-eAdd6izkHU", "13:18"],
+    ["-eAdd6izkHU", "18:13"]
+   ]
+  },
+  {
+   "page": "42-통합/Facebook-Integration/facebook-conversions-api-trigger-in-workflows.md",
+   "at": "#액세스 토큰과 Pixel Id 필드에 커스텀 값을 쓸 수 있나요?",
+   "refs": [
+    ["-eAdd6izkHU", "17:24"]
+   ]
+  },
+  {
+   "page": "18-리포팅/understanding-attribution-source.md",
+   "at": "@H1",
+   "refs": [
+    ["-eAdd6izkHU", "23:20"]
+   ]
+  }
  ]
 }

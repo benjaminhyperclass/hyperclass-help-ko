@@ -8,15 +8,9 @@
 
 하이퍼클래스에 기본으로 들어 있는 퍼널 통계로 퍼널의 성과를 확인하고 해석하는 방법을 안내해요. 어떤 지표를 집계하는지, 통계를 어디서 보는지, 수치를 어떻게 읽는지 알 수 있어요.
 
-{% hint style="success" %}
-🎬 **영상으로 배우기** — 창업 챌린지 강의에서 이 내용을 화면으로 직접 보여 드려요.
-
-* [4강 2부 · 퍼널 단계별 통계 보는 법 (03:29)](https://www.youtube.com/watch?v=AVOIIs3fMSg&t=209s)
-
-전체 강의 목차: [창업 챌린지 강의 영상으로 배우기](../../01-시작하기/creator-challenge-videos.md)
-{% endhint %}
-
 ## 퍼널 통계 여는 방법
+
+▶ 영상 [4강 2부 3:35](https://www.youtube.com/watch?v=AVOIIs3fMSg&t=215s)
 
 #### 1단계: 사이트 또는 퍼널 열기
 
@@ -48,6 +42,8 @@
 ---
 
 ## 지표 설명
+
+▶ 영상 [4강 2부 3:53](https://www.youtube.com/watch?v=AVOIIs3fMSg&t=233s)
 
 #### 페이지 조회수
 

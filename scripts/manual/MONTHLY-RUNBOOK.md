@@ -34,7 +34,7 @@
    python3 scripts/manual/lint_manual.py /tmp/mq-out/docs --json /tmp/mq-lint.json
    python3 scripts/manual/publish_results.py /tmp/mq-out /tmp/mq-lint.json --report /tmp/mq-report.json   # 검수 통과분만 docs/ 로
    python3 scripts/manual/apply_plan.py links
-   python3 scripts/manual/video_links.py apply             # 새로 써진 문서에 '영상으로 배우기' 박스를 다시 넣는다
+   python3 scripts/manual/video_links.py apply             # 새로 써진 문서 본문에 '▶ 영상' 타임스탬프 링크를 다시 넣는다(못 찾은 위치는 목록으로 출력 → 연결표 at 수정)
    python3 scripts/manual/gen_summary.py
    python3 scripts/manual/lint_manual.py docs --links      # 브랜드 0 · 링크 0 확인
    python3 scripts/manual/queue.py done <반영한 id ...>
@@ -42,10 +42,11 @@
 4. 브랜치 → PR → 머지(GitBook 자동 동기화). SUMMARY `## 제목`의 영문 부분은 바꾸지 않는다(공개 주소가 바뀜).
 
 ## C. 창업 챌린지 강의 영상 연결
-- 연결표 `data/manual/video-map.json`(챕터 시각 → 문서), 챕터 목록 `data/manual/video-chapters.json`(유튜브 설명란 챕터 그대로).
+- 형식(2026-11-11 벤자민 지침): 상자·목차 페이지 없이, 본문에서 그 내용을 설명하는 문장·소제목 옆에 `▶ 영상 [4강 2부 2:19](유튜브 &t=초)` 텍스트 링크만 둔다. 누르면 바로 그 장면이 나와야 한다.
 - **유튜브에 '공개'로 올라간 강의만 연결한다.** 일부 공개(unlisted)·비공개·멤버십 전용·유료 강의는 절대 넣지 않는다. 채널 공개 목록(@benjamin_hyperclass)에서 보이는지 확인하고 `video-map.json` 의 `_meta.public_ids` 에 더해야 `video_links.py` 가 돈다.
-- 새 강의가 올라오면: 영상 id·챕터를 `video-chapters.json` 에, 기능 시연 챕터만 골라 `video-map.json` 의 `lectures`·`links` 에 더한 뒤 `python3 scripts/manual/video_links.py apply` → `gen_summary.py` → `lint_manual.py docs --links`.
-- 이론 강의 챕터(마인드셋·오퍼 이론 등)와 자체 개발 앱(Hyperaxis 등) 챕터는 연결하지 않는다.
+- 연결표 `data/manual/video-map.json` 의 `placements`: `{page, at, refs:[[영상 id, 시각]]}`. at 은 `@H1`(제목 아래 첫 문단) · `#소제목` · 문장 일부. 시각은 챕터 시작이 아니라 그 장면이 실제로 시작되는 초를 쓴다(유튜브 '스크립트 표시'로 확인).
+- 새 강의: 챕터를 `video-chapters.json` 에 넣고, 기능 시연 장면만 골라 placements 에 더한 뒤 `video_links.py apply` → `gen_summary.py` → `lint_manual.py docs --links`.
+- 이론 장면, 자체 개발 앱(Hyperaxis 등), 지금 요금제와 다른 옛 요금제 설명은 연결하지 않는다.
 - `postprocess.py` 는 위 영상 id 링크는 남긴다(남의 영상 링크만 지움).
 
 ## 하지 말 것
