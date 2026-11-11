@@ -260,3 +260,12 @@
 - `ticketingApp` 2931 → 3031
 - `voiceAiApp` 944 → 950
 
+## 2026-11-11 06:49 UTC — main 2206 → 2206 · manifest 2206.7857 → 2206.7862
+- `calendarComponentsApp` 616 → 636
+- `calendarSettingsApp` 629 → 636
+- `contactsApp` 3008 → 3039
+- `eventsManagementApp` 3029 → 3038
+- `opportunitiesApp` 3033 → 3034
+- `proposalsEstimateTemplateApp` 122 → 123
+- `proposalsEstimatesApp` 122 → 123
+
