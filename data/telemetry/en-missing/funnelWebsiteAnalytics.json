@@ -1,0 +1,10 @@
+{
+ "aiStudio.trackingSince": "Page views are tracked from {date}. Earlier opt-ins have no matching page views, so the opt-in rate for those days isn't meaningful.",
+ "charts.seriesValue": "{name}: {value}",
+ "externalAnalytics.filterOptionsLoadFailed": "Unable to load filter options. Please try again.",
+ "externalAnalytics.selectionCleared": "Unavailable filter selections were cleared",
+ "filters.types.ai_studio": "AI Studio",
+ "helper.safariIos": "Safari iOS",
+ "project": "Projects",
+ "scansByDeviceType": "Scans by device type"
+}
