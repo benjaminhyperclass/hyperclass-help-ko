@@ -284,3 +284,8 @@
 - `switchyardApp` 17 → 20
 - `voiceAiApp` 950 → 954
 
+## 2026-11-12 07:27 UTC — main 2212 → 2212 · manifest 2212.7882 → 2212.7885
+- `contactsHighriseApp` 3033 → 3041
+- `onboardingApp` 241 → 243
+- `opportunitiesApp` 3034 → 3041
+

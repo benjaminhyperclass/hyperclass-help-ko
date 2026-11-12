@@ -1,5 +1,5 @@
 {
- "manifestVersion": "2212.7882",
+ "manifestVersion": "2212.7885",
  "mainAppVersion": "2212",
  "federatedApps": {
   "reputationApp": "https://appcdn.leadconnectorhq.com/revex/reputation/2261/remoteEntry.js?nocache=true",
@@ -37,7 +37,7 @@
   "chatWidgetApp": "https://appcdn.leadconnectorhq.com/leadgen/chat-widget/130/remoteEntry.js?nocache=true",
   "emailPreviewApp": "https://appcdn.leadconnectorhq.com/leadgen/email-preview/413/remoteEntry.js?nocache=true",
   "calendarSettingsApp": "https://appcdn.leadconnectorhq.com/automation/calendar-settings/636/remoteEntry.js?nocache=true",
-  "onboardingApp": "https://appcdn.leadconnectorhq.com/leadgen/Onboarding/241/remoteEntry.js?nocache=true",
+  "onboardingApp": "https://appcdn.leadconnectorhq.com/leadgen/Onboarding/243/remoteEntry.js?nocache=true",
   "defaultEmailTemplatesApp": "https://appcdn.leadconnectorhq.com/leadgen/default-emails/401/remoteEntry.js?nocache=true",
   "contactsApp": "https://appcdn.leadconnectorhq.com/crm/contacts/3039/remoteEntry.js?nocache=true",
   "ghlContactRestoreApp": "https://appcdn.leadconnectorhq.com/crm/contacts-restore/2916/remoteEntry.js?nocache=true",
@@ -59,7 +59,7 @@
   "socialPlannerApp": "https://appcdn.leadconnectorhq.com/leadgen/SocialPlanner/383/remoteEntry.js?nocache=true",
   "locationSettingApp": "https://appcdn.leadconnectorhq.com/revex/LocationSetting/24/remoteEntry.js?nocache=true",
   "copilotApp": "https://appcdn.leadconnectorhq.com/ai/copilot/933/remoteEntry.js?nocache=true",
-  "opportunitiesApp": "https://appcdn.leadconnectorhq.com/crm/opportunities/3034/remoteEntry.js?nocache=true",
+  "opportunitiesApp": "https://appcdn.leadconnectorhq.com/crm/opportunities/3041/remoteEntry.js?nocache=true",
   "domainConnectApp": "https://appcdn.leadconnectorhq.com/leadgen/funnel-website-domain-connect/243/remoteEntry.js?nocache=true",
   "domainResellingApp": "https://appcdn.leadconnectorhq.com/leadgen/domain-reselling/249/remoteEntry.js?nocache=true",
   "redirectApp": "https://appcdn.leadconnectorhq.com/leadgen/funnel-website-redirect/222/remoteEntry.js?nocache=true",
@@ -96,7 +96,7 @@
   "calendarComponentsApp": "https://appcdn.leadconnectorhq.com/automation/calendar-components/636/remoteEntry.js?nocache=true",
   "externalTrackingApp": "https://appcdn.leadconnectorhq.com/leadgen/external-tracking/342/remoteEntry.js?nocache=true",
   "usersApp": "https://appcdn.leadconnectorhq.com/crm/users/2993/remoteEntry.js?nocache=true",
-  "contactsHighriseApp": "https://appcdn.leadconnectorhq.com/crm/contacts-highrise/3033/remoteEntry.js?nocache=true",
+  "contactsHighriseApp": "https://appcdn.leadconnectorhq.com/crm/contacts-highrise/3041/remoteEntry.js?nocache=true",
   "TourGuidePortalApp": "https://appcdn.leadconnectorhq.com/leadgen/TourGuidePortal/239/remoteEntry.js?nocache=true",
   "notificationApp": "https://appcdn.leadconnectorhq.com/automation-reporting/notification/317/remoteEntry.js?nocache=true",
   "calendarRentalsApp": "https://appcdn.leadconnectorhq.com/automation/calendar-rentals/616/remoteEntry.js?nocache=true",
@@ -140,7 +140,7 @@
   "restaurantsApp": "https://appcdn.leadconnectorhq.com/crm/restaurants/3051/remoteEntry.js?nocache=true",
   "agentHealthApp": "https://appcdn.leadconnectorhq.com/ai/agent-health/929/remoteEntry.js?nocache=true"
  },
- "tailwindcss": "https://appcdn.leadconnectorhq.com/platform-frontend-tailwind-css/3034/output.min.css",
+ "tailwindcss": "https://appcdn.leadconnectorhq.com/platform-frontend-tailwind-css/3041/output.min.css",
  "firebase": {
   "schemaVersion": 1,
   "defaultRegion": "us",
