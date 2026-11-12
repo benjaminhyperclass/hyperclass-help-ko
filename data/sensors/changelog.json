@@ -55,19 +55,21 @@
   "WhatsApp typing indicator action for workflows": "2026-11-10",
   "🎬 Introducing Multi-Shot Film Generation in Managed Agents!": "2026-11-11",
   "Connect Your Custom Domain Before You Publish": "2026-11-11",
-  "See Look-Alike Companies Before You Add a New One": "2026-11-11"
+  "See Look-Alike Companies Before You Add a New One": "2026-11-11",
+  "🛒 One-Time Product Support for External Website Affiliate Campaigns": "2026-11-12",
+  "🛡️ Affiliate Consent, Tax Form & Payout Setup in Affiliate Manager": "2026-11-12"
  },
  "updated": "2026-11-12",
  "slugs": [
+  "affiliate-consent-tax-form-payout-setup-in-affiliate-manager",
   "association-labels-see-each-labels-pair-and-create-a-new-label-from-the-picker",
   "connect-your-custom-domain-before-you-publish",
   "custom-objects-rename-the-primary-field-copy-internal-names-open-documents-from",
   "fewer-sms-restrictions-more-confidence-in-messaging",
   "introducing-multi-shot-film-generation-in-managed-agents",
+  "one-time-product-support-for-external-website-affiliate-campaigns",
   "see-look-alike-companies-before-you-add-a-new-one",
   "whatsapp-button-and-list-replies-now-follow-the-right-workflow-branch",
-  "whatsapp-typing-indicator-action-for-workflows",
-  "whatsapp-workflows-now-send-your-latest-templates-and-snippets",
   "workflow-maps-clean-up-workflows-and-empty-folders"
  ]
 }

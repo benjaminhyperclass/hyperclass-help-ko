@@ -289,3 +289,24 @@
 - `onboardingApp` 241 → 243
 - `opportunitiesApp` 3034 → 3041
 
+## 2026-11-12 20:10 UTC — main 2212 → 2218 · manifest 2212.7885 → 2218.7915
+- `affiliateDashboardApp` 2279 → 2289
+- `appointmentModalApp` 637 → 640
+- `bladePlatformApp` 84 → 85
+- `contactsHighriseApp` 3041 → 3056
+- `conversationsUtilitiesApp` 2950 → 3060
+- `conversationsV2App` 3045 → 3060
+- `customObjectsApp` 3048 → 3052
+- `membershipApp` 2278 → 2286
+- `opportunitiesApp` 3041 → 3057
+- `powerDialerApp` 2274 → 2284
+- `reportingApp` 320 → 321
+- `resellingApp` 2264 → 2292
+- `restaurantsApp` 3051 → 3063
+- `snapshotsApp` 2272 → 2287
+- `storeCatalogApp` 50 → 56
+- `storeWidgetApp` 51 → 55
+- `switchyardApp` 20 → 23
+- `ticketingApp` 3031 → 3062
+- `voiceAiApp` 954 → 957
+
