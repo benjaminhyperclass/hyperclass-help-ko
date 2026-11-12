@@ -1,0 +1,45 @@
+---
+description: 그 밖의 캘린더 기능 관련 문서를 모았어요.
+---
+
+# 그 밖의 캘린더 기능
+
+그 밖의 캘린더 기능 관련 문서를 모았어요.
+
+* [iCloud 캘린더 연동 가이드](../../04-캘린더-예약/guide-to-icloud-calendar-integration.md)
+* [그룹 캘린더 개요와 설정 가이드](../../04-캘린더-예약/hyperclass-group-calendar-overview-and-setup-guide.md)
+* [기본 캘린더 지정하기](../../04-캘린더-예약/assigning-a-primary-calendar.md)
+* [Calendly와 하이퍼클래스 캘린더 동기화 방식](../../04-캘린더-예약/how-calendly-syncs-with-hyperclass-calendars.md)
+* [Outlook 캘린더와 하이퍼클래스 캘린더 동기화하기](../../04-캘린더-예약/how-to-sync-hyperclass-calendars-with-outlook.md)
+* [RSS 주소로 소셜 게시물 예약하기](../../10-마케팅/schedule-posts-using-rss-url.md)
+* [개인 예약 캘린더 설정하기](../../04-캘린더-예약/기타/how-to-set-up-a-personal-booking-calendar-with-hyperclass.md)
+* [그룹 캘린더 ID 찾기](../../04-캘린더-예약/how-to-find-group-calendar-id-in-hyperclass.md)
+* [그룹 캘린더에서 예약할 때 연락처가 다른 사용자에게 재배정되는 경우](../../04-캘린더-예약/contact-got-reassigned-to-another-user-when-booking-an-appointment-in-group-cale.md)
+* [모기지 중개업 운영 플레이북: 스마트 예약, 고객 소통, 딜 흐름 관리](../../04-캘린더-예약/기타/run-a-high-converting-mortgage-brokerage-with-smart-scheduling-communication-and.md)
+* [미배정 캘린더를 그룹에 추가하기](../../04-캘린더-예약/adding-unassigned-calendars-to-groups.md)
+* [미용실 리드 생성 퍼널로 예약 캘린더 채우기](../../04-캘린더-예약/기타/from-just-browsing-to-book-me-now-your-salon-lead-gen-funnel-that-fills-your-cal.md)
+* [반복 예약 결제 받기 (예약 위젯)](../../04-캘린더-예약/기타/collect-payments-with-recurring-appointments-booking-widget.md)
+* [반복 예약 설정하기](../../04-캘린더-예약/기타/recurring-appointments.md)
+* [사용자 지정 예약 상태 만들기와 관리](../../44-신기능-2026/how-to-create-and-manage-custom-appointment-statuses.md)
+* [사용자의 Google 캘린더 다시 연동하기](../../04-캘린더-예약/how-to-re-integrate-google-calendar-for-a-user.md)
+* [서비스 예약에 소매 상품 추가하기](../../44-신기능-2026/how-to-add-retail-products-to-service-appointments.md)
+* [연결됨 캘린더와 충돌 캘린더 설정하기](../../04-캘린더-예약/setting-up-linked-calendars-conflict-calendars.md)
+* [연동한 외부 캘린더의 일정 상세 정보 숨기기](../../04-캘린더-예약/hide-third-party-calendar-details.md)
+* [연락처 시간대 비활성화: 예약할 때 시간대를 바꾸지 못하게 하기](../../04-캘린더-예약/disable-contact-timezone-how-to-remove-ability-to-adjust-timezones-when-scheduli.md)
+* [예약 메모 작성·관리하고 연락처·기회·대화에 동기화하기](../../04-캘린더-예약/how-to-create-manage-appointment-notes-sync-them-across-records.md)
+* [예약 목록 보기로 예약 관리하기](../../04-캘린더-예약/how-to-manage-appointments-with-appointment-list-view.md)
+* [예약 위젯에 시간대별 남은 좌석 수 표시하기](../../04-캘린더-예약/show-seats-per-slot-for-class-booking-on-the-booking-widget.md)
+* [예약도 파이프라인도 가득 채우기: 부동산 컨설턴트의 Google 검색 순위 높이기와 계약 늘리기](../../04-캘린더-예약/기타/full-bookings-full-pipeline-how-real-estate-consultants-can-rank-higher-on-googl.md)
+* [워크플로우 액션 — Book Appointment(예약하기)](../../04-캘린더-예약/workflow-action-book-appointment.md)
+* [워크플로우 액션 — Create Appointment Note(예약 메모 만들기)](../../04-캘린더-예약/create-appointment-note-workflow-action.md)
+* [캘린더 그룹 비활성화하기](../../04-캘린더-예약/deactivating-calendar-groups.md)
+* [캘린더 그룹 없이 한 페이지에 캘린더 여러 개 표시하기](../../04-캘린더-예약/can-i-show-multiple-calendars-without-using-a-calendar-group.md)
+* [캘린더 사용자 권한](../../04-캘린더-예약/user-permissions-in-calendars.md)
+* [캘린더 연동 해제 알림](../../04-캘린더-예약/calendar-integration-disconnection-notifications.md)
+* [캘린더 예약 알림 설정 — 이메일, 인앱, SMS, WhatsApp](../../04-캘린더-예약/calendar-email-in-app-sms-whatsapp-appointment-notifications.md)
+* [캘린더 예약 직접 등록하기](../../04-캘린더-예약/manually-booking-calendar-appointments.md)
+* [캘린더 예약에서 게스트 추가 기능 사용하기](../../04-캘린더-예약/add-guests-features-in-calendar-bookings.md)
+* [캘린더 일정 충돌 확인](../../04-캘린더-예약/calendar-scheduling-conflicts.md)
+* [하이퍼클래스 캘린더를 HTML 코드로 다른 웹사이트에 임베드하기](../../04-캘린더-예약/embedding-hyperclass-calendars-using-html-code.md)
+* [현장 서비스의 AI 리셉셔니스트와 Google 자연 검색 예약](../../04-캘린더-예약/ai-receptionist-and-google-organic-booking-in-field-services.md)
+* [현장 서비스의 온라인 예약 페이지](../../04-캘린더-예약/online-booking-page-in-field-services.md)

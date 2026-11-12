@@ -48,7 +48,7 @@ Meta 광고로 **Facebook Messenger, Instagram Direct, WhatsApp** 같은 메시�
 
 ## 1단계: 광고 관리자 열기
 
-1. 온보딩을 마친 상태에서 서브 계정의 **마케팅 > 광고 관리자**로 이동하세요. **광고 관리자** 활성화와 재판매 방법은 [이 문서](Reselling-Ad-Manager/how-to-enable-and-resell-ad-manager.md)를 참고하세요.
+1. 온보딩을 마친 상태에서 서브 계정의 **마케팅 > 광고 관리자**로 이동하세요. **광고 관리자** 활성화와 재판매 방법은 이 문서를 참고하세요.
 2. **캠페인 만들기**를 클릭해 새 캠페인을 시작하세요.
 
    ![캠페인 만들기 버튼이 보이는 광고 관리자 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155042575129/original/tr7HhwDkrf5-B-rVSW1A41FuZA9DTiz-fQ.png?1741042486)

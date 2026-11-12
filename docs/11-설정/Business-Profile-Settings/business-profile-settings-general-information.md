@@ -59,7 +59,6 @@
 브랜드 도메인의 자세한 설명과 서브 계정에 설정하는 방법은 아래 문서를 참고하세요.
 
 - [하이퍼클래스의 도메인](../../06-사이트/일반-설정/how-to-set-up-different-domain-types-in-hyperclass-websites-email-wordpress-more.md)
-- [데스크톱 웹 앱용 화이트라벨 도메인 설정하기](../../25-애드온-세일즈/Whitelabel-Desktop-App/how-to-set-up-a-whitelabel-domain-for-the-desktop-web-app.md)
 
 ### 비즈니스 웹사이트
 

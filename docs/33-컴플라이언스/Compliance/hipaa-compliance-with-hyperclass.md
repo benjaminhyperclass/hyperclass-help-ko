@@ -103,7 +103,7 @@ HIPAA는 1996년 제정된 미국의 건강보험 이동성 및 책임에 관한
    ![HIPAA 규정 준수 토글을 켠 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155068305726/original/95FuR2lbEx3sz9rlUkY_d96-v8lcAXzmlA.png?1775095378)
 
 {% hint style="warning" %}
-HIPAA 설정에 접근할 수 있는지는 사용자에게 지정된 권한에 따라 달라질 수 있어요. 필요한 설정에 접근할 수 없다면 해당 사용자의 [**사용자 권한**](../../11-설정/사용자-설정/agency-managing-user-roles-permissions.md)을 확인하세요.
+HIPAA 설정에 접근할 수 있는지는 사용자에게 지정된 권한에 따라 달라질 수 있어요. 필요한 설정에 접근할 수 없다면 해당 사용자의 **사용자 권한**을 확인하세요.
 {% endhint %}
 
 ## 문서 보기와 다운로드

@@ -1,0 +1,1359 @@
+{
+ "_about": "GitBook 목차 구성표. scripts/manual/gen_summary.py 가 읽어 SUMMARY.md 와 묶음 페이지(docs/_groups/)를 만든다. 파일은 옮기지 않는다(번역 파이프라인·링크 그대로). 순서: 파일 지정(files) → 폴더(dirs, 가장 긴 접두어) → 키워드 라우터(router, route 대상 문서만) → 섹션 기본 묶음(default).",
+ "hide": {
+  "dirs": [
+   "16-SaaS-설정",
+   "19-에이전시-뷰",
+   "20-고객지원",
+   "22-Eliza",
+   "23-레거시-자동화",
+   "24-대학",
+   "25-애드온-세일즈",
+   "28-에이전시-리포팅",
+   "29-스냅샷",
+   "31-리셀링",
+   "21-어필리에이트",
+   "11-설정/에이전시-설정",
+   "10-마케팅/Reselling-Ad-Manager",
+   "27-앱-마켓/Snapshots-in-App-Marketplace",
+   "30-모바일-데스크톱/Whitelabel-Mobile-App"
+  ],
+  "files": [
+   "00-자주묻는질문/README.md",
+   "00-자주묻는질문/SUMMARY.md",
+   "STATE.md"
+  ],
+  "title_re": "에이전시|SaaS|스냅샷|리셀|재판매|리빌링|재청구|화이트\\s?라벨|White-?label|Snapshot|하위 계정 만들기|서브 계정 만들기|서브 계정 관리|파트너 네트워크|서브 계정 삭제|클라이언트의 위치 ID",
+  "keep": [
+   "17-멤버십-커뮤니티/커뮤니티/how-to-create-your-whitelabel-community-inside-a-subaccount.md",
+   "09-이메일/트러블슈팅/troubleshooting-warning-please-contact-your-agency-to-change-email-settings.md"
+  ]
+ },
+ "route_dirs": [
+  "02-연락처",
+  "03-대화",
+  "04-캘린더-예약",
+  "05-기회-파이프라인",
+  "06-사이트",
+  "07-워크플로우",
+  "08-결제",
+  "09-이메일",
+  "10-마케팅",
+  "11-설정",
+  "12-대시보드",
+  "13-AI-Employee",
+  "15-전화-시스템",
+  "17-멤버십-커뮤니티",
+  "18-리포팅",
+  "30-모바일-데스크톱",
+  "35-개발자",
+  "36-기타",
+  "37-이커머스-스토어",
+  "39-클라이언트-포털",
+  "41-평판-리뷰",
+  "42-통합",
+  "44-신기능-2026"
+ ],
+ "route_only_loose_and": [
+  "기타",
+  "Others",
+  "Miscellaneous"
+ ],
+ "sections": [
+  {
+   "slug": "getting-started",
+   "title": "처음 시작하기 (Getting Started)",
+   "groups": [
+    {
+     "slug": "setup-basics",
+     "title": "계정 첫 세팅",
+     "intro": "가입한 뒤 가장 먼저 해 두면 좋은 기본 설정이에요.",
+     "dirs": [
+      "01-시작하기/기본-설정"
+     ]
+    },
+    {
+     "slug": "first-customers",
+     "title": "고객·영업 시작하기",
+     "intro": "연락처를 모으고 대화·기회 관리로 첫 고객을 관리해요.",
+     "dirs": [
+      "01-시작하기/세일즈-대화",
+      "01-시작하기/마케팅-리드-생성"
+     ]
+    },
+    {
+     "slug": "first-website",
+     "title": "첫 웹사이트·콘텐츠",
+     "intro": "템플릿으로 첫 웹사이트와 콘텐츠를 만들어요.",
+     "dirs": [
+      "01-시작하기/웹사이트-콘텐츠"
+     ]
+    },
+    {
+     "slug": "first-sales",
+     "title": "첫 판매·결제",
+     "intro": "상품을 만들고 결제 링크·인보이스로 판매를 시작해요.",
+     "dirs": [
+      "01-시작하기/커머스"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "faq",
+   "title": "자주 묻는 질문 (FAQ)",
+   "groups": [
+    {
+     "slug": "faq-about",
+     "title": "하이퍼클래스 알아보기",
+     "files": [
+      "00-자주묻는질문/what-is-hyperclass.md",
+      "00-자주묻는질문/who-is-it-for.md",
+      "00-자주묻는질문/benefits-roi.md",
+      "00-자주묻는질문/who-is-benjamin.md",
+      "00-자주묻는질문/free-trial.md",
+      "00-자주묻는질문/first-setup.md",
+      "00-자주묻는질문/migrate-data.md"
+     ]
+    },
+    {
+     "slug": "faq-pricing",
+     "title": "요금 · 결제",
+     "files": [
+      "00-자주묻는질문/pricing-plans.md",
+      "00-자주묻는질문/usage-costs.md",
+      "00-자주묻는질문/payment-methods.md",
+      "00-자주묻는질문/sales-commission.md",
+      "00-자주묻는질문/plan-change-refund.md",
+      "00-자주묻는질문/data-on-cancel.md"
+     ]
+    },
+    {
+     "slug": "faq-features",
+     "title": "주요 기능",
+     "files": [
+      "00-자주묻는질문/ai-chatbot.md",
+      "00-자주묻는질문/chatbot-handover.md",
+      "00-자주묻는질문/booking.md",
+      "00-자주묻는질문/reminders.md",
+      "00-자주묻는질문/calendar-sync.md",
+      "00-자주묻는질문/funnels.md",
+      "00-자주묻는질문/automation.md",
+      "00-자주묻는질문/instagram-comment-automation.md"
+     ]
+    },
+    {
+     "slug": "faq-kakao",
+     "title": "카카오톡 · 알림톡",
+     "files": [
+      "00-자주묻는질문/kakao-channel.md",
+      "00-자주묻는질문/alimtalk.md"
+     ]
+    },
+    {
+     "slug": "faq-support",
+     "title": "앱 · 언어 · 문의",
+     "files": [
+      "00-자주묻는질문/mobile-app.md",
+      "00-자주묻는질문/language-support.md",
+      "00-자주묻는질문/contact.md"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "korea-apps",
+   "title": "한국 전용 앱 (Korea Apps)",
+   "special": "korea"
+  },
+  {
+   "slug": "customers",
+   "title": "고객 관리 (Customers)",
+   "default": "contacts-more",
+   "groups": [
+    {
+     "slug": "contacts",
+     "title": "연락처",
+     "intro": "고객 정보를 모으고 정리하는 연락처 기능이에요.",
+     "dirs": [
+      "02-연락처/연락처-기본",
+      "02-연락처/연락처-상세",
+      "02-연락처/일괄-작업",
+      "02-연락처/Documents"
+     ]
+    },
+    {
+     "slug": "smart-lists",
+     "title": "스마트 리스트",
+     "dirs": [
+      "02-연락처/스마트-리스트"
+     ]
+    },
+    {
+     "slug": "companies-objects",
+     "title": "회사 · 사용자 지정 객체",
+     "intro": "회사(기업 고객)와 사용자 지정 객체로 CRM을 넓혀요."
+    },
+    {
+     "slug": "fields",
+     "title": "커스텀 필드 · 병합 필드",
+     "dirs": [
+      "40-병합필드-변수"
+     ]
+    },
+    {
+     "slug": "conversations",
+     "title": "대화 (통합 인박스)",
+     "intro": "문자·이메일·채팅·SNS 메시지를 한곳에서 주고받아요.",
+     "dirs": [
+      "03-대화"
+     ]
+    },
+    {
+     "slug": "opportunities",
+     "title": "기회 관리 · 파이프라인",
+     "intro": "영업 단계를 카드처럼 옮기며 관리해요.",
+     "dirs": [
+      "05-기회-파이프라인"
+     ]
+    },
+    {
+     "slug": "tasks",
+     "title": "작업 · 프로젝트 관리",
+     "dirs": [
+      "36-기타"
+     ]
+    },
+    {
+     "slug": "contacts-more",
+     "title": "그 밖의 연락처 기능",
+     "dirs": [
+      "02-연락처"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "calendars",
+   "title": "예약 · 캘린더 (Calendars)",
+   "default": "calendar-more",
+   "groups": [
+    {
+     "slug": "calendar-basics",
+     "title": "시작하기",
+     "dirs": [
+      "04-캘린더-예약/시작하기",
+      "04-캘린더-예약/Simple-Calendars"
+     ]
+    },
+    {
+     "slug": "calendar-types",
+     "title": "캘린더 만들기 · 종류",
+     "intro": "개인·라운드 로빈·클래스·서비스 캘린더 등 상황에 맞는 캘린더를 만들어요.",
+     "dirs": [
+      "04-캘린더-예약/캘린더-만들기",
+      "04-캘린더-예약/Round-Robin-Calendars",
+      "04-캘린더-예약/Class-Booking-Calendars",
+      "04-캘린더-예약/Collective-Booking-Calendars",
+      "04-캘린더-예약/Service-Calendars",
+      "04-캘린더-예약/서비스",
+      "04-캘린더-예약/Calendar-Service-Menus"
+     ]
+    },
+    {
+     "slug": "calendar-settings",
+     "title": "설정 · 꾸미기",
+     "dirs": [
+      "04-캘린더-예약/캘린더-설정",
+      "04-캘린더-예약/Calendar-Availability-Settings",
+      "04-캘린더-예약/Customizing-Calendars"
+     ]
+    },
+    {
+     "slug": "calendar-sync",
+     "title": "외부 캘린더 연동",
+     "dirs": [
+      "04-캘린더-예약/캘린더-연동"
+     ]
+    },
+    {
+     "slug": "appointments",
+     "title": "예약 관리",
+     "dirs": [
+      "04-캘린더-예약/예약-관리",
+      "04-캘린더-예약/Mobile-App"
+     ]
+    },
+    {
+     "slug": "rentals-field",
+     "title": "렌탈 · 시설 · 현장 서비스",
+     "dirs": [
+      "04-캘린더-예약/렌탈",
+      "04-캘린더-예약/Calendar-Rooms-and-Equipment",
+      "04-캘린더-예약/Field-Services"
+     ]
+    },
+    {
+     "slug": "calendar-troubleshooting",
+     "title": "문제 해결",
+     "dirs": [
+      "04-캘린더-예약/트러블슈팅"
+     ]
+    },
+    {
+     "slug": "calendar-more",
+     "title": "그 밖의 캘린더 기능",
+     "dirs": [
+      "04-캘린더-예약"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "sites",
+   "title": "사이트 · 퍼널 · 폼 (Sites)",
+   "default": "sites-more",
+   "groups": [
+    {
+     "slug": "funnels-websites",
+     "title": "퍼널 · 웹사이트",
+     "intro": "랜딩 페이지·퍼널·웹사이트를 만들고 꾸며요.",
+     "dirs": [
+      "06-사이트/퍼널-웹사이트",
+      "06-사이트/Funnel-and-Website-Builder",
+      "06-사이트/Funnel-and-Website-Settings",
+      "06-사이트/일반-설정",
+      "06-사이트/Schema-Markup"
+     ]
+    },
+    {
+     "slug": "forms-surveys",
+     "title": "폼 · 설문 · 퀴즈",
+     "dirs": [
+      "06-사이트/폼",
+      "06-사이트/설문",
+      "06-사이트/퀴즈"
+     ]
+    },
+    {
+     "slug": "blog-seo",
+     "title": "블로그 · SEO",
+     "dirs": [
+      "06-사이트/블로그",
+      "06-사이트/SEO"
+     ]
+    },
+    {
+     "slug": "chat-widget",
+     "title": "채팅 위젯",
+     "dirs": [
+      "06-사이트/채팅-위젯"
+     ]
+    },
+    {
+     "slug": "webinars",
+     "title": "웨비나"
+    },
+    {
+     "slug": "wordpress",
+     "title": "WordPress",
+     "dirs": [
+      "06-사이트/워드프레스"
+     ]
+    },
+    {
+     "slug": "qr-codes",
+     "title": "QR 코드",
+     "dirs": [
+      "06-사이트/QR코드"
+     ]
+    },
+    {
+     "slug": "site-analytics",
+     "title": "사이트 분석",
+     "dirs": [
+      "06-사이트/Analytics-Funnels-Websites-and-QR-Codes"
+     ]
+    },
+    {
+     "slug": "sites-troubleshooting",
+     "title": "문제 해결",
+     "dirs": [
+      "06-사이트/트러블슈팅",
+      "06-사이트/FAQs-and-Common-Troubleshooting-Steps"
+     ]
+    },
+    {
+     "slug": "sites-more",
+     "title": "그 밖의 사이트 기능",
+     "dirs": [
+      "06-사이트"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "marketing",
+   "title": "이메일 · 마케팅 (Marketing)",
+   "default": "marketing-more",
+   "groups": [
+    {
+     "slug": "email-campaigns",
+     "title": "이메일 캠페인 · 빌더",
+     "intro": "뉴스레터·캠페인 이메일을 만들고 보내요.",
+     "dirs": [
+      "10-마케팅/Email-Builder-Capabilities",
+      "10-마케팅/Campaign-Settings",
+      "10-마케팅/Campaign-configurations",
+      "10-마케팅/Campaigns",
+      "10-마케팅/Statistics",
+      "10-마케팅/Types-of-Workflow-Campaigns",
+      "10-마케팅/Workflow-Email-Action",
+      "10-마케팅/RSS-Guide",
+      "10-마케팅/이메일-마케팅",
+      "10-마케팅/Getting-Started-w"
+     ]
+    },
+    {
+     "slug": "templates-brand",
+     "title": "템플릿 · 브랜드 보드 · 타이머",
+     "dirs": [
+      "10-마케팅/Templates",
+      "10-마케팅/템플릿-라이브러리",
+      "10-마케팅/SMS-이메일-템플릿",
+      "10-마케팅/브랜드-보드",
+      "10-마케팅/카운트다운-타이머"
+     ]
+    },
+    {
+     "slug": "email-delivery",
+     "title": "이메일 발송 설정 · 도달률",
+     "intro": "발신 도메인, 인증(SPF·DKIM·DMARC), 도달률 문제를 다뤄요.",
+     "dirs": [
+      "09-이메일"
+     ]
+    },
+    {
+     "slug": "social-planner",
+     "title": "소셜 플래너 (SNS 예약 발행)",
+     "dirs": [
+      "10-마케팅/소셜-플래너"
+     ]
+    },
+    {
+     "slug": "ads",
+     "title": "광고 매니저",
+     "dirs": [
+      "10-마케팅/광고-매니저",
+      "10-마케팅/Ad-Campaign-Creation-and-Management",
+      "10-마케팅/Ad-Manager-Setup-and-Configuration",
+      "10-마케팅/Google-Ads",
+      "10-마케팅/LinkedIn-Ads",
+      "10-마케팅/Facebook-Conversion-API-CAPI",
+      "10-마케팅/Troubleshooting-Ad-Manager"
+     ]
+    },
+    {
+     "slug": "affiliates",
+     "title": "제휴 · 추천 프로그램",
+     "dirs": [
+      "10-마케팅/Affiliate-Campaigns",
+      "10-마케팅/Affiliate-Manager-Automation",
+      "10-마케팅/Affiliate-Payouts",
+      "10-마케팅/Affiliate-Reporting-and-Insights",
+      "10-마케팅/Managing-Affiliates"
+     ]
+    },
+    {
+     "slug": "events",
+     "title": "이벤트 · 티켓",
+     "intro": "오프라인·온라인 이벤트를 만들고 참석자를 관리해요."
+    },
+    {
+     "slug": "reputation",
+     "title": "평판 관리 · 리뷰",
+     "intro": "리뷰 요청, 리뷰 위젯, Google 비즈니스 프로필을 관리해요.",
+     "dirs": [
+      "41-평판-리뷰"
+     ]
+    },
+    {
+     "slug": "marketing-more",
+     "title": "그 밖의 마케팅 기능",
+     "dirs": [
+      "10-마케팅"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "workflows",
+   "title": "자동화 · 워크플로우 (Workflows)",
+   "default": "workflow-more",
+   "groups": [
+    {
+     "slug": "workflow-basics",
+     "title": "시작하기",
+     "dirs": [
+      "07-워크플로우/시작하기"
+     ]
+    },
+    {
+     "slug": "workflow-builder",
+     "title": "빌더 사용법",
+     "dirs": [
+      "07-워크플로우/빌더",
+      "07-워크플로우/Data-Management"
+     ]
+    },
+    {
+     "slug": "workflow-triggers",
+     "title": "트리거 (시작 조건)",
+     "dirs": [
+      "07-워크플로우/트리거",
+      "07-워크플로우/Appointments-Workflow-Triggers",
+      "07-워크플로우/Communities-Workflow-Triggers",
+      "07-워크플로우/Company-Workflow-Triggers",
+      "07-워크플로우/Contact-Workflow-Triggers",
+      "07-워크플로우/Courses-Workflow-Triggers",
+      "07-워크플로우/Events-Workflow-Triggers",
+      "07-워크플로우/Forms-and-Surveys-Workflow-Triggers",
+      "07-워크플로우/IVR-Workflow-Triggers",
+      "07-워크플로우/Notes-Workflow-Triggers",
+      "07-워크플로우/Opportunity-Workflow-Triggers",
+      "07-워크플로우/Payments-Workflow-Triggers",
+      "07-워크플로우/Shopify-Workflow-Triggers",
+      "07-워크플로우/TikTok-Workflow-Triggers"
+     ]
+    },
+    {
+     "slug": "workflow-actions",
+     "title": "액션 (실행 동작)",
+     "dirs": [
+      "07-워크플로우/액션",
+      "07-워크플로우/Affiliate-Workflow-Actions",
+      "07-워크플로우/Appointments-Workflow-Actions",
+      "07-워크플로우/CRM-Workflow-Actions",
+      "07-워크플로우/Communication-Workflow-Actions",
+      "07-워크플로우/Company-Workflow-Actions",
+      "07-워크플로우/Contact-Workflow-Actions",
+      "07-워크플로우/Custom-Object-Workflow-Actions",
+      "07-워크플로우/Documents-and-Contracts",
+      "07-워크플로우/IVR-Workflow-Actions",
+      "07-워크플로우/Integrations-Workflow-Actions",
+      "07-워크플로우/Internal-Tools-Workflow-Actions",
+      "07-워크플로우/Memberships-and-Communities-Workflow-Actions",
+      "07-워크플로우/Opportunity-Workflow-Actions",
+      "07-워크플로우/Payments-Workflow-Actions",
+      "07-워크플로우/Send-Data-Workflow-Actions",
+      "07-워크플로우/Webhooks-Workflow-Actions",
+      "07-워크플로우/Facebook",
+      "07-워크플로우/LinkedIn",
+      "07-워크플로우/Social-Media-Communication",
+      "07-워크플로우/개발자"
+     ]
+    },
+    {
+     "slug": "workflow-ai",
+     "title": "워크플로우 AI",
+     "dirs": [
+      "07-워크플로우/Workflow-AI-Workflow-Actions"
+     ]
+    },
+    {
+     "slug": "workflow-recipes",
+     "title": "자동화 예시 (워크플로우 맵)",
+     "dirs": [
+      "07-워크플로우/Workflow-Maps"
+     ]
+    },
+    {
+     "slug": "workflow-troubleshooting",
+     "title": "문제 해결"
+    },
+    {
+     "slug": "workflow-more",
+     "title": "그 밖의 자동화 기능",
+     "dirs": [
+      "07-워크플로우"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "ai-agents",
+   "title": "AI 에이전트 (AI Agents)",
+   "default": "ai-more",
+   "groups": [
+    {
+     "slug": "ai-basics",
+     "title": "시작하기 · 요금",
+     "dirs": [
+      "13-AI-Employee/Getting-Started-w",
+      "13-AI-Employee/AI-Employee"
+     ]
+    },
+    {
+     "slug": "conversation-ai",
+     "title": "대화 AI (챗봇)",
+     "intro": "채팅·SNS·문자 문의에 AI가 답하게 해요.",
+     "dirs": [
+      "13-AI-Employee/Conversation-AI",
+      "13-AI-Employee/Conversation-AI-+-Workflows",
+      "13-AI-Employee/Conversation-AI-Goals-Prompts-and-Actions",
+      "13-AI-Employee/Conversation-AI-Response-Modes",
+      "13-AI-Employee/Conversation-AI-Training-Bots"
+     ]
+    },
+    {
+     "slug": "knowledge-base",
+     "title": "지식 베이스",
+     "dirs": [
+      "13-AI-Employee/Knowledge-Bases"
+     ],
+     "files": [
+      "01-시작하기/웹사이트-콘텐츠/knowledge-base-web-crawler-sitemap-powered-url-selection.md"
+     ]
+    },
+    {
+     "slug": "voice-ai",
+     "title": "음성 AI (전화 상담)",
+     "dirs": [
+      "13-AI-Employee/Voice-AI"
+     ]
+    },
+    {
+     "slug": "agent-studio",
+     "title": "에이전트 스튜디오 · MCP",
+     "dirs": [
+      "13-AI-Employee/Agent-Studio",
+      "13-AI-Employee/MCP-Server"
+     ],
+     "files": [
+      "01-시작하기/기본-설정/connect-hyperclass-mcp-to-muse.md"
+     ]
+    },
+    {
+     "slug": "ask-ai",
+     "title": "AI에게 문의",
+     "dirs": [
+      "13-AI-Employee/Ask-AI"
+     ]
+    },
+    {
+     "slug": "content-ai",
+     "title": "콘텐츠 AI",
+     "dirs": [
+      "13-AI-Employee/Content-AI",
+      "13-AI-Employee/Content-AI-in-Blogs",
+      "13-AI-Employee/Content-AI-in-Social-Planner"
+     ]
+    },
+    {
+     "slug": "ai-more",
+     "title": "그 밖의 AI 기능",
+     "dirs": [
+      "13-AI-Employee"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "payments",
+   "title": "결제 · 스토어 · 계약 (Payments)",
+   "default": "payments-more",
+   "groups": [
+    {
+     "slug": "payments-basics",
+     "title": "시작하기",
+     "dirs": [
+      "08-결제/시작하기"
+     ]
+    },
+    {
+     "slug": "payment-providers",
+     "title": "결제 수단 연결",
+     "dirs": [
+      "08-결제/결제-연동",
+      "08-결제/모바일-결제",
+      "30-모바일-데스크톱/Mobile-Payments"
+     ]
+    },
+    {
+     "slug": "products",
+     "title": "상품 · 세금 · 쿠폰 · 기프트카드",
+     "dirs": [
+      "08-결제/상품-세금-쿠폰",
+      "08-결제/기프트카드"
+     ]
+    },
+    {
+     "slug": "invoices",
+     "title": "인보이스 · 견적",
+     "dirs": [
+      "08-결제/인보이스-견적"
+     ]
+    },
+    {
+     "slug": "orders-subscriptions",
+     "title": "주문 · 구독 · 환불",
+     "dirs": [
+      "08-결제/주문-구독"
+     ]
+    },
+    {
+     "slug": "store",
+     "title": "온라인 스토어",
+     "dirs": [
+      "37-이커머스-스토어",
+      "06-사이트/스토어"
+     ]
+    },
+    {
+     "slug": "documents",
+     "title": "문서 · 계약 (전자서명)",
+     "dirs": [
+      "14-문서-계약"
+     ]
+    },
+    {
+     "slug": "payments-more",
+     "title": "그 밖의 결제 기능",
+     "dirs": [
+      "08-결제"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "memberships",
+   "title": "코스 · 커뮤니티 · 포털 (Memberships)",
+   "default": "memberships-more",
+   "groups": [
+    {
+     "slug": "courses",
+     "title": "코스 · 멤버십",
+     "intro": "온라인 강의를 올리고 판매해요.",
+     "dirs": [
+      "17-멤버십-커뮤니티/멤버십-코스"
+     ]
+    },
+    {
+     "slug": "communities",
+     "title": "커뮤니티",
+     "dirs": [
+      "17-멤버십-커뮤니티/커뮤니티"
+     ],
+     "files": [
+      "01-시작하기/웹사이트-콘텐츠/disable-or-enable-the-mandatory-profile-modal-for-community-members.md"
+     ]
+    },
+    {
+     "slug": "client-portal",
+     "title": "클라이언트 포털",
+     "dirs": [
+      "39-클라이언트-포털",
+      "06-사이트/클라이언트-포털"
+     ]
+    },
+    {
+     "slug": "certificates",
+     "title": "수료증 · 배지",
+     "dirs": [
+      "38-인증서"
+     ]
+    },
+    {
+     "slug": "memberships-more",
+     "title": "그 밖의 기능",
+     "dirs": [
+      "17-멤버십-커뮤니티"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "phone",
+   "title": "전화 · 문자 (Phone)",
+   "default": "phone-more",
+   "groups": [
+    {
+     "slug": "phone-numbers",
+     "title": "전화번호",
+     "dirs": [
+      "15-전화-시스템/전화번호"
+     ]
+    },
+    {
+     "slug": "calls",
+     "title": "통화 · 음성사서함",
+     "dirs": [
+      "15-전화-시스템/통화",
+      "15-전화-시스템/보이스메일"
+     ]
+    },
+    {
+     "slug": "messaging",
+     "title": "문자 메시지",
+     "dirs": [
+      "15-전화-시스템/메시징"
+     ]
+    },
+    {
+     "slug": "a2p",
+     "title": "A2P 등록 (미국 번호)",
+     "dirs": [
+      "15-전화-시스템/A2P-등록"
+     ]
+    },
+    {
+     "slug": "phone-system",
+     "title": "전화 시스템 설정",
+     "dirs": [
+      "15-전화-시스템/LC-Phone",
+      "15-전화-시스템/일반"
+     ]
+    },
+    {
+     "slug": "phone-more",
+     "title": "그 밖의 전화 기능",
+     "dirs": [
+      "15-전화-시스템"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "reporting",
+   "title": "리포팅 · 대시보드 (Reporting)",
+   "default": "reporting-more",
+   "groups": [
+    {
+     "slug": "dashboards",
+     "title": "대시보드",
+     "dirs": [
+      "12-대시보드"
+     ]
+    },
+    {
+     "slug": "attribution",
+     "title": "추적 · 유입 경로",
+     "dirs": [
+      "18-리포팅/추적-어트리뷰션"
+     ]
+    },
+    {
+     "slug": "reporting-more",
+     "title": "리포트",
+     "dirs": [
+      "18-리포팅"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "settings",
+   "title": "설정 · 연동 · 모바일 (Settings)",
+   "default": "account-settings",
+   "groups": [
+    {
+     "slug": "account-settings",
+     "title": "계정 · 비즈니스 설정",
+     "dirs": [
+      "11-설정"
+     ]
+    },
+    {
+     "slug": "media",
+     "title": "미디어 저장소",
+     "intro": "이미지·영상·파일을 올리고 관리해요."
+    },
+    {
+     "slug": "users",
+     "title": "사용자 · 권한",
+     "dirs": [
+      "11-설정/사용자-설정"
+     ]
+    },
+    {
+     "slug": "domains",
+     "title": "도메인",
+     "dirs": [
+      "11-설정/Domain-Connect",
+      "11-설정/Domain-Purchase",
+      "11-설정/도메인"
+     ]
+    },
+    {
+     "slug": "integrations",
+     "title": "외부 서비스 연동",
+     "dirs": [
+      "42-통합"
+     ]
+    },
+    {
+     "slug": "app-marketplace",
+     "title": "앱 마켓플레이스",
+     "dirs": [
+      "27-앱-마켓"
+     ]
+    },
+    {
+     "slug": "mobile-apps",
+     "title": "모바일 · 데스크톱 앱",
+     "dirs": [
+      "30-모바일-데스크톱"
+     ]
+    },
+    {
+     "slug": "notifications",
+     "title": "알림",
+     "dirs": [
+      "32-알림"
+     ]
+    },
+    {
+     "slug": "languages",
+     "title": "언어 · 번역",
+     "dirs": [
+      "34-국제화"
+     ]
+    },
+    {
+     "slug": "compliance",
+     "title": "개인정보 · 규정",
+     "dirs": [
+      "33-컴플라이언스"
+     ]
+    },
+    {
+     "slug": "developers",
+     "title": "개발자 · API",
+     "dirs": [
+      "35-개발자"
+     ]
+    }
+   ]
+  },
+  {
+   "slug": "resources",
+   "title": "참고 (Resources)",
+   "default": "whats-new",
+   "groups": [
+    {
+     "slug": "industry-guides",
+     "title": "업종별 가이드",
+     "dirs": [
+      "26-산업-가이드"
+     ]
+    },
+    {
+     "slug": "account-recovery",
+     "title": "계정 복구 · 화면 문제",
+     "dirs": [
+      "36-기타/리커버리",
+      "36-기타/UX-Issues",
+      "36-기타/Miscellaneous"
+     ]
+    },
+    {
+     "slug": "whats-new",
+     "title": "신기능 소식",
+     "dirs": [
+      "44-신기능-2026"
+     ]
+    }
+   ]
+  }
+ ],
+ "router": [
+  [
+   "사례 연구|Case Study|치과|의원|병원|클리닉|부동산|헬스장|미용실",
+   "resources",
+   "industry-guides"
+  ],
+  [
+   "이벤트|Event|체크인|참석자|티켓",
+   "marketing",
+   "events"
+  ],
+  [
+   "카운트다운|타이머|브랜드 보드|디자인 키트|그래픽 라이브러리",
+   "marketing",
+   "templates-brand"
+  ],
+  [
+   "로열티|추천 프로그램|Loyalty|Referral",
+   "marketing",
+   "affiliates"
+  ],
+  [
+   "미디어",
+   "settings",
+   "media"
+  ],
+  [
+   "개인정보|동의|수신거부|GDPR",
+   "settings",
+   "compliance"
+  ],
+  [
+   "HubSpot|데이터 가져오기|이관",
+   "customers",
+   "contacts"
+  ],
+  [
+   "로그인|계정이 정지|정지",
+   "resources",
+   "account-recovery"
+  ],
+  [
+   "크리에이터 스튜디오",
+   "ai-agents",
+   "content-ai"
+  ],
+  [
+   "대여|렌탈|Rental",
+   "calendars",
+   "rentals-field"
+  ],
+  [
+   "미팅룸|Meeting Room",
+   "calendars",
+   "appointments"
+  ],
+  [
+   "내비게이션|Navigation",
+   "settings",
+   "account-settings"
+  ],
+  [
+   "계산 필드|Calculated",
+   "customers",
+   "fields"
+  ],
+  [
+   "App Studio",
+   "memberships",
+   "client-portal"
+  ],
+  [
+   "규정 번들",
+   "phone",
+   "a2p"
+  ],
+  [
+   "AI",
+   "ai-agents",
+   "ai-more"
+  ],
+  [
+   "플레이북|Playbook",
+   "resources",
+   "industry-guides"
+  ],
+  [
+   "서비스 (만들기|개요|카테고리)|서비스에서 직원|Neo 그룹",
+   "calendars",
+   "calendar-types"
+  ],
+  [
+   "문제 해결|오류|않을 때|안 될 때|안 돼|않아요|Troubleshoot",
+   "sites",
+   "sites-troubleshooting",
+   "local"
+  ],
+  [
+   "문제 해결|오류|않을 때|안 될 때|안 돼|않아요|Troubleshoot",
+   "calendars",
+   "calendar-troubleshooting",
+   "local"
+  ],
+  [
+   "문제 해결|오류|않을 때|안 될 때|안 돼|않아요|Troubleshoot",
+   "workflows",
+   "workflow-troubleshooting",
+   "local"
+  ],
+  [
+   "트리거 —|트리거:|Trigger",
+   "workflows",
+   "workflow-triggers"
+  ],
+  [
+   "액션 —|액션:|Action",
+   "workflows",
+   "workflow-actions"
+  ],
+  [
+   "워크플로우|Workflow|트리거|Trigger",
+   "workflows",
+   "workflow-more"
+  ],
+  [
+   "대화 AI|Conversation AI|챗봇|봇 ",
+   "ai-agents",
+   "conversation-ai"
+  ],
+  [
+   "음성 AI|Voice AI|보이스 AI",
+   "ai-agents",
+   "voice-ai"
+  ],
+  [
+   "지식 베이스|Knowledge",
+   "ai-agents",
+   "knowledge-base"
+  ],
+  [
+   "에이전트 스튜디오|Agent Studio|MCP|관리형 에이전트|슈퍼 에이전트",
+   "ai-agents",
+   "agent-studio"
+  ],
+  [
+   "AI에게 문의|Ask AI",
+   "ai-agents",
+   "ask-ai"
+  ],
+  [
+   "콘텐츠 AI|Content AI",
+   "ai-agents",
+   "content-ai"
+  ],
+  [
+   "AI 에이전트|AI 직원|AI Employee|AI 스튜디오|AI Studio|에이전트",
+   "ai-agents",
+   "ai-more"
+  ],
+  [
+   "웨비나|Webinar",
+   "sites",
+   "webinars"
+  ],
+  [
+   "채팅 위젯|Chat Widget|라이브 채팅",
+   "sites",
+   "chat-widget"
+  ],
+  [
+   "WordPress|워드프레스",
+   "sites",
+   "wordpress"
+  ],
+  [
+   "QR",
+   "sites",
+   "qr-codes"
+  ],
+  [
+   "블로그|SEO|사이트맵|Canonical",
+   "sites",
+   "blog-seo"
+  ],
+  [
+   "퀴즈|설문|폼|Form|Survey|Quiz",
+   "sites",
+   "forms-surveys"
+  ],
+  [
+   "퍼널|웹사이트|페이지 빌더|빌더|섹션|팝업",
+   "sites",
+   "funnels-websites"
+  ],
+  [
+   "소셜 플래너|Social Planner|인스타그램 게시|SNS",
+   "marketing",
+   "social-planner"
+  ],
+  [
+   "광고|Ads|Ad Manager",
+   "marketing",
+   "ads"
+  ],
+  [
+   "제휴|어필리에이트|Affiliate",
+   "marketing",
+   "affiliates"
+  ],
+  [
+   "리뷰|평판|Reputation|Google 비즈니스|GBP|Listings",
+   "marketing",
+   "reputation"
+  ],
+  [
+   "이메일 빌더|캠페인|뉴스레터|이메일 템플릿|템플릿",
+   "marketing",
+   "email-campaigns"
+  ],
+  [
+   "이메일|Email|메일|SMTP|Mailgun|DKIM|SPF|DMARC",
+   "marketing",
+   "email-delivery"
+  ],
+  [
+   "캘린더|예약|Calendar|Appointment|부킹|Booking",
+   "calendars",
+   "calendar-more"
+  ],
+  [
+   "인보이스|견적|Invoice|Estimate",
+   "payments",
+   "invoices"
+  ],
+  [
+   "구독|주문|환불|Subscription|Order|Refund",
+   "payments",
+   "orders-subscriptions"
+  ],
+  [
+   "쿠폰|세금|상품|기프트|Coupon|Tax|Product",
+   "payments",
+   "products"
+  ],
+  [
+   "Stripe|PayPal|Square|NMI|Authorize|결제 수단|결제 연동|결제 제공",
+   "payments",
+   "payment-providers"
+  ],
+  [
+   "스토어|Store|Shopify|E-?Commerce|배송",
+   "payments",
+   "store"
+  ],
+  [
+   "문서|계약|Documents|Contracts|전자서명",
+   "payments",
+   "documents"
+  ],
+  [
+   "결제|Payment|거래|Transaction|Text2Pay",
+   "payments",
+   "payments-more"
+  ],
+  [
+   "코스|강의|멤버십|Course|Membership|학습",
+   "memberships",
+   "courses"
+  ],
+  [
+   "커뮤니티|Communit|그룹|GoKollab",
+   "memberships",
+   "communities"
+  ],
+  [
+   "클라이언트 포(털|탈)|Client Portal|App Builder|앱 빌더|앱 스튜디오",
+   "memberships",
+   "client-portal"
+  ],
+  [
+   "수료증|배지|Certificate|Badge",
+   "memberships",
+   "certificates"
+  ],
+  [
+   "A2P|10DLC",
+   "phone",
+   "a2p"
+  ],
+  [
+   "통화|전화|Call|IVR|보이스메일|음성사서함|Phone|번호",
+   "phone",
+   "phone-more"
+  ],
+  [
+   "문자|SMS|MMS|WhatsApp|왓츠앱|메시지",
+   "phone",
+   "messaging"
+  ],
+  [
+   "대시보드|Dashboard|위젯",
+   "reporting",
+   "dashboards"
+  ],
+  [
+   "리포트|리포팅|Report|어트리뷰션|Attribution|추적|UTM|분석|통계",
+   "reporting",
+   "reporting-more"
+  ],
+  [
+   "기회|파이프라인|Opportunit|Pipeline",
+   "customers",
+   "opportunities"
+  ],
+  [
+   "대화|인박스|Conversation|Inbox",
+   "customers",
+   "conversations"
+  ],
+  [
+   "스마트 리스트|Smart List",
+   "customers",
+   "smart-lists"
+  ],
+  [
+   "작업|태스크|Task|프로젝트",
+   "customers",
+   "tasks"
+  ],
+  [
+   "회사|사용자 지정 객체|Custom Object|오브젝트|객체|Associations|연관",
+   "customers",
+   "companies-objects"
+  ],
+  [
+   "커스텀 필드|사용자 지정 필드|Custom Field|병합 필드|Custom Value|커스텀 값",
+   "customers",
+   "fields"
+  ],
+  [
+   "연락처|Contact|CRM|태그",
+   "customers",
+   "contacts-more"
+  ],
+  [
+   "모바일 앱|Mobile|데스크톱",
+   "settings",
+   "mobile-apps"
+  ],
+  [
+   "도메인|Domain",
+   "settings",
+   "domains"
+  ],
+  [
+   "사용자|권한|역할|User|Permission|팀원|직원 추가",
+   "settings",
+   "users"
+  ],
+  [
+   "연동|Integration|Zapier|Facebook|Google|TikTok|LinkedIn|QuickBooks|Slack",
+   "settings",
+   "integrations"
+  ],
+  [
+   "마켓플레이스|Marketplace",
+   "settings",
+   "app-marketplace"
+  ],
+  [
+   "알림|Notification",
+   "settings",
+   "notifications"
+  ],
+  [
+   "API|개발자|Developer|웹훅|Webhook|OAuth|SDK",
+   "settings",
+   "developers"
+  ],
+  [
+   "번역|언어|다국어|Language",
+   "settings",
+   "languages"
+  ],
+  [
+   "설정|Settings|감사 로그|비즈니스 프로필",
+   "settings",
+   "account-settings"
+  ]
+ ]
+}

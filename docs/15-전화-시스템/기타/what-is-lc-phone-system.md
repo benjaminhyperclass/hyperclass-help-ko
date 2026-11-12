@@ -64,7 +64,6 @@
 
 하이퍼클래스 전화를 켜고 설정해서 팀이 바로 소통을 시작하는 방법을 알려 줘요.
 
-- [에이전시와 서브 계정을 하이퍼클래스 전화로 옮기려면 어떻게 하나요?](../how-do-i-migrate-my-agency-and-sub-account-over-to-lc-phone.md)
 - [서브 계정의 규정 번들과 주소 만들기](../regulatory-bundle-and-address-creation-for-sub-accounts.md)
 - [영국의 고객 확인(KYC)](../LC-Phone/know-your-customer-kyc-in-the-united-kingdom.md)
 - [수신 전화, 메시지, 통화 상태 업데이트를 받기 위한 웹훅 설정(Twilio 사용자용)](../setting-up-webhooks-to-receive-incoming-calls-messages-and-status-updates-for-ca.md)
@@ -77,7 +76,6 @@ Twilio 같은 외부 서비스에서 번호 설정, 메시지 기록, 설정을 
 
 - [하이퍼클래스 전화에서 Twilio로 전화번호 옮기기(미국 및 해외)](../moving-phone-numbers-across-accounts-us-and-international.md)
 - [Twilio의 미국 번호를 하이퍼클래스로 옮기기](../moving-us-numbers-from-twilio-to-hyperclass-lc.md)
-- [서브 계정 간에 번호 옮기기](../moving-numbers-across-sub-accounts-same-agency.md)
 - 한 Twilio 계정에서 다른 계정으로 번호 옮기기
 - [전화번호(Twilio 번호가 아닌 번호)를 계정으로 포팅하기](../전화번호/porting-options-us-in-app-vs-international-manual-process.md)
 

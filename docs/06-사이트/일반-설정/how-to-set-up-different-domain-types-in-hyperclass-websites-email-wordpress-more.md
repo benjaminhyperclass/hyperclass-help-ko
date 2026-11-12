@@ -102,7 +102,7 @@ DNS 레코드가 적용되고 나면 고객이 내 도메인으로 앱에 접속
 
 **Agency View**(에이전시 보기) > **설정 > 회사 설정 > Whitelabel**(화이트라벨)로 이동하세요.
 
-화이트라벨 도메인 설정 방법은 [데스크톱 웹 앱용 화이트라벨 도메인 설정 방법](../../25-애드온-세일즈/Whitelabel-Desktop-App/how-to-set-up-a-whitelabel-domain-for-the-desktop-web-app.md)을 참고하세요.
+화이트라벨 도메인 설정 방법은 데스크톱 웹 앱용 화이트라벨 도메인 설정 방법을 참고하세요.
 
 ![화이트라벨 도메인 설정 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155080577419/original/pJtVMPba3s8y1kMogTs1wQOrer8YwHP4cg.png?1789034409)
 

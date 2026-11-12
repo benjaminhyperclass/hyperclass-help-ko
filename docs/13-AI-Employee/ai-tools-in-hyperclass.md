@@ -213,7 +213,7 @@
 
 하이퍼클래스 AI는 사용량 기준 결제(Pay-Per-Use), AI 직원 Starter, AI 직원 Growth, AI 직원 Unlimited로 제공돼요. 모든 플랜에 포함된 상품도 있고, 월 제공량, 공정 사용 범위, 토큰 기반 요금이 있는 상품도 있어요. AI 상품과 플랜의 요금은 [AI 상품 요금 안내](ai-product-pricing-update.md)에서 확인하세요.
 
-에이전시의 접근 권한, 리빌링, 재판매 방법은 [AI 직원: 접근 권한, 리빌링, 재판매](AI-Employee/ai-employee-access-rebilling-and-reselling.md) 문서를 확인하세요.
+에이전시의 접근 권한, 리빌링, 재판매 방법은 AI 직원: 접근 권한, 리빌링, 재판매 문서를 확인하세요.
 
 ## 하이퍼클래스 AI 시작하기
 

@@ -6,7 +6,7 @@
 
 # 워크플로우 액션 — GPT Powered by OpenAI(OpenAI 기반 GPT)
 
-**GPT Powered by OpenAI**(OpenAI 기반 GPT) 액션은 워크플로우 안에서 AI로 글을 만들고 복잡한 작업을 처리해 주는 액션이에요. 이 문서에서는 설정 방법, 활용 사례, 예시 프롬프트, 자주 묻는 질문을 안내해요. 고객사에서 이 액션을 쓰도록 켜는 방법은 [이 문서](../../16-SaaS-설정/Saas-Mode/how-to-enable-and-rebill-workflow-external-ai-models.md)를 참고하세요.
+**GPT Powered by OpenAI**(OpenAI 기반 GPT) 액션은 워크플로우 안에서 AI로 글을 만들고 복잡한 작업을 처리해 주는 액션이에요. 이 문서에서는 설정 방법, 활용 사례, 예시 프롬프트, 자주 묻는 질문을 안내해요. 고객사에서 이 액션을 쓰도록 켜는 방법은 이 문서를 참고하세요.
 
 {% hint style="warning" %}
 GPT-4 요금은 하이퍼클래스의 GPT-4 문서를, GPT-5 요금은 하이퍼클래스의 GPT-5 문서를 참고하세요.

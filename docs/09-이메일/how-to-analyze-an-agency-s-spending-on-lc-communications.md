@@ -112,8 +112,6 @@ Pro 플랜 이상에서는 SaaS 모드(전화·이메일 재청구)로 이 사�
 아래 문서를 참고하세요.
 
 - 에이전시 Stripe 계정을 연결해 재청구 결제 받기
-- [이메일 재청구 켜기](../16-SaaS-설정/Saas-Mode/email-re-billing-on-the-unlimited-297-2970-and-pro-497-4970-plans.md)
-- [SaaS 모드 기본 설정과 전화 재청구](../16-SaaS-설정/Saas-Mode/activate-saas-mode-request-payment-and-configure-phone-rebilling.md)
 
 재청구는 이렇게 진행돼요. 플랫폼이 에이전시에 사용 요금을 청구하고, 에이전시를 대신해 고객에게도 인보이스를 보내요. 고객에게서 받은 금액은 연결된 Stripe 계정으로 입금돼요.
 

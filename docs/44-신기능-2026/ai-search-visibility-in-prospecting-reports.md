@@ -73,9 +73,3 @@ AI Search Visibility 점수는 비즈니스가 AI에게 발견되고 AI와 상�
 
    ![리포트 공유 과정 녹화 화면](https://jumpshare.com/share/YbUgjByc6GSbOKvD5ubT+/GIF+Recording+2026-10-22+at+22.44.14.gif)
 
-## 관련 문서
-
-- [하이퍼클래스 잠재고객 발굴 도구로 리드 확보하기](../19-에이전시-뷰/Core-Functionality/how-to-generate-leads-using-the-hyperclass-prospecting-tool.md)
-- [마케팅 감사 리포트의 등급 이해하기](../19-에이전시-뷰/Marketing-Audit-Reports/understanding-the-grades-in-your-marketing-audit-report.md)
-- [잠재고객 리포트 레이아웃 사용자 지정하기](../19-에이전시-뷰/Core-Functionality/how-to-customize-your-prospect-report-layout.md)
-- [다국어 잠재고객 리포트 공유(잠재고객 발굴 도구)](../19-에이전시-뷰/Marketing-Audit-Reports/multilingual-prospect-report-sharing-prospecting-tool.md)

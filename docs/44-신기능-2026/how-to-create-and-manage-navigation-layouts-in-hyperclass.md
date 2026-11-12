@@ -211,4 +211,3 @@ $497 플랜에서 $297 플랜으로 낮춰도 기존 내비게이션 레이아�
 ## 관련 문서
 
 - [하이퍼클래스 메뉴 사용자 지정: 사용자 정의 메뉴 링크 가이드](../11-설정/customizing-hyperclass-menus-a-guide-to-custom-menu-links.md)
-- [SaaS 플랜에서 사용자 정의 메뉴 링크 사용하기](../16-SaaS-설정/how-to-use-custom-menu-links-in-saas-plans.md)

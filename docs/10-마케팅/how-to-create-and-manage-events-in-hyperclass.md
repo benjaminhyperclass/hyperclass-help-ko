@@ -245,6 +245,5 @@
 - [하이퍼클래스 이벤트 캘린더: 설정 방법과 주요 차이점](../04-캘린더-예약/Simple-Calendars/how-to-create-event-calendars.md)
 - [하이퍼클래스 커뮤니티 이벤트: 설정, 공개 범위, 리마인더](../17-멤버십-커뮤니티/커뮤니티/community-events.md)
 - [하이퍼클래스 웨비나 만들기 완벽 가이드](../36-기타/리커버리/complete-guide-to-creating-webinars.md)
-- [하이퍼클래스에서 커스텀 필드 만들고 사용하기](../23-레거시-자동화/how-to-use-custom-fields.md)
 - [하이퍼클래스 API 문서](../35-개발자/Developer-Resources/hyperclass-api-documentation.md)
 - [하이퍼클래스 국제화가 시작됐어요!](../34-국제화/The-Internationalization-of-hyperclass/the-internationalization-of-hyperclass-has-begun.md)

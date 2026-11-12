@@ -64,7 +64,7 @@
 
 ## 채널 호환성
 
-음성 응답은 대화 AI가 이미 작동하는 채널에서 사용할 수 있어요. 음성 답변을 기대하기 전에 각 채널이 하이퍼클래스에 제대로 연결되어 있는지 확인하세요. 연결 방법은 [Facebook·Instagram Messenger 설정하기](../../01-시작하기/세일즈-대화/getting-started-setup-facebook-and-instagram-messenger.md)와 [서브 계정에서 WhatsApp 설정하기](../../31-리셀링/WhatsApp/how-to-set-up-whatsapp-for-a-sub-account.md)를 참고하세요.
+음성 응답은 대화 AI가 이미 작동하는 채널에서 사용할 수 있어요. 음성 답변을 기대하기 전에 각 채널이 하이퍼클래스에 제대로 연결되어 있는지 확인하세요. 연결 방법은 [Facebook·Instagram Messenger 설정하기](../../01-시작하기/세일즈-대화/getting-started-setup-facebook-and-instagram-messenger.md)와 서브 계정에서 WhatsApp 설정하기를 참고하세요.
 
 - Facebook Messenger
 - Instagram 다이렉트 메시지

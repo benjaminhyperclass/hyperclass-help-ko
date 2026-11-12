@@ -87,4 +87,4 @@ Google 외에 더 많은 디렉터리에 노출하고 싶다면 이렇게 해 �
 - 비즈니스 정보를 Yelp, Bing Places, Apple Maps 등에 반영하세요.
 - 모든 등록 정보에서 이름, 주소, 전화번호를 똑같이 유지하세요.
 
-[등록 정보 관리 연동 가이드](../../31-리셀링/Online-Listings/online-listing-overview-setup-doc.md)
+등록 정보 관리 연동 가이드

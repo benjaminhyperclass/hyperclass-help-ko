@@ -32,7 +32,6 @@ WhatsApp Customer Service Window Check
 1. 사전 준비
    - 하이퍼클래스 서브 계정에서 WhatsApp이 켜져 있어야 해요.
    - 비즈니스가 먼저 메시지를 보내려면 승인된 WhatsApp 템플릿이 필요해요.
-   - WhatsApp 서브 계정 설정 가이드와 [WhatsApp 템플릿 만드는 방법](../../31-리셀링/WhatsApp/how-to-create-a-whatsapp-template.md) 가이드를 따라 하세요.
 2. **WhatsApp: Customer Service Window Check** 액션 추가
    - **자동화 > 워크플로우**로 이동해 **Create Workflow**(워크플로우 만들기)를 누르고 **처음부터 시작**을 선택하세요.
    - **WhatsApp: Customer Service Window Check**(WhatsApp 고객 서비스 창 확인) 액션을 추가하세요. **Open**(열림)과 **Closed**(닫힘) 두 개의 브랜치가 만들어져요.

@@ -1,0 +1,42 @@
+---
+description: 채팅·SNS·문자 문의에 AI가 답하게 해요.
+---
+
+# 대화 AI (챗봇)
+
+채팅·SNS·문자 문의에 AI가 답하게 해요.
+
+* [대화 AI 다중 캘린더 예약 설정 가이드](../../13-AI-Employee/Conversation-AI/conversation-ai-multi-calendar-booking-setup-guide.md)
+* [AI 메시지의 응답 정보 확인하고 개선하기](../../13-AI-Employee/Conversation-AI-Training-Bots/response-info-for-your-ai-message.md)
+* [AI 프롬프트 작성 기초](../../13-AI-Employee/Conversation-AI-Goals-Prompts-and-Actions/ai-prompting-101.md)
+* [AI에게 문의로 대화 AI 봇 만들고 배포하기](../../13-AI-Employee/Conversation-AI/build-and-deploy-conversation-ai-bots-with-ask-ai.md)
+* [Conversation AI 봇 학습시키기](../../13-AI-Employee/Conversation-AI-Training-Bots/training-your-conversation-ai-bot.md)
+* [Conversation AI 봇이 이미지에 답하도록 설정하기](../../13-AI-Employee/Conversation-AI/conversations-ai-bots-can-now-respond-to-images.md)
+* [가이드 폼 기반 설정으로 대화 AI 봇 만들기](../../13-AI-Employee/Conversation-AI/guided-form-based-setup-for-conversation-ai.md)
+* [대화 AI 공개 API](../../13-AI-Employee/Conversation-AI/conversation-ai-public-api.md)
+* [대화 AI 근무 시간 설정](../../13-AI-Employee/Conversation-AI/working-hours-for-conversation-ai.md)
+* [대화 AI 봇의 음성 메시지 응답](../../13-AI-Employee/Conversation-AI/conversations-ai-bots-can-now-respond-to-audio.md)
+* [대화 AI 상담원 전환 액션 설정](../../13-AI-Employee/Conversation-AI-Goals-Prompts-and-Actions/conversation-ai-human-handover-action.md)
+* [대화 AI 에이전트 대시보드](../../13-AI-Employee/Conversation-AI/conversation-ai-agents-dashboard.md)
+* [대화 AI 에이전트 로그](../../13-AI-Employee/Conversation-AI/conversation-ai-agent-logs.md)
+* [대화 AI 에이전트 세부 권한 설정](../../13-AI-Employee/Conversation-AI/managing-granular-permissions-for-conversation-ai-agents.md)
+* [대화 AI 에이전트 응답을 프롬프트와 지침으로 맞추기](../../13-AI-Employee/Conversation-AI-Goals-Prompts-and-Actions/customize-your-ai-responses-using-prompts.md)
+* [대화 AI 에이전트를 폴더로 정리하기](../../13-AI-Employee/Conversation-AI/folders-for-conversation-ai-agents.md)
+* [대화 AI 오토파일럿 모드로 리드에게 바로 응답하기](../../13-AI-Employee/Conversation-AI-Response-Modes/auto-pilot-mode-in-conversation-ai-for-efficient-communication.md)
+* [대화 AI 자동 후속 조치(Auto Follow-Up) 설정](../../13-AI-Employee/Conversation-AI-Goals-Prompts-and-Actions/conversation-ai-auto-follow-up-action.md)
+* [대화 AI 제안 모드에서 AI 제안 액션 사용하기](../../13-AI-Employee/Conversation-AI/ai-suggested-actions-in-conversation-ai-suggestive-mode.md)
+* [대화 AI 지식 소스 추가와 답변 품질 개선](../../13-AI-Employee/Conversation-AI/conversation-ai-new-knowledge-sources-quality-upgrades.md)
+* [대화 AI 플로 빌더로 단계별 대화 흐름 만들기](../../13-AI-Employee/Conversation-AI/conversation-ai-flow-builder.md)
+* [대화 AI에 사용자 지정 대화 제공업체 연결하기](../../13-AI-Employee/Conversation-AI/how-to-use-custom-conversation-providers-with-conversation-ai.md)
+* [대화 AI에서 워크플로우 트리거하기](../../13-AI-Employee/Conversation-AI-+-Workflows/trigger-a-workflow-within-conversation-ai.md)
+* [대화 AI에서 응답 스타일 설정하기](../../13-AI-Employee/Conversation-AI/configure-response-settings-in-conversation-ai.md)
+* [대화 AI의 새 질문 감지 흐름](../../13-AI-Employee/Conversation-AI-Training-Bots/conversation-ai-new-query-detection-flow.md)
+* [대화 AI의 전달 봇 액션으로 다른 봇에 대화 넘기기](../../13-AI-Employee/Conversation-AI-Goals-Prompts-and-Actions/conversation-ai-transfer-bot-action.md)
+* [대화에서 AI 액션 로그 확인하고 필터링하기](../../13-AI-Employee/Conversation-AI-Goals-Prompts-and-Actions/ai-action-logging-filtering-in-conversations.md)
+* [모바일 앱에서 대화 AI 사용하기](../../13-AI-Employee/Conversation-AI/using-conversation-ai-on-mobile-hyperclass-hyperclass.md)
+* [연락처별 봇 상태 설정](../../13-AI-Employee/Conversation-AI/bot-status-for-individual-contacts.md)
+* [워크플로우 액션 — Conversation AI(대화 AI)에서 Live Chat(실시간 채팅) 채널 사용하기](../../13-AI-Employee/Conversation-AI-+-Workflows/conversation-ai-live-chat-channel-in-workflow-action.md)
+* [웹 URL과 링크로 대화 AI 학습시키기](../../13-AI-Employee/Conversation-AI-Training-Bots/web-urls-and-links.md)
+* [테스트 채팅에서 대화 AI 프롬프트 최적화하기](../../13-AI-Employee/Conversation-AI/how-to-optimize-conversations-ai-prompts-from-a-trial-chat.md)
+* [폼 기반 Conversation AI 봇에서 예약 취소·일정 변경 설정](../../13-AI-Employee/Conversation-AI/cancellation-and-rescheduling-of-appointments-in-form-based-bots.md)
+* [프롬프트 최적화 도구로 대화 AI 에이전트 테스트하고 개선하기](../../13-AI-Employee/Conversation-AI/test-optimize-conversations-ai-agents-with-prompt-optimizer.md)

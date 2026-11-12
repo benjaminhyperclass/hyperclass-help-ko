@@ -46,7 +46,7 @@
 4. 기능 설명과 사용 조건이 있는지 확인해요.
 
 {% hint style="info" %}
-실험실 기능은 에이전시 또는 서브 계정 단위로 설정될 수 있어요. 관리형 에이전트 메모리의 정확한 실험실 위치와 기능 카드 이름은 게시 전에 확인이 필요해요. 실험실 설정과 사용 가능 여부는 [실험실 기능 전체 개요](../19-에이전시-뷰/Agency-Settings/labs-features-complete-overview.md)에서 자세히 볼 수 있어요.
+실험실 기능은 에이전시 또는 서브 계정 단위로 설정될 수 있어요. 관리형 에이전트 메모리의 정확한 실험실 위치와 기능 카드 이름은 게시 전에 확인이 필요해요. 실험실 설정과 사용 가능 여부는 실험실 기능 전체 개요에서 자세히 볼 수 있어요.
 {% endhint %}
 
 ![실험실에서 관리형 에이전트 메모리 기능 찾기](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155083096314/original/bQ-sUMxfRuTNpSWqGjFuRHwSahfQ-L0Ikw.png?1791805782)

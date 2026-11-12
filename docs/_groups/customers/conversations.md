@@ -1,0 +1,40 @@
+---
+description: 문자·이메일·채팅·SNS 메시지를 한곳에서 주고받아요.
+---
+
+# 대화 (통합 인박스)
+
+문자·이메일·채팅·SNS 메시지를 한곳에서 주고받아요.
+
+* [Facebook·Instagram 빠른 답장 설정 가이드](../../03-대화/대화/guide-to-quick-replies-for-facebook-instagram.md)
+* [HiRise 디자인의 수동 작업 페이지 알아보기](../../03-대화/대화/understanding-manual-actions-in-hirise-design.md)
+* [대화 필터 알아보기](../../03-대화/overview-of-conversation-filters.md)
+* [새로워진 대화 화면 시작하기](../../03-대화/대화/getting-started-with-the-conversations-tab.md)
+* [HiRise 디자인의 스니펫 이해하기](../../03-대화/대화/understanding-snippets-in-hirise-design.md)
+* [SMS 그룹 채팅 사용하기 (데스크톱·모바일)](../../03-대화/대화/conversations-group-chat-for-sms-mobile-desktop.md)
+* [내부 채팅으로 팀원과 비공개로 대화하기](../../03-대화/대화/internal-chat-private-team-communication.md)
+* [대화 - 활동 카드](../../03-대화/대화/conversations-activity-cards.md)
+* [대화 SLA 설정하기](../../03-대화/대화/how-to-setup-conversation-slas.md)
+* [대화 SLA 성과 확인하기](../../03-대화/대화/how-to-track-sla-performance-in-conversations.md)
+* [대화 뷰 만들고 공유하기](../../03-대화/대화/how-to-create-and-share-conversation-views.md)
+* [대화 첨부파일 보안 접근 안내](../../35-개발자/secure-access-to-conversation-attachments-in-hyperclass.md)
+* [대화 화면의 오른쪽 패널과 확장형 사이드바](../../03-대화/대화/right-panel-expandable-sidebar-in-conversations.md)
+* [대화를 사용자 지정 객체 레코드에 연결하기](../../44-신기능-2026/link-conversations-to-custom-object-records.md)
+* [대화를 읽음으로 표시하기](../../03-대화/대화/how-to-mark-a-conversation-as-read.md)
+* [대화를 회사에 연결하기](../../02-연락처/link-conversations-to-companies.md)
+* [대화에서 AI 응답 정보 확인하고 수정하기](../../03-대화/view-edit-ai-response-info-in-conversations.md)
+* [대화에서 SMS 보낸 사람·받는사람 번호 선택하기](../../03-대화/대화/select-sms-to-and-from-numbers.md)
+* [대화에서 내부 댓글 남기고 팀원 멘션하기](../../03-대화/대화/conversations-how-to-add-internal-comments-mention-users.md)
+* [대화에서 라이브 채팅 사용하기](../../03-대화/대화/live-chat.md)
+* [대화에서 소셜 댓글 관리하기](../../44-신기능-2026/how-to-manage-social-comments-in-conversations.md)
+* [대화에서 스니펫 만들고 사용하기](../../03-대화/대화/conversations-snippets.md)
+* [대화에서 웹 채팅 사용하기](../../03-대화/대화/web-chat-inside-conversations.md)
+* [대화에서 작성 중인 메시지 자동 저장](../../03-대화/대화/how-to-save-draft-messages-in-conversations.md)
+* [대화에서 첨부파일 쉽게 보내기](../../03-대화/대화/attachments-made-easy-in-conversations.md)
+* [대화에서 폼 제출 내용 확인하기](../../03-대화/대화/how-to-access-form-submissions-in-conversations.md)
+* [마켓플레이스 AI 에이전트 템플릿 사용하기 (대화 AI·음성 AI)](../../03-대화/기타/how-to-use-the-ai-agent-marketplace-templates-for-conversation-ai-and-voice-ai-a.md)
+* [모바일 대화에서 읽지 않은 메시지 찾기](../../03-대화/대화/how-to-find-unread-messages-in-mobile-conversations.md)
+* [서명된 URL 파일 업로드 API](../../03-대화/대화/signed-url-file-upload-api.md)
+* [워크플로우 액션 — Add Internal Comment(내부 댓글 추가)](../../03-대화/대화/workflow-actions-add-internal-comment.md)
+* [워크플로우 액션 — Log External Call(외부 통화 기록)](../../03-대화/대화/workflow-action-log-external-call.md)
+* [트리거 링크 HiRise 디자인 살펴보기](../../03-대화/대화/understanding-trigger-links-in-hirise-design.md)

@@ -108,7 +108,6 @@
 
 - [관리자와 사용자의 역할 및 권한 범위](admin-vs-user-roles-and-permission-scopes.md)
 - [사용자 역할, 권한, 배정된 데이터: 서브 계정](사용자-설정/user-roles-permissions-and-assigned-data-subaccount.md)
-- [에이전시 사용자 역할 및 권한 관리](사용자-설정/agency-managing-user-roles-permissions.md)
 
 ---
 
