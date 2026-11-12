@@ -25,7 +25,7 @@ Meta 광고에 **판매** 목표가 추가되어 웹사이트와 메시징 앱 �
 
 ### 1단계: 광고 관리자 열기
 
-1. 온보딩을 마친 상태에서 **서브 계정으로 이동 > 마케팅 > 광고 관리자**로 이동하세요. 광고 관리자를 활성화하고 재판매하는 방법은 [광고 관리자 활성화 및 재판매](../Reselling-Ad-Manager/how-to-enable-and-resell-ad-manager.md) 문서를 참고하세요.
+1. 온보딩을 마친 상태에서 **서브 계정으로 이동 > 마케팅 > 광고 관리자**로 이동하세요. 광고 관리자를 활성화하고 재판매하는 방법은 광고 관리자 활성화 및 재판매 문서를 참고하세요.
 2. **캠페인 만들기**를 눌러 새 캠페인을 시작하세요.
 
    ![광고 관리자에서 캠페인 만들기를 누르는 화면](https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/155043507828/original/zlFedLiEUNFaNrITkxqtoNrzgJ5TMVq2xw.jpeg?1742304574)

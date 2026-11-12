@@ -50,7 +50,7 @@ AI 인증은 앱을 제출하기 전에 이루어져요. Apple과 Google은 각�
 **팀과 통화 예약** 옵션은 설정 과정에 도움이 필요한 에이전시 사용자 중 해당되는 분께 제공돼요. 자동 인증 요건에는 포함되지 않아요.
 {% endhint %}
 
-전체 설정 과정은 [클라이언트 포탈 브랜드 모바일 앱 - 에이전시 전체 설정 가이드](../31-리셀링/Client-Portal-Branded-Mobile-APP/client-portal-branded-mobile-app-full-setup-guide-for-agency.md)에서도 볼 수 있어요.
+전체 설정 과정은 클라이언트 포탈 브랜드 모바일 앱 - 에이전시 전체 설정 가이드에서도 볼 수 있어요.
 
 ## 브랜딩 요건
 
@@ -166,7 +166,7 @@ AI 인증은 앱을 제출하기 전에 이루어져요. Apple과 Google은 각�
 
 **개발 세부정보**에서는 Apple과 Google에 앱을 게시하는 데 필요한 정보를 연결해요. 개선된 과정에서는 Apple과 Google 계정 비밀번호를 입력하지 않아도 돼서 설정이 한결 간단해졌어요.
 
-**Google Developer Credentials**(Google Developer 자격 증명)와 **Apple Developer 자격 증명**에서 해당하는 필드를 입력하세요. 각 개발자 계정은 [Apple Developer 계정 설정 가이드](../30-모바일-데스크톱/Whitelabel-Mobile-App/setting-up-an-apple-developer-account-for-your-whitelabel-mobile-app.md)와 [Google Developer 계정 설정 가이드](../30-모바일-데스크톱/Whitelabel-Mobile-App/setting-up-a-google-developer-account-for-your-whitelabel-mobile-app.md)를 참고해 준비할 수 있어요.
+**Google Developer Credentials**(Google Developer 자격 증명)와 **Apple Developer 자격 증명**에서 해당하는 필드를 입력하세요. 각 개발자 계정은 Apple Developer 계정 설정 가이드와 Google Developer 계정 설정 가이드를 참고해 준비할 수 있어요.
 
 **Google Developer Credentials**(Google Developer 자격 증명)
 

@@ -44,7 +44,7 @@ AI Builder에는 워크플로우 설정에 맞춰 고를 수 있는 테스트 �
 
 게시하기 전에 테스트해 두면 설정 문제를 미리 찾을 수 있어요.
 
-1. **실험실**로 이동해서 **The New Test Workflow**(새 테스트 워크플로우)를 켜세요. 실험실 기능은 [실험실 기능 전체 보기](../../19-에이전시-뷰/Agency-Settings/labs-features-complete-overview.md)에서 확인할 수 있어요.
+1. **실험실**로 이동해서 **The New Test Workflow**(새 테스트 워크플로우)를 켜세요. 실험실 기능은 실험실 기능 전체 보기에서 확인할 수 있어요.
 2. **자동화 > 워크플로우**로 이동해서 워크플로우를 하나 여세요.
 3. **AI Builder**를 열고, 만들거나 수정하고 싶은 워크플로우를 설명하세요. 사용법은 [워크플로우 AI Builder](../기타/workflow-ai-builder.md) 문서를 참고하세요.
 4. AI Builder가 작업을 마치면 채팅에서 **Test workflow**를 클릭하세요.

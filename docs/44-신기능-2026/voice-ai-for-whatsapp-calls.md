@@ -58,7 +58,7 @@
 
 ## WhatsApp 전화에 음성 AI 설정하기
 
-연결된 WhatsApp 번호마다 걸려 오는 전화를 누가 받을지 정할 수 있어요. 시작하기 전에 해당 번호에서 WhatsApp 전화 기능을 쓸 수 있는지 확인하세요. [하이퍼클래스의 WhatsApp 전화](../31-리셀링/whatsapp-calling-in-hyperclass.md)와 [WhatsApp 음성 통화](../13-AI-Employee/Voice-AI/whatsapp-voice-calling-in-hyperclass.md) 문서에서 자세히 볼 수 있어요. 전화를 받을 음성 AI 에이전트도 미리 만들어 두세요. 만드는 방법은 [음성 AI 에이전트 만들기](../13-AI-Employee/how-to-create-voice-ai-agents.md)를 참고하세요.
+연결된 WhatsApp 번호마다 걸려 오는 전화를 누가 받을지 정할 수 있어요. 시작하기 전에 해당 번호에서 WhatsApp 전화 기능을 쓸 수 있는지 확인하세요. 하이퍼클래스의 WhatsApp 전화와 [WhatsApp 음성 통화](../13-AI-Employee/Voice-AI/whatsapp-voice-calling-in-hyperclass.md) 문서에서 자세히 볼 수 있어요. 전화를 받을 음성 AI 에이전트도 미리 만들어 두세요. 만드는 방법은 [음성 AI 에이전트 만들기](../13-AI-Employee/how-to-create-voice-ai-agents.md)를 참고하세요.
 
 1. 서브 계정에서 **설정 > WhatsApp > 전화 거는 중**으로 이동해 설정할 번호를 열어요.
 2. **Allow voice calls**(음성 통화 허용)가 켜져 있는지 확인해요.

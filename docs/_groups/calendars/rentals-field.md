@@ -1,0 +1,48 @@
+---
+description: 렌탈 · 시설 · 현장 서비스 관련 문서를 모았어요.
+---
+
+# 렌탈 · 시설 · 현장 서비스
+
+렌탈 · 시설 · 현장 서비스 관련 문서를 모았어요.
+
+* [대여 리스팅과 카테고리 알아보기](../../04-캘린더-예약/렌탈/rentals-listings-categories.md)
+* [대여 시작하기](../../04-캘린더-예약/렌탈/rentals-overview-how-to-get-started.md)
+* [대여 예약 개요 — 예약 목록 보기](../../04-캘린더-예약/렌탈/rentals-overview-of-bookings.md)
+* [현장 서비스 비공개 베타 가이드](../../04-캘린더-예약/Field-Services/guide-to-the-field-services-private-beta.md)
+* [현장 서비스 시작하기: 개요와 설정 순서](../../04-캘린더-예약/Field-Services/field-services-overview-how-to-get-started.md)
+* [대여 — 예약 편집하기](../../04-캘린더-예약/렌탈/rentals-editing-a-booking.md)
+* [대여 — 추가 요금(Additional Fees)](../../04-캘린더-예약/렌탈/rentals-additional-fees.md)
+* [대여 가격 및 할인 설정](../../04-캘린더-예약/렌탈/rentals-configuring-pricing-discounts.md)
+* [대여 글로벌 설정](../../04-캘린더-예약/렌탈/rentals-global-settings.md)
+* [대여 리스팅 만들기와 편집](../../04-캘린더-예약/렌탈/rentals-create-edit-listings.md)
+* [대여 리스팅의 차단된 슬롯 사용하기](../../04-캘린더-예약/렌탈/rentals-blocked-slots-for-listings.md)
+* [대여 부분 결제](../../44-신기능-2026/rentals-partial-payments.md)
+* [대여 애드온 만들기와 관리](../../44-신기능-2026/create-and-manage-rental-add-ons.md)
+* [대여 예약 WhatsApp 알림 설정](../../04-캘린더-예약/렌탈/how-to-set-up-whatsapp-notifications-for-rentals.md)
+* [대여 예약 직접 만들기](../../04-캘린더-예약/렌탈/rentals-creating-a-booking.md)
+* [대여 예약, 고객이 직접 취소하도록 설정하기](../../04-캘린더-예약/렌탈/how-to-set-up-self-service-cancellations-for-rentals.md)
+* [대여 예약에 세금 적용하기](../../04-캘린더-예약/렌탈/rentals-taxes.md)
+* [대여 캘린더 보기](../../04-캘린더-예약/렌탈/rentals-calendar-view.md)
+* [룸 만들고 설정하기](../../04-캘린더-예약/Calendar-Rooms-and-Equipment/creating-rooms-in-hyperclass.md)
+* [룸과 장비](../../04-캘린더-예약/Calendar-Rooms-and-Equipment/rooms-and-equipment.md)
+* [서브 계정에서 대여 켜고 끄기](../../04-캘린더-예약/렌탈/how-to-enable-disable-rentals-for-your-locations.md)
+* [장비 만들기](../../04-캘린더-예약/Calendar-Rooms-and-Equipment/how-to-create-equipment.md)
+* [현장 서비스 경로 최적화](../../04-캘린더-예약/Field-Services/route-optimization-in-field-services.md)
+* [현장 서비스 설정 — 온라인 예약](../../04-캘린더-예약/Field-Services/field-services-settings-online-booking.md)
+* [현장 서비스 설정: 작업, 방문, 환경설정](../../04-캘린더-예약/Field-Services/field-services-settings-jobs-visits-and-preferences.md)
+* [현장 서비스 알림 설정](../../04-캘린더-예약/Field-Services/notifications-in-field-services.md)
+* [현장 서비스 일정 화면 살펴보기](../../04-캘린더-예약/Field-Services/schedule-in-field-services.md)
+* [현장 서비스 타임시트](../../04-캘린더-예약/Field-Services/timesheets-in-field-services.md)
+* [현장 서비스 홈 화면 살펴보기](../../04-캘린더-예약/Field-Services/field-services-home-overview.md)
+* [현장 서비스로 서비스 가져오기](../../04-캘린더-예약/Field-Services/importing-services-into-field-services.md)
+* [현장 서비스에서 방문 일정 잡고 가능한 시간 찾기](../../04-캘린더-예약/Field-Services/scheduling-visits-and-finding-availability-in-field-services.md)
+* [현장 서비스에서 작업 만들고 관리하기](../../04-캘린더-예약/Field-Services/jobs-in-field-services.md)
+* [현장 서비스에서 직원 설정하기](../../04-캘린더-예약/Field-Services/staff-in-field-services.md)
+* [현장 서비스의 견적서와 인보이스](../../04-캘린더-예약/Field-Services/estimates-and-invoices-in-field-services.md)
+* [현장 서비스의 방문 상태](../../04-캘린더-예약/Field-Services/visit-statuses-in-field-services.md)
+* [현장 서비스의 서비스 지역 설정](../../04-캘린더-예약/Field-Services/service-areas-in-field-services.md)
+* [현장 서비스의 서비스와 애드온 설정](../../04-캘린더-예약/Field-Services/services-and-add-ons-in-field-services.md)
+* [현장 서비스의 예약 페이지 편집기](../../04-캘린더-예약/Field-Services/booking-page-editor-in-field-services.md)
+* [현장 서비스의 요청](../../04-캘린더-예약/Field-Services/requests-in-field-services.md)
+* [현장 서비스의 체크리스트, 메모, 폼 사용하기](../../04-캘린더-예약/Field-Services/checklists-notes-and-forms-in-field-services.md)

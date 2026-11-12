@@ -76,7 +76,7 @@ Google은 헬스장 이름이 웹 곳곳에 언급되는 것을 좋아해요. �
 - 지역 인플루언서나 웰니스 블로거와 협업해 소개 글이나 게스트 포스트를 올리세요.
 - 지역 행사를 후원하거나, 주스 바·물리치료사처럼 건강 분야의 다른 업체와 협업하세요.
 
-[온라인 리스팅 개요](../../31-리셀링/Online-Listings/online-listing-overview-setup-doc.md)
+온라인 리스팅 개요
 
 ---
 
@@ -92,7 +92,7 @@ Google은 헬스장 이름이 웹 곳곳에 언급되는 것을 좋아해요. �
 
 이 데이터로 효과가 좋은 방법에 더 집중하세요.
 
-[리드 성과 추적하기](../../19-에이전시-뷰/Performance-Metrics/analytics-dashboard-for-prospecting-in-subaccounts.md)
+리드 성과 추적하기
 
 ---
 

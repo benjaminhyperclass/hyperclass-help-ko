@@ -35,11 +35,16 @@
    python3 scripts/manual/publish_results.py /tmp/mq-out /tmp/mq-lint.json --report /tmp/mq-report.json   # 검수 통과분만 docs/ 로
    python3 scripts/manual/apply_plan.py links
    python3 scripts/manual/video_links.py apply             # 새로 써진 문서 본문에 '▶ 영상' 타임스탬프 링크를 다시 넣는다(못 찾은 위치는 목록으로 출력 → 연결표 at 수정)
-   python3 scripts/manual/gen_summary.py
+   python3 scripts/manual/gen_summary.py --report         # 목차(업무 흐름별) 재생성 · '기본 묶음으로 떨어진 문서'가 있으면 data/manual/toc.json 라우터에 규칙 추가
    python3 scripts/manual/lint_manual.py docs --links      # 브랜드 0 · 링크 0 확인
    python3 scripts/manual/queue.py done <반영한 id ...>
    ```
 4. 브랜치 → PR → 머지(GitBook 자동 동기화). SUMMARY `## 제목`의 영문 부분은 바꾸지 않는다(공개 주소가 바뀜).
+
+## 목차 구성 (2026-11-12~)
+- 목차는 `data/manual/toc.json` 구성표로 만든다(파일은 옮기지 않음). 섹션 15개 → 묶음 페이지(`docs/_groups/`, 자동 생성 — 직접 고치지 말 것) → 문서.
+- 에이전시(운영자)용 폴더·제목은 공개 목차에서 숨긴다(`hide`). 숨긴 문서로 가는 링크는 gen_summary 가 공개 문서에서 정리한다.
+- 목차 구조를 바꿔 주소가 달라지면 옛 주소 → 파일 리다이렉트를 `.gitbook.yaml` 에 더한다(이번 개편 때 쓴 방식: 이전 SUMMARY 로 gitbook_urls.page_urls 계산 → 바뀐 주소만 추가).
 
 ## C. 창업 챌린지 강의 영상 연결
 - 형식(2026-11-11 벤자민 지침): 상자·목차 페이지 없이, 본문에서 그 내용을 설명하는 문장·소제목 옆에 `▶ 영상 [4강 2부 2:19](유튜브 &t=초)` 텍스트 링크만 둔다. 누르면 바로 그 장면이 나와야 한다.

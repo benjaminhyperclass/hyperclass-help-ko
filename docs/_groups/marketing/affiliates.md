@@ -1,0 +1,47 @@
+---
+description: 제휴 · 추천 프로그램 관련 문서를 모았어요.
+---
+
+# 제휴 · 추천 프로그램
+
+제휴 · 추천 프로그램 관련 문서를 모았어요.
+
+* [제휴 관리자 공개 API: 개요, 엔드포인트, 스코프](../../10-마케팅/affiliate-manager-public-api-overview-endpoints-and-scopes.md)
+* [제휴 자동화 시작하기](../../10-마케팅/Affiliate-Manager-Automation/getting-started-with-affiliate-automations.md)
+* [첫 제휴 캠페인을 시작하기 전 준비 사항](../../10-마케팅/Affiliate-Campaigns/prerequisite-to-launch-your-first-affiliate-campaign.md)
+* [PayPal 자동 지급으로 제휴 파트너에게 수익금 지급하기](../../10-마케팅/Affiliate-Payouts/how-to-set-up-and-pay-affiliates-using-paypal-auto-payouts.md)
+* [다단계 커미션 설정](../../10-마케팅/Affiliate-Campaigns/how-to-set-up-multi-tier-commissions.md)
+* [로열티 & 추천 프로그램 만들기](../../44-신기능-2026/how-to-create-loyalty-referral-programs-in-hyperclass.md)
+* [로열티 & 추천 프로그램 안내 영상 (베타 사용자 전용)](../../10-마케팅/loyalty-referral-walkthrough-videos-for-beta-users-only.md)
+* [빠른 캠페인 액션으로 제휴 관리하기](../../10-마케팅/Managing-Affiliates/manage-affiliates-with-quick-campaign-actions.md)
+* [성과에 따라 제휴 파트너를 자동으로 레벨업하기](../../10-마케팅/Managing-Affiliates/how-to-automatically-level-up-affiliates-based-on-performance.md)
+* [워크플로우 트리거 — Affiliate Enrolled In Campaign(제휴 캠페인 등록)](../../10-마케팅/Affiliate-Manager-Automation/workflow-trigger-affiliate-enrolled-in-campaign.md)
+* [워크플로우 트리거 — New Affiliate Sale(신규 제휴 판매)로 판매 후속 조치 자동화](../../10-마케팅/Affiliate-Manager-Automation/automate-affiliate-sales-follow-ups-with-the-new-affiliate-sale-trigger.md)
+* [제휴 관리자 대시보드](../../10-마케팅/Affiliate-Reporting-and-Insights/affiliate-manager-dashboard.md)
+* [제휴 관리자 상품 판매에서 지원하는 결제 게이트웨이](../../10-마케팅/Affiliate-Payouts/what-payment-gateways-supported-in-affiliate-manager-for-product-sales.md)
+* [제휴 관리자 외부 웹사이트 지원](../../10-마케팅/Affiliate-Campaigns/affiliate-manager-external-website-support.md)
+* [제휴 관리자 워크플로우로 리드 배정과 알림 자동화하기](../../10-마케팅/Affiliate-Manager-Automation/automate-lead-assignment-notifications-in-affiliate-manager-workflows.md)
+* [제휴 관리자에서 서브 제휴 파트너 추가하기](../../10-마케팅/Managing-Affiliates/how-to-add-sub-affiliates-in-the-affiliate-manager.md)
+* [제휴 관리자에서 실패한 PayPal 지급 확인하고 다시 시도하기](../../10-마케팅/how-to-review-and-retry-failed-paypal-payouts-in-affiliate-manager.md)
+* [제휴 관리자에서 제휴 추가하기](../../10-마케팅/Managing-Affiliates/how-to-add-affiliates-in-the-affiliate-manager.md)
+* [제휴 관리자에서 커미션 기간과 변동 커미션 설정하기](../../10-마케팅/Affiliate-Campaigns/how-to-use-commission-length-variable-commissions-in-affiliate-manager.md)
+* [제휴 자동화를 사용하는 이유](../../10-마케팅/Affiliate-Manager-Automation/why-use-affiliate-automations.md)
+* [제휴 지급과 커미션 관리](../../10-마케팅/Affiliate-Payouts/how-to-manage-affiliate-payouts-and-commissions.md)
+* [제휴 캠페인 만들기](../../10-마케팅/Affiliate-Campaigns/how-to-create-an-affiliate-campaign.md)
+* [제휴 캠페인 추천 링크 클릭 추적](../../10-마케팅/Affiliate-Campaigns/referral-link-click-tracking-for-affiliate-campaigns.md)
+* [제휴 캠페인에서 리드 추적 설정](../../10-마케팅/Affiliate-Campaigns/how-to-track-leads-from-an-affiliate-campaign.md)
+* [제휴 커미션 일괄 승인·거부·삭제하기](../../10-마케팅/Affiliate-Payouts/sub-account-affiliate-manager-bulk-actions-for-affiliate-commissions.md)
+* [제휴 파트너별 커스텀 커미션 설정](../../10-마케팅/Managing-Affiliates/how-to-set-custom-affiliate-commissions.md)
+* [제휴 파트너에게 지급하기](../../10-마케팅/Affiliate-Payouts/how-to-pay-your-affiliates.md)
+* [제휴 파트너에게 판매 실적 수동 등록하기](../../10-마케팅/Managing-Affiliates/how-to-add-manual-sales.md)
+* [제휴 파트너의 새 지급 방법 추가하기](../../10-마케팅/Affiliate-Payouts/how-to-add-link-a-new-payout-method-for-affiliates.md)
+* [제휴 포털 사용 가이드: 제휴사를 위한 안내](../../10-마케팅/Managing-Affiliates/how-to-use-the-affiliate-portal-a-comprehensive-guide-for-affiliates.md)
+* [제휴사 리드당 지급(Pay-Per-Lead) 커미션 설정하기](../../10-마케팅/how-to-set-up-pay-per-lead-commissions-for-affiliates.md)
+* [제휴사 프로필 페이지 살펴보기](../../10-마케팅/Managing-Affiliates/how-to-navigate-the-affiliate-profile-page-for-efficient-management.md)
+* [제휴에 속한 고객 관리하기](../../10-마케팅/Managing-Affiliates/managing-customers-under-affiliates.md)
+* [제휴에 연결된 CRM 연락처 재배정하기](../../10-마케팅/Managing-Affiliates/reassigning-crm-contacts-between-affiliates.md)
+* [쿠폰으로 제휴 판매 추적하기](../../10-마케팅/Managing-Affiliates/how-to-track-affiliate-sales-using-coupons.md)
+* [폼·설문·캘린더 제휴 판매 수수료(Pay Per Sale) 설정](../../10-마케팅/affiliate-pay-per-sale-for-forms-surveys-calendars.md)
+* [제휴 지급 자주 묻는 질문](../../10-마케팅/Affiliate-Payouts/faqs-for-affiliate-payouts.md)
+* [제휴 캠페인 자주 묻는 질문](../../10-마케팅/Affiliate-Campaigns/faqs-for-affiliate-campaigns.md)
+* [제휴 파트너 FAQ: 추천 링크, 캠페인, 수동 연결, 상태 관리](../../10-마케팅/Managing-Affiliates/faqs-for-affiliates.md)

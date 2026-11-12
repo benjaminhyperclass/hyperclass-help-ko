@@ -100,4 +100,3 @@
 - [새 코스 편집기로 멤버십 코스 편집하기](../../01-시작하기/커머스/edit-membership-courses-with-the-new-course-editor.md)
 - [시작하기 - 코스 시작하기](../../01-시작하기/커머스/getting-started-launch-a-course.md)
 - [Kajabi 가져오기 도구: 코스를 쉽게 옮기기](kajabi-importer-easily-move-courses-to-the-platform.md)
-- [Skool에서 하이퍼클래스로 옮기기 가이드](../../20-고객지원/Software-Migration-Guides/skool-to-hyperclass-migration-guide.md)

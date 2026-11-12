@@ -86,7 +86,7 @@ SMS를 보내기 전에 아래 사항을 확인하세요.
 - 수신을 거부했거나 SMS 수신거부로 설정된 연락처에는 일부러 메시지를 보내지 마세요.
 - 발송하기 전에 메시지 내용, 개인화 항목, 발송 대상을 다시 확인하세요.
 
-SMS 발송 모범 사례는 [대량 SMS 가이드: 사람들이 실제로 받고 싶어 하는 메시지 보내기](../../24-대학/Prospecting-and-Sales/guide-to-bulk-sms-send-messages-people-actually-want-to-receive.md)에서 더 볼 수 있어요.
+SMS 발송 모범 사례는 대량 SMS 가이드: 사람들이 실제로 받고 싶어 하는 메시지 보내기에서 더 볼 수 있어요.
 
 미국 10DLC 요건은 [A2P 캠페인 등록 가이드](../../15-전화-시스템/A2P-등록/a2p-campaign-registration-step-by-step-guide-and-faqs.md)를 참고하세요.
 

@@ -156,7 +156,5 @@
 
 - [관리자와 사용자 역할 및 권한 범위](../admin-vs-user-roles-and-permission-scopes.md)
 - 사용자 권한, 할당된 데이터, 소유자
-- [에이전시 사용자 역할 및 권한 관리](agency-managing-user-roles-permissions.md)
 - [Voice AI 에이전트 권한](../../13-AI-Employee/Voice-AI/managing-granular-permissions-for-voice-ai-agents.md)
-- [SaaS 권한과 서브 계정 권한 비교](../../16-SaaS-설정/Saas-Mode/saas-user-level-permissions-vs-sub-account-level-permissions.md)
 - [워크플로우 폴더 권한](../../07-워크플로우/빌더/workflow-folder-permission.md)

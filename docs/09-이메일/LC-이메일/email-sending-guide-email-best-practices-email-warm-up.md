@@ -59,7 +59,7 @@
 IP 하나당 월 $59이고, 에이전시에 등록된 결제 카드로 청구돼요. 에이전시는 재청구(rebilling)를 설정해 이 비용을 서브 계정에 넘길 수 있어요. [가격 자세히 보기](../LC-Email-Dedicated-Domain-and-IP/lc-email-complete-guide-to-dedicated-ip.md)
 
 추가 자료
-[Reverse DNS(rDNS) 설정 — "Reverse DNS does not match SMTP Banner" 해결하기](reverse-dns-white-labeling-dedicated-ip.md)
+Reverse DNS(rDNS) 설정 — "Reverse DNS does not match SMTP Banner" 해결하기
 
 ### 모범 사례 3. 이메일 검증 켜기
 

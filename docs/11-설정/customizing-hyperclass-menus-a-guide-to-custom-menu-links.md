@@ -158,7 +158,3 @@ https://test.com/test?fname={{user.first_name}}&lname={{user.last_name}}&locatio
 
 ---
 
-## 관련 문서
-
-- [에이전시 | 사용자 역할 및 권한 관리](사용자-설정/agency-managing-user-roles-permissions.md)
-- [SaaS 플랜에서 사용자 정의 메뉴 링크 사용하기](../16-SaaS-설정/how-to-use-custom-menu-links-in-saas-plans.md)

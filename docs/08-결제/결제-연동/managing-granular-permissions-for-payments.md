@@ -124,7 +124,6 @@
 
 관련 문서
 
-- [사용자 감사 로그(변경 내역 확인용)](../../11-설정/에이전시-설정/audit-logs.md)
 - [퍼널, 웹사이트, 스토어의 감사 로그](../../06-사이트/퍼널-웹사이트/audit-logs-in-funnels-websites-webinars-stores.md)
 
 ---
