@@ -1,4 +1,6 @@
-# 결제 페이지 한글팩 — 배포 순서 (작업지시서 v1 8절 E4) · ⏳ 실행 전
+# 결제 페이지 한글팩 — 배포 순서 (작업지시서 v1 8절 E4) · ✅ 2026-11-13 가동
+
+> **2026-11-13 가동**(벤자민 '결제링크도 한글화 안되니? 해봐'): ① Cloudflare 대시보드 편집기로 `hc-ko-edge` v0.4.0 배포(레포 `src/index.js` sha256 `2db70510…` 그대로, 테스트 39/39) — 앱 도메인 주입 그대로 확인 ② Worker 라우트 `links.hyperclass.ai/*` 추가(**Fail open** — Worker 한도·오류 시 결제 원본으로 통과) ③ DNS `links` → **Proxied**(TTL Auto). 직후 실측: 결제 링크 `__hcPayEdge` v0.4.0·베일 0.5초에 걷힘(applied)·`__hcPay` applied·약관 문장 1·탭 '결제 링크'·남은 영어 = 상호명·'Powered by'·이메일 예시. `/` 는 주입 없이 통과, `/payment-link/*`·`/invoice/*` 주입. 결제 원본은 Cloudflare for SaaS(`brand.ludicrous.cloud` = Cloudflare IP)라 앱 도메인과 같은 O2O 경로.
 
 > 2026-10-31 작성. **배포·DNS 전환은 아직 하지 않았다**(벤자민 지시: 준비되면 보고만). 상태 정본은 `docs/STATE.md`.
 

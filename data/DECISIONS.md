@@ -367,3 +367,11 @@ superagentsApp(Managed Agents 빌더·목록·채팅 레이어)의 제품명 표
 - 파일 위치는 그대로(번역 파이프라인·영상 연결표·문서 간 링크 영향 없음). 구성은 `data/manual/toc.json` + `scripts/manual/gen_summary.py`(v3).
 - 주소가 바뀐 3,131쪽은 옛 주소 → 파일 리다이렉트(총 4,167). 숨긴 문서의 옛 주소는 첫 화면으로.
 - 실측(2026-11-12): 같은 대상(README.md)으로 가는 리다이렉트가 약 830개를 넘으면 그 뒤 항목은 동작하지 않았다(404). 숨긴 문서 옛 주소는 제목 키워드로 관련 묶음 페이지에 나눠 보내 해결. **한 대상에 리다이렉트를 몰지 말 것.**
+
+## [결정] 결제 페이지 한글팩 가동 — 2026-11-13
+- 벤자민: "결제링크도 한글화 안되니? 해봐" — 10-31 부터 '준비 완료·미배포'였던 트랙 E 를 가동.
+- 사전 확인: 실제 결제 링크에 포인터·로더(jsDelivr @stable, SRI)를 손으로 넣어 applied·약관 문장·탭 제목 한국어 확인(현행 결제 앱 버전에서도 동작). `brand.ludicrous.cloud` 가 Cloudflare IP(Cloudflare for SaaS) — 앱 도메인과 같은 O2O 경로라 Proxied 전환 가능하다고 판단.
+- 실행: ① `hc-ko-edge` v0.4.0 대시보드 배포(활성 b60d5e58 = v0.3.0 에서 교체, 앱 도메인 주입 재확인) ② 라우트 `links.hyperclass.ai/*` **Fail open**(결제는 Worker 한도·오류 때 원본으로 통과해야 한다) ③ DNS `links` Proxied.
+- 실측(전환 직후): 결제 링크 주입·applied·베일 0.5초, `/` 통과, `/payment-link/*`·`/invoice/*` 주입. 입력·결제는 하지 않았다.
+- 남은 일: 기존 `app.hyperclass.ai/*` 라우트의 Failure mode 확인(기본값 Fail closed 면 무료 한도 초과 시 앱이 막힌다 — Fail open 권장). 상품 가격 이름 'Monthly'(상품 데이터)는 상품 설정에서 '월간'으로.
+
