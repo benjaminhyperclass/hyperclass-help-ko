@@ -37,5 +37,17 @@
  "askAi.sidebar.launchpad": "Launchpad",
  "askAi.welcome.brandVoices.honestTooth": "Honest Tooth",
  "chat.intentAgent": "🤖 {agent}",
+ "common.monthNamesShort.apr": "Apr",
+ "common.monthNamesShort.aug": "Aug",
+ "common.monthNamesShort.dec": "Dec",
+ "common.monthNamesShort.feb": "Feb",
+ "common.monthNamesShort.jan": "Jan",
+ "common.monthNamesShort.jul": "Jul",
+ "common.monthNamesShort.jun": "Jun",
+ "common.monthNamesShort.mar": "Mar",
+ "common.monthNamesShort.may": "May",
+ "common.monthNamesShort.nov": "Nov",
+ "common.monthNamesShort.oct": "Oct",
+ "common.monthNamesShort.sep": "Sep",
  "welcome.copilotAlt": "Copilot"
 }

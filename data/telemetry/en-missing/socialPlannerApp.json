@@ -87,6 +87,7 @@
  "platformErrors.community.memberUnauthorizedUnverified": "We could not confirm the selected community member's access to this group. Verify the member still belongs to the group and try again.",
  "platformErrors.facebook.connectionUnreachable": "We couldn't reach your Facebook connection. Please try again in a few minutes or contact support for assistance.",
  "platformErrors.facebook.temporaryPublishIssue": "Facebook ran into a temporary issue while publishing your post. Try again in a few minutes. If it still doesn't work, reconnect your Facebook account and try again.",
+ "platformErrors.google.locationNotFound": "Google Business Profile location not found. It may have been deleted or your access removed. Restore it on Google, or re-connect your account.",
  "platformErrors.instagram.connectionUnreachable": "We couldn't reach your Instagram connection. Please try again in a few minutes or contact support for assistance.",
  "platformErrors.linkedin.unverifiedShareLimit": "LinkedIn daily posting limit reached for unverified members. Verify your LinkedIn account or try again later.",
  "platformErrors.tiktok.spamRisk": "TikTok flagged this post as potential spam. Make sure your content is original, avoid posting repetitive or duplicate content, and ensure it follows TikTok’s Community Guidelines before trying again.",
