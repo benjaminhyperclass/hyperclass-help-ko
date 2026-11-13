@@ -1,4 +1,5 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.22
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.23
+ * v4.21.23: IFR_TEXT 제외 범위 — 설정 탭 안 제출 메시지 미리보기·편집기(.preview-container·.message-content·#richTextEditor)는 사용자 문장이라 바꾸지 않는다.
  * v4.21.22: IFR_TEXT 범위에 빌더 설정 탭(.settings-container) — 같은 모듈 상수인 설정 설명 문장 4개(PDF 자동 생성·연락처 기억·대화 스레드·시간대).
  * v4.21.21: 중계 iframe 앱의 '모듈 상수' 라벨 — 폼·설문·퀴즈 빌더 요소 팔레트(Personal Info·Full Name…)는 앱이 모듈을 읽을 때
  *          t() 로 한 번 만든 상수라 사전 병합 뒤에도 영어로 남는다(로케일을 바꿔도 안 바뀜 실측). 병합 직전 같은 키의 영어 값을 떠 두고
@@ -250,7 +251,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.21.22',
+    version: '4.21.23',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -544,6 +545,7 @@
   // 지문별로 '그 상수가 그려지는 범위'를 적어 두면, 병합 직전 영어 값→한국어 표를 떠서 그 범위 텍스트 노드만 바꾼다.
   // 범위는 앱 크롬(요소 팔레트)만 — 캔버스(폼 미리보기)·폼 이름·제출 내역 같은 사용자 내용은 넣지 않는다.
   var IFR_TEXT = { 'builderValidation|common|fields|form|integrate': '#standard-container,.settings-container' };   // 폼·설문·퀴즈 빌더 요소 팔레트·설정 탭
+  var IFR_TEXT_SKIP = '.preview-container,.message-content,#richTextEditor,.ProseMirror';   // 범위 안이라도 사용자 문장(제출 메시지 미리보기·편집기)
   function ifrTextPrep(d, g, ko, sel) {
     try {
       var m = Object.create(null), n = 0, bad = Object.create(null);
@@ -942,7 +944,7 @@
     var od = n.ownerDocument;
     if (od !== document && od && od.__hcIfrTx) {                            // v4.21.21 중계 iframe 모듈 상수 라벨(범위 안만)
       var ix = od.__hcIfrTx, iv = ix.m[t], pe = n.parentElement;
-      if (iv !== undefined && pe && pe.closest && pe.closest(ix.sel) && !skipNode(n)) { n.nodeValue = repl(s, t, iv); stats.ifrTextHits++; return; }
+      if (iv !== undefined && pe && pe.closest && pe.closest(ix.sel) && !pe.closest(IFR_TEXT_SKIP) && !skipNode(n)) { n.nodeValue = repl(s, t, iv); stats.ifrTextHits++; return; }
     }
     if (kdOn() && kdPanel(n, t)) return;                                    // v4.21.8 날짜 선택 패널(사전보다 먼저 — 'Nov' 는 _textScoped 에도 있다)
     var v = T ? T[t] : undefined, scoped = false, dated = false;
