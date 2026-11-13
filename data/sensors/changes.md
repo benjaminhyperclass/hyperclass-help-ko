@@ -314,3 +314,25 @@
 - `aiGrowthApp` 951 → 960
 - `loyaltyApp` 23 → 28
 
+## 2026-11-13 19:53 UTC — main 2218 → 2223 · manifest 2218.7917 → 2223.7935
+- `agentBuilderApp` 884 → 959
+- `agentStudioApp` 956 → 962
+- `aiGrowthApp` 960 → 963
+- `blogsApp` 104 → 106
+- `clientPortalBuilder` 2271 → 2295
+- `contactsApp` 3039 → 3064
+- `contactsHighriseApp` 3056 → 3059
+- `conversationsV2App` 3060 → 3066
+- `copilotApp` 933 → 964
+- `customObjectsApp` 3052 → 3061
+- `emailBuilderMfaApp` 420 → 421
+- `locationBillingApp` 2265 → 2294
+- `locationsApp` 2282 → 2294
+- `membershipApp` 2286 → 2298
+- `opportunitiesApp` 3057 → 3059
+- `phoneIntegrationApp` 2277 → 2296
+- `powerDialerApp` 2284 → 2297
+- `restaurantsApp` 3063 → 3065
+- `saasApp` 2224 → 2294
+- `superagentsApp` 956 → 962
+
