@@ -76,7 +76,7 @@ async function run(name, { loc, health = true, off = false, delay = 300 }) {
   chk(/워크플로우 목록/.test(A.inner) && /워크플로우 만들기/.test(A.inner), 'A iframe translated');
   chk(A.late === '폴더 만들기', 'A late node translated by mo');
   chk(A.ifr && A.ifr.on && A.ifr.ok === true && A.ifr.frames === 1 && A.ifr.rewrites >= 2, 'A status.ifr');
-  chk(A.version === '4.21.19', 'A version');
+  chk(A.version === '4.21.20', 'A version');
   chk(A.merged && A.merged.indexOf('en_US') >= 0 && A.merged.indexOf('en') >= 0 && A.koCat === true, 'A iframe Vue catalog merged (⑩)');
   // v4.21.18: 전 계정 — 다른 계정도 캐너리와 똑같이 중계·번역된다
   const B = await run('B 다른 계정(v4.21.18 전 계정)', { loc: OTHER });

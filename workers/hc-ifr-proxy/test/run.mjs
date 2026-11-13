@@ -2,12 +2,12 @@
 import worker from '../src/index.js';
 let ok = 0, bad = 0; const chk = (c, m) => { if (c) ok++; else { bad++; console.log('  ✗ ' + m); } };
 const calls = [];
-const have = { wf: new Set(['/assets/wf-a.js', '/v2/x', '/assets/index-V8vU7Pxn.js', '/assets/index.976028e2.js', '/assets/automation-workflows.js']), crm: new Set(['/assets/crm-b.css']), vibe: new Set(['/assets/vibe-c.js']) };
+const have = { wf: new Set(['/assets/wf-a.js', '/v2/x', '/assets/index-V8vU7Pxn.js', '/assets/index.976028e2.js', '/assets/automation-workflows.js']), crm: new Set(['/assets/crm-b.css']), vibe: new Set(['/assets/vibe-c.js']), fsb: new Set(['/assets/index-926c79d3.js', '/form-builder-v2/F1']) };
 globalThis.fetch = async (input, init) => {
   const u = new URL(typeof input === 'string' ? input : input.url);
   calls.push(u.host + u.pathname);
   if (u.host === 'app.hyperclass.ai') return new Response('origin', { status: 200, headers: { 'x-origin': '1' } });
-  const k = u.host.startsWith('client-app-automation-workflows') ? 'wf' : u.host.startsWith('client-app-crm-settings') ? 'crm' : u.host.startsWith('leadgen-vibe-ai-builder') ? 'vibe' : null;
+  const k = u.host.startsWith('client-app-automation-workflows') ? 'wf' : u.host.startsWith('client-app-crm-settings') ? 'crm' : u.host.startsWith('leadgen-vibe-ai-builder') ? 'vibe' : u.host.startsWith('leadgen-apps-form-survey-builder') ? 'fsb' : null;
   if (!k) throw new Error('unexpected host ' + u.host);
   if (u.pathname === '/v2/x') return new Response('<html><head><title>t</title></head><body><script src="/assets/wf-a.js"></script><a href="//cdn.example/x">x</a></body></html>', { status: 200, headers: { 'content-type': 'text/html', 'set-cookie': 'a=1', 'content-security-policy': "default-src 'self'", 'x-frame-options': 'DENY' } });
   if (have[k].has(u.pathname)) return new Response('asset:' + k, { status: 200, headers: { 'content-type': 'text/javascript', 'cache-control': u.pathname.includes('976028e2') ? 'no-store, max-age=0' : 'public, max-age=14400', pragma: 'no-cache' } });
@@ -27,7 +27,7 @@ chk((await r.text()) === 'asset:crm' && calls.length === 1, 'assets: referer crm
 calls.length = 0; r = await worker.fetch(R('/assets/crm-b.css', { referer: 'https://app.hyperclass.ai/assets/some.css' }));
 chk((await r.text()) === 'asset:crm' && calls.length === 2, 'assets: wrong guess → other app');
 calls.length = 0; r = await worker.fetch(R('/assets/main-app.js'));
-chk((await r.text()) === 'origin' && r.headers.get('x-origin') === '1' && calls.length === 4, 'assets: none → origin passthrough');
+chk((await r.text()) === 'origin' && r.headers.get('x-origin') === '1' && calls.length === 5, 'assets: none → origin passthrough');
 calls.length = 0; r = await worker.fetch(R('/assets/vibe-c.js', { referer: 'https://app.hyperclass.ai/__ifr/vibe/v2/location/L/vibe' }));
 chk((await r.text()) === 'asset:vibe' && calls.length === 1, 'assets: referer vibe hit first (v0.4.0)');
 calls.length = 0; r = await worker.fetch(R('/assets/x.js', {}, 'POST'));
@@ -44,5 +44,13 @@ r = await worker.fetch(R('/__ifr/wf/assets/missing-AbCd1234.js'));
 chk(r.status === 404 && r.headers.get('cache-control') !== 'public, max-age=31536000, immutable', '404 never immutable');
 r = await worker.fetch(R('/__ifr/wf/v2/x'));
 chk(r.headers.get('cache-control') === 'no-store', 'html stays no-store');
-console.log(`케이스 14 · ok 단언 ${ok} · 실패 ${bad}`);
+calls.length = 0; r = await worker.fetch(R('/assets/index-926c79d3.js', { referer: 'https://app.hyperclass.ai/form-builder-v2/F1' }));
+chk((await r.text()) === 'asset:fsb' && calls.length === 1, 'assets: referer form builder → fsb first (v0.5.0)');
+calls.length = 0; r = await worker.fetch(R('/assets/index-926c79d3.js', { referer: 'https://app.hyperclass.ai/survey-builder-v2/S1' }));
+chk((await r.text()) === 'asset:fsb' && calls.length === 1, 'assets: referer survey builder → fsb first');
+r = await worker.fetch(R('/__ifr/fsb/form-builder-v2/F1'));
+chk(r.status === 200 && r.headers.get('x-hc-ifr') === 'fsb', 'fsb relay (v0.5.0)');
+calls.length = 0; r = await worker.fetch(R('/assets/main-app.js'));
+chk((await r.text()) === 'origin' && calls.length === 5, 'assets: none → origin passthrough (4 apps + origin)');
+console.log(`케이스 18 · ok 단언 ${ok} · 실패 ${bad}`);
 process.exit(bad ? 1 : 0);
