@@ -23,7 +23,7 @@
    ───────────────────────────────────────────────────────────────────── */
 (() => {
   const EXPECT = {
-    version: '4.21.23',     // 포인터 loader.stable cdn 74027df (= main 50961d3, 2026-11-13 — 폼·설문·퀴즈 빌더 중계·팔레트)
+    version: '4.21.24',     // 포인터 loader.stable cdn fab667b (= main db91984, 2026-11-14 — 로그인·에이전시에서 들어온 탭도 iframe 중계)
     revPrefix: '22fd8b4',   // 사전 v4.2.77 — cdn 커밋(원본 main f6c702f, 2026-11-13 폼·설문·퀴즈 빌더 1,690)
     textEntries: 9382,      // _text — 배포된 core 건수(pretty 보다 C7 미배포분만큼 적다) (별도로 _textScoped 1,404 — status().scopedEntries)
   };
