@@ -5,11 +5,13 @@
 // v0.2.0(2026-11-07): /assets/* 대체 순서(다른 앱 → 원래 출처). 부모 쪽 주소 바꾸기는 로더 v4.21.14(캐너리)가 한다.
 // v0.3.0(2026-11-07): 해시 이름 정적 파일 브라우저 캐시 1년(Worker 호출 수 절감) — 아래 HASHED.
 // v0.4.0(2026-11-08): AI 스튜디오(leadgen-vibe-ai-builder) 앱 키 vibe 추가.
+// v0.5.0(2026-11-13): 폼·설문·퀴즈 빌더(leadgen-apps-form-survey-builder) 앱 키 fsb 추가(벤자민 '응 너가생각한대로' — 폼 빌더 먼저).
 //       부모 쪽 주소 바꾸기는 벤자민 브라우저 수동 주입(PoC) → 통과 시 한글팩 로더 캐너리로 편입.
 const APPS = {
   wf: 'https://client-app-automation-workflows.leadconnectorhq.com',
   crm: 'https://client-app-crm-settings.leadconnectorhq.com',
   vibe: 'https://leadgen-vibe-ai-builder.leadconnectorhq.com', // v0.4.0(2026-11-08): AI 스튜디오(벤자민 제보)
+  fsb: 'https://leadgen-apps-form-survey-builder.leadconnectorhq.com', // v0.5.0(2026-11-13): 폼·설문·퀴즈 빌더
 };
 const OFF = false; // 즉시 끄기: true 로 바꾸고 배포하면 모든 요청 404
 
@@ -32,6 +34,8 @@ function pickAppForAssets(req) {
   const ref = req.headers.get('referer') || '';
   if (/\/settings\//.test(ref)) return 'crm';
   if (/\/vibe(\/|$|\?)|\/__ifr\/vibe\//.test(ref)) return 'vibe';
+  // 빌더 iframe 은 Worker 부트가 주소에서 /__ifr/fsb 를 지워 /form-builder-v2/<id> 꼴이 된다(설문·퀴즈도 같은 꼴)
+  if (/\/(?:form|survey|quiz)-builder(?:-v2)?\/|\/__ifr\/fsb\//.test(ref)) return 'fsb';
   return 'wf';
 }
 

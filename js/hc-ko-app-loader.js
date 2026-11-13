@@ -1,4 +1,5 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.19
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.20
+ * v4.21.20: 폼·설문·퀴즈 빌더 iframe(leadgen-apps-form-survey-builder) 중계 대상 추가 — Worker hc-ifr-proxy v0.5.0 앱 키 fsb.
  * v4.21.19: 에이전시 화면(로그인한 에이전시 관리자 메뉴 — 대시보드·하위 계정·스냅샷·리셀링·설정 등)을 연다(벤자민 2026-11-10 '진행해줘').
  *          명시 목록 AGENCY(첫 경로 조각, 라우터 getRoutes·사이드바 실측). 사전은 이미 97% 를 덮는다(에이전시 화면 카탈로그 9,885 중 9,562 한국어 실측).
  *          통과·리다이렉트 경로(/logout·/eject·/idp·/login/*·/desktop 등)와 공개 경로는 넣지 않는다. 결정 ⑤(10월, 에이전시 화면 범위 밖)를 대체.
@@ -245,7 +246,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.21.19',
+    version: '4.21.20',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -993,7 +994,8 @@
   // 안전: Worker 라우트는 fail-open 이라 Worker 가 없으면 /__ifr/… 가 메인 앱 원본으로 간다 → 헬스 헤더 확인 전·실패 시엔 원래 주소.
   // 끄기: localStorage.hcKoIfr='0'(이 브라우저) · Worker 라우트 삭제(전체 — 헬스 실패로 원래 주소) · 포인터 loader.next 되돌리기.
   var IFR_HOSTS = { 'client-app-automation-workflows.leadconnectorhq.com': 'wf', 'client-app-crm-settings.leadconnectorhq.com': 'crm',
-    'leadgen-vibe-ai-builder.leadconnectorhq.com': 'vibe' };   // v4.21.17: AI 스튜디오(Worker v0.4.0)
+    'leadgen-vibe-ai-builder.leadconnectorhq.com': 'vibe',     // v4.21.17: AI 스튜디오(Worker v0.4.0)
+    'leadgen-apps-form-survey-builder.leadconnectorhq.com': 'fsb' };   // v4.21.20: 폼·설문·퀴즈 빌더(Worker v0.5.0)
   // v4.21.18: 전 계정(벤자민 승인 2026-11-08). null = 로더가 허용된 모든 로케이션. 끄기 = Worker OFF(헬스 실패 → 원래 주소) 또는 이 값을 캐너리 목록으로.
   var IFR_LOCS = null;
   var ifr = { on: false, ok: null, rewrites: 0, frames: 0, fail: null };
