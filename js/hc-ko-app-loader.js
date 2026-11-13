@@ -1,4 +1,7 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.20
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.21
+ * v4.21.21: 중계 iframe 앱의 '모듈 상수' 라벨 — 폼·설문·퀴즈 빌더 요소 팔레트(Personal Info·Full Name…)는 앱이 모듈을 읽을 때
+ *          t() 로 한 번 만든 상수라 사전 병합 뒤에도 영어로 남는다(로케일을 바꿔도 안 바뀜 실측). 병합 직전 같은 키의 영어 값을 떠 두고
+ *          (영어→한국어), IFR_TEXT 가 정한 범위(팔레트 #standard-container) 안의 텍스트 노드만 바꾼다 — 표시만, 폼 데이터는 그대로.
  * v4.21.20: 폼·설문·퀴즈 빌더 iframe(leadgen-apps-form-survey-builder) 중계 대상 추가 — Worker hc-ifr-proxy v0.5.0 앱 키 fsb.
  * v4.21.19: 에이전시 화면(로그인한 에이전시 관리자 메뉴 — 대시보드·하위 계정·스냅샷·리셀링·설정 등)을 연다(벤자민 2026-11-10 '진행해줘').
  *          명시 목록 AGENCY(첫 경로 조각, 라우터 getRoutes·사이드바 실측). 사전은 이미 97% 를 덮는다(에이전시 화면 카탈로그 9,885 중 9,562 한국어 실측).
@@ -240,13 +243,13 @@
   // i18n 카탈로그에 한국어를 부어 넣거나 provides.t 를 래퍼로 바꾸면
   // 원복 수단이 없다 — 이 상태에서 제외 계정으로 넘어가면 새로고침이 유일한 답이다.
   var dirty = false;
-  var stats = { host: 0, apps: 0, tref: 0, remerge: 0, fuzzy: 0, unmatched: 0, textHits: 0, scopedHits: 0, dateHits: 0, fallback: 0, pointerFail: 0, revFallback: 0 };
+  var stats = { host: 0, apps: 0, tref: 0, remerge: 0, fuzzy: 0, unmatched: 0, textHits: 0, scopedHits: 0, dateHits: 0, ifrTextHits: 0, fallback: 0, pointerFail: 0, revFallback: 0 };
   function log() { if (DEBUG && window.console) console.log.apply(console, ['[hc-ko]'].concat([].slice.call(arguments))); }
 
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.21.20',
+    version: '4.21.21',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -536,6 +539,33 @@
       .then(function (d) { ifrDict = (d && d.apps) || {}; scanApps(); })
       .catch(function (e) { ifrDict = {}; log('ifr 사전 없음', e && e.message); });
   }
+  // v4.21.21: 모듈 상수 라벨(앱이 모듈을 읽을 때 t() 로 한 번 만든 문자열)은 병합 뒤에도 영어다.
+  // 지문별로 '그 상수가 그려지는 범위'를 적어 두면, 병합 직전 영어 값→한국어 표를 떠서 그 범위 텍스트 노드만 바꾼다.
+  // 범위는 앱 크롬(요소 팔레트)만 — 캔버스(폼 미리보기)·폼 이름·제출 내역 같은 사용자 내용은 넣지 않는다.
+  var IFR_TEXT = { 'builderValidation|common|fields|form|integrate': '#standard-container' };   // 폼·설문·퀴즈 빌더 요소 팔레트
+  function ifrTextPrep(d, g, ko, sel) {
+    try {
+      var m = Object.create(null), n = 0, bad = Object.create(null);
+      (function walk(o, pre) {
+        for (var k in o) {
+          var v = o[k], key = pre ? pre + '.' + k : k;
+          if (v && typeof v === 'object') { walk(v, key); continue; }
+          if (typeof v !== 'string' || !v || /[{}@|]/.test(v)) continue;     // 자리표시자·연결·복수형 문장은 제외
+          var en = g.t(key);
+          if (typeof en !== 'string' || en === key || !/[A-Za-z]/.test(en) || en === v) continue;
+          en = en.trim();
+          if (bad[en]) continue;
+          if (m[en] !== undefined && m[en] !== v) { delete m[en]; bad[en] = 1; n--; continue; }   // 같은 영어·다른 한국어 → 쓰지 않는다
+          if (m[en] === undefined) { m[en] = v; n++; }
+        }
+      })(ko, '');
+      if (n > 0) d.__hcIfrTx = { sel: sel, m: m, n: n };
+    } catch (e) { log('ifr text prep 실패', e && e.message); }
+  }
+  function ifrTextPass(d) {
+    var ix = d && d.__hcIfrTx; if (!ix) return;
+    try { var els = d.querySelectorAll(ix.sel); for (var i = 0; i < els.length; i++) pass(els[i]); } catch (e) {}
+  }
   function handleIfrApp(el, app) {
     var n = attempts.get(app) || 0;
     if (n === -1 || n >= MAX_TRY) return;
@@ -543,7 +573,13 @@
     if (!g) { attempts.set(app, n + 1); return; }
     if (ifrDict === null) { loadIfrDict(); return; }   // 사전 도착 전 — 횟수 세지 않는다
     var fp = fingerprint(g);
-    if (ifrDict[fp] && !merged.has(g)) { merged.add(g); mergeInto(g, ifrDict[fp], 'ifr-app'); stats.apps++; attempts.set(app, -1); return; }
+    if (ifrDict[fp] && !merged.has(g)) {
+      var sel = IFR_TEXT[fp], d = el.ownerDocument;
+      if (sel && d && d !== document) ifrTextPrep(d, g, ifrDict[fp], sel);   // 병합 전에 영어 값을 뜬다
+      merged.add(g); mergeInto(g, ifrDict[fp], 'ifr-app'); stats.apps++; attempts.set(app, -1);
+      if (sel && d && d !== document) ifrTextPass(d);
+      return;
+    }
     if (!appsDict) return;
     if (applyApp(el, g)) { attempts.set(app, -1); return; }
     attempts.set(app, n + 1);
@@ -902,6 +938,11 @@
   function trText(n) {
     var s = n.nodeValue; if (!s || (!T && !TS)) return;
     var t = s.trim(); if (!t) return;
+    var od = n.ownerDocument;
+    if (od !== document && od && od.__hcIfrTx) {                            // v4.21.21 중계 iframe 모듈 상수 라벨(범위 안만)
+      var ix = od.__hcIfrTx, iv = ix.m[t], pe = n.parentElement;
+      if (iv !== undefined && pe && pe.closest && pe.closest(ix.sel) && !skipNode(n)) { n.nodeValue = repl(s, t, iv); stats.ifrTextHits++; return; }
+    }
     if (kdOn() && kdPanel(n, t)) return;                                    // v4.21.8 날짜 선택 패널(사전보다 먼저 — 'Nov' 는 _textScoped 에도 있다)
     var v = T ? T[t] : undefined, scoped = false, dated = false;
     if (v === undefined && PILL_WORDS.hasOwnProperty(t) && inPill(n.parentElement)) { v = PILL_WORDS[t]; scoped = true; }   // v4.21.12
