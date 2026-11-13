@@ -373,5 +373,11 @@ superagentsApp(Managed Agents 빌더·목록·채팅 레이어)의 제품명 표
 - 사전 확인: 실제 결제 링크에 포인터·로더(jsDelivr @stable, SRI)를 손으로 넣어 applied·약관 문장·탭 제목 한국어 확인(현행 결제 앱 버전에서도 동작). `brand.ludicrous.cloud` 가 Cloudflare IP(Cloudflare for SaaS) — 앱 도메인과 같은 O2O 경로라 Proxied 전환 가능하다고 판단.
 - 실행: ① `hc-ko-edge` v0.4.0 대시보드 배포(활성 b60d5e58 = v0.3.0 에서 교체, 앱 도메인 주입 재확인) ② 라우트 `links.hyperclass.ai/*` **Fail open**(결제는 Worker 한도·오류 때 원본으로 통과해야 한다) ③ DNS `links` Proxied.
 - 실측(전환 직후): 결제 링크 주입·applied·베일 0.5초, `/` 통과, `/payment-link/*`·`/invoice/*` 주입. 입력·결제는 하지 않았다.
-- 남은 일: 기존 `app.hyperclass.ai/*` 라우트의 Failure mode 확인(기본값 Fail closed 면 무료 한도 초과 시 앱이 막힌다 — Fail open 권장). 상품 가격 이름 'Monthly'(상품 데이터)는 상품 설정에서 '월간'으로.
+- `app.hyperclass.ai/*` 라우트 Failure mode: Fail closed(기본값) → **Fail open**(벤자민 승인 2026-11-13 '1번 오케이') — Worker 한도 초과·오류 때 앱은 원본으로 열리고 한국어 주입만 빠진다. 상품 가격 이름 'Monthly'(상품 데이터)는 상품 설정에서 '월간'으로.
+
+## [기록] 잠재고객 발굴(Prospecting) — 2026-11-13
+- 에이전시 `/prospecting` 과 **서브 계정 마케팅 → 잠재고객 발굴 탭**(`/v2/location/:id/marketing/prospecting`) 모두 같은 외부 앱 iframe `prod.analyzemy.business/#/prospecting`(name `location-prospect`) — 고객 화면이다(벤자민 지적).
+- 앱: Vue3 + vue-i18n, 문자열 7,446(단어 30,777, ns `prospecting` 하나). 로케일은 번들 내장(en-US·es·da 등, 한국어 없음 — 없으면 en-US), 부모 앱에 Postmate 로 `get-locale` 을 묻는다. 인증·사용자 정보도 Postmate 핸드셰이크 모델로 받는다.
+- 중계 난점: Postmate 는 부모가 원래 URL 의 출처(prod.analyzemy.business)를 targetOrigin·origin 검사에 쓴다 → iframe 을 app.hyperclass.ai 로 중계하면 핸드셰이크가 막힌다(로더가 출처 검사를 맞춰 줘야 함). 정적 파일이 `/160/assets/…`(배포 번호 경로)라 Worker 경로 처리도 추가 필요. 결정 대기(벤자민).
+
 
