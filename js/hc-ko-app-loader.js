@@ -1,4 +1,7 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.23
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.24
+ * v4.21.24: iframe 중계 훅을 로드 시점 경로와 무관하게 건다. 종전엔 로드 때 로케이션이 없으면(로그인·에이전시 화면) 훅을
+ *          아예 걸지 않아, 새로고침 없이 서브 계정으로 들어간 탭에서는 자동화·폼 빌더·AI 스튜디오가 원본(영어)으로 떴다
+ *          (벤자민 2026-11-14 자동화 화면 캡처 → 에이전시 대시보드에서 진입 재현). 중계 여부는 이제 iframe 주소를 바꿀 때마다 ifrWanted() 로 판정.
  * v4.21.23: IFR_TEXT 제외 범위 — 설정 탭 안 제출 메시지 미리보기·편집기(.preview-container·.message-content·#richTextEditor)는 사용자 문장이라 바꾸지 않는다.
  * v4.21.22: IFR_TEXT 범위에 빌더 설정 탭(.settings-container) — 같은 모듈 상수인 설정 설명 문장 4개(PDF 자동 생성·연락처 기억·대화 스레드·시간대).
  * v4.21.21: 중계 iframe 앱의 '모듈 상수' 라벨 — 폼·설문·퀴즈 빌더 요소 팔레트(Personal Info·Full Name…)는 앱이 모듈을 읽을 때
@@ -251,7 +254,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.21.23',
+    version: '4.21.24',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -1034,7 +1037,7 @@
   // 엣지 Worker hc-ifr-proxy 가 app.hyperclass.ai/__ifr/{wf|crm}/… 로 그 앱을 중계한다. 여기서 iframe 주소와
   // Postmate 가 iframe 출처를 계산하는 <a href> 를 그 경로로 바꾸면 핸드셰이크가 그대로 맞고(2026-11-06 실측),
   // iframe 이 같은 출처가 되므로 기존 DOM 번역(pass·mo)을 iframe 문서에도 건다.
-  // 범위: IFR_LOCS 로케이션에서 부팅했을 때만 프로토타입을 건드린다 — 다른 고객은 이 로더가 stable 이 돼도 무변화.
+  // 범위: 프로토타입 훅은 로드 때 건다(v4.21.24 — 로그인·에이전시 화면에서 들어온 탭도). 주소를 바꾸는 건 그때그때 ifrWanted()(허용 로케이션·IFR_LOCS)일 때만.
   // 안전: Worker 라우트는 fail-open 이라 Worker 가 없으면 /__ifr/… 가 메인 앱 원본으로 간다 → 헬스 헤더 확인 전·실패 시엔 원래 주소.
   // 끄기: localStorage.hcKoIfr='0'(이 브라우저) · Worker 라우트 삭제(전체 — 헬스 실패로 원래 주소) · 포인터 loader.next 되돌리기.
   var IFR_HOSTS = { 'client-app-automation-workflows.leadconnectorhq.com': 'wf', 'client-app-crm-settings.leadconnectorhq.com': 'crm',
@@ -1088,7 +1091,7 @@
   }
   function ifrInstall() {
     try {
-      if (lsGet('hcKoIfr') === '0' || !ifrWanted()) return;
+      if (lsGet('hcKoIfr') === '0') return;   // v4.21.24: 로드 시점 경로로 거르지 않는다 — ifrRw 가 호출마다 ifrWanted() 를 본다
       var dI = Object.getOwnPropertyDescriptor(HTMLIFrameElement.prototype, 'src');
       var dA = Object.getOwnPropertyDescriptor(HTMLAnchorElement.prototype, 'href');
       if (!dI || !dI.get || !dI.set || !dA || !dA.get || !dA.set) return;
