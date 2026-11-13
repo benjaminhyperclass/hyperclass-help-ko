@@ -310,3 +310,7 @@
 - `ticketingApp` 3031 → 3062
 - `voiceAiApp` 954 → 957
 
+## 2026-11-13 06:58 UTC — main 2218 → 2218 · manifest 2218.7915 → 2218.7917
+- `aiGrowthApp` 951 → 960
+- `loyaltyApp` 23 → 28
+

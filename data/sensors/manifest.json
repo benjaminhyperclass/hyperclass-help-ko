@@ -1,5 +1,5 @@
 {
- "manifestVersion": "2218.7915",
+ "manifestVersion": "2218.7917",
  "mainAppVersion": "2218",
  "federatedApps": {
   "reputationApp": "https://appcdn.leadconnectorhq.com/revex/reputation/2261/remoteEntry.js?nocache=true",
@@ -110,7 +110,7 @@
   "actionsPlatformApp": "https://appcdn.leadconnectorhq.com/ai/actions-platform/896/remoteEntry.js?nocache=true",
   "desktopCustomizerApp": "https://appcdn.leadconnectorhq.com/revex/desktop-customizer/2208/remoteEntry.js?nocache=true",
   "blogsApp": "https://appcdn.leadconnectorhq.com/leadgen/blogs/104/remoteEntry.js?nocache=true",
-  "aiGrowthApp": "https://appcdn.leadconnectorhq.com/ai/ai-growth/951/remoteEntry.js?nocache=true",
+  "aiGrowthApp": "https://appcdn.leadconnectorhq.com/ai/ai-growth/960/remoteEntry.js?nocache=true",
   "visibilityAiApp": "https://appcdn.leadconnectorhq.com/revex/visibility-ai/2266/remoteEntry.js?nocache=true",
   "vibeEditorApp": "https://appcdn.leadconnectorhq.com/leadgen/vibe-editor/413/remoteEntry.js?nocache=true",
   "emailSequenceApp": "https://appcdn.leadconnectorhq.com/leadgen/email-sequence/413/remoteEntry.js?nocache=true",
@@ -132,7 +132,7 @@
   "funnelAiPreviewApp": "https://appcdn.leadconnectorhq.com/leadgen/funnel-ai-preview/6/remoteEntry.js?nocache=true",
   "fieldServicesApp": "https://appcdn.leadconnectorhq.com/automation/field-services/638/remoteEntry.js?nocache=true",
   "ticketingApp": "https://appcdn.leadconnectorhq.com/crm/ticketing/3062/remoteEntry.js?nocache=true",
-  "loyaltyApp": "https://appcdn.leadconnectorhq.com/leadgen/loyalty/23/remoteEntry.js?nocache=true",
+  "loyaltyApp": "https://appcdn.leadconnectorhq.com/leadgen/loyalty/28/remoteEntry.js?nocache=true",
   "emailBuilderMfaApp": "https://appcdn.leadconnectorhq.com/leadgen/email-builder-mfa/420/remoteEntry.js?nocache=true",
   "emailHomeV2App": "https://appcdn.leadconnectorhq.com/leadgen/email-home-v2/420/remoteEntry.js?nocache=true",
   "emailInfraRemoteApp": "https://appcdn.leadconnectorhq.com/email/email-infra-remote/10/remoteEntry.js?nocache=true",
