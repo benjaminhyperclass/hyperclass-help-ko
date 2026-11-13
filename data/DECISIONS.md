@@ -380,4 +380,13 @@ superagentsApp(Managed Agents 빌더·목록·채팅 레이어)의 제품명 표
 - 앱: Vue3 + vue-i18n, 문자열 7,446(단어 30,777, ns `prospecting` 하나). 로케일은 번들 내장(en-US·es·da 등, 한국어 없음 — 없으면 en-US), 부모 앱에 Postmate 로 `get-locale` 을 묻는다. 인증·사용자 정보도 Postmate 핸드셰이크 모델로 받는다.
 - 중계 난점: Postmate 는 부모가 원래 URL 의 출처(prod.analyzemy.business)를 targetOrigin·origin 검사에 쓴다 → iframe 을 app.hyperclass.ai 로 중계하면 핸드셰이크가 막힌다(로더가 출처 검사를 맞춰 줘야 함). 정적 파일이 `/160/assets/…`(배포 번호 경로)라 Worker 경로 처리도 추가 필요. 결정 대기(벤자민).
 
+## [결정] 폼·설문·퀴즈 빌더 한국어 — 2026-11-13
+- 벤자민(2026-11-13): 잠재고객 발굴이 고객 화면이라는 지적 뒤 '응 너가생각한대로' — 준비돼 있던 폼·설문 빌더를 먼저, 잠재고객 발굴은 다음.
+- 구조: 빌더는 `leadgen-apps-form-survey-builder.leadconnectorhq.com` iframe(name `form-builder-app`, 경로 `/form-builder-v2/<id>`·`/survey-builder-v2/<id>`·`/quiz-builder-v2/<id>`), Vue3 + vue-i18n composition(`#builderApp`, en-US 외 12개 로케일, 한국어 없음), 카탈로그 1,690(지문 `builderValidation|common|fields|form|integrate`). 부모와 Postmate — 기존 `<a href>` 출처 맞춤으로 핸드셰이크 유지(실측: 폼·설문·퀴즈 내용 정상 로드). API 는 메인 앱과 같은 백엔드라 같은 출처에서 쓰기 요청도 메인 앱과 같은 조건.
+- 중계: hc-ifr-proxy **v0.5.0**(앱 키 `fsb`, 대시보드 배포 버전 7d02b288, 단위 시험 19/19) + 로더 **v4.21.20**(IFR_HOSTS). 기존 wf·crm·vibe 응답 그대로 확인.
+- 번역: 저장해 둔 카탈로그(11-07 텔레메트리 업로드)와 라이브 카탈로그가 키 1,690 동일 → 그대로 사용. 기존 사전 같은 원문 651건은 `suggest` 로 넘겨 번역자가 문맥 확인. 번역 4 + 독립 검수 2 → 사전 v4.2.77.
+- 모듈 상수 라벨: 요소 팔레트(Personal Info·Full Name…)와 설정 설명 문장은 번들이 모듈을 읽을 때 `t()` 로 한 번 만든 상수라 병합 뒤에도 영어(로케일 es 전환에도 불변 실측). 상수 객체를 바꾸면 기존 폼 요소와 상수 라벨을 비교하는 앱 로직이 어긋나므로 **데이터는 그대로, 표시만** — 로더 v4.21.21~23 `IFR_TEXT`: 병합 직전 `g.t(key)` 로 영어 값을 떠 영어→한국어 표(1,386, 같은 영어·다른 한국어는 제외), 지문별 범위(팔레트 `#standard-container`·설정 `.settings-container`) 안 텍스트 노드만, 제출 메시지 미리보기·편집기 제외.
+- 결과(r6JD next 실측): 폼 편집 66/70(남은 것 폼 이름·필드 라벨 'Email'·HTML·URL) · 설문 97/110(슬라이드 버튼 NEXT/PREV/SUBMIT = 설문 데이터) · 퀴즈 288/315(버튼 Next/Submit = 데이터) · 연동·알림 전부 · 설정 56/68(글꼴·단위·Paragraph·Margin·페이스북 표준 이벤트 이름). 호스트 화면 회귀 없음.
+- 한계: 팔레트에서 끌어온 새 요소의 기본 라벨은 앱 데이터라 영어('Full Name')로 들어간다(고객이 라벨을 고쳐 쓴다). 팔레트 검색은 영어 이름으로 찾는다. 설정 탭 시간대 설명은 원본 앱이 폼에서도 설문 문장을 보여 줘 '설문'으로 나온다(원문 그대로).
+- 배포: 포인터 loader.stable = next = cdn `74027df`(v4.21.23) — 전 고객. 롤백 = stable 을 `0f27a12`(v4.21.19).
 
