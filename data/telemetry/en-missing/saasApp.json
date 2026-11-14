@@ -784,6 +784,8 @@
  "onboarding.paymentProviderList.providers.authorize.name": "Authorize.net",
  "onboarding.paymentProviderList.providers.nmi.description": "With your business account, you get access to diverse tools to help run your business and help it grow.",
  "onboarding.paymentProviderList.providers.nmi.name": "NMI",
+ "onboarding.paymentProviderList.providers.paypal.description": "Accept credit and debit card payments with PayPal and get paid quickly and securely by customers around the world.",
+ "onboarding.paymentProviderList.providers.paypal.name": "PayPal",
  "onboarding.paymentProviderList.providers.square.description": "From small business to large enterprises, Square provides all the tools you need to start, run, and grow your business.",
  "onboarding.paymentProviderList.providers.square.name": "Square",
  "onboarding.paymentProviderList.providers.stripe.description": "Millions of businesses of all sizes—from startups to large enterprises—use Stripe's software and APIs to accept payments, send payouts, and manage their businesses online.",
