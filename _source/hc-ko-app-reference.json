@@ -523229,7 +523229,7 @@
  },
  "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.enrollment_history.card_contact_lookup_prompt": {
   "en": "Check if a specific contact completed this workflow",
-  "ko": "특정 연락처가 이 워크플로우를 마쳤는지 확인해 줘"
+  "ko": "특정 연락처가 이 워크플로우를 마쳤는지 확인해 주세요"
  },
  "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.enrollment_history.card_enrollment_count_description": {
   "en": "How many contacts enrolled this week",
@@ -523237,7 +523237,7 @@
  },
  "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.enrollment_history.card_enrollment_count_prompt": {
   "en": "How many contacts enrolled this week?",
-  "ko": "이번 주에 등록된 연락처는 몇 명이야?"
+  "ko": "이번 주에 등록된 연락처는 몇 명인가요?"
  },
  "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.enrollment_history.card_step_breakdown_description": {
   "en": "View completion rates by step",
@@ -523245,7 +523245,7 @@
  },
  "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.enrollment_history.card_step_breakdown_prompt": {
   "en": "Show the completion rates by step",
-  "ko": "단계별 완료율을 보여 줘"
+  "ko": "단계별 완료율을 보여 주세요"
  },
  "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.enrollment_history.card_waiting_contacts_description": {
   "en": "Who's waiting on a step right now",
@@ -523253,15 +523253,15 @@
  },
  "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.enrollment_history.card_waiting_contacts_prompt": {
   "en": "Who's waiting on a step right now?",
-  "ko": "지금 단계에서 대기 중인 연락처는 누구야?"
+  "ko": "지금 단계에서 대기 중인 연락처는 누구인가요?"
  },
  "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.enrollment_history.prompt_1": {
   "en": "Who's waiting on a step?",
-  "ko": "단계에서 대기 중인 연락처는?"
+  "ko": "단계에서 대기 중인 연락처는 누구인가요?"
  },
  "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.enrollment_history.prompt_2": {
   "en": "How many enrolled this week?",
-  "ko": "이번 주에 몇 명 등록됐어?"
+  "ko": "이번 주에 몇 명이 등록됐나요?"
  },
  "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.enrollment_history.zero_state_placeholder": {
   "en": "Ask about enrollment history...",
@@ -523273,7 +523273,7 @@
  },
  "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.execution_logs.card_error_hotspots_prompt": {
   "en": "Which step has the most errors?",
-  "ko": "오류가 가장 많은 단계는 어디야?"
+  "ko": "오류가 가장 많은 단계는 어디인가요?"
  },
  "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.execution_logs.card_last_failure_description": {
   "en": "Walk through the most recent failure",
@@ -523281,7 +523281,7 @@
  },
  "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.execution_logs.card_last_failure_prompt": {
   "en": "Walk me through the most recent failure",
-  "ko": "가장 최근 실패를 차근차근 설명해 줘"
+  "ko": "가장 최근 실패를 차근차근 설명해 주세요"
  },
  "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.execution_logs.card_step_errors_description": {
   "en": "Why did a specific step fail",
@@ -523289,15 +523289,15 @@
  },
  "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.execution_logs.card_step_errors_prompt": {
   "en": "Why did a specific step fail?",
-  "ko": "특정 단계가 왜 실패했어?"
+  "ko": "특정 단계가 왜 실패했나요?"
  },
  "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.execution_logs.prompt_1": {
   "en": "Walk me through the last failure",
-  "ko": "마지막 실패를 설명해 줘"
+  "ko": "마지막 실패를 설명해 주세요"
  },
  "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.execution_logs.prompt_2": {
   "en": "Which step has the most errors?",
-  "ko": "오류가 가장 많은 단계는?"
+  "ko": "오류가 가장 많은 단계는 어디인가요?"
  },
  "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.execution_logs.zero_state_placeholder": {
   "en": "Ask about executions or errors...",
@@ -523309,7 +523309,7 @@
  },
  "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.settings.card_allow_reentry_prompt": {
   "en": "What does \"Allow re-entry\" do and when should I use it?",
-  "ko": "'재진입 허용'은 무슨 기능이고 언제 써야 해?"
+  "ko": "'재진입 허용'은 무슨 기능이고 언제 써야 하나요?"
  },
  "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.settings.card_appointments_description": {
   "en": "How appointment behavior works",
@@ -523317,7 +523317,7 @@
  },
  "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.settings.card_appointments_prompt": {
   "en": "How does appointment behavior work in this workflow?",
-  "ko": "이 워크플로우에서 예약은 어떻게 동작해?"
+  "ko": "이 워크플로우에서 예약은 어떻게 동작하나요?"
  },
  "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.settings.card_stop_on_response_description": {
   "en": "Is it enabled for this workflow?",
@@ -523325,7 +523325,7 @@
  },
  "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.settings.card_stop_on_response_prompt": {
   "en": "Is Stop on Response enabled for this workflow?",
-  "ko": "이 워크플로우에 '응답 시 중지'가 켜져 있어?"
+  "ko": "이 워크플로우에 '응답 시 중지'가 켜져 있나요?"
  },
  "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.settings.card_timezone_description": {
   "en": "What timezone is this workflow using?",
@@ -523333,19 +523333,19 @@
  },
  "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.settings.card_timezone_prompt": {
   "en": "What timezone is this workflow using?",
-  "ko": "이 워크플로우는 어느 시간대를 써?"
+  "ko": "이 워크플로우는 어느 시간대를 쓰나요?"
  },
  "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.settings.prompt_1": {
   "en": "What does \"Allow re-entry\" do?",
-  "ko": "'재진입 허용'은 무슨 기능이야?"
+  "ko": "'재진입 허용'은 무슨 기능인가요?"
  },
  "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.settings.prompt_3": {
   "en": "When should I use Stop on response?",
-  "ko": "'응답 시 중지'는 언제 써야 해?"
+  "ko": "'응답 시 중지'는 언제 써야 하나요?"
  },
  "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.settings.prompt_4": {
   "en": "How do I send messages only during certain hours?",
-  "ko": "정해진 시간에만 메시지를 보내려면 어떻게 해?"
+  "ko": "정해진 시간에만 메시지를 보내려면 어떻게 하나요?"
  },
  "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.settings.zero_state_placeholder": {
   "en": "Ask about this workflow's settings...",
