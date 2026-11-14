@@ -1,5 +1,5 @@
 {
- "manifestVersion": "2223.7935",
+ "manifestVersion": "2223.7937",
  "mainAppVersion": "2223",
  "federatedApps": {
   "reputationApp": "https://appcdn.leadconnectorhq.com/revex/reputation/2261/remoteEntry.js?nocache=true",
@@ -126,8 +126,8 @@
   "layoutBuilderMfaApp": "https://appcdn.leadconnectorhq.com/commerce/layout-builder-mfa/8/remoteEntry.js?nocache=true",
   "internalToolsApp": "https://appcdn.leadconnectorhq.com/revex/internal-tools/2243/remoteEntry.js?nocache=true",
   "calendarMeetingsApp": "https://appcdn.leadconnectorhq.com/automation/calendar-meetings/635/remoteEntry.js?nocache=true",
-  "meetingsApp": "https://appcdn.leadconnectorhq.com/revex/meetings/2212/remoteEntry.js?nocache=true",
-  "implementationExpertsMfaApp": "https://appcdn.leadconnectorhq.com/ai/implementation-experts-mfa/941/remoteEntry.js?nocache=true",
+  "meetingsApp": "https://appcdn.leadconnectorhq.com/revex/meetings/2300/remoteEntry.js?nocache=true",
+  "implementationExpertsMfaApp": "https://appcdn.leadconnectorhq.com/ai/implementation-experts-mfa/965/remoteEntry.js?nocache=true",
   "switchyardApp": "https://appcdn.leadconnectorhq.com/revex/switchyard/23/remoteEntry.js?nocache=true",
   "funnelAiPreviewApp": "https://appcdn.leadconnectorhq.com/leadgen/funnel-ai-preview/6/remoteEntry.js?nocache=true",
   "fieldServicesApp": "https://appcdn.leadconnectorhq.com/automation/field-services/638/remoteEntry.js?nocache=true",
