@@ -522982,5 +522982,377 @@
  "builderValidation|common|fields|form|integrate.textEditor.textAlign": {
   "en": "Text align",
   "ko": "텍스트 정렬"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.allow_multiple_opportunity": {
+  "en": "Allow multiple opportunities",
+  "ko": "여러 기회 허용"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.allow_multiple_opportunity_description": {
+  "en": "Allows a contact with multiple opportunities to enter the workflow as separate executions. For each opportunity, the contact will have a distinct execution in the workflow. Even if 'Allow re-entry' is disabled, multiple opportunities will still enter the workflow.",
+  "ko": "기회가 여러 개인 연락처가 기회마다 별도 실행으로 워크플로우에 들어올 수 있게 합니다. 기회마다 워크플로우에서 각각 실행됩니다. '재진입 허용'이 꺼져 있어도 여러 기회는 워크플로우에 들어옵니다."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.allows_a_object_to_re_enter_once_it_has_left_this_workflow_if_the_object_attempts_to_re_enter_whil": {
+  "en": "Allows a {objectName} to re-enter once it has left this workflow. If the {objectName} attempts to re-enter while it is still enrolled in this workflow, it will get skipped. Also if this workflow has appointment or invoice based triggers it will allow {objectName} to re-enter even if the 'Allow re-entry' setting is disabled.",
+  "ko": "이 워크플로우에서 나간 {objectName}도 다시 들어올 수 있게 합니다. 아직 이 워크플로우에 등록돼 있는 {objectName}의 재진입은 건너뜁니다. 또한 이 워크플로우에 예약·인보이스 기반 트리거가 있으면 '재진입 허용'이 꺼져 있어도 {objectName}의 재진입을 허용합니다."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.ends_workflow_for_a_contact_if_the_contact_responds_to_a_message_that_is_sent_from_this_workflow": {
+  "en": "Ends workflow for a contact if the contact responds to a message that is sent from this workflow.",
+  "ko": "이 워크플로우에서 보낸 메시지에 연락처가 답장하면 그 연락처의 워크플로우를 종료합니다."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.enrollment_history_is_available_upto_last_60_days": {
+  "en": "Enrollment history is available for the last 60 days.",
+  "ko": "등록 기록은 최근 60일 동안의 내역만 볼 수 있습니다."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.from_number_description": {
+  "en": "You can set a default \"From Number\" for SMS by selecting a number from the dropdown.",
+  "ko": "드롭다운에서 번호를 골라 SMS 의 기본 '발신 번호'를 정할 수 있습니다."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.toggle_this_on_if_you_want_the_conversations_that_this_workflow_will_interact_with_to_be_marked_as_r": {
+  "en": "Toggle this on if you want the conversations that this workflow will interact with to be marked as read.",
+  "ko": "이 워크플로우가 주고받는 대화를 읽음으로 표시하려면 켜세요."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.view_history_of_all_objects_entered_this_workflow": {
+  "en": "View a history of all the {objectName} that have entered this workflow",
+  "ko": "이 워크플로우에 들어온 모든 {objectName}의 기록을 봅니다"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.history.export.audience": {
+  "en": "Only visible to agency admins and agency users",
+  "ko": "에이전시 관리자와 에이전시 사용자에게만 표시"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.history.export.button.cooldown_tooltip": {
+  "en": "This workflow was exported in the last {window} minutes. You can export again in {remaining} min.",
+  "ko": "이 워크플로우는 최근 {window}분 안에 내보냈습니다. {remaining}분 뒤에 다시 내보낼 수 있습니다."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.history.export.button.cooldown_tooltip_soon": {
+  "en": "This workflow was exported in the last {window} minutes. You can export again shortly.",
+  "ko": "이 워크플로우는 최근 {window}분 안에 내보냈습니다. 잠시 뒤에 다시 내보낼 수 있습니다."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.history.export.button.in_progress_tooltip": {
+  "en": "An export for this workflow is already in progress. You can start another once it finishes.",
+  "ko": "이 워크플로우를 이미 내보내는 중입니다. 끝나면 다시 시작할 수 있습니다."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.history.export.button.in_progress_tooltip_by": {
+  "en": "Export is in progress by {name}. You can start another once it finishes.",
+  "ko": "{name} 님이 내보내는 중입니다. 끝나면 다시 시작할 수 있습니다."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.history.export.button.support_portal_tooltip": {
+  "en": "Exporting logs is not allowed when logged in from the support portal.",
+  "ko": "지원 포털로 로그인한 상태에서는 기록을 내보낼 수 없습니다."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.history.export.date_range.hint": {
+  "en": "{days} days selected · Export logs up to last {retention} days",
+  "ko": "{days}일 선택됨 · 최근 {retention}일까지의 기록을 내보낼 수 있습니다"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.history.export.errors.in_flight": {
+  "en": "An export for this workflow is already running. Wait for it to finish before starting another.",
+  "ko": "이 워크플로우를 이미 내보내는 중입니다. 끝난 뒤에 다시 시작하세요."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.history.export.no_rows": {
+  "en": "No logs match these filters. Widen the date range or clear a filter to export.",
+  "ko": "이 필터에 맞는 기록이 없습니다. 기간을 넓히거나 필터를 지운 뒤 내보내세요."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.history.export.notifications.failed_message": {
+  "en": "We could not start your export. Please try again.",
+  "ko": "내보내기를 시작하지 못했습니다. 다시 시도해 주세요."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.history.export.notifications.queued_message": {
+  "en": "Your execution logs export is being prepared. We will email the CSV file to {count} recipient(s) shortly.",
+  "ko": "실행 기록 내보내기를 준비하고 있습니다. 곧 받는 사람 {count}명에게 CSV 파일을 이메일로 보내 드립니다."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.history.export.over_cap.message": {
+  "en": "Your filters match more than {max} rows. Exports are capped at {max} rows, so this export will contain the most recent {max}. Narrow the date range or add more filters to get the full set.",
+  "ko": "필터에 맞는 행이 {max}개를 넘습니다. 한 번에 최대 {max}행까지 내보내므로 최근 {max}행만 담깁니다. 전부 받으려면 기간을 좁히거나 필터를 더하세요."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.history.export.over_cap.message_exact": {
+  "en": "Your filters match {rows} rows. Exports are capped at {max} rows, so this export will contain the most recent {max}. Narrow the date range or add more filters to get the full set.",
+  "ko": "필터에 맞는 행이 {rows}개입니다. 한 번에 최대 {max}행까지 내보내므로 최근 {max}행만 담깁니다. 전부 받으려면 기간을 좁히거나 필터를 더하세요."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.history.export.recipients.error_duplicate": {
+  "en": "That recipient has already been added.",
+  "ko": "이미 추가한 받는 사람입니다."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.history.export.recipients.error_limit": {
+  "en": "An export can go to at most {max} recipients. Remove one to add another.",
+  "ko": "받는 사람은 최대 {max}명까지입니다. 더 추가하려면 한 명을 빼세요."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.history.export.recipients.hint": {
+  "en": "Select teammates from the list, or type any email address and pick it to add. Every recipient is emailed a secure download link that expires in {days} days.",
+  "ko": "목록에서 팀원을 고르거나 이메일 주소를 입력해 추가하세요. 받는 사람마다 {days}일 뒤 만료되는 보안 다운로드 링크를 이메일로 보내 드립니다."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.history.export.recipients.placeholder": {
+  "en": "Select teammates or type an email address...",
+  "ko": "팀원을 고르거나 이메일 주소 입력..."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.history.export.row_count": {
+  "en": "{rows} rows will be exported.",
+  "ko": "{rows}행을 내보냅니다."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.history.export.summary.heading": {
+  "en": "Exporting execution logs matching your current filters.",
+  "ko": "지금 필터에 맞는 실행 기록을 내보냅니다."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.history.logs_available_upto_60_days": {
+  "en": "Execution logs are available for the last 60 days.",
+  "ko": "실행 기록은 최근 60일 동안의 내역만 볼 수 있습니다."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.history.noLogs": {
+  "en": "No logs found. Logs are available for the last 30 days.",
+  "ko": "기록이 없습니다. 기록은 최근 30일 동안의 내역만 볼 수 있습니다."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.history.refresh_execution_logs_list": {
+  "en": "Refresh execution logs list",
+  "ko": "실행 기록 목록 새로고침"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.history.showingResultsForContact": {
+  "en": "Showing results only for contact",
+  "ko": "이 연락처의 결과만 표시 중"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.history.table.contact.tooltip": {
+  "en": "View the complete history of actions for this contact within this workflow. If the contact has been added to this workflow more than once, you will see all actions from each time they were added.",
+  "ko": "이 워크플로우에서 이 연락처에 실행된 액션 기록을 모두 봅니다. 이 워크플로우에 여러 번 추가된 연락처라면 추가될 때마다의 액션이 모두 보입니다."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.history.table.executionLog.tooltip": {
+  "en": "View the history of actions for this contact within this workflow. If this contact has been added to this workflow more than once, use the icon to the left of the contact name for the complete history of this contact within this workflow.",
+  "ko": "이 워크플로우에서 이 연락처에 실행된 액션 기록을 봅니다. 이 워크플로우에 여러 번 추가된 연락처라면 연락처 이름 왼쪽 아이콘을 눌러 전체 기록을 보세요."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.history.table.moreDetails.tooltip": {
+  "en": "Inspect the details of the action",
+  "ko": "액션 세부 정보 보기"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.settings.builderSettings.advancedBuilderDescription": {
+  "en": "Best for complex logic, branching paths, and multi-trigger workflows.",
+  "ko": "복잡한 로직, 분기 경로, 트리거가 여러 개인 워크플로우에 알맞습니다."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.settings.builderSettings.defaultBuilderDescription": {
+  "en": "All new workflows will open in the selected builder by default.",
+  "ko": "새 워크플로우는 모두 선택한 빌더로 열립니다."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.settings.builderSettings.defaultBuilderTag": {
+  "en": "Only visible to agency admins and agency users",
+  "ko": "에이전시 관리자와 에이전시 사용자에게만 표시"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.settings.builderSettings.defaultBuilderTitle": {
+  "en": "Default builder for new workflows",
+  "ko": "새 워크플로우의 기본 빌더"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.settings.builderSettings.defaultBuilderUpdatedSuccessfully": {
+  "en": "Default builder updated successfully",
+  "ko": "기본 빌더를 변경했습니다"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.settings.builderSettings.failedToLoadBuilderSettings": {
+  "en": "Failed to load builder settings. Refresh to load the latest data.",
+  "ko": "빌더 설정을 불러오지 못했습니다. 새로고침해 최신 데이터를 불러오세요."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.settings.builderSettings.failedToUpdateDefaultBuilder": {
+  "en": "Failed to update default builder",
+  "ko": "기본 빌더를 변경하지 못했습니다"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.settings.builderSettings.failedToUpdateRoleChange": {
+  "en": "Failed to update role change",
+  "ko": "역할 변경을 저장하지 못했습니다"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.settings.builderSettings.forceAdvancedBuilderLabel": {
+  "en": "Use advanced builder for all workflows (existing and new)",
+  "ko": "모든 워크플로우(기존·신규)에 고급 빌더 사용"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.settings.builderSettings.roleChangeUpdatedSuccessfully": {
+  "en": "Role change updated successfully",
+  "ko": "역할 변경을 저장했습니다"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.settings.builderSettings.standardBuilderDescription": {
+  "en": "Best for simple automations, linear journeys, and quick editing.",
+  "ko": "단순한 자동화, 한 줄로 이어지는 흐름, 빠른 편집에 알맞습니다."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.settings.builderSettings.switchDefaultBuilderModalDescription": {
+  "en": "Setting this as the default will open all new workflows in the {builder} for all users.",
+  "ko": "기본으로 정하면 모든 사용자의 새 워크플로우가 {builder}로 열립니다."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.settings.builderSettings.switchDefaultBuilderModalTitle": {
+  "en": "Switch default view to {builder}?",
+  "ko": "기본 보기를 {builder}로 바꿀까요?"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.settings.builderSettings.whoCanSwitchBetweenBuildersDescription": {
+  "en": "Choose which roles can change a workflow’s view between standard and advanced. Agency users are enabled by default.",
+  "ko": "워크플로우 보기를 표준·고급 사이에서 바꿀 수 있는 역할을 고르세요. 에이전시 사용자는 기본으로 켜져 있습니다."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.settings.builderSettings.whoCanSwitchBetweenBuildersTitle": {
+  "en": "Who can switch between builders",
+  "ko": "빌더를 바꿀 수 있는 사람"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.settings.communication.senderAddress.email.description": {
+  "en": "Gives your emails a default from name and from email address. You can override this by setting from name and from email in the email actions themselves",
+  "ko": "이메일의 기본 발신자 이름과 발신자 이메일 주소를 정합니다. 이메일 액션에서 발신자 이름과 발신자 이메일을 따로 정하면 그 값이 우선합니다"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.settings.communication.timeWindow.any.description": {
+  "en": "Allows messages to be sent from this workflow at any time.",
+  "ko": "이 워크플로우의 메시지를 언제든 보낼 수 있게 합니다."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.settings.communication.timeWindow.specific.description": {
+  "en": "Restricts actions from being sent outside the window you define.",
+  "ko": "정한 시간대 밖에서는 액션이 발송되지 않게 합니다."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.settings.communication.timezone.description": {
+  "en": "Wait steps and time window executions will proceed based on this timezone.",
+  "ko": "대기 단계와 시간대 실행은 이 시간대를 기준으로 진행됩니다."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.settings.contact.allowMultiple.description": {
+  "en": "Allows a single contact to re-enter once it has left this workflow. If the contact attempts to re-enter while it is still enrolled in this workflow, it will get skipped.",
+  "ko": "이 워크플로우에서 나간 연락처가 다시 들어올 수 있게 합니다. 아직 이 워크플로우에 등록된 상태에서 다시 들어오려 하면 건너뜁니다."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.settings.contact.allowMultiple.note": {
+  "en": "Workflows having appointment or invoice based input triggers will accept contacts multiple times regardless of whether “Allow Multiple” is turned on or not",
+  "ko": "예약·인보이스 기반 입력 트리거가 있는 워크플로우는 '다중 허용'이 켜져 있든 아니든 같은 연락처를 여러 번 받습니다"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.settings.contact.stopOnResponse.description": {
+  "en": "Ends workflow for a contact if the contact responds to a message that came from this workflow",
+  "ko": "이 워크플로우에서 보낸 메시지에 연락처가 답장하면 그 연락처의 워크플로우를 종료합니다"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.settings.conversation.autoMarkAsRead.description": {
+  "en": "By default, automated messages don't mark conversations as read. Toggle this on if you want the conversations that this workflow will interact with to be marked as read",
+  "ko": "자동 메시지는 기본적으로 대화를 읽음으로 표시하지 않습니다. 이 워크플로우가 주고받는 대화를 읽음으로 표시하려면 켜세요"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.settings.conversation.autoMarkAsRead.label": {
+  "en": "Auto mark as read",
+  "ko": "자동으로 읽음 표시"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.settings.workflowSequence.startDate.description": {
+  "en": "Setting an Event Start Date & Time enables you to use Wait events that hold contacts for an amount of time relative to the Event Start Date & Time. Perfect for scenarios like reminders leading up to a webinar",
+  "ko": "이벤트 시작 날짜와 시간을 정하면, 그 시점을 기준으로 연락처를 일정 시간 붙잡아 두는 대기 이벤트를 쓸 수 있습니다. 웨비나 전 리마인더 같은 경우에 알맞습니다"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.settings.workflowSequence.startDate.note": {
+  "en": "The date and time selected will be based on the location time zone ({timezone})",
+  "ko": "선택한 날짜와 시간은 계정 시간대({timezone})를 기준으로 합니다"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.settings.workflowSequence.startDate.warning": {
+  "en": "[Deprecated]: please use Event Start Date Action",
+  "ko": "[지원 중단]: 이벤트 시작 날짜 액션을 사용하세요"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.enrollment_history.card_contact_lookup_prompt": {
+  "en": "Check if a specific contact completed this workflow",
+  "ko": "특정 연락처가 이 워크플로우를 마쳤는지 확인해 줘"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.enrollment_history.card_enrollment_count_description": {
+  "en": "How many contacts enrolled this week",
+  "ko": "이번 주에 등록된 연락처 수"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.enrollment_history.card_enrollment_count_prompt": {
+  "en": "How many contacts enrolled this week?",
+  "ko": "이번 주에 등록된 연락처는 몇 명이야?"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.enrollment_history.card_step_breakdown_description": {
+  "en": "View completion rates by step",
+  "ko": "단계별 완료율 보기"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.enrollment_history.card_step_breakdown_prompt": {
+  "en": "Show the completion rates by step",
+  "ko": "단계별 완료율을 보여 줘"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.enrollment_history.card_waiting_contacts_description": {
+  "en": "Who's waiting on a step right now",
+  "ko": "지금 단계에서 대기 중인 연락처"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.enrollment_history.card_waiting_contacts_prompt": {
+  "en": "Who's waiting on a step right now?",
+  "ko": "지금 단계에서 대기 중인 연락처는 누구야?"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.enrollment_history.prompt_1": {
+  "en": "Who's waiting on a step?",
+  "ko": "단계에서 대기 중인 연락처는?"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.enrollment_history.prompt_2": {
+  "en": "How many enrolled this week?",
+  "ko": "이번 주에 몇 명 등록됐어?"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.enrollment_history.zero_state_placeholder": {
+  "en": "Ask about enrollment history...",
+  "ko": "등록 기록에 대해 물어보세요..."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.execution_logs.card_error_hotspots_description": {
+  "en": "Which step has the most errors",
+  "ko": "오류가 가장 많은 단계"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.execution_logs.card_error_hotspots_prompt": {
+  "en": "Which step has the most errors?",
+  "ko": "오류가 가장 많은 단계는 어디야?"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.execution_logs.card_last_failure_description": {
+  "en": "Walk through the most recent failure",
+  "ko": "가장 최근 실패 살펴보기"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.execution_logs.card_last_failure_prompt": {
+  "en": "Walk me through the most recent failure",
+  "ko": "가장 최근 실패를 차근차근 설명해 줘"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.execution_logs.card_step_errors_description": {
+  "en": "Why did a specific step fail",
+  "ko": "특정 단계가 실패한 이유"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.execution_logs.card_step_errors_prompt": {
+  "en": "Why did a specific step fail?",
+  "ko": "특정 단계가 왜 실패했어?"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.execution_logs.prompt_1": {
+  "en": "Walk me through the last failure",
+  "ko": "마지막 실패를 설명해 줘"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.execution_logs.prompt_2": {
+  "en": "Which step has the most errors?",
+  "ko": "오류가 가장 많은 단계는?"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.execution_logs.zero_state_placeholder": {
+  "en": "Ask about executions or errors...",
+  "ko": "실행이나 오류에 대해 물어보세요..."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.settings.card_allow_reentry_description": {
+  "en": "What does it do and when to use it",
+  "ko": "무슨 기능이고 언제 쓰는지"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.settings.card_allow_reentry_prompt": {
+  "en": "What does \"Allow re-entry\" do and when should I use it?",
+  "ko": "'재진입 허용'은 무슨 기능이고 언제 써야 해?"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.settings.card_appointments_description": {
+  "en": "How appointment behavior works",
+  "ko": "예약 관련 동작 방식"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.settings.card_appointments_prompt": {
+  "en": "How does appointment behavior work in this workflow?",
+  "ko": "이 워크플로우에서 예약은 어떻게 동작해?"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.settings.card_stop_on_response_description": {
+  "en": "Is it enabled for this workflow?",
+  "ko": "이 워크플로우에서 켜져 있나요?"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.settings.card_stop_on_response_prompt": {
+  "en": "Is Stop on Response enabled for this workflow?",
+  "ko": "이 워크플로우에 '응답 시 중지'가 켜져 있어?"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.settings.card_timezone_description": {
+  "en": "What timezone is this workflow using?",
+  "ko": "이 워크플로우가 쓰는 시간대"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.settings.card_timezone_prompt": {
+  "en": "What timezone is this workflow using?",
+  "ko": "이 워크플로우는 어느 시간대를 써?"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.settings.prompt_1": {
+  "en": "What does \"Allow re-entry\" do?",
+  "ko": "'재진입 허용'은 무슨 기능이야?"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.settings.prompt_3": {
+  "en": "When should I use Stop on response?",
+  "ko": "'응답 시 중지'는 언제 써야 해?"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.settings.prompt_4": {
+  "en": "How do I send messages only during certain hours?",
+  "ko": "정해진 시간에만 메시지를 보내려면 어떻게 해?"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.tab_ai_assistant.settings.zero_state_placeholder": {
+  "en": "Ask about this workflow's settings...",
+  "ko": "이 워크플로우 설정에 대해 물어보세요..."
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.you_can_set_a_default_from_name_and_from_email_for_emails_you_can_also_override_this_information_wit": {
+  "en": "You can set a default \"From name\" and \"From email\" for emails. You can also override this information within your email actions.",
+  "ko": "이메일의 기본 '발신자 이름'과 '발신자 이메일'을 정할 수 있습니다. 이메일 액션에서 따로 정하면 그 값이 우선합니다."
  }
 }
