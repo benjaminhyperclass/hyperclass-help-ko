@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "version": "4.2.77",
-  "built": "2026-11-13",
-  "source": "embership-analytics 별도 앱, 지문 analytics, 로케일 en_US) 318 전부 영어였음 — 번역 1갈래(기존 같은 원문 108 제안 반영) + 독립 검수 교정 1 · 거래 상세 'Two/One Step Order Form' _text · 거래 보기·권한 범위 용어(트랜잭션→거래 내역, 제품→상품) 정정 9 + 코스 분석 회원 표 머리글 _text 7(별도 앱 카탈로그보다 표 열 정의가 먼저 만들어져 영어로 굳는 경합 — 라이브 실측) + _textScoped 문맥 검수(독립 검수 1,407 전수) 정정 64: 한 화면 문맥이 묻은 값(Estimate 예상 수익→견적서·Items 상품→항목·Bold 대담한→굵게·Closed 휴무→종료됨·Stable 마구간→안정·Library 도서관→라이브러리·Large 길게→크게 등)·참조본 다수 표기로 통일(Create 만들기·Draft 임시 저장·Custom 사용자 지정·Retry 다시 시도·Inbox 인박스 등)·대소문자 짝 맞춤·띄어쓰기·브랜드 항목 삭제(Instagram·Tiktok 은 원문 그대로) · estimate 견적서 2 + 설정 앱(crm settings — 중계 iframe, 비즈니스 프로필 등, 메시지가 컴파일된 함수라 함수 소스에서 원문 복원) 카탈로그: 같은 원문 이관 5,009(독립 검수 2갈래 교정 100) + 신규 600(번역 1갈래 + 검수 교정 6) + 복수형 34(한국어는 단일형). 적용은 로더 v4.21.15 ⑩ 뒤 캐너리 · 중계 iframe 앱 카탈로그 2개(워크플로우 5,309·설정 5,569)는 편집 정본의 ifrApps 로 옮겨 런타임 apps 에서 뺐다 — 캐너리 1계정만 쓰는데 전 고객이 받는 무게(gzip +140KB)라서. 분리 파일 data/hc-ko-app-ifr.json(IFR 붙을 때만 로드)은 split·publish-cdn 변경이라 벤자민 승인 뒤 + 견적서 편집기 미리 채우기 안내 6 (텔레메트리 11-07 잔여) + AI 직원 소개 통화 연출 'calling...' + AI 에이전트 빌더(agentBuilderApp) 5,358 — GHL 이 AI 직원·음성 AI 네임스페이스를 새 묶음으로 옮김: 같은 키 이관 4,166(독립 검수 3갈래 교정 578) + 신규 1,192(번역 3갈래 + 검수 2갈래 교정 11) · 용어 통일(액션·예약 접수·봇 전환·고지 문구·운영 시간) + 에이전트 배포 탭 '빌드에서 편집' → '구성에서 편집'(탭 이름 '구성'과 맞춤) + AI 스튜디오(iframe 중계 vibe 앱) 2,309 — 번역 4갈래 + 독립 검수 2갈래 교정 41 + 표기 통일 12(변경사항·게시) · LeadConnector/HighLevel/Vibe → 하이퍼클래스/AI 스튜디오 · v4.2.76: AI 스튜디오 홈 템플릿 카드 _text 21(서버 데이터 — 단어 1개 이름 E-commerce·Portfolio 는 원문 유지) + 폼·설문·퀴즈 빌더(fsb iframe) 1,690 — 2026-11-13",
+  "version": "4.2.78",
+  "built": "2026-11-14",
+  "source": "_US) 318 전부 영어였음 — 번역 1갈래(기존 같은 원문 108 제안 반영) + 독립 검수 교정 1 · 거래 상세 'Two/One Step Order Form' _text · 거래 보기·권한 범위 용어(트랜잭션→거래 내역, 제품→상품) 정정 9 + 코스 분석 회원 표 머리글 _text 7(별도 앱 카탈로그보다 표 열 정의가 먼저 만들어져 영어로 굳는 경합 — 라이브 실측) + _textScoped 문맥 검수(독립 검수 1,407 전수) 정정 64: 한 화면 문맥이 묻은 값(Estimate 예상 수익→견적서·Items 상품→항목·Bold 대담한→굵게·Closed 휴무→종료됨·Stable 마구간→안정·Library 도서관→라이브러리·Large 길게→크게 등)·참조본 다수 표기로 통일(Create 만들기·Draft 임시 저장·Custom 사용자 지정·Retry 다시 시도·Inbox 인박스 등)·대소문자 짝 맞춤·띄어쓰기·브랜드 항목 삭제(Instagram·Tiktok 은 원문 그대로) · estimate 견적서 2 + 설정 앱(crm settings — 중계 iframe, 비즈니스 프로필 등, 메시지가 컴파일된 함수라 함수 소스에서 원문 복원) 카탈로그: 같은 원문 이관 5,009(독립 검수 2갈래 교정 100) + 신규 600(번역 1갈래 + 검수 교정 6) + 복수형 34(한국어는 단일형). 적용은 로더 v4.21.15 ⑩ 뒤 캐너리 · 중계 iframe 앱 카탈로그 2개(워크플로우 5,309·설정 5,569)는 편집 정본의 ifrApps 로 옮겨 런타임 apps 에서 뺐다 — 캐너리 1계정만 쓰는데 전 고객이 받는 무게(gzip +140KB)라서. 분리 파일 data/hc-ko-app-ifr.json(IFR 붙을 때만 로드)은 split·publish-cdn 변경이라 벤자민 승인 뒤 + 견적서 편집기 미리 채우기 안내 6 (텔레메트리 11-07 잔여) + AI 직원 소개 통화 연출 'calling...' + AI 에이전트 빌더(agentBuilderApp) 5,358 — GHL 이 AI 직원·음성 AI 네임스페이스를 새 묶음으로 옮김: 같은 키 이관 4,166(독립 검수 3갈래 교정 578) + 신규 1,192(번역 3갈래 + 검수 2갈래 교정 11) · 용어 통일(액션·예약 접수·봇 전환·고지 문구·운영 시간) + 에이전트 배포 탭 '빌드에서 편집' → '구성에서 편집'(탭 이름 '구성'과 맞춤) + AI 스튜디오(iframe 중계 vibe 앱) 2,309 — 번역 4갈래 + 독립 검수 2갈래 교정 41 + 표기 통일 12(변경사항·게시) · LeadConnector/HighLevel/Vibe → 하이퍼클래스/AI 스튜디오 · v4.2.76: AI 스튜디오 홈 템플릿 카드 _text 21(서버 데이터 — 단어 1개 이름 E-commerce·Portfolio 는 원문 유지) + 폼·설문·퀴즈 빌더(fsb iframe) 1,690 — 2026-11-13 + 자동화 앱 en 대체 카탈로그 우선분 93(설정·등록/실행 기록·AI 도우미)",
   "strings": 102718
  },
  "host": {
@@ -183183,20 +183183,32 @@
      "export": {
       "button": {
        "in_progress": "내보내기 진행 중",
-       "label": "내보내기"
+       "label": "내보내기",
+       "cooldown_tooltip": "이 워크플로우는 최근 {window}분 안에 내보냈습니다. {remaining}분 뒤에 다시 내보낼 수 있습니다.",
+       "cooldown_tooltip_soon": "이 워크플로우는 최근 {window}분 안에 내보냈습니다. 잠시 뒤에 다시 내보낼 수 있습니다.",
+       "in_progress_tooltip": "이 워크플로우를 이미 내보내는 중입니다. 끝나면 다시 시작할 수 있습니다.",
+       "in_progress_tooltip_by": "{name} 님이 내보내는 중입니다. 끝나면 다시 시작할 수 있습니다.",
+       "support_portal_tooltip": "지원 포털로 로그인한 상태에서는 기록을 내보낼 수 없습니다."
       },
       "date_range": {
-       "label": "기간"
+       "label": "기간",
+       "hint": "{days}일 선택됨 · 최근 {retention}일까지의 기록을 내보낼 수 있습니다"
       },
       "notifications": {
        "failed_title": "내보내기 실패",
-       "queued_title": "내보내기가 시작되었습니다"
+       "queued_title": "내보내기가 시작되었습니다",
+       "failed_message": "내보내기를 시작하지 못했습니다. 다시 시도해 주세요.",
+       "queued_message": "실행 기록 내보내기를 준비하고 있습니다. 곧 받는 사람 {count}명에게 CSV 파일을 이메일로 보내 드립니다."
       },
       "recipients": {
        "error_invalid": "유효한 이메일 주소를 입력하세요.",
        "external": "외부",
        "label": "수신자",
-       "placeholder_more": "다른 수신자 선택..."
+       "placeholder_more": "다른 수신자 선택...",
+       "error_duplicate": "이미 추가한 받는 사람입니다.",
+       "error_limit": "받는 사람은 최대 {max}명까지입니다. 더 추가하려면 한 명을 빼세요.",
+       "hint": "목록에서 팀원을 고르거나 이메일 주소를 입력해 추가하세요. 받는 사람마다 {days}일 뒤 만료되는 보안 다운로드 링크를 이메일로 보내 드립니다.",
+       "placeholder": "팀원을 고르거나 이메일 주소 입력..."
       },
       "submit": "내보내기",
       "submitting": "준비 중...",
@@ -183206,14 +183218,23 @@
        "includes_debug": "디버그 로그 포함",
        "single_contact": "단일 연락처",
        "single_execution": "단일 실행",
-       "single_record": "단일 레코드"
+       "single_record": "단일 레코드",
+       "heading": "지금 필터에 맞는 실행 기록을 내보냅니다."
       },
       "counting": "일치하는 행 수를 세는 중...",
       "description": "워크플로우 - {workflow}",
       "over_cap": {
-       "submit": "내보내기 계속"
+       "submit": "내보내기 계속",
+       "message": "필터에 맞는 행이 {max}개를 넘습니다. 한 번에 최대 {max}행까지 내보내므로 최근 {max}행만 담깁니다. 전부 받으려면 기간을 좁히거나 필터를 더하세요.",
+       "message_exact": "필터에 맞는 행이 {rows}개입니다. 한 번에 최대 {max}행까지 내보내므로 최근 {max}행만 담깁니다. 전부 받으려면 기간을 좁히거나 필터를 더하세요."
       },
-      "title": "실행 기록 내보내기"
+      "title": "실행 기록 내보내기",
+      "audience": "에이전시 관리자와 에이전시 사용자에게만 표시",
+      "errors": {
+       "in_flight": "이 워크플로우를 이미 내보내는 중입니다. 끝난 뒤에 다시 시작하세요."
+      },
+      "no_rows": "이 필터에 맞는 기록이 없습니다. 기간을 넓히거나 필터를 지운 뒤 내보내세요.",
+      "row_count": "{rows}행을 내보냅니다."
      },
      "filters": {
       "date": {
@@ -183231,7 +183252,8 @@
        "label": "액션"
       },
       "moreDetails": {
-       "label": "상세 정보"
+       "label": "상세 정보",
+       "tooltip": "액션 세부 정보 보기"
       },
       "status": {
        "label": "상태"
@@ -183240,7 +183262,11 @@
        "label": "실행 일시"
       },
       "executionLog": {
-       "label": "실행 기록"
+       "label": "실행 기록",
+       "tooltip": "이 워크플로우에서 이 연락처에 실행된 액션 기록을 봅니다. 이 워크플로우에 여러 번 추가된 연락처라면 연락처 이름 왼쪽 아이콘을 눌러 전체 기록을 보세요."
+      },
+      "contact": {
+       "tooltip": "이 워크플로우에서 이 연락처에 실행된 액션 기록을 모두 봅니다. 이 워크플로우에 여러 번 추가된 연락처라면 추가될 때마다의 액션이 모두 보입니다."
       }
      },
      "associationSubtitle": {
@@ -183248,7 +183274,11 @@
       "singular": "연결된 연락처 {count}명"
      },
      "showingPage": "표시 중인 페이지",
-     "title": "액션 기록"
+     "title": "액션 기록",
+     "logs_available_upto_60_days": "실행 기록은 최근 60일 동안의 내역만 볼 수 있습니다.",
+     "noLogs": "기록이 없습니다. 기록은 최근 30일 동안의 내역만 볼 수 있습니다.",
+     "refresh_execution_logs_list": "실행 기록 목록 새로고침",
+     "showingResultsForContact": "이 연락처의 결과만 표시 중"
     },
     "hotLinksTemplateBuilder": {
      "back": "뒤로",
@@ -183606,45 +183636,74 @@
         "fromName": {
          "placeholder": "발신자 이름"
         },
-        "label": "이메일"
+        "label": "이메일",
+        "description": "이메일의 기본 발신자 이름과 발신자 이메일 주소를 정합니다. 이메일 액션에서 발신자 이름과 발신자 이메일을 따로 정하면 그 값이 우선합니다"
        },
        "label": "발신자 주소"
       },
       "timeWindow": {
        "any": {
-        "label": "언제든지"
+        "label": "언제든지",
+        "description": "이 워크플로우의 메시지를 언제든 보낼 수 있게 합니다."
        },
        "label": "시간 범위",
        "specific": {
-        "label": "특정 시간"
+        "label": "특정 시간",
+        "description": "정한 시간대 밖에서는 액션이 발송되지 않게 합니다."
        }
       },
       "timezone": {
-       "label": "시간대"
+       "label": "시간대",
+       "description": "대기 단계와 시간대 실행은 이 시간대를 기준으로 진행됩니다."
       },
       "title": "커뮤니케이션 관리"
      },
      "contact": {
       "allowMultiple": {
-       "label": "다중 허용"
+       "label": "다중 허용",
+       "description": "이 워크플로우에서 나간 연락처가 다시 들어올 수 있게 합니다. 아직 이 워크플로우에 등록된 상태에서 다시 들어오려 하면 건너뜁니다.",
+       "note": "예약·인보이스 기반 입력 트리거가 있는 워크플로우는 '다중 허용'이 켜져 있든 아니든 같은 연락처를 여러 번 받습니다"
       },
       "stopOnResponse": {
-       "label": "응답 시 중지"
+       "label": "응답 시 중지",
+       "description": "이 워크플로우에서 보낸 메시지에 연락처가 답장하면 그 연락처의 워크플로우를 종료합니다"
       },
       "title": "연락처 관리"
      },
      "title": "워크플로우 설정",
      "builderSettings": {
       "whoCanSwitchBetweenBuildersSubAccountAdmin": "서브 계정 관리자",
-      "whoCanSwitchBetweenBuildersSubAccountUser": "서브 계정 사용자"
+      "whoCanSwitchBetweenBuildersSubAccountUser": "서브 계정 사용자",
+      "advancedBuilderDescription": "복잡한 로직, 분기 경로, 트리거가 여러 개인 워크플로우에 알맞습니다.",
+      "defaultBuilderDescription": "새 워크플로우는 모두 선택한 빌더로 열립니다.",
+      "defaultBuilderTag": "에이전시 관리자와 에이전시 사용자에게만 표시",
+      "defaultBuilderTitle": "새 워크플로우의 기본 빌더",
+      "defaultBuilderUpdatedSuccessfully": "기본 빌더를 변경했습니다",
+      "failedToLoadBuilderSettings": "빌더 설정을 불러오지 못했습니다. 새로고침해 최신 데이터를 불러오세요.",
+      "failedToUpdateDefaultBuilder": "기본 빌더를 변경하지 못했습니다",
+      "failedToUpdateRoleChange": "역할 변경을 저장하지 못했습니다",
+      "forceAdvancedBuilderLabel": "모든 워크플로우(기존·신규)에 고급 빌더 사용",
+      "roleChangeUpdatedSuccessfully": "역할 변경을 저장했습니다",
+      "standardBuilderDescription": "단순한 자동화, 한 줄로 이어지는 흐름, 빠른 편집에 알맞습니다.",
+      "switchDefaultBuilderModalDescription": "기본으로 정하면 모든 사용자의 새 워크플로우가 {builder}로 열립니다.",
+      "switchDefaultBuilderModalTitle": "기본 보기를 {builder}로 바꿀까요?",
+      "whoCanSwitchBetweenBuildersDescription": "워크플로우 보기를 표준·고급 사이에서 바꿀 수 있는 역할을 고르세요. 에이전시 사용자는 기본으로 켜져 있습니다.",
+      "whoCanSwitchBetweenBuildersTitle": "빌더를 바꿀 수 있는 사람"
      },
      "conversation": {
-      "title": "대화 관리"
+      "title": "대화 관리",
+      "autoMarkAsRead": {
+       "description": "자동 메시지는 기본적으로 대화를 읽음으로 표시하지 않습니다. 이 워크플로우가 주고받는 대화를 읽음으로 표시하려면 켜세요",
+       "label": "자동으로 읽음 표시"
+      }
      },
      "sequenceTitle": "워크플로우 시퀀스 관리",
      "workflowSequence": {
       "startDate": {
-       "label": "이벤트 시작 날짜"
+       "label": "이벤트 시작 날짜",
+       "description": "이벤트 시작 날짜와 시간을 정하면, 그 시점을 기준으로 연락처를 일정 시간 붙잡아 두는 대기 이벤트를 쓸 수 있습니다. 웨비나 전 리마인더 같은 경우에 알맞습니다",
+       "note": "선택한 날짜와 시간은 계정 시간대({timezone})를 기준으로 합니다",
+       "warning": "[지원 중단]: 이벤트 시작 날짜 액션을 사용하세요"
       },
       "title:": "워크플로우 시퀀스 관리"
      }
@@ -183726,7 +183785,19 @@
       "card_allow_reentry_title": "재진입 허용",
       "card_stop_on_response_title": "응답 시 중지",
       "prompt_2": "예약 동작을 설명해 주세요",
-      "zero_state_title": "설정에 대해 질문"
+      "zero_state_title": "설정에 대해 질문",
+      "card_allow_reentry_description": "무슨 기능이고 언제 쓰는지",
+      "card_allow_reentry_prompt": "'재진입 허용'은 무슨 기능이고 언제 써야 해?",
+      "card_appointments_description": "예약 관련 동작 방식",
+      "card_appointments_prompt": "이 워크플로우에서 예약은 어떻게 동작해?",
+      "card_stop_on_response_description": "이 워크플로우에서 켜져 있나요?",
+      "card_stop_on_response_prompt": "이 워크플로우에 '응답 시 중지'가 켜져 있어?",
+      "card_timezone_description": "이 워크플로우가 쓰는 시간대",
+      "card_timezone_prompt": "이 워크플로우는 어느 시간대를 써?",
+      "prompt_1": "'재진입 허용'은 무슨 기능이야?",
+      "prompt_3": "'응답 시 중지'는 언제 써야 해?",
+      "prompt_4": "정해진 시간에만 메시지를 보내려면 어떻게 해?",
+      "zero_state_placeholder": "이 워크플로우 설정에 대해 물어보세요..."
      },
      "ask_something_else": "다른 질문 입력...",
      "dismiss_suggestions": "제안 숨기기",
@@ -183735,7 +183806,17 @@
       "card_enrollment_count_title": "등록 수",
       "card_step_breakdown_title": "단계별 분석",
       "card_waiting_contacts_title": "대기 중인 연락처",
-      "zero_state_title": "등록에 대해 질문"
+      "zero_state_title": "등록에 대해 질문",
+      "card_contact_lookup_prompt": "특정 연락처가 이 워크플로우를 마쳤는지 확인해 줘",
+      "card_enrollment_count_description": "이번 주에 등록된 연락처 수",
+      "card_enrollment_count_prompt": "이번 주에 등록된 연락처는 몇 명이야?",
+      "card_step_breakdown_description": "단계별 완료율 보기",
+      "card_step_breakdown_prompt": "단계별 완료율을 보여 줘",
+      "card_waiting_contacts_description": "지금 단계에서 대기 중인 연락처",
+      "card_waiting_contacts_prompt": "지금 단계에서 대기 중인 연락처는 누구야?",
+      "prompt_1": "단계에서 대기 중인 연락처는?",
+      "prompt_2": "이번 주에 몇 명 등록됐어?",
+      "zero_state_placeholder": "등록 기록에 대해 물어보세요..."
      },
      "execution_logs": {
       "card_error_hotspots_title": "오류 집중 구간",
@@ -183746,7 +183827,16 @@
       "card_today_summary_title": "오늘의 요약",
       "prompt_3": "오늘의 실행 내역을 요약해 주세요",
       "prompt_4": "실패가 늘고 있나요?",
-      "zero_state_title": "이 워크플로우 디버그"
+      "zero_state_title": "이 워크플로우 디버그",
+      "card_error_hotspots_description": "오류가 가장 많은 단계",
+      "card_error_hotspots_prompt": "오류가 가장 많은 단계는 어디야?",
+      "card_last_failure_description": "가장 최근 실패 살펴보기",
+      "card_last_failure_prompt": "가장 최근 실패를 차근차근 설명해 줘",
+      "card_step_errors_description": "특정 단계가 실패한 이유",
+      "card_step_errors_prompt": "특정 단계가 왜 실패했어?",
+      "prompt_1": "마지막 실패를 설명해 줘",
+      "prompt_2": "오류가 가장 많은 단계는?",
+      "zero_state_placeholder": "실행이나 오류에 대해 물어보세요..."
      }
     },
     "templateSettings": {
@@ -185810,7 +185900,16 @@
    "you_administrator": "관리자",
    "you_can_enable": "활성화할 수 있습니다",
    "zero_errors": "오류 없음",
-   "zero_errors_count": "오류 0개"
+   "zero_errors_count": "오류 0개",
+   "allow_multiple_opportunity": "여러 기회 허용",
+   "allow_multiple_opportunity_description": "기회가 여러 개인 연락처가 기회마다 별도 실행으로 워크플로우에 들어올 수 있게 합니다. 기회마다 워크플로우에서 각각 실행됩니다. '재진입 허용'이 꺼져 있어도 여러 기회는 워크플로우에 들어옵니다.",
+   "allows_a_object_to_re_enter_once_it_has_left_this_workflow_if_the_object_attempts_to_re_enter_whil": "이 워크플로우에서 나간 {objectName}도 다시 들어올 수 있게 합니다. 아직 이 워크플로우에 등록돼 있는 {objectName}의 재진입은 건너뜁니다. 또한 이 워크플로우에 예약·인보이스 기반 트리거가 있으면 '재진입 허용'이 꺼져 있어도 {objectName}의 재진입을 허용합니다.",
+   "ends_workflow_for_a_contact_if_the_contact_responds_to_a_message_that_is_sent_from_this_workflow": "이 워크플로우에서 보낸 메시지에 연락처가 답장하면 그 연락처의 워크플로우를 종료합니다.",
+   "enrollment_history_is_available_upto_last_60_days": "등록 기록은 최근 60일 동안의 내역만 볼 수 있습니다.",
+   "from_number_description": "드롭다운에서 번호를 골라 SMS 의 기본 '발신 번호'를 정할 수 있습니다.",
+   "toggle_this_on_if_you_want_the_conversations_that_this_workflow_will_interact_with_to_be_marked_as_r": "이 워크플로우가 주고받는 대화를 읽음으로 표시하려면 켜세요.",
+   "view_history_of_all_objects_entered_this_workflow": "이 워크플로우에 들어온 모든 {objectName}의 기록을 봅니다",
+   "you_can_set_a_default_from_name_and_from_email_for_emails_you_can_also_override_this_information_wit": "이메일의 기본 '발신자 이름'과 '발신자 이메일'을 정할 수 있습니다. 이메일 액션에서 따로 정하면 그 값이 우선합니다."
   },
   "agency|agencyProductSettingConcent|agencyProductSettingModal|apiKey|auditLogs": {
    "agency": {
