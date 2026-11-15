@@ -89,7 +89,7 @@
   * [3단계 · 챗봇 연결(오픈빌더) ⭐ 핵심](docs/43-한국-앱/kaka/03-openbuilder-bot.md)
   * [4단계 · 연결 확인](docs/43-한국-앱/kaka/04-verify-and-test.md)
   * [5단계 · 답변 방식 고르기](docs/43-한국-앱/kaka/05-reply-mode.md)
-  * [6단계 · 늦은 답장 설정 (필수)](docs/43-한국-앱/kaka/06-late-reply.md)
+  * [6단계 · 늦은 답장 설정 (사실상 필수)](docs/43-한국-앱/kaka/06-late-reply.md)
   * [7단계 · 실제로 써 보기와 완료 화면](docs/43-한국-앱/kaka/07-first-test.md)
   * [운영 가이드](docs/43-한국-앱/kaka/08-operations.md)
   * [선택 A · 문의 접수 자동화](docs/43-한국-앱/kaka/09-inquiry-automation.md)
