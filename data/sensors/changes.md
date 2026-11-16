@@ -344,3 +344,24 @@
 - `emailMarketingApp` 11 → 12
 - `ticketingApp` 3062 → 3070
 
+## 2026-11-16 22:22 UTC — main 2224 → 2226 · manifest 2224.0 → 2226.7964
+- `adPublishingApp` 130 → 133
+- `appointmentModalApp` 640 → 642
+- `bulkActionsApp` 2997 → 3073
+- `contactsApp` 3064 → 3071
+- `contactsHighriseApp` 3059 → 3075
+- `conversationsV2App` 3066 → 3074
+- `customObjectsApp` 3061 → 3075
+- `implementationExpertsMfaApp` 965 → 968
+- `knowledgeBaseApp` 869 → 967
+- `locationsApp` 2294 → 2305
+- `marketplaceApp` 198 → 199
+- `meetingsApp` 2300 → 2306
+- `phoneIntegrationApp` 2296 → 2302
+- `powerDialerApp` 2297 → 2304
+- `reportingApp` 321 → 322
+- `restaurantsApp` 3065 → 3078
+- `socialPlannerApp` 383 → 384
+- `superagentsApp` 962 → 966
+- `visibilityAiApp` 2266 → 2307
+
