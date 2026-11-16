@@ -1,6 +1,6 @@
 {
- "manifestVersion": "2223.7937",
- "mainAppVersion": "2223",
+ "manifestVersion": "2224.0",
+ "mainAppVersion": "2224",
  "federatedApps": {
   "reputationApp": "https://appcdn.leadconnectorhq.com/revex/reputation/2261/remoteEntry.js?nocache=true",
   "yextApp": "https://appcdn.leadconnectorhq.com/revex/yext/2229/remoteEntry.js?nocache=true",
@@ -131,12 +131,12 @@
   "switchyardApp": "https://appcdn.leadconnectorhq.com/revex/switchyard/23/remoteEntry.js?nocache=true",
   "funnelAiPreviewApp": "https://appcdn.leadconnectorhq.com/leadgen/funnel-ai-preview/6/remoteEntry.js?nocache=true",
   "fieldServicesApp": "https://appcdn.leadconnectorhq.com/automation/field-services/638/remoteEntry.js?nocache=true",
-  "ticketingApp": "https://appcdn.leadconnectorhq.com/crm/ticketing/3062/remoteEntry.js?nocache=true",
+  "ticketingApp": "https://appcdn.leadconnectorhq.com/crm/ticketing/3070/remoteEntry.js?nocache=true",
   "loyaltyApp": "https://appcdn.leadconnectorhq.com/leadgen/loyalty/28/remoteEntry.js?nocache=true",
   "emailBuilderMfaApp": "https://appcdn.leadconnectorhq.com/leadgen/email-builder-mfa/421/remoteEntry.js?nocache=true",
   "emailHomeV2App": "https://appcdn.leadconnectorhq.com/leadgen/email-home-v2/420/remoteEntry.js?nocache=true",
   "emailInfraRemoteApp": "https://appcdn.leadconnectorhq.com/email/email-infra-remote/10/remoteEntry.js?nocache=true",
-  "emailMarketingApp": "https://appcdn.leadconnectorhq.com/leadgen/email-marketing/11/remoteEntry.js?nocache=true",
+  "emailMarketingApp": "https://appcdn.leadconnectorhq.com/leadgen/email-marketing/12/remoteEntry.js?nocache=true",
   "restaurantsApp": "https://appcdn.leadconnectorhq.com/crm/restaurants/3065/remoteEntry.js?nocache=true",
   "agentHealthApp": "https://appcdn.leadconnectorhq.com/ai/agent-health/929/remoteEntry.js?nocache=true"
  },
