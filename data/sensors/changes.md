@@ -365,3 +365,11 @@
 - `superagentsApp` 962 → 966
 - `visibilityAiApp` 2266 → 2307
 
+## 2026-11-17 08:10 UTC — main 2226 → 2226 · manifest 2226.7964 → 2226.7970
+- `calendarComponentsApp` 636 → 644
+- `funnelWebsiteApp` 250 → 253
+- `powerDialerApp` 2304 → 2310
+- `productsApp` 423 → 425
+- `socialPlannerApp` 384 → 385
+- `voiceAiApp` 957 → 969
+
