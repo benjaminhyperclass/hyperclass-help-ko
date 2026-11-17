@@ -373,3 +373,29 @@
 - `socialPlannerApp` 384 → 385
 - `voiceAiApp` 957 → 969
 
+## 2026-11-17 21:07 UTC — main 2226 → 2230 · manifest 2226.7970 → 2230.8000
+- `actionsPlatformApp` 896 → 976
+- `adPublishingApp` 133 → 135
+- `aiGrowthApp` 963 → 978
+- `authApp` 2920 → 3089
+- `bladePlatformApp` 85 → 86
+- `bulkActionsApp` 3073 → 3092
+- `clientPortalBuilder` 2295 → 2314
+- `contactsHighriseApp` 3075 → 3087
+- `conversationsV2App` 3074 → 3093
+- `copilotApp` 964 → 972
+- `crmObjectsSettingsApp` 2992 → 3085
+- `customFieldsApp` 2973 → 3087
+- `customObjectsApp` 3075 → 3090
+- `emailHomeV2App` 420 → 423
+- `emailSequenceApp` 413 → 423
+- `locationsApp` 2305 → 2318
+- `opportunitiesApp` 3059 → 3087
+- `platformBillingApp` 74 → 76
+- `reportingApp` 322 → 324
+- `reputationApp` 2261 → 2311
+- `snapshotsApp` 2287 → 2308
+- `socialPlannerApp` 385 → 386
+- `usersApp` 2993 → 3089
+- `voiceAiApp` 969 → 973
+
