@@ -399,3 +399,14 @@
 - `usersApp` 2993 → 3089
 - `voiceAiApp` 969 → 973
 
+## 2026-11-18 07:44 UTC — main 2230 → 2232 · manifest 2230.8000 → 2232.8010
+- `knowledgeBaseApp` 967 → 979
+- `locationBillingApp` 2294 → 2313
+- 🆕 `notesAiApp` - → 975
+- `redirectApp` 222 → 252
+- `reportingApp` 324 → 325
+- `saasApp` 2294 → 2313
+- `seoApp` 97 → 98
+- `socialPlannerApp` 386 → 387
+- `templateLibraryApp` 178 → 179
+
