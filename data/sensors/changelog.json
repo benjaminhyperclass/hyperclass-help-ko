@@ -62,19 +62,23 @@
   "Split Action: Now distribute contacts with Even split and Weighted split": "2026-11-13",
   "🎬 Introducing Video Analysis in Managed Agents!": "2026-11-16",
   "🎨 Sharper Image Generation in Managed Agents with GPT Image 2.6!": "2026-11-17",
-  "Ad Manager Enhancement - Google Ads Policy Exemption Requests": "2026-11-18"
+  "Ad Manager Enhancement - Google Ads Policy Exemption Requests": "2026-11-18",
+  "Inbound Webhook: Choose suggested contact, opportunity, and task actions": "2026-11-18",
+  "🚀 Introducing Managed Agents API – Build, Manage & Publish Agents Programmatically!": "2026-11-18",
+  "Workflows: Now enroll opportunities and tasks without a contact": "2026-11-18",
+  "Email Domain Warm-Up is now available to everyone in HighLevel Labs": "2026-11-18"
  },
  "updated": "2026-11-18",
  "slugs": [
   "ad-manager-enhancement-google-ads-policy-exemption-requests",
-  "affiliate-consent-tax-form-payout-setup-in-affiliate-manager",
   "ai-studio-chat-composer-richer-and-inputs-smoother-streaming",
-  "connect-your-custom-domain-before-you-publish",
+  "email-domain-warm-up-is-now-available-to-everyone-in-highlevel-labs",
+  "inbound-webhook-choose-suggested-contact-opportunity-and-task-actions",
+  "introducing-managed-agents-api-build-manage-publish-agents-programmatically",
   "introducing-new-templates-117",
   "introducing-video-analysis-in-managed-agents",
-  "one-time-product-support-for-external-website-affiliate-campaigns",
-  "see-look-alike-companies-before-you-add-a-new-one",
   "sharper-image-generation-in-managed-agents-with-gpt-image-26",
-  "split-action-now-distribute-contacts-with-even-split-and-weighted-split"
+  "split-action-now-distribute-contacts-with-even-split-and-weighted-split",
+  "workflows-now-enroll-opportunities-and-tasks-without-a-contact"
  ]
 }

@@ -410,3 +410,30 @@
 - `socialPlannerApp` 386 → 387
 - `templateLibraryApp` 178 → 179
 
+## 2026-11-18 20:44 UTC — main 2232 → 2232 · manifest 2232.8010 → 2232.8038
+- `adPublishingApp` 135 → 136
+- `agentBuilderApp` 959 → 981
+- `appointmentModalApp` 642 → 646
+- `calendarComponentsApp` 644 → 648
+- `calendarMeetingsApp` 635 → 645
+- `calendarRentalsApp` 616 → 649
+- `clientPortalBuilder` 2314 → 2328
+- `copilotApp` 972 → 982
+- `emailBuilderMfaApp` 421 → 425
+- `emailHomeV2App` 423 → 425
+- `estimatesApp` 421 → 428
+- `implementationExpertsMfaApp` 968 → 984
+- `marketplaceApp` 199 → 201
+- `meetingsApp` 2306 → 2329
+- `paymentsApp` 424 → 426
+- `phoneIntegrationApp` 2302 → 2326
+- `restaurantsApp` 3078 → 3097
+- `snapshotsApp` 2308 → 2325
+- `socialPlannerApp` 387 → 388
+- `storeCatalogApp` 56 → 61
+- `superagentsApp` 966 → 983
+- `switchyardApp` 23 → 27
+- `usersApp` 3089 → 3094
+- 🆕 `vibeStudioApp` - → 106
+- `voiceAiApp` 973 → 980
+
