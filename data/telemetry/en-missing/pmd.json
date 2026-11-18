@@ -5,6 +5,13 @@
  "helpDrawer.supportAccessEnabledUntil": "Authorized HighLevel support specialists can access your account until {date}.",
  "helpDrawer.supportAccessTitle": "Support Access",
  "length_": ".length }}",
+ "ownershipChanged.gainedBody": "You’ve accepted ownership of {agency}. Reload the page to access owner settings.",
+ "ownershipChanged.gainedBodyNoName": "You’ve accepted ownership of this agency. Reload the page to access owner settings.",
+ "ownershipChanged.gainedTitle": "You’re now the agency owner",
+ "ownershipChanged.lostBody": "Ownership of {agency} has been transferred. You still have full access as an Agency Admin. Reload the page to continue.",
+ "ownershipChanged.lostBodyNoName": "Ownership of this agency has been transferred. You still have full access as an Agency Admin. Reload the page to continue.",
+ "ownershipChanged.lostTitle": "Ownership transfer complete",
+ "ownershipChanged.reload": "Reload page",
  "productRebilling.gpt4oMini": "GPT-4o-mini",
  "seo": "SEO",
  "usd": "USD"

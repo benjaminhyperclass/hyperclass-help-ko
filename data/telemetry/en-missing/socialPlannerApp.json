@@ -1,5 +1,6 @@
 {
  "blueskyModal.appPasswordPlaceholder": "XXXX-XXXX-XXXX-XXXX",
+ "calendar.notification.scheduleDateTooSoon": "Posts can't be moved to less than {minutes} minute from now. Choose a later time. | Posts can't be moved to less than {minutes} minutes from now. Choose a later time.",
  "comments.refresh": "Refresh comments",
  "comments.syncBanner.description": "Comments from your connected social channels now appear in Conversations. Reply to comments, save commenters as contacts, trigger workflows, and nurture them from your inbox.",
  "comments.syncBanner.review": "Manage settings",
@@ -36,6 +37,7 @@
  "createPost.cloneNativeMediaYoutubeVideoUnavailable": "Media cloning is restricted for native YouTube posts by YouTube's Terms of Service.",
  "createPost.followUpComment.tiktokReconnectDescription": "These TikTok account(s) were connected before follow-up comments were supported for TikTok. Reconnect them to add follow-up comments to their posts.",
  "createPost.followUpComment.tiktokReconnectTitle": "Reconnect TikTok to add a follow-up comment",
+ "createPost.scheduleDateTooSoonMessage": "This post is scheduled to publish in less than {minutes} minute, so it can't be updated. Choose a later time and try again. | This post is scheduled to publish in less than {minutes} minutes, so it can't be updated. Choose a later time and try again.",
  "createPost.warning.tiktokFollowUpCommentPublicOnly": "TikTok follow-up comments only work on public posts. Select 'Everyone' to add follow-up comments.",
  "createReviewPost.captionVariationsLabel": "Caption variations",
  "createReviewPost.errorMessage.imageResolutionTooLarge": "Background image supports a maximum resolution of {maxDimension}x{maxDimension} pixels. Your image is {width}x{height} pixels.",
@@ -89,6 +91,7 @@
  "platformErrors.facebook.temporaryPublishIssue": "Facebook ran into a temporary issue while publishing your post. Try again in a few minutes. If it still doesn't work, reconnect your Facebook account and try again.",
  "platformErrors.google.locationNotFound": "Google Business Profile location not found. It may have been deleted or your access removed. Restore it on Google, or re-connect your account.",
  "platformErrors.instagram.connectionUnreachable": "We couldn't reach your Instagram connection. Please try again in a few minutes or contact support for assistance.",
+ "platformErrors.linkedin.mediaStatusCheckUnavailable": "We could not confirm the media upload with LinkedIn. Please try publishing the post again.",
  "platformErrors.linkedin.unverifiedShareLimit": "LinkedIn daily posting limit reached for unverified members. Verify your LinkedIn account or try again later.",
  "platformErrors.tiktok.spamRisk": "TikTok flagged this post as potential spam. Make sure your content is original, avoid posting repetitive or duplicate content, and ensure it follows TikTok’s Community Guidelines before trying again.",
  "postPreview.previewLikeCount": "25K",
