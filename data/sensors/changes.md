@@ -449,3 +449,34 @@
 - `reportingApp` 325 → 326
 - `superagentsApp` 983 → 988
 
+## 2026-11-19 20:50 UTC — main 2232 → 2244 · manifest 2232.8048 → 2244.8084
+- `adPublishingApp` 136 → 137
+- `agencyDashboardApp` 2246 → 2334
+- `appointmentModalApp` 646 → 650
+- `bulkActionsApp` 3092 → 3129
+- `chatWidgetApp` 130 → 131
+- `contactsApp` 3071 → 3129
+- `contactsHighriseApp` 3087 → 3129
+- `conversationsV2App` 3093 → 3122
+- `crmObjectsSettingsApp` 3085 → 3129
+- `customObjectsApp` 3098 → 3121
+- `emailBuilderMfaApp` 425 → 426
+- `eventsManagementApp` 3107 → 3126
+- `featurePermissionsApp` 2226 → 2320
+- `formSurveyApp` 348 → 350
+- `integrationsApp` 197 → 202
+- `leadconnectorIntegrationsApp` 2960 → 3117
+- `leadgenPaymentsApp` 423 → 429
+- `locationBillingApp` 2313 → 2320
+- `locationsApp` 2318 → 2331
+- `marketplaceApp` 201 → 203
+- `meetingsApp` 2329 → 2336
+- `opportunitiesApp` 3087 → 3121
+- `phoneIntegrationApp` 2330 → 2332
+- `reportingApp` 326 → 327
+- `saasApp` 2313 → 2333
+- `socialPlannerApp` 388 → 389
+- `ticketingApp` 3070 → 3127
+- `usersApp` 3094 → 3111
+- `voiceAiApp` 980 → 991
+
