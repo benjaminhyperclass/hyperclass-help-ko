@@ -437,3 +437,15 @@
 - 🆕 `vibeStudioApp` - → 106
 - `voiceAiApp` 973 → 980
 
+## 2026-11-19 07:40 UTC — main 2232 → 2232 · manifest 2232.8038 → 2232.8048
+- `agentLogsApp` 956 → 986
+- `blogsApp` 106 → 107
+- `brandBoardsApp` 46 → 47
+- `certificatesApp` 2241 → 2324
+- `copilotApp` 982 → 985
+- `customObjectsApp` 3090 → 3098
+- `eventsManagementApp` 3038 → 3107
+- `phoneIntegrationApp` 2326 → 2330
+- `reportingApp` 325 → 326
+- `superagentsApp` 983 → 988
+

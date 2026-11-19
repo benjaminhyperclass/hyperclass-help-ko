@@ -66,9 +66,10 @@
   "Inbound Webhook: Choose suggested contact, opportunity, and task actions": "2026-11-18",
   "🚀 Introducing Managed Agents API – Build, Manage & Publish Agents Programmatically!": "2026-11-18",
   "Workflows: Now enroll opportunities and tasks without a contact": "2026-11-18",
-  "Email Domain Warm-Up is now available to everyone in HighLevel Labs": "2026-11-18"
+  "Email Domain Warm-Up is now available to everyone in HighLevel Labs": "2026-11-18",
+  "🚀 Introducing Rich Text Editor for Managed Agent Instructions!": "2026-11-19"
  },
- "updated": "2026-11-18",
+ "updated": "2026-11-19",
  "slugs": [
   "ad-manager-enhancement-google-ads-policy-exemption-requests",
   "ai-studio-chat-composer-richer-and-inputs-smoother-streaming",
@@ -76,9 +77,9 @@
   "inbound-webhook-choose-suggested-contact-opportunity-and-task-actions",
   "introducing-managed-agents-api-build-manage-publish-agents-programmatically",
   "introducing-new-templates-117",
+  "introducing-rich-text-editor-for-managed-agent-instructions",
   "introducing-video-analysis-in-managed-agents",
   "sharper-image-generation-in-managed-agents-with-gpt-image-26",
-  "split-action-now-distribute-contacts-with-even-split-and-weighted-split",
   "workflows-now-enroll-opportunities-and-tasks-without-a-contact"
  ]
 }
