@@ -523354,5 +523354,153 @@
  "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.you_can_set_a_default_from_name_and_from_email_for_emails_you_can_also_override_this_information_wit": {
   "en": "You can set a default \"From name\" and \"From email\" for emails. You can also override this information within your email actions.",
   "ko": "이메일의 기본 '발신자 이름'과 '발신자 이메일'을 정할 수 있습니다. 이메일 액션에서 따로 정하면 그 값이 우선합니다."
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.beforeConnect": {
+  "en": "Before you connect your {provider}",
+  "ko": "{provider} 계정을 연결하기 전에"
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.beforeConnectSub": {
+  "en": "Four things change once this inbox is connected.",
+  "ko": "이 메일함을 연결하면 네 가지가 달라집니다."
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.bccCallout": {
+  "en": "Want to keep some email out? Use your Bcc address to sync selectively instead of connecting the whole inbox.",
+  "ko": "일부 이메일은 동기화하고 싶지 않으신가요? 메일함 전체를 연결하는 대신 Bcc 주소를 사용해 필요한 이메일만 골라 동기화하세요."
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.continueGoogle": {
+  "en": "Continue to Google",
+  "ko": "Google로 계속"
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.continueMicrosoft": {
+  "en": "Continue to Microsoft",
+  "ko": "Microsoft로 계속"
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.howItWorks": {
+  "en": "How email sync works",
+  "ko": "이메일 동기화 작동 방식"
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.notAcknowledged": {
+  "en": "Not acknowledged",
+  "ko": "확인 전"
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.acknowledged": {
+  "en": "Acknowledged",
+  "ko": "확인 완료"
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.expandAll": {
+  "en": "Expand all",
+  "ko": "모두 펼치기"
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.collapseAll": {
+  "en": "Collapse all",
+  "ko": "모두 접기"
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.visibleToTeam": {
+  "en": "Visible to your team",
+  "ko": "팀원이 볼 수 있음"
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.ackLabel": {
+  "en": "I've read how email 2-way sync behaves, including that other users of this sub-account can read synced email.",
+  "ko": "이 서브 계정의 다른 사용자가 동기화된 이메일을 읽을 수 있다는 점을 포함해, 이메일 양방향 동기화 작동 방식을 확인했습니다."
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.ackHelper": {
+  "en": "Recorded across every sub-account you belong to, with who confirmed and when — so you are not asked again elsewhere.",
+  "ko": "누가 언제 확인했는지가 소속된 모든 서브 계정에 기록되므로, 다른 서브 계정에서 다시 묻지 않습니다."
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.contactsStarts": {
+  "en": "Email with people already in your CRM starts syncing",
+  "ko": "CRM에 이미 있는 연락처와 주고받는 이메일이 동기화되기 시작합니다"
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.contactsIs": {
+  "en": "Email with people already in your CRM is syncing",
+  "ko": "CRM에 이미 있는 연락처와 주고받는 이메일이 동기화되고 있습니다"
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.contactsBody": {
+  "en": "Messages you exchange with existing contacts appear in Conversations, on that contact's record. Email from someone who isn't a contact yet won't sync — use your Bcc address to pull those in.",
+  "ko": "기존 연락처와 주고받는 메시지는 대화에 해당 연락처의 기록으로 표시됩니다. 아직 연락처가 아닌 사람과의 이메일은 동기화되지 않으니, 필요하면 Bcc 주소를 사용해 가져오세요."
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.contactsInternal": {
+  "en": "Email between you and other users of this sub-account never syncs.",
+  "ko": "나와 이 서브 계정의 다른 사용자 사이에 오간 이메일은 동기화되지 않습니다."
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.visibilityTitle": {
+  "en": "Other users in this sub-account can read your synced emails",
+  "ko": "이 서브 계정의 다른 사용자가 동기화된 내 이메일을 읽을 수 있습니다"
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.visibilityBody": {
+  "en": "Synced email lives on the contact record, so anyone with access to Conversations here can open it — including personal correspondence, if the sender happens to be a contact.",
+  "ko": "동기화된 이메일은 연락처 기록에 저장되므로, 이 서브 계정에서 대화에 접근할 수 있는 사람이면 누구나 열어 볼 수 있습니다. 보낸 사람이 연락처로 등록되어 있다면 개인적인 메일도 포함됩니다."
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.visibilityExtra": {
+  "en": "This applies to email that has already synced, not only to email from today onward.",
+  "ko": "앞으로 오가는 이메일뿐 아니라 이미 동기화된 이메일에도 적용됩니다."
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.locationsTitle": {
+  "en": "If you belong to more than one sub-account, sync can reach all of them",
+  "ko": "여러 서브 계정에 소속되어 있다면 모든 서브 계정에 동기화될 수 있습니다"
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.locationsBody": {
+  "en": "Your inbox connects to your user account rather than to a single sub-account, so it can sync into every sub-account you're a member of — not only this one.",
+  "ko": "메일함은 특정 서브 계정이 아니라 내 사용자 계정에 연결되므로, 이 서브 계정뿐 아니라 내가 멤버로 있는 모든 서브 계정에 동기화될 수 있습니다."
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.disconnectLater": {
+  "en": "Disconnecting later won't remove emails already synced",
+  "ko": "나중에 연결을 해제해도 이미 동기화된 이메일은 삭제되지 않습니다"
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.disconnectNow": {
+  "en": "Disconnecting won't remove emails already synced",
+  "ko": "연결을 해제해도 이미 동기화된 이메일은 삭제되지 않습니다"
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.disconnectBody": {
+  "en": "Disconnecting stops new email from syncing, but everything already in the CRM stays there.",
+  "ko": "연결을 해제하면 새 이메일은 더 이상 동기화되지 않지만, 이미 CRM에 있는 이메일은 그대로 남습니다."
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.disconnectExtra": {
+  "en": "Also note: past emails aren't imported when you connect, and bulk and workflow emails keep sending from this sub-account's email provider rather than your inbox — so they won't appear in your Sent folder.",
+  "ko": "참고: 연결할 때 지난 이메일은 가져오지 않습니다. 또한 일괄 발송·워크플로우 이메일은 내 메일함이 아니라 이 서브 계정의 이메일 서비스로 계속 발송되므로, 내 보낸편지함에는 표시되지 않습니다."
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.remindLater": {
+  "en": "Remind me later",
+  "ko": "나중에 다시 알림"
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.confirm": {
+  "en": "Confirm",
+  "ko": "확인"
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.ackRecordedTitle": {
+  "en": "Acknowledgement recorded",
+  "ko": "확인이 기록되었습니다"
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.ackRecordedBody": {
+  "en": "Saved across every sub-account you belong to.",
+  "ko": "소속된 모든 서브 계정에 저장되었습니다."
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.ackLine": {
+  "en": "{name} confirmed reading this on {at} · notice v1 · applies to all sub-accounts",
+  "ko": "{name}님 · {at} · 안내 v1 · 모든 서브 계정에 적용"
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.connectedTitle": {
+  "en": "Inbox connected",
+  "ko": "메일함이 연결되었습니다"
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.connectedBody": {
+  "en": "{email} — email with your existing contacts will start appearing in Conversations.",
+  "ko": "{email} — 이제 기존 연락처와 주고받는 이메일이 대화에 표시되기 시작합니다."
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.switchedTitle": {
+  "en": "Account switched",
+  "ko": "계정이 전환되었습니다"
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.switchedBody": {
+  "en": "Now syncing {email}.",
+  "ko": "이제 {email} 계정을 동기화합니다."
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.saveFailed": {
+  "en": "Couldn't save the acknowledgement. Try again.",
+  "ko": "확인 내용을 저장하지 못했습니다. 다시 시도해 주세요."
+ },
+ "usersMicroApp.profile.emailSyncDisclosure.clearFailed": {
+  "en": "Disconnected, but the acknowledgement could not be cleared. You'll be asked again before the next connect.",
+  "ko": "연결은 해제되었지만 확인 기록을 지우지 못했습니다. 다음에 연결하기 전에 다시 확인을 요청합니다."
  }
 }
