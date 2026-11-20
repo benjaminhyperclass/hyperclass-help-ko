@@ -69,19 +69,28 @@
   "Email Domain Warm-Up is now available to everyone in HighLevel Labs": "2026-11-18",
   "🚀 Introducing Rich Text Editor for Managed Agent Instructions!": "2026-11-19",
   "🚀 Google Integration Migration to Marketplace Architecture 🚀": "2026-11-19",
-  "Build and Publish AI Studio Projects in Ask AI": "2026-11-19"
+  "Build and Publish AI Studio Projects in Ask AI": "2026-11-19",
+  "Share Meeting Room recordings with flexible access controls": "2026-11-20",
+  "Meeting Room alerts: Hear the moments that matter!": "2026-11-20",
+  "Explore Workflow Enrollment and Execution Activity Across Contacts, Tasks and Opportunities": "2026-11-20",
+  "Workflows: Execution Logs Doubled to 60 Days, Now with CSV Export": "2026-11-20",
+  "🔁 Introducing Routines in Managed Agents – Automate Recurring Tasks!": "2026-11-20",
+  "Workflows: Now Send Internal Notifications Without Linking a Contact": "2026-11-20",
+  "🚀 Introducing User Signup Workflow Trigger for Client Portal": "2026-11-20",
+  "📅 Rental Booking is Now Available in the Client Portal": "2026-11-20",
+  "Launch ChatGPT Ads by OpenAI from HighLevel Ad Manager": "2026-11-20"
  },
  "updated": "2026-11-20",
  "slugs": [
-  "ad-manager-enhancement-google-ads-policy-exemption-requests",
-  "build-and-publish-ai-studio-projects-in-ask-ai",
-  "email-domain-warm-up-is-now-available-to-everyone-in-highlevel-labs",
+  "explore-workflow-enrollment-and-execution-activity-across-contacts-tasks-and-opp",
   "google-integration-migration-to-marketplace-architecture",
-  "inbound-webhook-choose-suggested-contact-opportunity-and-task-actions",
-  "introducing-managed-agents-api-build-manage-publish-agents-programmatically",
-  "introducing-rich-text-editor-for-managed-agent-instructions",
-  "introducing-video-analysis-in-managed-agents",
-  "sharper-image-generation-in-managed-agents-with-gpt-image-26",
-  "workflows-now-enroll-opportunities-and-tasks-without-a-contact"
+  "introducing-routines-in-managed-agents-automate-recurring-tasks",
+  "introducing-user-signup-workflow-trigger-for-client-portal",
+  "launch-chatgpt-ads-by-openai-from-highlevel-ad-manager",
+  "meeting-room-alerts-hear-the-moments-that-matter",
+  "rental-booking-is-now-available-in-the-client-portal",
+  "share-meeting-room-recordings-with-flexible-access-controls",
+  "workflows-execution-logs-doubled-to-60-days-now-with-csv-export",
+  "workflows-now-send-internal-notifications-without-linking-a-contact"
  ]
 }

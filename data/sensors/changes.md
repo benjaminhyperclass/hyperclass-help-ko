@@ -484,3 +484,18 @@
 - `notesAiApp` 975 → 993
 - `superagentsApp` 988 → 992
 
+## 2026-11-20 20:34 UTC — main 2244 → 2246 · manifest 2244.8086 → 2246.8099
+- `adPublishingApp` 137 → 138
+- `agentBuilderApp` 981 → 995
+- `agentStudioApp` 962 → 997
+- `bladePlatformApp` 86 → 87
+- `copilotApp` 985 → 996
+- `emailBuilderMfaApp` 426 → 427
+- `eventsManagementApp` 3126 → 3133
+- `marketplaceApp` 203 → 204
+- `meetingsApp` 2336 → 2337
+- `productsApp` 425 → 430
+- `restaurantsApp` 3097 → 3130
+- `superagentsApp` 992 → 994
+- `switchyardApp` 27 → 28
+
