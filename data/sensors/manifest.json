@@ -1,5 +1,5 @@
 {
- "manifestVersion": "2244.8084",
+ "manifestVersion": "2244.8086",
  "mainAppVersion": "2244",
  "federatedApps": {
   "reputationApp": "https://appcdn.leadconnectorhq.com/revex/reputation/2311/remoteEntry.js?nocache=true",
@@ -117,7 +117,7 @@
   "agentBuilderApp": "https://appcdn.leadconnectorhq.com/ai/agent-builder/981/remoteEntry.js?nocache=true",
   "eventsManagementApp": "https://appcdn.leadconnectorhq.com/crm/events-management/3126/remoteEntry.js?nocache=true",
   "walletKitApp": "https://appcdn.leadconnectorhq.com/revex/wallet-kit/2208/remoteEntry.js?nocache=true",
-  "superagentsApp": "https://appcdn.leadconnectorhq.com/ai/superagents/988/remoteEntry.js?nocache=true",
+  "superagentsApp": "https://appcdn.leadconnectorhq.com/ai/superagents/992/remoteEntry.js?nocache=true",
   "storeCatalogApp": "https://appcdn.leadconnectorhq.com/leadgen/store-catalog/61/remoteEntry.js?nocache=true",
   "membershipAnalyticsApp": "https://appcdn.leadconnectorhq.com/revex/membership-analytics/2245/remoteEntry.js?nocache=true",
   "industryAgentsApp": "https://appcdn.leadconnectorhq.com/ai/industry-agents/885/remoteEntry.js?nocache=true",
@@ -139,7 +139,7 @@
   "emailMarketingApp": "https://appcdn.leadconnectorhq.com/leadgen/email-marketing/12/remoteEntry.js?nocache=true",
   "restaurantsApp": "https://appcdn.leadconnectorhq.com/crm/restaurants/3097/remoteEntry.js?nocache=true",
   "agentHealthApp": "https://appcdn.leadconnectorhq.com/ai/agent-health/929/remoteEntry.js?nocache=true",
-  "notesAiApp": "https://appcdn.leadconnectorhq.com/ai/notes-ai/975/remoteEntry.js?nocache=true",
+  "notesAiApp": "https://appcdn.leadconnectorhq.com/ai/notes-ai/993/remoteEntry.js?nocache=true",
   "vibeStudioApp": "https://appcdn.leadconnectorhq.com/leadgen/vibe-studio/106/remoteEntry.js?nocache=true"
  },
  "tailwindcss": "https://appcdn.leadconnectorhq.com/platform-frontend-tailwind-css/3129/output.min.css",

@@ -480,3 +480,7 @@
 - `usersApp` 3094 → 3111
 - `voiceAiApp` 980 → 991
 
+## 2026-11-20 07:31 UTC — main 2244 → 2244 · manifest 2244.8084 → 2244.8086
+- `notesAiApp` 975 → 993
+- `superagentsApp` 988 → 992
+
