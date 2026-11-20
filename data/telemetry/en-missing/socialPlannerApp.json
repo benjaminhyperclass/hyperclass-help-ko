@@ -35,8 +35,12 @@
  "connectModal.oauth.serverError": "A server error occurred. Please try again later.",
  "connectModal.oauth.timedOut": "Connection timed out. Please try again.",
  "createPost.cloneNativeMediaYoutubeVideoUnavailable": "Media cloning is restricted for native YouTube posts by YouTube's Terms of Service.",
+ "createPost.csvImportModal.csvFileTooLargeError": "{fileType} file is too large to import. Delete the empty rows, columns and formatting below your posts, then upload again.",
+ "createPost.error.tikTokPhotoTitleLength": "Title must be 90 characters or less",
  "createPost.followUpComment.tiktokReconnectDescription": "These TikTok account(s) were connected before follow-up comments were supported for TikTok. Reconnect them to add follow-up comments to their posts.",
  "createPost.followUpComment.tiktokReconnectTitle": "Reconnect TikTok to add a follow-up comment",
+ "createPost.invalidImage.onlyJpegWebpFormat": "{platform} supports JPEG and WebP image formats. Your image format is {format}",
+ "createPost.invalidImage.tiktokDimension": "TikTok supports portrait photos up to 1080x1920px and landscape photos up to 1920x1080px. Your image is {width}x{height}",
  "createPost.scheduleDateTooSoonMessage": "This post is scheduled to publish in less than {minutes} minute, so it can't be updated. Choose a later time and try again. | This post is scheduled to publish in less than {minutes} minutes, so it can't be updated. Choose a later time and try again.",
  "createPost.warning.tiktokFollowUpCommentPublicOnly": "TikTok follow-up comments only work on public posts. Select 'Everyone' to add follow-up comments.",
  "createReviewPost.captionVariationsLabel": "Caption variations",
@@ -750,5 +754,14 @@
  "socialListening.trackKeyword": "Track this keyword",
  "textFormatPresets.iconLetter": "A",
  "tikTokModal.title": "TikTok",
- "tikTokOption.commentRequiredForFollowUp": "Comments stay on while this post has a follow-up comment. Remove it to turn comments off."
+ "tikTokOption.autoAddMusicLabel": "Add recommended music from TikTok",
+ "tikTokOption.autoAddMusicTooltip": "Recommended music will automatically be added to your photos. You can change the music on TikTok after posting.",
+ "tikTokOption.commentRequiredForFollowUp": "Comments stay on while this post has a follow-up comment. Remove it to turn comments off.",
+ "tikTokOption.musicUsageConfirmationLink": "Music Usage Confirmation",
+ "tikTokOption.musicUsageConfirmationPrefix": "By posting, you agree to TikTok's",
+ "tikTokOption.photoTitleLabel": "Add a title",
+ "tikTokOption.photoTitlePlaceholder": "Enter a title for your photo post",
+ "tikTokOption.photoTitleTooltip": "Add an optional title for your TikTok photo post. Maximum 90 characters.",
+ "tikTokOption.privacyLabelPhoto": "Who can view this post?",
+ "tikTokOption.privacyTooltipPhoto": "Due to UX requirements by TikTok, you must manually select the privacy status and interaction choices for each TikTok photo post. There cannot be a default value either."
 }

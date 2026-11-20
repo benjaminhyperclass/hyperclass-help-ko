@@ -108,6 +108,7 @@
  "agentLogs.feedback.loadError": "Couldn’t load the feedback form. Please try again.",
  "agentLogs.feedback.locked": "You’ve already rated this response",
  "agentLogs.feedback.previewSubmit": "Submit (preview)",
+ "agentLogs.feedback.questions.title": "Questions",
  "agentLogs.feedback.responseLabel": "{product} response",
  "agentLogs.feedback.review.markRight": "Mark as right",
  "agentLogs.feedback.review.markWrong": "Mark as wrong",
