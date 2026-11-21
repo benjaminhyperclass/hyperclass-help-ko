@@ -427,7 +427,9 @@ superagentsApp(Managed Agents 빌더·목록·채팅 레이어)의 제품명 표
 ## [수정] 안내 창(Pendo 가이드) 차단 — 로더 v4.21.25 — 2026-11-21
 - 벤자민 캡처(2026-11-21): 대시보드 위 'NEW · Your dashboard editor just leveled up · … · Try it' 창이 영어.
 - 원인: 사전 문제가 아니다. GHL 이 **Pendo**(제3자 인앱 안내 도구)로 띄우는 창이라 vue-i18n 밖이고, 문구를 GHL 서버가 수시로 바꿔 내려준다. r6JD 실측 가이드 6개(대시보드 편집기 소개 · 스토어 하위 메뉴 · 음성 AI 업그레이드 · 음성 인텔리전스 통화 후 패널 · Shippo 연동 · 에이전시 NPS 설문) 중 3개의 단추·링크가 `app.gohighlevel.com/…/stores` · `help.gohighlevel.com` · `help.leadconnectorhq.com` 으로 간다 — 번역해도 화이트라벨 원칙에 어긋난다.
-- 결정(제안): 번역하지 않고 **창을 띄우지 않는다**. `pendo.setGuidesDisabled(true)` + `stopGuides()` + CSS(`#pendo-base`·`#pendo-backdrop`·`[id^="pendo-g-"]`·`#pendo-resource-center-container` 숨김) 이중 방어. Pendo 분석(페이지뷰·클릭)은 그대로.
+- 결정(벤자민 '배포해줘' 2026-11-21): 번역하지 않고 **창을 띄우지 않는다**. `pendo.setGuidesDisabled(true)` + `stopGuides()` + CSS(`#pendo-base`·`#pendo-backdrop`·`[id^="pendo-g-"]`·`#pendo-resource-center-container` 숨김) 이중 방어. Pendo 분석(페이지뷰·클릭)은 그대로.
 - 범위: 한글팩이 도는 모든 화면(에이전시 목록 밖 화면 포함). 킬스위치·원격 off·제외 계정에서는 손대지 않고, 제외 계정으로 옮기면 우리가 끈 것만 되돌린다. 다시 보이게: 사전 `_opts.pendoGuides: true`(원격) · `localStorage.hcKoPendo='1'`(브라우저).
 - 시험: `scripts/test-loader-pendo.js` 9단언 통과(캐너리 차단·제외 계정 무손·옵트아웃·킬스위치·목록 밖 화면·제외 계정 이동 시 되돌림·외부 호출 0) · `test-loader-ifr.js` 20/20(버전 단언만 4.21.25 로) · `test-loader-42115.js` 통과. 라이브 모의(r6JD, 같은 코드 단독 주입): 에이전트가 약 9초에 뜨자 다음 확인에서 꺼짐, 창 생성 0 — 대조군(주입 없음)은 8.6초에 창이 뜸.
-- 배포: (대기) 머지 → `scripts/publish-cdn.sh` → `loader.next` = 새 cdn SHA(캐너리 r6JD) → 새 탭 실측 → 벤자민 승인 뒤 stable. 롤백 = stable/next 를 `fab667b`(v4.21.24).
+- 배포: PR #180(main `d55ed1d`) → cdn `63a5fee`(로더 110,424B · 어댑터 7,537B, cdn = raw = 로컬 SHA-256 일치) → `loader.next`(#181) → 실측 → `loader.stable` = `next` = `63a5fee`(전 고객).
+- 실측(r6JD 새 탭, 엣지 부트스트랩 next `63a5fee`): 로더 4.21.25 · `status().pendo` on·mine·disabled·css · 대시보드 창 안 보임(Pendo 가 1.5초 확인보다 먼저 창을 붙이는 순간이 있으나 CSS 로 가려진 채 곧 걷힘) · 연락처·대화·기회·대시보드 이동 후에도 꺼진 상태, 한국어 적용 정상.
+- 롤백 = stable/next 를 `fab667b`(v4.21.24). 창만 다시 보이게 = 사전 `_opts.pendoGuides: true`.
