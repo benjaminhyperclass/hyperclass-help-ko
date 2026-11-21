@@ -1,4 +1,10 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.24
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.25
+ * v4.21.25: 안내 창(Pendo 가이드) 차단 — 대시보드의 'Your dashboard editor just leveled up' 같은 기능 소개·설문(NPS) 창은
+ *          GHL 이 Pendo 로 띄우는 영어 원문(i18n 밖)이고, 단추·링크가 app.gohighlevel.com·help.gohighlevel.com·
+ *          help.leadconnectorhq.com 으로 간다(벤자민 2026-11-21 캡처 → r6JD 실측 가이드 6개 중 3개). 번역하지 않고 창을 띄우지 않는다:
+ *          pendo.setGuidesDisabled(true)+stopGuides() + CSS 이중 방어. Pendo 분석(페이지뷰·클릭 집계)은 건드리지 않는다.
+ *          범위 = 한글팩이 도는 모든 화면(킬스위치·원격 off·제외 계정만 뺀다 — 제외 계정으로 가면 원래대로 되돌린다).
+ *          다시 보이게: core._opts.pendoGuides === true(원격) · localStorage.hcKoPendo='1'(브라우저별). 상태: status().pendo
  * v4.21.24: iframe 중계 훅을 로드 시점 경로와 무관하게 건다. 종전엔 로드 때 로케이션이 없으면(로그인·에이전시 화면) 훅을
  *          아예 걸지 않아, 새로고침 없이 서브 계정으로 들어간 탭에서는 자동화·폼 빌더·AI 스튜디오가 원본(영어)으로 떴다
  *          (벤자민 2026-11-14 자동화 화면 캡처 → 에이전시 대시보드에서 진입 재현). 중계 여부는 이제 iframe 주소를 바꿀 때마다 ifrWanted() 로 판정.
@@ -254,7 +260,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.21.24',
+    version: '4.21.25',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -282,6 +288,7 @@
       s.datesOn = kdOn();
       s.reports = reported;
       s.ifr = JSON.parse(JSON.stringify(ifr));   // v4.21.14 iframe 같은 출처 중계 상태
+      s.pendo = pgStatus();                       // v4.21.25 안내 창(Pendo 가이드) 차단 상태
       return s;
     },
     rescan: function () { scanApps(); },
@@ -297,6 +304,55 @@
     css.id = 'hc-ko-app-style';
     css.textContent = 'html[lang="ko"] body{word-break:keep-all;overflow-wrap:anywhere}';
     (document.head || document.documentElement).appendChild(css);
+  }
+
+  /* ---------- v4.21.25 안내 창(Pendo 가이드) 차단 ---------- */
+  // GHL 이 Pendo 로 띄우는 기능 소개·설문 창은 사전으로 번역할 수 없고(서버가 내려주는 영어 원문, 수시로 바뀜)
+  // 링크가 GHL 도메인으로 간다. 창 표시만 끈다 — Pendo 에이전트·분석은 그대로 둔다.
+  // Pendo 에이전트는 GHL 이 첫 상호작용·화면 안정 뒤에 늦게 올리므로(인라인 큐 스텁) 1.5초 간격으로 확인한다(값 비교 몇 개뿐).
+  // CSS 는 에이전트가 뜨기 전·다시 켜는 경우의 깜빡임 방지용. 선택자는 Pendo 가 만드는 요소 id 접두사만 쓴다.
+  var PG_CSS_ID = 'hc-ko-pendo-css';
+  var PG_SEL = '#pendo-base,#pendo-backdrop,[id^="pendo-g-"],#pendo-resource-center-container';
+  var pg = { on: false, mine: false, calls: 0, restored: 0 };
+  function pgWanted() {
+    if (excluded() || remoteOff()) return false;
+    if (lsGet('hcKoPendo') === '1') return false;
+    if (core && core._opts && core._opts.pendoGuides === true) return false;
+    return true;
+  }
+  function pgApply() {
+    var want = pgWanted();
+    try {
+      var st = document.getElementById(PG_CSS_ID);
+      if (want && !st) {
+        st = document.createElement('style'); st.id = PG_CSS_ID;
+        st.textContent = PG_SEL + '{display:none!important}';
+        (document.head || document.documentElement).appendChild(st);
+      } else if (!want && st) st.remove();
+    } catch (e) {}
+    try {
+      var p = window.pendo;
+      if (p && typeof p.setGuidesDisabled === 'function') {       // 큐 스텁에는 없다 — 실제 에이전트가 뜬 뒤에만
+        var dis = typeof p.areGuidesDisabled === 'function' ? p.areGuidesDisabled() : null;
+        if (want && dis !== true) {
+          p.setGuidesDisabled(true);
+          if (typeof p.stopGuides === 'function') p.stopGuides();
+          pg.mine = true; pg.calls++; log('Pendo 안내 창 끔');
+        } else if (!want && pg.mine) {                            // 우리가 끈 것만 되돌린다
+          p.setGuidesDisabled(false);
+          if (typeof p.startGuides === 'function') p.startGuides();
+          pg.mine = false; pg.restored++; log('Pendo 안내 창 되돌림');
+        }
+      }
+    } catch (e) {}
+    pg.on = want;
+  }
+  function pgStatus() {
+    var p = window.pendo, o = JSON.parse(JSON.stringify(pg));
+    o.agent = !!(p && typeof p.setGuidesDisabled === 'function');
+    try { o.disabled = o.agent && typeof p.areGuidesDisabled === 'function' ? p.areGuidesDisabled() : null; } catch (e) { o.disabled = null; }
+    o.css = !!document.getElementById(PG_CSS_ID);
+    return o;
   }
 
   /* ---------- vue-i18n 유틸 ---------- */
@@ -1537,6 +1593,7 @@
   }
 
   function onRoute() {
+    pgApply();   // v4.21.25 — 제외 계정으로 넘어가면 되돌리고, 돌아오면 다시 끈다
     if (!allowed()) { suspend(); return; }
     // 첫 부팅 전의 suspended 는 '범위 밖을 지나왔다'는 표시일 뿐이다(mo·인터벌은 아직 없다).
     // 그대로 boot() 하면 부팅 콜백이 suspended 를 보고 적용을 보류해, 다음 라우트 변경까지 영어로 남는다
@@ -1562,6 +1619,7 @@
   }, 500);
 
   ifrInstall();   // v4.21.14 — GHL 이 iframe 을 만들기 전에(로더는 GHL app.js 보다 먼저 뜬다)
+  pgApply(); setInterval(pgApply, 1500);   // v4.21.25 — 게이트와 무관(에이전시 목록 밖 화면도). 끄는 조건은 pgWanted()
 
   if (allowed()) boot();
   else {
