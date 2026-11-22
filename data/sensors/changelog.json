@@ -78,12 +78,13 @@
   "Workflows: Now Send Internal Notifications Without Linking a Contact": "2026-11-20",
   "🚀 Introducing User Signup Workflow Trigger for Client Portal": "2026-11-20",
   "📅 Rental Booking is Now Available in the Client Portal": "2026-11-20",
-  "Launch ChatGPT Ads by OpenAI from HighLevel Ad Manager": "2026-11-20"
+  "Launch ChatGPT Ads by OpenAI from HighLevel Ad Manager": "2026-11-20",
+  "Email 2-way sync: Know what syncs before you connect your inbox": "2026-11-22"
  },
- "updated": "2026-11-21",
+ "updated": "2026-11-22",
  "slugs": [
+  "email-2-way-sync-know-what-syncs-before-you-connect-your-inbox",
   "explore-workflow-enrollment-and-execution-activity-across-contacts-tasks-and-opp",
-  "google-integration-migration-to-marketplace-architecture",
   "introducing-routines-in-managed-agents-automate-recurring-tasks",
   "introducing-user-signup-workflow-trigger-for-client-portal",
   "launch-chatgpt-ads-by-openai-from-highlevel-ad-manager",
