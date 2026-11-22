@@ -499,3 +499,6 @@
 - `superagentsApp` 992 → 994
 - `switchyardApp` 27 → 28
 
+## 2026-11-22 19:52 UTC — main 2246 → 2246 · manifest 2246.8099 → 2246.8100
+- `restaurantsApp` 3130 → 3134
+
