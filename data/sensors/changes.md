@@ -502,3 +502,12 @@
 ## 2026-11-22 19:52 UTC — main 2246 → 2246 · manifest 2246.8099 → 2246.8100
 - `restaurantsApp` 3130 → 3134
 
+## 2026-11-23 07:54 UTC — main 2246 → 2249 · manifest 2246.8100 → 2249.8111
+- `aiGrowthApp` 978 → 999
+- `appointmentModalApp` 650 → 651
+- `conversationsV2App` 3122 → 3123
+- `integrationsApp` 202 → 205
+- `socialPlannerApp` 389 → 391
+- `ticketingApp` 3127 → 3132
+- `wordpressApp` 2210 → 2335
+
