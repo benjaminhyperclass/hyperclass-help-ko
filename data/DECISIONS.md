@@ -433,3 +433,15 @@ superagentsApp(Managed Agents 빌더·목록·채팅 레이어)의 제품명 표
 - 배포: PR #180(main `d55ed1d`) → cdn `63a5fee`(로더 110,424B · 어댑터 7,537B, cdn = raw = 로컬 SHA-256 일치) → `loader.next`(#181) → 실측 → `loader.stable` = `next` = `63a5fee`(전 고객).
 - 실측(r6JD 새 탭, 엣지 부트스트랩 next `63a5fee`): 로더 4.21.25 · `status().pendo` on·mine·disabled·css · 대시보드 창 안 보임(Pendo 가 1.5초 확인보다 먼저 창을 붙이는 순간이 있으나 CSS 로 가려진 채 곧 걷힘) · 연락처·대화·기회·대시보드 이동 후에도 꺼진 상태, 한국어 적용 정상.
 - 롤백 = stable/next 를 `fab667b`(v4.21.24). 창만 다시 보이게 = 사전 `_opts.pendoGuides: true`.
+
+## [기록] 자동화 en 대체 카탈로그 나머지 + 관리 화면 텔레메트리 라운드 — 2026-11-24
+- 벤자민 '마무리 안된 거 진행'(2026-11-24). 11-14 에 우선분 93 만 넣고 미뤘던 자동화 앱 대체 로케일(en) 전용 키 나머지와, 텔레메트리(en-missing)가 모은 호스트 미번역을 한 번에 처리.
+- 원문: 브라우저 내려받기 없이 레포 텔레메트리 카탈로그(`data/telemetry/en-missing/APP~<지문>.json`·`<ns>.json`)에서 뽑음(컨테이너는 GHL 호스트에 못 닿음).
+- 자동화(지문 `1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date`): 4,006 → 번역 8갈래 + 독립 검수 4갈래(교정 33) + 일괄 통일 201 → `ifrApps` 3,867 삽입(사전 v4.2.81, PR #183, 포인터 rev cdn `9502bdd`).
+  - 표기: Map/Workflow Maps → **맵/워크플로우 맵**(앱 기존 표기, 번역 지침의 '지도'를 덮음) · 서식 변환 액션 이름은 기존(텍스트 포맷터·숫자 형식 지정기·날짜/시간 형식 변환기·배열 포맷터) · Loop 액션 → 반복(Loop lock 은 루프 잠금) · Go To → 이동(액션) · Last Attribution → 최종 어트리뷰션 · CRM Object → 오브젝트(JSON/JS object 는 객체) · Workflow Pro → 워크플로우 프로.
+  - `{plural}` 은 한국어에서 뺀다(validate 가 무시). `{actionPlural}`·`{triggerPlural}` 은 validate 가 요구하는데 한국어에 넣으면 's' 가 남아 **deleteNodesDescription 1키는 원문 유지**.
+- 호스트 텔레메트리 43 ns 3,255 → 번역 7갈래 + 독립 검수 3갈래(교정 44) + 통일 21 → 삽입 3,026(서브 계정 관리 locationsApp 1,378 · 스냅샷 521 · 클라이언트 포털 빌더 368 · 스키마 마크업 254 · 데스크톱 앱 111 · 캘린더 구성요소 95 등). 새 ns 3개(snapshotsApp·desktopCustomizerApp·locationSettingApp)는 host 에 새로 생김.
+  - 표기: 에이전시 화면의 client → **고객**(포털 빌더의 clients 는 클라이언트) · Pause → 일시 중지 · Rebilling → 재청구 · Transfer(계정) → 이전 · Remove as Agency Sub-Account → 에이전시 서브 계정 지정 해제 · 확인 질문은 합쇼체('~하시겠습니까?') · 'GHL Blue' 테마 → 기본 블루 · 사용자가 그대로 쳐야 하는 'Confirm' 은 영어.
+- 잔여 1,267 중 같은 영어 원문의 기존 한국어가 있는 727키는 **재사용**으로 채움(유일 597 · 다수결 2/3 이상 130, 사전 v4.2.82, PR #184, 포인터 rev cdn `4453a1a`). 남은 526은 코드·단위·글꼴·제품명·예시 이름(원문 유지), 다수결이 갈린 11은 보류.
+- 크기: core 5.63→5.84MB · ifr 0.69→1.08MB(ifr 은 중계 iframe 이 붙을 때만 받음).
+- 실측(r6JD): 포인터 rev 라이브, 자동화 iframe 사전 병합(맵·반복·이동·최종 어트리뷰션 키 한국어), 호스트 스냅샷·서브 계정 관리·포털 빌더·스키마 키 한국어. 서브 계정 목록에서 남았던 'Added·Verification·Add tags' 는 v4.2.82 재사용분.
