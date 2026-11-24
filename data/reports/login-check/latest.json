@@ -1,5 +1,5 @@
 {
- "date": "2026-10-31",
+ "date": "2026-11-24",
  "rows": [
   {
    "app": "app",
@@ -8,18 +8,18 @@
    "lang": "ko",
    "path": "/",
    "appLoader": {
-    "version": "4.19.0",
+    "version": "4.21.25",
     "preauth": true,
     "allowedHere": true,
     "booted": true,
     "suspended": false,
-    "rev": "e30d4d2"
+    "rev": "9cebddc"
    },
    "boot": {
     "version": "1.3.0",
     "source": "edge",
     "channel": "stable",
-    "ref": "3bc900d"
+    "ref": "63a5fee"
    },
    "title": "",
    "english": [],
@@ -33,18 +33,18 @@
    "lang": "ko",
    "path": "/forgot_password",
    "appLoader": {
-    "version": "4.19.0",
+    "version": "4.21.25",
     "preauth": true,
     "allowedHere": true,
     "booted": true,
     "suspended": false,
-    "rev": "e30d4d2"
+    "rev": "9cebddc"
    },
    "boot": {
     "version": "1.3.0",
     "source": "edge",
     "channel": "stable",
-    "ref": "3bc900d"
+    "ref": "63a5fee"
    },
    "title": "",
    "english": [],
@@ -58,18 +58,18 @@
    "lang": "ko",
    "path": "/",
    "appLoader": {
-    "version": "4.19.0",
+    "version": "4.21.25",
     "preauth": true,
     "allowedHere": true,
     "booted": true,
     "suspended": false,
-    "rev": "e30d4d2"
+    "rev": "9cebddc"
    },
    "boot": {
     "version": "1.3.0",
     "source": "edge",
     "channel": "stable",
-    "ref": "3bc900d"
+    "ref": "63a5fee"
    },
    "title": "",
    "english": [],
@@ -80,109 +80,66 @@
    "app": "portal",
    "screen": "login",
    "url": "https://community.hyperclass.ai/login",
-   "lang": "en",
+   "lang": "ko",
    "path": "/login",
-   "title": "Sign in | 하이퍼클래스",
-   "english": [
-    "Email",
-    "Enter",
-    "New",
-    "Password",
-    "Reset",
-    "Sign",
-    "access",
-    "account",
-    "code",
-    "here",
-    "in",
-    "password",
-    "secure",
-    "to",
-    "up",
-    "with",
-    "your"
-   ],
-   "englishCount": 26,
+   "portal": {
+    "version": "4.1.3",
+    "applied": true,
+    "rev": "3fe299e",
+    "dict": "4.3.3"
+   },
+   "portalBoot": {
+    "version": "1.0.1",
+    "channel": "next",
+    "gave": null
+   },
+   "title": "로그인 | 하이퍼클래스",
+   "english": [],
+   "englishCount": 0,
    "hangul": true
   },
   {
    "app": "portal",
    "screen": "forgot",
    "url": "https://community.hyperclass.ai/forgot-password",
-   "lang": "en",
+   "lang": "ko",
    "path": "/forgot-password",
-   "title": "Forgot password | 하이퍼클래스",
-   "english": [
-    "Email",
-    "Forgot",
-    "Recover",
-    "Reset",
-    "Sign",
-    "We'll",
-    "access",
-    "account",
-    "email",
-    "in",
-    "link",
-    "now",
-    "password",
-    "reset",
-    "send",
-    "this",
-    "to",
-    "with",
-    "your"
-   ],
-   "englishCount": 23,
+   "portal": {
+    "version": "4.1.3",
+    "applied": true,
+    "rev": "3fe299e",
+    "dict": "4.3.3"
+   },
+   "portalBoot": {
+    "version": "1.0.1",
+    "channel": "next",
+    "gave": null
+   },
+   "title": "비밀번호 찾기 | 하이퍼클래스",
+   "english": [],
+   "englishCount": 0,
    "hangul": true
   },
   {
    "app": "portal",
    "screen": "signup",
    "url": "https://community.hyperclass.ai/signup",
-   "lang": "en",
+   "lang": "ko",
    "path": "/signup",
-   "title": "Sign up | 하이퍼클래스",
-   "english": [
-    "Already",
-    "Email",
-    "Enter",
-    "Full",
-    "Password",
-    "Set",
-    "Sign",
-    "Use",
-    "We'll",
-    "Your",
-    "access",
-    "account",
-    "an",
-    "and",
-    "at",
-    "characters",
-    "code",
-    "confirmation",
-    "email",
-    "few",
-    "full",
-    "have",
-    "in",
-    "including",
-    "least",
-    "letters",
-    "name",
-    "numbers",
-    "password",
-    "seconds",
-    "send",
-    "symbols",
-    "this",
-    "to",
-    "up",
-    "verify",
-    "your"
-   ],
-   "englishCount": 48,
+   "portal": {
+    "version": "4.1.3",
+    "applied": true,
+    "rev": "3fe299e",
+    "dict": "4.3.3"
+   },
+   "portalBoot": {
+    "version": "1.0.1",
+    "channel": "next",
+    "gave": null
+   },
+   "title": "회원가입 | 하이퍼클래스",
+   "english": [],
+   "englishCount": 0,
    "hangul": true
   },
   {
@@ -193,50 +150,19 @@
    "path": "/payment-link/6ae596a700921ddbe8ee08a6",
    "title": "FastPayDirect Payment Link",
    "english": [
-    "By",
-    "Email",
-    "First",
-    "Last",
-    "Monthly",
-    "Name",
-    "PG",
-    "Pay",
-    "Powered",
-    "Products",
-    "Recurring",
-    "Starter",
-    "Subtotal",
-    "Taxes",
-    "Total",
-    "You",
-    "accordance",
-    "after",
-    "allow",
-    "always",
-    "by",
-    "can",
-    "cancel",
-    "charge",
-    "confirming",
-    "due",
-    "for",
-    "future",
-    "in",
-    "month",
-    "payments",
-    "subscription",
-    "terms",
-    "their",
-    "to",
-    "today",
-    "trial",
-    "with",
-    "you",
-    "your"
+    "CODE",
+    "FOUND",
+    "LINK",
+    "NOT",
+    "PAYMENT",
+    "Payment",
+    "found",
+    "link",
+    "not"
    ],
-   "englishCount": 49,
-   "hangul": true
+   "englishCount": 9,
+   "hangul": false
   }
  ],
- "total": 146
+ "total": 9
 }
