@@ -501,6 +501,7 @@
  "searchForUsers": "Search for Users",
  "selectDisposition.loadError": "Failed to load dispositions. Please try again.",
  "selectDisposition.retry": "Retry",
+ "selectDisposition.saveError": "Couldn't save the call disposition.",
  "selectScript": "Select Script",
  "selectUsers": "Select Users",
  "selected": "SELECTED",
