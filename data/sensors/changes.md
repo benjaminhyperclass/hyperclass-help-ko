@@ -557,3 +557,16 @@
 - `snapshotsApp` 2350 → 2353
 - `usersApp` 3111 → 3148
 
+## 2026-11-24 10:08 UTC — main 2252 → 2254 · manifest 2252.8163 → 2254.8176
+- `adPublishingApp` 139 → 140
+- `aiGrowthApp` 1007 → 1009
+- `appointmentModalApp` 653 → 657
+- `calendarServicesApp` 631 → 656
+- `clientPortalBuilder` 2347 → 2354
+- `contactsHighriseApp` 3145 → 3153
+- `conversationsV2App` 3141 → 3152
+- `crmObjectsSettingsApp` 3129 → 3149
+- `customObjectsApp` 3139 → 3154
+- `funnelWebsiteApp` 254 → 257
+- `platformBillingApp` 76 → 78
+
