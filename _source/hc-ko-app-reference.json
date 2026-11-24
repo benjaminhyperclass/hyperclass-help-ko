@@ -551070,5 +551070,2913 @@
  "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.you_have_to_confirm_above_details": {
   "en": "You have to confirm the above mentioned details.",
   "ko": "위 내용을 확인해야 합니다."
+ },
+ "adPublishingApp.common.staticMergeTags.rightNow.ampm": {
+  "en": "AM/PM",
+  "ko": "오전/오후"
+ },
+ "agentBuilderApp.conversationAI.createEmployee.botSettings.form.channels.options.whatsApp": {
+  "en": "WhatsApp",
+  "ko": "왓츠앱"
+ },
+ "agentBuilderApp.conversationAI.createEmployee.deploy.workingHours.channels.options.whatsapp": {
+  "en": "WhatsApp",
+  "ko": "왓츠앱"
+ },
+ "agentBuilderApp.conversationAI.createEmployee.formBasedBot.settings.channels.whatsApp": {
+  "en": "WhatsApp",
+  "ko": "왓츠앱"
+ },
+ "agentBuilderApp.conversationAI.dashboard.channel.whatsApp": {
+  "en": "WhatsApp",
+  "ko": "왓츠앱"
+ },
+ "agentBuilderApp.conversationAI.dashboard.conversationLogs.notAvailable": {
+  "en": "N/A",
+  "ko": "해당 없음"
+ },
+ "agentBuilderApp.conversationAI.employees.list.channels.whatsApp": {
+  "en": "WhatsApp",
+  "ko": "왓츠앱"
+ },
+ "agentBuilderApp.deploy.channels.whatsapp": {
+  "en": "WhatsApp",
+  "ko": "왓츠앱"
+ },
+ "agentLogsApp.agentLogs.feedback.questions.title": {
+  "en": "Questions",
+  "ko": "질문"
+ },
+ "agentLogsApp.agentLogs.logDetail.platformHeading": {
+  "en": "Platform",
+  "ko": "플랫폼"
+ },
+ "agentLogsApp.agentLogs.logDetail.typeHeading": {
+  "en": "Type",
+  "ko": "유형"
+ },
+ "agentLogsApp.agentLogs.logDetail.variationsHeading": {
+  "en": "Variations",
+  "ko": "변형"
+ },
+ "aiEmployeesApp.aiEmployee.locationSettings.table.na": {
+  "en": "NA",
+  "ko": "해당 없음"
+ },
+ "aiEmployeesApp.aiValueLandingPage.products.agentStudio.title": {
+  "en": "Agent Studio",
+  "ko": "에이전트 스튜디오"
+ },
+ "aiEmployeesApp.common.delete": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "aiEmployeesApp.conversationAI.emailSettings.senderDetails.bcc": {
+  "en": "BCC",
+  "ko": "숨은 참조"
+ },
+ "aiEmployeesApp.conversationAI.emailSettings.senderDetails.cc": {
+  "en": "CC",
+  "ko": "참조"
+ },
+ "aiEmployeesApp.conversationAI.employees.botResponses.delete": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "aiEmployeesApp.conversationAI.employees.deleteAgent.deleteButton": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "aiEmployeesApp.conversationAI.menu.deleteBot": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "aiEmployeesApp.conversationAI.responseInfo.knowledgeChunks.faq.title": {
+  "en": "FAQ",
+  "ko": "자주 묻는 질문"
+ },
+ "aiEmployeesApp.knowledgeBase.knowledgeBaseAssetComponents.assetNames.faq": {
+  "en": "FAQ",
+  "ko": "자주 묻는 질문"
+ },
+ "aiEmployeesApp.knowledgeBase.listing.table.actionButtons.delete": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "aiEmployeesApp.knowledgeBase.tabs.fileUpload.table.columns.actions.delete": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "aiEmployeesApp.knowledgeBase.tabs.webCrawlerSection.bulkOperation.delete": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "aiEmployeesApp.knowledgeBase.views.landingPageWithAssets.assetDetails.faq.name": {
+  "en": "FAQ",
+  "ko": "자주 묻는 질문"
+ },
+ "aiEmployeesApp.knowledgeBase.views.landingPageWithoutAssets.assetNames.faq": {
+  "en": "FAQ",
+  "ko": "자주 묻는 질문"
+ },
+ "blogsApp.comments.actions.delete": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "bulkActionsApp.apiKeyModal.hubspot.step1.row1Beta": {
+  "en": "BETA",
+  "ko": "베타"
+ },
+ "bulkActionsApp.common.delete": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "bulkActionsApp.config.delete.positiveButton": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "bulkActionsApp.config.operation.delete": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "bulkActionsApp.config.operation.opportunity-delete": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "bulkActionsApp.config.operation.ops-delete": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "bulkActionsApp.config.operation.whatsapp": {
+  "en": "WhatsApp",
+  "ko": "왓츠앱"
+ },
+ "bulkActionsApp.importWizard.filter.toggleAndTitle": {
+  "en": "AND",
+  "ko": "그리고"
+ },
+ "bulkActionsApp.importWizard.filter.toggleOrTitle": {
+  "en": "OR",
+  "ko": "또는"
+ },
+ "bulkActionsApp.mergeContacts.valueOff": {
+  "en": "OFF",
+  "ko": "끄기"
+ },
+ "bulkActionsApp.mergeContacts.valueOn": {
+  "en": "ON",
+  "ko": "켜짐"
+ },
+ "bulkActionsApp.ops-delete.positiveButton": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "bulkActionsApp.whatsapp.messagePreview": {
+  "en": "Preview",
+  "ko": "미리보기"
+ },
+ "bulkActionsApp.whatsapp.templatePreviewContact": {
+  "en": "Contact",
+  "ko": "연락처"
+ },
+ "bulkActionsApp.whatsapp.templatePreviewMessagePlaceholder": {
+  "en": "Message",
+  "ko": "메시지"
+ },
+ "bulkActionsApp.whatsapp.templateSelectPlaceholder": {
+  "en": "Select",
+  "ko": "선택"
+ },
+ "bulkActionsApp.whatsapp.templateStatusAll": {
+  "en": "All",
+  "ko": "전체"
+ },
+ "bulkActionsApp.whatsapp.templateStatusApproved": {
+  "en": "Approved",
+  "ko": "승인됨"
+ },
+ "bulkActionsApp.whatsapp.templateStatusDeleted": {
+  "en": "Deleted",
+  "ko": "삭제됨"
+ },
+ "bulkActionsApp.whatsapp.templateStatusDisabled": {
+  "en": "Disabled",
+  "ko": "비활성화됨"
+ },
+ "bulkActionsApp.whatsapp.templateStatusFilter": {
+  "en": "Status",
+  "ko": "상태"
+ },
+ "bulkActionsApp.whatsapp.templateStatusPaused": {
+  "en": "Paused",
+  "ko": "일시 중지"
+ },
+ "bulkActionsApp.whatsapp.templateStatusPending": {
+  "en": "Pending",
+  "ko": "대기 중"
+ },
+ "bulkActionsApp.whatsapp.templateStatusRejected": {
+  "en": "Rejected",
+  "ko": "거절됨"
+ },
+ "bulkActionsApp.whatsapp.templateTypeAll": {
+  "en": "All",
+  "ko": "전체"
+ },
+ "bulkActionsApp.whatsapp.templateTypeDefault": {
+  "en": "Default",
+  "ko": "기본"
+ },
+ "bulkActionsApp.whatsapp.templateTypeFilter": {
+  "en": "Type",
+  "ko": "유형"
+ },
+ "bulkActionsApp.whatsapp.templateTypeMarketing": {
+  "en": "Marketing",
+  "ko": "마케팅"
+ },
+ "bulkActionsApp.whatsapp.templateTypeUtility": {
+  "en": "Utility",
+  "ko": "유틸리티"
+ },
+ "calendarComponentsApp.calendarAI.agentic.approve": {
+  "en": "Approve",
+  "ko": "승인"
+ },
+ "calendarComponentsApp.calendarAI.agentic.chatHeader.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "calendarComponentsApp.calendarAI.agentic.chatHeader.close": {
+  "en": "Close",
+  "ko": "닫기"
+ },
+ "calendarComponentsApp.calendarAI.agentic.dictation.start": {
+  "en": "Dictate",
+  "ko": "받아쓰기"
+ },
+ "calendarComponentsApp.calendarAI.agentic.doneQuestions": {
+  "en": "Done",
+  "ko": "완료"
+ },
+ "calendarComponentsApp.calendarAI.agentic.draftCard.draft": {
+  "en": "Draft",
+  "ko": "임시 저장"
+ },
+ "calendarComponentsApp.calendarAI.agentic.draftCard.host": {
+  "en": "Host",
+  "ko": "호스트"
+ },
+ "calendarComponentsApp.calendarAI.agentic.draftCard.team": {
+  "en": "Team",
+  "ko": "팀"
+ },
+ "calendarComponentsApp.calendarAI.agentic.nextQuestionButton": {
+  "en": "Next",
+  "ko": "다음"
+ },
+ "calendarComponentsApp.calendarAI.agentic.onboarding.draft": {
+  "en": "Draft",
+  "ko": "임시 저장"
+ },
+ "calendarComponentsApp.calendarAI.agentic.onboarding.groups.availability": {
+  "en": "Availability",
+  "ko": "가용성"
+ },
+ "calendarComponentsApp.calendarAI.agentic.onboarding.groups.people": {
+  "en": "People",
+  "ko": "사람"
+ },
+ "calendarComponentsApp.calendarAI.agentic.onboarding.live": {
+  "en": "Live",
+  "ko": "라이브"
+ },
+ "calendarComponentsApp.calendarAI.agentic.onboarding.none": {
+  "en": "None",
+  "ko": "없음"
+ },
+ "calendarComponentsApp.calendarAI.agentic.onboarding.preview": {
+  "en": "Preview",
+  "ko": "미리보기"
+ },
+ "calendarComponentsApp.calendarAI.agentic.onboarding.rename": {
+  "en": "Rename",
+  "ko": "이름 변경"
+ },
+ "calendarComponentsApp.calendarAI.agentic.onboarding.rows.host": {
+  "en": "Host",
+  "ko": "호스트"
+ },
+ "calendarComponentsApp.calendarAI.agentic.onboarding.rows.length": {
+  "en": "Length",
+  "ko": "길이"
+ },
+ "calendarComponentsApp.calendarAI.agentic.onboarding.rows.location": {
+  "en": "Location",
+  "ko": "위치"
+ },
+ "calendarComponentsApp.calendarAI.agentic.onboarding.rows.name": {
+  "en": "Name",
+  "ko": "이름"
+ },
+ "calendarComponentsApp.calendarAI.agentic.onboarding.rows.seats": {
+  "en": "Seats",
+  "ko": "좌석"
+ },
+ "calendarComponentsApp.calendarAI.agentic.onboarding.rows.team": {
+  "en": "Team",
+  "ko": "팀"
+ },
+ "calendarComponentsApp.calendarAI.agentic.onboarding.rows.type": {
+  "en": "Type",
+  "ko": "유형"
+ },
+ "calendarComponentsApp.calendarAI.agentic.onboarding.send": {
+  "en": "Send",
+  "ko": "보내기"
+ },
+ "calendarComponentsApp.calendarAI.agentic.onboarding.testBooking.email": {
+  "en": "Email",
+  "ko": "이메일"
+ },
+ "calendarComponentsApp.calendarAI.agentic.onboarding.testBooking.phone": {
+  "en": "Phone",
+  "ko": "전화번호"
+ },
+ "calendarComponentsApp.calendarAI.agentic.onboarding.type.event": {
+  "en": "Event",
+  "ko": "이벤트"
+ },
+ "calendarComponentsApp.calendarAI.agentic.skipQuestion": {
+  "en": "Skip",
+  "ko": "건너뛰기"
+ },
+ "calendarComponentsApp.calendarAI.agentic.submitSelection": {
+  "en": "Send",
+  "ko": "보내기"
+ },
+ "calendarComponentsApp.calendarAI.feedback.skip": {
+  "en": "Skip",
+  "ko": "건너뛰기"
+ },
+ "clientPortalBuilder.accessGroups.access": {
+  "en": "Access",
+  "ko": "액세스"
+ },
+ "clientPortalBuilder.accessGroups.addedVia.file": {
+  "en": "File",
+  "ko": "파일"
+ },
+ "clientPortalBuilder.accessGroups.addedVia.workflow": {
+  "en": "Workflow",
+  "ko": "워크플로우"
+ },
+ "clientPortalBuilder.accessGroups.addedVia.you": {
+  "en": "You",
+  "ko": "나"
+ },
+ "clientPortalBuilder.accessGroups.back": {
+  "en": "Back",
+  "ko": "뒤로"
+ },
+ "clientPortalBuilder.accessGroups.board.all": {
+  "en": "All",
+  "ko": "전체"
+ },
+ "clientPortalBuilder.accessGroups.calendarInactive": {
+  "en": "Inactive",
+  "ko": "비활성"
+ },
+ "clientPortalBuilder.accessGroups.change": {
+  "en": "Change",
+  "ko": "변경"
+ },
+ "clientPortalBuilder.accessGroups.clear": {
+  "en": "Clear",
+  "ko": "지우기"
+ },
+ "clientPortalBuilder.accessGroups.clearAll": {
+  "en": "Clear",
+  "ko": "지우기"
+ },
+ "clientPortalBuilder.accessGroups.clearSelection": {
+  "en": "Clear",
+  "ko": "지우기"
+ },
+ "clientPortalBuilder.accessGroups.client": {
+  "en": "Client",
+  "ko": "고객"
+ },
+ "clientPortalBuilder.accessGroups.clients": {
+  "en": "Clients",
+  "ko": "클라이언트"
+ },
+ "clientPortalBuilder.accessGroups.clientsFilter.all": {
+  "en": "All",
+  "ko": "전체"
+ },
+ "clientPortalBuilder.accessGroups.clientsFilter.other": {
+  "en": "Other",
+  "ko": "기타"
+ },
+ "clientPortalBuilder.accessGroups.close": {
+  "en": "Close",
+  "ko": "닫기"
+ },
+ "clientPortalBuilder.accessGroups.columnCalendar": {
+  "en": "Calendar",
+  "ko": "캘린더"
+ },
+ "clientPortalBuilder.accessGroups.contact": {
+  "en": "Contact",
+  "ko": "연락처"
+ },
+ "clientPortalBuilder.accessGroups.createFlow.new": {
+  "en": "New",
+  "ko": "신규"
+ },
+ "clientPortalBuilder.accessGroups.createFlow.preview": {
+  "en": "Preview",
+  "ko": "미리보기"
+ },
+ "clientPortalBuilder.accessGroups.delete": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "clientPortalBuilder.accessGroups.description": {
+  "en": "Description",
+  "ko": "설명"
+ },
+ "clientPortalBuilder.accessGroups.doneChoosing": {
+  "en": "Done",
+  "ko": "완료"
+ },
+ "clientPortalBuilder.accessGroups.draft": {
+  "en": "Draft",
+  "ko": "임시 저장"
+ },
+ "clientPortalBuilder.accessGroups.duplicate": {
+  "en": "Duplicate",
+  "ko": "복제"
+ },
+ "clientPortalBuilder.accessGroups.empty.book": {
+  "en": "Book",
+  "ko": "예약하기"
+ },
+ "clientPortalBuilder.accessGroups.filterAll": {
+  "en": "All",
+  "ko": "전체"
+ },
+ "clientPortalBuilder.accessGroups.finishCreate": {
+  "en": "Done",
+  "ko": "완료"
+ },
+ "clientPortalBuilder.accessGroups.group": {
+  "en": "Role",
+  "ko": "역할"
+ },
+ "clientPortalBuilder.accessGroups.included": {
+  "en": "Included",
+  "ko": "포함됨"
+ },
+ "clientPortalBuilder.accessGroups.kindVibe": {
+  "en": "App",
+  "ko": "앱"
+ },
+ "clientPortalBuilder.accessGroups.listCalendars": {
+  "en": "Calendars",
+  "ko": "캘린더"
+ },
+ "clientPortalBuilder.accessGroups.listPages": {
+  "en": "Pages",
+  "ko": "페이지"
+ },
+ "clientPortalBuilder.accessGroups.manage": {
+  "en": "Manage",
+  "ko": "관리"
+ },
+ "clientPortalBuilder.accessGroups.members": {
+  "en": "Clients",
+  "ko": "클라이언트"
+ },
+ "clientPortalBuilder.accessGroups.membersTabTitle": {
+  "en": "Clients",
+  "ko": "클라이언트"
+ },
+ "clientPortalBuilder.accessGroups.name": {
+  "en": "Name",
+  "ko": "이름"
+ },
+ "clientPortalBuilder.accessGroups.never": {
+  "en": "Never",
+  "ko": "없음"
+ },
+ "clientPortalBuilder.accessGroups.next": {
+  "en": "Next",
+  "ko": "다음"
+ },
+ "clientPortalBuilder.accessGroups.open": {
+  "en": "Open",
+  "ko": "진행 중"
+ },
+ "clientPortalBuilder.accessGroups.opensTabTitle": {
+  "en": "Access",
+  "ko": "액세스"
+ },
+ "clientPortalBuilder.accessGroups.pageColumn": {
+  "en": "Page",
+  "ko": "페이지"
+ },
+ "clientPortalBuilder.accessGroups.pageFolder": {
+  "en": "Folder",
+  "ko": "폴더"
+ },
+ "clientPortalBuilder.accessGroups.pagePublic": {
+  "en": "Public",
+  "ko": "공개"
+ },
+ "clientPortalBuilder.accessGroups.pagesTab": {
+  "en": "Pages",
+  "ko": "페이지"
+ },
+ "clientPortalBuilder.accessGroups.people": {
+  "en": "Clients",
+  "ko": "클라이언트"
+ },
+ "clientPortalBuilder.accessGroups.previous": {
+  "en": "Previous",
+  "ko": "이전"
+ },
+ "clientPortalBuilder.accessGroups.products": {
+  "en": "Products",
+  "ko": "상품"
+ },
+ "clientPortalBuilder.accessGroups.projectColumn": {
+  "en": "Project",
+  "ko": "프로젝트"
+ },
+ "clientPortalBuilder.accessGroups.publishNow": {
+  "en": "Publish",
+  "ko": "게시"
+ },
+ "clientPortalBuilder.accessGroups.remove": {
+  "en": "Remove",
+  "ko": "제거"
+ },
+ "clientPortalBuilder.accessGroups.role": {
+  "en": "Role",
+  "ko": "역할"
+ },
+ "clientPortalBuilder.accessGroups.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "clientPortalBuilder.accessGroups.saved": {
+  "en": "Saved",
+  "ko": "저장됨"
+ },
+ "clientPortalBuilder.accessGroups.sectionPages": {
+  "en": "Pages",
+  "ko": "페이지"
+ },
+ "clientPortalBuilder.accessGroups.section_communities": {
+  "en": "Communities",
+  "ko": "커뮤니티"
+ },
+ "clientPortalBuilder.accessGroups.section_courses": {
+  "en": "Courses",
+  "ko": "코스"
+ },
+ "clientPortalBuilder.accessGroups.section_profiles": {
+  "en": "Profiles",
+  "ko": "프로필"
+ },
+ "clientPortalBuilder.accessGroups.source.import": {
+  "en": "Import",
+  "ko": "가져오기"
+ },
+ "clientPortalBuilder.accessGroups.source.purchase": {
+  "en": "Purchase",
+  "ko": "구매"
+ },
+ "clientPortalBuilder.accessGroups.source.workflow": {
+  "en": "Workflow",
+  "ko": "워크플로우"
+ },
+ "clientPortalBuilder.accessGroups.statOpens": {
+  "en": "Resources",
+  "ko": "리소스"
+ },
+ "clientPortalBuilder.accessGroups.status": {
+  "en": "Status",
+  "ko": "상태"
+ },
+ "clientPortalBuilder.accessGroups.statusLive": {
+  "en": "Live",
+  "ko": "라이브"
+ },
+ "clientPortalBuilder.accessGroups.summaryTitle": {
+  "en": "Summary",
+  "ko": "요약"
+ },
+ "clientPortalBuilder.accessGroups.tabAccess": {
+  "en": "Access",
+  "ko": "액세스"
+ },
+ "clientPortalBuilder.accessGroups.tabClients": {
+  "en": "Clients",
+  "ko": "클라이언트"
+ },
+ "clientPortalBuilder.accessGroups.tpl.students.name": {
+  "en": "Students",
+  "ko": "학생"
+ },
+ "clientPortalBuilder.accessGroups.updated": {
+  "en": "Updated",
+  "ko": "수정일"
+ },
+ "clientPortalBuilder.accessGroups.updatedYesterday": {
+  "en": "Yesterday",
+  "ko": "어제"
+ },
+ "clientPortalBuilder.accessGroups.willClose": {
+  "en": "Removing",
+  "ko": "제거 중"
+ },
+ "common.countryshortcodes.na": {
+  "en": "NA",
+  "ko": "해당 없음"
+ },
+ "contactsApp.common.modalAcceptText": {
+  "en": "OK",
+  "ko": "확인"
+ },
+ "contactsApp.common.or": {
+  "en": "OR",
+  "ko": "또는"
+ },
+ "contactsApp.listView.enrich.confirm.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "conversations.messageDetails.cc": {
+  "en": "CC",
+  "ko": "참조"
+ },
+ "copilot.common.monthNamesShort.apr": {
+  "en": "Apr",
+  "ko": "4월"
+ },
+ "copilot.common.monthNamesShort.aug": {
+  "en": "Aug",
+  "ko": "8월"
+ },
+ "copilot.common.monthNamesShort.dec": {
+  "en": "Dec",
+  "ko": "12월"
+ },
+ "copilot.common.monthNamesShort.feb": {
+  "en": "Feb",
+  "ko": "2월"
+ },
+ "copilot.common.monthNamesShort.jan": {
+  "en": "Jan",
+  "ko": "1월"
+ },
+ "copilot.common.monthNamesShort.jul": {
+  "en": "Jul",
+  "ko": "7월"
+ },
+ "copilot.common.monthNamesShort.jun": {
+  "en": "Jun",
+  "ko": "6월"
+ },
+ "copilot.common.monthNamesShort.mar": {
+  "en": "Mar",
+  "ko": "3월"
+ },
+ "copilot.common.monthNamesShort.may": {
+  "en": "May",
+  "ko": "5월"
+ },
+ "copilot.common.monthNamesShort.nov": {
+  "en": "Nov",
+  "ko": "11월"
+ },
+ "copilot.common.monthNamesShort.oct": {
+  "en": "Oct",
+  "ko": "10월"
+ },
+ "copilot.common.monthNamesShort.sep": {
+  "en": "Sep",
+  "ko": "9월"
+ },
+ "copilotApp.copilot.askAi.access.level.delete": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "copilotApp.copilot.askAi.chat.toolGuideWord": {
+  "en": "Word",
+  "ko": "단어"
+ },
+ "copilotApp.copilot.askAi.projects.menu.delete": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "copilotApp.copilot.askAi.secureStore.delete": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "copilotApp.copilot.askAi.voiceFlow.conditionAnd": {
+  "en": "AND",
+  "ko": "그리고"
+ },
+ "copilotApp.copilot.askAi.voiceFlow.conditionOr": {
+  "en": "OR",
+  "ko": "또는"
+ },
+ "countdownTimerApp.customVariables.AMPM": {
+  "en": "AM/PM",
+  "ko": "오전/오후"
+ },
+ "crmCommon.tasks.datePopover.later": {
+  "en": "Later",
+  "ko": "나중에"
+ },
+ "crmCommon.tasks.datePopover.today": {
+  "en": "Today",
+  "ko": "오늘"
+ },
+ "crmCommon.tasks.datePopover.tomorrow": {
+  "en": "Tomorrow",
+  "ko": "내일"
+ },
+ "crmCommon.tasks.filterConjunction.or": {
+  "en": "OR",
+  "ko": "또는"
+ },
+ "desktopCustomizerApp.actions.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "desktopCustomizerApp.actions.close": {
+  "en": "Close",
+  "ko": "닫기"
+ },
+ "desktopCustomizerApp.actions.reset": {
+  "en": "Reset",
+  "ko": "재설정"
+ },
+ "desktopCustomizerApp.actions.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "desktopCustomizerApp.common.desktopAppDownloadModal.close": {
+  "en": "Close",
+  "ko": "닫기"
+ },
+ "desktopCustomizerApp.common.desktopAppDownloadModal.downloadCta": {
+  "en": "Download",
+  "ko": "다운로드"
+ },
+ "desktopCustomizerApp.confirm.confirmWord": {
+  "en": "Confirm",
+  "ko": "확인"
+ },
+ "desktopCustomizerApp.featureDiscovery.framework.close": {
+  "en": "Close",
+  "ko": "닫기"
+ },
+ "desktopCustomizerApp.form.titleLabel": {
+  "en": "Title",
+  "ko": "제목"
+ },
+ "desktopCustomizerApp.messages.buildConfirm": {
+  "en": "Build",
+  "ko": "빌드"
+ },
+ "desktopCustomizerApp.messages.error": {
+  "en": "Error",
+  "ko": "오류"
+ },
+ "desktopCustomizerApp.messages.uploadingInfo": {
+  "en": "Uploading",
+  "ko": "업로드 중"
+ },
+ "desktopCustomizerApp.preview.valid": {
+  "en": "Valid",
+  "ko": "유효함"
+ },
+ "desktopCustomizerApp.status.downloadsSection": {
+  "en": "Downloads",
+  "ko": "다운로드"
+ },
+ "desktopCustomizerApp.status.promotionRecommended": {
+  "en": "Recommended",
+  "ko": "추천"
+ },
+ "desktopCustomizerApp.status.tab": {
+  "en": "Status",
+  "ko": "상태"
+ },
+ "desktopCustomizerApp.theme.angle": {
+  "en": "Angle",
+  "ko": "각도"
+ },
+ "desktopCustomizerApp.theme.custom": {
+  "en": "Custom",
+  "ko": "사용자 지정"
+ },
+ "desktopCustomizerApp.theme.customPreset": {
+  "en": "Custom",
+  "ko": "사용자 지정"
+ },
+ "desktopCustomizerApp.theme.gradient": {
+  "en": "Gradient",
+  "ko": "그라데이션"
+ },
+ "desktopCustomizerApp.theme.gradientStart": {
+  "en": "Start",
+  "ko": "시작"
+ },
+ "desktopCustomizerApp.theme.heading": {
+  "en": "Theme",
+  "ko": "테마"
+ },
+ "desktopCustomizerApp.theme.presets.emerald": {
+  "en": "Emerald",
+  "ko": "에메랄드"
+ },
+ "desktopCustomizerApp.theme.presets.minimal": {
+  "en": "Minimal",
+  "ko": "미니멀"
+ },
+ "desktopCustomizerApp.theme.presets.rose": {
+  "en": "Rose",
+  "ko": "로즈"
+ },
+ "desktopCustomizerApp.theme.presets.slate": {
+  "en": "Slate",
+  "ko": "슬레이트"
+ },
+ "desktopCustomizerApp.theme.presets.violet": {
+  "en": "Violet",
+  "ko": "바이올렛"
+ },
+ "desktopCustomizerApp.upload.uploaded": {
+  "en": "Uploaded",
+  "ko": "업로드 완료"
+ },
+ "formSurveyApp.common.delete": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "funnelWebsiteAnalytics.project": {
+  "en": "Projects",
+  "ko": "프로젝트"
+ },
+ "funnelWebsiteApp.cloneFromUrl.platforms.wordpress": {
+  "en": "WordPress",
+  "ko": "워드프레스"
+ },
+ "ghlEmailBuilderCommon.chatBot.beta": {
+  "en": "BETA",
+  "ko": "베타"
+ },
+ "ghlEmailBuilderCommon.common.delete": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "ghlEmailBuilderCommon.common.notApplicable": {
+  "en": "NA",
+  "ko": "해당 없음"
+ },
+ "ghlEmailBuilderCommon.common.notAvailable": {
+  "en": "N/A",
+  "ko": "해당 없음"
+ },
+ "ghlEmailBuilderCommon.common.timePeriods.am": {
+  "en": "AM",
+  "ko": "오전"
+ },
+ "ghlEmailBuilderCommon.common.timePeriods.pm": {
+  "en": "PM",
+  "ko": "오후"
+ },
+ "ghlEmailBuilderCommon.customVariables.AMPM": {
+  "en": "AM/PM",
+  "ko": "오전/오후"
+ },
+ "ghlEmailBuilderCommon.emailBuilder.faq": {
+  "en": "FAQ",
+  "ko": "자주 묻는 질문"
+ },
+ "goKollabApp.common.delete": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "locationSettingApp.locationSettingTable.subAccountName": {
+  "en": "Name",
+  "ko": "이름"
+ },
+ "locationSettingApp.locationSettings.actions": {
+  "en": "Actions",
+  "ko": "작업"
+ },
+ "locationSettingApp.locationSettings.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "locationSettingApp.locationSettings.confirm": {
+  "en": "Confirm",
+  "ko": "확인"
+ },
+ "locationSettingApp.notifications.errorTitle": {
+  "en": "Error",
+  "ko": "오류"
+ },
+ "locationSettingApp.notifications.successTitle": {
+  "en": "Success",
+  "ko": "성공"
+ },
+ "locationSettingApp.settingsPage.title": {
+  "en": "Settings",
+  "ko": "설정"
+ },
+ "locationsApp.abandoned": {
+  "en": "Abandoned",
+  "ko": "중단됨"
+ },
+ "locationsApp.action": {
+  "en": "Action",
+  "ko": "액션"
+ },
+ "locationsApp.actions": {
+  "en": "Actions",
+  "ko": "작업"
+ },
+ "locationsApp.addSubAccount.address": {
+  "en": "Address",
+  "ko": "주소"
+ },
+ "locationsApp.addSubAccount.business": {
+  "en": "Business",
+  "ko": "비즈니스"
+ },
+ "locationsApp.addSubAccount.city": {
+  "en": "City",
+  "ko": "도시"
+ },
+ "locationsApp.addSubAccount.close": {
+  "en": "Close",
+  "ko": "닫기"
+ },
+ "locationsApp.addSubAccount.country": {
+  "en": "Country",
+  "ko": "국가"
+ },
+ "locationsApp.addSubAccount.email": {
+  "en": "Email",
+  "ko": "이메일"
+ },
+ "locationsApp.addSubAccount.name": {
+  "en": "Name",
+  "ko": "이름"
+ },
+ "locationsApp.addSubAccount.phone": {
+  "en": "Phone",
+  "ko": "전화번호"
+ },
+ "locationsApp.addSubAccount.search": {
+  "en": "Search",
+  "ko": "검색"
+ },
+ "locationsApp.addSubAccount.selectAddress": {
+  "en": "Search",
+  "ko": "검색"
+ },
+ "locationsApp.addSubAccount.state": {
+  "en": "State",
+  "ko": "주/도"
+ },
+ "locationsApp.addSubAccount.success": {
+  "en": "Success",
+  "ko": "성공"
+ },
+ "locationsApp.all": {
+  "en": "All",
+  "ko": "전체"
+ },
+ "locationsApp.appointments": {
+  "en": "Appointments",
+  "ko": "예약"
+ },
+ "locationsApp.approve": {
+  "en": "Approve",
+  "ko": "승인"
+ },
+ "locationsApp.back": {
+  "en": "Back",
+  "ko": "뒤로"
+ },
+ "locationsApp.billing.calculationFields.charge": {
+  "en": "Charge",
+  "ko": "청구"
+ },
+ "locationsApp.billing.calculationFields.profit": {
+  "en": "Profit",
+  "ko": "수익"
+ },
+ "locationsApp.billing.categories.marketing": {
+  "en": "Marketing",
+  "ko": "마케팅"
+ },
+ "locationsApp.billing.categories.sales": {
+  "en": "Sales",
+  "ko": "판매"
+ },
+ "locationsApp.billing.categories.support": {
+  "en": "Support",
+  "ko": "고객지원"
+ },
+ "locationsApp.billing.contentAiLabel": {
+  "en": "Image",
+  "ko": "이미지"
+ },
+ "locationsApp.billing.monthly": {
+  "en": "Monthly",
+  "ko": "매월"
+ },
+ "locationsApp.billing.plans.starter": {
+  "en": "Starter",
+  "ko": "스타터"
+ },
+ "locationsApp.billing.snapshot": {
+  "en": "Snapshot",
+  "ko": "스냅샷"
+ },
+ "locationsApp.billing.workflowAiCharge.inputLabel": {
+  "en": "Input",
+  "ko": "입력"
+ },
+ "locationsApp.billing.workflowAiCharge.outputLabel": {
+  "en": "Output",
+  "ko": "출력"
+ },
+ "locationsApp.billing.yearly": {
+  "en": "Yearly",
+  "ko": "매년"
+ },
+ "locationsApp.booked": {
+  "en": "Booked",
+  "ko": "예약됨"
+ },
+ "locationsApp.bulkActions.disable": {
+  "en": "Disable",
+  "ko": "끄기"
+ },
+ "locationsApp.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "locationsApp.cancelled": {
+  "en": "Cancelled",
+  "ko": "취소됨"
+ },
+ "locationsApp.clear": {
+  "en": "Clear",
+  "ko": "지우기"
+ },
+ "locationsApp.clicked": {
+  "en": "Clicked",
+  "ko": "클릭됨"
+ },
+ "locationsApp.common.actions": {
+  "en": "Actions",
+  "ko": "작업"
+ },
+ "locationsApp.common.active": {
+  "en": "Active",
+  "ko": "활성"
+ },
+ "locationsApp.common.and": {
+  "en": "AND",
+  "ko": "그리고"
+ },
+ "locationsApp.common.apply": {
+  "en": "Apply",
+  "ko": "적용"
+ },
+ "locationsApp.common.back": {
+  "en": "Back",
+  "ko": "뒤로"
+ },
+ "locationsApp.common.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "locationsApp.common.category": {
+  "en": "Category",
+  "ko": "카테고리"
+ },
+ "locationsApp.common.change": {
+  "en": "Change",
+  "ko": "변경"
+ },
+ "locationsApp.common.close": {
+  "en": "Close",
+  "ko": "닫기"
+ },
+ "locationsApp.common.continue": {
+  "en": "Continue",
+  "ko": "계속"
+ },
+ "locationsApp.common.copied": {
+  "en": "Copied",
+  "ko": "복사됨"
+ },
+ "locationsApp.common.copy": {
+  "en": "Copy",
+  "ko": "복사"
+ },
+ "locationsApp.common.descending": {
+  "en": "Descending",
+  "ko": "내림차순"
+ },
+ "locationsApp.common.draft": {
+  "en": "Draft",
+  "ko": "임시 저장"
+ },
+ "locationsApp.common.duplicate": {
+  "en": "Duplicate",
+  "ko": "복제"
+ },
+ "locationsApp.common.edit": {
+  "en": "Edit",
+  "ko": "편집"
+ },
+ "locationsApp.common.enter": {
+  "en": "Enter",
+  "ko": "입력"
+ },
+ "locationsApp.common.errors": {
+  "en": "Errors",
+  "ko": "오류"
+ },
+ "locationsApp.common.export": {
+  "en": "Export",
+  "ko": "내보내기"
+ },
+ "locationsApp.common.more": {
+  "en": "More",
+  "ko": "더보기"
+ },
+ "locationsApp.common.next": {
+  "en": "Next",
+  "ko": "다음"
+ },
+ "locationsApp.common.note": {
+  "en": "Note",
+  "ko": "메모"
+ },
+ "locationsApp.common.proceed": {
+  "en": "Proceed",
+  "ko": "계속하기"
+ },
+ "locationsApp.common.remove": {
+  "en": "Remove",
+  "ko": "제거"
+ },
+ "locationsApp.common.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "locationsApp.common.scheduled": {
+  "en": "Scheduled",
+  "ko": "예약됨"
+ },
+ "locationsApp.common.search": {
+  "en": "Search",
+  "ko": "검색"
+ },
+ "locationsApp.common.select": {
+  "en": "Select",
+  "ko": "선택"
+ },
+ "locationsApp.common.settings": {
+  "en": "Settings",
+  "ko": "설정"
+ },
+ "locationsApp.common.show": {
+  "en": "Show",
+  "ko": "표시"
+ },
+ "locationsApp.common.status": {
+  "en": "Status",
+  "ko": "상태"
+ },
+ "locationsApp.common.success": {
+  "en": "Success",
+  "ko": "성공"
+ },
+ "locationsApp.common.view": {
+  "en": "View",
+  "ko": "보기"
+ },
+ "locationsApp.complained": {
+  "en": "Complained",
+  "ko": "불만 제기됨"
+ },
+ "locationsApp.completed": {
+  "en": "Completed",
+  "ko": "완료"
+ },
+ "locationsApp.confirm": {
+  "en": "Confirm",
+  "ko": "확인"
+ },
+ "locationsApp.confirmed": {
+  "en": "Confirmed",
+  "ko": "확정"
+ },
+ "locationsApp.contacts": {
+  "en": "Contacts",
+  "ko": "연락처"
+ },
+ "locationsApp.conversations": {
+  "en": "Conversations",
+  "ko": "대화"
+ },
+ "locationsApp.createSpecialPriceModal.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "locationsApp.created": {
+  "en": "Created",
+  "ko": "생성일"
+ },
+ "locationsApp.daily": {
+  "en": "Daily",
+  "ko": "매일"
+ },
+ "locationsApp.decline": {
+  "en": "Decline",
+  "ko": "거부"
+ },
+ "locationsApp.delivered": {
+  "en": "Delivered",
+  "ko": "전달됨"
+ },
+ "locationsApp.details": {
+  "en": "Details",
+  "ko": "상세 정보"
+ },
+ "locationsApp.done": {
+  "en": "Done",
+  "ko": "완료"
+ },
+ "locationsApp.emails": {
+  "en": "Emails",
+  "ko": "이메일"
+ },
+ "locationsApp.engagement": {
+  "en": "Engagement",
+  "ko": "참여도"
+ },
+ "locationsApp.error": {
+  "en": "Error",
+  "ko": "오류"
+ },
+ "locationsApp.exportRollup.admins": {
+  "en": "Admins",
+  "ko": "관리자"
+ },
+ "locationsApp.exportRollup.users": {
+  "en": "Users",
+  "ko": "사용자"
+ },
+ "locationsApp.failed": {
+  "en": "Failed",
+  "ko": "실패"
+ },
+ "locationsApp.featureListTable.features": {
+  "en": "Features",
+  "ko": "기능"
+ },
+ "locationsApp.featureListTable.status": {
+  "en": "Status",
+  "ko": "상태"
+ },
+ "locationsApp.filter": {
+  "en": "Filter",
+  "ko": "필터"
+ },
+ "locationsApp.forms": {
+  "en": "Forms",
+  "ko": "폼"
+ },
+ "locationsApp.frequency": {
+  "en": "Frequency",
+  "ko": "발송 주기"
+ },
+ "locationsApp.funnels": {
+  "en": "Funnels",
+  "ko": "퍼널"
+ },
+ "locationsApp.icons.whatsAppAlt": {
+  "en": "WhatsApp",
+  "ko": "왓츠앱"
+ },
+ "locationsApp.inbound": {
+  "en": "Inbound",
+  "ko": "수신"
+ },
+ "locationsApp.industrySubAccount.back": {
+  "en": "Back",
+  "ko": "뒤로"
+ },
+ "locationsApp.industrySubAccount.banner.dismiss": {
+  "en": "Dismiss",
+  "ko": "닫기"
+ },
+ "locationsApp.industrySubAccount.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "locationsApp.industrySubAccount.continue": {
+  "en": "Continue",
+  "ko": "계속"
+ },
+ "locationsApp.industrySubAccount.details.business": {
+  "en": "Business",
+  "ko": "비즈니스"
+ },
+ "locationsApp.industrySubAccount.manageIndustry.confirm": {
+  "en": "Confirm",
+  "ko": "확인"
+ },
+ "locationsApp.industrySubAccount.needs.businessCoaching.communities.title": {
+  "en": "Communities",
+  "ko": "커뮤니티"
+ },
+ "locationsApp.industrySubAccount.needs.businessCoaching.courses.title": {
+  "en": "Courses",
+  "ko": "코스"
+ },
+ "locationsApp.industrySubAccount.needs.other.title": {
+  "en": "Other",
+  "ko": "기타"
+ },
+ "locationsApp.industrySubAccount.needs.restaurant.delivery.title": {
+  "en": "Delivery",
+  "ko": "배송"
+ },
+ "locationsApp.industrySubAccount.needs.restaurant.reputation.title": {
+  "en": "Reputation",
+  "ko": "평판 관리"
+ },
+ "locationsApp.industrySubAccount.needs.restaurant.reservations.title": {
+  "en": "Reservations",
+  "ko": "예약"
+ },
+ "locationsApp.industrySubAccount.new": {
+  "en": "New",
+  "ko": "신규"
+ },
+ "locationsApp.industrySubAccount.readyBanner.dismiss": {
+  "en": "Dismiss",
+  "ko": "닫기"
+ },
+ "locationsApp.locationList.columns.appointments": {
+  "en": "Appointments",
+  "ko": "예약"
+ },
+ "locationsApp.locationList.columns.contacts": {
+  "en": "Contacts",
+  "ko": "연락처"
+ },
+ "locationsApp.locationList.columns.emails": {
+  "en": "Emails",
+  "ko": "이메일"
+ },
+ "locationsApp.locationList.columns.reviews": {
+  "en": "Reviews",
+  "ko": "리뷰"
+ },
+ "locationsApp.locationList.columns.submissions": {
+  "en": "Submissions",
+  "ko": "제출"
+ },
+ "locationsApp.locationList.columns.whatsapp": {
+  "en": "WhatsApp",
+  "ko": "왓츠앱"
+ },
+ "locationsApp.locationList.status.active": {
+  "en": "Active",
+  "ko": "활성"
+ },
+ "locationsApp.locationList.status.approval": {
+  "en": "Approval",
+  "ko": "승인"
+ },
+ "locationsApp.locationList.status.declined": {
+  "en": "Declined",
+  "ko": "거절됨"
+ },
+ "locationsApp.locationList.status.paused": {
+  "en": "Paused",
+  "ko": "일시 중지"
+ },
+ "locationsApp.locationList.status.verification": {
+  "en": "Verification",
+  "ko": "인증"
+ },
+ "locationsApp.locations.ascending": {
+  "en": "Ascending",
+  "ko": "오름차순"
+ },
+ "locationsApp.locations.columns": {
+  "en": "Columns",
+  "ko": "컬럼"
+ },
+ "locationsApp.locations.combinedFilter.label": {
+  "en": "Filter",
+  "ko": "필터"
+ },
+ "locationsApp.locations.compact": {
+  "en": "Compact",
+  "ko": "좁게"
+ },
+ "locationsApp.locations.descending": {
+  "en": "Descending",
+  "ko": "내림차순"
+ },
+ "locationsApp.locations.filter": {
+  "en": "Filter",
+  "ko": "필터"
+ },
+ "locationsApp.locations.filters": {
+  "en": "Filters",
+  "ko": "필터"
+ },
+ "locationsApp.locations.groupBy.none": {
+  "en": "None",
+  "ko": "없음"
+ },
+ "locationsApp.locations.groupBy.ownership": {
+  "en": "Owner",
+  "ko": "소유자"
+ },
+ "locationsApp.locations.groupBy.plan": {
+  "en": "Plan",
+  "ko": "플랜"
+ },
+ "locationsApp.locations.groupBy.status": {
+  "en": "Status",
+  "ko": "상태"
+ },
+ "locationsApp.locations.groupBy.unknown": {
+  "en": "Unknown",
+  "ko": "알 수 없음"
+ },
+ "locationsApp.locations.ownershipLabel": {
+  "en": "Owner",
+  "ko": "소유자"
+ },
+ "locationsApp.locations.permissions": {
+  "en": "Permissions",
+  "ko": "권한"
+ },
+ "locationsApp.locations.quickLastLogin.all": {
+  "en": "Any",
+  "ko": "모두"
+ },
+ "locationsApp.locations.quickLastLogin.never": {
+  "en": "Never",
+  "ko": "없음"
+ },
+ "locationsApp.locations.quickStatus.all": {
+  "en": "All",
+  "ko": "전체"
+ },
+ "locationsApp.locations.quickStatus.label": {
+  "en": "Status",
+  "ko": "상태"
+ },
+ "locationsApp.locations.scopeAgency": {
+  "en": "Agency",
+  "ko": "에이전시"
+ },
+ "locationsApp.locations.scopeAll": {
+  "en": "All",
+  "ko": "전체"
+ },
+ "locationsApp.locations.scopeClients": {
+  "en": "Clients",
+  "ko": "클라이언트"
+ },
+ "locationsApp.locations.smartListDescription": {
+  "en": "Description",
+  "ko": "설명"
+ },
+ "locationsApp.locations.statusLabels.approval": {
+  "en": "Approval",
+  "ko": "승인"
+ },
+ "locationsApp.locations.statusLabels.declined": {
+  "en": "Declined",
+  "ko": "거절됨"
+ },
+ "locationsApp.locations.statusLabels.paused": {
+  "en": "Paused",
+  "ko": "일시 중지"
+ },
+ "locationsApp.locations.statusLabels.verification": {
+  "en": "Verification",
+  "ko": "인증"
+ },
+ "locationsApp.locations.tableValues.added": {
+  "en": "Added",
+  "ko": "추가됨"
+ },
+ "locationsApp.locations.tableValues.disabled": {
+  "en": "Disabled",
+  "ko": "비활성화됨"
+ },
+ "locationsApp.locations.tableValues.enabled": {
+  "en": "Enabled",
+  "ko": "활성화됨"
+ },
+ "locationsApp.locations.tags.clearFilter": {
+  "en": "Clear",
+  "ko": "지우기"
+ },
+ "locationsApp.locations.tags.editMenu.confirmDelete": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "locationsApp.locations.tags.manager.bulkDelete.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "locationsApp.locations.tags.manager.close": {
+  "en": "Close",
+  "ko": "닫기"
+ },
+ "locationsApp.locations.tags.manager.colActions": {
+  "en": "Actions",
+  "ko": "작업"
+ },
+ "locationsApp.locations.tags.manager.colColor": {
+  "en": "Color",
+  "ko": "색상"
+ },
+ "locationsApp.locations.tags.manager.colName": {
+  "en": "Tag",
+  "ko": "태그"
+ },
+ "locationsApp.locations.tags.manager.create.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "locationsApp.locations.tags.manager.create.colorLabel": {
+  "en": "Color",
+  "ko": "색상"
+ },
+ "locationsApp.locations.tags.manager.merge.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "locationsApp.locations.tags.manager.rename": {
+  "en": "Rename",
+  "ko": "이름 변경"
+ },
+ "locationsApp.locations.tags.reassign.back": {
+  "en": "Back",
+  "ko": "뒤로"
+ },
+ "locationsApp.lost": {
+  "en": "Lost",
+  "ko": "고객전환실패"
+ },
+ "locationsApp.manageSubAccount.account": {
+  "en": "Account",
+  "ko": "계정"
+ },
+ "locationsApp.manageSubAccount.actions": {
+  "en": "Actions",
+  "ko": "작업"
+ },
+ "locationsApp.manageSubAccount.advancedSettings.Subscribed": {
+  "en": "Subscribed",
+  "ko": "구독됨"
+ },
+ "locationsApp.manageSubAccount.advancedSettings.credit_details.balance": {
+  "en": "Balance",
+  "ko": "잔액"
+ },
+ "locationsApp.manageSubAccount.advancedSettings.email": {
+  "en": "Email",
+  "ko": "이메일"
+ },
+ "locationsApp.manageSubAccount.advancedSettings.limits": {
+  "en": "Limits",
+  "ko": "한도"
+ },
+ "locationsApp.manageSubAccount.agencySubAccountModals.confirmation.cancelText": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "locationsApp.manageSubAccount.agencySubAccountModals.confirmation.confirmText": {
+  "en": "Confirm",
+  "ko": "확인"
+ },
+ "locationsApp.manageSubAccount.agencySubAccountModals.removal.removeText": {
+  "en": "Remove",
+  "ko": "제거"
+ },
+ "locationsApp.manageSubAccount.approvalBanner.approveButton": {
+  "en": "Approve",
+  "ko": "승인"
+ },
+ "locationsApp.manageSubAccount.approvalBanner.declineButton": {
+  "en": "Decline",
+  "ko": "거부"
+ },
+ "locationsApp.manageSubAccount.calendarSettings.meetings": {
+  "en": "Meetings",
+  "ko": "미팅"
+ },
+ "locationsApp.manageSubAccount.calendarSettings.new": {
+  "en": "New",
+  "ko": "신규"
+ },
+ "locationsApp.manageSubAccount.calendarSettings.rentals": {
+  "en": "Rentals",
+  "ko": "대여"
+ },
+ "locationsApp.manageSubAccount.calendarSettings.services": {
+  "en": "Services",
+  "ko": "서비스"
+ },
+ "locationsApp.manageSubAccount.deleteLocation": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "locationsApp.manageSubAccount.loadSnapshot.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "locationsApp.manageSubAccount.loadSnapshot.proceed": {
+  "en": "Proceed",
+  "ko": "계속하기"
+ },
+ "locationsApp.manageSubAccount.loadSnapshot.select": {
+  "en": "Select",
+  "ko": "선택"
+ },
+ "locationsApp.manageSubAccount.loadSnapshot.skip": {
+  "en": "Skip",
+  "ko": "건너뛰기"
+ },
+ "locationsApp.manageSubAccount.missingPayment.communication.send": {
+  "en": "Send",
+  "ko": "보내기"
+ },
+ "locationsApp.manageSubAccount.missingPayment.contactSelection.create": {
+  "en": "Create",
+  "ko": "만들기"
+ },
+ "locationsApp.manageSubAccount.missingPayment.default": {
+  "en": "Default",
+  "ko": "기본"
+ },
+ "locationsApp.manageSubAccount.missingPayment.otherProvider.continue": {
+  "en": "Continue",
+  "ko": "계속"
+ },
+ "locationsApp.manageSubAccount.missingPayment.proceed": {
+  "en": "Proceed",
+  "ko": "계속하기"
+ },
+ "locationsApp.manageSubAccount.missingPayment.stripe.continue": {
+  "en": "Continue",
+  "ko": "계속"
+ },
+ "locationsApp.manageSubAccount.missingPayment.stripeCustomer.customerDetails.mrr": {
+  "en": "MRR",
+  "ko": "월간 반복 수익 (MRR)"
+ },
+ "locationsApp.manageSubAccount.missingPayment.stripeCustomer.customerDetails.spent": {
+  "en": "Spent",
+  "ko": "지출"
+ },
+ "locationsApp.manageSubAccount.missingPayment.stripeCustomer.customerDetails.subscriptions": {
+  "en": "Subscriptions",
+  "ko": "구독"
+ },
+ "locationsApp.manageSubAccount.notes": {
+  "en": "Notes",
+  "ko": "메모"
+ },
+ "locationsApp.manageSubAccount.rebilling.existingTwilioModal.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "locationsApp.manageSubAccount.rebilling.settings.phone": {
+  "en": "Phone",
+  "ko": "전화번호"
+ },
+ "locationsApp.manageSubAccount.rebilling.settings.revoke": {
+  "en": "Revoke",
+  "ko": "해제"
+ },
+ "locationsApp.manageSubAccount.rebilling.settings.savePricingModelChange.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "locationsApp.manageSubAccount.rebilling.times": {
+  "en": "Times",
+  "ko": "횟수"
+ },
+ "locationsApp.manageSubAccount.saas.active": {
+  "en": "Active",
+  "ko": "활성"
+ },
+ "locationsApp.manageSubAccount.saas.trialing": {
+  "en": "Trialing",
+  "ko": "트라이얼 진행 중"
+ },
+ "locationsApp.manageSubAccount.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "locationsApp.manageSubAccount.tabs.marketplace": {
+  "en": "Marketplace",
+  "ko": "마켓플레이스"
+ },
+ "locationsApp.manageSubAccount.tabs.rebilling": {
+  "en": "Rebilling",
+  "ko": "재청구"
+ },
+ "locationsApp.manageSubAccount.tabs.reselling": {
+  "en": "Reselling",
+  "ko": "재판매"
+ },
+ "locationsApp.manageSubAccount.taskModal.description": {
+  "en": "Description",
+  "ko": "설명"
+ },
+ "locationsApp.manageSubAccount.tasks": {
+  "en": "Tasks",
+  "ko": "작업"
+ },
+ "locationsApp.manageSubAccount.transferSubAccount.contacts": {
+  "en": "Contacts",
+  "ko": "연락처"
+ },
+ "locationsApp.manageSubAccount.transferSubAccount.continue": {
+  "en": "Continue",
+  "ko": "계속"
+ },
+ "locationsApp.manageSubAccount.transferSubAccount.disclaimer": {
+  "en": "Disclaimer",
+  "ko": "면책조항"
+ },
+ "locationsApp.manageSubAccount.transferSubAccount.funnels": {
+  "en": "Funnels",
+  "ko": "퍼널"
+ },
+ "locationsApp.manageSubAccount.transferSubAccount.success": {
+  "en": "Success",
+  "ko": "성공"
+ },
+ "locationsApp.manageSubAccount.transferSubAccount.workflows": {
+  "en": "Workflows",
+  "ko": "워크플로우"
+ },
+ "locationsApp.manageSubAccount.usageLimitAndFeatures.features": {
+  "en": "Features",
+  "ko": "기능"
+ },
+ "locationsApp.manageSubAccount.usageLimitAndFeatures.unlimited": {
+  "en": "Unlimited",
+  "ko": "무제한"
+ },
+ "locationsApp.manageSubAccount.wallet.amount": {
+  "en": "Amount",
+  "ko": "금액"
+ },
+ "locationsApp.manageSubAccount.wallet.balance": {
+  "en": "Balance",
+  "ko": "잔액"
+ },
+ "locationsApp.manageSubAccount.wallet.calendarSettings.meetings": {
+  "en": "Meetings",
+  "ko": "미팅"
+ },
+ "locationsApp.manageSubAccount.wallet.close": {
+  "en": "Close",
+  "ko": "닫기"
+ },
+ "locationsApp.manageSubAccount.wallet.date": {
+  "en": "Date",
+  "ko": "날짜"
+ },
+ "locationsApp.manageSubAccount.wallet.description": {
+  "en": "Description",
+  "ko": "설명"
+ },
+ "locationsApp.manageSubAccount.wallet.details": {
+  "en": "Details",
+  "ko": "상세 정보"
+ },
+ "locationsApp.manageSubAccount.wallet.proceed": {
+  "en": "Proceed",
+  "ko": "계속하기"
+ },
+ "locationsApp.manageSubAccount.wallet.status": {
+  "en": "Status",
+  "ko": "상태"
+ },
+ "locationsApp.manageSubAccount.wallet.transactions": {
+  "en": "Transactions",
+  "ko": "거래 내역"
+ },
+ "locationsApp.manageSubAccount.wallet.type": {
+  "en": "Type",
+  "ko": "유형"
+ },
+ "locationsApp.monthly": {
+  "en": "Monthly",
+  "ko": "매월"
+ },
+ "locationsApp.name": {
+  "en": "Name",
+  "ko": "이름"
+ },
+ "locationsApp.next": {
+  "en": "Next",
+  "ko": "다음"
+ },
+ "locationsApp.open": {
+  "en": "Open",
+  "ko": "진행 중"
+ },
+ "locationsApp.opened": {
+  "en": "Opened",
+  "ko": "열림"
+ },
+ "locationsApp.outbound": {
+  "en": "Outbound",
+  "ko": "발신"
+ },
+ "locationsApp.overdue": {
+  "en": "Overdue",
+  "ko": "연체"
+ },
+ "locationsApp.plan.calendar": {
+  "en": "Calendar",
+  "ko": "캘린더"
+ },
+ "locationsApp.plan.features": {
+  "en": "Features",
+  "ko": "기능"
+ },
+ "locationsApp.plan.memberships": {
+  "en": "Memberships",
+  "ko": "멤버십"
+ },
+ "locationsApp.plan.selected": {
+  "en": "Selected",
+  "ko": "선택됨"
+ },
+ "locationsApp.reaction": {
+  "en": "Reaction",
+  "ko": "반응"
+ },
+ "locationsApp.received": {
+  "en": "Received",
+  "ko": "수신됨"
+ },
+ "locationsApp.replied": {
+  "en": "Replied",
+  "ko": "답장됨"
+ },
+ "locationsApp.reviews": {
+  "en": "Reviews",
+  "ko": "리뷰"
+ },
+ "locationsApp.saasProducts.blogs": {
+  "en": "Blogs",
+  "ko": "블로그"
+ },
+ "locationsApp.saasProducts.calendar": {
+  "en": "Calendar",
+  "ko": "캘린더"
+ },
+ "locationsApp.saasProducts.campaigns": {
+  "en": "Campaigns",
+  "ko": "캠페인"
+ },
+ "locationsApp.saasProducts.communities": {
+  "en": "Communities",
+  "ko": "커뮤니티"
+ },
+ "locationsApp.saasProducts.form-builder": {
+  "en": "Forms",
+  "ko": "폼"
+ },
+ "locationsApp.saasProducts.funnels": {
+  "en": "Funnels",
+  "ko": "퍼널"
+ },
+ "locationsApp.saasProducts.invoice": {
+  "en": "Invoice",
+  "ko": "인보이스"
+ },
+ "locationsApp.saasProducts.launchpad": {
+  "en": "Launchpad",
+  "ko": "런치패드"
+ },
+ "locationsApp.saasProducts.membership": {
+  "en": "Memberships",
+  "ko": "멤버십"
+ },
+ "locationsApp.saasProducts.survey-builder": {
+  "en": "Surveys",
+  "ko": "설문"
+ },
+ "locationsApp.saasProducts.websites": {
+  "en": "Websites",
+  "ko": "웹사이트"
+ },
+ "locationsApp.saasProducts.workflow": {
+  "en": "Workflows",
+  "ko": "워크플로우"
+ },
+ "locationsApp.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "locationsApp.schedule": {
+  "en": "Schedule",
+  "ko": "일정"
+ },
+ "locationsApp.search": {
+  "en": "Search",
+  "ko": "검색"
+ },
+ "locationsApp.selected": {
+  "en": "Selected",
+  "ko": "선택됨"
+ },
+ "locationsApp.send": {
+  "en": "Send",
+  "ko": "보내기"
+ },
+ "locationsApp.sent": {
+  "en": "Sent",
+  "ko": "발송됨"
+ },
+ "locationsApp.services": {
+  "en": "Services",
+  "ko": "서비스"
+ },
+ "locationsApp.showed": {
+  "en": "Showed",
+  "ko": "참석"
+ },
+ "locationsApp.smartLists.filterPlural": {
+  "en": "Filters",
+  "ko": "필터"
+ },
+ "locationsApp.smartLists.filterSingular": {
+  "en": "Filter",
+  "ko": "필터"
+ },
+ "locationsApp.smartLists.locationFilters.categories.account": {
+  "en": "Account",
+  "ko": "계정"
+ },
+ "locationsApp.smartLists.locationFilters.categories.general": {
+  "en": "General",
+  "ko": "일반"
+ },
+ "locationsApp.smartLists.locationFilters.categories.rebilling": {
+  "en": "Rebilling",
+  "ko": "재청구"
+ },
+ "locationsApp.smartLists.locationFilters.categories.reselling": {
+  "en": "Reselling",
+  "ko": "재판매"
+ },
+ "locationsApp.smartLists.locationFilters.fields.accountStatus": {
+  "en": "Status",
+  "ko": "상태"
+ },
+ "locationsApp.smartLists.locationFilters.fields.agentStudio": {
+  "en": "Agent Studio",
+  "ko": "에이전트 스튜디오"
+ },
+ "locationsApp.smartLists.locationFilters.fields.email": {
+  "en": "Email",
+  "ko": "이메일"
+ },
+ "locationsApp.smartLists.locationFilters.fields.meetings": {
+  "en": "Meetings",
+  "ko": "미팅"
+ },
+ "locationsApp.smartLists.locationFilters.fields.phone": {
+  "en": "Phone",
+  "ko": "전화번호"
+ },
+ "locationsApp.smartLists.locationFilters.fields.services": {
+  "en": "Services",
+  "ko": "서비스"
+ },
+ "locationsApp.smartLists.locationFilters.fields.snapshots": {
+  "en": "Snapshots",
+  "ko": "스냅샷"
+ },
+ "locationsApp.smartLists.locationFilters.fields.wordpress": {
+  "en": "WordPress",
+  "ko": "워드프레스"
+ },
+ "locationsApp.smartLists.locationFilters.options.activated": {
+  "en": "Activated",
+  "ko": "활성화됨"
+ },
+ "locationsApp.smartLists.locationFilters.options.active": {
+  "en": "Active",
+  "ko": "활성"
+ },
+ "locationsApp.smartLists.locationFilters.options.added": {
+  "en": "Added",
+  "ko": "추가됨"
+ },
+ "locationsApp.smartLists.locationFilters.options.canceled": {
+  "en": "Canceled",
+  "ko": "취소됨"
+ },
+ "locationsApp.smartLists.locationFilters.options.declined": {
+  "en": "Declined",
+  "ko": "거절됨"
+ },
+ "locationsApp.smartLists.locationFilters.options.direct": {
+  "en": "Direct",
+  "ko": "다이렉트"
+ },
+ "locationsApp.smartLists.locationFilters.options.disabled": {
+  "en": "Disabled",
+  "ko": "비활성화됨"
+ },
+ "locationsApp.smartLists.locationFilters.options.enabled": {
+  "en": "Enabled",
+  "ko": "활성화됨"
+ },
+ "locationsApp.smartLists.locationFilters.options.monthly": {
+  "en": "Monthly",
+  "ko": "매월"
+ },
+ "locationsApp.smartLists.locationFilters.options.paused": {
+  "en": "Paused",
+  "ko": "일시 중지"
+ },
+ "locationsApp.smartLists.locationFilters.options.pending": {
+  "en": "Pending",
+  "ko": "대기 중"
+ },
+ "locationsApp.snapshotConflictWarning.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "locationsApp.snapshotConflictWarning.title": {
+  "en": "Warning",
+  "ko": "경고"
+ },
+ "locationsApp.sort": {
+  "en": "Sort",
+  "ko": "정렬"
+ },
+ "locationsApp.started": {
+  "en": "Started",
+  "ko": "시작됨"
+ },
+ "locationsApp.status": {
+  "en": "Status",
+  "ko": "상태"
+ },
+ "locationsApp.subAccountQuota.backButton": {
+  "en": "Back",
+  "ko": "뒤로"
+ },
+ "locationsApp.subAccountQuota.upgradeButton": {
+  "en": "Upgrade",
+  "ko": "업그레이드"
+ },
+ "locationsApp.success": {
+  "en": "Success",
+  "ko": "성공"
+ },
+ "locationsApp.surveys": {
+  "en": "Surveys",
+  "ko": "설문"
+ },
+ "locationsApp.tasks": {
+  "en": "Tasks",
+  "ko": "작업"
+ },
+ "locationsApp.test": {
+  "en": "Test",
+  "ko": "테스트"
+ },
+ "locationsApp.total": {
+  "en": "Total",
+  "ko": "합계"
+ },
+ "locationsApp.unread": {
+  "en": "Unread",
+  "ko": "읽지 않음"
+ },
+ "locationsApp.user": {
+  "en": "User",
+  "ko": "사용자"
+ },
+ "locationsApp.users": {
+  "en": "Users",
+  "ko": "사용자"
+ },
+ "locationsApp.waitlist.email": {
+  "en": "Email",
+  "ko": "이메일"
+ },
+ "locationsApp.waitlist.form": {
+  "en": "Form",
+  "ko": "폼"
+ },
+ "locationsApp.waitlist.join": {
+  "en": "Join",
+  "ko": "참여"
+ },
+ "locationsApp.waitlist.name": {
+  "en": "Name",
+  "ko": "이름"
+ },
+ "locationsApp.waitlist.notification": {
+  "en": "Notification",
+  "ko": "알림"
+ },
+ "locationsApp.websites": {
+  "en": "Websites",
+  "ko": "웹사이트"
+ },
+ "locationsApp.weekly": {
+  "en": "Weekly",
+  "ko": "매주"
+ },
+ "locationsApp.whatsapp": {
+  "en": "WhatsApp",
+  "ko": "왓츠앱"
+ },
+ "locationsApp.won": {
+  "en": "Won",
+  "ko": "고객전환성공"
+ },
+ "locationsApp.yes": {
+  "en": "Yes",
+  "ko": "예"
+ },
+ "opportunitiesApp.opportunities.conditionalRules.summary.orJoin": {
+  "en": "OR",
+  "ko": "또는"
+ },
+ "opportunitiesApp.opportunities.or": {
+  "en": "OR",
+  "ko": "또는"
+ },
+ "opportunitiesApp.pipelinePage.smartTags.sidePanel.or": {
+  "en": "OR",
+  "ko": "또는"
+ },
+ "opportunitiesApp.pipelinePage.smartTags.toggleOrTitle": {
+  "en": "OR",
+  "ko": "또는"
+ },
+ "powerDialerApp.calls.inCall.callReconnectingStatus": {
+  "en": "Reconnecting",
+  "ko": "다시 연결 중"
+ },
+ "productsApp.product.priceDetailPage.in": {
+  "en": "in",
+  "ko": "·"
+ },
+ "proposalCommon.common.cc": {
+  "en": "CC",
+  "ko": "참조"
+ },
+ "proposalCommon.common.emailCc": {
+  "en": "CC",
+  "ko": "참조"
+ },
+ "proposalCommon.common.ok": {
+  "en": "OK",
+  "ko": "확인"
+ },
+ "reportingApp.callReporting.na": {
+  "en": "NA",
+  "ko": "해당 없음"
+ },
+ "reportingApp.common.na": {
+  "en": "NA",
+  "ko": "해당 없음"
+ },
+ "reputationApp.reputation.reputationCommon.whatsApp": {
+  "en": "WhatsApp",
+  "ko": "왓츠앱"
+ },
+ "saasApp.cancellation.preview.cancelWord": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "saasApp.categories.delete": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "saasApp.common.actions.delete": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "saasApp.common.labels.or": {
+  "en": "OR",
+  "ko": "또는"
+ },
+ "saasApp.onboarding.paymentProviderList.providers.square.name": {
+  "en": "Square",
+  "ko": "정사각형"
+ },
+ "saasApp.onboarding.recommendedPlanDetailCard.featuresTitle": {
+  "en": "FEATURES",
+  "ko": "기능"
+ },
+ "saasApp.plan.defaultCurrencyCode": {
+  "en": "usd",
+  "ko": "USD"
+ },
+ "saasApp.plan.deleteWord": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "saasApp.selectFreeUnits.whatsapp.label": {
+  "en": "WhatsApp",
+  "ko": "왓츠앱"
+ },
+ "saasApp.specialist.free": {
+  "en": "FREE",
+  "ko": "무료"
+ },
+ "saasApp.stripe.benefits": {
+  "en": "BENEFITS",
+  "ko": "혜택"
+ },
+ "schemaMarkupApp.schemaMarkup.contactTypeOptions.sales": {
+  "en": "Sales",
+  "ko": "판매"
+ },
+ "schemaMarkupApp.schemaMarkup.dashboard.coverage.bands.Good": {
+  "en": "Good",
+  "ko": "좋음"
+ },
+ "schemaMarkupApp.schemaMarkup.dashboard.status.unpublished": {
+  "en": "Unpublished",
+  "ko": "게시되지 않음"
+ },
+ "schemaMarkupApp.schemaMarkup.entityType.service": {
+  "en": "Service",
+  "ko": "서비스"
+ },
+ "schemaMarkupApp.schemaMarkup.fallbackLabels.artist": {
+  "en": "Artist",
+  "ko": "아티스트"
+ },
+ "schemaMarkupApp.schemaMarkup.fallbackLabels.bestRating": {
+  "en": "Best",
+  "ko": "최적"
+ },
+ "schemaMarkupApp.schemaMarkup.fallbackLabels.location": {
+  "en": "Location",
+  "ko": "위치"
+ },
+ "schemaMarkupApp.schemaMarkup.fallbackLabels.other": {
+  "en": "Other",
+  "ko": "기타"
+ },
+ "schemaMarkupApp.schemaMarkup.fallbackLabels.price": {
+  "en": "Price",
+  "ko": "가격"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.AreaServed.@id.label": {
+  "en": "Identifier",
+  "ko": "식별자"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.AreaServed.latitude.label": {
+  "en": "Latitude",
+  "ko": "위도"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.OfferShippingDetails.addressCountry.label": {
+  "en": "Country",
+  "ko": "국가"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.Review.@type.label": {
+  "en": "Type",
+  "ko": "유형"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.common.Thing.location.label": {
+  "en": "Location",
+  "ko": "위치"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.course.CourseInstance.location.label": {
+  "en": "Location",
+  "ko": "위치"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.event.Competitor.typeLabel": {
+  "en": "Type",
+  "ko": "유형"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.event.PersonOrOrg.name.label": {
+  "en": "Name",
+  "ko": "이름"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.organization.MusicAlbum.albumReleaseTypeOptions.SingleRelease": {
+  "en": "Single",
+  "ko": "단일"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.organization.MusicAlbum.trackDuration.label": {
+  "en": "Duration",
+  "ko": "소요 시간"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.organization.MusicRecording.byArtist.label": {
+  "en": "Artist",
+  "ko": "아티스트"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.product.ProductOffer.itemConditionOptions.usedCondition": {
+  "en": "Used",
+  "ko": "사용됨"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.product.ProductOrService.typeLabel": {
+  "en": "Type",
+  "ko": "유형"
+ },
+ "schemaMarkupApp.schemaMarkup.nested.service.PersonOrOrg.typeLabel": {
+  "en": "Type",
+  "ko": "유형"
+ },
+ "schemaMarkupApp.schemaMarkup.openingHours.days.sunday": {
+  "en": "Sunday",
+  "ko": "일요일"
+ },
+ "schemaMarkupApp.schemaMarkup.openingHours.days.wednesday": {
+  "en": "Wednesday",
+  "ko": "수요일"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.imageObject.width.label": {
+  "en": "Width",
+  "ko": "너비"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.organization.member.label": {
+  "en": "Member",
+  "ko": "멤버"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.person.knowsLanguage.label": {
+  "en": "Languages",
+  "ko": "언어"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.service.image.label": {
+  "en": "Images",
+  "ko": "이미지"
+ },
+ "snapshotsApp.assetViewer.added": {
+  "en": "Added",
+  "ko": "추가됨"
+ },
+ "snapshotsApp.assetViewer.assetsTab": {
+  "en": "Assets",
+  "ko": "자산"
+ },
+ "snapshotsApp.assetViewer.current": {
+  "en": "Current",
+  "ko": "현재"
+ },
+ "snapshotsApp.assetViewer.old": {
+  "en": "Old",
+  "ko": "이전"
+ },
+ "snapshotsApp.assetViewer.removed": {
+  "en": "Removed",
+  "ko": "제거됨"
+ },
+ "snapshotsApp.common.active": {
+  "en": "Active",
+  "ko": "활성"
+ },
+ "snapshotsApp.common.assets": {
+  "en": "Assets",
+  "ko": "자산"
+ },
+ "snapshotsApp.common.back": {
+  "en": "Back",
+  "ko": "뒤로"
+ },
+ "snapshotsApp.common.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "snapshotsApp.common.category": {
+  "en": "Category",
+  "ko": "카테고리"
+ },
+ "snapshotsApp.common.change": {
+  "en": "Change",
+  "ko": "변경"
+ },
+ "snapshotsApp.common.close": {
+  "en": "Close",
+  "ko": "닫기"
+ },
+ "snapshotsApp.common.confirm": {
+  "en": "Confirm",
+  "ko": "확인"
+ },
+ "snapshotsApp.common.copied": {
+  "en": "Copied",
+  "ko": "복사됨"
+ },
+ "snapshotsApp.common.copy": {
+  "en": "Copy",
+  "ko": "복사"
+ },
+ "snapshotsApp.common.create": {
+  "en": "Create",
+  "ko": "만들기"
+ },
+ "snapshotsApp.common.delete": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "snapshotsApp.common.edit": {
+  "en": "Edit",
+  "ko": "편집"
+ },
+ "snapshotsApp.common.error": {
+  "en": "Error",
+  "ko": "오류"
+ },
+ "snapshotsApp.common.failed": {
+  "en": "Failed",
+  "ko": "실패"
+ },
+ "snapshotsApp.common.filter": {
+  "en": "Filter",
+  "ko": "필터"
+ },
+ "snapshotsApp.common.linked": {
+  "en": "Linked",
+  "ko": "연결됨"
+ },
+ "snapshotsApp.common.next": {
+  "en": "Next",
+  "ko": "다음"
+ },
+ "snapshotsApp.common.previous": {
+  "en": "Previous",
+  "ko": "이전"
+ },
+ "snapshotsApp.common.proceed": {
+  "en": "Proceed",
+  "ko": "계속하기"
+ },
+ "snapshotsApp.common.push": {
+  "en": "Push",
+  "ko": "푸시"
+ },
+ "snapshotsApp.common.remove": {
+  "en": "Remove",
+  "ko": "제거"
+ },
+ "snapshotsApp.common.restricted": {
+  "en": "Restricted",
+  "ko": "제한됨"
+ },
+ "snapshotsApp.common.retry": {
+  "en": "Retry",
+  "ko": "다시 시도"
+ },
+ "snapshotsApp.common.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "snapshotsApp.common.search": {
+  "en": "Search",
+  "ko": "검색"
+ },
+ "snapshotsApp.common.select": {
+  "en": "Select",
+  "ko": "선택"
+ },
+ "snapshotsApp.common.show": {
+  "en": "Show",
+  "ko": "표시"
+ },
+ "snapshotsApp.common.success": {
+  "en": "Success",
+  "ko": "성공"
+ },
+ "snapshotsApp.common.version": {
+  "en": "Version",
+  "ko": "버전"
+ },
+ "snapshotsApp.conflictStage.error": {
+  "en": "Error",
+  "ko": "오류"
+ },
+ "snapshotsApp.createSnapshot.creationSuccessTitle": {
+  "en": "Success",
+  "ko": "성공"
+ },
+ "snapshotsApp.createSnapshot.snapshotCreationSuccessTitle": {
+  "en": "Success",
+  "ko": "성공"
+ },
+ "snapshotsApp.editSnapshot.close": {
+  "en": "Close",
+  "ko": "닫기"
+ },
+ "snapshotsApp.editSnapshot.details": {
+  "en": "Details",
+  "ko": "상세 정보"
+ },
+ "snapshotsApp.editSnapshot.editSnapshot": {
+  "en": "Edit",
+  "ko": "편집"
+ },
+ "snapshotsApp.editSnapshot.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "snapshotsApp.editSnapshot.saveSuccess": {
+  "en": "Success",
+  "ko": "성공"
+ },
+ "snapshotsApp.linkedLocations.search": {
+  "en": "Search",
+  "ko": "검색"
+ },
+ "snapshotsApp.linkedLocations.status": {
+  "en": "Status",
+  "ko": "상태"
+ },
+ "snapshotsApp.myAccountSnapshots.search": {
+  "en": "Search",
+  "ko": "검색"
+ },
+ "snapshotsApp.progressBar.completed": {
+  "en": "Completed",
+  "ko": "완료"
+ },
+ "snapshotsApp.progressBar.progress": {
+  "en": "Progress",
+  "ko": "진행률"
+ },
+ "snapshotsApp.pushBatchDetails.title": {
+  "en": "Details",
+  "ko": "상세 정보"
+ },
+ "snapshotsApp.pushConfirmation.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "snapshotsApp.pushConfirmation.confirmWord": {
+  "en": "Confirm",
+  "ko": "확인"
+ },
+ "snapshotsApp.pushConfirmation.proceed": {
+  "en": "Proceed",
+  "ko": "계속하기"
+ },
+ "snapshotsApp.pushSnapshot.assetsTitle": {
+  "en": "Assets",
+  "ko": "자산"
+ },
+ "snapshotsApp.pushSnapshot.expand": {
+  "en": "Expand",
+  "ko": "확장"
+ },
+ "snapshotsApp.pushSnapshot.filterAll": {
+  "en": "All",
+  "ko": "전체"
+ },
+ "snapshotsApp.pushSnapshot.filterLinked": {
+  "en": "Linked",
+  "ko": "연결됨"
+ },
+ "snapshotsApp.pushSnapshot.type": {
+  "en": "Type",
+  "ko": "유형"
+ },
+ "snapshotsApp.refreshSnapshot.progress": {
+  "en": "Progress",
+  "ko": "진행률"
+ },
+ "snapshotsApp.refreshSnapshot.snapshotRefreshSuccessTitle": {
+  "en": "Success",
+  "ko": "성공"
+ },
+ "snapshotsApp.shareSnapshot.assetNameColumn": {
+  "en": "Asset",
+  "ko": "자산"
+ },
+ "snapshotsApp.shareSnapshot.emailHeading": {
+  "en": "Emails",
+  "ko": "이메일"
+ },
+ "snapshotsApp.shareSnapshot.emails": {
+  "en": "Emails",
+  "ko": "이메일"
+ },
+ "snapshotsApp.shareSnapshot.restricted": {
+  "en": "Restricted",
+  "ko": "제한됨"
+ },
+ "snapshotsApp.shareSnapshot.restrictedAssetsContinue": {
+  "en": "Continue",
+  "ko": "계속"
+ },
+ "snapshotsApp.shareSnapshot.typeColumn": {
+  "en": "Type",
+  "ko": "유형"
+ },
+ "snapshotsApp.snapshotActions.settings": {
+  "en": "Settings",
+  "ko": "설정"
+ },
+ "snapshotsApp.snapshotAssetDetails.asset": {
+  "en": "Asset",
+  "ko": "자산"
+ },
+ "snapshotsApp.snapshotAssetDetails.status": {
+  "en": "Status",
+  "ko": "상태"
+ },
+ "snapshotsApp.snapshotCategories.automotive": {
+  "en": "Automotive",
+  "ko": "자동차"
+ },
+ "snapshotsApp.snapshotCategories.creative": {
+  "en": "Creative",
+  "ko": "크리에이티브"
+ },
+ "snapshotsApp.snapshotCategories.finance": {
+  "en": "Finance",
+  "ko": "금융"
+ },
+ "snapshotsApp.snapshotCategories.insurance": {
+  "en": "Insurance",
+  "ko": "보험"
+ },
+ "snapshotsApp.snapshotCategories.legal": {
+  "en": "Legal",
+  "ko": "법률"
+ },
+ "snapshotsApp.snapshotCategories.medical": {
+  "en": "Medical",
+  "ko": "의료"
+ },
+ "snapshotsApp.snapshotCategories.other": {
+  "en": "Other",
+  "ko": "기타"
+ },
+ "snapshotsApp.snapshotCategories.services": {
+  "en": "Services",
+  "ko": "서비스"
+ },
+ "snapshotsApp.snapshotPushHistory.assets": {
+  "en": "Assets",
+  "ko": "자산"
+ },
+ "snapshotsApp.snapshotPushHistory.assetsHeader": {
+  "en": "Assets",
+  "ko": "자산"
+ },
+ "snapshotsApp.snapshotPushHistory.assetsViewTitleSuffix": {
+  "en": "Details",
+  "ko": "상세 정보"
+ },
+ "snapshotsApp.snapshotPushHistory.expand": {
+  "en": "Expand",
+  "ko": "확장"
+ },
+ "snapshotsApp.snapshotPushHistory.next": {
+  "en": "Next",
+  "ko": "다음"
+ },
+ "snapshotsApp.snapshotPushHistory.previous": {
+  "en": "Previous",
+  "ko": "이전"
+ },
+ "snapshotsApp.snapshotPushHistory.status": {
+  "en": "Status",
+  "ko": "상태"
+ },
+ "snapshotsApp.snapshotPushHistory.statusCompleted": {
+  "en": "Completed",
+  "ko": "완료"
+ },
+ "snapshotsApp.snapshotPushHistory.statusFailed": {
+  "en": "Failed",
+  "ko": "실패"
+ },
+ "snapshotsApp.snapshotPushHistory.statusHeader": {
+  "en": "Status",
+  "ko": "상태"
+ },
+ "snapshotsApp.snapshotPushHistory.statusProcessing": {
+  "en": "Processing",
+  "ko": "처리 중"
+ },
+ "snapshotsApp.snapshotPushHistory.title": {
+  "en": "History",
+  "ko": "기록"
+ },
+ "snapshotsApp.snapshotPushHistoryModal.assets": {
+  "en": "Assets",
+  "ko": "자산"
+ },
+ "snapshotsApp.snapshotPushHistoryModal.status": {
+  "en": "Status",
+  "ko": "상태"
+ },
+ "snapshotsApp.snapshotPushHistoryModal.statusCompleted": {
+  "en": "Completed",
+  "ko": "완료"
+ },
+ "snapshotsApp.snapshotPushHistoryModal.statusFailed": {
+  "en": "Failed",
+  "ko": "실패"
+ },
+ "snapshotsApp.snapshotPushHistoryModal.statusProcessing": {
+  "en": "Processing",
+  "ko": "처리 중"
+ },
+ "snapshotsApp.snapshotPushHistoryModal.statusSuccess": {
+  "en": "Success",
+  "ko": "성공"
+ },
+ "snapshotsApp.snapshotPushHistoryModal.unknown": {
+  "en": "Unknown",
+  "ko": "알 수 없음"
+ },
+ "snapshotsApp.snapshotPushHistoryModal.version": {
+  "en": "Version",
+  "ko": "버전"
+ },
+ "snapshotsApp.subAccountSnapshotHistory.type": {
+  "en": "Type",
+  "ko": "유형"
+ },
+ "snapshotsApp.subAccountSnapshotHistory.typeImported": {
+  "en": "Imported",
+  "ko": "가져옴"
+ },
+ "snapshotsApp.subAccountSnapshotHistory.typeMarketplace": {
+  "en": "Marketplace",
+  "ko": "마켓플레이스"
+ },
+ "snapshotsApp.subAccountSnapshotHistory.typeTemplate": {
+  "en": "Template",
+  "ko": "템플릿"
+ },
+ "snapshotsApp.subAccountSnapshotHistory.unknown": {
+  "en": "Unknown",
+  "ko": "알 수 없음"
+ },
+ "socialPlannerApp.socialListening.alerts.previewDriverBadge": {
+  "en": "in",
+  "ko": "·"
+ },
+ "superagentsApp.agentStudioPanel.computer.newBadge": {
+  "en": "NEW",
+  "ko": "신규"
+ },
+ "superagentsApp.agentStudioPanel.editor.bold": {
+  "en": "Bold",
+  "ko": "굵게"
+ },
+ "superagentsApp.agentStudioPanel.editor.divider": {
+  "en": "Divider",
+  "ko": "구분선"
+ },
+ "superagentsApp.agentStudioPanel.editor.format": {
+  "en": "Format",
+  "ko": "형식"
+ },
+ "superagentsApp.agentStudioPanel.editor.italic": {
+  "en": "Italic",
+  "ko": "기울임"
+ },
+ "superagentsApp.agentStudioPanel.editor.link": {
+  "en": "Link",
+  "ko": "링크"
+ },
+ "superagentsApp.agentStudioPanel.editor.linkMark": {
+  "en": "Link",
+  "ko": "링크"
+ },
+ "superagentsApp.agentStudioPanel.editor.strike": {
+  "en": "Strikethrough",
+  "ko": "취소선"
+ },
+ "superagentsApp.agentStudioPanel.editor.table": {
+  "en": "Table",
+  "ko": "테이블"
+ },
+ "superagentsApp.agentStudioPanel.editor.team": {
+  "en": "Team",
+  "ko": "팀"
+ },
+ "superagentsApp.agentStudioPanel.editor.text": {
+  "en": "Text",
+  "ko": "텍스트"
+ },
+ "superagentsApp.agentStudioPanel.editor.tools": {
+  "en": "Tools",
+  "ko": "도구"
+ },
+ "superagentsApp.agentStudioPanel.editor.underline": {
+  "en": "Underline",
+  "ko": "밑줄"
+ },
+ "superagentsApp.agentStudioPanel.editor.variables": {
+  "en": "Variables",
+  "ko": "변수"
+ },
+ "superagentsApp.agentStudioPanel.imageQuality.costRowImage": {
+  "en": "Image",
+  "ko": "이미지"
+ },
+ "superagentsApp.chatLayer.browserKeyEnter": {
+  "en": "Enter",
+  "ko": "입력"
+ },
+ "superagentsApp.chatLayer.browserKeyTab": {
+  "en": "Tab",
+  "ko": "탭"
+ },
+ "superagentsApp.chatLayer.procDeleteConfirm": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.note.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.note.close": {
+  "en": "Close",
+  "ko": "닫기"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.note.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "superagentsApp.singleAgentBuilder.triggers.note.you": {
+  "en": "You",
+  "ko": "나"
+ },
+ "usersMicroApp.users.permissions.heading.whatsapp": {
+  "en": "WhatsApp",
+  "ko": "왓츠앱"
+ },
+ "usersMicroApp.users.transfer.back": {
+  "en": "Back",
+  "ko": "뒤로"
+ },
+ "usersMicroApp.users.transfer.manage": {
+  "en": "Manage",
+  "ko": "관리"
+ },
+ "usersMicroApp.users.transfer.request.expired": {
+  "en": "Expired",
+  "ko": "만료됨"
+ },
+ "usersMicroApp.users.transfer.request.keep": {
+  "en": "Keep",
+  "ko": "유지"
+ },
+ "usersMicroApp.users.transfer.request.revokeAction": {
+  "en": "Revoke",
+  "ko": "해제"
+ },
+ "usersMicroApp.users.transfer.request.sent": {
+  "en": "Sent",
+  "ko": "발송됨"
  }
 }
