@@ -146,11 +146,17 @@
    "app": "pay",
    "screen": "payment-link",
    "url": "https://links.hyperclass.ai/payment-link/6ae596a700921ddbe8ee08a6",
-   "lang": "",
+   "lang": "ko",
    "path": "/payment-link/6ae596a700921ddbe8ee08a6",
-   "title": "FastPayDirect Payment Link",
+   "pay": {
+    "version": "1.0.1",
+    "applied": true,
+    "rev": "3fe299e",
+    "termsFixed": 0,
+    "gave": null
+   },
+   "title": "결제 링크",
    "english": [
-    "CODE",
     "FOUND",
     "LINK",
     "NOT",
@@ -160,9 +166,9 @@
     "link",
     "not"
    ],
-   "englishCount": 9,
-   "hangul": false
+   "englishCount": 8,
+   "hangul": true
   }
  ],
- "total": 9
+ "total": 8
 }

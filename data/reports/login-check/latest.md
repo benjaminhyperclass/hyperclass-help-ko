@@ -10,4 +10,4 @@
 | portal | login | `/login` | ko | portal 4.1.3 applied=True rev 3fe299e | 0 |  |
 | portal | forgot | `/forgot-password` | ko | portal 4.1.3 applied=True rev 3fe299e | 0 |  |
 | portal | signup | `/signup` | ko | portal 4.1.3 applied=True rev 3fe299e | 0 |  |
-| pay | payment-link | `/payment-link/6ae596a700921ddbe8ee08a6` |  | 결제 로더 없음(엣지 미주입) · 탭 'FastPayDirect Payment Link' | 9 | CODE, FOUND, LINK, NOT, PAYMENT, Payment, found, link, not |
+| pay | payment-link | `/payment-link/6ae596a700921ddbe8ee08a6` | ko | pay 1.0.1 applied=True terms=0 · 탭 '결제 링크' | 8 | FOUND, LINK, NOT, PAYMENT, Payment, found, link, not |
