@@ -442,6 +442,6 @@ superagentsApp(Managed Agents 빌더·목록·채팅 레이어)의 제품명 표
   - `{plural}` 은 한국어에서 뺀다(validate 가 무시). `{actionPlural}`·`{triggerPlural}` 은 validate 가 요구하는데 한국어에 넣으면 's' 가 남아 **deleteNodesDescription 1키는 원문 유지**.
 - 호스트 텔레메트리 43 ns 3,255 → 번역 7갈래 + 독립 검수 3갈래(교정 44) + 통일 21 → 삽입 3,026(서브 계정 관리 locationsApp 1,378 · 스냅샷 521 · 클라이언트 포털 빌더 368 · 스키마 마크업 254 · 데스크톱 앱 111 · 캘린더 구성요소 95 등). 새 ns 3개(snapshotsApp·desktopCustomizerApp·locationSettingApp)는 host 에 새로 생김.
   - 표기: 에이전시 화면의 client → **고객**(포털 빌더의 clients 는 클라이언트) · Pause → 일시 중지 · Rebilling → 재청구 · Transfer(계정) → 이전 · Remove as Agency Sub-Account → 에이전시 서브 계정 지정 해제 · 확인 질문은 합쇼체('~하시겠습니까?') · 'GHL Blue' 테마 → 기본 블루 · 사용자가 그대로 쳐야 하는 'Confirm' 은 영어.
-- 잔여 1,267 중 같은 영어 원문의 기존 한국어가 있는 727키는 **재사용**으로 채움(유일 597 · 다수결 2/3 이상 130, 사전 v4.2.82, PR #184, 포인터 rev cdn `4453a1a`). 남은 526은 코드·단위·글꼴·제품명·예시 이름(원문 유지), 다수결이 갈린 11은 보류.
+- 잔여 1,267 중 같은 영어 원문의 기존 한국어가 있는 727키는 **재사용**으로 채움(유일 597 · 다수결 2/3 이상 130, 사전 v4.2.82, PR #184, 포인터 rev cdn `4453a1a`). 서브 계정 목록 태그 칸 라벨 'Add tags' 는 카탈로그 밖 span 이라 _text 1(v4.2.83, PR #186, cdn `3ae850c`). 남은 526은 코드·단위·글꼴·제품명·예시 이름(원문 유지), 다수결이 갈린 11은 보류.
 - 크기: core 5.63→5.84MB · ifr 0.69→1.08MB(ifr 은 중계 iframe 이 붙을 때만 받음).
 - 실측(r6JD): 포인터 rev 라이브, 자동화 iframe 사전 병합(맵·반복·이동·최종 어트리뷰션 키 한국어), 호스트 스냅샷·서브 계정 관리·포털 빌더·스키마 키 한국어. 서브 계정 목록에서 남았던 'Added·Verification·Add tags' 는 v4.2.82 재사용분.
