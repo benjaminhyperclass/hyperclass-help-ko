@@ -82,19 +82,22 @@
   "Email 2-way sync: Know what syncs before you connect your inbox": "2026-11-22",
   "🖼️ Introducing Media Library Integration in Managed Agents!": "2026-11-24",
   "AI Studio: Choose Which AI Model Builds Each Message": "2026-11-24",
-  "Exhibitors & Sponsors Now Available on All Events!": "2026-11-24"
+  "Exhibitors & Sponsors Now Available on All Events!": "2026-11-24",
+  "Workflows: Populate Date-Time Contact Fields with Dynamic Values": "2026-11-24",
+  "Custom Date Reminders: Access opportunity details natively, no Find Opportunity needed": "2026-11-24",
+  "Credential Analytics: See how your certificates and badges perform": "2026-11-24"
  },
  "updated": "2026-11-24",
  "slugs": [
   "ai-studio-choose-which-ai-model-builds-each-message",
+  "credential-analytics-see-how-your-certificates-and-badges-perform",
+  "custom-date-reminders-access-opportunity-details-natively-no-find-opportunity-ne",
   "email-2-way-sync-know-what-syncs-before-you-connect-your-inbox",
   "exhibitors-sponsors-now-available-on-all-events",
   "explore-workflow-enrollment-and-execution-activity-across-contacts-tasks-and-opp",
   "introducing-media-library-integration-in-managed-agents",
-  "introducing-routines-in-managed-agents-automate-recurring-tasks",
   "meeting-room-alerts-hear-the-moments-that-matter",
   "share-meeting-room-recordings-with-flexible-access-controls",
-  "workflows-execution-logs-doubled-to-60-days-now-with-csv-export",
-  "workflows-now-send-internal-notifications-without-linking-a-contact"
+  "workflows-populate-date-time-contact-fields-with-dynamic-values"
  ]
 }

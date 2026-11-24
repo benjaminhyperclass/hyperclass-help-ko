@@ -570,3 +570,11 @@
 - `funnelWebsiteApp` 254 → 257
 - `platformBillingApp` 76 → 78
 
+## 2026-11-24 22:37 UTC — main 2254 → 2254 · manifest 2254.8176 → 2254.8182
+- `aiGrowthApp` 1009 → 1011
+- `contactsHighriseApp` 3153 → 3157
+- `copilotApp` 998 → 1010
+- `locationsApp` 2342 → 2343
+- `membershipApp` 2298 → 2356
+- `platformBillingApp` 78 → 80
+
