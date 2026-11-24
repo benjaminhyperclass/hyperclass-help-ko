@@ -511,3 +511,37 @@
 - `ticketingApp` 3127 → 3132
 - `wordpressApp` 2210 → 2335
 
+## 2026-11-24 00:06 UTC — main 2249 → 2252 · manifest 2249.8111 → 2252.8155
+- `actionsPlatformApp` 976 → 1005
+- `adPublishingApp` 138 → 139
+- `agencyDashboardApp` 2334 → 2349
+- `aiGrowthApp` 999 → 1007
+- `appointmentModalApp` 651 → 652
+- `authApp` 3089 → 5
+- `clientPortalBuilder` 2328 → 2347
+- `contactsHighriseApp` 3129 → 3139
+- `conversationsV2App` 3123 → 3141
+- `copilotApp` 996 → 998
+- `customObjectsApp` 3121 → 3139
+- `defaultEmailTemplatesApp` 401 → 429
+- `emailBuilderMfaApp` 427 → 431
+- `emailHomeV2App` 425 → 433
+- `funnelWebsiteApp` 253 → 254
+- `i18nFeedbackApp` 45 → -feedback/v6/remoteEntry.js?nocache=true
+- `kollabSupportApp` 2208 → 2348
+- `leadconnectorIntegrationsApp` 3117 → 3144
+- `locationsApp` 2331 → 2342
+- `meetingsApp` 2337 → 2346
+- `onboardingApp` 243 → 244
+- `opportunitiesApp` 3121 → 3140
+- `phoneIntegrationApp` 2332 → 2341
+- `powerDialerApp` 2310 → 2352
+- `reportingApp` 327 → 329
+- `restaurantsApp` 3134 → 3143
+- `snapshotsApp` 2325 → 2350
+- `socialPlannerApp` 391 → 392
+- `superagentsApp` 994 → 1005
+- `switchyardApp` 28 → 29
+- `vibeStudioApp` 106 → 114
+- `voiceAiApp` 991 → 1002
+

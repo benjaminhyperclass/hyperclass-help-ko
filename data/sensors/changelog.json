@@ -79,17 +79,20 @@
   "🚀 Introducing User Signup Workflow Trigger for Client Portal": "2026-11-20",
   "📅 Rental Booking is Now Available in the Client Portal": "2026-11-20",
   "Launch ChatGPT Ads by OpenAI from HighLevel Ad Manager": "2026-11-20",
-  "Email 2-way sync: Know what syncs before you connect your inbox": "2026-11-22"
+  "Email 2-way sync: Know what syncs before you connect your inbox": "2026-11-22",
+  "🖼️ Introducing Media Library Integration in Managed Agents!": "2026-11-24",
+  "AI Studio: Choose Which AI Model Builds Each Message": "2026-11-24",
+  "Exhibitors & Sponsors Now Available on All Events!": "2026-11-24"
  },
- "updated": "2026-11-23",
+ "updated": "2026-11-24",
  "slugs": [
+  "ai-studio-choose-which-ai-model-builds-each-message",
   "email-2-way-sync-know-what-syncs-before-you-connect-your-inbox",
+  "exhibitors-sponsors-now-available-on-all-events",
   "explore-workflow-enrollment-and-execution-activity-across-contacts-tasks-and-opp",
+  "introducing-media-library-integration-in-managed-agents",
   "introducing-routines-in-managed-agents-automate-recurring-tasks",
-  "introducing-user-signup-workflow-trigger-for-client-portal",
-  "launch-chatgpt-ads-by-openai-from-highlevel-ad-manager",
   "meeting-room-alerts-hear-the-moments-that-matter",
-  "rental-booking-is-now-available-in-the-client-portal",
   "share-meeting-room-recordings-with-flexible-access-controls",
   "workflows-execution-logs-doubled-to-60-days-now-with-csv-export",
   "workflows-now-send-internal-notifications-without-linking-a-contact"
