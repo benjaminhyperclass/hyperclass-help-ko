@@ -590,3 +590,32 @@
 - `reportingApp` 329 → 331
 - `snapshotsApp` 2353 → 2368
 
+## 2026-11-25 21:51 UTC — main 2255 → 2257 · manifest 2255.8193 → 2257.8219
+- `actionsPlatformApp` 1012 → 1018
+- `agentBuilderApp` 995 → 1016
+- `bulkActionsApp` 3129 → 3162
+- `certificatesApp` 2324 → 2370
+- `contactsApp` 3129 → 3162
+- `contactsHighriseApp` 3157 → 3162
+- `conversationsV2App` 3152 → 3162
+- `copilotApp` 1010 → 1013
+- `crmObjectsSettingsApp` 3149 → 3163
+- `customFieldsApp` 3087 → 3162
+- `customObjectsApp` 3154 → 3162
+- `emailHomeV2App` 436 → 438
+- `emailInfraRemoteApp` 10 → 11
+- `emailSequenceApp` 436 → 438
+- `ghlContactRestoreApp` 2916 → 3162
+- `locationsApp` 2358 → 2373
+- `mediaCenterApp` 191 → 192
+- `notesAiApp` 1008 → 1017
+- `onboardingApp` 245 → 246
+- `opportunitiesApp` 3146 → 3162
+- `phoneIntegrationApp` 2341 → 2369
+- `powerDialerApp` 2352 → 2357
+- `restaurantsApp` 3143 → 3171
+- `superagentsApp` 1005 → 1020
+- `switchyardApp` 29 → 31
+- `ticketingApp` 3132 → 3162
+- `usersApp` 3148 → 3158
+
