@@ -578,3 +578,15 @@
 - `membershipApp` 2298 → 2356
 - `platformBillingApp` 78 → 80
 
+## 2026-11-25 08:53 UTC — main 2254 → 2255 · manifest 2254.8182 → 2255.8193
+- `actionsPlatformApp` 1005 → 1012
+- `emailBuilderMfaApp` 431 → 437
+- `emailMarketingApp` 12 → 14
+- `emailPreviewApp` 413 → 437
+- `eventsManagementApp` 3133 → 3156
+- `leadconnectorIntegrationsApp` 3144 → 3164
+- `locationsApp` 2343 → 2358
+- `membershipApp` 2356 → 2372
+- `reportingApp` 329 → 331
+- `snapshotsApp` 2353 → 2368
+
