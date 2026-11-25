@@ -147,6 +147,7 @@
  "bundle.productTooltips.WhatsAppUsage": "WhatsApp conversations",
  "bundle.productTooltips.WorkflowExternalAIModels": "Workflow executions using external AI models",
  "bundle.productTooltips.WorkflowPremiumFeatures": "Premium workflow triggers and actions",
+ "bundle.pulseInfo": "1 pulse = 6 seconds",
  "bundle.rebillingColumnTooltip": "Sub-accounts are charged your service cost multiplied by the markup you set.",
  "bundle.required": "Required",
  "bundle.review.absorbedDescription": "Agency absorbs the cost. Sub-account is not billed.",
