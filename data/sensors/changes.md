@@ -619,3 +619,15 @@
 - `ticketingApp` 3132 → 3162
 - `usersApp` 3148 → 3158
 
+## 2026-11-26 08:38 UTC — main 2257 → 2263 · manifest 2257.8219 → 2263.8232
+- `bulkActionsApp` 3162 → 3166
+- `chatWidgetApp` 131 → 132
+- `desktopCustomizerApp` 2208 → 2371
+- `labsApp` 16 → 18
+- `marketplaceApp` 204 → 208
+- `notesAiApp` 1017 → 1021
+- `resellingApp` 2292 → 2381
+- `restaurantsApp` 3171 → 3175
+- `usersApp` 3158 → 3165
+- `voiceAiApp` 1002 → 1019
+
