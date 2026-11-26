@@ -2,12 +2,13 @@
 import worker from '../src/index.js';
 let ok = 0, bad = 0; const chk = (c, m) => { if (c) ok++; else { bad++; console.log('  ✗ ' + m); } };
 const calls = [];
-const have = { wf: new Set(['/assets/wf-a.js', '/v2/x', '/assets/index-V8vU7Pxn.js', '/assets/index.976028e2.js', '/assets/automation-workflows.js']), crm: new Set(['/assets/crm-b.css']), vibe: new Set(['/assets/vibe-c.js']), fsb: new Set(['/assets/index-926c79d3.js', '/form-builder-v2/F1']) };
+const have = { wf: new Set(['/assets/wf-a.js', '/v2/x', '/assets/index-V8vU7Pxn.js', '/assets/index.976028e2.js', '/assets/automation-workflows.js']), crm: new Set(['/assets/crm-b.css']), vibe: new Set(['/assets/vibe-c.js']), pro: new Set([]), fsb: new Set(['/assets/index-926c79d3.js', '/form-builder-v2/F1']) };
 globalThis.fetch = async (input, init) => {
   const u = new URL(typeof input === 'string' ? input : input.url);
   calls.push(u.host + u.pathname);
   if (u.host === 'app.hyperclass.ai') return new Response('origin', { status: 200, headers: { 'x-origin': '1' } });
-  const k = u.host.startsWith('client-app-automation-workflows') ? 'wf' : u.host.startsWith('client-app-crm-settings') ? 'crm' : u.host.startsWith('leadgen-vibe-ai-builder') ? 'vibe' : u.host.startsWith('leadgen-apps-form-survey-builder') ? 'fsb' : null;
+  const k = u.host.startsWith('client-app-automation-workflows') ? 'wf' : u.host.startsWith('client-app-crm-settings') ? 'crm' : u.host.startsWith('leadgen-vibe-ai-builder') ? 'vibe' : u.host.startsWith('leadgen-apps-form-survey-builder') ? 'fsb' : u.host === 'prod.analyzemy.business' ? 'pro' : null;
+  if (k === 'pro' && u.pathname === '/') return new Response('<!doctype html><html><head><script type="module" src="https://prod.analyzemy.business/165/assets/js/index-X1b165.js"></script></head><body><div id="app"></div></body></html>', { status: 200, headers: { 'content-type': 'text/html; charset=utf-8' } });
   if (!k) throw new Error('unexpected host ' + u.host);
   if (u.pathname === '/v2/x') return new Response('<html><head><title>t</title></head><body><script src="/assets/wf-a.js"></script><a href="//cdn.example/x">x</a></body></html>', { status: 200, headers: { 'content-type': 'text/html', 'set-cookie': 'a=1', 'content-security-policy': "default-src 'self'", 'x-frame-options': 'DENY' } });
   if (have[k].has(u.pathname)) return new Response('asset:' + k, { status: 200, headers: { 'content-type': 'text/javascript', 'cache-control': u.pathname.includes('976028e2') ? 'no-store, max-age=0' : 'public, max-age=14400', pragma: 'no-cache' } });
@@ -52,5 +53,10 @@ r = await worker.fetch(R('/__ifr/fsb/form-builder-v2/F1'));
 chk(r.status === 200 && r.headers.get('x-hc-ifr') === 'fsb', 'fsb relay (v0.5.0)');
 calls.length = 0; r = await worker.fetch(R('/assets/main-app.js'));
 chk((await r.text()) === 'origin' && calls.length === 5, 'assets: none → origin passthrough (4 apps + origin)');
-console.log(`케이스 18 · ok 단언 ${ok} · 실패 ${bad}`);
+r = await worker.fetch(R('/__ifr/pro/?locationId=L#/prospecting'));
+t = await r.text();
+chk(r.status === 200 && r.headers.get('x-hc-ifr') === 'pro' && t.includes('window.__hcIfr={app:"pro"') && t.includes('src="https://prod.analyzemy.business/165/assets/js/index-X1b165.js"'), 'pro relay — HTML only, absolute assets untouched (v0.6.0)');
+calls.length = 0; r = await worker.fetch(R('/assets/main-app.js'));
+chk(!calls.some((c) => c.startsWith('prod.analyzemy.business')), 'assets fallback never asks pro (v0.6.0)');
+console.log(`케이스 20 · ok 단언 ${ok} · 실패 ${bad}`);
 process.exit(bad ? 1 : 0);

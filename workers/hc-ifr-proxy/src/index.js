@@ -7,12 +7,17 @@
 // v0.4.0(2026-11-08): AI 스튜디오(leadgen-vibe-ai-builder) 앱 키 vibe 추가.
 // v0.5.0(2026-11-13): 폼·설문·퀴즈 빌더(leadgen-apps-form-survey-builder) 앱 키 fsb 추가(벤자민 '응 너가생각한대로' — 폼 빌더 먼저).
 //       부모 쪽 주소 바꾸기는 벤자민 브라우저 수동 주입(PoC) → 통과 시 한글팩 로더 캐너리로 편입.
+// v0.6.0(2026-11-26): 잠재고객 발굴(prod.analyzemy.business) 앱 키 pro 추가(벤자민 '조사만하고 번역하기로했던거 계속 진행해줘').
+//       이 앱의 정적 파일은 HTML 안에서 전체 주소(https://prod.analyzemy.business/<배포번호>/assets/…)로 불러
+//       중계가 필요 없다(CORS 허용 실측) → HTML 문서만 중계. /assets/* 대체 순서(ASSET_APPS)에는 넣지 않는다.
 const APPS = {
   wf: 'https://client-app-automation-workflows.leadconnectorhq.com',
   crm: 'https://client-app-crm-settings.leadconnectorhq.com',
   vibe: 'https://leadgen-vibe-ai-builder.leadconnectorhq.com', // v0.4.0(2026-11-08): AI 스튜디오(벤자민 제보)
   fsb: 'https://leadgen-apps-form-survey-builder.leadconnectorhq.com', // v0.5.0(2026-11-13): 폼·설문·퀴즈 빌더
+  pro: 'https://prod.analyzemy.business', // v0.6.0(2026-11-26): 잠재고객 발굴 — HTML 문서만(정적 파일은 원래 주소)
 };
+const ASSET_APPS = ['wf', 'crm', 'vibe', 'fsb']; // /assets/* 대체 순서 대상(루트 /assets/ 를 쓰는 앱만)
 const OFF = false; // 즉시 끄기: true 로 바꾸고 배포하면 모든 요청 404
 
 // v0.3.0(2026-11-07): 이름에 내용 해시가 붙은 정적 파일은 브라우저가 1년 동안 다시 묻지 않게 한다(immutable).
@@ -78,7 +83,7 @@ async function relay(req, key, rest, url) {
 async function relayAssets(req, url) {
   if (req.method !== 'GET' && req.method !== 'HEAD') return fetch(req);
   const first = pickAppForAssets(req);
-  const order = [first].concat(Object.keys(APPS).filter((k) => k !== first));
+  const order = [first].concat(ASSET_APPS.filter((k) => k !== first));
   for (const k of order) {
     const res = await relay(req, k, url.pathname, url);
     if (res.status !== 404) return res;
