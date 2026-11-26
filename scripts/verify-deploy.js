@@ -23,9 +23,9 @@
    ───────────────────────────────────────────────────────────────────── */
 (() => {
   const EXPECT = {
-    version: '4.21.25',     // 포인터 loader.stable cdn 63a5fee (= main d55ed1d, 2026-11-21 — Pendo 안내 창 차단)
-    revPrefix: '9cebddc',   // 사전 v4.2.80 — cdn 커밋(원본 main 65fd48e, 2026-11-21 이메일 동기화 안내 창)
-    textEntries: 9382,      // _text — 배포된 core 건수(pretty 보다 C7 미배포분만큼 적다) (별도로 _textScoped 1,404 — status().scopedEntries)
+    version: '4.21.26',     // 포인터 loader.stable cdn 1f1f336 (= main 15abb25, 2026-11-26 — 잠재고객 발굴 iframe 중계)
+    revPrefix: '7e0ab42',   // 사전 v4.2.84 — cdn 커밋(원본 main 75bf5da, 2026-11-26 잠재고객 발굴 7,363)
+    textEntries: 9383,      // _text — 배포된 core 건수(pretty 보다 C7 미배포분만큼 적다) (별도로 _textScoped 1,404 — status().scopedEntries)
   };
   const A = window.__hcKoApp;
   if (!A) {
