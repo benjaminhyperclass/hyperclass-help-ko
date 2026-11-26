@@ -631,3 +631,35 @@
 - `usersApp` 3158 → 3165
 - `voiceAiApp` 1002 → 1019
 
+## 2026-11-26 21:44 UTC — main 2263 → 2263 · manifest 2263.8232 → 2263.8262
+- `agencyDashboardApp` 2349 → 2378
+- `aiGrowthApp` 1011 → 1029
+- `bladePlatformApp` 87 → 88
+- `calendarMeetingsApp` 645 → 658
+- `clientPortalBuilder` 2354 → 2392
+- `contactsApp` 3162 → 3167
+- `conversationsV2App` 3162 → 3177
+- `copilotApp` 1013 → 1022
+- `desktopCustomizerApp` 2371 → 2393
+- `emailSequenceApp` 438 → 439
+- `eventsManagementApp` 3156 → 3181
+- `featureDiscoveryApp` 616 → 660
+- `fieldServicesApp` 638 → 662
+- `funnelWebsiteApp` 257 → 258
+- `goKollabApp` 2212 → 2391
+- `loyaltyApp` 28 → 29
+- `mediaCenterApp` 192 → 193
+- `meetingsApp` 2346 → 2388
+- `notesAiApp` 1021 → 1031
+- `onboardingApp` 246 → 247
+- `opportunitiesApp` 3162 → 3173
+- `phoneIntegrationApp` 2369 → 2390
+- `productsApp` 430 → 432
+- `reputationApp` 2311 → 2386
+- `reputationBuilderApp` 2211 → 2386
+- `seoApp` 98 → 99
+- `superagentsApp` 1020 → 1025
+- `visibilityAiApp` 2307 → 2382
+- `voiceAiApp` 1019 → 1030
+- `yextApp` 2229 → 2384
+
