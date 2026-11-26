@@ -1,4 +1,7 @@
-/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.25
+/* Hyperclass 한글팩 — 메인 앱(GHL 화이트라벨) 로더 v4.21.26
+ * v4.21.26: 잠재고객 발굴(prod.analyzemy.business, 마케팅 → 잠재고객 발굴 탭·에이전시 /prospecting) iframe 중계(Worker v0.6.0 앱 키 pro).
+ *           이 앱은 공유 리포트 주소를 자기 출처(location.host)로 만든다 → 중계 문서에선 app.hyperclass.ai/share/report/… 가 되어
+ *           깨진 링크가 되므로, pro iframe 안에서만 그 접두어를 원래 출처로 되돌린다(클립보드·window.open·href/value 속성·input.value).
  * v4.21.25: 안내 창(Pendo 가이드) 차단 — 대시보드의 'Your dashboard editor just leveled up' 같은 기능 소개·설문(NPS) 창은
  *          GHL 이 Pendo 로 띄우는 영어 원문(i18n 밖)이고, 단추·링크가 app.gohighlevel.com·help.gohighlevel.com·
  *          help.leadconnectorhq.com 으로 간다(벤자민 2026-11-21 캡처 → r6JD 실측 가이드 6개 중 3개). 번역하지 않고 창을 띄우지 않는다:
@@ -260,7 +263,7 @@
   // API 는 게이트보다 먼저 정의한다. 게이트에 막혔을 때 __hcKoApp 이 undefined 이면
   // "로더를 안 붙였다" 와 "게이트에 막혔다" 를 콘솔에서 구분할 수 없다.
   var API = window.__hcKoApp = {
-    version: '4.21.25',
+    version: '4.21.26',
     status: function () {
       var s = JSON.parse(JSON.stringify(stats));
       s.rev = REV;
@@ -1098,7 +1101,34 @@
   // 끄기: localStorage.hcKoIfr='0'(이 브라우저) · Worker 라우트 삭제(전체 — 헬스 실패로 원래 주소) · 포인터 loader.next 되돌리기.
   var IFR_HOSTS = { 'client-app-automation-workflows.leadconnectorhq.com': 'wf', 'client-app-crm-settings.leadconnectorhq.com': 'crm',
     'leadgen-vibe-ai-builder.leadconnectorhq.com': 'vibe',     // v4.21.17: AI 스튜디오(Worker v0.4.0)
-    'leadgen-apps-form-survey-builder.leadconnectorhq.com': 'fsb' };   // v4.21.20: 폼·설문·퀴즈 빌더(Worker v0.5.0)
+    'leadgen-apps-form-survey-builder.leadconnectorhq.com': 'fsb',     // v4.21.20: 폼·설문·퀴즈 빌더(Worker v0.5.0)
+    'prod.analyzemy.business': 'pro' };                                  // v4.21.26: 잠재고객 발굴(Worker v0.6.0)
+  // v4.21.26: pro 앱 공유 리포트 주소 되돌리기 — 중계 문서의 location.origin 으로 만든 /share/report/ 링크를 원래 출처로.
+  var PRO_ORIGIN = 'https://prod.analyzemy.business';
+  function proFixStr(v) {
+    if (typeof v !== 'string') return v;
+    var a = location.origin + '/share/';
+    return v.indexOf(a) >= 0 ? v.split(a).join(PRO_ORIGIN + '/share/') : v;
+  }
+  function ifrProFix(w) {
+    try {
+      if (!w || w.__hcProFix) return; w.__hcProFix = 1;
+      var cb = w.navigator && w.navigator.clipboard;
+      if (cb && cb.writeText) { var wt = cb.writeText.bind(cb); cb.writeText = function (t) { return wt(proFixStr(t)); }; }
+      var op = w.open; if (op) w.open = function (u) { var a = Array.prototype.slice.call(arguments); a[0] = proFixStr(u); return op.apply(w, a); };
+      var sa = w.Element.prototype.setAttribute;
+      w.Element.prototype.setAttribute = function (n, v) {
+        var k = String(n).toLowerCase(); if (k === 'href' || k === 'value' || k === 'src') v = proFixStr(v);
+        return sa.call(this, n, v);
+      };
+      [[w.HTMLAnchorElement, 'href'], [w.HTMLInputElement, 'value'], [w.HTMLTextAreaElement, 'value']].forEach(function (x) {
+        var P = x[0] && x[0].prototype, dsc = P && Object.getOwnPropertyDescriptor(P, x[1]);
+        if (!dsc || !dsc.set) return;
+        Object.defineProperty(P, x[1], { configurable: true, enumerable: dsc.enumerable,
+          get: function () { return dsc.get.call(this); }, set: function (v) { return dsc.set.call(this, proFixStr(v)); } });
+      });
+    } catch (e) { ifr.fail = 'profix: ' + (e && e.message || e); }
+  }
   // v4.21.18: 전 계정(벤자민 승인 2026-11-08). null = 로더가 허용된 모든 로케이션. 끄기 = Worker OFF(헬스 실패 → 원래 주소) 또는 이 값을 캐너리 목록으로.
   var IFR_LOCS = null;
   var ifr = { on: false, ok: null, rewrites: 0, frames: 0, fail: null };
@@ -1125,6 +1155,7 @@
       var d = ifrDoc(el);
       if (!d || d.__hcKoIfr) return;
       d.__hcKoIfr = 1; ifr.frames++;
+      try { var iw = d.defaultView; if (iw && iw.__hcIfr && iw.__hcIfr.app === 'pro') ifrProFix(iw); } catch (e) {}
       if (ifrDocs.indexOf(d) < 0) ifrDocs.push(d);   // ⑩ 카탈로그 병합 대상
       loadIfrDict();
       // iframe 앱은 load 뒤 인증을 거쳐 늦게 마운트된다 — 마운트 루트(#app)는 이미 있던 노드라 mo 가 새 앱을 못 본다
