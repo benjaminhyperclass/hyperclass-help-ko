@@ -587074,5 +587074,3633 @@
  "superagentsApp.agentStudioPanel.editor.quote": {
   "en": "Quote",
   "ko": "인용"
+ },
+ "common|reselling.reselling.paymentPage.payAsYouGoPlan": {
+  "en": "Pay as you go Plan",
+  "ko": "사용량 기반 플랜"
+ },
+ "common|reselling.reselling.paymentPage.startTrial": {
+  "en": "Start Trial",
+  "ko": "체험 시작"
+ },
+ "common|reselling.reselling.paymentPage.perMonth": {
+  "en": "per month",
+  "ko": "/월"
+ },
+ "common|reselling.reselling.paymentPage.emailAddress": {
+  "en": "Email Address",
+  "ko": "이메일 주소"
+ },
+ "common|reselling.reselling.paymentPage.payWithCard": {
+  "en": "Pay with Card",
+  "ko": "카드로 결제"
+ },
+ "common|reselling.reselling.paymentPage.addCardDetail": {
+  "en": "Add your card details & proceed to payment.",
+  "ko": "카드 정보를 입력하고 결제를 진행하세요."
+ },
+ "common|reselling.reselling.paymentPage.cardNumber": {
+  "en": "Card Number",
+  "ko": "카드 번호"
+ },
+ "common|reselling.reselling.paymentPage.expiry": {
+  "en": "Expiry",
+  "ko": "만료일"
+ },
+ "common|reselling.reselling.paymentPage.nameOnCard": {
+  "en": "Name on card",
+  "ko": "카드 소유자명"
+ },
+ "common|reselling.reselling.paymentPage.country": {
+  "en": "Country",
+  "ko": "국가"
+ },
+ "common|reselling.reselling.paymentPage.description": {
+  "en": "By confirming your subscription, you allow XXXX to charge your card for this payment and future payments for this subscription.",
+  "ko": "구독을 확인하면 XXXX가 이번 결제와 이후 이 구독의 결제를 위해 카드에 청구하는 데 동의하는 것입니다."
+ },
+ "common|reselling.reselling.paymentPage.addNewPaymentMethod": {
+  "en": "Add new payment method",
+  "ko": "새 결제 방법 추가"
+ },
+ "common|reselling.reselling.paymentPage.payAndSubscribe": {
+  "en": "Pay XXXX and Subscribe",
+  "ko": "XXXX 결제 후 구독"
+ },
+ "common|reselling.reselling.paymentPage.zip": {
+  "en": "Zip",
+  "ko": "우편번호"
+ },
+ "common|reselling.reselling.paymentPage.paymentFailed": {
+  "en": "Your Payment failed.",
+  "ko": "결제에 실패했습니다."
+ },
+ "common|reselling.reselling.paymentPage.retryPayment": {
+  "en": "Please retry payment to purchase.",
+  "ko": "구매하려면 결제를 다시 시도하세요."
+ },
+ "common|reselling.reselling.paymentPage.retryButtonText": {
+  "en": "Retry Payment",
+  "ko": "결제 재시도"
+ },
+ "common|reselling.reselling.paymentPage.dontClose": {
+  "en": "Do not close this window.",
+  "ko": "이 창을 닫지 마세요."
+ },
+ "common|reselling.reselling.paymentPage.paymentProcessing": {
+  "en": "Please wait while your payment is being processed.",
+  "ko": "결제를 처리하는 중입니다. 잠시 기다려 주세요."
+ },
+ "common|reselling.reselling.paymentPage.createCustomerFailed": {
+  "en": "Unable to create customer",
+  "ko": "고객을 만들 수 없습니다"
+ },
+ "common|reselling.reselling.paymentPage.cardAddFailed": {
+  "en": "Unable to Add card",
+  "ko": "카드를 추가할 수 없습니다"
+ },
+ "common|reselling.reselling.paymentPage.cardSaveFailed": {
+  "en": "Unable to save the card",
+  "ko": "카드를 저장할 수 없습니다"
+ },
+ "common|reselling.reselling.paymentPage.addSubscriptionFailed": {
+  "en": "Unable to add subscription, contact support",
+  "ko": "구독을 추가할 수 없습니다. 고객지원에 문의하세요"
+ },
+ "common|reselling.reselling.paymentPage.emailNotFound": {
+  "en": "Please enter a contact email address",
+  "ko": "연락처 이메일 주소를 입력하세요"
+ },
+ "common|reselling.reselling.paymentPage.emailInvalid": {
+  "en": "Please enter valid contact email",
+  "ko": "유효한 연락처 이메일을 입력하세요"
+ },
+ "common|reselling.reselling.paymentPage.cardNotAdded": {
+  "en": "Please Enter your card number",
+  "ko": "카드 번호를 입력하세요"
+ },
+ "common|reselling.reselling.paymentPage.cvvIncomplete": {
+  "en": "Your card's CVV is incomplete.",
+  "ko": "카드 CVV가 완전하지 않습니다."
+ },
+ "common|reselling.reselling.paymentPage.cvvNotEntered": {
+  "en": "Please enter your card's CVV",
+  "ko": "카드 CVV를 입력하세요"
+ },
+ "common|reselling.reselling.paymentPage.cardExpiryNotFilled": {
+  "en": "Please enter your Card Expiry details",
+  "ko": "카드 만료일을 입력하세요"
+ },
+ "common|reselling.reselling.paymentPage.cardHolderNameNotFilled": {
+  "en": "Please enter the cardholder's name",
+  "ko": "카드 소유자 이름을 입력하세요"
+ },
+ "common|reselling.reselling.paymentPage.zipNotAdded": {
+  "en": "Please enter ZIP Code",
+  "ko": "우편번호를 입력하세요"
+ },
+ "common|reselling.reselling.paymentPage.paymentMethodNotConfigured": {
+  "en": "Payment Not Available",
+  "ko": "결제를 사용할 수 없음"
+ },
+ "common|reselling.reselling.paymentPage.paymentMethodNotConfiguredDesc": {
+  "en": "Your account is not configured for payments. Please contact your administrator to enable payment processing.",
+  "ko": "계정이 결제용으로 설정되지 않았습니다. 결제 처리를 활성화하려면 관리자에게 문의하세요."
+ },
+ "common|reselling.reselling.paymentPage.close": {
+  "en": "Close",
+  "ko": "닫기"
+ },
+ "common|reselling.reselling.newPaymentPage.paymentMethods.payUsingCard": {
+  "en": "Pay Using Card",
+  "ko": "카드로 결제"
+ },
+ "common|reselling.reselling.newPaymentPage.paymentMethods.payUsingWallet": {
+  "en": "Pay Using Wallet",
+  "ko": "지갑으로 결제"
+ },
+ "common|reselling.reselling.newPaymentPage.paymentMethods.useSelectedCard": {
+  "en": "Use Selected Card",
+  "ko": "선택한 카드 사용"
+ },
+ "common|reselling.reselling.newPaymentPage.paymentMethods.useWallet": {
+  "en": "Use Wallet",
+  "ko": "지갑 사용"
+ },
+ "common|reselling.reselling.newPaymentPage.paymentMethods.withoutUpsell": {
+  "en": "Charge To Agency",
+  "ko": "에이전시에 청구"
+ },
+ "common|reselling.reselling.newPaymentPage.buttons.payAndSubscribe": {
+  "en": "Pay {amount} & Subscribe",
+  "ko": "{amount} 결제 후 구독"
+ },
+ "common|reselling.reselling.newPaymentPage.buttons.retryInvoice": {
+  "en": "Retry Invoice",
+  "ko": "인보이스 재시도"
+ },
+ "common|reselling.reselling.newPaymentPage.buttons.startFreeTrial": {
+  "en": "Start Free Trial",
+  "ko": "무료 체험 시작"
+ },
+ "common|reselling.reselling.newPaymentPage.buttons.payAgencyAndSubscribe": {
+  "en": "Pay {agencyAmount} & Subscribe",
+  "ko": "{agencyAmount} 결제 후 구독"
+ },
+ "common|reselling.reselling.newPaymentPage.buttons.addNewCard": {
+  "en": "Add New Card",
+  "ko": "새 카드 추가"
+ },
+ "common|reselling.reselling.newPaymentPage.buttons.back": {
+  "en": "Back",
+  "ko": "뒤로"
+ },
+ "common|reselling.reselling.newPaymentPage.buttons.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "common|reselling.reselling.newPaymentPage.buttons.viewInvoice": {
+  "en": "View Invoice",
+  "ko": "인보이스 보기"
+ },
+ "common|reselling.reselling.newPaymentPage.buttons.useSelectedCard": {
+  "en": "Use Selected Card",
+  "ko": "선택한 카드 사용"
+ },
+ "common|reselling.reselling.newPaymentPage.buttons.useWallet": {
+  "en": "Use Wallet",
+  "ko": "지갑 사용"
+ },
+ "common|reselling.reselling.newPaymentPage.billing.perMonth": {
+  "en": "per month",
+  "ko": "/월"
+ },
+ "common|reselling.reselling.newPaymentPage.billing.excludingTax": {
+  "en": "Excluding tax",
+  "ko": "세금 별도"
+ },
+ "common|reselling.reselling.newPaymentPage.card.default": {
+  "en": "Default",
+  "ko": "기본"
+ },
+ "common|reselling.reselling.newPaymentPage.card.expiry": {
+  "en": "Expiry {month}/{year}",
+  "ko": "만료일 {month}/{year}"
+ },
+ "common|reselling.reselling.newPaymentPage.card.setAsDefault": {
+  "en": "Set as Default",
+  "ko": "기본값으로 설정"
+ },
+ "common|reselling.reselling.newPaymentPage.card.endingIn": {
+  "en": "ending in {last4}",
+  "ko": "끝자리 {last4}"
+ },
+ "common|reselling.reselling.newPaymentPage.wallet.balance": {
+  "en": "Your Wallet Balance",
+  "ko": "내 지갑 잔액"
+ },
+ "common|reselling.reselling.newPaymentPage.wallet.balanceTooLow": {
+  "en": "Your wallet balance is too low",
+  "ko": "지갑 잔액이 부족합니다"
+ },
+ "common|reselling.reselling.newPaymentPage.wallet.needToTopUp": {
+  "en": "Need to top up?",
+  "ko": "충전이 필요하신가요?"
+ },
+ "common|reselling.reselling.newPaymentPage.wallet.addFundsNow": {
+  "en": "Add Funds Now!",
+  "ko": "지금 충전"
+ },
+ "common|reselling.reselling.newPaymentPage.agency.whatThatMeans": {
+  "en": "How \"Charge to Agency\" works:",
+  "ko": "\"에이전시에 청구\" 방식 안내:"
+ },
+ "common|reselling.reselling.newPaymentPage.agency.stripeChargeDescription": {
+  "en": "The Stripe account at the agency level will be charged for this purchase (not the sub-account).",
+  "ko": "이 구매 금액은 서브 계정이 아닌 에이전시의 Stripe 계정으로 청구됩니다."
+ },
+ "common|reselling.reselling.newPaymentPage.agency.clientNotBilledDescription": {
+  "en": "Your client/sub-account will not be billed now or in the future for this purchase.",
+  "ko": "고객(서브 계정)에게는 이 구매에 대해 지금도, 앞으로도 청구되지 않습니다."
+ },
+ "common|reselling.reselling.newPaymentPage.agency.standardPriceDescription": {
+  "en": "Only the standard HighLevel price will be charged — any resell markup will not apply.",
+  "ko": "하이퍼클래스 표준 가격만 청구되며, 리셀링 마크업은 적용되지 않습니다."
+ },
+ "common|reselling.reselling.newPaymentPage.alerts.noPaymentMethodTitle": {
+  "en": "No Payment Method Found",
+  "ko": "결제 방법을 찾을 수 없음"
+ },
+ "common|reselling.reselling.newPaymentPage.alerts.noPaymentMethodMessage": {
+  "en": "Please contact your admin to add a payment method.",
+  "ko": "결제 방법을 추가하려면 관리자에게 문의하세요."
+ },
+ "common|reselling.reselling.newPaymentPage.alerts.invoicePendingTitle": {
+  "en": "Invoice Pending for Subscription",
+  "ko": "구독 인보이스 미결제"
+ },
+ "common|reselling.reselling.newPaymentPage.alerts.invoicePendingAgency": {
+  "en": "Your previous invoice for the subscription is unpaid. Please complete the payment to proceed.",
+  "ko": "이전 구독 인보이스가 미결제 상태입니다. 계속하려면 결제를 완료하세요."
+ },
+ "common|reselling.reselling.newPaymentPage.alerts.invoicePendingAgencyTrouble": {
+  "en": "There is some trouble in processing your payment. Please contact your admin to resolve this.",
+  "ko": "결제 처리 중 문제가 발생했습니다. 관리자에게 문의해 해결하세요."
+ },
+ "common|reselling.reselling.newPaymentPage.alerts.invoicePendingLocation": {
+  "en": "The location's previous invoice is unpaid. Please reach out to them to complete the payment.",
+  "ko": "이 서브 계정의 이전 인보이스가 미결제 상태입니다. 서브 계정에 연락해 결제를 완료하도록 안내하세요."
+ },
+ "common|reselling.reselling.newPaymentPage.alerts.invoicePendingLocationUser": {
+  "en": "Your payment is incomplete. Please complete your payment to proceed.",
+  "ko": "결제가 완료되지 않았습니다. 계속하려면 결제를 완료하세요."
+ },
+ "common|reselling.reselling.newPaymentPage.disclaimer.defaultMessage": {
+  "en": "By confirming your subscription, you let {companyName} charge your card for this and future payments.",
+  "ko": "구독을 확인하면 {companyName}이(가) 이번 결제와 이후 결제를 위해 카드에 청구하는 데 동의하는 것입니다."
+ },
+ "common|reselling.reselling.newPaymentPage.disclaimer.onlySaveCardMessage": {
+  "en": "Your payment method will be used securely for future transactions. No charges will be made at this time.",
+  "ko": "결제 수단은 이후 거래에 안전하게 사용됩니다. 지금은 요금이 청구되지 않습니다."
+ },
+ "common|reselling.reselling.newPaymentPage.addNewCard.title": {
+  "en": "Add New Card",
+  "ko": "새 카드 추가"
+ },
+ "common|reselling.reselling.newPaymentPage.addNewCard.description": {
+  "en": "Enter card details to pay.",
+  "ko": "결제할 카드 정보를 입력하세요."
+ },
+ "common|reselling.reselling.newPaymentPage.addNewCard.saveCard": {
+  "en": "Save Card & Subscribe",
+  "ko": "카드 저장 후 구독"
+ },
+ "common|reselling.reselling.newPaymentPage.addNewCard.errorMessage": {
+  "en": "Error adding your card. Please try again.",
+  "ko": "카드 추가 중 오류가 발생했습니다. 다시 시도해 주세요."
+ },
+ "common|reselling.reselling.newPaymentPage.errors.subAccountEmailRequired": {
+  "en": "Sub-account email is missing. Please add an email to the sub-account settings to enable card payments.",
+  "ko": "서브 계정 이메일이 없습니다. 카드 결제를 활성화하려면 서브 계정 설정에 이메일을 추가하세요."
+ },
+ "common|reselling.reselling.newPaymentPage.errors.manageSubAccount": {
+  "en": "Manage Sub-account",
+  "ko": "서브 계정 관리"
+ },
+ "common|reselling.reselling.newPaymentPage.errors.addCard": {
+  "en": "Add Card here",
+  "ko": "여기서 카드 추가"
+ },
+ "common|reselling.reselling.newPaymentPage.errors.accountEmailRequired": {
+  "en": "Your account email is missing. Please add an email to your account settings to enable card payments.",
+  "ko": "계정 이메일이 없습니다. 카드 결제를 활성화하려면 계정 설정에 이메일을 추가하세요."
+ },
+ "common|reselling.reselling.newPaymentPage.errors.subAccountStripeCustomerNotFound": {
+  "en": "Unable to fetch customer details (cus_xxx) for this subaccount. Please contact support to resolve this.",
+  "ko": "이 서브 계정의 고객 정보(cus_xxx)를 가져올 수 없습니다. 고객지원에 문의해 해결하세요."
+ },
+ "common|reselling.reselling.newPaymentPage.errors.fetchingAvailableCards": {
+  "en": "We are unable to fetch your available cards. Please contact your admin to resolve this.",
+  "ko": "사용 가능한 카드를 가져올 수 없습니다. 관리자에게 문의해 해결하세요."
+ },
+ "common|reselling.reselling.newPaymentPage.errors.saasSetupPendingAgency": {
+  "en": "Your sub-account does not have any card added, please add a card to create wallet.",
+  "ko": "서브 계정에 등록된 카드가 없습니다. 지갑을 만들려면 카드를 추가하세요."
+ },
+ "common|reselling.reselling.newPaymentPage.errors.saasSetupPendingAccount": {
+  "en": "Please add your card details to create wallet.",
+  "ko": "지갑을 만들려면 카드 정보를 추가하세요."
+ },
+ "common|reselling.reselling.newPaymentPage.errors.agencyStripeAccountInvalid": {
+  "en": "We couldn't access your Stripe account. Please verify the Stripe integration or contact support.",
+  "ko": "Stripe 계정에 접근할 수 없습니다. Stripe 연동을 확인하거나 고객지원에 문의하세요."
+ },
+ "common|reselling.reselling.newPaymentPage.errors.setDefaultPaymentMethod": {
+  "en": "Please set the default payment method to complete the payment.",
+  "ko": "결제를 완료하려면 기본 결제 방법을 설정하세요."
+ },
+ "common|reselling.reselling.newPaymentPage.errors.subscriptionAlreadyActive": {
+  "en": "It looks like there is already an active subscription.",
+  "ko": "이미 활성 구독이 있습니다."
+ },
+ "common|reselling.reselling.newPaymentPage.errors.agency.agencySubscriptionPaymentPending": {
+  "en": "Your agency subscription payment is pending for this product. Please complete the payment to proceed.",
+  "ko": "이 상품의 에이전시 구독 결제가 대기 중입니다. 계속하려면 결제를 완료하세요."
+ },
+ "common|reselling.reselling.newPaymentPage.errors.agency.updateBillingAddress": {
+  "en": "Please update your company billing address to complete the payment.",
+  "ko": "결제를 완료하려면 회사 청구 주소를 업데이트하세요."
+ },
+ "common|reselling.reselling.newPaymentPage.errors.agency.offeringDisabled": {
+  "en": "This offering is disabled. Please enable offering for this reselling product to continue.",
+  "ko": "이 상품은 비활성화되어 있습니다. 계속하려면 이 리셀링 상품을 활성화하세요."
+ },
+ "common|reselling.reselling.newPaymentPage.errors.agency.issueWithLocationPayment": {
+  "en": "We are unable to process sub-account payment.",
+  "ko": "서브 계정 결제를 처리할 수 없습니다."
+ },
+ "common|reselling.reselling.newPaymentPage.errors.subAccount.contactAdmin": {
+  "en": "Cannot complete payment. Please contact your admin to resolve this.",
+  "ko": "결제를 완료할 수 없습니다. 관리자에게 문의해 해결하세요."
+ },
+ "common|reselling.reselling.newPaymentPage.errors.subAccount.issueWithLocationPayment": {
+  "en": "We are unable to process your payment. Please try again or contact your admin to resolve this.",
+  "ko": "결제를 처리할 수 없습니다. 다시 시도하거나 관리자에게 문의해 해결하세요."
+ },
+ "common|reselling.reselling.newPaymentPage.companyPaywall.noCardTitle": {
+  "en": "Unable to find a card linked to your account.",
+  "ko": "계정에 연결된 카드를 찾을 수 없습니다."
+ },
+ "common|reselling.reselling.newPaymentPage.companyPaywall.noCardDescription": {
+  "en": "You can easily add a payment card in your settings to complete you\npurchase hassle-free.\nPlease navigate to the \"Settings > Billing > Payments\" tab to add your card details.",
+  "ko": "설정에서 결제 카드를 간편하게 추가하고\n구매를 바로 완료할 수 있습니다.\n\"설정 > 청구 > 결제\" 탭에서 카드 정보를 추가하세요."
+ },
+ "common|reselling.reselling.unsubscribeModal.common.note": {
+  "en": "Note",
+  "ko": "참고"
+ },
+ "common|reselling.reselling.unsubscribeModal.common.searchAlt": {
+  "en": "search",
+  "ko": "검색"
+ },
+ "common|reselling.reselling.unsubscribeModal.common.multipleQuantityRemovalInfo": {
+  "en": "There are {quantity} quantity subscribed to this location. This action will reduce only one quantity at a time.",
+  "ko": "이 서브 계정에 구독된 수량은 {quantity}개입니다. 이 작업은 한 번에 1개씩만 줄입니다."
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.step": {
+  "en": "Step {step} of {total}",
+  "ko": "{total}단계 중 {step}단계"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.one.title": {
+  "en": "Deactivate and Cancel {productLabel} for this account?",
+  "ko": "이 계정의 {productLabel}을(를) 비활성화하고 해지하시겠습니까?"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.one.description": {
+  "en": "Are you sure you want to deactivate and cancel {entityName}'s {productLabel} Account and Subscription?",
+  "ko": "{entityName}의 {productLabel} 계정과 구독을 비활성화하고 해지하시겠습니까?"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.one.primaryAction": {
+  "en": "Proceed to cancellation",
+  "ko": "해지 진행"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.one.secondaryAction": {
+  "en": "Back",
+  "ko": "뒤로"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.one.options.endOfBillingCycle.label": {
+  "en": "Cancel at the end of the billing cycle",
+  "ko": "청구 주기 종료 시 해지"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.one.options.endOfBillingCycle.description": {
+  "en": "You can reactivate your subscription before the billing cycle ends.",
+  "ko": "청구 주기가 끝나기 전에 구독을 재활성화할 수 있습니다."
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.one.options.endOfBillingCycle.dateFormat": {
+  "en": "Cancels on {date}",
+  "ko": "{date}에 해지"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.one.options.immediate.label": {
+  "en": "Cancel immediately",
+  "ko": "즉시 해지"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.one.options.immediate.description": {
+  "en": "Unused period of service will not be provided.",
+  "ko": "남은 서비스 기간은 제공되지 않습니다."
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.two.title": {
+  "en": "Cancelling your {productLabel} Account?",
+  "ko": "{productLabel} 계정을 해지하시겠습니까?"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.two.description": {
+  "en": "We have the most features compared to other platforms out there!",
+  "ko": "다른 어떤 플랫폼보다 많은 기능을 제공합니다!"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.two.primaryAction": {
+  "en": "Next",
+  "ko": "다음"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.two.secondaryAction": {
+  "en": "Don't Cancel",
+  "ko": "해지 안 함"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.two.copy": {
+  "en": "Copy",
+  "ko": "복사"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.two.copied": {
+  "en": "Copied",
+  "ko": "복사됨"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.two.warning.title": {
+  "en": "IMPORTANT:",
+  "ko": "중요:"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.two.warning.description": {
+  "en": "Before cancelling your subscription, please be aware that all associated data and features will be permanently removed. Once cancelled, there will be no way to recover this data.",
+  "ko": "구독을 해지하면 관련된 모든 데이터와 기능이 영구적으로 삭제됩니다. 해지한 뒤에는 이 데이터를 복구할 수 없습니다."
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.three.title": {
+  "en": "Provide a Reason for Cancellation",
+  "ko": "해지 사유 입력"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.three.description": {
+  "en": "Why do you want to cancel?",
+  "ko": "해지하려는 이유가 무엇인가요?"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.three.primaryAction": {
+  "en": "Cancel Subscription",
+  "ko": "구독 해지"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.three.secondaryAction": {
+  "en": "Don't Cancel",
+  "ko": "해지 안 함"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.three.reasons.missing_features": {
+  "en": "Missing features",
+  "ko": "기능 부족"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.three.reasons.having_trouble_setting_up": {
+  "en": "Having Trouble Setting up",
+  "ko": "설정이 어려움"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.three.reasons.too_expensive": {
+  "en": "Too Expensive",
+  "ko": "비용이 너무 높음"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.three.reasons.not_using_enough": {
+  "en": "Not using enough",
+  "ko": "사용 빈도 낮음"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.three.reasons.unsatisfactory_customer_experience": {
+  "en": "Unsatisfactory Customer Experience",
+  "ko": "고객 경험이 만족스럽지 않음"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.three.reasons.my_site_was_down": {
+  "en": "My site was down",
+  "ko": "사이트가 다운됨"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.three.reasons.auto_subscribed_during_saas_setup": {
+  "en": "Auto-subscribed during SaaS setup",
+  "ko": "SaaS 설정 중 자동 구독됨"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.three.reasons.other": {
+  "en": "Other",
+  "ko": "기타"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.three.reasons.otherPlaceholder": {
+  "en": "Enter Details",
+  "ko": "상세 내용 입력"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.three.reasons.product_specific.CP_BRANDED_APP_49.unable_to_create_apple_google_developer_accounts": {
+  "en": "Unable to create Apple/Google Developer Accounts e.g., due to DUNS number or verification issues.",
+  "ko": "Apple/Google 개발자 계정을 만들 수 없음(예: DUNS 번호·인증 문제)"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.three.reasons.product_specific.CP_BRANDED_APP_49.too_complicated_or_time_consuming_to_set_up": {
+  "en": "Too complicated or time-consuming to set up",
+  "ko": "설정이 너무 복잡하거나 시간이 오래 걸림"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.three.reasons.product_specific.CP_BRANDED_APP_49.lack_of_key_features_needed": {
+  "en": "Lack of key features needed",
+  "ko": "필요한 주요 기능 부족"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.three.reasons.product_specific.CP_BRANDED_APP_49.faced_technical_issues_or_bugs": {
+  "en": "Faced technical issues or bugs",
+  "ko": "기술적 문제나 버그 발생"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.three.reasons.product_specific.CP_BRANDED_APP_49.poor_support_service_experience": {
+  "en": "Poor support/service experience",
+  "ko": "지원/서비스 경험이 좋지 않음"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.three.reasons.product_specific.CP_BRANDED_APP_49.clients_are_not_using_the_app": {
+  "en": "Clients are not using the app",
+  "ko": "고객이 앱을 사용하지 않음"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.three.reasons.product_specific.CP_BRANDED_APP_49.did_not_understand_how_to_use_the_app_effectively": {
+  "en": "Did not understand how to use the app effectively",
+  "ko": "앱을 효과적으로 쓰는 방법을 잘 모름"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.three.reasons.product_specific.CP_BRANDED_APP_49.business_priorities_changed": {
+  "en": "Business priorities changed",
+  "ko": "비즈니스 우선순위 변경"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.three.reasons.product_specific.CP_BRANDED_APP_49.found_an_alternative_solution": {
+  "en": "Found an alternative solution",
+  "ko": "다른 솔루션을 찾음"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.three.reasons.product_specific.CP_BRANDED_APP_49.too_expensive_for_current_needs": {
+  "en": "Too expensive for current needs",
+  "ko": "현재 요구사항에 비해 너무 비쌈"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.three.reasons.product_specific.CP_BRANDED_APP_49.other": {
+  "en": "Other",
+  "ko": "기타"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.three.confirmation.placeholder": {
+  "en": "Confirm deletion by typing {word} below",
+  "ko": "삭제를 확인하려면 아래에 DELETE를 입력하세요"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.three.speakWithUs.title": {
+  "en": "Speak with us",
+  "ko": "상담 요청"
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.three.speakWithUs.description": {
+  "en": "Before you cancel, let us help! We can troubleshoot problems and explore options that better fit your needs.",
+  "ko": "해지하기 전에 저희가 도와드리겠습니다! 문제를 함께 해결하고 더 잘 맞는 옵션을 찾아 드립니다."
+ },
+ "common|reselling.reselling.unsubscribeModal.steps.three.speakWithUs.action": {
+  "en": "Schedule a call",
+  "ko": "통화 예약"
+ },
+ "common|reselling.reselling.unsubscribeModal.success.title": {
+  "en": "Your cancellation request has been sent",
+  "ko": "해지 요청이 전송되었습니다"
+ },
+ "common|reselling.reselling.unsubscribeModal.success.description": {
+  "en": "We will process your request and notify you once it is complete.",
+  "ko": "요청을 처리한 뒤 완료되면 알려 드립니다."
+ },
+ "common|reselling.reselling.unsubscribeModal.success.button": {
+  "en": "Got It",
+  "ko": "확인"
+ },
+ "common|reselling.reselling.unsubscribeModal.error.title": {
+  "en": "Your cancellation request has failed",
+  "ko": "해지 요청에 실패했습니다"
+ },
+ "common|reselling.reselling.unsubscribeModal.error.description": {
+  "en": "Please try again later.",
+  "ko": "나중에 다시 시도해 주세요."
+ },
+ "common|reselling.reselling.unsubscribeModal.error.button": {
+  "en": "Got It",
+  "ko": "확인"
+ },
+ "common|reselling.reselling.agencyBillingCard.table.header.locationName": {
+  "en": "Location Name",
+  "ko": "서브 계정 이름"
+ },
+ "common|reselling.reselling.agencyBillingCard.table.header.plan": {
+  "en": "Plan",
+  "ko": "플랜"
+ },
+ "common|reselling.reselling.agencyBillingCard.table.header.purchaseType": {
+  "en": "Purchase Type",
+  "ko": "구매 유형"
+ },
+ "common|reselling.reselling.agencyBillingCard.table.header.status": {
+  "en": "Status",
+  "ko": "상태"
+ },
+ "common|reselling.reselling.agencyBillingCard.table.header.actions": {
+  "en": "Actions",
+  "ko": "작업"
+ },
+ "common|reselling.reselling.agencyBillingCard.table.header.purchaseDate": {
+  "en": "Purchase Date",
+  "ko": "구매 날짜"
+ },
+ "common|reselling.reselling.agencyBillingCard.table.header.billingCycle": {
+  "en": "Billing Cycle",
+  "ko": "청구 주기"
+ },
+ "common|reselling.reselling.agencyBillingCard.table.header.quantity": {
+  "en": "Quantity",
+  "ko": "수량"
+ },
+ "common|reselling.reselling.agencyBillingCard.table.purchaseTypeValue.LOCATION_PURCHASE": {
+  "en": "Location Purchase (With Upsell)",
+  "ko": "서브 계정 구매(업셀 포함)"
+ },
+ "common|reselling.reselling.agencyBillingCard.table.purchaseTypeValue.COMPANY_DIRECT_PURCHASE": {
+  "en": "Agency Purchase (Without Upsell)",
+  "ko": "에이전시 구매(업셀 제외)"
+ },
+ "common|reselling.reselling.agencyBillingCard.table.purchaseTypeValue.SAAS_BUNDLE": {
+  "en": "SaaS Bundle",
+  "ko": "SaaS 번들"
+ },
+ "common|reselling.reselling.agencyBillingCard.table.statusValue.COMPLETE": {
+  "en": "Active",
+  "ko": "활성"
+ },
+ "common|reselling.reselling.agencyBillingCard.table.statusValue.FAIL": {
+  "en": "Payment Failed",
+  "ko": "결제 실패"
+ },
+ "common|reselling.reselling.agencyBillingCard.table.statusValue.UNSUBSCRIBED": {
+  "en": "Unsubscribed",
+  "ko": "구독 해지됨"
+ },
+ "common|reselling.reselling.agencyBillingCard.table.statusValue.PENDING": {
+  "en": "Pending",
+  "ko": "대기 중"
+ },
+ "common|reselling.reselling.agencyBillingCard.table.statusValue.INCOMPLETE": {
+  "en": "Incomplete",
+  "ko": "미완료"
+ },
+ "common|reselling.reselling.agencyBillingCard.table.statusValue.COMPLETE_PAST_DUE": {
+  "en": "Payment Pending",
+  "ko": "결제 대기"
+ },
+ "common|reselling.reselling.agencyBillingCard.table.statusValue.TRIAL": {
+  "en": "Trial",
+  "ko": "체험"
+ },
+ "common|reselling.reselling.agencyBillingCard.table.statusTooltip.scheduledCancelAt": {
+  "en": "Scheduled cancel on {date}",
+  "ko": "{date}에 해지 예정"
+ },
+ "common|reselling.reselling.agencyBillingCard.table.billingCycleValue.month": {
+  "en": "Monthly",
+  "ko": "매월"
+ },
+ "common|reselling.reselling.agencyBillingCard.table.billingCycleValue.year": {
+  "en": "Yearly",
+  "ko": "매년"
+ },
+ "common|reselling.reselling.agencyBillingCard.table.billingCycleValue.six_months": {
+  "en": "6 Months",
+  "ko": "6개월"
+ },
+ "common|reselling.reselling.agencyBillingCard.table.billingCycleValue.life_time": {
+  "en": "NA (Lifetime)",
+  "ko": "해당 없음(평생)"
+ },
+ "common|reselling.reselling.agencyBillingCard.common.standardPlan": {
+  "en": "Standard Plan",
+  "ko": "스탠다드 플랜"
+ },
+ "common|reselling.reselling.agencyBillingCard.common.utilityPlan": {
+  "en": "Utility Plan",
+  "ko": "유틸리티 플랜"
+ },
+ "common|reselling.reselling.agencyBillingCard.common.foundersSpecialOffer": {
+  "en": "Founders Special Offer",
+  "ko": "창립자 특별 오퍼"
+ },
+ "common|reselling.reselling.agencyBillingCard.common.foundersPlan": {
+  "en": "Founder's Plan",
+  "ko": "창립자 플랜"
+ },
+ "common|reselling.reselling.agencyBillingCard.common.perMonth": {
+  "en": "per month",
+  "ko": "/월"
+ },
+ "common|reselling.reselling.agencyBillingCard.common.perSixMonths": {
+  "en": "per 6 months",
+  "ko": "/6개월"
+ },
+ "common|reselling.reselling.agencyBillingCard.common.perYear": {
+  "en": "per year",
+  "ko": "/년"
+ },
+ "common|reselling.reselling.agencyBillingCard.common.showSubAccounts": {
+  "en": "Show sub-accounts",
+  "ko": "서브 계정 표시"
+ },
+ "common|reselling.reselling.agencyBillingCard.common.sold": {
+  "en": "sold",
+  "ko": "판매됨"
+ },
+ "common|reselling.reselling.agencyBillingCard.common.viewSubscribed": {
+  "en": "View Subscribed Sub-accounts",
+  "ko": "구독 중인 서브 계정 보기"
+ },
+ "common|reselling.reselling.agencyBillingCard.common.per": {
+  "en": "per",
+  "ko": "/"
+ },
+ "common|reselling.reselling.agencyBillingCard.common.month": {
+  "en": "month",
+  "ko": "월"
+ },
+ "common|reselling.reselling.agencyBillingCard.common.year": {
+  "en": "year",
+  "ko": "년"
+ },
+ "common|reselling.reselling.agencyBillingCard.common.saasBundle": {
+  "en": "SaaS Bundle",
+  "ko": "SaaS 번들"
+ },
+ "common|reselling.reselling.agencyBillingCard.common.options.cancelSubscription": {
+  "en": "Cancel Subscription",
+  "ko": "구독 해지"
+ },
+ "common|reselling.reselling.agencyBillingCard.common.addOnProducts": {
+  "en": "Add On Products",
+  "ko": "추가 상품"
+ },
+ "common|reselling.reselling.agencyBillingCard.common.viewSubscriptions": {
+  "en": "View Subscriptions",
+  "ko": "구독 보기"
+ },
+ "common|reselling.reselling.agencyBillingCard.common.subscribed": {
+  "en": "Subscribed",
+  "ko": "구독됨"
+ },
+ "common|reselling.reselling.agencyBillingCard.common.noAddOnsAvailable": {
+  "en": "No add-ons available right now.",
+  "ko": "현재 사용 가능한 추가 상품이 없습니다."
+ },
+ "common|reselling.reselling.agencyBillingCard.common.excludingTax": {
+  "en": "Excluding tax",
+  "ko": "세금 별도"
+ },
+ "common|reselling.reselling.agencyBillingCard.productDescription.WHATSAPP_V1": {
+  "en": "Connect with leads and customers directly through WhatsApp for seamless two-way communication.",
+  "ko": "WhatsApp으로 리드·고객과 직접 연결해 끊김 없이 양방향으로 소통합니다."
+ },
+ "common|reselling.reselling.agencyBillingCard.productDescription.EmailIP": {
+  "en": "Send emails from a dedicated IP address to improve deliverability and sender reputation.",
+  "ko": "전용 IP 주소로 이메일을 보내 도달률과 발신자 평판을 높입니다."
+ },
+ "common|reselling.reselling.agencyBillingCard.productDescription.CONVERSATIONS_AI": {
+  "en": "Automate two-way conversations using AI to qualify leads, answer questions, and drive conversions.",
+  "ko": "AI로 양방향 대화를 자동화해 리드를 선별하고, 질문에 답하고, 전환을 이끌어 냅니다."
+ },
+ "common|reselling.reselling.agencyBillingCard.productDescription.Prospecting": {
+  "en": "Discover and reach out to potential leads with intelligent filters, contact data, and outreach tools.",
+  "ko": "똑똑한 필터, 연락처 데이터, 아웃리치 도구로 잠재 리드를 찾아 연락합니다."
+ },
+ "common|reselling.reselling.agencyBillingCard.productDescription.CP_BRANDED_APP_49": {
+  "en": "Give clients 24/7 access to courses, communities, and affiliate payouts through a secure, branded portal.",
+  "ko": "안전한 브랜드 포털로 고객이 언제든 코스, 커뮤니티, 제휴 수익금에 접근할 수 있게 합니다."
+ },
+ "common|reselling.reselling.agencyBillingCard.productDescription.WORDPRESS_V1": {
+  "en": "Easily build, manage, and host websites with a native WordPress integration.",
+  "ko": "WordPress 기본 연동으로 웹사이트를 쉽게 만들고 관리하고 호스팅합니다."
+ },
+ "common|reselling.reselling.agencyBillingCard.productDescription.YEXT_V2": {
+  "en": "Automatically sync and manage your business info across local directories to boost SEO.",
+  "ko": "지역 디렉터리 전반의 비즈니스 정보를 자동으로 동기화·관리해 SEO를 높입니다."
+ },
+ "common|reselling.reselling.agencyBillingCard.productDescription.starter_plus_workflow_premium_actions_triggers": {
+  "en": "Unlock advanced automation with premium triggers.",
+  "ko": "프리미엄 트리거로 고급 자동화를 사용할 수 있습니다."
+ },
+ "common|reselling.reselling.agencyBillingCard.productDescription.AI_EMPLOYEE": {
+  "en": "Deploy an always-on AI assistant trained on your business to handle conversations, content, reviews and more.",
+  "ko": "비즈니스에 맞춰 학습한 상시 AI 어시스턴트가 대화, 콘텐츠, 리뷰 등을 처리합니다."
+ },
+ "common|reselling.reselling.agencyBillingCard.productDescription.Ad_Publishing_Standard_Plan": {
+  "en": "Create and manage your ads seamlessly with your own business manager.",
+  "ko": "자체 비즈니스 관리자로 광고를 손쉽게 만들고 관리합니다."
+ },
+ "common|reselling.reselling.agencyBillingCard.productDescription.seo_search_atlas": {
+  "en": "Boost rankings with AI-powered SEO tools.",
+  "ko": "AI 기반 SEO 도구로 검색 순위를 높입니다."
+ },
+ "common|reselling.reselling.agencyBillingCard.aiEmployee.title": {
+  "en": "AI Employee",
+  "ko": "AI 직원"
+ },
+ "common|reselling.reselling.agencyBillingCard.emailIp.title": {
+  "en": "Email IP",
+  "ko": "이메일 IP"
+ },
+ "common|reselling.reselling.agencyBillingCard.brandedClientPortalApp.title": {
+  "en": "Branded Client Portal App",
+  "ko": "브랜드 클라이언트 포털 앱"
+ },
+ "common|reselling.reselling.agencyBillingCard.workflowPro.title": {
+  "en": "Workflow Pro",
+  "ko": "워크플로우 Pro"
+ },
+ "common|reselling.reselling.agencyBillingCard.workflowPro.plans.starterTier": {
+  "en": "Starter Tier",
+  "ko": "스타터 티어"
+ },
+ "common|reselling.reselling.agencyBillingCard.workflowPro.plans.growthTier": {
+  "en": "Growth Tier",
+  "ko": "그로스 티어"
+ },
+ "common|reselling.reselling.agencyBillingCard.workflowPro.plans.scaleTier": {
+  "en": "Scale Tier",
+  "ko": "스케일 티어"
+ },
+ "common|reselling.reselling.agencyBillingCard.conversationAi.title": {
+  "en": "Conversation AI",
+  "ko": "대화 AI"
+ },
+ "common|reselling.reselling.agencyBillingCard.listings.title": {
+  "en": "Listings",
+  "ko": "리스팅"
+ },
+ "common|reselling.reselling.agencyBillingCard.listings.logoAlt": {
+  "en": "Listings logo",
+  "ko": "리스팅 로고"
+ },
+ "common|reselling.reselling.agencyBillingCard.listings.plans.month": {
+  "en": "Monthly Plan",
+  "ko": "월간 플랜"
+ },
+ "common|reselling.reselling.agencyBillingCard.listings.plans.sixMonth": {
+  "en": "Smart Saver",
+  "ko": "스마트 세이버"
+ },
+ "common|reselling.reselling.agencyBillingCard.listings.plans.annual": {
+  "en": "Annual Advantage",
+  "ko": "연간 혜택"
+ },
+ "common|reselling.reselling.agencyBillingCard.whatsapp.logoAlt": {
+  "en": "Yext logo",
+  "ko": "Yext 로고"
+ },
+ "common|reselling.reselling.agencyBillingCard.wordpress.logoAlt": {
+  "en": "WordPress logo",
+  "ko": "WordPress 로고"
+ },
+ "common|reselling.reselling.agencyBillingCard.wordpress.sites": {
+  "en": "sites",
+  "ko": "사이트"
+ },
+ "common|reselling.reselling.agencyBillingCard.wordpress.site": {
+  "en": "site",
+  "ko": "사이트"
+ },
+ "common|reselling.reselling.agencyBillingCard.wordpress.additionalStandardPurchase": {
+  "en": "+ $ {price} for {purchaseCount} {siteText}",
+  "ko": "+ {purchaseCount}개 {siteText}에 $ {price}"
+ },
+ "common|reselling.reselling.agencyBillingCard.adManager.title": {
+  "en": "Ad Manager",
+  "ko": "광고 관리자"
+ },
+ "common|reselling.reselling.agencyBillingCard.prospecting.title": {
+  "en": "Prospecting",
+  "ko": "잠재 고객 발굴"
+ },
+ "common|reselling.reselling.redirect.logo": {
+  "en": "{name} logo",
+  "ko": "{name} 로고"
+ },
+ "common|reselling.reselling.redirect.moneyBag": {
+  "en": "Money bag",
+  "ko": "돈주머니"
+ },
+ "common|reselling.reselling.redirect.enableResellingProfit": {
+  "en": "You can enable reselling and earn profits",
+  "ko": "리셀링을 활성화해 수익을 올릴 수 있습니다"
+ },
+ "common|reselling.reselling.redirect.setMargins": {
+  "en": "You can set margins that are billed to your clients over the cost borne by you.",
+  "ko": "내가 부담하는 원가에 마진을 더해 고객에게 청구할 수 있습니다."
+ },
+ "common|reselling.reselling.redirect.resellingNot": {
+  "en": "Reselling not enabled for below items",
+  "ko": "아래 항목은 리셀링이 활성화되지 않았습니다"
+ },
+ "common|reselling.reselling.redirect.enableNow": {
+  "en": "Enable Now",
+  "ko": "지금 활성화"
+ },
+ "common|reselling.reselling.subAccountResellingTab.searchPlaceholder": {
+  "en": "Search core services",
+  "ko": "핵심 서비스 검색"
+ },
+ "common|reselling.reselling.subAccountResellingTab.common.enableProduct": {
+  "en": "Enable {productName}",
+  "ko": "{productName} 활성화"
+ },
+ "common|reselling.reselling.subAccountResellingTab.common.enableProductDescription": {
+  "en": "Enable the service to start selling your customer",
+  "ko": "서비스를 활성화하면 고객에게 판매를 시작할 수 있습니다"
+ },
+ "common|reselling.reselling.subAccountResellingTab.common.yourPrice": {
+  "en": "Your Customers Pay",
+  "ko": "고객 판매가"
+ },
+ "common|reselling.reselling.subAccountResellingTab.common.highlevelPrice": {
+  "en": "You Pay",
+  "ko": "내 원가"
+ },
+ "common|reselling.reselling.subAccountResellingTab.common.yourProfit": {
+  "en": "Your Profit",
+  "ko": "내 수익"
+ },
+ "common|reselling.reselling.subAccountResellingTab.common.deployProduct": {
+  "en": "Deploy {productName} directly",
+  "ko": "{productName} 바로 배포"
+ },
+ "common|reselling.reselling.subAccountResellingTab.common.deployedProduct": {
+  "en": "Deployed {productName} directly",
+  "ko": "{productName} 바로 배포됨"
+ },
+ "common|reselling.reselling.subAccountResellingTab.common.deployProductDescription": {
+  "en": "Select this option to offer {productName} executions or to bill your client externally.",
+  "ko": "{productName} 실행을 제공하거나 고객에게 별도로 청구하려면 이 옵션을 선택하세요."
+ },
+ "common|reselling.reselling.subAccountResellingTab.common.deployAgreement": {
+  "en": "I agree to enable {productName} for this client at ${price}, non-resell with a 1 month minimum commitment period.",
+  "ko": "이 고객에게 {productName}을(를) ${price}에 재판매 없이 활성화하며, 최소 약정 기간이 1개월임에 동의합니다."
+ },
+ "common|reselling.reselling.subAccountResellingTab.common.deployTooltip": {
+  "en": "The location won't be billed for this purchase.",
+  "ko": "이 구매 금액은 서브 계정에 청구되지 않습니다."
+ },
+ "common|reselling.reselling.subAccountResellingTab.common.payNow": {
+  "en": "Pay Now!",
+  "ko": "지금 결제!"
+ },
+ "common|reselling.reselling.subAccountResellingTab.common.deployed": {
+  "en": "Deployed",
+  "ko": "배포됨"
+ },
+ "common|reselling.reselling.subAccountResellingTab.common.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "common|reselling.reselling.subAccountResellingTab.common.deployedSuccessfully": {
+  "en": "Deployed successfully",
+  "ko": "배포했습니다"
+ },
+ "common|reselling.reselling.subAccountResellingTab.common.failedToDeploy": {
+  "en": "Failed to deploy",
+  "ko": "배포하지 못했습니다"
+ },
+ "common|reselling.reselling.subAccountResellingTab.common.priceSaved": {
+  "en": "Price saved",
+  "ko": "가격을 저장했습니다"
+ },
+ "common|reselling.reselling.subAccountResellingTab.common.failedToSavePrice": {
+  "en": "Failed to save price",
+  "ko": "가격을 저장하지 못했습니다"
+ },
+ "common|reselling.reselling.subAccountResellingTab.common.pleaseTryAgain": {
+  "en": "Please try again",
+  "ko": "다시 시도하세요"
+ },
+ "common|reselling.reselling.subAccountResellingTab.common.deploymentStatus.deployedWithUpsell": {
+  "en": "Deployed with upsell",
+  "ko": "업셀 포함 배포됨"
+ },
+ "common|reselling.reselling.subAccountResellingTab.common.deploymentStatus.deployedWithoutUpsell": {
+  "en": "Deployed without upsell",
+  "ko": "업셀 제외 배포됨"
+ },
+ "common|reselling.reselling.subAccountResellingTab.common.deploymentStatus.withUpsell": {
+  "en": "With upsell: {count}",
+  "ko": "업셀 포함: {count}"
+ },
+ "common|reselling.reselling.subAccountResellingTab.common.deploymentStatus.withoutUpsell": {
+  "en": "Without upsell: {count}",
+  "ko": "업셀 제외: {count}"
+ },
+ "common|reselling.reselling.subAccountResellingTab.common.deploymentStatus.saasBundle": {
+  "en": "SaaS Bundle: {count}",
+  "ko": "SaaS 번들: {count}"
+ },
+ "common|reselling.reselling.subAccountResellingTab.common.resellingAddon": {
+  "en": "You are offering {productName} to your client as part of reselling addon",
+  "ko": "리셀링 애드온으로 고객에게 {productName}을(를) 제공하고 있습니다"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.whatsapp.deployDescription.default": {
+  "en": "Select this option to provide WhatsApp access directly to your client. Your agency will be billed for this purchase.",
+  "ko": "고객에게 WhatsApp을 직접 제공하려면 이 옵션을 선택하세요. 이 구매 금액은 에이전시에 청구됩니다."
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.whatsapp.deployAgreement.default": {
+  "en": "I agree to enable WhatsApp for this client and understand I will be billed at $10/month with a minimum commitment of one month.",
+  "ko": "이 고객에게 WhatsApp을 활성화하는 데 동의하며, 최소 1개월 약정으로 월 $10가 청구됨을 확인합니다."
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.prospecting.name": {
+  "en": "Prospecting",
+  "ko": "잠재 고객 발굴"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.clientPortal.name": {
+  "en": "Client Portal",
+  "ko": "클라이언트 포털"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.listings.name": {
+  "en": "Listings",
+  "ko": "리스팅"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.listings.logoAlt": {
+  "en": "listings",
+  "ko": "리스팅"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.listings.newPlans.title": {
+  "en": "New Subscription Plans!",
+  "ko": "새 구독 플랜 출시!"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.listings.newPlans.description": {
+  "en": "Introducing exciting new Listings Half-Yearly and Annual subscription plans designed to help you offer even more value to your clients.",
+  "ko": "고객에게 더 큰 가치를 제공할 수 있도록 리스팅 6개월·연간 구독 플랜을 새로 선보입니다."
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.listings.resellAmount": {
+  "en": "Resell Amount",
+  "ko": "리셀링 금액"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.listings.plans.month": {
+  "en": "month",
+  "ko": "월"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.listings.plans.year": {
+  "en": "year",
+  "ko": "년"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.listings.plans.nMonths": {
+  "en": "{n} Months",
+  "ko": "{n}개월"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.listings.plans.monthly": {
+  "en": "Monthly Plan",
+  "ko": "월간 플랜"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.listings.plans.sixMonth": {
+  "en": "Smart Saver",
+  "ko": "스마트 세이버"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.listings.plans.annual": {
+  "en": "Annual Advantage",
+  "ko": "연간 어드밴티지"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.listings.plans.savePercentage": {
+  "en": "{percentage}% Off",
+  "ko": "{percentage}% 할인"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.listings.plans.pricing.listingsPrice": {
+  "en": "Listings Plan Price",
+  "ko": "리스팅 플랜 가격"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.listings.plans.pricing.customerPaying": {
+  "en": "Customer's Paying",
+  "ko": "고객 판매가"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.listings.plans.pricing.profit": {
+  "en": "Profit",
+  "ko": "내 수익"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.listings.notAvailable": {
+  "en": "Listings is not available in your country",
+  "ko": "리스팅은 현재 국가에서 사용할 수 없습니다"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.listings.notAvailableDescription": {
+  "en": "This feature is not yet available in your country. We're continuously working to expand our services to more regions. Please visit our Canny Idea Board to request new countries. We prioritize requests based on the number of votes, so your input helps guide future expansions :",
+  "ko": "이 기능은 아직 현재 국가에서 제공되지 않습니다. 더 많은 지역으로 서비스를 넓히기 위해 계속 노력하고 있습니다. 새 국가를 요청하려면 Canny 아이디어 보드를 방문하세요. 투표 수를 기준으로 우선순위를 정하므로 여러분의 의견이 향후 확장 방향에 반영됩니다 :"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.listings.setup.title": {
+  "en": "Complete Setup",
+  "ko": "설정 완료"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.listings.setup.description": {
+  "en": "Below is the list of entities you have yet to complete set-up for, please do so in whichever order you like.",
+  "ko": "아직 설정을 완료하지 않은 엔터티 목록입니다. 원하는 순서대로 진행하세요."
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.listings.setup.setupCompleted": {
+  "en": "Setup Completed",
+  "ko": "설정 완료"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.listings.setup.withUpsell": {
+  "en": "With Upsell",
+  "ko": "업셀 포함"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.listings.setup.withoutUpsell": {
+  "en": "Without Upsell",
+  "ko": "업셀 제외"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.listings.setup.untitledEntity": {
+  "en": "Untitled Entity",
+  "ko": "제목 없는 엔터티"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.listings.setup.entityName": {
+  "en": "Entity Name",
+  "ko": "엔터티 이름"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.listings.setup.entityType": {
+  "en": "Entity Type",
+  "ko": "엔터티 유형"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.listings.setup.purchaseType": {
+  "en": "Purchase Type",
+  "ko": "구매 유형"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.listings.setup.setup": {
+  "en": "Setup",
+  "ko": "설정"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.listings.setup.takeAction": {
+  "en": "Take Action",
+  "ko": "조치"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.sites": {
+  "en": "sites",
+  "ko": "사이트"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.site": {
+  "en": "site",
+  "ko": "사이트"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.additionalStandardPurchase": {
+  "en": "+ $ {price} for {purchaseCount} {siteText}",
+  "ko": "+ {purchaseCount}개 {siteText}에 $ {price}"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.takeActionModal.takeAction": {
+  "en": "Take Action",
+  "ko": "조치"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.takeActionModal.modalTitle": {
+  "en": "Take Action",
+  "ko": "조치 필요"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.takeActionModal.modalDescription": {
+  "en": "Below is the list of sites you have yet to complete set-up for, please do so in whichever order you like.",
+  "ko": "아직 설정을 완료하지 않은 사이트 목록입니다. 원하는 순서대로 진행하세요."
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.takeActionModal.tableHeaders.siteName": {
+  "en": "Site Name",
+  "ko": "사이트 이름"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.takeActionModal.tableHeaders.siteId": {
+  "en": "Site ID",
+  "ko": "사이트 ID"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.takeActionModal.tableHeaders.purchaseType": {
+  "en": "Purchase Type",
+  "ko": "구매 유형"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.takeActionModal.tableHeaders.payment": {
+  "en": "Payment",
+  "ko": "결제"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.takeActionModal.tableHeaders.setup": {
+  "en": "Setup",
+  "ko": "설정"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.takeActionModal.purchaseTypes.upsell": {
+  "en": "Upsell",
+  "ko": "업셀"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.takeActionModal.purchaseTypes.withoutUpsell": {
+  "en": "Without Upsell",
+  "ko": "업셀 제외"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.takeActionModal.paymentStatus.makePayment": {
+  "en": "Make Payment",
+  "ko": "결제"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.takeActionModal.paymentStatus.completed": {
+  "en": "Completed",
+  "ko": "완료"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.takeActionModal.setupStatus.completeSetup": {
+  "en": "Complete Setup",
+  "ko": "설정 완료"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.takeActionModal.setupStatus.completed": {
+  "en": "Completed",
+  "ko": "완료"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.takeActionModal.siteStatus.untitled": {
+  "en": "Untitled",
+  "ko": "제목 없음"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.takeActionModal.paymentProcessing.title": {
+  "en": "Processing Payment",
+  "ko": "결제 처리 중"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.takeActionModal.paymentProcessing.description": {
+  "en": "Please wait while we process your payment...",
+  "ko": "결제를 처리하는 중입니다. 잠시 기다려 주세요..."
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.takeActionModal.paymentProcessing.message": {
+  "en": "Processing your payment...",
+  "ko": "결제를 처리하는 중..."
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.takeActionModal.paymentSuccess.title": {
+  "en": "Payment Successful",
+  "ko": "결제 완료"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.takeActionModal.paymentSuccess.description": {
+  "en": "Your payment has been processed successfully!",
+  "ko": "결제가 처리되었습니다!"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.takeActionModal.paymentSuccess.message": {
+  "en": "Payment completed successfully!",
+  "ko": "결제가 완료되었습니다!"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.takeActionModal.paymentSuccess.updatingStatus": {
+  "en": "Updating site status...",
+  "ko": "사이트 상태 업데이트 중..."
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.takeActionModal.notifications.paymentSuccess": {
+  "en": "Payment Successful",
+  "ko": "결제 완료"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.takeActionModal.notifications.siteStatusUpdated": {
+  "en": "Site status has been updated successfully",
+  "ko": "사이트 상태를 업데이트했습니다"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.freeSiteOffer.banner.heading": {
+  "en": "Launch Your Free WordPress Site Today!",
+  "ko": "지금 무료 WordPress 사이트를 시작하세요!"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.freeSiteOffer.banner.description": {
+  "en": "Kickstart your online presence with a 100% free WordPress site for 1 year - perfect for your agency or your first client. Build fast, grow faster, and unlock exclusive perks along the way.",
+  "ko": "1년 동안 100% 무료인 WordPress 사이트로 온라인 활동을 시작하세요. 에이전시나 첫 고객에게 딱 맞습니다. 빠르게 만들고, 더 빠르게 성장하고, 전용 혜택도 누리세요."
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.freeSiteOffer.banner.ctaButton": {
+  "en": "Claim Your Free Site Now",
+  "ko": "무료 사이트 지금 신청"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.wpDetectBanner.banner.title": {
+  "en": "Don't Miss Out!",
+  "ko": "놓치지 마세요!"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.wpDetectBanner.banner.agencyOnlyView": {
+  "en": "Agency-only view",
+  "ko": "에이전시 전용 화면"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.wpDetectBanner.banner.agencyOnlyTooltip": {
+  "en": "This banner is only visible to agency administrators",
+  "ko": "이 배너는 에이전시 관리자에게만 표시됩니다"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.wpDetectBanner.banner.messageWithCount": {
+  "en": "{wpEnabledLocations} of your {locationsCount} clients run on WordPress - why not host smarter? Switch to our seamless hosting solution and unlock significant monthly savings!",
+  "ko": "고객 {locationsCount}곳 중 {wpEnabledLocations}곳이 WordPress를 사용하고 있습니다. 더 똑똑하게 호스팅해 보세요. 간편한 호스팅 솔루션으로 옮기면 매달 비용을 크게 줄일 수 있습니다!"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.wpDetectBanner.banner.messageDefault": {
+  "en": "Switch to our seamless hosting solution and unlock significant monthly savings!",
+  "ko": "간편한 호스팅 솔루션으로 옮기면 매달 비용을 크게 줄일 수 있습니다!"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.wpDetectBanner.banner.learnMore": {
+  "en": "Learn more",
+  "ko": "자세히 보기"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.wordpress.planLimitExceeded": {
+  "en": "Plan limit exceeded: You have {activeSites} active sites. Please upgrade to the Unlimited Plan, or reduce your site count to {maxSites} to use the Utility Plan.",
+  "ko": "플랜 한도 초과: 활성 사이트가 {activeSites}개입니다. 무제한 플랜으로 업그레이드하거나, 유틸리티 플랜을 쓰려면 사이트 수를 {maxSites}개로 줄이세요."
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.aiEmployee.name": {
+  "en": "AI Employee",
+  "ko": "AI 직원"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.aiEmployee.summerOfAiEnabledDescription": {
+  "en": "Select this option to offer AI Employee executions or to bill\nyour client externally. As the summer of AI is enabled, the plan\nwill start with a 30-day free trial.",
+  "ko": "AI 직원 실행을 제공하거나 고객에게 별도로 청구하려면\n이 옵션을 선택하세요. Summer of AI가 활성화되어 있어\n플랜이 30일 무료 체험으로 시작됩니다."
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.aiEmployee.manageSummerOfAiAccess": {
+  "en": "Manage access to Summer of AI",
+  "ko": "Summer of AI 접근 관리"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.aiEmployee.summerOfAiDisabledDescription": {
+  "en": "Select this option to offer AI Employee executions or to bill\nyour client externally. As the summer of AI is disabled, the\nplan will not have a 30-day free trial.",
+  "ko": "AI 직원 실행을 제공하거나 고객에게 별도로 청구하려면\n이 옵션을 선택하세요. Summer of AI가 비활성화되어 있어\n플랜에 30일 무료 체험이 없습니다."
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.conversationAi.name": {
+  "en": "Conversation AI",
+  "ko": "대화 AI"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.seo.name": {
+  "en": "SEO (By Search Atlas)",
+  "ko": "SEO(Search Atlas 제공)"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.workflowPro.name": {
+  "en": "Workflow Pro",
+  "ko": "워크플로우 Pro"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.workflowPro.logoAlt": {
+  "en": "listings",
+  "ko": "리스팅"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.workflowPro.workflowProPlan": {
+  "en": "Workflow Pro - Pricing Tiers",
+  "ko": "워크플로우 Pro - 가격 티어"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.workflowPro.workflowPlanPrice": {
+  "en": "Workflow Plan Price",
+  "ko": "워크플로우 플랜 가격"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.workflowPro.starterTier": {
+  "en": "Starter Tier",
+  "ko": "스타터 티어"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.workflowPro.growthTier": {
+  "en": "Growth Tier",
+  "ko": "그로스 티어"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.workflowPro.scaleTier": {
+  "en": "Scale Tier",
+  "ko": "스케일 티어"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.workflowPro.newSubscriptionPlans": {
+  "en": "New Subscription Plans!",
+  "ko": "새 구독 플랜 출시!"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.workflowPro.newSubscriptionPlansDescription": {
+  "en": "Introducing exciting new Workflow Pro subscription plans designed to help you offer even more value to your clients.",
+  "ko": "고객에게 더 큰 가치를 제공할 수 있도록 워크플로우 Pro 구독 플랜을 새로 선보입니다."
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.workflowPro.workflowsPlanPrice": {
+  "en": "Workflows Plan Price",
+  "ko": "워크플로우 플랜 가격"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.workflowPro.agreement": {
+  "en": "I agree to enable Workflow Pro for this client at {selectedPlan}, non-resell with a 1 month minimum commitment period",
+  "ko": "이 고객에게 워크플로우 Pro를 {selectedPlan}(으)로 재판매 없이 활성화하며, 최소 약정 기간이 1개월임에 동의합니다"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.dedicatedIp.name": {
+  "en": "Dedicated IP",
+  "ko": "전용 IP"
+ },
+ "common|reselling.reselling.subAccountResellingTab.products.adManager.name": {
+  "en": "Ad Manager",
+  "ko": "광고 관리자"
+ },
+ "common|reselling.reselling.agencyResellingCard.common.howTo": {
+  "en": "How does it work?",
+  "ko": "어떻게 작동하나요?"
+ },
+ "common|reselling.reselling.agencyResellingCard.common.resellAmount": {
+  "en": "Resell Amount",
+  "ko": "리셀링 금액"
+ },
+ "common|reselling.reselling.agencyResellingCard.common.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.title": {
+  "en": "Listings",
+  "ko": "리스팅"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.titleAlt": {
+  "en": "listings",
+  "ko": "리스팅"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.upgradePlansPromo": {
+  "en": "Upgrade Plan coming soon!",
+  "ko": "업그레이드 플랜 곧 출시!"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.banner.title": {
+  "en": "New Subscription Plans!",
+  "ko": "새 구독 플랜 출시!"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.banner.description": {
+  "en": "Introducing exciting new Listings Half-Yearly and Annual subscription plans designed to help you offer even more value to your clients.",
+  "ko": "고객에게 더 큰 가치를 제공할 수 있도록 리스팅 6개월·연간 구독 플랜을 새로 선보입니다."
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.selectorEngineAlt": {
+  "en": "listings-engine",
+  "ko": "리스팅 엔진"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.newPlans": {
+  "en": "New Plans",
+  "ko": "새 플랜"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.plans.month": {
+  "en": "month",
+  "ko": "월"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.plans.nMonths": {
+  "en": "{n} Months",
+  "ko": "{n}개월"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.plans.perMonth": {
+  "en": "{price} / month",
+  "ko": "{price} / 월"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.plans.perMonths": {
+  "en": "{price} / {months} months",
+  "ko": "{price} / {months}개월"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.plans.perYear": {
+  "en": "{price} / year",
+  "ko": "{price} / 년"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.plans.monthly": {
+  "en": "Monthly Plan",
+  "ko": "월간 플랜"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.plans.sixMonth": {
+  "en": "Smart Saver Plan",
+  "ko": "스마트 세이버 플랜"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.plans.annual": {
+  "en": "Annual Advantage Plan",
+  "ko": "연간 어드밴티지 플랜"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.plans.savePercentage": {
+  "en": "(Save {percentage}%)",
+  "ko": "({percentage}% 할인)"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.plans.pricing.listingsPrice": {
+  "en": "Listings Plan Price",
+  "ko": "리스팅 플랜 가격"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.plans.pricing.customerPaying": {
+  "en": "Customer's Paying",
+  "ko": "고객 판매가"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.plans.pricing.profit": {
+  "en": "Profit",
+  "ko": "내 수익"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.providerSelector.title": {
+  "en": "Engine Selection",
+  "ko": "엔진 선택"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.providerSelector.description": {
+  "en": "Please select your preferred engine for listing",
+  "ko": "리스팅에 사용할 엔진을 선택하세요"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.providerSelector.recommended": {
+  "en": "Recommended",
+  "ko": "추천"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.providerSelector.uberall.conflictChance": {
+  "en": "Medium chance of entity conflict",
+  "ko": "엔터티 충돌 가능성 보통"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.providerSelector.uberall.publisherNetwork": {
+  "en": "Publisher Network",
+  "ko": "퍼블리셔 네트워크"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.providerSelector.uberall.successRate": {
+  "en": "85% listing sync success rate",
+  "ko": "리스팅 동기화 성공률 85%"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.providerSelector.uberall.learnMore": {
+  "en": "Learn More",
+  "ko": "자세히 보기"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.providerSelector.yext.conflictChance": {
+  "en": "Low chance of entity conflict",
+  "ko": "엔터티 충돌 가능성 낮음"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.providerSelector.yext.publisherNetwork": {
+  "en": "Publisher Network",
+  "ko": "퍼블리셔 네트워크"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.providerSelector.yext.successRate": {
+  "en": "98% listing sync success rate",
+  "ko": "리스팅 동기화 성공률 98%"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.providerSelector.poweredBy": {
+  "en": "Powered by {provider}",
+  "ko": "{provider} 제공"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.providerSelector.changeEngine": {
+  "en": "Change Engine",
+  "ko": "엔진 변경"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.providerSelector.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.providerSelector.confirmAndApplyEngineChange": {
+  "en": "Confirm and Apply Engine",
+  "ko": "확인 후 엔진 적용"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.providerSelector.acknowledgeLabel": {
+  "en": "Apply Engine Selection",
+  "ko": "엔진 선택 적용"
+ },
+ "common|reselling.reselling.agencyResellingCard.products.listings.providerSelector.acknowledge": {
+  "en": "I understand this selection applies to all new business entities under my agency and can be changed anytime for future entities.",
+  "ko": "이 선택은 내 에이전시의 모든 신규 비즈니스 엔터티에 적용되며, 이후 엔터티에 대해서는 언제든 바꿀 수 있음을 이해합니다."
+ },
+ "common|reselling.reselling.marketplace.appPlans": {
+  "en": "App Plans",
+  "ko": "앱 플랜"
+ },
+ "common|reselling.reselling.marketplace.selectOne": {
+  "en": "Select one",
+  "ko": "하나 선택"
+ },
+ "common|reselling.reselling.marketplace.yourPrice": {
+  "en": "Your Price",
+  "ko": "내 판매가"
+ },
+ "common|reselling.reselling.marketplace.highlevelPrice": {
+  "en": "HighLevel Price",
+  "ko": "하이퍼클래스 가격"
+ },
+ "common|reselling.reselling.marketplace.yourProfit": {
+  "en": "Your Profit",
+  "ko": "내 수익"
+ },
+ "common|reselling.reselling.marketplace.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "common|reselling.reselling.marketplace.automateCustomFieldsImports": {
+  "en": "Automate Your Custom Fields Imports",
+  "ko": "커스텀 필드 가져오기 자동화"
+ },
+ "common|reselling.reselling.marketplace.freeTrialOffer": {
+  "en": "This app offers a {duration} day free trial.",
+  "ko": "이 앱은 {duration}일 무료 체험을 제공합니다."
+ },
+ "common|reselling.reselling.marketplace.errorFetchingRebillingConfig": {
+  "en": "Error while fetching rebilling config",
+  "ko": "재청구 설정을 가져오는 중 오류가 발생했습니다"
+ },
+ "common|reselling.reselling.marketplace.errorCreatingRebillingConfig": {
+  "en": "Error while creating rebilling config",
+  "ko": "재청구 설정을 만드는 중 오류가 발생했습니다"
+ },
+ "common|reselling.reselling.marketplace.errorEditingRebillingConfig": {
+  "en": "Error while editing rebilling config",
+  "ko": "재청구 설정을 편집하는 중 오류가 발생했습니다"
+ },
+ "common|reselling.reselling.marketplace.errorSavingRebillingConfig": {
+  "en": "Error while saving rebilling config",
+  "ko": "재청구 설정을 저장하는 중 오류가 발생했습니다"
+ },
+ "common|reselling.reselling.marketplace.description": {
+  "en": "Markup and Resell: Marketplace Apps from Third-Party Developers. Sub-Accounts will pay the marked-up price set here upon installation.",
+  "ko": "마크업 후 재판매: 서드파티 개발자의 마켓플레이스 앱. 서브 계정은 설치할 때 여기서 설정한 마크업 가격을 결제합니다."
+ },
+ "common|reselling.reselling.filters.filtersApplied": {
+  "en": "Filters applied:",
+  "ko": "적용된 필터:"
+ },
+ "common|reselling.reselling.filters.viewMore": {
+  "en": "View more ({count})",
+  "ko": "더 보기 ({count})"
+ },
+ "common|reselling.reselling.filters.viewLess": {
+  "en": "View less",
+  "ko": "접기"
+ },
+ "common|reselling.reselling.filters.clearFilters": {
+  "en": "Clear filters",
+  "ko": "필터 지우기"
+ },
+ "common|reselling.reselling.filters.pricing": {
+  "en": "Pricing:",
+  "ko": "가격:"
+ },
+ "common|reselling.reselling.filters.categories": {
+  "en": "Categories:",
+  "ko": "카테고리:"
+ },
+ "common|reselling.reselling.filters.appContains": {
+  "en": "App Contains:",
+  "ko": "앱 포함 항목:"
+ },
+ "common|reselling.reselling.filters.collections": {
+  "en": "Collections:",
+  "ko": "컬렉션:"
+ },
+ "common|reselling.reselling.filters.distributionType": {
+  "en": "Distribution Type:",
+  "ko": "배포 유형:"
+ },
+ "common|reselling.reselling.filters.noAppsFound": {
+  "en": "No Apps found",
+  "ko": "앱이 없습니다"
+ },
+ "common|reselling.reselling.filters.modifyFilters": {
+  "en": "Please modify your filters",
+  "ko": "필터를 바꿔 보세요"
+ },
+ "common|reselling.reselling.agencyResellingPage.common.resellingTitle": {
+  "en": "Reselling",
+  "ko": "리셀링"
+ },
+ "common|reselling.reselling.agencyResellingPage.common.subscriptionRestriction": {
+  "en": "Can't change configuration since location is already subscribed",
+  "ko": "서브 계정이 이미 구독 중이어서 설정을 변경할 수 없습니다"
+ },
+ "common|reselling.reselling.agencyResellingPage.common.offerPrefix": {
+  "en": "Offer",
+  "ko": "오퍼"
+ },
+ "common|reselling.reselling.agencyResellingPage.common.resellingPrefix": {
+  "en": "Reselling",
+  "ko": "리셀링"
+ },
+ "common|reselling.reselling.agencyResellingPage.common.resellPrefix": {
+  "en": "Re-sell",
+  "ko": "리셀링"
+ },
+ "common|reselling.reselling.agencyResellingPage.common.howDoesItWork": {
+  "en": "How does it work?",
+  "ko": "어떻게 작동하나요?"
+ },
+ "common|reselling.reselling.agencyResellingPage.common.buildResellerOffer": {
+  "en": "Build Your Re-sell Offer",
+  "ko": "리셀링 오퍼 구성"
+ },
+ "common|reselling.reselling.agencyResellingPage.common.yourPrice": {
+  "en": "Your Price",
+  "ko": "내 판매가"
+ },
+ "common|reselling.reselling.agencyResellingPage.common.highlevelPrice": {
+  "en": "HighLevel Price",
+  "ko": "하이퍼클래스 가격"
+ },
+ "common|reselling.reselling.agencyResellingPage.common.yourProfit": {
+  "en": "Your Profit",
+  "ko": "내 수익"
+ },
+ "common|reselling.reselling.agencyResellingPage.common.priceValidationError": {
+  "en": "Price must be more or equal to HighLevel price",
+  "ko": "가격은 하이퍼클래스 가격 이상이어야 합니다"
+ },
+ "common|reselling.reselling.agencyResellingPage.common.saving": {
+  "en": "Saving",
+  "ko": "저장 중"
+ },
+ "common|reselling.reselling.agencyResellingPage.common.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "common|reselling.reselling.agencyResellingPage.common.footerDescription": {
+  "en": "HighLevel offers discounted app development due to streamlined operations and expertise. Sub accounts can buy and customize apps via the client portal's app settings.",
+  "ko": "하이퍼클래스는 효율적인 운영과 전문성 덕분에 앱 개발을 할인된 가격에 제공합니다. 서브 계정은 클라이언트 포털의 앱 설정에서 앱을 구매하고 맞춤 설정할 수 있습니다."
+ },
+ "common|reselling.reselling.agencyResellingPage.common.learnMore": {
+  "en": "Learn More.",
+  "ko": "자세히 보기."
+ },
+ "common|reselling.reselling.agencyResellingPage.common.pageTitle": {
+  "en": "Reselling",
+  "ko": "리셀링"
+ },
+ "common|reselling.reselling.agencyResellingPage.common.coreServicesTab": {
+  "en": "Core Services",
+  "ko": "핵심 서비스"
+ },
+ "common|reselling.reselling.agencyResellingPage.common.coreServiceDescription": {
+  "en": "Markup and Resell Integral Platforms and Services",
+  "ko": "핵심 플랫폼·서비스 마크업 후 재판매"
+ },
+ "common|reselling.reselling.agencyResellingPage.common.marketplaceAppsTab": {
+  "en": "Marketplace Apps",
+  "ko": "마켓플레이스 앱"
+ },
+ "common|reselling.reselling.agencyResellingPage.workflows.disclaimer": {
+  "en": "Highlevel offers 10,000 workflow premium executions for just $10/month with 1-month validity - upto 60% cheaper than standard platforms. That's an effective cost of $0.001 per action and trigger for first 10,000 executions.",
+  "ko": "하이퍼클래스는 워크플로우 프리미엄 실행 10,000건을 월 $10(유효 기간 1개월)에 제공합니다. 일반 플랫폼보다 최대 60% 저렴하며, 처음 10,000건 실행 기준 작업·트리거당 실질 비용은 $0.001입니다."
+ },
+ "common|reselling.reselling.agencyResellingPage.workflows.holidayPromotion": {
+  "en": " - Activate Holiday and End of year promotion!",
+  "ko": " - 홀리데이 및 연말 프로모션을 활성화하세요!"
+ },
+ "common|reselling.reselling.agencyResellingPage.workflows.howDoesItWork": {
+  "en": "How does it work?",
+  "ko": "어떻게 작동하나요?"
+ },
+ "common|reselling.reselling.agencyResellingPage.workflows.buildResellerOffer": {
+  "en": "Build Your Re-sell Offer",
+  "ko": "리셀링 오퍼 구성"
+ },
+ "common|reselling.reselling.agencyResellingPage.workflows.yourPrice": {
+  "en": "Your Price",
+  "ko": "내 판매가"
+ },
+ "common|reselling.reselling.agencyResellingPage.workflows.highlevelPrice": {
+  "en": "HighLevel Price",
+  "ko": "하이퍼클래스 가격"
+ },
+ "common|reselling.reselling.agencyResellingPage.workflows.yourProfit": {
+  "en": "Your Profit",
+  "ko": "내 수익"
+ },
+ "common|reselling.reselling.agencyResellingPage.workflows.priceValidationError": {
+  "en": "Price must be more or equal to HighLevel price",
+  "ko": "가격은 하이퍼클래스 가격 이상이어야 합니다"
+ },
+ "common|reselling.reselling.agencyResellingPage.workflows.saving": {
+  "en": "Saving",
+  "ko": "저장 중"
+ },
+ "common|reselling.reselling.agencyResellingPage.workflows.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "common|reselling.reselling.agencyResellingPage.workflows.deployPrefix": {
+  "en": "Deploy",
+  "ko": "직접 배포:"
+ },
+ "common|reselling.reselling.agencyResellingPage.workflows.directlySuffix": {
+  "en": "Directly",
+  "ko": "(재판매 없이)"
+ },
+ "common|reselling.reselling.agencyResellingPage.workflows.deployDirectlyDescription": {
+  "en": "Use this option if you are offering Workflows Premium executions as part of your offer or if wish to bill your client externally",
+  "ko": "워크플로우 프리미엄 실행을 오퍼의 일부로 제공하거나 고객에게 별도로 청구하려면 이 옵션을 사용하세요"
+ },
+ "common|reselling.reselling.agencyResellingPage.workflows.agreementPrefix": {
+  "en": "I agree to enable",
+  "ko": "재판매 없이 이 고객에게"
+ },
+ "common|reselling.reselling.agencyResellingPage.workflows.agreementSuffix": {
+  "en": "for this client without resell and I acknowledge that I will be charged",
+  "ko": "을(를) 활성화하는 데 동의하며, 요금이 청구됨을 확인합니다"
+ },
+ "common|reselling.reselling.agencyResellingPage.workflows.payNowButton": {
+  "en": "Pay Now",
+  "ko": "지금 결제"
+ },
+ "common|reselling.reselling.agencyResellingPage.workflows.subscriptionRestriction": {
+  "en": "Can't change configuration since location is already subscribed",
+  "ko": "서브 계정이 이미 구독 중이어서 설정을 변경할 수 없습니다"
+ },
+ "common|reselling.reselling.agencyResellingPage.workflows.subscriptionCreating": {
+  "en": "Subscription is being created.<br/>Please do not reload or press back button",
+  "ko": "구독을 만드는 중입니다.<br/>새로고침하거나 뒤로 가기 버튼을 누르지 마세요"
+ },
+ "common|reselling.reselling.agencyResellingPage.workflows.subscriptionCreated": {
+  "en": "Subscription created successfully. Please wait...",
+  "ko": "구독을 만들었습니다. 잠시 기다려 주세요..."
+ },
+ "common|reselling.reselling.agencyResellingPage.workflows.subscriptionError": {
+  "en": "Unable to create subscription, please contact support",
+  "ko": "구독을 만들 수 없습니다. 고객지원에 문의하세요"
+ },
+ "common|reselling.reselling.agencyResellingPage.workflows.blackFridayPromoDescription": {
+  "en": "Activating the Holiday and End of year promotion - <b>$15 for 3 months with 10,000 executions free per month -</b> will apply this offer to all your locations. After the 3-month period, locations will automatically revert to the default pricing. This offer is valid until Sunday, December 31st, 2024 PST.",
+  "ko": "홀리데이·연말 프로모션(<b>3개월 $15, 매월 10,000건 실행 무료 -</b>)을 활성화하면 모든 서브 계정에 이 혜택이 적용됩니다. 3개월이 지나면 서브 계정은 자동으로 기본 가격으로 돌아갑니다. 이 혜택은 2024년 12월 31일(일) PST까지 유효합니다."
+ },
+ "common|reselling.reselling.agencyResellingPage.aiEmployee.offerPrefix": {
+  "en": "Offer",
+  "ko": "오퍼"
+ },
+ "common|reselling.reselling.agencyResellingPage.aiEmployee.resellingPrefix": {
+  "en": "Reselling",
+  "ko": "리셀링"
+ },
+ "common|reselling.reselling.agencyResellingPage.aiEmployee.resellPrefix": {
+  "en": "Re-sell",
+  "ko": "리셀링"
+ },
+ "common|reselling.reselling.agencyResellingPage.aiEmployee.howDoesItWork": {
+  "en": "How does it work?",
+  "ko": "어떻게 작동하나요?"
+ },
+ "common|reselling.reselling.agencyResellingPage.aiEmployee.buildResellerOffer": {
+  "en": "Build Your Re-sell Offer",
+  "ko": "재판매 오퍼 구성"
+ },
+ "common|reselling.reselling.agencyResellingPage.aiEmployee.yourPrice": {
+  "en": "Your Price",
+  "ko": "내 판매가"
+ },
+ "common|reselling.reselling.agencyResellingPage.aiEmployee.highlevelPrice": {
+  "en": "HighLevel Price",
+  "ko": "하이퍼클래스 원가"
+ },
+ "common|reselling.reselling.agencyResellingPage.aiEmployee.yourProfit": {
+  "en": "Your Profit",
+  "ko": "내 수익"
+ },
+ "common|reselling.reselling.agencyResellingPage.aiEmployee.priceValidationError": {
+  "en": "Price must be more or equal to HighLevel price",
+  "ko": "판매가는 하이퍼클래스 원가 이상이어야 합니다"
+ },
+ "common|reselling.reselling.agencyResellingPage.aiEmployee.saving": {
+  "en": "Saving",
+  "ko": "저장 중"
+ },
+ "common|reselling.reselling.agencyResellingPage.aiEmployee.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "common|reselling.reselling.agencyResellingPage.aiEmployee.deployPrefix": {
+  "en": "Deploy",
+  "ko": "직접 배포:"
+ },
+ "common|reselling.reselling.agencyResellingPage.aiEmployee.directlySuffix": {
+  "en": "Directly",
+  "ko": "(재판매 없이)"
+ },
+ "common|reselling.reselling.agencyResellingPage.aiEmployee.deployDirectlyDescription": {
+  "en": "Use this option if you are offering AI Employee as part of your offer or if wish to bill your client externally",
+  "ko": "AI 직원을 오퍼의 일부로 제공하거나 고객에게 별도로 청구하려면 이 옵션을 사용하세요"
+ },
+ "common|reselling.reselling.agencyResellingPage.aiEmployee.agreementPrefix": {
+  "en": "I agree to enable",
+  "ko": "재판매 없이 이 고객에게"
+ },
+ "common|reselling.reselling.agencyResellingPage.aiEmployee.agreementSuffix": {
+  "en": "for this client without resell and I acknowledge that I will be charged",
+  "ko": "을(를) 활성화하는 데 동의하며, 요금이 청구됨을 확인합니다"
+ },
+ "common|reselling.reselling.agencyResellingPage.aiEmployee.payNowButton": {
+  "en": "Pay Now",
+  "ko": "지금 결제"
+ },
+ "common|reselling.reselling.agencyResellingPage.aiEmployee.subscriptionRestriction": {
+  "en": "Can't change configuration since location is already subscribed",
+  "ko": "이 서브 계정은 이미 구독 중이므로 설정을 변경할 수 없습니다"
+ },
+ "common|reselling.reselling.agencyResellingPage.aiEmployee.subscriptionCreating": {
+  "en": "Subscription is being created.<br/>Please do not reload or press back button",
+  "ko": "구독을 만드는 중입니다.<br/>새로고침하거나 뒤로 가기 버튼을 누르지 마세요"
+ },
+ "common|reselling.reselling.agencyResellingPage.aiEmployee.subscriptionCreated": {
+  "en": "Subscription created successfully. Please wait...",
+  "ko": "구독이 만들어졌습니다. 잠시 기다려 주세요..."
+ },
+ "common|reselling.reselling.agencyResellingPage.aiEmployee.subscriptionError": {
+  "en": "Unable to create subscription, please contact support",
+  "ko": "구독을 만들 수 없습니다. 지원팀에 문의해 주세요"
+ },
+ "common|reselling.reselling.agencyResellingPage.aiEmployee.enableMessagePrefix": {
+  "en": "Kindly enable",
+  "ko": "에이전시의 회사 설정에서"
+ },
+ "common|reselling.reselling.agencyResellingPage.aiEmployee.enableMessageSuffix": {
+  "en": "for your agency in Company Settings",
+  "ko": "을(를) 활성화해 주세요."
+ },
+ "common|reselling.reselling.agencyResellingPage.aiEmployee.enableLinkText": {
+  "en": "here",
+  "ko": "여기"
+ },
+ "common|reselling.reselling.agencyResellingPage.seo.offerPrefix": {
+  "en": "Offer",
+  "ko": "오퍼"
+ },
+ "common|reselling.reselling.agencyResellingPage.seo.poweredByPrefix": {
+  "en": "(Powered by Search Atlas)",
+  "ko": "(Search Atlas 제공)"
+ },
+ "common|reselling.reselling.agencyResellingPage.seo.resellPrefix": {
+  "en": "Re-sell",
+  "ko": "재판매"
+ },
+ "common|reselling.reselling.agencyResellingPage.seo.howDoesItWork": {
+  "en": "How does it work?",
+  "ko": "어떻게 작동하나요?"
+ },
+ "common|reselling.reselling.agencyResellingPage.seo.buildResellerOffer": {
+  "en": "Build Your Re-sell Offer",
+  "ko": "재판매 오퍼 구성"
+ },
+ "common|reselling.reselling.agencyResellingPage.seo.yourPrice": {
+  "en": "Your Price",
+  "ko": "내 판매가"
+ },
+ "common|reselling.reselling.agencyResellingPage.seo.highlevelPrice": {
+  "en": "HighLevel Price",
+  "ko": "하이퍼클래스 원가"
+ },
+ "common|reselling.reselling.agencyResellingPage.seo.yourProfit": {
+  "en": "Your Profit",
+  "ko": "내 수익"
+ },
+ "common|reselling.reselling.agencyResellingPage.seo.priceValidationError": {
+  "en": "Price must be more or equal to HighLevel price",
+  "ko": "판매가는 하이퍼클래스 원가 이상이어야 합니다"
+ },
+ "common|reselling.reselling.agencyResellingPage.seo.saving": {
+  "en": "Saving",
+  "ko": "저장 중"
+ },
+ "common|reselling.reselling.agencyResellingPage.seo.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "common|reselling.reselling.agencyResellingPage.seo.deployPrefix": {
+  "en": "Deploy",
+  "ko": "직접 배포:"
+ },
+ "common|reselling.reselling.agencyResellingPage.seo.directlySuffix": {
+  "en": "Directly",
+  "ko": "(재판매 없이)"
+ },
+ "common|reselling.reselling.agencyResellingPage.seo.deployDirectlyDescription": {
+  "en": "Use this option if you are offering SEO as part of your offer or if wish to bill your client externally",
+  "ko": "SEO를 오퍼의 일부로 제공하거나 고객에게 별도로 청구하려면 이 옵션을 사용하세요"
+ },
+ "common|reselling.reselling.agencyResellingPage.seo.agreementPrefix": {
+  "en": "I agree to enable",
+  "ko": "재판매 없이 이 고객에게"
+ },
+ "common|reselling.reselling.agencyResellingPage.seo.agreementSuffix": {
+  "en": "for this client without resell and I acknowledge that I will be charged",
+  "ko": "을(를) 활성화하는 데 동의하며, 요금이 청구됨을 확인합니다"
+ },
+ "common|reselling.reselling.agencyResellingPage.seo.payNowButton": {
+  "en": "Pay Now",
+  "ko": "지금 결제"
+ },
+ "common|reselling.reselling.agencyResellingPage.seo.subscriptionRestriction": {
+  "en": "Can't change configuration since location is already subscribed",
+  "ko": "이 서브 계정은 이미 구독 중이므로 설정을 변경할 수 없습니다"
+ },
+ "common|reselling.reselling.agencyResellingPage.seo.subscriptionCreating": {
+  "en": "Subscription is being created.<br/>Please do not reload or press back button",
+  "ko": "구독을 만드는 중입니다.<br/>새로고침하거나 뒤로 가기 버튼을 누르지 마세요"
+ },
+ "common|reselling.reselling.agencyResellingPage.seo.subscriptionCreated": {
+  "en": "Subscription created successfully. Please wait...",
+  "ko": "구독이 만들어졌습니다. 잠시 기다려 주세요..."
+ },
+ "common|reselling.reselling.agencyResellingPage.seo.subscriptionError": {
+  "en": "Unable to create subscription, please contact support",
+  "ko": "구독을 만들 수 없습니다. 지원팀에 문의해 주세요"
+ },
+ "common|reselling.reselling.agencyResellingPage.seo.toggleTooltipDisable": {
+  "en": "This action will disable SEO Tool for all sub-accounts.",
+  "ko": "모든 서브 계정에서 SEO 도구가 비활성화됩니다."
+ },
+ "common|reselling.reselling.agencyResellingPage.seo.toggleTooltipEnable": {
+  "en": "This action will enable SEO Tool for all sub-accounts.",
+  "ko": "모든 서브 계정에서 SEO 도구가 활성화됩니다."
+ },
+ "common|reselling.reselling.agencyResellingPage.whatsapp.offerPrefix": {
+  "en": "Offer",
+  "ko": "오퍼"
+ },
+ "common|reselling.reselling.agencyResellingPage.whatsapp.resellingPrefix": {
+  "en": "Reselling",
+  "ko": "리셀링"
+ },
+ "common|reselling.reselling.agencyResellingPage.whatsapp.resellPrefix": {
+  "en": "Re-sell",
+  "ko": "재판매"
+ },
+ "common|reselling.reselling.agencyResellingPage.whatsapp.howDoesItWork": {
+  "en": "How does it work?",
+  "ko": "어떻게 작동하나요?"
+ },
+ "common|reselling.reselling.agencyResellingPage.whatsapp.buildResellerOffer": {
+  "en": "Build Your Re-sell Offer",
+  "ko": "재판매 오퍼 구성"
+ },
+ "common|reselling.reselling.agencyResellingPage.whatsapp.yourPrice": {
+  "en": "Your Price",
+  "ko": "내 판매가"
+ },
+ "common|reselling.reselling.agencyResellingPage.whatsapp.highlevelPrice": {
+  "en": "HighLevel Price",
+  "ko": "하이퍼클래스 원가"
+ },
+ "common|reselling.reselling.agencyResellingPage.whatsapp.yourProfit": {
+  "en": "Your Profit",
+  "ko": "내 수익"
+ },
+ "common|reselling.reselling.agencyResellingPage.whatsapp.priceValidationError": {
+  "en": "Price must be more or equal to HighLevel price",
+  "ko": "판매가는 하이퍼클래스 원가 이상이어야 합니다"
+ },
+ "common|reselling.reselling.agencyResellingPage.whatsapp.saving": {
+  "en": "Saving",
+  "ko": "저장 중"
+ },
+ "common|reselling.reselling.agencyResellingPage.whatsapp.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "common|reselling.reselling.agencyResellingPage.whatsapp.subscriptionRestriction": {
+  "en": "Can't change configuration since location is already subscribed",
+  "ko": "이 서브 계정은 이미 구독 중이므로 설정을 변경할 수 없습니다"
+ },
+ "common|reselling.reselling.agencyResellingPage.whatsapp.learnMore": {
+  "en": "Learn More.",
+  "ko": "자세히 보기"
+ },
+ "common|reselling.reselling.agencyResellingPage.whatsapp.pricingInfo": {
+  "en": "Receiving inbound messages and replying with free text in the conversation window is completely free. However, outbound messages that use WhatsApp templates may incur additional pass-through charges.",
+  "ko": "수신 메시지를 받고 대화 창 안에서 자유 형식 텍스트로 답장하는 것은 완전히 무료입니다. 다만 WhatsApp 템플릿을 사용하는 발신 메시지에는 실비 요금이 추가로 부과될 수 있습니다."
+ },
+ "common|reselling.reselling.agencyResellingPage.dedicatedIp.resellingSettingsSuffix": {
+  "en": "Resell Settings",
+  "ko": "재판매 설정"
+ },
+ "common|reselling.reselling.agencyResellingPage.dedicatedIp.description": {
+  "en": "This allows you to rebill dedicated IP (used for email outbound sending) for cost to your clients and include a markup",
+  "ko": "전용 IP(이메일 발송용) 비용을 고객에게 재청구하고 마크업을 붙일 수 있습니다"
+ },
+ "common|reselling.reselling.agencyResellingPage.dedicatedIp.ipRebillingAmount": {
+  "en": "IP Re-billing Amount",
+  "ko": "IP 재청구 금액"
+ },
+ "common|reselling.reselling.agencyResellingPage.dedicatedIp.yourMonthlyCost": {
+  "en": "Your monthly IP cost:",
+  "ko": "내 월 IP 원가:"
+ },
+ "common|reselling.reselling.agencyResellingPage.dedicatedIp.monthlyChargeToCustomer": {
+  "en": "Monthly charge to customer:",
+  "ko": "고객 월 청구액:"
+ },
+ "common|reselling.reselling.agencyResellingPage.dedicatedIp.monthlyProfit": {
+  "en": "Monthly Profit:",
+  "ko": "월 수익:"
+ },
+ "common|reselling.reselling.agencyResellingPage.dedicatedIp.yourCost": {
+  "en": "Your cost:",
+  "ko": "내 원가:"
+ },
+ "common|reselling.reselling.agencyResellingPage.dedicatedIp.chargedToCustomer": {
+  "en": "Charged to Customer:",
+  "ko": "고객 청구액:"
+ },
+ "common|reselling.reselling.agencyResellingPage.dedicatedIp.profit": {
+  "en": "Profit:",
+  "ko": "수익:"
+ },
+ "common|reselling.reselling.agencyResellingPage.dedicatedIp.numberOfIps": {
+  "en": "No of IPs:",
+  "ko": "IP 수:"
+ },
+ "common|reselling.reselling.agencyResellingPage.dedicatedIp.loading": {
+  "en": "Loading...",
+  "ko": "불러오는 중..."
+ },
+ "common|reselling.reselling.agencyResellingPage.dedicatedIp.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "common|reselling.reselling.agencyResellingPage.dedicatedIp.revokeDedication": {
+  "en": "Revoke Dedication",
+  "ko": "전용 IP 제공 중단"
+ },
+ "common|reselling.reselling.agencyResellingPage.dedicatedIp.revokeDescription": {
+  "en": "Use this option to discontinue offering new Dedicated IP to your client without charging them",
+  "ko": "고객에게 요금을 청구하지 않고 새 전용 IP 제공을 중단하려면 이 옵션을 사용하세요"
+ },
+ "common|reselling.reselling.agencyResellingPage.dedicatedIp.existingSubscriptionsNote": {
+  "en": "Existing IP subscriptions will not be effected",
+  "ko": "기존 IP 구독에는 영향이 없습니다"
+ },
+ "common|reselling.reselling.agencyResellingPage.dedicatedIp.revoke": {
+  "en": "Revoke",
+  "ko": "중단"
+ },
+ "common|reselling.reselling.agencyResellingPage.dedicatedIp.provideDirectlyTitle": {
+  "en": "Provide Dedicated IP for email directly",
+  "ko": "이메일 전용 IP 직접 제공"
+ },
+ "common|reselling.reselling.agencyResellingPage.dedicatedIp.provideDirectlyDescription": {
+  "en": "Use this option to give Dedicated IP to your client without charging them",
+  "ko": "고객에게 요금을 청구하지 않고 전용 IP를 제공하려면 이 옵션을 사용하세요"
+ },
+ "common|reselling.reselling.agencyResellingPage.dedicatedIp.agreeToProvideText": {
+  "en": "I agree to provide IP for this client without upsell",
+  "ko": "업셀 없이 이 고객에게 IP를 제공하는 데 동의합니다"
+ },
+ "common|reselling.reselling.agencyResellingPage.dedicatedIp.acknowledgeChargeText": {
+  "en": "I acknowledge that I will be charged $59 / Month / IP",
+  "ko": "IP 1개당 월 $59가 청구됨을 확인합니다"
+ },
+ "common|reselling.reselling.agencyResellingPage.dedicatedIp.agree": {
+  "en": "Agree",
+  "ko": "동의"
+ },
+ "common|reselling.reselling.agencyResellingPage.prospecting.offerPrefix": {
+  "en": "Offer",
+  "ko": "오퍼"
+ },
+ "common|reselling.reselling.agencyResellingPage.prospecting.resellingPrefix": {
+  "en": "Reselling",
+  "ko": "리셀링"
+ },
+ "common|reselling.reselling.agencyResellingPage.prospecting.resellPrefix": {
+  "en": "Re-sell",
+  "ko": "재판매"
+ },
+ "common|reselling.reselling.agencyResellingPage.prospecting.howDoesItWork": {
+  "en": "How does it work?",
+  "ko": "어떻게 작동하나요?"
+ },
+ "common|reselling.reselling.agencyResellingPage.prospecting.buildResellerOffer": {
+  "en": "Build Your Re-sell Offer",
+  "ko": "재판매 오퍼 구성"
+ },
+ "common|reselling.reselling.agencyResellingPage.prospecting.yourPrice": {
+  "en": "Your Price",
+  "ko": "내 판매가"
+ },
+ "common|reselling.reselling.agencyResellingPage.prospecting.highlevelPrice": {
+  "en": "HighLevel Price",
+  "ko": "하이퍼클래스 원가"
+ },
+ "common|reselling.reselling.agencyResellingPage.prospecting.yourProfit": {
+  "en": "Your Profit",
+  "ko": "내 수익"
+ },
+ "common|reselling.reselling.agencyResellingPage.prospecting.priceValidationError": {
+  "en": "Price must be more or equal to HighLevel price",
+  "ko": "판매가는 하이퍼클래스 원가 이상이어야 합니다"
+ },
+ "common|reselling.reselling.agencyResellingPage.prospecting.saving": {
+  "en": "Saving",
+  "ko": "저장 중"
+ },
+ "common|reselling.reselling.agencyResellingPage.prospecting.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "common|reselling.reselling.agencyResellingPage.prospecting.deployPrefix": {
+  "en": "Deploy",
+  "ko": "직접 배포:"
+ },
+ "common|reselling.reselling.agencyResellingPage.prospecting.directlySuffix": {
+  "en": "Directly",
+  "ko": "(재판매 없이)"
+ },
+ "common|reselling.reselling.agencyResellingPage.prospecting.deployDirectlyDescription": {
+  "en": "Use this option if you are offering Prospecting as part of your offer or if wish to bill your client externally",
+  "ko": "프로스펙팅을 오퍼의 일부로 제공하거나 고객에게 별도로 청구하려면 이 옵션을 사용하세요"
+ },
+ "common|reselling.reselling.agencyResellingPage.prospecting.agreementPrefix": {
+  "en": "I agree to enable",
+  "ko": "재판매 없이 이 고객에게"
+ },
+ "common|reselling.reselling.agencyResellingPage.prospecting.agreementSuffix": {
+  "en": "for this client without resell and I acknowledge that I will be charged",
+  "ko": "을(를) 활성화하는 데 동의하며, 요금이 청구됨을 확인합니다"
+ },
+ "common|reselling.reselling.agencyResellingPage.prospecting.payNowButton": {
+  "en": "Pay Now",
+  "ko": "지금 결제"
+ },
+ "common|reselling.reselling.agencyResellingPage.prospecting.subscriptionRestriction": {
+  "en": "Can't change configuration since location is already subscribed",
+  "ko": "이 서브 계정은 이미 구독 중이므로 설정을 변경할 수 없습니다"
+ },
+ "common|reselling.reselling.agencyResellingPage.prospecting.subscriptionCreating": {
+  "en": "Subscription is being created.<br/>Please do not reload or press back button",
+  "ko": "구독을 만드는 중입니다.<br/>새로고침하거나 뒤로 가기 버튼을 누르지 마세요"
+ },
+ "common|reselling.reselling.agencyResellingPage.prospecting.subscriptionCreated": {
+  "en": "Subscription created successfully. Please wait...",
+  "ko": "구독이 만들어졌습니다. 잠시 기다려 주세요..."
+ },
+ "common|reselling.reselling.agencyResellingPage.prospecting.subscriptionError": {
+  "en": "Unable to create subscription, please contact support",
+  "ko": "구독을 만들 수 없습니다. 지원팀에 문의해 주세요"
+ },
+ "common|reselling.reselling.agencyResellingPage.prospecting.toggleTooltipDisable": {
+  "en": "This action will disable Prospecting Tool for all sub-accounts.",
+  "ko": "모든 서브 계정에서 프로스펙팅 도구가 비활성화됩니다."
+ },
+ "common|reselling.reselling.agencyResellingPage.prospecting.toggleTooltipEnable": {
+  "en": "This action will enable Prospecting Tool for all sub-accounts.",
+  "ko": "모든 서브 계정에서 프로스펙팅 도구가 활성화됩니다."
+ },
+ "common|reselling.reselling.agencyResellingPage.adManager.subscriptionRestriction": {
+  "en": "Can't change configuration since location is already subscribed",
+  "ko": "이 서브 계정은 이미 구독 중이므로 설정을 변경할 수 없습니다"
+ },
+ "common|reselling.reselling.agencyResellingPage.adManager.offerPrefix": {
+  "en": "Offer",
+  "ko": "오퍼"
+ },
+ "common|reselling.reselling.agencyResellingPage.adManager.resellingPrefix": {
+  "en": "Reselling",
+  "ko": "리셀링"
+ },
+ "common|reselling.reselling.agencyResellingPage.adManager.resellPrefix": {
+  "en": "Re-sell",
+  "ko": "재판매"
+ },
+ "common|reselling.reselling.agencyResellingPage.adManager.howDoesItWork": {
+  "en": "How does it work?",
+  "ko": "어떻게 작동하나요?"
+ },
+ "common|reselling.reselling.agencyResellingPage.adManager.bookACall": {
+  "en": "Book a call",
+  "ko": "상담 통화 예약"
+ },
+ "common|reselling.reselling.agencyResellingPage.adManager.bookCallTooltip": {
+  "en": "Click to book a call with an expert for any feedback or assistance with configuration.",
+  "ko": "설정 관련 피드백이나 도움이 필요하면 클릭해 전문가와 통화를 예약하세요."
+ },
+ "common|reselling.reselling.agencyResellingPage.adManager.buildResellerOffer": {
+  "en": "Build Your Re-sell Offer",
+  "ko": "재판매 오퍼 구성"
+ },
+ "common|reselling.reselling.agencyResellingPage.adManager.yourPrice": {
+  "en": "Your Price",
+  "ko": "내 판매가"
+ },
+ "common|reselling.reselling.agencyResellingPage.adManager.highlevelPrice": {
+  "en": "HighLevel Price",
+  "ko": "하이퍼클래스 원가"
+ },
+ "common|reselling.reselling.agencyResellingPage.adManager.yourProfit": {
+  "en": "Your Profit",
+  "ko": "내 수익"
+ },
+ "common|reselling.reselling.agencyResellingPage.adManager.priceValidationError": {
+  "en": "Price must be more or equal to HighLevel price",
+  "ko": "판매가는 하이퍼클래스 원가 이상이어야 합니다"
+ },
+ "common|reselling.reselling.agencyResellingPage.adManager.loading": {
+  "en": "Loading...",
+  "ko": "불러오는 중..."
+ },
+ "common|reselling.reselling.agencyResellingPage.adManager.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "common|reselling.reselling.agencyResellingPage.adManager.stripeNotConnectedLocationWarning": {
+  "en": "Re-sell offer cannot be defined as stripe account is not connected.",
+  "ko": "Stripe 계정이 연결되지 않아 재판매 오퍼를 설정할 수 없습니다."
+ },
+ "common|reselling.reselling.agencyResellingPage.adManager.stripeNotConnectedAgencyWarning": {
+  "en": "Resell offer cannot be defined as stripe account is not connected, it can be deployed directly for",
+  "ko": "Stripe 계정이 연결되지 않아 재판매 오퍼를 설정할 수 없습니다. 다음 대상에는 직접 배포할 수 있습니다:"
+ },
+ "common|reselling.reselling.agencyResellingPage.adManager.underSubAccountReselling": {
+  "en": "under sub-account reselling.",
+  "ko": "(서브 계정 리셀링에서)"
+ },
+ "common|reselling.reselling.agencyResellingPage.adManager.deployPrefix": {
+  "en": "Deploy",
+  "ko": "직접 배포:"
+ },
+ "common|reselling.reselling.agencyResellingPage.adManager.directlySuffix": {
+  "en": "Directly",
+  "ko": "(재판매 없이)"
+ },
+ "common|reselling.reselling.agencyResellingPage.adManager.deployDirectlyDescription": {
+  "en": "Use this option if you are offering Ad Manager as part of your offer or if wish to bill your client externally",
+  "ko": "광고 관리자를 오퍼의 일부로 제공하거나 고객에게 별도로 청구하려면 이 옵션을 사용하세요"
+ },
+ "common|reselling.reselling.agencyResellingPage.adManager.agreementPrefix": {
+  "en": "I agree to enable",
+  "ko": "재판매 없이 이 고객에게"
+ },
+ "common|reselling.reselling.agencyResellingPage.adManager.agreementMiddle": {
+  "en": "for this client without resell and I acknowledge that I will be charged",
+  "ko": "을(를) 활성화하는 데 동의하며, 이 서브 계정에 대해"
+ },
+ "common|reselling.reselling.agencyResellingPage.adManager.agreementSuffix": {
+  "en": "for this sub-account.",
+  "ko": "이(가) 청구됨을 확인합니다."
+ },
+ "common|reselling.reselling.common.cardIconAlt": {
+  "en": "Card icon",
+  "ko": "카드 아이콘"
+ },
+ "common|reselling.reselling.common.productLogoAlt": {
+  "en": "Product Logo",
+  "ko": "상품 로고"
+ },
+ "common|reselling.reselling.common.addonOffersDescription": {
+  "en": "Customise add-on offers for your clients. The prices you set here will appear on the paywall when clients visit the corresponding product page.",
+  "ko": "고객에게 제공할 부가 오퍼를 설정하세요. 여기서 정한 가격은 고객이 해당 상품 페이지를 방문할 때 결제 화면에 표시됩니다."
+ },
+ "common|reselling.reselling.common.manage": {
+  "en": "Manage",
+  "ko": "관리"
+ },
+ "common|reselling.reselling.common.enabled": {
+  "en": "Enabled",
+  "ko": "활성화됨"
+ },
+ "common|reselling.reselling.common.disabled": {
+  "en": "Disabled",
+  "ko": "비활성화됨"
+ },
+ "common|reselling.reselling.common.markupDescription": {
+  "en": "Specify the amount you wish to charge your customers above your base cost. These markups will automatically apply to client accounts once they add a payment card. Keep in mind that these adjustments do not replace pricing established through SaaS plans or manual settings.",
+  "ko": "기본 원가에 더해 고객에게 청구할 금액을 지정하세요. 이 마크업은 고객이 결제 카드를 등록하면 고객 계정에 자동으로 적용됩니다. 단, SaaS 플랜이나 수동 설정으로 정한 가격을 대체하지는 않습니다."
+ },
+ "common|reselling.reselling.rebillingCard.usageBasedMarkup": {
+  "en": "Usage Based Markup",
+  "ko": "사용량 기반 마크업"
+ },
+ "common|reselling.reselling.rebillingCard.yourMarkup": {
+  "en": "Your Markup",
+  "ko": "내 마크업"
+ },
+ "common|reselling.reselling.rebillingCard.usage": {
+  "en": "Usage",
+  "ko": "사용량"
+ },
+ "common|reselling.reselling.rebillingCard.payAsYouGo": {
+  "en": "Pay-as-you-go",
+  "ko": "사용량 기반"
+ },
+ "common|reselling.reselling.rebillingCard.usageBasedDetails": {
+  "en": "Usage Based Details",
+  "ko": "사용량 기반 상세"
+ },
+ "common|reselling.reselling.rebillingCard.baseRatesChargedToAgency": {
+  "en": "Base Rates (charged to agency)",
+  "ko": "기본 요율(에이전시 청구)"
+ },
+ "common|reselling.reselling.rebillingCard.charge": {
+  "en": "Charge",
+  "ko": "청구"
+ },
+ "common|reselling.reselling.rebillingCard.chargedToCustomer": {
+  "en": "Charged to customer",
+  "ko": "고객 청구액"
+ },
+ "common|reselling.reselling.rebillingCard.valueFor10": {
+  "en": "$10 will give you about",
+  "ko": "$10이면 약"
+ },
+ "common|reselling.reselling.rebillingCard.profit": {
+  "en": "Profit",
+  "ko": "수익"
+ },
+ "common|reselling.reselling.rebillingCard.subAccountManagement": {
+  "en": "Sub account Management",
+  "ko": "서브 계정 관리"
+ },
+ "common|reselling.reselling.rebillingCard.subAccountManagementTooltip": {
+  "en": "Manage product access and pricing for your sub-accounts. Enable or disable reselling, set custom markups, and apply bulk actions like enabling features or updating markups across multiple sub-accounts.",
+  "ko": "서브 계정별 상품 접근 권한과 가격을 관리합니다. 리셀링을 켜거나 끄고, 맞춤 마크업을 정하고, 여러 서브 계정에 기능 활성화·마크업 변경 같은 일괄 작업을 적용할 수 있습니다."
+ },
+ "common|reselling.reselling.rebillingCard.subAccountManagementTooltip297": {
+  "en": "Manage product access and pricing for your sub-accounts. Enable or disable reselling and apply bulk actions like enabling features.",
+  "ko": "서브 계정별 상품 접근 권한과 가격을 관리합니다. 리셀링을 켜거나 끄고, 기능 활성화 같은 일괄 작업을 적용할 수 있습니다."
+ },
+ "common|reselling.reselling.rebillingCard.manageAtSubAccountLevel": {
+  "en": "Manage at Sub-Account Level",
+  "ko": "서브 계정별 관리"
+ },
+ "common|reselling.reselling.rebillingCard.resellingEnabledFor": {
+  "en": "Reselling Enabled for {count} Sub accounts",
+  "ko": "서브 계정 {count}개에서 리셀링 활성화됨"
+ },
+ "common|reselling.reselling.rebillingCard.resellingDisabledFor": {
+  "en": "Reselling Disabled for {count} Sub accounts",
+  "ko": "서브 계정 {count}개에서 리셀링 비활성화됨"
+ },
+ "common|reselling.reselling.rebillingCard.saveChanges": {
+  "en": "Save Changes",
+  "ko": "변경사항 저장"
+ },
+ "common|reselling.reselling.rebillingCard.success": {
+  "en": "Success",
+  "ko": "성공"
+ },
+ "common|reselling.reselling.rebillingCard.savedConfigSuccessfully": {
+  "en": "Saved config successfully",
+  "ko": "설정을 저장했습니다"
+ },
+ "common|reselling.reselling.rebillingCard.error": {
+  "en": "Error",
+  "ko": "오류"
+ },
+ "common|reselling.reselling.rebillingCard.errorSavingConfig": {
+  "en": "Error saving config",
+  "ko": "설정을 저장하지 못했습니다"
+ },
+ "common|reselling.reselling.rebillingCard.products.workflowExternalAI": {
+  "en": "Workflow - External AI Models",
+  "ko": "워크플로우 - 외부 AI 모델"
+ },
+ "common|reselling.reselling.rebillingCard.products.emailResell": {
+  "en": "Email Resell",
+  "ko": "이메일 재판매"
+ },
+ "common|reselling.reselling.rebillingCard.products.lcEmailVerification": {
+  "en": "LC Email Verification",
+  "ko": "하이퍼클래스 이메일 인증"
+ },
+ "common|reselling.reselling.rebillingCard.products.phoneSystem": {
+  "en": "Phone System",
+  "ko": "전화 시스템"
+ },
+ "common|reselling.reselling.rebillingCard.products.domainPurchase": {
+  "en": "Domain Purchase",
+  "ko": "도메인 구매"
+ },
+ "common|reselling.reselling.rebillingCard.words": {
+  "en": "words",
+  "ko": "단어"
+ },
+ "common|reselling.reselling.rebillingCard.wordpress.errors.planLimitExceeded": {
+  "en": "Plan limit exceeded: You have {activeSites} active sites. Please upgrade to the Truly Unlimited Plan, or reduce your site count to {maxSites} to use the Utility Plan.",
+  "ko": "플랜 한도를 초과했습니다: 활성 사이트가 {activeSites}개입니다. Truly Unlimited 플랜으로 업그레이드하거나, Utility 플랜을 쓰려면 사이트 수를 {maxSites}개로 줄이세요."
+ },
+ "common|reselling.reselling.workflowAIModal.title": {
+  "en": "Enable Workflow - External AI Models",
+  "ko": "워크플로우 - 외부 AI 모델 활성화"
+ },
+ "common|reselling.reselling.workflowAIModal.termsAndConditions": {
+  "en": "Terms & Conditions",
+  "ko": "이용약관"
+ },
+ "common|reselling.reselling.workflowAIModal.externalAIModels": {
+  "en": "External AI Models",
+  "ko": "외부 AI 모델"
+ },
+ "common|reselling.reselling.workflowAIModal.term1": {
+  "en": "{bold} feature is chargeable for each execution. You pay exactly what the AI model provider charges us.",
+  "ko": "{bold} 기능은 실행할 때마다 요금이 부과됩니다. AI 모델 제공업체가 청구하는 금액 그대로 결제합니다."
+ },
+ "common|reselling.reselling.workflowAIModal.term2": {
+  "en": "On enabling External AI Models, the exact cost charged by the AI model provider will be debited from the Agency Wallet for each execution from any of the Agency Sub Accounts (Locations).",
+  "ko": "외부 AI 모델을 활성화하면, 에이전시의 어느 서브 계정에서든 실행될 때마다 AI 모델 제공업체가 청구하는 실제 비용이 에이전시 지갑에서 차감됩니다."
+ },
+ "common|reselling.reselling.workflowAIModal.confirmTerms": {
+  "en": "I confirm that I agree to the Workflow - External AI Models terms and conditions",
+  "ko": "워크플로우 - 외부 AI 모델 이용약관에 동의합니다"
+ },
+ "common|reselling.reselling.workflowAIModal.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "common|reselling.reselling.workflowAIModal.enable": {
+  "en": "Enable",
+  "ko": "활성화"
+ },
+ "common|reselling.reselling.whatIsResellingModal.step1Alt": {
+  "en": "Step 1",
+  "ko": "1단계"
+ },
+ "common|reselling.reselling.whatIsResellingModal.step2Alt": {
+  "en": "Step 2",
+  "ko": "2단계"
+ },
+ "common|reselling.reselling.whatIsResellingModal.step3Alt": {
+  "en": "Step 3",
+  "ko": "3단계"
+ },
+ "common|reselling.reselling.whatsApp.here": {
+  "en": "here.",
+  "ko": "여기"
+ },
+ "common|reselling.reselling.bulkLocationsPage.manage": {
+  "en": "Manage",
+  "ko": "관리"
+ },
+ "common|reselling.reselling.bulkLocationsPage.atSubAccountLevel": {
+  "en": "at Sub account Level",
+  "ko": "(서브 계정별)"
+ },
+ "common|reselling.reselling.bulkLocationsPage.resellingEnabledFor": {
+  "en": "Reselling Enabled for {count} Sub accounts",
+  "ko": "서브 계정 {count}개에서 리셀링 활성화됨"
+ },
+ "common|reselling.reselling.bulkLocationsPage.resellingDisabledFor": {
+  "en": "Reselling Disabled for {count} Sub accounts",
+  "ko": "서브 계정 {count}개에서 리셀링 비활성화됨"
+ },
+ "common|reselling.reselling.bulkLocationsPage.subAccountsSelected": {
+  "en": "{count} Sub-Accounts selected",
+  "ko": "서브 계정 {count}개 선택됨"
+ },
+ "common|reselling.reselling.bulkLocationsPage.allSubAccountsSelected": {
+  "en": "All {totalCount} Sub-Accounts selected.",
+  "ko": "서브 계정 {totalCount}개 모두 선택됨"
+ },
+ "common|reselling.reselling.bulkLocationsPage.selectAllSubAccounts": {
+  "en": "Select All {totalCount} Sub-Accounts",
+  "ko": "서브 계정 {totalCount}개 모두 선택"
+ },
+ "common|reselling.reselling.bulkLocationsPage.clearSelection": {
+  "en": "Clear Selection",
+  "ko": "선택 해제"
+ },
+ "common|reselling.reselling.bulkLocationsPage.bulkActions": {
+  "en": "Bulk Actions",
+  "ko": "일괄 작업"
+ },
+ "common|reselling.reselling.bulkLocationsPage.manageFeature": {
+  "en": "Manage Feature",
+  "ko": "기능 관리"
+ },
+ "common|reselling.reselling.bulkLocationsPage.enableFeature": {
+  "en": "Enable Feature",
+  "ko": "기능 활성화"
+ },
+ "common|reselling.reselling.bulkLocationsPage.disableFeature": {
+  "en": "Disable Feature",
+  "ko": "기능 비활성화"
+ },
+ "common|reselling.reselling.bulkLocationsPage.manageReselling": {
+  "en": "Manage Reselling",
+  "ko": "리셀링 관리"
+ },
+ "common|reselling.reselling.bulkLocationsPage.enableUsageProducts": {
+  "en": "Enable Usage Products",
+  "ko": "사용량 상품 활성화"
+ },
+ "common|reselling.reselling.bulkLocationsPage.disableUsageProducts": {
+  "en": "Disable Usage Products",
+  "ko": "사용량 상품 비활성화"
+ },
+ "common|reselling.reselling.bulkLocationsPage.deployDirectly": {
+  "en": "Deploy Directly",
+  "ko": "직접 배포"
+ },
+ "common|reselling.reselling.bulkLocationsPage.previous": {
+  "en": "Previous",
+  "ko": "이전"
+ },
+ "common|reselling.reselling.bulkLocationsPage.next": {
+  "en": "Next",
+  "ko": "다음"
+ },
+ "common|reselling.reselling.bulkLocationsPage.loadMore": {
+  "en": "Load More",
+  "ko": "더 보기"
+ },
+ "common|reselling.reselling.bulkLocationsPage.rowsPerPage": {
+  "en": "Rows per page",
+  "ko": "페이지당 행 수"
+ },
+ "common|reselling.reselling.bulkLocationsPage.noDataTitle": {
+  "en": "We couldn’t find any sub-accounts matching your search.",
+  "ko": "검색과 일치하는 서브 계정이 없습니다."
+ },
+ "common|reselling.reselling.bulkLocationsPage.refresh": {
+  "en": "Refresh",
+  "ko": "새로고침"
+ },
+ "common|reselling.reselling.bulkLocationsPage.tryAgain": {
+  "en": "Try again",
+  "ko": "다시 시도"
+ },
+ "common|reselling.reselling.bulkLocationsPage.columns.name": {
+  "en": "Name",
+  "ko": "이름"
+ },
+ "common|reselling.reselling.bulkLocationsPage.columns.feature": {
+  "en": "Feature",
+  "ko": "기능"
+ },
+ "common|reselling.reselling.bulkLocationsPage.columns.usageReselling": {
+  "en": "Usage Reselling",
+  "ko": "사용량 리셀링"
+ },
+ "common|reselling.reselling.bulkLocationsPage.columns.usageMarkup": {
+  "en": "Usage Markup",
+  "ko": "사용량 마크업"
+ },
+ "common|reselling.reselling.bulkLocationsPage.columns.subscriptionPrice": {
+  "en": "Agency Subscription Price",
+  "ko": "에이전시 구독 가격"
+ },
+ "common|reselling.reselling.bulkLocationsPage.columns.subscriptionProfit": {
+  "en": "Realised Profit",
+  "ko": "실현 수익"
+ },
+ "common|reselling.reselling.bulkLocationsPage.columns.actions": {
+  "en": "Actions",
+  "ko": "작업"
+ },
+ "common|reselling.reselling.bulkLocationsPage.columns.setMarkupPrice": {
+  "en": "Set Markup Price",
+  "ko": "마크업 가격 설정"
+ },
+ "common|reselling.reselling.bulkLocationsPage.tooltips.agencyOn97Plan": {
+  "en": "Agency on 97$ plan.",
+  "ko": "에이전시가 $97 플랜을 사용 중입니다."
+ },
+ "common|reselling.reselling.bulkLocationsPage.tooltips.enableFeatureFirst": {
+  "en": "Enable Feature first to manage Usage Reselling.",
+  "ko": "사용량 리셀링을 관리하려면 먼저 기능을 활성화하세요."
+ },
+ "common|reselling.reselling.bulkLocationsPage.tooltips.saasModeNotActivated": {
+  "en": "SaaS mode is not activated for this sub-account.",
+  "ko": "이 서브 계정은 SaaS 모드가 활성화되어 있지 않습니다."
+ },
+ "common|reselling.reselling.bulkLocationsPage.tooltips.enableUsageResellingToView": {
+  "en": "Enable Usage Reselling to view markup.",
+  "ko": "마크업을 보려면 사용량 리셀링을 활성화하세요."
+ },
+ "common|reselling.reselling.bulkLocationsPage.tooltips.emailRebillingMessage": {
+  "en": "Usage-based reselling is disabled for this sub-account because the agency is on the $297 plan and the email provider is not LeadConnector. Please switch to LeadConnector to enable reselling.",
+  "ko": "에이전시가 $297 플랜을 사용 중이고 이메일 제공업체가 하이퍼클래스 기본 이메일이 아니어서 이 서브 계정의 사용량 기반 리셀링이 비활성화되었습니다. 리셀링을 사용하려면 하이퍼클래스 기본 이메일로 전환하세요."
+ },
+ "common|reselling.reselling.bulkLocationsPage.tooltips.phoneRebillingMessage": {
+  "en": "Usage-based reselling is unavailable because this sub-account uses a non-LeadConnector phone provider and the agency is on the $297 plan. Switch to LeadConnector to enable reselling.",
+  "ko": "이 서브 계정이 하이퍼클래스 기본 전화가 아닌 다른 전화 제공업체를 사용하고 에이전시가 $297 플랜이어서 사용량 기반 리셀링을 사용할 수 없습니다. 리셀링을 사용하려면 하이퍼클래스 기본 전화로 전환하세요."
+ },
+ "common|reselling.reselling.bulkLocationsPage.notifications.deployedSuccessfully": {
+  "en": "Deployed successfully",
+  "ko": "배포했습니다"
+ },
+ "common|reselling.reselling.bulkLocationsPage.notifications.errorDeploying": {
+  "en": "Error deploying directly",
+  "ko": "직접 배포하지 못했습니다"
+ },
+ "common|reselling.reselling.bulkLocationsPage.notifications.resellingEnabledSuccessfully": {
+  "en": "Reselling enabled successfully",
+  "ko": "리셀링을 활성화했습니다"
+ },
+ "common|reselling.reselling.bulkLocationsPage.notifications.errorEnablingReselling": {
+  "en": "Error enabling reselling",
+  "ko": "리셀링을 활성화하지 못했습니다"
+ },
+ "common|reselling.reselling.bulkLocationsPage.notifications.resellingDisabledSuccessfully": {
+  "en": "Reselling disabled successfully",
+  "ko": "리셀링을 비활성화했습니다"
+ },
+ "common|reselling.reselling.bulkLocationsPage.notifications.errorDisablingReselling": {
+  "en": "Error disabling reselling",
+  "ko": "리셀링을 비활성화하지 못했습니다"
+ },
+ "common|reselling.reselling.bulkLocationsPage.notifications.featureEnabledSuccessfully": {
+  "en": "Feature enabled successfully",
+  "ko": "기능을 활성화했습니다"
+ },
+ "common|reselling.reselling.bulkLocationsPage.notifications.featureDisabledSuccessfully": {
+  "en": "Feature disabled successfully",
+  "ko": "기능을 비활성화했습니다"
+ },
+ "common|reselling.reselling.bulkLocationsPage.notifications.errorEnablingFeature": {
+  "en": "Error enabling feature",
+  "ko": "기능을 활성화하지 못했습니다"
+ },
+ "common|reselling.reselling.bulkLocationsPage.notifications.errorDisablingFeature": {
+  "en": "Error disabling feature",
+  "ko": "기능을 비활성화하지 못했습니다"
+ },
+ "common|reselling.reselling.bulkRebillingModal.title": {
+  "en": "Enable Usage Products",
+  "ko": "사용량 상품 활성화"
+ },
+ "common|reselling.reselling.bulkRebillingModal.yourMarkup": {
+  "en": "Your Markup",
+  "ko": "내 마크업"
+ },
+ "common|reselling.reselling.bulkRebillingModal.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "common|reselling.reselling.bulkRebillingModal.enable": {
+  "en": "Enable",
+  "ko": "활성화"
+ },
+ "common|reselling.reselling.bulkRebillingModal.modalText": {
+  "en": "These are margins that are billed to your clients over the {productTitle} cost borne to you.",
+  "ko": "내가 부담하는 {productTitle} 원가에 더해 고객에게 청구되는 마진입니다."
+ },
+ "common|reselling.reselling.bulkRebillingModal.modalTextDefault": {
+  "en": "All the selected sub-accounts rebilling status and markup will be over written irrespective of their previous state. This will only be updated for the Sub-Accounts who have SaaS mode enabled.",
+  "ko": "선택한 모든 서브 계정의 재청구 상태와 마크업이 이전 상태와 관계없이 덮어쓰기됩니다. SaaS 모드가 활성화된 서브 계정에만 적용됩니다."
+ },
+ "common|reselling.reselling.bulkRebillingModal.cautionText": {
+  "en": "Proceed with caution, this will impact Feature configuration and current activity of {subAccountCount} selected Sub-Account(s)",
+  "ko": "신중하게 진행하세요. 선택한 서브 계정 {subAccountCount}개의 기능 설정과 현재 활동에 영향을 줍니다"
+ },
+ "common|reselling.reselling.bulkRebillingModal.timelineText": {
+  "en": "When performing action with all Sub-Account, it may take 5-15 minutes to update the actual values",
+  "ko": "모든 서브 계정에 작업을 적용하면 실제 값이 반영되기까지 5~15분이 걸릴 수 있습니다"
+ },
+ "common|reselling.reselling.bulkFeatureEnableModal.enableFeatureConfirmation": {
+  "en": "Enable Feature Confirmation",
+  "ko": "기능 활성화 확인"
+ },
+ "common|reselling.reselling.bulkFeatureEnableModal.disableFeatureConfirmation": {
+  "en": "Disable Feature Confirmation",
+  "ko": "기능 비활성화 확인"
+ },
+ "common|reselling.reselling.bulkFeatureEnableModal.modalText": {
+  "en": "This will enable/disable feature based on your selected option for the Sub-Accounts selected.",
+  "ko": "선택한 옵션에 따라 선택한 서브 계정의 기능을 활성화하거나 비활성화합니다."
+ },
+ "common|reselling.reselling.bulkFeatureEnableModal.cautionText": {
+  "en": "Proceed with caution, this will impact Feature configuration and current activity of {subAccountCount} selected Sub-Account(s).",
+  "ko": "신중하게 진행하세요. 선택한 서브 계정 {subAccountCount}개의 기능 설정과 현재 활동에 영향을 줍니다."
+ },
+ "common|reselling.reselling.bulkFeatureEnableModal.timelineText": {
+  "en": "When performing action with all Sub-Account, it may take 5-15 minutes to update the actual values.",
+  "ko": "모든 서브 계정에 작업을 적용하면 실제 값이 반영되기까지 5~15분이 걸릴 수 있습니다."
+ },
+ "common|reselling.reselling.bulkFeatureEnableModal.enable": {
+  "en": "Enable",
+  "ko": "활성화"
+ },
+ "common|reselling.reselling.bulkFeatureEnableModal.disable": {
+  "en": "Disable",
+  "ko": "비활성화"
+ },
+ "common|reselling.reselling.bulkFeatureEnableModal.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "common|reselling.reselling.singleRebillingEnableModal.title": {
+  "en": "Enable Usage Products",
+  "ko": "사용량 상품 활성화"
+ },
+ "common|reselling.reselling.singleRebillingEnableModal.subAccount": {
+  "en": "Sub-Account",
+  "ko": "서브 계정"
+ },
+ "common|reselling.reselling.singleRebillingEnableModal.yourMarkup": {
+  "en": "Your Markup",
+  "ko": "내 마크업"
+ },
+ "common|reselling.reselling.singleRebillingEnableModal.modalText": {
+  "en": "These are margins that are billed to your clients over the {productTitle} cost borne to you.",
+  "ko": "내가 부담하는 {productTitle} 원가에 더해 고객에게 청구되는 마진입니다."
+ },
+ "common|reselling.reselling.singleRebillingEnableModal.enable": {
+  "en": "Enable",
+  "ko": "활성화"
+ },
+ "common|reselling.reselling.singleRebillingEnableModal.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "common|reselling.reselling.agency97PlanBanner.agencyPlan": {
+  "en": "Agency Plan: {plan}",
+  "ko": "에이전시 플랜: {plan}"
+ },
+ "common|reselling.reselling.agencyPlanBanner.bannerText": {
+  "en": "You're on the {planName} plan — {description}",
+  "ko": "현재 {planName} 플랜을 사용 중입니다 — {description}"
+ },
+ "common|reselling.reselling.domainPurchaseModal.enableDomainPurchase": {
+  "en": "Enable Domain Purchase",
+  "ko": "도메인 구매 활성화"
+ },
+ "common|reselling.reselling.domainPurchaseModal.termsAndConditions": {
+  "en": "Terms & Conditions",
+  "ko": "이용약관"
+ },
+ "common|reselling.reselling.domainPurchaseModal.term1": {
+  "en": "Domain is chargeable for every domain purchase. The price of domain varies depending upon domain name and TLDs (like .com, .us, etc.)",
+  "ko": "도메인은 구매할 때마다 요금이 부과됩니다. 도메인 가격은 도메인 이름과 TLD(.com, .us 등)에 따라 다릅니다."
+ },
+ "common|reselling.reselling.domainPurchaseModal.term2": {
+  "en": "You can enable Domain in SaaS Configurator and adjust the re-bill amount over the default price.",
+  "ko": "SaaS 구성에서 도메인을 활성화하고 기본 가격에 더할 재청구 금액을 조정할 수 있습니다."
+ },
+ "common|reselling.reselling.domainPurchaseModal.term3": {
+  "en": "Enable the Domain Re-billing for the sub account to charge your Sub Accounts (Locations) based on their domain purchases.",
+  "ko": "서브 계정의 도메인 구매 내역에 따라 요금을 청구하려면 해당 서브 계정에서 도메인 재청구를 활성화하세요."
+ },
+ "common|reselling.reselling.domainPurchaseModal.term4": {
+  "en": "On enabling Domain, based on the domain price, the amount will be debited from the Agency Wallet (if location do not have payment method setup) or Location wallet (if locations payment method is setup) for each domain purchased from any of the Agency Sub Accounts (Locations).",
+  "ko": "도메인을 활성화하면, 에이전시의 어느 서브 계정에서든 도메인을 구매할 때마다 도메인 가격에 해당하는 금액이 에이전시 지갑(서브 계정에 결제 수단이 없는 경우) 또는 서브 계정 지갑(서브 계정에 결제 수단이 있는 경우)에서 차감됩니다."
+ },
+ "common|reselling.reselling.domainPurchaseModal.confirmTerms": {
+  "en": "I confirm that I agree to the Domain Purchase terms and conditions",
+  "ko": "도메인 구매 이용약관에 동의합니다"
+ },
+ "common|reselling.reselling.domainPurchaseModal.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "common|reselling.reselling.domainPurchaseModal.enable": {
+  "en": "Enable",
+  "ko": "활성화"
+ },
+ "common|reselling.reselling.bulkDisableRebillingModal.title": {
+  "en": "Disable Rebilling Confirmation",
+  "ko": "재청구 비활성화 확인"
+ },
+ "common|reselling.reselling.bulkDisableRebillingModal.modalText": {
+  "en": "This will disable usage reselling based on your selected option for the Sub-Accounts selected.",
+  "ko": "선택한 옵션에 따라 선택한 서브 계정의 사용량 리셀링을 비활성화합니다."
+ },
+ "common|reselling.reselling.bulkDisableRebillingModal.cautionText": {
+  "en": "Proceed with caution, this will impact Feature configuration and current activity of {subAccountCount} selected Sub-Account(s).",
+  "ko": "신중하게 진행하세요. 선택한 서브 계정 {subAccountCount}개의 기능 설정과 현재 활동에 영향을 줍니다."
+ },
+ "common|reselling.reselling.bulkDisableRebillingModal.timelineText": {
+  "en": "When performing action with all Sub-Account, it may take 5-15 minutes to update the actual values.",
+  "ko": "모든 서브 계정에 작업을 적용하면 실제 값이 반영되기까지 5~15분이 걸릴 수 있습니다."
+ },
+ "common|reselling.reselling.bulkDisableRebillingModal.disable": {
+  "en": "Disable",
+  "ko": "비활성화"
+ },
+ "common|reselling.reselling.bulkDisableRebillingModal.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.productsNavigation": {
+  "en": "Products",
+  "ko": "상품"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.plan": {
+  "en": "${plan} Plan",
+  "ko": "${plan} 플랜"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.agencyPlan": {
+  "en": "Agency Plan",
+  "ko": "에이전시 플랜"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.agencyPlanLabel": {
+  "en": "Agency Plan: {plan}",
+  "ko": "에이전시 플랜: {plan}"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.upgradePlanDescription": {
+  "en": "Upgrade to the $297 plan to enable static markup (1.05x), or to the $497 plan to unlock configurable custom markup.",
+  "ko": "$297 플랜으로 업그레이드하면 고정 마크업(1.05x)을, $497 플랜으로 업그레이드하면 직접 정하는 맞춤 마크업을 사용할 수 있습니다."
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.upgradeTo297": {
+  "en": "Upgrade to $297",
+  "ko": "$297로 업그레이드"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.upgradeTo497": {
+  "en": "Upgrade to $497",
+  "ko": "$497로 업그레이드"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.plan297Description": {
+  "en": "Offers only static markup of 1.05x. To enable a configurable/custom markup, upgrade to $497 Plan",
+  "ko": "1.05x 고정 마크업만 제공됩니다. 맞춤 마크업을 사용하려면 $497 플랜으로 업그레이드하세요"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.subscriptionMarkup": {
+  "en": "Subscription Markup",
+  "ko": "구독 마크업"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.yourPrice": {
+  "en": "Your Price",
+  "ko": "내 원가"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.yourCustomersPrice": {
+  "en": "Your Customer's Price",
+  "ko": "고객 판매가"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.yourProfit": {
+  "en": "Your Profit",
+  "ko": "내 수익"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.pricingPlans": {
+  "en": "Pricing Plans",
+  "ko": "가격 플랜"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.month": {
+  "en": "month",
+  "ko": "월"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.usageBasedMarkup": {
+  "en": "Usage Based Markup",
+  "ko": "사용량 기반 마크업"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.yourMarkup": {
+  "en": "Your Markup",
+  "ko": "내 마크업"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.usageBasedDetails": {
+  "en": "Usage Based Details",
+  "ko": "사용량 기반 상세"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.subAccountManagement": {
+  "en": "Sub Account Management",
+  "ko": "서브 계정 관리"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.manageAtSubAccountLevel": {
+  "en": "Manage at Sub-Account Level",
+  "ko": "서브 계정별 관리"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.manage": {
+  "en": "Manage",
+  "ko": "관리"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.enabled": {
+  "en": "Enabled",
+  "ko": "활성화됨"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.disabled": {
+  "en": "Disabled",
+  "ko": "비활성화됨"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.resellingEnabledFor": {
+  "en": "Reselling Enabled for {count} Sub accounts",
+  "ko": "서브 계정 {count}개에서 리셀링 활성화됨"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.resellingDisabledFor": {
+  "en": "Reselling Disabled for {count} Sub accounts",
+  "ko": "서브 계정 {count}개에서 리셀링 비활성화됨"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.saveChanges": {
+  "en": "Save Changes",
+  "ko": "변경사항 저장"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.saved": {
+  "en": "Saved",
+  "ko": "저장됨"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.savedSuccessfully": {
+  "en": "Saved reselling changes successfully!",
+  "ko": "리셀링 변경사항을 저장했습니다."
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.savedConfigSuccessfully": {
+  "en": "Saved config successfully",
+  "ko": "설정을 저장했습니다"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.error": {
+  "en": "Error",
+  "ko": "오류"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.errorSaving": {
+  "en": "Error while saving reselling changes!",
+  "ko": "리셀링 변경사항을 저장하지 못했습니다."
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.errorSavingConfig": {
+  "en": "Error saving config",
+  "ko": "설정을 저장하지 못했습니다"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.errorIcon": {
+  "en": "Error icon",
+  "ko": "오류 아이콘"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.pricingPlansAgency": {
+  "en": "Pricing Plans (Agency)",
+  "ko": "가격 플랜(에이전시)"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.nMonths": {
+  "en": "{n} months",
+  "ko": "{n}개월"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.year": {
+  "en": "year",
+  "ko": "년"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.upgrade": {
+  "en": "Upgrade",
+  "ko": "업그레이드"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.haveAnAffiliateCode": {
+  "en": "Have an affiliate Code?",
+  "ko": "제휴 코드가 있으신가요?"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.typeYourAffiliateCode": {
+  "en": "Type your affiliate Code",
+  "ko": "제휴 코드를 입력하세요"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.productCardTooltip": {
+  "en": " Manage product access and pricing for your sub-accounts. Enable or disable reselling, set custom markups, and apply bulk actions like enabling features or updating markups across multiple sub-accounts.",
+  "ko": " 서브 계정별 상품 접근 권한과 가격을 관리합니다. 리셀링을 켜거나 끄고, 맞춤 마크업을 정하고, 여러 서브 계정에 기능 활성화·마크업 변경 같은 일괄 작업을 적용할 수 있습니다."
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.productCardTooltip297": {
+  "en": "Manage product access and pricing for your sub-accounts. Enable or disable reselling and apply bulk actions like enabling features.",
+  "ko": "서브 계정별 상품 접근 권한과 가격을 관리합니다. 리셀링을 켜거나 끄고, 기능 활성화 같은 일괄 작업을 적용할 수 있습니다."
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.charge": {
+  "en": "Charge",
+  "ko": "청구"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.chargedToCustomer": {
+  "en": "Charged to customer",
+  "ko": "고객 청구액"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.valueFor10": {
+  "en": "$10 will give you about",
+  "ko": "$10이면 약"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.profit": {
+  "en": "Profit",
+  "ko": "수익"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.usage": {
+  "en": "Usage",
+  "ko": "사용량"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.baseRatesChargedToAgency": {
+  "en": "Base Rates (charged to agency)",
+  "ko": "기본 요율(에이전시 청구)"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.usageHeaderTemplate": {
+  "en": "{productLabel} Usage",
+  "ko": "{productLabel} 사용량"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.common.productIcon": {
+  "en": "Product icon",
+  "ko": "상품 아이콘"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.productDescription.WHATSAPP_V1": {
+  "en": "Connect with leads and customers directly through WhatsApp for seamless two-way communication.",
+  "ko": "WhatsApp으로 리드·고객과 직접 연결해 끊김 없이 양방향 소통합니다."
+ },
+ "common|reselling.reselling.newAgencyResellingPage.productDescription.EmailIP": {
+  "en": "Send emails from a dedicated IP address to improve deliverability and sender reputation.",
+  "ko": "전용 IP 주소로 이메일을 보내 도달률과 발신자 평판을 높입니다."
+ },
+ "common|reselling.reselling.newAgencyResellingPage.productDescription.CONVERSATIONS_AI": {
+  "en": "Automate two-way conversations using AI to qualify leads, answer questions, and drive conversions.",
+  "ko": "AI로 양방향 대화를 자동화해 리드를 선별하고, 질문에 답하고, 전환을 이끌어 냅니다."
+ },
+ "common|reselling.reselling.newAgencyResellingPage.productDescription.Prospecting": {
+  "en": "Discover and reach out to potential leads with intelligent filters, contact data, and outreach tools.",
+  "ko": "스마트 필터, 연락처 데이터, 아웃리치 도구로 잠재 리드를 찾고 연락합니다."
+ },
+ "common|reselling.reselling.newAgencyResellingPage.productDescription.CP_BRANDED_APP_49": {
+  "en": "Give clients 24/7 access to courses, communities, and affiliate payouts through a secure, branded portal.",
+  "ko": "안전한 브랜드 포털에서 고객이 코스·커뮤니티·제휴 수익금에 24시간 언제든 접근할 수 있습니다."
+ },
+ "common|reselling.reselling.newAgencyResellingPage.productDescription.WORDPRESS_V1": {
+  "en": "Easily build, manage, and host websites with a native WordPress integration.",
+  "ko": "기본 제공 WordPress 연동으로 웹사이트를 쉽게 만들고, 관리하고, 호스팅합니다."
+ },
+ "common|reselling.reselling.newAgencyResellingPage.productDescription.YEXT_V2": {
+  "en": "Automatically sync and manage your business info across local directories to boost SEO.",
+  "ko": "지역 디렉터리 전반의 비즈니스 정보를 자동으로 동기화·관리해 SEO를 높입니다."
+ },
+ "common|reselling.reselling.newAgencyResellingPage.productDescription.starter_plus_workflow_premium_actions_triggers": {
+  "en": "Workflow premium pricing tiers for prepaid monthly executions.",
+  "ko": "월 실행량을 선불로 구매하는 워크플로우 프리미엄 요금 티어입니다."
+ },
+ "common|reselling.reselling.newAgencyResellingPage.productDescription.AI_EMPLOYEE": {
+  "en": "Deploy an always-on AI assistant trained on your business to handle conversations, content, reviews and more.",
+  "ko": "내 비즈니스를 학습한 상시 AI 어시스턴트를 배포해 대화, 콘텐츠, 리뷰 등을 처리합니다."
+ },
+ "common|reselling.reselling.newAgencyResellingPage.productDescription.Ad_Publishing_Standard_Plan": {
+  "en": "Create and manage your ads seamlessly with your own business manager.",
+  "ko": "내 비즈니스 관리자로 광고를 손쉽게 만들고 관리합니다."
+ },
+ "common|reselling.reselling.newAgencyResellingPage.productDescription.seo_search_atlas": {
+  "en": "Boost rankings with AI-powered SEO tools.",
+  "ko": "AI 기반 SEO 도구로 검색 순위를 높입니다."
+ },
+ "common|reselling.reselling.newAgencyResellingPage.adManager.bookACall": {
+  "en": "Book a call",
+  "ko": "상담 통화 예약"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.adManager.perLocation": {
+  "en": "Per Location",
+  "ko": "서브 계정당"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.adManager.unlimitedLocations": {
+  "en": "Unlimited Locations",
+  "ko": "서브 계정 무제한"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.adManager.standardPlan": {
+  "en": "Standard Plan",
+  "ko": "스탠다드 플랜"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.adManager.utilityPlan": {
+  "en": "Utility Plan",
+  "ko": "유틸리티 플랜"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.adManager.foundersPlan": {
+  "en": "Founders Plan",
+  "ko": "파운더스 플랜"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.adManager.utilityPlanTooltip": {
+  "en": "Resell Ad Manager to unlimited locations at no additional payment to HL.",
+  "ko": "하이퍼클래스에 추가 비용 없이 무제한 서브 계정에 광고 관리자를 재판매할 수 있습니다."
+ },
+ "common|reselling.reselling.newAgencyResellingPage.adManager.foundersPlanTooltip": {
+  "en": "Resell to unlimited locations at $970 instead of $1164 yearly.",
+  "ko": "연 $1164 대신 $970에 무제한 서브 계정에 재판매하세요."
+ },
+ "common|reselling.reselling.newAgencyResellingPage.adManager.locationProxyPlan": {
+  "en": "Location Proxy Plan",
+  "ko": "서브 계정 프록시 플랜"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.adManager.hiddenLocationSubscriptionProxy": {
+  "en": "Hidden - Location Subscription Proxy",
+  "ko": "숨김 - 서브 계정 구독 프록시"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.listings.poweredBy": {
+  "en": "Powered by {provider}",
+  "ko": "{provider} 제공"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.listings.changeEngine": {
+  "en": "Change Engine",
+  "ko": "엔진 변경"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.listings.monthlyPlan": {
+  "en": "Monthly Plan",
+  "ko": "월간 플랜"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.listings.sixMonthPlan": {
+  "en": "Smart Saver Plan",
+  "ko": "스마트 세이버 플랜"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.listings.annualPlan": {
+  "en": "Annual Advantage Plan",
+  "ko": "연간 어드밴티지 플랜"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.listings.listingsPlanPrice": {
+  "en": "Listings Plan Price",
+  "ko": "리스팅 플랜 가격"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.listings.customerPaying": {
+  "en": "Customer's Paying",
+  "ko": "고객 결제액"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.listings.profit": {
+  "en": "Profit",
+  "ko": "수익"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.listings.percentageOff": {
+  "en": "{percentage}% Off",
+  "ko": "{percentage}% 할인"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.listings.selectListingsEngine": {
+  "en": "Engine Selection",
+  "ko": "엔진 선택"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.listings.pleaseSelectListingsEngine": {
+  "en": "Please select your preferred engine for listing",
+  "ko": "리스팅에 사용할 엔진을 선택하세요"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.listings.applyEngineSelection": {
+  "en": "Apply Engine Selection",
+  "ko": "엔진 선택 적용"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.listings.engineSelectionDisclaimer": {
+  "en": "I understand this selection applies to all new business entities under my agency and can be changed anytime for future entities.",
+  "ko": "이 선택은 내 에이전시의 모든 신규 비즈니스 항목에 적용되며, 이후 항목에 대해서는 언제든 변경할 수 있음을 이해합니다."
+ },
+ "common|reselling.reselling.newAgencyResellingPage.listings.recommended": {
+  "en": "Recommended",
+  "ko": "추천"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.listings.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.listings.confirmAndApply": {
+  "en": "Confirm and Apply",
+  "ko": "확인 후 적용"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.listings.learnMore": {
+  "en": "Learn More",
+  "ko": "자세히 보기"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.listings.listingsEngine": {
+  "en": "Listings engine",
+  "ko": "리스팅 엔진"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.listings.benefits.UBERALL.conflictChance": {
+  "en": "Medium chance of entity conflict",
+  "ko": "항목 충돌 가능성 보통"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.listings.benefits.UBERALL.publisherNetwork": {
+  "en": "Publisher Network",
+  "ko": "퍼블리셔 네트워크"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.listings.benefits.UBERALL.successRate": {
+  "en": "85% listing sync success rate",
+  "ko": "리스팅 동기화 성공률 85%"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.listings.benefits.YEXT.conflictChance": {
+  "en": "Low chance of entity conflict",
+  "ko": "항목 충돌 가능성 낮음"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.listings.benefits.YEXT.publisherNetwork": {
+  "en": "Publisher Network",
+  "ko": "퍼블리셔 네트워크"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.listings.benefits.YEXT.successRate": {
+  "en": "98% listing sync success rate",
+  "ko": "리스팅 동기화 성공률 98%"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.viewPlanDetails": {
+  "en": "View Plan Details",
+  "ko": "플랜 상세 보기"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.standard": {
+  "en": "Standard",
+  "ko": "스탠다드"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.utilityPlan": {
+  "en": "Utility Plan",
+  "ko": "유틸리티 플랜"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.monthly": {
+  "en": "Monthly",
+  "ko": "월간"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.yearly": {
+  "en": "Yearly",
+  "ko": "연간"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.annualMaxSavings": {
+  "en": "Annual (Max Savings)",
+  "ko": "연간(최대 할인)"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.perSite": {
+  "en": "Per Site",
+  "ko": "사이트당"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.nSites": {
+  "en": "{n} Sites",
+  "ko": "사이트 {n}개"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.unlimitedSites": {
+  "en": "Unlimited Sites",
+  "ko": "사이트 무제한"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.recommended": {
+  "en": "Recommended",
+  "ko": "추천"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.maxSavings": {
+  "en": "Max Savings",
+  "ko": "최대 할인"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.chooseYourPlan": {
+  "en": "Choose Your Plan",
+  "ko": "플랜 선택"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.unlimited": {
+  "en": "Unlimited",
+  "ko": "무제한"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.dollarPerSite": {
+  "en": "${price}/site",
+  "ko": "사이트당 ${price}"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.billedMonthly": {
+  "en": "Billed Monthly",
+  "ko": "월간 결제"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.billedAnnually": {
+  "en": "Billed Annually",
+  "ko": "연간 결제"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.ifBilledAnnually": {
+  "en": "if billed annually",
+  "ko": "연간 결제 시"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.defaultPlan": {
+  "en": "Default Plan",
+  "ko": "기본 플랜"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.currentPlan": {
+  "en": "Current Plan",
+  "ko": "현재 플랜"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.upgrade": {
+  "en": "Upgrade",
+  "ko": "업그레이드"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.whatYouGet": {
+  "en": "What you get",
+  "ko": "제공 내용"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.everythingWeProvideInThisPlan": {
+  "en": "Everything we provide in this plan",
+  "ko": "이 플랜에서 제공하는 모든 것"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.monthlyBilling": {
+  "en": "Monthly Billing",
+  "ko": "월간 결제"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.yearlyBilling": {
+  "en": "Yearly Billing",
+  "ko": "연간 결제"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.confirmAndPayPrice": {
+  "en": "Confirm and Pay {price}",
+  "ko": "확인 후 {price} 결제"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.perMonth": {
+  "en": "per month",
+  "ko": "월"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.perYear": {
+  "en": "per year",
+  "ko": "연"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.addonManagement": {
+  "en": "Addon",
+  "ko": "부가 기능"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.features.standard.wordpressSite": {
+  "en": "1 WordPress Site",
+  "ko": "WordPress 사이트 1개"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.features.standard.gbStorage": {
+  "en": "12 GB Storage",
+  "ko": "저장 공간 12GB"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.features.standard.unmeteredBandwidth": {
+  "en": "Unmetered Bandwidth",
+  "ko": "대역폭 무제한"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.features.standard.visits": {
+  "en": "10,000 Visits",
+  "ko": "방문 10,000회"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.features.standard.manualBackups": {
+  "en": "5 Manual Backups",
+  "ko": "수동 백업 5회"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.features.standard.freeSSL": {
+  "en": "Free SSL",
+  "ko": "무료 SSL"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.features.standard.themeAndPluginManagement": {
+  "en": "Theme and Plugin Management",
+  "ko": "테마·플러그인 관리"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.features.standard.stagingEnvironment": {
+  "en": "Staging Environment",
+  "ko": "스테이징 환경"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.features.utilityPlan.wordpressSites": {
+  "en": "25 WordPress Sites",
+  "ko": "WordPress 사이트 25개"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.features.utilityPlan.gbStorage": {
+  "en": "60 GB Storage",
+  "ko": "저장 공간 60GB"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.features.utilityPlan.unmeteredBandwidth": {
+  "en": "Unmetered Bandwidth",
+  "ko": "대역폭 무제한"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.features.utilityPlan.visits": {
+  "en": "Unlimited Visits",
+  "ko": "방문 무제한"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.features.utilityPlan.backups": {
+  "en": "Unlimited Backups",
+  "ko": "백업 무제한"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.features.utilityPlan.freeSSL": {
+  "en": "Free SSL",
+  "ko": "무료 SSL"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.features.utilityPlan.themeAndPluginManagement": {
+  "en": "Theme and Plugin Management",
+  "ko": "테마·플러그인 관리"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.features.utilityPlan.stagingEnvironment": {
+  "en": "Staging Environment",
+  "ko": "스테이징 환경"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.features.utilityPlan.manualBackups": {
+  "en": "Unlimited Manual Backups",
+  "ko": "수동 백업 무제한"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.features.trulyUnlimited.wordpressSites": {
+  "en": "Unlimited WordPress Sites",
+  "ko": "WordPress 사이트 무제한"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.features.trulyUnlimited.gbStorage": {
+  "en": "500 GB Storage",
+  "ko": "저장 공간 500GB"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.features.trulyUnlimited.unmeteredBandwidth": {
+  "en": "Unmetered Bandwidth",
+  "ko": "대역폭 무제한"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.features.trulyUnlimited.visits": {
+  "en": "Unlimited Visits",
+  "ko": "방문 무제한"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.features.trulyUnlimited.backups": {
+  "en": "Unlimited Backups",
+  "ko": "백업 무제한"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.features.trulyUnlimited.freeSSL": {
+  "en": "Free SSL",
+  "ko": "무료 SSL"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.features.trulyUnlimited.themeAndPluginManagement": {
+  "en": "Theme and Plugin Management",
+  "ko": "테마·플러그인 관리"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.features.trulyUnlimited.stagingEnvironment": {
+  "en": "Staging Environment",
+  "ko": "스테이징 환경"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.features.trulyUnlimited.manualBackups": {
+  "en": "Unlimited Manual Backups",
+  "ko": "수동 백업 무제한"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.wordpress.features.trulyUnlimited.prioritySupport": {
+  "en": "Priority Support",
+  "ko": "우선 지원"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.workflowsPro.headerDescription": {
+  "en": "Sub-accounts that subscribe receive limited access to premium workflow triggers and actions, removing any pay-per-use fees for both them and your agency until that limit is exhausted.",
+  "ko": "구독한 서브 계정은 프리미엄 워크플로우 트리거와 액션을 한도 내에서 사용할 수 있으며, 한도를 다 쓸 때까지 서브 계정과 에이전시 모두 건당 요금이 부과되지 않습니다."
+ },
+ "common|reselling.reselling.newAgencyResellingPage.workflowsPro.starterTier": {
+  "en": "Starter Tier",
+  "ko": "스타터 티어"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.workflowsPro.growthTier": {
+  "en": "Growth Tier",
+  "ko": "그로스 티어"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.workflowsPro.scaleTier": {
+  "en": "Scale Tier",
+  "ko": "스케일 티어"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.workflowsPro.workflowsPlanPrice": {
+  "en": "Workflows Plan Price",
+  "ko": "워크플로우 플랜 가격"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.workflowsPro.customerPaying": {
+  "en": "Customer Paying",
+  "ko": "고객 결제액"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.workflowsPro.profit": {
+  "en": "Profit",
+  "ko": "수익"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.featureActionModal.setMarkupPrice": {
+  "en": "Set Markup Price",
+  "ko": "마크업 가격 설정"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.featureActionModal.enableFeature": {
+  "en": "Enable Feature",
+  "ko": "기능 활성화"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.featureActionModal.disableFeature": {
+  "en": "Disable Feature",
+  "ko": "기능 비활성화"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.featureActionModal.enableDescription": {
+  "en": "This feature will be enabled for all selected sub-accounts. You can also configure your custom subscription pricing for it",
+  "ko": "선택한 모든 서브 계정에서 이 기능이 활성화됩니다. 이 기능의 맞춤 구독 가격도 설정할 수 있습니다"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.featureActionModal.disableDescription": {
+  "en": "This feature will be disabled for all selected sub-accounts.",
+  "ko": "선택한 모든 서브 계정에서 이 기능이 비활성화됩니다."
+ },
+ "common|reselling.reselling.newAgencyResellingPage.featureActionModal.resellAmount": {
+  "en": "Resell Amount",
+  "ko": "재판매 금액"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.featureActionModal.cautionText": {
+  "en": "Proceed with caution, this will impact Feature configuration and current activity of {count} selected Sub-Accounts",
+  "ko": "신중하게 진행하세요. 선택한 서브 계정 {count}개의 기능 설정과 현재 활동에 영향을 줍니다"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.featureActionModal.cautionTextAll": {
+  "en": "Proceed with caution, this will impact Feature configuration and current activity of all selected Sub-Accounts",
+  "ko": "신중하게 진행하세요. 선택한 모든 서브 계정의 기능 설정과 현재 활동에 영향을 줍니다"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.featureActionModal.timelineText": {
+  "en": "When performing action with all Sub-Account, it may take 5-15 minutes to update the actual values",
+  "ko": "모든 서브 계정에 작업을 적용하면 실제 값이 반영되기까지 5~15분이 걸릴 수 있습니다"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.featureActionModal.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.featureActionModal.enable": {
+  "en": "Enable",
+  "ko": "활성화"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.featureActionModal.disable": {
+  "en": "Disable",
+  "ko": "비활성화"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.bulkDeployDirectlyModal.title": {
+  "en": "Deploy Directly",
+  "ko": "직접 배포"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.bulkDeployDirectlyModal.subtitle": {
+  "en": "Deploy the product directly to the selected sub-accounts.",
+  "ko": "선택한 서브 계정에 상품을 직접 배포합니다."
+ },
+ "common|reselling.reselling.newAgencyResellingPage.bulkDeployDirectlyModal.alertMessage": {
+  "en": "This deployment will be billed to your agency, not the sub-account. This action may take up to 15 minutes.",
+  "ko": "이 배포 비용은 서브 계정이 아닌 에이전시에 청구됩니다. 최대 15분이 걸릴 수 있습니다."
+ },
+ "common|reselling.reselling.newAgencyResellingPage.bulkDeployDirectlyModal.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.bulkDeployDirectlyModal.deployWithoutUpsell": {
+  "en": "Deploy without Upsell",
+  "ko": "업셀 없이 배포"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.whatIsReselling.title": {
+  "en": "Reselling: How It Works?",
+  "ko": "리셀링: 어떻게 작동하나요?"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.whatIsReselling.subtitle": {
+  "en": "Turn your services into a source of recurring revenue by reselling HighLevel to your clients. Here's how:",
+  "ko": "하이퍼클래스를 고객에게 재판매해 서비스를 반복 수익원으로 만드세요. 방법은 다음과 같습니다:"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.whatIsReselling.gettingStarted": {
+  "en": "Getting Started",
+  "ko": "시작하기"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.whatIsReselling.step1.title": {
+  "en": "Join the 297 or 497 Plan",
+  "ko": "297 또는 497 플랜 가입"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.whatIsReselling.step1.description": {
+  "en": "Get access to reselling features with the 297 or 497 plan and SaaS tools.",
+  "ko": "297 또는 497 플랜과 SaaS 도구로 리셀링 기능을 사용할 수 있습니다."
+ },
+ "common|reselling.reselling.newAgencyResellingPage.whatIsReselling.step2.title": {
+  "en": "Enable SaaS Mode",
+  "ko": "SaaS 모드 활성화"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.whatIsReselling.step2.description": {
+  "en": "Activate it for your sub-accounts. Ensure they have a <strong>credit card</strong> on file.",
+  "ko": "서브 계정에서 활성화하세요. 서브 계정에 <strong>신용카드</strong>가 등록되어 있어야 합니다."
+ },
+ "common|reselling.reselling.newAgencyResellingPage.whatIsReselling.step3.title": {
+  "en": "Set a Customer Markup",
+  "ko": "고객 마크업 설정"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.whatIsReselling.step3.description": {
+  "en": "Decide how much you want to charge your clients and keep the difference.",
+  "ko": "고객에게 청구할 금액을 정하고 그 차액을 수익으로 가져가세요."
+ },
+ "common|reselling.reselling.newAgencyResellingPage.whatIsReselling.howBillingWorks": {
+  "en": "How Billing Works",
+  "ko": "청구 방식"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.whatIsReselling.billingFlow.twoSubscriptions.title": {
+  "en": "Two Subscriptions Created Automatically",
+  "ko": "구독 2개가 자동으로 생성됨"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.whatIsReselling.billingFlow.twoSubscriptions.description": {
+  "en": "→ Between your <strong>client</strong> and your <strong>Stripe</strong> account to collect payments from your clients<br />→ Between <strong>HighLevel</strong> and your <strong>card</strong> to pay $10 per month to HighLevel",
+  "ko": "→ <strong>고객</strong>과 내 <strong>Stripe</strong> 계정 사이: 고객에게서 결제를 받습니다<br />→ <strong>하이퍼클래스</strong>와 내 <strong>카드</strong> 사이: 하이퍼클래스에 월 $10를 결제합니다"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.whatIsReselling.billingFlow.controlPricing.title": {
+  "en": "You Control Pricing & Keep Profits",
+  "ko": "가격은 내가 정하고 수익은 내가 가져갑니다"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.whatIsReselling.billingFlow.controlPricing.description": {
+  "en": "Set your own pricing strategy and retain the difference between what you charge clients and what you pay HighLevel.",
+  "ko": "가격 전략을 직접 정하고, 고객에게 청구하는 금액과 하이퍼클래스에 내는 금액의 차액을 수익으로 가져가세요."
+ },
+ "common|reselling.reselling.newAgencyResellingPage.whatIsReselling.standardPlanBillingFlow.title": {
+  "en": "Standard Plan Billing Flow",
+  "ko": "스탠다드 플랜 청구 흐름"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.whatIsReselling.standardPlanBillingFlow.highLevel.label": {
+  "en": "HighLevel",
+  "ko": "하이퍼클래스"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.whatIsReselling.standardPlanBillingFlow.highLevel.costLabel": {
+  "en": "Your Cost",
+  "ko": "내 원가"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.whatIsReselling.standardPlanBillingFlow.highLevel.price": {
+  "en": "$10 / month",
+  "ko": "월 $10"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.whatIsReselling.standardPlanBillingFlow.yourAgency.label": {
+  "en": "Your Agency",
+  "ko": "내 에이전시"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.whatIsReselling.standardPlanBillingFlow.yourAgency.sellingPriceLabel": {
+  "en": "Your Selling Price",
+  "ko": "내 판매가"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.whatIsReselling.standardPlanBillingFlow.yourAgency.price": {
+  "en": "$X / month",
+  "ko": "월 $X"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.whatIsReselling.standardPlanBillingFlow.yourClient.label": {
+  "en": "Your Client",
+  "ko": "내 고객"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.whatIsReselling.standardPlanBillingFlow.yourClient.paysLabel": {
+  "en": "Pays Your Price",
+  "ko": "내 판매가를 결제"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.whatIsReselling.standardPlanBillingFlow.yourClient.paymentLabel": {
+  "en": "Client Payment",
+  "ko": "고객 결제"
+ },
+ "common|reselling.reselling.newAgencyResellingPage.whatIsReselling.learnMore": {
+  "en": "Learn More",
+  "ko": "자세히 보기"
+ },
+ "common|reselling.common.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "common|reselling.common.close": {
+  "en": "Close",
+  "ko": "닫기"
  }
 }
