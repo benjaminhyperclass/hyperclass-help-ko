@@ -454,3 +454,10 @@ superagentsApp(Managed Agents 빌더·목록·채팅 레이어)의 제품명 표
 - 번역: 업종 이름 4,047(한국 지도 앱식 명사 — 외국 브랜드는 영어 + 대리점, 한국 브랜드는 한국어) · 진단 리포트 본문(합쇼체) · 브랜드 치환(LeadConnector → 하이퍼클래스, 'GHL Prospecting' → 잠재고객 발굴). 번역 9갈래 · 독립 검수 5갈래(교정 39) · 통일 35 → 사전 **v4.2.84** ifrApps['prospecting'] 7,363(같은 문자열 90 제외). round-merge 글로서리 강제가 업종 이름의 Store/Product 를 스토어/상품으로 바꾼 48건은 되돌림(업종 이름엔 글로서리를 적용하지 않는다).
 - 실측(r6JD, 캐너리 → stable 같은 날): 목록·잠재고객 추가 화면 한국어, iframe 영어 텍스트 0. 크기: ifr 1.08 → 1.47MB(중계 iframe 이 붙을 때만 받음).
 - 월간 점검 예약 작업 '하이퍼클래스 한글화 월간 점검'(매월 2일 13:45 KST) — 텔레메트리 잔여·새 iframe 화면·GHL 키 변경을 찾아 라운드를 돌린다. 두 달 연속 남은 영어가 사용자 데이터·제품명뿐이면 끝낼지 벤자민에게 묻는다.
+
+## [기록] 텔레메트리 잔여 + 에이전시 리셀링 — 2026-11-27
+- 벤자민 '자 다시 시작해볼까?'(11-27) — 11-26 '한글화가 필요없을때까지 쭉' 의 이어서.
+- 텔레메트리 잔여 1,586(호스트·앱 지문) → 번역 3갈래 · 독립 검수(교정 2) → 사전 v4.2.85 삽입 911: AI 템플릿 마켓(`aiTemplates|app|appDetail|common|error`, 새 앱 지문) 402 · 서브 계정 관리 257 · 도메인 84 · 포털 빌더 64 · 스냅샷 23 · agentBuilderLong 23 등. 나머지 675 는 코드·단위·예시 등 원문 그대로.
+- 에이전시 리셀링(`reselling-dashboard-app`, 지문 `common|reselling` 925) — 원문은 벤자민 승인으로 크롬에서 JSON 내려받음(텔레메트리에 안 잡히던 앱). 583 은 메인 사전 같은 키 경로 번역을 제안으로. 번역 2갈래 · 검수(교정 13) · 통일(Prospecting → 잠재고객 발굴, HighLevel Price → 하이퍼클래스 원가) → 907 삽입. 구 리셀링 페이지의 Your Price = 내 판매가, 새 페이지(옆에 Your Customer's Price) = 내 원가.
+- 남은 영어(라이브): 화면 제목 'Reselling'·탭 'Subscription'·'Profit'(사전 밖) → _textScoped 3, 제품명 Ad Manager·AI Employee·Dedicated IP → _text 3(v4.2.86). 요금제 이름(AI Employee Unlimited 등)·SEO (By Search Atlas)·Workflow Pro 는 제품명이라 원문.
+- 확인된 함정: 번역이 DNT 리터럴(DELETE)을 `{word}` 로 바꿔 validate C2·C3 차단 → 'DELETE를' 로 고침.
