@@ -583430,5 +583430,3649 @@
  "prospecting.prospecting.breadcrumb.label": {
   "en": "Breadcrumb",
   "ko": "브레드크럼"
+ },
+ "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date.workflow.advancedBuilder.keyboardShortcutsDrawer.deleteConfirmation.deleteNodesDescription": {
+  "en": "This will delete {actionCount} action{actionPlural} and {triggerCount} trigger{triggerPlural}. These changes will only take effect once you save this workflow.",
+  "ko": "액션{actionPlural} {actionCount}개와 트리거{triggerPlural} {triggerCount}개가 삭제됩니다. 변경 사항은 이 워크플로우를 저장해야 적용됩니다."
+ },
+ "agentBuilderLong.aiEmployee.modal.paymentWall.tosPromo#0": {
+  "en": "Subscriptions to AI Employee are subject to HighLevel's Terms of Service. The {promoName} Promotion (\"Promo\") is available to subaccounts who (i) belong to an agency currently on an active trial (not a paid subscription); (ii) are not currently enrolled in an AI Employee subscription; and (iii) are the first subaccount from their agency to participate in the Promo — limited to one (1) subaccount per agency (\"Qualified Subaccounts\"). The Promo is limited to 30 days' free usage of AI Employee. Qualified Subaccounts will be automatically subscribe",
+  "ko": "AI 직원 구독에는 하이퍼클래스 서비스 약관이 적용됩니다. {promoName} 프로모션(\"프로모션\")은 (i) 현재 유료 구독이 아닌 무료 체험 중인 에이전시에 속하고, (ii) 현재 AI 직원 구독에 가입되어 있지 않으며, (iii) 소속 에이전시에서 처음으로 프로모션에 참여하는 서브 계정(에이전시당 1개 서브 계정으로 제한, \"적격 서브 계정\")이 이용할 수 있습니다. 프로모션은 AI 직원 30일 무료 이용으로 제한됩니다. 적격 서브 계정은 취소하지 않으면 프로모션 종료 시 "
+ },
+ "agentBuilderLong.aiEmployee.modal.paymentWall.tosPromo#1": {
+  "en": "d to AI Employee upon expiration of the Promo unless cancelled. HighLevel reserves the right to throttle or suspend AI Employee usage that it deems abusive or excessive in its sole and absolute discretion. Communication surcharges may apply when using AI Employee.",
+  "ko": "AI 직원 구독으로 자동 전환됩니다. 하이퍼클래스는 단독 재량으로 남용 또는 과도하다고 판단하는 AI 직원 사용을 제한하거나 중단할 권리를 보유합니다. AI 직원 사용 시 통신 추가 요금이 부과될 수 있습니다."
+ },
+ "agentBuilderLong.conversationAI.chatBuilder.templates.afterHours.prompt#0": {
+  "en": "Build an inbound agent that covers [business name] outside business hours.\n\nWorking hours: active only outside [business hours and timezone].\nChannels: [SMS / Live chat / WhatsApp].\n\nOpening: let the customer know the team is currently closed and when the business reopen, then ask how you can help.\n\n- Answer common questions from the knowledge base.\n- Collect name, phone, email, and a short description of what they need. Save these to the contact.\n- If they want to talk to the team, offer 2 times on the next business day from [calendar] and boo",
+  "ko": "[비즈니스 이름]의 영업시간 외 문의를 맡는 인바운드 에이전트를 만들어 주세요.\n\n운영 시간: [영업시간 및 시간대] 외에만 작동합니다.\n채널: [SMS / 라이브 채팅 / WhatsApp].\n\n첫 인사: 지금은 영업시간이 아니라는 점과 다시 문을 여는 시간을 안내한 뒤, 무엇을 도와드릴지 묻습니다.\n\n- 자주 묻는 질문은 지식 베이스를 바탕으로 답합니다.\n- 이름, 전화번호, 이메일, 필요한 내용에 대한 짧은 설명을 받아 연락처에 저장합니다.\n- 팀과 통화를 원하면 [캘린더]에서 다음 영업일의 시간 2개를 제안하고 "
+ },
+ "agentBuilderLong.conversationAI.chatBuilder.templates.afterHours.prompt#1": {
+  "en": "k a call.\n- If it is urgent, follow [urgent rule: share the emergency number / notify on-call user], and tell them what will happen next.\n\nBefore ending, confirm what happens next and when.\nCreate a task for [team member] for every conversation that needs follow-up, with a one-line summary.\nNever promise anything the team would need to approve, such as discounts, refunds, or same-day service.",
+  "ko": "통화를 예약합니다.\n- 긴급한 경우 [긴급 규칙: 비상 연락처 안내 / 당직 사용자에게 알림]을 따르고, 이후 어떻게 진행되는지 알려 줍니다.\n\n대화를 마치기 전에 다음 단계와 시점을 확인해 줍니다.\n후속 조치가 필요한 대화마다 한 줄 요약과 함께 [팀원]에게 작업을 만듭니다.\n할인, 환불, 당일 서비스처럼 팀의 승인이 필요한 일은 절대 약속하지 않습니다."
+ },
+ "agentBuilderLong.conversationAI.chatBuilder.templates.faqResponder.prompt#0": {
+  "en": "Build an inbound agent that answers common questions for [business name] and routes everything else to the team.\n\nChannels: [Live chat / Facebook / Instagram / SMS].\n\nAnswer only from the knowledge base. Keep answers to 2 or 3 sentences and link to the relevant page when one exists.\nIf the question is not covered, or you are not confident, do not guess. Say you will connect them with the team and hand off to [team member / team].\nAfter answering, ask if there is anything else. If they show buying interest, offer to book a call on [calendar].\n\nH",
+  "ko": "[비즈니스 이름]에 자주 들어오는 질문에 답하고, 그 밖의 문의는 팀에 넘기는 인바운드 에이전트를 만들어 주세요.\n\n채널: [라이브 채팅 / Facebook / Instagram / SMS].\n\n지식 베이스에 있는 내용으로만 답합니다. 답변은 2~3문장으로 하고, 관련 페이지가 있으면 링크를 붙입니다.\n지식 베이스에 없는 질문이거나 확신이 없으면 추측하지 않습니다. 팀과 연결해 드리겠다고 말하고 [팀원 / 팀]에게 넘깁니다.\n답한 뒤에는 더 궁금한 점이 있는지 묻습니다. 구매 의향을 보이면 [캘린더]로 통화 예약을 제안합니다.\n\n"
+ },
+ "agentBuilderLong.conversationAI.chatBuilder.templates.faqResponder.prompt#1": {
+  "en": "and off immediately for complaints, refunds, account or billing issues, or when the customer asks for a person.\nTag conversations by topic ([pricing / hours / services / other]) so the team can see what people ask most.",
+  "ko": "불만, 환불, 계정 또는 청구 문제가 있거나 고객이 상담원을 요청하면 즉시 넘깁니다.\n팀이 가장 많이 묻는 내용을 볼 수 있도록 대화에 주제별 태그([가격 / 영업시간 / 서비스 / 기타])를 붙입니다."
+ },
+ "agentBuilderLong.conversationAI.chatBuilder.templates.frontDesk.prompt#0": {
+  "en": "Build an inbound agent that acts as the front desk for [business name], a [business type].\n\nChannels: [SMS / WhatsApp / Live chat]. Reply on the channel the customer uses.\n\nAnswer questions about services, pricing, hours, location, and policies using the knowledge base only. If the answer is not in the knowledge base, say you will check with the team and hand off.\n\nBooking:\n- Ask what service they need and whether they are a new or existing customer.\n- Offer 2 available times from [calendar] for that service.\n- Confirm the booking with date, ti",
+  "ko": "[업종]인 [비즈니스 이름]의 안내 데스크 역할을 하는 인바운드 에이전트를 만들어 주세요.\n\n채널: [SMS / WhatsApp / 라이브 채팅]. 고객이 사용하는 채널로 답합니다.\n\n서비스, 가격, 영업시간, 위치, 정책에 관한 질문은 지식 베이스로만 답합니다. 지식 베이스에 답이 없으면 팀에 확인하겠다고 말하고 넘깁니다.\n\n예약:\n- 필요한 서비스와 신규 고객인지 기존 고객인지 묻습니다.\n- 해당 서비스에 대해 [캘린더]에서 가능한 시간 2개를 제안합니다.\n- 날짜, 시간, "
+ },
+ "agentBuilderLong.conversationAI.chatBuilder.templates.frontDesk.prompt#1": {
+  "en": "me, location, and any prep instructions.\n- Handle reschedules and cancellations by finding their existing appointment and offering new times.\n\nHand off to [front desk user] immediately for urgent issues (pain, emergencies, safety concerns), billing or payment disputes, complaints, or when the customer asks for a person. Tell the customer someone will follow up and roughly when.\n\nTone: warm, professional, and brief. One question at a time.\nNever give medical, legal, or financial advice. Never make up prices or availability.",
+  "ko": "장소, 사전 준비 사항과 함께 예약을 확정합니다.\n- 일정 변경과 취소는 기존 예약을 찾아 새로운 시간을 제안하는 방식으로 처리합니다.\n\n긴급한 문제(통증, 응급 상황, 안전 문제), 청구 또는 결제 분쟁, 불만이 있거나 고객이 상담원을 요청하면 즉시 [안내 데스크 사용자]에게 넘깁니다. 담당자가 대략 언제 연락할지 고객에게 알려 줍니다.\n\n말투: 따뜻하고 전문적이며 간결하게. 한 번에 하나씩 질문합니다.\n의료, 법률, 금융 관련 조언은 절대 하지 않습니다. 가격이나 예약 가능 여부를 지어내지 않습니다."
+ },
+ "agentBuilderLong.conversationAI.chatBuilder.templates.leadQualifier.prompt#0": {
+  "en": "Build an inbound agent that qualifies new leads who message [business name] and books calls with qualified ones.\n\nChannels: [Facebook / Instagram / Live chat / SMS]. Reply on the channel the lead uses.\n\nGreet the lead, ask what they are looking for, then qualify with these questions, one at a time, skipping any already answered:\n- [Need: what service or product they want]\n- [Timeline: when they want to start]\n- [Budget or readiness]\n- [Location or service area, if relevant]\n\nQualified means: [qualification rule, e.g. budget above X and timeline",
+  "ko": "[비즈니스 이름]에 메시지를 보낸 새 리드의 자격을 확인하고, 적격 리드와 통화를 예약하는 인바운드 에이전트를 만들어 주세요.\n\n채널: [Facebook / Instagram / 라이브 채팅 / SMS]. 리드가 사용하는 채널로 답합니다.\n\n리드에게 인사하고 무엇을 찾는지 물은 뒤, 아래 질문을 하나씩 하며 자격을 확인합니다. 이미 답한 질문은 건너뜁니다.\n- [필요: 원하는 서비스나 상품]\n- [시기: 언제 시작하고 싶은지]\n- [예산 또는 준비 정도]\n- [해당되는 경우 지역 또는 서비스 지역]\n\n적격 기준: [자격 규칙, 예: 예산 X 이상이고"
+ },
+ "agentBuilderLong.conversationAI.chatBuilder.templates.leadQualifier.prompt#1": {
+  "en": " within 3 months].\n- Qualified: offer 2 times from [calendar], book the call, tag \"qualified\", and move them to [pipeline stage].\n- Not qualified yet: share a helpful next step or resource, tag \"nurture\", and end politely.\n- Outside the service area or a poor fit: thank them, tag \"unqualified\", and end politely.\n\nSave every answer to the matching contact field.\nHand off to [sales rep] if the lead asks for a person, wants custom pricing, or is a large deal.",
+  "ko": " 3개월 이내 시작].\n- 적격: [캘린더]에서 시간 2개를 제안해 통화를 예약하고, \"적격\" 태그를 붙인 뒤 [파이프라인 단계]로 옮깁니다.\n- 아직 부적격: 도움이 되는 다음 단계나 자료를 공유하고, \"육성\" 태그를 붙인 뒤 정중히 마무리합니다.\n- 서비스 지역 밖이거나 맞지 않는 경우: 감사 인사를 하고 \"부적격\" 태그를 붙인 뒤 정중히 마무리합니다.\n\n모든 답변은 해당하는 연락처 필드에 저장합니다.\n리드가 상담원을 요청하거나, 맞춤 가격을 원하거나, 큰 거래라면 [영업 담당자]에게 넘깁니다."
+ },
+ "agentBuilderLong.conversationAI.chatBuilder.templates.missedCall.prompt#0": {
+  "en": "Build an outbound agent that texts back callers whose calls to [business name] were missed.\n\nTrigger: an inbound call to [phone number] is missed or goes to voicemail.\nChannel: SMS from the same number they called.\n\nOpening message, sent within 1 minute: \"Hi, this is [business name]. Sorry we missed your call! How can we help?\" Use {'{{'}contact.first_name{'}}'} if known.\n\nFind out what they need in 1 or 2 questions.\n- If it can be answered from the knowledge base, answer it.\n- If they want an appointment, offer 2 times from [calendar] and book",
+  "ko": "[비즈니스 이름]으로 걸려 온 전화를 받지 못했을 때 문자로 다시 연락하는 아웃바운드 에이전트를 만들어 주세요.\n\n트리거: [전화번호]로 걸려 온 전화를 받지 못했거나 음성사서함으로 넘어간 경우.\n채널: 고객이 전화한 번호에서 보내는 SMS.\n\n1분 안에 보내는 첫 메시지: \"안녕하세요, [비즈니스 이름]입니다. 전화를 받지 못해 죄송합니다! 무엇을 도와드릴까요?\" 이름을 알면 {'{{'}contact.first_name{'}}'}을(를) 사용합니다.\n\n1~2개의 질문으로 필요한 내용을 파악합니다.\n- 지식 베이스로 답할 수 있으면 답합니다.\n- 예약을 원하면 [캘린더]에서 시간 2개를 제안하고"
+ },
+ "agentBuilderLong.conversationAI.chatBuilder.templates.missedCall.prompt#1": {
+  "en": " it.\n- If they want a callback, ask for the best time, create a task for [team member] with the reason and time, and confirm.\n- If it sounds urgent, hand off to [team member] immediately.\n\nIf there is no reply after 2 hours, send one short follow-up, then stop.\nStop immediately if they say stop or wrong number.",
+  "ko": " 예약합니다.\n- 다시 전화받기를 원하면 편한 시간을 묻고, 사유와 시간을 담아 [팀원]에게 작업을 만든 뒤 확인해 줍니다.\n- 긴급해 보이면 즉시 [팀원]에게 넘깁니다.\n\n2시간 동안 답이 없으면 짧은 후속 메시지를 한 번 보내고 멈춥니다.\n고객이 그만 보내 달라고 하거나 잘못 건 번호라고 하면 즉시 멈춥니다."
+ },
+ "agentBuilderLong.conversationAI.chatBuilder.templates.reactivation.prompt#0": {
+  "en": "Build an outbound agent that reactivates old and cold contacts in the database.\n\nTrigger: run once on a smart list of contacts with no activity in [X] months who are not opted out and not existing customers, or on contacts added to the tag \"reactivate\".\nChannels: SMS. Handle replies on the channel the lead uses.\n\nOpening message: greet the contact by {'{{'}contact.first_name{'}}'}. Briefly remind them how they know [business name], then share [offer or reason to reconnect] and ask a yes/no question, for example \"Is this still something you're l",
+  "ko": "데이터베이스의 오래되거나 반응이 없는 연락처를 다시 활성화하는 아웃바운드 에이전트를 만들어 주세요.\n\n트리거: 최근 [X]개월 동안 활동이 없고, 수신거부하지 않았으며, 기존 고객이 아닌 연락처의 스마트 리스트에 한 번 실행하거나, \"재활성화\" 태그가 추가된 연락처에 실행합니다.\n채널: SMS. 답장은 리드가 사용하는 채널에서 처리합니다.\n\n첫 메시지: {'{{'}contact.first_name{'}}'}(으)로 인사합니다. [비즈니스 이름]을(를) 어떻게 알게 되었는지 짧게 상기시킨 뒤 [오퍼 또는 다시 연락하는 이유]를 전하고, 예/아니요로 답할 수 있는 질문을 합니다. 예: \"아직 "
+ },
+ "agentBuilderLong.conversationAI.chatBuilder.templates.reactivation.prompt#1": {
+  "en": "ooking into?\" Keep it short and personal, not salesy.\n\nIf they reply with interest, ask one question to understand their current need, then offer 2 times from [calendar] and book a call. Tag \"reactivated\".\nIf they ask a question, answer it from the knowledge base, then offer to book.\nIf they are not interested, thank them, and stop.\nIf they say they are already working with someone else, thank them, and stop.\n\nSend at most 2 follow-ups over 10 days without a reply, then stop.\nHand off to [team member] if the contact asks for a person or raises ",
+  "ko": "알아보고 계신가요?\" 짧고 개인적으로, 영업하는 느낌 없이 씁니다.\n\n관심을 보이면 현재 필요한 것을 파악하는 질문을 하나 한 뒤 [캘린더]에서 시간 2개를 제안해 통화를 예약합니다. \"재활성화됨\" 태그를 붙입니다.\n질문을 하면 지식 베이스로 답한 뒤 예약을 제안합니다.\n관심이 없다고 하면 감사 인사를 하고 멈춥니다.\n이미 다른 곳과 진행 중이라고 하면 감사 인사를 하고 멈춥니다.\n\n답이 없으면 10일 동안 후속 메시지를 최대 2번 보내고 멈춥니다.\n연락처가 상담원을 요청하거나 "
+ },
+ "agentBuilderLong.conversationAI.chatBuilder.templates.reactivation.prompt#2": {
+  "en": "a complaint.\nStop immediately and if the contact says stop, unsubscribe, or wrong number.",
+  "ko": "불만을 제기하면 [팀원]에게 넘깁니다.\n연락처가 그만 보내 달라고 하거나, 수신 거부를 요청하거나, 잘못 건 번호라고 하면 즉시 멈춥니다."
+ },
+ "agentBuilderLong.conversationAI.chatBuilder.templates.serviceDispatcher.prompt#0": {
+  "en": "Build an inbound agent that takes service requests for [business name], a [trade, e.g. plumbing / HVAC / electrical] company.\n\nChannels: [SMS / WhatsApp / Live chat].\n\nCollect, one question at a time:\n- What the problem is\n- Service address\n- How urgent it is\n- Photos, if they can share them\n- Best contact number\n\nEmergencies ([emergency examples, e.g. flooding, gas smell, no heat in winter, sparking]):\n- Tell them to [safety instruction] if there is any danger.\n- Notify [on-call user] immediately with a summary and the address.\n- Tell the cust",
+  "ko": "[업종, 예: 배관 / 냉난방 / 전기] 업체인 [비즈니스 이름]의 서비스 요청을 접수하는 인바운드 에이전트를 만들어 주세요.\n\n채널: [SMS / WhatsApp / 라이브 채팅].\n\n한 번에 하나씩 질문해 다음 정보를 받습니다.\n- 어떤 문제인지\n- 서비스 주소\n- 얼마나 긴급한지\n- 가능하면 사진\n- 연락하기 좋은 번호\n\n긴급 상황([긴급 예시, 예: 침수, 가스 냄새, 겨울철 난방 고장, 스파크]):\n- 위험이 있으면 [안전 지침]을 따르도록 안내합니다.\n- 요약과 주소를 담아 즉시 [당직 사용자]에게 알립니다.\n- 고객에게 "
+ },
+ "agentBuilderLong.conversationAI.chatBuilder.templates.serviceDispatcher.prompt#1": {
+  "en": "omer a technician will contact them within [time].\n\nNon-emergencies:\n- Offer 2 visit windows from [technician calendar] and book the visit.\n- Confirm the date, arrival window, address, and any service fee.\n\nAnswer pricing and service-area questions from the knowledge base only. Never quote a repair price.\nCreate a job note on the contact with the problem summary and urgency.\nHand off to [dispatcher] for complaints, warranty claims, or when the customer asks for a person.",
+  "ko": "[시간] 안에 기사가 연락드린다고 알려 줍니다.\n\n긴급하지 않은 경우:\n- [기사 캘린더]에서 방문 가능 시간대 2개를 제안하고 방문을 예약합니다.\n- 날짜, 도착 시간대, 주소, 서비스 요금을 확인해 줍니다.\n\n가격과 서비스 지역 질문은 지식 베이스로만 답합니다. 수리 가격은 절대 견적을 내지 않습니다.\n문제 요약과 긴급도를 담아 연락처에 작업 메모를 남깁니다.\n불만, 보증 청구가 있거나 고객이 상담원을 요청하면 [배차 담당자]에게 넘깁니다."
+ },
+ "agentBuilderLong.conversationAI.chatBuilder.templates.speedToLead.prompt#0": {
+  "en": "Build an outbound agent that contacts every new lead within seconds of them coming in.\n\nTrigger: a new contact is created from [form / funnel / ad source].\nChannels: send on SMS. Handle replies on the same channel.\n\nOpening message: greet the lead by {'{{'}contact.first_name{'}}'}, reference what they asked about using their form answers, and ask one simple question to start the conversation. Keep it under 300 characters and do not sound automated.\n\nQualify with up to 3 questions, one at a time:\n- What they need help with\n- Their timeline\n- The",
+  "ko": "새 리드가 들어오면 몇 초 안에 연락하는 아웃바운드 에이전트를 만들어 주세요.\n\n트리거: [폼 / 퍼널 / 광고 소스]에서 새 연락처가 생성된 경우.\n채널: SMS로 보냅니다. 답장도 같은 채널에서 처리합니다.\n\n첫 메시지: {'{{'}contact.first_name{'}}'}(으)로 인사하고, 폼 답변을 바탕으로 문의한 내용을 언급한 뒤, 대화를 시작할 간단한 질문을 하나 합니다. 300자 이내로, 자동 발송처럼 느껴지지 않게 씁니다.\n\n최대 3개의 질문을 하나씩 하며 자격을 확인합니다.\n- 어떤 도움이 필요한지\n- 원하는 시기\n- "
+ },
+ "agentBuilderLong.conversationAI.chatBuilder.templates.speedToLead.prompt#1": {
+  "en": "ir budget, or whether they are ready to move forward\nSkip any question the form already answered.\n\nIf the lead is a fit and ready to talk, offer 2 available times from [calendar] and book the call. Confirm the booking with date, time and timezone.\nIf the lead is not ready, thank them, tag them \"nurture\", and stop.\n\nIf there is no reply after 1 hour, send one short follow-up. If there is still no reply after 24 hours, stop.\n\nHand off to [team member / user] when the lead asks for a person, raises a complaint, or asks something not covered in the",
+  "ko": "예산 또는 진행할 준비가 되었는지\n폼에서 이미 답한 질문은 건너뜁니다.\n\n리드가 적합하고 대화할 준비가 되었다면 [캘린더]에서 가능한 시간 2개를 제안해 통화를 예약합니다. 날짜, 시간, 시간대와 함께 예약을 확정합니다.\n아직 준비가 안 되었다면 감사 인사를 하고 \"육성\" 태그를 붙인 뒤 멈춥니다.\n\n1시간 동안 답이 없으면 짧은 후속 메시지를 한 번 보냅니다. 24시간이 지나도 답이 없으면 멈춥니다.\n\n리드가 상담원을 요청하거나, 불만을 제기하거나,"
+ },
+ "agentBuilderLong.conversationAI.chatBuilder.templates.speedToLead.prompt#2": {
+  "en": " knowledge base.\nStop immediately and tag \"opted out\" if the lead says stop, unsubscribe, or not interested.",
+  "ko": " 지식 베이스에 없는 내용을 물으면 [팀원 / 사용자]에게 넘깁니다.\n리드가 그만 보내 달라고 하거나, 수신 거부를 요청하거나, 관심 없다고 하면 즉시 멈추고 \"수신거부\" 태그를 붙입니다."
+ },
+ "agentBuilderLong.conversationAI.chatBuilder.templates.stalledLeads.prompt#0": {
+  "en": "Build an outbound agent that re-engages leads who have stopped moving forward.\n\nTrigger: either of these:\n- A contact has been in [pipeline] stage [stage name] for more than [X] days with no activity\n- A contact booked an appointment that was missed, cancelled, or completed with no next step for [X] days\n- Whenever a contact is added with Stalled_lead_3days tag\nChannels: SMS, Auto followup if there is no reply after 1 day.\n\nOpening message: greet the lead by {'{{'}contact.first_name{'}}'}. Reference where they left off (their last appointment o",
+  "ko": "진행이 멈춘 리드에게 다시 다가가는 아웃바운드 에이전트를 만들어 주세요.\n\n트리거: 다음 중 하나:\n- 연락처가 [파이프라인]의 [단계 이름] 단계에 [X]일 넘게 활동 없이 머문 경우\n- 연락처가 예약한 일정이 불참·취소되었거나, 완료 후 [X]일 동안 다음 단계가 없는 경우\n- Stalled_lead_3days 태그와 함께 연락처가 추가될 때마다\n채널: SMS. 1일 동안 답이 없으면 자동으로 후속 메시지를 보냅니다.\n\n첫 메시지: {'{{'}contact.first_name{'}}'}(으)로 인사합니다. 리드가 멈춘 지점(마지막 예약 "
+ },
+ "agentBuilderLong.conversationAI.chatBuilder.templates.stalledLeads.prompt#1": {
+  "en": "r the stage they are in) and ask if they still want help. Do not apologize or sound pushy. Understand the stage and use customer centric language\n\nGoal: find out why they stalled and move them to the next step.\n- If they are still interested, offer 2 times from [calendar] and book the next meeting.\n- If they have a question or concern, answer it from the knowledge base, then offer to book.\n- If they have chosen another option or are no longer interested, thank them, move them to [lost stage], and stop.\n- If the timing is not right, ask when to ",
+  "ko": "또는 현재 단계)을 언급하고 아직 도움이 필요한지 묻습니다. 사과하거나 재촉하는 느낌을 주지 않습니다. 단계를 이해하고 고객 중심의 표현을 씁니다.\n\n목표: 진행이 멈춘 이유를 파악하고 다음 단계로 이끕니다.\n- 아직 관심이 있으면 [캘린더]에서 시간 2개를 제안해 다음 미팅을 예약합니다.\n- 질문이나 우려가 있으면 지식 베이스로 답한 뒤 예약을 제안합니다.\n- 다른 선택을 했거나 더 이상 관심이 없으면 감사 인사를 하고 [실패 단계]로 옮긴 뒤 멈춥니다.\n- 시기가 맞지 않으면 언제 "
+ },
+ "agentBuilderLong.conversationAI.chatBuilder.templates.stalledLeads.prompt#2": {
+  "en": "check back, set a follow-up task for that date, and stop.\n\nAdd 3 followups over 7 days if there is no reply, then stop.\nHand off to [deal owner] if the lead mentions pricing negotiation, a complaint, or asks for a person.\nStop immediately if the lead says stop, unsubscribe, or not interested.",
+  "ko": "다시 연락하면 좋을지 묻고, 그 날짜로 후속 작업을 만든 뒤 멈춥니다.\n\n답이 없으면 7일 동안 후속 메시지 3개를 보낸 뒤 멈춥니다.\n리드가 가격 협상이나 불만을 언급하거나 상담원을 요청하면 [거래 담당자]에게 넘깁니다.\n리드가 그만 보내 달라고 하거나, 수신 거부를 요청하거나, 관심 없다고 하면 즉시 멈춥니다."
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.aiAgents.conversationTitle": {
+  "en": "Conversation AI agent",
+  "ko": "대화 AI 에이전트"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.aiAgents.preConfiguredActions": {
+  "en": "Pre-configured actions included in the package",
+  "ko": "패키지에 포함된 사전 구성 액션"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.aiAgents.useCases": {
+  "en": "Use cases",
+  "ko": "사용 사례"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.aiAgents.voiceTitle": {
+  "en": "Voice AI agent",
+  "ko": "음성 AI 에이전트"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.installConfirmation.allowAndInstall": {
+  "en": "Allow & install",
+  "ko": "허용 후 설치"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.installConfirmation.back": {
+  "en": "Back",
+  "ko": "뒤로"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.installConfirmation.byDeveloper": {
+  "en": "By {name}",
+  "ko": "{name} 제공"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.installConfirmation.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.installConfirmation.documentation": {
+  "en": "Documentation",
+  "ko": "문서"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.installConfirmation.installError": {
+  "en": "Failed to install app",
+  "ko": "앱을 설치하지 못했습니다"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.installConfirmation.installSuccess": {
+  "en": "App installed successfully",
+  "ko": "앱을 설치했습니다"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.installConfirmation.locations": {
+  "en": "Locations",
+  "ko": "서브 계정"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.installConfirmation.permissionsTitle": {
+  "en": "Permissions requested by the app",
+  "ko": "앱이 요청하는 권한"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.installConfirmation.redirectBlocked": {
+  "en": "Pop-up blocked. Please allow pop-ups for this site to finish connecting the app.",
+  "ko": "팝업이 차단되었습니다. 앱 연결을 마치려면 이 사이트의 팝업을 허용해 주세요."
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.installConfirmation.resources": {
+  "en": "Resources",
+  "ko": "리소스"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.installConfirmation.selectSubAccount": {
+  "en": "Please select a sub-account to install into.",
+  "ko": "설치할 서브 계정을 선택해 주세요."
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.installConfirmation.subtitle": {
+  "en": "You are about to install the Marketplace App. Please review the following information before proceeding with the installation.",
+  "ko": "마켓플레이스 앱을 설치하려고 합니다. 설치를 진행하기 전에 아래 정보를 확인해 주세요."
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.installConfirmation.supportWebsite": {
+  "en": "Support website",
+  "ko": "지원 웹사이트"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.installConfirmation.title": {
+  "en": "Install confirmation",
+  "ko": "설치 확인"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.installConfirmation.website": {
+  "en": "Website",
+  "ko": "웹사이트"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.media.appPreview": {
+  "en": "App preview",
+  "ko": "앱 미리보기"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.media.closePreview": {
+  "en": "Close preview",
+  "ko": "미리보기 닫기"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.media.more": {
+  "en": "+{count} more",
+  "ko": "+{count}개 더 보기"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.media.nextPreview": {
+  "en": "Next preview",
+  "ko": "다음 미리보기"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.media.previousPreview": {
+  "en": "Previous preview",
+  "ko": "이전 미리보기"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.metadata.appDetails": {
+  "en": "App details",
+  "ko": "앱 세부 정보"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.metadata.businessNiche": {
+  "en": "Business niche",
+  "ko": "비즈니스 분야"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.metadata.category": {
+  "en": "Category",
+  "ko": "카테고리"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.metadata.developer": {
+  "en": "Developer",
+  "ko": "개발자"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.metadata.updated": {
+  "en": "Updated",
+  "ko": "업데이트"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.metadata.version": {
+  "en": "Version",
+  "ko": "버전"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.otherApps.byDeveloper": {
+  "en": "By {name}",
+  "ko": "{name} 제공"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.otherApps.free": {
+  "en": "Free",
+  "ko": "무료"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.otherApps.installed": {
+  "en": "Installed",
+  "ko": "설치됨"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.otherApps.paid": {
+  "en": "Paid",
+  "ko": "유료"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.otherApps.title": {
+  "en": "Other apps from {developer}",
+  "ko": "{developer}의 다른 앱"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.otherApps.viewMore": {
+  "en": "View more",
+  "ko": "더 보기"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.otherApps.wl": {
+  "en": "WL",
+  "ko": "화이트라벨"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.permissions.added": {
+  "en": "Added",
+  "ko": "추가됨"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.permissions.addedCount": {
+  "en": "{count} Added",
+  "ko": "{count}개 추가됨"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.permissions.groupScopesCount": {
+  "en": "{count} scopes",
+  "ko": "{count}개 범위"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.permissions.noPermissions": {
+  "en": "No permissions requested by this app.",
+  "ko": "이 앱이 요청한 권한이 없습니다."
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.permissions.optionalPermissions": {
+  "en": "Optional permissions",
+  "ko": "선택 권한"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.permissions.optionalTooltip": {
+  "en": "These permissions are optional. You can choose which ones to grant; the app must work without them.",
+  "ko": "이 권한은 선택 사항입니다. 부여할 권한을 직접 고를 수 있으며, 앱은 이 권한 없이도 작동해야 합니다."
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.permissions.read": {
+  "en": "Read",
+  "ko": "읽기"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.permissions.removed": {
+  "en": "Removed",
+  "ko": "제거됨"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.permissions.removedCount": {
+  "en": "{count} Removed",
+  "ko": "{count}개 제거됨"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.permissions.requiredPermissions": {
+  "en": "Required permissions",
+  "ko": "필수 권한"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.permissions.requiredTooltip": {
+  "en": "These permissions are required for the app to work and are always granted when you install it.",
+  "ko": "이 권한은 앱이 작동하는 데 필요하며, 앱을 설치하면 항상 부여됩니다."
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.permissions.scopesCount": {
+  "en": "{count} Scopes",
+  "ko": "{count}개 범위"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.permissions.sensitive": {
+  "en": "Sensitive",
+  "ko": "민감함"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.permissions.showLess": {
+  "en": "Show less",
+  "ko": "접기"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.permissions.showMore": {
+  "en": "Show {count} more",
+  "ko": "{count}개 더 보기"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.permissions.subtitle": {
+  "en": "Learn about what this app can do in your account",
+  "ko": "이 앱이 계정에서 할 수 있는 작업을 확인하세요"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.permissions.title": {
+  "en": "Permission",
+  "ko": "권한"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.permissions.write": {
+  "en": "Write",
+  "ko": "쓰기"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.pricing.appReselling": {
+  "en": "App reselling",
+  "ko": "앱 재판매"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.pricing.billedAnnually": {
+  "en": "Billed annually",
+  "ko": "연간 결제"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.pricing.exclusiveOfTaxes": {
+  "en": "Exclusive of taxes",
+  "ko": "세금 별도"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.pricing.forAgency": {
+  "en": "For Agency",
+  "ko": "에이전시용"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.pricing.forAgencyAndSubAccount": {
+  "en": "For Agency and sub-account",
+  "ko": "에이전시 및 서브 계정용"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.pricing.free": {
+  "en": "Free",
+  "ko": "무료"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.pricing.freeAppDescription": {
+  "en": "There's no charge to add this app to your account or to use its core features.",
+  "ko": "이 앱을 계정에 추가하거나 핵심 기능을 사용하는 데 요금이 부과되지 않습니다."
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.pricing.freeAppTitle": {
+  "en": "This app is free to install and use.",
+  "ko": "이 앱은 무료로 설치하고 사용할 수 있습니다."
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.pricing.mostPopular": {
+  "en": "Most popular",
+  "ko": "가장 인기"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.pricing.perExecution": {
+  "en": "per execution",
+  "ko": "실행당"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.pricing.perSubAccount": {
+  "en": "Per sub-account",
+  "ko": "서브 계정당"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.pricing.planSelected": {
+  "en": "Plan selected",
+  "ko": "플랜 선택됨"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.pricing.save10": {
+  "en": "Save 10%",
+  "ko": "10% 할인"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.pricing.selectPlan": {
+  "en": "Select plan",
+  "ko": "플랜 선택"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.pricing.title": {
+  "en": "Pricing plans",
+  "ko": "요금제"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.pricing.usageBased": {
+  "en": "Usage-based pricing",
+  "ko": "사용량 기반 가격"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.pricing.yearly": {
+  "en": "Yearly",
+  "ko": "연간"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.resources.agencyOnlyNote": {
+  "en": "This is visible only to agency admins and users.",
+  "ko": "에이전시 관리자와 사용자에게만 표시됩니다."
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.resources.documentation": {
+  "en": "Documentation",
+  "ko": "문서"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.resources.supportWebsite": {
+  "en": "Support website",
+  "ko": "지원 웹사이트"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.resources.title": {
+  "en": "Resources",
+  "ko": "리소스"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.resources.website": {
+  "en": "Website",
+  "ko": "웹사이트"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.reviews.aiGenerated": {
+  "en": "AI-generated summary",
+  "ko": "AI 생성 요약"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.reviews.allRatings": {
+  "en": "All ratings",
+  "ko": "전체 평점"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.reviews.basedOn": {
+  "en": "Based on {total} out of {installations} reviews",
+  "ko": "리뷰 {installations}개 중 {total}개 기준"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.reviews.helpfulNo": {
+  "en": "Mark review as not helpful",
+  "ko": "리뷰를 도움이 안 됨으로 표시"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.reviews.helpfulYes": {
+  "en": "Mark review as helpful",
+  "ko": "리뷰를 도움이 됨으로 표시"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.reviews.noReviews": {
+  "en": "No reviews",
+  "ko": "리뷰 없음"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.reviews.postedOn": {
+  "en": "Posted on {date}",
+  "ko": "게시일: {date}"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.reviews.recommendApp": {
+  "en": "{pct}% recommend this app",
+  "ko": "{pct}%가 이 앱을 추천합니다"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.reviews.refine": {
+  "en": "Refine",
+  "ko": "상세 필터"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.reviews.replied": {
+  "en": "replied",
+  "ko": "답변함"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.reviews.showLess": {
+  "en": "Show less",
+  "ko": "접기"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.reviews.showMore": {
+  "en": "Show more",
+  "ko": "더 보기"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.reviews.showing": {
+  "en": "Showing {count} reviews",
+  "ko": "리뷰 {count}개 표시 중"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.reviews.signInToReview": {
+  "en": "Sign in to write a review",
+  "ko": "리뷰를 작성하려면 로그인하세요"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.reviews.sort": {
+  "en": "Sort",
+  "ko": "정렬"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.reviews.sortHighest": {
+  "en": "Highest rated",
+  "ko": "평점 높은 순"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.reviews.sortLowest": {
+  "en": "Lowest rated",
+  "ko": "평점 낮은 순"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.reviews.sortNewest": {
+  "en": "Newest first",
+  "ko": "최신순"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.reviews.sortOldest": {
+  "en": "Oldest first",
+  "ko": "오래된순"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.reviews.starRating": {
+  "en": "{count} star | {count} stars",
+  "ko": "별 {count}개 | 별 {count}개"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.reviews.tabTitle": {
+  "en": "Reviews",
+  "ko": "리뷰"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.reviews.wasHelpful": {
+  "en": "Was this review helpful?",
+  "ko": "이 리뷰가 도움이 되었습니까?"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.reviews.whatCustomersThink": {
+  "en": "What customers think",
+  "ko": "고객 의견"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.reviews.writeReview": {
+  "en": "Write a review",
+  "ko": "리뷰 작성"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.similarApps.byDeveloper": {
+  "en": "By {name}",
+  "ko": "{name} 제공"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.similarApps.free": {
+  "en": "Free",
+  "ko": "무료"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.similarApps.installed": {
+  "en": "Installed",
+  "ko": "설치됨"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.similarApps.paid": {
+  "en": "Paid",
+  "ko": "유료"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.similarApps.title": {
+  "en": "Similar apps like",
+  "ko": "비슷한 앱:"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.similarApps.viewMore": {
+  "en": "View more",
+  "ko": "더 보기"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.similarApps.wl": {
+  "en": "WL",
+  "ko": "화이트라벨"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.snapshotAssets.assets": {
+  "en": "Assets",
+  "ko": "자산"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.snapshotAssets.noAssetsFound": {
+  "en": "No assets found",
+  "ko": "자산을 찾을 수 없습니다"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.snapshotAssets.quantity": {
+  "en": "Quantity",
+  "ko": "수량"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.statistics.firstReview": {
+  "en": "Be the first to review",
+  "ko": "첫 번째 리뷰를 작성해 보세요"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.statistics.installs": {
+  "en": "Installs",
+  "ko": "설치 수"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.statistics.notVerified": {
+  "en": "Not Verified",
+  "ko": "미인증"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.statistics.rating": {
+  "en": "Rating",
+  "ko": "평점"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.statistics.verified": {
+  "en": "Verified",
+  "ko": "인증됨"
+ },
+ "aiTemplates|app|appDetail|common|error.appDetail.statistics.whiteLabel": {
+  "en": "White-label",
+  "ko": "화이트라벨"
+ },
+ "aiTemplates|app|appDetail|common|error.common.delete": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "aiTemplates|app|appDetail|common|error.gettingStarted.tabTitle": {
+  "en": "Getting Started",
+  "ko": "시작 가이드"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.action": {
+  "en": "Action",
+  "ko": "액션"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.appInfo.adManagerCustomPage": {
+  "en": "Manage TikTok Ad Manager Accounts",
+  "ko": "TikTok Ad Manager 계정 관리"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.appInfo.billing.agencyPlanUpgradeTooltip": {
+  "en": "Your agency manages this plan. Contact them to upgrade.",
+  "ko": "이 플랜은 에이전시에서 관리합니다. 업그레이드하려면 에이전시에 문의하세요."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.appInfo.billing.oneTimePlanCannotChangeTooltip": {
+  "en": "Plan changes are unavailable for one-time purchases. One-time plans cannot be converted to recurring billing.",
+  "ko": "1회 구매는 플랜을 변경할 수 없습니다. 1회 결제 플랜은 정기 결제로 전환할 수 없습니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.appInfo.customPages": {
+  "en": "Custom Page",
+  "ko": "커스텀 페이지"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.appInfo.installModal.autoInstallDescription": {
+  "en": "New sub-accounts created in your agency will get this app automatically.",
+  "ko": "에이전시에서 새로 만드는 서브 계정에 이 앱이 자동으로 설치됩니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.appInfo.installModal.autoInstallTitle": {
+  "en": "Auto- Install on future sub-accounts",
+  "ko": "앞으로 만들 서브 계정에 자동 설치"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.appInfo.installModal.back": {
+  "en": "Back",
+  "ko": "뒤로"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.appInfo.installModal.futureLocationPaidHint": {
+  "en": "For paid apps, automatic future installation is available only when the selected plan is free for sub-accounts.",
+  "ko": "유료 앱은 선택한 플랜이 서브 계정에 무료일 때만 향후 자동 설치를 사용할 수 있습니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.appInfo.installModal.installed": {
+  "en": "Installed",
+  "ko": "설치됨"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.appInfo.installModal.reconnectDescription": {
+  "en": "to continue with {appName}",
+  "ko": "{appName} 연결을 계속하려면"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.appInfo.installModal.reconnectDocumentationLink": {
+  "en": "Link to documentation",
+  "ko": "문서 링크"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.appInfo.installModal.reconnectGuidance": {
+  "en": "To complete the connection, select the sub-accounts you want to connect. You can reconnect sub-accounts that already have the app installed, and you can install the app on new sub-accounts that don't have it yet.",
+  "ko": "연결을 완료하려면 연결할 서브 계정을 선택하세요. 이미 앱이 설치된 서브 계정은 다시 연결할 수 있고, 아직 앱이 없는 새 서브 계정에는 앱을 설치할 수 있습니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.appInfo.installModal.reconnectTitle": {
+  "en": "Select account(s)",
+  "ko": "계정 선택"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.appInfo.installModal.selectAllSubAccounts": {
+  "en": "Select all {count} sub-accounts",
+  "ko": "{count}개의 모든 서브 계정 선택"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.appInfo.installModal.uninstallGuidance": {
+  "en": "To uninstall the app from a sub-account; sub-accounts where you don't want mcp to connect to, follow the steps in the support documentation.",
+  "ko": "MCP 연결을 원하지 않는 서브 계정에서 앱을 제거하려면 지원 문서의 단계를 따르세요."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.appInfo.installModal.yetToInstall": {
+  "en": "Not installed",
+  "ko": "설치되지 않음"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.appInfo.showLess": {
+  "en": "Show less",
+  "ko": "접기"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.appInfo.showMore": {
+  "en": "Show more",
+  "ko": "더 보기"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.appInfo.viewAssets": {
+  "en": "View assets",
+  "ko": "자산 보기"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.appState.allApps": {
+  "en": "All Apps",
+  "ko": "전체 앱"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.appStudio.bannerDescription": {
+  "en": "Describe the app you need and App Studio builds it, ready to publish on the Marketplace. No coding needed.",
+  "ko": "필요한 앱을 설명하면 앱 스튜디오가 마켓플레이스에 바로 게시할 수 있는 앱을 만들어 드립니다. 코딩은 필요 없습니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.appStudio.bannerTitle": {
+  "en": "Build Marketplace apps with App Studio",
+  "ko": "앱 스튜디오로 마켓플레이스 앱을 만들어 보세요"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.appStudio.closeBanner": {
+  "en": "Close App Studio banner",
+  "ko": "앱 스튜디오 배너 닫기"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.appStudio.dismissHint": {
+  "en": "Banner closed. You can open App Studio from here anytime.",
+  "ko": "배너를 닫았습니다. 앱 스튜디오는 언제든지 여기에서 열 수 있습니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.appStudio.gotIt": {
+  "en": "Got it",
+  "ko": "확인"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.appStudio.signingInMessage": {
+  "en": "Signing in to Marketplace…",
+  "ko": "마켓플레이스에 로그인하는 중…"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.appStudio.signingInTitle": {
+  "en": "Signing in…",
+  "ko": "로그인 중…"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.appStudio.tryAppStudio": {
+  "en": "Try App Studio",
+  "ko": "앱 스튜디오 체험"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.appUpdate.newUpdateAvailable": {
+  "en": "New update available",
+  "ko": "새 업데이트 있음"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.approvalStatusApprovedTooltip": {
+  "en": "This app is approved for sub-accounts. Click to change the status.",
+  "ko": "이 앱은 서브 계정용으로 승인되었습니다. 클릭하면 상태를 변경할 수 있습니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.approvalStatusDisapprovedTooltip": {
+  "en": "This app is disapproved for sub-accounts. Click to change the status.",
+  "ko": "이 앱은 서브 계정용으로 승인이 거부되었습니다. 클릭하면 상태를 변경할 수 있습니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.buttonTab.free": {
+  "en": "Free",
+  "ko": "무료"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.errors.locationCardNotFoundAgencyPays": {
+  "en": "Some of the selected sub-accounts do not have a payment method. Installation can continue because your agency is paying. Add a card on these sub-accounts if you want them to support direct billing later:",
+  "ko": "선택한 서브 계정 중 일부에 결제 수단이 없습니다. 에이전시가 비용을 지불하므로 설치는 계속할 수 있습니다. 나중에 이 서브 계정에 직접 청구하려면 다음 서브 계정에 카드를 추가하세요:"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.exclusiveOfTaxes": {
+  "en": "Exclusive of taxes",
+  "ko": "세금 별도"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.upgrade.chargeNotice.freePlanHelp": {
+  "en": "You're moving to a free plan. You won't be charged for this change.",
+  "ko": "무료 플랜으로 변경됩니다. 이번 변경에는 요금이 청구되지 않습니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.upgrade.chargeNotice.immediateContent": {
+  "en": "Your next charge will be on {nextBillingDate} at {ongoingAmount}.",
+  "ko": "다음 청구일은 {nextBillingDate}이며 청구 금액은 {ongoingAmount}입니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.upgrade.chargeNotice.immediateTitle": {
+  "en": "You'll be charged {amount} today when you confirm.",
+  "ko": "확인하면 오늘 {amount}이(가) 청구됩니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.upgrade.chargeNotice.oneTimeContent": {
+  "en": "This is a one-time payment. After you confirm, you won't be able to change to another plan.",
+  "ko": "1회 결제입니다. 확인한 후에는 다른 플랜으로 변경할 수 없습니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.upgrade.chargeNotice.trialContent": {
+  "en": "You'll be charged {amount} on {nextBillingDate} when your free trial ends.",
+  "ko": "무료 체험이 끝나는 {nextBillingDate}에 {amount}이(가) 청구됩니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.upgrade.chargeNotice.trialTitle": {
+  "en": "No charge today.",
+  "ko": "오늘은 청구되지 않습니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.upgrade.confirmModal.cta.confirm": {
+  "en": "Confirm changes",
+  "ko": "변경사항 확인"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.upgrade.confirmModal.cta.goBack": {
+  "en": "Go back",
+  "ko": "뒤로 가기"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.upgrade.confirmModal.currentPlan": {
+  "en": "Current plan",
+  "ko": "현재 플랜"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.upgrade.confirmModal.description": {
+  "en": "Review what will change before confirming.",
+  "ko": "확정하기 전에 변경될 내용을 검토하세요."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.upgrade.confirmModal.descriptionAllSubAccounts": {
+  "en": "Review what will change for all sub-accounts before confirming.",
+  "ko": "확정하기 전에 모든 서브 계정에서 변경될 내용을 검토하세요."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.upgrade.confirmModal.descriptionSubAccount": {
+  "en": "Review what will change for {count} sub-account before confirming.",
+  "ko": "확정하기 전에 서브 계정 {count}개에서 변경될 내용을 검토하세요."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.upgrade.confirmModal.descriptionSubAccounts": {
+  "en": "Review what will change for {count} sub-accounts before confirming.",
+  "ko": "확정하기 전에 서브 계정 {count}개에서 변경될 내용을 검토하세요."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.upgrade.confirmModal.dueToday": {
+  "en": "Due today",
+  "ko": "오늘 결제 금액"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.upgrade.confirmModal.newPlan": {
+  "en": "New plan",
+  "ko": "새 플랜"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.upgrade.confirmModal.nextBillingDate": {
+  "en": "Next billing date",
+  "ko": "다음 청구일"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.upgrade.confirmModal.noRecurringBilling": {
+  "en": "No recurring charges",
+  "ko": "정기 청구 없음"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.upgrade.confirmModal.notice.amountUnchangedBody": {
+  "en": "Your plan will change from {currentPlanName} to {newPlanName}, but you'll continue to pay {amount}.",
+  "ko": "플랜이 {currentPlanName}에서 {newPlanName}(으)로 변경되지만, 계속 {amount}을(를) 지불합니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.upgrade.confirmModal.notice.amountUnchangedTitle": {
+  "en": "Your billing amount isn't changing.",
+  "ko": "청구 금액은 변경되지 않습니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.upgrade.confirmModal.notice.planChangingBody": {
+  "en": "Your plan will change from {currentPlanName} to {newPlanName}. You'll pay {amount}.",
+  "ko": "플랜이 {currentPlanName}에서 {newPlanName}(으)로 변경됩니다. {amount}을(를) 지불합니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.upgrade.confirmModal.notice.planChangingImmediateBody": {
+  "en": "Your plan will change from {currentPlanName} to {newPlanName}. You'll be charged {dueToday} today. After that you'll be billed {amount}, next on {nextBillingDate}.",
+  "ko": "플랜이 {currentPlanName}에서 {newPlanName}(으)로 변경됩니다. 오늘 {dueToday}이(가) 청구됩니다. 이후에는 {amount}이(가) 청구되며, 다음 청구일은 {nextBillingDate}입니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.upgrade.confirmModal.notice.planChangingOneTimeBody": {
+  "en": "Your plan will change from {currentPlanName} to {newPlanName}. You'll be charged {dueToday} today as a one-time payment. After this, you won't be able to change to another plan.",
+  "ko": "플랜이 {currentPlanName}에서 {newPlanName}(으)로 변경됩니다. 오늘 1회 결제로 {dueToday}이(가) 청구됩니다. 이후에는 다른 플랜으로 변경할 수 없습니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.upgrade.confirmModal.notice.planChangingTitle": {
+  "en": "Your plan is changing.",
+  "ko": "플랜이 변경됩니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.upgrade.confirmModal.notice.planChangingTrialBody": {
+  "en": "Your plan will change from {currentPlanName} to {newPlanName}. You won't be charged today. You'll be billed {amount} starting {nextBillingDate} when your free trial ends.",
+  "ko": "플랜이 {currentPlanName}에서 {newPlanName}(으)로 변경됩니다. 오늘은 청구되지 않습니다. 무료 체험이 끝나는 {nextBillingDate}부터 {amount}이(가) 청구됩니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.upgrade.confirmModal.ongoingBilling": {
+  "en": "Ongoing billing",
+  "ko": "이후 청구 금액"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.upgrade.confirmModal.title": {
+  "en": "Confirm changes",
+  "ko": "변경사항 확인"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.upgrade.confirmModal.typeToConfirm": {
+  "en": "To confirm these changes, type [[CONFIRM]].",
+  "ko": "변경 사항을 확정하려면 [[CONFIRM]]을 입력하세요."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.upgrade.confirmStep.tableHeaders.amountToBeCharged": {
+  "en": "Amount to be charged",
+  "ko": "청구될 금액"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.upgrade.cta.confirmChanges": {
+  "en": "Confirm Changes",
+  "ko": "변경사항 확인"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.upgrade.noUpgradeAvailable.title": {
+  "en": "You're already on the only available plan. Plan upgrade is not available.",
+  "ko": "이미 이용 가능한 유일한 플랜을 사용 중입니다. 플랜을 업그레이드할 수 없습니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.upgrade.oneTimeBlocked.description": {
+  "en": "Your subscription is on a one-time payment plan. One-time plans are non-refundable and cannot be converted to monthly or annual recurring billing.",
+  "ko": "현재 구독은 1회 결제 플랜입니다. 1회 결제 플랜은 환불되지 않으며 월간 또는 연간 정기 결제로 전환할 수 없습니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.upgrade.oneTimeBlocked.title": {
+  "en": "Plan change unavailable",
+  "ko": "플랜 변경 불가"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.billing.upgrade.samePlanSelected.title": {
+  "en": "You're already on this plan. Select a different plan to continue.",
+  "ko": "이미 이 플랜을 사용 중입니다. 계속하려면 다른 플랜을 선택하세요."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.buildAnApp": {
+  "en": "Build an App",
+  "ko": "앱 만들기"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.installedApps.bulkUpgradeBar.oneTimeExcludedTooltip": {
+  "en": "Sub-accounts on one-time plans are excluded from plan changes and cannot be selected.",
+  "ko": "1회 결제 플랜을 사용하는 서브 계정은 플랜 변경 대상에서 제외되며 선택할 수 없습니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.installedApps.bulkUpgradeBar.upgradePlans": {
+  "en": "Change plan",
+  "ko": "플랜 변경"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.noAppFound.appStudioDescription": {
+  "en": "Build this app with App Studio, or raise a request and we will build it for you.",
+  "ko": "앱 스튜디오로 이 앱을 직접 만들거나, 요청을 보내 주시면 저희가 만들어 드립니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.settingsPage.appAccess.accessControlSectionTitle": {
+  "en": "Access control",
+  "ko": "액세스 제어"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.settingsPage.appAccess.approvedAppsOnly": {
+  "en": "Show only approved apps to sub-accounts.",
+  "ko": "서브 계정에 승인된 앱만 표시합니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.settingsPage.appAccess.approvedAppsOnlyTooltip": {
+  "en": "When enabled, sub-accounts can only see and install apps you have approved. Newly published apps stay hidden until you approve them.",
+  "ko": "활성화하면 서브 계정은 승인한 앱만 보고 설치할 수 있습니다. 새로 게시된 앱은 승인하기 전까지 숨겨집니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.settingsPage.appAccess.clearSelection": {
+  "en": "Clear selection",
+  "ko": "선택 해제"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.settingsPage.appAccess.filter": {
+  "en": "Filter",
+  "ko": "필터"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.settingsPage.appAccess.rowsPerPage": {
+  "en": "Rows per page",
+  "ko": "페이지당 행 수"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.settingsPage.appAccess.rowsSelected": {
+  "en": "{count} rows selected",
+  "ko": "{count}개 행 선택됨"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.settingsPage.appAccess.selectAll": {
+  "en": "Select all({count})",
+  "ko": "전체 선택({count})"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.subAccountApps.visibility.table.askAILocationAdminsOnlyInfo": {
+  "en": "This setting applies only to location admins. Agency admins can always discover marketplace apps in Ask AI.",
+  "ko": "이 설정은 서브 계정 관리자에게만 적용됩니다. 에이전시 관리자는 'AI에게 문의'에서 항상 마켓플레이스 앱을 찾을 수 있습니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.subAccountApps.visibility.table.askAIRadiosDisabledTooltip": {
+  "en": "These options do not apply to Ask AI. Discoverability always includes all approved apps. Use the Sub-account left navigation menu switch to control discovery of similar apps.",
+  "ko": "이 옵션은 'AI에게 문의'에는 적용되지 않습니다. 'AI에게 문의'에는 항상 승인된 모든 앱이 노출됩니다. 비슷한 앱의 노출 여부는 '서브 계정 왼쪽 탐색 메뉴' 스위치로 제어하세요."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.subAccountApps.visibility.table.dataHeaders.askAI": {
+  "en": "Ask AI Discoverability",
+  "ko": "AI에게 문의 노출"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.subAccountApps.visibility.table.leftNavKillSwitchInfo": {
+  "en": "Controls marketplace access from Ask AI. When disabled, location users cannot open All Apps from Ask AI recommendations.",
+  "ko": "'AI에게 문의'에서의 마켓플레이스 접근을 제어합니다. 비활성화하면 서브 계정 사용자는 'AI에게 문의' 추천에서 전체 앱을 열 수 없습니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.companyScripts.delete": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.confirmModal.sopAndFup": {
+  "en": "SOP & FUP",
+  "ko": "SOP 및 FUP"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.add": {
+  "en": "Add",
+  "ko": "추가"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.addGroup": {
+  "en": "Add Group",
+  "ko": "그룹 추가"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.addImage": {
+  "en": "Add image",
+  "ko": "이미지 추가"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.addMember": {
+  "en": "Add member",
+  "ko": "멤버 추가"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.addMemberFailed": {
+  "en": "Failed to add member",
+  "ko": "멤버를 추가하지 못했습니다"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.addRelease": {
+  "en": "Add release",
+  "ko": "릴리스 추가"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.all": {
+  "en": "All",
+  "ko": "전체"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.allDevelopers": {
+  "en": "All developers",
+  "ko": "전체 개발자"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.allReleases": {
+  "en": "All releases",
+  "ko": "전체 릴리스"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.alreadyAdded": {
+  "en": "Added",
+  "ko": "추가됨"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.archive": {
+  "en": "Archive",
+  "ko": "보관"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.archived": {
+  "en": "Archived",
+  "ko": "보관됨"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.avgRating": {
+  "en": "Average rating",
+  "ko": "평균 평점"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.bodyPlaceholder": {
+  "en": "Optional longer notes: how to use it, what to test, and anything else.",
+  "ko": "상세 메모(선택): 사용 방법, 테스트할 내용, 기타 사항"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.bulkSummary": {
+  "en": "Added {added}, already members {alreadyMember}, not found {notFound}, invalid {invalid}.",
+  "ko": "추가됨 {added}, 이미 멤버 {alreadyMember}, 찾을 수 없음 {notFound}, 유효하지 않음 {invalid}."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.bulkUploaded": {
+  "en": "CSV processed",
+  "ko": "CSV 처리 완료"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.changelogLabel": {
+  "en": "Short description",
+  "ko": "짧은 설명"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.changelogPlaceholder": {
+  "en": "One or two sentences developers see under the heading",
+  "ko": "개발자가 제목 아래에서 보게 될 한두 문장"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.colActions": {
+  "en": "Actions",
+  "ko": "작업"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.colAudienceGroups": {
+  "en": "Audience groups",
+  "ko": "대상 그룹"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.colLiveFrom": {
+  "en": "Live from",
+  "ko": "정식 출시일"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.colMembers": {
+  "en": "Members",
+  "ko": "멤버"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.colName": {
+  "en": "Name",
+  "ko": "이름"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.colOptIns": {
+  "en": "Opt-ins",
+  "ko": "옵트인"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.colPreviewFrom": {
+  "en": "Preview from",
+  "ko": "프리뷰 시작일"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.colPublicFrom": {
+  "en": "Public from",
+  "ko": "공개 시작일"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.colStage": {
+  "en": "Stage",
+  "ko": "단계"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.copySuccess": {
+  "en": "Copied to clipboard",
+  "ko": "클립보드에 복사됨"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.countsRefresh": {
+  "en": "Counts refresh every 5 minutes.",
+  "ko": "수치는 5분마다 새로고침됩니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.csvNotFoundNote": {
+  "en": "{count} email(s) were not found in the developer directory. Developers must sign up on the Marketplace Developer Portal first.",
+  "ko": "이메일 {count}개를 개발자 디렉터리에서 찾을 수 없습니다. 개발자는 먼저 마켓플레이스 개발자 포털에 가입해야 합니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.csvResultsTitle": {
+  "en": "Upload results",
+  "ko": "업로드 결과"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.csvTooLarge": {
+  "en": "CSV file exceeds maximum size of 256KB",
+  "ko": "CSV 파일이 최대 크기인 256KB를 초과합니다"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.csvTotalProcessed": {
+  "en": "{count} emails processed",
+  "ko": "이메일 {count}개 처리됨"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.csvUploadError": {
+  "en": "Failed to process CSV file",
+  "ko": "CSV 파일을 처리하지 못했습니다"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.delete": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.deleteGroupConfirm": {
+  "en": "Delete group",
+  "ko": "그룹 삭제"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.deleteGroupDescription": {
+  "en": "Members will lose access to any preview releases restricted to this group.",
+  "ko": "멤버는 이 그룹으로 제한된 프리뷰 릴리스에 더 이상 접근할 수 없습니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.deleteGroupTitle": {
+  "en": "Delete group?",
+  "ko": "그룹을 삭제하시겠습니까?"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.deleteReleaseConfirm": {
+  "en": "Delete release",
+  "ko": "릴리스 삭제"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.deleteReleaseDescription": {
+  "en": "Developers will lose access immediately.",
+  "ko": "개발자는 즉시 접근 권한을 잃게 됩니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.deleteReleaseTitle": {
+  "en": "Delete release?",
+  "ko": "릴리스를 삭제하시겠습니까?"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.descriptionLabel": {
+  "en": "Long description",
+  "ko": "상세 설명"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.devByEmail": {
+  "en": "Developer by email",
+  "ko": "개발자(이메일)"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.developerEmail": {
+  "en": "Developer email",
+  "ko": "개발자 이메일"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.developerId": {
+  "en": "Developer ID",
+  "ko": "개발자 ID"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.devsOptedIn": {
+  "en": "Developers opted in",
+  "ko": "참여한 개발자"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.dragHelper": {
+  "en": "Drag rows to set the order features appear on the developer Labs page.",
+  "ko": "행을 드래그하여 개발자 Labs 페이지에 기능이 표시되는 순서를 정하세요."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.editGroup": {
+  "en": "Edit group",
+  "ko": "그룹 편집"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.editRelease": {
+  "en": "Edit release",
+  "ko": "릴리스 편집"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.editReleaseSubtitle": {
+  "en": "Changes apply as soon as you save.",
+  "ko": "저장하는 즉시 변경 사항이 적용됩니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.emptyCsvFile": {
+  "en": "The selected CSV file is empty",
+  "ko": "선택한 CSV 파일이 비어 있습니다"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.emptyGroups": {
+  "en": "No release groups created yet.",
+  "ko": "아직 만든 릴리스 그룹이 없습니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.emptyMembers": {
+  "en": "No members in this group yet.",
+  "ko": "이 그룹에는 아직 멤버가 없습니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.emptyReleases": {
+  "en": "No releases created yet.",
+  "ko": "아직 만든 릴리스가 없습니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.feedback": {
+  "en": "Feedback",
+  "ko": "피드백"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.feedbackPageLabel": {
+  "en": "Page {page} of {total}",
+  "ko": "{total}페이지 중 {page}페이지"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.feedbackPageNext": {
+  "en": "Next feedback page",
+  "ko": "피드백 다음 페이지"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.feedbackPagePrev": {
+  "en": "Previous feedback page",
+  "ko": "피드백 이전 페이지"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.feedbackReceived": {
+  "en": "Feedback received",
+  "ko": "받은 피드백"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.fieldRequired": {
+  "en": "This field is required",
+  "ko": "필수 입력 항목입니다"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.groupDeleted": {
+  "en": "Group deleted successfully",
+  "ko": "그룹이 성공적으로 삭제되었습니다"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.groupDescriptionPlaceholder": {
+  "en": "e.g. Highest-revenue marketplace partners",
+  "ko": "예: 매출 상위 마켓플레이스 파트너"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.groupNameLabel": {
+  "en": "Group name",
+  "ko": "그룹 이름"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.groupNamePlaceholder": {
+  "en": "e.g. Beta testers",
+  "ko": "예: 베타 테스터"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.groupSaved": {
+  "en": "Group saved successfully",
+  "ko": "그룹이 성공적으로 저장되었습니다"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.groups": {
+  "en": "Groups",
+  "ko": "그룹"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.groupsClickHelper": {
+  "en": "Click a group to manage its members.",
+  "ko": "그룹을 클릭하면 멤버를 관리할 수 있습니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.headingHelper": {
+  "en": "Shown first on the developer Labs card.",
+  "ko": "개발자 Labs 카드에 가장 먼저 표시됩니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.headingLabel": {
+  "en": "Heading",
+  "ko": "제목"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.headingPlaceholder": {
+  "en": "e.g. Charge per use, not per month",
+  "ko": "예: 월 단위가 아닌 사용량 단위로 청구"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.imageReadFailed": {
+  "en": "Could not read that image.",
+  "ko": "이미지를 읽을 수 없습니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.imageTooLarge": {
+  "en": "That image is too large. Use a smaller screenshot or an https link.",
+  "ko": "이미지가 너무 큽니다. 더 작은 스크린샷이나 https 링크를 사용하세요."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.imageTypeInvalid": {
+  "en": "Use a PNG, JPG, GIF, or WebP image.",
+  "ko": "PNG, JPG, GIF 또는 WebP 이미지를 사용하세요."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.imagesHint": {
+  "en": "Upload up to {max} screenshots. They show on the developer Labs card between the short and long description.",
+  "ko": "스크린샷은 최대 {max}개까지 업로드할 수 있습니다. 개발자 Labs 카드의 짧은 설명과 상세 설명 사이에 표시됩니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.imagesLabel": {
+  "en": "Images",
+  "ko": "이미지"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.imagesLimit": {
+  "en": "You can add up to {max} images.",
+  "ko": "이미지는 최대 {max}개까지 추가할 수 있습니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.invalidCsvFile": {
+  "en": "Please upload a valid CSV file (.csv)",
+  "ko": "올바른 CSV 파일(.csv)을 업로드해 주세요"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.keyHelper": {
+  "en": "Used in code, e.g. appStudio.hosting. Can't be changed later.",
+  "ko": "코드에서 사용됩니다(예: appStudio.hosting). 나중에 변경할 수 없습니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.keyInvalid": {
+  "en": "Start with a lowercase letter. Use letters, numbers, and dots. 3–64 characters.",
+  "ko": "소문자로 시작해야 합니다. 문자, 숫자, 점만 사용할 수 있으며 3–64자여야 합니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.keyLabel": {
+  "en": "Key",
+  "ko": "키"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.keyPlaceholder": {
+  "en": "e.g. billing.usageMeters",
+  "ko": "예: billing.usageMeters"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.last30Days": {
+  "en": "Last 30 days",
+  "ko": "최근 30일"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.last3Months": {
+  "en": "Last 3 months",
+  "ko": "최근 3개월"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.last7Days": {
+  "en": "Last 7 days",
+  "ko": "최근 7일"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.liveFromLabel": {
+  "en": "Live for everyone from",
+  "ko": "전체 사용자 정식 출시일"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.loadMore": {
+  "en": "Load more",
+  "ko": "더 보기"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.loadingGroups": {
+  "en": "Loading groups...",
+  "ko": "그룹 불러오는 중..."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.loadingMembers": {
+  "en": "Loading members...",
+  "ko": "멤버 불러오는 중..."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.loadingMore": {
+  "en": "Loading more...",
+  "ko": "더 불러오는 중..."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.loadingReleases": {
+  "en": "Loading releases...",
+  "ko": "릴리스 불러오는 중..."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.manageMembers": {
+  "en": "Manage members",
+  "ko": "멤버 관리"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.markReviewed": {
+  "en": "Mark reviewed",
+  "ko": "검토 완료로 표시"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.markUnread": {
+  "en": "Mark unread",
+  "ko": "읽지 않음으로 표시"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.memberAdded": {
+  "en": "Member added successfully",
+  "ko": "멤버가 성공적으로 추가되었습니다"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.memberRemoved": {
+  "en": "Member removed successfully",
+  "ko": "멤버가 성공적으로 제거되었습니다"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.membersCount": {
+  "en": "Members ({count})",
+  "ko": "멤버({count})"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.membersHeaderCount": {
+  "en": "{developers} developers · {teams} teams",
+  "ko": "개발자 {developers}명 · 팀 {teams}개"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.membersSectionHelper": {
+  "en": "Add developers or teams who should see releases assigned to this group.",
+  "ko": "이 그룹에 할당된 릴리스를 볼 수 있어야 하는 개발자나 팀을 추가하세요."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.membersSectionLabel": {
+  "en": "Members",
+  "ko": "멤버"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.membersTitle": {
+  "en": "{name} members",
+  "ko": "{name} 멤버"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.nameLabel": {
+  "en": "Name",
+  "ko": "이름"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.newGroup": {
+  "en": "Add Group",
+  "ko": "그룹 추가"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.newRelease": {
+  "en": "New release",
+  "ko": "새 릴리스"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.newReleaseSubtitle": {
+  "en": "Create a preview feature and schedule its rollout.",
+  "ko": "프리뷰 기능을 만들고 출시 일정을 예약하세요."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.nextPage": {
+  "en": "Next",
+  "ko": "다음"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.noAudience": {
+  "en": "None",
+  "ko": "없음"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.noDescription": {
+  "en": "No description",
+  "ko": "설명 없음"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.noDeveloperEmail": {
+  "en": "No developer with this email",
+  "ko": "이 이메일을 사용하는 개발자가 없습니다"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.noDirectoryMatches": {
+  "en": "No matches",
+  "ko": "일치 항목 없음"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.noFeedback": {
+  "en": "No feedback yet",
+  "ko": "아직 피드백이 없습니다"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.noFeedbackSubtitle": {
+  "en": "Notes developers send from Labs will show up here.",
+  "ko": "개발자가 Labs에서 보낸 메모가 여기에 표시됩니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.noTeamId": {
+  "en": "No team with this ID",
+  "ko": "이 ID의 팀이 없습니다"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.notifyAudience": {
+  "en": "Audience",
+  "ko": "오디언스"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.notifyConfirm": {
+  "en": "Schedule send",
+  "ko": "예약 발송"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.notifyError": {
+  "en": "Failed to schedule notification",
+  "ko": "알림을 예약하지 못했습니다"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.notifyModalTitle": {
+  "en": "Schedule preview notification",
+  "ko": "프리뷰 알림 예약"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.notifyPreviewDesc": {
+  "en": "Schedule a bulk email to all developers in the audience groups for {name}.",
+  "ko": "{name}의 대상 그룹에 속한 모든 개발자에게 보낼 대량 이메일을 예약합니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.notifyPreviewSuccess": {
+  "en": "Scheduled preview email notification for {count} recipients",
+  "ko": "수신자 {count}명에게 프리뷰 이메일 알림을 예약했습니다"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.notifyPreviewTitle": {
+  "en": "Schedule preview notification",
+  "ko": "프리뷰 알림 예약"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.notifyRelease": {
+  "en": "Schedule notification",
+  "ko": "알림 예약"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.notifySchedule": {
+  "en": "Schedule",
+  "ko": "일정"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.notifyScheduleImmediate": {
+  "en": "Immediate",
+  "ko": "즉시"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.notifySuccess": {
+  "en": "Preview notification scheduled successfully",
+  "ko": "프리뷰 알림이 성공적으로 예약되었습니다"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.notifyTemplateHelper": {
+  "en": "HighLevel email template to use for preview announcement",
+  "ko": "프리뷰 공지에 사용할 하이퍼클래스 이메일 템플릿"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.notifyTemplateLabel": {
+  "en": "Email template ID (optional)",
+  "ko": "이메일 템플릿 ID(선택 사항)"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.notifyTemplatePlaceholder": {
+  "en": "Leave blank to use default template",
+  "ko": "기본 템플릿을 사용하려면 비워 두세요"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.optInsSummary": {
+  "en": "{devs} devs · {teams} teams",
+  "ko": "개발자 {devs}명 · 팀 {teams}개"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.outOfFive": {
+  "en": "out of 5",
+  "ko": "/ 5점"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.pageIndicator": {
+  "en": "Showing {start}–{end} of {total} (page {page} of {pages})",
+  "ko": "총 {total}개 중 {start}–{end} 표시 중({pages}페이지 중 {page}페이지)"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.previewTab": {
+  "en": "Preview",
+  "ko": "미리보기"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.previousPage": {
+  "en": "Previous",
+  "ko": "이전"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.publicFromLabel": {
+  "en": "Public to all developers from",
+  "ko": "전체 개발자 공개 시작일"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.refresh": {
+  "en": "Refresh",
+  "ko": "새로고침"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.relativeDays": {
+  "en": "{n}d ago",
+  "ko": "{n}일 전"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.relativeHours": {
+  "en": "{n}h ago",
+  "ko": "{n}시간 전"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.relativeMinutes": {
+  "en": "{n}m ago",
+  "ko": "{n}분 전"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.releaseDeleted": {
+  "en": "Release deleted successfully",
+  "ko": "릴리스가 성공적으로 삭제되었습니다"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.releaseNamePlaceholder": {
+  "en": "e.g. Usage-based app pricing",
+  "ko": "예: 사용량 기반 앱 가격"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.releaseSaved": {
+  "en": "Release saved successfully",
+  "ko": "릴리스가 성공적으로 저장되었습니다"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.releases": {
+  "en": "Releases",
+  "ko": "릴리스"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.remove": {
+  "en": "Remove",
+  "ko": "제거"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.removeConfirm": {
+  "en": "Remove?",
+  "ko": "제거하시겠습니까?"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.removeImage": {
+  "en": "Remove image",
+  "ko": "이미지 제거"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.rolloutSchedule": {
+  "en": "Rollout schedule",
+  "ko": "출시 일정"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.rolloutScheduleHelper": {
+  "en": "Each stage widens who can see the release. Times are in your local timezone.",
+  "ko": "단계가 진행될수록 릴리스를 볼 수 있는 대상이 넓어집니다. 시간은 현지 시간대 기준입니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.saveGroup": {
+  "en": "Save group",
+  "ko": "그룹 저장"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.saveRelease": {
+  "en": "Save release",
+  "ko": "릴리스 저장"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.searchDevelopersPlaceholder": {
+  "en": "Search developers by name or email",
+  "ko": "이름 또는 이메일로 개발자 검색"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.searchDirectoryHint": {
+  "en": "Type at least 2 characters, then add as many matches as you need.",
+  "ko": "2자 이상 입력한 다음, 필요한 만큼 검색 결과를 추가하세요."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.searchGroupsPlaceholder": {
+  "en": "Search groups...",
+  "ko": "그룹 검색..."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.searchPlaceholder": {
+  "en": "Search by name or key",
+  "ko": "이름 또는 키로 검색"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.searchTeamsPlaceholder": {
+  "en": "Search teams by name",
+  "ko": "이름으로 팀 검색"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.searching": {
+  "en": "Searching...",
+  "ko": "검색 중..."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.selectFeedback": {
+  "en": "Select a feedback item to read",
+  "ko": "읽을 피드백을 선택하세요"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.stageTimeline": {
+  "en": "Stage timeline",
+  "ko": "단계별 일정"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.stages.live": {
+  "en": "Live",
+  "ko": "라이브"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.stages.preview": {
+  "en": "Preview",
+  "ko": "미리보기"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.stages.public": {
+  "en": "Public",
+  "ko": "공개"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.statsTitle": {
+  "en": "Stats — {name}",
+  "ko": "통계 — {name}"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.statusUpdated": {
+  "en": "Status updated successfully",
+  "ko": "상태가 성공적으로 업데이트되었습니다"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.summaryAdded": {
+  "en": "Added",
+  "ko": "추가됨"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.summaryAlreadyMember": {
+  "en": "Already in group",
+  "ko": "이미 그룹에 있음"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.summaryInvalid": {
+  "en": "Invalid",
+  "ko": "유효하지 않음"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.summaryNotFound": {
+  "en": "Not in directory",
+  "ko": "디렉터리에 없음"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.supportDocUrlInvalid": {
+  "en": "Enter a valid http or https URL",
+  "ko": "올바른 http 또는 https URL을 입력하세요"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.supportDocUrlLabel": {
+  "en": "Support doc URL",
+  "ko": "지원 문서 URL"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.teamById": {
+  "en": "Team by ID",
+  "ko": "팀(ID)"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.teamId": {
+  "en": "Team ID",
+  "ko": "팀 ID"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.teamIdPlaceholder": {
+  "en": "Team ID (e.g. 507f1f...)",
+  "ko": "팀 ID(예: 507f1f...)"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.teamsOptedIn": {
+  "en": "Teams opted in",
+  "ko": "참여한 팀"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.tooLong": {
+  "en": "Must be {max} characters or fewer",
+  "ko": "{max}자 이하여야 합니다"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.unarchive": {
+  "en": "Unarchive",
+  "ko": "보관 해제"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.unread": {
+  "en": "Unread",
+  "ko": "읽지 않음"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.uploadCsv": {
+  "en": "Upload CSV",
+  "ko": "CSV 업로드"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.uploadCsvHelper": {
+  "en": "CSV only. Export from Excel if needed. Use an email column or one email per row. Max 100.",
+  "ko": "CSV 파일만 가능합니다. 필요하면 Excel에서 내보내세요. 이메일 열을 사용하거나 한 행에 이메일을 하나씩 입력하세요. 최대 100개."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.uploadImage": {
+  "en": "Upload",
+  "ko": "업로드"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.usedByReleases": {
+  "en": "Used by releases",
+  "ko": "사용 중인 릴리스"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.viewReleaseNotes": {
+  "en": "View release notes for {name}",
+  "ko": "{name} 릴리스 노트 보기"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.viewStats": {
+  "en": "View stats",
+  "ko": "통계 보기"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.visibleFromLabel": {
+  "en": "Visible to audience groups from",
+  "ko": "대상 그룹 공개 시작일"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.writeTab": {
+  "en": "Write",
+  "ko": "쓰기"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.labs.yesterday": {
+  "en": "Yesterday",
+  "ko": "어제"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.subtitle": {
+  "en": "Look up and fix marketplace developer accounts. Every action here is audit-logged.",
+  "ko": "마켓플레이스 개발자 계정을 조회하고 문제를 해결합니다. 여기서 수행하는 모든 작업은 감사 로그에 기록됩니다."
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.tabs.beta": {
+  "en": "Beta",
+  "ko": "베타"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.developers.tabs.tools": {
+  "en": "Developer tools",
+  "ko": "개발자 도구"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.privateAppReview.scopes.notAvailable": {
+  "en": "NA",
+  "ko": "해당 없음"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.supportPortal.reviewTable.noScopes": {
+  "en": "NA",
+  "ko": "해당 없음"
+ },
+ "aiTemplates|app|appDetail|common|error.marketplace.viewOptions.subAccountPreview": {
+  "en": "You are currently in sub-account view, change to agency view to manage the app",
+  "ko": "현재 서브 계정 보기 상태입니다. 앱을 관리하려면 에이전시 보기로 전환하세요"
+ },
+ "aiTemplates|app|appDetail|common|error.privateIntegration.deleteAction": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "aiTemplates|app|appDetail|common|error.privateIntegration.scopes.affiliatemanagerwrite": {
+  "en": "Edit Affiliate Manager",
+  "ko": "제휴 관리자 수정"
+ },
+ "aiTemplates|app|appDetail|common|error.privateIntegration.scopes.managedagentsreadonly": {
+  "en": "View Managed Agents",
+  "ko": "관리형 에이전트 보기"
+ },
+ "aiTemplates|app|appDetail|common|error.privateIntegration.scopes.managedagentswrite": {
+  "en": "Execute Managed Agents",
+  "ko": "관리형 에이전트 실행"
+ },
+ "aiTemplates|app|appDetail|common|error.privateIntegration.scopes.workflowsdelete": {
+  "en": "Delete Workflows",
+  "ko": "워크플로우 삭제"
+ },
+ "aiTemplates|app|appDetail|common|error.privateIntegration.scopes.workflowslogs": {
+  "en": "View Workflow Logs",
+  "ko": "워크플로우 로그 보기"
+ },
+ "aiTemplates|app|appDetail|common|error.privateIntegration.scopes.workflowspublish": {
+  "en": "Publish Workflows",
+  "ko": "워크플로우 게시"
+ },
+ "aiTemplates|app|appDetail|common|error.privateIntegration.scopes.workflowswrite": {
+  "en": "Edit Workflows",
+  "ko": "워크플로우 수정"
+ },
+ "agency.connectStripe": {
+  "en": "Connect Stripe",
+  "ko": "Stripe 연결"
+ },
+ "agency.customersInStripe": {
+  "en": "Customers in Stripe",
+  "ko": "Stripe 고객"
+ },
+ "agency.developmentsUpdates": {
+  "en": "Keep me posted with Developments",
+  "ko": "개발 소식 알림 수신"
+ },
+ "agency.inaccurateStats": {
+  "en": "Why are my stats inaccurate?",
+  "ko": "통계가 정확하지 않은 이유는 무엇인가요?"
+ },
+ "agency.leanMore": {
+  "en": "Learn More",
+  "ko": "자세히 보기"
+ },
+ "agency.monthlyRecurringRevenue": {
+  "en": "Monthly Recurring Revenue",
+  "ko": "월간 반복 매출"
+ },
+ "agency.newCustomersThisMonth": {
+  "en": "New Customers this Month",
+  "ko": "이번 달 신규 고객"
+ },
+ "agency.processing": {
+  "en": "Processing",
+  "ko": "처리 중"
+ },
+ "agency.refresh": {
+  "en": "Refresh",
+  "ko": "새로고침"
+ },
+ "agency.revenueDistribution": {
+  "en": "Revenue Distribution",
+  "ko": "매출 분포"
+ },
+ "agency.revenueLastMonth": {
+  "en": "Revenue Last Month",
+  "ko": "지난달 매출"
+ },
+ "agency.saasModeOnProPlan": {
+  "en": "SaaS Mode is Live on the pro plan",
+  "ko": "Pro 플랜에서 SaaS 모드가 활성화되었습니다"
+ },
+ "agency.sixMonthsGrowth": {
+  "en": "Growth in Last 6 Months",
+  "ko": "최근 6개월 성장률"
+ },
+ "agency.stripLogin": {
+  "en": "Login to Stripe",
+  "ko": "Stripe 로그인"
+ },
+ "agency.stripUnverifiedAccount": {
+  "en": "The Stripe account connected to this agency is unverified and cannot collect payments. Please complete verification by logging in to your stripe account.",
+  "ko": "이 에이전시에 연결된 Stripe 계정이 인증되지 않아 결제를 받을 수 없습니다. Stripe 계정에 로그인하여 인증을 완료해 주세요."
+ },
+ "agency.title": {
+  "en": "Agency Dashboard",
+  "ko": "에이전시 대시보드"
+ },
+ "agency.upgradeNow": {
+  "en": "Upgrade Now",
+  "ko": "지금 업그레이드"
+ },
+ "agentStudioApp.graphBuilder.nodes.end.sleepTimeUnit.options.minutes": {
+  "en": "MINUTES",
+  "ko": "분"
+ },
+ "blogsApp.common.native": {
+  "en": "NATIVE",
+  "ko": "네이티브"
+ },
+ "blogsApp.common.standalone": {
+  "en": "STANDALONE",
+  "ko": "독립형"
+ },
+ "bulkActionsApp.whatsapp.templateStatusTooltipPausedSee": {
+  "en": "See",
+  "ko": "보기"
+ },
+ "calendarComponentsApp.calendarAI.agentic.draftCard.discard": {
+  "en": "Discard",
+  "ko": "삭제"
+ },
+ "calendarComponentsApp.calendarAI.agentic.onboarding.groups.basics": {
+  "en": "Basics",
+  "ko": "기본 정보"
+ },
+ "calendarComponentsApp.calendarAI.agentic.onboarding.type.collective": {
+  "en": "Collective",
+  "ko": "공동 예약"
+ },
+ "campaign.regulatoryBundle.a2p.options.jobPosition.gm": {
+  "en": "GM",
+  "ko": "총괄 관리자(GM)"
+ },
+ "clientPortalBuilder.accessGroups.add.counts": {
+  "en": "1 contact · {selected} selected | {count} contacts · {selected} selected",
+  "ko": "연락처 1명 · {selected}명 선택됨 | 연락처 {count}명 · {selected}명 선택됨"
+ },
+ "clientPortalBuilder.accessGroups.add.csvHelp": {
+  "en": "Needs an email column. An optional access_ends column sets each client's end date.",
+  "ko": "email 열이 필요합니다. 선택 항목인 access_ends 열로 클라이언트별 종료일을 지정할 수 있습니다."
+ },
+ "clientPortalBuilder.accessGroups.add.matched": {
+  "en": "{found} of {total} emails match a contact",
+  "ko": "이메일 {total}개 중 {found}개가 연락처와 일치합니다"
+ },
+ "clientPortalBuilder.accessGroups.addCount": {
+  "en": "Add {count}",
+  "ko": "{count}명 추가"
+ },
+ "clientPortalBuilder.accessGroups.addPeople": {
+  "en": "Add clients",
+  "ko": "클라이언트 추가"
+ },
+ "clientPortalBuilder.accessGroups.addedVia.workflowRan": {
+  "en": "Workflow ran",
+  "ko": "워크플로우 실행됨"
+ },
+ "clientPortalBuilder.accessGroups.board.addAll": {
+  "en": "Add all",
+  "ko": "모두 추가"
+ },
+ "clientPortalBuilder.accessGroups.board.only": {
+  "en": "Only {role}",
+  "ko": "{role}만"
+ },
+ "clientPortalBuilder.accessGroups.confirmBody": {
+  "en": "This applies right away to everyone in this role, including people added later.",
+  "ko": "이 역할의 모든 사람에게 즉시 적용되며, 나중에 추가되는 사람도 포함됩니다."
+ },
+ "clientPortalBuilder.accessGroups.confirmTitle": {
+  "en": "Update access for {members}?",
+  "ko": "{members}의 접근 권한을 업데이트하시겠습니까?"
+ },
+ "clientPortalBuilder.accessGroups.createFlow.nameHelp": {
+  "en": "Name it the way you'd say it out loud, like Students or VIP.",
+  "ko": "평소에 부르는 이름 그대로 지으세요(예: 수강생, VIP)."
+ },
+ "clientPortalBuilder.accessGroups.createFlow.previewSummary": {
+  "en": "{clients} · nothing unlocked yet",
+  "ko": "{clients} · 아직 열린 항목 없음"
+ },
+ "clientPortalBuilder.accessGroups.deleteDescriptionOne": {
+  "en": "1 client will lose the access this role gives them. This cannot be undone.",
+  "ko": "클라이언트 1명이 이 역할로 받은 접근 권한을 잃게 됩니다. 이 작업은 되돌릴 수 없습니다."
+ },
+ "clientPortalBuilder.accessGroups.discard": {
+  "en": "Discard",
+  "ko": "삭제"
+ },
+ "clientPortalBuilder.accessGroups.edit": {
+  "en": "Edit",
+  "ko": "편집"
+ },
+ "clientPortalBuilder.accessGroups.empty.persona.student": {
+  "en": "Student",
+  "ko": "수강생"
+ },
+ "clientPortalBuilder.accessGroups.empty.persona.teacher": {
+  "en": "Teacher",
+  "ko": "강사"
+ },
+ "clientPortalBuilder.accessGroups.empty.session.intro.when": {
+  "en": "15 min",
+  "ko": "15분"
+ },
+ "clientPortalBuilder.accessGroups.empty.session.mock.when": {
+  "en": "45 min",
+  "ko": "45분"
+ },
+ "clientPortalBuilder.accessGroups.empty.step.clients.body": {
+  "en": "By hand, or with a workflow",
+  "ko": "직접 또는 워크플로우로"
+ },
+ "clientPortalBuilder.accessGroups.endDate": {
+  "en": "End date",
+  "ko": "종료일"
+ },
+ "clientPortalBuilder.accessGroups.itemAdded": {
+  "en": "{count} added",
+  "ko": "{count}개 추가됨"
+ },
+ "clientPortalBuilder.accessGroups.joinWorkflowBody": {
+  "en": "Use the add and remove actions for roles in any workflow.",
+  "ko": "모든 워크플로우에서 역할 추가·제거 액션을 사용할 수 있습니다."
+ },
+ "clientPortalBuilder.accessGroups.memberMany": {
+  "en": "{count} clients",
+  "ko": "클라이언트 {count}명"
+ },
+ "clientPortalBuilder.accessGroups.menu.automatically": {
+  "en": "Automatically",
+  "ko": "자동으로"
+ },
+ "clientPortalBuilder.accessGroups.menu.workflow.body": {
+  "en": "Add clients when a form is submitted, a payment succeeds or a tag is added",
+  "ko": "폼 제출, 결제 성공, 태그 추가 시 클라이언트를 추가합니다"
+ },
+ "clientPortalBuilder.accessGroups.menu.yourself": {
+  "en": "Yourself",
+  "ko": "직접"
+ },
+ "clientPortalBuilder.accessGroups.moreCount": {
+  "en": "+{count} more",
+  "ko": "+{count}개 더 보기"
+ },
+ "clientPortalBuilder.accessGroups.nameFirst": {
+  "en": "Name the role to choose what it unlocks.",
+  "ko": "역할 이름을 정해야 무엇을 열지 선택할 수 있습니다."
+ },
+ "clientPortalBuilder.accessGroups.noMembers": {
+  "en": "No clients yet",
+  "ko": "아직 클라이언트가 없습니다"
+ },
+ "clientPortalBuilder.accessGroups.opens": {
+  "en": "Resources",
+  "ko": "리소스"
+ },
+ "clientPortalBuilder.accessGroups.opensNothingShort": {
+  "en": "No resources yet",
+  "ko": "아직 리소스가 없습니다"
+ },
+ "clientPortalBuilder.accessGroups.opensNothingTitle": {
+  "en": "This role doesn't open anything yet.",
+  "ko": "이 역할로 열리는 항목이 아직 없습니다."
+ },
+ "clientPortalBuilder.accessGroups.optional": {
+  "en": "(optional)",
+  "ko": "(선택)"
+ },
+ "clientPortalBuilder.accessGroups.pagesMissing": {
+  "en": "{count} restricted pages are no longer in the published project",
+  "ko": "제한된 페이지 {count}개가 게시된 프로젝트에 더 이상 없습니다"
+ },
+ "clientPortalBuilder.accessGroups.removeNote": {
+  "en": "Removing someone takes away what {group} opens, unless another role of theirs opens it too.",
+  "ko": "제거하면 {group}(으)로 열리던 항목에 더 이상 접근할 수 없습니다. 단, 다른 역할로도 열리는 항목은 그대로 유지됩니다."
+ },
+ "clientPortalBuilder.accessGroups.rowsPerPage": {
+  "en": "Rows per page",
+  "ko": "페이지당 행 수"
+ },
+ "clientPortalBuilder.accessGroups.searchContacts": {
+  "en": "Type a name, email or phone",
+  "ko": "이름, 이메일 또는 전화번호 입력"
+ },
+ "clientPortalBuilder.accessGroups.showSelected": {
+  "en": "Show: Selected",
+  "ko": "표시: 선택됨"
+ },
+ "clientPortalBuilder.accessGroups.showUnselected": {
+  "en": "Show: Not selected",
+  "ko": "표시: 선택 안 됨"
+ },
+ "clientPortalBuilder.accessGroups.since": {
+  "en": "Since",
+  "ko": "시작일"
+ },
+ "clientPortalBuilder.accessGroups.soon": {
+  "en": "Soon",
+  "ko": "출시 예정"
+ },
+ "clientPortalBuilder.accessGroups.startFromTemplate": {
+  "en": "Or start from a template",
+  "ko": "또는 템플릿으로 시작"
+ },
+ "clientPortalBuilder.accessGroups.statGroups": {
+  "en": "Roles",
+  "ko": "역할"
+ },
+ "clientPortalBuilder.accessGroups.tpl.teachers.name": {
+  "en": "Teachers",
+  "ko": "강사"
+ },
+ "clientPortalBuilder.accessGroups.tplGoldDesc": {
+  "en": "Everything your top tier unlocks",
+  "ko": "최상위 등급에서 열리는 모든 항목"
+ },
+ "clientPortalBuilder.accessGroups.unlocks": {
+  "en": "Unlocks",
+  "ko": "열리는 항목"
+ },
+ "clientPortalBuilder.accessGroups.updatedDaysAgo": {
+  "en": "{count} days ago",
+  "ko": "{count}일 전"
+ },
+ "clientPortalBuilder.accessGroups.updatedToday": {
+  "en": "Today",
+  "ko": "오늘"
+ },
+ "clientPortalBuilder.accessGroups.viewAs": {
+  "en": "View as {name}",
+  "ko": "{name}(으)로 보기"
+ },
+ "clientPortalBuilder.accessGroups.willExclude": {
+  "en": "{names} will be removed from this role",
+  "ko": "{names} 님이 이 역할에서 제거됩니다"
+ },
+ "clientPortalBuilder.accessGroups.willOpen": {
+  "en": "Adding",
+  "ko": "추가할 항목"
+ },
+ "clientPortalBuilder.emailSettings.preferenceTemplate.courses.groups.liveSessionEmail.adminReminder": {
+  "en": "Live Session Reminder (Admin)",
+  "ko": "라이브 세션 알림(관리자)"
+ },
+ "clientPortalBuilder.emailSettings.preferenceTemplate.courses.groups.liveSessionEmail.description": {
+  "en": "Notify members and admins about live session and session series activity.",
+  "ko": "라이브 세션 및 세션 시리즈 활동을 회원과 관리자에게 알립니다."
+ },
+ "clientPortalBuilder.emailSettings.preferenceTemplate.courses.groups.liveSessionEmail.recordingReady": {
+  "en": "Recording Ready (Admin)",
+  "ko": "녹화본 준비 완료(관리자)"
+ },
+ "clientPortalBuilder.emailSettings.preferenceTemplate.courses.groups.liveSessionEmail.seriesCancelled": {
+  "en": "Session Series Cancelled",
+  "ko": "세션 시리즈 취소됨"
+ },
+ "clientPortalBuilder.emailSettings.preferenceTemplate.courses.groups.liveSessionEmail.seriesCreated": {
+  "en": "Session Series Created",
+  "ko": "세션 시리즈 생성됨"
+ },
+ "clientPortalBuilder.emailSettings.preferenceTemplate.courses.groups.liveSessionEmail.seriesUpdated": {
+  "en": "Session Series Updated",
+  "ko": "세션 시리즈 업데이트됨"
+ },
+ "clientPortalBuilder.emailSettings.preferenceTemplate.courses.groups.liveSessionEmail.sessionCancelled": {
+  "en": "Live Session Cancelled",
+  "ko": "라이브 세션 취소됨"
+ },
+ "clientPortalBuilder.emailSettings.preferenceTemplate.courses.groups.liveSessionEmail.sessionCreated": {
+  "en": "New Live Session",
+  "ko": "새 라이브 세션"
+ },
+ "clientPortalBuilder.emailSettings.preferenceTemplate.courses.groups.liveSessionEmail.sessionReminder": {
+  "en": "Live Session Reminder",
+  "ko": "라이브 세션 알림"
+ },
+ "clientPortalBuilder.emailSettings.preferenceTemplate.courses.groups.liveSessionEmail.sessionStarted": {
+  "en": "Live Session Started",
+  "ko": "라이브 세션 시작됨"
+ },
+ "clientPortalBuilder.emailSettings.preferenceTemplate.courses.groups.liveSessionEmail.sessionUpdated": {
+  "en": "Live Session Updated",
+  "ko": "라이브 세션 업데이트됨"
+ },
+ "clientPortalBuilder.emailSettings.preferenceTemplate.courses.groups.liveSessionEmail.title": {
+  "en": "Live Sessions",
+  "ko": "라이브 세션"
+ },
+ "common.misc.lc": {
+  "en": "LC",
+  "ko": "하이퍼클래스"
+ },
+ "contactsApp.listView.enrich.button": {
+  "en": "Enrich",
+  "ko": "정보 보강"
+ },
+ "copilotApp.copilot.askAi.artifacts.fileCard.typeFallback": {
+  "en": "FILE",
+  "ko": "파일"
+ },
+ "copilotApp.copilot.askAi.settings.title": {
+  "en": "SETTINGS",
+  "ko": "설정"
+ },
+ "crmObjectsSettingsApp.config.operation.enrich-contacts": {
+  "en": "Enrich contacts",
+  "ko": "연락처 정보 보강"
+ },
+ "crmObjectsSettingsApp.customFields.new": {
+  "en": "New",
+  "ko": "신규"
+ },
+ "desktopCustomizerApp.form.subtitleLabel": {
+  "en": "Subtitle",
+  "ko": "부제목"
+ },
+ "desktopCustomizerApp.preview.labelSubtitle": {
+  "en": "Subtitle",
+  "ko": "부제목"
+ },
+ "desktopCustomizerApp.theme.gradientEnd": {
+  "en": "End",
+  "ko": "끝"
+ },
+ "desktopCustomizerApp.theme.presets.amber": {
+  "en": "Amber",
+  "ko": "앰버"
+ },
+ "desktopCustomizerApp.theme.presets.ocean": {
+  "en": "Ocean",
+  "ko": "오션"
+ },
+ "formSurveyApp.list.quizList.pageHeader.features.tier": {
+  "en": "TIER",
+  "ko": "등급"
+ },
+ "funnelWebsiteDomainApp.aria.customXmlSitemapMappings": {
+  "en": "Custom XML sitemap mappings",
+  "ko": "커스텀 XML 사이트맵 매핑"
+ },
+ "funnelWebsiteDomainApp.aria.deleteDomainConfirmation": {
+  "en": "Delete domain confirmation",
+  "ko": "도메인 삭제 확인"
+ },
+ "funnelWebsiteDomainApp.aria.domainsList": {
+  "en": "Domains list",
+  "ko": "도메인 목록"
+ },
+ "funnelWebsiteDomainApp.aria.editCustomPath": {
+  "en": "Edit custom path",
+  "ko": "커스텀 경로 편집"
+ },
+ "funnelWebsiteDomainApp.aria.modalActions": {
+  "en": "Modal actions",
+  "ko": "모달 작업"
+ },
+ "funnelWebsiteDomainApp.aria.selectPage": {
+  "en": "Select {pageName}",
+  "ko": "{pageName} 선택"
+ },
+ "funnelWebsiteDomainApp.common.add": {
+  "en": "Add",
+  "ko": "추가"
+ },
+ "funnelWebsiteDomainApp.common.adding": {
+  "en": "Adding...",
+  "ko": "추가하는 중..."
+ },
+ "funnelWebsiteDomainApp.common.back": {
+  "en": "Back",
+  "ko": "뒤로"
+ },
+ "funnelWebsiteDomainApp.common.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "funnelWebsiteDomainApp.common.clearSearch": {
+  "en": "Clear search",
+  "ko": "검색 지우기"
+ },
+ "funnelWebsiteDomainApp.common.delete": {
+  "en": "Delete",
+  "ko": "삭제"
+ },
+ "funnelWebsiteDomainApp.common.domain": {
+  "en": "Domain",
+  "ko": "도메인"
+ },
+ "funnelWebsiteDomainApp.common.edit": {
+  "en": "Edit",
+  "ko": "편집"
+ },
+ "funnelWebsiteDomainApp.common.emptySearchText": {
+  "en": "Your search “{searchTerm}” did not match any Domain. Please try again.",
+  "ko": "검색어 “{searchTerm}”와(과) 일치하는 도메인이 없습니다. 다시 시도하세요."
+ },
+ "funnelWebsiteDomainApp.common.emptyText": {
+  "en": "Ooh...it's empty in here!",
+  "ko": "아직 아무것도 없습니다!"
+ },
+ "funnelWebsiteDomainApp.common.generate": {
+  "en": "Generate",
+  "ko": "생성"
+ },
+ "funnelWebsiteDomainApp.common.generating": {
+  "en": "Generating...",
+  "ko": "생성 중..."
+ },
+ "funnelWebsiteDomainApp.common.lastUpdated": {
+  "en": "Last Updated",
+  "ko": "최근 수정"
+ },
+ "funnelWebsiteDomainApp.common.linkDomain": {
+  "en": "Link Domain",
+  "ko": "도메인 연결"
+ },
+ "funnelWebsiteDomainApp.common.linking": {
+  "en": "Linking...",
+  "ko": "연결 중..."
+ },
+ "funnelWebsiteDomainApp.common.name": {
+  "en": "Name",
+  "ko": "이름"
+ },
+ "funnelWebsiteDomainApp.common.noDomainsFound": {
+  "en": "No domains found",
+  "ko": "도메인을 찾을 수 없습니다"
+ },
+ "funnelWebsiteDomainApp.common.noFunnelLookupsFound": {
+  "en": "Funnel Lookups not found!",
+  "ko": "퍼널 조회 결과가 없습니다"
+ },
+ "funnelWebsiteDomainApp.common.okay": {
+  "en": "Okay",
+  "ko": "확인"
+ },
+ "funnelWebsiteDomainApp.common.proceed": {
+  "en": "Proceed",
+  "ko": "계속"
+ },
+ "funnelWebsiteDomainApp.common.save": {
+  "en": "Save",
+  "ko": "저장"
+ },
+ "funnelWebsiteDomainApp.common.saving": {
+  "en": "Saving...",
+  "ko": "저장 중..."
+ },
+ "funnelWebsiteDomainApp.common.step": {
+  "en": "Step {stepNumber}",
+  "ko": "{stepNumber}단계"
+ },
+ "funnelWebsiteDomainApp.errors.attachDomainFailed": {
+  "en": "Attach domain Failed!",
+  "ko": "도메인 연결에 실패했습니다"
+ },
+ "funnelWebsiteDomainApp.errors.cNameNotFound": {
+  "en": "Couldn't find a CNAME/A record pointing {subdomain} to {cnameRedirectURL}/{serverIPAddress}",
+  "ko": "{subdomain} 을(를) {cnameRedirectURL}/{serverIPAddress} 로 연결하는 CNAME/A 레코드를 찾을 수 없습니다"
+ },
+ "funnelWebsiteDomainApp.errors.domainAlreadyExists": {
+  "en": "Domain with same name already exists!",
+  "ko": "같은 이름의 도메인이 이미 존재합니다"
+ },
+ "funnelWebsiteDomainApp.errors.domainAlreadyExistsInOtherLocation": {
+  "en": "Domain with same name already exists with other account!",
+  "ko": "같은 이름의 도메인이 이미 다른 계정에 존재합니다"
+ },
+ "funnelWebsiteDomainApp.errors.domainNameLimitError": {
+  "en": "Domain name cannot exceed 63 characters!",
+  "ko": "도메인 이름은 63자를 초과할 수 없습니다"
+ },
+ "funnelWebsiteDomainApp.errors.invalidDomain": {
+  "en": "Invalid domain!",
+  "ko": "유효하지 않은 도메인입니다"
+ },
+ "funnelWebsiteDomainApp.errors.llmsTxtTruncated": {
+  "en": "Content beyond the {max}-character limit was removed from the end.",
+  "ko": "{max}자 제한을 넘는 내용은 끝에서부터 삭제되었습니다."
+ },
+ "funnelWebsiteDomainApp.errors.somethingWentWrong": {
+  "en": "Something went wrong while deleting domain!",
+  "ko": "도메인을 삭제하는 중 문제가 발생했습니다"
+ },
+ "funnelWebsiteDomainApp.errors.urlInvalid": {
+  "en": "URL seems invalid",
+  "ko": "URL이 유효하지 않은 것 같습니다"
+ },
+ "funnelWebsiteDomainApp.header.addNewDomain": {
+  "en": "Add New Domain",
+  "ko": "새 도메인 추가"
+ },
+ "funnelWebsiteDomainApp.header.domains": {
+  "en": "Domains",
+  "ko": "도메인"
+ },
+ "funnelWebsiteDomainApp.header.needHelp": {
+  "en": "Need Help configuring domain?",
+  "ko": "도메인 설정에 도움이 필요하신가요?"
+ },
+ "funnelWebsiteDomainApp.migrations.benefit1": {
+  "en": "Funnels & websites are now 15% faster than before.",
+  "ko": "퍼널과 웹사이트가 이전보다 15% 빨라졌습니다."
+ },
+ "funnelWebsiteDomainApp.migrations.benefit2": {
+  "en": "Better caching of pages, easy prevention of DDoS attacks.",
+  "ko": "페이지 캐싱 개선 및 DDoS 공격 방지가 쉬워졌습니다."
+ },
+ "funnelWebsiteDomainApp.migrations.benefit3": {
+  "en": "More added security features.",
+  "ko": "추가 보안 기능이 강화되었습니다."
+ },
+ "funnelWebsiteDomainApp.migrations.button": {
+  "en": "Migrate domain",
+  "ko": "도메인 마이그레이션"
+ },
+ "funnelWebsiteDomainApp.migrations.header": {
+  "en": "Migration is recommended for this domain",
+  "ko": "이 도메인은 마이그레이션을 권장합니다"
+ },
+ "funnelWebsiteDomainApp.migrations.info": {
+  "en": "Migration needed",
+  "ko": "마이그레이션 필요"
+ },
+ "funnelWebsiteDomainApp.migrations.listBenefits": {
+  "en": "Here are some benefits:",
+  "ko": "다음과 같은 이점이 있습니다:"
+ },
+ "funnelWebsiteDomainApp.migrations.setupInstruction": {
+  "en": "Setup instruction",
+  "ko": "설정 안내"
+ },
+ "funnelWebsiteDomainApp.modals.addDomain": {
+  "en": "Add Domain",
+  "ko": "도메인 추가"
+ },
+ "funnelWebsiteDomainApp.modals.addDomainNote": {
+  "en": "Note: Please make sure to have either an A record pointing to <code>{serverIPAddress}</code> or a CNAME record pointing to <code>{cnameRedirectURL}</code> for <code>{subDomain}</code> in domain ({rootDomain})",
+  "ko": "참고: 도메인({rootDomain})에 <code>{subDomain}</code> 에 대해 <code>{serverIPAddress}</code> 를 가리키는 A 레코드 또는 <code>{cnameRedirectURL}</code> 를 가리키는 CNAME 레코드가 있는지 확인하세요"
+ },
+ "funnelWebsiteDomainApp.modals.addNew": {
+  "en": "Add new",
+  "ko": "새로 추가"
+ },
+ "funnelWebsiteDomainApp.modals.addYourOwnDomain": {
+  "en": "Add your own domain",
+  "ko": "내 도메인 추가"
+ },
+ "funnelWebsiteDomainApp.modals.additionalOptions": {
+  "en": "Additional options",
+  "ko": "추가 옵션"
+ },
+ "funnelWebsiteDomainApp.modals.customPath": {
+  "en": "Custom Path",
+  "ko": "커스텀 경로"
+ },
+ "funnelWebsiteDomainApp.modals.customXmlSitemap": {
+  "en": "Custom XML sitemap",
+  "ko": "커스텀 XML 사이트맵"
+ },
+ "funnelWebsiteDomainApp.modals.defaultErrorPageInfo": {
+  "en": "Specify the page to which your visitors will be redirected when they access an invalid URL on your domain.",
+  "ko": "방문자가 도메인에서 유효하지 않은 URL에 접속했을 때 이동할 페이지를 지정하세요."
+ },
+ "funnelWebsiteDomainApp.modals.defaultPage": {
+  "en": "Default Page",
+  "ko": "기본 페이지"
+ },
+ "funnelWebsiteDomainApp.modals.defaultPageInfo": {
+  "en": "Specify the page to which your visitors will be redirected when they access the root path of the domain.",
+  "ko": "방문자가 도메인의 루트 경로에 접속했을 때 이동할 페이지를 지정하세요."
+ },
+ "funnelWebsiteDomainApp.modals.doYouWantToDelete": {
+  "en": "Do you want to delete {item}?",
+  "ko": "{item} 을(를) 삭제하시겠습니까?"
+ },
+ "funnelWebsiteDomainApp.modals.domainAddedSuccessFully": {
+  "en": "Congratulations! You can now connect {domainUrl} with a Product",
+  "ko": "축하합니다! 이제 {domainUrl} 을(를) 상품과 연결할 수 있습니다"
+ },
+ "funnelWebsiteDomainApp.modals.lastModified": {
+  "en": "Last modified",
+  "ko": "마지막 수정"
+ },
+ "funnelWebsiteDomainApp.modals.linkDomainWithFunnel": {
+  "en": "Link domain with funnel",
+  "ko": "도메인을 퍼널과 연결"
+ },
+ "funnelWebsiteDomainApp.modals.needHelpConfiguring": {
+  "en": "Need Help configuring root domain?",
+  "ko": "루트 도메인 설정에 도움이 필요하신가요?"
+ },
+ "funnelWebsiteDomainApp.modals.redirectModalText": {
+  "en": "This domain has redirect urls linked to it. Please delete the redirects before deleting the domain.",
+  "ko": "이 도메인에 연결된 리디렉션 URL이 있습니다. 도메인을 삭제하기 전에 리디렉션을 먼저 삭제하세요."
+ },
+ "funnelWebsiteDomainApp.modals.robotsTxtCode": {
+  "en": "Robots.txt code",
+  "ko": "Robots.txt 코드"
+ },
+ "funnelWebsiteDomainApp.modals.selectDefaultFunnelStep": {
+  "en": "Set default funnel step",
+  "ko": "기본 퍼널 단계 설정"
+ },
+ "funnelWebsiteDomainApp.modals.selectDefaultPage": {
+  "en": "Select a page for root URL",
+  "ko": "루트 URL에 사용할 페이지 선택"
+ },
+ "funnelWebsiteDomainApp.modals.selectFunnelForSiteMap": {
+  "en": "Select the funnels you want to add to XML sitemap",
+  "ko": "XML 사이트맵에 추가할 퍼널을 선택하세요"
+ },
+ "funnelWebsiteDomainApp.modals.setDefault404": {
+  "en": "Set default 404/Error Page",
+  "ko": "기본 404/오류 페이지 설정"
+ },
+ "funnelWebsiteDomainApp.modals.takeMeToRedirects": {
+  "en": "Take me to Redirects page",
+  "ko": "리디렉션 페이지로 이동"
+ },
+ "funnelWebsiteDomainApp.modals.urlsUpdated": {
+  "en": "Some of the URLs in the funnel might have been updated due to duplicate urls.",
+  "ko": "중복 URL 때문에 퍼널의 일부 URL이 변경되었을 수 있습니다."
+ },
+ "funnelWebsiteDomainApp.modals.watchThisVideo": {
+  "en": "Watch this How-To Video",
+  "ko": "사용 방법 영상 보기"
+ },
+ "funnelWebsiteDomainApp.modals.xmlSiteMap": {
+  "en": "XML sitemap",
+  "ko": "XML 사이트맵"
+ },
+ "funnelWebsiteDomainApp.modals.xmlSuccessText": {
+  "en": "You have now created XML Site for this domain, Meant for consumption by search engines. You can find more information on",
+  "ko": "이 도메인의 XML 사이트맵을 만들었습니다. 검색 엔진이 읽을 수 있도록 제공됩니다. 자세한 내용은 다음에서 확인하세요:"
+ },
+ "funnelWebsiteDomainApp.placeHolders.addLlmsTxt": {
+  "en": "Add llms.txt content for this domain",
+  "ko": "이 도메인의 llms.txt 내용을 입력하세요"
+ },
+ "funnelWebsiteDomainApp.placeHolders.addRobotsTxtCode": {
+  "en": "Add robots.txt code for this domain",
+  "ko": "이 도메인의 robots.txt 코드를 입력하세요"
+ },
+ "funnelWebsiteDomainApp.placeHolders.searchForDomain": {
+  "en": "Search for domains",
+  "ko": "도메인 검색"
+ },
+ "funnelWebsiteDomainApp.placeHolders.selectDefaultFunnelStepForDomain": {
+  "en": "Select default funnel step for Domain",
+  "ko": "도메인의 기본 퍼널 단계 선택"
+ },
+ "funnelWebsiteDomainApp.placeHolders.selectErrorPage": {
+  "en": "Select a error page for root URL",
+  "ko": "루트 URL에 사용할 오류 페이지 선택"
+ },
+ "funnelWebsiteDomainApp.placeHolders.selectErrorPageForDomain": {
+  "en": "Select default 404/Error Page for Domain",
+  "ko": "도메인의 기본 404/오류 페이지 선택"
+ },
+ "funnelWebsiteDomainApp.placeHolders.selectFunnelForDomain": {
+  "en": "Select Funnel for Domain",
+  "ko": "도메인에 연결할 퍼널 선택"
+ },
+ "funnelWebsiteDomainApp.warning.regexRedirectExists": {
+  "en": "This domain is redirected to {domain}",
+  "ko": "이 도메인은 {domain} 으로 리디렉션됩니다"
+ },
+ "funnelWebsiteDomainApp.warning.requestInProgress": {
+  "en": "Request in Progress...",
+  "ko": "요청 처리 중..."
+ },
+ "locationsApp.bulkActions.enable": {
+  "en": "Enable",
+  "ko": "켜기"
+ },
+ "locationsApp.bulkActions.updatingSubAccounts": {
+  "en": "Updating {count} sub-accounts.",
+  "ko": "서브 계정 {count}개를 업데이트하는 중입니다."
+ },
+ "locationsApp.cancelRequestDescription": {
+  "en": "The receiving Agency will no longer see this transfer request, and the Sub-Account {name} will not be transferred.",
+  "ko": "받는 에이전시에서 더 이상 이 이전 요청을 볼 수 없으며, 서브 계정 {name} 은(는) 이전되지 않습니다."
+ },
+ "locationsApp.createPost.descriptionValidation": {
+  "en": "Description is required",
+  "ko": "설명은 필수입니다"
+ },
+ "locationsApp.createSubAccountV2.businessStep.subtitleAgency": {
+  "en": "We filled this in from your agency’s profile. Check it and edit anything that’s wrong.",
+  "ko": "에이전시 프로필 정보로 채웠습니다. 확인하고 틀린 내용이 있으면 수정하세요."
+ },
+ "locationsApp.createSubAccountV2.businessStep.subtitleGoogle": {
+  "en": "We filled this in from Google. Check it, or finish it later in setup.",
+  "ko": "Google 정보로 채웠습니다. 확인하거나 나중에 설정에서 마무리하세요."
+ },
+ "locationsApp.createSubAccountV2.businessStep.subtitleManual": {
+  "en": "Where the business is and how to reach it. Add what you know, or finish it later in setup.",
+  "ko": "업체 위치와 연락 방법입니다. 아는 내용을 입력하거나 나중에 설정에서 마무리하세요."
+ },
+ "locationsApp.createSubAccountV2.businessStep.title": {
+  "en": "Business details",
+  "ko": "업체 정보"
+ },
+ "locationsApp.createSubAccountV2.creating.createdFromAgency": {
+  "en": "Created the sub-account with your agency’s details",
+  "ko": "에이전시 정보로 서브 계정을 만들었습니다"
+ },
+ "locationsApp.createSubAccountV2.creating.createdFromGoogle": {
+  "en": "Created the sub-account with details from Google",
+  "ko": "Google 정보로 서브 계정을 만들었습니다"
+ },
+ "locationsApp.createSubAccountV2.creating.createdManual": {
+  "en": "Created the sub-account with details provided",
+  "ko": "입력한 정보로 서브 계정을 만들었습니다"
+ },
+ "locationsApp.createSubAccountV2.creating.createdWithSnapshot": {
+  "en": "Created the sub-account with your snapshot",
+  "ko": "스냅샷으로 서브 계정을 만들었습니다"
+ },
+ "locationsApp.createSubAccountV2.creating.creatingSubAccount": {
+  "en": "Creating the sub-account",
+  "ko": "서브 계정을 만드는 중"
+ },
+ "locationsApp.createSubAccountV2.creating.inviteExists": {
+  "en": "Invite not sent: this email already belongs to your agency team",
+  "ko": "초대를 보내지 않았습니다: 이 이메일은 이미 에이전시 팀에 등록되어 있습니다"
+ },
+ "locationsApp.createSubAccountV2.creating.inviteFailed": {
+  "en": "Couldn’t send {name} an invite",
+  "ko": "{name} 님에게 초대를 보내지 못했습니다"
+ },
+ "locationsApp.createSubAccountV2.creating.inviteLinked": {
+  "en": "Gave {name} access",
+  "ko": "{name} 님에게 접근 권한을 부여했습니다"
+ },
+ "locationsApp.createSubAccountV2.creating.inviteSending": {
+  "en": "Sending {name} an invite",
+  "ko": "{name} 님에게 초대를 보내는 중"
+ },
+ "locationsApp.createSubAccountV2.creating.inviteSent": {
+  "en": "Sent {name} an invite",
+  "ko": "{name} 님에게 초대를 보냈습니다"
+ },
+ "locationsApp.createSubAccountV2.creating.launchpad": {
+  "en": "Launchpad set up for {needs}",
+  "ko": "{needs}용 런치패드 설정 완료"
+ },
+ "locationsApp.createSubAccountV2.creating.progressLabel": {
+  "en": "Create progress",
+  "ko": "생성 진행 상황"
+ },
+ "locationsApp.createSubAccountV2.creating.setup": {
+  "en": "Setting up the workspace",
+  "ko": "작업 공간을 설정하는 중"
+ },
+ "locationsApp.createSubAccountV2.creating.subtitle": {
+  "en": "This takes a few seconds.",
+  "ko": "몇 초 정도 걸립니다."
+ },
+ "locationsApp.createSubAccountV2.creating.title": {
+  "en": "Creating {name}",
+  "ko": "{name} 만드는 중"
+ },
+ "locationsApp.createSubAccountV2.creating.titleIndustry": {
+  "en": "Setting up {name}",
+  "ko": "{name} 설정 중"
+ },
+ "locationsApp.createSubAccountV2.creating.tools": {
+  "en": "Tools for {needs}",
+  "ko": "{needs}용 도구"
+ },
+ "locationsApp.createSubAccountV2.details.fields.address": {
+  "en": "Address",
+  "ko": "주소"
+ },
+ "locationsApp.createSubAccountV2.details.fields.addressPlaceholder": {
+  "en": "e.g. 2400 S Lamar Blvd",
+  "ko": "예: 2400 S Lamar Blvd"
+ },
+ "locationsApp.createSubAccountV2.details.fields.city": {
+  "en": "City",
+  "ko": "도시"
+ },
+ "locationsApp.createSubAccountV2.details.fields.cityPlaceholder": {
+  "en": "e.g. Austin",
+  "ko": "예: Austin"
+ },
+ "locationsApp.createSubAccountV2.details.fields.country": {
+  "en": "Country",
+  "ko": "국가"
+ },
+ "locationsApp.createSubAccountV2.details.fields.countryPlaceholder": {
+  "en": "Choose a country",
+  "ko": "국가 선택"
+ },
+ "locationsApp.createSubAccountV2.details.fields.email": {
+  "en": "Email",
+  "ko": "이메일"
+ },
+ "locationsApp.createSubAccountV2.details.fields.emailPlaceholder": {
+  "en": "e.g. maya{'@'}smiledental.com",
+  "ko": "예: maya{'@'}smiledental.com"
+ },
+ "locationsApp.createSubAccountV2.details.fields.firstName": {
+  "en": "First name",
+  "ko": "이름"
+ },
+ "locationsApp.createSubAccountV2.details.fields.lastName": {
+  "en": "Last name",
+  "ko": "성"
+ },
+ "locationsApp.createSubAccountV2.details.fields.lastNamePlaceholder": {
+  "en": "e.g. Patel",
+  "ko": "예: Patel"
+ },
+ "locationsApp.createSubAccountV2.details.fields.name": {
+  "en": "Name",
+  "ko": "이름"
+ },
+ "locationsApp.createSubAccountV2.details.fields.namePlaceholder": {
+  "en": "e.g. Smile Dental",
+  "ko": "예: Smile Dental"
+ },
+ "locationsApp.createSubAccountV2.details.fields.niche": {
+  "en": "Business category",
+  "ko": "업종"
+ },
+ "locationsApp.createSubAccountV2.details.fields.phone": {
+  "en": "Phone",
+  "ko": "전화번호"
+ },
+ "locationsApp.createSubAccountV2.details.fields.postalCode": {
+  "en": "Zip code",
+  "ko": "우편번호"
+ },
+ "locationsApp.createSubAccountV2.details.fields.sampleData": {
+  "en": "Include sample data in this sub-account",
+  "ko": "이 서브 계정에 샘플 데이터 포함"
+ },
+ "locationsApp.createSubAccountV2.details.fields.timezone": {
+  "en": "Time zone",
+  "ko": "시간대"
+ },
+ "locationsApp.createSubAccountV2.details.fields.timezonePlaceholder": {
+  "en": "Choose a time zone",
+  "ko": "시간대 선택"
+ },
+ "locationsApp.createSubAccountV2.details.fields.website": {
+  "en": "Website",
+  "ko": "웹사이트"
+ },
+ "locationsApp.createSubAccountV2.invitePreview.failed": {
+  "en": "We couldn't load the email preview.",
+  "ko": "이메일 미리보기를 불러오지 못했습니다."
+ },
+ "locationsApp.createSubAccountV2.invitePreview.from": {
+  "en": "From",
+  "ko": "보낸 사람"
+ },
+ "locationsApp.createSubAccountV2.invitePreview.notSent": {
+  "en": "New-user emails are turned off for your agency, so {name} won't get this email.",
+  "ko": "에이전시에서 신규 사용자 이메일이 꺼져 있어 {name} 님은 이 이메일을 받지 않습니다."
+ },
+ "locationsApp.createSubAccountV2.invitePreview.retry": {
+  "en": "Try again",
+  "ko": "다시 시도"
+ },
+ "locationsApp.createSubAccountV2.invitePreview.subtitle": {
+  "en": "The email {name} gets when you create {business}. Every new client gets this same welcome email.",
+  "ko": "{business} 을(를) 만들 때 {name} 님이 받는 이메일입니다. 모든 신규 고객이 같은 환영 이메일을 받습니다."
+ },
+ "locationsApp.createSubAccountV2.invitePreview.subtitleNoBusiness": {
+  "en": "The email {name} gets when you create the sub-account. Every new client gets this same welcome email.",
+  "ko": "서브 계정을 만들 때 {name} 님이 받는 이메일입니다. 모든 신규 고객이 같은 환영 이메일을 받습니다."
+ },
+ "locationsApp.createSubAccountV2.invitePreview.title": {
+  "en": "Invite email",
+  "ko": "초대 이메일"
+ },
+ "locationsApp.createSubAccountV2.nameStep.agencyTooltip": {
+  "en": "Make this sub-account for your own agency. There’s no client to invite or bill.",
+  "ko": "에이전시 자체용 서브 계정을 만듭니다. 초대하거나 청구할 고객이 없습니다."
+ },
+ "locationsApp.createSubAccountV2.nameStep.clientTooltip": {
+  "en": "Make this sub-account for a client, with an owner you can invite and bill.",
+  "ko": "고객용 서브 계정을 만듭니다. 소유자를 초대하고 요금을 청구할 수 있습니다."
+ },
+ "locationsApp.createSubAccountV2.nameStep.createTag": {
+  "en": "Create \"{name}\"",
+  "ko": "\"{name}\" 생성"
+ },
+ "locationsApp.createSubAccountV2.nameStep.filledFromGoogle": {
+  "en": "Filled from Google.",
+  "ko": "Google 정보로 채웠습니다."
+ },
+ "locationsApp.createSubAccountV2.nameStep.subtitle": {
+  "en": "Search Google to fill this in, or enter it yourself.",
+  "ko": "Google에서 검색해 채우거나 직접 입력하세요."
+ },
+ "locationsApp.createSubAccountV2.nameStep.switchToAgency": {
+  "en": "Switch to agency",
+  "ko": "에이전시로 전환"
+ },
+ "locationsApp.createSubAccountV2.nameStep.tags": {
+  "en": "Tags",
+  "ko": "태그"
+ },
+ "locationsApp.createSubAccountV2.nameStep.tagsHelp": {
+  "en": "Group sub-accounts your way, for example by niche, city or team.",
+  "ko": "틈새 분야·도시·팀 등 원하는 기준으로 서브 계정을 묶으세요."
+ },
+ "locationsApp.createSubAccountV2.nameStep.tagsPlaceholder": {
+  "en": "Add tags",
+  "ko": "태그 추가"
+ },
+ "locationsApp.createSubAccountV2.nameStep.tagsPlaceholderEmpty": {
+  "en": "Type a name to create a tag",
+  "ko": "이름을 입력해 태그를 만드세요"
+ },
+ "locationsApp.createSubAccountV2.nameStep.title": {
+  "en": "Name and category",
+  "ko": "이름 및 업종"
+ },
+ "locationsApp.createSubAccountV2.needsStep.otherDescription": {
+  "en": "Tell us what else they need",
+  "ko": "그 밖에 필요한 것을 알려 주세요"
+ },
+ "locationsApp.createSubAccountV2.needsStep.otherTitle": {
+  "en": "Other",
+  "ko": "기타"
+ },
+ "locationsApp.createSubAccountV2.ownerStep.sendInvite": {
+  "en": "Email {name} an invite now",
+  "ko": "지금 {name} 님에게 초대 이메일 보내기"
+ },
+ "locationsApp.createSubAccountV2.ownerStep.sendInviteNoName": {
+  "en": "Email them an invite now",
+  "ko": "지금 초대 이메일 보내기"
+ },
+ "locationsApp.createSubAccountV2.ownerStep.subtitleNoName": {
+  "en": "The person who runs the business.",
+  "ko": "업체를 운영하는 사람입니다."
+ },
+ "locationsApp.createSubAccountV2.ready.createAnother": {
+  "en": "Create another sub-account",
+  "ko": "서브 계정 하나 더 만들기"
+ },
+ "locationsApp.createSubAccountV2.ready.description": {
+  "en": "Go to {name} to finish setting it up, or create another sub-account.",
+  "ko": "{name} 으로 이동해 설정을 마무리하거나 서브 계정을 하나 더 만드세요."
+ },
+ "locationsApp.createSubAccountV2.ready.goTo": {
+  "en": "Go to {name}",
+  "ko": "{name} 으로 이동"
+ },
+ "locationsApp.createSubAccountV2.ready.title": {
+  "en": "{name} is ready",
+  "ko": "{name} 준비 완료"
+ },
+ "locationsApp.createSubAccountV2.review.agencyPays": {
+  "en": "Your agency pays HighLevel",
+  "ko": "에이전시가 하이퍼클래스에 비용 지불"
+ },
+ "locationsApp.createSubAccountV2.review.agencyPaysDescription": {
+  "en": "Calls, texts, email and AI used in {name} are charged to your agency.",
+  "ko": "{name} 에서 사용한 통화·문자·이메일·AI 비용이 에이전시에 청구됩니다."
+ },
+ "locationsApp.createSubAccountV2.review.billClient": {
+  "en": "Also bill {name} for their usage",
+  "ko": "{name} 에도 사용량 청구"
+ },
+ "locationsApp.createSubAccountV2.review.billClientDescription": {
+  "en": "Charged through your Stripe, with your markup.",
+  "ko": "에이전시 Stripe를 통해 마크업을 더해 청구됩니다."
+ },
+ "locationsApp.createSubAccountV2.review.business": {
+  "en": "Business",
+  "ko": "비즈니스"
+ },
+ "locationsApp.createSubAccountV2.review.createFailedRetry": {
+  "en": "Try again. If it keeps happening, contact support.",
+  "ko": "다시 시도하세요. 계속 발생하면 고객 지원에 문의하세요."
+ },
+ "locationsApp.createSubAccountV2.review.edit": {
+  "en": "Edit",
+  "ko": "편집"
+ },
+ "locationsApp.createSubAccountV2.review.emailInvite": {
+  "en": "Email {name} an invite now",
+  "ko": "지금 {name} 님에게 초대 이메일 보내기"
+ },
+ "locationsApp.createSubAccountV2.review.inviteDescription": {
+  "en": "Sends a link to set their password and log in.",
+  "ko": "비밀번호를 설정하고 로그인할 수 있는 링크를 보냅니다."
+ },
+ "locationsApp.createSubAccountV2.review.owner": {
+  "en": "Business owner",
+  "ko": "업체 소유자"
+ },
+ "locationsApp.createSubAccountV2.review.plan": {
+  "en": "Plan",
+  "ko": "플랜"
+ },
+ "locationsApp.createSubAccountV2.review.planType": {
+  "en": "Type",
+  "ko": "유형"
+ },
+ "locationsApp.createSubAccountV2.review.planTypeSaas": {
+  "en": "SaaS account",
+  "ko": "SaaS 계정"
+ },
+ "locationsApp.createSubAccountV2.review.regionBlocked.contactSupport": {
+  "en": "Contact support",
+  "ko": "고객 지원 문의"
+ },
+ "locationsApp.createSubAccountV2.review.regionBlocked.editEmail": {
+  "en": "Edit email",
+  "ko": "이메일 수정"
+ },
+ "locationsApp.createSubAccountV2.review.regionBlocked.editPhone": {
+  "en": "Edit phone number",
+  "ko": "전화번호 수정"
+ },
+ "locationsApp.createSubAccountV2.review.regionBlocked.email": {
+  "en": "The email address is from a region we can’t accept. Change it and try again.",
+  "ko": "허용되지 않는 지역의 이메일 주소입니다. 변경한 뒤 다시 시도하세요."
+ },
+ "locationsApp.createSubAccountV2.review.regionBlocked.phone": {
+  "en": "The phone number is from a region we can’t accept. Change it and try again.",
+  "ko": "허용되지 않는 지역의 전화번호입니다. 변경한 뒤 다시 시도하세요."
+ },
+ "locationsApp.createSubAccountV2.review.regionBlocked.title": {
+  "en": "We couldn’t create {name}",
+  "ko": "{name} 을(를) 만들지 못했습니다"
+ },
+ "locationsApp.createSubAccountV2.review.regionBlocked.unknown": {
+  "en": "The phone number or email is from a region we can’t accept. Change it and try again.",
+  "ko": "허용되지 않는 지역의 전화번호 또는 이메일입니다. 변경한 뒤 다시 시도하세요."
+ },
+ "locationsApp.createSubAccountV2.review.rows.address": {
+  "en": "Address",
+  "ko": "주소"
+ },
+ "locationsApp.createSubAccountV2.review.rows.email": {
+  "en": "Email",
+  "ko": "이메일"
+ },
+ "locationsApp.createSubAccountV2.review.rows.name": {
+  "en": "Name",
+  "ko": "이름"
+ },
+ "locationsApp.createSubAccountV2.review.rows.niche": {
+  "en": "Business niche",
+  "ko": "업종"
+ },
+ "locationsApp.createSubAccountV2.review.rows.phone": {
+  "en": "Phone",
+  "ko": "전화번호"
+ },
+ "locationsApp.createSubAccountV2.review.rows.sampleData": {
+  "en": "Sample data",
+  "ko": "샘플 데이터"
+ },
+ "locationsApp.createSubAccountV2.review.rows.snapshot": {
+  "en": "Snapshot",
+  "ko": "스냅샷"
+ },
+ "locationsApp.createSubAccountV2.review.rows.startingPoint": {
+  "en": "Starting point",
+  "ko": "시작점"
+ },
+ "locationsApp.createSubAccountV2.review.rows.timezone": {
+  "en": "Time zone",
+  "ko": "시간대"
+ },
+ "locationsApp.createSubAccountV2.review.rows.website": {
+  "en": "Website",
+  "ko": "웹사이트"
+ },
+ "locationsApp.createSubAccountV2.review.sampleIncluded": {
+  "en": "Included",
+  "ko": "포함됨"
+ },
+ "locationsApp.createSubAccountV2.review.startingPoint.agency": {
+  "en": "{name} snapshot, from your snapshots",
+  "ko": "{name} 스냅샷 (내 스냅샷)"
+ },
+ "locationsApp.createSubAccountV2.review.startingPoint.blank": {
+  "en": "Blank",
+  "ko": "비어 있음"
+ },
+ "locationsApp.createSubAccountV2.review.startingPoint.imported": {
+  "en": "{name} snapshot, imported",
+  "ko": "{name} 스냅샷 (가져옴)"
+ },
+ "locationsApp.createSubAccountV2.review.startingPoint.template": {
+  "en": "{name} snapshot, from HighLevel templates",
+  "ko": "{name} 스냅샷 (하이퍼클래스 템플릿)"
+ },
+ "locationsApp.createSubAccountV2.review.subtitleManual": {
+  "en": "Check the details and edit anything that’s wrong.",
+  "ko": "내용을 확인하고 틀린 부분이 있으면 수정하세요."
+ },
+ "locationsApp.createSubAccountV2.review.tagsLine": {
+  "en": "Tags: {tags}",
+  "ko": "태그: {tags}"
+ },
+ "locationsApp.createSubAccountV2.review.title": {
+  "en": "Review",
+  "ko": "검토"
+ },
+ "locationsApp.createSubAccountV2.review.usage": {
+  "en": "Usage",
+  "ko": "사용량"
+ },
+ "locationsApp.createSubAccountV2.search.contacts": {
+  "en": "Your contacts",
+  "ko": "내 연락처"
+ },
+ "locationsApp.createSubAccountV2.search.contactsHint": {
+  "en": "Type a name or email to search your contacts.",
+  "ko": "이름이나 이메일을 입력해 연락처를 검색하세요."
+ },
+ "locationsApp.createSubAccountV2.search.contactsPlaceholder": {
+  "en": "Search your contacts, or enter a new name",
+  "ko": "연락처를 검색하거나 새 이름을 입력하세요"
+ },
+ "locationsApp.createSubAccountV2.search.googlePlaceholder": {
+  "en": "Search Google by business name and city",
+  "ko": "업체명과 도시로 Google 검색"
+ },
+ "locationsApp.createSubAccountV2.search.loading": {
+  "en": "Searching…",
+  "ko": "검색 중…"
+ },
+ "locationsApp.createSubAccountV2.search.noResults": {
+  "en": "No matches found",
+  "ko": "일치하는 항목이 없습니다"
+ },
+ "locationsApp.createSubAccountV2.search.resultsFromGoogle": {
+  "en": "Results from Google",
+  "ko": "Google 검색 결과"
+ },
+ "locationsApp.createSubAccountV2.search.sourceLabel": {
+  "en": "Search source",
+  "ko": "검색 출처"
+ },
+ "locationsApp.createSubAccountV2.search.useAsNewName": {
+  "en": "Use “{query}” as a new business name",
+  "ko": "“{query}” 을(를) 새 업체명으로 사용"
+ },
+ "locationsApp.createSubAccountV2.setup.actionFailed": {
+  "en": "Something went wrong. Try again.",
+  "ko": "문제가 발생했습니다. 다시 시도해 주세요."
+ },
+ "locationsApp.createSubAccountV2.setup.close": {
+  "en": "Close setup",
+  "ko": "설정 닫기"
+ },
+ "locationsApp.createSubAccountV2.setup.coachmark": {
+  "en": "Setup is here whenever you need it.",
+  "ko": "설정은 필요할 때 언제든 여기에서 열 수 있습니다."
+ },
+ "locationsApp.createSubAccountV2.setup.createdOn": {
+  "en": "Created {date}",
+  "ko": "{date} 생성"
+ },
+ "locationsApp.createSubAccountV2.setup.finishSetup": {
+  "en": "Finish setup",
+  "ko": "설정 마무리"
+ },
+ "locationsApp.createSubAccountV2.setup.finishSetupCount": {
+  "en": "{done} of {total}",
+  "ko": "{total}개 중 {done}개"
+ },
+ "locationsApp.createSubAccountV2.setup.forYou": {
+  "en": "For you",
+  "ko": "내 할 일"
+ },
+ "locationsApp.createSubAccountV2.setup.forYourClient": {
+  "en": "For your client",
+  "ko": "고객 할 일"
+ },
+ "locationsApp.createSubAccountV2.setup.hideFromTopBar": {
+  "en": "Hide setup from the top bar",
+  "ko": "상단 바에서 설정 숨기기"
+ },
+ "locationsApp.createSubAccountV2.setup.minutes": {
+  "en": "{count} min",
+  "ko": "{count}분"
+ },
+ "locationsApp.createSubAccountV2.setup.progress": {
+  "en": "{done} of {total} done",
+  "ko": "{total}개 중 {done}개 완료"
+ },
+ "locationsApp.createSubAccountV2.setup.status.afterInvite": {
+  "en": "After invite",
+  "ko": "초대 후"
+ },
+ "locationsApp.createSubAccountV2.setup.status.notSent": {
+  "en": "Not sent",
+  "ko": "전송되지 않음"
+ },
+ "locationsApp.createSubAccountV2.setup.status.sent": {
+  "en": "Sent",
+  "ko": "발송됨"
+ },
+ "locationsApp.createSubAccountV2.setup.status.waiting": {
+  "en": "Waiting",
+  "ko": "대기 중"
+ },
+ "locationsApp.createSubAccountV2.setup.steps.businessDetails": {
+  "en": "Add business details",
+  "ko": "업체 정보 추가"
+ },
+ "locationsApp.createSubAccountV2.setup.steps.clientAccepts": {
+  "en": "{name} accepts the invite",
+  "ko": "{name} 님이 초대 수락"
+ },
+ "locationsApp.createSubAccountV2.setup.steps.clientAcceptsNotSent": {
+  "en": "This starts when you send the invite.",
+  "ko": "초대를 보내면 시작됩니다."
+ },
+ "locationsApp.createSubAccountV2.setup.steps.clientAcceptsSent": {
+  "en": "Sent to {email}.",
+  "ko": "{email} 으로 보냈습니다."
+ },
+ "locationsApp.createSubAccountV2.setup.steps.clientAddsCard": {
+  "en": "{name} adds a card",
+  "ko": "{name} 님이 카드 등록"
+ },
+ "locationsApp.createSubAccountV2.setup.steps.clientAddsCardWaiting": {
+  "en": "Waiting for {name} to add a card.",
+  "ko": "{name} 님이 카드를 등록하기를 기다리는 중입니다."
+ },
+ "locationsApp.createSubAccountV2.setup.steps.sendInvite": {
+  "en": "Send the invite",
+  "ko": "초대 보내기"
+ },
+ "locationsApp.createSubAccountV2.setup.steps.sendInviteAction": {
+  "en": "Send invite",
+  "ko": "초대 보내기"
+ },
+ "locationsApp.createSubAccountV2.setup.steps.sendInviteDescription": {
+  "en": "They get an email to set a password and log in. Change the address if it should go somewhere else.",
+  "ko": "비밀번호를 설정하고 로그인할 수 있는 이메일이 발송됩니다. 다른 주소로 보내야 하면 주소를 변경하세요."
+ },
+ "locationsApp.createSubAccountV2.setup.steps.sendReminder": {
+  "en": "Send reminder",
+  "ko": "리마인더 보내기"
+ },
+ "locationsApp.createSubAccountV2.setup.steps.sendTo": {
+  "en": "Send to",
+  "ko": "받는 사람"
+ },
+ "locationsApp.createSubAccountV2.setup.steps.setMarkups": {
+  "en": "Set your markups",
+  "ko": "마크업 설정"
+ },
+ "locationsApp.createSubAccountV2.setup.steps.setMarkupsAction": {
+  "en": "Set markups",
+  "ko": "마크업 설정"
+ },
+ "locationsApp.createSubAccountV2.setup.steps.setMarkupsDescription": {
+  "en": "Choose what {name} pays for and set your markup.",
+  "ko": "{name} 님이 비용을 부담할 항목을 고르고 마크업을 설정하세요."
+ },
+ "locationsApp.createSubAccountV2.setup.steps.yourClient": {
+  "en": "Your client",
+  "ko": "내 고객"
+ },
+ "locationsApp.createSubAccountV2.setup.title": {
+  "en": "Set up {name}",
+  "ko": "{name} 설정"
+ },
+ "locationsApp.createSubAccountV2.setup.toast.createdAgency": {
+  "en": "Your agency sub-account is ready.",
+  "ko": "에이전시 서브 계정이 준비되었습니다."
+ },
+ "locationsApp.createSubAccountV2.setup.toast.createdInvited": {
+  "en": "We emailed {name} an invite.",
+  "ko": "{name} 님에게 초대 이메일을 보냈습니다."
+ },
+ "locationsApp.createSubAccountV2.setup.toast.createdNotInvited": {
+  "en": "Send {name} the invite when you’re ready.",
+  "ko": "준비되면 {name} 님에게 초대를 보내세요."
+ },
+ "locationsApp.createSubAccountV2.snapshot.all": {
+  "en": "All snapshots",
+  "ko": "모든 스냅샷"
+ },
+ "locationsApp.createSubAccountV2.snapshot.empty": {
+  "en": "No snapshots here yet",
+  "ko": "아직 스냅샷이 없습니다"
+ },
+ "locationsApp.createSubAccountV2.snapshot.failed": {
+  "en": "We couldn’t load your snapshots. Try again.",
+  "ko": "스냅샷을 불러오지 못했습니다. 다시 시도하세요."
+ },
+ "locationsApp.createSubAccountV2.snapshot.retry": {
+  "en": "Try again",
+  "ko": "다시 시도"
+ },
+ "locationsApp.createSubAccountV2.snapshot.searchPlaceholder": {
+  "en": "Search snapshots",
+  "ko": "스냅샷 검색"
+ },
+ "locationsApp.createSubAccountV2.snapshot.selected": {
+  "en": "Selected",
+  "ko": "선택됨"
+ },
+ "locationsApp.createSubAccountV2.snapshot.subtitle": {
+  "en": "Choose what to copy into the new sub-account. The snapshot’s pages, automations and settings come with it.",
+  "ko": "새 서브 계정에 복사할 스냅샷을 선택하세요. 스냅샷의 페이지·자동화·설정이 함께 복사됩니다."
+ },
+ "locationsApp.createSubAccountV2.snapshot.tabs.agency": {
+  "en": "My snapshots",
+  "ko": "내 스냅샷"
+ },
+ "locationsApp.createSubAccountV2.snapshot.tabs.template": {
+  "en": "Snapshot templates ({count})",
+  "ko": "스냅샷 템플릿 ({count})"
+ },
+ "locationsApp.createSubAccountV2.start.blankDescription": {
+  "en": "A fresh sub-account, set up the way you want.",
+  "ko": "원하는 방식으로 설정하는 빈 서브 계정입니다."
+ },
+ "locationsApp.createSubAccountV2.start.blankTitle": {
+  "en": "Start from scratch",
+  "ko": "처음부터 시작"
+ },
+ "locationsApp.createSubAccountV2.start.close": {
+  "en": "Close",
+  "ko": "닫기"
+ },
+ "locationsApp.createSubAccountV2.start.industryGroup": {
+  "en": "Start from an industry",
+  "ko": "업종으로 시작"
+ },
+ "locationsApp.createSubAccountV2.start.industryGroupDescription": {
+  "en": "A workspace with tools made for your client’s industry.",
+  "ko": "고객 업종에 맞춘 도구가 갖춰진 작업 공간입니다."
+ },
+ "locationsApp.createSubAccountV2.start.industryNew": {
+  "en": "New",
+  "ko": "신규"
+ },
+ "locationsApp.createSubAccountV2.start.question": {
+  "en": "How do you want to start this sub-account?",
+  "ko": "이 서브 계정을 어떻게 시작하시겠습니까?"
+ },
+ "locationsApp.createSubAccountV2.start.snapshotDescription": {
+  "en": "Start with ready-made funnels, workflows, and pipelines. You can also add one later.",
+  "ko": "미리 만들어진 퍼널·워크플로우·파이프라인으로 시작합니다. 나중에 추가할 수도 있습니다."
+ },
+ "locationsApp.createSubAccountV2.start.snapshotTitle": {
+  "en": "Use a snapshot",
+  "ko": "스냅샷 사용"
+ },
+ "locationsApp.createSubAccountV2.start.subtitle": {
+  "en": "Start from scratch, use a snapshot, or use a setup made for the client’s industry.",
+  "ko": "처음부터 시작하거나, 스냅샷을 사용하거나, 고객 업종에 맞춘 설정을 사용하세요."
+ },
+ "locationsApp.createSubAccountV2.start.title": {
+  "en": "Create Sub-Account",
+  "ko": "서브 계정 만들기"
+ },
+ "locationsApp.createSubAccountV2.validation.blockedPhone": {
+  "en": "We can’t accept phone numbers from this region. Use a different number.",
+  "ko": "이 지역의 전화번호는 사용할 수 없습니다. 다른 번호를 입력하세요."
+ },
+ "locationsApp.createSubAccountV2.validation.invalidEmail": {
+  "en": "Enter a valid email address",
+  "ko": "유효한 이메일 주소를 입력하세요"
+ },
+ "locationsApp.createSubAccountV2.validation.invalidFirstName": {
+  "en": "Please enter a valid first name",
+  "ko": "유효한 이름을 입력해 주세요"
+ },
+ "locationsApp.createSubAccountV2.validation.invalidLastName": {
+  "en": "Please enter a valid last name",
+  "ko": "유효한 성을 입력해 주세요"
+ },
+ "locationsApp.createSubAccountV2.validation.invalidPhone": {
+  "en": "Enter a valid phone number for the selected country",
+  "ko": "선택한 국가에 맞는 유효한 전화번호를 입력하세요"
+ },
+ "locationsApp.createSubAccountV2.validation.lettersOnly": {
+  "en": "Use letters only",
+  "ko": "문자만 입력하세요"
+ },
+ "locationsApp.createSubAccountV2.validation.otherNeed": {
+  "en": "Say what else they need, or untick Other",
+  "ko": "그 밖에 필요한 것을 입력하거나 '기타' 선택을 해제하세요"
+ },
+ "locationsApp.createSubAccountV2.validation.required": {
+  "en": "This field is required",
+  "ko": "필수 입력 항목입니다"
+ },
+ "locationsApp.createSubAccountV2.wizard.actions.back": {
+  "en": "Back",
+  "ko": "뒤로"
+ },
+ "locationsApp.createSubAccountV2.wizard.actions.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "locationsApp.createSubAccountV2.wizard.actions.next": {
+  "en": "Next",
+  "ko": "다음"
+ },
+ "locationsApp.createSubAccountV2.wizard.close": {
+  "en": "Close",
+  "ko": "닫기"
+ },
+ "locationsApp.createSubAccountV2.wizard.steps.label": {
+  "en": "Steps",
+  "ko": "단계"
+ },
+ "locationsApp.createSubAccountV2.wizard.steps.name": {
+  "en": "Name and category",
+  "ko": "이름 및 업종"
+ },
+ "locationsApp.createSubAccountV2.wizard.steps.review": {
+  "en": "Review",
+  "ko": "검토"
+ },
+ "locationsApp.createSubAccountV2.wizard.steps.snapshot": {
+  "en": "Snapshot",
+  "ko": "스냅샷"
+ },
+ "locationsApp.createSubAccountV2.wizard.title": {
+  "en": "New sub-account",
+  "ko": "새 서브 계정"
+ },
+ "locationsApp.createSubAccountV2.wizard.titleIndustry": {
+  "en": "New {industry} sub-account",
+  "ko": "새 {industry} 서브 계정"
+ },
+ "locationsApp.exportRollup.recipients": {
+  "en": "Recipients",
+  "ko": "수신자"
+ },
+ "locationsApp.industrySubAccount.create": {
+  "en": "Create",
+  "ko": "만들기"
+ },
+ "locationsApp.industrySubAccount.industries.businessCoaching.needsStepSubtitle": {
+  "en": "How {business} coaches clients. Choose all that apply.",
+  "ko": "{business} 의 고객 코칭 방식입니다. 해당하는 항목을 모두 선택하세요."
+ },
+ "locationsApp.industrySubAccount.industries.fieldServices.needsStep": {
+  "en": "Jobs",
+  "ko": "작업"
+ },
+ "locationsApp.industrySubAccount.industries.generic.needsStep": {
+  "en": "What they need",
+  "ko": "필요한 기능"
+ },
+ "locationsApp.industrySubAccount.industries.generic.needsStepSubtitle": {
+  "en": "What {business} needs help with. Choose all that apply.",
+  "ko": "{business} 에 필요한 도움입니다. 해당하는 항목을 모두 선택하세요."
+ },
+ "locationsApp.industrySubAccount.industries.restaurant.needsStep": {
+  "en": "Guest service",
+  "ko": "손님 응대"
+ },
+ "locationsApp.industrySubAccount.industries.restaurant.pageTitle": {
+  "en": "Restaurant Industry",
+  "ko": "외식업"
+ },
+ "locationsApp.industrySubAccount.manageIndustry.title": {
+  "en": "Industry",
+  "ko": "업종"
+ },
+ "locationsApp.industrySubAccount.needs.fieldServices.estimatesInvoices.cardDescription": {
+  "en": "Quote the job, bill it and get paid.",
+  "ko": "작업 견적을 내고 청구해 대금을 받습니다."
+ },
+ "locationsApp.industrySubAccount.needs.fieldServices.estimatesInvoices.cardTitle": {
+  "en": "Estimates and invoices",
+  "ko": "견적서 및 인보이스"
+ },
+ "locationsApp.industrySubAccount.needs.fieldServices.jobsVisits.cardDescription": {
+  "en": "Track each job from start to finish.",
+  "ko": "각 작업을 시작부터 완료까지 추적합니다."
+ },
+ "locationsApp.industrySubAccount.needs.fieldServices.jobsVisits.cardTitle": {
+  "en": "Jobs and visits",
+  "ko": "작업 및 방문"
+ },
+ "locationsApp.industrySubAccount.needs.fieldServices.onlineBooking.cardDescription": {
+  "en": "Book online in your service area.",
+  "ko": "서비스 지역 내에서 온라인으로 예약합니다."
+ },
+ "locationsApp.industrySubAccount.needs.fieldServices.onlineBooking.cardTitle": {
+  "en": "Online booking",
+  "ko": "온라인 예약"
+ },
+ "locationsApp.industrySubAccount.needs.fieldServices.schedulingDispatch.cardDescription": {
+  "en": "Assign technicians and plan routes.",
+  "ko": "기술자를 배정하고 경로를 계획합니다."
+ },
+ "locationsApp.industrySubAccount.needs.fieldServices.schedulingDispatch.cardTitle": {
+  "en": "Scheduling and dispatch",
+  "ko": "일정 및 배차"
+ },
+ "locationsApp.industrySubAccount.needs.fieldServices.serviceRequests.cardDescription": {
+  "en": "Take requests and book visits.",
+  "ko": "요청을 받고 방문을 예약합니다."
+ },
+ "locationsApp.industrySubAccount.needs.fieldServices.serviceRequests.cardTitle": {
+  "en": "Service requests",
+  "ko": "서비스 요청"
+ },
+ "locationsApp.industrySubAccount.needs.fieldServices.timesheets.cardDescription": {
+  "en": "Track hours on every job.",
+  "ko": "작업별 근무 시간을 기록합니다."
+ },
+ "locationsApp.industrySubAccount.needs.fieldServices.timesheets.cardTitle": {
+  "en": "Timesheets",
+  "ko": "타임시트"
+ },
+ "locationsApp.industrySubAccount.needs.restaurant.delivery.cardDescription": {
+  "en": "Delivery orders and tracking.",
+  "ko": "배달 주문과 배달 추적."
+ },
+ "locationsApp.industrySubAccount.needs.restaurant.delivery.cardTitle": {
+  "en": "Delivery",
+  "ko": "배달"
+ },
+ "locationsApp.industrySubAccount.needs.restaurant.dineIn.cardDescription": {
+  "en": "Tables, walk-ins and the floor.",
+  "ko": "테이블, 현장 방문 손님, 홀 관리."
+ },
+ "locationsApp.industrySubAccount.needs.restaurant.dineIn.cardTitle": {
+  "en": "Dine-in service",
+  "ko": "매장 내 식사"
+ },
+ "locationsApp.industrySubAccount.needs.restaurant.orderManagement.cardDescription": {
+  "en": "Every channel’s orders in one place.",
+  "ko": "모든 채널의 주문을 한곳에서."
+ },
+ "locationsApp.industrySubAccount.needs.restaurant.orderManagement.cardTitle": {
+  "en": "Order management",
+  "ko": "주문 관리"
+ },
+ "locationsApp.industrySubAccount.needs.restaurant.pickup.cardDescription": {
+  "en": "Orders placed ahead for collection.",
+  "ko": "미리 주문하고 찾아가는 주문."
+ },
+ "locationsApp.industrySubAccount.needs.restaurant.pickup.cardTitle": {
+  "en": "Pickup orders",
+  "ko": "픽업 주문"
+ },
+ "locationsApp.industrySubAccount.needs.restaurant.reputation.cardDescription": {
+  "en": "Reviews, ratings and replies.",
+  "ko": "리뷰, 평점, 답글."
+ },
+ "locationsApp.industrySubAccount.needs.restaurant.reputation.cardTitle": {
+  "en": "Reputation",
+  "ko": "평판 관리"
+ },
+ "locationsApp.industrySubAccount.needs.restaurant.reservations.cardDescription": {
+  "en": "Online booking and no-show follow-up.",
+  "ko": "온라인 예약과 노쇼 후속 관리."
+ },
+ "locationsApp.industrySubAccount.needs.restaurant.reservations.cardTitle": {
+  "en": "Reservations",
+  "ko": "예약"
+ },
+ "locationsApp.locationList.columns.calls": {
+  "en": "Calls",
+  "ko": "통화"
+ },
+ "locationsApp.locationList.status.prospect": {
+  "en": "Prospect",
+  "ko": "잠재 고객"
+ },
+ "locationsApp.locations.comfortable": {
+  "en": "Comfortable",
+  "ko": "넓게"
+ },
+ "locationsApp.locations.density": {
+  "en": "Density",
+  "ko": "표시 밀도"
+ },
+ "locationsApp.locations.searchUsers": {
+  "en": "Search users",
+  "ko": "사용자 검색"
+ },
+ "locationsApp.locations.smartListUpdated": {
+  "en": "Smart List updated successfully",
+  "ko": "스마트 리스트가 업데이트되었습니다"
+ },
+ "locationsApp.locations.statusLabels.prospect": {
+  "en": "Prospect",
+  "ko": "잠재 고객"
+ },
+ "locationsApp.locations.tags.empty": {
+  "en": "Add tags",
+  "ko": "태그 추가"
+ },
+ "locationsApp.locations.tags.noResults.clear": {
+  "en": "Clear tag filter | Clear tag filters",
+  "ko": "태그 필터 지우기 | 태그 필터 지우기"
+ },
+ "locationsApp.locations.tags.noResults.descriptionAll": {
+  "en": "No sub-accounts have this tag yet. | No sub-accounts have these tags yet.",
+  "ko": "아직 이 태그가 있는 서브 계정이 없습니다. | 아직 이 태그들이 있는 서브 계정이 없습니다."
+ },
+ "locationsApp.locations.tags.noResults.descriptionPage": {
+  "en": "No sub-accounts on this page have this tag. Try another page or clear the filter. | No sub-accounts on this page have these tags. Try another page or clear the filter.",
+  "ko": "이 페이지에는 이 태그가 있는 서브 계정이 없습니다. 다른 페이지를 보거나 필터를 지우세요. | 이 페이지에는 이 태그들이 있는 서브 계정이 없습니다. 다른 페이지를 보거나 필터를 지우세요."
+ },
+ "locationsApp.locations.tags.untagged": {
+  "en": "Untagged",
+  "ko": "태그 없음"
+ },
+ "locationsApp.manageSubAccount.advancedSettings.wallet_summary.auto_recharge": {
+  "en": "Auto recharge with",
+  "ko": "자동 충전 카드"
+ },
+ "locationsApp.manageSubAccount.missingPayment.communication.invalidPhone": {
+  "en": "Please enter a valid phone number",
+  "ko": "올바른 전화번호를 입력해 주세요"
+ },
+ "locationsApp.manageSubAccount.rebilling.settings.agree": {
+  "en": "Agree",
+  "ko": "동의"
+ },
+ "locationsApp.manageSubAccount.rebilling.settings.keepOptionLabel": {
+  "en": "If you pay for this Twilio subaccount, you can keep using the same one.",
+  "ko": "이 Twilio 서브 계정 비용을 직접 지불하고 있다면 같은 계정을 계속 사용할 수 있습니다."
+ },
+ "locationsApp.manageSubAccount.rebilling.settings.twilioRates.customerSmsPerSegment": {
+  "en": "$ 0.034 / segment",
+  "ko": "$ 0.034 / 세그먼트"
+ },
+ "locationsApp.manageSubAccount.stateProvRegion": {
+  "en": "State / Prov / Region",
+  "ko": "시/도/지역"
+ },
+ "locationsApp.manageSubAccount.usageBilling.benefits.scaleRevenue.description": {
+  "en": "Automate client billing so it grows with your business, no manual invoicing.",
+  "ko": "고객 청구를 자동화해 수작업 인보이스 없이 비즈니스와 함께 성장시키세요."
+ },
+ "locationsApp.numberOfContacts": {
+  "en": "Number of Contacts",
+  "ko": "연락처 수"
+ },
+ "locationsApp.outreach": {
+  "en": "Outreach",
+  "ko": "아웃리치"
+ },
+ "locationsApp.pending": {
+  "en": "Pending",
+  "ko": "대기 중"
+ },
+ "locationsApp.receive": {
+  "en": "Receive",
+  "ko": "받기"
+ },
+ "locationsApp.recipients": {
+  "en": "Recipients",
+  "ko": "수신자"
+ },
+ "locationsApp.release": {
+  "en": "Release",
+  "ko": "릴리스"
+ },
+ "locationsApp.reports": {
+  "en": "Reports",
+  "ko": "리포트"
+ },
+ "locationsApp.smartLists.locationFilters.fields.lcEmail": {
+  "en": "LC EMAIL",
+  "ko": "하이퍼클래스 이메일"
+ },
+ "locationsApp.smartLists.locationFilters.fields.workflowPremiumRebilling": {
+  "en": "Workflow Premium Features Rebilling",
+  "ko": "워크플로우 프리미엄 기능 재청구"
+ },
+ "locationsApp.smartLists.locationFilters.options.trailing": {
+  "en": "Trailing",
+  "ko": "하락세"
+ },
+ "locationsApp.smartLists.locationFilters.options.upselling": {
+  "en": "Upselling",
+  "ko": "업셀링"
+ },
+ "locationsApp.transferNow": {
+  "en": "Transfer Now",
+  "ko": "지금 이전"
+ },
+ "locationsApp.waitlist.waitlist": {
+  "en": "Waitlist",
+  "ko": "대기자 명단"
+ },
+ "powerDialerApp.selectDisposition.saveError": {
+  "en": "Couldn't save the call disposition.",
+  "ko": "통화 결과를 저장하지 못했습니다."
+ },
+ "reportingApp.locationDashboard.adAccountRequired": {
+  "en": "Select an ad account to view data.",
+  "ko": "데이터를 보려면 광고 계정을 선택하세요."
+ },
+ "reportingApp.locationDashboard.adAdSetRequiredForAd": {
+  "en": "Select an ad set to filter by ad.",
+  "ko": "광고별로 필터링하려면 광고 세트를 선택하세요."
+ },
+ "reportingApp.locationDashboard.adCampaignRequiredForAdSet": {
+  "en": "Select a campaign to filter by ad set.",
+  "ko": "광고 세트별로 필터링하려면 캠페인을 선택하세요."
+ },
+ "reportingApp.locationDashboard.widgetFilterInvalid": {
+  "en": "Invalid filters. Review conditions.",
+  "ko": "필터가 유효하지 않습니다. 조건을 확인하세요."
+ },
+ "saasApp.bundle.pulseInfo": {
+  "en": "1 pulse = 6 seconds",
+  "ko": "1 펄스 = 6초"
+ },
+ "schemaMarkupApp.schemaMarkup.deleteSchema.discard": {
+  "en": "Discard",
+  "ko": "삭제"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.localBusiness.founder.label": {
+  "en": "Founder",
+  "ko": "설립자"
+ },
+ "schemaMarkupApp.schemaMarkup.properties.organization.track.label": {
+  "en": "Tracks",
+  "ko": "트랙"
+ },
+ "snapshotsApp.common.conflicts": {
+  "en": "Conflicts",
+  "ko": "충돌"
+ },
+ "snapshotsApp.common.found": {
+  "en": "Found",
+  "ko": "있음"
+ },
+ "snapshotsApp.common.gridView": {
+  "en": "Grid view",
+  "ko": "그리드 보기"
+ },
+ "snapshotsApp.common.listView": {
+  "en": "List view",
+  "ko": "목록 보기"
+ },
+ "snapshotsApp.common.load": {
+  "en": "Load",
+  "ko": "불러오기"
+ },
+ "snapshotsApp.importedSnapshots.autoImport.importFailed.title": {
+  "en": "We couldn't import the snapshot",
+  "ko": "스냅샷을 가져오지 못했습니다"
+ },
+ "snapshotsApp.importedSnapshots.autoImport.invalidLocation.cancel": {
+  "en": "Cancel",
+  "ko": "취소"
+ },
+ "snapshotsApp.importedSnapshots.autoImport.invalidLocation.title": {
+  "en": "We couldn't find this sub-account",
+  "ko": "이 서브 계정을 찾을 수 없습니다"
+ },
+ "snapshotsApp.importedSnapshots.autoImport.loadTimeout.goToAccount": {
+  "en": "Go to account",
+  "ko": "계정으로 이동"
+ },
+ "snapshotsApp.importedSnapshots.autoImport.loadingAriaLabel": {
+  "en": "Setting up your account",
+  "ko": "계정 설정 중"
+ },
+ "snapshotsApp.importedSnapshots.autoImport.setup.description": {
+  "en": "Preparing your {account} with {agent}. This takes a few seconds.",
+  "ko": "{agent} 로 {account} 을(를) 준비하는 중입니다. 몇 초 정도 걸립니다."
+ },
+ "snapshotsApp.importedSnapshots.autoImport.setup.descriptionNoLocation": {
+  "en": "Preparing your account with {agent}. This takes a few seconds.",
+  "ko": "{agent} 로 계정을 준비하는 중입니다. 몇 초 정도 걸립니다."
+ },
+ "snapshotsApp.importedSnapshots.autoImport.setup.fallbackLocation": {
+  "en": "your account",
+  "ko": "내 계정"
+ },
+ "snapshotsApp.linkedLocations.description": {
+  "en": "Edit linked sub-accounts for this snapshot",
+  "ko": "이 스냅샷에 연결된 서브 계정 편집"
+ },
+ "snapshotsApp.pushSnapshot.conflictsDescription": {
+  "en": "Handle conflicting data",
+  "ko": "충돌하는 데이터 처리"
+ },
+ "snapshotsApp.pushSnapshot.conflictsTitle": {
+  "en": "Conflicts",
+  "ko": "충돌"
+ },
+ "snapshotsApp.pushSnapshot.found": {
+  "en": "Found",
+  "ko": "있음"
+ },
+ "snapshotsApp.pushSnapshot.whatsappTemplatesTooltip": {
+  "en": "Only the templates of the sub-account's primary WhatsApp account are included, and they are loaded into each sub-account's primary WhatsApp account.",
+  "ko": "서브 계정의 기본 WhatsApp 계정 템플릿만 포함되며, 각 서브 계정의 기본 WhatsApp 계정으로 불러옵니다."
+ },
+ "snapshotsApp.shareSnapshot.arnHelp": {
+  "en": "Add comma (,) after each relationship number",
+  "ko": "관계 번호마다 뒤에 쉼표(,)를 붙이세요"
+ },
+ "snapshotsApp.shareSnapshot.shareable": {
+  "en": "Shareable",
+  "ko": "공유 가능"
+ },
+ "snapshotsApp.snapshotPushHistory.pushedDate": {
+  "en": "Pushed date",
+  "ko": "푸시 날짜"
+ },
+ "snapshotsApp.subAccountSnapshotHistory.typeOwn": {
+  "en": "Own",
+  "ko": "자체"
+ },
+ "snapshotsApp.subAccountSnapshotHistory.typePurchased": {
+  "en": "Purchased",
+  "ko": "구매"
+ },
+ "socialPlannerApp.platformErrors.instagram.affectedImage": {
+  "en": "Image {n}",
+  "ko": "이미지 {n}"
+ },
+ "socialPlannerApp.platformErrors.instagram.affectedMedia": {
+  "en": "Affected media:",
+  "ko": "영향받은 미디어:"
+ },
+ "socialPlannerApp.platformErrors.instagram.affectedVideo": {
+  "en": "Video {n}",
+  "ko": "동영상 {n}"
+ },
+ "socialPlannerApp.platformErrors.instagram.invalidMediaUrl": {
+  "en": "One or more images or videos in your post are unavailable or have invalid links. Replace the affected media and try publishing again.",
+  "ko": "게시물의 이미지나 동영상 중 하나 이상을 사용할 수 없거나 링크가 유효하지 않습니다. 해당 미디어를 교체한 뒤 다시 게시하세요."
+ },
+ "socialPlannerApp.platformErrors.instagram.invalidMediaUrlTitle": {
+  "en": "Couldn't publish this post",
+  "ko": "이 게시물을 게시하지 못했습니다"
+ },
+ "socialPlannerApp.platformErrors.instagram.mediaNotFound": {
+  "en": "Media not found",
+  "ko": "미디어를 찾을 수 없습니다"
+ },
+ "socialPlannerApp.platformErrors.instagram.mediaNotFoundHint": {
+  "en": "This file was moved or deleted. Replace it to publish.",
+  "ko": "이 파일이 이동되었거나 삭제되었습니다. 게시하려면 파일을 교체하세요."
+ },
+ "socialPlannerApp.socialListening.promoBanner.cta": {
+  "en": "View Black Friday topic",
+  "ko": "블랙프라이데이 토픽 보기"
+ },
+ "socialPlannerApp.socialListening.promoBanner.description": {
+  "en": "Open a ready-made Black Friday topic: live mentions, top posts, and sentiment across social.",
+  "ko": "미리 준비된 블랙프라이데이 토픽을 열어 보세요. 실시간 언급, 인기 게시물, 소셜 전반의 감성을 확인할 수 있습니다."
+ },
+ "socialPlannerApp.socialListening.promoBanner.title": {
+  "en": "See what brands are posting for Black Friday",
+  "ko": "브랜드들이 블랙프라이데이에 무엇을 게시하는지 확인하세요"
+ },
+ "superagentsApp.agentStudioPanel.editor.quote": {
+  "en": "Quote",
+  "ko": "인용"
  }
 }
