@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "version": "4.2.84",
-  "built": "2026-11-26",
-  "source": "립 검수 2갈래 교정 41 + 표기 통일 12(변경사항·게시) · LeadConnector/HighLevel/Vibe → 하이퍼클래스/AI 스튜디오 · v4.2.76: AI 스튜디오 홈 템플릿 카드 _text 21(서버 데이터 — 단어 1개 이름 E-commerce·Portfolio 는 원문 유지) + 폼·설문·퀴즈 빌더(fsb iframe) 1,690 — 2026-11-13 + 자동화 앱 en 대체 카탈로그 우선분 93(설정·등록/실행 기록·AI 도우미) + 자동화 AI 도우미 제안 18 해요체로 통일(기존 제안 문체와 맞춤) + 설정 → 내 프로필 → 이메일 및 대화: GHL 신규 '이메일 동기화 작동 방식' 안내 창 usersMicroApp.profile.emailSyncDisclosure 37(벤자민 캡처 2026-11-20) + 2026-11-24 tr1124h 호스트 텔레메트리 3,255(43 ns, 삽입 3,026, 독립 검수 62) + tr1124w 자동화 en 대체 카탈로그 4,005(ifr 삽입 3,867, 독립 검수 33 + 일괄 통일 201) + 2026-11-24 텔레메트리 잔여 중 기존 번역 재사용 727(같은 영어 원문의 기존 한국어 — 유일 597 · 다수결 2/3 이상 130) + 2026-11-24 에이전시 서브 계정 목록 태그 칸 'Add tags' _text 1(라벨 span 은 카탈로그 밖 — aria 는 사전) + 2026-11-26 잠재고객 발굴(prospecting, iframe 중계 pro) 7,453 → 번역 9갈래·독립 검수 5갈래(교정 39)·통일 35 → ifrApps 7,363",
+  "version": "4.2.85",
+  "built": "2026-11-27",
+  "source": "립 검수 2갈래 교정 41 + 표기 통일 12(변경사항·게시) · LeadConnector/HighLevel/Vibe → 하이퍼클래스/AI 스튜디오 · v4.2.76: AI 스튜디오 홈 템플릿 카드 _text 21(서버 데이터 — 단어 1개 이름 E-commerce·Portfolio 는 원문 유지) + 폼·설문·퀴즈 빌더(fsb iframe) 1,690 — 2026-11-13 + 자동화 앱 en 대체 카탈로그 우선분 93(설정·등록/실행 기록·AI 도우미) + 자동화 AI 도우미 제안 18 해요체로 통일(기존 제안 문체와 맞춤) + 설정 → 내 프로필 → 이메일 및 대화: GHL 신규 '이메일 동기화 작동 방식' 안내 창 usersMicroApp.profile.emailSyncDisclosure 37(벤자민 캡처 2026-11-20) + 2026-11-24 tr1124h 호스트 텔레메트리 3,255(43 ns, 삽입 3,026, 독립 검수 62) + tr1124w 자동화 en 대체 카탈로그 4,005(ifr 삽입 3,867, 독립 검수 33 + 일괄 통일 201) + 2026-11-24 텔레메트리 잔여 중 기존 번역 재사용 727(같은 영어 원문의 기존 한국어 — 유일 597 · 다수결 2/3 이상 130) + 2026-11-24 에이전시 서브 계정 목록 태그 칸 'Add tags' _text 1(라벨 span 은 카탈로그 밖 — aria 는 사전) + 2026-11-26 잠재고객 발굴(prospecting, iframe 중계 pro) 7,453 → 번역 9갈래·독립 검수 5갈래(교정 39)·통일 35 → ifrApps 7,363 + 2026-11-27 텔레메트리 잔여 1,586(AI 템플릿 마켓 402·서브 계정 관리 257·도메인 84·포털 빌더 64 등 삽입 911, 검수 2) + 에이전시 리셀링 마이크로앱(common|reselling) 922(검수 13·통일 10)",
   "strings": 102718
  },
  "host": {
@@ -810,7 +810,24 @@
    },
    "marketplaceFrame": {
     "iframeTitle": "하이퍼클래스 마켓플레이스"
-   }
+   },
+   "connectStripe": "Stripe 연결",
+   "customersInStripe": "Stripe 고객",
+   "developmentsUpdates": "개발 소식 알림 수신",
+   "inaccurateStats": "통계가 정확하지 않은 이유는 무엇인가요?",
+   "leanMore": "자세히 보기",
+   "monthlyRecurringRevenue": "월간 반복 매출",
+   "newCustomersThisMonth": "이번 달 신규 고객",
+   "processing": "처리 중",
+   "refresh": "새로고침",
+   "revenueDistribution": "매출 분포",
+   "revenueLastMonth": "지난달 매출",
+   "saasModeOnProPlan": "Pro 플랜에서 SaaS 모드가 활성화되었습니다",
+   "sixMonthsGrowth": "최근 6개월 성장률",
+   "stripLogin": "Stripe 로그인",
+   "stripUnverifiedAccount": "이 에이전시에 연결된 Stripe 계정이 인증되지 않아 결제를 받을 수 없습니다. Stripe 계정에 로그인하여 인증을 완료해 주세요.",
+   "title": "에이전시 대시보드",
+   "upgradeNow": "지금 업그레이드"
   },
   "attributes": {
    "addAttribute": "속성 추가",
@@ -1432,7 +1449,8 @@
     "vat": "VAT",
     "visa": "VISA",
     "webdevexamplecom": "web-dev{'@'}example.com",
-    "websitecom": "website.com"
+    "websitecom": "website.com",
+    "lc": "하이퍼클래스"
    },
    "stepProgress": "{totalSteps}단계 중 {currentStep}단계",
    "loadMore": "더 보기",
@@ -7749,7 +7767,8 @@
      },
      "options": {
       "jobPosition": {
-       "vp": "부사장"
+       "vp": "부사장",
+       "gm": "총괄 관리자(GM)"
       }
      },
      "registration": {
@@ -13396,7 +13415,8 @@
        "unitSheetsMany": "시트 {count}개",
        "unitSheetsOne": "시트 1개",
        "unitSlidesMany": "슬라이드 {count}장",
-       "unitSlidesOne": "슬라이드 1장"
+       "unitSlidesOne": "슬라이드 1장",
+       "typeFallback": "파일"
       },
       "marketplaceApps": {
        "agencyBannerBody": "에이전시 관리자에게는 아직 서브 계정용으로 승인되지 않은 앱도 표시됩니다. 서브 계정이 설치할 수 있는 앱은 '앱 액세스'에서 관리하세요. 카드의 '승인됨' 또는 '승인 거부됨' 태그를 클릭해 해당 앱을 관리할 수도 있습니다.",
@@ -16084,7 +16104,8 @@
        "keyboardShortcuts": "키보드 단축키",
        "personalization": "개인화",
        "roles": "역할 및 권한"
-      }
+      },
+      "title": "설정"
      },
      "shortcuts": {
       "close": "키보드 단축키 닫기",
@@ -23744,7 +23765,11 @@
      "url": "URL"
     },
     "sms": "SMS",
-    "versionEditedBy": "{name}"
+    "versionEditedBy": "{name}",
+    "adAccountRequired": "데이터를 보려면 광고 계정을 선택하세요.",
+    "adAdSetRequiredForAd": "광고별로 필터링하려면 광고 세트를 선택하세요.",
+    "adCampaignRequiredForAdSet": "광고 세트별로 필터링하려면 캠페인을 선택하세요.",
+    "widgetFilterInvalid": "필터가 유효하지 않습니다. 조건을 확인하세요."
    },
    "dashboardOnboarding": {
     "goals": {
@@ -24866,7 +24891,9 @@
     "pleaseInput": "입력하세요",
     "new": "신규",
     "blogSiteLists": "블로그 사이트 목록",
-    "rssImports": "RSS 가져오기"
+    "rssImports": "RSS 가져오기",
+    "native": "네이티브",
+    "standalone": "독립형"
    },
    "actionBar": {
     "lastSaved": "마지막 저장",
@@ -31249,7 +31276,8 @@
       "sleepTimeUnit": {
        "options": {
         "days": "일",
-        "hours": "시간"
+        "hours": "시간",
+        "minutes": "분"
        },
        "label": "재활성화까지 시간 (단위)"
       },
@@ -38299,7 +38327,8 @@
     "usd": "USD",
     "userPreviewChip1": "김민준",
     "userPreviewChip2": "이서연",
-    "deleteOptionRetry": "다시 시도"
+    "deleteOptionRetry": "다시 시도",
+    "new": "신규"
    },
    "common": {
     "modules": {
@@ -38344,7 +38373,8 @@
      "whatsapp": "왓츠앱",
      "ops-delete": "삭제",
      "calculatedFieldComputation": "계산 필드 계산",
-     "sms": "SMS"
+     "sms": "SMS",
+     "enrich-contacts": "연락처 정보 보강"
     },
     "status": {
      "notStarted": "시작 안 함",
@@ -57402,7 +57432,12 @@
      "vsPrev": "전일 대비",
      "pts": "점"
     },
-    "trackKeyword": "이 키워드 추적"
+    "trackKeyword": "이 키워드 추적",
+    "promoBanner": {
+     "cta": "블랙프라이데이 토픽 보기",
+     "description": "미리 준비된 블랙프라이데이 토픽을 열어 보세요. 실시간 언급, 인기 게시물, 소셜 전반의 감성을 확인할 수 있습니다.",
+     "title": "브랜드들이 블랙프라이데이에 무엇을 게시하는지 확인하세요"
+    }
    },
    "adManager": {
     "modalHeader": "광고 관리자로 리디렉션됩니다",
@@ -57557,7 +57592,14 @@
      "defaultError": "문제가 발생했습니다. 소셜 계정 토큰이 만료되었거나 권한이 부족하거나 게시물 내용이 소셜 미디어 정책에 위반됩니다.",
      "unsupportedImageFormat": "이미지 형식이 지원되지 않습니다. 유효한 JPEG 또는 PNG로 이미지를 다시 업로드한 후 다시 시도해주세요.",
      "mediaConversionFailed": "파일이 손상되었거나 지원되지 않는 기능을 사용하여 Instagram에서 이 미디어를 처리할 수 없습니다. 지원되는 형식으로 미디어를 다시 업로드한 후 다시 시도해 주세요.",
-     "connectionUnreachable": "Instagram 연결에 접속하지 못했습니다. 잠시 후 다시 시도하거나 지원팀에 문의해 주세요."
+     "connectionUnreachable": "Instagram 연결에 접속하지 못했습니다. 잠시 후 다시 시도하거나 지원팀에 문의해 주세요.",
+     "affectedImage": "이미지 {n}",
+     "affectedMedia": "영향받은 미디어:",
+     "affectedVideo": "동영상 {n}",
+     "invalidMediaUrl": "게시물의 이미지나 동영상 중 하나 이상을 사용할 수 없거나 링크가 유효하지 않습니다. 해당 미디어를 교체한 뒤 다시 게시하세요.",
+     "invalidMediaUrlTitle": "이 게시물을 게시하지 못했습니다",
+     "mediaNotFound": "미디어를 찾을 수 없습니다",
+     "mediaNotFoundHint": "이 파일이 이동되었거나 삭제되었습니다. 게시하려면 파일을 교체하세요."
     },
     "threads": {
      "tokenExpiredRevoked": "Threads 계정 토큰이 만료되었거나 취소되었거나 유효하지 않습니다. 계정을 다시 연결하고 필요한 권한이 부여되었는지 확인해 주세요.",
@@ -65077,7 +65119,8 @@
      "text": "텍스트",
      "tools": "도구",
      "underline": "밑줄",
-     "variables": "변수"
+     "variables": "변수",
+     "quote": "인용"
     },
     "videoAnalysis": "영상 분석"
    },
@@ -65936,7 +65979,8 @@
       "untitled": "새 캘린더",
       "draft": "임시 저장",
       "host": "호스트",
-      "team": "팀"
+      "team": "팀",
+      "discard": "삭제"
      },
      "makeChanges": "수정",
      "multiChoiceLabel": "하나 이상 선택하세요",
@@ -66013,14 +66057,16 @@
        "classBooking": "그룹 클래스",
        "personal": "1:1 미팅",
        "roundRobin": "라운드 로빈",
-       "event": "이벤트"
+       "event": "이벤트",
+       "collective": "공동 예약"
       },
       "whatCustomersSee": "고객에게 보이는 화면",
       "you": "나({name})",
       "draft": "임시 저장",
       "groups": {
        "availability": "가용성",
-       "people": "사람"
+       "people": "사람",
+       "basics": "기본 정보"
       },
       "live": "라이브",
       "none": "없음",
@@ -66812,7 +66858,8 @@
    "searchForUsers": "사용자 검색",
    "selectDisposition": {
     "retry": "다시 시도",
-    "loadError": "처리 상태를 불러오지 못했습니다. 다시 시도하세요."
+    "loadError": "처리 상태를 불러오지 못했습니다. 다시 시도하세요.",
+    "saveError": "통화 결과를 저장하지 못했습니다."
    },
    "selectScript": "스크립트 선택",
    "spamLikely": "스팸 가능성 있음",
@@ -71772,6 +71819,20 @@
         "description": "누군가 코스나 오퍼에 가입하면 자동으로 환영 이메일을 발송합니다.",
         "offerSignup": "오퍼 가입",
         "title": "가입"
+       },
+       "liveSessionEmail": {
+        "adminReminder": "라이브 세션 알림(관리자)",
+        "description": "라이브 세션 및 세션 시리즈 활동을 회원과 관리자에게 알립니다.",
+        "recordingReady": "녹화본 준비 완료(관리자)",
+        "seriesCancelled": "세션 시리즈 취소됨",
+        "seriesCreated": "세션 시리즈 생성됨",
+        "seriesUpdated": "세션 시리즈 업데이트됨",
+        "sessionCancelled": "라이브 세션 취소됨",
+        "sessionCreated": "새 라이브 세션",
+        "sessionReminder": "라이브 세션 알림",
+        "sessionStarted": "라이브 세션 시작됨",
+        "sessionUpdated": "라이브 세션 업데이트됨",
+        "title": "라이브 세션"
        }
       }
      },
@@ -71942,7 +72003,10 @@
      "selectAll": "전체 선택",
      "skipped": "{count}건을 찾을 수 없어 건너뛰었습니다: {emails}",
      "title": "{role}에 클라이언트 추가",
-     "uploadFirst": "계속하려면 CSV를 업로드하세요."
+     "uploadFirst": "계속하려면 CSV를 업로드하세요.",
+     "counts": "연락처 1명 · {selected}명 선택됨 | 연락처 {count}명 · {selected}명 선택됨",
+     "csvHelp": "email 열이 필요합니다. 선택 항목인 access_ends 열로 클라이언트별 종료일을 지정할 수 있습니다.",
+     "matched": "이메일 {total}개 중 {found}개가 연락처와 일치합니다"
     },
     "addClients": "클라이언트 추가",
     "addDrawerHelp": "추가하면 해당 역할에 속하지 않은 클라이언트에게는 더 이상 표시되지 않습니다.",
@@ -71966,7 +72030,8 @@
      "workflowNamed": "워크플로우: {name}",
      "file": "파일",
      "workflow": "워크플로우",
-     "you": "나"
+     "you": "나",
+     "workflowRan": "워크플로우 실행됨"
     },
     "allGroups": "모든 역할",
     "alreadyAdded": "이미 추가됨",
@@ -72001,7 +72066,9 @@
      "rightTitle": "{role}만 열 수 있음",
      "selectAll": "전체 선택 ({count})",
      "starts": "{date}에 시작",
-     "all": "전체"
+     "all": "전체",
+     "addAll": "모두 추가",
+     "only": "{role}만"
     },
     "bookable": "포털 예약 켜짐",
     "bookingOff": "포털 예약 꺼짐",
@@ -72054,7 +72121,9 @@
      "stepOf": "{total}단계 중 {step}단계",
      "teamOnly": "팀원에게만 표시됩니다.",
      "new": "신규",
-     "preview": "미리보기"
+     "preview": "미리보기",
+     "nameHelp": "평소에 부르는 이름 그대로 지으세요(예: 수강생, VIP).",
+     "previewSummary": "{clients} · 아직 열린 항목 없음"
     },
     "createHelp": "평소에 부르는 이름 그대로 지으세요(예: 수강생, VIP).",
     "createRole": "역할 만들기",
@@ -72100,14 +72169,18 @@
      },
      "kindPagesTitle": "비공개 페이지",
      "persona": {
-      "newClient": "신규 클라이언트"
+      "newClient": "신규 클라이언트",
+      "student": "수강생",
+      "teacher": "강사"
      },
      "session": {
       "intro": {
-       "name": "소개 통화"
+       "name": "소개 통화",
+       "when": "15분"
       },
       "mock": {
-       "name": "모의 면접"
+       "name": "모의 면접",
+       "when": "45분"
       },
       "office": {
        "name": "오피스 아워",
@@ -72124,7 +72197,8 @@
      },
      "step": {
       "clients": {
-       "title": "클라이언트 추가"
+       "title": "클라이언트 추가",
+       "body": "직접 또는 워크플로우로"
       },
       "name": {
        "body": "예: 수강생, 강사, VIP",
@@ -72191,8 +72265,11 @@
       "title": "연락처 선택"
      },
      "workflow": {
-      "title": "워크플로우로 추가"
-     }
+      "title": "워크플로우로 추가",
+      "body": "폼 제출, 결제 성공, 태그 추가 시 클라이언트를 추가합니다"
+     },
+     "automatically": "자동으로",
+     "yourself": "직접"
     },
     "moreActions": "추가 작업",
     "namePlaceholder": "예: 수강생, 강사, VIP",
@@ -72318,7 +72395,8 @@
      "teachers": {
       "desc": "포털에서 강의하는 스태프입니다.",
       "join": "참여 방식: 직접 추가",
-      "opens": "열람 항목: 강사용 페이지, 모든 캘린더"
+      "opens": "열람 항목: 강사용 페이지, 모든 캘린더",
+      "name": "강사"
      },
      "vip": {
       "desc": "가장 소중한 클라이언트입니다.",
@@ -72401,7 +72479,42 @@
     "tabClients": "클라이언트",
     "updated": "수정일",
     "updatedYesterday": "어제",
-    "willClose": "제거 중"
+    "willClose": "제거 중",
+    "addCount": "{count}명 추가",
+    "addPeople": "클라이언트 추가",
+    "confirmBody": "이 역할의 모든 사람에게 즉시 적용되며, 나중에 추가되는 사람도 포함됩니다.",
+    "confirmTitle": "{members}의 접근 권한을 업데이트하시겠습니까?",
+    "deleteDescriptionOne": "클라이언트 1명이 이 역할로 받은 접근 권한을 잃게 됩니다. 이 작업은 되돌릴 수 없습니다.",
+    "discard": "삭제",
+    "edit": "편집",
+    "endDate": "종료일",
+    "itemAdded": "{count}개 추가됨",
+    "joinWorkflowBody": "모든 워크플로우에서 역할 추가·제거 액션을 사용할 수 있습니다.",
+    "memberMany": "클라이언트 {count}명",
+    "moreCount": "+{count}개 더 보기",
+    "nameFirst": "역할 이름을 정해야 무엇을 열지 선택할 수 있습니다.",
+    "noMembers": "아직 클라이언트가 없습니다",
+    "opens": "리소스",
+    "opensNothingShort": "아직 리소스가 없습니다",
+    "opensNothingTitle": "이 역할로 열리는 항목이 아직 없습니다.",
+    "optional": "(선택)",
+    "pagesMissing": "제한된 페이지 {count}개가 게시된 프로젝트에 더 이상 없습니다",
+    "removeNote": "제거하면 {group}(으)로 열리던 항목에 더 이상 접근할 수 없습니다. 단, 다른 역할로도 열리는 항목은 그대로 유지됩니다.",
+    "rowsPerPage": "페이지당 행 수",
+    "searchContacts": "이름, 이메일 또는 전화번호 입력",
+    "showSelected": "표시: 선택됨",
+    "showUnselected": "표시: 선택 안 됨",
+    "since": "시작일",
+    "soon": "출시 예정",
+    "startFromTemplate": "또는 템플릿으로 시작",
+    "statGroups": "역할",
+    "tplGoldDesc": "최상위 등급에서 열리는 모든 항목",
+    "unlocks": "열리는 항목",
+    "updatedDaysAgo": "{count}일 전",
+    "updatedToday": "오늘",
+    "viewAs": "{name}(으)로 보기",
+    "willExclude": "{names} 님이 이 역할에서 제거됩니다",
+    "willOpen": "추가할 항목"
    }
   },
   "contactsApp": {
@@ -73336,7 +73449,8 @@
       "long": "몇 분 정도 걸립니다. 계속 작업하거나 이 페이지를 나가도 됩니다.",
       "quick": "1~2분 정도 걸립니다. 계속 작업하거나 이 페이지를 나가도 됩니다.",
       "title": "{objectName} {count}개의 정보를 보강하는 중"
-     }
+     },
+     "button": "정보 보강"
     }
    },
    "manageSmartLists": {
@@ -74912,7 +75026,8 @@
        "multipleChoice": "복수 선택",
        "questionTypes": "질문 유형",
        "singleChoice": "단일 선택",
-       "subscribe": "구독"
+       "subscribe": "구독",
+       "tier": "등급"
       },
       "preview": {
        "fieldRating": "평점",
@@ -80177,7 +80292,9 @@
     "title": "일괄 작업",
     "updatesQueued": "서브 계정 {count}개에 업데이트 {changes}건이 대기열에 추가되었습니다.",
     "viewBulkActionHistory": "일괄 작업 기록 보기",
-    "disable": "끄기"
+    "disable": "끄기",
+    "enable": "켜기",
+    "updatingSubAccounts": "서브 계정 {count}개를 업데이트하는 중입니다."
    },
    "calls": "통화",
    "close": "닫기",
@@ -80266,7 +80383,8 @@
     "nameLabel": "블로그 게시물 제목",
     "notificationErrorTitle": "블로그 게시물을 만들지 못했습니다",
     "notificationTitle": "블로그 게시물이 생성되었습니다",
-    "title": "새 블로그 게시물 만들기"
+    "title": "새 블로그 게시물 만들기",
+    "descriptionValidation": "설명은 필수입니다"
    },
    "enableRebilling": "재청구 활성화",
    "exportRollup": {
@@ -80278,7 +80396,8 @@
     "success_description": "내보내기 파일은 선택한 사용자에게 이메일로 전송됩니다. 처리에 몇 분 정도 걸릴 수 있습니다.",
     "success_title": "내보내기가 시작되었습니다!",
     "admins": "관리자",
-    "users": "사용자"
+    "users": "사용자",
+    "recipients": "수신자"
    },
    "featureListTable": {
     "categories": "카테고리",
@@ -80308,7 +80427,9 @@
       "title": "식당",
       "needsDescription": "이 레스토랑에 어떤 도움을 줄지 알려주세요. 해당하는 항목을 모두 선택하세요",
       "description": "메뉴, 온라인 주문, 예약, 테이블 관리 등이 포함됩니다.",
-      "otherPlaceholder": "예: 포인트 적립 프로그램, 행사 예약"
+      "otherPlaceholder": "예: 포인트 적립 프로그램, 행사 예약",
+      "needsStep": "손님 응대",
+      "pageTitle": "외식업"
      },
      "fieldServices": {
       "description": "요청, 견적, 작업, 기술자 일정 및 경로 배정, 타임시트 등을 포함합니다.",
@@ -80316,7 +80437,8 @@
       "otherPlaceholder": "예: 정기 유지보수, 장비 추적",
       "pageTitle": "현장 서비스 업종",
       "selectLabel": "현장 서비스",
-      "title": "현장 서비스"
+      "title": "현장 서비스",
+      "needsStep": "작업"
      },
      "businessCoaching": {
       "description": "이벤트 티켓, 라이브 세션, 코스, 커뮤니티, 클라이언트 포털 등이 포함됩니다",
@@ -80324,12 +80446,15 @@
       "otherPlaceholder": "예: 분할 결제, 그룹 코칭 프로그램",
       "pageTitle": "비즈니스 코칭·컨설팅 업종",
       "selectLabel": "비즈니스 코칭·컨설팅",
-      "title": "비즈니스 코칭"
+      "title": "비즈니스 코칭",
+      "needsStepSubtitle": "{business} 의 고객 코칭 방식입니다. 해당하는 항목을 모두 선택하세요."
      },
      "generic": {
       "needsDescription": "이 비즈니스에서 어떤 부분을 도울지 알려 주세요. 해당하는 항목을 모두 선택하세요",
       "otherPlaceholder": "예: 그 밖에 도움이 필요한 부분",
-      "pageTitle": "{industry} 업종"
+      "pageTitle": "{industry} 업종",
+      "needsStep": "필요한 기능",
+      "needsStepSubtitle": "{business} 에 필요한 도움입니다. 해당하는 항목을 모두 선택하세요."
      }
     },
     "manageIndustry": {
@@ -80343,7 +80468,8 @@
      "placeholder": "업종 없음",
      "setIndustry": "업종 설정",
      "success": "업종이 설정되었습니다",
-     "confirm": "확인"
+     "confirm": "확인",
+     "title": "업종"
     },
     "startModal": {
      "importedSnapshots": "가져온 스냅샷",
@@ -80418,27 +80544,39 @@
      "fieldServices": {
       "estimatesInvoices": {
        "description": "견적을 작성하고, 인보이스를 보내고, 결제를 받고, 미수 잔액을 추적하세요.",
-       "title": "견적 및 인보이스"
+       "title": "견적 및 인보이스",
+       "cardDescription": "작업 견적을 내고 청구해 대금을 받습니다.",
+       "cardTitle": "견적서 및 인보이스"
       },
       "jobsVisits": {
        "description": "작업을 관리하고 방문 일정을 잡으며 작업 진행 상황을 추적합니다.",
-       "title": "작업 및 방문"
+       "title": "작업 및 방문",
+       "cardDescription": "각 작업을 시작부터 완료까지 추적합니다.",
+       "cardTitle": "작업 및 방문"
       },
       "onlineBooking": {
        "description": "고객이 온라인으로 서비스를 예약하게 하고, 서비스 지역·출장비·도착 시간대를 관리합니다.",
-       "title": "온라인 예약 및 서비스 지역"
+       "title": "온라인 예약 및 서비스 지역",
+       "cardDescription": "서비스 지역 내에서 온라인으로 예약합니다.",
+       "cardTitle": "온라인 예약"
       },
       "schedulingDispatch": {
        "description": "기술자를 배정하고 가용 시간을 관리하며 이동 경로를 최적화합니다.",
-       "title": "일정 관리 및 배정"
+       "title": "일정 관리 및 배정",
+       "cardDescription": "기술자를 배정하고 경로를 계획합니다.",
+       "cardTitle": "일정 및 배차"
       },
       "serviceRequests": {
        "description": "서비스 요청을 접수하고 세부 내용을 검토하며 현장 방문 일정을 잡습니다.",
-       "title": "서비스 요청"
+       "title": "서비스 요청",
+       "cardDescription": "요청을 받고 방문을 예약합니다.",
+       "cardTitle": "서비스 요청"
       },
       "timesheets": {
        "description": "근무 시간을 기록하고 근무 시간표를 관리합니다.",
-       "title": "근무 시간표 및 시간 기록"
+       "title": "근무 시간표 및 시간 기록",
+       "cardDescription": "작업별 근무 시간을 기록합니다.",
+       "cardTitle": "타임시트"
       }
      },
      "other": {
@@ -80449,27 +80587,39 @@
      "restaurant": {
       "delivery": {
        "description": "배달 주문을 처리하고 추적합니다.",
-       "title": "배송"
+       "title": "배송",
+       "cardDescription": "배달 주문과 배달 추적.",
+       "cardTitle": "배달"
       },
       "dineIn": {
        "description": "테이블, 예약 없이 방문한 손님, 홀 운영을 관리합니다.",
-       "title": "매장 내 식사"
+       "title": "매장 내 식사",
+       "cardDescription": "테이블, 현장 방문 손님, 홀 관리.",
+       "cardTitle": "매장 내 식사"
       },
       "orderManagement": {
        "description": "모든 채널의 주문을 한곳에서 관리합니다.",
-       "title": "주문 관리"
+       "title": "주문 관리",
+       "cardDescription": "모든 채널의 주문을 한곳에서.",
+       "cardTitle": "주문 관리"
       },
       "pickup": {
        "description": "사전 주문과 매장 픽업을 처리합니다.",
-       "title": "픽업 주문"
+       "title": "픽업 주문",
+       "cardDescription": "미리 주문하고 찾아가는 주문.",
+       "cardTitle": "픽업 주문"
       },
       "reputation": {
        "description": "리뷰와 평점을 관리하고 피드백에 응답합니다.",
-       "title": "평판 관리"
+       "title": "평판 관리",
+       "cardDescription": "리뷰, 평점, 답글.",
+       "cardTitle": "평판 관리"
       },
       "reservations": {
        "description": "온라인 테이블 예약과 노쇼 후속 조치를 관리합니다.",
-       "title": "예약"
+       "title": "예약",
+       "cardDescription": "온라인 예약과 노쇼 후속 관리.",
+       "cardTitle": "예약"
       }
      }
     },
@@ -80486,7 +80636,8 @@
     "back": "뒤로",
     "cancel": "취소",
     "continue": "계속",
-    "new": "신규"
+    "new": "신규",
+    "create": "만들기"
    },
    "locationList": {
     "columns": {
@@ -80502,7 +80653,8 @@
      "emails": "이메일",
      "reviews": "리뷰",
      "submissions": "제출",
-     "whatsapp": "왓츠앱"
+     "whatsapp": "왓츠앱",
+     "calls": "통화"
     },
     "status": {
      "scheduled": "삭제 대기 중",
@@ -80510,7 +80662,8 @@
      "approval": "승인",
      "declined": "거절됨",
      "paused": "일시 중지",
-     "verification": "인증"
+     "verification": "인증",
+     "prospect": "잠재 고객"
     }
    },
    "locations": {
@@ -80528,7 +80681,8 @@
      "approval": "승인",
      "declined": "거절됨",
      "paused": "일시 중지",
-     "verification": "인증"
+     "verification": "인증",
+     "prospect": "잠재 고객"
     },
     "tags": {
      "editMenu": {
@@ -80660,7 +80814,14 @@
      "pickerAllApplied": "모든 태그를 추가했습니다",
      "pickerListLabel": "태그 추가",
      "removeAria": "{name} 태그 제거",
-     "clearFilter": "지우기"
+     "clearFilter": "지우기",
+     "empty": "태그 추가",
+     "noResults": {
+      "clear": "태그 필터 지우기 | 태그 필터 지우기",
+      "descriptionAll": "아직 이 태그가 있는 서브 계정이 없습니다. | 아직 이 태그들이 있는 서브 계정이 없습니다.",
+      "descriptionPage": "이 페이지에는 이 태그가 있는 서브 계정이 없습니다. 다른 페이지를 보거나 필터를 지우세요. | 이 페이지에는 이 태그들이 있는 서브 계정이 없습니다. 다른 페이지를 보거나 필터를 지우세요."
+     },
+     "untagged": "태그 없음"
     },
     "unsavedChanges": "저장되지 않은 변경사항",
     "applied": "적용됨",
@@ -80878,7 +81039,11 @@
     "scopeAgency": "에이전시",
     "scopeAll": "전체",
     "scopeClients": "클라이언트",
-    "smartListDescription": "설명"
+    "smartListDescription": "설명",
+    "comfortable": "넓게",
+    "density": "표시 밀도",
+    "searchUsers": "사용자 검색",
+    "smartListUpdated": "스마트 리스트가 업데이트되었습니다"
    },
    "manageSubAccount": {
     "advancedSettings": {
@@ -80893,7 +81058,8 @@
      "todaysUsage": "오늘 사용량",
      "wallet_summary": {
       "balance_lower": "잔액이 다음보다 낮을 때",
-      "your_balance": "지갑 잔액"
+      "your_balance": "지갑 잔액",
+      "auto_recharge": "자동 충전 카드"
      },
      "emailSendingLimitsDescription": "에이전시 수준의 한도 업데이트가 제거되었습니다. 공유 도메인의 일일 최대 발송량은 하이퍼클래스 이메일의 단계별 기준을 따릅니다. 현재 한도와 사용량은 이메일 서비스에서 확인하세요.",
      "controlLocation": "서브 계정 설정 제어",
@@ -81114,7 +81280,8 @@
       "viaCopy": "링크 복사",
       "viaEmail": "이메일로",
       "viaSms": "SMS로",
-      "send": "보내기"
+      "send": "보내기",
+      "invalidPhone": "올바른 전화번호를 입력해 주세요"
      },
      "highLevel": "하이퍼클래스",
      "stripe": {
@@ -81289,7 +81456,8 @@
        "outboundPerMin": "$ 0.0085 / 분",
        "customerInboundPerMin": "$ 0.0602 / 분",
        "inboundPerMin": "$ 0.014 / 분",
-       "smsPerSegment": "$ 0.0083 / 세그먼트"
+       "smsPerSegment": "$ 0.0083 / 세그먼트",
+       "customerSmsPerSegment": "$ 0.034 / 세그먼트"
       },
       "accountSID": "계정 SID:",
       "aiModelDisclaimerContent": "요금 예시 - GPT-4o Mini",
@@ -81348,7 +81516,9 @@
       "workflowPremiumTooltip": "이 서브 계정의 프리미엄 워크플로우 트리거 및 액션 사용량에 수익 마진을 추가하려면 활성화하세요",
       "yourCost": "비용:",
       "phone": "전화번호",
-      "revoke": "해제"
+      "revoke": "해제",
+      "agree": "동의",
+      "keepOptionLabel": "이 Twilio 서브 계정 비용을 직접 지불하고 있다면 같은 계정을 계속 사용할 수 있습니다."
      },
      "benefits": {
       "scaleRevenue": {
@@ -81635,7 +81805,8 @@
        "title": "유연한 요금 모델"
       },
       "scaleRevenue": {
-       "title": "청구 규모 확대"
+       "title": "청구 규모 확대",
+       "description": "고객 청구를 자동화해 수작업 인보이스 없이 비즈니스와 함께 성장시키세요."
       }
      },
      "enablementStatus": "이 계정에서 사용량 청구를 이용할 수 있습니다.",
@@ -81738,7 +81909,8 @@
     "deleteLocation": "삭제",
     "notes": "메모",
     "save": "저장",
-    "tasks": "작업"
+    "tasks": "작업",
+    "stateProvRegion": "시/도/지역"
    },
    "operation": "작업 유형",
    "orderBy": "정렬 기준",
@@ -81886,7 +82058,9 @@
       "phone": "전화번호",
       "services": "서비스",
       "snapshots": "스냅샷",
-      "wordpress": "워드프레스"
+      "wordpress": "워드프레스",
+      "lcEmail": "하이퍼클래스 이메일",
+      "workflowPremiumRebilling": "워크플로우 프리미엄 기능 재청구"
      },
      "operators": {
       "exists": "존재함",
@@ -81920,7 +82094,9 @@
       "enabled": "활성화됨",
       "monthly": "매월",
       "paused": "일시 중지",
-      "pending": "대기 중"
+      "pending": "대기 중",
+      "trailing": "하락세",
+      "upselling": "업셀링"
      },
      "categories": {
       "calendarDetails": "캘린더 모듈",
@@ -81954,7 +82130,8 @@
     "form": "폼",
     "join": "참여",
     "name": "이름",
-    "notification": "알림"
+    "notification": "알림",
+    "waitlist": "대기자 명단"
    },
    "managedByLCPhone": "하이퍼클래스 전화에서 관리",
    "migrationToLCPhone": "하이퍼클래스 전화로 마이그레이션 중",
@@ -82370,7 +82547,256 @@
    "weekly": "매주",
    "whatsapp": "왓츠앱",
    "won": "고객전환성공",
-   "yes": "예"
+   "yes": "예",
+   "cancelRequestDescription": "받는 에이전시에서 더 이상 이 이전 요청을 볼 수 없으며, 서브 계정 {name} 은(는) 이전되지 않습니다.",
+   "createSubAccountV2": {
+    "businessStep": {
+     "subtitleAgency": "에이전시 프로필 정보로 채웠습니다. 확인하고 틀린 내용이 있으면 수정하세요.",
+     "subtitleGoogle": "Google 정보로 채웠습니다. 확인하거나 나중에 설정에서 마무리하세요.",
+     "subtitleManual": "업체 위치와 연락 방법입니다. 아는 내용을 입력하거나 나중에 설정에서 마무리하세요.",
+     "title": "업체 정보"
+    },
+    "creating": {
+     "createdFromAgency": "에이전시 정보로 서브 계정을 만들었습니다",
+     "createdFromGoogle": "Google 정보로 서브 계정을 만들었습니다",
+     "createdManual": "입력한 정보로 서브 계정을 만들었습니다",
+     "createdWithSnapshot": "스냅샷으로 서브 계정을 만들었습니다",
+     "creatingSubAccount": "서브 계정을 만드는 중",
+     "inviteExists": "초대를 보내지 않았습니다: 이 이메일은 이미 에이전시 팀에 등록되어 있습니다",
+     "inviteFailed": "{name} 님에게 초대를 보내지 못했습니다",
+     "inviteLinked": "{name} 님에게 접근 권한을 부여했습니다",
+     "inviteSending": "{name} 님에게 초대를 보내는 중",
+     "inviteSent": "{name} 님에게 초대를 보냈습니다",
+     "launchpad": "{needs}용 런치패드 설정 완료",
+     "progressLabel": "생성 진행 상황",
+     "setup": "작업 공간을 설정하는 중",
+     "subtitle": "몇 초 정도 걸립니다.",
+     "title": "{name} 만드는 중",
+     "titleIndustry": "{name} 설정 중",
+     "tools": "{needs}용 도구"
+    },
+    "details": {
+     "fields": {
+      "address": "주소",
+      "addressPlaceholder": "예: 2400 S Lamar Blvd",
+      "city": "도시",
+      "cityPlaceholder": "예: Austin",
+      "country": "국가",
+      "countryPlaceholder": "국가 선택",
+      "email": "이메일",
+      "emailPlaceholder": "예: maya{'@'}smiledental.com",
+      "firstName": "이름",
+      "lastName": "성",
+      "lastNamePlaceholder": "예: Patel",
+      "name": "이름",
+      "namePlaceholder": "예: Smile Dental",
+      "niche": "업종",
+      "phone": "전화번호",
+      "postalCode": "우편번호",
+      "sampleData": "이 서브 계정에 샘플 데이터 포함",
+      "timezone": "시간대",
+      "timezonePlaceholder": "시간대 선택",
+      "website": "웹사이트"
+     }
+    },
+    "invitePreview": {
+     "failed": "이메일 미리보기를 불러오지 못했습니다.",
+     "from": "보낸 사람",
+     "notSent": "에이전시에서 신규 사용자 이메일이 꺼져 있어 {name} 님은 이 이메일을 받지 않습니다.",
+     "retry": "다시 시도",
+     "subtitle": "{business} 을(를) 만들 때 {name} 님이 받는 이메일입니다. 모든 신규 고객이 같은 환영 이메일을 받습니다.",
+     "subtitleNoBusiness": "서브 계정을 만들 때 {name} 님이 받는 이메일입니다. 모든 신규 고객이 같은 환영 이메일을 받습니다.",
+     "title": "초대 이메일"
+    },
+    "nameStep": {
+     "agencyTooltip": "에이전시 자체용 서브 계정을 만듭니다. 초대하거나 청구할 고객이 없습니다.",
+     "clientTooltip": "고객용 서브 계정을 만듭니다. 소유자를 초대하고 요금을 청구할 수 있습니다.",
+     "createTag": "\"{name}\" 생성",
+     "filledFromGoogle": "Google 정보로 채웠습니다.",
+     "subtitle": "Google에서 검색해 채우거나 직접 입력하세요.",
+     "switchToAgency": "에이전시로 전환",
+     "tags": "태그",
+     "tagsHelp": "틈새 분야·도시·팀 등 원하는 기준으로 서브 계정을 묶으세요.",
+     "tagsPlaceholder": "태그 추가",
+     "tagsPlaceholderEmpty": "이름을 입력해 태그를 만드세요",
+     "title": "이름 및 업종"
+    },
+    "needsStep": {
+     "otherDescription": "그 밖에 필요한 것을 알려 주세요",
+     "otherTitle": "기타"
+    },
+    "ownerStep": {
+     "sendInvite": "지금 {name} 님에게 초대 이메일 보내기",
+     "sendInviteNoName": "지금 초대 이메일 보내기",
+     "subtitleNoName": "업체를 운영하는 사람입니다."
+    },
+    "ready": {
+     "createAnother": "서브 계정 하나 더 만들기",
+     "description": "{name} 으로 이동해 설정을 마무리하거나 서브 계정을 하나 더 만드세요.",
+     "goTo": "{name} 으로 이동",
+     "title": "{name} 준비 완료"
+    },
+    "review": {
+     "agencyPays": "에이전시가 하이퍼클래스에 비용 지불",
+     "agencyPaysDescription": "{name} 에서 사용한 통화·문자·이메일·AI 비용이 에이전시에 청구됩니다.",
+     "billClient": "{name} 에도 사용량 청구",
+     "billClientDescription": "에이전시 Stripe를 통해 마크업을 더해 청구됩니다.",
+     "business": "비즈니스",
+     "createFailedRetry": "다시 시도하세요. 계속 발생하면 고객 지원에 문의하세요.",
+     "edit": "편집",
+     "emailInvite": "지금 {name} 님에게 초대 이메일 보내기",
+     "inviteDescription": "비밀번호를 설정하고 로그인할 수 있는 링크를 보냅니다.",
+     "owner": "업체 소유자",
+     "plan": "플랜",
+     "planType": "유형",
+     "planTypeSaas": "SaaS 계정",
+     "regionBlocked": {
+      "contactSupport": "고객 지원 문의",
+      "editEmail": "이메일 수정",
+      "editPhone": "전화번호 수정",
+      "email": "허용되지 않는 지역의 이메일 주소입니다. 변경한 뒤 다시 시도하세요.",
+      "phone": "허용되지 않는 지역의 전화번호입니다. 변경한 뒤 다시 시도하세요.",
+      "title": "{name} 을(를) 만들지 못했습니다",
+      "unknown": "허용되지 않는 지역의 전화번호 또는 이메일입니다. 변경한 뒤 다시 시도하세요."
+     },
+     "rows": {
+      "address": "주소",
+      "email": "이메일",
+      "name": "이름",
+      "niche": "업종",
+      "phone": "전화번호",
+      "sampleData": "샘플 데이터",
+      "snapshot": "스냅샷",
+      "startingPoint": "시작점",
+      "timezone": "시간대",
+      "website": "웹사이트"
+     },
+     "sampleIncluded": "포함됨",
+     "startingPoint": {
+      "agency": "{name} 스냅샷 (내 스냅샷)",
+      "blank": "비어 있음",
+      "imported": "{name} 스냅샷 (가져옴)",
+      "template": "{name} 스냅샷 (하이퍼클래스 템플릿)"
+     },
+     "subtitleManual": "내용을 확인하고 틀린 부분이 있으면 수정하세요.",
+     "tagsLine": "태그: {tags}",
+     "title": "검토",
+     "usage": "사용량"
+    },
+    "search": {
+     "contacts": "내 연락처",
+     "contactsHint": "이름이나 이메일을 입력해 연락처를 검색하세요.",
+     "contactsPlaceholder": "연락처를 검색하거나 새 이름을 입력하세요",
+     "googlePlaceholder": "업체명과 도시로 Google 검색",
+     "loading": "검색 중…",
+     "noResults": "일치하는 항목이 없습니다",
+     "resultsFromGoogle": "Google 검색 결과",
+     "sourceLabel": "검색 출처",
+     "useAsNewName": "“{query}” 을(를) 새 업체명으로 사용"
+    },
+    "setup": {
+     "actionFailed": "문제가 발생했습니다. 다시 시도해 주세요.",
+     "close": "설정 닫기",
+     "coachmark": "설정은 필요할 때 언제든 여기에서 열 수 있습니다.",
+     "createdOn": "{date} 생성",
+     "finishSetup": "설정 마무리",
+     "finishSetupCount": "{total}개 중 {done}개",
+     "forYou": "내 할 일",
+     "forYourClient": "고객 할 일",
+     "hideFromTopBar": "상단 바에서 설정 숨기기",
+     "minutes": "{count}분",
+     "progress": "{total}개 중 {done}개 완료",
+     "status": {
+      "afterInvite": "초대 후",
+      "notSent": "전송되지 않음",
+      "sent": "발송됨",
+      "waiting": "대기 중"
+     },
+     "steps": {
+      "businessDetails": "업체 정보 추가",
+      "clientAccepts": "{name} 님이 초대 수락",
+      "clientAcceptsNotSent": "초대를 보내면 시작됩니다.",
+      "clientAcceptsSent": "{email} 으로 보냈습니다.",
+      "clientAddsCard": "{name} 님이 카드 등록",
+      "clientAddsCardWaiting": "{name} 님이 카드를 등록하기를 기다리는 중입니다.",
+      "sendInvite": "초대 보내기",
+      "sendInviteAction": "초대 보내기",
+      "sendInviteDescription": "비밀번호를 설정하고 로그인할 수 있는 이메일이 발송됩니다. 다른 주소로 보내야 하면 주소를 변경하세요.",
+      "sendReminder": "리마인더 보내기",
+      "sendTo": "받는 사람",
+      "setMarkups": "마크업 설정",
+      "setMarkupsAction": "마크업 설정",
+      "setMarkupsDescription": "{name} 님이 비용을 부담할 항목을 고르고 마크업을 설정하세요.",
+      "yourClient": "내 고객"
+     },
+     "title": "{name} 설정",
+     "toast": {
+      "createdAgency": "에이전시 서브 계정이 준비되었습니다.",
+      "createdInvited": "{name} 님에게 초대 이메일을 보냈습니다.",
+      "createdNotInvited": "준비되면 {name} 님에게 초대를 보내세요."
+     }
+    },
+    "snapshot": {
+     "all": "모든 스냅샷",
+     "empty": "아직 스냅샷이 없습니다",
+     "failed": "스냅샷을 불러오지 못했습니다. 다시 시도하세요.",
+     "retry": "다시 시도",
+     "searchPlaceholder": "스냅샷 검색",
+     "selected": "선택됨",
+     "subtitle": "새 서브 계정에 복사할 스냅샷을 선택하세요. 스냅샷의 페이지·자동화·설정이 함께 복사됩니다.",
+     "tabs": {
+      "agency": "내 스냅샷",
+      "template": "스냅샷 템플릿 ({count})"
+     }
+    },
+    "start": {
+     "blankDescription": "원하는 방식으로 설정하는 빈 서브 계정입니다.",
+     "blankTitle": "처음부터 시작",
+     "close": "닫기",
+     "industryGroup": "업종으로 시작",
+     "industryGroupDescription": "고객 업종에 맞춘 도구가 갖춰진 작업 공간입니다.",
+     "industryNew": "신규",
+     "question": "이 서브 계정을 어떻게 시작하시겠습니까?",
+     "snapshotDescription": "미리 만들어진 퍼널·워크플로우·파이프라인으로 시작합니다. 나중에 추가할 수도 있습니다.",
+     "snapshotTitle": "스냅샷 사용",
+     "subtitle": "처음부터 시작하거나, 스냅샷을 사용하거나, 고객 업종에 맞춘 설정을 사용하세요.",
+     "title": "서브 계정 만들기"
+    },
+    "validation": {
+     "blockedPhone": "이 지역의 전화번호는 사용할 수 없습니다. 다른 번호를 입력하세요.",
+     "invalidEmail": "유효한 이메일 주소를 입력하세요",
+     "invalidFirstName": "유효한 이름을 입력해 주세요",
+     "invalidLastName": "유효한 성을 입력해 주세요",
+     "invalidPhone": "선택한 국가에 맞는 유효한 전화번호를 입력하세요",
+     "lettersOnly": "문자만 입력하세요",
+     "otherNeed": "그 밖에 필요한 것을 입력하거나 '기타' 선택을 해제하세요",
+     "required": "필수 입력 항목입니다"
+    },
+    "wizard": {
+     "actions": {
+      "back": "뒤로",
+      "cancel": "취소",
+      "next": "다음"
+     },
+     "close": "닫기",
+     "steps": {
+      "label": "단계",
+      "name": "이름 및 업종",
+      "review": "검토",
+      "snapshot": "스냅샷"
+     },
+     "title": "새 서브 계정",
+     "titleIndustry": "새 {industry} 서브 계정"
+    }
+   },
+   "numberOfContacts": "연락처 수",
+   "outreach": "아웃리치",
+   "pending": "대기 중",
+   "receive": "받기",
+   "recipients": "수신자",
+   "release": "릴리스",
+   "reports": "리포트",
+   "transferNow": "지금 이전"
   },
   "opportunitiesApp": {
    "appointments": {
@@ -90536,6 +90962,9 @@
       },
       "openingHoursSpecification": {
        "shortDesc": "운영시간"
+      },
+      "founder": {
+       "label": "설립자"
       }
      },
      "organization": {
@@ -90629,6 +91058,9 @@
       },
       "member": {
        "label": "멤버"
+      },
+      "track": {
+       "label": "트랙"
       }
      },
      "person": {
@@ -90830,6 +91262,9 @@
      "scheduleType": {
       "open24x7": "24시간 연중무휴"
      }
+    },
+    "deleteSchema": {
+     "discard": "삭제"
     }
    }
   },
@@ -94124,7 +94559,8 @@
     "templateTypeDefault": "기본",
     "templateTypeFilter": "유형",
     "templateTypeMarketing": "마케팅",
-    "templateTypeUtility": "유틸리티"
+    "templateTypeUtility": "유틸리티",
+    "templateStatusTooltipPausedSee": "보기"
    }
   },
   "goKollabApp": {
@@ -94713,7 +95149,8 @@
       "payPerUseSubAccountUsersOnlyBody": "서브 계정 사용자의 사용량만 서브 계정 지갑에 청구됩니다. 에이전시 사용자의 사용량은 에이전시 지갑에 청구되므로 설정 작업 비용이 서브 계정에 전가되지 않습니다.",
       "subAccountUsersOnlyTitle": "서브 계정에 청구: 서브 계정 사용자만"
      }
-    }
+    },
+    "pulseInfo": "1 펄스 = 6초"
    },
    "cancellation": {
     "logs": {
@@ -103672,7 +104109,8 @@
     "heading": "데스크톱 앱 구성",
     "imagePlaceholderHint": "캐릭터, 마스코트 또는 일러스트 · 600 x 800 크기로 조정됩니다",
     "subtitleHint": "로그인 화면에서 제목 아래에 표시되는 텍스트",
-    "titleLabel": "제목"
+    "titleLabel": "제목",
+    "subtitleLabel": "부제목"
    },
    "header": {
     "subtitle": "화이트라벨 데스크톱 앱을 구성합니다",
@@ -103716,7 +104154,8 @@
     "signInTo": "{appName}에 로그인",
     "yourAppName": "앱 이름",
     "yourLogo": "로고",
-    "valid": "유효함"
+    "valid": "유효함",
+    "labelSubtitle": "부제목"
    },
    "status": {
     "buildingMessage": "최초 1회만 진행됩니다. 약 24시간 후에 다시 확인하세요. 다운로드 링크가 여기에 표시됩니다.",
@@ -103752,7 +104191,9 @@
      "minimal": "미니멀",
      "rose": "로즈",
      "slate": "슬레이트",
-     "violet": "바이올렛"
+     "violet": "바이올렛",
+     "amber": "앰버",
+     "ocean": "오션"
     },
     "quickPresets": "빠른 프리셋",
     "secondaryBrandColor": "보조 색상",
@@ -103763,7 +104204,8 @@
     "customPreset": "사용자 지정",
     "gradient": "그라데이션",
     "gradientStart": "시작",
-    "heading": "테마"
+    "heading": "테마",
+    "gradientEnd": "끝"
    },
    "upload": {
     "autoFitHint": "대상 영역에 맞게 크기가 조정됩니다",
@@ -103999,7 +104441,12 @@
     "select": "선택",
     "show": "표시",
     "success": "성공",
-    "version": "버전"
+    "version": "버전",
+    "conflicts": "충돌",
+    "found": "있음",
+    "gridView": "그리드 보기",
+    "listView": "목록 보기",
+    "load": "불러오기"
    },
    "conflictStage": {
     "calendarGroups": "캘린더 그룹",
@@ -104142,7 +104589,25 @@
     "noImportedSnapshots": "가져온 스냅샷이 없습니다",
     "subAccountRestrictedTooltip": "서브 계정 제한 스냅샷이므로 새 서브 계정을 만드는 데 사용할 수 없습니다.",
     "title": "가져온 스냅샷",
-    "useCustomName": "사용자 지정 이름 사용"
+    "useCustomName": "사용자 지정 이름 사용",
+    "autoImport": {
+     "importFailed": {
+      "title": "스냅샷을 가져오지 못했습니다"
+     },
+     "invalidLocation": {
+      "cancel": "취소",
+      "title": "이 서브 계정을 찾을 수 없습니다"
+     },
+     "loadTimeout": {
+      "goToAccount": "계정으로 이동"
+     },
+     "loadingAriaLabel": "계정 설정 중",
+     "setup": {
+      "description": "{agent} 로 {account} 을(를) 준비하는 중입니다. 몇 초 정도 걸립니다.",
+      "descriptionNoLocation": "{agent} 로 계정을 준비하는 중입니다. 몇 초 정도 걸립니다.",
+      "fallbackLocation": "내 계정"
+     }
+    }
    },
    "linkedAssets": {
     "calendarGroups": "캘린더 그룹",
@@ -104158,7 +104623,8 @@
     "subAccount": "서브 계정",
     "title": "연결된 서브 계정",
     "search": "검색",
-    "status": "상태"
+    "status": "상태",
+    "description": "이 스냅샷에 연결된 서브 계정 편집"
    },
    "locationPicker": {
     "label": "서브 계정",
@@ -104324,7 +104790,11 @@
     "expand": "확장",
     "filterAll": "전체",
     "filterLinked": "연결됨",
-    "type": "유형"
+    "type": "유형",
+    "conflictsDescription": "충돌하는 데이터 처리",
+    "conflictsTitle": "충돌",
+    "found": "있음",
+    "whatsappTemplatesTooltip": "서브 계정의 기본 WhatsApp 계정 템플릿만 포함되며, 각 서브 계정의 기본 WhatsApp 계정으로 불러옵니다."
    },
    "pushSnapshotActions": {
     "copy": "공유 링크 복사",
@@ -104399,7 +104869,9 @@
     "emails": "이메일",
     "restricted": "제한됨",
     "restrictedAssetsContinue": "계속",
-    "typeColumn": "유형"
+    "typeColumn": "유형",
+    "arnHelp": "관계 번호마다 뒤에 쉼표(,)를 붙이세요",
+    "shareable": "공유 가능"
    },
    "sharedSnapshots": {
     "agencyLink": "에이전시 제한 링크",
@@ -104514,7 +104986,8 @@
     "statusFailed": "실패",
     "statusHeader": "상태",
     "statusProcessing": "처리 중",
-    "title": "기록"
+    "title": "기록",
+    "pushedDate": "푸시 날짜"
    },
    "snapshotPushHistoryModal": {
     "errorLoading": "기록을 불러오지 못했습니다.",
@@ -104597,7 +105070,9 @@
     "typeImported": "가져옴",
     "typeMarketplace": "마켓플레이스",
     "typeTemplate": "템플릿",
-    "unknown": "알 수 없음"
+    "unknown": "알 수 없음",
+    "typeOwn": "자체",
+    "typePurchased": "구매"
    },
    "templateDetails": {
     "createNewSubAccount": "새 서브 계정 만들기"
@@ -104614,6 +105089,108 @@
    "versionHistory": {
     "noVersionHistoryDescription": "이 스냅샷의 버전 기록이 없습니다",
     "noVersionHistoryFound": "버전 기록이 없습니다"
+   }
+  },
+  "funnelWebsiteDomainApp": {
+   "aria": {
+    "customXmlSitemapMappings": "커스텀 XML 사이트맵 매핑",
+    "deleteDomainConfirmation": "도메인 삭제 확인",
+    "domainsList": "도메인 목록",
+    "editCustomPath": "커스텀 경로 편집",
+    "modalActions": "모달 작업",
+    "selectPage": "{pageName} 선택"
+   },
+   "common": {
+    "add": "추가",
+    "adding": "추가하는 중...",
+    "back": "뒤로",
+    "cancel": "취소",
+    "clearSearch": "검색 지우기",
+    "delete": "삭제",
+    "domain": "도메인",
+    "edit": "편집",
+    "emptySearchText": "검색어 “{searchTerm}”와(과) 일치하는 도메인이 없습니다. 다시 시도하세요.",
+    "emptyText": "아직 아무것도 없습니다!",
+    "generate": "생성",
+    "generating": "생성 중...",
+    "lastUpdated": "최근 수정",
+    "linkDomain": "도메인 연결",
+    "linking": "연결 중...",
+    "name": "이름",
+    "noDomainsFound": "도메인을 찾을 수 없습니다",
+    "noFunnelLookupsFound": "퍼널 조회 결과가 없습니다",
+    "okay": "확인",
+    "proceed": "계속",
+    "save": "저장",
+    "saving": "저장 중...",
+    "step": "{stepNumber}단계"
+   },
+   "errors": {
+    "attachDomainFailed": "도메인 연결에 실패했습니다",
+    "cNameNotFound": "{subdomain} 을(를) {cnameRedirectURL}/{serverIPAddress} 로 연결하는 CNAME/A 레코드를 찾을 수 없습니다",
+    "domainAlreadyExists": "같은 이름의 도메인이 이미 존재합니다",
+    "domainAlreadyExistsInOtherLocation": "같은 이름의 도메인이 이미 다른 계정에 존재합니다",
+    "domainNameLimitError": "도메인 이름은 63자를 초과할 수 없습니다",
+    "invalidDomain": "유효하지 않은 도메인입니다",
+    "llmsTxtTruncated": "{max}자 제한을 넘는 내용은 끝에서부터 삭제되었습니다.",
+    "somethingWentWrong": "도메인을 삭제하는 중 문제가 발생했습니다",
+    "urlInvalid": "URL이 유효하지 않은 것 같습니다"
+   },
+   "header": {
+    "addNewDomain": "새 도메인 추가",
+    "domains": "도메인",
+    "needHelp": "도메인 설정에 도움이 필요하신가요?"
+   },
+   "migrations": {
+    "benefit1": "퍼널과 웹사이트가 이전보다 15% 빨라졌습니다.",
+    "benefit2": "페이지 캐싱 개선 및 DDoS 공격 방지가 쉬워졌습니다.",
+    "benefit3": "추가 보안 기능이 강화되었습니다.",
+    "button": "도메인 마이그레이션",
+    "header": "이 도메인은 마이그레이션을 권장합니다",
+    "info": "마이그레이션 필요",
+    "listBenefits": "다음과 같은 이점이 있습니다:",
+    "setupInstruction": "설정 안내"
+   },
+   "modals": {
+    "addDomain": "도메인 추가",
+    "addDomainNote": "참고: 도메인({rootDomain})에 <code>{subDomain}</code> 에 대해 <code>{serverIPAddress}</code> 를 가리키는 A 레코드 또는 <code>{cnameRedirectURL}</code> 를 가리키는 CNAME 레코드가 있는지 확인하세요",
+    "addNew": "새로 추가",
+    "addYourOwnDomain": "내 도메인 추가",
+    "additionalOptions": "추가 옵션",
+    "customPath": "커스텀 경로",
+    "customXmlSitemap": "커스텀 XML 사이트맵",
+    "defaultErrorPageInfo": "방문자가 도메인에서 유효하지 않은 URL에 접속했을 때 이동할 페이지를 지정하세요.",
+    "defaultPage": "기본 페이지",
+    "defaultPageInfo": "방문자가 도메인의 루트 경로에 접속했을 때 이동할 페이지를 지정하세요.",
+    "doYouWantToDelete": "{item} 을(를) 삭제하시겠습니까?",
+    "domainAddedSuccessFully": "축하합니다! 이제 {domainUrl} 을(를) 상품과 연결할 수 있습니다",
+    "lastModified": "마지막 수정",
+    "linkDomainWithFunnel": "도메인을 퍼널과 연결",
+    "needHelpConfiguring": "루트 도메인 설정에 도움이 필요하신가요?",
+    "redirectModalText": "이 도메인에 연결된 리디렉션 URL이 있습니다. 도메인을 삭제하기 전에 리디렉션을 먼저 삭제하세요.",
+    "robotsTxtCode": "Robots.txt 코드",
+    "selectDefaultFunnelStep": "기본 퍼널 단계 설정",
+    "selectDefaultPage": "루트 URL에 사용할 페이지 선택",
+    "selectFunnelForSiteMap": "XML 사이트맵에 추가할 퍼널을 선택하세요",
+    "setDefault404": "기본 404/오류 페이지 설정",
+    "takeMeToRedirects": "리디렉션 페이지로 이동",
+    "urlsUpdated": "중복 URL 때문에 퍼널의 일부 URL이 변경되었을 수 있습니다.",
+    "watchThisVideo": "사용 방법 영상 보기",
+    "xmlSiteMap": "XML 사이트맵",
+    "xmlSuccessText": "이 도메인의 XML 사이트맵을 만들었습니다. 검색 엔진이 읽을 수 있도록 제공됩니다. 자세한 내용은 다음에서 확인하세요:"
+   },
+   "placeHolders": {
+    "addLlmsTxt": "이 도메인의 llms.txt 내용을 입력하세요",
+    "addRobotsTxtCode": "이 도메인의 robots.txt 코드를 입력하세요",
+    "searchForDomain": "도메인 검색",
+    "selectDefaultFunnelStepForDomain": "도메인의 기본 퍼널 단계 선택",
+    "selectErrorPage": "루트 URL에 사용할 오류 페이지 선택",
+    "selectErrorPageForDomain": "도메인의 기본 404/오류 페이지 선택",
+    "selectFunnelForDomain": "도메인에 연결할 퍼널 선택"
+   },
+   "warning": {
+    "regexRedirectExists": "이 도메인은 {domain} 으로 리디렉션됩니다",
+    "requestInProgress": "요청 처리 중..."
    }
   }
  },
@@ -168475,6 +169052,1806 @@
      }
     }
    }
+  },
+  "agentBuilderLong": {
+   "aiEmployee": {
+    "modal": {
+     "paymentWall": {
+      "tosPromo#0": "AI 직원 구독에는 하이퍼클래스 서비스 약관이 적용됩니다. {promoName} 프로모션(\"프로모션\")은 (i) 현재 유료 구독이 아닌 무료 체험 중인 에이전시에 속하고, (ii) 현재 AI 직원 구독에 가입되어 있지 않으며, (iii) 소속 에이전시에서 처음으로 프로모션에 참여하는 서브 계정(에이전시당 1개 서브 계정으로 제한, \"적격 서브 계정\")이 이용할 수 있습니다. 프로모션은 AI 직원 30일 무료 이용으로 제한됩니다. 적격 서브 계정은 취소하지 않으면 프로모션 종료 시 ",
+      "tosPromo#1": "AI 직원 구독으로 자동 전환됩니다. 하이퍼클래스는 단독 재량으로 남용 또는 과도하다고 판단하는 AI 직원 사용을 제한하거나 중단할 권리를 보유합니다. AI 직원 사용 시 통신 추가 요금이 부과될 수 있습니다."
+     }
+    }
+   },
+   "conversationAI": {
+    "chatBuilder": {
+     "templates": {
+      "afterHours": {
+       "prompt#0": "[비즈니스 이름]의 영업시간 외 문의를 맡는 인바운드 에이전트를 만들어 주세요.\n\n운영 시간: [영업시간 및 시간대] 외에만 작동합니다.\n채널: [SMS / 라이브 채팅 / WhatsApp].\n\n첫 인사: 지금은 영업시간이 아니라는 점과 다시 문을 여는 시간을 안내한 뒤, 무엇을 도와드릴지 묻습니다.\n\n- 자주 묻는 질문은 지식 베이스를 바탕으로 답합니다.\n- 이름, 전화번호, 이메일, 필요한 내용에 대한 짧은 설명을 받아 연락처에 저장합니다.\n- 팀과 통화를 원하면 [캘린더]에서 다음 영업일의 시간 2개를 제안하고 ",
+       "prompt#1": "통화를 예약합니다.\n- 긴급한 경우 [긴급 규칙: 비상 연락처 안내 / 당직 사용자에게 알림]을 따르고, 이후 어떻게 진행되는지 알려 줍니다.\n\n대화를 마치기 전에 다음 단계와 시점을 확인해 줍니다.\n후속 조치가 필요한 대화마다 한 줄 요약과 함께 [팀원]에게 작업을 만듭니다.\n할인, 환불, 당일 서비스처럼 팀의 승인이 필요한 일은 절대 약속하지 않습니다."
+      },
+      "faqResponder": {
+       "prompt#0": "[비즈니스 이름]에 자주 들어오는 질문에 답하고, 그 밖의 문의는 팀에 넘기는 인바운드 에이전트를 만들어 주세요.\n\n채널: [라이브 채팅 / Facebook / Instagram / SMS].\n\n지식 베이스에 있는 내용으로만 답합니다. 답변은 2~3문장으로 하고, 관련 페이지가 있으면 링크를 붙입니다.\n지식 베이스에 없는 질문이거나 확신이 없으면 추측하지 않습니다. 팀과 연결해 드리겠다고 말하고 [팀원 / 팀]에게 넘깁니다.\n답한 뒤에는 더 궁금한 점이 있는지 묻습니다. 구매 의향을 보이면 [캘린더]로 통화 예약을 제안합니다.\n\n",
+       "prompt#1": "불만, 환불, 계정 또는 청구 문제가 있거나 고객이 상담원을 요청하면 즉시 넘깁니다.\n팀이 가장 많이 묻는 내용을 볼 수 있도록 대화에 주제별 태그([가격 / 영업시간 / 서비스 / 기타])를 붙입니다."
+      },
+      "frontDesk": {
+       "prompt#0": "[업종]인 [비즈니스 이름]의 안내 데스크 역할을 하는 인바운드 에이전트를 만들어 주세요.\n\n채널: [SMS / WhatsApp / 라이브 채팅]. 고객이 사용하는 채널로 답합니다.\n\n서비스, 가격, 영업시간, 위치, 정책에 관한 질문은 지식 베이스로만 답합니다. 지식 베이스에 답이 없으면 팀에 확인하겠다고 말하고 넘깁니다.\n\n예약:\n- 필요한 서비스와 신규 고객인지 기존 고객인지 묻습니다.\n- 해당 서비스에 대해 [캘린더]에서 가능한 시간 2개를 제안합니다.\n- 날짜, 시간, ",
+       "prompt#1": "장소, 사전 준비 사항과 함께 예약을 확정합니다.\n- 일정 변경과 취소는 기존 예약을 찾아 새로운 시간을 제안하는 방식으로 처리합니다.\n\n긴급한 문제(통증, 응급 상황, 안전 문제), 청구 또는 결제 분쟁, 불만이 있거나 고객이 상담원을 요청하면 즉시 [안내 데스크 사용자]에게 넘깁니다. 담당자가 대략 언제 연락할지 고객에게 알려 줍니다.\n\n말투: 따뜻하고 전문적이며 간결하게. 한 번에 하나씩 질문합니다.\n의료, 법률, 금융 관련 조언은 절대 하지 않습니다. 가격이나 예약 가능 여부를 지어내지 않습니다."
+      },
+      "leadQualifier": {
+       "prompt#0": "[비즈니스 이름]에 메시지를 보낸 새 리드의 자격을 확인하고, 적격 리드와 통화를 예약하는 인바운드 에이전트를 만들어 주세요.\n\n채널: [Facebook / Instagram / 라이브 채팅 / SMS]. 리드가 사용하는 채널로 답합니다.\n\n리드에게 인사하고 무엇을 찾는지 물은 뒤, 아래 질문을 하나씩 하며 자격을 확인합니다. 이미 답한 질문은 건너뜁니다.\n- [필요: 원하는 서비스나 상품]\n- [시기: 언제 시작하고 싶은지]\n- [예산 또는 준비 정도]\n- [해당되는 경우 지역 또는 서비스 지역]\n\n적격 기준: [자격 규칙, 예: 예산 X 이상이고",
+       "prompt#1": " 3개월 이내 시작].\n- 적격: [캘린더]에서 시간 2개를 제안해 통화를 예약하고, \"적격\" 태그를 붙인 뒤 [파이프라인 단계]로 옮깁니다.\n- 아직 부적격: 도움이 되는 다음 단계나 자료를 공유하고, \"육성\" 태그를 붙인 뒤 정중히 마무리합니다.\n- 서비스 지역 밖이거나 맞지 않는 경우: 감사 인사를 하고 \"부적격\" 태그를 붙인 뒤 정중히 마무리합니다.\n\n모든 답변은 해당하는 연락처 필드에 저장합니다.\n리드가 상담원을 요청하거나, 맞춤 가격을 원하거나, 큰 거래라면 [영업 담당자]에게 넘깁니다."
+      },
+      "missedCall": {
+       "prompt#0": "[비즈니스 이름]으로 걸려 온 전화를 받지 못했을 때 문자로 다시 연락하는 아웃바운드 에이전트를 만들어 주세요.\n\n트리거: [전화번호]로 걸려 온 전화를 받지 못했거나 음성사서함으로 넘어간 경우.\n채널: 고객이 전화한 번호에서 보내는 SMS.\n\n1분 안에 보내는 첫 메시지: \"안녕하세요, [비즈니스 이름]입니다. 전화를 받지 못해 죄송합니다! 무엇을 도와드릴까요?\" 이름을 알면 {'{{'}contact.first_name{'}}'}을(를) 사용합니다.\n\n1~2개의 질문으로 필요한 내용을 파악합니다.\n- 지식 베이스로 답할 수 있으면 답합니다.\n- 예약을 원하면 [캘린더]에서 시간 2개를 제안하고",
+       "prompt#1": " 예약합니다.\n- 다시 전화받기를 원하면 편한 시간을 묻고, 사유와 시간을 담아 [팀원]에게 작업을 만든 뒤 확인해 줍니다.\n- 긴급해 보이면 즉시 [팀원]에게 넘깁니다.\n\n2시간 동안 답이 없으면 짧은 후속 메시지를 한 번 보내고 멈춥니다.\n고객이 그만 보내 달라고 하거나 잘못 건 번호라고 하면 즉시 멈춥니다."
+      },
+      "reactivation": {
+       "prompt#0": "데이터베이스의 오래되거나 반응이 없는 연락처를 다시 활성화하는 아웃바운드 에이전트를 만들어 주세요.\n\n트리거: 최근 [X]개월 동안 활동이 없고, 수신거부하지 않았으며, 기존 고객이 아닌 연락처의 스마트 리스트에 한 번 실행하거나, \"재활성화\" 태그가 추가된 연락처에 실행합니다.\n채널: SMS. 답장은 리드가 사용하는 채널에서 처리합니다.\n\n첫 메시지: {'{{'}contact.first_name{'}}'}(으)로 인사합니다. [비즈니스 이름]을(를) 어떻게 알게 되었는지 짧게 상기시킨 뒤 [오퍼 또는 다시 연락하는 이유]를 전하고, 예/아니요로 답할 수 있는 질문을 합니다. 예: \"아직 ",
+       "prompt#1": "알아보고 계신가요?\" 짧고 개인적으로, 영업하는 느낌 없이 씁니다.\n\n관심을 보이면 현재 필요한 것을 파악하는 질문을 하나 한 뒤 [캘린더]에서 시간 2개를 제안해 통화를 예약합니다. \"재활성화됨\" 태그를 붙입니다.\n질문을 하면 지식 베이스로 답한 뒤 예약을 제안합니다.\n관심이 없다고 하면 감사 인사를 하고 멈춥니다.\n이미 다른 곳과 진행 중이라고 하면 감사 인사를 하고 멈춥니다.\n\n답이 없으면 10일 동안 후속 메시지를 최대 2번 보내고 멈춥니다.\n연락처가 상담원을 요청하거나 ",
+       "prompt#2": "불만을 제기하면 [팀원]에게 넘깁니다.\n연락처가 그만 보내 달라고 하거나, 수신 거부를 요청하거나, 잘못 건 번호라고 하면 즉시 멈춥니다."
+      },
+      "serviceDispatcher": {
+       "prompt#0": "[업종, 예: 배관 / 냉난방 / 전기] 업체인 [비즈니스 이름]의 서비스 요청을 접수하는 인바운드 에이전트를 만들어 주세요.\n\n채널: [SMS / WhatsApp / 라이브 채팅].\n\n한 번에 하나씩 질문해 다음 정보를 받습니다.\n- 어떤 문제인지\n- 서비스 주소\n- 얼마나 긴급한지\n- 가능하면 사진\n- 연락하기 좋은 번호\n\n긴급 상황([긴급 예시, 예: 침수, 가스 냄새, 겨울철 난방 고장, 스파크]):\n- 위험이 있으면 [안전 지침]을 따르도록 안내합니다.\n- 요약과 주소를 담아 즉시 [당직 사용자]에게 알립니다.\n- 고객에게 ",
+       "prompt#1": "[시간] 안에 기사가 연락드린다고 알려 줍니다.\n\n긴급하지 않은 경우:\n- [기사 캘린더]에서 방문 가능 시간대 2개를 제안하고 방문을 예약합니다.\n- 날짜, 도착 시간대, 주소, 서비스 요금을 확인해 줍니다.\n\n가격과 서비스 지역 질문은 지식 베이스로만 답합니다. 수리 가격은 절대 견적을 내지 않습니다.\n문제 요약과 긴급도를 담아 연락처에 작업 메모를 남깁니다.\n불만, 보증 청구가 있거나 고객이 상담원을 요청하면 [배차 담당자]에게 넘깁니다."
+      },
+      "speedToLead": {
+       "prompt#0": "새 리드가 들어오면 몇 초 안에 연락하는 아웃바운드 에이전트를 만들어 주세요.\n\n트리거: [폼 / 퍼널 / 광고 소스]에서 새 연락처가 생성된 경우.\n채널: SMS로 보냅니다. 답장도 같은 채널에서 처리합니다.\n\n첫 메시지: {'{{'}contact.first_name{'}}'}(으)로 인사하고, 폼 답변을 바탕으로 문의한 내용을 언급한 뒤, 대화를 시작할 간단한 질문을 하나 합니다. 300자 이내로, 자동 발송처럼 느껴지지 않게 씁니다.\n\n최대 3개의 질문을 하나씩 하며 자격을 확인합니다.\n- 어떤 도움이 필요한지\n- 원하는 시기\n- ",
+       "prompt#1": "예산 또는 진행할 준비가 되었는지\n폼에서 이미 답한 질문은 건너뜁니다.\n\n리드가 적합하고 대화할 준비가 되었다면 [캘린더]에서 가능한 시간 2개를 제안해 통화를 예약합니다. 날짜, 시간, 시간대와 함께 예약을 확정합니다.\n아직 준비가 안 되었다면 감사 인사를 하고 \"육성\" 태그를 붙인 뒤 멈춥니다.\n\n1시간 동안 답이 없으면 짧은 후속 메시지를 한 번 보냅니다. 24시간이 지나도 답이 없으면 멈춥니다.\n\n리드가 상담원을 요청하거나, 불만을 제기하거나,",
+       "prompt#2": " 지식 베이스에 없는 내용을 물으면 [팀원 / 사용자]에게 넘깁니다.\n리드가 그만 보내 달라고 하거나, 수신 거부를 요청하거나, 관심 없다고 하면 즉시 멈추고 \"수신거부\" 태그를 붙입니다."
+      },
+      "stalledLeads": {
+       "prompt#0": "진행이 멈춘 리드에게 다시 다가가는 아웃바운드 에이전트를 만들어 주세요.\n\n트리거: 다음 중 하나:\n- 연락처가 [파이프라인]의 [단계 이름] 단계에 [X]일 넘게 활동 없이 머문 경우\n- 연락처가 예약한 일정이 불참·취소되었거나, 완료 후 [X]일 동안 다음 단계가 없는 경우\n- Stalled_lead_3days 태그와 함께 연락처가 추가될 때마다\n채널: SMS. 1일 동안 답이 없으면 자동으로 후속 메시지를 보냅니다.\n\n첫 메시지: {'{{'}contact.first_name{'}}'}(으)로 인사합니다. 리드가 멈춘 지점(마지막 예약 ",
+       "prompt#1": "또는 현재 단계)을 언급하고 아직 도움이 필요한지 묻습니다. 사과하거나 재촉하는 느낌을 주지 않습니다. 단계를 이해하고 고객 중심의 표현을 씁니다.\n\n목표: 진행이 멈춘 이유를 파악하고 다음 단계로 이끕니다.\n- 아직 관심이 있으면 [캘린더]에서 시간 2개를 제안해 다음 미팅을 예약합니다.\n- 질문이나 우려가 있으면 지식 베이스로 답한 뒤 예약을 제안합니다.\n- 다른 선택을 했거나 더 이상 관심이 없으면 감사 인사를 하고 [실패 단계]로 옮긴 뒤 멈춥니다.\n- 시기가 맞지 않으면 언제 ",
+       "prompt#2": "다시 연락하면 좋을지 묻고, 그 날짜로 후속 작업을 만든 뒤 멈춥니다.\n\n답이 없으면 7일 동안 후속 메시지 3개를 보낸 뒤 멈춥니다.\n리드가 가격 협상이나 불만을 언급하거나 상담원을 요청하면 [거래 담당자]에게 넘깁니다.\n리드가 그만 보내 달라고 하거나, 수신 거부를 요청하거나, 관심 없다고 하면 즉시 멈춥니다."
+      }
+     }
+    }
+   }
+  },
+  "aiTemplates|app|appDetail|common|error": {
+   "appDetail": {
+    "aiAgents": {
+     "conversationTitle": "대화 AI 에이전트",
+     "preConfiguredActions": "패키지에 포함된 사전 구성 액션",
+     "useCases": "사용 사례",
+     "voiceTitle": "음성 AI 에이전트"
+    },
+    "installConfirmation": {
+     "allowAndInstall": "허용 후 설치",
+     "back": "뒤로",
+     "byDeveloper": "{name} 제공",
+     "cancel": "취소",
+     "documentation": "문서",
+     "installError": "앱을 설치하지 못했습니다",
+     "installSuccess": "앱을 설치했습니다",
+     "locations": "서브 계정",
+     "permissionsTitle": "앱이 요청하는 권한",
+     "redirectBlocked": "팝업이 차단되었습니다. 앱 연결을 마치려면 이 사이트의 팝업을 허용해 주세요.",
+     "resources": "리소스",
+     "selectSubAccount": "설치할 서브 계정을 선택해 주세요.",
+     "subtitle": "마켓플레이스 앱을 설치하려고 합니다. 설치를 진행하기 전에 아래 정보를 확인해 주세요.",
+     "supportWebsite": "지원 웹사이트",
+     "title": "설치 확인",
+     "website": "웹사이트"
+    },
+    "media": {
+     "appPreview": "앱 미리보기",
+     "closePreview": "미리보기 닫기",
+     "more": "+{count}개 더 보기",
+     "nextPreview": "다음 미리보기",
+     "previousPreview": "이전 미리보기"
+    },
+    "metadata": {
+     "appDetails": "앱 세부 정보",
+     "businessNiche": "비즈니스 분야",
+     "category": "카테고리",
+     "developer": "개발자",
+     "updated": "업데이트",
+     "version": "버전"
+    },
+    "otherApps": {
+     "byDeveloper": "{name} 제공",
+     "free": "무료",
+     "installed": "설치됨",
+     "paid": "유료",
+     "title": "{developer}의 다른 앱",
+     "viewMore": "더 보기",
+     "wl": "화이트라벨"
+    },
+    "permissions": {
+     "added": "추가됨",
+     "addedCount": "{count}개 추가됨",
+     "groupScopesCount": "{count}개 범위",
+     "noPermissions": "이 앱이 요청한 권한이 없습니다.",
+     "optionalPermissions": "선택 권한",
+     "optionalTooltip": "이 권한은 선택 사항입니다. 부여할 권한을 직접 고를 수 있으며, 앱은 이 권한 없이도 작동해야 합니다.",
+     "read": "읽기",
+     "removed": "제거됨",
+     "removedCount": "{count}개 제거됨",
+     "requiredPermissions": "필수 권한",
+     "requiredTooltip": "이 권한은 앱이 작동하는 데 필요하며, 앱을 설치하면 항상 부여됩니다.",
+     "scopesCount": "{count}개 범위",
+     "sensitive": "민감함",
+     "showLess": "접기",
+     "showMore": "{count}개 더 보기",
+     "subtitle": "이 앱이 계정에서 할 수 있는 작업을 확인하세요",
+     "title": "권한",
+     "write": "쓰기"
+    },
+    "pricing": {
+     "appReselling": "앱 재판매",
+     "billedAnnually": "연간 결제",
+     "exclusiveOfTaxes": "세금 별도",
+     "forAgency": "에이전시용",
+     "forAgencyAndSubAccount": "에이전시 및 서브 계정용",
+     "free": "무료",
+     "freeAppDescription": "이 앱을 계정에 추가하거나 핵심 기능을 사용하는 데 요금이 부과되지 않습니다.",
+     "freeAppTitle": "이 앱은 무료로 설치하고 사용할 수 있습니다.",
+     "mostPopular": "가장 인기",
+     "perExecution": "실행당",
+     "perSubAccount": "서브 계정당",
+     "planSelected": "플랜 선택됨",
+     "save10": "10% 할인",
+     "selectPlan": "플랜 선택",
+     "title": "요금제",
+     "usageBased": "사용량 기반 가격",
+     "yearly": "연간"
+    },
+    "resources": {
+     "agencyOnlyNote": "에이전시 관리자와 사용자에게만 표시됩니다.",
+     "documentation": "문서",
+     "supportWebsite": "지원 웹사이트",
+     "title": "리소스",
+     "website": "웹사이트"
+    },
+    "reviews": {
+     "aiGenerated": "AI 생성 요약",
+     "allRatings": "전체 평점",
+     "basedOn": "리뷰 {installations}개 중 {total}개 기준",
+     "helpfulNo": "리뷰를 도움이 안 됨으로 표시",
+     "helpfulYes": "리뷰를 도움이 됨으로 표시",
+     "noReviews": "리뷰 없음",
+     "postedOn": "게시일: {date}",
+     "recommendApp": "{pct}%가 이 앱을 추천합니다",
+     "refine": "상세 필터",
+     "replied": "답변함",
+     "showLess": "접기",
+     "showMore": "더 보기",
+     "showing": "리뷰 {count}개 표시 중",
+     "signInToReview": "리뷰를 작성하려면 로그인하세요",
+     "sort": "정렬",
+     "sortHighest": "평점 높은 순",
+     "sortLowest": "평점 낮은 순",
+     "sortNewest": "최신순",
+     "sortOldest": "오래된순",
+     "starRating": "별 {count}개 | 별 {count}개",
+     "tabTitle": "리뷰",
+     "wasHelpful": "이 리뷰가 도움이 되었습니까?",
+     "whatCustomersThink": "고객 의견",
+     "writeReview": "리뷰 작성"
+    },
+    "similarApps": {
+     "byDeveloper": "{name} 제공",
+     "free": "무료",
+     "installed": "설치됨",
+     "paid": "유료",
+     "title": "비슷한 앱:",
+     "viewMore": "더 보기",
+     "wl": "화이트라벨"
+    },
+    "snapshotAssets": {
+     "assets": "자산",
+     "noAssetsFound": "자산을 찾을 수 없습니다",
+     "quantity": "수량"
+    },
+    "statistics": {
+     "firstReview": "첫 번째 리뷰를 작성해 보세요",
+     "installs": "설치 수",
+     "notVerified": "미인증",
+     "rating": "평점",
+     "verified": "인증됨",
+     "whiteLabel": "화이트라벨"
+    }
+   },
+   "common": {
+    "delete": "삭제"
+   },
+   "gettingStarted": {
+    "tabTitle": "시작 가이드"
+   },
+   "marketplace": {
+    "action": "액션",
+    "appInfo": {
+     "adManagerCustomPage": "TikTok Ad Manager 계정 관리",
+     "billing": {
+      "agencyPlanUpgradeTooltip": "이 플랜은 에이전시에서 관리합니다. 업그레이드하려면 에이전시에 문의하세요.",
+      "oneTimePlanCannotChangeTooltip": "1회 구매는 플랜을 변경할 수 없습니다. 1회 결제 플랜은 정기 결제로 전환할 수 없습니다."
+     },
+     "customPages": "커스텀 페이지",
+     "installModal": {
+      "autoInstallDescription": "에이전시에서 새로 만드는 서브 계정에 이 앱이 자동으로 설치됩니다.",
+      "autoInstallTitle": "앞으로 만들 서브 계정에 자동 설치",
+      "back": "뒤로",
+      "futureLocationPaidHint": "유료 앱은 선택한 플랜이 서브 계정에 무료일 때만 향후 자동 설치를 사용할 수 있습니다.",
+      "installed": "설치됨",
+      "reconnectDescription": "{appName} 연결을 계속하려면",
+      "reconnectDocumentationLink": "문서 링크",
+      "reconnectGuidance": "연결을 완료하려면 연결할 서브 계정을 선택하세요. 이미 앱이 설치된 서브 계정은 다시 연결할 수 있고, 아직 앱이 없는 새 서브 계정에는 앱을 설치할 수 있습니다.",
+      "reconnectTitle": "계정 선택",
+      "selectAllSubAccounts": "{count}개의 모든 서브 계정 선택",
+      "uninstallGuidance": "MCP 연결을 원하지 않는 서브 계정에서 앱을 제거하려면 지원 문서의 단계를 따르세요.",
+      "yetToInstall": "설치되지 않음"
+     },
+     "showLess": "접기",
+     "showMore": "더 보기",
+     "viewAssets": "자산 보기"
+    },
+    "appState": {
+     "allApps": "전체 앱"
+    },
+    "appStudio": {
+     "bannerDescription": "필요한 앱을 설명하면 앱 스튜디오가 마켓플레이스에 바로 게시할 수 있는 앱을 만들어 드립니다. 코딩은 필요 없습니다.",
+     "bannerTitle": "앱 스튜디오로 마켓플레이스 앱을 만들어 보세요",
+     "closeBanner": "앱 스튜디오 배너 닫기",
+     "dismissHint": "배너를 닫았습니다. 앱 스튜디오는 언제든지 여기에서 열 수 있습니다.",
+     "gotIt": "확인",
+     "signingInMessage": "마켓플레이스에 로그인하는 중…",
+     "signingInTitle": "로그인 중…",
+     "tryAppStudio": "앱 스튜디오 체험"
+    },
+    "appUpdate": {
+     "newUpdateAvailable": "새 업데이트 있음"
+    },
+    "approvalStatusApprovedTooltip": "이 앱은 서브 계정용으로 승인되었습니다. 클릭하면 상태를 변경할 수 있습니다.",
+    "approvalStatusDisapprovedTooltip": "이 앱은 서브 계정용으로 승인이 거부되었습니다. 클릭하면 상태를 변경할 수 있습니다.",
+    "billing": {
+     "buttonTab": {
+      "free": "무료"
+     },
+     "errors": {
+      "locationCardNotFoundAgencyPays": "선택한 서브 계정 중 일부에 결제 수단이 없습니다. 에이전시가 비용을 지불하므로 설치는 계속할 수 있습니다. 나중에 이 서브 계정에 직접 청구하려면 다음 서브 계정에 카드를 추가하세요:"
+     },
+     "exclusiveOfTaxes": "세금 별도",
+     "upgrade": {
+      "chargeNotice": {
+       "freePlanHelp": "무료 플랜으로 변경됩니다. 이번 변경에는 요금이 청구되지 않습니다.",
+       "immediateContent": "다음 청구일은 {nextBillingDate}이며 청구 금액은 {ongoingAmount}입니다.",
+       "immediateTitle": "확인하면 오늘 {amount}이(가) 청구됩니다.",
+       "oneTimeContent": "1회 결제입니다. 확인한 후에는 다른 플랜으로 변경할 수 없습니다.",
+       "trialContent": "무료 체험이 끝나는 {nextBillingDate}에 {amount}이(가) 청구됩니다.",
+       "trialTitle": "오늘은 청구되지 않습니다."
+      },
+      "confirmModal": {
+       "cta": {
+        "confirm": "변경사항 확인",
+        "goBack": "뒤로 가기"
+       },
+       "currentPlan": "현재 플랜",
+       "description": "확정하기 전에 변경될 내용을 검토하세요.",
+       "descriptionAllSubAccounts": "확정하기 전에 모든 서브 계정에서 변경될 내용을 검토하세요.",
+       "descriptionSubAccount": "확정하기 전에 서브 계정 {count}개에서 변경될 내용을 검토하세요.",
+       "descriptionSubAccounts": "확정하기 전에 서브 계정 {count}개에서 변경될 내용을 검토하세요.",
+       "dueToday": "오늘 결제 금액",
+       "newPlan": "새 플랜",
+       "nextBillingDate": "다음 청구일",
+       "noRecurringBilling": "정기 청구 없음",
+       "notice": {
+        "amountUnchangedBody": "플랜이 {currentPlanName}에서 {newPlanName}(으)로 변경되지만, 계속 {amount}을(를) 지불합니다.",
+        "amountUnchangedTitle": "청구 금액은 변경되지 않습니다.",
+        "planChangingBody": "플랜이 {currentPlanName}에서 {newPlanName}(으)로 변경됩니다. {amount}을(를) 지불합니다.",
+        "planChangingImmediateBody": "플랜이 {currentPlanName}에서 {newPlanName}(으)로 변경됩니다. 오늘 {dueToday}이(가) 청구됩니다. 이후에는 {amount}이(가) 청구되며, 다음 청구일은 {nextBillingDate}입니다.",
+        "planChangingOneTimeBody": "플랜이 {currentPlanName}에서 {newPlanName}(으)로 변경됩니다. 오늘 1회 결제로 {dueToday}이(가) 청구됩니다. 이후에는 다른 플랜으로 변경할 수 없습니다.",
+        "planChangingTitle": "플랜이 변경됩니다.",
+        "planChangingTrialBody": "플랜이 {currentPlanName}에서 {newPlanName}(으)로 변경됩니다. 오늘은 청구되지 않습니다. 무료 체험이 끝나는 {nextBillingDate}부터 {amount}이(가) 청구됩니다."
+       },
+       "ongoingBilling": "이후 청구 금액",
+       "title": "변경사항 확인",
+       "typeToConfirm": "변경 사항을 확정하려면 [[CONFIRM]]을 입력하세요."
+      },
+      "confirmStep": {
+       "tableHeaders": {
+        "amountToBeCharged": "청구될 금액"
+       }
+      },
+      "cta": {
+       "confirmChanges": "변경사항 확인"
+      },
+      "noUpgradeAvailable": {
+       "title": "이미 이용 가능한 유일한 플랜을 사용 중입니다. 플랜을 업그레이드할 수 없습니다."
+      },
+      "oneTimeBlocked": {
+       "description": "현재 구독은 1회 결제 플랜입니다. 1회 결제 플랜은 환불되지 않으며 월간 또는 연간 정기 결제로 전환할 수 없습니다.",
+       "title": "플랜 변경 불가"
+      },
+      "samePlanSelected": {
+       "title": "이미 이 플랜을 사용 중입니다. 계속하려면 다른 플랜을 선택하세요."
+      }
+     }
+    },
+    "buildAnApp": "앱 만들기",
+    "installedApps": {
+     "bulkUpgradeBar": {
+      "oneTimeExcludedTooltip": "1회 결제 플랜을 사용하는 서브 계정은 플랜 변경 대상에서 제외되며 선택할 수 없습니다.",
+      "upgradePlans": "플랜 변경"
+     }
+    },
+    "noAppFound": {
+     "appStudioDescription": "앱 스튜디오로 이 앱을 직접 만들거나, 요청을 보내 주시면 저희가 만들어 드립니다."
+    },
+    "settingsPage": {
+     "appAccess": {
+      "accessControlSectionTitle": "액세스 제어",
+      "approvedAppsOnly": "서브 계정에 승인된 앱만 표시합니다.",
+      "approvedAppsOnlyTooltip": "활성화하면 서브 계정은 승인한 앱만 보고 설치할 수 있습니다. 새로 게시된 앱은 승인하기 전까지 숨겨집니다.",
+      "clearSelection": "선택 해제",
+      "filter": "필터",
+      "rowsPerPage": "페이지당 행 수",
+      "rowsSelected": "{count}개 행 선택됨",
+      "selectAll": "전체 선택({count})"
+     }
+    },
+    "subAccountApps": {
+     "visibility": {
+      "table": {
+       "askAILocationAdminsOnlyInfo": "이 설정은 서브 계정 관리자에게만 적용됩니다. 에이전시 관리자는 'AI에게 문의'에서 항상 마켓플레이스 앱을 찾을 수 있습니다.",
+       "askAIRadiosDisabledTooltip": "이 옵션은 'AI에게 문의'에는 적용되지 않습니다. 'AI에게 문의'에는 항상 승인된 모든 앱이 노출됩니다. 비슷한 앱의 노출 여부는 '서브 계정 왼쪽 탐색 메뉴' 스위치로 제어하세요.",
+       "dataHeaders": {
+        "askAI": "AI에게 문의 노출"
+       },
+       "leftNavKillSwitchInfo": "'AI에게 문의'에서의 마켓플레이스 접근을 제어합니다. 비활성화하면 서브 계정 사용자는 'AI에게 문의' 추천에서 전체 앱을 열 수 없습니다."
+      }
+     }
+    },
+    "supportPortal": {
+     "companyScripts": {
+      "delete": "삭제"
+     },
+     "developers": {
+      "confirmModal": {
+       "sopAndFup": "SOP 및 FUP"
+      },
+      "labs": {
+       "add": "추가",
+       "addGroup": "그룹 추가",
+       "addImage": "이미지 추가",
+       "addMember": "멤버 추가",
+       "addMemberFailed": "멤버를 추가하지 못했습니다",
+       "addRelease": "릴리스 추가",
+       "all": "전체",
+       "allDevelopers": "전체 개발자",
+       "allReleases": "전체 릴리스",
+       "alreadyAdded": "추가됨",
+       "archive": "보관",
+       "archived": "보관됨",
+       "avgRating": "평균 평점",
+       "bodyPlaceholder": "상세 메모(선택): 사용 방법, 테스트할 내용, 기타 사항",
+       "bulkSummary": "추가됨 {added}, 이미 멤버 {alreadyMember}, 찾을 수 없음 {notFound}, 유효하지 않음 {invalid}.",
+       "bulkUploaded": "CSV 처리 완료",
+       "changelogLabel": "짧은 설명",
+       "changelogPlaceholder": "개발자가 제목 아래에서 보게 될 한두 문장",
+       "colActions": "작업",
+       "colAudienceGroups": "대상 그룹",
+       "colLiveFrom": "정식 출시일",
+       "colMembers": "멤버",
+       "colName": "이름",
+       "colOptIns": "옵트인",
+       "colPreviewFrom": "프리뷰 시작일",
+       "colPublicFrom": "공개 시작일",
+       "colStage": "단계",
+       "copySuccess": "클립보드에 복사됨",
+       "countsRefresh": "수치는 5분마다 새로고침됩니다.",
+       "csvNotFoundNote": "이메일 {count}개를 개발자 디렉터리에서 찾을 수 없습니다. 개발자는 먼저 마켓플레이스 개발자 포털에 가입해야 합니다.",
+       "csvResultsTitle": "업로드 결과",
+       "csvTooLarge": "CSV 파일이 최대 크기인 256KB를 초과합니다",
+       "csvTotalProcessed": "이메일 {count}개 처리됨",
+       "csvUploadError": "CSV 파일을 처리하지 못했습니다",
+       "delete": "삭제",
+       "deleteGroupConfirm": "그룹 삭제",
+       "deleteGroupDescription": "멤버는 이 그룹으로 제한된 프리뷰 릴리스에 더 이상 접근할 수 없습니다.",
+       "deleteGroupTitle": "그룹을 삭제하시겠습니까?",
+       "deleteReleaseConfirm": "릴리스 삭제",
+       "deleteReleaseDescription": "개발자는 즉시 접근 권한을 잃게 됩니다.",
+       "deleteReleaseTitle": "릴리스를 삭제하시겠습니까?",
+       "descriptionLabel": "상세 설명",
+       "devByEmail": "개발자(이메일)",
+       "developerEmail": "개발자 이메일",
+       "developerId": "개발자 ID",
+       "devsOptedIn": "참여한 개발자",
+       "dragHelper": "행을 드래그하여 개발자 Labs 페이지에 기능이 표시되는 순서를 정하세요.",
+       "editGroup": "그룹 편집",
+       "editRelease": "릴리스 편집",
+       "editReleaseSubtitle": "저장하는 즉시 변경 사항이 적용됩니다.",
+       "emptyCsvFile": "선택한 CSV 파일이 비어 있습니다",
+       "emptyGroups": "아직 만든 릴리스 그룹이 없습니다.",
+       "emptyMembers": "이 그룹에는 아직 멤버가 없습니다.",
+       "emptyReleases": "아직 만든 릴리스가 없습니다.",
+       "feedback": "피드백",
+       "feedbackPageLabel": "{total}페이지 중 {page}페이지",
+       "feedbackPageNext": "피드백 다음 페이지",
+       "feedbackPagePrev": "피드백 이전 페이지",
+       "feedbackReceived": "받은 피드백",
+       "fieldRequired": "필수 입력 항목입니다",
+       "groupDeleted": "그룹이 성공적으로 삭제되었습니다",
+       "groupDescriptionPlaceholder": "예: 매출 상위 마켓플레이스 파트너",
+       "groupNameLabel": "그룹 이름",
+       "groupNamePlaceholder": "예: 베타 테스터",
+       "groupSaved": "그룹이 성공적으로 저장되었습니다",
+       "groups": "그룹",
+       "groupsClickHelper": "그룹을 클릭하면 멤버를 관리할 수 있습니다.",
+       "headingHelper": "개발자 Labs 카드에 가장 먼저 표시됩니다.",
+       "headingLabel": "제목",
+       "headingPlaceholder": "예: 월 단위가 아닌 사용량 단위로 청구",
+       "imageReadFailed": "이미지를 읽을 수 없습니다.",
+       "imageTooLarge": "이미지가 너무 큽니다. 더 작은 스크린샷이나 https 링크를 사용하세요.",
+       "imageTypeInvalid": "PNG, JPG, GIF 또는 WebP 이미지를 사용하세요.",
+       "imagesHint": "스크린샷은 최대 {max}개까지 업로드할 수 있습니다. 개발자 Labs 카드의 짧은 설명과 상세 설명 사이에 표시됩니다.",
+       "imagesLabel": "이미지",
+       "imagesLimit": "이미지는 최대 {max}개까지 추가할 수 있습니다.",
+       "invalidCsvFile": "올바른 CSV 파일(.csv)을 업로드해 주세요",
+       "keyHelper": "코드에서 사용됩니다(예: appStudio.hosting). 나중에 변경할 수 없습니다.",
+       "keyInvalid": "소문자로 시작해야 합니다. 문자, 숫자, 점만 사용할 수 있으며 3–64자여야 합니다.",
+       "keyLabel": "키",
+       "keyPlaceholder": "예: billing.usageMeters",
+       "last30Days": "최근 30일",
+       "last3Months": "최근 3개월",
+       "last7Days": "최근 7일",
+       "liveFromLabel": "전체 사용자 정식 출시일",
+       "loadMore": "더 보기",
+       "loadingGroups": "그룹 불러오는 중...",
+       "loadingMembers": "멤버 불러오는 중...",
+       "loadingMore": "더 불러오는 중...",
+       "loadingReleases": "릴리스 불러오는 중...",
+       "manageMembers": "멤버 관리",
+       "markReviewed": "검토 완료로 표시",
+       "markUnread": "읽지 않음으로 표시",
+       "memberAdded": "멤버가 성공적으로 추가되었습니다",
+       "memberRemoved": "멤버가 성공적으로 제거되었습니다",
+       "membersCount": "멤버({count})",
+       "membersHeaderCount": "개발자 {developers}명 · 팀 {teams}개",
+       "membersSectionHelper": "이 그룹에 할당된 릴리스를 볼 수 있어야 하는 개발자나 팀을 추가하세요.",
+       "membersSectionLabel": "멤버",
+       "membersTitle": "{name} 멤버",
+       "nameLabel": "이름",
+       "newGroup": "그룹 추가",
+       "newRelease": "새 릴리스",
+       "newReleaseSubtitle": "프리뷰 기능을 만들고 출시 일정을 예약하세요.",
+       "nextPage": "다음",
+       "noAudience": "없음",
+       "noDescription": "설명 없음",
+       "noDeveloperEmail": "이 이메일을 사용하는 개발자가 없습니다",
+       "noDirectoryMatches": "일치 항목 없음",
+       "noFeedback": "아직 피드백이 없습니다",
+       "noFeedbackSubtitle": "개발자가 Labs에서 보낸 메모가 여기에 표시됩니다.",
+       "noTeamId": "이 ID의 팀이 없습니다",
+       "notifyAudience": "오디언스",
+       "notifyConfirm": "예약 발송",
+       "notifyError": "알림을 예약하지 못했습니다",
+       "notifyModalTitle": "프리뷰 알림 예약",
+       "notifyPreviewDesc": "{name}의 대상 그룹에 속한 모든 개발자에게 보낼 대량 이메일을 예약합니다.",
+       "notifyPreviewSuccess": "수신자 {count}명에게 프리뷰 이메일 알림을 예약했습니다",
+       "notifyPreviewTitle": "프리뷰 알림 예약",
+       "notifyRelease": "알림 예약",
+       "notifySchedule": "일정",
+       "notifyScheduleImmediate": "즉시",
+       "notifySuccess": "프리뷰 알림이 성공적으로 예약되었습니다",
+       "notifyTemplateHelper": "프리뷰 공지에 사용할 하이퍼클래스 이메일 템플릿",
+       "notifyTemplateLabel": "이메일 템플릿 ID(선택 사항)",
+       "notifyTemplatePlaceholder": "기본 템플릿을 사용하려면 비워 두세요",
+       "optInsSummary": "개발자 {devs}명 · 팀 {teams}개",
+       "outOfFive": "/ 5점",
+       "pageIndicator": "총 {total}개 중 {start}–{end} 표시 중({pages}페이지 중 {page}페이지)",
+       "previewTab": "미리보기",
+       "previousPage": "이전",
+       "publicFromLabel": "전체 개발자 공개 시작일",
+       "refresh": "새로고침",
+       "relativeDays": "{n}일 전",
+       "relativeHours": "{n}시간 전",
+       "relativeMinutes": "{n}분 전",
+       "releaseDeleted": "릴리스가 성공적으로 삭제되었습니다",
+       "releaseNamePlaceholder": "예: 사용량 기반 앱 가격",
+       "releaseSaved": "릴리스가 성공적으로 저장되었습니다",
+       "releases": "릴리스",
+       "remove": "제거",
+       "removeConfirm": "제거하시겠습니까?",
+       "removeImage": "이미지 제거",
+       "rolloutSchedule": "출시 일정",
+       "rolloutScheduleHelper": "단계가 진행될수록 릴리스를 볼 수 있는 대상이 넓어집니다. 시간은 현지 시간대 기준입니다.",
+       "saveGroup": "그룹 저장",
+       "saveRelease": "릴리스 저장",
+       "searchDevelopersPlaceholder": "이름 또는 이메일로 개발자 검색",
+       "searchDirectoryHint": "2자 이상 입력한 다음, 필요한 만큼 검색 결과를 추가하세요.",
+       "searchGroupsPlaceholder": "그룹 검색...",
+       "searchPlaceholder": "이름 또는 키로 검색",
+       "searchTeamsPlaceholder": "이름으로 팀 검색",
+       "searching": "검색 중...",
+       "selectFeedback": "읽을 피드백을 선택하세요",
+       "stageTimeline": "단계별 일정",
+       "stages": {
+        "live": "라이브",
+        "preview": "미리보기",
+        "public": "공개"
+       },
+       "statsTitle": "통계 — {name}",
+       "statusUpdated": "상태가 성공적으로 업데이트되었습니다",
+       "summaryAdded": "추가됨",
+       "summaryAlreadyMember": "이미 그룹에 있음",
+       "summaryInvalid": "유효하지 않음",
+       "summaryNotFound": "디렉터리에 없음",
+       "supportDocUrlInvalid": "올바른 http 또는 https URL을 입력하세요",
+       "supportDocUrlLabel": "지원 문서 URL",
+       "teamById": "팀(ID)",
+       "teamId": "팀 ID",
+       "teamIdPlaceholder": "팀 ID(예: 507f1f...)",
+       "teamsOptedIn": "참여한 팀",
+       "tooLong": "{max}자 이하여야 합니다",
+       "unarchive": "보관 해제",
+       "unread": "읽지 않음",
+       "uploadCsv": "CSV 업로드",
+       "uploadCsvHelper": "CSV 파일만 가능합니다. 필요하면 Excel에서 내보내세요. 이메일 열을 사용하거나 한 행에 이메일을 하나씩 입력하세요. 최대 100개.",
+       "uploadImage": "업로드",
+       "usedByReleases": "사용 중인 릴리스",
+       "viewReleaseNotes": "{name} 릴리스 노트 보기",
+       "viewStats": "통계 보기",
+       "visibleFromLabel": "대상 그룹 공개 시작일",
+       "writeTab": "쓰기",
+       "yesterday": "어제"
+      },
+      "subtitle": "마켓플레이스 개발자 계정을 조회하고 문제를 해결합니다. 여기서 수행하는 모든 작업은 감사 로그에 기록됩니다.",
+      "tabs": {
+       "beta": "베타",
+       "tools": "개발자 도구"
+      }
+     },
+     "privateAppReview": {
+      "scopes": {
+       "notAvailable": "해당 없음"
+      }
+     },
+     "reviewTable": {
+      "noScopes": "해당 없음"
+     }
+    },
+    "viewOptions": {
+     "subAccountPreview": "현재 서브 계정 보기 상태입니다. 앱을 관리하려면 에이전시 보기로 전환하세요"
+    }
+   },
+   "privateIntegration": {
+    "deleteAction": "삭제",
+    "scopes": {
+     "affiliatemanagerwrite": "제휴 관리자 수정",
+     "managedagentsreadonly": "관리형 에이전트 보기",
+     "managedagentswrite": "관리형 에이전트 실행",
+     "workflowsdelete": "워크플로우 삭제",
+     "workflowslogs": "워크플로우 로그 보기",
+     "workflowspublish": "워크플로우 게시",
+     "workflowswrite": "워크플로우 수정"
+    }
+   }
+  },
+  "common|reselling": {
+   "reselling": {
+    "paymentPage": {
+     "payAsYouGoPlan": "사용량 기반 플랜",
+     "startTrial": "체험 시작",
+     "perMonth": "/월",
+     "emailAddress": "이메일 주소",
+     "payWithCard": "카드로 결제",
+     "addCardDetail": "카드 정보를 입력하고 결제를 진행하세요.",
+     "cardNumber": "카드 번호",
+     "expiry": "만료일",
+     "nameOnCard": "카드 소유자명",
+     "country": "국가",
+     "description": "구독을 확인하면 XXXX가 이번 결제와 이후 이 구독의 결제를 위해 카드에 청구하는 데 동의하는 것입니다.",
+     "addNewPaymentMethod": "새 결제 방법 추가",
+     "payAndSubscribe": "XXXX 결제 후 구독",
+     "zip": "우편번호",
+     "paymentFailed": "결제에 실패했습니다.",
+     "retryPayment": "구매하려면 결제를 다시 시도하세요.",
+     "retryButtonText": "결제 재시도",
+     "dontClose": "이 창을 닫지 마세요.",
+     "paymentProcessing": "결제를 처리하는 중입니다. 잠시 기다려 주세요.",
+     "createCustomerFailed": "고객을 만들 수 없습니다",
+     "cardAddFailed": "카드를 추가할 수 없습니다",
+     "cardSaveFailed": "카드를 저장할 수 없습니다",
+     "addSubscriptionFailed": "구독을 추가할 수 없습니다. 고객지원에 문의하세요",
+     "emailNotFound": "연락처 이메일 주소를 입력하세요",
+     "emailInvalid": "유효한 연락처 이메일을 입력하세요",
+     "cardNotAdded": "카드 번호를 입력하세요",
+     "cvvIncomplete": "카드 CVV가 완전하지 않습니다.",
+     "cvvNotEntered": "카드 CVV를 입력하세요",
+     "cardExpiryNotFilled": "카드 만료일을 입력하세요",
+     "cardHolderNameNotFilled": "카드 소유자 이름을 입력하세요",
+     "zipNotAdded": "우편번호를 입력하세요",
+     "paymentMethodNotConfigured": "결제를 사용할 수 없음",
+     "paymentMethodNotConfiguredDesc": "계정이 결제용으로 설정되지 않았습니다. 결제 처리를 활성화하려면 관리자에게 문의하세요.",
+     "close": "닫기"
+    },
+    "newPaymentPage": {
+     "paymentMethods": {
+      "payUsingCard": "카드로 결제",
+      "payUsingWallet": "지갑으로 결제",
+      "useSelectedCard": "선택한 카드 사용",
+      "useWallet": "지갑 사용",
+      "withoutUpsell": "에이전시에 청구"
+     },
+     "buttons": {
+      "payAndSubscribe": "{amount} 결제 후 구독",
+      "retryInvoice": "인보이스 재시도",
+      "startFreeTrial": "무료 체험 시작",
+      "payAgencyAndSubscribe": "{agencyAmount} 결제 후 구독",
+      "addNewCard": "새 카드 추가",
+      "back": "뒤로",
+      "cancel": "취소",
+      "viewInvoice": "인보이스 보기",
+      "useSelectedCard": "선택한 카드 사용",
+      "useWallet": "지갑 사용"
+     },
+     "billing": {
+      "perMonth": "/월",
+      "excludingTax": "세금 별도"
+     },
+     "card": {
+      "default": "기본",
+      "expiry": "만료일 {month}/{year}",
+      "setAsDefault": "기본값으로 설정",
+      "endingIn": "끝자리 {last4}"
+     },
+     "wallet": {
+      "balance": "내 지갑 잔액",
+      "balanceTooLow": "지갑 잔액이 부족합니다",
+      "needToTopUp": "충전이 필요하신가요?",
+      "addFundsNow": "지금 충전"
+     },
+     "agency": {
+      "whatThatMeans": "\"에이전시에 청구\" 방식 안내:",
+      "stripeChargeDescription": "이 구매 금액은 서브 계정이 아닌 에이전시의 Stripe 계정으로 청구됩니다.",
+      "clientNotBilledDescription": "고객(서브 계정)에게는 이 구매에 대해 지금도, 앞으로도 청구되지 않습니다.",
+      "standardPriceDescription": "하이퍼클래스 표준 가격만 청구되며, 리셀링 마크업은 적용되지 않습니다."
+     },
+     "alerts": {
+      "noPaymentMethodTitle": "결제 방법을 찾을 수 없음",
+      "noPaymentMethodMessage": "결제 방법을 추가하려면 관리자에게 문의하세요.",
+      "invoicePendingTitle": "구독 인보이스 미결제",
+      "invoicePendingAgency": "이전 구독 인보이스가 미결제 상태입니다. 계속하려면 결제를 완료하세요.",
+      "invoicePendingAgencyTrouble": "결제 처리 중 문제가 발생했습니다. 관리자에게 문의해 해결하세요.",
+      "invoicePendingLocation": "이 서브 계정의 이전 인보이스가 미결제 상태입니다. 서브 계정에 연락해 결제를 완료하도록 안내하세요.",
+      "invoicePendingLocationUser": "결제가 완료되지 않았습니다. 계속하려면 결제를 완료하세요."
+     },
+     "disclaimer": {
+      "defaultMessage": "구독을 확인하면 {companyName}이(가) 이번 결제와 이후 결제를 위해 카드에 청구하는 데 동의하는 것입니다.",
+      "onlySaveCardMessage": "결제 수단은 이후 거래에 안전하게 사용됩니다. 지금은 요금이 청구되지 않습니다."
+     },
+     "addNewCard": {
+      "title": "새 카드 추가",
+      "description": "결제할 카드 정보를 입력하세요.",
+      "saveCard": "카드 저장 후 구독",
+      "errorMessage": "카드 추가 중 오류가 발생했습니다. 다시 시도해 주세요."
+     },
+     "errors": {
+      "subAccountEmailRequired": "서브 계정 이메일이 없습니다. 카드 결제를 활성화하려면 서브 계정 설정에 이메일을 추가하세요.",
+      "manageSubAccount": "서브 계정 관리",
+      "addCard": "여기서 카드 추가",
+      "accountEmailRequired": "계정 이메일이 없습니다. 카드 결제를 활성화하려면 계정 설정에 이메일을 추가하세요.",
+      "subAccountStripeCustomerNotFound": "이 서브 계정의 고객 정보(cus_xxx)를 가져올 수 없습니다. 고객지원에 문의해 해결하세요.",
+      "fetchingAvailableCards": "사용 가능한 카드를 가져올 수 없습니다. 관리자에게 문의해 해결하세요.",
+      "saasSetupPendingAgency": "서브 계정에 등록된 카드가 없습니다. 지갑을 만들려면 카드를 추가하세요.",
+      "saasSetupPendingAccount": "지갑을 만들려면 카드 정보를 추가하세요.",
+      "agencyStripeAccountInvalid": "Stripe 계정에 접근할 수 없습니다. Stripe 연동을 확인하거나 고객지원에 문의하세요.",
+      "setDefaultPaymentMethod": "결제를 완료하려면 기본 결제 방법을 설정하세요.",
+      "subscriptionAlreadyActive": "이미 활성 구독이 있습니다.",
+      "agency": {
+       "agencySubscriptionPaymentPending": "이 상품의 에이전시 구독 결제가 대기 중입니다. 계속하려면 결제를 완료하세요.",
+       "updateBillingAddress": "결제를 완료하려면 회사 청구 주소를 업데이트하세요.",
+       "offeringDisabled": "이 상품은 비활성화되어 있습니다. 계속하려면 이 리셀링 상품을 활성화하세요.",
+       "issueWithLocationPayment": "서브 계정 결제를 처리할 수 없습니다."
+      },
+      "subAccount": {
+       "contactAdmin": "결제를 완료할 수 없습니다. 관리자에게 문의해 해결하세요.",
+       "issueWithLocationPayment": "결제를 처리할 수 없습니다. 다시 시도하거나 관리자에게 문의해 해결하세요."
+      }
+     },
+     "companyPaywall": {
+      "noCardTitle": "계정에 연결된 카드를 찾을 수 없습니다.",
+      "noCardDescription": "설정에서 결제 카드를 간편하게 추가하고\n구매를 바로 완료할 수 있습니다.\n\"설정 > 청구 > 결제\" 탭에서 카드 정보를 추가하세요."
+     }
+    },
+    "unsubscribeModal": {
+     "common": {
+      "note": "참고",
+      "searchAlt": "검색",
+      "multipleQuantityRemovalInfo": "이 서브 계정에 구독된 수량은 {quantity}개입니다. 이 작업은 한 번에 1개씩만 줄입니다."
+     },
+     "steps": {
+      "step": "{total}단계 중 {step}단계",
+      "one": {
+       "title": "이 계정의 {productLabel}을(를) 비활성화하고 해지하시겠습니까?",
+       "description": "{entityName}의 {productLabel} 계정과 구독을 비활성화하고 해지하시겠습니까?",
+       "primaryAction": "해지 진행",
+       "secondaryAction": "뒤로",
+       "options": {
+        "endOfBillingCycle": {
+         "label": "청구 주기 종료 시 해지",
+         "description": "청구 주기가 끝나기 전에 구독을 재활성화할 수 있습니다.",
+         "dateFormat": "{date}에 해지"
+        },
+        "immediate": {
+         "label": "즉시 해지",
+         "description": "남은 서비스 기간은 제공되지 않습니다."
+        }
+       }
+      },
+      "two": {
+       "title": "{productLabel} 계정을 해지하시겠습니까?",
+       "description": "다른 어떤 플랫폼보다 많은 기능을 제공합니다!",
+       "primaryAction": "다음",
+       "secondaryAction": "해지 안 함",
+       "copy": "복사",
+       "copied": "복사됨",
+       "warning": {
+        "title": "중요:",
+        "description": "구독을 해지하면 관련된 모든 데이터와 기능이 영구적으로 삭제됩니다. 해지한 뒤에는 이 데이터를 복구할 수 없습니다."
+       }
+      },
+      "three": {
+       "title": "해지 사유 입력",
+       "description": "해지하려는 이유가 무엇인가요?",
+       "primaryAction": "구독 해지",
+       "secondaryAction": "해지 안 함",
+       "reasons": {
+        "missing_features": "기능 부족",
+        "having_trouble_setting_up": "설정이 어려움",
+        "too_expensive": "비용이 너무 높음",
+        "not_using_enough": "사용 빈도 낮음",
+        "unsatisfactory_customer_experience": "고객 경험이 만족스럽지 않음",
+        "my_site_was_down": "사이트가 다운됨",
+        "auto_subscribed_during_saas_setup": "SaaS 설정 중 자동 구독됨",
+        "other": "기타",
+        "otherPlaceholder": "상세 내용 입력",
+        "product_specific": {
+         "CP_BRANDED_APP_49": {
+          "unable_to_create_apple_google_developer_accounts": "Apple/Google 개발자 계정을 만들 수 없음(예: DUNS 번호·인증 문제)",
+          "too_complicated_or_time_consuming_to_set_up": "설정이 너무 복잡하거나 시간이 오래 걸림",
+          "lack_of_key_features_needed": "필요한 주요 기능 부족",
+          "faced_technical_issues_or_bugs": "기술적 문제나 버그 발생",
+          "poor_support_service_experience": "지원/서비스 경험이 좋지 않음",
+          "clients_are_not_using_the_app": "고객이 앱을 사용하지 않음",
+          "did_not_understand_how_to_use_the_app_effectively": "앱을 효과적으로 쓰는 방법을 잘 모름",
+          "business_priorities_changed": "비즈니스 우선순위 변경",
+          "found_an_alternative_solution": "다른 솔루션을 찾음",
+          "too_expensive_for_current_needs": "현재 요구사항에 비해 너무 비쌈",
+          "other": "기타"
+         }
+        }
+       },
+       "confirmation": {
+        "placeholder": "삭제를 확인하려면 아래에 DELETE를 입력하세요"
+       },
+       "speakWithUs": {
+        "title": "상담 요청",
+        "description": "해지하기 전에 저희가 도와드리겠습니다! 문제를 함께 해결하고 더 잘 맞는 옵션을 찾아 드립니다.",
+        "action": "통화 예약"
+       }
+      }
+     },
+     "success": {
+      "title": "해지 요청이 전송되었습니다",
+      "description": "요청을 처리한 뒤 완료되면 알려 드립니다.",
+      "button": "확인"
+     },
+     "error": {
+      "title": "해지 요청에 실패했습니다",
+      "description": "나중에 다시 시도해 주세요.",
+      "button": "확인"
+     }
+    },
+    "agencyBillingCard": {
+     "table": {
+      "header": {
+       "locationName": "서브 계정 이름",
+       "plan": "플랜",
+       "purchaseType": "구매 유형",
+       "status": "상태",
+       "actions": "작업",
+       "purchaseDate": "구매 날짜",
+       "billingCycle": "청구 주기",
+       "quantity": "수량"
+      },
+      "purchaseTypeValue": {
+       "LOCATION_PURCHASE": "서브 계정 구매(업셀 포함)",
+       "COMPANY_DIRECT_PURCHASE": "에이전시 구매(업셀 제외)",
+       "SAAS_BUNDLE": "SaaS 번들"
+      },
+      "statusValue": {
+       "COMPLETE": "활성",
+       "FAIL": "결제 실패",
+       "UNSUBSCRIBED": "구독 해지됨",
+       "PENDING": "대기 중",
+       "INCOMPLETE": "미완료",
+       "COMPLETE_PAST_DUE": "결제 대기",
+       "TRIAL": "체험"
+      },
+      "statusTooltip": {
+       "scheduledCancelAt": "{date}에 해지 예정"
+      },
+      "billingCycleValue": {
+       "month": "매월",
+       "year": "매년",
+       "six_months": "6개월",
+       "life_time": "해당 없음(평생)"
+      }
+     },
+     "common": {
+      "standardPlan": "스탠다드 플랜",
+      "utilityPlan": "유틸리티 플랜",
+      "foundersSpecialOffer": "창립자 특별 오퍼",
+      "foundersPlan": "창립자 플랜",
+      "perMonth": "/월",
+      "perSixMonths": "/6개월",
+      "perYear": "/년",
+      "showSubAccounts": "서브 계정 표시",
+      "sold": "판매됨",
+      "viewSubscribed": "구독 중인 서브 계정 보기",
+      "per": "/",
+      "month": "월",
+      "year": "년",
+      "saasBundle": "SaaS 번들",
+      "options": {
+       "cancelSubscription": "구독 해지"
+      },
+      "addOnProducts": "추가 상품",
+      "viewSubscriptions": "구독 보기",
+      "subscribed": "구독됨",
+      "noAddOnsAvailable": "현재 사용 가능한 추가 상품이 없습니다.",
+      "excludingTax": "세금 별도"
+     },
+     "productDescription": {
+      "WHATSAPP_V1": "WhatsApp으로 리드·고객과 직접 연결해 끊김 없이 양방향으로 소통합니다.",
+      "EmailIP": "전용 IP 주소로 이메일을 보내 도달률과 발신자 평판을 높입니다.",
+      "CONVERSATIONS_AI": "AI로 양방향 대화를 자동화해 리드를 선별하고, 질문에 답하고, 전환을 이끌어 냅니다.",
+      "Prospecting": "똑똑한 필터, 연락처 데이터, 아웃리치 도구로 잠재 리드를 찾아 연락합니다.",
+      "CP_BRANDED_APP_49": "안전한 브랜드 포털로 고객이 언제든 코스, 커뮤니티, 제휴 수익금에 접근할 수 있게 합니다.",
+      "WORDPRESS_V1": "WordPress 기본 연동으로 웹사이트를 쉽게 만들고 관리하고 호스팅합니다.",
+      "YEXT_V2": "지역 디렉터리 전반의 비즈니스 정보를 자동으로 동기화·관리해 SEO를 높입니다.",
+      "starter_plus_workflow_premium_actions_triggers": "프리미엄 트리거로 고급 자동화를 사용할 수 있습니다.",
+      "AI_EMPLOYEE": "비즈니스에 맞춰 학습한 상시 AI 어시스턴트가 대화, 콘텐츠, 리뷰 등을 처리합니다.",
+      "Ad_Publishing_Standard_Plan": "자체 비즈니스 관리자로 광고를 손쉽게 만들고 관리합니다.",
+      "seo_search_atlas": "AI 기반 SEO 도구로 검색 순위를 높입니다."
+     },
+     "aiEmployee": {
+      "title": "AI 직원"
+     },
+     "emailIp": {
+      "title": "이메일 IP"
+     },
+     "brandedClientPortalApp": {
+      "title": "브랜드 클라이언트 포털 앱"
+     },
+     "workflowPro": {
+      "title": "워크플로우 Pro",
+      "plans": {
+       "starterTier": "스타터 티어",
+       "growthTier": "그로스 티어",
+       "scaleTier": "스케일 티어"
+      }
+     },
+     "conversationAi": {
+      "title": "대화 AI"
+     },
+     "listings": {
+      "title": "리스팅",
+      "logoAlt": "리스팅 로고",
+      "plans": {
+       "month": "월간 플랜",
+       "sixMonth": "스마트 세이버",
+       "annual": "연간 혜택"
+      }
+     },
+     "whatsapp": {
+      "logoAlt": "Yext 로고"
+     },
+     "wordpress": {
+      "logoAlt": "WordPress 로고",
+      "sites": "사이트",
+      "site": "사이트",
+      "additionalStandardPurchase": "+ {purchaseCount}개 {siteText}에 $ {price}"
+     },
+     "adManager": {
+      "title": "광고 관리자"
+     },
+     "prospecting": {
+      "title": "잠재 고객 발굴"
+     }
+    },
+    "redirect": {
+     "logo": "{name} 로고",
+     "moneyBag": "돈주머니",
+     "enableResellingProfit": "리셀링을 활성화해 수익을 올릴 수 있습니다",
+     "setMargins": "내가 부담하는 원가에 마진을 더해 고객에게 청구할 수 있습니다.",
+     "resellingNot": "아래 항목은 리셀링이 활성화되지 않았습니다",
+     "enableNow": "지금 활성화"
+    },
+    "subAccountResellingTab": {
+     "searchPlaceholder": "핵심 서비스 검색",
+     "common": {
+      "enableProduct": "{productName} 활성화",
+      "enableProductDescription": "서비스를 활성화하면 고객에게 판매를 시작할 수 있습니다",
+      "yourPrice": "고객 판매가",
+      "highlevelPrice": "내 원가",
+      "yourProfit": "내 수익",
+      "deployProduct": "{productName} 바로 배포",
+      "deployedProduct": "{productName} 바로 배포됨",
+      "deployProductDescription": "{productName} 실행을 제공하거나 고객에게 별도로 청구하려면 이 옵션을 선택하세요.",
+      "deployAgreement": "이 고객에게 {productName}을(를) ${price}에 재판매 없이 활성화하며, 최소 약정 기간이 1개월임에 동의합니다.",
+      "deployTooltip": "이 구매 금액은 서브 계정에 청구되지 않습니다.",
+      "payNow": "지금 결제!",
+      "deployed": "배포됨",
+      "save": "저장",
+      "deployedSuccessfully": "배포했습니다",
+      "failedToDeploy": "배포하지 못했습니다",
+      "priceSaved": "가격을 저장했습니다",
+      "failedToSavePrice": "가격을 저장하지 못했습니다",
+      "pleaseTryAgain": "다시 시도하세요",
+      "deploymentStatus": {
+       "deployedWithUpsell": "업셀 포함 배포됨",
+       "deployedWithoutUpsell": "업셀 제외 배포됨",
+       "withUpsell": "업셀 포함: {count}",
+       "withoutUpsell": "업셀 제외: {count}",
+       "saasBundle": "SaaS 번들: {count}"
+      },
+      "resellingAddon": "리셀링 애드온으로 고객에게 {productName}을(를) 제공하고 있습니다"
+     },
+     "products": {
+      "whatsapp": {
+       "deployDescription": {
+        "default": "고객에게 WhatsApp을 직접 제공하려면 이 옵션을 선택하세요. 이 구매 금액은 에이전시에 청구됩니다."
+       },
+       "deployAgreement": {
+        "default": "이 고객에게 WhatsApp을 활성화하는 데 동의하며, 최소 1개월 약정으로 월 $10가 청구됨을 확인합니다."
+       }
+      },
+      "prospecting": {
+       "name": "잠재 고객 발굴"
+      },
+      "clientPortal": {
+       "name": "클라이언트 포털"
+      },
+      "listings": {
+       "name": "리스팅",
+       "logoAlt": "리스팅",
+       "newPlans": {
+        "title": "새 구독 플랜 출시!",
+        "description": "고객에게 더 큰 가치를 제공할 수 있도록 리스팅 6개월·연간 구독 플랜을 새로 선보입니다."
+       },
+       "resellAmount": "리셀링 금액",
+       "plans": {
+        "month": "월",
+        "year": "년",
+        "nMonths": "{n}개월",
+        "monthly": "월간 플랜",
+        "sixMonth": "스마트 세이버",
+        "annual": "연간 어드밴티지",
+        "savePercentage": "{percentage}% 할인",
+        "pricing": {
+         "listingsPrice": "리스팅 플랜 가격",
+         "customerPaying": "고객 판매가",
+         "profit": "내 수익"
+        }
+       },
+       "notAvailable": "리스팅은 현재 국가에서 사용할 수 없습니다",
+       "notAvailableDescription": "이 기능은 아직 현재 국가에서 제공되지 않습니다. 더 많은 지역으로 서비스를 넓히기 위해 계속 노력하고 있습니다. 새 국가를 요청하려면 Canny 아이디어 보드를 방문하세요. 투표 수를 기준으로 우선순위를 정하므로 여러분의 의견이 향후 확장 방향에 반영됩니다 :",
+       "setup": {
+        "title": "설정 완료",
+        "description": "아직 설정을 완료하지 않은 엔터티 목록입니다. 원하는 순서대로 진행하세요.",
+        "setupCompleted": "설정 완료",
+        "withUpsell": "업셀 포함",
+        "withoutUpsell": "업셀 제외",
+        "untitledEntity": "제목 없는 엔터티",
+        "entityName": "엔터티 이름",
+        "entityType": "엔터티 유형",
+        "purchaseType": "구매 유형",
+        "setup": "설정",
+        "takeAction": "조치"
+       }
+      },
+      "wordpress": {
+       "sites": "사이트",
+       "site": "사이트",
+       "additionalStandardPurchase": "+ {purchaseCount}개 {siteText}에 $ {price}",
+       "takeActionModal": {
+        "takeAction": "조치",
+        "modalTitle": "조치 필요",
+        "modalDescription": "아직 설정을 완료하지 않은 사이트 목록입니다. 원하는 순서대로 진행하세요.",
+        "tableHeaders": {
+         "siteName": "사이트 이름",
+         "siteId": "사이트 ID",
+         "purchaseType": "구매 유형",
+         "payment": "결제",
+         "setup": "설정"
+        },
+        "purchaseTypes": {
+         "upsell": "업셀",
+         "withoutUpsell": "업셀 제외"
+        },
+        "paymentStatus": {
+         "makePayment": "결제",
+         "completed": "완료"
+        },
+        "setupStatus": {
+         "completeSetup": "설정 완료",
+         "completed": "완료"
+        },
+        "siteStatus": {
+         "untitled": "제목 없음"
+        },
+        "paymentProcessing": {
+         "title": "결제 처리 중",
+         "description": "결제를 처리하는 중입니다. 잠시 기다려 주세요...",
+         "message": "결제를 처리하는 중..."
+        },
+        "paymentSuccess": {
+         "title": "결제 완료",
+         "description": "결제가 처리되었습니다!",
+         "message": "결제가 완료되었습니다!",
+         "updatingStatus": "사이트 상태 업데이트 중..."
+        },
+        "notifications": {
+         "paymentSuccess": "결제 완료",
+         "siteStatusUpdated": "사이트 상태를 업데이트했습니다"
+        }
+       },
+       "freeSiteOffer": {
+        "banner": {
+         "heading": "지금 무료 WordPress 사이트를 시작하세요!",
+         "description": "1년 동안 100% 무료인 WordPress 사이트로 온라인 활동을 시작하세요. 에이전시나 첫 고객에게 딱 맞습니다. 빠르게 만들고, 더 빠르게 성장하고, 전용 혜택도 누리세요.",
+         "ctaButton": "무료 사이트 지금 신청"
+        }
+       },
+       "wpDetectBanner": {
+        "banner": {
+         "title": "놓치지 마세요!",
+         "agencyOnlyView": "에이전시 전용 화면",
+         "agencyOnlyTooltip": "이 배너는 에이전시 관리자에게만 표시됩니다",
+         "messageWithCount": "고객 {locationsCount}곳 중 {wpEnabledLocations}곳이 WordPress를 사용하고 있습니다. 더 똑똑하게 호스팅해 보세요. 간편한 호스팅 솔루션으로 옮기면 매달 비용을 크게 줄일 수 있습니다!",
+         "messageDefault": "간편한 호스팅 솔루션으로 옮기면 매달 비용을 크게 줄일 수 있습니다!",
+         "learnMore": "자세히 보기"
+        }
+       },
+       "planLimitExceeded": "플랜 한도 초과: 활성 사이트가 {activeSites}개입니다. 무제한 플랜으로 업그레이드하거나, 유틸리티 플랜을 쓰려면 사이트 수를 {maxSites}개로 줄이세요."
+      },
+      "aiEmployee": {
+       "name": "AI 직원",
+       "summerOfAiEnabledDescription": "AI 직원 실행을 제공하거나 고객에게 별도로 청구하려면\n이 옵션을 선택하세요. Summer of AI가 활성화되어 있어\n플랜이 30일 무료 체험으로 시작됩니다.",
+       "manageSummerOfAiAccess": "Summer of AI 접근 관리",
+       "summerOfAiDisabledDescription": "AI 직원 실행을 제공하거나 고객에게 별도로 청구하려면\n이 옵션을 선택하세요. Summer of AI가 비활성화되어 있어\n플랜에 30일 무료 체험이 없습니다."
+      },
+      "conversationAi": {
+       "name": "대화 AI"
+      },
+      "seo": {
+       "name": "SEO(Search Atlas 제공)"
+      },
+      "workflowPro": {
+       "name": "워크플로우 Pro",
+       "logoAlt": "리스팅",
+       "workflowProPlan": "워크플로우 Pro - 가격 티어",
+       "workflowPlanPrice": "워크플로우 플랜 가격",
+       "starterTier": "스타터 티어",
+       "growthTier": "그로스 티어",
+       "scaleTier": "스케일 티어",
+       "newSubscriptionPlans": "새 구독 플랜 출시!",
+       "newSubscriptionPlansDescription": "고객에게 더 큰 가치를 제공할 수 있도록 워크플로우 Pro 구독 플랜을 새로 선보입니다.",
+       "workflowsPlanPrice": "워크플로우 플랜 가격",
+       "agreement": "이 고객에게 워크플로우 Pro를 {selectedPlan}(으)로 재판매 없이 활성화하며, 최소 약정 기간이 1개월임에 동의합니다"
+      },
+      "dedicatedIp": {
+       "name": "전용 IP"
+      },
+      "adManager": {
+       "name": "광고 관리자"
+      }
+     }
+    },
+    "agencyResellingCard": {
+     "common": {
+      "howTo": "어떻게 작동하나요?",
+      "resellAmount": "리셀링 금액",
+      "save": "저장"
+     },
+     "products": {
+      "listings": {
+       "title": "리스팅",
+       "titleAlt": "리스팅",
+       "upgradePlansPromo": "업그레이드 플랜 곧 출시!",
+       "banner": {
+        "title": "새 구독 플랜 출시!",
+        "description": "고객에게 더 큰 가치를 제공할 수 있도록 리스팅 6개월·연간 구독 플랜을 새로 선보입니다."
+       },
+       "selectorEngineAlt": "리스팅 엔진",
+       "newPlans": "새 플랜",
+       "plans": {
+        "month": "월",
+        "nMonths": "{n}개월",
+        "perMonth": "{price} / 월",
+        "perMonths": "{price} / {months}개월",
+        "perYear": "{price} / 년",
+        "monthly": "월간 플랜",
+        "sixMonth": "스마트 세이버 플랜",
+        "annual": "연간 어드밴티지 플랜",
+        "savePercentage": "({percentage}% 할인)",
+        "pricing": {
+         "listingsPrice": "리스팅 플랜 가격",
+         "customerPaying": "고객 판매가",
+         "profit": "내 수익"
+        }
+       },
+       "providerSelector": {
+        "title": "엔진 선택",
+        "description": "리스팅에 사용할 엔진을 선택하세요",
+        "recommended": "추천",
+        "uberall": {
+         "conflictChance": "엔터티 충돌 가능성 보통",
+         "publisherNetwork": "퍼블리셔 네트워크",
+         "successRate": "리스팅 동기화 성공률 85%",
+         "learnMore": "자세히 보기"
+        },
+        "yext": {
+         "conflictChance": "엔터티 충돌 가능성 낮음",
+         "publisherNetwork": "퍼블리셔 네트워크",
+         "successRate": "리스팅 동기화 성공률 98%"
+        },
+        "poweredBy": "{provider} 제공",
+        "changeEngine": "엔진 변경",
+        "cancel": "취소",
+        "confirmAndApplyEngineChange": "확인 후 엔진 적용",
+        "acknowledgeLabel": "엔진 선택 적용",
+        "acknowledge": "이 선택은 내 에이전시의 모든 신규 비즈니스 엔터티에 적용되며, 이후 엔터티에 대해서는 언제든 바꿀 수 있음을 이해합니다."
+       }
+      }
+     }
+    },
+    "marketplace": {
+     "appPlans": "앱 플랜",
+     "selectOne": "하나 선택",
+     "yourPrice": "내 판매가",
+     "highlevelPrice": "하이퍼클래스 가격",
+     "yourProfit": "내 수익",
+     "save": "저장",
+     "automateCustomFieldsImports": "커스텀 필드 가져오기 자동화",
+     "freeTrialOffer": "이 앱은 {duration}일 무료 체험을 제공합니다.",
+     "errorFetchingRebillingConfig": "재청구 설정을 가져오는 중 오류가 발생했습니다",
+     "errorCreatingRebillingConfig": "재청구 설정을 만드는 중 오류가 발생했습니다",
+     "errorEditingRebillingConfig": "재청구 설정을 편집하는 중 오류가 발생했습니다",
+     "errorSavingRebillingConfig": "재청구 설정을 저장하는 중 오류가 발생했습니다",
+     "description": "마크업 후 재판매: 서드파티 개발자의 마켓플레이스 앱. 서브 계정은 설치할 때 여기서 설정한 마크업 가격을 결제합니다."
+    },
+    "filters": {
+     "filtersApplied": "적용된 필터:",
+     "viewMore": "더 보기 ({count})",
+     "viewLess": "접기",
+     "clearFilters": "필터 지우기",
+     "pricing": "가격:",
+     "categories": "카테고리:",
+     "appContains": "앱 포함 항목:",
+     "collections": "컬렉션:",
+     "distributionType": "배포 유형:",
+     "noAppsFound": "앱이 없습니다",
+     "modifyFilters": "필터를 바꿔 보세요"
+    },
+    "agencyResellingPage": {
+     "common": {
+      "resellingTitle": "리셀링",
+      "subscriptionRestriction": "서브 계정이 이미 구독 중이어서 설정을 변경할 수 없습니다",
+      "offerPrefix": "오퍼",
+      "resellingPrefix": "리셀링",
+      "resellPrefix": "리셀링",
+      "howDoesItWork": "어떻게 작동하나요?",
+      "buildResellerOffer": "리셀링 오퍼 구성",
+      "yourPrice": "내 판매가",
+      "highlevelPrice": "하이퍼클래스 가격",
+      "yourProfit": "내 수익",
+      "priceValidationError": "가격은 하이퍼클래스 가격 이상이어야 합니다",
+      "saving": "저장 중",
+      "save": "저장",
+      "footerDescription": "하이퍼클래스는 효율적인 운영과 전문성 덕분에 앱 개발을 할인된 가격에 제공합니다. 서브 계정은 클라이언트 포털의 앱 설정에서 앱을 구매하고 맞춤 설정할 수 있습니다.",
+      "learnMore": "자세히 보기.",
+      "pageTitle": "리셀링",
+      "coreServicesTab": "핵심 서비스",
+      "coreServiceDescription": "핵심 플랫폼·서비스 마크업 후 재판매",
+      "marketplaceAppsTab": "마켓플레이스 앱"
+     },
+     "workflows": {
+      "disclaimer": "하이퍼클래스는 워크플로우 프리미엄 실행 10,000건을 월 $10(유효 기간 1개월)에 제공합니다. 일반 플랫폼보다 최대 60% 저렴하며, 처음 10,000건 실행 기준 작업·트리거당 실질 비용은 $0.001입니다.",
+      "holidayPromotion": " - 홀리데이 및 연말 프로모션을 활성화하세요!",
+      "howDoesItWork": "어떻게 작동하나요?",
+      "buildResellerOffer": "리셀링 오퍼 구성",
+      "yourPrice": "내 판매가",
+      "highlevelPrice": "하이퍼클래스 가격",
+      "yourProfit": "내 수익",
+      "priceValidationError": "가격은 하이퍼클래스 가격 이상이어야 합니다",
+      "saving": "저장 중",
+      "save": "저장",
+      "deployPrefix": "직접 배포:",
+      "directlySuffix": "(재판매 없이)",
+      "deployDirectlyDescription": "워크플로우 프리미엄 실행을 오퍼의 일부로 제공하거나 고객에게 별도로 청구하려면 이 옵션을 사용하세요",
+      "agreementPrefix": "재판매 없이 이 고객에게",
+      "agreementSuffix": "을(를) 활성화하는 데 동의하며, 요금이 청구됨을 확인합니다",
+      "payNowButton": "지금 결제",
+      "subscriptionRestriction": "서브 계정이 이미 구독 중이어서 설정을 변경할 수 없습니다",
+      "subscriptionCreating": "구독을 만드는 중입니다.<br/>새로고침하거나 뒤로 가기 버튼을 누르지 마세요",
+      "subscriptionCreated": "구독을 만들었습니다. 잠시 기다려 주세요...",
+      "subscriptionError": "구독을 만들 수 없습니다. 고객지원에 문의하세요",
+      "blackFridayPromoDescription": "홀리데이·연말 프로모션(<b>3개월 $15, 매월 10,000건 실행 무료 -</b>)을 활성화하면 모든 서브 계정에 이 혜택이 적용됩니다. 3개월이 지나면 서브 계정은 자동으로 기본 가격으로 돌아갑니다. 이 혜택은 2024년 12월 31일(일) PST까지 유효합니다."
+     },
+     "aiEmployee": {
+      "offerPrefix": "오퍼",
+      "resellingPrefix": "리셀링",
+      "resellPrefix": "리셀링",
+      "howDoesItWork": "어떻게 작동하나요?",
+      "buildResellerOffer": "재판매 오퍼 구성",
+      "yourPrice": "내 판매가",
+      "highlevelPrice": "하이퍼클래스 원가",
+      "yourProfit": "내 수익",
+      "priceValidationError": "판매가는 하이퍼클래스 원가 이상이어야 합니다",
+      "saving": "저장 중",
+      "save": "저장",
+      "deployPrefix": "직접 배포:",
+      "directlySuffix": "(재판매 없이)",
+      "deployDirectlyDescription": "AI 직원을 오퍼의 일부로 제공하거나 고객에게 별도로 청구하려면 이 옵션을 사용하세요",
+      "agreementPrefix": "재판매 없이 이 고객에게",
+      "agreementSuffix": "을(를) 활성화하는 데 동의하며, 요금이 청구됨을 확인합니다",
+      "payNowButton": "지금 결제",
+      "subscriptionRestriction": "이 서브 계정은 이미 구독 중이므로 설정을 변경할 수 없습니다",
+      "subscriptionCreating": "구독을 만드는 중입니다.<br/>새로고침하거나 뒤로 가기 버튼을 누르지 마세요",
+      "subscriptionCreated": "구독이 만들어졌습니다. 잠시 기다려 주세요...",
+      "subscriptionError": "구독을 만들 수 없습니다. 지원팀에 문의해 주세요",
+      "enableMessagePrefix": "에이전시의 회사 설정에서",
+      "enableMessageSuffix": "을(를) 활성화해 주세요.",
+      "enableLinkText": "여기"
+     },
+     "seo": {
+      "offerPrefix": "오퍼",
+      "poweredByPrefix": "(Search Atlas 제공)",
+      "resellPrefix": "재판매",
+      "howDoesItWork": "어떻게 작동하나요?",
+      "buildResellerOffer": "재판매 오퍼 구성",
+      "yourPrice": "내 판매가",
+      "highlevelPrice": "하이퍼클래스 원가",
+      "yourProfit": "내 수익",
+      "priceValidationError": "판매가는 하이퍼클래스 원가 이상이어야 합니다",
+      "saving": "저장 중",
+      "save": "저장",
+      "deployPrefix": "직접 배포:",
+      "directlySuffix": "(재판매 없이)",
+      "deployDirectlyDescription": "SEO를 오퍼의 일부로 제공하거나 고객에게 별도로 청구하려면 이 옵션을 사용하세요",
+      "agreementPrefix": "재판매 없이 이 고객에게",
+      "agreementSuffix": "을(를) 활성화하는 데 동의하며, 요금이 청구됨을 확인합니다",
+      "payNowButton": "지금 결제",
+      "subscriptionRestriction": "이 서브 계정은 이미 구독 중이므로 설정을 변경할 수 없습니다",
+      "subscriptionCreating": "구독을 만드는 중입니다.<br/>새로고침하거나 뒤로 가기 버튼을 누르지 마세요",
+      "subscriptionCreated": "구독이 만들어졌습니다. 잠시 기다려 주세요...",
+      "subscriptionError": "구독을 만들 수 없습니다. 지원팀에 문의해 주세요",
+      "toggleTooltipDisable": "모든 서브 계정에서 SEO 도구가 비활성화됩니다.",
+      "toggleTooltipEnable": "모든 서브 계정에서 SEO 도구가 활성화됩니다."
+     },
+     "whatsapp": {
+      "offerPrefix": "오퍼",
+      "resellingPrefix": "리셀링",
+      "resellPrefix": "재판매",
+      "howDoesItWork": "어떻게 작동하나요?",
+      "buildResellerOffer": "재판매 오퍼 구성",
+      "yourPrice": "내 판매가",
+      "highlevelPrice": "하이퍼클래스 원가",
+      "yourProfit": "내 수익",
+      "priceValidationError": "판매가는 하이퍼클래스 원가 이상이어야 합니다",
+      "saving": "저장 중",
+      "save": "저장",
+      "subscriptionRestriction": "이 서브 계정은 이미 구독 중이므로 설정을 변경할 수 없습니다",
+      "learnMore": "자세히 보기",
+      "pricingInfo": "수신 메시지를 받고 대화 창 안에서 자유 형식 텍스트로 답장하는 것은 완전히 무료입니다. 다만 WhatsApp 템플릿을 사용하는 발신 메시지에는 실비 요금이 추가로 부과될 수 있습니다."
+     },
+     "dedicatedIp": {
+      "resellingSettingsSuffix": "재판매 설정",
+      "description": "전용 IP(이메일 발송용) 비용을 고객에게 재청구하고 마크업을 붙일 수 있습니다",
+      "ipRebillingAmount": "IP 재청구 금액",
+      "yourMonthlyCost": "내 월 IP 원가:",
+      "monthlyChargeToCustomer": "고객 월 청구액:",
+      "monthlyProfit": "월 수익:",
+      "yourCost": "내 원가:",
+      "chargedToCustomer": "고객 청구액:",
+      "profit": "수익:",
+      "numberOfIps": "IP 수:",
+      "loading": "불러오는 중...",
+      "save": "저장",
+      "revokeDedication": "전용 IP 제공 중단",
+      "revokeDescription": "고객에게 요금을 청구하지 않고 새 전용 IP 제공을 중단하려면 이 옵션을 사용하세요",
+      "existingSubscriptionsNote": "기존 IP 구독에는 영향이 없습니다",
+      "revoke": "중단",
+      "provideDirectlyTitle": "이메일 전용 IP 직접 제공",
+      "provideDirectlyDescription": "고객에게 요금을 청구하지 않고 전용 IP를 제공하려면 이 옵션을 사용하세요",
+      "agreeToProvideText": "업셀 없이 이 고객에게 IP를 제공하는 데 동의합니다",
+      "acknowledgeChargeText": "IP 1개당 월 $59가 청구됨을 확인합니다",
+      "agree": "동의"
+     },
+     "prospecting": {
+      "offerPrefix": "오퍼",
+      "resellingPrefix": "리셀링",
+      "resellPrefix": "재판매",
+      "howDoesItWork": "어떻게 작동하나요?",
+      "buildResellerOffer": "재판매 오퍼 구성",
+      "yourPrice": "내 판매가",
+      "highlevelPrice": "하이퍼클래스 원가",
+      "yourProfit": "내 수익",
+      "priceValidationError": "판매가는 하이퍼클래스 원가 이상이어야 합니다",
+      "saving": "저장 중",
+      "save": "저장",
+      "deployPrefix": "직접 배포:",
+      "directlySuffix": "(재판매 없이)",
+      "deployDirectlyDescription": "프로스펙팅을 오퍼의 일부로 제공하거나 고객에게 별도로 청구하려면 이 옵션을 사용하세요",
+      "agreementPrefix": "재판매 없이 이 고객에게",
+      "agreementSuffix": "을(를) 활성화하는 데 동의하며, 요금이 청구됨을 확인합니다",
+      "payNowButton": "지금 결제",
+      "subscriptionRestriction": "이 서브 계정은 이미 구독 중이므로 설정을 변경할 수 없습니다",
+      "subscriptionCreating": "구독을 만드는 중입니다.<br/>새로고침하거나 뒤로 가기 버튼을 누르지 마세요",
+      "subscriptionCreated": "구독이 만들어졌습니다. 잠시 기다려 주세요...",
+      "subscriptionError": "구독을 만들 수 없습니다. 지원팀에 문의해 주세요",
+      "toggleTooltipDisable": "모든 서브 계정에서 프로스펙팅 도구가 비활성화됩니다.",
+      "toggleTooltipEnable": "모든 서브 계정에서 프로스펙팅 도구가 활성화됩니다."
+     },
+     "adManager": {
+      "subscriptionRestriction": "이 서브 계정은 이미 구독 중이므로 설정을 변경할 수 없습니다",
+      "offerPrefix": "오퍼",
+      "resellingPrefix": "리셀링",
+      "resellPrefix": "재판매",
+      "howDoesItWork": "어떻게 작동하나요?",
+      "bookACall": "상담 통화 예약",
+      "bookCallTooltip": "설정 관련 피드백이나 도움이 필요하면 클릭해 전문가와 통화를 예약하세요.",
+      "buildResellerOffer": "재판매 오퍼 구성",
+      "yourPrice": "내 판매가",
+      "highlevelPrice": "하이퍼클래스 원가",
+      "yourProfit": "내 수익",
+      "priceValidationError": "판매가는 하이퍼클래스 원가 이상이어야 합니다",
+      "loading": "불러오는 중...",
+      "save": "저장",
+      "stripeNotConnectedLocationWarning": "Stripe 계정이 연결되지 않아 재판매 오퍼를 설정할 수 없습니다.",
+      "stripeNotConnectedAgencyWarning": "Stripe 계정이 연결되지 않아 재판매 오퍼를 설정할 수 없습니다. 다음 대상에는 직접 배포할 수 있습니다:",
+      "underSubAccountReselling": "(서브 계정 리셀링에서)",
+      "deployPrefix": "직접 배포:",
+      "directlySuffix": "(재판매 없이)",
+      "deployDirectlyDescription": "광고 관리자를 오퍼의 일부로 제공하거나 고객에게 별도로 청구하려면 이 옵션을 사용하세요",
+      "agreementPrefix": "재판매 없이 이 고객에게",
+      "agreementMiddle": "을(를) 활성화하는 데 동의하며, 이 서브 계정에 대해",
+      "agreementSuffix": "이(가) 청구됨을 확인합니다."
+     }
+    },
+    "common": {
+     "cardIconAlt": "카드 아이콘",
+     "productLogoAlt": "상품 로고",
+     "addonOffersDescription": "고객에게 제공할 부가 오퍼를 설정하세요. 여기서 정한 가격은 고객이 해당 상품 페이지를 방문할 때 결제 화면에 표시됩니다.",
+     "manage": "관리",
+     "enabled": "활성화됨",
+     "disabled": "비활성화됨",
+     "markupDescription": "기본 원가에 더해 고객에게 청구할 금액을 지정하세요. 이 마크업은 고객이 결제 카드를 등록하면 고객 계정에 자동으로 적용됩니다. 단, SaaS 플랜이나 수동 설정으로 정한 가격을 대체하지는 않습니다."
+    },
+    "rebillingCard": {
+     "usageBasedMarkup": "사용량 기반 마크업",
+     "yourMarkup": "내 마크업",
+     "usage": "사용량",
+     "payAsYouGo": "사용량 기반",
+     "usageBasedDetails": "사용량 기반 상세",
+     "baseRatesChargedToAgency": "기본 요율(에이전시 청구)",
+     "charge": "청구",
+     "chargedToCustomer": "고객 청구액",
+     "valueFor10": "$10이면 약",
+     "profit": "수익",
+     "subAccountManagement": "서브 계정 관리",
+     "subAccountManagementTooltip": "서브 계정별 상품 접근 권한과 가격을 관리합니다. 리셀링을 켜거나 끄고, 맞춤 마크업을 정하고, 여러 서브 계정에 기능 활성화·마크업 변경 같은 일괄 작업을 적용할 수 있습니다.",
+     "subAccountManagementTooltip297": "서브 계정별 상품 접근 권한과 가격을 관리합니다. 리셀링을 켜거나 끄고, 기능 활성화 같은 일괄 작업을 적용할 수 있습니다.",
+     "manageAtSubAccountLevel": "서브 계정별 관리",
+     "resellingEnabledFor": "서브 계정 {count}개에서 리셀링 활성화됨",
+     "resellingDisabledFor": "서브 계정 {count}개에서 리셀링 비활성화됨",
+     "saveChanges": "변경사항 저장",
+     "success": "성공",
+     "savedConfigSuccessfully": "설정을 저장했습니다",
+     "error": "오류",
+     "errorSavingConfig": "설정을 저장하지 못했습니다",
+     "products": {
+      "workflowExternalAI": "워크플로우 - 외부 AI 모델",
+      "emailResell": "이메일 재판매",
+      "lcEmailVerification": "하이퍼클래스 이메일 인증",
+      "phoneSystem": "전화 시스템",
+      "domainPurchase": "도메인 구매"
+     },
+     "words": "단어",
+     "wordpress": {
+      "errors": {
+       "planLimitExceeded": "플랜 한도를 초과했습니다: 활성 사이트가 {activeSites}개입니다. Truly Unlimited 플랜으로 업그레이드하거나, Utility 플랜을 쓰려면 사이트 수를 {maxSites}개로 줄이세요."
+      }
+     }
+    },
+    "workflowAIModal": {
+     "title": "워크플로우 - 외부 AI 모델 활성화",
+     "termsAndConditions": "이용약관",
+     "externalAIModels": "외부 AI 모델",
+     "term1": "{bold} 기능은 실행할 때마다 요금이 부과됩니다. AI 모델 제공업체가 청구하는 금액 그대로 결제합니다.",
+     "term2": "외부 AI 모델을 활성화하면, 에이전시의 어느 서브 계정에서든 실행될 때마다 AI 모델 제공업체가 청구하는 실제 비용이 에이전시 지갑에서 차감됩니다.",
+     "confirmTerms": "워크플로우 - 외부 AI 모델 이용약관에 동의합니다",
+     "cancel": "취소",
+     "enable": "활성화"
+    },
+    "whatIsResellingModal": {
+     "step1Alt": "1단계",
+     "step2Alt": "2단계",
+     "step3Alt": "3단계"
+    },
+    "whatsApp": {
+     "here": "여기"
+    },
+    "bulkLocationsPage": {
+     "manage": "관리",
+     "atSubAccountLevel": "(서브 계정별)",
+     "resellingEnabledFor": "서브 계정 {count}개에서 리셀링 활성화됨",
+     "resellingDisabledFor": "서브 계정 {count}개에서 리셀링 비활성화됨",
+     "subAccountsSelected": "서브 계정 {count}개 선택됨",
+     "allSubAccountsSelected": "서브 계정 {totalCount}개 모두 선택됨",
+     "selectAllSubAccounts": "서브 계정 {totalCount}개 모두 선택",
+     "clearSelection": "선택 해제",
+     "bulkActions": "일괄 작업",
+     "manageFeature": "기능 관리",
+     "enableFeature": "기능 활성화",
+     "disableFeature": "기능 비활성화",
+     "manageReselling": "리셀링 관리",
+     "enableUsageProducts": "사용량 상품 활성화",
+     "disableUsageProducts": "사용량 상품 비활성화",
+     "deployDirectly": "직접 배포",
+     "previous": "이전",
+     "next": "다음",
+     "loadMore": "더 보기",
+     "rowsPerPage": "페이지당 행 수",
+     "noDataTitle": "검색과 일치하는 서브 계정이 없습니다.",
+     "refresh": "새로고침",
+     "tryAgain": "다시 시도",
+     "columns": {
+      "name": "이름",
+      "feature": "기능",
+      "usageReselling": "사용량 리셀링",
+      "usageMarkup": "사용량 마크업",
+      "subscriptionPrice": "에이전시 구독 가격",
+      "subscriptionProfit": "실현 수익",
+      "actions": "작업",
+      "setMarkupPrice": "마크업 가격 설정"
+     },
+     "tooltips": {
+      "agencyOn97Plan": "에이전시가 $97 플랜을 사용 중입니다.",
+      "enableFeatureFirst": "사용량 리셀링을 관리하려면 먼저 기능을 활성화하세요.",
+      "saasModeNotActivated": "이 서브 계정은 SaaS 모드가 활성화되어 있지 않습니다.",
+      "enableUsageResellingToView": "마크업을 보려면 사용량 리셀링을 활성화하세요.",
+      "emailRebillingMessage": "에이전시가 $297 플랜을 사용 중이고 이메일 제공업체가 하이퍼클래스 기본 이메일이 아니어서 이 서브 계정의 사용량 기반 리셀링이 비활성화되었습니다. 리셀링을 사용하려면 하이퍼클래스 기본 이메일로 전환하세요.",
+      "phoneRebillingMessage": "이 서브 계정이 하이퍼클래스 기본 전화가 아닌 다른 전화 제공업체를 사용하고 에이전시가 $297 플랜이어서 사용량 기반 리셀링을 사용할 수 없습니다. 리셀링을 사용하려면 하이퍼클래스 기본 전화로 전환하세요."
+     },
+     "notifications": {
+      "deployedSuccessfully": "배포했습니다",
+      "errorDeploying": "직접 배포하지 못했습니다",
+      "resellingEnabledSuccessfully": "리셀링을 활성화했습니다",
+      "errorEnablingReselling": "리셀링을 활성화하지 못했습니다",
+      "resellingDisabledSuccessfully": "리셀링을 비활성화했습니다",
+      "errorDisablingReselling": "리셀링을 비활성화하지 못했습니다",
+      "featureEnabledSuccessfully": "기능을 활성화했습니다",
+      "featureDisabledSuccessfully": "기능을 비활성화했습니다",
+      "errorEnablingFeature": "기능을 활성화하지 못했습니다",
+      "errorDisablingFeature": "기능을 비활성화하지 못했습니다"
+     }
+    },
+    "bulkRebillingModal": {
+     "title": "사용량 상품 활성화",
+     "yourMarkup": "내 마크업",
+     "cancel": "취소",
+     "enable": "활성화",
+     "modalText": "내가 부담하는 {productTitle} 원가에 더해 고객에게 청구되는 마진입니다.",
+     "modalTextDefault": "선택한 모든 서브 계정의 재청구 상태와 마크업이 이전 상태와 관계없이 덮어쓰기됩니다. SaaS 모드가 활성화된 서브 계정에만 적용됩니다.",
+     "cautionText": "신중하게 진행하세요. 선택한 서브 계정 {subAccountCount}개의 기능 설정과 현재 활동에 영향을 줍니다",
+     "timelineText": "모든 서브 계정에 작업을 적용하면 실제 값이 반영되기까지 5~15분이 걸릴 수 있습니다"
+    },
+    "bulkFeatureEnableModal": {
+     "enableFeatureConfirmation": "기능 활성화 확인",
+     "disableFeatureConfirmation": "기능 비활성화 확인",
+     "modalText": "선택한 옵션에 따라 선택한 서브 계정의 기능을 활성화하거나 비활성화합니다.",
+     "cautionText": "신중하게 진행하세요. 선택한 서브 계정 {subAccountCount}개의 기능 설정과 현재 활동에 영향을 줍니다.",
+     "timelineText": "모든 서브 계정에 작업을 적용하면 실제 값이 반영되기까지 5~15분이 걸릴 수 있습니다.",
+     "enable": "활성화",
+     "disable": "비활성화",
+     "cancel": "취소"
+    },
+    "singleRebillingEnableModal": {
+     "title": "사용량 상품 활성화",
+     "subAccount": "서브 계정",
+     "yourMarkup": "내 마크업",
+     "modalText": "내가 부담하는 {productTitle} 원가에 더해 고객에게 청구되는 마진입니다.",
+     "enable": "활성화",
+     "cancel": "취소"
+    },
+    "agency97PlanBanner": {
+     "agencyPlan": "에이전시 플랜: {plan}"
+    },
+    "agencyPlanBanner": {
+     "bannerText": "현재 {planName} 플랜을 사용 중입니다 — {description}"
+    },
+    "domainPurchaseModal": {
+     "enableDomainPurchase": "도메인 구매 활성화",
+     "termsAndConditions": "이용약관",
+     "term1": "도메인은 구매할 때마다 요금이 부과됩니다. 도메인 가격은 도메인 이름과 TLD(.com, .us 등)에 따라 다릅니다.",
+     "term2": "SaaS 구성에서 도메인을 활성화하고 기본 가격에 더할 재청구 금액을 조정할 수 있습니다.",
+     "term3": "서브 계정의 도메인 구매 내역에 따라 요금을 청구하려면 해당 서브 계정에서 도메인 재청구를 활성화하세요.",
+     "term4": "도메인을 활성화하면, 에이전시의 어느 서브 계정에서든 도메인을 구매할 때마다 도메인 가격에 해당하는 금액이 에이전시 지갑(서브 계정에 결제 수단이 없는 경우) 또는 서브 계정 지갑(서브 계정에 결제 수단이 있는 경우)에서 차감됩니다.",
+     "confirmTerms": "도메인 구매 이용약관에 동의합니다",
+     "cancel": "취소",
+     "enable": "활성화"
+    },
+    "bulkDisableRebillingModal": {
+     "title": "재청구 비활성화 확인",
+     "modalText": "선택한 옵션에 따라 선택한 서브 계정의 사용량 리셀링을 비활성화합니다.",
+     "cautionText": "신중하게 진행하세요. 선택한 서브 계정 {subAccountCount}개의 기능 설정과 현재 활동에 영향을 줍니다.",
+     "timelineText": "모든 서브 계정에 작업을 적용하면 실제 값이 반영되기까지 5~15분이 걸릴 수 있습니다.",
+     "disable": "비활성화",
+     "cancel": "취소"
+    },
+    "newAgencyResellingPage": {
+     "common": {
+      "productsNavigation": "상품",
+      "plan": "${plan} 플랜",
+      "agencyPlan": "에이전시 플랜",
+      "agencyPlanLabel": "에이전시 플랜: {plan}",
+      "upgradePlanDescription": "$297 플랜으로 업그레이드하면 고정 마크업(1.05x)을, $497 플랜으로 업그레이드하면 직접 정하는 맞춤 마크업을 사용할 수 있습니다.",
+      "upgradeTo297": "$297로 업그레이드",
+      "upgradeTo497": "$497로 업그레이드",
+      "plan297Description": "1.05x 고정 마크업만 제공됩니다. 맞춤 마크업을 사용하려면 $497 플랜으로 업그레이드하세요",
+      "subscriptionMarkup": "구독 마크업",
+      "yourPrice": "내 원가",
+      "yourCustomersPrice": "고객 판매가",
+      "yourProfit": "내 수익",
+      "pricingPlans": "가격 플랜",
+      "month": "월",
+      "usageBasedMarkup": "사용량 기반 마크업",
+      "yourMarkup": "내 마크업",
+      "usageBasedDetails": "사용량 기반 상세",
+      "subAccountManagement": "서브 계정 관리",
+      "manageAtSubAccountLevel": "서브 계정별 관리",
+      "manage": "관리",
+      "enabled": "활성화됨",
+      "disabled": "비활성화됨",
+      "resellingEnabledFor": "서브 계정 {count}개에서 리셀링 활성화됨",
+      "resellingDisabledFor": "서브 계정 {count}개에서 리셀링 비활성화됨",
+      "saveChanges": "변경사항 저장",
+      "saved": "저장됨",
+      "savedSuccessfully": "리셀링 변경사항을 저장했습니다.",
+      "savedConfigSuccessfully": "설정을 저장했습니다",
+      "error": "오류",
+      "errorSaving": "리셀링 변경사항을 저장하지 못했습니다.",
+      "errorSavingConfig": "설정을 저장하지 못했습니다",
+      "errorIcon": "오류 아이콘",
+      "pricingPlansAgency": "가격 플랜(에이전시)",
+      "save": "저장",
+      "nMonths": "{n}개월",
+      "year": "년",
+      "upgrade": "업그레이드",
+      "haveAnAffiliateCode": "제휴 코드가 있으신가요?",
+      "typeYourAffiliateCode": "제휴 코드를 입력하세요",
+      "productCardTooltip": " 서브 계정별 상품 접근 권한과 가격을 관리합니다. 리셀링을 켜거나 끄고, 맞춤 마크업을 정하고, 여러 서브 계정에 기능 활성화·마크업 변경 같은 일괄 작업을 적용할 수 있습니다.",
+      "productCardTooltip297": "서브 계정별 상품 접근 권한과 가격을 관리합니다. 리셀링을 켜거나 끄고, 기능 활성화 같은 일괄 작업을 적용할 수 있습니다.",
+      "charge": "청구",
+      "chargedToCustomer": "고객 청구액",
+      "valueFor10": "$10이면 약",
+      "profit": "수익",
+      "usage": "사용량",
+      "baseRatesChargedToAgency": "기본 요율(에이전시 청구)",
+      "usageHeaderTemplate": "{productLabel} 사용량",
+      "productIcon": "상품 아이콘"
+     },
+     "productDescription": {
+      "WHATSAPP_V1": "WhatsApp으로 리드·고객과 직접 연결해 끊김 없이 양방향 소통합니다.",
+      "EmailIP": "전용 IP 주소로 이메일을 보내 도달률과 발신자 평판을 높입니다.",
+      "CONVERSATIONS_AI": "AI로 양방향 대화를 자동화해 리드를 선별하고, 질문에 답하고, 전환을 이끌어 냅니다.",
+      "Prospecting": "스마트 필터, 연락처 데이터, 아웃리치 도구로 잠재 리드를 찾고 연락합니다.",
+      "CP_BRANDED_APP_49": "안전한 브랜드 포털에서 고객이 코스·커뮤니티·제휴 수익금에 24시간 언제든 접근할 수 있습니다.",
+      "WORDPRESS_V1": "기본 제공 WordPress 연동으로 웹사이트를 쉽게 만들고, 관리하고, 호스팅합니다.",
+      "YEXT_V2": "지역 디렉터리 전반의 비즈니스 정보를 자동으로 동기화·관리해 SEO를 높입니다.",
+      "starter_plus_workflow_premium_actions_triggers": "월 실행량을 선불로 구매하는 워크플로우 프리미엄 요금 티어입니다.",
+      "AI_EMPLOYEE": "내 비즈니스를 학습한 상시 AI 어시스턴트를 배포해 대화, 콘텐츠, 리뷰 등을 처리합니다.",
+      "Ad_Publishing_Standard_Plan": "내 비즈니스 관리자로 광고를 손쉽게 만들고 관리합니다.",
+      "seo_search_atlas": "AI 기반 SEO 도구로 검색 순위를 높입니다."
+     },
+     "adManager": {
+      "bookACall": "상담 통화 예약",
+      "perLocation": "서브 계정당",
+      "unlimitedLocations": "서브 계정 무제한",
+      "standardPlan": "스탠다드 플랜",
+      "utilityPlan": "유틸리티 플랜",
+      "foundersPlan": "파운더스 플랜",
+      "utilityPlanTooltip": "하이퍼클래스에 추가 비용 없이 무제한 서브 계정에 광고 관리자를 재판매할 수 있습니다.",
+      "foundersPlanTooltip": "연 $1164 대신 $970에 무제한 서브 계정에 재판매하세요.",
+      "locationProxyPlan": "서브 계정 프록시 플랜",
+      "hiddenLocationSubscriptionProxy": "숨김 - 서브 계정 구독 프록시"
+     },
+     "listings": {
+      "poweredBy": "{provider} 제공",
+      "changeEngine": "엔진 변경",
+      "monthlyPlan": "월간 플랜",
+      "sixMonthPlan": "스마트 세이버 플랜",
+      "annualPlan": "연간 어드밴티지 플랜",
+      "listingsPlanPrice": "리스팅 플랜 가격",
+      "customerPaying": "고객 결제액",
+      "profit": "수익",
+      "percentageOff": "{percentage}% 할인",
+      "selectListingsEngine": "엔진 선택",
+      "pleaseSelectListingsEngine": "리스팅에 사용할 엔진을 선택하세요",
+      "applyEngineSelection": "엔진 선택 적용",
+      "engineSelectionDisclaimer": "이 선택은 내 에이전시의 모든 신규 비즈니스 항목에 적용되며, 이후 항목에 대해서는 언제든 변경할 수 있음을 이해합니다.",
+      "recommended": "추천",
+      "cancel": "취소",
+      "confirmAndApply": "확인 후 적용",
+      "learnMore": "자세히 보기",
+      "listingsEngine": "리스팅 엔진",
+      "benefits": {
+       "UBERALL": {
+        "conflictChance": "항목 충돌 가능성 보통",
+        "publisherNetwork": "퍼블리셔 네트워크",
+        "successRate": "리스팅 동기화 성공률 85%"
+       },
+       "YEXT": {
+        "conflictChance": "항목 충돌 가능성 낮음",
+        "publisherNetwork": "퍼블리셔 네트워크",
+        "successRate": "리스팅 동기화 성공률 98%"
+       }
+      }
+     },
+     "wordpress": {
+      "viewPlanDetails": "플랜 상세 보기",
+      "standard": "스탠다드",
+      "utilityPlan": "유틸리티 플랜",
+      "monthly": "월간",
+      "yearly": "연간",
+      "annualMaxSavings": "연간(최대 할인)",
+      "perSite": "사이트당",
+      "nSites": "사이트 {n}개",
+      "unlimitedSites": "사이트 무제한",
+      "recommended": "추천",
+      "maxSavings": "최대 할인",
+      "chooseYourPlan": "플랜 선택",
+      "unlimited": "무제한",
+      "dollarPerSite": "사이트당 ${price}",
+      "billedMonthly": "월간 결제",
+      "billedAnnually": "연간 결제",
+      "ifBilledAnnually": "연간 결제 시",
+      "defaultPlan": "기본 플랜",
+      "currentPlan": "현재 플랜",
+      "upgrade": "업그레이드",
+      "whatYouGet": "제공 내용",
+      "everythingWeProvideInThisPlan": "이 플랜에서 제공하는 모든 것",
+      "monthlyBilling": "월간 결제",
+      "yearlyBilling": "연간 결제",
+      "cancel": "취소",
+      "confirmAndPayPrice": "확인 후 {price} 결제",
+      "perMonth": "월",
+      "perYear": "연",
+      "addonManagement": "부가 기능",
+      "features": {
+       "standard": {
+        "wordpressSite": "WordPress 사이트 1개",
+        "gbStorage": "저장 공간 12GB",
+        "unmeteredBandwidth": "대역폭 무제한",
+        "visits": "방문 10,000회",
+        "manualBackups": "수동 백업 5회",
+        "freeSSL": "무료 SSL",
+        "themeAndPluginManagement": "테마·플러그인 관리",
+        "stagingEnvironment": "스테이징 환경"
+       },
+       "utilityPlan": {
+        "wordpressSites": "WordPress 사이트 25개",
+        "gbStorage": "저장 공간 60GB",
+        "unmeteredBandwidth": "대역폭 무제한",
+        "visits": "방문 무제한",
+        "backups": "백업 무제한",
+        "freeSSL": "무료 SSL",
+        "themeAndPluginManagement": "테마·플러그인 관리",
+        "stagingEnvironment": "스테이징 환경",
+        "manualBackups": "수동 백업 무제한"
+       },
+       "trulyUnlimited": {
+        "wordpressSites": "WordPress 사이트 무제한",
+        "gbStorage": "저장 공간 500GB",
+        "unmeteredBandwidth": "대역폭 무제한",
+        "visits": "방문 무제한",
+        "backups": "백업 무제한",
+        "freeSSL": "무료 SSL",
+        "themeAndPluginManagement": "테마·플러그인 관리",
+        "stagingEnvironment": "스테이징 환경",
+        "manualBackups": "수동 백업 무제한",
+        "prioritySupport": "우선 지원"
+       }
+      }
+     },
+     "workflowsPro": {
+      "headerDescription": "구독한 서브 계정은 프리미엄 워크플로우 트리거와 액션을 한도 내에서 사용할 수 있으며, 한도를 다 쓸 때까지 서브 계정과 에이전시 모두 건당 요금이 부과되지 않습니다.",
+      "starterTier": "스타터 티어",
+      "growthTier": "그로스 티어",
+      "scaleTier": "스케일 티어",
+      "workflowsPlanPrice": "워크플로우 플랜 가격",
+      "customerPaying": "고객 결제액",
+      "profit": "수익"
+     },
+     "featureActionModal": {
+      "setMarkupPrice": "마크업 가격 설정",
+      "enableFeature": "기능 활성화",
+      "disableFeature": "기능 비활성화",
+      "enableDescription": "선택한 모든 서브 계정에서 이 기능이 활성화됩니다. 이 기능의 맞춤 구독 가격도 설정할 수 있습니다",
+      "disableDescription": "선택한 모든 서브 계정에서 이 기능이 비활성화됩니다.",
+      "resellAmount": "재판매 금액",
+      "cautionText": "신중하게 진행하세요. 선택한 서브 계정 {count}개의 기능 설정과 현재 활동에 영향을 줍니다",
+      "cautionTextAll": "신중하게 진행하세요. 선택한 모든 서브 계정의 기능 설정과 현재 활동에 영향을 줍니다",
+      "timelineText": "모든 서브 계정에 작업을 적용하면 실제 값이 반영되기까지 5~15분이 걸릴 수 있습니다",
+      "cancel": "취소",
+      "enable": "활성화",
+      "disable": "비활성화"
+     },
+     "bulkDeployDirectlyModal": {
+      "title": "직접 배포",
+      "subtitle": "선택한 서브 계정에 상품을 직접 배포합니다.",
+      "alertMessage": "이 배포 비용은 서브 계정이 아닌 에이전시에 청구됩니다. 최대 15분이 걸릴 수 있습니다.",
+      "cancel": "취소",
+      "deployWithoutUpsell": "업셀 없이 배포"
+     },
+     "whatIsReselling": {
+      "title": "리셀링: 어떻게 작동하나요?",
+      "subtitle": "하이퍼클래스를 고객에게 재판매해 서비스를 반복 수익원으로 만드세요. 방법은 다음과 같습니다:",
+      "gettingStarted": "시작하기",
+      "step1": {
+       "title": "297 또는 497 플랜 가입",
+       "description": "297 또는 497 플랜과 SaaS 도구로 리셀링 기능을 사용할 수 있습니다."
+      },
+      "step2": {
+       "title": "SaaS 모드 활성화",
+       "description": "서브 계정에서 활성화하세요. 서브 계정에 <strong>신용카드</strong>가 등록되어 있어야 합니다."
+      },
+      "step3": {
+       "title": "고객 마크업 설정",
+       "description": "고객에게 청구할 금액을 정하고 그 차액을 수익으로 가져가세요."
+      },
+      "howBillingWorks": "청구 방식",
+      "billingFlow": {
+       "twoSubscriptions": {
+        "title": "구독 2개가 자동으로 생성됨",
+        "description": "→ <strong>고객</strong>과 내 <strong>Stripe</strong> 계정 사이: 고객에게서 결제를 받습니다<br />→ <strong>하이퍼클래스</strong>와 내 <strong>카드</strong> 사이: 하이퍼클래스에 월 $10를 결제합니다"
+       },
+       "controlPricing": {
+        "title": "가격은 내가 정하고 수익은 내가 가져갑니다",
+        "description": "가격 전략을 직접 정하고, 고객에게 청구하는 금액과 하이퍼클래스에 내는 금액의 차액을 수익으로 가져가세요."
+       }
+      },
+      "standardPlanBillingFlow": {
+       "title": "스탠다드 플랜 청구 흐름",
+       "highLevel": {
+        "label": "하이퍼클래스",
+        "costLabel": "내 원가",
+        "price": "월 $10"
+       },
+       "yourAgency": {
+        "label": "내 에이전시",
+        "sellingPriceLabel": "내 판매가",
+        "price": "월 $X"
+       },
+       "yourClient": {
+        "label": "내 고객",
+        "paysLabel": "내 판매가를 결제",
+        "paymentLabel": "고객 결제"
+       }
+      },
+      "learnMore": "자세히 보기"
+     }
+    }
+   },
+   "common": {
+    "cancel": "취소",
+    "close": "닫기"
+   }
   }
  },
  "appsMeta": {
@@ -186995,7 +189372,8 @@
        "deleteActionsTitle": "선택한 액션 {count}개를 삭제할까요?",
        "deleteNodesTitle": "선택한 노드 {count}개를 삭제할까요?",
        "deleteTriggersDescription": "트리거 {count}개가 삭제됩니다. 변경 사항은 이 워크플로우를 저장해야 적용됩니다.",
-       "deleteTriggersTitle": "선택한 트리거 {count}개를 삭제할까요?"
+       "deleteTriggersTitle": "선택한 트리거 {count}개를 삭제할까요?",
+       "deleteNodesDescription": "액션{actionPlural} {actionCount}개와 트리거{triggerPlural} {triggerCount}개가 삭제됩니다. 변경 사항은 이 워크플로우를 저장해야 적용됩니다."
       },
       "moveAllActionsFromSelectedNode": "선택한 노드부터 이후의 모든 액션 이동",
       "moveNotAllowedOnCompleteWorkflowSelection": "워크플로우 전체를 선택한 상태에서는 이동할 수 없습니다.",
