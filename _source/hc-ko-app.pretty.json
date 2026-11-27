@@ -1,8 +1,8 @@
 {
  "_meta": {
-  "version": "4.2.85",
+  "version": "4.2.86",
   "built": "2026-11-27",
-  "source": "립 검수 2갈래 교정 41 + 표기 통일 12(변경사항·게시) · LeadConnector/HighLevel/Vibe → 하이퍼클래스/AI 스튜디오 · v4.2.76: AI 스튜디오 홈 템플릿 카드 _text 21(서버 데이터 — 단어 1개 이름 E-commerce·Portfolio 는 원문 유지) + 폼·설문·퀴즈 빌더(fsb iframe) 1,690 — 2026-11-13 + 자동화 앱 en 대체 카탈로그 우선분 93(설정·등록/실행 기록·AI 도우미) + 자동화 AI 도우미 제안 18 해요체로 통일(기존 제안 문체와 맞춤) + 설정 → 내 프로필 → 이메일 및 대화: GHL 신규 '이메일 동기화 작동 방식' 안내 창 usersMicroApp.profile.emailSyncDisclosure 37(벤자민 캡처 2026-11-20) + 2026-11-24 tr1124h 호스트 텔레메트리 3,255(43 ns, 삽입 3,026, 독립 검수 62) + tr1124w 자동화 en 대체 카탈로그 4,005(ifr 삽입 3,867, 독립 검수 33 + 일괄 통일 201) + 2026-11-24 텔레메트리 잔여 중 기존 번역 재사용 727(같은 영어 원문의 기존 한국어 — 유일 597 · 다수결 2/3 이상 130) + 2026-11-24 에이전시 서브 계정 목록 태그 칸 'Add tags' _text 1(라벨 span 은 카탈로그 밖 — aria 는 사전) + 2026-11-26 잠재고객 발굴(prospecting, iframe 중계 pro) 7,453 → 번역 9갈래·독립 검수 5갈래(교정 39)·통일 35 → ifrApps 7,363 + 2026-11-27 텔레메트리 잔여 1,586(AI 템플릿 마켓 402·서브 계정 관리 257·도메인 84·포털 빌더 64 등 삽입 911, 검수 2) + 에이전시 리셀링 마이크로앱(common|reselling) 922(검수 13·통일 10)",
+  "source": "립 검수 2갈래 교정 41 + 표기 통일 12(변경사항·게시) · LeadConnector/HighLevel/Vibe → 하이퍼클래스/AI 스튜디오 · v4.2.76: AI 스튜디오 홈 템플릿 카드 _text 21(서버 데이터 — 단어 1개 이름 E-commerce·Portfolio 는 원문 유지) + 폼·설문·퀴즈 빌더(fsb iframe) 1,690 — 2026-11-13 + 자동화 앱 en 대체 카탈로그 우선분 93(설정·등록/실행 기록·AI 도우미) + 자동화 AI 도우미 제안 18 해요체로 통일(기존 제안 문체와 맞춤) + 설정 → 내 프로필 → 이메일 및 대화: GHL 신규 '이메일 동기화 작동 방식' 안내 창 usersMicroApp.profile.emailSyncDisclosure 37(벤자민 캡처 2026-11-20) + 2026-11-24 tr1124h 호스트 텔레메트리 3,255(43 ns, 삽입 3,026, 독립 검수 62) + tr1124w 자동화 en 대체 카탈로그 4,005(ifr 삽입 3,867, 독립 검수 33 + 일괄 통일 201) + 2026-11-24 텔레메트리 잔여 중 기존 번역 재사용 727(같은 영어 원문의 기존 한국어 — 유일 597 · 다수결 2/3 이상 130) + 2026-11-24 에이전시 서브 계정 목록 태그 칸 'Add tags' _text 1(라벨 span 은 카탈로그 밖 — aria 는 사전) + 2026-11-26 잠재고객 발굴(prospecting, iframe 중계 pro) 7,453 → 번역 9갈래·독립 검수 5갈래(교정 39)·통일 35 → ifrApps 7,363 + 2026-11-27 텔레메트리 잔여 1,586(AI 템플릿 마켓 402·서브 계정 관리 257·도메인 84·포털 빌더 64 등 삽입 911, 검수 2) + 에이전시 리셀링 마이크로앱(common|reselling) 922(검수 13·통일 10) + 2026-11-27 리셀링 화면 제품명 _text 3·단어 _textScoped 3",
   "strings": 102718
  },
  "host": {
@@ -184802,7 +184802,10 @@
   "Build a calendar app with monthly/weekly views, event creation, and time slot scheduling.": "월간·주간 보기·일정 만들기·시간대 예약 기능이 있는 캘린더 앱을 만듭니다.",
   "Weather App": "날씨 앱",
   "Create a weather dashboard with current conditions, 7-day forecast, and location search.": "현재 날씨·7일 예보·지역 검색이 있는 날씨 대시보드를 만듭니다.",
-  "Add tags": "태그 추가"
+  "Add tags": "태그 추가",
+  "Ad Manager": "광고 관리자",
+  "AI Employee": "AI 직원",
+  "Dedicated IP": "전용 IP"
  },
  "_textScoped": {
   "AM": "오전",
@@ -185743,7 +185746,7 @@
   "Request": "요청",
   "Requests": "요청",
   "Rescheduled": "일정 변경됨",
-  "Reselling": "재판매",
+  "Reselling": "리셀링",
   "Resend": "재전송",
   "Resolve": "해결",
   "Respectful": "존중하는",
@@ -186209,7 +186212,8 @@
   "Japanese": "일본어",
   "Korean": "한국어",
   "paid": "결제 완료",
-  "pending": "대기 중"
+  "pending": "대기 중",
+  "Subscription": "구독"
  },
  "ifrApps": {
   "1_business_account|2_way_email|2_way_sms|4_turbo_4|Due_date": {
