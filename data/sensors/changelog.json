@@ -92,12 +92,12 @@
   "Show all your events on one page in funnels and websites": "2026-11-25",
   "🌐 Smarter Web Research in Managed Agents – More Accurate, Faster & Reliable!": "2026-11-26",
   "Meeting Room: HIPAA Compliance and Top Bar Quick Actions": "2026-11-26",
-  "🧩 Introducing Website Widgets for Restaurants! [Founder's Plan Exclusive]": "2026-11-26"
+  "🧩 Introducing Website Widgets for Restaurants! [Founder's Plan Exclusive]": "2026-11-26",
+  "Update Existing Records When You Re-import from HubSpot": "2026-11-27"
  },
- "updated": "2026-11-26",
+ "updated": "2026-11-27",
  "slugs": [
   "conversation-ai-now-sleeps-when-your-team-replies-from-outside-highlevel",
-  "credential-analytics-see-how-your-certificates-and-badges-perform",
   "custom-date-reminders-access-opportunity-details-natively-no-find-opportunity-ne",
   "introducing-meeting-triggers-in-managed-agents",
   "introducing-suggested-replies-in-managed-agents-chat",
@@ -105,6 +105,7 @@
   "meeting-room-hipaa-compliance-and-top-bar-quick-actions",
   "show-all-your-events-on-one-page-in-funnels-and-websites",
   "smarter-web-research-in-managed-agents-more-accurate-faster-reliable",
+  "update-existing-records-when-you-re-import-from-hubspot",
   "workflows-populate-date-time-contact-fields-with-dynamic-values"
  ]
 }

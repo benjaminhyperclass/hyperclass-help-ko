@@ -663,3 +663,18 @@
 - `voiceAiApp` 1019 → 1030
 - `yextApp` 2229 → 2384
 
+## 2026-11-27 08:50 UTC — main 2263 → 2271 · manifest 2263.8262 → 2271.8274
+- `bladePlatformApp` 88 → 89
+- `calendarComponentsApp` 648 → 664
+- `calendarMeetingsApp` 658 → 661
+- `calendarRentalsApp` 654 → 661
+- `calendarServicesApp` 656 → 661
+- `contactsApp` 3167 → 3184
+- `conversationsV2App` 3177 → 3188
+- `membershipAnalyticsApp` 2245 → 2377
+- `membershipApp` 2372 → 2376
+- `membershipSettingsApp` 2208 → 2376
+- `phoneIntegrationApp` 2390 → 2394
+- `saasApp` 2333 → 2379
+- `vibeEditorApp` 413 → 440
+
