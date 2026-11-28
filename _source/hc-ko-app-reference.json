@@ -165981,7 +165981,7 @@
  },
  "templateLibraryApp.filterBar.searchPrefix": {
   "en": "Search ",
-  "ko": "검색 "
+  "ko": "검색: "
  },
  "templateLibraryApp.filterBar.searchHint1": {
   "en": "templates",
@@ -165989,19 +165989,19 @@
  },
  "templateLibraryApp.filterBar.searchHint2": {
   "en": "by name",
-  "ko": "이름별"
+  "ko": "이름"
  },
  "templateLibraryApp.filterBar.searchHint3": {
   "en": "by category",
-  "ko": "카테고리별"
+  "ko": "카테고리"
  },
  "templateLibraryApp.filterBar.searchHint4": {
   "en": "by use case",
-  "ko": "사용 사례별"
+  "ko": "사용 사례"
  },
  "templateLibraryApp.filterBar.searchHint5": {
   "en": "by color",
-  "ko": "색상별"
+  "ko": "색상"
  },
  "templateLibraryApp.filterBar.sortBy": {
   "en": "Sort by",
