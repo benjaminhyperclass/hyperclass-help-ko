@@ -1030,6 +1030,8 @@
  "reputation.reputationSettings.integrations.validationError": "Please enter a valid URL for",
  "reputation.reputationSettings.integrations.viewAccount": "View account",
  "reputation.reputationSettings.integrations.viewConnection": "View Connection",
+ "reputation.reputationSettings.qrCode.alerts.switchModeDescription": "Switching the editor mode will disrupt the layout, arrangement, and positioning of the added components. Would you like to proceed?",
+ "reputation.reputationSettings.qrCode.alerts.switchModeTitle": "Alert for switching editor modes.",
  "reputation.reputationSettings.qrCode.countDownMessage": "Time's ticking! Let's craft your first QR code to boost review collection.",
  "reputation.reputationSettings.qrCode.createButton": "Create QR Code",
  "reputation.reputationSettings.qrCode.createMessage": "Create your QR Code now",

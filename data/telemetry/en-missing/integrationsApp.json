@@ -32,6 +32,8 @@
  "integrations.apps.linkedIn.name": "LinkedIn",
  "integrations.apps.metaMarketing.description": "Connect Facebook Login for Business to send paid promotional broadcasts to your Messenger subscribers with Meta Marketing Messages.",
  "integrations.apps.metaMarketing.name": "Facebook Login for Business",
+ "integrations.apps.openai.description": "Connect your OpenAI ads account to create and manage ads on ChatGPT.",
+ "integrations.apps.openai.name": "OpenAI Ads",
  "integrations.apps.printful.name": "Printful",
  "integrations.apps.printify.name": "Printify",
  "integrations.apps.quickbooks.name": "QuickBooks",
