@@ -689,3 +689,6 @@
 - `snapshotsApp` 2368 → 2399
 - `vibeEditorApp` 440 → 441
 
+## 2026-11-28 08:08 UTC — main 2275 → 2275 · manifest 2275.8285 → 2275.8286
+- `communitiesApp` 2212 → 2398
+

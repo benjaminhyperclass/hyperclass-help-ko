@@ -1,5 +1,5 @@
 {
- "manifestVersion": "2275.8285",
+ "manifestVersion": "2275.8286",
  "mainAppVersion": "2275",
  "federatedApps": {
   "reputationApp": "https://appcdn.leadconnectorhq.com/revex/reputation/2386/remoteEntry.js?nocache=true",
@@ -22,7 +22,7 @@
   "platformBillingApp": "https://appcdn.leadconnectorhq.com/revex/platform-billing/80/remoteEntry.js?nocache=true",
   "agencyInternalToolsApp": "https://appcdn.leadconnectorhq.com/revex/agency-internaltools/1000/remoteEntry.js?nocache=true",
   "membershipApp": "https://appcdn.leadconnectorhq.com/revex/memberships/2376/remoteEntry.js?nocache=true",
-  "communitiesApp": "https://appcdn.leadconnectorhq.com/revex/communities-builder/2212/remoteEntry.js?nocache=true",
+  "communitiesApp": "https://appcdn.leadconnectorhq.com/revex/communities-builder/2398/remoteEntry.js?nocache=true",
   "goKollabApp": "https://appcdn.leadconnectorhq.com/revex/gokollab-builder/2391/remoteEntry.js?nocache=true",
   "snapshotsApp": "https://appcdn.leadconnectorhq.com/revex/snapshots/2399/remoteEntry.js?nocache=true",
   "productsApp": "https://appcdn.leadconnectorhq.com/leadgen/products/432/remoteEntry.js?nocache=true",
@@ -142,7 +142,7 @@
   "notesAiApp": "https://appcdn.leadconnectorhq.com/ai/notes-ai/1031/remoteEntry.js?nocache=true",
   "vibeStudioApp": "https://appcdn.leadconnectorhq.com/leadgen/vibe-studio/114/remoteEntry.js?nocache=true"
  },
- "tailwindcss": "https://appcdn.leadconnectorhq.com/platform-frontend-tailwind-css/2379/output.min.css",
+ "tailwindcss": "https://appcdn.leadconnectorhq.com/platform-frontend-tailwind-css/2398/output.min.css",
  "firebase": {
   "schemaVersion": 1,
   "defaultRegion": "us",
